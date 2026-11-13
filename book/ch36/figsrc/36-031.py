@@ -1,0 +1,32 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+import math
+def P(o, r, deg): return (o[0] + r * math.cos(math.radians(deg)), o[1] + r * math.sin(math.radians(deg)))
+def arc(ax, c, r, t1, t2, role='encre', lw=0.8): ax.add_patch(Arc(c, 2 * r, 2 * r, theta1=t1, theta2=t2, ec=COL[role], lw=lw, zorder=3))
+def rmark(ax, v, d1, d2, s=2.2, role='encre'):
+    p1 = P(v, s, d1); p3 = P(v, s, d2); p2 = (p1[0] + p3[0] - v[0], p1[1] + p3[1] - v[1]); line(ax, [p1, p2, p3], role, lw=0.7)
+def sn(d): return math.sin(math.radians(d))
+def cs(d): return math.cos(math.radians(d))
+fig, ax = canvas(72)
+s = 0.6
+Ap = (10, 8); Bp = (Ap[0] + 90 * s, Ap[1]); Cp = P(Ap, 120 * s, 50)
+poly(ax, [Ap, Bp, Cp], 'fixe')
+for p, q in [(Ap, Bp), (Bp, Cp), (Cp, Ap)]: line(ax, [p, q], 'fixe', lw=1.2)
+arc(ax, Ap, 9, 0, 50, 'sujet', 1.4)
+Bdir = math.degrees(math.atan2(Cp[1] - Bp[1], Cp[0] - Bp[0]))
+arc(ax, Bp, 9, Bdir, 180, 'sujet', 1.4)
+Cd1 = math.degrees(math.atan2(Ap[1] - Cp[1], Ap[0] - Cp[0])); Cd2 = math.degrees(math.atan2(Bp[1] - Cp[1], Bp[0] - Cp[0]))
+arc(ax, Cp, 9, Cd1, Cd2 + 360 if Cd2 < Cd1 else Cd2, 'sujet', 1.4)
+text(ax, Ap[0] + 17, Ap[1] + 3.5, r'$50^\circ$', 'sujet', 's')
+text(ax, Bp[0] - 12, Bp[1] + 6, r'$82{,}03^\circ$', 'sujet', 's')
+text(ax, Cp[0] + 10, Cp[1] - 8, r'$47{,}97^\circ$', 'sujet', 's')
+text(ax, Ap[0] - 3, Ap[1] - 2.5, r'$A$', 'sujet', 'm')
+text(ax, Bp[0] + 3, Bp[1] - 2.5, r'$B$', 'sujet', 'm')
+text(ax, Cp[0] + 2, Cp[1] + 3.5, r'$C$', 'sujet', 'm')
+def mid(p, q): return ((p[0]+q[0])/2, (p[1]+q[1])/2)
+ma, mb, mc = mid(Bp, Cp), mid(Cp, Ap), mid(Ap, Bp)
+for V, m in [(Ap, ma), (Bp, mb), (Cp, mc)]: line(ax, [V, m], 'fixe', 0.7, True)
+text(ax, mc[0], mc[1] - 3.8, r'$c$', 'sujet', 'l', weight='bold')
+text(ax, mb[0] - 3.0, mb[1] + 2.4, r'$b$', 'sujet', 'l', weight='bold')
+text(ax, ma[0] + 4.0, ma[1] + 0.5, r'$a$', 'sujet', 'l', weight='bold')
+save(fig, '36-031')
