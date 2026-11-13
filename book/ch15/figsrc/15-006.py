@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 6, 16, 40, 40, 'sujet', label='100', size='l')
+box(ax, 46, 16, 8, 40, 'limite', dash=True, label='?')
+box(ax, 6, 56, 40, 8, 'limite', dash=True, label='?')
+box(ax, 46, 56, 8, 8, 'varie', label='4', size='s')
+brace(ax, 6, 46, 15, 'sujet', r'$a=10$'); brace(ax, 46, 54, 15, 'varie', r'$b=2$')
+text(ax, 71, 56, 'surface : 144', 'encre', 's'); text(ax, 71, 46, '100 + 4 = 104', 'sujet', 's')
+text(ax, 71, 38, 'il manque 40', 'limite', 's')
+save(fig, '15-006')

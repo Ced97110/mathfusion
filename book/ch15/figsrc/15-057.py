@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 72, r'même valeur : $x = 0$', 'varie', 'l')
+box(ax, 3, 46, 38, 14, 'sujet', label=r'$3x^2 - 16$', size='l')
+box(ax, 47, 46, 38, 14, 'autre', label=r'$\frac{3}{x} - 16$', size='l')
+arrow(ax, (22, 45.5), (22, 31), 'varie'); arrow(ax, (66, 45.5), (66, 31), 'varie')
+box(ax, 3, 16, 38, 14, 'resultat'); box(ax, 47, 16, 38, 14, 'limite')
+text(ax, 22, 23, r'$3 \times 0^2 - 16 = -16$', 'resultat', 's')
+text(ax, 66, 23, r'$3 \div 0$ : impossible', 'limite', 's')
+text(ax, 22, 8, 'polynôme', 'sujet', 'm'); text(ax, 66, 8, 'pas un polynôme', 'autre', 'm')
+save(fig, '15-057')

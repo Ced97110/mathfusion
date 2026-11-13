@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(75)
+text(ax, 44, 67, r'$2^{3}x^{2}$', 'encre', 'xl')
+box(ax, 4, 38, 34, 12, 'fixe', label=r'$2^{3}=8$')
+box(ax, 50, 38, 34, 12, 'sujet', label=r'$x^{2}$')
+arrow(ax, (38, 62), (21, 51), 'fixe'); arrow(ax, (50, 62), (67, 51), 'sujet')
+text(ax, 21, 33, 'sur un nombre', 'fixe', 's'); text(ax, 21, 28.5, 'ne compte pas', 'fixe', 's')
+text(ax, 67, 33, 'sur la lettre', 'sujet', 's'); text(ax, 67, 28.5, 'compte', 'sujet', 's')
+arrow(ax, (67, 25), (67, 19), 'resultat')
+box(ax, 44, 8, 40, 10, 'resultat', label=r'$8x^{2}$ : degré 2', size='m')
+save(fig, '15-066')

@@ -1,0 +1,195 @@
+[
+ {
+  "code": "15-097",
+  "a_dire": "Les deux carrés a² et b² ne remplissent pas le grand carré : il reste deux rectangles ab.",
+  "legende_titre": "Le grand carré de côté a + b",
+  "lecture": [
+   "Le carré bleu a un côté a et une aire a².",
+   "Le carré violet a un côté b et une aire b².",
+   "Les deux rectangles orange ont des côtés a et b, donc une aire ab chacun."
+  ],
+  "a_voir": "Les deux rectangles orange occupent les deux coins que les deux carrés laissent libres."
+ },
+ {
+  "code": "15-098",
+  "a_dire": "(a + b)² se compose toujours de trois morceaux : a², 2ab et b², quels que soient a et b.",
+  "legende_titre": "Trois morceaux, pour tout a et tout b",
+  "lecture": [
+   "Dans chaque ligne, la case bleue est le carré du premier nombre.",
+   "La case orange est deux fois le produit des deux nombres.",
+   "La case violette est le carré du second nombre.",
+   "La case verte est la somme des trois et vaut le carré de a + b."
+  ],
+  "a_voir": "Les nombres changent d'une ligne à l'autre, les trois morceaux restent les mêmes."
+ },
+ {
+  "code": "15-099",
+  "a_dire": "Pour prouver la formule, on coupe le côté a + b en a et b dans les deux directions, ce qui fait apparaître quatre aires.",
+  "legende_titre": "Couper le carré pour voir ses aires",
+  "lecture": [
+   "À gauche, le carré bleu est le carré de côté a + b.",
+   "Au milieu, les lignes orange coupent chaque côté en a et b.",
+   "À droite, les morceaux sont a² (bleu), b² (violet) et deux fois ab (orange).",
+   "Sous le dernier carré, la somme des quatre aires est écrite en vert."
+  ],
+  "a_voir": "La coupure fait apparaître a², b² et deux rectangles identiques ab."
+ },
+ {
+  "code": "15-100",
+  "a_dire": "(a + b)² n'est pas a² + b² : il manque les deux rectangles, d'aire totale 2ab.",
+  "legende_titre": "Une surface manquante, pas une règle oubliée",
+  "lecture": [
+   "Dans le carré, 9 (bleu) et 4 (violet) sont les carrés de 3 et de 2.",
+   "Les deux cases orange de 6 sont les rectangles de côtés 3 et 2.",
+   "La case verte donne 25 pour le carré de 3 + 2.",
+   "La case rouge donne 13 pour 9 + 4 : ce n'est pas 25.",
+   "La case orange en bas dit que 12 manque."
+  ],
+  "a_voir": "La différence 12 est l'aire des deux rectangles : 2 × 3 × 2."
+ },
+ {
+  "code": "15-101",
+  "a_dire": "Dans (x + 4)², le morceau du milieu 8x vient de deux fois 4 fois x, et il ne faut pas l'oublier.",
+  "legende_titre": "Les trois morceaux de (x + 4)²",
+  "lecture": [
+   "Le carré bleu est x², le carré du premier terme.",
+   "Les deux rectangles orange valent 4x chacun, donc 8x ensemble.",
+   "Le carré violet est 4 × 4, soit 16.",
+   "Les trois cases de droite reprennent ces trois morceaux."
+  ],
+  "a_voir": "Le 8 de 8x vient de 2 × 4 ; sans lui il manque les deux rectangles."
+ },
+ {
+  "code": "15-102",
+  "a_dire": "Pour (a − b)², on part de a², on retire 2ab, puis on ajoute b² ; avec 5 et 2, on arrive à 9.",
+  "legende_titre": "Trois actions sur la droite graduée",
+  "lecture": [
+   "La flèche bleue va de 0 à 25 : c'est a².",
+   "La flèche orange revient de 25 à 5 : on retire 2ab, soit 20.",
+   "La flèche violette avance de 5 à 9 : on ajoute b², soit 4.",
+   "Le texte vert donne le résultat 9, le carré de 5 − 2."
+  ],
+  "a_voir": "Les trois flèches mènent à 9, qui est le carré de 3."
+ },
+ {
+  "code": "15-103",
+  "a_dire": "Un carré est un produit de deux facteurs égaux : (a − b)(a − b) donne quatre produits qui se somment.",
+  "legende_titre": "Les quatre produits d'un carré",
+  "lecture": [
+   "Les en-têtes de colonnes et de lignes sont les deux facteurs a et −b.",
+   "Chaque case est le produit de sa ligne par sa colonne.",
+   "Les deux cases orange valent −ab, soit −10 chacune.",
+   "La case violette vaut +b², soit +4.",
+   "Le texte vert additionne les quatre : 9."
+  ],
+  "a_voir": "Chaque case est un produit ; la somme des quatre donne 9."
+ },
+ {
+  "code": "15-104",
+  "a_dire": "Le dernier terme est +b², car (−b)(−b) est un produit de deux négatifs, donc positif.",
+  "legende_titre": "Moins fois moins donne plus",
+  "lecture": [
+   "En haut, (−2) × (−2) donne +4.",
+   "La ligne verte garde +4 à la fin et donne 9, le bon résultat.",
+   "La ligne rouge met −4 à la fin et donne 1, un résultat faux.",
+   "Les cases grises 25 et −20 sont les mêmes dans les deux lignes."
+  ],
+  "a_voir": "Seul le dernier signe change entre la ligne juste et la ligne fausse."
+ },
+ {
+  "code": "15-105",
+  "a_dire": "Le milieu −2y vient de 2 fois le second terme ; avec 1 on ne le voit pas, avec 3 on le voit.",
+  "legende_titre": "Un cas qui ne montre pas d'où vient le 2",
+  "lecture": [
+   "La première ligne développe (y − 1)² : le milieu est −2y.",
+   "Sous cette ligne, le texte gris dit que ce 2 pourrait venir de 2 × 1 ou être fixe.",
+   "La seconde ligne développe (y − 3)² : le milieu est −6y.",
+   "Le texte vert dit que 6 vient de 2 × 3 : le 2 multiplie le second terme."
+  ],
+  "a_voir": "Avec 3 à la place de 1, le coefficient du milieu change : c'est 2 fois le second terme."
+ },
+ {
+  "code": "15-106",
+  "a_dire": "(a + b)(a − b) donne toujours a² − b², sans terme du milieu, quels que soient a et b.",
+  "legende_titre": "Une différence de deux carrés",
+  "lecture": [
+   "Chaque ligne a deux valeurs de a et de b.",
+   "La case bleue est a², la case violette est b² avec le signe moins.",
+   "La case en pointillés dit qu'il n'y a aucun terme du milieu.",
+   "La case verte donne le produit, égal à la différence des carrés."
+  ],
+  "a_voir": "Pour 5 et 2 comme pour 10 et 1, le résultat est a² − b² et rien d'autre."
+ },
+ {
+  "code": "15-107",
+  "a_dire": "Dans (a + b)(a − b), les deux termes du milieu, −ab et +ab, s'annulent.",
+  "legende_titre": "Les termes du milieu s'annulent",
+  "lecture": [
+   "Les quatre cases sont les quatre produits : a², −ab, +ab et −b².",
+   "Les deux cases orange du milieu valent −10 et +10.",
+   "L'accolade orange montre que leur somme est 0.",
+   "Il reste a² − b², soit 25 − 4 = 21, en vert."
+  ],
+  "a_voir": "L'accolade regroupe −10 et +10 : ils font 0."
+ },
+ {
+  "code": "15-108",
+  "a_dire": "Un reste en forme de L devient un rectangle quand on déplace la bande orange, sans changer son aire.",
+  "legende_titre": "La bande déplacée fait un rectangle",
+  "lecture": [
+   "À gauche, le rectangle bleu de 5 sur 3 a l'aire 15.",
+   "La bande orange de 3 sur 2 a l'aire 6 ; le carré en gris retiré a l'aire 4.",
+   "La flèche orange montre la bande qui se déplace vers la droite.",
+   "À droite, la bande prolonge le rectangle bleu : le rectangle fait 7 sur 3."
+  ],
+  "a_voir": "La bande orange a la hauteur du rectangle bleu, elle s'ajuste à sa droite."
+ },
+ {
+  "code": "15-109",
+  "a_dire": "La preuve part du carré privé d'un petit carré, déplace la bande et arrive à (a + b)(a − b).",
+  "legende_titre": "Départ, étape, arrivée",
+  "lecture": [
+   "Le premier dessin est le carré bleu moins le petit carré en pointillés, d'aire 21.",
+   "Au milieu, la bande orange de 6 va se poser à droite du rectangle bleu de 15.",
+   "À droite, les deux morceaux forment un rectangle.",
+   "Sous chaque dessin, l'écriture de l'aire change de forme."
+  ],
+  "a_voir": "Déplacer la bande ne change pas la surface : a² − b² devient (a + b)(a − b)."
+ },
+ {
+  "code": "15-110",
+  "a_dire": "Le terme du milieu vaut +2ab si les deux produits sont +ab, −2ab s'ils sont −ab, et il n'y en a aucun s'ils sont de signes opposés.",
+  "legende_titre": "Le milieu selon les signes",
+  "lecture": [
+   "Chaque colonne montre les quatre produits d'un calcul.",
+   "Les cases orange sont les deux produits du milieu.",
+   "Dans la première colonne ils valent +ab et +ab, dans la deuxième −ab et −ab.",
+   "Dans la troisième, −ab et +ab : la case du bas est grise et dit aucun."
+  ],
+  "a_voir": "Même signe dans les deux parenthèses : les milieux s'additionnent ; signes opposés : ils s'annulent."
+ },
+ {
+  "code": "15-111",
+  "a_dire": "La différence de prix des deux salles se simplifie en 2n − 30, et ce seul calcul sert pour 10 comme pour 25 personnes.",
+  "legende_titre": "Une seule expression pour tous les n",
+  "lecture": [
+   "La ligne du haut donne le calcul avec la lettre n.",
+   "Chaque ligne compare deux barres : bleue pour la salle 1, violette pour la salle 2.",
+   "Pour n = 10, la barre bleue est plus courte et la différence est −10.",
+   "Pour n = 25, la barre bleue est plus longue et la différence est 20."
+  ],
+  "a_voir": "Le même 2n − 30 donne −10 pour 10 personnes et 20 pour 25 personnes."
+ },
+ {
+  "code": "15-112",
+  "a_dire": "Pour n = 15, 2n − 30 vaut 0 : le signe change en ce nombre, qui est le seuil.",
+  "legende_titre": "Le signe de 2n − 30 autour de 15",
+  "lecture": [
+   "La droite graduée montre le nombre de personnes n.",
+   "La case bleue, au-dessus de 14, vaut −2 : la première salle est moins chère.",
+   "La case verte, au-dessus de 15, vaut 0 : les deux salles coûtent pareil.",
+   "La case orange, au-dessus de 16, vaut +2 : la seconde salle est moins chère."
+  ],
+  "a_voir": "Le signe change entre 14 et 16, au seuil 15."
+ }
+]

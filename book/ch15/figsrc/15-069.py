@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 6, 56, 30, 12, 'fixe', label=r'$7y$', size='l')
+box(ax, 46, 56, 36, 12, 'sujet', label=r'$-10y^{4}$', size='l')
+text(ax, 21, 50, 'degré 1', 'fixe', 's'); text(ax, 64, 50, 'degré 4', 'sujet', 's')
+text(ax, 44, 62, '', 'encre')
+box(ax, 4, 28, 36, 9, 'limite', label=r'$1+4=5$ : faux', size='s')
+box(ax, 46, 28, 38, 9, 'resultat', label='le plus grand : 4', size='s')
+arrow(ax, (64, 46), (65, 38), 'resultat'); arrow(ax, (21, 46), (21, 38), 'limite')
+box(ax, 4, 6, 36, 9, 'fixe', label='2 termes : pas le degré', size='s')
+box(ax, 46, 6, 38, 9, 'resultat', label='degré du polynôme 4', size='s')
+arrow(ax, (65, 27.5), (65, 15.5), 'resultat')
+save(fig, '15-069')

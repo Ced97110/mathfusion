@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+for x, s, r in ((6, r'$1r$', 'sujet'), (32, r'$3r$', 'sujet'), (58, r'$-4r$', 'varie')): box(ax, x, 56, 22, 10, r, label=s, size='m')
+text(ax, 29, 61, '+', 'encre', 'm'); text(ax, 55, 61, '+', 'encre', 'm')
+text(ax, 44, 70, 'termes semblables', 'fixe', 's')
+arrow(ax, (44, 55), (44, 46), 'varie')
+text(ax, 44, 41, r'coefficients : $1+3-4=0$', 'encre', 's')
+arrow(ax, (44, 37), (44, 31), 'varie')
+box(ax, 34, 20, 20, 10, 'resultat', label=r'$0r$', size='l')
+text(ax, 22, 14, r'$r=3$ : $0$', 'resultat', 's'); text(ax, 66, 14, r'$r=100$ : $0$', 'resultat', 's')
+text(ax, 44, 5, 'coefficient 0 : permis', 'resultat', 's')
+save(fig, '15-128')

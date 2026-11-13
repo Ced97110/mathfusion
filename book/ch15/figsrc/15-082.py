@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 54, 12, 12, 'sujet', label='3', size='l')
+text(ax, 23, 60, '(', 'encre', 'l')
+box(ax, 27, 54, 14, 12, 'varie', label='$x$', size='l')
+text(ax, 47, 60, '+', 'encre', 'l')
+box(ax, 53, 54, 14, 12, 'varie', label='$9$', size='l')
+text(ax, 73, 60, ')', 'encre', 'l')
+box(ax, 22, 34, 24, 12, 'resultat', label=r'$3x$', size='l')
+box(ax, 48, 34, 24, 12, 'resultat', label=r'$27$', size='l')
+for cx in (34, 60):
+    arrow(ax, (cx, 53), (cx + (-0 if cx == 34 else 0), 47), 'varie')
+    text(ax, cx + 2, 50, r'$\times 3$', 'varie', 's', ha='left')
+box(ax, 2, 10, 40, 16, 'resultat', label=r'$x=1$ : 30 et 30')
+box(ax, 46, 10, 40, 16, 'limite', label=r'$3x+9$ donne 12')
+save(fig, '15-082')
