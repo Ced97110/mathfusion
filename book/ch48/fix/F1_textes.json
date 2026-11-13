@@ -1,0 +1,102 @@
+{
+ "48-019": {
+  "lecture": [
+   "En haut, f(n) est le reste de n par 4.",
+   "Pour chaque paire, le bleu additionne d'abord, puis applique f.",
+   "Le violet prend les positions de chaque nombre, puis les additionne.",
+   "Les deux cases vertes sont égales : 2 et 2."
+  ],
+  "a_voir": "Les nombres changent d'une paire à l'autre, l'égalité reste vraie pour toute paire."
+ },
+ "48-023": {
+  "lecture": [
+   "Le disque bleu est l'entier 0.",
+   "La flèche rouge l'envoie sur la position 2, en rouge.",
+   "La boîte bleue dit que l'image de 0 + 0 est 2.",
+   "La boîte violette dit que la somme des images est 2 + 2 = 0 : les deux sont différentes, donc 0 ne peut pas aller sur 2 (rouge).",
+   "Le texte vert donne la conclusion : 0 va sur 0."
+  ],
+  "a_voir": "Si 0 va sur 2, les deux boîtes se contredisent ; le neutre va donc sur le neutre, sans choix."
+ },
+ "48-045": {
+  "lecture": [
+   "Sur la droite, chaque flèche orange relie un entier à son opposé, dans les deux sens.",
+   "Le 0 reste en place.",
+   "Le départ et l'arrivée sont le même groupe, les entiers.",
+   "La boîte bleue et la boîte violette donnent le même résultat, −5 : l'addition est respectée."
+  ],
+  "a_voir": "La droite est renvoyée sur elle-même, un pour un, et l'addition est respectée."
+ },
+ "48-046": {
+  "lecture": [
+   "Le tableau croise injectif et surjectif.",
+   "La case bleue est le bouton, des entiers vers le bouton : surjectif, pas injectif, avec f(1) = f(5).",
+   "Les trois cases grises sont l'identité et la multiplication par 3, des entiers vers les entiers, et le double, des entiers vers le bouton.",
+   "Chaque case indique son départ et son arrivée."
+  ],
+  "a_voir": "Le bouton occupe une seule case du tableau."
+ },
+ "48-054": {
+  "lecture": [
+   "La colonne bleue est dans G : g k g⁻¹, soit 3 + 8 − 3, qui donne 8.",
+   "La colonne violette est dans G′ : f(g) 1′ f(g)⁻¹, soit 3 + 0 − 3, qui donne 0.",
+   "Les flèches orange f envoient chaque ligne de gauche sur la ligne de droite.",
+   "Le résultat de droite est le neutre 1′, qui vaut 0 sur le bouton."
+  ],
+  "a_voir": "Conjuguer k par g dans G revient à conjuguer 1′ par f(g) dans G′ : le résultat est le neutre."
+ },
+ "48-058": {
+  "lecture": [
+   "Les quatre cases sont les positions du bouton.",
+   "Les cases bleues 0 et 2 forment l'image de n ↦ 2n.",
+   "La flèche bleue montre 2 + 2 = 4, soit la position 0 : encore une case bleue.",
+   "Le neutre 0 et l'opposé de 2, qui est 2, sont aussi dans l'image."
+  ],
+  "a_voir": "L'image contient le neutre, la somme et l'opposé : c'est un sous-groupe de G′."
+ },
+ "48-063": {
+  "lecture": [
+   "La ligne du haut est formée d'entiers : les bleus sont les pairs.",
+   "La ligne du bas est formée des positions : les vertes 0 et 2 forment H′.",
+   "Chaque flèche envoie un entier n sur son reste par 4.",
+   "Les flèches bleues, issues des pairs, arrivent sur 0 ou 2."
+  ],
+  "a_voir": "Les entiers qui arrivent dans H′ sont les pairs, et ils forment un sous-groupe de G."
+ },
+ "48-065": {
+  "lecture": [
+   "La colonne bleue est dans G, la violette dans G′ ; la flèche orange f envoie chaque ligne sur celle de droite.",
+   "En haut, h = 6 est dans f⁻¹(H′) et son image 2 est dans H′.",
+   "Au milieu, on conjugue h par g = 3 : 3 + 6 − 3 dans G, 3 + 2 − 3 dans G′.",
+   "En bas, les deux résultats, en vert, restent dans f⁻¹(H′) et dans H′."
+  ],
+  "a_voir": "Comme H′ est normal, le conjugué d'un élément de f⁻¹(H′) reste dans f⁻¹(H′)."
+ },
+ "48-069": {
+  "lecture": [
+   "La flèche bleue f va de G = ℤ à G′ = ℤ/4ℤ ; les entiers 1 et 5 vont sur la position 1.",
+   "La flèche orange ν envoie 1 et 5 sur le même paquet de G/K, où K = 4ℤ est le noyau, normal.",
+   "La flèche verte f̄ va de G/K à G′ : c'est un homomorphisme injectif.",
+   "La formule du haut dit que f̄ donne à aK la valeur f(a)."
+  ],
+  "a_voir": "f se lit en passant par G/K : d'abord ν, puis f̄."
+ },
+ "48-071": {
+  "lecture": [
+   "En haut, le noyau 4ℤ donne quatre paquets bleus, reliés un à un aux positions 0, 1, 2, 3 en vert.",
+   "Le texte vert dessous dit que les paquets s'additionnent comme les positions : 1 + 2 = 3.",
+   "En bas, le noyau 2ℤ donne deux paquets, les pairs et les impairs, reliés aux positions 0 et 2.",
+   "Là aussi, l'addition correspond : impairs + impairs = pairs, comme 2 + 2 = 0."
+  ],
+  "a_voir": "Dans chaque cas, autant de paquets que de positions, avec la même addition."
+ },
+ "48-092": {
+  "lecture": [
+   "Le titre rappelle que H ne contient pas K.",
+   "À gauche, dans G, le cadre rouge pointillé entoure H : e et t₁. Le conjugué de t₁ est t₂, hors de H : H n'est pas normal.",
+   "À droite, dans G/K, il y a deux paquets : K en bleu et l'autre en gris.",
+   "H/K est tout G/K, donc il est normal (vert)."
+  ],
+  "a_voir": "H/K peut être normal dans G/K sans que H le soit dans G, quand H ne contient pas K."
+ }
+}

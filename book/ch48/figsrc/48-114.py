@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+B=(44,12); Hh=(24,34); N=(64,34); T=(44,56)
+def at(p,q,y):
+    t=(y-p[1])/(q[1]-p[1]); return (p[0]+t*(q[0]-p[0]),y)
+def edge(p,q,y0,y1,role): line(ax,[at(p,q,y0),at(p,q,y1)],role,lw=1.6)
+edge(B,Hh,16,30,'resultat'); edge(N,T,38,52,'resultat')
+edge(B,N,16,30,'fixe'); edge(Hh,T,38,52,'fixe')
+box(ax,28,52,32,8,'resultat',label=r'$HN$ : nombres pairs',size='s')
+box(ax,12,30,24,8,'sujet',label=r'$H=\{0,4,8\}$',size='s')
+box(ax,52,30,24,8,'autre',label=r'$N=\{0,6\}$',size='s')
+box(ax,31,8,26,8,'fixe',label=r'$H\cap N=\{0\}$',size='s')
+text(ax,31,23,r'$H/(H\cap N)$','resultat','s',ha='right')
+text(ax,59,45,r'$HN/N$','resultat','s',ha='left')
+text(ax,72,13,r'côtés verts : $\cong$','resultat','s')
+save(fig,'48-114')

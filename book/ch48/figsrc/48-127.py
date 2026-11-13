@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+text(ax,22,62,'Jacobson','encre','m',weight='bold'); text(ax,66,62,'Judson','encre','m',weight='bold')
+box(ax,3,44,38,9,'fixe',label='« premier »'); box(ax,47,44,38,9,'fixe',label='« troisième »')
+arrow(ax,(22,44),(22,38),'fixe'); arrow(ax,(66,44),(66,38),'fixe')
+box(ax,3,26,38,12,'sujet',label=r'$(G/K)/(H/K)\cong G/H$',size='s'); box(ax,47,26,38,12,'sujet',label=r'$(G/N)/(H/N)\cong G/H$',size='s')
+text(ax,44,32,'=','resultat','xl',weight='bold')
+text(ax,44,21,'autre nom, même sous-groupe','varie','s')
+box(ax,16,6,12,9,'varie',label='K'); box(ax,60,6,12,9,'varie',label='N'); text(ax,44,10.5,'=','varie','l',weight='bold')
+save(fig,'48-127')

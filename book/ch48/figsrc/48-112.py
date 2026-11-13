@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+disc(ax, 28, 42, 24, 'sujet', fill=False, lw=1.2); disc(ax, 60, 42, 24, 'autre', fill=False, lw=1.2)
+text(ax, 14, 42, r'$H$', 'sujet', 'l'); text(ax, 74, 42, r'$N$', 'autre', 'l')
+box(ax, 40, 48, 8, 7, 'resultat', label=r'$x$', size='s')
+box(ax, 36.5, 28, 15, 7, 'resultat', label=r'$hxh^{-1}$', size='s')
+arrow(ax, (44, 47.5), (44, 35.5), 'varie')
+text(ax, 44, 13, r'$H\cap N$ : zone commune', 'resultat', 's')
+text(ax, 44, 8, r'dans $H$ : $H$ est un groupe', 'sujet', 's')
+text(ax, 44, 3, r'dans $N$ : $N$ est normal', 'autre', 's')
+save(fig, '48-112')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,6,64,76,10,'fixe',label=r'départ : $(h_1n_1)(h_2n_2)$')
+arrow(ax,(44,64),(44,52),'varie'); text(ax,48,58,r'on insère $h_2h_2^{-1}$','varie','s',ha='left')
+box(ax,6,38,20,10,'sujet',label=r'$h_1h_2$')
+box(ax,28,38,34,10,'varie',label=r'$h_2^{-1}n_1h_2$')
+box(ax,64,38,18,10,'autre',label=r'$n_2$')
+brace(ax,6,26,38,'sujet',label=r'dans $H$')
+brace(ax,28,82,38,'autre',label=r'dans $N$ car $N$ normal')
+arrow(ax,(44,28),(44,22),'fixe')
+box(ax,6,8,76,12,'resultat',label=r'forme $h\cdot n$ : dans $HN$')
+save(fig,'48-119')

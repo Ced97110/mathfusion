@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 68, 'H non normal : pas un noyau', 'limite', 'm')
+box(ax, 8, 36, 72, 24, 'sujet', fill=False, dash=True)
+text(ax, 15, 56, r'$H$', 'sujet', 'm', weight='bold')
+box(ax, 14, 40, 26, 9, 'sujet', label='neutre', size='s')
+box(ax, 46, 40, 30, 9, 'sujet', label='échange 1-2', size='s')
+arrow(ax, (61, 39.5), (61, 21), 'varie')
+text(ax, 59, 31, "conjugué par l'échange 1-3", 'varie', 's', ha='right')
+box(ax, 26, 10, 54, 10, 'limite', label='échange 3-2 : hors de H', size='s')
+save(fig, '48-204')

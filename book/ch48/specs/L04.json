@@ -1,0 +1,183 @@
+[
+ {
+  "code": "48-049",
+  "a_dire": "Dire que ker f garde les éléments dont l'image est le neutre : on prend a, on calcule f(a), on compare à 1′.",
+  "legende_titre": "Le tri de la formule",
+  "lecture": [
+   "La case bleue est un élément a de G : 8 en haut, 6 en bas.",
+   "La case orange est son image f(a) : 0 pour 8, 2 pour 6.",
+   "La case de droite compare cette image au neutre : verte, l'élément est gardé ; rouge, il est rejeté."
+  ],
+  "a_voir": "Seul 8, dont l'image est 0, est gardé ; 6 est rejeté."
+ },
+ {
+  "code": "48-050",
+  "a_dire": "Dire que ker f est un sous-groupe quand f est un homomorphisme, et qu'avec une application quelconque la somme peut sortir du noyau.",
+  "legende_titre": "Une application qui n'est pas un homomorphisme",
+  "lecture": [
+   "Les deux cercles bleus 0 et 1 forment l'ensemble des entiers envoyés sur 0.",
+   "Les cercles gris sont les autres entiers.",
+   "La flèche rouge montre 1 + 1 = 2 : le résultat tombe hors de l'ensemble."
+  ],
+  "a_voir": "Sans homomorphisme, l'ensemble des éléments envoyés sur le neutre n'est pas stable par l'addition."
+ },
+ {
+  "code": "48-051",
+  "a_dire": "Dire que la preuve vérifie trois choses : le neutre est dans le noyau, la somme et l'opposé de ses éléments y restent.",
+  "legende_titre": "Les trois vérifications sur 4ℤ",
+  "lecture": [
+   "Les cercles bleus sont les multiples de 4 : le noyau.",
+   "Le cercle vert est 0, le neutre, qui y est.",
+   "Les deux flèches du haut mènent de 4 et de 8 à leur somme 12, encore dans le noyau.",
+   "La flèche du bas mène de 8 à son opposé −8, aussi dans le noyau."
+  ],
+  "a_voir": "Chaque résultat retombe sur un cercle bleu."
+ },
+ {
+  "code": "48-052",
+  "a_dire": "Dire que pour k dans le noyau et g quelconque, g k g⁻¹ est encore dans le noyau.",
+  "legende_titre": "Conjuguer un élément du noyau",
+  "lecture": [
+   "La ligne du haut est le calcul dans G : 3, puis 8, puis −3, qui donne 8.",
+   "La ligne du bas donne les images : 3, 0, −3, qui donnent 0.",
+   "Les flèches orange envoient chaque terme sur sa position.",
+   "Le 8 bleu est dans le noyau ; le 0 vert est le neutre."
+  ],
+  "a_voir": "Le résultat 8 a pour image le neutre 0 : il est dans le noyau."
+ },
+ {
+  "code": "48-053",
+  "a_dire": "Dire que la preuve développe l'image, remplace f(k) par 1′ (seule étape qui sert l'hypothèse), puis simplifie.",
+  "legende_titre": "Les étapes de la preuve",
+  "lecture": [
+   "La case bleue du haut est le départ : l'image du conjugué.",
+   "La case grise développe cette image en un produit.",
+   "La case orange remplace f(k) par 1′ parce que k est dans le noyau.",
+   "La case verte du bas est l'arrivée : 1′."
+  ],
+  "a_voir": "L'étape orange est la seule qui utilise que k est dans le noyau."
+ },
+ {
+  "code": "48-054",
+  "a_dire": "Dire que conjuguer k par g dans G revient à conjuguer 1′ par f(g) dans G′, et que conjuguer le neutre donne le neutre.",
+  "legende_titre": "Deux conjugaisons qui se correspondent",
+  "lecture": [
+   "La colonne bleue est le calcul dans G : 3 + 8 − 3, qui donne 8.",
+   "La colonne violette est le calcul dans G′ : 3 + 0 − 3, qui donne 0.",
+   "Les flèches orange f envoient chaque calcul de gauche sur celui de droite."
+  ],
+  "a_voir": "Le calcul de droite est celui de gauche vu par f ; son résultat est le neutre."
+ },
+ {
+  "code": "48-055",
+  "a_dire": "Dire que sans l'hypothèse d'homomorphisme, un noyau réduit à {0} ne suffit pas pour être injectif.",
+  "legende_titre": "Un noyau réduit à 0 qui ne suffit pas",
+  "lecture": [
+   "À gauche, les entiers de départ ; à droite, les positions d'arrivée.",
+   "La flèche bleue envoie 0 sur 0 : le noyau est réduit à 0.",
+   "Les deux flèches rouges envoient 1 et 2 sur la même position 1."
+  ],
+  "a_voir": "Le noyau est {0} et pourtant 1 et 2 ont la même image : l'application n'est pas injective."
+ },
+ {
+  "code": "48-056",
+  "a_dire": "Dire que si f(a) = f(b), alors a⁻¹b est dans le noyau ; un noyau réduit à {1} force a = b.",
+  "legende_titre": "Deux éléments qui ont la même image",
+  "lecture": [
+   "Les cercles orange 1 et 5 ont la même image.",
+   "La flèche orange relie 1 à 5 : le calcul −1 + 5 donne 4.",
+   "Le cercle bleu 4 est dans le noyau, comme 0.",
+   "Le noyau contient 4, différent de 0."
+  ],
+  "a_voir": "Deux éléments de même image donnent un élément du noyau ; ici ce n'est pas 0."
+ },
+ {
+  "code": "48-057",
+  "a_dire": "Dire que plus le noyau est gros, plus chaque case d'arrivée reçoit d'éléments.",
+  "legende_titre": "Le noyau mesure la perte",
+  "lecture": [
+   "Le haut montre la multiplication par 3 : chaque case bleue contient un seul cercle.",
+   "Le bas montre le bouton : chaque case orange contient plusieurs cercles.",
+   "Chaque case est une fibre : les éléments qui arrivent au même endroit."
+  ],
+  "a_voir": "Un cercle par case en haut, plusieurs en bas : le noyau gros confond beaucoup d'éléments."
+ },
+ {
+  "code": "48-058",
+  "a_dire": "Dire que l'image contient le neutre et reste stable par somme : c'est un sous-groupe de G′.",
+  "legende_titre": "Une image qui reste dans l'image",
+  "lecture": [
+   "Les quatre cases sont les positions du bouton.",
+   "Les cases vertes 0 et 2 sont l'image de n ↦ 2n.",
+   "La flèche orange montre 2 + 2 = 4, soit la position 0 : encore une case verte."
+  ],
+  "a_voir": "Le neutre 0 est dans l'image et 2 + 2 retombe dans l'image."
+ },
+ {
+  "code": "48-059",
+  "a_dire": "Dire que l'image est la partie de G′ atteinte par f ; elle peut être égale à G′ ou plus petite.",
+  "legende_titre": "L'image comparée à l'arrivée",
+  "lecture": [
+   "Chaque cadre en tirets est le groupe d'arrivée, avec ses quatre positions.",
+   "En haut, toutes les cases sont bleues : l'image est tout G′.",
+   "En bas, seules les cases orange 0 et 2 sont atteintes ; les grises ne le sont pas."
+  ],
+  "a_voir": "L'image remplit l'arrivée pour le bouton, pas pour l'application du double."
+ },
+ {
+  "code": "48-060",
+  "a_dire": "Dire que la preuve écrit x y⁻¹ comme l'image de a b⁻¹, qui est dans H parce que H est un sous-groupe.",
+  "legende_titre": "De a b⁻¹ à x y⁻¹",
+  "lecture": [
+   "Les cases bleues de gauche sont des éléments de H : 2 et 4.",
+   "Les cases vertes de droite sont leurs images x et y.",
+   "La case orange est l'étape qui porte le poids : −2 est pair, donc dans H.",
+   "En bas à droite, x − y est l'image de −2."
+  ],
+  "a_voir": "x − y est l'image d'un élément de H, donc il est dans f(H)."
+ },
+ {
+  "code": "48-061",
+  "a_dire": "Dire que sur les multiples de 3, f prend les quatre positions puis revient à la première.",
+  "legende_titre": "Les multiples de 3 sur le bouton",
+  "lecture": [
+   "La ligne bleue donne les multiples de 3 : 0, 3, 6, 9, 12.",
+   "La ligne du bas donne leurs positions : 0, 3, 2, 1.",
+   "La dernière case grise est un retour à 0."
+  ],
+  "a_voir": "Les quatre cases vertes sont les quatre positions."
+ },
+ {
+  "code": "48-062",
+  "a_dire": "Dire qu'un sous-groupe petit au départ peut atteindre toutes les positions à l'arrivée.",
+  "legende_titre": "Petit au départ, grand à l'arrivée",
+  "lecture": [
+   "La ligne du haut montre les entiers : les gros cercles bleus sont les multiples de 3.",
+   "Les quatre cercles verts sont les positions du bouton.",
+   "Chaque flèche orange est une addition de 3 : 0, 3, 2, 1, puis 0."
+  ],
+  "a_voir": "Les multiples de 3 sont rares, mais ils atteignent toutes les positions."
+ },
+ {
+  "code": "48-063",
+  "a_dire": "Dire que les éléments dont l'image est dans H′ forment un sous-groupe de G.",
+  "legende_titre": "Les entiers qui arrivent dans H′",
+  "lecture": [
+   "La ligne du haut est formée d'entiers : les bleus sont ceux qui arrivent dans H′.",
+   "La ligne du bas est formée des positions : les vertes 0 et 2 forment H′.",
+   "Chaque flèche envoie un entier sur sa position."
+  ],
+  "a_voir": "Les flèches bleues, issues des entiers pairs, arrivent toutes sur 0 ou 2."
+ },
+ {
+  "code": "48-064",
+  "a_dire": "Dire que sans l'hypothèse « H est un sous-groupe », l'image n'est pas un sous-groupe.",
+  "legende_titre": "Une partie qui n'est pas un sous-groupe",
+  "lecture": [
+   "En haut, l'ensemble {0 ; 1} : la somme 1 + 1 = 2 sort de l'ensemble (cercle rouge).",
+   "En bas, les images 0 et 1, par les flèches f.",
+   "La somme 1 + 1 = 2 sort aussi de l'ensemble des images."
+  ],
+  "a_voir": "Le défaut du départ se retrouve à l'arrivée : l'image n'est pas stable par somme."
+ }
+]

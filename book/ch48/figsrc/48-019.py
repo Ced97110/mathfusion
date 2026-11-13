@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(106)
+text(ax, 44, 102, r'$f(n)$ = reste de $n$ par 4', 'varie', 'm')
+for t, (a, b, s, r, fa, fb, y) in enumerate([(5, 9, 14, 2, 1, 1, 80), (3, 3, 6, 2, 3, 3, 38)]):
+    box(ax, 2, y - 5, 15, 10, 'fixe', label=f'{a} et {b}', size='s')
+    box(ax, 28, y + 6, 28, 10, 'sujet', label=f'{a} + {b} = {s}', size='s')
+    box(ax, 28, y - 16, 28, 10, 'autre', label=f'positions {fa} + {fb}', size='s')
+    arrow(ax, (17, y + 2), (28, y + 11), 'varie'); arrow(ax, (17, y - 2), (28, y - 11), 'varie')
+    box(ax, 72, y + 6, 14, 10, 'resultat', label=str(r)); box(ax, 72, y - 16, 14, 10, 'resultat', label=str(r))
+    arrow(ax, (56, y + 11), (72, y + 11), 'varie'); arrow(ax, (56, y - 11), (72, y - 11), 'varie')
+    text(ax, 64, y + 14, r'$f$', 'varie', 's')
+    text(ax, 79, y - 1, '=', 'resultat', 'l', weight='bold')
+line(ax, [(2, 55), (86, 55)], 'fixe', dash=True)
+text(ax, 44, 8, 'vrai pour toute paire', 'resultat', 'm')
+save(fig, '48-019')

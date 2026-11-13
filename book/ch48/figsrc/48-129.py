@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 24, 30, 28, 'sujet'); text(ax, 18, 47, 'G = ℤ', 'sujet', 'l')
+box(ax, 7, 27, 22, 10, 'fixe', label='K = 12ℤ')
+box(ax, 55, 24, 30, 28, 'autre'); text(ax, 70, 47, 'groupe connu', 'autre', 'm')
+text(ax, 70, 40, 'horloge 12 h', 'autre', 's'); disc(ax, 70, 30, 3.2, 'resultat', label='0', size='s')
+arrow(ax, (33, 44), (55, 44), 'varie'); text(ax, 44, 47, 'f', 'varie', 'l'); text(ax, 44, 41, 'surjectif', 'varie', 's')
+arrow(ax, (29, 32), (66.5, 30.5), 'resultat'); text(ax, 47, 34.5, 'noyau de f = K', 'resultat', 's')
+text(ax, 44, 12, 'alors G/K ≅ groupe connu', 'resultat', 'l')
+save(fig, '48-129')

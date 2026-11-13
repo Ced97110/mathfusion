@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+B=(44,14); Hh=(24,36); N=(64,36); T=(44,58)
+def at(p,q,y):
+    t=(y-p[1])/(q[1]-p[1]); return (p[0]+t*(q[0]-p[0]),y)
+def edge(p,q,y0,y1,role): line(ax,[at(p,q,y0),at(p,q,y1)],role,lw=1.6)
+edge(B,Hh,18,32,'resultat'); edge(N,T,40,54,'resultat')
+edge(B,N,18,32,'autre'); edge(Hh,T,40,54,'autre')
+box(ax,28,54,32,8,'sujet',label=r'$HN$ : 6 éléments',size='s')
+box(ax,10,32,28,8,'sujet',label=r'$H$ : 3 éléments',size='s')
+box(ax,50,32,28,8,'sujet',label=r'$N$ : 2 éléments',size='s')
+box(ax,28,10,32,8,'sujet',label=r'$H\cap N$ : 1 élément',size='s')
+text(ax,31,25,r'$3\div1=3$','resultat','s',ha='right')
+text(ax,57,47,r'$6\div2=3$','resultat','s',ha='left')
+text(ax,57,25,r'$2\div1=2$','autre','s',ha='left')
+text(ax,31,47,r'$6\div3=2$','autre','s',ha='right')
+text(ax,44,3,'côtés opposés : même nombre','encre','s')
+save(fig,'48-115')

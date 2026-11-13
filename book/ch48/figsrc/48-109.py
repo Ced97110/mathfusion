@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 26, 34, 40, 'sujet'); text(ax, 19, 61, r'$G=\mathbb{Z}$', 'sujet', 'm')
+box(ax, 6, 31, 26, 14, 'sujet', label=r'$H=3\mathbb{Z}$', size='s')
+box(ax, 52, 26, 34, 40, 'autre'); text(ax, 69, 61, r'$G^\prime=\mathbb{Z}/12\mathbb{Z}$', 'autre', 's')
+box(ax, 56, 31, 26, 14, 'autre', label=r'$f(H)$ : 0,3,6,9', size='s')
+arrow(ax, (36.5, 48), (51.5, 48), 'varie'); text(ax, 44, 52, r'$f$', 'varie', 'm')
+arrow(ax, (32.5, 38), (55.5, 38), 'varie')
+text(ax, 19, 16, r'$G/H$ : 3 éléments', 'sujet', 's'); text(ax, 69, 16, r'$G^\prime/f(H)$ : 3 éléments', 'autre', 's')
+text(ax, 44, 8, r'$\cong$', 'resultat', 'xl')
+save(fig, '48-109')

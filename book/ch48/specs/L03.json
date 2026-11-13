@@ -1,0 +1,180 @@
+[
+ {
+  "code": "48-033",
+  "a_dire": "Le signe f̄ envoie un paquet entier sur l’image de n’importe lequel de ses éléments.",
+  "legende_titre": "Un paquet envoyé sur une position",
+  "lecture": [
+   "Le cadre bleu est le paquet aK : il contient 3, 7 et 11.",
+   "Les flèches grises sont f : chaque entier va sur la position 3, en vert.",
+   "La grande flèche orange est f̄ : elle part du paquet entier."
+  ],
+  "a_voir": "Une seule flèche f̄ du paquet vers la position 3, sans choisir d’entier."
+ },
+ {
+  "code": "48-034",
+  "a_dire": "Le signe ≅ dit que deux groupes ont la même structure, avec une correspondance un pour un.",
+  "legende_titre": "Deux groupes différents, une même structure",
+  "lecture": [
+   "La rangée bleue du haut montre les positions du bouton 0, 1, 2, 3.",
+   "La rangée violette du bas montre les rotations 0°, 90°, 180°, 270°.",
+   "Chaque flèche orange relie une position à une rotation, dans les deux sens.",
+   "Le signe vert ≅ résume cette correspondance."
+  ],
+  "a_voir": "Chaque position a exactement une rotation, et chaque rotation exactement une position."
+ },
+ {
+  "code": "48-035",
+  "a_dire": "HN est l’ensemble de toutes les sommes h + n, avec h dans H et n dans N.",
+  "legende_titre": "Toutes les sommes d’un élément de H et d’un de N",
+  "lecture": [
+   "Les nombres bleus 0, 4, 8 sont les éléments de H, en colonnes.",
+   "Les nombres violets 0 et 6 sont les éléments de N, en lignes.",
+   "Chaque case verte donne la somme h + n modulo 12.",
+   "Les six cases forment HN."
+  ],
+  "a_voir": "Six sommes vertes : HN est un ensemble de résultats."
+ },
+ {
+  "code": "48-036",
+  "a_dire": "H ∩ N est l’ensemble des éléments qui sont dans H et dans N à la fois.",
+  "legende_titre": "Ce que les deux groupes ont en commun",
+  "lecture": [
+   "Le disque bleu est H, avec 4 et 8.",
+   "Le disque violet est N, avec 6.",
+   "La zone commune contient le 0, en vert : c’est H ∩ N."
+  ],
+  "a_voir": "Seul le 0 est dans les deux disques."
+ },
+ {
+  "code": "48-037",
+  "a_dire": "f(H) est l’ensemble des images, par f, de tous les éléments de H.",
+  "legende_titre": "Les positions atteintes à partir de H",
+  "lecture": [
+   "Les cadres bleus contiennent les entiers pairs de H : 0, 4, 8 et 2, 6, 10.",
+   "Les flèches orange sont f.",
+   "Les positions vertes 0 et 2 forment f(H).",
+   "Les positions grises 1 et 3 ne sont pas atteintes."
+  ],
+  "a_voir": "H va sur deux positions : f(H) a deux éléments."
+ },
+ {
+  "code": "48-038",
+  "a_dire": "f⁻¹(H′) est l’ensemble des éléments de départ dont l’image est dans H′.",
+  "legende_titre": "Revenir de l’arrivée vers le départ",
+  "lecture": [
+   "Les positions bleues 0 et 2 forment H′.",
+   "Les flèches orange reviennent vers le départ.",
+   "Les cadres verts contiennent 0, 4, 8 et 2, 6, 10 : c’est f⁻¹(H′).",
+   "Les lignes grises 1, 5, 9 et 3, 7, 11 arrivent hors de H′."
+  ],
+  "a_voir": "On part de H′ et on reprend tous les entiers qui y arrivent."
+ },
+ {
+  "code": "48-039",
+  "a_dire": "Le −1 de f⁻¹(H′) ne désigne pas un inverse : f n’a pas besoin d’être bijective.",
+  "legende_titre": "Un ensemble, pas un inverse",
+  "lecture": [
+   "En haut, les entiers 1, 5 et 9 arrivent sur la même position 1.",
+   "En rouge, le retour vers un seul entier est impossible.",
+   "En vert, le retour vers l’ensemble {1, 5, 9} existe."
+  ],
+  "a_voir": "Plusieurs entiers pour une position : on revient à un ensemble, pas à un entier."
+ },
+ {
+  "code": "48-040",
+  "a_dire": "𝕋 est l’ensemble des nombres complexes à la distance 1 de l’origine.",
+  "legende_titre": "Le cercle des nombres de module 1",
+  "lecture": [
+   "Le cercle bleu est 𝕋.",
+   "Le segment orange de longueur 1 va de l’origine 0 au nombre 1.",
+   "Les points verts 1 et i sont sur le cercle."
+  ],
+  "a_voir": "Tous les points du cercle sont à la distance 1 de l’origine."
+ },
+ {
+  "code": "48-041",
+  "a_dire": "Un monomorphisme est un homomorphisme où deux éléments différents ont des images différentes.",
+  "legende_titre": "Des départs différents, des arrivées différentes",
+  "lecture": [
+   "En haut, la multiplication par 3 envoie 2 sur 6 et 5 sur 15 : deux flèches vertes vers deux arrivées.",
+   "En bas, le bouton envoie 1 et 5 sur la même position, en rouge."
+  ],
+  "a_voir": "Chaque arrivée reçoit au plus une flèche."
+ },
+ {
+  "code": "48-042",
+  "a_dire": "Un épimorphisme est un homomorphisme dont l’image est tout le groupe d’arrivée.",
+  "legende_titre": "Toutes les positions d’arrivée sont atteintes",
+  "lecture": [
+   "À gauche, le bouton atteint les quatre positions, en vert.",
+   "À droite, l’application du double n’atteint que 0 et 2.",
+   "Les positions 1 et 3, en rouge, restent vides."
+  ],
+  "a_voir": "Surjectif veut dire : aucune position d’arrivée n’est vide."
+ },
+ {
+  "code": "48-043",
+  "a_dire": "Un isomorphisme est un homomorphisme à la fois injectif et surjectif.",
+  "legende_titre": "Les deux exigences réunies",
+  "lecture": [
+   "Les cercles bleus sont les positions du bouton.",
+   "Les cercles violets sont les rotations du carré.",
+   "Chaque flèche verte relie une position à la rotation de même rang.",
+   "Deux départs différents donnent deux arrivées différentes, et aucune rotation n’est oubliée."
+  ],
+  "a_voir": "Une flèche par départ et une flèche par arrivée."
+ },
+ {
+  "code": "48-044",
+  "a_dire": "Un endomorphisme est un homomorphisme d’un groupe dans lui-même.",
+  "legende_titre": "Départ et arrivée sont le même groupe",
+  "lecture": [
+   "En haut, la boîte bleue ℤ a une flèche verte qui revient vers elle-même : c’est la multiplication par 3.",
+   "En bas, le bouton va de ℤ vers ℤ/4ℤ, un autre groupe, en gris."
+  ],
+  "a_voir": "Dans un endomorphisme, la flèche revient dans le même groupe."
+ },
+ {
+  "code": "48-045",
+  "a_dire": "Un automorphisme est un isomorphisme d’un groupe sur lui-même.",
+  "legende_titre": "Un retournement du groupe sur lui-même",
+  "lecture": [
+   "Sur la droite des entiers, chaque flèche orange relie un entier à son opposé, dans les deux sens.",
+   "Le 0 reste en place.",
+   "Chaque entier est atteint une seule fois."
+  ],
+  "a_voir": "La droite est renvoyée sur elle-même, sans entier oublié ni confondu."
+ },
+ {
+  "code": "48-046",
+  "a_dire": "L’application du bouton est surjective mais pas injective : c’est une seule des quatre combinaisons.",
+  "legende_titre": "Une case sur quatre combinaisons",
+  "lecture": [
+   "Le tableau croise injectif et surjectif.",
+   "La case bleue est le bouton : surjectif, pas injectif, avec f(1) = f(5).",
+   "Les trois cases grises sont l’identité, la multiplication par 3 et le double."
+  ],
+  "a_voir": "Le bouton occupe seulement une case du tableau."
+ },
+ {
+  "code": "48-047",
+  "a_dire": "Envoyer tout entier sur 0 respecte le produit mais pas le neutre 1, donc ce n’est pas un homomorphisme de monoïdes.",
+  "legende_titre": "Le produit est respecté, le neutre non",
+  "lecture": [
+   "En haut, le produit 3 × 4 = 12 va sur 0, et 0 × 0 vaut 0 : le produit est respecté, en vert.",
+   "En bas, le neutre 1 va sur 0 au lieu de 1, en rouge."
+  ],
+  "a_voir": "Le produit est gardé, mais le neutre est perdu."
+ },
+ {
+  "code": "48-048",
+  "a_dire": "Le noyau est l’ensemble des éléments envoyés sur le neutre, et il décrit toutes les confusions de l’application.",
+  "legende_titre": "Deux nombres confondus ont une différence dans le noyau",
+  "lecture": [
+   "À gauche, les cercles bleus 1 et 5 vont sur la position 1, puis 3 et 11 sur la position 3.",
+   "Les cadres orange donnent leur différence, 4 et 8.",
+   "Les flèches mènent au 0 vert, la position du neutre."
+  ],
+  "a_voir": "Deux nombres ont la même position quand leur différence va sur 0."
+ }
+]

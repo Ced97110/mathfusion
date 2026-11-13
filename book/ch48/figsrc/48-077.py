@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+disc(ax, 12, 22, 5, 'sujet', label='7', size='m'); text(ax, 12, 12, "élément", 'sujet', 's')
+box(ax, 30, 15, 28, 14, 'autre', label=r"$\{3,7,11\}$", size='s'); text(ax, 44, 9, "paquet", 'autre', 's')
+disc(ax, 76, 22, 5, 'resultat', label='3', size='m'); text(ax, 76, 12, "position", 'resultat', 's')
+arrow(ax, (17.5, 22), (29, 22), 'varie'); text(ax, 23, 26, r"$\nu$", 'varie', 'm')
+arrow(ax, (59, 22), (70, 22), 'resultat'); text(ax, 64.5, 26, r"$\bar f$", 'resultat', 'm')
+arrow(ax, (12, 28), (76, 28), 'fixe', curve=-0.3); text(ax, 44, 41, r"$f$", 'fixe', 'm')
+text(ax, 44, 50, r"$f=\bar f\circ\nu$", 'encre', 'm')
+save(fig, '48-077')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,22,60,'Jacobson','encre','m',weight='bold'); text(ax,66,60,'Judson','encre','m',weight='bold')
+box(ax,3,44,38,9,'fixe',label='« premier »'); box(ax,47,44,38,9,'fixe',label='« premier »')
+arrow(ax,(22,44),(22,38),'fixe'); arrow(ax,(66,44),(66,38),'fixe')
+box(ax,3,24,38,12,'sujet',label=r'$(G/K)/(H/K)\cong G/H$',size='s'); box(ax,47,24,38,12,'autre',label=r'$G/\ker f\cong\mathrm{im}\,f$',size='s')
+text(ax,44,30,r'$\neq$','limite','xl',weight='bold')
+text(ax,22,17,'Judson : « troisième »','sujet','s')
+text(ax,44,6,'même mot, deux énoncés','limite','s')
+save(fig,'48-123')
