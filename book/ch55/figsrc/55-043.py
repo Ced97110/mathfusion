@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 62, 60, 12, 'sujet', label=r'$h(x) = x(x-1)(x-2)$')
+arrow(ax, (44, 61), (44, 51), 'varie')
+text(ax, 48, 56, 'développer', 'varie', 's', ha='left')
+box(ax, 14, 38, 60, 12, 'sujet', label=r'$= x^3 - 3x^2 + 2x$')
+arrow(ax, (44, 37), (44, 27), 'varie')
+text(ax, 48, 32, 'modulo 3', 'varie', 's', ha='left')
+text(ax, 20, 32, r'$3x^2 \to 0$', 'varie', 's')
+text(ax, 76, 32, r'$2x \to -x$', 'varie', 's')
+box(ax, 14, 14, 60, 12, 'resultat', label=r'$= x^3 - x$')
+text(ax, 44, 7, r'dans $\mathbb{Z}/3\mathbb{Z}$', 'resultat', 's')
+save(fig, '55-043')

@@ -1,0 +1,331 @@
+[
+ {
+  "code": "55-088",
+  "a_dire": "La preuve est une suite de pas : à chaque pas on retire un produit de e_k qui a le même plus haut monôme, jusqu'à obtenir 0.",
+  "legende_titre": "Deux pas pour écrire la somme des carrés",
+  "lecture": [
+   "La case bleue du haut est le polynôme de départ, x₁² + x₂².",
+   "La première flèche orange retire e₁², qui vaut x₁² + 2x₁x₂ + x₂², et laisse la case orange : −2x₁x₂.",
+   "La seconde flèche retire −2e₂, qui vaut −2x₁x₂, et laisse la case verte : 0.",
+   "À droite de chaque case, le plus haut monôme est écrit."
+  ],
+  "a_voir": "Chaque pas retire un produit de e_k et le calcul s'arrête sur 0."
+ },
+ {
+  "code": "55-089",
+  "a_dire": "Un monôme est décrit entièrement par la suite de ses exposants, un exposant par variable.",
+  "legende_titre": "Un monôme, trois exposants",
+  "lecture": [
+   "Les trois noms gris en haut sont les variables x₁, x₂, x₃.",
+   "À gauche, en bleu, chaque ligne est un monôme : x₁² x₃ puis x₁ x₂ x₃.",
+   "À droite, chaque case donne l'exposant de la variable de sa colonne ; la case en pointillés est un exposant 0."
+  ],
+  "a_voir": "x₁² x₃ se résume à la suite 2, 0, 1."
+ },
+ {
+  "code": "55-090",
+  "a_dire": "L'ordre lexicographique compare les monômes par le premier exposant qui diffère, comme un dictionnaire, et non par la somme des exposants.",
+  "legende_titre": "Comparer comme dans un dictionnaire",
+  "lecture": [
+   "Deux suites d'exposants sont écrites : (2, 1, 0) en bleu et (1, 5, 5) en violet.",
+   "Le cadre vert entoure la première colonne : on y compare 2 et 1, et 2 est plus grand.",
+   "Les cases en pointillés gris ne sont pas regardées ; les sommes 3 et 11 à droite ne servent pas.",
+   "Le titre en haut donne le résultat : (2, 1, 0) est plus haut."
+  ],
+  "a_voir": "Seul le premier exposant décide, même si la somme de l'autre est plus grande."
+ },
+ {
+  "code": "55-091",
+  "a_dire": "Le monôme plus haut est celui que l'ordre lexicographique place au-dessus : on en choisit un seul dans le polynôme.",
+  "legende_titre": "Choisir un seul monôme dans un polynôme",
+  "lecture": [
+   "Le polynôme en haut contient deux monômes ; une flèche grise va vers chacun.",
+   "La case verte de gauche, d'exposants (2, 1), est le monôme x₁² x₂.",
+   "La case grise de droite, d'exposants (1, 2), est le monôme x₁ x₂².",
+   "Entre les cases, 2 > 1 : les premiers exposants donnent le choix."
+  ],
+  "a_voir": "En comparant les premiers exposants, un seul monôme est désigné comme le plus haut."
+ },
+ {
+  "code": "55-092",
+  "a_dire": "Quand les premiers exposants diffèrent, les autres exposants ne comptent plus : x₁² x₂ x₃ est plus haut que x₁ x₂³ x₃², malgré son degré plus petit.",
+  "legende_titre": "Le premier exposant l'emporte",
+  "lecture": [
+   "Chaque groupe de deux barres correspond à une variable : x₁, x₂, x₃.",
+   "Les barres bleues sont les exposants 2, 1, 1 du premier monôme, de degré 4 ; les barres violettes sont les exposants 1, 3, 2 du second, de degré 6.",
+   "Le cadre vert entoure x₁ : 2 > 1, on s'arrête là.",
+   "Sous x₂ et x₃, l'accolade grise dit que ces exposants ne comptent plus."
+  ],
+  "a_voir": "Le monôme bleu gagne au premier exposant, même si le violet est plus grand ensuite."
+ },
+ {
+  "code": "55-093",
+  "a_dire": "Les monômes de degré 3 en deux variables forment une liste finie de quatre points ; chaque pas de l'algorithme va d'un point à un point plus bas, comme de (3, 0) à (2, 1).",
+  "legende_titre": "Quatre points pour les monômes de degré 3",
+  "lecture": [
+   "L'axe horizontal donne k₁ et l'axe vertical donne k₂ ; chaque disque est un monôme placé par ses exposants.",
+   "Les deux disques bleus, (3, 0) et (2, 1), peuvent être le plus haut monôme.",
+   "Les deux disques gris, (1, 2) et (0, 3), sont au-dessus de la droite pointillée k₁ = k₂ : ils ne sont jamais le plus haut.",
+   "La flèche orange est un pas : de (3, 0) à (2, 1)."
+  ],
+  "a_voir": "Il n'y a que quatre points : la descente ne peut pas durer indéfiniment."
+ },
+ {
+  "code": "55-094",
+  "a_dire": "Un polynôme homogène a tous ses monômes de même degré total ; sinon il n'est pas homogène.",
+  "legende_titre": "Tous les monômes ont le même degré",
+  "lecture": [
+   "La ligne bleue montre x₁², x₁x₂ et x₂² : les trois degrés verts valent 2, le polynôme est homogène.",
+   "La ligne violette montre x₁² et x₁ : les degrés orange sont 2 et 1, ils diffèrent."
+  ],
+  "a_voir": "Dans la ligne bleue, les trois degrés sont égaux ; dans la violette, ils ne le sont pas."
+ },
+ {
+  "code": "55-095",
+  "a_dire": "On sépare un polynôme symétrique par degrés ; chaque partie reste symétrique, donc il suffit de traiter le cas homogène.",
+  "legende_titre": "Une partie par degré, toutes symétriques",
+  "lecture": [
+   "La case bleue du haut est le polynôme x₁² + x₂² + x₁ + x₂.",
+   "Les deux flèches grises mènent à ses parties : x₁² + x₂² de degré 2 et x₁ + x₂ de degré 1.",
+   "Sous chaque partie, l'échange x₁ ↔ x₂ laisse l'expression inchangée, en vert."
+  ],
+  "a_voir": "Après l'échange des variables, chaque partie est identique à elle-même."
+ },
+ {
+  "code": "55-096",
+  "a_dire": "Un polynôme symétrique contient tous les monômes aux exposants permutés ; le plus haut a donc ses exposants rangés en ordre décroissant.",
+  "legende_titre": "Le plus haut a des exposants décroissants",
+  "lecture": [
+   "La case verte est x₁² x₂ d'exposants (2, 1) ; la case grise est x₁ x₂² d'exposants (1, 2).",
+   "La double flèche orange est l'échange de x₁ et x₂ : les deux monômes sont tous les deux dans le polynôme.",
+   "À droite de la case verte, 2 ≥ 1 : décroissant, c'est le plus haut ; à droite de la grise, 1 < 2 : pas décroissant."
+  ],
+  "a_voir": "Entre un monôme et son échangé, le plus haut est celui dont les exposants décroissent."
+ },
+ {
+  "code": "55-097",
+  "a_dire": "Le plus haut monôme de e_k est le produit des k premières variables, x₁ x₂ ⋯ x_k ; ici pour e₂ avec trois variables, c'est x₁ x₂.",
+  "legende_titre": "Le plus haut monôme de e₂",
+  "lecture": [
+   "Chaque ligne est un des trois monômes de e₂ ; chaque colonne est une variable.",
+   "Une case bleue pleine est un exposant 1 ; une case vide en pointillés est un exposant 0.",
+   "Le cadre vert entoure la ligne du plus haut : x₁ x₂, dont les cases pleines sont les deux premières."
+  ],
+  "a_voir": "Le plus haut monôme a ses cases pleines tout à gauche."
+ },
+ {
+  "code": "55-098",
+  "a_dire": "Le plus haut monôme d'un produit est le produit des plus hauts monômes : leurs suites d'exposants s'additionnent.",
+  "legende_titre": "Plus haut d'un produit : additionner les exposants",
+  "lecture": [
+   "La case bleue est le plus haut monôme de e₁ : x₁, d'exposants (1, 0).",
+   "La case violette est celui de e₂ : x₁x₂, d'exposants (1, 1).",
+   "La case verte est celui du produit : x₁² x₂, d'exposants (2, 1), somme des deux autres.",
+   "Le signe + orange rappelle que les exposants s'additionnent."
+  ],
+  "a_voir": "(1, 0) + (1, 1) donne (2, 1), le plus haut monôme de e₁ e₂."
+ },
+ {
+  "code": "55-099",
+  "a_dire": "Pour obtenir le plus haut monôme d'un produit de puissances de e_k, on remplace chaque e_k par x₁ ⋯ x_k, on l'élève à d_k, puis on additionne les exposants de chaque variable.",
+  "legende_titre": "Empiler les exposants de chaque variable",
+  "lecture": [
+   "Chaque carré de la pile d'une colonne compte 1 dans l'exposant de cette variable.",
+   "Les carrés bleus viennent de e₁² (deux carrés sous x₁), les violets de e₂ (un carré sous x₁ et x₂), les orange de e₃ (un carré sous x₁, x₂, x₃).",
+   "Les piles ont 4, 2 et 1 carrés : le résultat vert est x₁⁴ x₂² x₃."
+  ],
+  "a_voir": "La hauteur de chaque pile est l'exposant de la variable dans le plus haut monôme."
+ },
+ {
+  "code": "55-100",
+  "a_dire": "À chaque pas on prend d_i = k_i − k_{i+1} et on retire a fois e₁^{d₁} ⋯ e_r^{d_r}, puis on recommence ; ici (2, 0) donne d₁ = 2 et d₂ = 0.",
+  "legende_titre": "Lire les exposants d à partir des exposants k",
+  "lecture": [
+   "La pile bleue de deux carrés est k₁ = 2 ; sur la ligne en pointillés, k₂ = 0.",
+   "La double flèche orange d₁ mesure la différence entre les deux hauteurs : d₁ = 2 − 0 = 2.",
+   "À droite, d₂ = k₂ = 0 ; la case verte dit ce qu'on retire : e₁² e₂⁰.",
+   "Il reste −2x₁x₂, écrit en orange sous la case."
+  ],
+  "a_voir": "La différence de deux exposants voisins donne l'exposant de e à retirer."
+ },
+ {
+  "code": "55-101",
+  "a_dire": "La descente s'arrête parce qu'il y a un nombre fini de monômes d'un degré donné : au plus quatre pas ici.",
+  "legende_titre": "Une descente dans une liste finie",
+  "lecture": [
+   "Les quatre cases bleues sont les monômes de degré 3 en deux variables : (3, 0), (2, 1), (1, 2), (0, 3).",
+   "Chaque flèche orange est un pas qui va à un monôme plus bas.",
+   "La case verte finale, 0, est l'arrivée.",
+   "L'accolade bleue rappelle qu'il y a quatre monômes, donc au plus quatre pas."
+  ],
+  "a_voir": "La descente n'a que quatre marches avant 0."
+ },
+ {
+  "code": "55-102",
+  "a_dire": "Les produits ont des plus hauts monômes distincts parce qu'on retrouve les d_i à partir des exposants k du plus haut monôme : d_r = k_r, d_{r−1} = k_{r−1} − k_r.",
+  "legende_titre": "Du produit au plus haut monôme, et retour",
+  "lecture": [
+   "Chaque ligne part d'un produit en bleu : e₁², e₂, e₁e₂.",
+   "La colonne violette donne son plus haut monôme : (2, 0), (1, 1), (2, 1), trois suites différentes.",
+   "La colonne verte retrouve les exposants d à l'aide de la formule orange en bas, d₂ = k₂ et d₁ = k₁ − k₂."
+  ],
+  "a_voir": "De chaque plus haut monôme on retrouve le produit de départ : deux produits ne peuvent pas avoir le même."
+ },
+ {
+  "code": "55-103",
+  "a_dire": "Le coefficient b_k est, au signe (−1)^k près, la somme des produits de k racines : b_k = (−1)^k e_k des racines.",
+  "legende_titre": "Coefficient, signe et racines",
+  "lecture": [
+   "En haut, x² − 5x + 6 est écrit comme (x − 2)(x − 3), de racines 2 et 3.",
+   "Dans chaque ligne, la case bleue est un coefficient : b₁ = −5 et b₂ = 6.",
+   "La case grise du milieu est le signe (−1)^k ; la case violette est e_k des racines : 2 + 3, puis 2 × 3."
+  ],
+  "a_voir": "−5 est −1 fois 2 + 3, et 6 est +1 fois 2 × 3."
+ },
+ {
+  "code": "55-104",
+  "a_dire": "Les relations de Viète demandent que le polynôme ait ses racines dans le corps : x² + 1 n'a aucune racine réelle, donc rien à comparer aux coefficients.",
+  "legende_titre": "Sans racines réelles, pas de relations",
+  "lecture": [
+   "La courbe bleue est celle de x² + 1 sur une droite graduée de −2 à 2.",
+   "La double flèche orange montre que la courbe reste toujours à une hauteur au moins égale à 1.",
+   "Le texte rouge dit qu'elle ne touche pas l'axe : aucune racine réelle."
+  ],
+  "a_voir": "La courbe passe au-dessus de l'axe sans jamais le toucher."
+ },
+ {
+  "code": "55-105",
+  "a_dire": "Pour a x² + b x + c, on divise par a ; alors la somme des racines est −b/a et leur produit est c/a.",
+  "legende_titre": "Diviser par a puis lire somme et produit",
+  "lecture": [
+   "La case bleue du haut est 2x² − 10x + 12, avec a = 2, b = −10, c = 12.",
+   "La flèche orange la divise par a et donne la case bleue du milieu, x² − 5x + 6.",
+   "Les deux cases vertes du bas donnent −b/a = 5 = 2 + 3 (la somme) et c/a = 6 = 2 × 3 (le produit)."
+  ],
+  "a_voir": "Après division par 2, −b/a et c/a valent la somme 5 et le produit 6 des racines 2 et 3."
+ },
+ {
+  "code": "55-106",
+  "a_dire": "Sur la courbe de x² − 5x + 6, le produit des racines est la hauteur en x = 0 et la somme est le double de la position de l'axe de symétrie.",
+  "legende_titre": "Produit et somme lus sur la parabole",
+  "lecture": [
+   "La courbe bleue coupe l'axe horizontal aux deux disques bleus, r₁ = 2 et r₂ = 3.",
+   "Le trait vert sur l'axe vertical est la hauteur 6 de la courbe en x = 0 : c'est le produit 2 × 3.",
+   "La droite orange en pointillés est l'axe de symétrie, en 2,5 : 2 × 2,5 donne la somme 5."
+  ],
+  "a_voir": "Le produit se lit comme une hauteur en x = 0, la somme comme le double de la position de l'axe."
+ },
+ {
+  "code": "55-107",
+  "a_dire": "Le terme constant, hauteur de la courbe en x = 0, est le produit des racines ; la demi-somme des racines est la position de l'axe de symétrie.",
+  "legende_titre": "Lire les coefficients sur la courbe",
+  "lecture": [
+   "La courbe bleue est celle de x² − 7x + 12 ; ses racines sont les disques bleus 3 et 4.",
+   "Le disque vert, en x = 0, est à la hauteur 12 : (0 − 3)(0 − 4) = 12, le produit des racines.",
+   "La droite orange en pointillés passe en 3,5, la demi-somme (3 + 4) / 2."
+  ],
+  "a_voir": "La hauteur en 0 est 3 × 4 et l'axe est au milieu de 3 et 4."
+ },
+ {
+  "code": "55-108",
+  "a_dire": "Le milieu de deux racines est leur demi-somme : l'axe de symétrie passe en (r₁ + r₂)/2, à égale distance des deux racines.",
+  "legende_titre": "Mi-chemin signifie demi-somme",
+  "lecture": [
+   "Sur la droite graduée, les deux disques bleus sont les racines r₁ = 2 et r₂ = 3.",
+   "La droite orange en pointillés est l'axe de symétrie, en 2,5.",
+   "Chaque accolade grise mesure 0,5 : de 2 à 2,5 et de 2,5 à 3.",
+   "Le texte orange du bas dit que 2,5 est la demi-somme de 2 et 3."
+  ],
+  "a_voir": "L'axe est à 0,5 de chaque racine."
+ },
+ {
+  "code": "55-109",
+  "a_dire": "Le discriminant Δ est le produit des carrés des différences de deux variables, pour chaque paire une seule fois ; avec 1, 2, 4 il vaut 36.",
+  "legende_titre": "Multiplier les carrés de toutes les différences",
+  "lecture": [
+   "Sur la droite graduée, les trois disques bleus sont x₁ = 1, x₂ = 2, x₃ = 4.",
+   "Chaque case bleue donne le carré de la différence d'une paire : 1, 9 et 4 ; la paire est écrite à droite en gris.",
+   "La case verte du bas multiplie ces trois carrés : Δ = 1 × 9 × 4 = 36."
+  ],
+  "a_voir": "Trois paires donnent trois facteurs, dont le produit est 36."
+ },
+ {
+  "code": "55-110",
+  "a_dire": "Le signe ∏ demande de multiplier tous les facteurs décrits : avec quatre variables, il remplace six facteurs écrits un par un.",
+  "legende_titre": "Un seul signe pour six facteurs",
+  "lecture": [
+   "Le grand signe orange ∏, avec « i < j » dessous, se lit « produit de ».",
+   "À droite, les six cases bleues sont les six paires de numéros, chacune avec son facteur (xᵢ − xⱼ)².",
+   "La flèche orange relie le signe à ces six facteurs qu'il multiplie."
+  ],
+  "a_voir": "Le signe ∏ et sa condition i < j remplacent la liste des six facteurs."
+ },
+ {
+  "code": "55-111",
+  "a_dire": "Pour deux variables, Δ = (x₁ − x₂)² ne change pas quand on échange les deux valeurs : le carré efface le signe.",
+  "legende_titre": "Échanger deux valeurs ne change pas Δ",
+  "lecture": [
+   "La case bleue de gauche donne x₁ = 5 et x₂ = 2 ; celle de droite donne les valeurs échangées, x₁ = 2 et x₂ = 5.",
+   "La flèche orange est l'échange.",
+   "Les deux cases vertes donnent (5 − 2)² = 9 et (2 − 5)² = (−3)² = 9 : le même résultat."
+  ],
+  "a_voir": "Les deux calculs donnent 9 avant et après l'échange."
+ },
+ {
+  "code": "55-112",
+  "a_dire": "Δ est symétrique : un échange de variables réordonne les carrés et change des signes, mais le produit reste le même.",
+  "legende_titre": "Les carrés se réordonnent, le produit reste",
+  "lecture": [
+   "La ligne bleue donne les trois carrés pour les valeurs 1, 2, 4 : 1, 9, 4, de produit 36.",
+   "La ligne orange donne les carrés après l'échange 2, 1, 4 : 1, 4, 9, de produit 36.",
+   "Les traits verts relient les carrés égaux ; deux se croisent, car leur place a changé.",
+   "Le signe moins de certaines différences disparaît dans le carré."
+  ],
+  "a_voir": "Les mêmes carrés 1, 9, 4 sont présents dans les deux lignes."
+ },
+ {
+  "code": "55-113",
+  "a_dire": "Pour deux variables, Δ = e₁² − 4e₂ : le carré de la somme moins quatre fois le produit donne le carré de la différence.",
+  "legende_titre": "Carré de la somme moins quatre produits",
+  "lecture": [
+   "Le grand carré bleu a pour côté la somme 2 + 3 = 5 : son aire est 25 = e₁².",
+   "Les quatre rectangles violets mesurent 2 sur 3 : chacun a pour aire 6, soit 4e₂ = 24 en tout.",
+   "Le petit carré vert du centre a pour côté 1 et pour aire 1 : c'est Δ = 25 − 24."
+  ],
+  "a_voir": "Ce qui reste du grand carré, une fois les quatre rectangles retirés, est le carré de la différence."
+ },
+ {
+  "code": "55-114",
+  "a_dire": "Pour a x² + b x + c, Δ vaut (b² − 4ac)/a² : on remplace somme et produit des racines par −b/a et c/a dans e₁² − 4e₂.",
+  "legende_titre": "Deux chemins vers le même Δ",
+  "lecture": [
+   "La case bleue du haut est ax² + bx + c.",
+   "La case orange : on divise par a, ce qui donne e₁ = −b/a et e₂ = c/a.",
+   "La case bleue du milieu remplace ces valeurs dans e₁² − 4e₂ : on obtient b²/a² − 4c/a.",
+   "La case verte simplifie : (b² − 4ac)/a². Pour 2x² − 10x + 12, on trouve (100 − 96)/4 = 1, comme 5² − 4 × 6."
+  ],
+  "a_voir": "On remplace la somme et le produit par −b/a et c/a, et on arrive à (b² − 4ac)/a²."
+ },
+ {
+  "code": "55-115",
+  "a_dire": "Le discriminant du chapitre 23 est le carré de la différence des racines multiplié par a² : il s'écrit avec les coefficients grâce à la symétrie.",
+  "legende_titre": "Le discriminant, c'est le carré de la différence",
+  "lecture": [
+   "Le titre bleu donne le carré de la différence des racines 2 et 3 : (2 − 3)² = 1.",
+   "Les quatre carrés bleus valent chacun 1 ; l'accolade orange dit qu'il y en a a² = 2² = 4.",
+   "La case verte donne le discriminant b² − 4ac = 100 − 96 = 4, égal à ces quatre carrés."
+  ],
+  "a_voir": "Le discriminant 4 est quatre fois le carré de la différence, 1."
+ },
+ {
+  "code": "55-116",
+  "a_dire": "Sur un corps infini, deux polynômes égaux en tout point ont les mêmes coefficients ; sur l'horloge à trois heures, x³ et x coïncident sans être égaux.",
+  "legende_titre": "Pourquoi le corps doit être infini",
+  "lecture": [
+   "Sur le graphique, les trois points sont ceux de l'horloge : 0, 1 et 2 ; le grand disque bleu est la valeur de x³ et le petit disque violet celle de x.",
+   "À chaque point, les deux disques sont superposés : mêmes valeurs aux trois points ; en 2, 2³ = 8 = 2.",
+   "Les deux cases du bas donnent les coefficients : 0, 0, 0, 1 pour x³ et 0, 1 pour x, avec le signe ≠ en rouge."
+  ],
+  "a_voir": "Mêmes valeurs en tout point, mais coefficients différents."
+ }
+]

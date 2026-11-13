@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 4, 74, 80, 14, 'sujet', label='f nulle en chaque point\nde F infini')
+arrow(ax, (44, 73), (44, 69), 'fixe')
+box(ax, 4, 54, 80, 14, 'varie', label=r'$f$ non nul de degré $n$ :' + '\nau plus $n$ racines')
+arrow(ax, (44, 53), (44, 49), 'fixe')
+box(ax, 4, 36, 80, 12, 'resultat', label='infinité de racines,\ndonc f = 0')
+text(ax, 44, 29, r'exemple : $x(x-1)(x-2)$, degré 3', 'encre', 's')
+f = numberline(ax, 8, 70, 15, 0, 5, arrow_right=False)
+for v in (0, 1, 2):
+    ax.add_patch(Circle((f(v), 15), 1.3, ec=COL['varie'], fc=COL['varie'], zorder=4))
+text(ax, f(1), 22, 'racines', 'varie', 's')
+ax.add_patch(Circle((f(4), 15), 1.3, ec=COL['sujet'], fc=COL['sujet'], zorder=4))
+text(ax, f(4), 22, r'$24 \neq 0$', 'sujet', 's')
+save(fig, '55-040')

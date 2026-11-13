@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+text(ax, 22, 84, '(2, 3)', 'sujet', 'l'); text(ax, 66, 84, '(3, 2)', 'autre', 'l')
+box(ax, 20, 56, 48, 12, 'resultat', label=r'$e_1=5,\ e_2=6$', size='m')
+arrow(ax, (22, 80), (34, 68), 'varie'); arrow(ax, (66, 80), (54, 68), 'varie')
+box(ax, 2, 28, 40, 12, 'resultat', label=r'$x_1^2+x_2^2=13$')
+box(ax, 46, 28, 40, 12, 'limite', label=r'$x_1$ : 2 ou 3')
+arrow(ax, (34, 56), (22, 40), 'resultat'); arrow(ax, (54, 56), (66, 40), 'limite')
+text(ax, 22, 20, 'symétrique : une valeur', 'resultat', 's')
+text(ax, 66, 20, 'non symétrique : deux', 'limite', 's')
+save(fig, '55-085')

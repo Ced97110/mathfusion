@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+text(ax, 44, 77, r'au point $(1, 2)$ de $\mathbb{Z}/3\mathbb{Z}$', 'encre', 'm')
+box(ax, 3, 6, 24, 13, 'sujet', label=r'$s_1$ : 1')
+box(ax, 31, 6, 24, 13, 'sujet', label=r'$s_2$ : 2')
+box(ax, 62, 6, 24, 13, 'fixe', label='constante : 1', size='s')
+box(ax, 14, 33, 30, 12, 'varie', label=r'$s_1 \times s_2$ : 2')
+box(ax, 28, 56, 44, 13, 'resultat', label=r'$+$ : $2 + 1 = 3 = 0$')
+arrow(ax, (15, 20), (24, 32), 'fixe'); arrow(ax, (43, 20), (34, 32), 'fixe')
+arrow(ax, (29, 46), (42, 55), 'fixe'); arrow(ax, (74, 20), (62, 55), 'fixe')
+save(fig, '55-047')

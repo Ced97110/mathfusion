@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 22, 40, 42, 'fixe', fill=False, dash=True)
+text(ax, 22, 58, 'changés en opposé', 'fixe', 's')
+box(ax, 8, 38, 28, 12, 'sujet', label=r'$x-y$')
+text(ax, 22, 29, r'échange : $y-x$', 'sujet', 's')
+arrow(ax, (36, 44), (52, 44), 'varie')
+text(ax, 68, 56, 'fois lui-même', 'varie', 's')
+box(ax, 52, 38, 34, 12, 'limite', label=r'$(x-y)^2$')
+text(ax, 69, 29, 'échange : inchangé', 'limite', 's')
+text(ax, 69, 20, 'hors de l’ensemble', 'limite', 's')
+save(fig, '55-068')

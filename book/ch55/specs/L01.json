@@ -1,0 +1,342 @@
+[
+ {
+  "code": "55-001",
+  "a_dire": "Un polynôme peut se lire comme une règle de calcul : à chaque nombre a, elle associe le nombre f(a).",
+  "legende_titre": "Une règle qui transforme chaque nombre",
+  "lecture": [
+   "Les cases orange à gauche sont les nombres que tu donnes à la règle : 2 puis 3.",
+   "La grande case bleue au milieu est la règle : le cube du nombre, moins le nombre.",
+   "Les cases vertes à droite sont les résultats f(a) : 8 − 2 = 6 et 27 − 3 = 24."
+  ],
+  "a_voir": "Chaque nombre entre dans la règle et ressort avec un résultat."
+ },
+ {
+  "code": "55-002",
+  "a_dire": "Le mot « polynôme » désigne deux objets différents : une liste de coefficients et une table de valeurs.",
+  "legende_titre": "Un seul nom, deux descriptions",
+  "lecture": [
+   "La case grise du haut porte le nom unique « le polynôme ».",
+   "Les quatre cases bleues sont la liste de coefficients : 0, −1, 0 et 1.",
+   "Les deux cases violettes sont la table de valeurs : 2 donne 6 et 3 donne 24."
+  ],
+  "a_voir": "Deux flèches partent du même nom vers deux objets qui ne se ressemblent pas."
+ },
+ {
+  "code": "55-003",
+  "a_dire": "Sur les nombres réels, deux polynômes qui ont les mêmes valeurs partout ont les mêmes coefficients.",
+  "legende_titre": "Mêmes valeurs, mêmes coefficients sur ℝ",
+  "lecture": [
+   "La colonne bleue est le programme de Sophie : le carré du nombre, moins 1.",
+   "La colonne violette est le programme de Théo : « le nombre moins 1 » fois « le nombre plus 1 ».",
+   "Le signe vert « = » dit que pour 3 et pour 5 ils trouvent le même résultat : 8 et 24.",
+   "En bas, la flèche verte va de « mêmes valeurs » à « mêmes coefficients » sur ℝ."
+  ],
+  "a_voir": "Deux écritures différentes donnent les mêmes valeurs, et sur ℝ cela suffit pour avoir les mêmes coefficients."
+ },
+ {
+  "code": "55-004",
+  "a_dire": "On se demande si « mêmes valeurs » entraîne toujours « mêmes coefficients », alors que l'horloge n'offre que trois essais.",
+  "legende_titre": "Une infinité d'essais, ou seulement trois",
+  "lecture": [
+   "Le rang de cercles bleus en haut représente les nombres réels : il y a une infinité d'essais.",
+   "Le grand cercle gris est l'horloge à 3 positions, avec les nombres 0, 1 et 2 en violet.",
+   "La case en pointillé pose la question : mêmes valeurs entraînent-elles mêmes coefficients ?"
+  ],
+  "a_voir": "Avec l'horloge, on n'a que trois essais pour comparer deux programmes."
+ },
+ {
+  "code": "55-005",
+  "a_dire": "Le polynôme x³ − x n'est pas nul, mais sur l'horloge à trois heures toutes ses valeurs sont 0 : sa fonction est la fonction nulle.",
+  "legende_titre": "Non nul, mais toutes les valeurs valent 0",
+  "lecture": [
+   "La case bleue du haut rappelle la liste 0, −1, 0, 1 : elle n'est pas nulle.",
+   "Les cases grises sont les trois nombres de l'horloge : 0, 1 et 2.",
+   "Au milieu, tu lis le calcul du cube moins le nombre : 0, 0 et 8 − 2 = 6.",
+   "Les cases vertes donnent 0, 0 et 6, qui vaut 0 sur l'horloge."
+  ],
+  "a_voir": "Les trois résultats sont 0, comme pour la fonction nulle, alors que la liste n'est pas nulle."
+ },
+ {
+  "code": "55-006",
+  "a_dire": "On cherche dans quels cas la table des valeurs permet de retrouver la liste des coefficients.",
+  "legende_titre": "Le tableau garde-t-il toute l'information ?",
+  "lecture": [
+   "En haut, sur ℝ, la flèche verte à deux pointes relie une liste à un tableau : on retrouve la liste.",
+   "En bas, les deux cases bleues sont deux listes différentes : 0, −1, 0, 1 et 0, 0, 0, 0.",
+   "Les deux flèches orange mènent à la même case violette : le tableau 0, 0, 0."
+  ],
+  "a_voir": "Sur l'horloge, deux listes différentes donnent le même tableau : une information est perdue."
+ },
+ {
+  "code": "55-007",
+  "a_dire": "Le second problème relie la somme et le produit des racines aux coefficients du polynôme.",
+  "legende_titre": "Racines d'un côté, coefficients de l'autre",
+  "lecture": [
+   "La case bleue du bas contient les racines 3 et 4.",
+   "Les cases violettes donnent leur somme 3 + 4 = 7 et leur produit 3 × 4 = 12.",
+   "Les cases vertes sont les coefficients de l'équation : −7 devant x et 12 sans x.",
+   "Les flèches orange avec « ? » demandent si 7 et 12 sont un hasard."
+  ],
+  "a_voir": "On part des racines et on cherche un lien avec les nombres écrits dans l'équation."
+ },
+ {
+  "code": "55-008",
+  "a_dire": "Pour x² − 5x + 6, les racines 2 et 3 ont pour somme 5 et pour produit 6, et on lit −5 et 6 dans l'équation.",
+  "legende_titre": "Un exemple chiffré : racines 2 et 3",
+  "lecture": [
+   "Les deux cases bleues du haut mises bout à bout valent 2 puis 3 : la somme est 5.",
+   "La case verte −5 est le coefficient de x : l'opposé de la somme.",
+   "Le rectangle bleu a 2 colonnes et 3 lignes : il a 6 carrés, le produit.",
+   "La case verte 6 est le terme sans x : elle est égale au produit."
+  ],
+  "a_voir": "Somme 5 et produit 6 se retrouvent dans les nombres −5 et 6 de l'équation."
+ },
+ {
+  "code": "55-009",
+  "a_dire": "On peut calculer la somme des carrés des racines avec les seuls coefficients, sans connaître les racines.",
+  "legende_titre": "Un même nombre par deux chemins",
+  "lecture": [
+   "À gauche, en bleu, tu pars des racines 3 et 4 : 9 + 16.",
+   "À droite, en violet, tu pars des nombres 7 et 12 lus dans l'équation : 7² − 2 × 12 = 49 − 24.",
+   "Les deux flèches vertes arrivent au même résultat : 25."
+  ],
+  "a_voir": "Le chemin de droite ne demande pas de connaître 3 et 4 et donne le même 25."
+ },
+ {
+  "code": "55-010",
+  "a_dire": "Le chapitre pose deux problèmes : retrouver la liste à partir du tableau, et retrouver des quantités des racines à partir des coefficients.",
+  "legende_titre": "Les deux questions du chapitre",
+  "lecture": [
+   "À gauche, le problème 1 : la case violette est le tableau de valeurs, la case bleue est la liste des coefficients.",
+   "La flèche orange va du tableau vers la liste : peut-on retrouver la liste ?",
+   "À droite, le problème 2 : la case bleue donne les coefficients, la case violette la somme et le produit des racines.",
+   "La flèche orange va des coefficients vers la somme et le produit : peut-on les retrouver ?"
+  ],
+  "a_voir": "Chaque problème demande si une information se retrouve à partir d'une autre."
+ },
+ {
+  "code": "55-011",
+  "a_dire": "La même règle x³ − x a une courbe qui n'est pas plate sur ℝ, mais ses trois valeurs sur l'horloge sont nulles.",
+  "legende_titre": "Même règle, deux ensembles de départ",
+  "lecture": [
+   "La courbe bleue est la règle x³ − x calculée sur les nombres réels.",
+   "Les trois points orange sont aux nombres 0, 1 et 2, à des hauteurs 0, 0 et 6.",
+   "Les trois carrés verts sont sur l'axe : ce sont les valeurs lues sur l'horloge, toutes à la hauteur 0.",
+   "La flèche orange fait passer de la hauteur 6 à la hauteur 0."
+  ],
+  "a_voir": "La courbe monte, mais les trois carrés verts restent à la hauteur 0."
+ },
+ {
+  "code": "55-012",
+  "a_dire": "Les hauteurs 0, 0 et 6 lues sur la figure sont des valeurs réelles : 6 n'est pas un nombre de l'horloge.",
+  "legende_titre": "Lire les trois hauteurs",
+  "lecture": [
+   "Les trois points orange sont en x = 0, x = 1 et x = 2.",
+   "Les hauteurs sont 0, 0 et 6, tracées par le trait en pointillé.",
+   "La bande verte contient les hauteurs de l'horloge : 0, 1 et 2.",
+   "Le point de hauteur 6 est au-dessus de la bande : il est hors de l'horloge."
+  ],
+  "a_voir": "Le point de hauteur 6 sort de la bande des valeurs de l'horloge."
+ },
+ {
+  "code": "55-013",
+  "a_dire": "Dans l'horloge à trois heures, on remplace chaque nombre par son reste dans la division par 3 : 6 devient 0.",
+  "legende_titre": "Après 6 pas, on revient au départ",
+  "lecture": [
+   "Le cercle gris est l'horloge, avec les positions 0, 1 et 2 en violet.",
+   "Les deux flèches orange sont deux tours complets : 6 pas.",
+   "La case bleue écrit 6 = 2 × 3 + 0.",
+   "La case verte donne le reste : 0."
+  ],
+  "a_voir": "Deux tours de trois pas ramènent exactement sur la position 0."
+ },
+ {
+  "code": "55-014",
+  "a_dire": "Vue depuis l'horloge, la règle f donne trois valeurs nulles : c'est la même fonction que la fonction nulle.",
+  "legende_titre": "Trois sorties, toutes égales à 0",
+  "lecture": [
+   "Les trois entrées sont s = 0, s = 1 et s = 2.",
+   "La ligne du haut, avec la case bleue f, donne 0, 0 et 0.",
+   "La ligne du bas, avec la case violette, est la fonction nulle : elle donne aussi 0, 0 et 0.",
+   "Le signe vert « = » dit que les deux lignes sont identiques."
+  ],
+  "a_voir": "Les deux lignes de cases vertes sont les mêmes."
+ },
+ {
+  "code": "55-015",
+  "a_dire": "Quand on ne connaît que le tableau 0, 0, 0, on ne peut pas retrouver la liste de coefficients : l'information disparaît.",
+  "legende_titre": "Trois listes, un seul tableau",
+  "lecture": [
+   "Les trois cases bleues sont trois listes différentes : 0, −1, 0, 1 puis 0, 0, 0, 0 puis 0, −2, 0, 2.",
+   "Les trois flèches orange arrivent dans la même case violette.",
+   "Cette case est le tableau 0, 0, 0."
+  ],
+  "a_voir": "Trois polynômes différents donnent exactement le même tableau."
+ },
+ {
+  "code": "55-016",
+  "a_dire": "Sur ℝ la fonction n'est pas nulle, sur l'horloge elle l'est : les deux énoncés sont vrais car l'ensemble de départ change.",
+  "legende_titre": "Deux sens du mot « nul »",
+  "lecture": [
+   "La case bleue du haut est la règle commune : x³ − x.",
+   "À gauche, sur ℝ, l'entrée x = 2 donne 6 : la case orange n'est pas 0.",
+   "À droite, sur l'horloge, les entrées 0, 1 et 2 donnent trois cases vertes 0.",
+   "Les phrases du bas disent : pas nulle à gauche, fonction nulle à droite."
+  ],
+  "a_voir": "La règle est la même, mais l'ensemble de départ n'est pas le même."
+ },
+ {
+  "code": "55-017",
+  "a_dire": "Dans un corps infini, un polynôme non nul n'a qu'un nombre limité de racines ; dans un corps à trois éléments, tous les éléments peuvent être racines.",
+  "legende_titre": "Corps infini contre corps fini",
+  "lecture": [
+   "En haut, la longue file de cercles représente un corps infini.",
+   "Seuls trois cercles verts sont des racines : le reste est gris.",
+   "En bas, le corps a trois éléments : les trois cercles sont verts.",
+   "Un polynôme de degré 3 a au plus 3 racines, ce qui suffit pour tous les éléments du petit corps."
+  ],
+  "a_voir": "Trois racines ne couvrent pas une infinité d'éléments, mais couvrent un corps de trois éléments."
+ },
+ {
+  "code": "55-018",
+  "a_dire": "Le symbole F^S désigne l'ensemble de toutes les applications de S dans F.",
+  "legende_titre": "Un nom pour toutes les applications",
+  "lecture": [
+   "Les cases bleues sont l'ensemble S : Ana, Bob et Chi.",
+   "Les cases violettes sont l'ensemble F : les notes 0, 1 et 2.",
+   "Les flèches orange montrent une application : Ana a 2, Bob a 0, Chi a 1.",
+   "La case verte du bas donne le nom F^S et le nombre d'applications : 3 × 3 × 3 = 27."
+  ],
+  "a_voir": "Chaque élève reçoit une note, et l'ensemble de tous les choix possibles s'appelle F^S."
+ },
+ {
+  "code": "55-019",
+  "a_dire": "La somme de deux applications se calcule valeur par valeur : (f + g)(s) = f(s) + g(s).",
+  "legende_titre": "Additionner entrée par entrée",
+  "lecture": [
+   "Les cases bleues donnent f : 1, 2 et 0 aux entrées 0, 1 et 2.",
+   "Les cases violettes donnent g : 2, 2 et 1.",
+   "Le signe orange « + » et la flèche mènent aux cases vertes de la somme.",
+   "Chaque case verte utilise seulement les deux valeurs de sa colonne : 1 + 2 = 0, 2 + 2 = 1, 0 + 1 = 1."
+  ],
+  "a_voir": "Chaque colonne se calcule seule, sans regarder les autres."
+ },
+ {
+  "code": "55-020",
+  "a_dire": "Le produit de deux applications se calcule valeur par valeur : (fg)(s) = f(s)g(s).",
+  "legende_titre": "Multiplier entrée par entrée",
+  "lecture": [
+   "Les cases bleues donnent f : 2, 2 et 2.",
+   "Les cases violettes donnent g : 1, 0 et 2.",
+   "Le signe orange « × » et la flèche mènent aux cases vertes du produit.",
+   "Chaque case verte multiplie les deux valeurs de sa colonne : 2 × 1 = 2, 2 × 0 = 0, 2 × 2 = 1."
+  ],
+  "a_voir": "Les valeurs changent, mais la façon de combiner reste la même : colonne par colonne."
+ },
+ {
+  "code": "55-021",
+  "a_dire": "L'ensemble F^S est un anneau commutatif, car chaque règle se vérifie entrée par entrée dans le corps F.",
+  "legende_titre": "Les règles se vérifient colonne par colonne",
+  "lecture": [
+   "La ligne bleue donne f + g : 1 + 2 = 0, 2 + 2 = 1, 0 + 1 = 1.",
+   "La ligne violette donne g + f avec les mêmes nombres dans l'autre ordre.",
+   "Les signes verts « = » montrent que les deux lignes sont égales dans chaque colonne.",
+   "La case grise rappelle que chaque entrée se calcule dans F."
+  ],
+  "a_voir": "Dans chaque colonne, le calcul est celui du corps F, qui respecte déjà la règle."
+ },
+ {
+  "code": "55-022",
+  "a_dire": "Pour prouver la distributivité dans F^S, on passe aux valeurs en s, puis on utilise la distributivité dans F, puis on relit le résultat.",
+  "legende_titre": "Une preuve en trois étapes",
+  "lecture": [
+   "La case bleue du haut est le départ : ((f + g)h)(2).",
+   "La première flèche grise remplace les opérations entre applications par des opérations entre valeurs : (0 + 1) × 2 = 2.",
+   "La grosse flèche orange est l'étape qui porte le poids : la distributivité dans F, qui donne 0 × 2 + 1 × 2 = 2.",
+   "La case verte du bas est l'arrivée : (fh + gh)(2)."
+  ],
+  "a_voir": "La seule étape qui demande une règle des nombres est la flèche orange épaisse."
+ },
+ {
+  "code": "55-023",
+  "a_dire": "La fonction constante a envoie chaque entrée sur le même nombre a.",
+  "legende_titre": "Toujours la même sortie",
+  "lecture": [
+   "Les trois cases grises sont les élèves Ana, Bob et Chi.",
+   "La case en pointillé est un nouvel élève.",
+   "Toutes les flèches bleues arrivent dans la même case verte : 2.",
+   "La sortie ne dépend pas de l'entrée."
+  ],
+  "a_voir": "Quel que soit l'élève, même le nouveau, la note est 2."
+ },
+ {
+  "code": "55-024",
+  "a_dire": "On voit le nombre 2 de F comme la fonction constante 2, ce qui permet de l'additionner à un programme.",
+  "legende_titre": "Un nombre devient un programme",
+  "lecture": [
+   "La case bleue de gauche est le nombre 2 ; la flèche l'amène à trois cases bleues 2, 2 et 2 : le programme constant.",
+   "La ligne violette est le programme g : 1, 2 et 0.",
+   "La ligne verte est g + 2 : on ajoute 2 à chaque valeur de g, et 1 + 2 = 0, 2 + 2 = 1, 0 + 2 = 2."
+  ],
+  "a_voir": "Ajouter le nombre 2 revient à ajouter la fonction constante 2 entrée par entrée."
+ },
+ {
+  "code": "55-025",
+  "a_dire": "L'application identité s ↦ s est la seule des trois dont la sortie est égale à l'entrée.",
+  "legende_titre": "L'identité contre ses voisines",
+  "lecture": [
+   "L'axe du bas donne l'entrée 0, 1 ou 2 ; l'axe de gauche donne la sortie.",
+   "Les disques gris du haut sont la fonction constante : 2, 2, 2.",
+   "Les petits disques bleus sont l'identité : 0, 1, 2, tous sur la diagonale verte.",
+   "Les disques violets sont le carré : 0, 1, 1."
+  ],
+  "a_voir": "Seuls les disques bleus sont sur la diagonale verte : la sortie est égale à l'entrée."
+ },
+ {
+  "code": "55-026",
+  "a_dire": "Une fonction polynomiale est une application fabriquée à partir de constantes et de l'identité par des additions et des multiplications.",
+  "legende_titre": "Fabriquer une fonction polynomiale",
+  "lecture": [
+   "Les cases du haut sont les briques : les constantes 2 et 1 en gris, l'identité s en bleu.",
+   "La case orange est la fabrication : additions et multiplications seulement.",
+   "La case bleue est la fonction obtenue : 2s² + 1.",
+   "Les cases vertes sont ses valeurs sur l'horloge : 1, 0 et 0."
+  ],
+  "a_voir": "Rien d'autre que des constantes, s, des + et des × n'est utilisé."
+ },
+ {
+  "code": "55-027",
+  "a_dire": "La fonction s ↦ a₀ + a₁s + a₂s² + … + aₙsⁿ se calcule en multipliant chaque puissance de s par son coefficient, puis en additionnant.",
+  "legende_titre": "Calculer terme par terme",
+  "lecture": [
+   "Les cases bleues du haut sont les termes : a₀, a₁s et a₂s².",
+   "Les cases grises du milieu donnent leur valeur pour s = 2 avec les coefficients 1, 2, 1 : 1, 2 × 2 = 4 et 1 × 4 = 4.",
+   "La case verte du bas additionne : 1 + 4 + 4 = 9, qui vaut 0 sur l'horloge."
+  ],
+  "a_voir": "Chaque terme est calculé seul, puis tous sont additionnés."
+ },
+ {
+  "code": "55-028",
+  "a_dire": "Le signe F[s] se lit « F crochets s » et désigne l'ensemble des fonctions fabriquées avec les nombres de F et l'identité s par additions et multiplications.",
+  "legende_titre": "Lire le signe F[s]",
+  "lecture": [
+   "La case grise est « les nombres de F » ; la case bleue est l'identité s.",
+   "Les deux flèches orange et le signe « + et × » disent ce qu'on peut faire avec eux.",
+   "Le grand cadre en pointillé est l'ensemble F[s].",
+   "Les trois cases dedans sont des éléments : 1, s et 2s² + 1."
+  ],
+  "a_voir": "F[s] est un ensemble de fonctions, pas une seule fonction."
+ },
+ {
+  "code": "55-029",
+  "a_dire": "Si on ne garde que les fonctions a + bs, le produit s × s sort de l'ensemble : F[s] doit être stable pour la somme et le produit.",
+  "legende_titre": "Le produit sort de l'ensemble",
+  "lecture": [
+   "Les points bleus sont s × s en 0, 1 et 2 : 0, 1 et 4.",
+   "La droite violette est la fonction a + bs qui passe par les deux premiers points.",
+   "En 2, la droite donne 2, alors que s × s donne 4.",
+   "La flèche rouge à deux pointes marque l'écart : 4 n'est pas égal à 2."
+  ],
+  "a_voir": "Aucune droite a + bs ne passe par les trois points 0, 1 et 4."
+ }
+]

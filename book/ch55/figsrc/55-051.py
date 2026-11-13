@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 14, 74, 60, 13, 'sujet', label=r'$f = x_1 x_2$, avec $B_1 = x_1$')
+box(ax, 2, 44, 40, 20, 'limite', label=r'$x_1 = 0$ : $B_1 = 0$' + '\n' + r'$f$ devient 0 : échec', size='s')
+box(ax, 46, 44, 40, 20, 'resultat', label=r'$x_1 = 2$ : $B_1 = 2 \neq 0$' + '\n' + r'$f$ devient $2x_2$, non nul', size='s')
+arrow(ax, (30, 73), (22, 65), 'varie'); arrow(ax, (58, 73), (66, 65), 'varie')
+arrow(ax, (66, 43), (66, 33), 'varie')
+box(ax, 46, 18, 40, 14, 'resultat', label=r'$x_2 = 1$ : $f = 2 \neq 0$')
+text(ax, 22, 28, r'on choisit $x_1$' + '\n' + r'avec $B_1 \neq 0$', 'varie', 's')
+save(fig, '55-051')

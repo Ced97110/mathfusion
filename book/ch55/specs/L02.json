@@ -1,0 +1,330 @@
+[
+ {
+  "code": "55-030",
+  "a_dire": "La lettre F désigne n’importe quel corps, par exemple ℚ, ℝ ou ℤ/pℤ ; les deux premiers sont infinis, le troisième est fini.",
+  "legende_titre": "Que désigne la lettre F ?",
+  "lecture": [
+   "Le rectangle bleu du haut est la lettre F : un corps quelconque.",
+   "Les deux rectangles bleus du bas sont ℚ (des points serrés sur une droite) et ℝ (un trait continu) : ils sont infinis.",
+   "Le rectangle violet est ℤ/pℤ : des points sur un cercle, en nombre fini."
+  ],
+  "a_voir": "Une seule lettre F, trois exemples, dont deux infinis et un fini."
+ },
+ {
+  "code": "55-031",
+  "a_dire": "Le signe F^S écrit vite le nombre d’applications : un choix de F pour chaque élément de S, soit ici 3² = 9.",
+  "legende_titre": "Que permet d’écrire plus vite l’exposant S ?",
+  "lecture": [
+   "Chaque colonne est une note possible pour Bob, chaque ligne une note possible pour Ana.",
+   "Chaque case bleue est une façon de distribuer les notes ; la case orange en est une.",
+   "Le calcul vert à droite compte les cases : 3 puissance 2 égale 9."
+  ],
+  "a_voir": "Le nombre de cases est 3 fois 3, c’est-à-dire 3 puissance 2."
+ },
+ {
+  "code": "55-032",
+  "a_dire": "La lettre s a deux lectures : un élément quelconque de S, ou la fonction identité qui recopie son entrée.",
+  "legende_titre": "Que dit la lettre s, lue en français ?",
+  "lecture": [
+   "En haut, les carrés gris sont les places de S ; le carré orange est s, une place quelconque.",
+   "En bas, le rectangle violet de gauche est une entrée s, la flèche orange la recopie, et le rectangle de droite est la sortie s.",
+   "Le texte du haut et celui du bas donnent les deux lectures de la même lettre."
+  ],
+  "a_voir": "La même lettre s peut être une place ou une fonction qui recopie."
+ },
+ {
+  "code": "55-033",
+  "a_dire": "Le signe ↦ s’écrit « est envoyé sur » et décrit une règle sans nom : une entrée à gauche, sa sortie à droite.",
+  "legende_titre": "Que permet d’écrire plus vite la flèche ↦ ?",
+  "lecture": [
+   "La ligne du haut montre la règle : l’entrée s en orange, la flèche bleue, la sortie s² en vert.",
+   "La ligne du bas montre un seul cas : l’entrée 3 est envoyée sur 9.",
+   "Le signe en gros en haut résume la règle entière."
+  ],
+  "a_voir": "La flèche relie une entrée à sa sortie, sans donner de nom à la règle."
+ },
+ {
+  "code": "55-034",
+  "a_dire": "F[x] est l’ensemble des polynômes, c’est-à-dire des listes de coefficients rangées avec la lettre x, qui ne désigne aucun nombre.",
+  "legende_titre": "Que dit le signe F[x] ?",
+  "lecture": [
+   "En haut, l’écriture 1 + 0·x + 2x² se range en trois cases bleues : 1, 0 et 2.",
+   "Chaque case est reliée à une puissance de x, en gris : x⁰, x¹, x².",
+   "Le texte du bas dit que x marque seulement une place."
+  ],
+  "a_voir": "Un polynôme est une liste de coefficients ; x sert à ranger la liste."
+ },
+ {
+  "code": "55-035",
+  "a_dire": "Le signe f(x) ↦ f(s) envoie un polynôme, qui est une liste de coefficients, sur la fonction qu’il calcule.",
+  "legende_titre": "Que dit le signe f(x) ↦ f(s) ?",
+  "lecture": [
+   "Les rectangles bleus de gauche sont des listes de coefficients : (0, −1, 0, 1) et (0, 0, 0, 0).",
+   "Les rectangles verts de droite sont les fonctions calculées : s ↦ s³ − s et s ↦ 0.",
+   "Chaque flèche orange envoie une liste sur sa fonction."
+  ],
+  "a_voir": "À chaque liste de gauche correspond une fonction à droite."
+ },
+ {
+  "code": "55-036",
+  "a_dire": "L’application polynôme ↦ fonction respecte la somme et le produit, parce que calculer un polynôme en un nombre n’utilise que des additions et des multiplications.",
+  "legende_titre": "Pourquoi l’application respecte-t-elle les opérations ?",
+  "lecture": [
+   "Le rectangle bleu est le polynôme f = s², de valeur 4 en 2 ; le violet est g = s + 1, de valeur 3.",
+   "Les rectangles orange sont la somme et le produit des polynômes.",
+   "Les cases vertes montrent leurs valeurs en 2 : 7 est 4 plus 3, et 12 est 4 fois 3."
+  ],
+  "a_voir": "La valeur de la somme est la somme des valeurs, et de même pour le produit."
+ },
+ {
+  "code": "55-037",
+  "a_dire": "Toute fonction polynomiale vient d’un polynôme, car F[s] est défini ainsi ; une fonction comme « 1 en 0, 0 ailleurs » n’est pas dans F[s].",
+  "legende_titre": "D’où viennent les fonctions de F[s] ?",
+  "lecture": [
+   "Le rectangle bleu de gauche est F[x], avec le polynôme de coefficients (3, 2).",
+   "La flèche orange l’envoie sur la fonction s ↦ 2s + 3, dans le rectangle vert F[s].",
+   "Le rectangle rouge est une fonction de F^F qui n’est pas dans F[s] : aucune flèche n’y arrive."
+  ],
+  "a_voir": "Chaque fonction du rectangle vert reçoit une flèche ; celle du rectangle rouge n’en reçoit pas."
+ },
+ {
+  "code": "55-038",
+  "a_dire": "Toute la question se résume à savoir si deux polynômes différents peuvent donner la même fonction, c’est-à-dire si l’application est injective.",
+  "legende_titre": "Quelle est la seule question qui reste ?",
+  "lecture": [
+   "Les deux rectangles de gauche sont deux listes différentes : bleu et violet.",
+   "Sur ℤ/3ℤ, les deux flèches orange arrivent sur le même rectangle rouge : les valeurs 0, 0, 0.",
+   "Le rectangle orange du bas pose la question pour ℝ."
+  ],
+  "a_voir": "Deux listes différentes donnent la même fonction sur ℤ/3ℤ ; qu’en est-il sur ℝ ?"
+ },
+ {
+  "code": "55-039",
+  "a_dire": "L’application polynôme ↦ fonction est un isomorphisme exactement quand F est infini ; si F est fini, elle perd de l’information.",
+  "legende_titre": "Dans quel cas l’application est-elle un isomorphisme ?",
+  "lecture": [
+   "Le cadre de gauche est le cas infini ℝ : le polynôme x³ − x est non nul et sa fonction vaut 6 en 2, donc n’est pas nulle (vert).",
+   "Le cadre de droite est le cas fini ℤ/3ℤ : le même polynôme donne la fonction nulle (rouge).",
+   "Le dernier rectangle de chaque cadre donne le verdict."
+  ],
+  "a_voir": "Le même polynôme garde son information sur ℝ et la perd sur ℤ/3ℤ."
+ },
+ {
+  "code": "55-040",
+  "a_dire": "Dans un corps infini, un polynôme dont la fonction est nulle a une infinité de racines ; comme un polynôme non nul de degré n a au plus n racines, il est nul.",
+  "legende_titre": "Comment la preuve du cas infini avance-t-elle ?",
+  "lecture": [
+   "Le rectangle bleu est le départ : f est nulle en chaque point de F infini.",
+   "Le rectangle orange est l’étape qui porte tout : un polynôme non nul de degré n a au plus n racines.",
+   "Le rectangle vert est l’arrivée : f = 0.",
+   "Sur la droite, les points orange 0, 1, 2 sont les trois racines de x(x − 1)(x − 2) ; en 4, le point bleu donne 24, qui n’est pas nul."
+  ],
+  "a_voir": "Trop de racines force le polynôme à être nul."
+ },
+ {
+  "code": "55-041",
+  "a_dire": "Dans un corps fini à q éléments, le produit h des facteurs (x − a_i) est non nul, de degré q, mais sa fonction est nulle.",
+  "legende_titre": "Comment la preuve du cas fini avance-t-elle ?",
+  "lecture": [
+   "Le rectangle bleu est le départ : un corps fini F à q éléments.",
+   "Le rectangle orange forme h et remplace x par un a_i : un facteur vaut 0.",
+   "Le rectangle vert est l’arrivée : h est non nul, mais sa fonction est nulle.",
+   "Les deux cases grises montrent le cas ℤ/2ℤ : en 0 et en 1, le produit vaut 0."
+  ],
+  "a_voir": "Un facteur s’annule en chaque élément, donc tout le produit s’annule."
+ },
+ {
+  "code": "55-042",
+  "a_dire": "Pour chaque élément a du corps on forme un facteur x − a ; il y a donc q facteurs, le degré est q, et chaque élément annule un facteur.",
+  "legende_titre": "Que reste-t-il vrai quand on change de corps ?",
+  "lecture": [
+   "Chaque ligne bleue est un corps à q éléments, avec autant de carrés que d’éléments : 2, 3 et 5.",
+   "À droite de chaque ligne, le degré est le nombre de facteurs.",
+   "Dans la ligne du bas, le carré orange x − 3 vaut 0 en 3."
+  ],
+  "a_voir": "Le nombre de facteurs suit le nombre d’éléments, et chaque élément annule un facteur."
+ },
+ {
+  "code": "55-043",
+  "a_dire": "Dans ℤ/3ℤ, le produit x(x − 1)(x − 2) se développe en x³ − 3x² + 2x, puis devient x³ − x : c’est le polynôme de la preuve pour q = 3.",
+  "legende_titre": "Que donne le produit pour trois éléments ?",
+  "lecture": [
+   "Le rectangle bleu du haut est le produit des trois facteurs.",
+   "Le rectangle bleu du milieu est le produit développé.",
+   "Le texte orange dit ce qui change modulo 3 : 3x² devient 0 et 2x devient −x.",
+   "Le rectangle vert du bas est le résultat : x³ − x."
+  ],
+  "a_voir": "Le produit développé devient x³ − x quand on compte modulo 3."
+ },
+ {
+  "code": "55-044",
+  "a_dire": "Un corps fini de q éléments a q^q applications, nombre fini, alors que F[x] est infini : il ne peut pas y avoir de bijection entre les deux.",
+  "legende_titre": "Comment compter montre-t-il qu’il n’y a pas d’isomorphisme ?",
+  "lecture": [
+   "La rangée bleue montre les 4 applications de ℤ/2ℤ dans lui-même, notées par leurs deux sorties.",
+   "La rangée violette montre les polynômes 1, x, x², x³ et ainsi de suite : il y en a une infinité.",
+   "Le texte rouge dit qu’un ensemble fini et un ensemble infini n’ont pas de bijection."
+  ],
+  "a_voir": "Quatre applications d’un côté, une infinité de polynômes de l’autre."
+ },
+ {
+  "code": "55-045",
+  "a_dire": "Le signe F^(r) désigne l’ensemble de toutes les suites de r éléments de F, comme les points du plan pour r = 2.",
+  "legende_titre": "Que désigne le signe F^(r) ?",
+  "lecture": [
+   "Les deux axes gris sont les deux copies de F : la première entrée s₁ et la seconde s₂.",
+   "Chaque point bleu est une suite de deux éléments ; le point orange est (1, 2).",
+   "Le texte à droite compte les points : 3 fois 3 égale 9."
+  ],
+  "a_voir": "Chaque point est une suite d’autant de nombres qu’il y a de copies de F."
+ },
+ {
+  "code": "55-046",
+  "a_dire": "La projection garde une coordonnée du point et oublie les autres, alors que la constante ignore tout et que la somme utilise tout.",
+  "legende_titre": "Qu’est-ce qui sépare la projection de ses voisines ?",
+  "lecture": [
+   "Les deux rectangles bleus de gauche sont les coordonnées du point (1, 2) : 1 et 2.",
+   "Les flèches orange montrent ce que chaque projection garde : une seule coordonnée.",
+   "La somme, en violet, reçoit les deux coordonnées : 1 + 2 = 0.",
+   "Le rectangle gris en pointillés est la constante 2 : aucune flèche ne l'atteint."
+  ],
+  "a_voir": "Une projection ne garde qu'une coordonnée, la somme les prend toutes, la constante n'en prend aucune."
+ },
+ {
+  "code": "55-047",
+  "a_dire": "Une fonction polynomiale en r variables se fabrique à partir de constantes et de projections, avec des additions et des multiplications.",
+  "legende_titre": "De quoi une fonction polynomiale est-elle fabriquée ?",
+  "lecture": [
+   "Les rectangles bleus du bas sont les deux projections, avec leurs valeurs 1 et 2 au point (1, 2) ; le gris est la constante 1.",
+   "Le rectangle orange multiplie les deux projections : 2.",
+   "Le rectangle vert additionne la constante : 2 + 1 = 3, qui vaut 0 dans ℤ/3ℤ."
+  ],
+  "a_voir": "Projections et constantes, combinées par × et +, donnent la fonction."
+ },
+ {
+  "code": "55-048",
+  "a_dire": "Le signe F[s₁, …, s_r] désigne l’ensemble des fonctions à r entrées fabriquées avec les nombres de F et les projections ; pour r = 1, c’est F[s].",
+  "legende_titre": "Que dit le signe F[s₁, …, s_r] ?",
+  "lecture": [
+   "Le rectangle gris contient les nombres de F ; le rectangle bleu contient les projections.",
+   "Les flèches orange les combinent par additions et multiplications.",
+   "Le rectangle vert est l’ensemble obtenu, noté F[s₁, …, s_r]."
+  ],
+  "a_voir": "Le signe nomme l’ensemble des fonctions fabriquées par ces opérations."
+ },
+ {
+  "code": "55-049",
+  "a_dire": "L’application polynôme ↦ fonction à r variables respecte la somme et le produit, car calculer en un point n’utilise que des additions et des multiplications.",
+  "legende_titre": "Pourquoi l’application respecte-t-elle les opérations ?",
+  "lecture": [
+   "Le rectangle bleu est f = x₁ + x₂, de valeur 5 au point (2, 3) ; le violet est g = x₁x₂, de valeur 6.",
+   "Les rectangles orange sont la somme et le produit.",
+   "Les cases vertes montrent leurs valeurs : 11 est 5 plus 6, et 30 est 5 fois 6."
+  ],
+  "a_voir": "Les valeurs de la somme et du produit se calculent à partir des valeurs de f et g."
+ },
+ {
+  "code": "55-050",
+  "a_dire": "Si on retire l’hypothèse « F infini », le théorème devient faux : sur ℤ/3ℤ, un polynôme non nul peut valoir 0 en tous les points.",
+  "legende_titre": "Que devient le théorème si F n’est pas infini ?",
+  "lecture": [
+   "Les neuf cases rouges sont les neuf couples (a₁, a₂) de ℤ/3ℤ.",
+   "Dans chacune, le polynôme x₁³ − x₁ vaut 0.",
+   "Le texte du haut rappelle que ce polynôme n’est pas nul."
+  ],
+  "a_voir": "Les neuf cases donnent 0 alors que le polynôme est non nul."
+ },
+ {
+  "code": "55-051",
+  "a_dire": "La preuve choisit les premières variables pour que le coefficient B_n ne s’annule pas ; alors f garde son degré en la dernière variable et n’est pas nul.",
+  "legende_titre": "Comment la récurrence trouve-t-elle les bons éléments ?",
+  "lecture": [
+   "Le rectangle bleu du haut est le polynôme x₁x₂, avec B₁ = x₁.",
+   "Le rectangle rouge est le mauvais choix x₁ = 0 : f devient 0.",
+   "Le rectangle vert de droite est le bon choix x₁ = 2 : f devient 2x₂, non nul.",
+   "Le dernier rectangle vert prend x₂ = 1 : f vaut 2."
+  ],
+  "a_voir": "Le choix de x₁ qui garde B₁ non nul sauve le polynôme."
+ },
+ {
+  "code": "55-052",
+  "a_dire": "On range f selon les puissances de la dernière variable ; les coefficients B_i sont des polynômes des r − 1 autres variables.",
+  "legende_titre": "Quel problème règle le rangement par puissances ?",
+  "lecture": [
+   "Le texte du haut est le polynôme à deux variables ; la flèche orange le range selon x₂.",
+   "Les trois rectangles bleus sont les coefficients B₀, B₁ et B₂, chacun devant une puissance de x₂.",
+   "L’accolade rappelle que ces coefficients n’ont plus que r − 1 variables.",
+   "Le texte vert du bas est la forme rangée."
+  ],
+  "a_voir": "Une question à r variables devient une question à une variable avec des coefficients."
+ },
+ {
+  "code": "55-053",
+  "a_dire": "Dans un corps à q éléments, tout a vérifie a^q = a ; cela échoue dans ℤ/6ℤ, qui n’est pas un corps.",
+  "legende_titre": "Que devient a^q = a si on retire l’hypothèse « corps » ?",
+  "lecture": [
+   "La colonne de gauche est ℤ/5ℤ, un corps : 2⁵ = 32 = 6 × 5 + 2, et 3⁵ = 243 = 48 × 5 + 3.",
+   "Les restes sont 2 et 3 : on retrouve a.",
+   "La colonne de droite est ℤ/6ℤ : 2⁶ = 64 = 10 × 6 + 4.",
+   "Le reste est 4, pas 2 (rouge). Le rectangle gris dit pourquoi : 2 fois 3 vaut 0."
+  ],
+  "a_voir": "Le fait est vrai à gauche et faux à droite."
+ },
+ {
+  "code": "55-054",
+  "a_dire": "Sur un corps fini, le polynôme x_i^q − x_i est non nul mais vaut 0 en chaque point : il est dans le noyau.",
+  "legende_titre": "Pourquoi x_i^q − x_i est-il dans le noyau ?",
+  "lecture": [
+   "Le rectangle bleu du haut est le polynôme x₂³ − x₂, qui est non nul.",
+   "Les rectangles orange le calculent en deux points de ℤ/3ℤ : (1, 2) et (2, 1) ; chacun donne 0.",
+   "Le texte gris donne la raison : a³ = a.",
+   "Le rectangle vert conclut : nul en chaque point, mais pas nul comme polynôme."
+  ],
+  "a_voir": "Le polynôme vaut 0 partout alors que ses coefficients ne sont pas nuls."
+ },
+ {
+  "code": "55-055",
+  "a_dire": "Il faut une relation x_i^q − x_i par variable : avec une seule, sur ℤ/2ℤ à deux variables, le quotient reste infini et l’isomorphisme est faux.",
+  "legende_titre": "Que se passe-t-il si on garde une seule relation ?",
+  "lecture": [
+   "Le rectangle gris est la seule relation gardée : x₁² − x₁.",
+   "Le rectangle orange est g = x₂² − x₂ ; les quatre carrés verts disent qu’il vaut 0 aux 4 couples.",
+   "Le rectangle rouge du milieu dit que g n’est pas un multiple de la relation gardée.",
+   "Le rectangle rouge du bas conclut : pas d’isomorphisme."
+  ],
+  "a_voir": "g est nul comme fonction mais pas dans le quotient : il manque une relation."
+ },
+ {
+  "code": "55-056",
+  "a_dire": "Le signe ≅ dit que deux anneaux se correspondent élément contre élément en respectant somme et produit, sans être faits des mêmes éléments.",
+  "legende_titre": "Que permet d’écrire plus vite le signe ≅ ?",
+  "lecture": [
+   "La colonne bleue est l’horloge ℤ/2ℤ : 0 et 1 ; la colonne violette est la parité : pair et impair.",
+   "Les flèches vertes relient 0 à pair et 1 à impair.",
+   "Dans la ligne du bas, 1 + 1 = 0 correspond à impair + impair = pair."
+  ],
+  "a_voir": "Les deux calculs se correspondent, bien que les éléments soient différents."
+ },
+ {
+  "code": "55-057",
+  "a_dire": "La barre / se lit « quotient par » : elle change ce que « égal » veut dire, en rendant égaux deux éléments dont la différence est un multiple de ce qui suit la barre.",
+  "legende_titre": "Que dit la barre / ?",
+  "lecture": [
+   "À gauche, en bleu, 7 et 1 sont égaux modulo 3 parce que 7 − 1 = 6 est un multiple de 3.",
+   "À droite, en violet, x⁷ et x³ sont égaux modulo x⁵ − x parce que leur différence est x² fois x⁵ − x.",
+   "Le rectangle orange résume : la barre change le sens de « égal »."
+  ],
+  "a_voir": "Les deux colonnes suivent la même règle d’égalité."
+ },
+ {
+  "code": "55-058",
+  "a_dire": "On divise par x_i^q − x_i : cela remplace x_i^q par x_i et fait baisser les exposants jusqu’à passer sous q.",
+  "legende_titre": "Comment les exposants sont-ils ramenés sous q ?",
+  "lecture": [
+   "Les trois rectangles du haut sont x⁵, puis x³, puis x : chaque flèche retire un multiple de x³ − x.",
+   "Sur la droite graduée, les points orange 5 et 3 sont des exposants au moins égaux à 3 ; les arcs montrent la descente.",
+   "Le point vert 1 est sous q = 3, dans la zone marquée par l’accolade verte."
+  ],
+  "a_voir": "Les exposants passent de 5 à 3, puis à 1, sous q = 3."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+box(ax, 4, 82, 56, 12, 'sujet', label=r'$((f+g)h)(2)$')
+box(ax, 4, 58, 56, 12, 'fixe', label=r'$(0+1)\times2=2$')
+box(ax, 4, 34, 56, 12, 'fixe', label=r'$0\times2+1\times2=2$')
+box(ax, 4, 10, 56, 12, 'resultat', label=r'$(fh+gh)(2)$')
+arrow(ax, (18, 82), (18, 70), 'fixe')
+text(ax, 22, 76, r'on lit $f(2),g(2),h(2)$', 'fixe', 's', ha='left')
+arrow(ax, (18, 58), (18, 46), 'varie', lw=2.2)
+text(ax, 22, 52, 'distributivité\ndans $F$', 'varie', 's', ha='left', weight='bold')
+arrow(ax, (18, 34), (18, 22), 'fixe')
+text(ax, 22, 28, 'on relit en 2', 'fixe', 's', ha='left')
+save(fig, '55-022')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, r'$R[e_1,\,e_2]$', 'sujet', 'xl')
+box(ax, 2, 20, 84, 46, 'sujet', fill=False, dash=True)
+disc(ax, 14, 52, 5, 'sujet', label=r'$e_1$'); disc(ax, 14, 32, 5, 'sujet', label=r'$e_2$')
+box(ax, 36, 46, 46, 12, 'sujet', label=r'$e_1^2-2e_2$')
+box(ax, 36, 26, 46, 12, 'resultat', label=r'$=x^2+y^2$')
+arrow(ax, (19, 52), (36, 52), 'varie'); arrow(ax, (19, 33), (36, 47), 'varie')
+arrow(ax, (59, 46), (59, 38), 'resultat')
+text(ax, 44, 10, 'tous les polynômes symétriques', 'resultat', 's')
+save(fig, '55-087')

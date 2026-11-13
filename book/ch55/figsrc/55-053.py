@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 22, 68, r'$\mathbb{Z}/5\mathbb{Z}$ : un corps', 'sujet', 'm', weight='bold')
+text(ax, 66, 68, r'$\mathbb{Z}/6\mathbb{Z}$ : pas un corps', 'autre', 'm', weight='bold')
+box(ax, 2, 46, 41, 12, 'sujet', label=r'$2^5 = 32 = 6\times 5 + 2$', size='s')
+box(ax, 2, 28, 41, 12, 'sujet', label=r'$3^5 = 243 = 48\times 5 + 3$', size='s')
+box(ax, 2, 8, 41, 12, 'resultat', label=r'reste 2 et 3 : $a^5 = a$', size='s')
+box(ax, 46, 46, 41, 12, 'autre', label=r'$2^6 = 64 = 10\times 6 + 4$', size='s')
+box(ax, 46, 28, 41, 12, 'limite', label=r'reste 4, pas 2 : $2^6 \neq 2$', size='s')
+box(ax, 46, 8, 41, 12, 'fixe', label=r'car $2 \times 3 = 0$', size='s')
+save(fig, '55-053')

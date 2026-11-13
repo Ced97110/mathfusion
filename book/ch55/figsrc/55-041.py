@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 4, 68, 80, 14, 'sujet', label=r'$F$ fini : $q$ éléments' + '\n' + r'$a_1, \ldots, a_q$')
+arrow(ax, (44, 67), (44, 63), 'fixe')
+box(ax, 4, 46, 80, 16, 'varie', label=r'$h = (x-a_1)\cdots(x-a_q)$' + '\n' + r'puis $x = a_i$ : un facteur vaut 0')
+arrow(ax, (44, 45), (44, 41), 'fixe')
+box(ax, 4, 26, 80, 14, 'resultat', label=r'$h$ non nul (degré $q$),' + '\nfonction nulle')
+text(ax, 44, 19, r'exemple $\mathbb{Z}/2\mathbb{Z}$ : $h = x(x-1)$', 'encre', 's')
+box(ax, 4, 3, 38, 10, 'fixe', label=r'$x=0$ : $0 \times (-1) = 0$', size='s')
+box(ax, 46, 3, 38, 10, 'fixe', label=r'$x=1$ : $1 \times 0 = 0$', size='s')
+save(fig, '55-041')

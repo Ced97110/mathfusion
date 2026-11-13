@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 22, 70, 'nombres, modulo 3', 'sujet', 'm', weight='bold')
+text(ax, 66, 70, r'polynômes, modulo $x^5 - x$', 'autre', 'm', weight='bold')
+line(ax, [(44, 38), (44, 74)], 'fixe', lw=0.5, dash=True)
+box(ax, 4, 48, 12, 11, 'sujet', label='7'); text(ax, 22, 53.5, '=', 'sujet', 'l'); box(ax, 28, 48, 12, 11, 'sujet', label='1')
+box(ax, 48, 48, 14, 11, 'autre', label=r'$x^7$'); text(ax, 66, 53.5, '=', 'autre', 'l'); box(ax, 70, 48, 14, 11, 'autre', label=r'$x^3$')
+text(ax, 22, 41, r'$7 - 1 = 6 = 2 \times 3$', 'sujet', 's')
+text(ax, 66, 41, r'$x^7 - x^3 = x^2(x^5 - x)$', 'autre', 's')
+box(ax, 8, 8, 72, 18, 'varie', label='la barre change le sens\nde « égal »', size='s')
+save(fig, '55-057')

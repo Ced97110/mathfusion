@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 14, 42, 60, 11, 'sujet', label=r'même règle $x^3-x$', size='s')
+arrow(ax, (30, 42), (22, 36), 'fixe')
+arrow(ax, (58, 42), (66, 36), 'fixe')
+text(ax, 22, 32, r'sur $\mathbb{R}$ : tous les nombres', 'fixe', 's')
+text(ax, 66, 32, 'sur l’horloge : 3 nombres', 'fixe', 's')
+box(ax, 6, 14, 14, 11, 'fixe', label=r'$x=2$', size='s')
+arrow(ax, (20, 19.5), (26, 19.5), 'varie')
+box(ax, 26, 14, 14, 11, 'varie', label='6', size='s')
+text(ax, 22, 6, r'$6\neq0$ : pas nulle', 'varie', 's')
+for i, x in enumerate((46, 60, 74)):
+    text(ax, x + 6, 28, str(i), 'fixe', 's')
+    box(ax, x, 14, 12, 11, 'resultat', label='0', size='s')
+text(ax, 66, 6, 'tous nuls : fonction nulle', 'resultat', 's')
+save(fig, '55-016')

@@ -1,0 +1,324 @@
+[
+ {
+  "code": "55-117",
+  "a_dire": "Deux polynômes de degré au plus n qui donnent les mêmes valeurs en n + 1 points sont égaux, car leur différence a n + 1 racines et est donc nulle.",
+  "legende_titre": "Trois points suffisent pour un degré au plus 2",
+  "lecture": [
+   "À gauche, la courbe bleue et la courbe orange en pointillés passent par les trois mêmes points verts, en 0, 1 et 2. Elles se superposent.",
+   "À droite, la différence de ces deux polynômes s'annule aux trois points 0, 1 et 2, marqués en vert sur la droite.",
+   "La case verte dit que cela fait 3 racines. La case bleue dit que, avec un degré au plus 2, la différence est nulle."
+  ],
+  "a_voir": "Trois points communs donnent trois racines à la différence, et c'est trop pour un degré au plus 2."
+ },
+ {
+  "code": "55-118",
+  "a_dire": "Une droite est un polynôme de degré au plus 1, fixé par 2 points ; une parabole est un polynôme de degré au plus 2, fixé par 3 points : deux cas de la même propriété.",
+  "legende_titre": "Deux cas d'une même propriété",
+  "lecture": [
+   "À gauche, la droite bleue 1 + 2x passe par les deux points verts d'abscisses 0 et 1 ; ici n vaut 1.",
+   "À droite, la parabole violette x² + 1 passe par les trois points verts d'abscisses 0, 1 et 2 ; ici n vaut 2.",
+   "Sous chaque dessin, le texte vert donne le nombre de points : n + 1."
+  ],
+  "a_voir": "Le nombre de points qui fixe la courbe est toujours le degré maximal plus 1."
+ },
+ {
+  "code": "55-119",
+  "a_dire": "Sur un corps fini, x au cube et x sont différents si l'on travaille avec les polynômes, mais égaux si l'on travaille avec les fonctions.",
+  "legende_titre": "Deux façons de comparer, deux réponses",
+  "lecture": [
+   "À gauche, les polynômes : chaque ligne donne les coefficients de 1, x, x² et x³. Le bleu marque le coefficient 1. Les deux listes diffèrent.",
+   "À droite, les fonctions sur l'horloge à trois heures : en 0, 1 et 2, les cases violettes de x³ et de x donnent les mêmes nombres.",
+   "La case rouge dit non pour les listes. La case verte dit oui pour les valeurs."
+  ],
+  "a_voir": "Le même couple x³ et x est différent côté polynômes et égal côté fonctions."
+ },
+ {
+  "code": "55-120",
+  "a_dire": "Sur ℤ/5ℤ, le polynôme x⁵ − x donne 0 pour chacun des cinq nombres de l'horloge, alors qu'il n'est pas le polynôme nul.",
+  "legende_titre": "Cinq nombres, cinq zéros",
+  "lecture": [
+   "La ligne grise du haut liste les cinq nombres 0, 1, 2, 3 et 4.",
+   "La deuxième ligne grise donne x⁵ pour chacun : 0, 1, 32, 243 et 1 024.",
+   "La ligne orange donne le reste dans la division par 5 : on retrouve 0, 1, 2, 3 et 4.",
+   "La ligne verte donne x⁵ − x : cinq zéros, réunis par l'accolade."
+  ],
+  "a_voir": "Le reste de x⁵ est le nombre de départ, donc la dernière ligne ne contient que des 0."
+ },
+ {
+  "code": "55-121",
+  "a_dire": "Sur ℤ/5ℤ, x⁷ + 2x² et x³ + 2x² sont deux polynômes différents qui donnent la même fonction, parce que x⁷ = x²(x⁵ − x) + x³ et que x⁵ − x vaut 0 en chaque point.",
+  "legende_titre": "Deux polynômes, une seule fonction",
+  "lecture": [
+   "En haut, la ligne noire écrit la division de x⁷ ; la ligne grise dit que le morceau x²(x⁵ − x) vaut 0 en chaque point.",
+   "Les deux cases du milieu montrent f en bleu et f₀ en violet, de degrés 7 et 3 : leurs écritures sont différentes.",
+   "En bas, les cinq cases bleues de f et les cinq cases violettes de f₀ contiennent les mêmes nombres : 0, 3, 1, 0 et 1."
+  ],
+  "a_voir": "Les écritures diffèrent, mais les cinq valeurs de f et de f₀ sont les mêmes."
+ },
+ {
+  "code": "55-122",
+  "a_dire": "En x = 2, f(2) = 136 et f₀(2) = 16 ont le même reste 1 dans la division par 5, parce que leur différence 120 est un multiple de 5, grâce au facteur x⁵ − x qui vaut 30 en 2.",
+  "legende_titre": "Le même reste en x = 2",
+  "lecture": [
+   "Les cases bleues suivent f : 128 plus 8 donne 136, puis 136 s'écrit 27 fois 5 plus 1.",
+   "Les cases violettes suivent f₀ : 8 plus 8 donne 16, puis 16 s'écrit 3 fois 5 plus 1.",
+   "La case verte dit que les deux restes sont 1.",
+   "La case grise du bas explique pourquoi : la différence 120 vaut 4 fois 30, et le texte orange dit que 30 est un multiple de 5."
+  ],
+  "a_voir": "Les deux valeurs diffèrent de 120, un multiple de 5, donc elles ont le même reste."
+ },
+ {
+  "code": "55-123",
+  "a_dire": "Une expression non symétrique des racines, comme r₁ − r₂, ne se calcule pas à partir des coefficients : le même polynôme donne deux valeurs selon la numérotation des racines.",
+  "legende_titre": "Une différence qui dépend de l'ordre",
+  "lecture": [
+   "La case grise du haut montre le polynôme x² − 5x + 6, dont les coefficients ne changent pas.",
+   "Les deux cases bleues donnent deux numérotations des racines 2 et 3.",
+   "Les cases vertes donnent la somme : 5 dans les deux cas.",
+   "Les cases orange donnent la différence : −1 pour la première numérotation, 1 pour la seconde."
+  ],
+  "a_voir": "La somme reste 5 quel que soit l'ordre, la différence change de signe."
+ },
+ {
+  "code": "55-124",
+  "a_dire": "Pour les valeurs 2 et 3, x³ + y³ et e₁³ − 3e₁e₂ donnent le même nombre, 35 : c'est un contrôle de la relation, pas une preuve.",
+  "legende_titre": "Deux calculs, un même nombre",
+  "lecture": [
+   "La case orange du haut donne les valeurs x = 2 et y = 3, avec la somme e₁ = 5 et le produit e₂ = 6.",
+   "La colonne bleue de gauche calcule x³ + y³ : 8 plus 27.",
+   "La colonne violette de droite calcule e₁³ − 3e₁e₂ : 125 moins 90.",
+   "La case verte du bas dit que les deux colonnes donnent 35."
+  ],
+  "a_voir": "Les signes égal entre les deux colonnes se vérifient avec 35 des deux côtés."
+ },
+ {
+  "code": "55-125",
+  "a_dire": "Au pas 1, on retire e₁³ à x³ + y³ : le plus haut monôme x³ disparaît, et le reste f₁ = −3x²y − 3xy² a un plus haut monôme plus bas, x²y.",
+  "legende_titre": "Pas 1 : le plus haut monôme disparaît",
+  "lecture": [
+   "Chaque colonne correspond à un monôme : x³, x²y, xy² et y³. Les cases donnent leur coefficient.",
+   "La ligne bleue est x³ + y³ : coefficients 1, 0, 0 et 1.",
+   "La ligne orange est e₁³ : coefficients 1, 3, 3 et 1.",
+   "La ligne verte est la différence f₁ : 0, −3, −3 et 0. La flèche verte désigne x²y, son plus haut monôme."
+  ],
+  "a_voir": "Après la soustraction, la colonne de x³ est à 0 et le plus haut monôme est x²y."
+ },
+ {
+  "code": "55-126",
+  "a_dire": "Au pas 2, on retire −3e₁e₂ au reste f₁ : les coefficients sont les mêmes, donc le nouveau reste f₂ est nul et l'algorithme s'arrête.",
+  "legende_titre": "Pas 2 : plus rien ne reste",
+  "lecture": [
+   "Les colonnes sont les deux monômes x²y et xy².",
+   "La ligne bleue est le reste f₁ : −3 sous x²y et −3 sous xy².",
+   "La ligne orange est −3e₁e₂ : les mêmes coefficients, −3 et −3.",
+   "La ligne verte, la différence f₂, ne contient que des 0 : l'algorithme s'arrête."
+  ],
+  "a_voir": "Les deux lignes du dessus sont identiques, donc leur différence est nulle."
+ },
+ {
+  "code": "55-127",
+  "a_dire": "Pour x² − 5x + 6, la somme des racines 5 et leur produit 6, lus sur les coefficients, donnent r₁³ + r₂³ = 125 − 90 = 35 sans connaître les racines ; le contrôle avec 2 et 3 donne aussi 35.",
+  "legende_titre": "La somme des cubes sans les racines",
+  "lecture": [
+   "La case bleue du haut est le polynôme x² − 5x + 6.",
+   "Les deux cases orange donnent e₁ = 5, la somme des racines, et e₂ = 6, leur produit.",
+   "La case verte calcule e₁³ − 3e₁e₂ : 125 moins 90, soit 35.",
+   "La case grise du bas contrôle avec les racines 2 et 3 : 8 plus 27, soit 35. La flèche verte relie les deux nombres égaux."
+  ],
+  "a_voir": "Le calcul avec les coefficients et le contrôle avec les racines donnent 35."
+ },
+ {
+  "code": "55-128",
+  "a_dire": "Pour x² − 5x + 3, la somme des cubes des racines vaut 125 − 45 = 80, sans écrire aucune racine carrée, alors que les racines en contiennent.",
+  "legende_titre": "Un nombre simple, des racines compliquées",
+  "lecture": [
+   "La case bleue en haut à gauche est le polynôme x² − 5x + 3.",
+   "Les cases orange donnent e₁ = 5 et e₂ = 3, lus sur les coefficients.",
+   "La case verte calcule 125 moins 3 fois 5 fois 3, puis la grande case verte donne 80.",
+   "À droite, la case grise en pointillés contient les racines avec la racine carrée de 13 : on ne s'en sert pas."
+  ],
+  "a_voir": "Le chemin par les coefficients arrive à 80 sans passer par la case des racines."
+ },
+ {
+  "code": "55-129",
+  "a_dire": "Avec trois variables, la somme des carrés s'écrit encore e₁² − 2e₂, comme avec deux variables ; avec 1, 2 et 4, on trouve 21.",
+  "legende_titre": "La même forme avec trois variables",
+  "lecture": [
+   "Les deux cases du haut écrivent la relation pour deux variables (violet), puis pour trois variables (bleu) : le second membre est le même.",
+   "Les trois disques sont x = 1, y = 2 et z = 4.",
+   "Les cases orange donnent e₁ = 1 + 2 + 4 = 7 et e₂ = 2 + 4 + 8 = 14.",
+   "La case verte calcule 49 moins 28, soit 21 ; le contrôle 1 + 4 + 16 donne aussi 21."
+  ],
+  "a_voir": "Avec trois variables, la somme des carrés s'écrit encore e₁² − 2e₂ : ici 21."
+ },
+ {
+  "code": "55-130",
+  "a_dire": "Pour x³ − 6x² + 11x − 6, on lit e₁ = 6 et e₂ = 11 sur les coefficients, et la somme des carrés des racines vaut 6² − 2 × 11 = 14, sans chercher les racines.",
+  "legende_titre": "La somme des carrés lue sur les coefficients",
+  "lecture": [
+   "Les quatre cases bleues du haut sont les coefficients : 1, −6, 11 et −6.",
+   "Une flèche orange part de −6 vers e₁ = 6, la somme des racines ; une autre part de 11 vers e₂ = 11.",
+   "La case verte calcule 36 moins 22, soit 14.",
+   "La case grise contrôle avec les racines 1, 2 et 3 : 1 plus 4 plus 9 donne 14."
+  ],
+  "a_voir": "Les nombres e₁ et e₂ viennent directement de deux coefficients."
+ },
+ {
+  "code": "55-131",
+  "a_dire": "Δ, produit des carrés des différences des racines, vaut 0 exactement quand deux racines sont égales, car un produit n'est nul que si un facteur l'est.",
+  "legende_titre": "Quand le produit des carrés s'annule",
+  "lecture": [
+   "En haut, les racines 2, 3 et 4 sont trois points bleus distincts sur la droite : les trois carrés valent 1, 4 et 1, et Δ vaut 4.",
+   "En bas, les racines 2, 2 et 3 : deux points violets sont superposés en 2.",
+   "La case orange (2 − 2)² = 0 est le facteur nul : Δ vaut alors 0."
+  ],
+  "a_voir": "Dès que deux points se superposent, un des trois carrés vaut 0 et Δ vaut 0."
+ },
+ {
+  "code": "55-132",
+  "a_dire": "On peut savoir si un polynôme du second degré a une racine double en calculant b² − 4ac avec les coefficients, sans résoudre l'équation.",
+  "legende_titre": "Un calcul à la place de la résolution",
+  "lecture": [
+   "À gauche, le polynôme bleu x² − 4x + 4 : le calcul orange donne 16 moins 16, soit 0.",
+   "À droite, le polynôme violet x² − 5x + 6 : le calcul gris donne 25 moins 24, soit 1.",
+   "Sous chaque calcul, les points verts sont les racines : un seul point double en 2 à gauche, deux points différents 2 et 3 à droite."
+  ],
+  "a_voir": "Le résultat 0 va avec le point double, le résultat 1 avec deux points séparés."
+ },
+ {
+  "code": "55-133",
+  "a_dire": "Avec une seule variable, la seule permutation ne change rien, tout polynôme est symétrique et e₁ = x₁ : le théorème est vrai mais n'apprend rien.",
+  "legende_titre": "Une variable : rien ne bouge",
+  "lecture": [
+   "Le disque bleu 1 est la seule variable ; la flèche orange qui revient sur lui est la seule permutation, qui ne déplace rien.",
+   "Les deux cases bleues montrent x₁² + 3 avant et après le renommage : c'est la même écriture.",
+   "La case verte dit que e₁ égale x₁, donc x₁² + 3 s'écrit e₁² + 3."
+  ],
+  "a_voir": "La flèche revient sur le même point, donc le polynôme est inchangé."
+ },
+ {
+  "code": "55-134",
+  "a_dire": "Un polynôme constant comme 7 est symétrique, de degré 0, et s'écrit sans aucun e_k : l'anneau R est contenu dans R[e₁, …, e_r].",
+  "legende_titre": "Les constantes sont déjà dans l'ensemble",
+  "lecture": [
+   "Le grand cadre violet est l'ensemble R[e₁, …, e_r] des polynômes symétriques.",
+   "Le cadre bleu à l'intérieur est R, les constantes ; la case verte 7 est une de ces constantes, de degré 0.",
+   "À droite, les e₁ à e_r restent en gris : aucun n'est utilisé pour écrire 7."
+  ],
+  "a_voir": "Le 7 est dans le cadre bleu, lui-même à l'intérieur du cadre violet."
+ },
+ {
+  "code": "55-135",
+  "a_dire": "Sur ℤ/2ℤ, les quatre programmes a + bx donnent les quatre tableaux de valeurs possibles, donc toute application est polynomiale ; x² et x donnent les mêmes valeurs.",
+  "legende_titre": "Quatre programmes, quatre tableaux",
+  "lecture": [
+   "Les cases orange à gauche sont les choix de a et de b, chacun 0 ou 1 : quatre lignes.",
+   "Les cases bleues à droite donnent les valeurs p(0) et p(1) du programme a + bx de la même ligne.",
+   "L'accolade verte rassemble les quatre tableaux possibles 0 0, 0 1, 1 1 et 1 0, tous différents.",
+   "Le texte vert en dessous conclut : toute application est de la forme a + bx. Le texte du bas rappelle que x² et x ont les mêmes valeurs en 0 et en 1."
+  ],
+  "a_voir": "Les quatre lignes de droite sont les quatre tableaux possibles, donc il n'en manque aucun."
+ },
+ {
+  "code": "55-136",
+  "a_dire": "Sur un corps à q éléments, il y a q^q applications et q^q polynômes de degré inférieur à q ; ces polynômes donnent des applications toutes différentes, donc toute application est polynomiale.",
+  "legende_titre": "27 applications, 27 polynômes",
+  "lecture": [
+   "Le cube bleu a 3 × 3 × 3 petits cubes : 3 choix de sortie pour chacune des 3 entrées, soit 27 applications.",
+   "Le cube violet a aussi 27 petits cubes : 3 valeurs pour chacun des 3 coefficients, soit 27 polynômes de degré inférieur à 3.",
+   "La flèche orange dit que ces polynômes donnent des applications toutes différentes.",
+   "La case verte conclut : 27 contre 27, donc toutes sont atteintes."
+  ],
+  "a_voir": "Les deux cubes ont le même nombre de petits cubes, 27."
+ },
+ {
+  "code": "55-137",
+  "a_dire": "Les polynômes à plusieurs variables se décomposent de façon unique en facteurs qu'on ne peut plus décomposer, comme les entiers en nombres premiers.",
+  "legende_titre": "Décomposer comme on décompose un entier",
+  "lecture": [
+   "À gauche, en violet, l'entier 12 se décompose en 2, 2 et 3, qu'on ne peut plus décomposer.",
+   "À droite, en bleu, le polynôme x² − 1 se décompose en x − 1 et x + 1, qu'on ne peut plus décomposer.",
+   "La case verte du bas dit qu'il n'y a qu'une seule décomposition dans chaque cas."
+  ],
+  "a_voir": "Les deux arbres ont la même forme : un objet en haut, ses facteurs en bas."
+ },
+ {
+  "code": "55-138",
+  "a_dire": "Les coefficients d'un polynôme sont, au signe près, des expressions symétriques de ses racines, qui vivent dans un corps plus grand : pour x² + 1, les racines i et −i ne sont pas réelles, mais leur somme 0 et leur produit 1 le sont.",
+  "legende_titre": "Des racines hors de ℝ, des coefficients dans ℝ",
+  "lecture": [
+   "Dans le plan, la droite horizontale porte les réels, avec 0 et 1 en vert. Les deux points bleus i et −i sont hors de cette droite.",
+   "La case verte du haut donne la somme i + (−i) = 0.",
+   "La case verte du bas donne le produit i × (−i) = 1.",
+   "Les flèches orange partent des deux racines vers ces deux cases."
+  ],
+  "a_voir": "Les deux racines sont hors de la droite des réels, mais 0 et 1 sont sur cette droite."
+ },
+ {
+  "code": "55-139",
+  "a_dire": "Un élément du corps agrandi est dans le corps de départ exactement quand il est fixé par toutes les permutations des racines : la somme des racines de x² − 2 est fixée et vaut 0, la racine carrée de 2 ne l'est pas.",
+  "legende_titre": "Fixé par l'échange ou non",
+  "lecture": [
+   "Les deux points bleus sur la droite sont les racines moins racine de 2 et racine de 2 ; les flèches orange courbes sont l'échange des deux racines.",
+   "La case verte dit que la somme vaut 0 et reste la même après l'échange : elle est fixée.",
+   "La case grise dit que racine de 2 devient moins racine de 2 : elle n'est pas fixée."
+  ],
+  "a_voir": "Après l'échange, la somme ne change pas, mais chaque racine change de place."
+ },
+ {
+  "code": "55-140",
+  "a_dire": "Pour l'équation générale de degré n, les racines n'ont aucun lien entre elles, donc toutes les permutations sont permises et le groupe de Galois est S_n tout entier : 6 permutations en degré 3, 120 en degré 5.",
+  "legende_titre": "Toutes les permutations sont permises",
+  "lecture": [
+   "À gauche, les six cases bleues sont les six façons d'ordonner 1, 2 et 3.",
+   "À droite, les 120 petits carrés violets, 12 par 10, sont les 120 façons d'ordonner cinq racines.",
+   "Le texte du bas dit que le groupe de Galois est S_n tout entier."
+  ],
+  "a_voir": "On compte 6 cases à gauche et 120 carrés à droite : aucune permutation n'est exclue."
+ },
+ {
+  "code": "55-141",
+  "a_dire": "Sur l'horloge à trois heures, x³ − x s'écrit x(x − 1)(x − 2) et ses racines 0, 1 et 2 sont tous les éléments du corps : on peut construire le corps à q éléments comme le corps où x^q − x se factorise.",
+  "legende_titre": "Les racines de x³ − x sont tous les éléments",
+  "lecture": [
+   "Les trois cases bleues sont les trois facteurs x, x − 1 et x − 2.",
+   "Chaque flèche orange mène à la racine du facteur, un disque vert : 0, 1 et 2.",
+   "L'accolade verte regroupe les trois racines, et la case grise dit que ce sont tous les éléments de ℤ/3ℤ."
+  ],
+  "a_voir": "Il y a trois facteurs, trois racines, et trois éléments dans l'horloge."
+ },
+ {
+  "code": "55-142",
+  "a_dire": "Au second degré, le signe du discriminant dit combien de racines réelles a l'équation ; le chapitre 70 retrouvera cette formule comme un cas particulier du résultant.",
+  "legende_titre": "Le signe du discriminant compte les racines",
+  "lecture": [
+   "À gauche, la courbe bleue de x² − 5x + 6 coupe la droite horizontale en deux points verts, 2 et 3 ; son discriminant vaut 1, positif.",
+   "À droite, la courbe violette de x² + 1 reste au-dessus de la droite horizontale ; son discriminant vaut −4, négatif.",
+   "Les textes du bas donnent le nombre de racines réelles : 2 à gauche, aucune à droite."
+  ],
+  "a_voir": "La courbe coupe la droite deux fois quand le discriminant est positif, jamais quand il est négatif."
+ },
+ {
+  "code": "55-143",
+  "a_dire": "La factorisation (x − r₁)(x − r₂), la somme −b/a et le produit c/a des racines, et la formule b² − 4ac viennent du même fait : les coefficients sont, au signe près, les polynômes symétriques élémentaires des racines.",
+  "legende_titre": "Trois faits, une même origine",
+  "lecture": [
+   "La case bleue de gauche contient les racines 2 et 3 du polynôme x² − 5x + 6.",
+   "La première case verte montre que (x − 2)(x − 3) redonne les coefficients −5 et 6.",
+   "La deuxième montre que la somme 5 est −b/a et le produit 6 est c/a.",
+   "La troisième montre que le carré de la différence, 1, est b² − 4ac."
+  ],
+  "a_voir": "Les trois flèches orange partent des mêmes racines 2 et 3."
+ },
+ {
+  "code": "55-144",
+  "a_dire": "Un polynôme non symétrique comme D n'est pas changé au hasard : chacune des six permutations des variables le laisse égal à +D ou le change en −D.",
+  "legende_titre": "Six permutations, deux résultats",
+  "lecture": [
+   "Chaque case donne les valeurs de x₁, x₂ et x₃ après une permutation de 1, 2 et 4, puis la valeur de D.",
+   "Les trois cases bleues de gauche donnent −6, la valeur de D au départ : c'est +D.",
+   "Les trois cases orange de droite donnent 6 : c'est −D."
+  ],
+  "a_voir": "Les six valeurs sont soit −6, soit 6, et rien d'autre."
+ }
+]

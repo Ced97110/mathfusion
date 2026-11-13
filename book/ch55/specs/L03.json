@@ -1,0 +1,337 @@
+[
+ {
+  "code": "55-059",
+  "a_dire": "Un polynôme non nul dont le degré est inférieur à q ne peut pas s'annuler en tous les éléments du corps : sa fonction n'est pas nulle.",
+  "legende_titre": "Degré 2 sur l'horloge à trois heures",
+  "lecture": [
+   "Les trois colonnes sont les trois éléments 0, 1 et 2 de l'horloge à trois heures.",
+   "Les deux disques bleus en 0 et en 1 sont les endroits où le polynôme vaut 0 : ce sont ses deux racines.",
+   "La barre orange en 2 montre la valeur 2 : le polynôme ne s'y annule pas."
+  ],
+  "a_voir": "Deux racines ne suffisent pas à couvrir les trois éléments : il reste une valeur non nulle."
+ },
+ {
+  "code": "55-060",
+  "a_dire": "Une permutation agit sur un polynôme en renommant ses variables : x_i devient x_π(i).",
+  "legende_titre": "Renommer les variables d'un polynôme",
+  "lecture": [
+   "La rangée du haut, en bleu, montre les trois variables avant le renommage. La rangée du bas, en violet, les montre après.",
+   "Chaque flèche orange part d'une variable et arrive sur le nom qu'elle reçoit : 1 vers 2, 2 vers 3, 3 vers 1.",
+   "En bas, le polynôme bleu x₁²x₂ devient le polynôme violet x₂²x₃ : seuls les noms ont changé."
+  ],
+  "a_voir": "Les flèches changent les numéros des variables ; la forme du polynôme reste la même."
+ },
+ {
+  "code": "55-061",
+  "a_dire": "Le signe x_π(i) écrit en une ligne le renommage de chaque variable x_i en x_π(i).",
+  "legende_titre": "Le signe qui décrit tout le renommage",
+  "lecture": [
+   "En haut, la formule orange dit que x_i devient x_π(i).",
+   "Les disques bleus à gauche sont les variables avant ; les disques violets à droite sont les mêmes numéros d'arrivée.",
+   "Les flèches orange relient 1 et 2 en croix ; la flèche grise laisse 3 à sa place.",
+   "À droite, π(1) = 2, π(2) = 1 et π(3) = 3 donnent les nombres d'arrivée."
+  ],
+  "a_voir": "Une seule formule remplace une phrase par variable."
+ },
+ {
+  "code": "55-062",
+  "a_dire": "Si π échange 1 et 2, le polynôme x₁²x₂ devient x₂²x₁.",
+  "legende_titre": "Un renommage sur un polynôme",
+  "lecture": [
+   "En haut, la boîte bleue est le polynôme de départ et la boîte violette est le polynôme obtenu après l'échange de 1 et 2.",
+   "En bas, la même opération est faite sur la somme de deux termes : le départ est bleu, le résultat est violet.",
+   "Le mot vert dit que cette somme retrouve le même polynôme."
+  ],
+  "a_voir": "Chaque x₁ devient x₂ et chaque x₂ devient x₁ ; rien d'autre ne change."
+ },
+ {
+  "code": "55-063",
+  "a_dire": "Un polynôme symétrique est un polynôme que n'importe quel renommage des variables laisse inchangé.",
+  "legende_titre": "Deux façons de numéroter les solutions",
+  "lecture": [
+   "Chaque ligne est une personne : Léa met 2 puis 3, Théo met 3 puis 2.",
+   "Les boîtes bleues sont la première et la seconde solution de chacun.",
+   "La boîte verte donne la somme des carrés : 13 pour les deux.",
+   "La boîte orange donne la première moins la seconde : −1 pour Léa, 1 pour Théo."
+  ],
+  "a_voir": "Le résultat vert ne dépend pas de l'ordre ; le résultat orange en dépend."
+ },
+ {
+  "code": "55-064",
+  "a_dire": "Échanger les deux coordonnées envoie chaque point du cercle sur un autre point du cercle, symétrique par rapport à la diagonale.",
+  "legende_titre": "Un cercle et sa diagonale",
+  "lecture": [
+   "Le disque bleu clair est le cercle x² + y² = 10.",
+   "La droite verte en pointillés est la diagonale y = x.",
+   "Les deux points orange sont P = (1, 3) et Q = (3, 1) ; la double flèche orange les relie.",
+   "Les deux axes sont en gris."
+  ],
+  "a_voir": "P et Q sont de part et d'autre de la diagonale, tous deux sur le cercle."
+ },
+ {
+  "code": "55-065",
+  "a_dire": "Échanger x et y revient à refléter le point par rapport à la diagonale y = x.",
+  "legende_titre": "Échanger les coordonnées dans le plan",
+  "lecture": [
+   "La droite verte en pointillés est la diagonale y = x.",
+   "Les points bleus (1, 3) et (0, 5) sont envoyés par une flèche orange sur les points violets (3, 1) et (5, 0).",
+   "Le point gris (2, 2) est sur la diagonale : il ne bouge pas."
+  ],
+  "a_voir": "Les flèches sont de part et d'autre de la diagonale ; le point de la diagonale reste en place."
+ },
+ {
+  "code": "55-066",
+  "a_dire": "x² + y² est symétrique : échanger x et y donne y² + x², qui est le même polynôme parce que l'addition est commutative.",
+  "legende_titre": "Un polynôme qui ne change pas",
+  "lecture": [
+   "La boîte bleue du haut est x² + y² au point (1, 3) ; la boîte violette est y² + x² au point (3, 1).",
+   "La flèche orange est l'échange de x et y.",
+   "Les boîtes du milieu donnent 1 + 9 et 9 + 1.",
+   "La boîte verte montre que les deux valent 10."
+  ],
+  "a_voir": "Les deux termes se croisent, la somme reste la même."
+ },
+ {
+  "code": "55-067",
+  "a_dire": "x − y et x²y ne sont pas symétriques : un échange de x et y suffit à changer leur valeur.",
+  "legende_titre": "Deux polynômes qui changent",
+  "lecture": [
+   "La colonne bleue donne les valeurs au point (1, 3) ; la colonne violette donne les valeurs au point (3, 1).",
+   "La première ligne est x − y : −2 puis 2.",
+   "La seconde ligne est x²y : 3 puis 9.",
+   "Sur chaque ligne, la flèche orange relie les deux valeurs du même polynôme, et le signe rouge ≠ dit qu'elles diffèrent."
+  ],
+  "a_voir": "Chaque polynôme change de valeur quand on échange x et y."
+ },
+ {
+  "code": "55-068",
+  "a_dire": "Retirer l'hypothèse « inchangé par le renommage » fait sortir le produit de l'ensemble : les polynômes changés en leur opposé ne forment pas un sous-anneau.",
+  "legende_titre": "Que se passe-t-il sans l'hypothèse ?",
+  "lecture": [
+   "Le cadre en pointillés contient les polynômes que l'échange change en leur opposé.",
+   "La boîte bleue x − y est dedans : son échange donne y − x.",
+   "La flèche orange multiplie x − y par lui-même.",
+   "La boîte rouge (x − y)² est hors du cadre : son échange la laisse inchangée, pas changée en son opposé."
+  ],
+  "a_voir": "Le produit de deux éléments du cadre sort du cadre."
+ },
+ {
+  "code": "55-069",
+  "a_dire": "g(x) est le produit d'un facteur x − x_i par variable ; on le développe pour lire les coefficients des puissances de x.",
+  "legende_titre": "Un facteur par nombre, puis on multiplie",
+  "lecture": [
+   "Les trois boîtes bleues sont les facteurs pour les nombres 1, 4 et 5.",
+   "La boîte orange est le produit des deux premiers facteurs : étape 1.",
+   "La flèche de droite apporte le troisième facteur : étape 2.",
+   "La boîte verte est le résultat, avec les coefficients 1, −10, 29 et −20."
+  ],
+  "a_voir": "Trois facteurs donnent un polynôme de degré 3 aux signes qui alternent."
+ },
+ {
+  "code": "55-070",
+  "a_dire": "Pour deux facteurs, (x − x₁)(x − x₂) = x² − (x₁ + x₂)x + x₁x₂ : le coefficient de x est l'opposé de la somme, le terme constant est le produit.",
+  "legende_titre": "Le produit de deux facteurs développé",
+  "lecture": [
+   "En haut, en bleu, la formule générale.",
+   "En violet, le cas des nombres 2 et 3 : le produit (x − 2)(x − 3) donne trois boîtes, x², −5x et +6.",
+   "La boîte verte sous −5x montre que 5 est la somme 2 + 3.",
+   "La boîte verte sous +6 montre que 6 est le produit 2 × 3."
+  ],
+  "a_voir": "La somme des deux nombres et leur produit apparaissent comme coefficients."
+ },
+ {
+  "code": "55-071",
+  "a_dire": "Pour trois facteurs, le produit contient x³, puis moins la somme, plus la somme des produits deux à deux, moins le produit des trois.",
+  "legende_titre": "Le produit de trois facteurs développé",
+  "lecture": [
+   "En haut, le produit (x − 2)(x − 3)(x − 4).",
+   "La flèche orange le développe en quatre termes, dans les boîtes violettes.",
+   "Chaque boîte verte donne d'où vient le coefficient : 1, 2 + 3 + 4 = 9, 6 + 8 + 12 = 26 et 2 × 3 × 4 = 24."
+  ],
+  "a_voir": "Chaque coefficient est une somme ou un produit des trois nombres."
+ },
+ {
+  "code": "55-072",
+  "a_dire": "Changer l'ordre des facteurs ne change pas le produit, donc ne change pas ses coefficients : ils sont symétriques.",
+  "legende_titre": "Même produit dans un autre ordre",
+  "lecture": [
+   "La ligne bleue est Léa : elle multiplie dans l'ordre 2, 3, 4.",
+   "La ligne violette est Théo : il multiplie dans l'ordre 4, 2, 3.",
+   "Les deux flèches vertes arrivent dans la même boîte verte : les coefficients 9, 26 et 24."
+  ],
+  "a_voir": "Deux ordres, un seul résultat."
+ },
+ {
+  "code": "55-073",
+  "a_dire": "Le développement de g(x) a toujours la même forme : le terme de tête est xʳ, les puissances baissent de 1 à chaque terme et les signes alternent.",
+  "legende_titre": "La forme qui reste quand les nombres changent",
+  "lecture": [
+   "La ligne du haut, en orange, donne les signes : plus, moins, plus, moins.",
+   "La rangée bleue est le cas r = 2 avec les nombres 2 et 3 : x², 5x, 6.",
+   "La rangée violette est le cas r = 3 avec les nombres 2, 3 et 4 : x³, 9x², 26x, 24.",
+   "Chaque colonne garde le même signe dans les deux rangées."
+  ],
+  "a_voir": "Les coefficients changent ; les signes en tête de colonne restent les mêmes."
+ },
+ {
+  "code": "55-074",
+  "a_dire": "Un polynôme symétrique élémentaire e_k est la somme des produits de k variables distinctes ; la somme des carrés est symétrique mais n'en est pas un.",
+  "legende_titre": "Ce qui sépare e_k de ses voisins",
+  "lecture": [
+   "Les trois boîtes bleues sont e₁, e₂ et e₃ pour les nombres 2, 3 et 4 : chaque terme multiplie des variables distinctes.",
+   "La boîte violette sous le trait en pointillés est la somme des carrés 4 + 9 + 16 = 29.",
+   "Ses termes répètent chacun une seule variable."
+  ],
+  "a_voir": "Au-dessus du trait, des variables différentes ; en dessous, une variable répétée."
+ },
+ {
+  "code": "55-075",
+  "a_dire": "p_k chez Jacobson et e_k dans ce livre sont le même polynôme avec deux noms.",
+  "legende_titre": "Deux lettres pour une seule famille",
+  "lecture": [
+   "La boîte violette est le nom p_k, chez Jacobson.",
+   "La boîte bleue est le nom e_k, dans ce livre.",
+   "Le signe vert égale les met côte à côte.",
+   "Les deux flèches arrivent dans la même boîte verte : un seul polynôme."
+  ],
+  "a_voir": "Seule la lettre change, pas le contenu."
+ },
+ {
+  "code": "55-076",
+  "a_dire": "e₁ est la somme de toutes les variables, et cette somme ne dépend pas de leur ordre.",
+  "legende_titre": "La somme de trois variables",
+  "lecture": [
+   "La rangée bleue montre les valeurs 2, 3 et 4 additionnées.",
+   "La rangée violette montre les mêmes valeurs dans un autre ordre : 3, 4 et 2.",
+   "À droite de chaque rangée, en vert, le résultat est 9."
+  ],
+  "a_voir": "Les deux ordres donnent 9."
+ },
+ {
+  "code": "55-077",
+  "a_dire": "e₂ est la somme des produits de deux variables distinctes, une fois chaque paire.",
+  "legende_titre": "Les paires de variables",
+  "lecture": [
+   "Chaque triangle a trois disques bleus : les trois valeurs. Chaque côté relie une paire.",
+   "Les nombres orange sont les produits des paires : 6, 8 et 12 à gauche ; 5, 6 et 30 à droite.",
+   "Le nombre vert au centre est la somme des trois produits : 26 à gauche, 41 à droite."
+  ],
+  "a_voir": "Trois valeurs donnent trois paires, donc trois produits à additionner."
+ },
+ {
+  "code": "55-078",
+  "a_dire": "e₃ est la somme des produits de trois variables distinctes ; avec quatre variables, on choisit trois valeurs parmi quatre.",
+  "legende_titre": "Les triplets parmi quatre variables",
+  "lecture": [
+   "Les nombres 1, 2, 3 et 4 en haut sont les quatre variables, une par colonne.",
+   "Sur chaque ligne, les trois carrés bleus sont les variables choisies ; le carré en pointillés est celle laissée de côté.",
+   "Le texte orange donne le produit de la ligne.",
+   "Le résultat vert additionne les quatre produits : 50."
+  ],
+  "a_voir": "Quatre lignes, quatre produits, une somme."
+ },
+ {
+  "code": "55-079",
+  "a_dire": "e_r est le produit de toutes les variables, sans en oublier ni en répéter.",
+  "legende_titre": "Le produit de toutes les variables",
+  "lecture": [
+   "Chaque rangée de disques bleus est un jeu de variables : 2, 3, 4 ; puis 1, 2, 3, 4 ; puis 2, 5, 7.",
+   "L'accolade verte sous une rangée réunit tous ses disques, sans en oublier.",
+   "À droite, en vert, on lit le nombre de variables r et le produit de tous les disques : 24, 24 et 70."
+  ],
+  "a_voir": "Le produit utilise chaque disque une fois, quel que soit le nombre r de variables."
+ },
+ {
+  "code": "55-080",
+  "a_dire": "Le signe ∑ se lit « somme de » : il additionne tous les termes de la forme écrite à droite, pour les cas choisis par la condition en dessous.",
+  "legende_titre": "Lire le signe ∑",
+  "lecture": [
+   "Le grand signe orange est ∑ : il demande d'additionner.",
+   "La condition violette en dessous dit quels termes on prend.",
+   "La forme bleue à droite dit à quoi ressemble chaque terme.",
+   "En bas, en vert, le cas de Léa : 2×3 + 2×4 + 3×4 = 26."
+  ],
+  "a_voir": "Le signe additionne ; la forme et la condition décrivent les termes."
+ },
+ {
+  "code": "55-081",
+  "a_dire": "La condition i < j garde chaque paire de numéros une seule fois, dans l'ordre croissant.",
+  "legende_titre": "Chaque paire une seule fois",
+  "lecture": [
+   "Le tableau a une case par paire (i, j) de numéros de 1 à 3.",
+   "Les trois cases vertes ont i plus petit que j : ce sont les paires gardées.",
+   "Les trois cases rouges ont i plus grand que j : elles feraient compter deux fois le même produit.",
+   "Les cases grises, où i égale j, ne sont pas des paires de numéros distincts."
+  ],
+  "a_voir": "Trois paires gardées au lieu de six."
+ },
+ {
+  "code": "55-082",
+  "a_dire": "(−1)^k vaut 1 si k est pair et −1 si k est impair : le signe alterne.",
+  "legende_titre": "Le signe qui alterne",
+  "lecture": [
+   "Chaque point est la valeur de (−1)^k pour k de 0 à 4.",
+   "Les points bleus en haut, pour k pair, valent 1.",
+   "Les points orange en bas, pour k impair, valent −1.",
+   "La ligne grise en pointillés les relie dans l'ordre."
+  ],
+  "a_voir": "La valeur saute de 1 à −1 à chaque pas de k."
+ },
+ {
+  "code": "55-083",
+  "a_dire": "Le symbole e_k, avec l'indice k, désigne la somme des produits de k variables ; chaque valeur de k donne un nombre.",
+  "legende_titre": "Une lettre, quatre indices",
+  "lecture": [
+   "Chaque barre bleue est un e_k pour les variables 1, 2, 3 et 4.",
+   "Sa hauteur et le nombre au-dessus donnent sa valeur : 10, 35, 50 et 24.",
+   "Sous la barre, l'indice k dit combien de variables sont multipliées."
+  ],
+  "a_voir": "Le même signe e_k donne quatre nombres selon l'indice."
+ },
+ {
+  "code": "55-084",
+  "a_dire": "Dans chaque facteur on choisit x ou −x_i ; choisir −x_i dans k facteurs donne le signe (−1)^k.",
+  "legende_titre": "Choisir un terme dans chaque facteur",
+  "lecture": [
+   "Chaque ligne choisit un terme dans chacun des trois facteurs : x en gris, ou le nombre avec son signe moins en orange.",
+   "Le nombre k de disques orange donne le signe (−1)^k : +1 pour k = 0, −1 pour k = 1, +1 pour k = 2.",
+   "Pour k = 1, il y a trois choix : −2x², −3x² et −4x², soit −9x²."
+  ],
+  "a_voir": "Chaque disque orange ajoute un signe moins : le signe est (−1)^k."
+ },
+ {
+  "code": "55-085",
+  "a_dire": "Tout polynôme symétrique s'écrit de façon unique avec e₁, …, e_r ; un polynôme non symétrique comme x₁ ne s'écrit pas ainsi.",
+  "legende_titre": "Ce que la somme et le produit déterminent",
+  "lecture": [
+   "Les deux couples bleu et violet, (2, 3) et (3, 2), sont deux ordres des mêmes valeurs.",
+   "La boîte verte du milieu donne e₁ = 5 et e₂ = 6 pour les deux.",
+   "La boîte verte de gauche, x₁² + x₂² = 13, a une seule valeur pour les deux ordres.",
+   "La boîte rouge de droite, x₁, vaut 2 ou 3 : elle ne peut pas se lire dans e₁ et e₂."
+  ],
+  "a_voir": "Seules les expressions symétriques se lisent à partir de e₁ et e₂."
+ },
+ {
+  "code": "55-086",
+  "a_dire": "Les e_k sont algébriquement indépendants : aucun polynôme non nul en eux ne s'annule toujours, donc l'écriture est unique.",
+  "legende_titre": "Quantités liées ou indépendantes",
+  "lecture": [
+   "À gauche, en violet, chaque point est (somme, double de la somme) : tous les points sont sur la même droite en pointillés, il y a un lien.",
+   "À droite, en bleu, chaque point est (somme, produit) pour des paires de nombres de 1 à 5 : les points ne sont sur aucune droite.",
+   "Les axes sont gradués et nommés."
+  ],
+  "a_voir": "Le double est lié à la somme ; le produit ne l'est pas."
+ },
+ {
+  "code": "55-087",
+  "a_dire": "Le signe R[e₁, …, e_r] désigne tous les polynômes fabriqués avec R et les e_k par additions et multiplications ; c'est exactement l'ensemble des polynômes symétriques.",
+  "legende_titre": "Lire R[e₁, …, e_r]",
+  "lecture": [
+   "Le cadre en pointillés bleu est l'ensemble R[e₁, e₂].",
+   "Les deux disques bleus sont e₁ et e₂, les briques de départ.",
+   "Les flèches orange les combinent en la boîte bleue e₁² − 2e₂.",
+   "La boîte verte montre que ce polynôme vaut x² + y², un polynôme symétrique."
+  ],
+  "a_voir": "Combiner e₁ et e₂ donne des polynômes symétriques."
+ }
+]

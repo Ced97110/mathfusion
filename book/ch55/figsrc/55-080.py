@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 16, 66, 'additionner', 'varie', 's')
+text(ax, 16, 44, '∑', 'varie', 40)
+text(ax, 16, 24, r'$i<j$', 'autre', 'm')
+text(ax, 16, 17, 'quels termes', 'autre', 's')
+text(ax, 54, 44, r'$x_i\,x_j$', 'sujet', 'xl')
+text(ax, 54, 34, 'forme de chaque terme', 'sujet', 's')
+line(ax, [(34, 8), (34, 62)], 'fixe', dash=True)
+text(ax, 54, 8, r'$2\times3+2\times4+3\times4=26$', 'resultat', 's')
+save(fig, '55-080')

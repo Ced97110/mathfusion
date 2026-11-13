@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$\pi$ échange 1 et 2', 'varie', 'm')
+box(ax, 4, 40, 32, 14, 'sujet', label=r'$x_1^2\,x_2$')
+box(ax, 52, 40, 32, 14, 'autre', label=r'$x_2^2\,x_1$')
+arrow(ax, (36, 47), (52, 47), 'varie')
+text(ax, 44, 33, 'avec les deux termes', 'fixe', 's')
+box(ax, 2, 10, 38, 12, 'sujet', label=r'$x_1^2x_2+x_1x_2^2$', size='s')
+box(ax, 48, 10, 38, 12, 'autre', label=r'$x_2^2x_1+x_2x_1^2$', size='s')
+arrow(ax, (40, 16), (48, 16), 'varie')
+text(ax, 44, 4, 'même polynôme', 'resultat', 's')
+save(fig, '55-062')

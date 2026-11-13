@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 64, 60, 13, 'sujet', label=r'$x_2^3 - x_2$ : non nul')
+arrow(ax, (30, 63), (22, 55), 'varie'); arrow(ax, (58, 63), (66, 55), 'varie')
+text(ax, 44, 59, r'dans $\mathbb{Z}/3\mathbb{Z}$', 'varie', 's')
+box(ax, 2, 38, 40, 16, 'varie', label=r'point $(1, 2)$ :' + '\n' + r'$2^3 - 2 = 6 = 0$', size='s')
+box(ax, 46, 38, 40, 16, 'varie', label=r'point $(2, 1)$ :' + '\n' + r'$1^3 - 1 = 0$', size='s')
+arrow(ax, (22, 37), (34, 27), 'fixe'); arrow(ax, (66, 37), (54, 27), 'fixe')
+text(ax, 44, 32, r'car $a^3 = a$', 'fixe', 's')
+box(ax, 8, 6, 72, 20, 'resultat', label='nul en chaque point,\nmais pas nul comme polynôme', size='s')
+save(fig, '55-054')

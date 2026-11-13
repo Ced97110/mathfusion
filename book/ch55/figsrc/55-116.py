@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+ox, oy, u = 14, 42, 13.0
+arrow(ax, (ox - 3, oy), (ox + 2 * u + 8, oy), 'fixe', lw=0.9)
+arrow(ax, (ox, oy - 3), (ox, oy + 2 * u + 8), 'fixe', lw=0.9)
+for v in range(3):
+    text(ax, ox + v * u, oy - 5, str(v), 'fixe', 's')
+    text(ax, ox - 5, oy + v * u, str(v), 'fixe', 's')
+    disc(ax, ox + v * u, oy + v * u, 3.2, 'sujet')
+    disc(ax, ox + v * u, oy + v * u, 1.6, 'autre')
+text(ax, ox + 2 * u + 3, oy + 2 * u - 6, '$2^3=8=2$', 'varie', 's', ha='left')
+ax.add_patch(Circle((60, 70), 3.2, ec=COL['sujet'], fc=FILL['sujet'], lw=0.8, zorder=2))
+text(ax, 66, 70, r'$x^3$', 'sujet', 'm', ha='left')
+ax.add_patch(Circle((60, 63), 1.6, ec=COL['autre'], fc=FILL['autre'], lw=0.8, zorder=2))
+text(ax, 66, 63, r'$x$', 'autre', 'm', ha='left')
+text(ax, 62, 55, 'mêmes valeurs', 'resultat', 's', ha='left')
+text(ax, 62, 51, 'aux trois points', 'resultat', 's', ha='left')
+box(ax, 3, 12, 36, 12, 'sujet', label=r'$x^3$ : 0, 0, 0, 1', size='s')
+box(ax, 49, 12, 36, 12, 'autre', label=r'$x$ : 0, 1', size='s')
+text(ax, 44, 18, r'$\neq$', 'limite', 'xl', weight='bold')
+text(ax, 44, 5, 'coefficients différents', 'limite', 's')
+save(fig, '55-116')
