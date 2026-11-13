@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 26</div>
-<h1>Couplages dans les graphes bipartis</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 26</div>
+<h1 class="ct">Couplages dans les graphes bipartis</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Ce chapitre étudie une dernière question sur les graphes. On a deux groupes : des élèves et des sujets, des valeurs de cartes et des tas, des employés et des postes. On veut associer chaque membre du premier groupe à un membre différent du second, en respectant une liste de souhaits. Quand est-ce possible ? La réponse est un théorème de 1935, et sa preuve utilise des chemins, comme au chapitre précédent.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 26 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Attribuer des exposés</h3>
 <p>Tu es professeur. Quatre élèves, <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span> et <span class="m">𝑑</span>, doivent faire un exposé. Tu proposes quatre sujets, <span class="m">𝑤</span>, <span class="m">𝑥</span>, <span class="m">𝑦</span> et <span class="m">𝑧</span>. Chaque élève indique les sujets qui l’intéressent :</p>
 <img class="vm" src="/discretes/img/c026/p0830_1.svg" alt="élève sujets acceptés 𝑎 𝑤, 𝑥 𝑏 𝑤 𝑐 𝑥, 𝑦, 𝑧 𝑑 𝑦" style="--w:24.12" loading="lazy">
@@ -18,7 +24,8 @@
 <p>La raison : les élèves <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span> n’acceptent, à eux trois, que deux sujets, <span class="m">𝑤</span> et <span class="m">𝑥</span>. Trois élèves ne peuvent pas recevoir trois sujets différents pris parmi deux. Peu importe ce que veut <span class="m">𝑑</span>.</p>
 <h3>La question</h3>
 <p>Levin la pose ainsi. Il donne d’abord un graphe biparti à 12 sommets et demande s’il possède un couplage ; tu le traiteras dans la partie « Ce que la notion permet de faire » (figure 26.5). Ensuite, il demande de chercher toutes les raisons qui empêchent une attribution : « S’il existe une attribution, alors … ». Puis demande-toi si, en l’absence de ces raisons, l’attribution existe toujours.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 26 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Regarde la figure 26.2. Elle montre les deux classes.</p>
 <img class="vm" src="/discretes/img/c026/p0833_5.svg" alt="G : un couplage de A (en rouge)" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c026/p0833_6.svg" alt="a b c d w x y z" style="--w:24.12" loading="lazy">
@@ -29,7 +36,8 @@
 <h3>Lis la partie basse</h3>
 <p>Prends l’ensemble des trois élèves <span class="m">𝑆 =</span> <span class="m">{𝑎, 𝑏, 𝑐}</span>, dessinés en rouge dans la zone orange du haut. Suis toutes les arêtes qui partent de <span class="m">𝑆</span> (en rouge). Elles arrivent toutes en <span class="m">𝑤</span> ou en <span class="m">𝑥</span>. L’ensemble des sujets atteints est <span class="m">{𝑤, 𝑥}</span>, dans la zone orange du bas : on le note <span class="m">𝑁(𝑆)</span>. On compte : <span class="m">𝑆</span> a 3 élèves, <span class="m">𝑁(𝑆)</span> a 2 sujets. Une attribution donnerait à <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span> trois sujets différents, et ces trois sujets seraient dans <span class="m">𝑁(𝑆)</span>. C’est impossible, car <span class="m">𝑁(𝑆)</span> n’en contient que deux.</p>
 <p>La figure montre l’idée du chapitre. Un obstacle à l’attribution, c’est un groupe d’élèves qui, ensemble, acceptent moins de sujets qu’ils ne sont nombreux.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 26 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Graphe biparti et couplage</h3>
 <img class="vm" src="/discretes/img/c026/p0834_8.svg" alt="Définition : couplage Soit 𝐺 un graphe biparti : ses sommets sont répartis en deux ensembles 𝐴 et 𝐵, et chaque arête relie un sommet de 𝐴 à" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c026/p0834_9.svg" alt="un sommet de 𝐵. Levin note un tel graphe 𝐺 = {𝐴, 𝐵}. Un couplage de 𝐴 est un ensemble d’arêtes de 𝐺 tel que : • chaque sommet de 𝐴 appartient à" style="--w:24.19" loading="lazy">
@@ -103,7 +111,8 @@
 <img class="vf" src="/discretes/img/c026/p0846_37.svg" alt="" style="--w:24.12" loading="lazy">
 <p>pour chaque <span class="m">𝑆</span> à un élément, <span class="m">|𝑁(𝑆)| ≥</span> <span class="m">2 &gt; 1</span>. Les ensembles à deux éléments passent aussi : <span class="m">𝑁({𝑎, 𝑏}) = {𝑤, 𝑥}</span>, 2 voisins pour 2 élèves. Le défaut n’apparaît qu’à 3 éléments : <span class="m">𝑁({𝑎, 𝑏, 𝑐}) = {𝑤, 𝑥}</span>. Un test sur les degrés seuls ne verrait rien. Le nombre de sous-ensembles à tester est grand. Un ensemble <span class="m">𝐴</span> à <span class="m">𝑛</span> éléments a <span class="m">2</span><sup>𝑛</sup> sous-ensembles (chapitre 5). Pour <span class="m">𝑛 = 4</span> : 16. Pour <span class="m">𝑛 = 13</span> : 8 192. Pour <span class="m">𝑛 = 100</span> : plus de <span class="m">10</span><sup>30</sup>. Vérifier la condition de Hall ensemble par ensemble est donc impossible pour de grands graphes. Mais la preuve fournit une méthode rapide : au plus <span class="m">|𝐴|</span> recherches, chacune parcourant chaque arête au plus une fois. Contrairement au problème de Hamilton (chapitre 25), le problème du couplage se résout vite.</p>
 <img class="vf" src="/discretes/img/c026/p0846_38.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 26 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Trouver un couplage pas à pas</h3>
 <p>Applique la méthode à la première classe. Pars du couplage vide et traite les élèves dans l’ordre <span class="m">𝑎</span>, <span class="m">𝑐</span>, <span class="m">𝑑</span>, <span class="m">𝑏</span>.</p>
 <p>1. <span class="m">𝑎</span> est libre. Son voisin <span class="m">𝑤</span> est libre : chemin augmentant <span class="m">𝑎 𝑤</span>. Couplage : <span class="m">{𝑎𝑤}</span>.</p>
@@ -156,7 +165,8 @@
 <img class="vm" src="/discretes/img/c026/p0855_54.svg" alt="Les deux couplages n’ont aucun sommet commun. Leur réunion est un couplage de 𝐴. □" style="--w:24.12" loading="lazy">
 <h3>Un peu d’histoire</h3>
 <p>L’exemple classique des couplages était autrefois le « problème des mariages ». D’où le nom souvent donné au résultat : théorème des mariages de Hall. Levin préfère l’exemple des exposés. Une version infinie du théorème a été prouvée par Marshall Hall Jr. Malgré le nom, les deux Hall n’ont aucun lien de parenté.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 26 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Ce que ce chapitre relie</h3>
 <img class="vm" src="/discretes/img/c026/p0855_55.svg" alt="Lien avec un autre chapitre Le théorème de Hall ressemble au théorème d’Euler (chapitre 25). Dans les deux cas, une condition nécessaire, prouvée en quelques lignes (degrés pairs ; assez de voisins), se révèle aussi suffisante. Dans les deux cas, la preuve de la suffisance est une construction qui ne peut pas échouer : on insère des circuits chez Euler, on échange le long de chemins augmentants ici." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c026/p0855_56.svg" alt="" style="--w:24.19" loading="lazy">
@@ -172,6 +182,8 @@
 <img class="vf" src="/discretes/img/c026/p0858_61.svg" alt="" style="--w:24.12" loading="lazy">
 <p>Ces questions sont liées entre elles. Un graphe planaire a un nombre chromatique au plus 4 : la première question renseigne la deuxième. L’existence d’un chemin eulérien dépend du nombre de voisins de chaque sommet, et de la parité de ces nombres. Et l’existence d’un couplage se prouve avec des chemins, comme tu l’as vu. La théorie des graphes reste un domaine de recherche actif : de nouvelles questions y apparaissent sans cesse.</p>
 <p>Le chapitre suivant (chapitre 27) quitte les graphes et revient aux suites. Il les code par une seule expression, la fonction génératrice, pour résoudre des relations de récurrence et des problèmes de dénombrement.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 26 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c026/p0859_62.svg" alt="À toi de chercher Quand la condition de Hall échoue, il n’y a pas de couplage de 𝐴. Mais il existe toujours un couplage partiel le plus grand possible. Dans la seconde classe, tu peux couvrir 3 élèves sur 4, pas plus. Pour un ensemble 𝑆 ⊆ 𝐴, appelle déficit de 𝑆 le nombre |𝑆| − |𝑁(𝑆)|. Dans la seconde classe, le déficit de {𝑎, 𝑏, 𝑐} vaut 3 − 2 = 1. Le plus grand couplage partiel laisse-t- il toujours libres exactement autant de sommets de 𝐴 que le plus grand déficit ? Pourquoi un ensemble de déficit 2 oblige-" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c026/p0859_63.svg" alt="t-il à laisser au moins 2 sommets libres ? Et la recherche bloquée de ce chapitre pourrait-elle servir à montrer qu’on n’est jamais obligé d’en laisser plus ?" style="--w:24.19" loading="lazy">
+</div>
