@@ -1,6 +1,9 @@
-<div class="pk">Chapitre 8</div>
-<h1>Les coefficients binomiaux</h1>
-<h2>1. Le problème qui a forcé la notion</h2>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 8</div>
+<h1 class="ct">Les coefficients binomiaux</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<section class="sec" id="s1"><div class="sk">Chapitre 8 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>La tour sur l’échiquier</h3>
 <p>Aux échecs, la tour se déplace en ligne droite, jamais en diagonale. Place une tour dans la case en haut à gauche d’un échiquier. Elle veut atteindre une autre case par un chemin le plus court possible. Pour cela, elle ne va jamais vers le haut ni vers la gauche. Elle avance seulement d’une case vers le bas (B) ou d’une case vers la droite (D).</p>
 <p>Prends la case située 2 lignes plus bas et 2 colonnes plus à droite. Tout plus court chemin vers elle contient exactement 2 pas B et 2 pas D, dans un certain ordre. Il y a 6 tels chemins :</p>
@@ -14,7 +17,8 @@
 <p>Parmi ces 32 sous-ensembles, combien ont 3 éléments ? Le principe multiplicatif ne s’applique plus directement. Tu voudrais dire : 2 choix pour les trois premiers éléments, puis 1 seul pour les deux derniers. Mais si tu as dit « non » à l’un des trois premiers, tu as encore 2 choix pour le quatrième. Le nombre de choix à une étape dépend des étapes précédentes. C’est exactement la situation où le principe multiplicatif échoue.</p>
 <p>Autre idée : il faut choisir 3 éléments parmi 5. Il y a 5 choix pour le premier, puis 4 pour le deuxième, puis 3 pour le troisième. Le principe multiplicatif donne <span class="m">5 ⋅ 4 ⋅ 3 = 60</span>. C’est impossible : <span class="m">60 &gt; 32</span>, et il n’y a que 32 sous-ensembles en tout. Quelque chose est compté plusieurs fois.</p>
 <p>Ce chapitre montre que la tour et les sous-ensembles posent la même question. Il donne un nom au nombre qui y répond.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 8 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Les six chemins</h3>
 <p>La figure 8.1 dessine les 6 chemins de la tour.</p>
 <img class="vm" src="/discretes/img/c008/p0241_3.svg" alt="T T T BBDD BDBD BDDB" style="--w:24.12" loading="lazy">
@@ -30,7 +34,8 @@
 <p class="li"><b>Une case intérieure.</b> Prends la case du 10 orange. Le dernier pas d’un chemin qui y arrive vient soit de la case du dessus (pas B), soit de la case de gauche (pas D). Ces deux groupes de chemins sont disjoints : un chemin a un seul dernier pas. Le principe additif donne : (chemins vers la case du dessus) <span class="m">+</span> (chemins vers la case de gauche) <span class="m">= 4 + 6 = 10</span>.</p>
 <p class="li"><b>Toute la grille.</b> Tu peux remplir l’échiquier ligne par ligne, chaque case étant la somme de ses voisines du dessus et de gauche. Tu n’as dessiné aucun chemin.</p>
 <p>Retiens que la règle « somme du dessus et de la gauche » vient du principe additif. Retiens aussi les nombres 6 (2 pas B, 2 pas D) et 10 (2 pas B, 3 pas D) : ils vont réapparaître dans quatre problèmes différents.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 8 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Mots binaires</h3>
 <p>« Bit » est l’abréviation anglaise de <i>binary digit</i>, « chiffre binaire ». Les chiffres binaires sont 0 et 1. Un mot binaire est une suite de chiffres binaires. Voici quatre mots binaires :</p>
 <img class="vm" src="/discretes/img/c008/p0244_6.svg" alt="1001, 0, 1111, 1010101010." style="--w:24.12" loading="lazy">
@@ -106,7 +111,8 @@
 <img class="vf" src="/discretes/img/c008/p0257_42.svg" alt="" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0257_43.svg" alt="de façons de choisir 6 objets parmi 5 ? Aucune. Si l’on voulait donner un sens à 5 (6), il faudrait lui donner la valeur 0. Ce cas limite explique la prémisse 0 ≤ 𝑘 ≤ 𝑛" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0257_44.svg" alt="de la définition." style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 8 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Les sous-ensembles à 3 éléments, deux fois</h3>
 <p>Reviens à la question de la partie 1 : combien de sous-ensembles à 3 éléments dans <span class="m">{1, 2, 3, 4, 5}</span> ? Tu cherches <span class="m">(</span><sup>5</sup><sub>3</sub><span class="m">)</span>. <b>Première méthode : corriger le 60.</b> Le calcul <span class="m">5⋅4⋅3 = 60</span> choisit un premier élément, puis un deuxième, puis un troisième. Il compte des <i>listes ordonnées</i>. Choisir 3, puis 2, puis 5 donne la liste <span class="m">(3, 2, 5)</span>. Choisir 5, puis 2, puis 3 donne <span class="m">(5, 2, 3)</span>. Ces deux listes donnent le même ensemble <span class="m">{2, 3, 5}</span>. Combien de listes donnent un même ensemble de 3 éléments ? Il y a 3 choix pour l’élément écrit en premier, puis 2 pour le deuxième, puis 1 pour le dernier. Cela fait <span class="m">3 ⋅ 2 ⋅ 1 = 6</span> listes par ensemble. Chaque ensemble est donc compté 6 fois dans 60. Il y a <span class="m">60/6 = 10</span> ensembles.</p>
 <img class="vm" src="/discretes/img/c008/p0257_45.svg" alt="Ton objection Tu vas me dire : « Pourquoi diviser ? Je n’ai jamais vu le principe multiplicatif" style="--w:24.19" loading="lazy">
@@ -167,7 +173,8 @@
 <img class="vm" src="/discretes/img/c008/p0265_60.svg" alt="10 + 45, 462 = 210 + 252, 924 = 462 + 462. Donc (126 ) = 924. L’échiquier de la tour, enfin. Compare la figure 8.2 au triangle. La case située 𝑖 lignes plus bas et 𝑗 colonnes plus à droite est atteinte par des mots de 𝑖 + 𝑗 lettres, 𝑖+𝑗 dont 𝑖 lettres B. Elle contient donc ( ). La 𝑖 règle « somme du dessus et de la gauche » est la relation de récurrence. L’échiquier est le triangle de Pascal, tourné de façon que son sommet soit dans le coin de la tour. Les diagonales de l’échiquier qui descendent vers la gauche sont les lignes du triangle. Par exemple, la diagonale 1, 4, 6, 4, 1 qui passe par la case du 6 est la ligne 4." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0265_61.svg" alt="Lien avec un autre chapitre" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0265_62.svg" alt="Au chapitre 5, tu as rencontré l’ensemble des parties 𝒫(𝐴). Au chapitre 6, tu as rencontré les bijections. Ce chapitre les utilise ensemble. Le codage par mots binaires est une bijection de 𝒫(𝐴) vers B𝑛, donc |𝒫(𝐴)| = 2𝑛. Range maintenant les sous-ensembles par taille : la ligne 𝑛 du triangle de Pascal dit combien il y en a de chaque taille. La somme de la ligne 𝑛 doit donc valoir 2𝑛. Vérifie pour la ligne 5 : 1 + 5 + 10 + 10 + 5 + 1 = 32 = 25." style="--w:24.19" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 8 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c008/p0266_63.svg" alt="𝑛 Tu as un nombre, (𝑘), qui compte quatre familles d’objets. Tu as une méthode de calcul (la relation de récurrence) et un tableau de valeurs (le triangle de Pascal). Il te manque une formule directe." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0266_64.svg" alt="• Chapitre 9. La première méthode de la partie 4 divisait 5 ⋅ 4 ⋅ 3 par 3 ⋅ 2 ⋅ 1. Généralisée, elle donne une formule 𝑛 explicite de (𝑘), à partir du nombre d’arrangements 𝑃(𝑛, 𝑘)." style="--w:24.12" loading="lazy">
 <p class="li"><b>Chapitre 10.</b> Le triangle de Pascal contient d’autres régularités : somme d’une ligne égale à <span class="m">2</span><sup>𝑛</sup>, symétrie, sommes en diagonale. Elles se démontrent en comptant le même ensemble de deux façons.</p>
@@ -177,7 +184,9 @@
 <p>formules par récurrence.</p>
 <img class="vm" src="/discretes/img/c008/p0267_66.svg" alt="• Chapitre 21. Dans un graphe complet à 𝑛 sommets, chaque arête relie 2 sommets choisis parmi 𝑛. Il y a donc (𝑛2) arêtes. Pour les 10 personnes qui se serrent la 10 main, ( 2 ) = 45 (ligne 10 du triangle)." style="--w:24.12" loading="lazy">
 <p class="li"><b>Chapitre 27.</b> La ligne <span class="m">𝑛</span> du triangle est la liste des coefficients de <span class="m">(1 + 𝑥)</span><sup>𝑛</sup>. Ce point de vue, où une suite de nombres devient un polynôme, est celui des fonctions génératrices.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 8 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c008/p0268_67.svg" alt="À toi de chercher Développe (𝑥 + 𝑦 + 𝑧)3 = (𝑥 + 𝑦 + 𝑧)(𝑥 + 𝑦 + 𝑧)(𝑥 + 𝑦 + 𝑧) en raisonnant comme pour le" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0268_68.svg" alt="binôme : dans chaque facteur, tu choisis 𝑥, 𝑦 ou 𝑧. Quel est le coefficient de 𝑥𝑦𝑧 ? Celui de 𝑥2𝑦 ? Celui de 𝑥3 ? Quel objet ces coefficients comptent-ils ? Des mots de 3 lettres écrits avec 𝑥, 𝑦, 𝑧 ? Des chemins dans un quadrillage à trois dimensions, avec trois sortes de pas ? Existe-t-il une « pyramide de Pascal » dont" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c008/p0268_69.svg" alt="chaque nombre serait la somme de trois nombres de l’étage du dessus ? Quelle serait la relation de récurrence ?" style="--w:24.19" loading="lazy">
+</div>
