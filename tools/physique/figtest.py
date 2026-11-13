@@ -35,7 +35,12 @@ def serve(site: str) -> int:
 
 def chrome(args: list[str]) -> str:
     cmd = [CHROME, '--headless', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=6000', *args]
-    return subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
+    for _ in range(2):  # headless Chrome sometimes hangs: one retry
+        try:
+            return subprocess.run(cmd, capture_output=True, text=True, timeout=60).stdout
+        except subprocess.TimeoutExpired:
+            continue
+    return ''
 
 
 def main() -> None:
