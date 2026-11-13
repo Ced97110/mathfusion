@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 22</div>
-<h1>Les arbres</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 22</div>
+<h1 class="ct">Les arbres</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 21, tu as rencontré beaucoup de sortes de graphes. Les étudier tous à la fois est difficile. Une méthode courante consiste à se limiter à une famille précise et à l’étudier en détail. C’est ce qu’on fait ici, avec la famille des <i>arbres</i>. À la fin du chapitre, tu sauras ce qui les caractérise, et pourquoi ils méritent un chapitre entier.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 22 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Relier sept villages au moindre coût</h3>
 <p>Sept villages s’appellent <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span>, <span class="m">𝑑</span>, <span class="m">𝑒</span>, <span class="m">𝑓</span>, <span class="m">𝑔</span>. Une étude a repéré 12 routes qu’il est possible de construire entre eux. Les voici, chacune désignée par ses deux villages :</p>
 <p><span class="m">{𝑎, 𝑏}, {𝑎, 𝑐}, {𝑏, 𝑐}, {𝑏, 𝑑}, {𝑏, 𝑒}, {𝑐, 𝑑},</span> <span class="m">{𝑐, 𝑓}, {𝑑, 𝑒}, {𝑑, 𝑓}, {𝑒, 𝑓}, {𝑒, 𝑔}, {𝑓, 𝑔}.</span></p>
@@ -13,7 +19,8 @@
 <p>2. Trouve un sous-graphe de <span class="m">𝐺</span> qui ne contient aucun cycle, et qui a le plus d’arêtes possible.</p>
 <p>3. Compare les nombres d’arêtes de tes deux réponses. Est-ce une coïncidence ?</p>
 <p>Une remarque t’aidera pour la première question. Suppose qu’une route fasse partie d’un cycle, par exemple <span class="m">{𝑎, 𝑏}</span> dans le cycle <span class="m">𝑎, 𝑏, 𝑐, 𝑎</span>. Si tu ne construis pas cette route, <span class="m">𝑎</span> et <span class="m">𝑏</span> restent reliés : on passe par <span class="m">𝑐</span>. Une route qui fait partie d’un cycle n’est donc jamais indispensable. Tu peux la supprimer sans rien déconnecter.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 22 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c022/p0710_1.svg" alt="b e d a g c f G : 7 sommets, 12 arêtes" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c022/p0710_2.svg" alt="b e b e d d a g a g c f c f connexe, 6 arêtes sans cycle, 6 arêtes Fig. 22.1 : En haut, le graphe 𝐺 des 12 routes possibles. En bas à gauche, en rouge, 6 routes qui relient tous les villages. En bas à droite, en vert, 6 routes qui ne forment aucun cycle. Les routes non retenues sont en pointillés gris. Compte : les deux réponses ont 6 arêtes, et 6 = 7 − 1." style="--w:24.19" loading="lazy">
 <p>Lis la figure 22.1 avec moi.</p>
@@ -23,7 +30,8 @@
 <img class="vm" src="/discretes/img/c022/p0712_3.svg" alt="arbre pas un arbre forêt (2 arbres)" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>22.2 :</b> Trois graphes à 6 sommets. À gauche : connexe et sans cycle, c’est un arbre. Au milieu : on a ajouté une arête et créé le cycle rouge, ce n’est plus un arbre. À droite : sans cycle mais en deux morceaux (bleu et vert), c’est une forêt de deux arbres.</i></p>
 <p>La figure 22.2 montre la différence entre les trois cas que tu vas devoir distinguer. Le graphe de gauche a 6 sommets et 5 arêtes. Celui du milieu a une arête de plus, et cette arête ferme un triangle rouge. Celui de droite a une arête de moins, et il se coupe en deux morceaux.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 22 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Arbre, forêt, feuille</h3>
 <img class="vm" src="/discretes/img/c022/p0712_4.svg" alt="Définition : arbre et forêt Un arbre est un graphe connexe qui ne contient aucun cycle. Une forêt est un graphe qui ne contient aucun cycle. Une forêt connexe est donc un arbre. Dans un arbre, un sommet de degré 1 s’appelle une feuille." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c022/p0713_5.svg" alt="" style="--w:24.19" loading="lazy">
@@ -81,7 +89,8 @@
 <img class="vm" src="/discretes/img/c022/p0725_26.svg" alt="retirer." style="--w:24.19" loading="lazy">
 <p>Retiens cette méthode, valable pour tous les graphes : pour démontrer par récurrence un énoncé sur les graphes à <span class="m">𝑣</span> sommets, pars d’un graphe arbitraire à <span class="m">𝑣 + 1</span> sommets, réduis-le à un graphe à <span class="m">𝑣</span> sommets, puis applique l’hypothèse de récurrence.</p>
 <p>La réponse aux deux essais du début est maintenant claire. Un arbre à 7 sommets a <span class="m">7 − 1 = 6</span> arêtes. Ni 7, ni 5.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 22 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Réponse au problème des villages</h3>
 <p>Reviens aux trois questions. Un sous-graphe connexe qui contient tous les sommets et qui a le moins d’arêtes possible n’a pas de cycle. Sinon, d’après la remarque du problème, on pourrait retirer une arête de ce cycle sans le déconnecter, et il aurait une arête de moins. C’est donc un arbre à 7 sommets : il a 6 arêtes.</p>
 <p>Un sous-graphe sans cycle qui a le plus d’arêtes possible est connexe. Sinon, il serait formé de plusieurs morceaux. Dans <span class="m">𝐺</span>, qui est connexe, une route relie forcément deux morceaux différents. Ajouter cette route ne crée aucun cycle : un cycle qui l’utiliserait devrait revenir d’un morceau à l’autre par un autre chemin, et il n’y en a pas. On pourrait donc ajouter une arête. C’est encore un arbre à 7 sommets : 6 arêtes.</p>
@@ -162,7 +171,8 @@
 <p>Prends <span class="m">{𝑝, 𝑟}</span> (poids 1). Prends <span class="m">{𝑞, 𝑟}</span> (poids 2). Prends <span class="m">{𝑠, 𝑡}</span> (poids 3) : il touche des sommets encore isolés, pas de cycle. Refuse <span class="m">{𝑝, 𝑞}</span> (poids 4) : <span class="m">𝑝</span> et <span class="m">𝑞</span> sont déjà reliés par <span class="m">𝑝, 𝑟, 𝑞</span>, l’ajout fermerait le cycle <span class="m">𝑝, 𝑞, 𝑟, 𝑝</span>. Prends <span class="m">{𝑞, 𝑠}</span> (poids 5) : il relie le morceau <span class="m">{𝑝, 𝑞, 𝑟}</span> au morceau <span class="m">{𝑠, 𝑡}</span>. On a 4 arêtes pour 5 sommets : c’est un arbre couvrant, car <span class="m">4 = 5 − 1</span>. Poids total : <span class="m">1 + 2 + 3 + 5 = 11</span>.</p>
 <p><b>Prim, en partant de</b> <span class="m">𝑝</span><b>.</b> Les arêtes qui touchent <span class="m">𝑝</span> pèsent 4 et 1 : prends <span class="m">{𝑝, 𝑟}</span> (1). Les arêtes qui sortent de <span class="m">{𝑝, 𝑟}</span> pèsent 4, 2, 8, 6 : prends <span class="m">{𝑞, 𝑟}</span> (2). Les arêtes qui sortent de <span class="m">{𝑝, 𝑞, 𝑟}</span> vers un sommet nouveau pèsent 5, 8, 6, 7 : prends <span class="m">{𝑞, 𝑠}</span> (5). Celles qui sortent de <span class="m">{𝑝, 𝑞, 𝑟, 𝑠}</span> vers <span class="m">𝑡</span> pèsent 3, 6, 7 : prends <span class="m">{𝑠, 𝑡}</span> (3). Même arbre, même poids 11.</p>
 <p><b>En retirant les plus lourdes.</b> Retire <span class="m">{𝑟, 𝑠}</span> (8), qui est dans le cycle <span class="m">𝑞, 𝑟, 𝑠, 𝑞</span>. Retire <span class="m">{𝑞, 𝑡}</span> (7), dans le cycle <span class="m">𝑞, 𝑠, 𝑡, 𝑞</span>. Retire <span class="m">{𝑟, 𝑡}</span> (6), dans le cycle <span class="m">𝑟, 𝑞, 𝑠, 𝑡, 𝑟</span>. Retire <span class="m">{𝑝, 𝑞}</span> (4), dans le cycle <span class="m">𝑝, 𝑞, 𝑟, 𝑝</span>. Il reste les 4 arêtes vertes. Les trois méthodes donnent ici le même arbre.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 22 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c022/p0739_40.svg" alt="Lien avec un autre chapitre La preuve de 𝑒 = 𝑣 − 1 est un raisonnement par récurrence (induction), comme au chapitre 18. La nouveauté est le sens de la réduction : on part d’un arbre quelconque à 𝑘 + 1 sommets et on le réduit en retirant une feuille. La règle des deux feuilles garantit que cette réduction est toujours possible. Les règles du chemin unique et des deux feuilles sont des preuves par l’absurde, comme au chapitre 4." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c022/p0739_41.svg" alt="" style="--w:24.19" loading="lazy">
 <p>Les arbres servent dans presque tous les chapitres qui suivent.</p>
@@ -171,7 +181,9 @@
 <p class="li">Au chapitre 25, on cherchera des chemins qui passent par chaque arête ou chaque sommet. Les parcours d’arbres et les arbres couvrants y servent souvent.</p>
 <p class="li">Au chapitre 26, on travaille dans des graphes bipartis. Les arbres en sont des exemples.</p>
 <p>Vers l’arrière, ce chapitre reprend le vocabulaire du chapitre 21 : chemin, cycle, connexité, degré, sous-graphe. La règle <span class="m">𝑒 = 𝑣 − 1</span> complète le lemme des poignées de main. Dans un arbre, la somme des degrés vaut <span class="m">2𝑒 = 2(𝑣 − 1)</span>. Par exemple, pour l’arbre de la figure 22.7 : <span class="m">𝑣 = 9</span>, <span class="m">𝑒 = 8</span>, somme des degrés <span class="m">2 × 8 = 16</span>. Vérifie : <span class="m">𝑒</span> a degré 5, <span class="m">𝑓</span> degré 3, <span class="m">𝑐</span> degré 2, et les six feuilles degré 1, soit <span class="m">5 + 3 + 2 + 6 = 16</span>.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 22 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c022/p0741_42.svg" alt="À toi de chercher Prends 4 sommets portant des noms : 𝑎, 𝑏, 𝑐, 𝑑. Combien d’arbres différents peux-tu construire sur ces 4 sommets ? Ici, deux arbres sont différents dès que leurs" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c022/p0741_43.svg" alt="ensembles d’arêtes diffèrent, même s’ils sont isomorphes. Chaque arbre a 4 − 1 = 3 arêtes, choisies parmi les (42) = 6 paires possibles. Combien de choix de 3 paires donnent un arbre, et combien donnent un cycle ou un graphe en morceaux ? Fais le même travail avec 3 sommets, puis avec 5. Les nombres que tu trouves suivent-ils une loi" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c022/p0741_44.svg" alt="simple ? Si oui, peux-tu expliquer d’où elle vient ?" style="--w:24.19" loading="lazy">
+</div>
