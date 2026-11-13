@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(88)
+arrow(ax,(8,84),(80,84),'varie')
+text(ax,16,76,'18','encre','l'); text(ax,44,76,'÷','sujet','l',weight='bold'); text(ax,72,76,'6','encre','l')
+text(ax,44,68,'divisé par','sujet','m'); text(ax,16,68,'partagé','encre','s'); text(ax,72,68,'qui partage','encre','s')
+text(ax,22,44,'3 × 6','resultat','l'); text(ax,44,44,'=','resultat','l'); text(ax,66,44,'6 × 3','resultat','l')
+arrow(ax,(22,48),(66,48),'resultat',curve=-0.3,both=True); text(ax,44,37,'on peut échanger','resultat','s')
+text(ax,22,22,'18 ÷ 6','encre','l'); text(ax,44,22,'≠','limite','l'); text(ax,66,22,'6 ÷ 18','limite','l')
+arrow(ax,(22,26),(66,26),'limite',curve=-0.3,both=True); text(ax,44,15,'on ne peut pas échanger','limite','s')
+save(fig,'03-041')

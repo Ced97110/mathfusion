@@ -1,0 +1,28 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(98)
+for k,lab in enumerate(['estimer','multiplier','soustraire','abaisser']):
+    box(ax,2+22*k,86,18,8,'varie',label=lab,size='s',lw=2.2 if k==2 else 0.8,weight='bold' if k==2 else 'normal')
+    if k<3: arrow(ax,(20+22*k,90),(24+22*k,90),'varie')
+arrow(ax,(55,86),(11,86),'limite',curve=-0.27)
+u=66/56; X=lambda v:18+u*v
+numberline(ax,18,84,37,0,56,step=8,labels=False,arrow_right=False)
+line(ax,[(X(49),37),(X(49),76.5)],'sujet',lw=1.2)
+text(ax,X(49),79,'49','sujet','l')
+def row(y0,n,lab,ly):
+    for i in range(n): box(ax,18+i*9.4286,y0,9.4286,4,'varie',r=0.3,lw=0.5)
+    text(ax,10,ly,lab,'varie','s')
+row(70,7,'8 × 7 = 56',72)
+box(ax,X(49),69.5,84-X(49),5,'limite',r=0.3,lw=0.5)
+text(ax,56,66.5,'56 > 49 : trop grand','limite','s')
+row(58,5,'8 × 5 = 40',60)
+box(ax,18+5*9.4286,58,X(49)-18-5*9.4286,4,'limite',fill=False,dash=True,r=0.3,lw=0.8)
+text(ax,56,54.5,'reste 9, pas < 8 : trop petit','limite','s')
+row(46,6,'8 × 6 = 48',48)
+box(ax,18+6*9.4286,46,X(49)-18-6*9.4286,4,'resultat',r=0.2,lw=0.5)
+box(ax,17.2,45,67.8,6,'resultat',fill=False,lw=1.4,r=0.8)
+text(ax,56,42.5,'reste 1 < 8 : juste','resultat','s')
+box(ax,4,12,22,10,'resultat',label='1 centaine',size='s')
+arrow(ax,(28,17),(50,17),'varie')
+text(ax,39,21,'abaisser le 4','varie','s')
+box(ax,52,12,24,10,'sujet',label='14 dizaines',size='s')
+save(fig,'03-067')

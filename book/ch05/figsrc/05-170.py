@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+box(ax,2,52,26,9,'sujet',label='2, 3, 5, 7')
+arrow(ax,(29,56.5),(39,56.5),'varie')
+box(ax,40,52,22,9,'resultat',label=r'$P=211$')
+text(ax,66,56.5,'premier','resultat','s',ha='left')
+box(ax,2,32,36,9,'sujet',label='2, 3, 5, 7, 11, 13',size='s')
+arrow(ax,(39,36.5),(47,36.5),'varie')
+box(ax,48,32,26,9,'limite',label=r'$P=30\,031$')
+text(ax,77,36.5,'composé','limite','s',ha='left')
+h=76*59/509
+box(ax,10,12,76,h+1.6,'limite',r=0.8)
+text(ax,48,12+(h+1.6)/2,r'$30\,031=59\times509$','limite','s')
+text(ax,5.5,12+(h+1.6)/2,'59','limite','s')
+text(ax,48,7,'509','limite','s')
+arrow(ax,(61,32),(61,23),'limite')
+save(fig,'05-170')

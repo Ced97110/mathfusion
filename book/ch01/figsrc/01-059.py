@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+text(ax,6,59,'en bloc : 6 multiplications','autre','s',ha='left')
+box(ax,6,44,76,10,'autre',label='7 × 6 × 5 × 4 × 3 × 2 × 1')
+brace(ax,33,62,43,'fixe',label="c'est 6! = 720")
+text(ax,6,30,'par récurrence : 1 étape','sujet','s',ha='left')
+box(ax,6,12,38,12,'fixe',label='6! = 720 : déjà connu',size='s')
+brace(ax,6,44,11,'fixe',label='connu')
+arrow(ax,(45,18),(57,18),'varie',lw=1.4)
+text(ax,51,22,'× 7','varie','m')
+text(ax,51,5,'à faire','varie','s')
+box(ax,58,12,26,12,'resultat',label='7! = 5 040')
+save(fig,'01-059')

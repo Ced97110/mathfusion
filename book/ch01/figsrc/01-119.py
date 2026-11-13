@@ -1,0 +1,26 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+gx = [8 + 10 * i for i in range(7)]
+def axis(y, xe=80):
+    arrow(ax, (6, y), (xe, y), 'fixe', lw=0.9)
+text(ax, 44, 93, r'$S$ : les $n$ où $E(n)$ est vraie', 'sujet', 'm')
+text(ax, 4, 86, 'départ : 0 est dans $S$', 'encre', 's', ha='left')
+axis(80)
+for i, x in enumerate(gx): disc(ax, x, 80, 2, 'sujet' if i == 0 else 'fixe', fill=(i == 0))
+text(ax, 4, 71, r'passage : si $n$, alors $n + 1$', 'encre', 's', ha='left')
+axis(62)
+for i, x in enumerate(gx): disc(ax, x, 62, 2, 'sujet' if i == 0 else 'fixe', fill=(i == 0))
+for x in gx[:-1]: arrow(ax, (x + 2, 64), (x + 8, 64), 'sujet', curve=-0.6)
+box(ax, 20, 40, 48, 12, 'varie', lw=1.4)
+text(ax, 44, 48.5, 'axiome 3', 'varie', 'l')
+text(ax, 44, 43, '0 et suivants : tout ℕ', 'varie', 's')
+arrow(ax, (44, 56), (44, 52.2), 'varie')
+arrow(ax, (44, 39.8), (44, 33), 'varie')
+text(ax, 4, 32, 'arrivée : $S$ = ℕ', 'resultat', 's', ha='left')
+axis(26, 84)
+for x in gx: disc(ax, x, 26, 2, 'resultat')
+for x in (73, 76, 79): disc(ax, x, 26, 0.5, 'resultat')
+for i, x in enumerate(gx): text(ax, x, 21.8, str(i), 'fixe', 's')
+for p in ax.patches:
+    if isinstance(p, Circle): p.set_zorder(3.5)
+save(fig, '01-119')

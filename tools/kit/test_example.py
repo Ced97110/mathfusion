@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from figstyle import *
+fig,ax=canvas(60)
+cubes(ax,[(i,j,k) for i in range(10) for j in range(10) for k in range(10)],(30,6),2.4,'sujet')
+cubes(ax,[(i,j,0) for i in range(10) for j in range(1)],(70,10),1.2,'autre')
+text(ax,30,57,'1 000 = 10 × 10 × 10','sujet','l')
+f=numberline(ax,52,80,40,0,5)
+arrow(ax,(f(1),43),(f(4),43),'varie',curve=-0.4)
+box(ax,55,48,20,7,'resultat',label='résultat')
+brace(ax,52,80,30,label='cinq pas')
+save(fig,'test')

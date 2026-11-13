@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+line(ax, [(6, 60), (82, 60)], 'limite', dash=True)
+arrow(ax, (81, 60), (84, 60), 'limite')
+text(ax, 44, 64.5, 'une par une : jamais fini', 'limite', 'm')
+cx = [10 + 12 * i for i in range(6)]
+for i, c in enumerate(cx): disc(ax, c, 38, 3.5, 'resultat', label=str(i), size='m')
+text(ax, 81, 38, '…', 'resultat', 'l')
+box(ax, 5, 33, 10, 10, 'sujet', fill=False, lw=1.4)
+text(ax, 10, 50, 'départ', 'sujet', 'm')
+for c in cx[:-1]: arrow(ax, (c + 3.5, 40), (c + 8.5, 40), 'varie', curve=-0.6)
+arrow(ax, (73.5, 40), (78, 40), 'varie', curve=-0.6)
+text(ax, 50, 50, r'passage : $n$ → $n + 1$', 'varie', 'm')
+text(ax, 44, 30, 'une affirmation par entier', 'encre', 's')
+brace(ax, 6, 84, 26, 'resultat')
+text(ax, 45, 20.3, '2 vérifications : toutes', 'resultat', 'm')
+save(fig, '01-116')

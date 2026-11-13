@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(54)
+f=numberline(ax,6,82,30,0,60,5,labels=False,role='fixe')
+text(ax,6,25,'0','fixe','s')
+disc(ax,f(52),30,1.4,'sujet'); text(ax,f(52),25,'52 euros','sujet','s')
+arrow(ax,(f(52),33),(f(25),33),'varie',lw=1.3,curve=0.3)
+text(ax,54.8,46,'rendre 27 : reculer de 27','varie','s')
+disc(ax,f(25),30,1.4,'resultat'); text(ax,f(25),25,'25 euros','resultat','s')
+arrow(ax,(40,15),(70,15),'autre',lw=0.8)
+text(ax,55,10,"l'addition avance à droite",'autre','s')
+save(fig,'02-032')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,46,34,38,26,'sujet',fill=False,dash=True)
+text(ax,23,52,'réécritures : même valeur','sujet','s')
+box(ax,50,50,30,6,'sujet',label='5 dizaines, 2 unités',size='s'); box(ax,50,38,30,6,'sujet',label='4 dizaines, 12 unités',size='s')
+arrow(ax,(62,50),(62,44),'varie'); text(ax,72,47,'emprunt','varie','s')
+f=numberline(ax,6,82,26,0,60,10,labels=False)
+text(ax,6,22,'0','fixe','s'); text(ax,f(52),22,'52','sujet','s')
+arrow(ax,(f(52),34),(f(52),28),'sujet'); disc(ax,f(52),26,1.5,'sujet'); text(ax,60,31,'même point','sujet','s')
+disc(ax,f(25),26,1.5,'autre'); text(ax,f(25),22,'25','autre','s')
+arrow(ax,(f(52),17),(f(25),17),'autre')
+text(ax,55,12,'calcul : 52 − 27 = 25','autre','s'); text(ax,55,7,'valeur nouvelle','autre','s')
+save(fig,'02-053')

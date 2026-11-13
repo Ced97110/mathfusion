@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+line(ax,[(46,20),(46,70)],'fixe')
+text(ax,22,66,'se coupe','autre','l'); text(ax,67,66,'ne se coupe pas','sujet','l')
+for y in (44,49,54):
+    for x in (6,11,16,21): disc(ax,x,y,1.6,'autre')
+text(ax,13.5,37,'12 = 3 × 4','autre','m')
+arrow(ax,(23.5,49),(30,49),'varie')
+for x in (32,37):
+    for y in (46.5,51.5): disc(ax,x,y,1.6,'autre')
+text(ax,34.5,37,'4 = 2 × 2','autre','m')
+text(ax,22,28,'pièces : 3, 2 et 2','resultat','s')
+for x in (52,57,62,67,72,77,82): disc(ax,x,56,1.6,'sujet')
+text(ax,67,49,'7 : une seule rangée','sujet','s')
+for x in (59.5,64.5,69.5,74.5): disc(ax,x,40,1.6,'sujet')
+for x in (59.5,64.5,69.5): disc(ax,x,35,1.6,'sujet')
+disc(ax,74.5,35,1.6,'limite',fill=False)
+text(ax,67,27,'2 rangées : il en manque 1','limite','s')
+for x,l in ((8,'0'),(17,'1')): box(ax,x,6,7,7,'limite',fill=False,dash=True,label=l,size='m')
+text(ax,27,9.5,'moins de 2 : exclus','limite','s',ha='left')
+save(fig,'01-156')

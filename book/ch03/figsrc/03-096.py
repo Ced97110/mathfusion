@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+for x,t in ((13,'nombre'),(46,'test'),(78,'verdict')): text(ax,x,74,t,'fixe','s')
+for y,a,b in ((56,'432 par 3','somme : 4+3+2 = 9 = 3 × 3'),(42,'31 048 par 4','deux derniers : 48 = 4 × 12')):
+    box(ax,3,y,20,10,'sujet',label=a,size='s'); box(ax,28,y,36,10,'varie',label=b,size='s')
+    box(ax,70,y,16,10,'resultat',label='OUI',size='l',weight='bold')
+    arrow(ax,(23,y+5),(28,y+5),'fixe'); arrow(ax,(64,y+5),(70,y+5),'resultat')
+box(ax,3,20,20,10,'sujet',label='6 532 par 6',size='s')
+box(ax,28,26,36,8,'resultat',label='par 2 : finit par 2, oui',size='s')
+box(ax,28,15,36,8,'limite',label='par 3 : somme 16, non',size='s')
+box(ax,70,20,16,10,'limite',label='NON',size='l',weight='bold')
+arrow(ax,(23,26),(28,29),'fixe'); arrow(ax,(23,24),(28,19),'fixe')
+arrow(ax,(64,19),(70,23),'limite')
+text(ax,78,12,'un seul échec\nsuffit','limite','s')
+save(fig,'03-096')

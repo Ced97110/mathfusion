@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(82)
+box(ax,2,2,84,78,'fixe',fill=False)
+text(ax,44,76,'systèmes de numération','fixe','s')
+box(ax,5,49,78,22,'autre',fill=False)
+for b in [63,57,51]:
+    for i in range(20):
+        x=8+2.2*i; line(ax,[(x,b),(x,b+5)],'autre',lw=0.6)
+line(ax,[(52,56),(58,56)],'autre',dash=True)
+text(ax,70,64,'4 329 traits','autre','s'); text(ax,70,56,'1 trait vaut 1','autre','s')
+arrow(ax,(30,48),(30,39),'resultat',both=True)
+text(ax,33,43.5,'même nombre','resultat','s',ha='left')
+box(ax,5,5,78,32,'sujet',fill=False)
+for x,c in zip([10,18,26,34],'4329'): box(ax,x,22,8,10,'sujet',label=c,size='l')
+line(ax,[(14,21.5),(14,15)],'varie'); text(ax,14,11,'vaut 4 000','varie','s')
+line(ax,[(38,21.5),(38,15)],'varie'); text(ax,39,11,'vaut 9','varie','s')
+text(ax,65,32,'indo-arabe : 4 signes','sujet','s')
+text(ax,65,23,'0 1 2 3 4 5 6 7 8 9','fixe','s')
+text(ax,65,15,'10 chiffres pour tout','fixe','s')
+ax.add_patch(Rectangle((52,20),26,6,ec=COL['fixe'],fc='none',lw=0.8,zorder=3))
+save(fig,'01-060')

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Des nombres aux structures — fiches illustrées</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+Math&display=swap">
+<style>
+/*CSS*/
+/* --- écran --- */
+html{font-size:17px;scroll-padding-top:56px}
+body{font-size:17px;background:#f4f5f7;line-height:1.55}
+.m{font-family:'Latin Modern Math','STIX Two Math','Cambria Math','Noto Sans Math',serif}
+#bar{position:sticky;top:0;z-index:10;background:#1f4e79;color:#fff;display:flex;align-items:center;gap:8px;padding:8px 12px;font-family:Inter,system-ui,sans-serif}
+#bar button{font:600 14px Inter,system-ui,sans-serif;color:#fff;background:rgba(255,255,255,.14);border:0;border-radius:6px;padding:8px 12px;min-height:40px;cursor:pointer}
+#bar button:disabled{opacity:.35;cursor:default}
+#bar .t{flex:1;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+main{max-width:44rem;margin:0 auto;background:#fff;min-height:100vh;padding-bottom:20vh}
+section,article{padding-left:18px;padding-right:18px}
+.cover{padding-top:40px;break-after:auto}.toc{padding-bottom:24px}
+.fiche{margin-top:36px}
+figure{margin-left:0;margin-right:0}
+figcaption{font-size:14px}.ft{font-size:14.5px}.fl{font-size:12px}
+.code{font-size:13px}h2{font-size:22px}h3.r{font-size:13px}h3.r .n{width:22px;height:22px;font-size:12px}
+.lien p,.sg,.none{font-size:15.5px}.question p{font-size:19px}blockquote{font-size:16px}.pl{font-size:12px}
+.sec h1{font-size:24px}.sk,.ck{font-size:13px}.cx{font-size:14px}.toc ol{font-size:15.5px}
+.sg{grid-template-columns:5.5rem 1fr}
+#home{padding:28px 18px}
+#home h1{font:700 30px/1.15 Inter,system-ui,sans-serif;color:#1f4e79;margin:6px 0 10px}
+#home .lead{font-size:17px;color:#1c1c1c;margin-bottom:6px}#home .st{font:500 14px Inter,system-ui,sans-serif;color:#5f6773;margin-bottom:22px}
+#home h2{font-size:18px;margin:26px 0 10px}
+#chl{list-style:none;margin:0;padding:0;font-family:Inter,system-ui,sans-serif}
+#chl li{border-top:1px solid #d9dde3}
+#chl a,#chl span.na{display:flex;gap:12px;align-items:baseline;padding:13px 2px;text-decoration:none;color:#1c1c1c;font-size:15.5px;line-height:1.35}
+#chl .k{flex:none;width:2.6rem;font-weight:700;color:#1f4e79;font-variant-numeric:tabular-nums}
+#chl .c{flex:none;margin-left:auto;font-size:12.5px;color:#5f6773;white-space:nowrap}
+#chl span.na{color:#9aa1ab}#chl span.na .k{color:#9aa1ab}
+#chl a:hover{background:#f3f6fa}
+#load{padding:40px 18px;font-family:Inter,system-ui,sans-serif;color:#5f6773}
+a:focus-visible,button:focus-visible{outline:3px solid #b8500a;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<div id="bar"><button id="bh" type="button">Sommaire</button><div class="t" id="bt">Des nombres aux structures</div><button id="bp" type="button" aria-label="Chapitre précédent">‹</button><button id="bn" type="button" aria-label="Chapitre suivant">›</button></div>
+<main>
+<div id="home">
+<div class="ck">Fiches illustrées</div>
+<h1>Des nombres aux structures</h1>
+<p class="lead">Une fiche par concept, une figure par fiche.</p>
+<p class="st" id="st"></p>
+<h2>Comment lire une figure</h2>
+<p>Chaque fiche contient une figure, placée après le cas concret et la lecture des signes. La figure reprend les nombres du cas concret. Sous la figure, la rubrique « lecture » dit ce que chaque élément représente.</p>
+<p>Dans toutes les figures, une couleur garde le même rôle :</p>
+<div class="roles">
+<div><i style="background:#d6e4f2;border-color:#1f4e79"></i><b style="color:#1f4e79">Bleu</b> l’objet que la fiche définit</div>
+<div><i style="background:#fbe3cf;border-color:#b8500a"></i><b style="color:#b8500a">Orange</b> ce qui change, l’action</div>
+<div><i style="background:#eceef1;border-color:#5f6773"></i><b style="color:#5f6773">Gris</b> ce qui ne change pas</div>
+<div><i style="background:#d5eedd;border-color:#1a7445"></i><b style="color:#1a7445">Vert</b> ce qu’on obtient, ce qui est vrai</div>
+<div><i style="background:#f8d9d6;border-color:#b3261e"></i><b style="color:#b3261e">Rouge</b> ce qui est faux, le contre-exemple</div>
+<div><i style="background:#e6daf3;border-color:#6d3fa0"></i><b style="color:#6d3fa0">Violet</b> un second objet, comparé au premier</div>
+</div>
+<h2>Chapitres</h2>
+<ul id="chl"></ul>
+</div>
+<div id="chap" hidden></div>
+<div id="load" hidden>Chargement du chapitre…</div>
+</main>
+<script>
+(async()=>{let TOC;try{TOC=await (await fetch('toc.json')).json()}catch(e){document.getElementById('chl').innerHTML='<li><span class="na">Le sommaire n’a pas pu être chargé.</span></li>';return}
+
+const have=TOC.filter(c=>c.file), $=id=>document.getElementById(id);
+const hashOf=c=>'ch-'+String(c.key).toLowerCase(), label=c=>c.key==='AP'?'Avant-propos':c.key==='A'?'Annexe':'Chapitre '+c.key;
+let cur=null, cache={};
+$('st').textContent=have.length+' chapitres disponibles sur '+TOC.length+' · '+have.reduce((a,c)=>a+c.n,0)+' fiches illustrées';
+$('chl').innerHTML=TOC.map(c=>{const k=c.key==='AP'?'AP':c.key==='A'?'A':c.key;
+  return c.file?`<li><a href="#${hashOf(c)}"><span class="k">${k}</span><span>${c.title.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</span><span class="c">${c.n} fiches</span></a></li>`
+               :`<li><span class="na"><span class="k">${k}</span><span>${label(c)}</span><span class="c">à venir</span></span></li>`}).join('');
+function findFiche(code){const p=code.split('-')[0];return have.find(c=>(/^\d+$/.test(c.key)?String(c.key).padStart(2,'0'):c.key)===p)}
+async function show(c,anchor){
+  $('home').hidden=true;$('chap').hidden=true;$('load').hidden=false;$('load').textContent='Chargement du chapitre…';
+  try{ if(!cache[c.file]){const r=await fetch(c.file);if(!r.ok)throw new Error(r.status);cache={};cache[c.file]=await r.text()}
+    $('chap').innerHTML=cache[c.file]; cur=c; $('load').hidden=true; $('chap').hidden=false; $('bt').textContent=label(c)+' — '+c.title;
+    const i=have.indexOf(c); $('bp').disabled=i<=0; $('bn').disabled=i>=have.length-1;
+    const el=anchor&&document.getElementById(anchor); if(el) el.scrollIntoView(); else window.scrollTo(0,0);
+  }catch(e){$('load').textContent='Ce chapitre n’a pas pu être chargé. Revenez au sommaire et réessayez.'}
+}
+function home(){cur=null;$('chap').hidden=true;$('load').hidden=true;$('home').hidden=false;$('bt').textContent='Des nombres aux structures';$('bp').disabled=true;$('bn').disabled=!have.length;window.scrollTo(0,0)}
+function route(){const h=location.hash.slice(1), c=have.find(c=>hashOf(c)===h); c?show(c):home()}
+addEventListener('hashchange',route);
+$('bh').onclick=()=>{location.hash='';home()};
+$('bp').onclick=()=>{const i=have.indexOf(cur); if(i>0) location.hash=hashOf(have[i-1])};
+$('bn').onclick=()=>{const i=cur?have.indexOf(cur):-1; if(i<have.length-1) location.hash=hashOf(have[i+1])};
+document.addEventListener('click',e=>{const a=e.target.closest('#chap a[href^="#"]'); if(!a) return; e.preventDefault();
+  const id=a.getAttribute('href').slice(1), el=document.getElementById(id);
+  if(el){el.scrollIntoView();return}
+  const m=id.match(/^f(.+-\d+)$/), c=m&&findFiche(m[1]); if(c) show(c,id)});
+route();})();
+</script></body></html>

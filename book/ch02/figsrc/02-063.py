@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+for y in (44,12):
+    f=numberline(ax,6,84,y,40,90,5,labels=False,arrow_right=False)
+    arrow(ax,(6,y),(86,y),'fixe',lw=0.9)
+text(ax,44,64,'(43 + 16) + 27','encre','m')
+disc(ax,f(43),44,1,'fixe'); text(ax,f(43),40,'43','fixe','s')
+arrow(ax,(f(43),45),(f(59),45),'varie',curve=-0.5); text(ax,23.2,53,'+ 16','varie','s')
+disc(ax,f(59),44,1.2,'varie'); text(ax,f(59),40,'59','varie','s')
+arrow(ax,(f(59),45),(f(86),45),'varie',curve=-0.5); text(ax,56.7,57,'+ 27','varie','s')
+text(ax,44,32,'43 + (16 + 27)','encre','m')
+disc(ax,f(43),12,1,'fixe'); text(ax,f(43),8,'43','fixe','s')
+arrow(ax,(f(43),13),(f(86),13),'varie',curve=-0.35); text(ax,44.2,27,'+ 43, car 16 + 27 = 43','varie','s')
+for y in (44,12): disc(ax,f(86),y,1.4,'resultat'); text(ax,81,y-4,'86','resultat','s',ha='left')
+line(ax,[(f(86),10),(f(86),48)],'resultat',dash=True)
+save(fig,'02-063')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(50)
+f=numberline(ax,8,84,22,0,14,1,labels=False,arrow_right=False)
+for v in (0,2,6,10,14): text(ax,f(v),18.5,str(v),'fixe','s')
+ax.add_patch(Circle((84,22),1.5,fc=COL['sujet'],ec=COL['sujet'],zorder=3))
+text(ax,82,12,'départ','sujet','s')
+for a,b in [(14,10),(10,6),(6,2)]:
+    arrow(ax,(f(a),23),(f(b),23),'varie',curve=0.5)
+for v in (10,6,2): ax.add_patch(Circle((f(v),22),1.0,fc=COL['varie'],ec=COL['varie'],zorder=3))
+text(ax,73.1,31.5,r'1$^{\mathrm{re}}$ : − 4','varie','s')
+text(ax,51.4,31.5,r'2$^{\mathrm{e}}$ : − 4','varie','s')
+text(ax,29.7,31.5,r'3$^{\mathrm{e}}$ : − 4','varie','s')
+text(ax,52,43,'quotient : 3 soustractions','resultat','m')
+arrow(ax,(f(2),23),(3,23),'limite',curve=0.5); ax.patches[-1].set_linestyle('--')
+text(ax,13,33,'4 ne tient plus','limite','s')
+brace(ax,8,f(2),15,'resultat',label='reste 2',down=True)
+save(fig,'03-052')

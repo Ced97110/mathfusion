@@ -17,8 +17,15 @@ npm run build    # écrit le dossier out/ (site statique complet)
 
 ## Ajouter un chapitre
 
-1. Produire le chapitre avec le kit, puis `python3 kit/web.py <racine> <dossier web> content/toc.json`.
-2. Copier `<dossier web>/chNN.html` dans `public/chapters/` et `<dossier web>/toc.json` dans `content/`.
-3. `npm run build`, puis déployer.
+La procédure complète est dans `CLAUDE.md`. En bref : placer le PDF du livre dans `book/source/`, puis
+
+```
+tools/run_chapters.sh 3      # fait les 3 prochains chapitres, une session Claude Code par chapitre
+```
+
+ou, à la main dans Claude Code : « Fais le chapitre 6 en suivant CLAUDE.md ».
+
+`python3 tools/site.py` reconstruit `public/chapters/` et `content/toc.json` à partir de `book/`.
+Le suivi des chapitres est dans `book/JOURNAL.md`.
 
 Les polices (Inter, Lora, Noto Sans Math) viennent de Google Fonts.

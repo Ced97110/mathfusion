@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+text(ax,44,70,r'$(2+3)^{2},\ a=2,\ b=3$','encre','l')
+cxs=(20,46,72)
+def rowb(y,role,labels,size):
+    for cx,s in zip(cxs,labels): box(ax,cx-11,y,22,8,role,label=s,size=size)
+text(ax,3,62,'1. ligne 2 du triangle','varie','s',ha='left')
+rowb(51,'varie',['1','2','1'],'l')
+text(ax,3,43,r'2. terme $2^{k}\times 3^{2-k}$','sujet','s',ha='left')
+rowb(32,'sujet',[r'$2^{0}\times 3^{2}=9$',r'$2^{1}\times 3^{1}=6$',r'$2^{2}\times 3^{0}=4$'],'m')
+text(ax,3,24,'3. × son nombre du triangle','autre','s',ha='left')
+rowb(13,'autre',[r'$1\times 9=9$',r'$2\times 6=12$',r'$1\times 4=4$'],'m')
+brace(ax,9,83,11,'resultat',label=None)
+text(ax,46,7.3,r'4. somme : $9+12+4=25$','resultat','m',weight='bold')
+save(fig,'01-176')

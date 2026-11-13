@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(100)
+text(ax,44,95,r'702 = 7×100 + 0×10 + 2','encre','l')
+for k in range(7):
+    box(ax,12,50+5*k,50,4,'fixe')
+    box(ax,63,50+5*k,4,4,'sujet')
+text(ax,7,67,'7×','encre','m')
+line(ax,[(62.5,48),(62.5,86)],'varie',lw=1.0,dash=True)
+text(ax,62.5,89.5,'100 = 99 + 1','varie','m')
+brace(ax,12,62,48,'fixe',label='7 × 99 = 693 = 9 × 77')
+text(ax,76,67,'7 × 1 = 7','sujet','s')
+text(ax,40,37,'0 × 10 = 0 × 9 + 0 × 1 = 0','fixe','s')
+box(ax,63,27,4,4,'sujet'); box(ax,68,27,4,4,'sujet')
+text(ax,52,29,'+ 2 unités','sujet','s')
+box(ax,4,4,80,14,'resultat')
+text(ax,44,14,'702 = 693 + (7 + 0 + 2)','resultat','m')
+text(ax,44,8,'somme 9 : 702 = 9 × 78','resultat','m',weight='bold')
+save(fig,'03-100')

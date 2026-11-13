@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,8,34,28,26,'fixe'); box(ax,52,34,28,26,'fixe')
+text(ax,22,56,'dizaines','fixe','s'); text(ax,66,56,'unités','fixe','s')
+box(ax,13,42,18,4,'varie')
+for i in range(9): line(ax,[(14.8+1.8*i,42),(14.8+1.8*i,46)],'varie',lw=0.5)
+for r,y in enumerate((49,43)):
+    for c in range(5): disc(ax,57+4.5*c,y,1.4,'varie')
+text(ax,44,45,'=','encre','l')
+arrow(ax,(66,61),(22,61),'autre',lw=1.2,curve=0.4)
+text(ax,44,75,'retenue : 10 deviennent 1','autre','s')
+arrow(ax,(22,33),(66,33),'sujet',lw=1.2,curve=0.4)
+text(ax,44,19.5,'emprunt : 1 devient 10','sujet','s')
+text(ax,44,11,'même cause : la position','fixe','m')
+text(ax,44,5,'à gauche, paquets de 10','fixe','s')
+save(fig,'02-054')

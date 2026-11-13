@@ -1,0 +1,26 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(100)
+def sq(x,y,role,solid=True):
+    ax.add_patch(Rectangle((x,y),2,2,ec=COL[role],fc=FILL[role] if solid else 'none',lw=0.5,ls='-' if solid else '--',zorder=2))
+def bar(x,y,role,solid=True):
+    for k in range(10): sq(x,y+2*k,role,solid)
+text(ax,16,95,'dizaines','encre','m'); text(ax,40.5,95,'unités','encre','m')
+XB=[8,12,16,20,24]; XU=[32,35,38,41,44,47]
+for x in XB[:4]: bar(x,70,'fixe')
+bar(24,70,'varie')
+for x in XU[:2]: sq(x,70,'fixe')
+text(ax,68,80,'52 : 5 dizaines, 2 unités','encre','s')
+arrow(ax,(25,69),(39.5,48.5),'varie'); text(ax,68,66,'casser 1 dizaine','varie','s')
+for x in XB[:4]: bar(x,42,'fixe')
+for x in XU[:2]: sq(x,42,'fixe')
+for x in XU[2:]: sq(x,42,'varie')
+for x in XU: sq(x,45,'varie')
+text(ax,68,52,'4 dizaines, 12 unités','encre','s')
+for x in XB[:2]: bar(x,14,'resultat')
+for x in XB[2:4]: bar(x,14,'varie',False)
+for x in XU[:5]: sq(x,14,'resultat')
+sq(47,14,'varie',False)
+for x in XU: sq(x,17,'varie',False)
+text(ax,68,30,'retirer 2 dizaines, 7 unités','varie','s'); text(ax,68,20,'reste : 25','resultat','l')
+text(ax,15,9,'4 − 2 = 2','resultat','m'); text(ax,40.5,9,'12 − 7 = 5','resultat','m')
+save(fig,'02-050')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,4,27,12,14,'sujet',label='a',size='l')
+text(ax,2.5,45,'premier terme','sujet','s',ha='left')
+f1=numberline(ax,24,84,48,0,10,1,labels=False,arrow_right=False)
+text(ax,24,44.6,'0','fixe','s')
+disc(ax,f1(4),48,1.3,'sujet'); text(ax,f1(4),53,'a = 4','sujet','s')
+f2=numberline(ax,24,84,22,0,60,10,labels=False,arrow_right=False)
+text(ax,24,18.6,'0','fixe','s')
+disc(ax,f2(18),22,1.3,'sujet'); text(ax,f2(18),27,'a = 18','sujet','s')
+arrow(ax,(16.5,37),(f1(4)-1.5,47),'sujet',lw=0.7,curve=0.2)
+arrow(ax,(16.5,31),(f2(18)-1.5,23),'sujet',lw=0.7,curve=0.2)
+for p,q,y in [(f1(4),f1(7),49.5),(f2(18),f2(52),23.5)]:
+    ax.add_patch(FancyArrowPatch((p,y),(q,y),arrowstyle='-|>',mutation_scale=7,lw=0.9,ls='--',color=COL['fixe'],zorder=4,shrinkA=0,shrinkB=0))
+text(ax,54,59,"a : où l'on se place d'abord",'sujet','s')
+text(ax,44,8,'a seul : pas de valeur','limite','s')
+save(fig,'02-015')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,4,60,80,10,'sujet',label='6 532',size='l')
+line(ax,[(33,60),(33,52)],'fixe'); line(ax,[(75,60),(75,52)],'fixe')
+text(ax,31,56,'dizaines','fixe','s',ha='right'); text(ax,73,56,'unités','fixe','s',ha='right')
+box(ax,4,42,58,10,'resultat',label='6 530 = 653 × 10',size='m')
+box(ax,66,42,18,10,'varie',label='2',size='l')
+text(ax,33,37,'dizaines : toujours oui','resultat','s')
+arrow(ax,(75,42),(75,33),'varie')
+for y,k in ((26,2),(18,5),(10,10)):
+    box(ax,4,y,58,6,'resultat',label=f'par {k} : oui',size='s',r=0.6)
+    if k==2: box(ax,64,y,22,6,'resultat',label=f'par {k} : oui',size='s',r=0.6)
+    else: box(ax,64,y,22,6,'limite',label=f'par {k} : non',size='s',r=0.6)
+text(ax,44,4,'le dernier chiffre décide','encre','s')
+save(fig,'03-097')

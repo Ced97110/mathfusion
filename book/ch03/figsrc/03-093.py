@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,4,58,38,10,'resultat',label='1 000 = 8 × 125',size='m')
+text(ax,23,52,'3 derniers chiffres : oui','resultat','s')
+box(ax,46,58,38,10,'limite',label='100 = 8 × 12 + 4',size='m')
+text(ax,65,52,'2 derniers chiffres : non','limite','s')
+f=numberline(ax,8,76,30,96,120,step=4,every=2)
+for v in (96,104,112,120): disc(ax,f(v),30,1.2,'resultat')
+for v in (100,116): disc(ax,f(v),30,1.2,'limite'); text(ax,f(v),44,str(v),'limite','s')
+for a,b in ((96,100),(112,116)):
+    arrow(ax,(f(a),31),(f(b),31),'varie',curve=-0.4)
+    text(ax,(f(a)+f(b))/2,37,'+ 4','varie','s')
+box(ax,4,4,32,10,'resultat',label='16 = 8 × 2',size='m')
+box(ax,40,4,44,10,'limite',label='116 = 8 × 14 + 4',size='m')
+line(ax,[(f(116),28),(f(116),14)],'limite',dash=True)
+save(fig,'03-093')

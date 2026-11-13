@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(96)
+for x0,n in [(8,7),(14,14)]:
+    for i in range(n): box(ax,x0,58+2.5*i,4,2.2,'fixe',r=0.3,lw=0.6)
+text(ax,10,55,'7','encre','s'); text(ax,16,55,'14','encre','s')
+arrow(ax,(21,75.2),(21,92.7),'limite',both=True)
+text(ax,36,84,'de combien ?','limite','m')
+f=numberline(ax,6,76,30,0,14,labels=False,role='sujet')
+for v in (0,7,14): text(ax,f(v),25.6,str(v),'sujet','s')
+disc(ax,41,30,1,'fixe'); disc(ax,76,30,1,'fixe')
+text(ax,7.5,36,'départ','sujet','s'); text(ax,24,34,'un trait','sujet','s')
+text(ax,72,43,'flèche : continue','sujet','s'); line(ax,[(80,41.5),(81,31.5)],'sujet',lw=0.6)
+brace(ax,6,76,21,'sujet',label='graduations à pas égaux')
+brace(ax,41,76,34,'resultat',label='7 pas',down=False)
+save(fig,'01-009')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(46)
+text(ax,30,29,'5','fixe','l'); text(ax,42,29,'2','fixe','l')
+text(ax,21,20,'−','encre','l'); text(ax,30,20,'2','encre','l'); text(ax,42,20,'7','encre','l')
+line(ax,[(20,15.5),(48,15.5)],'encre',lw=1.0)
+text(ax,30,10,'2','resultat','l'); text(ax,42,10,'5','resultat','l')
+text(ax,30,37,'4','varie','m'); text(ax,42,37,'12','varie','m')
+text(ax,70,39,'4 dizaines et 12 unités','varie','s'); arrow(ax,(55,38),(45,37),'varie')
+text(ax,70,27,'52 reste visible','fixe','s'); arrow(ax,(59.5,27.5),(45,29),'fixe')
+line(ax,[(36,7),(36,40)],'fixe',dash=True)
+text(ax,70,34,'et non 412','limite','s')
+text(ax,70,10,'résultat : 25','resultat','s'); arrow(ax,(61,10),(46,10),'resultat')
+save(fig,'02-052')

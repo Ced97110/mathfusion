@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,37.5,65,'dizaines','encre','s'); text(ax,50.5,65,'unités','encre','s')
+box(ax,32,52,11,9,'fixe'); box(ax,45,52,11,9,'limite',label='12')
+for x in (15,44,73): arrow(ax,(44,51),(x,43),'fixe')
+text(ax,15,39,'les deux gestes','encre','s'); text(ax,44,39,'retirer 10 seul','encre','s'); text(ax,73,39,'ajouter 1 seul','encre','s')
+def case(x,y,lab,mod):
+    if mod: box(ax,x,y,11,9,'varie',fill=False,lw=1.2)
+    else: box(ax,x,y,11,9,'fixe')
+    if lab: text(ax,x+5.5,y+4.5,lab,'encre','m')
+case(3,24,'1',True); case(16,24,'2',True)
+text(ax,15,18,'12 : gardé','resultat','s')
+case(32,24,None,False); case(45,24,'2',True)
+text(ax,44,18,'2 : 10 perdus','limite','s')
+case(61,24,'1',True); case(74,24,'12',False)
+text(ax,73,18,'22 : 10 en trop','limite','s')
+save(fig,'02-025')

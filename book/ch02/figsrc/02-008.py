@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+f=numberline(ax,6,82,20,0,8,1,arrow_right=False)
+box(ax,6,24,f(4)-f(0),4,'sujet',label='a = 4',size='s')
+box(ax,f(4),24,f(7)-f(4),4,'varie',label='b = 3',size='s')
+box(ax,6,31,f(7)-f(0),4,'resultat',size='s')
+text(ax,25,33,'a + b = 7','resultat','s')
+ax.add_patch(Circle((f(7),20),1.2,ec=COL['resultat'],fc=COL['resultat'],zorder=3))
+line(ax,[(f(7),20),(f(7),39)],'resultat',dash=True)
+text(ax,f(7),43,'S','resultat','l')
+line(ax,[(f(4),24),(f(4),40)],'fixe',dash=True)
+text(ax,40,44,'pas de trou ni recouvrement','encre','s')
+save(fig,'02-008')

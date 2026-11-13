@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+f=numberline(ax,6,84,22,0,12,1,every=3,arrow_right=False)
+arrow(ax,(84,22),(86.5,22),'fixe',lw=0.9)
+box(ax,24,56,62,22,'sujet',fill=False,dash=True)
+text(ax,55,74,'indéfini : aucun nombre','sujet','m')
+box(ax,26,59,14,8,'sujet',label='4 − 9',size='m')
+box(ax,42,59,14,8,'sujet',label='12 ÷ 0',size='m')
+box(ax,58,59,26,8,'sujet',label='le plus grand entier',size='s')
+for x in (33,49,71):
+    ax.add_patch(FancyArrowPatch((x,59),(x,34),arrowstyle='-|>',mutation_scale=7,lw=1.0,color=COL['limite'],ls='--',zorder=4,shrinkA=0,shrinkB=0))
+text(ax,52,30,'aucun point visé','limite','s')
+box(ax,3,62,16,8,'autre',label='12 ÷ 4',size='m')
+text(ax,11,73,'défini','autre','s')
+arrow(ax,(19,62),(f(3),24),'resultat')
+box(ax,3,40,14,8,'limite',fill=False,dash=True,label='12 = 5',size='m')
+text(ax,11,36,'phrase fausse','limite','s')
+save(fig,'03-103')

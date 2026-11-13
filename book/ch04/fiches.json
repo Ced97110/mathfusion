@@ -1,0 +1,4334 @@
+[
+ {
+  "title": "exemple : carreler un sol carré de 3 mètres de côté, 3 × 3 = 9 carreaux",
+  "meta": "Fiche 04-001 · ch. 4 › 1. Le problème concret › 𝑝. 91",
+  "passage": "« Vous carrelez le sol d’une pièce carrée. Chaque côté mesure 3 mètres. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une pièce carrée a des côtés de 3 mètres. Les carreaux font 1 mètre sur 1 mètre. Vous posez 3 rangées de 3 carreaux. Cela fait <m>3 × 3</m> carreaux, soit 9."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre une règle valable pour tout sol carré. Le nombre de carreaux est le côté multiplié par lui-même. Avec un côté de 4 mètres, on pose 4 rangées de 4 carreaux. On obtient <m>4 × 4 = 16</m> carreaux. Avec un côté de 5 mètres, on obtient <m>5 × 5 =</m> <m>25</m> carreaux. Les deux facteurs sont toujours égaux. Le nombre de rangées et la longueur d’une rangée sont tous deux égaux au côté. Ce cas annonce donc un produit où le même nombre se répète."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce cas ne dit rien d’une pièce rectangulaire, où les deux côtés sont différents."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-008, « Fig. 3.1 — rectangle de 4 rangées de 6 carreaux » — le sol est un rectangle de carreaux, comme au chapitre 3, avec autant de rangées que de carreaux par rangée"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 490,
+  "code": "04-001"
+ },
+ {
+  "title": "exemple : remplir une caisse cubique de 2 mètres de côté, 2 × 2 × 2 = 8 cubes",
+  "meta": "Fiche 04-002 · ch. 4 › 1. Le problème concret › 𝑝. 91",
+  "passage": "« Au total <m>2 × 2 × 2 = 8</m> cubes. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une caisse cubique mesure 2 mètres de côté. Vous la remplissez de cubes de 1 mètre de côté. Au sol, 2 rangées de 2 cubes font 4 cubes. Une seconde couche identique en ajoute 4. Le total est <m>2 × 2 × 2</m> cubes."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que ne montre-t-il pas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas ne montre pas ce que donnerait un quatrième facteur égal. Le cube a trois dimensions : la longueur, la largeur et la hauteur. Trois facteurs égaux comptent donc des cubes que l’on peut voir. Avec quatre facteurs égaux à 2, le produit est <m>2 × 2 × 2 × 2 = 16</m>. Ce nombre existe et le calcul reste correct. Mais on ne peut plus le dessiner comme un objet de l’espace. Le cas ne dit donc pas que tout produit de facteurs égaux a une figure."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce cas ne dit pas comment écrire court ces trois facteurs."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-001, « exemple : carreler un sol carré de 3 mètres de côté, 3 × 3 = 9 carreaux » — le sol carré est le cas à deux facteurs égaux, dont la caisse est le cas à trois facteurs"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 491,
+  "code": "04-002"
+ },
+ {
+  "title": "exemple : les états d’une mémoire de 20 cases, vingt fois le facteur 2 écrit un par un",
+  "meta": "Fiche 04-003 · ch. 4 › 1. Le problème concret › 𝑝. 91",
+  "passage": "« Mais un informaticien qui compte les états d’une mémoire de 20 cases écrit 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une case de mémoire d’ordinateur contient soit 0, soit 1 : elle a donc 2 possibilités. Un état de la mémoire est une façon complète de remplir toutes les cases. Avec 2 cases, on peut écrire 00, 01, 10 ou 11 : cela fait 4 états, soit <m>2 × 2</m>. Chaque case ajoutée double le nombre d’états. Avec 3 cases, on trouve <m>2 × 2 × 2</m>, soit 8 états. Avec 20 cases, il faut écrire vingt fois le facteur 2."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre que la longueur de l’écriture suit le nombre de cases. Chaque case ajoutée ajoute un facteur 2 à écrire. Avec 3 cases, on écrit 3 facteurs. Avec 20 cases, on en écrit 20 et on doit les compter un par un. Une erreur de comptage donne alors un autre nombre d’états. Par exemple, quatre facteurs 2 donnent 16, mais cinq facteurs donnent 32. Le cas montre donc un risque commun à tout produit dont le facteur se répète : il faut compter les facteurs."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce cas ne donne pas la valeur du produit de vingt facteurs 2, seulement la difficulté de l’écrire."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-002, « répéter 426 fois la même addition est exact mais inacceptable (426 additions, 425 occasions de se tromper) » — au chapitre 3, répéter 426 fois une addition posait déjà le même problème : trop longue, source d’erreurs"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 492,
+  "code": "04-003"
+ },
+ {
+  "title": "problème : écrire court une multiplication dont le facteur se répète",
+  "meta": "Fiche 04-004 · ch. 4 › 1. Le problème concret › 𝑝. 91",
+  "passage": "« Voici le premier problème de ce chapitre : comment écrire court une multiplication dont le facteur se répète ? »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous devez écrire le produit de sept facteurs égaux à 3. Vous écrivez <m>3 × 3 × 3 × 3 × 3 × 3 × 3</m>. Un camarade lit cette ligne et compte six facteurs. Il a tort : il en manque un dans son compte."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on voit dans cette ligne une multiplication ordinaire. Après la remarque, on voit un problème de notation. Le produit est juste, mais sa longueur dépend du nombre de facteurs. Le lecteur doit compter pour savoir combien il y en a. Le problème demande donc une écriture où le nombre de répétitions est écrit une seule fois. Alors personne n’a plus à compter. Le calcul ne change pas : seul le moyen de l’écrire change."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque pose le problème sans donner la solution, que le chapitre donne ensuite."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-003, « exemple : les états d’une mémoire de 20 cases, vingt fois le facteur 2 écrit un par un » — le cas de la mémoire de 20 cases est un exemple où ce problème se pose avec vingt facteurs"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 494,
+  "code": "04-004"
+ },
+ {
+  "title": "problème inverse : le nombre qui, multiplié par lui-même, donne 16",
+  "meta": "Fiche 04-005 · ch. 4 › 1. Le problème concret › 𝑝. 92",
+  "passage": "« Il y a un second problème, qui est le premier pris à l’envers. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le sol d’une pièce carrée est recouvert par 16 carreaux de 1 mètre sur 1 mètre. Vous cherchez la longueur d’un côté de la pièce. Vous essayez 3 : <m>3 × 3</m> vaut 9, c’est trop petit. Vous essayez 5 : <m>5 × 5</m> vaut 25, c’est trop grand. Avec 4, <m>4 × 4</m> vaut 16."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on connaît le côté et on cherche l’aire, c’est-à-dire le nombre de carreaux qui couvrent le sol. Ici, on connaît l’aire 16 et on cherche le côté. Le sens du calcul est donc renversé. On ne peut plus multiplier directement. Il faut chercher un nombre qui, multiplié par lui-même, donne 16. Cette recherche se fait par essais, ici 3, puis 5, puis 4. Le problème n’est pas une nouvelle multiplication. C’est la même relation lue dans l’autre sens, comme la division l’est pour la multiplication au chapitre 3."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne dit pas qu’un tel nombre entier existe. Pour un sol de 10 carreaux, aucun nombre entier ne convient."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-004, « problème inverse : combien de fois 4 tient dans 1 704 » — comme dans ce problème inverse du chapitre 3, on connaît le produit et on cherche un facteur"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 495,
+  "code": "04-005"
+ },
+ {
+  "title": "problème : 2 + 3 × 4 a deux lectures ; une écriture doit avoir une seule valeur",
+  "meta": "Fiche 04-006 · ch. 4 › 1. Le problème concret › 𝑝. 92",
+  "passage": "« Et il y a un troisième problème, qui apparaît dès qu’on mélange plusieurs opérations. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous achetez 2 pains et 3 lots de 4 œufs. Le nombre d’œufs s’écrit <m>3 × 4</m>. Pour tout compter, vous ajoutez les 2 pains : <m>2 + 3 × 4</m>. Un lecteur calcule d’abord <m>2 + 3</m> puis multiplie par 4 : il trouve 20. Un autre calcule d’abord <m>3 × 4</m> puis ajoute 2 : il trouve 14."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on croit que deux lectures sont deux façons permises de calculer. Après la remarque, on voit qu’une écriture doit donner une seule valeur. Ici, la ligne donne 20 selon un lecteur et 14 selon l’autre. Mais l’achat compte 2 pains et 12 œufs, soit 14 objets. Une seule lecture décrit donc l’achat. Une règle doit imposer cette lecture à tous les lecteurs. Alors la ligne <m>2 + 3 × 4</m> a le même sens pour chacun."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne dit pas quelle lecture est la bonne : la règle d’ordre le dit plus loin."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-013, « multiplication (somme de a termes égaux à <m>𝑏</m>) » — <m>3 × 4</m> est la somme de 3 termes égaux à 4, soit 12 œufs, à ajouter aux 2 pains"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 496,
+  "code": "04-006"
+ },
+ {
+  "title": "Fig. 4.1 — carré de côté 3 (3² = 9) et cube de côté 2 (2³ = 8)",
+  "meta": "Fiche 04-007 · ch. 4 › 2. La figure › 𝑝. 92",
+  "passage": "« Regardez la figure ci-dessous avant toute définition. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un carré de côté 3 est découpé en carreaux de côté 1. Il y a 3 rangées de 3 carreaux. Un cube de côté 2 est découpé en petits cubes de côté 1. Il y a 2 couches de 4 petits cubes."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝑐</m> : « c » : la longueur du côté de la figure.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre la figure</i> <i>qu’aucune phrase ne montre ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La figure montre que le nombre de facteurs égaux est le nombre de dimensions de la figure. Dans le carré avec <m>𝑐 = 3</m>, on voit deux facteurs 3. Ils comptent des carreaux sur une surface. Dans le cube avec <m>𝑐 = 2</m>, on voit trois facteurs 2. Ils comptent des petits cubes dans un espace. On voit aussi que ces morceaux ont tous le côté 1. Ils se placent côte à côte sans trou ni recouvrement, donc le produit est bien leur nombre."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La figure ne montre aucun solide de plus de trois dimensions, car on ne peut pas en dessiner."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-001, « exemple : carreler un sol carré de 3 mètres de côté, 3 × 3 = 9 carreaux » — le carré de la figure est le sol carré de côté 3 : 3 rangées de 3 carreaux"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 497,
+  "code": "04-007"
+ },
+ {
+  "title": "symbole <m>𝑐</m> (longueur du côté)",
+  "meta": "Fiche 04-008 · ch. 4 › 2. La figure › 𝑝. 93",
+  "passage": "« La lettre <m>𝑐</m> désigne la longueur de son côté : <m>𝑐 = 3</m>. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous mesurez le côté d’un premier carré : il mesure 3. Le côté d’un second carré mesure 5. Vous voulez un seul nom pour « le côté », quelle que soit la mesure."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝑐</m> : « c » : la longueur du côté de la figure.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, <m>𝑐</m> dit : « la longueur du côté, quelle qu’elle soit ». Dans la figure de gauche, <m>𝑐 = 3</m>. Dans celle de droite, <m>𝑐 = 2</m>. Le signe garde donc le même rôle, et sa valeur change selon la figure. Avec <m>𝑐 = 3</m>, on compte 9 carreaux. Avec <m>𝑐 = 5</m>, on compte 25 carreaux. Le même nom sert à tous ces calculs, sans qu’on ait à le changer d’une figure à l’autre."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le signe <m>𝑐</m> ne donne pas la valeur du côté : la figure ou l’énoncé la donne."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-007, « Fig. 4.1 — carré de côté 3 (3² = 9) et cube de côté 2 (2³ = 8) » — <m>𝑐</m> est le nom donné au côté du carré et au côté du cube dans la figure"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 499,
+  "code": "04-008"
+ },
+ {
+  "title": "notation 3² (petit chiffre en haut à droite : nombre de fois où le facteur apparaît)",
+  "meta": "Fiche 04-009 · ch. 4 › 2. La figure › 𝑝. 93",
+  "passage": "« L’écriture <m>3<sup>2</sup></m>, au-dessus du carré, est la nouvelle notation pour <m>3 × 3</m>. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le carré de côté 3 compte 3 rangées de 3 carreaux, soit <m>3 × 3</m> carreaux. Vous voulez écrire le nombre 3 une seule fois. Vous voulez aussi noter qu’il est répété deux fois."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>3<sup>2</sup></m> : « trois, avec un petit deux en haut à droite » : le facteur 3 apparaît 2 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que le signe</i> <i>permet d’écrire plus vite ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Sans le signe, on écrit <m>3 ×</m> <m>3</m> et on compte deux facteurs. Avec lui, on écrit <m>3<sup>2</sup></m> et le nombre de facteurs est écrit directement. Pour cinq facteurs égaux à 3, la version longue compte cinq 3 et quatre signes. La version courte reste <m>3<sup>5</sup></m>. Le petit nombre en haut est une information de comptage. Ce n’est pas un nombre que l’on multiplie. Le gain n’est donc pas seulement de la place : le nombre de répétitions devient une donnée lisible."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le petit nombre en haut ne se multiplie pas avec la base : <m>3<sup>2</sup></m> n’est pas <m>3 × 2</m>."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-004, « problème : écrire court une multiplication dont le facteur se répète » — la notation répond au problème d’écrire court une multiplication dont le facteur se répète"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 500,
+  "code": "04-009"
+ },
+ {
+  "title": "« au carré » (3² s’appelle « 3 au carré »)",
+  "meta": "Fiche 04-010 · ch. 4 › 2. La figure › 𝑝. 93",
+  "passage": "« C’est pour cela que <m>3<sup>2</sup></m> s’appelle « 3 au carré ». »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le sol carré de 3 mètres de côté a 9 carreaux. Un sol carré de 4 mètres de côté en a 16. Pour parler du calcul 3 fois 3, on dit « 3 au carré »."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le produit de deux facteurs 3.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi a-t-on eu besoin de</i> <i>ce mot ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "On avait besoin d’un mot court pour dire « le nombre de carreaux d’un carré de côté donné ». Sans lui, il faudrait dire chaque fois « 3 multiplié par 3 ». Le mot garde aussi la forme géométrique. Il rappelle que le résultat compte des carreaux sur une surface. Ainsi, « 4 au carré » s’entend comme le nombre de carreaux d’un carré de côté 4, soit 16. Un seul mot relie donc un calcul et une figure."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot nomme le calcul <m>3 × 3</m>; il ne dit rien d’un produit de deux nombres différents."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-007, « Fig. 4.1 — carré de côté 3 (3² = 9) et cube de côté 2 (2³ = 8) » — la figure de gauche montre le carré dont le nombre de carreaux donne son nom à <m>3<sup>2</sup></m>"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 501,
+  "code": "04-010"
+ },
+ {
+  "title": "« au cube » (2³ s’appelle « 2 au cube »)",
+  "meta": "Fiche 04-011 · ch. 4 › 2. La figure › 𝑝. 93",
+  "passage": "« C’est pour cela que 2³ s’appelle « 2 au cube ». »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une caisse cubique de 2 mètres de côté contient 8 petits cubes. Un sol carré de 2 mètres de côté a 4 carreaux. Les deux calculs partent du même côté 2."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>2<sup>3</sup></m> : « deux au cube » : le facteur 2 apparaît 3 fois.",
+     "• <m>2<sup>4</sup></m> : « deux puissance quatre » : le facteur 2 apparaît 4 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui le sépare de</i> <i>ses voisins ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "« 2 au cube » se distingue de « 2 au carré » par le nombre de facteurs. « 2 au carré » désigne deux facteurs 2 et vaut 4. « 2 au cube » désigne trois facteurs 2 et vaut 8. Il se distingue aussi de « 2 multiplié par 3 », qui vaut 6. Dans <m>2<sup>3</sup></m>, le 3 compte les facteurs et ne multiplie pas le 2. La figure sépare aussi les deux mots : le carré compte des carreaux, le cube compte des petits cubes."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot « cube » ne s’applique qu’à un petit 3 écrit en haut à droite. Pour un petit 4, comme dans <m>2<sup>4</sup></m>, on dit « puissance quatre », mot que l’on prononce à voix haute."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-010, « « au carré » (3² s’appelle « 3 au carré ») » — « au carré » est le mot voisin : il désigne deux facteurs égaux au lieu de trois"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 502,
+  "code": "04-011"
+ },
+ {
+  "title": "écriture 2³ (notation pour 2 × 2 × 2 ; le petit 3 dit « le facteur 2 apparaît 3 fois »)",
+  "meta": "Fiche 04-012 · ch. 4 › 2. La figure › 𝑝. 94",
+  "passage": "« L’écriture 2³ est la notation pour 2 × 2 × 2. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le cube de 2 mètres de côté se remplit de <m>2 × 2 × 2</m> petits cubes. Vous voulez écrire ce calcul sans répéter le 2 trois fois."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>2<sup>3</sup></m> : « deux, avec un petit trois en haut à droite » : le facteur 2 apparaît 3 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, <m>2<sup>3</sup></m> dit : « le facteur 2 apparaît 3 fois ». Le grand nombre en bas est le nombre que l’on multiplie. Le petit nombre en haut est le nombre de fois. La lecture donne donc le calcul <m>2 × 2 × 2</m>, qui vaut 8. Si le petit nombre devenait 4, le calcul aurait quatre facteurs 2 et vaudrait 16. Le petit nombre se lit toujours comme un nombre de facteurs. Il ne se lit jamais comme un nombre à multiplier."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette lecture ne donne pas la valeur : il faut ensuite effectuer la multiplication."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-009, « notation 3² (petit chiffre en haut à droite : nombre de fois où le facteur apparaît) » — <m>3<sup>2</sup></m> est la même notation avec deux facteurs, <m>2<sup>3</sup></m> l’est avec trois facteurs"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 503,
+  "code": "04-012"
+ },
+ {
+  "title": "aire (surface comptée en carreaux)",
+  "meta": "Fiche 04-013 · ch. 4 › 2. La figure › 𝑝. 94",
+  "passage": "« un nombre multiplié par lui-même deux fois est une aire (une surface comptée en carreaux) »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le sol carré de 3 mètres de côté est couvert par 9 carreaux. Un sol de 4 mètres sur 2 mètres est couvert par 8 carreaux. Dans les deux cas, on compte des carreaux de 1 mètre sur 1 mètre."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’aire appartient à la famille des mesures. Elle répond à la question « combien d’unités ? ». Elle mesure une surface. Son unité est un carreau de côté 1. La longueur, autre mesure, compte des segments de longueur 1 sur une ligne. Le volume compte des petits cubes dans un espace. L’aire est donc la mesure qui compte des carreaux sur une surface. On la trouve en découpant la surface en carreaux, puis en les comptant."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette définition compte des carreaux entiers ; elle ne dit pas comment mesurer une surface qui ne se découpe pas ainsi."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-007, « Fig. 4.1 — carré de côté 3 (3² = 9) et cube de côté 2 (2³ = 8) » — la figure de gauche montre une aire : les 9 carreaux d’un carré de côté 3"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 504,
+  "code": "04-013"
+ },
+ {
+  "title": "volume (espace compté en petits cubes)",
+  "meta": "Fiche 04-014 · ch. 4 › 2. La figure › 𝑝. 94",
+  "passage": "« un nombre multiplié par lui-même trois fois est un volume (un espace compté en petits cubes) »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "La caisse cubique de 2 mètres de côté contient 8 petits cubes de 1 mètre de côté. Une autre caisse cubique mesure 3 mètres de côté. Vous voulez comparer leurs contenances."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi a-t-on eu besoin de</i> <i>ce mot ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "On avait besoin de ce mot pour comparer des espaces. Une seule longueur ne dit pas combien de petits cubes entrent dans une caisse. Une caisse cubique de côté 2 en contient 8. Une caisse cubique de côté 3 en contient 27. Le volume répond donc à la question « combien de petits cubes entrent dedans ? ». Sans ce mot, il faudrait décrire chaque caisse en comptant les cubes de chaque couche, puis le nombre de couches."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le volume compte des petits cubes entiers. Il ne dit pas comment mesurer un espace qui ne se découpe pas ainsi."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-013, « aire (surface comptée en carreaux) » — le volume compte des cubes dans un espace comme l’aire compte des carreaux sur une surface"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 505,
+  "code": "04-014"
+ },
+ {
+  "title": "« carré » et « cube » sont les formes exactes que ces multiplications mesurent",
+  "meta": "Fiche 04-015 · ch. 4 › 2. La figure › 𝑝. 94",
+  "passage": "« Les mots « carré » et « cube » ne sont pas des images : ce sont les formes géométriques exactes que ces multiplications mesurent. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous entendez qu’un nombre est « mis au carré ». Vous pensez à une image vague pour retenir le mot. Pourtant, 5 au carré est exactement le nombre de carreaux d’un carré de côté 5, soit 25."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>2<sup>4</sup></m> : « deux puissance quatre » : le facteur 2 apparaît 4 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut croire que « carré » et « cube » sont des images pour retenir. Après la remarque, on voit que ce sont des formes exactes. Le carré de côté 5 contient exactement 25 carreaux. Le cube de côté 5 contient exactement 125 petits cubes. Le nombre trouvé n’est pas proche de l’aire : il est l’aire. Le mot énonce donc un fait géométrique, que l’on peut vérifier en comptant."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque vaut pour un petit 2 ou un petit 3 écrit en haut à droite. Pour un petit 4, comme dans <m>2<sup>4</sup></m>, aucune forme de l’espace ne correspond."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-013, « aire (surface comptée en carreaux) » — le mot « carré » renvoie à l’aire, que la fiche 04- 013 définit comme une surface comptée en carreaux"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 506,
+  "code": "04-015"
+ },
+ {
+  "title": "l’exposant est une multiplication abrégée",
+  "meta": "Fiche 04-016 · ch. 4 › L’exposant › 𝑝. 94",
+  "passage": "« L’exposant est la même idée appliquée un cran plus haut : l’exposant est une multiplication abrégée. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Au chapitre 3, le produit <m>4 × 7</m> répète quatre fois le terme 7 dans une addition. Cette addition s’écrit <m>7 + 7 + 7 + 7</m>. Ici, on répète quatre fois le facteur 7 dans une multiplication. On l’écrit <m>7<sup>4</sup></m> : le petit nombre 4, en haut à droite, s’appelle l’exposant."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>7<sup>4</sup></m> : « sept puissance quatre » : le facteur 7 apparaît 4 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, le petit nombre en haut à droite paraît un signe nouveau. On l’appelle l’exposant. Après la remarque, on le voit comme la même idée que la multiplication. La multiplication <m>4 × 7</m> abrège une addition de quatre 7. L’écriture <m>7<sup>4</sup></m> abrège une multiplication de quatre 7. On la lit « sept puissance quatre » : « puissance » est le mot qu’on dit à voix haute pour ce petit nombre. Il y a une suite d’opérations : l’addition répétée devient la multiplication, la multiplication répétée devient l’exposant. Élever à une puissance, écrire <m>7<sup>4</sup></m> pour <m>7 ×</m> <m>7 × 7 × 7</m>, est donc l’opération qui vient juste après la multiplication. Le petit nombre 4 s’appelle l’exposant."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "L’abréviation change l’écriture, pas le résultat : <m>7<sup>4</sup></m> vaut toujours le produit des quatre facteurs 7."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-013, « multiplication (somme de a termes égaux à <m>𝑏</m>) » — la multiplication de 03-013 abrège une addition, comme l’exposant abrège une multiplication"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 508,
+  "code": "04-016"
+ },
+ {
+  "title": "exposant (définition)",
+  "meta": "Fiche 04-017 · ch. 4 › L’exposant › 𝑝. 94",
+  "passage": "« Définition. Quand un même nombre apparaît plusieurs fois comme facteur dans une multiplication, on écrit ce nombre une seule fois, et on écrit au-dessus de lui, à droite, en petit, le nombre de fois où il apparaît. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Dans <m>8<sup>5</sup></m>, le nombre 5 est écrit en petit, en haut. Dans <m>8 × 5</m>, le nombre 5 est écrit à côté du 8. Les deux écritures contiennent un 8 et un 5."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui le sépare de</i> <i>ses voisins ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’exposant se distingue du facteur et du terme. Un facteur est multiplié. Un terme est additionné. L’exposant n’est ni l’un ni l’autre : il compte. Dans <m>8<sup>5</sup></m>, le 5 dit combien de fois le facteur 8 apparaît. Il ne dit pas par quoi on multiplie 8. Le produit <m>8 × 5</m> vaut 40, alors que <m>8<sup>5</sup></m> vaut 32 768. L’exposant est donc un nombre d’une autre nature que la base : c’est un nombre de répétitions."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette définition suppose un nombre de répétitions entier, au moins égal à 1. Elle ne couvre pas l’exposant 0."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-016, « l’exposant est une multiplication abrégée » — 04-016 dit que l’exposant est une multiplication abrégée. La définition de cette fiche dit comment l’écrire."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 509,
+  "code": "04-017"
+ },
+ {
+  "title": "8 × 8 × 8 × 8 × 8 = 8<m><sup>5</sup></m>",
+  "meta": "Fiche 04-018 · ch. 4 › L’exposant › 𝑝. 94",
+  "passage": "« Ainsi : 8 × 8 × 8 × 8 × 8 = 8<m><sup>5</sup></m> »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous avez cinq facteurs égaux à 8. Vous les comptez : un, deux, trois, quatre, cinq. Vous écrivez le 8 une seule fois. Puis vous notez le nombre 5 en petit, en haut à droite."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite.",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Quelle suite d’actions la</i> <i>formule décrit-elle, sur un cas chiffré ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’écriture <m>8 × 8 × 8 × 8 × 8 =</m> <m>8<sup>5</sup></m> décrit trois actions. D’abord, on compte les facteurs : il y en a 5. Ensuite, on écrit le facteur répété une seule fois. Enfin, on écrit le nombre de facteurs en petit, en haut à droite. Pour calculer la valeur, on multiplie de gauche à droite : 64, puis 512, puis 4 096, puis 32 768. Les deux côtés de l’égalité désignent donc le même nombre, écrit de deux façons."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette égalité n’est vraie que si les cinq facteurs sont tous égaux à 8."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — cette égalité est un exemple chiffré de la définition de l’exposant"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 510,
+  "code": "04-018"
+ },
+ {
+  "title": "base (le facteur qui se répète)",
+  "meta": "Fiche 04-019 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« 8 → la base : le facteur qui se répète. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Dans le produit <m>5 × 5 × 5</m>, un seul nombre se répète : 5. En abrégeant, vous l’écrivez une seule fois. Ce nombre a un nom particulier."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>5<sup>3</sup></m> : « cinq puissance trois » : le facteur 5 apparaît 3 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La base appartient à la famille des facteurs. C’est un facteur parmi les autres, mais celui qui se répète. Dans <m>8<sup>5</sup></m>, la base est 8. Dans <m>5<sup>3</sup> × 9<sup>2</sup></m>, il y a deux bases, 5 et 9. Chaque base a son propre exposant. La base est donc le nombre que l’on multiplie, et l’exposant le nombre de fois qu’on le multiplie. Sans base, l’exposant ne compterait rien."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La base n’est pas le résultat : dans <m>8<sup>5</sup></m>, le résultat est 32 768 et la base reste 8."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — la base est le nombre qui porte l’exposant dans la définition de 04-017"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 511,
+  "code": "04-019"
+ },
+ {
+  "title": "exposant (le nombre de fois où la base apparaît)",
+  "meta": "Fiche 04-020 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« 5 → l’exposant : le nombre de fois où la base apparaît. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous lisez <m>8<sup>3</sup></m> et <m>8<sup>5</sup></m> côte à côte. Les deux ont la même base 8. La seule différence est le petit nombre en haut."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>8<sup>3</sup></m> : « huit puissance trois » : le facteur 8 apparaît 3 fois.",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que le signe</i> <i>permet d’écrire plus vite ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le petit nombre permet d’écrire vite le nombre de répétitions. Pour <m>8<sup>3</sup></m>, on lit trois facteurs 8. Pour <m>8<sup>5</sup></m>, on lit cinq facteurs 8. Sans lui, il faudrait écrire les facteurs et les compter. Avec lui, la différence entre les deux écritures se lit d’un coup d’œil : deux facteurs de plus. On voit aussi que <m>8<sup>5</sup></m> vaut <m>8<sup>3</sup></m> multiplié par <m>8 × 8</m>, soit 512 multiplié par 64."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le petit nombre ne donne pas la valeur du produit : il faut multiplier pour la connaître."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-019, « base (le facteur qui se répète) » — l’exposant compte combien de fois la base de 04-019 est écrite dans le produit"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 512,
+  "code": "04-020"
+ },
+ {
+  "title": "puissance (le résultat de la multiplication)",
+  "meta": "Fiche 04-021 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« 8<m><sup>5</sup></m> → la puissance : le résultat de la multiplication. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous calculez le produit <m>8 × 8 × 8 × 8 × 8</m> et vous obtenez 32 768. Ce résultat a un nom, comme la somme pour une addition et le produit pour une multiplication."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La puissance appartient à la famille des résultats d’opérations, avec la somme et le produit. La somme est le résultat d’une addition. Le produit est le résultat d’une multiplication. La puissance est le résultat d’une multiplication de facteurs égaux, que l’on note <m>8<sup>5</sup></m>. Toute puissance est donc un produit, mais tout produit n’est pas une puissance. Le produit <m>8 × 5</m> vaut 40, et ce n’est pas une puissance de 8. Le produit de cinq facteurs 8 en est une."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot ne dit pas combien de facteurs il y a : c’est l’exposant qui le dit."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-020, « exposant (le nombre de fois où la base apparaît) » — la puissance est le résultat dont l’exposant de 04-020 compte les facteurs"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 514,
+  "code": "04-021"
+ },
+ {
+  "title": "lecture « huit puissance cinq » ou « huit à la cinquième »",
+  "meta": "Fiche 04-022 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« On lit 8<m><sup>5</sup></m> « huit puissance cinq » ou « huit à la cinquième ». »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous devez lire à voix haute <m>8<sup>5</sup></m> devant la classe. Vous pouvez dire « huit puissance cinq ». Vous pouvez aussi dire « huit à la cinquième »."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » ou « huit à la cinquième » : le facteur 8 apparaît 5 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, <m>8<sup>5</sup></m> se dit « huit puissance cinq ». Ici « puissance » est le mot qui relie 8 et 5 à voix haute, comme « fois » dans « huit fois cinq ». Le résultat, 32 768, s’appelle « la cinquième puissance de 8 ». Le mot a donc deux emplois : le lien entre la base et l’exposant, et le résultat. Huit est la base et cinq est l’exposant. L’autre lecture, « huit à la cinquième », dit la même chose. Pour <m>2<sup>3</sup></m>, on dit aussi « deux au cube »."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La lecture ne dit pas la valeur du nombre : il faut multiplier pour l’obtenir."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — la lecture à voix haute traduit en mots la définition de l’exposant"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 515,
+  "code": "04-022"
+ },
+ {
+  "title": "« au carré » (exposant 2 : aire d’un carré)",
+  "meta": "Fiche 04-023 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« 5² se lit « cinq au carré » : c’est l’aire d’un carré de côté 5. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un sol carré de 5 mètres de côté a 25 carreaux. Vous voulez dire le calcul 5 fois 5 en peu de mots. Vous dites « 5 au carré »."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>5<sup>2</sup></m> : « cinq au carré » : le facteur 5 apparaît 2 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui le sépare de</i> <i>ses voisins ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "« Au carré » se distingue des autres lectures par l’exposant 2 seul. Pour l’exposant 3, on dit « au cube ». À partir de 4, on dit seulement « puissance ». Le mot « carré » est donc réservé à deux facteurs, et il renvoie à une aire. Ainsi « cinq au carré » désigne <m>5 × 5</m>, soit 25 carreaux. « Cinq puissance deux » désigne la même chose avec un autre mot. Le nom spécial ne change donc pas le calcul."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot ne vaut que pour l’exposant 2 et ne s’applique pas à un produit de deux nombres différents."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-010, « « au carré » (3² s’appelle « 3 au carré ») » — 04-010 donne le même mot pour <m>3<sup>2</sup></m>, avec la figure du carré de côté 3"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 516,
+  "code": "04-023"
+ },
+ {
+  "title": "« au cube » (exposant 3 : volume d’un cube)",
+  "meta": "Fiche 04-024 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« 5³ se lit « cinq au cube » : c’est le volume d’un cube de côté 5. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une caisse cubique de 5 mètres de côté contient 125 petits cubes. Vous voulez un mot pour ce nombre à partir du côté 5."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>5<sup>3</sup></m> : « cinq au cube » : le facteur 5 apparaît 3 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi a-t-on eu besoin de</i> <i>ce mot ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "On avait besoin d’un mot qui relie le nombre 5 au volume du cube de côté 5. « Cinq puissance trois » ne dit pas qu’il s’agit d’un espace. « Cinq au cube » le dit : le résultat compte des petits cubes. Avec ce mot, on comprend tout de suite que trois facteurs correspondent à trois dimensions. Ces dimensions sont la longueur, la largeur et la hauteur. Le mot relie donc un calcul à trois facteurs et un solide à trois dimensions."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot ne vaut que pour l’exposant 3 ; à partir de 4, il ne reste que « puissance »."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-011, « « au cube » (2³ s’appelle « 2 au cube ») » — 04-011 donne le même mot pour <m>2<sup>3</sup></m>, avec la caisse de 2 mètres de côté"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 517,
+  "code": "04-024"
+ },
+ {
+  "title": "architecture de 8<m><sup>5</sup></m> : base, exposant, puis multiplier de gauche à droite",
+  "meta": "Fiche 04-025 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« Architecture de la formule. Comment lire 8<m><sup>5</sup></m> ? Dans cet ordre : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous devez calculer <m>8<sup>5</sup></m>. Vous lisez la base, 8. Puis vous lisez l’exposant, 5. Vous écrivez cinq fois le 8, puis vous multipliez de la gauche vers la droite."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Quand s’arrête-t-elle ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La méthode s’arrête quand tous les facteurs écrits ont été multipliés. Pour <m>8<sup>5</sup></m>, on écrit 5 facteurs 8. On fait 4 multiplications, car 5 facteurs en demandent une de moins : 64, 512, 4 096, puis 32 768. Après la quatrième, il ne reste aucun facteur à prendre. Le nombre de multiplications est donc l’exposant moins 1. La méthode s’arrête toujours, puisque l’exposant est un nombre entier fini."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette méthode ne s’applique pas à l’exposant 0 : il n’y a alors aucun facteur à écrire."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-019, « base (le facteur qui se répète) » — la méthode lit d’abord la base définie en 04-019, puis l’exposant"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 518,
+  "code": "04-025"
+ },
+ {
+  "title": "8 × 5 (addition abrégée) contre 8<m><sup>5</sup></m> (multiplication abrégée) : un exposant mal placé change tout",
+  "meta": "Fiche 04-026 · ch. 4 › L’exposant › 𝑝. 95",
+  "passage": "« Vous allez me dire : « Pourquoi ne pas simplement écrire 8 × 5 ? » »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Avec 8 et 5, deux calculs sont possibles. Le premier ajoute cinq fois le nombre 8 : <m>8 + 8 + 8 + 8 + 8</m>. Le second multiplie cinq fois le nombre 8 : <m>8 × 8 × 8 ×</m> <m>8 × 8</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>8<sup>5</sup></m> : « huit puissance cinq » : le facteur 8 apparaît 5 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut lire <m>8 × 5</m> et <m>8<sup>5</sup></m> comme deux façons de dire « huit et cinq ». Après la remarque, on voit qu’elles abrègent deux opérations différentes. Le produit <m>8 × 5</m> abrège l’addition de cinq 8 et vaut 40. L’écriture <m>8<sup>5</sup></m> abrège la multiplication de cinq 8 et vaut 32 768. La seule différence visible est la position du 5. Un 5 placé en haut change donc l’opération abrégée, et non un détail de présentation."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Les deux écritures peuvent coïncider : <m>2<sup>2</sup></m> et <m>2 × 2</m> valent toutes deux 4."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-016, « l’exposant est une multiplication abrégée » — 04-016 dit que l’exposant abrège une multiplication, comme <m>8 × 5</m> abrège une addition"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 519,
+  "code": "04-026"
+ },
+ {
+  "title": "exemples : 2³ = 8 mais 2 × 3 = 6 ; 3² = 9 mais 3 × 2 = 6 (un exposant mal placé change le calcul)",
+  "meta": "Fiche 04-027 · ch. 4 › L’exposant › 𝑝. 96",
+  "passage": "« Comparez : 2³ = 8 mais 2 × 3 = 6 ; 3² = 9 mais 3 × 2 = 6. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Prenez les nombres 2 et 3. Avec un signe fois, <m>2 × 3</m> vaut 6. Avec le 3 en petit en haut, <m>2<sup>3</sup></m> vaut 8. Échangez les deux nombres : <m>3<sup>2</sup></m> vaut 9, alors que <m>3 × 2</m> vaut 6."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>2<sup>3</sup></m> : « deux puissance trois » : le facteur 2 apparaît 3 fois.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre que l’on ne peut pas remplacer un exposant par un signe fois. Avec 2 et 3, les résultats sont 8 et 6. Avec 3 et 2, ils sont 9 et 6. Dans les deux cas, l’écriture avec exposant donne le plus grand résultat. Le petit nombre ne joue donc pas le rôle d’un second facteur. Il compte des facteurs égaux. Écrit en haut, il change le calcul, même si les deux nombres sont les mêmes."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce cas ne montre pas que les deux écritures diffèrent toujours : <m>2<sup>2</sup></m> et <m>2 × 2</m> valent toutes deux 4."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-026, « 8 × 5 (addition abrégée) contre 8<m><sup>5</sup></m> (multiplication abrégée) : un exposant mal placé change tout » — ce cas chiffré illustre la remarque : l’exposant abrège une multiplication, le signe fois une addition"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 520,
+  "code": "04-027"
+ },
+ {
+  "title": "un exposant ne porte que sur la base juste en dessous de lui",
+  "meta": "Fiche 04-028 · ch. 4 › L’exposant › 𝑝. 96",
+  "passage": "« Un exposant ne porte que sur la base juste en dessous de lui, jamais sur le voisin. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous avez le produit <m>5 × 4</m>. Vous ajoutez un petit 2 collé au 4 : <m>5 × 4<sup>2</sup></m>. Le petit 2 compte les facteurs 4, donc <m>4<sup>2</sup></m> vaut 16. Le résultat est 5 fois 16, soit 80."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>4<sup>2</sup></m> : « quatre au carré » : le facteur 4 apparaît 2 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le petit nombre ne peut pas porter sur le voisin, car il compte les répétitions d’un facteur précis. Dans <m>5 × 4<sup>2</sup></m>, il compte les facteurs 4 : il y en a deux. Le facteur 5 n’est écrit qu’une fois. Pour que le 2 porte sur le 5, il faudrait que le 5 apparaisse deux fois. Le produit est <m>5 × 4 × 4</m>, qui vaut 80. Si le 2 portait sur <m>5 × 4</m>, on écrirait <m>5 × 4 × 5 × 4</m>, qui vaut 400. Ce n’est pas le même produit."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette règle dit où l’exposant s’applique ; elle ne dit pas la valeur de la puissance."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-019, « base (le facteur qui se répète) » — 04-019 définit la base comme le facteur qui se répète, et l’exposant ne compte que celle-ci."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 521,
+  "code": "04-028"
+ },
+ {
+  "title": "5 × 5 × 5 × 9 × 9 = 5³ × 9² (deux facteurs différents, deux exposants)",
+  "meta": "Fiche 04-029 · ch. 4 › L’exposant › 𝑝. 96",
+  "passage": "« Dans 5 × 5 × 5 × 9 × 9, le facteur 5 apparaît 3 fois et le facteur 9 apparaît 2 fois : on écrit 5³ × 9². »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le produit <m>5 × 5 × 5 ×</m> <m>9 × 9</m> a deux nombres qui se répètent. Le 5 apparaît 3 fois et le 9 apparaît 2 fois. Vous écrivez <m>5<sup>3</sup> × 9<sup>2</sup></m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>5<sup>3</sup></m> : « cinq puissance trois » : le facteur 5 apparaît 3 fois.",
+     "• <m>9<sup>2</sup></m> : « neuf au carré » : le facteur 9 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que ne montre-t-il pas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas ne montre pas ce qui se passe quand les facteurs ne sont pas rangés par groupes. Ici, les trois 5 se suivent, puis les deux 9. Le produit <m>5 × 9 × 5 × 9 × 5</m> s’écrit aussi <m>5<sup>3</sup> × 9<sup>2</sup></m>, car la multiplication peut se faire dans un autre ordre. Le cas ne dit donc pas qu’il faut ranger d’abord. Il ne dit pas non plus ce que l’on fait quand aucun nombre ne se répète. On écrit alors chaque facteur sans exposant."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas ne dit pas la valeur de <m>5<sup>3</sup> × 9<sup>2</sup></m> : on calcule <m>5<sup>3</sup> = 125</m> et <m>9<sup>2</sup> = 81</m>, puis <m>125 × 81 = 10 125</m>. L’écriture garde deux exposants parce qu’il y a deux bases ; elle ne se réécrit pas ici avec un seul exposant."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-028, « un exposant ne porte que sur la base juste en dessous de lui » — chaque exposant de ce produit porte sur la base juste en dessous de lui, comme le dit 04-028"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 522,
+  "code": "04-029"
+ },
+ {
+  "title": "pour les exposants l’ordre compte : 2³ <m>≠</m> 3² (base et exposant n’ont pas le même rôle)",
+  "meta": "Fiche 04-030 · ch. 4 › L’exposant › 𝑝. 96",
+  "passage": "« Pour les exposants, l’ordre compte : 2³ = 8 et 3² = 9. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Au chapitre 3, <m>3 × 4</m> et <m>4 × 3</m> valent tous deux 12. Essayez la même chose avec des exposants. L’écriture <m>2<sup>3</sup></m> vaut 8. L’écriture <m>3<sup>2</sup></m> vaut 9."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>2<sup>3</sup></m> : « deux puissance trois » : le facteur 2 apparaît 3 fois.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois.",
+     "• <m>2<sup>4</sup></m> : « deux puissance quatre » : le facteur 2 apparaît 4 fois.",
+     "• <m>4<sup>2</sup></m> : « quatre au carré » : le facteur 4 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut croire qu’on échange base et exposant comme on échange deux facteurs. Après la remarque, on voit qu’ils n’ont pas le même rôle. La base est le nombre qui est multiplié. L’exposant est le nombre qui compte. Échanger 2 et 3 change donc la question posée. Dans un cas, on compte trois facteurs 2 et on obtient 8. Dans l’autre, on compte deux facteurs 3 et on obtient 9. Le résultat diffère, car les deux nombres ne jouent pas le même rôle."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Un échange peut parfois donner le même résultat. Ainsi <m>2<sup>4</sup> = 2 × 2 ×</m> <m>2 × 2 = 16</m> et <m>4<sup>2</sup> = 4 × 4 = 16</m>, mais c’est un cas rare."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-068, « commutativité de la multiplication a × <m>𝑏</m> = <m>𝑏</m> × a » — la commutativité de 03-068 vaut pour la multiplication, mais pas pour la base et l’exposant"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 524,
+  "code": "04-030"
+ },
+ {
+  "title": "Fig. 4.2 — carré d’aire 16 dont on cherche le côté",
+  "meta": "Fiche 04-031 · ch. 4 › La racine › 𝑝. 97",
+  "passage": "« Vous connaissez l’aire <m>𝐴</m> = 16 du carré vert, mais pas son côté <m>𝑐</m>. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un carré est formé de 16 carreaux. Vous ne connaissez pas la longueur de son côté. Vous comptez les carreaux d’une seule rangée du bas : il y en a 4."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝐴</m> : « A » : l’aire du carré, comptée en carreaux.",
+     "• <m>𝑐</m> : « c » : la longueur du côté du carré.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre la figure</i> <i>qu’aucune phrase ne montre ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La figure montre que le côté se lit sur une seule rangée. Le carré a <m>𝐴 = 16</m> carreaux, mais la rangée du bas en compte 4. Donc <m>𝑐 = 4</m>. On n’a pas besoin de compter les 16 carreaux pour le savoir. La figure montre aussi la vérification : quatre rangées de 4 carreaux remplissent exactement le carré. Aucune phrase ne montre ce remplissage aussi vite. On passe de l’aire au côté en comptant, puis on contrôle en reconstruisant l’aire."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La figure ne montre qu’un cas où le côté est un nombre entier de carreaux."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-005, « problème inverse : le nombre qui, multiplié par lui-même, donne 16 » — 04-005 pose le problème inverse que cette figure illustre : trouver le côté 4 du carré d’aire 16."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 525,
+  "code": "04-031"
+ },
+ {
+  "title": "symbole A (l’aire)",
+  "meta": "Fiche 04-032 · ch. 4 › La racine › 𝑝. 97",
+  "passage": "« Au centre, <m>𝐴</m> = 16 : la lettre <m>𝐴</m> désigne l’aire, et elle vaut 16 carreaux. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un premier sol compte 16 carreaux. Un second sol compte 25 carreaux. Vous voulez un seul signe pour « l’aire », afin de ne pas répéter le mot."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝐴</m> : « A » : l’aire de la figure considérée, comptée en carreaux.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, <m>𝐴</m> dit : « l’aire, en carreaux, de la figure considérée ». Pour le premier sol, <m>𝐴 = 16</m>. Pour le second, <m>𝐴 = 25</m>. Le signe garde son rôle et sa valeur change avec la figure. Dans la figure du chapitre, <m>𝐴 = 16</m> se lit : « l’aire du carré vert vaut 16 carreaux ». Le signe dit ce que l’on sait. On cherche ensuite ce que l’on ignore encore : le côté."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le signe <m>𝐴</m> ne dit pas la forme de la figure : il faut la figure pour savoir qu’elle est carrée."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-031, « Fig. 4.2 — carré d’aire 16 dont on cherche le côté » — <m>𝐴</m> est le nom donné à l’aire du carré vert dans la figure 4.2"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 526,
+  "code": "04-032"
+ },
+ {
+  "title": "racine carrée",
+  "meta": "Fiche 04-033 · ch. 4 › La racine › 𝑝. 97",
+  "passage": "« Définition. La racine carrée d’un nombre est le nombre qui, multiplié par lui-même, donne ce nombre. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un sol carré a 16 carreaux. Vous cherchez le nombre qui, multiplié par lui-même, donne 16. Vous trouvez 4, car 4 fois 4 fait 16."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La racine carrée appartient à la famille des opérations inverses. Elle défait l’élévation au carré, comme la soustraction défait l’addition. À partir de 16, elle redonne 4. À partir de 25, elle redonne 5. Elle part d’une aire et cherche un côté. L’élévation au carré fait l’inverse : elle part d’un côté et donne une aire. Les deux opérations relient donc les deux mêmes nombres, mais dans des sens opposés."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La racine carrée d’un nombre n’est pas toujours un entier : pour 10, aucun entier ne convient."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-023, « « au carré » (exposant 2 : aire d’un carré) » — la racine carrée défait ce que « au carré » de 04-023 fait : elle passe de l’aire au côté"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 527,
+  "code": "04-033"
+ },
+ {
+  "title": "signe <m>√</m>",
+  "meta": "Fiche 04-034 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« On l’écrit avec le signe <m>√</m> : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour une aire de 16, vous écrivez « le nombre qui, multiplié par lui-même, donne 16 ». Pour une aire de 25, vous écrivez la même phrase avec 25. Cette phrase est longue à répéter."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que le signe</i> <i>permet d’écrire plus vite ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Sans le signe, il faut écrire la phrase « le nombre qui, multiplié par lui-même, donne 16 ». Avec lui, on écrit <m>√16</m>. La longueur ne dépend plus de la phrase. Le signe permet aussi d’écrire l’égalité <m>√16 =</m> <m>4</m> et de la lire d’un coup. Il permet de placer cette recherche dans un calcul plus long, avec d’autres signes. Sans le signe, il faudrait insérer une phrase entière au milieu du calcul."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le signe seul ne donne pas la valeur : il faut chercher le nombre, par exemple par essais."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-033, « racine carrée » — le signe <m>√</m> écrit en un seul symbole la définition de la racine carrée de 04-033"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 528,
+  "code": "04-034"
+ },
+ {
+  "title": "<m>√</m>16 = 4 parce que 4 × 4 = 16",
+  "meta": "Fiche 04-035 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "«<m>√</m>16 = 4 parce que 4 × 4 = 16 »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour 16, vous cherchez le nombre qui, multiplié par lui-même, donne 16. Vous trouvez 4. Vous vérifiez : 4 fois 4 vaut bien 16."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui reste vrai</i> <i>quand on change les nombres ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce qui reste vrai avec d’autres nombres est la vérification. Pour <m>√25 = 5</m>, on contrôle <m>5 × 5 = 25</m>. Pour <m>√9 = 3</m>, on contrôle <m>3 × 3 = 9</m>. Dans chaque cas, la racine multipliée par elle-même redonne le nombre écrit sous le signe. Le mot « parce que » est donc toujours justifié par la même multiplication. Ce qui change, c’est le nombre cherché. Ce qui ne change pas, c’est le test à faire pour savoir s’il convient."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce test ne marche que si le nombre a une racine entière ; pour 10, aucun entier ne le passe."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-034, « signe <m>√</m>» — cette égalité se lit avec le signe <m>√</m> défini en 04-034"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 530,
+  "code": "04-035"
+ },
+ {
+  "title": "« racine » signifie « origine »",
+  "meta": "Fiche 04-036 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« Le mot « racine » signifie ici « origine » : 4 est le nombre d’où l’on part pour obtenir 16 par multiplication répétée. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous partez du nombre 4. Vous le multipliez par lui-même : vous obtenez 16. Le mot « racine » désigne le nombre de départ, 4, par rapport au résultat 16."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, le mot « racine » peut sembler choisi au hasard. Après la remarque, on voit qu’il décrit la place du nombre dans le calcul. Le nombre 4 est le nombre de départ : on part de 4 pour obtenir 16 par multiplication répétée. Le nombre 16 est le nombre d’arrivée. La racine est donc l’origine, et la puissance est ce qu’elle produit. Les deux mots nomment les deux nombres du même calcul : 4 et 16."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque explique le mot, pas la méthode pour trouver la racine."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-033, « racine carrée » — la racine carrée de 04-033 est le nombre de départ dont le mot « origine » parle"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 531,
+  "code": "04-036"
+ },
+ {
+  "title": "racine cubique",
+  "meta": "Fiche 04-037 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« De la même façon, la racine cubique d’un nombre est le nombre qui, multiplié trois fois par lui-même, donne ce nombre. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une caisse cubique contient 8 petits cubes de 1 mètre de côté. Vous cherchez le côté de la caisse. Vous essayez 2 : <m>2 × 2 × 2</m> vaut 8."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui le sépare de</i> <i>ses voisins ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La racine cubique se distingue de la racine carrée par le nombre de facteurs. La racine carrée utilise deux facteurs égaux et part d’une aire. La racine cubique utilise trois facteurs égaux et part d’un volume. Pour 8, la racine cubique est 2, car trois facteurs 2 donnent 8. La racine carrée de 8 serait un nombre qui, multiplié par lui-même, donne 8. Ce n’est pas 2, car 2 fois 2 vaut 4."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Elle se distingue aussi de la division par 3. Pour 27, la racine cubique est 3, car <m>3 × 3 × 3</m> vaut 27, alors que 27 divisé par 3 vaut 9."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-024, « « au cube » (exposant 3 : volume d’un cube) » — la racine cubique défait ce que « au cube » de 04-024 fait : elle passe du volume au côté"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 532,
+  "code": "04-037"
+ },
+ {
+  "title": "signe ∛ (petit 3 dans le creux du signe) ; ∛8 = 2",
+  "meta": "Fiche 04-038 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« On l’écrit avec un petit 3 dans le creux du signe : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous avez deux questions sur le nombre 64. Première question : quel nombre, pris comme deux facteurs égaux, donne 64 ? Seconde question : quel nombre, pris comme trois facteurs égaux, donne 64 ?"
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe.",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>À quoi sert-il ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le petit 3 sert à dire combien de facteurs égaux on cherche. Pour 64, les deux questions ont des réponses différentes. Avec deux facteurs, la réponse est 8, car 8 fois 8 vaut 64. Avec trois facteurs, la réponse est 4, car 4 fois 4 fois 4 vaut 64. Sans petit nombre dans le creux du signe, on lit deux facteurs. Avec le 3, on lit trois facteurs. On peut donc écrire ∛<m>64 = 4</m> sans le confondre avec <m>√64 = 8</m>."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le petit nombre ne dit rien de la valeur de la racine : il dit seulement le nombre de facteurs."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-034, « signe <m>√</m>» — le signe ∛ ajoute au signe <m>√</m> de 04-034 un petit nombre qui précise le nombre de facteurs"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 533,
+  "code": "04-038"
+ },
+ {
+  "title": "radical (le signe qui dit « cherche la racine »)",
+  "meta": "Fiche 04-039 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« → le radical : le signe qui dit « cherche la racine ». »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous lisez les lignes <m>√16</m> et <m>√25</m>. Dans les deux, le même signe est placé devant le nombre. Ce signe demande de chercher une racine."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi a-t-on eu besoin de</i> <i>ce mot ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "On avait besoin d’un mot pour le signe lui-même, séparé du nombre qu’il précède. Dans <m>√16</m>, deux choses se distinguent : le signe et le 16. Le signe dit l’action à faire : chercher la racine. Le 16 est le nombre sur lequel on agit. Sans mot pour le signe, on ne pourrait pas dire ce qui est commun à <m>√16</m> et à ∛<m>8</m>. Le mot « radical » nomme cette partie commune : le signe qui demande de chercher une racine."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le radical ne donne pas la racine : il demande seulement de la chercher."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-034, « signe <m>√</m>» — le signe <m>√</m> de 04-034 est un radical, comme le signe ∛"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 534,
+  "code": "04-039"
+ },
+ {
+  "title": "indice d’un radical (nombre de facteurs identiques)",
+  "meta": "Fiche 04-040 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« → l’indice : le nombre de facteurs identiques. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour 8, vous cherchez trois facteurs égaux : c’est ∛<m>8</m>. Pour 16, vous cherchez deux facteurs égaux : c’est <m>√16</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• ∛ : « racine cubique de » : l’indice est 3, on cherche trois facteurs égaux.",
+     "• <m>√</m> : « racine carrée de » : l’indice est 2, on cherche deux facteurs égaux.",
+     "• <m>2<sup>3</sup></m> : « deux puissance trois » : le facteur 2 apparaît 3 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’indice appartient à la famille des nombres qui comptent, comme l’exposant. L’exposant compte les facteurs d’une puissance. L’indice compte les facteurs égaux dont on cherche la racine. Dans ∛<m>8</m>, l’indice est 3 : on cherche trois facteurs égaux. Dans <m>√16</m>, l’indice est 2, mais on ne l’écrit pas. L’indice relie ainsi un radical à une puissance : <m>2<sup>3</sup></m> a l’exposant 3 et ∛<m>8</m> a l’indice 3."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "L’indice n’est pas la racine : il compte les facteurs, il ne dit pas leur valeur."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-037, « racine cubique » — l’indice 3 est ce qui distingue la racine cubique de 04-037 de la racine carrée"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 535,
+  "code": "04-040"
+ },
+ {
+  "title": "radicande (le nombre sous le radical)",
+  "meta": "Fiche 04-041 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« 8 → le radicande : le nombre de départ, sous le radical. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Dans la ligne <m>√16</m>, le signe ne donne aucun nombre par lui-même. Il lui faut le nombre 16 écrit après lui. Dans la ligne ∛<m>8</m>, c’est le nombre 8."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le radicande appartient à la famille des nombres donnés au début d’un problème, comme le dividende pour la division. Le dividende est le nombre que l’on partage. Le radicande est le nombre dont on cherche la racine. Dans <m>√16</m>, le radicande est 16. Dans ∛<m>8</m>, il est 8. C’est le nombre que l’on veut obtenir en multipliant des facteurs égaux. C’est une aire dans le premier cas et un volume dans le second."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le radicande n’est pas la racine : dans <m>√16</m>, le nombre 16 est écrit et le nombre 4 est cherché."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-039, « radical (le signe qui dit « cherche la racine ») » — le radicande est le nombre sur lequel agit le radical défini en 04-039"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 536,
+  "code": "04-041"
+ },
+ {
+  "title": "racine (le facteur trouvé)",
+  "meta": "Fiche 04-042 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« 2 → la racine : le facteur trouvé. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous cherchez la racine carrée de 16 et vous écrivez <m>√16</m>. Par essais, vous trouvez 4, donc vous écrivez <m>√16 = 4</m>. Dans cette égalité, le nombre 4 est celui que vous avez trouvé."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite.",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce qui le sépare de</i> <i>ses voisins ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La racine se distingue du radicande par sa place dans l’égalité. Le radicande, 16, est le nombre donné dans la question. La racine, 4, est le nombre trouvé. On multiplie la racine par elle-même pour retrouver le radicande, et non l’inverse. Elle se distingue aussi du radical, qui est un signe et non un nombre. Dans ∛<m>8 = 2</m>, la racine est 2 : trois facteurs 2 redonnent le radicande 8."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le mot « racine » désigne aussi l’opération de recherche ; ici, il désigne le nombre trouvé."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-041, « radicande (le nombre sous le radical) » — la racine est le nombre trouvé à partir du radicande défini en 04-041"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 538,
+  "code": "04-042"
+ },
+ {
+  "title": "l’indice 2 de la racine carrée ne s’écrit pas",
+  "meta": "Fiche 04-043 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« Pour la racine carrée, l’indice est 2, mais on ne l’écrit pas : <m>√</m>16 veut dire ²<m>√</m>16. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Dans <m>√16</m>, aucun petit nombre n’est écrit dans le creux du signe. Dans ∛<m>8</m>, un petit 3 y est écrit."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut croire que <m>√16</m> n’a pas d’indice. Après la remarque, on voit qu’il a un indice, qui vaut 2, mais qu’on ne l’écrit pas. Le signe <m>√</m> veut dire la même chose que le signe avec un petit 2 dans le creux. Les deux cherchent un nombre pris comme deux facteurs égaux. On n’écrit pas ce 2, parce que la racine carrée est la plus fréquente. Un lecteur qui ne voit aucun indice doit donc lire 2."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne vaut que pour la racine carrée : un indice 3 ou plus s’écrit toujours."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-040, « indice d’un radical (nombre de facteurs identiques) » — 04-040 définit l’indice comme le nombre de facteurs identiques. Ici, l’indice vaut 2 et ne s’écrit pas."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 539,
+  "code": "04-043"
+ },
+ {
+  "title": "convention (accord entre ceux qui écrivent des mathématiques)",
+  "meta": "Fiche 04-044 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« C’est une convention, c’est-à-dire un accord entre tous ceux qui écrivent des mathématiques, pour alléger l’écriture la plus fréquente. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour écrire une racine carrée, il faudrait mettre un petit 2 chaque fois. Ceux qui écrivent des mathématiques se sont accordés pour ne pas l’écrire. Un lecteur qui voit <m>√16</m> lit donc « racine carrée de 16 »."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi a-t-on eu besoin de</i> <i>ce mot ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "On avait besoin du mot « convention » pour distinguer deux sortes de règles. Certaines règles se démontrent : on peut prouver que <m>4 × 4 = 16</m>. D’autres ne se démontrent pas, parce qu’elles sont un accord. L’absence du 2 dans <m>√16</m> est un accord de ce second type. On ne peut pas la prouver, on peut seulement la connaître. Le mot dit que cette écriture n’est pas une vérité. C’est un choix partagé pour écrire plus court."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Une convention n’est pas libre pour qui l’utilise : si on ne la respecte pas, les autres ne comprennent pas."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-043, « l’indice 2 de la racine carrée ne s’écrit pas » — l’indice 2 que l’on n’écrit pas est la convention choisie comme exemple dans le chapitre"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 540,
+  "code": "04-044"
+ },
+ {
+  "title": "architecture de ∛8 : radicande, indice, chercher <m>𝑟</m> tel que <m>𝑟</m> × <m>𝑟</m> × <m>𝑟</m> = 8",
+  "meta": "Fiche 04-045 · ch. 4 › La racine › 𝑝. 98",
+  "passage": "« Architecture de la formule. Comment lire ∛8 ? Dans cet ordre : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez calculer ∛<m>9</m>. Vous essayez 2 : <m>2 × 2 × 2</m> vaut 8, c’est trop petit. Vous essayez 3 : <m>3 × 3 × 3</m> vaut 27, c’est trop grand."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• ∛ : « racine cubique de » : le nombre qui, pris comme trois facteurs égaux, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Quand échoue-t-elle ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La méthode échoue quand aucun entier ne donne exactement le radicande. Pour 9, on essaie 2, qui donne 8, puis 3, qui donne 27. Le résultat passe de 8 à 27 sans s’arrêter sur 9. La méthode ne trouve donc rien. Elle n’échoue pas par une erreur de calcul : il n’existe pas d’entier qui convienne. Pour 8 et pour 27, elle réussit, car 2 et 3 donnent exactement ces nombres."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "L’échec ne veut pas dire que la racine n’existe pas : elle existe, mais ce n’est pas un entier."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-037, « racine cubique » — 04-037 définit la racine cubique, que cette méthode cherche en essayant des nombres entiers."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 542,
+  "code": "04-045"
+ },
+ {
+  "title": "la racine est l’opération inverse de la puissance",
+  "meta": "Fiche 04-046 · ch. 4 › La racine › 𝑝. 99",
+  "passage": "« La racine est l’opération inverse de la puissance, comme la soustraction est l’inverse de l’addition (chapitre 2) et la division l’inverse de la multiplication (chapitre 3). »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous partez de 4. Vous le mettez au carré : vous obtenez 16. Vous prenez la racine carrée de 16 : vous revenez à 4. Avec 5, vous obtenez 25, puis vous revenez à 5."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Les deux opérations se défont parce qu’elles utilisent la même multiplication, lue dans deux sens. Le carré de 4 est le résultat de <m>4 × 4</m>. La racine carrée de 16 est le nombre qui, multiplié par lui-même, donne 16. Ce nombre est 4, puisque <m>4 × 4 = 16</m>. Cela ne peut pas être autrement : la définition de la racine demande exactement le nombre dont le carré est 16. Aller puis revenir ramène donc au nombre de départ."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cela ne dit pas que la racine est un nombre entier pour tout nombre. Pour 10, elle existe (un peu plus de 3) mais n’est pas entière : voir le chapitre 22."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 02-048, « opération inverse (défait ce que l’addition a fait) » — 02-048 définit l’opération inverse : la soustraction défait l’addition, comme la racine défait la puissance"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 543,
+  "code": "04-046"
+ },
+ {
+  "title": "schéma 4 → 16 → 4 (« au carré » puis « racine carrée »)",
+  "meta": "Fiche 04-047 · ch. 4 › La racine › 𝑝. 99",
+  "passage": "« Schéma du livre : 4 —(au carré)→ 16 —(racine carrée)→ 4 »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous partez de 4. Vous le mettez au carré : 16. Puis vous prenez la racine carrée de 16 : vous retombez sur 4."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre que les deux opérations se compensent. Avec 5, on obtient 25 puis 5. Avec 6, on obtient 36 puis 6. Dans chaque cas, on revient au nombre de départ. Une flèche va du côté vers l’aire. L’autre va de l’aire vers le côté. Le livre dit qu’une opération inverse défait ce que l’autre a fait. Avec 4, 5 et 6, la seconde flèche défait ce que la première a fait."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas ne montre pas ce qui arrive en partant d’un nombre sans racine entière, comme 10."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-046, « la racine est l’opération inverse de la puissance » — ce schéma est l’exemple chiffré de l’énoncé : la racine est l’opération inverse de la puissance"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 544,
+  "code": "04-047"
+ },
+ {
+  "title": "symboles de groupement",
+  "meta": "Fiche 04-048 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Les symboles de groupement entourent une partie d’un calcul pour indiquer qu’elle doit être traitée comme un seul nombre, avant le reste. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez dire : « d’abord 2 plus 3, puis multiplier le résultat par 4 ». Les mots suffisent à le dire. Il vous faut un moyen aussi clair pour l’écrire."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Les symboles de groupement forment la famille des signes qui entourent une partie d’un calcul. Ils disent que cette partie se calcule d’abord, comme un seul nombre. Dans <m>(2 + 3) × 4</m>, la partie entourée vaut 5 et le calcul donne 20. Sans eux, la ligne <m>2 + 3 × 4</m> vaut 14. La famille compte quatre signes : les parenthèses, les crochets, les accolades et la barre de fraction."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ils disent quelle partie calculer d’abord, mais pas quelles opérations suivent ensuite."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-006, « problème : 2 + 3 × 4 a deux lectures ; une écriture doit avoir une seule valeur » — les symboles de groupement donnent une réponse écrite aux deux lectures de <m>2 + 3 × 4</m> posées en 04-006"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 545,
+  "code": "04-048"
+ },
+ {
+  "title": "( ) parenthèses (symbole de groupement)",
+  "meta": "Fiche 04-049 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Les trois premiers ont exactement le même sens. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez écrire : 2 plus 3, puis le résultat fois 4. Vous écrivez d’abord <m>2 + 3</m>. Vous ajoutez ensuite le signe <m>×</m> et le nombre 4 : la ligne <m>2 + 3 × 4</m> se lit autrement. Dans cette ligne, le 3 est multiplié par 4 avant l’addition. Vous entourez 2 plus 3 pour qu’il se calcule d’abord : <m>(2 + 3) × 4</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>( )</m> : « parenthèse ouverte » et « parenthèse fermée » : ce qui est entre les deux se calcule d’abord.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, <m>(2 + 3)</m> dit : « d’abord 2 plus 3, comme un seul nombre ». Tout ce qui est entre la parenthèse ouverte et la parenthèse fermée se calcule en premier. Ici, <m>2 + 3</m> vaut 5. Le calcul devient <m>5 × 4</m>, qui vaut 20. Si l’on retire les parenthèses, la ligne <m>2 + 3 × 4</m> vaut 14. Les parenthèses changent donc le résultat. Sans elles, le lecteur ne saurait pas s’il faut d’abord additionner ou d’abord multiplier."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Les parenthèses ne disent pas quelle opération faire à l’intérieur : il faut ensuite suivre la règle d’ordre."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-048, « symboles de groupement » — les parenthèses sont le premier des quatre symboles de groupement définis en 04-048"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 546,
+  "code": "04-049"
+ },
+ {
+  "title": "[ ] crochets",
+  "meta": "Fiche 04-050 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Il y en a quatre : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Deux groupements sont emboîtés l’un dans l’autre. Écrits tous deux avec des parenthèses, ils se ressemblent. L’œil doit alors compter les fermetures pour savoir lesquelles vont ensemble."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>[ ]</m> : « crochet ouvert » et « crochet fermé » : ce qui est entre les deux se calcule d’abord.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>−</m> : « moins » : retire un nombre d’un autre.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que le signe</i> <i>permet d’écrire plus vite ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le crochet permet de lire plus vite la structure d’un calcul. Dans <m>10 +</m> <m>[30 − (2 × 9)]</m>, le crochet entoure la partie extérieure et la parenthèse entoure la partie intérieure. L’œil voit deux niveaux sans compter. Sans crochet, on écrirait <m>10 + (30 −</m> <m>(2 × 9))</m> et il faudrait compter les fermetures. On calcule d’abord <m>2 × 9</m>, qui vaut 18. Puis <m>30 − 18</m> vaut 12. Enfin <m>10 + 12</m> vaut 22. Le crochet n’a donc servi qu’à montrer les niveaux, pas à changer le calcul."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Les crochets n’ont pas un autre sens que les parenthèses : ils ne changent pas le résultat."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-049, « ( ) parenthèses (symbole de groupement) » — les crochets ont le même sens que les parenthèses de 04-049 et servent à distinguer un niveau"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 548,
+  "code": "04-050"
+ },
+ {
+  "title": "{ } accolades",
+  "meta": "Fiche 04-051 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Il y en a quatre : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Trois groupements sont emboîtés. Vous avez déjà utilisé des parenthèses pour le plus intérieur et des crochets pour celui du milieu. Il reste un niveau à distinguer, le plus extérieur."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>{ }</m> : « accolade ouverte » et « accolade fermée » : ce qui est entre les deux se calcule d’abord.",
+     "• <m>[ ]</m> : « crochets » : même sens que les parenthèses.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>−</m> : « moins » : retire un nombre d’un autre.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que dit ce signe, lu en</i> <i>français ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Lu en français, l’accolade ouverte et l’accolade fermée disent : « ce qui est entre les deux se calcule d’abord ». Elles ont le même sens que les parenthèses. Prenons <m>{2 × [3 + (4 − 1)]}</m>. On calcule d’abord <m>4 − 1</m>, qui vaut 3. Puis <m>3 + 3</m> vaut 6. Enfin <m>2 × 6</m> vaut 12. L’accolade marque le niveau le plus extérieur, et elle ne change pas ce calcul. Sans elle, le résultat serait le même, mais le niveau ne se verrait pas."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Les accolades servent seulement à distinguer un troisième niveau : elles ne calculent rien de plus."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-050, « [ ] crochets » — les accolades ajoutent un niveau aux crochets de 04-050, avec le même sens"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 549,
+  "code": "04-051"
+ },
+ {
+  "title": "barre de fraction (symbole de groupement)",
+  "meta": "Fiche 04-052 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Il y en a quatre : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez partager la somme de 6 et 4 en 2 parts. Vous pouvez mettre des parenthèses autour de 6 plus 4, puis écrire un signe de division, puis 2. Une barre horizontale peut faire le même travail avec moins de signes."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>(6 + 4) / 2</m> : « 6 plus 4, le tout divisé par 2 » : avec la barre horizontale, on écrit <m>6 + 4</m> au-dessus et 2 en dessous.",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que le signe</i> <i>permet d’écrire plus vite ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Sans la barre, on écrit <m>(6 +</m> <m>4) ÷ 2</m>. Il faut des parenthèses et un signe de division. Avec la barre, on écrit <m>6 + 4</m> au-dessus et 2 en dessous. La barre sépare les deux parties et les groupe en même temps. Elle remplace donc trois signes : les deux parenthèses et le signe de division. Dans les deux écritures, on calcule <m>6 + 4</m>, qui vaut 10. Puis on divise 10 par 2, ce qui donne 5."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La barre groupe le haut et le bas, mais elle ne dit pas que la division tombe juste."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-046, « écriture <m>𝑛</m>/<m>𝑑</m> avec barre de fraction » — 03-046 donne la barre de fraction comme écriture de la division, que ce chapitre lit aussi comme un groupement"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 550,
+  "code": "04-052"
+ },
+ {
+  "title": "les trois premiers symboles ont le même sens ; crochets et accolades servent quand des parenthèses sont déjà emboîtées",
+  "meta": "Fiche 04-053 · ch. 4 › Les symboles de groupement › 𝑝. 99",
+  "passage": "« Les trois premiers ont exactement le même sens. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez écrire : 2 plus 3, puis le résultat fois 4. Vous écrivez d’abord <m>2 + 3</m>. Vous multipliez ce résultat par 4, avec le signe <m>×</m>. Vous groupez 2 plus 3 avec des parenthèses : <m>(2 + 3) × 4</m>. Un camarade groupe avec des crochets : <m>[2 + 3] × 4</m>. Vous trouvez tous deux 20."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>[ ]</m> : « crochets » : même sens que les parenthèses."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut croire que chaque signe de groupement commande un calcul différent. Après la remarque, on voit que parenthèses, crochets et accolades disent la même chose. Seul leur aspect change, et cet aspect aide l’œil quand des groupements sont emboîtés. Dans <m>(2 +</m> <m>3) × 4</m> et dans <m>[2 + 3] × 4</m>, le résultat est le même : 20. On ne change donc pas le sens en changeant de signe. Il faut seulement que le signe ouvrant et le signe fermant se correspondent."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne vaut pas pour la barre de fraction, qui groupe aussi mais s’écrit autrement."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-050, « [ ] crochets » — 04-050 donne l’usage des crochets, qui ont le même sens que les parenthèses"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 551,
+  "code": "04-053"
+ },
+ {
+  "title": "groupements emboîtés : commencer par le plus intérieur",
+  "meta": "Fiche 04-054 · ch. 4 › Les symboles de groupement › 𝑝. 100",
+  "passage": "« Quand des groupements sont emboîtés, on commence par le plus intérieur : 2 × 9 = 18, puis 30 <m>−</m> 18 = 12, puis 10 + 12 = 22. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez calculer 10, plus ce qui reste quand on retire de 30 le produit de 2 par 9. Il y a deux groupements emboîtés. Vous devez choisir par lequel commencer."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>−</m> : « moins » : retire un nombre d’un autre.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>[ ]</m> : « crochets » : même sens que les parenthèses.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Quand s’arrête-t-elle ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La méthode s’arrête quand il ne reste plus aucun groupement. Dans <m>10 +</m> <m>[30 − (2 × 9)]</m>, on commence par la parenthèse. Le produit <m>2 × 9</m> vaut 18. La ligne devient <m>10 +</m> <m>[30 − 18]</m>. On calcule le crochet : <m>30 − 18</m> vaut 12. La ligne devient <m>10 + 12</m>. Chaque étape a retiré un niveau de groupement. Aucun signe de groupement ne reste, donc on fait la dernière opération, qui donne 22."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La méthode ne dit pas dans quel ordre calculer à l’intérieur d’un même groupement."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-053, « les trois premiers symboles ont le même sens ; crochets et accolades servent quand des parenthèses sont déjà emboîtées » — les crochets et les parenthèses de 04-053 servent justement à repérer les niveaux de ces groupements emboîtés"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 553,
+  "code": "04-054"
+ },
+ {
+  "title": "la barre de fraction est un groupement caché : (6 + 4)/2 = (6 + 4) ÷ 2",
+  "meta": "Fiche 04-055 · ch. 4 › Les symboles de groupement › 𝑝. 100",
+  "passage": "« La barre de fraction est un groupement caché. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "On vous donne une fraction : 6 plus 4 au-dessus de la barre, 2 en dessous. Vous calculez 6 plus 4, soit 10, puis 10 divisé par 2, soit 5. Un camarade divise d’abord 4 par 2, soit 2, puis ajoute 6 : il trouve 8."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que se passe-t-il si on retire</i> <i>une hypothèse ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Retirons l’hypothèse que la barre groupe le haut. La ligne se lit alors <m>6 +</m> <m>(4 ÷ 2)</m>, car la division passe avant l’addition. Elle vaut 8. Or la fraction écrite avec la barre dit autre chose : la somme entière, divisée par 2. Le contre-exemple est cette fraction : sans groupement, on trouve 8 ; avec groupement, on trouve <m>(6 + 4) ÷ 2</m>, soit 5. La barre ne peut donc pas être un simple trait de séparation. Elle doit grouper le haut en un seul nombre."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La barre ne remplace pas les parenthèses partout : elle ne groupe que ce qui est au-dessus et en dessous d’elle."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-052, « barre de fraction (symbole de groupement) » — 04- 052 présente la barre comme un des quatre symboles de groupement, dont celle-ci est le cas caché"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 554,
+  "code": "04-055"
+ },
+ {
+  "title": "Fig. 4.3 — 2 + 3 × 4 = 14 contre (2 + 3) × 4 = 20",
+  "meta": "Fiche 04-056 · ch. 4 › L’ordre des opérations › 𝑝. 101",
+  "passage": "« Regardez la troisième figure. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous dessinez 2 carreaux bleus seuls, puis un rectangle orange de 3 colonnes et 4 rangées. Vous dessinez ensuite 2 colonnes bleues et 3 colonnes orange, toutes de 4 carreaux de haut."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre la figure</i> <i>qu’aucune phrase ne montre ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "La figure montre que les deux lectures décrivent deux dessins différents. Pour <m>2 + 3 × 4</m>, 2 carreaux restent seuls et un rectangle de 12 carreaux s’ajoute : 14 carreaux. Pour <m>(2 + 3) × 4</m>, tous les carreaux forment un seul rectangle de 5 colonnes de hauteur 4 : 20 carreaux. Aucune phrase ne montre aussi vite que les parenthèses rangent 2 et 3 dans la même largeur. On voit aussi que, dans la lecture du haut, les 2 carreaux seuls ne sont multipliés par rien."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La figure compare deux lectures de ces seuls nombres ; elle ne prouve pas la règle générale."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-006, « problème : 2 + 3 × 4 a deux lectures ; une écriture doit avoir une seule valeur » — cette figure donne en dessin les deux lectures de la ligne posée comme problème en 04-006"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 556,
+  "code": "04-056"
+ },
+ {
+  "title": "pourquoi la multiplication passe avant l’addition : déplier le raccourci 3 × 4 = 4 + 4 + 4",
+  "meta": "Fiche 04-057 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« Pourquoi la lecture du haut est-elle la bonne quand il n’y a pas de parenthèses ? Parce que la multiplication est une addition abrégée. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous achetez 2 pains et 3 lots de 4 œufs. Vous comptez les œufs un lot après l’autre : 4, puis 4, puis 4. Les 2 pains s’ajoutent au total."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>D’où part la preuve, où veut-</i><i>elle arriver, et quelle étape porte tout le</i> <i>poids ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’argument part du sens de la multiplication : <m>3 × 4</m> est un raccourci pour <m>4 + 4 + 4</m>. Il veut arriver à une seule valeur pour <m>2 + 3 × 4</m>. L’étape décisive est de remplacer <m>3 × 4</m> par <m>4 + 4 + 4</m>. Sans ce remplacement, la ligne garde deux lectures, 14 et 20. La ligne devient <m>2 + 4 + 4 + 4</m>, qui vaut 14. Il ne reste alors qu’une opération, l’addition. Le résultat n’est pas arbitraire. Le raccourci <m>3 × 4</m> se lit comme « trois fois 4 » pris ensemble. La convention calcule cette partie avant l’addition."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cet argument motive la convention de priorité sans la démontrer : pour obtenir 20, on écrit <m>(2 + 3) × 4</m> avec des parenthèses. Il ne dit rien de l’ordre avec les exposants."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-013, « multiplication (somme de a termes égaux à <m>𝑏</m>) » — la multiplication de 03-013 est une somme de termes égaux, ce qui permet de la déplier"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 557,
+  "code": "04-057"
+ },
+ {
+  "title": "pourquoi l’exposant passe avant la multiplication : 2 × 3² = 18 et non 36",
+  "meta": "Fiche 04-058 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« Le même raisonnement place l’exposant avant la multiplication. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous écrivez le produit <m>2 × 3</m>. Puis vous ajoutez un petit 2 collé au 3 : <m>2 × 3<sup>2</sup></m>. Vous pouvez calculer de deux façons. Soit le carré de 3 d’abord, soit le produit de 2 par 3 d’abord."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>D’où part la preuve, où veut-</i><i>elle arriver, et quelle étape porte tout le</i> <i>poids ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’argument part du sens de l’exposant : <m>3<sup>2</sup></m> est un raccourci pour <m>3 × 3</m>. Il veut arriver à une seule valeur pour <m>2 × 3<sup>2</sup></m>. L’étape décisive est de remplacer <m>3<sup>2</sup></m> par <m>3 ×</m> <m>3</m>. Sans elle, on ne voit pas sur quel nombre porte le carré. La ligne devient <m>2 × 3 × 3</m>, qui vaut 18. Dans l’autre ordre, on trouve <m>2 × 3 =</m> <m>6</m>, puis le carré de 6, qui vaut 36. Mais le carré porte alors sur un nombre qui n’était pas sous l’exposant. Le calcul qui respecte l’exposant est le premier : 18."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cet argument est fait sur un seul cas chiffré, avec l’exposant 2."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-057, « pourquoi la multiplication passe avant l’addition : déplier le raccourci 3 × 4 = 4 + 4 + 4 » — 04-057 fait le même raisonnement pour la multiplication et l’addition : on déplie le raccourci"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 558,
+  "code": "04-058"
+ },
+ {
+  "title": "règle d’ordre, étape 1 : d’abord l’intérieur des symboles de groupement, en commençant par le plus intérieur",
+  "meta": "Fiche 04-059 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« 1. D’abord l’intérieur des symboles de groupement, en commençant par le plus intérieur. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez calculer : 2 plus 3, le tout multiplié par 4. Vous écrivez des parenthèses autour de 2 plus 3. Un camarade ignore les parenthèses et multiplie d’abord 3 par 4. Il trouve 12, puis 14."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que se passe-t-il si on retire</i> <i>une hypothèse ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Si on retire l’étape 1, la parenthèse n’a plus de rôle. Prenons <m>(2 + 3) ×</m> <m>4</m>. Sans l’étape 1, la multiplication <m>3 × 4</m> passe avant l’addition. On trouve <m>2 + 12 = 14</m>. Le calcul voulu est pourtant <m>5 × 4 = 20</m>. Le contre-exemple est cette ligne : avec la règle seule, 14 ; avec l’étape 1, 20. L’étape 1 est la seule à donner à celui qui écrit le moyen de forcer un autre ordre."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "L’étape 1 ne dit rien de l’ordre à l’intérieur d’un groupement : les étapes 2 à 4 s’y appliquent aussi."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-054, « groupements emboîtés : commencer par le plus intérieur » — 04-054 dit de commencer par le groupement le plus intérieur, ce que reprend l’étape 1."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 559,
+  "code": "04-059"
+ },
+ {
+  "title": "règle d’ordre, étape 2 : ensuite les exposants et racines",
+  "meta": "Fiche 04-060 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« 2. Ensuite les exposants et racines. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous devez calculer 2 fois le carré de 3. Vous devez aussi calculer 10 plus la racine carrée de 16. Dans les deux cas, il y a un exposant ou une racine, et une autre opération."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>À quoi sert-il ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’étape 2 sert à calculer l’exposant ou la racine avant les autres opérations. L’exposant est un raccourci : <m>3<sup>2</sup></m> abrège <m>3 × 3</m>. Dans <m>2 × 3<sup>2</sup></m>, on calcule <m>3<sup>2</sup></m> avant de multiplier, ce qui donne <m>2 × 9 = 18</m>. La racine n’abrège pas une multiplication. Dans <m>10 + √16</m>, le signe <m>√</m> désigne un seul nombre, 4, qui multiplié par lui-même donne 16. On remplace <m>√16</m> par 4 avant d’additionner : <m>10 +</m> <m>4 = 14</m>. Additionner 10 et 16 d’abord serait lire le calcul autrement."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "L’étape 2 ne dit pas lequel passe en premier quand un exposant et une racine se suivent."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-058, « pourquoi l’exposant passe avant la multiplication : 2 × 3² = 18 et non 36 » — 04-058 donne la raison de cette étape pour l’exposant : on déplie le raccourci avant de multiplier"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 561,
+  "code": "04-060"
+ },
+ {
+  "title": "règle d’ordre, étape 3 : ensuite les multiplications et divisions, de gauche à droite",
+  "meta": "Fiche 04-061 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« 3. Ensuite les multiplications et divisions, de gauche à droite. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous devez calculer 24 divisé par 4, puis multiplié par 2. De gauche à droite, 24 divisé par 4 donne 6, puis 6 fois 2 donne 12. Un camarade multiplie d’abord 4 par 2, soit 8, puis divise 24 par 8 : il trouve 3."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le sens de gauche à droite est imposé. La ligne <m>24 ÷ 4 × 2</m> se lit dans l’ordre des signes. Le premier signe dit de diviser 24 par 4. Le second signe porte sur le résultat, 6, et le multiplie par 2. Le camarade a lu le second signe comme s’il portait sur le 4 seul. Il a divisé par 8. Pour la division, cet ordre change le résultat : 12 d’un côté, 3 de l’autre. Multiplications et divisions ont le même niveau et se font donc dans l’ordre d’écriture."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette règle ne confond pas les deux opérations : elles ont le même niveau, mais des effets opposés."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-044, « la division est une multiplication lue à l’envers » — 03- 044 dit que la division est une multiplication lue à l’envers, ce qui explique leur niveau commun"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 562,
+  "code": "04-061"
+ },
+ {
+  "title": "règle d’ordre, étape 4 : enfin les additions et soustractions, de gauche à droite",
+  "meta": "Fiche 04-062 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« 4. Enfin les additions et soustractions, de gauche à droite. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous calculez 10 moins 4, puis plus 3. De gauche à droite, 10 moins 4 donne 6, puis 6 plus 3 donne 9. Un camarade ajoute d’abord 4 et 3, soit 7, puis retire 7 de 10 : il trouve 3."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>−</m> : « moins » : retire un nombre d’un autre.",
+     "• <m>+</m> : « plus » : ajoute deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que se passe-t-il si on retire</i> <i>une hypothèse ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Si on retire la consigne « de gauche à droite », l’étape 4 ne suffit plus à donner une valeur unique. Prenons <m>10 − 4 + 3</m>. De gauche à droite, <m>10 − 4</m> vaut 6, puis <m>6 + 3</m> vaut 9. En commençant par l’addition, <m>4 + 3</m> vaut 7, puis <m>10 − 7</m> vaut 3. Cette ligne est un contre-exemple, c’est-à-dire un cas précis qui montre qu’une affirmation est fausse. Ici, deux ordres donnent deux résultats, 9 et 3. Deux additions seules n’auraient pas ce défaut, mais la soustraction rend l’ordre nécessaire."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette étape ne vaut que pour additions et soustractions seules : les autres opérations passent avant."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 02-082, « question : la soustraction est-elle associative ? (10 <m>−</m> 5 <m>−</m> 2) » — 02-082 pose la question de l’associativité de la soustraction : regrouper autrement, comme dans <m>10 − 5 − 2</m>, change-t-il le résultat ? La réponse oblige à fixer l’ordre de lecture de gauche à droite."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 563,
+  "code": "04-062"
+ },
+ {
+  "title": "déplier dans l’ordre inverse de la compression (exposant, multiplication, addition)",
+  "meta": "Fiche 04-063 · ch. 4 › L’ordre des opérations › 𝑝. 102",
+  "passage": "« … l’exposant abrège une multiplication, qui abrège une addition. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous avez le produit <m>3 × 4</m>. Vous ajoutez le nombre 2 : <m>2 + 3 × 4</m>. Vous mettez enfin le 4 au carré : <m>2 + 3 × 4<sup>2</sup></m>. Dans cette ligne, <m>4<sup>2</sup></m> abrège <m>4 × 4</m>, et <m>3 × 4</m> abrège <m>4 + 4 + 4</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>4<sup>2</sup></m> : « quatre au carré » : le facteur 4 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, l’ordre des étapes 2, 3 et 4 paraît une liste à apprendre par cœur. Après la remarque, on voit qu’il suit l’abréviation : on va de l’écriture la plus abrégée à la moins abrégée. Déplier, c’est remplacer le raccourci par ce qu’il abrège. Pour calculer <m>2 + 3 × 4<sup>2</sup></m>, on déplie d’abord l’exposant : <m>4<sup>2</sup></m> devient <m>4 × 4 = 16</m>. On déplie ensuite la multiplication : <m>3 × 16</m> devient <m>16 + 16 + 16 = 48</m>. On additionne en dernier : <m>2 + 48</m> vaut 50. L’ordre est donc cohérent avec le sens des signes : la convention calcule d’abord l’écriture la plus abrégée."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne couvre pas l’étape 1 : les parenthèses ne sont pas un raccourci."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-057, « pourquoi la multiplication passe avant l’addition : déplier le raccourci 3 × 4 = 4 + 4 + 4 » — 04-057 donne la raison pour une paire d’opérations, et cette remarque l’étend aux trois niveaux"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 565,
+  "code": "04-063"
+ },
+ {
+  "title": "les parenthèses sont un ordre explicite donné par celui qui écrit",
+  "meta": "Fiche 04-064 · ch. 4 › L’ordre des opérations › 𝑝. 103",
+  "passage": "« L’étape 1 est à part : les parenthèses ne sont pas un raccourci, elles sont un ordre explicite donné par celui qui écrit. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous écrivez le produit <m>3 × 4</m>. Vous ajoutez 2 : <m>2 + 3 × 4</m>. La règle donne 14. Si vous voulez 20, vous écrivez <m>(2 + 3) × 4</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on peut croire que les parenthèses sont un raccourci de plus, comme l’exposant. Après la remarque, on voit qu’elles sont d’une autre nature. L’exposant abrège un calcul que l’on peut déplier. Les parenthèses n’abrègent rien. Elles donnent un ordre choisi par celui qui écrit. Dans <m>(2 + 3) × 4</m>, ce choix change le résultat de 14 à 20. La règle d’ordre ne peut pas deviner ce choix. L’écrivain doit donc le marquer."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Des parenthèses inutiles ne changent rien : <m>(3 × 4)</m> vaut 12, comme <m>3 × 4</m>."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-059, « règle d’ordre, étape 1 : d’abord l’intérieur des symboles de groupement, en commençant par le plus intérieur » — 04-059 est l’étape 1 de la règle, qui applique cet ordre explicite avant tout le reste"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 566,
+  "code": "04-064"
+ },
+ {
+  "title": "« de gauche à droite » pour soustractions et divisions non commutatives : 10 <m>−</m> 4 <m>−</m> 3 = 3",
+  "meta": "Fiche 04-065 · ch. 4 › L’ordre des opérations › 𝑝. 103",
+  "passage": "« « De gauche à droite » compte pour les soustractions et les divisions, … »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous avez 10 euros. Vous dépensez 4 euros, puis 3 euros. Il vous reste 3 euros. Un camarade calcule d’abord la différence entre 4 et 3, soit 1, puis retire 1 de 10 : il trouve 9."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>−</m> : « moins » : retire un nombre d’un autre.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, « de gauche à droite » paraît un détail de présentation. Après la remarque, on voit qu’il fixe le sens. Dans <m>10 − 4 − 3</m>, chaque soustraction retire un nombre du reste précédent. On fait donc <m>10 − 4</m> d’abord, ce qui donne 6, puis <m>6 − 3</m>, ce qui donne 3. Le camarade a calculé <m>10 − (4 − 3)</m>, soit 9. Pour la soustraction, regrouper autrement change le résultat. Pour l’addition, <m>(10 + 4) + 3</m> et <m>10 + (4 + 3)</m> valent tous deux 17. De plus, <m>4 − 3</m> vaut 1. En revanche, <m>3 − 4</m> n’a pas de réponse parmi les nombres 0, 1, 2, 3…. Il faut donc convenir d’une lecture de gauche à droite."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La remarque vaut aussi pour la division : <m>24 ÷ 4 ÷ 2</m> vaut 3, alors que <m>24 ÷</m> <m>(4 ÷ 2)</m> vaut 12."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 02-082, « question : la soustraction est-elle associative ? (10 <m>−</m> 5 <m>−</m> 2) » — 02-082 pose la question de l’associativité de la soustraction : regrouper autrement change-t-il le résultat ? Cette fiche donne la réponse chiffrée, avec <m>10 − 4 − 3</m>."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 568,
+  "code": "04-065"
+ },
+ {
+  "title": "2²<m><sup>0</sup></m> : trois caractères au lieu de soixante",
+  "meta": "Fiche 04-066 · ch. 4 › Écrire court et calculer juste › 𝑝. 103",
+  "passage": "« Avec l’exposant, les 20 facteurs de l’informaticien deviennent<m>2<sup>20</sup></m>. Trois caractères au lieu de soixante. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une mémoire de 20 cases a un nombre d’états égal à vingt facteurs 2. Écrits un par un, ces facteurs forment une ligne de 20 chiffres 2 et de 19 signes fois. L’écriture courte est <m>2<sup>20</sup></m>, avec le 2 écrit une fois et le nombre 20 en petit."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>2<sup>20</sup></m> : « deux puissance vingt » : le facteur 2 apparaît 20 fois.",
+     "• <m>2<sup>3</sup></m> : « deux puissance trois » : le facteur 2 apparaît 3 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre que le gain croît avec le nombre de facteurs. Pour 3 facteurs 2, la ligne longue compte 3 chiffres et 2 signes fois, soit 5 caractères. L’écriture <m>2<sup>3</sup></m> en compte 2. Pour 20 facteurs, la ligne longue compte 39 caractères : 20 chiffres 2 et 19 signes fois. Le livre écrit « soixante » ; en ne comptant que les chiffres 2 et les signes fois, on trouve 39. L’écriture courte en compte 3. La ligne longue grandit à chaque facteur ajouté. L’écriture courte grandit seulement avec le nombre de chiffres de l’exposant. Pour 100 facteurs, elle compte 4 caractères."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas compte les caractères, pas le travail de calcul : trouver la valeur de <m>2<sup>20</sup></m> reste long à la main."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-003, « exemple : les états d’une mémoire de 20 cases, vingt fois le facteur 2 écrit un par un » — 04-003 pose le cas de la mémoire de 20 cases, dont cette fiche donne la réponse écrite court"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 569,
+  "code": "04-066"
+ },
+ {
+  "title": "la racine transforme « quel côté pour cette aire ? » en opération <m>√</m>A",
+  "meta": "Fiche 04-067 · ch. 4 › Écrire court et calculer juste › 𝑝. 103",
+  "passage": "« Avec la racine, une question nouvelle devient une opération : « quel côté pour cette aire ? » se note <m>√</m>A et se calcule. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une pièce carrée a une aire de 36 mètres carrés. Vous demandez : quel est son côté ? Une autre pièce carrée a une aire de 49 mètres carrés. Vous posez la même question."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>𝐴</m> : « A » : l’aire du carré, en carreaux.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, « quel côté pour cette aire ? » est une question que l’on résout par essais. Après la remarque, c’est une opération, notée <m>√𝐴</m>. Avec <m>𝐴 = 36</m>, on écrit <m>√36</m>, qui vaut 6. Avec <m>𝐴 = 49</m>, on écrit <m>√49</m>, qui vaut 7. La même écriture sert à toutes les aires. L’opération a un nom, un signe et une valeur. On peut donc la placer dans un calcul plus long, ce que la question seule ne permet pas."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La valeur est entière seulement si l’aire est le carré d’un entier : pour 10, aucun entier ne convient."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-031, « Fig. 4.2 — carré d’aire 16 dont on cherche le côté » — 04-031 montre la question « quel côté pour cette aire ? » sur la figure du carré d’aire 16"
+    ]
+   }
+  },
+  "flag": "Non validée : cette fiche n’a pas passé tous les contrôles ; la raison est dans le rapport de couverture.",
+  "page": 571,
+  "code": "04-067"
+ },
+ {
+  "title": "l’ordre des opérations donne une seule valeur, lisible par tous et par une machine",
+  "meta": "Fiche 04-068 · ch. 4 › Écrire court et calculer juste › 𝑝. 103",
+  "passage": "« Avec l’ordre des opérations, une ligne de symboles a une seule valeur, quel que soit le lecteur. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous tapez « 2 plus 3 fois 4 » sur une calculatrice scientifique. Un camarade tape la même chose sur une autre calculatrice scientifique. Les deux écrans affichent 14."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, l’ordre des opérations paraît une consigne d’école. Après la remarque, on voit qu’il rend une ligne lisible de la même façon par tous. Un lecteur n’a pas à deviner l’intention de l’auteur. Une machine, qui ne devine rien, peut aussi lire la ligne. Une formule écrite une fois donne donc le même nombre partout. Une machine qui applique la règle donne toujours 14. Une machine qui ne l’applique pas, comme certaines calculatrices très simples, lit de gauche à droite et affiche 20."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La règle donne une valeur unique, mais elle ne garantit pas que la ligne dise ce que l’écrivain voulait."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-006, « problème : 2 + 3 × 4 a deux lectures ; une écriture doit avoir une seule valeur » — 04-006 pose le problème des deux lectures, que la règle d’ordre résout pour tous les lecteurs"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 572,
+  "code": "04-068"
+ },
+ {
+  "title": "6 × (3² + 2²) + 4² = 94 pas à pas",
+  "meta": "Fiche 04-069 · ch. 4 › Un exemple complet, pas à pas › 𝑝. 103",
+  "passage": "« Calculons la valeur de <m>6 × (3<sup>2</sup> + 2<sup>2</sup>) + 4<sup>2</sup></m> Suivons la règle. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous calculez 6 fois la somme du carré de 3 et du carré de 2. Puis vous ajoutez le carré de 4. Vous suivez la règle d’ordre, une étape après l’autre."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois.",
+     "• <m>2<sup>2</sup></m> : « deux au carré » : le facteur 2 apparaît 2 fois.",
+     "• <m>4<sup>2</sup></m> : « quatre au carré » : le facteur 4 apparaît 2 fois.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que ne montre-t-il pas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas ne montre pas ce qui arrive quand deux opérations de même rang, comme deux soustractions, se suivent. Dans <m>6 × (3<sup>2</sup> + 2<sup>2</sup>) + 4<sup>2</sup></m>, aucune soustraction ni division n’apparaît. Il ne dit pas non plus pourquoi la règle est juste : il la suit seulement. Voici les étapes. Dans la parenthèse, les exposants d’abord : <m>3<sup>2</sup> = 9</m> et <m>2<sup>2</sup> = 4</m>, puis <m>9 + 4 = 13</m>. Ensuite l’exposant restant : <m>4<sup>2</sup> = 16</m>. Puis la multiplication : <m>6 × 13 = 78</m>. Enfin l’addition : <m>78 + 16 = 94</m>."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas donne un seul résultat chiffré ; un autre calcul demande de refaire toutes les étapes."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-059, « règle d’ordre, étape 1 : d’abord l’intérieur des symboles de groupement, en commençant par le plus intérieur » — ce calcul applique les quatre étapes de la règle, à commencer par l’étape 1 de 04-059"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 573,
+  "code": "04-069"
+ },
+ {
+  "title": "erreur à éviter : additionner 13 et 16 avant de multiplier donne 174, résultat faux",
+  "meta": "Fiche 04-070 · ch. 4 › Un exemple complet, pas à pas › 𝑝. 104",
+  "passage": "« Si vous aviez additionné 13 et 16 avant de multiplier, vous auriez obtenu 6 × 29 = 174, un résultat faux, parce que le 16 n’était pas dans la parenthèse multipliée par 6. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Dans le calcul précédent, la parenthèse vaut 13. Un élève additionne 13 et 16, puis multiplie par 6. Il trouve 174. Le bon résultat est 94."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, l’erreur paraît un simple oubli de calcul. Après la remarque, on voit qu’elle vient d’un mauvais regroupement. L’élève a mis le 16 dans la parenthèse, alors que le 16 n’y était pas. Il a calculé <m>6 × 29</m>, qui vaut 174. Il fallait calculer <m>6 × 13</m>, puis ajouter 16, ce qui donne 94. L’erreur ne vient donc pas d’un nombre faux, mais d’un lien faux entre les nombres. Elle se repère en regardant ce que chaque signe entoure."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La remarque décrit une seule erreur possible ; d’autres erreurs d’ordre donnent d’autres résultats faux."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-069, « 6 × (3² + 2²) + 4² = 94 pas à pas » — 04-069 donne le calcul correct dont cette erreur est la version fausse"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 575,
+  "code": "04-070"
+ },
+ {
+  "title": "(6² + 2²)/(4² + 6 × 2²) = 1 : la barre groupe le haut et le bas séparément",
+  "meta": "Fiche 04-071 · ch. 4 › Un exemple complet, pas à pas › 𝑝. 104",
+  "passage": "« Un second exemple avec une barre de fraction : »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Au-dessus de la barre, il y a la somme du carré de 6 et du carré de 2. En dessous, il y a la somme du carré de 4 et de 6 fois le carré de 2. Vous calculez le haut, puis le bas, chacun de son côté."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>6<sup>2</sup></m> : « six au carré » : le facteur 6 apparaît 2 fois.",
+     "• <m>+</m> : « plus » : ajoute deux nombres.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Ce cas montre que le haut et le bas d’une barre se calculent chacun comme un groupement complet. En haut, <m>6<sup>2</sup> + 2<sup>2</sup></m> vaut 40. En bas, <m>4<sup>2</sup> + 6 × 2<sup>2</sup></m> vaut 40. La barre dit ensuite de diviser le haut par le bas : <m>40 ÷ 40</m> vaut 1. Le haut doit être entièrement calculé avant la division. On ne divise jamais un seul morceau du haut. À l’intérieur de chaque côté, la règle d’ordre s’applique comme partout ailleurs."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le résultat 1 vient du choix des nombres : le haut et le bas valent tous deux 40."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-055, « la barre de fraction est un groupement caché : (6 + 4)/2 = (6 + 4) ÷ 2 » — 04-055 dit que la barre est un groupement caché, ce que ce calcul applique des deux côtés"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 576,
+  "code": "04-071"
+ },
+ {
+  "title": "cas limite (valeur extrême où l’on vérifie que la définition tient)",
+  "meta": "Fiche 04-072 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Un cas limite est une valeur extrême où l’on vérifie que la définition tient encore. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous testez la définition de l’exposant sur une valeur ordinaire, comme sept puissance trois. Elle donne 343. Puis vous la testez sur des valeurs extrêmes : l’exposant 1, l’exposant 0, la base 0."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>De quelle famille est ce</i> <i>concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Un cas limite appartient à la famille des tests d’une définition. Un test ordinaire vérifie la définition sur un cas facile. Un cas limite la vérifie sur une valeur extrême. Pour l’exposant, les valeurs extrêmes sont l’exposant 1, l’exposant 0, et une base égale à 0 ou à 1. Si la définition tient, elle donne une réponse. Si elle ne tient pas, comme pour l’exposant 0, on le découvre alors, et on doit l’étendre."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Un cas limite ne prouve pas la définition : il montre seulement où elle tient et où elle s’arrête."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — 04-017 donne la définition de l’exposant, que les cas limites des exposants 1 et 0 mettent à l’épreuve."
+    ]
+   }
+  },
+  "flag": "",
+  "page": 577,
+  "code": "04-072"
+ },
+ {
+  "title": "exposant 1 : 7¹ = 7",
+  "meta": "Fiche 04-073 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Exposant 1. Que vaut 7¹ ? La définition dit : le facteur 7 apparaît 1 fois. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le côté d’un carré mesure 7. Vous le prenez une seule fois. Vous obtenez un segment de longueur 7, sans aire ni volume. Une multiplication qui ne contient qu’un seul facteur 7 n’a aucun autre nombre à multiplier."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>7<sup>1</sup></m> : « sept puissance un » : le facteur 7 apparaît 1 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le résultat ne peut pas être autre chose que 7. La définition dit que le facteur 7 apparaît 1 fois. Une multiplication d’un seul facteur n’a rien à multiplier avec lui. Elle vaut donc ce facteur. Si <m>7<sup>1</sup></m> valait un autre nombre, il faudrait un second facteur pour le produire. Or il n’y en a pas. On écrit <m>7<sup>1</sup> = 7</m>. Tout nombre est ainsi sa propre puissance 1."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce résultat est celui de l’exposant 1 seulement ; il ne dit rien d’un exposant plus grand."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — 04-017 définit l’exposant comme un nombre de facteurs, et l’exposant 1 en est le plus petit cas"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 578,
+  "code": "04-073"
+ },
+ {
+  "title": "exposant 0 : on pose 7<m><sup>0</sup></m> = 1 (suite 7³, 7², 7¹ divisée par 7)",
+  "meta": "Fiche 04-074 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Exposant 0. Que vaut 7<m><sup>0</sup></m> ? La définition dit : le facteur 7 apparaît 0 fois. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous écrivez la suite des puissances de 7. Le nombre <m>7<sup>3</sup></m> vaut 343. Le nombre <m>7<sup>2</sup></m> vaut 49. Le nombre <m>7<sup>1</sup></m> vaut 7."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>7<sup>0</sup></m> : « sept puissance zéro » : le facteur 7 apparaît 0 fois.",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que se passe-t-il si on retire</i> <i>une hypothèse ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Retirons l’hypothèse que l’exposant est au moins 1. La définition dit alors que le facteur 7 apparaît 0 fois. Une multiplication sans aucun facteur n’a pas de sens direct. Le contre-exemple est donc <m>7<sup>0</sup></m> : la définition par répétition ne donne aucune valeur. On peut pourtant en poser une. Dans la suite 343, 49, 7, chaque pas divise par 7. Un pas de plus donne <m>7 ÷ 7</m>, soit 1. On pose donc <m>7<sup>0</sup> = 1</m>."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le choix <m>7<sup>0</sup> = 1</m> est une extension : la définition par répétition ne le démontre pas."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-073, « exposant 1 : 7¹ = 7 » — la suite des puissances de 7 qui mène à <m>7<sup>0</sup></m> s’arrête à <m>7<sup>1</sup> = 7</m>, examiné en 04-073"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 579,
+  "code": "04-074"
+ },
+ {
+  "title": "la définition par répétition ne couvre pas l’exposant 0 (extension au chapitre 14)",
+  "meta": "Fiche 04-075 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Retenez seulement que la définition de ce chapitre ne couvre pas l’exposant 0, et qu’il faudra l’étendre. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez calculer cinq puissance zéro. La définition demande combien de fois le facteur 5 apparaît. La réponse est zéro fois. Vous n’avez aucun nombre à multiplier."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>5<sup>0</sup></m> : « cinq puissance zéro » : le facteur 5 apparaît 0 fois."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on croit qu’une définition donne une valeur à tout exposant. Après la remarque, on voit qu’elle couvre seulement les exposants 1, 2, 3 et plus. Pour l’exposant 0, il n’y a aucun facteur à multiplier. La définition ne donne donc aucune valeur. Ce n’est pas une erreur de la définition : c’est sa limite. Pour continuer, il faut une autre raison que la répétition. Le chapitre 14 la donne, avec les règles des exposants."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne donne pas la valeur de <m>5<sup>0</sup></m> : elle dit seulement que la répétition ne suffit pas."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-074, « exposant 0 : on pose 7<m><sup>0</sup></m> = 1 (suite 7³, 7², 7¹ divisée par 7) » — 04-074 montre comment on pose la valeur <m>7<sup>0</sup> = 1</m> sans que la répétition la donne"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 581,
+  "code": "04-075"
+ },
+ {
+  "title": "base 0 : 0<m><sup>5</sup></m> = 0",
+  "meta": "Fiche 04-076 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Base 0 et base 1. 0<m><sup>5</sup></m> = 0 × 0 × 0 × 0 × 0 = 0 »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous écrivez cinq facteurs égaux à 0. Vous multipliez le premier par le deuxième, puis le résultat par le troisième, et ainsi de suite jusqu’au cinquième."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>0<sup>5</sup></m> : « zéro puissance cinq » : le facteur 0 apparaît 5 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>0<sup>2</sup></m> : « zéro au carré » : le facteur 0 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que produit-il ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "L’écriture <m>0<sup>5</sup></m> produit toujours 0. Elle est la multiplication <m>0 × 0 × 0 × 0 × 0</m>. Au chapitre 3, tout produit qui contient 0 vaut 0. Les cinq facteurs sont des 0, donc le produit vaut 0. Avec un exposant entier au moins égal à 1, une base 0 produit 0. Par exemple, <m>0<sup>2</sup></m> vaut <m>0 × 0</m>, soit 0. L’écriture ne produit jamais un nombre différent de 0."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce résultat ne vaut que pour un exposant au moins égal à 1. Pour l’exposant 0, la définition ne donne rien."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-074, « a × 0 = 0 : multiplier par zéro détruit tout » — 03-074 dit que multiplier par zéro détruit tout, ce qui donne ici un produit nul"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 582,
+  "code": "04-076"
+ },
+ {
+  "title": "base 1 : 1²<m><sup>8</sup></m> = 1",
+  "meta": "Fiche 04-077 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Et 1²<m><sup>8</sup></m> = 1 : multiplier par 1 ne change rien, donc répéter le facteur 1 autant de fois qu’on le veut donne toujours 1. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous écrivez 28 facteurs égaux à 1. Vous multipliez de gauche à droite. Le premier produit vaut 1, puis le deuxième vaut encore 1."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>1<sup>28</sup></m> : « un puissance vingt-huit » : le facteur 1 apparaît 28 fois.",
+     "• <m>1<sup>2</sup></m> : « un au carré » : le facteur 1 apparaît 2 fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le résultat ne peut pas être autre que 1. Multiplier un nombre par 1 ne le change pas. Au départ, on a 1. Chaque facteur 1 ajouté laisse le nombre inchangé. Après 28 facteurs, le résultat est donc toujours 1. Cela vaut pour tout exposant entier au moins égal à 1. On a <m>1<sup>2</sup> = 1</m> comme <m>1<sup>28</sup> = 1</m>. Le nombre de facteurs n’a aucun effet, puisque chaque facteur vaut 1."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce résultat est propre à la base 1 : avec la base 2, le produit change à chaque facteur ajouté."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-072, « propriété a × 1 = a » — 03-072 dit que multiplier par 1 ne change rien, ce qui donne ici un produit toujours égal à 1"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 583,
+  "code": "04-077"
+ },
+ {
+  "title": "<m>√</m>0 = 0 (carré réduit à un point)",
+  "meta": "Fiche 04-078 · ch. 4 › Les cas limites › 𝑝. 105",
+  "passage": "« Racine de 0. Que vaut <m>√</m>0 ? On cherche le nombre qui, multiplié par lui-même, donne 0. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour 16, la racine carrée est 4. Pour 25, elle est 5. Dans les deux cas, la racine est plus petite que le nombre. Vous en tirez une idée : la racine est toujours plus petite que le nombre."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que se passe-t-il si on retire</i> <i>une hypothèse ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Retirons l’hypothèse que le nombre est plus grand que 1. L’idée « la racine est plus petite que le nombre » devient fausse. Le contre-exemple est <m>√0</m>. On cherche le nombre qui, multiplié par lui-même, donne 0. C’est 0, car <m>0 × 0 = 0</m>. La racine est alors égale au nombre, et non plus petite. Un carré d’aire 0 a un côté de longueur 0 : il est réduit à un point."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce contre-exemple porte sur l’idée « plus petite », pas sur la définition de la racine, qui reste valable."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-033, « racine carrée » — <m>√0</m> applique la définition de la racine carrée de 04-033 au nombre 0"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 584,
+  "code": "04-078"
+ },
+ {
+  "title": "<m>√</m>1 = 1",
+  "meta": "Fiche 04-079 · ch. 4 › Les cas limites › 𝑝. 106",
+  "passage": "«<m>√</m>0 = 0 et <m>√</m>1 = 1. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un carré d’aire 1 est formé d’un seul carreau. Vous cherchez la longueur de son côté. Le côté d’un carreau est 1."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>À quoi sert-il ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le cas <m>√1 = 1</m> sert à vérifier la définition sur un carré d’un seul carreau. Ce carré a pour côté 1, puisque <m>1 × 1 =</m> <m>1</m>. Il sert aussi à repérer un second nombre égal à sa racine, avec 0. Il rappelle enfin que multiplier par 1 ne change rien. Avec <m>√0</m>, il donne donc deux nombres dont la racine est égale au nombre lui-même."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce cas ne dit rien des nombres plus grands que 1, dont la racine est plus petite qu’eux."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-078, « <m>√</m>0 = 0 (carré réduit à un point) » — <m>√1</m> est le second cas où la racine égale le nombre, après <m>√0</m> de 04-078"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 585,
+  "code": "04-079"
+ },
+ {
+  "title": "<m>√</m>10 n’est pas un entier (racine qui ne tombe pas juste)",
+  "meta": "Fiche 04-080 · ch. 4 › Les cas limites › 𝑝. 106",
+  "passage": "« Racine qui ne tombe pas juste. Que vaut <m>√</m>10 ? On cherche un nombre entier dont le carré est 10. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous cherchez la racine carrée de 10, écrite <m>√10</m>. Vous essayez 3 : <m>3 × 3</m> vaut 9, c’est trop petit. Vous essayez 4 : <m>4 × 4</m> vaut 16, c’est trop grand."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après le signe.",
+     "• <m>×</m> : « fois » : multiplie deux nombres."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on croit que chaque racine est un entier. Après la remarque, on voit que certaines racines ne le sont pas. Le côté du carré d’aire 10 existe : il mesure un peu plus de 3. Mais ni 3 ni 4 ne convient, et il n’y a pas d’entier entre eux. La racine existe donc sans être un entier. Ce chapitre s’arrête aux racines entières. Le chapitre 22 étudie les autres."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La remarque ne donne pas la valeur de <m>√10</m>, seulement qu’elle est entre 3 et 4."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-033, « racine carrée » — la définition de 04-033 reste la même pour 10 ; seul le type de nombre trouvé change"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 586,
+  "code": "04-080"
+ },
+ {
+  "title": "division par 0 dans un groupement : toute l’expression est non définie",
+  "meta": "Fiche 04-081 · ch. 4 › Les cas limites › 𝑝. 106",
+  "passage": "« Division par 0 dans un groupement. Que vaut (10 ÷ 0) × 6 ? »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez calculer 10 divisé par 0 dans une parenthèse. Ensuite, vous voulez multiplier le résultat par 6. La règle dit de calculer la parenthèse d’abord."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>÷</m> : « divisé par » : partage un nombre en parts égales.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>( )</m> : « parenthèses » : entourent la partie du calcul à faire d’abord."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Pourquoi cela ne peut-il pas</i> <i>être autrement ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le résultat ne peut pas être un nombre. La parenthèse <m>(10 ÷ 0)</m> doit être calculée d’abord. Or <m>10 ÷ 0</m> demande un nombre qui, multiplié par 0, donne 10. Tout nombre multiplié par 0 donne 0, jamais 10. Il n’existe donc aucune valeur à mettre à la place de la parenthèse. Sans valeur, la multiplication par 6 n’a rien à multiplier. Toute l’expression <m>(10 ÷ 0) × 6</m> est donc non définie."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Ce raisonnement porte sur 10 divisé par 0. Le cas de 0 divisé par 0 est traité à part au chapitre 3."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 03-102, « 12 ÷ 0 ne désigne aucun nombre (12 = 0 × <m>𝑞</m> impossible) » — 03-102 montre que 12 divisé par 0 ne désigne aucun nombre, ce qui rend ici toute l’expression non définie"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 588,
+  "code": "04-081"
+ },
+ {
+  "title": "aire c², volume c³, disque r² (renvoi chapitre 11)",
+  "meta": "Fiche 04-082 · ch. 4 › 5. Où cela mène (finalité) › 𝑝. 106",
+  "passage": "« Chapitre 11, mesure et géométrie. L’aire d’un carré de côté <m>𝑐</m> est <m>𝑐</m>², le volume d’un cube de côté <m>𝑐</m> est <m>𝑐</m>³. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un carré de côté 5 a une aire de 25 carreaux. Un cube de côté 5 a un volume de 125 petits cubes. Dans les formules, on remplace le 5 par une lettre, <m>𝑐</m>."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝑐</m> : « c » : la longueur du côté, quelle qu’elle soit.",
+     "• <m>𝑐<sup>2</sup></m> : « c au carré » : l’aire d’un carré de côté <m>𝑐</m>.",
+     "• <m>𝑐<sup>3</sup></m> : « c au cube » : le volume d’un cube de côté <m>𝑐</m>.",
+     "• <m>𝑟</m> : « r » : le rayon d’un disque, c’est-à-dire la distance entre son centre et son bord.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>𝜋</m> : « pi » : un nombre qui vaut environ 3,14."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, on voit le carré et le cube comme deux exemples de ce chapitre. Après la remarque, on voit qu’ils reviennent dans les formules du chapitre 11. L’aire d’un carré de côté <m>𝑐</m> est <m>𝑐<sup>2</sup></m>. Le volume d’un cube de côté <m>𝑐</m> est <m>𝑐<sup>3</sup></m>. Un disque est une surface ronde ; son rayon <m>𝑟</m> est la distance du centre au bord. Son aire est <m>𝜋 × 𝑟<sup>2</sup></m>, où <m>𝜋</m> vaut environ 3,14. Sans exposant, ces formules s’écriraient avec des multiplications répétées. Elles se liraient plus mal."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque annonce les formules du chapitre 11 sans les démontrer."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-015, « « carré » et « cube » sont les formes exactes que ces multiplications mesurent » — 04-015 dit que « carré » et « cube » sont les formes exactes que ces multiplications mesurent"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 589,
+  "code": "04-082"
+ },
+ {
+  "title": "exposants négatifs et produit de puissances 7³ × 7<m><sup>5</sup></m> (renvoi chapitre 14)",
+  "meta": "Fiche 04-083 · ch. 4 › 5. Où cela mène (finalité) › 𝑝. 106",
+  "passage": "« Chapitre 14, les règles des exposants. Ce chapitre répond à la question laissée ouverte sur 7<m><sup>0</sup></m> , et il va plus loin : que vaut 7<m><sup>−</sup></m>² ? Comment multiplier 7³ par 7<m><sup>5</sup></m> sans tout déplier ? »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Vous voulez multiplier <m>7<sup>3</sup></m> par <m>7<sup>5</sup></m>. Vous pourriez écrire <m>7<sup>3</sup> × 7<sup>5</sup></m>, puis déplier huit facteurs 7 un par un. Vous cherchez une façon plus courte."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>7<sup>3</sup></m> : « sept puissance trois » : le facteur 7 apparaît 3 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>7<sup>8</sup></m> : « sept puissance huit » : le facteur 7 apparaît 8 fois.",
+     "• <m>7<sup>−2</sup></m> : « sept puissance moins deux » : le petit nombre en haut est précédé du signe moins."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, la définition de l’exposant semble seulement compter des facteurs écrits. Après la remarque, on voit qu’elle sert de base à des règles. Pour <m>7<sup>3</sup> × 7<sup>5</sup></m>, la définition dit : trois facteurs 7, puis cinq facteurs 7. Cela fait huit facteurs, donc <m>7<sup>8</sup></m>. On n’a pas besoin de tout déplier. En revanche, <m>7<sup>−2</sup></m> se lit « sept puissance moins deux ». On ne peut pas écrire un facteur 7 « moins deux fois », donc la définition par répétition ne s’applique pas."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque annonce les réponses du chapitre 14 sans les démontrer toutes."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-017, « exposant (définition) » — 04-017 définit l’exposant comme un nombre de facteurs, ce qui permet de compter huit facteurs ici"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 590,
+  "code": "04-083"
+ },
+ {
+  "title": "notation scientifique, 10<m><sup>6</sup></m> pour 1 000 000 (renvoi chapitre 14)",
+  "meta": "Fiche 04-084 · ch. 4 › 5. Où cela mène (finalité) › 𝑝. 106",
+  "passage": "« Ce chapitre introduit aussi la notation scientifique, où 10<m><sup>6</sup></m> remplace « 1 000 000 ». »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Le nombre 1 000 000 s’écrit avec six zéros. Un nombre plus grand en demande davantage. Vous voulez une écriture qui compte les zéros au lieu de les écrire."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>10<sup>6</sup></m> : « dix puissance six » : le facteur 10 apparaît 6 fois.",
+     "• <m>10<sup>2</sup></m> : « dix puissance deux » : le facteur 10 apparaît 2 fois.",
+     "• <m>10<sup>3</sup></m> : « dix puissance trois » : le facteur 10 apparaît 3 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, un grand nombre comme 1 000 000 ne s’écrit qu’en alignant ses chiffres. Après la remarque, on voit que <m>10<sup>6</sup></m> le décrit autrement. Regardez : <m>10<sup>2</sup> = 10 × 10 = 100</m>, deux zéros. Puis <m>10<sup>3</sup> = 1 000</m>, trois zéros. Chaque facteur 10 de plus met un zéro de plus à droite. En effet, au chapitre 3, un zéro à droite veut dire « fois dix ». Donc six facteurs 10 donnent un 1 suivi de six zéros, soit 1 000 000. Le nombre de zéros est écrit dans l’exposant. C’est le même gain que pour les vingt facteurs 2 de la mémoire."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne dit pas comment écrire un nombre qui n’est pas une puissance de 10. Le chapitre 14 le montre."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-066, « 2²<m><sup>0</sup></m> : trois caractères au lieu de soixante » — 04-066 montre le même gain d’écriture avec les vingt facteurs 2 de la mémoire"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 592,
+  "code": "04-084"
+ },
+ {
+  "title": "puissances d’une lettre dans les polynômes : x² = <m>𝑥</m> × <m>𝑥</m> (renvoi chapitre 15)",
+  "meta": "Fiche 04-085 · ch. 4 › 5. Où cela mène (finalité) › 𝑝. 107",
+  "passage": "« Chapitre 15, les polynômes. Une expression comme 3<m>𝑥</m>² + 5<m>𝑥</m> + 2 est faite de puissances d’une lettre <m>𝑥</m>. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une lettre <m>𝑥</m> désigne un nombre. Si <m>𝑥</m> vaut 4, alors <m>𝑥<sup>2</sup></m> vaut 16. Si <m>𝑥</m> vaut 5, alors <m>𝑥<sup>2</sup></m> vaut 25."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝑥</m> : « x » : un nombre, qui peut changer d’un calcul à l’autre.",
+     "• <m>𝑥<sup>2</sup></m> : « x au carré » : le facteur <m>𝑥</m> apparaît 2 fois.",
+     "• <m>×</m> : « fois » : multiplie deux nombres.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, un exposant porte sur des nombres comme 4. Après la remarque, on voit qu’il porte aussi sur une lettre. L’écriture <m>𝑥<sup>2</sup></m> veut dire <m>𝑥 × 𝑥</m>. La définition est la même : le facteur <m>𝑥</m> apparaît 2 fois. Dans <m>3 × 𝑥<sup>2</sup></m>, l’ordre des opérations place l’exposant avant la multiplication. On calcule donc <m>𝑥<sup>2</sup></m> d’abord, puis on multiplie par 3. Avec <m>𝑥 = 4</m>, on obtient <m>3 × 16</m>, soit 48."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "La lettre <m>𝑥</m> n’a pas de valeur fixe : le résultat change avec le nombre qu’elle désigne."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-058, « pourquoi l’exposant passe avant la multiplication : 2 × 3² = 18 et non 36 » — 04-058 explique pourquoi l’exposant passe avant la multiplication, règle qui s’applique aussi à une lettre"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 593,
+  "code": "04-085"
+ },
+ {
+  "title": "la racine, premier exemple d’opération inverse pour résoudre une équation (renvoi chapitre 16)",
+  "meta": "Fiche 04-086 · ch. 4 › 5. Où cela mène (finalité) › 𝑝. 107",
+  "passage": "« Chapitre 16, résoudre une équation. Chaque étape de résolution applique une opération inverse pour défaire une opération. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "On vous dit : un nombre positif, multiplié par lui-même, donne 16. « Positif » veut dire « plus grand que 0 ». Quel est ce nombre ? Vous prenez la racine carrée de 16 et vous trouvez 4."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "aucun symbole"
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la remarque, la racine est un moyen de trouver un côté. Après la remarque, on voit qu’elle est un exemple d’une méthode générale. Une équation cherche un nombre inconnu. Pour la défaire, on applique l’opération qui annule celle qui a été faite. Ici, le nombre a été mis au carré, donc on prend la racine carrée. On précise « positif » parce que d’autres nombres, plus petits que 0 (chapitre 13), donnent aussi 16 multipliés par eux-mêmes. La soustraction, qui défait l’addition, fonctionne de la même façon."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Cette remarque ne résout pas d’équation : elle annonce le mécanisme, que le chapitre 16 étudie."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-046, « la racine est l’opération inverse de la puissance » — 04-046 dit que la racine est l’opération inverse de la puissance, ce que la résolution d’équation réutilise"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 595,
+  "code": "04-086"
+ },
+ {
+  "title": "question : existe-t-il a <m>≠ 𝑏</m> avec aᵇ = bᵃ ?",
+  "meta": "Fiche 04-087 · ch. 4 › 6. Une question pour vous › 𝑝. 107",
+  "passage": "« Existe-t-il deux nombres entiers différents <m>𝑎</m> et <m>𝑏</m> pour lesquels <m>𝑎<sup>𝑏</sup> = 𝑏<sup>𝑎</sup></m> ? »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Pour 2 et 3, <m>2<sup>3</sup></m> vaut 8 et <m>3<sup>2</sup></m> vaut 9. Pour 3 et 4, <m>3<sup>4</sup></m> vaut 81 et <m>4<sup>3</sup></m> vaut 64. Les deux côtés diffèrent à chaque fois."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>2<sup>3</sup></m> : « deux puissance trois » : le facteur 2 apparaît 3 fois.",
+     "• <m>3<sup>2</sup></m> : « trois au carré » : le facteur 3 apparaît 2 fois.",
+     "• <m>2<sup>4</sup></m> : « deux puissance quatre » : le facteur 2 apparaît 4 fois.",
+     "• <m>𝑎</m> : « a » : un nombre entier quelconque.",
+     "• <m>𝑏</m> : « b » : un autre nombre entier quelconque.",
+     "• <m>𝑎<sup>𝑏</sup></m> : « a puissance b » : le nombre <m>𝑎</m> apparaît <m>𝑏</m> fois.",
+     "• <m>𝑏<sup>𝑎</sup></m> : « b puissance a » : le nombre <m>𝑏</m> apparaît <m>𝑎</m> fois.",
+     "• <m>=</m> : « égale » : ce qui est à gauche vaut ce qui est à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Qu’est-ce que la remarque</i> <i>change dans la manière de voir le concept ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Avant la question, on retient que l’ordre compte : échanger la base et l’exposant change le résultat. Après la question, on voit que c’est vrai pour 2 et 3. Avec <m>𝑎 = 2</m> et <m>𝑏 = 3</m>, on a <m>𝑎<sup>𝑏</sup> = 2<sup>3</sup> = 8</m> et <m>𝑏<sup>𝑎</sup> = 3<sup>2</sup> = 9</m>. Rien ne dit que c’est vrai pour toute paire. Il faut tester chaque paire en calculant les deux côtés. Pour 2 et 4, <m>2<sup>4</sup></m> vaut 16 et <m>4<sup>2</sup></m> vaut 16. Ici l’échange ne change rien. La règle « l’ordre compte » n’est donc pas une loi sans exception."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Un seul essai ne dit pas s’il existe d’autres paires de nombres différents qui conviennent."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-030, « pour les exposants l’ordre compte : 2³ <m>≠</m> 3² (base et exposant n’ont pas le même rôle) » — 04-030 dit que l’ordre compte pour les exposants, ce que cette question met à l’épreuve"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 596,
+  "code": "04-087"
+ },
+ {
+  "title": "finalité ch. 23 : x² = 16 demande une racine carrée",
+  "meta": "Fiche 04-088 · ch. 4 › 6. Une question pour vous › 𝑝. 107",
+  "passage": "« Chapitre 23, les équations du second degré. Résoudre <m>𝑥<sup>2</sup> = 16</m> demande de prendre une racine carrée. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Un sol carré a une aire de 16 mètres carrés. Vous cherchez la longueur de son côté. Vous essayez 3 : 3 fois 3 fait 9, c’est trop petit. Vous essayez 4 : 4 fois 4 fait 16."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>𝑥<sup>2</sup></m> : « x au carré » : <m>𝑥</m> fois <m>𝑥</m>, deux facteurs égaux à la lettre <m>𝑥</m>, qui désigne le nombre cherché.",
+     "• <m>=</m> : « égale » : ce qui est écrit à gauche a la même valeur que ce qui est écrit à droite.",
+     "• <m>√</m> : « racine carrée de » : le nombre positif ou nul qui, multiplié par lui-même, donne le nombre écrit après.",
+     "• <m>×</m> : « fois » : 4 fois 4 veut dire quatre paquets de 4.",
+     "• <m>−</m> : « l’opposé de » : <m>−4</m> est le nombre qui, ajouté à 4, donne 0."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que montre ce cas sur tous</i> <i>les cas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le cas montre comment lire l’égalité <m>𝑥<sup>2</sup> = 16</m>. Elle dit que le nombre <m>𝑥</m> multiplié par lui-même donne 16. Une équation du second degré est une égalité avec une inconnue, le nombre cherché. Cette inconnue y est au carré, et à aucune puissance plus haute. Ici, <m>𝑥</m> n’est ni au cube ni plus haut. Pour retrouver <m>𝑥</m>, il faut l’opération inverse de la puissance, la racine carrée. Le nombre <m>√16</m> est le nombre positif dont le carré vaut 16, car <m>4 × 4 = 16</m>. Pour le sol, <m>𝑥</m> est une longueur, donc <m>𝑥 = 4</m>. Pour l’équation seule, <m>−4</m> convient aussi, car <m>(−4) × (−4) = 16</m>. Il y a deux solutions, 4 et <m>−4</m>. Pour <m>𝑥<sup>2</sup> = 25</m>, on a <m>√25 = 5</m> et les solutions sont 5 et <m>−5</m>."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas cherche une longueur, donc un nombre positif. Le chapitre 23 traite les deux solutions."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-046, « la racine est l’opération inverse de la puissance » — 04- 046 dit que la racine est l’opération inverse de la puissance"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 597,
+  "code": "04-088"
+ },
+ {
+  "title": "finalité ch. 23 : la formule du second degré contient une racine et une barre de fraction, à lire par l’ordre des opérations",
+  "meta": "Fiche 04-089 · ch. 4 › 6. Une question pour vous › 𝑝. 107",
+  "passage": "« La formule générale de résolution contient une racine carrée et une barre de fraction : la lire correctement est exactement appliquer l’ordre des opérations de ce chapitre. »",
+  "rub": {
+   "1": {
+    "label": "Le cas concret",
+    "paras": [
+     "Une ligne contient une racine carrée et une barre de fraction. On la lit : six plus la racine carrée de (trente-six moins vingt), le tout sur deux. Sans règle, on peut hésiter sur l’ordre des calculs."
+    ]
+   },
+   "2": {
+    "label": "La lecture des signes",
+    "paras": [
+     "",
+     "• <m>/</m> : barre de fraction, lue « sur » : tout ce qui est au-dessus est calculé en entier, avant de diviser par ce qui est au-dessous.",
+     "• <m>√</m> : « racine carrée de » : le nombre qui, multiplié par lui-même, donne le nombre écrit après.",
+     "• <m>+</m> : « plus » : on ajoute le nombre de droite au nombre de gauche.",
+     "• <m>−</m> : « moins » : on retire le nombre de droite du nombre de gauche.",
+     "• <m>=</m> : « égale » : ce qui est écrit à gauche a la même valeur que ce qui est écrit à droite."
+    ]
+   },
+   "3": {
+    "label": "La question",
+    "paras": [
+     "<i>Que ne montre-t-il pas ?</i>"
+    ]
+   },
+   "4": {
+    "label": "La réponse",
+    "paras": [
+     "Le cas ne montre pas la formule du second degré. Le chapitre 23 la donne. Le cas montre comment lire une expression qui a les mêmes ingrédients : <m>(6 +</m> <m>√(36 − 20)) / 2</m>. Étape 1 : la barre groupe tout le haut, donc on calcule le haut avant de diviser. Étape 2 : sous la racine, <m>36 − 20 = 16</m>. Étape 3 : <m>√16 = 4</m>. Étape 4 : <m>6 + 4 = 10</m>. Étape 5 : on divise par 2, ce qui donne 5."
+    ]
+   },
+   "5": {
+    "label": "La limite",
+    "paras": [
+     "Le cas utilise des nombres choisis. La formule du chapitre 23 est écrite avec des lettres à la place de ces nombres."
+    ]
+   },
+   "6": {
+    "label": "Le lien",
+    "paras": [
+     "Voir la fiche 04-071, « (6² + 2²)/(4² + 6 × 2²) = 1 : la barre groupe le haut et le bas séparément » — 04-071 est un cas où la barre de fraction groupe le haut et le bas séparément"
+    ]
+   }
+  },
+  "flag": "",
+  "page": 599,
+  "code": "04-089"
+ }
+]

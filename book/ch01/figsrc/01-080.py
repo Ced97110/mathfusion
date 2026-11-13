@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,74,'36000000001','fixe','l')
+arrow(ax,(84,62),(6,62),'varie')
+text(ax,44,67.5,'par trois, depuis la droite','varie','s',weight='bold')
+for x,w,t in [(6,12,'36'),(24,16,'000'),(46,16,'000'),(68,16,'001')]: box(ax,x,44,w,10,'sujet',label=t,size='l')
+for x,t in zip([12,32,54,76],['4e','3e','2e','1er']): text(ax,x,38,t,'varie','s')
+text(ax,12,28,'036','limite','m'); line(ax,[(7,28),(17,28)],'limite',lw=1)
+text(ax,21,28,'pas de 0 ajouté à gauche','limite','s',ha='left')
+arrow(ax,(44,22),(44,17),'resultat')
+text(ax,44,10,'36 000 000 001','resultat','l',weight='bold')
+save(fig,'01-080')

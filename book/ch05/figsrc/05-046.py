@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,2,2,84,66,'fixe',fill=False,dash=True)
+text(ax,44,63,'entiers plus grands que 1','encre','m')
+box(ax,6,20,26,36,'autre'); box(ax,36,20,46,36,'sujet')
+text(ax,19,52,'premiers','autre','m'); text(ax,59,52,'composés','sujet','m')
+for i in range(7): disc(ax,10+3*i,40,1.1,'autre')
+text(ax,19,29,'7 : une rangée','autre','s')
+for r in range(3):
+    for c in range(3): disc(ax,41+3*c,40-3*r,1.1,'sujet')
+    for c in range(4): disc(ax,62+3*c,40-3*r,1.1,'sujet')
+text(ax,44,29,'9 = 3 × 3','sujet','s'); text(ax,66.5,29,'12 = 3 × 4','sujet','s')
+box(ax,6,6,10,9,'fixe',label='1',size='m')
+text(ax,20,10.5,'1 : dans aucune des deux','fixe','s',ha='left')
+save(fig,'05-046')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,44,65,r'$a = 2$, $b = 3$','fixe','s')
+# échelle : 3 mm par unité, barres de 4 mm de haut à partir de x = 24
+poly(ax,[(24,56),(48,56),(48,60),(24,60)],'sujet')
+poly(ax,[(24,50),(51,50),(51,54),(24,54)],'autre')
+text(ax,22,58,'2³ = 8','sujet','m',ha='right')
+text(ax,22,52,'3² = 9','autre','m',ha='right')
+text(ax,66,55,'8 ≠ 9','resultat','m')
+text(ax,44,42,r'$a = 2$, $b = 4$','fixe','s')
+poly(ax,[(24,33),(72,33),(72,37),(24,37)],'sujet')
+poly(ax,[(24,27),(72,27),(72,31),(24,31)],'autre')
+text(ax,22,35,'2⁴ = 16','sujet','m',ha='right')
+text(ax,22,29,'4² = 16','autre','m',ha='right')
+line(ax,[(72,25),(72,39)],'limite',dash=True)
+text(ax,48,20,'16 = 16 : même résultat','limite','m')
+text(ax,44,8,'3⁴ = 81, 4³ = 64 : différents','fixe','s')
+save(fig,'04-087')

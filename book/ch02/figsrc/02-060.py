@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,24.65,70,19.35,6,'fixe',label='43',size='s'); box(ax,44,70,7.2,6,'fixe',label='16',size='s'); box(ax,51.2,70,12.15,6,'fixe',label='27',size='s')
+arrow(ax,(36,68),(22,59),'fixe'); arrow(ax,(52,68),(66,59),'fixe')
+box(ax,3,50,26.55,6,'varie',label='59',size='s'); box(ax,29.55,50,12.15,6,'fixe',label='27',size='s')
+text(ax,22.35,46,'43 + 16 = 59','varie','s')
+box(ax,46,50,19.35,6,'fixe',label='43',size='s'); box(ax,65.35,50,19.35,6,'varie',label='43',size='s')
+text(ax,65.35,46,'16 + 27 = 43','varie','s')
+arrow(ax,(22,42),(40,33),'fixe'); arrow(ax,(66,42),(48,33),'fixe')
+box(ax,24.65,24,38.7,6,'resultat',label='86',size='s')
+text(ax,44,17,'43 + 16 + 27 = 86','resultat','m'); text(ax,44,10,'sans parenthèses','resultat','s')
+save(fig,'02-060')

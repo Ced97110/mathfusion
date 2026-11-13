@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,44,65,'un nombre plus 7 vaut 12','encre','m')
+box(ax,30,50.5,10,9,'sujet',dash=True,label='?',size='l')
+text(ax,42,55,'+ 7 = 12','encre','l',ha='left')
+box(ax,10,38,72,6,'fixe',label='12')
+box(ax,10,29,30,6,'sujet',dash=True,label='?')
+box(ax,40,29,42,6,'fixe',label='7')
+brace(ax,10,40,27,'varie',label='12 − 7 = 5',down=True)
+text(ax,44,14,'terme manquant : 5','resultat','l')
+text(ax,44,6,'ch. 16 : une lettre pour ?','fixe','s')
+save(fig,'02-049')

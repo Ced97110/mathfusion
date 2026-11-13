@@ -1,0 +1,1356 @@
+[
+ {
+  "code": "03-001",
+  "a_dire": "Le cas de la salle tient en deux nombres : 4, le nombre qu'on ajoute, et 426, le nombre de fois qu'on l'ajoute ; avec 150 places à 6 euros, la forme reste la même.",
+  "legende_titre": "Deux salles, un seul dessin",
+  "lecture": [
+   "Les carrés bleus portent le nombre qu'on ajoute : 4 euros en haut, 6 euros en bas.",
+   "Les plus orange marquent chaque addition, et l'accolade orange dit combien de fois on recommence : 426 fois en haut, 150 fois en bas.",
+   "Les deux rangées ont le même dessin : seuls les deux nombres changent."
+  ],
+  "a_voir": "Les euros et les places ont disparu : il reste un nombre ajouté, et un nombre de fois."
+ },
+ {
+  "code": "03-002",
+  "a_dire": "Ajouter des 4 un par un donne le bon total, mais il faut une addition de moins que de termes : 2 pour 3 termes, 425 pour 426 termes, et chaque addition est une occasion de se tromper.",
+  "legende_titre": "Compter les additions quand les termes s'allongent",
+  "lecture": [
+   "Chaque case grise est un terme égal à 4, et chaque point orange entre deux cases est une addition.",
+   "Comptez les points : il y en a toujours un de moins que de cases, donc 425 pour 426 termes.",
+   "Les totaux en vert sont justes ; le texte rouge rappelle que chacune des 425 additions peut contenir une erreur."
+  ],
+  "a_voir": "La méthode donne le bon total, mais le nombre d'additions, et donc d'erreurs possibles, grandit avec le nombre de termes."
+ },
+ {
+  "code": "03-003",
+  "a_dire": "Le problème qui a fait naître la multiplication est une somme dont tous les termes sont égaux, comme dix termes égaux à 4 ; une somme de termes différents comme 4 + 7 + 2 n'est pas ce problème.",
+  "legende_titre": "Dix termes bout à bout, puis trois termes",
+  "lecture": [
+   "Chaque rectangle est un terme, et sa longueur est sa valeur : les termes sont posés bout à bout, comme dans une addition.",
+   "En bleu, les dix rectangles ont tous la même longueur, car tous valent 4.",
+   "En rouge, les trois rectangles de longueurs 4, 7 et 2 sont différents : cette somme n'est pas le problème de la fiche."
+  ],
+  "a_voir": "Ce qui fait le problème, ce n'est pas la valeur 4, c'est que tous les termes ont la même longueur."
+ },
+ {
+  "code": "03-004",
+  "a_dire": "Le problème inverse garde les trois mêmes nombres, places, prix et total, mais échange les rôles : on connaît le total 1 704 et le prix 4, et on cherche le nombre de places.",
+  "legende_titre": "Une salle, deux questions",
+  "lecture": [
+   "Les deux rangées parlent des mêmes trois nombres : places, prix, total.",
+   "Le point d'interrogation vert marque le nombre cherché : le total en haut, le nombre de places en bas.",
+   "Les flèches orange montrent l'échange : 426 places devient l'inconnu, le total inconnu devient 1 704.",
+   "Le prix, 4, ne bouge pas."
+  ],
+  "a_voir": "Le problème inverse n'est pas une autre situation : c'est la même, avec le point d'interrogation déplacé."
+ },
+ {
+  "code": "03-005",
+  "a_dire": "1 706 tombe entre 1 704 (426 places) et 1 708 (427 places), donc aucun nombre de places ne donne 1 706 : la réponse est double, 426 places complètes et un reste de 2 euros.",
+  "legende_titre": "Où tombe la caisse de 1 706 euros ?",
+  "lecture": [
+   "La flèche bleue montre la caisse : 1 706 euros.",
+   "Le disque vert est le total de 426 places, 1 704 euros ; le disque rouge est celui de 427 places, 1 708 euros, qui dépasse la caisse.",
+   "Entre les deux, il n'y a pas d'autre total possible, car une place de plus ajoute 4 euros d'un coup.",
+   "L'accolade verte mesure ce qui reste au-delà de 426 places : 2 euros."
+  ],
+  "a_voir": "La caisse ne tombe sur aucun total possible : la réponse se donne avec deux nombres, 426 et 2."
+ },
+ {
+  "code": "03-006",
+  "a_dire": "3, 8 et 24 sont liés par un seul fait, 3 rangées de 8 carreaux font 24 carreaux ; multiplier interroge ce fait pour trouver 24, diviser l'interroge pour trouver 3.",
+  "legende_titre": "Un rectangle, deux questions",
+  "lecture": [
+   "Le rectangle bleu montre le lien : 3 rangées de 8 carreaux font 24 carreaux.",
+   "La ligne orange cherche le nombre écrit en orange, 24 : c'est multiplier.",
+   "La ligne violette cherche le nombre écrit en violet, 3 : c'est diviser.",
+   "Le nombre 8, en gris, est connu dans les deux questions."
+  ],
+  "a_voir": "Les deux questions portent sur le même rectangle : seul change le nombre que l'on cherche."
+ },
+ {
+  "code": "03-007",
+  "a_dire": "Ranger 12 carreaux en groupes de 0 n'avance jamais : après 10 puis 1 000 groupes vides, il reste toujours 12 carreaux, alors qu'en groupes de 4 il ne reste rien ; c'est le fait qui justifie l'interdiction de diviser par zéro.",
+  "legende_titre": "Ranger 12 carreaux par groupes de 4, puis de 0",
+  "lecture": [
+   "En haut, les 12 carreaux bleus sont rangés en 3 groupes de 4 : il ne reste rien.",
+   "En bas, chaque carré rouge en tirets est un groupe de 0 carreau : il est vide.",
+   "Suivez les flèches rouges : après 10 groupes vides, puis 1 000, le bloc de 12 carreaux n'a pas changé."
+  ],
+  "a_voir": "Avec des groupes de 0, le nombre de carreaux qui restent ne baisse jamais : la tâche n'avance pas."
+ },
+ {
+  "code": "03-008",
+  "a_dire": "Compter les carreaux un par un et compter rangée par rangée touchent chacun les mêmes 24 carreaux une seule fois : c'est pourquoi les deux comptages donnent a × b = 4 × 6 = 24.",
+  "legende_titre": "Deux façons de parcourir le même rectangle",
+  "lecture": [
+   "Les deux rectangles bleus sont le même : 4 rangées de 6 carreaux, avec un point au centre de chaque carreau.",
+   "À gauche, la ligne orange passe une seule fois par chaque point : on compte un par un.",
+   "À droite, chaque flèche orange passe par les 6 points d'une rangée, et les nombres 6, 12, 18, 24 donnent le total au fil des rangées.",
+   "Les deux parcours touchent les mêmes carreaux, chacun une seule fois, donc ils trouvent le même nombre, écrit en vert."
+  ],
+  "a_voir": "Aucun carreau n'est oublié ni compté deux fois, ni à gauche ni à droite : les deux comptages ne peuvent que tomber d'accord."
+ },
+ {
+  "code": "03-009",
+  "a_dire": "Un carreau est une unité : un carré de taille fixe que l'on compte pour mesurer une zone, comme on compte des mètres pour une longueur ; si les carrés n'avaient pas tous la même taille, leur nombre ne mesurerait rien.",
+  "legende_titre": "Le carreau, le mètre, et des carrés inégaux",
+  "lecture": [
+   "La zone bleue est recouverte par 24 carreaux qui ont tous la même taille.",
+   "La zone rouge est la même zone, mais découpée en 3 carrés de tailles différentes : le nombre 3 ne dit rien de sa taille.",
+   "En violet, le mètre joue pour une longueur le rôle que le carreau joue pour une zone : on compte combien il y en a."
+  ],
+  "a_voir": "Le nombre de carreaux mesure la zone seulement parce que tous les carreaux ont la même taille."
+ },
+ {
+  "code": "03-010",
+  "a_dire": "Une rangée est une ligne de gauche à droite de b = 6 carreaux, une des a = 4 rangées du rectangle ; une colonne va de haut en bas et contient 4 carreaux ; après un quart de tour, la rangée devient une colonne.",
+  "legende_titre": "Rangée, colonne, rectangle, et un quart de tour",
+  "lecture": [
+   "La rangée bleue va de gauche à droite (flèche bleue) et contient 6 carreaux : b = 6.",
+   "Le rectangle gris contient 4 rangées pareilles : a = 4.",
+   "La colonne violette va de haut en bas (flèche violette) et contient 4 carreaux.",
+   "Après le quart de tour orange, ce sont les mêmes 24 carreaux : les carreaux bleus forment une colonne, et les violets une rangée."
+  ],
+  "a_voir": "Ce qui fait une rangée, ce sont ses carreaux posés de gauche à droite : tournez le dessin, et elle devient une colonne."
+ },
+ {
+  "code": "03-011",
+  "a_dire": "Le rectangle de 3 rangées de 5 carreaux donne 15 de deux façons, en comptant tous ses carreaux d'un coup ou en additionnant 5 + 5 + 5 rangée par rangée : une multiplication est un seul nombre qui a ces deux descriptions.",
+  "legende_titre": "Un rectangle lu d'un coup, puis rangée par rangée",
+  "lecture": [
+   "Le cadre violet entoure tout le rectangle : compter ses carreaux donne 15.",
+   "Les trois cadres orange découpent le rectangle en rangées de 5 : les additionner donne 5 + 5 + 5 = 15.",
+   "Le texte vert rappelle que les deux lectures parlent du même rectangle, donc du même nombre."
+  ],
+  "a_voir": "Le même rectangle se lit d'un seul coup ou rangée par rangée, et les deux lectures donnent 15."
+ },
+ {
+  "code": "03-012",
+  "a_dire": "Quand je tourne le rectangle de 4 rangées de 6 d'un quart de tour, j'obtiens 6 rangées de 4 avec les mêmes 24 carreaux, donc 4 × 6 = 6 × 4.",
+  "legende_titre": "Le même rectangle, tourné d'un quart de tour",
+  "lecture": [
+   "À gauche, vous voyez 4 rangées de 6 carreaux : c'est 4 × 6.",
+   "La flèche orange est le quart de tour : la rangée orange du haut devient la colonne orange de droite.",
+   "À droite, vous voyez 6 rangées de 4 carreaux : c'est 6 × 4.",
+   "En vert, le nombre de carreaux : 24 des deux côtés, car aucun carreau n'a été ajouté ni retiré."
+  ],
+  "a_voir": "Les carreaux ont seulement bougé, donc 4 × 6 et 6 × 4 comptent les mêmes 24 carreaux."
+ },
+ {
+  "code": "03-013",
+  "a_dire": "Multiplier a par b, c'est faire la somme de a termes tous égaux à b, et cette longue somme reçoit un seul nom : a × b.",
+  "legende_titre": "Une longue somme, un seul nom",
+  "lecture": [
+   "Dans la boîte bleue, vous voyez la somme : des termes tous égaux à 4.",
+   "L'accolade orange compte ces termes : il y en a 426.",
+   "En bas, la somme entière porte un seul nom, 426 × 4 : le 426 orange dit combien de fois, le 4 violet dit quel nombre.",
+   "Avec des lettres, ce nom s'écrit a × b."
+  ],
+  "a_voir": "Les deux nombres de la longue somme se retrouvent, seuls, dans le nom 426 × 4."
+ },
+ {
+  "code": "03-014",
+  "a_dire": "La formule a × b = b + b + ⋯ + b dit trois actions : lire a, écrire b autant de fois, additionner un à un ; pour 4 × 6, cela donne 12, puis 18, puis 24.",
+  "legende_titre": "Ce que la formule fait faire, sur 4 × 6",
+  "lecture": [
+   "Les 4 points orange, en haut, sont ce que dit a : 4 fois.",
+   "Sous chaque point, une boîte violette « 6 » : vous écrivez 6 quatre fois.",
+   "Chaque flèche orange ajoute un 6 : vous passez par 6, 12, 18 et arrivez à 24.",
+   "Le point vert marque l'arrivée : 4 × 6 = 24."
+  ],
+  "a_voir": "Chaque point orange donne une boîte « 6 », et chaque boîte donne un saut de 6 sur la droite."
+ },
+ {
+  "code": "03-015",
+  "a_dire": "L'accolade sous une somme regroupe les termes qui sont au-dessus d'elle, et le nombre écrit dessous dit combien il y en a, même quand les points ⋯ en cachent.",
+  "legende_titre": "L'accolade et le nombre écrit dessous",
+  "lecture": [
+   "En haut, l'accolade bleue entoure les quatre termes 6 qui sont au-dessus d'elle.",
+   "Le 4 bleu sous l'accolade dit combien de termes elle entoure : vous pouvez le vérifier en comptant.",
+   "En bas, le cadre rouge montre les termes cachés par les points : vous ne pouvez plus les compter.",
+   "Le 426 bleu sous l'accolade vous donne quand même leur nombre."
+  ],
+  "a_voir": "Le nombre sous l'accolade dit combien de termes il y a au-dessus, même quand on ne les voit pas tous."
+ },
+ {
+  "code": "03-016",
+  "a_dire": "La lettre a tient la place du nombre de répétitions : avec la seule forme « a fois 6 », je retrouve 4 fois 6, 7 fois 6 ou 426 fois 6 en remplaçant a par un nombre.",
+  "legende_titre": "Une seule forme pour tous les cas",
+  "lecture": [
+   "En haut, la case bleue a tient la place d'un nombre ; « fois 6 » est écrit une seule fois.",
+   "Dans les cases orange, vous mettez un nombre à la place de a : 4, puis 7, puis 426.",
+   "Chaque barre grise est un 6 : il y en a autant que le nombre de la case orange.",
+   "Le « fois 6 » gris ne change jamais."
+  ],
+  "a_voir": "Seule la case de a change d'une ligne à l'autre, et elle fixe le nombre de barres."
+ },
+ {
+  "code": "03-017",
+  "a_dire": "La lettre b désigne le nombre répété : dans b + b + b + b il n'y a qu'une lettre, donc tous les termes sont le même nombre, 6 dans un cas, 9 dans l'autre.",
+  "legende_titre": "Une seule lettre pour tous les termes",
+  "lecture": [
+   "En haut, la même lettre b est écrite pour chacun des quatre termes.",
+   "Avec b = 6, les quatre barres orange ont toutes 6 carrés ; avec b = 9, elles en ont toutes 9.",
+   "En rouge, avec quatre lettres différentes, les barres pourraient avoir des longueurs différentes : 6, 9, 2, 5."
+  ],
+  "a_voir": "Sur chaque ligne orange, les quatre barres ont la même longueur, parce qu'une seule lettre b les désigne."
+ },
+ {
+  "code": "03-018",
+  "a_dire": "Le signe × se lit « fois » : 3 × 5 veut dire prendre 5 autant de fois que le dit 3, puis additionner : 5 + 5 + 5 = 15.",
+  "legende_titre": "Lire le signe × morceau par morceau",
+  "lecture": [
+   "Le 3 orange dit combien de fois ; le 5 violet dit ce que l'on prend ; le × bleu se lit « fois ».",
+   "Les trois rangées violettes sont le 5 pris 3 fois ; les points orange les comptent : 1, 2, 3.",
+   "La flèche mène à l'addition en vert : 5 + 5 + 5 = 15."
+  ],
+  "a_voir": "Le nombre de rangées de 5 est le nombre écrit à gauche du signe ×."
+ },
+ {
+  "code": "03-019",
+  "a_dire": "L'écriture a × b désigne déjà le résultat, le produit, avant tout calcul : on peut écrire « caisse = a × b » et des égalités, puis calculer quand a et b sont connus.",
+  "legende_titre": "Nommer le résultat avant de le calculer",
+  "lecture": [
+   "En haut, les cases bleues a et b sont vides : vous ne connaissez pas encore les nombres.",
+   "Le cadre vert dit que a × b est pourtant déjà un nombre : la caisse.",
+   "Avec cette écriture, vous pouvez déjà écrire l'égalité a × b = b + b + ⋯ + b.",
+   "Après la flèche orange, les nombres sont connus et le calcul donne 1 704."
+  ],
+  "a_voir": "La caisse est écrite en haut, avant tout nombre ; le calcul n'arrive qu'en bas."
+ },
+ {
+  "code": "03-020",
+  "a_dire": "Le produit est un nombre : le résultat d'une multiplication, comme la somme est le résultat d'une addition ; pour 3 et 5, la somme est 8 et le produit est 15.",
+  "legende_titre": "Deux résultats à partir de 3 et 5",
+  "lecture": [
+   "À gauche, en violet, 3 points et 5 points mis bout à bout : ce résultat, 8, s'appelle la somme.",
+   "À droite, en bleu, 3 rangées de 5 points : ce résultat, 15, s'appelle le produit.",
+   "En gris, les nombres de départ 3 et 5 : ils ne sont pas le produit, ce sont les facteurs."
+  ],
+  "a_voir": "Avec les mêmes 3 et 5, chaque opération donne son propre résultat, et chaque résultat a son nom."
+ },
+ {
+  "code": "03-021",
+  "a_dire": "Le multiplicande est le nombre répété, ici 4 euros : il désigne une chose, et le produit garde son unité (12 euros), alors que le multiplicateur 3 n'est qu'un nombre de fois.",
+  "legende_titre": "Ce qui est répété, et ce qui compte",
+  "lecture": [
+   "Les trois boîtes bleues sont le multiplicande : une place à 4 €, répétée.",
+   "L'accolade orange est le multiplicateur : 3 fois, sans unité.",
+   "En vert, le produit : 12 €, avec la même unité que le multiplicande."
+  ],
+  "a_voir": "Le signe € est dans le multiplicande et dans le produit, jamais dans le multiplicateur."
+ },
+ {
+  "code": "03-022",
+  "a_dire": "Le multiplicateur est le nombre qui compte les répétitions : dans 3 × 5 c'est 3, dans 5 × 3 c'est 5 ; le produit est 15 dans les deux cas, mais les rôles changent.",
+  "legende_titre": "3 × 5 et 5 × 3 : qui compte, qui est répété",
+  "lecture": [
+   "Les points bleus comptent les barres : c'est le multiplicateur, 3 à gauche, 5 à droite.",
+   "Chaque barre violette est le nombre répété : 5 carrés à gauche, 3 carrés à droite.",
+   "En vert, le produit est 15 des deux côtés."
+  ],
+  "a_voir": "Le produit est le même, mais le nombre qui compte les barres n'est pas le même."
+ },
+ {
+  "code": "03-023",
+  "a_dire": "Les facteurs sont les nombres que l'on multiplie, comme 3 et 5 dans 3 × 5 : un seul nom pour les deux, parce qu'on peut les échanger sans changer le produit, comme les termes d'une addition.",
+  "legende_titre": "Un nom pour les deux nombres d'une multiplication",
+  "lecture": [
+   "À gauche, en violet, les deux nombres de 3 + 5 portent un seul nom : les termes.",
+   "À droite, en gris, les anciens noms donnent un rôle différent à 3 et à 5.",
+   "Les flèches vertes échangent les deux nombres : la somme reste 8, le produit reste 15.",
+   "L'accolade bleue donne aux deux nombres de 3 × 5 un seul nom : les facteurs."
+  ],
+  "a_voir": "Vous voyez que 3 et 5 s'échangent sans changer 15 : c'est pourquoi ils reçoivent un seul nom, facteurs, comme les termes de l'addition."
+ },
+ {
+  "code": "03-024",
+  "a_dire": "Dans 3 ⋅ 5, le point écrit à mi-hauteur des chiffres est un autre signe de multiplication : il dit « fois », comme ×, mais il n'est pas pris pour une virgule et ne ressemble à aucune lettre.",
+  "legende_titre": "Où se place le point qui veut dire « fois »",
+  "lecture": [
+   "Les trois lignes grises marquent le haut, le milieu et le bas des chiffres.",
+   "À gauche, le point bleu est sur la ligne du milieu : il se lit « fois ».",
+   "À droite, le point rouge est en bas : vous le liriez comme une virgule.",
+   "En bas, avec la lettre x, le signe × est rouge car il ressemble à x ; le point bleu ne ressemble à aucune lettre."
+  ],
+  "a_voir": "Le point bleu est à mi-hauteur des chiffres : à cette place, il ne peut être lu que comme « fois »."
+ },
+ {
+  "code": "03-025",
+  "a_dire": "Dans (3)(5) ou 3(5), il n'y a aucun signe entre les nombres : deux nombres collés se lisent « fois », et ce sont les parenthèses qui les séparent pour qu'on ne lise pas 35.",
+  "legende_titre": "Deux nombres collés, sans signe entre eux",
+  "lecture": [
+   "En haut, les parenthèses bleues entourent 3 et 5 ; la flèche orange montre qu'aucun signe n'est écrit entre eux.",
+   "Au milieu, une seule paire de parenthèses autour de 5 suffit : on lit encore « trois fois cinq ».",
+   "En bas, en rouge, les mêmes chiffres sans parenthèses forment le nombre 35."
+  ],
+  "a_voir": "Ce sont les parenthèses bleues qui séparent 3 et 5 : sans elles, vous lisez trente-cinq."
+ },
+ {
+  "code": "03-026",
+  "a_dire": "Avec des lettres, on écrit 3x et non 3 × x, parce que le signe × et la lettre x se confondent à la main : on supprime le signe, et 3x se lit « trois fois x ».",
+  "legende_titre": "Pourquoi le signe fois disparaît devant une lettre",
+  "lecture": [
+   "En haut, les deux croix noires sont le signe fois et la lettre x, écrits à la main.",
+   "En rouge, 3 × x : vous ne savez pas si la croix du milieu est un signe ou une lettre.",
+   "La flèche orange enlève le signe ; en bleu, 3x se lit « trois fois x ».",
+   "En gris, avec des nombres seuls, 3 × 5 ne pose aucun problème."
+  ],
+  "a_voir": "Les deux croix du haut sont presque identiques : c'est la raison pour laquelle on enlève le signe devant une lettre."
+ },
+ {
+  "code": "03-027",
+  "a_dire": "Dans a × b, le premier nombre donne le nombre de rangées et le second le nombre de carreaux par rangée : 3 × 5, c'est 3 rangées de 5 carreaux, et pas 5 rangées de 3.",
+  "legende_titre": "Quel rectangle dessiner pour 3 × 5 ?",
+  "lecture": [
+   "Le premier nombre, 3, devient par la flèche orange le nombre de rangées du rectangle bleu.",
+   "Le second nombre, 5, devient le nombre de carreaux de chaque rangée.",
+   "Le rectangle violet, 5 rangées de 3, est le dessin de l'écriture 5 × 3.",
+   "En vert, les deux rectangles ont 15 carreaux."
+  ],
+  "a_voir": "Les deux rectangles ont 15 carreaux, mais seul le bleu, 3 rangées de 5, est le dessin de 3 × 5."
+ },
+ {
+  "code": "03-028",
+  "a_dire": "Couper 48 en 40 + 8 donne 326 × 40 + 326 × 8 = 13 040 + 2 608 = 15 648, et une autre coupe donne le même total ; l'exemple montre le résultat mais pas la raison.",
+  "legende_titre": "Deux façons de couper 48",
+  "lecture": [
+   "Chaque bande a une longueur de 48 ; le trait orange la coupe en deux morceaux.",
+   "Dans la bande du haut, 48 est coupé en 40 et 8 ; la ligne verte additionne les deux produits.",
+   "Dans la bande du bas, 48 est coupé en 30 et 18 ; la ligne verte donne encore 15 648.",
+   "La phrase rouge rappelle que l'exemple ne dit pas pourquoi le total reste le même."
+  ],
+  "a_voir": "Les deux lignes vertes finissent par le même nombre, 15 648, quelle que soit la coupe."
+ },
+ {
+  "code": "03-029",
+  "a_dire": "Un produit partiel est le produit de 326 par un seul morceau de 48 : 326 × 8 = 2 608 ; ce n'est ni le morceau 8, ni le produit total 15 648.",
+  "legende_titre": "Un morceau, une part, le tout",
+  "lecture": [
+   "En bas, les segments orange sont les morceaux de 48 : 40 et 8.",
+   "Chaque part bleue est un produit partiel : 326 fois un seul morceau.",
+   "L'accolade verte couvre le rectangle entier : le produit total, 15 648."
+  ],
+  "a_voir": "Le morceau 8 est une longueur orange ; le produit partiel 2 608 est la part bleue au-dessus ; seul le rectangle entier répond à 326 × 48."
+ },
+ {
+  "code": "03-030",
+  "a_dire": "Parmi les nombres écrits pour 326 × 48, le produit total est celui qui répond à la question : 15 648, la somme des produits partiels 2 608 et 13 040.",
+  "legende_titre": "Trois nombres sur la page : lequel répond ?",
+  "lecture": [
+   "Les deux nombres violets sont des étapes : les produits partiels.",
+   "La flèche orange les additionne.",
+   "Le nombre encadré en bleu, 15 648, est le produit total : lui seul répond à 326 × 48."
+  ],
+  "a_voir": "Sur la page, trois nombres sont écrits, mais seul le nombre encadré en bleu est la réponse."
+ },
+ {
+  "code": "03-031",
+  "a_dire": "Dans la multiplication posée de 326 × 48, chaque chiffre de 48 donne une ligne (le 8 donne 2 608, le 4 donne 13 040) ; quand il n'y a plus de chiffre, on additionne les lignes : 15 648.",
+  "legende_titre": "Une ligne par chiffre, puis on s'arrête",
+  "lecture": [
+   "Les chiffres orange 8 et 4 sont les deux chiffres de 48 ; chaque flèche orange mène à la ligne bleue qu'il donne.",
+   "La case rouge, vide, montre qu'il n'y a pas de troisième chiffre à lire.",
+   "Il ne reste qu'à additionner les deux lignes bleues : le nombre vert, 15 648."
+  ],
+  "a_voir": "Deux chiffres orange, deux lignes bleues, puis une case vide : le calcul passe à l'addition et s'arrête."
+ },
+ {
+  "code": "03-032",
+  "a_dire": "Le chiffre 4 de 48 vaut 4 dizaines, donc 326 × 4 = 1 304 compte des dizaines : on écrit cette ligne décalée d'un rang, sinon on obtient 3 912 au lieu de 15 648.",
+  "legende_titre": "Pourquoi la deuxième ligne avance d'un rang",
+  "lecture": [
+   "La flèche orange part du 4 de 48, qui vaut 4 dizaines, et mène à la bande orange : la colonne des dizaines.",
+   "À gauche, le dernier chiffre de 1 304 est écrit dans cette bande : la ligne bleue vaut donc 13 040, et le total vert est 15 648.",
+   "À droite, en rouge, la même ligne n'est pas décalée : elle vaut 1 304, et le total 3 912 est faux."
+  ],
+  "a_voir": "Un seul rang de différence dans l'écriture de 1 304 fait passer le total de 15 648 à 3 912."
+ },
+ {
+  "code": "03-033",
+  "a_dire": "Pour 49 000 × 1 200, on met de côté les cinq zéros de droite, on calcule 49 × 12 = 588 et on rend les zéros : 58 800 000 ; la méthode échoue si l'on oublie les zéros ou si l'on retire un zéro qui n'est pas à droite.",
+  "legende_titre": "Mettre les zéros de côté : quand ça casse",
+  "lecture": [
+   "En haut, les cinq anneaux orange sont les zéros de droite mis de côté ; rendus à 588, ils donnent le nombre vert, 58 800 000.",
+   "Au milieu, en rouge : si vous oubliez les zéros, vous gardez 588.",
+   "En bas, le zéro de 405 est entouré de rouge : il est au milieu, pas à droite. Le retirer donne 5 400 (faux), et non 4 860 (vrai)."
+  ],
+  "a_voir": "La méthode donne le bon produit seulement quand les zéros mis de côté sont à droite et qu'on les rend tous."
+ },
+ {
+  "code": "03-034",
+  "a_dire": "Chaque zéro écrit à droite pousse les chiffres d'un rang vers la gauche, donc chaque zéro à droite est un « fois dix » : 49 000, c'est 49 × 10 × 10 × 10.",
+  "legende_titre": "De 49 à 49 000 : ce que font les zéros",
+  "lecture": [
+   "Les cases bleues du haut montrent 49 : le 4 est au rang des dizaines, le 9 au rang des unités.",
+   "Les cases orange du bas sont les trois zéros écrits à droite.",
+   "Les flèches orange montrent que le 4 et le 9 ont glissé de trois rangs vers la gauche.",
+   "L'accolade verte dit ce que vaut chaque zéro : un « × 10 »."
+  ],
+  "a_voir": "Trois zéros à droite déplacent le 4 et le 9 de trois rangs : 49 a été multiplié trois fois par dix."
+ },
+ {
+  "code": "03-035",
+  "a_dire": "Diviser 24 par 4, c'est chercher le nombre qui manque dans 4 × ? = 24 : la division défait la multiplication comme la soustraction défait l'addition, et le diviseur ne doit pas être zéro.",
+  "legende_titre": "Deux opérations qui défont : même geste",
+  "lecture": [
+   "En haut, vous connaissez 9 et 4 ; la partie orange est le 5 que la soustraction retrouve.",
+   "En bas, vous connaissez 4 rangées et 24 carreaux ; la rangée orange est le nombre cherché, 6.",
+   "La ligne verte écrit ce nombre cherché : 24 ÷ 4 = 6, parce que 4 × 6 = 24.",
+   "La ligne rouge rappelle la condition : le diviseur n'est jamais zéro."
+  ],
+  "a_voir": "Dans les deux cas, vous connaissez le total et un nombre, et la partie orange est le nombre que vous cherchez."
+ },
+ {
+  "code": "03-036",
+  "a_dire": "Quels que soient les nombres, n ÷ d = q veut dire que d × q redonne n : on vérifie un quotient en multipliant.",
+  "legende_titre": "Trois divisions, un seul test",
+  "lecture": [
+   "En haut en bleu, la formule et sa forme multiplication.",
+   "Chaque rectangle orange a d rangées et q colonnes ; il contient n carreaux.",
+   "La ligne noire écrit chaque division ; la ligne verte la vérifie en multipliant d par q."
+  ],
+  "a_voir": "Les rectangles changent de taille, mais sous chacun la ligne verte redonne le nombre partagé."
+ },
+ {
+  "code": "03-037",
+  "a_dire": "La lettre n désigne le nombre partagé ; écrite seule à gauche de « = » dans n = d × q, elle remplace d'un coup toutes les phrases de vérification.",
+  "legende_titre": "Une lettre pour le nombre partagé",
+  "lecture": [
+   "En haut en gris, sans lettre, il faut une phrase pour chaque cas.",
+   "Au milieu, une seule ligne n = d × q dit tous les cas à la fois.",
+   "La colonne bleue montre la place de n : seule, à gauche du signe égal ; 24, 18 et 90 viennent s'y mettre."
+  ],
+  "a_voir": "Dans la colonne bleue, la lettre n et les nombres 24, 18, 90 occupent la même place : seuls à gauche du signe égal."
+ },
+ {
+  "code": "03-038",
+  "a_dire": "Dans 18 ÷ 6 = 3, le dividende est 18 : c'est le nombre partagé, connu au départ, seul à gauche de « = » dans 18 = 6 × 3, alors que 6 partage et que 3 est cherché.",
+  "legende_titre": "Trois nombres, trois rôles",
+  "lecture": [
+   "Le bleu est le dividende 18 : les 18 disques que l'on partage, et le 18 seul à gauche du signe égal.",
+   "Le violet est le diviseur 6 : les 6 parts qui font le partage.",
+   "Le vert est le quotient 3 : ce que reçoit chaque part, le nombre cherché.",
+   "La ligne rouge rappelle que le dividende peut être plus petit, comme 0 dans 0 ÷ 7."
+  ],
+  "a_voir": "Le 18 bleu est seul à gauche du signe égal, alors que 6 et 3 sont ensemble à droite."
+ },
+ {
+  "code": "03-039",
+  "a_dire": "La lettre d désigne le nombre qui partage sans dire sa valeur, ce qui permet d'écrire la règle d ≠ 0 une fois pour tous les cas.",
+  "legende_titre": "Une lettre pour écrire une règle",
+  "lecture": [
+   "En haut, la case orange est la place du nombre qui partage ; la lettre bleue d la nomme.",
+   "Au milieu, la règle d ≠ 0 est découpée : d, « différent de », zéro.",
+   "En bas, les disques verts sont des valeurs que vous pouvez mettre à la place de d ; le zéro rouge est exclu."
+  ],
+  "a_voir": "La lettre d ne donne pas de valeur : c'est le « ≠ 0 » écrit à côté d'elle qui exclut le zéro rouge."
+ },
+ {
+  "code": "03-040",
+  "a_dire": "Les deux nombres d'une division n'ont pas le même rôle : le diviseur, celui qui partage, décide si la division a un résultat — 0 ÷ 7 en a un, 12 ÷ 0 n'en a pas.",
+  "legende_titre": "Le zéro à deux places différentes",
+  "lecture": [
+   "À gauche, les 7 cases violettes sont les parts ; elles restent vides car il y a 0 objet.",
+   "À droite, les 12 disques bleus n'ont aucune part où aller, car le diviseur est 0.",
+   "Sous chaque division, le mot « diviseur » montre la place qui décide ; en rouge, cette place vaut zéro."
+  ],
+  "a_voir": "Le zéro ne gêne pas quand il est partagé ; il rend la division impossible quand il est le diviseur."
+ },
+ {
+  "code": "03-041",
+  "a_dire": "Le signe ÷ se lit « divisé par » : à gauche le nombre partagé, à droite celui qui partage, et l'ordre ne s'échange pas, contrairement à ×.",
+  "legende_titre": "Lire le signe ÷ dans le bon ordre",
+  "lecture": [
+   "En haut, vous lisez de gauche à droite : 18, « divisé par », 6.",
+   "Le nombre de gauche est partagé ; le nombre de droite partage.",
+   "La ligne verte montre que 3 × 6 et 6 × 3 sont égaux ; la ligne rouge montre que 18 ÷ 6 et 6 ÷ 18 ne le sont pas."
+  ],
+  "a_voir": "Avec ×, l'échange des deux nombres ne change rien ; avec ÷, il change tout."
+ },
+ {
+  "code": "03-042",
+  "a_dire": "La lettre q donne un nom au nombre cherché, ce qui permet d'écrire 4 × q = 24 puis de remplacer q par des nombres pour tester.",
+  "legende_titre": "Nommer le nombre cherché, puis essayer",
+  "lecture": [
+   "La case bleue q est le nom du nombre que vous cherchez.",
+   "À gauche, vous essayez 5 : 4 rangées de 5 font 20 ; il manque la colonne rouge en pointillés.",
+   "À droite, vous essayez 6 : 4 rangées de 6 font 24, c'est juste."
+  ],
+  "a_voir": "La lettre q tient la place du nombre cherché ; on la remplace par 5, puis par 6, jusqu'à retrouver 24."
+ },
+ {
+  "code": "03-043",
+  "a_dire": "Le quotient est un facteur : dans 24 = 4 × 6, les côtés 4 et 6 sont les deux facteurs de 24 ; 4 est donné, 6 est le facteur manquant qu'on cherche.",
+  "legende_titre": "Deux côtés, deux facteurs",
+  "lecture": [
+   "Le rectangle gris contient 24 carreaux : c'est le produit.",
+   "Le côté violet mesure 4 : c'est le facteur que l'on vous donne.",
+   "Le côté bleu mesure 6 : c'est le facteur qui manque, le quotient."
+  ],
+  "a_voir": "Le 4 violet et le 6 bleu sont tous deux des côtés du rectangle, donc des facteurs ; seul le bleu est à chercher."
+ },
+ {
+  "code": "03-044",
+  "a_dire": "Lire une division à l'envers marche quand le diviseur n'est pas zéro (6 × q = 18 donne q = 3, un seul nombre), mais casse quand il vaut zéro : 0 × q reste 0, donc 12 ÷ 0 n'a aucune réponse et 0 ÷ 0 en a trop.",
+  "legende_titre": "Lire à l'envers, avec et sans zéro",
+  "lecture": [
+   "En haut, les disques orange sont 6 × 0, 6 × 1, 6 × 2, 6 × 3 : ils avancent de 6 en 6 et tombent sur 18 une seule fois.",
+   "En bas, les disques orange sont 0 × 0, 0 × 1, 0 × 2 : ils restent tous sur 0.",
+   "L'anneau rouge sur 12 reste vide : aucun nombre q ne donne 0 × q = 12.",
+   "La ligne rouge du bas dit l'autre échec : pour 0 ÷ 0, tous les q conviennent."
+  ],
+  "a_voir": "Avec 6, les produits avancent et touchent 18 une fois ; avec 0, ils ne bougent pas de 0."
+ },
+ {
+  "code": "03-045",
+  "a_dire": "Le seul fait 6 × 3 = 18 donne quatre phrases sur les mêmes nombres 3, 6 et 18 : deux multiplications et deux divisions.",
+  "legende_titre": "Un fait de table, quatre phrases",
+  "lecture": [
+   "Les 18 points bleus au centre sont le seul fait de départ.",
+   "Lus en 6 colonnes de 3 ou en 3 rangées de 6, ils donnent les deux multiplications en haut.",
+   "Les mêmes points, partagés en colonnes ou en rangées, donnent les deux divisions vertes en bas.",
+   "Les quatre phrases n'utilisent que les nombres 3, 6 et 18."
+  ],
+  "a_voir": "Vous voyez qu'un seul rangement de 18 points porte quatre phrases : savoir 6 × 3 = 18, c'est savoir aussi 18 ÷ 6 = 3."
+ },
+ {
+  "code": "03-046",
+  "a_dire": "La barre de fraction écrit une division sans la calculer : le dividende au-dessus, le diviseur en dessous, la place remplace le signe ÷.",
+  "legende_titre": "Écrire 3 divisé par 4 sans signe ÷",
+  "lecture": [
+   "En bleu, le 3 est au-dessus de la barre : c'est le dividende ; le 4 est en dessous : c'est le diviseur.",
+   "La boîte violette écrit la même division avec le signe ÷ ; les flèches relient chaque nombre à sa place.",
+   "En rouge : 3 ÷ 4 n'a pas de réponse entière, mais la barre l'écrit quand même."
+  ],
+  "a_voir": "Vous voyez qu'aucun signe ÷ n'est nécessaire : la hauteur de chaque nombre dit son rôle."
+ },
+ {
+  "code": "03-047",
+  "a_dire": "La barre oblique se lit « divisé par » : dans 18/6, on lit de gauche à droite le dividende 18 puis le diviseur 6, sur une seule ligne.",
+  "legende_titre": "18/6 sur une seule ligne",
+  "lecture": [
+   "En haut, la ligne de texte contient 18, la barre bleue /, puis 6.",
+   "Sous chaque case, vous lisez « dix-huit divisé par six » : le dividende d'abord, le diviseur ensuite.",
+   "En bas, en violet, la même division avec la barre horizontale occupe deux niveaux de ligne."
+  ],
+  "a_voir": "Vous voyez que la barre oblique dit la même chose que la barre horizontale, mais sur une seule ligne."
+ },
+ {
+  "code": "03-048",
+  "a_dire": "La potence fixe la place de chaque nombre : le diviseur 8 à gauche du trait, le dividende 4 944 à droite, et les soustractions dessous, chiffres alignés par rang.",
+  "legende_titre": "Poser 4 944 divisé par 8",
+  "lecture": [
+   "Le 8 bleu, à gauche du trait courbe, est le diviseur ; les chiffres de 4 944, à droite, sont le dividende.",
+   "Les colonnes grises gardent chaque chiffre à son rang : milliers, centaines, dizaines, unités.",
+   "Les lignes pointillées dessous attendent les soustractions ; la flèche orange montre qu'on descend d'une ligne à chaque étape."
+  ],
+  "a_voir": "Vous voyez que chaque nombre a une place fixe : il suffit de regarder la colonne pour savoir quoi faire."
+ },
+ {
+  "code": "03-049",
+  "a_dire": "Sur un rectangle de 24 carreaux, diviser retrouve la longueur qui manque : 24 ÷ 4 = 6 donne la largeur, 24 ÷ 6 = 4 donne la hauteur.",
+  "legende_titre": "Le même rectangle, deux longueurs à retrouver",
+  "lecture": [
+   "Les deux rectangles bleus ont 24 carreaux : c'est l'aire, connue des deux côtés.",
+   "En gris, la longueur connue : 4 rangées à gauche, 6 carreaux de large à droite.",
+   "En orange, la longueur cherchée : la rangée du haut à gauche, la colonne de gauche à droite.",
+   "En vert, la division qui répond : 24 ÷ 4 = 6, puis 24 ÷ 6 = 4."
+  ],
+  "a_voir": "Vous voyez que diviser l'aire par une longueur donne l'autre longueur du rectangle."
+ },
+ {
+  "code": "03-050",
+  "a_dire": "Avec 14 ÷ 4, on peut donner la taille des groupes (4) et chercher leur nombre, ou donner le nombre de parts (4) et chercher la taille de chacune : même calcul, question différente.",
+  "legende_titre": "14 objets, deux façons de partager",
+  "lecture": [
+   "À gauche, la taille des groupes est donnée : 4 ; vous comptez les boîtes bleues, il y en a 3.",
+   "À droite, le nombre de parts est donné : 4 ; vous comptez les objets d'une boîte violette, il y en a 3.",
+   "Dans les deux cas, 2 objets gris restent dehors, mais pour une raison différente.",
+   "En bas, le calcul écrit est le même : 14 ÷ 4."
+  ],
+  "a_voir": "Vous voyez que les deux partages s'écrivent 14 ÷ 4, mais que la question posée change ce que l'on compte."
+ },
+ {
+  "code": "03-051",
+  "a_dire": "Les 14 points se répartissent en 3 boîtes pleines de 4 et un reste de 2, plus petit que 4, ce qui se lit 14 = 4 × 3 + 2.",
+  "legende_titre": "Fig. 3.2 — 14 points rangés par paquets de 4",
+  "lecture": [
+   "Le cadre gris contient les 14 points : aucun n'est perdu.",
+   "Les trois boîtes vertes sont pleines : 4 points chacune.",
+   "Les 2 points orange sont le reste ; en rouge, les 2 places vides montrent qu'il faudrait 4 points pour une boîte de plus.",
+   "En bas, chaque morceau de 14 = 4 × 3 + 2 porte la couleur de la partie qu'il compte."
+  ],
+  "a_voir": "Vous voyez que 3 boîtes de 4 et un tas de 2 refont exactement les 14 points, et que le tas est trop petit pour une boîte."
+ },
+ {
+  "code": "03-052",
+  "a_dire": "Diviser 14 par 4, c'est enlever 4 aussi longtemps que possible : 14, 10, 6, 2 ; le nombre de soustractions, 3, est le quotient, et ce qui subsiste, 2, est le reste.",
+  "legende_titre": "Enlever 4 tant que c'est possible",
+  "lecture": [
+   "Vous partez de 14, à droite de la droite graduée.",
+   "Chaque arc orange enlève 4 : vous arrivez à 10, puis à 6, puis à 2.",
+   "L'arc rouge en pointillé sort de la droite : 4 ne tient plus dans 2.",
+   "En vert : 3 soustractions faites, et 2 qui reste."
+  ],
+  "a_voir": "Vous voyez que le quotient est le nombre de sauts, et le reste l'endroit où vous êtes forcé de vous arrêter."
+ },
+ {
+  "code": "03-053",
+  "a_dire": "Le signe < dit que le nombre de gauche est plus petit que celui de droite sans lui être égal : 2 < 4 est vrai, donc on s'arrête ; 4 < 4 est faux.",
+  "legende_titre": "Comparer ce qui reste à un paquet",
+  "lecture": [
+   "En haut, le signe bleu < est placé entre 2, ce qui reste, et 4, la taille d'un paquet.",
+   "Au milieu, les 2 objets bleus face aux 4 objets gris : 2 places restent vides, donc 2 < 4 est vrai et vous vous arrêtez.",
+   "En bas, en rouge : 4 < 4 est faux, car 4 est égal à 4 ; vous pourriez enlever 4 encore une fois."
+  ],
+  "a_voir": "Vous voyez que < demande « plus petit et pas égal » : c'est ce test qui dit quand la soustraction répétée s'arrête."
+ },
+ {
+  "code": "03-054",
+  "a_dire": "La multiplication répète l'addition et la division répète la soustraction : ajouter 4 trois fois mène de 0 à 12, retirer 4 trois fois ramène de 12 à 0, et le 3 est le même des deux côtés.",
+  "legende_titre": "Deux couples d'opérations",
+  "lecture": [
+   "En haut, en violet, vous ajoutez 4 trois fois et passez de 0 à 12 : c'est la multiplication.",
+   "En bas, en bleu, vous retirez 4 trois fois et revenez de 12 à 0 : c'est la division.",
+   "En vert, au milieu : les deux droites comptent 3 sauts ; ce 3 est le multiplicateur en haut et le quotient en bas."
+  ],
+  "a_voir": "Vous voyez que la division refait, avec des soustractions, ce que la multiplication fait avec des additions."
+ },
+ {
+  "code": "03-055",
+  "a_dire": "Le reste est une différence : on retire des 14 objets les 3 paquets de 4, soit 12, et il en subsiste 2 : r = n − d × q.",
+  "legende_titre": "Ce qui subsiste après les paquets",
+  "lecture": [
+   "La bande grise du haut compte les 14 objets du dividende.",
+   "Dans la bande du bas, les 12 cases orange forment 3 paquets de 4 : vous les retirez.",
+   "Les 2 cases bleues sont les mêmes objets que les 2 dernières cases du haut : c'est le reste.",
+   "En bas, le reste s'écrit comme une soustraction : 2 = 14 − 12."
+  ],
+  "a_voir": "Vous voyez que le reste est ce qui subsiste du dividende quand on a ôté tous les paquets complets."
+ },
+ {
+  "code": "03-056",
+  "a_dire": "Parmi toutes les écritures exactes de 14 avec des paquets de 4, une seule a un reste plus petit que 4 : exiger r < d donne un seul couple q, r.",
+  "legende_titre": "Trois écritures exactes de 14, un seul vrai reste",
+  "lecture": [
+   "Chaque rangée montre les mêmes 14 points, rangés en paquets de 4 de trois façons.",
+   "Les points rouges sont un reste de 4 ou plus : le cadre orange en tirets montre un paquet de 4 que vous pouvez encore enlever.",
+   "Les points verts sont le seul reste plus petit que 4 : 2.",
+   "Sous la dernière rangée, les accolades donnent le seul couple possible : q = 3 et r = 2."
+  ],
+  "a_voir": "Seule la rangée du bas n'a plus aucun paquet de 4 dans son reste."
+ },
+ {
+  "code": "03-057",
+  "a_dire": "La formule n = d × q + r écrit 14 avec 4 : 3 sauts de 4 mènent à 12, le reste 2 comble l'écart, et la condition 0 ≤ r < 4 rend cette écriture unique.",
+  "legende_titre": "La formule de la division, lue sur une droite",
+  "lecture": [
+   "Les petits cercles gris marquent 0, 4, 8, 12 et 16 : 14, le point bleu, n'en fait pas partie.",
+   "Les trois flèches orange sont q = 3 sauts de d = 4 : elles mènent à 12.",
+   "Le segment vert est le reste r = 2 : il va de 12 à 14.",
+   "La flèche rouge en pointillés est un quatrième saut : il dépasserait 14, donc il est impossible. Le reste reste dans la bande verte, de 0 à 3 après 12, jamais jusqu'à 16."
+  ],
+  "a_voir": "Le reste est ce qui reste après le dernier saut possible : plus petit que 4, il ne permet pas un saut de plus."
+ },
+ {
+  "code": "03-058",
+  "a_dire": "Avec un reste, q ne dit plus « le nombre qui, multiplié par 4, donne 14 » (il n'existe pas) : q compte les paquets complets, ici 3.",
+  "legende_titre": "La lettre q change de sens quand il y a un reste",
+  "lecture": [
+   "En haut, les points violets sont 4 × 3 = 12 et 4 × 4 = 16 : le point bleu 14 tombe entre les deux.",
+   "Aucun nombre entier q ne donne donc 4 × q = 14 : c'est le texte rouge.",
+   "En bas, les cadres bleus sont les paquets complets de 4 : vous en comptez 3, et q = 3.",
+   "Les 2 points gris restent à part : q ne les compte pas."
+  ],
+  "a_voir": "En haut q n'existe pas, en bas q vaut 3 : la lettre compte maintenant des paquets."
+ },
+ {
+  "code": "03-059",
+  "a_dire": "La lettre r désigne le reste, qui peut prendre plusieurs valeurs, mais toujours de 0 à d − 1 : de 0 à 3 pour d = 4, de 0 à 2 pour d = 3.",
+  "legende_titre": "Les valeurs que la lettre r peut prendre",
+  "lecture": [
+   "Chaque case contient un reste possible, dessiné en points : 0, 1, 2, 3…",
+   "Les cases vertes sont les restes permis : de 0 à 3 quand d = 4, de 0 à 2 quand d = 3.",
+   "La case rouge contient d points : c'est un paquet complet, donc pas un reste.",
+   "Sous les cases épaisses, vous lisez les divisions de la fiche : 14 ÷ 4 et 1 706 ÷ 4 laissent 2, 85 ÷ 3 laisse 1."
+  ],
+  "a_voir": "Le reste change d'un cas à l'autre, mais il reste toujours dans les cases vertes, avant d."
+ },
+ {
+  "code": "03-060",
+  "a_dire": "r < d est le test fait après chaque soustraction : on compare le reste au diviseur ; tant que r < d est faux (7 < 4), on enlève encore un paquet de 4 ; dès que r < d est vrai (3 < 4), on s'arrête.",
+  "legende_titre": "Le test fait après chaque soustraction",
+  "lecture": [
+   "Les 4 carrés gris sont le diviseur d = 4 ; les points orange sont le reste r.",
+   "En haut, les 7 points dépassent le trait en tirets : 7 < 4 est faux, vous enlevez encore 4.",
+   "En bas, les 3 points s'arrêtent avant le trait : 3 < 4 est vrai, vous vous arrêtez."
+  ],
+  "a_voir": "Tant que la rangée orange dépasse la rangée grise, le test est faux et vous continuez ; dès qu'elle est plus courte, il est vrai et vous arrêtez."
+ },
+ {
+  "code": "03-061",
+  "a_dire": "Dans toute division avec reste, d est la taille d'une boîte, q le nombre de boîtes pleines et r le tas qui reste, et n = d × q + r les range dans cet ordre.",
+  "legende_titre": "Lire n = d × q + r sur deux dessins",
+  "lecture": [
+   "L'accolade grise au-dessus de la première boîte donne sa taille : d = 4, puis d = 5.",
+   "L'accolade bleue compte les boîtes pleines : q = 3 dans les deux dessins.",
+   "Les points verts sont le tas qui reste : r = 2 dans les deux dessins.",
+   "Sous chaque dessin, la formule range ces trois nombres dans l'ordre n = d × q + r."
+  ],
+  "a_voir": "Les deux dessins ont des nombres différents mais se lisent exactement de la même façon."
+ },
+ {
+  "code": "03-062",
+  "a_dire": "« d divise n » est une affirmation vraie ou fausse : vraie quand le partage en groupes de d ne laisse rien ; elle n'est ni le nombre n ÷ d, ni « d est plus petit que n ».",
+  "legende_titre": "Diviser, un oui ou un non",
+  "lecture": [
+   "En haut, 18 points se rangent en groupes de 6 sans rien laisser : la réponse est oui, 6 divise 18.",
+   "Le texte violet du haut est un nombre, 3 : il ne répond pas par oui ou par non, et il écrit 18 avant 6.",
+   "En bas, les 2 points rouges restent : la réponse est non, 4 ne divise pas 14.",
+   "Le texte violet du bas rappelle que 4 est plus petit que 14 : cela ne suffit pas."
+  ],
+  "a_voir": "Ce qui décide du oui ou du non, ce sont les points qui restent, pas la taille des nombres."
+ },
+ {
+  "code": "03-063",
+  "a_dire": "Pour vérifier une division, on calcule d × q + r et on regarde si l'on retombe sur n : 3 × 28 + 1 = 85 est juste, 3 × 29 + 1 = 88 est faux.",
+  "legende_titre": "Deux réponses, un seul retour à 85",
+  "lecture": [
+   "La ligne bleue marque 85, le nombre que l'on a divisé par 3.",
+   "Le point orange est le produit 3 × q : 84 en haut, 87 en bas.",
+   "La flèche orange ajoute le reste 1.",
+   "En haut, vous arrivez sur la ligne bleue : le calcul est juste ; en bas, vous arrivez à 88 : il est faux."
+  ],
+  "a_voir": "Seule la réponse 28, reste 1, ramène exactement sur 85."
+ },
+ {
+  "code": "03-064",
+  "a_dire": "La division posée retire des paquets de 4 par estimations de plus en plus petites, et s'arrête dès que le reste est plus petit que 4 : pour 1 706, après 106 et 26, le reste 2.",
+  "legende_titre": "Retirer des paquets de 4 jusqu'au vrai reste",
+  "lecture": [
+   "Les cadres gris sont le reste à chaque étape, rangé en cases de position : il perd une case à chaque fois.",
+   "Chaque flèche orange retire un nombre de paquets de 4 : 400, puis 20, puis 6.",
+   "À droite, le test rouge dit que le reste n'est pas plus petit que 4 : vous continuez.",
+   "Le test vert dit 2 < 4 : vous vous arrêtez, et 2 est le reste."
+  ],
+  "a_voir": "La méthode s'arrête au premier reste plus petit que 4, et pas avant."
+ },
+ {
+  "code": "03-065",
+  "a_dire": "Le cas 4 944 ÷ 8 = 618 réussit sans accroc : les estimations 600, 10 et 8 sont justes du premier coup et le reste final est 0 ; il ne montre donc ni estimation à corriger ni division avec reste.",
+  "legende_titre": "Un calcul sans accroc : rien à corriger, rien qui reste",
+  "lecture": [
+   "Chaque cadre orange est une estimation : 600, puis 10, puis 8 ; leur somme 618 est le quotient.",
+   "Au milieu, chaque soustraction laisse 144, puis 64, puis 0.",
+   "Les cases rouges en tirets restent vides : aucune estimation n'a dû être corrigée.",
+   "Le cadre vert en bas à droite montre que le reste final est 0."
+  ],
+  "a_voir": "La colonne rouge est vide et le reste final est 0 : ce cas ne montre ni erreur à réparer ni reste."
+ },
+ {
+  "code": "03-066",
+  "a_dire": "Abaisser le chiffre suivant, c'est échanger la centaine restante contre 10 dizaines et y ajouter les 4 dizaines du chiffre abaissé : 10 + 4 = 14 dizaines.",
+  "legende_titre": "Ce que fait le geste « abaisser le 4 »",
+  "lecture": [
+   "À gauche, le carré orange est la centaine qui reste ; les bandes grises sont 4 dizaines, les petits carrés 4 unités.",
+   "La flèche orange échange la centaine contre 10 bandes orange, c'est-à-dire 10 dizaines.",
+   "À droite, les 4 bandes grises sont le 4 abaissé : avec les 10 bandes orange, vous comptez 14 dizaines.",
+   "En bas, vous voyez ce qu'on écrit : 1, puis 14."
+  ],
+  "a_voir": "Abaisser le 4 ne change pas la quantité : la centaine devient 10 dizaines, auxquelles s'ajoutent les 4 dizaines."
+ },
+ {
+  "code": "03-067",
+  "a_dire": "Chaque étape de la division posée répète quatre gestes — estimer, multiplier, soustraire, abaisser — et c'est la soustraction qui révèle si l'estimation est trop grande ou trop petite.",
+  "legende_titre": "Quatre gestes, et la soustraction qui juge l'essai",
+  "lecture": [
+   "En haut, les quatre gestes du cycle ; « soustraire », en gras, est le geste qui juge l'essai, et la flèche rouge ramène à « estimer » quand l'essai est mauvais.",
+   "Chaque bande orange est un essai : un rectangle par paquet de 8 retiré ; le trait bleu marque 49.",
+   "Le rouge montre l'échec : avec 7, on dépasse 49 (trop grand) ; avec 5, l'écart restant est plus long qu'un paquet de 8 (trop petit).",
+   "Avec 6, encadré en vert, le petit écart vert est le reste 1, plus petit que 8 : l'essai est juste. En abaissant le 4, vous obtenez 14 dizaines et le cycle recommence."
+  ],
+  "a_voir": "Vous voyez que la soustraction, en comparant chaque essai à 49, dit si l'estimation est trop grande, trop petite ou juste."
+ },
+ {
+  "code": "03-068",
+  "a_dire": "Échanger les deux nombres d'une multiplication ne change pas le produit, car 6 × 7 et 7 × 6 comptent les carreaux de rectangles qui contiennent le même nombre de carreaux ; la soustraction n'a pas cette propriété.",
+  "legende_titre": "Échanger les deux nombres : multiplication et soustraction",
+  "lecture": [
+   "La grille bleue de gauche a 6 rangées de 7 carreaux ; celle de droite a 7 rangées de 6 carreaux.",
+   "Les deux textes verts donnent le même nombre de carreaux : 42.",
+   "En bas, retirer 4 de 6 laisse 2 carreaux verts ; retirer 6 de 4 demande 2 carreaux qui n'existent pas, en rouge."
+  ],
+  "a_voir": "Vous voyez que les deux grilles contiennent 42 carreaux, alors que les deux soustractions ne posent pas la même question."
+ },
+ {
+  "code": "03-069",
+  "a_dire": "La preuve part de 6 rangées de 7 carreaux, tourne le rectangle d'un quart de tour — ce qui déplace les carreaux sans en ajouter ni en retirer — et arrive à 7 rangées de 6 carreaux, donc a × b = b × a.",
+  "legende_titre": "Un quart de tour, et les rangées deviennent colonnes",
+  "lecture": [
+   "Le rectangle de gauche a 6 rangées de 7 carreaux ; c'est le départ.",
+   "La flèche orange le tourne d'un quart de tour ; la rangée entourée d'orange devient la colonne de droite.",
+   "Le carreau orange se retrouve ailleurs, mais aucun carreau n'apparaît ni ne disparaît.",
+   "Les deux textes verts comptent donc les mêmes 42 carreaux de deux façons."
+  ],
+  "a_voir": "Vous voyez que la rotation transforme 6 rangées de 7 en 7 rangées de 6 en déplaçant les mêmes carreaux."
+ },
+ {
+  "code": "03-070",
+  "a_dire": "Quand on multiplie trois nombres, on peut grouper les deux premiers ou les deux derniers sans changer le résultat, ce qui n'est pas vrai pour la division.",
+  "legende_titre": "Déplacer les parenthèses : multiplication et division",
+  "lecture": [
+   "En haut, les mêmes nombres 8, 3, 14 sont groupés de deux façons ; l'accolade orange donne ce que l'on calcule d'abord.",
+   "Les deux boîtes vertes donnent le même résultat : 336.",
+   "En bas, la même manœuvre avec la division donne 3 d'un côté et 12 de l'autre, en rouge."
+  ],
+  "a_voir": "Vous voyez que déplacer les parenthèses ne change rien pour la multiplication, mais change le résultat pour la division."
+ },
+ {
+  "code": "03-071",
+  "a_dire": "La preuve compte une seule boîte de 8 sur 3 sur 14 cubes de deux façons — par couches de 8 × 3 ou par tranches de 3 × 14 — et comme c'est la même boîte, (8 × 3) × 14 = 8 × (3 × 14) = 336.",
+  "legende_titre": "Une boîte de cubes comptée de deux façons",
+  "lecture": [
+   "La boîte mesure 8 cubes de long, 3 de large et 14 de haut.",
+   "La couche orange du haut contient 8 × 3 = 24 cubes ; il y a 14 couches pareilles.",
+   "La tranche entourée de violet contient 3 × 14 = 42 cubes ; il y a 8 tranches pareilles.",
+   "Les deux comptages en vert portent sur la même boîte, donc ils donnent le même nombre : 336."
+  ],
+  "a_voir": "Vous voyez que les deux façons de grouper les facteurs comptent les cubes d'une seule et même boîte."
+ },
+ {
+  "code": "03-072",
+  "a_dire": "Multiplier un nombre par 1 ne change pas ce nombre — 7 × 1 = 7 — ce qui permet aussi d'écrire 7 sous la forme 7 × 1 sans changer sa valeur.",
+  "legende_titre": "Sept rangées d'un carreau, et ce qu'on en fait",
+  "lecture": [
+   "En haut à gauche, 7 rangées d'un seul carreau : la somme de sept 1 donne 7.",
+   "Tournées d'un quart de tour, elles forment une seule rangée de 7 carreaux, qui en contient toujours 7.",
+   "En bas, la colonne orange est 7 écrit 7 × 1 ; elle a la même hauteur 7 que le rectangle 7 × 3.",
+   "Écrire 7 comme 7 × 1 fait apparaître le facteur 7 dans les deux termes, sans changer la valeur."
+  ],
+  "a_voir": "Vous voyez que multiplier par 1 garde 7 carreaux, et que la colonne 7 × 1 a la même hauteur que le rectangle 7 × 3."
+ },
+ {
+  "code": "03-073",
+  "a_dire": "Un élément neutre est le nombre qui ne change rien pour une opération donnée : 0 pour l'addition, 1 pour la multiplication ; c'est un rôle, pas une valeur, car 0 change tout en multiplication.",
+  "legende_titre": "Le nombre qui ne change rien dépend de l'opération",
+  "lecture": [
+   "La bande du haut ajoute 0 à 7 : les 7 carreaux restent 7.",
+   "La bande du milieu multiplie 7 par 1 : une seule rangée de 7 carreaux, toujours 7.",
+   "La bande du bas multiplie 7 par 0 : les carreaux rouges barrés n'existent pas, il reste 0.",
+   "Le trait vert réunit les deux bandes où rien ne change : c'est le rôle d'élément neutre, tenu par 0 puis par 1."
+  ],
+  "a_voir": "Vous voyez que le nombre qui ne change rien est 0 pour l'addition et 1 pour la multiplication, et que 0 détruit tout en multiplication."
+ },
+ {
+  "code": "03-074",
+  "a_dire": "a × 0 = 0 parce qu'un carreau demande à la fois une rangée et une place dans cette rangée : 5 rangées de 0 carreau et 0 rangée de 5 carreaux ne contiennent aucun carreau.",
+  "legende_titre": "Sans rangée ou sans place, pas de carreau",
+  "lecture": [
+   "Un carreau demande une rangée et une place dans cette rangée.",
+   "À gauche, il y a 5 rangées, dessinées vides : elles n'ont aucune place, donc aucun carreau.",
+   "À droite, il y aurait 5 places par rangée, mais le cadre est vide : il n'y a aucune rangée, donc aucun carreau.",
+   "Les deux lectures donnent le même résultat, écrit en vert : 5 × 0 = 0."
+  ],
+  "a_voir": "Vous voyez qu'il faut une rangée et une place pour avoir un carreau, et que chaque lecture de 5 × 0 en manque une."
+ },
+ {
+  "code": "03-075",
+  "a_dire": "La distributivité exige de multiplier chaque terme de la somme : 3 × (4 + 2) = 18, alors que multiplier seulement le 4 donne 3 × 4 + 2 = 14 et oublie 4 carreaux.",
+  "legende_titre": "Multiplier un seul morceau de la somme",
+  "lecture": [
+   "Les deux rectangles ont 3 rangées et une largeur de 4 plus 2 carreaux.",
+   "À gauche, les 12 carreaux bleus et les 6 carreaux orange sont comptés : 18.",
+   "À droite, on ajoute seulement 2 carreaux orange aux 12 bleus : 14.",
+   "Les 4 cases rouges sont les carreaux oubliés de la deuxième partie."
+  ],
+  "a_voir": "Vous voyez que multiplier seulement le premier terme laisse 4 carreaux hors du compte."
+ },
+ {
+  "code": "03-076",
+  "a_dire": "La formule a × (b + c) = a × b + a × c relie deux suites d'actions différentes — additionner puis multiplier, ou multiplier chaque terme puis additionner — qui aboutissent au même nombre, 18.",
+  "legende_titre": "Deux chemins de calcul pour 3 fois (4 plus 2)",
+  "lecture": [
+   "La colonne de gauche additionne d'abord 4 et 2, puis empile 3 rangées de 6 : 18.",
+   "La colonne de droite fait d'abord 3 rangées de 4 et 3 rangées de 2, puis les met ensemble : 12 plus 6.",
+   "La flèche verte relie les deux résultats : les actions sont différentes, le nombre final est le même."
+  ],
+  "a_voir": "Vous voyez deux suites d'actions dans un ordre différent qui arrivent au même nombre, 18."
+ },
+ {
+  "code": "03-077",
+  "a_dire": "Le trait rouge coupe le rectangle 3 × (4 + 2) en deux morceaux de même hauteur 3, sans perdre de carreau : 3 × 4 à gauche et 3 × 2 à droite, d'où 3 × (4 + 2) = 3 × 4 + 3 × 2.",
+  "legende_titre": "Un rectangle coupé en deux morceaux de même hauteur",
+  "lecture": [
+   "Le rectangle a 3 rangées ; chaque rangée a 4 carreaux bleus et 2 carreaux orange.",
+   "Le trait rouge le coupe en deux morceaux, sans enlever de carreau.",
+   "Les deux flèches grises montrent la même hauteur 3 à gauche et à droite : le 3 multiplie chaque morceau.",
+   "En bas, 12 carreaux bleus plus 6 carreaux orange redonnent le grand rectangle."
+  ],
+  "a_voir": "Vous voyez que les deux morceaux ont la même hauteur 3, et que leurs carreaux réunis forment tout le rectangle."
+ },
+ {
+  "code": "03-078",
+  "a_dire": "L'écriture b + c désigne une seule longueur : la largeur du grand rectangle entier avant la coupe, ici 4 + 2 = 6 ; les parenthèses de a × (b + c) font de cette somme un seul nombre, multiplié en entier par a.",
+  "legende_titre": "Ce que désigne b + c dans a × (b + c)",
+  "lecture": [
+   "La flèche verte part de (b + c) et mène à l'accolade verte : elle couvre tout le rectangle, 6 carreaux.",
+   "Sous le rectangle, l'accolade bleue donne b = 4 et l'accolade orange donne c = 2.",
+   "À gauche, a = 3 compte les rangées ; à droite, 3 × 6 = 18 multiplie la somme entière."
+  ],
+  "a_voir": "Vous voyez que b + c n'est pas deux morceaux mais une seule largeur, celle du rectangle entier."
+ },
+ {
+  "code": "03-079",
+  "a_dire": "L'écriture a × b nomme en trois signes le nombre de carreaux du morceau de gauche (a rangées de b carreaux), ici 3 × 4 = 12, sans avoir à le calculer ni à le dire en phrase ; elle ne désigne pas le morceau de droite.",
+  "legende_titre": "Le morceau que nomme a × b",
+  "lecture": [
+   "La ligne qui part de a mène aux 3 rangées ; celle qui part de b mène à la largeur 4 du morceau bleu.",
+   "L'accolade verte sous le morceau bleu compte ses 12 carreaux : c'est le nombre que nomme a × b.",
+   "Le morceau gris, après le trait rouge, n'est pas a × b.",
+   "À droite, la phrase en gris dit la même chose que les trois signes a × b."
+  ],
+  "a_voir": "Vous voyez que a × b nomme les carreaux bleus, et eux seuls."
+ },
+ {
+  "code": "03-080",
+  "a_dire": "L'écriture a × c vient de la coupe : le trait ne change pas le nombre de rangées, donc le morceau de droite garde a = 3 rangées et a la largeur c = 2 qui reste, soit a × c = 3 × 2 = 6 carreaux.",
+  "legende_titre": "D'où vient l'écriture a × c",
+  "lecture": [
+   "En haut, le rectangle gris a 3 rangées, avant la coupe.",
+   "En bas, le trait rouge coupe le rectangle ; le morceau orange est à sa droite.",
+   "Le trait orange à droite montre que ce morceau a encore 3 rangées ; l'accolade orange donne sa largeur, c = 2.",
+   "Le texte vert compte ses carreaux : 3 rangées de 2, soit 6."
+  ],
+  "a_voir": "Vous voyez que la coupe garde les 3 rangées et ne change que la largeur : 3 × 2."
+ },
+ {
+  "code": "03-081",
+  "a_dire": "La distributivité est une propriété qui relie deux opérations, la multiplication et l'addition, alors que les autres propriétés n'en concernent qu'une ; c'est la multiplication qui se distribue sur les termes de la somme : 3 × (4 + 2) = 3 × 4 + 3 × 2 = 18.",
+  "legende_titre": "Une propriété à part dans sa famille",
+  "lecture": [
+   "Les cadres gris ne contiennent qu'un seul signe d'opération, ×.",
+   "La ligne bleue contient deux opérations, × et + ; les flèches orange montrent le 3 qui va sur le 4 et sur le 2.",
+   "Le rectangle donne 18 des deux façons : 3 × 6, ou 12 + 6.",
+   "En rouge, si vous échangez + et ×, vous obtenez 11 d'un côté et 35 de l'autre."
+  ],
+  "a_voir": "Vous voyez que seule la distributivité met deux opérations ensemble, et que c'est la multiplication qui se distribue."
+ },
+ {
+  "code": "03-082",
+  "a_dire": "Chaque ligne de la multiplication posée de 326 × 48 est un morceau du rectangle de 326 sur 48 coupé en 40 + 8 : la ligne du 8 vaut 326 × 8 = 2 608, la ligne du 40 vaut 326 × 40 = 13 040, et l'addition finale 15 648 recolle les deux morceaux ; la méthode est la distributivité.",
+  "legende_titre": "Pourquoi les lignes de la posée sont justes",
+  "lecture": [
+   "La ligne orange 2 608 mène à la bande orange : c'est 326 × 8.",
+   "La ligne bleue 13 040 mène à la bande bleue : c'est 326 × 40.",
+   "En bas, la ligne en gras coupe 48 en 40 + 8 : c'est la distributivité.",
+   "Le vert 15 648 est la somme des deux bandes, donc le rectangle entier."
+  ],
+  "a_voir": "Vous voyez que chaque ligne de la posée est une bande du rectangle de 326 sur 48."
+ },
+ {
+  "code": "03-083",
+  "a_dire": "La multiplication posée de 426 × 4 remplace 425 additions par cinq petits calculs (trois petits produits et deux additions de retenues) et donne le même résultat, 1 704 euros.",
+  "legende_titre": "426 × 4 en cinq gestes",
+  "lecture": [
+   "La liste donne les cinq petits calculs dans l'ordre ; les lignes orange ajoutent les retenues, écrites en orange au-dessus de 426.",
+   "La barre rouge compte 425 additions ; la petite barre verte, à la même échelle, compte 5 calculs.",
+   "Les deux chemins donnent 1 704 euros."
+  ],
+  "a_voir": "Vous voyez que cinq petits calculs remplacent une barre de 425 additions."
+ },
+ {
+  "code": "03-084",
+  "a_dire": "Un nombre se coupe en autant de morceaux qu'il a de chiffres, chaque morceau ayant la valeur de sa position (426 = 400 + 20 + 6) ; la distributivité, appliquée deux fois, donne un produit par morceau : 4 × 426 = 1 600 + 80 + 24 = 1 704, et la même règle vaut pour 4 chiffres ou plus.",
+  "legende_titre": "Un chiffre, un morceau, un produit",
+  "lecture": [
+   "Chaque case bleue contient un chiffre de 426 ; sous elle, le nombre bleu est la valeur de ce chiffre à sa place.",
+   "L'accolade orange regroupe 20 et 6 en 26 : on coupe d'abord 426 en 400 + 26, puis 26 en 20 + 6.",
+   "Les flèches orange multiplient chaque morceau par 4 ; l'accolade verte additionne les trois produits.",
+   "La case en pointillés montre qu'un chiffre de plus ajouterait un morceau de plus."
+  ],
+  "a_voir": "Vous voyez qu'il y a autant de produits que de chiffres, et que leur somme donne 1 704."
+ },
+ {
+  "code": "03-085",
+  "a_dire": "Dans 1 706 ÷ 4, chaque nombre regardé (17, 10, 26) contient au moins une fois 4, donc aucun 0 au quotient (426) ; ce cas ne montre pas le 0 au quotient, qui apparaît dans 1 204 ÷ 4 quand le nombre regardé est 0 (301).",
+  "legende_titre": "Le zéro au quotient : absent du cas 1 706 ÷ 4",
+  "lecture": [
+   "Chaque carré bleu est un 4 qui tient dans le nombre de sa case ; le nombre de carrés est le chiffre écrit au quotient.",
+   "En haut, chaque case a au moins un carré : 4, 2, 6, et le quotient 426 n'a pas de 0.",
+   "En bas, la case rouge regarde 0 : aucun carré, donc le chiffre écrit est 0, et le quotient est 301."
+  ],
+  "a_voir": "Seule la rangée du bas a une case sans carré : c'est elle qui met un 0 au quotient."
+ },
+ {
+  "code": "03-086",
+  "a_dire": "Le quotient seul ne distingue pas les caisses de 1 704, 1 705, 1 706 et 1 707 euros (426 places dans les quatre cas) ; le reste, 0, 1, 2 ou 3, les distingue : c'est une information, pas une erreur.",
+  "legende_titre": "Quatre caisses, un seul quotient",
+  "lecture": [
+   "Les cadres gris sont les mêmes pour les quatre caisses : 426 places.",
+   "Chaque disque orange est un euro qui reste ; leur nombre passe de 0 à 3.",
+   "Le cadre vert en pointillés entoure les 2 euros de la salle, qui ne paient aucune place."
+  ],
+  "a_voir": "Vous voyez que seule la ligne orange change d'une caisse à l'autre."
+ },
+ {
+  "code": "03-087",
+  "a_dire": "Un critère de divisibilité ne fait pas la division : il lit des chiffres du nombre (pour 432 : 4 + 3 + 2 = 9) et répond seulement oui ou non à « le reste est-il 0 ? », sans donner de quotient.",
+  "legende_titre": "Même question, deux méthodes",
+  "lecture": [
+   "En haut, en violet, la division coupe 432 en 3 parts de 144 : elle donne un quotient et un reste.",
+   "En bas, en bleu, le critère ne regarde que les chiffres 4, 3 et 2 : leur somme 9 est divisible par 3.",
+   "Le cadre vert du critère dit seulement oui : il ne donne aucun quotient."
+  ],
+  "a_voir": "Comparez les deux cadres de droite : la division donne deux nombres, le critère ne donne que oui."
+ },
+ {
+  "code": "03-088",
+  "a_dire": "Le critère de divisibilité par 2 ne lit que le dernier chiffre et range tous les entiers en deux familles : ceux qui finissent par 0, 2, 4, 6 ou 8 sont divisibles par 2 (les pairs) ; ceux qui finissent par 1, 3, 5, 7 ou 9 ont un reste de 1.",
+  "legende_titre": "Deux familles, un seul chiffre lu",
+  "lecture": [
+   "Dans chaque nombre, seul le dernier chiffre est encadré ; le reste est gris car il n'est pas lu.",
+   "Le cadre vert contient les cinq derniers chiffres des nombres divisibles par 2.",
+   "Le cadre violet contient les cinq autres : le reste de la division par 2 est 1.",
+   "Les flèches orange envoient 6 532 dans le cadre vert et 6 533 dans le cadre violet."
+  ],
+  "a_voir": "Vous voyez que les dix derniers chiffres possibles se rangent en deux familles de cinq."
+ },
+ {
+  "code": "03-089",
+  "a_dire": "Un nombre a le même reste dans la division par 3 que la somme de ses chiffres, parce que chaque rang (1 000, 100, 10) vaut un multiple de 3 plus 1.",
+  "legende_titre": "6 532 et la somme de ses chiffres face à 3",
+  "lecture": [
+   "Les cases bleues sont les chiffres de 6 532 : milliers, centaines, dizaines, unités.",
+   "Chaque boîte grise est la part d'un rang qui est un multiple de 3 : 999, 99 et 9 sont dans la table de 3.",
+   "Les flèches orange portent ce qui reste de chaque rang, le chiffre seul, vers la boîte verte 6 + 5 + 3 + 2 = 16.",
+   "En bas, vous lisez que 16 et 6 532 ont tous deux le reste 1 dans la division par 3."
+  ],
+  "a_voir": "Voyez que, une fois les boîtes grises écartées, il ne reste que les chiffres, et leur somme garde le reste de 6 532."
+ },
+ {
+  "code": "03-090",
+  "a_dire": "Le critère de 4 ne regarde que les deux derniers chiffres parce que 100 est un multiple de 4 ; pour 3, où 100 n'est pas un multiple, ce même test échoue.",
+  "legende_titre": "Deux derniers chiffres : pour 4, puis pour 3",
+  "lecture": [
+   "En haut, la boîte verte dit que 100 est un multiple de 4 ; la boîte rouge dit que 100 n'est pas un multiple de 3.",
+   "Les cases bleues sont les deux derniers chiffres lus : 48 dans 31 048, 12 dans 112.",
+   "Les deux tests disent « oui », mais en bas seul le verdict de gauche est vrai : 112 vaut 3 fois 37, plus 1."
+  ],
+  "a_voir": "Voyez que le même test donne une réponse fausse dès que 100 n'est plus un multiple du diviseur."
+ },
+ {
+  "code": "03-091",
+  "a_dire": "Toute dizaine fait deux paquets de 5 (10 = 5 × 2), donc seul le chiffre des unités peut laisser un reste ; parmi les chiffres 0 à 9, seuls 0 et 5 font des paquets de 5 complets : d'où la règle « finit par 0 ou 5 ».",
+  "legende_titre": "Pourquoi seul le dernier chiffre compte pour 5",
+  "lecture": [
+   "Chaque cadre gris est une dizaine : ses 10 points font 2 paquets de 5 entourés de vert, car 10 = 5 × 2.",
+   "Les dizaines ne laissent donc jamais de reste ; seul le cadre orange, les unités, reste à examiner.",
+   "Dans la rangée des dix chiffres, seules les cases vertes 0 et 5 font des paquets de 5 complets : 35 finit par 5, 2 346 finit par 6."
+  ],
+  "a_voir": "Voyez que toutes les dizaines sont déjà en paquets de 5 : la question ne porte que sur le dernier chiffre."
+ },
+ {
+  "code": "03-092",
+  "a_dire": "Un nombre est divisible par 6 quand il est divisible par 2 et par 3 : parmi les multiples de 3, ceux qui sont pairs sont exactement les multiples de 6.",
+  "legende_titre": "Les multiples de 3, pairs et impairs",
+  "lecture": [
+   "Les boîtes rouges montrent qu'une seule condition ne suffit pas : 4 et 9 ne sont pas divisibles par 6.",
+   "La rangée est la liste des multiples de 3 ; les cases grises sont impaires, les cases vertes sont paires.",
+   "Les traits verts réunissent 6, 12 et 18 : ce sont exactement les multiples de 6."
+  ],
+  "a_voir": "Voyez qu'il faut être dans la rangée (par 3) et en vert (par 2) pour être un multiple de 6."
+ },
+ {
+  "code": "03-093",
+  "a_dire": "Le critère de 8 lit les trois derniers chiffres parce que 1 000 = 8 × 125 ; avec seulement deux chiffres, il échoue, car 100 = 8 × 12 + 4.",
+  "legende_titre": "Lire deux chiffres ou trois pour 8",
+  "lecture": [
+   "La boîte verte dit que 1 000 est un multiple de 8 ; la boîte rouge dit que 100 ne l'est pas : il reste 4.",
+   "Sur la droite, les points verts sont les multiples de 8 ; les points rouges 100 et 116 sont chacun à 4 après un point vert.",
+   "En bas, 16 est un multiple de 8, mais 116 ne l'est pas : deux chiffres ne suffisent pas."
+  ],
+  "a_voir": "Voyez que 116 tombe à côté d'un multiple de 8, alors que ses deux derniers chiffres disaient oui."
+ },
+ {
+  "code": "03-094",
+  "a_dire": "Le critère de 9 remplace un grand nombre par la somme de ses chiffres, plus petite, qui garde le même reste dans la division par 9 ; on répète jusqu'à un seul chiffre.",
+  "legende_titre": "6 532, puis 16, puis 7 : ce qui ne bouge pas",
+  "lecture": [
+   "Les boîtes bleues sont les nombres successifs : 6 532, puis 16, puis 7.",
+   "Les flèches orange montrent l'opération : on additionne les chiffres du nombre précédent.",
+   "Sous chaque boîte, le texte vert écrit le nombre avec 9 : le reste est 7 les trois fois."
+  ],
+  "a_voir": "Voyez que le nombre rapetisse à chaque flèche, mais que le reste 7 reste le même."
+ },
+ {
+  "code": "03-095",
+  "a_dire": "Un zéro à droite veut dire « fois dix » : un nombre qui finit par 0 est 10 fois le nombre sans ce zéro ; un chiffre des unités non nul, plus petit que 10, est un reste.",
+  "legende_titre": "4 730 et 4 735, dizaines et unités",
+  "lecture": [
+   "Les boîtes bleues sont les 473 dizaines, les mêmes dans les deux nombres.",
+   "En haut, la case verte 0 donne 4 730, qui vaut exactement 10 fois 473.",
+   "En bas, la case rouge 5 donne 4 735 : il reste 5, car 5 est plus petit que 10."
+  ],
+  "a_voir": "Voyez que seule la case des unités change, et qu'elle seule décide."
+ },
+ {
+  "code": "03-096",
+  "a_dire": "Chaque critère se lit jusqu'à son verdict : 432 oui par 3 (somme 9), 31 048 oui par 4 (48), 6 532 non par 6, car un seul échec (par 3) suffit.",
+  "legende_titre": "Trois nombres, trois tests, trois verdicts",
+  "lecture": [
+   "Chaque ligne va de gauche à droite : le nombre et le diviseur testé (bleu), le test (au milieu), puis le verdict OUI ou NON.",
+   "Pour 432, la somme des chiffres est 9, multiple de 3 : OUI. Pour 31 048, les deux derniers chiffres 48 sont dans la table de 4 : OUI.",
+   "Pour 6 532, deux tests sont nécessaires : le vert dit oui, le rouge dit non, et la flèche rouge mène au verdict NON. Un seul échec suffit."
+  ],
+  "a_voir": "Voyez que, pour 6, une seule boîte rouge suffit à changer le verdict en NON."
+ },
+ {
+  "code": "03-097",
+  "a_dire": "Tout nombre est des dizaines plus un chiffre des unités ; les dizaines étant toutes divisibles par 2, 5 et 10, seul le dernier chiffre décide.",
+  "legende_titre": "6 532 coupé en dizaines et unités",
+  "lecture": [
+   "La boîte bleue est le départ : 6 532, coupé en 6 530 (les dizaines) et 2 (les unités).",
+   "Les trois boîtes vertes de gauche disent que 6 530, qui vaut 653 fois 10, est toujours divisible par 2, par 5 et par 10.",
+   "À droite, seul le chiffre orange 2 décide : divisible par 2, pas par 5, pas par 10."
+  ],
+  "a_voir": "Voyez que la part des dizaines répond toujours oui, et que seule la petite boîte orange fait changer les réponses."
+ },
+ {
+  "code": "03-098",
+  "a_dire": "La preuve coupe 31 048 en deux : pour 4, la part de gauche est faite de centaines et 100 = 4 × 25, donc seuls les 2 derniers chiffres (48) restent à tester ; pour 8, elle est faite de milliers et 1 000 = 8 × 125, donc ce sont les 3 derniers (048).",
+  "legende_titre": "Où couper 31 048, et pourquoi là",
+  "lecture": [
+   "En haut, les cinq cases sont les chiffres de 31 048.",
+   "Rangée « pour 4 » : la part grise vaut 310 × 100 ; comme 100 = 4 × 25, elle est divisible par 4, et seule la part verte 48 reste à tester.",
+   "Rangée « pour 8 » : la part grise vaut 31 × 1 000 ; comme 1 000 = 8 × 125, elle est divisible par 8, et la part verte 048 reste à tester."
+  ],
+  "a_voir": "Chaque égalité orange place sa coupe : 2 chiffres verts pour 4, 3 chiffres verts pour 8."
+ },
+ {
+  "code": "03-099",
+  "a_dire": "Un multiple de 9 est un nombre égal à 9 fois un nombre entier, comme 9, 63, 99 ou 693 ; dire « 63 est un multiple de 9 » dit la même chose que « 9 divise 63 ».",
+  "legende_titre": "Les nombres que l'on atteint par bonds de 9",
+  "lecture": [
+   "Les flèches orange sont des bonds de 9, partant de 0 sur la droite grise.",
+   "Les points verts 9, 63 et 99 sont atteints après 1, 7 et 11 bonds : ce sont des multiples de 9.",
+   "En bas, la boîte violette et la boîte bleue disent la même chose sur 9 et 63, l'une depuis 9, l'autre depuis 63."
+  ],
+  "a_voir": "Voyez qu'un multiple de 9 est un nombre où l'on tombe exactement en faisant des bonds de 9 depuis 0."
+ },
+ {
+  "code": "03-100",
+  "a_dire": "Pour 702, on remplace 100 par 99 + 1 ; la distributivité coupe 7 × 100 en 7 × 99, multiple de 9, et 7 × 1 ; il reste 7 + 0 + 2 = 9, qui décide seul de la divisibilité par 9.",
+  "legende_titre": "702 coupé en deux morceaux",
+  "lecture": [
+   "Les 7 rangées sont les 7 centaines de 702 ; chaque rangée vaut 100.",
+   "La ligne orange coupe chaque 100 en 99 et 1.",
+   "La partie grise, 7 × 99 = 693, est un multiple de 9.",
+   "Les morceaux bleus font 7 + 0 + 2 = 9 : c'est la somme des chiffres."
+  ],
+  "a_voir": "Vous voyez que 702 se sépare en un bloc gris multiple de 9 et une petite partie bleue égale à la somme des chiffres."
+ },
+ {
+  "code": "03-101",
+  "a_dire": "La preuve du critère de 3 reprend la découpe du critère de 9 (432 = 396 + 27 + 9) ; comme 9 = 3 × 3 et 99 = 3 × 33, la partie multiple de 9 est aussi multiple de 3, et seule la somme des chiffres décide.",
+  "legende_titre": "Pourquoi la découpe du 9 sert aussi au 3",
+  "lecture": [
+   "En haut, 432 se découpe comme dans la preuve du critère de 9 : 396 = 4 × 99 et 27 = 3 × 9 (gris, multiples de 9, donc de 3), plus la somme des chiffres 4 + 3 + 2 = 9 (bleu).",
+   "À gauche, 99 se coupe en 3 paquets orange de 33.",
+   "À droite, les 9 points se rangent en 3 paquets orange de 3.",
+   "En bas, en vert, les morceaux gris sont des multiples de 3 : seule la somme des chiffres décide, et 432 = 3 × 144."
+  ],
+  "a_voir": "Vous voyez que 9 et 99 se partagent en paquets de 3, donc le bloc gris est un multiple de 3 et seule la somme des chiffres reste à tester."
+ },
+ {
+  "code": "03-102",
+  "a_dire": "12 ÷ 0 ne désigne aucun nombre : quel que soit q (1, 5, 1 000), 0 × q vaut 0 et n'atteint jamais 12, donc 12 = 0 × q est faux pour chaque q.",
+  "legende_titre": "Chercher q tel que 0 × q fasse 12",
+  "lecture": [
+   "Les boîtes orange sont trois essais pour q : 1, 5 et 1 000.",
+   "Chaque flèche orange tombe sur 0, car 0 fois un nombre fait 0.",
+   "Le point violet est 12, le nombre qu'il faudrait atteindre.",
+   "L'accolade rouge marque l'écart entre 0 et 12 : aucun essai ne le comble."
+  ],
+  "a_voir": "Vous voyez que toutes les flèches tombent sur 0 et qu'aucune n'arrive à 12."
+ },
+ {
+  "code": "03-103",
+  "a_dire": "Une écriture indéfinie donne un nom à un nombre que rien ne porte (4 − 9 dans les entiers, « le plus grand entier », 12 ÷ 0) ; ce n'est ni une écriture définie, qui désigne un point, ni une égalité fausse, qui affirme quelque chose d'inexact.",
+  "legende_titre": "Trois écritures sans nombre, et leurs voisines",
+  "lecture": [
+   "Dans le cadre bleu, trois écritures de la même famille : 4 − 9, 12 ÷ 0 et « le plus grand entier ».",
+   "Leurs flèches rouges s'arrêtent avant la droite : elles ne désignent aucun nombre.",
+   "À gauche, 12 ÷ 4 désigne bien un nombre : la flèche verte touche 3.",
+   "La boîte rouge 12 = 5 est une phrase fausse : elle affirme, elle ne nomme rien."
+  ],
+  "a_voir": "Vous voyez que les écritures du cadre bleu visent un nombre, mais qu'aucun point de la droite ne leur répond."
+ },
+ {
+  "code": "03-104",
+  "a_dire": "Quand la largeur d d'un rectangle de 12 carreaux passe de 4 à 2 puis à 1, la hauteur q passe à 3, 6 puis 12 et l'aire d × q reste 12 ; pour d = 0, le rectangle devient un trait d'aire 0.",
+  "legende_titre": "Le même nombre de carreaux, de plus en plus étroit",
+  "lecture": [
+   "Chaque rectangle bleu contient 12 carreaux : 4 × 3, 2 × 6, puis 1 × 12.",
+   "Sous chaque rectangle, les nombres orange donnent la largeur d et la hauteur q : quand d baisse, q monte, et d × q reste 12.",
+   "Le trait rouge est le rectangle de largeur 0 : 0 × q = 0, il ne contient aucun carreau, son aire n'est jamais 12."
+  ],
+  "a_voir": "Vous voyez que les rectangles bleus gardent 12 carreaux, mais que le trait rouge n'en a plus aucun."
+ },
+ {
+  "code": "03-105",
+  "a_dire": "12 ÷ d = q cherche un rectangle de largeur d et de hauteur q qui a 12 carreaux ; pour d = 0, le rectangle est un trait d'aire 0 quelle que soit sa hauteur (5, 100, 1 000), donc aucune hauteur ne donne 12 carreaux.",
+  "legende_titre": "Tirer un trait plus haut ne crée aucun carreau",
+  "lecture": [
+   "Le rectangle bleu a une largeur d, une hauteur q et 12 carreaux : c'est ce que demande 12 ÷ d = q.",
+   "La flèche orange met la largeur à 0.",
+   "Les traits rouges ont 5, 100 puis 1 000 de hauteur, et chacun contient 0 carreau.",
+   "La boîte verte dit la conclusion : aucune hauteur ne suffit."
+  ],
+  "a_voir": "Vous voyez que les traits rouges grandissent, mais que leur compte de carreaux reste 0."
+ },
+ {
+  "code": "03-106",
+  "a_dire": "Pour 0 ÷ 0, le test 0 = 0 × q est vrai pour chaque q (5, 31, 286…) ; tous les nombres passent, aucun ne se détache, donc il n'y a pas de réponse unique : 0 ÷ 0 est indéterminé.",
+  "legende_titre": "Le test 0 = 0 × q pour différents q",
+  "lecture": [
+   "En haut, le test que doit passer la réponse de 0 ÷ 0.",
+   "Les trois calculs verts montrent que 5, 31 et 286 passent le test.",
+   "La bande verte couvre toute la droite : chaque nombre passe.",
+   "Comme tous passent, le test n'en choisit aucun."
+  ],
+  "a_voir": "Vous voyez que la droite entière est verte : aucun point ne se distingue des autres."
+ },
+ {
+  "code": "03-107",
+  "a_dire": "Ce qui sépare indéterminé de ses voisins, c'est le nombre de réponses : défini, une seule (12 ÷ 4 = 3) ; indéfini, aucune (12 ÷ 0) ; indéterminé, une infinité (0 ÷ 0).",
+  "legende_titre": "Combien de réponses ? Un, zéro, tous",
+  "lecture": [
+   "Chaque ligne est une écriture, avec la même droite de nombres.",
+   "En haut, 12 ÷ 4 a un seul point vert : 3.",
+   "Au milieu, 12 ÷ 0 n'a aucun point.",
+   "En bas, 0 ÷ 0 a toute la droite en vert : chaque nombre convient, aucun ne se détache."
+  ],
+  "a_voir": "Vous voyez que les trois lignes diffèrent seulement par le nombre de points verts : un, zéro, ou tous."
+ },
+ {
+  "code": "03-108",
+  "a_dire": "La même règle, 0 × q vaut toujours 0, donne deux problèmes différents selon le dividende : 12 = 0 × q est faux pour tout q (aucune réponse), 0 = 0 × q est vrai pour tout q (toutes les réponses) ; dans les deux cas, pas de résultat unique.",
+  "legende_titre": "Une seule règle, deux problèmes",
+  "lecture": [
+   "En haut, la règle commune : 0 fois un nombre vaut 0.",
+   "Le trait orange est 0 × q : il a toujours la hauteur 0.",
+   "À gauche, la barre violette 12 est plus haute : l'égalité est fausse pour tout q.",
+   "À droite, le dividende 0 a la même hauteur que 0 × q : l'égalité est vraie pour tout q."
+  ],
+  "a_voir": "Vous voyez que seul le dividende change : 12 ne rejoint jamais 0, et 0 le rejoint toujours."
+ },
+ {
+  "code": "03-109",
+  "a_dire": "0 ÷ 7 cherche q tel que 7 × q = 0 : avec 7 rangées de q carreaux, q = 1 donne 7 carreaux, q = 2 en donne 14, et seul q = 0 donne 0 ; la réponse 0 est forcée.",
+  "legende_titre": "7 rangées de q carreaux, pour q = 0, 1, 2",
+  "lecture": [
+   "Les petits points gris marquent les 7 rangées.",
+   "À gauche, q = 0 : les rangées sont vides, le total est 0.",
+   "Au milieu et à droite, chaque rangée a au moins un carreau rouge : le total est 7 puis 14, jamais 0.",
+   "En bas, en vert : un seul nombre convient, 0."
+  ],
+  "a_voir": "Vous voyez que dès qu'une rangée contient un carreau, il y en a au moins 7, donc seul q = 0 donne 0."
+ },
+ {
+  "code": "03-110",
+  "a_dire": "Quand la calculatrice affiche « Error » pour 7 ÷ 0, ce n'est pas une panne : 0 × 1, 0 × 2, 0 × 3 valent tous 0 et aucun nombre multiplié par 0 ne donne 7, donc aucun nombre ne répond.",
+  "legende_titre": "Ce que veut dire « Error » pour 7 ÷ 0",
+  "lecture": [
+   "En haut à gauche, l'écran affiche « Error » (« erreur » en anglais) pour 7 ÷ 0.",
+   "La barre violette a la hauteur 7.",
+   "Les traits orange sont 0 × 1, 0 × 2 et 0 × 3 : ils ont tous la hauteur 0.",
+   "En bas, la boîte rouge est la lecture « panne » ; la boîte verte est la bonne lecture."
+  ],
+  "a_voir": "Vous voyez qu'aucun produit par 0 n'atteint la hauteur 7 : le message dit qu'aucun nombre ne répond."
+ },
+ {
+  "code": "03-111",
+  "a_dire": "Le nombre 3 compte les répétitions : dans 4 + 4 + 4 il devient le multiplicateur (3 × 4 = 12), dans 4 × 4 × 4 il devient l'exposant (4³ = 64).",
+  "legende_titre": "Le même 3 dans l'addition et dans la multiplication",
+  "lecture": [
+   "Les cases grises contiennent le nombre que l'on répète : 4.",
+   "En haut, on répète l'addition ; en bas, on répète la multiplication.",
+   "Les trois disques bleus et l'accolade bleue comptent les répétitions : 3 dans les deux lignes.",
+   "En vert, l'écriture courte : en haut le 3 est le multiplicateur, en bas le petit 3 est l'exposant."
+  ],
+  "a_voir": "Vous voyez que le 3 compte la même chose dans les deux lignes : combien de fois on répète l'opération."
+ },
+ {
+  "code": "03-112",
+  "a_dire": "Un nombre est un facteur de 18 si la division de 18 par ce nombre tombe juste (reste 0) : 6 est un facteur de 18, même sans produit écrit au départ.",
+  "legende_titre": "Deux manières de reconnaître un facteur",
+  "lecture": [
+   "En haut, en violet : avant, un facteur est un nombre que l'on voit dans un produit écrit, comme 3 et 5 dans 3 × 5.",
+   "En bas, les 18 carreaux gris sont rangés par 6 : on obtient 3 rangées complètes.",
+   "La case verte montre qu'il ne reste aucun carreau : la division de 18 par 6 tombe juste.",
+   "La case bleue en tire la conclusion : 6 est un facteur de 18."
+  ],
+  "a_voir": "Vous voyez que c'est le reste 0 qui fait de 6 un facteur de 18, sans qu'un produit soit écrit au départ."
+ },
+ {
+  "code": "03-113",
+  "a_dire": "Au lieu de répondre à 3 ÷ 4 par deux nombres (0 groupe complet, reste 3), on garde l'écriture 3 sur 4 comme un seul nombre : la fraction est la division laissée en suspens.",
+  "legende_titre": "Trois objets en quatre groupes : deux façons de répondre",
+  "lecture": [
+   "En haut, les 3 disques gris ne remplissent aucun des 4 groupes : avec les entiers, le quotient est 0 et le reste est 3.",
+   "Les deux mots violets montrent que cette réponse demande deux nombres.",
+   "En bas, en bleu, on n'effectue pas la division : on garde 3 au-dessus de la barre et 4 en dessous.",
+   "Le cadre vert montre que cette écriture est une seule réponse."
+  ],
+  "a_voir": "Vous voyez que l'écriture 3 sur 4 dit en un seul nombre ce que le quotient et le reste disaient en deux."
+ },
+ {
+  "code": "03-114",
+  "a_dire": "Dans une écriture à deux niveaux, le nombre du bas (le dénominateur) ne peut jamais être 0 : 5 sur 0 est 5 ÷ 0 et ne désigne aucun nombre, alors que 0 en haut est permis.",
+  "legende_titre": "Le 0 en bas, le 0 en haut",
+  "lecture": [
+   "Au milieu, les mots haut et bas nomment les deux niveaux ; le nombre du bas s'appelle le dénominateur.",
+   "À gauche, le 0 entouré de rouge est en bas : l'écriture se lit 5 ÷ 0 et ne désigne aucun nombre.",
+   "À droite, le 0 entouré de vert est en haut : l'écriture se lit 0 ÷ 5 et vaut 0."
+  ],
+  "a_voir": "Vous voyez que seul le 0 placé en bas est interdit, pour la même raison que 5 ÷ 0."
+ },
+ {
+  "code": "03-115",
+  "a_dire": "Avec une lettre, la somme x + 2 ne se calcule pas ; la distributivité multiplie chaque terme par 3 et donne 3(x + 2) = 3x + 6.",
+  "legende_titre": "Avec une lettre, on ne peut plus additionner d'abord",
+  "lecture": [
+   "En haut, la largeur 4 + 2 se calcule : 6, puis 3 rangées de 6 donnent 18.",
+   "En bas, la largeur x n'est pas connue : la somme x + 2 ne se calcule pas, d'où la mention rouge.",
+   "Le trait orange coupe le rectangle : la partie bleue vaut 3 fois x, soit 3x, et la partie orange vaut 3 fois 2, soit 6.",
+   "En vert, le résultat : 3(x + 2) = 3x + 6."
+  ],
+  "a_voir": "Vous voyez qu'avec une lettre, couper le rectangle et multiplier chaque morceau par 3 est le seul moyen d'avancer."
+ },
+ {
+  "code": "03-116",
+  "a_dire": "Factoriser, c'est reconnaître la hauteur commune 3 de deux morceaux (3x = 3 × x et 6 = 3 × 2) et les recoller en un seul rectangle : 3x + 6 = 3(x + 2).",
+  "legende_titre": "Deux morceaux de même hauteur, un seul rectangle",
+  "lecture": [
+   "En haut, deux morceaux gris de même hauteur 3 : le premier a pour largeur x (ici 4), le second a pour largeur 2.",
+   "Leurs aires s'écrivent 3 × x = 3x (ici 12 carreaux) et 3 × 2 = 6 carreaux.",
+   "La flèche orange recolle les morceaux : on obtient un rectangle de hauteur 3 et de largeur x + 2, soit 18 carreaux.",
+   "En vert, en bas, le même geste écrit avec la lettre : 3x + 6 = 3(x + 2)."
+  ],
+  "a_voir": "Vous voyez que l'on peut recoller les deux morceaux parce qu'ils ont la même hauteur 3, et que la lettre x est la largeur du premier."
+ },
+ {
+  "code": "03-117",
+  "a_dire": "Quand la largeur d d'un rectangle de 12 carreaux grandit, la hauteur n'est entière que pour d = 1, 2, 3, 4, 6 ou 12 ; pour d = 5 il reste 2 carreaux, et pour d = 24 il faudrait une demi-rangée : les entiers ne suffisent plus.",
+  "legende_titre": "Douze carreaux sur une largeur de plus en plus grande",
+  "lecture": [
+   "Chaque ligne contient 12 carreaux ; à gauche, en orange, la largeur d, qui grandit de haut en bas.",
+   "Les rectangles bleus ont une hauteur entière, écrite en vert : 4, 3, 2, 1.",
+   "Pour d = 5, les 2 carreaux rouges ne forment pas une rangée complète : il reste 2.",
+   "Pour d = 24, la bande rouge n'a qu'une demi-rangée de haut : aucun entier ne convient."
+  ],
+  "a_voir": "Vous voyez que la hauteur devient de plus en plus petite et que, pour certaines largeurs, aucun nombre entier ne la donne."
+ }
+]

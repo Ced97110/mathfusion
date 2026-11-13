@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+for y in (44,14):
+    numberline(ax,6,78,y,0,9,1,labels=False,arrow_right=False)
+    arrow(ax,(6,y),(83,y),'fixe',lw=0.9)
+    text(ax,6,y-4,'0','fixe','s'); text(ax,62,y-4,'7','resultat','s')
+text(ax,44,59,'a + 0 = a : ici 7 + 0 = 7','encre','m')
+box(ax,6,47,56,4,'sujet',label='7',size='s')
+line(ax,[(62,45),(62,53)],'varie',lw=1.8)
+text(ax,64.5,51,'+ 0 : zéro pas','varie','s',ha='left')
+text(ax,44,31,'0 + a = a : ici 0 + 7 = 7','encre','m')
+line(ax,[(6,16),(6,23)],'varie',lw=1.8)
+text(ax,8.5,25,"0 d'abord : rien couvert",'varie','s',ha='left')
+box(ax,6,16,56,4,'sujet',label='7',size='s')
+line(ax,[(62,12),(62,38.2)],'resultat',lw=1.2,dash=True)
+line(ax,[(62,41.8),(62,54)],'resultat',lw=1.2,dash=True)
+save(fig,'02-064')

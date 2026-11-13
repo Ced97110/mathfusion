@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 6, 62, 17, 12, 'fixe', label='3', size='l')
+text(ax, 14.5, 78, 'unités', 'fixe', 's'); text(ax, 14.5, 56, '1 euro', 'fixe', 's')
+line(ax, [(25, 60), (25, 62.2)], 'encre', dash=True)
+line(ax, [(25, 66.2), (25, 76)], 'encre', dash=True)
+text(ax, 25, 64, ',', 'encre', 'l', weight='bold')
+text(ax, 25, 48, 'virgule = frontière', 'encre', 's')
+arrow(ax, (25, 50.5), (25, 59), 'encre')
+for x, lab, head, val in [(27, '4', 'dixièmes', '10 centimes'), (46, '5', 'centièmes', '1 centime')]:
+    box(ax, x, 62, 17, 12, 'sujet', label=lab, size='l')
+    text(ax, x + 8.5, 78, head, 'sujet', 's'); text(ax, x + 8.5, 56, val, 'sujet', 's')
+box(ax, 65, 62, 17, 12, 'fixe', fill=False, dash=True)
+text(ax, 73.5, 78, 'millièmes', 'fixe', 's')
+text(ax, 44, 40, '3 + 4 dixièmes + 5 centièmes', 'encre', 'm')
+box(ax, 6, 18, 76, 8, 'fixe', r=0.2)
+box(ax, 6, 18, 7.6, 8, 'sujet', r=0.2)
+for i in range(1, 10):
+    line(ax, [(6 + 7.6 * i, 18), (6 + 7.6 * i, 26)], 'fixe', lw=0.8)
+text(ax, 44, 31, '1 euro = 10 parts égales', 'encre', 's')
+save(fig, '01-187')

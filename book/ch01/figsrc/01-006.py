@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 8, 80, 30, 41000, 42000, step=100, labels=False)
+line(ax, [(f(41500), 28), (f(41500), 32)], 'fixe', lw=0.8)
+for v, s in [(41000, '41 000'), (41500, '41 500'), (42000, '42 000')]:
+    text(ax, f(v), 25.5, s, 'fixe', 's')
+x = f(41450)
+disc(ax, x, 30, 1.2, 'sujet')
+text(ax, x, 35, '41 450', 'sujet', 'm')
+ax.add_patch(Circle((8, 30), 1.2, ec=COL['resultat'], fc=COL['resultat'], lw=0.8, zorder=3))
+text(ax, 11, 35, '« environ »', 'resultat', 's')
+arrow(ax, (8, 42), (x, 42), 'varie', both=True)
+text(ax, 24, 45.5, 'écart : 450', 'varie', 's')
+brace(ax, 8, 44, 20, 'fixe', label="au plus 500 d'écart")
+text(ax, 60, 50, '450 ≈ 1 € pour 100 €', 'varie', 's')
+save(fig, '01-006')

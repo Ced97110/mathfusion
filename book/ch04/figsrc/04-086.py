@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,8,34,14,12,'sujet',label='?',size='l',dash=True)
+box(ax,64,34,14,12,'fixe',label='16',size='l')
+# aller : mettre au carré (arc vers le haut)
+arrow(ax,(22,44),(64,44),'varie',curve=-0.333)
+text(ax,43,55.5,'multiplié par lui-même','varie','s')
+# retour : racine carrée (arc vers le bas)
+arrow(ax,(64,36),(22,36),'resultat',curve=-0.333)
+text(ax,46,24,'racine carrée : la défait','resultat','s')
+text(ax,15,24,'? = 4, positif','resultat','m')
+text(ax,44,8,'même méthode : − défait +','autre','m')
+save(fig,'04-086')

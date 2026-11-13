@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from figstyle import *
+fig, ax = canvas(72)
+text(ax, 26, 64, r'6 $\times$ (3² + 2²) + 4²', 'sujet', 'm')
+text(ax, 26, 53, r'6 $\times$ (9 + 4) + 4²', 'fixe', 'm')
+text(ax, 66, 53, '( ) : exposants', 'varie', 's')
+text(ax, 26, 42, r'6 $\times$ 13 + 4²', 'fixe', 'm')
+text(ax, 66, 42, '( ) : addition', 'varie', 's')
+text(ax, 26, 31, r'6 $\times$ 13 + 16', 'fixe', 'm')
+text(ax, 66, 31, 'exposant restant', 'varie', 's')
+text(ax, 26, 20, r'78 + 16', 'fixe', 'm')
+text(ax, 66, 20, 'multiplication', 'varie', 's')
+text(ax, 26, 9, '94', 'resultat', 'l')
+text(ax, 66, 9, 'addition', 'varie', 's')
+for y0, y1 in [(61.5, 56), (50.5, 45), (39.5, 34), (28.5, 23), (17.5, 12)]:
+    arrow(ax, (26, y0), (26, y1), 'varie')
+save(fig, '04-069')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,4,76,'sur la droite : aucune limite','resultat','s',ha='left')
+f=numberline(ax,8,80,64,0,60,10,labels=False,arrow_right=False)
+box(ax,f(0),66,f(18)-f(0),3,'fixe',label='18',size='s')
+box(ax,f(18),66,f(52)-f(18),3,'varie',label='34',size='s')
+disc(ax,f(52),64,1.3,'resultat'); text(ax,f(52),60,'52','resultat','m')
+line(ax,[(4,55),(84,55)],'fixe')
+text(ax,4,51,'sur le papier : 1 chiffre par case','sujet','s',ha='left')
+text(ax,33,46,'dizaines','encre','s'); text(ax,47,46,'unités','encre','s')
+for y,a,b in [(35,'1','8'),(28,'3','4')]:
+    box(ax,26,y,14,7,'sujet',fill=False,label=a); box(ax,40,y,14,7,'sujet',fill=False,label=b)
+line(ax,[(24,26.5),(56,26.5)],'encre',lw=1.0)
+box(ax,40,17,14,7,'limite',fill=False,label='2',lw=1.8)
+box(ax,55.5,17,6,7,'limite',fill=False,label='1',dash=True)
+text(ax,47,10,'12 unités : le 1 déborde de la case','limite','s')
+save(fig,'02-021')

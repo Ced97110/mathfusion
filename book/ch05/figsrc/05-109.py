@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,23,61,'en français','sujet','s'); text(ax,65,61,'en anglais','autre','s')
+box(ax,4,46,38,10,'sujet',label='$\\mathrm{PGCD}(12,\\ 18)$')
+box(ax,46,46,38,10,'autre',label='$\\mathrm{gcd}(12,\\ 18)$')
+text(ax,23,41,'plus grand diviseur commun','sujet','s'); text(ax,65,41,'greatest common divisor','autre','s')
+arrow(ax,(23,38),(38,24),'varie'); arrow(ax,(65,38),(50,24),'varie')
+box(ax,32,12,24,11,'resultat',label='$6$',size='l')
+text(ax,44,6,'le même nombre','resultat','s')
+save(fig,'05-109')

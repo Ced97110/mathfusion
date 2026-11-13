@@ -1,0 +1,1044 @@
+[
+ {
+  "code": "04-001",
+  "a_dire": "Pour tout sol carré, le nombre de carreaux est le côté multiplié par lui-même : le nombre de rangées et le nombre de carreaux par rangée sont tous deux égaux au côté.",
+  "legende_titre": "Trois sols carrés, une même façon de compter",
+  "lecture": [
+   "Chaque grille bleue est un sol carré ; chaque case est un carreau de 1 mètre sur 1 mètre.",
+   "Le nombre orange à gauche d'une grille compte ses rangées.",
+   "Le nombre orange sous l'accolade compte les carreaux d'une rangée.",
+   "Le calcul vert au-dessus donne le nombre total de carreaux."
+  ],
+  "a_voir": "Pour chaque sol, le nombre orange à gauche et le nombre orange dessous sont le même nombre : le côté."
+ },
+ {
+  "code": "04-002",
+  "a_dire": "Trois facteurs égaux comptent des cubes que l'on peut voir, car le cube a trois directions ; quatre facteurs égaux à 2 donnent bien 16, mais ce produit n'a plus de figure dans l'espace.",
+  "legende_titre": "Trois facteurs se dessinent, quatre non",
+  "lecture": [
+   "À gauche, les 8 petits cubes bleus remplissent une caisse de 2 mètres de côté.",
+   "Les trois arêtes orange sont la longueur, la largeur et la hauteur : chacune donne un facteur 2.",
+   "À droite, le calcul vert à quatre facteurs est juste et donne 16.",
+   "Dans le cadre rouge, les trois flèches orange sont les trois directions de l'espace ; la flèche rouge en pointillés, la quatrième, n'a aucune place où aller."
+  ],
+  "a_voir": "Chaque facteur 2 de gauche a sa direction ; le quatrième facteur de droite n'en a aucune, mais le calcul 16 reste juste."
+ },
+ {
+  "code": "04-003",
+  "a_dire": "Chaque case de mémoire ajoutée ajoute un facteur 2 à écrire : avec 20 cases on écrit 20 facteurs qu'il faut compter un par un, et un facteur oublié donne un autre nombre d'états.",
+  "legende_titre": "Une case de plus, un facteur 2 de plus",
+  "lecture": [
+   "Chaque carré bleu ou orange est une case de mémoire ; elle donne un facteur 2.",
+   "Dans chaque rangée, la case orange est la case ajoutée ; l'écriture à droite gagne un facteur 2.",
+   "Chaque flèche orange « × 2 » montre que le résultat double : 8, puis 16, puis 32.",
+   "La phrase rouge montre l'erreur : oublier un facteur 2 donne 16 au lieu de 32.",
+   "En bas, les 20 cases donnent 20 facteurs 2, qu'il faudrait compter un par un."
+  ],
+  "a_voir": "À chaque case ajoutée, l'écriture gagne un facteur 2 et le résultat double."
+ },
+ {
+  "code": "04-004",
+  "a_dire": "Écrire sept facteurs 3 à la suite donne un produit juste, mais il faut compter les facteurs pour savoir combien il y en a ; le problème est de trouver une écriture où le 3 et le nombre 7 sont écrits une seule fois, sans changer le calcul.",
+  "legende_titre": "Sept facteurs 3 : une ligne qu'il faut compter",
+  "lecture": [
+   "En haut, les sept disques bleus sont les sept facteurs 3, séparés par des signes ×.",
+   "Les flèches orange comptent les disques un par un ; la phrase rouge montre une erreur de compte.",
+   "L'accolade grise dit qu'il faut compter ces facteurs pour connaître leur nombre.",
+   "En bas, la case bleue contient le 3 et la case orange en pointillés le nombre 7, qui dit combien de 3 : chacun est écrit une seule fois.",
+   "La flèche orange rappelle que la valeur du calcul reste la même."
+  ],
+  "a_voir": "En haut, le nombre 7 n'est écrit nulle part : il faut le compter ; en bas, il est écrit."
+ },
+ {
+  "code": "04-005",
+  "a_dire": "Ici on connaît l'aire 16 et on cherche le côté : le calcul est lu dans l'autre sens, et on cherche par essais le nombre qui, multiplié par lui-même, donne 16 (3 donne 9, 5 donne 25, 4 donne 16).",
+  "legende_titre": "On connaît 16 carreaux : quel côté ?",
+  "lecture": [
+   "La grille bleue compte 16 carreaux ; les points d'interrogation orange marquent son côté, que vous cherchez.",
+   "La phrase grise donne le sens habituel ; la phrase orange donne le sens renversé.",
+   "Sur la droite, les points rouges sont les essais 3 et 5 : ils donnent 9 et 25, pas 16.",
+   "Le point vert est l'essai 4 : 4 × 4 tombe sur 16."
+  ],
+  "a_voir": "Les essais 3 et 5 tombent de part et d'autre de 16 ; l'essai 4 tombe dessus."
+ },
+ {
+  "code": "04-006",
+  "a_dire": "La ligne 2 + 3 × 4 donne 20 pour un lecteur et 14 pour un autre ; une écriture doit avoir une seule valeur, et ici seul 14 compte l'achat de 2 pains et 12 œufs.",
+  "legende_titre": "Une ligne, deux lecteurs, deux résultats",
+  "lecture": [
+   "En haut, l'écriture bleue est la même pour les deux lecteurs.",
+   "La branche rouge commence par 2 + 3 et trouve 20 ; la branche verte commence par 3 × 4 et trouve 14.",
+   "En bas, l'achat violet compte 2 pains et 12 œufs, soit 14 objets.",
+   "Seule la branche verte retrouve ce nombre : une règle doit l'imposer à tous."
+  ],
+  "a_voir": "La même ligne donne deux nombres différents, et un seul compte l'achat."
+ },
+ {
+  "code": "04-007",
+  "a_dire": "Le nombre de facteurs égaux est le nombre de directions de la figure : deux facteurs 3 comptent les carreaux d'un carré, trois facteurs 2 comptent les petits cubes d'un cube, et les morceaux de côté 1 se placent sans trou ni recouvrement.",
+  "legende_titre": "Un carré, un cube : compter les directions",
+  "lecture": [
+   "À gauche, le carré bleu a deux flèches orange : chacune mesure 3, d'où deux facteurs 3.",
+   "À droite, le cube bleu a trois flèches orange : chacune mesure 2, d'où trois facteurs 2.",
+   "Le carreau vert et le petit cube vert ont le côté 1 ; les autres sont pareils et se touchent sans trou.",
+   "Les calculs verts en haut donnent le nombre de morceaux : 9 et 8."
+  ],
+  "a_voir": "Le carré a deux flèches et deux facteurs ; le cube en a trois et trois facteurs."
+ },
+ {
+  "code": "04-008",
+  "a_dire": "La lettre c veut dire « la longueur du côté, quelle qu'elle soit » : le nom reste le même d'une figure à l'autre, et sa valeur change (3, 5, 2).",
+  "legende_titre": "Une lettre pour le côté de chaque figure",
+  "lecture": [
+   "En haut, la case bleue contient la lettre c ; à droite, son sens : la longueur du côté.",
+   "Sur chaque figure grise, le côté bleu porte le même nom c.",
+   "Sous chaque figure, le texte orange donne la valeur de c pour cette figure.",
+   "Le texte vert donne le nombre de morceaux calculé avec cette valeur."
+  ],
+  "a_voir": "Le nom c ne change pas ; seule sa valeur orange change d'une figure à l'autre."
+ },
+ {
+  "code": "04-009",
+  "a_dire": "Dans 3², le 3 est le facteur écrit une seule fois et le petit 2 en haut à droite dit combien de fois il apparaît ; le petit nombre compte les facteurs, il ne se multiplie pas avec le 3.",
+  "legende_titre": "Le signe 3² découpé en deux morceaux",
+  "lecture": [
+   "La grande case bleue contient le facteur 3, écrit une seule fois.",
+   "La petite case orange, en haut à droite, dit combien de fois ce facteur apparaît.",
+   "Sous le signe, chaque accolade orange compte les facteurs de la version longue : 2, puis 5.",
+   "Le cadre rouge rappelle que le petit nombre compte les facteurs : on ne le multiplie pas par 3."
+  ],
+  "a_voir": "Le chiffre de la case orange est le même que le nombre de facteurs sous l'accolade."
+ },
+ {
+  "code": "04-010",
+  "a_dire": "« 3 au carré » est le nom court du calcul 3 × 3 ; ce nom relie le calcul au carré de côté 3, dont il compte les carreaux (9), comme « 4 au carré » compte les 16 carreaux d'un carré de côté 4.",
+  "legende_titre": "Un mot entre un calcul et une figure",
+  "lecture": [
+   "Au milieu, la case bleue contient le mot ; à gauche, le calcul qu'il nomme ; à droite, la figure qu'il rappelle.",
+   "Le résultat vert est le même des deux côtés : 9 par le calcul, 9 carreaux sur la figure.",
+   "La rangée du bas refait le même chemin avec le côté 4 et donne 16.",
+   "La phrase rouge montre que 3 × 4, avec deux nombres différents, ne s'appelle pas « au carré »."
+  ],
+  "a_voir": "Le même nombre vert sort du calcul et de la figure, reliés par un seul mot."
+ },
+ {
+  "code": "04-011",
+  "a_dire": "« 2 au cube » désigne trois facteurs 2 et vaut 8 ; il se distingue de « 2 au carré » (deux facteurs 2, qui vaut 4) et de « 2 multiplié par 3 » (qui vaut 6), car dans 2³ le 3 compte les facteurs et ne multiplie pas le 2.",
+  "legende_titre": "2 au cube et ses deux voisins",
+  "lecture": [
+   "Au milieu, le cube bleu contient 8 petits cubes : c'est « 2 au cube », trois facteurs 2.",
+   "À gauche, le carré violet contient 4 carreaux : c'est « 2 au carré », deux facteurs 2.",
+   "À droite, les 6 carreaux rouges sont 2 multiplié par 3 : ce n'est pas 2 au cube.",
+   "La phrase du bas dit le rôle du petit 3 : il compte les facteurs 2."
+  ],
+  "a_voir": "Les trois colonnes partent du même 2 et donnent trois nombres différents : 4, 8 et 6."
+ },
+ {
+  "code": "04-012",
+  "a_dire": "2³ veut dire 2 × 2 × 2 : le grand 2 est le facteur que l'on multiplie, le petit 3 compte combien de fois ce facteur apparaît.",
+  "legende_titre": "Les deux morceaux de l'écriture 2³",
+  "lecture": [
+   "La grande case bleue est le 2 de l'écriture : c'est le facteur, le nombre que l'on multiplie.",
+   "La petite case orange, en haut à droite, est le 3 : il compte les facteurs.",
+   "Les trois cases bleues de droite montrent le calcul 2 × 2 × 2 ; l'accolade orange dit qu'il y en a 3.",
+   "Le texte vert montre que la valeur 8 vient seulement quand vous faites la multiplication."
+  ],
+  "a_voir": "Le petit 3 n'est pas multiplié : il dit combien de cases 2 il faut écrire."
+ },
+ {
+  "code": "04-013",
+  "a_dire": "L'aire est la mesure qui compte des carreaux de côté 1 sur une surface, comme la longueur compte des segments sur une ligne et le volume des petits cubes dans un espace.",
+  "legende_titre": "Trois mesures, trois choses à compter",
+  "lecture": [
+   "En bleu, en haut, les deux sols sont découpés en carreaux : vous en comptez 9, puis 8.",
+   "Le carreau vert, seul à droite, est l'unité : un carreau de côté 1.",
+   "En violet, au milieu, la longueur compte des segments sur une ligne ; en bas, le volume compte des petits cubes."
+  ],
+  "a_voir": "L'aire est la seule des trois mesures qui compte des carreaux posés à plat."
+ },
+ {
+  "code": "04-014",
+  "a_dire": "Le volume dit combien de petits cubes entrent dans une caisse : la caisse de côté 2 en contient 8, celle de côté 3 en contient 27, ce que la longueur du côté seule ne dit pas.",
+  "legende_titre": "Deux caisses cubiques comptées en petits cubes",
+  "lecture": [
+   "Le cube gris, en haut, est l'unité : un petit cube de côté 1.",
+   "Les couches bleues et orange sont les étages de petits cubes ; vous les comptez couche par couche.",
+   "Le texte gris donne le côté ; le texte vert donne le nombre de petits cubes : 8 et 27."
+  ],
+  "a_voir": "Le côté passe de 2 à 3, mais le nombre de petits cubes passe de 8 à 27."
+ },
+ {
+  "code": "04-015",
+  "a_dire": "5 au carré est exactement le nombre de carreaux d'un carré de côté 5 (25), 5 au cube exactement le nombre de petits cubes d'un cube de côté 5 (125) ; le mot dit un fait que l'on vérifie en comptant, et aucune forme ne correspond à un petit 4.",
+  "legende_titre": "Le carré et le cube de côté 5, comptés",
+  "lecture": [
+   "À gauche, le carré bleu a 5 carreaux de côté : vous pouvez compter les 25 carreaux.",
+   "À droite, le cube bleu a 5 petits cubes de côté : il en contient 125.",
+   "Les nombres verts sont ces comptes exacts, écrits avec le petit 2 et le petit 3.",
+   "Le cadre rouge montre la limite : 2⁴ se calcule, mais aucune forme ne lui correspond."
+  ],
+  "a_voir": "Le nombre 25 est le compte exact des carreaux du carré, pas une valeur proche."
+ },
+ {
+  "code": "04-016",
+  "a_dire": "Comme 4 × 7 abrège l'addition de quatre 7, l'écriture 7⁴ abrège la multiplication de quatre 7 : l'exposant 4 est la même idée, un cran plus haut.",
+  "legende_titre": "Deux répétitions de quatre 7, deux abréviations",
+  "lecture": [
+   "La ligne violette du bas répète quatre fois le terme 7 et s'abrège en 4 × 7.",
+   "La ligne bleue du haut répète quatre fois le facteur 7 et s'abrège en 7⁴.",
+   "Le 4 orange compte les 7 dans les deux lignes ; en haut, il s'appelle l'exposant.",
+   "Les nombres verts montrent que l'écriture courte garde la même valeur."
+  ],
+  "a_voir": "Le même geste d'abréger se fait deux fois : sur une addition, puis sur une multiplication."
+ },
+ {
+  "code": "04-017",
+  "a_dire": "Dans 8⁵, le 5 est un exposant : il ne multiplie pas 8, il compte combien de fois le facteur 8 apparaît, alors que dans 8 × 5 le 5 est un facteur.",
+  "legende_titre": "Le même 5, à deux places différentes",
+  "lecture": [
+   "À gauche, en violet, le 5 est écrit à côté du 8 : c'est un facteur, et 8 × 5 donne les 40 carrés.",
+   "À droite, le petit 5 orange est en haut : il compte les facteurs 8, et il y en a 5.",
+   "Les nombres verts du bas montrent que les deux écritures ne valent pas la même chose."
+  ],
+  "a_voir": "Le 5 en petit, en haut, ne multiplie pas : il compte les 8."
+ },
+ {
+  "code": "04-018",
+  "a_dire": "Pour passer de 8 × 8 × 8 × 8 × 8 à 8⁵, on compte les facteurs (5), on écrit 8 une fois, puis 5 en petit en haut à droite ; en multipliant de gauche à droite (64, 512, 4 096, 32 768), les deux côtés donnent le même nombre.",
+  "legende_titre": "De cinq facteurs 8 à l'écriture 8⁵",
+  "lecture": [
+   "En haut, l'accolade orange compte les facteurs du produit : il y en a 5.",
+   "À droite, en bleu, vous voyez l'écriture après chaque étape : d'abord 8, puis 8 avec le petit 5 orange.",
+   "Les cases grises donnent le calcul pas à pas : chaque flèche orange multiplie par 8.",
+   "La case verte et la ligne verte disent que 8 × 8 × 8 × 8 × 8 et 8⁵ valent tous deux 32 768."
+  ],
+  "a_voir": "L'écriture devient courte, mais la valeur reste 32 768 des deux côtés."
+ },
+ {
+  "code": "04-019",
+  "a_dire": "La base est le facteur qui se répète, écrit une seule fois : dans 5³ la base est 5 ; chaque base porte son propre exposant, et la base n'est pas le résultat.",
+  "legende_titre": "Le nombre qui se répète, écrit une fois",
+  "lecture": [
+   "En haut, les trois 5 bleus sont le même facteur : on l'écrit une seule fois, c'est la base.",
+   "Au milieu, le 5 bleu et le 9 violet sont deux bases ; chacune porte son exposant orange.",
+   "Le cadre rouge rappelle que la base 8 n'est pas le résultat 32 768."
+  ],
+  "a_voir": "La base est le nombre que l'on multiplie, pas le nombre que l'on obtient."
+ },
+ {
+  "code": "04-020",
+  "a_dire": "L'exposant dit d'un coup d'œil combien de facteurs 8 il y a : 8³ en a trois, 8⁵ en a cinq, soit deux de plus, et 8⁵ vaut 512 multiplié par 64.",
+  "legende_titre": "Même base 8, deux exposants",
+  "lecture": [
+   "Chaque case contient un facteur 8 ; le petit nombre orange de l'en-tête dit combien de cases il y a sur la ligne.",
+   "Les trois cases bleues du bas sont les mêmes que celles du haut : elles valent 8³ = 512.",
+   "Les deux cases orange sont les deux facteurs de plus ; elles valent 8 × 8 = 64."
+  ],
+  "a_voir": "Passer de l'exposant 3 à l'exposant 5 ajoute exactement deux cases 8."
+ },
+ {
+  "code": "04-021",
+  "a_dire": "La puissance est le résultat d'une multiplication de facteurs égaux : toute puissance est un produit, mais un produit comme 8 × 5 = 40 n'est pas une puissance de 8.",
+  "legende_titre": "Où se rangent 32 768 et 40",
+  "lecture": [
+   "Le cadre gris contient les sommes, résultats d'une addition.",
+   "Le grand cadre violet contient les produits ; le cadre bleu des puissances est tout entier dedans.",
+   "Le point vert 32 768 est dans le cadre bleu : il vient de cinq facteurs 8 égaux.",
+   "Le point 40 est un produit, mais il est hors du cadre bleu : ce n'est pas une puissance de 8."
+  ],
+  "a_voir": "Le cadre bleu est à l'intérieur du cadre violet : une puissance est toujours un produit."
+ },
+ {
+  "code": "04-022",
+  "a_dire": "On lit 8⁵ « huit puissance cinq » ou « huit à la cinquième » : huit dit la base, cinq dit l'exposant, « puissance » les relie comme « fois » dans huit fois cinq, et le résultat 32 768 est la cinquième puissance de 8.",
+  "legende_titre": "Deux façons de dire 8⁵ à voix haute",
+  "lecture": [
+   "La grande case bleue est la base 8 : elle se dit « huit ».",
+   "La petite case orange est l'exposant 5 : il se dit « cinq » ou « cinquième ».",
+   "Les cases grises sont les mots qui relient les deux : « puissance » ou « à la ».",
+   "Le texte vert montre l'autre emploi du mot : 32 768 est la cinquième puissance de 8."
+  ],
+  "a_voir": "Les deux rangées de mots lisent le même signe, morceau par morceau."
+ },
+ {
+  "code": "04-023",
+  "a_dire": "« Au carré » est le nom réservé à l'exposant 2 : deux facteurs égaux, qui comptent l'aire d'un carré ; 5² = 5 × 5 = 25 carreaux, le même calcul que « 5 puissance 2 ».",
+  "legende_titre": "Le nom « au carré » et ses voisins",
+  "lecture": [
+   "Le carré bleu a 5 carreaux de côté : vous comptez 5 × 5 = 25 carreaux.",
+   "La boîte bleue donne le nom de 5² ; la boîte violette et la boîte grise donnent les noms des exposants 3 et 4.",
+   "La ligne du bas dit que « 5 puissance 2 » donne aussi 25 : seul le mot change."
+  ],
+  "a_voir": "Vous voyez que le mot « carré » ne va qu'avec l'exposant 2, et qu'il compte les carreaux d'un carré."
+ },
+ {
+  "code": "04-024",
+  "a_dire": "« Au cube » relie un calcul à trois facteurs à un solide à trois dimensions : 5³ = 5 × 5 × 5, chaque 5 est une longueur, une largeur ou une hauteur, et le résultat compte 125 petits cubes.",
+  "legende_titre": "Trois facteurs 5, trois directions",
+  "lecture": [
+   "Les trois 5 orange du calcul correspondent aux trois arêtes orange : la longueur, la largeur et la hauteur.",
+   "Le cube bleu est fait de petits cubes : 5 × 5 × 5 = 125.",
+   "Le nombre vert compte ces petits cubes : c'est le volume du cube de côté 5."
+  ],
+  "a_voir": "Vous voyez que chaque facteur 5 du calcul est une des trois arêtes du cube."
+ },
+ {
+  "code": "04-025",
+  "a_dire": "Pour calculer 8⁵ : on lit la base 8, puis l'exposant 5, on écrit cinq facteurs 8, puis on fait 4 multiplications de gauche à droite (64, 512, 4 096, 32 768) ; on s'arrête quand il ne reste plus de facteur.",
+  "legende_titre": "Calculer 8⁵ dans l'ordre",
+  "lecture": [
+   "En haut, vous lisez d'abord la base 8 (bleu), puis l'exposant 5 (violet).",
+   "Les cinq boîtes bleues sont les cinq facteurs 8 que l'exposant demande d'écrire.",
+   "Chaque boîte orange reçoit le résultat précédent et un nouveau 8 : 64, puis 512, puis 4 096.",
+   "La boîte verte, 32 768, vient après la quatrième multiplication ; la barre verte à sa droite marque la fin : il ne reste plus de 8 à prendre."
+  ],
+  "a_voir": "Vous voyez cinq facteurs mais seulement quatre multiplications, et le calcul s'arrête au dernier facteur."
+ },
+ {
+  "code": "04-026",
+  "a_dire": "8 × 5 abrège l'addition de cinq 8 et vaut 40, alors que 8⁵ abrège la multiplication de cinq 8 et vaut 32 768 : seule la place du 5 change, et elle change l'opération.",
+  "legende_titre": "Le même 5, à deux places",
+  "lecture": [
+   "Le 5 orange est posé sur la ligne pointillée en haut, et au-dessus d'elle en bas.",
+   "En haut (violet), les cinq 8 sont ajoutés : vous obtenez 40.",
+   "En bas (bleu), les cinq 8 sont multipliés : vous obtenez 32 768.",
+   "La ligne rouge montre un cas où les deux écritures donnent le même nombre."
+  ],
+  "a_voir": "Vous voyez que déplacer le 5 vers le haut change l'opération, donc le résultat : 40 devient 32 768."
+ },
+ {
+  "code": "04-027",
+  "a_dire": "Avec les mêmes deux nombres, l'écriture avec exposant ne donne pas le produit : 2³ = 8 mais 2 × 3 = 6, 3² = 9 mais 3 × 2 = 6, car le petit nombre compte des facteurs égaux au lieu d'être un second facteur.",
+  "legende_titre": "Mêmes nombres, deux écritures",
+  "lecture": [
+   "Dans la colonne bleue, vous comptez 8 points (deux blocs de 2 × 2) puis 9 points (3 rangées de 3).",
+   "Dans la colonne violette, vous comptez 6 points chaque fois.",
+   "Le signe orange ≠ marque que les deux colonnes ne donnent pas le même nombre."
+  ],
+  "a_voir": "Vous voyez que la colonne de l'exposant a toujours plus de points que la colonne du signe fois."
+ },
+ {
+  "code": "04-028",
+  "a_dire": "Dans 5 × 4², le petit 2 compte seulement les facteurs 4, la base juste en dessous de lui : 5 × 4 × 4 = 5 × 16 = 80, et non 5 × 4 × 5 × 4 = 400.",
+  "legende_titre": "Jusqu'où porte le petit 2 ?",
+  "lecture": [
+   "Le cadre orange entoure le 4 et le petit 2 : le 5 reste dehors.",
+   "Chaque carré bleu a 4 × 4 = 16 carreaux ; il y en a 5, un pour le facteur 5.",
+   "L'accolade verte donne 5 fois 16 = 80 carreaux.",
+   "En rouge, la lecture où le 2 porterait aussi sur le 5 : elle donne 400, un autre nombre."
+  ],
+  "a_voir": "Vous voyez que le petit 2 ne double que le 4 : le 5 n'est multiplié qu'une fois."
+ },
+ {
+  "code": "04-029",
+  "a_dire": "Quand deux nombres différents se répètent, chacun reçoit son exposant : 5 × 5 × 5 × 9 × 9 = 5³ × 9², et la même écriture vaut aussi si les facteurs sont mélangés, comme 5 × 9 × 5 × 9 × 5.",
+  "legende_titre": "Deux nombres qui se répètent",
+  "lecture": [
+   "Les boîtes bleues portent le facteur 5, les boîtes violettes le facteur 9.",
+   "Sous la rangée du haut, l'accolade bleue compte trois 5 et l'accolade violette compte deux 9.",
+   "L'écriture verte met un exposant sur chaque nombre : 5³ × 9².",
+   "La rangée du bas mélange les mêmes boîtes : la flèche orange mène à la même écriture."
+  ],
+  "a_voir": "Vous voyez qu'on compte chaque nombre à part, quelle que soit la place de ses facteurs."
+ },
+ {
+  "code": "04-030",
+  "a_dire": "On peut échanger deux facteurs (3 × 4 = 4 × 3 = 12), mais pas la base et l'exposant : la base est le nombre multiplié, l'exposant est le nombre qui compte, donc 2³ = 8 et 3² = 9.",
+  "legende_titre": "Échanger deux nombres : permis ou non ?",
+  "lecture": [
+   "En haut, les deux quadrillages violets ont chacun 12 carreaux : l'échange de 3 et 4 ne change rien.",
+   "En bas, les boîtes bleues sont la base : c'est le nombre que vous multipliez.",
+   "L'accolade orange est l'exposant : elle compte les boîtes.",
+   "Après l'échange de 2 et 3, vous obtenez 9 au lieu de 8 : le signe rouge ≠ le marque."
+  ],
+  "a_voir": "Vous voyez que la base donne les boîtes et l'exposant leur nombre, donc les échanger change le résultat."
+ },
+ {
+  "code": "04-031",
+  "a_dire": "Pour trouver le côté c d'un carré d'aire A = 16, on compte les carreaux d'une seule rangée : il y en a 4, donc c = 4 ; on vérifie que quatre rangées de 4 remplissent exactement le carré.",
+  "legende_titre": "Retrouver le côté d'un carré de 16 carreaux",
+  "lecture": [
+   "Le carré bleu a 16 carreaux, mais vous ne connaissez pas son côté.",
+   "Vous comptez seulement la rangée orange du bas : 4 carreaux, donc le côté vaut 4.",
+   "À droite, quatre rangées vertes de 4 carreaux remplissent exactement le même carré."
+  ],
+  "a_voir": "Vous voyez qu'une seule rangée suffit pour lire le côté, et que quatre rangées refont les 16 carreaux."
+ },
+ {
+  "code": "04-032",
+  "a_dire": "La lettre A veut dire « l'aire, en carreaux, de la figure considérée » : elle garde ce rôle, mais sa valeur change avec la figure (16 pour un sol, 25 pour l'autre), et elle ne dit pas la forme.",
+  "legende_titre": "Une lettre, plusieurs figures",
+  "lecture": [
+   "La phrase bleue en haut dit ce que la lettre A veut dire.",
+   "Sous chaque sol gris, la valeur orange de A est le nombre de carreaux : 16, puis 25.",
+   "Le rectangle rouge a aussi 16 carreaux : A = 16 ne vous dit pas que la figure est un carré."
+  ],
+  "a_voir": "Vous voyez que A garde le même sens partout, mais que sa valeur change avec la figure."
+ },
+ {
+  "code": "04-033",
+  "a_dire": "La racine carrée est une opération inverse : elle défait « au carré » comme la soustraction défait l'addition ; elle part de l'aire 16 et redonne le côté 4 (et de 25 elle redonne 5).",
+  "legende_titre": "Deux allers-retours de la même famille",
+  "lecture": [
+   "En haut, la flèche « + 3 » mène de 4 à 7 et la flèche « − 3 » ramène de 7 à 4.",
+   "En bas, la flèche violette « au carré » mène du côté 4 à l'aire de 16 carreaux.",
+   "La flèche bleue « racine carrée » ramène de l'aire 16 au côté 4, comme « − 3 » ramène à 4 en haut."
+  ],
+  "a_voir": "Vous voyez que la racine carrée fait le chemin inverse de « au carré », comme la soustraction fait celui de l'addition."
+ },
+ {
+  "code": "04-034",
+  "a_dire": "Le signe √ remplace la longue phrase « le nombre qui, multiplié par lui-même, donne 16 » : on écrit √16, on lit √16 = 4 d'un coup, et la longueur ne dépend plus de la phrase.",
+  "legende_titre": "Une phrase entière ramenée à un seul signe",
+  "lecture": [
+   "Les boîtes grises contiennent la phrase qu'il faut écrire sans le signe, pour 16 puis pour 25.",
+   "Les écritures bleues √16 et √25 disent la même chose, en trois ou quatre caractères.",
+   "En bas, le trait bleu √ veut dire « racine carrée de » et le 16 est le nombre écrit après lui.",
+   "Le « = 4 » vert donne la valeur trouvée : vous lisez √16 = 4 d'un seul regard."
+  ],
+  "a_voir": "Voyez que la phrase grise est longue et se répète, alors que l'écriture bleue reste courte quel que soit le nombre."
+ },
+ {
+  "code": "04-035",
+  "a_dire": "Chaque égalité √n = r est justifiée par le même test : la racine multipliée par elle-même redonne le nombre écrit sous le signe ; seuls les nombres changent.",
+  "legende_titre": "Trois égalités, une seule vérification",
+  "lecture": [
+   "À gauche, en bleu, vous lisez trois égalités écrites avec le signe √.",
+   "Sur la bande grise, en vert, chaque égalité est contrôlée par la même opération : la racine multipliée par elle-même.",
+   "Les grilles vertes montrent ce contrôle : 4 sur 4 font 16 carreaux, 5 sur 5 en font 25, 3 sur 3 en font 9.",
+   "En rouge, pour 10, aucun entier ne passe le test : 3 × 3 donne 9 et 4 × 4 donne 16."
+  ],
+  "a_voir": "Voyez que les nombres changent à chaque ligne, mais que la bande grise contient toujours le même test."
+ },
+ {
+  "code": "04-036",
+  "a_dire": "Le mot « racine » nomme le nombre de départ, 4, et le mot « puissance » nomme le nombre d'arrivée, 16, d'un même calcul 4 × 4 = 16.",
+  "legende_titre": "D'où part le calcul, où il arrive",
+  "lecture": [
+   "La rangée bleue de 4 carrés est le nombre de départ : c'est lui que l'on appelle la racine.",
+   "La flèche orange est l'action : on multiplie 4 par lui-même.",
+   "La grille verte de 16 carrés est le nombre d'arrivée : c'est la puissance.",
+   "La flèche grise du bas revient de 16 à 4 : le signe √ retrouve la racine.",
+   "L'accolade grise rappelle que les deux mots désignent les deux nombres d'un seul calcul, 4 × 4 = 16."
+  ],
+  "a_voir": "Voyez que la racine est du côté du départ de la flèche orange, la puissance du côté de l'arrivée, et que la flèche grise revient à la racine."
+ },
+ {
+  "code": "04-037",
+  "a_dire": "La racine cubique d'un nombre est le côté qui, pris comme trois facteurs égaux, donne un volume (2 × 2 × 2 = 8), alors que la racine carrée prend deux facteurs égaux et donne une aire.",
+  "legende_titre": "Deux facteurs ou trois facteurs égaux",
+  "lecture": [
+   "À gauche, en violet, deux facteurs 2 forment un carré : 2 × 2 = 4, une aire.",
+   "À droite, en bleu, trois facteurs 2 forment un cube : 2 × 2 × 2 = 8, un volume ; le côté 2 est la racine cubique de 8.",
+   "La ligne rouge du haut rappelle que la racine carrée de 8 n'est pas 2, puisque 2 × 2 donne 4.",
+   "En bas, la racine cubique de 27 est 3 (en vert), alors que 27 ÷ 3 donne 9 (en rouge)."
+  ],
+  "a_voir": "Voyez que le même côté 2 donne 4 avec deux facteurs et 8 avec trois facteurs."
+ },
+ {
+  "code": "04-038",
+  "a_dire": "Le petit 3 dans le creux du signe dit combien de facteurs égaux on cherche : ∛64 = 4 (trois facteurs) n'est pas √64 = 8 (deux facteurs).",
+  "legende_titre": "Même nombre 64, deux questions différentes",
+  "lecture": [
+   "Les deux signes bleus portent sur le même nombre, 64.",
+   "À gauche, le creux du signe est vide (cercle gris) : vous cherchez deux facteurs égaux, et 8 × 8 = 64.",
+   "À droite, le petit 3 orange est écrit dans le creux : vous cherchez trois facteurs égaux, et 4 × 4 × 4 = 64.",
+   "Le nombre de boîtes orange est le nombre de facteurs que le signe demande."
+  ],
+  "a_voir": "Voyez que seul le petit 3 sépare les deux signes, et qu'il fait passer de deux boîtes à trois boîtes."
+ },
+ {
+  "code": "04-039",
+  "a_dire": "Le radical est le signe lui-même, séparé du nombre qu'il précède : c'est la partie commune à √16, √25 et ∛8, qui demande de chercher une racine.",
+  "legende_titre": "Ce qui est commun à trois écritures",
+  "lecture": [
+   "Les trois écritures sont √16, √25 et ∛8.",
+   "Le signe est tracé en bleu : c'est la partie qui se retrouve dans les trois.",
+   "Les nombres en gris changent : ce sont les nombres sur lesquels on agit.",
+   "Les traits bleus relient les trois signes au mot « radical » : ce mot nomme le signe, qui demande de chercher une racine."
+  ],
+  "a_voir": "Voyez que les traits bleus partent des signes, jamais des nombres gris."
+ },
+ {
+  "code": "04-040",
+  "a_dire": "L'indice d'un radical compte les facteurs égaux que l'on cherche, comme l'exposant compte les facteurs d'une puissance : ∛8 a l'indice 3 et 2³ l'exposant 3.",
+  "legende_titre": "Un petit nombre qui compte des boîtes",
+  "lecture": [
+   "En haut, le petit 3 violet de 2³ compte trois facteurs 2 : c'est l'exposant.",
+   "Au milieu, le petit 3 bleu de ∛8 compte aussi trois facteurs : c'est l'indice ; les boîtes sont vides, car leur valeur est cherchée.",
+   "En bas, le creux de √16 est vide (cercle bleu) : l'indice vaut 2, et vous cherchez deux facteurs.",
+   "Dans chaque ligne, le petit nombre est égal au nombre de boîtes."
+  ],
+  "a_voir": "Voyez que l'exposant et l'indice font le même travail : compter les boîtes, sans dire ce qu'elles contiennent."
+ },
+ {
+  "code": "04-041",
+  "a_dire": "Le radicande est le nombre écrit sous le radical, donné au départ : 16 dans √16 (une aire), 8 dans ∛8 (un volume) ; c'est le total à obtenir, pas le côté cherché.",
+  "legende_titre": "Le nombre écrit sous le signe",
+  "lecture": [
+   "En haut, le nombre bleu sous chaque signe gris est le radicande : 16, puis 8. Il est donné.",
+   "Sous √16, les 16 carreaux bleus forment une aire ; sous ∛8, les 8 petits cubes bleus forment un volume. Chacun est le total.",
+   "Le trait orange le long d'un bord est le côté : il est cherché.",
+   "Le bleu est ce qui est donné au départ ; l'orange est ce qu'il reste à trouver."
+  ],
+  "a_voir": "Voyez que le radicande est tout le paquet bleu, donné au départ, et non son côté orange."
+ },
+ {
+  "code": "04-042",
+  "a_dire": "La racine est le nombre trouvé, à droite du signe égal dans √16 = 4 : on la multiplie par elle-même pour retrouver le radicande donné, 16.",
+  "legende_titre": "Trois pièces d'une égalité, une seule trouvée",
+  "lecture": [
+   "Le signe gris est le radical : c'est un signe, pas un nombre.",
+   "Le nombre violet sous le signe est le radicande : il est donné dans la question.",
+   "Le nombre bleu encadré, après le signe égal, est la racine : c'est le nombre trouvé.",
+   "La flèche orange part de la racine : 4 × 4 redonne 16, et 2 × 2 × 2 redonne 8 ; on ne fait pas 16 × 16 (en rouge)."
+  ],
+  "a_voir": "Voyez que la racine est le seul nombre encadré, et que la flèche orange part toujours de lui."
+ },
+ {
+  "code": "04-043",
+  "a_dire": "√16 a un indice : il vaut 2 et on ne l'écrit pas, donc √16 veut dire la même chose que ²√16 (deux facteurs égaux).",
+  "legende_titre": "Un indice présent mais invisible",
+  "lecture": [
+   "À gauche, vous voyez √16 : le creux du signe est vide (cercle bleu en pointillé).",
+   "À droite, le même signe avec le petit 2 bleu : c'est ainsi qu'il faut lire √16.",
+   "La ligne verte dit ce que les deux écritures cherchent : deux facteurs égaux.",
+   "En violet, ∛8 rappelle qu'un indice 3 s'écrit toujours."
+  ],
+  "a_voir": "Voyez que le cercle vide à gauche et le petit 2 à droite occupent la même place."
+ },
+ {
+  "code": "04-044",
+  "a_dire": "Une convention est un accord entre ceux qui écrivent des mathématiques (ne pas écrire le 2 de √16) : on ne peut pas la prouver comme 4 × 4 = 16, on peut seulement la connaître.",
+  "legende_titre": "Une règle qu'on prouve, une règle qu'on convient",
+  "lecture": [
+   "À gauche, en vert, 4 × 4 = 16 se prouve : vous pouvez compter les 16 carreaux.",
+   "À droite, en bleu, le grand 2 orange de l'écriture ²√16 n'est pas écrit dans √16 : c'est un accord, rien à compter.",
+   "La flèche orange montre ce que l'accord change : l'écriture devient plus courte.",
+   "La ligne rouge rappelle qu'un lecteur qui ignore l'accord ne comprend pas √16."
+  ],
+  "a_voir": "La colonne verte contient de quoi vérifier ; la colonne bleue ne contient qu'un choix d'écriture, que l'on connaît."
+ },
+ {
+  "code": "04-045",
+  "a_dire": "Lire ∛8, c'est chercher l'entier r tel que r × r × r donne exactement le radicande ; pour 8 et 27 on le trouve, pour 9 aucun entier ne tombe juste : les essais sautent de 8 à 27.",
+  "legende_titre": "Lire ∛8 : chercher r par essais",
+  "lecture": [
+   "Le petit 3 du signe dit combien de fois r est facteur ; le 8, cerclé de bleu sur la droite, est le nombre à atteindre.",
+   "Chaque point vert est un essai : 2 × 2 × 2 tombe sur 8 et 3 × 3 × 3 tombe sur 27, ce que marquent les crochets ✓.",
+   "L'arc orange montre le passage de 2 à 3 : le résultat va de 8 à 27 d'un coup.",
+   "Le triangle rouge marque 9 : aucun essai ne s'y arrête."
+  ],
+  "a_voir": "La méthode réussit sur 8 et 27 (✓), et elle ne peut rien trouver pour 9, placé entre deux essais."
+ },
+ {
+  "code": "04-046",
+  "a_dire": "La racine carrée défait le carré parce que les deux lisent la même multiplication 4 × 4 = 16 dans deux sens : de 4 vers 16, puis de 16 vers 4.",
+  "legende_titre": "Une multiplication, deux sens de lecture",
+  "lecture": [
+   "Le cadre bleu et le cadre vert forment une seule multiplication : 4 × 4 = 16.",
+   "La flèche du haut part de 4 et arrive à 16 : c'est le carré.",
+   "La flèche du bas part de 16 et revient à 4 : c'est la racine carrée.",
+   "En bas, le même aller-retour avec 5 donne 25 puis 5."
+  ],
+  "a_voir": "Vous voyez que les deux flèches passent par la même multiplication, une fois dans chaque sens, et reviennent au point de départ."
+ },
+ {
+  "code": "04-047",
+  "a_dire": "Le schéma 4 → 16 → 4 va du côté vers l'aire (au carré) puis de l'aire vers le côté (racine carrée), et l'on retombe sur le côté de départ ; il en va de même pour 5 et 6.",
+  "legende_titre": "Du côté à l'aire, puis de l'aire au côté",
+  "lecture": [
+   "Le segment bleu est le côté 4 ; le carré gris est l'aire de 16 carreaux construite sur ce côté.",
+   "La première flèche orange va du côté vers l'aire ; la seconde va de l'aire vers le côté.",
+   "Le segment vert a la même longueur que le bleu : on est revenu à 4.",
+   "Les deux lignes du bas suivent les mêmes colonnes avec 5 et 6."
+  ],
+  "a_voir": "Vous voyez que la colonne de droite répète toujours la colonne de gauche : la seconde flèche défait la première."
+ },
+ {
+  "code": "04-048",
+  "a_dire": "Les symboles de groupement sont une famille de quatre signes qui entourent une partie d'un calcul pour qu'elle se calcule d'abord, comme un seul nombre : (2 + 3) × 4 vaut 20, alors que 2 + 3 × 4 vaut 14.",
+  "legende_titre": "Une famille de signes qui entourent",
+  "lecture": [
+   "Le cadre bleu montre la partie entourée : 2 + 3, qui vaut 5.",
+   "Le vert donne le résultat avec le signe : 5 × 4 = 20 ; le violet, la même ligne sans signe : 14.",
+   "Les quatre cases du bas sont les quatre signes de la famille ; la dernière groupe le haut et le bas d'une fraction."
+  ],
+  "a_voir": "Vous voyez que le signe qui entoure change la valeur, et que quatre signes différents font ce même travail."
+ },
+ {
+  "code": "04-049",
+  "a_dire": "La parenthèse ouverte et la parenthèse fermée disent : « ce qui est entre nous se calcule d'abord, comme un seul nombre » ; (2 + 3) × 4 devient 5 × 4 = 20, alors que sans elles 2 + 3 × 4 vaut 14.",
+  "legende_titre": "Ce que disent les deux parenthèses",
+  "lecture": [
+   "Les deux signes bleus marquent le début et la fin de la partie à calculer d'abord.",
+   "L'accolade orange montre cette partie : 2 + 3 vaut 5.",
+   "Le vert donne la suite : 5 × 4 = 20.",
+   "En violet, la même ligne sans parenthèses : 3 × 4 se fait avant, et l'on trouve 14."
+  ],
+  "a_voir": "Vous voyez que tout ce qui est entre la parenthèse ouverte et la parenthèse fermée devient un seul nombre, 5, avant la multiplication."
+ },
+ {
+  "code": "04-050",
+  "a_dire": "Le crochet a le même sens que la parenthèse, mais il montre d'un coup d'œil le niveau extérieur : dans 10 + [30 − (2 × 9)] on voit deux niveaux sans compter les fermetures, et le résultat reste 22.",
+  "legende_titre": "Deux écritures du même calcul",
+  "lecture": [
+   "En haut, les deux paires sont des parenthèses : à la fin, deux ) se suivent et il faut compter.",
+   "En bas, le cadre bleu suit les crochets : c'est le niveau extérieur.",
+   "Le cadre gris suit la parenthèse : c'est le niveau intérieur, 2 × 9.",
+   "Les deux lignes donnent 22, en vert."
+  ],
+  "a_voir": "Vous voyez que seul le signe extérieur change d'aspect, ce qui rend les deux niveaux visibles, sans changer le résultat."
+ },
+ {
+  "code": "04-051",
+  "a_dire": "L'accolade a le même sens que la parenthèse et marque le troisième niveau, le plus extérieur : dans {2 × [3 + (4 − 1)]}, accolade, crochet et parenthèse emboîtés donnent 12, et sans accolade on trouve aussi 12.",
+  "legende_titre": "Trois niveaux, trois signes",
+  "lecture": [
+   "Le cadre bleu suit les accolades : c'est le niveau le plus extérieur.",
+   "Les cadres gris suivent le crochet (milieu) et la parenthèse (intérieur).",
+   "Le calcul donne 4 − 1 = 3, puis 3 + 3 = 6, puis 2 × 6 = 12, en vert.",
+   "En violet, la même expression sans accolades : elle vaut aussi 12."
+  ],
+  "a_voir": "Vous voyez que chaque niveau a son propre signe et que l'accolade entoure tout, sans changer le résultat."
+ },
+ {
+  "code": "04-052",
+  "a_dire": "La barre de fraction écrit (6 + 4) ÷ 2 avec un seul signe : elle groupe le haut, sépare le haut du bas et remplace les deux parenthèses et le signe ÷ ; les deux écritures valent 5.",
+  "legende_titre": "Trois signes contre une barre",
+  "lecture": [
+   "À gauche, les cercles violets entourent les trois signes : deux parenthèses et le signe ÷.",
+   "À droite, le trait bleu est la barre : 6 + 4 au-dessus, 2 en dessous.",
+   "La flèche orange va des trois signes vers la barre, qui fait leur travail.",
+   "Les deux écritures donnent 5, en vert."
+  ],
+  "a_voir": "Vous voyez qu'un seul trait fait le travail de trois signes, sans changer la valeur."
+ },
+ {
+  "code": "04-053",
+  "a_dire": "Parenthèses, crochets et accolades ont le même sens : (2 + 3) × 4, [2 + 3] × 4 et {2 + 3} × 4 valent tous 20 ; seul l'aspect change, et le signe fermant doit correspondre au signe ouvrant.",
+  "legende_titre": "Trois aspects pour un même signe",
+  "lecture": [
+   "Les trois lignes entourent la même partie, 2 + 3, avec trois signes d'aspect différent.",
+   "La colonne verte montre que les trois lignes donnent 20.",
+   "La ligne rouge ouvre avec une parenthèse et ferme avec un crochet : cette écriture est refusée."
+  ],
+  "a_voir": "Vous voyez que changer de signe ne change pas le résultat, à condition d'ouvrir et de fermer avec le même."
+ },
+ {
+  "code": "04-054",
+  "a_dire": "Avec des groupements emboîtés, on calcule d'abord le plus intérieur, ce qui retire un niveau à chaque étape, et l'on s'arrête quand il ne reste plus de groupement : 10 + [30 − (2 × 9)] → 10 + [30 − 18] → 10 + 12 → 22.",
+  "legende_titre": "De l'intérieur vers l'extérieur",
+  "lecture": [
+   "Chaque ligne est le calcul tel qu'il est écrit à cette étape.",
+   "Le cadre orange entoure la partie calculée à l'étape suivante : toujours la plus intérieure.",
+   "À droite, en gris, le nombre de groupements qui restent : 2, puis 1, puis aucun.",
+   "Quand il n'en reste aucun, la dernière opération donne 22, en vert."
+  ],
+  "a_voir": "Vous voyez que chaque étape fait disparaître un niveau de groupement, et que le calcul s'arrête quand il n'en reste plus."
+ },
+ {
+  "code": "04-055",
+  "a_dire": "La barre de fraction cache des parenthèses autour du haut : la fraction se lit (6 + 4) ÷ 2 = 5 ; si l'on retire ce groupement, on lit 6 + 4 ÷ 2 = 8, qui n'est pas la fraction.",
+  "legende_titre": "Ce que la barre cache",
+  "lecture": [
+   "Le cadre bleu en pointillé montre les parenthèses que la barre ne dessine pas autour de 6 + 4.",
+   "La colonne de gauche garde ce groupement : 10 ÷ 2 donne 5, en vert.",
+   "La colonne de droite l'enlève : 4 ÷ 2 se fait d'abord et l'on trouve 8, en rouge."
+  ],
+  "a_voir": "Vous voyez que la même fraction donne 5 ou 8 selon qu'on groupe le haut ou non, et que seule la lecture groupée donne la fraction."
+ },
+ {
+  "code": "04-056",
+  "a_dire": "2 + 3 × 4 et (2 + 3) × 4 décrivent deux dessins différents : 2 carreaux seuls plus un rectangle de 12 (14 carreaux), contre un seul rectangle de 5 colonnes sur 4 (20 carreaux).",
+  "legende_titre": "Mêmes nombres, deux dessins",
+  "lecture": [
+   "En haut, les 2 carreaux bleus restent seuls : rien ne les multiplie.",
+   "En haut, le rectangle orange a 3 colonnes et 4 rangées : 12 carreaux, qui s'ajoutent aux 2.",
+   "En bas, les 2 colonnes bleues et les 3 colonnes orange ont toutes 4 carreaux de haut.",
+   "Le contour vert entoure un seul rectangle de 5 colonnes : 20 carreaux."
+  ],
+  "a_voir": "Vous voyez que les parenthèses mettent le 2 et le 3 dans la même largeur, ce qui change 14 en 20."
+ },
+ {
+  "code": "04-057",
+  "a_dire": "En remplaçant 3 × 4 par 4 + 4 + 4, la ligne 2 + 3 × 4 devient 2 + 4 + 4 + 4, qui ne contient plus que des additions et vaut 14 : c'est pour cela que la multiplication passe avant l'addition.",
+  "legende_titre": "Déplier le raccourci 3 × 4",
+  "lecture": [
+   "En haut, la boîte orange entoure 3 × 4 : tant qu'on ne le déplie pas, la ligne a deux lectures, en rouge.",
+   "La flèche orange remplace 3 × 4 par 4 + 4 + 4 : c'est l'étape qui porte la preuve.",
+   "Sous la ligne, les 2 carrés bleus sont les pains et les 3 colonnes orange sont les 3 lots de 4 œufs.",
+   "En bas, il ne reste que des additions : le total vert est 14."
+  ],
+  "a_voir": "Vous voyez qu'une fois 3 × 4 déplié, il n'y a plus qu'une addition et une seule valeur, 14."
+ },
+ {
+  "code": "04-058",
+  "a_dire": "En remplaçant 3² par 3 × 3, la ligne 2 × 3² devient 2 × 3 × 3 = 18 ; calculer 2 × 3 d'abord donne 36, mais met au carré le 6, qui n'était pas sous l'exposant.",
+  "legende_titre": "Sur quel nombre porte le carré ?",
+  "lecture": [
+   "À gauche, 3² est remplacé par 3 × 3 : chaque carré bleu a 9 carreaux.",
+   "Les deux carrés bleus font 2 × 9 carreaux : le total vert est 18.",
+   "À droite, on fait 2 × 3 = 6 d'abord : le grand carré rouge a 6 × 6 = 36 carreaux.",
+   "Le rouge montre que ce carré porte sur 6, qui n'était pas sous l'exposant."
+  ],
+  "a_voir": "Vous voyez que seul le calcul de gauche met au carré le 3 qui porte l'exposant : 18."
+ },
+ {
+  "code": "04-059",
+  "a_dire": "L'étape 1 fait calculer d'abord l'intérieur des parenthèses : avec elle, (2 + 3) × 4 donne 5 × 4 = 20 ; sans elle, on ferait 3 × 4 d'abord et on trouverait 14.",
+  "legende_titre": "Retirer l'étape 1",
+  "lecture": [
+   "La boîte orange entoure la partie entre parenthèses, 2 + 3.",
+   "Sur la droite du haut, les sauts verts font 5 chacun : 4 sauts arrivent à 20.",
+   "Sur la droite du bas, sans l'étape 1, on fait un saut de 2 puis 3 sauts de 4 : les sauts rouges arrivent à 14."
+  ],
+  "a_voir": "Vous voyez que la même écriture arrive à 20 ou à 14 selon qu'on fait l'intérieur des parenthèses d'abord ou non."
+ },
+ {
+  "code": "04-060",
+  "a_dire": "L'étape 2 fait remplacer l'exposant ou la racine par sa valeur avant les autres opérations : 2 × 3² = 2 × 9 = 18 et 10 + √16 = 10 + 4 = 14.",
+  "legende_titre": "L'étape 2 sur deux calculs",
+  "lecture": [
+   "Les boîtes orange entourent l'exposant 3² et la racine √16 : ce sont eux qu'on calcule d'abord.",
+   "La grille bleue du haut a 3 × 3 = 9 carreaux ; la grille bleue du bas a 16 carreaux et 4 carreaux de côté.",
+   "Les boîtes vertes font l'opération restante avec le nombre trouvé : 18 et 14.",
+   "La phrase rouge rappelle que commencer par 10 + 16 serait lire le calcul autrement."
+  ],
+  "a_voir": "Vous voyez que l'exposant et la racine sont remplacés par un seul nombre avant la multiplication ou l'addition."
+ },
+ {
+  "code": "04-061",
+  "a_dire": "Dans 24 ÷ 4 × 2, on fait les signes dans l'ordre d'écriture : 24 ÷ 4 = 6, puis 6 × 2 = 12 ; faire 4 × 2 d'abord fait diviser par 8 et donne 3.",
+  "legende_titre": "Diviser puis multiplier, ou l'inverse",
+  "lecture": [
+   "À gauche, les 24 disques sont partagés en 4 rangées : une part, en orange, contient 6 disques.",
+   "La flèche orange prend cette part 2 fois : les disques verts sont 12.",
+   "À droite, le camarade fait 4 × 2 = 8 d'abord : les 24 disques forment 8 rangées, et une part n'a que 3 disques.",
+   "Le rouge montre que le second signe a été appliqué au 4 seul, et non au résultat 6."
+  ],
+  "a_voir": "Vous voyez que le signe × agit sur le résultat de la division, 6, et non sur le 4 : 12 et non 3."
+ },
+ {
+  "code": "04-062",
+  "a_dire": "Sans la consigne « de gauche à droite », 10 − 4 + 3 aurait deux valeurs : 9 en faisant 10 − 4 puis + 3, et 3 en faisant 4 + 3 d'abord ; la consigne garde 9.",
+  "legende_titre": "10 − 4 + 3 lu dans deux ordres",
+  "lecture": [
+   "La première flèche verte part de 10 et recule de 4 : elle arrive à 6.",
+   "La seconde flèche verte part de 6 et avance de 3 : elle arrive à 9.",
+   "La flèche rouge recule de 7 d'un coup, parce que 4 et 3 ont été ajoutés d'abord : elle arrive à 3."
+  ],
+  "a_voir": "Vous voyez qu'avec un signe moins, les deux ordres arrivent à deux points différents de la droite, 9 et 3."
+ },
+ {
+  "code": "04-063",
+  "a_dire": "Pour calculer 2 + 3 × 4², on déplie d'abord l'écriture la plus abrégée, l'exposant (16), puis la multiplication (16 + 16 + 16 = 48), et on additionne en dernier : 2 + 48 = 50.",
+  "legende_titre": "Du plus abrégé au moins abrégé",
+  "lecture": [
+   "En haut, l'écriture 2 + 3 × 4² contient trois raccourcis empilés.",
+   "La première barre orange déplie 4² : 4 groupes de 4, soit 16.",
+   "La deuxième ligne déplie 3 × 16 : trois barres orange de 16, après la petite barre bleue du 2.",
+   "La barre verte additionne le tout : 2 + 48 = 50, et elle a la même longueur que la ligne au-dessus."
+  ],
+  "a_voir": "Vous voyez que chaque étape remplace un raccourci par ce qu'il abrège, en commençant par le plus abrégé."
+ },
+ {
+  "code": "04-064",
+  "a_dire": "Les parenthèses ne sont pas un raccourci qu'on déplie comme l'exposant : elles marquent un ordre choisi par celui qui écrit, qui fait passer 2 + 3 × 4 de 14 à (2 + 3) × 4 = 20.",
+  "legende_titre": "Un raccourci et un choix",
+  "lecture": [
+   "À gauche, en violet, 3² se déplie en 3 × 3 : l'exposant abrège un calcul.",
+   "À droite, la boîte bleue (2 + 3) ne cache aucun calcul plus long : elle dit seulement quoi faire d'abord.",
+   "La flèche orange, « autre choix d'écriture », montre que ce choix fait passer le résultat de 14 à 20.",
+   "En bas, en gris, des parenthèses autour de 3 × 4 ne changent pas la valeur 12 : ici le choix ne change rien."
+  ],
+  "a_voir": "L'exposant se remplace par un calcul, alors que les parenthèses sont un ordre choisi par celui qui écrit."
+ },
+ {
+  "code": "04-065",
+  "a_dire": "Dans 10 − 4 − 3, chaque soustraction retire un nombre du reste précédent : 10 − 4 = 6, puis 6 − 3 = 3 ; regrouper autrement, 10 − (4 − 3), donne 9, alors que pour l'addition les deux regroupements donnent 17.",
+  "legende_titre": "10 − 4 − 3 regroupé de deux façons",
+  "lecture": [
+   "Dans la rangée du haut, vous retirez 4 disques, puis 3 autres : les 3 disques verts restent.",
+   "Dans la rangée du bas, le camarade calcule 4 − 3 = 1 d'abord et ne retire qu'un disque : 9 restent, en rouge.",
+   "En violet, les deux regroupements de l'addition donnent le même total, 17.",
+   "La dernière ligne rappelle que 3 − 4 n'a pas de réponse parmi 0, 1, 2, 3…"
+  ],
+  "a_voir": "Vous voyez que pour la soustraction, regrouper autrement change le reste, de 3 à 9, alors que l'addition donne 17 dans les deux cas."
+ },
+ {
+  "code": "04-066",
+  "a_dire": "Écrire vingt facteurs 2 un par un demande 39 caractères (20 chiffres 2 et 19 signes ×), alors que 2²⁰ en demande 3 ; la ligne longue grandit à chaque facteur, l'écriture courte seulement avec les chiffres de l'exposant.",
+  "legende_titre": "Compter les caractères",
+  "lecture": [
+   "Chaque case bleue est un chiffre 2, chaque case grise un signe × : la ligne longue alterne les deux.",
+   "Pour 3 facteurs, il y a 5 cases ; 2³ n'a que 2 caractères.",
+   "Pour 20 facteurs, la rangée compte 20 cases bleues et 19 cases grises : 39 caractères.",
+   "En dessous, 2 avec 20 en petit tient en 3 caractères, et 2¹⁰⁰ en tiendrait 4."
+  ],
+  "a_voir": "Vous voyez que la rangée de cases s'allonge à chaque facteur, alors que l'écriture courte reste presque de la même taille."
+ },
+ {
+  "code": "04-067",
+  "a_dire": "La question « quel côté pour cette aire ? » devient une opération notée √A, la même pour toutes les aires : √36 vaut 6 et √49 vaut 7.",
+  "legende_titre": "Deux pièces carrées, une seule écriture",
+  "lecture": [
+   "En haut, la flèche orange va de la question posée par essais à l'écriture bleue √A.",
+   "Chaque carré bleu est une pièce : A est le nombre de carreaux qu'il contient, 36 à gauche et 49 à droite.",
+   "Chaque accolade verte est le côté du carré : √36 = 6 et √49 = 7."
+  ],
+  "a_voir": "Vous voyez que la même écriture √A donne le côté de chaque carré, sans essais : 6 pour 36 carreaux, 7 pour 49."
+ },
+ {
+  "code": "04-068",
+  "a_dire": "Grâce à l'ordre des opérations, la ligne 2 + 3 × 4 a une seule valeur, 14, pour vous, pour un camarade et pour une machine ; une machine qui lit de gauche à droite affiche 20.",
+  "legende_titre": "Une ligne, trois lecteurs",
+  "lecture": [
+   "En haut, la ligne bleue est la même pour tous les lecteurs.",
+   "Les deux écrans verts appliquent la règle : ils font 3 × 4 = 12 d'abord, puis 2 + 12, et affichent 14.",
+   "L'écran rouge lit de gauche à droite : il fait 2 + 3 = 5 d'abord, puis 5 × 4, et affiche 20."
+  ],
+  "a_voir": "Vous voyez que tous ceux qui suivent la règle obtiennent le même nombre, 14, sans deviner l'intention de celui qui a écrit."
+ },
+ {
+  "code": "04-069",
+  "a_dire": "Pour calculer 6 × (3² + 2²) + 4², on fait d'abord les exposants puis l'addition dans la parenthèse (13), puis l'exposant restant (16), puis la multiplication (78), enfin l'addition : 94.",
+  "legende_titre": "Le calcul ligne après ligne",
+  "lecture": [
+   "La ligne bleue du haut est le calcul de départ.",
+   "Chaque ligne grise est le calcul après une étape ; le mot orange à sa droite dit quelle étape vient d'être faite.",
+   "La ligne verte du bas est la valeur finale : 94."
+  ],
+  "a_voir": "Vous voyez que chaque ligne vaut la précédente avec une seule opération faite, dans l'ordre de la règle."
+ },
+ {
+  "code": "04-070",
+  "a_dire": "Dans 6 × 13 + 16, le 6 multiplie seulement 13 : 78 + 16 = 94 ; mettre le 16 avec le 13 sous le 6 donne 6 × 29 = 174, un résultat faux.",
+  "legende_titre": "Ce que le 6 multiplie",
+  "lecture": [
+   "Les boîtes bleues sont les mêmes nombres dans les deux colonnes.",
+   "Le cadre vert, à gauche, entoure ce que le 6 multiplie vraiment : le 13 seul ; on obtient 78, puis 78 + 16 = 94.",
+   "Le cadre rouge, à droite, entoure aussi le 16 ; on calcule alors 6 × 29 = 174, ce qui est faux."
+  ],
+  "a_voir": "Vous voyez que les nombres sont les mêmes des deux côtés : seul change ce que le cadre met sous le 6."
+ },
+ {
+  "code": "04-071",
+  "a_dire": "La barre de fraction groupe le haut et le bas séparément : on calcule le haut entier (40), le bas entier (40), puis on divise : 40 ÷ 40 = 1.",
+  "legende_titre": "Le haut, le bas, puis la barre",
+  "lecture": [
+   "Le cadre bleu du haut et le cadre bleu du bas sont deux calculs séparés par la barre.",
+   "Chaque flèche orange montre le calcul d'un côté en entier : 36 + 4 = 40 en haut, 16 + 24 = 40 en bas.",
+   "En vert, la barre fait son travail en dernier : 40 ÷ 40 = 1."
+  ],
+  "a_voir": "Vous voyez que chaque côté de la barre devient un seul nombre avant que la division se fasse."
+ },
+ {
+  "code": "04-072",
+  "a_dire": "Un cas limite est un test d'une définition sur une valeur extrême : là où le test ordinaire (7³ = 343) passe, on vérifie si la définition tient encore pour l'exposant 1, l'exposant 0 et la base 0.",
+  "legende_titre": "Quatre tests d'une même définition",
+  "lecture": [
+   "En haut, le même test vaut pour les quatre colonnes : peut-on compter les facteurs ?",
+   "La colonne violette est un test ordinaire : 7³ a 3 facteurs et donne 343.",
+   "Les trois colonnes bleues sont des cas limites : 7¹ a 1 facteur, 7⁰ en a 0, 0⁵ en a 5.",
+   "En vert, on peut compter et la définition donne une valeur ; en rouge, pour 7⁰, il n'y a aucun facteur à compter et aucune valeur."
+  ],
+  "a_voir": "C'est sur une valeur extrême, et non sur le cas facile, que la définition peut s'arrêter : le nombre de facteurs sous chaque case le montre."
+ },
+ {
+  "code": "04-073",
+  "a_dire": "7¹ = 7, car la définition met un seul facteur 7 et qu'il n'existe aucun second facteur avec qui le multiplier.",
+  "legende_titre": "Un seul facteur 7",
+  "lecture": [
+   "Le trait bleu épais est le côté 7, pris une seule fois : sa longueur est 7.",
+   "La boîte bleue est l'unique facteur 7 que demande l'exposant 1.",
+   "La case rouge vide est la place d'un second facteur : elle est vide, il n'y a rien à multiplier.",
+   "Le vert donne ce qui reste : 7¹ = 7."
+  ],
+  "a_voir": "Vous voyez qu'avec un seul facteur, la multiplication n'a rien à faire : le résultat est ce facteur, 7."
+ },
+ {
+  "code": "04-074",
+  "a_dire": "Dans la suite 7³ = 343, 7² = 49, 7¹ = 7, chaque pas divise par 7 ; un pas de plus donne 7 ÷ 7 = 1, et l'on pose 7⁰ = 1.",
+  "legende_titre": "La suite des puissances de 7, un pas plus loin",
+  "lecture": [
+   "Les trois cases bleues sont 7³, 7² et 7¹, que la répétition calcule : 343, 49, 7.",
+   "Chaque flèche orange divise par 7.",
+   "La flèche pointillée fait un pas de plus : 7 ÷ 7 = 1 ; la case verte pointillée est la valeur que l'on pose pour 7⁰.",
+   "L'accolade orange du bas montre que le même pas ÷ 7 vaut pour les quatre cases."
+  ],
+  "a_voir": "1 est la seule valeur qui garde le même pas « ÷ 7 » jusqu'au bout de la suite."
+ },
+ {
+  "code": "04-075",
+  "a_dire": "La définition par répétition couvre les exposants 1, 2, 3 et plus ; pour l'exposant 0 il n'y a aucun facteur, donc elle ne donne aucune valeur, et il faudra l'étendre au chapitre 14.",
+  "legende_titre": "Les exposants que la répétition atteint",
+  "lecture": [
+   "La droite grise range les exposants de 0 à 4.",
+   "Au-dessus de chaque exposant, les cases bleues sont les facteurs 5 : autant de cases que l'exposant.",
+   "L'accolade verte marque les exposants où la définition donne une valeur : 1 et plus.",
+   "Au-dessus de 0, la case rouge est vide : 5⁰ n'a aucun facteur, la définition ne dit rien."
+  ],
+  "a_voir": "Vous voyez que la pile de facteurs baisse d'une case à chaque exposant et qu'à 0 elle est vide : il n'y a plus rien à multiplier."
+ },
+ {
+  "code": "04-076",
+  "a_dire": "0⁵ = 0 × 0 × 0 × 0 × 0 vaut 0 : dès le premier facteur le produit vaut 0, et chaque facteur 0 suivant le laisse à 0.",
+  "legende_titre": "Cinq facteurs 0, multipliés un par un",
+  "lecture": [
+   "Les cinq boîtes bleues sont les facteurs de 0⁵ : cinq fois 0.",
+   "Chaque flèche orange fait entrer un facteur dans le produit.",
+   "Les disques verts donnent le produit après chaque facteur : il vaut 0 dès le premier, et reste 0 jusqu'au cinquième."
+  ],
+  "a_voir": "Vous voyez que le produit vaut 0 dès le début et qu'aucun facteur 0 ajouté ne le fait sortir de 0."
+ },
+ {
+  "code": "04-077",
+  "a_dire": "1²⁸ = 1, car chaque facteur 1 ajouté laisse le produit inchangé : le produit reste 1 quel que soit le nombre de facteurs, alors qu'avec la base 2 il change à chaque facteur.",
+  "legende_titre": "Ajouter des facteurs 1, ajouter des facteurs 2",
+  "lecture": [
+   "Vers la droite, vous ajoutez des facteurs ; vers le haut, vous lisez le produit.",
+   "Les points bleus sont le produit avec la base 1 : ils restent à la hauteur 1 jusqu'à 28 facteurs.",
+   "Les points rouges sont le produit avec la base 2 : 2, puis 4, puis 8 ; il monte à chaque facteur."
+  ],
+  "a_voir": "Vous voyez que la ligne bleue ne monte jamais : ajouter un facteur 1 ne change pas le produit, d'où 1²⁸ = 1."
+ },
+ {
+  "code": "04-078",
+  "a_dire": "La racine de 0 est 0, car 0 × 0 = 0 : ici la racine est égale au nombre, donc l'idée « la racine est plus petite que le nombre » est fausse pour 0.",
+  "legende_titre": "Que vaut le côté d'un carré d'aire 0 ?",
+  "lecture": [
+   "À gauche, le carré bleu a 16 carreaux : son côté mesure 4, plus petit que 16.",
+   "À droite, les carrés orange pointillés rétrécissent jusqu'au point bleu : un carré d'aire 0 a un côté 0.",
+   "La ligne verte 0 × 0 = 0 dit que √0 vaut 0.",
+   "La ligne rouge dit que, pour 0, la racine est égale au nombre."
+  ],
+  "a_voir": "Pour 0, la racine n'est pas plus petite que le nombre : elle lui est égale."
+ },
+ {
+  "code": "04-079",
+  "a_dire": "√1 = 1 parce que 1 × 1 = 1 : le carré d'un seul carreau a un côté 1, et 1 est, avec 0, un nombre égal à sa racine.",
+  "legende_titre": "Le carré d'un seul carreau",
+  "lecture": [
+   "En haut, le carré bleu est un seul carreau : son côté mesure 1, car 1 × 1 = 1.",
+   "Sur la droite graduée, les deux points verts, 0 et 1, sont les nombres égaux à leur racine.",
+   "Les flèches violettes vont de 4 à 2 et de 9 à 3 : pour ces nombres, la racine est plus petite."
+  ],
+  "a_voir": "1 est, avec 0, un nombre que la racine laisse à sa place."
+ },
+ {
+  "code": "04-080",
+  "a_dire": "Le carré d'aire 10 existe et son côté √10 est entre 3 et 4, mais ce n'est pas un entier, car il n'y a pas d'entier entre 3 et 4.",
+  "legende_titre": "Chercher le côté d'un carré d'aire 10",
+  "lecture": [
+   "Le carré rouge plein a 9 carreaux : un côté 3 est trop petit.",
+   "Le carré rouge pointillé a 16 carreaux : un côté 4 est trop grand.",
+   "Le carré bleu a une aire 10 : son côté est entre les deux.",
+   "Sur la droite, le point bleu √10 est entre 3 et 4, où il n'y a aucun entier."
+  ],
+  "a_voir": "Le côté du carré d'aire 10 existe, mais il tombe entre deux entiers."
+ },
+ {
+  "code": "04-081",
+  "a_dire": "Dans (10 ÷ 0) × 6, la parenthèse doit être calculée d'abord, mais aucun nombre multiplié par 0 ne donne 10 ; sans valeur pour la parenthèse, toute l'expression est non définie.",
+  "legende_titre": "Que mettre à la place de la parenthèse ?",
+  "lecture": [
+   "La boîte orange (10 ÷ 0) est calculée d'abord.",
+   "Les flèches orange partent de 1, 5 et 10 : multipliés par 0, ils tombent tous sur 0.",
+   "Le cercle rouge sur 10 n'est jamais atteint : aucun nombre ne va à la place du point d'interrogation.",
+   "En bas, la boîte rouge est vide : le × 6 n'a rien à multiplier."
+  ],
+  "a_voir": "Aucune valeur ne remplit la parenthèse, donc l'expression entière n'a pas de valeur."
+ },
+ {
+  "code": "04-082",
+  "a_dire": "Le côté d'un carré mis au carré donne son aire, c², le côté d'un cube mis au cube donne son volume, c³, et l'aire d'un disque utilise aussi un carré : π × r².",
+  "legende_titre": "Trois formes, trois formules",
+  "lecture": [
+   "À gauche, le carré a 5 carreaux de côté : son aire, 25, s'écrit c².",
+   "Au milieu, le cube a 5 petits cubes de côté : son volume, 125, s'écrit c³.",
+   "À droite, le trait orange r va du centre au bord du disque : l'aire du disque s'écrit π × r²."
+  ],
+  "a_voir": "Le même petit 2 ou 3 en haut mesure une aire ou un volume."
+ },
+ {
+  "code": "04-083",
+  "a_dire": "7³ × 7⁵ met bout à bout trois facteurs 7 puis cinq facteurs 7, soit huit facteurs, donc 7⁸ ; mais 7⁻² ne peut pas se lire comme un nombre de facteurs.",
+  "legende_titre": "Compter les facteurs 7",
+  "lecture": [
+   "Les trois boîtes bleues sont les facteurs de 7³, les cinq boîtes violettes ceux de 7⁵.",
+   "L'accolade verte compte les huit facteurs : le produit s'écrit 7⁸.",
+   "En bas, la boîte rouge reste vide : on ne peut pas aligner « moins deux » facteurs 7."
+  ],
+  "a_voir": "Pour multiplier, on additionne les nombres de facteurs ; pour un exposant négatif, ce comptage ne marche plus."
+ },
+ {
+  "code": "04-084",
+  "a_dire": "Chaque facteur 10 ajoute un zéro à droite, donc 10⁶ s'écrit 1 suivi de six zéros, 1 000 000 : l'exposant donne le nombre de zéros.",
+  "legende_titre": "Compter les zéros au lieu de les écrire",
+  "lecture": [
+   "Les deux lignes du haut montrent 10² et 10³ : deux zéros, puis trois zéros.",
+   "La rangée de cases montre 1 000 000 : la case grise porte le 1, les six cases vertes portent les zéros.",
+   "La flèche orange relie l'exposant 6 aux six zéros comptés par l'accolade."
+  ],
+  "a_voir": "Le petit 6 en haut de 10⁶ est le nombre de zéros de 1 000 000."
+ },
+ {
+  "code": "04-085",
+  "a_dire": "x² veut dire x × x, avec la même définition que pour un nombre ; dans 3 × x², on calcule x² d'abord : avec x = 4, on obtient 3 × 16 = 48.",
+  "legende_titre": "Une puissance posée sur une lettre",
+  "lecture": [
+   "L'accolade orange dit que x² veut dire x × x, et qu'on le calcule avant de multiplier par 3.",
+   "Avec x = 4, chaque carré bleu a 4 × 4 = 16 carreaux.",
+   "L'accolade verte réunit les trois carrés : 3 × 16 = 48.",
+   "La ligne violette montre qu'avec x = 5, le résultat devient 75."
+  ],
+  "a_voir": "Le petit 2 sur la lettre x compte les facteurs x, comme sur un nombre."
+ },
+ {
+  "code": "04-086",
+  "a_dire": "Pour retrouver un nombre inconnu, on applique l'opération qui défait celle qu'il a subie : le nombre positif mis au carré donne 16, la racine carrée le défait et donne 4.",
+  "legende_titre": "Défaire ce qui a été fait",
+  "lecture": [
+   "La flèche orange du haut est l'opération faite : le nombre inconnu, multiplié par lui-même, donne 16.",
+   "La flèche verte du bas revient en arrière : la racine carrée de 16 donne 4.",
+   "La ligne violette dit que la soustraction défait l'addition de la même façon."
+  ],
+  "a_voir": "Pour revenir au nombre inconnu, on parcourt le chemin à l'envers avec l'opération inverse."
+ },
+ {
+  "code": "04-087",
+  "a_dire": "Échanger la base et l'exposant change le résultat pour 2 et 3 (8 et 9), mais pas pour 2 et 4 (16 et 16) : « l'ordre compte » n'est pas une loi sans exception.",
+  "legende_titre": "Échanger base et exposant",
+  "lecture": [
+   "Les barres bleues mesurent aᵇ, les barres violettes bᵃ.",
+   "Pour 2 et 3, la barre violette dépasse la bleue : 8 et 9 sont différents.",
+   "Pour 2 et 4, les deux barres s'arrêtent au trait rouge : 16 et 16 sont égaux."
+  ],
+  "a_voir": "Pour 2 et 4, échanger base et exposant ne change rien."
+ },
+ {
+  "code": "04-088",
+  "a_dire": "L'égalité x² = 16 dit que x multiplié par lui-même donne 16 ; pour retrouver x, on prend la racine carrée : √16 = 4, et l'équation seule a aussi la solution −4.",
+  "legende_titre": "Lire x² = 16 sur un sol carré",
+  "lecture": [
+   "En haut, le carré bleu a une aire 16 ; son côté est le nombre x cherché.",
+   "Le carré rouge pointillé, de côté 3, ne couvre que 9 carreaux : 3 est trop petit.",
+   "La racine carrée de 16 donne 4 : pour une longueur, seul 4 convient.",
+   "Sous la ligne pointillée, l'équation x² = 16 seule a deux solutions : le point vert 4 et le point violet −4 donnent tous deux 16 multipliés par eux-mêmes ; −4 ne peut pas être un côté."
+  ],
+  "a_voir": "Au-dessus de la ligne, le carré donne un seul côté, 4 ; en dessous, l'équation a deux solutions, 4 et −4."
+ },
+ {
+  "code": "04-089",
+  "a_dire": "Pour lire (6 + √(36 − 20)) / 2, on applique l'ordre des opérations : la barre fait calculer tout le haut d'abord, en commençant sous la racine, puis on divise par 2, ce qui donne 5.",
+  "legende_titre": "Lire une barre et une racine dans le bon ordre",
+  "lecture": [
+   "La boîte orange entoure tout le haut : la barre le fait calculer avant de diviser.",
+   "La boîte bleue entoure 36 − 20 : c'est le premier calcul, sous la racine.",
+   "À gauche, chaque ligne orange est une action ; à droite, l'expression après cette action.",
+   "La dernière ligne divise 10 par 2 et donne 5."
+  ],
+  "a_voir": "Chaque étape suit l'ordre des opérations, de l'intérieur vers l'extérieur."
+ }
+]

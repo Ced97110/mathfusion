@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 30, 66, 'par récurrence', 'sujet', 'm', weight='bold')
+line(ax, [(4, 12), (58, 12)], 'fixe')
+line(ax, [(4, 12), (13, 12)], 'sujet', lw=1.6)
+text(ax, 14, 6, 'cas 0 : au sol', 'sujet', 's')
+text(ax, 8.5, 15, '0', 'sujet', 's')
+for k in range(1, 6):
+    h = 8 * k
+    box(ax, 4 + 9 * k, 12, 9, h, 'sujet', r=0.3)
+    text(ax, 8.5 + 9 * k, 12 + h - 4, str(20 * k), 'resultat' if k == 5 else 'sujet', 's', weight='bold' if k == 5 else 'normal')
+    arrow(ax, (4 + 9 * k, 12 + 8 * (k - 1)), (4 + 9 * k, 12 + h), 'varie')
+text(ax, 45, 48, '+20', 'varie', 's')
+box(ax, 60, 56, 26, 18, 'autre')
+text(ax, 73, 70, 'explicite', 'autre', 's', weight='bold')
+text(ax, 73, 61, '5 × 20 = 100', 'autre', 's')
+box(ax, 60, 22, 26, 24, 'limite')
+text(ax, 73, 42, 'circulaire', 'limite', 's', weight='bold')
+text(ax, 73, 34, '5 → 5 → 5 …', 'limite', 's')
+arrow(ax, (80, 30), (66, 30), 'limite', curve=-0.5)
+save(fig, '01-048')

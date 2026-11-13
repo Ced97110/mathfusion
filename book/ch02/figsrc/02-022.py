@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,46,61,'dizaines','encre','s'); text(ax,58,61,'unités','encre','s')
+for y,a,b in [(50,'1','8'),(43,'3','4')]:
+    box(ax,40,y,12,7,'fixe',fill=False,label=a); box(ax,52,y,12,7,'fixe',fill=False,label=b)
+line(ax,[(38,41.5),(66,41.5)],'encre',lw=1.0)
+box(ax,40,30,12,7,'limite',fill=False); box(ax,52,30,12,7,'limite',fill=False)
+text(ax,4,33.5,'par la gauche','limite','s',ha='left')
+text(ax,43.5,33.5,'4','limite','m'); line(ax,[(42,31.5),(45,35.5)],'limite')
+text(ax,49,33.5,'5','limite','m'); text(ax,58,33.5,'2','encre','m')
+arrow(ax,(46,29),(58,29),'varie',curve=0.4)
+arrow(ax,(58,37.5),(46,37.5),'limite',curve=0.4)
+box(ax,40,14,12,7,'resultat',fill=False); box(ax,52,14,12,7,'resultat',fill=False)
+text(ax,4,17.5,'par la droite','resultat','s',ha='left')
+text(ax,58,17.5,'2','resultat','m'); text(ax,46,17.5,'5','resultat','m')
+text(ax,46,23.5,'1','varie','s')
+arrow(ax,(58,13),(46,13),'resultat',curve=-0.4)
+save(fig,'02-022')

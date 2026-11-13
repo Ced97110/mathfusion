@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+for i in range(1,10): disc(ax,20+7*(i-1),58,2.2,'fixe' if i<=4 else 'sujet')
+for x in (20,27,34,41): disc(ax,x,48,2.2,'autre'); line(ax,[(x,50.4),(x,55.6)],'fixe',lw=0.5,dash=True)
+text(ax,9,58,'9 élèves','encre','s'); text(ax,9,48,'4 élèves','encre','s')
+text(ax,48,48,'aucun élève retiré','resultat','s',ha='left')
+brace(ax,45.8,78.2,61,'sujet','dépasse de 5',down=False)
+f=numberline(ax,8,84,22,0,10,1,labels=False,role='fixe',arrow_right=False)
+for v in (0,4,9): text(ax,f(v),17.5,str(v),'fixe','s')
+disc(ax,f(4),22,1.2,'autre'); disc(ax,f(9),22,1.2,'fixe')
+arrow(ax,(f(4),27),(f(9),27),'sujet',lw=1.2,both=True)
+text(ax,57.4,32,'longueur 5, dans les 2 sens','sujet','s')
+save(fig,'02-033')

@@ -1,3 +1,16 @@
 node_modules
 .next
 out
+
+# Livre : on garde les sources (fiches, légendes, scripts de figures), pas ce qui se régénère
+book/source/
+book/ch*/*
+!book/ch*/fiches.json
+!book/ch*/meta.json
+!book/ch*/specs/
+!book/ch*/figsrc/
+book/ch*/figsrc/test.py
+!book/ch*/fix/
+book/ch*/fix/*
+!book/ch*/fix/*_textes.json
+__pycache__/

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,22,35,20,10,'sujet',label='4 × 4',size='l')
+text(ax,47,40,'=','encre','l')
+box(ax,52,35,12,10,'resultat',label='16',size='l')
+arrow(ax,(32,45),(58,45),'varie',curve=-0.4)
+text(ax,45,55,'au carré : 4 donne 16','varie','s')
+arrow(ax,(58,35),(32,35),'varie',curve=-0.4)
+text(ax,45,24,'racine carrée : 16 redonne 4','varie','s')
+line(ax,[(6,18),(82,18)],'fixe',lw=0.5)
+text(ax,24,10,'5 × 5 = 25','encre','m')
+text(ax,64,10,'5 → 25 → 5','resultat','m')
+save(fig,'04-046')

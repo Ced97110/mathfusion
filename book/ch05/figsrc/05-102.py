@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,62,"ce que l'exemple montre",'resultat','s')
+box(ax,4,48,48,10,'sujet',label=r'$12\times(-1)+18\times 1$',size='s')
+arrow(ax,(53,53),(60,53),'varie'); box(ax,61,48,23,10,'resultat',label=r'$-12+18=6$',size='s')
+text(ax,44,41,"ce qu'il ne montre pas",'limite','s')
+box(ax,4,27,80,9,'limite',label='le chemin vers −1 et 1',size='s')
+box(ax,4,15,80,9,'limite',label=r'que −1 et 1 sont seuls : 2, $-1$',size='s')
+box(ax,4,3,80,9,'limite',label='coefficients de 945 et 2415 ?',size='s')
+save(fig,'05-102')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,'S : première lettre de somme','encre','s')
+box(ax,8,44.5,22,3,'fixe',label='a',size='s')
+box(ax,30,44.5,28,3,'varie',label='b',size='s')
+disc(ax,58,46,1.3,'resultat'); text(ax,58,50.5,'S','resultat','l')
+text(ax,61.5,46,'sans nombre','fixe','s',ha='left')
+f=numberline(ax,8,80,20,0,60,10,labels=False,arrow_right=False)
+text(ax,8,16.6,'0','fixe','s')
+box(ax,f(0),34,f(18)-f(0),3,'fixe',label='18',size='s')
+box(ax,f(18),34,f(52)-f(18),3,'varie',label='34',size='s')
+box(ax,f(0),26,f(4)-f(0),3,'fixe')
+box(ax,f(4),26,f(7)-f(4),3,'varie')
+text(ax,19,27.5,'4 puis 3','encre','s',ha='left')
+for v,y0,lab in [(52,34,'S = 52'),(7,26,'S = 7')]:
+    line(ax,[(f(v),y0),(f(v),20)],'resultat',dash=True)
+    disc(ax,f(v),20,1.3,'resultat'); text(ax,f(v),15,lab,'resultat','s')
+save(fig,'02-019')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,30,56,'52','sujet','l'); text(ax,44,56,'− 27','varie','l'); text(ax,59,56,'= 25','resultat','l')
+f=numberline(ax,8,80,24,0,60,10,labels=False)
+text(ax,f(0),20.5,'0','fixe','s'); text(ax,f(25),20.5,'25','resultat','s'); text(ax,f(52),20.5,'52','sujet','s')
+disc(ax,f(52),24,1.2,'sujet'); disc(ax,f(25),24,1.2,'resultat')
+brace(ax,f(0),f(52),17,'sujet',label='vous avez 52 €')
+box(ax,f(0),28,f(25)-f(0),6,'resultat',label='il reste 25',size='s')
+box(ax,f(25),28,f(52)-f(25),6,'varie',label='rendus : 27',size='s',dash=True)
+arrow(ax,(f(52),42),(f(25),42),'varie',lw=1.4)
+text(ax,(f(52)+f(25))/2,46,'on retire 27 en un seul saut','varie','s')
+for v in (52,25): line(ax,[(f(v),34),(f(v),42)],'varie',lw=0.5,dash=True)
+save(fig,'02-035')

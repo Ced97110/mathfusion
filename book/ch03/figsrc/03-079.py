@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,34,58,r'$a$','sujet','l'); text(ax,40,58,'×','sujet','l'); text(ax,46,58,r'$b$','sujet','l')
+text(ax,55,58,'= 12','resultat','l')
+text(ax,40,51.5,'fois','encre','s')
+for r in range(3):
+    for c in range(6):
+        box(ax,24+5*c,12+5*r,5,5,'sujet' if c<4 else 'fixe',r=0.3,lw=0.5)
+line(ax,[(44,10.5),(44,29.5)],'limite',lw=1.4)
+line(ax,[(21.5,12),(21.5,27)],'fixe'); line(ax,[(20.8,12),(22.2,12)],'fixe'); line(ax,[(20.8,27),(22.2,27)],'fixe')
+text(ax,20,19.5,r'$a$ = 3','encre','s',ha='right')
+line(ax,[(34,56.2),(21,27.8)],'encre',lw=0.6)
+brace(ax,24,44,29.5,'sujet',label=r'$b$ = 4',down=False,size='s')
+line(ax,[(46,56.2),(35.5,35.6)],'encre',lw=0.6)
+text(ax,49,33.2,r'pas $a \times b$','limite','s')
+brace(ax,24,44,10,'resultat',label='12 carreaux',down=True,size='s')
+text(ax,70.5,25,'« le nombre de carreaux','fixe','s')
+text(ax,70.5,21.5,'de la partie de gauche »','fixe','s')
+arrow(ax,(70.5,19.5),(70.5,14),'fixe')
+text(ax,70.5,11,r'$a \times b$ : 3 signes','sujet','m')
+save(fig,'03-079')

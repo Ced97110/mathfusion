@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(55)
+disc(ax,18,34,10,'resultat',label='11',size='xl')
+text(ax,18,16,'arbre : un seul rond','resultat','s')
+arrow(ax,(29,34),(40,34),'varie')
+box(ax,40,26,44,16,'sujet',label='liste : 11',size='l')
+text(ax,62,20,'un seul élément','sujet','s')
+text(ax,44,5,r'$11 = 11$','encre','xl')
+text(ax,44,50,'11 est premier : aucune séparation','encre','s')
+save(fig,'05-067')

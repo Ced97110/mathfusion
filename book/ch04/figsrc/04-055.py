@@ -1,0 +1,32 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+def mw(s, size='l', weight='normal'):
+    t=fig.text(0,0,s,fontsize=SIZE[size],fontweight=weight)
+    w=t.get_window_extent(fig.canvas.get_renderer()).width
+    t.remove(); return w*25.4/fig.dpi
+# la fraction avec le groupement caché
+text(ax,44,75,'6 + 4','encre','l')
+line(ax,[(34,70),(54,70)],'sujet',lw=1.4)
+text(ax,44,65,'2','encre','l')
+box(ax,35,71.5,18,7,'sujet',fill=False,dash=True)
+tx=73; wt=mw('groupement caché','s')
+text(ax,tx,75,'groupement caché','sujet','s')
+line(ax,[(53.5,75),(tx-wt/2-0.8,75)],'sujet',lw=0.6)
+# lecture avec groupement (colonne de gauche)
+arrow(ax,(38,62),(24,58),'fixe',lw=0.6)
+text(ax,22,55,'la barre groupe','resultat','s')
+text(ax,22,46,'(6 + 4) ÷ 2','encre','m')
+arrow(ax,(22,43),(22,38),'varie')
+text(ax,22,35,'10 ÷ 2','encre','m')
+arrow(ax,(22,32),(22,27),'varie')
+text(ax,22,22,'= 5','resultat','l',weight='bold')
+# lecture sans groupement (colonne de droite)
+arrow(ax,(50,62),(64,58),'fixe',lw=0.6)
+text(ax,66,55,'trait seul','limite','s')
+text(ax,66,46,'6 + 4 ÷ 2','encre','m')
+arrow(ax,(66,43),(66,38),'varie')
+text(ax,66,35,'6 + 2','encre','m')
+arrow(ax,(66,32),(66,27),'varie')
+text(ax,66,22,'= 8','limite','l',weight='bold')
+text(ax,66,10,'÷ passe avant + : faux','limite','s')
+save(fig,'04-055')

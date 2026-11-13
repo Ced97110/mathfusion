@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+text(ax,44,67,"( ) = calcule d'abord ceci",'sujet','m')
+text(ax,24,58,'(43 + 16)','sujet','l'); text(ax,40,58,'+ 27','encre','l')
+box(ax,14.5,54.5,19,7,'sujet',fill=False,lw=1.0)
+arrow(ax,(24,54),(24,47),'varie'); text(ax,24,44,"d'abord : 59",'varie','m'); text(ax,24,38,'puis 59 + 27','encre','s')
+text(ax,55,58,'43 +','encre','l'); text(ax,71,58,'(16 + 27)','sujet','l')
+box(ax,61.5,54.5,19,7,'sujet',fill=False)
+arrow(ax,(71,54),(71,47),'varie'); text(ax,71,44,"d'abord : 43",'varie','m'); text(ax,71,38,'puis 43 + 43','encre','s')
+text(ax,44,24,'43 + 16 + 27','fixe','l'); text(ax,44,17,'sans ( ) : quel regroupement ?','encre','s')
+save(fig,'02-061')

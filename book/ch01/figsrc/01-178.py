@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+f = numberline(ax, 12, 76, 78, 1, 5, step=1, every=1, size='s')
+line(ax, [(8,78),(12,78)], 'fixe')
+disc(ax, 12, 78, 1.8, 'resultat')
+text(ax, 6, 88, r'départ : $(a+b)^1 = b + a$', 'resultat', 's', ha='left')
+for v in (1,2,3,4):
+    arrow(ax, (f(v),79.5), (f(v+1),79.5), 'varie', curve=-0.4)
+text(ax, 64, 88, r'passage $n$ → $n+1$', 'varie', 's')
+box(ax, 6, 14, 76, 52, 'varie', fill=False, dash=True)
+line(ax, [(52,82),(52,66)], 'varie', lw=0.8, dash=True)
+text(ax, 44, 59, r'$(a+b)^{n+1} = (a+b) \times (a+b)^n$', 'encre', 'm')
+cx = [26,36,46,56,66]
+for c in range(4): box(ax, cx[c]-4.5, 44, 9, 6, 'sujet', r=0.5, lw=0.7)
+for c in range(1,5): box(ax, cx[c]-4.5, 36, 9, 6, 'autre', r=0.5, lw=0.7)
+text(ax, 14, 47, '× a', 'sujet', 's'); text(ax, 14, 39, '× b', 'autre', 's')
+line(ax, [(20,33),(72,33)], 'fixe')
+box(ax, 41.5, 35, 9, 16, 'varie', fill=False, lw=1.4, r=0.5)
+arrow(ax, (46,34.5), (46,30.5), 'varie')
+for c in range(5): box(ax, cx[c]-4.5, 24, 9, 6, 'resultat', r=0.5, lw=0.7)
+text(ax, 44, 19, 'regrouper : règle de Pascal', 'varie', 's')
+text(ax, 44, 7, r'formule vraie pour $n+1$', 'resultat', 'm', weight='bold')
+save(fig, '01-178')

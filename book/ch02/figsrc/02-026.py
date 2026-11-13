@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,56,'12 : on garde 2, il reste 10','encre','s')
+box(ax,14,42,7,4,'varie',r=0.5)
+text(ax,24,44,'on retire 10 unités : −10','varie','s',ha='left')
+box(ax,14,30,7,4,'resultat',r=0.5)
+text(ax,24,32,'1 dizaine : +10, total gardé','resultat','s',ha='left')
+line(ax,[(21,12),(21,48)],'fixe',lw=0.8,dash=True)
+for k in range(10): box(ax,14+7*k,14,7,4,'limite',r=0.5)
+text(ax,24,22,'10 dizaines : +100 unités','limite','s',ha='left')
+brace(ax,21,84,12.5,'limite','90 unités de trop',down=True)
+save(fig,'02-026')

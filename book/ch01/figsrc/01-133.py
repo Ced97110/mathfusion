@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 16, 46, 20, 12, 'fixe', label=r'$2^n$', size='l')
+box(ax, 39, 46, 12, 12, 'sujet', label='>', size='l', lw=1.4)
+box(ax, 54, 46, 16, 12, 'fixe', label=r'$n + 4$', size='l')
+text(ax, 45, 42.9, 'gauche strictement', 'sujet', 's')
+text(ax, 45, 39.3, 'plus grande que droite', 'sujet', 's')
+line(ax, [(26, 46), (26, 33)], 'fixe', dash=True)
+line(ax, [(62, 46), (62, 33)], 'fixe', dash=True)
+for y, a, b, role, msg in [(24, '8', '7', 'resultat', 'n = 3 : vrai'), (8, '4', '6', 'limite', 'n = 2 : faux')]:
+    box(ax, 16, y, 20, 8, 'fixe', label=a, size='m')
+    text(ax, 45, y + 4, '>' if role == 'resultat' else '≯', role, 'l')
+    box(ax, 54, y, 16, 8, 'fixe', label=b, size='m')
+    text(ax, 78, y + 4, msg, role, 's')
+save(fig, '01-133')

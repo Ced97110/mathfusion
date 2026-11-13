@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,3,76,'Ch. 2 : 4 plus 5 font 9','encre','s',ha='left')
+box(ax,12,66,24,5,'fixe',label='4',size='s'); box(ax,36,66,30,5,'resultat',label='5',size='s')
+brace(ax,12,66,65,role='encre',label='9',down=True,size='s')
+box(ax,11.3,65.3,25.4,6.4,'sujet',fill=False,dash=True)
+text(ax,39,56,'9 moins 4 = 5','sujet','s')
+text(ax,3,46,'Ch. 3 : 4 fois 3 font 12','encre','s',ha='left')
+for i in range(4):
+    box(ax,12+18*i,36,18,5,'resultat' if i==0 else 'fixe',label='3',size='s')
+brace(ax,12,84,35,role='encre',label='12',down=True,size='s')
+box(ax,26,22.5,44,7,'sujet',fill=False,dash=True)
+text(ax,48,26,'12 divisé par 4 = 3','sujet','s')
+text(ax,44,10,'même rôle : défaire','sujet','m')
+save(fig,'02-079')

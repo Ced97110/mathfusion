@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+text(ax,44,58,'un 0 à droite veut dire × 10','varie','s')
+text(ax,16,50,'dizaines','fixe','s'); text(ax,33,50,'unités','fixe','s')
+box(ax,4,36,24,10,'sujet',label='473',size='l'); box(ax,29,36,8,10,'resultat',label='0',size='l')
+box(ax,4,16,24,10,'sujet',label='473',size='l'); box(ax,29,16,8,10,'limite',label='5',size='l')
+arrow(ax,(39,41),(51,41),'varie'); arrow(ax,(39,21),(51,21),'varie')
+box(ax,53,36,31,10,'resultat',label='4 730 = 10 × 473',size='s')
+box(ax,53,16,31,10,'limite',label='4 735 = 10 × 473 + 5',size='s')
+text(ax,44,8,'5 est plus petit que 10','limite','s')
+save(fig,'03-095')

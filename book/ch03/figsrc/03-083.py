@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,32,62,'426','encre','l',ha='right')
+text(ax,32,57,'× 4','encre','l',ha='right')
+line(ax,[(21,54.5),(33,54.5)],'encre')
+text(ax,32,51,'1 704','resultat','l',ha='right')
+text(ax,29.0,66.5,'2','varie','s'); text(ax,26.9,66.5,'1','varie','s')
+for y,s,r in [(66,'1) 4 × 6 = 24, retenue 2','encre'),(61.5,'2) 4 × 2 = 8','encre'),(57,'3) 8 + 2 = 10, retenue 1','varie'),(52.5,'4) 4 × 4 = 16','encre'),(48,'5) 16 + 1 = 17','varie')]:
+    text(ax,40,y,s,r,'s',ha='left')
+text(ax,4,40,'par additions : 425','encre','s',ha='left')
+box(ax,4,33,76,4,'limite',r=0.3)
+text(ax,4,28,'posée : 5 petits calculs','encre','s',ha='left')
+ax.add_patch(Rectangle((4,21),5*76/425,4,fc=COL['resultat'],ec=COL['resultat'],lw=0,zorder=2))
+text(ax,44,12,'même résultat : 1 704 euros','resultat','s')
+save(fig,'03-083')

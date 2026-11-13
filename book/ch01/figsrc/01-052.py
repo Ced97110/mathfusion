@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,26,34,14,14,'sujet',label='5',size='l',weight='bold')
+box(ax,42,34,12,14,'varie',label='!',size='l',weight='bold')
+text(ax,13,41,'le nombre','sujet','s'); line(ax,[(19,41),(25.5,41)],'sujet',lw=0.7)
+text(ax,70,41,'! : signe d\'opération','varie','s'); line(ax,[(54.5,41),(56.5,41)],'varie',lw=0.7)
+text(ax,44,57,'lu : factorielle de cinq','resultat','m')
+brace(ax,26,54,50,'resultat',down=False)
+text(ax,44,26,'= 5 × 4 × 3 × 2 × 1 = 120','resultat','m')
+text(ax,44,15,'lu « cinq ! » : faux','limite','s')
+line(ax,[(31,15),(57,15)],'limite')
+text(ax,44,5,'n ! : la valeur suit n','fixe','s')
+save(fig,'01-052')

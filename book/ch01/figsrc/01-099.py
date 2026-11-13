@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 14, 51, 60, 8, 'sujet', label='0  1  2  3  4  5  6  7  8  9', size='m')
+text(ax, 44, 64, 'aucun nouveau signe', 'resultat', 's')
+# ligne A
+box(ax, 18, 34, 8, 8, 'fixe', label='9')
+arrow(ax, (29, 38), (41, 38), 'varie')
+box(ax, 52, 34, 8, 8, 'fixe', fill=False, dash=True)
+box(ax, 60, 34, 8, 8, 'varie', label='1')
+box(ax, 68, 34, 8, 8, 'autre', label='0')
+text(ax, 72, 46, 'case pleine : 0', 'autre', 's')
+# ligne B
+box(ax, 10, 18, 8, 8, 'fixe', label='9'); box(ax, 18, 18, 8, 8, 'fixe', label='9')
+arrow(ax, (29, 22), (41, 22), 'varie')
+box(ax, 44, 18, 8, 8, 'fixe', fill=False, dash=True)
+box(ax, 52, 18, 8, 8, 'varie', label='1')
+box(ax, 60, 18, 8, 8, 'autre', label='0'); box(ax, 68, 18, 8, 8, 'autre', label='0')
+text(ax, 56, 13, 'case ajoutée à gauche', 'varie', 's')
+text(ax, 48, 7, "on peut en ajouter d'autres", 'fixe', 's')
+save(fig, '01-099')

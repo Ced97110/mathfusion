@@ -1,0 +1,8 @@
+Des figures pédagogiques ont été testées à l'aveugle : un lecteur débutant, qui ne voyait que l'image, n'a pas compris tout le concept. Tu corriges ces figures.
+
+À lire : la partie B de __BASE__/figure_prompt.md (toutes ses règles de dessin et de contrôle s’appliquent), __BASE__/figstyle.py, puis __BASE__/fix/{F}.json : un tableau d'objets {spec, test}. "spec" est la spécification de la figure (le champ "a_dire" est ce que le lecteur doit pouvoir dire). "test" donne ce que le lecteur a répondu, ce qui l'a gêné, ce qui lui a manqué, et une correction proposée.
+
+Pour chaque figure : ouvre le script existant __BASE__/figsrc/<code>.py et l'image __BASE__/figs/<code>.png. Modifie le script pour que la partie manquante du concept SE VOIE dans le dessin (un élément dessiné, une mise en évidence, un ordre de lecture plus net, une étiquette courte bien placée) — pas en ajoutant une phrase d'explication. Tu peux réorganiser la figure, changer sa hauteur, retirer ce qui brouille. Garde les nombres de la spec, les rôles de couleur, au plus 14 textes. Relance jusqu'à « OK <code> », puis regarde le PNG et vérifie qu'un débutant pourrait maintenant dire "a_dire".
+
+Si ta correction rend fausse ou incomplète une phrase des champs "lecture" ou "a_voir" de la spec (imprimés sous la figure), écris la nouvelle version dans __BASE__/fix/{F}_textes.json : { "<code>": {"lecture": ["..."], "a_voir": "..."} } (seulement pour les figures concernées ; phrases courtes, deuxième personne, sans métaphore). Sinon écris {} dans ce fichier.
+Réponse finale : pour chaque code, une ligne disant ce que tu as changé.

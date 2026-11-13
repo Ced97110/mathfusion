@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+for r in range(4):
+    for c in range(6): box(ax,4+4*c,30+4*r,4,4,'sujet',r=0.3,lw=0.5)
+text(ax,16,26,'24 carreaux égaux','sujet','s')
+box(ax,4,42,4,4,'sujet',fill=False,r=0.3,lw=1.6)
+arrow(ax,(8,56),(6.5,46.5),'sujet',lw=0.8)
+text(ax,16,58,'1 carreau : taille fixe','sujet','s')
+text(ax,74,38,'zone : des carreaux','sujet','s')
+box(ax,34,30,16,16,'limite',r=0.5); box(ax,50,30,8,8,'limite',r=0.5); box(ax,50,38,8,8,'limite',r=0.5)
+text(ax,46,26,'3 carrés inégaux','limite','s'); text(ax,46,51,'le nombre ne mesure rien','limite','s')
+line(ax,[(6,12),(54,12)],'autre')
+for x in (6,22,38,54): line(ax,[(x,11),(x,13)],'autre')
+text(ax,14,15.5,'1 m','autre','s'); text(ax,71,12,'longueur : des mètres','autre','s')
+save(fig,'03-009')

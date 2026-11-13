@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,44,54,'« entier »','sujet','l',weight='bold')
+arrow(ax,(38,51),(23,44),'sujet'); arrow(ax,(50,51),(65,44),'sujet')
+text(ax,23,40,'dans ce livre','sujet','s')
+arrow(ax,(8,30),(38,30),'sujet',lw=0.9)
+for v in range(5):
+    disc(ax,8+6.5*v,30,1.0,'sujet')
+text(ax,8,26.5,'0','sujet','s')
+text(ax,65,40,'chapitre 13 ou autre cours','autre','s')
+arrow(ax,(46.5,30),(83.5,30),'autre',lw=0.9,both=True)
+for x in (50,56,62,68,74,80): disc(ax,x,30,1.0,'autre')
+text(ax,68,26.5,'0','autre','s')
+text(ax,23,16,'il y a un plus petit : vrai','resultat','s')
+text(ax,65,16,'il y a un plus petit : faux','limite','s')
+line(ax,[(44,8),(44,44)],'fixe',dash=True)
+save(fig,'01-023')

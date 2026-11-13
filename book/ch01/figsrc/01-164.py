@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+f = numberline(ax, 8, 82, 30, 0, 10, labels=False, arrow_right=False)
+text(ax, f(0), 24, '0', 'encre', 'm')
+text(ax, f(5), 24, 'k', 'encre', 'm')
+text(ax, f(6), 24, 'm', 'encre', 'm')
+text(ax, 70, 24, 'm = k + 1', 'encre', 's')
+disc(ax, f(0), 30, 1.3, 'resultat'); ax.patches[-1].set_zorder(4)
+text(ax, 20, 40, 'départ : E(0) vraie', 'resultat', 's')
+for v in (6, 8, 9):
+    disc(ax, f(v), 30, 1.3, 'limite'); ax.patches[-1].set_zorder(4)
+text(ax, 72, 36, 'faux supposés', 'limite', 's')
+ax.add_patch(Circle((f(6), 30), 2.8, ec=COL['limite'], fc='none', lw=1.6, zorder=3))
+text(ax, 60, 52, 'm : le plus petit faux', 'limite', 's')
+for v in range(1, 6):
+    disc(ax, f(v), 30, 1.3, 'resultat'); ax.patches[-1].set_zorder(4)
+brace(ax, f(0), f(5), 20, 'resultat', label='plus petits que m : vrais')
+arrow(ax, (f(5), 32), (f(6), 32.9), 'varie', curve=-0.6)
+text(ax, 50, 44, 'passage : E(m) vraie', 'varie', 's')
+text(ax, 44, 64, 'contradiction', 'limite', 'l')
+text(ax, 44, 6, "aucun entier n'est faux", 'resultat', 'm')
+save(fig, '01-164')

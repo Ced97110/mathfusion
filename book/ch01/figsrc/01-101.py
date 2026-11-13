@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 34.5, 57.5, 'dizaines', 'fixe', 's'); text(ax, 47.5, 57.5, 'unités', 'fixe', 's')
+for (x, y, d) in [(29.5, 44, '2'), (42.5, 44, '5'), (29.5, 34, '3'), (42.5, 34, '4')]:
+    box(ax, x, y, 10, 8, 'fixe', label=d, size='m')
+text(ax, 24, 38, '+', 'encre', 'l')
+box(ax, 41.5, 22, 12, 31, 'varie', fill=False, lw=1.2)
+text(ax, 44, 15, 'étape 1 : 5 + 4 = 9', 'varie', 's')
+box(ax, 28.5, 22, 12, 31, 'varie', fill=False, lw=1.2)
+text(ax, 44, 9, 'étape 2 : 2 + 3 = 5', 'varie', 's')
+arrow(ax, (47.5, 54), (34.5, 54), 'varie', curve=0.4)
+line(ax, [(27, 32.5), (54, 32.5)], 'resultat')
+box(ax, 29.5, 23, 10, 8, 'resultat', label='5', size='m')
+box(ax, 42.5, 23, 10, 8, 'resultat', label='9', size='m')
+text(ax, 71.5, 38, 'même geste à chaque case', 'sujet', 's')
+save(fig, '01-101')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,24,46,40,12,'sujet',label=r'$7\mid 91$',size='l')
+arrow(ax,(30,46),(30,39),'varie')
+text(ax,34,42.5,'affirme seulement','varie','s',ha='left')
+box(ax,4,26,46,12,'sujet',label=r'$91=7\times q$',size='m')
+box(ax,58,26,26,12,'varie',label=r'$q=\,?$',size='m',dash=True)
+text(ax,27,22,'il existe un entier $q$','sujet','s')
+text(ax,71,22,'valeur non donnée','varie','s')
+box(ax,16,4,56,10,'fixe',label=r'$q=13$ : calcul plus tard',size='s',dash=True)
+save(fig,'05-017')

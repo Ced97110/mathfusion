@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,6,52,60,10,'autre',fill=False); text(ax,36,57,'1 × 2 × 3 × 4 × 5 × 6','autre','l'); text(ax,77,57,'croix','autre','s')
+box(ax,6,38,60,10,'sujet',fill=False); text(ax,36,43,'1 ⋅ 2 ⋅ 3 ⋅ 4 ⋅ 5 ⋅ 6','sujet','l'); text(ax,77,43,'point','sujet','s')
+line(ax,[(68.5,39),(68.5,61)],'resultat'); line(ax,[(67.5,39),(69.5,39)],'resultat'); line(ax,[(67.5,61),(69.5,61)],'resultat')
+text(ax,78,50,'= 720','resultat','m')
+box(ax,6,22,34,10,'autre',fill=False,label='×  et  x  se ressemblent',size='s')
+text(ax,66,27,'1 ⋅ 2 ⋅ 3 ⋯ n','sujet','l')
+brace(ax,55,77,22,'varie',label="et ainsi de suite jusqu'à n")
+text(ax,36,6,'même sens, point plus léger','fixe','s')
+save(fig,'01-053')

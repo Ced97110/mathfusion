@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+xs=[2,31,60]; w=26; y=34; h=12
+box(ax,xs[0],y,w,h,'fixe',label='définition')
+box(ax,xs[1],y,w,h,'sujet',label='lemme',weight='bold')
+box(ax,xs[2],y,w,h,'resultat',label='théorème')
+arrow(ax,(xs[0]+w+0.5,y+6),(xs[1]-0.5,y+6),'varie')
+arrow(ax,(xs[1]+w+0.5,y+6),(xs[2]-0.5,y+6),'varie')
+brace(ax,xs[1],xs[2]+w,y+h+2,'varie',label='sert à prouver le théorème',down=False)
+text(ax,xs[0]+w/2,26,'sans preuve','fixe','s')
+text(ax,xs[1]+w/2,24,'démontré pour\nservir ailleurs','sujet','s')
+text(ax,xs[2]+w/2,24,'important pour\nlui-même','resultat','s')
+box(ax,xs[1],4,w,9,'fixe',label='exemple',dash=True)
+text(ax,xs[2]-2,8.5,'ne prouve rien\nen général','limite','s',ha='left')
+save(fig,'05-117')

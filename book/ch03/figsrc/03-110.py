@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,4,46,36,26,'fixe')
+text(ax,22,65,r'7 ÷ 0','encre','m'); text(ax,22,53,'Error','limite','l',weight='bold')
+line(ax,[(48,48),(84,48)],'fixe')
+box(ax,50,48,6,21,'autre'); text(ax,53,72,'7','autre','s')
+for x0,n in ((59,1),(67,2),(75,3)):
+    line(ax,[(x0,48),(x0+6,48)],'varie',lw=2)
+    text(ax,x0+3,51,rf'0 $\times$ {n}','varie','s')
+text(ax,70,58,'tous valent 0','varie','s')
+text(ax,66,43,"aucun n'atteint 7",'limite','s')
+box(ax,4,6,38,14,'limite',fill=False,dash=True,label='avant : une panne ?',size='s')
+arrow(ax,(43,13),(47,13),'varie')
+box(ax,48,6,36,14,'resultat',label='aucun nombre ne répond',size='s')
+save(fig,'03-110')

@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+text(ax,44,74,'8 unités + 4 unités = 12','encre','m')
+text(ax,29,66,'dizaines','fixe','s'); text(ax,66,66,'unités','fixe','s')
+text(ax,8,51,'avant','fixe','s'); text(ax,8,21,'après','fixe','s')
+box(ax,16,42,26,18,'fixe'); box(ax,50,42,32,18,'fixe')
+xs=[54+4.5*i for i in range(6)]
+for x in xs:
+    for y in (53,47): disc(ax,x,y,1.3,'sujet')
+box(ax,51.8,44.5,22.4,11,'varie',fill=False,dash=True)
+text(ax,63,57.8,'10 unités','varie','s')
+arrow(ax,(63,44.5),(29,30),'varie',lw=1.2)
+text(ax,66,36,'1 dizaine part à gauche','varie','s')
+box(ax,16,12,26,18,'fixe')
+box(ax,19,15,20,4,'varie')
+for i in range(9): line(ax,[(21+2*i,15),(21+2*i,19)],'varie',lw=0.5)
+text(ax,29,25,'1','varie','l')
+box(ax,50,12,32,18,'fixe')
+disc(ax,62,16,1.3,'sujet'); disc(ax,70,16,1.3,'sujet'); text(ax,66,25,'2','sujet','l')
+text(ax,44,6,'12 = 1 dizaine + 2 unités','resultat','m')
+save(fig,'02-002')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+for x,s,r in ((13,'avance de 4','encre'),(44,'puis, à la suite,','sujet'),(75,'avance de 3','encre')):
+    text(ax,x,64,s,r,'s'); line(ax,[(x,61.5),(x,53)],'fixe',lw=0.5)
+for x,s,r in ((13,'4','varie'),(44,'+','sujet'),(75,'3','varie')): text(ax,x,50,s,r,'l')
+f=numberline(ax,8,80,20,0,8,1,labels=False)
+text(ax,f(0),16.5,'0','fixe','s')
+arrow(ax,(f(0),21),(f(4),21),'varie',lw=1.2,curve=-0.39)
+arrow(ax,(f(4),21),(f(7),21),'varie',lw=1.2,curve=-0.41)
+text(ax,26,31.5,'4','varie','m'); text(ax,57.5,30,'3','varie','m')
+line(ax,[(44,47.5),(44,22)],'sujet',lw=0.7,dash=True)
+disc(ax,44,20,1.2,'sujet')
+text(ax,46,38,'le 3 part où le 4 finit','sujet','s',ha='left')
+disc(ax,f(7),20,1.2,'resultat'); text(ax,f(7),16.5,'7','resultat','s')
+save(fig,'02-016')

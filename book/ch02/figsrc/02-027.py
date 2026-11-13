@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(90)
+xs=[4+2.2*i for i in range(8)]+[23,25.2,27.4,29.6]
+for x in xs: line(ax,[(x,74),(x,82)],'autre',lw=1.4)
+text(ax,36,80,'8 + 4 = 12 traits','autre','s',ha='left'); text(ax,36,75.5,'pas de case : aucun report','autre','s',ha='left')
+line(ax,[(4,68),(84,68)],'fixe',dash=True)
+box(ax,4,48,11,9,'limite',label='12',lw=1.2)
+arrow(ax,(16,52.5),(21,52.5),'varie')
+box(ax,22,48,9,9,'varie',label='1'); box(ax,32,48,9,9,'resultat',label='2')
+text(ax,46,56,'une règle :','encre','s',ha='left'); text(ax,46,52,'case = 10 fois la voisine','encre','s',ha='left'); text(ax,46,48,'on reporte dès 10','encre','s',ha='left')
+line(ax,[(4,42),(84,42)],'fixe',dash=True)
+box(ax,4,22,11,9,'limite',label='1 + 1',lw=1.2)
+arrow(ax,(16,26.5),(21,26.5),'varie')
+box(ax,22,22,9,9,'varie',label='1'); box(ax,32,22,9,9,'resultat',label='0')
+text(ax,46,30,'autre règle :','encre','s',ha='left'); text(ax,46,26,'case = 2 fois la voisine','encre','s',ha='left'); text(ax,46,22,'on reporte dès 2','encre','s',ha='left')
+save(fig,'02-027')

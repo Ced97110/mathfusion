@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+for x0,x1,r,l,lab,cx in [(12,26,'sujet','m','se placer en m',19),(37,51,'varie','− s','reculer de s',44),(62,76,'resultat','= d','être en d',69)]:
+    box(ax,x0,61,x1-x0,8,r,label=l,size='l')
+    text(ax,cx,57,lab,r,'s')
+text(ax,20,50,'9 − 4 = 5','encre','l')
+f=numberline(ax,8,80,43,0,9,1,labels=False)
+for v in (0,5,9): text(ax,f(v),39,str(v),'fixe','s')
+disc(ax,f(9),43,1.4,'sujet'); arrow(ax,(f(9),46.5),(f(5),46.5),'varie'); disc(ax,f(5),43,1.4,'resultat')
+text(ax,20,29,'4 − 9 = ?','encre','l')
+g=numberline(ax,48,80,16,0,4,1,labels=False)
+line(ax,[(48,13),(48,19)],'limite',lw=1.2)
+for v in (0,4): text(ax,g(v),12,str(v),'fixe','s')
+disc(ax,g(4),16,1.4,'sujet'); arrow(ax,(g(4),19.5),(g(0),19.5),'varie')
+ax.add_patch(FancyArrowPatch((48,19.5),(8,19.5),arrowstyle='-|>',mutation_scale=7,lw=1.0,ls='--',color=COL['limite'],zorder=4,shrinkA=0,shrinkB=0))
+text(ax,28,23,'5 pas restent, aucun point','limite','s')
+save(fig,'02-045')

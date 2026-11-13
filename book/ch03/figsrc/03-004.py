@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+for x,t in ((41,'places'),(59,'prix (€)'),(77,'total (€)')): text(ax,x,52,t,'encre','s')
+text(ax,3,39,'premier problème','fixe','s',ha='left')
+box(ax,33,34,16,10,'fixe',label='426'); box(ax,51,34,16,10,'fixe',label='4')
+box(ax,69,34,16,10,'resultat',label='?',size='l',dash=True)
+box(ax,2,10,84,14,'sujet',fill=False,lw=1.0)
+text(ax,3,17,'problème inverse','sujet','s',ha='left',weight='bold')
+box(ax,51,12,16,10,'fixe',label='4'); box(ax,69,12,16,10,'fixe',label='1 704')
+box(ax,33,12,16,10,'resultat',label='?',size='l',dash=True)
+arrow(ax,(41,33.5),(41,24.5),'varie'); text(ax,44,30,'devient cherché','varie','s',ha='left')
+arrow(ax,(77,33.5),(77,24.5),'varie'); text(ax,74,26.5,'devient connu','varie','s',ha='right')
+save(fig,'03-004')

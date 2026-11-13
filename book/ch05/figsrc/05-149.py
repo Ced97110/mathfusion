@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+U=5.0; ox=33; oy=36
+P=lambda u,v:(ox+u*U, oy+v*U)
+arrow(ax,(3,oy),(83,oy),'fixe',lw=0.8); arrow(ax,(ox,5),(ox,60),'fixe',lw=0.8)
+text(ax,86,oy,r'$u$','encre','m'); text(ax,ox+3,60,r'$v$','encre','m')
+arrow(ax,P(-5,11/3),P(9,-17/3),'fixe',lw=0.7,both=True)
+for (u,v) in [(-4,3),(5,-3),(8,-5)]: disc(ax,*P(u,v),1.5,'fixe')
+disc(ax,*P(-1,1),1.7,'sujet'); disc(ax,*P(2,-1),1.7,'resultat')
+a=P(-1,1); b=P(2,-1)
+arrow(ax,(a[0]+2,a[1]),(b[0],a[1]),'varie',lw=1.4)
+arrow(ax,(b[0],a[1]),(b[0],b[1]+2),'varie',lw=1.4)
+text(ax,(a[0]+b[0])/2,a[1]+3.4,'+ 3 (= 18 ÷ 6)','varie','s')
+text(ax,b[0]+2,38.8,'− 2 (= 12 ÷ 6)','varie','s',ha='left')
+text(ax,a[0]-3,a[1],'(−1, 1)','sujet','s',ha='right')
+text(ax,b[0]+3,33,'(2, −1)','resultat','s',ha='left')
+text(ax,64,26,'chaque point donne 6','fixe','s')
+save(fig,'05-149')

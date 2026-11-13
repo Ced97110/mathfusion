@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,4,66,'3/8 + 2/8 = 5/8','encre','m',ha='left')
+for i in range(8):
+    box(ax,4+10*i,52,10,6,'sujet' if i<3 else ('autre' if i<5 else 'fixe'))
+box(ax,4,52,80,6,'fixe',fill=False)
+brace(ax,4,34,58.5,role='sujet',label='3 parts',down=False,size='s')
+brace(ax,34,54,58.5,role='autre',label='2 parts',down=False,size='s')
+brace(ax,4,54,51.5,role='resultat',label='5 parts',down=True,size='s')
+text(ax,69,47,'parts égales : huitièmes','fixe','s')
+text(ax,4,36,'1/2 + 1/3 = ?','encre','m',ha='left')
+box(ax,4,22,80,6,'fixe',fill=False)
+box(ax,4,22,40,6,'sujet',label='1/2',size='s'); box(ax,44,22,80/3,6,'autre',label='1/3',size='s')
+brace(ax,4,44,21.5,role='limite',label='1 part',down=True,size='s')
+brace(ax,44,44+80/3,21.5,role='limite',label='1 part',down=True,size='s')
+text(ax,44,8,'on ne peut pas dire 2 parts','limite','s')
+save(fig,'02-084')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,44,64,'un carreau demande une rangée ET une place','sujet','s')
+line(ax,[(44,8),(44,57)],'fixe',lw=0.7,dash=True)
+text(ax,23,52,'5 rangées de 0 carreau','fixe','s')
+text(ax,23,47.5,'des rangées, aucune place','fixe','s')
+for i in range(5): box(ax,8,19+i*4.8,30,4,'fixe',fill=False,dash=True,r=0.3,lw=0.8)
+text(ax,66,52,'0 rangée de 5 carreaux','fixe','s')
+text(ax,66,47.5,'des places, aucune rangée','fixe','s')
+box(ax,51,19,30,23.2,'fixe',fill=False,dash=True,r=0.6,lw=0.8)
+text(ax,23,13,'aucun carreau','resultat','s'); text(ax,66,13,'aucun carreau','resultat','s')
+text(ax,44,5,'5 × 0 = 0','resultat','l')
+save(fig,'03-074')

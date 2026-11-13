@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+text(ax,44,88.5,'une seule opération : ×','encre','s')
+box(ax,5,76,20,8,'fixe',label=r'$a \times b = b \times a$',size='s')
+box(ax,27,76,34,8,'fixe',label=r'$(a \times b) \times c = a \times (b \times c)$',size='s')
+box(ax,63,76,20,8,'fixe',label=r'$a \times 1 = a$',size='s')
+text(ax,44,71.5,'deux opérations : × et +','sujet','s')
+text(ax,44,63,'3 × (4 + 2) = 3 × 4 + 3 × 2','sujet','m')
+arrow(ax,(26.2,64.8),(32.8,64.8),'varie',curve=-0.5)
+arrow(ax,(26.2,64.8),(38.4,64.8),'varie',curve=-0.5)
+for r in range(3):
+    for c in range(6):
+        box(ax,32+4*c,34+4*r,4,4,'sujet' if c<4 else 'varie',r=0.3,lw=0.5)
+text(ax,29,40,'3 × 6 = 18','resultat','m',ha='right')
+text(ax,40,31,'3 × 4 = 12','resultat','m')
+text(ax,58,40,'3 × 2 = 6','resultat','m',ha='left')
+text(ax,44,23,'rôles échangés : faux','limite','s')
+text(ax,18,14,'3 + (4 × 2) = 11','limite','m')
+text(ax,34,14,'≠','limite','l')
+text(ax,62,14,'(3 + 4) × (3 + 2) = 35','limite','m')
+save(fig,'03-081')

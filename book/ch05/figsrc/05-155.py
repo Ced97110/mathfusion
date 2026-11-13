@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,2,58,'8 =','sujet','l',ha='left')
+for i in range(3): box(ax,24+i*15,53,12,10,'sujet',label='2',size='l')
+text(ax,2,42,'15 =','autre','l',ha='left')
+for i,t in enumerate(['3','5']): box(ax,24+i*15,37,12,10,'autre',label=t,size='l')
+text(ax,2,26,'en commun :','encre','m',ha='left')
+box(ax,24,21,27,10,'fixe',fill=False,dash=True,label='rien')
+arrow(ax,(37.5,20.5),(37.5,14.5),'resultat')
+text(ax,41,17.5,'produit de rien = 1','resultat','s',ha='left')
+box(ax,12,4,52,10,'resultat',label='PGCD(8, 15) = 1',size='l')
+save(fig,'05-155')

@@ -1,0 +1,1007 @@
+[
+ {
+  "code": "02-001",
+  "a_dire": "Le calcul 8 + 4 = 12 est juste ; la difficulté vient de l'écriture, car la colonne des unités ne contient qu'un chiffre et 12 en a deux, alors que sur la droite graduée le point 12 se place sans peine.",
+  "legende_titre": "Le même 12, sur la droite et dans une case",
+  "lecture": [
+   "Le calcul vert, 8 + 4 = 12, est juste.",
+   "Sur la droite, le point vert 12 se pose sans aucune gêne : il est accepté.",
+   "Dans la colonne, la case grise des unités reçoit un seul chiffre.",
+   "Le 1 rouge n'a pas de place : 12 est refusé, il déborde de la case."
+  ],
+  "a_voir": "Vous voyez que le même 12 est accepté sur la droite, mais refusé dans la case des unités."
+ },
+ {
+  "code": "02-002",
+  "a_dire": "La retenue est la règle pour une colonne qui a trop d'unités : avec 12 unités, on garde 2 unités dans la colonne et on envoie les 10 autres, devenues 1 dizaine, dans la colonne de gauche ; rien n'est perdu.",
+  "legende_titre": "Douze unités dans une seule colonne",
+  "lecture": [
+   "En haut, la colonne des unités contient 12 points : c'est trop pour un seul chiffre.",
+   "Le cadre orange entoure 10 de ces points ; la flèche orange les envoie dans la colonne de gauche.",
+   "En bas, ces 10 points sont devenus 1 barre, 1 dizaine, et 2 points restent dans les unités.",
+   "La phrase verte compte les deux rangées : 12 = 1 dizaine + 2 unités, rien n'est perdu."
+  ],
+  "a_voir": "Vous voyez que la retenue garde 2 unités dans la colonne et envoie le paquet de 10 à gauche, sous la forme d'1 dizaine."
+ },
+ {
+  "code": "02-003",
+  "a_dire": "Pour rendre 27 sur 52, le total suffit, mais la colonne des unités ne montre que 2 unités et il faut en retirer 7 : le manque est dans la répartition entre les colonnes, pas dans le total.",
+  "legende_titre": "52 euros : assez au total, pas assez d'unités",
+  "lecture": [
+   "En haut, en bleu, la caisse : 5 barres de dix et 2 unités, soit 52.",
+   "Les 7 carrés rouges sont les unités à retirer : il n'y en a que 2 dans la colonne.",
+   "En bas, la barre bleue de 52 est plus longue que la barre orange de 27 : le total suffit."
+  ],
+  "a_voir": "Vous voyez que l'argent suffit en tout, mais que la colonne des unités, seule, n'en a pas assez."
+ },
+ {
+  "code": "02-004",
+  "a_dire": "L'emprunt, c'est casser une dizaine en dix unités : 52 passe de 5 dizaines et 2 unités à 4 dizaines et 12 unités, et la valeur reste 52.",
+  "legende_titre": "Une dizaine devient dix unités",
+  "lecture": [
+   "À gauche, en bleu, 52 : 5 barres de dix et 2 unités ; la barre entourée d'orange va être cassée.",
+   "À droite, cette barre est devenue 10 carrés orange : il reste 4 barres et il y a 12 unités.",
+   "Les deux calculs verts donnent 52 : la valeur n'a pas changé."
+  ],
+  "a_voir": "Vous voyez qu'une barre de dix devient dix carrés séparés, et que le total reste 52."
+ },
+ {
+  "code": "02-005",
+  "a_dire": "Pour l'addition, l'ordre ne change pas le total (18 puis 34 et 34 puis 18 donnent 52), mais pour la soustraction l'ordre compte : rendre 27 sur 52 n'est pas rendre 52 sur 27.",
+  "legende_titre": "Changer l'ordre : addition, puis soustraction",
+  "lecture": [
+   "En haut, les deux rangées mettent 18 et 34 dans un ordre différent ; elles finissent sur la même ligne verte, 52.",
+   "En bas, 52 − 27 laisse 25 euros, en vert.",
+   "Avec 27 en caisse, la barre rouge de 52 à rendre déborde : 27 − 52 n'est pas 52 − 27."
+  ],
+  "a_voir": "Vous voyez que l'ordre ne change pas la longueur totale en addition, mais change tout en soustraction."
+ },
+ {
+  "code": "02-006",
+  "a_dire": "Les propriétés de l'addition disent quels gestes on a le droit de faire sans changer le résultat : pour 17, 25 et 3, changer l'ordre ou le regroupement donne toujours 45.",
+  "legende_titre": "17, 25 et 3 rangés de deux façons",
+  "lecture": [
+   "Les deux rangées bleues contiennent les mêmes morceaux, 17, 25 et 3, dans un ordre différent.",
+   "Chaque accolade orange montre ce que l'on calcule d'abord : 20 en haut, 42 en bas.",
+   "La ligne verte montre que les deux rangées s'arrêtent au même endroit : 45."
+  ],
+  "a_voir": "Vous voyez qu'on a le droit de changer l'ordre et les groupes, car le total reste 45."
+ },
+ {
+  "code": "02-007",
+  "a_dire": "Le chapitre pose trois questions de nature différente : deux demandent une écriture (le total de 18 et 34, le reste de 52 moins 27), la troisième demande ce qui reste vrai quand on change la manière de calculer.",
+  "legende_titre": "Trois situations du commerce, trois questions",
+  "lecture": [
+   "La question 1 attend un total dans deux cases vertes vides : on écrit un résultat.",
+   "La question 2 attend un reste dans deux cases vertes vides : on écrit un résultat.",
+   "La question 3 n'a pas de case : on compare deux rangées où 18 et 34 changent de place, et la flèche orange montre ce changement d'ordre.",
+   "Les accolades du bas séparent ce qui fait écrire un résultat de ce qui fait comparer."
+  ],
+  "a_voir": "Vous voyez trois questions numérotées : deux ont des cases à remplir, la troisième compare deux ordres sans rien écrire."
+ },
+ {
+  "code": "02-008",
+  "a_dire": "Sur la droite graduée, la bande a = 4 part de 0, la bande b = 3 part exactement du bout de la première, et la bande verte de 0 au point S = 7 les recouvre sans trou ni chevauchement.",
+  "legende_titre": "Deux bandes posées sur une règle",
+  "lecture": [
+   "La bande bleue, a, va de 0 à 4.",
+   "La bande orange, b, commence au bout de la bleue et avance de 3.",
+   "Le point vert S est le bout de la bande orange, à 7.",
+   "La bande verte va de 0 à S et couvre les deux autres sans trou ni recouvrement."
+  ],
+  "a_voir": "Vous voyez que la bande orange commence au bout de la bleue, pas au zéro, et que la verte mesure les deux à la fois."
+ },
+ {
+  "code": "02-009",
+  "a_dire": "Additionner, c'est poser deux longueurs à la suite, sans trou ni chevauchement, et mesurer la longueur totale : 4 m et 3 m bout à bout couvrent 7 m, mais pas s'ils se recouvrent ou s'ils laissent un trou.",
+  "legende_titre": "Trois façons de poser 4 m et 3 m",
+  "lecture": [
+   "En haut, la planche orange commence au bout de la bleue : elles couvrent 7 m.",
+   "Au milieu, le cadre rouge montre 1 m couvert deux fois : on n'arrive qu'à 6 m.",
+   "En bas, l'accolade rouge montre un trou : aucune mesure unique ne va du zéro au bout."
+  ],
+  "a_voir": "Vous voyez que seule la pose sans trou ni recouvrement donne 7 m."
+ },
+ {
+  "code": "02-010",
+  "a_dire": "Quatre puis trois pommes, euros ou mètres donnent tous le même segment, 4 puis 3, donc 7 : le segment garde combien il y en a et oublie de quoi il s'agit.",
+  "legende_titre": "Pommes, euros, mètres, puis le segment",
+  "lecture": [
+   "En haut, trois rangées d'objets différents : à chaque fois 4 en bleu, puis 3 en violet.",
+   "Les pointillés montrent que les trois rangées ont les mêmes longueurs : 4, puis 3.",
+   "Le segment du bas n'a plus d'objets : il garde seulement 4, puis 3, et l'accolade verte donne 7.",
+   "Le segment ne dit plus s'il s'agissait de pommes, d'euros ou de mètres."
+  ],
+  "a_voir": "Vous voyez que trois rangées d'objets différents tombent sur un seul et même segment, qui ne garde que les quantités."
+ },
+ {
+  "code": "02-011",
+  "a_dire": "L'addition prend deux nombres et avance vers la droite d'autant de pas que le second nombre, en une seule opération (4 et 3 font 7), alors que le successeur avance d'un seul pas et que la soustraction recule.",
+  "legende_titre": "Trois déplacements depuis le point 4",
+  "lecture": [
+   "Les trois flèches partent du même point, 4.",
+   "Les flèches violettes sont les voisines : le successeur fait un seul pas, la soustraction recule.",
+   "La flèche bleue est l'addition : elle avance de 3 pas d'un coup et arrive au point vert 7, la somme."
+  ],
+  "a_voir": "Vous voyez que l'addition avance vers la droite d'autant de pas que le second nombre, en un seul geste."
+ },
+ {
+  "code": "02-012",
+  "a_dire": "La somme est le nom du nombre obtenu à la fin d'une addition : pour 18 et 34 c'est 52, on peut en parler seul (il dépasse 50), et 34 puis 18 donne la même somme.",
+  "legende_titre": "Deux calculs, un seul résultat qu'on nomme",
+  "lecture": [
+   "Les barres grises sont les nombres encaissés, 18 et 34, posés bout à bout.",
+   "En haut, vous posez 18 puis 34 ; au milieu, 34 puis 18 : les deux s'arrêtent au même trait vert.",
+   "La barre verte épaisse du bas est le résultat seul, 52 : son nom est la somme."
+  ],
+  "a_voir": "Deux calculs différents donnent le même nombre, et ce nombre se montre seul, sans le calcul : c'est la somme."
+ },
+ {
+  "code": "02-013",
+  "a_dire": "Les termes sont les nombres donnés au départ d'une addition (18 et 34, ou 17, 25 et 3) et la somme est le nombre obtenu à la fin : le mot terme nomme un rôle, pas un type de nombre ni un nombre fixe de nombres.",
+  "legende_titre": "Ce qu'on donne au départ, ce qu'on obtient à la fin",
+  "lecture": [
+   "Les barres bleues sont les nombres que vous donnez au départ : ce sont les termes.",
+   "La barre verte est le nombre que vous obtenez à la fin : c'est la somme. Elle a la longueur des bleues mises bout à bout.",
+   "En haut, il y a deux termes, 18 et 34 ; en bas, trois termes, 17, 25 et 3. Il y a toujours une seule somme."
+  ],
+  "a_voir": "Un nombre est bleu parce qu'il est donné au départ, quelle que soit sa taille : terme est le nom de cette place."
+ },
+ {
+  "code": "02-014",
+  "a_dire": "La formule a + b = S écrit ce qui reste vrai dans toute addition : deux entrées, la seconde commence là où la première finit, une seule sortie S ; seules les valeurs de a et de b changent (4 et 3, ou 18 et 34).",
+  "legende_titre": "Une écriture pour toutes les additions",
+  "lecture": [
+   "En haut, a est bleu, b est orange et S est vert : ce sont les couleurs des deux lignes du dessous.",
+   "Dans chaque ligne, la barre orange commence là où la barre bleue finit, et le point vert marque la fin.",
+   "La ligne du milieu montre 4 et 3, la ligne du bas 18 et 34 ; les deux lignes n'ont pas la même échelle.",
+   "Les nombres changent, la forme reste la même : c'est elle que la formule écrit."
+  ],
+  "a_voir": "Les deux lignes ont la même forme, bleu puis orange puis un point vert : seuls les nombres diffèrent."
+ },
+ {
+  "code": "02-015",
+  "a_dire": "La lettre a désigne le premier terme, le nombre où l'on se place en premier ; on lui donne une valeur au départ (4 ici, 18 là), cette valeur change d'une addition à l'autre, son rôle ne change pas, et seule elle n'a pas de valeur.",
+  "legende_titre": "Une lettre, plusieurs valeurs, une seule place",
+  "lecture": [
+   "La case bleue de gauche contient la lettre a : une seule lettre pour le premier nombre.",
+   "Ses flèches mènent à un point bleu sur chaque droite : en haut a vaut 4, en bas a vaut 18.",
+   "Dans les deux cas, le point bleu est l'endroit où vous vous placez d'abord ; la suite part de là, en gris pointillé.",
+   "La ligne rouge rappelle que la lettre seule, sans nombre donné, ne vaut rien."
+  ],
+  "a_voir": "La valeur de a change d'une droite à l'autre, mais a est toujours le point où l'on se place en premier."
+ },
+ {
+  "code": "02-016",
+  "a_dire": "Le signe + remplace les mots « puis, à la suite » : dans 4 + 3, le déplacement de 3 commence exactement là où le déplacement de 4 finit.",
+  "legende_titre": "Ce que remplace le petit signe +",
+  "lecture": [
+   "En haut, chaque morceau de la phrase est relié à ce qui le remplace : les mots bleus « puis, à la suite » deviennent le + bleu.",
+   "Sur la droite, l'arc orange 4 va de 0 à 4, et l'arc orange 3 va de 4 à 7.",
+   "Le pointillé bleu descend du + jusqu'au point où le premier arc finit et où le second commence."
+  ],
+  "a_voir": "Vous voyez que le + se trouve juste au-dessus du point où le déplacement de 4 finit et où celui de 3 commence."
+ },
+ {
+  "code": "02-017",
+  "a_dire": "La lettre b, le second terme, se lit « le nombre dont on avance » : c'est la longueur du déplacement à partir de a (3 pas, ou 34), pas le point d'arrivée, qui s'appelle S.",
+  "legende_titre": "Le second terme : une longueur ou un point ?",
+  "lecture": [
+   "Le point bleu est l'endroit où vous vous placez : a.",
+   "L'accolade orange mesure toute la bande orange : c'est b, le nombre de pas dont vous avancez.",
+   "Le point vert, au bout de la bande, est un seul point de la droite : il s'appelle S, pas b.",
+   "En bas, la même lecture avec 18 et 34 : b vaut 34, l'arrivée S vaut 52."
+  ],
+  "a_voir": "b est mesuré par l'accolade sur toute la bande, alors que S est un seul point au bout."
+ },
+ {
+  "code": "02-018",
+  "a_dire": "Le signe = affirme que l'écriture de gauche, 18 + 34, et celle de droite, 52, désignent un seul et même nombre, le même point de la droite ; avec 53 à droite, l'affirmation devient fausse.",
+  "legende_titre": "Deux écritures, un même point",
+  "lecture": [
+   "En violet, l'écriture de gauche, 18 + 34 : les barres violettes mises bout à bout.",
+   "En vert, l'écriture de droite, 52 : sa flèche arrive au même point que le bout des barres violettes.",
+   "Le = bleu affirme que ces deux écritures donnent ce seul point.",
+   "En rouge, 53 est un autre point, un pas plus loin : écrire 18 + 34 = 53 est faux."
+  ],
+  "a_voir": "La flèche violette et la flèche verte arrivent au même point : le signe = dit exactement cela."
+ },
+ {
+  "code": "02-019",
+  "a_dire": "La lettre S nomme le point où la bande orange s'arrête, la somme, avant même de connaître son nombre ; pour 4 et 3, S vaut 7, pour 18 et 34, S vaut 52 ; S est la première lettre de somme.",
+  "legende_titre": "Nommer l'arrivée avant de la connaître",
+  "lecture": [
+   "En haut, la rangée n'a pas de nombres : le point vert au bout de la bande orange s'appelle déjà S.",
+   "Sur la droite du bas, chaque trait vert descend du bout d'une bande orange jusqu'à son point d'arrivée.",
+   "Pour 4 puis 3, ce point est 7 ; pour 18 puis 34, il est 52 : la même lettre S, deux valeurs."
+  ],
+  "a_voir": "Le point vert s'appelle toujours S ; son nombre dépend des termes et peut être encore inconnu."
+ },
+ {
+  "code": "02-020",
+  "a_dire": "On lit a + b = S de gauche à droite en trois temps : se placer en a, avancer de b, puis au signe = on s'arrête au point d'arrivée S ; il n'y a qu'un seul déplacement, de longueur b (de 4 à 7).",
+  "legende_titre": "Lire a + b = S, et savoir quand s'arrêter",
+  "lecture": [
+   "Chaque rangée est un moment de la lecture ; le trait de couleur souligne ce que vous avez déjà lu.",
+   "En haut, vous avez lu a : vous êtes au point bleu 4, sans avoir bougé.",
+   "Au milieu, vous avez lu + b : l'arc orange vous fait avancer de 3.",
+   "En bas, vous avez lu = S : aucun nouvel arc, vous êtes arrivé au point vert 7."
+  ],
+  "a_voir": "Entre la rangée du milieu et celle du bas, rien ne bouge : le signe = annonce seulement l'arrivée."
+ },
+ {
+  "code": "02-021",
+  "a_dire": "Sur la droite, 18 + 34 arrive d'un coup au point 52 sans aucune contrainte ; sur le papier, chaque case (dizaines, unités) n'accepte qu'un seul chiffre, et les 12 unités n'y tiennent pas : la difficulté vient du support, pas de l'addition.",
+  "legende_titre": "Le même calcul sur deux supports",
+  "lecture": [
+   "En haut, sur la droite, les barres 18 et 34 mises bout à bout arrivent au point vert 52, sans case à remplir.",
+   "En bas, sur le papier, chaque nombre est rangé en cases bleues : dizaines à gauche, unités à droite.",
+   "Chaque case reçoit un seul chiffre.",
+   "Dans la case rouge des unités, le 2 tient ; le 1 rouge en pointillé reste dehors : 12 unités ne tiennent pas dans une case."
+  ],
+  "a_voir": "La droite n'a aucune limite ; le papier donne un chiffre par case, et le 1 de 12 sort de la case des unités."
+ },
+ {
+  "code": "02-022",
+  "a_dire": "On additionne colonne par colonne en commençant par la droite, les unités, parce que l'excédent d'une colonne passe dans celle de gauche : par la droite, chaque chiffre s'écrit une seule fois ; par la gauche, il faut revenir corriger le 4 en 5.",
+  "legende_titre": "Par quelle colonne commencer ?",
+  "lecture": [
+   "En haut, 18 et 34 sont rangés en deux colonnes : dizaines à gauche, unités à droite.",
+   "Rangée rouge : vous commencez par les dizaines et écrivez 4 ; les unités donnent 12, et la flèche rouge vous ramène barrer le 4 pour écrire 5.",
+   "Rangée verte : vous commencez par les unités, 12 ; vous écrivez 2 et le petit 1 orange passe à gauche, puis vous écrivez 5.",
+   "La rangée verte n'a qu'une flèche et aucun chiffre barré."
+  ],
+  "a_voir": "En commençant par la droite, on ne revient jamais en arrière : chaque chiffre est écrit une seule fois."
+ },
+ {
+  "code": "02-023",
+  "a_dire": "Dans 18 + 34, la colonne des unités donne 12 : on écrit 2 et on passe 1 dizaine à gauche, où les dizaines font 1 + 3 + 1 = 5 ; le résultat est 52 et rien n'est perdu, car 12 unités valent 1 dizaine et 2 unités.",
+  "legende_titre": "18 + 34, colonne après colonne",
+  "lecture": [
+   "Les cases grises contiennent les chiffres de 18 et de 34, rangés en dizaines et unités.",
+   "La flèche orange et le disque orange montrent la retenue : 1 dizaine qui quitte les unités pour aller à gauche.",
+   "Les cases vertes sont le résultat : 5 dizaines et 2 unités, soit 52.",
+   "En bas, 1 dizaine plus 2 unités égalent 12 unités : la flèche orange monte vers les dizaines, la flèche verte vers les unités, rien n'est perdu."
+  ],
+  "a_voir": "Vous voyez que les 12 unités se partagent en 1 dizaine, qui va dans la case 5, et 2 unités, qui restent dans la case 2."
+ },
+ {
+  "code": "02-024",
+  "a_dire": "Dix petits carrés et une barre sont la même quantité : quand les dix carrés quittent la colonne des unités, une seule barre arrive dans la colonne des dizaines, c'est pourquoi on reporte 1 et non 10.",
+  "legende_titre": "Les dix carrés du cadre et la barre",
+  "lecture": [
+   "En haut, les dix carrés bleus sont dans la colonne des unités ; le cadre orange les regroupe.",
+   "La flèche orange indique qu'ils quittent cette colonne et qu'un seul objet arrive dans la colonne des dizaines.",
+   "En bas, la barre verte a exactement la longueur des dix carrés : c'est la même quantité.",
+   "Le contour en pointillé montre la place laissée vide dans la colonne des unités."
+  ],
+  "a_voir": "Vous voyez que la colonne des dizaines reçoit un seul objet, de la même longueur que les dix carrés qui sont partis."
+ },
+ {
+  "code": "02-025",
+  "a_dire": "La retenue, ce sont deux gestes liés : retirer 10 de la colonne qui dépasse 9 et ajouter 1 à la colonne de gauche ; faire un seul des deux gestes change la valeur.",
+  "legende_titre": "Les deux gestes de la retenue, ensemble ou seuls",
+  "lecture": [
+   "En haut, la case rouge contient 12 : deux chiffres dans une seule case, la colonne dépasse 9.",
+   "Un contour orange marque chaque case que le geste a modifiée.",
+   "À gauche, on a retiré 10 et ajouté 1 : 1 dizaine et 2 unités valent encore 12, en vert.",
+   "Au milieu et à droite, un seul geste a été fait : la valeur devient 2 ou 22, en rouge."
+  ],
+  "a_voir": "Vous voyez que seul le panneau où les deux gestes sont faits ensemble garde la valeur 12."
+ },
+ {
+  "code": "02-026",
+  "a_dire": "On reporte 1 et non 10 parce qu'une case de gauche compte des paquets de dix : 1 dizaine rend exactement les 10 unités retirées, alors que 10 dizaines feraient 100 unités, soit 90 de trop.",
+  "legende_titre": "Ce que vaut le report, mesuré en unités",
+  "lecture": [
+   "Toutes les barres sont mesurées en unités, à la même échelle.",
+   "La barre orange est ce qu'on retire de la colonne : 10 unités.",
+   "La barre verte est 1 dizaine reportée : elle s'arrête au même trait pointillé que la barre orange.",
+   "La barre rouge est 10 dizaines : elle dépasse le trait de 90 unités."
+  ],
+  "a_voir": "Vous voyez que seule la barre d'une dizaine a la longueur des 10 unités retirées."
+ },
+ {
+  "code": "02-027",
+  "a_dire": "La retenue vient de l'écriture en cases : sans case (des traits à la suite) il n'y a pas de report, et la règle « chaque case vaut dix fois la précédente » fixe seulement le seuil du report (10 ; ce serait 2 si chaque case valait deux fois la précédente).",
+  "legende_titre": "Trois façons d'écrire, trois sorts pour la retenue",
+  "lecture": [
+   "En haut, les traits violets sont écrits à la suite, sans case : 12 traits tiennent, rien ne passe ailleurs.",
+   "Au milieu et en bas, la case rouge contient un total qui ne tient pas dans une case.",
+   "La flèche orange et la case orange montrent le report de 1 vers la case de gauche ; la case verte garde ce qui reste.",
+   "Au milieu, une règle : chaque case vaut 10 fois sa voisine, le report se fait dès 10. En bas, une autre règle : chaque case vaut 2 fois sa voisine, le report se fait dès 2."
+  ],
+  "a_voir": "Vous voyez qu'il y a un report dès qu'il y a des cases, et que seul le seuil change avec la règle."
+ },
+ {
+  "code": "02-028",
+  "a_dire": "La retenue est le nombre de dizaines contenues dans la colonne : 19 en contient 1, mais 33 en contient 3, donc on garde 3 et on reporte 3.",
+  "legende_titre": "Compter les paquets de dix dans une colonne",
+  "lecture": [
+   "Chaque petit carré est une unité de la colonne.",
+   "Chaque cadre orange entoure un paquet de dix unités : c'est une dizaine reportée à gauche.",
+   "Les carrés verts sont les unités qui restent dans la colonne.",
+   "À gauche, même le plus grand total possible avec deux nombres, 19, ne contient qu'un paquet ; à droite, 33 en contient 3."
+  ],
+  "a_voir": "Vous voyez que la retenue est le nombre de cadres orange : 1 pour 19, 3 pour 33."
+ },
+ {
+  "code": "02-029",
+  "a_dire": "Le petit 1 au-dessus des dizaines vient des 12 unités ; c'est une note qui dit « ajoute 1 dizaine ici » : il n'est ni un chiffre de 18 ni un chiffre de 52.",
+  "legende_titre": "D'où vient le petit 1, et ce qu'il dit",
+  "lecture": [
+   "À droite, 8 + 4 = 12 : les unités donnent 12, on écrit 2 en bas et il reste 1 dizaine.",
+   "La flèche orange porte cette dizaine en haut de la colonne des dizaines : c'est le petit 1 entouré, une note qui dit « ajoute 1 dizaine ici ».",
+   "Le cadre pointillé montre où la note est comptée : petit 1 + 1 + 3 = 5.",
+   "Les chiffres noirs sont 18 et 34, les chiffres verts sont 52 : le petit 1 n'est dans aucun d'eux."
+  ],
+  "a_voir": "Vous voyez que le petit 1 vient des 12 unités et attend en haut de la colonne où il sera ajouté, hors de 18 et hors de 52."
+ },
+ {
+  "code": "02-030",
+  "a_dire": "Partir du point 9 et reculer de 4 mène au point 5, mais ce cas ne montre ni un recul plus grand que le point de départ, ni l'écart entre 4 et 9, ni une soustraction en colonnes avec emprunt.",
+  "legende_titre": "Le recul de 9 à 5, et ce qu'il laisse de côté",
+  "lecture": [
+   "L'arc orange va du disque bleu, au point 9, au disque vert, au point 5 : c'est le cas de la fiche.",
+   "L'arc rouge part du point 4 et sort de la règle à gauche de 0 : ce cas-là n'est pas traité ici.",
+   "L'accolade grise marque l'écart entre 4 et 9 : ce cas ne le mesure pas.",
+   "Le cadre rouge rappelle une soustraction en colonnes avec emprunt, que ce cas ne montre pas."
+  ],
+  "a_voir": "Vous voyez qu'un seul trajet réussit sur la figure, et que les trois éléments marqués d'un point d'interrogation restent sans réponse."
+ },
+ {
+  "code": "02-031",
+  "a_dire": "Le même nombre d = 5 se dessine de deux façons : en haut comme un point d'arrivée, après un recul de s = 4 depuis m = 9 ; en bas comme la longueur du segment entre s = 4 et m = 9.",
+  "legende_titre": "d dessiné deux fois",
+  "lecture": [
+   "Les disques bleus marquent m = 9, le nombre de départ, sur les deux droites.",
+   "En haut, l'arc orange recule de s = 4 et le disque vert marque le point d'arrivée, 5.",
+   "En bas, le segment vert va du point s = 4 au point m = 9 ; sa longueur est 5.",
+   "Le vert marque d dans les deux dessins : une fois un point, une fois une longueur."
+  ],
+  "a_voir": "Vous voyez qu'un point (en haut) et une longueur (en bas) donnent le même nombre, 5."
+ },
+ {
+  "code": "02-032",
+  "a_dire": "Soustraire, c'est faire un retour en arrière : partir d'une quantité, ici 52 euros, et reculer vers la gauche de ce qu'on retire, ici 27, pour arriver à 25 ; c'est le mouvement contraire de l'addition, qui avance vers la droite.",
+  "legende_titre": "Rendre 27 euros sur 52",
+  "lecture": [
+   "Le disque bleu est ce que vous avez au départ : 52 euros.",
+   "L'arc orange est le geste de rendre 27 : il va vers la gauche.",
+   "Le disque vert est ce qui vous reste : 25 euros, plus près de 0.",
+   "La flèche violette du bas montre le sens de l'addition, vers la droite, pour comparer."
+  ],
+  "a_voir": "Vous voyez que la soustraction est un déplacement vers la gauche, dans le sens contraire de l'addition."
+ },
+ {
+  "code": "02-033",
+  "a_dire": "L'écart compare deux nombres sans rien enlever : 9 dépasse 4 de 5, c'est la longueur du segment entre 4 et 9, une mesure et non une action.",
+  "legende_titre": "Deux classes de 9 et de 4 élèves, côte à côte",
+  "lecture": [
+   "Chaque disque est un élève : la rangée du haut est la classe de 9, la rangée violette la classe de 4.",
+   "Les traits pointillés associent chaque élève de la petite classe à un élève de la grande ; les 5 disques bleus restent sans partenaire.",
+   "Personne n'est enlevé : les deux classes restent entières.",
+   "En bas, la flèche bleue à deux pointes mesure la longueur entre 4 et 9 : 5, dans un sens comme dans l'autre."
+  ],
+  "a_voir": "Vous voyez que l'écart, 5, se lit en comparant les deux classes, sans retirer aucun élève."
+ },
+ {
+  "code": "02-034",
+  "a_dire": "La même soustraction 52 − 27 = 25 se lit de deux façons, et c'est la question qui choisit : « combien me reste-t-il ? » se lit comme un recul, « de combien l'un dépasse-t-il l'autre ? » se lit comme un écart.",
+  "legende_titre": "Un calcul, deux questions",
+  "lecture": [
+   "Les deux moitiés utilisent le même calcul, 52 − 27 = 25 ; seule la question en orange change.",
+   "En haut, on demande ce qui reste : la flèche bleue part de 52 et recule de 27.",
+   "En bas, on compare 52 et 27 : la flèche violette à deux pointes mesure la distance entre eux, sans rien retirer.",
+   "Les deux réponses vertes valent 25, mais elles ne répondent pas à la même question."
+  ],
+  "a_voir": "Vous voyez que le nombre ne change pas : c'est la question qui décide si vous dessinez un recul ou un écart."
+ },
+ {
+  "code": "02-035",
+  "a_dire": "Soustraire 27 de 52, c'est partir du premier nombre, 52, en retirer le second, 27, d'un seul coup en reculant vers la gauche, et lire ce qui reste : 25.",
+  "legende_titre": "Ce que fait 52 − 27",
+  "lecture": [
+   "En haut, vous lisez le calcul : d'abord 52, en bleu, puis 27, en orange, que l'on retire.",
+   "La flèche orange part de 52 et recule de 27 vers la gauche, en un seul saut.",
+   "La bande verte est ce qui reste de vos 52 € : 25 ; la bande orange en pointillé est ce que vous avez rendu : 27.",
+   "L'accolade bleue du bas couvre les deux bandes : 25 et 27 refont les 52 € du départ."
+  ],
+  "a_voir": "Vous voyez que la soustraction part du premier nombre, en retire le second d'un seul coup, et donne la partie qui reste."
+ },
+ {
+  "code": "02-036",
+  "a_dire": "« Différence » est le nom du résultat d'une soustraction, ici 25 ; le même mot sert pour ce qui reste après un recul et pour l'écart entre deux nombres.",
+  "legende_titre": "Un seul mot pour deux façons de lire 52 et 27",
+  "lecture": [
+   "Les points gris marquent les deux caisses : 52 euros et 27 euros.",
+   "Au-dessus, la flèche orange retire 27 de 52 et arrive au point bleu 25 : c'est ce qui reste.",
+   "Au-dessous, l'accolade bleue mesure l'écart entre 27 et 52 : encore 25.",
+   "En haut et en bas, le même mot bleu, différence, nomme ce nombre 25."
+  ],
+  "a_voir": "Vous voyez que le nombre 25 porte le même nom, qu'on le lise comme un reste ou comme un écart."
+ },
+ {
+  "code": "02-037",
+  "a_dire": "La formule m − s = d se lit comme trois actions dans l'ordre : je me place en m (52), je recule de s (27), je lis le point d'arrivée d (25).",
+  "legende_titre": "Les trois actions écrites dans m − s = d",
+  "lecture": [
+   "À gauche de chaque ligne, vous lisez un morceau de la formule : 52, puis − 27, puis = 25.",
+   "Ligne 1 : le point bleu vous place en 52.",
+   "Ligne 2 : la flèche orange recule de 27 pas.",
+   "Ligne 3 : le point vert donne l'arrivée, 25."
+  ],
+  "a_voir": "Vous voyez que chaque morceau de la formule, lu de gauche à droite, commande une action, et que le résultat vient en dernier."
+ },
+ {
+  "code": "02-038",
+  "a_dire": "La lettre m nomme le nombre dont on part, celui écrit à gauche du signe −, quelle que soit sa valeur : 9 dans 9 − 4, 52 dans 52 − 27.",
+  "legende_titre": "La lettre m et les nombres qu'elle désigne",
+  "lecture": [
+   "En haut, la lettre bleue m est écrite avant le signe −.",
+   "Le cadre bleu en pointillé montre la colonne de m : 9 dans le premier calcul, 52 dans le second.",
+   "Sur la droite, les points bleus 9 et 52 sont les départs des flèches orange."
+  ],
+  "a_voir": "Vous voyez que m est toujours le nombre de gauche et le point d'où part le recul, quelle que soit sa valeur."
+ },
+ {
+  "code": "02-039",
+  "a_dire": "Le signe − remplace les mots « on recule de » et garde l'ordre : le nombre de gauche est le départ, celui de droite est le recul ; si on les échange, on écrit un autre calcul.",
+  "legende_titre": "Ce que le signe − écrit à la place d'une phrase",
+  "lecture": [
+   "En haut, la phrase complète ; les mots bleus « on recule de » descendent sur le signe bleu −.",
+   "Sous 9 vous lisez départ, sous 4 vous lisez recul.",
+   "La flèche orange fait ce que dit le signe : de 9, elle recule de 4 et arrive en 5.",
+   "En rouge, 4 − 9 part du point 4 et recule de 9 : la flèche rouge sort de la droite à gauche de 0."
+  ],
+  "a_voir": "Vous voyez qu'un seul signe remplace « on recule de », et que 4 − 9 recule depuis 4 jusqu'en dehors de la droite."
+ },
+ {
+  "code": "02-040",
+  "a_dire": "La lettre s nomme ce que l'on retire, c'est-à-dire la longueur du recul (4 dans 9 − 4) ; elle n'est pas le point d'arrivée, qui s'appelle d.",
+  "legende_titre": "Ce que la lettre s désigne, et ce qu'elle ne désigne pas",
+  "lecture": [
+   "En haut, les 4 disques bleus sont ceux que l'on rend : c'est s.",
+   "Les 5 disques verts sont ceux qui restent : c'est d.",
+   "Sur la droite, les quatre arcs bleus sont les quatre pas du recul : leur longueur est s.",
+   "Le point vert où ils s'arrêtent, 5, est d, pas s."
+  ],
+  "a_voir": "Vous voyez que s est ce que l'on enlève, une longueur de 4, et que le point d'arrivée 5 est une autre lettre."
+ },
+ {
+  "code": "02-041",
+  "a_dire": "La lettre d nomme ce qui reste (5 dans 9 − 4, 25 dans 52 − 27) ; c'est aussi la longueur entre s et m, et elle permet de vérifier que s + d redonne m.",
+  "legende_titre": "Les trois emplois de la lettre d",
+  "lecture": [
+   "En haut, d est le nombre qui reste : 5 dans le premier calcul, 25 dans le second.",
+   "Sur la droite, le trait vert va du point violet s = 4 au point gris m = 9 : sa longueur est d = 5.",
+   "En bas, la barre violette s et la barre verte d mises bout à bout vont jusqu'à m : 4 + 5 = 9."
+  ],
+  "a_voir": "Vous voyez que la longueur verte d, ajoutée à s, arrive exactement en m."
+ },
+ {
+  "code": "02-042",
+  "a_dire": "Le diminuende est le nom savant du nombre de départ m, le nombre que l'on diminue : dans 52 − 27, c'est 52 ; c'est un nom de rôle, comme « terme » pour l'addition.",
+  "legende_titre": "Le nombre que l'on diminue, et son nom",
+  "lecture": [
+   "La barre bleue du haut est 52, le nombre de départ : l'accolade lui donne le nom diminuende.",
+   "Dessous, la même barre après le retrait : 25 restent en vert, 27 sont retirés en orange.",
+   "En bas, diminuende est rangé à côté de terme : ce sont deux noms de rôles."
+  ],
+  "a_voir": "Vous voyez que le diminuende est le nombre qui raccourcit, 52, et que son nom dit son rôle."
+ },
+ {
+  "code": "02-043",
+  "a_dire": "Le diminuteur est le nombre que l'on retire (27 dans 52 − 27), jamais celui dont on part ; si l'on échange les rôles, le retrait est impossible dans les entiers.",
+  "legende_titre": "Les deux nombres d'une soustraction n'ont pas le même rôle",
+  "lecture": [
+   "En haut, la barre violette 52 est le nombre dont on part : le diminuende.",
+   "Le morceau bleu 27 est celui que l'on retire : le diminuteur ; la flèche montre qu'on le retire, et il tient sous la barre 52.",
+   "En bas, on échange : on part de 27 et il faudrait retirer 52, la barre rouge en pointillé.",
+   "Cette barre dépasse de 25 : il manque 25, donc c'est impossible avec les entiers 0, 1, 2…"
+  ],
+  "a_voir": "Vous voyez que le diminuteur est toujours le morceau retiré, et qu'il doit tenir dans le nombre de départ."
+ },
+ {
+  "code": "02-044",
+  "a_dire": "Pour l'addition l'ordre ne change rien, mais m − s et s − m sont deux calculs différents : 9 − 4 donne 5, alors que 4 − 9 n'a pas de réponse dans les entiers.",
+  "legende_titre": "Mêmes nombres, ordre échangé : deux calculs",
+  "lecture": [
+   "En haut, en violet, l'addition : échanger 4 et 9 ne change pas le total.",
+   "Sur la première droite, la flèche orange part de 9, recule de 4 et s'arrête au point vert 5.",
+   "Sur la seconde droite, la flèche rouge part de 4 et recule de 9 : elle passe à gauche de 0, où il n'y a pas d'entier."
+  ],
+  "a_voir": "Vous voyez qu'avec les mêmes nombres, échanger l'ordre fait passer d'une réponse, 5, à aucune réponse."
+ },
+ {
+  "code": "02-045",
+  "a_dire": "Lire m − s = d, c'est se placer en m, reculer de s et être en d ; si s dépasse m, on atteint 0 avant d'avoir fini de reculer et il n'y a pas d'arrivée.",
+  "legende_titre": "Lire m − s = d sur la droite, et quand cela s'arrête",
+  "lecture": [
+   "La boîte bleue m est le point où vous vous placez ; sur chaque droite, c'est le point bleu.",
+   "La flèche orange est le recul de s pas ; la boîte verte d est le point où vous arrivez, le point vert.",
+   "En haut, vous partez de 9, vous reculez de 4 et vous êtes en 5.",
+   "En bas, vous partez de 4 : après 4 pas vous êtes en 0, et les 5 pas en rouge n'ont plus aucun point sous eux."
+  ],
+  "a_voir": "La flèche rouge du bas n'a pas de point d'arrivée, parce que la droite s'arrête à 0."
+ },
+ {
+  "code": "02-046",
+  "a_dire": "m − s = d et s + d = m décrivent la même figure : le point s, un segment de longueur d, le point m ; on la lit de gauche à droite pour l'addition, de m vers s pour la soustraction.",
+  "legende_titre": "Une addition et une soustraction sur la même droite",
+  "lecture": [
+   "Le segment bleu va du point 27 au point 52 : sa longueur est 25.",
+   "La flèche violette, au-dessus, lit la figure de gauche à droite : 27 + 25 = 52.",
+   "La flèche orange, en dessous, lit la même figure de 52 vers 27 : 52 − 27 = 25."
+  ],
+  "a_voir": "Les deux flèches commencent et finissent aux mêmes points : elles décrivent le même segment bleu."
+ },
+ {
+  "code": "02-047",
+  "a_dire": "Le résultat 5 de 9 − 4 est accepté parce que 4 + 5 redonne 9 : toute soustraction se vérifie en ajoutant le résultat au nombre retiré, et la différence est le terme qui manque dans 4 + ? = 9.",
+  "legende_titre": "Calculer 9 − 4, puis contrôler par une addition",
+  "lecture": [
+   "En haut, la flèche orange part de 9 et recule de 4 : vous arrivez en 5, le rond vide.",
+   "En dessous, la flèche violette part de 4 et avance de 5 : vous arrivez au point vert.",
+   "Le trait vert montre que ce point est 9, le point de départ du haut : c'est pour cela que 5 est accepté.",
+   "L'accolade bleue mesure ce qu'il faut ajouter à 4 pour arriver à 9 : c'est 5."
+  ],
+  "a_voir": "La flèche violette du bas finit exactement sous le point où la flèche orange du haut a commencé."
+ },
+ {
+  "code": "02-048",
+  "a_dire": "La soustraction est l'opération inverse de l'addition : retirer 4 annule ajouter 4 et ramène au point de départ, et ce lien est le même pour tous les nombres.",
+  "legende_titre": "Ajouter puis retirer la même somme",
+  "lecture": [
+   "Chaque petit trait de la droite est un euro de plus dans la caisse.",
+   "L'arc violet du haut ajoute 4 euros : il avance de 4 traits.",
+   "L'arc orange du bas retire 4 euros : il revient de 4 traits et retombe sur le point vert du départ.",
+   "À droite, la même boucle part d'un autre point et revient aussi à son départ."
+  ],
+  "a_voir": "Chaque arc orange finit exactement là où l'arc violet a commencé, à gauche comme à droite."
+ },
+ {
+  "code": "02-049",
+  "a_dire": "Résoudre une équation comme « un nombre plus 7 vaut 12 », c'est chercher le terme qui manque dans une addition, et on le trouve par une soustraction : 12 − 7 = 5.",
+  "legende_titre": "Une équation : une addition avec un trou",
+  "lecture": [
+   "La case bleue avec un point d'interrogation est le nombre inconnu de la phrase.",
+   "La barre grise du haut mesure 12 ; dessous, la barre bleue inconnue et la barre 7, bout à bout, ont la même longueur.",
+   "L'accolade orange mesure la barre bleue : 12 − 7 = 5.",
+   "Le texte vert donne le terme qui manquait : 5."
+  ],
+  "a_voir": "La barre bleue est ce qui reste de la barre 12 quand on enlève la barre 7."
+ },
+ {
+  "code": "02-050",
+  "a_dire": "Pour 52 − 27, on casse une des 5 dizaines en dix unités : 52 devient 4 dizaines et 12 unités, puis 12 − 7 = 5 et 4 − 2 = 2, ce qui donne 25.",
+  "legende_titre": "52 − 27 avec des barres de dix et des carrés",
+  "lecture": [
+   "Chaque barre est faite de 10 petits carrés : c'est une dizaine ; chaque petit carré seul est une unité.",
+   "En haut, 52 : 5 barres et 2 carrés ; la barre orange est cassée et devient les 10 carrés orange de la ligne du milieu.",
+   "Au milieu, il y a 4 barres et 12 carrés : on peut maintenant retirer 7 carrés.",
+   "En bas, les pièces en pointillé sont retirées ; il reste en vert 2 barres et 5 carrés, soit 25."
+  ],
+  "a_voir": "Les 10 carrés orange du milieu sont la barre orange du haut, défaite en unités."
+ },
+ {
+  "code": "02-051",
+  "a_dire": "L'emprunt réécrit 52 en 4 dizaines et 12 unités sans changer sa valeur, pour que la colonne des unités, où 2 − 7 n'avait pas de réponse, contienne assez pour retirer 7.",
+  "legende_titre": "Changer la répartition de 52, pas sa valeur",
+  "lecture": [
+   "En haut, la case rouge des unités montre 2 : on ne peut pas y retirer 7.",
+   "La flèche orange prend une dizaine à gauche et la met à droite sous forme de 10 unités.",
+   "En bas, les cases orange montrent 4 et 12 : la colonne des unités donne maintenant 12 − 7 = 5.",
+   "Les deux sommes du bas donnent 52 toutes les deux : le nombre n'a pas changé."
+  ],
+  "a_voir": "Les cases changent de contenu, mais les deux sommes du bas valent toujours 52."
+ },
+ {
+  "code": "02-052",
+  "a_dire": "Dans la soustraction en colonnes, on note l'emprunt en écrivant en petit 4 au-dessus du 5 et 12 au-dessus du 2, sans effacer 52 ; on calcule avec 4 et 12, qui se lisent colonne par colonne, et non comme 412.",
+  "legende_titre": "Où l'on écrit l'emprunt dans un calcul posé",
+  "lecture": [
+   "Les petits nombres orange sont la nouvelle écriture de 52 : 4 dizaines et 12 unités.",
+   "Le 52 gris reste écrit dessous : vous pouvez vérifier que 40 + 12 font bien 52.",
+   "Le trait pointillé sépare les colonnes : le 4 et le 12 ne se lisent pas ensemble.",
+   "Le 25 vert se calcule avec les nombres orange : 12 − 7 = 5 et 4 − 2 = 2."
+  ],
+  "a_voir": "Chaque petit nombre orange est au-dessus de sa propre colonne, de part et d'autre du trait."
+ },
+ {
+  "code": "02-053",
+  "a_dire": "L'emprunt est une réécriture : il change la forme de 52 (4 dizaines et 12 unités) sans changer sa valeur, donc les deux écritures désignent le même point de la droite, alors qu'un calcul comme 52 − 27 mène à un point nouveau.",
+  "legende_titre": "Réécrire un nombre ou calculer : deux familles",
+  "lecture": [
+   "Le cadre bleu contient deux écritures de 52 ; la flèche orange entre elles est l'emprunt.",
+   "La flèche bleue montre que les deux écritures arrivent au même point de la droite, 52.",
+   "La flèche violette est un calcul, 52 − 27 : elle mène à un autre point, 25."
+  ],
+  "a_voir": "L'emprunt ne déplace pas le point bleu ; seul le calcul violet mène ailleurs."
+ },
+ {
+  "code": "02-054",
+  "a_dire": "L'emprunt fait le même échange que la retenue, dans l'autre sens : la retenue change 10 unités en 1 dizaine, l'emprunt change 1 dizaine en 10 unités ; les deux existent parce que la colonne de gauche compte par paquets de 10 (la position).",
+  "legende_titre": "Un seul échange, lu dans les deux sens",
+  "lecture": [
+   "À gauche, la barre orange est 1 dizaine : 10 petites cases collées ; à droite, les 10 points orange sont 10 unités séparées.",
+   "L'arc violet du haut est la retenue : les 10 points deviennent la barre.",
+   "L'arc bleu du bas est l'emprunt : la barre redevient 10 points.",
+   "Les deux arcs font le même échange en sens contraires ; cet échange existe parce que la case de gauche compte par paquets de 10."
+  ],
+  "a_voir": "Vous voyez que la retenue et l'emprunt relient les deux mêmes objets, 1 barre de 10 et 10 points, l'un dans un sens, l'autre dans l'autre."
+ },
+ {
+  "code": "02-055",
+  "a_dire": "Pour 503 − 37, la colonne des dizaines est vide : on la remplit d'abord avec une centaine cassée en 10 dizaines, puis on casse une de ces dizaines en 10 unités ; la même règle se répète, et il reste 9 dizaines.",
+  "legende_titre": "503 − 37 : emprunter quand la case voisine est vide",
+  "lecture": [
+   "En haut, les cases rouges montrent le blocage : 3 unités pour en retirer 7, et 0 dizaine à prendre.",
+   "Le disque orange sort de la centaine et la flèche orange le porte dans la case vide : 1 centaine devient 10 dizaines, il reste 4 centaines.",
+   "Le second disque sort des 10 dizaines et part vers les unités : 1 dizaine devient 10 unités, il reste 9 dizaines.",
+   "En bas, en vert, 4, 9 et 13 : vous pouvez calculer 13 − 7 = 6, 9 − 3 = 6, 4 − 0 = 4, soit 466."
+  ],
+  "a_voir": "Les deux flèches orange font le même geste, chacune une case plus à droite que la précédente."
+ },
+ {
+  "code": "02-056",
+  "a_dire": "Une propriété se sépare d'un exemple par sa portée (tous les nombres, pas un seul cas comme 18 et 34) et d'une convention par son origine (elle s'impose et se prouve, alors qu'une convention, comme arrondir 16 500 vers le haut, est un choix).",
+  "legende_titre": "Exemple, propriété, convention : trois statuts différents",
+  "lecture": [
+   "Chaque point gris représente deux nombres que l'on pourrait additionner dans les deux ordres.",
+   "À gauche, un seul point violet est vérifié : 18 et 34, c'est un exemple.",
+   "Au centre, tous les points sont bleus : la propriété parle de tous les nombres, et il faut la prouver.",
+   "À droite, la flèche orange fait monter 16 500 vers 17 000 : c'est un choix, une convention."
+  ],
+  "a_voir": "Voyez que la propriété couvre tous les points, et qu'elle n'est pas choisie comme la flèche orange de droite."
+ },
+ {
+  "code": "02-057",
+  "a_dire": "Pour tous nombres a et b, a + b = b + a, parce que les mêmes deux bandes, posées dans un ordre ou dans l'autre, couvrent la même longueur : déplacer une bande ne la raccourcit pas.",
+  "legende_titre": "a + b et b + a : les mêmes morceaux dans l'autre ordre",
+  "lecture": [
+   "En haut, les flèches orange montrent que a et b changent de place d'un côté à l'autre du signe =.",
+   "La bande bleue mesure 8, comme les 8 euros encaissés ; la bande violette mesure 5.",
+   "À gauche, 8 puis 5 ; à droite, 5 puis 8 : ce sont les deux mêmes bandes.",
+   "Les accolades vertes ont la même largeur : 13 euros dans les deux ordres."
+  ],
+  "a_voir": "Voyez que changer l'ordre des deux bandes ne change pas la largeur couverte."
+ },
+ {
+  "code": "02-058",
+  "a_dire": "La figure montre, mieux qu'une phrase, que les deux rangées 8 puis 5 et 5 puis 8, placées l'une sous l'autre, sont faites des mêmes bandes dans l'ordre inverse et s'arrêtent au même trait, 13.",
+  "legende_titre": "Fig. 2.4 — deux rangées posées l'une sous l'autre",
+  "lecture": [
+   "En haut, la bande bleue (8) puis la bande violette (5) ; en bas, la violette puis la bleue.",
+   "Les deux bandes bleues ont la même largeur, les deux violettes aussi : seul l'ordre change.",
+   "Le trait vert en pointillé est à la graduation 13 : les deux rangées s'y arrêtent."
+  ],
+  "a_voir": "Voyez que les deux rangées touchent le trait vert au même endroit, sans le dépasser ni s'arrêter avant."
+ },
+ {
+  "code": "02-059",
+  "a_dire": "La preuve part de deux morceaux de longueurs a et b, s'appuie sur une seule étape (une bande garde sa longueur quand on la déplace) et arrive à a + b = b + a, car les deux rangées s'arrêtent au même trait.",
+  "legende_titre": "Preuve de a + b = b + a en trois temps",
+  "lecture": [
+   "En haut, le départ : deux bandes, a = 8 en bleu et b = 5 en violet.",
+   "Dans le cadre orange, la bande de 8 change de place : elle garde la même largeur, 8.",
+   "En bas, les deux rangées sont faites des mêmes bandes : elles s'arrêtent au trait vert, 13.",
+   "Sans l'étape du cadre orange, rien ne garantirait que les deux rangées finissent au même trait."
+  ],
+  "a_voir": "Voyez que tout repose sur le cadre orange : une bande déplacée garde sa longueur."
+ },
+ {
+  "code": "02-060",
+  "a_dire": "La propriété associative permet de choisir quelles deux additions on fait en premier, (43 + 16) + 27 ou 43 + (16 + 27), sans changer l'ordre des nombres : les deux chemins donnent 86, donc on peut écrire 43 + 16 + 27 sans parenthèses.",
+  "legende_titre": "Deux façons de commencer 43 + 16 + 27",
+  "lecture": [
+   "En haut, les trois nombres 43, 16, 27, dans cet ordre.",
+   "La bande orange montre les deux nombres additionnés en premier : 43 et 16 à gauche, 16 et 27 à droite.",
+   "Les deux chemins donnent la même bande verte, 86.",
+   "Comme le choix ne change rien, on écrit 43 + 16 + 27 sans parenthèses."
+  ],
+  "a_voir": "Voyez que l'ordre des nombres ne bouge pas : seul le regroupement en orange change, et l'arrivée est la même."
+ },
+ {
+  "code": "02-061",
+  "a_dire": "Les parenthèses disent : calcule d'abord ce qui est entre elles ; dans (43 + 16) + 27 on calcule d'abord 59, dans 43 + (16 + 27) d'abord 43, avec les mêmes nombres regroupés autrement.",
+  "legende_titre": "Ce que disent les parenthèses",
+  "lecture": [
+   "Le cadre bleu entoure ce qui est entre les parenthèses.",
+   "La flèche orange part du cadre et donne le calcul fait en premier : 59 à gauche, 43 à droite.",
+   "Les nombres 43, 16, 27 sont les mêmes des deux côtés ; seul le cadre bleu a changé de place.",
+   "En bas, sans parenthèses, rien n'indique quel calcul faire d'abord."
+  ],
+  "a_voir": "Voyez que les parenthèses ne changent aucun nombre : elles désignent seulement ce que l'on calcule en premier."
+ },
+ {
+  "code": "02-062",
+  "a_dire": "La preuve pose les trois mêmes bandes, 43, 16 et 27, dans le même ordre : que l'on s'arrête d'abord après 43 + 16 = 59 ou que l'on mesure d'abord 16 + 27 = 43, on mesure la même ligne, donc (a + b) + c = a + (b + c) = 86.",
+  "legende_titre": "Deux regroupements sur la même ligne",
+  "lecture": [
+   "Les deux lignes bleues sont faites des mêmes bandes, 43, 16 et 27, dans le même ordre ; les pointillés relient leurs bords.",
+   "En haut, l'accolade orange s'arrête après a et b : 59. En bas, elle mesure d'abord b et c : 43.",
+   "Les pointillés verts montrent que les deux lignes ont les mêmes bouts : elles mesurent toutes deux 86."
+  ],
+  "a_voir": "Vous voyez que les deux regroupements mesurent la même ligne : seul l'endroit où l'on s'arrête en route change, pas la longueur totale."
+ },
+ {
+  "code": "02-063",
+  "a_dire": "Le cas (43 + 16) + 27 et 43 + (16 + 27) montre que deux chemins aux étapes différentes (59 d'un côté, 43 de l'autre) arrivent au même point, 86 : la propriété porte sur l'arrivée, pas sur les étapes.",
+  "legende_titre": "Deux chemins de calcul pour 43, 16 et 27",
+  "lecture": [
+   "En haut, on fait deux sauts orange : + 16 mène à 59, puis + 27 mène à 86.",
+   "En bas, on calcule d'abord 16 + 27 = 43, puis on fait un seul saut de 43.",
+   "Le trait vert relie les deux arrivées : 86 dans les deux cas."
+  ],
+  "a_voir": "Voyez que les étapes orange ne se ressemblent pas, mais que les deux chemins finissent sur le même trait vert."
+ },
+ {
+  "code": "02-064",
+  "a_dire": "a + 0 = a et 0 + a = a, parce qu'une bande de longueur 0 ne couvre aucune longueur : posée après a, on reste en a ; posée d'abord en 0, la bande a commence en 0 et finit en a.",
+  "legende_titre": "Ajouter 0 avant ou après 7",
+  "lecture": [
+   "La bande bleue mesure 7, comme les 7 euros de la caisse.",
+   "Le trait orange est une bande de longueur 0 : il ne couvre aucune longueur.",
+   "En haut, il est posé après 7 ; en bas, il est posé d'abord, en 0.",
+   "Le trait vert montre que, dans les deux cas, on arrive en 7."
+  ],
+  "a_voir": "Voyez que le trait orange n'a pas de largeur : où qu'on le pose, la fin de la bande bleue reste en 7."
+ },
+ {
+  "code": "02-065",
+  "a_dire": "Le mot « neutre » désigne le nombre qui, ajouté, ne change aucun résultat (0 pour l'addition : 7 + 0 = 7 ; 1 pour la multiplication : 7 × 1 = 7), et le sépare de l'autre sens de 0, une quantité vide.",
+  "legende_titre": "Deux sens du nombre 0, et le mot « neutre »",
+  "lecture": [
+   "À gauche, la caisse violette est vide : ici 0 est une quantité, il n'y a rien. La flèche violette montre qu'on peut l'ajouter aux 7 disques.",
+   "Au centre, on ajoute 0 aux 7 disques bleus : on retrouve 7 disques verts.",
+   "À droite, on prend 7 une seule fois : on retrouve aussi 7 disques.",
+   "L'accolade verte réunit les deux colonnes où le nombre ne change rien : c'est ce que dit le mot neutre."
+  ],
+  "a_voir": "Voyez que l'accolade verte ne couvre pas la caisse vide : le mot neutre vise le nombre qui ne change rien, pas la quantité vide."
+ },
+ {
+  "code": "02-066",
+  "a_dire": "L'opposé d'un nombre est le nombre qui, ajouté, ramène à 0 ; or ajouter un entier à 5 avance vers la droite ou laisse en 5, donc aucun entier ne ramène 5 à 0, et le chapitre 13 devra créer de nouveaux nombres.",
+  "legende_titre": "Revenir de 5 à 0 en ajoutant un entier ?",
+  "lecture": [
+   "Le disque vert est 0, le point où l'on veut revenir ; le disque bleu est 5.",
+   "Les flèches orange montrent qu'ajouter 1, 2 ou 3 fait avancer vers la droite ; ajouter 0 laisse en 5.",
+   "La flèche rouge barrée vers 0 est le trajet qu'aucun entier ajouté ne permet.",
+   "L'opposé de 5 serait le nombre qui fait ce trajet : il n'existe pas encore parmi les entiers."
+  ],
+  "a_voir": "Voyez que toutes les flèches orange partent vers la droite : aucune ne ramène 5 au disque vert."
+ },
+ {
+  "code": "02-067",
+  "a_dire": "Pour vérifier que 52 − 27 = 25, je calcule l'addition 27 + 25 : si elle redonne 52, la soustraction est juste ; sinon, il faut la refaire.",
+  "legende_titre": "Contrôler 52 − 27 = 25 avec une seule addition",
+  "lecture": [
+   "La barre du haut est 52 : la partie bleue est le reste 25, la partie orange en pointillé est le 27 retiré.",
+   "La barre du bas met 27 puis 25 bout à bout : c'est l'addition de contrôle.",
+   "Le trait vert montre que les deux barres finissent au même endroit : 27 + 25 redonne 52.",
+   "En bas, la case verte dit quand on accepte le résultat, la case rouge quand on refait la soustraction."
+  ],
+  "a_voir": "Vous voyez que l'addition 27 + 25 finit exactement là où finissait 52 : un seul calcul suffit pour conclure."
+ },
+ {
+  "code": "02-068",
+  "a_dire": "Dans une addition, je peux changer l'ordre et le regroupement des termes, (17 + 3) + 25 = 20 + 25 = 45 comme 17 + 25 + 3, mais je ne peux pas le faire dans une soustraction : 4 − 9 n'a pas de réponse alors que 9 − 4 = 5.",
+  "legende_titre": "Déplacer et grouper : permis pour +, pas pour −",
+  "lecture": [
+   "Les deux rangées du haut sont faites des mêmes morceaux 17, 25 et 3, dans deux ordres différents.",
+   "La flèche orange déplace le 3 ; l'accolade orange montre que 17 et 3 font 20, calculé en premier.",
+   "Le trait vert montre que les deux rangées finissent au même endroit : 45.",
+   "Sous « mais pas en soustraction », la flèche verte fait 9 − 4 et arrive en 5 ; la flèche rouge fait 4 − 9 et sort de la droite avant 0."
+  ],
+  "a_voir": "Vous voyez que réorganiser ne change pas la longueur de la rangée, mais qu'échanger l'ordre dans une soustraction vous fait sortir de la droite."
+ },
+ {
+  "code": "02-069",
+  "a_dire": "Pour 1 875 + 358, je calcule colonne par colonne de droite à gauche : 13, puis 13, puis 12, puis 2 ; à chaque fois une retenue 1 passe à la colonne suivante, et la somme est 2 233.",
+  "legende_titre": "1 875 + 358, une colonne après l'autre",
+  "lecture": [
+   "Chaque case grise est une colonne ; elle montre le calcul fait dans cette colonne.",
+   "Chaque arc orange marqué 1 est une retenue qui passe à la colonne juste à gauche.",
+   "Les chiffres verts sont ceux qu'on écrit sous chaque colonne ; lus ensemble, ils donnent 2 233.",
+   "La flèche orange du bas rappelle qu'on commence par les unités, à droite."
+  ],
+  "a_voir": "Vous voyez les trois retenues valant 1, chacune passant d'une colonne à la suivante, jusqu'à la somme 2 233."
+ },
+ {
+  "code": "02-070",
+  "a_dire": "Pour 2 233 − 809, je casse une dizaine aux unités (13 − 9 = 4) et un millier aux centaines (12 − 8 = 4) ; j'obtiens 1 424, que je pourrai contrôler par 809 + 1 424.",
+  "legende_titre": "2 233 − 809 : deux colonnes doivent emprunter",
+  "lecture": [
+   "Les textes rouges montrent les deux colonnes où le chiffre du haut est trop petit.",
+   "Chaque flèche orange va d'une colonne vers celle de droite : un paquet est cassé en 10.",
+   "Dans les cases, 'reste 1' et '2 − 0' montrent que la colonne qui a donné a un de moins.",
+   "Les chiffres verts donnent 1 424 ; la phrase violette dit l'addition qui servira de contrôle."
+  ],
+  "a_voir": "Vous voyez que chaque emprunt naît d'un manque dans une seule colonne, et que la différence est 1 424."
+ },
+ {
+  "code": "02-071",
+  "a_dire": "La retenue sortie des unités entre toujours dans la colonne juste à gauche, les dizaines, car là un 1 vaut une dizaine, soit 10 ; dans les centaines il vaudrait 100, dix fois trop.",
+  "legende_titre": "Une seule adresse pour la retenue",
+  "lecture": [
+   "La case bleue est la colonne des unités : 5 + 8 donne 13, on y garde 3.",
+   "La flèche verte porte la retenue 1 dans la colonne juste à gauche, les dizaines.",
+   "Sous chaque colonne, l'objet gris montre ce que vaut un 1 posé dans cette colonne : 1, 10 ou 100.",
+   "La flèche rouge en pointillé montre l'erreur : posé aux centaines, ce 1 vaudrait 100."
+  ],
+  "a_voir": "Vous voyez que le 1 de la retenue vaut 10 seulement dans la colonne juste à gauche ; plus loin, il vaudrait dix fois trop."
+ },
+ {
+  "code": "02-072",
+  "a_dire": "Pour contrôler 2 233 − 809 = 1 424, je calcule 809 + 1 424 et je retrouve 2 233 ; les deux emprunts de la soustraction deviennent les deux retenues de l'addition, dans les mêmes colonnes, à l'envers.",
+  "legende_titre": "809 + 1 424 : la soustraction refaite à l'envers",
+  "lecture": [
+   "La rangée violette est la soustraction déjà faite ; ses deux flèches orange sont les deux emprunts.",
+   "La rangée bleue est l'addition de contrôle ; ses deux flèches orange sont les deux retenues.",
+   "Les flèches relient les mêmes colonnes en haut et en bas, mais dans l'autre sens.",
+   "La ligne verte dit qu'on retrouve 2 233 ; la ligne rouge dit ce que signifierait un désaccord."
+  ],
+  "a_voir": "Vous voyez que deux emprunts à l'aller donnent deux retenues au retour, dans les mêmes colonnes, et qu'on retrouve 2 233."
+ },
+ {
+  "code": "02-073",
+  "a_dire": "4 − 9 n'a pas de réponse parce qu'en partant de 4 on ne peut reculer que de 4 pas avant 0, et que la droite n'a aucun point avant 0 : il manque 5 pas.",
+  "legende_titre": "Reculer de 9 depuis 4",
+  "lecture": [
+   "Le point bleu est le départ, 4.",
+   "Les quatre arcs orange sont les pas que la droite permet : ils mènent à 0.",
+   "Les cinq arcs rouges en pointillé sont les pas qui manquent : à gauche de 0, il n'y a aucun point.",
+   "L'accolade compte les 9 pas demandés : 4 possibles, 5 impossibles."
+  ],
+  "a_voir": "Vous voyez que la réponse manque parce que la droite s'arrête en 0, et non à cause d'une erreur de calcul."
+ },
+ {
+  "code": "02-074",
+  "a_dire": "La somme de deux entiers est toujours un entier parce que la droite des entiers ne s'arrête jamais : 5 + 7 = 12 a toujours sa place, alors que sur une règle arrêtée à 9, 12 n'en aurait pas.",
+  "legende_titre": "5 + 7 sur une règle courte et sur la droite",
+  "lecture": [
+   "En haut, la règle s'arrête à 9 : le trait rouge marque sa fin.",
+   "La flèche orange avance de 7 depuis 5 ; en haut, elle tombe sur la croix rouge, là où il n'y a pas de graduation.",
+   "En bas, la droite continue ; la même flèche arrive sur le point vert 12.",
+   "La phrase verte dit pourquoi la droite du bas ne s'arrête jamais."
+  ],
+  "a_voir": "Vous voyez que la même addition n'échoue que sur une règle arrêtée ; sur la vraie droite, il y a toujours un point pour la somme."
+ },
+ {
+  "code": "02-075",
+  "a_dire": "m − s n'a de sens que si s ≤ m, parce qu'entre 0 et m il y a exactement m pas : si s est plus petit on s'arrête avant 0, si s est égal on arrive pile en 0, si s est plus grand on dépasse 0.",
+  "legende_titre": "Reculer de s depuis m : trois cas",
+  "lecture": [
+   "Sur la droite du haut, l'accolade bleue compte les 9 pas qui séparent 9 de 0.",
+   "Les deux premières flèches restent sur la droite : elles finissent sur un point vert.",
+   "La flèche rouge du bas part de 4, recule de 9 et sort de la droite avant 0.",
+   "Les deux cas verts sont ceux où s est plus petit que m ou égal à m : c'est ce que dit s ≤ m."
+  ],
+  "a_voir": "Vous voyez que la soustraction reste sur la droite tant que s ne dépasse pas m, et en sort dès que s est plus grand."
+ },
+ {
+  "code": "02-076",
+  "a_dire": "Le signe ≤ se lit « inférieur ou égal à » : il réunit en une écriture deux cas, plus petit et égal, comme dans 4 ≤ 9 et 9 ≤ 9.",
+  "legende_titre": "Le signe ≤ en deux morceaux",
+  "lecture": [
+   "Le chevron bleu est la partie « plus petit » du signe ; le trait violet du dessous est la partie « ou égal ».",
+   "À gauche du signe, s est ce que l'on retire ; à droite, m est le nombre de départ.",
+   "Sur la droite A, le point bleu 4 est avant le point violet 9 : 4 ≤ 9 est vrai.",
+   "Sur la droite B, les deux points sont au même endroit, 9 : 9 ≤ 9 est vrai aussi."
+  ],
+  "a_voir": "Vous voyez qu'un seul signe couvre deux situations : le nombre de gauche est avant celui de droite, ou au même endroit."
+ },
+ {
+  "code": "02-077",
+  "a_dire": "Les nombres signés sont inventés parce que la soustraction, inverse de l'addition qui avance sans fin, doit pouvoir reculer sans fin : 4 − 9 demande un point 5 pas avant 0, donc on prolonge la droite à gauche.",
+  "legende_titre": "D'où viennent les nombres avec un signe moins",
+  "lecture": [
+   "En haut, la flèche verte montre que l'addition peut toujours aller plus loin à droite.",
+   "La flèche orange recule de 4 jusqu'à 0 ; la flèche rouge en pointillé montre les 5 pas qui n'ont aucun point.",
+   "En bas, la partie violette prolonge la droite à gauche de 0 : ce sont les nombres du chapitre 13.",
+   "Le point vert est la place de la réponse de 4 − 9, écrite −5."
+  ],
+  "a_voir": "Vous voyez que la droite est prolongée exactement là où la soustraction manquait de points."
+ },
+ {
+  "code": "02-078",
+  "a_dire": "La soustraction n'est pas commutative parce que ses deux nombres n'ont pas le même rôle : l'un est le point de départ, l'autre la longueur du recul ; dans l'addition, les deux sont des longueurs.",
+  "legende_titre": "Échanger les deux nombres : addition et soustraction",
+  "lecture": [
+   "En haut, les bandes violettes sont deux longueurs : dans les deux ordres, elles finissent au même endroit, 13.",
+   "Au milieu, le point bleu 9 est le départ ; la flèche orange est le recul de 4 ; vous arrivez au point vert 5.",
+   "En bas, les nombres sont échangés : le départ bleu est 4, et le recul de 9 dépasse 0 ; la partie rouge ne tient pas sur la droite."
+  ],
+  "a_voir": "Dans la soustraction, un nombre est un point et l'autre une longueur : les échanger change tout."
+ },
+ {
+  "code": "02-079",
+  "a_dire": "La division défera la multiplication comme la soustraction défait l'addition : de 4 fois 3 = 12 on retrouve 3 par 12 divisé par 4, comme de 4 plus 5 = 9 on retrouve 5 par 9 moins 4.",
+  "legende_titre": "Deux opérations, deux façons de revenir en arrière",
+  "lecture": [
+   "En haut, les bandes 4 et 5 bout à bout font 9 ; la ligne bleue retire 4 et rend la bande verte 5.",
+   "En bas, quatre bandes de 3 font 12 ; la ligne bleue partage 12 en 4 et rend la bande verte 3.",
+   "Le cadre bleu en pointillé signale que la division sera vue au chapitre 3."
+  ],
+  "a_voir": "Les deux lignes bleues font le même travail : elles rendent le morceau de départ, en vert."
+ },
+ {
+  "code": "02-083",
+  "a_dire": "4 × 3 résume une addition de termes égaux : le 4 dit combien de fois on répète, le 3 dit quel nombre on répète, donc 4 × 3 = 3 + 3 + 3 + 3 = 12.",
+  "legende_titre": "Ce que résume l'écriture 4 × 3",
+  "lecture": [
+   "Le 4 orange compte les sacs : l'accolade orange en couvre quatre.",
+   "Le 3 bleu est le nombre de billes dans chaque sac : il est répété sous chaque sac.",
+   "Les quatre 3 bleus, reliés par +, font 12 billes, en vert."
+  ],
+  "a_voir": "4 × 3 est une addition de quatre termes égaux à 3."
+ },
+ {
+  "code": "02-084",
+  "a_dire": "On additionne des fractions en comptant des parts, ce qui n'est possible que si les parts ont la même taille (même dénominateur) : 3/8 + 2/8 = 5/8, mais une moitié et un tiers ne font pas « 2 parts ».",
+  "legende_titre": "Compter des parts : quand c'est possible",
+  "lecture": [
+   "En haut, la barre est la pizza coupée en 8 parts égales : 3 parts bleues et 2 parts violettes font 5 parts.",
+   "Le 8 sous le trait reste 8, car toutes les parts sont des huitièmes.",
+   "En bas, la moitié bleue est plus large que le tiers violet : les accolades rouges montrent deux « parts » de tailles différentes."
+  ],
+  "a_voir": "On ne compte ensemble que des parts de même taille."
+ },
+ {
+  "code": "02-085",
+  "a_dire": "Additionner des décimaux, c'est la même addition en colonnes avec la même retenue, à condition d'aligner les virgules pour mettre chaque position sous la même position : 3,47 + 2,85 = 6,32.",
+  "legende_titre": "3,47 + 2,85 en colonnes",
+  "lecture": [
+   "La ligne bleue passe par les trois virgules noires : les centièmes sont sous les centièmes, les dixièmes sous les dixièmes, les unités sous les unités.",
+   "Centièmes : 7 plus 5 font 12 ; vous écrivez le 2 vert et la flèche orange porte 1 dixième en retenue.",
+   "Dixièmes : 4 plus 8 plus 1 font 13 ; vous écrivez 3 et retenez 1 unité. Unités : 3 plus 2 plus 1 font 6.",
+   "La dernière ligne se lit 6,32, avec sa virgule sur la même ligne bleue."
+  ],
+  "a_voir": "Une fois les virgules alignées, la retenue se fait comme avec les entiers."
+ },
+ {
+  "code": "02-086",
+  "a_dire": "Les calculs avec 43, 16 et 27 montrent trois égalités vraies pour ces nombres seulement ; écrites avec des lettres, a + b = b + a, (a + b) + c = a + (b + c) et a + 0 = a affirment qu'elles sont vraies pour n'importe quel nombre de la droite.",
+  "legende_titre": "Trois calculs et trois égalités en lettres",
+  "lecture": [
+   "À gauche, en vert, les trois calculs avec 43, 16 et 27 : ils sont justes pour ces nombres-là.",
+   "À droite, en bleu, les mêmes égalités où les lettres a, b, c remplacent les nombres.",
+   "En bas, les points verts sont les seuls nombres calculés ; la bande bleue couvre toute la droite, c'est ce que désigne une lettre."
+  ],
+  "a_voir": "Les calculs touchent trois points ; les lettres parlent de toute la droite."
+ },
+ {
+  "code": "02-080",
+  "a_dire": "Au chapitre 13, reculer de 4 deviendra ajouter l'opposé de 4, le nombre qui, ajouté à 4, ramène à 0 : le même recul change de nom, et la soustraction n'est plus une opération à part.",
+  "legende_titre": "Le même recul, deux façons de le dire",
+  "lecture": [
+   "En haut, la flèche orange recule de 4, de 9 à 5 : c'est la soustraction de ce chapitre.",
+   "En bas, la flèche orange est la même, mais elle se lit « plus l'opposé de 4 ».",
+   "Le point violet est l'opposé de 4 : ajouté à 4, il ramène à 0 (flèche violette). Il est à gauche de 0, dans la partie en pointillé que ce chapitre n'a pas encore."
+  ],
+  "a_voir": "Rien ne bouge dans le geste : seul son nom change, et la soustraction devient une addition."
+ },
+ {
+  "code": "02-081",
+  "a_dire": "Ce chapitre suit un schéma que le livre répétera : une opération (avancer), son inverse (reculer), les manipulations permises (changer l'ordre), et le cas où l'inverse échoue (4 moins 9), qui force à agrandir les nombres à gauche de 0.",
+  "legende_titre": "Les quatre questions du chapitre",
+  "lecture": [
+   "Rangée 1 : la flèche orange avance de 4 à 13. Rangée 2 : la flèche violette recule de 13 à 4 et défait la rangée 1.",
+   "Rangée 3 : les deux bandes, 4 puis 9 et 9 puis 4, finissent au même trait vert.",
+   "Rangée 4 : depuis 4, le recul de 9 en rouge sort à gauche de 0 ; le pointillé vert montre la partie de la droite à créer."
+  ],
+  "a_voir": "Les quatre rangées sont les quatre questions ; la dernière oblige à prolonger la droite."
+ },
+ {
+  "code": "02-082",
+  "a_dire": "La soustraction n'est pas associative : (10 − 5) − 2 donne 3 et 10 − (5 − 2) donne 7, car les deux chemins se séparent dès le premier pas (reculer de 5 ou reculer de 3).",
+  "legende_titre": "Deux places pour la parenthèse dans 10 − 5 − 2",
+  "lecture": [
+   "En haut, vous partez de 10 (point bleu), reculez de 5 puis de 2 : vous arrivez au point vert 3.",
+   "En bas, la parenthèse fait calculer d'abord 5 − 2 = 3 : vous reculez de 3 en un seul pas et arrivez au point vert 7.",
+   "Les pointillés rouges amènent les deux résultats côte à côte : 3 et 7 ne sont pas égaux."
+  ],
+  "a_voir": "Les deux chemins se séparent dès le premier pas : reculer de 5 ou reculer de 3."
+ }
+]

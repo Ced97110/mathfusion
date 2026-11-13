@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(50)
+box(ax,4,30,16,14,'sujet',label='ℕ',size='l',weight='bold')
+text(ax,13,25,'N, double barre','sujet','s')
+arrow(ax,(20,37),(34,30),'sujet')
+box(ax,34,6,52,40,'sujet',fill=False,lw=1.3,r=2)
+text(ax,60,9.5,'tous les entiers, un objet','sujet','s')
+text(ax,60,40,'0  1  2  3  4  5  6','fixe','m')
+text(ax,60,18,'…  12  …  4 329  …','fixe','m')
+disc(ax,42,28,3.2,'resultat',label='7')
+text(ax,47,28,'7 est dedans','resultat','s',ha='left')
+save(fig,'01-031')

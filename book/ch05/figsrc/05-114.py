@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+y=28
+f=numberline(ax,8,72,y,-8,8,step=1,labels=False,arrow_right=False)
+disc(ax,f(-6),y,4,'limite',label=r'$-6$')
+disc(ax,f(6),y,4,'resultat',label='6')
+text(ax,f(0),y-4,'0','fixe','s')
+text(ax,44,70,r'6 et $-6$ divisent 12 et 18','encre','m')
+box(ax,2,56,40,7,'limite',label=r'$12=(-6)\times(-2)$',size='s')
+box(ax,2,46,40,7,'limite',label=r'$18=(-6)\times(-3)$',size='s')
+box(ax,46,56,40,7,'resultat',label=r'$12=6\times 2$',size='s')
+box(ax,46,46,40,7,'resultat',label=r'$18=6\times 3$',size='s')
+arrow(ax,(f(-6),45.5),(f(-6),32.5),'limite')
+arrow(ax,(f(6),45.5),(f(6),32.5),'resultat')
+text(ax,f(-6),18,r'$-6$ : écarté','limite','m')
+text(ax,f(6),18,'6 : gardé','resultat','m')
+text(ax,44,7,r'$d>0$ : on garde 6','varie','m')
+save(fig,'05-114')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+box(ax,18,56,62.4,8,'sujet',label='52',size='l')
+text(ax,9,60,'avant','fixe','s')
+brace(ax,18,80.4,66,'sujet',label='diminuende : on le diminue',down=False)
+box(ax,18,38,30,8,'resultat',label='25',size='m')
+text(ax,9,42,'après','fixe','s')
+box(ax,48,38,32.4,8,'varie',fill=False,dash=True,label='27 retirés',size='s')
+text(ax,44,30,'même famille : noms de rôles','encre','s')
+box(ax,4,12,38,12,'autre',label='terme : rôle dans a + b',size='s')
+box(ax,46,12,38,12,'sujet',label='diminuende : rôle de m',size='s')
+save(fig,'02-042')

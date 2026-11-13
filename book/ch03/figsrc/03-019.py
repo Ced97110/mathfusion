@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from figstyle import *
+
+fig,ax=canvas(80)
+text(ax,44,75,'avant : nombres inconnus','fixe','s')
+text(ax,16,66,'caisse =','encre','m')
+box(ax,28,62,8,8,'sujet',fill=False,dash=True,label=r'$a$',size='l')
+box(ax,44,62,8,8,'sujet',fill=False,dash=True,label=r'$b$',size='l')
+text(ax,40,66,'×','sujet','l')
+box(ax,26,60.5,28,11,'resultat',fill=False,dash=True)
+text(ax,57,66,'un nombre déjà nommé','resultat','s',ha='left')
+text(ax,44,54,r'$a \times b = b + b + \cdots + b$','sujet','m')
+arrow(ax,(44,49),(44,37),'varie')
+text(ax,47,43,'places : 426, prix : 4','varie','s',ha='left')
+text(ax,30,30,'caisse = 426 × 4','encre','m')
+text(ax,54,30,'= 1 704','resultat','l')
+text(ax,44,22,'après : le calcul','fixe','s')
+save(fig,'03-019')

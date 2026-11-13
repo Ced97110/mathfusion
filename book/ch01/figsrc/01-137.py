@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 18, 40, 44, 'sujet'); box(ax, 45, 18, 40, 44, 'autre')
+text(ax, 20, 45.2, 'n', 'sujet', 'l'); text(ax, 23, 41, '0', 'sujet', 'm')
+text(ax, 62, 45.2, '2', 'autre', 'l'); text(ax, 65, 47.5, '0', 'autre', 'm')
+line(ax, [(5, 42.5), (83, 42.5)], 'fixe', dash=True)
+text(ax, 23, 55, 'en bas : un indice', 'sujet', 's'); arrow(ax, (23, 52.5), (23.5, 43), 'sujet')
+text(ax, 65, 55, 'en haut : une puissance', 'autre', 's'); arrow(ax, (65, 52.5), (65.5, 49.5), 'autre')
+text(ax, 23, 27, r'$n_0$ = 3, choisi', 'resultat', 'm')
+text(ax, 65, 27, r'$2^0$ = 1, calculé', 'resultat', 'm')
+text(ax, 44, 12, 'n : un entier quelconque', 'encre', 's'); text(ax, 44, 6, r'$n_0$ : le rang de départ', 'encre', 's')
+save(fig, '01-137')

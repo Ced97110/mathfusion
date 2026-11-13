@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(90)
+text(ax,44,86,'432 = 396 + 27 + 9','encre','l')
+# découpe reprise du critère de 9 : parties multiples de 9 (gris) + somme des chiffres (bleu)
+box(ax,4,72,30,10,'fixe',label='396 = 4 × 99',size='s')
+box(ax,36,72,22,10,'fixe',label='27 = 3 × 9',size='s')
+box(ax,60,72,24,10,'sujet',label='4 + 3 + 2 = 9',size='s')
+brace(ax,4,58,70,'fixe',label='multiples de 9, donc de 3')
+brace(ax,60,84,70,'sujet',label='somme des chiffres')
+# 99 = 3 × 33 sous 396 ; 9 = 3 × 3 sous la somme des chiffres
+for x in (4,14.5,25): box(ax,x,46,9,8,'varie',label='33',size='s')
+text(ax,19,41,'99 = 3 × 33','varie','m')
+for x in (60,68.5,77):
+    box(ax,x,46,7,8,'varie',fill=False,dash=True)
+    for d in (1.5,3.5,5.5): disc(ax,x+d,50,0.8,'fixe')
+text(ax,72,41,'9 = 3 × 3','varie','m')
+box(ax,4,4,80,30,'resultat')
+text(ax,44,27,'396 = 3 × 132','resultat','s')
+text(ax,44,19,'seule la somme des chiffres décide','resultat','s')
+text(ax,44,10,'432 = 3 × 144','resultat','l',weight='bold')
+save(fig,'03-101')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+s = 5
+def sq(x, y): box(ax, x, y, s, s, 'sujet', r=0.3, lw=0.5)
+text(ax, 44, 62, 'la somme quand n diminue', 'fixe', 's')
+sq(8, 38); sq(13, 38); sq(13, 43)
+text(ax, 13, 32, 'n = 2 : 3', 'sujet', 's')
+sq(36, 38)
+text(ax, 38.5, 32, 'n = 1 : 1', 'sujet', 's')
+box(ax, 60, 36, 16, 18, 'varie', fill=False, dash=True, lw=0.8, r=0.3)
+text(ax, 68, 45, 'aucun carré', 'varie', 's')
+text(ax, 68, 32, 'n = 0 : 0', 'varie', 's')
+box(ax, 4, 16, 36, 9, 'varie', label='somme vide = 0')
+box(ax, 48, 16, 36, 9, 'fixe', label=r'$0\times1/2=0$')
+arrow(ax, (22, 15.5), (35, 10), 'resultat'); arrow(ax, (66, 15.5), (53, 10), 'resultat')
+text(ax, 44, 7, '0 = 0 : vrai', 'resultat', 'l')
+save(fig, '01-126')

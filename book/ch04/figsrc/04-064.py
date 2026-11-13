@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+# colonne gauche : l'exposant, raccourci qui se déplie
+text(ax, 18, 74, 'exposant : raccourci', 'autre', 's')
+box(ax, 10, 58, 16, 10, 'autre', label='3²', size='l')
+arrow(ax, (18, 58), (18, 46), 'autre')
+text(ax, 18, 42, '3 × 3', 'encre', 'l')
+text(ax, 18, 35, 'se déplie', 'autre', 's')
+line(ax, [(36, 30), (36, 78)], 'fixe', dash=True)
+# colonne droite : les parenthèses, un ordre choisi
+text(ax, 62, 74, 'parenthèses : un ordre choisi', 'sujet', 's')
+text(ax, 54, 62, '2 + 3 × 4', 'encre', 'l')
+arrow(ax, (72, 62), (77, 62), 'fixe')
+text(ax, 81, 62, '14', 'fixe', 'l')
+box(ax, 40, 43, 24, 10, 'sujet', label='(2 + 3)', size='l')
+text(ax, 69, 48, '× 4', 'encre', 'l')
+arrow(ax, (72.5, 48), (77, 48), 'fixe')
+text(ax, 81, 48, '20', 'resultat', 'l', weight='bold')
+arrow(ax, (81, 59), (81, 51), 'varie')
+text(ax, 79, 55.5, 'autre choix d’écriture', 'varie', 's', ha='right')
+text(ax, 60, 36, 'celui qui écrit choisit', 'sujet', 's')
+# limite : des parenthèses inutiles
+text(ax, 44, 18, '(3 × 4) = 3 × 4 = 12', 'fixe', 'm')
+text(ax, 44, 10, 'ici le choix ne change rien : 12', 'fixe', 's')
+save(fig, '04-064')

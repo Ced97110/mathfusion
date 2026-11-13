@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,13,62,'dizaines','encre','s'); text(ax,29,62,'unités','encre','s')
+for (x,y,l) in [(6,40,'1'),(22,40,'8'),(6,30,'3'),(22,30,'4')]:
+    box(ax,x,y,14,8,'fixe',label=l)
+line(ax,[(1.8,34),(5.2,34)],'encre',lw=1.2); line(ax,[(3.5,32.3),(3.5,35.7)],'encre',lw=1.2)
+line(ax,[(4,28),(36,28)],'encre')
+text(ax,64,44,'unités : 8 + 4 = 12','sujet','s')
+box(ax,22,18,14,8,'resultat',label='2')
+disc(ax,13,54.5,3,'varie',label='1',size='s')
+arrow(ax,(29,49),(16.2,55.5),'varie',curve=0.3)
+box(ax,6,18,14,8,'resultat',label='5')
+text(ax,64,22,'dizaines : 1 + 3 + 1 = 5','resultat','s')
+text(ax,13,8,'1 dizaine','varie','s'); text(ax,29,8,'2 unités','resultat','s')
+arrow(ax,(13,11.5),(13,17.4),'varie'); arrow(ax,(29,11.5),(29,17.4),'resultat')
+
+line(ax,[(20.4,8),(23.6,8)],'varie',lw=1.0); line(ax,[(22,6.4),(22,9.6)],'varie',lw=1.0)
+line(ax,[(37,7),(41,7)],'sujet',lw=1.0); line(ax,[(37,9),(41,9)],'sujet',lw=1.0)
+text(ax,54,8,'12 unités','sujet','s')
+save(fig,'02-023')

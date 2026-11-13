@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+f=numberline(ax,6,82,48,0,10,1,labels=False,role='fixe')
+for v in (0,4,5,9): text(ax,f(v),44,str(v),'fixe','s')
+disc(ax,f(9),48,1.3,'sujet'); disc(ax,f(5),48,1.3,'resultat')
+arrow(ax,(f(9),51),(f(5),51),'varie',curve=0.3)
+text(ax,59.2,63,'reculer de 4','varie','s')
+arrow(ax,(f(4),51),(3,51),'limite',curve=0.3)
+text(ax,19,58,'de 4, reculer de 9 ?','limite','s')
+brace(ax,f(4),f(9),40,'fixe','écart entre 4 et 9 ?',down=True)
+box(ax,20,10,48,10,'limite',label='52 − 27 en colonnes ?',size='s')
+save(fig,'02-030')

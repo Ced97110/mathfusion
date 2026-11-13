@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(86)
+text(ax,22,80,r'$a=23,\ b=5$','sujet','m')
+for i in range(5):
+    y=71-i*4; role='sujet' if i<4 else 'varie'; n=5 if i<4 else 3
+    box(ax,13,y-1.9,17,3.8,role,r=0.5,dash=(i==4))
+    for j in range(n): disc(ax,15.6+j*3.2,y,1.1,role)
+text(ax,33,65,'4 tas','sujet','s',ha='left'); text(ax,33,55,'reste 3','varie','s',ha='left')
+box(ax,6,43,32,8,'resultat',label=r'$(q,r)=(4,3)$')
+text(ax,66,80,r'$a=-23,\ b=5$','sujet','m')
+f=numberline(ax,52,82,64,-25,-20,labels=False,arrow_right=False)
+disc(ax,f(-25),64,1.4,'fixe'); disc(ax,f(-23),64,1.6,'sujet')
+arrow(ax,(f(-25),65.5),(f(-23),65.5),'varie',curve=-0.5)
+text(ax,f(-24),70,r'$+2$','varie','s')
+text(ax,f(-25),60.5,r'$-25$','fixe','s'); text(ax,f(-23),60.5,r'$-23$','sujet','s')
+text(ax,66,55,r'$-23=5\times(-5)+2$','varie','s')
+box(ax,50,43,32,8,'resultat',label=r'$(q,r)=(-5,2)$')
+text(ax,44,36,'un seul couple à chaque fois','resultat','m')
+box(ax,14,20,60,9,'limite',label=r'$b=0$ : aucun couple')
+save(fig,'05-024')

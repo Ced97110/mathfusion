@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 62, r'$a^k$', 'sujet', 'l')
+text(ax, 50, 62, r'$b^{n-k}$', 'autre', 'l')
+arrow(ax, (22,59), (22,48.5), 'fixe', lw=0.7)
+arrow(ax, (50,59), (50,48.5), 'fixe', lw=0.7)
+box(ax, 16, 28, 12, 10, 'sujet', label=r'$a$', size='l')
+brace(ax, 16, 28, 40, 'sujet', label=r'$k=1$ copie de $a$', down=False)
+for x in (30, 44, 58):
+    box(ax, x, 28, 12, 10, 'autre', label=r'$b$', size='l')
+brace(ax, 30, 70, 40, 'autre', label=r'$n-k=3$ copies de $b$', down=False)
+text(ax, 79, 33, r'$a^1b^3$', 'encre', 'm')
+brace(ax, 16, 70, 26, 'fixe', label=r'$n=4$ facteurs en tout', down=True)
+text(ax, 44, 9, '2 × 27 = 54', 'resultat', 'l', weight='bold')
+save(fig, '01-175')
