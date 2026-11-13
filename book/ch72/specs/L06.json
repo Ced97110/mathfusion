@@ -1,0 +1,181 @@
+[
+ {
+  "code": "72-081",
+  "a_dire": "Le signe x ⟂ y se lit « x orthogonal à y » et veut dire B(x, y) = 0.",
+  "legende_titre": "Lire le signe entre deux flèches",
+  "lecture": [
+   "La flèche bleue est x = (2 ; 1).",
+   "La flèche violette est y = (−1 ; 2).",
+   "Le petit carré vert marque l'angle droit entre elles.",
+   "Le calcul en bas donne 0 : c'est ce que dit le signe."
+  ],
+  "a_voir": "Le signe ⟂ entre x et y dit que le nombre associé à x et y est 0."
+ },
+ {
+  "code": "72-082",
+  "a_dire": "Le signe U⟂ désigne l'ensemble des vecteurs orthogonaux à tous les vecteurs de U.",
+  "legende_titre": "Un seul signe pour toute une droite",
+  "lecture": [
+   "La droite bleue U contient les multiples de (2 ; 1) ; la flèche bleue est (2 ; 1).",
+   "La droite violette U⟂ contient les multiples de (−1 ; 2) ; la flèche violette est (−1 ; 2).",
+   "Chaque légende est écrite au bout de sa droite.",
+   "Le carré vert marque l'angle droit entre les deux droites."
+  ],
+  "a_voir": "U⟂ est tout l'ensemble des vecteurs à angle droit avec tous ceux de U, pas un seul vecteur."
+ },
+ {
+  "code": "72-083",
+  "a_dire": "rad V désigne l'ensemble des vecteurs orthogonaux à tous les vecteurs de V, égal à V⟂.",
+  "legende_titre": "Le signe pour les vecteurs que la mesure ignore",
+  "lecture": [
+   "Le plan gris et les deux flèches bleues sont les deux premiers axes ; avec l'axe vertical, ils forment V, tout l'espace.",
+   "La flèche verte est l'axe du troisième nombre, le vecteur (0 ; 0 ; 1), que la mesure ignore.",
+   "Cette flèche est rad V, écrit aussi V⟂ : les vecteurs orthogonaux à tous ceux de V."
+  ],
+  "a_voir": "Le vecteur (0 ; 0 ; 1) donne 0 avec tout vecteur de V : il est dans rad V."
+ },
+ {
+  "code": "72-084",
+  "a_dire": "U ⊕ W veut dire que tout vecteur x s'écrit d'une seule façon x = u + w, avec u dans U et w dans W.",
+  "legende_titre": "Une seule écriture comme somme",
+  "lecture": [
+   "La droite bleue est U, la droite orange est W.",
+   "Le vecteur vert x = (3 ; 5) est la diagonale du rectangle en pointillés.",
+   "Sa partie bleue est u = (3 ; 0), sa partie orange est w = (0 ; 5)."
+  ],
+  "a_voir": "Le vecteur x se coupe en un morceau sur U et un morceau sur W, et ces deux morceaux sont les seuls possibles."
+ },
+ {
+  "code": "72-085",
+  "a_dire": "U ⟂ W est une somme directe où U est en plus orthogonal à W ; U ⊕ W ne demande pas l'angle droit.",
+  "legende_titre": "Somme directe avec un angle droit",
+  "lecture": [
+   "À gauche, la droite bleue U et la droite violette W font un angle quelconque : c'est U ⊕ W.",
+   "À droite, elles font un angle droit, marqué en vert : c'est U ⟂ W.",
+   "Dans les deux cas, U et W sont des droites qui se coupent."
+  ],
+  "a_voir": "Le signe ⟂ ajoute l'angle droit à la somme directe."
+ },
+ {
+  "code": "72-086",
+  "a_dire": "La lettre η désigne une application qui conserve B ; ηx est l'image du vecteur x.",
+  "legende_titre": "Un nom pour l'application",
+  "lecture": [
+   "La flèche bleue est le vecteur x = (1 ; 0).",
+   "La flèche verte est son image ηx = (5/4 ; 3/4).",
+   "La flèche orange courbe est l'application η.",
+   "La ligne du bas dit que η conserve la mesure."
+  ],
+  "a_voir": "η envoie x sur ηx et garde la valeur de B."
+ },
+ {
+  "code": "72-087",
+  "a_dire": "O(V, B) désigne l'ensemble de toutes les transformations de V sur lui-même qui conservent B.",
+  "legende_titre": "Toutes les transformations qui gardent la mesure",
+  "lecture": [
+   "Le triangle gris est le départ, le triangle bleu est l'arrivée.",
+   "Trois transformations sont dessinées : ne rien faire, le quart de tour, le pli.",
+   "Le cadre en pointillés bleus les réunit : c'est O(V, B)."
+  ],
+  "a_voir": "Le signe nomme l'ensemble qui contient toutes ces transformations."
+ },
+ {
+  "code": "72-088",
+  "a_dire": "O⁺(V, B) désigne les transformations de O(V, B) de déterminant 1, comme le quart de tour ; le pli n'en fait pas partie.",
+  "legende_titre": "Seulement les transformations de déterminant 1",
+  "lecture": [
+   "Le grand cadre gris est O(V, B).",
+   "Le cadre vert en pointillés est O⁺(V, B) : il contient « rien » et le quart de tour, de déterminant 1.",
+   "Le pli, en rouge, est dans le grand cadre mais hors du cadre vert, car son déterminant est −1."
+  ],
+  "a_voir": "O⁺(V, B) est une partie de O(V, B)."
+ },
+ {
+  "code": "72-089",
+  "a_dire": "S_u est la réflexion déterminée par u : elle retourne u en −u et laisse en place les vecteurs de u⟂.",
+  "legende_titre": "Le pli déterminé par un vecteur",
+  "lecture": [
+   "La flèche bleue est u = (0 ; 1).",
+   "La flèche orange vers le bas est son image −u.",
+   "La droite grise horizontale est u⟂ : ses vecteurs ne bougent pas."
+  ],
+  "a_voir": "S_u retourne u et fixe tout ce qui est orthogonal à u."
+ },
+ {
+  "code": "72-090",
+  "a_dire": "F* désigne les éléments de F différents de 0.",
+  "legende_titre": "Tous les nombres sauf zéro",
+  "lecture": [
+   "Les disques bleus sont les nombres non nuls ; les accolades les réunissent sous F*.",
+   "Le cercle rouge est 0, qui n'est pas dans F*.",
+   "Le nombre 2 a un inverse, 1/2, en vert."
+  ],
+  "a_voir": "L'étoile retire 0, par lequel on ne peut pas diviser."
+ },
+ {
+  "code": "72-091",
+  "a_dire": "ν est un nombre entier : la dimension des plus grands sous-espaces où tous les nombres associés à deux vecteurs sont nuls.",
+  "legende_titre": "Le nombre ν dans deux plans",
+  "lecture": [
+   "À gauche, le plan habituel : seul le vecteur nul convient, donc ν = 0.",
+   "À droite, la seconde mesure : la droite bleue de (1 ; 1) convient, donc ν = 1."
+  ],
+  "a_voir": "ν compte la dimension du plus grand ensemble où tout vaut 0."
+ },
+ {
+  "code": "72-092",
+  "a_dire": "Le signe ∼ dit qu'il existe une isométrie entre deux espaces ; il se lit dans les deux sens.",
+  "legende_titre": "Un signe pour « il existe une isométrie »",
+  "lecture": [
+   "Le cadre bleu est le premier espace, le cadre violet est le second.",
+   "La flèche orange à deux pointes est l'isométrie, utilisable dans les deux sens.",
+   "La ligne verte écrit le résultat avec le signe ∼."
+  ],
+  "a_voir": "Le signe ∼ remplace la description de l'application."
+ },
+ {
+  "code": "72-093",
+  "a_dire": "Étape 1 : écrire P = (1, 0) dans la base (u, v) donne P = ½u + v.",
+  "legende_titre": "Ranger le point dans la base",
+  "lecture": [
+   "La flèche bleue est la moitié de u.",
+   "La flèche orange est v, posée au bout de la bleue.",
+   "Elles arrivent au point vert P = (1 ; 0)."
+  ],
+  "a_voir": "Un demi de u, puis v, mène au point P."
+ },
+ {
+  "code": "72-094",
+  "a_dire": "Étape 2 : η double u et divise v par 2, donc ηP = u + ½v.",
+  "legende_titre": "Appliquer η dans la base",
+  "lecture": [
+   "Le chemin gris est l'écriture de P avant η.",
+   "La flèche bleue est u en entier : la moitié de u a été doublée.",
+   "La flèche orange est la moitié de v.",
+   "Le point vert est ηP, écrit dans la base."
+  ],
+  "a_voir": "η change les longueurs des morceaux, pas leur direction."
+ },
+ {
+  "code": "72-095",
+  "a_dire": "Étape 3 : on revient aux coordonnées en additionnant (1, 1) et (1/4, −1/4), ce qui donne (5/4, 3/4).",
+  "legende_titre": "Revenir aux coordonnées",
+  "lecture": [
+   "La flèche bleue est u = (1 ; 1).",
+   "La flèche orange est la moitié de v = (1/4 ; −1/4).",
+   "Le point vert est la somme : (5/4 ; 3/4)."
+  ],
+  "a_voir": "On additionne les deux flèches pour lire les coordonnées de ηP."
+ },
+ {
+  "code": "72-096",
+  "a_dire": "Étape 4 : le carré de P est 1 et celui de ηP est 25/16 − 9/16 = 1 : il est conservé.",
+  "legende_titre": "Vérifier que le carré ne change pas",
+  "lecture": [
+   "La première rangée est le carré de P : 16 cases vertes, donc 1.",
+   "La seconde rangée est le carré de ηP : 25 cases, dont 9 orange ôtées.",
+   "Il reste 16 cases vertes : le résultat est encore 1."
+  ],
+  "a_voir": "Les deux rangées gardent 16 cases vertes."
+ }
+]

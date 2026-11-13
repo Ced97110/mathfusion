@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 3, 18, 30, 24, 'sujet', label=r'$(V_1,B_1)$', size='l')
+box(ax, 55, 18, 30, 24, 'autre', label=r'$(V_2,B_2)$', size='l')
+arrow(ax, (35, 30), (53, 30), 'varie', lw=1.4, both=True)
+text(ax, 44, 35, 'isométrie', 'varie', 's')
+text(ax, 18, 12, r'$(s\ ;\ t)$', 'sujet', 'm')
+text(ax, 70, 12, r'$s\,u+t\,v$', 'autre', 'm')
+text(ax, 44, 4, r'$(V_1,B_1)\ \sim\ (V_2,B_2)$', 'resultat', 'm')
+save(fig, '72-092')

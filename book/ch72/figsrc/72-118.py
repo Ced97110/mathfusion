@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 54, 80, 12, 'sujet', label=r'$U_1$ : dimension 2')
+arrow(ax, (42, 54), (42, 44), 'varie'); text(ax, 46, 49, r'on met $Fu_1$ de côté', 'varie', 's', ha='left')
+box(ax, 2, 30, 40, 12, 'sujet', label=r'$Fu_1$'); box(ax, 42, 30, 40, 12, 'varie', label=r'$W_1$ : dimension 1')
+text(ax, 42, 36, r'$\perp$', 'encre', 'l')
+arrow(ax, (62, 30), (62, 20), 'varie'); text(ax, 58, 25, 'on recommence', 'varie', 's', ha='right')
+box(ax, 2, 6, 40, 12, 'sujet', label=r'$Fu_1$'); box(ax, 42, 6, 40, 12, 'autre', label=r'$Fu_2$')
+text(ax, 50, 2.5, r'$W_2=\{0\}$ : dimension 0', 'resultat', 's')
+save(fig, '72-118')

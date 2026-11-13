@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, r'$x=(2,1)$', 'encre', 'm')
+text(ax, 2, 45, r'ce chapitre : $B(x,x)=5$', 'sujet', 's', ha='left')
+for i in range(5): box(ax, 2 + i*9, 33, 8, 8, 'sujet')
+text(ax, 2, 20, r'Jacobson : $Q(x)=\frac{1}{2}B(x,x)=2{,}5$', 'autre', 's', ha='left')
+for i in range(2): box(ax, 2 + i*9, 8, 8, 8, 'autre')
+box(ax, 20, 8, 4, 8, 'autre')
+arrow(ax, (60, 36), (60, 15), 'varie', lw=1.2); text(ax, 70, 26, 'moitié', 'varie', 's')
+save(fig, '72-029')

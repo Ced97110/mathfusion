@@ -1,0 +1,193 @@
+[
+ {
+  "code": "72-049",
+  "a_dire": "La paire hyperbolique u = (1, 1), v = (0,5 ; −0,5) est prise sur les deux droites rouges, avec des carrés nuls et B(u, v) = 1.",
+  "legende_titre": "Une paire sur deux droites rouges",
+  "lecture": [
+   "La flèche bleue est le vecteur u : elle va au point (1 ; 1) et reste sur la droite rouge y = x.",
+   "La flèche violette est le vecteur v : elle va au point (0,5 ; −0,5) et reste sur la droite rouge y = −x.",
+   "Les deux droites rouges se croisent au départ des flèches.",
+   "En vert : les carrés de u et de v valent 0, et B(u, v) vaut 1."
+  ],
+  "a_voir": "Chaque vecteur est sur une des deux droites rouges."
+ },
+ {
+  "code": "72-050",
+  "a_dire": "Dans la base (u, v), le carré de au + bv vaut 2ab ; avec a = 2 et b = 3, on trouve 12.",
+  "legende_titre": "Le carré de 2u + 3v",
+  "lecture": [
+   "La flèche bleue est 2u : elle va au point (2 ; 2).",
+   "La flèche violette est 3v : elle va au point (1,5 ; −1,5).",
+   "La flèche verte est la somme 2u + 3v : elle va au point (3,5 ; 0,5).",
+   "Les pointillés gris complètent le parallélogramme des deux flèches."
+  ],
+  "a_voir": "Le carré vaut 12, soit 2 fois 2 fois 3 : seul le produit des deux nombres compte."
+ },
+ {
+  "code": "72-051",
+  "a_dire": "Être un plan hyperbolique, avoir une base en paire hyperbolique et avoir un discriminant égal à −1 sont trois conditions équivalentes.",
+  "legende_titre": "Trois conditions, un seul fait",
+  "lecture": [
+   "Les trois cadres, de haut en bas, sont : plan hyperbolique (bleu), base en paire hyperbolique (violet), discriminant égal à −1 (vert).",
+   "Les flèches à deux pointes disent que chaque condition entraîne l'autre.",
+   "En haut à droite, la base (u, v) est dessinée dans le plan.",
+   "À droite, le tableau violet 0, 1, 1, 0 est celui de la mesure dans la base (u, v).",
+   "Le calcul vert 0 fois 0 moins 1 fois 1 donne −1."
+  ],
+  "a_voir": "Si une condition est vraie, les deux autres le sont aussi."
+ },
+ {
+  "code": "72-052",
+  "a_dire": "Sans l'hypothèse « non dégénéré », deux plans qui ont un vecteur de carré nul ne sont pas isométriques.",
+  "legende_titre": "Que se passe-t-il sans cette hypothèse ?",
+  "lecture": [
+   "Le cadre bleu est le plan 1 : les vecteurs (1 ; 0) et (1 ; 1) y donnent B = 1.",
+   "Dans ce plan, seul le vecteur nul est orthogonal à tout vecteur.",
+   "Le cadre rouge est le plan 2 : la flèche rouge est le vecteur (0 ; 1).",
+   "Dans ce plan, ce vecteur est orthogonal à tout vecteur : les deux plans ne sont pas isométriques."
+  ],
+  "a_voir": "Le plan 2 a un vecteur orthogonal à tout, le plan 1 n'en a pas."
+ },
+ {
+  "code": "72-053",
+  "a_dire": "Un plan hyperbolique a exactement deux droites isotropes, Fu et Fv, parce que 2ab = 0 force a = 0 ou b = 0.",
+  "legende_titre": "Deux droites, pas une de plus",
+  "lecture": [
+   "La droite bleue est Fu : ses vecteurs ont b = 0.",
+   "La droite violette est Fv : ses vecteurs ont a = 0.",
+   "Les deux points verts, (3 ; 0) et (0 ; 2), sont sur ces droites : leur carré vaut 0.",
+   "Le point rouge (1 ; 1) est hors des droites : son carré vaut 2."
+  ],
+  "a_voir": "Un carré nul n'arrive que sur l'une des deux droites."
+ },
+ {
+  "code": "72-054",
+  "a_dire": "Une isométrie est une application à la fois linéaire, bijective et qui conserve la mesure ; il faut les trois.",
+  "legende_titre": "Les trois propriétés d'une isométrie",
+  "lecture": [
+   "Les trois colonnes sont : linéaire, bijective, garde B.",
+   "La ligne bleue est l'isométrie : les trois ronds sont verts.",
+   "La ligne orange est l'application (a, b) vers (2a, b) : elle est linéaire et bijective.",
+   "Le rond rouge dit qu'elle ne garde pas la mesure : le carré de (1 ; 0) passe de 1 à 4."
+  ],
+  "a_voir": "Un seul rond rouge suffit pour que ce ne soit plus une isométrie."
+ },
+ {
+  "code": "72-055",
+  "a_dire": "La condition d'isométrie dit que mesurer x et y avec B1 donne le même nombre que mesurer leurs images avec B2.",
+  "legende_titre": "Deux mesures qui doivent être égales",
+  "lecture": [
+   "Le cadre bleu est l'espace V1 : on y prend x = (1 ; 0) et y = (0 ; 1).",
+   "Les flèches orange envoient x et y par η dans le cadre violet, l'espace V2.",
+   "Le cadre bleu du bas donne le nombre B1(x, y), qui vaut 0.",
+   "Le cadre violet du bas donne le nombre B2(ηx, ηy), qui vaut 0 aussi : le signe vert dit qu'ils sont égaux."
+  ],
+  "a_voir": "Les deux nombres du bas sont égaux."
+ },
+ {
+  "code": "72-056",
+  "a_dire": "Une transformation orthogonale est une isométrie de V sur V lui-même, donc on peut l'appliquer plusieurs fois.",
+  "legende_titre": "Arriver dans le même espace",
+  "lecture": [
+   "En haut, η va de V1 (bleu) vers V2 (violet) : la croix rouge dit qu'on ne peut pas l'appliquer une 2e fois.",
+   "En bas, η va de V (vert) sur V.",
+   "Les deux arcs orange montrent η appliquée deux fois de suite, ce qui est permis."
+  ],
+  "a_voir": "Départ et arrivée sont le même espace en bas, et pas en haut."
+ },
+ {
+  "code": "72-057",
+  "a_dire": "Les transformations orthogonales se composent et se défont, et la composée de deux d'entre elles en est encore une : elles forment un groupe.",
+  "legende_titre": "Composer et défaire des tours",
+  "lecture": [
+   "Chaque carré porte un rond orange qui montre sa position : on voit de combien il a tourné.",
+   "La flèche orange du haut va du départ au quart de tour, puis au trois quarts de tour après un demi-tour.",
+   "Le carré vert est le résultat : trois quarts de tour.",
+   "La flèche grise du bas défait le quart de tour."
+  ],
+  "a_voir": "Après chaque enchaînement ou retour, la mesure est conservée."
+ },
+ {
+  "code": "72-058",
+  "a_dire": "Dans la convention de Jacobson, chaque ligne du tableau h contient les coordonnées de l'image d'un vecteur de base.",
+  "legende_titre": "Que contient chaque ligne ?",
+  "lecture": [
+   "Le tableau a deux lignes : la première (5/4, 3/4) en bleu, la seconde (3/4, 5/4) en violet.",
+   "La flèche bleue relie la ligne 1 au vecteur ηe1.",
+   "La flèche violette relie la ligne 2 au vecteur ηe2."
+  ],
+  "a_voir": "Une ligne du tableau est l'image d'un vecteur de base."
+ },
+ {
+  "code": "72-059",
+  "a_dire": "η est orthogonale quand le produit h · b · h transposé redonne le tableau b.",
+  "legende_titre": "Un produit de tableaux qui redonne b",
+  "lecture": [
+   "Le tableau bleu à gauche est h, de lignes (5/4, 3/4) et (3/4, 5/4).",
+   "Le tableau gris est b, celui de la mesure : lignes (1, 0) et (0, −1).",
+   "Le deuxième tableau bleu est la transposée de h, ici égale à h.",
+   "Le tableau vert, après le signe égal, est le résultat : b."
+  ],
+  "a_voir": "Le tableau de départ et le tableau d'arrivée sont les mêmes."
+ },
+ {
+  "code": "72-060",
+  "a_dire": "On peut conclure que det h vaut 1 ou −1 seulement si det b n'est pas nul ; sinon, d'autres valeurs comme 2 conviennent.",
+  "legende_titre": "Quand det h est-il forcé ?",
+  "lecture": [
+   "Dans le cadre vert, det b vaut −1 : l'égalité (det h)² = 1 ne laisse que −1 et 1 sur la droite.",
+   "Dans le cadre rouge, det b vaut 0 : le produit avec 0 donne 0 quelle que soit la valeur de det h.",
+   "Le rond rouge placé en 2 montre une valeur qui est alors possible."
+  ],
+  "a_voir": "Avec det b égal à 0, la valeur 2 est possible."
+ },
+ {
+  "code": "72-061",
+  "a_dire": "Une rotation est une transformation orthogonale de déterminant 1 ; le pli horizontal, de déterminant −1, ne l'est pas.",
+  "legende_titre": "Rotation ou pli : le signe du déterminant",
+  "lecture": [
+   "À gauche, le quart de tour envoie le premier vecteur de base (bleu) en haut et le second (violet) à gauche.",
+   "L'arc vert va du bleu au violet dans le même sens que de départ : le déterminant vaut 1.",
+   "À droite, le pli horizontal envoie le bleu à droite et le violet en bas.",
+   "L'arc rouge va dans l'autre sens : le déterminant vaut −1."
+  ],
+  "a_voir": "Les deux cas se distinguent par le sens de l'arc et le signe du déterminant."
+ },
+ {
+  "code": "72-062",
+  "a_dire": "Une transformation impropre est une transformation orthogonale de déterminant −1 ; la rotation vaut 1 et une application qui ne garde pas la mesure peut valoir 2.",
+  "legende_titre": "Où se place le déterminant −1 ?",
+  "lecture": [
+   "Sur la droite graduée, le rond bleu en −1 est le pli : la transformation impropre.",
+   "Le rond gris en 1 est le quart de tour, une rotation.",
+   "Le rond rouge en 2 est l'application (2a ; b), de déterminant 2, qui ne garde pas la mesure.",
+   "L'accolade englobe −1 et 1 : pour une transformation orthogonale, il n'y a pas d'autre valeur."
+  ],
+  "a_voir": "La transformation impropre est celle de déterminant −1, de l'autre côté de 0 par rapport à la rotation."
+ },
+ {
+  "code": "72-063",
+  "a_dire": "Les rotations (déterminant 1) forment un sous-groupe de O(V, B) d'indice 2 : les autres transformations, de déterminant −1, forment la seconde classe.",
+  "legende_titre": "Deux classes dans le groupe orthogonal",
+  "lecture": [
+   "Le grand cadre pointillé est le groupe O(V, B).",
+   "Le cadre vert contient les rotations, de déterminant 1 : quart de tour et demi-tour.",
+   "Le cadre orange contient les transformations de déterminant −1 : le pli.",
+   "Les flèches disent où l'on arrive : 1 fois 1 reste dans le cadre vert, et −1 fois −1 donne 1, donc on revient au cadre vert."
+  ],
+  "a_voir": "Il y a exactement deux cadres : indice 2."
+ },
+ {
+  "code": "72-064",
+  "a_dire": "Dans le plan hyperbolique, la transformation qui envoie u sur 2u et v sur v/2 garde les carrés nuls et B(u, v) = 1, mais le cas ne prouve pas que toute isométrie est ainsi.",
+  "legende_titre": "Doubler u, diviser v par 2",
+  "lecture": [
+   "À gauche, la flèche bleue est u et la flèche violette est v, avec B(u, v) = 1.",
+   "La flèche orange η les envoie à droite.",
+   "À droite, la flèche bleue est devenue 2u, deux fois plus longue, et la violette est devenue v/2, deux fois plus courte.",
+   "Le calcul vert 2 fois un demi fois 1 donne encore 1.",
+   "En bas, tu lis que c'est un exemple seulement, pas toutes les isométries."
+  ],
+  "a_voir": "Le nombre associé aux deux flèches ne change pas : 1 avant, 1 après ; mais ce n'est qu'un exemple."
+ }
+]

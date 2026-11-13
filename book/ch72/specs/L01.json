@@ -1,0 +1,183 @@
+[
+ {
+  "code": "72-001",
+  "a_dire": "Une rotation est à refaire avec des plis le long de droites passant par la croix.",
+  "legende_titre": "Le problème du quart de tour",
+  "lecture": [
+   "Le point bleu est celui de la feuille, à 2 à droite et 1 au-dessus de la croix.",
+   "Le cercle vert est la place voulue après le quart de tour.",
+   "La droite orange pointillée est un pli : elle passe par la croix."
+  ],
+  "a_voir": "Tu vois ce qu'on veut obtenir (le quart de tour) et ce qu'on a le droit de faire (plier le long d'une droite par la croix)."
+ },
+ {
+  "code": "72-002",
+  "a_dire": "Un pli envoie un point sur son symétrique par rapport à la droite du pli.",
+  "legende_titre": "Un pli envoie un point de l'autre côté",
+  "lecture": [
+   "La droite orange est le pli.",
+   "Le point bleu est P en (2, 1).",
+   "Le point vert est son symétrique en (2, −1).",
+   "Les deux petits traits gris montrent des distances égales de part et d'autre de l'axe."
+  ],
+  "a_voir": "Les deux points sont à la même distance de l'axe, de chaque côté."
+ },
+ {
+  "code": "72-003",
+  "a_dire": "On cherche si le quart de tour s'obtient avec des plis seulement, et combien il en faut.",
+  "legende_titre": "Deux questions sur le quart de tour",
+  "lecture": [
+   "À gauche, la flèche verte montre le quart de tour à obtenir.",
+   "À droite, les deux cadres orange sont les deux questions.",
+   "Les trois cadres en pointillés sont des plis dont on cherche le nombre."
+  ],
+  "a_voir": "Le quart de tour est le résultat à fabriquer ; on demande si c'est possible et avec combien de plis."
+ },
+ {
+  "code": "72-004",
+  "a_dire": "Deux plis envoient (2, 1) sur (2, −1) puis sur (−1, 2).",
+  "legende_titre": "Deux plis suffisent pour ce point",
+  "lecture": [
+   "La droite orange est le premier pli, la droite violette est le second pli (y = x).",
+   "Le point bleu part de (2, 1), passe au point orange (2, −1), puis arrive au point vert (−1, 2)."
+  ],
+  "a_voir": "Tu suis le point par ses deux plis jusqu'à la place du quart de tour."
+ },
+ {
+  "code": "72-005",
+  "a_dire": "En dimension 3, un pli devient une symétrie par rapport à un plan ; on demande combien il en faut au plus.",
+  "legende_titre": "Du pli au plan, dans l'espace",
+  "lecture": [
+   "Le plan orange est le plan du pli.",
+   "Le cube bleu est l'objet.",
+   "Le cube vert est son symétrique, de l'autre côté du plan.",
+   "La flèche orange relie les deux, à la même distance du plan.",
+   "En bas, la question : combien de plans au plus ? La case reste vide."
+  ],
+  "a_voir": "Un plan joue le rôle du pli, et la question est de savoir combien de plans il faut au plus."
+ },
+ {
+  "code": "72-006",
+  "a_dire": "En dimension n, au plus n plis ; dans le plan, un seul pli ne suffit pas.",
+  "legende_titre": "Un pli ne remplace pas le quart de tour",
+  "lecture": [
+   "À gauche, un pli laisse en place tous les points de sa droite (points verts).",
+   "À droite, le quart de tour déplace le point (1, 0) vers (0, 1) ; seul le point (0, 0), la croix, reste en place.",
+   "En bas à gauche, en dimension 2, un seul pli ne suffit pas.",
+   "En bas à droite, en dimension n, n plis au plus."
+  ],
+  "a_voir": "Un pli laisse une droite en place, le quart de tour seulement la croix : un seul pli ne suffit pas en dimension 2, et n plis suffisent en dimension n."
+ },
+ {
+  "code": "72-007",
+  "a_dire": "La grandeur qui ne dépend pas de l'observateur est x² − t², pas x² + t².",
+  "legende_titre": "La bonne grandeur est une différence",
+  "lecture": [
+   "Le point bleu est l'événement (3, 3).",
+   "Le cadre rouge donne la somme des carrés, 18, qui ne convient pas.",
+   "Le cadre vert donne la différence des carrés, 0, qui est la grandeur invariante."
+  ],
+  "a_voir": "Pour (3, 3), la somme vaut 18 et la différence vaut 0 ; la différence est celle qui est invariante."
+ },
+ {
+  "code": "72-008",
+  "a_dire": "Un signal lumineux est un vecteur non nul dont x² − t² vaut 0.",
+  "legende_titre": "Un vecteur non nul de carré nul",
+  "lecture": [
+   "La flèche orange est le signal.",
+   "Les points bleus sont (3, 3) et (5, 5).",
+   "Les calculs verts montrent que 9 − 9 et 25 − 25 valent 0."
+  ],
+  "a_voir": "Les points du signal ne sont pas l'origine, et pourtant leur grandeur vaut 0."
+ },
+ {
+  "code": "72-009",
+  "a_dire": "Une forme bilinéaire B donne un nombre à deux flèches ; il permet de parler d'angle droit sans dessin.",
+  "legende_titre": "Un seul nombre pour mesurer",
+  "lecture": [
+   "La flèche bleue va en (1, 2), la flèche violette va en (3, 4).",
+   "Le calcul 1×3 + 2×4 donne le nombre vert 11.",
+   "Ce nombre n'est pas 0, donc pas d'angle droit."
+  ],
+  "a_voir": "Tu vois un nombre associé à deux flèches, et que 0 voudrait dire angle droit."
+ },
+ {
+  "code": "72-010",
+  "a_dire": "y se découpe en une part p le long de x et une part q sur la droite perpendiculaire à x.",
+  "legende_titre": "Découper y selon x",
+  "lecture": [
+   "La flèche bleue est x, la violette est y.",
+   "La flèche verte p est sur la droite de x.",
+   "La flèche orange q est sur la droite perpendiculaire.",
+   "Le petit carré rouge marque l'angle droit."
+  ],
+  "a_voir": "Les deux pointillés montrent que y est la somme de p et de q."
+ },
+ {
+  "code": "72-011",
+  "a_dire": "Tout vecteur se découpe en une part le long de x et une part perpendiculaire : y = p + q.",
+  "legende_titre": "y est la somme de ses deux parts",
+  "lecture": [
+   "La flèche verte p suit la droite de x.",
+   "La flèche orange q part du bout de p.",
+   "La flèche violette y va de l'origine au bout de q.",
+   "En bas, les nombres : (1, 2) = (1,6 ; 0,8) + (−0,6 ; 1,2)."
+  ],
+  "a_voir": "En mettant p puis q bout à bout, tu arrives au bout de y."
+ },
+ {
+  "code": "72-012",
+  "a_dire": "x⟂ est la droite de tous les vecteurs orthogonaux à x, passant par 0.",
+  "legende_titre": "La droite orthogonale à x",
+  "lecture": [
+   "La flèche bleue est x en (2, 1).",
+   "La droite orange pointillée est x⟂.",
+   "La flèche verte (−1, 2) est sur cette droite.",
+   "Le calcul vert vaut 0."
+  ],
+  "a_voir": "x⟂ désigne toute une droite par l'origine, pas un seul vecteur."
+ },
+ {
+  "code": "72-013",
+  "a_dire": "La part le long de x est p = B(y,x)/B(x,x) · x, calculée en quatre actions.",
+  "legende_titre": "Les quatre actions du calcul de p",
+  "lecture": [
+   "Les deux cadres bleus donnent 4 et 5.",
+   "Le cadre orange divise 4 par 5.",
+   "La barre du bas a 5 cases égales dont 4 vertes : p est 4 parts sur 5 de x."
+  ],
+  "a_voir": "Tu vois le quotient 4/5 puis la part de x qu'il donne."
+ },
+ {
+  "code": "72-014",
+  "a_dire": "p = (4/5)(2, 1), q = y − p, et le contrôle B(q,x) = 0.",
+  "legende_titre": "Retirer p à y, puis contrôler",
+  "lecture": [
+   "Les quatre cadres se lisent de haut en bas : le départ y, puis p, puis q, puis le contrôle qui vaut 0.",
+   "À droite, x est bleue, y violette, p verte et q orange.",
+   "La flèche orange q va du bout de p au bout de y, et le petit angle droit la montre perpendiculaire à x."
+  ],
+  "a_voir": "Le reste q est perpendiculaire à x, car le contrôle donne 0."
+ },
+ {
+  "code": "72-015",
+  "a_dire": "B(x,x) = 5 est le carré de la longueur de x, par le théorème de Pythagore.",
+  "legende_titre": "Le carré de la longueur de x",
+  "lecture": [
+   "Le grand carré bleu est construit sur la flèche x.",
+   "Les deux carrés orange sont construits sur les côtés 2 et 1 du triangle.",
+   "Leurs nombres, 4 et 1, ont pour somme 5."
+  ],
+  "a_voir": "L'aire du carré de x vaut 4 + 1, soit 5."
+ },
+ {
+  "code": "72-016",
+  "a_dire": "Le calcul de p divise par B(x,x) et marche parce que B(x,x) n'est pas 0.",
+  "legende_titre": "Diviser demande un nombre non nul",
+  "lecture": [
+   "À gauche, la flèche bleue (2, 1) donne B(x,x) = 5 : la division est possible.",
+   "À droite, le point rouge (0, 0) donne 0 : la division est impossible."
+  ],
+  "a_voir": "La division par B(x,x) n'est possible que si ce nombre n'est pas 0."
+ }
+]

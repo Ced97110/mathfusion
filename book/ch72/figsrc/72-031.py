@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+ox, oy, u = 52, 26, 4.5
+P = lambda x, y: (ox + x*u, oy + y*u)
+arrow(ax, P(-6, 0), P(5, 0), 'fixe', lw=0.5); arrow(ax, P(0, -5), P(0, 11), 'fixe', lw=0.5)
+line(ax, [P(2.5, -5), P(-5.4, 10.8)], 'resultat', lw=1.4)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.8)
+poly(ax, [P(0, 0), P(0.4*0.894, 0.4*0.447), P(0.4*0.894 - 0.4*0.447, 0.4*0.447 + 0.4*0.894), P(-0.4*0.447, 0.4*0.894)], 'fixe')
+for p, r in [((-1, 2), 'autre'), ((-2, 4), 'autre'), ((-5, 10), 'varie')]: disc(ax, *P(*p), 1.1, r)
+text(ax, *P(3.6, 1.0), r'$U=(2,1)$', 'sujet', 's')
+text(ax, *P(1.4, -3.8), r'$U^{\perp}$', 'resultat', 'm')
+text(ax, *P(-2.9, 1.4), '(−1, 2)', 'autre', 's')
+text(ax, *P(-4.3, 3.9), '(−2, 4)', 'autre', 's')
+text(ax, *P(-3.6, 9.7), '(−5, 10)', 'varie', 's')
+text(ax, 72, 70, r'$3\times(-1,2)$', 'varie', 's'); text(ax, 72, 63, r'$+(-2,4)$', 'varie', 's')
+text(ax, 72, 55, 'reste sur la droite', 'resultat', 's')
+save(fig, '72-031')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 56, 26, 12, 'fixe', label=r'vecteurs $V$', size='s'); text(ax, 31.5, 62, '+', 'encre', 'l')
+box(ax, 35, 56, 18, 12, 'autre', label=r'règle $B$', size='s'); text(ax, 56.5, 62, '=', 'encre', 'l')
+box(ax, 60, 56, 26, 12, 'sujet', label=r'$(V,B)$', size='m')
+ox, oy, u = 24, 24, 8
+P = lambda x, y: (ox + x*u, oy + y*u)
+arrow(ax, P(-2.6, 0), P(2.0, 0), 'fixe', lw=0.6); arrow(ax, P(0, -1.5), P(0, 2.9), 'fixe', lw=0.6)
+arrow(ax, P(0, 0), P(1, 2), 'sujet', lw=1.5); arrow(ax, P(0, 0), P(-2, 1), 'autre', lw=1.5)
+poly(ax, [P(0, 0), P(0.35*0.447, 0.35*0.894), P(0.35*0.447 + 0.35*-0.894, 0.35*0.894 + 0.35*0.447), P(-0.35*0.894, 0.35*0.447)], 'resultat')
+text(ax, *P(1.3, 2.3), '(1, 2)', 'sujet', 's'); text(ax, *P(-1.9, 1.75), '(−2, 1)', 'autre', 's')
+text(ax, 66, 38, r'$1\times(-2)+2\times1=0$', 'encre', 's')
+text(ax, 66, 30, 'angle droit', 'resultat', 'm')
+arrow(ax, (66, 34.5), (66, 33), 'resultat', lw=0.8)
+save(fig, '72-028')

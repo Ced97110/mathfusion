@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+O = (16, 8)
+arrow(ax, (6, 8), (52, 8), 'fixe', lw=0.9); arrow(ax, (16, 2), (16, 52), 'fixe', lw=0.9)
+line(ax, [(6, -2), (46, 38)], 'fixe', dash=True)
+arrow(ax, O, (26, 8), 'sujet', lw=1.6); arrow(ax, O, (16, 18), 'autre', lw=1.6)
+arrow(ax, (26, 8), (16, 18), 'varie', curve=-0.4, lw=1.2)
+arrow(ax, O, (36, 18), 'fixe', lw=1.1); arrow(ax, O, (26, 28), 'resultat', lw=1.1)
+text(ax, 47, 12, r'$U_1$', 'sujet', 's'); text(ax, 11, 48, r'$U_2$', 'autre', 's')
+text(ax, 40, 21, r'$v$', 'fixe', 's'); text(ax, 22, 30, r'$S(v)$', 'resultat', 's')
+text(ax, 71, 36, 'isométrie', 'varie', 's'); text(ax, 71, 32, r'$U_1\to U_2$', 'varie', 's')
+text(ax, 71, 20, 'prolongée à $V$ :', 'resultat', 's'); text(ax, 71, 16, 'échange 1 et 3', 'resultat', 's')
+save(fig, '72-119')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+c, cy = 24, 36
+arrow(ax, (c - 18, cy), (c + 18, cy), 'fixe', lw=0.7); arrow(ax, (c, cy - 18), (c, cy + 18), 'fixe', lw=0.7)
+line(ax, [(c - 14, cy - 14), (c + 14, cy + 14)], 'resultat', lw=1.4, dash=True)
+arrow(ax, (c, cy), (c + 10, cy + 10), 'resultat', lw=1.6)
+text(ax, c + 20, cy - 3, r'$x$', 'fixe', 's'); text(ax, c + 3, cy + 20, r'$y$', 'fixe', 's')
+text(ax, c - 2, cy + 21, '', 'fixe', 's')
+text(ax, c - 3, cy + 8, r'$(1,1)$', 'resultat', 's', ha='right')
+text(ax, c, 11, 'carré nul', 'resultat', 's')
+text(ax, 24, 62, r'$x^2-y^2$', 'encre', 'm')
+text(ax, 66, 62, 'carrés du plan', 'encre', 's')
+box(ax, 48, 44, 14, 9, 'sujet', label=r'$p=1$'); box(ax, 68, 44, 14, 9, 'varie', label=r'$q=1$')
+arrow(ax, (55, 43), (58, 36), 'fixe'); arrow(ax, (75, 43), (72, 36), 'fixe')
+box(ax, 48, 26, 34, 9, 'resultat', label='plan hyperbolique', size='s')
+text(ax, 65, 16, r'$\nu=\min(1,1)=1$', 'resultat', 'm')
+save(fig, '72-154')

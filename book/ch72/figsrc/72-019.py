@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ox, oy, u = 26, 33, 5
+P = lambda x, y: (ox + x*u, oy + y*u)
+arrow(ax, P(-4.8, 0), P(4.8, 0), 'fixe', lw=0.6); arrow(ax, P(0, -4.8), P(0, 4.8), 'fixe', lw=0.6)
+line(ax, [P(-4.6, -4.6), P(4.6, 4.6)], 'limite', lw=1.2); line(ax, [P(-4.6, 4.6), P(4.6, -4.6)], 'limite', lw=1.2)
+disc(ax, *P(3, 3), 1.1, 'sujet'); disc(ax, *P(4, -4), 1.1, 'sujet')
+text(ax, *P(1.6, 3.9), '(3, 3)', 'sujet', 's')
+text(ax, *P(1.9, -4.4), '(4, −4)', 'sujet', 's')
+text(ax, *P(-3.2, 4.5), r'$y=-x$', 'limite', 's')
+text(ax, *P(-3.2, -4.5), r'$y=x$', 'limite', 's')
+text(ax, 71, 57, r'$x^2-y^2=(x-y)(x+y)$', 'sujet', 's')
+text(ax, 71, 49, 'un produit est nul :', 'fixe', 's')
+text(ax, 71, 43, 'un facteur est nul', 'fixe', 's')
+box(ax, 57, 26, 28, 9, 'limite', label=r'$x-y=0$', size='s'); text(ax, 71, 20, r'$y=x$', 'limite', 's')
+box(ax, 57, 7, 28, 9, 'limite', label=r'$x+y=0$', size='s'); text(ax, 71, 1.5, r'$y=-x$', 'limite', 's')
+arrow(ax, (71, 41), (71, 36.5), 'varie', lw=0.8)
+save(fig, '72-019')

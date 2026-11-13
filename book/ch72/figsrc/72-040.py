@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+u, o = 14, (44, 34)
+P3 = lambda a, b, c: iso(a, b, c, o, u)
+poly(ax, [P3(-1.4, -1.4, 0), P3(1.4, -1.4, 0), P3(1.4, 1.4, 0), P3(-1.4, 1.4, 0)], 'sujet')
+arrow(ax, P3(0, 0, 0), P3(1.1, -1.1, 0)[:1] and P3(1.2, -0.0, 0), 'sujet', lw=1.2)
+arrow(ax, P3(0, 0, 0), P3(0, 1.2, 0), 'sujet', lw=1.2)
+arrow(ax, P3(0, 0, 0), P3(0, 0, 2.6), 'autre', lw=1.6)
+text(ax, 18, 58, r'$U$ : dim 2', 'sujet', 'm')
+text(ax, 64, 70, r'$U^\perp$ : dim 1', 'autre', 'm')
+text(ax, 44, 7, r'$2 + 1 = 3 = n$', 'resultat', 'l')
+save(fig, '72-040')

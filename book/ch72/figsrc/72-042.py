@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+cx, cy, s = 40, 14, 20
+X = lambda a, b: (cx + a * s, cy + b * s)
+line(ax, [X(-0.7, -0.35), X(2.2, 1.1)], 'sujet', lw=1.4)
+text(ax, X(2.2, 1.1)[0] - 2, X(2.2, 1.1)[1] + 4, r'$U = Fx$', 'sujet', 'm')
+arrow(ax, X(0, 0), X(1, 2), 'varie', lw=1.6)
+arrow(ax, X(0, 0), X(1.6, 0.8), 'sujet', lw=1.2)
+arrow(ax, X(1.6, 0.8), X(1, 2), 'autre', lw=1.2)
+arrow(ax, X(0, 0), X(-0.6, 1.2), 'autre', lw=1.2)
+text(ax, X(1, 2)[0] + 8, X(1, 2)[1], r'$y = (1\,;\,2)$', 'varie', 'm') if False else text(ax, X(1, 2)[0] + 11, X(1, 2)[1] - 1, r'$y$ = (1 ; 2)', 'varie', 'm')
+text(ax, X(1.6, 0.8)[0] + 1, X(1.6, 0.8)[1] - 6, r'(1,6 ; 0,8) $\in U$', 'sujet', 's', ha='center')
+text(ax, X(-0.6, 1.2)[0] - 2, X(-0.6, 1.2)[1] + 5, r'$\in U^\perp$', 'autre', 's')
+text(ax, 44, 5, 'une seule façon de couper', 'resultat', 'm')
+save(fig, '72-042')

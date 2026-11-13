@@ -1,0 +1,174 @@
+[
+ {
+  "code": "72-145",
+  "a_dire": "Une rotation de l'espace à 3 dimensions est un produit de 0 ou de 2 réflexions, car ce nombre est pair et au plus 3.",
+  "legende_titre": "Combien de réflexions pour une rotation ?",
+  "lecture": [
+   "En haut, tu lis qu'il s'agit d'une rotation de l'espace à 3 dimensions, avec au plus 3 réflexions.",
+   "Sur la droite, chaque disque est un nombre possible de réflexions : 0, 1, 2 ou 3.",
+   "Les disques verts (0 et 2) sont les nombres pairs.",
+   "Les disques rouges (1 et 3) sont les nombres impairs : une rotation ne les prend pas."
+  ],
+  "a_voir": "Seuls 0 et 2 sont pairs et au plus 3."
+ },
+ {
+  "code": "72-146",
+  "a_dire": "Deux plans qui passent par l'origine, dans l'espace, se coupent selon une droite : c'est l'axe de la rotation.",
+  "legende_titre": "Deux plans, une droite commune",
+  "lecture": [
+   "Le plan bleu est horizontal et le plan violet est vertical ; tous deux passent par l'origine 0.",
+   "Le trait vert épais est la droite où les deux plans se coupent.",
+   "Cette droite est l'axe de la rotation."
+  ],
+  "a_voir": "Les deux plans partagent toute une droite, pas seulement l'origine."
+ },
+ {
+  "code": "72-147",
+  "a_dire": "Après n'importe quelle suite de rotations d'une sphère, deux points opposés sont revenus à leur place.",
+  "legende_titre": "Une sphère qui a tourné",
+  "lecture": [
+   "La sphère bleue tourne autour de son centre.",
+   "Le trait vert relie les deux points opposés (1, −1, 1) et (−1, 1, −1), qui restent en place.",
+   "L'ovale orange en pointillés est le tour autour de cet axe."
+  ],
+  "a_voir": "Les deux extrémités du trait vert reviennent à leur place."
+ },
+ {
+  "code": "72-148",
+  "a_dire": "Une rotation en dimension impaire, ou une transformation impropre en dimension paire, laisse en place au moins une direction.",
+  "legende_titre": "Les directions qui restent fixes",
+  "lecture": [
+   "Chaque case est une direction de l'espace.",
+   "Les cases orange sont celles qui changent : k réflexions.",
+   "Les cases vertes sont les directions laissées en place : n − k, au moins 1."
+  ],
+  "a_voir": "Il reste toujours au moins une case verte."
+ },
+ {
+  "code": "72-149",
+  "a_dire": "Le groupe orthogonal est, comme le groupe du carré, l'ensemble des transformations qui conservent une structure.",
+  "legende_titre": "Deux groupes du même genre",
+  "lecture": [
+   "À gauche, le disque bleu représente O(V, B) : ses transformations conservent la mesure B.",
+   "À droite, le carré violet est le carré : ses 8 symétries conservent sa forme.",
+   "Dans chaque cas, la flèche orange est une rotation et le pointillé orange est un pli."
+  ],
+  "a_voir": "Les deux objets sont des groupes de transformations qui conservent une structure."
+ },
+ {
+  "code": "72-150",
+  "a_dire": "Les réflexions suffisent pour obtenir tout le groupe : chaque élément est un produit de réflexions.",
+  "legende_titre": "Des plis qui engendrent tout le groupe",
+  "lecture": [
+   "La rangée du haut montre les 4 plis du carré, en bleu.",
+   "La rangée du bas montre les 4 rotations obtenues en composant deux plis : 0, 1, 2 ou 3 quarts de tour.",
+   "Le point orange suit un coin du carré pour montrer la rotation."
+  ],
+  "a_voir": "4 plis donnent 4 rotations, soit les 8 symétries."
+ },
+ {
+  "code": "72-151",
+  "a_dire": "Un commutateur a toujours pour déterminant 1, donc il est dans O⁺(V, B).",
+  "legende_titre": "Le déterminant d'un commutateur",
+  "lecture": [
+   "Les quatre cases sont les quatre actions : a, b, l'inverse de a, l'inverse de b.",
+   "Sous chaque case, le déterminant vaut 1 ou −1.",
+   "Une transformation et son inverse ont le même déterminant, donc leur produit vaut 1.",
+   "La case verte donne le résultat : déterminant 1."
+  ],
+  "a_voir": "Les déterminants se compensent deux à deux."
+ },
+ {
+  "code": "72-152",
+  "a_dire": "Le commutateur de deux réflexions est (S_u S_v) répété deux fois, et il suffit de travailler sur ces produits.",
+  "legende_titre": "Deux plis répétés",
+  "lecture": [
+   "À gauche, la droite bleue est le pli S_u et la droite violette est le pli S_v ; elles font 45°.",
+   "Au milieu, S_u S_v est un quart de tour : le point orange s'est déplacé d'un quart de cercle.",
+   "À droite, répété deux fois, on obtient un demi-tour : le point vert est à l'opposé."
+  ],
+  "a_voir": "Deux plis donnent un quart de tour, répété ils donnent un demi-tour."
+ },
+ {
+  "code": "72-153",
+  "a_dire": "Une transformation orthogonale η change la réflexion S_u en la réflexion S_ηu.",
+  "legende_titre": "Conjuguer un pli",
+  "lecture": [
+   "À gauche, la flèche bleue u est le vecteur (1, 0) et le pointillé bleu est son pli S_u.",
+   "La flèche orange du haut est le quart de tour η.",
+   "À droite, la flèche violette ηu est (0, 1) et le pointillé violet est son pli S_ηu.",
+   "La ligne verte écrit la relation."
+  ],
+  "a_voir": "Le quart de tour envoie le pli de u sur le pli de ηu."
+ },
+ {
+  "code": "72-154",
+  "a_dire": "Sur ℝ, l'indice de Witt est le plus petit des nombres p et q : on forme un plan hyperbolique avec un carré positif et un carré négatif.",
+  "legende_titre": "L'indice de Witt sur les réels",
+  "lecture": [
+   "À gauche, le plan de la forme x² − y² : le trait vert pointillé porte le vecteur (1, 1), de carré nul.",
+   "En haut à droite, la case bleue est le carré positif (p = 1) et la case orange est le carré négatif (q = 1).",
+   "Les flèches les réunissent dans la case verte : un plan hyperbolique.",
+   "Le résultat est ν = min(1, 1) = 1."
+  ],
+  "a_voir": "Chaque plan hyperbolique utilise un carré de chaque signe."
+ },
+ {
+  "code": "72-155",
+  "a_dire": "Dans le corps à 3 éléments, en dimension 2, la somme de deux carrés ne donne 0 que pour le vecteur nul : le résultat est faux en dimension 2.",
+  "legende_titre": "Un cas sans vecteur isotrope",
+  "lecture": [
+   "Les carrés possibles sont 0 et 1 : ils sont en haut et à gauche du tableau.",
+   "Chaque case donne la somme des deux carrés.",
+   "La case grise vaut 0 : c'est 0 + 0, le vecteur nul.",
+   "Les cases rouges valent 1 ou 2, jamais 0."
+  ],
+  "a_voir": "Aucune autre case que la grise ne donne 0."
+ },
+ {
+  "code": "72-156",
+  "a_dire": "Avec une forme alternée, tout vecteur a pour valeur 0 avec lui-même ; deux vecteurs distincts peuvent donner 1.",
+  "legende_titre": "Une forme qui s'annule sur chaque vecteur",
+  "lecture": [
+   "La flèche bleue est le vecteur (1, 0) et la flèche violette est le vecteur (0, 1).",
+   "Les deux cases grises montrent que chacun donne 0 avec lui-même.",
+   "La case verte montre que (1, 0) avec (0, 1) donne 1."
+  ],
+  "a_voir": "Chaque vecteur donne 0 avec lui-même."
+ },
+ {
+  "code": "72-157",
+  "a_dire": "Pour les nombres complexes, on remplace le carré d'un nombre par son produit avec son conjugué, qui est un réel positif.",
+  "legende_titre": "Le conjugué joue le rôle du carré",
+  "lecture": [
+   "Le point bleu est le nombre 3 + 4i, au-dessus de l'axe réel.",
+   "Le point violet est son conjugué 3 − 4i, au même endroit en dessous.",
+   "Dans la case verte, leur produit vaut 25, un réel positif."
+  ],
+  "a_voir": "Le produit avec le conjugué est un réel positif, comme un carré."
+ },
+ {
+  "code": "72-158",
+  "a_dire": "Les longueurs et angles droits, les droites y = mx et la somme de carrés viennent d'une seule règle B.",
+  "legende_titre": "Trois chapitres, une seule règle",
+  "lecture": [
+   "Le dessin bleu du chapitre 11 montre un angle droit.",
+   "Le trait orange du chapitre 19 est une droite y = mx.",
+   "Le triangle violet du chapitre 22 porte 9 + 16 = 25.",
+   "Les flèches mènent à la case verte : la règle B."
+  ],
+  "a_voir": "Les trois dessins mènent à la même règle B."
+ },
+ {
+  "code": "72-159",
+  "a_dire": "Un quart de tour s'obtient avec une infinité de paires de plis : L₁ au choix, L₂ à 45° de L₁.",
+  "legende_titre": "Beaucoup de paires pour un quart de tour",
+  "lecture": [
+   "Dans chaque dessin du haut, la droite bleue est L₁ et la droite violette est L₂.",
+   "L'arc orange marque l'angle de 45° de L₁ vers L₂.",
+   "L₁ est différente dans chaque dessin ; L₂ est toujours à 45° de L₁.",
+   "Sous chaque dessin, la même flèche orange montre le même quart de tour."
+  ],
+  "a_voir": "L₁ change d'un dessin à l'autre, l'angle reste 45° et le quart de tour est le même : il y a une infinité de paires."
+ }
+]

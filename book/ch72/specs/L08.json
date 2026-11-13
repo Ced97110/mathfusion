@@ -1,0 +1,195 @@
+[
+ {
+  "code": "72-113",
+  "a_dire": "Si les deux sous-espaces ne sont pas isométriques, leurs orthogonaux peuvent ne pas l'être non plus : le théorème a besoin de l'hypothèse.",
+  "legende_titre": "Sans l'hypothèse, la conclusion tombe",
+  "lecture": [
+   "La droite bleue (axe horizontal) est U₁ ; son carré vaut 1.",
+   "La droite violette (axe vertical) est U₂ ; son carré vaut −1.",
+   "En haut à droite, les carrés 1 et −1 diffèrent : U₁ et U₂ ne sont pas isométriques.",
+   "Les deux cadres du bas donnent les orthogonaux : U₁⟂ a pour carré −1 et U₂⟂ a pour carré 1.",
+   "Leurs carrés diffèrent aussi : la conclusion tombe quand l'hypothèse manque."
+  ],
+  "a_voir": "Sans l'hypothèse d'isométrie, les orthogonaux ne sont pas isométriques non plus."
+ },
+ {
+  "code": "72-114",
+  "a_dire": "Le théorème de Witt est la règle de simplification des nombres, appliquée aux espaces : on retire la même pièce des deux côtés.",
+  "legende_titre": "La même règle, pour les nombres et les espaces",
+  "lecture": [
+   "Ligne du haut : 3 (gris) est la pièce commune, a (bleu) et b (violet) sont les restes.",
+   "Quand on retire 3 des deux côtés, il reste a = b (vert).",
+   "Ligne du bas : U₁ et U₂ (gris) sont les pièces isométriques, X₁ et X₂ les restes.",
+   "Quand on retire ces pièces, il reste X₁ ∼ X₂ (vert)."
+  ],
+  "a_voir": "Les deux lignes ont la même forme : pièce commune, reste, égalité."
+ },
+ {
+  "code": "72-115",
+  "a_dire": "Avec d = u₁ − u₂, la réflexion S_d envoie u₁ sur u₂ parce que les carrés de u₁ et u₂ sont égaux.",
+  "legende_titre": "Une réflexion qui amène u₁ sur u₂",
+  "lecture": [
+   "La flèche bleue est u₁ et la flèche violette est u₂.",
+   "La flèche orange est d = u₁ − u₂.",
+   "Le trait gris en pointillés est le miroir de la réflexion S_d.",
+   "L'égalité des carrés donne le coefficient 1, donc S_d(u₁) = u₂ (case verte)."
+  ],
+  "a_voir": "Le miroir est perpendiculaire à d et échange les deux bouts de d."
+ },
+ {
+  "code": "72-116",
+  "a_dire": "Quand d a un carré nul, on prend s = u₁ + u₂, de carré non nul : la réflexion S_s envoie u₁ sur −u₂.",
+  "legende_titre": "Quand la différence ne marche pas",
+  "lecture": [
+   "Le schéma montre le plan de u₁ (bleu) et u₂ (violet), de carré 1 chacun.",
+   "La différence d, en rouge pointillé, a un carré nul : elle ne définit pas de réflexion.",
+   "La somme s, en vert, a un carré 4, différent de 0.",
+   "La droite du pli est perpendiculaire à s ; la flèche orange S_s envoie u₁ sur −u₂."
+  ],
+  "a_voir": "Comme d est de carré 0, on prend s, de carré 4 ; alors S_s envoie u₁ sur −u₂."
+ },
+ {
+  "code": "72-117",
+  "a_dire": "Dans l'espace habituel, la réflexion S_d échange le premier et le troisième nombre : (4, 5, 6) devient (6, 5, 4).",
+  "legende_titre": "Une réflexion qui échange deux nombres",
+  "lecture": [
+   "Chaque ligne bleue montre un vecteur de départ.",
+   "Chaque ligne verte montre son image par S_d.",
+   "Les deux flèches orange qui se croisent échangent le premier et le troisième nombre.",
+   "La flèche grise garde le deuxième nombre à sa place."
+  ],
+  "a_voir": "Le premier et le troisième nombre changent de place, le deuxième ne bouge pas."
+ },
+ {
+  "code": "72-118",
+  "a_dire": "On découpe U₁ en une droite F·u₁ et un reste W₁ de dimension un de moins, puis on recommence jusqu'à la dimension 0.",
+  "legende_titre": "Découper pièce après pièce",
+  "lecture": [
+   "La case bleue du haut est U₁, de dimension 2.",
+   "Elle se coupe en Fu₁ (bleu) et W₁ (orange), de dimension 1.",
+   "On recommence avec W₁ : il donne Fu₂ (violet).",
+   "Il ne reste que le vecteur nul, de dimension 0 : la méthode s'arrête."
+  ],
+  "a_voir": "La dimension baisse de 1 à chaque étape, donc il y a 2 étapes."
+ },
+ {
+  "code": "72-119",
+  "a_dire": "Une isométrie entre deux sous-espaces se prolonge en une transformation orthogonale de tout V.",
+  "legende_titre": "Une isométrie qui s'étend à tout l'espace",
+  "lecture": [
+   "L'axe bleu est U₁ et l'axe violet est U₂.",
+   "La flèche orange courbe est l'isométrie de U₁ sur U₂.",
+   "Le pointillé gris est le miroir qui échange les nombres 1 et 3 : c'est le prolongement.",
+   "Un vecteur v (gris) a pour image S(v) (vert), même hors de U₁."
+  ],
+  "a_voir": "Le prolongement agit sur tous les vecteurs, pas seulement sur U₁."
+ },
+ {
+  "code": "72-120",
+  "a_dire": "On écrit chaque vecteur comme somme d'une part dans U₁ et d'une part dans U₁⟂, on applique η à l'une et ζ à l'autre, puis on additionne.",
+  "legende_titre": "Deux morceaux, deux applications",
+  "lecture": [
+   "La case grise du haut est le vecteur (4, 5, 6).",
+   "Elle se coupe en une part bleue dans U₁ et une part violette dans U₁⟂.",
+   "η agit sur la part bleue et ζ sur la part violette.",
+   "La somme des deux images (case verte) est (6, 5, 4)."
+  ],
+  "a_voir": "Chaque part est transformée à part, puis les images s'additionnent."
+ },
+ {
+  "code": "72-121",
+  "a_dire": "Une droite dégénérée (le vecteur z) devient un plan non dégénéré quand on ajoute un vecteur w avec B(z, w) = 1.",
+  "legende_titre": "Compléter une droite dégénérée",
+  "lecture": [
+   "La flèche rouge est z, sur la droite rouge dégénérée.",
+   "La flèche orange est w, le vecteur ajouté.",
+   "Les deux vecteurs engendrent le plan entier.",
+   "Le nombre B(z, w) vaut 1 : le plan obtenu est non dégénéré (vert)."
+  ],
+  "a_voir": "Un seul vecteur de plus transforme la droite dégénérée en plan non dégénéré."
+ },
+ {
+  "code": "72-122",
+  "a_dire": "Si V est dégénéré, l'isométrie e₃ ↦ (1, 1, 0) ne se prolonge à aucune transformation orthogonale.",
+  "legende_titre": "Le cas où le prolongement échoue",
+  "lecture": [
+   "La case bleue est e₃ ; avec e₁ il donne 0.",
+   "La case violette est (1, 1, 0) ; avec e₁ il donne 1.",
+   "La flèche orange est l'isométrie entre les deux droites.",
+   "Le signe rouge ≠ montre que 0 et 1 diffèrent : aucun prolongement n'existe."
+  ],
+  "a_voir": "Le vecteur e₃ donne 0 avec e₁, son image donne 1 : l'écart bloque le prolongement."
+ },
+ {
+  "code": "72-123",
+  "a_dire": "Deux droites totalement isotropes de même dimension sont liées par une bijection linéaire qui est automatiquement une isométrie.",
+  "legende_titre": "Isotrope : tout est nul des deux côtés",
+  "lecture": [
+   "Les deux droites rouges sont (1, 1) et (1, −1).",
+   "Toute mesure de leurs vecteurs est nulle.",
+   "La flèche orange envoie un multiple de (1, 1) sur le même multiple de (1, −1).",
+   "Comme tout est nul des deux côtés (vert), la bijection est une isométrie."
+  ],
+  "a_voir": "Les deux droites rouges ont la même mesure nulle : la bijection la conserve."
+ },
+ {
+  "code": "72-124",
+  "a_dire": "Tous les sous-espaces totalement isotropes maximaux ont la même dimension.",
+  "legende_titre": "Maximaux : toujours la même dimension",
+  "lecture": [
+   "Les deux droites rouges sont totalement isotropes et maximales.",
+   "Chacune a pour dimension 1 (étiquette rouge).",
+   "La flèche orange (1, 0) a un carré 1 : on ne peut pas l'ajouter à une droite rouge.",
+   "Les deux dimensions sont égales (texte vert)."
+  ],
+  "a_voir": "Les deux droites rouges ont la dimension 1 et on ne peut pas les agrandir."
+ },
+ {
+  "code": "72-125",
+  "a_dire": "L'indice de Witt ν est la dimension commune des sous-espaces totalement isotropes maximaux ; il diffère de la dimension n.",
+  "legende_titre": "L'indice : la plus grande taille isotrope",
+  "lecture": [
+   "Ligne bleue : le plan entier occupe 2 cases, donc n = 2.",
+   "Ligne verte : un sous-espace isotrope maximal occupe 1 case, donc ν = 1.",
+   "Ligne rouge : le sous-espace nul occupe 0 case ; il est isotrope mais pas maximal.",
+   "Les cases en pointillés sont les dimensions non occupées."
+  ],
+  "a_voir": "ν compte les cases de la ligne verte, pas celles du plan entier."
+ },
+ {
+  "code": "72-126",
+  "a_dire": "Dans cet exemple, ν = 2 plans hyperboliques demanderaient 4 dimensions alors que V n'en a que 3 : la décomposition n'existe pas.",
+  "legende_titre": "Quatre dimensions ne tiennent pas dans trois",
+  "lecture": [
+   "La ligne bleue montre V : 3 cases, donc 3 dimensions.",
+   "La ligne violette montre 2 plans hyperboliques H₁ et H₂, de 2 cases chacun.",
+   "La quatrième case (rouge) dépasse les 3 cases de V.",
+   "Le texte rouge 4 > 3 dit que la décomposition est impossible."
+  ],
+  "a_voir": "La ligne du bas a une case de plus que la ligne du haut."
+ },
+ {
+  "code": "72-127",
+  "a_dire": "Les ν plans hyperboliques occupent 2ν dimensions, qui ne dépassent pas la dimension n : 2ν ≤ n.",
+  "legende_titre": "Chaque plan occupe deux dimensions",
+  "lecture": [
+   "Une case bleue est une dimension prise par un plan hyperbolique ; il en faut 2ν.",
+   "Une case grise est une dimension du reste, la partie anisotrope.",
+   "Ligne n = 2, ν = 1 : 2 cases bleues, aucun reste.",
+   "Ligne n = 3, ν = 1 : 2 cases bleues et 1 case grise ; ligne n = 2, ν = 0 : 2 cases grises."
+  ],
+  "a_voir": "Les cases bleues et grises ensemble font n, donc les bleues font au plus n."
+ },
+ {
+  "code": "72-128",
+  "a_dire": "On peut découper l'espace de plusieurs façons, mais le reste anisotrope X est unique à isométrie près.",
+  "legende_titre": "Le reste ne dépend pas du découpage",
+  "lecture": [
+   "Ligne du haut : un plan hyperbolique H (bleu) et un reste X (gris).",
+   "Ligne du bas : un autre plan hyperbolique H′ (violet) et un reste X′ (gris).",
+   "Les plans H et H′ peuvent être différents.",
+   "La flèche verte relie X et X′ : ils sont isométriques."
+  ],
+  "a_voir": "Seuls les plans changent d'une ligne à l'autre ; le reste garde la même forme."
+ }
+]

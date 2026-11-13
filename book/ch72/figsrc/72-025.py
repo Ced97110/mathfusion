@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 22, 68, 'nombres habituels', 'resultat', 's'); text(ax, 66, 68, 'système 0 et 1', 'limite', 's')
+f = numberline(ax, 6, 36, 48, 0, 2, arrow_right=False, size='s')
+arrow(ax, (f(0), 51), (f(1), 51), 'varie', curve=-0.5); arrow(ax, (f(1), 51), (f(2), 51), 'varie', curve=-0.5)
+text(ax, f(0.5), 59, '+1', 'varie', 's'); text(ax, f(1.5), 59, '+1', 'varie', 's')
+disc(ax, f(2), 48, 1.6, 'resultat', fill=True)
+disc(ax, 56, 48, 4.5, 'limite', label='0'); disc(ax, 76, 48, 4.5, 'limite', label='1')
+arrow(ax, (60.5, 50), (71.5, 50), 'varie', curve=-0.4); arrow(ax, (71.5, 46), (60.5, 46), 'varie', curve=-0.4)
+text(ax, 66, 58, '+1', 'varie', 's'); text(ax, 66, 38, '+1', 'varie', 's')
+text(ax, 22, 26, r'$1+1=2$', 'resultat', 'm'); text(ax, 66, 26, r'$1+1=0$', 'limite', 'm')
+box(ax, 4, 6, 36, 12, 'resultat', label=r'$2\neq0$ : moitiés', size='s'); box(ax, 48, 6, 36, 12, 'limite', label=r'$2=0$ : pas de moitié', size='s')
+save(fig, '72-025')

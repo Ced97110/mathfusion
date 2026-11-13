@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$V$ dégénéré', 'fixe', 'l')
+box(ax, 4, 34, 32, 14, 'sujet', label=r'$e_3$', size='l')
+box(ax, 52, 34, 32, 14, 'autre', label=r'$(1,1,0)$', size='l')
+arrow(ax, (36, 41), (52, 41), 'varie'); text(ax, 44, 46, 'isométrie', 'varie', 's')
+text(ax, 20, 27, r'$B(e_3,e_1)=0$', 'sujet', 's')
+text(ax, 44, 27, r'$\neq$', 'limite', 'l')
+text(ax, 68, 27, r'$B((1,1,0),e_1)=1$', 'autre', 's')
+box(ax, 8, 6, 72, 11, 'limite', label='aucun prolongement possible', size='s')
+save(fig, '72-122')

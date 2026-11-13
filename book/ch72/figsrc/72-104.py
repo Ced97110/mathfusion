@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,6,40,24,12,'sujet',label=r'$Q$',size='l'); box(ax,58,40,24,12,'autre',label=r'$B$',size='l')
+text(ax,18,36,'forme quadratique','sujet','s'); text(ax,70,36,'mesure à 2 vecteurs','autre','s')
+arrow(ax,(57,48),(31,48),'limite'); arrow(ax,(31,43),(57,43),'limite')
+for yy in (48,43): line(ax,[(42.5,yy-1.5),(45.5,yy+1.5)],'limite',lw=1.2); line(ax,[(42.5,yy+1.5),(45.5,yy-1.5)],'limite',lw=1.2)
+text(ax,44,53,'÷ 2 impossible','limite','s'); text(ax,44,38.5,'× 2 donne 0','limite','s')
+text(ax,24,22,'carrés : tous nuls','sujet','s'); text(ax,64,22,r'$B((1,0),(0,1))=1$','autre','s')
+text(ax,44,11,'deux données distinctes','encre','m')
+save(fig,'72-104')
