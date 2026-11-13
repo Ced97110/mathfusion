@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(85)
+box(ax, 2, 62, 40, 11, 'varie', label='garder la distributivité', size='s')
+box(ax, 46, 62, 40, 11, 'autre', label='les couples', size='s')
+arrow(ax, (22, 61), (22, 50), 'varie'); arrow(ax, (66, 61), (66, 50), 'autre')
+box(ax, 2, 38, 40, 11, 'varie', label=r'$(-1)\times(-1)=1$', size='s')
+box(ax, 46, 38, 40, 11, 'autre', label=r'$(0,1)\times(0,1)=(1,0)$', size='s')
+text(ax, 22, 33, 'on doit accepter', 'varie', 's')
+text(ax, 66, 33, 'on constate', 'autre', 's')
+arrow(ax, (22, 30), (38, 19), 'resultat'); arrow(ax, (66, 30), (50, 19), 'resultat')
+box(ax, 24, 6, 40, 12, 'resultat', label='même règle des signes', size='s')
+save(fig, '13-135')

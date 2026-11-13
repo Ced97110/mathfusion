@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+xs = (28, 52)
+text(ax, 8, 60, '(a, b)', 'sujet', 'm'); text(ax, 8, 32, '(c, d)', 'autre', 'm')
+text(ax, 8, 46, '∼', 'varie', 'xl')
+for x, s in zip(xs, 'ab'): disc(ax, x, 60, 4, 'sujet', label=s)
+for x, s in zip(xs, 'cd'): disc(ax, x, 32, 4, 'autre', label=s)
+arrow(ax, (xs[0] + 2.5, 57), (xs[1] - 2.5, 35), 'varie')
+arrow(ax, (xs[1] - 2.5, 57), (xs[0] + 2.5, 35), 'varie')
+text(ax, 73, 54, 'a + d', 'varie', 'm'); text(ax, 73, 46, '=', 'varie', 'm'); text(ax, 73, 38, 'b + c', 'varie', 'm')
+text(ax, 44, 17, 'en croix', 'varie', 's')
+text(ax, 44, 8, '3 + 12 = 5 + 10', 'resultat', 'l')
+save(fig, '13-091')

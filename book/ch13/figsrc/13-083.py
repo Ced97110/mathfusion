@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'$a \div b = c$ signifie $b \times c = a$', 'sujet', 'm')
+box(ax, 3, 32, 34, 14, 'sujet', label='12 ÷ (−3) = c', size='m')
+box(ax, 51, 32, 34, 14, 'varie', label='(−3) × c = 12', size='m')
+arrow(ax, (38, 39), (50, 39), 'fixe', both=True)
+text(ax, 44, 51, 'même sens', 'fixe', 's')
+arrow(ax, (68, 30), (44, 20), 'varie')
+box(ax, 14, 5, 60, 12, 'resultat', label='(−3) × (−4) = 12', size='l')
+text(ax, 20, 25, 'c = −4', 'resultat', 'm')
+save(fig, '13-083')

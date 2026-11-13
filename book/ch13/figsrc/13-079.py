@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+def base(y):
+    return numberline(ax, 6, 76, y, -16, 16, labels=False, arrow_right=False)
+y1, y2 = 72, 40
+f = base(y1)
+text(ax, f(0), y1 - 3.6, r'$0$', 'fixe')
+text(ax, f(15), y1 - 3.6, r'$15$', 'resultat')
+disc(ax, f(15), y1, 1.8, 'resultat')
+arrow(ax, (f(0), y1 + 3), (f(15) - 1, y1 + 3), 'varie', curve=-0.3)
+text(ax, f(7.5), y1 + 12, r'$3\times5$ : + et +', 'varie', 's')
+f = base(y2)
+text(ax, f(0), y2 - 3.6, r'$0$', 'fixe')
+text(ax, f(-15), y2 - 3.6, r'$-15$', 'fixe')
+text(ax, f(15), y2 - 3.6, r'$15$', 'resultat')
+disc(ax, f(-15), y2, 1.8, 'fixe')
+disc(ax, f(15), y2, 1.8, 'resultat')
+arrow(ax, (f(0), y2 + 3), (f(-15) + 1, y2 + 3), 'varie', curve=0.3)
+text(ax, f(-7.5), y2 + 12, r'$3\times(-5)$', 'varie', 's')
+arrow(ax, (f(-15) + 1, y2 - 8), (f(15) - 1, y2 - 8), 'sujet', curve=0.3)
+text(ax, f(0), y2 - 25, r'$\times(-1)$ : retourner', 'sujet', 's')
+text(ax, 44, 6, r'$(-3)\times(-5)=15$ : $-$ et $-$', 'resultat', 'm')
+save(fig, '13-079')

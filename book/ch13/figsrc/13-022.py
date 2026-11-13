@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+y = 30
+f = numberline(ax, 8, 70, y, -5, 5, labels=False, arrow_right=False)
+box(ax, f(-5) - 4, y - 7, f(0) - f(-5) + 2.5, 21, 'autre', label=None)
+box(ax, f(0) + 1.5, y - 7, f(5) - f(0) + 2.5, 21, 'sujet', label=None)
+line(ax, [(f(-5) - 4, y), (f(5) + 4, y)], 'fixe')
+text(ax, f(-2.5), y + 10, r'$-$ : à gauche de 0', 'autre', 'm')
+text(ax, f(2.5) + 1, y + 10, r'$+$ : à droite de 0', 'sujet', 'm')
+disc(ax, f(-5), y, 1.7, 'autre'); disc(ax, f(3), y, 1.7, 'sujet'); disc(ax, f(5), y, 1.7, 'sujet'); disc(ax, f(0), y, 1.3, 'fixe')
+text(ax, f(-5), y - 4, r'$-5$', 'autre', 's'); text(ax, f(3), y - 4, '3', 'sujet', 's')
+text(ax, f(5), y - 4, '5', 'sujet', 's'); text(ax, f(0), y - 4, '0', 'fixe', 's')
+brace(ax, f(-5), f(5), y - 10, 'varie', r'$5$ et $-5$ : même distance', depth=2.0)
+text(ax, f(0), 52, 'le signe dit le côté seulement', 'encre', 'm', weight='bold')
+save(fig, '13-022')

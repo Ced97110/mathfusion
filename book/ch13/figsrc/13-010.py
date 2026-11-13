@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+f = numberline(ax, 8, 66, 52, -3, 3, labels=False)
+text(ax, 8, 66, 'avant', 'fixe', 'm', ha='left')
+box(ax, 8, 48, 29, 8, 'varie', fill=False, dash=True)
+text(ax, 22.5, 59, 'sans numéro', 'varie', 's')
+for v in range(0, 4): text(ax, f(v), 46.4, str(v), 'fixe', 's')
+f2 = numberline(ax, 8, 66, 20, -3, 3, labels=False)
+text(ax, 8, 34, 'après', 'sujet', 'm', ha='left')
+box(ax, 8, 16, 29, 8, 'sujet', fill=True)
+numberline(ax, 8, 66, 20, -3, 3, labels=False)
+for v in range(-3, 4):
+    text(ax, f2(v), 14.4, str(v).replace('-', '−'), 'sujet' if v < 0 else 'fixe', 's')
+text(ax, 22.5, 28, 'numéros ajoutés', 'sujet', 's')
+save(fig, '13-010')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 8, 40, 12, 10, 'varie', label='−', size='l')
+box(ax, 26, 40, 30, 10, 'sujet', label=r'$|-3|$', size='l')
+text(ax, 14, 35, 'trait extérieur', 'varie', 's')
+text(ax, 41, 35, 'entre les barres', 'sujet', 's')
+arrow(ax, (41, 33.5), (41, 28), 'sujet')
+text(ax, 41, 24, r'$|-3| = 3$', 'resultat', 'm')
+arrow(ax, (41, 21), (41, 16), 'varie')
+text(ax, 62, 18.5, 'opposé de 3', 'varie', 's')
+box(ax, 26, 5, 30, 10, 'resultat', label=r'$-|-3| = -3$')
+save(fig, '13-131')

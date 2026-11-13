@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'Distance de −3 047 à 0 ?', 'sujet', 'm')
+line(ax, [(8, 44), (36, 44)], 'limite', dash=True); line(ax, [(40, 44), (80, 44)], 'limite', dash=True)
+line(ax, [(37, 41), (39, 47)], 'limite'); line(ax, [(35, 41), (37, 47)], 'limite')
+text(ax, 8, 39, '−3 047', 'sujet', 's', ha='left'); text(ax, 80, 39, '0', 'fixe', 's', ha='right')
+text(ax, 44, 50, 'dessiner 3 047 pas : trop long', 'limite', 's')
+box(ax, 6, 8, 26, 12, 'sujet', label='−3 047', size='m')
+box(ax, 62, 8, 20, 12, 'resultat', label='distance', size='s')
+arrow(ax, (32, 14), (62, 14), 'varie')
+text(ax, 47, 19, 'règle sur l’écriture', 'varie', 's')
+text(ax, 47, 9.5, '?', 'varie', 'l')
+save(fig, '13-042')

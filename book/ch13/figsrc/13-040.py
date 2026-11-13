@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 30, 54, '|', 'varie', 'xl'); text(ax, 44, 54, '8', 'sujet', 'xl'); text(ax, 58, 54, '|', 'varie', 'xl')
+text(ax, 30, 46, 'barre', 'varie', 's'); text(ax, 58, 46, 'barre', 'varie', 's'); text(ax, 44, 46, 'le nombre', 'sujet', 's')
+text(ax, 70, 54, '=  8', 'resultat', 'l')
+f = numberline(ax, 6, 82, 26, -8, 8, labels=False, arrow_right=False)
+text(ax, f(0), 21.5, '0', 'fixe'); text(ax, f(8), 21.5, '8', 'sujet'); text(ax, f(-8), 21.5, '−8', 'sujet')
+disc(ax, f(8), 26, 1.8, 'sujet'); disc(ax, f(-8), 26, 1.8, 'sujet')
+brace(ax, f(0), f(8), 20, 'resultat', '8 pas'); brace(ax, f(-8), f(0), 20, 'resultat', '8 pas')
+text(ax, 44, 34, 'distance de 8 à 0', 'fixe', 's')
+save(fig, '13-040')

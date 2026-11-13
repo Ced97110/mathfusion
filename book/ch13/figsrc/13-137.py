@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(65)
+text(ax, 44, 61, r'$x \times z = y \times z$ avec $z=0$', 'encre', 's')
+box(ax, 8, 44, 28, 10, 'sujet', label=r'$3 \times 0$')
+box(ax, 52, 44, 28, 10, 'autre', label=r'$5 \times 0$')
+arrow(ax, (28, 43), (40, 33), 'fixe'); arrow(ax, (60, 43), (48, 33), 'fixe')
+box(ax, 34, 22, 20, 10, 'resultat', label='0')
+text(ax, 44, 17, 'même résultat', 'resultat', 's')
+box(ax, 14, 3, 60, 10, 'limite', label=r'$3 \neq 5$ : pas de simplification', size='s')
+save(fig, '13-137')

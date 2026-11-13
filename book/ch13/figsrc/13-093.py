@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 40, 24, 11, 'sujet', label='(3, 5)')
+text(ax, 44, 45, '∼', 'resultat', 24)
+box(ax, 61, 40, 24, 11, 'autre', label='(10, 12)')
+text(ax, 44, 33, 'est équivalent à', 'resultat', 'm')
+text(ax, 44, 27, 'même écart : dette de 2', 'resultat', 's')
+box(ax, 3, 6, 24, 11, 'sujet', label='(3, 5)')
+text(ax, 44, 11.5, '=', 'limite', 24)
+box(ax, 61, 6, 24, 11, 'autre', label='(10, 12)')
+text(ax, 44, 59, 'signe ∼', 'resultat', 'm')
+text(ax, 44, 21, 'pas les mêmes nombres', 'limite', 's')
+save(fig, '13-093')

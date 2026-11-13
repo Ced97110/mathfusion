@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 8, 80, 24, -4, 4, arrow_right=False)
+arrow(ax, (f(3), 28), (f(-3), 28), 'varie', curve=0.4, both=True)
+arrow(ax, (f(1), 28), (f(-1), 28), 'varie', curve=0.6, both=True)
+for v in (3, 1): disc(ax, f(v), 24, 1.6, 'sujet'); disc(ax, f(-v), 24, 1.6, 'varie')
+disc(ax, f(0), 24, 1.9, 'resultat')
+text(ax, f(0), 40, 'le pli est en 0', 'fixe', 's')
+line(ax, [(f(0), 29), (f(0), 37)], 'fixe', dash=True)
+text(ax, f(0), 10, r'0 reste en place : $-0=0$', 'resultat', 'm')
+save(fig, '13-038')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 6, 82, 26, -5, 5, labels=False, arrow_right=False)
+text(ax, f(0), 21, '0', 'fixe')
+line(ax, [(f(-3), 26), (f(0), 26)], 'resultat', lw=2.4)
+disc(ax, f(-3), 26, 2, 'sujet'); disc(ax, f(3), 26, 2, 'autre')
+text(ax, f(-3), 32, 'le nombre', 'sujet', 's'); text(ax, f(-3), 36, '−3', 'sujet', 'm')
+text(ax, f(3), 32, 'son opposé', 'autre', 's'); text(ax, f(3), 36, '3', 'autre', 'm')
+brace(ax, f(-3), f(0), 17.5, 'resultat', 'distance à 0 : 3')
+text(ax, 44, 51, 'trois choses différentes', 'encre', 's')
+save(fig, '13-039')

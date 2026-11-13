@@ -1,0 +1,194 @@
+[
+ {
+  "code": "13-049",
+  "a_dire": "a < 0 veut dire que a est à gauche de 0, donc négatif ; 0 n'est pas à gauche de 0.",
+  "legende_titre": "Ce que le signe < dit d'un nombre",
+  "lecture": [
+   "La case bleue est la zone à gauche de 0 : là, a < 0 est vrai.",
+   "La case grise est la zone de 0 et de la droite : là, a ≥ 0.",
+   "Le point vert est −5 : il est dans la zone bleue, donc la condition est vraie.",
+   "Les points rouges sont 0 et 5 : ils ne sont pas à gauche de 0, donc la condition est fausse."
+  ],
+  "a_voir": "Seuls les nombres à gauche de 0 vérifient a < 0, et 0 est exclu."
+ },
+ {
+  "code": "13-050",
+  "a_dire": "Dans |a| = −a, le signe − se lit « l'opposé de a » : il envoie a de l'autre côté de 0.",
+  "legende_titre": "Lire le trait dans −a",
+  "lecture": [
+   "Le point bleu est a = −3, à gauche de 0.",
+   "Le point vert est −a = 3, à droite de 0.",
+   "La flèche orange montre le passage d'un côté à l'autre de 0.",
+   "Les deux accolades grises mesurent 3 chacune : même distance à 0."
+  ],
+  "a_voir": "Le trait ne dit pas « négatif » : il fait changer de côté."
+ },
+ {
+  "code": "13-051",
+  "a_dire": "On lit d'abord la condition, puis on choisit la ligne ; si on ne connaît pas le signe de a, on ne peut pas enlever les barres.",
+  "legende_titre": "Quand peut-on enlever les barres ?",
+  "lecture": [
+   "Dans les deux premières lignes, le nombre bleu est connu : a = 4, puis a = −4.",
+   "Les cases vertes du milieu donnent la condition vraie, qui désigne la ligne à prendre.",
+   "Dans la dernière ligne, a est inconnu : la case rouge montre que la condition ne peut pas être lue.",
+   "Sans condition, aucune ligne n'est choisie et les barres restent."
+  ],
+  "a_voir": "La ligne se choisit après la condition, et la condition demande de connaître le signe."
+ },
+ {
+  "code": "13-052",
+  "a_dire": "|a| = −a pour a < 0 n'est pas une contradiction : l'opposé d'un nombre négatif est positif.",
+  "legende_titre": "Un trait qui donne un nombre positif",
+  "lecture": [
+   "Le point bleu est a = −3, un nombre négatif.",
+   "Le point vert est −a = −(−3) = 3, un nombre positif.",
+   "Les deux accolades mesurent 3 : |a| et −a sont le même nombre.",
+   "La flèche orange en dessous montre que le trait change de côté."
+  ],
+  "a_voir": "Le trait retire le côté négatif ; la distance 3 et le nombre 3 sont égaux."
+ },
+ {
+  "code": "13-053",
+  "a_dire": "−|5| n'est pas |−5| : avec les mêmes signes, l'ordre change la réponse (−5 et 5).",
+  "legende_titre": "Mêmes signes, deux réponses",
+  "lecture": [
+   "En haut, les barres sont à l'extérieur : le point bleu −5 est à la distance 5 de 0, et le résultat est le point vert 5.",
+   "En bas, on prend d'abord la distance de 5 à 0, qui est 5 (accolade bleue).",
+   "Puis le trait prend l'opposé : le résultat est le point violet −5.",
+   "Le texte rouge au milieu dit que 5 et −5 sont différents."
+  ],
+  "a_voir": "Le résultat dépend de l'ordre : 5 en haut, −5 en bas."
+ },
+ {
+  "code": "13-054",
+  "a_dire": "Additionner, c'est se déplacer sur la droite : un nombre positif va à droite, un nombre négatif va à gauche.",
+  "legende_titre": "Additionner en faisant des pas",
+  "lecture": [
+   "Le cercle gris est le départ, en 0.",
+   "La flèche bleue fait 3 pas vers la droite, jusqu'à 3.",
+   "La flèche orange part de là et fait 2 pas vers la gauche.",
+   "Le point vert est l'arrivée : 1."
+  ],
+  "a_voir": "Le deuxième déplacement part de l'arrivée du premier, et le total peut être plus petit que 3."
+ },
+ {
+  "code": "13-055",
+  "a_dire": "Pour (−5) + 3, on fait 5 pas à gauche puis 3 pas à droite depuis l'arrivée de la première flèche : on arrive sur −2.",
+  "legende_titre": "Deux flèches l'une après l'autre",
+  "lecture": [
+   "Le cercle gris est le départ, en 0.",
+   "La flèche orange va de 0 à −5 : 5 pas à gauche.",
+   "La flèche bleue part de −5 et va 3 pas à droite.",
+   "Le point vert est l'arrivée : −2, à gauche de 0."
+  ],
+  "a_voir": "La flèche bleue est plus courte : elle ne ramène pas jusqu'à 0."
+ },
+ {
+  "code": "13-056",
+  "a_dire": "Avec deux nombres de même signe, on additionne les valeurs absolues et on garde le signe commun : (−4) + (−9) = −13.",
+  "legende_titre": "Additionner deux nombres négatifs",
+  "lecture": [
+   "La flèche orange courte fait 4 pas à gauche depuis 0.",
+   "La flèche orange longue part de là et fait 9 pas à gauche.",
+   "Le point vert est l'arrivée : −13.",
+   "L'accolade verte mesure la distance de 0 à −13 : 4 + 9 = 13."
+  ],
+  "a_voir": "Les deux flèches vont dans le même sens, donc leurs longueurs s'ajoutent."
+ },
+ {
+  "code": "13-057",
+  "a_dire": "(−4) + (−9) = −13 : 4 pas à gauche puis 9 pas à gauche donnent 13 pas à gauche depuis 0.",
+  "legende_titre": "Un exemple de pas comptés",
+  "lecture": [
+   "Chaque case orange est un pas vers la gauche.",
+   "Les 4 cases de droite, près de 0, sont les 4 premiers pas.",
+   "Les 9 cases suivantes sont les 9 autres pas.",
+   "Au bout des 13 cases on arrive sur −13."
+  ],
+  "a_voir": "Il y a 13 cases en tout, toutes dans le même sens."
+ },
+ {
+  "code": "13-058",
+  "a_dire": "Avec des signes contraires, on retire la plus petite valeur absolue de la plus grande et on prend le signe du nombre le plus grand en valeur absolue ; si elles sont égales, on arrive sur 0.",
+  "legende_titre": "Additionner deux nombres de signes contraires",
+  "lecture": [
+   "En haut, la flèche bleue fait 3 pas à droite, puis la flèche orange fait 11 pas à gauche.",
+   "Le point vert du haut est −8 : 11 − 3 = 8, avec le signe de la flèche la plus longue.",
+   "En bas, la flèche bleue fait 5 pas à droite et la flèche orange 5 pas à gauche.",
+   "Le point vert du bas est 0 : les deux flèches ont la même longueur."
+  ],
+  "a_voir": "La différence des longueurs donne la distance à 0, et il n'y a pas de signe quand elle vaut 0."
+ },
+ {
+  "code": "13-059",
+  "a_dire": "Pour 3 + (−11), la flèche la plus longue décide du côté : le résultat est −8 ; avec 11 + (−3), il est 8.",
+  "legende_titre": "Quelle flèche décide ?",
+  "lecture": [
+   "En haut, la flèche bleue fait 3 pas à droite et la flèche orange épaisse fait 11 pas à gauche.",
+   "Le point vert du haut est −8, à gauche de 0.",
+   "En bas, la flèche bleue épaisse fait 11 pas à droite et la flèche orange fait 3 pas à gauche.",
+   "Le point vert du bas est 8, à droite de 0."
+  ],
+  "a_voir": "La flèche épaisse, la plus longue, donne le côté du résultat."
+ },
+ {
+  "code": "13-060",
+  "a_dire": "a + 0 = a : ajouter 0 ne change pas a, donc 0 est neutre pour l'addition, mais pas pour la multiplication.",
+  "legende_titre": "0 laisse le nombre en place",
+  "lecture": [
+   "Le point vert est 5 : avec 0 pas, on y reste, donc 5 + 0 = 5.",
+   "La case rouge montre 5 × 0 = 0 : multiplier par 0 ne laisse pas 5 en place.",
+   "La case verte montre 5 × 1 = 5 : pour la multiplication, c'est 1 qui laisse en place."
+  ],
+  "a_voir": "0 est neutre pour l'addition, 1 est neutre pour la multiplication."
+ },
+ {
+  "code": "13-061",
+  "a_dire": "Un nombre plus son opposé donne 0 : a + (−a) = 0.",
+  "legende_titre": "Un nombre et son opposé",
+  "lecture": [
+   "En haut, a = 5 : la flèche bleue va de 0 à 5, puis la flèche orange (−a) revient à 0.",
+   "En bas, a = −5 : la flèche orange va de 0 à −5, puis la flèche bleue (−a) revient à 0.",
+   "Les deux flèches de chaque ligne ont la même longueur et des sens contraires.",
+   "Le point vert est l'arrivée : 0."
+  ],
+  "a_voir": "Dans les deux cas, le chemin revient au départ, en 0."
+ },
+ {
+  "code": "13-062",
+  "a_dire": "5 − 2 et 5 + (−2) sont le même déplacement : de 5 vers 3.",
+  "legende_titre": "Deux écritures, un seul déplacement",
+  "lecture": [
+   "Le point bleu est le départ, en 5.",
+   "Le point vert est l'arrivée, en 3.",
+   "La flèche orange du haut est 5 − 2 : reculer de 2.",
+   "La flèche orange du bas est 5 + (−2) : 2 pas à gauche. Elle est identique à celle du haut."
+  ],
+  "a_voir": "Les deux flèches ont le même départ, le même sens et la même arrivée."
+ },
+ {
+  "code": "13-063",
+  "a_dire": "a − b = a + (−b) : soustraire b, c'est ajouter l'opposé de b, ce qui donne une réponse à 3 − 5.",
+  "legende_titre": "Une nouvelle façon de soustraire",
+  "lecture": [
+   "En haut, 3 ronds bleus sont les 3 billes, et 2 ronds rouges vides montrent qu'il en manque pour retirer 5.",
+   "La phrase rouge dit que 3 − 5 est impossible avec les billes.",
+   "En bas, la flèche orange part de 3 et fait 5 pas à gauche : c'est 3 + (−5).",
+   "Le point vert est l'arrivée : −2."
+  ],
+  "a_voir": "L'addition de l'opposé répond au cas où le retrait de billes s'arrête."
+ },
+ {
+  "code": "13-064",
+  "a_dire": "a − b se lit « a moins b » : on part de a et on retire b ; l'ordre des lettres compte.",
+  "legende_titre": "Lire a − b avec deux exemples",
+  "lecture": [
+   "Chaque rangée de cases représente le nombre de départ a : 7 en haut, 10 en bas.",
+   "Les cases orange sont les cases retirées, b : 4 en haut, 6 en bas.",
+   "Les cases bleues sont ce qui reste.",
+   "À droite, en bleu, on lit 7 − 4 et 10 − 6 : on part de a et on retire b.",
+   "À droite, en violet, on lit 4 − 7 et 6 − 10 : b − a part de b et retire a."
+  ],
+  "a_voir": "Dans a − b, a est le nombre de départ et b est le nombre retiré ; b − a ne s’écrit pas pareil : l’ordre des lettres compte."
+ }
+]
