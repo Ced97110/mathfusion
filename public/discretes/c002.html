@@ -1,9 +1,15 @@
-<div class="pk">Chapitre 2</div>
-<h1>Énoncés, connecteurs et tables de vérité</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 2</div>
+<h1 class="ct">Énoncés, connecteurs et tables de vérité</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <img class="vm" src="/discretes/img/c002/p0033_1.svg" alt="Énoncés, connecteurs et" style="--w:24.12" loading="lazy">
 <h2>tables de vérité</h2>
 <p>Pour faire des mathématiques, il faut les écrire. Une phrase mathématique doit être plus précise qu’une phrase ordinaire. Ce chapitre fixe cette précision : ce qu’est un énoncé, comment on en assemble plusieurs, et comment on décide si l’assemblage est vrai.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 2 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Trois trolls devant un pont</h3>
 <p>Trois trolls gardent un pont. Chaque troll est soit un <b>chevalier</b>, qui dit toujours la vérité, soit un <b>fripon</b>, qui ment toujours. Pour passer, tu dois dire qui est quoi. Chacun prononce une phrase :</p>
 <p class="li">Troll 1 : « Si je suis un fripon, alors il y a exactement deux chevaliers ici. »</p>
@@ -18,7 +24,8 @@
 <p class="li">Bob n’a pas 90 et il réussit : ai-je menti ?</p>
 <p class="li">Bob n’a pas 90 et il échoue : ai-je menti ?</p>
 <p>Pour trancher les deux derniers cas, il faut une règle qui dépende seulement du vrai ou du faux de chaque morceau. Sinon deux personnes décideraient différemment, et aucune preuve ne serait possible. Ce besoin a forcé les notions d’énoncé et de connecteur.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 2 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vf" src="/discretes/img/c002/p0035_2.svg" alt="Q vrai : Q faux : il réussit il échoue P vrai : promesse promesse V F Bob a 90 tenue rompue P faux : Bob n&#x27;a V rien V rien promis promis pas 90" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>2.1 :</b> Regarde les quatre cases. La ligne dit si Bob a 90, la colonne s’il réussit. Une seule case est rouge : Bob a 90 et il échoue. C’est la seule situation où ma promesse est rompue. Dans la ligne du bas, je n’ai rien promis : rien ne dément ma phrase, elle compte comme vraie.</i></p>
 <p>Lis la figure 2.1 avec moi. Appelle <span class="m">𝑃</span> la phrase « Bob a 90 » et <span class="m">𝑄</span> la phrase « Bob réussit ».</p>
@@ -26,7 +33,8 @@
 <img class="vf" src="/discretes/img/c002/p0036_3.svg" alt="Q V Q F Q V Q F Q V Q F Q V Q F P V V F V V V F V F P F F F V F V V F V P ∧ Q P ∨ Q P → Q P ↔ Q (et) (ou) (si… alors) (équivalence)" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>2.2 :</b> Regarde où sont les cases bleues (V). Lignes :</i> <span class="m">𝑃</span> <i>vrai en haut, faux en bas. Colonnes :</i> <span class="m">𝑄</span> <i>vrai à gauche, faux à droite. « et » : une case bleue. « ou » : trois, la blanche est en bas à droite. « si… alors » : trois, la blanche est en haut à droite. « si et seulement si » : la diagonale.</i></p>
 <p>La figure 2.2 applique la même idée à quatre façons de relier <span class="m">𝑃</span> et <span class="m">𝑄</span>, avec les lignes et colonnes de la figure 2.1. « Et » n’est vrai que si les deux le sont. « Ou » est vrai dès qu’un des deux l’est. « Si… alors » est la grille de Bob. « Si et seulement si » est vrai quand <span class="m">𝑃</span> et <span class="m">𝑄</span> ont la même valeur. Compare « ou » et « si… alors » : une seule case blanche chacune, pas au même endroit. Cela servira plus loin.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 2 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Énoncé atomique, énoncé moléculaire</h3>
 <img class="vm" src="/discretes/img/c002/p0036_4.svg" alt="Définition : énoncé Un énoncé est une phrase déclarative qui est soit vraie, soit fausse. Un énoncé est atomique s’il ne peut" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c002/p0037_5.svg" alt="pas être découpé en énoncés plus petits. Sinon, il est moléculaire." style="--w:24.19" loading="lazy">
@@ -104,7 +112,8 @@
 <p>Exemple : <span class="m">𝑃 ∨ ¬𝑃</span>. Si <span class="m">𝑃</span> vaut V, la première partie est vraie ; si <span class="m">𝑃</span> vaut F, la seconde. « Il pleut ou il ne pleut pas » est vrai sans regarder le ciel. Une tautologie est toujours vraie, mais elle n’apprend rien sur le monde.</p>
 <img class="vm" src="/discretes/img/c002/p0051_39.svg" alt="Le cas limite Une implication à hypothèse fausse est vraie, quelle que soit la conclusion. Pousse ce cas à l’extrême. « Si 0 = 1, alors tu es le roi de France » est vrai. « Si 0 = 1, alors tu n’es pas le roi de France » est vrai aussi. Deux conclusions contraires, et pourtant aucune contradiction : aucune des deux phrases n’affirme sa conclusion. Chacune ne parle que du cas 0 = 1, qui n’arrive jamais. On dit qu’elles sont vraies « par vacuité »." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c002/p0051_40.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 2 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Reconnaître un énoncé</h3>
 <p>Ces phrases sont des énoncés atomiques : « les numéros de téléphone aux États-Unis ont <span class="m">10</span> chiffres » (vrai) ; « la Lune est faite de fromage » (faux) ; « <span class="m">42</span> est un carré parfait » (faux) ; « <span class="m">3 + 7 = 12</span> » (faux) ; « tout nombre pair plus grand que <span class="m">2</span> est la somme de deux nombres premiers ». Pour ce dernier, personne ne sait encore (c’est la conjecture de Goldbach), mais c’est un énoncé : il est vrai ou faux. Ces phrases n’en sont pas : « Veux-tu du gâteau ? » (question) ; « la somme de deux carrés » et « <span class="m">1 + 3 + 5 +</span> <span class="m">7 + ⋯ + (2𝑛 + 1)</span> » (elles désignent un nombre sans rien affirmer) ; « Va dans ta chambre ! » (ordre) ; « <span class="m">3 + 𝑥 = 12</span> ». La dernière contient une variable <i>libre</i> <span class="m">𝑥</span>. Avec <span class="m">𝑥 = 9</span> elle serait vraie, avec <span class="m">𝑥 = 5</span> fausse. Tant qu’on ne sait rien de <span class="m">𝑥</span>, elle n’est ni l’un ni l’autre. Pour en faire un énoncé, on peut donner une valeur (« <span class="m">3 + 𝑥 =</span> <span class="m">12</span>, où <span class="m">𝑥 = 9</span> » : vrai), ou <i>quantifier</i> la variable (« pour tout <span class="m">𝑥</span>, <span class="m">3 + 𝑥 = 12</span> » : faux, car <span class="m">𝑥 = 5</span> donne <span class="m">8</span>). Les quantificateurs sont l’objet du chapitre 3.</p>
 <p>Enfin, « les numéros de téléphone aux États- Unis ont <span class="m">10</span> chiffres et <span class="m">42</span> est un carré parfait » est moléculaire, de la forme <span class="m">𝑃 ∧ 𝑄</span> avec <span class="m">𝑃</span> vrai et <span class="m">𝑄</span> faux. Il est faux.</p>
@@ -196,7 +205,8 @@
 <p>Peuvent-ils être tous les deux chevaliers ? Avec <span class="m">𝐶</span> = « nous sommes cousins » et <span class="m">𝐷</span> = « nous sommes tous les deux fripons », ils disent <span class="m">𝐶 → 𝐷</span> et <span class="m">𝐶 ∨ 𝐷</span>. S’ils sont tous deux chevaliers, <span class="m">𝐷</span> est faux et les deux phrases sont vraies. Il reste deux lignes :</p>
 <img class="vm" src="/discretes/img/c002/p0064_49.svg" alt="𝐶 𝐷 𝐶 → 𝐷 𝐶 ∨ 𝐷 V F F V F F V F" style="--w:24.12" loading="lazy">
 <p>Aucune ligne ne rend les deux phrases vraies. Ils ne sont pas tous les deux chevaliers.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 2 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p><b>En arrière.</b> Le problème des coffres du chapitre 1 demandait quand « si ce coffre est vide, alors… » est vrai. Tu as la règle. <b>Le chapitre suivant.</b> Le chapitre 3 étudie les <i>déductions</i> : quand une conclusion découle-telle de prémisses ? Le cas 1 de Sue (« <span class="m">𝑃 → 𝑄</span> et <span class="m">𝑃</span>, donc <span class="m">𝑄</span> ») y prend le nom de <i>modus ponens</i>, et la table de vérité sert à prouver qu’une déduction est valide. Il introduit aussi les <i>prédicats</i> et les quantificateurs « pour tout » et « il existe », qui font de « <span class="m">3 + 𝑥 = 12</span> » un énoncé.</p>
 <p><b>Les preuves.</b> Le chapitre 4 utilise chaque règle d’ici. La preuve directe suppose <span class="m">𝑃</span> et déduit <span class="m">𝑄</span>. La preuve par contraposée prouve <span class="m">¬𝑄 → ¬𝑃</span> à la place de <span class="m">𝑃 → 𝑄</span>. La preuve par l’absurde part de la négation, et nier une implication donne <span class="m">𝑃 ∧ ¬𝑄</span>. Le contre-exemple exhibe la seule ligne fausse, comme les trois piques.</p>
 <p><b>Plus loin.</b> Au chapitre 6, une fonction injective sera définie par une implication : « si <span class="m">𝑓(𝑎) = 𝑓(𝑏)</span>, alors <span class="m">𝑎 = 𝑏</span> ». Au chapitre 18, le raisonnement par récurrence prouve des implications « si c’est vrai pour <span class="m">𝑛</span>, alors c’est vrai pour <span class="m">𝑛 + 1</span> ».</p>
@@ -204,5 +214,7 @@
 <img class="vf" src="/discretes/img/c002/p0066_51.svg" alt="" style="--w:24.19" loading="lazy">
 <p>où il est vrai. Au chapitre 5, ces zones deviennent des ensembles. « et » devient l’intersection, « ou » la réunion, « non » le complémentaire. <span class="m">𝑃 → 𝑄</span> vrai partout devient l’inclusion d’une zone dans l’autre. Les lois de De Morgan deviennent : le complémentaire d’une réunion est l’intersection des complémentaires. C’est la même grille, dessinée avec des cercles.</p>
 <img class="vf" src="/discretes/img/c002/p0066_52.svg" alt="" style="--w:24.19" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 2 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c002/p0067_53.svg" alt="À toi de chercher Une table à deux variables a 4 lignes. Sa dernière colonne est une suite de 4 valeurs V ou F. Combien de colonnes différentes peut-on écrire ? Combien existe-t-il donc de connecteurs binaires ? Tu en connais quatre. Peux-tu fabriquer chaque colonne avec seulement ¬ et ∧ ? Avec seulement ¬ et ∨ ? Existe-t-il un connecteur unique qui, répété, fabrique toutes les colonnes, même celle de ¬𝑃 ? Si oui, que devient l’idée qu’il faut « plusieurs » connecteurs pour raisonner ?" style="--w:24.19" loading="lazy">
+</div>
