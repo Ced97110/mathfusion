@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 21</div>
-<h1>Les graphes : définitions</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 21</div>
+<h1 class="ct">Les graphes : définitions</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Ce chapitre ouvre une nouvelle partie du livre : la théorie des graphes. Un graphe est un objet très simple. Ce sont des points, et des liens entre certains de ces points. Avec si peu, on peut déjà démontrer des résultats surprenants. Le premier d’entre eux a été trouvé par le mathématicien Leonhard Euler en 1735, à propos d’une promenade dans une ville.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 21 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Les sept ponts de Königsberg</h3>
 <p>Au temps d’Euler, la ville de Königsberg, en Prusse, était traversée par un fleuve. Dans ce fleuve, il y avait deux îles. Appelons-les <span class="m">𝐴</span> (l’île de gauche) et <span class="m">𝐷</span> (l’île de droite). Le fleuve sépare aussi deux rives : la rive nord, que l’on appelle <span class="m">𝐵</span>, et la rive sud, que l’on appelle <span class="m">𝐶</span>.</p>
 <p>Sept ponts reliaient ces quatre terres. Voici la liste exacte.</p>
@@ -14,7 +20,8 @@
 <p><b>Des amitiés.</b> Cinq personnes sont inscrites sur un réseau social : Al, Bob, Cam, Dan et Euler. On note leurs initiales <span class="m">𝐴</span>, <span class="m">𝐵</span>, <span class="m">𝐶</span>, <span class="m">𝐷</span>, <span class="m">𝐸</span>. Al et Cam sont amis. Bob et Dan sont amis. Euler est ami avec tout le monde. Personne d’autre n’est ami. Comment représenter cette situation de façon lisible ?</p>
 <p><b>Des maisons et des services.</b> Trois maisons doivent chacune être raccordées à trois services : l’eau, le gaz et l’électricité. Cela fait <span class="m">3 × 3 = 9</span> conduites. Peut-on poser les neuf conduites sur un plan sans qu’aucune n’en croise une autre ?</p>
 <p>Dans les trois situations, il y a des objets (des terres, des personnes, des maisons et des services). Il y a des liens entre certains de ces objets (des ponts, des amitiés, des conduites). Et seule compte la liste des liens. Cette structure commune porte un nom : c’est un <i>graphe</i>.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 21 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c021/p0669_2.svg" alt="3 ponts B B (rive nord) D ve A D A eu 5 ponts fl 3 ponts C (rive sud) C 3 ponts Fig. 21.1 : Regarde à gauche la carte simplifiée de Königsberg : quatre terres 𝐴, 𝐵, 𝐶, 𝐷 et sept ponts en orange. À droite, chaque terre devient un point et chaque pont devient un trait. Les nombres en rouge comptent les traits qui touchent chaque point : 𝐴 en a 5, les trois autres en ont 3. Ces quatre nombres sont impairs." style="--w:24.12" loading="lazy">
 <p>Lis la figure 21.1 avec moi. À droite, il ne reste que quatre points et sept traits. Les deux traits courbes du haut sont les deux ponts entre <span class="m">𝐴</span> et <span class="m">𝐵</span>. Les deux du bas sont les deux ponts entre <span class="m">𝐴</span> et <span class="m">𝐶</span>. Les trois traits droits sont les trois ponts de l’île <span class="m">𝐷</span>. Chaque ligne du tableau se retrouve dans le dessin, et rien d’autre. Traverser chaque pont une fois revient donc à tracer chaque trait une fois sans lever le crayon.</p>
 <h3>Pourquoi la promenade est impossible</h3>
@@ -32,7 +39,8 @@
 <img class="vf" src="/discretes/img/c021/p0671_6.svg" alt="amitiés maisons m, services s A B m1 m2 m3 E s1 s2 s3 C D" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>21.2 :</b> À gauche, les amitiés : un point par personne, un trait par paire d’amis. Regarde le point rouge</i> <span class="m">𝐸</span> <i>: il touche les quatre autres, car Euler est ami avec tout le monde. À droite, les trois maisons</i> <span class="m">𝑚</span><sub>1</sub><span class="m">, 𝑚</span><sub>2</sub><span class="m">, 𝑚</span><sub>3</sub> <i>et les trois services</i> <span class="m">𝑠</span><sub>1</sub><span class="m">, 𝑠</span><sub>2</sub><span class="m">, 𝑠</span><sub>3</sub> <i>: chaque maison est reliée à chaque service, ce qui fait 9 traits. Des traits se croisent dans ce dessin.</i></p>
 <p>Dans la figure 21.2 à gauche, il y a 5 points et 6 traits : deux pour Al–Cam et Bob–Dan, quatre pour Euler. Tu lis qu’Al a 2 amis et qu’Euler en a 4. À droite, la question des conduites devient : peut-on redessiner ces 6 points et ces 9 traits sans croisement ? Le chapitre 23 répondra : c’est impossible.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 21 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Pourquoi il faut une définition précise</h3>
 <p>« Un dessin avec des points et des traits », c’est trop vague. Les traits doivent-ils être droits ? Leur longueur compte-t-elle ? Deux traits peuvent-ils relier les deux mêmes points ? Un trait peut-il relier trois points ? Un graphe peut-il n’avoir aucun trait ? Pour répondre sans hésiter, il faut une définition précise. Tout ce qu’on démontre ensuite en découle.</p>
 <p>Avant de la lire, regarde la figure 21.3 et cherche une réponse à cette question : parmi ces dessins, lesquels représentent « le même » graphe ?</p>
@@ -139,7 +147,8 @@
 <p><b>Fig.</b> <i><b>21.10 :</b> Quatre graphes nommés.</i> <span class="m">𝐾</span><sub>5</sub> <i>: 5 sommets, toutes les paires reliées, 10 arêtes.</i> <span class="m">𝐾</span><sub>2,3</sub> <i>: les 2 sommets rouges sont reliés à chacun des 3 sommets du bas, 6 arêtes.</i> <span class="m">𝐶</span><sub>6</sub> <i>: 6 sommets et 6 arêtes en boucle.</i> <span class="m">𝑃</span><sub>5</sub> <i>: 6 sommets et 5 arêtes en ligne.</i></p>
 <img class="vm" src="/discretes/img/c021/p0692_54.svg" alt="Attention à l’indice de 𝑃𝑛 : il compte les arêtes, pas les sommets. Sur la figure 21.10, 𝑃5 a 5 arêtes et 6 sommets. L’indice de 𝐶 , lui, compte les sommets, et un cycle 𝑛 a autant d’arêtes que de sommets : 𝐶6 a 6 sommets et 6 arêtes." style="--w:24.19" loading="lazy">
 <p>Tu rencontreras aussi plus loin la <i>roue</i> : un cycle <span class="m">𝐶</span><sub>𝑛</sub> auquel on ajoute un sommet central relié à tous les sommets du cycle. Elle servira au chapitre 24.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 21 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Réponse à la question de la figure 21.3</h3>
 <p><b>Les dessins du haut.</b> Compte d’abord les arêtes : (1) en a 6, (2) en a 5, (3) en a 6, (4) en a 5, (5) en a 4. Un isomorphisme envoie les arêtes de l’un, une à une, sur les arêtes de l’autre. Deux graphes isomorphes ont donc le même nombre d’arêtes. Le (5) n’est isomorphe à aucun autre.</p>
 <p>Dans (2) et (4), les 5 sommets ont degré 2. Suis les arêtes de l’étoile (4) : tu passes par les 5 pointes et tu reviens au départ. C’est une boucle de 5 sommets, comme le pentagone (2). Renomme le <span class="m">𝑘</span>-ième sommet rencontré dans (4) en <span class="m">𝑘</span>-ième sommet du pentagone : chaque arête va sur une arête. Les deux sont <span class="m">𝐶</span><sub>5</sub> . Dans (1), les 2 sommets du haut sont reliés à chacun des 3 du bas, et à rien d’autre. Dans (3), les sommets de gauche et de droite sont reliés à chacun des 3 sommets de la colonne du milieu, et à rien d’autre. Envoie le haut de (1) sur la gauche et la droite de (3), et le bas de (1) sur la colonne du milieu. Chaque arête va sur une arête. Les deux sont <span class="m">𝐾</span><sub>2,3</sub>.</p>
@@ -211,7 +220,8 @@
 <p><b>Nombre chromatique.</b> Le plus petit nombre de couleurs d’une coloration propre (chapitre 24).</p>
 <p><b>Chemin eulérien.</b> Une marche qui emprunte chaque arête exactement une fois (chapitre 25). C’est la promenade de Königsberg.</p>
 <p><b>Circuit eulérien.</b> Un chemin eulérien qui finit à son sommet de départ.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 21 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Ce chapitre fixe le vocabulaire de tous les chapitres qui suivent. Chacun reprend une question posée ici.</p>
 <img class="vm" src="/discretes/img/c021/p0705_71.svg" alt="Lien avec un autre chapitre Un graphe est un couple d’ensembles. Tout ce que tu as appris au chapitre 5 s’y applique : l’égalité de deux graphes est l’égalité de deux ensembles, et un sous- graphe se définit par l’inclusion ⊆. Un isomorphisme est une bijection au sens du chapitre 6, avec une condition en plus sur les arêtes. Et le nombre d’arêtes de 𝐾𝑛, (𝑛2), est le coefficient binomial du chapitre 8 : choisir une arête, c’est choisir 2 sommets parmi 𝑛." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c021/p0705_72.svg" alt="" style="--w:24.19" loading="lazy">
@@ -222,6 +232,8 @@
 <p class="li">La <b>coloration</b> (chapitre 24) utilise les graphes bipartis : ce sont exactement ceux qu’on peut colorier avec deux couleurs.</p>
 <p class="li">Les <b>chemins d’Euler</b> (chapitre 25) achèvent l’étude de Königsberg. Le comptage des degrés impairs, fait ici, en est le point de départ.</p>
 <p class="li">Les <b>couplages</b> (chapitre 26) se posent dans les graphes bipartis : relier chaque sommet d’un camp à un sommet distinct de l’autre.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 21 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c021/p0707_73.svg" alt="À toi de chercher Combien existe-t-il de graphes à 4 sommets, si l’on considère comme identiques deux graphes isomorphes ? Sans noms, deux dessins comptent pour un seul graphe dès qu’un renommage transforme l’un en l’autre. Tu peux classer les graphes selon leur nombre d’arêtes, de 0 à (42) = 6. Mais comment être sûr, pour un nombre d’arêtes donné, de n’avoir oublié aucun graphe, et de n’en avoir compté aucun deux fois ? Que remarques-tu en comparant les graphes à 𝑘 arêtes et ceux à 6 − 𝑘 arêtes ? Et que" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c021/p0707_74.svg" alt="devient la méthode pour 5 sommets, où il y a (52) = 10 paires possibles ?" style="--w:24.19" loading="lazy">
+</div>
