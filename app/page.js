@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { getToc, slugOf, labelOf } from '../lib/book';
+import { getToc, getBranches } from '../lib/book';
+import ChapterList from './components/ChapterList';
 
 const ROLES = [
   ['#d6e4f2', '#1f4e79', 'Bleu', 'l’objet que la fiche définit'],
@@ -14,6 +15,7 @@ export default function Home() {
   const toc = getToc();
   const done = toc.filter((c) => c.file);
   const fiches = done.reduce((a, c) => a + c.n, 0);
+  const byKey = new Map(toc.map((c) => [String(c.key), c]));
   return (
     <div id="home">
       <div className="ck">Fiches illustrées</div>
@@ -33,26 +35,22 @@ export default function Home() {
         ))}
       </div>
 
-      <h2>Chapitres</h2>
-      <ul id="chl">
-        {toc.map((c) => (
-          <li key={c.key}>
-            {c.file ? (
-              <Link href={`/chapitre/${slugOf(c)}/`}>
-                <span className="k">{c.key}</span>
-                <span>{c.title}</span>
-                <span className="c">{c.n} fiches</span>
-              </Link>
-            ) : (
-              <span className="na">
-                <span className="k">{c.key}</span>
-                <span>{labelOf(c)}</span>
-                <span className="c">à venir</span>
-              </span>
-            )}
-          </li>
-        ))}
-      </ul>
+      <h2>Chapitres par branche</h2>
+      <ChapterList chapters={toc.filter((c) => c.key === 'AP')} />
+      {getBranches().map((b) => (
+        <section key={b.slug} className="bs">
+          <h3 className="bt">
+            <Link href={`/branche/${b.slug}/`}>{b.title}</Link>
+          </h3>
+          {b.sections.map((s) => (
+            <div key={s.title}>
+              {b.sections.length > 1 && <div className="ss">{s.title}</div>}
+              <ChapterList chapters={s.chapters.map((k) => byKey.get(k)).filter(Boolean)} />
+            </div>
+          ))}
+        </section>
+      ))}
+      <ChapterList chapters={toc.filter((c) => c.key === 'A')} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getToc, slugOf, labelOf } from '../../../lib/book';
+import { getToc, slugOf, labelOf, branchOf } from '../../../lib/book';
 import ChapterBody from './ChapterBody';
 
 // Une page statique par chapitre déjà fait.
@@ -23,6 +23,7 @@ export default async function Chapter({ params }) {
   const c = done[i];
   const prev = done[i - 1];
   const next = done[i + 1];
+  const branch = branchOf(c.key);
   const nav = (
     <nav className="pn" aria-label="Chapitres voisins">
       {prev ? <Link href={`/chapitre/${slugOf(prev)}/`}>‹ {labelOf(prev)}</Link> : <span />}
@@ -31,6 +32,11 @@ export default async function Chapter({ params }) {
   );
   return (
     <>
+      {branch && (
+        <p className="crumb">
+          <Link href={`/branche/${branch.slug}/`}>{branch.title}</Link>
+        </p>
+      )}
       {nav}
       {/* Le contenu du chapitre est du HTML produit par le kit (texte du livre + figures SVG). */}
       <ChapterBody file={c.file} />

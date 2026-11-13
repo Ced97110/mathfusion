@@ -1,5 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
+import BranchMenu from './components/BranchMenu';
 
 export const metadata = {
   title: 'Des nombres aux structures — fiches illustrées',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <Link href="/" className="bb">Sommaire</Link>
           <div className="t">Des nombres aux structures</div>
         </header>
+        <BranchMenu />
         <main>{children}</main>
       </body>
     </html>
