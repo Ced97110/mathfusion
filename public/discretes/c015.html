@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 15</div>
-<h1>Suites arithmétiques et géométriques</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 15</div>
+<h1 class="ct">Suites arithmétiques et géométriques</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 14, tu as décrit des suites de deux façons : par une formule explicite, ou par une définition par récurrence. Trouver une formule explicite était difficile. Ce chapitre traite deux familles de suites où c’est facile. Il apprend aussi à additionner leurs termes sans faire toutes les additions.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 15 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Trois motifs de points</h3>
 <p>Regarde la figure 15.1. Elle montre trois motifs de points qui grandissent. Pour chacun, tu dois dessiner le motif suivant. Puis tu dois trouver une définition par récurrence et une formule explicite du nombre de points du motif <span class="m">𝑛</span>.</p>
 <img class="vm" src="/discretes/img/c015/p0460_1.svg" alt="n = 0 : 1 n = 1 : 5 n = 2 : 9 n = 3 : 13" style="--w:24.12" loading="lazy">
@@ -19,14 +25,16 @@
 <p>2. Un autre réglage donne 7 bonbons au premier client, 10 au deuxième, 13 au troisième, 16 au quatrième, et ainsi de suite. Combien de bonbons sont sortis après 20 pièces ?</p>
 <p>3. Un troisième réglage donne 4, puis 7, puis 12, puis 19 bonbons, et ainsi de suite. Combien sont sortis après 20 pièces ?</p>
 <p>La première question se fait de tête : <span class="m">650 −</span> <span class="m">20 × 7 = 510</span>. Pour la deuxième, tu peux additionner 20 nombres à la main. Mais pour 2000 pièces ? Il faut une méthode. Ce chapitre la donne.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 15 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vf" src="/discretes/img/c015/p0462_4.svg" alt="2, 5, 8, 11, 14 3, 6, 12, 24, 48 50 50 chaque fois ×2 40 40 +24 30 30 20 20 +12 +3 10 +3 10 +6 +3 +3 +3 0 0 0 1 2 3 4 0 1 2 3 4 n n" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>15.2 :</b> Regarde les segments rouges verticaux. À gauche, ils ont tous la même hauteur, 3 : les points sont alignés. À droite, chaque segment rouge est égal à la hauteur du point d’où il part : 3, puis 6, puis 12. Les sauts grandissent, mais le rapport reste le même : on multiplie toujours par 2.</i></p>
 <p>Lis la figure 15.2 avec moi. Elle montre deux suites, de l’indice 0 à l’indice 4.</p>
 <p>À gauche, la suite <span class="m">2, 5, 8, 11, 14</span>. Entre deux points voisins, tu montes toujours de 3 : <span class="m">5 − 2 = 3</span>, <span class="m">8 − 5 = 3</span>, et ainsi de suite. Les marches ont toutes la même hauteur. C’est pour cela que les points sont sur une droite. Pour aller de l’indice 0 à l’indice 4, tu montes 4 marches de 3. Donc le terme d’indice 4 vaut <span class="m">2 + 4 × 3 = 14</span>.</p>
 <p>À droite, la suite <span class="m">3, 6, 12, 24, 48</span>. Les marches ne sont pas égales : <span class="m">+3</span>, <span class="m">+6</span>, <span class="m">+12</span>, <span class="m">+24</span>. Mais regarde chaque marche. Elle a la même hauteur que le point d’où elle part. Le point 6 monte de 6 ; le point 12 monte de 12. Ajouter un nombre à lui-même, c’est le multiplier par 2. Ce qui reste constant, ce n’est pas la différence, c’est le rapport : <span class="m">6/3 = 2</span>, <span class="m">12/6 = 2</span>. Pour aller de l’indice 0 à l’indice 4, tu multiplies 4 fois par 2. Donc le terme d’indice 4 vaut <span class="m">3×2×2×2×2 = 3×2</span><sup>4</sup> <span class="m">=</span> <span class="m">48</span>.</p>
 <p>La croix de la figure 15.1 ressemble à la suite de gauche : on ajoute toujours 4. Les groupes de points ressemblent à celle de droite : on multiplie toujours par 3.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 15 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Les suites arithmétiques</h3>
 <img class="vm" src="/discretes/img/c015/p0463_5.svg" alt="Définition : suite arithmétique Une suite est arithmétique si la différence entre deux termes consécutifs est toujours la même. Cette différence constante s’appelle la raison. On la note 𝑑." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c015/p0464_6.svg" alt="" style="--w:24.19" loading="lazy">
@@ -55,7 +63,8 @@
 <img class="vm" src="/discretes/img/c015/p0468_21.svg" alt="𝑎 = −1 + 6 = 5. 2 Ton objection Tu vas me dire : « Mon ancien manuel écrit 𝑎𝑛 = 𝑎 + (𝑛 − 1)𝑑 et 𝑎𝑛 = 𝑎 ⋅ 𝑟𝑛−1. Lequel a raison ? » Les deux. Ton manuel appelle 𝑎 le terme 𝑎1. Ici, 𝑎 est le terme 𝑎0. Si la suite" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0468_22.svg" alt="commence à 𝑎 , il n’y a que 𝑛 − 1 marches 1 entre l’indice 1 et l’indice 𝑛. D’où 𝑛 − 1 au lieu de 𝑛. Vérifie sur 2, 5, 8 avec 𝑎1 = 2 : 2 + (𝑛 − 1) × 3 = 3𝑛 − 1, et −1 + 3𝑛 donne la" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0468_23.svg" alt="même chose." style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 15 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Reconnaître une suite et écrire ses formules</h3>
 <img class="vm" src="/discretes/img/c015/p0469_24.svg" alt="Pour savoir si une suite est arithmétique, calcule les différences entre termes voisins. Si elles sont toutes égales, la suite est arithmétique, et cette différence est 𝑑. Dans les exemples suivants, le premier terme écrit est 𝑎 . 0" style="--w:24.12" loading="lazy">
 <p>1. <span class="m">2, 5, 8, 11, 14, …</span> On a <span class="m">5−2 = 3</span>, <span class="m">8−5 = 3</span>, et ainsi de suite. Donc <span class="m">𝑑 = 3</span>. Définition par récurrence : <span class="m">𝑎</span><sub>𝑛</sub> <span class="m">= 𝑎</span><sub>𝑛−1</sub> <span class="m">+ 3</span> avec <span class="m">𝑎</span><sub>0</sub> <span class="m">= 2</span>. Formule explicite : <span class="m">𝑎</span><sub>𝑛</sub> <span class="m">= 2 + 3𝑛</span>. 2. <span class="m">50, 43, 36, 29, …</span> On ajoute <span class="m">−7</span> pour passer de 50 à 43, et ainsi de suite. Donc <span class="m">𝑑 = −7</span>. Récurrence : <span class="m">𝑎</span><sub>𝑛</sub> <span class="m">= 𝑎</span><sub>𝑛−1</sub> <span class="m">− 7</span> avec <span class="m">𝑎</span><sub>0</sub> <span class="m">= 50</span>. Formule : <span class="m">𝑎</span><sub>𝑛</sub> <span class="m">= 50 − 7𝑛</span>.</p>
@@ -160,12 +169,15 @@
 <img class="vm" src="/discretes/img/c015/p0484_69.svg" alt="La figure 15.7, à gauche, montre ce que veut dire cette somme infinie. Les sommes partielles s’approchent de 46 autant qu’on 99 veut. Le nombre 46 est leur limite. C’est 99 la notion de limite du calcul différentiel, appliquée aux sommes géométriques infinies." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0485_70.svg" alt="Le cas limite Applique la même méthode à 𝑁 = 1 + 2 + 4 + 8 + ⋯, sans fin. Multiplie par 2 : 2𝑁 = 2 + 4 + 8 + ⋯ Soustrais : 2𝑁 − 𝑁 = −1, donc 𝑁 = −1. Une somme de nombres positifs donnerait −1. C’est absurde. L’erreur est dans la première ligne. La méthode suppose que 𝑁 existe, c’est-à-dire que les sommes partielles s’approchent d’un nombre. Regarde la figure 15.7, à droite : avec 𝑟 = 2, elles valent 2𝑛+1 − 1 et grandissent sans limite. Il n’y a pas de nombre 𝑁. Avec 𝑟 = 0,01, au contraire, le terme 𝑟𝑛+1 de la formule devient minuscule et disparaît. Une somme géométrique infinie n’a de sens que si les termes rapetissent, c’est-à-" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0485_71.svg" alt="dire si 𝑟 est strictement entre −1 et 1." style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 15 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Les deux familles de ce chapitre sont les plus simples des suites définies par récurrence. Les chapitres suivants partent d’elles.</p>
 <p class="li"><b>Le troisième distributeur</b> donne <span class="m">4, 7, 12, 19, …</span> Les différences <span class="m">3, 5, 7</span> forment une suite arithmétique. Avec la méthode des sommes partielles, le client numéro <span class="m">𝑘</span> reçoit <span class="m">4+3+5+⋯+(2𝑘−1)</span>, c’est-à-dire <span class="m">𝑘</span><sup>2</sup> <span class="m">+ 3</span> bonbons. Vérifie : <span class="m">𝑘 = 3</span> donne 12. Le total après 20 pièces est la somme des <span class="m">𝑘</span><sup>2</sup> <span class="m">+ 3</span> pour <span class="m">𝑘</span> de 1 à 20, soit 2930. Mais cette somme n’est ni arithmétique ni géométrique : elle contient des carrés. Le chapitre 16 donne une méthode pour ce genre de suite. Il part de l’observation de ce chapitre : les différences d’une suite peuvent être plus simples que la suite.</p>
 <img class="vm" src="/discretes/img/c015/p0486_72.svg" alt="• Les relations 𝑎𝑛 = 𝑎𝑛−1 + 𝑑 et 𝑎𝑛 = 𝑟 ⋅ 𝑎𝑛−1 sont les relations de récurrence les plus simples. Le chapitre 17 résout des relations plus compliquées. Elles s’y ramènent souvent. Prends Hanoï (chapitre 14) : 𝐻𝑛 = 2𝐻𝑛−1 + 1. Ajoute 1 des deux côtés : 𝐻𝑛 + 1 = 2(𝐻𝑛−1 + 1). La suite 𝐻 + 1 est donc géométrique, de 𝑛 raison 2, avec 𝐻1 + 1 = 2. Donc 𝐻𝑛 + 1 = 2𝑛, et 𝐻𝑛 = 2𝑛 − 1. La formule devinée au chapitre précédent sort directement." style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0486_73.svg" alt="• Les formules de somme se prouvent aussi par le raisonnement par récurrence (induction) du chapitre 18. C’est souvent le premier exemple qu’on y traite : 1 + 2 + 𝑛(𝑛+1) ⋯ + 𝑛 = . 2 • La somme géométrique infinie 1 + 𝑥 +" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c015/p0486_74.svg" alt="𝑥2 + ⋯ = 1 est la formule de départ des 1−𝑥 fonctions génératrices (chapitre 27). C’est la règle de ce chapitre avec 𝑎 = 1, 𝑟 = 𝑥, et le terme 𝑥𝑛+1 qui disparaît." style="--w:24.12" loading="lazy">
 <p class="li"><b>Les puissances de 2</b> reviennent au dénombrement. La somme <span class="m">1 + 2 + 4 + ⋯ +</span> <span class="m">2</span><sup>𝑛</sup> <span class="m">= 2</span><sup>𝑛+1</sup> <span class="m">− 1</span> compte les mots binaires de longueur 0 à <span class="m">𝑛</span> : il y a <span class="m">2</span><sup>0</sup> <span class="m">= 1</span> mot de longueur 0 (le mot vide), <span class="m">2</span><sup>1</sup> <span class="m">= 2</span> mots de longueur 1, et ainsi de suite jusqu’aux <span class="m">2</span><sup>𝑛</sup> mots de longueur <span class="m">𝑛</span>. Et chaque ligne du triangle de Pascal a pour somme une puissance de 2 (chapitres 8 et 10).</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 15 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c015/p0488_75.svg" alt="À toi de chercher Tu as deux méthodes. Retourner et additionner marche quand ce qu’un terme gagne, son symétrique le perd : la différence est constante. Multiplier, décaler, soustraire marche quand multiplier par 𝑟 transforme chaque terme en le suivant : le rapport est constant. Regarde maintenant la somme 1 ⋅ 2 + 2 ⋅ 4 + 3 ⋅ 8 + ⋯ + 𝑛 ⋅ 2𝑛. Chaque terme est un nombre d’une suite arithmétique (1, 2, 3, … ) multiplié par un nombre d’une suite géométrique (2, 4, 8, … ). Aucune des deux méthodes ne s’applique telle quelle. Essaie quand même de multiplier par 2, de décaler, et de soustraire. Les termes ne s’annulent plus. Que reste-t-il dans chaque colonne ? La somme qui reste, la sais-tu calculer ? Et si oui, que dit ce résultat sur les sommes qu’on peut « réduire » à une somme plus simple ?" style="--w:24.19" loading="lazy">
+</div>
