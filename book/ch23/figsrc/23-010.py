@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+u = 5.6; X = 5 * u; B = 3 * u; ox = 14; oy = 12
+box(ax, ox, oy, X, X, 'sujet', True, label=r'$x^2$', size='l')
+box(ax, ox + X, oy, B, X, 'fixe', True, label=r'$3x$')
+box(ax, ox, oy + X, X, B, 'fixe', True, label=r'$3x$')
+box(ax, ox + X, oy + X, B, B, 'varie', True, label='9')
+box(ax, ox, oy, X + B, X + B, 'resultat', False, lw=1.8)
+text(ax, ox + X / 2, oy - 3.5, r'$x$', 'sujet', 's'); text(ax, ox + X + B / 2, oy - 3.5, '3', 'fixe', 's')
+text(ax, ox - 4, oy + X / 2, r'$x$', 'sujet', 's'); text(ax, ox - 4, oy + X + B / 2, '3', 'fixe', 's')
+text(ax, 62, 44, r'$x^2+6x+9$', 'encre', 'm', ha='left')
+text(ax, 62, 36, r'$=(x+3)^2$', 'resultat', 'm', ha='left')
+text(ax, 62, 22, r'$x=5$ donne', 'encre', 's', ha='left')
+text(ax, 62, 16, '25 + 30 + 9 = 64', 'encre', 's', ha='left')
+save(fig, '23-010')

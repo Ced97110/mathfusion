@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 22, 72, 'Facteurs', 'sujet', 'm', weight='bold'); text(ax, 66, 72, r'$x^2-3x-1=0$', 'fixe', 'm', weight='bold')
+box(ax, 2, 50, 40, 13, 'sujet', label=r'$(x-p)(x-q)=0$')
+box(ax, 2, 24, 40, 13, 'resultat', label=r'$x=p\ \mathrm{ou}\ x=q$')
+arrow(ax, (22, 49.5), (22, 37.5), 'varie')
+text(ax, 22, 15, 'p et q : entiers', 'resultat', 's'); text(ax, 22, 9, 'ou fractions', 'resultat', 's')
+box(ax, 46, 50, 40, 13, 'fixe', label=r'$x=\frac{3\pm\sqrt{13}}{2}$')
+box(ax, 46, 24, 40, 13, 'varie', label=r'$\sqrt{13}$ : pas une fraction')
+arrow(ax, (66, 49.5), (66, 37.5), 'varie')
+text(ax, 66, 15, 'donc pas de facteurs', 'fixe', 's'); text(ax, 66, 9, 'rationnels', 'fixe', 's')
+save(fig, '23-050')

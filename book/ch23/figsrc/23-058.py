@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+f = numberline(ax, 6, 80, 28, -16, 4, step=4, arrow_right=False, size='s')
+ax.add_patch(Rectangle((f(0), 26.4), f(4)-f(0), 3.2, ec=COL['sujet'], fc=FILL['sujet'], lw=0.8, zorder=2))
+text(ax, f(2), 34, r'$b^2=4$', 'sujet', 's')
+arrow(ax, (f(4), 40), (f(-16), 40), 'varie')
+text(ax, f(-6), 46, r'$-4ac=-20$', 'varie', 'm')
+disc(ax, f(-16), 28, 1.6, 'limite'); text(ax, f(-16)+8, 34, r'$-16$ : négatif', 'limite', 's')
+text(ax, 44, 12, 'sous la racine : pas de solution', 'limite', 's')
+text(ax, 44, 63, r'$b=2,\ a=1,\ c=5$', 'sujet', 'm')
+save(fig, '23-058')

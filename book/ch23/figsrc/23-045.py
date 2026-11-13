@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 24, 52, 40, 10, 'sujet', label='x² + 10x')
+text(ax, 44, 45, 'il faut 2p = 10', 'varie', 's')
+box(ax, 3, 26, 26, 10, 'limite', label='p = 4 : 8x')
+box(ax, 31, 26, 26, 10, 'resultat', label='p = 5 : 10x')
+box(ax, 59, 26, 26, 10, 'limite', label='p = 6 : 12x')
+arrow(ax, (44, 25), (44, 16), 'varie')
+box(ax, 24, 5, 40, 10, 'resultat', label='p² = 25')
+save(fig, '23-045')
