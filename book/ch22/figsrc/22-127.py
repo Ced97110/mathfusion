@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+u=6
+P=lambda x,y:(32+u*x,28+u*y)
+poly(ax,[P(0,0),P(4,0),P(4,-4),P(0,-4)],'fixe')
+poly(ax,[P(0,0),P(0,3),P(-3,3),P(-3,0)],'fixe')
+poly(ax,[P(4,0),P(0,3),P(3,7),P(7,4)],'resultat')
+poly(ax,[P(0,0),P(4,0),P(0,3)],'sujet')
+line(ax,[(P(0,0)[0]+2.2,P(0,0)[1]),(P(0,0)[0]+2.2,P(0,0)[1]+2.2),(P(0,0)[0],P(0,0)[1]+2.2)],'encre',lw=0.7)
+text(ax,*P(2,-2),'$4^2=16$','fixe','s')
+text(ax,*P(-1.5,1.5),'$3^2=9$','fixe','s')
+text(ax,*P(4.5,4.3),'$5^2=25$','resultat','s')
+text(ax,*P(-0.8,-0.8),'$A$','sujet','m')
+text(ax,*P(4.7,-0.4),'$B$','sujet','m')
+text(ax,*P(-0.7,3.7),'$C$','sujet','m')
+text(ax,24,65,'$9+16=25$','resultat','m')
+save(fig,'22-127')

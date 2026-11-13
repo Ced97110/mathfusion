@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,2,64,40,10,'resultat',label=r'$\sqrt{4x-5}=6$')
+box(ax,46,64,40,10,'limite',label=r'$\sqrt{4x-5}=-6$')
+arrow(ax,(22,64),(34,52),'varie'); arrow(ax,(66,64),(54,52),'varie')
+text(ax,44,59,'élever au carré','varie','s')
+box(ax,24,42,40,10,'sujet',label=r'$4x-5=36$')
+arrow(ax,(44,42),(44,32),'encre')
+box(ax,24,22,40,10,'sujet',label=r'$x=41/4$')
+arrow(ax,(34,22),(22,12),'resultat'); arrow(ax,(54,22),(66,12),'limite')
+box(ax,2,2,40,10,'resultat',label='convient pour 6')
+box(ax,46,2,40,10,'limite',label='parasite pour −6')
+save(fig,'22-144')

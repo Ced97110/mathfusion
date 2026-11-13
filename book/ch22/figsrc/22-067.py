@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 6, 36, 24, 14, role='fixe', fill=True, label=r'$\sqrt{12}$', size='l')
+box(ax, 58, 36, 24, 14, role='resultat', fill=True, label=r'$2\sqrt{3}$', size='l')
+text(ax, 44, 45, '=', 'encre', 'l'); text(ax, 44, 39, 'même nombre', 'encre', 's')
+text(ax, 18, 31.5, 'contient 4', 'fixe', 's'); text(ax, 70, 31.5, 'forme simplifiée', 'resultat', 's')
+f = numberline(ax, 8, 80, 12, 3, 4, step=0.25, labels=False, arrow_right=False)
+m = f(3.464)
+disc(ax, m, 12, 1.4, 'sujet')
+arrow(ax, (18, 28), (m-1.5, 15), 'fixe'); arrow(ax, (70, 28), (m+1.5, 15), 'resultat')
+text(ax, m, 5.5, '3,464', 'sujet', 'm')
+save(fig, '22-067')

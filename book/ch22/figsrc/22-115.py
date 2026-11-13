@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,2,42,22,10,'sujet',label=r'$m = -11$')
+arrow(ax,(25,47),(33,47),'varie'); text(ax,29,55,'remplacer','varie','s')
+box(ax,34,42,50,10,'fixe',label=r'$2\times(-11)+3 = -19$')
+f=numberline(ax,8,80,24,-20,4,step=4,labels=False,arrow_right=False)
+poly(ax,[(8,26),(f(0),26),(f(0),35),(8,35)],'limite')
+text(ax,(8+f(0))/2,30.5,'√ d’un négatif : pas réel','limite','s')
+disc(ax,f(-19),24,2,'limite'); text(ax,f(-19),18,'−19','limite','s'); text(ax,f(0),18,'0','fixe','s')
+box(ax,16,2,52,9,'limite',label=r'$m=-11$ est rejeté')
+save(fig,'22-115')

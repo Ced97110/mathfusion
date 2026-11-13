@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(50)
+text(ax,44,45,r'$\sqrt{x^2}=|x|$','resultat','l')
+f=numberline(ax,10,78,14,-5,5,step=5,arrow_right=False)
+brace(ax,f(-5),f(0),17,'varie',label='5 pas',down=False); brace(ax,f(0),f(5),17,'varie',label='5 pas',down=False)
+disc(ax,f(-5),14,1.8,'sujet'); disc(ax,f(5),14,1.8,'sujet')
+text(ax,f(-5)+3,27,r'$x=-5$','sujet','m'); text(ax,f(5)-3,27,r'$x=5$','sujet','m')
+arrow(ax,(f(-5)+3,25),(f(-5)+3,23),'sujet'); arrow(ax,(f(5)-3,25),(f(5)-3,23),'sujet')
+text(ax,44,37,r'distance à 0 : $|x|=5$ pour les deux','resultat','m')
+save(fig,'22-053')

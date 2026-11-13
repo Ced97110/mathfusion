@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+box(ax,4,22,21,21,'sujet',label='aire 36')
+brace(ax,4,25,22,label='côté ?')
+box(ax,54,34,26,10,'autre',label=r'$6$ ?',size='l')
+box(ax,54,14,26,10,'autre',label=r'$-6$ ?',size='l')
+arrow(ax,(26,34),(53,39),'varie'); arrow(ax,(26,31),(53,19),'varie')
+text(ax,67,29,'ou','encre','m')
+text(ax,38,47,'quel nombre ?','varie','s')
+save(fig,'22-114')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,56,r'$\sqrt{a+b}=\sqrt{a}+\sqrt{b}\ ?$','sujet','l')
+text(ax,4,46,'a = 4 et b = 9','limite','s',ha='left')
+box(ax,4,34,34,9,'limite',label=r'$\sqrt{4+9}\approx3{,}61$'); box(ax,50,34,34,9,'limite',label=r'$\sqrt{4}+\sqrt{9}=5$')
+text(ax,44,38.5,'≠','limite','l')
+text(ax,4,26,'a = 0 et b = 4','resultat','s',ha='left')
+box(ax,4,14,34,9,'resultat',label=r'$\sqrt{0+4}=2$'); box(ax,50,14,34,9,'resultat',label=r'$\sqrt{0}+\sqrt{4}=2$')
+text(ax,44,18.5,'=','resultat','l')
+save(fig,'22-153')

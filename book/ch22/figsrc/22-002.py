@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 6, 14, 20, 20, 'sujet', label='4', size='xl')
+box(ax, 62, 14, 20, 20, 'resultat', label='16', size='xl')
+arrow(ax, (28, 29), (60, 29), 'varie')
+arrow(ax, (60, 19), (28, 19), 'autre')
+text(ax, 44, 33.5, 'élever au carré', 'varie', 's')
+text(ax, 44, 14.5, 'opération inverse', 'autre', 's')
+text(ax, 44, 44, 'le 2e calcul défait le 1er', 'encre', 'm')
+save(fig, '22-002')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,29,62,30,10,'sujet',label='$m=-11$',size='m')
+box(ax,3,40,38,10,'fixe',label='$2(-11)+3=-19$',size='s')
+box(ax,47,40,38,10,'fixe',label='$-11-8=-19$',size='s')
+arrow(ax,(38,62),(22,50),'varie'); arrow(ax,(50,62),(66,50),'varie')
+box(ax,8,20,72,12,'limite',label='$\\sqrt{-19}$ : pas un nombre réel',size='s')
+arrow(ax,(22,40),(36,32),'varie'); arrow(ax,(66,40),(52,32),'varie')
+text(ax,44,10,'solution parasite : rejetée','limite','m')
+save(fig,'22-140')
