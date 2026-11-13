@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 75, r'$\eta(ab)=\eta(a)\,\eta(b)$', 'encre', 'm')
+box(ax, 2, 50, 24, 12, 'sujet', label=r'$5$ et $6$', size='s')
+box(ax, 62, 50, 24, 12, 'sujet', label=r'$30$', size='s')
+box(ax, 2, 14, 24, 12, 'autre', label=r'$\bar{1}$ et $\bar{2}$', size='s')
+box(ax, 62, 14, 24, 12, 'resultat', label=r'$\bar{2}$', size='s')
+arrow(ax, (27, 56), (61, 56), 'varie'); text(ax, 44, 60, r'multiplier', 'varie', 's')
+arrow(ax, (74, 49), (74, 27), 'varie'); text(ax, 80, 38, r'$\eta$', 'varie', 'm', ha='left')
+arrow(ax, (14, 49), (14, 27), 'varie'); text(ax, 8, 38, r'$\eta$', 'varie', 'm', ha='right')
+arrow(ax, (27, 20), (61, 20), 'varie'); text(ax, 44, 16, r'multiplier', 'varie', 's')
+text(ax, 44, 38, 'même résultat', 'resultat', 's')
+save(fig, '52-136')

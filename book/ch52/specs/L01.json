@@ -1,0 +1,184 @@
+[
+ {
+  "code": "52-001",
+  "a_dire": "Un quotient de groupe demande un sous-groupe normal.",
+  "legende_titre": "Trois paquets, une somme",
+  "lecture": [
+   "Le cadre bleu du haut donne la règle : un quotient exige un sous-groupe normal.",
+   "Le paquet bleu (5 et 9) s'additionne au paquet orange (6 et 10).",
+   "Les deux sommes, 11 et 19, tombent dans le même paquet vert.",
+   "Leur différence est 8, un multiple de 4."
+  ],
+  "a_voir": "La somme de deux paquets ne dépend pas du nombre pris dans chaque paquet : c'est ce que la condition garantit."
+ },
+ {
+  "code": "52-002",
+  "a_dire": "Un découpage donne un anneau si l'addition et la multiplication ont un sens sur les paquets.",
+  "legende_titre": "Découper, puis calculer sur les paquets",
+  "lecture": [
+   "Le grand cadre gris contient les entiers.",
+   "Les quatre cadres colorés sont les paquets selon le reste par 4.",
+   "Les deux lignes orange demandent si la somme et le produit de deux paquets sont encore un paquet."
+  ],
+  "a_voir": "Il faut vérifier les deux opérations, pas seulement l'addition."
+ },
+ {
+  "code": "52-003",
+  "a_dire": "L'horloge à 12 heures garde les restes, et les restes s'additionnent et se multiplient.",
+  "legende_titre": "L'horloge et ses douze paquets",
+  "lecture": [
+   "Le cercle gris est l'horloge.",
+   "L'arc orange va de 9 à 2 en 5 heures.",
+   "L'arc violet en pointillés fait un tour complet de plus, 17 heures.",
+   "Les deux arcs arrivent sur le même point vert, 2."
+  ],
+  "a_voir": "Ajouter 5 ou 17 donne le même reste, donc on calcule avec les paquets."
+ },
+ {
+  "code": "52-004",
+  "a_dire": "Sur l'horloge, 5 fois 5 donne 1, et 17 fois 5 donne aussi 1.",
+  "legende_titre": "Deux produits, un même reste",
+  "lecture": [
+   "Chaque case grise vaut un paquet de 12.",
+   "La case verte est ce qui reste.",
+   "La ligne du haut montre 25, la ligne du bas montre 85.",
+   "Les deux lignes finissent sur la même case verte, 1."
+  ],
+  "a_voir": "Les deux essais ont le même reste, mais deux essais ne suffisent pas pour tous les entiers."
+ },
+ {
+  "code": "52-005",
+  "a_dire": "La multiplication passe aussi aux paquets : l'horloge a deux opérations.",
+  "legende_titre": "Une opération de plus",
+  "lecture": [
+   "Le cadre bleu du haut est l'horloge à 12 heures.",
+   "Le cadre gris à gauche montre l'addition, déjà vue au chapitre 47.",
+   "Le cadre orange à droite ajoute la multiplication."
+  ],
+  "a_voir": "L'horloge devient un anneau : addition et multiplication sur les mêmes paquets."
+ },
+ {
+  "code": "52-006",
+  "a_dire": "Deux éléments sont dans le même paquet quand leur différence est dans I.",
+  "legende_titre": "Même paquet : regarder la différence",
+  "lecture": [
+   "Sur la droite, les points gris sont les multiples de 12, c'est-à-dire I.",
+   "Le point bleu est 5.",
+   "Le point vert (17) a pour différence 12 avec 5, un point de I.",
+   "Le point rouge (18) a pour différence 13, hors de I."
+  ],
+  "a_voir": "Le test du même paquet est : la différence appartient-elle à I ?"
+ },
+ {
+  "code": "52-007",
+  "a_dire": "La lettre R désigne un anneau quelconque.",
+  "legende_titre": "Une lettre pour tous les anneaux",
+  "lecture": [
+   "Le cadre bleu est la lettre R.",
+   "Les deux cadres violets sont deux anneaux, les entiers et les matrices 2 sur 2 (cases a, b, c, d).",
+   "Les flèches bleues montrent que R peut être l'un ou l'autre."
+  ],
+  "a_voir": "Une seule phrase écrite avec R vaut pour tous les anneaux."
+ },
+ {
+  "code": "52-008",
+  "a_dire": "La lettre I désigne la partie de l'anneau qu'on étudie, ici les multiples de 4.",
+  "legende_titre": "I : les multiples de 4",
+  "lecture": [
+   "Le cadre en pointillés est l'anneau R, les entiers.",
+   "Les grands points bleus sont les multiples de 4.",
+   "Les petits points gris sont les autres entiers.",
+   "Le cadre bleu du bas donne le nom I à ces points bleus."
+  ],
+  "a_voir": "I est une partie de R."
+ },
+ {
+  "code": "52-009",
+  "a_dire": "Si a et a' sont dans un paquet, b et b' dans un autre, on demande si ab et a'b' sont dans un même paquet.",
+  "legende_titre": "Changer de représentant, garder le produit ?",
+  "lecture": [
+   "Le cadre orange contient deux éléments d'un même paquet, 5 et 17.",
+   "Le cadre violet en contient deux d'un autre, 2 et 14.",
+   "Le cadre vert contient les deux produits, 10 et 238, qui ont le même reste."
+  ],
+  "a_voir": "La question porte sur un produit d'éléments pris dans les paquets."
+ },
+ {
+  "code": "52-010",
+  "a_dire": "On vérifie que le produit de deux paquets ne dépend pas des représentants choisis.",
+  "legende_titre": "Deux choix, une même arrivée ?",
+  "lecture": [
+   "La ligne orange choisit 7 et 3.",
+   "La ligne violette choisit 19 et 15, dans les mêmes paquets.",
+   "Les deux flèches arrivent dans le même cadre vert, reste 9."
+  ],
+  "a_voir": "Deux représentants différents doivent donner le même paquet."
+ },
+ {
+  "code": "52-011",
+  "a_dire": "Le mot idéal nomme la condition qui permet de multiplier les paquets.",
+  "legende_titre": "Une partie qui convient, une qui ne convient pas",
+  "lecture": [
+   "Le cadre bleu du haut est le mot idéal : il nomme la condition pour multiplier les paquets.",
+   "Le cadre vert montre les multiples de 12 : multipliés par un entier, ils restent dedans.",
+   "Le cadre rouge montre les nombres impairs : le 0 n'y est pas, donc on ne peut pas additionner."
+  ],
+  "a_voir": "Le mot idéal nomme la condition qui permet de multiplier les paquets."
+ },
+ {
+  "code": "52-012",
+  "a_dire": "Le noyau d'un homomorphisme est l'ensemble des éléments envoyés sur 0 ; pour les anneaux, quelle sorte de partie est-ce ?",
+  "legende_titre": "Le noyau de « reste par 4 »",
+  "lecture": [
+   "Les ronds de gauche sont des entiers, ceux de droite sont leurs restes par 4.",
+   "Les flèches bleues partent de 12, 8, 4 et 0 vers 0 : ils forment le noyau, dans le cadre en pointillés.",
+   "Les flèches grises envoient 5 sur 1 et 6 sur 2.",
+   "La question du bas : quelle sorte de partie est ce noyau ?"
+  ],
+  "a_voir": "Le noyau est la partie envoyée sur 0, et on se demande de quelle sorte de partie il s'agit."
+ },
+ {
+  "code": "52-013",
+  "a_dire": "Le produit d'un élément du noyau par un élément quelconque reste dans le noyau.",
+  "legende_titre": "Le noyau absorbe la multiplication",
+  "lecture": [
+   "Le cadre bleu est le noyau de l'application « reste par 6 ».",
+   "30 est dedans.",
+   "La flèche orange multiplie 30 par 7 et donne 210, en vert, qui est aussi envoyé sur 0."
+  ],
+  "a_voir": "Un élément du noyau multiplié par 7 reste dans le noyau."
+ },
+ {
+  "code": "52-014",
+  "a_dire": "Les deux problèmes ont la même réponse : la même partie des entiers.",
+  "legende_titre": "Deux chemins, une même partie",
+  "lecture": [
+   "La flèche orange vient du problème 1 : la partie qui permet le quotient.",
+   "La flèche violette vient du problème 2 : le noyau de « reste par 4 ».",
+   "Les deux arrivent aux multiples de 4, dans le cadre bleu."
+  ],
+  "a_voir": "Les deux problèmes mènent à la même partie, les multiples de 4."
+ },
+ {
+  "code": "52-015",
+  "a_dire": "Chaque entier a un seul reste par 4, et les restes reviennent tous les 4 pas.",
+  "legende_titre": "Quatre listes de restes",
+  "lecture": [
+   "Chaque ligne colorée est un paquet : le reste 0, 1, 2 ou 3.",
+   "Chaque entier apparaît dans une seule ligne.",
+   "Dans une ligne, deux nombres voisins sont séparés de 4."
+  ],
+  "a_voir": "Les entiers sont répartis en quatre paquets, y compris à gauche de 0."
+ },
+ {
+  "code": "52-016",
+  "a_dire": "Les entiers colorés par leur reste par 4 donnent quatre objets : l'ensemble ℤ/4ℤ.",
+  "legende_titre": "Des entiers aux quatre restes",
+  "lecture": [
+   "Chaque point de la droite a la couleur de son reste : bleu 0, orange 1, vert 2, rouge 3.",
+   "Les traits gris envoient les points d'une couleur vers le cadre de même couleur.",
+   "Le point −1 est rouge, comme 3."
+  ],
+  "a_voir": "Une infinité d'entiers devient quatre objets."
+ }
+]

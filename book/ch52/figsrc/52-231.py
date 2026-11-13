@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,14,68,60,10,'sujet',label=r'$8\times3=0$ (mod 12)',size='s')
+box(ax,14,52,60,10,'varie',label=r'on suppose $u\times8=1$',size='s')
+arrow(ax,(44,68),(44,62.5),'sujet')
+box(ax,2,26,42,10,'sujet',label=r'$u\times8\times3=1\times3=3$',size='s')
+box(ax,50,26,36,10,'sujet',label=r'$u\times0=0$',size='s')
+arrow(ax,(30,52),(22,36.5),'varie'); arrow(ax,(58,52),(66,36.5),'varie')
+box(ax,14,4,60,12,'limite',label='3 = 0 : faux modulo 12',size='s')
+arrow(ax,(22,26),(36,16.5),'limite'); arrow(ax,(66,26),(52,16.5),'limite')
+save(fig,'52-231')

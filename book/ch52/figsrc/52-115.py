@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 6, 76, 34, 0, 15, 1, labels=False, arrow_right=False)
+for v in (0, 7, 14): text(ax, f(v), 29, str(v), 'fixe', 's')
+line(ax, [(f(15), 32.5), (f(15), 25)], 'resultat'); text(ax, f(15), 22, '15', 'resultat', 's')
+brace(ax, f(0), f(7), 36, 'sujet', '7', down=False)
+brace(ax, f(7), f(14), 36, 'sujet', '7', down=False)
+brace(ax, f(14), f(15), 36, 'resultat', '1', down=False)
+text(ax, 44, 54, r'$5\times3=15$', 'varie', 'l')
+text(ax, 44, 11, r'$15=2\times7+1$', 'resultat', 'l')
+text(ax, 44, 3.5, r'5 est l’inverse de 3, mod 7', 'resultat', 's')
+save(fig, '52-115')

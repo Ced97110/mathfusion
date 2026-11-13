@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+text(ax,44,47,r'Restes par 5, $I$ contient 2','sujet','m')
+box(ax,3,24,22,10,'sujet',label=r'$2\in I$')
+box(ax,33,24,22,10,'resultat',label=r'$1\in I$')
+box(ax,63,24,22,10,'resultat',label=r'tout $x\in I$')
+arrow(ax,(25,29),(33,29),'varie'); arrow(ax,(55,29),(63,29),'varie')
+text(ax,29,38,r'$\times\,3$','varie','s'); text(ax,59,38,r'$\times\,x$','varie','s')
+text(ax,29,15,r'$2\times3=6=1$','varie','s'); text(ax,59,15,r'$x=x\times1$','varie','s')
+text(ax,14,15,'départ','sujet','s'); text(ax,74,15,'arrivée','resultat','s')
+save(fig,'52-275')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,61,r'remplacer $x$ par 2','sujet','m')
+box(ax,3,40,34,10,'sujet',label=r'$x^2+3x+1$'); box(ax,64,40,20,10,'resultat',label='11')
+arrow(ax,(37,45),(64,45),'varie'); text(ax,50,49,r'$x:=2$','varie','s')
+box(ax,3,22,34,10,'sujet',label=r'$x^2-4$'); box(ax,64,22,20,10,'resultat',label='0')
+arrow(ax,(37,27),(64,27),'varie'); text(ax,50,31,r'$x:=2$','varie','s')
+text(ax,44,14,r'$x^2-4$ est dans le noyau','resultat','s')
+text(ax,44,6,r'$R[x]/(x-2)\cong R$','sujet','m')
+save(fig,'52-285')

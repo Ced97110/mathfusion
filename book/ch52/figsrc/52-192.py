@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+f = numberline(ax, 6, 78, 36, 0, 40, arrow_right=False, every=10)
+disc(ax, f(3), 36, 1.5, 'sujet'); text(ax, f(3), 27, 'a = 3', 'sujet', 's')
+disc(ax, f(19), 36, 1.5, 'resultat'); text(ax, f(19), 27, 'k = 4 : 19', 'resultat', 's')
+disc(ax, f(39), 36, 1.5, 'resultat'); text(ax, f(39), 27, 'k = 9 : 39', 'resultat', 's')
+arrow(ax, (f(19), 39), (f(39), 39), 'varie', curve=-0.5)
+text(ax, f(29), 52, '5 pas de 4 = + 20 = 4 × 5', 'varie', 's')
+text(ax, 44, 16, '9 = 4 + 5 : 5 pas de plus, mêmes restes', 'resultat', 's')
+text(ax, 44, 9.5, '3 par 4 et 4 par 5, pour 19 comme pour 39', 'resultat', 's')
+text(ax, 44, 3.5, 'Seul le reste de k par 5 compte.', 'varie', 's')
+save(fig, '52-192')

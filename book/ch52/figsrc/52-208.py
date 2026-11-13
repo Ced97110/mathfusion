@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+line(ax,[(44,6),(44,56)],'fixe',dash=True)
+text(ax,22,60,'homomorphisme','sujet','m'); text(ax,66,60,'transposition','varie','m')
+box(ax,6,40,14,9,'sujet',label=r'$a$',size='m'); box(ax,24,40,14,9,'varie',label=r'$b$',size='m')
+box(ax,6,14,14,9,'sujet',label=r'$\eta(a)$',size='s'); box(ax,24,14,14,9,'varie',label=r'$\eta(b)$',size='s')
+arrow(ax,(13,40),(13,23),'fixe'); arrow(ax,(31,40),(31,23),'fixe')
+box(ax,50,40,14,9,'sujet',label=r'$a$',size='m'); box(ax,68,40,14,9,'varie',label=r'$b$',size='m')
+box(ax,50,14,14,9,'varie',label=r'$b^{T}$',size='s'); box(ax,68,14,14,9,'sujet',label=r'$a^{T}$',size='s')
+arrow(ax,(57,40),(75,23),'fixe'); arrow(ax,(75,40),(57,23),'fixe')
+text(ax,22,6,'même ordre','resultat','s'); text(ax,66,6,'ordre inversé','varie','s')
+save(fig,'52-208')

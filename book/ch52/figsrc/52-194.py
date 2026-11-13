@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+f=numberline(ax,6,76,12,0,20,step=1,labels=True,arrow_right=False,every=5)
+for v in range(3,20,4): disc(ax,f(v),34,1.6,'resultat' if v==19 else 'sujet')
+for v in (4,9,14,19): disc(ax,f(v),24,1.6,'resultat' if v==19 else 'autre')
+line(ax,[(f(19),12),(f(19),34)],'resultat',dash=True)
+text(ax,6,39,'reste 3 par 4','sujet','s',ha='left')
+text(ax,6,29,'reste 4 par 5','autre','s',ha='left')
+text(ax,f(19),43,r'$x=19$','resultat','m')
+save(fig,'52-194')

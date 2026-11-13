@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(75)
+text(ax, 36, 68, r'$\eta$', 'varie', 22, ha='right'); text(ax, 36, 68, r'$(a)$', 'sujet', 22, ha='left')
+text(ax, 28, 57, 'la règle', 'varie', 's'); text(ax, 52, 57, 'l’élément donné', 'sujet', 's')
+box(ax, 4, 22, 28, 12, 'sujet', label=r'$a=7$', size='m')
+box(ax, 56, 22, 28, 12, 'resultat', label=r'$\eta(a)=3$', size='m')
+arrow(ax, (33, 28), (55, 28), 'varie')
+text(ax, 44, 32, r'$\eta$', 'varie', 'm')
+text(ax, 18, 38, 'élément de départ', 'sujet', 's'); text(ax, 70, 38, 'image de 7', 'resultat', 's')
+text(ax, 44, 10, 'restes par 4 : ' + r'$\eta(7)=3$', 'encre', 's')
+save(fig, '52-135')

@@ -1,0 +1,189 @@
+[
+ {
+  "code": "52-129",
+  "a_dire": "Dans les entiers, l'idéal nul est premier mais pas maximal, donc un idéal premier n'est pas toujours maximal.",
+  "legende_titre": "Un idéal premier qui n'est pas maximal",
+  "lecture": [
+   "La case bleue est l'idéal nul, qui ne contient que 0.",
+   "La case violette est l'idéal des multiples de 2, qui le contient.",
+   "La case grise est l'anneau entier, qui contient tout.",
+   "Le texte vert dit pourquoi l'idéal nul est premier ; le texte rouge dit pourquoi il n'est pas maximal."
+  ],
+  "a_voir": "Entre l'idéal nul et l'anneau entier, il y a encore l'idéal des multiples de 2."
+ },
+ {
+  "code": "52-130",
+  "a_dire": "Dans les entiers, les idéaux premiers sont (0) et les (p) ; les idéaux maximaux sont seulement les (p).",
+  "legende_titre": "Le bilan des idéaux des entiers",
+  "lecture": [
+   "Chaque case est l'idéal des multiples de k, pour k de 0 à 6.",
+   "Les cases vertes (2), (3), (5) sont premières et maximales.",
+   "La case bleue (0) est première sans être maximale ; les cases rouges (4) et (6) ne sont ni l'un ni l'autre.",
+   "La case grise (1) est l'anneau entier, exclu."
+  ],
+  "a_voir": "Le vert apparaît sur les multiples d'un nombre premier seulement."
+ },
+ {
+  "code": "52-131",
+  "a_dire": "Un homomorphisme d'anneaux est une application qui respecte l'addition, le produit et envoie l'unité sur l'unité.",
+  "legende_titre": "Ce que respecte l'application",
+  "lecture": [
+   "Les cases bleues, à gauche, sont des calculs avec des entiers.",
+   "Les cases violettes, à droite, sont les mêmes calculs faits avec les restes par 4.",
+   "Chaque flèche orange est l'application qui donne le reste par 4.",
+   "Les trois lignes montrent la somme, le produit et l'unité."
+  ],
+  "a_voir": "Dans chaque ligne, calculer avant ou après l'application donne le même résultat."
+ },
+ {
+  "code": "52-132",
+  "a_dire": "La lettre êta est le nom d'une application entre deux anneaux.",
+  "legende_titre": "Une lettre pour nommer une application",
+  "lecture": [
+   "La case bleue est l'anneau de départ.",
+   "La case violette est l'anneau d'arrivée.",
+   "La flèche orange est l'application ; la grande lettre au-dessus est son nom."
+  ],
+  "a_voir": "La lettre êta est posée sur la flèche : elle désigne l'application."
+ },
+ {
+  "code": "52-133",
+  "a_dire": "Le signe R vers R prime dit en trois symboles que l'application part de R et arrive dans R prime.",
+  "legende_titre": "Le départ et l'arrivée en un signe",
+  "lecture": [
+   "En haut, le signe est écrit en grand.",
+   "La case bleue est l'anneau de départ, ici les entiers.",
+   "La case violette est l'anneau d'arrivée, ici les restes par 4.",
+   "La flèche orange va du départ à l'arrivée."
+  ],
+  "a_voir": "Le signe donne le départ et l'arrivée, rien d'autre."
+ },
+ {
+  "code": "52-134",
+  "a_dire": "La condition sur la somme est une exigence à part : l'application qui élève au carré ne la respecte pas.",
+  "legende_titre": "Quand la somme n'est pas respectée",
+  "lecture": [
+   "Le texte orange donne l'application : chaque entier est élevé au carré.",
+   "La case bleue calcule l'image de la somme de 1 et 2 : 9.",
+   "La case violette calcule la somme des images de 1 et 2 : 5.",
+   "Le signe rouge dit que 9 et 5 sont différents."
+  ],
+  "a_voir": "Les deux calculs donnent 9 et 5, donc la condition n'est pas vraie."
+ },
+ {
+  "code": "52-135",
+  "a_dire": "Le signe êta de a désigne l'élément où l'application envoie a.",
+  "legende_titre": "Lire êta de a",
+  "lecture": [
+   "En haut, le signe est coupé en deux : la lettre orange est la règle, la parenthèse bleue contient l'élément donné.",
+   "La case bleue est l'élément de départ, 7.",
+   "La flèche orange applique la règle.",
+   "La case verte est l'image de 7 : 3."
+  ],
+  "a_voir": "Les parenthèses contiennent l'élément auquel on applique la règle."
+ },
+ {
+  "code": "52-136",
+  "a_dire": "Multiplier puis appliquer donne le même résultat qu'appliquer puis multiplier.",
+  "legende_titre": "Deux chemins, un même résultat",
+  "lecture": [
+   "Les cases bleues, en haut, sont 5 et 6 et leur produit 30.",
+   "Les cases du bas sont leurs restes par 4 : 1 et 2, puis le résultat 2.",
+   "Les flèches orange verticales sont l'application.",
+   "Les deux chemins arrivent à la case verte, le reste 2."
+  ],
+  "a_voir": "Le chemin du haut et le chemin du bas arrivent au même résultat."
+ },
+ {
+  "code": "52-137",
+  "a_dire": "Sans la condition sur l'unité, l'application nulle respecte somme et produit mais n'envoie pas 1 sur l'unité.",
+  "legende_titre": "Une application qui oublie l'unité",
+  "lecture": [
+   "La case bleue est l'unité des entiers.",
+   "La flèche rouge l'envoie sur la classe nulle, dans la case rouge.",
+   "La case verte en tirets est l'unité attendue, la classe de 1, que la flèche verte n'atteint pas."
+  ],
+  "a_voir": "L'image de 1 est la classe nulle et non l'unité des restes par 6."
+ },
+ {
+  "code": "52-138",
+  "a_dire": "Le signe un prime désigne l'unité de l'anneau d'arrivée, distincte de l'unité de l'anneau de départ.",
+  "legende_titre": "Deux unités, deux noms",
+  "lecture": [
+   "Le cadre bleu est l'anneau de départ avec son unité 1.",
+   "Le cadre violet est l'anneau d'arrivée avec son unité un prime.",
+   "La double flèche orange rappelle que ce sont deux objets différents."
+  ],
+  "a_voir": "Le prime se trouve seulement du côté de l'anneau d'arrivée."
+ },
+ {
+  "code": "52-139",
+  "a_dire": "Dans les restes par 6, la classe de 3 est égale à son produit par elle-même sans être l'unité, donc la condition sur l'unité est à part.",
+  "legende_titre": "Une classe égale à son carré",
+  "lecture": [
+   "Les six disques sont les classes des restes par 6.",
+   "Le disque orange est la classe de 3 : 3 fois 3 donne 9, de classe 3.",
+   "Le disque bleu est l'unité, la classe de 1.",
+   "Le texte rouge dit que 3 n'est pas l'unité."
+  ],
+  "a_voir": "La classe de 3 se répète en se multipliant, mais n'est pas l'unité."
+ },
+ {
+  "code": "52-140",
+  "a_dire": "Dans les restes par 6, la classe 3 n'est pas la seule égale à son carré : 0, 1, 3 et 4 le sont aussi.",
+  "legende_titre": "Les classes égales à leur carré",
+  "lecture": [
+   "La ligne du haut montre les six classes, celle du bas leurs carrés.",
+   "Une flèche verte verticale relie une classe à elle-même : 0, 1, 3 et 4.",
+   "Les flèches rouges vont de 2 vers 4 et de 5 vers 1."
+  ],
+  "a_voir": "Quatre flèches sont verticales, donc quatre classes sont égales à leur carré."
+ },
+ {
+  "code": "52-141",
+  "a_dire": "L'homomorphisme naturel envoie chaque élément de R sur sa classe dans R/I.",
+  "legende_titre": "Chaque élément va sur sa classe",
+  "lecture": [
+   "En haut, la règle de l'application est écrite.",
+   "Les cases bleues sont des entiers : 5, 6 et 11.",
+   "Les cases violettes sont leurs classes pour l'idéal des multiples de 4.",
+   "Les flèches orange sont l'application."
+  ],
+  "a_voir": "5, 6 et 11 sont envoyés sur les classes 1, 2 et 3."
+ },
+ {
+  "code": "52-142",
+  "a_dire": "La lettre nu nomme l'application qui envoie chaque élément sur sa classe, et la flèche avec un trait dit où va chaque élément.",
+  "legende_titre": "Lire le signe nu",
+  "lecture": [
+   "La ligne bleue donne le nom de l'application.",
+   "La ligne violette donne le départ et l'arrivée.",
+   "La ligne orange donne la règle : a est envoyé sur sa classe.",
+   "Le texte vert dit que nu de a est la classe de a."
+  ],
+  "a_voir": "Chaque morceau du signe a sa phrase à droite."
+ },
+ {
+  "code": "52-143",
+  "a_dire": "Nu respecte l'addition et le produit et envoie 1 sur la classe de 1.",
+  "legende_titre": "Les trois propriétés de nu",
+  "lecture": [
+   "Les cases bleues calculent avec les images, puis opèrent.",
+   "Les cases à droite opèrent d'abord, puis prennent la classe.",
+   "Les deux côtés sont reliés par un signe égal vert.",
+   "La dernière ligne donne l'image de l'unité."
+  ],
+  "a_voir": "Sur chaque ligne, les deux côtés donnent le même résultat."
+ },
+ {
+  "code": "52-144",
+  "a_dire": "Toute classe du quotient est atteinte par l'application.",
+  "legende_titre": "Aucune classe n'est oubliée",
+  "lecture": [
+   "Les disques bleus sont les éléments 0, 1, 2 et 3.",
+   "Les cases vertes sont les quatre classes du quotient.",
+   "Chaque flèche orange arrive dans une classe, et aucune classe n'est sans flèche."
+  ],
+  "a_voir": "Chaque case verte reçoit une flèche."
+ }
+]

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,24,40,40,16,'sujet')
+text(ax,44,51,'horloge à 12 heures','sujet','m'); text(ax,44,44.5,'12 paquets','sujet','s')
+box(ax,3,6,38,22,'fixe')
+text(ax,22,23,'avant : chapitre 47','fixe','s'); text(ax,22,16,'+','fixe','xl'); text(ax,22,9.5,'9 + 5 = 2','fixe','m')
+box(ax,47,6,38,22,'varie')
+text(ax,66,23,'ici : chapitre 52','varie','s'); text(ax,66,16,'+  et  ×','varie','l'); text(ax,66,9.5,'5 × 5 = 1','varie','m')
+arrow(ax,(34,40),(22,28.8),'fixe'); arrow(ax,(54,40),(66,28.8),'varie')
+save(fig,'52-005')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 2, 74, 'étape 1 : restes par 3, 4, 5', 'sujet', 'm', ha='left')
+for x, n, lst, role in [(2, '7', '(1, 3, 2)', 'sujet'), (46, '8', '(2, 0, 3)', 'autre')]:
+    box(ax, x, 58, 8, 8, role, label=n)
+    arrow(ax, (x + 9, 62), (x + 11, 62), 'varie')
+    box(ax, x + 12, 58, 26, 8, role, label=lst)
+box(ax, 28, 36, 32, 8, 'varie', label='(2, 0, 1)')
+arrow(ax, (25, 58), (36, 44), 'varie')
+arrow(ax, (69, 58), (52, 44), 'varie')
+text(ax, 62, 40, 'étape 2 :\ncase par case', 'varie', 's', ha='left')
+box(ax, 34, 12, 20, 10, 'resultat', label='56')
+arrow(ax, (44, 36), (44, 22), 'varie')
+text(ax, 58, 17, 'étape 3 :\nrecoller', 'resultat', 's', ha='left')
+save(fig, '52-240')

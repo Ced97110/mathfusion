@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$\eta : n\mapsto n^2$', 'varie', 'l')
+text(ax, 21, 47, 'image de la somme', 'sujet', 's'); text(ax, 67, 47, 'somme des images', 'autre', 's')
+box(ax, 2, 28, 38, 14, 'sujet', label=r'$\eta(1+2)=\eta(3)=9$', size='s')
+box(ax, 48, 28, 38, 14, 'autre', label=r'$\eta(1)+\eta(2)=1+4$', size='s')
+text(ax, 44, 35, r'$\neq$', 'limite', 'xl')
+text(ax, 67, 22, r'$=5$', 'autre', 'm')
+text(ax, 21, 22, r'$9$', 'sujet', 'm')
+text(ax, 44, 9, r'$9\neq5$ : la somme n’est pas respectée', 'limite', 's')
+save(fig, '52-134')

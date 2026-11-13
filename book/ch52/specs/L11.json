@@ -1,0 +1,181 @@
+[
+ {
+  "code": "52-161",
+  "a_dire": "Le quotient par le noyau a autant de classes que l'image a d'éléments : 6 et 6.",
+  "legende_titre": "Quotient et image",
+  "lecture": [
+   "Les six cases bleues sont les 6 classes des restes par 12, deux restes par classe, dont le noyau 0 et 6.",
+   "Les six cases vertes sont les 6 restes par 6, l'image.",
+   "Chaque flèche orange relie une classe à un reste."
+  ],
+  "a_voir": "Chaque classe a exactement un reste par 6 : les deux côtés ont 6 éléments."
+ },
+ {
+  "code": "52-162",
+  "a_dire": "Le signe ≅ dit qu'on peut renommer les éléments d'un anneau avec ceux de l'autre.",
+  "legende_titre": "Deux noms pour une structure",
+  "lecture": [
+   "Les cases bleues sont les 4 classes des restes par 12 divisés par {0, 4, 8}.",
+   "Les cases violettes sont les 4 restes par 4.",
+   "Les flèches orange à deux pointes relient chaque classe à son nouveau nom."
+  ],
+  "a_voir": "Chaque classe a un nom de l'autre anneau, sans reste ni doublon."
+ },
+ {
+  "code": "52-163",
+  "a_dire": "Toute image de ℤ par un homomorphisme est un quotient de ℤ par un idéal, donc un anneau de restes.",
+  "legende_titre": "D'où viennent les images",
+  "lecture": [
+   "La case bleue à gauche est ℤ.",
+   "Chaque flèche orange porte un idéal, multiples de 2, de 3 ou de 6.",
+   "Chaque case verte est le quotient de ℤ par cet idéal."
+  ],
+  "a_voir": "Il suffit de lister les idéaux de ℤ pour connaître toutes les images."
+ },
+ {
+  "code": "52-164",
+  "a_dire": "Sans surjectivité, l'image d'un idéal peut ne pas être un idéal.",
+  "legende_titre": "Quand l'image n'absorbe plus",
+  "lecture": [
+   "Les points bleus sont les paires (n, n) avec n multiple de 5 : l'image de 5ℤ.",
+   "La flèche orange multiplie (5, 5) par (1, 0).",
+   "Le point rouge (5, 0) n'est pas dans l'image."
+  ],
+  "a_voir": "Le produit sort de l'image : elle n'absorbe pas."
+ },
+ {
+  "code": "52-165",
+  "a_dire": "Pour un idéal I contenant le noyau, R/I est isomorphe à R'/I' avec I' image de I.",
+  "legende_titre": "Deux quotients égaux",
+  "lecture": [
+   "Les cases bleues sont ℤ et l'idéal 4ℤ.",
+   "Les cases violettes sont ℤ/12ℤ et son image {0, 4, 8}.",
+   "Les deux cases vertes ont 4 classes chacune."
+  ],
+  "a_voir": "On part de η, on prend I, on calcule I', puis on forme les deux quotients."
+ },
+ {
+  "code": "52-166",
+  "a_dire": "La preuve part de η(h) et de x', utilise la surjectivité pour trouver x, et arrive à η(hx) dans l'image de I.",
+  "legende_titre": "Preuve en trois étapes",
+  "lecture": [
+   "La colonne de gauche écrit la preuve avec des lettres, celle de droite avec 4 et 7.",
+   "Les étapes sont numérotées de 1 à 3.",
+   "La case orange, étape 2, est l'étape clé : η est surjective, donc x' est l'image d'un x.",
+   "La case verte, étape 3, est l'arrivée : un produit dans l'image de l'idéal."
+  ],
+  "a_voir": "Sans l'étape 2, on ne trouve pas x."
+ },
+ {
+  "code": "52-167",
+  "a_dire": "La somme S + I est un sous-anneau et l'intersection S ∩ I est un idéal de S.",
+  "legende_titre": "Somme et intersection",
+  "lecture": [
+   "Les points bleus forment S, les violets forment I.",
+   "Le point vert (0, 0) est le seul point commun : S ∩ I, un idéal de S.",
+   "La flèche orange ajoute (5, 0) à (3, 3) et donne (8, 3).",
+   "La somme S + I contient toutes les paires : c'est un sous-anneau."
+  ],
+  "a_voir": "Chaque paire est une somme d'un point de S et d'un point de I ; le seul point commun est (0, 0)."
+ },
+ {
+  "code": "52-168",
+  "a_dire": "S + I désigne l'ensemble des sommes s + i, avec s dans S et i dans I.",
+  "legende_titre": "Une notation pour les sommes",
+  "lecture": [
+   "La case bleue est un élément s de S, la violette un élément i de I.",
+   "La case verte est leur somme s + i.",
+   "La ligne du bas donne les nombres : (3, 3) + (5, 0) = (8, 3)."
+  ],
+  "a_voir": "Un seul signe S + I remplace la phrase sur les sommes."
+ },
+ {
+  "code": "52-169",
+  "a_dire": "On restreint ν à S : son noyau est S ∩ I et son image est (S + I)/I, donc le théorème fondamental conclut.",
+  "legende_titre": "Restreindre ν à S",
+  "lecture": [
+   "Le grand cadre gauche est R, le droit est R/I.",
+   "La case bleue S part vers la case verte (S + I)/I par la flèche orange ν",
+   "S.",
+   "L'accolade orange sous S est le noyau S ∩ I."
+  ],
+  "a_voir": "On part de S et non de R : cela donne S/(S ∩ I)."
+ },
+ {
+  "code": "52-170",
+  "a_dire": "Les deux côtés S/(S ∩ I) et (S + I)/I ont autant de classes : 6 et 6.",
+  "legende_titre": "Six classes de chaque côté",
+  "lecture": [
+   "Les six cases bleues sont les classes de S/(S ∩ I).",
+   "Les six lignes à droite sont les 36 éléments de S + I, rangés en classes ; la ligne violette est I.",
+   "Chaque flèche orange relie une classe à une ligne."
+  ],
+  "a_voir": "Les deux côtés se correspondent un à un."
+ },
+ {
+  "code": "52-171",
+  "a_dire": "La grille range les 6 restes par 6 dans 6 cases : une case par paire de restes par 2 et par 3.",
+  "legende_titre": "La grille 2 × 3",
+  "lecture": [
+   "Les lignes sont les restes par 2, les colonnes les restes par 3.",
+   "Chaque case verte contient un nombre de 0 à 5.",
+   "Aucune case n'est vide ni utilisée deux fois."
+  ],
+  "a_voir": "Chaque nombre est repéré par une paire de restes."
+ },
+ {
+  "code": "52-172",
+  "a_dire": "Les 6 restes par 6 donnent 6 paires différentes de restes par 2 et par 3.",
+  "legende_titre": "Six restes, six paires",
+  "lecture": [
+   "La colonne bleue liste les restes de 0 à 5.",
+   "La colonne violette liste leurs paires de restes par 2 et par 3.",
+   "Chaque flèche orange relie un reste à sa paire."
+  ],
+  "a_voir": "Aucune paire ne se répète."
+ },
+ {
+  "code": "52-173",
+  "a_dire": "L'application envoie n sur la paire de ses restes par 2 et par 3, et son noyau est formé des multiples de 6.",
+  "legende_titre": "Le noyau 6ℤ",
+  "lecture": [
+   "Les points bleus de la droite sont -6, 0, 6 et 12, multiples de 6.",
+   "Leurs flèches vertes arrivent dans (0, 0).",
+   "Le point orange 7 est envoyé sur (1, 1)."
+  ],
+  "a_voir": "Les entiers envoyés sur (0, 0) sont les multiples de 6."
+ },
+ {
+  "code": "52-174",
+  "a_dire": "Dans un produit d'anneaux, on calcule chaque coordonnée dans son anneau, sans mélange.",
+  "legende_titre": "Calcul coordonnée par coordonnée",
+  "lecture": [
+   "La colonne bleue calcule la première coordonnée par 2.",
+   "La colonne violette calcule la seconde par 3.",
+   "La ligne pointillée sépare les deux calculs."
+  ],
+  "a_voir": "(1, 2) + (1, 2) = (0, 1) et (1, 2) × (1, 2) = (1, 1)."
+ },
+ {
+  "code": "52-175",
+  "a_dire": "Le noyau est 6ℤ et l'image a au plus 2 × 3 = 6 paires, donc exactement 6.",
+  "legende_titre": "Noyau et image",
+  "lecture": [
+   "La case verte 12 va sur (0, 0) : 12 est un multiple de 6.",
+   "La case rouge 3 va sur (1, 0) : 3 est impair.",
+   "Les six cases violettes sont toutes les paires possibles."
+  ],
+  "a_voir": "Le noyau contient les multiples de 6 ; l'image a 6 éléments."
+ },
+ {
+  "code": "52-176",
+  "a_dire": "La case de la ligne 1 et de la colonne 2 contient 5.",
+  "legende_titre": "Lire la case (1, 2)",
+  "lecture": [
+   "La ligne orange est le reste 1 par 2, la colonne violette est le reste 2 par 3.",
+   "La case verte, à leur croisement, contient 5.",
+   "Les deux lignes sous la grille vérifient 5 = 2 × 2 + 1 et 5 = 1 × 3 + 2."
+  ],
+  "a_voir": "Une paire de restes désigne un seul nombre de 0 à 5."
+ }
+]

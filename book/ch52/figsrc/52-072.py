@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 4, 52, 80, 26, 'fixe', label=None)
+text(ax, 44, 73, r'dans $\mathbb{Z}$ : le calcul est connu', 'fixe', 's', weight='bold')
+text(ax, 44, 65, r'3 $\times$ 3 = 9', 'encre', 'm')
+text(ax, 44, 58, r'6 + 3 = 9 : égalité vraie', 'resultat', 'm')
+box(ax, 4, 4, 80, 28, 'sujet', label=None)
+text(ax, 44, 27, r'dans $\mathbb{Z}/4\mathbb{Z}$', 'sujet', 's', weight='bold')
+text(ax, 44, 19, r'$\bar{3}(\bar{2}+\bar{1})=\bar{3}\,\bar{2}+\bar{3}\,\bar{1}$', 'sujet', 'm')
+text(ax, 44, 10, r'9 = 2 $\times$ 4 + 1 : $\bar{1}=\bar{1}$', 'resultat', 'm')
+arrow(ax, (20, 33), (20, 51), 'varie'); text(ax, 22, 42, 'remonter', 'varie', 's', ha='left')
+arrow(ax, (66, 51), (66, 33), 'varie'); text(ax, 64, 42, 'redescendre', 'varie', 's', ha='right')
+save(fig, '52-072')

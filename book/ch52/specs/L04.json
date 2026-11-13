@@ -1,0 +1,182 @@
+[
+ {
+  "code": "52-049",
+  "a_dire": "Une preuve part d'un idéal I, prend le plus petit positif k, puis divise n par k pour arriver à r = 0.",
+  "legende_titre": "Départ, étape clé et arrivée de la preuve",
+  "lecture": [
+   "Les deux cases bleues sont le départ (l'idéal I) et le choix de k, ici 6.",
+   "La case orange est l'étape qui porte le poids : n = qk + r.",
+   "La case verte est l'arrivée : r = 0, donc I = 6ℤ.",
+   "À droite, en gris, le cas de 12 et 18."
+  ],
+  "a_voir": "Trois temps dans l'ordre : k, la division, le reste nul."
+ },
+ {
+  "code": "52-050",
+  "a_dire": "Le reste r est plus petit que k et dans l'idéal, donc il vaut 0.",
+  "legende_titre": "Pourquoi le reste ne peut pas rester positif",
+  "lecture": [
+   "Les trois arcs orange sont trois pas de 6 sur la droite graduée.",
+   "Le petit arc rouge est le reste 2 : il est plus petit que 6.",
+   "Un reste de 2 dans l'idéal est impossible, car 6 est le plus petit positif."
+  ],
+  "a_voir": "Le reste 2 serait plus petit que 6 : c'est impossible."
+ },
+ {
+  "code": "52-051",
+  "a_dire": "On choisit k, on prend chaque entier q, on calcule qk, et on rassemble tous les produits.",
+  "legende_titre": "Construire l'ensemble des qk",
+  "lecture": [
+   "Les cases orange sont les valeurs de q, de −2 à 2.",
+   "Les flèches grises multiplient par 5.",
+   "Les cases bleues sont les produits qk.",
+   "La case verte rassemble tous les multiples de 5."
+  ],
+  "a_voir": "Chaque q donne un qk, et tous les qk forment I."
+ },
+ {
+  "code": "52-052",
+  "a_dire": "kℤ désigne tous les multiples de k.",
+  "legende_titre": "Lire le signe kℤ",
+  "lecture": [
+   "Le k bleu est le nombre choisi d'avance.",
+   "Le ℤ gris rappelle que les facteurs sont des entiers.",
+   "Les disques verts sont les multiples de 7 sur la droite."
+  ],
+  "a_voir": "Le signe se découpe en deux parties : k et ℤ."
+ },
+ {
+  "code": "52-053",
+  "a_dire": "Dans une accolade, on écrit à gauche la forme, puis un trait « tels que », puis la condition.",
+  "legende_titre": "Les trois parties de l'accolade",
+  "lecture": [
+   "La case bleue est la forme des éléments : 2q.",
+   "Le trait orange se lit « tels que ».",
+   "La case violette est la condition sur q."
+  ],
+  "a_voir": "Une forme, un trait, une condition."
+ },
+ {
+  "code": "52-054",
+  "a_dire": "Avec k égal à 0, tous les q × 0 donnent 0 : l'ensemble est {0}, l'idéal nul.",
+  "legende_titre": "L'idéal qui ne contient que 0",
+  "lecture": [
+   "Les cases orange sont trois valeurs de q : −2, 0 et 5.",
+   "Toutes les flèches arrivent dans la même case verte.",
+   "La case verte est l'ensemble {0}."
+  ],
+  "a_voir": "Tous les produits par 0 tombent sur un seul nombre."
+ },
+ {
+  "code": "52-055",
+  "a_dire": "Un idéal principal est engendré par un seul élément.",
+  "legende_titre": "Un seul générateur ou plusieurs",
+  "lecture": [
+   "À gauche, en bleu, un seul nombre 6 engendre (6).",
+   "À droite, en violet, 4 et 6 décrivent (4, 6).",
+   "La case verte montre que 2 suffit seul : cet idéal est aussi principal."
+  ],
+  "a_voir": "Un seul générateur suffit pour un idéal principal."
+ },
+ {
+  "code": "52-056",
+  "a_dire": "(k) remplace kℤ et ne mentionne plus les entiers.",
+  "legende_titre": "Écrire (k) sans la lettre ℤ",
+  "lecture": [
+   "La case bleue est l'ancienne écriture kℤ.",
+   "La flèche orange retire le ℤ.",
+   "La case verte est (k), qui sert dans tout anneau.",
+   "En dessous, (6) dans ℤ et (a) dans un autre anneau."
+  ],
+  "a_voir": "La même écriture sert dans tous les anneaux."
+ },
+ {
+  "code": "52-057",
+  "a_dire": "(3) contient (12) parce que 3 divise 12.",
+  "legende_titre": "Inclusion des idéaux et divisibilité",
+  "lecture": [
+   "Les disques bleus sont les multiples de 3.",
+   "Les disques orange sont les multiples de 12.",
+   "Chaque disque orange tombe sur un disque bleu."
+  ],
+  "a_voir": "Tout multiple de 12 est un multiple de 3."
+ },
+ {
+  "code": "52-058",
+  "a_dire": "L'idéal engendré par 4 et 6 contient les sommes xm + yn, comme 10 et 2.",
+  "legende_titre": "Les sommes ne sont pas la réunion",
+  "lecture": [
+   "La ligne grise est la réunion : le cercle rouge vide marque 10 absent.",
+   "La ligne bleue est l'idéal (4, 6) : 10 et 2 y sont, en vert.",
+   "La ligne violette est l'intersection : 0 et 12."
+  ],
+  "a_voir": "10 est dans l'idéal mais pas dans la réunion."
+ },
+ {
+  "code": "52-059",
+  "a_dire": "(m, n) se lit « l'idéal engendré par m et n ».",
+  "legende_titre": "Lire la notation (m, n)",
+  "lecture": [
+   "Le m bleu et le n violet sont les deux générateurs.",
+   "La virgule orange dit qu'on les prend ensemble.",
+   "Les parenthèses grises disent « idéal engendré par »."
+  ],
+  "a_voir": "Chaque signe a son sens : lettres, virgule, parenthèses."
+ },
+ {
+  "code": "52-060",
+  "a_dire": "(4, 6) a pour générateurs 2 et −2, mais seul 2 est le PGCD.",
+  "legende_titre": "Deux générateurs, un seul est le PGCD",
+  "lecture": [
+   "Le cadre bleu est l'idéal engendré par 4 et 6, noté (d).",
+   "La case verte d = 2 est le PGCD.",
+   "La case violette d = −2 est un autre générateur du même idéal, mais pas le PGCD.",
+   "La droite en bas montre les mêmes multiples de 2."
+  ],
+  "a_voir": "Le PGCD est le seul générateur positif."
+ },
+ {
+  "code": "52-061",
+  "a_dire": "Le PGCD est le plus petit positif des combinaisons de 252 et 198, pas seulement un maximum.",
+  "legende_titre": "Deux manières de voir le PGCD",
+  "lecture": [
+   "À gauche, en gris, l'ancienne vue : un maximum.",
+   "À droite, en bleu, la construction avec 4 × 252 − 5 × 198.",
+   "La case verte est 18, atteint par les deux voies."
+  ],
+  "a_voir": "Un même nombre, 18, vu comme maximum ou comme construit."
+ },
+ {
+  "code": "52-062",
+  "a_dire": "Les multiples communs de 4 et de 6 sont les multiples de 12.",
+  "legende_titre": "Multiples communs de 4 et 6",
+  "lecture": [
+   "La ligne bleue est celle des multiples de 4.",
+   "La ligne violette est celle des multiples de 6.",
+   "La ligne verte garde 0, 12 et 24 : les multiples de 12."
+  ],
+  "a_voir": "Les lignes se rejoignent en 0, 12 et 24."
+ },
+ {
+  "code": "52-063",
+  "a_dire": "[m, n] est le PPCM, (m, n) est l'idéal engendré : deux signes différents.",
+  "legende_titre": "Crochets et parenthèses",
+  "lecture": [
+   "La case bleue est (m, n) : un idéal.",
+   "La case violette est [m, n] : un nombre, le PPCM.",
+   "En vert, [4, 6] vaut 12."
+  ],
+  "a_voir": "Les crochets ne désignent pas ce que désignent les parenthèses."
+ },
+ {
+  "code": "52-064",
+  "a_dire": "La classe a + I est l'ensemble obtenu en ajoutant a à chaque élément de I.",
+  "legende_titre": "Ajouter a à chaque élément de I",
+  "lecture": [
+   "Les disques gris sont les multiples de 4.",
+   "Les flèches orange ajoutent 3.",
+   "Les disques bleus forment la classe 3 + I."
+  ],
+  "a_voir": "On décale tout I de 3 : la classe est un ensemble entier."
+ }
+]

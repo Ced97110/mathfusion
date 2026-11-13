@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 2, 32, 40, 16, 'sujet', label='(m, n)', size='l')
+box(ax, 46, 32, 40, 16, 'autre', label='[m, n]', size='l')
+arrow(ax, (22, 32), (22, 22), 'sujet'); arrow(ax, (66, 32), (66, 22), 'autre')
+text(ax, 22, 17, 'idéal engendré', 'sujet', 's'); text(ax, 22, 12, 'par m et n', 'sujet', 's')
+text(ax, 66, 17, 'plus petit commun', 'autre', 's'); text(ax, 66, 12, 'multiple (PPCM)', 'autre', 's')
+text(ax, 44, 54, 'parenthèses ou crochets', 'fixe', 's')
+text(ax, 66, 5, '[4, 6] = 12', 'resultat', 's')
+save(fig, '52-063')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, 'cherché : reste 9 par 95, reste 0 par 97', 'encre', 's')
+box(ax, 28, 48, 32, 12, 'sujet', label='5044', size='l')
+arrow(ax, (38, 48), (22, 37), 'varie'); arrow(ax, (50, 48), (66, 37), 'varie')
+box(ax, 2, 25, 40, 12, 'fixe', label=r'$5044=53\times95+9$', size='s')
+box(ax, 46, 25, 40, 12, 'fixe', label=r'$5044=52\times97+0$', size='s')
+text(ax, 22, 18, r'$53\times95=5\,035$', 'fixe', 's')
+text(ax, 66, 18, r'$52\times97=5\,044$', 'fixe', 's')
+text(ax, 22, 8, r'reste par $95$ : $9$', 'resultat', 's')
+text(ax, 66, 8, r'reste par $97$ : $0$', 'resultat', 's')
+save(fig, '52-257')

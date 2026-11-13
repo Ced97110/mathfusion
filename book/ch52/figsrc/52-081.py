@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,r'$k=6$ est composé : $6=2\times3$','sujet','m')
+text(ax,20,46,'classe non nulle','sujet','s'); text(ax,68,46,'classe non nulle','sujet','s')
+box(ax,6,28,28,14,'sujet',label=r'$\bar2\neq\bar0$',size='l')
+box(ax,54,28,28,14,'sujet',label=r'$\bar3\neq\bar0$',size='l')
+text(ax,44,35,r'$\times$','varie','xl')
+arrow(ax,(20,27),(34,17.5),'varie'); arrow(ax,(68,27),(54,17.5),'varie')
+box(ax,16,4,56,13,'resultat',label=r'$\bar2\times\bar3=\bar6=\bar0$',size='l')
+save(fig,'52-081')

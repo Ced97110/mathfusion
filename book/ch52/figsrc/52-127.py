@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 22.5, 72, 'classes paires', 'sujet', 's'); text(ax, 65.5, 72, 'classes impaires', 'fixe', 's')
+box(ax, 3, 50, 39, 14, 'sujet', label=r'$0,\ 2,\ 4,\ 6,\ 8,\ 10$', size='s')
+box(ax, 46, 50, 39, 14, 'fixe', label=r'$1,\ 3,\ 5,\ 7,\ 9,\ 11$', size='s')
+arrow(ax, (22.5, 50), (22.5, 30), 'varie'); arrow(ax, (65.5, 50), (65.5, 30), 'varie')
+text(ax, 44, 40, 'quotient : 2 classes', 'varie', 's')
+box(ax, 3, 18, 39, 12, 'sujet', label='pair'); box(ax, 46, 18, 39, 12, 'fixe', label='impair')
+text(ax, 44, 8, 'idéal maximal et premier', 'resultat', 's')
+save(fig, '52-127')

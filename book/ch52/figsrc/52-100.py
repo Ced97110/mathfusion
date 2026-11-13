@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,2,2,84,72,'fixe',r=1.5)
+text(ax,44,70,'anneau commutatif','fixe','m')
+text(ax,44,64,'horloge 6 : 2 × 3 = 0','limite','s')
+box(ax,8,8,72,52,'sujet',r=1.5)
+text(ax,44,56.5,'domaine : sans diviseur de 0','sujet','m')
+text(ax,44,50.5,'ℤ : 2 sans inverse','sujet','s')
+box(ax,14,14,60,32,'autre',r=1.5)
+text(ax,44,41,'corps','autre','m')
+text(ax,44,32,'horloge 7 : tout inversible','autre','s')
+save(fig,'52-100')

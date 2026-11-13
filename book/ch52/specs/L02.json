@@ -1,0 +1,194 @@
+[
+ {
+  "code": "52-017",
+  "a_dire": "Pour lire la figure, on suit la droite, la couleur, le trait gris, puis les classes.",
+  "legende_titre": "Quatre étapes pour lire",
+  "lecture": [
+   "En haut, la droite des entiers porte des points de quatre couleurs.",
+   "La couleur d'un point est son reste par 4.",
+   "Chaque trait gris part d'un point et arrive sur le grand objet du bas de la même couleur.",
+   "Les points −1, 3 et 7 arrivent tous sur l'objet rouge."
+  ],
+  "a_voir": "Le trait gris envoie 7, 3 et −1 sur la même classe."
+ },
+ {
+  "code": "52-018",
+  "a_dire": "La droite des entiers ℤ a le point 0 au centre, les positifs à droite et les négatifs à gauche.",
+  "legende_titre": "Le point 0 au milieu",
+  "lecture": [
+   "Le point bleu au centre est 0.",
+   "Chaque petit point gris est un entier.",
+   "L'accolade orange de droite compte 6 pas jusqu'à 6.",
+   "L'accolade orange de gauche compte 6 pas jusqu'à moins 6."
+  ],
+  "a_voir": "Chaque point est un entier, à des pas de 0."
+ },
+ {
+  "code": "52-019",
+  "a_dire": "La couleur d'un entier est son reste dans la division par 4.",
+  "legende_titre": "Une couleur par entier",
+  "lecture": [
+   "Chaque ligne part d'un entier dans un disque.",
+   "La formule au centre écrit l'entier comme un multiple de 4 plus le reste.",
+   "Le grand objet à droite a la couleur du reste.",
+   "Les quatre petits objets du bas rappellent les quatre couleurs."
+  ],
+  "a_voir": "7 est rouge car son reste est 3 ; −3 est orange car son reste est 1."
+ },
+ {
+  "code": "52-020",
+  "a_dire": "Deux entiers ont la même couleur si leur différence est un multiple de 4.",
+  "legende_titre": "Le test de la différence",
+  "lecture": [
+   "En haut, 11 et 3 sont tous les deux rouges et reliés par un trait vert.",
+   "Leur différence 8 est 2 fois 4, dans l'objet vert.",
+   "En bas, 10 est vert et 3 est rouge, reliés par un trait rouge.",
+   "Leur différence 7 n'est pas un multiple de 4, dans l'objet rouge."
+  ],
+  "a_voir": "11 − 3 = 8 donne la même couleur ; 10 − 3 = 7 donne deux couleurs."
+ },
+ {
+  "code": "52-021",
+  "a_dire": "Deux entiers de même couleur ont une différence qui est un multiple de 4.",
+  "legende_titre": "Deux couples de même couleur",
+  "lecture": [
+   "En haut, 1 et 5 sont orange ; l'arc va de 1 à 5.",
+   "La différence 5 − 1 vaut 4.",
+   "En bas, −1 et 3 sont rouges ; l'arc va de 3 à −1.",
+   "La différence −1 − 3 vaut −4."
+  ],
+  "a_voir": "5 − 1 = 4 et −1 − 3 = −4 sont des multiples de 4."
+ },
+ {
+  "code": "52-022",
+  "a_dire": "Le trait gris envoie chaque entier sur son reste par 4 ; plusieurs entiers arrivent au même objet.",
+  "legende_titre": "Le trait gris prend le reste",
+  "lecture": [
+   "Les disques du haut sont des entiers : 12, 4, 5, −1 et 7.",
+   "Chaque trait gris descend vers l'objet de la même couleur.",
+   "12 et 4 arrivent sur l'objet 0.",
+   "−1 et 7 arrivent sur l'objet 3 ; 5 arrive seul sur l'objet 1."
+  ],
+  "a_voir": "Plusieurs entiers arrivent sur un même objet du bas."
+ },
+ {
+  "code": "52-023",
+  "a_dire": "La barre sur un nombre signifie « la classe de » : le paquet de tous les entiers de même reste.",
+  "legende_titre": "La barre désigne un paquet",
+  "lecture": [
+   "Le disque seul à gauche est le nombre 3.",
+   "La flèche orange est la barre.",
+   "Le cadre en pointillés rouge est le paquet.",
+   "Dans le cadre, −1, 3, 7 et 11 ont le même reste 3."
+  ],
+  "a_voir": "3 avec une barre désigne −1, 3, 7, 11 et tous les autres."
+ },
+ {
+  "code": "52-024",
+  "a_dire": "La formule 4k + r donne tous les entiers de la classe de r, en faisant varier k.",
+  "legende_titre": "Tous les entiers d'une classe",
+  "lecture": [
+   "Les valeurs de k en orange sont −1, 0, 1 et 2.",
+   "Chaque colonne calcule k fois 4 plus 3.",
+   "Le disque rouge du bas est le résultat.",
+   "Les quatre résultats sont dans la classe du reste 3."
+  ],
+  "a_voir": "Avec r = 3 et k de −1 à 2, on obtient −1, 3, 7, 11."
+ },
+ {
+  "code": "52-025",
+  "a_dire": "Les entiers, infinis, se rangent en quatre paquets selon leur reste par 4.",
+  "legende_titre": "De l'infini à quatre objets",
+  "lecture": [
+   "La rangée du haut montre des entiers colorés ; les points de suspension disent qu'elle continue.",
+   "Chaque trait gris relie un entier à l'objet de sa couleur.",
+   "Les quatre objets du bas sont les quatre classes.",
+   "Plusieurs entiers arrivent dans le même objet."
+  ],
+  "a_voir": "Chaque entier arrive dans un seul des quatre objets."
+ },
+ {
+  "code": "52-026",
+  "a_dire": "La partie de référence décide quels entiers sont équivalents.",
+  "legende_titre": "Changer la partie change tout",
+  "lecture": [
+   "À gauche, la partie est les multiples de 4 : 9 − 5 = 4 relie 9 et 5.",
+   "À gauche, 9 − 6 = 3 sépare 9 et 6.",
+   "À droite, la partie est les multiples de 3 : 9 − 6 = 3 relie 9 et 6.",
+   "À droite, 9 − 5 = 4 sépare 9 et 5."
+  ],
+  "a_voir": "Les mêmes différences, 3 et 4, donnent des verdicts opposés selon la partie."
+ },
+ {
+  "code": "52-027",
+  "a_dire": "La notation 4ℤ désigne la partie formée des multiples de 4.",
+  "legende_titre": "Un nom court pour les multiples",
+  "lecture": [
+   "Les disques bleus sur la droite sont les multiples de 4 : −8, −4, 0, 4, 8, 12.",
+   "Le 4 bleu est le nombre qu'on multiplie.",
+   "Le ℤ orange donne les entiers par lesquels on multiplie.",
+   "En bas, 12 est dans 4ℤ."
+  ],
+  "a_voir": "4ℤ se lit : le nombre 4 multiplié par les entiers."
+ },
+ {
+  "code": "52-028",
+  "a_dire": "La partie I doit contenir 0 et rester stable quand on soustrait deux de ses éléments.",
+  "legende_titre": "Deux conditions sur la partie",
+  "lecture": [
+   "Le cadre du haut est les entiers impairs.",
+   "Les flèches orange sont une soustraction de deux éléments.",
+   "Les cadres rouges montrent 0 et 2, qui ne sont pas impairs.",
+   "Les cadres verts disent ce qu'il faut : 0 dans I, et rester dans I."
+  ],
+  "a_voir": "Avec les impairs, 1 − 1 = 0 et 3 − 1 = 2 sortent de la partie."
+ },
+ {
+  "code": "52-029",
+  "a_dire": "On met une partie à l'épreuve : si elle ne contient pas 0, un nombre n'est pas équivalent à lui-même.",
+  "legende_titre": "Mettre la partie à l'épreuve",
+  "lecture": [
+   "Les deux disques bleus sont le même nombre 7.",
+   "La flèche orange prend leur différence, qui est 0.",
+   "Le cadre rouge dit que les impairs ne contiennent pas 0.",
+   "Le cadre vert dit que les multiples de 4 contiennent 0."
+  ],
+  "a_voir": "7 − 7 = 0, et 0 n'est pas impair."
+ },
+ {
+  "code": "52-030",
+  "a_dire": "Les impairs échouent à cause du couple 1 et 1, car 0 n'est pas impair.",
+  "legende_titre": "Un seul couple fait échouer",
+  "lecture": [
+   "Chaque ligne montre un couple, sa différence et un verdict.",
+   "Pour 3 et 1 puis 5 et 3, la différence est 2 : ils ne sont pas équivalents, c'est normal (gris).",
+   "Pour 1 et 1, la différence est 0.",
+   "Le cadre rouge dit que 0 est absent de la partie."
+  ],
+  "a_voir": "Les deux premiers couples sont normaux ; le dernier est un échec."
+ },
+ {
+  "code": "52-031",
+  "a_dire": "La multiplication passe aux couleurs : orange fois vert donne vert.",
+  "legende_titre": "Multiplier des couleurs",
+  "lecture": [
+   "La ligne du haut est la règle : orange fois vert égale vert.",
+   "Chaque ligne du bas prend un disque orange et un disque vert.",
+   "Leur produit est le disque vert de droite.",
+   "Les trois produits 2, 30 et −30 sont verts."
+  ],
+  "a_voir": "1 fois 2, 5 fois 6 et −3 fois 10 donnent tous une couleur verte."
+ },
+ {
+  "code": "52-032",
+  "a_dire": "On suppose que le produit passe aux paquets et on en déduit que 40 doit être dans la partie.",
+  "legende_titre": "Trouver la condition forcée",
+  "lecture": [
+   "Le cadre bleu : 8 est dans 4ℤ, donc équivalent à 0.",
+   "Le cadre gris : 5 est équivalent à lui-même.",
+   "Le cadre orange multiplie les deux : 8 fois 5 et 0 fois 5.",
+   "Le cadre vert donne la conséquence : 40 est dans 4ℤ."
+  ],
+  "a_voir": "8 est équivalent à 0, 5 est équivalent à 5 ; donc 40 est équivalent à 0."
+ }
+]

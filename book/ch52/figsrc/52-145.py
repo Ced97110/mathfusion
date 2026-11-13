@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 21, 60, r'$R$ : départ', 'fixe'); text(ax, 67, 60, r"$R'$ : arrivée", 'fixe')
+box(ax, 4, 4, 34, 52, 'fixe', fill=False); box(ax, 56, 4, 28, 52, 'fixe', fill=False)
+box(ax, 7, 30, 28, 22, 'sujet', label='ker $\\eta$\n0, 4, 8, −4', size='s')
+box(ax, 7, 8, 28, 18, 'autre', label='envoyés sur 1′\n1, 5, 9', size='s')
+box(ax, 60, 30, 20, 22, 'sujet', label="$0'$\nclasse 0", size='s')
+box(ax, 60, 8, 20, 18, 'autre', label='classe de 1', size='s')
+arrow(ax, (35, 41), (60, 41), 'varie'); arrow(ax, (35, 17), (60, 17), 'varie')
+text(ax, 47.5, 45, r'$\eta$', 'varie'); text(ax, 47.5, 21, 'pas le noyau', 'limite', 's')
+save(fig, '52-145')

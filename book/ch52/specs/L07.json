@@ -1,0 +1,178 @@
+[
+ {
+  "code": "52-097",
+  "a_dire": "Un nombre premier p qui divise un produit divise un des facteurs ; 6 ne le fait pas.",
+  "legende_titre": "Quand un nombre divise un produit",
+  "lecture": [
+   "À gauche, p = 5 divise 35, et le facteur 5 en vert est divisible par 5.",
+   "À droite, p = 6 divise 12, mais les facteurs 3 et 4 en rouge ne sont pas divisibles par 6.",
+   "Les flèches grises découpent chaque produit en deux facteurs."
+  ],
+  "a_voir": "Avec 5, un facteur est divisible ; avec 6, aucun ne l'est."
+ },
+ {
+  "code": "52-098",
+  "a_dire": "Un idéal est maximal quand aucun idéal ne se place strictement entre lui et l'anneau.",
+  "legende_titre": "Rien entre l'idéal et l'anneau",
+  "lecture": [
+   "Le grand rectangle gris est l'anneau ℤ.",
+   "Le rectangle bleu (3) touche l'anneau sans rien entre les deux.",
+   "Le rectangle violet (6) laisse (3) se placer entre lui et ℤ."
+  ],
+  "a_voir": "(3) n'a aucun idéal entre lui et ℤ, alors que (6) en a un."
+ },
+ {
+  "code": "52-099",
+  "a_dire": "(6) n'est pas maximal car (3) est entre (6) et ℤ ; (3) est maximal car 3 et 4 donnent 1.",
+  "legende_titre": "Deux idéaux, deux verdicts",
+  "lecture": [
+   "La rangée du haut place (6), (3) et ℤ, chacun contenu dans le suivant.",
+   "Sous (6), le texte rouge dit qu'il n'est pas maximal ; sous (3), le texte vert dit qu'il l'est.",
+   "La rangée du bas suit un idéal qui contient 3 et 4 : on obtient 4 − 3 = 1, puis tout ℤ."
+  ],
+  "a_voir": "Ajouter à (3) un entier hors de (3) donne tout ℤ."
+ },
+ {
+  "code": "52-100",
+  "a_dire": "Un domaine est un anneau commutatif sans diviseur de zéro ; le corps est plus exigeant.",
+  "legende_titre": "Domaine entre anneau et corps",
+  "lecture": [
+   "Le rectangle gris est l'anneau commutatif ; l'horloge à 6 heures y a 2 × 3 = 0.",
+   "Le rectangle bleu est le domaine ; ℤ y est, et 2 n'y a pas d'inverse.",
+   "Le rectangle violet est le corps ; sur l'horloge à 7 heures tout est inversible."
+  ],
+  "a_voir": "Le domaine se place entre l'anneau commutatif et le corps."
+ },
+ {
+  "code": "52-101",
+  "a_dire": "Un idéal premier donne un quotient sans diviseur de zéro ; un idéal maximal donne un corps.",
+  "legende_titre": "Lire l'idéal dans son quotient",
+  "lecture": [
+   "La rangée du haut relie l'idéal premier à un quotient sans diviseur de zéro.",
+   "La rangée du bas relie l'idéal maximal à un quotient qui est un corps.",
+   "Le texte vert sous chaque rangée donne un cas : (0) et (5) dans ℤ."
+  ],
+  "a_voir": "Chaque sorte d'idéal se lit dans son quotient."
+ },
+ {
+  "code": "52-102",
+  "a_dire": "Sans commutativité, {0} est maximal dans les matrices 2 × 2 mais le quotient n'est pas un corps.",
+  "legende_titre": "Quand le lien devient faux",
+  "lecture": [
+   "Le texte du haut dit que les seuls idéaux sont {0} et l'anneau entier.",
+   "La matrice bleue A et la matrice violette B ont chacune un 1 et trois 0.",
+   "La matrice rouge AB ne contient que des 0 : un produit nul sans facteur nul."
+  ],
+  "a_voir": "A et B ne sont pas nulles, mais leur produit l'est."
+ },
+ {
+  "code": "52-103",
+  "a_dire": "Dire que ab est dans I, c'est dire que le produit des classes de a et de b est la classe nulle.",
+  "legende_titre": "Du produit à la classe nulle",
+  "lecture": [
+   "La rangée du haut est 2 × 3 = 6 dans les entiers, avec 6 dans (6).",
+   "Les flèches orange passent chaque nombre à sa classe modulo 6.",
+   "La rangée du bas est 2 × 3 = 0 en classes, avec la classe nulle en vert."
+  ],
+  "a_voir": "6 est dans (6), donc le produit des classes de 2 et 3 est la classe de 0."
+ },
+ {
+  "code": "52-104",
+  "a_dire": "Un idéal maximal donne un corps, un corps n'a pas de diviseur de zéro, donc l'idéal est premier.",
+  "legende_titre": "De maximal à premier",
+  "lecture": [
+   "Les quatre cases se lisent de haut en bas : maximal, corps, domaine, premier (vert).",
+   "Les flèches orange sont les trois pas.",
+   "À droite, les produits 1 × 1, 1 × 2, 2 × 2 donnent 1, 2, 1, jamais 0."
+  ],
+  "a_voir": "Aucun produit de classes non nulles ne donne 0 dans ℤ/3ℤ."
+ },
+ {
+  "code": "52-105",
+  "a_dire": "La preuve générale se lit avec un exemple chiffré à chaque étape : (7) et 3.",
+  "legende_titre": "Chaque étape, un calcul",
+  "lecture": [
+   "La colonne bleue donne les trois étapes de la preuve.",
+   "La colonne violette donne le calcul qui correspond à chaque étape.",
+   "Les flèches orange donnent l'ordre des étapes."
+  ],
+  "a_voir": "Chaque ligne abstraite a un calcul que tu peux refaire : 5 × 3 − 14 = 1."
+ },
+ {
+  "code": "52-106",
+  "a_dire": "Il faut un anneau commutatif, avec une unité 1, et 1 différent de 0.",
+  "legende_titre": "Trois exigences sur l'anneau",
+  "lecture": [
+   "Chaque colonne porte un nom d'exigence en bleu.",
+   "Les cases vertes montrent ce qui satisfait l'exigence : les entiers pour les trois, les matrices pour l'unité 1.",
+   "Les cases rouges montrent ce qui ne la satisfait pas : les matrices pour commutatif, l'anneau {0} pour 1 ≠ 0."
+  ],
+  "a_voir": "Il y a trois exigences, et on en voit des cas qui les ratent."
+ },
+ {
+  "code": "52-107",
+  "a_dire": "Un idéal M est maximal exactement quand le quotient R/M est un corps.",
+  "legende_titre": "Maximal et corps vont ensemble",
+  "lecture": [
+   "La rangée verte relie (7) maximal à ℤ/7ℤ corps, avec 3 × 5 = 15 qui vaut 1.",
+   "La rangée rouge relie (6) non maximal à ℤ/6ℤ qui n'est pas un corps, avec 2 × 3 = 0.",
+   "La double flèche grise dit que les deux phrases vont ensemble."
+  ],
+  "a_voir": "Les deux propriétés sont vraies ensemble ou fausses ensemble."
+ },
+ {
+  "code": "52-108",
+  "a_dire": "Un énoncé « si et seulement si » se lit en prémisse, conclusion, et deux sens à prouver.",
+  "legende_titre": "Lire la forme avant de prouver",
+  "lecture": [
+   "La case grise du haut est la prémisse.",
+   "La case bleue et la case violette sont les deux propriétés reliées.",
+   "Les deux flèches orange sont les deux sens à prouver."
+  ],
+  "a_voir": "Il y a deux preuves, une par flèche."
+ },
+ {
+  "code": "52-109",
+  "a_dire": "La preuve part de M maximal et de a hors de M, utilise la maximalité, et arrive à un inverse.",
+  "legende_titre": "Départ, étape clé, arrivée",
+  "lecture": [
+   "La case bleue est le départ : M = (7) maximal et a = 3.",
+   "La case orange est l'étape clé : I contient M et 3, donc I = ℤ.",
+   "La case verte est l'arrivée : 1 est dans I, donc 3 a un inverse."
+  ],
+  "a_voir": "Sans la maximalité de M, I pourrait rester entre M et R."
+ },
+ {
+  "code": "52-110",
+  "a_dire": "L'ensemble I contient M et a, et ce qu'il contient dépend de M et de a.",
+  "legende_titre": "Ce que forme ra + m",
+  "lecture": [
+   "La rangée verte du haut montre que (7) et 3 donnent tous les entiers de 0 à 8.",
+   "La rangée du bas montre que (6) et 4 ne donnent que les nombres pairs, en rouge.",
+   "Les cercles vides sont les nombres que (6) et 4 ne donnent pas."
+  ],
+  "a_voir": "Le même modèle ra + m donne tout ou une partie selon M et a."
+ },
+ {
+  "code": "52-111",
+  "a_dire": "I est un idéal : la différence de deux éléments de I garde la forme multiple de a plus élément de M.",
+  "legende_titre": "La différence garde la forme",
+  "lecture": [
+   "Les deux premières lignes écrivent 19 et 17 comme multiple de 3 plus multiple de 7.",
+   "La troisième ligne verte écrit leur différence 2.",
+   "Les cases orange sont des multiples de 3, les cases grises des multiples de 7."
+  ],
+  "a_voir": "La différence 2 s'écrit encore 3 × 3 − 7."
+ },
+ {
+  "code": "52-112",
+  "a_dire": "I contient M : un élément m de M s'écrit 0 × a + m.",
+  "legende_titre": "Choisir 0 comme multiplicateur",
+  "lecture": [
+   "La case bleue en haut est 14, qui est dans (7).",
+   "La case orange 0 est le multiplicateur choisi.",
+   "La case grise 14 est l'élément de (7) qui reste, car 0 × 3 vaut 0."
+  ],
+  "a_voir": "Avec le multiplicateur 0, le multiple de 3 disparaît."
+ }
+]

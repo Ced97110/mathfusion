@@ -1,0 +1,182 @@
+[
+ {
+  "code": "52-209",
+  "a_dire": "La transposée échange les lignes et les colonnes, les coefficients restent.",
+  "legende_titre": "Deux matrices, un échange",
+  "lecture": [
+   "Le bleu est la matrice de départ ; le vert est sa transposée.",
+   "Les cases orange (2 et 5) changent de place.",
+   "Les cases grises (1 et 6) restent où elles sont."
+  ],
+  "a_voir": "Les mêmes nombres, avec lignes et colonnes échangées."
+ },
+ {
+  "code": "52-210",
+  "a_dire": "Aᵀ se lit « A transposée » : le T note l'échange des lignes et des colonnes.",
+  "legende_titre": "Lire le signe en deux morceaux",
+  "lecture": [
+   "Le grand A bleu est la matrice de départ.",
+   "Le T orange note l'échange des lignes et des colonnes.",
+   "La note rouge dit que le T n'est pas une puissance."
+  ],
+  "a_voir": "Chaque morceau du signe a son sens."
+ },
+ {
+  "code": "52-211",
+  "a_dire": "L'exemple montre où vont les nombres, pas ce que devient un produit.",
+  "legende_titre": "Un exemple et ce qu'il laisse de côté",
+  "lecture": [
+   "À gauche, la matrice de lignes (1, 2) et (5, 6) ; à droite, sa transposée.",
+   "Les cases orange échangent leurs places, les grises restent.",
+   "Le cadre rouge en pointillés dit que le produit n'est pas montré."
+  ],
+  "a_voir": "Le 2 et le 5 échangent leurs places ; rien sur le produit."
+ },
+ {
+  "code": "52-212",
+  "a_dire": "Les formes seules forcent l'ordre : BᵀAᵀ existe, AᵀBᵀ n'existe pas.",
+  "legende_titre": "Des rectangles, pas des nombres",
+  "lecture": [
+   "En haut, A (2 × 3) fois B (3 × 1) donne AB (2 × 1).",
+   "Au milieu, Bᵀ (1 × 3) fois Aᵀ (3 × 2) : 3 = 3, le produit existe et a la forme 1 × 2.",
+   "En bas, Aᵀ (3 × 2) fois Bᵀ (1 × 3) est barré en rouge : 2 ≠ 1, le produit n'existe pas."
+  ],
+  "a_voir": "Seul l'ordre BᵀAᵀ a des formes qui s'accordent."
+ },
+ {
+  "code": "52-213",
+  "a_dire": "La preuve part des formes ; la comparaison des formes impose l'ordre BᵀAᵀ.",
+  "legende_titre": "D'où part la preuve, où elle arrive",
+  "lecture": [
+   "Le cadre bleu donne les formes de départ.",
+   "Le cadre orange épais est l'étape qui décide : (AB)ᵀ doit être 1 × 2.",
+   "Le cadre vert existe, le rouge est impossible.",
+   "En bas, le résultat est (6 15)."
+  ],
+  "a_voir": "La comparaison des formes porte tout le poids."
+ },
+ {
+  "code": "52-214",
+  "a_dire": "Chaque produit du coefficient 11 est écrit avec ses facteurs échangés, la somme reste 11.",
+  "legende_titre": "Deux sommes égales",
+  "lecture": [
+   "En haut, A et B : la ligne 2 de A et la colonne 1 de B sont colorées.",
+   "Au milieu en bleu, le coefficient de AB vaut 5×1 + 6×1 = 11.",
+   "En bas en violet, celui de BᵀAᵀ vaut 1×5 + 1×6 = 11.",
+   "Les flèches orange montrent l'échange des facteurs ; les deux sommes sont égales."
+  ],
+  "a_voir": "L'échange des facteurs donne la même somme."
+ },
+ {
+  "code": "52-215",
+  "a_dire": "La formule se lit en trois actions : transposer, multiplier à l'envers, comparer.",
+  "legende_titre": "Trois actions sur un cas chiffré",
+  "lecture": [
+   "En haut, les transposées de A (bleu) et de B (violet).",
+   "Au milieu en vert, leur produit dans l'ordre inverse.",
+   "En bas en bleu, la transposée du produit AB.",
+   "Les deux lignes sont égales."
+  ],
+  "a_voir": "Les deux résultats ont les mêmes lignes (3, 11) et (2, 6)."
+ },
+ {
+  "code": "52-216",
+  "a_dire": "Un anti-isomorphisme respecte la somme et renverse l'ordre des facteurs.",
+  "legende_titre": "Deux sortes de transformations",
+  "lecture": [
+   "À gauche, x puis y devient y′ puis x′ : l'ordre est renversé.",
+   "À droite, x puis y devient x′ puis y′ : l'ordre est gardé.",
+   "Le cadre gris dit ce qu'elles ont en commun."
+  ],
+  "a_voir": "Même somme respectée, ordre des facteurs différent."
+ },
+ {
+  "code": "52-217",
+  "a_dire": "Un anti-automorphisme est un anti-isomorphisme dont l'arrivée est le départ.",
+  "legende_titre": "Trois cas emboîtés",
+  "lecture": [
+   "La bande du haut va de R vers un autre anneau R′.",
+   "La bande bleue du milieu va de R vers R.",
+   "La bande du bas ajoute que deux fois la transformation redonne x."
+  ],
+  "a_voir": "Le cas du milieu demande que l'arrivée soit le départ."
+ },
+ {
+  "code": "52-218",
+  "a_dire": "Une involution, appliquée deux fois, redonne l'élément de départ.",
+  "legende_titre": "Transposer deux fois",
+  "lecture": [
+   "À gauche la matrice A, à droite sa transposée.",
+   "La flèche du haut transpose, la flèche du bas transpose encore et revient à A."
+  ],
+  "a_voir": "Deux transpositions ramènent au départ."
+ },
+ {
+  "code": "52-219",
+  "a_dire": "Le 2 retourne à sa place après deux transpositions, donc (Aᵀ)ᵀ = A.",
+  "legende_titre": "Le chemin du 2",
+  "lecture": [
+   "Trois grilles montrent la case orange du 2 : ligne 1 colonne 2, puis ligne 2 colonne 1, puis ligne 1 colonne 2.",
+   "Les flèches orange échangent ligne et colonne."
+  ],
+  "a_voir": "Échanger deux fois ramène chaque nombre à sa place."
+ },
+ {
+  "code": "52-220",
+  "a_dire": "Conjuguer un quaternion deux fois redonne le quaternion.",
+  "legende_titre": "Conjuguer deux fois",
+  "lecture": [
+   "En bleu, le quaternion 3 + 2i + 5j + 7k.",
+   "En orange, sa conjugaison : le 3 reste, les trois autres changent de signe.",
+   "En vert, une seconde conjugaison redonne le départ."
+  ],
+  "a_voir": "Deux conjugaisons redonnent 3, 2, 5 et 7."
+ },
+ {
+  "code": "52-221",
+  "a_dire": "L'anneau opposé garde la même addition et renverse le produit.",
+  "legende_titre": "Deux produits pour les mêmes matrices",
+  "lecture": [
+   "À gauche en bleu, le produit AB dans R.",
+   "À droite en violet, le produit A × B = BA dans R⁰.",
+   "Le cadre gris dit ce qui ne change pas."
+  ],
+  "a_voir": "Mêmes matrices, produits différents."
+ },
+ {
+  "code": "52-222",
+  "a_dire": "R⁰ se lit « R zéro » : c'est l'anneau opposé de R, le 0 n'est pas une puissance.",
+  "legende_titre": "Le signe R⁰ en morceaux",
+  "lecture": [
+   "Le R bleu est l'anneau de départ.",
+   "Le 0 orange dit que le produit est renversé.",
+   "La note rouge écarte la puissance.",
+   "En bas, a × b = ba dans R⁰."
+  ],
+  "a_voir": "Un seul signe nomme l'anneau au produit renversé."
+ },
+ {
+  "code": "52-223",
+  "a_dire": "Si le produit de R n'est pas associatif, celui de R⁰ ne l'est pas non plus.",
+  "legende_titre": "Retirer l'hypothèse d'associativité",
+  "lecture": [
+   "En haut en vert, regrouper les entiers 2, 3, 4 donne 24 des deux côtés.",
+   "Dans la case bleue, avec le produit a − b, les deux regroupements donnent 1 et 3.",
+   "La flèche orange renverse le produit : dans R⁰, a * b vaut b − a.",
+   "Dans la case violette, les deux regroupements donnent 3 et −7."
+  ],
+  "a_voir": "Si le produit de R n'est pas associatif, celui de R⁰ ne l'est pas non plus."
+ },
+ {
+  "code": "52-224",
+  "a_dire": "Un anti-isomorphisme de R vers R′ est un isomorphisme de R⁰ vers R′.",
+  "legende_titre": "Un carré à deux chemins",
+  "lecture": [
+   "En haut, dans R, le produit yx est envoyé sur (yx)′, qui vaut x′y′ : l'ordre est renversé.",
+   "En bas, dans R⁰, le produit x × y vaut yx ; son image est la même, x′y′ : l'ordre est gardé.",
+   "Les boîtes bleues sont dans R et R⁰, les violettes dans R′.",
+   "C'est la même application, lue de deux façons."
+  ],
+  "a_voir": "Renversé de R vers R′, gardé de R⁰ vers R′."
+ }
+]

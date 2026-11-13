@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(65)
+box(ax, 2, 18, 38, 32, 'sujet', fill=True)
+box(ax, 48, 18, 38, 32, 'autre', fill=True)
+text(ax, 21, 55, r'$R=\mathbb{Z}$', 'sujet', 'm'); text(ax, 67, 55, r"$R'=\mathbb{Z}/6\mathbb{Z}$", 'autre', 'm')
+disc(ax, 21, 38, 6, 'sujet', label=r'$1$', size='l'); text(ax, 21, 26, 'unité de ' + r'$R$', 'sujet', 's')
+disc(ax, 67, 38, 6, 'autre', label=r"$1'$", size='l'); text(ax, 67, 26, 'unité de ' + r"$R'$", 'autre', 's')
+arrow(ax, (28, 38), (60, 38), 'varie', both=True)
+text(ax, 44, 42, 'deux objets', 'varie', 's')
+text(ax, 44, 9, 'le prime marque l’arrivée', 'encre', 's')
+save(fig, '52-138')

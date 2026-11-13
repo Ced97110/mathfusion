@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 14, 74, 60, 12, 'fixe', label=r'$R=\mathbb{Z}$ : anneau de départ')
+arrow(ax, (26, 73), (22, 56), 'varie'); arrow(ax, (62, 73), (66, 56), 'varie')
+text(ax, 20, 66, 'garder', 'varie', 's', ha='right'); text(ax, 70, 66, 'réunir', 'varie', 's', ha='left')
+box(ax, 3, 18, 30, 37, 'autre', label=None)
+text(ax, 18, 49, 'sous-anneau', 'autre', 's', weight='bold')
+text(ax, 18, 40, r'$4\mathbb{Z}$ : 0, 4, 8', 'autre', 's')
+text(ax, 18, 33, 'une partie', 'autre', 's')
+box(ax, 37, 18, 48, 37, 'sujet', label=None)
+text(ax, 61, 49, 'anneau quotient', 'sujet', 's', weight='bold')
+for i in range(4):
+    box(ax, 40 + i * 11.2, 28, 10, 10, 'sujet', label=r'$\bar{%d}$' % i, size='s')
+text(ax, 61, 22.5, r'des classes : + et $\times$', 'sujet', 's')
+text(ax, 44, 10, 'le quotient n’est pas une partie', 'limite', 's')
+save(fig, '52-074')

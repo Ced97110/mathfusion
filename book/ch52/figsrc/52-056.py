@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 44, 20, 12, 'sujet', label='kℤ', size='l')
+arrow(ax, (24, 50), (60, 50), 'varie')
+text(ax, 42, 55, 'on retire ℤ', 'varie', 's')
+box(ax, 60, 44, 24, 12, 'resultat', label='(k)', size='l')
+arrow(ax, (72, 44), (24, 26), 'fixe')
+arrow(ax, (72, 44), (66, 26), 'fixe')
+box(ax, 2, 10, 40, 16, 'sujet', label='(6) : multiples\nde 6 dans ℤ', size='s')
+box(ax, 46, 10, 40, 16, 'autre', label='(a) : engendré par a\ndans un autre anneau', size='s')
+save(fig, '52-056')

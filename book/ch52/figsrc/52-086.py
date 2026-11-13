@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+text(ax,22,69,r'$a=3$, $k=10$','resultat','m'); text(ax,66,69,r'$a=4$, $k=10$','limite','m')
+box(ax,2,48,40,13,'sujet',label=r'$3\times7=2\times10+1$',size='s')
+arrow(ax,(22,47),(22,38),'varie')
+box(ax,2,24,40,13,'resultat',label=r'inverse : $\bar7$',size='m')
+box(ax,46,53,40,9,'limite',label=r'$4b$ : toujours pair',size='s')
+box(ax,46,41,40,9,'limite',label=r'$1+10m$ : toujours impair',size='s')
+arrow(ax,(66,40),(66,38),'varie')
+box(ax,46,24,40,13,'limite',label='\n'.join(['jamais égaux','pas d’inverse']),size='s')
+save(fig,'52-086')

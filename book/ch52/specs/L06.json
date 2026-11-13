@@ -1,0 +1,194 @@
+[
+ {
+  "code": "52-081",
+  "a_dire": "Si k est composé, deux classes non nulles ont un produit nul.",
+  "legende_titre": "Un produit nul de classes non nulles",
+  "lecture": [
+   "k = 6 : 2̄ et 3̄ ne sont pas nulles, leur produit est 0̄.",
+   "Les deux cases bleues sont les classes de 2 et de 3 : aucune n'est nulle.",
+   "Les flèches orange vont vers leur produit.",
+   "La case verte montre le produit : 6 a pour classe 0̄."
+  ],
+  "a_voir": "Deux classes non nulles dont le produit est nul."
+ },
+ {
+  "code": "52-082",
+  "a_dire": "Si p est premier, chaque classe non nulle de ℤ/pℤ a un inverse.",
+  "legende_titre": "Chaque classe a son inverse",
+  "lecture": [
+   "Pour p = 7, 1, 2, 3 et 6 ont chacun un inverse : 1, 4, 5 et 6.",
+   "La colonne bleue liste les classes non nulles par 7.",
+   "La colonne verte donne l'inverse de chacune.",
+   "La flèche orange relie deux classes dont le produit vaut 1̄."
+  ],
+  "a_voir": "Chaque ligne bleue a une partenaire verte."
+ },
+ {
+  "code": "52-083",
+  "a_dire": "La preuve part de k = lm et arrive à deux classes non nulles de produit nul.",
+  "legende_titre": "Du produit lm à la classe nulle",
+  "lecture": [
+   "Avec k = 12 = 3 × 4, le produit de 3̄ et 4̄ est nul alors qu'aucune n'est nulle.",
+   "Le cadre bleu est le départ : 12 s'écrit 3 fois 4.",
+   "La case orange est l'étape clé : 12 a pour classe 0̄.",
+   "La case verte est l'arrivée : 3̄ et 4̄ ne sont pas nulles, leur produit l'est."
+  ],
+  "a_voir": "L'étape orange porte tout le poids."
+ },
+ {
+  "code": "52-084",
+  "a_dire": "Si p est premier et ne divise pas a, la relation de Bézout donne l'inverse de a.",
+  "legende_titre": "De la relation de Bézout à l'inverse",
+  "lecture": [
+   "Pour p = 7 et a = 3 : 3 × 5 + 7 × (−2) = 1, donc 5̄ est l'inverse de 3̄.",
+   "La case bleue est le produit de 3 par 5.",
+   "La case grise est un multiple de 7 : sa classe est 0̄.",
+   "La case verte de droite vaut 1."
+  ],
+  "a_voir": "Le multiple de 7 disparaît, il reste 3̄ × 5̄ = 1̄."
+ },
+ {
+  "code": "52-085",
+  "a_dire": "Une classe est inversible quand a et k sont premiers entre eux.",
+  "legende_titre": "Quand une classe a un inverse",
+  "lecture": [
+   "Dans ℤ/6ℤ, 4̄ (pgcd 2) n'a pas d'inverse ; 5̄ (pgcd 1) en a un.",
+   "La ligne rouge donne les produits de 4̄ par 0 à 5 : jamais 1.",
+   "La ligne du bas donne ceux de 5̄ par 0 à 5.",
+   "La case verte montre le produit égal à 1."
+  ],
+  "a_voir": "Seule la ligne du pgcd 1 contient un 1."
+ },
+ {
+  "code": "52-086",
+  "a_dire": "Il y a deux sens : ax + ky = 1 donne un inverse, et un inverse force le pgcd 1.",
+  "legende_titre": "Les deux sens de la preuve",
+  "lecture": [
+   "Pour k = 10, a = 3 a un inverse (7) ; a = 4 n'en a pas, car pair ne peut égaler impair.",
+   "Colonne de gauche : 3 × 7 = 2 × 10 + 1, donc 7̄ est l'inverse de 3̄.",
+   "Colonne de droite : 4b est toujours pair.",
+   "Le nombre 1 + 10m est toujours impair."
+  ],
+  "a_voir": "Le cas qui marche à gauche, le cas qui casse à droite."
+ },
+ {
+  "code": "52-087",
+  "a_dire": "φ(k) est le nom du nombre de classes inversibles par k.",
+  "legende_titre": "Un nom pour un nombre de classes",
+  "lecture": [
+   "Pour 12, quatre classes sont inversibles ; pour 7, six.",
+   "Chaque case bleue est une classe inversible.",
+   "La première ligne est l'horloge de 12 : quatre cases.",
+   "La seconde est l'horloge de 7 : six cases."
+  ],
+  "a_voir": "Le nombre de cases change avec l'horloge, et φ le nomme."
+ },
+ {
+  "code": "52-088",
+  "a_dire": "φ(k) se lit « phi de k » et donne le nombre de classes inversibles par k.",
+  "legende_titre": "Lire le signe phi de k",
+  "lecture": [
+   "Le signe se découpe : phi est le nom, k est l'entier choisi.",
+   "La lettre bleue φ est le nom de la fonction.",
+   "Le groupe orange (k) est l'entier positif choisi.",
+   "L'accolade verte réunit les deux : le tout donne un nombre de classes inversibles."
+  ],
+  "a_voir": "Chaque morceau du signe a sa case."
+ },
+ {
+  "code": "52-089",
+  "a_dire": "Pour 12, les classes inversibles sont 1, 5, 7 et 11, donc φ(12) = 4.",
+  "legende_titre": "La liste des inversibles de 12",
+  "lecture": [
+   "Les nombres de 1 à 11 sont testés : quatre ont un pgcd égal à 1 avec 12.",
+   "Les cases vertes sont 1, 5, 7 et 11.",
+   "Les cases grises ont un pgcd plus grand que 1 avec 12.",
+   "Le nombre vert en bas compte les cases vertes."
+  ],
+  "a_voir": "Quatre cases vertes sur onze."
+ },
+ {
+  "code": "52-090",
+  "a_dire": "Pour p premier, φ(p) = p − 1 : toutes les classes sauf 0̄ sont inversibles.",
+  "legende_titre": "Toutes les classes sauf zéro",
+  "lecture": [
+   "Pour p = 2, 7 et 13, φ vaut 1, 6 et 12.",
+   "Chaque ligne a p cases.",
+   "La case grise de gauche est la classe 0̄.",
+   "Les cases vertes sont inversibles ; leur nombre est écrit à droite."
+  ],
+  "a_voir": "Une case grise, toutes les autres vertes."
+ },
+ {
+  "code": "52-091",
+  "a_dire": "Si a est premier avec k, a puissance φ(k) a pour reste 1 par k.",
+  "legende_titre": "Une puissance qui revient à 1",
+  "lecture": [
+   "Pour k = 12, φ(12) = 4 : 5⁴ = 625 et 7⁴ = 2 401 ont le reste 1.",
+   "Le texte orange donne l'exposant 4.",
+   "La case bleue de chaque ligne est la puissance de 5 ou de 7.",
+   "La case grise l'écrit sous la forme multiple de 12 plus 1."
+  ],
+  "a_voir": "Les deux lignes finissent par le reste 1."
+ },
+ {
+  "code": "52-092",
+  "a_dire": "(mod k) veut dire que les deux nombres ont le même reste par k.",
+  "legende_titre": "Même reste par 12",
+  "lecture": [
+   "29, 17 et 5 ont le même reste, 5, par 12.",
+   "La droite est graduée de 12 en 12.",
+   "Les disques bleus sont 5, 17 et 29.",
+   "Les arcs orange montrent qu'on ajoute 12 à chaque saut."
+  ],
+  "a_voir": "Trois nombres, un seul reste."
+ },
+ {
+  "code": "52-093",
+  "a_dire": "La preuve utilise le groupe des inversibles d'ordre φ(k) et le théorème de Lagrange.",
+  "legende_titre": "Du groupe à la puissance 1",
+  "lecture": [
+   "Pour 12, le groupe a 4 éléments ; l'ordre de 5̄ est 2, qui divise 4, donc 5⁴ ≡ 1.",
+   "Le cadre bleu est le départ : le groupe des quatre classes inversibles.",
+   "La case orange est l'étape clé : Lagrange.",
+   "La case verte est l'arrivée : 5⁴ vaut 1."
+  ],
+  "a_voir": "L'étape orange fait passer de l'ordre 2 à l'exposant 4."
+ },
+ {
+  "code": "52-094",
+  "a_dire": "Si p est premier et ne divise pas a, a puissance p − 1 a pour reste 1.",
+  "legende_titre": "Fermat avec p premier, et sans",
+  "lecture": [
+   "Avec p = 5 et a = 2, le reste est 1 ; avec 4 et a = 3, le reste est 3.",
+   "À gauche, p = 5 : 2⁴ = 16 donne le reste 1 (vert).",
+   "À droite, 4 n'est pas premier : 3³ = 27 donne le reste 3 (rouge).",
+   "La ligne du bas dit si la congruence tient."
+  ],
+  "a_voir": "Le cas premier réussit, le cas non premier échoue."
+ },
+ {
+  "code": "52-095",
+  "a_dire": "Pour p premier, a puissance p et a ont le même reste par p, pour tout a.",
+  "legende_titre": "a puissance p garde le reste de a",
+  "lecture": [
+   "Pour p = 5 : 2⁵ = 32 a le reste 2 ; 5⁵ = 3 125 a le reste 0, comme 5.",
+   "La case bleue est le nombre a.",
+   "La case grise est sa puissance p.",
+   "La case verte donne le reste, égal à celui de a."
+  ],
+  "a_voir": "Chaque ligne finit par deux restes égaux."
+ },
+ {
+  "code": "52-096",
+  "a_dire": "Dans un idéal premier, un produit dedans force un facteur dedans.",
+  "legende_titre": "Produit dedans, facteur dedans",
+  "lecture": [
+   "Les multiples de 3 : 12 = 2 × 6 contient le facteur 6. Les multiples de 6 : 6 = 2 × 3 sans 2 ni 3.",
+   "À gauche, le produit 12 est dans l'idéal et le facteur 6 aussi (vert).",
+   "À droite, le produit 6 est dans l'idéal, mais ni 2 ni 3 (rouge).",
+   "Le titre du bas dit lequel est premier."
+  ],
+  "a_voir": "Un produit dedans sans facteur dedans casse la propriété."
+ }
+]

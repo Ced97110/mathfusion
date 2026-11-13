@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,18,56,52,10,'sujet',label=r'corps $\mathbb{Z}/5$ : 2 idéaux')
+box(ax,4,36,34,9,'fixe',label=r'idéal $\{0\}$')
+box(ax,50,36,34,9,'fixe',label='idéal tout')
+arrow(ax,(30,56),(21,45),'varie'); arrow(ax,(58,56),(67,45),'varie')
+box(ax,4,18,34,10,'resultat',label=r'$\mathbb{Z}/5$ : 5 classes')
+box(ax,50,18,34,10,'resultat',label='1 classe')
+arrow(ax,(21,36),(21,28),'varie'); arrow(ax,(67,36),(67,28),'varie')
+text(ax,21,12,'rien de nouveau','limite','s'); text(ax,67,12,'anneau nul','limite','s')
+text(ax,44,4,'aucun autre idéal','limite','s')
+save(fig,'52-278')

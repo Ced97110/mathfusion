@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 4, 62, 80, 22, 'sujet', fill=False)
+text(ax, 20, 78, r'$I$ : les impairs', 'sujet', 'm')
+for x, n in zip([14, 30, 46, 62], [1, 3, 5, 7]):
+    disc(ax, x, 68, 3.4, 'sujet', label=str(n), size='m')
+text(ax, 76, 68, '…', 'sujet', 'm')
+arrow(ax, (24, 61.5), (24, 49), 'varie'); arrow(ax, (64, 61.5), (64, 49), 'varie')
+text(ax, 44, 55, 'soustraire', 'varie', 's')
+box(ax, 4, 38, 40, 10, 'limite', label=r'$1-1=0\notin I$', size='m')
+box(ax, 44, 38, 40, 10, 'limite', label=r'$3-1=2\notin I$', size='m')
+arrow(ax, (24, 37.5), (24, 24), 'resultat'); arrow(ax, (64, 37.5), (64, 24), 'resultat')
+box(ax, 4, 12, 40, 11, 'resultat', label=r'il faut $0\in I$', size='m')
+box(ax, 44, 12, 40, 11, 'resultat', label='il faut rester dans $I$', size='s')
+save(fig, '52-028')

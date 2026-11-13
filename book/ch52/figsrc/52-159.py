@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+disc(ax, 10, 42, 6, 'sujet', label='7'); disc(ax, 10, 20, 6, 'sujet', label='−5')
+box(ax, 34, 21, 22, 20, 'autre', label='classe\nde 3', size='s')
+disc(ax, 78, 31, 6, 'resultat', label='1')
+arrow(ax, (16, 42), (34, 36), 'resultat'); arrow(ax, (16, 20), (34, 26), 'resultat')
+arrow(ax, (56, 31), (72, 31), 'varie')
+text(ax, 22, 46, r'$\nu$ d\'abord', 'resultat', 's') if False else text(ax, 24, 47, r'1. $\nu$', 'resultat', 's')
+text(ax, 64, 37, r'2. $\bar{\eta}$', 'varie', 's')
+text(ax, 44, 6, r'$\eta = \bar{\eta} \circ \nu$ (de droite à gauche)', 'sujet', 's')
+text(ax, 44, 55, 'même résultat que η seule', 'fixe', 's')
+save(fig, '52-159')

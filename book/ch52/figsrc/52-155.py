@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 74, r'$\eta=\bar{\eta}\circ\nu$', 'encre', 'l')
+box(ax, 4, 50, 24, 16, 'sujet', label='$R = \\mathbb{Z}$\n7', size='s'); box(ax, 60, 50, 24, 16, 'sujet', label='$S = \\mathbb{Z}/2$\n1', size='s')
+box(ax, 30, 12, 28, 16, 'autre', label='$R/I$\nclasse de 3', size='s')
+arrow(ax, (28, 58), (60, 58), 'sujet', lw=1.4); text(ax, 44, 62.5, r'$\eta$', 'sujet', 'l', weight='bold')
+arrow(ax, (14, 50), (34, 28), 'resultat', lw=1.4); text(ax, 11, 39, r'$\nu$', 'resultat', 'l', weight='bold')
+arrow(ax, (54, 28), (74, 50), 'varie', lw=1.4); text(ax, 77, 39, r'$\bar{\eta}$', 'varie', 'l', weight='bold')
+text(ax, 44, 47, 'direct : 7 → 1', 'sujet', 's')
+text(ax, 44, 5, '7 → classe de 3 → 1', 'fixe', 's')
+save(fig, '52-155')

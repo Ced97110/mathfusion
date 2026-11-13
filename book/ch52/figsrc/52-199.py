@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,6,46,28,12,'sujet',label=r'$4$',size='xl'); box(ax,54,46,28,12,'autre',label=r'$9$',size='xl')
+text(ax,20,41,'pas premier','fixe','s'); text(ax,68,41,'pas premier','fixe','s')
+for x in (14,26): arrow(ax,(20,46-9),(x,31+4.5),'fixe',lw=0.7)
+for x in (62,74): arrow(ax,(68,46-9),(x,31+4.5),'fixe',lw=0.7)
+for x in (14,26): disc(ax,x,28,4,'sujet',label='2')
+for x in (62,74): disc(ax,x,28,4,'autre',label='3')
+box(ax,10,4,68,12,'resultat',label=r'aucun facteur commun : pgcd $=1$',size='s')
+save(fig,'52-199')

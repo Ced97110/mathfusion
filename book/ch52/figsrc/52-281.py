@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,3,36,38,20,'resultat'); box(ax,47,36,38,20,'limite')
+text(ax,22,50,'5 premier','resultat','m'); text(ax,66,50,'6 composé','limite','m')
+text(ax,22,42,r'$2\times3=6=1$','resultat','m'); text(ax,66,42,r'$2\times3=6=0$','limite','m')
+arrow(ax,(22,36),(22,26),'varie'); arrow(ax,(66,36),(66,26),'varie')
+box(ax,3,10,38,16,'resultat',label='tout reste a un inverse',size='s')
+box(ax,47,10,38,16,'limite',label='2 et 3 : produit nul',size='s')
+text(ax,22,4,'corps','resultat','s'); text(ax,66,4,'pas un corps','limite','s')
+save(fig,'52-281')

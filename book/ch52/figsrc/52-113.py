@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+f = numberline(ax, 8, 78, 44, 0, 14, 1, every=7, arrow_right=False)
+for v in (0, 7, 14): disc(ax, f(v), 44, 1.6, 'sujet')
+disc(ax, f(3), 44, 1.6, 'varie')
+text(ax, f(3), 51, r'$a=3$', 'varie')
+text(ax, f(7), 51, r'$M=(7)$', 'sujet')
+arrow(ax, (f(3), 41.5), (f(3), 33), 'varie')
+box(ax, 6, 22, 76, 10, 'varie', label=r'$3=1\times3+0$ ($r=1$, $m=0$)')
+arrow(ax, (44, 22), (44, 15), 'varie')
+box(ax, 6, 3, 76, 11, 'resultat', label=r'$3\in I$, $3\notin M$ : $I>M$')
+save(fig, '52-113')

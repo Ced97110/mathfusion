@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(65)
+text(ax, 44, 60, r'$\eta$ : tout entier $\mapsto\bar{0}$', 'limite', 's')
+box(ax, 4, 36, 24, 12, 'sujet', label=r'$1$', size='l'); text(ax, 16, 52, 'unité de ' + r'$\mathbb{Z}$', 'sujet', 's')
+box(ax, 58, 38, 26, 12, 'limite', label=r'$\eta(1)=\bar{0}$', size='m')
+box(ax, 58, 14, 26, 12, 'resultat', label=r"$1'=\bar{1}$", size='m', dash=True)
+text(ax, 71, 55, 'image obtenue', 'limite', 's'); text(ax, 71, 9, 'unité attendue', 'resultat', 's')
+arrow(ax, (29, 44), (57, 44), 'limite')
+arrow(ax, (29, 38), (57, 21), 'resultat', curve=0.0)
+text(ax, 43, 47.5, r'$\eta$', 'limite', 'm')
+text(ax, 20, 22, r'$\eta(1)\neq1\,'+"'"+r'$', 'limite', 'm')
+save(fig, '52-137')

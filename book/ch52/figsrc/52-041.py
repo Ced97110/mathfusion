@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,r'$a\prime b$ ajouté puis retiré','autre','m')
+y=30; f=numberline(ax,8,76,y,0,30,step=6,labels=False,arrow_right=False)
+disc(ax,f(30),y,1.9,'sujet'); disc(ax,f(6),y,1.9,'autre'); disc(ax,f(2),y,1.9,'resultat')
+text(ax,f(30),y-5,r'$ab$ = 30','sujet','s'); text(ax,f(6)+1,y-5,r'$a\prime b$ = 6','autre','s',ha='left'); text(ax,f(2)+2,y-5,r'$a\prime b\prime$ = 2','resultat','s',ha='right')
+arrow(ax,(f(30),y+4),(f(6)+1,y+4),'varie'); text(ax,f(18),y+8.5,r'− 24 : $ab-a\prime b$','varie','s')
+arrow(ax,(f(6)-1,y+4),(f(2),y+4),'varie'); text(ax,f(4)+3,y+8.5,r'− 4','varie','s')
+box(ax,10,4,68,10,'resultat',label=r'30 − 6 + 6 − 2 = 28 = 30 − 2',size='s')
+save(fig,'52-041')

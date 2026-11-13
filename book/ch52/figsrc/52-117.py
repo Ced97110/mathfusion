@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 30, 80, 36, 'varie', label=None)
+text(ax, 44, 62, r'idéal $I$ qui contient $7$ et $10$', 'varie', 's')
+box(ax, 10, 34, 34, 22, 'sujet', label=r'$M=(7)$')
+disc(ax, 64, 46, 5, 'varie', label=r'$10$')
+text(ax, 64, 37.5, r'$10\notin M$', 'varie', 's')
+arrow(ax, (44, 30), (44, 23), 'varie')
+box(ax, 4, 10, 80, 13, 'resultat', label=r'$1=10\times5+(-49)$')
+text(ax, 44, 4.5, r'donc $1\in I$ et $I=\mathbb{Z}$', 'resultat', 's')
+save(fig, '52-117')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 8, 48, 72, 10, 'sujet', label='la classe de 3 : …, −1, 3, 7, 11, …')
+box(ax, 4, 20, 34, 12, 'sujet', label=r'$3+I$', size='l')
+box(ax, 50, 20, 34, 12, 'sujet', label=r'$\bar{3}$', size='l')
+text(ax, 44, 26, '=', 'encre', 'l')
+arrow(ax, (21, 47), (21, 33), 'varie'); arrow(ax, (67, 47), (67, 33), 'varie')
+text(ax, 21, 14, 'écrit la partie $I$', 'resultat', 's')
+text(ax, 67, 14, 'ne l’écrit plus', 'limite', 's')
+text(ax, 67, 8, r'$I$ vient du contexte', 'fixe', 's')
+text(ax, 44, 63, 'même classe, deux écritures', 'encre', 's')
+save(fig, '52-066')

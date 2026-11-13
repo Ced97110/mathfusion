@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,4,62,30,10,'sujet',label='R = ℤ',size='m'); box(ax,54,62,30,10,'autre',label="R' = ℤ/12ℤ",size='m')
+arrow(ax,(34,67),(54,67),'varie'); text(ax,44,70.5,'η','varie','m')
+box(ax,4,38,30,10,'sujet',label='I = 4ℤ',size='m'); box(ax,54,38,30,10,'autre',label="I' = {0, 4, 8}",size='s')
+arrow(ax,(34,43),(54,43),'varie'); text(ax,44,46.5,'η(I)','varie','m')
+arrow(ax,(19,62),(19,48),'fixe'); text(ax,24.5,55,'⊃ I','fixe','s',ha='left')
+arrow(ax,(69,62),(69,48),'fixe'); text(ax,74.5,55,"⊃ I'",'fixe','s',ha='left')
+box(ax,4,10,30,10,'resultat',label='4 classes',size='m'); box(ax,54,10,30,10,'resultat',label='4 classes',size='m')
+arrow(ax,(19,38),(19,20),'fixe'); text(ax,24.5,29,'R/I','sujet','s',ha='left')
+arrow(ax,(69,38),(69,20),'fixe'); text(ax,74.5,29,"R'/I'",'autre','s',ha='left')
+text(ax,44,15,'≅','resultat','xl')
+save(fig,'52-165')

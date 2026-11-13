@@ -1,0 +1,183 @@
+[
+ {
+  "code": "52-240",
+  "a_dire": "La méthode : remplacer par les restes, calculer case par case, recoller à la fin.",
+  "legende_titre": "Trois étapes, la dernière recolle",
+  "lecture": [
+   "Étape 1 : 7 et 8 deviennent les listes (1, 3, 2) et (2, 0, 3), pour les modules 3, 4 et 5.",
+   "Étape 2 : en orange, on multiplie case par case et on obtient (2, 0, 1).",
+   "Étape 3 : en vert, le recollage donne 56, le seul entier du résultat."
+  ],
+  "a_voir": "Le produit 56 n'apparaît qu'à l'étape 3."
+ },
+ {
+  "code": "52-241",
+  "a_dire": "L'étape 1 échoue si les modules ne sont pas premiers entre eux deux à deux.",
+  "legende_titre": "Quand la liste des restes ne suffit plus",
+  "lecture": [
+   "À gauche, en rouge, les modules 2 et 4 donnent la même liste (0, 0) à 0 et à 4.",
+   "À droite, avec 3, 4 et 5, les nombres 7 et 8 ont des listes différentes.",
+   "Si deux entiers ont la même liste, on ne peut plus retrouver l'entier."
+  ],
+  "a_voir": "Deux nombres, une seule liste à gauche ; deux listes à droite."
+ },
+ {
+  "code": "52-242",
+  "a_dire": "Le recollage retrouve un seul entier à partir de la liste des restes, par fusions successives.",
+  "legende_titre": "Retrouver un entier depuis ses restes",
+  "lecture": [
+   "En haut, les trois restes : 2 par 3, 0 par 4, 1 par 5.",
+   "La première fusion donne 8, défini à 12 près.",
+   "La seconde fusion, en vert, donne 56, défini à 60 près."
+  ],
+  "a_voir": "On fait deux fusions, une seule fois, à la fin."
+ },
+ {
+  "code": "52-243",
+  "a_dire": "Additionner puis prendre les restes donne la même liste que prendre les restes puis additionner case par case.",
+  "legende_titre": "Deux routes, la même liste",
+  "lecture": [
+   "La route 1, en bleu : 7 + 8 = 15, puis les restes donnent (0, 3, 0).",
+   "La route 2, en violet : on additionne les listes (1, 3, 2) et (2, 0, 3) case par case, ce qui donne (3, 3, 5).",
+   "On réduit (3, 3, 5) et on obtient (0, 3, 0), comme par la route 1."
+  ],
+  "a_voir": "Les deux routes arrivent à la même liste."
+ },
+ {
+  "code": "52-244",
+  "a_dire": "Les restes par N correspondent un à un aux paires de restes par chaque module, quand les modules sont premiers entre eux.",
+  "legende_titre": "Chaque case de la grille a un seul entier",
+  "lecture": [
+   "La grille a 3 colonnes (reste par 3) et 4 lignes (reste par 4).",
+   "Chaque case contient un entier de 0 à 11.",
+   "Les 12 entiers remplissent les 12 cases, sans case vide ni case double."
+  ],
+  "a_voir": "Chaque paire de restes est atteinte par un seul entier."
+ },
+ {
+  "code": "52-245",
+  "a_dire": "La liste des restes détermine x seulement à 60 près, le produit des modules.",
+  "legende_titre": "La liste ne désigne qu'un entier à 60 près",
+  "lecture": [
+   "Sur la droite graduée, 56 (bleu) et 116 (violet) ont la même liste (2, 0, 1).",
+   "La flèche orange montre qu'ils diffèrent de 60.",
+   "Le trait vert couvre les entiers de 0 à 59 : un seul y a cette liste."
+  ],
+  "a_voir": "56 et 116 ont la même liste ; entre 0 et 59, un seul reste."
+ },
+ {
+  "code": "52-246",
+  "a_dire": "Chaque coordonnée se calcule seule, donc les processeurs travaillent en même temps.",
+  "legende_titre": "Trois calculs qui ne s'attendent pas",
+  "lecture": [
+   "Chaque boîte bleue est un calcul modulo 3, 4 ou 5.",
+   "En orange, le produit calculé dans la boîte.",
+   "En gris, les seuls nombres utilisés : aucun ne vient d'une autre boîte."
+  ],
+  "a_voir": "Il n'y a aucun lien entre les trois boîtes."
+ },
+ {
+  "code": "52-247",
+  "a_dire": "Trois petits calculs remplacent 7 × 8 ; on recolle ensuite en 56.",
+  "legende_titre": "Trois petits calculs, un résultat",
+  "lecture": [
+   "Chaque ligne est une horloge : 3, 4 ou 5 cases.",
+   "La case verte est le résultat du produit : 2, 0 puis 1.",
+   "Les trois résultats mènent au recollage, en vert : 56, plus petit que 60."
+  ],
+  "a_voir": "Le même produit 56 sort des trois petits calculs."
+ },
+ {
+  "code": "52-248",
+  "a_dire": "Trois horloges calculent chacune de leur côté ; un seul entier, 56, les rassemble.",
+  "legende_titre": "Trois horloges, puis un seul entier",
+  "lecture": [
+   "Chaque disque bleu est une horloge à 3, 4 ou 5 positions.",
+   "L'aiguille verte montre le résultat : 2, 0 puis 1.",
+   "Aucun trait ne relie les horloges entre elles.",
+   "Les trois flèches orange arrivent au seul entier 56, en vert."
+  ],
+  "a_voir": "Les horloges sont séparées ; seul le bas les rassemble."
+ },
+ {
+  "code": "52-249",
+  "a_dire": "Les restes de 7 par 3, 4 et 5 sont 1, 3 et 2.",
+  "legende_titre": "Les restes de 7 par trois modules",
+  "lecture": [
+   "Chaque ligne montre 7 carrés.",
+   "Les carrés bleus forment des groupes pleins de 3, 4 ou 5.",
+   "Les carrés orange sont le reste : 1, 3 puis 2.",
+   "En bas, en vert, la liste (1, 3, 2)."
+  ],
+  "a_voir": "Le reste est ce qui ne remplit pas un groupe."
+ },
+ {
+  "code": "52-250",
+  "a_dire": "Sur chaque horloge on multiplie puis on réduit : 2 × 3 = 6 devient 1 sur l'horloge à 5.",
+  "legende_titre": "Un produit peut dépasser l'horloge",
+  "lecture": [
+   "Chaque ligne est une horloge, avec ses cases numérotées de 0 à m − 1.",
+   "La case verte est le résultat : 2, 0 puis 1.",
+   "Sur la ligne de 5, la case rouge en pointillés est le 6, qui dépasse.",
+   "La flèche orange ramène 6 à la case 1."
+  ],
+  "a_voir": "Le 6 dépasse la fin de l'horloge et revient à 1."
+ },
+ {
+  "code": "52-251",
+  "a_dire": "Le recollage de (2, 0, 1) en 56 se fait par deux fusions, dans un ordre ou dans l'autre.",
+  "legende_titre": "Deux ordres de fusion, le même 56",
+  "lecture": [
+   "À gauche, on fusionne d'abord 3 et 4 : 8 par 12, puis on ajoute 5.",
+   "À droite, on fusionne d'abord 3 et 5 : 11 par 15, puis on ajoute 4.",
+   "Les deux arbres finissent par 56 par 60, en vert."
+  ],
+  "a_voir": "Deux chemins différents arrivent au même 56."
+ },
+ {
+  "code": "52-252",
+  "a_dire": "Pour 2134 × 1531 on choisit quatre modules petits, premiers entre eux, de produit plus grand que le résultat.",
+  "legende_titre": "Choisir des modules pour de grands nombres",
+  "lecture": [
+   "Les quatre boîtes bleues sont les modules 95, 97, 98 et 99, avec leurs facteurs ; l'accolade grise dit que tous sont plus petits que 100.",
+   "Le texte orange dit qu'ils sont premiers entre eux deux à deux.",
+   "La grande barre bleue est leur produit, 89 403 930.",
+   "La petite barre verte est le résultat, 3 267 154 ; la phrase du bas les compare."
+  ],
+  "a_voir": "Les modules sont premiers entre eux et leur produit dépasse le résultat."
+ },
+ {
+  "code": "52-253",
+  "a_dire": "Quatre processeurs calculent chacun un produit, sans lien entre eux, puis un recollage donne 3 267 154.",
+  "legende_titre": "Quatre colonnes indépendantes, un recollage",
+  "lecture": [
+   "Chaque colonne a un module en bleu et un produit de deux restes en orange.",
+   "Les produits sont 9, 0, 30 et 55.",
+   "Aucune flèche ne va d'une colonne à l'autre.",
+   "En bas, en vert, le recollage donne 3 267 154."
+  ],
+  "a_voir": "Les quatre colonnes ont la même forme et ne se rejoignent qu'en bas."
+ },
+ {
+  "code": "52-254",
+  "a_dire": "Étape 1 : chaque grand nombre est remplacé par ses quatre restes, tous petits.",
+  "legende_titre": "Deux grands nombres, huit petits restes",
+  "lecture": [
+   "À gauche, 2134 en bleu et 1531 en violet, les grands nombres.",
+   "Chaque case à droite est le reste de la division par 95, 97, 98 ou 99.",
+   "Pour 2134 : 44, 0, 76, 55. Pour 1531 : 11, 76, 61, 46."
+  ],
+  "a_voir": "Aucun produit ici : on prépare seulement les restes."
+ },
+ {
+  "code": "52-255",
+  "a_dire": "L'étape 2 échoue si les modules sont trop grands : le produit dépasse la case de la machine.",
+  "legende_titre": "Quand le produit dépasse la machine",
+  "lecture": [
+   "Le cadre en pointillés est la case de la machine, jusqu'à 9,2 × 10^18.",
+   "En vert, avec des modules proches de 100, le produit 9 604 y tient.",
+   "En rouge, avec des modules de 10 milliards, le produit environ 10^20 sort du cadre."
+  ],
+  "a_voir": "Le produit rouge dépasse la case ; le vert y tient."
+ }
+]
