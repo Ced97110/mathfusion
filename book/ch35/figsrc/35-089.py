@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+ox,oy,s=22,10,8
+line(ax,[(4,oy),(46,oy)],'fixe',lw=0.6); line(ax,[(ox,oy-2),(ox,52)],'fixe',lw=0.6)
+arrow(ax,(ox,oy),(ox,oy+4*s-1.5),'sujet',lw=1.6)
+disc(ax,ox,oy+4*s,1.5,'sujet')
+text(ax,ox+3,oy+4*s+2,'$A(0\\ ;\\ 4)$','sujet','s',ha='left')
+text(ax,ox-5,oy+17,'$R=4$','sujet','s')
+line(ax,[(ox+8*math.cos(math.radians(t)),oy+8*math.sin(math.radians(t))) for t in range(0,91,4)],'varie',lw=1.1)
+text(ax,ox+10,oy+12,r'$\alpha=90°$','varie','s',ha='left')
+text(ax,ox-3,oy-4,'$O$','encre','s')
+text(ax,67,56,'$a=0,\\ b=4$','encre','m')
+box(ax,50,40,36,10,'limite',label=r'$\tan\alpha=4/0$')
+text(ax,68,35,'division par 0','limite','s')
+box(ax,50,21,36,9,'resultat',label=r'$\cos\alpha=0$')
+box(ax,50,10,36,9,'resultat',label=r'$\sin\alpha=1$')
+save(fig,'35-089')

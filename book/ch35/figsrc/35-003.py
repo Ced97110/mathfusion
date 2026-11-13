@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+O, Hh, A = (10, 26), (31, 26), (31, 54)
+poly(ax, [O, Hh, A], 'fixe')
+line(ax, [O, Hh], 'sujet', 1.8); line(ax, [Hh, A], 'varie', 1.8); line(ax, [O, A], 'resultat', 1.8)
+line(ax, [(28, 26), (28, 29), (31, 29)], 'fixe', 0.7)
+text(ax, 20.5, 22, '3', 'sujet', 'm'); text(ax, 35, 40, '4', 'varie', 'm'); text(ax, 17, 43, '5', 'resultat', 'm')
+text(ax, 62, 42, '5 ferme le triangle', 'resultat', 's')
+f = numberline(ax, 10, 73, 12, 0, 7, 1, arrow_right=False)
+for v, r in ((4, 'varie'), (5, 'resultat'), (7, 'limite')): disc(ax, f(v), 12, 1.6, r)
+text(ax, f(4), 18, '4', 'varie', 's'); text(ax, f(5), 18, '5', 'resultat', 's'); text(ax, f(7) - 1, 18, '3 + 4', 'limite', 's')
+save(fig, '35-003')

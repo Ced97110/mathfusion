@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+O = (10, 12); th = math.atan2(4, 3)
+poly(ax, [O] + [(O[0] + 13 * math.cos(t * th / 30), 12 + 13 * math.sin(t * th / 30)) for t in range(31)], 'sujet')
+line(ax, [O, (46, 12)], 'fixe', 1.2)
+line(ax, [O, (O[0] + 36 * math.cos(th), 12 + 36 * math.sin(th))], 'sujet', 1.6)
+text(ax, 27, 20.5, r'$\alpha$', 'sujet', 'l')
+text(ax, 70, 52, r'deux écritures de $\alpha$', 'encre', 's')
+box(ax, 54, 34, 32, 11, 'sujet', label='≈ 53,13°', size='l')
+box(ax, 54, 12, 32, 11, 'sujet', label='≈ 0,927 rad', size='l')
+arrow(ax, (62, 33), (62, 24), 'varie', 1.2)
+text(ax, 76, 28.5, r'$\times\,\pi\div 180$', 'varie', 's')
+save(fig, '35-011')

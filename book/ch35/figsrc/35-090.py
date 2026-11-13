@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+O=(44,35);s=9
+line(ax,[(6,O[1]),(82,O[1])],'fixe',lw=0.6); line(ax,[(O[0],4),(O[0],66)],'fixe',lw=0.6)
+ax.add_patch(Circle(O,s,ec=COL['fixe'],fc='none',lw=0.8,zorder=2))
+P1=(O[0]-s,O[1]+3*s);P2=(O[0]+s,O[1]-3*s)
+line(ax,[O,P1],'sujet',lw=1.3); line(ax,[O,P2],'autre',lw=1.3)
+disc(ax,*P1,1.4,'sujet'); disc(ax,*P2,1.4,'autre')
+disc(ax,O[0]-0.316*s,O[1]+0.949*s,1.0,'sujet'); disc(ax,O[0]+0.316*s,O[1]-0.949*s,1.0,'autre')
+text(ax,P1[0]+3,P1[1]+1.5,'$A(-1\\ ;\\ 3)$','sujet','s',ha='left')
+text(ax,P1[0]+3,P1[1]-2.5,'cos −0,316 ; sin 0,949','sujet','s',ha='left')
+text(ax,P2[0]-3,P2[1]+1.5,'$B(1\\ ;\\ -3)$','autre','s',ha='right')
+text(ax,P2[0]-3,P2[1]-2.5,'cos 0,316 ; sin −0,949','autre','s',ha='right')
+text(ax,84,50,'tan = −3 pour A et B','encre','s',ha='right')
+text(ax,67,21,'cercle de rayon 1','fixe','s')
+save(fig,'35-090')

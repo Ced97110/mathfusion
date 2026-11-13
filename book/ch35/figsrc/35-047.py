@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 36, 40, 26, 'sujet')
+text(ax, 23, 57, 'forme principale', 'sujet', 's'); text(ax, 23, 49, r'$a=3,\ b=-4$', 'sujet', 's')
+text(ax, 23, 40.5, r'$\alpha=-53{,}13^\circ$', 'varie', 's', weight='bold')
+box(ax, 45, 36, 40, 26, 'autre')
+text(ax, 65, 57, 'variante', 'autre', 's'); text(ax, 65, 49, r'$a=3,\ b=4$', 'autre', 's')
+text(ax, 65, 40.5, r'$\alpha=53{,}13^\circ$', 'autre', 's', weight='bold')
+arrow(ax, (23, 36), (36, 24), 'resultat'); arrow(ax, (65, 36), (52, 24), 'resultat')
+box(ax, 8, 5, 72, 19, 'resultat')
+text(ax, 44, 18, 'même onde', 'resultat', 'm', weight='bold'); text(ax, 44, 10, r'hauteur $5$, décalage $-53{,}13^\circ$', 'resultat', 's')
+save(fig, '35-047')

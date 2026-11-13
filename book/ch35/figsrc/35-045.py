@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 23, 60, 'forme principale', 'sujet', 's'); text(ax, 65, 60, 'variante', 'varie', 's')
+box(ax, 3, 46, 40, 9, 'sujet', label=r'$3\sin x+4\cos x$', size='s'); box(ax, 45, 46, 40, 9, 'varie', label=r'$3\cos x+4\sin x$', size='s')
+arrow(ax, (23, 46), (23, 40), 'fixe'); arrow(ax, (65, 46), (65, 40), 'fixe')
+box(ax, 3, 31, 40, 9, 'sujet', label=r'$R\sin(x+\alpha)$', size='s'); box(ax, 45, 31, 40, 9, 'varie', label=r'$R\cos(x-\alpha)$', size='s')
+arrow(ax, (23, 31), (23, 24), 'fixe'); arrow(ax, (65, 31), (65, 24), 'fixe')
+text(ax, 44, 27.5, 'même R et même α', 'fixe', 's')
+box(ax, 3, 5, 82, 18, 'fixe')
+text(ax, 44, 17.5, r'$R=5\ ;\ \alpha=53{,}13^\circ$', 'fixe', 'm')
+text(ax, 44, 9.5, r'$\cos\alpha=0{,}6\ ;\ \sin\alpha=0{,}8$', 'fixe', 's')
+save(fig, '35-045')
