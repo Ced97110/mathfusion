@@ -1,0 +1,178 @@
+[
+ {
+  "code": "77-113",
+  "a_dire": "Tu dois pouvoir dire que la base de L sur K est faite des quatre produits des éléments de (1, √2) par ceux de (1, √3) : 1, √2, √3, √6.",
+  "legende_titre": "Quatre produits pour une base",
+  "lecture": [
+   "En bleu, à gauche, tu lis la base de E : 1 et √2. En orange, en haut, tu lis la base de L sur E : 1 et √3.",
+   "Chaque case verte est le produit de l'élément de sa ligne par celui de sa colonne.",
+   "L'accolade verte regroupe les quatre cases : ce sont les quatre éléments de la base de L sur K."
+  ],
+  "a_voir": "Il y a quatre produits, donc quatre éléments dans la base de L sur K."
+ },
+ {
+  "code": "77-114",
+  "a_dire": "Tu dois pouvoir dire que chaque case de la matrice 2×2 sur E est remplacée par une matrice 2×2 rationnelle, ce qui donne une matrice 4×4.",
+  "legende_titre": "Chaque case devient un petit tableau",
+  "lecture": [
+   "À gauche, les quatre cases : p en bleu, 3 en orange, 1 en gris, p en bleu.",
+   "À droite, chaque case est remplacée par un tableau de 2 lignes et 2 colonnes, de la même couleur.",
+   "Le grand tableau a 4 lignes et 4 colonnes, et ne contient que des nombres rationnels."
+  ],
+  "a_voir": "Une case devient un bloc de 4 nombres, et deux fois deux blocs font un tableau 4×4."
+ },
+ {
+  "code": "77-115",
+  "a_dire": "Tu dois pouvoir dire que la grande matrice a la même forme que la petite, avec des blocs P, 3·1, 1, P à la place des cases p, 3, 1, p.",
+  "legende_titre": "Même forme, cases plus grandes",
+  "lecture": [
+   "À gauche, la petite matrice : quatre cases de 2×2 au total, de couleurs bleu, orange, gris, bleu.",
+   "À droite, la grande matrice a les mêmes couleurs aux mêmes places, mais chaque case est un bloc.",
+   "Les accolades donnent les tailles : 2×2 pour la petite, 4×4 pour la grande, 2×2 pour un bloc."
+  ],
+  "a_voir": "Les blocs P, 3·1, 1, P sont rangés comme les cases p, 3, 1, p."
+ },
+ {
+  "code": "77-116",
+  "a_dire": "Tu dois pouvoir dire que la case p = 1 + √2 devient P = (1 2 ; 1 1), la case 3 devient 3·1 et la case 1 devient 1.",
+  "legende_titre": "Trois cases, trois blocs",
+  "lecture": [
+   "La ligne bleue part de p = 1 + √2 et donne le tableau de lignes 1, 2 et 1, 1, noté P.",
+   "La ligne orange part de 3 et donne le tableau avec des 3 sur la diagonale, noté 3·1.",
+   "La ligne grise part de 1 et donne le tableau avec des 1 sur la diagonale, noté 1."
+  ],
+  "a_voir": "Chaque case de départ a son bloc, de la même couleur."
+ },
+ {
+  "code": "77-117",
+  "a_dire": "Tu dois pouvoir dire que la diagonale de la grande matrice porte 1, 1, 1, 1, donc que la trace vaut 4.",
+  "legende_titre": "Lire la trace sur la diagonale",
+  "lecture": [
+   "Le grand tableau 4×4 montre ses quatre lignes de nombres, découpées en blocs en pointillés.",
+   "Les quatre cases entourées de vert sont celles de la diagonale : elles portent toutes 1.",
+   "En bas, la somme verte 1 + 1 + 1 + 1 donne 4."
+  ],
+  "a_voir": "Il suffit de lire la diagonale et de l'additionner."
+ },
+ {
+  "code": "77-118",
+  "a_dire": "Tu dois pouvoir dire que la trace de la grande matrice est la somme des traces des blocs diagonaux.",
+  "legende_titre": "Seuls les blocs diagonaux comptent",
+  "lecture": [
+   "Les deux blocs verts, P en haut à gauche et P en bas à droite, sont sur la diagonale.",
+   "Chacun a pour trace 2, écrit à côté de lui.",
+   "Les deux blocs gris sont hors de la diagonale : ils ne comptent pas dans la somme 2 + 2 = 4."
+  ],
+  "a_voir": "La trace se calcule avec les blocs verts seulement."
+ },
+ {
+  "code": "77-119",
+  "a_dire": "Tu dois pouvoir dire que le déterminant de M se calcule comme det(AD − BC) quand les blocs commutent, et que ce n'est plus vrai sinon.",
+  "legende_titre": "Quand le calcul en blocs est permis",
+  "lecture": [
+   "En haut, bleu, la matrice M découpée en quatre blocs A, B, C, D.",
+   "Le cadre vert à gauche : les blocs commutent, et la formule det M = det(AD − BC) est vraie.",
+   "Le cadre rouge à droite : CD n'est pas égal à DC, det M vaut 0 et det(AD − BC) vaut −1, donc la formule est fausse."
+  ],
+  "a_voir": "La formule en blocs demande que les blocs commutent."
+ },
+ {
+  "code": "77-120",
+  "a_dire": "Tu dois pouvoir dire que P² − 3 donne la matrice (0 4 ; 2 0), dont le déterminant est −8.",
+  "legende_titre": "De P² au déterminant −8",
+  "lecture": [
+   "À gauche, en bleu, le carré de P : lignes 3, 4 et 2, 3.",
+   "La première flèche orange retire 3 fois la matrice identité et donne la matrice de lignes 0, 4 et 2, 0, qui est celle de 2√2.",
+   "La seconde flèche prend le déterminant : 0 × 0 − 4 × 2, soit −8, en vert."
+  ],
+  "a_voir": "Trois étapes dans l'ordre : le carré, le retrait de 3, le déterminant."
+ },
+ {
+  "code": "77-121",
+  "a_dire": "Tu dois pouvoir dire que, pour une extension galoisienne, la trace est la somme des quatre images de u et la norme est leur produit.",
+  "legende_titre": "Somme et produit des images",
+  "lecture": [
+   "Le carré bleu est u. Les flèches orange donnent ses quatre images, en gris.",
+   "Le trait gris réunit les quatre images.",
+   "La case verte du haut donne leur somme : la trace vaut 4. La case verte du bas donne leur produit : la norme vaut −8."
+  ],
+  "a_voir": "Les quatre images donnent la trace par la somme et la norme par le produit."
+ },
+ {
+  "code": "77-122",
+  "a_dire": "Tu dois pouvoir dire que les quatre images 1 ± √2 ± √3 ont pour somme 4 et pour produit −8.",
+  "legende_titre": "Les quatre images de u",
+  "lecture": [
+   "Le tableau bleu range les quatre images : les colonnes changent le signe de √2, les lignes celui de √3.",
+   "Sous chaque colonne, l'accolade verte donne le produit du couple : 2√2 et −2√2.",
+   "À droite, en vert, la somme vaut 4 et le produit vaut −8."
+  ],
+  "a_voir": "Les racines s'annulent dans la somme, et les deux couples donnent le produit −8."
+ },
+ {
+  "code": "77-123",
+  "a_dire": "Tu dois pouvoir dire que, pour z = 3 + 4i sur les réels, la somme z + z̄ vaut 6 et le produit z z̄ vaut 25.",
+  "legende_titre": "z et son conjugué",
+  "lecture": [
+   "Le point bleu en haut est z = 3 + 4i. Le point violet en bas est son conjugué 3 − 4i.",
+   "Le point vert sur l'axe horizontal est à 3, au milieu des deux.",
+   "À droite, en vert : la somme vaut 6, soit 2a, et le produit vaut 25, soit a² + b²."
+  ],
+  "a_voir": "Les deux images de z sont symétriques, leur somme est 2a et leur produit a² + b²."
+ },
+ {
+  "code": "77-124",
+  "a_dire": "Tu dois pouvoir dire que la trace est r fois a₁ et la norme est a_m puissance r, où r est le degré de L sur F(u).",
+  "legende_titre": "Trace et norme avec le degré r",
+  "lecture": [
+   "À gauche, la tour L, F(u), F : le degré r de L sur F(u) est 2, le degré m de F(u) sur F est 2.",
+   "En bleu à droite, le polynôme minimal λ² − 2λ − 1, avec a₁ = 2 et a₂ = −1.",
+   "Les deux cases vertes donnent la trace 2 × 2 = 4 et la norme (−1)² = 1."
+  ],
+  "a_voir": "La trace multiplie a₁ par r, et la norme met a₂ à la puissance r."
+ },
+ {
+  "code": "77-125",
+  "a_dire": "Tu dois pouvoir dire que la matrice compagnon vit dans F(u), puis que u devient un scalaire répété r fois de F(u) à L.",
+  "legende_titre": "Deux étapes de la preuve",
+  "lecture": [
+   "À gauche, bleu : dans F(u), la matrice compagnon de lignes 0, 1 et 1, 2, de trace 2 et de déterminant −1.",
+   "La flèche orange est l'étape clé : u devient un scalaire.",
+   "À droite, dans L, la matrice C est répétée deux fois sur la diagonale, avec des 0 ailleurs : la trace vaut 4 et le déterminant 1."
+  ],
+  "a_voir": "Répéter C sur la diagonale fait passer de 2 à 4 pour la trace et de −1 à 1 pour le déterminant."
+ },
+ {
+  "code": "77-126",
+  "a_dire": "Tu dois pouvoir dire que, pour u = √2 dans L, la trace vaut 0 et la norme vaut 4, parce que √2 est répété deux fois.",
+  "legende_titre": "Le cas de racine de 2",
+  "lecture": [
+   "L'accolade grise montre que √2 est répété deux fois : il y a deux colonnes.",
+   "La ligne du haut porte a₁ = 0 deux fois : leur somme donne la trace 0.",
+   "La ligne du bas porte a₂ = −2 deux fois : leur produit donne la norme 4, et non −2, en rouge."
+  ],
+  "a_voir": "Chaque valeur est répétée deux fois, donc la norme est (−2)² et pas −2."
+ },
+ {
+  "code": "77-127",
+  "a_dire": "Tu dois pouvoir dire que le polynôme caractéristique (λ² − 2)² est de degré 4 et le polynôme minimal λ² − 2 est de degré 2, donc ils sont différents.",
+  "legende_titre": "Deux polynômes de degrés différents",
+  "lecture": [
+   "En bleu, une seule case : le polynôme minimal λ² − 2, de degré 2.",
+   "En orange, deux cases identiques sous une accolade : le polynôme caractéristique (λ² − 2)², de degré 4.",
+   "Le signe rouge ≠ dit que les deux polynômes ne sont pas égaux."
+  ],
+  "a_voir": "Le caractéristique est le minimal répété deux fois."
+ },
+ {
+  "code": "77-128",
+  "a_dire": "Tu dois pouvoir dire que l'extension des scalaires garde la base et la table de multiplication, et élargit les coefficients de F à K.",
+  "legende_titre": "Mêmes éléments de base, coefficients élargis",
+  "lecture": [
+   "À gauche, en bleu, l'algèbre A : des éléments a + b i avec a et b réels.",
+   "La flèche orange élargit les coefficients des réels aux complexes.",
+   "À droite, en violet, l'algèbre A_K : des éléments z + w j avec z et w complexes. Le cadre gris rappelle que la base et la table, avec i·i = −1 et j·j = −1, ne changent pas."
+  ],
+  "a_voir": "Seuls les coefficients changent : la base et la table restent les mêmes."
+ }
+]

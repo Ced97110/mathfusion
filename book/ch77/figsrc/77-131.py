@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, r'$z+w\,j$', 'encre', 'l')
+box(ax, 4, 28, 26, 11, 'varie', label=r'$z=1+2i$', size='s')
+text(ax, 34, 33.5, '+', 'encre', 'l')
+box(ax, 38, 28, 26, 11, 'varie', label=r'$w=3-i$', size='s')
+text(ax, 68, 33.5, '×', 'encre', 'l')
+box(ax, 72, 28, 12, 11, 'sujet', label=r'$j$', size='m')
+text(ax, 17, 19, 'coefficient (avec i)', 'varie', 's'); text(ax, 51, 19, 'coefficient (avec i)', 'varie', 's')
+text(ax, 78, 19, 'base', 'sujet', 's')
+arrow(ax, (17, 21.5), (17, 27), 'varie'); arrow(ax, (51, 21.5), (51, 27), 'varie'); arrow(ax, (78, 21.5), (78, 27), 'sujet')
+text(ax, 44, 8, r'$j$ n’est pas le nombre $i$', 'encre', 's')
+save(fig, '77-131')

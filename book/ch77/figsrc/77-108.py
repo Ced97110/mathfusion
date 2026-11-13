@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+ys=[6,33,60]
+box(ax,2,ys[0],34,12,'sujet',label=r'$K=\mathbb{Q}$')
+box(ax,2,ys[1],34,12,'sujet',label=r'$E=\mathbb{Q}(\sqrt{2})$')
+box(ax,2,ys[2],34,12,'sujet',label=r'$L=\mathbb{Q}(\sqrt{2},\sqrt{3})$',size='s')
+text(ax,19,25.5,'2','fixe'); text(ax,19,52.5,'2','fixe')
+arrow(ax,(19,18),(19,33),'fixe'); arrow(ax,(19,45),(19,60),'fixe')
+box(ax,42,ys[2],34,12,'fixe',label=r'$u=1+\sqrt{2}+\sqrt{3}$',size='s')
+box(ax,47,ys[1],24,12,'fixe',label=r'$2\sqrt{2}$')
+box(ax,47,ys[0],24,12,'resultat',label=r'$-8$')
+arrow(ax,(59,60),(59,45),'varie'); text(ax,62,52.5,r'$N_{L/E}$','varie',ha='left',size='s')
+arrow(ax,(59,33),(59,18),'resultat'); text(ax,62,25.5,r'$N_{E/K}$','resultat',ha='left',size='s')
+arrow(ax,(76,64),(71,10),'limite',curve=-0.25); text(ax,81,36,r'$N_{L/K}$','limite',size='s',ha='center')
+save(fig,'77-108')

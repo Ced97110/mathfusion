@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+u = 14; O = (36, 6)
+P = lambda x, y: (O[0] + x * u, O[1] + y * u)
+text(ax, 44, 51, r'$\sqrt{2^2+1^2}=\sqrt{(-1)^2+2^2}=\sqrt{5}$', 'resultat', 'm')
+arrow(ax, P(-1.5, 0), P(2.5, 0), 'fixe', lw=0.6); arrow(ax, P(0, 0), P(0, 2.3), 'fixe', lw=0.6)
+line(ax, [P(2, 0), P(2, 1)], 'fixe', dash=True); line(ax, [P(-1, 0), P(-1, 2)], 'fixe', dash=True)
+arrow(ax, P(0, 0), P(2, 1), 'varie', lw=1.3); arrow(ax, P(0, 0), P(-1, 2), 'varie', lw=1.3)
+text(ax, P(1, 0)[0], O[1] - 3.2, '2', 'fixe', 's'); text(ax, P(2, 0.5)[0] + 3, P(2, 0.5)[1], '1', 'fixe', 's')
+text(ax, P(-0.5, 0)[0], O[1] - 3.2, '1', 'fixe', 's'); text(ax, P(-1, 1)[0] - 3, P(-1, 1)[1], '2', 'fixe', 's')
+text(ax, P(1.0, 1.0)[0] + 2, P(1.0, 1.0)[1] + 1, r'$\sqrt{5}$', 'varie', 'm')
+text(ax, P(-0.75, 1.5)[0] + 5.5, P(-0.75, 1.5)[1], r'$\sqrt{5}$', 'varie', 'm')
+save(fig, '77-015')

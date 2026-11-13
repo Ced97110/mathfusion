@@ -1,0 +1,194 @@
+[
+ {
+  "code": "77-081",
+  "a_dire": "Les points gris sont des nombres x + y√2 ; multiplier par √2 envoie le carré unité sur un rectangle d’aire 2.",
+  "legende_titre": "Points gris : des nombres x + y√2",
+  "lecture": [
+   "Chaque point gris est un nombre : l'axe horizontal compte les 1, l'axe vertical compte les √2.",
+   "Le carré bleu a pour sommets (0, 0), (1, 0), (1, 1) et (0, 1).",
+   "Les flèches orange envoient des sommets sur leurs produits par √2 : (1, 1) devient (2, 1).",
+   "Le rectangle orange a pour sommets (0, 0), (0, 1), (2, 1) et (2, 0) ; son aire 2 vaut la valeur absolue de la norme de √2."
+  ],
+  "a_voir": "Vois que (1, 1), le nombre 1 + √2, devient (2, 1), le nombre 2 + √2."
+ },
+ {
+  "code": "77-082",
+  "a_dire": "Le signe moins du déterminant −2 vient de l’échange des deux axes : le sens de rotation s’inverse.",
+  "legende_titre": "D’où vient le signe moins ?",
+  "lecture": [
+   "À gauche, la flèche 1 est bleue et la flèche √2 est orange : de 1 à √2, la flèche verte tourne vers la gauche.",
+   "À droite, après la multiplication, la flèche √2 est orange et la flèche 2 est bleue.",
+   "De √2 à 2, la flèche rouge tourne vers la droite : le sens est inversé.",
+   "Le cadre violet dit que le déterminant vaut −2."
+  ],
+  "a_voir": "Vois que le sens de rotation change de la gauche vers la droite."
+ },
+ {
+  "code": "77-083",
+  "a_dire": "La matrice de √2 a pour trace 0 et pour norme −2 ; son polynôme caractéristique λ² − 2 est le polynôme minimal de √2.",
+  "legende_titre": "Trace, norme et polynôme de √2",
+  "lecture": [
+   "La matrice du haut a pour lignes 0, 2 et 1, 0.",
+   "Les deux 0 verts sont la diagonale : leur somme donne la trace 0.",
+   "Les deux nombres orange donnent la norme : 0 × 0 − 2 × 1 = −2.",
+   "Le cadre vert donne λ² − 0λ + (−2) = λ² − 2 ; le cadre rouge montre qu’un polynôme λ − c est impossible."
+  ],
+  "a_voir": "Vois comment trace et norme donnent λ² − 2, et qu’aucun polynôme de degré 1 ne convient."
+ },
+ {
+  "code": "77-084",
+  "a_dire": "La matrice de a + b√2 s’obtient en ajoutant a fois la matrice des 1 et b fois la matrice de √2.",
+  "legende_titre": "Matrice de 3 + 2√2",
+  "lecture": [
+   "Le nombre 3 + 2√2 est écrit 3·1 + 2·√2 en haut.",
+   "La matrice bleue des 1 est multipliée par 3.",
+   "La matrice orange de √2 est multipliée par 2.",
+   "La matrice verte, de lignes 3, 4 et 2, 3, est leur somme."
+  ],
+  "a_voir": "Vois que la matrice de lignes 3, 4 et 2, 3 est a fois 1 plus b fois la matrice de √2, avec a = 3 et b = 2."
+ },
+ {
+  "code": "77-085",
+  "a_dire": "Le carré de la matrice de √2 est 2 fois la matrice des 1.",
+  "legende_titre": "Le carré de la matrice de √2",
+  "lecture": [
+   "Les deux matrices orange sont la matrice de √2, multipliées entre elles.",
+   "Le cadre bleu entoure la première ligne de la première matrice.",
+   "Le cadre violet entoure la première colonne de la seconde matrice ; leur produit donne 2.",
+   "La matrice verte, de lignes 2, 0 et 0, 2, vaut 2 fois la matrice des 1."
+  ],
+  "a_voir": "Vois que le produit donne 2 sur la diagonale et 0 ailleurs."
+ },
+ {
+  "code": "77-086",
+  "a_dire": "Pour la matrice (a 2b ; b a), la trace vaut 2a et la norme vaut a² − 2b².",
+  "legende_titre": "Trace et norme lues sur la matrice",
+  "lecture": [
+   "Les deux a bleus sont sur la diagonale : leur somme donne T = 2a.",
+   "Les nombres 2b et b, en orange, entrent dans le déterminant : a·a − 2b·b = a² − 2b².",
+   "Pour 3 + 2√2, la trace est 6 et la norme est 1.",
+   "Pour 1 + 3√2, la trace est 2 et la norme est −17."
+  ],
+  "a_voir": "Vois que la diagonale donne la trace et que le déterminant donne la norme."
+ },
+ {
+  "code": "77-087",
+  "a_dire": "La matrice (3 4 ; 2 3) a pour déterminant 1, donc son inverse a des coefficients entiers, et sa première colonne se lit 3 − 2√2.",
+  "legende_titre": "Un inverse à coefficients entiers",
+  "lecture": [
+   "La matrice bleue, de lignes 3, 4 et 2, 3, est celle de 3 + 2√2.",
+   "La matrice verte, de lignes 3, −4 et −2, 3, est son inverse.",
+   "Le produit des deux est la matrice grise des 1.",
+   "Le cadre violet entoure la première colonne de l’inverse, qui se lit 3 − 2√2."
+  ],
+  "a_voir": "Vois que N = 9 − 8 = 1 donne un inverse écrit avec des entiers."
+ },
+ {
+  "code": "77-088",
+  "a_dire": "Sur ℚ(√2), la norme peut être négative, alors que sur ℂ la norme a² + b² ne l’est jamais.",
+  "legende_titre": "Une norme qui peut être négative",
+  "lecture": [
+   "La droite graduée porte les valeurs possibles de la norme.",
+   "Le trait violet couvre les valeurs de 0 à 3 : sur ℂ, a² + b² n’est jamais négative.",
+   "Le point bleu est sur −1 : c’est la norme de 1 + √2, égale à 1 − 2.",
+   "La flèche bleue relie le calcul à ce point."
+  ],
+  "a_voir": "Vois que le point bleu est à gauche de 0, hors de la zone violette."
+ },
+ {
+  "code": "77-089",
+  "a_dire": "La norme ne s’annule qu’en 0 sur ℂ et sur ℚ(√2), mais pour deux raisons différentes.",
+  "legende_titre": "Même résultat, deux raisons",
+  "lecture": [
+   "À gauche, en violet, sur ℂ : avec a = 3, la norme vaut 9 plus b², donc au moins 9.",
+   "À droite, en bleu, sur ℚ(√2) : avec a = 17 et b = 12, a² vaut 289 et 2b² vaut 288.",
+   "L’écart est 1 et non 0.",
+   "En rouge : a² = 2b² donnerait √2 = a/b, ce qui est faux."
+  ],
+  "a_voir": "Vois que la raison à gauche est une somme de carrés, et à droite l’impossibilité de √2 = a/b."
+ },
+ {
+  "code": "77-090",
+  "a_dire": "L’algèbre F[u] a pour base 1, u, …, u^(n−1), où n est le degré du polynôme minimal de u.",
+  "legende_titre": "Base et degré du polynôme minimal",
+  "lecture": [
+   "La rangée du haut est pour u = √2 : le polynôme est λ² − 2, de degré 2.",
+   "Elle a 2 cases vertes : 1 et √2.",
+   "La rangée du bas est pour la racine cubique de 2 : le polynôme est λ³ − 2, de degré 3.",
+   "Elle a 3 cases vertes : 1, u et u²."
+  ],
+  "a_voir": "Vois que le nombre de cases de la base est égal au degré du polynôme."
+ },
+ {
+  "code": "77-091",
+  "a_dire": "La matrice de u est la matrice compagnon de f : des 1 sous la diagonale et les coefficients de f dans la dernière colonne.",
+  "legende_titre": "Matrice compagnon de λ³ − 2",
+  "lecture": [
+   "Chaque colonne dit où u envoie un élément de la base : 1 sur u, u sur u², u² sur 2.",
+   "Les deux cases orange, avec 1, sont sous la diagonale.",
+   "La case verte, avec 2, est dans la dernière colonne : c’est le coefficient de f.",
+   "Les cases grises valent 0."
+  ],
+  "a_voir": "Vois les 1 sous la diagonale et le coefficient 2 dans la dernière colonne."
+ },
+ {
+  "code": "77-092",
+  "a_dire": "Pour un quaternion u, la diagonale de la matrice 4 × 4 porte quatre fois a₀, donc T(u) = 4a₀.",
+  "legende_titre": "Trace d’un quaternion",
+  "lecture": [
+   "La grille a 4 colonnes : u·1, u·i, u·j et u·k.",
+   "Les 4 cases bleues forment la diagonale ; chacune porte a₀.",
+   "Les cases grises sont les autres coefficients.",
+   "Le calcul en bas additionne les quatre a₀ : T(u) = 4a₀."
+  ],
+  "a_voir": "Vois que chaque case de la diagonale porte a₀."
+ },
+ {
+  "code": "77-093",
+  "a_dire": "La matrice d’un scalaire c est c fois la matrice des 1 : c sur la diagonale, 0 ailleurs.",
+  "legende_titre": "Matrice d’un scalaire",
+  "lecture": [
+   "On prend c = 3 et la base 1, i des nombres complexes.",
+   "Les flèches orange envoient 1 sur 3·1 et i sur 3·i.",
+   "Dans la matrice, les deux cases bleues portent 3 sur la diagonale.",
+   "Les cases grises portent 0."
+  ],
+  "a_voir": "Vois que chaque colonne est le produit de l’élément de base par 3."
+ },
+ {
+  "code": "77-094",
+  "a_dire": "Pour un scalaire c, la trace vaut nc et la norme vaut c^n.",
+  "legende_titre": "Trace et norme d’un scalaire",
+  "lecture": [
+   "Chaque rangée de cases bleues est la diagonale de la matrice de c.",
+   "Haut : n = 2 et c = 3, donc T = 3 + 3 = 6 et N = 3 × 3 = 9.",
+   "Bas : n = 3 et c = 2, donc T = 2 + 2 + 2 = 6 et N = 2 × 2 × 2 = 8.",
+   "En bleu la somme, en orange le produit."
+  ],
+  "a_voir": "Vois que la trace additionne n fois c et que la norme multiplie n fois c."
+ },
+ {
+  "code": "77-095",
+  "a_dire": "Pour un scalaire c, le polynôme caractéristique est (λ − c)^n et le polynôme minimal est λ − c, de degré 1.",
+  "legende_titre": "Deux polynômes de degrés différents",
+  "lecture": [
+   "À gauche, en bleu, deux cases λ − 3 : le polynôme caractéristique est de degré n = 2.",
+   "À droite, en vert, une seule case λ − 3 : le polynôme minimal est de degré 1.",
+   "Le signe rouge ≠ dit que les deux polynômes sont différents.",
+   "Le cadre gris rappelle que les deux valent 0 en 3."
+  ],
+  "a_voir": "Vois qu’il y a deux facteurs à gauche et un seul à droite."
+ },
+ {
+  "code": "77-096",
+  "a_dire": "Dans ℂ sur ℝ, multiplier les longueurs par 3 multiplie l’aire par 9 : T(3) = 6 et N(3) = 9.",
+  "legende_titre": "Un carré unité devenu d’aire 9",
+  "lecture": [
+   "Le carré bleu est le carré unité, d’aire 1.",
+   "Le grand carré orange a pour côté 3 ; il contient 9 carrés unité.",
+   "En vert : T(3) = 3 + 3 = 6 et N(3) = 3² = 9.",
+   "Le texte violet rappelle que n = 2 pour ℂ sur ℝ."
+  ],
+  "a_voir": "Vois que le grand carré contient 9 fois le carré bleu."
+ }
+]

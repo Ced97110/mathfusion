@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+box(ax,2,16,26,24,'autre')
+text(ax,15,33,r'$N_{L/K}(u)$','autre'); text(ax,15,22,r'$-8$','autre','l')
+text(ax,33,28,r'$=$','encre','l')
+box(ax,38,8,48,40,'sujet')
+text(ax,62,42,r'$N_{E/K}(\cdots)=-8$','sujet')
+box(ax,46,14,32,20,'varie')
+text(ax,62,28,r'$N_{L/E}(u)$','varie'); text(ax,62,20,r'$=2\sqrt{2}$','varie')
+save(fig,'77-106')

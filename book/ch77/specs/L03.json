@@ -1,0 +1,189 @@
+[
+ {
+  "code": "77-033",
+  "a_dire": "Deux matrices de 𝑖 sont équivalentes si l'une vient de l'autre par Δ⁻¹ρΔ ; leurs cases peuvent différer.",
+  "legende_titre": "Deux matrices, une même action",
+  "lecture": [
+   "La matrice bleue est ρ(i) dans la première base.",
+   "La matrice violette est Δ⁻¹ρ(i)Δ : ses cases ne sont pas les mêmes (signe ≠ rouge).",
+   "La flèche orange est le changement de base.",
+   "La case verte dit que les deux font « multiplier par i »."
+  ],
+  "a_voir": "Les cases changent, l'action reste la même."
+ },
+ {
+  "code": "77-034",
+  "a_dire": "La trace de 2 + 𝑖 est 4 dans les deux bases : c'est le nombre commun aux deux tableaux.",
+  "legende_titre": "Un nombre commun à deux tableaux",
+  "lecture": [
+   "Chaque tableau est la matrice de 2 + 𝑖 dans une base.",
+   "Les deux cases bleues forment la diagonale ; leur somme est 2 + 2 = 4.",
+   "Les deux flèches vertes arrivent au même nombre, la trace."
+  ],
+  "a_voir": "Deux tableaux différents, une seule trace : 4."
+ },
+ {
+  "code": "77-035",
+  "a_dire": "La norme de 2 + 𝑖 est le déterminant de sa matrice : 5, qui est aussi l'aire de l'image du carré unité.",
+  "legende_titre": "Un déterminant qui part d'un élément",
+  "lecture": [
+   "Le tableau bleu est la matrice de 2 + 𝑖.",
+   "Le calcul vert donne 2 × 2 − (−1) × 1 = 5.",
+   "Le petit carré gris a pour aire 1.",
+   "Le parallélogramme vert est son image ; son aire est 5."
+  ],
+  "a_voir": "Le déterminant 5 est l'aire du parallélogramme vert."
+ },
+ {
+  "code": "77-036",
+  "a_dire": "Deux matrices semblables ont le même det(λ1 − M), donc la même trace et la même norme.",
+  "legende_titre": "Pourquoi la base ne change rien",
+  "lecture": [
+   "Le tableau bleu est M, dans la base 1, i ; le violet est Δ⁻¹MΔ, dans la base i, 1.",
+   "Le rectangle orange est l'étape qui porte la preuve : on met Δ⁻¹ et Δ en facteur.",
+   "Les deux rectangles verts donnent le même polynôme λ² − 4λ + 5.",
+   "Le rectangle vert du bas est l'expression commune, det(λ1 − M) ; on y lit la trace 4 et la norme 5."
+  ],
+  "a_voir": "L'étape orange rend les deux polynômes égaux ; la trace 4 et la norme 5 se lisent dessus."
+ },
+ {
+  "code": "77-037",
+  "a_dire": "Le polynôme caractéristique de 2 + 𝑖 est le déterminant de λ1 − ρ(a) : λ² − 4λ + 5.",
+  "legende_titre": "De la matrice au polynôme",
+  "lecture": [
+   "Le tableau bleu est ρ(a).",
+   "Le tableau orange est λ1 − ρ(a) : λ remplace les 2 de la diagonale.",
+   "La flèche verte est le déterminant.",
+   "La case verte contient le polynôme obtenu."
+  ],
+  "a_voir": "Le résultat contient λ : c'est un polynôme."
+ },
+ {
+  "code": "77-038",
+  "a_dire": "Le polynôme est toujours λ² − T(a)λ + N(a) ; seuls la trace et la norme changent selon 𝑎.",
+  "legende_titre": "Une forme fixe, des nombres qui changent",
+  "lecture": [
+   "La première ligne donne la forme générale.",
+   "La colonne grise ne change pas : λ².",
+   "La colonne bleue porte la trace, la violette porte la norme.",
+   "Les lignes 2 + 𝑖 et 3 donnent les nombres 4, 5 et 6, 9."
+  ],
+  "a_voir": "Seuls les nombres bleus et violets changent."
+ },
+ {
+  "code": "77-039",
+  "a_dire": "La trace se lit au début du polynôme (coefficient de λ, au signe près), la norme à la fin (terme constant).",
+  "legende_titre": "Où lire la trace et la norme",
+  "lecture": [
+   "Les cases grises sont λ².",
+   "Les cases bleues sont les termes en λ : leur nombre est la trace.",
+   "Les cases violettes sont les termes constants : c'est la norme.",
+   "Deux polynômes : 4 et 5, puis 6 et 9."
+  ],
+  "a_voir": "Trace dans la case bleue, norme dans la violette."
+ },
+ {
+  "code": "77-040",
+  "a_dire": "Le polynôme minimal est, parmi ceux qui s'annulent en 𝑎, celui de plus petit degré et de coefficient dominant 1.",
+  "legende_titre": "Choisir un polynôme parmi beaucoup",
+  "lecture": [
+   "La case grise est un polynôme de degré 3 qui s'annule en 2 + 𝑖.",
+   "La case verte est un polynôme de degré 2 qui s'annule aussi.",
+   "Les petits carrés comptent le degré : 3 pour le gris, 2 pour le vert.",
+   "Le vert est choisi : c'est m_a."
+  ],
+  "a_voir": "Le polynôme vert a le plus petit degré."
+ },
+ {
+  "code": "77-041",
+  "a_dire": "Un polynôme s'annule en 𝑎 exactement quand il donne la matrice nulle en ρ(a) ; les deux polynômes minimaux coïncident.",
+  "legende_titre": "Même polynôme pour 𝑎 et pour sa matrice",
+  "lecture": [
+   "Le bleu en haut à gauche est l'élément 𝑎 = 2 + 𝑖, à droite sa matrice ρ(a).",
+   "Les flèches orange sont l'évaluation de g.",
+   "En bas à gauche, g(a) = 0 ; en bas à droite, la matrice nulle.",
+   "Le signe ⇔ dit que les deux sont vrais ensemble."
+  ],
+  "a_voir": "g donne 0 en 𝑎 et la matrice nulle en ρ(a)."
+ },
+ {
+  "code": "77-042",
+  "a_dire": "Le polynôme caractéristique s'annule en 𝑎, et le polynôme minimal le divise.",
+  "legende_titre": "Deux faits sur f_a et m_a",
+  "lecture": [
+   "En haut, f_a bleu donne 0 vert en 2 + 𝑖.",
+   "En bas, f_a = (λ − 3)² est formé de deux blocs bleus λ − 3.",
+   "L'accolade verte entoure un seul bloc : m_a = λ − 3.",
+   "Un bloc m_a entre deux fois dans f_a."
+  ],
+  "a_voir": "m_a est un morceau de f_a : il le divise."
+ },
+ {
+  "code": "77-043",
+  "a_dire": "F est l'ensemble des nombres par lesquels on multiplie : ici 3, 0,5 et −2 pour des éléments de ℝ.",
+  "legende_titre": "Les nombres qui servent de coefficients",
+  "lecture": [
+   "La flèche bleue est 𝑧.",
+   "Les flèches orange sont 𝑧 multiplié par 3, 0,5 et −2.",
+   "Le trait pointillé est le point de départ commun.",
+   "La case verte dit que ces nombres sont ceux de ℝ ici."
+  ],
+  "a_voir": "Chaque flèche orange est 𝑧 multiplié par un nombre de F."
+ },
+ {
+  "code": "77-044",
+  "a_dire": "A est une lettre pour un ensemble où l'on additionne, multiplie par un nombre, et multiplie deux éléments.",
+  "legende_titre": "Une lettre pour trois ensembles",
+  "lecture": [
+   "Chaque ligne est un ensemble : complexes, nombres a + b√2, matrices 2 × 2.",
+   "Chaque colonne est une opération.",
+   "Les coches vertes montrent que les trois ensembles les ont toutes.",
+   "La flèche bleue mène à la lettre A."
+  ],
+  "a_voir": "Trois ensembles, trois opérations, une lettre A."
+ },
+ {
+  "code": "77-045",
+  "a_dire": "n est le nombre d'éléments d'une base de A avec des coefficients dans F : 2 pour ℂ sur ℝ, 4 pour les quaternions.",
+  "legende_titre": "Compter les éléments d'une base",
+  "lecture": [
+   "La ligne bleue est la base 1, 𝑖 des nombres complexes.",
+   "La ligne violette est la base 1, 𝑖, 𝑗, 𝑘 des quaternions.",
+   "Chaque accolade verte donne le nombre de cases : 2 puis 4."
+  ],
+  "a_voir": "n est le nombre de cases de la base."
+ },
+ {
+  "code": "77-046",
+  "a_dire": "a_L est une écriture courte pour « multiplier à gauche par 𝑎 » : 𝑥 devient 𝑎𝑥.",
+  "legende_titre": "Une écriture courte pour une opération",
+  "lecture": [
+   "Chaque ligne a un 𝑥 bleu au départ.",
+   "La flèche orange porte le nom court : (2 + 𝑖)_L, 3_L ou 𝑖_L.",
+   "La case verte est le résultat : (2 + 𝑖)𝑥, 3𝑥 ou 𝑖𝑥."
+  ],
+  "a_voir": "Le nom court sur la flèche remplace une phrase."
+ },
+ {
+  "code": "77-047",
+  "a_dire": "ρ(a) est le tableau de l'opération « multiplier par 𝑎 » ; chaque colonne est l'image d'un élément de la base.",
+  "legende_titre": "Le tableau d'une multiplication",
+  "lecture": [
+   "La flèche bleue part de 1 ↦ 2 + 𝑖 et remplit la colonne bleue : 2 et 1.",
+   "La flèche orange part de 𝑖 ↦ −1 + 2𝑖 et remplit la colonne orange : −1 et 2.",
+   "Le tableau est ρ(2 + 𝑖)."
+  ],
+  "a_voir": "Une colonne par élément de la base."
+ },
+ {
+  "code": "77-048",
+  "a_dire": "tr est le signe qui remplace « la somme des éléments de la diagonale » : ici 2 + 2 = 4.",
+  "legende_titre": "Un signe pour une somme",
+  "lecture": [
+   "Les deux cases bleues sont la diagonale.",
+   "Les deux cases grises sont les autres cases : elles ne comptent pas.",
+   "La case verte écrit la somme : tr 𝑀 = 2 + 2 = 4."
+  ],
+  "a_voir": "Seules les cases bleues sont additionnées."
+ }
+]

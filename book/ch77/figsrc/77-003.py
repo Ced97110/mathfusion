@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 24, 70, 40, 10, 'sujet', label=r'$a^2-2b^2$', size='l')
+box(ax, 2, 50, 40, 10, 'fixe', label=r'$a=3,\ b=2$')
+box(ax, 46, 50, 40, 10, 'fixe', label=r'$a=1,\ b=3$')
+arrow(ax, (30, 70), (22, 61), 'fixe'); arrow(ax, (58, 70), (66, 61), 'fixe')
+arrow(ax, (22, 49), (22, 42), 'fixe'); arrow(ax, (66, 49), (66, 42), 'fixe')
+box(ax, 2, 32, 40, 9, 'fixe', label=r'$9-8=1$'); box(ax, 46, 32, 40, 9, 'fixe', label=r'$1-18=-17$')
+arrow(ax, (22, 31), (22, 25), 'resultat'); arrow(ax, (66, 31), (66, 25), 'fixe')
+box(ax, 0, 14, 42, 10, 'resultat', label=r'$1$ : inverse entier', size='s')
+box(ax, 44, 14, 44, 10, 'fixe', label=r'$-17$ : inverse fractionnaire', size='s')
+box(ax, 14, 1, 60, 9, 'limite', label=r"si le nombre vaut $0$ : pas d'inverse", size='s')
+save(fig, '77-003')

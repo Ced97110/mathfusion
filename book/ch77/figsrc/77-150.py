@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(75)
+arrow(ax, (6, 40), (34, 40), 'fixe'); arrow(ax, (14, 32), (14, 68), 'fixe')
+arrow(ax, (14, 40), (28, 40), 'sujet', lw=1.4); text(ax, 28, 35, r'$v$', 'sujet', 'm')
+arrow(ax, (14, 40), (14, 54), 'varie', lw=1.4); text(ax, 9, 54, r'$Mv$', 'varie', 'm')
+text(ax, 22, 27, 'pas sur la droite de v', 'limite', 's')
+box(ax, 42, 56, 44, 12, 'sujet', label=r'$(-y,x)=\lambda(x,y)$', size='s')
+arrow(ax, (64, 55), (64, 48), 'varie')
+box(ax, 42, 36, 44, 11, 'varie', label=r'$\lambda^2=-1$', size='m')
+box(ax, 42, 22, 44, 10, 'limite', label='sur ℝ : aucune', size='s')
+box(ax, 42, 8, 44, 10, 'resultat', label=r'sur ℂ : $\lambda=i$', size='s')
+save(fig, '77-150')

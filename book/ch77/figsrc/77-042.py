@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 62, 46, 10, 'sujet', label=r'$f_a(\lambda)=\lambda^2-4\lambda+5$', size='s')
+arrow(ax, (49, 67), (65, 67), 'varie'); text(ax, 57, 74, r'en $2+i$', 'varie', 's')
+box(ax, 66, 62, 20, 10, 'resultat', label='$0$')
+text(ax, 44, 50, r'pour $a=3$ : $m_a$ divise $f_a$', 'encre', 's')
+box(ax, 14, 24, 22, 10, 'sujet', label=r'$\lambda-3$'); box(ax, 38, 24, 22, 10, 'sujet', label=r'$\lambda-3$')
+brace(ax, 14, 60, 36, 'sujet', r'$f_a=(\lambda-3)^2$', down=False)
+brace(ax, 14, 36, 22, 'resultat', r'$m_a=\lambda-3$', down=True)
+save(fig, '77-042')

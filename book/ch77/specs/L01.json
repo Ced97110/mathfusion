@@ -1,0 +1,192 @@
+[
+ {
+  "code": "77-001",
+  "a_dire": "Le produit de 3 + 2√2 par 3 − 2√2 vaut 1, donc 3 − 2√2 est l'inverse de 3 + 2√2.",
+  "legende_titre": "Un essai qui donne 1",
+  "lecture": [
+   "Le rectangle bleu est le nombre de départ, 3 + 2√2.",
+   "Le rectangle orange est le nombre essayé, 3 − 2√2.",
+   "En bas, les trois morceaux du produit : 9, un morceau avec racine qui vaut 0, et −8.",
+   "Le rectangle vert à droite est le produit : 1."
+  ],
+  "a_voir": "Les deux morceaux avec racine s'annulent, il reste 9 − 8 = 1."
+ },
+ {
+  "code": "77-002",
+  "a_dire": "Le produit −17 ne veut pas dire qu'il n'y a pas d'inverse : l'inverse existe, avec des fractions.",
+  "legende_titre": "Un produit différent de 1",
+  "lecture": [
+   "Le rectangle bleu est 1 + 3√2 et le rectangle orange est 1 − 3√2.",
+   "Le rectangle gris est leur produit : 1 − 18 = −17.",
+   "La flèche orange divise ce résultat par −17.",
+   "Le grand rectangle vert est l'inverse, écrit avec des fractions."
+  ],
+  "a_voir": "Le produit −17 mène quand même à un inverse, mais avec des fractions."
+ },
+ {
+  "code": "77-003",
+  "a_dire": "Le nombre a² − 2b² décide : s'il vaut 1 ou −1 l'inverse est entier, s'il vaut 0 il n'y a pas d'inverse.",
+  "legende_titre": "Un seul nombre pour les deux essais",
+  "lecture": [
+   "Le rectangle bleu du haut est le nombre a² − 2b².",
+   "Les deux rectangles gris du milieu le calculent pour a = 3, b = 2, puis pour a = 1, b = 3.",
+   "Le rectangle vert dit : le résultat 1 donne un inverse entier.",
+   "Le rectangle gris de droite dit : le résultat −17 donne un inverse fractionnaire.",
+   "Le rectangle rouge du bas dit : si le nombre vaut 0, il n'y a pas d'inverse."
+  ],
+  "a_voir": "Les deux calculs ont la même forme ; selon la valeur du nombre, l'inverse est entier, fractionnaire ou n'existe pas."
+ },
+ {
+  "code": "77-004",
+  "a_dire": "L'astuce du conjugué marche pour a + b√2 mais pas pour les autres nombres : il faut une méthode unique.",
+  "legende_titre": "Une astuce qui ne couvre pas tout",
+  "lecture": [
+   "Ligne du haut : pour a + b√2, l'astuce donne a − b√2 (vert).",
+   "Ligne du milieu : pour le nombre à racines cubes, aucune astuce n'est vue (rouge, pointillé).",
+   "Ligne du bas : le quaternion a un conjugué qui lui est propre (gris).",
+   "Le rectangle orange du bas annonce la méthode unique, les matrices."
+  ],
+  "a_voir": "Une seule ligne sur trois a une astuce, d'où le besoin d'une méthode unique."
+ },
+ {
+  "code": "77-005",
+  "a_dire": "On passe de a + b√2 à a − b√2 en changeant un signe, et le produit vaut a² − 2b² parce que √2 × √2 = 2.",
+  "legende_titre": "Changer un signe",
+  "lecture": [
+   "Le rectangle bleu est a + b√2.",
+   "Le rectangle orange est le même nombre avec le signe changé : a − b√2.",
+   "Le rectangle vert est le produit : a² − 2b².",
+   "Le rectangle gris, en bas, est le fait qui produit le 2 : √2 × √2 = 2."
+  ],
+  "a_voir": "Le produit s'écrit sans racine parce que √2 × √2 = 2, un fait propre à ce nombre."
+ },
+ {
+  "code": "77-006",
+  "a_dire": "Multiplier par a, c'est l'opération x ↦ ax, qui est linéaire, donc elle a une matrice.",
+  "legende_titre": "Multiplier par un nombre fixé",
+  "lecture": [
+   "Le rectangle bleu est x, le rectangle vert est a·x ; la flèche orange est la multiplication par a = 2.",
+   "Les trois rectangles gris montrent le cas chiffré : 5 donne 10, 7 donne 14, 12 donne 24 = 10 + 14, et 15 donne 30 = 3 × 10.",
+   "La flèche du bas mène au tableau violet, la matrice de x ↦ 2x : 2, 0, 0, 2."
+  ],
+  "a_voir": "L'opération x ↦ ax respecte somme et multiple, donc elle se range dans un tableau de nombres."
+ },
+ {
+  "code": "77-007",
+  "a_dire": "La norme d'un nombre est le déterminant de sa matrice : 1 pour 3 + 2√2, −17 pour 1 + 3√2.",
+  "legende_titre": "Donner un nom au déterminant",
+  "lecture": [
+   "Le rectangle bleu est le nombre, le tableau violet est sa matrice.",
+   "Le rectangle vert est le déterminant, appelé norme.",
+   "Les deux lignes vertes donnent la norme de 3 + 2√2 (1) et de 1 + 3√2 (−17).",
+   "La ligne orange pose la question pour a + b√2."
+  ],
+  "a_voir": "Le mot norme remplace « déterminant de la matrice du nombre »."
+ },
+ {
+  "code": "77-008",
+  "a_dire": "Le geste x ↦ élément × x donne une permutation pour un groupe et une matrice pour une algèbre.",
+  "legende_titre": "Le même geste dans deux cadres",
+  "lecture": [
+   "Ligne violette : un élément g d'un groupe, la flèche x ↦ gx, et une permutation (une ligne du tableau).",
+   "Ligne bleue : un élément a d'une algèbre, la flèche x ↦ ax, et une matrice (un tableau de nombres).",
+   "Les flèches orange sont le même geste dans les deux lignes."
+  ],
+  "a_voir": "Le geste est identique ; seul change l'objet obtenu."
+ },
+ {
+  "code": "77-009",
+  "a_dire": "Le même nombre u a deux normes : une avec la matrice 4 × 4 (coefficients dans ℚ), une avec la matrice 2 × 2 (coefficients dans ℚ(√2)).",
+  "legende_titre": "Deux normes pour un même nombre",
+  "lecture": [
+   "Le rectangle gris du haut est le nombre u = 1 + √2 + √3.",
+   "À gauche, en bleu, les coefficients sont dans ℚ : le tableau a 4 × 4 cases et son déterminant vaut −8.",
+   "À droite, en violet, les coefficients sont dans ℚ(√2) : le tableau a 2 × 2 cases et son déterminant vaut 2√2.",
+   "Chaque tableau donne sa norme, dans le rectangle de même couleur."
+  ],
+  "a_voir": "Deux tailles de tableau donnent deux normes, −8 et 2√2, pour le même u."
+ },
+ {
+  "code": "77-010",
+  "a_dire": "Changer le corps de base change la taille de la matrice (4 × 4 ou 2 × 2), alors que changer de base garde la même taille.",
+  "legende_titre": "Changer de corps ou changer de base",
+  "lecture": [
+   "À gauche, en gris : deux tableaux de même taille, avec des coefficients dans ℚ.",
+   "À droite, en bleu : le tableau 4 × 4 avec coefficients dans ℚ.",
+   "À droite, en violet : le tableau 2 × 2 avec coefficients dans ℚ(√2).",
+   "Le trait en pointillé sépare les deux notions."
+  ],
+  "a_voir": "À gauche les tailles sont égales, à droite elles diffèrent."
+ },
+ {
+  "code": "77-011",
+  "a_dire": "Multiplier par 2 + i tourne tout le plan du même angle θ et l'agrandit de √5.",
+  "legende_titre": "Un triangle tourné et agrandi",
+  "lecture": [
+   "Les flèches bleues sont 1 et i, et le petit triangle bleu part de 0, 1 et du milieu de la flèche i.",
+   "Les flèches orange sont leurs images, 2 + i et −1 + 2i, et le triangle orange est l'image du triangle bleu.",
+   "Les deux arcs orange marquent le même angle θ.",
+   "Le texte rappelle l'agrandissement : √5."
+  ],
+  "a_voir": "Le triangle entier tourne et grandit, pas seulement deux flèches."
+ },
+ {
+  "code": "77-012",
+  "a_dire": "Tout nombre complexe s'écrit x × 1 + y × i ; par exemple 3 + 2i = 3 × 1 + 2 × i.",
+  "legende_titre": "Deux flèches de départ",
+  "lecture": [
+   "La flèche bleue est 1 et la flèche violette est i.",
+   "Le trait bleu fait 3 pas de longueur 1 vers la droite.",
+   "Le trait violet fait 2 pas de longueur i vers le haut.",
+   "Le point vert est 3 + 2i, au bout des deux trajets."
+  ],
+  "a_voir": "Le nombre 3 + 2i se lit par deux coordonnées : 3 et 2."
+ },
+ {
+  "code": "77-013",
+  "a_dire": "L'image de 1 par la multiplication par 2 + i est 2 + i, de coordonnées 2 et 1.",
+  "legende_titre": "Où va la flèche 1",
+  "lecture": [
+   "La flèche bleue est 1.",
+   "La flèche orange est son image : 1 × (2 + i) = 2 + i.",
+   "Les pointillés gris lisent ses coordonnées : 2 et 1.",
+   "Les deux cases vertes sont ces coordonnées, la première colonne de la future matrice."
+  ],
+  "a_voir": "L'image de 1 est le nombre fixé lui-même, écrit en coordonnées."
+ },
+ {
+  "code": "77-014",
+  "a_dire": "Le calcul (2 + i) × i donne −1 + 2i, de coordonnées −1 et 2.",
+  "legende_titre": "Le calcul avec i",
+  "lecture": [
+   "Le rectangle bleu est le calcul (2 + i) × i, le rectangle vert son résultat −1 + 2i.",
+   "La flèche grise est 2 + i.",
+   "La flèche orange est −1 + 2i ; les pointillés montrent ses coordonnées −1 et 2."
+  ],
+  "a_voir": "Le calcul donne les coordonnées de l'image ; la figure montre où elle se place."
+ },
+ {
+  "code": "77-015",
+  "a_dire": "Les deux flèches ont la même longueur √5, car les côtés 2 et 1 donnent la même somme de carrés dans les deux ordres.",
+  "legende_titre": "Même longueur, mêmes côtés",
+  "lecture": [
+   "La flèche orange de droite a pour côtés 2 (le long du bas) et 1 (en pointillé).",
+   "La flèche orange de gauche a pour côtés 1 (le long du bas) et 2 (en pointillé).",
+   "Chaque flèche porte la longueur √5.",
+   "La ligne verte du haut calcule les deux longueurs."
+  ],
+  "a_voir": "Les côtés sont les mêmes dans l'autre ordre, donc la longueur est la même."
+ },
+ {
+  "code": "77-016",
+  "a_dire": "Les deux images tournent du même angle θ, et il y a un quart de tour entre 1 et i comme entre leurs images.",
+  "legende_titre": "Une même rotation pour les deux flèches",
+  "lecture": [
+   "Les flèches bleues sont 1 et i, avec un petit carré gris pour le quart de tour entre elles.",
+   "Les flèches orange sont 2 + i et −1 + 2i, avec le même signe de quart de tour.",
+   "Chaque arc orange marque l'angle θ de rotation d'une flèche bleue à son image.",
+   "La ligne du bas donne le passage de (2 ; 1) à (−1 ; 2)."
+  ],
+  "a_voir": "La même rotation θ s'applique aux deux flèches, et le quart de tour se conserve."
+ }
+]

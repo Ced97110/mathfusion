@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(82)
+box(ax,4,6,42,12,'sujet',label=r'$K=\mathbb{Q}$')
+box(ax,4,34,42,12,'sujet',label=r'$E=\mathbb{Q}(\sqrt{2})$')
+box(ax,4,62,42,12,'sujet',label=r'$L=\mathbb{Q}(\sqrt{2},\sqrt{3})$')
+arrow(ax,(25,18),(25,34),'varie'); text(ax,29,26,r'$[E:K]=2$','varie',ha='left')
+arrow(ax,(25,46),(25,62),'varie'); text(ax,29,54,r'$[L:E]=2$','varie',ha='left')
+arrow(ax,(62,12),(62,68),'resultat',lw=1.4)
+text(ax,66,46,r'$[L:K]=4$','resultat',ha='left'); text(ax,66,38,r'$=2\times2$','resultat',ha='left')
+save(fig,'77-103')
