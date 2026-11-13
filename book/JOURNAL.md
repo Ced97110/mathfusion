@@ -28,6 +28,7 @@
 | 2026-11-12 | 72 — Géométrie orthogonale, Witt, Cartan-Dieudonné | 159 | 144 | 158 | 72-145 (le cas concret, deux quarts de tour en dimension 4, n'est pas dessiné ; la figure ne montre que la règle en dimension 3) |
 | 2026-11-12 | 43 — Relations d’équivalence, factorisation d’une application, cardinaux | 155 | 145 | 152 | 43-037 (l'addition des écarts est lue, pas les trois conditions de la preuve), 43-098 (« g bijective seulement si f surjective » non lu), 43-145 (lue comme table de sommes, pas comme groupe ni table de Cayley) |
 | 2026-11-12 | 27 — La trigonométrie dans l’espace | 133 | 127 | 131 | 27-086 (la hauteur 6 cm n'est pas lue), 27-106 (les trois angles dans trois plans différents : non lu) |
+| 2026-11-12 | 28 — Le cercle unité : des angles de toute grandeur | 153 | 149 | 151 | 28-109 (« 8,5 cm en arrière » à 120° non lu), 28-148 (les composantes d'un vecteur ne sont pas lues) |
 
 ## Remarques
 
@@ -55,3 +56,4 @@
 - Chapitre 72 : erreurs de figure corrigées : 72-062 (valeur 2 absente de la droite des déterminants), 72-064 (case verte vide), 72-082 (légendes près de la mauvaise droite). 72-159 : angle d'environ 20° pour « L₁ au choix », absent de la fiche. 72-134 : point final noté P″, notation absente de la fiche. Aucune couleur du livre changée relevée.
 - Chapitre 43 : nombres ajoutés par les agents, absents de la fiche : 43-117 (décimales 6 du nombre construit et zéros de remplissage 0,500 / 0,250 / 0,125), 43-114 et 43-123 (nombres 4 à 7 et position 12 pour montrer la rangée entière), 43-125 (étape 13 = 12 + 1 déduite). 43-040 : matrices B, A et AB écrites à la correction, déduites de la règle décrite en mots par la fiche. Couleurs du livre changées à cause des rôles : 43-017 (flèche de 11 vers 0) et 43-118 (numéros) en orange au lieu du rouge. 43-081 : la troisième règle de la fiche (pairs vers la boîte orange) n'est pas dessinée. À partir de ce chapitre, commit par script : seules les lignes du chapitre sont ajoutées à la version HEAD de JOURNAL.md et toc.json.
 - Chapitre 27 : aucun nombre inventé relevé. Aucune couleur du livre changée. 27-133 : à la correction, la vue isométrique (cube aplati en hexagone) est remplacée par une projection oblique, contre la règle « isométrique exacte », parce que l'angle au centre n'était pas lisible.
+- Chapitre 28 : nombres ajoutés par un agent : 28-028 et 28-029 (angles 50° et −50° pris dans le reste du chapitre comme exemples). Couleur du livre changée : 28-015, l'arc rouge est en noir (rôles de couleur).

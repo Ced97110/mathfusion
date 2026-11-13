@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pt(cx,cy,R,d): return (cx+R*math.cos(math.radians(d)), cy+R*math.sin(math.radians(d)))
+def uc(ax,cx,cy,R,e=4):
+    disc(ax,cx,cy,R,"fixe",fill=False)
+    line(ax,[(cx-R-e,cy),(cx+R+e,cy)],"fixe",lw=0.6); line(ax,[(cx,cy-R-e),(cx,cy+R+e)],"fixe",lw=0.6)
+fig,ax=canvas(62); cx,cy,R=16,30,11; uc(ax,cx,cy,R,2)
+x0,x1,A=36,82,12; X=lambda d:x0+d/360*(x1-x0); Y=lambda d:cy+A*math.sin(math.radians(d))
+line(ax,[(x0-2,cy),(x1+2,cy)],"fixe",lw=0.6); line(ax,[(x0,cy-A-2),(x0,cy+A+2)],"fixe",lw=0.6)
+line(ax,[(X(d),Y(d)) for d in range(0,361,5)],"sujet",lw=1.3)
+for d in (0,30,90,180,270,360): disc(ax,X(d),Y(d),1.0,"sujet")
+P=pt(cx,cy,R,30); disc(ax,*P,1.4,"varie"); line(ax,[(cx,cy),P],"varie",lw=0.8)
+line(ax,[P,(X(30),Y(30))],"varie",lw=0.7,dash=True)
+text(ax,P[0]+2.5,P[1]+3,r"$P$","varie")
+for d in (90,180,270,360): text(ax,X(d),12,f"{d}°","fixe","s")
+text(ax,x0-3,cy+A,"1","fixe","s",ha="right"); text(ax,x0-4,cy-A,"−1","fixe","s",ha="right")
+arrow(ax,(x0,50),(x1,50),"varie",both=True); text(ax,(x0+x1)/2,55,"période 360°","varie","m")
+save(fig,"28-142")

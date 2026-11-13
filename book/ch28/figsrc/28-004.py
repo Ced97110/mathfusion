@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, d): return (c[0] + r * math.cos(math.radians(d)), c[1] + r * math.sin(math.radians(d)))
+def arc(ax, c, r, a0, a1, role, lw=0.9, dash=False, n=48): line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw, dash)
+def dot(ax, p, role, r=1.0): ax.add_patch(Circle(p, r, ec=COL[role], fc=COL[role], lw=0.5, zorder=4))
+def sq(ax, p, ux, uy, s=2.2, role='fixe'): line(ax, [(p[0] + ux * s, p[1]), (p[0] + ux * s, p[1] + uy * s), (p[0], p[1] + uy * s)], role, lw=0.7)
+
+fig, ax = canvas(60)
+O = (10, 14); P = pol(O, 54, 30); Fo = (P[0], O[1])
+poly(ax, [O, Fo, P], 'sujet')
+line(ax, [O, P], 'sujet', lw=1.6)
+line(ax, [P, Fo], 'resultat', lw=2.2)
+sq(ax, Fo, -1, 1)
+arc(ax, O, 14, 0, 30, 'varie')
+text(ax, 25, 33, '17 cm', 'sujet')
+text(ax, 28, 17.5, '30°', 'varie')
+text(ax, P[0] + 3, 28, '8,5 cm', 'resultat', ha='left', weight='bold')
+text(ax, 44, 5, r'$17\times\sin 30^\circ = 17\times 0{,}5 = 8{,}5$', 'encre')
+save(fig, '28-004')

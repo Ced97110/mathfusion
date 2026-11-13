@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, d): return (c[0] + r * math.cos(math.radians(d)), c[1] + r * math.sin(math.radians(d)))
+def arc(ax, c, r, a0, a1, role, lw=0.9, dash=False, n=48): line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw, dash)
+def dot(ax, p, role, r=1.0): ax.add_patch(Circle(p, r, ec=COL[role], fc=COL[role], lw=0.5, zorder=4))
+def sq(ax, p, ux, uy, s=2.2, role='fixe'): line(ax, [(p[0] + ux * s, p[1]), (p[0] + ux * s, p[1] + uy * s), (p[0], p[1] + uy * s)], role, lw=0.7)
+
+fig, ax = canvas(62)
+O = (38, 31); Pu = pol(O, 36, 30); Pd = pol(O, 36, -30)
+arrow(ax, O, (O[0] + 40, O[1]), 'fixe', lw=1.6)
+line(ax, [O, Pu], 'sujet', lw=1.8)
+line(ax, [O, Pd], 'fixe', lw=1.2, dash=True)
+arc(ax, O, 22, 0, 26, 'varie'); arrow(ax, pol(O, 22, 24), pol(O, 22, 30), 'varie')
+arc(ax, O, 22, 0, -30, 'fixe', dash=True)
+dot(ax, O, 'fixe', 1.4); dot(ax, Pu, 'sujet', 1.4)
+text(ax, 70, 26, '0° : départ', 'fixe')
+text(ax, 64, 38, '30°', 'varie')
+text(ax, 44, 5, 'même 30°, autre sens', 'fixe')
+text(ax, 4, 57, 'sens contraire des aiguilles', 'varie', ha='left')
+text(ax, 4, 50, 'dessus : on monte vers l’avant', 'fixe', ha='left') if False else None
+save(fig, '28-003')
