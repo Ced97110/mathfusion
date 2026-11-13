@@ -1,0 +1,284 @@
+[
+ {
+  "code": "53-001",
+  "a_dire": "Le message passe par dix ordinateurs qui peuvent le lire ; le but est qu'il soit illisible pour tous sauf le vendeur.",
+  "legende_titre": "Un trajet où tout le monde peut lire",
+  "lecture": [
+   "La case bleue est Léa, la case verte est le vendeur.",
+   "Les dix petites cases grises entre elles sont les ordinateurs ; l'accolade dit que tous peuvent lire.",
+   "La flèche orange en arc porte le numéro de carte de Léa vers le vendeur.",
+   "En bas, la case grise dit « illisible » pour les ordinateurs, la case verte dit « peut lire » pour le vendeur."
+  ],
+  "a_voir": "Le message traverse dix lecteurs possibles, et un seul doit pouvoir le comprendre."
+ },
+ {
+  "code": "53-002",
+  "a_dire": "Dans la méthode ancienne, Léa et Hugo partagent d'avance un procédé : le message circule, le procédé reste secret.",
+  "legende_titre": "Un procédé connu des deux avant l'envoi",
+  "lecture": [
+   "La case grise de gauche est le mot ALGEBRE de Léa, la case bleue est le mot transformé BMHFCSF qui circule.",
+   "La case verte de droite est le mot retrouvé par Hugo : ALGEBRE.",
+   "Les flèches orange sont « lettre suivante » pour Léa et « lettre précédente » pour Hugo.",
+   "La case violette en pointillés est le procédé partagé d'avance ; ses traits touchent les deux flèches."
+  ],
+  "a_voir": "Le procédé secret doit exister chez les deux avant que le message parte."
+ },
+ {
+  "code": "53-003",
+  "a_dire": "Chaque paire de personnes demande son propre secret : le coût se compte en paires.",
+  "legende_titre": "Un secret pour chaque couple d'élèves",
+  "lecture": [
+   "Les quatre disques gris sont les quatre élèves : Léa, Hugo, Inès et l'élève 4.",
+   "Chaque trait bleu relie deux élèves : c'est le secret de cette paire.",
+   "Il y a six traits, donc six secrets pour quatre élèves."
+  ],
+  "a_voir": "Chaque trait est une paire ; il y en a six pour quatre personnes."
+ },
+ {
+  "code": "53-004",
+  "a_dire": "Pour n personnes, on compte n × (n − 1) couples puis on divise par 2 ; pour 1000 personnes on trouve 499 500 paires.",
+  "legende_titre": "Compter les paires d'un groupe",
+  "lecture": [
+   "Le tableau a une ligne et une colonne par personne : 4 lignes, 4 colonnes.",
+   "Les cases en pointillés sont une personne avec elle-même : elles ne comptent pas.",
+   "Les 6 cases vertes sont les paires retenues ; les 6 cases grises sont les mêmes paires, déjà comptées.",
+   "En bas, 4 × 3 = 12 couples, puis 12 ÷ 2 = 6 paires, puis la règle avec n et le calcul pour 1000."
+  ],
+  "a_voir": "Chaque paire apparaît deux fois dans le tableau, d'où la division par 2."
+ },
+ {
+  "code": "53-005",
+  "a_dire": "Chaque personne a deux clés différentes : une publiée qui sert à écrire, une gardée qui sert à lire.",
+  "legende_titre": "Deux clés, deux rôles différents",
+  "lecture": [
+   "La case bleue du haut est Léa ; deux traits la relient à ses deux clés.",
+   "La case orange est la clé publiée : elle sert à écrire, Hugo l'utilise, elle est sur Internet.",
+   "La case violette est la clé gardée : elle sert à lire, elle reste chez Léa.",
+   "Le trait en pointillés au milieu sépare ce qui est connu de tous de ce qui est gardé."
+  ],
+  "a_voir": "Écrire et lire utilisent deux clés différentes, alors que la méthode ancienne n'en avait qu'une."
+ },
+ {
+  "code": "53-006",
+  "a_dire": "Avec deux clés par personne, chacun fabrique sa paire de clés seul : une paire par personne et aucune rencontre.",
+  "legende_titre": "Le coût suit le nombre de personnes",
+  "lecture": [
+   "À gauche, quatre disques gris reliés par six traits orange : six secrets à partager, six rencontres.",
+   "À droite, les mêmes quatre disques, chacun avec ses deux petites cases : orange pour la clé publiée, violette pour la clé gardée.",
+   "À droite, aucun trait entre les disques : 4 paires de clés, 0 rencontre.",
+   "La ligne du bas compare 499 500 à 1 000 paires pour 1 000 personnes."
+  ],
+  "a_voir": "Les traits disparaissent : chaque personne apporte une seule paire de clés."
+ },
+ {
+  "code": "53-007",
+  "a_dire": "RSA est le nom formé des initiales de Rivest, Shamir et Adleman ; la méthode date de 1978 et réalise l'idée à deux clés de 1976.",
+  "legende_titre": "D'où vient le nom RSA",
+  "lecture": [
+   "Les trois disques bleus portent R, S et A, avec le nom du chercheur dessous.",
+   "Les trois flèches grises mènent au nom RSA, dans la case bleue.",
+   "Sur la ligne du bas, le point violet à 1976 est l'idée de Diffie et Hellman ; le point bleu à 1978 est RSA."
+  ],
+  "a_voir": "Trois initiales mises dans l'ordre donnent le nom, et 1978 vient après l'idée de 1976."
+ },
+ {
+  "code": "53-008",
+  "a_dire": "Comme la clé de chiffrement est publique, l'espion peut chiffrer ; la méthode doit rendre le chemin inverse difficile pour lui, sauf pour Léa.",
+  "legende_titre": "Ce que l'objection demande à l'idée",
+  "lecture": [
+   "La case grise à gauche est le message clair, la case bleue à droite est le message chiffré.",
+   "La flèche verte du haut va de clair à chiffré : facile pour tous, l'espion y compris.",
+   "La flèche orange du bas revient du chiffré au clair : difficile.",
+   "La case violette dit que seule Léa, avec sa clé gardée, peut défaire facilement."
+  ],
+  "a_voir": "Un sens est facile pour tous, l'autre sens est difficile sauf pour Léa."
+ },
+ {
+  "code": "53-009",
+  "a_dire": "Multiplier est un seul calcul, mais retrouver les facteurs demande de nombreux essais : certaines opérations sont faciles à faire et difficiles à défaire.",
+  "legende_titre": "Un sens facile, l'autre sens long",
+  "lecture": [
+   "En haut, la case bleue 13 × 17 donne la case verte 221 en un calcul.",
+   "En dessous, on repart de 221 et on essaie des diviseurs : 2, 3, 5, 7, 11 sont des cases grises qui ne conviennent pas.",
+   "La case verte 13 est le diviseur qui convient, après 6 essais."
+  ],
+  "a_voir": "Un calcul dans un sens, six essais dans l'autre, pour un très petit nombre."
+ },
+ {
+  "code": "53-010",
+  "a_dire": "Le chiffre de César est un chiffre par décalage ; dans cette famille seul le nombre de places, la clé, change.",
+  "legende_titre": "Une famille de chiffres qui décalent",
+  "lecture": [
+   "La case grise de gauche est le mot ALGEBRE.",
+   "La flèche du haut applique le décalage 3 : la case bleue donne DOJHEUH, c'est le chiffre de César.",
+   "La flèche du bas applique le décalage 1 : la case violette donne BMHFCSF.",
+   "Les deux flèches ont la même forme ; seule la clé change."
+  ],
+  "a_voir": "Même forme de chiffre, clé différente : 3 pour César, 1 pour l'autre."
+ },
+ {
+  "code": "53-011",
+  "a_dire": "Sur le cercle des 26 lettres, la flèche de 3 crans va de A à D et de X à A, car 23 + 3 = 26 compte pour 0.",
+  "legende_titre": "Deux flèches de même taille sur le cercle",
+  "lecture": [
+   "Les points du cercle sont les 26 lettres ; A est en haut, les lettres suivent dans le sens des aiguilles d'une montre.",
+   "Les numéros gris sont 0 pour A, 3 pour D, 23 pour X.",
+   "Les deux flèches orange avancent chacune de 3 crans : une de A à D, une de X à A.",
+   "Au centre, la règle f(p) = p + 3 et le calcul 23 + 3 = 26, qui retombe sur 0."
+  ],
+  "a_voir": "La flèche qui part de X passe Z et revient sur A, avec la même taille que celle de A à D."
+ },
+ {
+  "code": "53-012",
+  "a_dire": "Les lettres sont rangées en cercle, A en haut, dans le sens des aiguilles d'une montre ; après Z vient A.",
+  "legende_titre": "Un cercle où l'on ne manque jamais de lettre",
+  "lecture": [
+   "Le point bleu en haut est A ; les points violets sont Y, Z et B autour de lui.",
+   "La flèche orange avance de 3 crans : Y, Z, A, puis B.",
+   "La flèche grise indique le sens des aiguilles d'une montre.",
+   "Après Z, la flèche continue sur A au lieu de s'arrêter."
+  ],
+  "a_voir": "Sur le cercle, la lettre après Z existe : c'est A."
+ },
+ {
+  "code": "53-013",
+  "a_dire": "Chaque lettre reçoit un numéro de 0 à 25, A = 0 jusqu'à Z = 25 ; ainsi ALGEBRE s'écrit 0, 11, 6, 4, 1, 17, 4.",
+  "legende_titre": "Remplacer chaque lettre par un numéro",
+  "lecture": [
+   "La rangée grise du haut montre la table : A = 0, B = 1, C = 2, puis les points de suite, puis Z = 25.",
+   "La flèche orange descend vers le mot ALGEBRE.",
+   "La rangée bleue du bas donne le numéro sous chaque lettre de ALGEBRE : 0, 11, 6, 4, 1, 17, 4."
+  ],
+  "a_voir": "Une table connue de tous remplace chaque lettre par un nombre, sans rien cacher."
+ },
+ {
+  "code": "53-014",
+  "a_dire": "Avancer de 3 crans sur le cercle donne le même résultat qu'ajouter 3 au numéro, tant qu'on ne dépasse pas Z.",
+  "legende_titre": "Avancer de 3 crans, c'est ajouter 3",
+  "lecture": [
+   "Les cinq cases montrent les lettres A à E avec leur numéro de 0 à 4.",
+   "La flèche orange du haut va de A (bleu) à D (vert) : 0 + 3 = 3.",
+   "La flèche orange du bas va de B à E : 1 + 3 = 4.",
+   "Chaque flèche saute 3 cases."
+  ],
+  "a_voir": "Avancer de 3 cases change le numéro de 3, pour A comme pour B."
+ },
+ {
+  "code": "53-015",
+  "a_dire": "Il n'y a pas de case 26 : après 25 on revient à 0, donc 26 compte pour 0 et tombe sur la lettre A.",
+  "legende_titre": "Un numéro est une place sur le cercle",
+  "lecture": [
+   "Les cases X (23), Y (24), Z (25) sont grises ou bleues, et la case verte A porte le numéro 0.",
+   "La flèche orange part de X et ajoute 3 : 23 + 3 = 26.",
+   "La case rouge en pointillés est la case 26, qui n'existe pas.",
+   "La flèche verte du haut ramène 26 sur A : 26 compte pour 0."
+  ],
+  "a_voir": "Le nombre 26 n'a pas de case et retombe sur la place de A."
+ },
+ {
+  "code": "53-016",
+  "a_dire": "Le cercle des lettres est une horloge à 26 cases : comme l'horloge à 12 cases, on revient au début après la dernière case.",
+  "legende_titre": "Deux horloges qui reviennent au début",
+  "lecture": [
+   "À gauche, l'horloge ordinaire à 12 cases (violet) : de 10, on avance de 4 et on arrive sur 2.",
+   "À droite, l'horloge à 26 cases (bleu) : de 23, on avance de 3 et on arrive sur 0.",
+   "Les flèches orange sont les avancées ; les points verts sont les arrivées.",
+   "Sous chaque horloge, le calcul : 10 + 4 = 14 donne 2, et 23 + 3 = 26 donne 0."
+  ],
+  "a_voir": "Seul le nombre de cases change ; le retour au début est le même."
+ },
+ {
+  "code": "53-017",
+  "a_dire": "Sur le cercle de 26 cases, ajouter 3 revient à ajouter 3 puis garder le reste de la division par 26, car les tours complets ne changent pas la lettre.",
+  "legende_titre": "Garder ce qui reste après les tours complets",
+  "lecture": [
+   "La barre du haut est 23 (bleu) plus 3 (orange) : 26 en tout, un tour complet, reste 0, donc la case A.",
+   "La barre du bas est un tour de 26 (gris) plus 3 (orange) : 29, donc 1 tour et il reste 3, donc la case D.",
+   "Le trait en pointillés marque la fin d'un tour complet de 26."
+  ],
+  "a_voir": "Un tour complet de 26 ne compte pas ; seul le reste décide de la case."
+ },
+ {
+  "code": "53-018",
+  "a_dire": "Le signe ℤ/26ℤ désigne les entiers où deux entiers sont confondus quand leur différence est un multiple de 26 ; il reste 26 places, de 0 à 25.",
+  "legende_titre": "Lire le signe ℤ/26ℤ en français",
+  "lecture": [
+   "La case bleue ℤ désigne les entiers.",
+   "La case orange 26ℤ désigne les multiples de 26.",
+   "La barre oblique du milieu relie les deux : on confond deux entiers si leur différence est dans 26ℤ.",
+   "En bas, 29 − 3 = 26, donc 3 et 29 sont sur la même place ; il y a 26 places en tout."
+  ],
+  "a_voir": "Le signe se lit : les entiers, avec deux entiers confondus quand leur différence est un multiple de 26."
+ },
+ {
+  "code": "53-019",
+  "a_dire": "ALGEBRE devient DOJHEUH en ajoutant 3 à chaque numéro ; aucun résultat ne dépasse 25, donc on ne revient jamais à 0.",
+  "legende_titre": "Chiffrer un mot lettre par lettre",
+  "lecture": [
+   "La case grise du haut est le message clair ALGEBRE.",
+   "Chaque colonne bleue donne, de haut en bas : la lettre, son numéro, +3, le nouveau numéro, la nouvelle lettre.",
+   "La case verte du bas est le message chiffré DOJHEUH.",
+   "Le plus grand résultat est 20 : aucun ne dépasse 25."
+  ],
+  "a_voir": "Les sept additions restent entre 0 et 25 : ce cas ne montre pas le retour à 0."
+ },
+ {
+  "code": "53-020",
+  "a_dire": "Pour déchiffrer, on fait tourner la flèche dans l'autre sens : on retranche 3, de D vers A, et de A vers X.",
+  "legende_titre": "Faire tourner la flèche dans l'autre sens",
+  "lecture": [
+   "Les points bleus marqués D, A, X, Y, Z sont des lettres du cercle ; A est en haut.",
+   "La flèche orange du haut recule de D à A : − 3.",
+   "La flèche orange plus à l'intérieur recule de A à X, en passant par Z et Y : − 3.",
+   "Ces flèches tournent à l'inverse de celles du chiffrement."
+  ],
+  "a_voir": "Reculer de 3 depuis A ramène sur X, en passant par Z puis Y."
+ },
+ {
+  "code": "53-021",
+  "a_dire": "Retrancher 3 donne la même lettre qu'avancer de 23 crans, car 3 + 23 = 26 est un tour complet.",
+  "legende_titre": "Reculer de 3 ou avancer de 23",
+  "lecture": [
+   "Les points bleus marqués D et A sont la lettre de départ (numéro 3) et la lettre d'arrivée (numéro 0).",
+   "La flèche violette courte recule de 3 crans de D à A.",
+   "La grande flèche orange avance de 23 crans de D jusqu'à A en faisant presque un tour.",
+   "Au centre, 3 + 23 = 26, qui compte pour 0."
+  ],
+  "a_voir": "Les deux flèches finissent sur la même lettre A."
+ },
+ {
+  "code": "53-022",
+  "a_dire": "Un message est une suite de nombres ; chiffrer est une fonction, ici ajouter 3, et déchiffrer est la fonction réciproque, ici retrancher 3.",
+  "legende_titre": "Chiffrer, déchiffrer : des règles sur des nombres",
+  "lecture": [
+   "La case bleue du haut est la suite de nombres du mot ALGEBRE.",
+   "La flèche orange à gauche descend : la fonction « ajouter 3 » donne la case verte du bas.",
+   "La flèche violette à droite remonte : la réciproque « retrancher 3 » défait la première.",
+   "Chaque règle part d'un nombre et donne un nombre."
+  ],
+  "a_voir": "Une règle va dans un sens et la règle réciproque revient en sens inverse."
+ },
+ {
+  "code": "53-023",
+  "a_dire": "Le message clair est le message écrit au départ, avant toute transformation.",
+  "legende_titre": "Le mot du départ",
+  "lecture": [
+   "La case bleue ALGEBRE est le message clair.",
+   "La flèche orange part de lui : c'est la transformation, qui n'est pas encore faite.",
+   "La case grise en pointillés DOJHEUH est le message chiffré à venir."
+  ],
+  "a_voir": "Le message clair est le début : il n'est pas encore transformé."
+ },
+ {
+  "code": "53-024",
+  "a_dire": "Le message chiffré est le message transformé qui circule ; il a d'autres lettres que le clair, et le message retrouvé est identique au clair.",
+  "legende_titre": "Le mot qui circule",
+  "lecture": [
+   "La case grise du haut est le message clair ALGEBRE.",
+   "La case bleue du milieu est le message chiffré DOJHEUH : ses lettres sont différentes, et c'est lui qui circule sur Internet.",
+   "La case grise du bas est le message retrouvé, de nouveau ALGEBRE.",
+   "Le crochet vert à droite avec le signe égal relie le premier et le dernier : ils sont identiques."
+  ],
+  "a_voir": "Seul le message du milieu a d'autres lettres, et c'est lui qui circule."
+ }
+]

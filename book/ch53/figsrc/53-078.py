@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, 'facile : multiplier', 'varie', 'm')
+box(ax, 8, 40, 16, 10, 'sujet', label='13')
+text(ax, 29, 45, r'$\times$', 'encre', 'l')
+box(ax, 34, 40, 16, 10, 'sujet', label='17')
+arrow(ax, (51, 45), (60, 45), 'varie')
+box(ax, 61, 40, 24, 10, 'resultat', label='221')
+text(ax, 44, 30, 'difficile : essayer', 'varie', 'm')
+box(ax, 2, 10, 14, 10, 'resultat', label='221')
+arrow(ax, (16.5, 15), (23.5, 15), 'varie')
+for i, v in enumerate([2, 3, 5, 7, 11, 13]):
+    box(ax, 24 + i * 10, 10, 9, 10, 'resultat' if v == 13 else 'fixe', label=str(v))
+brace(ax, 24, 83, 9, 'varie', label='6 essais')
+save(fig, '53-078')

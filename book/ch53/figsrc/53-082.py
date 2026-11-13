@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+arrow(ax, (6, 14), (84, 14), 'fixe')
+text(ax, 82, 9, 'temps', 'fixe', 's')
+line(ax, [(14, 12), (14, 58)], 'fixe', dash=True)
+text(ax, 14, 8, '1978', 'encre', 'm')
+text(ax, 18, 61, 'deux systèmes proposés', 'encre', 's', ha='left')
+box(ax, 14, 40, 32, 9, 'autre', label='Merkle-Hellman')
+box(ax, 47, 40, 14, 9, 'limite', label='cassé')
+box(ax, 14, 24, 64, 9, 'sujet', label='RSA : tient depuis 1978')
+arrow(ax, (78.5, 28.5), (86, 28.5), 'sujet')
+save(fig, '53-082')

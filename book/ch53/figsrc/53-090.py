@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 31, 60, r'clé publique $(n, e)$', 'sujet', 'm', weight='bold')
+box(ax, 4, 30, 54, 24, 'sujet', fill=False, lw=1.2)
+text(ax, 16, 48, r'$n$', 'sujet', 's')
+text(ax, 46, 48, r'$e$', 'sujet', 's')
+box(ax, 8, 33, 16, 10, 'sujet', label='55')
+box(ax, 38, 33, 16, 10, 'sujet', label='3')
+arrow(ax, (59, 42), (63, 42), 'varie')
+box(ax, 64, 36, 22, 10, 'varie', label='lue par tous')
+text(ax, 75, 29, 'chiffrer seulement', 'varie', 's')
+box(ax, 4, 8, 54, 10, 'fixe', label='gardés : 40 et 27')
+save(fig, '53-090')

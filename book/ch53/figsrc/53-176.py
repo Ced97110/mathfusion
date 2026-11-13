@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+f = numberline(ax, 6, 80, 50, 0, 60, 5, labels=False, arrow_right=False)
+line(ax, [(f(55), 44), (f(55), 56)], 'encre', dash=True)
+text(ax, f(55), 40, 'n = 55', 'encre', 's')
+brace(ax, f(0), f(55) - 1, 53, 'sujet', 'm < n : 0 à 54', down=False, size='s')
+disc(ax, f(5), 50, 1.7, 'sujet'); text(ax, f(5), 45, '5', 'sujet', 'm')
+disc(ax, f(60), 50, 1.7, 'limite'); text(ax, f(60), 45, '60', 'limite', 'm')
+text(ax, 60, 63, '60 = 5 + 55', 'limite', 's')
+box(ax, 31, 6, 26, 10, 'resultat', label='reste 15')
+arrow(ax, (f(5), 42), (36, 16.5), 'varie')
+arrow(ax, (f(60), 42), (52, 16.5), 'limite')
+text(ax, 13, 28, '5³ = 125', 'varie', 's')
+text(ax, 77, 28, '60³ aussi', 'limite', 's')
+text(ax, 44, 1.5, 'Alice : 5 ou 60 ?', 'encre', 's') if False else None
+save(fig, '53-176')

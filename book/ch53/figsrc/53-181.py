@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, 'test de Fermat, base 2', 'encre', 'm')
+text(ax, 38, 51, 'passe le test', 'resultat', 's')
+text(ax, 70, 51, 'échoue', 'limite', 's')
+text(ax, 11, 38, 'premier', 'encre', 's')
+text(ax, 11, 17, 'composé', 'encre', 's')
+box(ax, 24, 30, 28, 16, 'fixe', label='7')
+box(ax, 55, 30, 28, 16, 'fixe', fill=False, dash=True, label='aucun', size='s')
+box(ax, 24, 9, 28, 16, 'sujet', label='341 = 11 × 31', size='s', weight='bold')
+box(ax, 55, 9, 28, 16, 'fixe', label='15')
+text(ax, 38, 3.5, 'pseudo-premier', 'sujet', 'm', weight='bold')
+save(fig, '53-181')

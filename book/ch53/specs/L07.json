@@ -1,0 +1,291 @@
+[
+ {
+  "code": "53-144",
+  "a_dire": "Le chiffrement protège contre un espion, mais il ne prouve pas qui a écrit : comme la clé d’Alice est publique, n’importe qui peut lui écrire en signant « Bob ».",
+  "legende_titre": "Qui est l’auteur du message ?",
+  "lecture": [
+   "La case grise à gauche est un inconnu qui écrit à Alice.",
+   "La case orange au milieu est le message qui se termine par « Bob ».",
+   "La case bleue à droite est Alice, dont la clé est publique.",
+   "La case violette en pointillés est Bob : rien n’indique que le message vient de lui."
+  ],
+  "a_voir": "Le nom « Bob » écrit à la fin ne prouve pas que Bob est l’auteur."
+ },
+ {
+  "code": "53-145",
+  "a_dire": "Élever 8 à la puissance 3 puis 27, ou à la puissance 27 puis 3, donne la même puissance 81, parce que 3 × 27 = 27 × 3.",
+  "legende_titre": "Deux ordres, une même puissance",
+  "lecture": [
+   "La ligne du haut élève 8 à la puissance 3 (flèche orange), puis à la puissance 27 (flèche violette).",
+   "La ligne du bas fait les mêmes opérations dans l’autre ordre.",
+   "Les deux lignes arrivent dans la même case verte : 8 puissance 81.",
+   "Le calcul du bas donne la raison : 3 × 27 et 27 × 3 valent 81."
+  ],
+  "a_voir": "Les deux chemins finissent dans la même case, car le produit des exposants ne change pas."
+ },
+ {
+  "code": "53-146",
+  "a_dire": "Une signature numérique est un nombre s que seul l’auteur sait fabriquer et que tout le monde peut vérifier.",
+  "legende_titre": "Un nombre que seul Bob fabrique",
+  "lecture": [
+   "La formule bleue en haut donne la signature : s est le reste de m puissance d par n.",
+   "La case bleue à gauche est Bob, le seul qui peut calculer s.",
+   "La case verte au milieu est la signature s.",
+   "Les trois cases grises à droite montrent que tout le monde peut la vérifier."
+  ],
+  "a_voir": "Un seul fabrique la signature, tous la vérifient."
+ },
+ {
+  "code": "53-147",
+  "a_dire": "Pour signer un message m, on calcule le reste de m puissance d par n, avec sa propre clé privée d ; seul le message change d’un cas à l’autre.",
+  "legende_titre": "Signer avec sa clé privée",
+  "lecture": [
+   "Le titre dit qui signe : Alice, avec sa clé privée 27 sur l'horloge à 55 cases.",
+   "Les cases bleues sont les messages 8 et 3.",
+   "Chaque flèche orange est la même opération : puissance 27, puis reste par 55.",
+   "Les cases vertes sont les signatures : 2 pour le message 8, 42 pour le message 3."
+  ],
+  "a_voir": "Alice signe avec sa propre clé privée : l'opération est la même pour chaque message."
+ },
+ {
+  "code": "53-148",
+  "a_dire": "Pour vérifier une signature, on élève s à la puissance e de la clé publique, on garde le reste par n et on compare au message m.",
+  "legende_titre": "Vérifier avec la clé publique",
+  "lecture": [
+   "La première case bleue contient la signature reçue : 2.",
+   "La case orange élève 2 à la puissance 3 et garde le reste par 55 : cela donne 8.",
+   "La dernière case bleue contient le message : 8.",
+   "La case verte du bas montre que les deux nombres sont égaux, donc la signature est acceptée."
+  ],
+  "a_voir": "Trois actions : prendre s, l’élever à la puissance e, comparer au message."
+ },
+ {
+  "code": "53-149",
+  "a_dire": "Avec les clés 55, 3 et 27, signer le message 8 donne 2, et vérifier 2 redonne 8 : les deux calculs sont inverses l’un de l’autre.",
+  "legende_titre": "Un exemple qui marche dans les deux sens",
+  "lecture": [
+   "La ligne grise du haut donne les nombres des clés : 55, 3 et 27.",
+   "La case bleue de gauche est le message 8.",
+   "La flèche orange signe avec la clé privée : 8 puissance 27 a pour reste 2.",
+   "La flèche verte vérifie avec la clé publique : 2 puissance 3 vaut 8, le message de départ."
+  ],
+  "a_voir": "Le chemin aller et le chemin retour reviennent au même nombre, 8."
+ },
+ {
+  "code": "53-150",
+  "a_dire": "Le signe n′ (« n prime ») désigne le produit des deux nombres premiers de Bob ; le trait sert à ne pas le confondre avec le n d’Alice.",
+  "legende_titre": "Deux personnes, deux produits",
+  "lecture": [
+   "La case violette est le n d’Alice, égal à 5 × 11, soit 55.",
+   "La case bleue est le n′ de Bob, égal à 7 × 13, soit 91.",
+   "Les deux cases ont la même forme : chaque personne a son produit.",
+   "Le petit trait en haut à droite de n′ sert seulement à les distinguer."
+  ],
+  "a_voir": "n et n′ sont deux nombres différents, un par personne."
+ },
+ {
+  "code": "53-151",
+  "a_dire": "Le signe e′ (« e prime ») désigne l’exposant public de Bob ; le trait le distingue du e d’Alice.",
+  "legende_titre": "Deux exposants publics",
+  "lecture": [
+   "La colonne violette est Alice : son nombre publié est 55 et son exposant est 3.",
+   "La colonne bleue est Bob : son nombre publié est 91 et son exposant e′ est 5.",
+   "Les deux exposants sont publics, comme les nombres 55 et 91.",
+   "Le trait de e′ évite de confondre les deux exposants."
+  ],
+  "a_voir": "Chaque personne publie son nombre et son exposant ; le trait sépare ceux de Bob."
+ },
+ {
+  "code": "53-152",
+  "a_dire": "Le signe d′ (« d prime ») désigne l’exposant privé de Bob, que lui seul garde ; il se calcule avec des restes par 72.",
+  "legende_titre": "L’exposant privé de Bob",
+  "lecture": [
+   "La case violette à gauche est le d d’Alice : 27, gardé privé.",
+   "La case bleue à droite est le d′ de Bob : 29, lui aussi privé.",
+   "Le calcul 5 × 29 = 145 s’écrit 2 × 72 + 1 dans la case verte.",
+   "La case grise donne 72 = 6 × 12, car 6 est 7 moins 1 et 12 est 13 moins 1."
+  ],
+  "a_voir": "d′ est le nombre de Bob, 29, différent du 27 d’Alice."
+ },
+ {
+  "code": "53-153",
+  "a_dire": "Pour un message à la fois signé et secret, Bob signe avec sa clé privée puis chiffre avec la clé publique d’Alice ; chaque opération apporte une garantie.",
+  "legende_titre": "Deux opérations, deux garanties",
+  "lecture": [
+   "La case bleue du haut est le message de Bob.",
+   "La première case orange le signe avec la clé privée de Bob.",
+   "La seconde case orange le chiffre avec la clé publique d’Alice.",
+   "Les cases vertes à droite donnent la garantie de chaque opération : la preuve de l’auteur, puis le secret."
+  ],
+  "a_voir": "La signature prouve l’auteur, le chiffrement garde le secret, et on fait les deux dans cet ordre."
+ },
+ {
+  "code": "53-154",
+  "a_dire": "Bob calcule d’abord x′, reste de m puissance d′ par n′, avec ses propres nombres, puis y, reste de x′ puissance e par n, avec les nombres publics d’Alice.",
+  "legende_titre": "Signer, puis chiffrer",
+  "lecture": [
+   "La case bleue est le message : 2.",
+   "La première flèche orange signe avec la clé de Bob : 2 puissance 29, reste par 91, donne 32.",
+   "La flèche violette chiffre avec la clé d’Alice : 32 puissance 3, reste par 55, donne 43.",
+   "La case verte est le nombre envoyé : 43."
+  ],
+  "a_voir": "La première flèche utilise les nombres de Bob, la seconde ceux d’Alice."
+ },
+ {
+  "code": "53-155",
+  "a_dire": "Alice défait les deux opérations dans l’ordre inverse : puissance d modulo n, puis puissance e′ modulo n′ ; elle s’arrête quand elle retrouve un message.",
+  "legende_titre": "Défaire dans l’ordre inverse",
+  "lecture": [
+   "La case bleue est le nombre reçu : 43.",
+   "La flèche violette utilise la clé d’Alice : 43 puissance 27, reste par 55, donne 32.",
+   "La flèche orange utilise la clé de Bob : 32 puissance 5, reste par 91, donne 2.",
+   "La case verte, 2, est le message : le calcul s’arrête là."
+  ],
+  "a_voir": "Alice défait d’abord le chiffrement, puis la signature : deux calculs, puis elle s’arrête."
+ },
+ {
+  "code": "53-156",
+  "a_dire": "Les points (m, m³ mod 55) sont dispersés dans le carré, sans courbe qui monte : les voisins 8, 9, 10 donnent 17, 14, 10 et ne permettent pas de prévoir le suivant.",
+  "legende_titre": "Un nuage sans ordre",
+  "lecture": [
+   "Chaque point gris a pour abscisse un message m et pour ordonnée le reste de m puissance 3 par 55.",
+   "Les trois points orange sont les voisins 8, 9 et 10 ; leurs étiquettes donnent (8, 17), (9, 14) et (10, 10).",
+   "Les points montent et descendent sans suivre une courbe.",
+   "Rien dans le dessin ne dit où serait le point de m = 11."
+  ],
+  "a_voir": "Le nuage est dispersé : aucune courbe ne monte."
+ },
+ {
+  "code": "53-157",
+  "a_dire": "Sur les nombres réels, le cube est croissant et chaque essai dit dans quel sens aller ; sur l’horloge, l’ordre des essais est perdu et rien n’oriente.",
+  "legende_titre": "Un essai oriente-t-il le suivant ?",
+  "lecture": [
+   "Le haut montre les essais 5, 8 et 10 sur les réels ; chaque flèche mène à son cube : 125, 512, 1 000.",
+   "Les flèches ne se croisent pas : l'ordre des essais est gardé, donc chaque essai indique le sens.",
+   "Le bas montre les mêmes essais sur l'horloge à 55 cases : les restes sont 15, 17 et 10.",
+   "Les flèches se croisent : l'ordre est perdu, donc un essai raté n'indique aucun sens."
+  ],
+  "a_voir": "Les flèches ne se croisent pas sur les réels, elles se croisent sur l'horloge."
+ },
+ {
+  "code": "53-158",
+  "a_dire": "Quand le message passe de 8 à 9, le cube augmente de 217, soit presque quatre tours de l’horloge à 55 cases ; les restes 17 et 14 n’ont donc aucun rapport simple avec 8 et 9.",
+  "legende_titre": "Un seul pas, presque quatre tours",
+  "lecture": [
+   "En haut, le message passe de 8 à 9 : un seul pas.",
+   "La droite graduée marque les multiples de 55 : chaque intervalle est un tour d'horloge.",
+   "Le disque bleu est 8 puissance 3, soit 512, juste après 495 ; le reste est 17.",
+   "Le disque violet est 9 puissance 3, soit 729, juste après 715 ; le reste est 14.",
+   "La flèche orange mesure l'écart de 217, presque quatre tours."
+  ],
+  "a_voir": "Un pas de 8 à 9 fait presque quatre tours, donc les restes 17 et 14 n'ont aucun rapport simple avec 8 et 9."
+ },
+ {
+  "code": "53-159",
+  "a_dire": "Avec n de 600 chiffres, essayer toutes les valeurs est impossible : le nombre d’essais est de l’ordre de n et chaque chiffre de plus le multiplie par 10.",
+  "legende_titre": "Essayer toutes les valeurs",
+  "lecture": [
+   "Chaque petit carré bleu est un essai : 55 carrés pour n = 55, 667 carrés pour n = 667.",
+   "Le bloc de 667 carrés est beaucoup plus grand que celui de 55.",
+   "La case en pointillés gris représente n de 600 chiffres : on ne peut pas dessiner ses essais.",
+   "Le texte orange rappelle qu’un chiffre de plus multiplie les essais par 10."
+  ],
+  "a_voir": "Les essais grandissent avec n lui-même, et non avec son nombre de chiffres."
+ },
+ {
+  "code": "53-160",
+  "a_dire": "Sans connaître le nombre de cases inversibles 40, l’espion prend 55 et trouve le mauvais exposant 37 ; retrouver d demande donc de connaître ce nombre.",
+  "legende_titre": "Un mauvais modulo donne un mauvais exposant",
+  "lecture": [
+   "La ligne grise du haut rappelle le chiffré 17 et le message cherché 8.",
+   "La colonne rouge calcule modulo 55 : 3 × 37 = 111 = 2 × 55 + 1, mais 17 puissance 37 a pour reste 52, pas 8.",
+   "La colonne verte calcule modulo 40 : 3 × 27 = 81 = 2 × 40 + 1, et 17 puissance 27 a pour reste 8.",
+   "Le bon exposant est donc 27, et il demande de connaître 40."
+  ],
+  "a_voir": "Le même calcul réussit modulo 40 et échoue modulo 55."
+ },
+ {
+  "code": "53-161",
+  "a_dire": "La somme p + q se calcule en partant de n, en retirant φ(n), puis en ajoutant 1 : pour 55 et 40, on trouve 16.",
+  "legende_titre": "De n et φ(n) à la somme p + q",
+  "lecture": [
+   "La barre bleue du haut est n = 55.",
+   "La barre grise est φ(n) = 40 ; il reste la partie orange, 15.",
+   "On ajoute 1 à ces 15 et on obtient 16.",
+   "La barre du bas coupe ces 16 en p = 5 (bleu) et q = 11 (violet) ; la ligne du bas donne l’autre cas, 667."
+  ],
+  "a_voir": "n moins φ(n), plus 1, donne la somme des deux nombres premiers."
+ },
+ {
+  "code": "53-162",
+  "a_dire": "Qui connaît la somme et le produit de p et q les trouve : ce sont les deux solutions de x² − (p + q)x + n = 0.",
+  "legende_titre": "Retrouver deux nombres par une équation",
+  "lecture": [
+   "La courbe bleue est celle de x² − 16x + 55.",
+   "La droite grise est l’axe des x : la courbe vaut 0 là où elle la coupe.",
+   "Les deux disques verts sont les points où la courbe coupe l’axe : p = 5 et q = 11.",
+   "Le texte gris rappelle les nombres connus : la somme 16 et le produit 55."
+  ],
+  "a_voir": "Les deux solutions de l’équation sont exactement p et q."
+ },
+ {
+  "code": "53-163",
+  "a_dire": "Connaître 40 suffit à factoriser 55 : on calcule la somme 16, on écrit l’équation, on la résout et on trouve 5 et 11.",
+  "legende_titre": "Du nombre 40 aux facteurs de 55",
+  "lecture": [
+   "La première case bleue calcule la somme : 55 − 40 + 1 = 16.",
+   "La deuxième case bleue écrit l’équation avec 16 et 55.",
+   "La case grise calcule 16² − 4 × 55 = 36, dont la racine carrée est 6.",
+   "Les deux cases vertes donnent les solutions : (16 − 6) ÷ 2 = 5 et (16 + 6) ÷ 2 = 11."
+  ],
+  "a_voir": "Trois calculs simples, dans l’ordre, donnent les deux facteurs."
+ },
+ {
+  "code": "53-164",
+  "a_dire": "La méthode naïve divise n par 2, 3, 4, … et s’arrête soit à un diviseur, soit à √n ; pour un produit de deux grands premiers, elle s’arrête très tard.",
+  "legende_titre": "Essayer les diviseurs un par un",
+  "lecture": [
+   "Chaque disque est un nombre essayé comme diviseur : plein s’il a été essayé, vide s’il ne l’a jamais été.",
+   "Pour 221, le disque vert est 13 : il divise 221, qui est 13 × 17, et la méthode s’arrête.",
+   "Pour 55, le disque vert est 5 : 55 est 5 × 11.",
+   "Le trait orange en pointillés marque √n, la limite des essais."
+  ],
+  "a_voir": "La méthode s’arrête au premier diviseur, avant √n."
+ },
+ {
+  "code": "53-165",
+  "a_dire": "Si n = pq avec p ≤ q, alors p ≤ √n : le plus petit facteur ne dépasse pas la racine carrée de n.",
+  "legende_titre": "Où se place le plus petit facteur ?",
+  "lecture": [
+   "Le rectangle bleu a pour côtés p = 5 et q = 11 : son aire est 55.",
+   "Le carré gris en pointillés a pour côté √55, environ 7,4 : son aire est aussi 55.",
+   "Sur la droite du bas, p est avant √n, et q est après.",
+   "Si les deux côtés dépassaient √n, l’aire dépasserait 55."
+  ],
+  "a_voir": "Le côté court du rectangle est plus petit que le côté du carré de même aire."
+ },
+ {
+  "code": "53-166",
+  "a_dire": "Un milliard d’ordinateurs à un milliard de divisions par seconde ne gagnent que 18 zéros sur un nombre d’essais de 300 chiffres : il reste 282 zéros.",
+  "legende_titre": "Une machine énorme, un écart énorme",
+  "lecture": [
+   "La petite barre du haut a 18 zéros : 9 en bleu pour les ordinateurs, 9 en violet pour les divisions par seconde.",
+   "La grande barre du bas a 300 zéros, la taille du nombre d’essais.",
+   "La partie bleue de la grande barre est ce que la machine couvre : 18 zéros.",
+   "La partie orange est ce qui reste : 282 zéros."
+  ],
+  "a_voir": "Les 18 zéros de la machine sont minuscules à côté des 300 zéros des essais."
+ },
+ {
+  "code": "53-167",
+  "a_dire": "La taille d’une clé se donne en chiffres décimaux ou en bits : 600 chiffres valent environ 2 048 bits, et chaque chiffre demande un peu plus de 3 bits.",
+  "legende_titre": "600 chiffres, 2 048 bits",
+  "lecture": [
+   "La règle bleue du haut compte la taille de n en chiffres décimaux, jusqu’à 600.",
+   "La règle violette du bas compte la même taille en bits, jusqu’à 2 048.",
+   "Le trait vert en pointillés relie les deux bouts : c’est la même clé.",
+   "Chaque chiffre décimal demande un peu plus de 3 bits."
+  ],
+  "a_voir": "Deux unités différentes décrivent la même taille de clé."
+ }
+]

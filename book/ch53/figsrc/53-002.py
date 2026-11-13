@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+y, h = 24, 12
+box(ax, 2, y, 22, h, 'fixe', label='ALGEBRE')
+box(ax, 33, y, 22, h, 'sujet', label='BMHFCSF')
+box(ax, 64, y, 22, h, 'resultat', label='ALGEBRE')
+arrow(ax, (24.5, y + 6), (32.5, y + 6), 'varie')
+arrow(ax, (55.5, y + 6), (63.5, y + 6), 'varie')
+box(ax, 12, 48, 64, 9, 'autre', dash=True, label="procédé partagé d'avance")
+line(ax, [(28.5, 48), (28.5, y + 7)], 'autre', dash=True)
+line(ax, [(59.5, 48), (59.5, y + 7)], 'autre', dash=True)
+text(ax, 28.5, 19, 'lettre suivante', 'varie', 's')
+text(ax, 59.5, 19, 'lettre précédente', 'varie', 's')
+text(ax, 13, 40, 'Léa', 'encre', 's')
+text(ax, 44, 40, 'circule', 'encre', 's')
+text(ax, 75, 40, 'Hugo', 'encre', 's')
+save(fig, '53-002')

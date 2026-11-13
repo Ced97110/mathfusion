@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 26, 26, 12, 'fixe', label='message\nclair')
+box(ax, 59, 26, 26, 12, 'sujet', label='message\nchiffré')
+arrow(ax, (29.5, 35), (58.5, 35), 'resultat', lw=1.4)
+arrow(ax, (58.5, 29), (29.5, 29), 'varie', lw=1.4)
+text(ax, 44, 42, 'chiffrer : facile', 'resultat', 's')
+text(ax, 44, 22, 'défaire : difficile', 'varie', 's')
+text(ax, 44, 55, "l'espion connaît la clé", 'encre', 'm')
+box(ax, 20, 4, 48, 9, 'autre', label='sauf Léa : clé gardée', size='s')
+save(fig, '53-008')

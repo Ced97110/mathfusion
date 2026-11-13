@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 10, 44, 18, 14, 'sujet', label='ℤ', size='xl')
+text(ax, 36, 51, '/', 'encre', 'xl')
+box(ax, 44, 44, 26, 14, 'varie', label='26ℤ', size='xl')
+text(ax, 19, 38, 'les entiers', 'sujet', 's')
+text(ax, 57, 38, 'multiples de 26', 'varie', 's')
+text(ax, 44, 65, 'confondus : différence ∈ 26ℤ', 'encre', 's')
+line(ax, [(36, 63), (36, 57)], 'fixe')
+text(ax, 44, 27, 'exemple : 29 − 3 = 26', 'encre', 'm')
+text(ax, 44, 19, 'donc 3 et 29 : même place', 'resultat', 'm')
+text(ax, 44, 8, '26 places : 0 à 25', 'encre', 'm')
+save(fig, '53-018')

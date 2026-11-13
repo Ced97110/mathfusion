@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+# couple 1 : le cas de Léa et Hugo
+box(ax, 2, 52, 22, 9, 'fixe', label='ALGEBRE')
+box(ax, 64, 52, 22, 9, 'fixe', label='DOJHEUH')
+arrow(ax, (26, 59), (62, 59), 'varie')
+arrow(ax, (62, 54), (26, 54), 'sujet')
+text(ax, 44, 63, 'chiffrement : ajouter 3', 'varie', 's')
+text(ax, 44, 49.5, 'déchiffrement : retrancher 3', 'sujet', 's', weight='bold')
+# couple 2 : autre couple de réciproques
+line(ax, [(2, 40), (86, 40)], 'fixe', lw=0.5, dash=True)
+text(ax, 44, 35, 'un autre couple de réciproques', 'fixe', 's')
+box(ax, 2, 12, 14, 9, 'fixe', label='5')
+box(ax, 37, 12, 14, 9, 'fixe', label='10')
+box(ax, 72, 12, 14, 9, 'fixe', label='5')
+arrow(ax, (17, 19), (36, 19), 'varie')
+arrow(ax, (52, 19), (71, 19), 'sujet')
+text(ax, 26.5, 23, 'doubler', 'varie', 's')
+text(ax, 61.5, 23, 'moitié', 'sujet', 's')
+save(fig, '53-027')

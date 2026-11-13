@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+assert (8 % 5, 8 % 11, 10 % 5, 10 % 11) == (3, 8, 0, 10)
+text(ax, 50, 60, 'reste par 5', 'sujet', 's')
+text(ax, 70, 60, 'reste par 11', 'autre', 's')
+box(ax, 2, 40, 22, 12, 'fixe', label='case 8', size='m')
+arrow(ax, (25, 46), (39, 46), 'varie')
+box(ax, 41, 40, 18, 12, 'resultat', label='3', size='l')
+box(ax, 62, 40, 18, 12, 'resultat', label='8', size='l')
+text(ax, 44, 33, 'les deux ont un inverse : case 8 aussi', 'resultat', 's') if False else None
+text(ax, 44, 34, 'les deux inversibles → inversible', 'resultat', 's')
+box(ax, 2, 18, 22, 12, 'fixe', label='case 10', size='m')
+arrow(ax, (25, 24), (39, 24), 'varie')
+box(ax, 41, 18, 18, 12, 'limite', label='0', size='l')
+box(ax, 62, 18, 18, 12, 'resultat', label='10', size='l')
+text(ax, 44, 12, '0 sans inverse → pas inversible', 'limite', 's')
+text(ax, 44, 4, r'$(p-1)(q-1) = 4 \times 10 = 40$', 'encre', 's')
+save(fig, '53-109')

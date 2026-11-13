@@ -1,0 +1,274 @@
+[
+ {
+  "code": "53-049",
+  "a_dire": "Avec a = 5 et b = 3, ALGEBRE devient DGHXIKX : chaque numéro est multiplié par 5, on ajoute 3, on garde le reste par 26 ; E, présent deux fois, donne X deux fois.",
+  "legende_titre": "Le mot ALGEBRE passé au chiffre affine",
+  "lecture": [
+   "La rangée du haut donne chaque lettre de ALGEBRE avec son numéro.",
+   "La bande orange au milieu est l’action : multiplier par 5, ajouter 3, garder le reste par 26.",
+   "La rangée du bas donne la lettre chiffrée et son numéro, ce qui forme DGHXIKX.",
+   "Les deux cases violettes sont les deux E. Elles donnent le même X."
+  ],
+  "a_voir": "Chaque lettre passe par la même bande, et les deux E donnent la même lettre X."
+ },
+ {
+  "code": "53-050",
+  "a_dire": "Avec a = 2 et b = 3, les lettres A et N donnent toutes deux D : le message ne peut plus être déchiffré.",
+  "legende_titre": "Deux lettres qui arrivent sur la même case",
+  "lecture": [
+   "La case bleue en haut est la lettre A, de numéro 0. La case violette en bas est la lettre N, de numéro 13.",
+   "Chaque flèche orange porte le calcul de sa lettre : 2 fois 0 plus 3 donne 3, et 2 fois 13 plus 3 donne 29, de reste 3.",
+   "La grande case rouge à droite est la lettre D, de numéro 3 : les deux flèches y arrivent."
+  ],
+  "a_voir": "Deux lettres différentes arrivent sur la même case D."
+ },
+ {
+  "code": "53-051",
+  "a_dire": "L’inverse de a modulo 26 est le nombre qui défait la multiplication par a : pour a = 5, c’est 21, car 5 fois 21 vaut 105, soit 4 fois 26 plus 1.",
+  "legende_titre": "Un nombre qui défait la multiplication par 5",
+  "lecture": [
+   "La case bleue de gauche est un numéro p. La flèche orange le multiplie par 5 et donne la case orange.",
+   "La flèche verte multiplie par 21 et ramène la case verte de droite, qui est de nouveau p.",
+   "La case verte du bas vérifie le calcul : 5 fois 21 vaut 105, qui est 4 fois 26 plus 1."
+  ],
+  "a_voir": "Multiplier par 5 puis par 21 ramène au numéro de départ."
+ },
+ {
+  "code": "53-052",
+  "a_dire": "Le signe ≡ dit que deux nombres ont le même reste par 26 : 105 et 1 tombent sur la même case de l’horloge.",
+  "legende_titre": "Deux nombres, une seule case de l’horloge",
+  "lecture": [
+   "Les 26 petits ronds gris sont les 26 cases de l’horloge. Le 0 est en haut.",
+   "Le rond vert est la case 1. La flèche bleue part du nombre 1 et arrive sur lui.",
+   "La flèche orange part du nombre 105 et arrive sur le même rond.",
+   "Au centre, 105 ≡ 1 se lit : même case. Sous le cercle, 105 vaut 4 tours de 26 plus 1."
+  ],
+  "a_voir": "Les deux flèches, de 1 et de 105, arrivent sur le même rond vert."
+ },
+ {
+  "code": "53-053",
+  "a_dire": "Pour a = 2, la méthode échoue : tous les restes de 2 fois un nombre sont pairs, donc le reste 1 n’est jamais atteint et a n’a pas d’inverse.",
+  "legende_titre": "Pourquoi on ne peut pas diviser par 2",
+  "lecture": [
+   "La bande montre les 26 restes possibles, de 0 à 25.",
+   "Les cases orange sont les restes d’un produit de 2 par un nombre : ce sont tous des nombres pairs.",
+   "La case rouge est le reste 1. Il est impair, donc aucune case orange ne l’atteint."
+  ],
+  "a_voir": "La case rouge 1 est entourée de cases grises ou orange, jamais atteinte par les produits de 2."
+ },
+ {
+  "code": "53-054",
+  "a_dire": "On trouve l’inverse de 5 en trois temps : diviser 26 par 5 pour avoir le reste 1, écrire 1 comme 26 moins 5 fois 5, puis lire le coefficient de 5, moins 5, auquel on ajoute 26 pour obtenir 21.",
+  "legende_titre": "Chercher l’inverse de 5 en trois lignes",
+  "lecture": [
+   "La case bleue du haut est la division de 26 par 5 : 26 égale 5 fois 5 plus 1.",
+   "La case orange isole le reste 1 : 1 égale 26 moins 5 fois 5.",
+   "La case verte lit le coefficient de 5, qui est moins 5, puis ajoute 26 pour obtenir 21.",
+   "La case grise du bas vérifie : 5 fois 21 vaut 105, soit 4 fois 26 plus 1."
+  ],
+  "a_voir": "Chaque ligne se déduit de la précédente, jusqu’au nombre 21."
+ },
+ {
+  "code": "53-055",
+  "a_dire": "Si le PGCD de a et de 26 est d plus grand que 1, alors a fois 26 divisé par d est un multiple de 26 : ajouter 26 divisé par d à un numéro ne change pas l’image, donc deux lettres ont la même image.",
+  "legende_titre": "Une preuve en trois étapes pour a = 4",
+  "lecture": [
+   "La case bleue du haut est le départ : a vaut 4, le PGCD de 4 et de 26 vaut 2, et on le note d.",
+   "La case orange, au trait épais, porte tout le poids : 4 fois 13 vaut 52, qui est 2 fois 26. Le nombre 13 vient de 26 divisé par d.",
+   "La case rouge du bas est l’arrivée : les lettres 0 et 13 ont la même image."
+  ],
+  "a_voir": "L’étape orange au trait épais est celle qui relie le départ à l’arrivée."
+ },
+ {
+  "code": "53-056",
+  "a_dire": "Le chiffre affine se déchiffre si et seulement si le PGCD de a et de 26 vaut 1 ; sinon deux lettres ont la même image.",
+  "legende_titre": "Deux cas, et rien d’autre",
+  "lecture": [
+   "La case bleue du haut est le PGCD de a et de 26. Deux branches en partent, car il vaut 1 ou plus que 1.",
+   "À gauche, en vert : PGCD égal à 1. Avec a égal à 5, l’inverse est 21 et le message se déchiffre.",
+   "À droite, en rouge : PGCD plus grand que 1. Avec a égal à 2, A et N ont la même image et le message ne se déchiffre pas."
+  ],
+  "a_voir": "Il y a seulement deux branches, une verte et une rouge."
+ },
+ {
+  "code": "53-057",
+  "a_dire": "Pour déchiffrer, on fait les actions du chiffrement dans l’ordre inverse : on retranche b, puis on multiplie par l’inverse de a, en gardant le reste par 26.",
+  "legende_titre": "Chiffrer, puis revenir en sens inverse",
+  "lecture": [
+   "La rangée bleue du haut chiffre la lettre de numéro 2 avec a égal à 3 et b égal à 7 : on multiplie par 3 et on obtient 6, puis on ajoute 7 et on obtient 13.",
+   "La rangée verte du bas repart de 13, vers la gauche : on retranche 7 et on obtient 6, puis on multiplie par 9 et on obtient 54, de reste 2.",
+   "Le nombre 9 est l’inverse de 3, car 3 fois 9 vaut 27, soit 26 plus 1."
+  ],
+  "a_voir": "La rangée verte suit les mêmes cases que la rangée bleue, dans l’autre sens, et revient à 2."
+ },
+ {
+  "code": "53-058",
+  "a_dire": "Pour a = 5 et b = 3, la formule de déchiffrement devient 21c + 15 modulo 26 ; elle redonne bien L à partir de G.",
+  "legende_titre": "La formule de déchiffrement avec les nombres 5 et 3",
+  "lecture": [
+   "Les trois cases du haut développent la formule : 21 fois (c moins 3) donne 21c moins 63, puis moins 63 plus 78 donne 15.",
+   "La case verte est le résultat : 21c plus 15, modulo 26.",
+   "La rangée du bas essaie la formule sur la lettre G, de numéro 6 : 21 fois 6 plus 15 vaut 141, de reste 11, qui est la lettre L."
+  ],
+  "a_voir": "La lettre G de départ devient la lettre L à l’arrivée."
+ },
+ {
+  "code": "53-059",
+  "a_dire": "Parmi les nombres de 1 à 25, 12 sont premiers avec 26 ; ce nombre se note φ(26).",
+  "legende_titre": "Compter les multiplicateurs possibles",
+  "lecture": [
+   "La bande montre les nombres de 1 à 25, un par case.",
+   "Les cases rouges sont les nombres retirés : les 12 nombres pairs et le nombre 13.",
+   "Les cases vertes sont les 12 nombres qui restent, écrits au-dessus de leur case. Leur nombre se note φ(26)."
+  ],
+  "a_voir": "Il reste 12 cases vertes parmi les 25."
+ },
+ {
+  "code": "53-060",
+  "a_dire": "Le nombre de clés affines est le nombre de multiplicateurs fois le nombre de décalages : 12 fois 26, soit 312.",
+  "legende_titre": "Multiplicateurs fois décalages",
+  "lecture": [
+   "Le petit tableau du haut est le cas simple : 3 multiplicateurs et 4 décalages donnent 12 cases, donc 12 clés.",
+   "Le grand tableau a 12 lignes, une par multiplicateur, et 26 colonnes, une par décalage.",
+   "La ligne orange montre qu’un seul multiplicateur donne 26 clés, comme le chiffre de César.",
+   "Le nombre de cases du grand tableau est 12 fois 26, soit 312."
+  ],
+  "a_voir": "Chaque case du grand tableau est une clé, et il y en a 12 fois 26."
+ },
+ {
+  "code": "53-061",
+  "a_dire": "Une attaque par essai de toutes les clés essaie un à un tous les décalages : avec 26 clés, un seul donne un mot lisible, ici ALGEBRE avec le décalage 3.",
+  "legende_titre": "Essayer toutes les clés une par une",
+  "lecture": [
+   "La case rouge du haut est le message intercepté : DOJHEUH.",
+   "Les 26 cases grises sont les 26 décalages, de 0 à 25. L’espion les essaie tous.",
+   "La case verte est le décalage 3. Elle donne le mot lisible ALGEBRE.",
+   "Le texte du bas rappelle que le chiffre affine demande 312 essais."
+  ],
+  "a_voir": "Une seule des 26 cases donne un mot lisible."
+ },
+ {
+  "code": "53-062",
+  "a_dire": "Passer de 26 à 312 clés multiplie le nombre de clés par 12, mais un ordinateur essaie les 312 clés en un millième de seconde : ce nombre ne compte que par rapport à la vitesse de l’attaquant.",
+  "legende_titre": "312 clés, face à la vitesse d’un ordinateur",
+  "lecture": [
+   "La petite barre bleue représente les 26 clés du chiffre de César.",
+   "La longue barre orange représente les 312 clés du chiffre affine : 12 fois 26.",
+   "La case grise du bas donne le temps d’un élève : 26 clés en une minute.",
+   "La case orange du bas donne le temps d’un ordinateur : 312 clés en un millième de seconde."
+  ],
+  "a_voir": "La barre orange est bien plus longue que la bleue, et pourtant l’ordinateur la parcourt en un millième de seconde."
+ },
+ {
+  "code": "53-063",
+  "a_dire": "Dans un chiffre monoalphabétique, une lettre claire a toujours la même lettre chiffrée : avec la clé 3, E donne toujours H.",
+  "legende_titre": "Une lettre claire, une seule image",
+  "lecture": [
+   "La rangée bleue du haut est le mot ALGEBRE, lettre par lettre.",
+   "La rangée verte du bas est le mot chiffré DOJHEUH, avec la clé 3.",
+   "Les deux cases violettes du haut sont les deux E. Leurs flèches épaisses arrivent sur deux cases violettes H."
+  ],
+  "a_voir": "Les deux E du haut donnent la même lettre H en bas."
+ },
+ {
+  "code": "53-064",
+  "a_dire": "En français, les lettres n’ont pas la même fréquence : dans 600 lettres, E apparaît environ 100 fois, une lettre sur six, alors que chaque lettre apparaîtrait un peu plus de 23 fois si toutes étaient égales.",
+  "legende_titre": "Le E revient bien plus souvent que les autres",
+  "lecture": [
+   "La grande barre bleue est le E dans un texte de 600 lettres : environ 100 fois, soit une lettre sur six.",
+   "La petite barre grise est ce que ferait chaque lettre si toutes étaient égales : environ 23 fois.",
+   "Le trait orange en pointillés garde la hauteur de la petite barre pour comparer."
+  ],
+  "a_voir": "La barre du E dépasse bien la ligne orange."
+ },
+ {
+  "code": "53-065",
+  "a_dire": "L’analyse des fréquences s’arrête quand une hypothèse fixe la clé et que le texte déchiffré se lit ; sinon on essaie la lettre la plus fréquente suivante.",
+  "legende_titre": "Les étapes de l’analyse des fréquences",
+  "lecture": [
+   "Les cases du haut donnent les étapes dans l’ordre : H est la plus fréquente, on suppose que E est devenu H, on calcule b égal à 7 moins 4, soit 3, puis on déchiffre.",
+   "En bas à gauche, la case verte : le texte est lisible, on s’arrête.",
+   "En bas à droite, la case rouge : le texte est illisible. La flèche rouge remonte à l’étape de l’hypothèse, avec la lettre suivante."
+  ],
+  "a_voir": "La flèche rouge ramène à l’hypothèse tant que le texte n’est pas lisible."
+ },
+ {
+  "code": "53-066",
+  "a_dire": "L’analyse des fréquences est une méthode très ancienne : des savants arabes l’ont employée au neuvième siècle, Alberti et Viète aux quinzième et seizième siècles.",
+  "legende_titre": "Une méthode vieille de plus de mille ans",
+  "lecture": [
+   "La droite graduée va de l’an 800 à l’an 1600.",
+   "La case bleue marque le neuvième siècle, avec les savants arabes.",
+   "La case orange marque le quinzième siècle, avec Alberti. La case violette marque le seizième siècle, avec Viète."
+  ],
+  "a_voir": "Les trois cases sont à des dates très éloignées de nos ordinateurs."
+ },
+ {
+  "code": "53-067",
+  "a_dire": "Si H est la lettre la plus fréquente, on suppose que E est devenu H : 4 plus b égale 7, donc b égale 3.",
+  "legende_titre": "Calculer la clé à partir de H",
+  "lecture": [
+   "La droite graduée porte les numéros de 3 à 8.",
+   "La case bleue est la lettre E, au numéro 4. La case verte est la lettre H, au numéro 7.",
+   "L’arc orange va de 4 à 7 : il représente le décalage b à ajouter.",
+   "En haut, le calcul donne 4 plus b égale 7, donc b égale 3."
+  ],
+  "a_voir": "Pour aller de 4 à 7, l’arc orange fait 3 crans."
+ },
+ {
+  "code": "53-068",
+  "a_dire": "Chiffrer les lettres deux par deux change l’unité chiffrée : on passe de 26 lettres à 26 fois 26, soit 676 paires, chacune plus rare qu’une lettre.",
+  "legende_titre": "Chiffrer par paires au lieu de lettres seules",
+  "lecture": [
+   "Les cases du haut découpent ALGEBRE en paires : AL, GE, BR, puis E seule.",
+   "La fine bande bleue représente les 26 lettres possibles.",
+   "Le grand carré violet représente les 676 paires possibles : 26 lignes de 26 cases."
+  ],
+  "a_voir": "Le carré de paires est beaucoup plus grand que la bande de lettres."
+ },
+ {
+  "code": "53-069",
+  "a_dire": "Le chiffrement par matrice traite deux lettres à la fois : une matrice 2 × 2 transforme deux numéros en deux numéros, et chaque numéro obtenu dépend des deux numéros de départ.",
+  "legende_titre": "Une matrice qui chiffre deux lettres à la fois",
+  "lecture": [
+   "Les quatre cases bleues sont la matrice : 3 et 3 sur la première ligne, 2 et 5 sur la deuxième.",
+   "Les deux cases orange sont la paire ES, de numéros 4 et 18.",
+   "Les deux cases vertes sont le résultat : 14 et 20, soit la paire OU.",
+   "À droite, chaque calcul utilise les deux numéros de départ et garde le reste par 26."
+  ],
+  "a_voir": "Chaque case verte est calculée avec les deux cases orange."
+ },
+ {
+  "code": "53-070",
+  "a_dire": "Dans un chiffre polyalphabétique, une même lettre claire peut avoir plusieurs images : avec la matrice choisie, E donne O dans ES et M dans EA.",
+  "legende_titre": "La même lettre, deux images différentes",
+  "lecture": [
+   "La rangée du haut chiffre la paire ES : la case orange E, la case bleue S, et leur image OU.",
+   "La rangée du bas chiffre la paire EA, avec la même case orange E : son image est MI.",
+   "Les deux cases violettes, O en haut et M en bas, sont les deux images de la lettre E."
+  ],
+  "a_voir": "Le même E donne O en haut et M en bas."
+ },
+ {
+  "code": "53-071",
+  "a_dire": "Si le déterminant de la matrice n’est pas premier avec 26, le chiffre ne se défait pas : avec la matrice de déterminant 2, les paires AA et NA donnent la même paire AA.",
+  "legende_titre": "Une matrice de déterminant 2 qui échoue",
+  "lecture": [
+   "Les quatre cases bleues du haut sont la matrice : 2 et 0 sur la première ligne, 0 et 1 sur la deuxième. À droite, son déterminant vaut 2, qui n’est pas premier avec 26.",
+   "La case bleue de gauche est la paire AA, de numéros 0 et 0. La case violette est la paire NA, de numéros 13 et 0.",
+   "La grande case rouge est leur image commune : AA. Pour NA, 2 fois 13 vaut 26, qui devient 0."
+  ],
+  "a_voir": "Deux paires différentes arrivent dans la même case rouge."
+ },
+ {
+  "code": "53-072",
+  "a_dire": "Les paires de lettres ont aussi des fréquences inégales : sur les 676 paires possibles, ES est fréquente et QZ n’existe pas, donc l’analyse des fréquences s’adapte.",
+  "legende_titre": "Les paires de lettres ne sont pas toutes égales",
+  "lecture": [
+   "Le grand carré gris contient les 676 paires possibles : la ligne donne la première lettre, la colonne donne la deuxième.",
+   "La case verte est la paire ES, qui est fréquente.",
+   "La case rouge est la paire QZ, qui n’existe pas."
+  ],
+  "a_voir": "Dans le carré, une case verte côtoie une case rouge : toutes les paires ne se valent pas."
+ }
+]

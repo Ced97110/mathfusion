@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'Fabriquer', 'varie', 'm')
+box(ax, 3, 36, 20, 12, 'fixe', label='5 ; 11', size='m')
+box(ax, 34, 36, 22, 12, 'fixe', label='55 ; 40', size='m')
+box(ax, 66, 36, 18, 12, 'sujet', label='27', size='m')
+text(ax, 75, 52, r'$d$', 'sujet', 'm')
+arrow(ax, (24, 42), (33, 42), 'varie')
+arrow(ax, (57, 42), (65, 42), 'varie')
+text(ax, 44, 24, 'Utiliser : jamais 5 ni 11', 'encre', 'm')
+box(ax, 6, 6, 36, 12, 'resultat', label='chiffrer : 55 ; 3', size='s')
+box(ax, 46, 6, 38, 12, 'resultat', label='déchiffrer : 27 ; 55', size='s')
+save(fig, '53-107')

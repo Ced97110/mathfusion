@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+xs = (2, 33, 64)
+caps = ('1. la signature', r'2. puissance $e = 3$', r'3. compare à $m$')
+labs = (r'$s = 2$', r'$2^{3} = 8$', r'$m = 8$')
+roles = ('sujet', 'varie', 'sujet')
+for x, c, l, r in zip(xs, caps, labs, roles):
+    text(ax, x + 11, 56, c, r, 's')
+    box(ax, x, 38, 22, 12, r, label=l)
+arrow(ax, (24.5, 44), (32.5, 44), 'fixe')
+arrow(ax, (55.5, 44), (63.5, 44), 'fixe')
+text(ax, 44, 33, 'reste par 55', 'varie', 's')
+arrow(ax, (75, 37), (75, 22), 'resultat')
+box(ax, 20, 8, 66, 13, 'resultat', label=r'$8 = 8$ : signature acceptée')
+save(fig, '53-148')

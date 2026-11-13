@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 14, 68, 46, 10, 'sujet', label='2¹⁴ = 16 384')
+arrow(ax, (37, 68), (37, 59), 'varie')
+text(ax, 62, 63.5, 'diviser par 15', 'varie', 's', ha='left')
+box(ax, 8, 49, 58, 10, 'fixe', label='16 384 = 1 092 × 15 + 4')
+arrow(ax, (37, 49), (37, 40), 'varie')
+box(ax, 14, 30, 46, 10, 'limite', label='reste 4, pas 1')
+arrow(ax, (37, 30), (37, 21), 'varie')
+box(ax, 8, 11, 58, 10, 'resultat', label='15 n’est pas premier')
+box(ax, 68, 11, 18, 10, 'fixe', fill=False, dash=True, label='3 × 5 ?', size='s')
+text(ax, 77, 5, 'non cherché', 'fixe', 's')
+save(fig, '53-180')
