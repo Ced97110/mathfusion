@@ -9,8 +9,11 @@ export default function ChapterBody({ file }) {
   const [state, setState] = useState('loading');
   useEffect(() => {
     let alive = true;
-    fetch(`/chapters/${file}`)
-      .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); })
+    // Vercel (trailingSlash) serves public/chapters/chNN.html at /chapters/chNN/ only:
+    // try the file name first, then the clean URL.
+    const get = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); });
+    get(`/chapters/${file}`)
+      .catch(() => get(`/chapters/${file.replace(/\.html$/, '/')}`))
       .then((html) => {
         if (!alive || !ref.current) return;
         ref.current.innerHTML = html;
