@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+cx, cy, r = 34, 34, 28
+c = lambda t: (cx + r * math.cos(math.radians(t)), cy + r * math.sin(math.radians(t)))
+line(ax, [c(t) for t in range(0, 361, 4)], 'fixe')
+line(ax, [(4, cy), (84, cy)], 'fixe', lw=0.5); line(ax, [(cx, 4), (cx, 62)], 'fixe', lw=0.5)
+line(ax, [(4, cy + r), (84, cy + r)], 'fixe', lw=1.0)
+text(ax, 80, cy + r + 3, 'y = 1', 'fixe', 's')
+Q = (cx + r / math.tan(math.radians(60)), cy + r); P = c(60)
+line(ax, [(cx, cy), Q], 'sujet', lw=1.3)
+line(ax, [(cx, cy + r), Q], 'resultat', lw=2.2)
+disc(ax, P[0], P[1], 1.5, 'sujet'); disc(ax, Q[0], Q[1], 1.5, 'resultat')
+line(ax, [(cx + 8 * math.cos(math.radians(t)), cy + 8 * math.sin(math.radians(t))) for t in range(0, 61, 5)], 'fixe', lw=0.7)
+text(ax, cx + 12, cy + 3, '60°', 'fixe', 's'); text(ax, cx - 3, cy - 3, 'O', 'fixe', 's'); text(ax, P[0] - 4, P[1] - 1, 'P', 'sujet', 's')
+text(ax, cx + 9, cy + r + 4.5, 'cotan x ≈ 0,577', 'resultat', 's')
+save(fig, '30-063')

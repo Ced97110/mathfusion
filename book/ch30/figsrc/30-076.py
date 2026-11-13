@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+O, A, T = (6, 8), (30, 8), (30, 49.57)
+line(ax, [O, A], 'fixe', lw=1.6); line(ax, [A, T], 'autre', lw=1.6); line(ax, [O, T], 'sujet', lw=2.2)
+line(ax, [(26, 8), (26, 12), (30, 12)], 'fixe')
+text(ax, 18, 4.5, '1', 'fixe', 's'); text(ax, 33.5, 29, r'$\sqrt{3}$', 'autre', 's', ha='left'); text(ax, 14, 33, 'OT', 'sujet', 's')
+box(ax, 44, 38, 42, 18, 'sujet'); text(ax, 65, 50.5, 'chemin 1 : cosinus', 'sujet', 's'); text(ax, 65, 43, '1 / 0,5 = 2', 'sujet', 'm')
+box(ax, 44, 14, 42, 21, 'autre'); text(ax, 65, 30, 'chemin 2 : Pythagore', 'autre', 's')
+text(ax, 65, 24, r'OT$^2$ = 1 + 3 = 4', 'autre', 's'); text(ax, 65, 18.5, 'OT = 2', 'autre', 'm')
+box(ax, 44, 2, 42, 9, 'resultat', label='même résultat : 2', size='s')
+save(fig, '30-076')

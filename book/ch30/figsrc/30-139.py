@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+f = numberline(ax, 6, 76, 22, 0, 40, step=8, arrow_right=True)
+brace(ax, f(0), f(32), 28, 'fixe', label=r'$4\times 8$', down=False)
+brace(ax, f(32), f(37), 28, 'varie', label='reste 5', down=False)
+disc(ax, f(37), 22, 1.4, 'varie')
+text(ax, f(37), 15.5, '37', 'varie', 'm')
+disc(ax, f(5), 22, 1.4, 'resultat')
+text(ax, f(5), 15.5, '5', 'resultat', 'm')
+arrow(ax, (f(37), 12), (f(5), 12), 'resultat', curve=-0.25)
+text(ax, f(21), 3.5, 'même hauteur de la cabine', 'resultat', 's')
+save(fig, '30-139')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$x=\pi/2$ (90°)', 'encre', 'l')
+box(ax, 3, 6, 39, 42, 'resultat'); box(ax, 46, 6, 39, 42, 'limite')
+text(ax, 22.5, 41, 'cotan = cos / sin', 'resultat', 's')
+text(ax, 22.5, 29, '0 ÷ 1 = 0', 'resultat', 'l')
+text(ax, 22.5, 15, 'définie, vaut 0', 'resultat', 's')
+text(ax, 65.5, 41, '1 / tan x', 'limite', 's')
+text(ax, 65.5, 29, "tan 90° n'existe pas", 'limite', 's')
+text(ax, 65.5, 15, "n'a pas de sens", 'limite', 's')
+save(fig, '30-071')

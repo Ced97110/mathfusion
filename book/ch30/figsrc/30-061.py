@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+s = 45; O = (8, 10); H_ = (8 + 0.5 * s, 10); P = (8 + 0.5 * s, 10 + 0.866 * s)
+poly(ax, [O, H_, P], 'sujet')
+line(ax, [O, H_], 'varie', lw=1.8); line(ax, [H_, P], 'autre', lw=1.8)
+line(ax, [(H_[0] - 2, 10), (H_[0] - 2, 12), (H_[0], 12)], 'fixe', lw=0.6)
+line(ax, [(8 + 7 * math.cos(math.radians(t)), 10 + 7 * math.sin(math.radians(t))) for t in range(0, 61, 5)], 'fixe', lw=0.7)
+text(ax, 17.5, 15.5, '60°', 'fixe', 's')
+text(ax, 8 + 11, 5.5, 'OH = 0,5', 'varie', 's'); text(ax, H_[0] + 2, 30, 'HP ≈ 0,866', 'autre', 's', ha='left')
+text(ax, 14, 38, 'OP = 1', 'sujet', 's')
+text(ax, 62, 50, 'cotan x', 'encre', 'm'); text(ax, 62, 38, 'OH', 'varie', 'm'); line(ax, [(55, 33), (69, 33)], 'encre'); text(ax, 62, 28, 'HP', 'autre', 'm')
+text(ax, 62, 17, '≈ 0,577', 'resultat', 'm')
+save(fig, '30-061')

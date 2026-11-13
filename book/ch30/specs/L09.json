@@ -1,0 +1,186 @@
+[
+ {
+  "code": "30-128",
+  "a_dire": "Un exemple de sinus transformé se trace avec cinq points : ils donnent les quatre réglages A, B, C, D.",
+  "legende_titre": "Une courbe réglée par quatre nombres",
+  "lecture": [
+   "La courbe bleue est la courbe de l'exemple.",
+   "Les cinq points orange sont les points repérés, avec leur position sur l'axe horizontal.",
+   "La ligne grise en pointillés est la ligne médiane, à la hauteur 1.",
+   "La flèche orange mesure l'amplitude A = 2."
+  ],
+  "a_voir": "Les cinq points sont sur la courbe : trois sur la ligne médiane, un en haut à 3, un en bas à −1."
+ },
+ {
+  "code": "30-129",
+  "a_dire": "Chaque point du sinus de départ est transformé par la même règle : il arrive à un nouveau point.",
+  "legende_titre": "Cinq points, cinq arrivées",
+  "lecture": [
+   "À gauche, dans les cases grises, vous lisez les cinq points de départ.",
+   "À droite, dans les cases bleues, vous lisez les cinq points transformés.",
+   "Chaque flèche orange relie un point de départ à son point transformé."
+  ],
+  "a_voir": "Les trois points de départ à la hauteur 0 arrivent tous à la hauteur 1."
+ },
+ {
+  "code": "30-130",
+  "a_dire": "Sur un seul dessin, on lit le décalage C, le décalage D, l'amplitude A et la période.",
+  "legende_titre": "Quatre réglages lus sur le même dessin",
+  "lecture": [
+   "Les pointillés gris sont le sinus de départ ; la courbe bleue est la courbe transformée.",
+   "Le point violet S est le point de départ déplacé ; la flèche orange C mesure le déplacement vers la droite.",
+   "La ligne verte est la ligne médiane ; la flèche orange A va de cette ligne au sommet.",
+   "La double flèche du bas mesure une période."
+  ],
+  "a_voir": "Le point de départ (0, 0) devient le point S, à droite et plus haut."
+ },
+ {
+  "code": "30-131",
+  "a_dire": "On compare le dessin à un calcul fait en x = 0 : les deux donnent −1.",
+  "legende_titre": "Le contrôle en un point",
+  "lecture": [
+   "La courbe bleue part du point vert, à la hauteur −1 en x = 0.",
+   "La case orange calcule l'angle en x = 0.",
+   "La case bleue donne le sinus de cet angle.",
+   "La case verte donne la hauteur y, la même que sur le dessin."
+  ],
+  "a_voir": "Le calcul et le dessin donnent le même nombre, −1."
+ },
+ {
+  "code": "30-132",
+  "a_dire": "Pour passer d'une situation à la formule, on lit quatre nombres : le centre, le rayon, la période et le moment de montée.",
+  "legende_titre": "De la roue à la formule",
+  "lecture": [
+   "Le cercle gris est la roue ; la flèche orange mesure la hauteur du centre, 22 m.",
+   "La flèche bleue est le rayon, 20 m.",
+   "Le point vert, à droite du centre, est la cabine à t = 2, en montée.",
+   "Les quatre cases à droite donnent D, A, B et C ; la case du bas assemble la formule."
+  ],
+  "a_voir": "Chaque nombre de la formule se lit sur la roue ou sur le temps d'un tour."
+ },
+ {
+  "code": "30-133",
+  "a_dire": "On choisit C = 2 parce que la cabine passe sur la ligne médiane en montant après 2 minutes, comme le départ du sinus.",
+  "legende_titre": "Où commence le sinus de la roue",
+  "lecture": [
+   "La courbe bleue est la hauteur de la cabine selon le temps.",
+   "La ligne grise en pointillés est la ligne médiane, à 22 m.",
+   "Les points orange marquent les passages en montant : 2, 10 et 18 ; le plus gros est C = 2.",
+   "Le point gris, en bas à gauche, est la cabine au départ : ce n'est pas là que le sinus commence."
+  ],
+  "a_voir": "Le sinus commence là où la courbe monte en traversant la ligne médiane."
+ },
+ {
+  "code": "30-134",
+  "a_dire": "Dans la formule de la hauteur, h et t changent ; les nombres 20, π/4, 2 et 22 ne changent pas.",
+  "legende_titre": "Ce qui change, ce qui reste",
+  "lecture": [
+   "Les deux cases orange, h et t, sont les nombres qui changent.",
+   "Les quatre cases grises, 20, π/4, 2 et 22, sont les nombres qui décrivent la roue.",
+   "Les deux cases du bas rappellent cette séparation."
+  ],
+  "a_voir": "Seuls h et t changent ; les quatre autres nombres sont les mêmes pour tous les temps."
+ },
+ {
+  "code": "30-135",
+  "a_dire": "On vérifie la formule en deux points dont la hauteur est connue : t = 0 donne 2 et t = 4 donne 42.",
+  "legende_titre": "Deux contrôles de la formule",
+  "lecture": [
+   "La courbe bleue est la hauteur de la cabine selon le temps.",
+   "Le point vert en bas est le contrôle en t = 0 : −20 + 22 = 2.",
+   "Le point vert en haut est le contrôle en t = 4 : 20 + 22 = 42.",
+   "La ligne grise en pointillés est la ligne médiane."
+  ],
+  "a_voir": "Le calcul retrouve la hauteur du bas et celle du sommet."
+ },
+ {
+  "code": "30-136",
+  "a_dire": "À t = 1, la formule et le triangle sur la roue donnent la même hauteur, environ 7,86 m.",
+  "legende_titre": "Deux chemins, un même résultat",
+  "lecture": [
+   "Le cercle gris est la roue ; la ligne bleue, de 20 m, joint le centre à la cabine verte.",
+   "Le côté orange, de 14,14 m, est le côté vertical du triangle.",
+   "La flèche grise de gauche mesure 22 m, la hauteur du centre ; les pointillés verts mesurent la hauteur de la cabine.",
+   "Les cases à droite montrent que 22 − 14,14 donne le même nombre que la formule."
+  ],
+  "a_voir": "La hauteur est 22 moins le côté vertical du triangle : 7,86 m."
+ },
+ {
+  "code": "30-137",
+  "a_dire": "La formule fait pour tous les instants le calcul du triangle : côté vertical, plus ou moins, puis hauteur du centre.",
+  "legende_titre": "La formule fait le calcul du triangle",
+  "lecture": [
+   "Chaque ligne bleue joint le centre à une cabine verte ; le trait orange est le côté vertical du triangle.",
+   "La cabine du bas, à t = 1, est à 7,86 m ; celle du haut, à t = 3, est à 36,14 m.",
+   "La case orange, la case grise et la case verte donnent les trois morceaux de la hauteur."
+  ],
+  "a_voir": "À chaque instant, la hauteur est celle du centre, plus ou moins le côté du triangle."
+ },
+ {
+  "code": "30-138",
+  "a_dire": "Pour t = 3, on enchaîne cinq calculs qui donnent 36,14 m.",
+  "legende_titre": "Le calcul pour t = 3, étape par étape",
+  "lecture": [
+   "La case orange du haut est le temps donné, t = 3.",
+   "Les quatre cases bleues sont les calculs qui se suivent, de haut en bas.",
+   "La case verte du bas est la hauteur obtenue, 36,14."
+  ],
+  "a_voir": "On lit le calcul de haut en bas : on retire 2, on multiplie par π/4, on prend le sinus, on multiplie par 20, on ajoute 22."
+ },
+ {
+  "code": "30-139",
+  "a_dire": "Pour un instant lointain, on retire 8 autant que possible ; le reste donne la même hauteur.",
+  "legende_titre": "Ramener 37 à 5 avec la période",
+  "lecture": [
+   "La droite graduée est le temps, de 0 à 40.",
+   "L'accolade grise couvre 4 fois 8 ; l'accolade orange couvre le reste, 5.",
+   "Le point orange est t = 37 ; le point vert est t = 5.",
+   "La flèche verte dit que les deux points ont la même hauteur."
+  ],
+  "a_voir": "37 et 5 sont à la même place dans le tour, donc à la même hauteur."
+ },
+ {
+  "code": "30-140",
+  "a_dire": "Si A = 0, la formule donne la droite horizontale y = D : il n'y a plus d'oscillation.",
+  "legende_titre": "Une amplitude nulle écrase la courbe",
+  "lecture": [
+   "La courbe grise en pointillés est une courbe qui oscille.",
+   "Les flèches orange la ramènent sur la ligne bleue.",
+   "La ligne bleue, horizontale, est la courbe pour A = 0, à la hauteur D."
+  ],
+  "a_voir": "Quand A vaut 0, toutes les hauteurs sont égales à D."
+ },
+ {
+  "code": "30-141",
+  "a_dire": "Si B = 0, l'angle vaut 0 pour tout x, donc la courbe est la droite y = D.",
+  "legende_titre": "Un angle qui ne bouge plus",
+  "lecture": [
+   "Les cinq points orange du haut sont des valeurs différentes de x.",
+   "Les lignes orange les mènent toutes au même point bleu : l'angle vaut 0.",
+   "La case verte donne le résultat : sin 0 = 0, donc y = D."
+  ],
+  "a_voir": "Quel que soit x, l'angle reste 0, donc la hauteur reste D."
+ },
+ {
+  "code": "30-142",
+  "a_dire": "Pour B = 0, la formule de la période 2π/B devient 2π/0 : aucun nombre ne convient.",
+  "legende_titre": "Pourquoi 2π/0 n'a pas de résultat",
+  "lecture": [
+   "La case bleue du haut est la longueur 2π, environ 6,28, à atteindre.",
+   "Les deux lignes grises montrent que 0 fois un nombre reste 0 : le point orange reste au départ.",
+   "La ligne rouge dit qu'aucun nombre multiplié par 0 ne donne 2π."
+  ],
+  "a_voir": "Des parts de taille 0 ne peuvent pas faire 6,28."
+ },
+ {
+  "code": "30-143",
+  "a_dire": "Une fonction constante n'a pas de plus petit nombre p positif qui convient, donc pas de période.",
+  "legende_titre": "Toujours un plus petit candidat",
+  "lecture": [
+   "La ligne bleue du haut est la fonction constante : f(x + p) = f(x) pour tout p.",
+   "Le point bleu, 0,001, est un candidat ; les points orange sont ses moitiés successives.",
+   "Les flèches orange passent d'un candidat à sa moitié ; le cercle rouge, 0, n'est pas positif."
+  ],
+  "a_voir": "Pour chaque candidat, sa moitié convient aussi et elle est plus petite."
+ }
+]

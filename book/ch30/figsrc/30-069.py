@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+fig, ax = canvas(66)
+O, Hh, P = (10, 14), (64, 14), (64, 45.2)
+line(ax, [O, P], 'fixe'); line(ax, [Hh, P], 'autre', lw=2.2); line(ax, [O, Hh], 'sujet', lw=2.2)
+ax.add_patch(Arc(O, 24, 24, theta1=0, theta2=30, color=COL['varie'], lw=1.2))
+ax.add_patch(Arc(P, 20, 20, theta1=210, theta2=270, color=COL['resultat'], lw=1.2))
+line(ax, [(60, 14), (60, 18), (64, 18)], 'fixe')
+text(ax, 26, 17.5, '$x$', 'varie', 'm')
+text(ax, 55, 27, r'$\pi/2-x$', 'resultat', 's')
+text(ax, 37, 8.5, r'OH = $\cos x$', 'sujet', 's'); text(ax, 66, 30, r'HP = $\sin x$', 'autre', 's', ha='left')
+text(ax, 6, 14, 'O', 'encre', 's'); text(ax, 67, 11, 'H', 'encre', 's'); text(ax, 67, 48, 'P', 'encre', 's')
+text(ax, 4, 62, r'cotan $x$ = OH / HP', 'encre', 's', ha='left')
+text(ax, 4, 56, r'tan($\pi/2-x$) = OH / HP', 'encre', 's', ha='left')
+save(fig, '30-069')

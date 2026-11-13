@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+cx, cy, r = 46, 40, 22
+c = lambda t, R=r: (cx + R * math.cos(math.radians(t)), cy + R * math.sin(math.radians(t)))
+line(ax, [c(t) for t in range(0, 361, 4)], 'fixe')
+P, Q = c(30), c(210)
+line(ax, [P, Q], 'resultat', lw=1.3)
+arc = [c(t, r + 4) for t in range(30, 205, 5)]
+line(ax, arc, 'varie'); arrow(ax, c(200, r + 4), c(210, r + 4), 'varie')
+text(ax, cx, 71, 'demi-tour π', 'varie', 's')
+disc(ax, P[0], P[1], 1.6, 'sujet'); disc(ax, Q[0], Q[1], 1.6, 'autre'); disc(ax, cx, cy, 1.0, 'fixe')
+text(ax, P[0] + 2.5, P[1] + 1, 'P (0,866 ; 0,5)', 'sujet', 's', ha='left')
+text(ax, Q[0] + 3, Q[1] - 7, 'P′ (−0,866 ; −0,5)', 'autre', 's', ha='right')
+text(ax, cx + 3, cy - 3.5, 'O', 'fixe', 's')
+line(ax, [(cx - r - 3, cy), (cx + r + 3, cy)], 'fixe', lw=0.6)
+line(ax, [(cx + 8 * math.cos(math.radians(t)), cy + 8 * math.sin(math.radians(t))) for t in range(0, 31, 2)], 'sujet', lw=1.1)
+text(ax, cx + 13.5, cy + 2.2, '30°', 'sujet', 's')
+text(ax, cx, 10, 'même droite : même pente', 'resultat', 'm')
+text(ax, cx, 4, r'donc $\tan(x+\pi)=\tan x$', 'resultat', 'm')
+save(fig, '30-054')
