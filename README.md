@@ -41,3 +41,14 @@ python3 tools/discretes/build.py <chemin du PDF>
 
 Le script écrit `content/discretes.json` (table des matières), `public/discretes/cNNN.html` (texte du livre)
 et `public/discretes/img/` (formules, encadrés, tableaux et figures découpés du PDF en SVG ; rien n'est redessiné).
+## Section Physique
+
+Le livre « Cause, effets, finalité » (physique et chimie, 136 chapitres) est publié sous `/physique/`.
+Il est converti sans agent par `tools/physique/build.py` :
+
+```
+python3 tools/physique/build.py <chemin du PDF>
+```
+
+Le script écrit `content/physique.json` (parties et chapitres), `public/physique/cNNN.html` (texte du livre)
+et `public/physique/img/` (formules, encadrés et figures découpés du PDF en SVG ; rien n'est redessiné).
