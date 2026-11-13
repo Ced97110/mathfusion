@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+def dot(x, y, role, full=True, r=1.6):
+    ax.add_patch(Circle((x, y), r, ec=COL[role], fc=COL[role] if full else FILL["encre"], lw=0.9, zorder=4))
+text(ax, 44, 64, r'$a < b$', 'sujet', 'xl', weight='bold')
+text(ax, 44, 55, '« strictement inférieur à »', 'sujet', 's')
+box(ax, 2, 4, 41, 42, 'sujet', fill=False); box(ax, 45, 4, 41, 42, 'limite', fill=False)
+text(ax, 22.5, 40, 'inférieur', 'sujet', 'm', weight='bold')
+line(ax, [(7, 24), (38, 24)], 'fixe'); dot(13, 24, 'sujet'); dot(32, 24, 'sujet')
+text(ax, 13, 19, '3', 'sujet', 's'); text(ax, 32, 19, '7', 'sujet', 's')
+arrow(ax, (32, 27), (13, 27), 'resultat', curve=0.4)
+text(ax, 22.5, 9.5, r'$3 < 7$ : vrai', 'resultat', 's')
+text(ax, 65.5, 40, 'strictement', 'limite', 'm', weight='bold')
+line(ax, [(50, 24), (81, 24)], 'fixe'); dot(65.5, 24, 'limite'); text(ax, 65.5, 19, '7 et 7', 'limite', 's')
+text(ax, 65.5, 32, 'pas le même point', 'limite', 's')
+text(ax, 65.5, 9.5, r'$7 < 7$ : faux', 'limite', 's')
+save(fig, '17-032')

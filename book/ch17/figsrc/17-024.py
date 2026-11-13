@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 39, 66, 'sans lettre', 'encre', 's'); text(ax, 70, 66, 'avec une lettre', 'encre', 's')
+text(ax, 2, 45, 'signe de', 'encre', 's', ha='left'); text(ax, 2, 41, 'comparaison', 'encre', 's', ha='left')
+text(ax, 2, 19, 'signe =', 'encre', 's', ha='left')
+box(ax, 24, 34, 30, 22, 'autre', label=r'$3 < 7$', size='l')
+text(ax, 39, 37.5, 'inégalité', 'autre', 's')
+box(ax, 56, 34, 30, 22, 'sujet', label=r'$x + 7 > 4$', size='l', lw=1.6)
+text(ax, 71, 37.5, 'inéquation', 'sujet', 's', weight='bold')
+box(ax, 56, 8, 30, 22, 'fixe', label=r'$x + 7 = 4$', size='l')
+text(ax, 71, 11.5, 'équation', 'fixe', 's')
+save(fig, '17-024')

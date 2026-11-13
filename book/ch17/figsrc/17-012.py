@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+f = numberline(ax, 8, 66, 20, -2, 5, arrow_right=False)
+arrow(ax, (f(2), 20), (84, 20), 'sujet', lw=2.2)
+ax.add_patch(Circle((f(2), 20), 1.9, ec=COL['sujet'], fc='white', lw=1.2, zorder=4))
+text(ax, 84, 25, r'$x$', 'sujet', 'm')
+text(ax, 22, 40, r'$x > 2$', 'sujet', 'xl')
+text(ax, f(2), 29, 'point vide : 2 non pris', 'sujet', 's')
+text(ax, 72, 11, 'sans fin', 'sujet', 's')
+save(fig, '17-012')

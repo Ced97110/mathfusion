@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+def full_line(y, label):
+    arrow(ax, (50, y), (84, y), 'resultat', lw=1.6, both=True)
+    text(ax, 67, y - 5, label, 'resultat', 's')
+text(ax, 2, 68, 'Chapitre 16 : équation', 'fixe', 's', ha='left')
+text(ax, 24, 54, r'$12 = 12$', 'sujet', 'l')
+text(ax, 24, 47, 'vrai, sans lettre', 'resultat', 's')
+full_line(54, 'toute la droite')
+line(ax, [(2, 38), (86, 38)], 'fixe', lw=0.5, dash=True)
+text(ax, 2, 33, 'Ici : inéquation', 'fixe', 's', ha='left')
+text(ax, 24, 26, r'$x < x + 6$', 'sujet', 'l')
+arrow(ax, (24, 22), (24, 15), 'varie')
+text(ax, 28, 18.5, r'$x=0$', 'varie', 's', ha='left')
+text(ax, 24, 9, r'$0 < 6$', 'resultat', 'l')
+full_line(18, 'toute la droite')
+save(fig, '17-113')
