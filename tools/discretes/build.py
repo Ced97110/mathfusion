@@ -481,8 +481,7 @@ def main() -> None:
             file = f'c{key}.html'
         stem = file[1:-5]
         body = chapter_html(drop_title(blocks_of(e['page'])), stem, pdf, outdir, vocab)
-        head = (f'<div class="pk">{label}</div>\n' if label else '') + f'<h1>{e["title"]}</h1>'
-        open(f'{outdir}/{file}', 'w', encoding='utf8').write(f'{head}\n{body}')
+        open(f'{outdir}/{file}', 'w', encoding='utf8').write(layout(label, e['title'], body))
         group = {'front': 'front', 'chapter': 'chapters', 'annex': 'annexes'}[e['kind']]
         toc[group].append({'key': key, 'title': e['title'], 'label': label, 'file': file})
         print(f'{label or "avant":12s} p.{e["page"]:<4d} {e["title"][:60]}', flush=True)
@@ -491,6 +490,31 @@ def main() -> None:
     print(len(JOBS), 'bandes SVG')
     json.dump(toc, open(f'{ROOT}/content/discretes.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
     print('discretes :', len(toc['chapters']), 'chapitres')
+
+
+RUBRIC = re.compile(r'<h2>([1-6])\. (.+?)</h2>')
+
+
+def layout(label: str, title: str, body: str) -> str:
+    """Same page layout as the main book (tools/kit/web.py): cover, list of parts, one section per part.
+    The six numbered headings of a chapter ("1. Le problème qui a forcé la notion") are its parts."""
+    cover = ('<section class="cover"><div class="ck">Mathématiques discrètes</div>'
+             + (f'<div class="cn">{label}</div>' if label else '')
+             + f'\n<h1 class="ct">{title}</h1>\n'
+             + '<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. '
+             + 'Le texte et les figures sont ceux du livre.</p></section>\n')
+    pieces = RUBRIC.split(body)  # [before, n1, title1, text1, n2, ...]
+    if len(pieces) == 1:
+        return cover + f'<div class="corps">\n{body}\n</div>\n'
+    parts = [(pieces[i], pieces[i + 1], pieces[i + 2]) for i in range(1, len(pieces), 3)]
+    toc = ''.join(f'<li><a href="#s{n}">{t}</a></li>' for n, t, _ in parts)
+    out = [cover, f'<section class="toc"><h1>Les parties du chapitre</h1><ol>{toc}</ol></section>']
+    if pieces[0].strip():
+        out.append(f'<div class="corps">\n{pieces[0]}\n</div>')
+    for n, t, text in parts:
+        out.append(f'<section class="sec" id="s{n}"><div class="sk">{label} · partie {n}</div><h1>{t}</h1></section>'
+                   f'<div class="corps">\n{text.strip()}\n</div>')
+    return '\n'.join(out) + '\n'
 
 
 def slug(title: str) -> str:

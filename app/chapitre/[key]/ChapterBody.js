@@ -30,7 +30,8 @@ export default function ChapterBody({ file, dir = 'chapters' }) {
     <>
       {state === 'loading' && <p id="load">Chargement du chapitre…</p>}
       {state === 'error' && <p id="load">Ce chapitre n’a pas pu être chargé. Rechargez la page.</p>}
-      <div id="chap" className={dir === 'chapters' ? undefined : 'livre'} ref={ref} />
+      {/* discretes uses the main book layout (cover, sections); other books use the .livre style */}
+      <div id="chap" className={dir === 'chapters' || dir === 'discretes' ? undefined : 'livre'} ref={ref} />
     </>
   );
 }

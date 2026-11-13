@@ -31,7 +31,7 @@ export default async function DiscretesChapter({ params }) {
   return (
     <>
       <p className="crumb">
-        <Link href="/discretes/">Mathématiques discrètes</Link>
+        <Link href="/branche/mathematiques-discretes/">Mathématiques discrètes</Link>
       </p>
       {nav}
       {/* Texte du livre en HTML ; formules, encadrés, tableaux et figures découpés du PDF en SVG. */}
