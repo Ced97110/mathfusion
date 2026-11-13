@@ -23,7 +23,12 @@ try {
   const first = svgs();
   const r = { id, svg: box.querySelectorAll('svg').length, sliders: sliders.length, nan: bad(first), changes: 0, nanAfter: 0, errors };
   if (mode === 'alt') {
-    for (const s of sliders) { s.value = String(Number(s.min) + 0.8 * (Number(s.max) - Number(s.min))); s.dispatchEvent(new Event('input')); }
+    for (const s of sliders) {
+      const v0 = s.value, at = (f) => String(Number(s.min) + f * (Number(s.max) - Number(s.min)));
+      s.value = at(0.8);
+      if (s.value === v0) s.value = at(0.2); // 80 % can fall on the book value: then use 20 %
+      s.dispatchEvent(new Event('input'));
+    }
     const k = box.querySelector('svg[tabindex]');
     if (k) for (const key of ['ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowUp', 'ArrowUp', 'ArrowUp', 'ArrowUp']) k.dispatchEvent(new KeyboardEvent('keydown', { key }));
   }
