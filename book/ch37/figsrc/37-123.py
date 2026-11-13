@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+u = 9.0; cx, cy = 30, 30
+C = (cx - 1.5 * u, cy - 2 * u); B = (C[0] + 3 * u, C[1]); A = (C[0], C[1] + 4 * u)
+ax.add_patch(Circle((cx, cy), 2.5 * u, ec=COL['fixe'], fc='none', lw=0.8, zorder=1))
+poly(ax, [A, B, C], 'sujet')
+line(ax, [A, B], 'resultat', lw=1.8)
+line(ax, [(C[0] + 3, C[1]), (C[0] + 3, C[1] + 3), (C[0], C[1] + 3)], 'sujet', lw=0.7)
+disc(ax, cx, cy, 1.0, 'varie')
+text(ax, cx + 3.5, cy + 3, r'$O$', 'varie', 'm')
+text(ax, C[0] + 13.5, C[1] + 3.6, '3', 'sujet', 's')
+text(ax, C[0] + 3.8, C[1] + 18, '4', 'sujet', 's')
+text(ax, 56, cy + 7, '5 = diamètre', 'resultat', 's', ha='left')
+text(ax, 56, cy - 1, '2,5 + 2,5', 'varie', 's', ha='left')
+text(ax, 56, cy - 9, 'angle droit', 'sujet', 's', ha='left')
+save(fig, '37-123')

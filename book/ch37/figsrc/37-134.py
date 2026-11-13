@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+k = 0.3; y0 = 26
+t = math.radians(53)
+P = (4, y0); Q = (4 + 120 * k, y0); T = (4 + 110 * k * math.cos(t), y0 + 110 * k * math.sin(t))
+poly(ax, [P, Q, T], 'sujet')
+text(ax, 22, y0 - 3.5, '120', 'sujet', 's'); text(ax, 11.5, y0 + 15, '110', 'sujet', 's'); text(ax, 11.5, y0 + 2.2, '53°', 'fixe', 's')
+P2 = (56, y0); Q2 = (56 + 60 * k, y0); T2 = (56 + 22.5 * k, y0 + 33.07 * k)
+poly(ax, [P2, Q2, T2], 'autre')
+text(ax, 65, y0 - 3.5, '60', 'autre', 's'); text(ax, 56, y0 + 8.5, '40', 'autre', 's'); text(ax, 71.5, y0 + 8.5, '50', 'autre', 's')
+text(ax, 47, y0 + 8, '+', 'fixe', 'l')
+text(ax, 22, 17, '2 côtés + angle', 'fixe', 's'); text(ax, 65, 17, 'Héron', 'fixe', 's')
+text(ax, 22, 12, '≈ 5 271 m²', 'sujet', 's'); text(ax, 65, 12, '≈ 992,2 m²', 'autre', 's')
+box(ax, 20, 1, 48, 7, 'resultat', label='total ≈ 6 263 m²', size='m')
+save(fig, '37-134')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+B, C = (29, 37), (59, 37); A = (44, 37 + 30 * math.sqrt(3) / 2)
+poly(ax, [A, B, C], 'sujet')
+text(ax, 31.5, 52, '10', 'sujet', 's')
+text(ax, 33.5, 39.4, '60°', 'sujet', 's', ha='left')
+text(ax, 23, 30, 'deux côtés + angle', 'fixe', 's'); text(ax, 65, 30, 'Héron', 'fixe', 's')
+box(ax, 3, 17, 40, 9, 'varie', label='½ × 10 × 10 × 0,8660', size='s')
+box(ax, 47, 17, 38, 9, 'autre', label='√(15 × 5 × 5 × 5)', size='s')
+arrow(ax, (23, 16), (23, 11), 'resultat'); arrow(ax, (66, 16), (66, 11), 'resultat')
+box(ax, 8, 2, 30, 8, 'resultat', label='≈ 43,30', size='m'); box(ax, 51, 2, 30, 8, 'resultat', label='≈ 43,30', size='m')
+text(ax, 44, 6, '=', 'resultat', 'l')
+save(fig, '37-130')

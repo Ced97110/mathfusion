@@ -1,0 +1,281 @@
+[
+ {
+  "code": "37-073",
+  "a_dire": "On remplace BR par BP et CQ par CP : la somme AR plus AQ vaut a plus b plus c, donc chacune vaut s.",
+  "legende_titre": "Pourquoi AR et AQ valent chacun 75",
+  "lecture": [
+   "Le triangle bleu a ses côtés de 60 et de 50 ; le cercle gris est le cercle extérieur.",
+   "Le prolongement orange, de B à R, vaut 15, comme le segment orange BP sur le côté BC.",
+   "Le prolongement violet, de C à Q, vaut 25, comme le segment violet CP sur le côté BC.",
+   "À droite, de haut en bas : on écrit AR + AQ ; on remplace BR par BP et CQ par CP ; BP + CP vaut 40 ; on arrive à AR + AQ = 150, donc AR = AQ = 75."
+  ],
+  "a_voir": "Le remplacement de BR par BP et de CQ par CP fait apparaître 60 + 50 + 40 = 150."
+ },
+ {
+  "code": "37-074",
+  "a_dire": "Le quadrilatère se découpe de deux façons, et les deux aires donnent le même nombre, 1 559,1.",
+  "legende_titre": "Un quadrilatère, deux découpages",
+  "lecture": [
+   "À gauche, la coupe suit le côté BC : le triangle bleu ABC vaut 992,2 et le triangle orange vaut 566,9.",
+   "À droite, la coupe suit la droite de A au centre extérieur : le triangle bleu vaut 850,4 et le violet 708,7.",
+   "Au-dessus de chaque dessin, la somme des deux morceaux donne 1 559,1."
+  ],
+  "a_voir": "Les deux découpages couvrent le même quadrilatère, donc les deux sommes sont égales."
+ },
+ {
+  "code": "37-075",
+  "a_dire": "L'aire est le produit du rayon extérieur par s moins a, et la forme reste la même quand les nombres changent.",
+  "legende_titre": "Un rectangle qui a l'aire du triangle",
+  "lecture": [
+   "Le grand rectangle bleu est celui du champ : sa hauteur vaut 28,35 et sa largeur 35.",
+   "Son aire vaut 992,2, l'aire du triangle.",
+   "Le petit rectangle violet est celui du triangle de côté 10 : hauteur 8,66, largeur 5, aire 43,30.",
+   "Les nombres changent, la forme rayon fois (s moins a) reste."
+  ],
+  "a_voir": "Dans les deux cas, hauteur fois largeur donne l'aire Δ."
+ },
+ {
+  "code": "37-076",
+  "a_dire": "Le moins de s moins a vient du triangle orange qu'on retire : deux triangles s'additionnent, le troisième se retranche.",
+  "legende_titre": "D'où vient le signe moins",
+  "lecture": [
+   "Chaque petit dessin montre le même quadrilatère ; la partie colorée est le morceau compté.",
+   "Le triangle bleu vaut 850,4 et le violet 708,7 : on les additionne.",
+   "Le triangle orange vaut 566,9 : on le retranche, c'est le signe moins.",
+   "Le triangle vert, ABC, reste : 992,2."
+  ],
+  "a_voir": "850,4 plus 708,7 moins 566,9 donne 992,2."
+ },
+ {
+  "code": "37-077",
+  "a_dire": "Chaque cercle extérieur donne la même aire : rayon fois (s moins le côté en face) vaut environ 992,2.",
+  "legende_titre": "Trois cercles extérieurs, une même aire",
+  "lecture": [
+   "Le rectangle gris est celui du cercle opposé à A : 28,35 de haut, 35 de large.",
+   "Le rectangle bleu est celui du cercle opposé à B : 39,69 de haut, 25 de large.",
+   "Le rectangle violet est celui du cercle opposé à C : 66,14 de haut, 15 de large.",
+   "Les trois formes diffèrent, mais chacune contient 992,2."
+  ],
+  "a_voir": "Quand la largeur diminue, la hauteur grandit, et l'aire reste 992,2."
+ },
+ {
+  "code": "37-078",
+  "a_dire": "La formule de Héron donne l'aire avec les trois côtés ; elle ne marche que si les trois nombres ferment un triangle.",
+  "legende_titre": "Quand la formule donne une aire",
+  "lecture": [
+   "En haut, le triangle bleu a pour côtés 40, 50 et 60 : le produit 75 fois 35 fois 25 fois 15 vaut 984 375, et sa racine 992,2.",
+   "En bas, la barre grise est le côté de 5 ; la barre bleue de 1 et la violette de 2 le laissent à découvert sur 2.",
+   "En rouge, s moins c vaut moins 1 : le produit vaut moins 24, donc pas d'aire."
+  ],
+  "a_voir": "Avec 1, 2 et 5, les deux petits côtés sont trop courts pour fermer le triangle."
+ },
+ {
+  "code": "37-079",
+  "a_dire": "Le signe s moins a veut dire le demi-périmètre diminué du côté a : 75 moins 40 vaut 35, et c'est aussi la moitié de b plus c moins a.",
+  "legende_titre": "Deux lectures du même nombre 35",
+  "lecture": [
+   "La barre du haut a la longueur s, 75 : on y retire la partie orange, le côté a de 40.",
+   "Il reste la partie verte, 35.",
+   "La barre du bas a la longueur b plus c moins a, 70, coupée en deux moitiés vertes de 35 chacune."
+  ],
+  "a_voir": "La partie restante en haut et chaque moitié en bas ont la même longueur, 35."
+ },
+ {
+  "code": "37-080",
+  "a_dire": "Le signe √ veut dire le nombre positif qui, multiplié par lui-même, donne le nombre écrit dessous.",
+  "legende_titre": "Le signe racine, lu en français",
+  "lecture": [
+   "Le carré bleu est fait de 3 fois 3 cases : son aire vaut 9.",
+   "Chaque côté du carré compte 3 cases, c'est la racine de 9.",
+   "À droite, la racine de 984 375 vaut environ 992,2, l'aire du champ."
+  ],
+  "a_voir": "La racine répond : quel nombre multiplié par lui-même donne celui-ci ?"
+ },
+ {
+  "code": "37-081",
+  "a_dire": "La preuve part de Δ = ½ b c sin A et arrive à la formule sans angle ; l'étape 2, qui écrit sin² A avec cos A, porte tout le poids.",
+  "legende_titre": "Cinq étapes de Héron à partir d'un angle",
+  "lecture": [
+   "Le triangle bleu a deux côtés de 50 et 60 et un angle de 41,41°.",
+   "La première boîte bleue est le départ : Δ = ½ b c sin A. La dernière, verte, est l’arrivée : 992,2, sans angle.",
+   "La boîte orange, étape 2, est celle qui porte le poids : sin² A s’écrit avec cos A, et vaut 0,4375.",
+   "L’étape 1 donne cos A = 0,75 avec les côtés ; les boîtes grises donnent les autres étapes."
+  ],
+  "a_voir": "Sans l’étape 2, il reste un sinus, qui demande un angle."
+ },
+ {
+  "code": "37-082",
+  "a_dire": "On isole cos A dans la loi des cosinus : 2bc cos A vaut b² plus c² moins a², puis on divise par 2bc.",
+  "legende_titre": "Isoler le cosinus",
+  "lecture": [
+   "La barre du haut vaut b² plus c², 6 100 : elle se coupe en a², 1 600 en gris, et 2bc cos A, 4 500 en violet.",
+   "La flèche orange reporte ces 4 500 dans la barre du bas.",
+   "La barre du bas vaut 2bc, 6 000 ; la partie verte, 4 500, en est les trois quarts.",
+   "Le rapport 4 500 sur 6 000 donne 0,75."
+  ],
+  "a_voir": "La partie verte occupe 0,75 de la barre entière : c'est cos A."
+ },
+ {
+  "code": "37-083",
+  "a_dire": "Le carré du sinus est le produit de 1 plus cosinus par 1 moins cosinus, pour tout cosinus.",
+  "legende_titre": "Du cosinus au carré du sinus",
+  "lecture": [
+   "Le rectangle bleu a pour longueur 1 plus 0,75 et pour hauteur 1 moins 0,75 : son aire est 0,4375.",
+   "Le rectangle violet a pour longueur 1 plus 0,5 et pour hauteur 1 moins 0,5 : son aire est 0,75.",
+   "Dans chaque cas, l'aire en vert est le carré du sinus."
+  ],
+  "a_voir": "La forme longueur fois hauteur reste la même, seuls les nombres changent."
+ },
+ {
+  "code": "37-084",
+  "a_dire": "1 plus cos A s'écrit (b + c)² moins a² sur 2bc, puis se factorise en (b + c + a)(b + c − a) sur 2bc.",
+  "legende_titre": "Étape 3 : le facteur 1 plus cosinus",
+  "lecture": [
+   "La figure du haut est le carré de côté 110, b plus c, privé du carré de côté 40, a : son aire vaut 10 500.",
+   "On déplace le morceau orange à droite du morceau bleu.",
+   "La figure du bas est un rectangle de 150 sur 70 : 150 est 110 plus 40, 70 est 110 moins 40.",
+   "Son aire vaut 10 500 ; divisée par 6 000, elle donne 1,75."
+  ],
+  "a_voir": "Le carré moins le carré devient un rectangle : (b + c + a) fois (b + c − a)."
+ },
+ {
+  "code": "37-085",
+  "a_dire": "1 moins cos A s'écrit a² moins (b − c)² sur 2bc, puis se factorise en (a − b + c)(a + b − c) sur 2bc.",
+  "legende_titre": "Étape 3 : le facteur 1 moins cosinus",
+  "lecture": [
+   "La figure de gauche est le carré de côté 3, a, privé du carré de côté 1 : son aire vaut a² − (b − c)², soit 9 − 1 = 8.",
+   "On déplace le morceau orange à droite du morceau bleu (flèche).",
+   "La figure de droite est un rectangle de 4 sur 2 : 4 est a − b + c, 2 est a + b − c. Son aire est (a − b + c)(a + b − c) = 4 × 2.",
+   "L’aire 8, divisée par 40, donne 0,2, soit 1 moins 0,8."
+  ],
+  "a_voir": "Les deux figures ont la même aire 8 : a² − (b − c)² s’écrit (a − b + c)(a + b − c)."
+ },
+ {
+  "code": "37-086",
+  "a_dire": "Chacun des quatre facteurs est le double d'un nombre lié à s : 2s, 2(s − a), 2(s − b) et 2(s − c).",
+  "legende_titre": "Quatre facteurs, quatre doubles",
+  "lecture": [
+   "Chaque barre représente un des quatre facteurs : 150, 70, 50 et 30.",
+   "Chaque barre est coupée en deux moitiés égales.",
+   "Les moitiés valent 75, 35, 25 et 15 : ce sont s, s − a, s − b et s − c."
+  ],
+  "a_voir": "Dans chaque barre, les deux moitiés sont égales, donc le facteur est le double de la moitié."
+ },
+ {
+  "code": "37-087",
+  "a_dire": "Le carré du sinus vaut 4 fois s(s − a)(s − b)(s − c), divisé par b² c².",
+  "legende_titre": "Le carré du sinus avec les côtés seuls",
+  "lecture": [
+   "Pour les côtés 3, 4 et 5, le demi-périmètre vaut 6.",
+   "Le produit de 4, 6, 3, 2 et 1 vaut 144 : c'est la partie verte de la barre.",
+   "La barre entière vaut b² c², 16 fois 25, soit 400.",
+   "Le rapport 144 sur 400 donne 0,36, le carré du sinus."
+  ],
+  "a_voir": "La partie verte est les 0,36 de la barre entière."
+ },
+ {
+  "code": "37-088",
+  "a_dire": "On calcule le carré de l'aire, puis la racine ; deux nombres ont ce carré, on garde le positif, car une aire est positive.",
+  "legende_titre": "Deux nombres, un seul gardé",
+  "lecture": [
+   "Sur la droite, le point rouge est moins 992,2 et le point vert est 992,2.",
+   "Les deux flèches orange montrent que ces deux nombres ont le même carré, 984 375.",
+   "Le point rouge est refusé : une aire est positive ; le vert est gardé."
+  ],
+  "a_voir": "Les deux points sont à la même distance de 0, donc ils ont le même carré."
+ },
+ {
+  "code": "37-089",
+  "a_dire": "Sous la racine, il y a quatre longueurs multipliées : le produit est une aire fois une aire, et la racine est une aire.",
+  "legende_titre": "Contrôler les unités sous la racine",
+  "lecture": [
+   "Le rectangle bleu a pour côtés 75 et 35 mètres : son aire vaut 2 625 m².",
+   "Le rectangle violet a pour côtés 25 et 15 mètres : son aire vaut 375 m².",
+   "Le produit des deux aires vaut 984 375, en mètres à la puissance quatre.",
+   "La racine vaut 992,2 m², une aire."
+  ],
+  "a_voir": "Quatre longueurs se regroupent en deux aires, et la racine d'une aire fois une aire est une aire."
+ },
+ {
+  "code": "37-090",
+  "a_dire": "Le facteur s vient du cercle inscrit et chaque s moins un côté vient d'un cercle extérieur ; les quatre rayons sont différents.",
+  "legende_titre": "Quatre cercles, quatre facteurs",
+  "lecture": [
+   "Le petit disque bleu est le cercle inscrit, de rayon 13,23 : il va avec le facteur 75.",
+   "Les trois disques violets sont les cercles extérieurs, de rayons 28,35, 39,69 et 66,14.",
+   "Ils vont avec les facteurs 35, 25 et 15.",
+   "Les tailles des disques sont à l'échelle : les quatre rayons ne sont pas égaux."
+  ],
+  "a_voir": "Chaque produit rayon fois facteur donne environ 992,2, avec quatre rayons différents."
+ },
+ {
+  "code": "37-091",
+  "a_dire": "L'aire au carré est le produit des rayons des quatre cercles qui touchent les trois côtés.",
+  "legende_titre": "L'aire au carré et les quatre rayons",
+  "lecture": [
+   "Le rectangle bleu a pour côtés r, 13,23, et r indice a, 28,35 : son aire vaut 375.",
+   "Le rectangle violet a pour côtés r indice b, 39,69, et r indice c, 66,14 : son aire vaut 2 625.",
+   "Le produit 375 fois 2 625 vaut 984 375, le carré de 992,2."
+  ],
+  "a_voir": "Multiplier les deux rectangles revient à multiplier les quatre rayons."
+ },
+ {
+  "code": "37-092",
+  "a_dire": "On multiplie les quatre rayons deux par deux, puis les deux résultats, et la racine donne l'aire.",
+  "legende_titre": "De quatre rayons à l'aire",
+  "lecture": [
+   "Les quatre disques ont pour rayons 13,23, 28,35, 39,69 et 66,14, à l'échelle.",
+   "Les deux premiers donnent 375, les deux derniers 2 625.",
+   "Le produit 375 fois 2 625 vaut 984 375.",
+   "La racine carrée, en vert, donne l'aire : 992,2 m²."
+  ],
+  "a_voir": "Quatre nombres, deux produits, puis une racine : on retrouve 992,2."
+ },
+ {
+  "code": "37-093",
+  "a_dire": "La formule fait trois produits, leur somme, une valeur absolue et une moitié ; sur les coins (1, 1), (7, 1), (6, 5), cela donne 12.",
+  "legende_titre": "Trois produits, une somme, une moitié",
+  "lecture": [
+   "La flèche orange à gauche est le premier produit, moins 4 : elle recule de 4.",
+   "La flèche bleue est le deuxième produit, 28 : elle avance de 28 et arrive à 24.",
+   "Le troisième produit vaut 0 : il n'ajoute rien.",
+   "La flèche verte prend la moitié de 24 : on obtient 12, l'aire."
+  ],
+  "a_voir": "Les trois produits se somment en 24, et la moitié donne l'aire 12."
+ },
+ {
+  "code": "37-094",
+  "a_dire": "La base AB est horizontale et vaut 6, la hauteur issue de C est verticale et vaut 4 ; la moitié de 6 fois 4 vaut 12.",
+  "legende_titre": "Un triangle sur un quadrillage",
+  "lecture": [
+   "Le triangle bleu a pour coins A (1, 1), B (7, 1) et C (6, 5).",
+   "Le trait noir plein est la base de A à B : elle vaut 7 moins 1, soit 6.",
+   "Le trait noir en pointillés est la hauteur de C vers la base : elle vaut 5 moins 1, soit 4.",
+   "Le petit carré marque l'angle droit ; en vert, la moitié de 6 fois 4 vaut 12."
+  ],
+  "a_voir": "Base et hauteur se lisent sur le quadrillage."
+ },
+ {
+  "code": "37-095",
+  "a_dire": "Les signes x indice 1 et y indice 1 sont les deux nombres qui placent le coin A : 1 vers la droite et 1 vers le haut.",
+  "legende_titre": "Les deux nombres du coin A",
+  "lecture": [
+   "La flèche orange horizontale va de 0 jusqu'à 1 : c'est x indice 1.",
+   "La flèche orange verticale monte de 1 : c'est y indice 1.",
+   "Le point bleu est le coin A, au bout des deux flèches : (1, 1)."
+  ],
+  "a_voir": "On compte d'abord vers la droite, puis vers le haut."
+ },
+ {
+  "code": "37-096",
+  "a_dire": "Les signes x indice 2 et y indice 2 sont les nombres du coin B, 7 et 1 ; l'indice 2 les distingue de ceux du coin A.",
+  "legende_titre": "Les deux nombres du coin B",
+  "lecture": [
+   "Le point gris est le coin A, le point bleu est le coin B.",
+   "La flèche orange horizontale va jusqu'à 7 : c'est x indice 2.",
+   "La flèche orange verticale monte de 1 : c'est y indice 2.",
+   "Le pointillé gris montre que A et B sont à la même hauteur, 1."
+  ],
+  "a_voir": "A et B ont le même second nombre, 1, mais pas le même premier."
+ }
+]

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+O = (10, 44); k = 0.25; t = math.radians(53)
+P1 = (O[0] + 120 * k, O[1]); P2 = (O[0] + 110 * k * math.cos(t), O[1] + 110 * k * math.sin(t))
+Q = (P1[0] + P2[0] - O[0], P1[1] + P2[1] - O[1])
+poly(ax, [P1, Q, P2], 'varie'); line(ax, [P1, Q, P2], 'varie', lw=0.9, dash=True)
+poly(ax, [O, P1, P2], 'sujet')
+text(ax, (P1[0] + Q[0] + P2[0]) / 3, (P1[1] + Q[1] + P2[1]) / 3, 'même aire', 'varie', 's')
+arrow(ax, O, P1, 'sujet', lw=1.3); arrow(ax, O, P2, 'sujet', lw=1.3)
+text(ax, 25, 41, '120', 'sujet', 's'); text(ax, 13.8, 56, '110', 'sujet', 's')
+ax.add_patch(matplotlib.patches.Arc(O, 10, 10, theta1=0, theta2=53, ec=COL['varie'], lw=1.0, zorder=3))
+text(ax, 20.5, 47.5, '53°', 'varie', 's')
+s = 60 / 10542.0
+box(ax, 10, 20, 10542 * s, 7, 'varie', label='110 × 120 × sin 53° ≈ 10 542', size='s')
+box(ax, 10, 8, 5271 * s, 7, 'sujet', label='aire ≈ 5 271', size='s')
+line(ax, [(10 + 5271 * s, 8), (10 + 5271 * s, 20)], 'fixe', dash=True)
+text(ax, 72, 23.5, '2 × aire', 'varie', 's', ha='left')
+save(fig, '37-136')

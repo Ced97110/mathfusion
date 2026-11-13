@@ -1,0 +1,271 @@
+[
+ {
+  "code": "37-001",
+  "a_dire": "La formule connue demande une hauteur, et dans le champ on ne peut pas la mesurer ; on mesure seulement le bord.",
+  "legende_titre": "Un champ, une hauteur introuvable",
+  "lecture": [
+   "Le triangle bleu est le champ.",
+   "La base, en bas, est la clôture de 120 m : elle se mesure.",
+   "Le trait orange en pointillés est la hauteur : elle traverse le blé, avec un point d’interrogation."
+  ],
+  "a_voir": "La base est connue, la hauteur est un « ? »."
+ },
+ {
+  "code": "37-002",
+  "a_dire": "La hauteur existe mais ne se mesure pas sur le terrain ; les clôtures, elles, se mesurent.",
+  "legende_titre": "Ce qui se mesure, ce qui ne se mesure pas",
+  "lecture": [
+   "Les traits bleus épais sont les clôtures de 110 m et de 120 m : elles se longent.",
+   "Le trait orange en pointillés est la hauteur, avec son angle droit : elle passe dans le blé."
+  ],
+  "a_voir": "Deux côtés se mesurent, la hauteur non."
+ },
+ {
+  "code": "37-003",
+  "a_dire": "Première situation : deux clôtures de 110 m et 120 m et l’angle de 53° entre elles ; le troisième côté vaut environ 103,0 m mais l’aire n’est pas encore calculée.",
+  "legende_titre": "Deux clôtures et un angle",
+  "lecture": [
+   "Les deux traits bleus épais mesurent 110 m et 120 m.",
+   "L’arc orange est l’angle de 53° entre eux.",
+   "Le trait gris en pointillés est le troisième côté, environ 103,0 m.",
+   "Au centre, « aire ? » : elle reste à calculer."
+  ],
+  "a_voir": "Côté, angle, côté : le triangle est fixé, l’aire est encore inconnue."
+ },
+ {
+  "code": "37-004",
+  "a_dire": "Deuxième situation : trois côtés de 40, 50 et 60 m fixent un seul triangle, donc une aire, mais on ne sait pas encore la calculer.",
+  "legende_titre": "Un champ, trois clôtures",
+  "lecture": [
+   "Le triangle bleu a des côtés de 40, 50 et 60 m.",
+   "Les deux cases grises rappellent qu’on n’a ni angle ni hauteur.",
+   "Le texte vert dit que l’aire est fixée."
+  ],
+  "a_voir": "Les trois longueurs seules fixent l’aire."
+ },
+ {
+  "code": "37-005",
+  "a_dire": "Troisième situation : dans le champ de 40, 50 et 60 m, deux questions concernent deux cercles différents, celui du puits et celui de la mare.",
+  "legende_titre": "Un puits et une mare dans le champ",
+  "lecture": [
+   "Le grand cercle bleu passe par les trois coins : c’est celui du puits.",
+   "Les traits bleus en pointillés vont du centre du puits aux trois coins.",
+   "Le petit cercle violet est la mare : il touche les trois clôtures."
+  ],
+  "a_voir": "Il y a deux cercles : un qui passe par les coins, un qui touche les côtés."
+ },
+ {
+  "code": "37-006",
+  "a_dire": "Trois besoins : aire avec deux côtés et un angle, aire avec trois côtés, deux cercles du triangle.",
+  "legende_titre": "Trois besoins, trois triangles",
+  "lecture": [
+   "À gauche, le triangle a deux côtés bleus et un angle orange.",
+   "Au milieu, le triangle a ses trois côtés en bleu.",
+   "À droite, le triangle porte deux cercles : un bleu autour, un violet dedans."
+  ],
+  "a_voir": "Chaque besoin a sa propre donnée de départ."
+ },
+ {
+  "code": "37-007",
+  "a_dire": "Les trois questions n’en font qu’une : aire et rayons des cercles se calculent l’un par l’autre avec les côtés.",
+  "legende_titre": "Aire, mare et puits liés",
+  "lecture": [
+   "La case verte en haut est l’aire, environ 992,2.",
+   "La case violette est la mare, 13,23 ; la flèche orange dit : aire ÷ 75 donne 13,23, et 13,23 × 75 redonne l’aire.",
+   "La case bleue est le puits, 30,24 ; elle se calcule avec 120 000 ÷ (4 × aire)."
+  ],
+  "a_voir": "Chaque flèche relie l’aire à un cercle par un calcul."
+ },
+ {
+  "code": "37-008",
+  "a_dire": "Dans le triangle rectangle CHB, la hauteur h est le côté en face de l’angle C et vaut a sin C, soit environ 87,85.",
+  "legende_titre": "La hauteur dans le triangle rectangle",
+  "lecture": [
+   "Le triangle bleu clair est le triangle rectangle CHB, avec le petit carré vert en H.",
+   "Le trait bleu épais CB, de 110, est le plus long côté.",
+   "Le trait vert BH est la hauteur h, environ 87,85, en face de l’angle orange de 53°."
+  ],
+  "a_voir": "h est en face de C et a est le plus long côté."
+ },
+ {
+  "code": "37-009",
+  "a_dire": "H est le point de la base CA où tombe la perpendiculaire menée de B ; ici il est à environ 66,2 m de C.",
+  "legende_titre": "Le point H sur la clôture",
+  "lecture": [
+   "Le trait bleu épais est la clôture CA, la base de 120 m.",
+   "Le trait gris en pointillés part de B et tombe en H ; le petit carré marque l’angle droit.",
+   "L’accolade orange donne la distance de C à H, environ 66,2 m."
+  ],
+  "a_voir": "H est le pied de la perpendiculaire issue de B."
+ },
+ {
+  "code": "37-010",
+  "a_dire": "Le nombre h est la longueur du segment BH, la hauteur quand CA est la base.",
+  "legende_titre": "Un nombre pour le segment BH",
+  "lecture": [
+   "Le trait bleu épais en bas est la base CA, 120 m.",
+   "Le trait vert est le segment BH.",
+   "La double flèche verte à côté est la longueur h, environ 87,85 m."
+  ],
+  "a_voir": "Le segment BH a pour longueur le nombre h."
+ },
+ {
+  "code": "37-011",
+  "a_dire": "La preuve part de sin C = h / a, multiplie les deux membres par a et arrive à h = a sin C.",
+  "legende_titre": "De sin C = h/a à h = a sin C",
+  "lecture": [
+   "Le triangle rectangle montre a (côté incliné, bleu), h (côté vertical, vert) et l’angle C (arc orange).",
+   "La case bleue du haut est le départ : sin C = h / a.",
+   "La flèche orange « × a » est l’étape qui porte tout : on multiplie les deux membres par a. La case orange montre le calcul.",
+   "La case verte est l’arrivée : h = a sin C. En bas à gauche, les nombres 87,85 ÷ 110 et 110 × 0,7986."
+  ],
+  "a_voir": "Les trois cases se lisent de haut en bas : le départ, la multiplication par a, l’arrivée."
+ },
+ {
+  "code": "37-012",
+  "a_dire": "Pour trouver h : repérer a et C, lire sin C, écrire h = a sin C, puis multiplier : 110 × 0,7986 ≈ 87,85 m.",
+  "legende_titre": "Les quatre actions pour trouver h",
+  "lecture": [
+   "La case bleue donne les données : a = 110 m et C = 53°.",
+   "La case grise donne le sinus lu à la calculatrice, environ 0,7986.",
+   "La case orange écrit la formule.",
+   "La case verte donne le résultat : environ 87,85 m."
+  ],
+  "a_voir": "Les cases se lisent de haut en bas, une action chacune."
+ },
+ {
+  "code": "37-013",
+  "a_dire": "La hauteur, qu’on ne mesure pas, est le produit de deux nombres connus : la clôture a et le sinus de C.",
+  "legende_titre": "La hauteur comme produit",
+  "lecture": [
+   "La barre bleue du haut est la clôture a, 110 m, qui se mesure.",
+   "La barre verte plus courte est la hauteur h : environ 0,7986 fois la barre bleue.",
+   "Le trait orange en pointillés marque cette fraction.",
+   "La case du bas donne le produit h = a × sin C."
+  ],
+  "a_voir": "La barre verte est la barre bleue réduite par sin C."
+ },
+ {
+  "code": "37-014",
+  "a_dire": "On remplace h par a sin C dans la formule du chapitre 11 : l’aire devient ½ a b sin C, sans hauteur.",
+  "legende_titre": "Remplacer h dans la formule de l’aire",
+  "lecture": [
+   "La case bleue du haut est la formule du chapitre 11 : ½ × b × h.",
+   "La flèche orange est le remplacement : h devient a sin C.",
+   "La case grise puis la case verte donnent la formule sans h.",
+   "Les deux lignes de nombres donnent la même valeur, environ 5 271."
+  ],
+  "a_voir": "Le remplacement ne change pas le résultat."
+ },
+ {
+  "code": "37-015",
+  "a_dire": "La lettre Δ note ici l’aire du triangle, alors qu’au chapitre 36 elle notait le discriminant.",
+  "legende_titre": "La lettre Δ change de sens",
+  "lecture": [
+   "À gauche, le Δ gris est celui du chapitre 36 : le discriminant.",
+   "À droite, le Δ bleu est celui du chapitre 37 : l’aire du triangle bleu clair.",
+   "Le nombre vert donne cette aire, environ 5 271 m²."
+  ],
+  "a_voir": "Même lettre, autre sens."
+ },
+ {
+  "code": "37-016",
+  "a_dire": "La forme Δ = ½ a b sin C reste vraie quand on change les nombres : seuls a, b et C changent.",
+  "legende_titre": "La même formule pour trois triangles",
+  "lecture": [
+   "La case bleue du haut est la formule.",
+   "Dans chaque triangle, les traits bleus sont a et b, l’arc orange est l’angle C.",
+   "Dessous, en orange les nombres choisis, en vert l’aire : 24, 12 et environ 5 271."
+  ],
+  "a_voir": "Les triangles changent, la formule reste."
+ },
+ {
+  "code": "37-017",
+  "a_dire": "La lettre a désigne la longueur du côté CB, ici 110 m, en face du coin A.",
+  "legende_titre": "Le côté a",
+  "lecture": [
+   "Le trait bleu épais est le côté CB, noté a, 110 m.",
+   "La flèche orange va de ce côté vers le coin A, en face de lui."
+  ],
+  "a_voir": "a est le côté qui ne touche pas A."
+ },
+ {
+  "code": "37-018",
+  "a_dire": "La lettre b désigne la longueur du côté CA, ici 120 m, en face du coin B ; a et b se touchent en C.",
+  "legende_titre": "Le côté b",
+  "lecture": [
+   "Le trait bleu épais est le côté CA, noté b, 120 m.",
+   "Le trait gris est le côté a.",
+   "La flèche orange va de b vers le coin B, en face."
+  ],
+  "a_voir": "b est le côté qui ne touche pas B."
+ },
+ {
+  "code": "37-019",
+  "a_dire": "La lettre C désigne à la fois le coin et l’angle entre a et b, ici 53°.",
+  "legende_titre": "La lettre C : coin et angle",
+  "lecture": [
+   "Le petit disque orange est le coin C, où a et b se touchent.",
+   "Les traits bleus sont a, 110, et b, 120.",
+   "L’arc orange est l’angle C, 53°, entre eux."
+  ],
+  "a_voir": "C est un point et aussi la mesure de l’angle."
+ },
+ {
+  "code": "37-020",
+  "a_dire": "sin C est le rapport h / a, un nombre sans unité qui ne dépend que de l’angle ; ici 87,85 ÷ 110 ≈ 0,7986.",
+  "legende_titre": "sin C comme rapport h/a",
+  "lecture": [
+   "Dans le triangle rectangle, le trait vert est h et le trait bleu incliné est a.",
+   "La droite graduée de 0 à 1 place le rapport : le point vert est environ 0,7986.",
+   "Le texte gris rappelle qu’on divise des mètres par des mètres."
+  ],
+  "a_voir": "Le rapport est un nombre entre 0 et 1."
+ },
+ {
+  "code": "37-021",
+  "a_dire": "Le ½ est la moitié du produit b × h : le triangle occupe la moitié du rectangle de même base et de même hauteur.",
+  "legende_titre": "Le demi dans la formule de l’aire",
+  "lecture": [
+   "Le grand rectangle gris a pour côtés b, 120 m, et h, environ 87,85 ; son aire est environ 10 542.",
+   "Le triangle bleu a la même base et la même hauteur.",
+   "Son aire est la moitié : environ 5 271."
+  ],
+  "a_voir": "Le triangle remplit la moitié du rectangle."
+ },
+ {
+  "code": "37-022",
+  "a_dire": "On lit la formule en trois parties : a sin C est la hauteur, b × h est un rectangle, ½ en prend la moitié.",
+  "legende_titre": "Lire la formule en trois parties",
+  "lecture": [
+   "Le trait bleu est la hauteur a sin C, environ 87,85.",
+   "Le rectangle gris est b × h, environ 10 542.",
+   "Dans le dernier rectangle, le triangle vert est la moitié : environ 5 271."
+  ],
+  "a_voir": "Trois étapes : une longueur, un rectangle, sa moitié."
+ },
+ {
+  "code": "37-023",
+  "a_dire": "L’angle compris est celui qui se trouve entre les deux côtés connus, à leur coin commun ; un autre angle donne une aire fausse.",
+  "legende_titre": "L’angle compris",
+  "lecture": [
+   "Les traits bleus épais sont les côtés de 110 et 120.",
+   "L’arc vert est l’angle de 53° entre eux : c’est l’angle compris.",
+   "Les arcs gris, 58,52° et 68,48°, sont les deux autres angles.",
+   "La case verte donne l’aire juste ; la case rouge donne une valeur fausse avec 58,52°."
+  ],
+  "a_voir": "Seul l’angle entre les deux côtés donne la bonne aire."
+ },
+ {
+  "code": "37-024",
+  "a_dire": "Avec un angle obtus (127°), la hauteur tombe hors du triangle mais sin 127° = sin 53°, donc la formule reste la même.",
+  "legende_titre": "Un angle obtus, la même formule",
+  "lecture": [
+   "Le triangle bleu a un angle de 127° en C (arc bleu).",
+   "Le trait vert est la hauteur, environ 87,85, qui tombe en H hors du triangle.",
+   "L’arc orange est l’angle de 53° du petit triangle rectangle, 180° − 127°.",
+   "Le texte du haut dit que les deux sinus sont égaux."
+  ],
+  "a_voir": "Les deux angles donnent le même sinus."
+ }
+]

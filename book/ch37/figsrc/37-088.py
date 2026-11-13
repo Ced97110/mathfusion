@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 8, 80, 38, -1000, 1000, step=500, labels=False, arrow_right=False)
+text(ax, f(0), 33.5, '0', 'fixe', 's')
+xn, xp = f(-992.2), f(992.2)
+disc(ax, xn, 38, 1.7, 'limite'); disc(ax, xp, 38, 1.7, 'resultat')
+text(ax, xn + 3, 44, '−992,2', 'limite', 'm'); text(ax, xp - 3, 44, '992,2', 'resultat', 'm')
+text(ax, xn + 3, 34, 'refusé', 'limite', 's'); text(ax, xp - 3, 34, 'gardé', 'resultat', 's')
+text(ax, 44, 52, 'une aire est positive', 'encre', 'm')
+arrow(ax, (xn + 3, 30), (30, 19), 'varie'); arrow(ax, (xp - 3, 30), (58, 19), 'varie')
+text(ax, 44, 26, 'même carré', 'varie', 'm')
+box(ax, 14, 8, 60, 10, 'sujet', label=r'$(\pm 992{,}2)^2$ = 984 375', size='m')
+save(fig, '37-088')

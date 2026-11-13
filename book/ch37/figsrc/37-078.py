@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+k = 0.5
+X = ((50**2 + 60**2 - 40**2) / (2*60), math.sqrt(50**2 - ((50**2 + 60**2 - 40**2) / (2*60))**2))
+P0 = (6, 52)
+T = lambda p: (P0[0] + k*p[0], P0[1] + k*p[1])
+fig, ax = canvas(80)
+poly(ax, [T((0, 0)), T((60, 0)), T(X)], 'sujet')
+text(ax, 21, 48, '60', 'sujet', 'm'); text(ax, 12.5, 62, '50', 'sujet', 'm'); text(ax, 33, 62, '40', 'sujet', 'm')
+text(ax, 62, 65, '75 × 35 × 25 × 15 = 984 375', 'sujet', 'm')
+text(ax, 62, 57, '√984 375 ≈ 992,2 m²', 'resultat', 'l', weight='bold')
+u = 8
+box(ax, 10, 27, 5*u, 3, 'fixe', r=0.4)
+box(ax, 10, 21, 1*u, 3, 'sujet', r=0.4)
+box(ax, 10 + u, 21, 2*u, 3, 'autre', r=0.4)
+box(ax, 10 + 3*u, 21, 2*u, 3, 'limite', fill=True, dash=True, r=0.4)
+text(ax, 10 + 2.5*u, 32.5, '5', 'fixe', 'm')
+text(ax, 10 + 0.5*u, 17, '1', 'sujet', 'm'); text(ax, 10 + 2*u, 17, '2', 'autre', 'm'); text(ax, 10 + 4*u, 17, 'manque 2', 'limite', 'm')
+text(ax, 70, 31, 's − c = 4 − 5 = −1', 'limite', 'm')
+text(ax, 70, 24, '4 × 3 × 2 × (−1) = −24', 'limite', 'm')
+text(ax, 70, 17, 'pas de racine, pas d’aire', 'limite', 'm')
+save(fig, '37-078')

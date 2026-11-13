@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 68, 60, 10, 'sujet', label=r'$pq\,\sin(\beta-\alpha)$')
+arrow(ax, (44, 68), (44, 60), 'fixe')
+box(ax, 4, 44, 80, 16, 'varie', label=r'$\sin(\beta-\alpha)=$' + '\n' + r'$\sin\beta\cos\alpha-\cos\beta\sin\alpha$', size='s')
+arrow(ax, (44, 44), (44, 36), 'fixe')
+u = 3.5
+poly(ax, [(4, 12), (4 + 6 * u, 12), (4 + 6 * u, 12 + 4 * u), (4, 12 + 4 * u)], 'sujet')
+text(ax, 4 + 3 * u, 12 + 2 * u, r'$6\times 4=24$', 'sujet', 's')
+text(ax, 4 + 3 * u, 7.5, r'$X_2Y_3$', 'sujet', 's')
+text(ax, 31, 12 + 2 * u, '−', 'encre', 'l')
+line(ax, [(37, 12), (37 + 5 * u, 12)], 'autre', lw=2.4)
+disc(ax, 37, 12, 1.0, 'autre'); disc(ax, 37 + 5 * u, 12, 1.0, 'autre')
+text(ax, 37 + 2.5 * u, 17, r'$5\times 0=0$', 'autre', 's')
+text(ax, 37 + 2.5 * u, 7.5, r'$X_3Y_2$', 'autre', 's')
+text(ax, 61, 12 + 2 * u, '=', 'encre', 'l')
+box(ax, 66, 12, 18, 14, 'resultat', label='24', size='l', weight='bold')
+save(fig, '37-103')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+cx, cy, R = 24, 32, 20.0
+P = lambda t, r: (cx + r * math.cos(math.radians(t)), cy + r * math.sin(math.radians(t)))
+ax.add_patch(Circle((cx, cy), R, ec=COL['sujet'], fc='none', lw=1.0, zorder=1))
+ax.add_patch(Circle((cx, cy), R / 2, ec=COL['autre'], fc='none', lw=1.0, zorder=1))
+poly(ax, [P(90, R), P(210, R), P(330, R)], 'fixe')
+line(ax, [(cx, cy), P(90, R)], 'sujet', lw=1.6)
+line(ax, [(cx, cy), (cx, cy - R / 2)], 'autre', lw=1.6)
+disc(ax, cx, cy, 0.8, 'encre')
+text(ax, cx + 2.6, cy + 9, '$R$', 'sujet', 'm'); text(ax, cx + 2.6, cy - 5, '$r$', 'autre', 'm')
+text(ax, 50, 54, 'côté 10', 'fixe', 's', ha='left')
+text(ax, 50, 47, '$R$ ≈ 5,77', 'sujet', 'm', ha='left')
+text(ax, 50, 40, '$r$ ≈ 2,89', 'autre', 'm', ha='left')
+text(ax, 50, 32, '$R$ ÷ $r$ = 2', 'resultat', 'm', ha='left', weight='bold')
+text(ax, 50, 22, 'côté 6', 'fixe', 's', ha='left')
+text(ax, 50, 15, '3,46 ÷ 1,73 = 2', 'resultat', 's', ha='left')
+save(fig, '37-131')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+k = 0.3; t = math.radians(53); y0 = 10
+P0 = (6, y0); P1 = (6 + 120 * k, y0)
+sh = 110 * k * math.cos(t); hh = 110 * k * math.sin(t)
+P3 = (6 + sh, y0 + hh); P2 = (P1[0] + sh, y0 + hh)
+poly(ax, [P0, P1, P2, P3], 'sujet')
+poly(ax, [P0, P1, P3], 'autre')
+line(ax, [P3, (P3[0], y0)], 'varie', dash=True, lw=1.1)
+line(ax, [(P3[0] + 2.2, y0), (P3[0] + 2.2, y0 + 2.2), (P3[0], y0 + 2.2)], 'varie', lw=0.7)
+text(ax, 24, y0 - 3.5, '120', 'sujet', 's'); text(ax, 9.5, y0 + 14, '110', 'sujet', 's')
+text(ax, 12, y0 + 2.2, '53°', 'fixe', 's')
+text(ax, P3[0] + 1.2, y0 + 8, 'hauteur', 'varie', 's', ha='left'); text(ax, P3[0] + 1.2, y0 + 4.6, '≈ 87,85', 'varie', 's', ha='left')
+text(ax, 64, 36, 'base × hauteur', 'sujet', 's', ha='left')
+text(ax, 64, 29, '120 × 87,85', 'sujet', 's', ha='left')
+text(ax, 64, 22, '≈ 10 542 m²', 'sujet', 's', ha='left', weight='bold')
+text(ax, 64, 13, 'triangle violet', 'autre', 's', ha='left'); text(ax, 64, 8.5, '= 5 271 m²', 'autre', 's', ha='left')
+save(fig, '37-141')

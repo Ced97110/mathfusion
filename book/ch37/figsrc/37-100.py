@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+u = 4.4
+def mkP(ox, oy): return lambda x, y: (ox + u * x, oy + u * y)
+P1, P2 = mkP(3, 8), mkP(49, 8)
+o = [(1, 1), (7, 1), (6, 5)]; m = [(0, 0), (6, 0), (5, 4)]
+poly(ax, [P1(*p) for p in o], 'fixe', fill=False, lw=0.8); ax.patches[-1].set_linestyle('--')
+poly(ax, [P1(*p) for p in m], 'sujet')
+for p, q in zip(o, m): arrow(ax, P1(*p), P1(*q), 'varie', lw=1.0)
+line(ax, [P1(5, 4), P1(5, 0)], 'fixe', dash=True)
+text(ax, P1(5, 2)[0] - 1.5, P1(5, 2)[1], r'$h = 4$', 'sujet', 's', ha='right')
+text(ax, P1(3, 0)[0], P1(3, 0)[1] - 3.5, '6', 'sujet', 's')
+text(ax, 22, 48, 'tout le triangle bouge\naire : 12 → 12', 'resultat', 's')
+poly(ax, [P2(*p) for p in o], 'fixe', fill=False, lw=0.8); ax.patches[-1].set_linestyle('--')
+poly(ax, [P2(1, 1), P2(7, 1), P2(6, 7)], 'varie')
+arrow(ax, P2(6, 5), P2(6, 7), 'varie')
+line(ax, [P2(6, 7), P2(6, 1)], 'fixe', dash=True)
+text(ax, P2(6, 3)[0] - 1.5, P2(6, 3)[1], r'$h = 6$', 'varie', 's', ha='right')
+text(ax, P2(6.4, 6.2)[0] + 2.5, P2(6.4, 6.2)[1], '+2', 'varie', 's', ha='left')
+text(ax, P2(4, 1)[0], P2(4, 1)[1] - 6.5, '6', 'varie', 's')
+text(ax, 66, 48, 'un seul coin bouge\naire : 12 → 18', 'varie', 's')
+save(fig, '37-100')
