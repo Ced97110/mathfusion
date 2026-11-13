@@ -1,6 +1,9 @@
-<div class="pk">Chapitre 7</div>
-<h1>Principes additif et multiplicatif ; inclusion-exclusion</h1>
-<h2>1. Le problème qui a forcé la notion</h2>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 7</div>
+<h1 class="ct">Principes additif et multiplicatif ; inclusion-exclusion</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<section class="sec" id="s1"><div class="sk">Chapitre 7 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Compter beaucoup, vite et juste</h3>
 <p>Tu as appris à compter un par un. Cette méthode marche pour cinq objets. Elle ne marche plus pour des millions d’objets, ni pour des objets qui ne sont pas sous tes yeux. Voici trois questions de ce genre.</p>
 <p class="li">Dix personnes sont dans une salle. Chacune serre la main de chaque autre exactement une fois. Combien de poignées de main ont eu lieu ?</p>
@@ -21,7 +24,8 @@
 <p><b>(b)</b> De combien de façons peux-tu tirer une carte qui est rouge <i>et</i> une figure ? La règle « et, on multiplie » donne <span class="m">26 × 12 = 312</span>. C’est plus que les 52 cartes du jeu. La vraie réponse est 6 : valet, dame et roi de carreau et de cœur.</p>
 <p><b>(c)</b> Tu tires deux cartes l’une après l’autre : la première rouge, la seconde une figure. La règle « et, on multiplie » donne encore <span class="m">26 × 12 = 312</span>. La vraie réponse est 306. Tu verras pourquoi dans la partie 4.</p>
 <p>Tes règles marchent pour le restaurant et échouent pour les cartes. Le restaurant remplit donc des conditions que les cartes ne remplissent pas. Ce chapitre cherche ces conditions.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 7 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Un même total vu de deux façons</h3>
 <p>Tu vas acheter un yogourt glacé. Tu choisis un parfum parmi 6 et une garniture parmi 4. La figure 7.1 montre tous tes choix possibles.</p>
 <img class="vf" src="/discretes/img/c007/p0210_1.svg" alt="numéro du yogourt A (G1) 1 2 3 4 5 6 6 B (G2) 1 2 3 4 5 6 6 6+6+6+6 = 4 × 6 C (G3) 1 2 3 4 5 6 6 = 24 D (G4) 1 2 3 4 5 6 6" style="--w:24.12" loading="lazy">
@@ -36,7 +40,8 @@
 <p>Les deux figures donnent les deux conditions que tu cherchais.</p>
 <p class="li">Pour additionner, il faut que les deux groupes n’aient <i>aucun</i> élément commun.</p>
 <p class="li">Pour multiplier, il faut que chaque premier choix laisse <i>le même nombre</i> de seconds choix.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 7 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Le principe additif</h3>
 <p>Un « événement » est ici une action dont le résultat peut prendre plusieurs formes. Choisir un beignet est un événement ; chaque beignet possible est une <i>façon</i> dont il peut se produire.</p>
 <img class="vm" src="/discretes/img/c007/p0212_3.svg" alt="Définition : événements disjoints Deux événements 𝐴 et 𝐵 sont disjoints quand aucune façon de réaliser 𝐴 n’est aussi une façon de réaliser 𝐵. Autrement dit, 𝐴 et 𝐵 ne peuvent pas se produire en même temps." style="--w:24.19" loading="lazy">
@@ -131,7 +136,8 @@
 <p>C’est le résultat du diagramme.</p>
 <img class="vm" src="/discretes/img/c007/p0227_43.svg" alt="Définition : principe d’inclusion-exclusion On appelle principe d’inclusion-exclusion la méthode qui compte une réunion d’ensembles non disjoints en incluant les ensembles, puis en excluant les intersections de deux ensembles, puis en réincluant les intersections de trois ensembles, et ainsi de suite." style="--w:24.19" loading="lazy">
 <p>Les formules pour deux et trois ensembles en sont les deux premiers cas. Le cas de quatre ensembles et plus sera traité au chapitre 12.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 7 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Les mots de deux lettres</h3>
 <p>Un « mot » est ici une suite de lettres, prononçable ou non : ZQ est un mot de deux lettres.</p>
 <h3>Combien de mots de deux lettres</h3>
@@ -185,7 +191,8 @@
 <img class="vm" src="/discretes/img/c007/p0234_56.svg" alt="5 + 4 + 10 + 2 + 1 + 2 + 9 = 33." style="--w:24.12" loading="lazy">
 <p>Les deux méthodes concordent.</p>
 <p>Le diagramme rempli de l’examen (figure 7.5, à droite) répond à d’autres questions sans calcul nouveau. Combien d’élèves ont échoué seulement en chimie ? La région « <span class="m">𝐶</span> seulement » : 0. Combien ont réussi l’algèbre mais échoué en biologie et en chimie ? La région dans <span class="m">𝐵</span> et <span class="m">𝐶</span> mais hors de <span class="m">𝐴</span> : 2. La formule donne seulement <span class="m">|𝐴 ∪ 𝐵 ∪ 𝐶|</span> ; le diagramme donne le détail de chaque région.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 7 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Tu as trois règles. Le principe additif compte une réunion d’ensembles disjoints. Le principe multiplicatif compte un produit cartésien. Le principe d’inclusion-exclusion compte une réunion d’ensembles qui se chevauchent. Les deux derniers se ramènent au premier : le principe multiplicatif additionne des lignes de même taille, et l’inclusion-exclusion corrige une somme qui compte certains éléments plusieurs fois.</p>
 <p class="li"><b>Chapitre 8 .</b> Chaque élément de <span class="m">{1, 2, 3, 4, 5}</span> est dans un sous-ensemble ou non : 2 choix, d’où <span class="m">2</span><sup>5</sup> <span class="m">= 32</span> sous-ensembles. Le principe additif reliera les nombres de sous-ensembles de chaque taille.</p>
 <p class="li"><b>Chapitre 9 .</b> Choisir 3 objets parmi 5, dans l’ordre et sans remise, donne <span class="m">5 ⋅ 4 ⋅ 3</span> : le nombre de choix diminue, mais il ne dépend que du <i>nombre</i> d’objets déjà pris, pas de <i>lesquels</i>. Le principe multiplicatif s’applique, contrairement au tirage des cartes.</p>
@@ -193,5 +200,7 @@
 <p class="li"><b>Chapitre 12.</b> L’inclusion-exclusion pour un nombre quelconque d’ensembles : dérangements, et nombre de fonctions de <span class="m">{1, … , 5}</span> dans <span class="m">{𝑎, 𝑏, 𝑐, 𝑑}</span> qui atteignent les quatre lettres.</p>
 <p class="li"><b>Chapitre 13.</b> Le tableau de toutes les méthodes de dénombrement, chacune fondée sur les deux principes.</p>
 <p class="li"><b>Chapitres 11  et 21.</b> Les 10 biscuits pour 7 enfants ; les 10 personnes qui se serrent la main, qui forment un graphe complet.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 7 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c007/p0237_57.svg" alt="À toi de chercher Tu sais que |𝐴 × 𝐵| = |𝐴| ⋅ |𝐵| et qu’il y a 𝑘𝑛 fonctions d’un ensemble à 𝑛 éléments dans un ensemble à 𝑘 éléments. Pousse ces deux formules jusqu’à zéro. Que vaut |𝐴 × ∅| ? Combien y a-t-il de fonctions de l’ensemble vide ∅ dans {𝑎, 𝑏, 𝑐, 𝑑} ? La formule dit 40. Combien y a-t-il de fonctions de {1, 2, 3, 4, 5} dans ∅ ? La formule dit 05. Et de ∅ dans ∅ ? Pour chaque cas, la définition d’une fonction (chapitre 6) et la formule 𝑘𝑛 donnent-elles la même réponse ? Que t’apprend ce test sur la valeur de 40 ?" style="--w:24.19" loading="lazy">
+</div>
