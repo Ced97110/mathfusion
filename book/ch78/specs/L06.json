@@ -1,0 +1,187 @@
+[
+ {
+  "code": "78-081",
+  "a_dire": "Les nombres 4 et 7 viennent du produit zw des complexes z = 1 + 2i et w = 2 + 3i.",
+  "legende_titre": "D’où viennent 4 et 7",
+  "lecture": [
+   "Le bloc bleu est z et le bloc violet est w : ce sont les deux nombres complexes que l’on multiplie.",
+   "Les deux blocs verts donnent le produit zw : moins 4 et 7.",
+   "Le bloc gris du bas écrit 4 au carré plus 7 au carré, qui fait 65, comme 5 fois 13."
+  ],
+  "a_voir": "Les deux nombres du produit zw sont ceux dont on prend les carrés pour obtenir 65."
+ },
+ {
+  "code": "78-082",
+  "a_dire": "Le conjugué se calcule par x barre = T(x) fois 1 moins x, règle valable dans toute algèbre de composition.",
+  "legende_titre": "Une règle pour le conjugué",
+  "lecture": [
+   "Le bloc orange est le nombre T(x) fois l’unité, ici 2.",
+   "Le bloc bleu est l’élément x, ici 1 + 2i.",
+   "Le bloc vert est le résultat : le conjugué 1 − 2i, celui du cas."
+  ],
+  "a_voir": "On retire x de T(x) fois 1 et l’on obtient le conjugué."
+ },
+ {
+  "code": "78-083",
+  "a_dire": "Le produit de x barre par x donne le nombre Q(x) multiplié par l’unité : les termes mêlés se détruisent.",
+  "legende_titre": "Un élément fois son conjugué",
+  "lecture": [
+   "Le bloc bleu est le quaternion de nombres 1, 1, 1, 1 et le bloc violet est son conjugué.",
+   "Le bloc vert garde les quatre carrés, qui donnent 4.",
+   "Le bloc orange montre les termes mêlés, ij moins ij, qui font 0.",
+   "Le bloc gris du bas donne le résultat : 4 fois 1, soit Q(x) fois 1."
+  ],
+  "a_voir": "Seuls les carrés restent dans le produit."
+ },
+ {
+  "code": "78-084",
+  "a_dire": "Le conjugué d’un quaternion garde la partie réelle et change le signe des trois unités imaginaires.",
+  "legende_titre": "Le conjugué d’un quaternion",
+  "lecture": [
+   "La rangée bleue du haut est le quaternion 𝑥 = 𝑎 + 𝑏𝑖 + 𝑐𝑗 + 𝑑𝑘 de nombres 1, 2, 3 et 4.",
+   "Dans la rangée du bas, la case grise reste 1 : la partie réelle ne change pas.",
+   "Les trois cases orange ont changé de signe : −2, −3 et −4.",
+   "Les deux cases vertes donnent la somme 2 et le produit 30."
+  ],
+  "a_voir": "Une seule case garde son signe : la partie réelle ; les trois unités imaginaires changent de signe."
+ },
+ {
+  "code": "78-085",
+  "a_dire": "Une algèbre alternative exige que seuls les triplets x, x, y et y, x, x s’associent, ce qui est entre l’associative et la quelconque.",
+  "legende_titre": "Entre associative et quelconque",
+  "lecture": [
+   "En haut, le cas : (𝑒₁𝑒₁)𝑒₂ et 𝑒₁(𝑒₁𝑒₂) valent tous deux −𝑒₂, donc le triplet 𝑒₁, 𝑒₁, 𝑒₂ s’associe.",
+   "Chaque rangée est une sorte d’algèbre et chaque colonne est un type de triplet.",
+   "Une case verte dit que l’associateur vaut 0 : le triplet s’associe.",
+   "La rangée associative a trois cases vertes, la rangée quelconque aucune ; la rangée alternative a deux cases vertes et une case en pointillé."
+  ],
+  "a_voir": "L’alternative exige les deux premiers triplets, pas le troisième."
+ },
+ {
+  "code": "78-086",
+  "a_dire": "Deux lettres égales avec une troisième s’associent, alors que trois unités différentes peuvent ne pas s’associer : c’est une forme faible de l’associativité.",
+  "legende_titre": "Une associativité affaiblie",
+  "lecture": [
+   "À gauche, en rouge, trois unités différentes donnent deux résultats opposés, moins e6 et e6.",
+   "À droite, en vert, deux unités égales et une autre donnent le même résultat des deux côtés.",
+   "La conclusion en bleu : on exige moins de triplets."
+  ],
+  "a_voir": "Les triplets à deux lettres égales s’associent, ceux à trois lettres différentes non."
+ },
+ {
+  "code": "78-087",
+  "a_dire": "Une algèbre de composition est alternative avec conjugaison, et réciproquement ; sans le conjugué, l’égalité de composition échoue.",
+  "legende_titre": "Le théorème de Jacobson",
+  "lecture": [
+   "Le bloc bleu est l’algèbre de composition, avec sa formule sur Q.",
+   "Le bloc violet est l’algèbre alternative avec conjugaison, avec sa formule.",
+   "La flèche à deux pointes dit que chaque côté donne l’autre.",
+   "En rouge, le produit terme à terme de (1, 1) par (1, 1) donne 2 d’un côté et 4 de l’autre."
+  ],
+  "a_voir": "Sans conjugaison, les deux membres rouges ne sont pas égaux."
+ },
+ {
+  "code": "78-088",
+  "a_dire": "La preuve part de Q(xy)1 = (ȳ x̄)(xy), et l’étape qui porte tout est le regroupement par l’identité de Moufang, qui mène à Q(x)Q(y)1.",
+  "legende_titre": "Trois temps de la preuve",
+  "lecture": [
+   "Le bloc bleu du haut est le départ : 𝑄(𝑥𝑦)1 = (𝑦̄ 𝑥̄)(𝑥𝑦).",
+   "Le bloc orange, épais, est l’étape qui porte tout : le regroupement par l’identité de Moufang, qui remplace l’associativité.",
+   "La flèche du milieu se lit avec 𝑥̄ 𝑥 = 𝑄(𝑥)1.",
+   "Le bloc vert du bas est l’arrivée : 𝑄(𝑥) fois 𝑄(𝑦) fois 1."
+  ],
+  "a_voir": "Tout repose sur le bloc orange du milieu."
+ },
+ {
+  "code": "78-089",
+  "a_dire": "L’identité de Moufang dit que (ux)(yu) et u(xy)u sont égaux ; avec les nombres 2, 3, 4, les deux côtés valent 48.",
+  "legende_titre": "Deux groupements, un résultat",
+  "lecture": [
+   "Les quatre cases sont u, x, y et u, avec les nombres 2, 3, 4 et 2.",
+   "Les accolades bleues du haut regroupent ux et yu : 6 fois 8, soit 48.",
+   "L’accolade orange du bas regroupe xy : 2 fois 12 fois 2, soit 48."
+  ],
+  "a_voir": "Les deux regroupements donnent 48."
+ },
+ {
+  "code": "78-090",
+  "a_dire": "Le double D de A est l’ensemble des couples (u, v) d’éléments de A, avec un produit choisi par un nombre c non nul.",
+  "legende_titre": "Le double d’une algèbre",
+  "lecture": [
+   "Le bloc bleu de gauche est l’algèbre A : ici les nombres réels.",
+   "Les deux blocs bleus de droite forment un couple (u, v) : 1 et 2.",
+   "Le bloc orange est le nombre fixé c, ici moins 1.",
+   "Le bloc vert est le double : avec ce c, on obtient les nombres complexes."
+  ],
+  "a_voir": "Le double est fait de couples, et c choisit le produit."
+ },
+ {
+  "code": "78-091",
+  "a_dire": "La première coordonnée du produit est ux plus c fois ȳ fois v : on calcule deux termes puis on les additionne.",
+  "legende_titre": "Première coordonnée du produit",
+  "lecture": [
+   "Le bloc bleu du haut est le premier couple (1, 2) et le bloc violet est le second (2, 3).",
+   "Le bloc bleu du bas est ux, qui vaut 2.",
+   "Les deux blocs orange sont ȳ fois v, qui vaut 6, puis c fois 6, qui vaut moins 6.",
+   "Le bloc vert additionne : 2 moins 6, soit moins 4."
+  ],
+  "a_voir": "Deux chemins arrivent à la somme moins 4."
+ },
+ {
+  "code": "78-092",
+  "a_dire": "La seconde coordonnée du produit est yu plus v fois x barre : deux termes que l’on additionne.",
+  "legende_titre": "Seconde coordonnée du produit",
+  "lecture": [
+   "Le bloc bleu du haut est le premier couple (2, 1) et le bloc violet est le second (1, 4).",
+   "Le bloc bleu du milieu est yu, qui vaut 8.",
+   "Le bloc violet du milieu est v fois x barre, qui vaut 1.",
+   "En bas, la case grise est la première coordonnée, moins 2, et la case verte est la seconde, 9."
+  ],
+  "a_voir": "La case verte 9 est la somme 8 plus 1."
+ },
+ {
+  "code": "78-093",
+  "a_dire": "La conjugaison de D garde le conjugué de la première coordonnée et change le signe de la seconde.",
+  "legende_titre": "Conjuguer un couple",
+  "lecture": [
+   "Les deux blocs bleus du haut sont le couple (x, y) = (2, 3).",
+   "La flèche grise mène au conjugué de x, ici 2 : la case grise ne change pas.",
+   "La flèche orange mène à moins y, ici moins 3 : la case orange a changé de signe."
+  ],
+  "a_voir": "Seule la seconde coordonnée change de signe."
+ },
+ {
+  "code": "78-094",
+  "a_dire": "La forme du double vaut Q(x) moins c fois Q(y).",
+  "legende_titre": "La forme d’un couple",
+  "lecture": [
+   "La colonne bleue est Q(x), la colonne orange est c fois Q(y), la colonne verte est le résultat.",
+   "Pour le couple (1, 2) : 1 moins moins 1 fois 4, soit 5.",
+   "Pour le couple (−4, 7) : 16 moins moins 1 fois 49, soit 65."
+  ],
+  "a_voir": "La même formule s’applique aux deux couples."
+ },
+ {
+  "code": "78-095",
+  "a_dire": "Avec c = −1, la forme du double est Q(x) plus Q(y) : deux fois plus de carrés mis bout à bout.",
+  "legende_titre": "Deux sommes de carrés bout à bout",
+  "lecture": [
+   "Les deux carrés bleus ont pour côtés 1 et 2 : leur somme de carrés est 5.",
+   "Les deux carrés violets ont pour côtés 3 et 4 : leur somme de carrés est 25.",
+   "Le total vert est 5 plus 25, soit 30 : quatre carrés au lieu de deux."
+  ],
+  "a_voir": "Les quatre carrés réunis donnent Q(x) plus Q(y)."
+ },
+ {
+  "code": "78-096",
+  "a_dire": "Le signe Q(x) se lit « Q de x » et dit la somme des carrés des coordonnées de x.",
+  "legende_titre": "Lire le signe Q(x)",
+  "lecture": [
+   "Le grand signe bleu du haut se lit Q de x.",
+   "Le bloc bleu dit ce que fait Q : la somme des carrés.",
+   "Le bloc violet dit que x est un élément de l’algèbre.",
+   "Les deux blocs verts donnent deux cas : 25 pour 3 + 4i et 4 pour le quaternion 1, 1, 1, 1."
+  ],
+  "a_voir": "Le même signe Q(x) sert pour toutes les algèbres."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 61, 'Nombres, produit ordinaire', 'autre', 's', weight='bold')
+text(ax, 66, 61, 'Algèbre de Lie, crochet', 'sujet', 's', weight='bold')
+box(ax, 2, 40, 40, 14, 'resultat', label=r'$e=1$ : $1\times 7=7$', size='m')
+box(ax, 2, 20, 40, 14, 'limite', label=r'$2\times 2=4\neq 0$', size='m')
+box(ax, 46, 40, 40, 14, 'resultat', label=r'$[x,x]=0$ toujours', size='m')
+box(ax, 46, 20, 40, 14, 'limite', label=r'$[e,e]=0\neq e$', size='m')
+text(ax, 22, 14, 'la règle est fausse', 'limite', 's')
+text(ax, 66, 14, 'aucune unité possible', 'limite', 's')
+text(ax, 44, 8, r'$[x,x]=0$ exclut l’unité', 'sujet', 'm')
+save(fig, '78-049')

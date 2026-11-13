@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 20, 50, 48, 11, 'fixe', label='algèbre non associative')
+box(ax, 2, 22, 40, 18, 'autre', label='algèbre de Lie\n' + r'$ab=-ba$')
+box(ax, 46, 22, 40, 18, 'sujet', label='algèbre de Jordan\n' + r'$ab=ba$')
+arrow(ax, (36, 50), (22, 40.5), 'fixe')
+arrow(ax, (52, 50), (66, 40.5), 'fixe')
+text(ax, 22, 17, 'l’échange change le signe', 'autre', 's')
+text(ax, 66, 17, 'l’échange ne change rien', 'sujet', 's')
+box(ax, 12, 2, 64, 9, 'fixe', dash=True, label=r'$2\neq0$ : on peut diviser par 2')
+save(fig, '78-065')

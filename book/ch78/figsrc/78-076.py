@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 34, 30, 18, 'fixe', label='identité\nsur les carrés')
+box(ax, 56, 34, 30, 18, 'resultat', label='algèbre de\ncomposition')
+arrow(ax, (33, 43), (55, 43), 'varie')
+text(ax, 44, 48, 'modifier le produit', 'varie', 's')
+text(ax, 44, 38, '$Q$ ne change pas', 'fixe', 's')
+text(ax, 44, 27, '(1, 0) est une unité', 'resultat', 's')
+box(ax, 14, 6, 60, 16, 'resultat', fill=False, label=r'$(1,0)\times(2,3)=(2,3)$')
+save(fig, '78-076')

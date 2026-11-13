@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,2,48,30,14,'sujet',label='corps gauche\nfini')
+arrow(ax,(33,55),(52,55),'varie')
+box(ax,53,48,33,14,'resultat',label=r'commutatif : $ab=ba$')
+box(ax,2,8,30,14,'autre',label=r'$\mathbb{H}$ : infini')
+arrow(ax,(33,15),(52,15),'varie')
+box(ax,53,8,33,14,'limite',label=r'$ij=k$, $ji=-k$')
+text(ax,69,27,'non commutatif','limite','m')
+text(ax,17,36,'sans finitude :','fixe','s')
+text(ax,17,32,'ça casse','limite','s')
+line(ax,[(2,41),(86,41)],'fixe',dash=True)
+save(fig,'78-114')

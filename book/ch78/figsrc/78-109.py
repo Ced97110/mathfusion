@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+poly(ax, [(6, 22), (50, 22), (50, 50), (6, 50)], 'resultat')
+line(ax, [(4, 22), (54, 22)], 'fixe', lw=1.6)
+arrow(ax, (24, 22), (24, 56), 'varie', lw=1.4)
+line(ax, [(24, 25.5), (27.5, 25.5), (27.5, 22)], 'varie')
+text(ax, 54, 17, r'droite $F\,1$', 'fixe', 's', ha='right')
+text(ax, 28, 58, r'$t$', 'varie', 'l', ha='left')
+text(ax, 54, 64, r'$t\perp F\,1,\ Q(t)\neq0$', 'varie', 's', ha='right')
+text(ax, 40, 36, r'$x+yt$', 'resultat', 'l')
+box(ax, 58, 30, 28, 14, 'sujet', label='double\nde la droite')
+arrow(ax, (51, 37), (57, 37), 'varie')
+save(fig, '78-109')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 3, 66, 22, 15, 'fixe', label='$x$\n2  0\n0  1')
+box(ax, 33, 66, 24, 15, 'sujet', label='$x^2$\n4  0\n0  1')
+box(ax, 64, 66, 24 - 2, 15, 'sujet', label='$x^3$\n8  0\n0  1')
+arrow(ax, (25, 73.5), (33, 73.5), 'varie'); arrow(ax, (57, 73.5), (64, 73.5), 'varie')
+box(ax, 22, 39, 44, 17, 'resultat', label='$x^2∘x^3=x^5$\n32  0\n0  1')
+arrow(ax, (45, 66), (38, 56), 'varie'); arrow(ax, (75, 66), (50, 56), 'varie')
+text(ax, 44, 33, 'exposants : 2 + 3 = 5', 'varie', 's')
+box(ax, 3, 3, 82, 24, 'fixe')
+text(ax, 44, 22, 'associatif : tous les triplets', 'fixe', 's')
+box(ax, 21, 5.5, 46, 9, 'sujet', label='Jordan : $(x^2, y, x)$')
+save(fig, '78-130')

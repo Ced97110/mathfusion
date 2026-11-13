@@ -1,0 +1,192 @@
+[
+ {
+  "code": "78-145",
+  "a_dire": "Le conjugué de x, divisé par Q(x), est l'inverse de x.",
+  "legende_titre": "Conjugué et inverse d'un octonion",
+  "lecture": [
+   "Le bleu est x = 1 + e₁.",
+   "Le violet est son conjugué : le signe de e₁ a changé.",
+   "Le premier vert donne x fois son conjugué : 2, qui est Q(x).",
+   "Le dernier vert divise le conjugué par 2 : c'est l'inverse de x."
+  ],
+  "a_voir": "Un conjugué divisé par Q(x) donne l'inverse."
+ },
+ {
+  "code": "78-146",
+  "a_dire": "Si x n'est pas nul, Q(x) est positif, donc on peut diviser et x a un inverse.",
+  "legende_titre": "Pourquoi un inverse existe",
+  "lecture": [
+   "Les huit cases sont les carrés des coordonnées de x : deux bleues valent 1, six grises valent 0.",
+   "L'accolade les additionne : Q(x) vaut 2, positif.",
+   "Comme Q(x) est positif, on peut diviser par lui.",
+   "Le vert dit que x fois le conjugué divisé par Q(x) vaut 1."
+  ],
+  "a_voir": "Au moins un carré non nul rend Q(x) positif, donc la division est possible."
+ },
+ {
+  "code": "78-147",
+  "a_dire": "Q(xy) = Q(x)Q(y) est la formule des huit carrés : chaque côté est fait de huit carrés.",
+  "legende_titre": "Huit carrés pour chaque produit",
+  "lecture": [
+   "La rangée bleue est Q(x) : huit carrés.",
+   "La rangée violette est Q(y) : huit carrés.",
+   "La rangée verte est Q(xy) : huit carrés, ceux des coordonnées du produit.",
+   "Le cadre vert écrit l'égalité des deux côtés."
+  ],
+  "a_voir": "Un produit de deux sommes de huit carrés est une somme de huit carrés."
+ },
+ {
+  "code": "78-148",
+  "a_dire": "Les puissances 1, x, x², x³, x⁴ sont liées dans un espace de dimension 4 ; un facteur de degré 1 ou 2 s'annule en x.",
+  "legende_titre": "Premier pas de Frobenius",
+  "lecture": [
+   "Les cinq cases bleues sont 1, x, x², x³ et x⁴.",
+   "Le gris est l'espace de dimension 4 : 5 est plus grand que 4.",
+   "Donc les cinq éléments sont liés : x est racine d'un polynôme réel p.",
+   "Le dernier cadre dit qu'un facteur de degré au plus 2 s'annule en x."
+  ],
+  "a_voir": "Cinq éléments dans un espace de dimension 4 donnent une équation pour x."
+ },
+ {
+  "code": "78-149",
+  "a_dire": "Dans une algèbre à division, un produit nul a un facteur nul.",
+  "legende_titre": "Un produit nul et ses facteurs",
+  "lecture": [
+   "À gauche, en vert, dans une algèbre à division : si 𝑎𝑏 = 0 et 𝑎 ≠ 0, on multiplie par l’inverse de 𝑎 et on trouve 𝑏 = 0.",
+   "À droite, la matrice bleue et la matrice violette ont pour produit la matrice nulle, en rouge.",
+   "Aucune des deux matrices n’est nulle, et 𝑎 n’a pas d’inverse : ce n’est pas une algèbre à division."
+  ],
+  "a_voir": "Le produit nul sans facteur nul est impossible en division, parce que 𝑎 a un inverse."
+ },
+ {
+  "code": "78-150",
+  "a_dire": "x s'écrit a + y, avec a réel et y² réel négatif ou nul.",
+  "legende_titre": "Deuxième pas de Frobenius",
+  "lecture": [
+   "Le gris est a = 3, la partie réelle.",
+   "Le bleu est y = 2i, le reste.",
+   "La droite graduée montre y² = −4 : le point vert est dans la zone négative.",
+   "Le cadre du bas montre le calcul : (x − 3)² vaut 9 − 13, soit −4."
+  ],
+  "a_voir": "x se coupe en un réel et un élément dont le carré est négatif."
+ },
+ {
+  "code": "78-151",
+  "a_dire": "Chaque élément est un réel plus un élément de A', et d'une seule façon : A = ℝ ⊕ A'.",
+  "legende_titre": "Un réel plus un élément de A'",
+  "lecture": [
+   "L'axe gris horizontal est celui des réels ℝ.",
+   "L'axe bleu vertical est le sous-espace A'.",
+   "Le point vert est x ; les pointillés lisent a = 3 sur ℝ et y = 2i sur A'.",
+   "Chaque point se lit d'une seule façon sur les deux axes."
+  ],
+  "a_voir": "Chaque x se décompose en une partie réelle et une partie dans A'."
+ },
+ {
+  "code": "78-152",
+  "a_dire": "On choisit i et j orthogonaux de carré −1 ; k = ij est le troisième, de carré −1 aussi.",
+  "legende_titre": "Troisième pas de Frobenius",
+  "lecture": [
+   "Les trois flèches i (bleue), j (violette) et k (verte) partent du même point, à angle droit.",
+   "Les trois cadres à droite donnent le carré de chacune : −1.",
+   "k est le produit de i par j.",
+   "Le cadre orange est l'étape clé : ij = −ji."
+  ],
+  "a_voir": "Trois éléments orthogonaux de carré −1 se multiplient comme les unités de ℍ."
+ },
+ {
+  "code": "78-153",
+  "a_dire": "Dans un espace de dimension 4, il n'y a pas de place pour un cinquième élément l qui anticommute.",
+  "legende_titre": "Pas de cinquième élément",
+  "lecture": [
+   "Les quatre cases bleues 1, i, j, k remplissent l'espace de dimension 4, en pointillés gris.",
+   "La case rouge en pointillés est le cinquième élément l : il n'a pas de place.",
+   "Les deux cadres du milieu sont les deux résultats contradictoires pour lk.",
+   "Le cadre rouge du bas est la conséquence : lk = 0, impossible."
+  ],
+  "a_voir": "Un cinquième élément mène à une contradiction."
+ },
+ {
+  "code": "78-154",
+  "a_dire": "La chaîne de cinq égalités passe de l(ij) à (ij)l en déplaçant des parenthèses et en changeant des signes.",
+  "legende_titre": "La chaîne de cinq égalités",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : l(ij).",
+   "Chaque flèche grise déplace une parenthèse.",
+   "Chaque flèche orange change un signe, grâce à li = −il ou lj = −jl.",
+   "Le cadre vert est l'arrivée : (ij)l, donc lk = kl."
+  ],
+  "a_voir": "Cinq pas relient l(ij) à (ij)l."
+ },
+ {
+  "code": "78-155",
+  "a_dire": "lk = kl et lk = −kl donnent lk = 0, impossible car l et k ne sont pas nuls.",
+  "legende_titre": "Deux égalités qui se contredisent",
+  "lecture": [
+   "Le bleu et le violet sont les deux égalités pour lk.",
+   "Ensemble elles donnent 2 lk = 0, puis lk = 0 après division par 2.",
+   "En dessous, l et k sont non nuls.",
+   "Le rouge dit qu'un tel produit nul est impossible en division."
+  ],
+  "a_voir": "Un produit nul de deux éléments non nuls ne peut pas exister en division."
+ },
+ {
+  "code": "78-156",
+  "a_dire": "L'associativité sert dans trois des cinq égalités : chaque fois qu'une parenthèse change de place.",
+  "legende_titre": "Où sert l'associativité",
+  "lecture": [
+   "Les cinq ronds sont les cinq égalités de la chaîne.",
+   "Les ronds orange 1, 3 et 5 déplacent une parenthèse.",
+   "Les ronds gris 2 et 4 changent seulement un signe.",
+   "Les deux cadres du bas rappellent ce que veulent dire l'orange et le gris."
+  ],
+  "a_voir": "Trois égalités sur cinq utilisent l'associativité."
+ },
+ {
+  "code": "78-157",
+  "a_dire": "Dans les octonions, e₃(e₁e₂) et (e₃e₁)e₂ sont opposés : la chaîne casse et 𝕆 échappe à Frobenius.",
+  "legende_titre": "Une parenthèse qui change le signe",
+  "lecture": [
+   "Le bleu est e₃(e₁e₂) et le violet (e₃e₁)e₂ : même produit, parenthèses différentes.",
+   "Le vert donne e₃e₄ = e₆.",
+   "Le rouge donne −e₆.",
+   "Le signe ≠ entre les deux montre que le premier pas de la chaîne échoue."
+  ],
+  "a_voir": "Les deux parenthèses donnent deux résultats opposés."
+ },
+ {
+  "code": "78-158",
+  "a_dire": "Il n'y a pas d'algèbre à division réelle avec unité de dimension 3, même non associative.",
+  "legende_titre": "Dimensions 1, 2 et 3",
+  "lecture": [
+   "Chaque rond est une dimension ; les ronds verts, 1, 2, 4 et 8, sont ℝ, ℂ, ℍ et 𝕆 : ces algèbres existent.",
+   "Le rond rouge, 3, est la dimension où il n’y a aucune algèbre à division réelle avec unité.",
+   "En dimension 3, le polynôme est de degré 3 : il a une racine réelle, donc un produit nul."
+  ],
+  "a_voir": "La dimension 3 est impossible parce qu’un produit nul apparaît."
+ },
+ {
+  "code": "78-159",
+  "a_dire": "Une racine réelle λ donne (a − λ1)x = 0 avec x non nul : un diviseur de zéro.",
+  "legende_titre": "Une racine réelle donne un produit nul",
+  "lecture": [
+   "La courbe bleue est t³ − 8 : elle part du bas et monte vers le haut.",
+   "Le point vert est la racine λ = 2 : la courbe traverse l'axe.",
+   "La flèche orange mène à la conséquence.",
+   "Le cadre rouge : (a − λ1)x = 0 avec x non nul."
+  ],
+  "a_voir": "Un polynôme de degré 3 traverse l'axe, d'où un produit nul."
+ },
+ {
+  "code": "78-160",
+  "a_dire": "Le même argument exclut toute dimension impaire plus grande que 1.",
+  "legende_titre": "Les dimensions impaires exclues",
+  "lecture": [
+   "La droite graduée porte les dimensions de 1 à 9.",
+   "Le rond vert est la dimension 1 : les réels.",
+   "Les ronds rouges sont les dimensions impaires 3, 5, 7 et 9 : exclues.",
+   "Les ronds gris sont les dimensions paires : non traitées ici."
+  ],
+  "a_voir": "Toute dimension impaire plus grande que 1 est exclue."
+ }
+]

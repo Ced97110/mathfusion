@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+U = 8; th = math.atan2(1.5, 1)
+def panel(ox, first, second, res, role, up):
+    P = lambda x, y, z: iso(x, y, z, (ox, 38), U)
+    poly(ax, [P(0,0,0), P(2,0,0), P(3,1.5,0), P(1,1.5,0)], 'fixe')
+    z = 3 if up else -3
+    arrow(ax, P(0,0,0), P(0,0,z), role, lw=1.8)
+    arrow(ax, P(0,0,0), P(2,0,0), 'sujet', lw=1.6)
+    arrow(ax, P(0,0,0), P(1,1.5,0), 'varie', lw=1.6)
+    a = (1.1, 0, 0); b = (1.1*math.cos(th), 1.1*math.sin(th), 0)
+    if first == 'u': arrow(ax, P(*a), P(*b), 'varie', lw=0.9, curve=0.5)
+    else: arrow(ax, P(*b), P(*a), 'sujet', lw=0.9, curve=-0.5)
+    text(ax, ox + 20, 38 + 5, r'$u$', 'sujet', 'l')
+    text(ax, ox - 8, 38 + 13, r'$v$', 'varie', 'l')
+    text(ax, ox, 66 if up else 6, res, role, 's')
+panel(22, 'u', 'v', r'$u \times v$ = (0, 0, 3)', 'resultat', True)
+panel(66, 'v', 'u', r'$v \times u$ = (0, 0, −3)', 'autre', False)
+text(ax, 22, 74, r'pouce $u$, index $v$', 'encre', 's')
+text(ax, 66, 74, r'pouce $v$, index $u$', 'encre', 's')
+save(fig, '78-020')

@@ -1,0 +1,183 @@
+[
+ {
+  "code": "78-113",
+  "a_dire": "Il n'y a que trois algèbres de ce type : ℝ, ℂ et ℍ, de dimensions 1, 2 et 4 ; une cinquième dimension est impossible.",
+  "legende_titre": "Trois étages, pas de quatrième",
+  "lecture": [
+   "Les trois premières lignes bleues montrent ℝ, ℂ et ℍ avec leurs unités : 1 ; 1 et i ; 1, i, j et k.",
+   "La dernière ligne reprend ℍ en bleu et ajoute en rouge pointillé un cinquième élément l.",
+   "Le texte rouge donne la raison : l k serait égal à son opposé."
+  ],
+  "a_voir": "Après ℍ, il n'y a pas de place pour un cinquième élément."
+ },
+ {
+  "code": "78-114",
+  "a_dire": "Un corps gauche fini est toujours commutatif ; sans la finitude, ce n'est plus vrai.",
+  "legende_titre": "Fini, donc commutatif",
+  "lecture": [
+   "En haut, la boîte bleue (corps gauche fini) mène à la boîte verte : ab = ba.",
+   "En bas, la boîte violette ℍ est infinie.",
+   "La boîte rouge montre ce qui casse pour ℍ : ij = k mais ji = −k."
+  ],
+  "a_voir": "La finitude est ce qui force la commutativité."
+ },
+ {
+  "code": "78-115",
+  "a_dire": "Le signe ℍ désigne l'ensemble des quaternions, qui ont quatre coordonnées.",
+  "legende_titre": "Un signe pour les quaternions",
+  "lecture": [
+   "À gauche, le grand ℍ en bleu se lit « quaternions de Hamilton ».",
+   "À droite, quatre boîtes sont les quatre coordonnées : un réel, puis un nombre devant i, j et k.",
+   "En bas, ℝ (gris), ℂ (violet) et ℍ (bleu) ont la même double barre."
+  ],
+  "a_voir": "ℍ s'écrit comme ℝ et ℂ et désigne un ensemble à quatre coordonnées."
+ },
+ {
+  "code": "78-116",
+  "a_dire": "A* se lit « A étoile » : ce sont les éléments de A sans le 0.",
+  "legende_titre": "Tout sauf zéro",
+  "lecture": [
+   "L'accolade grise du haut regroupe tous les éléments de A.",
+   "La boîte rouge en pointillé est le 0, retiré.",
+   "Les boîtes bleues sont les éléments qui restent ; l'accolade bleue les nomme A*.",
+   "La boîte verte montre que 2 fois un demi égale 1 : le produit reste dans A*."
+  ],
+  "a_voir": "A* est A privé de 0."
+ },
+ {
+  "code": "78-117",
+  "a_dire": "La lettre q est le nombre d'éléments du centre F.",
+  "legende_titre": "q compte le centre",
+  "lecture": [
+   "Le grand cadre bleu est l'algèbre A.",
+   "Le cadre violet à l'intérieur est le centre F.",
+   "Les deux boîtes vertes 0 et 1 sont les éléments de F.",
+   "Le texte orange donne le compte : q = 2."
+  ],
+  "a_voir": "q est le nombre d'éléments de F ; ici q = 2."
+ },
+ {
+  "code": "78-118",
+  "a_dire": "L'algèbre a q^n éléments, où n est le nombre de coordonnées ; ici 2 × 2 = 4.",
+  "legende_titre": "n coordonnées, q^n éléments",
+  "lecture": [
+   "Les quatre boîtes bleues sont les quatre éléments : chacun a deux coordonnées, 0 ou 1.",
+   "La flèche orange du haut montre la première coordonnée, qui a 2 choix.",
+   "La flèche orange de gauche montre la deuxième coordonnée, qui a 2 choix.",
+   "La boîte verte compte : q^n = 2 × 2 = 4."
+  ],
+  "a_voir": "Chaque coordonnée a q choix, donc on multiplie q par lui-même n fois."
+ },
+ {
+  "code": "78-119",
+  "a_dire": "Φ_n est un polynôme qui divise λ^n − 1 ; pour n = 6 et q = 2, sa valeur 3 divise 63.",
+  "legende_titre": "Φ₆ divise 63 en groupes de 3",
+  "lecture": [
+   "Les 63 cases forment 2^6 − 1, comptées par l'accolade du bas.",
+   "Chaque colonne de 3 cases est un groupe de 3 ; il y en a 21.",
+   "La colonne verte est la valeur Φ₆(2) = 3."
+  ],
+  "a_voir": "Φ₆(2) = 3 entre un nombre exact de fois dans 63."
+ },
+ {
+  "code": "78-120",
+  "a_dire": "Pour u = (1, 2, 0) et v = (0, 1, 3), on calcule u × v coordonnée par coordonnée et on trouve (6, −3, 1).",
+  "legende_titre": "Un produit vectoriel chiffré",
+  "lecture": [
+   "La boîte bleue est u et la boîte violette est v.",
+   "Les trois boîtes orange sont les trois calculs : un produit moins un autre.",
+   "La boîte verte est le résultat : (6, −3, 1)."
+  ],
+  "a_voir": "Chaque coordonnée du résultat est un produit moins un produit."
+ },
+ {
+  "code": "78-121",
+  "a_dire": "La formule prend les coordonnées par paires dans l'ordre circulaire 2 3, puis 3 1, puis 1 2.",
+  "legende_titre": "Le motif de la formule",
+  "lecture": [
+   "Les trois disques orange sont les rangs 1, 2, 3 ; les flèches donnent l'ordre circulaire.",
+   "Les trois boîtes bleues sont les trois coordonnées du résultat, chacune un produit moins un autre.",
+   "Le texte vert vérifie sur (1, 0, 0) et (0, 1, 0) : on obtient (0, 0, 1)."
+  ],
+  "a_voir": "Chaque coordonnée utilise les deux autres rangs, dans l'ordre circulaire."
+ },
+ {
+  "code": "78-122",
+  "a_dire": "Le produit scalaire de u × v avec u, et avec v, vaut 0 : les flèches sont à angle droit.",
+  "legende_titre": "Deux sommes qui font zéro",
+  "lecture": [
+   "La ligne bleue calcule u · (u × v) : trois produits, de 6, −6 et 0.",
+   "La ligne violette calcule v · (u × v) : trois produits, de 0, −3 et 3.",
+   "Chaque boîte verte donne la somme : 0."
+  ],
+  "a_voir": "Un produit scalaire nul signale un angle droit."
+ },
+ {
+  "code": "78-123",
+  "a_dire": "Q(u)Q(v) vaut 50 mais Q(u × v) vaut 46 : la différence est 4.",
+  "legende_titre": "46 contre 50",
+  "lecture": [
+   "La barre violette du haut mesure 50.",
+   "La barre bleue du bas mesure 46.",
+   "Le bout rouge en pointillé est la partie qui manque : 4."
+  ],
+  "a_voir": "Les deux longueurs diffèrent de 4."
+ },
+ {
+  "code": "78-124",
+  "a_dire": "Q(u × v) + (u · v)² = Q(u)Q(v) : ici 46 + 4 = 50.",
+  "legende_titre": "46 plus 4 égale 50",
+  "lecture": [
+   "La boîte bleue est Q(u × v) = 46.",
+   "La boîte orange est (u · v)² = 4, car u · v = 2.",
+   "La boîte verte est Q(u)Q(v) = 5 × 10 = 50."
+  ],
+  "a_voir": "Les deux premières boîtes s'additionnent pour donner la troisième."
+ },
+ {
+  "code": "78-125",
+  "a_dire": "Le produit vectoriel garde la longueur seulement si u · v = 0 ; sinon il perd (u · v)².",
+  "legende_titre": "Quand la longueur se perd",
+  "lecture": [
+   "En haut, l’identité ; 𝑄 est la longueur au carré.",
+   "À gauche, 𝑢 et 𝑣 sont à angle droit : 𝑢 · 𝑣 = 0, et 1 = 1 × 1 − 0 : la longueur est gardée.",
+   "À droite, 𝑢 = (1 ; 2 ; 0) et 𝑣 = (0 ; 1 ; 3) ne sont pas à angle droit : 𝑢 · 𝑣 = 2.",
+   "La boîte rouge donne la perte : 46 = 50 − 4, avec 4 = (𝑢 · 𝑣)²."
+  ],
+  "a_voir": "La longueur n’est gardée que si 𝑢 · 𝑣 = 0 ; sinon il manque (𝑢 · 𝑣)²."
+ },
+ {
+  "code": "78-126",
+  "a_dire": "Le produit uv de deux quaternions sans partie réelle a pour partie réelle −(u · v) et pour partie vectorielle u × v, et il conserve la longueur.",
+  "legende_titre": "Deux parties dans le produit",
+  "lecture": [
+   "Les boîtes bleue et violette du haut sont u et v.",
+   "La boîte orange est la partie réelle : −2, l'opposé de u · v.",
+   "La boîte bleue du milieu est la partie vectorielle : (6, −3, 1).",
+   "La boîte verte dit que Q(uv) = Q(u)Q(v) = 50."
+  ],
+  "a_voir": "La partie réelle s'ajoute au produit vectoriel."
+ },
+ {
+  "code": "78-127",
+  "a_dire": "Q(uv) = 4 + 46 = 50 = Q(u)Q(v) : la partie réelle apporte les 4 manquants.",
+  "legende_titre": "Où sont passés les 4",
+  "lecture": [
+   "La boîte orange est la partie réelle −2, dont le carré est 4.",
+   "Les trois boîtes bleues sont 6, −3 et 1, dont les carrés font 36, 9 et 1, soit 46.",
+   "La boîte verte additionne : 4 + 46 = 50 = 5 × 10."
+  ],
+  "a_voir": "Le carré de la partie réelle complète les 46 pour atteindre 50."
+ },
+ {
+  "code": "78-128",
+  "a_dire": "Pour x et y symétriques, x ∘ y est la moitié de xy + yx, ici la moitié de x.",
+  "legende_titre": "Un produit de Jordan chiffré",
+  "lecture": [
+   "La matrice bleue est x et la matrice violette est y.",
+   "Les deux matrices orange sont xy (un 1 en bas à gauche) et yx (un 1 en haut à droite).",
+   "La matrice verte est la moitié de leur somme : elle vaut x/2."
+  ],
+  "a_voir": "La moitié de xy + yx donne x/2, une matrice symétrique."
+ }
+]

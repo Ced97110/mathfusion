@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 8, 70, 18, -3, 6)
+for v in (-2, 0, 3, 5): disc(ax, f(v), 18, 1.6, 'sujet')
+arrow(ax, (f(3), 22), (f(5), 22), 'varie', curve=-0.5)
+text(ax, f(4), 31, r'$3 < 5$', 'varie', 'm')
+arrow(ax, (f(-2), 22), (f(0), 22), 'varie', curve=-0.5)
+text(ax, f(-1), 31, r'$-2 < 0$', 'varie', 'm')
+text(ax, 44, 48, 'ℝ : deux nombres se comparent toujours', 'resultat', 's')
+save(fig, '78-026')

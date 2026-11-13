@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 56, 80, 11, 'sujet', label=r'$[x,y,z]=0 \Leftrightarrow (xy)z = x(yz)$')
+text(ax, 22, 47, r'$2,\ 3,\ 4$', 'resultat', 'm')
+box(ax, 4, 32, 36, 10, 'resultat', label=r'$24 - 24 = 0$')
+arrow(ax, (22, 32), (22, 22), 'resultat')
+box(ax, 4, 11, 36, 10, 'resultat', label='groupements égaux')
+text(ax, 66, 47, r'$E,\ E,\ G$', 'limite', 'm')
+box(ax, 48, 32, 36, 10, 'limite', label=r'$0-(-2E) = 2E$')
+arrow(ax, (66, 32), (66, 22), 'limite')
+box(ax, 48, 11, 36, 10, 'limite', label='groupements différents')
+save(fig, '78-038')

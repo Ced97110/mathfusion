@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 46, 36, 9, 'sujet', label=r'$(u,v)=(2,1)$')
+box(ax, 48, 46, 36, 9, 'autre', label=r'$(x,y)=(1,4)$')
+box(ax, 4, 28, 36, 10, 'sujet', label=r'$yu=4\cdot2=8$', size='s')
+text(ax, 44, 33, r'$+$', size='l')
+box(ax, 48, 28, 36, 10, 'autre', label=r'$v\bar{x}=1\cdot1=1$', size='s')
+arrow(ax, (22, 45), (22, 39.5), 'sujet'); arrow(ax, (66, 45), (66, 39.5), 'autre')
+arrow(ax, (44, 27), (55, 16), 'varie')
+box(ax, 30, 4, 14, 11, 'fixe', label=r'$-2$'); box(ax, 46, 4, 18, 11, 'resultat', label=r'$9$')
+text(ax, 20, 9.5, 'première', 'fixe', 's'); text(ax, 76, 9.5, 'seconde', 'resultat', 's')
+save(fig, '78-092')

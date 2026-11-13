@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+cx,cy,R=26,28,13
+disc(ax,cx,cy,R,'fixe',fill=False)
+line(ax,[(cx-R-3,cy),(cx+2*R+4,cy)],'fixe',lw=0.5)
+q=(cx+2*R,cy)
+for s in (1,-1):
+    z=(cx+R*0.5,cy+s*R*math.sqrt(3)/2)
+    line(ax,[q,z],'sujet',lw=1.2)
+    disc(ax,z[0],z[1],1.1,'sujet')
+line(ax,[q,(cx+R,cy)],'limite',lw=1.6)
+disc(ax,q[0],q[1],1.3,'encre')
+text(ax,q[0]+3.5,cy+2,r'$q$','encre','m')
+text(ax,cx+R-2,cy+3,r'$1$','encre','s')
+text(ax,cx+R*0.5-2.5,cy+R*0.866+2.5,r'$z$','sujet','m')
+text(ax,cx+R*0.5-2.5,cy-R*0.866-2.5,r'$\bar z$','sujet','m')
+text(ax,q[0]-6.5,cy-3,r'$q-1$','limite','s')
+text(ax,cx+R*0.5+R*0.55+2,cy+8.5,r'$\sqrt{3}$','sujet','s')
+text(ax,cx+R*0.5+R*0.55+2,cy-8.5,r'$\sqrt{3}$','sujet','s')
+text(ax,44,3.5,'bleus plus longs que le rouge','fixe','s')
+save(fig,'78-166')

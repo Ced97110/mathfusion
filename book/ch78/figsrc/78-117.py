@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,2,6,84,50,'sujet',fill=False,lw=1.0)
+text(ax,8,51,'$A$ : algèbre','sujet','m',ha='left')
+box(ax,16,18,56,24,'autre',lw=1.0)
+text(ax,44,38,'$F$ : le centre','autre','m')
+box(ax,26,22,16,10,'resultat',label='0')
+box(ax,46,22,16,10,'resultat',label='1')
+text(ax,44,10,r'$q=2$ éléments dans $F$','varie','m')
+save(fig,'78-117')

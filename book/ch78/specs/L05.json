@@ -1,0 +1,194 @@
+[
+ {
+  "code": "78-065",
+  "a_dire": "Une algèbre de Jordan est une algèbre non associative dont le produit est commutatif, sur un corps où 2 ≠ 0, à comparer à l’algèbre de Lie.",
+  "legende_titre": "Deux familles d’algèbres non associatives",
+  "lecture": [
+   "Le rectangle gris du haut est la grande famille : les algèbres non associatives.",
+   "Le rectangle violet est l’algèbre de Lie : si on échange les deux éléments, le signe change.",
+   "Le rectangle bleu est l’algèbre de Jordan : si on échange les deux éléments, rien ne change.",
+   "Le rectangle en pointillés rappelle la condition 2 ≠ 0 : on doit pouvoir diviser par 2."
+  ],
+  "a_voir": "Voir que Jordan et Lie sont deux familles sous la même grande famille, qui diffèrent par l’échange."
+ },
+ {
+  "code": "78-066",
+  "a_dire": "L’identité de Jordan est une égalité entre deux groupements, qui valent tous deux y ∘ x pour la matrice x du cas.",
+  "legende_titre": "Deux côtés d’une même égalité",
+  "lecture": [
+   "Les deux rectangles bleus sont le côté gauche et le côté droit de l’identité.",
+   "Le texte gris rappelle que x² (la matrice à 1 sur la diagonale) ne change rien.",
+   "Les flèches vertes mènent chacune au même résultat : la matrice verte, qui est la moitié de x.",
+   "La matrice verte a 0 sur la diagonale et 0,5 ailleurs."
+  ],
+  "a_voir": "Voir que les deux côtés aboutissent à la même matrice."
+ },
+ {
+  "code": "78-067",
+  "a_dire": "L’identité de Jordan demande seulement que le triplet x², y, x s’associe, ce qui s’écrit [x², y, x] = 0.",
+  "legende_titre": "Quel triplet doit s’associer",
+  "lecture": [
+   "La ligne rouge du haut est le triplet x, x, y : ses deux groupements sont différents.",
+   "La ligne verte du bas est le triplet x², y, x : ses deux groupements sont égaux.",
+   "Le signe ≠ marque la différence, le signe = marque l’égalité.",
+   "L’écriture verte du bas dit que l’associateur de ce triplet vaut zéro."
+  ],
+  "a_voir": "Voir que seul le triplet x², y, x est exigé égal dans les deux groupements."
+ },
+ {
+  "code": "78-068",
+  "a_dire": "Jordan cherche en 1933 un produit qui reste dans l’ensemble des matrices symétriques, ce que le produit ordinaire ne fait pas.",
+  "legende_titre": "Un produit qui reste dans l’ensemble",
+  "lecture": [
+   "Le cadre en pointillés est l’ensemble des matrices symétriques.",
+   "Les deux carrés bleus X et Y sont deux matrices de cet ensemble.",
+   "La flèche verte mène au produit de Jordan, qui reste dans le cadre.",
+   "La flèche rouge mène au produit ordinaire, qui sort du cadre."
+  ],
+  "a_voir": "Voir que le produit de Jordan reste dedans alors que le produit ordinaire sort."
+ },
+ {
+  "code": "78-069",
+  "a_dire": "Le produit de Jordan de deux matrices symétriques est symétrique, alors que chaque produit ordinaire ne l’est pas.",
+  "legende_titre": "Deux produits, une moyenne symétrique",
+  "lecture": [
+   "La première matrice a 2 en haut à droite et 0 en bas à gauche : elle est XY.",
+   "La deuxième matrice a 0 en haut à droite et 2 en bas à gauche : elle est YX.",
+   "Les cases orange sont celles qui diffèrent de part et d’autre de la diagonale.",
+   "La matrice verte, à droite, est la moyenne : toutes ses cases valent 1, elle est symétrique."
+  ],
+  "a_voir": "Voir que les deux produits ne sont pas symétriques mais que leur moyenne l’est."
+ },
+ {
+  "code": "78-070",
+  "a_dire": "Dans une algèbre de Jordan, x^k ∘ x^l = x^(k+l) : les exposants s’additionnent.",
+  "legende_titre": "Les exposants s’additionnent",
+  "lecture": [
+   "Les quatre rectangles sont les puissances x¹, x², x³, x⁴ de la matrice x.",
+   "Les rectangles bleus (puissances impaires) valent x ; les gris (puissances paires) valent la matrice à 1 sur la diagonale.",
+   "La flèche orange part de x² : on prend deux fois x².",
+   "La flèche verte mène à x⁴ : l’exposant est 2 + 2."
+  ],
+  "a_voir": "Voir que combiner x² avec x² donne x⁴, car 2 + 2 = 4."
+ },
+ {
+  "code": "78-071",
+  "a_dire": "Le problème de Hurwitz demande pour quels n le produit de deux sommes de n carrés est une somme de n carrés.",
+  "legende_titre": "Une question pour trois exemples",
+  "lecture": [
+   "Le grand rectangle bleu pose la question pour un nombre n de carrés.",
+   "Chaque ligne donne une valeur de n et un produit : 5 × 13 = 65, 4 × 7 = 28, 3 × 5 = 15.",
+   "Les deux rectangles verts disent que le résultat est une somme de 2 carrés, puis de 4 carrés.",
+   "Le rectangle rouge dit que 15 n’est pas une somme de 3 carrés d’entiers."
+  ],
+  "a_voir": "Voir qu’une seule question regroupe les trois exemples."
+ },
+ {
+  "code": "78-072",
+  "a_dire": "La formule qui donne z est un produit de deux couples de nombres : z = xy.",
+  "legende_titre": "La formule comme produit de couples",
+  "lecture": [
+   "Le couple bleu x est 1 et 2.",
+   "Le couple violet y est 2 et 3.",
+   "Le couple vert z est −4 et 7.",
+   "Les deux lignes vertes montrent que chaque nombre de z est une somme de produits d’un nombre de x par un nombre de y."
+  ],
+  "a_voir": "Voir que z est obtenu en multipliant le couple x par le couple y."
+ },
+ {
+  "code": "78-073",
+  "a_dire": "Q(x) est la somme des carrés des coordonnées, et Q(xy) = Q(x)Q(y).",
+  "legende_titre": "Q d’un produit égale le produit des Q",
+  "lecture": [
+   "Chaque groupe de carrés montre les carrés des deux nombres d’un couple.",
+   "Le groupe bleu (côtés 1 et 2) donne Q(x) = 5.",
+   "Le groupe violet (côtés 2 et 3) donne Q(y) = 13.",
+   "Le groupe vert (côtés 4 et 7) donne Q(xy) = 65, et 5 × 13 = 65."
+  ],
+  "a_voir": "Voir que la somme des carrés du produit est le produit des deux sommes."
+ },
+ {
+  "code": "78-074",
+  "a_dire": "La longueur de xy est le produit des longueurs de x et de y.",
+  "legende_titre": "Longueur d’un produit",
+  "lecture": [
+   "La barre bleue a la longueur de x : racine de 5.",
+   "La barre violette a la longueur de y : racine de 13.",
+   "La barre verte a la longueur de xy : racine de 65.",
+   "L’égalité en bas dit que racine de 5 fois racine de 13 vaut racine de 65."
+  ],
+  "a_voir": "Voir que la longueur du produit est le produit des longueurs."
+ },
+ {
+  "code": "78-075",
+  "a_dire": "Une algèbre de composition a un produit avec unité et une forme Q non dégénérée avec Q(xy) = Q(x)Q(y).",
+  "legende_titre": "Ce qui fait une algèbre de composition",
+  "lecture": [
+   "Le rectangle bleu du haut est l’algèbre de composition.",
+   "Les trois rectangles du milieu sont ses trois parties : un produit avec unité 1, une forme Q non dégénérée, et l’égalité Q(xy) = Q(x)Q(y).",
+   "Le rectangle vert est un cas : les nombres complexes.",
+   "Le rectangle rouge n’en est pas un : les matrices avec crochet n’ont pas d’unité."
+  ],
+  "a_voir": "Voir les trois parties exigées, avec un cas qui les a et un cas qui n’a pas l’unité."
+ },
+ {
+  "code": "78-076",
+  "a_dire": "On peut modifier le produit pour avoir une unité sans changer Q, donc Hurwitz revient à chercher des algèbres de composition.",
+  "legende_titre": "Des formules aux algèbres de composition",
+  "lecture": [
+   "Le rectangle gris de gauche est l’identité sur les carrés.",
+   "La flèche orange est la modification du produit ; le texte gris dit que Q ne change pas.",
+   "Le rectangle vert de droite est l’algèbre de composition obtenue.",
+   "L’écriture verte du bas montre l’unité dans le cas des deux carrés : (1, 0) × (2, 3) = (2, 3)."
+  ],
+  "a_voir": "Voir qu’après modification le produit a une unité et que Q reste le même."
+ },
+ {
+  "code": "78-077",
+  "a_dire": "Multiplier deux complexes multiplie les longueurs au carré : 5 × 13 = 65.",
+  "legende_titre": "Trois flèches et leurs longueurs au carré",
+  "lecture": [
+   "La flèche bleue z va au point (1, 2).",
+   "La flèche violette w va au point (2, 3).",
+   "La grande flèche verte zw va au point (−4, 7) ; les pointillés verts marquent −4 et 7.",
+   "Les trois écritures à droite donnent les longueurs au carré : 5, 13 et 65."
+  ],
+  "a_voir": "Voir que la flèche du produit est bien plus longue et que 65 = 5 × 13."
+ },
+ {
+  "code": "78-078",
+  "a_dire": "Pour z = a + bi et w = c + di, le produit a pour nombres ac − bd et ad + bc ; avec 1, 2, 2, 3, on obtient −4 et 7.",
+  "legende_titre": "Les deux formules du produit",
+  "lecture": [
+   "Le rectangle bleu est z = a + bi, avec a = 1 et b = 2.",
+   "Le rectangle violet est w = c + di, avec c = 2 et d = 3.",
+   "Le premier rectangle vert calcule ac − bd et donne −4.",
+   "Le second rectangle vert calcule ad + bc et donne 7 ; le dernier donne zw = −4 + 7i."
+  ],
+  "a_voir": "Voir que les deux nombres du produit viennent des quatre nombres 1, 2, 2, 3."
+ },
+ {
+  "code": "78-079",
+  "a_dire": "La norme est le déterminant de la matrice de multiplication, donc N(zw) = N(z)N(w).",
+  "legende_titre": "La norme comme déterminant",
+  "lecture": [
+   "La matrice bleue est la multiplication par z ; son déterminant est 5.",
+   "La matrice violette est la multiplication par w ; son déterminant est 13.",
+   "Le rectangle vert est la matrice du produit zw ; son déterminant est 65.",
+   "Le produit de deux matrices a pour déterminant le produit des déterminants : 5 × 13 = 65."
+  ],
+  "a_voir": "Voir que la norme du produit se lit sur le déterminant du produit des matrices."
+ },
+ {
+  "code": "78-080",
+  "a_dire": "(a² + b²)(c² + d²) = (ac − bd)² + (ad + bc)² : le produit de deux sommes de deux carrés est une somme de deux carrés.",
+  "legende_titre": "Une aire, deux façons de la compter",
+  "lecture": [
+   "Le rectangle bleu a pour côtés 5 et 13 : c’est (1² + 2²)(2² + 3²), d’aire 65.",
+   "Les deux carrés verts ont pour côtés 4 et 7 : ce sont les carrés de −4 et de 7.",
+   "Les petits carreaux sont tous de même taille : le rectangle en compte 65, les deux carrés 16 et 49, soit 65.",
+   "Au-dessus, l’identité générale avec 𝑎, 𝑏, 𝑐, 𝑑 ; en dessous, le cas où ils valent 1, 2, 2, 3."
+  ],
+  "a_voir": "Le rectangle et les deux carrés, dessinés à la même échelle, ont la même aire, 65."
+ }
+]

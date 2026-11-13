@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+arrow(ax, (8, 44), (40, 44), 'sujet', lw=1.6)
+arrow(ax, (8, 37), (40, 37), 'sujet', lw=1.6)
+text(ax, 44, 44, r'1er facteur $u$', 'sujet', 's', ha='left')
+text(ax, 44, 37, r'2e facteur $u$', 'sujet', 's', ha='left')
+line(ax, [(8, 25), (40, 25)], 'fixe', lw=3)
+text(ax, 44, 25, 'hauteur 0 : aplati', 'fixe', 's', ha='left')
+text(ax, 24, 17, 'aire = 2 × 0 = 0', 'resultat', 'm')
+disc(ax, 10, 7, 1.3, 'resultat')
+text(ax, 14, 7, r'$u \times u = 0$ : flèche nulle', 'resultat', 's', ha='left')
+save(fig, '78-021')

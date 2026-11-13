@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, 'Jacobi : 0, $+2E$, $-2E$', 'sujet', 'm')
+f = numberline(ax, 12, 76, 14, -2, 2, 1, arrow_right=False, size='s')
+arrow(ax, (f(0), 16), (f(2), 16), 'varie', curve=-0.5)
+text(ax, f(1), 28, r'$+2E$', 'varie', 's')
+arrow(ax, (f(2), 16), (f(0) + 0.8, 16), 'autre', curve=1.6)
+text(ax, f(1), 44, r'$-2E$', 'autre', 's')
+ax.plot([f(0)], [14], 'o', color=COL['resultat'], ms=4, zorder=6)
+text(ax, f(0), 5, r'somme $=0$', 'resultat', 's')
+save(fig, '78-046')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+O = (34, 36); U = 8
+P = lambda x, y, z: iso(x, y, z, O, U)
+poly(ax, [P(0,0,0), P(2,0,0), P(3,1.5,0), P(1,1.5,0)], 'fixe')
+arrow(ax, P(0,0,0), P(0,0,-3), 'limite', lw=1.4)
+arrow(ax, P(0,0,0), P(0,0,3), 'resultat', lw=1.8)
+arrow(ax, P(0,0,0), P(2,0,0), 'sujet', lw=1.6)
+arrow(ax, P(0,0,0), P(1,1.5,0), 'varie', lw=1.6)
+th = math.atan2(1.5, 1)
+arrow(ax, P(1.1,0,0), P(1.1*math.cos(th), 1.1*math.sin(th), 0), 'varie', lw=0.9, curve=0.5)
+text(ax, 52, 37, r'pouce $u$', 'sujet', 's', ha='left')
+text(ax, 27, 46, r'index $v$', 'varie', 's', ha='right')
+text(ax, 38, 60, r'majeur : $u \times v$', 'resultat', 's', ha='left')
+text(ax, 38, 54, '(0, 0, 3)', 'resultat', 's', ha='left')
+text(ax, 38, 14, '(0, 0, −3) : refusé', 'limite', 's', ha='left')
+save(fig, '78-019')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+box(ax,4,66,38,10,'sujet',label=r'$lk=kl$'); box(ax,46,66,38,10,'autre',label=r'$lk=-kl$')
+arrow(ax,(23,66),(38,57),'fixe'); arrow(ax,(65,66),(50,57),'fixe')
+box(ax,14,46,60,10,'varie',label=r'$2\,lk=0$')
+arrow(ax,(44,46),(44,38),'varie'); text(ax,64,42,r'divisé par 2','varie','s')
+box(ax,14,26,60,10,'varie',label=r'$lk=0$')
+text(ax,22,18,r'$l\neq 0$','sujet','m'); text(ax,66,18,r'$k\neq 0$','autre','m')
+text(ax,44,18,r'$\times$','encre','m')
+box(ax,6,2,76,10,'limite',label='produit nul : impossible en division',size='s')
+save(fig,'78-155')

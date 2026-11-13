@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, 'Une unité est-elle exigée ?', 'sujet', 'l')
+text(ax, 44, 50, 'Produit ordinaire', 'resultat', 'm')
+box(ax, 2, 35, 40, 10, 'resultat', label=r'$I\cdot E = E$')
+text(ax, 64, 40, 'I joue le rôle de 1', 'resultat', 's', ha='left')
+text(ax, 44, 26, 'Crochet', 'limite', 'm')
+box(ax, 2, 11, 40, 10, 'limite', label=r'$[I,E] = 0 \neq E$')
+text(ax, 46, 16, 'I ne convient pas', 'limite', 's', ha='left')
+save(fig, '78-036')

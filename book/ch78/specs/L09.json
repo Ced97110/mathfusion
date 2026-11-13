@@ -1,0 +1,192 @@
+[
+ {
+  "code": "78-129",
+  "a_dire": "Les deux groupements donnent deux matrices différentes : (x∘x)∘y est y, mais x∘(x∘y) est la moitié de I.",
+  "legende_titre": "Deux groupements, deux résultats",
+  "lecture": [
+   "Les deux cases du haut sont les matrices x (bleu) et y (violet).",
+   "La colonne bleue calcule d'abord x∘x, qui donne la matrice à 1 sur la diagonale, puis ∘ y : elle retrouve y.",
+   "La colonne violette calcule d'abord x∘y, puis x∘ le résultat : elle donne la moitié de I.",
+   "Le signe rouge ≠ sépare les deux résultats."
+  ],
+  "a_voir": "Les deux cases du bas sont différentes, alors que les trois facteurs sont les mêmes."
+ },
+ {
+  "code": "78-130",
+  "a_dire": "L'identité de Jordan ne demande que certains triplets, et cela suffit pour que les puissances s'ajoutent : x² ∘ x³ = x⁵.",
+  "legende_titre": "Peu de triplets, des puissances sûres",
+  "lecture": [
+   "La case grise du haut est x, de diagonale 2 et 1. Les cases bleues sont x² et x³, de diagonales 4, 1 et 8, 1.",
+   "Les deux flèches orange mènent à la case verte : x² ∘ x³ a pour diagonale 32 et 1, c'est x⁵.",
+   "Le texte orange montre que les exposants 2 et 3 s'ajoutent en 5.",
+   "En bas, la grande case grise est l'associativité, qui demande tous les triplets ; la petite case bleue, incluse dedans, est l'identité de Jordan, qui n'en demande qu'une forme."
+  ],
+  "a_voir": "La case bleue du bas est plus petite que la case grise, et pourtant les puissances de x se calculent sans ambiguïté."
+ },
+ {
+  "code": "78-131",
+  "a_dire": "Le premier nombre z₁ se calcule en multipliant x₁ par y₁, puis en retranchant les trois autres produits de même rang.",
+  "legende_titre": "Calculer le premier nombre z₁",
+  "lecture": [
+   "La case bleue est la liste 𝑥 et la case violette est la liste 𝑦.",
+   "La rangée orange donne 𝑧₁ : 𝑥₁𝑦₁, moins les trois autres produits de même rang, soit 2 − 1 − 1 − 1 = −1.",
+   "Les trois rangées grises donnent 𝑧₂, 𝑧₃ et 𝑧₄ avec leurs formules.",
+   "Les cases vertes sont les quatre nombres du résultat : −1, 3, 3 et 3."
+  ],
+  "a_voir": "Quatre formules, quatre nombres : 𝑧 = (−1, 3, 3, 3)."
+ },
+ {
+  "code": "78-132",
+  "a_dire": "Le cas vérifie que 1 + 9 + 9 + 9 = 28 = 4 × 7, sans démontrer que la formule marche pour toutes les listes.",
+  "legende_titre": "28 de deux façons",
+  "lecture": [
+   "Les trois lignes du haut donnent les listes x (bleu), y (violet) et z (vert).",
+   "Le rectangle bleu a 4 lignes et 7 colonnes de petites cases : 4 × 7 = 28 cases.",
+   "Les quatre carrés verts ont pour côtés 1, 3, 3 et 3 : ils couvrent 1, 9, 9 et 9 cases.",
+   "Le signe = relie les deux dessins : même nombre de cases, 28."
+  ],
+  "a_voir": "Le rectangle et les quatre carrés contiennent le même nombre de cases."
+ },
+ {
+  "code": "78-133",
+  "a_dire": "Pour écrire un entier comme somme de quatre carrés, on l'écrit comme produit et l'identité des quatre carrés assemble les deux sommes.",
+  "legende_titre": "De deux sommes de carrés à une seule",
+  "lecture": [
+   "La case grise du haut est 28 = 4 × 7.",
+   "Les deux cases bleues donnent 4 et 7, chacun écrit comme somme de quatre carrés.",
+   "La case orange est l'identité des quatre carrés, qui reçoit les deux sommes.",
+   "La case verte du bas est 28 écrit comme somme de quatre carrés : 1², 3², 3², 3²."
+  ],
+  "a_voir": "Deux sommes de quatre carrés entrent dans l'identité ; une somme de quatre carrés en sort."
+ },
+ {
+  "code": "78-134",
+  "a_dire": "Doubler les réels avec c = −1 donne les complexes : le produit de (1, 2) par (2, 3) est (−4, 7).",
+  "legende_titre": "Doubler ℝ avec c = −1",
+  "lecture": [
+   "À gauche, la case bleue ℝ est le point de départ ; la flèche orange est le doublement avec c = −1 ; la case verte ℂ est le résultat.",
+   "La case bleue du milieu est le produit des couples (1, 2) et (2, 3).",
+   "Les deux cases orange calculent la première coordonnée (−4) et la seconde (7).",
+   "La case verte du bas donne le couple (−4, 7), égal au produit des complexes 1 + 2i et 2 + 3i."
+  ],
+  "a_voir": "Les deux coordonnées calculées sont celles du produit des complexes."
+ },
+ {
+  "code": "78-135",
+  "a_dire": "Dans le double des complexes, ij = (0, i) et ji = (0, −i) : les deux produits sont opposés, donc ji = −ij.",
+  "legende_titre": "Deux produits opposés",
+  "lecture": [
+   "La case bleue calcule ij : le couple (i, 0) fois le couple (0, 1) donne (0, i).",
+   "La case violette calcule ji dans l'autre ordre : elle donne (0, −i).",
+   "À droite, la droite verticale place i (bleu) et −i (violet), de part et d'autre de 0 ; la flèche orange les relie.",
+   "La case verte du bas écrit ji = −ij."
+  ],
+  "a_voir": "Le seul changement entre ij et ji est le passage de i à −i."
+ },
+ {
+  "code": "78-136",
+  "a_dire": "Le signe moins de ji = −ij vient du conjugué : dans ℝ le conjugué de x est x, dans ℂ le conjugué de i est −i.",
+  "legende_titre": "D'où vient le signe moins",
+  "lecture": [
+   "Chaque moitié montre un axe horizontal et un axe vertical ; à gauche pour ℝ, à droite pour ℂ.",
+   "À gauche, le point bleu 1 reste à sa place : le conjugué est x, et la case verte dit ji = ij.",
+   "À droite, le point bleu i devient le point violet −i ; la flèche orange est le conjugué.",
+   "La case rouge dit ji = −ij : le signe apparaît à cause de ce changement."
+  ],
+  "a_voir": "Quand le conjugué ne change rien, le signe n'apparaît pas ; quand il change i en −i, il apparaît."
+ },
+ {
+  "code": "78-137",
+  "a_dire": "Le plan de Fano place les sept unités sur sept droites de trois unités, chacune avec un sens de flèche.",
+  "legende_titre": "Sept unités, sept droites",
+  "lecture": [
+   "Les sept points verts sont les unités e₁ à e₇.",
+   "Les trois côtés du triangle, les trois hauteurs et le cercle intérieur sont les sept droites ; chacune passe par trois points.",
+   "Les flèches orange donnent le sens de lecture sur chaque droite."
+  ],
+  "a_voir": "Chaque droite porte trois points, et chaque droite a sa flèche."
+ },
+ {
+  "code": "78-138",
+  "a_dire": "La base des octonions a huit éléments : 1 et sept unités imaginaires e₁ à e₇, de carré −1.",
+  "legende_titre": "Une base de huit éléments",
+  "lecture": [
+   "La case ℂ liste la base des complexes : 1 et i.",
+   "La case ℍ liste la base des quaternions : 1, i, j et k ; elle est deux fois plus large.",
+   "La rangée du bas a huit cases : 1 (gris) et sept unités e₁ à e₇ (bleu).",
+   "L'accolade compte les huit éléments ; le texte bleu du haut donne le carré de chaque unité imaginaire : −1."
+  ],
+  "a_voir": "Chaque base garde 1 et ajoute des unités de carré −1 ; celle des octonions en a sept."
+ },
+ {
+  "code": "78-139",
+  "a_dire": "Le plan de Fano n'a que sept points et sept droites de trois points, et deux points distincts sont sur une seule droite.",
+  "legende_titre": "Fano contre le plan ordinaire",
+  "lecture": [
+   "À gauche, le plan ordinaire est un réseau de points qui continue sans fin ; la droite bleue passe par les deux points orange.",
+   "À droite, le plan de Fano a sept points verts ou orange, notés e₁ à e₇.",
+   "La droite bleue passe par e₁ et e₂ (orange) et par e₄.",
+   "Les autres droites du plan de Fano sont en gris."
+  ],
+  "a_voir": "Dans les deux plans deux points ont une seule droite, mais Fano n'a que sept points."
+ },
+ {
+  "code": "78-140",
+  "a_dire": "On lit le produit de deux unités sur leur droite : dans le sens de la flèche on obtient la troisième, dans le sens inverse son opposée.",
+  "legende_titre": "Lire un produit sur une droite",
+  "lecture": [
+   "La droite bleue du triangle porte e₂, e₄ et e₁ ; la flèche orange la parcourt de e₂ vers e₄ puis e₁.",
+   "La case verte dit le produit dans le sens de la flèche : e₁e₂ = e₄.",
+   "La case violette dit le produit dans le sens inverse : e₂e₁ = −e₄."
+  ],
+  "a_voir": "Le même couple d'unités donne e₄ ou −e₄ selon le sens par rapport à la flèche."
+ },
+ {
+  "code": "78-141",
+  "a_dire": "Sur la droite des unités e₂, e₄ et e₁, un seul regard donne e₁e₂ = e₄, e₂e₄ = e₁ et e₄e₁ = e₂.",
+  "legende_titre": "Un cas : e₁e₂ = e₄",
+  "lecture": [
+   "Les trois points verts sur la droite bleue sont e₂, e₄ et e₁, dans l'ordre de la flèche orange.",
+   "La flèche courbe du bas ramène de e₁ vers e₂ : le parcours est un tour.",
+   "La case verte est le produit cherché : e₁e₂ = e₄ ; les deux cases grises sont les deux autres produits dans le sens de la flèche.",
+   "La case violette montre le sens inverse : e₂e₁ = −e₄."
+  ],
+  "a_voir": "Trois produits se lisent dans le sens de la flèche, et leur sens inverse change le signe."
+ },
+ {
+  "code": "78-142",
+  "a_dire": "Les sept droites viennent de 1, 2, 4 en ajoutant 1 à chaque indice, et on revient à 1 après 7.",
+  "legende_titre": "Sept triplets, une règle",
+  "lecture": [
+   "La case bleue est le triplet de départ, (1, 2, 4).",
+   "Chaque flèche orange ajoute 1 à chaque nombre et mène au triplet suivant.",
+   "La case orange (5, 6, 1) est celle où 7 + 1 = 8 devient 1.",
+   "Les sept cases sont les sept droites du plan de Fano."
+  ],
+  "a_voir": "Un seul triplet et une règle donnent les sept."
+ },
+ {
+  "code": "78-143",
+  "a_dire": "Les unités e₁, e₂, e₃ ne sont pas sur une même droite, et les deux groupements donnent −e₆ et e₆ : le produit n'est pas associatif.",
+  "legende_titre": "Deux groupements, deux signes",
+  "lecture": [
+   "Dans le triangle, les trois points orange sont e₁, e₂ et e₃ : ils ne sont pas sur une même droite.",
+   "La colonne bleue calcule (e₁e₂)e₃ : d'abord e₄e₃, puis −e₆.",
+   "La colonne violette calcule e₁(e₂e₃) : d'abord e₁e₅, puis e₆.",
+   "Le signe rouge ≠ sépare les deux résultats."
+  ],
+  "a_voir": "Les trois mêmes unités donnent −e₆ ou e₆ selon le groupement."
+ },
+ {
+  "code": "78-144",
+  "a_dire": "Pour trois unités sur une même droite, e₁, e₂ et e₄, les deux groupements donnent le même résultat, −1.",
+  "legende_titre": "Sur une droite, tout s'associe",
+  "lecture": [
+   "Dans le triangle, la droite bleue passe par e₁, e₂ et e₄ : ce sont les trois unités du calcul.",
+   "La case bleue calcule (e₁e₂)e₄ : e₄e₄, soit −1.",
+   "La case violette calcule e₁(e₂e₄) : e₁e₁, soit −1.",
+   "Le signe vert = montre que les deux résultats sont égaux."
+  ],
+  "a_voir": "Les deux cases donnent −1 : le groupement ne change rien sur une même droite."
+ }
+]

@@ -1,0 +1,184 @@
+[
+ {
+  "code": "78-001",
+  "a_dire": "Deux produits E fois G et G fois E donnent deux matrices différentes, donc E et G ne commutent pas.",
+  "legende_titre": "Deux matrices, deux ordres",
+  "lecture": [
+   "Le cadre bleu est la matrice E et le cadre violet est la matrice G : chacune a un seul 1.",
+   "Le premier cadre vert est EG : son seul 1 est en haut à gauche.",
+   "Le second cadre vert est GE : son seul 1 est en bas à droite.",
+   "Le signe rouge ≠ sépare les deux résultats."
+  ],
+  "a_voir": "Changer l’ordre des deux matrices change le résultat."
+ },
+ {
+  "code": "78-002",
+  "a_dire": "H est le nom court de la matrice EG − GE, qui a un 1 en haut à gauche et un −1 en bas à droite.",
+  "legende_titre": "Un nom pour une différence",
+  "lecture": [
+   "Les deux cadres gris sont les produits EG et GE.",
+   "L’accolade les réunit : c’est un calcul déjà fait.",
+   "Le cadre bleu est le résultat, nommé H : un 1, un −1 et des 0."
+  ],
+  "a_voir": "H désigne le résultat de EG moins GE."
+ },
+ {
+  "code": "78-003",
+  "a_dire": "Le crochet [E, G] est le mot qui désigne le produit EG moins le produit GE ; c’est une matrice.",
+  "legende_titre": "Un mot pour une phrase longue",
+  "lecture": [
+   "Les deux cadres gris du haut sont la phrase longue : le produit EG, moins le produit GE.",
+   "La flèche orange remplace cette phrase par un seul mot.",
+   "Le cadre bleu du bas est le crochet [E, G], et il est égal à une matrice."
+  ],
+  "a_voir": "Le crochet est un objet que l’on peut écrire et utiliser."
+ },
+ {
+  "code": "78-004",
+  "a_dire": "Le crochet prend deux matrices et rend une matrice : c’est une opération.",
+  "legende_titre": "Deux matrices entrent, une sort",
+  "lecture": [
+   "Le cadre bleu est la matrice E et le cadre violet est la matrice G.",
+   "Le cadre orange est le crochet : les deux flèches y entrent.",
+   "Le cadre vert est le résultat H : c’est encore une matrice."
+  ],
+  "a_voir": "Le résultat du crochet est du même genre que ce qui entre."
+ },
+ {
+  "code": "78-005",
+  "a_dire": "Pour E, E et G, le crochet donne 0 avec un groupement et −2E avec l’autre : il n’est pas associatif.",
+  "legende_titre": "Deux groupements, deux résultats",
+  "lecture": [
+   "La ligne du haut commence par le crochet de E avec E, qui vaut la matrice nulle, puis le crochet avec G donne encore la matrice nulle.",
+   "La ligne du bas commence par le crochet de E avec G, qui vaut H, puis le crochet avec E donne −2E.",
+   "Le signe rouge ≠ sépare les deux cadres verts d’arrivée."
+  ],
+  "a_voir": "Les deux groupements ne donnent pas le même résultat."
+ },
+ {
+  "code": "78-006",
+  "a_dire": "Le 0 obtenu avec le crochet de E avec E d’un côté, et absent de l’autre côté, explique la différence entre les deux groupements.",
+  "legende_titre": "Où naît la différence",
+  "lecture": [
+   "L’arbre de gauche réunit d’abord E et E : le cadre gris porte un 0, et la racine vaut 0.",
+   "L’arbre de droite réunit d’abord E et G : le cadre bleu porte H, et la racine vaut −2E.",
+   "Le signe rouge ≠ sépare les deux racines vertes."
+  ],
+  "a_voir": "Le 0 du premier arbre n’existe pas dans le second."
+ },
+ {
+  "code": "78-007",
+  "a_dire": "Un produit non associatif n’est pas mauvais : la soustraction l’est aussi, et le crochet mesure le défaut de commutativité.",
+  "legende_titre": "Non associatif, mais utile",
+  "lecture": [
+   "Les deux cadres gris du haut montrent la soustraction : deux groupements donnent 3 et 7.",
+   "Le cadre bleu montre que le crochet de E et G n’est pas nul : elles ne commutent pas.",
+   "Le cadre vert montre que le crochet de E avec E est nul : elles commutent."
+  ],
+  "a_voir": "Le crochet vaut 0 exactement quand les deux matrices commutent."
+ },
+ {
+  "code": "78-008",
+  "a_dire": "Le produit 5 × 13 = 65 est une somme de deux carrés, 4² + 7², comme chaque facteur.",
+  "legende_titre": "Deux sommes de carrés multipliées",
+  "lecture": [
+   "Les carrés bleus ont pour côtés 1 et 2 : ils forment 5.",
+   "Les carrés violets ont pour côtés 2 et 3 : ils forment 13.",
+   "Les carrés verts ont pour côtés 4 et 7 : ils forment 65.",
+   "Les deux lignes vertes du bas disent comment 4 et 7 viennent de 1, 2, 2 et 3."
+  ],
+  "a_voir": "Le produit de deux sommes de deux carrés est encore une somme de deux carrés."
+ },
+ {
+  "code": "78-009",
+  "a_dire": "Après le cas de deux carrés viennent la formule d’Euler pour quatre carrés et celle de Degen pour huit carrés : le nombre de carrés double.",
+  "legende_titre": "Deux, quatre, huit carrés",
+  "lecture": [
+   "La ligne du haut compte deux carrés gris.",
+   "La ligne du milieu compte quatre carrés bleus : formule d’Euler.",
+   "La ligne du bas compte huit carrés bleus : formule de Degen, en 1822.",
+   "Les flèches orange indiquent que le nombre double à chaque fois."
+  ],
+  "a_voir": "Les nombres de carrés sont 2, 4 et 8."
+ },
+ {
+  "code": "78-010",
+  "a_dire": "15 = 3 × 5 n’est pas une somme de trois carrés, bien que 3 et 5 le soient.",
+  "legende_titre": "Un produit qui échappe",
+  "lecture": [
+   "Le cadre bleu écrit 3 comme somme de trois carrés et le cadre violet écrit 5 de même.",
+   "Le cadre rouge est leur produit, 15.",
+   "Sur la droite graduée, chaque rond vert est une somme de trois carrés.",
+   "Le rond rouge, à 15, n’en est pas une."
+  ],
+  "a_voir": "Entre 8 et 18, seul 15 n’est pas une somme de trois carrés."
+ },
+ {
+  "code": "78-011",
+  "a_dire": "Une formule à nombres fixés n’existe que pour 1, 2, 4 et 8 carrés.",
+  "legende_titre": "Quels nombres de carrés",
+  "lecture": [
+   "En haut, le cas : 3 fois 5 donne 15, qui n’est pas une somme de 3 carrés.",
+   "Chaque rond du bas est un nombre de carrés, de 1 à 10.",
+   "Les ronds verts, à 1, 2, 4 et 8, ont une formule.",
+   "Les ronds rouges, aux autres nombres, n’en ont aucune ; la flèche rouge relie le cas au rond 3."
+  ],
+  "a_voir": "Seuls 1, 2, 4 et 8 sont verts ; à 3 carrés, le produit 15 échappe à la formule."
+ },
+ {
+  "code": "78-012",
+  "a_dire": "Hamilton a trouvé un produit avec inverse pour 2 et 4 coordonnées, et a échoué avec 3.",
+  "legende_titre": "Combien de coordonnées",
+  "lecture": [
+   "Chaque petit carré est une coordonnée.",
+   "Deux carrés verts : réussi, ce sont les nombres complexes.",
+   "Trois carrés rouges : échec.",
+   "Quatre carrés verts : réussi, ce sont les quaternions."
+  ],
+  "a_voir": "Le nombre de coordonnées décide si le produit existe."
+ },
+ {
+  "code": "78-013",
+  "a_dire": "Avec l’associativité, il n’y a que ℝ, ℂ et ℍ ; sans elle, les octonions à 8 coordonnées existent aussi.",
+  "legende_titre": "Avec ou sans associativité",
+  "lecture": [
+   "Chaque rangée de cases compte les coordonnées : 1, 2, 4 et 8.",
+   "Les trois rangées vertes, ℝ, ℂ et ℍ, ont un produit associatif.",
+   "La rangée orange, celle des octonions, a huit cases et un produit qui ne l’est pas."
+  ],
+  "a_voir": "Sans associativité, il existe une algèbre de plus."
+ },
+ {
+  "code": "78-014",
+  "a_dire": "Les trois problèmes ont la même cause : le produit n’est pas supposé associatif.",
+  "legende_titre": "Trois problèmes, une cause",
+  "lecture": [
+   "Les trois cadres gris sont les trois problèmes : matrices, carrés et espace.",
+   "Les flèches orange vont de chacun vers le même cadre.",
+   "Le cadre bleu nomme la cause : le produit non associatif."
+  ],
+  "a_voir": "Les trois flèches arrivent au même endroit."
+ },
+ {
+  "code": "78-015",
+  "a_dire": "Le produit vectoriel u × v est une flèche perpendiculaire au plan de u et v, de longueur 3, égale à l’aire du parallélogramme.",
+  "legende_titre": "La flèche qui monte",
+  "lecture": [
+   "La flèche bleue u et la flèche orange v sont couchées sur le plan gris.",
+   "Le parallélogramme orange a pour aire 3.",
+   "La flèche verte monte du plan : c’est u × v, de longueur 3."
+  ],
+  "a_voir": "La flèche verte sort du plan et sa longueur est l’aire orange."
+ },
+ {
+  "code": "78-016",
+  "a_dire": "Le produit vectoriel de deux flèches rend une flèche, alors que le produit de deux nombres et le produit scalaire rendent un nombre.",
+  "legende_titre": "Trois produits comparés",
+  "lecture": [
+   "Les deux lignes grises : le produit de deux nombres et le produit scalaire rendent chacun un nombre (6 et 2).",
+   "La flèche bleue est 𝑢, la flèche orange est 𝑣 ; le parallélogramme gris est le plan qui les porte.",
+   "La flèche verte, du point (0 ; 0 ; 3), est 𝑢 × 𝑣 : le produit vectoriel rend une flèche."
+  ],
+  "a_voir": "Seul le produit vectoriel rend une flèche, perpendiculaire à 𝑢 et à 𝑣."
+ }
+]

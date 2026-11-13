@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,4,14,52,40,'sujet',fill=False)
+text(ax,30,50,'corps finis (ch. 67)','sujet','s')
+box(ax,8,18,44,26,'resultat',label=None)
+text(ax,30,36,r'$\mathbb{F}_q$','resultat','l')
+text(ax,30,26,'tous commutatifs','resultat','s')
+box(ax,62,24,22,22,'limite',fill=False,dash=True)
+text(ax,73,38,'quaternions','limite','s')
+text(ax,73,33,'finis','limite','s')
+text(ax,73,27.5,'aucun','limite','s')
+text(ax,44,6,'la liste du ch. 67 est complète','fixe','s')
+save(fig,'78-172')

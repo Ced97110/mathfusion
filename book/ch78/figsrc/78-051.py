@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 64, 'crochet de Lie', 'sujet', 's')
+text(ax, 31, 53, '[', 'sujet', 'xl'); text(ax, 38, 53, r'$x$', 'sujet', 'xl'); text(ax, 44, 53, ',', 'sujet', 'xl')
+text(ax, 50, 53, r'$y$', 'sujet', 'xl'); text(ax, 57, 53, ']', 'sujet', 'xl')
+text(ax, 22, 40, 'premier élément', 'fixe', 's'); text(ax, 66, 40, 'second élément', 'fixe', 's')
+arrow(ax, (30, 43), (36, 49), 'fixe'); arrow(ax, (58, 43), (52, 49), 'fixe')
+box(ax, 2, 6, 40, 20, 'autre', label='matrices\n' + r'$xy-yx$')
+box(ax, 46, 6, 40, 20, 'varie', label='flèches de l’espace\n' + r'$x\times y$')
+text(ax, 44, 31, 'se calcule', 'sujet', 's')
+save(fig, '78-051')

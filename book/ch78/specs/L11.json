@@ -1,0 +1,240 @@
+[
+ {
+  "code": "78-161",
+  "a_dire": "Le groupe A* a q puissance n moins 1 éléments : on compte q^n éléments et on retire 0.",
+  "legende_titre": "Compter les éléments non nuls de A",
+  "lecture": [
+   "Les quatre cases du haut sont les 4 éléments de A, soit 2 fois 2.",
+   "La case rouge en pointillés est 0, qui est retiré.",
+   "Les trois cases bleues sont les éléments non nuls, ceux de A*.",
+   "La case verte donne le total : 2 fois 2, moins 1, égale 3."
+  ],
+  "a_voir": "Les 4 éléments de A, moins le 0, laissent 3 éléments dans A*."
+ },
+ {
+  "code": "78-162",
+  "a_dire": "Chaque élément non nul du centre forme à lui seul une classe : il y a q moins 1 classes à un élément.",
+  "legende_titre": "Les éléments du centre ne bougent pas",
+  "lecture": [
+   "Les disques bleus 1 et 2 sont les éléments non nuls du centre.",
+   "La flèche orange est la conjugaison : elle ne change pas l'élément.",
+   "Chaque case verte est la classe obtenue : un seul élément.",
+   "Le disque rouge 0 est hors du groupe, il n'a pas de classe."
+  ],
+  "a_voir": "Le centre à 3 éléments donne 2 classes, chacune d'un seul élément."
+ },
+ {
+  "code": "78-163",
+  "a_dire": "La taille d'une classe est le quotient du nombre d'éléments non nuls de A par celui du sous-corps, et ce quotient doit être entier.",
+  "legende_titre": "Taille d'une classe : un quotient",
+  "lecture": [
+   "Les 15 carrés bleus sont les éléments non nuls de A.",
+   "Chaque cadre en pointillés est un paquet de 3, les éléments non nuls du corps de 4 éléments.",
+   "L'accolade verte compte 5 paquets : 15 divisé par 3.",
+   "Le cadre rouge montre le corps de 8 éléments : 15 divisé par 7 n'est pas entier."
+  ],
+  "a_voir": "15 se range en 5 paquets de 3, mais pas en paquets de 7."
+ },
+ {
+  "code": "78-164",
+  "a_dire": "L'équation des classes a toujours la même forme : le total, égal à la part du centre, plus une somme de tailles de classes.",
+  "legende_titre": "Une même forme pour tous les nombres",
+  "lecture": [
+   "La case bleue est le total, q puissance n moins 1.",
+   "La case grise est la part du centre, q moins 1.",
+   "La case orange est la somme des classes hors du centre, notée avec m.",
+   "Les deux lignes ont la même forme ; seuls les nombres changent."
+  ],
+  "a_voir": "Total, égal centre plus classes : seuls q, n et la taille des classes changent."
+ },
+ {
+  "code": "78-165",
+  "a_dire": "Pour q = 2 et n = 2, l'équation 3 = 1 + 3m n'a pas de solution : aucune valeur de m n'atteint 3.",
+  "legende_titre": "Essayer chaque nombre de classes",
+  "lecture": [
+   "Chaque ligne essaie une valeur de m : 0, 1, puis 2.",
+   "La case grise est la part du centre : 1 case.",
+   "Les cases orange sont les classes, 3 cases chacune.",
+   "Les totaux 1, 4 et 7 en rouge passent à côté du trait vert en pointillés, qui marque le but 3."
+  ],
+  "a_voir": "Le trait du but 3 n'est jamais atteint : il n'y a pas de corps gauche non commutatif à 4 éléments."
+ },
+ {
+  "code": "78-166",
+  "a_dire": "Les segments bleus de q aux racines primitives sont plus longs que le segment rouge q moins 1.",
+  "legende_titre": "Le point 1 est le plus proche de q",
+  "lecture": [
+   "Le cercle gris est le cercle de rayon 1 ; q est le point à droite.",
+   "Le segment rouge va de q au point 1 : il mesure q moins 1.",
+   "Les deux segments bleus vont de q aux points z et z barre, avec la longueur racine de 3.",
+   "Les deux segments bleus ont la même longueur et dépassent le rouge."
+  ],
+  "a_voir": "Le rouge est le plus court ; les deux bleus sont égaux et plus longs."
+ },
+ {
+  "code": "78-167",
+  "a_dire": "Le nombre Φ_n(q) divise le membre de gauche et la somme, donc il divise q moins 1.",
+  "legende_titre": "Ce que le nombre 3 divise",
+  "lecture": [
+   "Le disque bleu est Φ_n(q), qui vaut 3 dans le cas.",
+   "Les deux flèches orange vont vers le membre de gauche 3 et vers la somme 3m : le disque les divise.",
+   "La flèche verte au milieu va vers 1 : il divise donc la différence.",
+   "L'équation du bas est 3 = 1 + 3m."
+  ],
+  "a_voir": "Si 3 divise 3 et 3m, alors il divise 1."
+ },
+ {
+  "code": "78-168",
+  "a_dire": "Φ_n(q) est le produit des distances de q aux seules racines primitives de l'unité.",
+  "legende_titre": "Un produit de distances à q",
+  "lecture": [
+   "Le cercle porte les six racines sixièmes de l'unité ; q est le point à droite.",
+   "Les deux disques bleus sont les racines primitives, à la distance racine de 3 de q.",
+   "Les quatre disques gris sont les autres racines : elles n'entrent pas dans le produit.",
+   "La case verte donne le produit : racine de 3 fois racine de 3, égale 3."
+  ],
+  "a_voir": "Seuls les deux segments bleus entrent dans le produit, qui vaut 3."
+ },
+ {
+  "code": "78-169",
+  "a_dire": "Pour n = 6 et q = 2, Φ_6(2) vaut 3, et 3 ne divise pas q moins 1, qui vaut 1.",
+  "legende_titre": "Trois ne rentre pas dans un",
+  "lecture": [
+   "La ligne du haut montre 3 disques bleus : Φ_6(2) égale 3.",
+   "La ligne du bas montre 1 disque vert : q moins 1 égale 1.",
+   "Le cadre rouge est un groupe de 3 ; les deux places vides marquées d'une croix ne sont pas remplies.",
+   "Un groupe de 3 ne rentre pas dans 1."
+  ],
+  "a_voir": "Il manque 2 places : 3 ne divise pas 1."
+ },
+ {
+  "code": "78-170",
+  "a_dire": "Un nombre plus grand que q moins 1 ne divise pas q moins 1 ; la contradiction impose n = 1.",
+  "legende_titre": "Au-delà de q moins 1, plus de diviseurs",
+  "lecture": [
+   "Le cas : le centre a 2 éléments, donc 𝑞 = 2 et 𝑞 − 1 = 1.",
+   "Le trait bleu en pointillés marque 𝑞 − 1, qui vaut 1.",
+   "Le disque vert 1 est le seul diviseur de 1.",
+   "Le trait rouge couvre les nombres plus grands que 1 : le disque rouge 3, qui est Φ₆(2), ne divise pas 1.",
+   "Cette contradiction n’est levée que si 𝑛 = 1."
+  ],
+  "a_voir": "Tout nombre à droite de 𝑞 − 1 est hors de la liste des diviseurs."
+ },
+ {
+  "code": "78-171",
+  "a_dire": "Les quaternions forment un corps gauche non commutatif et infini : la finitude est nécessaire au théorème.",
+  "legende_titre": "Non commutatif et infini",
+  "lecture": [
+   "La case bleue est le produit ij.",
+   "La case orange est le produit ji, égal à moins ij.",
+   "Le signe rouge dit que ces deux produits sont différents.",
+   "Les disques 1, 2, 3 et la flèche orange montrent une suite sans fin d'éléments."
+  ],
+  "a_voir": "Deux produits différents, et une liste d'éléments qui ne s'arrête pas."
+ },
+ {
+  "code": "78-172",
+  "a_dire": "Le théorème de Wedderburn dit que les corps finis du chapitre 67 sont tous commutatifs : il n'y a pas de quaternions finis.",
+  "legende_titre": "La liste du chapitre 67 est complète",
+  "lecture": [
+   "Le grand cadre bleu est l'ensemble des corps finis.",
+   "La case verte à l'intérieur est F_q : elle remplit tout le cadre, ils sont tous commutatifs.",
+   "Le cadre rouge en pointillés, à droite, est celui des quaternions finis : il est vide.",
+   "Aucun corps fini ne se trouve hors de la case verte."
+  ],
+  "a_voir": "Tous les corps finis sont dans la case verte ; le cadre rouge reste vide."
+ },
+ {
+  "code": "78-173",
+  "a_dire": "Près de l'identité, une rotation diffère de l'identité surtout par une matrice antisymétrique.",
+  "legende_titre": "L'écart à l'identité",
+  "lecture": [
+   "La grille bleue est la matrice de la rotation de 0,01.",
+   "La flèche orange retire la matrice identité I.",
+   "Dans la grille de l'écart, les cases orange hors de la diagonale valent moins 0,01 et 0,01 : elles sont opposées.",
+   "Les cases grises de la diagonale valent 0,00005 : elles sont très petites."
+  ],
+  "a_voir": "L'écart principal est antisymétrique ; la diagonale est presque nulle."
+ },
+ {
+  "code": "78-174",
+  "a_dire": "Lie remplace la composition de rotations par l'addition de multiples de J.",
+  "legende_titre": "Du produit à la somme",
+  "lecture": [
+   "La ligne bleue compose les rotations d'angles 0,01 et 0,02 pour donner celle de 0,03.",
+   "Les flèches orange passent du groupe à l'algèbre.",
+   "La ligne violette additionne 0,01 J et 0,02 J pour donner 0,03 J.",
+   "Les cases vertes sont les résultats."
+  ],
+  "a_voir": "Un produit de rotations devient une addition sur l'algèbre."
+ },
+ {
+  "code": "78-175",
+  "a_dire": "Le produit vectoriel du bras par la force donne le moment de la force, perpendiculaire aux deux.",
+  "legende_titre": "Bras, force et moment",
+  "lecture": [
+   "La flèche bleue est le bras, de direction (1, 0, 0).",
+   "La flèche orange est la force, de direction (0, 3, 0).",
+   "La flèche verte, vers le haut, est le moment (0, 0, 3).",
+   "Les trois flèches sont à angle droit les unes des autres."
+  ],
+  "a_voir": "Le moment est perpendiculaire au bras et à la force."
+ },
+ {
+  "code": "78-176",
+  "a_dire": "Le produit de deux nombres complexes multiplie les longueurs au carré : 25 fois 2 donne 50.",
+  "legende_titre": "Le produit garde les longueurs",
+  "lecture": [
+   "Les cases du haut sont 3 + 4i, 1 + i et leur produit moins 1 + 7i.",
+   "Les cases grises du bas sont leurs longueurs au carré : 25, 2 et 50.",
+   "Le produit des deux premières, 25 fois 2, est la troisième, 50."
+  ],
+  "a_voir": "La longueur au carré du produit est le produit des longueurs au carré."
+ },
+ {
+  "code": "78-177",
+  "a_dire": "Dans les octonions, changer les parenthèses change le résultat : le produit n'est pas associatif.",
+  "legende_titre": "Les parenthèses changent le résultat",
+  "lecture": [
+   "La ligne bleue calcule d'abord e1 fois e2, puis multiplie par e3 : elle donne moins e6.",
+   "La ligne violette calcule d'abord e2 fois e3, puis multiplie par e1 : elle donne e6.",
+   "Le signe rouge entre les deux résultats dit qu'ils sont différents."
+  ],
+  "a_voir": "Mêmes trois facteurs, ordre de calcul différent, résultats opposés."
+ },
+ {
+  "code": "78-178",
+  "a_dire": "Avec l'associativité, seules les dimensions 1, 2 et 4 conviennent : R, C et H ; Frobenius ferme la liste.",
+  "legende_titre": "La liste fermée de Frobenius",
+  "lecture": [
+   "Les cases vertes sont R, C et H, en dimension 1, 2 et 4.",
+   "La case rouge en pointillés, en dimension 3, est celle qui échoue.",
+   "L'accolade bleue dit que la liste est complète."
+  ],
+  "a_voir": "Seules les dimensions 1, 2 et 4 donnent une algèbre."
+ },
+ {
+  "code": "78-179",
+  "a_dire": "Dans une géométrie projective finie, si Desargues est vrai, alors Pappus est vrai, grâce à Wedderburn.",
+  "legende_titre": "De Desargues à Pappus",
+  "lecture": [
+   "La case bleue est Desargues vrai ; la flèche bleue donne les coordonnées.",
+   "La case violette est un corps gauche fini.",
+   "La flèche orange est le théorème de Wedderburn : le corps est commutatif (case orange).",
+   "La flèche verte mène à Pappus vrai (case verte)."
+  ],
+  "a_voir": "Quatre cases en chaîne : Desargues, corps gauche fini, commutatif, Pappus."
+ },
+ {
+  "code": "78-180",
+  "a_dire": "Pour l égal e3, le calcul échoue dès la première égalité : l(ij) vaut e6 et (li)j vaut moins e6.",
+  "legende_titre": "Où la chaîne de calculs casse",
+  "lecture": [
+   "La case bleue calcule l(ij) avec l égal e3, i égal e1, j égal e2 : le résultat est e6.",
+   "La case violette calcule (li)j : le résultat est moins e6.",
+   "La flèche rouge et le signe disent que la première égalité est fausse.",
+   "La case en pointillés grise, en bas, n'est jamais atteinte."
+  ],
+  "a_voir": "Le premier pas de la chaîne est déjà faux."
+ }
+]

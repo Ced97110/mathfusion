@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 57, r'$Q(x)$', 'sujet', 'xl')
+text(ax, 44, 51, 'se lit « Q de x »', 'encre', 's')
+arrow(ax, (38, 55), (26, 44), 'sujet'); arrow(ax, (50, 55), (62, 44), 'sujet')
+box(ax, 3, 36, 40, 8, 'sujet', label=r'$Q$ : somme des carrés', size='s')
+box(ax, 53, 36, 32, 8, 'autre', label=r'$x$ : un élément', size='s')
+box(ax, 3, 6, 38, 20, 'resultat', label='$x=3+4i$\n$Q(x)=9+16=25$', size='s')
+box(ax, 47, 6, 38, 20, 'resultat', label='$x=(1,1,1,1)$\n$Q(x)=4$', size='s')
+arrow(ax, (22, 35), (22, 27), 'resultat'); arrow(ax, (66, 35), (66, 27), 'resultat')
+save(fig, '78-096')

@@ -1,0 +1,179 @@
+[
+ {
+  "code": "78-049",
+  "a_dire": "Une algèbre de Lie n’a pas d’unité, car la règle [x, x] = 0 empêche [e, e] de valoir e.",
+  "legende_titre": "Deux produits, une règle",
+  "lecture": [
+   "À gauche (violet), les nombres ont une unité : 1 × 7 = 7 (vert). Mais 2 × 2 = 4 n’est pas 0 (rouge).",
+   "À droite (bleu), [x, x] = 0 est toujours vrai (vert).",
+   "En rouge, [e, e] vaut 0 et non e : aucune unité n’est possible."
+  ],
+  "a_voir": "La règle [x, x] = 0 est ce qui exclut l’unité."
+ },
+ {
+  "code": "78-050",
+  "a_dire": "Si [e, x] = x pour tout x, le choix x = e donne e = 0, puis x = 0 pour tout x.",
+  "legende_titre": "Une preuve en quatre pas",
+  "lecture": [
+   "La case bleue du haut est l’hypothèse de départ.",
+   "La case orange est le choix x = e : c’est l’étape qui compte.",
+   "Les deux cases vertes donnent e = 0, puis x = 0 pour tout x."
+  ],
+  "a_voir": "Le choix x = e relie la règle de départ à la règle [x, x] = 0."
+ },
+ {
+  "code": "78-051",
+  "a_dire": "Le signe [x, y] se lit « crochet de x et y » et désigne le produit de deux éléments d’une algèbre de Lie.",
+  "legende_titre": "Une écriture, deux calculs",
+  "lecture": [
+   "Le grand signe bleu contient un premier élément x et un second élément y.",
+   "La case violette calcule le crochet de deux matrices par xy − yx.",
+   "La case orange le calcule pour deux flèches par le produit vectoriel x × y."
+  ],
+  "a_voir": "L’écriture [x, y] reste la même, seul le calcul change."
+ },
+ {
+  "code": "78-052",
+  "a_dire": "Le signe [x, y, z] remplace en trois lettres (xy)z − x(yz).",
+  "legende_titre": "Trois lettres au lieu d’une phrase",
+  "lecture": [
+   "En haut, le signe est égal à (xy)z − x(yz).",
+   "À gauche, les cases violettes x et y sont groupées d’abord.",
+   "À droite, les cases orange y et z sont groupées d’abord."
+  ],
+  "a_voir": "Le signe désigne l’écart entre les deux groupements."
+ },
+ {
+  "code": "78-053",
+  "a_dire": "A⁻ est le même ensemble que A, avec le crochet xy − yx à la place du produit.",
+  "legende_titre": "Même ensemble, autre produit",
+  "lecture": [
+   "Les deux disques violets x et y sont les mêmes éléments dans les deux cadres.",
+   "Le cadre gris est A, avec le produit xy.",
+   "Le cadre bleu est A⁻, avec le crochet xy − yx."
+  ],
+  "a_voir": "Seul le produit change : les éléments restent les mêmes."
+ },
+ {
+  "code": "78-054",
+  "a_dire": "Sk_n est l’ensemble des matrices dont la transposée est l’opposée, ᵗX = −X.",
+  "legende_titre": "Une matrice qui change de signe",
+  "lecture": [
+   "Les cases bleues sont au-dessus de la diagonale.",
+   "Les cases violettes en dessous sont leurs opposées, en miroir par rapport à la diagonale.",
+   "Les cases grises de la diagonale valent 0."
+  ],
+  "a_voir": "Chaque case est l’opposée de sa case en miroir."
+ },
+ {
+  "code": "78-055",
+  "a_dire": "Pour toute algèbre associative, la somme des trois doubles crochets vaut 0.",
+  "legende_titre": "Douze produits qui s’annulent",
+  "lecture": [
+   "La formule du haut a trois doubles crochets, soit 12 produits.",
+   "Chaque case verte donne un produit avec le signe plus.",
+   "La case rouge sous elle donne le même produit avec le signe moins."
+  ],
+  "a_voir": "Chaque produit apparaît une fois en plus et une fois en moins."
+ },
+ {
+  "code": "78-056",
+  "a_dire": "Sur ces deux matrices, le crochet de X et Y est antisymétrique, mais le produit XY ne l’est pas.",
+  "legende_titre": "Crochet contre produit",
+  "lecture": [
+   "Les deux cadres bleus sont X et Y, avec leurs nombres non nuls.",
+   "Le cadre rouge est XY : un seul nombre non nul, −1, et il n’est pas antisymétrique.",
+   "Le cadre vert est [X, Y] : −1 et 1 en miroir, donc antisymétrique. Une case vide vaut 0."
+  ],
+  "a_voir": "Le crochet reste dans l’ensemble, le produit en sort."
+ },
+ {
+  "code": "78-057",
+  "a_dire": "La transposée renverse l’ordre d’un produit, donc le crochet de deux matrices antisymétriques est antisymétrique.",
+  "legende_titre": "Le renversement de l’ordre",
+  "lecture": [
+   "La case bleue est le départ : ᵗX = −X et ᵗY = −Y.",
+   "Les cases orange montrent l’étape qui compte : ᵗ(XY) devient ᵗY ᵗX.",
+   "Les cases vertes remplacent les transposées par les opposées et arrivent à ᵗ(XY − YX) = −(XY − YX)."
+  ],
+  "a_voir": "Sans le renversement de l’ordre, le signe ne changerait pas."
+ },
+ {
+  "code": "78-058",
+  "a_dire": "Les matrices antisymétriques décrivent les rotations très petites.",
+  "legende_titre": "Une petite rotation est presque antisymétrique",
+  "lecture": [
+   "Le titre orange donne l’angle : 0,01.",
+   "Le cadre de gauche donne l’écart à l’identité : 0,01 et −0,01 hors diagonale, −0,00005 sur la diagonale.",
+   "Le cadre de droite est une matrice antisymétrique avec les mêmes nombres hors diagonale et 0 sur la diagonale."
+  ],
+  "a_voir": "L’écart est presque antisymétrique : la diagonale est presque nulle."
+ },
+ {
+  "code": "78-059",
+  "a_dire": "Le crochet est le produit vectoriel de ℝ³, et l’identité de Jacobi se vérifie sur i, i, j.",
+  "legende_titre": "Trois termes, une somme nulle",
+  "lecture": [
+   "À gauche, les trois flèches i (bleu), j (orange) et k (gris).",
+   "Les trois cases du haut sont les termes : 0, j et −j.",
+   "La case verte du bas montre la somme : 0 + j − j = 0."
+  ],
+  "a_voir": "Les termes j et −j s’annulent."
+ },
+ {
+  "code": "78-060",
+  "a_dire": "ℝ³ avec le produit vectoriel est la même algèbre de Lie que Sk_3.",
+  "legende_titre": "Un vecteur, une matrice",
+  "lecture": [
+   "La case bleue est le vecteur (1, 2, 3) de ℝ³.",
+   "La grille violette est une matrice antisymétrique qui contient 1, 2 et 3, au signe près.",
+   "Les cases grises de la diagonale valent 0."
+  ],
+  "a_voir": "Chaque vecteur correspond à une matrice, et les deux algèbres sont les mêmes."
+ },
+ {
+  "code": "78-061",
+  "a_dire": "Le produit de Jordan a ∘ b est la moyenne de ab et ba : (ab + ba)/2.",
+  "legende_titre": "Une moyenne de deux produits",
+  "lecture": [
+   "La grille bleue est ab : un seul 1, en haut à gauche.",
+   "La grille violette est ba : un seul 1, en bas à droite.",
+   "La grille grise est leur somme ; la flèche orange divise par 2.",
+   "La grille verte est a ∘ b : un demi sur la diagonale. Une case vide vaut 0."
+  ],
+  "a_voir": "Le résultat est la moitié de la somme des deux produits."
+ },
+ {
+  "code": "78-062",
+  "a_dire": "Le signe ∘ du chapitre 78 est le produit de Jordan, non la composition du chapitre 42.",
+  "legende_titre": "Même signe, deux sens",
+  "lecture": [
+   "Le cadre violet est le chapitre 42 : on double 3 pour obtenir 6, puis on ajoute 1 pour obtenir 7.",
+   "Le cadre bleu est le chapitre 78 : a et b sont des matrices.",
+   "La case du bas est la moyenne des produits : (ab + ba)/2."
+  ],
+  "a_voir": "Le sens du signe dépend des objets écrits autour."
+ },
+ {
+  "code": "78-063",
+  "a_dire": "Le produit de Jordan est commutatif : a ∘ b = b ∘ a.",
+  "legende_titre": "Échanger a et b ne change rien",
+  "lecture": [
+   "La ligne du haut est a ∘ b : ab (bleu) plus ba (violet).",
+   "La ligne du bas est b ∘ a : les mêmes deux produits, dans l’autre ordre.",
+   "Les deux lignes mènent à la même grille verte : un demi sur la diagonale. Une case vide vaut 0."
+  ],
+  "a_voir": "La somme de deux produits ne dépend pas de leur ordre."
+ },
+ {
+  "code": "78-064",
+  "a_dire": "Le produit de Jordan garde les carrés : a ∘ a = a².",
+  "legende_titre": "La division par 2 compte",
+  "lecture": [
+   "La grille verte est a ∘ a : 7, 10, 15 et 22, c’est a².",
+   "La grille rouge est aa + aa sans division : 14, 20, 30 et 44.",
+   "Le signe ≠ montre que la division par 2 est nécessaire."
+  ],
+  "a_voir": "Avec la division par 2, la moyenne de deux produits égaux est ce produit."
+ }
+]
