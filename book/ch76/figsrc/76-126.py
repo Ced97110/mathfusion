@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,3,22,38,34,'sujet'); box(ax,47,22,38,34,'varie')
+text(ax,22,50,r'$a\quad b$','sujet','m'); text(ax,22,43,r'$c\quad d$','sujet','m')
+text(ax,22,32,r'$ad-bc$','sujet','l')
+text(ax,66,50,r'$a\quad b$','varie','m'); text(ax,66,43,r'$d\quad d$','varie','m')
+text(ax,66,32,r'$ad-bd$','varie','m'); text(ax,66,25.5,r'$=d\,(a-b)$','varie','m')
+text(ax,22,14,'4 lettres distinctes','sujet','m'); text(ax,22,8,'pas de facteur','resultat','m')
+text(ax,66,14,r'$c=d$ : deux lettres égales','varie','s'); text(ax,66,8,r'le facteur $d$ apparaît','varie','m')
+text(ax,44,62,r'le polynôme $\det X$','encre','m')
+save(fig,'76-126')

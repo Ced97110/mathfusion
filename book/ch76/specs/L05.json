@@ -1,0 +1,180 @@
+[
+ {
+  "code": "76-065",
+  "a_dire": "Le niveau r rassemble les combinaisons de produits de r vecteurs ; une somme de deux produits du niveau 2 reste au niveau 2.",
+  "legende_titre": "Deux niveaux, séparés par le nombre de vecteurs",
+  "lecture": [
+   "Le grand cadre bleu est le niveau 2 : ses éléments sont des produits de 2 vecteurs, e12 et e13.",
+   "Les flèches orange mènent à leur somme, en vert, qui reste dans le cadre du niveau 2.",
+   "Le cadre violet est le niveau 3 : il contient e123, un produit de 3 vecteurs."
+  ],
+  "a_voir": "La somme de deux éléments du niveau 2 reste dans le niveau 2."
+ },
+ {
+  "code": "76-066",
+  "a_dire": "Λ(V) se coupe en niveaux F, V, Λ²(V), … jusqu'à Λ^n(V) ; le total des éléments de base est 4, 8, 16 pour n = 2, 3, 4.",
+  "legende_titre": "Les mêmes niveaux, des nombres qui changent",
+  "lecture": [
+   "Chaque petit carré bleu est un élément de base ; chaque groupe est un niveau, de F à gauche vers le haut à droite.",
+   "Les signes plus séparent les niveaux.",
+   "Le nombre vert à droite est le total de la ligne : 4, 8 puis 16."
+  ],
+  "a_voir": "La forme reste la même, seuls les nombres d'éléments par niveau changent."
+ },
+ {
+  "code": "76-067",
+  "a_dire": "La dimension du niveau r vaut le nombre de façons de choisir r éléments parmi n ; pour n = 4 et r = 2, il y en a 6.",
+  "legende_titre": "De n et r au nombre de parties",
+  "lecture": [
+   "Les quatre disques bleus sont les nombres 1, 2, 3 et 4.",
+   "La flèche orange mène aux six parties à 2 éléments, écrites e12 à e34.",
+   "La case verte donne le résultat : 6 parties."
+  ],
+  "a_voir": "On écrit les parties à r éléments, on les compte, et ce nombre est la dimension."
+ },
+ {
+  "code": "76-068",
+  "a_dire": "En dimension 3, les niveaux ont 1, 3, 3 et 1 éléments de base, et le total est 8, égal à 2³.",
+  "legende_titre": "Les huit parties de {1, 2, 3}",
+  "lecture": [
+   "Chaque case bleue est une partie de {1, 2, 3}, écrite avec ses nombres ; ∅ est la partie vide.",
+   "Chaque colonne est un niveau, classé par le nombre d'éléments de la partie.",
+   "Les nombres verts sous les colonnes donnent 1, 3, 3, 1 et leur somme vaut 8 = 2³."
+  ],
+  "a_voir": "Chaque partie est comptée une fois, donc le total est 2³."
+ },
+ {
+  "code": "76-069",
+  "a_dire": "Le niveau du haut n'a qu'un seul élément de base, e123, car tout autre produit de trois vecteurs lui est égal ou opposé, ou nul.",
+  "legende_titre": "Tous les produits mènent à e123",
+  "lecture": [
+   "Les cases vertes sont des produits égaux à +e123 ; les cases orange sont égales à −e123.",
+   "Toutes les flèches arrivent dans la même case bleue, e123.",
+   "La case rouge, avec un vecteur répété, vaut 0."
+  ],
+  "a_voir": "Un seul élément de base suffit : le niveau du haut est de dimension 1."
+ },
+ {
+  "code": "76-070",
+  "a_dire": "Si (Lv)² n'est pas nul, le prolongement n'existe pas : ici e1 ∧ e1 = 0 devrait être envoyé sur 9.",
+  "legende_titre": "Le cas qui casse : 3 × 3 = 9",
+  "lecture": [
+   "La ligne du haut est l'algèbre extérieure : e1, puis e1 multiplié par lui-même, qui vaut 0.",
+   "La ligne du bas est celle des nombres réels : L envoie e1 sur 3, puis 3 × 3 donne 9, en rouge.",
+   "La flèche rouge de droite devrait relier 0 à 9, ce qui est impossible."
+  ],
+  "a_voir": "Le carré de l'image doit être 0 ; avec 3, on obtient 9 et l'envoi échoue."
+ },
+ {
+  "code": "76-071",
+  "a_dire": "Dans Λ(V) la seule règle est v ∧ v = 0 ; le prolongement existe parce que les images obéissent à la même règle.",
+  "legende_titre": "Même règle des deux côtés",
+  "lecture": [
+   "À gauche, e1 multiplié par lui-même donne 0 dans Λ(V).",
+   "À droite, L envoie e1 sur le tableau 0, 1, 0, 0, en violet.",
+   "Ce tableau multiplié par lui-même donne le tableau de zéros, en vert : la règle est vraie pour l'image."
+  ],
+  "a_voir": "La règle v ∧ v = 0 se retrouve pour les images, donc le calcul se refait dans A."
+ },
+ {
+  "code": "76-072",
+  "a_dire": "η(L) est la transformation L prolongée aux produits : elle envoie e1 ∧ e2 sur le produit des deux images.",
+  "legende_titre": "L sur les flèches, η(L) sur les produits",
+  "lecture": [
+   "À gauche, le carré bleu est le produit e1 ∧ e2, avec e1 en bleu et e2 en violet.",
+   "À droite, L envoie e1 sur Le1 et e2 sur Le2, les deux flèches de même couleur.",
+   "Le parallélogramme orange est le produit Le1 ∧ Le2, image du carré par η(L)."
+  ],
+  "a_voir": "η(L) agit sur les produits en prenant le produit des images."
+ },
+ {
+  "code": "76-073",
+  "a_dire": "On applique L à chaque vecteur du produit, puis on refait le produit ; le résultat est un nombre fois e12.",
+  "legende_titre": "Trois transformations, un nombre devant e12",
+  "lecture": [
+   "Le carré gris est le produit e12.",
+   "Chaque forme orange est son image : ses deux côtés sont les flèches L e1 et L e2.",
+   "Le nombre sous chaque forme est celui devant e12 : 5, 2 et 9."
+  ],
+  "a_voir": "On applique L à chaque vecteur, puis on refait le produit : un nombre fois e12."
+ },
+ {
+  "code": "76-074",
+  "a_dire": "Prolonger une composée revient à composer les prolongements : ×2 puis ×5 donne ×10.",
+  "legende_titre": "Deux étapes ou une seule",
+  "lecture": [
+   "Le carré bleu est e12 ; avec L2, il devient 2 carrés, en orange.",
+   "Avec L1, on passe à 10 carrés, en vert.",
+   "La longue flèche verte du bas fait le même passage en une fois : ×10."
+  ],
+  "a_voir": "Les deux étapes ×2 puis ×5 donnent le même résultat que L1L2 d'un coup."
+ },
+ {
+  "code": "76-075",
+  "a_dire": "Au niveau du haut, η(L) multiplie par un nombre, le déterminant de L ; ici 5.",
+  "legende_titre": "Un nombre au niveau du haut",
+  "lecture": [
+   "À gauche, e1 devient Le1 : la flèche orange sort de la droite pointillée, ce n'est pas un multiple de e1.",
+   "À droite, le carré bleu e12 devient 5 carrés verts : une multiplication par 5.",
+   "Ce nombre 5 est écrit en bas : det L."
+  ],
+  "a_voir": "Au niveau du haut, la transformation se réduit à un nombre."
+ },
+ {
+  "code": "76-076",
+  "a_dire": "Une application linéaire d'une droite multiplie chaque vecteur par le même nombre.",
+  "legende_titre": "Chaque vecteur est multiplié par 5",
+  "lecture": [
+   "La droite du haut porte les vecteurs e et 4e, en bleu.",
+   "La droite du bas porte leurs images 5e et 20e, en orange.",
+   "Les deux flèches portent le même nombre : ×5."
+  ],
+  "a_voir": "Un seul nombre, ici 5, décrit l'application sur toute la droite."
+ },
+ {
+  "code": "76-077",
+  "a_dire": "Pour n = 2, on développe Le1 ∧ Le2 en quatre termes : deux sont nuls, et il reste 6 − 1 = 5 fois e12.",
+  "legende_titre": "Quatre termes, deux disparaissent",
+  "lecture": [
+   "Les termes à gauche, en bleu, composent Le1 ; ceux du haut, en violet, composent Le2.",
+   "Chaque case est le produit d'un terme de gauche par un terme du haut.",
+   "Les cases rouges valent 0 ; la case bleue donne 6 e12 et la case orange donne −1 e12.",
+   "La case verte additionne : 6 − 1 = 5."
+  ],
+  "a_voir": "Seuls deux termes restent, et le signe moins vient de e2 ∧ e1."
+ },
+ {
+  "code": "76-078",
+  "a_dire": "Le déterminant de la matrice vaut ad moins bc, ici 2 × 3 − 1 × 1 = 5.",
+  "legende_titre": "Deux produits en croix, soustraits",
+  "lecture": [
+   "Les quatre cases bleues sont les nombres a, b, c, d de la matrice.",
+   "La flèche verte relie a et d : le produit ad vaut 6.",
+   "La flèche orange relie b et c : le produit bc vaut 1.",
+   "La case verte soustrait : 6 − 1 = 5."
+  ],
+  "a_voir": "On multiplie en diagonale, puis on retire le produit de l'autre diagonale."
+ },
+ {
+  "code": "76-079",
+  "a_dire": "La lettre A désigne une algèbre quelconque : un ensemble où l'on peut additionner, multiplier, et multiplier par un nombre.",
+  "legende_titre": "Une lettre pour plusieurs ensembles",
+  "lecture": [
+   "Les cases violettes à gauche sont des exemples : tableaux, nombres complexes, polynômes.",
+   "La case bleue est la lettre A, qui les désigne tous.",
+   "Les cases vertes à droite sont ce que l'on peut faire dans A."
+  ],
+  "a_voir": "A ne dit pas quel ensemble, seulement qu'on y fait ces trois opérations."
+ },
+ {
+  "code": "76-080",
+  "a_dire": "a(xy) se lit : on multiplie x par y, puis le résultat par le nombre a ; les parenthèses donnent l'ordre.",
+  "legende_titre": "L'ordre des opérations dans a(xy)",
+  "lecture": [
+   "La ligne du haut part de x : on multiplie par y, puis par a, pour obtenir a(xy), en vert.",
+   "La ligne du bas part de x : on multiplie par a, puis par y, pour obtenir (ax)y, en violet.",
+   "Les parenthèses montrent quelle opération vient en premier."
+  ],
+  "a_voir": "Les parenthèses de a(xy) disent que le produit xy est fait avant le nombre a."
+ }
+]

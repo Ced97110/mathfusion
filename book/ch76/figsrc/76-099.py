@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 46, 38, 12, 'sujet', label=r'$3\times4\ e_{12}$')
+text(ax, 44, 52, r'$+$', 'encre', 'l')
+box(ax, 46, 46, 38, 12, 'varie', label=r'$2\times1\ e_{21}=-2\,e_{12}$', size='s')
+box(ax, 4, 26, 38, 12, 'resultat', label=r'développé : $12-2=10$', size='s')
+text(ax, 44, 32, r'$=$', 'encre', 'l')
+box(ax, 46, 26, 38, 12, 'resultat', label=r'formule : $3\times4-1\times2=10$', size='s')
+arrow(ax, (23, 46), (23, 38.5), 'fixe'); arrow(ax, (65, 46), (36, 38.5), 'fixe')
+box(ax, 4, 5, 80, 12, 'limite', label=r'avec $+$ : $3\times4+1\times2=14$ (faux)', size='s')
+save(fig, '76-099')

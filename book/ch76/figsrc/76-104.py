@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+u = 7.0
+fig, ax = canvas(56)
+def lattice(o):
+    for k in range(5): line(ax, [(o[0], o[1] + k * u), (o[0] + 3 * u, o[1] + k * u)], 'fixe', lw=0.3)
+    for k in range(4): line(ax, [(o[0] + k * u, o[1]), (o[0] + k * u, o[1] + 4 * u)], 'fixe', lw=0.3)
+OL, OR = (8, 10), (52, 10)
+P = lambda o, x, y: (o[0] + x * u, o[1] + y * u)
+lattice(OL); lattice(OR)
+poly(ax, [P(OL, 0, 0), P(OL, 1, 0), P(OL, 1, 1), P(OL, 0, 1)], 'sujet')
+poly(ax, [P(OR, 0, 0), P(OR, 2, 1), P(OR, 3, 4), P(OR, 1, 3)], 'resultat')
+arrow(ax, OL, P(OL, 1, 0), 'sujet', lw=1.3); arrow(ax, OL, P(OL, 0, 1), 'varie', lw=1.3)
+arrow(ax, OR, P(OR, 2, 1), 'sujet', lw=1.3); arrow(ax, OR, P(OR, 1, 3), 'varie', lw=1.3)
+text(ax, 11.5, 6, r'$e_1$', 'sujet', 's'); text(ax, 4.5, 17.5, r'$e_2$', 'varie', 's')
+text(ax, 67, 14, r'$Te_1$', 'sujet', 's'); text(ax, 55, 34, r'$Te_2$', 'varie', 's')
+text(ax, 22, 29, 'aire 1', 'sujet', 's')
+text(ax, 64, 25, 'aire 5', 'resultat', 'm', weight='bold')
+arrow(ax, (32, 24), (47, 24), 'fixe'); text(ax, 39.5, 28, r'$T$', 'fixe', 'm')
+text(ax, 44, 50, r'5 carreaux $=\det T$', 'resultat', 'm')
+save(fig, '76-104')

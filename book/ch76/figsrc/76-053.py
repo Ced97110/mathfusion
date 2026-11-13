@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 21, 56, 'Avant : 2 règles', 'varie', 's'); text(ax, 66, 56, 'Après : 1 règle', 'sujet', 's')
+box(ax, 2, 30, 38, 14, 'varie', label=r'$v\wedge u=-u\wedge v$', size='s', dash=True)
+box(ax, 2, 8, 38, 14, 'varie', label=r'$v\wedge v=0$', size='s', dash=True)
+box(ax, 48, 38, 38, 12, 'sujet', label=r'$v\wedge v=0$')
+text(ax, 67, 33.5, 'seule règle', 'sujet', 's')
+arrow(ax, (67, 27), (67, 19), 'resultat')
+box(ax, 48, 6, 38, 12, 'resultat', label=r'$v\wedge u=-u\wedge v$', size='s')
+text(ax, 80, 23, 'déduite', 'resultat', 's')
+save(fig, '76-053')

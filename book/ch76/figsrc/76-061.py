@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 8, 40, 48, 'autre', fill=False)
+box(ax, 46, 8, 40, 48, 'sujet', fill=False)
+text(ax, 22, 51, 'polynômes', 'autre', 'm'); text(ax, 66, 51, r'$\Lambda(V)$', 'sujet', 'm')
+box(ax, 5, 36, 34, 8, 'autre', label=r'$x\cdot x=x^2$ : nouveau', size='s')
+box(ax, 5, 25, 34, 8, 'autre', label=r'$xy=yx$', size='s')
+box(ax, 5, 14, 34, 8, 'autre', label=r'$1,\ x,\ y,\ x^2,\ xy,\ \ldots$', size='s', dash=True)
+box(ax, 49, 36, 34, 8, 'sujet', label=r'$e_1\wedge e_1=0$', size='s')
+box(ax, 49, 25, 34, 8, 'sujet', label=r'$e_2\wedge e_1=-e_1\wedge e_2$', size='s')
+box(ax, 49, 14, 34, 8, 'resultat', label=r'$1,\ e_1,\ e_2,\ e_1\wedge e_2$', size='s')
+text(ax, 22, 3, 'ne s’arrête pas', 'autre', 's'); text(ax, 66, 3, r'$4=2^2$ : s’arrête', 'resultat', 's')
+save(fig, '76-061')

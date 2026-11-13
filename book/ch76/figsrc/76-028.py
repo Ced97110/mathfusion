@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 34, 44, 22, 'autre'); text(ax, 24, 51, r'groupe $G = \{1, s\}$', 'autre', 's')
+text(ax, 24, 42, r'$s \times s = 1$', 'autre', 'm')
+box(ax, 2, 4, 44, 26, 'varie'); text(ax, 24, 25, 'espace vectoriel', 'varie', 's'); text(ax, 24, 20, r'de base $G$', 'varie', 's')
+text(ax, 24, 11, r'$3\cdot 1 + 2\cdot s$', 'varie', 'm')
+arrow(ax, (47, 45), (58, 34), 'sujet'); arrow(ax, (47, 17), (58, 28), 'sujet')
+box(ax, 58, 22, 28, 18, 'sujet', label=r'$F[G]$', size='xl', weight='bold')
+text(ax, 72, 17, 'les deux réunis', 'sujet', 's')
+save(fig, '76-028')

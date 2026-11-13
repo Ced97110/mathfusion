@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'groupe $G=\{1,\,s\}$, avec $s^2=1$', 'encre', 'm')
+box(ax, 4, 38, 34, 11, 'sujet', label=r'$1+s\neq0$', size='l')
+box(ax, 50, 38, 34, 11, 'autre', label=r'$1-s\neq0$', size='l')
+text(ax, 44, 43.5, r'$\times$', 'encre', 'l')
+arrow(ax, (21, 37), (30, 31), 'fixe'); arrow(ax, (67, 37), (58, 31), 'fixe')
+box(ax, 4, 20, 80, 11, 'fixe', label=r'$(1+s)(1-s)=1-s^2$', size='l')
+arrow(ax, (44, 19), (44, 14), 'fixe')
+box(ax, 4, 2, 80, 11, 'resultat', label=r'$=1-1=0$ : produit nul', size='l', weight='bold')
+save(fig, '76-102')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+y=34
+box(ax,8,y,14,10,'sujet',label='1',size='l')
+text(ax,28,y+5,r'$\times$','encre','l')
+box(ax,34,y,14,10,'sujet',label=r'$i$',size='l')
+text(ax,54,y+5,'=','encre','l')
+box(ax,60,y,14,10,'resultat',label=r'$i$',size='l')
+y2=14
+text(ax,8,y2+5,'=','encre','l')
+box(ax,12,y2,10,10,'fixe',label='0',size='l')
+text(ax,26,y2+5,r'$\times$','encre','m')
+box(ax,30,y2,10,10,'sujet',label='1',size='l')
+text(ax,44,y2+5,'+','encre','l')
+box(ax,48,y2,10,10,'varie',label='1',size='l')
+text(ax,62,y2+5,r'$\times$','encre','m')
+box(ax,66,y2,10,10,'sujet',label=r'$i$',size='l')
+arrow(ax,(53,8.5),(53,13.5),'varie')
+text(ax,53,4,r'$\gamma_{122}=1$','varie','l')
+save(fig,'76-081')

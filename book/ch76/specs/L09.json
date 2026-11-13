@@ -1,0 +1,265 @@
+[
+ {
+  "code": "76-129",
+  "a_dire": "Les deux flèches alignées donnent un produit nul.",
+  "legende_titre": "Deux flèches sur une même droite",
+  "lecture": [
+   "La flèche bleue est 𝑢, qui va en (3, 1).",
+   "La flèche violette est 𝑣, double de 𝑢 : elle va en (6, 2).",
+   "Les quatre points sont sur la même droite grise en pointillés.",
+   "Le texte vert donne le résultat : 𝑢 ∧ 𝑣 = 0."
+  ],
+  "a_voir": "Les quatre sommets sont alignés : il n'y a pas de surface."
+ },
+ {
+  "code": "76-130",
+  "a_dire": "Si les colonnes sont colinéaires, le déterminant est nul et le plan est écrasé sur une droite.",
+  "legende_titre": "Colonnes alignées, plan écrasé",
+  "lecture": [
+   "À gauche, le plan avec le point bleu (2, 0) et le point violet (0, 1).",
+   "Les flèches orange sont l'action de T sur ces deux points.",
+   "À droite, la droite verte : tous les résultats sont dessus.",
+   "Les deux flèches arrivent au même point (4, 2)."
+  ],
+  "a_voir": "Deux points différents arrivent au même point, sur une droite."
+ },
+ {
+  "code": "76-131",
+  "a_dire": "Un déterminant nul veut dire que T n'a pas d'inverse.",
+  "legende_titre": "Deux points, un seul résultat",
+  "lecture": [
+   "En haut, les flèches orange vont de (2, 0) et de (0, 1) vers (4, 2).",
+   "En bas, les flèches rouges partent de (4, 2) vers les deux points.",
+   "Un seul point de départ ne peut pas aller vers deux points à la fois."
+  ],
+  "a_voir": "Le retour demande deux chemins à partir d'un seul point : c'est impossible."
+ },
+ {
+  "code": "76-132",
+  "a_dire": "Ce système n'a aucune solution : x × 0 ne peut pas valoir −3.",
+  "legende_titre": "Deux commandes qui se contredisent",
+  "lecture": [
+   "La droite bleue est x + y = 5.",
+   "La droite violette est x + y = 8.",
+   "Elles ont la même direction et ne se coupent jamais.",
+   "Le texte rouge donne l'égalité qui reste : x × 0 = −3."
+  ],
+  "a_voir": "Les deux droites ne se touchent pas : pas de solution."
+ },
+ {
+  "code": "76-133",
+  "a_dire": "Ce système a beaucoup de solutions : x × 0 = 0 est vrai pour tout x.",
+  "legende_titre": "Deux commandes qui se confondent",
+  "lecture": [
+   "La droite bleue est x + y = 5.",
+   "La droite violette, plus épaisse, est 2x + 2y = 10 : elle est au même endroit.",
+   "Les points verts sont des solutions, de (0, 5) à (5, 0).",
+   "Le texte vert donne l'égalité qui reste : x × 0 = 0."
+  ],
+  "a_voir": "Les deux droites sont superposées : tous leurs points conviennent."
+ },
+ {
+  "code": "76-134",
+  "a_dire": "Quand le déterminant est nul, x n'est pas fixé ; c ∧ b dit s'il y a zéro solution ou plusieurs.",
+  "legende_titre": "Ce qui reste quand le déterminant est nul",
+  "lecture": [
+   "La droite du haut est rouge : c ∧ b = −3. Chaque valeur de x reçoit une croix.",
+   "La droite du bas est verte : c ∧ b = 0. Chaque valeur de x reçoit un disque vert.",
+   "Les flèches partent de chaque x : x × 0 donne toujours 0."
+  ],
+  "a_voir": "Sur les deux droites, l'égalité ne choisit aucun x."
+ },
+ {
+  "code": "76-135",
+  "a_dire": "Dans le plan, trois flèches ne donnent pas de volume : u ∧ v ∧ w = 0.",
+  "legende_titre": "Trois flèches : plan et espace",
+  "lecture": [
+   "À gauche, trois flèches du plan : e₁ en bleu, e₂ en violet, e₁ + e₂ en orange.",
+   "La troisième flèche est dans le carré des deux autres : volume 0, en rouge.",
+   "À droite, le cube vert est construit sur e₁, e₂ et e₃.",
+   "Le volume du cube est 1."
+  ],
+  "a_voir": "Le plan n'a que deux directions : il n'y a pas de place pour un volume."
+ },
+ {
+  "code": "76-136",
+  "a_dire": "Changer de base du plan multiplie le produit par le déterminant du changement de base.",
+  "legende_titre": "Deux bases, deux aires",
+  "lecture": [
+   "Le carré bleu est construit sur v₁ et v₂ : aire 1.",
+   "Le losange orange est construit sur v₁ + v₂ et v₂ − v₁ : aire 2.",
+   "Le texte vert donne le facteur : le produit est multiplié par 2."
+  ],
+  "a_voir": "La nouvelle base donne une aire deux fois plus grande."
+ },
+ {
+  "code": "76-137",
+  "a_dire": "Le produit v₁ ∧ v₂ d'un plan de ℝ³ se lit par trois nombres : ses coordonnées sur e₁₂, e₁₃, e₂₃.",
+  "legende_titre": "Un plan se lit avec trois nombres",
+  "lecture": [
+   "Les deux cases bleues sont les flèches v₁ = e₁ + e₂ et v₂ = e₂ + e₃.",
+   "La flèche orange est le produit v₁ ∧ v₂.",
+   "Les trois cases vertes sont les coordonnées sur e₁₂, e₁₃ et e₂₃ : 1, 1 et 1."
+  ],
+  "a_voir": "Un plan donne un produit, et ce produit donne trois nombres."
+ },
+ {
+  "code": "76-138",
+  "a_dire": "Les coordonnées de Plücker d'un plan sont définies à un facteur commun près.",
+  "legende_titre": "Même plan, deux listes de nombres",
+  "lecture": [
+   "Le graphique bleu montre (1, 0, −1) pour la base 1.",
+   "Le graphique violet montre (2, 0, −2) pour la base 2.",
+   "La flèche orange montre le facteur 2 entre les deux.",
+   "Chaque barre est une coordonnée : e₁₂, e₁₃, e₂₃."
+  ],
+  "a_voir": "Les barres sont deux fois plus longues, mais c'est le même plan."
+ },
+ {
+  "code": "76-139",
+  "a_dire": "Pour trouver les coordonnées d'un plan : on développe, on remet dans l'ordre, on lit les nombres.",
+  "legende_titre": "Du produit aux trois nombres",
+  "lecture": [
+   "La case bleue est le produit des deux flèches du plan.",
+   "Les deux cases orange sont les étapes : on développe, puis on remet dans l'ordre.",
+   "Les trois cases vertes sont les coordonnées lues : 1, 0 et −1."
+  ],
+  "a_voir": "On lit les nombres devant e₁₂, e₁₃ et e₂₃ dans le résultat final."
+ },
+ {
+  "code": "76-140",
+  "a_dire": "Deux plans différents ont des coordonnées qui ne sont pas proportionnelles.",
+  "legende_titre": "Deux plans, deux directions",
+  "lecture": [
+   "Le point bleu est (1, 0, −1) ; la droite bleue en pointillés passe par lui et par l'origine.",
+   "Le point violet est (1, 0, 0) ; sa droite violette est l'axe horizontal.",
+   "Les deux droites ne sont pas la même droite."
+  ],
+  "a_voir": "Les deux points ne sont pas sur une même droite passant par l'origine."
+ },
+ {
+  "code": "76-141",
+  "a_dire": "La norme de a est le déterminant de la multiplication par a.",
+  "legende_titre": "Un nombre attaché à la multiplication",
+  "lecture": [
+   "Le carré bleu est construit sur 1 et i : aire 1.",
+   "Les deux flèches orange sont les images : 1 devient 1 + 2i, et i devient −2 + i.",
+   "Le parallélogramme orange a pour aire 5, qui est la norme."
+  ],
+  "a_voir": "L'aire du parallélogramme orange est la norme de 1 + 2i."
+ },
+ {
+  "code": "76-142",
+  "a_dire": "Multiplier par a + bi a pour déterminant a² + b².",
+  "legende_titre": "Le déterminant de 2 + 3i",
+  "lecture": [
+   "Le carré orange est construit sur les colonnes (2, 3) et (−3, 2) : aire 13.",
+   "Le bloc bleu a 4 cases : a² = 4.",
+   "Le bloc violet a 9 cases : b² = 9.",
+   "Le texte vert donne la somme : 4 + 9 = 13."
+  ],
+  "a_voir": "L'aire 13 est la somme des deux blocs de cases."
+ },
+ {
+  "code": "76-143",
+  "a_dire": "La norme d'un produit est le produit des normes.",
+  "legende_titre": "Les aires se multiplient",
+  "lecture": [
+   "Le petit carré bleu est l'aire 1.",
+   "Le carré orange est l'aire 13 : première multiplication, par 13.",
+   "Le grand carré vert est l'aire 221 : seconde multiplication, par 17.",
+   "Le texte vert donne le calcul : 13 × 17 = 221."
+  ],
+  "a_voir": "Après les deux multiplications, l'aire est le produit 13 × 17."
+ },
+ {
+  "code": "76-144",
+  "a_dire": "Une opération où l'ordre des parenthèses compte n'est pas associative.",
+  "legende_titre": "Les parenthèses changent le résultat",
+  "lecture": [
+   "La droite bleue du haut montre (8 − 4) − 2 : deux sauts, on arrive à 2.",
+   "La droite orange du bas montre 8 − (4 − 2) : un saut de 2, on arrive à 6.",
+   "Le texte rouge compare : 2 n'est pas égal à 6."
+  ],
+  "a_voir": "Les deux groupements arrivent à deux endroits différents."
+ },
+ {
+  "code": "76-145",
+  "a_dire": "Seules les algèbres ℝ, ℂ, ℍ sont associatives, de dimension finie sur ℝ, avec division.",
+  "legende_titre": "Trois algèbres avec division",
+  "lecture": [
+   "Les trois cadres verts sont ℝ, ℂ et ℍ ; les petits carrés comptent leur dimension : 1, 2, 4.",
+   "Le cadre rouge est M₂(ℝ), de dimension 4.",
+   "Dans M₂(ℝ), e₁₂ × e₁₂ = 0 : on ne peut pas y diviser."
+  ],
+  "a_voir": "Trois algèbres seulement ont la division ; M₂(ℝ) n'en fait pas partie."
+ },
+ {
+  "code": "76-146",
+  "a_dire": "La forme B de deux flèches devient une application linéaire sur un seul élément u ∧ v.",
+  "legende_titre": "Une forme à deux flèches, puis à un élément",
+  "lecture": [
+   "Le parallélogramme bleu est construit sur u = (3, 1) et v = (1, 2) : aire 5.",
+   "Les cinq carrés violets sont 5 e₁₂, le produit u ∧ v.",
+   "La flèche verte de gauche : B envoie les deux flèches sur 5.",
+   "La flèche verte de droite : B̃ envoie e₁₂ sur 1, donc 5 e₁₂ sur 5."
+  ],
+  "a_voir": "Les deux chemins arrivent au même nombre 5."
+ },
+ {
+  "code": "76-147",
+  "a_dire": "SL ne contient que les transformations de déterminant 1 : elles gardent les volumes orientés.",
+  "legende_titre": "Aire gardée ou multipliée",
+  "lecture": [
+   "À gauche, le parallélogramme vert a pour aire 1, comme le carré gris.",
+   "À droite, le parallélogramme rouge a pour aire 5.",
+   "Le texte sous chaque côté dit s'il est dans SL₂ ou hors de SL₂."
+  ],
+  "a_voir": "Seule la transformation de gauche garde l'aire du carré."
+ },
+ {
+  "code": "76-148",
+  "a_dire": "Une matrice est inversible exactement quand son déterminant n'est pas nul.",
+  "legende_titre": "Déterminant non nul, inverse",
+  "lecture": [
+   "En haut, le tableau bleu de déterminant 5 multiplié par son inverse donne le tableau unité vert.",
+   "En bas, le tableau rouge de déterminant 0 mène à « aucun inverse »."
+  ],
+  "a_voir": "Le déterminant 5 donne un inverse ; le déterminant 0 n'en donne pas."
+ },
+ {
+  "code": "76-149",
+  "a_dire": "Les coordonnées de Plücker sont fixées à un facteur près : c'est un objet de géométrie projective.",
+  "legende_titre": "Deux listes, un seul plan",
+  "lecture": [
+   "Le point bleu est la liste (1, 0, −1).",
+   "Le point violet est la liste (2, 0, −2) : le double.",
+   "Les deux points sont sur une même droite grise qui part de 0.",
+   "Les flèches vertes les envoient vers le même plan, engendré par e1 + e3 et e2."
+  ],
+  "a_voir": "Deux listes différentes, un seul plan."
+ },
+ {
+  "code": "76-150",
+  "a_dire": "L'algèbre extérieure réunit les aires, les systèmes et les parties d'un ensemble.",
+  "legende_titre": "Trois chapitres, une même algèbre",
+  "lecture": [
+   "À gauche, le parallélogramme bleu est une aire (chapitre 11).",
+   "Au milieu, les deux droites violettes sont un système (chapitre 24).",
+   "À droite, 1 + 3 + 3 + 1 = 8 cases orange sont les parties d'un ensemble à 3 éléments (chapitre 42).",
+   "Les trois flèches arrivent dans la case verte : l'algèbre extérieure."
+  ],
+  "a_voir": "Trois situations qui semblaient sans rapport vont vers la même case."
+ },
+ {
+  "code": "76-151",
+  "a_dire": "Un élément du niveau 2 n'est pas toujours le produit de deux vecteurs.",
+  "legende_titre": "Une somme qui n'est pas un produit",
+  "lecture": [
+   "Les six cases sont le niveau 2 ; les deux cases violettes sont celles de ω = e₁₂ + e₃₄.",
+   "Le cadre vert : pour un produit u ∧ v, le carré vaut 0.",
+   "Le cadre rouge : pour ω, le carré vaut 2 e₁₂₃₄, qui n'est pas nul."
+  ],
+  "a_voir": "Le carré de ω n'est pas nul : ω n'est pas un produit de deux vecteurs."
+ }
+]

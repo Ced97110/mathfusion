@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 4, 84, 54, 'sujet', fill=False, dash=True)
+text(ax, 44, 54, 'algèbre', 'sujet', 'l', weight='bold')
+box(ax, 6, 30, 33, 17, 'autre'); box(ax, 49, 30, 33, 17, 'varie')
+text(ax, 22.5, 42, 'anneau', 'autre', 'm'); text(ax, 22.5, 35, r'$x \times y$', 'autre', 'm')
+text(ax, 65.5, 42, 'espace vectoriel', 'varie', 's'); text(ax, 65.5, 35, r'$a \times x$', 'varie', 'm')
+line(ax, [(22.5, 30), (22.5, 20), (36, 20)], 'resultat', lw=1.4)
+line(ax, [(65.5, 30), (65.5, 20), (52, 20)], 'resultat', lw=1.4)
+box(ax, 36, 13, 16, 14, 'resultat', label='=')
+text(ax, 44, 8, 'un seul lien : une égalité', 'resultat', 's')
+save(fig, '76-019')
