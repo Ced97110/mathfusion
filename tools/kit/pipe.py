@@ -14,7 +14,10 @@ def plain(s):
     return re.sub(r'<[^>]+>','',s).strip()
 def setup(ch, pdf, root='.'):
     C=json.load(open(f'{KIT}/chapters.json')); keys=list(C); p1=C[ch]; p2=C[keys[keys.index(ch)+1]]
-    base=os.path.abspath(os.path.join(root, f'ch{int(ch):02d}' if ch.isdigit() else f'ch{ch}')); os.makedirs(base,exist_ok=True)
+    base=os.path.abspath(os.path.join(root, f'ch{int(ch):02d}' if ch.isdigit() else f'ch{ch}'))
+    # Atomic claim: os.mkdir fails if another session already created this chapter folder.
+    try: os.mkdir(base)
+    except FileExistsError: sys.exit(f'REFUS : {base} existe déjà, chapitre pris par une autre session. Passe au suivant.')
     for f in os.listdir(KIT):
         if f.endswith(('.py','.md','.css')): open(f'{base}/{f}','w').write(open(f'{KIT}/{f}').read().replace('__BASE__',base))
         elif f.endswith('.json'): shutil.copy(f'{KIT}/{f}',base)
