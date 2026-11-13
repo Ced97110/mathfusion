@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(44)
+box(ax,13,22,10,10,'sujet',label='$a$')
+box(ax,31,22,10,10,'sujet',label='$a$')
+box(ax,65,22,10,10,'sujet',label='$a$')
+for x in (27,45,61): text(ax,x,27,r'$\times$')
+text(ax,53,27,'…','encre','l')
+text(ax,18,36,'premier','fixe','s'); text(ax,53,36,'cachés','fixe','s'); text(ax,70,36,'dernier','fixe','s')
+brace(ax,13,75,22,'varie',label=r'$n$ facteurs',size='m')
+text(ax,44,7,'on ne compte pas les lettres','fixe','s')
+save(fig,'14-018')

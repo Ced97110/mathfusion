@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 4, 65, r'le bloc $(x+1)$ joue le rôle de la base', 'sujet', 's', ha='left')
+box(ax, 3, 44, 52, 14, 'sujet', label=r'$(x+1)^5 \,/\, (x+1)^2 = (x+1)^3$', size='s')
+arrow(ax, (55, 51), (61, 51), 'resultat')
+box(ax, 61, 44, 24, 14, 'resultat', label=r'$32 \div 4 = 8$', size='s')
+text(ax, 73, 40, r'pour $x = 1$', 'fixe', 's')
+text(ax, 4, 30, r'exposant négatif : même geste', 'autre', 's', ha='left')
+box(ax, 3, 9, 52, 14, 'autre', label=r'$1 \,/\, x^{-2} = x^2$', size='m')
+arrow(ax, (55, 16), (61, 16), 'resultat')
+box(ax, 61, 9, 24, 14, 'resultat', label=r'$1 \div \frac{1}{4} = 4$', size='s')
+text(ax, 73, 4.5, r'pour $x = 2$', 'fixe', 's')
+save(fig, '14-097')

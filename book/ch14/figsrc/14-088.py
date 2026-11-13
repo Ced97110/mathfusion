@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+text(ax, 44, 85, r'$(4 \times 10^3) \times (5 \times 10^2)$', 'encre', 'm')
+text(ax, 22, 76, 'mantisses', 'sujet', 's'); text(ax, 66, 76, 'puissances de 10', 'fixe', 's')
+box(ax, 8, 62, 28, 11, 'sujet', label=r'$4 \times 5 = 20$', size='m')
+box(ax, 50, 62, 32, 11, 'fixe', label=r'$10^3 \times 10^2 = 10^5$', size='m')
+arrow(ax, (22, 62), (36, 52), 'varie'); arrow(ax, (66, 62), (52, 52), 'varie')
+box(ax, 26, 40, 36, 12, 'varie', label=r'$20 \times 10^5$', size='l')
+text(ax, 41, 34, '20 dépasse 10', 'limite', 's', ha='right')
+arrow(ax, (44, 40), (44, 24), 'varie')
+text(ax, 47, 29, r'$20 = 2 \times 10$', 'varie', 's', ha='left')
+box(ax, 26, 8, 36, 14, 'resultat', label=r'$2 \times 10^6$', size='l')
+save(fig, '14-088')

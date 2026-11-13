@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$m\times10^{e}$', 'sujet', 'l')
+f = numberline(ax, 8, 80, 30, -5, 5, labels=False, arrow_right=False)
+disc(ax, f(0), 30, 1.4, 'sujet')
+text(ax, f(0), 47, 'virgule de départ', 'sujet', 's')
+arrow(ax, (f(0), 36), (f(4), 36), 'varie')
+arrow(ax, (f(0), 36), (f(-4), 36), 'varie')
+text(ax, (f(0) + f(4)) / 2, 41, r'$e>0$ : à droite', 'varie', 's')
+text(ax, (f(0) + f(-4)) / 2, 41, r'$e<0$ : à gauche', 'varie', 's')
+brace(ax, f(0), f(4), 27, 'fixe', label=r'$|e|$ rangs')
+text(ax, 44, 11, 'on complète par des zéros', 'fixe', 'm')
+save(fig, '14-078')

@@ -1,0 +1,178 @@
+[
+ {
+  "code": "14-033",
+  "a_dire": "Le symbole n compte les facteurs du haut de la fraction.",
+  "legende_titre": "Le nombre écrit en haut",
+  "lecture": [
+   "Les 5 cases au-dessus de la barre sont les facteurs du haut : leur nombre est n.",
+   "Les 2 cases grises sous la barre sont les facteurs du bas, comptés par m.",
+   "Les flèches relient chaque case du bas à une case bleue du haut.",
+   "Les 3 cases orange restent en haut : n − m = 3."
+  ],
+  "a_voir": "Le symbole n compte les facteurs du haut ; les facteurs qui restent sont aussi en haut."
+ },
+ {
+  "code": "14-034",
+  "a_dire": "Le symbole m compte les facteurs du bas, qui sont tous barrés avec des facteurs du haut.",
+  "legende_titre": "Le nombre qui est barré",
+  "lecture": [
+   "Les 2 cases orange du bas sont les facteurs du bas : leur nombre est m.",
+   "Chaque trait orange relie une case du bas à une case du haut qu'elle annule.",
+   "Les 3 cases grises du haut ne sont pas barrées."
+  ],
+  "a_voir": "Chaque case orange du bas annule une case orange du haut : m vaut 2."
+ },
+ {
+  "code": "14-035",
+  "a_dire": "Le symbole n − m compte les facteurs qui restent.",
+  "legende_titre": "Ce qu'il reste après avoir barré",
+  "lecture": [
+   "Les 5 cases forment le haut, noté n.",
+   "Les 2 cases orange sont barrées : c'est m.",
+   "Les 3 cases vertes restent : c'est n − m."
+  ],
+  "a_voir": "Les 3 cases vertes sont ce qui reste de 5 cases quand on en retire 2."
+ },
+ {
+  "code": "14-036",
+  "a_dire": "La règle du quotient exige a ≠ 0, car pour a = 0 on diviserait 0 par 0.",
+  "legende_titre": "Le cas où la règle ne dit rien",
+  "lecture": [
+   "Le cadre vert prend a = 2 : 2^5 divisé par 2^2 donne 32 divisé par 4, soit 8.",
+   "Le cadre rouge prend a = 0 : le haut vaut 0 et le bas vaut 0, donc 0 divisé par 0, qui n'a pas de sens."
+  ],
+  "a_voir": "Avec a = 2 le calcul aboutit à 8 ; avec a = 0 il aboutit à 0 divisé par 0."
+ },
+ {
+  "code": "14-037",
+  "a_dire": "Pour n = m, la règle du quotient donne a^0 et la division donne 1 : c'est le même nombre, donc a^0 = 1.",
+  "legende_titre": "Deux chemins pour le même quotient",
+  "lecture": [
+   "Le cadre bleu du haut est le quotient 2^3 divisé par 2^3.",
+   "À gauche, la division 8 divisé par 8 donne 1.",
+   "À droite, la règle du quotient donne 2^(3−3), soit 2^0.",
+   "En bas, vert : les deux résultats sont le même nombre, donc 2^0 vaut 1."
+  ],
+  "a_voir": "Les deux flèches partent du même quotient et arrivent au même cadre vert."
+ },
+ {
+  "code": "14-038",
+  "a_dire": "La preuve de a^0 = 1 marche pour a = 5 et échoue pour a = 0, car 0 divisé par 0 n'a pas de valeur.",
+  "legende_titre": "Où la preuve marche et où elle casse",
+  "lecture": [
+   "La colonne bleue prend a = 5 : 5^3 divisé par 5^3 est 125 divisé par 125, qui vaut 1.",
+   "La colonne rouge prend a = 0 : 0^3 divisé par 0^3 est 0 divisé par 0, qui n'a pas de nombre."
+  ],
+  "a_voir": "À gauche la chaîne finit sur 1 ; à droite elle finit sur un cadre rouge sans nombre."
+ },
+ {
+  "code": "14-039",
+  "a_dire": "La valeur de 2^0 n'est pas décidée : deux chemins indépendants donnent 1.",
+  "legende_titre": "Deux chemins, un seul nombre",
+  "lecture": [
+   "La ligne grise divise 2 par 2 et obtient 1.",
+   "La ligne orange écrit 2¹ divisé par 2¹, applique la règle du quotient et obtient 2⁰.",
+   "Les deux flèches vertes arrivent dans le même cadre : 2⁰ = 1.",
+   "Le texte vert dit que 2⁰ = 1 est une conséquence de la règle du quotient."
+  ],
+  "a_voir": "Les deux lignes arrivent au même 1 : la valeur de 2⁰ découle de la règle."
+ },
+ {
+  "code": "14-040",
+  "a_dire": "0^0 n'est pas un nombre : la preuve demanderait de diviser 0 par 0.",
+  "legende_titre": "Un cas qui n'a pas de valeur",
+  "lecture": [
+   "Sur la droite graduée, le point vert marque 5^0, qui vaut 1.",
+   "Le cadre rouge en pointillés est 0^0, égal à 0 divisé par 0 : il n'est relié à aucune graduation."
+  ],
+  "a_voir": "5^0 a sa place sur la droite ; 0^0 reste hors de la droite, dans un cadre en pointillés."
+ },
+ {
+  "code": "14-041",
+  "a_dire": "Tout nombre non nul à la puissance 0 vaut 1, quel que soit le nombre, mais 0 est exclu.",
+  "legende_titre": "Un résultat, pour tout nombre non nul",
+  "lecture": [
+   "Chaque ligne bleue prend un nombre, divise son carré par lui-même (49 par 49, 9 par 9, 0,25 par 0,25) et obtient 1 en vert.",
+   "La ligne rouge prend 0 : 0 divisé par 0 ne donne aucun nombre."
+  ],
+  "a_voir": "Les trois premières lignes finissent sur 1 ; la ligne rouge finit sur un point d'interrogation."
+ },
+ {
+  "code": "14-042",
+  "a_dire": "(a²)³ s'écrit comme trois facteurs a², dont la règle du produit additionne les exposants : 2 + 2 + 2 = 6.",
+  "legende_titre": "Les étapes de la démonstration",
+  "lecture": [
+   "Le cadre du haut est (a²)³.",
+   "Dessous, le même nombre écrit comme trois facteurs a².",
+   "La flèche orange épaisse est la règle du produit : elle additionne les exposants en a^(2+2+2).",
+   "Le cadre vert donne a^6."
+  ],
+  "a_voir": "La flèche orange épaisse est l'étape qui porte la preuve."
+ },
+ {
+  "code": "14-043",
+  "a_dire": "Dans (a^n)^m on a m groupes de n facteurs, donc n × m facteurs : (2²)³ a 3 × 2 = 6 facteurs.",
+  "legende_titre": "Des groupes de facteurs à compter",
+  "lecture": [
+   "Chaque cadre en pointillés est un groupe 2^2 : il contient 2 cases, donc 2 facteurs.",
+   "Il y a 3 groupes.",
+   "L'accolade les rassemble et le cadre vert donne 3 × 2 = 6 facteurs."
+  ],
+  "a_voir": "3 groupes de 2 cases font 6 cases en tout."
+ },
+ {
+  "code": "14-044",
+  "a_dire": "Multiplier les exposants, c'est additionner m fois le même nombre n : l'addition répétée de la règle du produit.",
+  "legende_titre": "Une addition répétée écrite en abrégé",
+  "lecture": [
+   "Les trois cases bleues sont l'exposant 2 pris trois fois : 2 + 2 + 2 = 6.",
+   "La flèche orange mène à la même quantité écrite en multiplication : 3 × 2 = 6."
+  ],
+  "a_voir": "Le haut et le bas donnent 6 : l'addition de trois 2 et le produit 3 × 2."
+ },
+ {
+  "code": "14-045",
+  "a_dire": "(ab)³ s'écrit ab × ab × ab ; la commutativité permet de grouper les a et les b, ce qui donne a³b³.",
+  "legende_titre": "Changer l'ordre des facteurs",
+  "lecture": [
+   "La ligne du haut est ab × ab × ab : les a sont bleus, les b sont orange.",
+   "Chaque flèche déplace une case vers la ligne du bas.",
+   "Dans cette ligne, les 3 a sont ensemble, puis les 3 b, ce qui s'écrit a³b³."
+  ],
+  "a_voir": "Les flèches ne changent que l'ordre : il y a 3 a et 3 b en haut comme en bas."
+ },
+ {
+  "code": "14-046",
+  "a_dire": "La règle de (ab)^n ne se transporte pas aux sommes : (1 + 2)² vaut 9 et 1² + 2² vaut 5.",
+  "legende_titre": "Un cas où la règle ne marche pas",
+  "lecture": [
+   "La grille bleue de 3 sur 3 est le carré de 1 + 2 : 9 carreaux.",
+   "Les deux carrés violets sont 1² et 2² : 1 carreau et 4 carreaux, soit 5.",
+   "Le signe rouge dit que 9 et 5 sont différents."
+  ],
+  "a_voir": "Le carré de la somme fait 9 carreaux, la somme des carrés en fait 5."
+ },
+ {
+  "code": "14-047",
+  "a_dire": "Le carré de côté ab = 6 se compte de deux façons : 6 × 6 = 36 carreaux, ou a² = 9 blocs de b² = 4 carreaux.",
+  "legende_titre": "Un carré compté de deux façons",
+  "lecture": [
+   "Le grand carré a 6 carreaux de côté : (ab)² = 36.",
+   "Les cadres bleus sont les 9 blocs, soit a².",
+   "Le bloc orange montre un bloc de 4 carreaux, soit b²."
+  ],
+  "a_voir": "Compte les 9 cadres bleus, puis les 4 carreaux du bloc orange."
+ },
+ {
+  "code": "14-048",
+  "a_dire": "L'exposant s'applique à chaque facteur de la parenthèse, y compris au nombre devant : (3ab)² = 9a²b².",
+  "legende_titre": "L'exposant touche aussi le nombre devant",
+  "lecture": [
+   "La parenthèse (3ab) a trois facteurs : 3 en orange, a et b en bleu.",
+   "Une flèche d'exposant 2 part de chacun.",
+   "Les trois résultats sont 3² = 9, a² et b².",
+   "Le cadre vert les rassemble en 9a²b²."
+  ],
+  "a_voir": "Trois flèches, trois facteurs : le 3 est aussi mis au carré."
+ }
+]

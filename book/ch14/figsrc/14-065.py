@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'$x=2$ ; $y=3$', 'fixe', 'm')
+box(ax, 4, 46, 52, 12, 'sujet', label=r'$x^{-2}+y$', size='l')
+text(ax, 71, 52, 'vaut 3,25', 'resultat', 'm')
+arrow(ax, (30, 46), (30, 32), 'varie')
+text(ax, 34, 39, 'déplacé comme un facteur', 'varie', 's', ha='left')
+box(ax, 4, 18, 52, 12, 'limite', label=r'$(1+y)/x^{2}$', size='l')
+text(ax, 71, 24, 'vaut 1', 'limite', 'm')
+text(ax, 44, 8, '3,25 ≠ 1 : la valeur change', 'limite', 'm')
+save(fig, '14-065')

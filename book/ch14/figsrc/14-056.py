@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 29, 62, 30, 14, 'sujet', label=r'$a^3$', size='l')
+text(ax, 44, 80, 'cherche son inverse', 'sujet', 's')
+box(ax, 2, 34, 38, 16, 'varie', label=r'$a^{-3}$', size='l')
+box(ax, 48, 34, 38, 16, 'autre', label=r'$\frac{1}{a^3}$', size='l')
+arrow(ax, (36, 61), (22, 51), 'varie'); arrow(ax, (52, 61), (66, 51), 'autre')
+text(ax, 10, 56, r'$\times a^3$', 'varie', 'm'); text(ax, 78, 56, r'$\times a^3$', 'autre', 'm')
+text(ax, 21, 28, r'$a^{3-3}=a^0=1$', 'varie', 's')
+text(ax, 67, 28, r'$a^3/a^3=1$', 'autre', 's')
+arrow(ax, (21, 25), (38, 16), 'varie'); arrow(ax, (67, 25), (50, 16), 'autre')
+box(ax, 29, 4, 30, 12, 'resultat', label='un seul inverse', size='s')
+save(fig, '14-056')

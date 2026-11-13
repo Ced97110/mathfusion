@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 3, 53, 'chemin 1 : on divise', 'fixe', 's', ha='left')
+box(ax, 3, 38, 24, 10, 'fixe', label=r'$2\ /\ 2$'); box(ax, 33, 38, 22, 10, 'fixe', label=r'$1$')
+arrow(ax, (27, 43), (33, 43), 'fixe')
+text(ax, 3, 27, 'chemin 2 : règle du quotient', 'varie', 's', ha='left')
+box(ax, 3, 12, 24, 10, 'varie', label=r'$2^1\ /\ 2^1$'); box(ax, 33, 12, 22, 10, 'varie', label=r'$2^{1-1} = 2^0$', size='s')
+arrow(ax, (27, 17), (33, 17), 'varie')
+box(ax, 62, 24, 23, 12, 'resultat', label=r'$2^0 = 1$', size='l')
+arrow(ax, (55, 43), (62, 31), 'resultat', lw=1.3); arrow(ax, (55, 17), (62, 29), 'resultat', lw=1.3)
+text(ax, 73.5, 18.5, 'conséquence de', 'resultat', 's'); text(ax, 73.5, 14.5, 'la règle du quotient', 'resultat', 's')
+save(fig, '14-039')

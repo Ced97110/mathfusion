@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 24, 72, 40, 13, 'sujet', label=r'$b^9 / b^{-6}$', size='l')
+text(ax, 22, 62, 'chemin 1', 'fixe', 's', ha='right'); text(ax, 66, 62, 'chemin 2', 'varie', 's', ha='left')
+arrow(ax, (34, 72), (24, 52), 'fixe'); arrow(ax, (54, 72), (64, 52), 'varie')
+box(ax, 3, 38, 42, 13, 'fixe', label=r'$9 - (-6) = 15$', size='m')
+box(ax, 46, 38, 39, 13, 'varie', label=r'$b^9 \times b^6$ : $9 + 6$', size='m')
+text(ax, 77, 31, r'$b^{-6} \to b^6$', 'varie', 's')
+arrow(ax, (24, 38), (36, 24), 'resultat'); arrow(ax, (64, 38), (52, 24), 'resultat')
+box(ax, 24, 8, 40, 15, 'resultat', label=r'$b^{15}$ des deux côtés', size='m')
+text(ax, 44, 2.5, r'pour $b = 2$ : 32 768', 'resultat', 's')
+save(fig, '14-087')

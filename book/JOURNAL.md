@@ -15,6 +15,7 @@
 | 2026-11-12 | 11 — Mesure et géométrie | 161 | 156 | 160 | 11-059 (la lettre a, mesure dans l'unité d'arrivée, n'est pas lue) |
 | 2026-11-12 | 12 — Symboles, variables, la droite des réels et leurs propriétés | 139 | 127 | 139 | aucune |
 | 2026-11-12 | 13 — Les nombres signés et la valeur absolue | 148 | 139 | 145 | 13-003 (« 2 seul ne dit pas le côté » n'est pas lu), 13-114 (les quatre propriétés vérifiées par Jacobson ne sont pas lues), 13-116 (« plus la droite est basse, plus le nombre est grand » n'est pas lu) |
+| 2026-11-12 | 14 — Les règles des exposants, exposants négatifs, notation scientifique | 102 | 93 | 101 | 14-058 (l'écriture en un seul bloc, sans barre de fraction, n'est pas lue) |
 
 ## Remarques
 
@@ -29,3 +30,4 @@
 - Chapitre 11 : nombres ajoutés par l'agent, absents de la fiche : 11-102 (terrains 12 × 8 et 10 × 10 ; seul 96 est dans la fiche), 11-107 (pointe du triangle à 2 cm du coin), 11-041 (découpe en cases de 1 cm). 11-085 : le reste est orange au lieu du rouge du livre (rôles de couleur).
 - Chapitre 12 : à la correction, des points justes dessinés en rouge (12-011 : 1/2 ; 12-137 : 0,707) et les cases de 12-126 sont passés au violet ou à l'orange ; 12-126 disait « sans atteindre 2 » à côté de carrés supérieurs à 2, phrase corrigée. Aucun nombre inventé relevé.
 - Chapitre 13 : 13-055, le point d'arrivée que la fiche met en rouge est vert (rôles de couleur) ; 13-145, une phrase vraie était en rouge, passée en vert à la correction. Aucun nombre inventé relevé.
+- Chapitre 14 : 14-014 montrait « 2⁰ = 0 » en rouge sans le marquer faux ; corrigé (barré, « faux »). Dernier lot de 6 fiches fusionné dans L06 (un agent de moins). Aucun nombre inventé relevé.

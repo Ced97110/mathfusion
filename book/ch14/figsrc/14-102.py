@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'on cherche une fraction dont le carré vaut 2', 'sujet', 's')
+f = numberline(ax, 8, 80, 30, 1.9, 2.1, step=0.05, labels=False, arrow_right=False)
+disc(ax, f(1.96), 30, 1.8, 'autre'); disc(ax, f(2.04), 30, 1.8, 'autre')
+disc(ax, f(2), 30, 2.2, 'resultat')
+text(ax, f(2), 22, r'cible : 2', 'resultat', 'm')
+text(ax, f(1.96) - 2, 40, r'$(7/5)^2 = 1{,}96$', 'autre', 's', ha='right')
+text(ax, f(2.04) + 2, 40, r'$(10/7)^2 \approx 2{,}04$', 'autre', 's', ha='left')
+arrow(ax, (f(1.96) - 1, 38), (f(1.96), 32.5), 'autre', lw=0.7); arrow(ax, (f(2.04) + 1, 38), (f(2.04), 32.5), 'autre', lw=0.7)
+text(ax, 44, 8, r'$2^{1/2}$ : son carré vaut 2. Est-ce une fraction ?', 'sujet', 's')
+save(fig, '14-102')

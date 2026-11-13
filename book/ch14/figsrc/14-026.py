@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+text(ax,44,74,r'$2^3 \times 2^4$','encre','l')
+for i in range(3): box(ax,6+10*i,52,8,8,'varie',label='2')
+for i in range(4): box(ax,40+10*i,52,8,8,'autre',label='2')
+brace(ax,6,34,60,'varie',label='$n$ = 3',down=False)
+brace(ax,40,78,60,'autre',label='$m$ = 4',down=False)
+text(ax,44,36,r'$2^3 \times 2^3$','encre','l')
+box(ax,6,16,34,10,'varie',label='$n$ = 3'); box(ax,48,16,34,10,'autre',label='$m$ = 3')
+text(ax,44,8,'deux lettres, même valeur','fixe','s')
+save(fig,'14-026')

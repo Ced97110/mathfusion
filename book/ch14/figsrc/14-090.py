@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 4, 74, 46, 12, 'varie', label=r'$40{,}5 \times 10^{-5}$', size='l')
+text(ax, 54, 80, 'juste, mal écrit', 'limite', 's', ha='left')
+arrow(ax, (27, 74), (27, 62), 'varie')
+text(ax, 31, 68, r'$40{,}5 = 4{,}05 \times 10$', 'varie', 's', ha='left')
+box(ax, 4, 46, 46, 12, 'varie', label=r'$4{,}05 \times 10^{1} \times 10^{-5}$', size='m')
+arrow(ax, (27, 46), (27, 34), 'varie')
+text(ax, 31, 40, r'règle du produit : $1 + (-5) = -4$', 'sujet', 's', ha='left')
+box(ax, 4, 18, 46, 12, 'resultat', label=r'$4{,}05 \times 10^{-4}$', size='l')
+text(ax, 54, 24, 'mantisse entre 1 et 10', 'resultat', 's', ha='left')
+text(ax, 44, 8, r'même nombre : 0,000405', 'fixe', 's')
+save(fig, '14-090')

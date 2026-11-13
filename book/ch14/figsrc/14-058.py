@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 16, 52, 'a', 'sujet', 'xl'); text(ax, 21.5, 57, r'$-n$', 'varie', 'l')
+text(ax, 9, 36, 'la base', 'sujet', 's'); arrow(ax, (12, 40), (15, 46), 'sujet')
+text(ax, 36, 36, 'exposant négatif', 'varie', 's'); arrow(ax, (30, 40), (22.5, 52), 'varie')
+text(ax, 45, 52, '=', 'encre', 'l')
+box(ax, 54, 42, 30, 20, 'resultat', label=r'$\frac{1}{a^n}$', size='l')
+text(ax, 22, 28, 'un seul bloc, sans barre', 'varie', 's')
+box(ax, 2, 8, 41, 17, 'varie', label=r'$a^{-2}\times a^5=a^3$', size='m')
+text(ax, 66, 28, 'avec barre, même résultat', 'fixe', 's')
+box(ax, 45, 8, 41, 17, 'fixe', label=r'$\frac{1}{a^2}\times a^5=a^3$', size='m')
+save(fig, '14-058')
