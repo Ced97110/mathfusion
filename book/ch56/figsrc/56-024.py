@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 22, 40, 40, 'fixe', fill=False)
+text(ax, 22, 58, 'anneau ℤ', 'fixe', 's')
+box(ax, 6, 40, 32, 10, 'fixe', label='+ addition', size='s', dash=True)
+box(ax, 6, 26, 32, 10, 'sujet', label='× multiplication', size='s')
+arrow(ax, (38, 31), (50, 31), 'varie')
+box(ax, 50, 26, 36, 10, 'resultat', label='12 = 2 × 2 × 3', size='s')
+arrow(ax, (38, 45), (50, 45), 'fixe')
+box(ax, 50, 40, 36, 10, 'fixe', label='aucune somme', size='s', dash=True)
+arrow(ax, (22, 22), (22, 14), 'varie')
+box(ax, 2, 4, 84, 10, 'sujet', label='monoïde : on ne garde que ×')
+save(fig, '56-024')

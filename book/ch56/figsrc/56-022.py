@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 48, 84, 10, 'limite', label='horloge : 2×1 = 2×4, 1 ≠ 4')
+box(ax, 2, 32, 46, 10, 'varie', label='+ simplification', size='s')
+box(ax, 2, 19, 46, 10, 'varie', label='+ commutatif', size='s')
+box(ax, 2, 6, 46, 10, 'sujet', label='monoïde : produit, neutre 1', size='s')
+box(ax, 52, 32, 34, 10, 'resultat', label='3b = 3c ⇒ b = c', size='s')
+box(ax, 52, 19, 34, 10, 'resultat', label='3 × 4 = 4 × 3', size='s')
+box(ax, 52, 6, 34, 10, 'resultat', label='ℤ* : entiers non nuls', size='s')
+arrow(ax, (25, 47), (25, 43), 'limite')
+save(fig, '56-022')

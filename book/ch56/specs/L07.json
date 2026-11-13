@@ -1,0 +1,386 @@
+[
+ {
+  "code": "56-180",
+  "a_dire": "En développant la norme du produit, les deux termes croisés −10abcd et +10abcd s'annulent, donc N(rs) = N(r)N(s).",
+  "legende_titre": "Où les termes croisés disparaissent",
+  "lecture": [
+   "En haut en bleu, tu vois r, s et leur produit rs = −3 + 3√−5.",
+   "La case bleue donne le carré de la première partie du produit : 4, −20 et 25, c’est-à-dire a²c², −10abcd et 25b²d².",
+   "La case violette donne 5 fois le carré de la seconde partie : 5, +20 et +20, c’est-à-dire 5a²d², +10abcd et 5b²c².",
+   "Les deux cases orange, −10abcd = −20 et +10abcd = +20, sont reliées par la flèche : leur somme vaut 0. En vert, 9 + 45 = 54 est égal à 6 × 9."
+  ],
+  "a_voir": "Les deux termes orange −10abcd et +10abcd se compensent, il reste 54 = 6 × 9."
+ },
+ {
+  "code": "56-181",
+  "a_dire": "On reconnaît qu'un polynôme est irréductible en lisant ses coefficients : tous divisibles par 2 sauf le coefficient de tête, et 4 ne divise pas le terme constant.",
+  "legende_titre": "Lire les coefficients avec p = 2",
+  "lecture": [
+   "Les quatre cases bleues sont les coefficients de x³, x², x et du terme constant : 1, 0, 2, 2.",
+   "Sous chaque case verte, tu lis si 2 divise le coefficient : il ne divise pas 1, il divise 0, 2 et 2.",
+   "En bas à droite, 4 ne divise pas 2."
+  ],
+  "a_voir": "Un seul coefficient échappe à 2 : celui de x³ ; le terme constant n'est pas divisible par 4."
+ },
+ {
+  "code": "56-182",
+  "a_dire": "Les quatre notions s'emboîtent : euclidien dans principal, dans factoriel, dans intègre.",
+  "legende_titre": "Quatre boîtes l'une dans l'autre",
+  "lecture": [
+   "La boîte grise, la plus grande, contient les anneaux intègres.",
+   "La boîte verte est dans la grise : les anneaux factoriels. La boîte orange est dans la verte : les principaux. La boîte bleue, la plus petite : les euclidiens.",
+   "Chaque exemple est écrit dans la plus petite boîte où il entre : ℤ, ℤ[i] et F[x] dans la bleue ; ℤ[x] dans la verte seulement ; ℤ[√−5] dans la grise seulement."
+  ],
+  "a_voir": "Chaque boîte est contenue dans la suivante, et les exemples sortent des boîtes plus petites."
+ },
+ {
+  "code": "56-183",
+  "a_dire": "Les inclusions sont strictes : ℤ[√−5] est intègre sans être factoriel, ℤ[x] est factoriel sans être principal.",
+  "legende_titre": "Deux anneaux qui s'arrêtent en chemin",
+  "lecture": [
+   "À gauche, la case bleue 6 mène à deux écritures : 2 × 3 (violet) et (1+√−5)(1−√−5) (orange).",
+   "Sous cet anneau, la case verte dit intègre, la case rouge dit deux factorisations de 6.",
+   "À droite, les cases bleues 2 et x engendrent l'idéal orange (2, x), qui a deux générateurs.",
+   "Ce deuxième anneau est factoriel (vert) mais pas principal (rouge)."
+  ],
+  "a_voir": "Dans chaque colonne, la case verte est vraie et la case rouge montre ce qui manque."
+ },
+ {
+  "code": "56-184",
+  "a_dire": "Il existe un anneau principal qui n'est pas euclidien : les nombres a + bw avec w = (1+√−19)/2.",
+  "legende_titre": "Un anneau principal sans division avec reste",
+  "lecture": [
+   "La case bleue en haut est le nombre w.",
+   "La flèche orange le met au carré : la case orange donne w² = −5 + w.",
+   "La ligne orange dit que ce résultat est de la forme a + bw avec a = −5 et b = 1.",
+   "La case bleue du milieu nomme l’anneau des nombres a + bw ; les deux flèches grises vont vers ses deux propriétés.",
+   "La case verte dit que chaque idéal a un générateur ; la case grise dit qu’aucune division avec reste ne convient."
+  ],
+  "a_voir": "w² reste de la forme a + bw, et dans cet anneau il n’y a pas de division avec reste."
+ },
+ {
+  "code": "56-185",
+  "a_dire": "Dans un corps, tout nombre non nul est une unité et la division est exacte : il n'y a rien à factoriser.",
+  "legende_titre": "Un corps : tout se divise sans reste",
+  "lecture": [
+   "Le grand disque bleu contient les nombres non nuls de ℚ : 3, 1/3, 5/3 et −2 sont tous des unités.",
+   "Le petit disque gris contient seulement 0.",
+   "Dans la case verte, 5 = 3 × 5/3 + 0 : le reste est toujours 0."
+  ],
+  "a_voir": "Tous les nombres non nuls sont dans le disque des unités."
+ },
+ {
+  "code": "56-186",
+  "a_dire": "Dans un corps, la taille 0 pour 0 et 1 pour le reste des nombres non nuls rend l'inégalité vraie : un corps est euclidien.",
+  "legende_titre": "Une taille qui marche dans un corps",
+  "lecture": [
+   "L'égalité du haut est la division de 7 par 3 : le quotient est 7/3 et le reste vaut 0.",
+   "Sur la droite graduée, le disque vert r est le reste, à la taille 0.",
+   "Le disque bleu b est le diviseur 3, à la taille 1.",
+   "La flèche orange dit que 0 est plus petit que 1."
+  ],
+  "a_voir": "Le reste (taille 0) est à gauche du diviseur (taille 1)."
+ },
+ {
+  "code": "56-187",
+  "a_dire": "Avec une taille constante, le reste 0 n'est jamais plus petit que le diviseur : il faut donner à 0 sa propre taille.",
+  "legende_titre": "Pourquoi il faut une taille pour 0",
+  "lecture": [
+   "Dans les deux colonnes, la règle verticale montre les tailles 0 et 1 ; r est le reste 0, b est le diviseur 3.",
+   "À gauche, tout est à la taille 1 : r (orange) et b (bleu) sont à la même hauteur, et la case rouge dit 1 < 1 faux.",
+   "À droite, r (vert) est à la taille 0, plus bas que b : la case verte dit 0 < 1 vrai."
+  ],
+  "a_voir": "À gauche les deux disques sont à la même hauteur, à droite le reste est plus bas."
+ },
+ {
+  "code": "56-188",
+  "a_dire": "Un corps n'a que deux idéaux, (0) et (1) = F : la question du générateur unique n'a plus d'enjeu.",
+  "legende_titre": "Les deux seuls idéaux d'un corps",
+  "lecture": [
+   "Le grand disque bleu est l'idéal (3), qui est égal à tout ℚ.",
+   "Il contient 3 × 1/3 = 1, donc il contient 1.",
+   "Le petit disque gris est l'idéal (0), qui ne contient que 0.",
+   "Le texte vert dit qu'il n'y a que ces deux idéaux."
+  ],
+  "a_voir": "Un idéal engendré par un nombre non nul remplit tout l'ensemble."
+ },
+ {
+  "code": "56-189",
+  "a_dire": "On met à part toutes les unités dès le départ, car les ajouter comme facteurs ne change pas la factorisation.",
+  "legende_titre": "Les unités, mises à part",
+  "lecture": [
+   "En haut, 6 = 2 × 3 : les cases bleues sont les facteurs, les cases grises −1 et −1 sont des unités dont le produit vaut 1.",
+   "En bas, 5 = (2+i)(2−i), avec les unités i et −i en gris.",
+   "L'accolade « unités » regroupe ce qu'on ajoute sans rien changer."
+  ],
+  "a_voir": "Les cases grises sont des unités et ne changent pas le produit."
+ },
+ {
+  "code": "56-190",
+  "a_dire": "L'idéal (2) de ℤ se décrit par un seul pas de 2 ; l'idéal (2, x) demande deux déplacements, 2 et x, et ne contient pas 1.",
+  "legende_titre": "Un pas contre deux pas",
+  "lecture": [
+   "En haut, les points bleus de la droite sont les multiples de 2 ; la flèche orange montre le seul pas de 2 qui les engendre.",
+   "En bas, chaque point est un polynôme : sa place à l'horizontale donne le terme constant, à la verticale le coefficient de x.",
+   "Les points bleus sont ceux de terme constant pair, avec un coefficient de x quelconque : il faut le pas de 2 et le pas de x.",
+   "Le point rouge est le polynôme 1 : il n'est pas dans l'idéal."
+  ],
+  "a_voir": "En bas il faut deux pas orange, et le point rouge reste en dehors des colonnes bleues."
+ },
+ {
+  "code": "56-191",
+  "a_dire": "L'idéal (2, x) est l'ensemble des polynômes dont le terme constant est pair, le coefficient de x étant quelconque.",
+  "legende_titre": "Le terme constant décide",
+  "lecture": [
+   "En haut, 2 + 3x a un terme constant 2 (case bleue, pair) et un terme en x quelconque (case orange).",
+   "Il s'écrit 2 × 1 + x × 3, donc il est dans l'idéal (texte vert).",
+   "En bas, 1 + x a un terme constant 1, impair (case rouge) : il n'est pas dans l'idéal."
+  ],
+  "a_voir": "Seule la case du terme constant (pair ou impair) décide."
+ },
+ {
+  "code": "56-192",
+  "a_dire": "Si (2, x) = (f), alors f divise 2, donc f vaut ±2 ou ±1 ; chaque cas mène à une contradiction : (2, x) n'est pas principal.",
+  "legende_titre": "Pas de générateur unique pour (2, x)",
+  "lecture": [
+   "La case bleue du haut est l'hypothèse (2, x) = (f).",
+   "La case orange dit que f divise 2, donc f est constant.",
+   "Les deux cases violettes donnent les choix : ±2 à gauche, ±1 à droite.",
+   "Les cases rouges disent pourquoi chaque choix échoue : 2 ne divise pas x ; avec ±1, 1 serait dans l'idéal, or 1 a un terme constant impair. La case verte du bas conclut."
+  ],
+  "a_voir": "Les deux branches finissent en rouge, donc l'hypothèse de départ est fausse."
+ },
+ {
+  "code": "56-193",
+  "a_dire": "ℤ[x] est factoriel mais pas principal, donc pas euclidien, car euclidien entraîne principal.",
+  "legende_titre": "Factoriel, sans être euclidien",
+  "lecture": [
+   "La case verte du haut dit que Z[x] est factoriel : oui.",
+   "La case violette du milieu dit qu’il n’est pas principal : l’idéal (2, x) n’a pas un seul générateur.",
+   "Les flèches orange montent : euclidien entraîne principal, principal entraîne factoriel.",
+   "La case violette du bas dit que Z[x] n’est pas euclidien, car il n’est pas principal."
+  ],
+  "a_voir": "Le « non » du milieu entraîne aussi le « non » du bas."
+ },
+ {
+  "code": "56-194",
+  "a_dire": "Dans ℤ × 2ℤ, le couple (1, 0) joue le rôle de 1 et (1, −2) multiplié par lui-même donne (1, 0).",
+  "legende_titre": "Trois produits de couples",
+  "lecture": [
+   "Première ligne, en gris : (0, 2) × (0, 4) = (0, 8), comme 2 × 4 = 8.",
+   "Deuxième ligne : le couple bleu (1, 0) multiplié par (0, 2) redonne (0, 2).",
+   "Troisième ligne : le couple violet (1, −2) multiplié par lui-même donne le vert (1, 0)."
+  ],
+  "a_voir": "Le résultat vert de la dernière ligne est le même couple que le bleu de la ligne du milieu."
+ },
+ {
+  "code": "56-195",
+  "a_dire": "Dans S, le couple (1, −2) est son propre inverse ; dans 2ℤ il n'y a pas de 1, donc pas d'inverse.",
+  "legende_titre": "Un inverse qui n'existait pas",
+  "lecture": [
+   "En haut, les points gris sont les nombres pairs ; à la place de 1, le cercle rouge vide dit que 1 est absent.",
+   "Dans la grande case bleue, on calcule (1, −2) × (1, −2).",
+   "La première coordonnée vaut 1 × 1 = 1 ; la seconde vaut −2 − 2 + 4 = 0.",
+   "Le résultat vert (1, 0) est le neutre."
+  ],
+  "a_voir": "Le produit de (1, −2) par lui-même est le neutre (1, 0)."
+ },
+ {
+  "code": "56-196",
+  "a_dire": "Dans S, (2, −2) × (0, 2) = (0, 0) : deux couples non nuls ont un produit nul, donc S n'est pas intègre.",
+  "legende_titre": "Un produit nul de deux couples non nuls",
+  "lecture": [
+   "Les deux cases bleues sont deux couples non nuls, (2, −2) et (0, 2).",
+   "Leur produit est la case rouge (0, 0).",
+   "La case grise calcule la première coordonnée : 2 × 0 = 0.",
+   "La case orange calcule la seconde : 4 + 0 − 4 = 0."
+  ],
+  "a_voir": "Le produit est nul alors que les deux facteurs bleus ne le sont pas."
+ },
+ {
+  "code": "56-197",
+  "a_dire": "Adjoindre une unité à 2ℤ donne un anneau, mais l'intégrité peut se perdre.",
+  "legende_titre": "Ce que l'adjonction garde et perd",
+  "lecture": [
+   "À gauche, 2ℤ n'a pas de neutre (case grise) et est intègre (case verte).",
+   "La flèche orange « on ajoute 1 » mène à S = ℤ × 2ℤ.",
+   "À droite, S a un neutre (1, 0) (case verte) mais n'est pas intègre (case rouge) : (2, −2)(0, 2) = (0, 0).",
+   "La case bleue du bas : la structure d'anneau est gardée."
+  ],
+  "a_voir": "La case verte « intègre » à gauche devient une case rouge à droite."
+ },
+ {
+  "code": "56-198",
+  "a_dire": "La méthode d'arrondi réussit si le centre d'une maille est à moins de 1 d'un coin ; dans ℤ[√3 i] la distance vaut exactement 1, donc elle échoue.",
+  "legende_titre": "Arrondir : la distance décide",
+  "lecture": [
+   "À gauche, la maille de ℤ[i] est un carré de côté 1 ; la flèche verte du centre orange à un coin mesure environ 0,71.",
+   "À droite, la maille de ℤ[√3 i] est un rectangle de 1 sur √3 ; la flèche rouge mesure exactement 1.",
+   "La case verte dit moins de 1 : ça marche ; la case rouge dit égal à 1 : échec."
+  ],
+  "a_voir": "La flèche du carré est plus courte que 1, celle du rectangle est égale à 1."
+ },
+ {
+  "code": "56-199",
+  "a_dire": "Le centre z de la maille de ℤ[√3 i] est à distance 1 de ses quatre coins, qui sont tous sur le cercle de rayon 1.",
+  "legende_titre": "Quatre coins sur le cercle",
+  "lecture": [
+   "Le rectangle bleu est la maille, avec ses quatre coins 0, 1, √3 i et 1 + √3 i.",
+   "Le point orange z est le centre ; les quatre traits orange le relient aux coins.",
+   "Le cercle gris est de rayon 1 autour de z : les quatre coins sont dessus, aucun n'est dedans."
+  ],
+  "a_voir": "Les quatre coins sont exactement sur le cercle, aucun n'est à l'intérieur."
+ },
+ {
+  "code": "56-200",
+  "a_dire": "La distance de z = 1/2 + (√3/2)i à chaque coin vaut 1, car 1/4 + 3/4 = 1.",
+  "legende_titre": "La distance de z au coin 0",
+  "lecture": [
+   "À gauche, le rectangle bleu et son centre orange z.",
+   "Le côté bleu horizontal mesure 1/2, le côté orange vertical mesure √3/2, le trait vert du coin 0 à z est la distance.",
+   "À droite, 1/4 (bleu) plus 3/4 (orange) donne 1 (vert).",
+   "Les traits pointillés gris vers les autres coins donnent le même calcul."
+  ],
+  "a_voir": "Les deux côtés carrés, 1/4 et 3/4, s'additionnent en 1."
+ },
+ {
+  "code": "56-201",
+  "a_dire": "En divisant 1 + √3 i par 2, les quatre restes possibles ont tous la norme 4, égale à celle de 2 : aucun n'est plus petit.",
+  "legende_titre": "Quatre quotients, quatre restes de norme 4",
+  "lecture": [
+   "Chaque ligne essaie un quotient q bleu, un des quatre coins.",
+   "La flèche mène au reste r violet de la division de 1 + √3 i par 2.",
+   "La case rouge à droite donne la norme du reste : 4 à chaque ligne.",
+   "En bas, la norme de 2 vaut aussi 4 : 4 < 4 est faux."
+  ],
+  "a_voir": "Les quatre cases rouges portent le même nombre 4."
+ },
+ {
+  "code": "56-202",
+  "a_dire": "Dans ℤ[√3 i], 4 s'écrit de deux façons en facteurs irréductibles non associés ; l'anneau n'est pas factoriel, donc aucune taille euclidienne ne peut exister.",
+  "legende_titre": "Deux écritures de 4",
+  "lecture": [
+   "La case bleue du haut est le nombre 4.",
+   "Deux flèches mènent à ses deux écritures : 2 × 2 (violet) et (1−√3 i)(1+√3 i) (orange).",
+   "Les facteurs de l'une ne sont pas associés à ceux de l'autre.",
+   "Les cases rouges concluent : pas factoriel, donc aucune taille euclidienne."
+  ],
+  "a_voir": "Deux écritures de 4 différentes mènent à l'absence de taille euclidienne."
+ },
+ {
+  "code": "56-203",
+  "a_dire": "La division avec reste devient une question de distance : l'arrondi marche si le centre d'une maille est à moins de 1 d'un coin, la frontière étant exactement 1.",
+  "legende_titre": "Trois réseaux face à la frontière 1",
+  "lecture": [
+   "Chaque barre mesure la distance du centre d'une maille au coin le plus proche.",
+   "La barre verte de ℤ[i] vaut √2/2, environ 0,71 : elle reste avant la ligne pointillée.",
+   "La barre orange de ℤ[√3 i] vaut 1 : elle s'arrête sur la ligne.",
+   "La barre rouge de ℤ[√−5] vaut environ 1,22 : elle dépasse la ligne."
+  ],
+  "a_voir": "Une barre avant la ligne, une sur la ligne, une après la ligne."
+ },
+ {
+  "code": "56-204",
+  "a_dire": "Sur un anneau principal, un module de type fini se réduit à une matrice diagonale dont chaque nombre divise le suivant : ce sont les facteurs invariants.",
+  "legende_titre": "Une diagonale où chaque nombre divise le suivant",
+  "lecture": [
+   "La grille est la matrice réduite sur ℤ, un anneau principal.",
+   "Les cases bleues de la diagonale portent 2, 12 et 60 ; les cases en pointillés sont à 0.",
+   "À droite, 2 divise 12 et 12 divise 60."
+  ],
+  "a_voir": "Sur la diagonale, chaque nombre divise celui qui le suit."
+ },
+ {
+  "code": "56-205",
+  "a_dire": "Si f est irréductible, le quotient par (f) est un corps ; le critère d'Eisenstein sert à prouver l'irréductibilité.",
+  "legende_titre": "De l'irréductible au corps",
+  "lecture": [
+   "La case bleue du haut est le polynôme f = x³ + 2x + 2.",
+   "La première flèche, par le critère d'Eisenstein, mène à : f est irréductible.",
+   "La deuxième flèche, dans un anneau principal, mène à : (f) est maximal.",
+   "La dernière case verte dit que le quotient est un corps."
+  ],
+  "a_voir": "Trois étapes de haut en bas, de f jusqu'au corps."
+ },
+ {
+  "code": "56-206",
+  "a_dire": "Une suite croissante d'idéaux s'arrête après un nombre fini d'étapes ; cette condition de chaîne se retrouve pour les modules.",
+  "legende_titre": "Une chaîne d'idéaux qui s'arrête",
+  "lecture": [
+   "Chaque case est un idéal de ℤ : (1024), (512), (256), puis (2) et (1) ; les points de suspension remplacent les suivants.",
+   "Chaque case est plus haute que la précédente, car chaque idéal contient le précédent.",
+   "La case verte (1) est la dernière : la chaîne s'arrête."
+  ],
+  "a_voir": "Les cases grandissent de gauche à droite et la suite se termine à (1)."
+ },
+ {
+  "code": "56-207",
+  "a_dire": "Le changement x → x + 1 rend le critère d'Eisenstein applicable à x² + x + 1, avec p = 3.",
+  "legende_titre": "Changer x en x + 1 pour appliquer Eisenstein",
+  "lecture": [
+   "À gauche, x² + x + 1 : les trois coefficients valent 1 ; le terme constant 1 n'est pas divisible par 3.",
+   "La flèche orange remplace x par x + 1.",
+   "À droite, x² + 3x + 3 : les coefficients 3 et 3 (verts) sont divisibles par 3, le coefficient de tête 1 (bleu) ne l'est pas.",
+   "9 ne divise pas 3 : le critère s'applique avec p = 3."
+  ],
+  "a_voir": "Après le changement, deux coefficients verts sont divisibles par 3."
+ },
+ {
+  "code": "56-208",
+  "a_dire": "La même suite de divisions avec reste fonctionne dans ℤ, dans ℤ[i] et dans F[x] ; ici, x² − 1 divisé par x − 1 donne un reste 0.",
+  "legende_titre": "Une même méthode dans trois anneaux",
+  "lecture": [
+   "Les trois cases grises du haut sont les anneaux ℤ, ℤ[i] et F[x] : les flèches convergent vers les mêmes divisions avec reste.",
+   "En dessous, x² − 1 (bleu) = (x − 1) (violet) × (x + 1) (orange) + 0 (vert).",
+   "Le reste est 0, donc le dernier diviseur, x − 1, est le plus grand diviseur commun."
+  ],
+  "a_voir": "Trois anneaux différents reçoivent la même suite de divisions."
+ },
+ {
+  "code": "56-209",
+  "a_dire": "Dans F[x], un idéal à deux générateurs est engendré par un seul, car la division avec reste du chapitre 21 réduit l'un par l'autre.",
+  "legende_titre": "Deux générateurs réduits à un",
+  "lecture": [
+   "Dans l'encadré en pointillés, l'idéal a deux générateurs : x² − 1 (bleu) et x − 1 (orange).",
+   "La flèche mène à l'idéal engendré par x − 1 seul.",
+   "En vert, x² − 1 = (x − 1)(x + 1) : le premier est un multiple du second.",
+   "La case violette donne la cause : la division avec reste."
+  ],
+  "a_voir": "Un générateur est multiple de l'autre, donc un seul suffit."
+ },
+ {
+  "code": "56-210",
+  "a_dire": "Réduire une fraction de polynômes suppose que la factorisation est unique dans ℤ[x].",
+  "legende_titre": "Simplifier suppose l'unicité",
+  "lecture": [
+   "En haut à gauche, le numérateur est factorisé : x + 1 (bleu) et x − 1 (orange) ; en dessous, le dénominateur : x (bleu) et x − 1 (orange).",
+   "La double flèche orange relie les deux facteurs x − 1 identiques, à simplifier.",
+   "À droite, en vert, il reste (x + 1)/x.",
+   "La case violette dit ce que ce geste suppose."
+  ],
+  "a_voir": "Le facteur orange est le même en haut et en bas, donc on le retire."
+ },
+ {
+  "code": "56-211",
+  "a_dire": "Avec une unité, l'idéal engendré par a contient a lui-même, car a = 1 × a ; ce n'est pas le cas dans 2ℤ, qui n'a pas de 1.",
+  "legende_titre": "Pourquoi le 1 est dans la définition",
+  "lecture": [
+   "Sur la première droite, les cercles bleus pleins sont les produits 2 × un nombre pair ; le cercle rouge vide est 2, absent.",
+   "Sur la seconde droite, les produits 2 × un entier donnent tous les nombres pairs.",
+   "Le point vert est 2 = 1 × 2 : il est présent."
+  ],
+  "a_voir": "Le point 2 est absent sur la première droite et présent sur la seconde."
+ },
+ {
+  "code": "56-212",
+  "a_dire": "Si l'idéal (2, 1 + √−5) était principal, N(d) diviserait 4 et 6, donc vaudrait 1 ou 2 ; la norme 2 n'existe pas, donc d serait une unité.",
+  "legende_titre": "Un seul générateur est-il possible ?",
+  "lecture": [
+   "Le disque bleu rassemble les valeurs possibles de N(d) qui divisent 4 ; le disque violet, celles qui divisent 6.",
+   "Dans la zone commune, il reste 1 (vert) et 2 (rouge).",
+   "Le texte rouge dit que a² + 5b² = 2 est impossible : la norme 2 n'existe pas.",
+   "La case verte conclut : N(d) = 1, donc d est une unité."
+  ],
+  "a_voir": "Dans la zone commune aux deux disques, le 2 est barré par le calcul rouge."
+ }
+]

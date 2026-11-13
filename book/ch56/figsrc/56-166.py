@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+m, a, n, b = 2, 4, 3, 6
+assert (m * n, m * b + n * a + a * b) == (6, 48) and (m * b, n * a, a * b) == (12, 12, 24)
+text(ax, 44, 73, r'$(2,4)(3,6)$', 'encre', 'l')
+text(ax, 17, 66, 'premier nombre', 'sujet', 's', weight='bold')
+text(ax, 62, 66, 'second nombre : trois termes', 'autre', 's', weight='bold')
+box(ax, 2, 38, 30, 14, 'sujet', label=r'$mn=2\times3=6$', size='s')
+box(ax, 38, 52, 48, 10, 'varie', label=r'$mb=6+6=12$', size='s')
+box(ax, 38, 39, 48, 10, 'varie', label=r'$na=4+4+4=12$', size='s')
+box(ax, 38, 26, 48, 10, 'autre', label=r'$ab=4\times6=24$', size='s')
+text(ax, 62, 21, r'$12+12+24=48$', 'resultat', 's')
+arrow(ax, (17, 37.5), (17, 12), 'sujet')
+arrow(ax, (62, 19), (62, 12), 'resultat')
+text(ax, 44, 7, r'$(6,\ 48)$', 'resultat', 'l', weight='bold')
+save(fig, '56-166')

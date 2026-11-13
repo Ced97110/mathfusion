@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 40, 58, r'$\mathbb{Z}[x]$', 'sujet', 'l')
+text(ax, 72, 58, r'$\mathbb{Q}[x]$', 'autre', 'l')
+text(ax, 2, 40, '$2$\ndegré 0', 'encre', 'm', ha='left')
+text(ax, 2, 14, '$x+1$\ndegré 1', 'encre', 'm', ha='left')
+box(ax, 26, 32, 28, 16, 'sujet', label='irréductible')
+box(ax, 58, 32, 28, 16, 'limite', label='unité\n' + r'$2\times\frac{1}{2}=1$')
+arrow(ax, (54.5, 40), (57.5, 40), 'varie')
+box(ax, 26, 6, 28, 16, 'sujet', label='irréductible')
+box(ax, 58, 6, 28, 16, 'resultat', label='irréductible')
+arrow(ax, (54.5, 14), (57.5, 14), 'varie')
+save(fig, '56-154')

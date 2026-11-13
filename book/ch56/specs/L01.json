@@ -1,0 +1,362 @@
+[
+ {
+  "code": "56-001",
+  "a_dire": "Que 12 se décompose toujours en 2, 2, 3 n’est pas un constat : c’est un théorème dont la preuve repose sur la division avec reste.",
+  "legende_titre": "Un constat sur 12, puis une preuve",
+  "lecture": [
+   "Les deux rangées bleues sont les décompositions de 12 : la vôtre (2, 2, 3) et celle de la camarade (3, 2, 2).",
+   "Le texte vert dit que ce sont les mêmes nombres dans un autre ordre.",
+   "Le grand rectangle bleu est le théorème d’unicité.",
+   "Le rectangle violet est la division avec reste ; la flèche orange montre que le théorème repose sur elle."
+  ],
+  "a_voir": "Le haut montre ce que l’on voit sur 12 ; le bas montre ce qui doit être prouvé."
+ },
+ {
+  "code": "56-002",
+  "a_dire": "L’unicité de la décomposition ne dépend pas d’un nombre : il faut la tester dans chaque ensemble de nombres.",
+  "legende_titre": "Une question pour chaque ensemble",
+  "lecture": [
+   "Chaque rectangle bleu à gauche est un ensemble où l’on additionne et multiplie.",
+   "Pour les entiers, la case verte dit « oui » et l’exemple gris montre 12 = 2 × 2 × 3.",
+   "Pour les polynômes, l’exemple gris donne x + 1 et 2x + 2 ; la case grise en pointillés porte un point d’interrogation.",
+   "Pour les matrices et les entiers modulo n, la réponse reste un point d’interrogation."
+  ],
+  "a_voir": "Une seule case est verte : les autres ensembles n’ont pas encore de réponse."
+ },
+ {
+  "code": "56-003",
+  "a_dire": "Les nombres a + b√−5 sont formés de deux entiers a et b, et √−5 est un nombre dont le carré vaut −5.",
+  "legende_titre": "Un nombre fabriqué avec deux entiers",
+  "lecture": [
+   "Le 3 bleu est l’entier a, écrit seul.",
+   "Le 2 orange est l’entier b, qui multiplie √−5.",
+   "Le √−5 gris est le nombre dont le carré vaut −5.",
+   "Les trois lignes du bas disent : b = 0 redonne un entier, et le produit (1 + √−5)² reste de la même forme."
+  ],
+  "a_voir": "Chaque morceau de 3 + 2√−5 a son accolade et son rôle."
+ },
+ {
+  "code": "56-004",
+  "a_dire": "Le produit (1 + √−5)(1 − √−5) vaut 6 : deux nombres qui ne sont pas des entiers ont pour produit un entier.",
+  "legende_titre": "Un produit qui retombe sur un entier",
+  "lecture": [
+   "Le rectangle bleu est 1 + √−5 et le rectangle violet est 1 − √−5.",
+   "La première flèche orange développe le produit : les termes croisés s’annulent et il reste 1 − (√−5)².",
+   "La deuxième flèche remplace (√−5)² par −5.",
+   "Le rectangle vert donne le résultat : 6."
+  ],
+  "a_voir": "Chaque ligne se déduit de la précédente et la dernière est un entier."
+ },
+ {
+  "code": "56-005",
+  "a_dire": "Le nombre 6 s’écrit comme 2 × 3 et aussi comme (1 + √−5)(1 − √−5) : les deux écritures semblent utiliser des facteurs différents.",
+  "legende_titre": "Deux écritures du même nombre",
+  "lecture": [
+   "Le rectangle vert du haut est le nombre 6.",
+   "À gauche, les deux rectangles bleus sont 2 et 3 : c’est l’écriture 1.",
+   "À droite, les deux rectangles violets sont 1 + √−5 et 1 − √−5 : c’est l’écriture 2.",
+   "La question orange en bas rappelle que cela ne prouve pas encore que les facteurs diffèrent."
+  ],
+  "a_voir": "Deux chemins partent de 6 et arrivent sur des facteurs qui ne se ressemblent pas."
+ },
+ {
+  "code": "56-006",
+  "a_dire": "Pour 12, pousser la décomposition jusqu’au bout donne toujours les mêmes facteurs ; pour 6 avec √−5, on s’arrête sur des fins différentes.",
+  "legende_titre": "Pousser jusqu’au bout : 12 contre 6",
+  "lecture": [
+   "Dans la partie du haut, 12 se coupe en 2 × 6 ou 3 × 4 (gris).",
+   "Ces deux écritures se prolongent en 2 × 2 × 3 et 3 × 2 × 2 (vert) : mêmes facteurs.",
+   "Dans la partie du bas, 6 s’écrit 2 × 3 (bleu) ou (1 + √−5)(1 − √−5) (violet).",
+   "On ne peut plus rien couper : le texte rouge dit que les fins sont différentes."
+  ],
+  "a_voir": "En haut, les deux branches se rejoignent ; en bas, elles restent séparées."
+ },
+ {
+  "code": "56-007",
+  "a_dire": "Dans les nombres a + b√−5, 6 se décompose toujours jusqu’au bout, mais de deux façons distinctes : l’existence reste, l’unicité est perdue.",
+  "legende_titre": "La décomposition existe, mais n’est plus unique",
+  "lecture": [
+   "À gauche, dans ℤ, 6 mène à une seule fin : 2 et 3 (rectangles bleus).",
+   "À droite, 6 mène à deux fins : 2 et 3 (bleu), ou 1 + √−5 et 1 − √−5 (violet).",
+   "Le texte vert dit « une seule fin » et le texte rouge « deux fins distinctes ».",
+   "En bas, la case verte dit « existence : oui » et la case rouge « unicité : non »."
+  ],
+  "a_voir": "Les mêmes décompositions existent, mais il y en a deux dans le monde de droite."
+ },
+ {
+  "code": "56-008",
+  "a_dire": "Sans unicité de la décomposition, la méthode par les listes de facteurs peut donner deux réponses différentes pour le PGCD.",
+  "legende_titre": "Deux listes, deux réponses",
+  "lecture": [
+   "Les rectangles bleus à gauche sont la liste 2 × 3 de 6 ; les rectangles violets à droite sont la liste (1 + √−5) × (1 − √−5).",
+   "Avec la liste de gauche, le facteur 2 apparaît : on garde 2.",
+   "Avec la liste de droite, 2 n’apparaît pas : on ne garde rien.",
+   "Les deux cases du milieu donnent deux réponses séparées par le signe rouge ≠."
+  ],
+  "a_voir": "La même méthode, appliquée à deux listes de 6, donne 2 d’un côté et 1 de l’autre."
+ },
+ {
+  "code": "56-009",
+  "a_dire": "Le chapitre cherche à prévoir l’unicité grâce à trois choses : une propriété, un critère et une règle de transmission de ℤ à ℤ[x].",
+  "legende_titre": "Trois choses à trouver",
+  "lecture": [
+   "Les trois rectangles bleus du haut sont les trois questions : propriété, critère, transmission.",
+   "Sous la propriété, ℤ est en vert (unicité) et √−5 en rouge (pas d’unicité).",
+   "Sous le critère, le rectangle orange est un test court.",
+   "Sous la transmission, la flèche orange relie ℤ à ℤ[x] et un point d’interrogation demande si l’unicité se garde."
+  ],
+  "a_voir": "Chaque question a sa colonne et reste encore sans réponse."
+ },
+ {
+  "code": "56-010",
+  "a_dire": "Dans le réseau, aucun point ne tombe sur les cercles de norme 2 et 3 ; les facteurs 2 et 1 + √−5 de 6 sont à des distances différentes de 0.",
+  "legende_titre": "Le réseau, les facteurs de 6 et deux cercles",
+  "lecture": [
+   "Les petits points gris forment la grille des nombres a + b√−5, sur trois lignes.",
+   "Les points 2 et 3 sont en bleu, 6 en vert, 1 + √−5 et 1 − √−5 en violet. Chaque trait part de 0 : le bleu va à 2, le violet à 1 + √−5.",
+   "Chaque nom porte sa norme : 4 pour 2, 9 pour 3, 6 pour 1 + √−5 et 1 − √−5.",
+   "Les deux cercles rouges sont centrés en 0 : le petit est celui de la norme 2, le grand celui de la norme 3. Aucun point ne se trouve dessus."
+  ],
+  "a_voir": "Les deux traits n'ont pas la même longueur, et les cercles passent dans les vides de la grille sans toucher de point."
+ },
+ {
+  "code": "56-011",
+  "a_dire": "Le nombre a + b√−5 est placé au point (a, b√5) du plan ; tous les points obtenus forment un réseau.",
+  "legende_titre": "Un nombre devient un point du plan",
+  "lecture": [
+   "Les points gris sont tous les nombres a + b√−5 placés sur trois lignes ; la ligne du bas, avec la flèche grise, porte les entiers (b = 0).",
+   "Le point vert en bas est 3 : colonne 3, hauteur 0.",
+   "Le point bleu est 3 + 2√−5 : même colonne, sa hauteur est 2 × 2,236, soit environ 4,47.",
+   "Les deux traits orange pointillés relient ce point à sa colonne a = 3 et à sa hauteur."
+  ],
+  "a_voir": "La colonne donne a et la hauteur donne b√5."
+ },
+ {
+  "code": "56-012",
+  "a_dire": "Un réseau est une grille régulière de points : les écarts sont toujours les mêmes, contrairement au plan entier et à un nuage de points au hasard.",
+  "legende_titre": "Réseau, plan entier, nuage",
+  "lecture": [
+   "À gauche, les points gris sont serrés partout : c’est le plan entier.",
+   "Au milieu, les points bleus sont alignés en colonnes et en lignes régulières : c’est le réseau.",
+   "À droite, les points gris sont placés sans régularité : c’est un nuage au hasard.",
+   "Sous le réseau, le texte bleu donne ses écarts : 1 entre colonnes, 2,24 entre lignes."
+  ],
+  "a_voir": "Seul le panneau du milieu a des écarts identiques partout."
+ },
+ {
+  "code": "56-013",
+  "a_dire": "La norme N(r) = a² + 5b² est le carré de la distance de r à 0, et c’est un entier.",
+  "legende_titre": "Un entier qui mesure la taille d’un point",
+  "lecture": [
+   "En haut, la formule dit que la norme est égale à a² + 5b² et au carré de d, la distance du point à 0.",
+   "Chaque trait part de 0 vers un point : bleu pour 2, orange pour 1 + √−5, violet pour 3.",
+   "Pour 1 + √−5, le trait pointillé gris donne a = 1 et la hauteur √5.",
+   "À droite, chaque calcul reprend la couleur du point : la norme de 2 vaut 4, celle de 1 + √−5 vaut 6, celle de 3 vaut 9."
+  ],
+  "a_voir": "La formule de la norme donne le carré de la longueur du trait, et c'est un entier."
+ },
+ {
+  "code": "56-014",
+  "a_dire": "N(r) se lit « la norme de r » : N s’applique au nombre r, les parenthèses ne multiplient pas.",
+  "legende_titre": "Lire le signe N(r)",
+  "lecture": [
+   "La lettre N bleue se lit « la norme de ».",
+   "Les parenthèses grises indiquent que N s’applique à ce qu’elles contiennent.",
+   "La lettre r orange est un nombre de la forme a + b√−5.",
+   "Les deux cases vertes sont deux lectures : N(2) = 4 et N(1 + √−5) = 6."
+  ],
+  "a_voir": "Chaque morceau du signe a une flèche vers son sens."
+ },
+ {
+  "code": "56-015",
+  "a_dire": "Aucun point du réseau ne tombe sur les deux cercles rouges : aucun nombre n’a pour norme 2 ou 3.",
+  "legende_titre": "Deux cercles que la grille évite",
+  "lecture": [
+   "Les points gris sont des points du réseau proches de 0, le point noir au centre est 0.",
+   "Le cercle rouge intérieur a pour rayon √2 (environ 1,41) : c’est la norme 2.",
+   "Le cercle rouge extérieur a pour rayon √3 (environ 1,73) : c’est la norme 3.",
+   "Les distances 1, 2, 2,24 et 2,45 sont écrites près de points : aucune ne vaut 1,41 ou 1,73."
+  ],
+  "a_voir": "Les points sont en dehors de l’anneau compris entre les deux cercles, et aucun n’est sur un cercle."
+ },
+ {
+  "code": "56-016",
+  "a_dire": "L’équation a² + 5b² = 2 ou 3 n’a aucune solution entière : si b ≠ 0 la somme dépasse 3, et si b = 0 aucun carré n’est entre 1 et 4.",
+  "legende_titre": "Pourquoi aucune solution",
+  "lecture": [
+   "Sur la droite graduée, les points bleus sont les valeurs de a² quand b = 0 : 0, 1, 4 et 9.",
+   "Les points orange sont les valeurs possibles quand b ≠ 0 : toutes sont au moins 5.",
+   "La bande rouge couvre les valeurs 2 et 3.",
+   "Aucun point, bleu ou orange, ne tombe dans la bande rouge."
+  ],
+  "a_voir": "Entre 1 et 4 il n’y a pas de point bleu, et les points orange commencent à 5."
+ },
+ {
+  "code": "56-017",
+  "a_dire": "La vraie norme respecte la multiplication, N(rs) = N(r)N(s) ; en retirant le coefficient 5 la règle devient fausse.",
+  "legende_titre": "La norme et le produit",
+  "lecture": [
+   "En haut, r = s = 1 + √−5 et leur produit vaut −4 + 2√−5.",
+   "Le cadre vert utilise la norme a² + 5b² : 6 × 6 donne 36 et N(rs) = 16 + 20 donne aussi 36.",
+   "Le cadre rouge utilise la fausse norme a² + b² : 2 × 2 donne 4 mais N(rs) = 16 + 4 donne 20.",
+   "Les mots « égaux » et « différents » donnent le verdict de chaque cadre."
+  ],
+  "a_voir": "Avec le coefficient 5, les deux nombres coïncident ; sans lui, ils diffèrent."
+ },
+ {
+  "code": "56-018",
+  "a_dire": "Pour prouver que 2 ne se casse pas, on suppose 2 = r × s, on utilise N(r)N(s) = 4, et chaque possibilité mène à une impossibilité.",
+  "legende_titre": "Preuve que 2 ne se décompose pas",
+  "lecture": [
+   "Le rectangle bleu du haut est le départ : on suppose 2 = r × s avec r et s différents de 1 et −1.",
+   "Le rectangle orange épais est l’étape décisive : les normes se multiplient et donnent 4.",
+   "Les trois rectangles gris sont les valeurs possibles de N(r) ; chaque texte rouge dit pourquoi elle est exclue.",
+   "Le rectangle vert d’arrivée dit que 2 ne se casse pas."
+  ],
+  "a_voir": "L’étape orange est la seule qui permet de passer aux trois cas."
+ },
+ {
+  "code": "56-019",
+  "a_dire": "Deux nombres égaux ont la même norme ; comme N(2) = 4 et N(1 + √−5) = 6 sont différents, 2 et 1 + √−5 sont distincts, même au signe près.",
+  "legende_titre": "Comparer deux normes",
+  "lecture": [
+   "Les deux rectangles bleus sont N(2) = 4 et N(−2) = 4.",
+   "Le rectangle violet est N(1 + √−5) = 6.",
+   "Les flèches orange envoient chaque norme sur la droite graduée : les deux bleues sur 4, la violette sur 6.",
+   "Le texte vert en bas conclut que 4 et 6 sont différents."
+  ],
+  "a_voir": "Les points bleu (4) et violet (6) ne sont pas au même endroit de la droite."
+ },
+ {
+  "code": "56-020",
+  "a_dire": "La loi de simplification dit que si ab = ac alors b = c ; sur l’horloge à 6 heures, 2 × 1 et 2 × 4 donnent 2 avec 1 ≠ 4.",
+  "legende_titre": "Simplifier n’est pas toujours permis",
+  "lecture": [
+   "À gauche, l’horloge à 6 heures : les cercles bleus 1 et 4 sont envoyés par les flèches orange (× 2) sur le cercle vert 2.",
+   "Deux nombres différents donnent le même résultat : c’est le texte rouge.",
+   "À droite, dans ℤ, les deux rectangles bleus donnent 2 × 1 = 2 et 2 × 4 = 8.",
+   "Le texte vert dit que ces résultats sont différents."
+  ],
+  "a_voir": "Sur l’horloge deux flèches arrivent au même point ; dans ℤ les résultats sont séparés."
+ },
+ {
+  "code": "56-021",
+  "a_dire": "Le signe D* désigne les éléments non nuls de D : tout D sauf 0.",
+  "legende_titre": "Le même ensemble sans zéro",
+  "lecture": [
+   "La rangée du haut est D = ℤ : les cases bleues −2, −1, 1, 2 et la case grise 0.",
+   "La flèche orange montre qu’on retire le 0.",
+   "La rangée du bas est D* : les mêmes cases bleues, et à la place du 0 une case vide en pointillés.",
+   "Les autres éléments ne changent pas."
+  ],
+  "a_voir": "Les deux rangées sont identiques, sauf la case du 0."
+ },
+ {
+  "code": "56-022",
+  "a_dire": "Un monoïde commutatif avec simplification est un ensemble muni d’un produit associatif avec neutre 1, auquel on ajoute ab = ba et la loi de simplification.",
+  "legende_titre": "Un monoïde et deux exigences en plus",
+  "lecture": [
+   "Le rectangle bleu du bas est le monoïde : un produit et un neutre 1.",
+   "Les deux rectangles orange au-dessus sont les deux exigences ajoutées : commutatif et simplification.",
+   "Les rectangles verts à droite donnent des exemples avec les entiers non nuls : 3 × 4 = 4 × 3 et 3b = 3c ⇒ b = c.",
+   "Le rectangle rouge montre l’horloge, où la simplification est fausse."
+  ],
+  "a_voir": "Les étages orange s’ajoutent à l’étage bleu ; l’horloge ne vérifie pas le dernier."
+ },
+ {
+  "code": "56-023",
+  "a_dire": "Dans D*, la loi de simplification et l’intégrité sont équivalentes : chacune entraîne l’autre.",
+  "legende_titre": "Deux propriétés qui s’entraînent",
+  "lecture": [
+   "La première colonne (bleue) part de 3b = 3c et arrive à b = c (vert), avec une flèche orange par étape.",
+   "Les textes orange disent ce que l’on fait à chaque flèche : tout à gauche, intégrité avec 3 ≠ 0, ajouter c.",
+   "La seconde colonne (violet) part de 3b = 0 = 3 × 0.",
+   "En simplifiant par 3 on arrive à b = 0 (vert)."
+  ],
+  "a_voir": "Il y a un chemin dans chaque sens, donc les deux propriétés sont équivalentes."
+ },
+ {
+  "code": "56-024",
+  "a_dire": "La factorisation ne parle que de multiplication : on ne garde de l’anneau que la multiplication, ce qui donne un monoïde.",
+  "legende_titre": "Garder seulement la multiplication",
+  "lecture": [
+   "Le grand cadre gris est l’anneau ℤ ; il contient l’addition (case grise en pointillés) et la multiplication (case bleue).",
+   "La flèche orange part de la multiplication vers le rectangle vert : 12 = 2 × 2 × 3.",
+   "La flèche grise part de l’addition vers « aucune somme » : l’addition n’intervient pas.",
+   "La flèche orange du bas mène au rectangle bleu : le monoïde où l’on ne garde que ×."
+  ],
+  "a_voir": "Seule la case de la multiplication est reliée à la factorisation."
+ },
+ {
+  "code": "56-025",
+  "a_dire": "b divise a quand il existe c dans le monoïde avec a = bc ; 3 divise 12 car 12 = 3 × 4, mais 5 ne divise pas 12.",
+  "legende_titre": "Diviser, c’est trouver un facteur",
+  "lecture": [
+   "À gauche, 12 cases vertes forment 3 rangées de 4 : b = 3 (en bleu, à gauche) et c = 4 (en orange, sous la grille).",
+   "Le texte du bas dit : 3 divise 12 car 12 = 3 × 4.",
+   "À droite, on range les 12 cases par rangées de 5 : les rangées sont pleines (gris) puis il reste 2 cases rouges.",
+   "Les cases vides en pointillés montrent que 5 × 2 = 10 et 5 × 3 = 15 ne tombent pas sur 12."
+  ],
+  "a_voir": "À gauche la grille est complète ; à droite il reste un morceau."
+ },
+ {
+  "code": "56-026",
+  "a_dire": "Le signe b ∣ a se lit « b divise a » : le diviseur est à gauche, et cela veut dire qu’il existe c avec a = bc.",
+  "legende_titre": "Lire le trait vertical",
+  "lecture": [
+   "Le 3 bleu est le diviseur, écrit à gauche du trait gris.",
+   "Le 12 violet est le nombre divisé, écrit à droite.",
+   "Le rectangle vert dit ce que le signe signifie : il existe c avec 12 = 3 × 4.",
+   "En rouge, 12 ∣ 3 est faux : il n’existe pas d’entier c avec 3 = 12 × c."
+  ],
+  "a_voir": "Le sens compte : 3 ∣ 12 est vrai, 12 ∣ 3 est faux."
+ },
+ {
+  "code": "56-027",
+  "a_dire": "La divisibilité est réflexive (a ∣ a car a = a × 1), transitive, et non symétrique ; sans le 1, par exemple dans les entiers pairs, la réflexivité tombe.",
+  "legende_titre": "Trois propriétés de la divisibilité",
+  "lecture": [
+   "Premier rang : la flèche verte part de a et revient sur a, car a = a × 1.",
+   "Deuxième rang : les flèches orange vont de c à b puis de b à a ; la grande flèche verte va directement de c à a.",
+   "Troisième rang : la flèche verte va de b vers a ; la flèche rouge de retour est fausse.",
+   "Le cadre rouge du bas donne ce qui casse la première propriété : dans les entiers pairs, sans 1, 2 ne divise pas 2."
+  ],
+  "a_voir": "Chaque rang montre une propriété avec sa flèche ; le cadre rouge montre seulement ce qui casse la première."
+ },
+ {
+  "code": "56-028",
+  "a_dire": "Si c divise b et b divise a, alors c divise a, avec pour quotient le produit des deux quotients.",
+  "legende_titre": "Diviser deux fois, c’est diviser une fois",
+  "lecture": [
+   "La première rangée est c = 3, un bloc de 3 cases bleues.",
+   "La deuxième rangée est b = 6, soit deux blocs de 3 (d = 2).",
+   "La troisième rangée est a = 12, soit deux fois b (e = 2) et donc quatre blocs de 3.",
+   "L’accolade orange dit que le quotient de a par c est d × e = 4, et le texte vert écrit 12 = 3 × (2 × 2) = 3 × 4."
+  ],
+  "a_voir": "Les quatre blocs de 3 de la dernière rangée viennent de 2 fois 2."
+ },
+ {
+  "code": "56-029",
+  "a_dire": "La divisibilité n’est pas symétrique : 3 divise 12, mais 12 ne divise pas 3 car il faudrait c = ¼, qui n’est pas un entier.",
+  "legende_titre": "Un sens possible, l’autre non",
+  "lecture": [
+   "Le cercle bleu est 3 et le cercle violet est 12.",
+   "La flèche verte du haut va de 3 à 12 : on multiplie par 4, un entier.",
+   "La flèche rouge du bas va de 12 à 3 : il faudrait multiplier par ¼, qui n’est pas un entier.",
+   "Le titre résume : 3 ∣ 12 est vrai, 12 ∣ 3 est faux."
+  ],
+  "a_voir": "La flèche du haut est possible, celle du bas ne l’est pas."
+ },
+ {
+  "code": "56-030",
+  "a_dire": "Une unité est un élément u qui possède un v avec uv = 1 ; dans ℤ seuls 1 et −1 le sont, et 2 est une unité dans ℚ mais pas dans ℤ.",
+  "legende_titre": "Qui possède un inverse",
+  "lecture": [
+   "Sur la droite graduée de ℤ, les points verts 1 et −1 ont un inverse : 1 × 1 = 1 et (−1) × (−1) = 1.",
+   "Les points rouges 0, 2 et −2 n’ont pas d’inverse entier.",
+   "Les textes rouges disent pourquoi : 0 × v vaut toujours 0, et 2 × v = 1 demande v = ½, qui n’est pas un entier.",
+   "Le rectangle violet du bas montre que dans ℚ, 2 × ½ = 1 : 2 y est une unité."
+  ],
+  "a_voir": "Le même nombre 2 est une unité dans ℚ et pas dans ℤ."
+ }
+]

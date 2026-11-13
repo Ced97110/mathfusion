@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 26, 60, 36, 13, 'sujet', label='p = 7  (premier)')
+text(ax, 44, 55, 'p = b × c : ici 7 × 1', 'encre', 's')
+line(ax, [(34, 60), (22, 42)], 'fixe'); line(ax, [(54, 60), (66, 42)], 'fixe')
+box(ax, 8, 28, 28, 13, 'sujet', label='b = 7')
+box(ax, 52, 28, 28, 13, 'resultat', label='c = 1')
+text(ax, 22, 21, 'p ∣ b et b ∣ p', 'sujet', 's')
+text(ax, 22, 15, 'donc b ∼ p', 'sujet', 's')
+text(ax, 66, 21, 'c est une unité', 'resultat', 's')
+text(ax, 44, 5, 'chaque cassure de p contient une unité', 'encre', 's')
+save(fig, '56-045')

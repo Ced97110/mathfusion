@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$7=3\times\frac{7}{3}+0$', 'sujet', 'l')
+text(ax, 44, 49, 'taille des éléments', 'fixe', 's')
+f = numberline(ax, 14, 70, 24, 0, 2, 1, labels=True, arrow_right=False)
+disc(ax, f(0), 31, 3, 'resultat', label='r', size='s')
+disc(ax, f(1), 31, 3, 'sujet', label='b', size='s')
+arrow(ax, (f(0) + 3.5, 38), (f(1) - 3.5, 38), 'varie')
+text(ax, (f(0) + f(1)) / 2, 42, r'$0<1$', 'varie', 'm')
+text(ax, f(0), 10, 'reste 0', 'resultat', 's')
+text(ax, f(1), 10, 'diviseur 3', 'sujet', 's')
+save(fig, '56-186')

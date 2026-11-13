@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, r'$p=5$, $a=6$, $b=7$', 'encre', 'm')
+box(ax, 3, 56, 38, 14, 'sujet', label=r'$(5,\ 6)=1$')
+box(ax, 47, 56, 38, 14, 'sujet', label=r'$(5,\ 7)=1$')
+arrow(ax, (22, 55), (40, 44), 'varie')
+arrow(ax, (66, 55), (48, 44), 'varie')
+text(ax, 44, 51, 'lemme 4', 'varie', 's')
+box(ax, 14, 30, 60, 13, 'resultat', label=r'$(5,\ 6\times7)=(5,\ 42)=1$')
+arrow(ax, (44, 29), (44, 19), 'resultat')
+box(ax, 12, 5, 64, 13, 'resultat', label=r'$5$ ne divise pas $42$')
+save(fig, '56-079')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+box(ax, 14, 82, 60, 12, 'sujet', label=r'$w=\frac{1+\sqrt{-19}}{2}$', size='l')
+arrow(ax, (44, 82), (44, 72), 'varie')
+text(ax, 50, 77, 'on le met au carré', 'varie', 's', ha='left')
+box(ax, 14, 58, 60, 12, 'varie', label=r'$w^2=\frac{-9+\sqrt{-19}}{2}=-5+w$', size='m')
+text(ax, 44, 51, r'de la forme $a+bw$ : $a=-5$, $b=1$', 'varie', 's')
+box(ax, 14, 34, 60, 10, 'sujet', label=r'l’anneau des nombres $a+bw$', size='s')
+arrow(ax, (30, 33.5), (22, 22.5), 'fixe')
+arrow(ax, (58, 33.5), (66, 22.5), 'fixe')
+box(ax, 3, 6, 40, 16, 'resultat', label='chaque idéal\na un générateur', size='s')
+box(ax, 47, 6, 38, 16, 'fixe', label='aucune division\navec reste', size='s')
+save(fig, '56-184')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 8, 62, 72, 12, 'sujet', label=r'$f=x^3+2x+2$ dans $\mathbb{Q}[x]$', size='s')
+arrow(ax, (44, 62), (44, 54), 'varie')
+text(ax, 48, 58, 'critère d\'Eisenstein', 'varie', 's', ha='left')
+box(ax, 8, 40, 72, 12, 'resultat', label=r'$f$ irréductible', size='m')
+arrow(ax, (44, 40), (44, 32), 'varie')
+text(ax, 48, 36, 'anneau principal', 'varie', 's', ha='left')
+box(ax, 8, 20, 72, 12, 'resultat', label=r'$(f)$ est maximal', size='m')
+arrow(ax, (44, 20), (44, 12), 'varie')
+box(ax, 8, 0.5, 72, 11, 'resultat', label=r'$\mathbb{Q}[x]/(f)$ est un corps', size='m')
+save(fig, '56-205')

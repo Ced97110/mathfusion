@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 6, 62, 76, 9, 'fixe', label=r'$I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots$', size='m')
+box(ax, 6, 49, 76, 9, 'fixe', label="la suite finit par s'arrêter", size='m')
+arrow(ax, (44, 49), (44, 41), 'fixe')
+box(ax, 14, 26, 60, 14, 'sujet', label='anneau noethérien', size='l')
+text(ax, 44, 20, "nom d'Emmy Noether", 'fixe', 's')
+box(ax, 6, 3, 28, 9, 'resultat', label='ℤ : oui', size='s')
+box(ax, 54, 3, 28, 9, 'resultat', label='ℚ[x] : oui', size='s')
+arrow(ax, (20, 12), (28, 26), 'resultat')
+arrow(ax, (68, 12), (60, 26), 'resultat')
+save(fig, '56-103')

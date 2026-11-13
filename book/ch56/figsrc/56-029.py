@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 52, '3 ∣ 12 vrai ; 12 ∣ 3 faux', 'encre', 'm')
+disc(ax, 22, 28, 5, 'sujet', label='3')
+disc(ax, 66, 28, 5.5, 'autre', label='12')
+arrow(ax, (26, 32), (62, 32), 'resultat', curve=-0.35)
+text(ax, 44, 43, '× 4 : entier', 'resultat', 's')
+arrow(ax, (62, 24), (26, 24), 'limite', curve=-0.35)
+text(ax, 44, 13, '× ¼ : pas un entier', 'limite', 's')
+save(fig, '56-029')

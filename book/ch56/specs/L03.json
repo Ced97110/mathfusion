@@ -1,0 +1,345 @@
+[
+ {
+  "code": "56-061",
+  "a_dire": "Le quotient est le point z, au centre du rectangle formé par 0, 1, √3 i et 1 + √3 i, à distance 1 des quatre coins.",
+  "legende_titre": "Où se trouve ce quotient dans le plan",
+  "lecture": [
+   "Le rectangle bleu a pour coins 0, 1, √3 i et 1 + √3 i.",
+   "Le point vert z est au centre du rectangle.",
+   "Les traits verts en pointillés lisent ses deux mesures : 1/2 vers la droite et √3/2 vers le haut.",
+   "Les traits gris en pointillés relient z aux quatre coins : chacun mesure 1."
+  ],
+  "a_voir": "Le point z est au milieu du rectangle, à la même distance des quatre coins."
+ },
+ {
+  "code": "56-062",
+  "a_dire": "R est l'ensemble des polynômes en x et y dont chaque terme a un degré total pair.",
+  "legende_titre": "Quels termes sont dans R",
+  "lecture": [
+   "Chaque rond est un terme. Sa position donne l'exposant de x (vers la droite) et l'exposant de y (vers le haut).",
+   "Les ronds bleus pleins ont un degré total pair : 1, x², xy, y². Ils sont dans R.",
+   "Les ronds gris vides ont un degré total impair : x, y, x³, x²y, xy², y³. Ils ne sont pas dans R."
+  ],
+  "a_voir": "Seuls les termes dont la somme des deux exposants est paire sont dans R."
+ },
+ {
+  "code": "56-063",
+  "a_dire": "Chaque terme de R se fabrique avec trois polynômes de départ : x², y² et xy.",
+  "legende_titre": "Fabriquer les termes de R avec trois briques",
+  "lecture": [
+   "Les trois cases bleues du haut sont les polynômes de départ : x², y² et xy.",
+   "La première ligne montre x³y, en vert, comme le produit de x² par xy.",
+   "La deuxième ligne montre x⁴y², en vert, comme le produit de x², x² et y²."
+  ],
+  "a_voir": "Les termes verts sont des produits des cases bleues du haut."
+ },
+ {
+  "code": "56-064",
+  "a_dire": "Dans R, xy ne se casse pas en deux facteurs non constants : un des deux est forcément constant.",
+  "legende_titre": "Casser xy dans R : que reste-t-il comme choix",
+  "lecture": [
+   "Les degrés de f et de g s'additionnent pour donner 2, le degré de xy.",
+   "Les deux premières lignes montrent les choix permis : degrés 0 et 2, ou 2 et 0. Un facteur est alors constant.",
+   "La ligne rouge montre le choix 1 et 1 : il est refusé, car le degré 1 est impair et hors de R."
+  ],
+  "a_voir": "Les seules cassures permises ont un facteur constant."
+ },
+ {
+  "code": "56-065",
+  "a_dire": "xy divise x²y² mais ne divise pas x² : dans R, xy est irréductible sans être premier.",
+  "legende_titre": "Deux écritures de x²y² et un diviseur qui manque",
+  "lecture": [
+   "La case grise du haut est x²y².",
+   "À gauche, en violet, la première écriture : x² fois y². À droite, en bleu, la seconde : xy fois xy.",
+   "Sous les cases bleues, le texte vert dit que xy divise x²y².",
+   "Le cadre rouge dit que xy ne divise pas x² : le quotient x/y n'est pas un polynôme."
+  ],
+  "a_voir": "xy apparaît dans une écriture de x²y² et pas dans l'autre."
+ },
+ {
+  "code": "56-066",
+  "a_dire": "Les deux écritures de x²y² se rejoignent avec les briques x et y, mais ces briques ne sont pas dans R.",
+  "legende_titre": "Ce qui manque à R pour réunir les deux écritures",
+  "lecture": [
+   "Dans le grand cadre, qui est R, les cases violettes sont x² et y² ; les cases bleues sont xy et xy.",
+   "Sous chaque case, les briques en pointillés gris donnent ses facteurs : x et x, y et y, puis x et y deux fois.",
+   "Les huit briques sont hors de R : leur degré total est 1.",
+   "Les deux écritures de x²y² ne se rejoignent qu'avec ces briques x et y."
+  ],
+  "a_voir": "Les deux écritures se réduisent aux mêmes briques x et y, qui n'appartiennent pas à R."
+ },
+ {
+  "code": "56-067",
+  "a_dire": "Une factorisation est essentiellement unique si deux écritures ne diffèrent que par l'ordre des facteurs et par des facteurs associés.",
+  "legende_titre": "Ce que l'on accepte de changer dans une écriture",
+  "lecture": [
+   "La ligne du haut, en bleu, est 12 = 2 · 2 · 3.",
+   "La deuxième ligne change seulement l'ordre : 3, 2, 2. Les cases sont orange car elles ont changé de place.",
+   "La troisième ligne remplace chaque 2 par −2, son associé. Les cases −2 sont orange ; la case 3 reste bleue."
+  ],
+  "a_voir": "Les trois lignes ont trois facteurs et comptent pour une seule écriture."
+ },
+ {
+  "code": "56-068",
+  "a_dire": "Pour comparer 2·2·3 et (−2)·3·(−2), on les range, on compte les facteurs et on associe chaque facteur au sien par une unité.",
+  "legende_titre": "Comparer deux écritures de 12 facteur par facteur",
+  "lecture": [
+   "La ligne bleue du haut est l'écriture 2, 2, 3.",
+   "La ligne du bas est l'autre écriture, rangée : −2, −2, 3.",
+   "Chaque flèche relie un facteur du haut à son associé du bas. Les flèches orange multiplient par −1, la verte par 1.",
+   "Il y a 3 facteurs de chaque côté."
+  ],
+  "a_voir": "Chaque facteur du haut a un associé en face, et le nombre de facteurs est le même."
+ },
+ {
+  "code": "56-069",
+  "a_dire": "Un monoïde est factoriel quand tous ses éléments qui ne sont pas des unités ont une factorisation essentiellement unique.",
+  "legende_titre": "Un mot pour l'ensemble tout entier",
+  "lecture": [
+   "Dans le cadre vert, ℤ : 12, 30 et 49 ont chacun une seule écriture en facteurs.",
+   "Dans le cadre rouge, ℤ[√−5] : le nombre 6 a deux écritures, 2 × 3 et (1 + √−5)(1 − √−5).",
+   "Le mot « factoriel » est donné à l'ensemble de gauche, pas à celui de droite."
+  ],
+  "a_voir": "Il suffit qu'un élément ait deux écritures pour que l'ensemble ne soit pas factoriel."
+ },
+ {
+  "code": "56-070",
+  "a_dire": "Un anneau factoriel est un anneau intègre D dont les éléments non nuls D* forment un monoïde factoriel.",
+  "legende_titre": "Où se place un anneau factoriel",
+  "lecture": [
+   "Le grand cadre gris contient les anneaux intègres.",
+   "Le cadre vert à l'intérieur contient ceux dont D* est factoriel. Le rond bleu ℤ y est.",
+   "Le rond violet ℤ[√−5] est dans le grand cadre mais hors du cadre vert : il est intègre, non factoriel."
+  ],
+  "a_voir": "Les anneaux factoriels sont une partie des anneaux intègres."
+ },
+ {
+  "code": "56-071",
+  "a_dire": "M est factoriel si et seulement si la condition de chaîne et la condition de primalité sont vraies toutes les deux.",
+  "legende_titre": "Deux conditions à vérifier ensemble",
+  "lecture": [
+   "Chaque colonne est une condition, la dernière est la conclusion. Chaque ligne est un ensemble.",
+   "Pour ℤ, les trois cases sont vertes : vrai.",
+   "Pour ℤ[√−5], la chaîne est vraie mais la primalité est fausse (case rouge), donc il n'est pas factoriel.",
+   "Le texte rouge donne la cause : 2 est irréductible sans être premier."
+  ],
+  "a_voir": "Une seule case rouge dans les conditions suffit pour que la conclusion soit fausse."
+ },
+ {
+  "code": "56-072",
+  "a_dire": "La condition de chaîne dit qu'aucune suite de diviseurs propres successifs ne continue sans fin ; sa longueur n'est pas fixée.",
+  "legende_titre": "Des suites de diviseurs qui s'arrêtent",
+  "lecture": [
+   "La ligne du haut part de 48 et prend un diviseur propre à chaque flèche : 24, 12, 6, 3. Elle compte 5 nombres.",
+   "La ligne du bas part de 1024 : 512, 256 et ainsi de suite jusqu'à 2. Elle compte 10 nombres ; la case grise en pointillés remplace les nombres du milieu.",
+   "La barre verte marque la fin de chaque suite."
+  ],
+  "a_voir": "Les deux suites finissent, mais elles n'ont pas la même longueur."
+ },
+ {
+  "code": "56-073",
+  "a_dire": "La condition de primalité dit que tout irréductible est premier ; dans ℤ elle est vraie, dans ℤ[√−5] elle manque pour 2.",
+  "legende_titre": "Un irréductible qui divise un produit",
+  "lecture": [
+   "À gauche, dans ℤ : 7 est irréductible et divise 3 × 14 = 42. La case verte 14 est le facteur qu'il divise.",
+   "À droite, dans ℤ[√−5] : 2 est irréductible et divise 6.",
+   "6 s'écrit aussi (1 + √−5)(1 − √−5). Les deux cases rouges sont ces facteurs : 2 ne divise aucun des deux."
+  ],
+  "a_voir": "À gauche le diviseur se retrouve dans un facteur, à droite non."
+ },
+ {
+  "code": "56-074",
+  "a_dire": "La condition de chaîne donne l'existence d'une factorisation ; la primalité donne l'unicité, en barrant un facteur de chaque côté.",
+  "legende_titre": "Pourquoi les deux conditions suffisent",
+  "lecture": [
+   "En haut, on casse 12 en 2 et 6, puis 6 en 2 et 3. La suite s'arrête sur les cases vertes 2, 2, 3.",
+   "En bas, on compare 2, 2, 3 avec 3, 2, 2.",
+   "Le premier 2 d'en haut est premier : il divise un facteur de l'autre ligne. Les deux cases orange sont barrées ensemble."
+  ],
+  "a_voir": "On barre le même facteur des deux côtés, puis on recommence avec un facteur de moins."
+ },
+ {
+  "code": "56-075",
+  "a_dire": "Dans ℤ[√−5], la chaîne est vraie car la norme baisse à chaque diviseur propre, mais la primalité est fausse pour 2.",
+  "legende_titre": "Une condition vraie et une fausse dans ℤ[√−5]",
+  "lecture": [
+   "En haut, les barres bleues sont les normes de 6, 3 et 2 : 36, 9 et 4.",
+   "Les flèches orange vont de 6 vers ses diviseurs 3 et 2 : la norme baisse. Le texte vert dit que la chaîne est vraie.",
+   "À droite, 36 = 4 × 9.",
+   "En bas, le texte rouge dit que la primalité est fausse pour 2 : 2 divise 6, mais 2 ne divise aucun des deux facteurs (1 + √−5) et (1 − √−5)."
+  ],
+  "a_voir": "La norme baisse à chaque cassure, donc la chaîne s'arrête ; le défaut est la primalité de 2."
+ },
+ {
+  "code": "56-076",
+  "a_dire": "M est factoriel si et seulement si la condition de chaîne est vraie et si deux éléments ont toujours un PGCD.",
+  "legende_titre": "Un second critère, avec les PGCD",
+  "lecture": [
+   "La case bleue est la condition de chaîne : la suite des cassures s'arrête pour tout nombre.",
+   "La case violette est l'existence des PGCD, par exemple (12, 18) = 6.",
+   "La flèche verte à double sens relie les deux cases réunies à la case verte « M factoriel » : chaque côté entraîne l'autre."
+  ],
+  "a_voir": "Les deux conditions ensemble sont équivalentes à être factoriel."
+ },
+ {
+  "code": "56-077",
+  "a_dire": "Un PGCD de a et b est un diviseur commun que tous les autres diviseurs communs divisent ; il est défini à une unité près.",
+  "legende_titre": "Le diviseur commun que tous les autres divisent",
+  "lecture": [
+   "Chaque rond est un diviseur commun de 12 et 18 : 1, 2, 3 et 6.",
+   "Chaque flèche orange veut dire « divise ».",
+   "Le rond vert 6 reçoit une flèche de chaque côté : 1, 2 et 3 le divisent.",
+   "Le texte vert dit que −6 convient aussi, car le PGCD est défini à une unité près."
+  ],
+  "a_voir": "2 et 3 sont des diviseurs communs, mais seul 6 est divisé par tous."
+ },
+ {
+  "code": "56-078",
+  "a_dire": "Le signe (a, b) se lit « le plus grand diviseur commun de a et de b » ; ici (12, 18) = 6.",
+  "legende_titre": "Lire le signe (12, 18) en français",
+  "lecture": [
+   "Le signe entre parenthèses est (12, 18) : le 12 en bleu est a, le 18 en violet est b.",
+   "L'accolade grise dit comment le lire : le PGCD de 12 et de 18.",
+   "Le 6 en vert, après le signe égale, est le PGCD.",
+   "Le texte rouge rappelle que ces parenthèses ne désignent pas un point du plan."
+  ],
+  "a_voir": "Les parenthèses et la virgule désignent un nombre, le PGCD."
+ },
+ {
+  "code": "56-079",
+  "a_dire": "Si p est étranger à a et à b, le lemme dit qu'il est étranger à ab ; ainsi p ne divise pas ab et le PGCD remplace la primalité.",
+  "legende_titre": "Le lemme qui rend p étranger à un produit",
+  "lecture": [
+   "En haut, p = 5, a = 6 et b = 7.",
+   "Les deux cases bleues disent que 5 est étranger à 6 et à 7 : leur PGCD vaut 1.",
+   "Les flèches orange passent par le lemme 4 et donnent la case verte : (5, 6 × 7) = (5, 42) = 1.",
+   "La dernière case verte conclut : 5 ne divise pas 42."
+  ],
+  "a_voir": "Le lemme réunit deux PGCD égaux à 1 en un seul, pour le produit."
+ },
+ {
+  "code": "56-080",
+  "a_dire": "Dans un monoïde factoriel, le PGCD prend le plus petit exposant de chaque irréductible et le PPCM le plus grand.",
+  "legende_titre": "Lire les exposants pour trouver PGCD et PPCM",
+  "lecture": [
+   "Les deux lignes bleues donnent les exposants de 2 et de 3 : 12 a 2 et 1, 18 a 1 et 2.",
+   "La ligne verte garde le plus petit exposant de chaque colonne : 1 et 1. Le PGCD vaut 2 × 3 = 6.",
+   "La ligne violette garde le plus grand : 2 et 2. Le PPCM vaut 2² × 3² = 36."
+  ],
+  "a_voir": "Dans chaque colonne, la ligne verte prend le plus petit nombre, la violette le plus grand."
+ },
+ {
+  "code": "56-081",
+  "a_dire": "L'idéal engendré par a, noté (a), est l'ensemble de tous les multiples de a.",
+  "legende_titre": "L'ensemble engendré par un seul nombre",
+  "lecture": [
+   "Sur la droite graduée, les ronds bleus sont les multiples de 3, de −12 à 12.",
+   "La flèche orange montre une somme : 3 + 6 = 9, et 9 est encore un multiple de 3.",
+   "Le texte vert du bas ajoute qu'un multiple de 3 fois un entier est encore un multiple de 3 : 3 × (−2) = −6."
+  ],
+  "a_voir": "En additionnant ou en multipliant des multiples de 3, on reste dans les multiples de 3."
+ },
+ {
+  "code": "56-082",
+  "a_dire": "Le signe (a) note l'ensemble des multiples de a et permet de comparer ces ensembles ; (12) est contenu dans (3).",
+  "legende_titre": "Un signe court pour un ensemble de multiples",
+  "lecture": [
+   "Le grand rond violet est (3), l'ensemble des multiples de 3 : 3, 6, 9, 15, 18 et d'autres.",
+   "Le rond bleu à l'intérieur est (12) : 12, 24 et les autres multiples de 12.",
+   "Le texte vert écrit la comparaison avec le signe : (12) est contenu dans (3)."
+  ],
+  "a_voir": "Tous les multiples de 12 sont aussi des multiples de 3."
+ },
+ {
+  "code": "56-083",
+  "a_dire": "Un idéal principal est un idéal qui s'écrit (a) avec un seul élément a ; l'ensemble 6a + 10b est principal, égal à (2).",
+  "legende_titre": "Un idéal construit avec deux nombres",
+  "lecture": [
+   "La ligne bleue marque les multiples de 6 sur la droite graduée de 0 à 20.",
+   "La ligne violette marque les multiples de 10.",
+   "La ligne verte marque tous les nombres 6a + 10b : ce sont tous les nombres pairs, donc les multiples de 2.",
+   "Le texte du bas donne 2 = 2 × 6 − 10 : un seul nombre, 2, engendre l'idéal."
+  ],
+  "a_voir": "Deux nombres de départ donnent un ensemble qu'un seul nombre engendre."
+ },
+ {
+  "code": "56-084",
+  "a_dire": "Un anneau est principal si tous ses idéaux sont principaux ; ℤ l'est, les polynômes à coefficients entiers ne le sont pas.",
+  "legende_titre": "Tous les idéaux ont-ils un seul générateur",
+  "lecture": [
+   "Dans le cadre vert, ℤ : les idéaux (2), (3), (12) s'écrivent chacun avec un seul nombre.",
+   "Dans le cadre rouge, les polynômes à coefficients entiers : l'idéal des polynômes à terme constant pair demande deux éléments, 2 et x."
+  ],
+  "a_voir": "À gauche un nombre suffit pour chaque idéal, à droite il en faut deux."
+ },
+ {
+  "code": "56-085",
+  "a_dire": "b divise a si et seulement si l'idéal (a) est contenu dans (b) ; le sens de l'inclusion est opposé à celui de la divisibilité.",
+  "legende_titre": "Diviser, c'est être contenu dans l'idéal",
+  "lecture": [
+   "La ligne bleue du haut marque les multiples de 12 : 0, 12, 24.",
+   "La ligne violette du bas marque les multiples de 3 : 0, 3, 6 et ainsi de suite.",
+   "Chaque trait pointillé relie un multiple de 12 au même nombre dans les multiples de 3 : tous s'y trouvent.",
+   "Le rond rouge vide est 3 : il est dans (3) mais pas dans (12)."
+  ],
+  "a_voir": "Tout multiple de 12 est un multiple de 3, mais pas l'inverse."
+ },
+ {
+  "code": "56-086",
+  "a_dire": "Descendre vers des diviseurs propres plus petits revient à monter vers des idéaux principaux de plus en plus grands.",
+  "legende_titre": "Diviseurs qui baissent, idéaux qui montent",
+  "lecture": [
+   "À gauche, la colonne de nombres 48, 24, 12, 6, 3 est une suite de diviseurs propres de plus en plus petits.",
+   "À droite, les ronds emboîtés sont les idéaux (48), (24), (12), (6), (3). Chaque rond est contenu dans le suivant.",
+   "La flèche orange du centre vers le bord montre le sens où les idéaux grandissent."
+  ],
+  "a_voir": "Le plus petit diviseur, 3, donne le plus grand idéal."
+ },
+ {
+  "code": "56-087",
+  "a_dire": "Tout anneau principal est factoriel ; la réciproque est fausse et un anneau intègre quelconque n'est pas toujours factoriel.",
+  "legende_titre": "Où se place un anneau principal",
+  "lecture": [
+   "Trois cadres emboîtés : les anneaux principaux (bleu) sont dans les factoriels (vert), eux-mêmes dans les intègres (gris).",
+   "ℤ est dans le cadre bleu : il est principal.",
+   "ℤ[x], les polynômes à coefficients entiers, est dans le cadre vert seulement : factoriel, non principal.",
+   "ℤ[√−5] est dans le cadre gris seulement : intègre, non factoriel."
+  ],
+  "a_voir": "Principal entraîne factoriel, mais le chemin inverse ne marche pas."
+ },
+ {
+  "code": "56-088",
+  "a_dire": "Dans un anneau principal, la réunion d'une suite croissante d'idéaux est un idéal (d), et la suite devient stationnaire.",
+  "legende_titre": "Pourquoi une suite croissante d'idéaux s'arrête",
+  "lecture": [
+   "Les cases bleues sont les idéaux (48), (24), (12) et (6) : chacun est contenu dans le suivant.",
+   "La case verte (3) est au rang N = 5. Les deux cases vertes en pointillés après elle sont identiques : la suite ne change plus.",
+   "Le grand cadre orange est la réunion I de tous les idéaux : c'est un idéal, qui s'écrit (d).",
+   "La flèche verte montre que d = 3 est déjà dans l'idéal (3) du rang 5 : donc I = (d) = (3)."
+  ],
+  "a_voir": "La réunion est un idéal (d) ; dès le rang où d apparaît, tous les idéaux suivants sont égaux à cette réunion."
+ },
+ {
+  "code": "56-089",
+  "a_dire": "Si p est irréductible, divise ab et ne divise pas a, alors une combinaison up + va = 1 donne p ∣ b.",
+  "legende_titre": "De p ∣ ab à p ∣ b grâce à une combinaison égale à 1",
+  "lecture": [
+   "La case bleue du haut est le départ : 5 divise 30 = 3 × 10 et ne divise pas 3.",
+   "La case orange est l'étape décisive : 2 × 5 + (−3) × 3 = 1.",
+   "La troisième case multiplie par 10 : 100 + (−90) = 10.",
+   "La case verte montre que 100 et −90 sont des multiples de 5, donc 5 divise 10."
+  ],
+  "a_voir": "La combinaison égale à 1 permet de passer de 5 qui divise ab à 5 qui divise b."
+ },
+ {
+  "code": "56-090",
+  "a_dire": "Judson écrit ⟨a⟩ pour l'idéal que ce chapitre écrit (a) : c'est le même ensemble, noté autrement.",
+  "legende_titre": "Deux écritures du même idéal",
+  "lecture": [
+   "La case bleue est (3), l'écriture de ce chapitre.",
+   "La case violette est ⟨3⟩, l'écriture de Judson, avec des chevrons.",
+   "Les deux flèches vertes arrivent sur le même ensemble : 0, ±3, ±6 et ainsi de suite."
+  ],
+  "a_voir": "Seul le signe change, l'ensemble des multiples de 3 reste le même."
+ }
+]

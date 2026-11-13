@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+u = 28.0; ox, oy = 16.0, 10.0; s3 = 3 ** 0.5
+P = lambda a, b: (ox + a * u, oy + b * u)
+poly(ax, [P(0, 0), P(1, 0), P(1, s3), P(0, s3)], 'sujet')
+c = P(0.5, s3 / 2)
+for q in [P(0, 0), P(1, 0), P(1, s3), P(0, s3)]:
+    line(ax, [q, c], 'fixe', dash=True)
+    disc(ax, q[0], q[1], 1.2, 'sujet')
+line(ax, [c, (c[0], oy)], 'resultat', dash=True)
+line(ax, [c, (ox, c[1])], 'resultat', dash=True)
+disc(ax, c[0], c[1], 1.8, 'resultat')
+text(ax, ox, oy - 3.2, r'$0$', 'sujet')
+text(ax, ox + u, oy - 3.2, r'$1$', 'sujet')
+text(ax, ox - 2, oy + s3 * u, r'$\sqrt{3}\,i$', 'sujet', ha='right')
+text(ax, ox + u + 2, oy + s3 * u, r'$1+\sqrt{3}\,i$', 'sujet', ha='left')
+text(ax, c[0], oy - 3.2, r'$1/2$', 'resultat')
+text(ax, ox - 2, c[1], r'$\sqrt{3}/2$', 'resultat', ha='right')
+text(ax, c[0] + 3, c[1] + 3, r'$z$', 'resultat', 'l')
+text(ax, 48, 30, r'$z=(1+\sqrt{3}\,i)/2$', 'resultat', ha='left')
+text(ax, 48, 24, 'distance 1 aux 4 coins', 'fixe', 's', ha='left')
+save(fig, '56-061')

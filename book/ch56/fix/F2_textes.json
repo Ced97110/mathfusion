@@ -1,0 +1,83 @@
+{
+ "56-134": {
+  "lecture": [
+   "La case bleue du haut dit où ν est définie : sur D privé de 0, donc le polynôme nul n’a pas de taille ; ν est le degré.",
+   "La case orange du milieu donne la condition de multiplication : ν(x) = 1 est plus petit que ν(x · x) = 2.",
+   "La case verte du bas donne la division avec reste : x² + 1 = x · x + 1, avec un reste nul ou plus petit que b ; ici 0 < 1.",
+   "Les flèches grises montrent que la même taille ν sert dans les trois cases."
+  ],
+  "a_voir": "Il y a trois conditions, une par case : domaine, multiplication, division ; la même taille ν les relie."
+ },
+ "56-149": {
+  "lecture": [
+   "La ligne du haut donne les coefficients de f = 2 + 3x + x², celle du bas ceux de g = 4 + 2x + 5x², rangés à l’envers.",
+   "Les cases orange a₁ = 3 et b₂ = 5 sont les premiers coefficients que 2 ne divise pas : r = 1 et s = 2.",
+   "Les traits relient les paires dont les indices font 3 : le terme orange 3 × 5 = 15 est impair, le terme gris 1 × 2 = 2 est pair.",
+   "En vert, c₃ = a₁b₂ + a₂b₁ = 15 + 2 = 17 est impair."
+  ],
+  "a_voir": "Un seul terme est impair, a₁b₂ ; l’autre est divisible par 2, donc la somme est impaire."
+ },
+ "56-156": {
+  "lecture": [
+   "En haut, en vert : si D est factoriel, D[x] l’est aussi.",
+   "En bas, en violet : on prend D = Z[racine de −5], qui n’est pas factoriel, et D[x] ne l’est pas non plus.",
+   "Le texte du bas donne les deux factorisations de 6, qui restent dans D[x]."
+  ],
+  "a_voir": "La ligne verte garde la propriété ; la ligne violette montre le cas où l’hypothèse manque."
+ },
+ "56-157": {
+  "lecture": [
+   "En haut, le polynôme bleu s’écrit 2 fois 2x² + 3x + 5 : le contenu en orange, la partie primitive en gris.",
+   "En bas, les facteurs primitifs u et v sont associés : u = (a/b)v, avec une fraction réduite.",
+   "On multiplie par b, ce qui donne bu = av, puis on compare les contenus b et a.",
+   "La case verte conclut : a et b sont des unités, donc u et v sont associés dans D[x]."
+  ],
+  "a_voir": "La dernière case verte est l’étape qui rend la factorisation unique."
+ },
+ "56-168": {
+  "lecture": [
+   "La grande case grise est S = Z × 2Z ; la case bleue est la copie des couples (0, a).",
+   "Dans la copie : (0, 4) + (0, 6) = (0, 10) et (0, 4)(0, 6) = (0, 24), comme dans 2Z.",
+   "Le couple violet (3, 6), pris hors de la copie, multiplié par (0, 4), donne (0, 12 + 24) = (0, 36), en vert.",
+   "La règle (m, c)(0, a) = (0, ma + ca) donne toujours un premier nombre égal à 0 : le produit reste dans la copie, qui est un idéal."
+  ],
+  "a_voir": "La flèche orange part de l’extérieur et retombe dans la case bleue, car le premier nombre du produit est 0."
+ },
+ "56-178": {
+  "lecture": [
+   "La première ligne multiplie b = 2 + i par q = 3 − i ; le calcul en dessous donne 7 + i.",
+   "La seconde ligne retire ce produit de a = 7 + 2i : (7 + 2i) − (7 + i) = i.",
+   "La case verte donne le reste r = i.",
+   "Sa taille est 1, celle de b est 5."
+  ],
+  "a_voir": "La case verte est le reste, obtenu par une multiplication et une soustraction, sans aucune division."
+ },
+ "56-180": {
+  "lecture": [
+   "En haut en bleu, tu vois r, s et leur produit rs = −3 + 3√−5.",
+   "La case bleue donne le carré de la première partie du produit : 4, −20 et 25, c’est-à-dire a²c², −10abcd et 25b²d².",
+   "La case violette donne 5 fois le carré de la seconde partie : 5, +20 et +20, c’est-à-dire 5a²d², +10abcd et 5b²c².",
+   "Les deux cases orange, −10abcd = −20 et +10abcd = +20, sont reliées par la flèche : leur somme vaut 0. En vert, 9 + 45 = 54 est égal à 6 × 9."
+  ],
+  "a_voir": "Les deux termes orange −10abcd et +10abcd se compensent, il reste 54 = 6 × 9."
+ },
+ "56-184": {
+  "lecture": [
+   "La case bleue en haut est le nombre w.",
+   "La flèche orange le met au carré : la case orange donne w² = −5 + w.",
+   "La ligne orange dit que ce résultat est de la forme a + bw avec a = −5 et b = 1.",
+   "La case bleue du milieu nomme l’anneau des nombres a + bw ; les deux flèches grises vont vers ses deux propriétés.",
+   "La case verte dit que chaque idéal a un générateur ; la case grise dit qu’aucune division avec reste ne convient."
+  ],
+  "a_voir": "w² reste de la forme a + bw, et dans cet anneau il n’y a pas de division avec reste."
+ },
+ "56-193": {
+  "lecture": [
+   "La case verte du haut dit que Z[x] est factoriel : oui.",
+   "La case violette du milieu dit qu’il n’est pas principal : l’idéal (2, x) n’a pas un seul générateur.",
+   "Les flèches orange montent : euclidien entraîne principal, principal entraîne factoriel.",
+   "La case violette du bas dit que Z[x] n’est pas euclidien, car il n’est pas principal."
+  ],
+  "a_voir": "Le « non » du milieu entraîne aussi le « non » du bas."
+ }
+}

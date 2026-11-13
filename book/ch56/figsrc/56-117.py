@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 9, 58, 26, 10, 'fixe', label='ℤ[x]', size='m')
+box(ax, 9, 36, 26, 10, 'autre', label='(2, x)', size='m')
+box(ax, 9, 14, 26, 10, 'sujet', label='(x)', size='m')
+line(ax, [(22, 46), (22, 58)], 'fixe', lw=1.2)
+line(ax, [(22, 24), (22, 36)], 'fixe', lw=1.2)
+text(ax, 40, 52, '1 ∈ ℤ[x] mais 1 ∉ (2, x)', 'fixe', 's', ha='left')
+text(ax, 40, 30, '2 ∈ (2, x) mais 2 ∉ (x)', 'fixe', 's', ha='left')
+text(ax, 22, 6, '(x) pas maximal', 'limite', 's')
+save(fig, '56-117')

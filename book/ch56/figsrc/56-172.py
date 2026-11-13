@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+# (2+i)(2-i) = 4 - i^2 = 4 + 1 = 5 ; taille de 2 +- i : 4 + 1 = 5
+assert (2 * 2 + 1 * 1, 2 ** 2 + 1 ** 2) == (5, 5)
+text(ax, 2, 64, r'dans $\mathbb{Z}$', 'fixe', 'm', ha='left')
+box(ax, 34, 57, 20, 14, 'sujet', label='5', size='xl')
+text(ax, 58, 64, 'premier', 'sujet', 'm', ha='left')
+arrow(ax, (44, 56.5), (44, 42), 'varie')
+text(ax, 48, 49, r'dans $\mathbb{Z}[i]$ : 5 se casse', 'varie', 's', ha='left')
+box(ax, 10, 26, 28, 14, 'resultat', label=r'$2+i$', size='l')
+text(ax, 44, 33, r'$\times$', 'fixe', 'l')
+box(ax, 50, 26, 28, 14, 'resultat', label=r'$2-i$', size='l')
+text(ax, 24, 20, r'taille $4+1=5$', 'fixe', 's')
+text(ax, 64, 20, r'taille $4+1=5$', 'fixe', 's')
+text(ax, 44, 8, r'$(2+i)(2-i)=4-i^2=4+1=5$', 'encre', 'm')
+save(fig, '56-172')

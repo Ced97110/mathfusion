@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+disc(ax, 24, 48, 15, 'autre')
+disc(ax, 24, 44, 6.5, 'sujet', label='(6)')
+text(ax, 24, 59.5, '(3)', 'autre', 's')
+disc(ax, 64, 48, 15, 'sujet', label='(3) = (3)')
+text(ax, 24, 27, '(6) ⊆ (3)', 'encre', 'm')
+text(ax, 64, 27, '(3) ⊆ (3)', 'encre', 'm')
+text(ax, 24, 19, '⊆ oui', 'resultat', 'm')
+text(ax, 24, 11, '⊂ oui', 'resultat', 'm')
+text(ax, 64, 19, '⊆ oui', 'resultat', 'm')
+text(ax, 64, 11, '⊂ non', 'limite', 'm')
+save(fig, '56-105')

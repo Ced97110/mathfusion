@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 3, 36, 38, 24, 'sujet')
+text(ax, 22, 53, 'condition de chaîne', 'sujet', 's', weight='bold')
+text(ax, 22, 43, "s'arrête pour tout nombre", 'sujet', 's')
+box(ax, 47, 36, 38, 24, 'autre')
+text(ax, 66, 53, 'PGCD toujours défini', 'autre', 's', weight='bold')
+text(ax, 66, 43, r'$(12,\ 18)=6$', 'autre', 's')
+text(ax, 44, 48, 'et', 'encre', 's')
+arrow(ax, (44, 34), (44, 20), 'resultat', both=True)
+text(ax, 48, 27, 'si et seulement si', 'resultat', 's', ha='left')
+box(ax, 20, 5, 48, 13, 'resultat', label='$M$ factoriel')
+save(fig, '56-076')

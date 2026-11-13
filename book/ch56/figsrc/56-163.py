@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+assert 4 * 6 == 24
+box(ax, 2, 32, 20, 22, 'sujet')
+text(ax, 12, 49, r'$2\mathbb{Z}$', 'sujet', 'm')
+disc(ax, 12, 40, 3.6, 'sujet', label='4', size='m')
+arrow(ax, (22.5, 43), (39.5, 43), 'varie')
+text(ax, 31, 48, r'$a\mapsto(0,a)$', 'varie', 's')
+box(ax, 40, 4, 46, 62, 'autre')
+text(ax, 63, 61.5, r'$\mathbb{Z}\times2\mathbb{Z}$', 'autre', 'm')
+box(ax, 44, 34, 38, 22, 'sujet')
+text(ax, 63, 51, r'copie de $2\mathbb{Z}$', 'sujet', 's')
+text(ax, 63, 41, r'$(0,4)$', 'sujet', 'm')
+box(ax, 52, 10, 22, 11, 'resultat', label=r'$(1,0)$', size='m')
+text(ax, 63, 27, 'joue le rôle de $1$', 'resultat', 's')
+save(fig, '56-163')

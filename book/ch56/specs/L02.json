@@ -1,0 +1,342 @@
+[
+ {
+  "code": "56-031",
+  "a_dire": "Dans ℤ les unités sont 1 et −1 ; dans F[x] ce sont les constantes non nulles.",
+  "legende_titre": "Qui a un inverse dans ℤ et dans F[x] ?",
+  "lecture": [
+   "En haut, sur la droite des entiers, les deux grands disques bleus sont 1 et −1 : ce sont les seuls entiers qui ont un inverse entier.",
+   "En bas à gauche, la case verte montre que la constante 3 a pour inverse la constante 1/3.",
+   "En bas à droite, la case rouge montre que x fois un polynôme non nul a un degré au moins égal à 1 : x n’a pas d’inverse."
+  ],
+  "a_voir": "Dans chaque ensemble, les unités sont les éléments de plus petite taille : 1 et −1, ou les constantes non nulles."
+ },
+ {
+  "code": "56-032",
+  "a_dire": "Une unité divise tout élément, donc ses divisions ne renseignent sur rien ; il faut chercher les autres diviseurs.",
+  "legende_titre": "Les unités divisent tout le monde",
+  "lecture": [
+   "Les deux lignes du haut écrivent 7 de deux façons : 1 fois 7, et −1 fois −7.",
+   "Dans chaque ligne, la case bleue est une unité ; elle marche pour n’importe quel nombre, pas seulement pour 7.",
+   "En bas, les cases orange 2, 3, 4 et 6 sont des diviseurs de 12 qui ne sont pas des unités : eux seuls disent que 12 se casse."
+  ],
+  "a_voir": "Les cases bleues divisent tout ; seules les cases orange apprennent quelque chose sur 12."
+ },
+ {
+  "code": "56-033",
+  "a_dire": "U est le nom de l’ensemble des unités : {1, −1} dans ℤ, tous les nombres non nuls parmi les fractions.",
+  "legende_titre": "Un nom pour l’ensemble des unités",
+  "lecture": [
+   "En haut, la case bleue U = {1, −1} pointe vers les deux grands disques bleus de la droite des entiers : 1 et −1.",
+   "Les petits disques gris de la droite sont les autres entiers, qui ne sont pas des unités.",
+   "En bas, parmi les fractions, la ligne bleue est pleine partout sauf en 0, le cercle rouge vide : U contient tout nombre non nul."
+  ],
+  "a_voir": "U se lit « l’ensemble des unités » et dépend de l’ensemble de départ."
+ },
+ {
+  "code": "56-034",
+  "a_dire": "Les unités forment un groupe : le produit de deux unités est une unité et chaque unité a son inverse ; sans cette condition, comme avec 2, ce n’est plus un groupe.",
+  "legende_titre": "Pourquoi U est un groupe",
+  "lecture": [
+   "À gauche, la case grise 2 est un entier non nul ; la case rouge en tirets, 1/2, est son inverse, qui n’est pas un entier : ce n’est pas un groupe.",
+   "À droite, le tableau donne tous les produits de 1 et de −1 en vert.",
+   "Chaque produit du tableau vaut 1 ou −1, donc reste dans U."
+  ],
+  "a_voir": "Les produits d’unités restent des unités ; avec 2, l’inverse sort de l’ensemble."
+ },
+ {
+  "code": "56-035",
+  "a_dire": "Deux éléments sont associés quand l’un se déduit de l’autre en multipliant par une unité.",
+  "legende_titre": "Associés : égaux à une unité près",
+  "lecture": [
+   "En haut, dans les entiers, la case bleue 3 et la case violette −3 sont reliées par deux flèches : on passe de l’une à l’autre avec l’unité −1.",
+   "En bas, dans F[x], x + 1 en bleu et 2x + 2 en violet sont reliés de la même façon, avec l’unité 2.",
+   "Les flèches orange sont l’action de multiplier par une unité."
+  ],
+  "a_voir": "Chaque paire est reliée par une unité, dans les deux sens."
+ },
+ {
+  "code": "56-036",
+  "a_dire": "Le signe a ∼ b se lit « a est associé à b » et contient deux divisions : a divise b et b divise a.",
+  "legende_titre": "Lire le signe ∼",
+  "lecture": [
+   "La case bleue est a, qui vaut 3, et la case violette est b, qui vaut −3 ; entre elles se trouve le signe ∼.",
+   "La flèche orange du haut dit que 3 divise −3, car −3 est égal à 3 fois −1.",
+   "La flèche orange du bas dit que −3 divise 3, car 3 est égal à −3 fois −1."
+  ],
+  "a_voir": "Le signe ∼ résume deux flèches, une dans chaque sens."
+ },
+ {
+  "code": "56-037",
+  "a_dire": "a ∼ b revient à dire que b = a fois une unité u.",
+  "legende_titre": "Associés et multiplication par une unité",
+  "lecture": [
+   "En haut, on part de a = 3 ; la flèche orange multiplie par u = −1, une unité, et on obtient b = −3 en vert : 3 et −3 sont associés.",
+   "En bas, la même flèche multiplie par 2 et donne 6 en gris ; 2 n’est pas une unité.",
+   "Le texte rouge montre que 6 ne divise pas 3 : il faudrait un quotient égal à 1/2, qui n’est pas entier."
+  ],
+  "a_voir": "Seule la multiplication par une unité donne un associé : 3 et −3, mais pas 3 et 6."
+ },
+ {
+  "code": "56-038",
+  "a_dire": "La preuve part de b = a u et a = b v, remplace a, puis simplifie par b pour obtenir v u = 1.",
+  "legende_titre": "Pourquoi u est une unité",
+  "lecture": [
+   "La colonne de gauche écrit la preuve avec des lettres, ligne 1 à ligne 5 ; la colonne de droite refait chaque ligne avec 3 et −3.",
+   "Les deux cases bleues sont le départ : b = a u et a = b v.",
+   "Les deux cases orange viennent du remplacement de a par b v, puis de la simplification : on barre b, qui n'est pas nul.",
+   "La case verte v u = 1 est l'arrivée : u est une unité et v est son inverse."
+  ],
+  "a_voir": "L'étape qui porte tout le poids est la ligne 4 vers la ligne 5 : on barre b."
+ },
+ {
+  "code": "56-039",
+  "a_dire": "3 et −3 sont associés, x + 1 et 2x + 2 aussi ; 3 et 5, ou x + 1 et x + 2, ne le sont pas.",
+  "legende_titre": "Paires associées et paires qui ne le sont pas",
+  "lecture": [
+   "La ligne verte du haut montre deux paires associées : 3 et −3 avec l’unité −1, x + 1 et 2x + 2 avec l’unité 2.",
+   "La ligne rouge du bas montre deux paires non associées.",
+   "Pour 3 et 5, il faudrait la multiplication par 5/3, qui n’est pas une unité des entiers.",
+   "Pour x + 1 et x + 2, le facteur qui les relierait ne serait pas une constante."
+  ],
+  "a_voir": "Deux éléments qui se ressemblent ne sont pas forcément associés ; il faut une unité."
+ },
+ {
+  "code": "56-040",
+  "a_dire": "L’association range les entiers en groupes ; sans la moitié b ∣ a de la définition, la relation ne serait plus symétrique.",
+  "legende_titre": "L’association range tout en groupes",
+  "lecture": [
+   "En haut, chaque case bleue est un groupe d’entiers associés : 0 seul, 3 et −3, 5 et −5, 12 et −12 ; chaque entier est dans un seul groupe.",
+   "En bas, on garde seulement a ∣ b avec a = 3 et b = 12.",
+   "La flèche verte du haut dit que 3 divise 12 : c’est vrai.",
+   "La flèche rouge du bas dit que 12 divise 3 : c’est faux, donc la symétrie échoue."
+  ],
+  "a_voir": "Les deux flèches doivent être vraies pour que 3 et 12 soient reliés ; ici une seule l’est."
+ },
+ {
+  "code": "56-041",
+  "a_dire": "Un diviseur propre de a divise a sans être associé à a ; il peut être une unité.",
+  "legende_titre": "Les diviseurs propres de 6",
+  "lecture": [
+   "Les huit cases sont tous les diviseurs de 6 dans les entiers : −6, −3, −2, −1, 1, 2, 3, 6.",
+   "Les six cases bleues, sous l’accolade, sont les diviseurs propres.",
+   "Les deux cases grises aux extrémités, 6 et −6, sont associées à 6 : elles sont exclues."
+  ],
+  "a_voir": "Les unités 1 et −1 sont des diviseurs propres ; 6 et −6 ne le sont pas."
+ },
+ {
+  "code": "56-042",
+  "a_dire": "Irréductible et premier sont deux propriétés distinctes, qui coïncident dans ℤ mais pas dans ℤ[√−5].",
+  "legende_titre": "Deux propriétés qui coïncident dans ℤ",
+  "lecture": [
+   "La colonne de gauche dit « ne se casse pas » (irréductible) ; celle de droite dit « divise un facteur » (premier).",
+   "Pour 7 dans ℤ, les deux cases sont vertes : les deux propriétés sont vraies ensemble.",
+   "Pour 2 dans ℤ[√−5], la case de gauche est verte mais celle de droite est rouge : 2 ne divise pas un facteur."
+  ],
+  "a_voir": "Dans ℤ les deux cases sont toujours de la même couleur ; dans ℤ[√−5] elles se séparent."
+ },
+ {
+  "code": "56-043",
+  "a_dire": "Un élément irréductible n’est pas une unité et ne s’écrit en produit qu’avec une unité parmi les facteurs.",
+  "legende_titre": "Ce qui se casse et ce qui ne se casse pas",
+  "lecture": [
+   "À gauche, 12 se casse en 2 et 6 : les deux cases orange ne sont pas des unités.",
+   "À droite, 7 s’écrit 7 fois 1 : la case bleue 7 est suivie de la case grise 1, qui est une unité.",
+   "Le 7 ne se casse donc pas : il est irréductible."
+  ],
+  "a_voir": "Chaque écriture de 7 en produit contient une unité ; 12 a une écriture sans unité."
+ },
+ {
+  "code": "56-044",
+  "a_dire": "Un élément p est premier s’il n’est pas une unité et divise un facteur chaque fois qu’il divise un produit.",
+  "legende_titre": "Le test du produit pour p",
+  "lecture": [
+   "À gauche, p = 7 divise le produit 3 fois 14, qui vaut 42 ; la flèche verte mène à 7 ∣ 14 : 7 divise un facteur.",
+   "À droite, p = 6 divise le produit 3 fois 4, qui vaut 12 ; les deux flèches rouges mènent à 6 ne divise pas 3 et 6 ne divise pas 4.",
+   "Le 7 passe le test ; le 6 ne le passe pas."
+  ],
+  "a_voir": "Un premier qui divise un produit divise toujours l’un des facteurs."
+ },
+ {
+  "code": "56-045",
+  "a_dire": "Un premier p qui s’écrit b fois c divise un facteur, devient associé à ce facteur, et l’autre facteur est une unité : p est irréductible.",
+  "legende_titre": "Pourquoi un premier ne se casse pas",
+  "lecture": [
+   "La case du haut est p = 7, un nombre premier, écrit comme produit b fois c.",
+   "À gauche, la case bleue b = 7 : p divise b et b divise p, donc b est associé à p.",
+   "À droite, la case verte c = 1 est une unité.",
+   "Le texte du bas résume : chaque cassure de p contient une unité."
+  ],
+  "a_voir": "Dans toute cassure de 7, un facteur est associé à 7 et l’autre est une unité."
+ },
+ {
+  "code": "56-046",
+  "a_dire": "La preuve part de p = b c avec p premier, utilise la définition de premier pour obtenir p ∣ b, puis simplifie pour conclure que c est une unité.",
+  "legende_titre": "La preuve, étape par étape",
+  "lecture": [
+   "Les six cases se lisent de haut en bas ; la case bleue du haut est le départ : p est premier et p = b c.",
+   "La case orange p ∣ b est l’étape clé : elle vient de la définition de premier.",
+   "Les cases bleues suivantes écrivent b = p u, puis p = p u c ; on simplifie par p.",
+   "La case verte du bas est l’arrivée : u c = 1, donc c est une unité. À droite, le cas p = 7, b = 7, c = 1."
+  ],
+  "a_voir": "L’étape orange est celle qui donne tout le poids à la preuve."
+ },
+ {
+  "code": "56-047",
+  "a_dire": "Tout premier est irréductible, mais la réciproque est fausse en général : dans ℤ[√−5], 2 est irréductible sans être premier.",
+  "legende_titre": "La réciproque n’est pas toujours vraie",
+  "lecture": [
+   "En haut, la flèche verte va de premier à irréductible : ce sens est toujours vrai.",
+   "La flèche orange en sens inverse est la réciproque : elle est vraie dans ℤ seulement.",
+   "En bas, en rouge, le contre-exemple : 2 divise 6, qui s’écrit (1 + √−5)(1 − √−5), mais 2 ne divise aucun des deux facteurs.",
+   "La ligne rouge du milieu donne la raison : la norme de 2 vaut 4 et ne divise pas la norme 6 du facteur."
+  ],
+  "a_voir": "Un seul contre-exemple rend la réciproque fausse en général."
+ },
+ {
+  "code": "56-048",
+  "a_dire": "ℤ[√−5] est un nom court pour les nombres a + b√−5, avec a et b entiers.",
+  "legende_titre": "Lire le symbole ℤ[√−5]",
+  "lecture": [
+   "Le grand ℤ en bleu est relié à la case bleue : on part des entiers.",
+   "Le crochet orange avec √−5 est relié à la case orange : on ajoute le nombre dont le carré vaut −5.",
+   "La case verte du bas donne ce que le symbole désigne : les nombres a + b√−5, avec a et b entiers."
+  ],
+  "a_voir": "Le symbole se lit en deux morceaux : les entiers, puis un nombre ajouté."
+ },
+ {
+  "code": "56-049",
+  "a_dire": "Dans ℤ[√−5], 2 divise 6 mais ne divise aucun des facteurs de 6 = (1 + √−5)(1 − √−5), donc 2 n’est pas premier.",
+  "legende_titre": "Le nombre 6 s’écrit de deux façons",
+  "lecture": [
+   "En haut, 6 = 2 × 3 : la case bleue 2 est un facteur, donc 2 divise 6.",
+   "Au milieu, 6 = (1 + √−5)(1 − √−5) : les deux cases grises ne contiennent pas 2.",
+   "Les deux cases rouges demandent si 2 divise chaque facteur : la réponse est non. Le quotient de 1 + √−5 par 2 est ½ + ½√−5, dont les coefficients ne sont pas entiers.",
+   "La case verte du bas conclut : 2 divise 6 sans diviser un facteur, donc 2 n'est pas premier."
+  ],
+  "a_voir": "2 divise 6, mais il ne divise aucun des deux facteurs de la seconde écriture."
+ },
+ {
+  "code": "56-050",
+  "a_dire": "ℤ[√3 i] est l’ensemble des nombres a + b√3 i avec a, b entiers, des points du plan ; le carré de √3 i vaut −3.",
+  "legende_titre": "Les nombres a + b√3 i dans le plan",
+  "lecture": [
+   "Chaque disque est un nombre a + b√3 i, avec a et b entiers : a se lit sur l'axe horizontal, b√3 sur l'axe vertical.",
+   "Les disques bleus sont des points de l'ensemble ; la ligne horizontale du milieu porte les entiers (b = 0).",
+   "Les deux disques orange sont 1 + √3 i et 1 − √3 i ; le trait pointillé marque a = 1.",
+   "Le disque vert du haut est √3 i. La flèche verte va de ce point au disque vert −3 : le carré de √3 i vaut −3."
+  ],
+  "a_voir": "Un nombre de cet ensemble est un point dont l'abscisse est un entier et l'ordonnée un multiple entier de √3 ; le carré de √3 i est −3."
+ },
+ {
+  "code": "56-051",
+  "a_dire": "ℤ[√3 i] se lit « grand Z crochet racine de 3 i » : on part des entiers et on ajoute racine de 3 fois i, dont le carré vaut −3.",
+  "legende_titre": "Lire le symbole ℤ[√3 i]",
+  "lecture": [
+   "Le ℤ bleu est relié à la case bleue : on part des entiers.",
+   "Le crochet orange avec √3 i est relié à la case orange : on ajoute √3 × i.",
+   "En bas, la case verte rappelle que √3 × i a pour carré −3.",
+   "La case rouge montre une lecture fausse : ce n’est pas la racine de 3i."
+  ],
+  "a_voir": "√3 i est √3 multiplié par i, pas la racine carrée du produit 3i."
+ },
+ {
+  "code": "56-052",
+  "a_dire": "La norme ν(a + b√3 i) = a² + 3b² est le carré de la distance au point 0 ; 2, 1 + √3 i et 1 − √3 i ont la norme 4.",
+  "legende_titre": "La norme de Judson vue dans le plan",
+  "lecture": [
+   "Le cercle en tirets est formé des points à la distance 2 du point 0.",
+   "Les trois disques orange, 2, 1 + √3 i et 1 − √3 i, sont sur ce cercle ; le trait orange relie 0 à 1 + √3 i.",
+   "À droite, les calculs : ν(2) = 4 + 0 = 4 et ν(1 ± √3 i) = 1 + 3 = 4."
+  ],
+  "a_voir": "Trois nombres différents sont à la même distance 2 du point 0 : leur norme est 4."
+ },
+ {
+  "code": "56-053",
+  "a_dire": "ν est la lettre de Judson pour la norme, comme N ; ν(zw) = ν(z)ν(w) se lit : norme du produit égale produit des normes.",
+  "legende_titre": "Pourquoi la lettre ν",
+  "lecture": [
+   "En haut, la case bleue N(r) pour a + b√−5 et la case violette ν(z) pour a + b√3 i sont reliées par le signe égal : même rôle.",
+   "Le texte en dessous dit ce rôle : le carré de la distance à 0.",
+   "En bas, la case verte ν(zw) est égale aux deux cases violettes ν(z) et ν(w) : norme du produit, norme de z, norme de w."
+  ],
+  "a_voir": "Une seule écriture ν(zw) = ν(z)ν(w) montre trois nombres : z, w et leur produit."
+ },
+ {
+  "code": "56-054",
+  "a_dire": "La norme d’un produit est le produit des normes : ν(zw) = ν(z)ν(w).",
+  "legende_titre": "La norme respecte la multiplication",
+  "lecture": [
+   "La ligne du haut multiplie z = 1 + √3 i (bleu) par w = 1 − √3 i (violet) et obtient zw = 4 (vert).",
+   "Les trois flèches orange prennent la norme de chaque nombre.",
+   "La ligne du bas donne ν(z) = 4, ν(w) = 4 et ν(4) = 16 : 4 fois 4 vaut bien 16."
+  ],
+  "a_voir": "On obtient 16 en multipliant d’abord puis en prenant la norme, ou en prenant les normes puis en multipliant."
+ },
+ {
+  "code": "56-055",
+  "a_dire": "Une unité a pour norme 1 ; dans ℤ[√3 i] seuls 1 et −1 ont la norme 1, mais un nombre à coefficients non entiers peut avoir la norme 1 sans être une unité.",
+  "legende_titre": "Les unités de ℤ[√3 i]",
+  "lecture": [
+   "Les disques sont les nombres à coefficients entiers ; le cercle vert en tirets rassemble les points de norme 1.",
+   "Seuls deux disques entiers sont sur ce cercle, en vert : 1 et −1.",
+   "Le cercle rouge vide, 1/2 + (1/2)√3 i, est aussi sur le cercle de norme 1 mais ses coefficients ne sont pas entiers : il n’est pas dans l’ensemble."
+  ],
+  "a_voir": "Dans cet ensemble, norme 1 donne seulement 1 et −1 parce que les coefficients sont entiers."
+ },
+ {
+  "code": "56-056",
+  "a_dire": "Le nombre 4 s’écrit 2 × 2 et aussi (1 − √3 i)(1 + √3 i), deux écritures en produit.",
+  "legende_titre": "Deux écritures de 4",
+  "lecture": [
+   "La ligne du haut multiplie 2 par 2 : on obtient 4, en vert.",
+   "La ligne du bas multiplie 1 − √3 i par 1 + √3 i, en violet : on obtient aussi 4.",
+   "Le calcul sous la ligne du bas : 1 moins le carré de √3 i, soit 1 − (−3) = 4."
+  ],
+  "a_voir": "Deux produits différents donnent le même nombre 4."
+ },
+ {
+  "code": "56-057",
+  "a_dire": "Si 2 se cassait en deux non-unités, chaque morceau aurait la norme 2, mais aucun nombre de l’ensemble n’a la norme 2 ; donc 2 est irréductible.",
+  "legende_titre": "Pourquoi 2 ne se casse pas",
+  "lecture": [
+   "Les quatre cases du haut se lisent de haut en bas, dans ℤ[√3 i] : on suppose une cassure de 2 ; les normes se multiplient pour donner 4 ; chaque morceau aurait la norme 2 ; il faudrait donc a² + 3b² = 2.",
+   "Les deux cases rouges montrent pourquoi c'est impossible : si b n'est pas nul, 3b² vaut au moins 3 ; si b est nul, a² = 2 n'a pas de solution entière.",
+   "Sur la droite graduée, les disques bleus sont les valeurs de a² + 3b² atteintes : 0, 1, 3 et 4.",
+   "Le cercle rouge sur 2 montre que cette valeur n'est jamais atteinte."
+  ],
+  "a_voir": "La valeur 2 manque sur la droite : c'est ce qui rend la cassure impossible."
+ },
+ {
+  "code": "56-058",
+  "a_dire": "Des normes différentes prouvent que deux nombres sont différents ; des normes égales ne prouvent rien, il faut lister les associés.",
+  "legende_titre": "Quand la norme ne suffit pas",
+  "lecture": [
+   "En haut, dans ℤ[√−5], les normes 4 et 6 sont différentes : le signe ≠ vert conclut que les nombres sont différents.",
+   "Au milieu, dans ℤ[√3 i], 2 et 1 + √3 i ont la même norme 4 : le signe égal orange ne permet pas de conclure.",
+   "La case grise du bas donne la suite : lister les associés de 2, qui sont 2 fois 1 et 2 fois −1."
+  ],
+  "a_voir": "Une norme égale est nécessaire pour être associés mais ne suffit pas."
+ },
+ {
+  "code": "56-059",
+  "a_dire": "Les associés de 2 sont 2 et −2 ; 1 + √3 i n’est ni l’un ni l’autre, donc les deux écritures de 4 sont réellement différentes.",
+  "legende_titre": "Les associés de 2",
+  "lecture": [
+   "Les deux disques bleus sur l’axe horizontal sont 2 et −2 ; la flèche orange multiplie par −1, la seule unité autre que 1.",
+   "Le disque violet est 1 + √3 i : il n’est pas sur l’axe horizontal.",
+   "Le texte du bas conclut : les associés de 2 sont 2 et −2, et 1 + √3 i n’est ni 2 ni −2."
+  ],
+  "a_voir": "Le disque violet n’est pas l’un des deux disques bleus."
+ },
+ {
+  "code": "56-060",
+  "a_dire": "Dans ℤ[√3 i], 2 divise 4 = (1 − √3 i)(1 + √3 i) mais ne divise aucun facteur, donc 2 n’est pas premier.",
+  "legende_titre": "2 divise 4 mais pas ses facteurs",
+  "lecture": [
+   "La ligne du haut dit que 2 divise 4 : 4 divisé par 2 donne 2, un nombre de l’ensemble, en vert.",
+   "La ligne du bas divise le facteur 1 + √3 i par 2 : on trouve 1/2 + (1/2)√3 i, en rouge.",
+   "Ses coefficients 1/2 ne sont pas entiers : 2 ne divise pas ce facteur."
+  ],
+  "a_voir": "La même division donne un résultat dans l’ensemble pour 4, et hors de l’ensemble pour le facteur."
+ }
+]
