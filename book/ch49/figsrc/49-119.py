@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 22, 24, 26, 'sujet', label=r'$C$', size='xl')
+text(ax, 16, 52, 'se lit « grand C »', 'sujet', 's')
+arrow(ax, (30, 35), (40, 35), 'encre')
+text(ax, 35, 40, 'désigne', 'encre', 's')
+box(ax, 42, 22, 42, 26, 'resultat', fill=True)
+disc(ax, 54, 35, 5, 'resultat', label='1', size='m')
+disc(ax, 72, 35, 5, 'resultat', label=r'$r^2$', size='m')
+text(ax, 63, 52, 'le centre : 2 éléments', 'resultat', 's')
+text(ax, 44, 12, 'ils commutent avec tous', 'encre', 's')
+text(ax, 44, 6, r'les éléments de $G$', 'encre', 's')
+save(fig, '49-119')

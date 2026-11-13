@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 34, 52, r'$FG$', 'sujet', 'xl'); text(ax, 52, 55, r'$(r)$', 'varie', 'xl')
+arrow(ax, (34, 47), (26, 36), 'sujet'); arrow(ax, (52, 49), (62, 36), 'varie')
+text(ax, 24, 32, 'le groupe libre', 'sujet', 's'); text(ax, 64, 32, r'$r$ = nombre de lettres', 'varie', 's')
+text(ax, 64, 25, r'exemple : $r=2$', 'varie', 's')
+box(ax, 54.5, 14, 8.5, 8.5, 'varie', label=r'$x$'); box(ax, 64, 14, 8.5, 8.5, 'varie', label=r'$y$')
+text(ax, 3, 18, r"mots sur lettres et inverses,", 'encre', 's', ha='left')
+text(ax, 3, 12, r"avec $xx^{\prime}=1$", 'encre', 's', ha='left')
+text(ax, 44, 4, r'$FM$ : mots sans simplification', 'fixe', 's')
+save(fig, '49-047')

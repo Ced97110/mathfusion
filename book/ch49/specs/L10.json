@@ -1,0 +1,190 @@
+[
+ {
+  "code": "49-144",
+  "a_dire": "Le signe [G : H] se lit « indice de H dans G » et vaut le nombre de classes latérales.",
+  "legende_titre": "Un signe qui compte des paquets",
+  "lecture": [
+   "Les quatre cadres sont les classes latérales de H.",
+   "Le cadre bleu est H, avec ses 2 éléments.",
+   "Au total, les 8 éléments de G sont rangés par paquets de 2.",
+   "Le cadre vert donne le nombre : 4."
+  ],
+  "a_voir": "Le signe est un nombre : combien de paquets de la taille de H remplissent G."
+ },
+ {
+  "code": "49-145",
+  "a_dire": "Sur la figure 3, l'orbite de A est tout le carré et le stabilisateur de A est {1, s}.",
+  "legende_titre": "L'orbite de A et son stabilisateur",
+  "lecture": [
+   "À gauche, les flèches orange partent de A vers B, C et D : les quatre sommets bleus forment l'orbite.",
+   "À droite, la ligne violette est l'axe de la réflexion s.",
+   "A et C, en violet, restent en place sous s ; B et D, en gris, bougent."
+  ],
+  "a_voir": "A atteint tous les sommets, et seule la réflexion s, avec le neutre, le laisse en place."
+ },
+ {
+  "code": "49-146",
+  "a_dire": "Une classe de conjugaison est l'orbite d'un élément quand on conjugue par tous les éléments du groupe.",
+  "legende_titre": "Ce que donne la conjugaison de r",
+  "lecture": [
+   "À gauche, le disque bleu est le quart de tour r.",
+   "La flèche grise va vers r : c'est le résultat pour une rotation.",
+   "La flèche orange va vers r³ : c'est le résultat pour une réflexion.",
+   "Le cadre vert rassemble r et r³ : c'est la classe de r."
+  ],
+  "a_voir": "En conjuguant r par tous les éléments, on obtient seulement r et r³."
+ },
+ {
+  "code": "49-147",
+  "a_dire": "Le centralisateur de x est l'ensemble des éléments qui commutent avec x ; il dépend de x, contrairement au centre.",
+  "legende_titre": "Centralisateur, centre et groupe entier",
+  "lecture": [
+   "Le grand cadre pointillé est le groupe entier : 8 éléments, c'est le centralisateur de r².",
+   "Le cadre bleu contient les 4 rotations : c'est le centralisateur de r.",
+   "Le cadre vert contient 1 et r² : c'est le centre, placé dans le cadre bleu.",
+   "Les 4 disques gris du bas sont les réflexions."
+  ],
+  "a_voir": "Le centralisateur change avec l'élément choisi ; le centre est contenu dans chacun."
+ },
+ {
+  "code": "49-148",
+  "a_dire": "C(x) est le centralisateur de x : le signe C du centre, suivi du nom de l'élément x.",
+  "legende_titre": "Le signe C(x) découpé",
+  "lecture": [
+   "La lettre C, en bleu, renvoie au centre du groupe.",
+   "Le (x), en orange, est l'élément choisi.",
+   "En bas, le cadre gris est le centre : 2 éléments.",
+   "Les deux cadres bleus sont C(r) et C(s) : 4 éléments chacun."
+  ],
+  "a_voir": "Ajouter x à C donne un ensemble qui dépend de x."
+ },
+ {
+  "code": "49-149",
+  "a_dire": "Commuter avec quelques éléments ne suffit pas : r commute avec les 4 rotations mais sa classe a 2 éléments.",
+  "legende_titre": "Commuter avec la moitié ne suffit pas",
+  "lecture": [
+   "Le cadre vert contient les 4 éléments qui commutent avec r.",
+   "Le cadre rouge contient les 4 réflexions, qui ne commutent pas avec r.",
+   "La flèche grise donne r ; la flèche orange donne r³.",
+   "Le cadre du bas est la classe de r : 2 éléments."
+  ],
+  "a_voir": "Pour que la classe de x soit {x}, x doit commuter avec tous les éléments, pas avec quelques-uns."
+ },
+ {
+  "code": "49-150",
+  "a_dire": "L'ensemble des points fixes de g est la liste des points que g laisse en place ; on part du geste.",
+  "legende_titre": "Les points restés en place",
+  "lecture": [
+   "À gauche, la réflexion s : les sommets verts 1 et 3 restent en place, la flèche orange échange 2 et 4.",
+   "À droite, le quart de tour r : les flèches orange déplacent les 4 sommets.",
+   "Sous chaque carré, la liste des points fixes."
+  ],
+  "a_voir": "On part d'un geste et on liste les points qu'il ne bouge pas."
+ },
+ {
+  "code": "49-151",
+  "a_dire": "La formule Fix g garde les x tels que g x = x : on prend chaque point, on applique g, on compare.",
+  "legende_titre": "Tester chaque sommet l'un après l'autre",
+  "lecture": [
+   "Le petit carré montre l'axe de g par les sommets 1 et 3.",
+   "Chaque ligne teste un sommet : g x est comparé à x.",
+   "Les lignes vertes sont gardées, les rouges sont écartées.",
+   "Le cadre vert du bas regroupe les gardés : {1, 3}."
+  ],
+  "a_voir": "On garde seulement les x que g renvoie sur eux-mêmes."
+ },
+ {
+  "code": "49-152",
+  "a_dire": "Le signe Fix g se lit « Fix de g » : l'ensemble des points que g laisse en place.",
+  "legende_titre": "Le signe Fix g en trois cas",
+  "lecture": [
+   "Le mot Fix est en bleu, le g en orange : g est l'élément choisi.",
+   "Chaque ligne est un élément ; chaque disque est un sommet numéroté de 1 à 4.",
+   "Un disque vert est un point laissé en place, un disque gris est un point déplacé.",
+   "À droite, le nombre de points verts."
+  ],
+  "a_voir": "Le nom de l'élément est dans le signe, et chaque élément donne son propre ensemble."
+ },
+ {
+  "code": "49-153",
+  "a_dire": "Le signe |Fix g| est le nombre de points que g laisse en place.",
+  "legende_titre": "Les barres comptent les points fixes",
+  "lecture": [
+   "En haut, le signe avec ses deux barres.",
+   "Le cadre vert contient les points fixes de s : 1 et 3.",
+   "La flèche grise compte ces points : le résultat est 2.",
+   "Le cadre rouge est vide pour r : le résultat est 0."
+  ],
+  "a_voir": "Les barres transforment un ensemble en un nombre."
+ },
+ {
+  "code": "49-154",
+  "a_dire": "Stab 1 est une partie du groupe (des gestes) ; Fix s est une partie de l'ensemble déplacé (des sommets).",
+  "legende_titre": "Deux ensembles de nature différente",
+  "lecture": [
+   "À gauche, le cadre gris est le groupe : 8 gestes ; les deux disques bleus 1 et s forment Stab 1.",
+   "À droite, le cadre gris est le carré : 4 sommets ; les disques violets 1 et 3 forment Fix s.",
+   "Les deux ensembles ont 2 éléments, mais l'un compte des gestes et l'autre des sommets."
+  ],
+  "a_voir": "Le stabilisateur est dans G, les points fixes sont dans S."
+ },
+ {
+  "code": "49-155",
+  "a_dire": "Le nombre de points fixes change avec l'élément : 4 pour le neutre, 2 pour s, 0 pour r.",
+  "legende_titre": "Trois éléments, trois nombres de points fixes",
+  "lecture": [
+   "Le carré de gauche est le neutre : les 4 sommets verts restent en place.",
+   "Au milieu, la réflexion s : A et C, verts, restent en place sur l'axe orange.",
+   "À droite, le quart de tour : les flèches orange déplacent tous les sommets, Fix r est vide."
+  ],
+  "a_voir": "Fix g a 4, 2 ou 0 points selon l'élément choisi."
+ },
+ {
+  "code": "49-156",
+  "a_dire": "Le tableau des couples (g, x) avec g x = x se lit par ligne pour Fix g et par colonne pour Stab x.",
+  "legende_titre": "Un tableau lu de deux façons",
+  "lecture": [
+   "Chaque croix verte est un couple où l'élément laisse le sommet en place.",
+   "La ligne entourée en orange est celle de s : ses croix donnent Fix s.",
+   "La colonne entourée en bleu est celle de A : ses croix donnent Stab A.",
+   "Les 5 dernières lignes n'ont aucune croix ; le total est 8 croix."
+  ],
+  "a_voir": "Les lignes et les colonnes comptent les mêmes 8 croix."
+ },
+ {
+  "code": "49-157",
+  "a_dire": "Si G agit transitivement, chaque sommet correspond à une seule classe de Stab A, et l'action est la même des deux côtés.",
+  "legende_titre": "Sommets et classes se correspondent un à un",
+  "lecture": [
+   "À gauche, les 4 disques bleus sont les sommets A, B, C, D.",
+   "À droite, les 4 cadres violets sont les classes de Stab A, de 2 éléments chacune.",
+   "Chaque flèche verte relie un sommet à sa classe.",
+   "Les flèches orange r vont de A à B et de H à rH : l'action est la même."
+  ],
+  "a_voir": "Les sommets et les classes se correspondent un pour un, en respectant l'action."
+ },
+ {
+  "code": "49-158",
+  "a_dire": "Le nombre de points de l'orbite fois la taille du stabilisateur vaut toujours |G|.",
+  "legende_titre": "Orbite fois stabilisateur : toujours |G|",
+  "lecture": [
+   "Chaque grille est un cas : les colonnes comptent l'orbite, les lignes le stabilisateur.",
+   "La grille de gauche est le carré : 4 × 2 = 8.",
+   "Les trois autres sont les rotations : 1 × 4, 4 × 1 et 2 × 2 donnent 4.",
+   "Dans chaque grille, le nombre de cases est |G|."
+  ],
+  "a_voir": "Les cases de chaque grille sont toujours aussi nombreuses que les éléments du groupe."
+ },
+ {
+  "code": "49-159",
+  "a_dire": "Plus un point a un grand stabilisateur, plus son orbite est petite ; leur produit est la taille du groupe.",
+  "legende_titre": "Orbite et stabilisateur se compensent",
+  "lecture": [
+   "La ligne du haut est la coloration toute bleue : 1 coloration dans l'orbite, 4 rotations dans le stabilisateur.",
+   "La ligne du bas est un pion orange : 4 colorations dans l'orbite, seul le neutre dans le stabilisateur.",
+   "Les disques violets sont les éléments du stabilisateur.",
+   "Dans les deux lignes, le produit vaut 4."
+  ],
+  "a_voir": "Quand l'orbite grandit, le stabilisateur diminue, et le produit reste 4."
+ }
+]

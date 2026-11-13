@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+def tiles(x, y, s, role):
+    for i, l in enumerate(s): box(ax, x + i * 9, y, 8.5, 9, role, label=f'${l}$')
+text(ax, 13, 55, r'premier mot : $xy$', 'sujet', 's')
+tiles(4, 42, 'xy', 'sujet')
+text(ax, 72, 55, r'second mot : $yx$', 'autre', 's')
+tiles(63, 42, 'yx', 'autre')
+tiles(26, 17, 'xy', 'sujet'); tiles(44, 17, 'yx', 'autre')
+arrow(ax, (14, 40), (30, 29), 'varie', lw=1.3)
+arrow(ax, (72, 40), (57, 29), 'varie', lw=1.3)
+text(ax, 44, 35, 'à la suite', 'varie', 's')
+brace(ax, 26, 43.5, 16, 'sujet', 'premier')
+brace(ax, 44, 61.5, 16, 'autre', 'second')
+text(ax, 44, 4, r'produit : $xyyx$', 'resultat', 'm')
+save(fig, '49-025')

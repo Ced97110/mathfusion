@@ -1,0 +1,190 @@
+[
+ {
+  "code": "49-001",
+  "a_dire": "Deux lettres et trois règles décrivent les huit positions du carré, là où un tableau demande 64 cases.",
+  "legende_titre": "Deux lettres et trois règles contre un grand tableau",
+  "lecture": [
+   "La grille grise est le tableau complet : 64 cases.",
+   "Le cercle bleu et le cercle violet sont les deux lettres r et s.",
+   "Les trois boîtes grises sont les trois règles.",
+   "La flèche orange va du tableau au message court."
+  ],
+  "a_voir": "Le message court remplace le tableau de 64 cases."
+ },
+ {
+  "code": "49-002",
+  "a_dire": "Quatre quarts de tour de suite ramènent le coin 1 à sa place : r puissance quatre égale un.",
+  "legende_titre": "Le coin 1 fait le tour du carré",
+  "lecture": [
+   "Le cercle bleu 1 est le coin 1 au départ.",
+   "Les flèches orange passent du coin 1 aux places 2, 3, 4, puis reviennent à la place 1.",
+   "Chaque lettre orange dit combien de quarts de tour ont eu lieu.",
+   "La boîte verte écrit le résultat."
+  ],
+  "a_voir": "Après quatre quarts de tour, le coin 1 est revenu à sa place."
+ },
+ {
+  "code": "49-003",
+  "a_dire": "Deux réflexions identiques de suite ne changent rien : s deux égale un, donc seule la parité compte.",
+  "legende_titre": "Deux retournements, et le carré est revenu",
+  "lecture": [
+   "Les trois carrés montrent le carré au départ, après un retournement, puis après deux.",
+   "Le cercle bleu 1 est un coin : il change de côté après un retournement et revient après deux.",
+   "Sur la droite graduée, les points verts (2, 4, 6) laissent le carré en place.",
+   "Les points orange (1, 3, 5, 7) le laissent retourné."
+  ],
+  "a_voir": "Un nombre pair de s ne change rien, un nombre impair laisse un s."
+ },
+ {
+  "code": "49-004",
+  "a_dire": "Réflexion, quart de tour, même réflexion : le coin 1 arrive en 4, comme avec le quart de tour dans l’autre sens.",
+  "legende_titre": "Suivre le coin 1 à travers s, r, s",
+  "lecture": [
+   "Le premier carré donne le numéro de chaque place.",
+   "Le cercle bleu 1 est le coin 1 ; il reste en 1, passe en 2, puis arrive en 4.",
+   "Les flèches orange sont s, r, s dans l’ordre.",
+   "La flèche verte va de la place 1 à la place 4 : c’est le quart de tour inverse."
+  ],
+  "a_voir": "Le coin 1 finit à la place 4, où l’envoie le quart de tour inverse."
+ },
+ {
+  "code": "49-005",
+  "a_dire": "Sans règle, xy et yx restent deux éléments différents.",
+  "legende_titre": "Deux lettres, aucune règle",
+  "lecture": [
+   "Les cases bleues sont la lettre x, les cases violettes la lettre y.",
+   "À gauche, la suite x puis y ; à droite, y puis x.",
+   "Le signe entre les deux dit que ces suites ne sont pas égales.",
+   "Le texte du bas dit qu’on a deux éléments."
+  ],
+  "a_voir": "Rien n’oblige xy à valoir yx."
+ },
+ {
+  "code": "49-006",
+  "a_dire": "Le groupe libre est le groupe à deux lettres sans règle ; le groupe du carré en vient en ajoutant trois règles.",
+  "legende_titre": "Du groupe sans règle au groupe du carré",
+  "lecture": [
+   "À gauche, le point vert est le centre ; les flèches partent vers des points bleus et violets, et les pointillés montrent que cela continue.",
+   "La flèche orange ajoute trois règles.",
+   "À droite, huit cercles violets sont les huit éléments du groupe du carré."
+  ],
+  "a_voir": "Le groupe du carré se déduit du groupe libre en ajoutant des règles."
+ },
+ {
+  "code": "49-007",
+  "a_dire": "Il faut que les règles donnent exactement 8 éléments, ni 7 ni 9.",
+  "legende_titre": "Exactement huit éléments ?",
+  "lecture": [
+   "Chaque ligne est une rangée de cercles : un cercle par élément.",
+   "La ligne verte a 8 cercles : le bon message.",
+   "Les lignes rouges ont 7 et 9 cercles : le message est faux.",
+   "Le texte de chaque ligne dit ce que les règles ont fait."
+  ],
+  "a_voir": "Le bon message donne 8 éléments, pas un de plus ni de moins."
+ },
+ {
+  "code": "49-008",
+  "a_dire": "Un groupe se décrit par une liste de lettres de départ et une liste de règles, au lieu d’une grande table.",
+  "legende_titre": "Deux listes ou une table",
+  "lecture": [
+   "À gauche, Léa : deux cercles bleus (les lettres de départ) et trois boîtes grises (les règles).",
+   "À droite, Tom : une grille violette de 64 cases.",
+   "Les flèches grises mènent aux huit cercles verts, les mêmes huit positions."
+  ],
+  "a_voir": "Deux listes courtes donnent les mêmes positions que la grande table."
+ },
+ {
+  "code": "49-009",
+  "a_dire": "Quatre coins à deux couleurs donnent 16 colorations, sans tenir compte des rotations.",
+  "legende_titre": "Seize façons de colorier le carré",
+  "lecture": [
+   "Le carré à gauche a quatre coins vides.",
+   "Le cercle bleu et le cercle orange sont les deux choix par coin.",
+   "La grille de droite montre les 16 colorations, une par petit carré.",
+   "Le calcul vert est 2 fois 2 fois 2 fois 2."
+  ],
+  "a_voir": "Il y a 16 colorations, toutes comptées une à une."
+ },
+ {
+  "code": "49-010",
+  "a_dire": "Les 16 colorations ne se rangent pas en 4 paquets de 4 : diviser 16 par 4 est faux.",
+  "legende_titre": "Pourquoi 16 divisé par 4 ne marche pas",
+  "lecture": [
+   "À gauche, quatre blocs rouges de quatre cercles : le partage que la division suppose.",
+   "Le carré tout bleu et le carré tout orange sont chacun seuls dans leur paquet.",
+   "La boîte en pointillés contient les 14 autres colorations, en paquets de tailles 4 et 2."
+  ],
+  "a_voir": "Les paquets n’ont pas tous 4 colorations."
+ },
+ {
+  "code": "49-011",
+  "a_dire": "Une orbite est un paquet de colorations qui se déduisent l’une de l’autre en tournant le carré.",
+  "legende_titre": "Les paquets définis par les rotations",
+  "lecture": [
+   "La boîte en pointillés contient les 6 colorations à deux pions orange.",
+   "Sur la ligne du haut, les flèches orange sont des quarts de tour : 4 colorations reliées.",
+   "Sur la ligne du bas, 2 colorations se transforment l’une en l’autre.",
+   "Les accolades bleues nomment les deux orbites."
+  ],
+  "a_voir": "Ces 6 colorations forment deux orbites, de 4 et de 2."
+ },
+ {
+  "code": "49-012",
+  "a_dire": "Un groupe agit sur un ensemble : chaque rotation prend une coloration et en rend une autre.",
+  "legende_titre": "Un groupe qui déplace un ensemble",
+  "lecture": [
+   "La boîte bleue contient les 4 rotations.",
+   "La boîte violette contient les 16 colorations.",
+   "La flèche orange entre les boîtes dit que les rotations agissent.",
+   "Dans la boîte violette, une rotation de 90° fait passer le pion orange d’un coin au suivant."
+  ],
+  "a_voir": "Les rotations déplacent les colorations : c’est une action."
+ },
+ {
+  "code": "49-306",
+  "a_dire": "La règle du produit : on multiplie les nombres de possibilités pour compter sans écrire.",
+  "legende_titre": "Compter sans tout écrire",
+  "lecture": [
+   "Chaque ligne est une couleur du premier pion, chaque colonne une couleur du second.",
+   "Les 4 cases du tableau sont les 4 colorations de deux pions.",
+   "À droite, 2 fois 2 donne 4.",
+   "Avec 4 pions, on multiplie quatre fois 2 et on obtient 16."
+  ],
+  "a_voir": "On multiplie les choix de chaque pion."
+ },
+ {
+  "code": "49-013",
+  "a_dire": "Depuis le centre, quatre flèches partent, puis trois par point, sans retour en arrière : chaque point est un mot différent.",
+  "legende_titre": "Les premiers niveaux de l’arbre",
+  "lecture": [
+   "Le cercle vert 1 est le centre : le mot sans lettre.",
+   "Les quatre cercles de premier niveau sont x, y, x moins un et y moins un.",
+   "Les flèches bleues sont horizontales, les violettes verticales.",
+   "Au bout de chaque cercle, trois flèches : 12 points au second niveau."
+  ],
+  "a_voir": "4 points, puis 12 points, et le dessin continue."
+ },
+ {
+  "code": "49-014",
+  "a_dire": "Une flèche veut dire : on ajoute sa lettre à la fin du mot.",
+  "legende_titre": "Marcher revient à écrire",
+  "lecture": [
+   "Le cercle vert 1 est le départ.",
+   "La flèche bleue x mène au point x ; la flèche violette y mène au point xy.",
+   "À droite, les cases bleues et violettes sont le mot écrit à chaque étape."
+  ],
+  "a_voir": "Chaque flèche ajoute sa lettre au bout du mot."
+ },
+ {
+  "code": "49-015",
+  "a_dire": "Au point x, la flèche x moins un manque : elle ramènerait au centre, déjà atteint.",
+  "legende_titre": "La flèche qui manque au point x",
+  "lecture": [
+   "Le cercle vert 1 est le centre.",
+   "Les flèches pleines partent du point x vers la droite, le haut et le bas.",
+   "La flèche rouge en pointillés est celle qui manque : elle irait au centre.",
+   "La formule verte dit pourquoi : x suivi de son contraire donne 1."
+  ],
+  "a_voir": "L’absence de flèche évite deux chemins vers le même point."
+ }
+]

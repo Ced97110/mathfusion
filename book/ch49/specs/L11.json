@@ -1,0 +1,178 @@
+[
+ {
+  "code": "49-160",
+  "a_dire": "La preuve part de deux éléments qui donnent le même point, passe par un élément du stabilisateur, et arrive à la même classe latérale.",
+  "legende_titre": "Trois temps d'une preuve sur le carré",
+  "lecture": [
+   "En haut, les éléments r et rs (bleu) envoient tous deux le sommet A sur le sommet B (vert).",
+   "Au milieu, l'orange montre l'étape qui porte le poids : r⁻¹ fois rs donne s, qui est dans le stabilisateur de A.",
+   "En bas, r et rs sont dans le même cadre orange : ils forment une même classe latérale."
+  ],
+  "a_voir": "Du même point on passe, par un élément du stabilisateur, à la même classe."
+ },
+ {
+  "code": "49-161",
+  "a_dire": "Deux éléments g et g′ donnent le même point exactement quand g⁻¹g′ est dans le stabilisateur de x.",
+  "legende_titre": "Même arrivée, produit dans le stabilisateur",
+  "lecture": [
+   "En haut, deux flèches orange partent de A : r et rs. Toutes deux arrivent au sommet B (vert).",
+   "En bas, le cadre vert donne le calcul : r⁻¹ fois rs vaut s.",
+   "Ce s est dans le stabilisateur de A : « ssi » relie les deux moitiés."
+  ],
+  "a_voir": "Avoir la même arrivée revient à avoir un produit r⁻¹(rs) dans le stabilisateur."
+ },
+ {
+  "code": "49-162",
+  "a_dire": "Deux éléments donnent le même point exactement quand ils sont dans la même classe latérale à gauche du stabilisateur.",
+  "legende_titre": "Le stabilisateur multiplié à gauche par r",
+  "lecture": [
+   "Le cadre bleu du haut est le stabilisateur de A : e et s.",
+   "La flèche orange multiplie chacun par r à gauche et donne le cadre orange : r et rs.",
+   "Les deux éléments du cadre orange arrivent au même sommet B (vert)."
+  ],
+  "a_voir": "La classe r·Stab A est un paquet dont tous les éléments donnent le même point B."
+ },
+ {
+  "code": "49-163",
+  "a_dire": "Chaque classe latérale donne un point de l'orbite, et deux classes différentes donnent deux points différents.",
+  "legende_titre": "Une classe, un point",
+  "lecture": [
+   "Chaque cadre orange à gauche est une classe latérale de deux éléments (disques bleus).",
+   "Chaque flèche relie une classe à un point de l'orbite (disque vert).",
+   "Il y a 4 classes, 4 flèches et 4 points : A, B, C, D."
+  ],
+  "a_voir": "Les classes et les points de l'orbite se correspondent un à un."
+ },
+ {
+  "code": "49-164",
+  "a_dire": "La formule orbite-stabilisateur dit la même chose que le théorème de Lagrange : le groupe se découpe en classes de même taille.",
+  "legende_titre": "Même découpage, deux lectures",
+  "lecture": [
+   "La rangée grise du haut montre le groupe de 8 éléments découpé en 4 classes de 2.",
+   "La rangée bleue du bas montre le même découpage, vu comme les classes de Stab A.",
+   "Les flèches orange envoient chaque classe vers un des 4 points de l'orbite (vert)."
+  ],
+  "a_voir": "Le découpage de Lagrange compte aussi les points de l'orbite."
+ },
+ {
+  "code": "49-165",
+  "a_dire": "Pour le sommet A : 4 sommets dans l'orbite, 2 éléments dans le stabilisateur, et 4 × 2 = 8 éléments dans le groupe.",
+  "legende_titre": "Vérification : 4 fois 2 égale 8",
+  "lecture": [
+   "Chaque ligne de la grille est un sommet de l'orbite : A, B, C, D (vert).",
+   "Chaque ligne a 2 cases : les 2 éléments du stabilisateur de A.",
+   "La grille a 8 cases, autant que d'éléments du groupe."
+  ],
+  "a_voir": "Le nombre de lignes fois le nombre de colonnes donne la taille du groupe."
+ },
+ {
+  "code": "49-166",
+  "a_dire": "Chaque trait orange relie les deux éléments d'une même classe, et les quatre classes arrivent sur quatre sommets différents.",
+  "legende_titre": "Quatre traits, quatre classes",
+  "lecture": [
+   "Chaque disque bleu est un élément du groupe : en haut e, r, r², r³, en bas s, rs, r²s, r³s.",
+   "Chaque trait orange relie deux éléments d'une même classe.",
+   "Sous chaque trait, une flèche indique le sommet obtenu : A, B, C, D (vert)."
+  ],
+  "a_voir": "Il suffit de compter les traits : 4 traits, donc une orbite de 4 points."
+ },
+ {
+  "code": "49-167",
+  "a_dire": "La taille d'une orbite divise celle du groupe. Pour un monoïde sans inverses, ce n'est plus vrai.",
+  "legende_titre": "Divisibilité : groupe et monoïde",
+  "lecture": [
+   "En vert, le groupe de 8 éléments se range en 4 classes égales : 4 divise 8.",
+   "En bas, le monoïde a 5 éléments : 0, 1, 2, 3, 4.",
+   "Les disques rouges 1, 2, 3, 4 forment l'orbite de 1 : 4 points, et 4 ne divise pas 5."
+  ],
+  "a_voir": "La divisibilité demande un groupe : avec un monoïde elle échoue."
+ },
+ {
+  "code": "49-168",
+  "a_dire": "Un groupe de 8 éléments ne peut pas avoir une orbite de 3 points : seules 1, 2, 4 ou 8 sont possibles.",
+  "legende_titre": "Pourquoi 3 est impossible pour 8",
+  "lecture": [
+   "En haut, les 8 éléments sont rangés en 3 classes (rouge) : 3, 3 et 2, donc inégales.",
+   "Sur la droite graduée, les disques verts pleins sont 1, 2, 4 et 8.",
+   "Les cercles rouges 3, 5, 6 et 7 sont impossibles."
+  ],
+  "a_voir": "Une orbite de 3 points ne peut pas exister sous un groupe de 8 éléments."
+ },
+ {
+  "code": "49-169",
+  "a_dire": "Le stabilisateur du point déplacé par a est le conjugué par a du stabilisateur de x.",
+  "legende_titre": "Conjuguer le stabilisateur par le quart de tour",
+  "lecture": [
+   "À gauche, le sommet A (bleu) est fixé par la réflexion d'axe AC (tirets).",
+   "La flèche orange est le quart de tour a = r.",
+   "À droite, le sommet B (vert) est fixé par l'axe BD : c'est le stabilisateur de A conjugué par r."
+  ],
+  "a_voir": "Stab B s'obtient en conjuguant chaque élément de Stab A par r."
+ },
+ {
+  "code": "49-170",
+  "a_dire": "Les stabilisateurs de deux points d'une même orbite sont conjugués l'un de l'autre.",
+  "legende_titre": "Quatre points, quatre stabilisateurs liés",
+  "lecture": [
+   "Chaque petit carré a un sommet en couleur : A, B, C ou D, avec son axe en tirets.",
+   "Les flèches orange r passent d'un point au suivant.",
+   "Chaque stabilisateur s'obtient du précédent par conjugaison par r."
+  ],
+  "a_voir": "Deux points d'une même orbite ont des stabilisateurs conjugués."
+ },
+ {
+  "code": "49-171",
+  "a_dire": "Deux points d'une même orbite ont des stabilisateurs de même taille ; deux points d'orbites différentes peuvent en avoir de tailles différentes.",
+  "legende_titre": "Même orbite, même taille",
+  "lecture": [
+   "À gauche, deux colorations reliées par r : elles sont dans la même orbite et ont chacune 1 rotation qui les laisse en place.",
+   "À droite, la coloration toute bleue est laissée en place par 4 rotations.",
+   "Le rouge marque que 4 et 1 diffèrent : ce n'est pas la même orbite."
+  ],
+  "a_voir": "L'égalité des tailles vaut seulement dans une même orbite."
+ },
+ {
+  "code": "49-172",
+  "a_dire": "L'application a ↦ gag⁻¹ envoie le stabilisateur de x sur celui de y en gardant le produit.",
+  "legende_titre": "L'application qui conjugue envoie Stab A sur Stab B",
+  "lecture": [
+   "À gauche, le cadre bleu a deux éléments : e et s. À droite, le cadre vert : e et s′.",
+   "Les flèches orange envoient e sur e et s sur s′, avec s′ = r s r⁻¹.",
+   "En bas, s′ fait trois gestes : r⁻¹ ramène B sur A, s laisse A, r renvoie A sur B."
+  ],
+  "a_voir": "Le conjugué d'un élément qui laisse A en place laisse B en place."
+ },
+ {
+  "code": "49-173",
+  "a_dire": "Conjuguer un produit donne le produit des conjugués.",
+  "legende_titre": "Deux chemins, même résultat",
+  "lecture": [
+   "En haut, la paire (a, b). À gauche, on multiplie d'abord : ab.",
+   "À droite, on conjugue d'abord chacun : le cadre orange.",
+   "Les deux chemins arrivent dans le cadre vert, au même résultat."
+  ],
+  "a_voir": "Conjuguer le produit ou multiplier les conjugués donne la même chose."
+ },
+ {
+  "code": "49-174",
+  "a_dire": "L'application a ↦ gag⁻¹ a une réciproque, b ↦ g⁻¹bg, donc c'est une bijection qui respecte le produit : un isomorphisme.",
+  "legende_titre": "Aller et retour par conjugaison",
+  "lecture": [
+   "Le disque bleu s est un élément de Stab A ; le disque vert s′ est son conjugué.",
+   "La flèche orange du haut va de s à s′ en conjuguant par r.",
+   "La flèche violette du bas revient de s′ à s en conjuguant par r⁻¹."
+  ],
+  "a_voir": "Les deux conjugaisons s'annulent : on retrouve s."
+ },
+ {
+  "code": "49-175",
+  "a_dire": "Tous les points d'une même orbite ont des stabilisateurs de même taille.",
+  "legende_titre": "Même hauteur pour A, B, C, D",
+  "lecture": [
+   "Chaque colonne bleue est un sommet de l'orbite : A, B, C, D (vert).",
+   "Chaque colonne a 2 cases : la taille du stabilisateur.",
+   "La ligne en tirets montre que les quatre hauteurs sont égales, car 8 divisé par 4 donne 2."
+  ],
+  "a_voir": "Un seul nombre est possible pour tous les points de l'orbite : 2."
+ }
+]

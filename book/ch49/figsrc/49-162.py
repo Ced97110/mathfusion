@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 24, 62, 40, 20, 'sujet'); disc(ax, 34, 72, 4, 'sujet', label=r'$e$', size='s'); disc(ax, 54, 72, 4, 'sujet', label=r'$s$', size='s')
+text(ax, 77, 72, r'Stab $A$', 'sujet', 's')
+arrow(ax, (44, 60), (44, 46), 'varie'); text(ax, 70, 53, r'$\times\,r$ à gauche', 'varie', 's')
+box(ax, 24, 26, 40, 20, 'varie'); disc(ax, 34, 36, 4, 'sujet', label=r'$r$', size='s'); disc(ax, 54, 36, 4, 'sujet', label=r'$rs$', size='s')
+text(ax, 77, 36, r'$r\,$Stab $A$', 'varie', 's')
+arrow(ax, (44, 24), (44, 15), 'varie'); disc(ax, 44, 10, 4.5, 'resultat', label='B', size='m')
+text(ax, 70, 10, 'même point', 'resultat', 's')
+save(fig, '49-162')

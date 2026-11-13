@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+A, X, XP = r'$a$', r'$x$', r"$x^{\prime}$"
+text(ax, 2, 64, 'règle', 'sujet', 's', ha='left')
+box(ax, 24, 59, 11, 10, 'sujet', label=X, size='s'); box(ax, 36.5, 59, 11, 10, 'sujet', label=XP, size='s')
+text(ax, 54, 64, '=', 'sujet', 'l'); box(ax, 60, 59, 18, 10, 'sujet', label='mot vide', size='s')
+text(ax, 2, 40, 'on colle', 'varie', 's', ha='left')
+box(ax, 24, 35, 11, 10, 'fixe', label=A, size='s'); box(ax, 36.5, 35, 11, 10, 'sujet', label=X, size='s'); box(ax, 49, 35, 11, 10, 'sujet', label=XP, size='s')
+text(ax, 66, 40, '=', 'varie', 'l'); box(ax, 72, 35, 11, 10, 'fixe', label=A, size='s')
+arrow(ax, (50, 58), (50, 46.5), 'varie')
+text(ax, 2, 14, 'quotient', 'resultat', 's', ha='left')
+box(ax, 24, 4, 60, 20, 'resultat', fill=False, dash=True)
+box(ax, 28, 8, 30, 10, 'resultat', label=r"$a\,x\,x^{\prime}$", size='s'); box(ax, 66, 8, 14, 10, 'resultat', label=A, size='s')
+text(ax, 62, 13, '=', 'resultat', 'l')
+arrow(ax, (50, 34), (50, 25), 'varie')
+save(fig, '49-044')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,24,61,'lettres','sujet','m'); text(ax,62,61,'règles','autre','m')
+text(ax,4,52,'groupe du carré','encre','s',ha='left')
+for i,s in enumerate([r'$x$',r'$y$']): disc(ax,16+14*i,41,4,'sujet',label=s)
+for i,s in enumerate([r'$x^4$',r'$y^2$',r'$xyxy$']): box(ax,40+15*i,35,14,11,'autre',label=s,size='s')
+text(ax,4,28,'groupe libre à 2 lettres','encre','s',ha='left')
+for i,s in enumerate([r'$x$',r'$y$']): disc(ax,16+14*i,17,4,'sujet',label=s)
+box(ax,40,11,44,11,'fixe',dash=True,label='aucune règle')
+text(ax,44,3,'deux listes finies : présentation finie','resultat','s')
+save(fig,'49-075')

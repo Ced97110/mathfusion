@@ -1,0 +1,178 @@
+[
+ {
+  "code": "49-112",
+  "a_dire": "Le quart de tour fait parcourir les 4 sommets à A ; l'axe AC laisse A en place.",
+  "legende_titre": "Un sommet, son parcours et son axe",
+  "lecture": [
+   "Le cercle bleu plein est le sommet A ; les trois autres cercles bleus sont les sommets où il arrive.",
+   "Les flèches orange font passer A par B, C, D, puis de nouveau A : c'est l'orbite.",
+   "La droite grise en tirets passe par A et C : ces deux sommets restent en place."
+  ],
+  "a_voir": "Les flèches orange donnent l'orbite de A, la droite grise donne ce qui laisse A en place."
+ },
+ {
+  "code": "49-113",
+  "a_dire": "Chaque symétrie du carré déplace les sommets d'une façon différente ; seul le neutre les laisse tous en place.",
+  "legende_titre": "Les sommets reconnaissent la symétrie",
+  "lecture": [
+   "Chaque ligne est une symétrie du carré, à gauche, avec l'image de A, B, C, D à droite.",
+   "La ligne verte est le neutre : les quatre sommets restent en place.",
+   "Les lignes bleues sont d'autres symétries : leurs images sont différentes les unes des autres."
+  ],
+  "a_voir": "Aucune autre ligne ne reste en ABCD, donc les sommets suffisent à repérer la symétrie."
+ },
+ {
+  "code": "49-114",
+  "a_dire": "Le groupe agit sur lui-même : multiplier à gauche par r envoie chaque élément sur un autre élément du groupe.",
+  "legende_titre": "Un groupe qui se déplace lui-même",
+  "lecture": [
+   "Les quatre cercles bleus sont les éléments du groupe : 1, r, r² et r³.",
+   "Chaque flèche orange est la multiplication à gauche par r.",
+   "La phrase en bas donne deux produits : r fois r² égale r³, et r fois 1 égale r."
+  ],
+  "a_voir": "L'ensemble déplacé est le groupe lui-même, et l'action est le produit."
+ },
+ {
+  "code": "49-115",
+  "a_dire": "La conjugaison par une réflexion déplace le quart de tour mais laisse le demi-tour en place.",
+  "legende_titre": "Conjuguer par une réflexion",
+  "lecture": [
+   "La ligne du haut part de r, boîte bleue, et arrive à r³, boîte orange : l'élément est déplacé.",
+   "La ligne du bas part de r² et arrive à r², boîte verte : l'élément reste en place.",
+   "Chaque flèche porte le calcul s x s⁻¹."
+  ],
+  "a_voir": "Un même geste, la conjugaison par s, déplace un élément et en laisse un autre en place."
+ },
+ {
+  "code": "49-116",
+  "a_dire": "L'écriture ᵍx est une abréviation de g x g⁻¹ : g, puis x, puis l'inverse de g.",
+  "legende_titre": "Trois morceaux, une écriture courte",
+  "lecture": [
+   "Les boîtes orange sont g et l'inverse de g ; la boîte bleue est x.",
+   "La flèche noire mène à l'écriture courte en vert.",
+   "Le petit g en haut à gauche veut dire « conjugué par g »."
+  ],
+  "a_voir": "Les trois morceaux g, x, g⁻¹ sont résumés par un seul signe."
+ },
+ {
+  "code": "49-117",
+  "a_dire": "La preuve passe par l'inverse d'un produit, écrit dans l'ordre contraire, et regroupe en deux conjugaisons.",
+  "legende_titre": "Conjuguer par un produit en deux temps",
+  "lecture": [
+   "La boîte bleue du haut est le départ : conjugué de x par g₁g₂.",
+   "La boîte orange du milieu est l'étape qui décide : l'inverse du produit, dans l'ordre contraire.",
+   "La boîte verte du bas est l'arrivée : le conjugué par g₁ du conjugué par g₂."
+  ],
+  "a_voir": "L'étape orange change l'ordre des inverses, et c'est elle qui permet de regrouper."
+ },
+ {
+  "code": "49-118",
+  "a_dire": "Le centre est l'ensemble des éléments qui commutent avec tous ; commuter avec un seul élément donne un ensemble plus grand.",
+  "legende_titre": "Trois ensembles emboîtés",
+  "lecture": [
+   "Le grand rectangle gris contient les 8 éléments du groupe du carré.",
+   "Le rectangle violet contient les 4 éléments qui commutent avec le quart de tour r.",
+   "Le rectangle vert contient les 2 éléments qui commutent avec tous : le centre."
+  ],
+  "a_voir": "Le centre, en vert, est plus petit que l'ensemble des éléments qui commutent avec un seul élément."
+ },
+ {
+  "code": "49-119",
+  "a_dire": "Le signe C désigne le centre : l'ensemble des éléments qui commutent avec tous les éléments du groupe.",
+  "legende_titre": "Un signe pour un ensemble",
+  "lecture": [
+   "La boîte bleue est le signe C.",
+   "La flèche mène à la boîte verte, qui contient les éléments désignés.",
+   "Pour le groupe du carré, ce sont deux éléments : 1 et r²."
+  ],
+  "a_voir": "Le signe C remplace l'ensemble de deux éléments, 1 et r²."
+ },
+ {
+  "code": "49-120",
+  "a_dire": "L'action par conjugaison est effective exactement quand le centre est réduit au neutre.",
+  "legende_titre": "Noyau, centre et effectivité",
+  "lecture": [
+   "Les trois boîtes du haut sont égales : le noyau, les éléments qui commutent avec tous, et le centre.",
+   "La boîte verte montre un centre réduit à 1 : l'action est effective.",
+   "La boîte rouge montre un centre avec 1 et r² : l'action n'est pas effective."
+  ],
+  "a_voir": "Un élément en plus du neutre dans le centre empêche l'action d'être effective."
+ },
+ {
+  "code": "49-121",
+  "a_dire": "Le groupe agit sur les classes latérales : multiplier à gauche par r envoie chaque classe sur la suivante.",
+  "legende_titre": "Le quart de tour fait passer les classes",
+  "lecture": [
+   "Chaque boîte bleue est une classe, avec ses 2 éléments dessinés.",
+   "Les flèches orange envoient chaque classe sur la suivante.",
+   "La grande flèche courbe ramène la dernière classe à la première."
+  ],
+  "a_voir": "Quatre fois de suite ramène à la première classe."
+ },
+ {
+  "code": "49-122",
+  "a_dire": "G/H désigne seulement l'ensemble des classes quand H n'est pas normal ; les classes ne se multiplient pas.",
+  "legende_titre": "Deux sens pour la même écriture",
+  "lecture": [
+   "À gauche, H est normal : deux classes se multiplient et donnent une classe, en vert.",
+   "À droite, H n'est pas normal : il y a 4 classes, boîtes bleues.",
+   "Le texte rouge dit qu'il n'y a pas de produit entre ces classes."
+  ],
+  "a_voir": "À droite, il reste un ensemble de 4 classes, sans produit."
+ },
+ {
+  "code": "49-123",
+  "a_dire": "Le groupe agit aussi sur les parties de l'ensemble ; une rotation garde le nombre de sommets de chaque partie.",
+  "legende_titre": "Les 16 parties rangées par taille",
+  "lecture": [
+   "Chaque cercle bleu est une partie des 4 sommets.",
+   "Chaque colonne regroupe les parties qui ont le même nombre de sommets : 0, 1, 2, 3 ou 4.",
+   "La flèche orange envoie une partie d'un sommet sur une autre partie d'un sommet."
+  ],
+  "a_voir": "La flèche reste dans sa colonne : la taille de la partie ne change pas."
+ },
+ {
+  "code": "49-124",
+  "a_dire": "Une coloration correspond à la partie des sommets orange, et inversement.",
+  "legende_titre": "Une coloration est une partie",
+  "lecture": [
+   "À gauche, deux carrés colorés : les cercles orange sont les sommets orange.",
+   "À droite, la partie qui correspond : {A} pour un sommet orange, la partie vide pour aucun.",
+   "Les doubles flèches disent que chaque coloration a sa partie et chaque partie sa coloration."
+  ],
+  "a_voir": "Compter les colorations revient à compter les parties : 16."
+ },
+ {
+  "code": "49-125",
+  "a_dire": "Une matrice agit sur le plan : le quart de tour envoie (1, 0) sur (0, 1), puis (0, 1) sur (−1, 0).",
+  "legende_titre": "Une matrice déplace les points du plan",
+  "lecture": [
+   "Les deux droites grises sont les axes du plan.",
+   "Les cercles bleus sont les points (1, 0), (0, 1) et (−1, 0).",
+   "Les flèches orange montrent où la matrice envoie les points."
+  ],
+  "a_voir": "L'ensemble déplacé est le plan, et le groupe est fait de matrices."
+ },
+ {
+  "code": "49-126",
+  "a_dire": "Le signe GL₂(ℝ) se lit en trois morceaux : matrices inversibles, à 2 lignes et 2 colonnes, à nombres réels.",
+  "legende_titre": "Un signe, trois informations",
+  "lecture": [
+   "La boîte bleue GL dit que les matrices sont inversibles, avec le déterminant non nul.",
+   "La boîte orange 2 dit la taille : le carré de 4 cases a 2 lignes et 2 colonnes.",
+   "La boîte violette (ℝ) dit la nature des nombres : la droite graduée des réels."
+  ],
+  "a_voir": "Chaque morceau du signe porte une information différente."
+ },
+ {
+  "code": "49-127",
+  "a_dire": "Le signe ℝ² désigne tous les points du plan, chacun repéré par deux nombres.",
+  "legende_titre": "Deux nombres pour un point",
+  "lecture": [
+   "Le rectangle gris est le plan.",
+   "Le cercle bleu est le point (3, 5).",
+   "Les tirets orange donnent 3 vers la droite, puis 5 vers le haut."
+  ],
+  "a_voir": "Le point (3, 5) est repéré par deux déplacements."
+ }
+]

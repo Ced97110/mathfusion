@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(50)
+text(ax,44,45,'présentation de G','sujet','m')
+text(ax,6,28,'G =','encre','l'); text(ax,16,28,r'$\langle$','encre','xl'); text(ax,82,28,r'$\rangle$','encre','xl')
+box(ax,20,21,16,14,'sujet',label=r'$x,\ y$')
+line(ax,[(39,19),(39,37)],'encre',lw=1.2)
+box(ax,42,21,36,14,'autre',label=r'$x^4,\ y^2,\ xyxy$')
+arrow(ax,(28,13),(28,20),'sujet'); text(ax,28,9,'lettres','sujet','s')
+arrow(ax,(60,13),(60,20),'autre'); text(ax,60,9,'règles (relations)','autre','s')
+save(fig,'49-073')

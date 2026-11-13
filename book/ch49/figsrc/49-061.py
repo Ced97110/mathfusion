@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,3,46,18,12,'sujet',label=r'$\{1\}$')
+arrow(ax,(21,52),(33,52),'varie'); text(ax,27,56.5,'engendre','varie','s')
+arrow(ax,(33,52),(84,52),'fixe',both=True)
+for k in range(7): disc(ax,38+6.5*k,52,1.8,'resultat')
+text(ax,58,44,r'$\mathbb{Z}$ : infinité d’éléments','resultat','s')
+box(ax,3,16,18,12,'sujet',label='2 gestes')
+arrow(ax,(21,22),(34,22),'varie'); text(ax,27.5,26.5,'engendrent','varie','s')
+for k in range(8): disc(ax,38+6.2*k,22,1.8,'resultat')
+text(ax,60,14,'carré : 8 éléments','resultat','s')
+text(ax,44,5,'liste finie : type fini','sujet','m')
+save(fig,'49-061')

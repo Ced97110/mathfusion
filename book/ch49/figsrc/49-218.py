@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+box(ax, 4, 14, 36, 26, 'sujet', dash=True)
+text(ax, 22, 45, r'$O$ : une orbite', 'sujet', 'm')
+disc(ax, 14, 26, 4, 'sujet', label='1')
+disc(ax, 30, 26, 4, 'sujet', label='3')
+box(ax, 46, 14, 36, 26, 'fixe', dash=True)
+text(ax, 64, 45, 'autre orbite', 'fixe', 'm')
+disc(ax, 56, 26, 4, 'fixe', label='2')
+disc(ax, 72, 26, 4, 'fixe', label='5')
+text(ax, 22, 8, 'points atteints depuis 1', 'sujet', 's')
+text(ax, 64, 8, r'$O$ peut être celle-ci', 'fixe', 's')
+save(fig, '49-218')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, 'deux « un » qui ne changent rien', 'encre', 's')
+box(ax, 3, 28, 40, 18, 'autre', fill=False)
+text(ax, 23, 42.5, 'le nombre un', 'autre', 's')
+text(ax, 23, 33.5, r'$1\times n=n$', 'autre', 'm')
+box(ax, 47, 28, 38, 18, 'sujet', fill=False)
+text(ax, 66, 42.5, 'le mot sans lettre', 'sujet', 's')
+text(ax, 66, 33.5, r'$1$ ← aucune lettre', 'sujet', 's')
+box(ax, 8, 7, 9, 10, 'sujet', label=r'$x$')
+box(ax, 20, 7, 9, 10, 'sujet', fill=False, dash=True, label=r'$1$')
+arrow(ax, (34, 12), (44, 12), 'resultat')
+box(ax, 49, 7, 9, 10, 'sujet', label=r'$x$')
+text(ax, 72, 12, 'même mot', 'resultat', 's')
+arrow(ax, (66, 27.5), (66, 18.5), 'sujet') if False else None
+save(fig, '49-024')

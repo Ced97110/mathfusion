@@ -1,0 +1,174 @@
+[
+ {
+  "code": "49-096",
+  "a_dire": "Si 1 ne revient pas en 1 après g puis g, la règle n'est pas une action.",
+  "legende_titre": "Une règle qui rate la condition",
+  "lecture": [
+   "Les points 1, 2, 3 sont reliés par les flèches orange : g envoie 1 sur 2, puis 2 sur 3.",
+   "La boîte verte dit ce qu'on attend d'un neutre : 1 reste en 1.",
+   "La boîte rouge dit ce qu'on obtient : le point 3."
+  ],
+  "a_voir": "Le résultat obtenu (3) diffère du résultat attendu (1) : agir par un produit n'est plus agir deux fois de suite."
+ },
+ {
+  "code": "49-097",
+  "a_dire": "Dans g₁g₂x, g₂ est le plus près de x et agit d'abord ; l'ordre d'écriture se lit à l'envers de l'ordre d'action.",
+  "legende_titre": "Quel geste agit d'abord ?",
+  "lecture": [
+   "Chaque ligne suit le coin 1 à travers deux gestes.",
+   "Les flèches orange sont le quart de tour, les flèches violettes la réflexion.",
+   "Les disques verts sont les points d'arrivée : 4 sur la première ligne, 2 sur la seconde."
+  ],
+  "a_voir": "Les deux ordres donnent deux points d'arrivée différents."
+ },
+ {
+  "code": "49-098",
+  "a_dire": "G × S est l'ensemble de tous les couples (g, x), avec g dans G et x dans S.",
+  "legende_titre": "Tous les couples en un signe",
+  "lecture": [
+   "Les 4 cases bleues à gauche sont les 4 rotations de G.",
+   "Les 16 cases violettes en haut sont les 16 colorations de S.",
+   "Chaque case grise est un couple ; la case orange en est un."
+  ],
+  "a_voir": "Il y a 4 fois 16, soit 64 couples."
+ },
+ {
+  "code": "49-099",
+  "a_dire": "1x = x se lit : le neutre appliqué à x donne x.",
+  "legende_titre": "Que fait le neutre ?",
+  "lecture": [
+   "La rangée du haut montre les quatre points x.",
+   "Chaque flèche orange est l'action du neutre.",
+   "La rangée verte du bas montre les points obtenus : ce sont les mêmes."
+  ],
+  "a_voir": "Chaque point arrive sur lui-même."
+ },
+ {
+  "code": "49-100",
+  "a_dire": "Agir par le produit g₁g₂, c'est agir par g₂ puis par g₁.",
+  "legende_titre": "Un produit, deux chemins",
+  "lecture": [
+   "L'arc bleu est l'action du produit : un demi-tour, de 1 à 3.",
+   "Les deux flèches orange sont deux quarts de tour de suite.",
+   "Le disque vert est le point d'arrivée, le même sur les deux chemins."
+  ],
+  "a_voir": "Les deux chemins finissent au même point."
+ },
+ {
+  "code": "49-101",
+  "a_dire": "T(g) est la liste des flèches x ↦ gx que g trace sur les points de S.",
+  "legende_titre": "La liste des flèches d'un geste",
+  "lecture": [
+   "Les quatre disques gris sont les sommets 1, 2, 3, 4 de S.",
+   "Les quatre flèches bleues forment T(g) : 1 sur 2, 2 sur 3, 3 sur 4, 4 sur 1."
+  ],
+  "a_voir": "T(g) est cet ensemble de flèches, de S dans S."
+ },
+ {
+  "code": "49-102",
+  "a_dire": "T(g) est l'application de S dans S qui envoie chaque x sur gx : l'effet de g seul.",
+  "legende_titre": "Nommer l'effet d'un élément",
+  "lecture": [
+   "La boîte bleue à gauche est l'élément g.",
+   "La flèche orange T mène à son effet sur les points.",
+   "Les flèches bleues envoient chaque x sur gx."
+  ],
+  "a_voir": "Chaque point de droite reçoit exactement une flèche."
+ },
+ {
+  "code": "49-103",
+  "a_dire": "T envoie un produit sur l'enchaînement des effets, et le neutre sur l'effet qui ne bouge rien.",
+  "legende_titre": "Le produit devient un enchaînement",
+  "lecture": [
+   "La rangée orange donne les images de 1, 2, 3, 4 par T(g₁)∘T(g₂).",
+   "La rangée bleue donne les images par T(g₁g₂).",
+   "Le signe vert = relie deux rangées identiques."
+  ],
+  "a_voir": "Les deux rangées sont les mêmes ; T(1) laisse chaque point en place."
+ },
+ {
+  "code": "49-104",
+  "a_dire": "Chaque T(g) peut être défait par T(g⁻¹), donc c'est une bijection.",
+  "legende_titre": "T(g) se défait",
+  "lecture": [
+   "Sur chaque ligne, la flèche orange est T(g).",
+   "La flèche violette est T(g⁻¹).",
+   "Le disque vert à droite est le point de départ retrouvé."
+  ],
+  "a_voir": "Les deux flèches ensemble ramènent chaque point à sa place."
+ },
+ {
+  "code": "49-105",
+  "a_dire": "Sym S est le groupe de toutes les bijections de S.",
+  "legende_titre": "Toutes les bijections réunies",
+  "lecture": [
+   "Le grand cadre bleu est Sym S.",
+   "Chaque petite boîte donne les images de 1, 2, 3 par une bijection.",
+   "La boîte verte est la bijection qui ne déplace rien."
+  ],
+  "a_voir": "Pour trois points, il y a 6 boîtes."
+ },
+ {
+  "code": "49-106",
+  "a_dire": "T : G → Sym S associe à chaque élément de G une bijection de S et respecte les produits.",
+  "legende_titre": "Du groupe vers les bijections",
+  "lecture": [
+   "Le cadre bleu est le groupe G.",
+   "Le cadre violet est le groupe Sym S.",
+   "Chaque flèche orange associe un élément à sa bijection."
+  ],
+  "a_voir": "La ligne verte dit que le produit devient une composition."
+ },
+ {
+  "code": "49-107",
+  "a_dire": "Pour que les T(g) soient des bijections, il faut que G soit un groupe : sans inverses, l'effet de 1 n'est pas une bijection.",
+  "legende_titre": "Quand les bijections manquent",
+  "lecture": [
+   "La droite graduée montre les nombres 0 à 5.",
+   "Les arcs orange sont l'effet du nombre 1 : chaque nombre va sur le suivant.",
+   "La boîte rouge montre que 0 ne reçoit aucune flèche."
+  ],
+  "a_voir": "L'effet de 1 n'est pas une bijection."
+ },
+ {
+  "code": "49-108",
+  "a_dire": "Tout homomorphisme T de G dans Sym S donne une action par gx = T(g)x.",
+  "legende_titre": "Un homomorphisme donne une action",
+  "lecture": [
+   "La boîte bleue est l'élément g.",
+   "La flèche orange T mène à la bijection qui échange 1 et 2 et laisse 3.",
+   "La ligne verte pose gx = T(g)x."
+  ],
+  "a_voir": "g agit sur un point comme la bijection T(g)."
+ },
+ {
+  "code": "49-109",
+  "a_dire": "Pour décrire toute action, le groupe d'arrivée doit être celui de toutes les bijections, pas seulement celui des rotations.",
+  "legende_titre": "Pourquoi toutes les bijections",
+  "lecture": [
+   "À gauche, le carré avec la réflexion : la flèche orange échange 2 et 4, le trait gris pointillé laisse 1 et 3.",
+   "À droite, les quatre rotations et ce qu'elles font aux points 1 et 2, en rouge."
+  ],
+  "a_voir": "Aucune rotation ne fait 1↦1 et 2↦4."
+ },
+ {
+  "code": "49-110",
+  "a_dire": "Le noyau de l'action est l'ensemble des éléments qui ne bougent aucun point.",
+  "legende_titre": "Ce que l'action ne voit pas",
+  "lecture": [
+   "Le cadre bleu pointillé réunit les 4 éléments qui laissent les deux diagonales à leur place.",
+   "Le cadre orange pointillé réunit les 4 éléments qui échangent les diagonales."
+  ],
+  "a_voir": "Le noyau compte 4 éléments : le neutre, le demi-tour et deux réflexions."
+ },
+ {
+  "code": "49-111",
+  "a_dire": "Une action est effective quand deux éléments différents agissent différemment.",
+  "legende_titre": "Deux actions du même carré",
+  "lecture": [
+   "À gauche, sur les 4 sommets, les flèches orange montrent que le demi-tour déplace les sommets.",
+   "À droite, sur les 2 diagonales, le demi-tour laisse chacune en place."
+  ],
+  "a_voir": "Sur les sommets, le demi-tour se distingue du neutre ; sur les diagonales, non."
+ }
+]

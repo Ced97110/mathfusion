@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(86)
+text(ax,3,80,'ce qu’il faut montrer','resultat','s',ha='left',weight='bold')
+box(ax,6,62,14,9,'sujet',label=r'$x_1$'); box(ax,6,48,14,9,'autre',label=r'$x_2$')
+box(ax,62,62,20,9,'resultat',label=r'$\bar{x}_1$'); box(ax,62,48,20,9,'resultat',label=r'$\bar{x}_2$')
+arrow(ax,(20,66.5),(62,66.5),'fixe'); arrow(ax,(20,52.5),(62,52.5),'fixe')
+text(ax,41,71,'quotient','fixe','s')
+text(ax,3,40,'ce qu’on pourrait craindre','limite','s',ha='left',weight='bold')
+box(ax,6,24,14,9,'sujet',label=r'$x_1$'); box(ax,6,10,14,9,'autre',label=r'$x_2$')
+box(ax,60,12,24,16,'limite',dash=True,label=r'$\bar{x}_1=\bar{x}_2$')
+arrow(ax,(20,28.5),(60,23),'limite'); arrow(ax,(20,14.5),(60,17),'limite')
+save(fig,'49-056')

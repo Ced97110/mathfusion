@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,26,82,44,'sujet'); text(ax,44,65,'conséquences obligatoires de $x^4 = 1$','sujet','s')
+box(ax,6,34,16,14,'varie',label=r'$x^4$',size='l')
+box(ax,36,50,20,10,'sujet',label=r'$x^4x^4$',size='s')
+box(ax,60,32,24,12,'sujet',label=r'$yx^4y^{-1}$',size='s')
+arrow(ax,(22,45),(35,53),'varie'); text(ax,22,57,'produit','varie','s')
+arrow(ax,(22,38),(59,38),'varie'); text(ax,42,41,'conjugué par $y$','varie','s')
+box(ax,20,4,48,12,'limite',label=r'$x = 1$ : non imposé',size='m')
+text(ax,44,21,'rien ne l’oblige','limite','s')
+save(fig,'49-077')

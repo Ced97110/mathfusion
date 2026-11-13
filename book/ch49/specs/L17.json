@@ -1,0 +1,185 @@
+[
+ {
+  "code": "49-256",
+  "a_dire": "Pour compter, on additionne 4 puissance le nombre de cycles de chacune des 8 symétries du carré, puis on divise par 8 : 440 / 8 = 55.",
+  "legende_titre": "Huit symétries, huit calculs, un total",
+  "lecture": [
+   "Les huit carrés sont les huit symétries du carré.",
+   "Un rond vert est un sommet qui ne bouge pas ; un rond orange est un sommet qui change de place, relié aux sommets de son cycle.",
+   "Sous chaque carré, 4 puissance le nombre de cycles.",
+   "En bas, le total 440 divisé par 8 donne 55."
+  ],
+  "a_voir": "Chaque symétrie donne son nombre 4^c, et la somme 440 divisée par 8 donne 55."
+ },
+ {
+  "code": "49-257",
+  "a_dire": "Le groupe de 4 transformations laisse 5, 3, 1 et 3 points en place ; 12 divisé par 4 donne 3 orbites, vérifiées à la main.",
+  "legende_titre": "Un contrôle à la main avec cinq points",
+  "lecture": [
+   "Chaque ligne est une des 4 transformations.",
+   "Un rond vert reste en place, un rond orange est échangé avec son voisin par la flèche.",
+   "À droite, le nombre de points qui restent en place.",
+   "En bas, les ronds violets sont regroupés en 3 cadres : les 3 orbites."
+  ],
+  "a_voir": "Le total 5 + 3 + 1 + 3 = 12, divisé par 4, donne 3, comme les 3 cadres du bas."
+ },
+ {
+  "code": "49-258",
+  "a_dire": "Un circuit à n entrées reçoit un 0 ou un 1 sur chaque fil d’entrée et rend un seul 0 ou 1.",
+  "legende_titre": "Des fils qui entrent, un seul chiffre qui sort",
+  "lecture": [
+   "Les trois ronds orange à gauche sont les entrées, ici 1, 0 et 1.",
+   "Le grand rectangle bleu est le circuit.",
+   "La flèche verte mène à la sortie : un seul chiffre, 0 ou 1."
+  ],
+  "a_voir": "Plusieurs fils d’entrée, chacun avec un 0 ou un 1, et une seule sortie."
+ },
+ {
+  "code": "49-259",
+  "a_dire": "Une fonction booléenne est ce que le circuit rend pour chaque suite de 0 et de 1 ; deux circuits différents peuvent avoir la même.",
+  "legende_titre": "Ce que rendent deux appareils différents",
+  "lecture": [
+   "Le rectangle bleu et le rectangle violet sont deux circuits construits différemment : ils n’ont pas les mêmes petits blocs.",
+   "Les deux flèches arrivent au même rectangle vert, la fonction booléenne.",
+   "Elle dit seulement ce que rend le circuit pour une suite de n chiffres."
+  ],
+  "a_voir": "Deux appareils différents, une seule fonction : la fonction ne décrit que ce qui sort."
+ },
+ {
+  "code": "49-260",
+  "a_dire": "Avec 3 fils, il y a 8 suites et 2 choix de sortie par suite : 2 puissance 8 vaut 256 fonctions ; avec 4 fils, 2 puissance 16 vaut 65 536.",
+  "legende_titre": "Huit suites, deux choix chacune",
+  "lecture": [
+   "Chaque colonne est une suite d’entrée.",
+   "Dans chaque colonne, le rond du haut est la sortie 1 et celui du bas la sortie 0 ; le rond orange est le choix de cette fonction.",
+   "L’accolade rappelle le produit de 8 facteurs égaux à 2."
+  ],
+  "a_voir": "Un choix entre 2 sorties par colonne donne 2 puissance 8, soit 256 fonctions."
+ },
+ {
+  "code": "49-261",
+  "a_dire": "Les fonctions f = a ET b et g = b ET c sont un même circuit ET dont on a changé les fils branchés.",
+  "legende_titre": "Un même circuit ET, deux branchements",
+  "lecture": [
+   "Le rectangle bleu ET est le même dans les deux dessins.",
+   "En haut, les fils a et b y entrent et le fil c reste libre.",
+   "En bas, en orange, les fils b et c y entrent et le fil a reste libre.",
+   "La croix rouge marque un fil non branché."
+  ],
+  "a_voir": "Seuls les fils branchés changent, pas le circuit ET."
+ },
+ {
+  "code": "49-262",
+  "a_dire": "Deux fonctions sont équivalentes quand on passe de l’une à l’autre en permutant les fils ; on regroupe les équivalentes et on garde un modèle par groupe.",
+  "legende_titre": "Regrouper les fonctions qui se rebranchent",
+  "lecture": [
+   "Chaque point est une fonction.",
+   "Dans un cadre, les points sont reliés par des flèches orange : on passe de l’un à l’autre en permutant les fils.",
+   "La croix rouge entre deux cadres montre qu’on ne passe pas d’un groupe à l’autre.",
+   "Le point vert est le modèle du groupe."
+  ],
+  "a_voir": "Un cadre est un groupe de fonctions équivalentes, avec un seul modèle vert."
+ },
+ {
+  "code": "49-263",
+  "a_dire": "Une fonction booléenne à trois entrées colorie les 8 entrées avec deux couleurs, et les permutations des trois fils, le groupe S3, déplacent ces colorations.",
+  "legende_titre": "Une fonction vue comme des cases coloriées",
+  "lecture": [
+   "Les huit cases sont les entrées de 000 à 111.",
+   "Une case bleue vaut 1, une case grise vaut 0.",
+   "La ligne f est colorée ; la ligne g montre la coloration après permutation des fils, avec les flèches orange qui déplacent les cases bleues."
+  ],
+  "a_voir": "Une fonction est une coloration des 8 entrées, et permuter les fils déplace les couleurs."
+ },
+ {
+  "code": "49-264",
+  "a_dire": "Le groupe S3 déplace les entrées, donc les colorations ; les circuits qui se rebranchent l’un en l’autre forment une orbite, qui compte pour un seul circuit.",
+  "legende_titre": "Trois circuits rebranchés forment une orbite",
+  "lecture": [
+   "Les trois rectangles bleus sont trois circuits ET reliés par les flèches orange : chaque rebranchement mène au suivant.",
+   "Le grand cadre bleu entoure l’orbite, qui compte pour un circuit.",
+   "Le cadre violet, à droite, est une autre orbite."
+  ],
+  "a_voir": "Les circuits d’un même cadre sont le même circuit rebranché : un cadre, une orbite."
+ },
+ {
+  "code": "49-265",
+  "a_dire": "L’échange des fils a et b laisse 4 entrées en place et échange 2 paires : 6 cycles, donc 2 puissance 6, soit 64 fonctions fixes.",
+  "legende_titre": "L’échange de deux fils sur les huit entrées",
+  "lecture": [
+   "Les huit entrées sont rangées par nombre de 1.",
+   "Les cases vertes ne bougent pas : 000, 001, 110 et 111.",
+   "Les cases orange sont échangées par les flèches : 010 avec 100, et 011 avec 101.",
+   "En bas, 4 + 2 fait 6 cycles."
+  ],
+  "a_voir": "4 entrées fixes et 2 paires échangées font 6 cycles, donc 2 puissance 6 vaut 64."
+ },
+ {
+  "code": "49-266",
+  "a_dire": "Pour trois entrées, on additionne les fonctions fixes des 6 permutations, 256 + 3 × 64 + 2 × 16 = 480, puis on divise par 6 : 80 circuits.",
+  "legende_titre": "Six permutations, un total, 80 circuits",
+  "lecture": [
+   "Chaque barre est une permutation des fils et sa hauteur est son nombre de fonctions fixes.",
+   "La barre grise est le neutre, les trois barres orange sont les échanges, les deux barres violettes sont les tours.",
+   "En bas, la somme 480 divisée par 6 donne 80."
+  ],
+  "a_voir": "La somme des barres vaut 480 ; divisée par 6, elle donne 80 circuits."
+ },
+ {
+  "code": "49-267",
+  "a_dire": "L’identité ne déplace aucune des 8 entrées : 8 cycles d’une entrée, donc 2 puissance 8, soit 256 fonctions fixes.",
+  "legende_titre": "Huit entrées qui restent chacune en place",
+  "lecture": [
+   "Chaque rond vert est une entrée, de 000 à 111.",
+   "La petite flèche orange au-dessus d’un rond revient sur le même rond : l’entrée reste en place.",
+   "L’accolade compte 8 cycles d’une seule entrée."
+  ],
+  "a_voir": "8 cycles d’une entrée, avec 2 sorties possibles par cycle, font 2 puissance 8, soit 256."
+ },
+ {
+  "code": "49-268",
+  "a_dire": "L’échange de a et b a 6 cycles : 4 entrées seules et 2 paires ; 2 puissance 6 donne 64 fonctions fixes, et les trois échanges donnent chacun 64.",
+  "legende_titre": "Six cycles, un facteur 2 chacun",
+  "lecture": [
+   "Les quatre cases vertes sont les entrées qui restent seules.",
+   "Les deux cases orange contiennent chacune une paire d’entrées échangées.",
+   "Au-dessus de chaque case, le facteur 2 : une sortie à choisir par cycle.",
+   "En bas, 2 puissance 6 donne 64."
+  ],
+  "a_voir": "6 cases, donc 6 facteurs 2 : 64, et c’est la même chose pour les trois échanges."
+ },
+ {
+  "code": "49-269",
+  "a_dire": "Le tour des trois fils laisse 000 et 111 en place et fait tourner deux groupes de trois entrées : 4 cycles, donc 2 puissance 4, soit 16 fonctions fixes.",
+  "legende_titre": "Le tour : deux fixes et deux cycles de trois",
+  "lecture": [
+   "Les deux ronds verts, 000 et 111, restent en place.",
+   "Dans chaque triangle orange, trois entrées tournent dans le sens des flèches.",
+   "En bas, le décompte : 4 cycles."
+  ],
+  "a_voir": "Un cycle de 3 entrées ne donne qu’un choix, d’où 4 cycles et 16 fonctions fixes."
+ },
+ {
+  "code": "49-270",
+  "a_dire": "Pour trouver k, on compte les cycles de chacune des 6 permutations, on calcule 2 puissance ce nombre, on additionne (480) et on divise par 6 : k = 80.",
+  "legende_titre": "De six nombres de cycles à k = 80",
+  "lecture": [
+   "La ligne du haut donne le nombre de cycles de chaque permutation : 8, 6, 6, 6, 4 et 4.",
+   "Chaque flèche mène à 2 puissance ce nombre.",
+   "L’accolade additionne les six valeurs : 480.",
+   "En bas, 480 divisé par 6 donne k = 80."
+  ],
+  "a_voir": "Cycles, puis puissances de 2, puis somme 480 divisée par 6 : k vaut 80."
+ },
+ {
+  "code": "49-271",
+  "a_dire": "Avec deux entrées, le neutre laisse 16 fonctions et l’échange 8 ; la somme 24 divisée par 2 donne 12.",
+  "legende_titre": "Le plus petit calcul : deux permutations",
+  "lecture": [
+   "La ligne du haut est le neutre : les 4 entrées restent en place, 4 cycles.",
+   "La ligne du bas est l’échange : 00 et 11 restent, 01 et 10 sont échangées par la flèche orange, 3 cycles.",
+   "En bas, la somme divisée par 2."
+  ],
+  "a_voir": "(16 + 8) divisé par 2 donne 12."
+ }
+]
