@@ -1,8 +1,14 @@
-<div class="pk">Chapitre 1</div>
-<h1>Qu’est-ce que le discret ?</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 1</div>
+<h1 class="ct">Qu’est-ce que le discret ?</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Le mot anglais <i>discrete</i> veut dire : « séparé, distinct, à part ». En français courant, « discret » veut surtout dire « qui ne se fait pas remarquer ». Ce n’est pas ce sens-là. En mathématiques, « discret » garde le sens anglais. Une chose discrète est faite d’éléments séparés les uns des autres. Les mathématiques discrètes étudient de tels objets.</p>
 <p>Ce premier chapitre répond à deux questions. Que veut dire « séparé » pour un ensemble de nombres ? Et quels problèmes rencontre-t-on quand on travaille avec des objets séparés ?</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 1 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Définir les mathématiques est déjà difficile</h3>
 <p>Qu’est-ce que les mathématiques ? L’étude des nombres ? En partie. Mais tu as aussi étudié des fonctions, des droites, des triangles. Dire « les mathématiques résolvent des problèmes » ne suffit pas : quels problèmes ? Ceux qui parlent de nombres, de fonctions, de triangles… La définition tourne en rond.</p>
 <p>Prends donc ta propre idée des mathématiques, et ajoute-lui le mot « discret ». Une partie des mathématiques parle d’objets séparés et distincts. Pour la reconnaître, compare deux ensembles de nombres.</p>
@@ -25,7 +31,8 @@
 <p>3. <b>Les deux coffres.</b> Dans une chambre funéraire, tu trouves deux coffres, A et B. Sur A est gravé : « Si ce coffre est vide, alors le message de l’autre coffre est vrai. » Sur B est gravé : « Ce coffre est rempli de trésor, ou l’autre coffre contient des scorpions mortels. » Tu sais qu’exactement un des deux messages est vrai. Que fais-tu ?</p>
 <p>4. <b>Les cinq villes.</b> Cinq villes veulent une route directe entre chaque paire de villes. Les routes peuvent être aussi longues et sinueuses qu’on veut. Mais deux routes ne doivent jamais se croiser. Ni tunnel ni pont. Est-ce possible ?</p>
 <p>Regarde la forme des réponses attendues. Un nombre entier de poignées de main. Un nombre entier de hot-dogs. Un choix entre deux coffres. Un oui ou un non. Aucune réponse n’est un nombre à virgule. Toutes sont des objets séparés.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 1 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vf" src="/discretes/img/c001/p0012_1.svg" alt="Sorties de f(x) = x2 : l&#x27;intervalle [0 ; + ∞[" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c001/p0012_2.svg" alt="aucun trou 0 1 2 3 4 5" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c001/p0012_3.svg" alt="Sorties de « nombre d&#x27;enfants » : {0, 1, 2, 3} 4 ? 0 1 2 3 4 5" style="--w:24.12" loading="lazy">
@@ -37,7 +44,8 @@
 <p><b>Fig.</b> <i><b>1.2 :</b> Regarde le point rouge à chaque étape. Il est le milieu du segment bleu. À l’étape suivante, le segment bleu devient la moitié gauche du précédent. Le segment raccourcit, mais il garde toujours une longueur, donc il a toujours un milieu. Le procédé ne s’arrête jamais.</i></p>
 <p>La figure 1.2 montre pourquoi le trait du haut n’a aucun trou. Le milieu de <span class="m">1</span> et <span class="m">2</span> est <span class="m">1,5</span>. Celui de <span class="m">1</span> et <span class="m">1,5</span> est <span class="m">1,25</span>. Puis <span class="m">1,125</span>, puis <span class="m">1,0625</span>. Aucune étape n’est la dernière : il y a une infinité de nombres entre <span class="m">1</span> et <span class="m">2</span>.</p>
 <p>Fais la même chose en bas, entre les points <span class="m">1</span> et <span class="m">2</span> de l’ensemble <span class="m">{0, 1, 2, 3}</span>. Le milieu <span class="m">1,5</span> n’est pas dans l’ensemble. Entre <span class="m">1</span> et <span class="m">2</span>, il n’y a aucun élément. C’est un trou.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 1 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c001/p0014_5.svg" alt="Définition : ensemble discret Un ensemble de nombres est discret si chacun de ses éléments est isolé. Un élément 𝑎 est isolé s’il existe une distance 𝑑 plus grande que 0 telle que l’intervalle ]𝑎 − 𝑑 ; 𝑎 + 𝑑[ ne contient aucun autre élément de l’ensemble que 𝑎. Plus largement, on appelle discret tout ensemble d’objets séparés et distincts : des personnes, des villes, des routes. Ces objets se comptent un par un : 1, 2, 3…" style="--w:24.19" loading="lazy">
 <p>La définition traduit la figure 1.1 : l’intervalle <span class="m">]𝑎 − 𝑑 ; 𝑎 + 𝑑[</span> est la zone rose autour du point <span class="m">𝑎</span>.</p>
 <img class="vf" src="/discretes/img/c001/p0015_6.svg" alt="" style="--w:24.19" loading="lazy">
@@ -76,7 +84,8 @@
 <img class="vf" src="/discretes/img/c001/p0020_27.svg" alt="" style="--w:24.12" loading="lazy">
 <p>Prends la distance <span class="m">𝑑 = 0,01</span>. Le nombre <span class="m">1/101</span>, environ <span class="m">0,0099</span>, est dans l’ensemble. Il est à moins de <span class="m">0,01</span> de <span class="m">0</span>. Prends <span class="m">𝑑 = 0,001</span> : le nombre <span class="m">1/1001</span> est encore dedans. Pour toute distance <span class="m">𝑑</span>, un nombre <span class="m">1/𝑛</span> assez loin dans la liste tombe dans la zone. Le point <span class="m">0</span> n’est pas isolé. Un seul point ajouté fait basculer l’ensemble. La figure 1.3 montre pourquoi : les zones libres des points <span class="m">1/𝑛</span> rétrécissent sans fin. Il n’y a pas de plus petite zone. C’est l’étape « prends la plus petite distance » qui échoue ici.</p>
 <img class="vf" src="/discretes/img/c001/p0020_28.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 1 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Les quatre thèmes de ce livre</h3>
 <p>Les mathématiques discrètes regroupent beaucoup de domaines. Ce livre en suit quatre :</p>
 <p class="li">la <b>combinatoire</b> : comment des objets se combinent, et surtout comment compter ces combinaisons ;</p>
@@ -134,7 +143,8 @@
 <p>Ils forment un tour fermé de <span class="m">5</span> routes (figure 1.8, à droite). Le long de ce tour, deux routes consécutives doivent changer de côté. Place A–C dedans. Alors B–D est dehors, C–E dedans, A–D dehors. B–E doit être du côté opposé à A–D, donc dedans. Mais B–E doit aussi être du côté opposé à A–C, donc dehors. Contradiction.</p>
 <p>La raison est une question de parité. Changer de côté <span class="m">5</span> fois en revenant au départ est impossible : après un nombre impair de changements, on est du côté opposé au départ. Les cinq villes ne peuvent pas être reliées sans croisement.</p>
 <p>Cette preuve n’utilise ni longueur ni angle. Seulement des objets séparés (les routes) et la parité de <span class="m">5</span>. C’est un raisonnement discret.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 1 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Les quatre problèmes annoncent le plan du livre.</p>
 <p><b>La logique d’abord.</b> Le problème des coffres demandait de savoir quand un « si… alors » est vrai. C’est l’objet du chapitre 2. Le chapitre 3 ajoute les mots « pour tout » et « il existe ». Le chapitre 4 en tire les méthodes de preuve. Tu y retrouveras le raisonnement par contradiction utilisé pour les cinq villes.</p>
 <h3>Les ensembles et les fonctions.</h3>
@@ -143,5 +153,7 @@
 <p><b>Les graphes.</b> Les poignées de main et les villes sont des graphes. Le chapitre 21 les définit. Le chapitre 23 prouve d’une autre manière que les cinq villes sont impossibles, avec la formule d’Euler.</p>
 <p><b>La théorie des nombres.</b> Les chapitres 19 et 20 étudient les entiers eux-mêmes : divisibilité, restes.</p>
 <p>Dans tous ces chapitres, les objets sont séparés. On peut les compter, les lister, raisonner au cas par cas. Dans le continu, la règle « entre deux nombres, une infinité » rend ces méthodes impossibles.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 1 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c001/p0032_43.svg" alt="À toi de chercher Les fractions sont les nombres 𝑝/𝑞, avec 𝑝 et 𝑞 entiers et 𝑞 non nul : 1/2, 3/4, −5/3… Le milieu de deux fractions est-il encore une fraction ? Si oui, l’ensemble des fractions est-il discret ? Pourtant, on peut ranger toutes les fractions positives dans une liste numérotée 1, 2, 3… (essaie : range-les selon la valeur de 𝑝 + 𝑞). Un ensemble qu’on peut lister sans rien oublier, mais qui n’est pas discret : relève-t-il du discret ou du continu ? Quel critère te paraît le bon : « chaque élément est isolé », ou « on peut compter les éléments un par un » ?" style="--w:24.19" loading="lazy">
+</div>
