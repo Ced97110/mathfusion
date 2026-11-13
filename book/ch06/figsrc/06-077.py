@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def cell(ax,x,y,w,h,role,fill=True,lw=0.6): ax.add_patch(Rectangle((x,y),w,h,ec=COL[role],fc=FILL[role] if fill else 'none',lw=lw,zorder=2))
+fig,ax=canvas(78)
+text(ax,44,72,r'$3/4 \div 3/4 = 1$','resultat','l')
+for i in range(3): cell(ax,26+i*14,54,14,8,'sujet'); cell(ax,26+i*14,40,14,8,'autre')
+text(ax,13,58,r'$3/4$','sujet','m'); text(ax,13,44,r'$3/4$','autre','m')
+line(ax,[(26,38),(26,64)],'resultat',dash=True); line(ax,[(68,38),(68,64)],'resultat',dash=True)
+text(ax,47,33,'tient une fois','resultat','s')
+box(ax,6,6,76,12,'limite',label=r'$0 \div 0$ : tout nombre convient')
+save(fig,'06-077')
