@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 25</div>
-<h1>Chemins d’Euler et de Hamilton</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 25</div>
+<h1 class="ct">Chemins d’Euler et de Hamilton</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Ce chapitre pose deux questions sur un même graphe. Peux-tu parcourir toutes les arêtes, chacune une seule fois ? Peux-tu passer par tous les sommets, chacun une seule fois ? Les deux questions se ressemblent. La première a une réponse en une ligne. La seconde n’en a aucune connue. Tu vas comprendre pourquoi.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 25 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Les sept ponts de Königsberg</h3>
 <p>Tu as vu ce problème au chapitre 21. Une rivière sépare la ville de Königsberg en quatre terres : la rive nord <span class="m">𝑎</span>, l’île <span class="m">𝑏</span>, la rive sud <span class="m">𝑐</span> et la terre de l’est <span class="m">𝑑</span>. Sept ponts relient ces terres (figure 25.1, à gauche).</p>
 <p>Les habitants se posaient une question. Peut-on faire une promenade qui traverse chaque pont exactement une fois ? On peut passer plusieurs fois sur la même terre. On ne peut pas traverser deux fois le même pont.</p>
@@ -14,7 +20,8 @@
 <p>1. Un sommet de degré 1 n’a qu’une arête. Peut-on finir le tracé là où on l’a commencé si le graphe a un tel sommet ?</p>
 <p>2. Si tous les sommets ont le degré 2, peut-on tout tracer ?</p>
 <p>3. Tu ne vois qu’une partie d’un graphe : trois sommets, et toutes leurs arêtes. Le premier a 5 arêtes, les deux autres en ont 4. Peux-tu conclure ?</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 25 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Regarde la figure 25.2. Sur chaque graphe, les arêtes portent un numéro : l’ordre dans lequel on les parcourt.</p>
 <img class="vf" src="/discretes/img/c025/p0803_2.svg" alt="G1 : la maison G2 : le nœud papillon a 2 3 u x b 4 c 6 3 5 6 1 w 4 1 d 7 2 5 v y 9 8 départ et arrivée u e 10 f départ e, arrivée f" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>25.2 :</b> Suis les numéros de 1 à 10 sur</i> <span class="m">𝐺</span><sub>1</sub> <i>: chaque arête sert une fois, on part de</i> <span class="m">𝑒</span> <i>et on finit en</i> <span class="m">𝑓</span><i>. Suis les numéros de 1 à 6 sur</i> <span class="m">𝐺</span><sub>2</sub> <i>: on part de</i> <span class="m">𝑢</span> <i>et on revient en</i> <span class="m">𝑢</span><i>. Les sommets rouges de</i> <span class="m">𝐺</span><sub>1</sub> <i>sont ses deux seuls sommets de degré impair : ce sont le départ et l’arrivée.</i></p>
@@ -31,7 +38,8 @@
 <img class="vm" src="/discretes/img/c025/p0805_5.svg" alt="deg(v) = 4 deg(v) = 3 arr. 1 arr. 1 dép. 1 dép. 2 v v arr. 2 dép. 1 arr. 2 toutes les arêtes aucune arête sont utilisées pour repartir" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>25.3 :</b> Regarde les flèches. À gauche,</i> <span class="m">𝑣</span> <i>a 4 arêtes : deux arrivées et deux départs, appariés par couleur. À droite,</i> <span class="m">𝑣</span> <i>a 3 arêtes : après une arrivée et un départ, il en reste une seule. Si le parcours arrive par elle, il ne peut plus repartir.</i></p>
 <p>Chaque traversée d’un sommet utilise deux de ses arêtes : une pour arriver, une pour repartir. Seuls le départ et l’arrivée échappent à cette règle. La suite transforme cette observation en théorème.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 25 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Marche, chemin eulérien, circuit eulérien</h3>
 <img class="vm" src="/discretes/img/c025/p0805_6.svg" alt="Définition : marche Une marche est une suite de sommets 𝑣0, 𝑣1 , … , 𝑣𝑘 dans laquelle deux sommets consécutifs sont reliés par une arête. Elle emprunte les arêtes 𝑣 𝑣 , 𝑣 𝑣 , …, 0 1 1 2 𝑣𝑘−1𝑣𝑘. Le nombre 𝑘 est sa longueur." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c025/p0806_7.svg" alt="Définition : chemin et circuit eulériens Un chemin eulérien est une marche qui emprunte chaque arête du graphe exactement une fois. Un circuit eulérien est un chemin eulérien qui finit là où il a commencé : 𝑣𝑘 = 𝑣0. Le parcours de 𝐺 est un circuit eulérien. 2 Celui de 𝐺1 est un chemin eulérien mais pas un circuit : il part de 𝑒 et finit en 𝑓." style="--w:24.19" loading="lazy">
@@ -91,7 +99,8 @@
 <img class="vf" src="/discretes/img/c025/p0816_33.svg" alt="" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c025/p0816_34.svg" alt="Symbole Ce qu’il dit 𝑛 Le nombre de sommets. Königsberg : 𝑛 = 4. 𝑣1, … , 𝑣𝑛 Les sommets du chemin, dans" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c025/p0816_35.svg" alt="l’ordre, tous différents. Königsberg : 𝑣1 = 𝑎, 𝑣2 = 𝑏, 𝑣3 = 𝑑, 𝑣4 = 𝑐. 𝑛 − 1 Le nombre d’arêtes d’un chemin hamiltonien. Königsberg : 3 (𝑎𝑏, 𝑏𝑑, 𝑑𝑐). Un chemin hamiltonien est un vrai chemin au sens du chapitre 21 : il ne repasse par aucun sommet. En revanche, il peut ignorer beaucoup d’arêtes. Le chemin 𝑎 𝑏 𝑑 𝑐 n’utilise que 3 ponts sur 7." style="--w:24.19" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 25 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Königsberg résolu</h3>
 <p>Les degrés de la figure 25.1 sont 3, 5, 3, 3. Quatre sommets impairs : le théorème d’Euler en exige au plus 2. Aucune promenade ne traverse chaque pont exactement une fois. Tu n’as essayé aucun parcours. Tu as regardé si quatre nombres étaient pairs. Au passage, <span class="m">3 + 5 + 3 + 3 = 14 =</span> <span class="m">2 × 7</span> : il y a bien 7 ponts. Un huitième pont entre <span class="m">𝑎</span> et <span class="m">𝑐</span> rendrait deg<span class="m">(𝑎) =</span> deg<span class="m">(𝑐) = 4</span>. Il resterait deux sommets impairs, <span class="m">𝑏</span> et <span class="m">𝑑</span> : une promenade deviendrait possible, de <span class="m">𝑏</span> à <span class="m">𝑑</span>.</p>
 <h3>Les questions du début</h3>
@@ -156,12 +165,15 @@
 <p><span class="m">𝑣</span><sub>1</sub> <span class="m">→ … → 𝑣</span><sub>𝑖</sub> <span class="m">→ 𝑣</span><sub>𝑘</sub> <span class="m">→ 𝑣</span><sub>𝑘−1</sub> <span class="m">→ … → 𝑣</span><sub>𝑖+1</sub> <span class="m">→ 𝑣</span><sub>1</sub> est un cycle sur les <span class="m">𝑘</span> sommets. Sur la figure : <span class="m">𝐼 = {1, 2, 4}</span> (voisins <span class="m">𝑣</span><sub>2</sub>, <span class="m">𝑣</span><sub>3</sub>, <span class="m">𝑣</span><sub>5</sub>), <span class="m">𝐽 = {4, 6, 7}</span> (voisins <span class="m">𝑣</span><sub>4</sub>, <span class="m">𝑣</span><sub>6</sub>, <span class="m">𝑣</span><sub>7</sub>), élément commun <span class="m">𝑖 = 4</span>. La figure ne dessine que quelques arêtes : elle montre comment on ferme le cycle une fois <span class="m">𝑖</span> trouvé. Ici <span class="m">|𝐼| + |𝐽| =</span> <span class="m">6</span> ; c’est la condition d’Ore, <span class="m">|𝐼| + |𝐽| ≥ 𝑛</span>, qui garantit en général qu’un élément commun existe.</p>
 <img class="vm" src="/discretes/img/c025/p0827_45.svg" alt="Étape 4 : le cycle prend tous les sommets. Si 𝑘 &amp;lt; 𝑛, un sommet 𝑤 hors du cycle est voisin d’un sommet 𝑣𝑗 du cycle (connexité). Pars de 𝑤, va en 𝑣𝑗, fais le tour du cycle : 𝑘+1 sommets. Cela contredit l’étape 2. Donc 𝑘 = 𝑛. □ Le cas limite Dirac est suffisant, pas nécessaire. Le cycle 𝐶10 a tous ses degrés égaux à 2, loin du minimum 10/2 = 5. Il est pourtant lui-même un cycle hamiltonien. Et la condition ne peut pas être affaiblie. Le nœud papillon 𝐺2 (figure 25.2) a 𝑛 = 5 ; Dirac demande 2,5 ; quatre sommets ont le degré 2, juste en dessous. Il n’a aucun cycle hamiltonien : retirer 𝑤 le coupe en deux (obstacle 2)." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c025/p0827_46.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 25 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c025/p0828_47.svg" alt="Lien avec un autre chapitre" style="--w:24.19" loading="lazy">
 <p>Le théorème d’Euler repose sur le chapitre 21 : le lemme des poignées de main explique pourquoi le nombre de sommets impairs est pair, la connexité garantit que la marche peut atteindre toutes les arêtes. Le calcul sur les arbres utilise <span class="m">𝑣−𝑒 = 1</span> (chapitre 22). Le comptage des ordres utilise les arrangements (chapitre 9).</p>
 <img class="vf" src="/discretes/img/c025/p0828_48.svg" alt="" style="--w:24.19" loading="lazy">
 <p>La difficulté de Hamilton n’est pas isolée. Décider si un graphe se colore avec 3 couleurs (chapitre 24) est aussi NP-complet. Les questions qui se décident sommet par sommet sont rapides. Celles où tous les choix interagissent sont souvent difficiles.</p>
 <p>Le chapitre suivant (chapitre 26) étudie les couplages dans les graphes bipartis. Tu y retrouveras des chemins, qui alternent entre arêtes choisies et non choisies. Et tu y verras une situation proche de celle d’Euler : une condition nécessaire, prouvée en quelques lignes, se révèle aussi suffisante.</p>
 <p>Les circuits eulériens servent à parcourir toutes les rues d’un réseau (courrier, déneigement) ; choisir les rues à reparcourir quand il y a des sommets impairs est le problème du postier chinois (Kwan Mei-Ko, 1960). Les cycles hamiltoniens servent à visiter des lieux : le problème du voyageur de commerce cherche le plus court, et il hérite de la difficulté de Hamilton.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 25 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c025/p0829_49.svg" alt="À toi de chercher Le graphe de Königsberg a 4 sommets impairs. Aucun tracé d’un seul trait ne parcourt ses 7 arêtes. Mais tu peux lever le crayon : tu traces une partie des arêtes, tu lèves le crayon, tu reprends ailleurs. Chaque arête est toujours tracée une seule fois. Combien de fois au minimum faut-il lever le crayon pour Königsberg ? Pour un graphe connexe qui a 6 sommets impairs ? Pour 2𝑘 sommets impairs ? Relis la preuve « deux sommets impairs, donc chemin ». Elle ajoutait une arête. Que se passe-t-il si tu en ajoutes plusieurs ? Que devient chaque arête ajoutée quand tu l’effaces ?" style="--w:24.19" loading="lazy">
+</div>
