@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 30, 48, 28, 10, 'sujet', label='35 %', size='l')
+arrow(ax, (38, 47), (24, 38), 'sujet')
+arrow(ax, (50, 47), (64, 38), 'varie')
+box(ax, 8, 28, 32, 9, 'sujet', label=r'on garde $p$ = 35')
+box(ax, 48, 28, 32, 9, 'varie', label=r'$\div$ 100')
+text(ax, 64, 23.5, 'c\'est le signe %', 'varie', 's')
+text(ax, 24, 23.5, 'le nombre devant', 'sujet', 's')
+arrow(ax, (24, 20), (38, 13), 'resultat')
+arrow(ax, (64, 20), (50, 13), 'resultat')
+box(ax, 16, 3, 56, 10, 'resultat', label=r'$\frac{35}{100}$ = 0,35')
+save(fig, '09-067')

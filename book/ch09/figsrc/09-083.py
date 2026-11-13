@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+box(ax,3,34,24,12,'sujet',label='2/3 = 0,666…',size='s')
+text(ax,15,28,'sans fin','fixe','s')
+arrow(ax,(27.5,40),(39.5,40),'varie'); text(ax,33.5,50,'arrondir','varie','s')
+box(ax,40,34,14,12,'varie',label='0,7')
+arrow(ax,(54.5,40),(67.5,40),'varie'); text(ax,61,50,'2 rangs','varie','s')
+box(ax,68,34,17,12,'resultat',label='0,007')
+arrow(ax,(76.5,33.5),(76.5,20),'resultat')
+box(ax,28,8,57,12,'resultat',label='2/3 % ≈ 0,007')
+save(fig,'09-083')

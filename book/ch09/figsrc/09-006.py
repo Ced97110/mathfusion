@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 38, 16, 8, 'fixe', fill=False, r=0.4)
+box(ax, 4, 38, 2.4, 8, 'varie', r=0.2)
+text(ax, 22, 42, '3 de moins sur 20', 'varie', 's', ha='left')
+box(ax, 4, 10, 80, 8, 'fixe', fill=False, r=0.4)
+box(ax, 4, 10, 12, 8, 'varie', r=0.2)
+text(ax, 18, 22.5, '15 de moins sur 100', 'varie', 's', ha='left')
+arrow(ax, (12, 36), (12, 28), 'sujet')
+text(ax, 16, 32, '× 5 aux deux nombres', 'sujet', 's', ha='left')
+text(ax, 44, 55, 'ramener le total à 100', 'encre', 'm')
+text(ax, 44, 4, '15 sur 100 = 15 %', 'resultat', 'm', weight='bold')
+save(fig, '09-006')

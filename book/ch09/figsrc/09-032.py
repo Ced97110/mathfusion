@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 16, 61, r'$3 \div 5$', 'encre', 'xl')
+arrow(ax, (28, 61), (46, 61), 'varie')
+text(ax, 37, 66, 'on écrit', 'varie', 's')
+text(ax, 66, 66, '3', 'sujet', 'xl'); text(ax, 66, 54, '5', 'sujet', 'xl')
+line(ax, [(58, 60), (74, 60)], 'varie', lw=1.8)
+text(ax, 66, 43, 'le trait : « divisé par »', 'varie', 's')
+f = numberline(ax, 10, 70, 24, 0, 1, 0.2, arrow_right=False)
+disc(ax, f(0.6), 24, 1.6, 'resultat')
+text(ax, f(0.6), 32, r'$3/5$', 'resultat', 'm')
+brace(ax, f(0), f(1), 14, 'fixe', label='plus petit que 1', down=True)
+save(fig, '09-032')

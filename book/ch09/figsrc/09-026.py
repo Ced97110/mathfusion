@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 3, 22, 34, 14, 'sujet', label='8 miles', size='l')
+box(ax, 51, 22, 34, 14, 'autre', label='5 gallons', size='l')
+text(ax, 44, 29, r'$\neq$', 'limite', 'xl')
+text(ax, 44, 45, 'même voiture', 'fixe', 'm')
+line(ax, [(20, 38), (20, 42), (68, 42), (68, 38)], 'fixe')
+text(ax, 20, 16, 'unité : mile', 'sujet', 's')
+text(ax, 68, 16, 'unité : gallon', 'autre', 's')
+text(ax, 44, 7, 'unités différentes', 'limite', 'm', weight='bold')
+save(fig, '09-026')

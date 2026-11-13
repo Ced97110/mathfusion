@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,3,49,'en euros','fixe','s',ha='left')
+box(ax,3,34,20,11,'fixe',label='15 €'); text(ax,26,39.5,'÷','encre','m'); box(ax,29,34,20,11,'fixe',label='50 €')
+arrow(ax,(50,39.5),(57,39.5),'varie'); box(ax,58,34,27,11,'sujet',label=r'$Q$ = 0,30')
+text(ax,71.5,49,'sans unité','sujet','s')
+text(ax,3,25,'en centimes','fixe','s',ha='left')
+box(ax,3,10,20,11,'fixe',label='1 500 cents',size='s'); text(ax,26,15.5,'÷','encre','m'); box(ax,29,10,20,11,'fixe',label='5 000 cents',size='s')
+arrow(ax,(50,15.5),(57,15.5),'varie'); box(ax,58,10,27,11,'sujet',label=r'$Q$ = 0,30')
+save(fig,'09-086')
