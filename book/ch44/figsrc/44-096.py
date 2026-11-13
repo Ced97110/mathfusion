@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 44, 46, r'dans $\mathbb{Z}$ : $7 + w = 0$ donne $w = -7$', 'encre', 's')
+box(ax, 4, 20, 16, 12, 'sujet', label=r'$u$', size='l')
+box(ax, 66, 20, 18, 12, 'resultat', label=r'$1$', size='l')
+arrow(ax, (20, 29), (66, 29), 'varie')
+arrow(ax, (20, 23), (66, 23), 'autre')
+text(ax, 43, 33, r'$v$ défait $u$', 'varie', 's')
+text(ax, 43, 19, r"$v'$ défait aussi $u$", 'autre', 's')
+text(ax, 44, 8, r"$v' = v$ : un seul partenaire", 'resultat', 'm')
+save(fig, '44-096')

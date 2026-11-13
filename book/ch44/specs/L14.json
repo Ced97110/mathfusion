@@ -1,0 +1,187 @@
+[
+ {
+  "code": "44-207",
+  "a_dire": "Les six permutations de {1, 2, 3} s'appellent 1, sigma, sigma au carré, tau 1, tau 2, tau 3, et chacune est la suite des images de 1, 2, 3.",
+  "legende_titre": "Les six noms et leurs images",
+  "lecture": [
+   "La case grise est l'identité 1 : chaque nombre reste à sa place.",
+   "Les deux cases orange sont 𝜎 et 𝜎², les deux tours du triangle.",
+   "Les trois cases bleues sont 𝜏1, 𝜏2, 𝜏3, les trois retournements.",
+   "Sous chaque nom, tu lis où va chaque nombre : 1→2 veut dire que 1 est envoyé sur 2."
+  ],
+  "a_voir": "Chaque nom est lié à sa liste d'images de 1, 2, 3."
+ },
+ {
+  "code": "44-208",
+  "a_dire": "Une transposition échange deux nombres et laisse le troisième à sa place ; 𝜏1 en est une, le tiers de tour 𝜎 n'en est pas une.",
+  "legende_titre": "Échanger deux nombres, fixer le troisième",
+  "lecture": [
+   "À gauche, la flèche grise verticale montre que 1 reste à sa place.",
+   "Les deux flèches orange qui se croisent montrent que 2 et 3 sont échangés.",
+   "À droite, en rouge, 𝜎 déplace les trois nombres : ce n'est pas une transposition."
+  ],
+  "a_voir": "Une transposition a exactement un nombre qui ne bouge pas."
+ },
+ {
+  "code": "44-209",
+  "a_dire": "Dans la table, la ligne et la colonne de 1 sont des copies des en-têtes.",
+  "legende_titre": "La ligne et la colonne du neutre",
+  "lecture": [
+   "La rangée du haut donne les en-têtes : 1, 𝜎, 𝜎², 𝜏1, 𝜏2, 𝜏3.",
+   "La première ligne verte contient les mêmes six éléments, dans le même ordre.",
+   "La première colonne verte est repérée de la même façon, ligne par ligne.",
+   "Les autres cases, en gris, ne sont pas concernées."
+  ],
+  "a_voir": "La ligne verte recopie les en-têtes juste au-dessus d'elle."
+ },
+ {
+  "code": "44-210",
+  "a_dire": "Dans la table d'un groupe, chaque ligne contient chaque élément une fois et une seule.",
+  "legende_titre": "Une ligne, six résultats",
+  "lecture": [
+   "Au-dessus de chaque case verte, tu vois l'élément de la colonne.",
+   "Chaque case verte donne le résultat de 𝜎 composé avec cet élément.",
+   "Les six cases contiennent 𝜎, 𝜎², 1, 𝜏3, 𝜏1, 𝜏2 : aucune n'est répétée."
+  ],
+  "a_voir": "Les six cases d'une ligne sont toutes différentes."
+ },
+ {
+  "code": "44-211",
+  "a_dire": "Dans un groupe, si ab = ac, on compose à gauche par l'inverse de a et on obtient b = c.",
+  "legende_titre": "Simplifier à gauche dans un groupe",
+  "lecture": [
+   "La case bleue du haut est le point de départ : ab = ac.",
+   "Chaque flèche orange est une étape, avec son motif écrit à droite.",
+   "On compose à gauche par 𝑎⁻¹, on regroupe, puis 𝑎⁻¹𝑎 vaut 1.",
+   "La case verte du bas est l'arrivée : b = c."
+  ],
+  "a_voir": "Le chemin va de ab = ac à b = c en trois étapes."
+ },
+ {
+  "code": "44-212",
+  "a_dire": "Dans un monoïde, la simplification peut échouer : la ligne de 𝛽 ne contient que des 𝛽.",
+  "legende_titre": "Une ligne qui répète la même case",
+  "lecture": [
+   "Les quatre colonnes sont 1_S, 𝛼, 𝛽, 𝛾.",
+   "Les quatre cases rouges de la ligne de 𝛽 contiennent toutes 𝛽.",
+   "Donc 𝛽∘𝛼 = 𝛽∘1_S, alors que 𝛼 et 1_S sont différents."
+  ],
+  "a_voir": "Une ligne avec quatre fois la même case : la règle tombe."
+ },
+ {
+  "code": "44-213",
+  "a_dire": "Dans la ligne d'un élément, la colonne où apparaît 1 donne l'inverse de cet élément.",
+  "legende_titre": "Lire un inverse dans une ligne",
+  "lecture": [
+   "La rangée du haut donne les colonnes ; la ligne de 𝜎 est écrite dessous.",
+   "La seule case verte contient 1.",
+   "Cette case est sous la colonne 𝜎², repérée en bleu.",
+   "La flèche orange en tire la conclusion : 𝜎⁻¹ = 𝜎²."
+  ],
+  "a_voir": "Le 1 est dans la colonne 𝜎², donc l'inverse de 𝜎 est 𝜎²."
+ },
+ {
+  "code": "44-214",
+  "a_dire": "Les six mouvements du triangle et les six permutations de 1, 2, 3 forment le même groupe : D3 = S3.",
+  "legende_titre": "Deux descriptions, un groupe",
+  "lecture": [
+   "À gauche, le triangle bleu fait un tiers de tour ; les flèches orange suivent chaque sommet.",
+   "À droite, les nombres violets 1, 2, 3 sont envoyés selon les mêmes flèches.",
+   "La double flèche verte relie le mouvement et la permutation qui lui correspondent.",
+   "En bas, tu lis l'égalité des deux groupes."
+  ],
+  "a_voir": "Le même tiers de tour est un mouvement et une permutation."
+ },
+ {
+  "code": "44-215",
+  "a_dire": "Chaque mouvement du triangle est une permutation, et les six mouvements donnent les 3 ! = 6 rangements, donc S3 = D3.",
+  "legende_titre": "Six mouvements, six rangements",
+  "lecture": [
+   "La rangée bleue du haut liste les six mouvements.",
+   "La rangée violette du bas liste les six rangements de 1, 2, 3.",
+   "Chaque flèche verte relie un mouvement à son rangement.",
+   "Il y a une flèche par case et une case par rangement : rien ne manque."
+  ],
+  "a_voir": "Les six flèches vertes atteignent les six rangements."
+ },
+ {
+  "code": "44-216",
+  "a_dire": "Le même groupe a deux noms, S3 et D3, et on écrit D3 = S3.",
+  "legende_titre": "Deux noms pour un groupe",
+  "lecture": [
+   "La case violette est le nom S3 : les rangements de 1, 2, 3.",
+   "La case bleue est le nom D3 : les mouvements du triangle.",
+   "Le signe égal vert relie les deux noms.",
+   "Les deux flèches arrivent sur la même case grise : un seul groupe de six éléments."
+  ],
+  "a_voir": "Deux noms, une seule case grise de six éléments."
+ },
+ {
+  "code": "44-217",
+  "a_dire": "En suivant chaque sommet, on trouve que 𝜏1 après 𝜎 est le retournement 𝜏2.",
+  "legende_titre": "Suivre les sommets pas à pas",
+  "lecture": [
+   "La colonne grise donne les sommets de départ 1, 2, 3.",
+   "La colonne orange donne leur place après 𝜎.",
+   "La colonne bleue donne leur place après 𝜏1.",
+   "Le disque vert est le sommet 2 : il revient à sa place, donc seul 2 est fixe."
+  ],
+  "a_voir": "Chaque ligne suit un sommet ; le résultat est 𝜏2."
+ },
+ {
+  "code": "44-218",
+  "a_dire": "Dans l'autre ordre, 𝜎 après 𝜏1 donne 𝜏3, différent de 𝜏1 après 𝜎 qui donne 𝜏2.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La colonne grise du milieu donne les sommets de départ.",
+   "Les flèches orange vont vers la colonne de gauche : 𝜏1 d'abord, puis 𝜎.",
+   "Les flèches violettes vont vers la colonne de droite : 𝜎 d'abord, puis 𝜏1.",
+   "Le disque vert de chaque côté est la place où le sommet ne bouge pas : 3 à gauche, 2 à droite."
+  ],
+  "a_voir": "Les deux ordres laissent fixes deux sommets différents."
+ },
+ {
+  "code": "44-219",
+  "a_dire": "La table se coupe en quatre blocs : rotation avec rotation et retournement avec retournement donnent une rotation, un mélange donne un retournement.",
+  "legende_titre": "Quatre blocs dans la table",
+  "lecture": [
+   "Les en-têtes bleus et violets indiquent les rotations et les retournements, en lignes et en colonnes.",
+   "Les deux blocs bleus, en haut à gauche et en bas à droite, contiennent des rotations.",
+   "Les deux blocs violets contiennent des retournements."
+  ],
+  "a_voir": "Les blocs bleus et violets se placent en damier."
+ },
+ {
+  "code": "44-220",
+  "a_dire": "Un polygone régulier à n côtés a tous ses côtés égaux et tous ses angles égaux.",
+  "legende_titre": "Côtés égaux et angles égaux",
+  "lecture": [
+   "Les trois formes bleues du haut ont des traits égaux sur tous les côtés et des arcs égaux à tous les coins.",
+   "Le rectangle rouge a des angles égaux, mais ses côtés ont un et deux traits : ils diffèrent.",
+   "Le losange rouge a des côtés égaux, mais ses coins ont un et deux arcs : ils diffèrent."
+  ],
+  "a_voir": "Seules les formes bleues ont les deux égalités."
+ },
+ {
+  "code": "44-221",
+  "a_dire": "Le groupe diédral D_n est l'ensemble des mouvements qui remettent un polygone régulier à n côtés dans son cadre.",
+  "legende_titre": "Les mouvements qui remettent dans le cadre",
+  "lecture": [
+   "Le pointillé gris est le cadre, la forme bleue est le polygone.",
+   "La flèche orange est un mouvement du polygone.",
+   "Le nom D_n et le nombre de mouvements sont écrits sous chaque polygone : 6, 8, 10."
+  ],
+  "a_voir": "Un nom, D_n, pour tous les mouvements d'un polygone."
+ },
+ {
+  "code": "44-222",
+  "a_dire": "Il y a n places pour le sommet 1, 2 places voisines pour le sommet 2, donc 2n mouvements.",
+  "legende_titre": "Compter les mouvements du carré",
+  "lecture": [
+   "À gauche, le sommet 1 peut aller sur les quatre coins orange : 4 choix.",
+   "Au milieu, le sommet 1 est posé ; le sommet 2 a deux coins voisins orange. Le coin gris est opposé.",
+   "À droite, tu multiplies : 4 × 2 = 8, soit n × 2 = 2n."
+  ],
+  "a_voir": "Quatre places, puis deux places, donnent huit."
+ }
+]

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 52, r'$|\mathbb{Z}|=\infty$', 'sujet', 'xl')
+text(ax, 22, 62, 'ordre de ℤ', 'sujet', 's'); text(ax, 66, 62, 'aucun entier', 'limite', 's')
+arrow(ax, (30, 58), (36, 53), 'fixe', lw=0.7); arrow(ax, (62, 58), (56, 53), 'fixe', lw=0.7)
+f = numberline(ax, 12, 76, 24, -3, 3, 1, arrow_right=False, role='fixe')
+arrow(ax, (12, 24), (4, 24), 'fixe', lw=0.9); arrow(ax, (76, 24), (84, 24), 'fixe', lw=0.9)
+text(ax, 44, 8, 'ni premier, ni dernier', 'fixe', 's')
+text(ax, 44, 38, r'$\infty$ n’est pas un entier', 'limite', 's')
+save(fig, '44-092')

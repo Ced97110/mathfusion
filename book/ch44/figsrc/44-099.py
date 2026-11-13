@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+disc(ax, 16, 32, 8, 'sujet', label=r'$u$', size='l')
+disc(ax, 72, 32, 8, 'autre', label=r'$u^{-1}$', size='m')
+arrow(ax, (22, 38), (66, 38), 'varie', curve=-0.35)
+arrow(ax, (66, 26), (22, 26), 'varie', curve=-0.35)
+text(ax, 44, 51, "1re fois : l'inverse", 'varie', 's')
+text(ax, 44, 13, "2e fois : l'inverse de l'inverse", 'varie', 's')
+text(ax, 44, 4, r'$(u^{-1})^{-1} = u$', 'resultat', 'l')
+save(fig, '44-099')

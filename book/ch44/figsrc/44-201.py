@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 4, 38, 24, 11, 'fixe', label='Abel')
+text(ax, 16, 33, 'mathématicien', 'fixe', 's')
+box(ax, 58, 38, 26, 11, 'sujet', label='abélien')
+arrow(ax, (28.5, 43.5), (57.5, 43.5), 'varie')
+text(ax, 43, 49, 'devient adjectif', 'varie', 's')
+box(ax, 4, 10, 36, 11, 'autre', label='commutatif')
+text(ax, 22, 4, r'$ab = ba$', 'autre', 's')
+arrow(ax, (40.5, 15.5), (70, 37.5), 'resultat', curve=0.2, both=True)
+text(ax, 72, 24, 'même sens', 'resultat', 's')
+save(fig, '44-201')

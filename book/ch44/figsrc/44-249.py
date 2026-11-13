@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,74,'mauvais ordre : τ₁ puis σ²','limite','m')
+for x,t,r in [(3,r'$1\ 2\ 3$','fixe'),(34,r'$1\ 3\ 2$','fixe'),(65,r'$2\ 1\ 3$','fixe')]: box(ax,x,48,20,10,r,label=t)
+arrow(ax,(23,56),(34,56),'varie'); arrow(ax,(54,56),(65,56),'varie')
+text(ax,28.5,62,r'$\tau_1$','varie'); text(ax,59.5,62,r'$\sigma$','varie')
+box(ax,65,22,20,10,'fixe',label=r'$2\ 1\ 3$'); box(ax,34,22,20,10,'fixe',label=r'$2\ 3\ 1$'); box(ax,3,22,20,10,'limite',label=r'$3\ 1\ 2$')
+arrow(ax,(65,27),(54,27),'limite'); arrow(ax,(34,27),(23,27),'limite')
+text(ax,59.5,35,r'$\tau_1$','limite'); text(ax,28.5,35,r'$\sigma^2$','limite')
+text(ax,44,13,'le sommet 1 reste à la place 2','limite','s')
+text(ax,44,5,'cases : sommets aux places 1, 2, 3','fixe','s')
+save(fig,'44-249')

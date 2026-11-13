@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 58, 'addition : 9 = 9', 'resultat', 'm', weight='bold')
+text(ax, 44, 28, 'soustraction : 0 ≠ 4', 'limite', 'm', weight='bold')
+def row(y, left, group_x, group, right, rx, res, role):
+    if left: text(ax, left[0], y, left[1], 'encre', 'm')
+    box(ax, group_x - 11, y - 3.8, 22, 7.6, 'varie', fill=False, dash=True, lw=0.9)
+    text(ax, group_x, y, group, 'encre', 'm')
+    if right: text(ax, rx, y, right, 'encre', 'm')
+    text(ax, 64, y, res, role, 'm', weight='bold')
+row(49, None, 19, '2 + 3', '+ 4', 38, '= 9', 'resultat')
+row(40, (13, '2 +'), 33, '3 + 4', None, 0, '= 9', 'resultat')
+row(19, None, 19, '5 − 3', '− 2', 38, '= 0', 'limite')
+row(10, (13, '5 −'), 33, '3 − 2', None, 0, '= 4', 'limite')
+save(fig, '44-053')

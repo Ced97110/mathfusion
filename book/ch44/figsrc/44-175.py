@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+text(ax, 22, 92, r'$(\mathbb{Z}_4,+)$', 'fixe', 'm', weight='bold')
+text(ax, 66, 92, r'$U(8)$', 'sujet', 'm', weight='bold')
+for i in range(4):
+    disc(ax, 8 + i * 9.5, 78, 4, 'fixe', label=str(i), size='s')
+    disc(ax, 52 + i * 9.5, 78, 4, 'sujet', label=str([1, 3, 5, 7][i]), size='s')
+text(ax, 22, 66, '4 éléments', 'fixe', 's')
+text(ax, 66, 66, '4 éléments', 'sujet', 's')
+box(ax, 4, 44, 36, 14, 'limite', label=r'$1+1=2\neq 0$', size='s')
+box(ax, 48, 44, 36, 14, 'resultat', label='chacun fois lui-même\ndonne 1', size='s')
+text(ax, 22, 38, 'tables différentes', 'limite', 's')
+arrow(ax, (66, 44), (66, 32), 'autre')
+poly(ax, [(50, 8), (82, 8), (82, 28), (50, 28)], 'autre')
+text(ax, 66, 18, 'rectangle :\nmême table', 'autre', 's')
+save(fig, '44-175')

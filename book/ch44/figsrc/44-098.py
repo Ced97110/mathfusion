@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 10, 34, 22, 20, 'sujet', label=r'$u$', size='xl')
+box(ax, 34, 42, 18, 12, 'varie', label=r'$-1$', size='l')
+text(ax, 21, 28, "l'élément", 'sujet', 's')
+text(ax, 43, 36, "l'exposant", 'varie', 's')
+box(ax, 58, 36, 26, 16, 'resultat')
+text(ax, 71, 47, "se lit « $u$ puissance", 'resultat', 's')
+text(ax, 71, 41, 'moins un »', 'resultat', 's')
+text(ax, 44, 17, r'$u \, u^{-1} = 1 = u^{-1} u$', 'resultat', 'l')
+text(ax, 44, 7, r'comme $5 \times \frac{1}{5} = 1$', 'fixe', 's')
+save(fig, '44-098')

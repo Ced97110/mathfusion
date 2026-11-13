@@ -1,0 +1,190 @@
+[
+ {
+  "code": "44-096",
+  "a_dire": "Un élément a un seul inverse : si v et v' défont tous deux u, alors v' = v.",
+  "legende_titre": "Un seul partenaire pour u",
+  "lecture": [
+   "Le rectangle bleu est u, le rectangle vert est l'élément neutre 1.",
+   "La flèche orange est un partenaire v qui défait u.",
+   "La flèche violette est un second partenaire v' qui défait aussi u.",
+   "Les deux flèches arrivent au même 1, donc v' = v."
+  ],
+  "a_voir": "Deux partenaires possibles se révèlent être le même."
+ },
+ {
+  "code": "44-097",
+  "a_dire": "La preuve part de v', passe par un changement de regroupement, et arrive à v.",
+  "legende_titre": "De v' à v en six lignes",
+  "lecture": [
+   "La colonne se lit de haut en bas, du rectangle bleu v' au rectangle vert v.",
+   "Les deux premières flèches multiplient par 1 puis remplacent 1 par uv.",
+   "Le rectangle orange est le changement de regroupement : c'est la seule étape qui utilise l'associativité.",
+   "Ensuite v'u vaut 1, et il reste v."
+  ],
+  "a_voir": "Une seule étape, en orange, porte la preuve."
+ },
+ {
+  "code": "44-098",
+  "a_dire": "Le signe u^(−1) se lit « u puissance moins un » et désigne l'inverse de u.",
+  "legende_titre": "Un signe pour l'inverse",
+  "lecture": [
+   "Le grand rectangle bleu est l'élément u.",
+   "Le petit rectangle orange est l'exposant −1.",
+   "Le rectangle vert donne la lecture du signe entier.",
+   "La ligne verte dit ce que le signe garantit : u fois son inverse donne 1, dans les deux ordres."
+  ],
+  "a_voir": "Le signe u^(−1) désigne l'inverse de u, comme 1/5 pour 5."
+ },
+ {
+  "code": "44-099",
+  "a_dire": "L'inverse de l'inverse de u est u lui-même.",
+  "legende_titre": "Prendre l'inverse deux fois",
+  "lecture": [
+   "Le disque bleu est u, le disque violet est son inverse.",
+   "La flèche du haut va de u à son inverse.",
+   "La flèche du bas revient du disque violet au disque bleu.",
+   "La ligne verte écrit le résultat : on retombe sur u."
+  ],
+  "a_voir": "Deux inversions successives ramènent au point de départ."
+ },
+ {
+  "code": "44-100",
+  "a_dire": "Un groupe est un monoïde dont tous les éléments se défont.",
+  "legende_titre": "Tous les éléments se défont",
+  "lecture": [
+   "La rangée du haut montre les 8 mouvements du carreau : chaque disque vert est un mouvement qui se défait.",
+   "La rangée du bas montre le compteur de passages : chaque disque rouge est un élément qui ne se défait pas.",
+   "Une seule croix rouge suffit pour que ce ne soit pas un groupe."
+  ],
+  "a_voir": "Il faut que chaque élément, sans exception, soit vert."
+ },
+ {
+  "code": "44-101",
+  "a_dire": "Dans un groupe, regrouper a et b d'abord ou b et c d'abord donne le même résultat.",
+  "legende_titre": "Les parenthèses sans effet",
+  "lecture": [
+   "Les trois disques bleus sont a, b et c.",
+   "L'accolade orange regroupe a et b, l'accolade violette regroupe b et c.",
+   "La ligne verte dit que les deux regroupements donnent le même résultat.",
+   "Dans la partie rouge, la soustraction donne 0 d'un côté et 4 de l'autre : elle ne respecte pas la règle."
+  ],
+  "a_voir": "La règle d'associativité sépare l'addition de la soustraction."
+ },
+ {
+  "code": "44-102",
+  "a_dire": "Un groupe a un élément neutre 1 qui ne change rien : 1a = a = a1.",
+  "legende_titre": "Un élément qui ne change rien",
+  "lecture": [
+   "Le rectangle gris est le neutre 1, le rectangle bleu est a.",
+   "À gauche, 1 devant a donne a ; à droite, 1 derrière a donne encore a.",
+   "Le a du milieu est le résultat des deux côtés.",
+   "La ligne verte montre que défaire a, c'est arriver à 1 : il faut donc le neutre d'abord."
+  ],
+  "a_voir": "Le neutre laisse a inchangé des deux côtés."
+ },
+ {
+  "code": "44-103",
+  "a_dire": "Dans un groupe, chaque élément a un inverse : aa^(−1) = 1 = a^(−1)a.",
+  "legende_titre": "Chaque élément a un partenaire",
+  "lecture": [
+   "La droite du haut (ℕ) a un point bleu en 3 ; la flèche rouge cherche un partenaire vers 0 et n'en trouve aucun.",
+   "La droite du bas (ℤ) a un point bleu en 3 et un point vert en −3.",
+   "La flèche verte relie 3 à −3 : 3 plus −3 donne 0."
+  ],
+  "a_voir": "Un seul élément sans partenaire suffit à sortir du groupe."
+ },
+ {
+  "code": "44-104",
+  "a_dire": "Un axiome est une règle posée au départ, dont on déduit tout le reste.",
+  "legende_titre": "Trois règles posées au départ",
+  "lecture": [
+   "Les trois rectangles bleus sont les trois règles posées au départ.",
+   "Les flèches orange montrent qu'on les contrôle sur l'exemple.",
+   "Le rectangle vert dit que l'exemple, les entiers relatifs avec l'addition, est un groupe.",
+   "La flèche grise du bas montre que le reste se déduit de ces règles."
+  ],
+  "a_voir": "Les règles sont posées, puis contrôlées, puis on en déduit le reste."
+ },
+ {
+  "code": "44-105",
+  "a_dire": "Le signe ↦ dit qu'un couple est envoyé sur un produit.",
+  "legende_titre": "Un couple envoyé sur un produit",
+  "lecture": [
+   "Le rectangle bleu est le couple (a, b).",
+   "Le rectangle vert est le produit ab.",
+   "La flèche orange et le signe ↦ vont du couple vers le produit.",
+   "Le couple de départ est envoyé sur un seul élément d'arrivée."
+  ],
+  "a_voir": "La flèche relie un élément de départ à un élément d'arrivée."
+ },
+ {
+  "code": "44-106",
+  "a_dire": "L'opération prend un couple de G × G et donne un élément de G.",
+  "legende_titre": "Opération : des couples vers G",
+  "lecture": [
+   "La grille bleue de 8 sur 8 cases montre les 64 couples de G × G.",
+   "Les 8 disques verts sont les 8 mouvements de G.",
+   "La case orange est un couple choisi ; la flèche orange l'envoie sur le disque orange.",
+   "Un couple a un seul produit, qui reste dans G."
+  ],
+  "a_voir": "Chaque case de la grille arrive sur un seul disque de G."
+ },
+ {
+  "code": "44-107",
+  "a_dire": "Un sous-groupe est une partie du groupe qui est elle-même un groupe : elle contient aussi les opposés.",
+  "legende_titre": "Une partie qui est un groupe",
+  "lecture": [
+   "Sur la rangée du haut, les disques bleus sont les entiers naturels, de 0 à 6.",
+   "Le cercle rouge en −3 est l'opposé de 3 : il n'est pas dans cette partie.",
+   "Sur la rangée du bas, les disques verts sont les nombres pairs ; la flèche verte relie 4 à son opposé.",
+   "La rangée du bas contient les opposés : c'est un sous-groupe."
+  ],
+  "a_voir": "Il faut que chaque opposé soit dans la partie."
+ },
+ {
+  "code": "44-108",
+  "a_dire": "Pour savoir si H est un sous-groupe, on vérifie trois conditions : 1 dans H, H stable, inverses dans H.",
+  "legende_titre": "Trois conditions à vérifier",
+  "lecture": [
+   "Les trois rectangles bleus sont les trois conditions du test.",
+   "Les trois rectangles verts vérifient chaque condition sur les nombres pairs.",
+   "Les flèches orange relient chaque condition à sa vérification."
+  ],
+  "a_voir": "Trois vérifications suffisent."
+ },
+ {
+  "code": "44-109",
+  "a_dire": "On garde dans un monoïde M seulement les éléments qui se défont ; ils forment le groupe des unités U(M).",
+  "legende_titre": "Garder ceux qui se défont",
+  "lecture": [
+   "Le grand cadre gris est M, les entiers relatifs avec la multiplication.",
+   "Les disques gris sont des éléments qui ne se défont pas.",
+   "Les deux disques bleus, 1 et −1, se défont.",
+   "La flèche orange les garde dans le rectangle vert U(M), qui est un groupe."
+  ],
+  "a_voir": "Seuls les éléments bleus passent dans U(M)."
+ },
+ {
+  "code": "44-110",
+  "a_dire": "Le signe U(M) désigne l'ensemble des éléments inversibles du monoïde M.",
+  "legende_titre": "Lire U(M)",
+  "lecture": [
+   "Le rectangle bleu U veut dire « les inversibles de ».",
+   "Le rectangle violet M est le monoïde de départ.",
+   "La ligne orange du bas montre que si le monoïde change, la lettre entre parenthèses change."
+  ],
+  "a_voir": "Le signe porte le nom du monoïde dont on part."
+ },
+ {
+  "code": "44-111",
+  "a_dire": "L'ensemble U(M) des éléments inversibles est un groupe : il passe les trois conditions du test.",
+  "legende_titre": "U(M) passe le test",
+  "lecture": [
+   "Le cadre bleu contient les deux éléments 1 et −1.",
+   "La flèche orange montre que (−1)(−1) = 1 reste dans le cadre.",
+   "Les trois rectangles verts sont les trois conditions du test du sous-groupe, toutes vérifiées.",
+   "Donc U(M) est un groupe."
+  ],
+  "a_voir": "Les trois conditions du test sont vérifiées."
+ }
+]

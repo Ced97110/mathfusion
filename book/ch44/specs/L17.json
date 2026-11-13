@@ -1,0 +1,178 @@
+[
+ {
+  "code": "44-255",
+  "a_dire": "Tu peux dire que (g puissance m) puissance n compte m fois n facteurs g.",
+  "legende_titre": "Des paquets de facteurs, comptés en tout",
+  "lecture": [
+   "Les cases bleues g sont les facteurs.",
+   "Chaque rectangle en pointillés gris est une copie de g puissance m, avec 2 facteurs.",
+   "Il y a 2 copies, donc 2 fois 2 facteurs : le cadre vert donne 4."
+  ],
+  "a_voir": "Voir que 2 copies de 2 facteurs font 4 facteurs g."
+ },
+ {
+  "code": "44-256",
+  "a_dire": "Tu peux dire que (gh) puissance n n'est pas toujours g puissance n fois h puissance n : avec sigma et tau 1, on trouve 1 d'un côté et sigma au carré de l'autre.",
+  "legende_titre": "Une règle qui échoue sur un exemple",
+  "lecture": [
+   "La colonne bleue calcule (gh) au carré : on obtient 1.",
+   "La colonne violette calcule g au carré fois h au carré : on obtient sigma au carré.",
+   "Le signe rouge dit que les deux résultats sont différents."
+  ],
+  "a_voir": "Voir que les deux colonnes finissent sur deux résultats différents."
+ },
+ {
+  "code": "44-257",
+  "a_dire": "Tu peux dire que ng est le nombre g ajouté n fois à lui-même.",
+  "legende_titre": "Écrire une addition répétée en un signe",
+  "lecture": [
+   "Les trois cases bleues sont trois fois le même nombre 2.",
+   "L'accolade orange compte les termes : 3.",
+   "La case du bas écrit ces trois termes d'un seul signe ; le texte vert donne 6, soit 1 modulo 5."
+  ],
+  "a_voir": "Voir que 3 cases égales se résument en 3 fois 2."
+ },
+ {
+  "code": "44-258",
+  "a_dire": "Tu peux dire que mg plus ng a m plus n termes égaux à g, donc vaut (m plus n)g.",
+  "legende_titre": "Deux paquets bout à bout",
+  "lecture": [
+   "Les 3 cases bleues forment mg, les 4 cases violettes forment ng.",
+   "L'accolade verte du bas couvre les 7 cases : c'est (m plus n)g.",
+   "Le texte vert donne le même reste, 4, dans les deux calculs."
+  ],
+  "a_voir": "Voir que 3 cases et 4 cases mises ensemble font 7 cases."
+ },
+ {
+  "code": "44-259",
+  "a_dire": "Tu peux dire que répéter m fois ng donne le même résultat que (mn)g.",
+  "legende_titre": "Deux chemins vers le même point",
+  "lecture": [
+   "La colonne bleue calcule d'abord 3 fois 2, puis répète ce résultat 2 fois.",
+   "La colonne violette calcule d'abord 2 fois 3, puis le multiplie par 2.",
+   "Le cadre vert du bas montre que les deux chemins arrivent à 2."
+  ],
+  "a_voir": "Voir que les deux colonnes se rejoignent sur 2."
+ },
+ {
+  "code": "44-260",
+  "a_dire": "Tu peux dire que ajouter 2 ne se défait pas dans N : il faudrait ajouter moins 2, qui n'est pas dans N.",
+  "legende_titre": "Revenir en arrière, hors de la zone permise",
+  "lecture": [
+   "Le point vert est a égal 3, le point orange est a plus 2 égal 5.",
+   "La flèche bleue au-dessus va de 3 à 5.",
+   "La flèche rouge en pointillés revient de 5 à 3, mais elle ajoute moins 2, dans la zone grise hors de N."
+  ],
+  "a_voir": "Voir que l'arrivée 3 est dans N mais que l'action pour y revenir n'y est pas."
+ },
+ {
+  "code": "44-261",
+  "a_dire": "Tu peux dire que dans N, avec l'addition, seul 0 a un inverse, donc N est un monoïde et pas un groupe.",
+  "legende_titre": "Qui peut être défait par l'addition ?",
+  "lecture": [
+   "Chaque case bleue est un entier u.",
+   "Le cadre vert montre que 0 plus 0 donne 0.",
+   "Les cadres rouges montrent que u plus v est au moins u, donc jamais 0."
+  ],
+  "a_voir": "Voir que seule la ligne verte, u égal 0, a un inverse."
+ },
+ {
+  "code": "44-262",
+  "a_dire": "Tu peux dire que Z est N auquel on ajoute l'opposé de chaque entier.",
+  "legende_titre": "Ajouter ce qui manque",
+  "lecture": [
+   "Les cases bleues sont les entiers naturels, N.",
+   "Les cases orange sont les opposés ajoutés : moins 1, moins 2, moins 3.",
+   "L'accolade verte du bas couvre l'ensemble : c'est Z."
+  ],
+  "a_voir": "Voir que Z est N complété par les opposés."
+ },
+ {
+  "code": "44-263",
+  "a_dire": "Tu peux dire que le groupe à un élément est {1}, où 1 est à la fois neutre et inverse de lui-même, et qu'un groupe n'est jamais vide.",
+  "legende_titre": "Le plus petit groupe",
+  "lecture": [
+   "Le grand cadre bleu est l'ensemble {1} avec son seul élément 1.",
+   "Les trois flèches grises disent ce que vaut 1 : produit, neutre, inverse.",
+   "Le cadre rouge en pointillés est l'ensemble vide : il n'a pas de neutre."
+  ],
+  "a_voir": "Voir que 1 remplit tous les rôles, et que le vide n'en remplit aucun."
+ },
+ {
+  "code": "44-264",
+  "a_dire": "Tu peux dire que pour n égal 1, il y a 1 permutation et 1 transformation : monoïde et groupe coïncident ; pour n égal 2, 2 contre 4.",
+  "legende_titre": "Compter permutations et transformations",
+  "lecture": [
+   "Les cases bleues comptent les permutations, les cases violettes comptent les transformations.",
+   "Pour n égal 1, il y a une case de chaque couleur : texte vert.",
+   "Pour n égal 2, il y a 2 cases bleues et 4 cases violettes : texte rouge."
+  ],
+  "a_voir": "Voir que les deux rangées ont la même longueur seulement pour n égal 1."
+ },
+ {
+  "code": "44-265",
+  "a_dire": "Tu peux dire que S deux a deux éléments, 1 indice S et alpha, et que le résultat ne dépend pas de l'ordre : il est abélien.",
+  "legende_titre": "Une table qui ne dépend pas de l'ordre",
+  "lecture": [
+   "Les cases grises sont les éléments, à gauche et en haut.",
+   "Les cases bleues donnent 1 indice S, les cases orange donnent alpha.",
+   "La flèche verte relie les deux cases orange : les deux ordres donnent alpha."
+  ],
+  "a_voir": "Voir que les deux cases orange sont égales."
+ },
+ {
+  "code": "44-266",
+  "a_dire": "Tu peux dire que dès n égal 3, tau 3 rond tau 1 et tau 1 rond tau 3 donnent sigma et sigma au carré, donc S n n'est pas abélien ; pour n égal 2, tout commute.",
+  "legende_titre": "Dès trois numéros, l'ordre compte",
+  "lecture": [
+   "Le cadre gris du haut dit que tau 1 et tau 3 existent dès n au moins 3.",
+   "Le cadre bleu fait tau 3 puis tau 1 ; le cadre violet fait l'ordre inverse.",
+   "Le signe rouge montre que les résultats diffèrent ; le cadre vert du bas montre le cas n égal 2."
+  ],
+  "a_voir": "Voir que bleu et violet ne donnent pas le même résultat."
+ },
+ {
+  "code": "44-282",
+  "a_dire": "Tu peux dire que le chapitre 54 refait pour la multiplication ce qu'on a fait pour l'addition : on part de Z et on ajoute les fractions pour obtenir Q.",
+  "legende_titre": "Même démarche, deux fois",
+  "lecture": [
+   "Les trois cases sont N, Z et Q.",
+   "Entre N et Z, le texte rouge montre une équation sans solution ; la flèche orange ajoute les négatifs.",
+   "Entre Z et Q, la même chose avec une multiplication ; on ajoute les fractions."
+  ],
+  "a_voir": "Voir que chaque flèche ajoute des nombres pour que l'opération se défasse."
+ },
+ {
+  "code": "44-267",
+  "a_dire": "Tu peux dire que la soustraction n'est pas associative : (5 moins 3) moins 2 donne 0, 5 moins (3 moins 2) donne 4.",
+  "legende_titre": "Deux regroupements, deux résultats",
+  "lecture": [
+   "La ligne du haut calcule d'abord 5 moins 3 (case bleue), puis retire 2 : le résultat est 0.",
+   "La ligne du bas calcule d'abord 3 moins 2 (case violette), puis le retire de 5 : le résultat est 4.",
+   "Le signe rouge relie les deux résultats différents."
+  ],
+  "a_voir": "Voir que changer le regroupement change le résultat."
+ },
+ {
+  "code": "44-268",
+  "a_dire": "Tu peux dire que l'horloge à 4 heures et les rotations du carré ont la même table : c'est ce que le chapitre 45 appelle isomorphisme.",
+  "legende_titre": "Deux groupes, une même forme",
+  "lecture": [
+   "La colonne bleue est l'horloge à 4 heures : 0, 1, 2, 3.",
+   "La colonne violette donne les tours du carré : 0, un quart, un demi, trois quarts.",
+   "Les flèches orange relient chaque heure à son tour ; en bas, 1 plus 1 égale 2 correspond à un quart plus un quart égale un demi."
+  ],
+  "a_voir": "Voir que chaque élément de gauche a un partenaire à droite et que les sommes se correspondent."
+ },
+ {
+  "code": "44-269",
+  "a_dire": "Tu peux dire que les puissances de sigma forment un groupe cyclique, et que sigma s'écrit en cycle 1, 2, 3, 1.",
+  "legende_titre": "Les puissances d'un seul élément",
+  "lecture": [
+   "À gauche, les trois disques bleus sont sigma, sigma au carré et sigma au cube égal 1.",
+   "Les flèches orange passent de chacun au suivant, puis reviennent au départ.",
+   "À droite, les disques violets 1, 2, 3 forment le cycle de sigma."
+  ],
+  "a_voir": "Voir que les puissances de sigma tournent en boucle, comme le cycle 1, 2, 3."
+ }
+]

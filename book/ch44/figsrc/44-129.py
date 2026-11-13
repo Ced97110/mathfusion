@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 4, 46, 38, 9, 'fixe', label=r'(ℚ$^*$, ×, 1)'); box(ax, 46, 46, 38, 9, 'fixe', label=r'(ℝ$^*$, ×, 1)')
+box(ax, 6, 20, 20, 14, 'sujet', label=r'$\frac{3}{4}$', size='xl')
+text(ax, 34, 27, '×', 'encre', 'xl')
+box(ax, 42, 20, 20, 14, 'varie', label=r'$\frac{4}{3}$', size='xl')
+text(ax, 69, 27, '=', 'encre', 'xl')
+box(ax, 74, 20, 12, 14, 'resultat', label='1', size='xl')
+arrow(ax, (16, 35.5), (52, 35.5), 'varie', curve=-0.3)
+text(ax, 34, 42.5, 'haut ↔ bas', 'varie', 's')
+text(ax, 44, 11, 'chaque fraction non nulle', 'sujet', 's')
+text(ax, 44, 5, 'a un partenaire qui donne 1', 'resultat', 's')
+save(fig, '44-129')
