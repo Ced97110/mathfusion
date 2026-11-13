@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, r'$[E:F]$ : combien de fractions ?', 'encre', 'l')
+# ligne 1 : les fractions seules
+text(ax, 44, 70, 'ℚ : une fraction suffit', 'fixe', 'm')
+box(ax, 8, 54, 28, 11, 'varie', label=r'$\frac{3}{4}$', size='xl')
+text(ax, 22, 50, r'$\times\ 1$', 'fixe', 's')
+text(ax, 62, 59.5, r'$[\mathbb{Q}:\mathbb{Q}]=1$', 'fixe', 'm')
+# ligne 2 : ℚ(√2)
+text(ax, 44, 38, 'ℚ(√2) : deux fractions', 'sujet', 'm')
+box(ax, 6, 22, 30, 11, 'varie', label=r'$\frac{3}{4}$', size='xl')
+text(ax, 21, 18, r'$\times\ 1$', 'sujet', 's')
+box(ax, 50, 22, 30, 11, 'varie', label=r'$\frac{5}{3}$', size='xl')
+text(ax, 65, 18, r'$\times\ \sqrt{2}$', 'sujet', 's')
+text(ax, 43, 27.5, '+', 'sujet', 'l')
+brace(ax, 6, 80, 14, 'sujet', label='deux fractions', down=True)
+text(ax, 44, 3, r'$[\mathbb{Q}(\sqrt{2}):\mathbb{Q}]=2$', 'resultat', 'l')
+save(fig, '62-041')

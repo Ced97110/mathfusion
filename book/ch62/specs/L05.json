@@ -1,0 +1,360 @@
+[
+ {
+  "code": "62-133",
+  "a_dire": "Un seul ajout, la racine r₁, donne les trois racines : le corps à 8 éléments est le corps de décomposition.",
+  "legende_titre": "Un seul étage suffit ici",
+  "lecture": [
+   "Le rectangle gris est le corps de départ F, à 2 éléments.",
+   "La flèche orange est un seul ajout : la racine r₁.",
+   "Le grand rectangle vert est le corps K, à 8 éléments.",
+   "Les trois cercles bleus r₁, r₁², r₁⁴ sont les trois racines, toutes dans K."
+  ],
+  "a_voir": "Il y a une seule flèche, et les trois racines sont déjà dans K."
+ },
+ {
+  "code": "62-134",
+  "a_dire": "Une racine multiple est un point où le polynôme et sa dérivée s’annulent ensemble.",
+  "legende_titre": "Deux courbes, deux sortes de racines",
+  "lecture": [
+   "La courbe bleue est f, la courbe orange est sa dérivée.",
+   "En −2, la courbe bleue traverse l’axe : racine simple, et la courbe orange est à la hauteur 9.",
+   "En 1, la courbe bleue touche l’axe sans le traverser, et la courbe orange passe aussi sur l’axe : le point vert marque la racine double."
+  ],
+  "a_voir": "En 1, les deux courbes sont sur l’axe ; en −2, seule la bleue y est."
+ },
+ {
+  "code": "62-135",
+  "a_dire": "Une fois développé, le polynôme ne montre plus sa racine double.",
+  "legende_titre": "Le même polynôme, avant et après développement",
+  "lecture": [
+   "Le rectangle bleu est la forme factorisée : la racine double 1 se voit.",
+   "Les flèches orange sont deux développements.",
+   "Les rectangles gris sont les formes développées.",
+   "Dans la dernière, la mention « racine double : ? » reste sans réponse visible."
+  ],
+  "a_voir": "La racine double se lit en haut et ne se lit plus en bas."
+ },
+ {
+  "code": "62-136",
+  "a_dire": "La méthode a deux étapes, dériver puis calculer le PGCD de f et de f′, et le résultat dit s’il y a une racine multiple.",
+  "legende_titre": "Les deux étapes de la méthode",
+  "lecture": [
+   "Le rectangle bleu est le polynôme donné ; le rectangle orange est sa dérivée, obtenue à l’étape 1.",
+   "Le rectangle gris est le PGCD de f et de f′, calculé à l’étape 2.",
+   "En bas, le rectangle vert (PGCD égal à 1) dit que toutes les racines sont simples ; le rectangle orange (différent de 1) dit qu’il y a une racine multiple."
+  ],
+  "a_voir": "Deux étapes en colonne, puis deux issues possibles."
+ },
+ {
+  "code": "62-137",
+  "a_dire": "On divise de reste en reste et on s’arrête quand un reste est nul ; le dernier diviseur est le PGCD.",
+  "legende_titre": "Les divisions d’Euclide sur l’exemple",
+  "lecture": [
+   "Première ligne : le polynôme bleu divisé par sa dérivée orange donne le reste gris −2x + 2, non nul : on continue.",
+   "Deuxième ligne : la dérivée divisée par x − 1 (le reste précédent divisé par −2) donne le reste vert 0 : on s’arrête.",
+   "Le rectangle vert du bas donne le PGCD : x − 1."
+  ],
+  "a_voir": "Le calcul s’arrête au premier reste nul, et le dernier diviseur est le PGCD."
+ },
+ {
+  "code": "62-138",
+  "a_dire": "Le PGCD x − 1 est différent de 1, donc 1 est une racine multiple ; −2 reste une racine simple.",
+  "legende_titre": "Quelle racine est multiple ?",
+  "lecture": [
+   "La droite porte les deux racines : −2 en bleu et 1 en violet.",
+   "Sous le −2, le calcul f′(−2) = 9 donne un nombre non nul : racine simple.",
+   "Sous le 1, le PGCD x − 1 est différent de 1 : racine multiple."
+  ],
+  "a_voir": "Le critère sépare les racines une à une, sans factoriser."
+ },
+ {
+  "code": "62-139",
+  "a_dire": "En 1, la courbe touche l’axe avec une pente nulle, donc la dérivée s’annule au même point.",
+  "legende_titre": "Racine double : la courbe et sa pente",
+  "lecture": [
+   "En haut, la courbe bleue est f : elle touche l’axe en 1 et repart du même côté.",
+   "Le trait orange horizontal est la pente en ce point : elle est nulle.",
+   "En bas, la courbe orange est f′ : elle coupe son axe au même x = 1, marqué par le pointillé.",
+   "Les deux points verts sont alignés verticalement."
+  ],
+  "a_voir": "Au même x, la courbe du haut touche l’axe et celle du bas s’annule."
+ },
+ {
+  "code": "62-140",
+  "a_dire": "Le calcul n’utilise que les quatre opérations, donc il vaut aussi modulo 5, où il n’y a pas de courbe.",
+  "legende_titre": "Le même calcul modulo 5, sans courbe",
+  "lecture": [
+   "Chaque colonne est une valeur de x modulo 5, de 0 à 4.",
+   "La rangée du haut est f, la rangée du bas est f′ : un cercle coloré marque une valeur nulle.",
+   "La colonne 1, encadrée en vert, est nulle pour les deux : c’est la racine commune.",
+   "Le PGCD reste x − 1."
+  ],
+  "a_voir": "Dans la colonne 1, f et f′ sont nulles ensemble, sans aucune courbe."
+ },
+ {
+  "code": "62-141",
+  "a_dire": "Un irréductible à racine multiple ne peut exister que dans un corps infini de caractéristique p qui n’est pas parfait.",
+  "legende_titre": "Dans quel corps chercher l’exemple ?",
+  "lecture": [
+   "Le rectangle gris du haut est la caractéristique 0 : corps parfait, aucun exemple (rouge).",
+   "Le rectangle gris du milieu est un corps fini : parfait aussi, aucun exemple (rouge).",
+   "Le rectangle bleu du bas est un corps infini de caractéristique p non parfait : l’exemple est possible (vert)."
+  ],
+  "a_voir": "Une seule des trois lignes mène à un exemple possible."
+ },
+ {
+  "code": "62-142",
+  "a_dire": "Le corps (ℤ/pℤ)(t) est fait des quotients de polynômes en t modulo p ; il est infini et p fois 1 vaut 0.",
+  "legende_titre": "Le corps des fractions en t modulo p",
+  "lecture": [
+   "Le rectangle gris du haut regroupe les polynômes en t à coefficients modulo p ; la flèche orange fait des quotients.",
+   "Le grand rectangle bleu est le corps F ; deux de ses éléments sont t et t/(t + 1).",
+   "La rangée violette 1, t, t², t³, … donne des éléments tous différents : le corps est infini.",
+   "En bas, p × 1 = 0."
+  ],
+  "a_voir": "Les puissances de t ne se répètent jamais, et pourtant p × 1 vaut 0."
+ },
+ {
+  "code": "62-143",
+  "a_dire": "Si t était un carré, les degrés des deux côtés de l’égalité n’auraient pas la même parité : c’est impossible.",
+  "legende_titre": "Comparer les degrés des deux côtés",
+  "lecture": [
+   "Le rectangle gris du haut est l’hypothèse : t est le carré de g sur h (cas p = 2) ; la flèche orange multiplie par h², d’où t h² = g².",
+   "Le rectangle orange donne le degré de t h² : 2d + 1, impair.",
+   "Le rectangle bleu donne le degré de g² : 2e, pair.",
+   "Le rectangle rouge conclut : un nombre impair ne peut pas être égal à un nombre pair."
+  ],
+  "a_voir": "Un côté a un degré impair, l’autre un degré pair."
+ },
+ {
+  "code": "62-144",
+  "a_dire": "x² − t est irréductible sur F, mais dans un corps plus grand il devient (x − b)² : une seule racine, comptée deux fois.",
+  "legende_titre": "Irréductible, et pourtant une racine double",
+  "lecture": [
+   "Le rectangle bleu est f = x² − t, irréductible sur F (cas p = 2).",
+   "La flèche orange mène à un corps plus grand où b² = t ; le rectangle gris montre x² − b² = (x − b)², car 1 + 1 = 0.",
+   "Le cercle violet est l’unique racine b, marquée « × 2 ».",
+   "Le rectangle vert donne le critère : f′ = 0, donc (f, f′) = f."
+  ],
+  "a_voir": "Une seule racine b, comptée deux fois, pour un polynôme irréductible."
+ },
+ {
+  "code": "62-145",
+  "a_dire": "Sans l’hypothèse « caractéristique 0 ou corps fini », un irréductible peut avoir une racine répétée et le critère de séparabilité échoue.",
+  "legende_titre": "Quand l’hypothèse manque",
+  "lecture": [
+   "La colonne verte est le cas « caractéristique 0 ou corps fini » : un irréductible a des racines distinctes, le critère est vrai.",
+   "La colonne rouge est le corps (ℤ/pℤ)(t), qui n’est ni l’un ni l’autre : x^p − t est irréductible avec une seule racine répétée, et le critère est faux.",
+   "Les flèches vont de la situation au résultat."
+  ],
+  "a_voir": "Les deux colonnes ont le même plan, mais l’issue est contraire."
+ },
+ {
+  "code": "62-146",
+  "a_dire": "En posant y = x², le polynôme se factorise en (x² − 2)(x² + 4) et ses quatre racines sont ±√2 et ±2i.",
+  "legende_titre": "De x⁴ + 2x² − 8 à ses quatre racines",
+  "lecture": [
+   "Le rectangle bleu du haut est le polynôme ; la flèche orange pose y = x².",
+   "Le rectangle gris donne y² + 2y − 8, de discriminant 36, et deux valeurs : y = 2 (bleu) et y = −4 (violet).",
+   "Chaque valeur donne un carré de x, puis les racines en vert : ±√2 et ±2i.",
+   "Chaque colonne est un facteur de degré 2."
+  ],
+  "a_voir": "Deux valeurs de y donnent deux facteurs et quatre racines."
+ },
+ {
+  "code": "62-147",
+  "a_dire": "Le corps de décomposition est ℚ(√2, i), de degré 2 × 2 = 4, avec la base 1, √2, i, √2 i.",
+  "legende_titre": "Deux étages de degré 2",
+  "lecture": [
+   "Le rectangle gris du bas est ℚ ; la flèche orange du bas ajoute √2 (×2) et donne le rectangle bleu ℚ(√2).",
+   "La flèche du haut ajoute i (×2) et donne le rectangle vert ℚ(√2, i), qui est aussi ℚ(√2, 2i).",
+   "À droite, les quatre cases vertes sont la base ; 2 × 2 = 4 est le degré."
+  ],
+  "a_voir": "Deux étages de degré 2 donnent quatre éléments de base."
+ },
+ {
+  "code": "62-148",
+  "a_dire": "Le degré 4 du corps et le degré 4 du polynôme coïncident ici parce que le polynôme se casse en deux facteurs irréductibles de degré 2, et non pour la même raison que pour x³ − 2.",
+  "legende_titre": "Deux polynômes, deux façons d’obtenir le degré du corps",
+  "lecture": [
+   "Colonne bleue, x³ − 2 : un facteur de degré 3, puis un de degré 2 ; le corps a le degré 3 × 2 = 6, plus grand que 3 (orange).",
+   "Colonne violette, x⁴ + 2x² − 8 : deux facteurs de degré 2, x² − 2 et x² + 4 ; le corps a le degré 2 × 2 = 4 (vert).",
+   "Le 4 du polynôme et le 4 du corps coïncident dans la colonne violette."
+  ],
+  "a_voir": "À gauche le corps est plus grand que le polynôme, à droite les deux degrés sont égaux."
+ },
+ {
+  "code": "62-149",
+  "a_dire": "Les quatre racines se rangent par paires sur deux axes : une paire par facteur de degré 2.",
+  "legende_titre": "Où sont les quatre racines ?",
+  "lecture": [
+   "Les deux cercles bleus sont sur l’axe réel : ±√2, environ ±1,41, racines de x² − 2.",
+   "Les deux cercles violets sont sur l’axe imaginaire : 2i et −2i, racines de x² + 4.",
+   "Il faut un nombre par axe, √2 et i, pour atteindre les quatre points."
+  ],
+  "a_voir": "Chaque axe porte les deux racines d’un facteur."
+ },
+ {
+  "code": "62-150",
+  "a_dire": "x³ − 3 suit le schéma de x³ − 2 : un étage de degré 3, puis un étage de degré 2, soit le degré 6.",
+  "legende_titre": "Le schéma de x³ − 2 avec le nombre 3",
+  "lecture": [
+   "Le plan montre les trois racines sur un cercle pointillé : ∛3 en bleu, réel, environ 1,44, puis j∛3 et j²∛3 en violet, non réels.",
+   "À droite, la tour : ℚ en gris, ℚ(∛3) en bleu, ℚ(∛3, j) en vert.",
+   "La première flèche multiplie le degré par 3, la seconde par 2 : 3 × 2 = 6."
+  ],
+  "a_voir": "Une racine réelle, deux non réelles, et deux étages de degrés 3 et 2."
+ },
+ {
+  "code": "62-151",
+  "a_dire": "La partie verticale de j∛3 contient ∛3 × √3, qui s’écrit 3 à la puissance 5/6, soit (⁶√3)⁵.",
+  "legende_titre": "D’où vient la racine sixième à la puissance 5",
+  "lecture": [
+   "Dans le plan, le point bleu est j∛3 ; le trait orange horizontal est sa partie horizontale, −∛3 sur 2.",
+   "Le trait bleu vertical est sa partie verticale, ∛3 fois √3, sur 2.",
+   "À droite, chaque racine s’écrit comme puissance de 3 et les exposants s’additionnent : 1/3 + 1/2 = 5/6, d’où (⁶√3)⁵."
+  ],
+  "a_voir": "Le produit ∛3 × √3 devient une seule puissance de 3 par l’addition des exposants."
+ },
+ {
+  "code": "62-152",
+  "a_dire": "Un polynôme déjà scindé a ses racines dans le corps de départ : le corps de décomposition est ce corps, de degré 1.",
+  "legende_titre": "Un polynôme déjà scindé",
+  "lecture": [
+   "Le grand rectangle gris est le corps ℚ.",
+   "Les trois cercles verts sont les racines 1, 2 et 3, toutes dans ce rectangle ; sous chacun, le facteur bleu x − 1, x − 2 ou x − 3.",
+   "En bas, E = ℚ et [E : ℚ] = 1 : rien à ajouter."
+  ],
+  "a_voir": "Les trois racines sont déjà dans ℚ, donc aucun étage."
+ },
+ {
+  "code": "62-153",
+  "a_dire": "Pour x − 5, le polynôme est déjà de degré 1 : sa racine est dans F et le corps de décomposition est F ; c’est le point d’arrivée de la récurrence.",
+  "legende_titre": "Le dernier maillon de la récurrence",
+  "lecture": [
+   "Les rectangles bleus en escalier montrent le degré qui baisse : n, n − 1, puis les suivants.",
+   "Les flèches orange sont les étages.",
+   "Le rectangle vert est l’arrivée : x − 5, de degré 1, dont la racine 5 est dans F ; il n’y a rien à ajouter."
+  ],
+  "a_voir": "L’escalier descend jusqu’au degré 1, où il n’y a plus rien à faire."
+ },
+ {
+  "code": "62-154",
+  "a_dire": "Le polynôme constant 1 ne vaut jamais 0 : il n’a aucune racine, dans aucun corps, d’où l’exigence d’un degré au moins 1.",
+  "legende_titre": "Un polynôme sans racine",
+  "lecture": [
+   "La flèche grise est l’axe de la valeur 0.",
+   "La droite bleue horizontale est f = 1 ; trois points bleus la marquent, avec un pointillé vers l’axe.",
+   "La double flèche rouge montre l’écart : la valeur est toujours 1, jamais 0."
+  ],
+  "a_voir": "La droite ne touche jamais l’axe de la valeur 0."
+ },
+ {
+  "code": "62-155",
+  "a_dire": "Le groupe de Galois est l’ensemble des isomorphismes de E dans E qui laissent F fixe.",
+  "legende_titre": "Un nom pour l’ensemble des isomorphismes",
+  "lecture": [
+   "Le rectangle bleu est E ; le rectangle gris à l’intérieur est F, qui reste fixe.",
+   "La flèche orange est un isomorphisme de E dans E.",
+   "Le rectangle vert rassemble les 6 isomorphismes σ₁ à σ₆ de x³ − 2 : c’est le groupe de Galois.",
+   "En composer deux en donne un autre du même ensemble."
+  ],
+  "a_voir": "Six isomorphismes forment un ensemble qui reste stable quand on les compose."
+ },
+ {
+  "code": "62-156",
+  "a_dire": "L’ordre du groupe de Galois est au plus [E : F], et il lui est égal quand les racines sont distinctes.",
+  "legende_titre": "Compter les isomorphismes contre le degré",
+  "lecture": [
+   "Colonne bleue, x³ − 2 : 6 cases bleues pour le degré et 6 cases vertes pour les isomorphismes, donc 6 = 6 (racines distinctes).",
+   "Colonne violette, x² + t avec 1 + 1 = 0 : 2 cases pour le degré et 1 case pour les isomorphismes, donc 1 < 2 (racine répétée)."
+  ],
+  "a_voir": "À gauche les deux rangées sont aussi longues ; à droite la rangée verte est plus courte."
+ },
+ {
+  "code": "62-157",
+  "a_dire": "La correspondance entre sous-corps et sous-groupes exige que le polynôme soit séparable, pour que l’ordre égale le degré.",
+  "legende_titre": "Une condition pour relier sous-corps et sous-groupes",
+  "lecture": [
+   "En haut, pour un polynôme séparable : la flèche verte relie un sous-corps M (bleu) à un sous-groupe H (violet), et l’ordre du groupe égale [E : F].",
+   "En bas, pour un polynôme non séparable : le lien rouge est coupé d’une croix, l’ordre est plus petit que [E : F] et les deux comptes ne tiennent plus."
+  ],
+  "a_voir": "Le lien tient en haut et se rompt en bas."
+ },
+ {
+  "code": "62-158",
+  "a_dire": "Résoudre par radicaux, c’est construire le corps de décomposition par une tour où chaque étage ajoute un radical ᵐ√a.",
+  "legende_titre": "Un étage par radical",
+  "lecture": [
+   "En haut, le signe ᵐ√a se lit ainsi : m, en orange, est l’indice ; a, en bleu, est le nombre sous la racine.",
+   "En bas, la tour de x³ − 2 : ℚ en gris, ℚ(∛2) en bleu, ℚ(∛2, j) en vert.",
+   "La première flèche ajoute ∛2, avec m = 3 et a = 2 ; la seconde ajoute j, avec j³ = 1."
+  ],
+  "a_voir": "Chaque flèche de la tour ajoute une racine d’un nombre."
+ },
+ {
+  "code": "62-159",
+  "a_dire": "Le groupe de Galois permute les racines : ses éléments sont des rangements, et S₃ en compte 6.",
+  "legende_titre": "Les rangements de trois racines",
+  "lecture": [
+   "Chacun des six rectangles bleus est un rangement de r₁, r₂, r₃.",
+   "Il y en a 6 : 3 choix pour la première place, 2 pour la deuxième, 1 pour la troisième.",
+   "Chaque isomorphisme réalise l’un de ces rangements."
+  ],
+  "a_voir": "Les six rangements sont tous différents et épuisent les possibilités."
+ },
+ {
+  "code": "62-160",
+  "a_dire": "Le polygone régulier à p côtés dépend du degré p − 1 du corps de décomposition de x^p − 1, qui doit être une puissance de 2.",
+  "legende_titre": "Deux polygones, deux degrés",
+  "lecture": [
+   "Le pentagone bleu a p = 5 côtés : le degré est 5 − 1 = 4 = 2 × 2, une puissance de 2 (rectangle vert).",
+   "L’heptagone violet a p = 7 côtés : le degré est 7 − 1 = 6 = 2 × 3, pas une puissance de 2 (rectangle rouge)."
+  ],
+  "a_voir": "La condition sur le degré sépare le cas 5 du cas 7."
+ },
+ {
+  "code": "62-161",
+  "a_dire": "Le corps à 8 éléments est le corps de décomposition de x⁸ − x sur ℤ/2ℤ : ses 8 éléments sont les 8 racines.",
+  "legende_titre": "Le corps à 8 éléments et son polynôme",
+  "lecture": [
+   "Le rectangle violet est le polynôme x⁸ − x sur ℤ/2ℤ ; la flèche orange mène à son corps de décomposition, le grand rectangle vert K.",
+   "Les huit rectangles bleus sont les éléments de K : 0, 1, r₁, r₁ + 1, r₁², r₁² + 1, r₁² + r₁, r₁² + r₁ + 1.",
+   "Il y en a 8 = 2³, autant que de racines."
+  ],
+  "a_voir": "Les huit éléments du corps sont exactement les huit racines."
+ },
+ {
+  "code": "62-162",
+  "a_dire": "La dérivée sert à détecter une racine multiple par un calcul entièrement fait dans F[x].",
+  "legende_titre": "La dérivée au travail dans F[x]",
+  "lecture": [
+   "Le grand rectangle bleu est F[x].",
+   "Les trois rectangles dedans sont f en bleu, sa dérivée f′ en orange, puis leur PGCD en vert.",
+   "La flèche verte donne la réponse : racine multiple, oui ou non.",
+   "Le rectangle pointillé gris du bas est le corps plus grand où vivent les racines : on n’y va pas."
+  ],
+  "a_voir": "Tout le calcul reste dans le rectangle bleu."
+ },
+ {
+  "code": "62-163",
+  "a_dire": "La borne n! est un maximum : x³ − 2 l’atteint, x⁴ − 1 reste très en dessous.",
+  "legende_titre": "La borne n! et le degré réel du corps",
+  "lecture": [
+   "Chaque barre pointillée mesure la borne ; chaque petit carré compte 1.",
+   "Pour x³ − 2, la borne 3! = 6 est entièrement remplie en orange : degré 6.",
+   "Pour x⁴ − 1, la borne 4! = 24 est presque vide : seuls 2 carrés violets sont remplis, degré 2, car un seul étage, ajouter i, suffit."
+  ],
+  "a_voir": "La barre de x³ − 2 est pleine, celle de x⁴ − 1 est presque vide."
+ },
+ {
+  "code": "62-164",
+  "a_dire": "Quand toutes les racines sont des puissances d’une seule, choisir l’image de cette racine fixe les autres : il reste peu de choix.",
+  "legende_titre": "Compter les choix d’un isomorphisme",
+  "lecture": [
+   "En haut, pour x⁴ − 1 : l’image de i a deux possibilités, i ou −i (rectangles verts) ; le reste suit, donc 2 isomorphismes.",
+   "En bas, pour x³ − 2 : l’image de ∛2 a 3 choix (rectangles bleus), puis l’image de j en a 2 (cercles verts) : 6 isomorphismes."
+  ],
+  "a_voir": "L’arbre du haut a 2 feuilles, celui du bas en a 6."
+ }
+]

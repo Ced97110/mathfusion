@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 4, 44, 54, 'fixe')
+text(ax, 24, 52, r'$\mathbb{C}$ complexes', 'fixe', 's')
+box(ax, 6, 8, 36, 38, 'sujet')
+text(ax, 24, 40, r'$\mathbb{R}$ réels', 'sujet', 's')
+box(ax, 10, 12, 28, 20, 'autre', label='fractions\n' + r'$\mathbb{Q}$', size='s')
+text(ax, 67, 48, r'$E/F$', 'encre', 'xl')
+text(ax, 67, 40, r'$E$ contient $F$', 'encre', 's')
+text(ax, 67, 28, r'$E=\mathbb{R}$', 'sujet', 'l')
+text(ax, 67, 14, r'$F=\mathbb{Q}$', 'autre', 'l')
+arrow(ax, (67, 25), (67, 17), 'varie')
+save(fig, '62-036')

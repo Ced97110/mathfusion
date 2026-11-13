@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+# degree 3 irreducible polynomial in Q[x]: f' has degree 2, not zero (the top term loses one power)
+text(ax, 44, 60, 'dans ℚ', 'encre', 'm')
+text(ax, 4, 48, r'$f$', 'sujet', 'l'); text(ax, 4, 34, r'$f^{\prime}$', 'autre', 'l')
+names = [r'$x^3$', r'$x^2$', r'$x$', r'$1$']
+for i in range(4): box(ax, 12 + i * 13, 43, 11, 10, 'sujet', label=names[i])
+text(ax, 12 + 4 * 13 + 14, 48, 'degré 3', 'sujet', 'm')
+box(ax, 12, 29, 11, 10, 'fixe', fill=False, dash=True)
+for i in range(1, 4): box(ax, 12 + i * 13, 29, 11, 10, 'autre', label=names[i])
+text(ax, 12 + 4 * 13 + 14, 34, 'degré 2', 'autre', 'm')
+arrow(ax, (44, 27), (44, 20), 'varie')
+text(ax, 64, 23.5, r'$f$ ne divise pas $f^{\prime}$', 'varie', 's')
+box(ax, 14, 4, 60, 12, 'resultat', label=r'PGCD $=1$ : racines simples')
+save(fig, '62-108')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+# tout le calcul reste dans F[x]
+box(ax, 2, 36, 84, 44, 'sujet')
+text(ax, 10, 74, 'F[x]', 'sujet', 'l', weight='bold')
+box(ax, 6, 52, 20, 12, 'sujet', label=r'$f$', size='m')
+box(ax, 34, 52, 20, 12, 'varie', label=r"$f\,'$", size='m')
+box(ax, 62, 52, 20, 12, 'resultat', label=r"$(f,f\,')$", size='s')
+arrow(ax, (27, 58), (33, 58), 'varie', lw=1.2)
+arrow(ax, (55, 58), (61, 58), 'varie', lw=1.2)
+text(ax, 30, 67.5, 'dériver', 'varie', 's')
+text(ax, 58, 67.5, 'PGCD', 'resultat', 's')
+arrow(ax, (72, 52), (72, 46), 'resultat', lw=1.2)
+text(ax, 62, 41, 'racine multiple ? oui ou non', 'resultat', 's')
+box(ax, 2, 4, 84, 22, 'fixe', fill=False, dash=True, label='corps plus grand E,\noù vivent les racines :\npas besoin d’y aller', size='s')
+save(fig, '62-162')

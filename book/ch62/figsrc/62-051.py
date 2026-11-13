@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, r'avec $f=x^2-1$ : pas un corps', 'encre', 'm')
+box(ax, 6, 62, 76, 11, 'fixe', label=r'$x^2-1=(x-1)(x+1)$', size='s')
+arrow(ax, (44, 61), (44, 55), 'varie')
+box(ax, 6, 43, 36, 11, 'sujet', label=r'$x-1\neq 0$', size='s')
+box(ax, 46, 43, 36, 11, 'autre', label=r'$x+1\neq 0$', size='s')
+arrow(ax, (44, 42), (44, 36), 'varie')
+box(ax, 6, 24, 76, 11, 'limite', label=r'leur produit est $0$ (règle $f=0$)', size='s')
+text(ax, 44, 17, r'comme modulo 6 : $2\times 3=0$', 'fixe', 's')
+arrow(ax, (44, 13), (44, 9), 'limite')
+text(ax, 44, 4.5, r'$x-1$ n’a pas d’inverse', 'limite', 'm')
+save(fig, '62-051')

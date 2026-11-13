@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'isomorphismes $\leq$ $[E:F]$', 'resultat', 'l', weight='bold')
+text(ax, 44, 58, r'$x^2+t=(x+s)^2$', 'sujet', 'm')
+text(ax, 44, 51, r'une seule racine : $s$, comptée 2 fois', 'fixe', 's')
+text(ax, 3, 38, r'$[E:F]$', 'sujet', 'm', ha='left')
+box(ax, 34, 32, 22, 12, 'sujet', label='1')
+box(ax, 58, 32, 22, 12, 'sujet', label='2')
+text(ax, 3, 18, 'isomor-\nphismes', 'resultat', 's', ha='left')
+box(ax, 34, 12, 22, 12, 'resultat', label='1')
+box(ax, 58, 12, 22, 12, 'fixe', fill=False, dash=True)
+text(ax, 44, 5, r'$1<2$ : il en manque un, la borne reste vraie', 'resultat', 's')
+save(fig, '62-069')

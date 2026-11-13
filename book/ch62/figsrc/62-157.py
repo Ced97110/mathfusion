@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(94)
+# haut : séparable, la correspondance tient ; bas : non séparable, elle se rompt
+text(ax, 44, 90, 'polynôme séparable', 'resultat', 'm', weight='bold')
+box(ax, 2, 68, 34, 14, 'sujet', label='sous-corps M\nde E', size='s')
+box(ax, 52, 68, 34, 14, 'autre', label='sous-groupe H\ndu groupe de Galois', size='s')
+arrow(ax, (37, 75), (51, 75), 'resultat', lw=1.4, both=True)
+text(ax, 44, 60, r'ordre du groupe $=[E:F]$', 'resultat', 's')
+line(ax, [(2, 53), (86, 53)], 'fixe', dash=True)
+text(ax, 44, 47, 'polynôme non séparable', 'limite', 'm', weight='bold')
+box(ax, 2, 25, 34, 14, 'sujet', label='sous-corps M\nde E', size='s')
+box(ax, 52, 25, 34, 14, 'autre', label='sous-groupe H\ndu groupe de Galois', size='s')
+line(ax, [(37, 32), (51, 32)], 'limite', lw=1.4, dash=True)
+text(ax, 44, 32, '×', 'limite', 'xl', weight='bold')
+text(ax, 44, 17, r'ordre du groupe $<[E:F]$', 'limite', 's')
+text(ax, 44, 11, 'les deux comptes ne tiennent plus', 'limite', 's')
+save(fig, '62-157')

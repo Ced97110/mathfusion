@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(94)
+text(ax, 22, 90, r'$x^2-2$ irréductible', 'resultat', 'm')
+text(ax, 66, 90, r'$x^2-1$ se casse', 'limite', 'm')
+# gauche
+box(ax, 6, 72, 32, 10, 'fixe', label=r'ℚ[$x$] en entier', size='s')
+line(ax, [(22, 71), (22, 49)], 'fixe')
+text(ax, 25, 60, 'rien entre', 'fixe', 's', ha='left')
+box(ax, 6, 39, 32, 10, 'sujet', label=r'$(x^2-2)$')
+arrow(ax, (22, 38), (22, 29), 'resultat')
+box(ax, 4, 10, 36, 18, 'resultat', label='idéal maximal\nK est un corps', size='s')
+# droite
+box(ax, 50, 72, 32, 10, 'fixe', label=r'ℚ[$x$] en entier', size='s')
+line(ax, [(66, 71), (66, 62)], 'fixe')
+box(ax, 50, 52, 32, 10, 'varie', label=r'$(x-1)$')
+line(ax, [(66, 51), (66, 49)], 'fixe')
+box(ax, 50, 39, 32, 10, 'sujet', label=r'$(x^2-1)$')
+arrow(ax, (66, 38), (66, 29), 'limite')
+box(ax, 48, 10, 36, 18, 'limite', label='un idéal entre les deux\npas un corps', size='s')
+save(fig, '62-056')

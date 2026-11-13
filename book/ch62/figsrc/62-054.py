@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 14, 28, 52, 'limite', label='chercher\nla racine\nquelque part\n\n= faux', size='s')
+box(ax, 38, 54, 48, 12, 'varie', label=r'décréter $x^2-2=0$', size='s')
+arrow(ax, (62, 53), (62, 46), 'varie')
+box(ax, 38, 34, 48, 12, 'sujet', label='construire les restes', size='s')
+arrow(ax, (62, 33), (62, 26), 'varie')
+box(ax, 38, 14, 48, 12, 'resultat', label=r'$x$ est racine', size='s')
+text(ax, 62, 7, r'comme $7=0$ : décidé', 'fixe', 's')
+save(fig, '62-054')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+box(ax, 6, 80, 76, 14, 'resultat', label=r'$n=1$ : $x-3$ déjà scindé' + '\n' + r'donc $E=F$', size='s')
+arrow(ax, (44, 79), (44, 69), 'varie')
+text(ax, 48, 74, r'Kronecker : racine $r_1$ dans $K$', 'varie', 's', ha='left')
+text(ax, 5, 59, r'$f=$', 'encre', 'm')
+box(ax, 14, 52, 24, 14, 'sujet', label=r'$x-r_1$', size='s')
+text(ax, 42, 59, r'$\times$', 'fixe', 'l')
+box(ax, 48, 52, 38, 14, 'autre', label=r'$q$ : degré $n-1$', size='s')
+arrow(ax, (67, 51), (67, 40), 'varie')
+text(ax, 70, 45.5, 'récurrence', 'varie', 's', ha='left')
+box(ax, 6, 14, 76, 24, 'sujet', label=r'$E=K(r_2,\ldots,r_n)$' + '\n' + 'corps de décomposition de $f$', size='s')
+save(fig, '62-066')

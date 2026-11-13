@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 44, 36, 14, 'limite', dash=True, label='réels')
+box(ax, 50, 44, 36, 14, 'limite', dash=True, label='complexes')
+text(ax, 44, 65, 'interdit de s’appuyer sur :', 'limite', 's')
+box(ax, 2, 22, 36, 14, 'sujet', label='polynômes\n(calcul seul)')
+arrow(ax, (40, 29), (48, 29), 'varie', lw=1.3)
+box(ax, 50, 22, 36, 14, 'resultat', label='corps avec\nla racine')
+text(ax, 44, 14, 'quotient d’un anneau par un idéal', 'varie', 'm')
+text(ax, 44, 7, '(Cauchy, Kronecker)', 'fixe', 's')
+save(fig, '62-008')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 22, 51, 'racines distinctes', 'sujet', 'm')
+text(ax, 66, 51, 'racine répétée', 'autre', 'm')
+text(ax, 22, 44, r'$x^3-2$', 'fixe', 's')
+text(ax, 66, 44, r'$(x-1)^2(x+2)$', 'fixe', 's')
+for i, x in enumerate([8, 22, 36]):
+    disc(ax, x, 30, 5, 'sujet', label=r'$r_%d$' % (i + 1), size='s')
+disc(ax, 58, 30, 5, 'autre')
+disc(ax, 56, 30, 5, 'autre', label=r'$1$', size='s')
+disc(ax, 76, 30, 5, 'autre', label=r'$-2$', size='s')
+text(ax, 62, 21, 'racine 1 : 2 fois', 'autre', 's')
+box(ax, 8, 4, 28, 10, 'resultat', label='3 choix')
+box(ax, 54, 4, 24, 10, 'varie', label='2 choix')
+save(fig, '62-071')

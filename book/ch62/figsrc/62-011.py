@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 38, 34, 12, 'sujet', label='$f=x^2-2x+1$', size='s')
+arrow(ax, (19, 37.5), (19, 27.5), 'varie', lw=1.2)
+text(ax, 31, 32.5, 'dérivée', 'varie', 's')
+box(ax, 2, 14, 34, 12, 'autre', label='$f\'=2x-2$', size='s')
+box(ax, 54, 26, 32, 14, 'resultat', label='facteur commun\n$x-1$', size='s')
+arrow(ax, (36.5, 44), (53.5, 35), 'fixe')
+arrow(ax, (36.5, 20), (53.5, 31), 'fixe')
+arrow(ax, (70, 25.5), (70, 17.5), 'varie')
+box(ax, 54, 5, 32, 12, 'resultat', label='racine double', size='s')
+text(ax, 44, 56, 'sans factoriser, sans vitesse', 'encre', 'm')
+save(fig, '62-011')

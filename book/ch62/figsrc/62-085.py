@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 50, 28, 11, 'sujet', label=r'$f$ : degré 3')
+box(ax, 30, 31, 28, 11, 'sujet', label=r'$g$ : degré 2')
+box(ax, 58, 12, 28, 11, 'sujet', label='degré 1')
+arrow(ax, (16, 49), (30, 37), 'varie', curve=0.0)
+arrow(ax, (44, 30), (58, 18), 'varie', curve=0.0)
+text(ax, 36, 52, r'$f=(x-u)\,g$', 'varie', 's', ha='left')
+text(ax, 62, 33, 'un facteur de moins', 'varie', 's', ha='left')
+text(ax, 72, 6, 'déjà scindé', 'resultat', 's')
+text(ax, 33, 58, r'$\tilde{\varphi}$ : $K(u)\to K^\prime(v)$', 'fixe', 's', ha='left')
+save(fig, '62-085')

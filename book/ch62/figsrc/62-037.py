@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'$f(r)=0$', 'encre', 'xl')
+box(ax, 8, 46, 72, 12, 'sujet', label=r'$f(x)=x^2-2x+1$')
+arrow(ax, (44, 45), (44, 38), 'varie')
+text(ax, 62, 41.5, r'$x$ devient $r=1$', 'varie', 's')
+box(ax, 8, 24, 72, 12, 'varie', label=r'$f(1)=1-2+1$')
+arrow(ax, (44, 23), (44, 16), 'varie')
+box(ax, 8, 4, 72, 12, 'resultat', label=r'$f(1)=0$ : 1 est racine')
+save(fig, '62-037')

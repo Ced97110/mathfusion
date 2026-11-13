@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, r'$f=x^2$, donc $f^\prime=2x$', 'fixe', 'm')
+text(ax, 44, 57, r'$a=5$, nombre de $F$ : égal', 'resultat', 's')
+box(ax, 2, 40, 34, 11, 'sujet', label=r'$(5f)^\prime=10x$', size='s')
+text(ax, 44, 45.5, '=', 'resultat', 'l')
+box(ax, 52, 40, 34, 11, 'sujet', label=r'$5f^\prime=5\cdot 2x=10x$', size='s')
+text(ax, 44, 30, r'$a=x$, pas un nombre de $F$ : différent', 'limite', 's')
+box(ax, 2, 10, 34, 11, 'limite', label=r'$(xf)^\prime=3x^2$', size='s')
+text(ax, 44, 15.5, r'$\neq$', 'limite', 'l')
+box(ax, 52, 10, 34, 11, 'limite', label=r'$xf^\prime=x\cdot 2x=2x^2$', size='s')
+save(fig, '62-096')

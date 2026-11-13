@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 10, 70, 14, 0, 2, step=0.5, arrow_right=False)
+R = 2 ** (1 / 3)
+disc(ax, f(R), 14, 1.7, 'sujet')
+arrow(ax, (f(R), 27), (f(R), 16.5), 'sujet', lw=1.1)
+text(ax, f(R), 31, '$r_1$ = ∛2', 'sujet', 'xl')
+text(ax, f(R) + 3, 21, '≈ 1,26', 'sujet', 's', ha='left')
+text(ax, 4, 41, 'le 1 est un numéro,', 'fixe', 's', ha='left')
+text(ax, 4, 37, 'pas un calcul', 'fixe', 's', ha='left')
+text(ax, 84, 3, 'racine réelle : point de départ', 'varie', 's', ha='right')
+save(fig, '62-015')

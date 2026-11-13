@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 70, r'mêmes $a$ et $b$ des deux côtés', 'resultat', 's')
+box(ax, 2, 46, 34, 16, 'sujet', label=r'$a+bx$', size='l')
+text(ax, 19, 41, 'restes de polynômes', 'sujet', 's')
+text(ax, 19, 33, r'$x^2=2$', 'fixe', 'm')
+box(ax, 52, 46, 34, 16, 'autre', label=r'$a+b\sqrt{2}$', size='l')
+text(ax, 69, 41, 'nombres réels', 'autre', 's')
+text(ax, 69, 33, r'$(\sqrt{2})^2=2$', 'fixe', 'm')
+arrow(ax, (37, 54), (51, 54), 'resultat', both=True)
+text(ax, 44, 17, 'mêmes règles de calcul', 'resultat', 'm')
+text(ax, 44, 9, 'chaque reste ↔ un seul nombre', 'resultat', 's')
+save(fig, '62-060')

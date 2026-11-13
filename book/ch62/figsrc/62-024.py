@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 28, 32, 14, 'fixe', label='$2x^3-4$')
+text(ax, 18, 47, 'coefficient dominant : 2', 'varie', 's')
+arrow(ax, (36, 35), (52, 35), 'varie', lw=1.3)
+text(ax, 44, 39.5, '÷ 2', 'varie', 'm')
+box(ax, 54, 28, 32, 14, 'sujet', label='$x^3-2$')
+text(ax, 70, 47, 'coefficient dominant : 1', 'sujet', 's')
+text(ax, 44, 15, 'mêmes racines : $x^3=2$ dans les deux cas', 'resultat', 's')
+text(ax, 44, 8, '2 fois un nombre ne vaut 0 que si ce nombre vaut 0', 'fixe', 's')
+text(ax, 44, 56, 'on peut toujours se ramener à un polynôme unitaire', 'encre', 's')
+save(fig, '62-024')

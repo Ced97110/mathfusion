@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+disc(ax, 44, 38, 30, 'autre')
+text(ax, 44, 63, '$E$ = réels', 'autre', 'm')
+disc(ax, 30, 38, 12, 'sujet')
+text(ax, 30, 41, '$F$ = fractions', 'sujet', 's')
+text(ax, 30, 35, '$-2$ est ici', 'sujet', 's')
+disc(ax, 60, 38, 1.7, 'resultat')
+text(ax, 60, 43, '$r$ = ∛2', 'resultat', 'm')
+text(ax, 60, 32.5, '$f(r) = 0$', 'resultat', 'm')
+text(ax, 44, 4, '$f = x^3-2$ : coefficients dans $F$, racine dans $E$', 'encre', 's')
+save(fig, '62-025')

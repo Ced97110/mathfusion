@@ -1,0 +1,383 @@
+[
+ {
+  "code": "62-034",
+  "a_dire": "La lettre F désigne un corps de départ quelconque : les fractions, les réels ou les restes modulo 7.",
+  "legende_titre": "Une lettre, plusieurs corps possibles",
+  "lecture": [
+   "Le rectangle bleu du haut est la lettre F.",
+   "Les trois flèches orange partent de F : elles montrent les choix possibles.",
+   "Les trois rectangles gris sont trois corps que F peut être : les fractions, les réels, les restes modulo 7."
+  ],
+  "a_voir": "Une seule lettre F peut désigner n’importe lequel de ces trois corps."
+ },
+ {
+  "code": "62-035",
+  "a_dire": "Le signe F[x] désigne l’ensemble de tous les polynômes en x dont les coefficients sont dans F.",
+  "legende_titre": "Un signe pour tous les polynômes du même genre",
+  "lecture": [
+   "Le grand rectangle bleu est F[x], ici avec F égal aux fractions.",
+   "Les trois rectangles blancs dedans sont trois polynômes : x² − 2, 3x + 1/2 et 7.",
+   "La flèche orange mène à f ∈ F[x] en vert : f est un polynôme de cet ensemble."
+  ],
+  "a_voir": "Les trois polynômes sont dans le même grand rectangle : leurs coefficients sont des fractions."
+ },
+ {
+  "code": "62-036",
+  "a_dire": "Le signe E/F veut dire que le corps E contient le corps F.",
+  "legende_titre": "Le grand corps en haut, le petit en bas",
+  "lecture": [
+   "Les rectangles emboîtés montrent trois corps : les complexes (gris) contiennent les réels (bleu), qui contiennent les fractions (violet).",
+   "À droite, E/F se lit « E contient F ».",
+   "Ici E est les réels, en bleu, et F est les fractions, en violet. La flèche orange va de E à F."
+  ],
+  "a_voir": "Le trait oblique ne divise rien : il range le grand corps E au-dessus du petit corps F."
+ },
+ {
+  "code": "62-037",
+  "a_dire": "Le signe f(r) = 0 dit qu’en remplaçant x par r dans f, on obtient 0 : r est racine.",
+  "legende_titre": "Remplacer, calculer, comparer à 0",
+  "lecture": [
+   "Le rectangle bleu donne le polynôme f(x) = x² − 2x + 1.",
+   "La flèche orange dit que x est remplacé par r, ici 1. Le rectangle orange donne le calcul 1 − 2 + 1.",
+   "Le rectangle vert donne le résultat : f(1) = 0, donc 1 est racine."
+  ],
+  "a_voir": "Le signe f(r) = 0 résume : on remplace, on calcule, on trouve 0."
+ },
+ {
+  "code": "62-038",
+  "a_dire": "Le signe x − r ∣ f veut dire que f est le produit de x − r par un autre polynôme, sans reste.",
+  "legende_titre": "Diviser sans reste, pour les nombres et les polynômes",
+  "lecture": [
+   "La ligne grise du haut rappelle 6 = 3 × 2 : 3 divise 6.",
+   "Sur la ligne du bas, x² − 9 s’écrit comme un produit de deux rectangles.",
+   "Le rectangle bleu x − 3 est le diviseur. Le rectangle gris x + 3 est l’autre polynôme du produit."
+  ],
+  "a_voir": "Le trait vertical se lit « divise » : x − 3 est l’un des deux facteurs de x² − 9."
+ },
+ {
+  "code": "62-039",
+  "a_dire": "Le signe F(r) désigne le plus petit corps qui contient F et le nombre r.",
+  "legende_titre": "Ajouter un nombre à un corps",
+  "lecture": [
+   "Le rectangle gris est le corps de départ : les fractions.",
+   "Le rectangle orange est le nombre ajouté : √2. Le signe plus et la flèche orange mènent au corps obtenu.",
+   "Le grand rectangle bleu est ℚ(√2). Il contient des nombres comme 1 + 3√2 et reste stable pour les quatre opérations."
+  ],
+  "a_voir": "Les parenthèses de F(r) disent qu’on ajoute r à F, puis qu’on complète avec les quatre opérations."
+ },
+ {
+  "code": "62-040",
+  "a_dire": "Le signe F[x]/(f) désigne les restes de la division des polynômes de F[x] par f.",
+  "legende_titre": "Les restes d’une division de polynômes",
+  "lecture": [
+   "Les rectangles gris de gauche sont trois polynômes : x², x³ et x² + x.",
+   "Chaque flèche orange est une division par x² − 2.",
+   "Les rectangles bleus de droite sont les restes : 2, 2x et 2 + x. Chacun est de degré au plus 1."
+  ],
+  "a_voir": "Les restes forment l’ensemble F[x]/(f) : ce sont des polynômes de la forme a + bx."
+ },
+ {
+  "code": "62-041",
+  "a_dire": "Le signe [E : F] est le nombre de coefficients de F qu’il faut pour écrire chaque élément de E d’une seule façon.",
+  "legende_titre": "Compter les fractions nécessaires",
+  "lecture": [
+   "En haut, dans ℚ, un nombre s’écrit avec une seule fraction : 3/4 fois 1. Le degré vaut 1.",
+   "En bas, dans ℚ(√2), un nombre s’écrit avec deux fractions : 3/4 fois 1, plus 5/3 fois √2.",
+   "L’accolade bleue compte ces deux fractions. Le résultat vert est le degré 2."
+  ],
+  "a_voir": "Le degré est le nombre de fractions nécessaires : 1 pour ℚ, 2 pour ℚ(√2)."
+ },
+ {
+  "code": "62-042",
+  "a_dire": "Le signe f′ désigne un second polynôme, calculé à partir de f par une règle sur ses coefficients.",
+  "legende_titre": "Un second polynôme calculé à partir du premier",
+  "lecture": [
+   "La ligne bleue donne les coefficients de f = x³ − 3x + 2 : 1, 0, −3 et 2, sous x³, x², x et 1.",
+   "Les flèches orange partent de trois coefficients de f.",
+   "La ligne verte donne les coefficients du nouveau polynôme f′ = 3x² − 3 : 3, 0 et −3."
+  ],
+  "a_voir": "f′ est un autre polynôme, obtenu à partir des coefficients de f. Le trait n’est pas un exposant."
+ },
+ {
+  "code": "62-043",
+  "a_dire": "Le signe (f, f′) = 1 dit que f et f′ n’ont aucun facteur commun : leur plus grand diviseur commun est 1.",
+  "legende_titre": "Deux polynômes sans facteur commun",
+  "lecture": [
+   "En bleu, f = x² − 1 est le produit des facteurs x − 1 et x + 1.",
+   "En violet, f′ = 2x est le produit des facteurs 2 et x.",
+   "Aucun rectangle bleu ne ressemble à un rectangle violet : le plus grand diviseur commun est 1."
+  ],
+  "a_voir": "Les facteurs du haut et ceux du bas sont tous différents : c’est ce que dit (f, f′) = 1."
+ },
+ {
+  "code": "62-044",
+  "a_dire": "Le signe kᵢ est le nombre de fois où le facteur de la racine numéro i apparaît dans le produit.",
+  "legende_titre": "Compter les facteurs égaux",
+  "lecture": [
+   "Le produit du haut a trois facteurs : x − 1, x − 1 et x + 2.",
+   "Les deux rectangles bleus sont le même facteur, celui de la racine 1. L’accolade bleue le compte deux fois : k₁ = 2.",
+   "Le rectangle violet est le facteur de la racine −2. Il apparaît une fois : k₂ = 1."
+  ],
+  "a_voir": "Le petit numéro i dit de quelle racine on parle ; k dit combien de fois son facteur apparaît."
+ },
+ {
+  "code": "62-045",
+  "a_dire": "Le signe F^p désigne l’ensemble des puissances p-ièmes des éléments de F ; ici, modulo 5, il est égal à F tout entier.",
+  "legende_titre": "Élever chaque reste à la puissance 5",
+  "lecture": [
+   "La colonne bleue est F : les restes modulo 5, de 0 à 4.",
+   "Chaque flèche orange élève un reste à la puissance 5.",
+   "La colonne verte est F^p : les puissances 5. On y retrouve les mêmes cinq nombres.",
+   "Le texte du bas donne trois calculs : 2⁵ = 32, 3⁵ = 243 et 4⁵ = 1 024 ont pour restes 2, 3 et 4."
+  ],
+  "a_voir": "Chaque flèche arrive sur le même nombre qu’au départ : l’ensemble des puissances 5 est tout le corps."
+ },
+ {
+  "code": "62-046",
+  "a_dire": "[ℚ(√2) : ℚ] = 2 parce que chaque nombre s’écrit d’une seule façon avec la base {1, √2} et deux fractions.",
+  "legende_titre": "Trouver un degré avec une base",
+  "lecture": [
+   "Le nombre du haut est 3/4 + (5/3)√2.",
+   "Les deux rectangles orange sont ses deux fractions : 3/4 et 5/3.",
+   "Les rectangles bleus du bas sont la base : 1 et √2. Chaque flèche relie une fraction au nombre qu’elle multiplie.",
+   "L’accolade compte deux nombres, donc le degré vaut 2."
+  ],
+  "a_voir": "Le degré est le nombre d’éléments de la base, pas le nombre d’éléments du corps."
+ },
+ {
+  "code": "62-047",
+  "a_dire": "Un polynôme irréductible n’a aucune racine dans F, parce qu’une racine r donnerait le facteur x − r qui le casserait.",
+  "legende_titre": "Une racine casse le polynôme",
+  "lecture": [
+   "La colonne rouge montre x² − 1 : il a la racine 1, car 1 − 1 = 0.",
+   "Cette racine donne le facteur x − 1 : le polynôme se casse en (x − 1)(x + 1). Il n’est pas irréductible.",
+   "La colonne verte montre x² − 2 : il est irréductible, donc aucun facteur x − r et aucune racine dans ℚ."
+  ],
+  "a_voir": "Sans l’hypothèse « irréductible », l’énoncé est faux : la colonne rouge a une racine."
+ },
+ {
+  "code": "62-048",
+  "a_dire": "Les restes modulo 7 et les restes modulo x² − 2 se construisent de la même façon : ligne contre ligne, chacun joue le même rôle.",
+  "legende_titre": "Deux colonnes, une même construction",
+  "lecture": [
+   "La colonne bleue de gauche est ℤ/7ℤ. La colonne violette de droite est ℚ[x]/(x² − 2).",
+   "Sur la première ligne, les restes 0, 1, …, 6 correspondent aux restes de la forme a + bx.",
+   "Sur la deuxième ligne, la règle 7 = 0 correspond à la règle x² = 2.",
+   "Le texte du bas dit que le reste x vérifie la règle de la colonne de droite : c’est une racine."
+  ],
+  "a_voir": "Les flèches vertes relient, ligne par ligne, ce qui joue le même rôle à gauche et à droite."
+ },
+ {
+  "code": "62-049",
+  "a_dire": "Dans ℤ/7ℤ, deux entiers de même reste dans la division par 7 sont regardés comme le même nombre : la règle est 7 = 0.",
+  "legende_titre": "Regarder deux entiers comme le même nombre",
+  "lecture": [
+   "Les rectangles gris à gauche sont des entiers : 9, 16 et 7.",
+   "Les flèches orange sont des divisions par 7. 9 et 16 ont le même reste, 2 : ils arrivent dans le même rectangle bleu.",
+   "7 a pour reste 0 : il arrive dans le rectangle bleu 0.",
+   "Le texte vert donne la règle de calcul : 7 = 0."
+  ],
+  "a_voir": "9 et 16 deviennent le même nombre 2 ; 7 devient 0. Une seule règle suffit : 7 = 0."
+ },
+ {
+  "code": "62-050",
+  "a_dire": "La construction de Kronecker fabrique une racine pour un polynôme qui n’en a pas, en calculant avec les restes modulo ce polynôme et en posant f = 0.",
+  "legende_titre": "Fabriquer une racine avec des restes",
+  "lecture": [
+   "Le rectangle gris du haut donne le problème : x² − 2 n’a pas de racine dans ℚ.",
+   "On prend les polynômes de ℚ[x], puis (rectangle orange) on regarde comme égaux deux polynômes de même reste.",
+   "Les restes forment ℚ[x]/(x² − 2), en bleu.",
+   "Le rectangle vert donne la règle x² − 2 = 0 : dans cet ensemble, x est racine."
+  ],
+  "a_voir": "Les flèches orange suivent les étapes, du problème jusqu’à la racine fabriquée."
+ },
+ {
+  "code": "62-051",
+  "a_dire": "La méthode ne donne pas un corps quand le polynôme se casse : deux restes non nuls ont un produit nul, et un reste n’a pas d’inverse.",
+  "legende_titre": "Quand le polynôme se casse",
+  "lecture": [
+   "Le rectangle gris du haut montre que x² − 1 se casse en (x − 1)(x + 1).",
+   "Le rectangle bleu x − 1 et le rectangle violet x + 1 sont deux restes qui ne valent pas 0.",
+   "Le rectangle rouge dit que leur produit vaut 0. Le texte gris rappelle que modulo 6, 2 fois 3 vaut 0.",
+   "Le texte rouge du bas dit que x − 1 n’a pas d’inverse."
+  ],
+  "a_voir": "Deux restes non nuls dont le produit est 0 : on ne peut pas diviser, ce n’est pas un corps."
+ },
+ {
+  "code": "62-052",
+  "a_dire": "Dans ℚ[x]/(x² − 2), le produit de deux restes a + bx est encore un reste de la forme a + bx, grâce à la règle x² = 2.",
+  "legende_titre": "Multiplier deux restes",
+  "lecture": [
+   "Le rectangle bleu du haut est le produit (1 + 2x)(3 + x).",
+   "Le rectangle gris donne le développement : 3 + 7x + 2x².",
+   "Le rectangle orange applique la règle : x² = 2, donc 2x² = 4.",
+   "Le rectangle vert donne le résultat : 7 + 7x, encore de la forme a + bx."
+  ],
+  "a_voir": "Le terme en x² disparaît grâce à la règle x² = 2 : le produit reste un reste."
+ },
+ {
+  "code": "62-053",
+  "a_dire": "Le signe r = x + (f) désigne la classe de x : x et tous les polynômes obtenus en lui ajoutant un multiple de f ; elle vérifie r² = 2.",
+  "legende_titre": "Une classe de polynômes nommée r",
+  "lecture": [
+   "Le grand rectangle gris du haut rappelle la classe de 2 modulo 7 : 2, 9, 16 et ainsi de suite.",
+   "Dans le grand rectangle bleu, r est la classe de x. Elle contient x et x + (x² − 2), qui sont regardés comme le même objet.",
+   "Le texte vert du bas dit que r au carré égale 2."
+  ],
+  "a_voir": "Une classe de polynômes joue le même rôle qu’une classe d’entiers modulo 7."
+ },
+ {
+  "code": "62-054",
+  "a_dire": "On n’a pas cherché la racine : on a posé la règle x² − 2 = 0, puis on a construit l’ensemble où cette règle est vraie.",
+  "legende_titre": "Décider une règle au lieu de chercher un nombre",
+  "lecture": [
+   "Le rectangle rouge de gauche dit que chercher une racine qui existerait déjà quelque part est faux.",
+   "À droite, le rectangle orange est le geste : décréter x² − 2 = 0.",
+   "Le rectangle bleu est la construction des restes. Le rectangle vert dit que x est alors racine.",
+   "Le texte gris rappelle que 7 = 0 a été décidé de la même façon."
+  ],
+  "a_voir": "La racine existe parce que l’ensemble a été construit avec la règle, pas parce qu’on l’a trouvée."
+ },
+ {
+  "code": "62-055",
+  "a_dire": "Si f est irréductible, K = F[x]/(f) est un corps qui contient F, où la classe r de x est racine, avec K = F(r) et [K : F] = deg f.",
+  "legende_titre": "Ce que le théorème affirme, sur un cas chiffré",
+  "lecture": [
+   "Le grand rectangle bleu est K = ℚ[x]/(x² − 2) : le texte vert dit que c'est un corps.",
+   "Le rectangle gris dedans est ℚ, qui est dans K : les restes constants a.",
+   "Le rectangle vert est la classe r de x : r² = 2, donc r est racine. Le texte du bas du grand rectangle dit K = ℚ(r).",
+   "Les deux rectangles bleus du dessous sont les deux coefficients d'un reste a + br. L'accolade dit : [K : ℚ] = 2 = deg f."
+  ],
+  "a_voir": "Quatre faits se lisent dans la figure : K est un corps qui contient ℚ, r est racine, K = ℚ(r), le degré est 2."
+ },
+ {
+  "code": "62-056",
+  "a_dire": "K = F[x]/(f) est un corps parce que (f) est un idéal maximal quand f est irréductible : aucun idéal ne se glisse entre (f) et l’anneau entier.",
+  "legende_titre": "Pourquoi le quotient est un corps",
+  "lecture": [
+   "Dans la colonne verte, f = x² − 2 est irréductible : entre ℚ[x] et l’idéal (x² − 2), il n’y a rien.",
+   "Le rectangle vert du bas dit alors : idéal maximal, K est un corps.",
+   "Dans la colonne rouge, f = x² − 1 se casse : l’idéal (x − 1), en orange, se glisse entre les deux.",
+   "Le rectangle rouge du bas dit que ce n’est pas un corps."
+  ],
+  "a_voir": "Un idéal entre (f) et ℚ[x] empêche (f) d’être maximal ; sans lui, le quotient est un corps."
+ },
+ {
+  "code": "62-057",
+  "a_dire": "Un reste non nul g a un inverse : l’algorithme d’Euclide donne ug + vf = 1, et la règle f = 0 laisse ug = 1.",
+  "legende_titre": "Un inverse avec l’algorithme d’Euclide",
+  "lecture": [
+   "La première ligne donne la combinaison 5 × 3 + (−2) × 7 = 1 modulo 7. Le rectangle bleu est ug avec u = 5 et g = 3.",
+   "Le rectangle gris est vf avec v = −2 et f = 7.",
+   "Les flèches orange descendent avec la règle 7 = 0 : le rectangle gris devient 0, en pointillés.",
+   "Le rectangle vert conclut : 5 × 3 = 1, donc 5 est l’inverse de 3."
+  ],
+  "a_voir": "La règle f = 0 fait disparaître le terme vf : il reste ug = 1."
+ },
+ {
+  "code": "62-058",
+  "a_dire": "Avec f = x² − 1, qui se casse, K n’est pas un corps : un reste non nul n’a pas d’inverse, alors qu’avec x² − 2 il en a un.",
+  "legende_titre": "L’irréductibilité sépare un corps du reste",
+  "lecture": [
+   "La colonne verte montre f = x² − 2, irréductible : le reste x multiplié par x/2 donne 1, donc x a un inverse.",
+   "La colonne rouge montre f = x² − 1 = (x − 1)(x + 1) : le reste x − 1 multiplié par x + 1 donne 0.",
+   "En bas, vert : un corps. Rouge : pas un corps."
+  ],
+  "a_voir": "Le même test, chercher un inverse, réussit à gauche et échoue à droite."
+ },
+ {
+  "code": "62-059",
+  "a_dire": "Les restes modulo f ont autant de coefficients que le degré de f : [K : F] est ce nombre, avec la base 1, r, …, rⁿ⁻¹.",
+  "legende_titre": "Compter les coefficients d’un reste",
+  "lecture": [
+   "En haut, on divise par un polynôme de degré 2 : un reste a deux cases, a₀ et a₁x, comptées par l’accolade.",
+   "En bas, on divise par un polynôme de degré 3 : un reste a trois cases, a₀, a₁x et a₂x².",
+   "Le texte vert du bas dit que le degré [K : F] est n, le degré de f."
+  ],
+  "a_voir": "Le nombre de cases d’un reste est le degré de f, pas le nombre d’éléments de K."
+ },
+ {
+  "code": "62-060",
+  "a_dire": "ℚ[x]/(x² − 2) et ℚ(√2) sont le même à isomorphisme près : a + bx correspond à a + b√2, avec les mêmes règles de calcul.",
+  "legende_titre": "Même objet, sens précis du mot « même »",
+  "lecture": [
+   "Le rectangle bleu de gauche est un reste de polynômes a + bx, avec la règle x² = 2.",
+   "Le rectangle violet de droite est un nombre réel a + b√2, avec la règle (√2)² = 2.",
+   "La flèche verte garde les mêmes fractions a et b des deux côtés.",
+   "Les textes verts du bas disent : mêmes règles de calcul, un seul nombre pour chaque reste."
+  ],
+  "a_voir": "Les deux objets sont différents, mais ils se calculent de la même façon et se correspondent un à un."
+ },
+ {
+  "code": "62-061",
+  "a_dire": "La correspondance respecte la multiplication parce que la règle x² = 2 est exactement la règle (√2)² = 2.",
+  "legende_titre": "Un même calcul des deux côtés",
+  "lecture": [
+   "La colonne bleue calcule (1 + x)² : elle développe en 1 + 2x + x², puis la règle x² = 2 donne 3 + 2x.",
+   "La colonne violette calcule (1 + √2)² : elle développe en 1 + 2√2 + (√2)², puis la règle (√2)² = 2 donne 3 + 2√2.",
+   "Les flèches vertes relient chaque ligne à sa ligne correspondante."
+  ],
+  "a_voir": "Une seule égalité, celle du carré, suffit pour que les deux colonnes se correspondent."
+ },
+ {
+  "code": "62-062",
+  "a_dire": "Tout polynôme unitaire de degré au moins 1 a un corps de décomposition, de degré fini, obtenu par des étages de Kronecker.",
+  "legende_titre": "Des étages qui s’arrêtent",
+  "lecture": [
+   "En bas, le rectangle gris est ℚ : x³ − 2 y a un seul facteur, de degré 3.",
+   "Le rectangle violet est K₁ = ℚ(r), avec r la racine cubique de 2. La flèche « ×3 » est le degré de ce premier étage ; il reste un facteur de degré 2.",
+   "En haut, le rectangle bleu est E, après la flèche « ×2 » : trois facteurs de degré 1.",
+   "Le texte vert du haut multiplie les degrés : 3 × 2 = 6."
+  ],
+  "a_voir": "Chaque étage a un degré fini et il n’y a que deux étages : le degré total est fini."
+ },
+ {
+  "code": "62-063",
+  "a_dire": "En répétant Kronecker sur un facteur de degré supérieur à 1, le nombre de facteurs augmente à chaque étage mais ne dépasse jamais le degré n de f.",
+  "legende_titre": "Compter les facteurs étage après étage",
+  "lecture": [
+   "En haut à gauche, la légende : bleu = degré plus grand que 1, qui se casse ; orange = degré 1, fini.",
+   "Chaque ligne a la même largeur totale : le degré 3 de x³ − 2 ne change pas.",
+   "En haut, un seul facteur de degré 3. À la ligne du milieu, un facteur de degré 1 (orange) et un facteur de degré 2 (bleu).",
+   "En bas, le facteur de degré 2 s'est cassé : trois facteurs de degré 1.",
+   "À droite, le nombre de facteurs passe de 1 à 2 puis à 3, qui est n : on s'arrête."
+  ],
+  "a_voir": "Le nombre de facteurs augmente à chaque étage dans une largeur fixe : il s'arrête à n = 3."
+ },
+ {
+  "code": "62-064",
+  "a_dire": "Le degré est fini car chaque ajout multiplie le degré par un entier fini : [E : F] = [E : K][K : F].",
+  "legende_titre": "Un degré total qui est un produit",
+  "lecture": [
+   "Les trois colonnes sont les trois nombres de la base de K sur F : 1, r et r². L’accolade en haut dit [K : F] = 3.",
+   "Les deux lignes sont les deux nombres de la base de E sur K : 1 en bleu, j en orange. Le trait orange à gauche dit [E : K] = 2.",
+   "Les six cases sont les six produits : c’est le degré [E : F].",
+   "Le texte vert écrit le produit 2 × 3 = 6."
+  ],
+  "a_voir": "Trois colonnes fois deux lignes donnent six cases : les degrés se multiplient."
+ },
+ {
+  "code": "62-065",
+  "a_dire": "La borne [E : F] ≤ n! suppose que E est fabriqué avec les racines de f et rien d’autre ; avec un corps plus gros, elle tombe.",
+  "legende_titre": "Quand la borne n! ne tient plus",
+  "lecture": [
+   "Chaque case compte 1 de degré. Le trait pointillé gris marque la borne 2! = 2 pour f = x² − 2.",
+   "La barre du haut est ℚ(√2), fabriqué avec les racines seules : 2 cases, sous la borne.",
+   "La barre du bas est ℚ(⁴√2), un corps plus gros que les racines seules : 4 cases.",
+   "Les cases 3 et 4, en rouge, dépassent la borne."
+  ],
+  "a_voir": "Sans l'hypothèse « fabriqué avec les racines seules », le degré 4 dépasse la borne 2."
+ },
+ {
+  "code": "62-066",
+  "a_dire": "La preuve de Judson va par récurrence sur le degré n : le cas n = 1 est déjà fait, et on passe de n − 1 à n avec Kronecker puis l’hypothèse de récurrence sur q.",
+  "legende_titre": "Une preuve par récurrence sur le degré",
+  "lecture": [
+   "Le rectangle vert du haut est le départ : pour n = 1, x − 3 est déjà scindé, donc E = F.",
+   "La première flèche orange est une construction de Kronecker : une racine r₁ dans K, donc f = (x − r₁) q.",
+   "Le rectangle bleu est x − r₁. Le rectangle violet est q, de degré n − 1.",
+   "La deuxième flèche applique la récurrence à q. Le grand rectangle bleu donne E = K(r₂, …, rₙ)."
+  ],
+  "a_voir": "L’étape qui porte le poids est la deuxième flèche : la récurrence appliquée à q, de degré plus petit."
+ }
+]

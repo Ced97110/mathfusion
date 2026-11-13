@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+# escalier : chaque étage fait baisser le degré, jusqu'à x - 5
+box(ax, 2, 62, 36, 10, 'sujet', label=r'degré $n$', size='s')
+box(ax, 14, 46, 36, 10, 'sujet', label=r'degré $n-1$', size='s')
+box(ax, 26, 30, 36, 10, 'sujet', label='…', size='s')
+arrow(ax, (26, 62), (26, 56), 'varie', lw=1.0)
+arrow(ax, (38, 46), (38, 40), 'varie', lw=1.0)
+arrow(ax, (50, 30), (50, 22), 'varie', lw=1.0)
+box(ax, 38, 6, 48, 16, 'resultat', label=r'$x-5$ : degré 1' + '\nracine 5 dans $F$', size='s')
+text(ax, 68, 68, 'chaque étage', 'varie', 's')
+text(ax, 68, 64.5, 'baisse le degré', 'varie', 's')
+text(ax, 20, 14, 'rien à ajouter', 'resultat', 's')
+arrow(ax, (31, 14), (37, 14), 'resultat', lw=1.0)
+save(fig, '62-153')

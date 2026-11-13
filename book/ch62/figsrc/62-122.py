@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 4, 74, 24, 10, 'sujet', label=r'$x-r_1$', size='s')
+box(ax, 32, 74, 52, 10, 'varie', label=r'$x^2+r_1x+r_1^2$', size='s')
+cy = 40
+line(ax, [(8, cy), (82, cy)], 'sujet', lw=1.4)
+text(ax, 82, cy + 4, r'$K\subset\mathbb{R}$', 'sujet', 's', ha='right')
+disc(ax, 14, cy, 1.9, 'sujet'); text(ax, 14, cy + 5, r'$r_1$', 'sujet', 's')
+text(ax, 14, cy - 6, 'racine de\n' + r'$x-r_1$ : dans $K$', 'sujet', 's')
+disc(ax, 62, 58, 1.9, 'varie'); text(ax, 66, 58, r'$jr_1$', 'varie', 's', ha='left')
+disc(ax, 62, 22, 1.9, 'varie'); text(ax, 66, 22, r'$j^2r_1$', 'varie', 's', ha='left')
+text(ax, 58, 52, 'pas dans $K$', 'varie', 's', ha='right')
+text(ax, 58, 28, 'pas dans $K$', 'varie', 's', ha='right')
+box(ax, 4, 3, 80, 9, 'resultat', label=r'facteur de degré 2 sans racine dans $K$ : $[E:K]=2$', size='s')
+save(fig, '62-122')
