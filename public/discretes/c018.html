@@ -1,6 +1,9 @@
-<div class="pk">Chapitre 18</div>
-<h1>Le raisonnement par récurrence (induction)</h1>
-<h2>1. Le problème qui a forcé la notion</h2>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 18</div>
+<h1 class="ct">Le raisonnement par récurrence (induction)</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<section class="sec" id="s1"><div class="sk">Chapitre 18 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <p>Tu connais déjà la preuve directe, par contraposée, par l’absurde (chapitre 4) et par double comptage (chapitre 10). Ce chapitre ajoute le raisonnement par récurrence, en anglais <i>induction</i>. Certains énoncés courts n’ont aucune preuve connue, comme la conjecture de Goldbach. Connaître des formes de preuve standard aide à en trouver. Voici le problème qui fait naître celle-ci.</p>
 <h3>Les timbres de 5 et de 8 centimes</h3>
 <p>Tu dois poster un colis. Tu ne sais pas encore combien coûtera l’envoi. Tu as beaucoup de timbres de 5 centimes et de 8 centimes. Quels montants peux-tu payer <i>exactement</i> ? Lesquels sont impossibles ? Cherche un moment avant de lire la suite.</p>
@@ -25,7 +28,8 @@
 <p>Pour la prouver, on fait deux choses :</p>
 <p>1. montrer que <span class="m">𝑃(28)</span> est vrai ;</p>
 <p>2. montrer que, pour tout <span class="m">𝑘 ≥ 28</span>, si <span class="m">𝑃(𝑘)</span> est vrai, alors <span class="m">𝑃(𝑘 + 1)</span> est vrai.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 18 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vf" src="/discretes/img/c018/p0565_4.svg" alt="28 = 5 5 5 5 8 ↓  3 de 5  →  2 de 8 29 = 5 8 8 8 ↓  3 de 8  →  5 de 5 30 = 5 5 5 5 5 5 ↓  3 de 5  →  2 de 8 31 = 5 5 5 8 8 ↓  3 de 5  →  2 de 8 32 = 8 8 8 8 ↓  3 de 8  →  5 de 5 33 = 5 5 5 5 5 8 28 33" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>18.2 :</b> Les montants 28 à 33. Chaque ligne a pour longueur le montant payé. Regarde les timbres entourés de rouge : on les échange pour passer à la ligne suivante. Chaque échange allonge la ligne d’exactement une unité.</i></p>
 <p>Dans la figure 18.2, un timbre de 5 mesure 5 unités, un timbre de 8 en mesure 8 : la longueur d’une ligne est le montant. Ligne 28 : <span class="m">4 × 5 + 1 × 8</span> ; trois timbres de 5 (rouge) deviennent deux timbres de 8. Ligne 29 : <span class="m">1 × 5 + 3 × 8</span> ; il ne reste qu’un timbre de 5, donc trois timbres de 8 (rouge) deviennent cinq timbres de 5. Ligne 30 : <span class="m">6 × 5</span>. Et ainsi de suite.</p>
@@ -44,7 +48,8 @@
 <img class="vf" src="/discretes/img/c018/p0568_10.svg" alt="" style="--w:24.12" loading="lazy">
 <p>un échange existe.</p>
 <img class="vf" src="/discretes/img/c018/p0568_11.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 18 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Le principe</h3>
 <img class="vm" src="/discretes/img/c018/p0568_12.svg" alt="Définition : raisonnement par récurrence Soit 𝑛0 un entier, et pour chaque entier 𝑛 ≥ 𝑛 un énoncé 𝑃(𝑛). Prouver par 0 récurrence que 𝑃(𝑛) est vrai pour tout 𝑛 ≥ 𝑛0, c’est prouver : 1. l’initialisation (cas de base) : 𝑃(𝑛0) est vrai ; 2. l’hérédité : pour tout entier 𝑘 ≥ 𝑛0, l’implication 𝑃(𝑘) → 𝑃(𝑘 + 1) est vraie. Dans l’hérédité, l’énoncé 𝑃(𝑘) que l’on suppose vrai s’appelle l’hypothèse de récurrence." style="--w:24.19" loading="lazy">
 <h3>Deux sens du mot « récurrence »</h3>
@@ -84,7 +89,8 @@
 <h3>Penser par récurrence avant d’écrire</h3>
 <p>La récurrence convient quand tu vois comment passer d’un cas au suivant, comment « en faire un de plus ». Pour les timbres, « comment se paie ce montant ? » est une question statique. « Comment change la façon de payer quand le montant augmente de 1 ? » est une question dynamique ; la figure 18.2 y répond. Une preuve par récurrence te demande de penser de façon dynamique. Passer d’un cas au suivant est souvent plus facile que d’atteindre directement le cas <span class="m">𝑛</span>.</p>
 <p>La forme écrite sert à communiquer, à organiser les idées et à vérifier que les deux prémisses sont prouvées. Ma recommandation : cherche d’abord <i>pourquoi</i> c’est vrai, en pensant au passage de <span class="m">𝑛</span> à <span class="m">𝑛+1</span>. Ensuite seulement, écris la preuve formelle.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 18 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <p>Pour chaque exemple, on donne d’abord l’idée dynamique, puis la preuve.</p>
 <p><b>Exemple 1 : la somme</b> <span class="m">1 + 2 + ⋯ + 𝑛</span></p>
 <p><b>Énoncé.</b> Pour tout entier <span class="m">𝑛 ≥ 1</span>,</p>
@@ -181,7 +187,8 @@
 <p><b>Fig.</b> <i><b>18.8 :</b> Découpes d’un carré en</i> <span class="m">𝑛</span> <i>carrés. En haut :</i> <span class="m">𝑛 = 4</span><i>,</i> <span class="m">6</span><i>,</i> <span class="m">7</span><i>. En bas :</i> <span class="m">𝑛 = 8</span><i>, puis les découpes en 6 et en 7 dont un carré est coupé en 4 (rouge) : on obtient 9 et 10 carrés. Regarde le compte : un carré remplacé par quatre ajoute 3 carrés.</i></p>
 <p>L’étape décisive : couper un carré en 4 fait passer de <span class="m">𝑛</span> à <span class="m">𝑛 + 3</span> carrés. Par récurrence forte, avec trois cas de base 6, 7, 8 (l’hérédité recule de 3) : pour <span class="m">𝑛 ≥ 9</span>, on a <span class="m">6 ≤ 𝑛 − 3 &lt; 𝑛</span>, donc <span class="m">𝑃(𝑛 − 3)</span>, donc <span class="m">𝑃(𝑛)</span>. Tout <span class="m">𝑛 ≥ 6</span> est possible, ainsi que 1 et 4.</p>
 <p>2 et 3 sont impossibles. Deux coins du grand carré, de côté <span class="m">𝑐</span>, sont distants de <span class="m">𝑐</span> horizontalement ou verticalement. Un petit carré de côté <span class="m">𝑠 &lt; 𝑐</span> ne contient pas deux points aussi éloignés. Les 4 coins sont donc dans 4 petits carrés différents : il en faut au moins 4. Reste le cas 5, laissé à la fin du chapitre.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 18 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Le bilan : le raisonnement récursif</h3>
 <p>Ce chapitre clôt la série sur les suites (chapitres 14 à 18). Leur point commun est le <i>raisonnement récursif</i> : avec beaucoup de cas, il est souvent plus facile de décrire un cas par son lien avec le précédent que de le décrire seul. Pour une suite, on relie le terme <span class="m">𝑛</span> au terme <span class="m">𝑛 − 1</span>. Pour un énoncé, on déduit le cas <span class="m">𝑘</span> du cas <span class="m">𝑘 − 1</span>.</p>
 <p>Le but final est une description absolue : pour une suite, une formule explicite ; pour une preuve, savoir que l’énoncé est vrai pour chaque <span class="m">𝑛</span>, pas seulement « si le précédent l’est ». La série a donné quatre méthodes.</p>
@@ -204,5 +211,7 @@
 <h3>Où tu le retrouveras</h3>
 <p>La division euclidienne (chapitre 19) se justifie en prenant le plus grand multiple du diviseur qui ne dépasse pas le nombre divisé : c’est le même type d’argument que le plus petit contre-exemple. Une récurrence forte prouve que l’algorithme d’Euclide s’arrête (chapitre 20). Un arbre à <span class="m">𝑣</span> sommets a <span class="m">𝑣 − 1</span> arêtes : on retire une feuille et on applique l’hypothèse au reste (chapitre 22). La formule d’Euler <span class="m">𝑣 − 𝑒 + 𝑓 = 2</span> se prouve par récurrence sur le nombre d’arêtes (chapitre 23). Les fonctions génératrices offrent une autre voie de la relation de récurrence vers la formule explicite (chapitre 27).</p>
 <img class="vm" src="/discretes/img/c018/p0592_67.svg" alt="En arrière, l’identité de Pascal (chapitre 8) est une relation de récurrence : (52), lu « 2 parmi 5 », vaut (41) + (42) = 4 + 6 = 10. Plusieurs identités prouvées par double comptage (chapitre 10) se prouvent aussi par récurrence sur la ligne 𝑛 du triangle." style="--w:24.12" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 18 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c018/p0593_68.svg" alt="À toi de chercher On peut découper un carré en 1, 4, puis en tout nombre 𝑛 ≥ 6 de carrés. 2 et 3 sont impossibles, car les 4 coins tombent dans 4 carrés différents. Reste 5. Peut-on découper un carré en exactement 5 carrés ? Pars des 4 carrés des coins. Le cinquième peut-il toucher deux côtés du grand carré ? Que se passe- t-il le long d’un côté entièrement couvert par les deux carrés de ses coins ? Puis passe à l’espace. Un cube se découpe en 8 cubes. Quelle étape « 𝑛 → 𝑛 + ? » cela donne-t-il ? Combien de cas de base faudrait-il pour une récurrence forte ?" style="--w:24.19" loading="lazy">
+</div>
