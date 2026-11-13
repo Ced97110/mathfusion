@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 27</div>
-<h1>Les fonctions génératrices</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 27</div>
+<h1 class="ct">Les fonctions génératrices</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Ce chapitre est le dernier du livre. Il réunit deux sujets que tu as étudiés séparément : les suites (chapitres 14 à 17) et le dénombrement (chapitres 7 à 13). L’idée tient en une phrase : on écrit toute une suite infinie dans une seule expression, puis on calcule avec cette expression au lieu de calculer terme par terme.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 27 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Une liste qui perd ses positions</h3>
 <p>Je te donne une liste de nombres :</p>
 <img class="vm" src="/discretes/img/c027/p0860_1.svg" alt="1, 3, 4, 6, 9, … , 24, 41, …" style="--w:24.12" loading="lazy">
@@ -14,7 +20,8 @@
 <img class="vm" src="/discretes/img/c027/p0861_3.svg" alt="En mots : « le terme numéro 𝑛 vaut trois fois le terme d’avant, moins deux fois le terme d’encore avant ». C’est une relation de récurrence (chapitre 14). Calcule : 𝑎2 = 3 × 3 − 2 × 1 = 7, puis 𝑎3 = 3 × 7 − 2 × 3 = 15, puis 𝑎 = 31, 𝑎 = 63. Pour obtenir 𝑎 , 4 5 30 il faut d’abord calculer 𝑎2, 𝑎3, … , 𝑎29 : 28 calculs. Tu voudrais une formule explicite," style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0861_4.svg" alt="qui donne 𝑎 directement. 30 Le chapitre 17 t’a donné une méthode : les racines caractéristiques. Ce chapitre en donne une autre. Elle traite la suite entière comme un seul objet, sur lequel on fait des opérations simples : multiplier par 𝑥," style="--w:24.12" loading="lazy">
 <p>soustraire, additionner. Pour cela, il faut qu’une expression de quelques symboles contienne une infinité de termes. La figure suivante montre que c’est possible, avec la suite la plus simple : <span class="m">1, 1, 1, 1, …</span></p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 27 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Poser chaque terme sur une puissance</h3>
 <p><b>de</b> <span class="m">𝑥</span></p>
 <p>Prends la suite <span class="m">2, 3, 5, 8, 12, …</span> Son écriture <span class="m">2 + 3𝑥 + 5𝑥</span><sup>2</sup> <span class="m">+ 8𝑥</span><sup>3</sup> <span class="m">+ 12𝑥</span><sup>4</sup> <span class="m">+ ⋯</span> est dessinée sur la figure 27.1.</p>
@@ -35,7 +42,8 @@
 <img class="vm" src="/discretes/img/c027/p0865_16.svg" alt="Sur la verticale 𝑥 = 1 , tu retrouves les 2 nombres de la figure 27.2. Partout entre −1 et 1, plus 𝑛 est grand, plus 𝑆𝑛 est proche de la rouge. Près de 𝑥 = 1, il faut beaucoup de" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0865_17.svg" alt="termes : en 𝑥 = 0,9, la rouge vaut 1 = 10 0,1 alors que 𝑆6 vaut environ 5,2. Au-delà de 𝑥 = 1, les 𝑆𝑛 grandissent sans limite." style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0866_18.svg" alt="Retiens : pour 𝑥 strictement entre −1 et 1, la somme infinie 1 + 𝑥 + 𝑥2 + ⋯ est le nombre 1 . Quatre symboles contiennent toute la 1−𝑥 suite 1, 1, 1, …" style="--w:24.12" loading="lazy">
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 27 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c027/p0866_19.svg" alt="Définition : série génératrice, fonction génératrice Soit une suite 𝑎0, 𝑎1 , 𝑎2, 𝑎3, … Sa série génératrice est l’expression ∞ 𝑎0 + 𝑎1𝑥 + 𝑎2 𝑥2 + 𝑎3𝑥3 + ⋯ = ∑ 𝑎𝑛𝑥𝑛. 𝑛=0 On dit que cette série engendre la suite : la suite engendrée est la suite des coefficients. Si une expression courte (par exemple une fraction) a cette série pour développement, on l’appelle une fonction génératrice de la suite." style="--w:24.19" loading="lazy">
 <p>Une convention compte : en parlant de fonctions génératrices, la suite commence <i>toujours</i> au rang 0. Le premier terme est <span class="m">𝑎</span><sub>0</sub>, posé sur <span class="m">𝑥</span><sup>0</sup> <span class="m">= 1</span>. C’est le <i>terme constant</i> : il ne contient pas de <span class="m">𝑥</span>.</p>
 <img class="vf" src="/discretes/img/c027/p0867_20.svg" alt="" style="--w:24.19" loading="lazy">
@@ -82,7 +90,8 @@
 <img class="vm" src="/discretes/img/c027/p0873_47.svg" alt="est vraie coefficient par coefficient, sans condition sur 𝑥. C’est dans ce sens que la suite du chapitre utilise les fonctions génératrices : on ne donnera plus de valeur à 𝑥. Les figures 27.2 à 27.5 ont servi à voir 1 que n’est pas un symbole arbitraire : là 1−𝑥 où la somme a un sens, elle vaut ce nombre. Ton objection Tu vas me dire : « Si 𝑥 n’a jamais de" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0873_48.svg" alt="1 valeur, que veut dire ? » 1−𝑥 Écrire 𝐴 = 1 veut dire : 𝐴 multipliée 1−𝑥 par 1 − 𝑥 donne 1, colonne par colonne. Cela fixe les coefficients un par un : la colonne 𝑥0 force 𝑎0 = 1, la colonne 𝑥1 force 𝑎1 − 𝑎0 = 0, donc 𝑎1 = 1, et ainsi de" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0873_49.svg" alt="suite." style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 27 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c027/p0873_50.svg" alt="On part maintenant de 1 et on fabrique 1−𝑥 les fonctions génératrices d’autres suites. Chaque opération sur l’expression a un effet précis sur les coefficients. La figure 27.6, plus bas, résume les premières." style="--w:24.12" loading="lazy">
 <p><b>Remplacer</b> <span class="m">𝑥</span> <b>par</b> <span class="m">−𝑥</span> <b>ou par</b> <span class="m">3𝑥</span></p>
 <p>Remplace <span class="m">𝑥</span> par <span class="m">−𝑥</span> dans <span class="m">1 + 𝑥 + 𝑥</span><sup>2</sup> <span class="m">+ ⋯</span> : tu obtiens <span class="m">1 + (−𝑥) + (−𝑥)</span><sup>2</sup> <span class="m">+ (−𝑥)</span><sup>3</sup> <span class="m">+ ⋯</span> Or</p>
@@ -200,7 +209,8 @@
 <img class="vm" src="/discretes/img/c027/p0891_118.svg" alt="1 entre dans la décomposition. Sa (1−𝑟𝑥)2 série (remplace 𝑥 par 𝑟𝑥 dans celle de" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0891_119.svg" alt="1 ) est 1 + 2𝑟𝑥 + 3𝑟2 𝑥2 + ⋯ : son (1−𝑥)2 coefficient est (𝑛 + 1)𝑟𝑛 = 𝑟𝑛 + 𝑛 𝑟𝑛, qui n’est pas géométrique. C’est l’origine du terme en 𝑛 𝑟𝑛 que le chapitre 17 ajoute quand l’équation caractéristique a une" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0891_120.svg" alt="racine double." style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 27 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Ce que tu sais faire maintenant</h3>
 <p>Le tableau résume l’effet de chaque opération sur la suite engendrée. Ici <span class="m">𝐴</span> engendre <span class="m">𝑎</span><sub>0</sub> <span class="m">, 𝑎</span><sub>1</sub><span class="m">, 𝑎</span><sub>2</sub><span class="m">, …</span></p>
 <img class="vf" src="/discretes/img/c027/p0892_121.svg" alt="" style="--w:24.19" loading="lazy">
@@ -225,5 +235,7 @@
 <img class="vm" src="/discretes/img/c027/p0894_133.svg" alt="1 produit de tous les , qui compte les 1−𝑥𝑘 façons d’écrire 𝑛 comme somme d’entiers positifs." style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c027/p0894_134.svg" alt="• La vitesse de croissance. Reprends 1 le cas limite de la figure 27.3. 1−𝑥 cesse d’avoir un sens en 𝑥 = 1, et ses coefficients valent 1𝑛. 1 cesse d’avoir 1−2𝑥 un sens en 𝑥 = 1 , et ses coefficients valent 2" style="--w:24.12" loading="lazy">
 <p><span class="m">2</span><sup>𝑛</sup>. L’endroit où la fonction génératrice cesse d’exister dit à quelle vitesse la suite grandit. C’est le point de départ de la combinatoire analytique.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 27 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c027/p0896_135.svg" alt="À toi de chercher Tu as vu qu’une suite qui vérifie une relation comme 𝑎𝑛 = 3𝑎𝑛−1 − 2𝑎𝑛−2 a pour fonction génératrice une fraction : un polynôme divisé par un polynôme. Retourne la question. Prends une fraction dont le dénominateur 1 commence par 1, par exemple . 1 − 𝑥 − 𝑥3 La suite qu’elle engendre vérifie- t-elle forcément une relation de récurrence ? Laquelle ? Que lis-tu dans le dénominateur, et que lis-tu dans le numérateur ? Pousse plus loin. La suite des nombres premiers 2, 3, 5, 7, 11, 13, … peut-elle avoir pour fonction génératrice une fraction de deux polynômes ? Si oui, que dirait la figure 27.8 sur ces nombres ? Si non, qu’est-ce qui l’en empêche ?" style="--w:24.19" loading="lazy">
+</div>
