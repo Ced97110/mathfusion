@@ -1,0 +1,187 @@
+[
+ {
+  "code": "32-049",
+  "a_dire": "La ligne α du tableau dit : α est l’angle principal, la valeur donnée par la calculatrice, connue avant la formule.",
+  "legende_titre": "Une ligne du tableau des symboles",
+  "lecture": [
+   "Le tableau a deux colonnes : le symbole à gauche, son sens à droite.",
+   "La ligne bleue est celle de α : son sens est « angle principal ».",
+   "La ligne grise est celle de θ : l’angle cherché.",
+   "Le cadre vert donne la valeur de α pour sin θ = 0,4 : 23,58°."
+  ],
+  "a_voir": "Tu vois que α est la ligne bleue du tableau, et qu’elle vaut 23,58° pour sin θ = 0,4."
+ },
+ {
+  "code": "32-050",
+  "a_dire": "L’exemple de Neill donne quatre angles arrondis pour sin θ = 0,4, mais la liste continue des deux côtés.",
+  "legende_titre": "Quatre angles parmi une liste sans fin",
+  "lecture": [
+   "Chaque point vert est un angle de l’exemple : 23,58°, 156,42°, 383,58° et 516,42°.",
+   "La droite est graduée de −360° à 720°.",
+   "Le cercle gris à gauche est −336,42°, un angle que l’exemple ne montre pas.",
+   "Les points de suspension à droite disent que la liste continue."
+  ],
+  "a_voir": "Tu vois que les quatre points ne sont qu’une partie de la liste, et que les valeurs sont arrondies."
+ },
+ {
+  "code": "32-051",
+  "a_dire": "Rangées dans l’ordre, les solutions alternent : on ajoute 40° quand le nombre de demi-tours est pair, on le retire quand il est impair.",
+  "legende_titre": "Plus, moins, plus, moins devant 40°",
+  "lecture": [
+   "Chaque colonne est un nombre de demi-tours n, de 0 à 3.",
+   "Les cadres verts (n pair) ajoutent 40° ; les cadres orange (n impair) retirent 40°.",
+   "Les cadres bleus du bas sont les angles obtenus : 40°, 140°, 400°, 500°."
+  ],
+  "a_voir": "Tu vois le signe de 40° alterner à chaque demi-tour de plus."
+ },
+ {
+  "code": "32-052",
+  "a_dire": "La formule θ = 180°n + (−1)^n α décrit en une ligne les solutions : n demi-tours, plus ou moins l’angle principal.",
+  "legende_titre": "Une ligne pour toutes les solutions",
+  "lecture": [
+   "Le cadre orange est 180°n : le nombre n de demi-tours.",
+   "Le cadre violet est (−1)^n : il met le signe plus ou le signe moins.",
+   "Le cadre bleu est α, l’angle principal.",
+   "En bas, n = 2 donne +1 en vert et n = 3 donne −1 en orange."
+  ],
+  "a_voir": "Tu vois la formule découpée en trois morceaux, chacun relié à son sens."
+ },
+ {
+  "code": "32-053",
+  "a_dire": "(−1)^n est le produit de n facteurs −1 : il vaut +1 si n est pair et −1 si n est impair.",
+  "legende_titre": "Compter les facteurs −1",
+  "lecture": [
+   "Chaque disque bleu est un facteur −1.",
+   "Avec 2 disques le produit vaut +1, en vert.",
+   "Avec 3 disques il vaut −1, en orange.",
+   "Avec 4 disques il vaut de nouveau +1."
+  ],
+  "a_voir": "Tu vois que le résultat change de signe quand on ajoute un disque."
+ },
+ {
+  "code": "32-054",
+  "a_dire": "(−1)^n joue le rôle d’un interrupteur : à chaque pas, le signe devant α passe de plus à moins, puis de moins à plus.",
+  "legende_titre": "Un signe à deux états",
+  "lecture": [
+   "Chaque cadre est le terme devant lequel on est au pas n.",
+   "Les cadres bleus portent +α, les cadres orange portent −α.",
+   "Chaque flèche orange est un pas : le signe change.",
+   "La ligne du bas redit l’alternance : + − + − +."
+  ],
+  "a_voir": "Tu vois deux états seulement, qui se suivent l’un l’autre à chaque pas."
+ },
+ {
+  "code": "32-055",
+  "a_dire": "Passer de α à 180° − α deux fois ajoute 360° : un tour entier, qui ramène au même point. Le pas est donc le demi-tour.",
+  "legende_titre": "Deux demi-tours font un tour",
+  "lecture": [
+   "La droite graduée montre les angles 40°, 140° et 400°.",
+   "Le premier passage de α à 180° − α ajoute 180° : 40° devient 140°.",
+   "Le second passage ajoute encore 180° : 140° devient 400°, c'est-à-dire α + 360°.",
+   "L'accolade verte couvre 40° à 400° : deux fois 180°, soit 360°, un tour entier."
+  ],
+  "a_voir": "Tu vois deux passages de α à 180° − α, de 180° chacun, et leur total qui fait un tour entier."
+ },
+ {
+  "code": "32-056",
+  "a_dire": "La droite x = 0,5 coupe le cercle en P et P′, de part et d’autre de l’axe horizontal : P est à θ et P′ à −θ.",
+  "legende_titre": "La droite verticale et ses deux points",
+  "lecture": [
+   "La droite orange verticale est x = 0,5.",
+   "Le point bleu P est au-dessus de l’axe, à l’angle θ.",
+   "Le point vert P′ est au-dessous de l’axe, à l’angle −θ.",
+   "Les deux points sont à la même distance de l’axe horizontal."
+  ],
+  "a_voir": "Tu vois que P′ est le symétrique de P par rapport à l’axe horizontal, à l’angle −θ."
+ },
+ {
+  "code": "32-057",
+  "a_dire": "Résoudre cos θ = k, c’est chercher les points du cercle sur la droite x = k ; avec k = 2 la droite ne touche pas le cercle.",
+  "legende_titre": "Quand la droite x = k rate le cercle",
+  "lecture": [
+   "Le cercle bleu a pour rayon 1 : il va de −1 à 1.",
+   "La droite orange est x = 2 : elle est à droite du cercle.",
+   "Le texte rouge dit qu’il n’y a aucun point commun, donc aucun angle."
+  ],
+  "a_voir": "Tu vois que la droite x = 2 ne rencontre pas le cercle, donc que cos θ = 2 n’a pas de solution."
+ },
+ {
+  "code": "32-058",
+  "a_dire": "La preuve part de deux triangles aux mêmes côtés 0,5 et 1, en déduit le même angle au centre, et conclut que P′ est à −θ.",
+  "legende_titre": "Deux triangles, même angle, sens opposé",
+  "lecture": [
+   "Le triangle bleu O H P et le triangle vert O H P′ ont le même côté OH = 0,5 et le même côté 1.",
+   "Le cadre gris est le départ ; le cadre orange est l’étape qui porte le poids : mêmes côtés, même angle.",
+   "Le cadre vert est l’arrivée : P′ est à −θ, car on tourne vers le bas."
+  ],
+  "a_voir": "Tu vois les trois temps de la preuve : départ, étape clé, arrivée."
+ },
+ {
+  "code": "32-059",
+  "a_dire": "P′ a le même cosinus que P ; on l’atteint en tournant du même angle vers le bas, donc de −θ.",
+  "legende_titre": "Tourner vers le bas : −θ",
+  "lecture": [
+   "La flèche bleue tourne de θ vers le haut jusqu’à P.",
+   "La flèche orange tourne du même angle vers le bas jusqu’à P′.",
+   "Le trait gris en pointillé relie P et P′ : ils ont la même position horizontale."
+  ],
+  "a_voir": "Tu vois que le point du bas demande le même angle, tourné dans l’autre sens."
+ },
+ {
+  "code": "32-060",
+  "a_dire": "Pour cos θ = 0,5, θ = 360°n ± α donne 420° et 300° avec n = 1, et 60° et −60° avec n = 0.",
+  "legende_titre": "La formule sur un cas chiffré",
+  "lecture": [
+   "Le cadre orange est le choix n = 1 : 360°.",
+   "Chaque flèche bleue ajoute ou retire α = 60°.",
+   "Les cadres verts sont les résultats : 420° et 300°.",
+   "Le texte gris rappelle les résultats pour n = 0 : 60° et −60°."
+  ],
+  "a_voir": "Tu vois les actions dans l’ordre : choisir n, calculer 360°n, ajouter puis retirer α."
+ },
+ {
+  "code": "32-061",
+  "a_dire": "Pour deux cosinus différents, les solutions ont la même forme : α + 360°n et −α + 360°n ; seule la valeur de α change.",
+  "legende_titre": "Deux familles, quelle que soit la valeur",
+  "lecture": [
+   "Chaque cercle est un cas : cos θ = 0,5 avec α = 60°, et cos θ = 0,1 avec α = 84,26°.",
+   "Le point bleu est α, le point orange est −α.",
+   "Le cadre bleu est la famille α + 360°n, le cadre orange est la famille −α + 360°n."
+  ],
+  "a_voir": "Tu vois que les deux cercles ont la même structure et que seul l’angle α change."
+ },
+ {
+  "code": "32-062",
+  "a_dire": "Le signe ± veut dire : une fois avec +, une fois avec − ; il remplace deux lignes de calcul par une.",
+  "legende_titre": "± : deux calculs en un signe",
+  "lecture": [
+   "Le cadre bleu contient le signe ±.",
+   "La flèche bleue est le calcul avec le signe plus : 0 + 60° = 60°.",
+   "La flèche orange est le calcul avec le signe moins : 0 − 60° = −60°."
+  ],
+  "a_voir": "Tu vois un seul signe qui annonce deux résultats."
+ },
+ {
+  "code": "32-063",
+  "a_dire": "Pour le sinus, le second angle 180° − α demande un demi-tour ; pour le cosinus, −α ne demande qu’un changement de sens.",
+  "legende_titre": "Sinus avec demi-tour, cosinus sans",
+  "lecture": [
+   "À gauche, en violet, le sinus : la flèche orange fait un demi-tour jusqu’à 180° − α.",
+   "À droite, en bleu, le cosinus : la flèche orange tourne seulement vers le bas jusqu’à −α.",
+   "Les pointillés gris sont les axes de symétrie des deux points."
+  ],
+  "a_voir": "Tu vois que le cosinus se passe de demi-tour alors que le sinus en a besoin."
+ },
+ {
+  "code": "32-064",
+  "a_dire": "Une droite de pente k passant par O coupe le cercle en P et Q, aux deux bouts d’un diamètre ; la pente se lit sur la verticale à 1 du centre, au point T.",
+  "legende_titre": "La droite par le centre et ses deux points",
+  "lecture": [
+   "La droite orange passe par O avec la pente 0,75.",
+   "Les points verts P et Q sont aux deux bouts d’un même diamètre.",
+   "Le point T est sur la verticale à 1 du centre : sa hauteur bleue est k = 0,75.",
+   "Les cadres donnent les angles 36,87° et 216,87° : un demi-tour d’écart."
+  ],
+  "a_voir": "Tu vois P et Q opposés sur le cercle et la pente lue sur la verticale à 1 du centre."
+ }
+]

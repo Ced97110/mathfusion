@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 7, 44, r'$\theta$ =', 'encre', 'l')
+box(ax, 14, 39, 22, 10, 'varie', label=r'$180^\circ n$')
+text(ax, 39, 44, '+', 'encre', 'l')
+box(ax, 42, 39, 20, 10, 'autre', label=r'$(-1)^n$')
+box(ax, 64, 39, 14, 10, 'sujet', label=r'$\alpha$')
+for cx, r_, y1 in [(25, 'varie', 30), (52, 'autre', 30), (71, 'sujet', 24)]:
+    arrow(ax, (cx, 38.5), (cx, y1), r_)
+text(ax, 25, 27, 'n demi-tours', 'varie', 's')
+text(ax, 52, 27, 'signe + ou −', 'autre', 's')
+text(ax, 71, 21, 'angle principal', 'sujet', 's')
+text(ax, 22, 8, r'$n$ = 2 : $(-1)^2$ = +1', 'resultat', 's')
+text(ax, 66, 8, r'$n$ = 3 : $(-1)^3$ = −1', 'varie', 's')
+save(fig, '32-052')

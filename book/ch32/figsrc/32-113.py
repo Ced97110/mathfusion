@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 8, 62, 72, 11, 'sujet', label='cos² x − sin x − 1 = 0')
+arrow(ax, (44, 62), (44, 51))
+text(ax, 48, 56.5, 'cos² x devient 1 − sin² x', 'varie', 's', ha='left')
+box(ax, 8, 40, 72, 11, 'fixe', label='1 − sin² x − sin x − 1 = 0')
+arrow(ax, (44, 40), (44, 29))
+text(ax, 48, 34.5, "1 et −1 s'annulent", 'varie', 's', ha='left')
+box(ax, 8, 18, 72, 11, 'resultat', label='−sin² x − sin x = 0')
+text(ax, 44, 10, 'il ne reste que le sinus', 'resultat', 's')
+save(fig, '32-113')

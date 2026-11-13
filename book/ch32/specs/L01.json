@@ -1,0 +1,194 @@
+[
+ {
+  "code": "32-001",
+  "a_dire": "À midi comme à toute heure, on suit la même suite : angle, sinus, double, plus 2, et on obtient la hauteur.",
+  "legende_titre": "La suite d'actions du port",
+  "lecture": [
+   "La case grise est l'heure : à midi, t vaut 12.",
+   "Les trois cases bleues sont les valeurs obtenues en route : 360°, puis 0, puis 0.",
+   "Les flèches orange sont les actions : multiplier par 30, prendre le sinus, doubler, ajouter 2.",
+   "La case verte est la hauteur : 2 m."
+  ],
+  "a_voir": "Chaque flèche est une action, et la dernière case donne la hauteur."
+ },
+ {
+  "code": "32-002",
+  "a_dire": "t est le nombre d'heures écoulées depuis minuit : t = 3 à 3 heures, t = 15 à 15 heures.",
+  "legende_titre": "Compter les heures à partir de minuit",
+  "lecture": [
+   "La droite graduée compte les heures, de 0 à 24.",
+   "Le disque gris à gauche est minuit : t = 0.",
+   "Les deux disques orange sont 3 heures et 15 heures : t = 3 et t = 15.",
+   "Le texte du bas rappelle ce que t compte."
+  ],
+  "a_voir": "t se lit sur la droite : c'est la distance en heures depuis minuit."
+ },
+ {
+  "code": "32-003",
+  "a_dire": "30t est un angle : chaque heure fait tourner de 30°, 6 heures font un demi-tour, 12 heures un tour.",
+  "legende_titre": "L'heure devient un angle sur un cercle",
+  "lecture": [
+   "Le cercle bleu a 12 petits traits, un par heure, séparés de 30°.",
+   "Le disque orange du haut est 3 heures : 90°. Celui de gauche est 6 heures : 180°.",
+   "Le disque vert à droite est 12 heures : 360°, un tour complet.",
+   "La flèche orange montre le sens de la rotation."
+  ],
+  "a_voir": "Une heure de plus fait tourner le point de 30° sur le cercle."
+ },
+ {
+  "code": "32-004",
+  "a_dire": "Le sinus va de −1 à 1 ; doublé puis augmenté de 2, il donne une hauteur de 0 à 4 mètres, autour du milieu 2 mètres.",
+  "legende_titre": "D'où viennent 0 m et 4 m",
+  "lecture": [
+   "La règle grise à gauche donne le sinus : −1, 0 et 1.",
+   "La règle bleue à droite donne la hauteur : 0 m, 2 m et 4 m.",
+   "Les flèches orange horizontales relient chaque sinus à sa hauteur : on double puis on ajoute 2.",
+   "Les deux flèches verticales montrent un écart de 2 de chaque côté du milieu 2 m."
+  ],
+  "a_voir": "Le milieu est à 2 m, et l'eau s'écarte de 2 m vers le haut et vers le bas."
+ },
+ {
+  "code": "32-005",
+  "a_dire": "Quand t augmente de 12, l'angle fait un tour complet et la hauteur est la même : la marée revient toutes les 12 heures.",
+  "legende_titre": "Un tour tous les 12 heures",
+  "lecture": [
+   "Le trait bleu est l'angle à t = 1 : 30°.",
+   "Le grand cercle orange est un tour complet : 12 fois 30° font 360°.",
+   "Le disque vert est le point du cercle : le même à t = 1 et à t = 13.",
+   "Le texte vert dit que la hauteur est 3 m dans les deux cas."
+  ],
+  "a_voir": "Après un tour complet, le point revient à sa place."
+ },
+ {
+  "code": "32-006",
+  "a_dire": "Entre minuit (2 m) et 3 heures (4 m), l'eau passe par 3 mètres ; on ne sait pas encore à quelle heure.",
+  "legende_titre": "La question de Marc sur le niveau d'eau",
+  "lecture": [
+   "La courbe bleue est la hauteur de minuit à 3 heures.",
+   "Le disque gris à gauche est minuit : 2 m, trop peu.",
+   "Le disque vert à droite est 3 heures : 4 m, assez.",
+   "Le trait orange en pointillés est 3 mètres : la courbe le coupe, l'heure reste à trouver."
+  ],
+  "a_voir": "La courbe passe de 2 m à 4 m, donc elle croise la ligne des 3 m."
+ },
+ {
+  "code": "32-007",
+  "a_dire": "On défait les opérations dans l'ordre inverse : retirer 2, diviser par 2, puis il reste sin(30t) = 0,5.",
+  "legende_titre": "Défaire la formule étape par étape",
+  "lecture": [
+   "La première case bleue est la formule avec la hauteur 3.",
+   "La deuxième case est obtenue en retirant 2.",
+   "La troisième case est obtenue en divisant par 2 : il reste le sinus seul.",
+   "La case verte est le résultat, t = 1, après avoir défait le sinus."
+  ],
+  "a_voir": "Chaque flèche orange défait une opération, de la dernière à la première."
+ },
+ {
+  "code": "32-008",
+  "a_dire": "Plusieurs angles ont pour sinus 0,5, mais la calculatrice n'en affiche qu'un : 30°.",
+  "legende_titre": "Ce que la calculatrice affiche",
+  "lecture": [
+   "Les quatre cases de gauche sont des angles de sinus 0,5 : 30°, 150°, 390°, 510°.",
+   "La case verte, 30°, est la seule que la calculatrice affiche.",
+   "Les trois cases grises en pointillés ne sont pas affichées.",
+   "Toutes les flèches mènent à la case bleue : le sinus vaut 0,5."
+  ],
+  "a_voir": "Un seul angle sur quatre est affiché, mais tous ont le même sinus."
+ },
+ {
+  "code": "32-009",
+  "a_dire": "À t = 1, l'angle est 30°, le sinus vaut 0,5 et la hauteur est 3 mètres.",
+  "legende_titre": "Vérifier t = 1 dans la formule",
+  "lecture": [
+   "Le trait bleu fait un angle de 30° (arc orange) avec l'axe horizontal.",
+   "Le trait vert est la hauteur du point : 0,5.",
+   "La case grise montre le calcul : 2 plus 2 fois 0,5.",
+   "La case verte donne le résultat : 3 mètres."
+  ],
+  "a_voir": "Le sinus est la hauteur du point, et elle donne 3 m dans la formule."
+ },
+ {
+  "code": "32-010",
+  "a_dire": "La première solution n'est pas la seule : l'eau est aussi à 3 mètres à 5 h, 13 h et 17 h.",
+  "legende_titre": "Une solution trouvée, d'autres existent",
+  "lecture": [
+   "La droite graduée va de 0 h à 24 h.",
+   "Le disque bleu est 1 heure, la solution trouvée en premier.",
+   "Les disques verts sont 5 h, 13 h et 17 h : l'eau y est aussi à 3 m.",
+   "La case rouge en haut dit que « C'est fini » est faux."
+  ],
+  "a_voir": "Il y a plusieurs disques, donc plusieurs heures à 3 m."
+ },
+ {
+  "code": "32-011",
+  "a_dire": "La deuxième solution vient de l'angle 150° = 180° − 30°, qui a le même sinus 0,5 ; 150 divisé par 30 donne t = 5.",
+  "legende_titre": "Le second angle et l'heure 5",
+  "lecture": [
+   "La droite graduée montre les angles de 0° à 180°.",
+   "Le disque gris est 30° : la première solution.",
+   "Le disque vert est 150°, à 30° de 180° : même écart que 30° depuis 0°.",
+   "La case verte du bas donne l'heure : 150 divisé par 30 égale 5."
+  ],
+  "a_voir": "Les deux accolades de 30° sont aux deux bouts de la droite."
+ },
+ {
+  "code": "32-012",
+  "a_dire": "La troisième solution t = 13 vient de l'angle 360° + 30° = 390° : un tour complet plus 30°.",
+  "legende_titre": "Un tour de plus avant 30°",
+  "lecture": [
+   "La droite graduée compte les angles de 0° à 420°.",
+   "L'accolade grise est un tour complet : 360°.",
+   "L'accolade orange est le petit reste : 30°.",
+   "Le disque vert est 390° : c'est t = 13."
+  ],
+  "a_voir": "On arrive à 390° en faisant un tour puis 30° de plus."
+ },
+ {
+  "code": "32-013",
+  "a_dire": "L'équation a une infinité de solutions : 1, 5, 13, 17, 25, 29 et la liste continue, on ajoute 12 à chaque fois.",
+  "legende_titre": "Des heures à 3 mètres qui ne s'arrêtent pas",
+  "lecture": [
+   "Les disques portent les heures où l'eau est à 3 m : 1, 5, 13, 17, 25, 29.",
+   "Les arcs du haut relient 1 à 13, puis 13 à 25 : chaque fois + 12.",
+   "Les arcs du bas relient 5 à 17, puis 17 à 29 : chaque fois + 12.",
+   "La flèche verte à droite dit que la liste ne s'arrête jamais."
+  ],
+  "a_voir": "Chaque arc ajoute 12 et la liste ne s'arrête jamais."
+ },
+ {
+  "code": "32-014",
+  "a_dire": "Le sinus répète le même dessin tous les 360° : c'est la périodicité, la cause de l'infinité de solutions.",
+  "legende_titre": "La courbe qui se répète",
+  "lecture": [
+   "La courbe bleue est le sinus de 0° à 360°.",
+   "La courbe violette est le sinus de 360° à 720° : le même dessin.",
+   "Les disques orange sont les points à 0°, 360° et 720°, où la courbe croise l'axe.",
+   "Les accolades marquent deux fois 360°."
+  ],
+  "a_voir": "Les deux morceaux de courbe ont exactement la même forme."
+ },
+ {
+  "code": "32-015",
+  "a_dire": "La droite y = k coupe le cercle en deux points P et P′ ; leurs angles sont θ et 180° − θ.",
+  "legende_titre": "Une droite horizontale, deux points du cercle",
+  "lecture": [
+   "Le cercle gris est le cercle de rayon 1.",
+   "La droite bleue y = k est horizontale.",
+   "Les disques verts P et P′ sont les deux points où la droite coupe le cercle.",
+   "L'arc orange est l'angle θ de P ; le grand arc violet est l'angle 180° − θ de P′."
+  ],
+  "a_voir": "P et P′ sont à la même hauteur, de part et d'autre de la verticale."
+ },
+ {
+  "code": "32-016",
+  "a_dire": "y = k désigne une droite horizontale : tous les points dont la hauteur est k ; on change k pour changer de droite.",
+  "legende_titre": "Une écriture pour toutes les hauteurs",
+  "lecture": [
+   "La règle verticale gradue les hauteurs : 0, 0,5, 1 et 2.",
+   "La droite bleue est y = 0,5 : tous ses points sont à hauteur 0,5.",
+   "La droite violette est y = 2 : tous ses points sont à hauteur 2.",
+   "Les petits disques sont quelques points de chaque droite."
+  ],
+  "a_voir": "Une droite horizontale garde la même hauteur partout."
+ }
+]

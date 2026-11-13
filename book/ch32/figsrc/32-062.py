@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'$360^\circ n \pm \alpha$', 'encre', 'l')
+text(ax, 44, 45, r'avec $n$ = 0 et $\alpha$ = 60°', 'fixe', 's')
+box(ax, 4, 17, 18, 18, 'sujet', label='±', size='xl')
+text(ax, 13, 12, 'plus ou moins', 'sujet', 's')
+box(ax, 50, 29, 34, 9, 'resultat', label='0 + 60° = 60°', size='s')
+box(ax, 50, 8, 34, 9, 'resultat', label='0 − 60° = −60°', size='s')
+arrow(ax, (22.5, 29), (49.5, 34), 'sujet'); arrow(ax, (22.5, 23), (49.5, 13), 'varie')
+text(ax, 31, 35.5, 'une fois +', 'sujet', 's'); text(ax, 31, 14.5, 'une fois −', 'varie', 's')
+save(fig, '32-062')

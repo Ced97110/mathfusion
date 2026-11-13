@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(85)
+box(ax, 24, 70, 40, 11, 'sujet', label='cos 2θ = sin θ')
+arrow(ax, (38, 70), (22, 56))
+arrow(ax, (50, 70), (66, 56))
+box(ax, 2, 36, 42, 20, 'varie', size='s', label='chemin 1 :\nsin θ = cos(90° − θ)')
+box(ax, 46, 36, 40, 20, 'autre', size='s', label='chemin 2 :\ncos 2θ = 1 − 2 sin² θ')
+arrow(ax, (22, 36), (34, 22))
+arrow(ax, (66, 36), (54, 22))
+box(ax, 14, 8, 60, 14, 'resultat', label='mêmes angles : 30° et −90°')
+save(fig, '32-116')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+f = numberline(ax, 10, 64, 30, -1, 2, step=1)
+disc(ax, f(0), 30, 18, 'sujet', fill=False)
+line(ax, [(f(2), 8), (f(2), 52)], 'varie', lw=1.2)
+text(ax, f(2), 55, '$x$ = 2', 'varie', 's')
+text(ax, f(0), 39, 'cercle de rayon 1', 'sujet', 's')
+box(ax, 2, 50, 28, 8, 'sujet', label=r'$\cos\theta$ = 2')
+text(ax, 38, 5, 'aucun point : aucun angle', 'limite', 'm')
+save(fig, '32-057')

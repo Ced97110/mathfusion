@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+cx, cy, R = 26, 30, 19
+ax.add_patch(Circle((cx, cy), R, ec=COL['fixe'], fc='none', lw=0.9, zorder=2))
+line(ax, [(cx - R - 2, cy), (cx + R + 2, cy)], 'fixe', lw=0.5)
+line(ax, [(cx, cy - R - 2), (cx, cy + R + 2)], 'fixe', lw=0.5)
+ky = cy + 0.5 * R; dx = R * math.cos(math.radians(30))
+line(ax, [(cx - R - 2, ky), (52, ky)], 'varie', lw=1.1)
+line(ax, [(cx, cy), (cx, ky)], 'sujet', lw=1.6)
+text(ax, cx + 3.5, cy + 4.7, r'$k$', 'sujet', 's')
+disc(ax, cx + dx, ky, 1.7, 'resultat'); disc(ax, cx - dx, ky, 1.7, 'resultat')
+disc(ax, 58, 46, 1.7, 'resultat'); text(ax, 62, 46, 'points cherchés', 'resultat', 's', ha='left')
+line(ax, [(54, 34), (60, 34)], 'varie', lw=1.1); text(ax, 62, 34, r'droite $y=k$', 'varie', 's', ha='left')
+disc(ax, 57, 22, 2.2, 'fixe', fill=False); text(ax, 62, 22, 'cercle de rayon 1', 'fixe', 's', ha='left')
+text(ax, 71, 8, r'$\sin\,\theta=k$', 'sujet', 'l')
+save(fig, '32-018')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+f = numberline(ax, 8, 80, 30, 0, 180, step=30, arrow_right=False)
+disc(ax, f(30), 30, 1.8, 'fixe')
+disc(ax, f(150), 30, 1.8, 'resultat')
+brace(ax, f(0), f(30), 34, 'fixe', label='30°', down=False)
+brace(ax, f(150), f(180), 34, 'resultat', label='30°', down=False)
+text(ax, 44, 17, r'$180-30=150$', 'resultat', 'm')
+arrow(ax, (44, 14), (44, 11), 'varie')
+box(ax, 20, 2, 48, 8.5, 'resultat', label=r'$t=150\div 30=5$')
+save(fig, '32-011')

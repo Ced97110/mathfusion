@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 48, 26, 9, 'fixe', label='Symbole')
+box(ax, 31, 48, 53, 9, 'fixe', label='Sens')
+box(ax, 4, 37, 26, 9, 'sujet', label=r'$\alpha$', size='l')
+box(ax, 31, 37, 53, 9, 'sujet', label='angle principal')
+box(ax, 4, 26, 26, 9, 'fixe', label=r'$\theta$', size='l')
+box(ax, 31, 26, 53, 9, 'fixe', label='angle cherché')
+arrow(ax, (44, 24.5), (44, 17), 'resultat')
+box(ax, 8, 6, 72, 10, 'resultat', label=r'$\alpha$ = 23,58° si $\sin\theta$ = 0,4')
+save(fig, '32-049')

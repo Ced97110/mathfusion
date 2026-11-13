@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+f = numberline(ax, 8, 74, 48, 0, 720, step=360)
+text(ax, 2, 61, 'trouver : un seul angle', 'encre', 's', ha='left')
+disc(ax, f(30), 48, 1.8, 'sujet'); text(ax, f(30), 53, '30°', 'sujet', 's')
+text(ax, 2, 36, 'résoudre : tous, de 0° à 360°', 'encre', 's', ha='left')
+poly(ax, [(f(0), 9), (f(360), 9), (f(360), 21), (f(0), 21)], 'sujet')
+f2 = numberline(ax, 8, 74, 15, 0, 720, step=360)
+for v in (30, 150): disc(ax, f2(v), 15, 1.8, 'resultat')
+for v in (390, 510): disc(ax, f2(v), 15, 1.8, 'fixe')
+text(ax, f2(30), 25.5, '30°', 'resultat', 's'); text(ax, f2(150), 25.5, '150°', 'resultat', 's')
+save(fig, '32-029')
