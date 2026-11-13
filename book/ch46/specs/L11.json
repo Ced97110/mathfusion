@@ -1,0 +1,184 @@
+[
+ {
+  "code": "46-161",
+  "a_dire": "Un r-cycle fait tourner r nombres et laisse les autres en place.",
+  "legende_titre": "Un cycle : r nombres tournent, les autres restent",
+  "lecture": [
+   "Les quatre disques bleus 1, 3, 5, 8 sont reliés par des flèches orange qui forment une boucle.",
+   "Les quatre cases grises 2, 4, 6, 7 sont à part : aucune flèche ne les touche.",
+   "En bas, γ désigne ce mélange : un cycle de longueur 4."
+  ],
+  "a_voir": "Quatre nombres tournent en rond, les quatre autres ne bougent pas."
+ },
+ {
+  "code": "46-162",
+  "a_dire": "La formule dit : chaque nombre de la liste va sur le suivant, et le dernier va sur le premier.",
+  "legende_titre": "La formule lue sur les flèches du cycle",
+  "lecture": [
+   "Sur le cercle, la flèche orange part de 1 (i_1) et arrive sur 3 (i_2) : c'est γ(i_1) = i_2.",
+   "La flèche verte part de 8 (i_r) et revient sur 1 (i_1) : c'est γ(i_r) = i_1.",
+   "Les flèches grises relient les nombres du milieu.",
+   "En bas, le disque gris 2 n'est pas dans la liste : il reste sur lui-même."
+  ],
+  "a_voir": "Chaque ligne de la formule correspond à une flèche du cercle."
+ },
+ {
+  "code": "46-163",
+  "a_dire": "La notation (i_1 i_2 ⋯ i_r) écrit un cycle avec des numéros : le numéro donne le rang du nombre dans la liste.",
+  "legende_titre": "Un cycle écrit avec des numéros",
+  "lecture": [
+   "Les cases bleues du haut forment la formule : i_1, i_2, des points, puis i_r.",
+   "Les cases vertes du bas donnent les nombres du cas : 1, 3, 5, 8.",
+   "Chaque flèche orange relie un numéro de la formule au nombre qu'il désigne."
+  ],
+  "a_voir": "i_1 est 1, i_2 est 3, les points remplacent 5 et i_r est 8."
+ },
+ {
+  "code": "46-164",
+  "a_dire": "Dans la parenthèse du cycle, on écrit seulement les nombres qui bougent ; ceux qui sont absents ne bougent pas.",
+  "legende_titre": "Ce que la parenthèse annonce",
+  "lecture": [
+   "En haut, la parenthèse (1 3 5 8) est écrite en bleu.",
+   "Les flèches bleues pointent vers les quatre cases orange : 1, 3, 5, 8, ceux qui bougent.",
+   "Les quatre cases grises 2, 4, 6, 7 ne reçoivent aucune flèche : elles sont absentes de la parenthèse et immobiles."
+  ],
+  "a_voir": "Seules les cases orange sont écrites dans la parenthèse."
+ },
+ {
+  "code": "46-165",
+  "a_dire": "Dans un cycle, chaque nombre est envoyé sur celui qui le suit, et le dernier sur le premier : la liste se lit en cercle.",
+  "legende_titre": "La liste du cycle fermée en cercle",
+  "lecture": [
+   "Les disques bleus 1, 3, 5, 8 sont placés sur un cercle, dans l'ordre de la liste.",
+   "Chaque flèche orange va d'un nombre au suivant : 1 sur 3, 3 sur 5, 5 sur 8.",
+   "La flèche verte ferme le cercle : 8 revient sur 1."
+  ],
+  "a_voir": "Le dernier nombre est relié au premier, il n'y a pas de bord."
+ },
+ {
+  "code": "46-166",
+  "a_dire": "Les nombres qui ne sont pas écrits dans la parenthèse restent à leur place.",
+  "legende_titre": "Les nombres absents de (2 6) restent en place",
+  "lecture": [
+   "La rangée du haut montre les huit cartes avant, celle du bas après le cycle (2 6).",
+   "Les deux flèches orange croisées échangent les cartes 2 et 6.",
+   "Les traits gris en pointillés relient chaque autre carte à la même place : elle ne bouge pas."
+  ],
+  "a_voir": "Seules les deux cases orange changent, toutes les autres restent."
+ },
+ {
+  "code": "46-167",
+  "a_dire": "Un cycle peut s'écrire en commençant par n'importe lequel de ses nombres : c'est le même cycle.",
+  "legende_titre": "Trois écritures, un seul cercle",
+  "lecture": [
+   "Chaque cercle porte les mêmes nombres 1, 3, 5, 8 dans le même sens.",
+   "Dans chaque cercle, un disque orange marque le nombre par lequel l'écriture commence.",
+   "Sous chaque cercle, la liste commence par le disque orange : (1 3 5 8), (3 5 8 1), (5 8 1 3)."
+  ],
+  "a_voir": "Les trois cercles sont identiques : seul le point de départ change."
+ },
+ {
+  "code": "46-168",
+  "a_dire": "L'ordre d'un r-cycle est r : il faut r applications pour que tout revienne à sa place.",
+  "legende_titre": "Le tour complet d'un cycle de longueur 4",
+  "lecture": [
+   "Le disque orange 1 est le départ.",
+   "Chaque flèche orange avance d'un cran : 1 pas mène à 3, 2 pas à 5, 3 pas à 8.",
+   "La flèche verte, au quatrième pas, ramène sur 1.",
+   "À droite, r vaut 4 : le retour a lieu après r pas."
+  ],
+  "a_voir": "Il faut quatre pas, pas moins, pour revenir au départ."
+ },
+ {
+  "code": "46-169",
+  "a_dire": "Un 1-cycle (i) ne déplace aucune carte : c'est l'identité.",
+  "legende_titre": "Un cycle à un seul nombre ne change rien",
+  "lecture": [
+   "Les cartes 4 et 7, en bleu, sont les nombres des cycles (4) et (7).",
+   "Chaque flèche bleue va de la carte à la même place en dessous : elle reste où elle est.",
+   "Les traits gris en pointillés montrent que les autres cartes ne bougent pas non plus."
+  ],
+  "a_voir": "Toutes les cartes retrouvent leur place : rien n'a bougé."
+ },
+ {
+  "code": "46-170",
+  "a_dire": "Deux cycles sont disjoints quand ils n'ont aucun nombre en commun.",
+  "legende_titre": "Trois situations pour deux cycles",
+  "lecture": [
+   "En haut, les ellipses bleue et violette sont séparées : aucun nombre commun, les cycles sont disjoints.",
+   "Au milieu, les ellipses se recouvrent : le 3, en rouge, est dans les deux cycles.",
+   "En bas, une seule ellipse bleue entoure les mêmes nombres, avec un contour violet pointillé : les deux cycles sont égaux."
+  ],
+  "a_voir": "Seule la première ligne a deux ellipses sans zone commune."
+ },
+ {
+  "code": "46-171",
+  "a_dire": "Deux cycles disjoints donnent le même résultat dans les deux ordres ; deux cycles non disjoints, non.",
+  "legende_titre": "Changer l'ordre de deux cycles",
+  "lecture": [
+   "En haut, la carte 1 suit le chemin orange ou le chemin violet : dans les deux cas elle finit en 3, en vert.",
+   "En bas, les cycles (1 2) et (1 3) ont le nombre 1 en commun.",
+   "Le chemin orange mène la carte 1 en 2, le chemin violet la mène en 3 : les deux disques rouges sont différents."
+  ],
+  "a_voir": "Pour les cycles sans nombre commun, l'ordre ne change rien."
+ },
+ {
+  "code": "46-172",
+  "a_dire": "Un nombre déplacé par γ reste en place pour γ′, et inversement.",
+  "legende_titre": "Qui déplace quel nombre",
+  "lecture": [
+   "Chaque colonne est un nombre, de 1 à 8.",
+   "La ligne γ montre en orange les nombres qu'elle déplace : 1, 3, 5, 8.",
+   "La ligne γ′ montre en orange les nombres qu'elle déplace : 2 et 6.",
+   "Aucune colonne n'a deux cases orange."
+  ],
+  "a_voir": "Chaque nombre est déplacé par un cycle au plus."
+ },
+ {
+  "code": "46-173",
+  "a_dire": "Un mélange de nombres en nombre fini se coupe en cycles disjoints, qui couvrent tous les nombres.",
+  "legende_titre": "Un mélange coupé en boucles",
+  "lecture": [
+   "Le cercle bleu 1, 3, 5, 8 est le cycle (1 3 5 8).",
+   "Les deux disques violets 2 et 6 forment le cycle (2 6).",
+   "Les disques gris 4 et 7 ont chacun une boucle sur eux-mêmes : ce sont (4) et (7).",
+   "La somme 4 + 2 + 1 + 1 donne les 8 cartes."
+  ],
+  "a_voir": "Chaque carte est dans une boucle et une seule."
+ },
+ {
+  "code": "46-174",
+  "a_dire": "La décomposition en cycles disjoints est unique, à l'ordre des cycles et aux cycles d'un seul nombre près.",
+  "legende_titre": "Plusieurs écritures, un seul mélange",
+  "lecture": [
+   "La première ligne écrit (1 3 5 8) puis (2 6).",
+   "La deuxième ligne échange l'ordre des deux cycles.",
+   "La troisième ligne ajoute les cycles (4) et (7), en gris pointillé.",
+   "Les trois flèches arrivent dans la même case verte."
+  ],
+  "a_voir": "Les trois lignes désignent le même mélange."
+ },
+ {
+  "code": "46-175",
+  "a_dire": "La preuve suit les flèches depuis un nombre jusqu'à la boucle qui se ferme, puis recommence avec un nombre pas encore vu.",
+  "legende_titre": "Suivre les flèches, boucle après boucle",
+  "lecture": [
+   "Chaque ligne part d'un nombre, en orange.",
+   "La ligne 1 suit 1, 3, 5, 8 et la flèche verte revient sur 1.",
+   "La ligne 2 part de 2 et revient sur 2 après 6.",
+   "Les lignes 4 et 7 sont des boucles d'un seul nombre."
+  ],
+  "a_voir": "Chaque boucle est nouvelle : elle ne rejoint pas les précédentes."
+ },
+ {
+  "code": "46-176",
+  "a_dire": "Quand la liste se répète, le nombre répété est le premier de la liste, sinon deux nombres auraient la même image.",
+  "legende_titre": "Pourquoi la boucle revient au premier nombre",
+  "lecture": [
+   "En haut, la flèche verte ramène 8 sur 1, le premier nombre : c'est le cas vrai.",
+   "En bas, la flèche rouge enverrait 8 sur 3.",
+   "Alors 1 et 8 auraient tous les deux 3 pour image, ce que le mélange ne permet pas."
+  ],
+  "a_voir": "Seul un retour sur 1 évite deux nombres avec la même image."
+ }
+]

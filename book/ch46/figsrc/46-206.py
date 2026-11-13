@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'se lit « N de sigma »', 'fixe', 's')
+text(ax, 38, 46, 'N', 'resultat', 'l', weight='bold')
+text(ax, 49, 46, r'($\sigma$)', 'sujet', 'l', weight='bold')
+arrow(ax, (38, 42), (26, 32), 'resultat', lw=0.8)
+arrow(ax, (49, 42), (62, 32), 'sujet', lw=0.8)
+text(ax, 24, 28, 'le nombre associé', 'resultat', 's')
+text(ax, 64, 28, 'la permutation', 'sujet', 's')
+text(ax, 44, 15, '(1 3 5 8)(2 6)(4)(7)', 'sujet', 'm')
+text(ax, 44, 6, r'$N(\sigma)$ = 4', 'resultat', 'm')
+save(fig, '46-206')

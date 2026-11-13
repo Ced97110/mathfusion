@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 44, 47, '6 divise 12', 'encre', 'm')
+text(ax, 4, 38, r'$\mathbb{Z}/12\mathbb{Z}$ : 12 éléments', 'encre', 's', ha='left')
+for i in range(12): box(ax, 4 + i * 6.8, 28, 6, 6, 'sujet' if i % 2 == 0 else 'fixe', lw=0.6, r=0.4)
+text(ax, 4, 22, 'un sous-groupe à 6 existe', 'resultat', 's', ha='left')
+text(ax, 4, 14, r'$A_4$ : 12 éléments', 'encre', 's', ha='left')
+for i in range(12): box(ax, 4 + i * 6.8, 4, 6, 6, 'fixe', lw=0.6, r=0.4)
+text(ax, 84, 14, 'aucun à 6', 'limite', 's', ha='right')
+save(fig, '46-240')

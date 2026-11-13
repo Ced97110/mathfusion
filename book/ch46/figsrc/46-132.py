@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 20, 36, r'$\varphi$', 'sujet', 30)
+text(ax, 44, 36, r'$($', 'fixe', 30)
+text(ax, 54, 36, r'$n$', 'varie', 30)
+text(ax, 64, 36, r'$)$', 'fixe', 30)
+text(ax, 44, 52, '« phi de $n$ »', 'encre', 'l')
+arrow(ax, (20, 28), (20, 19), 'sujet'); text(ax, 20, 14, 'nom de la fonction', 'sujet', 's')
+arrow(ax, (54, 28), (54, 19), 'varie'); text(ax, 56, 14, "ordre du groupe", 'varie', 's')
+brace(ax, 12, 76, 6, 'resultat', 'nombre de générateurs', down=True)
+save(fig, '46-132')

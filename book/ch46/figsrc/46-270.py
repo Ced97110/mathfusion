@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 10, 70, 18, 0, 4, step=1, arrow_right=True)
+for v in range(5):
+    if v % 2 == 0: disc(ax, f(v), 18, 2.0, 'resultat')
+    else: disc(ax, f(v), 18, 2.0, 'limite', fill=False)
+text(ax, f(0), 31, '(1)', 'sujet', 'l')
+text(ax, f(2), 31, '(1 2)(1 2)', 'sujet', 'm')
+arrow(ax, (f(0), 28), (f(0), 22), 'fixe', lw=0.7)
+arrow(ax, (f(2), 28), (f(2), 22), 'fixe', lw=0.7)
+text(ax, 40, 7, 'nombre d’échanges', 'fixe', 's')
+text(ax, 44, 46, 'l’identité s’écrit avec 0 ou 2', 'sujet', 's')
+text(ax, 72, 30, 'pair', 'resultat', 'm')
+text(ax, 72, 25, 'sg = +1', 'resultat', 's')
+save(fig, '46-270')

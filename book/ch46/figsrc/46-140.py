@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 2, 30, 46, 16, 'fixe')
+text(ax, 25, 41, "l'ensemble des nombres", 'encre', 's')
+text(ax, 25, 35, 'complexes de module 1', 'encre', 's')
+text(ax, 25, 25.5, '7 mots', 'fixe', 's')
+arrow(ax, (49, 38), (60, 38), 'varie'); text(ax, 54.5, 43, "s'écrit", 'varie', 's')
+text(ax, 72, 38, r'$\mathbb{T}$', 'sujet', 30)
+text(ax, 72, 26, '1 signe', 'sujet', 's')
+disc(ax, 72, 12, 9, 'sujet'); text(ax, 72, 12, r'$|z| = 1$', 'sujet', 's')
+save(fig, '46-140')

@@ -1,0 +1,176 @@
+[
+ {
+  "code": "46-113",
+  "a_dire": "Un nombre multiple de 2 et de 3 est multiple de 6 : 6ℤ est l'ensemble des nombres communs à 2ℤ et 3ℤ.",
+  "legende_titre": "Trois lignes de multiples alignées",
+  "lecture": [
+   "La ligne violette montre les multiples de 2, la ligne orange ceux de 3.",
+   "La ligne bleue montre les multiples de 6.",
+   "Les traits en pointillés relient 0, 6, 12 et 18 : ce sont les nombres colorés sur les trois lignes."
+  ],
+  "a_voir": "Les points en couleur de la ligne 6ℤ sont exactement ceux qui sont colorés dans les deux autres."
+ },
+ {
+  "code": "46-114",
+  "a_dire": "Un sous-groupe d'un groupe cyclique est lui aussi cyclique : un seul élément suffit à l'engendrer.",
+  "legende_titre": "Un groupe cyclique et son sous-groupe",
+  "lecture": [
+   "Les petites flèches bleues du bas sont les pas de 1 qui engendrent le groupe.",
+   "Les points verts sont le sous-groupe 0, 3, 6, 9.",
+   "Les grandes flèches orange sont le pas unique de 3 qui engendre ce sous-groupe."
+  ],
+  "a_voir": "Le sous-groupe 0, 3, 6, 9 s'engendre avec un seul pas, comme le groupe entier."
+ },
+ {
+  "code": "46-115",
+  "a_dire": "Les sous-groupes de ℤ sont les ensembles de multiples sℤ, avec s au moins égal à 0.",
+  "legende_titre": "Des lignes de multiples et un contre-exemple",
+  "lecture": [
+   "Les trois lignes bleues sont les multiples de 0, de 2 et de 3 : ce sont des sous-groupes.",
+   "La ligne rouge montre les nombres impairs : le cercle en pointillés marque 0, qui leur manque.",
+   "Elle n'est donc pas de la forme sℤ."
+  ],
+  "a_voir": "Chaque sous-groupe est une ligne de multiples d'un seul nombre ; les impairs n'en forment pas une."
+ },
+ {
+  "code": "46-116",
+  "a_dire": "La notation sℤ remplace une infinité d'ensembles de multiples par une seule écriture avec une lettre.",
+  "legende_titre": "La formule sℤ découpée",
+  "lecture": [
+   "Le morceau orange sk veut dire s fois k.",
+   "Le morceau violet k ∈ ℤ veut dire que k parcourt tous les entiers relatifs.",
+   "Les trois cases du bas sont la formule avec s égal à 2, à 3 et à 6."
+  ],
+  "a_voir": "Chaque morceau de la formule est relié à son sens, et s prend les valeurs 2, 3, 6."
+ },
+ {
+  "code": "46-117",
+  "a_dire": "À chaque entier s au moins égal à 0 correspond un sous-groupe sℤ différent des autres.",
+  "legende_titre": "Quatre lignes de multiples distinctes",
+  "lecture": [
+   "Chaque ligne bleue montre les multiples de 0, 2, 3 ou 4.",
+   "Le point orange est le plus petit entier positif de la ligne.",
+   "Ce point change d'une ligne à l'autre, donc les lignes sont différentes."
+  ],
+  "a_voir": "Les lignes ont des points différents, et le premier point positif orange de chaque ligne est s."
+ },
+ {
+  "code": "46-118",
+  "a_dire": "Pour chaque diviseur q de r, il existe un seul sous-groupe d'ordre q, engendré par a puissance r divisé par q.",
+  "legende_titre": "L'horloge et la liste des diviseurs de 12",
+  "lecture": [
+   "Les grands points bleus de l'horloge sont le sous-groupe à 4 éléments.",
+   "Les flèches orange sont le pas de 3, qui vaut 12 divisé par 4.",
+   "La liste de droite donne, pour chaque diviseur q de 12, le générateur ; la case bleue est q égal à 4."
+  ],
+  "a_voir": "Pour q égal à 4, le sous-groupe 0, 3, 6, 9 est engendré par le pas 12 divisé par 4, soit 3."
+ },
+ {
+  "code": "46-119",
+  "a_dire": "Le nombre d'éléments d'un sous-groupe d'un groupe cyclique d'ordre r est un diviseur de r.",
+  "legende_titre": "Les nombres de 1 à 12 triés",
+  "lecture": [
+   "Les disques verts sont 1, 2, 3, 4, 6 et 12 : ils divisent 12.",
+   "Les disques rouges sont les autres nombres : aucun sous-groupe n'a ce nombre d'éléments."
+  ],
+  "a_voir": "Seuls les diviseurs de 12 (en vert) sont des nombres d'éléments possibles."
+ },
+ {
+  "code": "46-120",
+  "a_dire": "La preuve part d'un sous-groupe non réduit au neutre, prend le plus petit exposant positif s, et arrive à H égal au groupe engendré par a puissance s.",
+  "legende_titre": "Les trois temps de la preuve",
+  "lecture": [
+   "La case bleue est le départ, la case verte est l'arrivée.",
+   "La case orange est le choix de s, le plus petit exposant positif.",
+   "La droite du bas montre le sous-groupe 0, 3, 6, 9 de l'horloge : le point orange est s égal à 3."
+  ],
+  "a_voir": "L'étape en orange, le choix du plus petit exposant positif, porte la preuve."
+ },
+ {
+  "code": "46-121",
+  "a_dire": "On écrit m égal à q fois s plus t, le reste t est nul car s est le plus petit, donc H est engendré par a puissance s.",
+  "legende_titre": "Une division en pas égaux",
+  "lecture": [
+   "Les flèches orange sont les pas de s égal à 3.",
+   "Le point vert est 9, où l'on arrive sans reste.",
+   "L'accolade compte q égal à 3 pas."
+  ],
+  "a_voir": "Trois pas de s tombent exactement sur 9 : le reste est 0."
+ },
+ {
+  "code": "46-122",
+  "a_dire": "L'horloge à 12 heures a six sous-groupes, un par diviseur de 12.",
+  "legende_titre": "Six horloges, six sous-groupes",
+  "lecture": [
+   "Sur chaque horloge, les gros points bleus sont les éléments du sous-groupe.",
+   "Le texte sous l'horloge donne le générateur et le nombre d'éléments : 1, 2, 3, 4, 6 et 12."
+  ],
+  "a_voir": "Chaque horloge montre un sous-groupe, avec plus de points quand le diviseur est grand."
+ },
+ {
+  "code": "46-123",
+  "a_dire": "L'ordre de k dans ℤ/nℤ est n divisé par le PGCD de k et n.",
+  "legende_titre": "L'élément 8 sur l'horloge à 12 heures",
+  "lecture": [
+   "Les flèches orange sont les pas de 8 : 0, 8, 4, puis 0.",
+   "La case grise donne le PGCD de 8 et 12, qui est 4.",
+   "La case verte donne l'ordre : 12 divisé par 4 égale 3."
+  ],
+  "a_voir": "En pas de 8, on revient à 0 après 3 pas, soit 12 divisé par 4."
+ },
+ {
+  "code": "46-124",
+  "a_dire": "Un élément k engendre ℤ/nℤ exactement quand k et n sont premiers entre eux.",
+  "legende_titre": "Les générateurs de l'horloge à 12 heures",
+  "lecture": [
+   "Chaque disque est un nombre de l'horloge.",
+   "Les verts ont 1 pour PGCD avec 12 : ils engendrent tout.",
+   "Les rouges ont un PGCD plus grand que 1 avec 12 : ils n'engendrent pas tout."
+  ],
+  "a_voir": "Les nombres verts 1, 5, 7, 11 engendrent l'horloge ; les rouges ne le font pas."
+ },
+ {
+  "code": "46-125",
+  "a_dire": "L'ordre de a puissance k est n divisé par d, où d est le PGCD de k et n.",
+  "legende_titre": "Des blocs communs de 12 et de 8",
+  "lecture": [
+   "La barre bleue est n égal à 12, coupée en blocs de 4.",
+   "La barre violette est k égal à 8, coupée en blocs de 4.",
+   "L'accolade verte compte les blocs de n : c'est l'ordre."
+  ],
+  "a_voir": "Quand on retire les blocs communs de 4, il reste 3 blocs pour 12."
+ },
+ {
+  "code": "46-126",
+  "a_dire": "La preuve divise par d : 12 divise 8m devient 3 divise 2m, et le plus petit m est 3.",
+  "legende_titre": "Départ, division par d, arrivée",
+  "lecture": [
+   "La case bleue est le départ, la case orange la division par d, la case verte l'arrivée.",
+   "Les trois petites cases du bas essaient m égal à 1, 2, 3.",
+   "Les deux rouges ne sont pas des multiples de 12, la verte (24) l'est."
+  ],
+  "a_voir": "Après la division par 4, il reste 3 divise 2m, ce qui donne m égal à 3."
+ },
+ {
+  "code": "46-127",
+  "a_dire": "Pour n égal à 12 et k égal à 8, d vaut 4 et l'ordre de b est 3 : un cas chiffré, pas une preuve.",
+  "legende_titre": "Trois sauts de 8 sur une droite",
+  "lecture": [
+   "Les flèches orange sont les sauts de 8.",
+   "Les points gris 12 et 24 sont les multiples de 12.",
+   "Le point vert 24 est b au cube, égal au neutre."
+  ],
+  "a_voir": "Trois sauts de 8 amènent sur 24, qui est un multiple de 12."
+ },
+ {
+  "code": "46-128",
+  "a_dire": "a puissance k engendre G quand d égal 1, c'est-à-dire quand k et n n'ont aucun diviseur commun autre que 1.",
+  "legende_titre": "Deux chemins sur l'horloge",
+  "lecture": [
+   "Le chemin vert (a puissance 5) passe par les 12 points de l'horloge.",
+   "Le chemin rouge (a puissance 4) ne passe que par 3 points.",
+   "Le d de chaque chemin est écrit sous l'horloge."
+  ],
+  "a_voir": "Le pas 5 visite les 12 points ; le pas 4 n'en visite que 3."
+ }
+]

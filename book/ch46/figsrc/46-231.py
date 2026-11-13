@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 4, 58, r'$S_3$ : 6 permutations', 'encre', 's', ha='left')
+text(ax, 84, 58, r'$B_n$ : impaires de $n$ nombres', 'autre', 's', ha='right')
+text(ax, 4, 50, r'$A_3$ : les 3 paires', 'sujet', 'm', ha='left')
+for i, l in enumerate(['id', '(1 2 3)', '(1 3 2)']): box(ax, 4 + i * 27, 38, 24, 9, 'sujet', label=l, size='s')
+for i, l in enumerate(['(1 2)', '(2 3)', '(1 3)']): box(ax, 4 + i * 27, 16, 24, 9, 'autre', label=l, size='s')
+box(ax, 2, 13, 84, 15, 'autre', fill=False, dash=True)
+text(ax, 4, 31, r'$B_3$ : les 3 impaires', 'autre', 'm', ha='left')
+text(ax, 4, 7, "$B_3$ ne contient pas id", 'limite', 's', ha='left')
+save(fig, '46-231')

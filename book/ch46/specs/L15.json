@@ -1,0 +1,179 @@
+[
+ {
+  "code": "46-225",
+  "a_dire": "Le signe sg(σ) remplace « la signature de σ » : +1 si σ est paire, −1 si elle est impaire.",
+  "legende_titre": "Un signe court pour la signature",
+  "lecture": [
+   "Chaque case bleue est une permutation : (1 2 3) en haut, (1 2) en bas.",
+   "La flèche orange porte la parité : paire en haut, impaire en bas.",
+   "Chaque case verte donne la signature écrite avec le signe : +1 en haut, −1 en bas."
+  ],
+  "a_voir": "Une ligne courte remplace une phrase entière."
+ },
+ {
+  "code": "46-226",
+  "a_dire": "La signature d'un produit est le produit des signatures, car le nombre d'échanges s'additionne.",
+  "legende_titre": "La signature d'un produit de permutations",
+  "lecture": [
+   "La case bleue est l'échange de σ ; les deux cases violettes sont les deux échanges de σ'.",
+   "L'accolade orange du bas compte les échanges mis bout à bout : 1 + 2 = 3.",
+   "La case verte donne la signature du produit : −1 vaut (−1) fois (+1)."
+  ],
+  "a_voir": "Les échanges s'additionnent, donc les signatures se multiplient."
+ },
+ {
+  "code": "46-227",
+  "a_dire": "Le groupe alterné A_n contient exactement les permutations paires, soit la moitié de S_n, et non les impaires.",
+  "legende_titre": "Le groupe alterné et ses voisins",
+  "lecture": [
+   "La première rangée montre les 24 permutations de S_4 : 12 bleues (paires) et 12 violettes (impaires).",
+   "La deuxième rangée garde seulement les 12 cases bleues : c'est A_4.",
+   "La troisième rangée garde seulement les cases violettes : sans l'identité, ce n'est pas un groupe."
+  ],
+  "a_voir": "A_n est la moitié bleue de S_n."
+ },
+ {
+  "code": "46-228",
+  "a_dire": "A_n est un sous-groupe de S_n : l'identité, le produit et l'inverse de permutations paires restent pairs.",
+  "legende_titre": "Pourquoi A_n est un sous-groupe",
+  "lecture": [
+   "La grande case grise est S_n ; la case bleue dedans est A_n.",
+   "Les trois cases du milieu sont id, (1 2 3) et (1 3 2), toutes dans A_n.",
+   "Les flèches orange montrent le carré de (1 2 3) et son inverse : elles arrivent sur (1 3 2), qui reste dans la case bleue."
+  ],
+  "a_voir": "Chaque résultat retombe dans la case bleue."
+ },
+ {
+  "code": "46-229",
+  "a_dire": "Le signe A_n se lit « A indice n » : l'ensemble des permutations paires de n nombres.",
+  "legende_titre": "Lire le signe A indice n",
+  "lecture": [
+   "La grande lettre bleue A désigne les permutations paires.",
+   "La petite lettre orange n dit combien de nombres on permute.",
+   "Les rangées de cases comptent les éléments : 3 pour A_3, 12 pour A_4."
+  ],
+  "a_voir": "Chaque morceau du signe a son sens."
+ },
+ {
+  "code": "46-230",
+  "a_dire": "A_n contient la moitié des éléments de S_n dès que n est au moins 2 ; pour n égal à 1 ce n'est pas vrai.",
+  "legende_titre": "La moitié, seulement si n ≥ 2",
+  "lecture": [
+   "Les six cases du haut sont les permutations de S_3 : trois bleues (A_3), trois violettes (impaires).",
+   "Les deux accolades montrent que les deux groupes ont la même taille : la moitié chacun.",
+   "En bas, pour n = 1, il n'y a qu'une case bleue : tout est pair, la moitié n'existe pas."
+  ],
+  "a_voir": "Trois bleues et trois violettes, mais pas pour n = 1."
+ },
+ {
+  "code": "46-231",
+  "a_dire": "Le signe B_n nomme l'ensemble des permutations impaires de n nombres.",
+  "legende_titre": "Un nom pour les permutations impaires",
+  "lecture": [
+   "La rangée bleue du haut montre les trois permutations paires de S_3.",
+   "La rangée violette dans le cadre en pointillés montre les trois échanges : c'est B_3.",
+   "La phrase rouge rappelle que B_3 ne contient pas id."
+  ],
+  "a_voir": "Le cadre violet porte le nom B_3."
+ },
+ {
+  "code": "46-232",
+  "a_dire": "À chaque permutation paire τ, la preuve associe (1 2)τ, une permutation impaire, et chaque impaire est atteinte une seule fois.",
+  "legende_titre": "La preuve par correspondance un à un",
+  "lecture": [
+   "Les cases bleues de gauche sont les trois permutations paires, le départ.",
+   "Les cases violettes de droite sont les trois impaires, l'arrivée.",
+   "Chaque flèche orange multiplie par (1 2) et relie une paire à une seule impaire."
+  ],
+  "a_voir": "Trois flèches, trois départs, trois arrivées différentes."
+ },
+ {
+  "code": "46-233",
+  "a_dire": "Le nombre d'éléments de A_n est n! divisé par 2, la moitié de n!.",
+  "legende_titre": "Le nombre d'éléments, toujours la moitié",
+  "lecture": [
+   "Chaque barre représente n! permutations : 6, 24, puis 120.",
+   "La moitié bleue compte les paires : 3, 12, 60.",
+   "La moitié violette compte les impaires, en même nombre."
+  ],
+  "a_voir": "Pour chaque n, la barre est coupée en deux moitiés égales."
+ },
+ {
+  "code": "46-234",
+  "a_dire": "Le signe |A_n| se lit « le nombre d'éléments de A_n » : on compte les éléments.",
+  "legende_titre": "Lire les barres autour de A_n",
+  "lecture": [
+   "Les petites cases bleues sont les éléments de A_3, puis de A_4.",
+   "Les deux barres verticales entourent l'ensemble pour dire : on compte.",
+   "Le nombre vert à droite est le résultat : 3, puis 12."
+  ],
+  "a_voir": "Les barres demandent de compter les cases."
+ },
+ {
+  "code": "46-235",
+  "a_dire": "Le signe n! écrit le produit n fois (n−1) fois ... jusqu'à 1 ; pour 4 cartes, 4 fois 3 fois 2 fois 1, soit 24.",
+  "legende_titre": "n! pour quatre cartes",
+  "lecture": [
+   "La première colonne bleue a 4 cases : 4 choix pour la première carte.",
+   "Les colonnes orange ont 3, 2 puis 1 cases : les choix qui restent.",
+   "La ligne du haut écrit le produit et sa valeur, 24."
+  ],
+  "a_voir": "Le nombre de cases par colonne donne les facteurs."
+ },
+ {
+  "code": "46-236",
+  "a_dire": "Pour trois cartes, A_3 a 3 éléments : la moitié de 6, ce que la liste confirme.",
+  "legende_titre": "Le cas n = 3 : trois éléments",
+  "lecture": [
+   "Le cadre bleu est A_3.",
+   "Les trois cases sont id, (1 2 3) et (1 3 2), les trois permutations paires.",
+   "Les flèches orange montrent qu'on passe de l'une à l'autre en multipliant par (1 2 3)."
+  ],
+  "a_voir": "La liste donne 3, comme le calcul 6 divisé par 2."
+ },
+ {
+  "code": "46-237",
+  "a_dire": "Les douze éléments de A_4 se rangent en 1 identité, 3 doubles échanges et 8 cycles de longueur 3.",
+  "legende_titre": "Les douze éléments rangés par forme",
+  "lecture": [
+   "La première case seule est l'identité.",
+   "Les trois cases suivantes sont les doubles échanges.",
+   "Les huit cases de la deuxième rangée sont les cycles de longueur 3.",
+   "Le total vert est 1 + 3 + 8 = 12."
+  ],
+  "a_voir": "Trois formes, 1, 3 et 8 éléments."
+ },
+ {
+  "code": "46-238",
+  "a_dire": "Une double transposition est le produit de deux échanges sans carte en commun, comme (1 2)(3 4).",
+  "legende_titre": "Deux échanges séparés",
+  "lecture": [
+   "Les quatre disques bleus sont les cartes 1, 2, 3, 4.",
+   "La première flèche orange échange 1 et 2.",
+   "La deuxième flèche orange échange 3 et 4 : aucune carte n'est touchée deux fois."
+  ],
+  "a_voir": "Deux échanges qui ne partagent aucune carte."
+ },
+ {
+  "code": "46-239",
+  "a_dire": "Les 3-cycles et les doubles transpositions sont pairs, un 4-cycle est impair : la forme donne la parité.",
+  "legende_titre": "La forme donne la parité",
+  "lecture": [
+   "Chaque colonne est une permutation, avec ses échanges empilés.",
+   "Les deux colonnes bleues ont 2 échanges : elles sont paires.",
+   "La colonne violette a 3 échanges : elle est impaire."
+  ],
+  "a_voir": "Deux échanges, paire ; trois échanges, impaire."
+ },
+ {
+  "code": "46-240",
+  "a_dire": "Un diviseur de l'ordre ne donne pas toujours un sous-groupe : 6 divise 12, mais A_4 n'a aucun sous-groupe à 6 éléments.",
+  "legende_titre": "6 divise 12, mais A_4 n'a pas de sous-groupe à 6",
+  "lecture": [
+   "La première rangée est l'horloge à 12 heures : les six cases bleues forment un sous-groupe.",
+   "La deuxième rangée est A_4, aussi à 12 éléments.",
+   "Aucune case n'y est colorée : il n'existe pas de sous-groupe à 6 éléments."
+  ],
+  "a_voir": "Le cas qui marche en bleu, le cas qui casse sans rien."
+ }
+]

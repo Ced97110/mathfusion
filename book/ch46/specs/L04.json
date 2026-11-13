@@ -1,0 +1,178 @@
+[
+ {
+  "code": "46-049",
+  "a_dire": "Prendre h égal à g donne g g⁻¹ = e, donc le neutre est dans H.",
+  "legende_titre": "Première étape de la preuve",
+  "lecture": [
+   "Le point bleu 8 et le point orange 4 sont dans la partie H ; le point vert 0 est le neutre.",
+   "La flèche orange va de 4 à 0 : c’est la différence 4 − 4.",
+   "Les trois cases de droite donnent le départ, l’étape et l’arrivée."
+  ],
+  "a_voir": "La partie non vide donne un 4, et 4 − 4 donne le neutre 0."
+ },
+ {
+  "code": "46-050",
+  "a_dire": "Avec g égal à e, la condition donne l’inverse de chaque h de H.",
+  "legende_titre": "Deuxième étape de la preuve",
+  "lecture": [
+   "Le point orange 0 est le neutre, pris comme premier élément.",
+   "Le point bleu 4 est h ; la flèche orange est la différence 0 − 4.",
+   "Le point vert 8 est le résultat : l’inverse de 4, dans H."
+  ],
+  "a_voir": "Le neutre déjà obtenu sert de premier élément et donne l’inverse."
+ },
+ {
+  "code": "46-051",
+  "a_dire": "Avec g égal à h₁ et h égal à l’inverse de h₂, la condition donne le produit h₁h₂.",
+  "legende_titre": "Troisième étape de la preuve",
+  "lecture": [
+   "Le point violet 8 est h₂ ; la flèche orange mène à son inverse, le point bleu 4.",
+   "Le point bleu 4 est aussi h₁.",
+   "Le point vert 0 est le produit 4 + 8, qui vaut 0 sur l’horloge."
+  ],
+  "a_voir": "L’inverse obtenu avant permet de former le couple qui donne le produit."
+ },
+ {
+  "code": "46-052",
+  "a_dire": "Dans un sous-groupe, h⁻¹ est dans H puis g h⁻¹ aussi : le critère est vérifié.",
+  "legende_titre": "Le critère dans l’autre sens",
+  "lecture": [
+   "La case bleue de gauche est h, un élément de H.",
+   "La case orange est son inverse, obtenu par la condition des inverses.",
+   "La case verte est le produit de g par cet inverse, obtenu par la condition du produit ; g est la case bleue du bas."
+  ],
+  "a_voir": "L’inverse vient d’abord ; le produit vient ensuite."
+ },
+ {
+  "code": "46-053",
+  "a_dire": "« Pour tous » devant un ensemble vide est vrai sans rien vérifier ; il faut donc demander à part que H ne soit pas vide.",
+  "legende_titre": "Une phrase vraie sans élément",
+  "lecture": [
+   "Les deux cadres en pointillés sont vides : une salle sans élève et une partie vide.",
+   "Dans chaque cas, la phrase « pour tous » est vraie, en vert.",
+   "La case orange donne la condition à part : H n’est pas vide."
+  ],
+  "a_voir": "La condition sur les différences ne garantit aucun élément."
+ },
+ {
+  "code": "46-054",
+  "a_dire": "Un sous-groupe se juge avec l’opération du grand groupe, pas avec une autre.",
+  "legende_titre": "Même ensemble, autre opération",
+  "lecture": [
+   "Le grand cadre gris est (ℝ, +), avec l’addition.",
+   "Le cadre bleu ℝ* est dans ℝ, mais son opération est la multiplication.",
+   "Le rond gris + et le rond bleu × sont différents : le signe rouge le dit."
+  ],
+  "a_voir": "ℝ* est emboîté dans ℝ, mais les opérations ne sont pas les mêmes."
+ },
+ {
+  "code": "46-055",
+  "a_dire": "Avec l’addition, 2 − 2 = 0 et 0 n’est pas dans ℝ*, donc ℝ* n’est pas un sous-groupe.",
+  "legende_titre": "Un seul calcul suffit",
+  "lecture": [
+   "Les traits bleus sont les réels non nuls ; le rond rouge vide est le 0, absent.",
+   "Le point bleu 2 est g.",
+   "La flèche orange est le calcul 2 − 2, qui tombe sur 0."
+  ],
+  "a_voir": "Le calcul 2 − 2 sort de ℝ*."
+ },
+ {
+  "code": "46-056",
+  "a_dire": "La somme de deux matrices inversibles peut être la matrice nulle, qui n’est pas inversible.",
+  "legende_titre": "Somme de matrices inversibles",
+  "lecture": [
+   "Les deux matrices bleues ont un déterminant égal à 1.",
+   "Le signe + les additionne.",
+   "La matrice rouge, faite de zéros, n’a pas d’inverse."
+  ],
+  "a_voir": "Deux éléments du groupe donnent une somme hors du groupe."
+ },
+ {
+  "code": "46-057",
+  "a_dire": "On cherche le plus petit sous-groupe qui contient la partie X, ici {4}.",
+  "legende_titre": "Quel sous-groupe est le plus petit ?",
+  "lecture": [
+   "La première ligne est X : seule la case 4 est bleue.",
+   "Les trois lignes violettes sont des sous-groupes qui contiennent 4 ; la case 4 reste bleue.",
+   "Les cases vides sont les heures absentes."
+  ],
+  "a_voir": "Trois sous-groupes contiennent 4 ; on demande le plus petit."
+ },
+ {
+  "code": "46-058",
+  "a_dire": "L’intersection des sous-groupes qui contiennent X garde les éléments communs à tous.",
+  "legende_titre": "Garder ce qui est dans tous",
+  "lecture": [
+   "Les trois lignes violettes sont les sous-groupes qui contiennent 4.",
+   "Les traits verts en pointillés relient les heures présentes dans les trois lignes.",
+   "La ligne verte est l’intersection : 0, 4, 8."
+  ],
+  "a_voir": "Seules les heures présentes dans chaque ligne restent."
+ },
+ {
+  "code": "46-059",
+  "a_dire": "L’intersection de deux sous-groupes est un sous-groupe.",
+  "legende_titre": "Intersection de deux sous-groupes",
+  "lecture": [
+   "La ligne bleue et la ligne violette sont deux sous-groupes de l’horloge.",
+   "La ligne verte garde les heures communes : 0 et 6.",
+   "La flèche orange montre 6 + 6 = 12, soit 0 : le résultat reste dans la partie."
+  ],
+  "a_voir": "La partie commune reste fermée par l’addition."
+ },
+ {
+  "code": "46-060",
+  "a_dire": "Le sous-groupe engendré par X est le plus petit sous-groupe qui contient X.",
+  "legende_titre": "Le plus petit qui contient X",
+  "lecture": [
+   "Le cadre bleu est X, la partie de départ.",
+   "Le cadre vert est le sous-groupe engendré : il contient X.",
+   "Le cadre violet puis le cadre gris contiennent le vert : ils sont plus grands."
+  ],
+  "a_voir": "Les cadres sont emboîtés ; le vert est le plus petit sous-groupe qui contient X."
+ },
+ {
+  "code": "46-061",
+  "a_dire": "La définition compare avec les autres sous-groupes ; elle ne dit pas quels éléments sont dedans.",
+  "legende_titre": "Une définition sans les éléments",
+  "lecture": [
+   "Le cadre bleu est la définition du sous-groupe engendré par 4.",
+   "La flèche rouge va vers l’horloge : la définition ne désigne aucune heure.",
+   "Le point d’interrogation rouge montre qu’on ne sait pas quelles heures y sont."
+  ],
+  "a_voir": "Pour connaître les éléments, il faut une autre description."
+ },
+ {
+  "code": "46-062",
+  "a_dire": "⟨X⟩ contient e, les éléments de X, leurs inverses et tous leurs produits.",
+  "legende_titre": "Les éléments de ⟨4⟩",
+  "lecture": [
+   "Les trois ronds sont 0 (vert, neutre e), 4 (un facteur) et 8 (deux facteurs ou inverse de 4).",
+   "Les flèches orange doubles sont les pas de plus ou moins 4.",
+   "Les petits points gris sont les heures jamais atteintes."
+  ],
+  "a_voir": "En partant de 4 et en ajoutant ou retirant 4, on retombe sur 0, 4 et 8."
+ },
+ {
+  "code": "46-063",
+  "a_dire": "⟨X⟩ est tout ce qu’on calcule à partir de X ; ce qu’on ne peut pas calculer n’y est pas.",
+  "legende_titre": "Ce qui se calcule à partir de 4",
+  "lecture": [
+   "Les ronds verts 0, 4 et 8 se calculent avec les pas orange de plus ou moins 4.",
+   "Le rond rouge 1 ne se calcule pas.",
+   "Les ronds gris sont les autres heures, non atteintes."
+  ],
+  "a_voir": "Les pas de 4 restent sur 0, 4 et 8."
+ },
+ {
+  "code": "46-064",
+  "a_dire": "Le sous-monoïde engendré n’utilise pas les inverses : avec 1 on obtient 0, 1, 2 et ainsi de suite.",
+  "legende_titre": "Sans les inverses",
+  "lecture": [
+   "Le rond bleu 1 est la partie de départ.",
+   "Les ronds verts 0, 1, 2, 3, 4 sont ce qu’on obtient sans inverse.",
+   "Les ronds violets −1, −2, … s’ajoutent seulement avec les inverses."
+  ],
+  "a_voir": "Sans inverses, il manque les nombres négatifs."
+ }
+]

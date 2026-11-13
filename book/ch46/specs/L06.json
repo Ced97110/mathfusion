@@ -1,0 +1,193 @@
+[
+ {
+  "code": "46-081",
+  "a_dire": "Un groupe cyclique est un groupe où un seul élément suffit à fabriquer tout le groupe.",
+  "legende_titre": "Un seul élément qui fabrique tout",
+  "lecture": [
+   "À gauche, les 12 heures de l’horloge forment un cercle ; les flèches orange sont les pas de +1.",
+   "Chaque heure est verte : en partant de 0 (gris), le pas +1 les atteint toutes.",
+   "À droite, en violet, les six permutations de trois cartes portent leur ordre : 1, 2 ou 3.",
+   "Aucune n’a l’ordre 6, donc aucune ne suffit seule."
+  ],
+  "a_voir": "Un seul pas répété atteint les 12 heures ; pour les trois cartes, aucun élément ne fait le tour."
+ },
+ {
+  "code": "46-082",
+  "a_dire": "Un générateur est un élément a dont le sous-groupe engendré est tout le groupe.",
+  "legende_titre": "Qui engendre toute l’horloge à 6 ?",
+  "lecture": [
+   "Chaque cadre est l’horloge à 6 heures ; les points bleus sont les heures atteintes par l’élément écrit dessous.",
+   "Les cadres verts de 1 et de 5 ont les six points bleus : ce sont des générateurs.",
+   "Le cadre rouge de 2 n’a que trois points bleus : 0, 2 et 4.",
+   "Le cadre rouge de 0 n’a qu’un point bleu : 0 lui-même."
+  ],
+  "a_voir": "Seuls 1 et 5 atteignent les six heures."
+ },
+ {
+  "code": "46-083",
+  "a_dire": "Dans un groupe cyclique, l’ordre des facteurs ne change pas le résultat.",
+  "legende_titre": "Tout cyclique est commutatif",
+  "lecture": [
+   "En haut, les deux boîtes bleues sont les deux produits de puissances de a, dans les deux ordres.",
+   "La boîte verte montre que les deux donnent le même résultat.",
+   "En bas, avec trois cartes, la boîte violette et la boîte rouge donnent deux résultats différents.",
+   "Le signe rouge dit que les deux résultats ne sont pas égaux."
+  ],
+  "a_voir": "Avec des puissances de a, l’ordre est sans effet ; avec trois cartes, il change le résultat."
+ },
+ {
+  "code": "46-084",
+  "a_dire": "Dans les entiers relatifs avec l’addition, le nombre 1 (ou −1) suffit à atteindre tout entier.",
+  "legende_titre": "Les entiers fabriqués par 1",
+  "lecture": [
+   "Sur la droite graduée, les arcs orange vont de 0 à 5 : cinq pas de +1.",
+   "Les arcs violets vont de 0 à −3 : trois pas dans l’autre sens.",
+   "Le point vert en 0 est le neutre : on n’ajoute rien.",
+   "Chaque entier est atteint par des pas de 1."
+  ],
+  "a_voir": "Les pas de 1, vers la droite ou vers la gauche, atteignent tous les entiers."
+ },
+ {
+  "code": "46-085",
+  "a_dire": "Sur une horloge de n heures, ajouter 1 à chaque pas visite toutes les heures dans l’ordre.",
+  "legende_titre": "Ajouter 1 fait le tour de l’horloge",
+  "lecture": [
+   "À gauche, l’horloge à 12 heures ; à droite, l’horloge à 4 heures.",
+   "Le point gris est 0 ; les points verts sont les autres heures.",
+   "Les flèches orange sont le pas +1 : elles passent par chaque heure puis reviennent à 0.",
+   "Le résultat est le même pour 12 et pour 4."
+  ],
+  "a_voir": "Dans les deux horloges, le pas +1 passe par chaque heure."
+ },
+ {
+  "code": "46-086",
+  "a_dire": "Un groupe cyclique peut avoir plusieurs générateurs : sur 6 heures, 1 et 5 engendrent tout.",
+  "legende_titre": "Deux générateurs, deux sens",
+  "lecture": [
+   "À gauche, les flèches orange ajoutent 1 : elles tournent dans le sens croissant.",
+   "À droite, les flèches violettes ajoutent 5 : elles tournent dans l’autre sens.",
+   "Dans les deux cercles, les six heures sont visitées."
+  ],
+  "a_voir": "1 et 5 visitent chacun les six heures, en sens opposés."
+ },
+ {
+  "code": "46-087",
+  "a_dire": "Sur 6 heures, 1 et 5 atteignent toutes les heures, mais 2 n’atteint que 0, 2 et 4.",
+  "legende_titre": "Qui atteint quelles heures ?",
+  "lecture": [
+   "Chaque ligne est une suite de pas ; chaque case est une heure de 0 à 5.",
+   "Une case bleue est une heure atteinte, une case grise ne l’est pas.",
+   "Les lignes +1 et +5 ont six cases bleues.",
+   "La ligne +2 n’a que trois cases bleues : 0, 2 et 4."
+  ],
+  "a_voir": "+1 et +5 remplissent les six cases ; +2 en laisse trois vides."
+ },
+ {
+  "code": "46-088",
+  "a_dire": "Les puissances de 2 forment, dans les fractions non nulles, un sous-groupe cyclique infini.",
+  "legende_titre": "Les puissances de 2 sans fin",
+  "lecture": [
+   "La rangée de boîtes bleues va de 1/8 à 16 : chaque flèche orange multiplie par 2.",
+   "La boîte verte est 1, l’exposant 0.",
+   "Les points de suspension disent que la rangée continue des deux côtés.",
+   "Aucune valeur n’apparaît deux fois."
+  ],
+  "a_voir": "La rangée ne s’arrête d’aucun côté et aucune valeur ne se répète."
+ },
+ {
+  "code": "46-089",
+  "a_dire": "Le groupe U(9) a six éléments, tous obtenus en multipliant 2 par lui-même modulo 9.",
+  "legende_titre": "U(9) : un cycle de six",
+  "lecture": [
+   "Les six disques sont les nombres 1, 2, 4, 8, 7, 5 ; le vert est 1, le départ.",
+   "Les flèches orange multiplient par 2 en gardant le reste modulo 9.",
+   "Chaque petit nombre en gris est la puissance de 2 qui donne ce disque.",
+   "Le cycle passe par les six éléments puis revient à 1."
+  ],
+  "a_voir": "Les puissances de 2 parcourent les six éléments et reviennent à 1."
+ },
+ {
+  "code": "46-090",
+  "a_dire": "S₃ n’est pas cyclique parce que deux échanges donnés dans un ordre ou dans l’autre ne donnent pas le même résultat.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La boîte grise ABC est l’état de départ des trois cartes.",
+   "La rangée violette fait d’abord 1↔2 puis 1↔3 et finit en CAB.",
+   "La rangée orange fait d’abord 1↔3 puis 1↔2 et finit en BCA.",
+   "Les deux boîtes rouges sont différentes : la carte A finit en place 2 ou en place 3."
+  ],
+  "a_voir": "Les deux ordres d’échange finissent sur deux états différents."
+ },
+ {
+  "code": "46-091",
+  "a_dire": "Tous les sous-groupes propres de S₃ sont cycliques, bien que S₃ ne le soit pas.",
+  "legende_titre": "Des parties cycliques, un tout qui ne l’est pas",
+  "lecture": [
+   "La boîte violette du haut est S₃ en entier, qui n’est pas cyclique.",
+   "Les cinq cadres bleus sont ses sous-groupes propres.",
+   "Un disque gris est ne rien changer, un orange est un échange, un violet est la rotation ou sa répétition.",
+   "Chaque cadre vient d’un seul élément et de ses répétitions."
+  ],
+  "a_voir": "Les cinq parties propres sont cycliques ; le tout ne l’est pas."
+ },
+ {
+  "code": "46-092",
+  "a_dire": "La suite e, a, a², a³, … a deux comportements : ou bien elle se répète, ou bien aucune valeur ne revient.",
+  "legende_titre": "Deux comportements de la suite",
+  "lecture": [
+   "La rangée bleue est l’horloge à 12 avec le pas 4 : 0, 4, 8, puis de nouveau 0, 4, 8.",
+   "L’accolade montre le bloc qui se répète.",
+   "La rangée violette est les entiers avec le pas 1 : 0, 1, 2, 3, … sans retour.",
+   "Les flèches orange sont les pas."
+  ],
+  "a_voir": "En haut les valeurs reviennent ; en bas aucune ne revient."
+ },
+ {
+  "code": "46-093",
+  "a_dire": "Si deux termes de la suite coïncident, l’écart entre eux est un nombre de pas qui ramène au neutre.",
+  "legende_titre": "Deux termes égaux, un retour au neutre",
+  "lecture": [
+   "Les cinq boîtes sont les pas 0 à 4 de l’horloge à 12 avec le pas 4.",
+   "Les deux boîtes orange (pas 1 et pas 4) donnent la même heure, 4.",
+   "L’accolade orange mesure l’écart : 3 pas.",
+   "La boîte verte montre que 3 pas de 4 font 12, soit 0."
+  ],
+  "a_voir": "Deux pas qui donnent la même heure sont séparés par 3 pas qui reviennent à 0."
+ },
+ {
+  "code": "46-094",
+  "a_dire": "L’ordre d’un élément est le nombre de pas du premier retour au neutre.",
+  "legende_titre": "L’ordre : le premier retour à 0",
+  "lecture": [
+   "Chaque cercle est l’horloge à 12 heures ; le point nommé 0 est le départ.",
+   "À gauche, le pas 4 visite trois points bleus et revient à 0 : l’ordre est 3.",
+   "À droite, le pas 5 visite les douze points violets avant de revenir à 0 : l’ordre est 12.",
+   "Les flèches orange suivent les pas."
+  ],
+  "a_voir": "Le nombre de pas avant de revenir à 0 est l’ordre."
+ },
+ {
+  "code": "46-095",
+  "a_dire": "L’ordre est infini quand aucun pas ne ramène au neutre, par différence avec l’ordre fini et l’ordre 1.",
+  "legende_titre": "Trois cas du retour au neutre",
+  "lecture": [
+   "La ligne du haut, ordre 1, retombe sur 0 dès le premier pas (boîte verte).",
+   "La ligne du milieu, ordre 12, retombe sur 0 après 12 pas.",
+   "La ligne du bas, en violet, ne retombe jamais sur 0 : la boîte rouge dit ≠ 0.",
+   "Les flèches orange sont les pas."
+  ],
+  "a_voir": "Le retour à 0 a lieu au pas 1, au pas 12, ou jamais."
+ },
+ {
+  "code": "46-096",
+  "a_dire": "Le signe o(a) = ∞ remplace la phrase « aucune puissance de a ne revient au neutre ».",
+  "legende_titre": "Écrire « jamais » en un signe",
+  "lecture": [
+   "La boîte grise du haut est la phrase longue.",
+   "La flèche orange mène à l’écriture courte, découpée en quatre boîtes.",
+   "La boîte bleue o est l’ordre, la boîte (a) est l’élément, la boîte violette ∞ dit qu’il n’y a jamais de retour.",
+   "En vert, l’exemple : pour 1 dans les entiers relatifs, o(1) = ∞."
+  ],
+  "a_voir": "Chaque morceau de l’écriture dit une partie de la phrase."
+ }
+]

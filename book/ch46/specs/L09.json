@@ -1,0 +1,189 @@
+[
+ {
+  "code": "46-129",
+  "a_dire": "Le nombre de générateurs d'un groupe cyclique d'ordre n est un nombre qui dépend de n : 2 pour 6, 4 pour 12, 6 pour 7.",
+  "legende_titre": "Combien de nombres engendrent l'horloge ?",
+  "lecture": [
+   "Chaque rangée est une horloge ; chaque case est un nombre de 1 à n.",
+   "Les cases vertes sont les nombres qui engendrent toute l'horloge.",
+   "Les cases grises en pointillés n'engendrent pas tout.",
+   "Le texte au-dessus de chaque rangée donne le compte : 2, 4 et 6."
+  ],
+  "a_voir": "Le nombre de cases vertes change avec le nombre d'heures."
+ },
+ {
+  "code": "46-130",
+  "a_dire": "φ(n) compte les entiers de 1 à n premiers avec n ; il se distingue de n et du nombre de diviseurs : pour 12, 12, 6 et 4.",
+  "legende_titre": "Trois comptes pour l'horloge à 12 heures",
+  "lecture": [
+   "La rangée grise a 12 cases : tous les nombres de 1 à 12.",
+   "La rangée violette ne garde que les 6 diviseurs de 12.",
+   "La rangée bleue ne garde que 1, 5, 7 et 11 : ce sont les nombres premiers avec 12.",
+   "Les cases en pointillés sont les nombres non gardés."
+  ],
+  "a_voir": "Trois comptes différents sur les mêmes douze nombres, et le bleu vaut φ(12) = 4."
+ },
+ {
+  "code": "46-131",
+  "a_dire": "Un groupe cyclique d'ordre n a autant de générateurs que d'entiers k de 1 à n premiers avec n, mais pas un groupe qui n'est pas cyclique.",
+  "legende_titre": "Le compte vaut-il pour tout groupe de 6 éléments ?",
+  "lecture": [
+   "La première rangée est l'horloge à 6 heures : 1 et 5, en vert, sont premiers avec 6 et engendrent.",
+   "La seconde rangée, en rouge, est le groupe des six permutations de trois cartes.",
+   "Le texte rouge dit que ce groupe n'a aucun générateur."
+  ],
+  "a_voir": "Avec six éléments, l'horloge a 2 générateurs et les permutations n'en ont aucun."
+ },
+ {
+  "code": "46-132",
+  "a_dire": "La lettre φ se lit « phi » ; φ(n) se lit « phi de n » et désigne le nombre de générateurs d'un groupe cyclique d'ordre n.",
+  "legende_titre": "Lire le signe φ(n)",
+  "lecture": [
+   "Le grand φ bleu est le nom de la fonction ; il se lit « phi ».",
+   "Le n orange entre parenthèses est l'ordre du groupe.",
+   "L'accolade verte dit que le tout désigne le nombre de générateurs."
+  ],
+  "a_voir": "Le signe φ(n) se découpe en un nom, une parenthèse avec l'ordre, et un sens."
+ },
+ {
+  "code": "46-133",
+  "a_dire": "La fonction d'Euler est le nom d'un compte qui revient : générateurs de l'horloge et nombres premiers avec n donnent le même nombre.",
+  "legende_titre": "Un même compte pour deux horloges",
+  "lecture": [
+   "Pour chaque horloge, la rangée du haut montre les générateurs en vert.",
+   "La rangée du bas montre les nombres premiers avec le nombre d'heures, aux mêmes places.",
+   "Les traits verts relient chaque générateur au nombre premier avec n correspondant.",
+   "Le titre donne le compte commun : φ(12) = 4 et φ(6) = 2."
+  ],
+  "a_voir": "Les deux rangées ont les mêmes cases vertes, donc le même compte."
+ },
+ {
+  "code": "46-134",
+  "a_dire": "Pour calculer φ(12), on parcourt 1 à 12 et on garde ceux sans diviseur commun avec 12 autre que 1 ; on garde 1, 5, 7, 11 donc φ(12) = 4.",
+  "legende_titre": "Le tri des nombres de 1 à 12",
+  "lecture": [
+   "Chaque case est un nombre de 1 à 12.",
+   "Les cases vertes sont 1, 5, 7 et 11 : ils n'ont aucun diviseur commun avec 12 autre que 1.",
+   "Les cases rouges ont un diviseur commun avec 12 et sont écartées.",
+   "Le résultat en haut est φ(12) = 4."
+  ],
+  "a_voir": "Il y a quatre cases vertes sur douze."
+ },
+ {
+  "code": "46-135",
+  "a_dire": "Les nombres premiers avec 16 sont les 8 impairs, donc φ(16) = 8 ; ce cas vérifie seulement que 9 atteint les 16 cases.",
+  "legende_titre": "Les impairs et les multiples de 9",
+  "lecture": [
+   "La rangée du haut montre les huit nombres impairs de 1 à 15, premiers avec 16.",
+   "Le 9 est en bleu : c'est le nombre dont on ajoute les multiples.",
+   "La rangée du bas a 16 cases orange : les 16 pas de 9 en 9, modulo 16.",
+   "Les trois premières cases portent 9, 2 et 11, et les flèches montrent les pas."
+  ],
+  "a_voir": "Les seize pas donnent seize cases différentes, ce qui montre que 9 engendre."
+ },
+ {
+  "code": "46-136",
+  "a_dire": "Pour p premier, tous les nombres de 1 à p − 1 sont premiers avec p, donc φ(p) = p − 1.",
+  "legende_titre": "Premier : tout sauf p lui-même",
+  "lecture": [
+   "Chaque rangée correspond à un nombre premier : 5, 7 ou 11.",
+   "Les cases vertes sont les nombres de 1 à p − 1 ; ils conviennent tous.",
+   "La dernière case, grise en pointillés, est p lui-même et n'est pas comptée.",
+   "Le texte de chaque rangée donne le compte : 4, 6 et 10."
+  ],
+  "a_voir": "Dans chaque rangée, toutes les cases sauf la dernière sont vertes."
+ },
+ {
+  "code": "46-137",
+  "a_dire": "Un groupe cyclique d'ordre n a un seul sous-groupe par diviseur positif de n ; pour 12, six sous-groupes.",
+  "legende_titre": "Un sous-groupe pour chaque diviseur",
+  "lecture": [
+   "Les boîtes orange en haut sont les six diviseurs de 12.",
+   "Chaque flèche mène à la boîte bleue du sous-groupe qui a ce nombre d'éléments.",
+   "Les points d'une boîte bleue comptent ses éléments : 1, 2, 3, 4, 6 puis 12."
+  ],
+  "a_voir": "Six diviseurs donnent six sous-groupes, un par colonne."
+ },
+ {
+  "code": "46-138",
+  "a_dire": "Quand l'ordre est un nombre premier p, il n'y a que deux sous-groupes : le trivial et le groupe entier.",
+  "legende_titre": "Ordre 7 : seulement deux sous-groupes",
+  "lecture": [
+   "Chaque rangée montre un sous-groupe de k éléments, pour k de 1 à 7.",
+   "La rangée verte de 1 case est 0 seul ; la rangée verte de 7 cases est l'horloge entière.",
+   "Les rangées rouges en pointillés, de 2 à 6 éléments, n'existent pas."
+  ],
+  "a_voir": "Seules les tailles 1 et 7 existent."
+ },
+ {
+  "code": "46-139",
+  "a_dire": "Le cercle unité 𝕋 est l'ensemble des complexes de module 1 : un produit de module 1 y reste, un produit de module 2 en sort.",
+  "legende_titre": "Le cercle des complexes de module 1",
+  "lecture": [
+   "Le disque bleu est limité par le cercle unité 𝕋, avec les points 1, −1 et i.",
+   "Le cercle rouge en pointillés est celui de module 2.",
+   "Le texte rouge dit qu'un produit de deux nombres de module 2 est de module 4 et sort.",
+   "Le texte vert dit qu'un produit de module 1 par module 1 reste de module 1."
+  ],
+  "a_voir": "Seul le cercle de module 1 reste stable par produit."
+ },
+ {
+  "code": "46-140",
+  "a_dire": "Le signe 𝕋 remplace la phrase « l'ensemble des nombres complexes de module 1 ».",
+  "legende_titre": "Une lettre pour une phrase",
+  "lecture": [
+   "Le cadre gris contient la phrase de sept mots.",
+   "La flèche orange dit qu'elle s'écrit avec un seul signe.",
+   "Le grand 𝕋 bleu est ce signe.",
+   "Le cercle bleu dessous montre les points où |z| = 1."
+  ],
+  "a_voir": "Une phrase de sept mots devient un seul signe."
+ },
+ {
+  "code": "46-141",
+  "a_dire": "z ∈ ℂ se lit « z est un nombre complexe » : z est un élément quelconque de l'ensemble ℂ.",
+  "legende_titre": "Lire z ∈ ℂ",
+  "lecture": [
+   "Le grand cadre bleu est l'ensemble ℂ de tous les nombres complexes.",
+   "Le point orange est z, un élément quelconque.",
+   "Le signe ∈ relie le point au cadre : le point est dans l'ensemble.",
+   "Les trois lignes de droite lisent chaque morceau en français."
+  ],
+  "a_voir": "Le point est dans le cadre : z appartient à ℂ."
+ },
+ {
+  "code": "46-142",
+  "a_dire": "|z| = 1 dit que le point z est à la distance 1 de l'origine.",
+  "legende_titre": "Distance à l'origine et signe |z| = 1",
+  "lecture": [
+   "Le cercle vert a pour rayon 1 ; les points 1 et i sont dessus.",
+   "Le trait rouge relie l'origine O au point 3 + 4i, à la distance 5.",
+   "Les pointillés rouges montrent 3 vers la droite et 4 vers le haut.",
+   "Le texte vert et le texte rouge donnent la valeur de |z|."
+  ],
+  "a_voir": "Les points du cercle ont |z| = 1 ; 3 + 4i est plus loin."
+ },
+ {
+  "code": "46-143",
+  "a_dire": "𝕋 est un sous-groupe de ℂ* : le produit de z de 𝕋 par l'inverse de w de 𝕋 reste de module 1.",
+  "legende_titre": "Une vérification sur le cercle",
+  "lecture": [
+   "Le disque bleu est le cercle unité 𝕋.",
+   "Le point bleu z est à 90°, le point violet w à 30°.",
+   "Le second point violet est l'inverse de w, à −30°.",
+   "Le point vert est le produit z w⁻¹, à 60°, encore sur le cercle."
+  ],
+  "a_voir": "Le produit z w⁻¹ est encore sur le cercle."
+ },
+ {
+  "code": "46-144",
+  "a_dire": "La preuve part de z et w de module 1, remplace l'inverse de w par cis(−ψ), et arrive à cis(θ − ψ) de module 1.",
+  "legende_titre": "Trois étapes de la preuve",
+  "lecture": [
+   "Le cercle bleu de gauche est le départ : deux points z et w de module 1.",
+   "Le cercle orange du milieu est l'étape clé : w⁻¹ = cis(−ψ), à l'angle opposé.",
+   "Le cercle vert de droite est l'arrivée : cis(θ − ψ), de module 1 fois 1."
+  ],
+  "a_voir": "L'étape orange porte tout le poids de la preuve."
+ }
+]

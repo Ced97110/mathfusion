@@ -1,0 +1,151 @@
+{
+ "46-016": {
+  "lecture": [
+   "La rangée du haut montre i qui prend les valeurs 1 à 8.",
+   "Le disque orange est un de ces nombres de départ.",
+   "La flèche orange porte la lettre σ : le mélange.",
+   "La boîte verte est le nombre d'arrivée, σ(i).",
+   "Les deux lignes du bas donnent des cas : σ(1) = 3 et σ(3) = 5."
+  ],
+  "a_voir": "i prend chaque valeur de 1 à 8, et une flèche va de i vers σ(i)."
+ },
+ "46-028": {
+  "lecture": [
+   "Le cadre bleu du haut est la règle : si a est dans H, son inverse est dans H.",
+   "Les disques bleus 0, 1, 2 et 3 sont la partie H.",
+   "La flèche orange va de a = 1 à son inverse −1.",
+   "Le disque rouge −1 est hors de H : la règle échoue."
+  ],
+  "a_voir": "La règle demande que la flèche de a vers son inverse reste dans H ; ici elle en sort."
+ },
+ "46-050": {
+  "lecture": [
+   "Le cadre bleu du haut est la condition : g et h dans H donnent g − h dans H.",
+   "Le point orange 0 est le neutre, pris comme g.",
+   "Le point bleu 4 est h ; la flèche orange est e − h.",
+   "Le point vert 8 est e − h : c'est l'inverse de h, et il est dans H."
+  ],
+  "a_voir": "Avec g égal au neutre, g − h est l'inverse de h."
+ },
+ "46-051": {
+  "lecture": [
+   "Le cadre bleu du haut est la condition : g et h dans H donnent g − h dans H.",
+   "Le point violet 8 est h₂ ; la flèche orange mène à h = h₂⁻¹, le point bleu 4.",
+   "Le point bleu 4 est aussi g = h₁.",
+   "Le point vert 0 est g − h, c'est-à-dire h₁h₂ = 4 + 8, qui vaut 0 sur l'horloge."
+  ],
+  "a_voir": "Avec h égal à l'inverse de h₂, la condition donne le produit h₁h₂."
+ },
+ "46-062": {
+  "lecture": [
+   "La ligne du haut liste les éléments de ⟨X⟩ : e, s₁, s₁s₂, jusqu'à s₁⋯sᵣ.",
+   "Le rond vert 0 est e, sans facteur.",
+   "Le rond bleu 4 est s₁, un seul facteur.",
+   "Le rond bleu 8 est 4 + 4 = s₁s₂, un produit de deux facteurs.",
+   "Les flèches orange sont les pas de plus ou moins 4."
+  ],
+  "a_voir": "Les produits de plusieurs facteurs 4 ou −4 donnent 0, 4 et 8."
+ },
+ "46-121": {
+  "lecture": [
+   "La première ligne écrit m = qs + t avec t entre 0 et s.",
+   "Les flèches orange sont les pas de s égal à 3.",
+   "L'accolade compte q égal à 3 pas.",
+   "Le point vert est 9, où l'on arrive sans reste.",
+   "La ligne rouge dit qu'un t positif est impossible, car s est le plus petit."
+  ],
+  "a_voir": "Comme s est minimal, le reste est 0 et H est engendré par a puissance s."
+ },
+ "46-126": {
+  "lecture": [
+   "La case bleue est le départ : 12 divise 8m.",
+   "La case orange divise par d = 4 : 12 devient 3 et 8 devient 2.",
+   "La case verte est l'arrivée : le plus petit m est 3.",
+   "Les trois petites cases du bas essaient m égal à 1, 2, 3 : les deux rouges ne sont pas des multiples de 12, la verte (24) l'est."
+  ],
+  "a_voir": "La division par 4 transforme 12 divise 8m en 3 divise 2m."
+ },
+ "46-146": {
+  "lecture": [
+   "Les quatre points sont sur le cercle : ce sont les puissances ω⁰, ω, ω², ω³.",
+   "Les flèches orange vont d'un point au suivant : c'est la multiplication par ω, qui vaut i ici.",
+   "Le texte de droite donne le cas général : n points, ω puissance n égale 1.",
+   "Après quatre flèches, vous êtes de retour en 1."
+  ],
+  "a_voir": "Les puissances de ω sont régulièrement placées et reviennent au départ après n pas."
+ },
+ "46-152": {
+  "lecture": [
+   "Les douze points sont sur le cercle.",
+   "Les points orange sont ω, ω⁵, ω⁷ et ω¹¹ : les primitives.",
+   "Les traits orange en pointillés relient les points orange en miroir de part et d'autre de l'axe gris.",
+   "Le triangle bleu relie les points à 0°, 120° et 240°.",
+   "Les traits gris sautent de cinq points en cinq points et passent par les douze points."
+  ],
+  "a_voir": "Les points orange sont en miroir deux à deux, et le saut de 5 en 5 visite les douze points."
+ },
+ "46-198": {
+  "lecture": [
+   "Chaque ligne suit un nombre : la case bleue est le départ, la case verte l'arrivée.",
+   "La ligne 1 suit le nombre 1 ; la ligne 2 suit le nombre 2.",
+   "Une flèche orange veut dire que l'échange déplace le nombre ; un trait gris en pointillés veut dire qu'il n'y touche pas.",
+   "Sur la ligne 1, le 1 passe à 2 puis ne bouge plus ; sur la ligne 2, le 2 passe à 1, puis à 3 et s'arrête."
+  ],
+  "a_voir": "Une fois placé, un nombre n'est plus touché par les échanges suivants."
+ },
+ "46-213": {
+  "lecture": [
+   "Sur la droite graduée, chaque nombre est une valeur possible de r.",
+   "Les flèches orange passent de r à r − 2 : de 4 on passe à 2, puis à 0.",
+   "Les valeurs 0, 2 et 4, en vert, sont paires.",
+   "La valeur 1, en rouge, est impossible : un seul échange déplace une carte."
+  ],
+  "a_voir": "On retire 2 échanges à la fois jusqu'à 0, jamais jusqu'à 1 : r est pair."
+ },
+ "46-220": {
+  "lecture": [
+   "La ligne bleue est une écriture de sigma avec m échanges.",
+   "La ligne orange est l'inverse de sigma : les mêmes échanges dans l'ordre renversé.",
+   "La ligne violette est l'autre écriture de sigma, avec k échanges.",
+   "L'accolade verte réunit l'orange et la violette : leur produit est l'identité, avec k + m échanges.",
+   "La phrase verte du bas conclut : k + m est pair, donc k et m ont la même parité."
+  ],
+  "a_voir": "L'identité s'écrit avec k + m échanges, nombre pair."
+ },
+ "46-231": {
+  "lecture": [
+   "Le texte du haut à droite nomme B_n : les permutations impaires de n nombres.",
+   "La rangée bleue montre A₃ : les trois permutations paires de S₃.",
+   "La rangée violette dans le cadre en pointillés montre les trois échanges : c'est B₃.",
+   "La phrase rouge rappelle que B₃ ne contient pas id."
+  ],
+  "a_voir": "Le cadre violet porte le nom B₃ : les impaires."
+ },
+ "46-257": {
+  "lecture": [
+   "Les bulles bleues du haut sont les heures de l'horloge à 4 heures ; les bulles violettes du bas sont les rotations du carré, en tours.",
+   "Chaque flèche relie un élément à son image.",
+   "Les bulles orange sont le sous-groupe {0, 2} en haut et son image {0, ½} en bas.",
+   "Les deux lignes du bas listent les sous-groupes de chaque côté : trois et trois."
+  ],
+  "a_voir": "Chaque sous-groupe du haut a un sous-groupe image en bas : le nombre est le même."
+ },
+ "46-262": {
+  "lecture": [
+   "Dans la première ligne, chaque case bleue est un diviseur de 12 et chaque case verte un sous-groupe, reliés un à un.",
+   "Dans la seconde ligne, il y a 4 diviseurs de 6 mais 6 sous-groupes.",
+   "Le diviseur 2 est relié à trois sous-groupes d'ordre 2 ; les deux cases rouges sont ceux en trop.",
+   "Les cases vertes sans chiffre sont les sous-groupes d'ordres 1, 3 et 6."
+  ],
+  "a_voir": "Le décompte par les diviseurs échoue pour les six mélanges de 3 cartes."
+ },
+ "46-282": {
+  "lecture": [
+   "Le titre dit que le déterminant est une somme de termes.",
+   "Les cases bleues sont deux permutations : l'identité et un échange.",
+   "Les cases du milieu donnent leur signature : +1 en vert, −1 en rouge.",
+   "Les cases de droite montrent le terme avec son signe : + a₁₁a₂₂ et − a₁₂a₂₁."
+  ],
+  "a_voir": "La signature de la permutation donne le signe devant son terme dans la somme."
+ }
+}

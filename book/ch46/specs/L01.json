@@ -1,0 +1,186 @@
+[
+ {
+  "code": "46-001",
+  "a_dire": "Sur l'horloge à 12 heures, on additionne en revenant à 0 après 11 ; 0 est le neutre et 5 a pour inverse 7.",
+  "legende_titre": "Les douze heures et leur addition",
+  "lecture": [
+   "Les douze disques sont les heures 0 à 11.",
+   "La flèche orange va de 9 à 2 : 9 + 5 donne 2.",
+   "Le disque vert est 0, le neutre.",
+   "La flèche violette va de 5 à 0 : 5 + 7 donne 0, donc 7 est l'inverse de 5."
+  ],
+  "a_voir": "On revient à 0 après 11, et 5 + 7 ramène à 0."
+ },
+ {
+  "code": "46-002",
+  "a_dire": "Le geste « avancer de 4 » ne visite que les heures 0, 4 et 8.",
+  "legende_titre": "Un seul geste sur l'horloge",
+  "lecture": [
+   "Les trois disques bleus sont les heures visitées : 0, 4 et 8.",
+   "Les flèches orange sont les trois gestes « avancer de 4 ».",
+   "Les neuf disques gris ne sont jamais atteints."
+  ],
+  "a_voir": "Le parcours se referme après trois gestes sur trois heures."
+ },
+ {
+  "code": "46-003",
+  "a_dire": "Le geste « avancer de 5 » visite les douze heures, chacune une fois, avant de revenir à 0.",
+  "legende_titre": "Un autre geste sur la même horloge",
+  "lecture": [
+   "Chaque disque bleu est une heure de l'horloge.",
+   "Chaque flèche orange avance de 5 heures.",
+   "Les douze flèches forment un seul chemin qui passe par tous les disques."
+  ],
+  "a_voir": "Toutes les heures sont touchées, aucune deux fois."
+ },
+ {
+  "code": "46-004",
+  "a_dire": "4 et 6 échouent parce qu'ils ont un diviseur commun plus grand que 1 avec 12 ; 5 et 7 réussissent car leur seul diviseur commun avec 12 est 1.",
+  "legende_titre": "Quatre pas, un diviseur commun",
+  "lecture": [
+   "Chaque cercle de douze points est l'horloge pour un pas.",
+   "Les points rouges sont les heures visitées par les pas 4 et 6 ; ils sont peu nombreux.",
+   "Les points verts sont les heures visitées par les pas 5 et 7 ; ce sont les douze.",
+   "Sous chaque horloge, le diviseur commun avec 12 est écrit."
+  ],
+  "a_voir": "Quand le diviseur commun vaut 1, toute l'horloge est visitée."
+ },
+ {
+  "code": "46-005",
+  "a_dire": "Le mélange σ envoie chaque carte de 1 à 8 à une place : 1 à 3, 3 à 5, 5 à 8, 8 à 1, et il échange 2 et 6 ; 4 et 7 ne bougent pas.",
+  "legende_titre": "Le mélange σ des huit cartes",
+  "lecture": [
+   "La ligne du haut est formée des huit cartes bleues, de 1 à 8.",
+   "La ligne du bas est formée des huit places, dans le même ordre.",
+   "Chaque flèche orange mène une carte vers sa nouvelle place.",
+   "Les deux flèches grises tombent droit : les cartes 4 et 7 restent en place."
+  ],
+  "a_voir": "Chaque carte est déplacée une seule fois."
+ },
+ {
+  "code": "46-006",
+  "a_dire": "Un mélange répété ramène les cartes à leur ordre de départ au bout d'un nombre de fois qui dépend du mélange : 2 pour l'échange, 3 pour la rotation.",
+  "legende_titre": "Combien de fois répéter un mélange",
+  "lecture": [
+   "À gauche, les deux disques bleus s'échangent ; le disque gris reste en place.",
+   "À droite, les trois disques bleus tournent l'un vers l'autre.",
+   "Sous chaque dessin, en vert, le nombre de répétitions avant le retour."
+  ],
+  "a_voir": "Chaque mélange a son propre nombre de répétitions."
+ },
+ {
+  "code": "46-007",
+  "a_dire": "Le mélange de trois cartes 1→2, 2→3, 3→1 s'obtient par deux échanges de deux cartes.",
+  "legende_titre": "Un mélange en deux échanges",
+  "lecture": [
+   "La ligne du haut montre les cartes au départ : 1, 2, 3.",
+   "La ligne du milieu montre l'état après l'échange des places 1 et 2.",
+   "La ligne verte du bas montre l'état après l'échange des places 1 et 3.",
+   "Les flèches orange suivent les cartes échangées ; la flèche grise suit la carte qui reste."
+  ],
+  "a_voir": "Deux échanges simples donnent le mouvement des trois cartes."
+ },
+ {
+  "code": "46-008",
+  "a_dire": "L'horloge et le mélange de cartes posent la même question : que peut-on atteindre en répétant un seul geste ?",
+  "legende_titre": "Deux exemples, une même question",
+  "lecture": [
+   "À gauche, le triangle orange relie les heures 0, 4 et 8 de l'horloge.",
+   "À droite, la boucle orange suit la carte 1 : places 1, 3, 5, 8, puis retour à 1.",
+   "Dans les deux cas, une seule flèche est répétée."
+  ],
+  "a_voir": "On répète un seul geste et on note tout ce qu'on obtient."
+ },
+ {
+  "code": "46-009",
+  "a_dire": "Le mot « sous-groupe engendré » désigne en un seul mot l'ensemble obtenu en répétant un seul élément : c'est un groupe, fabriqué à partir de cet élément.",
+  "legende_titre": "Un mot pour deux longues phrases",
+  "lecture": [
+   "La boîte bleue de gauche est l'ensemble des heures 0, 4, 8 de l'horloge.",
+   "La boîte bleue de droite est l'ensemble des arrangements des cartes.",
+   "Les flèches orange mènent les deux ensembles vers un même mot, dans la boîte verte.",
+   "Sous la boîte verte, chaque moitié du mot est expliquée."
+  ],
+  "a_voir": "Les deux ensembles sont décrits par le même mot."
+ },
+ {
+  "code": "46-010",
+  "a_dire": "En avançant de 4 en 4 on ne touche que 0, 4 et 8, qui forment un triangle régulier ; en avançant de 5 en 5 on touche les douze heures en un seul chemin fermé.",
+  "legende_titre": "Deux parcours sur l'horloge",
+  "lecture": [
+   "À gauche, le triangle bleu relie 0, 4 et 8 ; les points gris ne sont pas visités.",
+   "Entre deux points bleus voisins, il reste trois heures.",
+   "À droite, les douze points orange sont tous reliés par un seul chemin de flèches."
+  ],
+  "a_voir": "Le pas 4 laisse des heures de côté, le pas 5 les prend toutes."
+ },
+ {
+  "code": "46-011",
+  "a_dire": "Le signe ⟨4⟩ se lit « le sous-groupe engendré par 4 » : le 4 est le geste, et le signe désigne l'ensemble {0, 4, 8}.",
+  "legende_titre": "Lire le signe ⟨4⟩",
+  "lecture": [
+   "Les crochets bleus, en haut, veulent dire « engendré par ».",
+   "Le 4 orange est le geste : avancer de 4 heures.",
+   "L'ensemble vert à droite est ce que l'on atteint depuis 0."
+  ],
+  "a_voir": "Le nombre entre crochets est le geste, pas un résultat."
+ },
+ {
+  "code": "46-012",
+  "a_dire": "On écrit ⟨5⟩ = ℤ/12ℤ parce que le geste 5 atteint les douze heures, toutes celles de l'horloge.",
+  "legende_titre": "Le geste 5 donne toute l'horloge",
+  "lecture": [
+   "L'anneau bleu de douze points est ⟨5⟩ : les heures visitées.",
+   "L'anneau violet de douze points est ℤ/12ℤ : toutes les heures de l'horloge.",
+   "Le signe vert « = » dit que les deux ensembles ont les mêmes éléments.",
+   "Sous l'anneau bleu, l'ordre des heures visitées est écrit."
+  ],
+  "a_voir": "Il y a douze points des deux côtés : il n'en manque aucun."
+ },
+ {
+  "code": "46-013",
+  "a_dire": "On compte les pas avant de revenir à 0 : 3 pas pour le geste 4 et 12 pas pour le geste 5 ; ce nombre s'appellera l'ordre.",
+  "legende_titre": "Compter les pas jusqu'à 0",
+  "lecture": [
+   "La première ligne montre trois cases : 4, 8, puis 0 en vert.",
+   "La seconde ligne montre douze cases, de 5 jusqu'à 0 en vert.",
+   "Chaque accolade compte les pas de sa ligne."
+  ],
+  "a_voir": "Un seul nombre résume la taille de l'ensemble obtenu."
+ },
+ {
+  "code": "46-014",
+  "a_dire": "Chaque nombre de 1 à 8 a une flèche qui part et une qui arrive ; les flèches forment quatre boucles qui se referment : 1 3 5 8, 2 6, 4 et 7.",
+  "legende_titre": "Les boucles du mélange σ",
+  "lecture": [
+   "Le carré bleu est la boucle 1, 3, 5, 8.",
+   "Les deux disques violets s'envoient l'un à l'autre : boucle 2, 6.",
+   "Chaque disque gris a une flèche qui revient sur lui : 4 et 7 ne bougent pas.",
+   "Aucun nombre n'est dans deux boucles."
+  ],
+  "a_voir": "Si on suit les flèches, on revient toujours au départ."
+ },
+ {
+  "code": "46-015",
+  "a_dire": "Un cycle est un trajet de flèches qui revient à son point de départ ; il n'est ni le mélange entier, ni un trajet qui peut s'arrêter.",
+  "legende_titre": "Cycle, trajet et mélange",
+  "lecture": [
+   "La ligne du haut montre le mélange entier : quatre boucles à la fois, en gris.",
+   "La ligne du milieu montre un trajet violet qui s'arrête devant la barre rouge.",
+   "La ligne du bas montre un cycle bleu : la dernière flèche revient sur le premier nombre."
+  ],
+  "a_voir": "Le cycle est la partie du mélange qui se referme."
+ },
+ {
+  "code": "46-016",
+  "a_dire": "Le signe σ(i) est le nombre qui remplace i après le mélange ; la lettre i prend tour à tour les valeurs de 1 à 8.",
+  "legende_titre": "Lire σ(i) sur une flèche",
+  "lecture": [
+   "Le disque orange est le nombre de départ.",
+   "La flèche orange porte la lettre σ : le mélange.",
+   "La boîte verte est le nombre d'arrivée, σ(i).",
+   "Les deux lignes du bas donnent des cas : σ(1) = 3 et σ(3) = 5."
+  ],
+  "a_voir": "Une flèche va de i vers σ(i)."
+ }
+]

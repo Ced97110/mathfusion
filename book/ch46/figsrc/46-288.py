@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,4,60,r'$S_{8}$ : 8 cartes','sujet','m',ha='left')
+for i in range(5): disc(ax,8+i*7,50,2.8,'sujet')
+for i in range(3): disc(ax,50+i*7,50,2.8,'varie')
+text(ax,22,43.5,'cycle de 5','sujet','s'); text(ax,57,43.5,'cycle de 3','varie','s')
+text(ax,44,36,r'ordre maximal : ppcm $=15$','varie','s')
+text(ax,44,29,r'il faudrait 40 320 : $S_{8}$ pas cyclique','limite','s')
+text(ax,4,19,r'$S_{2}$','sujet','m',ha='left')
+box(ax,16,9,26,10,'sujet',label='(1 2)')
+text(ax,63,14,"d'ordre 2 = 2 éléments",'resultat','s')
+text(ax,44,3.5,'cyclique','resultat','s')
+save(fig,'46-288')
