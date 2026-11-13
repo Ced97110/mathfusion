@@ -17,7 +17,7 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 
 ## Règles de budget (prioritaires)
 
-- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Dix chapitres par session, enchaînés sans attendre (décision du 2026-11-12). Commit et push à la fin de chaque chapitre.
+- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Dix chapitres par session, enchaînés sans attendre (décision du 2026-11-12) : une session rédige ses dix chapitres d'un coup, sans s'arrêter entre deux chapitres ni demander s'il faut continuer (s'arrêter seulement sur un vrai blocage : disque plein, PDF absent, construction du site en échec). Commit et push à la fin de chaque chapitre.
 - Plusieurs sessions peuvent tourner en même temps dans ce dossier. Chaque session reçoit une plage de chapitres explicite et n'en sort pas. `next_chapter.py` saute les chapitres qui ont déjà un dossier `book/chNN`. Ne jamais lancer `setup` sur un chapitre dont le dossier existe. Au commit, ajouter seulement les fichiers de son chapitre (`git add book/chNN book/JOURNAL.md content/toc.json public/chapters/chNN.html`), jamais `git add -A`.
 - Travail par branche : une session peut recevoir une branche de `content/branches.json` (par exemple « algèbre abstraite »). Elle fait alors, dans l'ordre, les chapitres de cette branche qui n'ont ni ligne dans `book/JOURNAL.md` ni dossier `book/chNN`, et aucun autre. Avant chaque `setup`, revérifier que le dossier n'existe pas (une autre session a pu le créer entre-temps). Avant `git push`, faire `git pull --rebase`.
 - Chaque sous-agent coûte environ 80 000 tokens au démarrage, quel que soit le travail : peu d'agents, gros lots.
