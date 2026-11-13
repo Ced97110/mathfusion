@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(95)
+text(ax, 44, 90, '7 h 50 min ÷ 2', 'encre', 'l')
+box(ax, 6, 70, 24, 10, 'sujet', label='7 h', size='m'); box(ax, 44, 70, 38, 10, 'sujet', label='50 min', size='m')
+arrow(ax, (18, 69), (18, 61), 'fixe'); text(ax, 24, 65, '÷ 2', 'fixe', 's', ha='left')
+box(ax, 6, 50, 24, 10, 'resultat', label='3 h', size='m')
+text(ax, 18, 40, 'reste 1 h', 'varie', 'm'); line(ax, [(18, 49), (18, 43)], 'varie')
+arrow(ax, (18, 37), (18, 29), 'varie', curve=0.0)
+box(ax, 6, 18, 76, 10, 'varie', label='50 + 60 = 110 min', size='m')
+arrow(ax, (63, 17), (63, 11), 'fixe'); text(ax, 69, 14, '÷ 2', 'fixe', 's', ha='left')
+box(ax, 44, 0.5, 38, 10, 'resultat', label='55 min', size='m')
+save(fig, '11-073')

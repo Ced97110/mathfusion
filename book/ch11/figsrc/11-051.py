@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 3, 80, 9, 'fixe', label='Terre', size='m')
+box(ax, 30, 34, 28, 16, 'sujet', label='sac', size='l')
+line(ax, [(44, 50), (44, 58)], 'fixe')
+arrow(ax, (44, 34), (44, 13), 'varie', lw=2.0)
+text(ax, 62, 24, 'poids', 'varie', 'l', ha='left', weight='bold')
+text(ax, 62, 19, 'force vers le bas', 'varie', 's', ha='left')
+text(ax, 44, 59.5, 'main', 'fixe', 's')
+save(fig, '11-051')

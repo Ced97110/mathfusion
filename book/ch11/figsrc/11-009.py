@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+cm = 6.5; po = 2.54 * cm; x0 = 8; xb = x0 + 4 * po
+line(ax, [(x0, 57), (xb, 57)], 'sujet', lw=2.0)
+disc(ax, x0, 57, 1.4, 'sujet'); disc(ax, xb, 57, 1.4, 'sujet')
+text(ax, x0, 61.5, r'$A$', 'sujet', 'm'); text(ax, xb, 61.5, r'$B$', 'sujet', 'm')
+text(ax, (x0 + xb) / 2, 61.5, r'$\ell$', 'sujet', 'm')
+text(ax, 2, 45, 'po : B sur le trait 4', 'autre', 's', ha='left')
+numberline(ax, x0, xb, 38, 0, 4, 1, role='autre', arrow_right=False, size='s')
+line(ax, [(xb, 55), (xb, 40)], 'varie', dash=True)
+disc(ax, xb, 38, 1.0, 'varie')
+text(ax, 2, 24, 'cm : B entre 10 et 11', 'fixe', 's', ha='left')
+numberline(ax, x0, x0 + 11 * cm, 17, 0, 11, 1, role='fixe', arrow_right=False, every=5, size='s')
+line(ax, [(xb, 33), (xb, 19)], 'varie', dash=True)
+disc(ax, xb, 17, 1.0, 'varie')
+save(fig, '11-009')

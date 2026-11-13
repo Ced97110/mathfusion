@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 3, 58, 'après un nombre', 'fixe', 's', ha='left')
+box(ax, 8, 42, 10, 11, 'fixe', label='4', size='l'); box(ax, 20, 42, 10, 11, 'sujet', label=r'$m$', size='l')
+arrow(ax, (31, 47.5), (46, 47.5), 'varie'); text(ax, 48, 47.5, 'mètre', 'sujet', 'm', ha='left')
+line(ax, [(2, 36), (86, 36)], 'fixe', dash=True)
+text(ax, 3, 31, 'devant un autre signe', 'fixe', 's', ha='left')
+box(ax, 8, 12, 10, 11, 'fixe', label='5', size='l'); box(ax, 20, 12, 10, 11, 'autre', label=r'$m$', size='l'); box(ax, 32, 12, 10, 11, 'fixe', label=r'$g$', size='l')
+arrow(ax, (25, 11.5), (25, 5), 'autre'); text(ax, 25, 3, 'milli', 'autre', 's')
+arrow(ax, (37, 11.5), (37, 5), 'fixe'); text(ax, 46, 3, 'gramme', 'fixe', 's')
+save(fig, '11-032')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+C1, C2, C3 = 14, 44, 74; R1, R2 = 68, 28
+def lab(cx, cy, s, role='sujet'): text(ax, cx, cy-16, s, role, 's')
+poly(ax, [(C2-8, R1-5), (C2+8, R1-5), (C2+8, R1+5), (C2-8, R1+5)], 'sujet'); lab(C2, R1, 'rectangle\nL × l')
+poly(ax, [(C1-6, R1-6), (C1+6, R1-6), (C1+6, R1+6), (C1-6, R1+6)], 'sujet'); lab(C1, R1, 'carré\nL × L')
+poly(ax, [(C3-10, R1-5), (C3+4, R1-5), (C3+10, R1+5), (C3-4, R1+5)], 'sujet'); lab(C3, R1, 'parallélogramme\nb × h')
+poly(ax, [(C3-9, R2-5), (C3+9, R2-5), (C3-3, R2+5)], 'sujet'); lab(C3, R2, 'triangle\nb × h ÷ 2')
+poly(ax, [(C2-10, R2-5), (C2+10, R2-5), (C2+4, R2+5), (C2-4, R2+5)], 'sujet'); lab(C2, R2, 'trapèze\n(b₁ + b₂) × h ÷ 2')
+disc(ax, C1, R2, 6, 'autre'); lab(C1, R2, 'cercle\nπ × r²', 'autre')
+arrow(ax, (C2-9, R1), (C1+7, R1), 'varie'); text(ax, 29, R1+5, 'L = L', 'varie', 's')
+arrow(ax, (C2+9, R1), (C3-11, R1), 'varie'); text(ax, 57, R1+7.5, 'penché', 'varie', 's')
+arrow(ax, (C3, 46), (C3, R2+7), 'varie'); text(ax, C3+10, 42, 'moitié', 'varie', 's')
+arrow(ax, (C3-9, 46), (C2+5, R2+7), 'varie'); text(ax, 52, 40, 'moyenne', 'varie', 's')
+save(fig, '11-120')
