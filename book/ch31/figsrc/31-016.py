@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(66)
+O=(30,28); R=27; th=math.radians(35); c,s=math.cos(th),math.sin(th)
+P=(O[0]+R*c,O[1]+R*s); A=(O[0]+R,O[1]); T=(O[0]+R,O[1]+R*s/c)
+disc(ax,*O,R,'fixe',fill=False,lw=0.7)
+line(ax,[(O[0]-R-2,O[1]),(O[0]+R+7,O[1])],'fixe',lw=0.5)
+line(ax,[(A[0],O[1]-12),(A[0],O[1]+R+4)],'fixe',lw=0.9)
+line(ax,[O,T],'fixe',lw=0.9)
+line(ax,[A,T],'resultat',lw=2.0)
+nx,ny=-s,c; off=3.0
+a=(O[0]+nx*off,O[1]+ny*off); b=(T[0]+nx*off,T[1]+ny*off); arrow(ax,a,b,'autre',lw=0.9,both=True)
+disc(ax,*T,1.6,'sujet'); disc(ax,*P,0.9,'encre'); disc(ax,*A,1.0,'fixe'); disc(ax,*O,0.9,'encre')
+text(ax,T[0]+3.5,T[1]+2.5,'T','sujet','l',weight='bold')
+text(ax,A[0]+4.5,A[1]-3,'A','encre','s'); text(ax,O[0]-2.5,O[1]-3,'O','encre','s')
+text(ax,P[0]-3.2,P[1]-3.2,'P','encre','s')
+text(ax,A[0]+4,(A[1]+T[1])/2+2,'AT','resultat','s',ha='left'); text(ax,A[0]+4,(A[1]+T[1])/2-1.8,'≈ 0,7002','resultat','s',ha='left')
+m=((a[0]+b[0])/2,(a[1]+b[1])/2)
+text(ax,m[0]+nx*6,m[1]+ny*6+1.5,'OT','autre','s'); text(ax,m[0]+nx*6+0.5,m[1]+ny*6-2.7,'≈ 1,2208','autre','s')
+save(fig,'31-016')

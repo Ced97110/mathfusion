@@ -1,0 +1,189 @@
+[
+ {
+  "code": "31-065",
+  "a_dire": "Une identité est une égalité vraie pour toutes les valeurs permises, et démontrée ; une équation n'est vraie que pour certaines valeurs ; une égalité essayée n'a été testée que sur quelques valeurs.",
+  "legende_titre": "Trois sortes d'égalités, trois rangées de valeurs",
+  "lecture": [
+   "Chaque case est une valeur que la lettre peut prendre, avec son verdict.",
+   "Première rangée : toutes les cases sont vertes, l'égalité est vraie pour toutes les valeurs.",
+   "Deuxième rangée : seule la case de 3 est verte ; la case de 2 est fausse.",
+   "Troisième rangée : deux angles ont été testés ; les cases grises n'ont pas été essayées."
+  ],
+  "a_voir": "Seule l'identité est verte partout ; l'équation n'a qu'une valeur vraie, et l'essai ne couvre que deux cases."
+ },
+ {
+  "code": "31-066",
+  "a_dire": "L'expression 9x + 3(4 − 3x) donne 12 pour toute valeur de x, et le développement montre pourquoi : les termes en x s'annulent.",
+  "legende_titre": "Trois valeurs de x, un seul résultat",
+  "lecture": [
+   "Les trois cases orange sont trois valeurs de x : 2, 0 et −5.",
+   "Au milieu, le calcul de chaque ligne ; à droite, la case verte donne toujours 12.",
+   "En bas, le développement 9x + 12 − 9x = 12 explique pourquoi : 9x et −9x s'annulent."
+  ],
+  "a_voir": "Trois valeurs différentes de x donnent le même résultat, 12."
+ },
+ {
+  "code": "31-067",
+  "a_dire": "Dans le cercle de rayon 1, le triangle OHP et Pythagore donnent sin² θ + cos² θ = 1, car l'hypoténuse OP est un rayon qui vaut 1.",
+  "legende_titre": "Pythagore dans le triangle OHP du cercle",
+  "lecture": [
+   "Le trait bleu épais est OP, un rayon du cercle : il vaut 1.",
+   "Le trait violet OH est le cosinus ; le trait orange HP est le sinus.",
+   "Le petit carré en H marque l'angle droit.",
+   "À droite, la somme des carrés du sinus et du cosinus est égale à 1."
+  ],
+  "a_voir": "Les deux côtés de l'angle droit ont pour hypoténuse un rayon qui vaut 1."
+ },
+ {
+  "code": "31-068",
+  "a_dire": "La preuve part du triangle OHP, applique Pythagore, puis remplace OP par 1 : c'est ce remplacement qui donne le nombre 1.",
+  "legende_titre": "De Pythagore à sin² θ + cos² θ = 1",
+  "lecture": [
+   "En haut, le triangle de départ : angle droit en H, côtés 0,8192 (violet), 0,5736 (orange) et 1 (bleu).",
+   "La case grise est la première étape : Pythagore.",
+   "La grosse flèche orange est la seconde étape : OP est remplacé par 1.",
+   "La case verte est l'arrivée, avec les nombres : 0,6710 + 0,3290 = 1."
+  ],
+  "a_voir": "La grosse flèche, OP devient 1, est l'étape qui amène le nombre 1."
+ },
+ {
+  "code": "31-069",
+  "a_dire": "Hors du premier quart de tour, les côtés du triangle valent la valeur absolue du cosinus et du sinus, et leurs carrés donnent encore une somme égale à 1.",
+  "legende_titre": "Un point P à 120 degrés",
+  "lecture": [
+   "Le quart gris à droite est le premier quart de tour.",
+   "Le point P est à 120 degrés, hors de ce quart.",
+   "Les côtés du triangle bleu mesurent 0,5 (violet) et 0,8660 (orange).",
+   "En bas, les carrés 0,25 et 0,75 donnent 1."
+  ],
+  "a_voir": "Même avec P hors du premier quart, la somme des carrés reste 1."
+ },
+ {
+  "code": "31-070",
+  "a_dire": "Un nombre et le même nombre avec le signe contraire ont le même carré : moins 0,6 et 0,6 donnent tous deux 0,36.",
+  "legende_titre": "Deux nombres opposés, un même carré",
+  "lecture": [
+   "Sur la droite graduée, le disque violet est en −0,6 et le disque bleu en 0,6.",
+   "Chaque flèche part d'un nombre et porte son carré.",
+   "Les deux flèches arrivent dans la même case verte, 0,36."
+  ],
+  "a_voir": "Les deux flèches arrivent dans la même case : le signe n'a pas changé le carré."
+ },
+ {
+  "code": "31-071",
+  "a_dire": "À 0 degré, le triangle est aplati, mais le calcul reste vrai : cos 0° = 1, sin 0° = 0, et 1² + 0² = 1.",
+  "legende_titre": "Un triangle aplati à 0 degré",
+  "lecture": [
+   "Le triangle en tirets gris est celui de 35 degrés, avant que l'angle diminue.",
+   "La flèche orange suit le cercle : le point P descend jusqu'à A.",
+   "Le trait bleu est le côté qui reste : P, A et H sont au même point.",
+   "À droite, le calcul : 1² + 0² = 1."
+  ],
+  "a_voir": "Le triangle a disparu, mais la somme des carrés vaut toujours 1."
+ },
+ {
+  "code": "31-072",
+  "a_dire": "Sans les carrés, la somme du sinus et du cosinus n'est pas 1 ; ce sont les carrés qui rendent la somme égale à 1 pour tout angle.",
+  "legende_titre": "Avec et sans les carrés, à 35° et à 120°",
+  "lecture": [
+   "La barre orange est le sinus, la barre violette est le cosinus.",
+   "Le trait vert en tirets marque le nombre 1.",
+   "Sans les carrés (légendes rouges), les barres ne s'arrêtent pas sur le trait : 1,3928 et 0,3660.",
+   "Avec les carrés (légendes vertes), les barres s'arrêtent sur le trait, pour les deux angles."
+  ],
+  "a_voir": "Seules les barres des carrés se terminent sur le trait vert du nombre 1."
+ },
+ {
+  "code": "31-073",
+  "a_dire": "La première identité dit que le point P est à la distance 1 du point O : c'est la distance, calculée par Pythagore, entre O et P.",
+  "legende_titre": "La distance de P à O",
+  "lecture": [
+   "Le trait violet donne la position de P vers la droite : 0,8192.",
+   "Le trait orange donne la position de P vers le haut : 0,5736.",
+   "Le trait bleu épais est la distance de P à O.",
+   "En haut, le calcul de cette distance donne 1."
+  ],
+  "a_voir": "Le calcul de la distance de P à O redonne 1 : P est sur le cercle."
+ },
+ {
+  "code": "31-074",
+  "a_dire": "Dans le triangle OAT, rectangle en A, Pythagore donne 1 + tan² θ = sec² θ, car les côtés sont 1, tan θ et sec θ.",
+  "legende_titre": "Pythagore dans le triangle OAT",
+  "lecture": [
+   "Le côté bleu OA vaut 1 : c'est un rayon.",
+   "Le côté orange AT est la tangente.",
+   "L'hypoténuse verte OT est la sécante.",
+   "À droite, l'identité et les nombres du cas à 35 degrés."
+  ],
+  "a_voir": "Le côté 1 est un côté de l'angle droit ; l'hypoténuse est la sécante."
+ },
+ {
+  "code": "31-075",
+  "a_dire": "On obtient la deuxième identité en divisant les trois termes de la première par cos² θ : on trouve tan², 1 et sec².",
+  "legende_titre": "Diviser la première identité par cos² θ",
+  "lecture": [
+   "La rangée bleue du haut est la première identité à 35 degrés.",
+   "La bande orange est l'étape qui porte le poids : la division de chaque terme par cos² θ.",
+   "La rangée verte du bas est le résultat : tan², 1 et sec², avec 0,4903 + 1 = 1,4903."
+  ],
+  "a_voir": "Chaque case du haut, divisée par 0,6710, donne la case du dessous."
+ },
+ {
+  "code": "31-076",
+  "a_dire": "La division par cos θ n'est permise que si cos θ n'est pas 0 : à 90 degrés, le point T n'existe pas et 1/cos θ n'existe pas non plus.",
+  "legende_titre": "Pourquoi cos θ doit être différent de 0",
+  "lecture": [
+   "La droite verticale grise est tracée en A ; le trait en tirets gris est le rayon à 35 degrés, qui la rencontre.",
+   "Le trait bleu épais est le rayon à 90 degrés : il est parallèle à la droite grise.",
+   "Les deux droites ne se coupent pas : le point T n'existe pas (texte rouge).",
+   "À droite : cos 90° = 0 et la division par 0 est impossible."
+  ],
+  "a_voir": "À 90 degrés, le rayon et la droite ne se coupent pas ; le calcul s'arrête au même endroit."
+ },
+ {
+  "code": "31-077",
+  "a_dire": "Dans le triangle OBS, rectangle en B, Pythagore donne 1 + cotan² θ = cosec² θ ; à 30 degrés, 1 + 3 = 4.",
+  "legende_titre": "Pythagore dans le triangle OBS",
+  "lecture": [
+   "Le côté bleu OB vaut 1 : c'est un rayon.",
+   "Le côté orange BS est la cotangente.",
+   "L'hypoténuse verte OS est la cosécante.",
+   "À droite, l'identité et le calcul à 30 degrés : 1 + 3 = 4."
+  ],
+  "a_voir": "Le côté 1 est un côté de l'angle droit ; l'hypoténuse est la cosécante."
+ },
+ {
+  "code": "31-078",
+  "a_dire": "On obtient la troisième identité en divisant les trois termes de la première par sin² θ : on trouve 1, cotan² et cosec².",
+  "legende_titre": "Diviser la première identité par sin² θ",
+  "lecture": [
+   "La barre du haut est la première identité à 35 degrés : sin² en orange, cos² en violet, total 1.",
+   "La flèche orange est la division par sin² θ = 0,3290.",
+   "La barre du bas montre le résultat : 1 en orange, cotan² en violet, total cosec² égal à 3,04."
+  ],
+  "a_voir": "Après la division, la case orange vaut 1 et la barre entière est plus longue."
+ },
+ {
+  "code": "31-079",
+  "a_dire": "Vérifié à 35°, 1 + tan² θ et sec² θ ne diffèrent que de 0,0001, à cause des arrondis ; une formule fausse donne un écart de 0,27.",
+  "legende_titre": "Vérifier la deuxième identité à 35°",
+  "lecture": [
+   "La barre bleue et orange est 1 + 0,4903 = 1,4903.",
+   "La barre verte est sec² θ = 1,4904 : elle se termine au même endroit.",
+   "La barre rouge est la formule fausse avec sec θ = 1,2208 ; le cadre en tirets rouges est l'écart de 0,27."
+  ],
+  "a_voir": "Les deux premières barres finissent au même endroit ; la barre rouge est plus courte."
+ },
+ {
+  "code": "31-080",
+  "a_dire": "Les trois identités ont la forme « carré plus carré égale carré », et le 1 est le rayon, qui change de place : hypoténuse dans la première, côté de l'angle droit dans les deux autres.",
+  "legende_titre": "Trois fois Pythagore, le 1 change de place",
+  "lecture": [
+   "Chaque triangle gris est rectangle ; le trait bleu épais est le côté qui vaut 1, le rayon.",
+   "Dans le premier triangle, le 1 est l'hypoténuse.",
+   "Dans le deuxième et le troisième, le 1 est un côté de l'angle droit.",
+   "Sous chaque triangle, l'identité écrite avec les nombres à 35 degrés ; le 1 bleu est le même rayon."
+  ],
+  "a_voir": "Dans chaque triangle, le trait bleu vaut 1 ; il change de côté."
+ }
+]

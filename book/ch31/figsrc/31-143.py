@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def lbox(ax, x, y, w, h, role, label=None, **k): return box(ax, x, y, w, h, role, label=label, **k)
+fig, ax = canvas(64)
+text(ax, 44, 59, r'multiplier par $0$ : dangereux', 'limite', 's')
+lbox(ax, 8, 42, 20, 10, 'limite', r'$3=5$'); arrow(ax, (31, 47), (53, 47), 'varie'); text(ax, 42, 51, r'$\times\ 0$', 'varie', 's'); lbox(ax, 56, 42, 20, 10, 'resultat', r'$0=0$')
+text(ax, 44, 36.5, 'le faux devient vrai', 'limite', 's')
+text(ax, 44, 28, r'multiplier par $\cos\theta\neq 0$ : permis', 'resultat', 's')
+lbox(ax, 4, 8, 30, 12, 'sujet', r'$\tan\theta=2\sin\theta$', size='s'); arrow(ax, (37, 14), (48, 14), 'varie'); text(ax, 42.5, 18, r'$\times\cos\theta$', 'varie', 's')
+lbox(ax, 51, 8, 34, 12, 'sujet', r'$\sin\theta=2\sin\theta\cos\theta$', size='s')
+save(fig, '31-143')

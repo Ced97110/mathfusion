@@ -1,0 +1,188 @@
+[
+ {
+  "code": "31-113",
+  "a_dire": "Un seul calcul, le carré, a rendu vraie une égalité fausse ; cela ne vaut pas pour toutes les opérations.",
+  "legende_titre": "Une égalité fausse devient vraie",
+  "lecture": [
+   "Le cadre rouge est l'égalité fausse −1 = 1.",
+   "La flèche orange est le passage au carré des deux côtés.",
+   "Le cadre vert est le résultat 1 = 1, qui est vrai.",
+   "Les deux cadres gris du bas donnent les deux carrés calculés."
+  ],
+  "a_voir": "Après le carré, l'égalité de départ fausse est devenue vraie."
+ },
+ {
+  "code": "31-114",
+  "a_dire": "Une suite d'égalités qui va d'un membre à l'autre ne protège que si chaque égalité est vraie.",
+  "legende_titre": "Une suite d'égalités avec une étape fausse",
+  "lecture": [
+   "Les cadres bleus sont les deux bouts de la suite : 3 + 1 et 2 + 3.",
+   "Les signes verts sont les égalités vraies, le signe rouge est l'égalité fausse 4 = 5.",
+   "La flèche orange va du premier bout au dernier.",
+   "Le cadre rouge du bas montre que 3 + 1 = 4 et 2 + 3 = 5 ne sont pas égaux."
+  ],
+  "a_voir": "Une seule étape fausse suffit pour que les deux bouts ne soient pas égaux."
+ },
+ {
+  "code": "31-115",
+  "a_dire": "Pour démontrer, on part du membre le plus compliqué, ici celui de gauche.",
+  "legende_titre": "Par quel côté commencer",
+  "lecture": [
+   "Le grand cadre bleu est le membre de gauche, avec deux parenthèses, une tangente et un sinus.",
+   "Le petit cadre gris est le membre de droite, le nombre 1.",
+   "La flèche orange désigne le membre par lequel on commence."
+  ],
+  "a_voir": "On part du membre de gauche, car il contient plus de choses à simplifier."
+ },
+ {
+  "code": "31-116",
+  "a_dire": "On regarde l'autre membre à part, sur un brouillon, pour repérer le but ; il n'entre pas dans la preuve.",
+  "legende_titre": "Un brouillon pour trouver le but",
+  "lecture": [
+   "Le cadre bleu est la preuve écrite : on y transforme un seul membre.",
+   "Le cadre gris en pointillés est le brouillon, où l'autre membre est regardé.",
+   "Le texte vert est le but noté.",
+   "La flèche orange va du brouillon à la preuve : il sert à repérer le but."
+  ],
+  "a_voir": "Le brouillon donne le but, mais il reste en dehors de la preuve."
+ },
+ {
+  "code": "31-117",
+  "a_dire": "Pour utiliser Pythagore, on remplace un morceau reconnu par un carré, ou 1 par sin² x + cos² x.",
+  "legende_titre": "Reconnaître un morceau et le remplacer",
+  "lecture": [
+   "Chaque cadre bleu à gauche est un morceau à reconnaître.",
+   "Chaque cadre vert à droite est le carré qui le remplace.",
+   "Les flèches orange sont les remplacements.",
+   "La dernière ligne va dans l'autre sens : 1 devient sin² x + cos² x."
+  ],
+  "a_voir": "Quatre morceaux deviennent un carré, et le nombre 1 peut devenir une somme de deux carrés."
+ },
+ {
+  "code": "31-118",
+  "a_dire": "On remplace sécante, tangente et les autres rapports par leur définition pour ne garder que le sinus et le cosinus.",
+  "legende_titre": "Tout écrire avec sinus et cosinus",
+  "lecture": [
+   "Le cadre bleu du haut contient la sécante.",
+   "La flèche orange la remplace par 1 sur le cosinus.",
+   "Le cadre bleu du milieu ne contient plus que le cosinus.",
+   "La dernière flèche simplifie le cosinus du haut et du bas, et le cadre vert donne 1."
+  ],
+  "a_voir": "La sécante est remplacée par son écriture avec le cosinus, puis tout se simplifie."
+ },
+ {
+  "code": "31-119",
+  "a_dire": "On factorise quand les termes ont une partie commune ; sinon l'étape ne s'applique pas.",
+  "legende_titre": "Un facteur commun, ou pas",
+  "lecture": [
+   "À gauche, le cadre bleu a sin x dans ses deux termes ; la flèche orange le met en facteur et le cadre vert donne le résultat.",
+   "À droite, le cadre bleu a deux termes sans partie commune ; le cadre rouge dit qu'il n'y a rien à sortir."
+  ],
+  "a_voir": "On factorise seulement quand il existe une partie commune aux deux termes."
+ },
+ {
+  "code": "31-120",
+  "a_dire": "On sépare une fraction en deux, ou on réunit deux fractions, jusqu'à retrouver l'autre membre.",
+  "legende_titre": "Séparer ou réunir des fractions",
+  "lecture": [
+   "À gauche, le cadre bleu est une fraction avec une somme en haut.",
+   "La flèche orange la sépare en deux fractions grises, puis le cadre vert donne 1 + tan x.",
+   "À droite, la flèche orange réunit un demi et un tiers : le cadre vert donne cinq sixièmes."
+  ],
+  "a_voir": "Séparer et réunir sont deux sens du même travail sur les fractions."
+ },
+ {
+  "code": "31-121",
+  "a_dire": "La preuve de l'identité de l'ingénieur montre que le produit vaut 1, ici à 35°, et pour tout angle où le cosinus n'est pas nul.",
+  "legende_titre": "Les deux parenthèses à 35 degrés",
+  "lecture": [
+   "Le cadre bleu est la première parenthèse, égale à la sécante au carré.",
+   "Le cadre violet est la seconde, égale au cosinus au carré.",
+   "En dessous, les valeurs 1,4903 et 0,6710 sont multipliées.",
+   "Le cadre vert donne le produit : 1."
+  ],
+  "a_voir": "Les deux parenthèses ont pour produit 1 à 35°, et la preuve vaut pour d'autres angles."
+ },
+ {
+  "code": "31-122",
+  "a_dire": "L'identité ne dit rien à 90°, car la tangente n'existe pas ; elle est démontrée aux autres angles.",
+  "legende_titre": "Où l'identité s'applique",
+  "lecture": [
+   "La droite graduée donne l'angle en degrés.",
+   "Les traits verts sont les angles où l'identité est démontrée.",
+   "Le point rouge est 90°, où le cosinus vaut 0 et où la tangente n'existe pas.",
+   "La flèche rouge le désigne."
+  ],
+  "a_voir": "L'identité vaut de chaque côté de 90°, mais pas à 90°."
+ },
+ {
+  "code": "31-123",
+  "a_dire": "Le produit OT × OH vaut 1, parce que OT et OH sont inverses l'un de l'autre.",
+  "legende_titre": "Ce que cache le calcul sur la figure",
+  "lecture": [
+   "Le trait bleu est OH, de longueur 0,8192.",
+   "Le trait violet est OT, de longueur 1,2208.",
+   "L'arc gris est le quart de cercle de rayon 1.",
+   "Le cadre vert donne le produit de ces deux longueurs : 1."
+  ],
+  "a_voir": "Sur la figure, les longueurs OH et OT ont pour produit 1."
+ },
+ {
+  "code": "31-124",
+  "a_dire": "À 30°, les deux côtés de l'égalité donnent la même valeur, environ 1,732 ; cela ne prouve pas les autres angles.",
+  "legende_titre": "Un seul angle vérifié",
+  "lecture": [
+   "Le cadre bleu est le côté gauche, le cadre violet est le côté droit.",
+   "Dessous, leurs valeurs à 30° sont 0,8660 sur 0,5 et 1,5 sur 0,8660.",
+   "Les flèches orange mènent au même résultat vert, environ 1,732.",
+   "Le cadre vert du bas est 30°, le cadre gris en pointillés est tous les autres angles."
+  ],
+  "a_voir": "Seul l'angle 30° est vérifié ; les autres angles ne le sont pas."
+ },
+ {
+  "code": "31-125",
+  "a_dire": "Le brouillon repère que 1 − sin x en bas à gauche et 1 + sin x en haut à droite ne diffèrent que par un signe : elles sont conjuguées.",
+  "legende_titre": "Deux expressions qui ne changent que de signe",
+  "lecture": [
+   "Le cadre bleu est le bas de la fraction de gauche, 1 − sin x.",
+   "Le cadre violet est le haut de la fraction de droite, 1 + sin x.",
+   "La flèche orange entre eux marque le signe opposé.",
+   "L'accolade les nomme conjuguées.",
+   "Le cadre vert donne leur produit : 1 − sin² x."
+  ],
+  "a_voir": "Les deux expressions sont les mêmes, avec un signe opposé."
+ },
+ {
+  "code": "31-126",
+  "a_dire": "Le produit de 1 − sin x et 1 + sin x vaut 1 − sin² x, car les deux termes croisés s'annulent ; c'est cos² x.",
+  "legende_titre": "Pourquoi le produit se simplifie",
+  "lecture": [
+   "La grille donne les quatre produits des termes.",
+   "Les deux cases orange, + sin x et − sin x, sont les termes croisés : ils s'annulent.",
+   "Il reste 1 et − sin² x, donc 1 − sin² x, qui vaut cos² x.",
+   "En bas, à 30° : 0,5 × 1,5 = 0,75."
+  ],
+  "a_voir": "Les deux cases orange s'annulent et il reste 1 − sin² x."
+ },
+ {
+  "code": "31-127",
+  "a_dire": "Le produit des conjuguées avec le sinus est un carré de cosinus ; avec le cosinus, ce n'est pas le cas.",
+  "legende_titre": "Quand le produit est un carré de cosinus",
+  "lecture": [
+   "En haut, les conjuguées avec le sinus : la barre bleue (0,75) et la barre verte du cosinus au carré (0,75) sont égales.",
+   "En bas, les conjuguées avec le cosinus : la barre rouge (0,25) est plus courte que la barre grise du cosinus au carré (0,75)."
+  ],
+  "a_voir": "Seules les conjuguées avec le sinus donnent le carré du cosinus."
+ },
+ {
+  "code": "31-128",
+  "a_dire": "On multiplie le haut et le bas par le même nombre : la fraction obtenue vaut 1 et la valeur ne change pas, sauf si ce nombre vaut 0.",
+  "legende_titre": "Multiplier par une fraction qui vaut 1",
+  "lecture": [
+   "La ligne du haut est un exemple : un demi fois 2 sur 2 donne 2 sur 4.",
+   "La ligne du milieu est la fraction de l'identité multipliée par 1 + sin x sur 1 + sin x, qui vaut 1.",
+   "Le cadre rouge dit quand c'est interdit : si 1 + sin x vaut 0, à 270°."
+  ],
+  "a_voir": "La fraction multiplicatrice vaut 1, sauf quand son haut et son bas valent 0."
+ }
+]

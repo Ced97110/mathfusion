@@ -1,0 +1,184 @@
+[
+ {
+  "code": "31-129",
+  "a_dire": "Quand on simplifie par cos x, il reste (1 + sin x) en haut et cos x en bas.",
+  "legende_titre": "Simplifier le facteur commun",
+  "lecture": [
+   "Les deux cases orange sont le facteur cos x, présent en haut et en bas.",
+   "Les cases bleue et grise sont ce qui reste : (1 + sin x) en haut, cos x en bas.",
+   "La flèche orange divise le haut et le bas par cos x.",
+   "À droite, il ne reste plus de facteur commun."
+  ],
+  "a_voir": "Le cos x orange disparaît en haut et en bas, le reste ne bouge pas."
+ },
+ {
+  "code": "31-130",
+  "a_dire": "La même identité se prouve aussi en multipliant par cos x sur cos x : on retrouve 1,7321 à 30 degrés.",
+  "legende_titre": "Un autre chemin vers la même valeur",
+  "lecture": [
+   "La case bleue à gauche est le côté gauche : 1,7321.",
+   "La flèche orange multiplie par cos x sur cos x.",
+   "La fraction grise a 0,75 en haut et 0,4330 en bas.",
+   "La case verte à droite montre la même valeur, 1,7321."
+  ],
+  "a_voir": "Deux chemins différents donnent le même nombre."
+ },
+ {
+  "code": "31-131",
+  "a_dire": "Le côté gauche n'a pas de sens à 90 degrés ; le côté droit n'en a pas à 90 ni à 270 degrés.",
+  "legende_titre": "Où chaque côté perd son sens",
+  "lecture": [
+   "La ligne bleue est le côté gauche, la ligne violette est le côté droit.",
+   "Les ronds rouges marquent les angles où le côté n'a pas de sens.",
+   "À 270 degrés, le côté gauche vaut 0 (rond vert), mais le côté droit n'a pas de sens.",
+   "La droite graduée du bas donne les angles en degrés."
+  ],
+  "a_voir": "Chaque côté a ses propres angles interdits."
+ },
+ {
+  "code": "31-132",
+  "a_dire": "L'identité vaut quand cos x n'est pas nul, et seulement alors.",
+  "legende_titre": "Les angles où l'identité vaut",
+  "lecture": [
+   "La carte verte est 30 degrés : cos x n'est pas nul et les deux membres valent environ 1,7321.",
+   "Les deux cartes rouges sont 90 et 270 degrés : cos x vaut 0.",
+   "Dans ces cartes rouges, l'identité n'a pas de sens."
+  ],
+  "a_voir": "Vert quand cos x n'est pas nul, rouge quand il vaut 0."
+ },
+ {
+  "code": "31-133",
+  "a_dire": "Un contrôle numérique voit une faute seulement si la valeur choisie la rend visible.",
+  "legende_titre": "Un contrôle qui voit, un qui rate",
+  "lecture": [
+   "La ligne 30° compare la bonne preuve (1,73) et la preuve fautive (3,73) : ils diffèrent, la faute se voit.",
+   "La ligne 45° donne 2,41 des deux côtés : la faute reste cachée.",
+   "La colonne verte est la bonne preuve, la colonne rouge est la preuve fautive."
+  ],
+  "a_voir": "À 45°, les deux résultats sont égaux malgré la faute."
+ },
+ {
+  "code": "31-134",
+  "a_dire": "Un contrôle réussi sur quelques angles ne prouve pas l'égalité.",
+  "legende_titre": "Trois réussites, un échec",
+  "lecture": [
+   "La ligne bleue donne cos² x, la ligne violette donne 1 − sin x.",
+   "À 0°, 90° et 180° les deux lignes ont le même nombre (cases vertes).",
+   "À 270°, elles diffèrent : 0 et 2 (cases rouges)."
+  ],
+  "a_voir": "L'égalité réussit trois fois et échoue à 270°."
+ },
+ {
+  "code": "31-135",
+  "a_dire": "La technique « changer les 1 » écrit 1 comme cos x sur cos x ; multiplier par cos x change 1 sur sin x en cotan x et 1 sur cos x en 1.",
+  "legende_titre": "Multiplier par cos x change les termes",
+  "lecture": [
+   "La première ligne montre 1/sin x (2 à 30°) qui devient cotan x (1,7321).",
+   "La deuxième ligne montre 1/cos x (1,1547) qui devient 1.",
+   "Les flèches orange sont la multiplication par cos x."
+  ],
+  "a_voir": "Chaque terme de la grande fraction se transforme avec le même facteur cos x."
+ },
+ {
+  "code": "31-136",
+  "a_dire": "Les deux côtés de l'égalité ont des formes différentes mais donnent le même nombre à 30 degrés.",
+  "legende_titre": "Deux écritures, un nombre",
+  "lecture": [
+   "La case bleue est le côté gauche : (2 − 1,1547) sur (2 + 1,1547).",
+   "La case violette est le côté droit : (1,7321 − 1) sur (1,7321 + 1).",
+   "Les deux flèches arrivent à la case verte : environ 0,2679."
+  ],
+  "a_voir": "Deux écritures différentes valent le même nombre."
+ },
+ {
+  "code": "31-137",
+  "a_dire": "On multiplie le haut et le bas de la grande fraction par cos x ; chaque terme devient une cotangente ou 1.",
+  "legende_titre": "Haut et bas multipliés par cos x",
+  "lecture": [
+   "Les cases bleues sont le haut et le bas de la fraction de gauche à 30 degrés.",
+   "Les flèches orange multiplient chacune par 0,8660.",
+   "Les cases vertes donnent le résultat : 1,7321 − 1 en haut, 1,7321 + 1 en bas."
+  ],
+  "a_voir": "Le même facteur est appliqué en haut et en bas."
+ },
+ {
+  "code": "31-138",
+  "a_dire": "On remplace cos² x par 1 − sin² x pour n'avoir plus que le sinus dans l'équation.",
+  "legende_titre": "Passer de deux rapports à un seul",
+  "lecture": [
+   "En haut, la case orange cos² x est ce qu'on remplace.",
+   "La flèche orange mène à la case verte 1 − sin² x.",
+   "La case grise 1 − sin x ne change pas.",
+   "En bas, il ne reste que le sinus."
+  ],
+  "a_voir": "cos² x devient 1 − sin² x, le reste est inchangé."
+ },
+ {
+  "code": "31-139",
+  "a_dire": "Un produit nul a un facteur nul : sin x = 0 donne trois angles, sin x = 1 en donne un.",
+  "legende_titre": "Un produit nul, quatre angles",
+  "lecture": [
+   "La case noire est le produit sin x (1 − sin x) = 0.",
+   "La case bleue est le facteur sin x = 0, la case violette est le facteur sin x = 1.",
+   "Sur la droite graduée, les ronds bleus (0, 180, 360) viennent de la case bleue.",
+   "Le rond violet (90) vient de la case violette."
+  ],
+  "a_voir": "Deux facteurs, quatre angles de même couleur que leur facteur."
+ },
+ {
+  "code": "31-140",
+  "a_dire": "Les solutions trouvées par le calcul sont les points où les deux courbes se croisent.",
+  "legende_titre": "Calcul et graphique se rejoignent",
+  "lecture": [
+   "La courbe bleue est cos² x, la courbe orange est 1 − sin x.",
+   "Les ronds verts sont les croisements : 0, 90, 180 et 360 degrés.",
+   "À 270 degrés, les courbes ne se croisent pas."
+  ],
+  "a_voir": "Les quatre ronds verts sont les quatre solutions."
+ },
+ {
+  "code": "31-141",
+  "a_dire": "Diviser par sin x fait perdre les solutions où sin x vaut 0.",
+  "legende_titre": "Une division qui perd des solutions",
+  "lecture": [
+   "La droite du haut montre les quatre solutions : 0, 90, 180, 360.",
+   "La flèche orange est la division par sin x.",
+   "La droite du bas ne garde que 90 (rond vert).",
+   "Les ronds rouges vides sont les solutions perdues."
+  ],
+  "a_voir": "Quatre solutions avant la division, une seule après."
+ },
+ {
+  "code": "31-142",
+  "a_dire": "L'équation tan θ = 2 sin θ a cinq solutions entre −180 et 180 degrés, et la tangente n'existe pas à ±90.",
+  "legende_titre": "Cinq solutions, deux angles exclus",
+  "lecture": [
+   "Les ronds verts sont les solutions : −180, −60, 0, 60 et 180.",
+   "Les ronds rouges vides sont −90 et 90, où la tangente n'existe pas.",
+   "La case verte vérifie 60 degrés : 1,7321 des deux côtés."
+  ],
+  "a_voir": "Cinq ronds verts et deux ronds rouges vides sur la droite."
+ },
+ {
+  "code": "31-143",
+  "a_dire": "Multiplier par cos θ est permis quand tan θ existe, car cos θ n'est pas nul ; multiplier par 0 est dangereux.",
+  "legende_titre": "Multiplier par 0 ou par cos θ",
+  "lecture": [
+   "En haut, 3 = 5 (rouge, faux) devient 0 = 0 (vert, vrai) après ×0.",
+   "En bas, l'équation de la tangente est multipliée par cos θ.",
+   "Le cosinus n'est pas nul là où la tangente existe : le geste est permis."
+  ],
+  "a_voir": "Le facteur 0 change le vrai et le faux ; cos θ non nul ne les change pas."
+ },
+ {
+  "code": "31-144",
+  "a_dire": "La première identité sert à trouver une valeur, à fabriquer deux autres identités et à réduire une équation à une inconnue.",
+  "legende_titre": "Une identité qui sert trois fois",
+  "lecture": [
+   "La case bleue du haut est l'identité sin² θ + cos² θ = 1.",
+   "Le cercle montre cos = 0,6 (violet) et sin = 0,8 (orange), avec la longueur 1 en bleu.",
+   "Les trois cases vertes sont les trois emplois dans le chapitre."
+  ],
+  "a_voir": "Le cercle et l'identité servent aux trois emplois."
+ }
+]

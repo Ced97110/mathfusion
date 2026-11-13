@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def lbox(ax, x, y, w, h, role, label=None, **k): return box(ax, x, y, w, h, role, label=label, **k)
+fig, ax = canvas(52)
+f = numberline(ax, 10, 78, 28, -180, 180, 30, every=2, arrow_right=False)
+text(ax, 44, 20, 'angle en degrés', 'fixe', 's')
+for v in (-180, -60, 0, 60, 180): disc(ax, f(v), 33, 1.8, 'resultat')
+for v in (-90, 90): disc(ax, f(v), 33, 1.8, 'limite', fill=False)
+text(ax, 44, 47, r'$\tan\theta=2\sin\theta$ : 5 solutions', 'resultat', 's')
+text(ax, f(-90) - 2, 40, "tan n'existe pas", 'limite', 's'); text(ax, f(90) + 2, 40, "tan n'existe pas", 'limite', 's')
+lbox(ax, 22, 3, 44, 11, 'resultat', r'à $60^\circ$ : $1{,}7321=1{,}7321$', size='s')
+save(fig, '31-142')

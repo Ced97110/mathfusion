@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 14, 74, 48, -1, 1, step=0.2, every=5, arrow_right=False)
+disc(ax, f(-0.6), 48, 1.6, 'autre'); disc(ax, f(0.6), 48, 1.6, 'sujet')
+text(ax, f(-0.6), 56, '-0,6', 'autre', 'm', weight='bold'); text(ax, f(0.6), 56, '0,6', 'sujet', 'm', weight='bold')
+arrow(ax, (f(-0.6), 42), (35, 29), 'autre', curve=0.2); arrow(ax, (f(0.6), 42), (53, 29), 'sujet', curve=-0.2)
+text(ax, 12, 36, r'$(-0{,}6)^2=0{,}36$', 'autre', 's'); text(ax, 76, 36, r'$0{,}6^2=0{,}36$', 'sujet', 's')
+box(ax, 34, 15, 20, 13, 'resultat', label='0,36', size='l', weight='bold')
+text(ax, 44, 9, 'même carré', 'resultat', 's')
+save(fig, '31-070')

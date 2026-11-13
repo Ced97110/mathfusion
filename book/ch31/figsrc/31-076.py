@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+ox, oy, R = 26, 28, 20
+disc(ax, ox, oy, R, 'fixe', fill=False)
+line(ax, [(2, oy), (ox + R + 3, oy)], 'fixe')
+line(ax, [(ox + R, 4), (ox + R, 62)], 'fixe', lw=1.2)
+t = math.radians(35); Tg = (ox + R, oy + R * math.tan(t))
+line(ax, [(ox, oy), Tg], 'fixe', dash=True)
+text(ax, Tg[0] + 7, Tg[1] + 2, 'T à 35°', 'fixe', 's')
+line(ax, [(ox, oy), (ox, 62)], 'sujet', lw=1.8)
+disc(ax, ox, oy + R, 1.2, 'sujet')
+text(ax, ox - 3, oy + R + 2, '$P$', 'sujet', 's'); text(ax, ox + 2.5, oy - 3, '$O$', 'encre', 's'); text(ax, ox + R + 2.5, oy - 3, '$A$', 'encre', 's')
+text(ax, 36, 63.5, '$T$ ?', 'limite', 's')
+text(ax, 69, 18, r'$\theta=90^\circ$', 'varie', 'm')
+text(ax, 69, 11, r'$\cos 90^\circ=0$', 'autre', 'm')
+text(ax, 69, 4.5, '1 ÷ 0 : impossible', 'limite', 's')
+text(ax, 69, 54, 'les deux droites', 'limite', 's'); text(ax, 69, 49.5, 'ne se coupent pas', 'limite', 's')
+save(fig, '31-076')

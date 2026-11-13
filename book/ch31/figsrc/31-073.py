@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+ox, oy, R = 26, 10, 40
+t = math.radians(35); c, s = math.cos(t), math.sin(t)
+P = (ox + R * c, oy + R * s)
+line(ax, [(ox + R * math.cos(math.radians(a)), oy + R * math.sin(math.radians(a))) for a in range(0, 91, 2)], 'fixe', lw=0.9)
+line(ax, [(ox, oy), (ox + R + 4, oy)], 'fixe'); line(ax, [(ox, oy), (ox, oy + R + 4)], 'fixe')
+line(ax, [P, (P[0], oy)], 'fixe', dash=True); line(ax, [P, (ox, P[1])], 'fixe', dash=True)
+line(ax, [(ox, oy), (P[0], oy)], 'autre', lw=2.2)
+line(ax, [(ox, oy), (ox, P[1])], 'varie', lw=2.2)
+line(ax, [(ox, oy), P], 'sujet', lw=2.0)
+disc(ax, P[0], P[1], 1.3, 'sujet')
+text(ax, P[0] + 2.5, P[1] + 3, '$P$', 'sujet', 'm'); text(ax, ox + 2.8, oy - 3, '$O$', 'encre', 's')
+text(ax, 38, 29, 'distance 1', 'sujet', 's', weight='bold')
+text(ax, (ox + P[0]) / 2, 4.5, '0,8192 vers la droite', 'autre', 's')
+text(ax, 13, P[1] / 2 + 5, '0,5736\nvers le haut', 'varie', 's')
+text(ax, 62, 50, r'$\sqrt{0{,}6710+0{,}3290}=1$', 'resultat', 'm', weight='bold')
+save(fig, '31-073')

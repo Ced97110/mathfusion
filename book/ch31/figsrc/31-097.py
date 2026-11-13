@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import numpy as np
+fig, ax = canvas(68)
+u = 22; ox, oy = 24, 24
+O = (ox, oy); A = (ox + u, oy); T = (ox + u, oy + u * 4 / 3)
+P = (ox + 0.6 * u, oy + 0.8 * u); H = (P[0], oy)
+disc(ax, ox, oy, u, 'fixe', fill=False)
+poly(ax, [O, A, T], 'resultat')
+poly(ax, [O, H, P], 'sujet')
+line(ax, [(A[0], oy - 6), (A[0], T[1] + 3)], 'fixe')
+text(ax, 31.5, 27.4, '0,6', 'sujet', 's')
+text(ax, 41.6, 33, '0,8', 'sujet', 's')
+text(ax, 29.2, 37.5, '1', 'sujet', 's')
+brace(ax, ox, A[0], oy - 1.5, 'fixe', '1')
+text(ax, 42.5, 55.5, 'OT = 1,6667', 'resultat', 's', ha='right')
+text(ax, 48.5, 39, 'AT = 1,3333', 'resultat', 's', ha='left')
+text(ax, 21.5, 25.5, 'O', 'encre', 's'); text(ax, 48, 22, 'A', 'encre', 's'); text(ax, 48, 54, 'T', 'encre', 's')
+text(ax, 52, 27, r'$1+\tan^2\theta=\sec^2\theta$', 'encre', 's', ha='left')
+text(ax, 52, 19, '1 + 1,7778 = 2,7778', 'resultat', 's', ha='left', weight='bold')
+save(fig, '31-097')
