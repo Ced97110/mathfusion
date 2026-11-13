@@ -164,6 +164,16 @@ def outline(root: ET.Element) -> tuple[list[dict], list[dict]]:
     return front, parts
 
 
+def part_english(pdf: str, page: int) -> str:
+    """English title of a part: the blue text of its opening page."""
+    out = subprocess.run(['pdftohtml', '-xml', '-i', '-q', '-stdout', '-f', str(page), '-l', str(page), pdf],
+                         check=True, capture_output=True, text=True).stdout
+    root = ET.fromstring(re.sub(r'<!DOCTYPE[^>]*>', '', out))
+    blue = {fs.get('id') for fs in root.iter('fontspec') if fs.get('color') in EN_COLORS}
+    words = [''.join(t.itertext()) for t in root.iter('text') if t.get('font') in blue]
+    return clean_title(' '.join(words))
+
+
 def kind_of(family: str, size: int, color: str) -> str:
     if 'DejaVu' in family:
         return 'fig'
@@ -591,7 +601,7 @@ def main() -> None:
                 entry = write(key, '', f['title'], f['page'])
             toc['front'].append(entry)
         for p in parts:
-            entry = {'num': p['num'], 'title': p['title'], 'chapters': []}
+            entry = {'num': p['num'], 'title': p['title'], 'en': part_english(pdf, p['page']), 'chapters': []}
             for c in p['chapters']:
                 key = c['key'] if not c['key'].isdigit() else f'{int(c["key"]):03d}'
                 label = f'Chapitre {int(c["key"])}' if c['key'].isdigit() else ''
