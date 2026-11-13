@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 14, 64, 'aller', 'fixe', 's')
+poly(ax, [(4, 40), (28, 40), (28, 52)], 'fixe'); text(ax, 17, 36, '5 m', 'fixe', 's')
+poly(ax, [(36, 40), (60, 40), (60, 52)], 'fixe'); text(ax, 48, 36, '5,39 m', 'fixe', 's')
+arrow(ax, (63, 45), (70, 45), 'fixe')
+text(ax, 78, 45, '5,39 m', 'resultat', 's')
+text(ax, 16, 28, 'chemin inverse', 'varie', 's')
+for i, n in enumerate(('4', '3', '2')):
+    box(ax, 4 + i*11, 8, 9, 9, 'sujet', label=n)
+arrow(ax, (38, 12.5), (44, 12.5), 'varie')
+box(ax, 44, 7, 26, 11, 'varie', label=r'$\sqrt{4^2+3^2+2^2}$', size='s')
+text(ax, 78, 12.5, '5,39 m', 'resultat', 's')
+arrow(ax, (70.5, 12.5), (72, 12.5), 'varie')
+save(fig, '27-131')

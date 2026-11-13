@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+u = 11
+o = (34, 12)
+P = lambda x, y, z: iso(x, y, z, o, u)
+al = math.radians(30)
+line(ax, [P(0, 0, 0), P(5, 0, 0)], 'sujet', lw=2.6)
+for X, nm in ((1, '1 m'), (4, '4 m')):
+    s = P(X, 2.6, 0); t = P(X, 2.6 * math.cos(al), 2.6 * math.sin(al))
+    line(ax, [P(X, 0, 0), s], 'fixe', lw=1.6)
+    line(ax, [P(X, 0, 0), t], 'autre', lw=1.6)
+    pts = [P(X, 0, 0)] + [P(X, 1.5 * math.cos(al * k / 10), 1.5 * math.sin(al * k / 10)) for k in range(11)]
+    poly(ax, pts, 'resultat', lw=0.5)
+    w = P(X, 1.9 * math.cos(al / 2), 1.9 * math.sin(al / 2))
+    text(ax, w[0] - 6.5, w[1] + 1, '30°', 'resultat', 's')
+    disc(ax, *P(X, 0, 0), 1.2, 'sujet')
+    b = P(X, 0, 0)
+    text(ax, b[0] + 3, b[1] - 4, r'$M$ à ' + nm, 'sujet', 's')
+s1 = P(1, 2.6, 0); t1 = P(1, 2.6 * math.cos(al), 2.6 * math.sin(al))
+text(ax, s1[0] - 1, s1[1] - 2.5, 'dans le sol', 'fixe', 's', ha='right')
+text(ax, t1[0] - 1, t1[1] + 1.5, 'dans le toit', 'autre', 's', ha='right')
+g = P(5, 0, 0)
+h0 = P(0, 0, 0)
+text(ax, h0[0] - 2, h0[1] - 3.5, 'gouttière 5 m', 'sujet', 's', ha='right')
+save(fig, '27-052')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+fig, ax = canvas(62)
+O = (30, 12); th = math.radians(20)
+line(ax, [(6, 12), (82, 12)], 'fixe', lw=1.4)
+d = (math.cos(th), math.sin(th))
+line(ax, [O, (O[0]+48*d[0], O[1]+48*d[1])], 'fixe', lw=1.4)
+text(ax, 80, 8, 'sol', 'fixe', 's'); text(ax, 80, 12+48*d[1]*0.9+4, 'colline', 'fixe', 's')
+arrow(ax, O, (O[0], O[1]+36), 'sujet', lw=1.8)
+n = (-math.sin(th), math.cos(th))
+arrow(ax, O, (O[0]+36*n[0], O[1]+36*n[1]), 'autre', lw=1.8)
+text(ax, 14, 56, 'perpendiculaire à la colline', 'autre', 's', ha='left')
+text(ax, 34, 50, 'perpendiculaire au sol', 'sujet', 's', ha='left')
+ax.add_patch(Arc(O, 30, 30, theta1=90, theta2=110, color=COL['resultat'], lw=1.2))
+text(ax, 18, 36, '20°', 'resultat', 'm')
+save(fig, '27-129')

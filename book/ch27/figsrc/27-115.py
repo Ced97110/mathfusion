@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+line(ax, [(8, 6), (80, 6)], 'fixe', lw=1.4)
+text(ax, 44, 2.2, 'charnière', 'fixe', 's')
+arrow(ax, (30, 6), (30, 54), 'fixe', lw=1.2)
+text(ax, 31.5, 57, 'plus grande pente', 'fixe', 's', ha='left')
+arrow(ax, (30, 30), (74, 30), 'varie', lw=1.6)
+text(ax, 66, 34, 'chemin', 'varie', 's')
+line(ax, [(30, 36), (36, 36), (36, 30)], 'autre')
+text(ax, 40, 24, 'φ = 90°', 'autre', 's', ha='left')
+text(ax, 8, 30, 'même hauteur', 'resultat', 's', ha='left')
+box(ax, 50, 10, 30, 8, 'resultat', label='α = 0°')
+save(fig, '27-115')
