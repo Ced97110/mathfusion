@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 40, 40, 14, 'fixe', label='glissements', size='s')
+box(ax, 46, 40, 40, 14, 'fixe', label='retourné + glissé', size='s')
+text(ax, 44, 59, r'mouvements de $G$', 'fixe', 's')
+box(ax, 2, 8, 40, 14, 'sujet', label='ne change rien', size='s')
+box(ax, 46, 8, 40, 14, 'sujet', label='retournement', size='s')
+arrow(ax, (22, 39), (22, 23), 'varie'); arrow(ax, (66, 39), (66, 23), 'varie')
+text(ax, 44, 31, 'on oublie le glissement', 'varie', 's')
+text(ax, 44, 3.5, r'$G_0$ : 2 éléments', 'sujet', 's')
+save(fig, '74-104')

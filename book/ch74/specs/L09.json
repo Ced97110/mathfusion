@@ -1,0 +1,187 @@
+[
+ {
+  "code": "74-129",
+  "a_dire": "Le même nombre rend le pentagone traçable et le motif non répétable.",
+  "legende_titre": "Un nombre, deux rôles opposés",
+  "lecture": [
+   "Le cadre bleu en haut donne le nombre cos 72°, environ 0,309.",
+   "Le pentagone vert à gauche est la figure que l'on peut tracer.",
+   "Le point rouge sur la droite graduée est 2 cos 72°, environ 0,618, entre 0 et 1 : il n'est pas entier."
+  ],
+  "a_voir": "Le même nombre permet de tracer le pentagone, mais son double n'est pas entier."
+ },
+ {
+  "code": "74-130",
+  "a_dire": "Sur le réseau hexagonal, la rotation de 60° envoie x sur y et y sur y − x ; la matrice a pour trace 1.",
+  "legende_titre": "Le réseau hexagonal et sa rotation de 60°",
+  "lecture": [
+   "La flèche bleue est x, la flèche violette est y.",
+   "La flèche orange courbe est la rotation de 60° : elle envoie x sur y.",
+   "La flèche verte est y − x, l'image de y.",
+   "À droite, tu lis la matrice M, sa trace 1 et la valeur 2 cos 60°."
+  ],
+  "a_voir": "Voir où la rotation envoie les deux flèches de base, et que la trace vaut 1."
+ },
+ {
+  "code": "74-131",
+  "a_dire": "On répète la matrice M : M³ est le demi-tour −I, M⁶ est I, donc l'ordre est 6.",
+  "legende_titre": "Répéter la rotation jusqu'à l'identité",
+  "lecture": [
+   "Chaque point est la matrice M répétée un certain nombre de fois ; les flèches orange sont une rotation de 60°.",
+   "Le point vert à droite est I, le point de départ.",
+   "Le point rouge à gauche est M³ = −I : c'est le demi-tour, pas I.",
+   "Après six pas, tu reviens au point vert : M⁶ = I."
+  ],
+  "a_voir": "Compter les pas jusqu'à revenir à I : six."
+ },
+ {
+  "code": "74-132",
+  "a_dire": "Dans le réseau, on choisit un vecteur non nul v le plus court ; le disque de rayon |v| ne contient aucun autre point.",
+  "legende_titre": "Le plus court vecteur et le disque vide",
+  "lecture": [
+   "Le point noir est l'origine O.",
+   "La flèche bleue est v, le vecteur le plus court.",
+   "Le disque bleu a pour rayon la longueur de v.",
+   "Les points gris sont les autres points du réseau : aucun n'est à l'intérieur du disque."
+  ],
+  "a_voir": "Voir que le disque de rayon |v| ne contient que l'origine."
+ },
+ {
+  "code": "74-133",
+  "a_dire": "Le point Q = v + ρ²(v) est plus près de O que v : il est dans le disque.",
+  "legende_titre": "Où tombe la somme des deux flèches",
+  "lecture": [
+   "La flèche bleue est v, la flèche orange est ρ²(v) ; l'arc orange est l'angle de 144°.",
+   "Les tirets gris complètent le parallélogramme jusqu'au point Q.",
+   "Le disque bleu a pour rayon la longueur de v.",
+   "Le point rouge Q est à l'intérieur du disque."
+  ],
+  "a_voir": "Voir que Q est à l'intérieur du disque, donc plus près de O que v."
+ },
+ {
+  "code": "74-134",
+  "a_dire": "Les images de v par la rotation sont dans le réseau ; leur somme v + ρ²(v) est un point Q du réseau.",
+  "legende_titre": "Des vecteurs du réseau, puis leur somme",
+  "lecture": [
+   "Les points gris sont le réseau L.",
+   "La flèche bleue est v, la flèche orange est ρ²(v), à 144° de v.",
+   "Les tirets forment le parallélogramme de v et ρ²(v).",
+   "Le point vert est leur somme Q : il est aussi dans le réseau."
+  ],
+  "a_voir": "La somme de deux vecteurs du réseau donne un point Q du réseau."
+ },
+ {
+  "code": "74-135",
+  "a_dire": "La longueur OQ vaut 2 cos 72° × |v|, environ 0,62 |v| : Q est plus près que v, mais pas en O.",
+  "legende_titre": "La longueur de OQ comparée à celle de v",
+  "lecture": [
+   "La barre bleue a la longueur de v : 5 cm sur la droite graduée.",
+   "La barre verte a la longueur de OQ : environ 3,1 cm.",
+   "La barre verte est plus courte que la barre bleue et elle n'est pas nulle.",
+   "La ligne du bas donne le calcul : 2 cos 72° × 5, environ 3,1."
+  ],
+  "a_voir": "Voir que OQ est plus court que v, sans être nul."
+ },
+ {
+  "code": "74-136",
+  "a_dire": "Pour n ≥ 7, la longueur de v − ρ(v) est 2 sin(180°/n) |v|, plus courte que |v|.",
+  "legende_titre": "Le côté v − ρ(v) est plus court que v",
+  "lecture": [
+   "La flèche bleue est v, la flèche orange est ρ(v) ; l'arc orange est l'angle 360°/7.",
+   "Le trait vert épais relie les bouts des deux flèches : c'est v − ρ(v).",
+   "À droite, la barre verte est plus courte que la barre bleue de |v| : environ 0,87 |v|."
+  ],
+  "a_voir": "Voir que, pour n ≥ 7, le trait vert est plus court que v."
+ },
+ {
+  "code": "74-137",
+  "a_dire": "Pour n = 6, 2 sin 30° = 1 : v − ρ(v) a la même longueur que v ; c'est le réseau hexagonal à six voisins à égale distance.",
+  "legende_titre": "Le cas limite 6 : aucune contradiction",
+  "lecture": [
+   "Les six flèches bleues partent de O vers six points du réseau, tous à la même distance.",
+   "Le contour vert relie ces six points ; le triangle vert pâle est formé par O, v et ρ(v).",
+   "Le côté du triangle, v − ρ(v), a la même longueur que les flèches : 2 sin 30° = 1."
+  ],
+  "a_voir": "Voir que, pour 6, le côté est aussi long que v : la preuve ne rejette rien."
+ },
+ {
+  "code": "74-138",
+  "a_dire": "L'angle entre x et y fixe la rotation : 90° dans le carré, 60° dans l'hexagonal.",
+  "legende_titre": "Deux réseaux, deux angles de base",
+  "lecture": [
+   "À gauche, les points gris forment le réseau carré ; la flèche bleue est x, la violette est y.",
+   "À droite, les points gris forment le réseau hexagonal, avec les mêmes flèches x et y.",
+   "L'arc orange donne l'angle entre x et y : 90° à gauche, 60° à droite."
+  ],
+  "a_voir": "Comparer les deux angles : un quart de tour et un sixième de tour."
+ },
+ {
+  "code": "74-139",
+  "a_dire": "Dans le réseau carré, le quart de tour envoie x sur un point du réseau, le sixième de tour sort du réseau.",
+  "legende_titre": "Le réseau carré : deux rotations essayées",
+  "lecture": [
+   "Les points gris sont le réseau carré ; la flèche bleue est x.",
+   "La flèche verte est le quart de tour : elle arrive sur y, un point du réseau.",
+   "La flèche rouge est le sixième de tour : elle arrive sur un cercle vide, hors du réseau.",
+   "À droite, tu lis les ordres permis : 1, 2, 4."
+  ],
+  "a_voir": "Voir que le quart de tour reste dans le réseau, pas le sixième de tour."
+ },
+ {
+  "code": "74-140",
+  "a_dire": "Dans le réseau hexagonal, le quart de tour envoie x sur (0, 1), qui n'est pas un point du réseau.",
+  "legende_titre": "Le réseau hexagonal : le quart de tour sort",
+  "lecture": [
+   "Les points gris sont le réseau hexagonal ; la flèche bleue est x, le point vert est y.",
+   "La flèche rouge est le quart de tour : elle arrive en (0, 1), un cercle vide hors du réseau.",
+   "Le point vert y, lui, est un point du réseau : c'est le sixième de tour.",
+   "À droite, tu lis les ordres permis : 1, 2, 3, 6."
+  ],
+  "a_voir": "Voir que (0, 1) tombe entre les points du réseau."
+ },
+ {
+  "code": "74-141",
+  "a_dire": "Il y a cinq types de réseaux, selon la forme de la maille que dessinent les deux flèches de base.",
+  "legende_titre": "Cinq types de réseaux du plan",
+  "lecture": [
+   "Chaque dessin est une grille de points bleus.",
+   "Le parallélogramme orange est la maille : la forme dessinée par les deux flèches de base.",
+   "La maille est quelconque, rectangle, losange, carré ou hexagonal : c'est ce qui distingue les cinq types."
+  ],
+  "a_voir": "Voir que les cinq grilles ne diffèrent que par la forme de la maille."
+ },
+ {
+  "code": "74-142",
+  "a_dire": "Seul le réseau carré admet l'ordre 4 ; seul le réseau hexagonal admet les ordres 3 et 6.",
+  "legende_titre": "Quel réseau admet quel ordre",
+  "lecture": [
+   "Chaque ligne est un type de réseau, avec un dessin de sa maille orange.",
+   "La colonne « ordre 4 » : seul le carré a une coche verte.",
+   "La colonne « ordres 3, 6 » : seul l'hexagonal a une coche verte.",
+   "Les croix rouges disent que l'ordre n'est pas permis."
+  ],
+  "a_voir": "Lire les deux colonnes : le carré pour 4, l'hexagonal pour 3 et 6."
+ },
+ {
+  "code": "74-143",
+  "a_dire": "Une symétrie de la frise garde sa direction : sa partie linéaire est I, −I ou une des deux réflexions, groupe D₂.",
+  "legende_titre": "La direction de la frise est conservée",
+  "lecture": [
+   "Les F bleus alignés sont la frise ; la double flèche est sa direction horizontale.",
+   "Les quatre cases vertes montrent les parties linéaires qui gardent la direction horizontale : I, −I et les deux réflexions. Elles forment le groupe D₂.",
+   "La case rouge montre le quart de tour : le F est couché, la direction devient verticale, ce n'est pas une symétrie."
+  ],
+  "a_voir": "Les symétries gardent la direction horizontale ; le quart de tour ne la garde pas."
+ },
+ {
+  "code": "74-144",
+  "a_dire": "En combinant ces possibilités avec le glissement, il y a exactement sept groupes de frises.",
+  "legende_titre": "Sept façons de répéter une frise",
+  "lecture": [
+   "Chaque bande bleue est une frise différente, faite de lettres répétées dans une direction.",
+   "Il y a sept bandes : F, b et p, V, D, N, H, V et Λ.",
+   "L'accolade verte rassemble les sept bandes : sept groupes."
+  ],
+  "a_voir": "Compter les bandes : sept groupes de frises."
+ }
+]

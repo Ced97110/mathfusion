@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+cx, cy, d = 44, 42, 14
+def dia(x, y, r=1.0): poly(ax, [(x-1.9*r, y), (x, y+2.6*r), (x+1.9*r, y), (x, y-2.6*r)], 'sujet')
+line(ax, [(cx-d-8, cy), (cx+d+8, cy)], 'fixe')
+text(ax, cx, 66, 'distances égales : 5 cm', 'fixe', 's')
+poly(ax, [(cx-1.8, cy), (cx, cy+2.5), (cx+1.8, cy), (cx, cy-2.5)], 'encre')
+dia(cx-d, cy); dia(cx+d, cy)
+disc(ax, cx, cy+d, 2.2, 'resultat'); disc(ax, cx, cy-d, 2.2, 'resultat')
+arrow(ax, (cx+d+1, cy+2), (cx+2, cy+d-1), 'limite', curve=0.4)
+text(ax, cx+d+3, cy+d+3, 'quart de tour : faux', 'limite', 's', ha='left')
+arrow(ax, (cx+d, cy-3), (cx-d, cy-3), 'resultat', curve=-1.2)
+text(ax, cx, 8, 'demi-tour : juste', 'resultat', 's')
+text(ax, cx+4, cy+3.5, 'milieu', 'fixe', 's', ha='left')
+dia(5, 20); text(ax, 9, 20, 'losange bleu', 'sujet', 's', ha='left')
+disc(ax, 5, 13, 2.2, 'resultat'); text(ax, 9, 13, 'disque vert', 'resultat', 's', ha='left')
+save(fig, '74-171')

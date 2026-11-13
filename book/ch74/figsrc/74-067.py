@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+ox, oy, u = 12, 8, 8
+for i in range(9): line(ax, [(ox + i*u, oy), (ox + i*u, oy + 6*u)], 'fixe', lw=0.3)
+for j in range(7): line(ax, [(ox, oy + j*u), (ox + 8*u, oy + j*u)], 'fixe', lw=0.3)
+g = lambda a, b: (ox + a*u, oy + b*u)
+line(ax, [g(0, 3), g(8, 3)], 'fixe', lw=1.0, dash=True)
+text(ax, 66, 35, r'axe $x_2=3$', 'fixe', 's')
+P, Q, R = g(1, 2), g(3, 4), g(5, 2)
+arrow(ax, P, Q, 'varie'); arrow(ax, Q, R, 'varie')
+text(ax, 25, 38.5, '$f$', 'varie', 'm'); text(ax, 47, 38.5, '$f$', 'varie', 'm')
+disc(ax, *P, 1.4, 'sujet'); disc(ax, *Q, 1.4, 'varie'); disc(ax, *R, 1.4, 'resultat')
+text(ax, P[0] - 3.5, P[1] + 3, '$P$', 'sujet', 'm')
+text(ax, Q[0], Q[1] + 4, '$f(P)$', 'varie', 'm')
+text(ax, R[0] + 5, R[1] + 3.5, '$f(f(P))$', 'resultat', 'm')
+brace(ax, P[0], R[0], 21, 'resultat', label='avancé de 4')
+save(fig, '74-067')

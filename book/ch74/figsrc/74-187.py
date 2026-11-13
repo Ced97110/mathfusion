@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 12, 78, 24, -2, 1, arrow_right=False, size='s')
+disc(ax, f(0), 24, 1.2, 'fixe')
+arrow(ax, (f(0), 26), (f(0.618), 26), 'varie', curve=-0.9)
+arrow(ax, (f(0.618), 26), (f(-1), 26), 'varie', curve=0.35)
+text(ax, f(0.3), 36, r'$2\cos 72°\approx 0{,}618$', 'limite', 's')
+text(ax, f(-0.7), 42, r'$2\cos 144°\approx -1{,}618$', 'limite', 's')
+disc(ax, f(0.618), 24, 1.6, 'limite'); disc(ax, f(-1.618), 24, 1.6, 'limite')
+disc(ax, f(-1), 24, 2.2, 'resultat')
+box(ax, 8, 4, 36, 9, 'resultat', label='somme = −1 : entier', size='s')
+text(ax, 66, 8, 'la trace n’exclut', 'resultat', 's'); text(ax, 66, 4.3, 'plus l’ordre 5', 'resultat', 's')
+save(fig, '74-187')

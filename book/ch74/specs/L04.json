@@ -1,0 +1,187 @@
+[
+ {
+  "code": "74-049",
+  "a_dire": "Chercher le point fixe c revient à résoudre deux équations à deux inconnues : x + y = 3 et y − x = 1.",
+  "legende_titre": "Où se croisent deux conditions",
+  "lecture": [
+   "La droite bleue est la première équation : x + y = 3.",
+   "La droite violette est la seconde équation : y − x = 1.",
+   "Le point vert est l’endroit où les deux droites se croisent : c = (1 ; 2)."
+  ],
+  "a_voir": "Le point fixe est le point commun aux deux équations."
+ },
+ {
+  "code": "74-050",
+  "a_dire": "Le déterminant de I − R_θ vaut toujours 2 − 2 cos θ : 1 pour 60°, 2 pour 90°, 4 pour 180°.",
+  "legende_titre": "Trois angles, une même forme",
+  "lecture": [
+   "Chaque barre orange est le déterminant pour un angle écrit sous elle.",
+   "La barre de 60° a pour hauteur 1, celle de 90° a pour hauteur 2, celle de 180° a pour hauteur 4.",
+   "La phrase rouge dit quand le nombre est nul : seulement si cos θ vaut 1."
+  ],
+  "a_voir": "Les trois hauteurs suivent la même formule 2 − 2 cos θ."
+ },
+ {
+  "code": "74-051",
+  "a_dire": "Si θ n’est pas nul, il y a un seul point fixe ; si θ = 0 et b n’est pas nul, aucun point n’est fixe.",
+  "legende_titre": "Tourner garde un point, glisser aucun",
+  "lecture": [
+   "À gauche, la flèche orange tourne autour du point vert : ce point reste en place.",
+   "À droite, chaque point rouge est poussé par une flèche rouge vers le haut et la droite.",
+   "Aucune flèche de droite n’a une longueur nulle : aucun point ne reste en place."
+  ],
+  "a_voir": "Avec θ non nul le centre existe ; avec θ = 0 il n’existe pas."
+ },
+ {
+  "code": "74-052",
+  "a_dire": "Le glissement b se coupe en b₁ le long de l’axe et b₂ en travers ; la droite D est décalée de b₂/2.",
+  "legende_titre": "Couper le glissement en deux morceaux",
+  "lecture": [
+   "La flèche bleue en biais est le glissement b : 5 vers la droite et 2 vers le haut.",
+   "Les deux flèches orange sont ses morceaux : b₁ le long de l’axe, b₂ en travers.",
+   "La ligne grise en tirets est l’axe de A ; la ligne verte D est montée d’une unité.",
+   "Le point (0 ; 1) arrive au point (5 ; 1), tous deux sur D."
+  ],
+  "a_voir": "D est entre l’axe de A et l’axe décalé par b₂, à la moitié de b₂."
+ },
+ {
+  "code": "74-053",
+  "a_dire": "Si b₁ = 0, f est la réflexion d’axe D et les points de D restent en place.",
+  "legende_titre": "Quand rien ne glisse le long de l’axe",
+  "lecture": [
+   "La ligne verte est D ; ses trois points verts ne bougent pas.",
+   "La ligne grise en tirets est l’axe de A.",
+   "Le point bleu Q est envoyé par la flèche orange en Q′, de l’autre côté de D."
+  ],
+  "a_voir": "Les points de D sont fixes, les autres passent de l’autre côté."
+ },
+ {
+  "code": "74-054",
+  "a_dire": "Si b₁ n’est pas nul, f avance le long de D et aucun point ne reste en place : c’est une symétrie glissée.",
+  "legende_titre": "Un glissement le long de l’axe",
+  "lecture": [
+   "La ligne verte est D.",
+   "Le point bleu P sur D est envoyé par la flèche orange au point orange P′, plus loin sur D : sa première coordonnée passe de x₁ à x₁ + 5.",
+   "Le point bleu Q hors de D est d'abord retourné de l'autre côté de D (cercle gris), puis glissé de 5 le long de D jusqu'à Q′.",
+   "Aucun point ne reste en place."
+  ],
+  "a_voir": "On retourne autour de D, puis on glisse de 5 : même sur D, le point avance."
+ },
+ {
+  "code": "74-055",
+  "a_dire": "Il y a quatre types d’isométries du plan : translation, rotation, réflexion, symétrie glissée.",
+  "legende_titre": "Tous les cas du plan",
+  "lecture": [
+   "La boîte grise du haut est la partie linéaire A ; elle mène à quatre cas.",
+   "A = I donne la translation ; A tourne donne la rotation ; A retourne donne la réflexion si b₁ = 0, la symétrie glissée si b₁ est non nul.",
+   "Dans chaque dessin, le triangle bleu est le départ, le triangle orange est l'arrivée.",
+   "Sous chaque dessin, le nom du type."
+  ],
+  "a_voir": "Chaque cas se termine par un des quatre types, sans autre cas."
+ },
+ {
+  "code": "74-056",
+  "a_dire": "Le déterminant de A vaut 1 pour translations et rotations (le F se lit encore), −1 pour réflexions et symétries glissées (le F est retourné).",
+  "legende_titre": "Un nombre qui sépare deux familles",
+  "lecture": [
+   "Dans le cadre bleu, det A = 1 : le F orange est identique au F bleu, déplacé ou tourné.",
+   "Dans le cadre violet, det A = −1 : le F orange est retourné comme dans un miroir.",
+   "Chaque ligne donne le nom du mouvement : translation, rotation, réflexion, symétrie glissée."
+  ],
+  "a_voir": "Seuls les cadres violets retournent le F."
+ },
+ {
+  "code": "74-057",
+  "a_dire": "Une symétrie de X est une isométrie f avec f(X) = X ; l’ensemble de ces symétries est Sym(X).",
+  "legende_titre": "Qui garde la figure en place",
+  "lecture": [
+   "Le carré bleu est la figure X.",
+   "À gauche, le quart de tour change la place des sommets mais le carré reste le même : c’est une symétrie.",
+   "Au milieu, le glissement envoie le carré en pointillés orange ailleurs : ce n’est pas une symétrie.",
+   "À droite, l’identité laisse chaque sommet à sa place : c’est une symétrie."
+  ],
+  "a_voir": "Seul ce qui renvoie le carré sur lui-même compte."
+ },
+ {
+  "code": "74-058",
+  "a_dire": "Composer deux symétries, prendre l’inverse ou l’identité envoie encore X sur X : Sym(X) est un groupe.",
+  "legende_titre": "Trois opérations qui restent dans le groupe",
+  "lecture": [
+   "À gauche, deux flèches orange de 90° se suivent et donnent 180° ; le point vert est l’arrivée.",
+   "Au milieu, la grande flèche orange de 270° est l’inverse d’un quart de tour.",
+   "À droite, l’identité : le point reste où il est, à 0°.",
+   "Dans les trois cas, le carré bleu est le même."
+  ],
+  "a_voir": "Chaque résultat est encore une rotation qui garde le carré."
+ },
+ {
+  "code": "74-059",
+  "a_dire": "Le groupe dépend de la figure : un point a tout O(2), l’étoile de mer 10 symétries, le F une seule.",
+  "legende_titre": "Trois figures, trois groupes",
+  "lecture": [
+   "À gauche, le point bleu est entouré de cercles : tout tour le laisse en place, donc tout O(2).",
+   "Au milieu, l’étoile de mer à cinq bras a 10 symétries.",
+   "À droite, la lettre F n’a qu’une symétrie : l’identité."
+  ],
+  "a_voir": "Moins la figure a de détails, plus son groupe est grand."
+ },
+ {
+  "code": "74-060",
+  "a_dire": "Le groupe C₄ est fait de 4 rotations d’angles 0°, 90°, 180°, 270° autour d’un même centre, sans miroir.",
+  "legende_titre": "Un moulinet qui retombe sur lui-même",
+  "lecture": [
+   "Chaque dessin montre le moulinet à quatre pales après une des 4 rotations.",
+   "La pale orange est la même pale suivie d’un dessin à l’autre.",
+   "Le point noir est le centre commun des rotations.",
+   "L’angle sous chaque dessin dit de combien on a tourné."
+  ],
+  "a_voir": "Le moulinet a la même forme à chaque fois, mais la pale orange change de place."
+ },
+ {
+  "code": "74-061",
+  "a_dire": "Le groupe D₃ du triangle a 3 rotations et 3 réflexions, soit 2n = 6 éléments.",
+  "legende_titre": "Rotations plus miroirs",
+  "lecture": [
+   "À gauche, les trois flèches orange sont les 3 rotations : 0°, 120°, 240°.",
+   "À droite, les trois lignes vertes sont les axes des 3 réflexions, tous par le centre.",
+   "Le triangle bleu est le même des deux côtés.",
+   "En bas, le total 3 + 3 = 6 est écrit 2n."
+  ],
+  "a_voir": "D₃ garde tout ce que fait C₃ et ajoute autant de miroirs."
+ },
+ {
+  "code": "74-062",
+  "a_dire": "Un groupe fini d’isométries du plan est un C_n ou un D_n ; un groupe infini n’est ni l’un ni l’autre.",
+  "legende_titre": "Seuls les groupes finis sont C ou D",
+  "lecture": [
+   "Le cadre vert du haut est le cas fini : à gauche des rotations seules, à droite un miroir.",
+   "Le cadre rouge du bas est un groupe infini : une bande de F qui se répète sans fin.",
+   "La flèche orange montre les glissements d’un F au suivant.",
+   "Les points de suspension disent que la bande ne s’arrête pas."
+  ],
+  "a_voir": "Le théorème ne vaut que pour les groupes finis."
+ },
+ {
+  "code": "74-063",
+  "a_dire": "Pour lire le groupe d’une lettre, on regarde s’il y a un miroir (D sinon C) et le demi-tour : F a C₁, N a C₂, A a D₁, H a D₂.",
+  "legende_titre": "Lire le groupe de quatre lettres",
+  "lecture": [
+   "Chaque colonne est une lettre ; son groupe est écrit en haut.",
+   "Une ligne verte en tirets est un axe de miroir : A en a un, H en a deux.",
+   "Un petit cercle orange au centre marque le demi-tour : N et H l’ont.",
+   "Les coches vertes répètent ces réponses ; le tiret gris veut dire non."
+  ],
+  "a_voir": "Miroir ou non donne la lettre, demi-tour ou non donne le nombre."
+ },
+ {
+  "code": "74-064",
+  "a_dire": "Le triangle, le carré, l’étoile de mer et le flocon ont pour groupes D₃, D₄, D₅, D₆ : le nombre est celui des pointes.",
+  "legende_titre": "Le nombre n lu sur la figure",
+  "lecture": [
+   "Chaque figure bleue a ses pointes marquées d’un disque orange.",
+   "Le triangle en a 3, le carré 4, l’étoile de mer 5, le flocon 6.",
+   "Sous chaque figure, le groupe D_n porte ce même nombre."
+  ],
+  "a_voir": "Le nombre de disques orange est le nombre n de D_n."
+ }
+]

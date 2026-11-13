@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 3, 36, 20, 20, 'sujet', label='dessin', size='m')
+text(ax, 13, 61, 'carreau carré', 'sujet', 's')
+arrow(ax, (24, 46), (30, 46), 'fixe')
+box(ax, 31, 18, 54, 50, 'resultat', fill=False, dash=True, lw=1.0)
+text(ax, 58, 64, 'liste de mouvements', 'resultat', 's')
+box(ax, 35, 44, 18, 11, 'varie', label='a'); box(ax, 63, 44, 18, 11, 'varie', label='b')
+arrow(ax, (53, 49.5), (63, 49.5), 'varie', both=False); text(ax, 58, 53.5, 'puis', 'varie', 's')
+box(ax, 44, 22, 28, 11, 'resultat', label='a puis b')
+arrow(ax, (72, 44), (66, 33.5), 'resultat'); arrow(ax, (44, 44), (50, 33.5), 'resultat')
+box(ax, 3, 3, 38, 9, 'sujet', label='bande : 7 listes', size='s'); box(ax, 47, 3, 38, 9, 'autre', label='papier peint : 17 listes', size='s')
+save(fig, '74-016')

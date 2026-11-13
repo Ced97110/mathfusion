@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 12, 76, 18, 1, 6, arrow_right=False, size='m')
+for n in (1, 2, 3, 4, 6): disc(ax, f(n), 25, 2.4, 'resultat', label=str(n), size='s')
+disc(ax, f(5), 25, 2.4, 'limite', label='5', size='s')
+text(ax, 44, 8, 'ordre de rotation n', 'fixe', 's')
+ax.plot([f(5), 64], [27.5, 36], color=COL['limite'], lw=0.8, ls='--', zorder=1)
+r = 10; cx, cy = 64, 46
+poly(ax, [(cx + r*math.sin(2*math.pi*k/5), cy + r*math.cos(2*math.pi*k/5)) for k in range(5)], 'autre')
+text(ax, cx, cy, r'$D_5$', 'autre', 'm')
+text(ax, 22, 52, 'papier qui se répète :', 'resultat', 's', ha='center')
+text(ax, 22, 48.5, 'n = 1, 2, 3, 4, 6', 'resultat', 's', ha='center')
+text(ax, 22, 38, 'pentagone seul : n = 5', 'autre', 's', ha='center')
+text(ax, 22, 34.5, 'pas permis sur un réseau', 'limite', 's', ha='center')
+save(fig, '74-085')
