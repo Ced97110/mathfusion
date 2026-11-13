@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+u = 12; ox, oy = 16, 8
+P = lambda x, y: (ox + x * u, oy + y * u)
+for i in range(-1, 4): line(ax, [P(i, -0.5), P(i, 3.5)], 'fixe', lw=0.2)
+for j in range(0, 4): line(ax, [P(-1, j), P(3, j)], 'fixe', lw=0.2)
+arrow(ax, P(-1, 0), P(3.4, 0), 'fixe', lw=0.7); arrow(ax, P(0, -0.5), P(0, 3.8), 'fixe', lw=0.7)
+arrow(ax, P(2, 0.8), P(0.05, 0.03), 'resultat', lw=1.4)
+arrow(ax, P(2, 0.8), P(1.2, 2.8), 'limite', lw=1.4)
+disc(ax, *P(2, 0.8), 1.2, 'sujet'); disc(ax, *P(0, 0), 1.2, 'resultat'); disc(ax, *P(1.2, 2.8), 1.2, 'limite')
+text(ax, *P(2.15, 0.8), 'v', 'sujet', 'm', ha='left')
+text(ax, *P(-0.25, -0.3), 'O', 'resultat', 'm')
+text(ax, *P(1.4, 3.2), '(1,2 ; 2,8)', 'limite', 's', ha='left')
+arrow(ax, (60, 38), (72, 38), 'resultat', lw=1.4)
+text(ax, 60, 33, "T² + 1 : l'origine", 'resultat', 's', ha='left')
+arrow(ax, (60, 22), (72, 22), 'limite', lw=1.4)
+text(ax, 60, 17, "T + 1 : pas l'origine", 'limite', 's', ha='left')
+save(fig, '57-014')

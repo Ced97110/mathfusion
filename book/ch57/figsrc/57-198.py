@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ox, oy, u = 44, 16, 10.0
+Pt = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [(ox - 34, oy), (ox + 38, oy)], 'fixe', lw=0.6)
+line(ax, [(ox, oy - 4), (ox, oy + 36)], 'fixe', lw=0.6)
+arrow(ax, Pt(0, 0), Pt(2, 0.8), 'sujet', lw=1.5)
+arrow(ax, Pt(0, 0), Pt(-0.8, 2), 'varie', lw=1.5)
+arrow(ax, Pt(1.1, 0.7), Pt(-0.5, 1.1), 'fixe', curve=0.45, lw=0.8)
+text(ax, 66, 34, r'$2+0{,}8\,i$', 'sujet', 's')
+text(ax, 66, 30, r'$=(2\,;\,0{,}8)$', 'sujet', 's')
+text(ax, 25, 54, r'$i\times(2+0{,}8\,i)=-0{,}8+2\,i$', 'varie', 's')
+text(ax, 25, 50, r'$=(-0{,}8\,;\,2)$', 'varie', 's')
+text(ax, 46, 36, r'$\times\, i$', 'fixe', 's')
+text(ax, 44, 7, 'quart de tour = multiplier par i', 'resultat', 's')
+save(fig, '57-198')

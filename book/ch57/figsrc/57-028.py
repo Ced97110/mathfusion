@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+u = 13; ox, oy = 30, 8
+P = lambda x, y: (ox + x * u, oy + y * u)
+for i in range(-2, 4): line(ax, [P(i, 0), P(i, 3.4)], 'fixe', lw=0.2)
+for j in range(0, 4): line(ax, [P(-2, j), P(3, j)], 'fixe', lw=0.2)
+arrow(ax, P(-2, 0), P(3.4, 0), 'fixe', lw=0.7); arrow(ax, P(0, 0), P(0, 3.8), 'fixe', lw=0.7)
+line(ax, [P(2, 1), P(1, 3)], 'autre', lw=1.3, dash=True); line(ax, [P(-1, 2), P(1, 3)], 'sujet', lw=1.3, dash=True)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.9)
+arrow(ax, P(0, 0), P(-1, 2), 'autre', lw=1.9)
+arrow(ax, P(0, 0), P(1, 3), 'resultat', lw=2.0)
+text(ax, *P(1.25, 0.25), 'v', 'sujet', 'm', weight='bold')
+text(ax, *P(-0.75, 1.05), 'w', 'autre', 'm', ha='right', weight='bold')
+text(ax, *P(-0.45, 2.85), 'v', 'sujet', 'm', weight='bold')
+text(ax, *P(1.85, 2.1), 'w', 'autre', 'm', ha='left', weight='bold')
+text(ax, *P(1.2, 3.35), 'v + w', 'resultat', 'm', ha='left', weight='bold')
+save(fig, '57-028')

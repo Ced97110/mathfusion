@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 55, r'$a_L\ :\ x\mapsto ax$', 'sujet', 'xl', weight='bold')
+box(ax, 2, 28, 40, 12, 'sujet', label='a : le nombre\nqui multiplie', size='s')
+box(ax, 46, 28, 40, 12, 'varie', label="L : a est écrit\nà gauche de x", size='s')
+arrow(ax, (30, 48), (22, 40.5), 'sujet')
+arrow(ax, (58, 48), (66, 40.5), 'varie')
+text(ax, 44, 20, 'avec a = 3 :', 'fixe', 's')
+box(ax, 2, 4, 40, 10, 'resultat', label='4 ↦ 3 × 4 = 12', size='s')
+box(ax, 46, 4, 40, 10, 'resultat', label='5 ↦ 3 × 5 = 15', size='s')
+save(fig, '57-060')

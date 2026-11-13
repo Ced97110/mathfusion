@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 53, 'une seule lettre pour tous', 'fixe', 's')
+text(ax, 22, 44, 'flèches du plan', 'fixe', 's')
+box(ax, 4, 32, 36, 9, 'varie', label='ℝ : les réels')
+text(ax, 22, 25, "couples d'entiers", 'fixe', 's')
+box(ax, 4, 13, 36, 9, 'varie', label='ℤ : les entiers')
+box(ax, 56, 18, 30, 24, 'sujet', label='$R$', size='l')
+arrow(ax, (41, 36.5), (55, 32), 'fixe')
+arrow(ax, (41, 17.5), (55, 28), 'fixe')
+text(ax, 71, 11, 'un anneau quelconque', 'sujet', 's')
+save(fig, '57-071')

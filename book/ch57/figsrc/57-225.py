@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 3, 4, 82, 82, 'sujet')
+text(ax, 44, 79, 'théorie des modules', 'sujet', 'l', weight='bold')
+box(ax, 9, 20, 70, 50, 'varie')
+text(ax, 44, 64, 'théorie des idéaux', 'varie', 'm', weight='bold')
+text(ax, 44, 54, 'idéal (6) = 6ℤ', 'encre', 'm')
+text(ax, 44, 46, '= sous-module de ℤ', 'encre', 'm')
+text(ax, 44, 37, 'quotient : ℤ/6ℤ', 'resultat', 'm')
+text(ax, 44, 29, 'horloge à 6 positions', 'resultat', 'm')
+text(ax, 44, 11, 'les mêmes théorèmes valent', 'sujet', 'm')
+save(fig, '57-225')

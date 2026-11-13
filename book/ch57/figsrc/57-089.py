@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+ox, oy, u = 20, 8, 8
+X = (ox + 2 * u, oy + 1 * u); Y = (ox - 1 * u, oy + 2 * u)
+S = (ox + 1 * u, oy + 3 * u); T = (ox + 6 * u, oy + 3 * u)
+line(ax, [X, S], 'fixe', dash=True); line(ax, [Y, S], 'fixe', dash=True)
+arrow(ax, (ox, oy), T, 'varie', lw=1.2)
+arrow(ax, (ox, oy), X, 'sujet', lw=1.4)
+arrow(ax, (ox, oy), Y, 'sujet', lw=1.4)
+arrow(ax, (ox, oy), S, 'resultat', lw=1.4)
+disc(ax, ox, oy, 1, 'encre')
+text(ax, 11, 29, 'y = (−1 ; 2)', 'sujet', 's')
+text(ax, 40, 10.5, 'x = (2 ; 1)', 'sujet', 's')
+text(ax, 31, 37, 'x + y = (1 ; 3)', 'resultat', 's')
+text(ax, 66, 37, '3x = (6 ; 3)', 'varie', 's')
+text(ax, 44, 3, 'ℝ² : flèches du plan', 'fixe', 's')
+save(fig, '57-089')

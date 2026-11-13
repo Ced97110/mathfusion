@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 2, 10, 84, 62, 'fixe')
+text(ax, 44, 66, r'$P$ : sous-module contenant $N_1$ et $N_2$', 'fixe', 's')
+box(ax, 10, 16, 68, 44, 'resultat')
+text(ax, 44, 54, r'$N_1+N_2$ : le plus petit', 'resultat', 's', weight='bold')
+box(ax, 18, 22, 52, 22, 'autre', dash=True)
+text(ax, 44, 38, r'$N_1\cup N_2$ : les deux côte à côte', 'autre', 's')
+text(ax, 44, 28, 'pas un sous-module', 'limite', 's')
+text(ax, 44, 4, r'$(m\,;\,n)=m\,(1\,;\,0)+n\,(0\,;\,1)\in P$', 'sujet', 's')
+save(fig, '57-136')

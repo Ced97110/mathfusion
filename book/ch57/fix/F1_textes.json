@@ -1,0 +1,106 @@
+{
+  "57-004": {
+    "lecture": [
+      "La boîte bleue est la ligne L1, la boîte violette est la ligne L2.",
+      "La première flèche orange est l'addition de deux lignes : L1 + L2 donne la boîte grise, 2x = 4.",
+      "La seconde flèche orange est la multiplication d'une ligne par un nombre : multiplier par un demi donne x = 2.",
+      "Dans L1, 2 + y = 3 : la boîte verte du bas donne y = 1."
+    ],
+    "a_voir": "Deux flèches orange, deux opérations : additionner des lignes, multiplier une ligne par un nombre."
+  },
+  "57-038": {
+    "lecture": [
+      "En haut, « endo » est en orange : l'arrivée est le départ. « homomorphisme » est en bleu : l'addition est respectée.",
+      "Première ligne : tripler va de ℤ vers ℤ, deux cases bleues identiques. C'est un endomorphisme.",
+      "Seconde ligne : « 14 devient 2 » va de ℤ vers ℤ/12ℤ, case violette. L'arrivée n'est pas le départ : ce n'est pas un endomorphisme."
+    ],
+    "a_voir": "Endo veut dire : la case d'arrivée est la même que la case de départ."
+  },
+  "57-042": {
+    "lecture": [
+      "En haut, s fait d'un geste g le geste « g puis g ».",
+      "La première ligne part de A B C : x puis y donne C A B (case bleue).",
+      "La case grise de gauche dit ce que s donnerait s'il respectait l'addition : s(x) puis s(y) est « ne rien faire », donc A B C.",
+      "La case violette de droite dit ce que s donne : « x puis y » deux fois, soit B C A.",
+      "Le signe rouge ≠ dit que les deux résultats sont différents : s n'est pas un endomorphisme."
+    ],
+    "a_voir": "A B C et B C A sont différents : s ne respecte pas l'addition."
+  },
+  "57-045": {
+    "lecture": [
+      "La case bleue du haut est le départ, avec x = 4 et y = 5. Les deux cases vertes du bas sont l'arrivée.",
+      "Les deux flèches grises sont la définition de la somme, puis le fait que η et ζ respectent l'addition.",
+      "Les deux flèches orange qui se croisent échangent deux termes : η(y) et ζ(x) changent de place. C'est l'étape qui porte le poids.",
+      "Dans la case du haut, 9 est envoyé sur 18 + 27, soit 45."
+    ],
+    "a_voir": "Les deux termes en orange changent de place : sans cet échange, on ne forme pas les deux paquets."
+  },
+  "57-047": {
+    "lecture": [
+      "Première étape, flèches grises : couper 18 et 27 en 8 + 10 et 12 + 15. Elle n'utilise que « respecter + ».",
+      "Seconde étape, flèches orange épaisses : regrouper en (8 + 12) et (10 + 15).",
+      "Les deux nombres en orange, 10 et 12, échangent leur place. C'est le seul endroit où l'on utilise a + b = b + a."
+    ],
+    "a_voir": "Une seule étape échange deux termes : c'est la seule qui utilise a + b = b + a."
+  },
+  "57-051": {
+    "lecture": [
+      "À gauche, ρ est tripler (η : doubler, ζ : ne rien changer). Les deux lignes de calcul donnent 36 : 36 = 36.",
+      "À droite, ρ est ajouter 1 (η et ζ : ne rien changer). La somme donne 8, puis ajouter 1 donne 9.",
+      "Toujours à droite, chaque règle séparée donne 5, et 5 + 5 = 10.",
+      "Le texte rouge dit que 9 et 10 sont différents."
+    ],
+    "a_voir": "À gauche les deux calculs sont égaux, à droite 9 et 10 sont différents."
+  },
+  "57-057": {
+    "lecture": [
+      "En haut, à gauche une règle sur ℤ², à droite une matrice.",
+      "Première ligne, en vert : la règle (3 ; 5) ↦ (6 ; 5) et la matrice à quatre entiers se correspondent, dans les deux sens.",
+      "Seconde ligne, en rouge : la matrice avec un demi donnerait (1 ; 0) ↦ (½ ; 0), un couple qui sort de ℤ². La correspondance est barrée."
+    ],
+    "a_voir": "Avec des entiers, règle et matrice se correspondent ; avec un demi, la correspondance casse."
+  },
+  "57-081": {
+    "lecture": [
+      "La colonne bleue de gauche liste les quatre règles du module, numérotées de 1 à 4.",
+      "La colonne violette de droite liste les quatre exigences sur η.",
+      "Chaque disque vert porte un numéro et relie la règle de même numéro à son exigence."
+    ],
+    "a_voir": "Chaque règle numérotée a, en face d'elle, une seule exigence sur η."
+  },
+  "57-085": {
+    "lecture": [
+      "En haut, la règle 2 : (a + b)x = ax + bx.",
+      "Premier cas, avec la règle 2 : le coefficient 0 envoie (2 ; 1) sur (0 ; 0). Dessous, 0x = (0 + 0)x = 0x + 0x.",
+      "Second cas, règle 2 retirée : l'action x ↦ x envoie (2 ; 1) sur (2 ; 1), en rouge. Ce n'est pas (0 ; 0)."
+    ],
+    "a_voir": "Avec la règle 2, 0x est l'objet nul ; sans elle, 0x peut valoir autre chose."
+  },
+  "57-088": {
+    "lecture": [
+      "En haut, les deux flèches : x = (2 ; 1) et y = (−1 ; 2).",
+      "Chaque cadre montre une règle sur des flèches, avec le résultat en vert.",
+      "Règle 1 : doubler la somme x + y donne (2 ; 6). Règle 2 : multiplier par 2 + 3 donne (10 ; 5).",
+      "Règle 3 : multiplier par 3 (orange) puis par 2 donne (12 ; 6). Règle 4 : multiplier par 1 ne change pas la flèche."
+    ],
+    "a_voir": "Chaque règle du module est un geste sur des flèches."
+  },
+  "57-099": {
+    "lecture": [
+      "Le cadre bleu est le départ : l'espace V avec la transformation T, et v = (2 ; 1).",
+      "Le cadre orange épais est l'étape clé : T commute avec les nombres de F. Ici T(3v) et 3(Tv) valent tous deux (−3 ; 6).",
+      "La flèche grise dit que l'on remplace x par T.",
+      "Les deux cadres verts sont l'arrivée : agir avec (x + 2) puis (x + 1), ou avec x² + 3x + 2 d'un coup, donne (−1 ; 7)."
+    ],
+    "a_voir": "La flèche orange nomme l'étape qui permet à un produit de polynômes d'être deux actions de suite."
+  },
+  "57-111": {
+    "lecture": [
+      "En haut, les règles A et B sur un couple (p ; q). Pour la ligne du haut, a = A et b = B.",
+      "À gauche, (ab)x = a(bx) : B agit en premier, puis A. De (1 ; 0) on passe à (1 ; 1), puis à (2 ; 1).",
+      "À droite, x(ab) = (xa)b : A agit en premier, puis B. De (1 ; 0) on passe à (1 ; 0), puis à (1 ; 1).",
+      "Le signe rouge ≠ dit que les deux arrivées sont différentes."
+    ],
+    "a_voir": "Les flèches portent 1er et 2e : à gauche et à droite, l'ordre des coefficients est inversé."
+  }
+}

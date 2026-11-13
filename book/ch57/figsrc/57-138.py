@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 78, r'$\langle S\rangle$', 'sujet', 30)
+box(ax, 2, 42, 38, 14, 'fixe', label='⟨ ⟩ : « engendré par »', size='s')
+box(ax, 48, 42, 38, 14, 'autre', label=r'$S$ : la partie de départ', size='s')
+arrow(ax, (21, 56), (34, 68), 'fixe', lw=1.0)
+arrow(ax, (67, 56), (46, 68), 'autre', lw=1.0)
+box(ax, 2, 4, 84, 30, 'resultat')
+text(ax, 44, 27, 'le plus petit sous-module', 'resultat', 'm')
+text(ax, 44, 20, r'qui contient $S$', 'resultat', 'm')
+text(ax, 44, 10, r'ici : multiples de $(2\,;\,1)$', 'encre', 's')
+save(fig, '57-138')

@@ -1,0 +1,218 @@
+[
+ {
+  "code": "57-211",
+  "a_dire": "La preuve part de y = (1/6)x, montre que 6y = x avec les règles 3 et 4, puis conclut x = 0 parce que 6y = 0 dans l'horloge à 6 positions.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle",
+  "lecture": [
+   "La case bleue du haut est le départ : l'élément y est un sixième de x.",
+   "Les deux cases orange montrent le calcul de 6y ; la case au cadre épais porte tout le poids, avec la règle 3 puis la règle 4.",
+   "La case verte de gauche donne 6y = x, la case grise de droite rappelle que 6y = 0 dans l'horloge à 6 positions.",
+   "La case verte du bas est l'arrivée : x = 0."
+  ],
+  "a_voir": "Deux chemins, 6y = x et 6y = 0, se rejoignent sur x = 0."
+ },
+ {
+  "code": "57-212",
+  "a_dire": "L'horloge à 6 positions est un module sur les entiers et sur elle-même, mais pas sur les rationnels : l'anneau choisi décide des groupes admis.",
+  "legende_titre": "Un anneau écarte certains groupes",
+  "lecture": [
+   "Le cercle bleu à gauche est l’horloge à 6 positions, avec ses 6 points.",
+   "Chaque ligne à droite teste un anneau (case orange) : les entiers, l’horloge à 6 positions, les rationnels.",
+   "Les cases vertes disent oui : les deux premiers anneaux conviennent.",
+   "La case rouge dit non : l’anneau des rationnels ne convient pas."
+  ],
+  "a_voir": "Un seul groupe, trois anneaux, un seul refus."
+ },
+ {
+  "code": "57-213",
+  "a_dire": "Avec la matrice à gauche, une colonne donne un produit ; avec la matrice à droite, une ligne donne un produit ; la colonne à gauche de la matrice ne donne rien.",
+  "legende_titre": "Colonnes et lignes face à la même matrice",
+  "lecture": [
+   "Les cases bleues sont toujours la même matrice, de lignes 1 2 et 0 3.",
+   "En haut, la colonne orange 4 ; 5 est placée à droite de la matrice : le produit vert est 14 ; 15.",
+   "Au milieu, la ligne orange 4 5 est placée à gauche de la matrice : le produit vert est 4 ; 23.",
+   "En bas, la colonne est placée à gauche de la matrice : la case rouge dit que le produit n'est pas défini."
+  ],
+  "a_voir": "Le côté où se trouve la matrice décide si le produit existe."
+ },
+ {
+  "code": "57-214",
+  "a_dire": "Appliquer B puis A ne donne pas le même résultat qu'appliquer A puis B : gauche et droite sont deux actions distinctes.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "Le texte du haut donne les deux matrices A et B.",
+   "Dans la rangée du haut, la colonne bleue 1 ; 0 passe par B puis par A et finit en 3 ; 3 (case verte).",
+   "Dans la rangée du bas, la même colonne passe par A puis par B et finit en 1 ; 1 (case violette).",
+   "Le signe au milieu dit que les deux résultats sont différents."
+  ],
+  "a_voir": "Le même départ, les mêmes matrices, mais une arrivée différente selon l'ordre."
+ },
+ {
+  "code": "57-215",
+  "a_dire": "Dans les couples d'entiers, le couple 3 ; 5 s'écrit d'une seule façon comme 3 fois le premier vecteur de base plus 5 fois le second.",
+  "legende_titre": "Une seule écriture pour chaque couple",
+  "lecture": [
+   "Les deux flèches bleues courtes sont les vecteurs de base e1 et e2, posés sur la grille des couples d'entiers.",
+   "Le chemin orange fait 3 pas dans le sens de e1, puis 5 pas dans le sens de e2.",
+   "La flèche verte va du départ au couple 3 ; 5 : c'est le même point que celui atteint par le chemin.",
+   "Le texte vert de droite écrit le couple comme 3 e1 plus 5 e2."
+  ],
+  "a_voir": "Les nombres 3 et 5 sont les seuls coefficients qui mènent au point 3 ; 5."
+ },
+ {
+  "code": "57-216",
+  "a_dire": "Une règle sur les couples d'entiers est connue par les images des deux vecteurs de base ; ces images forment les colonnes d'une matrice qui calcule la règle.",
+  "legende_titre": "De la règle au tableau de nombres",
+  "lecture": [
+   "Les deux cases du haut donnent les images des vecteurs de base : e1 va sur 1 ; 0 et e2 va sur 2 ; 3.",
+   "Les flèches les placent comme colonnes de la matrice bleue, de lignes 1 2 et 0 3.",
+   "Le texte orange applique la règle au couple 4 ; 5 : 4 fois la première image plus 5 fois la seconde.",
+   "Le texte vert donne le résultat 14 ; 15, le même que matrice fois colonne."
+  ],
+  "a_voir": "Deux images suffisent pour écrire la matrice et calculer toute image."
+ },
+ {
+  "code": "57-217",
+  "a_dire": "La somme de deux sous-modules est directe quand leur intersection est nulle : chaque élément s'écrit alors d'une seule façon.",
+  "legende_titre": "Le test de l'intersection",
+  "lecture": [
+   "En haut, la droite bleue et la droite orange sont les multiples de 1 ; 0 et de 0 ; 1 ; l'anneau vert marque leur seul point commun, 0 ; 0.",
+   "Les traits en pointillés décomposent le couple 3 ; 5 en un élément de chaque droite : une seule écriture.",
+   "En bas, les points bleus sont les multiples de 1 ; 0 et les anneaux violets ceux de 2 ; 0.",
+   "L'anneau rouge entoure 2 ; 0, commun aux deux, qui s'écrit de deux façons."
+  ],
+  "a_voir": "Intersection réduite à 0 : écriture unique ; sinon, au moins deux écritures."
+ },
+ {
+  "code": "57-218",
+  "a_dire": "Sur les entiers, le module des couples regroupés par les multiples de 2 ; 0 se découpe en deux pièces : l'horloge à 2 positions et les entiers.",
+  "legende_titre": "Un module découpé en pièces simples",
+  "lecture": [
+   "La case bleue du haut est le module de départ.",
+   "La pièce verte de gauche est l'horloge à 2 positions : deux classes, 0 et 1.",
+   "La pièce verte de droite est la droite des entiers : chaque entier reste seul dans sa classe.",
+   "Le signe plus entouré entre les deux pièces dit que le module est leur somme directe."
+  ],
+  "a_voir": "Deux pièces, chacune est un quotient des entiers par un seul générateur : 2 et 0."
+ },
+ {
+  "code": "57-219",
+  "a_dire": "Dans les couples d'entiers divisés par les multiples de 3 ; 0, une classe se lit par un reste modulo 3 et un entier : une horloge à 3 positions et les entiers.",
+  "legende_titre": "Lire une classe avec deux informations",
+  "lecture": [
+   "Les points sont les couples d'entiers ; les chiffres sous la grille donnent le premier nombre et le chiffre à gauche donne le second nombre de la rangée marquée.",
+   "Les deux points verts, 1 ; 2 et 4 ; 2, sont reliés par la flèche orange + (3 ; 0) : ils sont dans la même classe.",
+   "La case du haut à droite donne le reste du premier nombre divisé par 3.",
+   "La case du bas donne le second nombre."
+  ],
+  "a_voir": "Deux couples qui diffèrent d'un multiple de 3 ; 0 ont le même reste et le même second nombre."
+ },
+ {
+  "code": "57-220",
+  "a_dire": "Les couples 7 ; 4 et 3 ; 4 sont dans la même classe, repérée par le reste 1 et l'entier 4 : une horloge à 2 positions et les entiers.",
+  "legende_titre": "Un calcul fait à la main",
+  "lecture": [
+   "La case bleue et la case violette sont les deux couples 7 ; 4 et 3 ; 4.",
+   "Le texte orange montre leur différence, 4 ; 0, égale à 2 fois 2 ; 0 : ils sont dans la même classe.",
+   "Les deux cases du milieu donnent le reste dans la division par 2 : 1 dans les deux cas.",
+   "La case verte du bas réunit le reste 1 et le second nombre 4 : c'est le repère de la classe."
+  ],
+  "a_voir": "Deux informations, un reste et un entier, suffisent à distinguer les classes."
+ },
+ {
+  "code": "57-221",
+  "a_dire": "Une même transformation a une matrice qui dépend de la base ; dans une base bien choisie, la matrice devient la plus simple possible, la forme canonique.",
+  "legende_titre": "La même transformation dans deux bases",
+  "lecture": [
+   "La case bleue est la matrice de lignes 1 2 et 0 3, dans la base usuelle.",
+   "La flèche orange change de base sans changer la transformation.",
+   "La case verte est la nouvelle matrice, de lignes 1 0 et 0 3 : seuls 1 et 3 restent non nuls.",
+   "Les textes dessous donnent les images des vecteurs de chaque base."
+  ],
+  "a_voir": "Changer de base fait disparaître le 2 de la matrice."
+ },
+ {
+  "code": "57-222",
+  "a_dire": "Le quart de tour et le cisaillement sont distingués par leurs annulateurs : x² + 1 pour l'un, (x − 1)² pour l'autre.",
+  "legende_titre": "Deux transformations, deux polynômes",
+  "lecture": [
+   "À gauche, v = (0 ; 1) (bleu) ; les flèches orange sont Tv = (−1 ; 0) puis T²v = (0 ; −1).",
+   "En ajoutant v à T²v, vous obtenez (0 ; 0) : le polynôme x² + 1 annule v.",
+   "À droite, le même v (violet) ; la flèche orange est Sv = (1 ; 1) ; la flèche verte va de v à Sv et vaut (1 ; 0).",
+   "Appliquer une seconde fois « image moins départ » à (1 ; 0) donne (0 ; 0) : le polynôme (x − 1)² annule v."
+  ],
+  "a_voir": "Sur le même vecteur v, chaque transformation a son propre polynôme qui l’annule."
+ },
+ {
+  "code": "57-223",
+  "a_dire": "Les groupes abéliens de type fini et les transformations linéaires sont deux valeurs de R dans la même formule Rx ≅ R/ann x.",
+  "legende_titre": "Une formule, deux théories",
+  "lecture": [
+   "La case du haut écrit la formule commune.",
+   "La colonne bleue prend les entiers : x est la classe de 1 ; 0, son annulateur est l'idéal engendré par 2 et le résultat est l'horloge à 2 positions.",
+   "La colonne violette prend les polynômes réels : x est le vecteur 2 ; 0,8, son annulateur est l'idéal engendré par x² + 1 et le résultat est celui des nombres complexes.",
+   "Les cases vertes sont les résultats des deux cas."
+  ],
+  "a_voir": "Les deux colonnes suivent les mêmes quatre lignes, seul R change."
+ },
+ {
+  "code": "57-224",
+  "a_dire": "Les multiples de 6 forment à la fois un idéal et un sous-module des entiers vus comme module sur eux-mêmes ; le quotient par cet idéal est un module quotient.",
+  "legende_titre": "Un idéal est un sous-module",
+  "lecture": [
+   "Sur la droite des entiers, les gros points bleus sont les multiples de 6 ; les petits points gris sont les autres entiers.",
+   "Les anneaux verts entourent 18 et 24 : 6 + 12 donne 18 et 4 fois 6 donne 24, des multiples de 6.",
+   "Les deux textes verts disent que cet ensemble est stable par addition et par multiplication par un entier.",
+   "L'accolade grise couvre un tour de 6 entiers : les restes 0 à 5 du quotient."
+  ],
+  "a_voir": "Les multiples de 6 restent entre eux par addition et par multiplication."
+ },
+ {
+  "code": "57-225",
+  "a_dire": "La théorie des idéaux est un cas particulier de celle des modules : l'idéal engendré par 6 est un sous-module des entiers, et ses quotients sont des modules quotients.",
+  "legende_titre": "Les idéaux dans les modules",
+  "lecture": [
+   "Le grand cadre bleu est la théorie des modules.",
+   "Le cadre orange, à l'intérieur, est la théorie des idéaux : il est contenu dans le grand cadre.",
+   "Dans le cadre orange, l'idéal engendré par 6 est un sous-module des entiers, et son quotient est l'horloge à 6 positions (texte vert).",
+   "Le texte du bas dit que les théorèmes des modules valent pour les idéaux."
+  ],
+  "a_voir": "Les idéaux sont un cadre plus petit, entièrement à l'intérieur de celui des modules."
+ },
+ {
+  "code": "57-226",
+  "a_dire": "Une forme bilinéaire envoie deux vecteurs sur un nombre et est linéaire dans chaque entrée ; une forme quadratique prend un seul vecteur et l'utilise des deux côtés.",
+  "legende_titre": "Linéaire dans chaque entrée",
+  "lecture": [
+   "La case bleue donne la forme sur 1 ; 2 et 3 ; 4 : 1×3 + 2×4 = 11.",
+   "La première case orange double le premier vecteur : le résultat 22 est le double de 11.",
+   "La seconde case orange additionne 1 ; 2 et 0 ; 1 en 1 ; 3 : le résultat 15 est la somme de 11 et de 4.",
+   "La case violette prend un seul vecteur, 1 ; 2, des deux côtés : 1×1 + 2×2 = 5."
+  ],
+  "a_voir": "Doubler ou additionner un vecteur double ou additionne le résultat."
+ },
+ {
+  "code": "57-227",
+  "a_dire": "Dans le cas, 2 ; 1 n'est pas dans les multiples de 4 ; 2 mais son double y est ; le cas ne dit pas ce qui, dans 4 et 2, fixe la partie finie du quotient.",
+  "legende_titre": "Un indice, pas la règle",
+  "lecture": [
+   "Les points bleus sont les multiples de 4 ; 2, en partant de 0 ; 0.",
+   "Le point orange est 2 ; 1 : il n'est pas un point bleu.",
+   "Les deux flèches orange mises bout à bout mènent de 0 ; 0 à 4 ; 2 : doubler 2 ; 1 donne un point bleu.",
+   "La dernière ligne pose la question qui reste ouverte."
+  ],
+  "a_voir": "Une classe non nulle devient nulle quand on la double, mais le cas ne dit pas pourquoi."
+ },
+ {
+  "code": "57-228",
+  "a_dire": "Pour les multiples de 2 ; 0, de 3 ; 0 et de 2 ; 1, la partie finie du quotient est une horloge à 2 positions, une horloge à 3 positions, ou aucune ; il faut deviner quelle lecture du couple prévoit cela.",
+  "legende_titre": "Trois couples, trois quotients",
+  "lecture": [
+   "Chaque case bleue de gauche est le couple qui engendre le sous-module par lequel on divise.",
+   "Chaque case de droite donne la partie finie du quotient : une horloge à 2 positions, une horloge à 3 positions, puis aucune (case grise).",
+   "Le texte orange pose la question : que lire dans le couple pour le prévoir ?",
+   "La case orange en pointillés demande la règle ; la case violette demande ce qu'elle devient avec deux couples."
+  ],
+  "a_voir": "Trois cas, une règle encore inconnue à deviner."
+ }
+]

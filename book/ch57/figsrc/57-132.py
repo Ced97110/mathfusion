@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+u = 10.0; ox, oy = 8.0, 18.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(0, 0), P(7.3, 0)], 'sujet', lw=1.4)
+line(ax, [P(0, 0), P(3.4, 3.4)], 'autre', lw=1.4)
+for (x, y), r in [((3, 0), 'sujet'), ((6, 0), 'resultat'), ((1, 1), 'autre'), ((2, 1), 'limite')]:
+    disc(ax, *P(x, y), 1.4, r)
+arrow(ax, (P(3, 0)[0] + 1.8, oy + 2), (P(6, 0)[0] - 1.8, oy + 2), 'varie', curve=-0.4)
+arrow(ax, (P(1, 1)[0] + 1.8, P(1, 1)[1]), (P(2, 1)[0] - 1.8, P(2, 1)[1]), 'varie')
+text(ax, P(4.5, 0)[0], oy + 8.5, r'$T$', 'varie', 's')
+text(ax, P(1.5, 1)[0], P(1, 1)[1] - 3.6, r'$T$', 'varie', 's')
+text(ax, P(3, 0)[0], oy - 4.5, r'$(3\,;\,0)$', 'sujet', 's')
+text(ax, P(6, 0)[0], oy - 4.5, r'$(6\,;\,0)$', 'resultat', 's')
+text(ax, P(1, 1)[0] - 7, P(1, 1)[1] + 4, r'$(1\,;\,1)$', 'autre', 's')
+text(ax, P(2, 1)[0] + 7, P(2, 1)[1] + 0.5, r'$(2\,;\,1)$', 'limite', 's')
+text(ax, P(5.2, 0)[0], oy - 11, r'$W$ : les $(p\,;\,0)$ : reste dessus', 'sujet', 's')
+text(ax, P(3.4, 3.4)[0] + 14, P(3.4, 3.4)[1] + 3, r'les $(p\,;\,p)$ : sort', 'autre', 's')
+text(ax, 44, 61, r'$T$ : $(p\,;\,q)\mapsto(2p\,;\,q)$', 'encre', 'm')
+save(fig, '57-132')

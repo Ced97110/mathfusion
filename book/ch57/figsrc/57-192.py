@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+cx, cy, u = 44, 44, 8.0
+O = (cx, cy)
+Pt = lambda x, y: (cx + x * u, cy + y * u)
+line(ax, [(cx - 22, cy), (cx + 24, cy)], 'fixe', lw=0.6)
+line(ax, [(cx, cy - 12), (cx, cy + 20)], 'fixe', lw=0.6)
+arrow(ax, O, Pt(2, 0.8), 'sujet', lw=1.5)
+arrow(ax, O, Pt(-0.8, 2), 'varie', lw=1.5)
+arrow(ax, O, Pt(-2, -0.8), 'varie', lw=1.5)
+arrow(ax, Pt(1.2, 0.5), Pt(-0.4, 1.2), 'fixe', curve=0.45, lw=0.8)
+text(ax, 62, 56, r'$v=(2\,;\,0{,}8)$', 'sujet', 's')
+text(ax, 31, 65, r'$Tv=(-0{,}8\,;\,2)$', 'varie', 's')
+text(ax, 25, 32, r'$T^2v=(-2\,;\,-0{,}8)$', 'varie', 's')
+text(ax, 47, 56, 'T', 'fixe', 's')
+box(ax, 4, 6, 80, 12, 'resultat', label=r'$(x^2+1)\,v = T^2v+v = (0\,;\,0)$', size='s')
+save(fig, '57-192')

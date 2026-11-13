@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+u = 9; ox, oy = 20, 8
+P = lambda x, y: (ox + x * u, oy + y * u)
+for i in range(-2, 4): line(ax, [P(i, 0), P(i, 4)], 'fixe', lw=0.2)
+for j in range(0, 5): line(ax, [P(-2, j), P(3, j)], 'fixe', lw=0.2)
+arrow(ax, P(-2, 0), P(3.5, 0), 'fixe', lw=0.7); arrow(ax, P(0, 0), P(0, 4.4), 'fixe', lw=0.7)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.3)
+arrow(ax, P(2, 1), P(1, 3), 'autre', lw=1.3)
+arrow(ax, P(0, 0), P(1, 3), 'resultat', lw=1.6)
+text(ax, *P(1.3, 0.1), '(2, 1)', 'sujet', 's')
+text(ax, *P(2.25, 2.1), '(−1, 2)', 'autre', 's', ha='left')
+text(ax, *P(0.1, 3.7), '(1, 3)', 'resultat', 'm', ha='right')
+text(ax, 55, 36, '1er : 2 + (−1) = 1', 'encre', 's', ha='left')
+text(ax, 55, 28, '2e : 1 + 2 = 3', 'encre', 's', ha='left')
+text(ax, 44, 48, '(2, 1) + (−1, 2) = (1, 3)', 'resultat', 'm')
+save(fig, '57-002')

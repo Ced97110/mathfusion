@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 63, '3, 2 et x = (2 ; 1)', 'fixe', 's')
+text(ax, 22, 53, "action normale\n(règle 2 vraie)", 'sujet', 's')
+text(ax, 66, 53, "action $a\\cdot a\\cdot x$\n(règle 2 fausse)", 'autre', 's')
+box(ax, 2, 32, 40, 10, 'sujet', label=r'$(3+2)x=(10;5)$')
+box(ax, 2, 10, 40, 10, 'sujet', label=r'$3x+2x=(10;5)$')
+text(ax, 22, 26, '=', 'resultat', 'l', weight='bold')
+box(ax, 46, 32, 40, 10, 'autre', label=r'$(3+2)x=(50;25)$')
+box(ax, 46, 10, 40, 10, 'autre', label=r'$3x+2x=(26;13)$')
+text(ax, 66, 26, r'$\neq$', 'limite', 'l', weight='bold')
+save(fig, '57-068')

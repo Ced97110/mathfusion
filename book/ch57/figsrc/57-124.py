@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+u = 9.0; ox, oy = 40.0, 34.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(-2.7, -1.35), P(2.7, 1.35)], 'fixe', dash=True)
+Y, Z, Ym = P(2, 1), P(0, 0), P(-2, -1)
+arrow(ax, (Y[0] - 1.5, Y[1] + 1.0), (Z[0] + 1.5, Z[1] + 1.2), 'varie', curve=0.35)
+arrow(ax, (Y[0] - 1.5, Y[1] - 1.0), (Ym[0] + 1.5, Ym[1] - 1.2), 'varie', curve=-0.3)
+disc(ax, *Y, 1.6, 'sujet'); disc(ax, *Z, 1.6, 'resultat'); disc(ax, *Ym, 1.6, 'resultat')
+text(ax, 40, 59, 'zéro et opposé par l’action', 'encre', 'm')
+text(ax, Y[0], Y[1] + 5, r'$y=(2\,;\,1)$', 'sujet', 's')
+text(ax, 50, 47, r'$\times 0$', 'varie', 's')
+text(ax, 62, 25, r'$\times(-1)$', 'varie', 's')
+text(ax, 38, 41, r'$0 = 0\cdot y$', 'resultat', 's')
+text(ax, 20, 19, r'$-y=(-1)\cdot y$', 'resultat', 's')
+text(ax, 44, 6, r'$N$ : multiples de $(2\,;\,1)$', 'sujet', 's')
+save(fig, '57-124')

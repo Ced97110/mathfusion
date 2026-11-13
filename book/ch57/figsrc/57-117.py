@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 20, 68, '$R$', 'sujet', 'xl')
+text(ax, 68, 68, 'R°', 'autre', 'xl')
+box(ax, 2, 28, 36, 32, 'sujet', label='produit de $A$ par $B$ :\n$A$ après $B$\n(1 ; 0) ↦ (2 ; 1)', size='s')
+box(ax, 50, 28, 36, 32, 'autre', label='produit de $A$ par $B$ :\n$B$ après $A$ de $R$\n(1 ; 0) ↦ (1 ; 1)', size='s')
+arrow(ax, (38.5, 44), (49.5, 44), 'varie', both=True)
+text(ax, 44, 22, 'mêmes éléments, mêmes sommes', 'fixe', 's')
+box(ax, 2, 4, 84, 14, 'resultat', label='module à droite sur $R$ =\nmodule à gauche sur R°', size='s')
+save(fig, '57-117')

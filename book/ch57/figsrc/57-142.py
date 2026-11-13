@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+u = 7.8; ox, oy = 5.0, 14.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(0, -0.5), P(7.5, 3.25)], 'autre', lw=1.2)       # classe de (1;0)
+line(ax, [P(2, -0.5), P(10.5, 3.75)], 'resultat', lw=1.2)   # classe de (3;0)
+x1, x2, y1, y2 = P(1, 0), P(3, 1), P(3, 0), P(9, 3)
+for p, r in [(x1, 'autre'), (x2, 'autre'), (y1, 'resultat'), (y2, 'resultat')]:
+    disc(ax, *p, 1.2, r)
+arrow(ax, (x1[0] + 1.5, x1[1] - 0.6), (y1[0] - 1.6, y1[1] + 0.2), 'varie', lw=1.2, curve=0.4)
+arrow(ax, (x2[0] + 1.5, x2[1] + 0.2), (y2[0] - 1.8, y2[1] - 0.6), 'varie', lw=1.2, curve=-0.2)
+text(ax, P(2.3, 0)[0] - 1, P(2.3, 0)[1] - 5.5, r'$\times 3$', 'varie', 's')
+text(ax, P(6, 2.1)[0] - 2, P(6, 2.1)[1] + 4.5, r'$\times 3$', 'varie', 's')
+text(ax, x1[0] - 1, x1[1] - 4.5, r'$x_1=(1\,;\,0)$', 'autre', 's')
+text(ax, x2[0] - 4, x2[1] + 5.5, r'$x_2=(3\,;\,1)$', 'autre', 's')
+text(ax, y1[0] + 4, y1[1] - 5.8, r'$3x_1=(3\,;\,0)$', 'resultat', 's')
+text(ax, y2[0] + 1, y2[1] + 5.2, r'$3x_2=(9\,;\,3)$', 'resultat', 's')
+text(ax, 22, 52, r'$x_2-x_1=(2\,;\,1)\in N$', 'autre', 's')
+text(ax, 66, 8, r'$3x_2-3x_1=(6\,;\,3)\in N$', 'resultat', 's')
+text(ax, 44, 59, 'même classe avant, même classe après', 'encre', 's')
+save(fig, '57-142')

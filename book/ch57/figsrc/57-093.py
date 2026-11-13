@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 14, 63, 60, 9, 'varie', label='un théorème sur les modules', size='s')
+box(ax, 2, 2, 84, 56, 'fixe')
+text(ax, 6, 53, 'théorie des modules', 'fixe', 's', ha='left')
+box(ax, 8, 6, 72, 40, 'sujet')
+text(ax, 12, 41, 'anneau ℤ = groupes abéliens', 'sujet', 's', ha='left')
+box(ax, 14, 10, 60, 16, 'resultat', label='l’horloge à 12 heures', size='m')
+arrow(ax, (70, 62.5), (70, 27), 'varie', lw=1.4)
+text(ax, 67, 52, 'sans nouvelle preuve', 'varie', 's', ha='right')
+save(fig, '57-093')

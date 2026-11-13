@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+text(ax, 20, 80, 'endo', 'varie', 'xl', weight='bold')
+text(ax, 62, 80, 'homomorphisme', 'sujet', 'xl', weight='bold')
+text(ax, 20, 73, 'arrivée = départ', 'varie', 's')
+text(ax, 62, 73, 'l’addition est respectée', 'sujet', 's')
+line(ax, [(2, 68), (86, 68)], 'fixe', lw=0.5)
+# ligne 1 : tripler, Z -> Z : les deux cases sont la même
+box(ax, 4, 46, 18, 11, 'sujet', label=r'$\mathbb{Z}$', size='l')
+box(ax, 54, 46, 18, 11, 'sujet', label=r'$\mathbb{Z}$', size='l')
+arrow(ax, (22.5, 51.5), (53.5, 51.5), 'varie', lw=1.2)
+text(ax, 38, 55, 'tripler', 'varie', 's')
+text(ax, 44, 40, 'endo : arrivée = départ', 'resultat', 's')
+line(ax, [(2, 34), (86, 34)], 'fixe', lw=0.5)
+# ligne 2 : lire l'heure, Z -> Z/12Z : deux ensembles différents
+box(ax, 4, 12, 18, 11, 'sujet', label=r'$\mathbb{Z}$', size='l')
+box(ax, 54, 12, 26, 11, 'autre', label=r'$\mathbb{Z}/12\mathbb{Z}$', size='m')
+arrow(ax, (22.5, 17.5), (53.5, 17.5), 'varie', lw=1.2)
+text(ax, 38, 21, '14 devient 2', 'varie', 's')
+text(ax, 44, 6, 'pas endo : arrivée ≠ départ', 'limite', 's')
+save(fig, '57-038')

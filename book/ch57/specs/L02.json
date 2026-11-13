@@ -1,0 +1,347 @@
+[
+ {
+  "code": "57-031",
+  "a_dire": "La flèche reste la même ; seul l'ensemble des nombres permis pour la multiplier change (ℝ, puis ℤ).",
+  "legende_titre": "Une flèche, deux ensembles de nombres",
+  "lecture": [
+   "La flèche grise, qui arrive en 2 ; 1, ne bouge pas.",
+   "Les deux cases orange ℝ et ℤ sont les ensembles de coefficients : c'est ce qui change.",
+   "Avec ℝ, la case verte dit que ½ est permis. Avec ℤ, la case rouge dit que ½ est interdit.",
+   "Avec ℤ, la case verte dit que 2 et 3 passent."
+  ],
+  "a_voir": "La flèche grise est unique ; les nombres permis dépendent de la case orange."
+ },
+ {
+  "code": "57-032",
+  "a_dire": "La figure vient avant la définition, parce que les quatre règles se vérifient sur les flèches.",
+  "legende_titre": "Les flèches d'abord, les règles ensuite",
+  "lecture": [
+   "À gauche, la flèche bleue v et la flèche violette w ont pour somme la flèche verte v + w.",
+   "Les pointillés gris complètent le parallélogramme dont v + w est la diagonale.",
+   "À droite, trois cases se suivent dans l'ordre : la figure, puis les quatre règles, puis leur vérification sur les flèches."
+  ],
+  "a_voir": "Le dessin de gauche est déjà là quand les règles arrivent."
+ },
+ {
+  "code": "57-033",
+  "a_dire": "Doubler la diagonale de v et w donne le même point que doubler chaque côté puis prendre la diagonale : 2(v + w) = 2v + 2w.",
+  "legende_titre": "Deux chemins vers le même point",
+  "lecture": [
+   "La flèche bleue v arrive en 2 ; 1 et la flèche violette w arrive en moins 1 ; 2.",
+   "Les flèches orange 2v et 2w sont les côtés doublés, et la flèche verte 2(v + w) est la diagonale doublée.",
+   "Les pointillés gris sont les côtés des parallélogrammes ; ils se rejoignent au bout de la flèche verte, en 2 ; 6."
+  ],
+  "a_voir": "La diagonale des côtés doublés finit au bout de la flèche verte."
+ },
+ {
+  "code": "57-034",
+  "a_dire": "Deux calculs sur les coordonnées donnent le même couple 2 ; 6 pour cette égalité, avec ces flèches et le nombre 2.",
+  "legende_titre": "Deux calculs, un seul couple",
+  "lecture": [
+   "La colonne de gauche additionne d'abord 2 ; 1 et moins 1 ; 2, puis double le résultat 1 ; 3.",
+   "La colonne de droite double d'abord chaque flèche, puis additionne 4 ; 2 et moins 2 ; 4.",
+   "La case verte du bas montre que les deux colonnes arrivent au même couple, 2 ; 6."
+  ],
+  "a_voir": "Les deux colonnes finissent dans la même case verte."
+ },
+ {
+  "code": "57-035",
+  "a_dire": "Les entiers, les couples d'entiers, les couples de réels et les heures d'une horloge de 12 heures sont quatre ensembles où l'on additionne.",
+  "legende_titre": "Quatre ensembles où l'on additionne",
+  "lecture": [
+   "Chaque cadre est un ensemble ; son nom est écrit en bleu.",
+   "Chaque somme écrite en vert est un cas chiffré : 5 + 9 = 14, puis 2 ; 1 plus 6 ; 3 égale 8 ; 4, puis 1,5 ; 2 plus 0,5 ; 1 égale 2 ; 3.",
+   "Sur l'horloge, le point orange est 9 heures et le point vert est 2 heures, que l'on atteint en ajoutant 5 heures."
+  ],
+  "a_voir": "Quatre ensembles différents, la même idée : une addition."
+ },
+ {
+  "code": "57-036",
+  "a_dire": "Un endomorphisme est une règle de M dans M qui respecte l'addition : additionner avant ou après la règle donne le même résultat.",
+  "legende_titre": "Une règle qui respecte l'addition",
+  "lecture": [
+   "La case bleue 4 ; 5 est le départ, dans M.",
+   "Les flèches orange sont la règle « tripler » : 4 ; 5 devient 12 ; 15, puis 9 devient 27.",
+   "Les flèches grises additionnent : 4 plus 5 donne 9, et 12 plus 15 donne 27.",
+   "Les deux chemins arrivent à la même case verte, 27."
+  ],
+  "a_voir": "Tripler puis additionner, ou additionner puis tripler : même résultat."
+ },
+ {
+  "code": "57-037",
+  "a_dire": "Quand on change les nombres, l'égalité η(x + y) = η(x) + η(y) reste vraie pour la règle « tripler ».",
+  "legende_titre": "Trois paires, la même égalité",
+  "lecture": [
+   "Chaque ligne commence par une paire de nombres, en bleu : 4 et 5, puis 2 et 7, puis 10 et moins 3.",
+   "La case orange du milieu applique la règle à la somme.",
+   "La case orange de droite additionne les images.",
+   "Le signe égal vert entre les deux montre que les résultats sont égaux sur chaque ligne."
+  ],
+  "a_voir": "Les nombres changent d'une ligne à l'autre, pas l'égalité."
+ },
+ {
+  "code": "57-038",
+  "a_dire": "Le mot endomorphisme se coupe en deux : « homomorphisme » dit que l'addition est respectée, « endo » dit que l'arrivée est le même ensemble que le départ.",
+  "legende_titre": "Le mot coupé en deux",
+  "lecture": [
+   "En haut, « endo » est en orange : l'arrivée est le départ. « homomorphisme » est en bleu : l'addition est respectée.",
+   "Première ligne : tripler va de ℤ vers ℤ, deux cases bleues identiques. C'est un endomorphisme.",
+   "Seconde ligne : « 14 devient 2 » va de ℤ vers ℤ/12ℤ, case violette. L'arrivée n'est pas le départ : ce n'est pas un endomorphisme."
+  ],
+  "a_voir": "Endo veut dire : la case d'arrivée est la même que la case de départ."
+ },
+ {
+  "code": "57-039",
+  "a_dire": "La règle x ↦ 3x respecte l'addition sur ℤ : tripler une somme revient à additionner les triples, vérifié sur deux paires.",
+  "legende_titre": "Tripler respecte l'addition",
+  "lecture": [
+   "La case bleue du haut est la règle x ↦ 3x sur ℤ.",
+   "Pour la paire 4 et 5, tripler la somme donne 27, et additionner les triples 12 et 15 donne aussi 27.",
+   "Pour la paire 7 et moins 2, les deux cases donnent 15.",
+   "Le signe égal vert relie les deux calculs de chaque paire."
+  ],
+  "a_voir": "Dans chaque colonne, les deux cases orange donnent le même nombre."
+ },
+ {
+  "code": "57-040",
+  "a_dire": "La règle « ajouter 1 » n'est pas un endomorphisme : sur la paire 4 et 5, additionner puis ajouter 1 donne 10, ajouter 1 puis additionner donne 11.",
+  "legende_titre": "Un cas suffit pour refuser",
+  "lecture": [
+   "La case bleue 4 ; 5 est la paire de départ, écrite deux fois.",
+   "La ligne du haut ajoute 1 à chaque nombre, puis additionne : elle arrive à 11.",
+   "La ligne du bas additionne d'abord, puis ajoute 1 : elle arrive à 10.",
+   "Le texte rouge dit que 11 et 10 sont différents."
+  ],
+  "a_voir": "Les deux chemins n'arrivent pas au même nombre."
+ },
+ {
+  "code": "57-041",
+  "a_dire": "End M est le nom de l'ensemble de tous les endomorphismes de M, traité comme un seul objet.",
+  "legende_titre": "Un nom pour toutes les règles",
+  "lecture": [
+   "Le grand cadre bleu est l'ensemble nommé End ℤ.",
+   "Les quatre cases grises sont des règles qui respectent l'addition : tripler, doubler, ne rien changer, tout envoyer sur 0.",
+   "Le texte du haut dit qu'un seul nom désigne toutes ces règles à la fois."
+  ],
+  "a_voir": "Les quatre règles sont dans le même cadre, sous le même nom."
+ },
+ {
+  "code": "57-042",
+  "a_dire": "Si M n'est pas abélien, l'ensemble des endomorphismes ne reste plus un anneau : sur trois cartes, la règle « geste suivi de lui-même » casse l'addition.",
+  "legende_titre": "Que se passe-t-il sans l'hypothèse ?",
+  "lecture": [
+   "En haut, s fait d'un geste g le geste « g puis g ».",
+   "La première ligne part de A B C : x puis y donne C A B (case bleue).",
+   "La case grise de gauche dit ce que s donnerait s'il respectait l'addition : s(x) puis s(y) est « ne rien faire », donc A B C.",
+   "La case violette de droite dit ce que s donne : « x puis y » deux fois, soit B C A.",
+   "Le signe rouge ≠ dit que les deux résultats sont différents : s n'est pas un endomorphisme."
+  ],
+  "a_voir": "A B C et B C A sont différents : s ne respecte pas l'addition."
+ },
+ {
+  "code": "57-043",
+  "a_dire": "La somme de deux endomorphismes applique chacun à x, puis additionne les deux résultats.",
+  "legende_titre": "Appliquer les deux, puis additionner",
+  "lecture": [
+   "Chaque case bleue à gauche est un nombre de départ : 4, puis 5.",
+   "Les deux cases orange du milieu sont ses images par doubler (en haut) et par tripler (en bas).",
+   "Les flèches vertes réunissent ces deux images dans la case verte : 8 plus 12 donne 20, 10 plus 15 donne 25."
+  ],
+  "a_voir": "Chaque nombre part en deux images, qui se réunissent par une addition."
+ },
+ {
+  "code": "57-044",
+  "a_dire": "Dans la composée ηζ, on applique d'abord ζ, puis η au résultat ; l'ordre des actions reste le même quand on change les nombres.",
+  "legende_titre": "Appliquer l'une, puis l'autre",
+  "lecture": [
+   "Les cases bleues à gauche sont les départs : 4, puis 5.",
+   "Les cases orange du milieu sont après la première action, tripler : 12 et 15.",
+   "Les cases vertes de droite sont après la seconde action, doubler : 24 et 30.",
+   "Dans les deux lignes, les flèches vont dans le même sens et le même ordre."
+  ],
+  "a_voir": "Seuls les nombres changent, pas l'ordre des deux actions."
+ },
+ {
+  "code": "57-045",
+  "a_dire": "La preuve part de (η + ζ)(x + y), coupe en morceaux, puis arrive à la somme des images de x et de y ; l'étape qui porte le poids est l'échange de deux termes.",
+  "legende_titre": "Départ, étape clé, arrivée",
+  "lecture": [
+   "La case bleue du haut est le départ, avec x = 4 et y = 5. Les deux cases vertes du bas sont l'arrivée.",
+   "Les deux flèches grises sont la définition de la somme, puis le fait que η et ζ respectent l'addition.",
+   "Les deux flèches orange qui se croisent échangent deux termes : η(y) et ζ(x) changent de place. C'est l'étape qui porte le poids.",
+   "Dans la case du haut, 9 est envoyé sur 18 + 27, soit 45."
+  ],
+  "a_voir": "Les deux termes en orange changent de place : sans cet échange, on ne forme pas les deux paquets."
+ },
+ {
+  "code": "57-046",
+  "a_dire": "Pour regrouper les quatre termes, il faut échanger deux termes voisins, et cet échange est permis parce que M est abélien.",
+  "legende_titre": "Un échange qui a une condition",
+  "lecture": [
+   "La ligne du haut porte les quatre termes 8, 10, 12, 15 dans l'ordre de départ.",
+   "Les flèches orange croisées échangent 10 et 12.",
+   "La ligne du bas permet les deux paquets verts : 8 plus 12, et 10 plus 15.",
+   "La case verte du bas dit pourquoi l'échange est permis : 10 plus 12 égale 12 plus 10."
+  ],
+  "a_voir": "L'échange des deux cases orange est ce qui permet de former les paquets."
+ },
+ {
+  "code": "57-047",
+  "a_dire": "L'égalité a + b = b + a ne sert qu'à une seule étape de la preuve, le regroupement ; c'est pour cela que la définition exige un groupe abélien.",
+  "legende_titre": "Une seule étape en a besoin",
+  "lecture": [
+   "Première étape, flèches grises : couper 18 et 27 en 8 + 10 et 12 + 15. Elle n'utilise que « respecter + ».",
+   "Seconde étape, flèches orange épaisses : regrouper en (8 + 12) et (10 + 15).",
+   "Les deux nombres en orange, 10 et 12, échangent leur place. C'est le seul endroit où l'on utilise a + b = b + a."
+  ],
+  "a_voir": "Une seule étape échange deux termes : c'est la seule qui utilise a + b = b + a."
+ },
+ {
+  "code": "57-048",
+  "a_dire": "Sans la condition abélienne, la somme de deux endomorphismes peut ne plus être un endomorphisme, et End M n'est plus un anneau.",
+  "legende_titre": "Ce que l'oubli coûte",
+  "lecture": [
+   "La colonne verte de gauche part de M abélien, où a + b = b + a ; la somme η + ζ est un endomorphisme et End M est un anneau.",
+   "La colonne rouge de droite part de M non abélien ; l'exemple des trois cartes montre que l'ordre des gestes change le résultat.",
+   "Dans cette colonne, la somme n'est plus toujours un endomorphisme et End M n'est pas un anneau."
+  ],
+  "a_voir": "Les deux colonnes ont les mêmes lignes, mais pas les mêmes fins."
+ },
+ {
+  "code": "57-049",
+  "a_dire": "Le zéro de End M est la règle qui envoie tout sur 0 : l'ajouter à une règle la laisse inchangée.",
+  "legende_titre": "La règle qui ne change rien à la somme",
+  "lecture": [
+   "Chaque case bleue est un nombre de départ : 4, puis 5.",
+   "La case orange donne l'image par « tripler » ; la case grise donne l'image par la règle qui envoie tout sur 0.",
+   "La case verte de droite donne la somme : 12 pour 4, 15 pour 5, comme « tripler » seule."
+  ],
+  "a_voir": "La case verte est égale à la case orange de la même ligne."
+ },
+ {
+  "code": "57-050",
+  "a_dire": "Le un de End M est la règle qui ne change rien : la composer avec une règle, dans un ordre ou dans l'autre, laisse cette règle inchangée.",
+  "legende_titre": "La règle qui laisse tout en place",
+  "lecture": [
+   "La case bleue est le départ : 4.",
+   "La ligne du haut applique « tripler », puis « ne rien changer » : elle arrive à 12.",
+   "La ligne du bas applique « ne rien changer », puis « tripler » : elle arrive aussi à 12.",
+   "Les deux cases vertes sont égales, comme si « tripler » avait agi seule."
+  ],
+  "a_voir": "Dans les deux ordres, le résultat est celui de « tripler »."
+ },
+ {
+  "code": "57-051",
+  "a_dire": "La distributivité tient parce que ρ respecte l'addition ; si on retire cette hypothèse avec « ajouter 1 », l'égalité tombe.",
+  "legende_titre": "Sans l'hypothèse, l'égalité tombe",
+  "lecture": [
+   "À gauche, ρ est tripler (η : doubler, ζ : ne rien changer). Les deux lignes de calcul donnent 36 : 36 = 36.",
+   "À droite, ρ est ajouter 1 (η et ζ : ne rien changer). La somme donne 8, puis ajouter 1 donne 9.",
+   "Toujours à droite, chaque règle séparée donne 5, et 5 + 5 = 10.",
+   "Le texte rouge dit que 9 et 10 sont différents."
+  ],
+  "a_voir": "À gauche les deux calculs sont égaux, à droite 9 et 10 sont différents."
+ },
+ {
+  "code": "57-052",
+  "a_dire": "Dans End M, l'ordre compte : appliquer ζ puis η ne donne pas le même résultat que η puis ζ.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La case bleue 1 ; 2 est le départ des deux lignes.",
+   "Ligne du haut : ζ envoie 1 ; 2 sur 3 ; 2, puis η l'envoie sur 2 ; 3.",
+   "Ligne du bas : η envoie 1 ; 2 sur 2 ; 1, puis ζ l'envoie sur 3 ; 1.",
+   "Le signe rouge ≠ sépare les deux cases violettes d'arrivée, qui sont différentes."
+  ],
+  "a_voir": "Les deux cases violettes d'arrivée ne sont pas les mêmes."
+ },
+ {
+  "code": "57-053",
+  "a_dire": "Une règle sur les entiers qui respecte l'addition est décidée par un seul nombre, l'image de 1 ; ici 3, et elle multiplie par 3.",
+  "legende_titre": "Un seul nombre décide de tout",
+  "lecture": [
+   "La ligne bleue du haut donne des entiers n : 1, 2, 3, 5.",
+   "La case orange sous 1 est la seule donnée : l'image de 1 est 3.",
+   "Les cases vertes sont les images des autres entiers : 6, 9, 15. Chacune est 3 fois le nombre au-dessus."
+  ],
+  "a_voir": "Une seule case orange suffit à remplir toutes les cases vertes."
+ },
+ {
+  "code": "57-054",
+  "a_dire": "Une règle sur les couples d'entiers qui respecte l'addition est décidée par les images de e = (1 ; 0) et de f = (0 ; 1).",
+  "legende_titre": "Deux images décident de tout",
+  "lecture": [
+   "Les deux cases orange du haut sont les seules données : l'image de e est 2 ; 1 et l'image de f est 3 ; 5.",
+   "La case bleue écrit le couple 4 ; 7 comme 4 fois e plus 7 fois f.",
+   "La case violette remplace e et f par leurs images, et la case verte donne le résultat : 29 ; 39."
+  ],
+  "a_voir": "Les deux cases orange suffisent à trouver l'image de 4 ; 7."
+ },
+ {
+  "code": "57-055",
+  "a_dire": "Les quatre entiers a, b, c, d, rangés en deux colonnes, forment la matrice de la règle.",
+  "legende_titre": "Quatre entiers dans un tableau",
+  "lecture": [
+   "Les deux lignes du haut disent ce que la règle fait de e (en bleu) et de f (en violet).",
+   "La colonne bleue du tableau contient l'image de e : a égale 2 et b égale 1.",
+   "La colonne violette contient l'image de f : c égale 3 et d égale 5."
+  ],
+  "a_voir": "Chaque colonne du tableau est l'image d'un des deux couples."
+ },
+ {
+  "code": "57-056",
+  "a_dire": "La somme des règles est la somme des matrices nombre à nombre ; la composée est le produit des matrices.",
+  "legende_titre": "Mêmes opérations, deux écritures",
+  "lecture": [
+   "Les tableaux bleu et violet sont les matrices de deux règles A et B.",
+   "Ligne du haut : les nombres s'additionnent un à un et donnent le tableau vert 2 2 ; 1 4.",
+   "Ligne du bas : la composée « B puis A » donne le produit, le tableau vert 3 6 ; 1 3."
+  ],
+  "a_voir": "La même paire de tableaux sert à la somme et au produit."
+ },
+ {
+  "code": "57-057",
+  "a_dire": "Les règles sur ℤ² et les matrices à quatre entiers se correspondent ; si l'on retire la condition « entiers », la correspondance casse.",
+  "legende_titre": "Pourquoi des entiers seulement",
+  "lecture": [
+   "En haut, à gauche une règle sur ℤ², à droite une matrice.",
+   "Première ligne, en vert : la règle (3 ; 5) ↦ (6 ; 5) et la matrice à quatre entiers se correspondent, dans les deux sens.",
+   "Seconde ligne, en rouge : la matrice avec un demi donnerait (1 ; 0) ↦ (½ ; 0), un couple qui sort de ℤ². La correspondance est barrée."
+  ],
+  "a_voir": "Avec des entiers, règle et matrice se correspondent ; avec un demi, la correspondance casse."
+ },
+ {
+  "code": "57-058",
+  "a_dire": "Sur l'horloge à 12 heures, une règle qui respecte l'addition est décidée par l'image de 1 heure ; ce cas ne montre pas les autres horloges ni toutes les valeurs.",
+  "legende_titre": "Une seule heure décide de tout",
+  "lecture": [
+   "La ligne bleue du haut donne les heures de départ : 1, 2, 3, 7.",
+   "La case orange sous 1 est la seule donnée : 1 heure va sur 5 heures.",
+   "Les cases vertes donnent les autres images : 10, 3 et 11.",
+   "Pour 3 et 7, les petits textes gris montrent le retrait de 12 : 15 moins 12, et 35 moins 24."
+  ],
+  "a_voir": "Une seule case orange, puis un retour dans l'horloge quand on dépasse 12."
+ },
+ {
+  "code": "57-059",
+  "a_dire": "Chaque élément a d'un anneau donne la règle « multiplier par a », et ces règles gardent la somme et le produit de l'anneau.",
+  "legende_titre": "L'anneau se retrouve dans ses règles",
+  "lecture": [
+   "Les cases bleues sont des éléments de l'anneau ℤ : 3, 5, leur somme 8 et leur produit 15.",
+   "Les flèches orange associent à chaque élément la règle « multiplier par lui », en orange ou en vert.",
+   "Les cases vertes montrent que la somme 8 donne la somme des règles, et que le produit 15 donne la composée."
+  ],
+  "a_voir": "Somme et produit à gauche correspondent à somme et composée à droite."
+ },
+ {
+  "code": "57-060",
+  "a_dire": "Le signe a_L se lit « a indice L » : c'est la règle entière qui envoie x sur le produit ax, avec a écrit à gauche.",
+  "legende_titre": "Lire le signe a indice L",
+  "lecture": [
+   "Le signe du haut, en bleu, nomme la règle x ↦ ax.",
+   "La case bleue explique a : le nombre qui multiplie.",
+   "La case orange explique L : a est écrit à gauche de x.",
+   "Les cases vertes du bas donnent le cas a égale 3 : 4 devient 12 et 5 devient 15."
+  ],
+  "a_voir": "Le signe désigne la règle entière, pas un seul produit."
+ }
+]

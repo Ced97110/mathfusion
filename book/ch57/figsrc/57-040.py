@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'règle : ajouter 1', 'varie', 'm')
+# top path : ajouter 1 à chacun, puis additionner
+box(ax, 2, 36, 18, 10, 'sujet', label='4 ; 5', size='s')
+box(ax, 32, 36, 18, 10, 'varie', label='5 ; 6', size='s')
+box(ax, 62, 36, 24, 10, 'varie', label='5 + 6 = 11', size='s')
+arrow(ax, (20.5, 41), (31.5, 41), 'varie')
+arrow(ax, (50.5, 41), (61.5, 41), 'varie')
+text(ax, 26, 49, '+1 chacun', 'varie', 's')
+text(ax, 56, 49, 'additionner', 'varie', 's')
+# bottom path : additionner, puis ajouter 1
+box(ax, 2, 10, 18, 10, 'sujet', label='4 ; 5', size='s')
+box(ax, 32, 10, 18, 10, 'varie', label='9', size='s')
+box(ax, 62, 10, 24, 10, 'varie', label='9 + 1 = 10', size='s')
+arrow(ax, (20.5, 15), (31.5, 15), 'varie')
+arrow(ax, (50.5, 15), (61.5, 15), 'varie')
+text(ax, 26, 7, 'additionner', 'varie', 's')
+text(ax, 56, 7, '+1 ensuite', 'varie', 's')
+text(ax, 74, 28, '11 ≠ 10', 'limite', 'l', weight='bold')
+save(fig, '57-040')
