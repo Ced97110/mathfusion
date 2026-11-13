@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+k = 5.0
+O = (4, 8)
+u, v = (1, 3), (4, 2)
+assert u[0] * v[0] + u[1] * v[1] == 10
+T = lambda q: (O[0] + k * q[0], O[1] + k * q[1])
+arrow(ax, O, T(u), 'sujet', lw=1.8)
+arrow(ax, O, T(v), 'autre', lw=1.8)
+text(ax, T(u)[0] + 2, T(u)[1] + 1, r'$u$', 'sujet', 'm', ha='left')
+text(ax, T(v)[0] + 2, T(v)[1] + 3, r'$v$', 'autre', 'm', ha='left')
+text(ax, 14, 40, 'deux flèches', 'fixe', 's')
+arrow(ax, (30, 24), (42, 24), 'fixe', lw=1.0)
+text(ax, 36, 28, r'$u\cdot v$', 'fixe', 's')
+f = numberline(ax, 46, 80, 24, 0, 10, 5, arrow_right=False)
+disc(ax, f(10), 24, 1.6, 'resultat')
+text(ax, f(10) - 3, 31, r'$10$', 'resultat', 'l', weight='bold')
+text(ax, 64, 42, 'un nombre sur une droite', 'resultat', 's')
+text(ax, 64, 8, 'sans flèche', 'resultat', 's')
+save(fig, '41-072')

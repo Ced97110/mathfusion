@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+u, v, w = (2, 0, 0), (1, 2, 0), (0, 0, 4)
+o = (20, 6); s = 7
+I = lambda p: iso(p[0], p[1], p[2], o, s)
+uv = (3, 2, 0)
+fig, ax = canvas(56)
+poly(ax, [I((0, 0, 0)), I(u), I(uv), I(v)], 'sujet')
+arrow(ax, I((0, 0, 0)), I(u), 'sujet', lw=1.2)
+arrow(ax, I((0, 0, 0)), I(v), 'autre', lw=1.2)
+arrow(ax, I((0, 0, 0)), I(w), 'resultat', lw=1.8)
+text(ax, I(u)[0] + 2, I(u)[1] - 3, 'index : $u$', 'sujet', 's', ha='left')
+text(ax, I(v)[0] - 1, I(v)[1] + 3, 'majeur : $v$', 'autre', 's', ha='right')
+text(ax, I(w)[0] + 2, I(w)[1] + 3, 'pouce : $u\\times v$', 'resultat', 's', ha='left')
+text(ax, I((0, 0, 2))[0] - 2.5, I((0, 0, 2))[1], '1', 'resultat', 'l', weight='bold')
+text(ax, I((1.5, 1, 0))[0], I((1.5, 1, 0))[1], '2', 'sujet', 'l', weight='bold')
+text(ax, I((0, 0, 0))[0] - 2, I((0, 0, 0))[1] + 3, '3 main droite', 'varie', 's', ha='right')
+box(ax, 54, 38, 32, 13, 'resultat', label='1 direction\n⟂ à $u$ et à $v$'.replace('⟂', r'$\perp$'), size='s')
+box(ax, 54, 22, 32, 13, 'sujet', label='2 norme\n= aire du parallélogramme', size='s')
+box(ax, 54, 6, 32, 13, 'varie', label='3 sens\nmain droite', size='s')
+save(fig, '41-104')

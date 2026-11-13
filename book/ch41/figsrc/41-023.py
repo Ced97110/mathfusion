@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# Haut : valeur absolue de -7 = distance 7 de 0. Bas : flèche (3 ; 4), longueur 5 (échelle 7 mm par unité).
+fig, ax = canvas(84)
+text(ax, 4, 80, 'valeur absolue : distance à 0', 'fixe', 's', ha='left')
+f = numberline(ax, 6, 70, 62, -8, 2, 1, arrow_right=True, every=2)
+disc(ax, f(-7), 62, 1.5, 'sujet')
+disc(ax, f(0), 62, 1.5, 'fixe')
+brace(ax, f(-7), f(0), 66, 'sujet', label='7', down=False)
+text(ax, f(0) + 9, 70, r'$|{-7}| = 7$', 'sujet', 's')
+text(ax, 4, 46, 'norme : longueur de la flèche', 'sujet', 's', ha='left')
+u = 7.0
+O = (10, 8)
+B = (O[0] + 3 * u, O[1] + 4 * u)
+line(ax, [O, (B[0], O[1]), B], 'fixe', lw=0.8, dash=True)
+arrow(ax, O, B, 'sujet', lw=1.8)
+text(ax, O[0] + 1.5 * u, O[1] - 3.5, '3', 'fixe', 's')
+text(ax, B[0] + 2.5, O[1] + 2 * u, '4', 'fixe', 's', ha='left')
+text(ax, B[0] + 12, O[1] + 2 * u + 13, 'longueur 5', 'sujet', 's')
+box(ax, 54, 8, 30, 11, 'resultat', label='norme = 5')
+save(fig, '41-023')

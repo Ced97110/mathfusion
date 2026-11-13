@@ -1,0 +1,278 @@
+[
+ {
+  "code": "41-097",
+  "a_dire": "La projection de u sur v est le nombre (u·v)/‖v‖² multiplié par v ; pour v = ⟨4, 2⟩ elle vaut ⟨2, 1⟩, pour v = i elle vaut ⟨1, 0⟩.",
+  "legende_titre": "Un nombre fois v, pour deux choix de v",
+  "lecture": [
+   "La flèche bleue est u = ⟨1, 3⟩, la même dans les deux cas.",
+   "La flèche violette est v : ⟨4, 2⟩ à gauche, i à droite.",
+   "La flèche verte est la projection : elle est toujours sur la droite de v.",
+   "Le trait en pointillés relie la pointe de u à la pointe de la flèche verte."
+  ],
+  "a_voir": "La flèche verte est toujours un nombre (0,5 ou 1) fois la flèche violette."
+ },
+ {
+  "code": "41-098",
+  "a_dire": "Le signe proj avec v en bas et u à côté se lit « projection de u sur v » et désigne une flèche.",
+  "legende_titre": "Lire le signe en trois morceaux",
+  "lecture": [
+   "Le mot vert « proj » dit qu'on cherche une projection.",
+   "Le petit v violet, écrit en bas, dit sur quel vecteur on projette ; la flèche violette est ce v.",
+   "Le u bleu dit quel vecteur on projette ; la flèche bleue est ce u.",
+   "La flèche verte, de composantes 2 et 1, est la valeur du signe."
+  ],
+  "a_voir": "Chaque morceau du signe a la couleur de la flèche qu'il désigne."
+ },
+ {
+  "code": "41-099",
+  "a_dire": "Le coefficient u·v/‖v‖² dit combien de fois v tient dans la projection : une demi-fois pour 0,5, et en sens contraire pour −1.",
+  "legende_titre": "Combien de fois v dans la flèche verte",
+  "lecture": [
+   "À gauche, la flèche verte est la moitié de la flèche violette v : le coefficient vaut 10/20 = 0,5.",
+   "La flèche bleue est u = ⟨1, 3⟩ ; le pointillé relie sa pointe à la flèche verte.",
+   "À droite, u = ⟨−4, −2⟩ : la flèche verte pointe à l'opposé de v, le coefficient vaut −20/20 = −1.",
+   "Dans les deux cas la flèche verte est le coefficient fois v."
+  ],
+  "a_voir": "Le coefficient est le nombre de fois que v tient dans la flèche verte, négatif si elle pointe à l'envers."
+ },
+ {
+  "code": "41-100",
+  "a_dire": "On coupe u en deux flèches à angle droit : u₁, la projection sur v, et u₂ = u − u₁ ; leur somme redonne u.",
+  "legende_titre": "Couper u en deux morceaux à angle droit",
+  "lecture": [
+   "La flèche grise est v, la direction choisie.",
+   "La flèche verte u₁ = ⟨2, 1⟩ est le morceau de u sur la droite de v.",
+   "La flèche orange u₂ = ⟨−1, 2⟩ part du bout de u₁ et arrive au bout de u ; le petit carré marque l'angle droit.",
+   "À droite, le calcul u₂·v = −4 + 4 = 0 confirme l'angle droit."
+  ],
+  "a_voir": "u₁ puis u₂ mis bout à bout font la flèche bleue u, et u₂ est à angle droit de v."
+ },
+ {
+  "code": "41-101",
+  "a_dire": "Les composantes a et b de u sont la décomposition par projection quand v est l'axe x : a = 1 le long de x, b = 3 le long de y.",
+  "legende_titre": "Les composantes comme cas particulier",
+  "lecture": [
+   "Les deux flèches grises sont les axes x et y ; l’axe x joue le rôle de v.",
+   "La flèche bleue est u = ⟨1, 3⟩.",
+   "La flèche verte est la projection sur l’axe x, de longueur a = 1 le long de x.",
+   "La flèche orange est la partie restante, à angle droit, de longueur b = 3 le long de y."
+  ],
+  "a_voir": "Projeter sur l'axe x donne a, et la partie restante donne b."
+ },
+ {
+  "code": "41-102",
+  "a_dire": "Le produit vectoriel u × v est une flèche dressée à angle droit du parallélogramme construit sur u et v ; sa longueur 4 est l'aire du parallélogramme.",
+  "legende_titre": "Une flèche qui se dresse sur le parallélogramme",
+  "lecture": [
+   "Le parallélogramme bleu clair est posé sur le sol, construit sur u = ⟨2, 0, 0⟩ (flèche bleue) et v = ⟨1, 2, 0⟩ (flèche violette).",
+   "La flèche verte part du même point et monte à la verticale : c'est u × v = ⟨0, 0, 4⟩.",
+   "Sa longueur 4 est aussi l'aire du parallélogramme : base 2, hauteur 2."
+  ],
+  "a_voir": "La flèche verte est perpendiculaire au sol et pointe vers le haut."
+ },
+ {
+  "code": "41-103",
+  "a_dire": "Une seconde opération mesure l'angle par son sinus et rend un vecteur, alors que le produit scalaire le mesure par son cosinus et rend un nombre.",
+  "legende_titre": "Cosinus d'un côté, sinus de l'autre",
+  "lecture": [
+   "La flèche violette est de longueur 1 et fait l'angle θ avec la droite grise.",
+   "Le trait bleu, le long de la droite grise, est le cosinus 0,447 : il va avec le produit scalaire, qui vaut 2 et est un nombre.",
+   "Le trait vert, à angle droit, est le sinus 0,894 : il va avec le produit vectoriel, de norme 4, qui est un vecteur."
+  ],
+  "a_voir": "Le cosinus et le sinus sont les deux côtés d'un même angle, et chacun sert une opération."
+ },
+ {
+  "code": "41-104",
+  "a_dire": "Le produit vectoriel u × v est le vecteur défini par trois exigences : direction perpendiculaire à u et v, norme égale à l'aire du parallélogramme, sens donné par la main droite.",
+  "legende_titre": "Les trois exigences du produit vectoriel",
+  "lecture": [
+   "Le parallélogramme bleu clair, marqué 2, est construit sur u (bleu, index) et v (violet, majeur).",
+   "La flèche verte, marquée 1, est u × v : c’est le pouce de la main droite.",
+   "Les trois cases sont numérotées comme les repères du dessin : 1 direction, 2 norme, 3 sens (main droite)."
+  ],
+  "a_voir": "Une seule flèche verte porte la direction, la longueur et le sens."
+ },
+ {
+  "code": "41-105",
+  "a_dire": "La direction de u × v est perpendiculaire à u et à v, car ses produits scalaires avec u et avec v valent 0.",
+  "legende_titre": "Deux produits scalaires nuls",
+  "lecture": [
+   "La flèche verte est u × v = ⟨0, 0, 4⟩ ; la flèche bleue est u et la flèche violette est v.",
+   "Les deux petits angles droits gris marquent la verticale contre u et contre v.",
+   "À droite, le calcul bleu donne u · (u × v) = 0 et le calcul violet donne v · (u × v) = 0."
+  ],
+  "a_voir": "Les deux produits scalaires valent 0, donc la flèche verte est à angle droit des deux autres."
+ },
+ {
+  "code": "41-106",
+  "a_dire": "La norme de u × v est ‖u‖ ‖v‖ sin θ : 2 fois 2,236 fois 0,894 donne 4, qui est l'aire du parallélogramme.",
+  "legende_titre": "Trois nombres à multiplier",
+  "lecture": [
+   "Les quatre cases du haut se lisent de gauche à droite : ‖u‖ = 2, ‖v‖ ≈ 2,236, sin θ ≈ 0,894, résultat 4.",
+   "Dans le parallélogramme, la flèche bleue est u, de base 2, et la flèche violette est v.",
+   "Le pointillé orange est la hauteur, égale à 2.",
+   "L'aire vaut base fois hauteur : 2 × 2 = 4, comme le résultat du haut."
+  ],
+  "a_voir": "Le produit des trois nombres, 4, est l'aire du parallélogramme dessiné."
+ },
+ {
+  "code": "41-107",
+  "a_dire": "La règle de la main droite donne le sens de u × v : index sur i, majeur sur j, le pouce donne k ; avec la main gauche le pouce serait vers le bas.",
+  "legende_titre": "Le pouce donne le sens",
+  "lecture": [
+   "À gauche (main droite), la flèche bleue i est l'index, la flèche violette j est le majeur.",
+   "La flèche verte, vers le haut, est le pouce : i × j = k.",
+   "À droite (main gauche), index et majeur sont au même endroit mais le pouce vert pointe vers le bas.",
+   "Le résultat en rouge, −k, est ce qu'on obtiendrait avec la main gauche."
+  ],
+  "a_voir": "Changer de main retourne le pouce, donc le sens du résultat."
+ },
+ {
+  "code": "41-108",
+  "a_dire": "Le signe u × v se lit « u croix v » et désigne un vecteur ; en français on écrit souvent u ∧ v pour le même vecteur.",
+  "legende_titre": "Un même signe, deux sens, deux écritures",
+  "lecture": [
+   "La case grise montre le signe entre deux nombres : 3 × 4 = 12, un nombre.",
+   "La case bleue montre le même signe entre deux vecteurs : il désigne un vecteur.",
+   "La case violette montre l'écriture française u ∧ v ; la double flèche orange dit qu'elle désigne le même vecteur."
+  ],
+  "a_voir": "Le signe × donne un nombre entre deux nombres et un vecteur entre deux vecteurs."
+ },
+ {
+  "code": "41-109",
+  "a_dire": "L'aire du parallélogramme est base fois hauteur ; l'étape qui porte la preuve est de lire la hauteur ‖v‖ sin θ dans un triangle rectangle, ce qui donne ‖u‖ ‖v‖ sin θ.",
+  "legende_titre": "De base fois hauteur à ‖u‖ ‖v‖ sin θ",
+  "lecture": [
+   "La flèche bleue u est la base, de longueur ‖u‖ = 2.",
+   "Le triangle orange est le triangle rectangle de côté oblique v ; son côté vertical en pointillés est la hauteur ‖v‖ sin θ.",
+   "En bas, la case bleue est le départ, la case orange est l'étape qui porte le poids, la case verte est l'arrivée."
+  ],
+  "a_voir": "Le triangle orange donne la hauteur, et la hauteur fait passer de base fois hauteur à la formule."
+ },
+ {
+  "code": "41-110",
+  "a_dire": "En composantes, u × v est formé de trois différences de deux produits croisés ; pour ⟨1, 2, 3⟩ et ⟨4, 5, 6⟩ on obtient ⟨−3, 6, −3⟩.",
+  "legende_titre": "Trois composantes, trois différences",
+  "lecture": [
+   "La case bleue est u = ⟨1, 2, 3⟩, la case violette est v = ⟨4, 5, 6⟩, la case verte est le résultat ⟨−3, 6, −3⟩.",
+   "Chaque ligne grise calcule une composante : une différence de deux produits.",
+   "Les lignes donnent dans l'ordre −3, 6 et −3."
+  ],
+  "a_voir": "Chaque composante du résultat est une différence de deux produits des nombres de u et de v."
+ },
+ {
+  "code": "41-111",
+  "a_dire": "Chaque composante de u × v oublie un indice, et les indices tournent : 2 et 3, puis 3 et 1, puis 1 et 2.",
+  "legende_titre": "L'indice oublié tourne",
+  "lecture": [
+   "Chaque groupe de quatre cases montre u en bleu et v en violet, avec les lignes 1, 2, 3.",
+   "Les cases en pointillés sont la ligne oubliée : 1, puis 2, puis 3.",
+   "Sous chaque groupe, le calcul n'utilise que les deux lignes colorées : 2×6 − 3×5, puis 3×4 − 1×6, puis 1×5 − 2×4."
+  ],
+  "a_voir": "La ligne en pointillés descend d'un cran à chaque composante."
+ },
+ {
+  "code": "41-112",
+  "a_dire": "Pour u = ⟨2, 0, 0⟩ et v = ⟨1, 2, 0⟩ au sol, la formule donne ⟨0, 0, 4⟩ : une flèche verticale de longueur 4.",
+  "legende_titre": "Le calcul sur les deux flèches du sol",
+  "lecture": [
+   "Le parallélogramme bleu est construit sur u (bleu) et v (violet), posés au sol.",
+   "La flèche verte est le résultat, verticale, de longueur 4.",
+   "Les deux premières cases grises donnent 0 et 0 ; la case verte donne 4 : 2 × 2 − 0 × 1."
+  ],
+  "a_voir": "Seule la troisième composante n'est pas nulle, donc la flèche est verticale."
+ },
+ {
+  "code": "41-113",
+  "a_dire": "La preuve part de u · (u × v), calcule trois produits −3, 12 et −9 qui se compensent, et arrive à 0 : u × v est orthogonal à u.",
+  "legende_titre": "Trois termes qui reviennent à zéro",
+  "lecture": [
+   "Le texte du haut donne u = ⟨1, 2, 3⟩ et u × v = ⟨−3, 6, −3⟩.",
+   "Chaque flèche orange est un produit, placée sur la droite graduée : d’abord −3, puis +12, puis −9.",
+   "Les pointillés suivent la position après chaque pas.",
+   "La dernière flèche s’arrête sur le point vert, qui est 0 : −3 + 12 − 9 = 0."
+  ],
+  "a_voir": "Les pas −3, +12 et −9 ramènent exactement au point de départ 0."
+ },
+ {
+  "code": "41-114",
+  "a_dire": "Dans le cas plan, ‖u × v‖² + (u·v)² vaut ‖u‖² ‖v‖² : 16 + 4 = 20 = 4 × 5.",
+  "legende_titre": "Un rectangle de 20 cases en deux parties",
+  "lecture": [
+   "Le rectangle a 4 colonnes, ‖u‖² = 4, et 5 lignes, ‖v‖² = 5 : il compte 20 cases.",
+   "Les 16 cases bleues représentent ‖u × v‖².",
+   "Les 4 cases violettes de la ligne du haut représentent (u·v)².",
+   "Le bas de la figure écrit la somme : 16 + 4 = 20 = 4 × 5."
+  ],
+  "a_voir": "Les cases bleues et violettes, ensemble, remplissent le rectangle des carrés des normes."
+ },
+ {
+  "code": "41-115",
+  "a_dire": "L'identité de Lagrange est vraie car les deux membres ont les mêmes quatre termes, et les deux doubles produits opposés se compensent.",
+  "legende_titre": "Les mêmes quatre termes des deux côtés",
+  "lecture": [
+   "La rangée du haut est ‖u × v‖² + (u·v)² développé : quatre cases bleues et deux cases orange.",
+   "Les deux cases orange, −2P et +2P, se compensent.",
+   "La rangée du bas est ‖u‖² ‖v‖² : les quatre mêmes cases bleues.",
+   "Les pointillés relient chaque case bleue du haut à son identique du bas."
+  ],
+  "a_voir": "Une fois les deux cases orange retirées, les deux rangées sont identiques."
+ },
+ {
+  "code": "41-116",
+  "a_dire": "Le carré de la norme de u × v est ‖u‖² ‖v‖² sin² θ : sur le cas, 20 × 0,8 = 16.",
+  "legende_titre": "Le sinus au carré prend 0,8 de 20",
+  "lecture": [
+   "La barre entière représente ‖u‖² ‖v‖² = 4 × 5 = 20.",
+   "La petite partie violette est cos² θ = 0,2 de la barre, soit 4.",
+   "La grande partie bleue est sin² θ = 0,8 de la barre, soit 16 : c'est ‖u × v‖².",
+   "En bas, le calcul 20 × 0,8 = 16."
+  ],
+  "a_voir": "La partie bleue de la barre est le carré de la norme de u × v."
+ },
+ {
+  "code": "41-117",
+  "a_dire": "i × j = k : la flèche monte, à angle droit du plan de i et j, avec pour norme l'aire ; pour 3 i et 2 j on obtient 6 k.",
+  "legende_titre": "i croix j, puis 3 i croix 2 j",
+  "lecture": [
+   "À gauche, la flèche bleue est i, la violette est j, la verte est k : i × j = k.",
+   "À droite, 3 i (bleu) et 2 j (violet) forment un rectangle gris d’aire 6.",
+   "La flèche verte de droite, 6 k, a pour longueur cette aire 6 et monte aussi.",
+   "Le texte du bas dit que k est à angle droit du plan de i et j."
+  ],
+  "a_voir": "Dans les deux cas la flèche verte monte, et sa longueur est l'aire du rectangle."
+ },
+ {
+  "code": "41-118",
+  "a_dire": "j × k = i : la formule donne ⟨1, 0, 0⟩, qui est i.",
+  "legende_titre": "j croix k par la formule",
+  "lecture": [
+   "Les trois cases à gauche calculent les trois composantes avec j = ⟨0, 1, 0⟩ et k = ⟨0, 0, 1⟩.",
+   "La case verte donne 1 ; les deux cases grises donnent 0.",
+   "À droite, la flèche bleue est j, la violette est k, la verte est le résultat i."
+  ],
+  "a_voir": "Seule la première composante vaut 1, donc le résultat est i."
+ },
+ {
+  "code": "41-119",
+  "a_dire": "Les trois lettres i, j, k tournent : i × j = k, j × k = i, k × i = j, puis on revient à i.",
+  "legende_titre": "Un tour complet des trois lettres",
+  "lecture": [
+   "Les trois disques sont i (bleu), j (violet) et k (vert).",
+   "Chaque flèche va d'une lettre à la suivante, avec à côté le produit qui lui correspond.",
+   "La flèche orange, de k vers i, est celle de la fiche : k × i = j."
+  ],
+  "a_voir": "En suivant les flèches on retrouve les trois produits, et après k on revient à i."
+ },
+ {
+  "code": "41-120",
+  "a_dire": "j × i = −k : en échangeant les deux facteurs, le sens de rotation s'inverse et la troisième composante passe de 1 à −1.",
+  "legende_titre": "Échanger les facteurs retourne le sens",
+  "lecture": [
+   "À gauche, on tourne de i (bleu) vers j (violet) : la flèche orange va dans le sens inverse des aiguilles d'une montre ; la composante vaut 1 et i × j = k.",
+   "À droite, on tourne de j vers i : la flèche orange va dans le sens des aiguilles d'une montre ; la composante vaut −1 et j × i = −k.",
+   "Le carré gris est le même des deux côtés."
+  ],
+  "a_voir": "Les deux flèches orange tournent en sens contraires, et le résultat change de signe."
+ }
+]

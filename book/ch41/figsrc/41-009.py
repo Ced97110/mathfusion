@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# Échelle 1 mm = 3,6 km : 180 km -> 50 mm ; 100 km -> 27,8 mm.
+fig, ax = canvas(58)
+k = 3.6
+O = (12, 14)
+E = (O[0] + 180 / k, O[1])
+N = (O[0], O[1] + 100 / k)
+arrow(ax, O, (80, 14), 'fixe', lw=0.9)
+arrow(ax, O, (12, 50), 'fixe', lw=0.9)
+text(ax, 83, 10.5, 'est', 'fixe', 's')
+text(ax, 17, 51, 'nord', 'fixe', 's')
+line(ax, [O, E], 'autre', lw=1.4)
+line(ax, [O, N], 'autre', lw=1.4)
+disc(ax, E[0], E[1], 1.6, 'autre')
+disc(ax, N[0], N[1], 1.6, 'autre')
+disc(ax, O[0], O[1], 2.0, 'sujet')
+text(ax, 7, 10, r'$O$', 'sujet', 'l')
+text(ax, E[0], 8.5, '180 km à l’est', 'autre', 's')
+text(ax, N[0] + 4, N[1], '100 km au nord', 'autre', 's', ha='left')
+text(ax, 50, 36, 'départ de l’avion : $O$', 'sujet', 's')
+save(fig, '41-009')

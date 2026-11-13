@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# 41-029 : la lettre a = composante en x du vent = 50 (de combien il pousse vers l'est)
+fig, ax = canvas(70)
+s = 0.5
+O = (14, 14)
+V = (O[0] + 50 * s, O[1] + 86.6 * s)
+P = (V[0], O[1])
+arrow(ax, O, (80, O[1]), 'fixe', lw=0.7)
+line(ax, [V, P], 'fixe', dash=True)
+arrow(ax, O, V, 'varie', lw=1.2)
+arrow(ax, O, P, 'sujet', lw=2.0)
+text(ax, 79, O[1] - 3.5, 'axe $x$ (est)', 'fixe', 's', ha='right')
+text(ax, (O[0] + P[0]) / 2, O[1] + 4, r'$a$ = 50', 'sujet', 'l', weight='bold')
+text(ax, (O[0] + V[0]) / 2 - 3.5, (O[1] + V[1]) / 2 + 3, '100', 'varie', 'm', ha='right')
+text(ax, 62, 30, 'pousse de 50', 'sujet', 's')
+text(ax, 62, 25.5, 'vers l’est', 'sujet', 's')
+text(ax, O[0] - 3, O[1] - 3.5, '$O$', 'encre')
+save(fig, '41-029')

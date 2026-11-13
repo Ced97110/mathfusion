@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+# 41-044 : force de 50 N à 30° (1 mm par newton) : 50 × 0,866 = 43,30 (avance) ; 50 × 0,5 = 25 (soulève)
+fig, ax = canvas(84)
+s = 1.0
+O = (10, 40)
+V = (O[0] + 43.3 * s, O[1] + 25 * s)
+P = (V[0], O[1])
+arrow(ax, (4, O[1]), (84, O[1]), 'fixe', lw=0.7)
+line(ax, [P, V], 'resultat', lw=2.0)
+line(ax, [O, P], 'sujet', lw=2.0)
+arrow(ax, O, V, 'varie', lw=1.4)
+ax.add_patch(Arc(O, 22, 22, theta1=0, theta2=30, ec=COL['fixe'], lw=1.0, zorder=3))
+text(ax, O[0] + 17, O[1] + 3.2, '30°', 'fixe', 's')
+text(ax, (O[0] + V[0]) / 2 - 2, (O[1] + V[1]) / 2 + 4.5, '50 N', 'varie', 'm', ha='right')
+text(ax, (O[0] + P[0]) / 2, O[1] - 4, '43,30 $i$ : avance', 'sujet', 's')
+text(ax, P[0] + 2.5, (P[1] + V[1]) / 2, '25 $j$ : soulève', 'resultat', 's', ha='left')
+text(ax, 44, 26, '50 × 0,866 = 43,30', 'sujet', 's')
+text(ax, 44, 19, '50 × 0,5 = 25', 'resultat', 's')
+text(ax, 44, 9, '$v$ = 43,30 $i$ + 25 $j$', 'encre', 'm')
+save(fig, '41-044')

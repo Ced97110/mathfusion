@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+o, u = (30, 48), 22.0
+I = lambda x, y, z: iso(x, y, z, o, u)
+poly(ax, [I(0, 0, 0), I(1, 0, 0), I(1, 1, 0), I(0, 1, 0)], 'fixe')
+arrow(ax, I(0, 0, 0), I(1, 0, 0), 'sujet', lw=1.5)
+arrow(ax, I(0, 0, 0), I(0, 1, 0), 'varie', lw=1.5)
+arrow(ax, I(0, 0, 0), I(1, 1, 0), 'autre', lw=1.5)
+arrow(ax, I(0, 0, 0), I(0, 0, -1), 'resultat', lw=1.5)
+text(ax, I(1, 0, 0)[0] + 3, I(1, 0, 0)[1] + 1, r'$u$', 'sujet', 's')
+text(ax, I(0, 1, 0)[0] - 3, I(0, 1, 0)[1] + 1, r'$v$', 'varie', 's')
+text(ax, I(1, 1, 0)[0], I(1, 1, 0)[1] + 3.5, r'$w$', 'autre', 's')
+text(ax, 8, 14, 'u, v, w sont sur le sol', 'fixe', 'm', ha='left', weight='bold')
+text(ax, I(0, 0, -1)[0] + 3, I(0, 0, -1)[1] + 2, r'$v\times w=\langle 0,\,0,\,-1\rangle$', 'resultat', 's', ha='left')
+box(ax, 44, 4, 42, 20, 'resultat')
+text(ax, 65, 18, 'produit mixte = 0', 'resultat', 'm', weight='bold')
+text(ax, 65, 10, r'$u\cdot\langle 0,\,0,\,-1\rangle=0$', 'resultat', 's')
+save(fig, '41-155')

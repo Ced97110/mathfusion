@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# 41-043 : v = a i + b j : le vent = 50 i puis 86,60 j (0,45 mm par unité)
+fig, ax = canvas(76)
+s = 0.45
+O = (12, 20)
+P = (O[0] + 50 * s, O[1])
+V = (P[0], O[1] + 86.6 * s)
+arrow(ax, O, P, 'sujet', lw=2.0)
+arrow(ax, P, V, 'resultat', lw=2.0)
+arrow(ax, O, V, 'varie', lw=1.2)
+text(ax, (O[0] + P[0]) / 2, O[1] - 3.8, '50 $i$', 'sujet', 'm')
+text(ax, P[0] + 2.5, (P[1] + V[1]) / 2, '86,60 $j$', 'resultat', 'm', ha='left')
+text(ax, (O[0] + V[0]) / 2 - 3, (O[1] + V[1]) / 2 + 2, '$v$', 'varie', 'l', ha='right', weight='bold')
+text(ax, 44, 9, '$v$ = 50 $i$ + 86,60 $j$', 'encre', 'm')
+text(ax, 66, 58, 'deux termes :', 'fixe', 's')
+text(ax, 66, 52, 'un en $i$,', 'sujet', 's')
+text(ax, 66, 46.5, 'un en $j$', 'resultat', 's')
+save(fig, '41-043')

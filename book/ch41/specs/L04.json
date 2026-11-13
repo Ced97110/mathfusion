@@ -1,0 +1,289 @@
+[
+ {
+  "code": "41-073",
+  "a_dire": "Le signe 𝑢 ⋅ 𝑣 se lit « u point v » ; c’est le produit scalaire, que le manuel source écrit 𝑢 ∘ 𝑣.",
+  "legende_titre": "Deux écritures du même produit",
+  "lecture": [
+   "La case bleue montre l’écriture de ce livre : 𝑢 ⋅ 𝑣, « u point v ».",
+   "La case violette montre l’écriture du manuel source : 𝑢 ∘ 𝑣, « u rond v ».",
+   "Le signe égale entre les deux cases dit que c’est la même opération.",
+   "La case verte du bas donne le calcul de ce cas : 1 × 4 + 3 × 2 = 10, pour 𝑢 = ⟨1, 3⟩ et 𝑣 = ⟨4, 2⟩."
+  ],
+  "a_voir": "Les deux écritures, un point ou un rond, donnent le même nombre 10."
+ },
+ {
+  "code": "41-074",
+  "a_dire": "Le nombre 10, calculé avec les seules composantes, n’est pas arbitraire : il mesure l’angle entre les deux flèches.",
+  "legende_titre": "D’où sort le nombre 10",
+  "lecture": [
+   "La case bleue donne le calcul : 1 × 4 + 3 × 2 = 10, qui ne regarde que les composantes.",
+   "La flèche orange part de ce calcul et va vers le dessin des deux flèches.",
+   "À droite, la flèche bleue est 𝑢 et la flèche violette est 𝑣.",
+   "L’arc vert marque l’angle entre elles : 45°."
+  ],
+  "a_voir": "Le calcul des composantes mène à l’angle entre les flèches."
+ },
+ {
+  "code": "41-075",
+  "a_dire": "Le produit scalaire vaut la norme de 𝑢 fois la norme de 𝑣 fois le cosinus de l’angle entre elles.",
+  "legende_titre": "Le produit scalaire par la norme et l’angle",
+  "lecture": [
+   "La flèche bleue est 𝑢, de longueur √10 ; la flèche violette est 𝑣, de longueur √20.",
+   "L’arc orange est l’angle 𝜃 = 45° entre les deux flèches.",
+   "En bas, la case grise donne le produit des normes, environ 14,14, et la case orange donne le cosinus, environ 0,7071.",
+   "La case verte donne leur produit : 𝑢 ⋅ 𝑣 = 10."
+  ],
+  "a_voir": "14,14 fois 0,7071 redonne 10, le produit scalaire calculé par les composantes."
+ },
+ {
+  "code": "41-076",
+  "a_dire": "Le signe 𝑢₁𝑣₁ est le produit des premières composantes de 𝑢 et de 𝑣, c’est-à-dire le produit des 𝑥.",
+  "legende_titre": "Le produit des premières composantes",
+  "lecture": [
+   "La case bleue donne la première composante de 𝑢 : 1.",
+   "La case violette donne la première composante de 𝑣 : 4.",
+   "Le rectangle vert a 1 case de large (accolade bleue) et 4 cases de haut (trait violet).",
+   "Il contient 4 cases : 1 × 4 = 4."
+  ],
+  "a_voir": "Le produit 𝑢₁𝑣₁ vaut 4 : une case de large par quatre de haut."
+ },
+ {
+  "code": "41-077",
+  "a_dire": "Le signe 𝑢₂𝑣₂ est le produit des secondes composantes de 𝑢 et de 𝑣, c’est-à-dire le produit des 𝑦.",
+  "legende_titre": "Le produit des secondes composantes",
+  "lecture": [
+   "La case bleue donne la seconde composante de 𝑢 : 3.",
+   "La case violette donne la seconde composante de 𝑣 : 2.",
+   "Le rectangle vert a 3 cases de large (accolade bleue) et 2 cases de haut (trait violet).",
+   "Il contient 6 cases : 3 × 2 = 6."
+  ],
+  "a_voir": "Le produit 𝑢₂𝑣₂ vaut 6 : trois cases de large par deux de haut."
+ },
+ {
+  "code": "41-078",
+  "a_dire": "La lettre 𝜃 désigne l’angle entre les deux flèches, compris entre 0° et 180°.",
+  "legende_titre": "L’angle entre deux flèches",
+  "lecture": [
+   "Les deux flèches grises, 𝑢 et 𝑣, partent du même point.",
+   "L’arc bleu est mesuré entre ces deux flèches, pas depuis un axe : 𝜃 = 45°.",
+   "La droite graduée du bas va de 0 à 180 degrés.",
+   "Le point bleu sur cette droite marque 45°, la valeur de 𝜃 ici."
+  ],
+  "a_voir": "𝜃 est l’écart entre les deux flèches, toujours entre 0° et 180°."
+ },
+ {
+  "code": "41-079",
+  "a_dire": "Le signe cos 𝜃 se lit « cosinus de thêta » ; il vaut 1, 0 ou −1 selon que les flèches vont dans le même sens, sont perpendiculaires ou vont en sens contraires.",
+  "legende_titre": "Trois angles, trois valeurs du cosinus",
+  "lecture": [
+   "Dans le panneau de gauche, les flèches 𝑢 (bleue) et 𝑣 (violette) vont dans le même sens : 𝜃 = 0° et cos 𝜃 = 1.",
+   "Dans le panneau du milieu, elles forment un angle droit : 𝜃 = 90° et cos 𝜃 = 0.",
+   "Dans le panneau de droite, elles vont en sens contraires : 𝜃 = 180° et cos 𝜃 = −1.",
+   "Chaque case verte donne la valeur du cosinus pour l’angle au-dessus."
+  ],
+  "a_voir": "Le cosinus reste entre −1 et 1 et résume la position relative des flèches."
+ },
+ {
+  "code": "41-080",
+  "a_dire": "Les flèches 𝑢 et 𝑣 et le côté 𝑢 − 𝑣 forment un triangle, et ce côté est en face de l’angle 𝜃.",
+  "legende_titre": "Le triangle O U V",
+  "lecture": [
+   "La flèche bleue va de 𝑂 à 𝑈 : u = ⟨1, 3⟩, de longueur √10. La flèche violette va de 𝑂 à 𝑉 : v = ⟨4, 2⟩, de longueur √20.",
+   "La flèche orange va de 𝑉 à 𝑈 : c’est 𝑢 − 𝑣, de composantes ⟨−3, 1⟩, de carré 10.",
+   "L’arc vert en 𝑂 est l’angle 𝜃 = 45°, entre les deux flèches bleue et violette.",
+   "Le côté orange est écrit « face à θ » : c’est le côté opposé à cet angle."
+  ],
+  "a_voir": "Le côté orange est en face de l’angle 𝜃, et l’angle en 𝑂 n’est pas droit."
+ },
+ {
+  "code": "41-081",
+  "a_dire": "La flèche de 𝑉 à 𝑈 est 𝑢 − 𝑣 : on revient de 𝑉 à 𝑂, puis on va de 𝑂 à 𝑈.",
+  "legende_titre": "La flèche qui va de V à U",
+  "lecture": [
+   "La flèche violette va de 𝑉 à 𝑂 : c’est −𝑣, le retour.",
+   "La flèche bleue va de 𝑂 à 𝑈 : c’est 𝑢.",
+   "La flèche orange va directement de 𝑉 à 𝑈 : c’est 𝑢 − 𝑣.",
+   "Sous le dessin, le calcul ⟨1 − 4, 3 − 2⟩ = ⟨−3, 1⟩ donne ses composantes."
+  ],
+  "a_voir": "Aller de 𝑉 à 𝑈 directement revient à faire −𝑣 puis 𝑢."
+ },
+ {
+  "code": "41-082",
+  "a_dire": "La preuve part du carré du côté 𝑢 − 𝑣 écrit de deux façons ; l’étape clé est de dire qu’elles sont égales, ce qui mène au théorème.",
+  "legende_titre": "Deux écritures d’une même longueur",
+  "lecture": [
+   "En haut, la case bleue donne la première façon (par l’angle) : 10 + 20 − 20 = 10.",
+   "La case violette donne la seconde façon (par les composantes) : 9 + 1 = 10.",
+   "La case orange du milieu est l’étape qui porte le poids : les deux écritures décrivent la même longueur, donc elles sont égales.",
+   "La case verte du bas est l’arrivée : 𝑢 ⋅ 𝑣 = ‖𝑢‖ ‖𝑣‖ cos 𝜃, une fois retirés ‖𝑢‖² + ‖𝑣‖²."
+  ],
+  "a_voir": "Deux calculs donnent 10 ; en les égalant, on obtient le théorème."
+ },
+ {
+  "code": "41-083",
+  "a_dire": "Le carré du côté 𝑢 − 𝑣 est la somme des carrés des normes moins un terme qui contient le cosinus ; la forme reste la même quand on change l’angle.",
+  "legende_titre": "La loi des cosinus sur deux angles",
+  "lecture": [
+   "La barre bleue est ‖𝑢‖², la barre violette est ‖𝑣‖², la barre grise est le terme 2‖𝑢‖‖𝑣‖ cos 𝜃, la barre orange est ‖𝑢 − 𝑣‖².",
+   "Angle de 90° : la correction vaut 0 ; 9 + 16 donne 25, la barre orange du dessus.",
+   "Angle de 45° : 10 + 20 donne 30 ; on retire la barre grise de 20 ; il reste 10.",
+   "La barre grise est tirée en pointillé sous la barre violette, pour montrer ce qu’on retire."
+  ],
+  "a_voir": "Même forme dans les deux cas : somme des carrés, moins un terme en cosinus."
+ },
+ {
+  "code": "41-084",
+  "a_dire": "La seconde façon écrit le carré du côté avec les composantes, puis le développe et le regroupe pour retrouver 10 + 20 − 20.",
+  "legende_titre": "Le carré du côté, par les composantes",
+  "lecture": [
+   "Case 1 : on écrit les composantes du côté, ⟨1 − 4, 3 − 2⟩ = ⟨−3, 1⟩.",
+   "Case 2 : on élève au carré et on additionne : 9 + 1 = 10.",
+   "Case 3 : on développe chaque carré : (1 − 4)² = 1 − 8 + 16 = 9 et (3 − 2)² = 9 − 12 + 4 = 1.",
+   "Case 4 : on regroupe les termes : 10 + 20 − 2 × 10 = 10."
+  ],
+  "a_voir": "Les quatre actions s’enchaînent sur des nombres, de haut en bas."
+ },
+ {
+  "code": "41-085",
+  "a_dire": "Dans l’espace, la preuve est la même ; il y a seulement un troisième carré.",
+  "legende_titre": "Un troisième carré dans l’espace",
+  "lecture": [
+   "Les deux carrés bleus sont les carrés des différences des deux premières composantes : (1 − 4)² = 9 et (2 − 5)² = 9. C’est le cas du plan.",
+   "Le carré orange est le troisième carré, (3 − 6)² = 9, qui s’ajoute dans l’espace.",
+   "La case verte donne le total : 9 + 9 + 9 = 27, qui égale aussi 14 + 77 − 2 × 32."
+  ],
+  "a_voir": "Dans l’espace, la même preuve compte trois carrés au lieu de deux."
+ },
+ {
+  "code": "41-086",
+  "a_dire": "Le produit scalaire est la correction que l’angle apporte à Pythagore : le vrai carré est la somme des carrés, plus −2 𝑢 ⋅ 𝑣.",
+  "legende_titre": "Ce que l’angle change à Pythagore",
+  "lecture": [
+   "La barre grise du haut est ce que donnerait Pythagore avec un angle droit : 10 + 20 = 30.",
+   "La barre orange est le vrai carré du côté pour 45° : 10.",
+   "La barre bleue en pointillé est la correction −2 𝑢 ⋅ 𝑣 = −20 ; elle est mesurée par l’accolade.",
+   "La flèche grise relie la somme 30 à la correction qu’on lui retire."
+  ],
+  "a_voir": "30 moins la correction 20 donne 10 : l’angle aigu enlève un morceau à Pythagore."
+ },
+ {
+  "code": "41-087",
+  "a_dire": "Sur 𝑢 = ⟨1, 3⟩ et 𝑣 = ⟨4, 2⟩, les deux calculs concordent et le produit scalaire 10 donne l’angle 45°.",
+  "legende_titre": "Vérification sur un cas chiffré",
+  "lecture": [
+   "La case bleue donne le produit scalaire : 1 × 4 + 3 × 2 = 10.",
+   "La case grise donne les normes : √10 et √20.",
+   "La case orange donne le cosinus : environ 0,7071.",
+   "La case verte donne l’angle : 45°, repéré par l’arc vert entre la flèche bleue 𝑢 et la flèche violette 𝑣."
+  ],
+  "a_voir": "Du produit scalaire 10 on tire, étape par étape, l’angle de 45°."
+ },
+ {
+  "code": "41-088",
+  "a_dire": "Pour trouver l’angle entre deux vecteurs, on calcule 𝑢 ⋅ 𝑣, les normes, le quotient qui donne cos 𝜃, puis l’arccosinus.",
+  "legende_titre": "De deux vecteurs à leur angle",
+  "lecture": [
+   "La rangée du haut donne la marche : 𝑢 ⋅ 𝑣, puis ‖𝑢‖‖𝑣‖, puis cos 𝜃, puis 𝜃 par l’arccosinus.",
+   "Première ligne de cases, pour ⟨2, 0⟩ et ⟨1, 1⟩ : 2, puis 2√2, puis 0,7071, puis 45°.",
+   "Seconde ligne de cases, pour ⟨3, 0⟩ et ⟨0, 2⟩ : 0, puis 3 × 2, puis 0, puis 90°.",
+   "Chaque colonne garde la même étape quand on change les nombres."
+  ],
+  "a_voir": "La marche est la même pour les deux couples ; seuls les nombres changent."
+ },
+ {
+  "code": "41-089",
+  "a_dire": "Deux vecteurs non nuls sont orthogonaux quand l’angle entre eux est de 90° ; leur produit scalaire vaut alors 0.",
+  "legende_titre": "Deux flèches à angle droit",
+  "lecture": [
+   "La flèche bleue est 𝑢 = ⟨4, 3⟩ ; la flèche violette est 𝑣 = ⟨3, −4⟩.",
+   "Le petit carré vert marque l’angle droit entre elles : 90°.",
+   "La case verte donne le calcul : 4 × 3 + 3 × (−4) = 12 − 12 = 0.",
+   "Le mot « orthogonaux » nomme ce cas."
+  ],
+  "a_voir": "Un angle de 90° donne un produit scalaire nul, sans autre dessin."
+ },
+ {
+  "code": "41-090",
+  "a_dire": "Pour deux vecteurs non nuls, 𝑢 ⋅ 𝑣 = 0 veut dire perpendiculaires ; si l’un est le vecteur nul, le critère ne dit plus rien.",
+  "legende_titre": "Le critère, avec et sans vecteur nul",
+  "lecture": [
+   "À gauche, deux vecteurs non nuls : la flèche bleue 𝑢 et la flèche violette 𝑣 forment un angle droit (carré vert) et 𝑢 ⋅ 𝑣 = 0.",
+   "À droite, 𝑢 est le vecteur nul : un simple point bleu, sans direction.",
+   "La flèche violette est 𝑣 = ⟨3, 4⟩ ; le produit 𝑢 ⋅ 𝑣 vaut encore 0.",
+   "Pourtant il n’y a pas d’angle : la case rouge dit que la conclusion « perpendiculaires » serait fausse."
+  ],
+  "a_voir": "Le produit nul ne prouve la perpendicularité que si les deux vecteurs sont non nuls."
+ },
+ {
+  "code": "41-091",
+  "a_dire": "Les vecteurs des axes 𝑖 = ⟨1, 0⟩ et 𝑗 = ⟨0, 1⟩ ont un produit scalaire nul, donc les axes sont perpendiculaires.",
+  "legende_titre": "Les deux axes par un calcul",
+  "lecture": [
+   "Les deux traits gris sont les axes 𝑥 et 𝑦.",
+   "La flèche bleue est 𝑖 = ⟨1, 0⟩, sur l’axe 𝑥 ; la flèche violette est 𝑗 = ⟨0, 1⟩, sur l’axe 𝑦.",
+   "Le petit carré vert marque leur angle droit.",
+   "La case verte donne le calcul : 1 × 0 + 0 × 1 = 0."
+  ],
+  "a_voir": "Le calcul 1 × 0 + 0 × 1 = 0 montre que les axes sont perpendiculaires."
+ },
+ {
+  "code": "41-092",
+  "a_dire": "Le produit scalaire d’un vecteur avec lui-même est le carré de sa norme : 𝑢 ⋅ 𝑢 = ‖𝑢‖².",
+  "legende_titre": "Un vecteur multiplié par lui-même",
+  "lecture": [
+   "La flèche bleue est 𝑢 = ⟨3, 4⟩, le côté long du triangle gris.",
+   "Les deux carrés bleus sont construits sur les côtés de 3 et de 4 : leurs aires 9 et 16 sont 3 × 3 et 4 × 4.",
+   "Le carré vert est construit sur 𝑢 : son aire est 25, le carré de la norme 5.",
+   "À droite, 3 × 3 + 4 × 4 = 9 + 16 = 25, et ‖𝑢‖² = 5² = 25 ; avec l’angle 0°, cos 0° = 1 donne 5 × 5."
+  ],
+  "a_voir": "9 + 16 donne la même aire que le carré de 𝑢 : 25."
+ },
+ {
+  "code": "41-093",
+  "a_dire": "Le point 𝐻 est le pied de la perpendiculaire menée de 𝑈 sur la droite de 𝑣 ; le segment 𝑂𝐻 est plus court que 𝑂𝑈.",
+  "legende_titre": "Le pied de la perpendiculaire",
+  "lecture": [
+   "La flèche bleue va de 𝑂 à 𝑈 et mesure environ 3,162 ; la flèche violette est 𝑣, de 𝑂 à 𝑉.",
+   "Le trait en pointillé gris descend de 𝑈 vers la droite de 𝑣 et la coupe à angle droit en 𝐻 (petit carré gris).",
+   "Le trait vert épais est le segment 𝑂𝐻, d’environ 2,236.",
+   "L’arc orange en 𝑂 est l’angle 𝜃 : 𝑂𝐻 est le côté voisin de cet angle."
+  ],
+  "a_voir": "𝑂𝐻 est plus court que 𝑂𝑈, et le triangle 𝑂𝐻𝑈 est rectangle en 𝐻."
+ },
+ {
+  "code": "41-094",
+  "a_dire": "La projection de 𝑢 sur 𝑣 est la flèche de 𝑂 à 𝐻, la part de 𝑢 qui va dans la direction de 𝑣 ; le produit scalaire, lui, rend un nombre.",
+  "legende_titre": "La part de u dans la direction de v",
+  "lecture": [
+   "La flèche bleue est 𝑢 et la flèche violette est 𝑣.",
+   "La flèche verte épaisse va de 𝑂 à 𝐻 : c’est la projection, de composantes ⟨2, 1⟩.",
+   "La case grise rappelle que le produit scalaire rend un nombre : 10.",
+   "La case verte dit que la projection rend une flèche."
+  ],
+  "a_voir": "Deux opérations sur les mêmes vecteurs : l’une rend un nombre, l’autre une flèche."
+ },
+ {
+  "code": "41-095",
+  "a_dire": "La longueur de la projection est la norme de 𝑢 fois le cosinus de l’angle : OH = ‖𝑢‖ cos 𝜃.",
+  "legende_titre": "La part de u conservée selon l’angle",
+  "lecture": [
+   "Dans chaque panneau, la flèche bleue est 𝑢 et le trait violet est la direction de 𝑣.",
+   "Le trait vert gras, sous le trait violet, est la longueur 𝑂𝐻 ; les pointillés gris montrent d’où elle vient.",
+   "À 0°, 𝑂𝐻 est toute la norme de 𝑢 ; à 45°, 𝑂𝐻 vaut environ 2,236 ; à 90°, 𝑂𝐻 vaut 0 (un point vert).",
+   "Le cosinus joue le rôle de la part conservée de 𝑢."
+  ],
+  "a_voir": "Plus l’angle grandit, plus la longueur verte diminue, jusqu’à 0 à 90°."
+ },
+ {
+  "code": "41-096",
+  "a_dire": "La longueur 𝑂𝐻 s’obtient sans angle : on calcule 𝑢 ⋅ 𝑣, la norme de 𝑣, puis on divise.",
+  "legende_titre": "La projection sans l’angle",
+  "lecture": [
+   "La case bleue (1) calcule le produit scalaire : 1 × 4 + 3 × 2 = 10.",
+   "La case violette (2) calcule la norme de 𝑣 : √20, environ 4,472.",
+   "La case verte (3) divise : 10 ÷ 4,472, environ 2,236.",
+   "Aucun angle n’apparaît dans ces trois calculs."
+  ],
+  "a_voir": "Trois calculs de composantes suffisent pour obtenir 𝑂𝐻."
+ }
+]

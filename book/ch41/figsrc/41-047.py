@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# 41-047 : l'espace a trois directions indépendantes : i (x), j (y) et k = ⟨0 ; 0 ; 1⟩ vers le haut (cube unité, 22 mm par unité)
+fig, ax = canvas(78)
+u = 22
+O = (44, 14)
+cubes(ax, [(0, 0, 0)], O, u, 'fixe')
+p0 = iso(0, 0, 0, O, u)
+pi = iso(1, 0, 0, O, u); pj = iso(0, 1, 0, O, u); pk = iso(0, 0, 1, O, u)
+arrow(ax, p0, pi, 'fixe', lw=2.0)
+arrow(ax, p0, pj, 'fixe', lw=2.0)
+arrow(ax, p0, pk, 'sujet', lw=2.6)
+text(ax, pi[0] + 2.5, pi[1] + 1, '$i$ (axe $x$)', 'fixe', 's', ha='left')
+text(ax, pj[0] - 2.5, pj[1] + 1, '$j$ (axe $y$)', 'fixe', 's', ha='right')
+text(ax, p0[0] - 3, p0[1] + 12.5, '$k$', 'sujet', 'l', weight='bold', ha='right')
+text(ax, 44, 70, 'axe $z$ : vers le haut', 'sujet', 's')
+text(ax, 44, 4, r'$k = \langle$0 ; 0 ; 1$\rangle$', 'sujet', 'm')
+save(fig, '41-047')

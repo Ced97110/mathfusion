@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+import math
+fig, ax = canvas(52)
+O = (44, 6)
+P = lambda r, a: (O[0] + r * math.cos(math.radians(a)), O[1] + r * math.sin(math.radians(a)))
+arrow(ax, (6, 6), (82, 6), 'fixe', lw=0.9)
+line(ax, [O, (O[0], 44)], 'fixe', dash=True)
+arrow(ax, O, P(36, 50), 'sujet', lw=1.4)
+arrow(ax, O, P(36, 130), 'autre', lw=1.4)
+ax.add_patch(Arc(O, 20, 20, theta1=0, theta2=50, color=COL['varie'], lw=1.3, zorder=3))
+ax.add_patch(Arc(O, 44, 44, theta1=0, theta2=130, color=COL['varie'], lw=1.3, zorder=3))
+ax.add_patch(Arc(O, 60, 60, theta1=50, theta2=90, color=COL['fixe'], lw=0.9, zorder=3))
+ax.add_patch(Arc(O, 60, 60, theta1=90, theta2=130, color=COL['fixe'], lw=0.9, zorder=3))
+text(ax, *P(16, 25), '50°', 'varie', 's')
+text(ax, *P(26, 118), '130°', 'varie', 's')
+text(ax, *P(34, 70), '40°', 'fixe', 's')
+text(ax, *P(34, 110), '40°', 'fixe', 's')
+text(ax, 68, 42, r'90° − 40° = 50°', 'sujet', 'm')
+text(ax, 20, 42, r'90° + 40° = 130°', 'autre', 'm')
+text(ax, 44, 47.5, 'nord', 'fixe', 's')
+text(ax, 80, 2.5, r'$x$ (est)', 'fixe', 's')
+save(fig, '41-132')

@@ -1,0 +1,274 @@
+[
+ {
+  "code": "41-049",
+  "a_dire": "Dans l'espace, la norme est la racine carrée de a² + b² + c² : trois carrés, une somme, une racine.",
+  "legende_titre": "Trois carrés, une somme, une racine",
+  "lecture": [
+   "Chaque ligne est un vecteur à trois composantes. Les trois carrés bleus et orange ont pour côtés ces trois composantes.",
+   "Le nombre au milieu est la somme des aires des trois carrés : 9, 49, 25.",
+   "Le nombre vert à droite est la norme, la racine carrée de cette somme : 3, 7, 5.",
+   "Sur la dernière ligne, le troisième carré se réduit à un point, car la composante est 0."
+  ],
+  "a_voir": "Les trois carrés s'additionnent, puis la racine donne la norme ; avec c = 0, il reste la formule du plan."
+ },
+ {
+  "code": "41-050",
+  "a_dire": "La boîte donne la formule : Pythagore sert une première fois sur le fond, puis une seconde fois avec l'arête verticale.",
+  "legende_titre": "La boîte et les deux triangles rectangles",
+  "lecture": [
+   "La boîte a pour dimensions 1, 2 et 2 ; ces nombres sont écrits sur trois arêtes.",
+   "Le trait orange en pointillés est la diagonale du fond : elle mesure la racine carrée de 5.",
+   "Le trait bleu en pointillés est l'arête verticale de 2 ; avec la diagonale du fond, elle forme un second triangle rectangle.",
+   "La flèche verte va d'un coin au coin opposé et mesure 3. À droite, les deux calculs sont écrits dans l'ordre."
+  ],
+  "a_voir": "Deux fois le même théorème, l'un après l'autre, donnent la longueur de la flèche verte."
+ },
+ {
+  "code": "41-051",
+  "a_dire": "Pour additionner deux vecteurs, on additionne les premières composantes entre elles et les secondes entre elles.",
+  "legende_titre": "Deux additions de nombres, une somme de flèches",
+  "lecture": [
+   "La flèche bleue est u et la flèche violette est v, posée au bout de u.",
+   "La flèche verte est la somme u + v ; elle va du départ au bout de v.",
+   "La première case verte additionne les premières composantes : 180 + 50 = 230.",
+   "La seconde case verte additionne les secondes composantes : 0 + 86,60 = 86,60."
+  ],
+  "a_voir": "Les deux nombres de la somme viennent de deux additions séparées, une par composante."
+ },
+ {
+  "code": "41-052",
+  "a_dire": "L'addition par composantes est la règle du parallélogramme : on traite l'est et le nord séparément, et dans chaque direction les déplacements s'ajoutent.",
+  "legende_titre": "Le chemin de l'avion, puis du vent",
+  "lecture": [
+   "La flèche bleue est le déplacement de l'avion, la flèche violette celui du vent, et la fine flèche verte le déplacement total.",
+   "Sous la figure, deux accolades mesurent l'est : 180 puis 50, soit 230.",
+   "Le trait violet vertical à droite mesure le nord : 0 + 86,60.",
+   "Chaque direction se calcule avec une simple addition de nombres."
+  ],
+  "a_voir": "L'est et le nord se calculent chacun à part, par une addition de nombres."
+ },
+ {
+  "code": "41-053",
+  "a_dire": "Multiplier un vecteur par un nombre m, c'est multiplier chacune de ses deux composantes par m.",
+  "legende_titre": "Chaque composante est multipliée par m",
+  "lecture": [
+   "La flèche bleue est v, de composantes 2 et −1.",
+   "La flèche verte est 3v : ses composantes sont 6 et −3. La flèche orange est la moitié de v : ses composantes sont 1 et −1/2.",
+   "Les trois flèches partent du même côté et sont parallèles.",
+   "Les deux cases du bas montrent les produits faits sur chaque composante."
+  ],
+  "a_voir": "Les deux composantes sont toujours multipliées par le même nombre."
+ },
+ {
+  "code": "41-054",
+  "a_dire": "La norme de m v est la valeur absolue de m fois la norme de v : on calcule la norme de v, la valeur absolue de m, puis le produit.",
+  "legende_titre": "Trois actions pour la norme d'un multiple",
+  "lecture": [
+   "La flèche bleue est v, de composantes 3 et 4 et de norme 5.",
+   "La flèche verte est −2v, de composantes −6 et −8 : elle pointe de l'autre côté et sa norme est 10.",
+   "Les trois cases de droite se lisent de haut en bas : la norme de v, la valeur absolue de −2, puis leur produit 10."
+  ],
+  "a_voir": "La norme de −2v vaut 2 × 5 = 10, sans avoir besoin des composantes."
+ },
+ {
+  "code": "41-055",
+  "a_dire": "Avec m = 2, la flèche double de longueur et garde sa direction.",
+  "legende_titre": "La flèche s'allonge sur sa propre droite",
+  "lecture": [
+   "La flèche bleue épaisse est v : composantes 3 et 4, norme 5.",
+   "La flèche verte est 2v : composantes 6 et 8, norme 10.",
+   "Les deux flèches sont sur la même droite et vont du même côté ; les pointillés lisent leurs composantes sur les deux axes."
+  ],
+  "a_voir": "Les composantes 3 et 4 deviennent 6 et 8, et la flèche est deux fois plus longue."
+ },
+ {
+  "code": "41-056",
+  "a_dire": "Le vecteur opposé −v a la même norme que v mais pointe de l'autre côté ; il se distingue du vecteur nul, de longueur 0.",
+  "legende_titre": "Même longueur, côté contraire",
+  "lecture": [
+   "La flèche violette est v, de composantes 3 et 4. La flèche bleue est −v, de composantes −3 et −4.",
+   "Le cercle en pointillés passe par les deux bouts : les deux flèches ont la même norme, 5.",
+   "Au centre, le point noir est le vecteur nul : sa longueur est 0."
+  ],
+  "a_voir": "Les deux flèches ont la même longueur et vont dans des sens contraires."
+ },
+ {
+  "code": "41-057",
+  "a_dire": "Soustraire v, c'est ajouter l'opposé de v ; le résultat est la flèche qui va du bout de v au bout de u.",
+  "legende_titre": "Soustraire, c'est ajouter l'opposé",
+  "lecture": [
+   "La flèche bleue est u, de composantes 1 et 3. La flèche violette longue est v, de composantes 4 et 2.",
+   "La flèche violette du haut est −v, posée au bout de u.",
+   "La flèche verte épaisse est u − v, de composantes −3 et 1.",
+   "La fine flèche verte va du bout de v au bout de u : c'est la même flèche, déplacée."
+  ],
+  "a_voir": "La flèche u − v est la flèche du bout de v au bout de u."
+ },
+ {
+  "code": "41-058",
+  "a_dire": "Le vecteur nul a deux composantes égales à 0 : c'est un point, sans direction, qu'il ne faut pas confondre avec le nombre 0 ni avec un vecteur non nul.",
+  "legende_titre": "Trois voisins : le nombre 0, le vecteur nul, un vecteur",
+  "lecture": [
+   "La case violette de gauche est le nombre 0 : un seul nombre, sans composantes.",
+   "La case bleue du milieu est le vecteur nul : un point au croisement des axes, de norme 0.",
+   "La case violette de droite est un vecteur non nul, de composantes 3 et 4 et de norme 5 : une vraie flèche."
+  ],
+  "a_voir": "Le vecteur nul est un point : il n'a ni flèche ni direction."
+ },
+ {
+  "code": "41-059",
+  "a_dire": "Le signe 0 = ⟨0, 0⟩ désigne en un seul signe le vecteur dont les deux composantes sont nulles, ce qui permet d'écrire v + 0 = v.",
+  "legende_titre": "Un seul signe pour le vecteur nul",
+  "lecture": [
+   "En grand, le signe 0 est égal à l'écriture par composantes ⟨0 ; 0⟩.",
+   "La case de gauche relie le signe 0 à « un seul signe ». La case du milieu relie ⟨0 ; 0⟩ à ses deux composantes nulles.",
+   "La case verte du bas montre ce que le signe permet d'écrire : v + 0 = v."
+  ],
+  "a_voir": "Le signe 0 remplace une phrase entière."
+ },
+ {
+  "code": "41-060",
+  "a_dire": "L'ordre ne change pas la somme : u + v = v + u, car chaque composante est une addition de deux nombres.",
+  "legende_titre": "Deux chemins, un même point d'arrivée",
+  "lecture": [
+   "Le chemin du bas va de u (bleu) puis v (violet). Le chemin du haut va de v (violet) puis u (bleu).",
+   "Les deux chemins arrivent au même coin, où se termine la flèche verte u + v.",
+   "En dessous, 180 + 50 = 50 + 180 = 230, et 0 + 86,60 = 86,60 + 0."
+  ],
+  "a_voir": "Les deux chemins arrivent au même point, parce que deux nombres s'additionnent dans n'importe quel ordre."
+ },
+ {
+  "code": "41-061",
+  "a_dire": "Le regroupement ne change pas la somme, mais avec la soustraction il change le résultat : l'associativité dépend de l'addition.",
+  "legende_titre": "Regrouper : addition contre soustraction",
+  "lecture": [
+   "En haut, les barres 8 (bleu), 3 (violet) et 1 (orange) sont mises bout à bout. Quel que soit le regroupement (accolade), le total est 12.",
+   "En bas, on retire 3 puis 1, ou bien on retire l'écart 3 − 1 : les parties en pointillés sont retirées.",
+   "Les deux regroupements de la soustraction laissent des barres de longueurs différentes : 4 et 6."
+  ],
+  "a_voir": "Pour l'addition le total reste 12 ; pour la soustraction les résultats 4 et 6 diffèrent."
+ },
+ {
+  "code": "41-062",
+  "a_dire": "Ajouter le vecteur nul ne change pas v : chaque composante reçoit un 0, donc reste la même.",
+  "legende_titre": "Ajouter le vecteur nul ne change rien",
+  "lecture": [
+   "À gauche, la flèche bleue est v, de composantes 50 et 86,60.",
+   "Au milieu, le vecteur nul est un simple point.",
+   "À droite, la flèche verte v + 0 est identique à v.",
+   "Les deux calculs du bas : 50 + 0 = 50 et 86,60 + 0 = 86,60."
+  ],
+  "a_voir": "La flèche obtenue est exactement la flèche de départ."
+ },
+ {
+  "code": "41-063",
+  "a_dire": "Un vecteur plus son opposé donne le vecteur nul, car chaque composante s'annule avec son opposé.",
+  "legende_titre": "Aller, puis revenir : le vecteur nul",
+  "lecture": [
+   "La flèche bleue est v, de composantes 3 et 4. La flèche violette courbe est −v : elle revient au point de départ.",
+   "Le point vert au départ marque l'arrivée : on est revenu au même endroit.",
+   "Les deux cases bleues calculent chaque composante : 3 + (−3) = 0 et 4 + (−4) = 0.",
+   "La case verte donne le vecteur nul ⟨0 ; 0⟩."
+  ],
+  "a_voir": "Les deux déplacements s'annulent : on revient au départ."
+ },
+ {
+  "code": "41-064",
+  "a_dire": "La règle m(n v) = (m n) v vient de la multiplication ; si on remplace la multiplication par un ajout, les deux façons de calculer ne donnent plus le même vecteur.",
+  "legende_titre": "Multiplier deux fois, ou une fois par 6 ?",
+  "lecture": [
+   "En haut, on part de ⟨1 ; 2⟩ et on multiplie par 3 puis par 2 : on arrive à ⟨6 ; 12⟩. La flèche courbe multiplie par 6 d’un coup et arrive au même vecteur.",
+   "En bas, on ajoute 3 puis 2 à chaque composante : on arrive à ⟨6 ; 7⟩. La flèche courbe ajoute 6 d’un coup et arrive à ⟨7 ; 8⟩.",
+   "Les deux cases rouges sont deux résultats différents : le texte rouge le dit sous la ligne du bas."
+  ],
+  "a_voir": "Avec la multiplication les deux chemins se rejoignent ; avec l'ajout ils se séparent."
+ },
+ {
+  "code": "41-065",
+  "a_dire": "Agrandir la somme de deux vecteurs ou additionner leurs agrandissements donne le même vecteur : m(u + v) = m u + m v.",
+  "legende_titre": "Agrandir la somme ou additionner les agrandissements",
+  "lecture": [
+   "La flèche bleue est 2u, de composantes 2 et 6. La flèche violette est 2v, de composantes 8 et 4, posée au bout de 2u.",
+   "La flèche verte est 2(u + v), de composantes 10 et 10 : elle arrive au même point que les deux flèches mises bout à bout.",
+   "Les deux cases de droite font le calcul sur chaque composante : 2(1 + 4) = 10 et 2(3 + 2) = 10."
+  ],
+  "a_voir": "Les deux chemins arrivent au même point."
+ },
+ {
+  "code": "41-066",
+  "a_dire": "Agrandir de m + n revient à agrandir de m, puis de n, et à additionner : (m + n) v = m v + n v.",
+  "legende_titre": "Agrandir de m + n ou de m puis de n",
+  "lecture": [
+   "La flèche bleue est 2v, de composantes 4 et 6. La flèche violette est 3v, de composantes 6 et 9, posée au bout de 2v.",
+   "La flèche verte est 5v, de composantes 10 et 15, posée à côté : elle a la même longueur que les deux flèches mises bout à bout.",
+   "Les deux cases de droite font le calcul sur chaque composante : 10 et 15."
+  ],
+  "a_voir": "5v a la même longueur et la même direction que 2v suivie de 3v."
+ },
+ {
+  "code": "41-067",
+  "a_dire": "Multiplier par 1 laisse v inchangé ; les autres scalaires, comme 2 ou −1, donnent une autre flèche.",
+  "legende_titre": "Seul le scalaire 1 laisse la flèche inchangée",
+  "lecture": [
+   "La flèche verte épaisse est 1v : ses composantes sont 2 et 5, c'est exactement v.",
+   "La longue flèche violette vers le haut est 2v, de composantes 4 et 10.",
+   "La flèche violette vers le bas est (−1)v, de composantes −2 et −5. Ces deux flèches sont différentes de v."
+  ],
+  "a_voir": "Avec 1, la flèche ne bouge pas ; avec 2 ou −1, elle change."
+ },
+ {
+  "code": "41-068",
+  "a_dire": "La preuve part de la définition des opérations composante par composante ; l'étape décisive est de ramener l'égalité de deux vecteurs à l'égalité de leurs composantes, qui sont des nombres réels.",
+  "legende_titre": "Une règle de vecteurs devient deux règles de nombres",
+  "lecture": [
+   "La case bleue du haut est le départ : la règle (m + n) v = m v + n v sur des vecteurs.",
+   "La case orange est l'étape qui porte tout : deux vecteurs sont égaux quand leurs composantes sont égales.",
+   "Les deux cases vertes sont l'arrivée : une égalité de nombres pour chaque composante, avec m = 2, n = 3 et v = ⟨2 ; 3⟩."
+  ],
+  "a_voir": "Il suffit de vérifier la règle sur les nombres, composante par composante."
+ },
+ {
+  "code": "41-069",
+  "a_dire": "Le produit scalaire prend deux vecteurs et rend un nombre ; la multiplication par un scalaire et l'addition rendent un vecteur.",
+  "legende_titre": "Deux vecteurs entrent, un nombre sort",
+  "lecture": [
+   "Chaque ligne est une opération : à gauche ce qu'on calcule, à droite ce qu'on obtient.",
+   "Les deux premières lignes rendent une flèche violette : 2 × u donne ⟨2 ; 6⟩ et u + v donne ⟨5 ; 5⟩.",
+   "La dernière ligne, en bleu, rend un nombre dans une case verte : 10."
+  ],
+  "a_voir": "Seul le produit scalaire rend un nombre au lieu d'une flèche."
+ },
+ {
+  "code": "41-070",
+  "a_dire": "On multiplie les premières composantes entre elles, les secondes entre elles, puis on additionne ; le résultat est un nombre qui peut être positif, nul ou négatif.",
+  "legende_titre": "Deux produits, puis une somme",
+  "lecture": [
+   "Chaque ligne est un cas : deux vecteurs à gauche, le calcul et le résultat en vert à droite.",
+   "Le rectangle bleu a pour largeur et hauteur les premières composantes ; le rectangle violet, les secondes. Chaque aire est un produit.",
+   "Les trois lignes donnent 10, 0 et 25. Dans le deuxième cas, les deux rectangles sont réduits à un trait, donc l'aire totale est 0."
+  ],
+  "a_voir": "On additionne les deux aires : le résultat est 10, 0 ou 25."
+ },
+ {
+  "code": "41-071",
+  "a_dire": "Dans l'espace, on ajoute un troisième produit u₃v₃ ; on additionne trois produits.",
+  "legende_titre": "Un troisième produit s'ajoute",
+  "lecture": [
+   "Chaque barre a pour hauteur un produit : 4, 10 et 18.",
+   "Les barres bleues sont u₁v₁ = 1 × 4 = 4 et u₂v₂ = 2 × 5 = 10. La barre orange, la troisième, est u₃v₃ = 3 × 6 = 18 : c’est le terme ajouté.",
+   "La case verte du bas additionne les trois produits : 4 + 10 + 18 = 32."
+  ],
+  "a_voir": "Le seul terme nouveau est le troisième produit, 3 × 6 = 18."
+ },
+ {
+  "code": "41-072",
+  "a_dire": "Le produit scalaire rend un scalaire, c'est-à-dire un simple nombre, et non une flèche.",
+  "legende_titre": "Le résultat est un nombre, pas une flèche",
+  "lecture": [
+   "À gauche, la flèche bleue est u et la flèche violette est v : deux flèches.",
+   "La flèche grise au milieu représente l'opération u · v.",
+   "À droite, le résultat est le point vert 10 sur une droite graduée : un nombre, sans flèche."
+  ],
+  "a_voir": "Le résultat est un point sur une droite de nombres, pas un déplacement."
+ }
+]

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, s = 16, 12, 22
+P = lambda x, y: (ox + s * x, oy + s * y)
+arrow(ax, (ox - 6, oy), (ox + 34, oy), 'fixe', lw=0.8)
+arrow(ax, (ox, oy - 6), (ox, oy + 34), 'fixe', lw=0.8)
+text(ax, ox + 36, oy - 3, r'$x$', 'fixe', 's')
+text(ax, ox - 4, oy + 36, r'$y$', 'fixe', 's')
+arrow(ax, P(0, 0), P(1, 0), 'sujet', lw=2.2)
+arrow(ax, P(0, 0), P(0, 1), 'autre', lw=2.2)
+line(ax, [(ox + 4, oy), (ox + 4, oy + 4), (ox, oy + 4)], 'resultat', lw=1.0)
+text(ax, ox + 11, oy - 4, r'$i=\langle1,0\rangle$', 'sujet', 's')
+text(ax, ox + 12, oy + 24, r'$j=\langle0,1\rangle$', 'autre', 's')
+box(ax, 54, 22, 32, 13, 'resultat', label=r'$1\times0+0\times1=0$', size='s')
+text(ax, 70, 39, r'$i\cdot j=0$', 'resultat', 'm')
+text(ax, 70, 16, 'perpendiculaires', 'resultat', 's')
+save(fig, '41-091')

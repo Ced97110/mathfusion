@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+k = 2.8
+O = (30, 28)
+v = (2, 5)
+T = lambda q: (O[0] + k * q[0], O[1] + k * q[1])
+assert (1 * v[0], 1 * v[1]) == v and (2 * v[0], 2 * v[1]) == (4, 10) and (-v[0], -v[1]) == (-2, -5)
+arrow(ax, O, T((4, 10)), 'autre', lw=1.4)
+arrow(ax, O, T((-2, -5)), 'autre', lw=1.4)
+arrow(ax, O, T(v), 'resultat', lw=2.4)
+text(ax, T((4, 10))[0] + 2, T((4, 10))[1] - 1, r'$2v=\langle 4;\ 10\rangle$', 'autre', 's', ha='left')
+text(ax, T((-2, -5))[0] + 2, T((-2, -5))[1] - 4, r'$(-1)v=\langle -2;\ -5\rangle$', 'autre', 's', ha='left')
+text(ax, T(v)[0] + 3, T(v)[1] - 2, r'$1v=\langle 2;\ 5\rangle=v$', 'resultat', 's', ha='left')
+text(ax, 66, 62, 'autres flèches', 'autre', 's')
+text(ax, 80, 36, 'même flèche', 'resultat', 's', ha='right')
+save(fig, '41-067')

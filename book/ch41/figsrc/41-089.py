@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+ox, oy, s = 22, 28, 5
+P = lambda x, y: (ox + s * x, oy + s * y)
+arrow(ax, P(0, 0), P(4, 3), 'sujet', lw=1.5)
+arrow(ax, P(0, 0), P(3, -4), 'autre', lw=1.5)
+# marque d'angle droit entre les deux flèches (directions (4,3)/5 et (3,-4)/5)
+a1 = (0.8 * 4.0, 0.6 * 4.0)
+a2 = (0.6 * 4.0, -0.8 * 4.0)
+line(ax, [(ox + a1[0], oy + a1[1]), (ox + a1[0] + a2[0], oy + a1[1] + a2[1]), (ox + a2[0], oy + a2[1])], 'resultat', lw=1.0)
+text(ax, ox + 25, oy + 20, r'$u=\langle4,3\rangle$', 'sujet', 's')
+text(ax, ox + 22, oy - 20, r'$v=\langle3,-4\rangle$', 'autre', 's')
+text(ax, ox + 9, oy + 1.5, r'$90^\circ$', 'resultat', 's')
+box(ax, 48, 22, 38, 12, 'resultat', label=r'$12-12=0$', size='m')
+text(ax, 67, 38, r'$4\times3+3\times(-4)$', 'fixe', 's')
+text(ax, 67, 15, 'orthogonaux', 'resultat', 'm')
+save(fig, '41-089')

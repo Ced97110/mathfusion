@@ -1,0 +1,309 @@
+[
+ {
+  "code": "41-145",
+  "a_dire": "Le joule est l'unité du travail : un newton sur un mètre fait un joule.",
+  "legende_titre": "Du newton et du mètre au joule",
+  "lecture": [
+   "Chaque ligne du haut multiplie une force en newtons (bleu) par une longueur en mètres (gris).",
+   "Le résultat en joules est dans la case verte : 1 J, puis 1 000 J.",
+   "En bas, la force de 50 N (bleu) est inclinée de 30° (orange) par rapport au déplacement de 20 m (gris).",
+   "Le travail est alors d'environ 866,0 J (vert)."
+  ],
+  "a_voir": "Le joule est le produit d'une force par une longueur, corrigé par l'angle."
+ },
+ {
+  "code": "41-146",
+  "a_dire": "Avec les composantes, le travail est 5 fois 13 plus 2 fois 6, soit 77 joules.",
+  "legende_titre": "Le travail calculé avec les composantes",
+  "lecture": [
+   "La flèche violette est le déplacement du point (5 ; 7) au point (18 ; 13) : 13 vers la droite et 6 vers le haut.",
+   "La flèche bleue est la force, tracée au point de départ : 5 newtons et 2 newtons.",
+   "La case verte multiplie les composantes une à une et ajoute : 5 fois 13 plus 2 fois 6."
+  ],
+  "a_voir": "On multiplie composante par composante, puis on additionne : 77 joules."
+ },
+ {
+  "code": "41-147",
+  "a_dire": "Le volume du parallélépipède est le produit mixte : aire de la base fois hauteur, ici 4 fois 3, soit 12.",
+  "legende_titre": "Le volume du solide construit sur trois vecteurs",
+  "lecture": [
+   "Les flèches bleues 𝑢 et 𝑣 bordent la base bleu clair, d'aire 4.",
+   "La flèche orange est 𝑤 ; la flèche violette est 𝑢 × 𝑣, de composantes 0, 0 et 4.",
+   "La pile verte de 12 cubes a une base de 4 cubes et 3 étages : 4 fois 3."
+  ],
+  "a_voir": "Le produit scalaire 𝑤 ⋅ (𝑢 × 𝑣) donne 12, le nombre de cubes du volume."
+ },
+ {
+  "code": "41-148",
+  "a_dire": "Le vecteur nul n'a pas de direction : le calcul de l'angle demande de diviser 0 par 0, ce qui n'a pas de sens.",
+  "legende_titre": "Un vecteur sans direction",
+  "lecture": [
+   "La flèche bleue est le vecteur de composantes 3 et 4.",
+   "Le rond orange à l'origine est le vecteur nul : un point, sans direction.",
+   "La case grise montre la division demandée : 0 divisé par 0 fois 5, c'est-à-dire par 0.",
+   "Le produit scalaire vaut 0, mais cela ne dit rien sur l'angle."
+  ],
+  "a_voir": "Avec le vecteur nul, on ne peut pas parler d'angle ni d'orthogonalité."
+ },
+ {
+  "code": "41-149",
+  "a_dire": "À 90°, le produit scalaire vaut 0, donc la projection est le vecteur nul et le point H tombe sur O.",
+  "legende_titre": "Une projection qui ne bouge pas",
+  "lecture": [
+   "La flèche violette 𝑣 va de O à (4 ; 0). La flèche bleue 𝑢 va de O à (0 ; 3).",
+   "Le petit carré gris marque l'angle droit.",
+   "Le rond vert est le point H : il est sur O.",
+   "Le calcul 0 fois 4 plus 3 fois 0 donne 0."
+  ],
+  "a_voir": "Quand l'angle est droit, la projection de 𝑢 sur 𝑣 est le vecteur nul."
+ },
+ {
+  "code": "41-150",
+  "a_dire": "Une force perpendiculaire au déplacement ne travaille pas : porter un sac à hauteur constante donne un travail nul.",
+  "legende_titre": "Le sac porté sur 100 mètres",
+  "lecture": [
+   "La flèche bleue verticale est la force de 50 N qui porte le sac.",
+   "La flèche violette horizontale est le déplacement de 100 m.",
+   "Le petit carré gris marque l'angle droit de 90° entre les deux.",
+   "La case verte écrit le travail : 50 fois 100 fois 0, soit 0 joule."
+  ],
+  "a_voir": "Quand l'angle est de 90°, le facteur est 0 et le travail est nul."
+ },
+ {
+  "code": "41-151",
+  "a_dire": "Deux vecteurs sur la même droite donnent un produit vectoriel nul, car leur parallélogramme est aplati.",
+  "legende_titre": "Des vecteurs sur la même droite",
+  "lecture": [
+   "La flèche bleue 𝑢 et la flèche violette 𝑣 sont sur la même droite en pointillé.",
+   "Le parallélogramme qu'elles forment est aplati : son aire vaut 0.",
+   "La case verte calcule la troisième composante : 3 fois 8 moins 4 fois 6, soit 24 moins 24, soit 0."
+  ],
+  "a_voir": "Quand les vecteurs sont colinéaires, la composante du produit vectoriel est 0."
+ },
+ {
+  "code": "41-152",
+  "a_dire": "Pour des vecteurs colinéaires, le produit scalaire est plus ou moins le produit des normes : 50 ou moins 50.",
+  "legende_titre": "Deux sens possibles sur une même droite",
+  "lecture": [
+   "En haut, 𝑢 (bleu) et 𝑣 (violet) pointent dans le même sens : le produit scalaire vaut 50, soit 5 fois 10.",
+   "En bas, 𝑣 pointe dans le sens opposé : le produit scalaire vaut moins 50.",
+   "Les deux cas sont étiquetés « même sens » et « sens opposé ». Les longueurs des flèches sont les mêmes dans les deux cas."
+  ],
+  "a_voir": "Seul le signe change quand on retourne 𝑣 ; la valeur 5 fois 10 reste."
+ },
+ {
+  "code": "41-153",
+  "a_dire": "Pour ⟨3, 4⟩ et ⟨6, 8⟩, le produit scalaire vaut 50, égal au produit des normes 5 et 10.",
+  "legende_titre": "Un vecteur et son double",
+  "lecture": [
+   "La flèche violette 𝑣 est faite de deux flèches bleues 𝑢 bout à bout : 𝑣 est le double de 𝑢.",
+   "La case verte calcule : 3 fois 6 plus 4 fois 8, soit 18 plus 32, soit 50.",
+   "La case grise donne les normes 5 et 10, dont le produit vaut aussi 50."
+  ],
+  "a_voir": "Les deux calculs donnent le même nombre : 50."
+ },
+ {
+  "code": "41-154",
+  "a_dire": "Quand le triangle est aplati, la norme de 𝑢 moins 𝑣 est la différence des normes : 5 égale |5 moins 10|.",
+  "legende_titre": "Un triangle aplati sur une droite",
+  "lecture": [
+   "La barre violette a la longueur 10 : la norme de 𝑣.",
+   "La barre bleue a la longueur 5 : la norme de 𝑢.",
+   "La barre orange va de 5 à 10 : la norme de 𝑢 moins 𝑣, qui vaut 5.",
+   "La case verte écrit la valeur absolue de 5 moins 10, aussi égale à 5."
+  ],
+  "a_voir": "Les trois côtés sont sur la même droite et la formule reste vraie."
+ },
+ {
+  "code": "41-155",
+  "a_dire": "Trois vecteurs dans un même plan ont un produit mixte nul.",
+  "legende_titre": "Trois flèches posées sur le sol",
+  "lecture": [
+   "Les flèches bleue 𝑢, orange 𝑣 et violette 𝑤 sont toutes dans le sol gris : c’est écrit en bas à gauche.",
+   "La flèche verte part du sommet commun : c’est 𝑣 × 𝑤, qui descend, de composantes 0, 0 et moins 1.",
+   "Elle est à angle droit avec 𝑢, donc le produit scalaire avec 𝑢 vaut 0 : le produit mixte est 0."
+  ],
+  "a_voir": "Quand les trois vecteurs sont dans le même plan, le produit mixte vaut 0."
+ },
+ {
+  "code": "41-156",
+  "a_dire": "Si le produit mixte est nul, le troisième vecteur est dans le plan des deux autres.",
+  "legende_titre": "Un produit mixte nul place 𝑢 dans le plan",
+  "lecture": [
+   "Le plan gris est le plan de 𝑣 (orange) et de 𝑤 (violet).",
+   "La flèche verte verticale est 𝑣 × 𝑤, de composantes 0, 0 et 1.",
+   "La flèche bleue 𝑢, de composantes 2, 3 et 0, est posée dans ce plan.",
+   "La case verte lit la réciproque : le produit mixte vaut 0, donc u est dans le plan de v et w."
+  ],
+  "a_voir": "Un produit mixte égal à 0 veut dire que 𝑢 est dans le même plan que 𝑣 et 𝑤."
+ },
+ {
+  "code": "41-157",
+  "a_dire": "Le produit vectoriel n'est pas associatif : (𝑖 × 𝑖) × 𝑗 donne le vecteur nul et 𝑖 × (𝑖 × 𝑗) donne moins 𝑗.",
+  "legende_titre": "Deux regroupements, deux résultats",
+  "lecture": [
+   "La colonne bleue regroupe à gauche : 𝑖 × 𝑖 vaut le vecteur nul, puis le vecteur nul × 𝑗 donne le vecteur nul.",
+   "La colonne violette regroupe à droite : 𝑖 × 𝑗 vaut 𝑘, puis 𝑖 × 𝑘 donne moins 𝑗.",
+   "La case verte du bas écrit que les deux résultats sont différents."
+  ],
+  "a_voir": "Changer les parenthèses change le résultat."
+ },
+ {
+  "code": "41-158",
+  "a_dire": "Le chapitre rassemble des outils de trigonométrie : cosinus et sinus, cercle unité, arctangente et loi des cosinus.",
+  "legende_titre": "Quatre outils du chapitre",
+  "lecture": [
+   "En haut à gauche, un cosinus et un sinus donnent les composantes 50 et 86,60 du vent.",
+   "En haut à droite, le cercle unité donne les signes des composantes.",
+   "En bas à gauche, l'arc orange est l'angle donné par l'arctangente : la direction.",
+   "En bas à droite, le triangle de 𝑢, 𝑣 et 𝑢 moins 𝑣 sert à la loi des cosinus."
+  ],
+  "a_voir": "Chaque cadre est un outil de trigonométrie utilisé dans ce chapitre."
+ },
+ {
+  "code": "41-159",
+  "a_dire": "Hamilton avait un seul produit qui donnait un nombre et un vecteur ; Gibbs et Heaviside les ont séparés en produit scalaire et produit vectoriel.",
+  "legende_titre": "Un produit qui se sépare en deux",
+  "lecture": [
+   "La case violette du haut est le produit unique de Hamilton.",
+   "Gibbs et Heaviside le séparent en un nombre (bleu, produit scalaire) et un vecteur (orange, produit vectoriel).",
+   "Pour 𝑖 et 𝑗 : le nombre est 0 et le vecteur est 𝑘.",
+   "Pour 𝑖 et 𝑖 : le nombre est 1 et le vecteur est le vecteur nul."
+  ],
+  "a_voir": "Un produit donne deux morceaux : un nombre et un vecteur."
+ },
+ {
+  "code": "41-160",
+  "a_dire": "Le vecteur de composantes 50 et 86,60 ne s'écrit que d'une seule façon : 50 𝑖 plus 86,60 𝑗.",
+  "legende_titre": "Une seule écriture pour le vent",
+  "lecture": [
+   "La flèche bleue est le vent.",
+   "La flèche orange horizontale est 50 𝑖 ; la flèche orange verticale est 86,60 𝑗.",
+   "La case verte dit que 𝑎 égale 50 et 𝑏 égale 86,60, sans autre choix."
+  ],
+  "a_voir": "Les nombres 𝑎 et 𝑏 sont forcés : ce sont les composantes du vecteur."
+ },
+ {
+  "code": "41-161",
+  "a_dire": "Deux vecteurs qui ne sont pas sur la même droite forment une base ; 𝑖 et 2𝑖 n'en forment pas une.",
+  "legende_titre": "Quand deux vecteurs forment une base",
+  "lecture": [
+   "À gauche, les flèches bleue ⟨1, 1⟩ et violette ⟨1, −1⟩ ne sont pas sur la même droite.",
+   "Mises bout à bout, deux fois la bleue puis une fois la violette arrivent au vecteur vert ⟨3, 1⟩.",
+   "À droite, dans le cadre rouge, 𝑖 et 2𝑖 sont sur la même droite : ce n'est pas une base."
+  ],
+  "a_voir": "Une base demande deux vecteurs qui ne sont pas sur la même droite."
+ },
+ {
+  "code": "41-162",
+  "a_dire": "Les huit règles du calcul sur les vecteurs sont quatre règles d'addition et quatre règles de multiplication par un scalaire.",
+  "legende_titre": "Huit règles en deux colonnes",
+  "lecture": [
+   "La colonne bleue compte les quatre règles de l'addition : l'ordre, le regroupement, le vecteur nul, l'opposé.",
+   "La colonne orange compte les quatre règles de la multiplication par un scalaire.",
+   "La case verte du bas nomme le tout : huit règles, celles d'un espace vectoriel."
+  ],
+  "a_voir": "Quatre plus quatre font les huit règles."
+ },
+ {
+  "code": "41-163",
+  "a_dire": "Le produit scalaire est linéaire dans chaque variable : il respecte la somme et le doublement.",
+  "legende_titre": "Somme et doublement dans le produit scalaire",
+  "lecture": [
+   "En haut, la barre bleue de 10 et la barre orange de 8 mises bout à bout font la barre verte de 18.",
+   "Le produit de la somme est la somme des produits.",
+   "En bas, quand on double 𝑢 et 𝑣 ensemble, la barre de 10 devient la barre violette de 40, soit 2 fois 2 fois plus."
+  ],
+  "a_voir": "La somme se sépare en deux produits ; doubler les deux vecteurs multiplie le produit par 4."
+ },
+ {
+  "code": "41-164",
+  "a_dire": "Avec une autre forme, un vecteur non nul peut avoir une longueur au carré nulle.",
+  "legende_titre": "Une longueur au carré égale à 0",
+  "lecture": [
+   "La flèche bleue est le vecteur de composantes 1 et 1 : il n'est pas nul.",
+   "La case bleue donne la forme ordinaire : 1 au carré plus 1 au carré, soit 2.",
+   "La case violette donne une autre forme : 1 au carré moins 1 au carré, soit 0."
+  ],
+  "a_voir": "Le même vecteur donne 2 avec une forme et 0 avec l'autre."
+ },
+ {
+  "code": "41-165",
+  "a_dire": "La réflexion de 𝑢 s'obtient en retirant deux fois sa projection sur 𝑣.",
+  "legende_titre": "Retirer deux fois la projection",
+  "lecture": [
+   "La flèche bleue est 𝑢 = ⟨1, 3⟩ et la flèche violette est 𝑣 = ⟨4, 2⟩.",
+   "La flèche orange épaisse est la projection de 𝑢 sur 𝑣 : ⟨2, 1⟩.",
+   "La flèche orange fine, de 𝑢 vers le résultat, retire deux fois cette projection.",
+   "La flèche verte est le résultat ⟨−3, 1⟩ ; la droite en pointillé, perpendiculaire à 𝑣, passe au milieu. Le texte du bas écrit le calcul."
+  ],
+  "a_voir": "Le résultat est le symétrique de 𝑢 par rapport à la droite perpendiculaire à 𝑣."
+ },
+ {
+  "code": "41-166",
+  "a_dire": "Deux reflets successifs, par l'axe horizontal puis par l'axe vertical, font un demi-tour autour de l'origine.",
+  "legende_titre": "Deux reflets font un demi-tour",
+  "lecture": [
+   "Le rond bleu est le vecteur ⟨3, 2⟩.",
+   "Le premier reflet (flèche orange verticale) l'envoie sur ⟨3, −2⟩.",
+   "Le second reflet (flèche orange horizontale) l'envoie sur ⟨−3, −2⟩ (rond vert).",
+   "L'arc vert en pointillé est le demi-tour qui va directement du premier au dernier point."
+  ],
+  "a_voir": "Les deux reflets donnent le même résultat qu'un demi-tour."
+ },
+ {
+  "code": "41-167",
+  "a_dire": "Le déterminant u₁v₂ − u₂v₁ est l'aire orientée : 4 de 𝑢 vers 𝑣, moins 4 si on échange les vecteurs.",
+  "legende_titre": "Une aire qui a un signe",
+  "lecture": [
+   "Le parallélogramme vert est construit sur 𝑢 (bleu) et 𝑣 (violet).",
+   "À gauche, l’arc orange va de 𝑢 vers 𝑣 dans le sens inverse des aiguilles : l’aire orientée est 4, calculée par 2 fois 2 moins 0 fois 1.",
+   "À droite, l’arc va de 𝑣 vers 𝑢 dans le sens des aiguilles : l’aire orientée est moins 4."
+  ],
+  "a_voir": "Le sens de rotation donne le signe de l'aire."
+ },
+ {
+  "code": "41-168",
+  "a_dire": "Le produit mixte est le déterminant 3 × 3 : même volume, mais le signe change quand on échange deux lignes.",
+  "legende_titre": "Le produit mixte et l'échange de deux lignes",
+  "lecture": [
+   "À gauche, les lignes bleue 𝑢, violette 𝑣 et orange 𝑤 donnent 12.",
+   "À droite, 𝑣 et 𝑤 ont changé de place : le nombre devient moins 12.",
+   "Les trois lignes de nombres sont les mêmes dans les deux colonnes."
+  ],
+  "a_voir": "Échanger deux lignes change le signe, pas la valeur 12."
+ },
+ {
+  "code": "41-169",
+  "a_dire": "Les algèbres de Lie sont définies par deux règles : un vecteur croisé avec lui-même donne 0, et le produit vectoriel n'est pas associatif.",
+  "legende_titre": "Les deux règles du livre",
+  "lecture": [
+   "La case bleue donne la règle 1 : 𝑢 × 𝑢 vaut le vecteur nul, par exemple 𝑖 × 𝑖.",
+   "La case violette donne la règle 2 : (𝑖 × 𝑖) × 𝑗 vaut le vecteur nul et 𝑖 × (𝑖 × 𝑗) vaut moins 𝑗.",
+   "Les deux flèches mènent à la case verte : les algèbres de Lie."
+  ],
+  "a_voir": "Deux règles ensemble définissent ces algèbres."
+ },
+ {
+  "code": "41-170",
+  "a_dire": "Dans l'espace, il y a une seule direction perpendiculaire à deux vecteurs non colinéaires ; dans le plan aussi, pour un vecteur donné.",
+  "legende_titre": "Une seule droite perpendiculaire",
+  "lecture": [
+   "À gauche, 𝑖 (bleu) et 𝑗 (violet) sont posés sur le sol gris.",
+   "La droite verte en pointillé est la seule droite perpendiculaire aux deux ; 𝑘 = 𝑖 × 𝑗 est sur elle.",
+   "À droite, le vecteur bleu ⟨3, 4⟩ a pour perpendiculaire la droite verte portée par ⟨−4, 3⟩, avec un petit carré pour l'angle droit."
+  ],
+  "a_voir": "Dans chaque cas, toutes les perpendiculaires sont sur une même droite."
+ },
+ {
+  "code": "41-171",
+  "a_dire": "En dimension 4, perpendiculaire veut dire produit scalaire nul, et il existe trois directions différentes perpendiculaires à deux vecteurs donnés.",
+  "legende_titre": "Perpendiculaires en dimension 4",
+  "lecture": [
+   "Chaque ligne est un vecteur à quatre composantes : une case pleine vaut 1, une case vide vaut 0.",
+   "Les deux lignes bleues sont les vecteurs donnés : pleines en case 1, puis en case 2.",
+   "Les trois lignes vertes sont pleines seulement en case 3 ou en case 4 : leur produit scalaire avec les deux premières vaut 0."
+  ],
+  "a_voir": "Trois vecteurs différents sont perpendiculaires aux deux vecteurs donnés."
+ }
+]
