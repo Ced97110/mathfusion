@@ -1,0 +1,186 @@
+[
+ {
+  "code": "20-065",
+  "a_dire": "Avec ≤, la droite devient pleine, la zone passe de l'autre côté et O devient accepté.",
+  "legende_titre": "Un seul signe change, trois effets",
+  "lecture": [
+   "À gauche, le trait violet en pointillés est la droite de 𝑦 > 𝑥 + 1 ; la zone violette est au-dessus.",
+   "À droite, le trait bleu plein est la même droite avec ≤ ; la zone bleue est au-dessous.",
+   "Le point O est rouge à gauche (refusé) et vert à droite (accepté)."
+  ],
+  "a_voir": "Voir la même droite, pointillée puis pleine, avec la zone de l'autre côté."
+ },
+ {
+  "code": "20-066",
+  "a_dire": "Avec 𝑦 ≤ 𝑥 + 1, les couples sur la droite et sous la droite sont acceptés, ceux au-dessus sont refusés.",
+  "legende_titre": "Trois couples essayés avec ≤",
+  "lecture": [
+   "La zone bleue sous la droite et le trait bleu plein sont les solutions.",
+   "Le point rouge (0, 3) est au-dessus : 3 ≤ 1 est faux.",
+   "Les points verts (1, 2) sur la droite et (0, 0) sous la droite sont acceptés."
+  ],
+  "a_voir": "Voir que seul le point au-dessus de la droite est refusé."
+ },
+ {
+  "code": "20-067",
+  "a_dire": "Le point B(1, 2) est sur la droite et 2 ≤ 2 est vrai, donc B est une solution.",
+  "legende_titre": "Un point de la droite accepté par ≤",
+  "lecture": [
+   "Le point vert B est sur le trait bleu plein, à l'endroit (1, 2).",
+   "Dans la case bleue, le second nombre y vaut 2.",
+   "Dans la case orange, le premier nombre plus 1 vaut 2.",
+   "Les deux cases mènent à la case verte : 2 ≤ 2, vrai."
+  ],
+  "a_voir": "Voir que les deux côtés valent 2 et que ≤ accepte l'égalité."
+ },
+ {
+  "code": "20-068",
+  "a_dire": "Le point test (0, 0) donne 0 ≤ 1, vrai, donc on hachure le côté de ce point, le dessous.",
+  "legende_titre": "Le test de l'origine décide du côté",
+  "lecture": [
+   "Le point vert O est le point test, en (0, 0).",
+   "La zone bleue hachurée est le côté de O, sous la droite.",
+   "Les trois cases se suivent : le calcul, le résultat vrai, puis la décision de hachurer le côté de O."
+  ],
+  "a_voir": "Voir que le résultat vrai du test place la zone hachurée du côté de O."
+ },
+ {
+  "code": "20-069",
+  "a_dire": "Les deux inéquations se partagent le plan : chaque point est d'un seul côté, jamais des deux.",
+  "legende_titre": "Deux inéquations, un seul partage",
+  "lecture": [
+   "La zone violette au-dessus est 𝑦 > 𝑥 + 1.",
+   "La zone bleue sous la droite, et la droite elle-même, est 𝑦 ≤ 𝑥 + 1.",
+   "Le point (0, 3) est violet ; (1, 2) et (0, 0) sont bleus.",
+   "Chaque point a une seule couleur."
+  ],
+  "a_voir": "Voir que chaque point tombe dans une seule des deux zones, sans vide ni recouvrement."
+ },
+ {
+  "code": "20-070",
+  "a_dire": "La droite frontière est acceptée par ≤ et refusée par >, donc elle va avec ≤.",
+  "legende_titre": "À qui appartient la droite",
+  "lecture": [
+   "Le trait bleu épais est la droite ; le point B(1, 2) est dessus.",
+   "La case rouge dit que 𝑦 > 𝑥 + 1 est faux pour B.",
+   "La case verte dit que 𝑦 ≤ 𝑥 + 1 est vrai pour B.",
+   "La zone violette est au-dessus, la zone bleue au-dessous."
+  ],
+  "a_voir": "Voir que le point de la droite est dans la zone du ≤, pas dans celle du >."
+ },
+ {
+  "code": "20-071",
+  "a_dire": "Sur la droite des nombres, 𝑥 > 2 et 𝑥 ≤ 2 séparent les nombres, et 2 va avec ≤.",
+  "legende_titre": "Le même partage sur la droite des nombres",
+  "lecture": [
+   "La flèche bleue vers la gauche, qui part de 2, est 𝑥 ≤ 2 ; son point est plein.",
+   "La flèche violette vers la droite est 𝑥 > 2 ; son point de départ est vide.",
+   "Sur la droite graduée, 0 et 2 sont bleus et 3 est violet."
+  ],
+  "a_voir": "Voir que 2 est dans le groupe bleu et 3 dans le groupe violet."
+ },
+ {
+  "code": "20-072",
+  "a_dire": "La méthode transforme la contrainte 2𝑥 + 3𝑦 ≤ 12 en un dessin : une droite pleine et une zone.",
+  "legende_titre": "De la phrase au dessin",
+  "lecture": [
+   "La case bleue à gauche est la contrainte du budget.",
+   "La flèche orange, nommée méthode, mène au dessin.",
+   "Le trait plein et la zone bleue sont les achats permis ; les deux points sont (0, 4) et (6, 0).",
+   "Les lignes grises rappellent : 𝑥 pains, 𝑦 gâteaux, budget 12 €."
+  ],
+  "a_voir": "Voir qu'une phrase devient une droite pleine avec une zone."
+ },
+ {
+  "code": "20-073",
+  "a_dire": "L'étape 1 remplace ≤ par = pour obtenir la frontière 2𝑥 + 3𝑦 = 12.",
+  "legende_titre": "Étape 1 : la frontière",
+  "lecture": [
+   "La case bleue du haut est la contrainte avec ≤ ; le dessin du haut montre la zone.",
+   "La flèche orange remplace ≤ par =.",
+   "La case orange du bas est l'équation ; le dessin du bas montre seulement la droite orange, sans zone."
+  ],
+  "a_voir": "Voir que la frontière est la droite seule, sans zone."
+ },
+ {
+  "code": "20-074",
+  "a_dire": "On met 𝑥 à 0 puis 𝑦 à 0 pour trouver (0, 4) et (6, 0), et le signe ≤ donne une droite pleine.",
+  "legende_titre": "Deux points sur les axes",
+  "lecture": [
+   "La case orange du haut donne 𝑥 = 0 et 𝑦 = 4 : le point (0, 4) sur l'axe vertical.",
+   "La case orange du milieu donne 𝑦 = 0 et 𝑥 = 6 : le point (6, 0) sur l'axe horizontal.",
+   "Le trait bleu plein passe par les deux points.",
+   "La case bleue rappelle que ≤ donne un trait plein."
+  ],
+  "a_voir": "Voir que les deux points sur les axes suffisent pour tracer la droite."
+ },
+ {
+  "code": "20-075",
+  "a_dire": "Le test de (0, 0) donne 0 ≤ 12, vrai, donc on hachure le côté de l'origine.",
+  "legende_titre": "Étape 2 : le point test",
+  "lecture": [
+   "Le point vert O est l'origine ; elle n'est pas sur la droite.",
+   "La zone bleue est le côté de O.",
+   "Les cases vont du calcul au résultat vrai, puis à la décision de hachurer le côté de O."
+  ],
+  "a_voir": "Voir que O est sous la droite et que la zone est de son côté."
+ },
+ {
+  "code": "20-076",
+  "a_dire": "Le point (3, 2) est sur la frontière : 6 + 6 = 12, le budget est exactement dépensé.",
+  "legende_titre": "Le budget exactement dépensé",
+  "lecture": [
+   "Le point vert (3, 2) est sur le trait bleu.",
+   "Les trois cases donnent le calcul : 2 × 3 + 3 × 2, puis 6 + 6 = 12, puis 12 ≤ 12 vrai.",
+   "Sous le dessin, 6 cases bleues (pains) et 6 cases orange (gâteaux) remplissent exactement les 12 € du budget."
+  ],
+  "a_voir": "Voir que les 12 cases remplissent tout le budget, sans reste."
+ },
+ {
+  "code": "20-077",
+  "a_dire": "Le point (4, 2) coûte 14 €, plus que 12 € : 14 ≤ 12 est faux.",
+  "legende_titre": "Le budget dépassé",
+  "lecture": [
+   "Le point rouge (4, 2) est de l'autre côté de la droite, hors de la zone.",
+   "Les cases donnent le calcul : 8 + 6 = 14, puis 14 ≤ 12 faux.",
+   "Sous le dessin, 8 cases bleues (pains) et 6 cases orange et rouges (gâteaux) dépassent les 12 cases du budget.",
+   "Les 2 cases rouges sont le trop."
+  ],
+  "a_voir": "Voir que les achats dépassent le budget de 2 cases."
+ },
+ {
+  "code": "20-078",
+  "a_dire": "Le point (1, 1) coûte 5 € ; 5 ≤ 12 est vrai et il reste 7 €.",
+  "legende_titre": "Un achat à l'intérieur : il reste de l'argent",
+  "lecture": [
+   "Le point vert (1, 1) est dans la zone bleue, pas sur la droite.",
+   "Les cases donnent le calcul : 2 + 3 = 5, puis 5 ≤ 12 vrai.",
+   "Sous le dessin, 2 cases bleues (pain), 3 cases orange (gâteau) et 7 cases vertes : l'argent qui reste."
+  ],
+  "a_voir": "Voir les 7 cases vertes qui restent dans le budget."
+ },
+ {
+  "code": "20-079",
+  "a_dire": "Le couple (−2, 4) vérifie l'inéquation mais n'a pas de sens : on ne peut pas acheter −2 pains.",
+  "legende_titre": "Un couple juste mais impossible",
+  "lecture": [
+   "Le point rouge (−2, 4) est dans la zone bleue, à gauche de l'axe vertical.",
+   "Le trait rouge en pointillés descend vers l'axe horizontal, au point −2 : −2 pains.",
+   "Les cases vertes montrent que le calcul est vrai : 8 ≤ 12.",
+   "La case rouge dit que c'est impossible, car 𝑥 est négatif."
+  ],
+  "a_voir": "Voir que la zone contient des points à gauche de 0, qui n'ont pas de sens."
+ },
+ {
+  "code": "20-080",
+  "a_dire": "On ajoute 𝑥 ≥ 0 et 𝑦 ≥ 0 pour refuser les couples sans sens comme (−2, 4).",
+  "legende_titre": "Deux inéquations en plus",
+  "lecture": [
+   "La zone verte, à droite de l'axe vertical et au-dessus de l'axe horizontal, est permise.",
+   "La zone rouge, à gauche de l'axe vertical ou sous l'axe horizontal, est refusée.",
+   "Le point rouge (−2, 4) est dans la zone refusée.",
+   "Les trois cases bleues sont les trois inéquations à vérifier."
+  ],
+  "a_voir": "Voir que la zone permise est limitée par les deux axes et la droite."
+ }
+]

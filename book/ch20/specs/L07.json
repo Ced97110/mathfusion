@@ -1,0 +1,175 @@
+[
+ {
+  "code": "20-097",
+  "a_dire": "Si c est négatif ou nul, la phrase 0 < c est fausse pour tous les couples : aucun point n'est solution.",
+  "legende_titre": "Deux valeurs de c, aucune solution",
+  "lecture": [
+   "Sur la droite, les deux points rouges sont c = -3 et c = 0.",
+   "Dans chaque boîte rouge, la phrase correspondante est fausse.",
+   "Le grand cadre rouge en pointillés dit le résultat : aucun point n'est solution."
+  ],
+  "a_voir": "Pour ces deux valeurs de c, la phrase est fausse, donc aucun point du plan n'est solution."
+ },
+ {
+  "code": "20-098",
+  "a_dire": "Quand les deux lettres ont disparu, il n'y a plus de côté : la phrase vaut pour tout le plan ou pour rien, donc plus de demi-plan.",
+  "legende_titre": "Sans lettres, plus de côté",
+  "lecture": [
+   "À gauche, le triangle bleu est une moitié du carré : c'est le demi-plan, avec x et y.",
+   "Au milieu, le carré vert est plein : 0 < 5 est vrai pour tout couple.",
+   "À droite, le carré rouge en pointillés est vide : 0 < -3 est faux pour tout couple."
+  ],
+  "a_voir": "Avec x et y, le plan est coupé en deux côtés ; sans eux, on a tout le plan ou rien."
+ },
+ {
+  "code": "20-099",
+  "a_dire": "Un problème réel a plusieurs contraintes, chacune est un demi-plan, et un achat doit être dans les trois à la fois.",
+  "legende_titre": "Trois contraintes, trois demi-plans",
+  "lecture": [
+   "Les trois petits carrés du haut montrent un demi-plan chacun : le budget en bleu, x ≥ 0 en orange, y ≥ 0 en violet.",
+   "Le grand carré du bas superpose les trois droites frontières.",
+   "Le triangle vert est la zone commune : elle est dans les trois demi-plans à la fois."
+  ],
+  "a_voir": "La zone commune est plus petite que chaque demi-plan, car elle respecte les trois contraintes."
+ },
+ {
+  "code": "20-100",
+  "a_dire": "Deux demi-plans superposés donnent une zone commune qui a un coin, plus petite que chacun des deux.",
+  "legende_titre": "Deux contraintes à la fois",
+  "lecture": [
+   "La droite orange est la frontière de y ≤ x + 1 ; la droite bleue est celle de x + y ≤ 3.",
+   "Les petites flèches de couleur montrent le côté gardé par chaque contrainte.",
+   "La zone verte garde les points qui respectent les deux ; les flèches vertes montrent qu’elle continue vers le bas.",
+   "Le point vert S est le coin de la zone, là où les droites se croisent."
+  ],
+  "a_voir": "La zone verte a un coin en S, alors que chaque demi-plan seul a un bord droit."
+ },
+ {
+  "code": "20-101",
+  "a_dire": "Le sommet est le point où deux frontières se croisent ; c'est un coin de la zone des solutions.",
+  "legende_titre": "Le coin où deux droites se croisent",
+  "lecture": [
+   "La droite orange est la première frontière ; la droite bleue est la seconde.",
+   "Elles se croisent en un seul point : le point vert S = (1, 2).",
+   "La zone verte a ce point comme coin."
+  ],
+  "a_voir": "S est sur la première frontière et sur la seconde à la fois, et c'est un coin de la zone verte."
+ },
+ {
+  "code": "20-102",
+  "a_dire": "La zone commune est la partie du plan qui est dans tous les demi-plans à la fois.",
+  "legende_titre": "Ce qui est dans les deux à la fois",
+  "lecture": [
+   "Le premier carré montre en orange le demi-plan de y ≤ x + 1.",
+   "Le deuxième carré montre en bleu le demi-plan de x + y ≤ 3.",
+   "Le troisième carré montre en vert la partie qui est dans les deux."
+  ],
+  "a_voir": "Le vert du troisième carré est ce que l'orange et le bleu ont en commun."
+ },
+ {
+  "code": "20-103",
+  "a_dire": "Trouver le sommet, c'est résoudre un système d'équations : remplacer y par x + 1 donne x = 1, puis y = 2.",
+  "legende_titre": "Du point de croisement au calcul",
+  "lecture": [
+   "Les deux boîtes du haut sont les deux équations : y = x + 1 en orange, x + y = 3 en bleu.",
+   "Les boîtes suivantes montrent les étapes : on remplace y par x + 1, puis on simplifie.",
+   "La boîte verte donne le couple trouvé : x = 1 et y = 2.",
+   "À droite, les deux droites se croisent au point vert S."
+  ],
+  "a_voir": "Le point de croisement S est le couple qui vérifie les deux équations en même temps."
+ },
+ {
+  "code": "20-104",
+  "a_dire": "On vérifie que S = (1, 2) est bon en remplaçant dans les deux égalités : 2 = 1 + 1 et 1 + 2 = 3.",
+  "legende_titre": "Vérifier le couple (1, 2)",
+  "lecture": [
+   "À gauche, le point vert S = (1, 2) est sur la droite orange et sur la droite bleue.",
+   "La boîte orange vérifie la première égalité avec x = 1 et y = 2 : 2 = 1 + 1.",
+   "La boîte bleue vérifie la seconde égalité : 1 + 2 = 3.",
+   "Chaque boîte est marquée vrai."
+  ],
+  "a_voir": "Les deux calculs sont vrais, donc le couple (1, 2) vérifie les deux égalités."
+ },
+ {
+  "code": "20-105",
+  "a_dire": "Les contraintes 2x + 3y ≤ 12, x ≥ 0 et y ≥ 0 donnent une zone fermée en forme de triangle, de coins (0, 0), (6, 0) et (0, 4).",
+  "legende_titre": "Trois contraintes, un triangle",
+  "lecture": [
+   "La droite bleue est le bord du budget 2x + 3y ≤ 12.",
+   "La droite orange est l'axe où x = 0 ; la droite violette est l'axe où y = 0.",
+   "Le triangle vert est la zone commune.",
+   "Les trois points verts sont ses coins : (0, 0), (6, 0) et (0, 4)."
+  ],
+  "a_voir": "Les trois bords entourent la zone de tous les côtés : elle est fermée."
+ },
+ {
+  "code": "20-106",
+  "a_dire": "Sur un côté du triangle, le plaisir x + 2y change régulièrement ; le plus grand vaut 8 et il est atteint en un coin.",
+  "legende_titre": "Le plaisir aux coins du triangle",
+  "lecture": [
+   "Les points bleus sont les coins (0, 0) et (6, 0), où le plaisir vaut 0 et 6.",
+   "Le point vert est le coin (0, 4), où le plaisir vaut 8.",
+   "Le point orange est le milieu (3, 2) du côté, où le plaisir vaut 7.",
+   "Sur ce côté, on lit 6, 7, 8 : la valeur monte du même pas."
+  ],
+  "a_voir": "Sur ce côté, la plus grande valeur, 8, est au bout et non au milieu."
+ },
+ {
+  "code": "20-107",
+  "a_dire": "L'optimisation linéaire cherche, dans une zone, le point qui rend une quantité la plus grande possible.",
+  "legende_titre": "Chercher le meilleur point",
+  "lecture": [
+   "Le premier carré montre un système d'équations : les droites se croisent en un point vert.",
+   "Le deuxième carré montre un système d'inéquations : une zone verte.",
+   "Le troisième carré montre la zone du triangle avec un point orange, celui qui rend x + 2y le plus grand."
+  ],
+  "a_voir": "Les deux premiers donnent un point ou une zone ; le troisième cherche le meilleur point dans la zone."
+ },
+ {
+  "code": "20-108",
+  "a_dire": "Le chapitre a deux faces : les équations donnent les sommets, les inéquations donnent la région que ces sommets bordent.",
+  "legende_titre": "Deux faces : sommets et région",
+  "lecture": [
+   "Les trois points orange sont les sommets du triangle, trouvés avec des équations.",
+   "La surface bleue est la région, décrite avec des inéquations.",
+   "Les sommets sont aux coins de la région."
+  ],
+  "a_voir": "Les sommets orange bordent la région bleue : les équations donnent les bords de la zone."
+ },
+ {
+  "code": "20-109",
+  "a_dire": "Résoudre un système d'inéquations, c'est garder la région commune à deux demi-plans.",
+  "legende_titre": "Garder ce qui est dans les deux",
+  "lecture": [
+   "La droite orange est la frontière de y ≤ x + 1 ; la droite bleue est celle de x + y ≤ 3.",
+   "La région verte est commune aux deux demi-plans.",
+   "Le point (1, 1) est dans la région verte.",
+   "Le point rouge (5, 0) est dehors : il ne respecte que la première."
+  ],
+  "a_voir": "Un point est solution du système seulement s'il est dans la région verte."
+ },
+ {
+  "code": "20-110",
+  "a_dire": "On compare un couple à une droite : il est en dessous ou au-dessus.",
+  "legende_titre": "Un couple, en dessous ou au-dessus",
+  "lecture": [
+   "La droite bleue est la droite y = x + 1.",
+   "Le point orange (0, 0) est en dessous : 0 est plus petit que 1.",
+   "Le point violet (0, 3) est au-dessus : 3 est plus grand que 1.",
+   "Le petit point bleu (0, 1) est sur la droite, au même x."
+  ],
+  "a_voir": "Pour le même x = 0, le point (0, 0) est plus bas que la droite et le point (0, 3) est plus haut."
+ },
+ {
+  "code": "20-111",
+  "a_dire": "Si deux frontières sont parallèles, elles ne se croisent pas : il n'y a pas de sommet, et ici aucune zone commune.",
+  "legende_titre": "Deux frontières qui ne se croisent pas",
+  "lecture": [
+   "La droite orange en pointillés est la frontière de y > x + 1 ; la zone orange est au-dessus.",
+   "La droite bleue en pointillés est la frontière de y < x - 1 ; la zone bleue est en dessous.",
+   "Les deux droites ont la même pente 1 : elles sont parallèles.",
+   "Le point (0, 3) est dans la zone orange, pas dans la bleue."
+  ],
+  "a_voir": "Les deux zones ne se touchent pas : il n'y a ni croisement, ni zone commune."
+ }
+]

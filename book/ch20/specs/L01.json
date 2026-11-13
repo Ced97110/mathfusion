@@ -1,0 +1,178 @@
+[
+ {
+  "code": "20-001",
+  "a_dire": "Un budget de 12 € limite deux achats à la fois : 3 pains et 2 gâteaux coûtent 12 €, 4 pains et 2 gâteaux coûtent 14 €.",
+  "legende_titre": "Deux achats comparés au budget",
+  "lecture": [
+   "Les cases bleues sont les pains, à 2 € chacun ; les cases orange sont les gâteaux, à 3 € chacun.",
+   "La première ligne a 3 pains et 2 gâteaux : le total est 12 €, en vert, donc permis.",
+   "La deuxième ligne a 4 pains et 2 gâteaux : le total est 14 €, en rouge, donc trop."
+  ],
+  "a_voir": "Le total des deux coûts est comparé au budget de 12 €."
+ },
+ {
+  "code": "20-002",
+  "a_dire": "La lettre x est le nombre de pains et la lettre y le nombre de gâteaux ; le couple (3, 2) donne x = 3 et y = 2.",
+  "legende_titre": "Un nom pour chaque nombre",
+  "lecture": [
+   "Les 3 cases bleues sont les pains ; l'accolade bleue les relie à la lettre x.",
+   "Les 2 cases orange sont les gâteaux ; l'accolade orange les relie à la lettre y.",
+   "En bas, le couple (x, y) vaut (3, 2)."
+  ],
+  "a_voir": "x compte les pains, y compte les gâteaux."
+ },
+ {
+  "code": "20-003",
+  "a_dire": "La contrainte 2x + 3y ≤ 12 se lit : la dépense des pains plus celle des gâteaux est au plus 12.",
+  "legende_titre": "Lire 2x + 3y ≤ 12 morceau par morceau",
+  "lecture": [
+   "Le 2x bleu est la dépense des pains ; le 3y orange est la dépense des gâteaux.",
+   "Le signe ≤ se lit « au plus » ; le 12 gris est le budget en euros.",
+   "En bas, 3 pains et 2 gâteaux donnent 12 ≤ 12, vrai en vert ; 4 pains et 2 gâteaux donnent 14 ≤ 12, faux en rouge."
+  ],
+  "a_voir": "Chaque morceau de l'écriture a un sens ; la contrainte est vraie ou fausse pour un achat."
+ },
+ {
+  "code": "20-004",
+  "a_dire": "Une seule contrainte relie les pains et les gâteaux : les limites séparées de 6 pains et de 4 gâteaux permettraient 24 €, plus que 12 €.",
+  "legende_titre": "Deux limites séparées ne suffisent pas",
+  "lecture": [
+   "La droite bleue est 2x + 3y = 12 ; le triangle vert en dessous est la zone permise.",
+   "Le rectangle en pointillés gris montre les deux limites séparées : au plus 6 pains, au plus 4 gâteaux.",
+   "Le point rouge (6, 4) est permis par les deux limites, mais coûte 24 €."
+  ],
+  "a_voir": "Plus on prend de pains, moins on peut prendre de gâteaux."
+ },
+ {
+  "code": "20-005",
+  "a_dire": "Le nombre de pains au plus dépend du nombre de gâteaux : 6, puis 3, puis 0.",
+  "legende_titre": "Les pains possibles changent avec les gâteaux",
+  "lecture": [
+   "Chaque ligne fixe un nombre de gâteaux avec des cases orange : 0, 2, puis 4.",
+   "Les cases bleues pleines sont les pains au plus ; les cases en pointillés sont les pains qu'on ne peut plus prendre.",
+   "Le nombre bleu à droite vaut 6, 3, puis 0."
+  ],
+  "a_voir": "La réponse sur les pains change quand le nombre de gâteaux change."
+ },
+ {
+  "code": "20-006",
+  "a_dire": "Les achats 6 pains et 0 gâteau, 3 pains et 2 gâteaux, 0 pain et 4 gâteaux dépensent 12 € et sont alignés sur une droite.",
+  "legende_titre": "Trois achats à 12 € sur une même ligne",
+  "lecture": [
+   "Les trois points verts sont les couples (6, 0), (3, 2) et (0, 4).",
+   "Les traits orange montrent le passage d'un point au suivant : moins 3 pains, plus 2 gâteaux.",
+   "La ligne en pointillés gris passe par les trois points."
+  ],
+  "a_voir": "Les achats qui dépensent exactement 12 € suivent une même ligne."
+ },
+ {
+  "code": "20-007",
+  "a_dire": "Entre deux couples qui conviennent, il y en a toujours un autre : la liste ne finit pas.",
+  "legende_titre": "Toujours un couple entre deux",
+  "lecture": [
+   "La droite graduée porte les valeurs de y, pour x = 3, de 1 à 2.",
+   "Les quatre disques verts sont les couples (3 ; 1), (3 ; 1,25), (3 ; 1,5) et (3 ; 2).",
+   "Les petits points bleus sont d'autres couples placés entre eux."
+  ],
+  "a_voir": "On peut toujours placer un nouveau couple entre deux autres."
+ },
+ {
+  "code": "20-008",
+  "a_dire": "Les couples qui vérifient une équation linéaire forment une droite.",
+  "legende_titre": "Une équation donne une droite",
+  "lecture": [
+   "Les trois grands disques bleus sont les couples (0, 1), (1, 3) et (2, 5).",
+   "La droite bleue passe par eux et porte l'égalité y = 2x + 1.",
+   "Les petits points bleus sur la droite sont d'autres couples qui vérifient la même égalité."
+  ],
+  "a_voir": "Une infinité de couples tient dans un seul trait."
+ },
+ {
+  "code": "20-009",
+  "a_dire": "Les couples d'une inéquation forment une région du plan, pas seulement une ligne.",
+  "legende_titre": "Une inéquation donne une région",
+  "lecture": [
+   "Le triangle bleu est la région des couples permis.",
+   "La ligne bleue épaisse est la droite ; le point (3, 2) est dessus.",
+   "Les points (1, 1) et (0, 0) sont dans la région, à côté de la droite."
+  ],
+  "a_voir": "Des couples en dehors de la droite font aussi partie de la région."
+ },
+ {
+  "code": "20-010",
+  "a_dire": "L'inéquation y > x + 1 accepte certains couples et en refuse d'autres : (0, 3) oui, (0, 0) non.",
+  "legende_titre": "Un exemple plus simple à dessiner",
+  "lecture": [
+   "La droite bleue en pointillés est y = x + 1.",
+   "Le point vert (0, 3) vérifie 3 > 1 : c'est vrai.",
+   "Le point rouge (0, 0) donne 0 > 1 : c'est faux."
+  ],
+  "a_voir": "y > x + 1 accepte (0, 3) et refuse (0, 0)."
+ },
+ {
+  "code": "20-011",
+  "a_dire": "Les couples solutions de y > x + 1 remplissent tout un côté de la droite, qui sert de bord en pointillés.",
+  "legende_titre": "Toute la zone au-dessus de la droite",
+  "lecture": [
+   "La zone bleue est l'ensemble des points dont y dépasse x + 1.",
+   "La droite en pointillés est le bord de la zone.",
+   "Le point vert A(−1, 2) est dans la zone ; le point rouge O(0, 0) est dehors."
+  ],
+  "a_voir": "La zone continue d'un côté de la droite ; l'autre côté est dehors."
+ },
+ {
+  "code": "20-012",
+  "a_dire": "Les points de la droite en pointillés sont exclus, comme le point vide sur la droite des nombres.",
+  "legende_titre": "Pointillés et point vide : même rôle",
+  "lecture": [
+   "En haut, le point vide en 2 exclut le nombre 2 de x > 2.",
+   "En bas, la droite en pointillés exclut ses points de la zone y > x + 1.",
+   "Les petits ronds vides sur la droite rappellent que ces points ne comptent pas."
+  ],
+  "a_voir": "Dans les deux cas, la limite marque ce qui est exclu."
+ },
+ {
+  "code": "20-013",
+  "a_dire": "La zone hachurée est l'ensemble des couples d'une inéquation ; elle a une surface, contrairement à la droite et à la demi-droite.",
+  "legende_titre": "Trois ensembles de solutions côte à côte",
+  "lecture": [
+   "Le cadre de gauche montre la droite violette : des couples d'une équation.",
+   "Le cadre du milieu montre la demi-droite violette avec un point vide : des nombres d'une inéquation.",
+   "Le cadre de droite montre la zone bleue hachurée : des couples d'une inéquation."
+  ],
+  "a_voir": "Seule la zone hachurée remplit une surface."
+ },
+ {
+  "code": "20-014",
+  "a_dire": "Pour A(−1, 2), on remplace x par −1 et y par 2 : 2 > 0 est vrai, donc A est solution.",
+  "legende_titre": "Vérifier le point A",
+  "lecture": [
+   "La boîte bleue du haut est l'inéquation y > x + 1.",
+   "La boîte orange est l'inéquation après remplacement de x et de y.",
+   "La boîte verte donne 2 > 0, avec le mot « vrai »."
+  ],
+  "a_voir": "On remplace, on calcule, puis on compare : ici le résultat est vrai."
+ },
+ {
+  "code": "20-015",
+  "a_dire": "Pour O(0, 0), on remplace x et y par 0 : 0 > 1 est faux, donc O n'est pas solution.",
+  "legende_titre": "Vérifier le point O",
+  "lecture": [
+   "La boîte bleue du haut est l'inéquation y > x + 1.",
+   "La boîte orange est l'inéquation après remplacement de x et de y par 0.",
+   "La boîte rouge donne 0 > 1, avec le mot « faux »."
+  ],
+  "a_voir": "Le même calcul donne ici un résultat faux."
+ },
+ {
+  "code": "20-016",
+  "a_dire": "Un point de la droite, (1, 2), donne 2 > 2, qui est faux : les points de la droite ne sont pas solutions.",
+  "legende_titre": "Un point de la droite est refusé",
+  "lecture": [
+   "La boîte bleue du haut est l'inéquation y > x + 1.",
+   "La boîte orange est l'inéquation après remplacement par x = 1 et y = 2.",
+   "La boîte rouge donne 2 > 2 : un nombre n'est pas plus grand que lui-même."
+  ],
+  "a_voir": "Sur la droite, les deux côtés sont égaux, donc l'inéquation est fausse."
+ }
+]
