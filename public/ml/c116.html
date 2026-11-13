@@ -1,0 +1,348 @@
+<div class="pk">Chapitre 116</div>
+<h1>Monte-Carlo par chaînes de Markov</h1>
+<p class="h1en">Markov chain Monte Carlo</p>
+<p><b>Sources</b> — Vol. 3, §5.2.2 « Wait, Did Markov Brake the Chains and Run Away To Monte Carlo ? » (p. 331 ; début du §5.2.2.1 (p. 332.</p>
+<h2>1. Le problème concret</h2>
+<p class="h2en">1. The concrete problem</p>
+<p>À la fin du chapitre 115, tu as fabriqué une suite de points pour les quatre caméras du couloir : <span class="m">𝐶</span><sup class="m">0</sup> <span class="m">→ 𝐶</span><sup class="m">1</sup> <span class="m">→ 𝐶</span><sup class="m">2</sup> <span class="m">→ …</span> Chaque point est tiré à partir du précédent, et de lui seul. Le livre source s’arrête alors et demande : « Attends, encore Markov ? » Oui. Une suite où le pas suivant ne dépend que de l’état présent est une chaîne de Markov (chapitre 113).</p>
+<p class="en">At the end of chapter 115, you made a sequence of points for the four cameras of the corridor: <span class="m">𝐶</span><sup class="m">0</sup> <span class="m">→ 𝐶</span><sup class="m">1</sup> <span class="m">→ 𝐶</span><sup class="m">2</sup> <span class="m">→ …</span> Each point is drawn from the previous one, and from it alone. The source book then stops and asks: “Wait, Markov again?” Yes. A sequence in which the next step depends only on the present state is a Markov chain (chapter 113).</p>
+<p>Pourquoi fabriquer ces points ? Pour compter. Au chapitre 102, la méthode de Monte-Carlo estimait une probabilité ainsi : tirer beaucoup de points au hasard, puis compter la part de ceux qui tombent dans la zone voulue. Pour les caméras, la zone voulue est « les quatre caméras regardent ailleurs en même temps ». Mais cette méthode suppose une chose : savoir tirer des points indépendants dans la bonne loi. Pour quatre angles liés, on ne sait pas le faire directement.</p>
+<p class="en">Why make these points? To count. In chapter 102, the Monte Carlo method estimated a probability like this: draw many points at random, then count the share of those that fall in the desired zone. For the cameras, the desired zone is “all four cameras look elsewhere at the same time”. But this method assumes one thing: knowing how to draw independent points from the right law. For four linked angles, we do not know how to do that directly.</p>
+<p>Ce blocage est réel et ancien. En 1953, à Los Alamos, Nicholas Metropolis, Arianna et Marshall Rosenbluth, Augusta et Edward Teller voulaient calculer des moyennes sur les positions de quelques centaines de particules dans un fluide. Tirer d’un coup une configuration entière, indépendante des autres, était impossible. Ils ont fait autrement : déplacer une particule à la fois, garder la configuration obtenue, recommencer. Ils ont obtenu une chaîne de configurations, et ils ont fait leurs moyennes sur cette chaîne. C’est la naissance de la méthode de ce chapitre.</p>
+<p class="en">This obstacle is real and old. In 1953, at Los Alamos, Nicholas Metropolis, Arianna and Marshall Rosenbluth, Augusta and Edward Teller wanted to compute averages over the positions of a few hundred particles in a fluid. Drawing a whole configuration at once, independent of the others, was impossible. They did it differently: move one particle at a time, keep the configuration obtained, start again. They obtained a chain of configurations, and they computed their averages over this chain. This is the birth of this chapter’s method.</p>
+<p>Pour tout voir, prenons un cas minuscule. Une seule caméra, réduite à trois positions : gauche G, centre C, droite D. Toutes les dix minutes, elle bouge selon une règle fixe. La figure 116.1 (en haut) dessine la caméra et la règle. Ces nombres sont inventés pour l’exemple :</p>
+<img class="vm" src="/ml/img/c116/p5317_1.svg" alt="• depuis G : rester en G avec probabilité 1, aller en 2 C avec 1 ; 2 • depuis C : aller en G avec 1, rester en C avec 1, 4 2 aller en D avec 1 ; 4 • depuis D : aller en C avec 1, rester en D avec 1. 2 2" style="--w:24.31" loading="lazy">
+<p>La caméra ne saute jamais de G à D : elle passe par le centre.</p>
+<p class="en">To see everything, let us take a tiny case. One single camera, reduced to three positions: left G, center C, right D. Every ten minutes it moves according to a fixed rule. Figure 116.1 (top) draws the camera and the rule. These numbers are made up for the example: from G, stay in G with</p>
+<img class="vm" src="/ml/img/c116/p5318_2.svg" alt="probability 1, go to C with 1; from C, go to G with 2 2 1 , stay in C with 1, go to D with 1; from D, go to C 4 2 4 with 1, stay in D with 1. The camera never jumps 2 2" style="--w:24.31" loading="lazy">
+<p class="en">from G to D it goes through the center.</p>
+<img class="vf" src="/ml/img/c116/p5319_3.svg" alt="Une caméra, trois positions, une règle C gauche G D droite toutes les les nombres 10 minutes, sont les la caméra1/2 1/2 probabilités1/2 change de de passage position 1/2 1/4 G C D 1/4 1/2" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5319_4.svg" alt="Deux outils déjà connus, réunis chaîne de Markov Monte-Carlo (chapitre 113) (chapitre 102) fabrique les points compte la part des points X(0) → X(1) → … dans la zone A MCMC : compter sur les points d&#x27;une chaîne" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.1 :</b> En haut : la caméra et ses trois positions G, C, D ; en dessous, la règle de passage, une flèche par mouvement possible avec sa probabilité. Il n’y a pas de flèche entre G et D. En bas : les deux outils que ce chapitre réunit. La chaîne de Markov fabrique les points, Monte-Carlo les compte.</p>
+<p class="cap en">Top: the camera and its three positions G, C, D; below, the transition rule, one arrow per possible move with its probability. There is no arrow between G and D. Bottom: the two tools this chapter joins. The Markov chain makes the points, Monte Carlo counts them.</p>
+<p>La méthode réunit donc deux outils que tu connais (figure 116.1, en bas) : la chaîne de Markov, qui fabrique les points, et Monte-Carlo, qui compte. Son nom dit les deux : <b>Monte-Carlo par chaînes de Markov</b>, en anglais <i>Markov chain Monte Carlo</i>, abrégé MCMC.</p>
+<p class="en">So the method joins two tools you know (figure 116.1, bottom): the Markov chain, which makes the points, and Monte Carlo, which counts. Its name says both: <b>Markov chain Monte Carlo</b>, abbreviated MCMC.</p>
+<h2>2. La figure</h2>
+<p class="h2en">2. The figure</p>
+<p>Faisons tourner la caméra. Elle part de G. À chaque pas, on tire sa nouvelle position avec la règle. La figure 116.2 (en haut) montre les 40 premiers pas d’une telle suite. En bas, elle compte les positions sur 10 000 pas.</p>
+<p class="en">Let us run the camera. It starts from G. At each step, we draw its new position with the rule. Figure 116.2 (top) shows the first 40 steps of such a sequence. At the bottom, it counts the positions over 10,000 steps.</p>
+<img class="vf" src="/ml/img/c116/p5321_5.svg" alt="les 40 premiers pas X(0), X(1), … , X(40), départ en G X(0) =  G D C G séjour : 4 pas de suite en G 0 10 20 30 40 pas t part du temps sur N= 10 000 pas 0.8 loi cible π = (πG,πC,πD) 0.6 0,492 0,50 0.4 0,259 0,25 0,250 0,25 0.2 0.0 G C D" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.2 :</b> En haut : 40 pas de la caméra, partie de G. Chaque position <span class="m">𝑋</span> <sup class="m">(𝑡)</sup> dépend de la précédente : la caméra reste souvent sur place (séjour orange de 4 pas en G et ne saute jamais de G à D. En bas : sur <span class="m">𝑁 = 10 000</span> pas, la part du temps passée en G, C, D (bleu : 0,259 ; 0,492 ; 0,250 colle à la loi cible <span class="m">𝜋 = (0,25 ; 0,5 ; 0,25)</span> (orange).</p>
+<p class="cap en">Top: 40 steps of the camera, starting from G. Each position <span class="m">𝑋</span><sup class="m">(𝑡)</sup> depends on the previous one: the camera often stays put (orange stay of 4 steps in G and never jumps from G to D. Bottom: over <span class="m">𝑁 = 10,000</span> steps, the share of time spent in G, C, D (blue: 0.259; 0.492; 0.250 matches the target law <span class="m">𝜋 = (0.25; 0.5; 0.25)</span> (orange).</p>
+<p>Regarde le haut de la figure 116.2. Les points ne sont pas indépendants : après G vient G ou C, jamais D. La caméra traîne plusieurs pas au même endroit :</p>
+<p>entre les pas 5 et 8, elle reste quatre fois de suite en G. Regarde maintenant le bas. Sur 10 000 pas, elle a passé 25,9 % du temps en G, 49,2 % en C et 25,0 %</p>
+<img class="vm" src="/ml/img/c116/p5322_6.svg" alt="en D. Ces parts sont presque exactement 1, 1, 1 . 4 2 4 Look at the top of figure 116.2. The points are not" style="--w:24.31" loading="lazy">
+<p class="en">independent: after G comes G or C, never D. The camera lingers several steps in the same place: between steps 5 and 8, it stays four times in a row in G. Now look at the bottom. Over 10,000 steps, it spent 25.9% of the time in G, 49.2% in C and</p>
+<img class="vm" src="/ml/img/c116/p5322_7.svg" alt="25.0% in D. These shares are almost exactly 1, 1 , 4 2 1 . 4" style="--w:24.31" loading="lazy">
+<p>Voilà toute l’idée en une image. La chaîne avance pas à pas, avec des pas liés entre eux. Pourtant, comptée sur une longue durée, elle se répartit selon</p>
+<img class="vm" src="/ml/img/c116/p5322_8.svg" alt="une loi bien précise. Cette loi, ( 1 , 1, 1), s’appelle la 4 2 4" style="--w:24.31" loading="lazy">
+<p>loi cible. Si elle est celle qui t’intéresse, compter les pas de la chaîne revient à faire du Monte-Carlo.</p>
+<p class="en">Here is the whole idea in one picture. The chain moves step by step, with steps linked to each other. Yet, counted over a long time, it spreads</p>
+<img class="vm" src="/ml/img/c116/p5322_9.svg" alt="according to a precise law. This law, ( 1, 1, 1 ), is 4 2 4" style="--w:24.31" loading="lazy">
+<p class="en">called the target law. If it is the one you care about, counting the steps of the chain amounts to doing Monte Carlo.</p>
+<h2>3. La définition, symbole par symbole</h2>
+<p class="h2en">3. The definition, symbol by symbol</p>
+<img class="vm" src="/ml/img/c116/p5323_10.svg" alt="Les mots de ce chapitre — The words of this chapter" style="--w:24.31" loading="lazy">
+<p><b>état</b> : une position possible de la chaîne ; ici G, C ou D.</p>
+<p class="en">state: a possible position of the chain; here G, C or D.</p>
+<p><b>chaîne de Markov</b> : une suite d’états où le suivant est tiré en regardant seulement le présent ; la caméra de la figure 116.2 (chapitre 113).</p>
+<p class="en">Markov chain: a sequence of states where the next one is drawn by looking only at the present; the camera of figure 116.2 (chapter 113).</p>
+<p><b>probabilité de passage</b> <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub> : la chance d’aller de</p>
+<img class="vm" src="/ml/img/c116/p5323_11.svg" alt="l’état 𝑖 à l’état 𝑗 en un pas ; 𝑃 = 1 , 𝑃 = 0 𝐺𝐶 2 𝐺𝐷" style="--w:24.31" loading="lazy">
+<p>(flèches de la figure 116.1).</p>
+<p class="en">transition probability <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub>: the chance of going from</p>
+<img class="vm" src="/ml/img/c116/p5323_12.svg" alt="state 𝑖 to state 𝑗 in one step; 𝑃 = 1 , 𝑃 = 0 𝐺𝐶 2 𝐺𝐷" style="--w:24.31" loading="lazy">
+<p class="en">(arrows of figure 116.1).</p>
+<p><b>loi cible</b> <span class="m">𝜋</span> : la répartition que l’on veut</p>
+<img class="vm" src="/ml/img/c116/p5323_13.svg" alt="reproduire ; ici ( 1 , 1, 1), les barres orange de la 4 2 4" style="--w:24.31" loading="lazy">
+<p>figure 116.2.</p>
+<p class="en">target law <span class="m">𝜋</span>: the distribution we want to reproduce;</p>
+<img class="vm" src="/ml/img/c116/p5323_14.svg" alt="here (1 , 1, 1), the orange bars of figure 116.2. 4 2 4" style="--w:24.31" loading="lazy">
+<p><b>loi stationnaire</b> : une loi qu’un pas de la chaîne</p>
+<img class="vm" src="/ml/img/c116/p5323_15.svg" alt="ne change pas ; si la caméra suit ( 1 , 1, 1) 4 2 4" style="--w:24.31" loading="lazy">
+<p class="en">maintenant, elle la suit encore dix minutes plus tard. stationary law: a law that one step of the chain does</p>
+<img class="vm" src="/ml/img/c116/p5324_16.svg" alt="not change; if the camera follows (1 , 1, 1) now, it still 4 2 4" style="--w:24.31" loading="lazy">
+<p class="en">follows it ten minutes later.</p>
+<p class="en"><b>Monte-Carlo</b> : estimer une probabilité en comptant la part de points qui tombent dans une zone (chapitre 102) ; 2 497 points sur 10 000 en D donne 0,250. Monte Carlo: estimating a probability by counting the share of points that fall in a zone (chapter 102); 2,497 points out of 10,000 in D gives 0.250.</p>
+<p class="en"><b>fréquence (ou part du temps)</b> : le nombre de pas passés dans un état, divisé par le nombre total de pas ; <span class="m">2 497/10 000 = 0,250</span>. frequency (or share of time): the number of steps spent in a state, divided by the total number of steps; <span class="m">2,497/10,000 = 0.250</span>.</p>
+<p class="en"><b>période de chauffe</b> : le premier bloc de pas, que l’on jette parce qu’il garde la trace du départ ; ici une dizaine de pas. burn-in period: the first block of steps, thrown away because it keeps a trace of the start; here about ten steps.</p>
+<p class="en"><b>autocorrélation</b> : la corrélation (chapitre 40) entre la chaîne et elle-même décalée de <span class="m">𝑘</span> pas ;</p>
+<img class="vm" src="/ml/img/c116/p5324_17.svg" alt="1 pour 𝑘 = 1. 3" style="--w:24.31" loading="lazy">
+<p>autocorrelation: the correlation (chapter 40)</p>
+<img class="vm" src="/ml/img/c116/p5325_18.svg" alt="between the chain and itself shifted by 𝑘 steps; 1 for 3" style="--w:24.31" loading="lazy">
+<p><span class="m">𝑘 = 1</span>.</p>
+<p><b>valeur propre</b> : un nombre par lequel la matrice des <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub> multiplie certaines directions</p>
+<img class="vm" src="/ml/img/c116/p5325_19.svg" alt="(chapitre 35) ; ici 1, 1 et 0. 2" style="--w:24.31" loading="lazy">
+<p class="en">eigenvalue: a number by which the matrix of the <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub></p>
+<img class="vm" src="/ml/img/c116/p5325_20.svg" alt="multiplies certain directions (chapter 35); here 1, 1 2" style="--w:24.31" loading="lazy">
+<p class="en">and 0.</p>
+<img class="vm" src="/ml/img/c116/p5325_21.svg" alt="Définition — MCMC" style="--w:24.31" loading="lazy">
+<p>Une méthode de <b>Monte-Carlo par chaînes de Markov</b> fabrique une suite d’états <span class="m">𝑋</span><sup class="m">(0)</sup> <span class="m">, 𝑋</span><sup class="m">(1)</sup><span class="m">, … , 𝑋</span><sup class="m">(𝑁)</sup> :</p>
+<p>1. chaque état est tiré avec une règle qui ne regarde que l’état présent (une chaîne de Markov, de probabilités de passage <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub>) ; 2. la règle est choisie pour que la loi cible <span class="m">𝜋</span> soit <b>stationnaire</b> :</p>
+<img class="vm" src="/ml/img/c116/p5325_22.svg" alt="𝜋𝑗 = ∑ 𝜋𝑖 𝑃𝑖𝑗 pour tout état 𝑗. 𝑖" style="--w:24.31" loading="lazy">
+<p>On estime alors la probabilité d’une zone <span class="m">𝐴</span> par la part des pas passés dans <span class="m">𝐴</span> :</p>
+<img class="vm" src="/ml/img/c116/p5325_23.svg" alt="#{𝑡 ≤ 𝑁 ∶ 𝑋(𝑡) ∈ 𝐴} 𝑃𝜋(𝐴) ≈ . 𝑁" style="--w:24.31" loading="lazy">
+<p class="en">A <b>Markov chain Monte Carlo</b> method makes a sequence of states <span class="m">𝑋</span><sup class="m">(0)</sup><span class="m">, … , 𝑋</span><sup class="m">(𝑁)</sup>: 1 each state is drawn with a rule that looks only at the present state (a Markov chain with transition probabilities <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub>); 2 the rule is chosen so that</p>
+<img class="vm" src="/ml/img/c116/p5326_24.svg" alt="the target law 𝜋 is stationary: 𝜋𝑗 = ∑ 𝜋𝑖 𝑃𝑖𝑗 𝑖" style="--w:24.31" loading="lazy">
+<p class="en">for every state <span class="m">𝑗</span>. The probability of a zone <span class="m">𝐴</span> is then estimated by the share of steps spent in <span class="m">𝐴</span>.</p>
+<img class="vf" src="/ml/img/c116/p5326_25.svg" alt="" style="--w:24.31" loading="lazy">
+<p>La figure 116.3 dessine la première formule avec les mêmes couleurs. Nous allons calculer la chance d’être en G au pas suivant, en partant de la loi</p>
+<img class="vm" src="/ml/img/c116/p5326_26.svg" alt="( 1, 1, 1 ). 4 2 4 Figure 116.3 draws the first formula with the same" style="--w:24.31" loading="lazy">
+<p class="en">colors. We compute the chance of being in G at</p>
+<img class="vm" src="/ml/img/c116/p5326_27.svg" alt="the next step, starting from the law ( 1 , 1, 1). 4 2 4" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5327_28.svg" alt="πG = ∑πiPiG : arriver en G i G : πG= 1/4 PGG = 1/2 PCG = 1/4 G au pas suivant C : πC = 1/2 π0 =  ? G D : πD= 1/4 PDG= 0 : pas de flèche π0G= 14 ⋅ 12 + 12 ⋅ 14 = 18 + 18 = 14 = πG πC = ∑πi PiC : arriver en C i G : πG= 1/4 PGC = 1/2 PCC = 1/2 C au pas suivant C : πC = 1/2 π0 =  ? C PDC = 1/2 D : πD= 1/4 πC0 = 14 ⋅ 12 + 12 ⋅ 12 + 14 ⋅ 12 = 18 + 14 + 18 = 12 = πC" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.3 :</b> La stationnarité décodée. À gauche, en rouge, la loi d’aujourd’hui <span class="m">𝜋</span><sub class="m">𝑖</sub> dans chaque état. Les flèches vertes portent les probabilités de passage <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub> vers l’état d’arrivée (boîte bleue). La somme des produits rouge <span class="m">×</span> vert donne la loi de demain <span class="m">𝜋</span><sub class="m">𝑗</sub>. En haut, arriver</p>
+<img class="vm" src="/ml/img/c116/p5327_29.svg" alt="en G : 1 + 1 = 1 . En bas, arriver en C : 1 + 1 + 1 = 1. 8 8 4 8 4 8 2" style="--w:24.31" loading="lazy">
+<p>Demain redonne aujourd’hui : <span class="m">𝜋</span> est stationnaire.</p>
+<p class="en">Stationarity decoded. On the left, in red, today’s law <span class="m">𝜋</span><sub class="m">𝑖</sub> in each state. The green arrows carry the transition probabilities <span class="m">𝑃</span><sub class="m">𝑖𝑗</sub> to the arrival state (blue box). The sum of the red <span class="m">×</span> green products gives tomorrow’s law <span class="m">𝜋</span><sub class="m">𝑗</sub>.</p>
+<img class="vm" src="/ml/img/c116/p5327_30.svg" alt="Top, arriving in G 1 + 1 = 1 . Bottom, arriving in C 8 8 4 1 + 1 + 1 = 1 . Tomorrow gives back today: 𝜋 is 8 4 8 2" style="--w:24.31" loading="lazy">
+<p class="en">stationary.</p>
+<p><b>Avec nos nombres :</b> pour <span class="m">𝑗 =</span> G,</p>
+<img class="vm" src="/ml/img/c116/p5327_31.svg" alt="𝜋′ = 1 ⋅ 1 + 1 ⋅ 1 + 1 ⋅ 0 = 1 + 1 + 0 = 1. On retrouve 𝐺 4 2 2 4 4 8 8 4" style="--w:24.31" loading="lazy">
+<p><span class="m">𝜋</span><sub class="m">𝐺</sub> : un pas n’a rien changé.</p>
+<p class="en">With our numbers: for <span class="m">𝑗 =</span> G,</p>
+<img class="vm" src="/ml/img/c116/p5328_32.svg" alt="𝜋′ = 1 ⋅ 1 + 1 ⋅ 1 + 1 ⋅ 0 = 1 + 1 + 0 = 1. We get 𝐺 4 2 2 4 4 8 8 4" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">𝜋</span><sub class="m">𝐺</sub> back: one step changed nothing.</p>
+<p><b>Avant d’aller plus loin : la moitié d’un quart, puis deux huitièmes</b></p>
+<img class="vm" src="/ml/img/c116/p5328_33.svg" alt="Le produit 1 ⋅ 1 se lit « la moitié d’un quart ». Prends 4 2" style="--w:24.31" loading="lazy">
+<p>une barre de longueur 1 et coupe-la en 4 : un</p>
+<img class="vm" src="/ml/img/c116/p5328_34.svg" alt="morceau mesure 1. Coupe ce morceau en 2 : 4 chaque moitié mesure 1 , car 8 de ces moitiés 8" style="--w:24.31" loading="lazy">
+<p>remplissent la barre (figure 116.4, deux premières lignes). Au chapitre 69, une fraction était déjà une longueur sur une barre de longueur 1.</p>
+<p class="en"><b>Before going further: half of a quarter, then two</b></p>
+<img class="vm" src="/ml/img/c116/p5328_35.svg" alt="eighths. The product 1 ⋅ 1 reads “half of a 4 2" style="--w:24.31" loading="lazy">
+<p class="en">quarter”. Take a bar of length 1 and cut it into 4</p>
+<img class="vm" src="/ml/img/c116/p5328_36.svg" alt="one piece measures 1 . Cut this piece into 2 each 4 half measures 1, because 8 of these halves fill the 8" style="--w:24.31" loading="lazy">
+<p class="en">bar (figure 116.4, first two rows). In chapter 69, a fraction was already a length on a bar of length 1.</p>
+<img class="vm" src="/ml/img/c116/p5328_37.svg" alt="Ensuite, 1 + 1 met deux de ces morceaux bout à 8 8 bout : 2. Ces deux huitièmes ont exactement la 8" style="--w:24.31" loading="lazy">
+<p>longueur d’un quart (troisième ligne). Donc</p>
+<img class="vm" src="/ml/img/c116/p5328_38.svg" alt="1 + 1 = 2 = 1. 8 8 8 4 Next, 1 + 1 puts two of these pieces end to end: 8 8 2 . These two eighths have exactly the length of 8 one quarter (third row). So 1 + 1 = 2 = 1. 8 8 8 4" style="--w:24.31" loading="lazy">
+<p><b>Tu vas peut-être objecter… — You may object…</b></p>
+<img class="vm" src="/ml/img/c116/p5329_39.svg" alt="« 1 + 1 = 2 : on additionne les hauts et les 8 8 16 bas. » Alors 𝜋′ = 2 = 1 , et un pas aurait divisé 𝐺 16 8" style="--w:24.31" loading="lazy">
+<p>par 2 la chance d’être en G : <span class="m">𝜋</span> ne serait pas stationnaire. La quatrième ligne de la figure 116.4</p>
+<img class="vm" src="/ml/img/c116/p5329_40.svg" alt="dessine 2 : deux morceaux d’une barre coupée 16" style="--w:24.31" loading="lazy">
+<p>en 16. Ils ne font qu’un huitième, la moitié de ce qu’on a mis bout à bout. Le calcul juste garde la taille des morceaux : des huitièmes plus des huitièmes donnent des</p>
+<img class="vm" src="/ml/img/c116/p5329_41.svg" alt="huitièmes. 1 + 1 = 2 = 1. 8 8 8 4 “ 1 + 1 = 2 : add the tops and the bottoms.” 8 8 16 Then 𝜋′ = 2 = 1 , and one step would have 𝐺 16 8" style="--w:24.31" loading="lazy">
+<p class="en">halved the chance of being in G <span class="m">𝜋</span> would not be stationary. The fourth row of figure 116.4 draws</p>
+<img class="vm" src="/ml/img/c116/p5329_42.svg" alt="2 : two pieces of a bar cut into 16. They only 16" style="--w:24.31" loading="lazy">
+<p class="en">make one eighth, half of what we put end to end. The correct computation keeps the size of the</p>
+<img class="vm" src="/ml/img/c116/p5329_43.svg" alt="pieces: eighths plus eighths give eighths. 1 + 8 1 = 2 = 1. 8 8 4" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5330_44.svg" alt="1/4 : un quart 1/2 de 1/4 = 1/8 1/8 + 1/8 = 2/8 = 1/4 faux : 2/16 = 1/8 même longueur que 1/4" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.4 :</b> Des fractions comme des longueurs. Ligne 1 : un quart de la barre. Ligne 2 : la moitié de ce quart,</p>
+<img class="vm" src="/ml/img/c116/p5330_45.svg" alt="1 ⋅ 1 = 1 . Ligne 3 : deux huitièmes bout à bout, 2 , 4 2 8 8 arrivent au même trait pointillé que 1. Ligne 4, en rouge, 4 la lecture fausse 2 : deux morceaux d’une barre coupée 16 en 16, soit 1 seulement. 8 Fractions as lengths. Row 1 a quarter of the bar. Row 2 half of this quarter, 1 ⋅ 1 = 1 . Row 3 two eighths end to 4 2 8 end, 2 , reach the same dotted line as 1 . Row 4, in red, 8 4 the wrong reading 2 : two pieces of a bar cut into 16, 16 only 1 . 8" style="--w:24.31" loading="lazy">
+<p>Lisons chaque symbole.</p>
+<p class="en">Let us read each symbol.</p>
+<img class="vm" src="/ml/img/c116/p5330_46.svg" alt="𝑋(𝑡) L’état de la chaîne au pas numéro 𝑡. Le" style="--w:24.31" loading="lazy">
+<p>nombre en haut entre parenthèses est un numéro, pas une puissance (chapitre 115). Sur la figure 116.2, c’est le point bleu au-dessus de <span class="m">𝑡</span>. Valeur : <span class="m">𝑋</span><sup class="m">(0)</sup> <span class="m">=</span> G, <span class="m">𝑋</span><sup class="m">(3)</sup> <span class="m">=</span> C.</p>
+<p class="en">The state of the chain at step number <span class="m">𝑡</span>. The number at the top in brackets is a number, not a power (chapter 115). In figure 116.2, it is the blue point above <span class="m">𝑡</span>. Value: <span class="m">𝑋</span><sup class="m">(0)</sup> <span class="m">=</span> G, <span class="m">𝑋</span><sup class="m">(3)</sup> <span class="m">=</span> C.</p>
+<img class="vm" src="/ml/img/c116/p5331_47.svg" alt="𝑃𝑖𝑗 La probabilité d’aller de l’état 𝑖 à l’état 𝑗 en" style="--w:24.31" loading="lazy">
+<p>un pas. Sur la figure 116.3, le nombre vert</p>
+<img class="vm" src="/ml/img/c116/p5331_48.svg" alt="sur la flèche de 𝑖 vers 𝑗. Valeurs : 𝑃 = 1 , 𝐺𝐶 2 𝑃 = 1, 𝑃 = 0. 𝐶𝐺 4 𝐺𝐷" style="--w:24.31" loading="lazy">
+<p class="en">The probability of going from state <span class="m">𝑖</span> to state <span class="m">𝑗</span> in one step. In figure 116.3, the green number on the arrow from <span class="m">𝑖</span> to <span class="m">𝑗</span>. Values:</p>
+<img class="vm" src="/ml/img/c116/p5331_49.svg" alt="𝑃 = 1, 𝑃 = 1, 𝑃 = 0. 𝐺𝐶 2 𝐶𝐺 4 𝐺𝐷 𝜋𝑖 La chance d’être dans l’état de départ 𝑖" style="--w:24.31" loading="lazy">
+<p>aujourd’hui. Sur la figure 116.3, le nombre rouge dans la boîte de gauche. Valeurs :</p>
+<img class="vm" src="/ml/img/c116/p5331_50.svg" alt="1 , 1, 1 . 4 2 4" style="--w:24.31" loading="lazy">
+<p class="en">The chance of being in the starting state <span class="m">𝑖</span> today. In figure 116.3, the red number in the</p>
+<img class="vm" src="/ml/img/c116/p5331_51.svg" alt="left box. Values: 1, 1, 1. 4 2 4 ∑ 𝜋𝑖 𝑃𝑖𝑗 𝑖 La probabilité d’être en 𝑗 au pas suivant :" style="--w:24.31" loading="lazy">
+<p>pour chaque départ <span class="m">𝑖</span>, chance d’y être fois chance d’en partir vers <span class="m">𝑗</span> ; on additionne sur tous les départs. Sur la figure, toutes les flèches qui entrent dans la boîte bleue.</p>
+<img class="vm" src="/ml/img/c116/p5331_52.svg" alt="Valeur pour 𝑗 = G : 1 + 1. 8 8" style="--w:24.31" loading="lazy">
+<p class="en">The probability of being in <span class="m">𝑗</span> at the next step: for each start <span class="m">𝑖</span>, chance of being there times chance of leaving it for <span class="m">𝑗</span>; we add over all starts. In the figure, all the arrows that enter</p>
+<img class="vm" src="/ml/img/c116/p5331_53.svg" alt="the blue box. Value for 𝑗 = G 1 + 1 . 8 8" style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c116/p5332_54.svg" alt="𝜋𝑗 La chance d’être en 𝑗 selon la loi cible." style="--w:24.31" loading="lazy">
+<p>L’égalité dit : si la caméra suit la loi <span class="m">𝜋</span> aujourd’hui, elle suit encore la loi <span class="m">𝜋</span> dans dix minutes. C’est le sens de « stationnaire ».</p>
+<img class="vm" src="/ml/img/c116/p5332_55.svg" alt="Sur la figure, la boîte bleue. Valeur : 𝜋 = 1. 𝐺 4" style="--w:24.31" loading="lazy">
+<p class="en">The chance of being in <span class="m">𝑗</span> under the target law. The equality says: if the camera follows the law <span class="m">𝜋</span> today, it still follows the law <span class="m">𝜋</span> in ten minutes. That is the meaning of “stationary”.</p>
+<img class="vm" src="/ml/img/c116/p5332_56.svg" alt="In the figure, the blue box. Value: 𝜋 = 1. 𝐺 4 𝑁 Le nombre de pas que l’on compte. Valeur" style="--w:24.31" loading="lazy">
+<p>sur la figure 116.2 : <span class="m">10 000</span>.</p>
+<p class="en">The number of steps we count. Value in figure 116.2: <span class="m">10,000</span>.</p>
+<p><span class="m">#{… }</span> « Le nombre de … » : on compte les pas <span class="m">𝑡</span> où</p>
+<p>l’état tombe dans <span class="m">𝐴</span>. Valeur pour <span class="m">𝐴 = {</span>D<span class="m">}</span> : <span class="m">2 497</span> pas, donc <span class="m">2 497/10 000 = 0,250</span>.</p>
+<p class="en">“The number of …”: we count the steps <span class="m">𝑡</span> where the state falls in <span class="m">𝐴</span>. Value for <span class="m">𝐴 = {</span>D<span class="m">}</span>: <span class="m">2,497</span> steps, hence <span class="m">2,497/10,000 = 0.250</span>.</p>
+<p><b>Avant d’aller plus loin : une consigne de comptage</b></p>
+<p>L’écriture <span class="m">{𝑡 ≤ 𝑁 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈ 𝐴}</span> est un ensemble (chapitre 3). À gauche des deux-points, ce que l’on range dedans : des numéros de pas <span class="m">𝑡</span>, jusqu’à <span class="m">𝑁</span> . À droite, la condition, lue « tels que » : l’état <span class="m">𝑋</span><sup class="m">(𝑡)</sup> tombe dans la zone <span class="m">𝐴</span>.</p>
+<p class="en"><b>Before going further: a counting instruction.</b> The notation <span class="m">{𝑡 ≤ 𝑁 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈ 𝐴}</span> is a set (chapter 3). On the left of the colon, what we put in it: step numbers <span class="m">𝑡</span>, up to <span class="m">𝑁</span> . On the right, the condition, read “such that”: the state <span class="m">𝑋</span><sup class="m">(𝑡)</sup> falls in the zone <span class="m">𝐴</span>.</p>
+<p>Le signe <span class="m">#</span> devant l’accolade veut dire « nombre d’éléments ». Le tableau fait le compte sur les 10 premiers pas de la figure 116.2, avec <span class="m">𝐴 = {</span>C<span class="m">}</span> et <span class="m">𝑁 = 10</span>.</p>
+<p class="en">The sign <span class="m">#</span> in front of the brace means “number of elements”. The table does the count on the first 10 steps of figure 116.2, with <span class="m">𝐴 = {</span>C<span class="m">}</span> and <span class="m">𝑁 = 10</span>.</p>
+<img class="vm" src="/ml/img/c116/p5333_57.svg" alt="𝑡 1 2 3 4 5 6 7 8 9 10 𝑋(𝑡) G G C C G G G G C G dans 𝐴 ? oui oui oui" style="--w:24.31" loading="lazy">
+<p class="en">Table: steps 1 to 10; states G G C C G G G G C G; in <span class="m">𝐴</span>: steps 3, 4 and 9.)</p>
+<p>Trois pas sont dans <span class="m">𝐴</span> : <span class="m">#{𝑡 ≤ 10 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈ {</span>C<span class="m">}} = 3</span>, et la part vaut <span class="m">3/10 = 0,3</span>. Sur 10 pas, on est loin de <span class="m">𝜋</span><sub class="m">𝐶</sub> <span class="m">= 0,5</span> ; sur 10 000 pas, la part monte à 0,492.</p>
+<p class="en">Three steps are in <span class="m">𝐴</span>: <span class="m">#{𝑡 ≤ 10 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈ {</span>C<span class="m">}} = 3</span>, and the share is <span class="m">3/10 = 0.3</span>. Over 10 steps we are far from <span class="m">𝜋</span><sub class="m">𝐶</sub> <span class="m">= 0.5</span>; over 10,000 steps the share rises to 0.492.</p>
+<img class="vm" src="/ml/img/c116/p5334_58.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Refais le calcul de la figure 116.3 pour arriver en D. Deux flèches entrent en D : depuis C</p>
+<img class="vm" src="/ml/img/c116/p5334_59.svg" alt="(𝑃 = 1 ) et depuis D (𝑃 = 1). Calcule 𝐶𝐷 4 𝐷𝐷 2 1 ⋅ 1 + 1 ⋅ 1 . Tu dois trouver 1 + 1 = 1 = 𝜋 . Les 2 4 4 2 8 8 4 𝐷 trois nombres de demain, 1, 1, 1 , sont ceux 4 2 4" style="--w:24.31" loading="lazy">
+<p>d’aujourd’hui.</p>
+<p class="en">Redo the computation of figure 116.3 to arrive in</p>
+<img class="vm" src="/ml/img/c116/p5334_60.svg" alt="D. Two arrows enter D from C (𝑃 = 1) and 𝐶𝐷 4 from D (𝑃 = 1 ). Compute 1 ⋅ 1 + 1 ⋅ 1. You 𝐷𝐷 2 2 4 4 2 should find 1 + 1 = 1 = 𝜋 . Tomorrow’s three 8 8 4 𝐷 numbers, 1, 1, 1 , are today’s. 4 2 4" style="--w:24.31" loading="lazy">
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Les points d’une chaîne sont liés entre eux. Le Monte-Carlo du chapitre 102 demandait des tirages indépendants. Pourquoi le comptage marche-t-il encore ? » Parce que la dépendance s’efface avec la distance. Le pas 1 dépend beaucoup du pas 0 : après G, jamais D. Le pas 10 n’en garde presque rien : la figure 116.6 montre un écart à <span class="m">𝜋</span> inférieur à 0,0005. Sur 10 000 pas, la chaîne contient donc de nombreux morceaux presque indépendants, et leurs fréquences se stabilisent. La dépendance a un coût : 10 000 pas valent environ 4 300 tirages indépendants (figure 116.8). Elle ne rend pas le comptage faux.</p>
+<p class="en">“The points of a chain are linked together. The Monte Carlo of chapter 102 required independent draws. Why does counting still work?” Because the dependence fades with distance. Step 1 depends a lot on step 0 after G, never D. Step 10 keeps almost nothing of it: figure 116.6 shows a gap to <span class="m">𝜋</span> below 0.0005. Over 10,000 steps, the chain therefore contains many nearly independent pieces, and their frequencies settle. The dependence has a cost: 10,000 steps are worth about 4,300 independent draws (figure 116.8). It does not make the counting wrong.</p>
+<img class="vm" src="/ml/img/c116/p5335_61.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">Une chaîne de Markov dont la loi cible est stationnaire finit par passer dans chaque état une part du temps égale à cette loi : compter ses pas, c’est mesurer <span class="m">𝜋</span>. A Markov chain whose target law is stationary ends up spending in each state a share of time equal to that law: counting its steps is measuring <span class="m">𝜋</span>.</p>
+<img class="vf" src="/ml/img/c116/p5335_62.svg" alt="" style="--w:24.31" loading="lazy">
+<h2>4. Les effets</h2>
+<p class="h2en">4. The effects</p>
+<p><b>Premier effet : la chaîne oublie son point de départ</b></p>
+<p>Pars de G avec certitude : la loi au pas 0 est <span class="m">(1, 0, 0)</span>. Applique la règle pas après pas, avec la même somme que dans la définition. La figure 116.5 dessine les quatre premières lois, et le tableau donne les nombres.</p>
+<p class="en"><b>First effect: the chain forgets its starting point.</b> Start from G with certainty: the law at step 0 is <span class="m">(1, 0, 0)</span>. Apply the rule step after step, with the same sum as in the definition. Figure 116.5 draws the first four laws, and the table gives the numbers.</p>
+<img class="vf" src="/ml/img/c116/p5337_63.svg" alt="Étape 1 — pas 0, la caméra est en G 1 1.0 écart de P(G) à 0,25 : 0,75 0.5 πC = 0,5 πG =πD= 0,25 0 0 0.0 G C D Étape 2 — pas 1 1.0 écart de P(G) à 0,25 : 0,25 0,5 0,5 π = 0,5 0.5 C πG =πD= 0,25 0 0.0 G C D Étape 3 — pas 2 1.0 écart de P(G) à 0,25 : 0,125 0,5 π = 0,5 0.5 0,375 C 0,125 πG =πD= 0,25 0.0 G C D Étape 4 — pas 3 1.0 écart de P(G) à 0,25 : 0,0625 0,5 0.5 0,3125 πC = 0,5 0,1875 πG =πD= 0,25 0.0 G C D" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.5 :</b> La loi de la caméra pas après pas, partie de G. Pas 0 : tout en G. Pas 1 : moitié G, moitié C. Pas 2 : <span class="m">0,375 ; 0,5 ; 0,125</span>. Pas 3 : <span class="m">0,3125 ; 0,5 ; 0,1875</span>. Les barres se rapprochent des lignes orange <span class="m">𝜋</span>. L’écart de <span class="m">𝑃 (𝐺)</span> à 0,25, écrit à droite, est divisé par 2 à chaque pas à partir du pas 1.</p>
+<p class="cap en">The law of the camera step after step, starting from G. Step 0 all in G. Step 1 half G, half C. Step 2 <span class="m">0.375; 0.5; 0.125</span>. Step 3 <span class="m">0.3125; 0.5; 0.1875</span>. The bars get closer to the orange lines <span class="m">𝜋</span>. The gap of <span class="m">𝑃 (𝐺)</span> to 0.25, written on the right, is halved at each step from step 1 on.</p>
+<img class="vm" src="/ml/img/c116/p5338_64.svg" alt="pas 𝑡 𝑃 (𝐺) 𝑃 (𝐶) 𝑃 (𝐷) 0 1 0 0 1 0,5 0,5 0 2 0,375 0,5 0,125 3 0,3125 0,5 0,1875 4 0,28125 0,5 0,21875" style="--w:24.31" loading="lazy">
+<p>Nous calculons la ligne du pas 2 à partir de la ligne du pas 1, avec la formule de la définition :</p>
+<img class="vm" src="/ml/img/c116/p5338_65.svg" alt="𝑃 (𝐺) = 0,5 ⋅ 1 + 0,5 ⋅ 1 + 0 ⋅ 0 = 0,375. 2 2 4 Avec nos nombres : l’écart entre 𝑃 (𝐺) et 1 vaut 0,25 au 4" style="--w:24.31" loading="lazy">
+<p>pas 1, puis 0,125 ; 0,0625 ; 0,03125. Il est divisé par 2 à chaque pas. Après 10 pas, il vaut <span class="m">0,25/2</span><sup class="m">9</sup>, avec <span class="m">2</span><sup class="m">9</sup> <span class="m">= 2 × 2 × ⋯ × 2 = 512</span> (neuf facteurs), soit <span class="m">0,25/512 ≈ 0,0005</span>.</p>
+<p class="en">We compute the row of step 2 from the row of step 1, with the formula of the definition:</p>
+<img class="vm" src="/ml/img/c116/p5338_66.svg" alt="𝑃 (𝐺) = 0.5 ⋅ 1 + 0.5 ⋅ 1 + 0 ⋅ 0 = 0.375. With our 2 2 4 numbers: the gap between 𝑃 (𝐺) and 1 is 0.25 at 4" style="--w:24.31" loading="lazy">
+<p class="en">step 1, then 0.125; 0.0625; 0.03125. It is halved at each step. After 10 steps, it is <span class="m">0.25/2</span><sup class="m">9</sup>, with <span class="m">2</span><sup class="m">9</sup> <span class="m">= 2 × 2 × ⋯ × 2 = 512</span> (nine factors), that is <span class="m">0.25/512 ≈ 0.0005</span>.</p>
+<img class="vf" src="/ml/img/c116/p5339_67.svg" alt="1.0 départ en G départ en C 0.8 départ en D ) 0,5 G 0.6 = )t 0,375 ( X( 0.4 0,3125 P π = 0,25 G 0.2 0.0 0 2 4 6 8 10 pas t" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.6 :</b> La probabilité d’être en G au pas <span class="m">𝑡</span>, pour trois points de départ. Les trois courbes finissent sur la même valeur, <span class="m">𝜋</span><sub class="m">𝐺</sub> <span class="m">= 0,25</span> : la chaîne oublie d’où elle vient. Partie de G (bleu), les valeurs 0,5 ; 0,375 ; 0,3125 sont celles du tableau. Partie du centre (vert), elle est à 0,25 dès le premier pas.</p>
+<p class="cap en">The probability of being in G at step <span class="m">𝑡</span>, for three starting points. The three curves end on the same value, <span class="m">𝜋</span><sub class="m">𝐺</sub> <span class="m">= 0.25</span>: the chain forgets where it came from. Starting from G (blue), the values 0.5; 0.375; 0.3125 are those of the table. Starting from the center (green), it is at 0.25 from the first step.</p>
+<p>Pourquoi « divisé par 2 » et pas autre chose ? Le</p>
+<img class="vm" src="/ml/img/c116/p5339_68.svg" alt="nombre 1 est une valeur propre de la matrice des 2" style="--w:24.31" loading="lazy">
+<p><span class="m">𝑃</span><sub class="m">𝑖𝑗</sub> (chapitre 35). Les autres valeurs propres sont 1 et 0. La valeur propre 1 porte la loi stationnaire, qui</p>
+<img class="vm" src="/ml/img/c116/p5339_69.svg" alt="reste. La valeur propre 1 porte l’écart, qui est 2" style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c116/p5340_70.svg" alt="multiplié par 1 à chaque pas. Une chaîne dont la 2" style="--w:24.31" loading="lazy">
+<p>deuxième valeur propre vaut 0,99 oublierait son départ beaucoup plus lentement : il lui faudrait environ 70 pas pour diviser l’écart par 2, car <span class="m">0,99</span><sup class="m">69</sup> <span class="m">≈ 0,5</span>.</p>
+<p class="en">Why “halved” and not something else? The</p>
+<img class="vm" src="/ml/img/c116/p5340_71.svg" alt="number 1 is an eigenvalue of the matrix of the 𝑃 2 𝑖𝑗" style="--w:24.31" loading="lazy">
+<p class="en">(chapter 35). The other eigenvalues are 1 and 0. The eigenvalue 1 carries the stationary law, which</p>
+<img class="vm" src="/ml/img/c116/p5340_72.svg" alt="stays. The eigenvalue 1 carries the gap, which is 2 multiplied by 1 at each step. A chain whose 2" style="--w:24.31" loading="lazy">
+<p class="en">second eigenvalue is 0.99 would forget its start much more slowly: it would need about 70 steps to halve the gap, because <span class="m">0.99</span><sup class="m">69</sup> <span class="m">≈ 0.5</span>.</p>
+<p><b>Deuxième effet : on jette le début</b></p>
+<p>Les premiers pas gardent la trace du départ. Si tu les comptes, ils faussent les fréquences : partie de G, la chaîne surestime G au début (barres de la figure 116.5 : 1 ; 0,5 ; 0,375 au lieu de 0,25. On jette donc un premier bloc de pas, appelé <b>période de chauffe</b> (en anglais <i>burn-in</i>). Ici, 10 pas suffisent largement : l’écart est alors de 0,0005. Plus le départ est loin des zones probables, plus la chauffe est longue. Le chapitre 117 le montrera sur les</p>
+<img class="vm" src="/ml/img/c116/p5340_73.svg" alt="caméras. Second effect: we throw away the beginning." style="--w:24.31" loading="lazy">
+<p class="en">The first steps keep a trace of the start. If you count them, they bias the frequencies: starting from G, the chain overestimates G at first (bars of figure 116.5: 1; 0.5; 0.375 instead of 0.25. So we throw away a first block of steps, called the <b>burn-in period</b>. Here, 10 steps are more than enough: the gap is then 0.0005. The further the start is from the likely zones, the longer the burn-in. chapter 117 will show this on the cameras.</p>
+<p><b>Troisième effet : la dépendance coûte des points</b></p>
+<img class="vf" src="/ml/img/c116/p5342_74.svg" alt="1.0 chaîne, départ en G chaîne, départ en D 0.8 tirages indépendants  D n e s  p 0.6 m e  t u 0.4  d rt πD = 0,25 a p 0.2 0.0 100 101 102 103 104 nombre de pas N (échelle logarithmique)" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.7 :</b> La part du temps passé en D, comptée depuis le début, en fonction du nombre de pas <span class="m">𝑁</span> . Les deux chaînes (bleue, rouge) et des tirages indépendants (gris) tendent tous vers <span class="m">𝜋</span><sub class="m">𝐷</sub> <span class="m">= 0,25</span>. Les chaînes oscillent plus longtemps, car leurs pas se ressemblent.</p>
+<p class="cap en">The share of time spent in D, counted from the start, as a function of the number of steps <span class="m">𝑁</span> . Both chains (blue, red) and independent draws (gray) all tend to <span class="m">𝜋</span><sub class="m">𝐷</sub> <span class="m">= 0.25</span>. The chains oscillate longer, because their steps resemble each other.</p>
+<p>Sur la figure 116.7, la chaîne partie de D commence avec une fréquence de D égale à 1, celle partie de G avec 0. Les deux finissent près de 0,25. Mais elles convergent moins vite que les tirages indépendants. Pourquoi ? Parce qu’un pas en D est suivi d’un autre</p>
+<img class="vm" src="/ml/img/c116/p5343_75.svg" alt="pas en D une fois sur deux (𝑃 = 1 ). Un séjour en 𝐷𝐷 2" style="--w:24.31" loading="lazy">
+<p>D compte plusieurs fois, sans apporter d’information nouvelle.</p>
+<p class="en"><b>Third effect: dependence costs points.</b> In figure 116.7, the chain started from D begins with a frequency of D equal to 1, the one started from G with 0. Both end close to 0.25. But they converge more slowly than independent draws. Why? Because a step in D is followed by another step in</p>
+<img class="vm" src="/ml/img/c116/p5343_76.svg" alt="D half of the time (𝑃 = 1 ). A stay in D counts 𝐷𝐷 2" style="--w:24.31" loading="lazy">
+<p class="en">several times, without bringing new information.</p>
+<p>On peut chiffrer ce coût. Le lien entre « être en D au pas <span class="m">𝑡</span> » et « être en D au pas <span class="m">𝑡 + 𝑘</span> » s’appelle l’<b>autocorrélation</b> au décalage <span class="m">𝑘</span> (une corrélation de la chaîne avec elle-même, chapitre 40). La</p>
+<img class="vm" src="/ml/img/c116/p5343_77.svg" alt="figure 116.8 (en haut) la dessine : 1 pour 𝑘 = 1, puis 3 1, 1 …Elle est divisée par 2 à chaque pas, comme 6 12" style="--w:24.31" loading="lazy">
+<p>l’écart du premier effet, et pour la même raison : la</p>
+<img class="vm" src="/ml/img/c116/p5343_78.svg" alt="valeur propre 1. 2 We can put a number on this cost. The link" style="--w:24.31" loading="lazy">
+<p class="en">between “being in D at step <span class="m">𝑡</span>” and “being in D at step <span class="m">𝑡 + 𝑘</span>” is called the <b>autocorrelation</b> at lag <span class="m">𝑘</span> (a correlation of the chain with itself, chapter 40).</p>
+<img class="vm" src="/ml/img/c116/p5343_79.svg" alt="Figure 116.8 (top) draws it: 1 for 𝑘 = 1, then 1, 3 6 1 …It is halved at each step, like the gap of the 12" style="--w:24.31" loading="lazy">
+<p class="en">first effect, and for the same reason: the</p>
+<img class="vm" src="/ml/img/c116/p5343_80.svg" alt="eigenvalue 1. 2" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5344_81.svg" alt="lien entre « D au pas t » et « D au pas t + k » 1 1.0 n o 0.8 ti la é 0.6 rr co to 0.4 1/3 u a 0.2 1/6 1/12 1/24 1/48 0.0 0 1 2 3 4 5 6 7 décalage k (pas entre les deux positions) même précision 10 000 pas ≈  4 300 tirages de la chaîne indépendants 10 000 / (1 + 2 ⋅ 2) = 10 000 / 7 ≈ 4 286 3 3" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.8 :</b> En haut : l’autocorrélation de « être en D » au décalage <span class="m">𝑘</span> : 1 pour <span class="m">𝑘 = 0</span> (la chaîne avec elle-même),</p>
+<img class="vm" src="/ml/img/c116/p5344_82.svg" alt="puis 1 , 1 , 1 …, divisée par 2 à chaque pas. En bas : le 3 6 12" style="--w:24.31" loading="lazy">
+<p>coût de ces liens. 10 000 pas de la chaîne donnent la précision d’environ 4 300 tirages indépendants, car la</p>
+<img class="vm" src="/ml/img/c116/p5344_83.svg" alt="somme des autocorrélations vaut 2 et 1 + 2 ⋅ 2 = 7 . 3 3 3" style="--w:24.31" loading="lazy">
+<p class="en">Top: the autocorrelation of “being in D” at lag <span class="m">𝑘</span>: 1 for</p>
+<img class="vm" src="/ml/img/c116/p5344_84.svg" alt="𝑘 = 0 (the chain with itself), then 1 , 1 , 1 …, halved at 3 6 12" style="--w:24.31" loading="lazy">
+<p class="en">each step. Bottom: the cost of these links. 10,000 steps of the chain give the precision of about 4,300 independent draws, because the sum of the</p>
+<img class="vm" src="/ml/img/c116/p5344_85.svg" alt="autocorrelations is 2 and 1 + 2 ⋅ 2 = 7 . 3 3 3" style="--w:24.31" loading="lazy">
+<p>Nous calculons le nombre de tirages indépendants qui vaudraient nos <span class="m">𝑁</span> pas. On divise <span class="m">𝑁</span> par <span class="m">1 + 2 × (</span>somme des autocorrélations<span class="m">)</span> :</p>
+<img class="vm" src="/ml/img/c116/p5345_86.svg" alt="𝑁 𝑁eff = 1 + 2 (1 + 1 + 1 + … ) 3 6 12 10 000 10 000 = = ≈ 4 286. 1 + 2 ⋅ 2 7/3 3 Avec nos nombres : la somme 1 + 1 + 1 + … vaut 2 . 3 6 12 3" style="--w:24.31" loading="lazy">
+<p>Ajoute les termes un à un : 0,333 ; 0,5 ; 0,583 ; 0,625 ; 0,646… Chaque terme comble la moitié de l’écart qui</p>
+<img class="vm" src="/ml/img/c116/p5345_87.svg" alt="reste jusqu’à 2 ≈ 0,667. Donc 10 000 pas liés valent 3" style="--w:24.31" loading="lazy">
+<p>environ 4 300 pas indépendants. On parle de <i>taille d’échantillon efficace</i>.</p>
+<p class="en">We compute the number of independent draws that our <span class="m">𝑁</span> steps would be worth. We divide <span class="m">𝑁</span> by <span class="m">1 + 2 × (</span>sum of the autocorrelations<span class="m">)</span>:</p>
+<img class="vm" src="/ml/img/c116/p5345_88.svg" alt="𝑁 = 10,000/(1 + 2 ⋅ 2) = 10,000/(7/3) ≈ 4,286. eff 3 With our numbers: the sum 1 + 1 + 1 + … equals 3 6 12 2 . Add the terms one by one: 0.333; 0.5; 0.583; 3" style="--w:24.31" loading="lazy">
+<p class="en">0.625; 0.646… Each term fills half of the gap left</p>
+<img class="vm" src="/ml/img/c116/p5345_89.svg" alt="up to 2 ≈ 0.667. So 10,000 linked steps are worth 3" style="--w:24.31" loading="lazy">
+<p class="en">about 4,300 independent steps. This is called the <i>effective sample size</i>.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b></p>
+<img class="vm" src="/ml/img/c116/p5345_90.svg" alt="« Diviser par 7, c’est multiplier par 7 : 3 3 10 000 × 7 ≈ 23 333. » La chaîne vaudrait alors 3" style="--w:24.31" loading="lazy">
+<p>plus de tirages indépendants qu’elle n’a de pas. Or des pas qui se ressemblent n’apportent jamais plus d’information que des pas tous</p>
+<img class="vm" src="/ml/img/c116/p5345_91.svg" alt="nouveaux. La figure 116.9 lit 7 comme un 3" style="--w:24.31" loading="lazy">
+<p>partage : 7 pas liés valent 3 tirages indépendants.</p>
+<img class="vm" src="/ml/img/c116/p5346_92.svg" alt="Diviser par 7 dit : il faut 7 pas liés pour valoir un 3 3" style="--w:24.31" loading="lazy">
+<p>tirage, c’est-à-dire 7 pas pour 3 tirages. Fais donc des paquets de 7 pas : <span class="m">10 000 ÷ 7 ≈ 1 428,6</span> paquets, chacun valant 3 tirages. Cela donne</p>
+<img class="vm" src="/ml/img/c116/p5346_93.svg" alt="1 428,6 × 3 ≈ 4 286, soit 10 000 × 3 , moins que 7" style="--w:24.31" loading="lazy">
+<p>10 000.</p>
+<img class="vm" src="/ml/img/c116/p5346_94.svg" alt="“Dividing by 7 means multiplying by 7 : 10,000 × 3 3 7 ≈ 23,333.” The chain would then be worth 3" style="--w:24.31" loading="lazy">
+<p class="en">more independent draws than it has steps. Yet steps that resemble each other never bring more information than brand-new steps. Fig-</p>
+<img class="vm" src="/ml/img/c116/p5346_95.svg" alt="ure 116.9 reads 7 as a sharing: 7 linked steps are 3 worth 3 independent draws. Dividing by 7 says: 3 it takes 7 linked steps to be worth one draw, that 3" style="--w:24.31" loading="lazy">
+<p class="en">is 7 steps for 3 draws. So make packets of 7 steps: <span class="m">10,000 ÷ 7 ≈ 1,428.6</span> packets, each worth 3 draws. That gives <span class="m">1,428.6 × 3 ≈ 4,286</span>, that is</p>
+<img class="vm" src="/ml/img/c116/p5346_96.svg" alt="10,000 × 3 , fewer than 10,000. 7" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5347_97.svg" alt="14 pas liés 7 pas → 3 tirages 7 pas → 3 tirages 6 tirages indépendants juste : 10 000 × 3/7 ≈ 4 286 tirages (moins que 10 000) faux : 10 000 × 7/3 ≈ 23 333 tirages (plus que de pas !)" style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c116/p5347_98.svg" alt="FIɢ. 116.9 : Diviser par 7 , dessiné. En haut, 14 pas liés de 3 la chaîne, en deux paquets de 7. En dessous, ce qu’ils" style="--w:24.31" loading="lazy">
+<p>valent : 3 tirages indépendants par paquet, 6 en tout.</p>
+<img class="vm" src="/ml/img/c116/p5347_99.svg" alt="Donc 𝑁 pas valent 𝑁 × 3 tirages : 10 000 × 3 ≈ 4 286. La 7 7 lecture fausse 10 000 × 7 donnerait plus de tirages que 3" style="--w:24.31" loading="lazy">
+<p>de pas.</p>
+<img class="vm" src="/ml/img/c116/p5347_100.svg" alt="Dividing by 7 , drawn. Top, 14 linked steps of the chain, in 3" style="--w:24.31" loading="lazy">
+<p class="en">two packets of 7. Below, what they are worth: 3 independent draws per packet, 6 in all. So <span class="m">𝑁</span> steps are</p>
+<img class="vm" src="/ml/img/c116/p5347_101.svg" alt="worth 𝑁 × 3 draws: 10,000 × 3 ≈ 4,286. The wrong 7 7 reading 10,000 × 7 would give more draws than steps. 3 Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Lis sur la figure 116.8 l’autocorrélation au</p>
+<img class="vm" src="/ml/img/c116/p5347_102.svg" alt="décalage 3 : 1 . Vérifie-la : la chance d’être en D 12" style="--w:24.31" loading="lazy">
+<p>trois pas après un D vaut <span class="m">0,3125</span> (c’est <span class="m">𝑃 (𝐷)</span> au pas 3 en partant de D, par symétrie avec le tableau). La covariance vaut <span class="m">0,25 × 0,3125 − 0,25</span><sup class="m">2</sup> <span class="m">= 0,015625</span>, la variance de « être en D » vaut <span class="m">0,25 × 0,75 = 0,1875</span>. Divise :</p>
+<img class="vm" src="/ml/img/c116/p5347_103.svg" alt="tu dois trouver 0,0833 = 1 . 12" style="--w:24.31" loading="lazy">
+<p class="en">Read on figure 116.8 the autocorrelation at lag</p>
+<img class="vm" src="/ml/img/c116/p5348_104.svg" alt="3 1 . Check it: the chance of being in D 12" style="--w:24.31" loading="lazy">
+<p class="en">three steps after a D is <span class="m">0.3125</span> (it is <span class="m">𝑃 (𝐷)</span> at step 3 starting from D, by symmetry with the table). The covariance is <span class="m">0.25 × 0.3125 − 0.25</span><sup class="m">2</sup> <span class="m">=</span> <span class="m">0.015625</span>, the variance of “being in D” is <span class="m">0.25 ×</span> <span class="m">0.75 = 0.1875</span>. Divide: you should find <span class="m">0.0833 =</span></p>
+<img class="vm" src="/ml/img/c116/p5348_105.svg" alt="1 . 12" style="--w:24.31" loading="lazy">
+<p><b>Les cas limites : trois chaînes qui échouent</b></p>
+<p>La figure 116.10 dessine trois règles pour lesquelles le comptage échoue, ou presque.</p>
+<p class="en"><b>The limiting cases: three chains that fail.</b> Figure 116.10 draws three rules for which the counting fails, or almost.</p>
+<img class="vf" src="/ml/img/c116/p5349_106.svg" alt="Étape 1 — la chaîne bloquée 1 1 1 G C D partie de G, reste en G : fréquences (1, 0, 0) Étape 2 — la chaîne coupée en deux 1/2 1/2 1 1/2 G C D 1/2 partie de G, ne voit jamais D Étape 3 — la chaîne périodique" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5349_107.svg" alt="1 1/2 G C D 1/2 1 partie de G : C aux pas impairs seulement" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.10 :</b> Trois règles de passage qui mettent le comptage en échec. Étape 1, la chaîne bloquée : chaque état ne mène qu’à lui-même. Étape 2, la chaîne coupée en deux : G et C s’échangent, D reste seul. Étape 3, la chaîne périodique : G et D vont toujours en C, C va en G ou D. Sous chaque diagramme, ce que voit une chaîne partie de G.</p>
+<p class="cap en">Three transition rules that defeat the counting. Step 1, the stuck chain: each state leads only to itself. Step 2, the chain cut in two: G and C swap, D stays alone. Step 3, the periodic chain: G and D always go to C, C goes to G or D. Under each diagram, what a chain started from G sees.</p>
+<p><i>La chaîne bloquée.</i> Si la caméra ne bouge jamais (<span class="m">𝑃</span><sub class="m">𝐺𝐺</sub> <span class="m">= 𝑃</span><sub class="m">𝐶𝐶</sub> <span class="m">= 𝑃</span><sub class="m">𝐷𝐷</sub> <span class="m">= 1</span>), toute loi est stationnaire :</p>
+<p>un pas ne change rien, donc il ne change aucune loi. Partie de G, la chaîne reste en G pour toujours. Les fréquences valent <span class="m">(1, 0, 0)</span>, quel que soit <span class="m">𝑁</span> . La condition « <span class="m">𝜋</span> est stationnaire » ne suffit donc pas : la chaîne doit aussi bouger.</p>
+<p class="en"><i>The stuck chain.</i> If the camera never moves (<span class="m">𝑃</span><sub class="m">𝐺𝐺</sub> <span class="m">= 𝑃</span><sub class="m">𝐶𝐶</sub> <span class="m">= 𝑃</span><sub class="m">𝐷𝐷</sub> <span class="m">= 1</span>), every law is stationary: one step changes nothing, so it changes no law. Starting from G, the chain stays in G forever. The frequencies are <span class="m">(1, 0, 0)</span>, whatever <span class="m">𝑁</span> . So the condition “<span class="m">𝜋</span> is stationary” is not enough: the chain must also move.</p>
+<p><i>La chaîne coupée en deux.</i> Si G et C s’échangent entre eux, et que D reste seul en D, la chaîne partie de G ne voit jamais D. Ses fréquences donnent 0</p>
+<img class="vm" src="/ml/img/c116/p5350_108.svg" alt="pour D, alors que 𝜋 = 1 . Elle ne peut pas dire 𝐷 4" style="--w:24.31" loading="lazy">
+<p>combien de temps la caméra passe à droite. Il faut que tout état puisse être atteint depuis tout autre.</p>
+<p class="en"><i>The chain cut in two.</i> If G and C swap between themselves, and D stays alone in D, the chain started from G never sees D. Its frequencies give 0</p>
+<img class="vm" src="/ml/img/c116/p5350_109.svg" alt="for D, whereas 𝜋 = 1. It cannot say how much 𝐷 4" style="--w:24.31" loading="lazy">
+<p class="en">time the camera spends on the right. Every state must be reachable from every other.</p>
+<p><i>La chaîne périodique.</i> Change la règle : depuis G ou D, aller toujours en C ; depuis C, aller en G ou en D</p>
+<img class="vm" src="/ml/img/c116/p5350_110.svg" alt="avec 1 chacun. La loi ( 1, 1, 1 ) est encore 2 4 2 4 stationnaire : pour arriver en C, 1 ⋅ 1 + 1 ⋅ 1 = 1 . 4 4 2" style="--w:24.31" loading="lazy">
+<p>Partie de G, la chaîne est en C aux pas impairs et jamais aux pas pairs.</p>
+<p class="en"><i>The periodic chain.</i> Change the rule: from G or D,</p>
+<img class="vm" src="/ml/img/c116/p5351_111.svg" alt="always go to C; from C, go to G or D with 1 each. 2 The law ( 1 , 1, 1) is still stationary: to arrive in C, 4 2 4 1 ⋅ 1 + 1 ⋅ 1 = 1 . Starting from G, the chain is in C 4 4 2" style="--w:24.31" loading="lazy">
+<p class="en">at odd steps and never at even steps.</p>
+<img class="vf" src="/ml/img/c116/p5351_112.svg" alt="P(X(t) = C) : 0, 1, 0, 1… part du temps en C depuis le début" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5351_113.svg" alt="1.0 πC = 0,5 0.5" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c116/p5351_114.svg" alt="0.0 0 4 8 12 16 20 pas t" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 116.11 :</b> La chaîne périodique. Points rouges : la probabilité d’être en C au pas <span class="m">𝑡</span> alterne entre 0 et 1 et ne se stabilise jamais. Courbe bleue : la part du temps passé en C, comptée depuis le début, tend pourtant vers <span class="m">𝜋</span><sub class="m">𝐶</sub> <span class="m">= 0,5</span>.</p>
+<p class="cap en">The periodic chain. Red dots: the probability of being in C at step <span class="m">𝑡</span> alternates between 0 and 1 and never settles. Blue curve: the share of time spent in C, counted from the start, still tends to <span class="m">𝜋</span><sub class="m">𝐶</sub> <span class="m">= 0.5</span>.</p>
+<p>La figure 116.11 montre ce que la définition cache. La loi au pas <span class="m">𝑡</span> ne converge pas : elle oscille entre 0 et 1. Mais la fréquence comptée sur tous les pas</p>
+<img class="vm" src="/ml/img/c116/p5352_115.svg" alt="converge quand même vers 1 . Le comptage de 2" style="--w:24.31" loading="lazy">
+<p>MCMC résiste donc à la périodicité. Ce qui casse, c’est l’idée « après la chauffe, chaque pas suit la loi</p>
+<img class="vm" src="/ml/img/c116/p5352_116.svg" alt="𝜋 ». Figure 116.11 shows what the definition hides. The" style="--w:24.31" loading="lazy">
+<p class="en">law at step <span class="m">𝑡</span> does not converge: it oscillates between 0 and 1. But the frequency counted over</p>
+<img class="vm" src="/ml/img/c116/p5352_117.svg" alt="all the steps still converges to 1. So MCMC 2" style="--w:24.31" loading="lazy">
+<p class="en">counting withstands periodicity. What breaks is the idea “after the burn-in, each step follows the law <span class="m">𝜋</span>”.</p>
+<p><b>Le vrai problème : fabriquer la règle</b></p>
+<p>Dans l’exemple, la règle était donnée et on a cherché <span class="m">𝜋</span>. En MCMC, c’est l’inverse : <span class="m">𝜋</span> est donnée (la loi des quatre angles), et il faut inventer une règle de passage qui la laisse stationnaire. Il existe plusieurs recettes. Celle que tu as vue avec les caméras au chapitre 115 — tirer chaque coordonnée dans sa loi conditionnelle, les autres étant fixées — s’appelle l’<b>échantillonneur de Gibbs</b>. Ce nom vient de Stuart et Donald Geman, qui l’ont décrit en 1984 pour restaurer des images bruitées ; il honore le physicien Josiah Willard Gibbs.</p>
+<p class="en"><b>The real problem: making the rule.</b> In the example, the rule was given and we looked for <span class="m">𝜋</span>. In MCMC it is the reverse: <span class="m">𝜋</span> is given (the law of the four angles), and we must invent a transition rule that leaves it stationary. There are several recipes. The one you saw with the cameras in chapter 115 — draw each coordinate from its conditional law, the others being fixed — is called the <b>Gibbs sampler</b>. This name comes from Stuart and Donald Geman, who described it in 1984 to restore noisy images; it honours the physicist Josiah Willard Gibbs.</p>
+<img class="vm" src="/ml/img/c116/p5353_118.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">La chaîne oublie son départ (écart divisé par 2 à chaque pas), on jette la chauffe, et chaque pas lié vaut moins qu’un tirage indépendant : 10 000 pas pour environ 4 300 tirages. The chain forgets its start (gap halved at each step), we throw away the burn-in, and each linked step is worth less than an independent draw: 10,000 steps for about 4,300 draws.</p>
+<img class="vf" src="/ml/img/c116/p5353_119.svg" alt="" style="--w:24.31" loading="lazy">
+<h2>5. La finalité</h2>
+<p class="h2en">5. Where it leads</p>
+<p>MCMC est un parapluie : un seul principe, plusieurs algorithmes.</p>
+<p>• Au chapitre 117, l’échantillonneur de Gibbs. La condition de stationnarité de ce chapitre y explique pourquoi tirer chaque coordonnée dans sa loi conditionnelle laisse la loi jointe stationnaire. Tu y retrouveras la chauffe, les graphiques de trace et l’autocorrélation de la figure 116.8, cette fois sur les caméras.</p>
+<p>• Au chapitre 118, les modèles bayésiens hiérarchiques. Leurs lois a posteriori (chapitre 107) n’ont souvent pas de formule simple. Le comptage de ce chapitre permet d’en tirer des points quand même.</p>
+<p>• Au chapitre 119, l’algorithme de Metropolis–Hastings, descendant direct de la méthode de 1953. Il propose un pas, puis l’accepte ou le refuse, de façon que <span class="m">𝜋</span> reste stationnaire au sens de la figure 116.3.</p>
+<p class="en">MCMC is an umbrella: one single principle, several algorithms. In chapter 117, the Gibbs sampler: the stationarity condition of this chapter explains there why drawing each coordinate from its conditional law leaves the joint law stationary, and you will meet the burn-in, trace plots and the autocorrelation of figure 116.8 again, this time on the cameras. In chapter 118, hierarchical Bayesian models: their posterior laws (chapter 107) often have no simple formula, and this chapter’s counting still lets us draw points from them. In chapter 119, the Metropolis–Hastings algorithm, a direct descendant of the 1953 method: it proposes a step, then accepts or rejects it, so that <span class="m">𝜋</span> stays stationary in the sense of figure 116.3.</p>
+<p>Retiens le renversement. Au chapitre 113, on partait d’une règle de passage et on regardait où allait la chaîne. Ici, on part de l’endroit où l’on veut arriver, la loi <span class="m">𝜋</span>, et on construit la règle qui y mène. Les fréquences de la chaîne deviennent alors un instrument de mesure de <span class="m">𝜋</span>.</p>
+<p class="en">Keep the reversal in mind. In chapter 113, we started from a transition rule and looked at where the chain went. Here, we start from where we want to arrive, the law <span class="m">𝜋</span>, and we build the rule that leads there. The frequencies of the chain then become a measuring instrument for <span class="m">𝜋</span>.</p>
+<h2>6. Une question pour toi</h2>
+<p class="h2en">6. A question for you</p>
+<p>Dans l’exemple de la caméra, la règle de passage n’est pas unique. Peux-tu en trouver une autre qui</p>
+<img class="vm" src="/ml/img/c116/p5355_120.svg" alt="garde 𝜋 = (1 , 1, 1) stationnaire, mais qui oublie le 4 2 4" style="--w:24.31" loading="lazy">
+<p>départ plus vite, en un seul pas ? Et une autre qui l’oublie plus lentement ? Que change ce choix pour le nombre de pas qu’il faut compter ? Pense à ce que fait la règle quand on part du centre.</p>
+<p class="en">In the camera example, the transition rule is not unique. Can you find another one that keeps</p>
+<img class="vm" src="/ml/img/c116/p5355_121.svg" alt="𝜋 = ( 1, 1, 1) stationary, but forgets the start faster, 4 2 4" style="--w:24.31" loading="lazy">
+<p class="en">in a single step? And another one that forgets it more slowly? What does this choice change for the number of steps that must be counted? Think about what the rule does when starting from the center.</p>
+<p><b>Trois questions pour vérifier que tu as compris</b></p>
+<img class="vm" src="/ml/img/c116/p5356_122.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>1. Une chaîne à deux états A et B a pour règle : depuis A, rester avec 0,9, aller en B avec 0,1 ; depuis B, aller en A avec 0,2, rester avec 0,8.</p>
+<img class="vm" src="/ml/img/c116/p5356_123.svg" alt="Vérifie que 𝜋 = ( 2 ; 1) est stationnaire. Ses 3 3 autocorrélations ont pour somme 7 : combien 3" style="--w:24.31" loading="lazy">
+<p>de tirages indépendants valent 10 000 pas ?</p>
+<p>2. Voici 12 pas de la caméra : G C C D D C G G C D C C. Fais le tableau <span class="m">𝑡 → 𝑋</span><sup class="m">(𝑡)</sup>, dessine le chemin, puis calcule <span class="m">#{𝑡 ≤ 12 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈ {</span>C<span class="m">}}</span> et la part du temps passée en C, en G et en D.</p>
+<p>3. En une phrase, avec tes propres nombres, explique pourquoi on peut compter sur les pas d’une chaîne, pourtant liés entre eux, pour mesurer une loi.</p>
+<p class="en"><b>Three questions to check that you have un- derstood.</b> 1. A two-state chain A and B has the rule: from A, stay with 0.9, go to B with 0.1; from B, go to A with 0.2, stay with 0.8. Check that <span class="m">𝜋 =</span></p>
+<img class="vm" src="/ml/img/c116/p5357_124.svg" alt="( 2 ; 1) is stationary. Its autocorrelations add 3 3 up to 7: how many independent draws are 3" style="--w:24.31" loading="lazy">
+<p class="en">10,000 steps worth?</p>
+<p class="en">2. Here are 12 steps of the camera: G C C D D C G G C D C C. Make the table <span class="m">𝑡 → 𝑋</span><sup class="m">(𝑡)</sup>, draw the path, then compute <span class="m">#{𝑡 ≤ 12 ∶ 𝑋</span><sup class="m">(𝑡)</sup> <span class="m">∈</span> <span class="m">{</span>C<span class="m">}}</span> and the share of time spent in C, in G and in D.</p>
+<p class="en">3. In one sentence, with your own numbers, explain why we can count on the steps of a chain, even though they are linked, to measure a distribution.</p>
