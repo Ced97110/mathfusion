@@ -1,0 +1,178 @@
+[
+ {
+  "code": "47-097",
+  "a_dire": "La somme de deux nombres congrus à d'autres est congrue à la somme de ceux-ci, modulo le même m.",
+  "legende_titre": "Les écarts s'additionnent",
+  "lecture": [
+   "Les deux lignes du haut sont des paires congrues (bleu, violet) ; à droite, leur écart est 24 pour chacune.",
+   "La ligne verte du bas est la paire des sommes : 53 et 5.",
+   "Son écart, 48, est la somme des deux écarts 24 et 24."
+  ],
+  "a_voir": "Les deux écarts de 24 s'additionnent en un écart de 48, encore multiple de 12."
+ },
+ {
+  "code": "47-098",
+  "a_dire": "Pour prouver que a+b ≡ a'+b', on regroupe les deux écarts multiples de m en un seul multiple de m.",
+  "legende_titre": "Du départ à l'arrivée en un regroupement",
+  "lecture": [
+   "À gauche, les deux départs : 26 − 2 = 24 (bleu) et 27 − 3 = 24 (violet).",
+   "La case orange est l'étape qui porte la preuve : on regroupe 24 + 24.",
+   "La case verte est l'arrivée : 48, qui vaut 4 × 12."
+  ],
+  "a_voir": "Tout se joue dans l'étape orange, le regroupement des deux écarts."
+ },
+ {
+  "code": "47-099",
+  "a_dire": "La congruence modulo m est compatible avec la multiplication quand les deux congruences ont le même m ; avec des m différents, elle ne l'est plus.",
+  "legende_titre": "Même m, ou m différents",
+  "lecture": [
+   "En haut (vert), avec le même m, a ≡ a' et b ≡ b' donnent ab ≡ a'b'.",
+   "En bas, la case bleue est 2 ≡ 5 modulo 3 et la case violette est 1 ≡ 6 modulo 5.",
+   "La case rouge donne les produits 2 et 30, d'écart 28, qui n'est multiple ni de 3 ni de 5."
+  ],
+  "a_voir": "Avec le même m le produit garde la congruence ; avec deux m différents, elle casse."
+ },
+ {
+  "code": "47-100",
+  "a_dire": "Une congruence est une relation d'équivalence qui respecte le produit : « même nombre de chiffres » n'en est pas une, « même reste modulo 12 » en est une.",
+  "legende_titre": "Deux relations, un seul test",
+  "lecture": [
+   "À gauche, 3 et 4 sont liés ; après × 3, 9 et 12 ne sont plus liés (trait rouge en tirets).",
+   "À droite, x et y sont liés ; après × 3, 3x et 3y restent liés (trait vert).",
+   "Les flèches orange sont la multiplication par 3."
+  ],
+  "a_voir": "Seule la relation de droite reste vraie après multiplication : c'est une congruence."
+ },
+ {
+  "code": "47-101",
+  "a_dire": "Si a ≡ a' et b ≡ b', alors ab ≡ a'b' : deux congruences au départ donnent une congruence entre les produits.",
+  "legende_titre": "Lire la flèche ⇒ sur un cas",
+  "lecture": [
+   "À gauche, les deux congruences de départ : 26 ≡ 2 (bleu) et 27 ≡ 3 (violet).",
+   "Les cases grises sont les produits : 26 × 27 = 702 et 2 × 3 = 6.",
+   "La case verte dit que ces deux produits sont congrus ; leur écart 696 vaut 58 × 12."
+  ],
+  "a_voir": "Quand les deux congruences de gauche sont vraies, celle de droite l'est aussi."
+ },
+ {
+  "code": "47-102",
+  "a_dire": "Le signe ⇒ se lit « implique » : de gauche à droite seulement.",
+  "legende_titre": "Un sens, pas l'autre",
+  "lecture": [
+   "En haut, la flèche va de « multiple de 6 » (bleu) vers « multiple de 3 » (vert) ; 12 est dans les deux.",
+   "En bas, la flèche rouge va de « multiple de 3 » vers « multiple de 6 » : elle est fausse.",
+   "Le nombre 9 est multiple de 3 mais n'est pas multiple de 6."
+  ],
+  "a_voir": "Multiple de 6 implique multiple de 3, mais l'inverse est faux."
+ },
+ {
+  "code": "47-103",
+  "a_dire": "Une congruence permet de remplacer un facteur par un nombre congru : le produit reste dans la même classe.",
+  "legende_titre": "Remplacer un facteur",
+  "lecture": [
+   "La case bleue est le produit 26 × 27 = 702.",
+   "La case violette est le même produit où 26 est remplacé par 2 : 54.",
+   "La case verte dit que les deux produits sont dans la même classe modulo 12 : leur écart 648 vaut 54 × 12."
+  ],
+  "a_voir": "Changer un facteur pour un nombre congru change le produit mais pas sa classe."
+ },
+ {
+  "code": "47-104",
+  "a_dire": "La condition de congruence est celle qui permet de définir un produit sur les classes, car le résultat ne dépend pas des représentants.",
+  "legende_titre": "Quand la recette échoue",
+  "lecture": [
+   "Le grand cadre bleu est le paquet des nombres à un chiffre.",
+   "Les deux cases orange sont deux choix de représentants dans ce paquet : 3 × 3 et 4 × 5.",
+   "Les résultats tombent dans deux paquets différents : 9 (un chiffre, vert) et 20 (deux chiffres, rouge)."
+  ],
+  "a_voir": "Sans la condition, deux choix dans les mêmes paquets donnent deux réponses : il n'y a pas de produit."
+ },
+ {
+  "code": "47-105",
+  "a_dire": "Le signe M barre désigne l'ensemble des classes de M.",
+  "legende_titre": "Un nom pour l'ensemble des classes",
+  "lecture": [
+   "Le cadre en tirets est l'ensemble M barre.",
+   "Chaque case bleue à l'intérieur est une classe : multiples de 3, classe de 1, classe de 2.",
+   "Il y a donc trois éléments dans M barre, modulo 3."
+  ],
+  "a_voir": "M barre est l'ensemble dont chaque élément est une classe entière."
+ },
+ {
+  "code": "47-106",
+  "a_dire": "a barre désigne la classe de a : l'ensemble de tous les éléments congrus à a, non l'élément a seul.",
+  "legende_titre": "De l'élément à son paquet",
+  "lecture": [
+   "Le disque orange à gauche est le nombre 4, un seul élément.",
+   "La flèche « barre » mène à la grande case bleue : la classe de 4.",
+   "Cette classe contient 1, 4, 7 et d'autres nombres ; elle est la même que la classe de 1."
+  ],
+  "a_voir": "La barre passe d'un nombre à l'ensemble de ses congrus ; 4 barre et 1 barre sont la même classe."
+ },
+ {
+  "code": "47-107",
+  "a_dire": "Le produit des classes est la classe du produit : ā · b̄ = classe de ab, quels que soient les représentants.",
+  "legende_titre": "Le produit des classes",
+  "lecture": [
+   "La formule en haut dit : classe de a fois classe de b égale classe de ab.",
+   "Les cases de gauche sont deux choix de nombres : 5 et 7 (bleu), puis 17 et 19 (violet).",
+   "Les cases orange sont leurs restes : 11 dans les deux cas ; la case verte est la classe de 11."
+  ],
+  "a_voir": "Le calcul intermédiaire change (35 ou 323), mais la classe finale ne change pas."
+ },
+ {
+  "code": "47-108",
+  "a_dire": "Une classe a plusieurs noms ; une recette qui part du nom peut donner deux réponses pour la même classe.",
+  "legende_titre": "Un nom, plusieurs noms",
+  "lecture": [
+   "Le cadre bleu est la classe de 5 modulo 12, avec trois noms : 5, 17, 29.",
+   "Les flèches orange appliquent la recette « reste du nom par 5 » à 5 et à 17.",
+   "Les cases rouges donnent 0 et 2 : deux réponses pour une seule classe."
+  ],
+  "a_voir": "Une recette qui dépend du nom choisi donne deux réponses pour un même objet."
+ },
+ {
+  "code": "47-109",
+  "a_dire": "Un produit bien défini est un produit dont le résultat ne dépend pas des représentants choisis.",
+  "legende_titre": "Deux noms, une seule réponse",
+  "lecture": [
+   "Les deux colonnes sont la classe de 5 (bleu) et la classe de 7 (violet), chacune avec deux noms.",
+   "Chaque ligne multiplie deux noms : 5 × 7 donne 35, et 17 × 19 donne 323 (cases orange).",
+   "Les deux flèches vertes arrivent dans la même case : la classe de 11."
+  ],
+  "a_voir": "Avec des noms différents pour les mêmes classes, on arrive à la même classe."
+ },
+ {
+  "code": "47-110",
+  "a_dire": "M barre hérite des règles de M : le produit des classes est associatif et la classe de 1 est neutre, donc M barre est un monoïde.",
+  "legende_titre": "Une règle de M passe aux classes",
+  "lecture": [
+   "Chaque ligne est un regroupement de 5, 7 et 11 modulo 12 : (5 × 7) × 11 en bleu, 5 × (7 × 11) en violet.",
+   "La flèche → donne le reste modulo 12 de chaque produit.",
+   "Les deux lignes arrivent dans la même case verte : la classe de 1."
+  ],
+  "a_voir": "Les deux regroupements donnent la même classe, comme dans M."
+ },
+ {
+  "code": "47-111",
+  "a_dire": "Le monoïde quotient M/≡ rassemble les éléments en classes ; un sous-monoïde, lui, choisit des éléments de M.",
+  "legende_titre": "Choisir ou rassembler",
+  "lecture": [
+   "À gauche, les points gris (négatifs) sont écartés et les violets (positifs) sont gardés : c'est un sous-monoïde.",
+   "À droite, les mêmes sortes de points sont réunis dans trois cases bleues, les classes 0, 1 et 2.",
+   "Chaque case contient plusieurs éléments rassemblés."
+  ],
+  "a_voir": "Le sous-monoïde garde une partie des éléments ; le quotient les rassemble en paquets."
+ },
+ {
+  "code": "47-112",
+  "a_dire": "La notation M/≡ désigne le monoïde des classes de M pour la congruence ≡ ; la relation choisie est écrite après la barre.",
+  "legende_titre": "Lire M/≡ en trois morceaux",
+  "lecture": [
+   "En haut, le signe est coupé en trois : M (bleu), la barre (gris) et ≡ (orange).",
+   "Chaque flèche relie un morceau à son sens : le monoïde de départ, le regroupement, la relation choisie.",
+   "En bas, deux relations différentes donnent deux quotients : 3 classes (violet) ou 12 classes (bleu)."
+  ],
+  "a_voir": "Changer la relation après la barre change le quotient."
+ }
+]

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 62, 80, 14, 'sujet')
+text(ax, 44, 72, r'$7^4=2401=200\times12+1$', 'sujet', 's')
+text(ax, 44, 66, r'$7^4$ a pour reste 1', 'sujet', 's')
+for k in range(25):
+    r_, c_ = divmod(k, 5)
+    box(ax, 6 + c_*6.4, 36 - r_*6.4 + 8, 5.6, 5.6, 'sujet', r=0.5, lw=0.6)
+text(ax, 22, 52, r'25 blocs $7^4$', 'sujet', 's')
+text(ax, 22, 5, r'$7^{100}=(7^4)^{25}$', 'encre', 's')
+arrow(ax, (44, 61), (44, 56), 'encre')
+arrow(ax, (42, 28), (57, 28), 'varie')
+text(ax, 50, 33, 'chacun 1', 'varie', 's')
+box(ax, 58, 20, 26, 16, 'resultat')
+text(ax, 71, 31, r'$7^{100}$', 'resultat', 'm'); text(ax, 71, 25, 'reste 1', 'resultat', 'm')
+save(fig, '47-215')

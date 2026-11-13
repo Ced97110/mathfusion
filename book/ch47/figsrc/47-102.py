@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,2,52,30,10,'sujet',label='multiple de 6'); box(ax,56,52,30,10,'resultat',label='multiple de 3')
+arrow(ax,(33,57),(55,57),'varie',lw=1.6); text(ax,44,62,'⇒','varie','xl')
+disc(ax,17,41,4.5,'sujet',label='12'); line(ax,[(17,51.5),(17,45.5)],'fixe')
+disc(ax,71,41,4.5,'resultat',label='12'); line(ax,[(71,51.5),(71,45.5)],'fixe')
+line(ax,[(2,33),(86,33)],'fixe',dash=True)
+box(ax,2,6,30,10,'resultat',label='multiple de 3'); box(ax,56,6,30,10,'sujet',label='multiple de 6',dash=True)
+arrow(ax,(33,11),(55,11),'limite',lw=1.6); text(ax,44,15.5,'faux','limite','m')
+disc(ax,17,26,4.5,'limite',label='9'); line(ax,[(17,16.5),(17,21.5)],'fixe')
+save(fig,'47-102')

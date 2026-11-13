@@ -1,0 +1,180 @@
+[
+ {
+  "code": "47-161",
+  "a_dire": "A₃ est normal dans S₃ : pour chaque permutation, classe à gauche et classe à droite sont le même ensemble.",
+  "legende_titre": "Les deux classes de S₃",
+  "lecture": [
+   "Les trois cases bleues sont les permutations paires : 1, (1 2 3) et (1 3 2). Elles forment N.",
+   "Les trois cases orange sont les trois échanges, le reste de S₃.",
+   "Chaque cadre en pointillés est une classe, et le texte vert dit que son côté gauche et son côté droit coïncident."
+  ],
+  "a_voir": "S₃ se coupe en deux classes de 3, et à gauche comme à droite ce sont les mêmes."
+ },
+ {
+  "code": "47-162",
+  "a_dire": "La classe à gauche (1 2)N est l'ensemble des trois échanges.",
+  "legende_titre": "Multiplier N par un échange à gauche",
+  "lecture": [
+   "Les cases bleues de gauche sont les trois éléments de N.",
+   "Chaque flèche orange est la multiplication par (1 2) placée à gauche.",
+   "Les cases vertes de droite sont les résultats : (1 2), (2 3) et (1 3), les trois échanges."
+  ],
+  "a_voir": "Chaque élément de N donne un échange différent."
+ },
+ {
+  "code": "47-163",
+  "a_dire": "La classe à droite N(1 2) est le même ensemble que (1 2)N, donc N est normal.",
+  "legende_titre": "Les deux découpages coïncident",
+  "lecture": [
+   "La ligne du haut est (1 2)N : (1 2), (1 3), (2 3).",
+   "La ligne du bas est N(1 2) : les mêmes trois échanges.",
+   "Le signe égal vert dit que les deux lignes ont les mêmes éléments."
+  ],
+  "a_voir": "Les deux lignes contiennent les mêmes trois cases."
+ },
+ {
+  "code": "47-164",
+  "a_dire": "Normal est une propriété du couple (sous-groupe, groupe) : N est normal dans S₃, K ne l'est pas.",
+  "legende_titre": "Deux sous-groupes du même groupe",
+  "lecture": [
+   "Le cadre bleu montre N, avec ses trois éléments : à gauche et à droite, les classes coïncident.",
+   "Le cadre violet montre K = {1, (1 2)}, avec ses deux éléments.",
+   "Pour K, le signe rouge dit que les classes à gauche et à droite diffèrent : K n'est pas normal."
+  ],
+  "a_voir": "Dans le même groupe S₃, un sous-groupe est normal et l'autre non."
+ },
+ {
+  "code": "47-165",
+  "a_dire": "Le quotient S₃/A₃ a deux éléments, paire et impaire, et se multiplie comme la parité (signature +1 ou −1).",
+  "legende_titre": "Table de S₃/A₃",
+  "lecture": [
+   "Les cases bleues et orange des bords sont les deux classes : paire et impaire.",
+   "Chaque case verte est le produit de la classe de sa ligne par la classe de sa colonne.",
+   "Paire avec paire donne paire, impaire avec impaire donne paire, et un mélange donne impaire."
+  ],
+  "a_voir": "La table n'a que deux entrées possibles, paire et impaire."
+ },
+ {
+  "code": "47-166",
+  "a_dire": "Le produit de deux échanges (1 3)(1 2) est le cycle (1 2 3) : impaire fois impaire donne paire.",
+  "legende_titre": "Deux échanges, un cycle",
+  "lecture": [
+   "La rangée bleue du haut porte les nombres 1, 2, 3 au départ.",
+   "Les flèches orange sont l'échange (1 2), appliqué en premier.",
+   "Les flèches violettes sont l'échange (1 3), appliqué ensuite.",
+   "La rangée verte du bas donne l'arrivée : 1 va sur 2, 2 sur 3, 3 sur 1."
+  ],
+  "a_voir": "Après les deux échanges, chaque nombre a avancé d'un cran : c'est un cycle de trois nombres."
+ },
+ {
+  "code": "47-167",
+  "a_dire": "Le quotient S₃/A₃ oublie quelle permutation on a et ne garde que sa parité.",
+  "legende_titre": "Six permutations, deux éléments",
+  "lecture": [
+   "Les six cases de gauche sont les permutations de S₃ : trois bleues paires, trois orange impaires.",
+   "Les grandes cases de droite sont les deux éléments du quotient : paire et impaire.",
+   "Chaque flèche envoie une permutation vers sa parité."
+  ],
+  "a_voir": "Six permutations différentes deviennent seulement deux éléments."
+ },
+ {
+  "code": "47-168",
+  "a_dire": "Conjuguer un cycle par σ : écrire la liste du cycle, remplacer chaque nombre par son image par σ, relire en cycle.",
+  "legende_titre": "Conjugué d'un cycle",
+  "lecture": [
+   "La rangée bleue est la liste du cycle τ : 1, 2, 3.",
+   "Les flèches orange sont σ, qui échange 1 et 2 et laisse 3.",
+   "La rangée verte est la nouvelle liste : 2, 1, 3, lue comme un cycle."
+  ],
+  "a_voir": "Chaque nombre du cycle est remplacé par son image, à la même place."
+ },
+ {
+  "code": "47-169",
+  "a_dire": "Pour conjuguer un cycle par σ, on remplace chaque nombre du cycle par son image, sans multiplier trois permutations.",
+  "legende_titre": "Deux manières de calculer",
+  "lecture": [
+   "Les cases grises du haut sont les trois permutations à multiplier, avec deux produits.",
+   "Les cases du bas sont le renommage : la liste 1 2 3 devient 2 1 3.",
+   "Les deux cases vertes donnent le même résultat : (1 3 2)."
+  ],
+  "a_voir": "Le renommage donne en une étape ce que trois permutations donnent en deux produits."
+ },
+ {
+  "code": "47-170",
+  "a_dire": "Preuve : σ τ σ⁻¹ envoie σ(a₁) sur σ(a₂), en trois étapes de droite à gauche.",
+  "legende_titre": "Un nombre suivi pas à pas",
+  "lecture": [
+   "Le disque bleu est le nombre b, image de a₁ par σ.",
+   "La flèche orange épaisse, σ⁻¹, ramène b sur a₁ : c'est l'étape qui porte la preuve.",
+   "Les flèches grises sont τ puis σ, qui mènent de a₁ à a₂ puis à σ(a₂).",
+   "Le disque vert est l'arrivée : σ(a₂)."
+  ],
+  "a_voir": "b est ramené sur a₁, puis suit le cycle, puis revient en σ(a₂)."
+ },
+ {
+  "code": "47-171",
+  "a_dire": "Un nombre c hors des images du cycle reste fixe par σ τ σ⁻¹.",
+  "legende_titre": "Un nombre hors du cycle",
+  "lecture": [
+   "Le disque bleu est c, qui n'est l'image d'aucun nombre du cycle.",
+   "Le disque gris du milieu est σ⁻¹(c) : il n'est pas dans le cycle, donc τ ne le bouge pas.",
+   "Le disque vert est le résultat : c revient sur c."
+  ],
+  "a_voir": "Le nombre part de c et revient à c : il reste fixe."
+ },
+ {
+  "code": "47-172",
+  "a_dire": "(1 2)(1 2 3)(1 2)⁻¹ = (1 3 2) : un 3-cycle, donc une permutation paire de A₃.",
+  "legende_titre": "Renommer les sommets du cycle",
+  "lecture": [
+   "Le triangle bleu est le cycle (1 2 3) : les flèches suivent 1, 2, 3.",
+   "La flèche orange σ échange les noms 1 et 2 et laisse 3.",
+   "Le triangle vert a les mêmes flèches avec les nouveaux noms 2, 1, 3 : c'est le cycle (1 3 2)."
+  ],
+  "a_voir": "Le triangle garde sa forme : seuls les noms changent."
+ },
+ {
+  "code": "47-173",
+  "a_dire": "Le conjugué d'un 3-cycle est un 3-cycle, donc il reste dans A₃ : seconde preuve que A₃ est normal.",
+  "legende_titre": "Les conjugués restent dans N",
+  "lecture": [
+   "La rangée bleue du haut est N : 1, (1 2 3) et (1 3 2).",
+   "Les flèches orange sont la conjugaison par une permutation σ.",
+   "La rangée verte du bas donne 1 et deux 3-cycles, tous dans le cadre pointillé qui est N."
+  ],
+  "a_voir": "Après conjugaison, chaque élément est encore dans N."
+ },
+ {
+  "code": "47-174",
+  "a_dire": "Deux cycles de même longueur sont conjugués ; sans cette condition, c'est faux.",
+  "legende_titre": "Même longueur ou non",
+  "lecture": [
+   "En haut, trois disques bleus et trois disques verts : (1 2 3) et (1 3 2) ont la même longueur, ils sont reliés.",
+   "En bas, deux disques bleus pour (1 2) et trois disques rouges pour (1 2 3).",
+   "La croix rouge dit qu'aucun renommage ne relie des cycles de longueurs 2 et 3."
+  ],
+  "a_voir": "Les nombres de disques doivent être égaux pour que les cycles soient conjugués."
+ },
+ {
+  "code": "47-175",
+  "a_dire": "H = {1, s} est un sous-groupe de D₄ car s·s = 1, et son indice est 4 (8 divisé par 2).",
+  "legende_titre": "Un sous-groupe de 2 éléments dans 8",
+  "lecture": [
+   "Les deux cases bleues sont les éléments de H : 1 et s.",
+   "Les trois autres cadres gris sont les autres classes, de 2 éléments chacune.",
+   "En tout il y a 8 cases, rangées en 4 classes de 2."
+  ],
+  "a_voir": "Quatre classes de deux cases couvrent les huit éléments de D₄."
+ },
+ {
+  "code": "47-176",
+  "a_dire": "H = {1, s} n'est pas normal dans D₄ : rH et Hr sont différents.",
+  "legende_titre": "rH contre Hr",
+  "lecture": [
+   "La ligne du haut est rH : les cases r et rs.",
+   "La ligne du bas est Hr : les cases r et r³s.",
+   "La case r est la même (gris), mais rs et r³s diffèrent, ce que marque le cadre rouge et le signe ≠."
+  ],
+  "a_voir": "Les deux ensembles se distinguent par leur seconde case."
+ }
+]

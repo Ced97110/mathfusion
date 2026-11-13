@@ -1,0 +1,180 @@
+[
+ {
+  "code": "47-033",
+  "a_dire": "Chaque point est dans une orbite et une seule : les orbites découpent S.",
+  "legende_titre": "Chaque point a sa place",
+  "lecture": [
+   "Les points bleus sont les quatre points de l’orbite de P.",
+   "Le point violet est le centre O, seul dans son orbite.",
+   "Chaque point du carré est dans un seul des deux cadres."
+  ],
+  "a_voir": "Les deux cadres couvrent tout le carré sans se chevaucher."
+ },
+ {
+  "code": "47-034",
+  "a_dire": "G est transitif sur S quand une seule orbite remplit tout S.",
+  "legende_titre": "Une seule orbite pour les sommets",
+  "lecture": [
+   "Les cercles bleus sont les sommets A, B, C et D.",
+   "Les flèches orange partent de A : quart de tour vers B, demi-tour vers C, trois quarts vers D.",
+   "Le cadre vert dit que tous les sommets forment une seule orbite."
+  ],
+  "a_voir": "Depuis A, une rotation mène à chacun des autres sommets."
+ },
+ {
+  "code": "47-035",
+  "a_dire": "Les rotations du carré ne sont pas transitives sur le carré : O et P sont dans deux orbites.",
+  "legende_titre": "Un point que rien n’atteint",
+  "lecture": [
+   "Le cercle violet est le centre O, que les rotations laissent en place.",
+   "Le cercle bleu est le point P, les cercles gris vides sont ses images.",
+   "La flèche rouge barrée de O vers P est impossible : aucune rotation ne la fait.",
+   "Le cadre rouge conclut : au moins deux orbites."
+  ],
+  "a_voir": "Aucune rotation n’envoie O sur P."
+ },
+ {
+  "code": "47-036",
+  "a_dire": "La formule gH rassemble les résultats g·h pour chaque h de H.",
+  "legende_titre": "Construire gH élément par élément",
+  "lecture": [
+   "Les cases bleues du haut sont les éléments h de H : 0, 3, 6 et 9.",
+   "Les flèches orange ajoutent g = 7 à chacun.",
+   "Les cases vertes du bas sont les résultats, qui forment gH : 7, 10, 1 et 4."
+  ],
+  "a_voir": "On prend g, on l’applique à chaque h, on rassemble les résultats."
+ },
+ {
+  "code": "47-037",
+  "a_dire": "Une classe latérale à gauche est l’ensemble gH obtenu en appliquant g à chaque élément de H.",
+  "legende_titre": "Un nom pour l’ensemble gH",
+  "lecture": [
+   "Le grand cadre bleu est H, avec ses quatre éléments.",
+   "Les flèches orange appliquent g à chaque élément.",
+   "Le cadre vert est l’ensemble obtenu : la classe à gauche gH."
+  ],
+  "a_voir": "Chaque élément de H a son image dans gH : même nombre d’éléments."
+ },
+ {
+  "code": "47-038",
+  "a_dire": "En notation additive, gH s’écrit g + H : c’est la ligne de g.",
+  "legende_titre": "gH quand l’opération est +",
+  "lecture": [
+   "Les points bleus sont les multiples de 3, c’est-à-dire H.",
+   "Les flèches orange ajoutent 2 à chacun.",
+   "Les points verts, 2, 5, 8 et 11, forment la ligne de 2."
+  ],
+  "a_voir": "La ligne de 2 est 2 + H : on additionne, on ne multiplie pas."
+ },
+ {
+  "code": "47-039",
+  "a_dire": "Dans la classe à gauche, g est écrit à gauche de chaque élément h de H.",
+  "legende_titre": "Où est écrit g",
+  "lecture": [
+   "Dans la rangée du haut, la case bleue g est à gauche de la case grise h.",
+   "Dans la rangée du bas, g est remplacé par r et h par s.",
+   "Les flèches grises relient chaque lettre à sa valeur."
+  ],
+  "a_voir": "« Latérale » dit la place de g dans l’écriture, à gauche."
+ },
+ {
+  "code": "47-040",
+  "a_dire": "La classe à droite Hg se forme avec g écrit à droite ; elle peut différer de gH.",
+  "legende_titre": "Classe à droite contre classe à gauche",
+  "lecture": [
+   "Le cadre violet est la classe à gauche gH : r et rs.",
+   "Le cadre bleu est la classe à droite Hg : r et sr.",
+   "Le signe rouge ≠ montre que rs et sr sont différents, car sr = r³s."
+  ],
+  "a_voir": "Avec g = r et H = {1, s}, gH et Hg ne sont pas les mêmes."
+ },
+ {
+  "code": "47-041",
+  "a_dire": "Hg désigne l’ensemble des produits hg, avec g placé en dernier.",
+  "legende_titre": "Lire le symbole Hg",
+  "lecture": [
+   "La case bleue H donne tous les éléments h.",
+   "La case orange g est placée en dernier, après chaque h.",
+   "Chaque ligne multiplie un h par r ; les cases vertes donnent r et sr."
+  ],
+  "a_voir": "L’ordre H puis g dit que g est à droite."
+ },
+ {
+  "code": "47-042",
+  "a_dire": "Dans un groupe commutatif, gH et Hg ont les mêmes éléments.",
+  "legende_titre": "Quand gauche et droite coïncident",
+  "lecture": [
+   "La rangée violette est gH : 2, 5, 8, 11.",
+   "La rangée bleue est Hg : 2, 5, 8, 11.",
+   "Les petits traits verts relient deux cases identiques."
+  ],
+  "a_voir": "Quand g + h = h + g, les deux rangées sont égales."
+ },
+ {
+  "code": "47-043",
+  "a_dire": "Dans les symétries du carré, rs et sr diffèrent : le côté de g compte.",
+  "legende_titre": "L’ordre change le résultat",
+  "lecture": [
+   "Chaque carré porte un rond bleu et un rond orange pour suivre sa position.",
+   "Rangée du haut : d’abord s, puis r.",
+   "Rangée du bas : d’abord r, puis s.",
+   "Le signe rouge ≠ marque deux carrés d’arrivée différents."
+  ],
+  "a_voir": "Les deux ordres donnent deux positions différentes du carré."
+ },
+ {
+  "code": "47-044",
+  "a_dire": "La lettre G désigne un groupe quelconque.",
+  "legende_titre": "Une lettre pour tous les groupes",
+  "lecture": [
+   "Les trois cadres gris montrent trois groupes : l’horloge, le carré, trois objets.",
+   "Les flèches bleues les mènent vers la même lettre G.",
+   "Le cadre bleu G peut représenter n’importe lequel."
+  ],
+  "a_voir": "G remplace le groupe dont on parle, quel qu’il soit."
+ },
+ {
+  "code": "47-045",
+  "a_dire": "H et N désignent une partie d’un groupe qui est elle-même un groupe.",
+  "legende_titre": "Une partie qui est un groupe",
+  "lecture": [
+   "Sur l’horloge à 12 heures, les points bleus sont 0, 3, 6 et 9.",
+   "Sur l’horloge à 6 heures, les points bleus sont 0, 2 et 4.",
+   "Les points gris sont les autres éléments du groupe."
+  ],
+  "a_voir": "Les points bleus forment à chaque fois un sous-groupe."
+ },
+ {
+  "code": "47-046",
+  "a_dire": "Le signe ≡ dit que la différence de deux nombres est un multiple de 12.",
+  "legende_titre": "Quand deux nombres sont-ils congrus ?",
+  "lecture": [
+   "Les deux rangées vertes sont deux cas où la différence est un multiple de 12 : 12 et 24.",
+   "La rangée rouge est le cas où la différence, 11, n’est pas un multiple de 12.",
+   "Les cases de gauche donnent les nombres comparés."
+  ],
+  "a_voir": "Congru veut dire : la différence est un multiple de 12."
+ },
+ {
+  "code": "47-047",
+  "a_dire": "La barre sur a désigne le paquet de tous les nombres liés à a.",
+  "legende_titre": "Un paquet, un seul nom",
+  "lecture": [
+   "Le grand cadre bleu contient des nombres qui sont la même heure que 3 : −9, 3, 15, 27, 39, et d’autres.",
+   "Les points de suspension disent que la liste continue.",
+   "Le cadre vert porte le nom court de tout le paquet."
+  ],
+  "a_voir": "Le signe barre 3 remplace toute la liste."
+ },
+ {
+  "code": "47-048",
+  "a_dire": "G/N est le groupe dont chaque élément est une ligne de N.",
+  "legende_titre": "Un groupe de lignes",
+  "lecture": [
+   "Les trois cadres bleus sont les trois lignes de l’horloge.",
+   "Les flèches orange additionnent la ligne de 1 et la ligne de 2.",
+   "Le résultat, 1 + 2 = 3, est la ligne de 0."
+  ],
+  "a_voir": "Le groupe G/N a 3 éléments, qui sont des lignes."
+ }
+]

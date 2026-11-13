@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+text(ax,44,59,r'$\bar{a}\cdot\bar{b}=\overline{ab}$','sujet','xl')
+text(ax,19,48,'noms choisis','varie','s'); text(ax,77,48,'même classe','resultat','s')
+box(ax,2,34,34,10,'sujet',label='5 × 7 = 35'); box(ax,2,16,34,10,'autre',label='17 × 19 = 323')
+arrow(ax,(37,39),(48,39),'varie'); arrow(ax,(37,21),(48,21),'varie')
+box(ax,49,34,18,10,'varie',label='reste 11'); box(ax,49,16,18,10,'varie',label='reste 11')
+arrow(ax,(68,39),(73,33),'resultat'); arrow(ax,(68,21),(73,27),'resultat')
+box(ax,74,22,12,16,'resultat',label='classe\nde 11',size='s')
+save(fig,'47-107')

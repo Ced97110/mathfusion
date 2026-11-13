@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 3, 24, 22, 14, 'sujet', label='2  5  8  11', size='s')
+text(ax, 14, 43, 'ligne de 2', 'sujet', 's')
+text(ax, 30, 31, '+', 'encre', 'l')
+box(ax, 35, 24, 22, 14, 'fixe', label='0  3  6  9', size='s')
+text(ax, 46, 43, 'neutre', 'fixe', 's')
+text(ax, 62, 31, '=', 'resultat', 'l')
+box(ax, 66, 24, 20, 14, 'resultat', label='2 5 8 11', size='s')
+text(ax, 76, 43, 'inchangée', 'resultat', 's')
+text(ax, 44, 12, r'$1N=N$ : neutre de $G/N$', 'fixe', 'm')
+save(fig, '47-144')

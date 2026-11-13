@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 12, 82, 42, 'sujet', fill=False, lw=1.2)
+text(ax, 18, 49, r'$N$ (normal)', 'sujet', 'm')
+disc(ax, 20, 32, 5.5, 'resultat', label=r'$n$')
+disc(ax, 68, 32, 5.5, 'sujet', label=r"$n'$")
+arrow(ax, (25, 37), (63, 37), 'varie', curve=-0.3)
+text(ax, 44, 48, r"$n'=g^{-1}ng\in N$", 'varie', 's')
+arrow(ax, (63, 27), (25, 27), 'varie', curve=-0.3)
+text(ax, 44, 17, r"on revient sur $n$", 'varie', 's')
+text(ax, 44, 6, r"$n=gn'g^{-1}$ : $n$ est atteint", 'resultat', 'm')
+save(fig, '47-133')

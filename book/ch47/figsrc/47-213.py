@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 6, 70, 14, 0, 60, step=12)
+for v in range(0, 61, 12): disc(ax, f(v), 14, 1.6, 'sujet')
+arrow(ax, (f(12), 16.5), (f(36), 16.5), 'varie', curve=-0.55)
+text(ax, f(24), 33, r'somme : $12+24=36$', 'varie', 's')
+arrow(ax, (f(12), 16.5), (f(60), 16.5), 'resultat', curve=-0.4)
+text(ax, f(40), 45, 'produit : entier quelconque', 'resultat', 's'); text(ax, f(40), 39.5, r'$12\times5=60$', 'resultat', 'm')
+text(ax, 44, 3, 'on reste dans les multiples de 12', 'sujet', 's')
+save(fig, '47-213')

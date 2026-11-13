@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 19, 75, 'même ligne', 'sujet', 'm'); text(ax, 69, 75, 'même ligne', 'resultat', 'm')
+box(ax, 3, 36, 32, 34, 'sujet'); box(ax, 53, 36, 32, 34, 'resultat')
+text(ax, 19, 65, '2, 5, 8, 11', 'sujet', 'm'); text(ax, 69, 65, '10, 7, 4, 1', 'resultat', 'm')
+disc(ax, 19, 54, 4, 'varie', label='2'); disc(ax, 19, 43, 4, 'varie', label='5')
+disc(ax, 69, 54, 4, 'varie', label='10', size='s'); disc(ax, 69, 43, 4, 'varie', label='7')
+arrow(ax, (23.5, 54), (64.5, 54), 'varie'); arrow(ax, (23.5, 43), (64.5, 43), 'varie')
+text(ax, 44, 57.5, 'inverse', 'varie', 's')
+text(ax, 44, 29, r'$g=2$ ou $g=5$ : une seule ligne', 'resultat', 'm')
+text(ax, 44, 21, r'l’ensemble des inverses ne dépend', 'encre', 's')
+text(ax, 44, 14.5, r'que de la classe de départ', 'encre', 's')
+save(fig, '47-086')
