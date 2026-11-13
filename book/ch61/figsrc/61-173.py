@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+ox, oy, k = 8, 10, 11
+arrow(ax, (ox, oy), (ox + 4.4 * k, oy), 'fixe', lw=0.7); arrow(ax, (ox, oy), (ox, oy + 3.6 * k), 'fixe', lw=0.7)
+line(ax, [(ox, oy + 3 * k), (ox + 3.2 * k, oy - 0.2 * k)], 'sujet', lw=1.3)
+line(ax, [(ox + 0.8 * k, oy - 0.2 * k), (ox + 4 * k, oy + 3 * k)], 'varie', lw=1.3)
+disc(ax, ox + 2 * k, oy + k, 1.1, 'resultat')
+text(ax, 25, 47, '$x+y=3$', 'sujet', 's'); text(ax, 46, 49, '$x-y=1$', 'varie', 's')
+text(ax, 21, 22.5, '(2 ; 1)', 'resultat', 's')
+box(ax, 58, 40, 28, 12, 'sujet', label='deux droites\ncoeff. dans $F_i$', size='s')
+arrow(ax, (72, 40), (72, 34), 'fixe')
+box(ax, 58, 22, 28, 12, 'varie', label='système linéaire\n+ − × ÷ seulement', size='s')
+arrow(ax, (72, 22), (72, 16), 'fixe')
+box(ax, 58, 4, 28, 12, 'resultat', label='point commun\ndans $F_i$', size='s')
+save(fig, '61-173')

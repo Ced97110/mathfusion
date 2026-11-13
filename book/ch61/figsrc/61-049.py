@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 4, 18, 18, 14, 'sujet', label='1', size='xl')
+text(ax, 13, 12, 'une seule brique', 'sujet', 's')
+arrow(ax, (23, 25), (35, 25), 'varie')
+text(ax, 47, 33, r'$a\times 1 = a$', 'varie', 'm')
+text(ax, 47, 17, r'avec $a$ dans $F$', 'fixe', 's')
+arrow(ax, (59, 25), (66, 25), 'varie')
+disc(ax, 75, 25, 11, 'sujet'); disc(ax, 75, 25, 11, 'autre', fill=False, lw=1.2)
+text(ax, 75, 25, r'$E=F$', 'resultat', 'l', weight='bold')
+text(ax, 75, 9, r'$[E:F]=1$', 'sujet', 's')
+text(ax, 44, 46, 'mêmes éléments', 'resultat', 'l')
+save(fig, '61-049')

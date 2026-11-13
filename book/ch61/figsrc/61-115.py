@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 26, 14, 12, 'sujet', label=r'$F$', size='l')
+box(ax, 56, 46, 30, 12, 'resultat', label=r'$F(u_1,u_2)$', size='m')
+arrow(ax, (14, 39), (55, 50), 'varie', curve=-0.15); text(ax, 22, 52, r'$u_1$ et $u_2$ d’un coup', 'varie', 's')
+box(ax, 24, 4, 22, 11, 'autre', label=r'$F(u_1)$', size='m')
+box(ax, 56, 4, 30, 11, 'resultat', label=r'$F(u_1)(u_2)$', size='m')
+arrow(ax, (9, 25), (23.5, 11), 'varie', curve=0.2); text(ax, 8, 16, r'$+u_1$', 'varie', 's')
+arrow(ax, (47, 9.5), (55.5, 9.5), 'varie'); text(ax, 51, 18, r'$+u_2$', 'varie', 's')
+text(ax, 71, 30, '=', 'encre', 'xl')
+save(fig, '61-115')

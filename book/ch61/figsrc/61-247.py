@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'équation $x^2=2$', 'encre', 'm')
+box(ax, 10, 28, 68, 26, 'sujet')
+text(ax, 44, 49, r'$\mathbb{Q}(\sqrt{2})$', 'sujet', 'm')
+disc(ax, 30, 38, 6.5, 'resultat', label=r'$\sqrt{2}$', size='s'); disc(ax, 58, 38, 6.5, 'resultat', label=r'$-\sqrt{2}$', size='s')
+box(ax, 10, 6, 68, 10, 'fixe', label=r'$\mathbb{Q}$ : fractions')
+arrow(ax, (44, 16.5), (44, 27.5), 'varie'); text(ax, 62, 22, r'ajoute $\sqrt{2}$', 'varie', 's')
+text(ax, 82, 38, '', 'encre')
+save(fig, '61-247')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,3,4,82,52,'sujet')
+text(ax,44,51,r'corps $\mathbb{Q}(\sqrt{2},\sqrt{3})$','sujet','m')
+disc(ax,20,38,7,'sujet',label=r'$\sqrt{2}$'); disc(ax,20,16,7,'sujet',label=r'$\sqrt{3}$')
+text(ax,20,27,'ajoutés','sujet','s')
+disc(ax,66,27,8,'resultat',label=r'$\sqrt{6}$',size='l'); text(ax,66,13,'imposé','resultat','s')
+arrow(ax,(27,36),(58,29),'varie'); arrow(ax,(27,18),(58,25),'varie')
+text(ax,43,36,r'$\times$','varie','l'); text(ax,43,15,r'$2\times 3=6$','varie','s')
+save(fig,'61-027')

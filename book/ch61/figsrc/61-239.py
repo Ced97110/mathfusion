@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 8, 50, 72, 10, 'sujet', label=r'$x^5+x^4+1$ sur $\mathbb{Z}/2\mathbb{Z}$')
+box(ax, 4, 30, 38, 10, 'resultat', label=r'$(x^2+x+1)$')
+box(ax, 46, 30, 38, 10, 'resultat', label=r'$(x^3+x+1)$')
+arrow(ax, (28, 50), (23, 40.8), 'varie'); arrow(ax, (60, 50), (65, 40.8), 'varie')
+brace(ax, 4, 84, 30, 'resultat', label='se factorise en deux facteurs')
+box(ax, 4, 6, 38, 9, 'limite', label=r'$x=0$ : vaut $1$')
+box(ax, 46, 6, 38, 9, 'limite', label=r'$x=1$ : $3=1$')
+text(ax, 44, 20, 'aucune valeur ne donne 0', 'limite', 's')
+save(fig, '61-239')

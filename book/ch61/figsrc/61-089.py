@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 3, 52, 34, 15, 'sujet', label='$u$ algébrique\nsur $F$', size='s')
+box(ax, 51, 52, 34, 15, 'sujet', label=r'$[F(u):F]$' + '\nfini', size='s')
+arrow(ax, (37.5, 59.5), (50.5, 59.5), 'varie', both=True)
+text(ax, 44, 64, 'ssi', 'varie', 's')
+box(ax, 3, 28, 34, 12, 'resultat', label=r'$\sqrt{2}$ : oui', size='s')
+box(ax, 51, 28, 34, 12, 'resultat', label='degré 2 : fini', size='s')
+arrow(ax, (37.5, 34), (50.5, 34), 'resultat', both=True)
+box(ax, 3, 6, 34, 12, 'limite', label=r'$\pi$ : non', size='s')
+box(ax, 51, 6, 34, 12, 'limite', label='degré $\\infty$', size='s')
+arrow(ax, (37.5, 12), (50.5, 12), 'limite', both=True)
+save(fig, '61-089')

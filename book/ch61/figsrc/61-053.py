@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, 'coefficient dominant', 'fixe', 'm')
+box(ax, 8, 32, 10, 10, 'varie', label='3', size='l'); text(ax, 30, 37, r'$x^2+6$', 'encre', 'l')
+text(ax, 22, 26, 'pas unitaire', 'limite', 's')
+box(ax, 54, 32, 10, 10, 'resultat', label='1', size='l'); text(ax, 76, 37, r'$x^2+2$', 'encre', 'l')
+text(ax, 68, 26, 'unitaire', 'resultat', 's')
+arrow(ax, (40, 37), (50, 37), 'varie'); text(ax, 45, 42, r'$\div\,3$', 'varie', 's')
+text(ax, 44, 12, 'devant la puissance maximale', 'fixe', 's')
+save(fig, '61-053')

@@ -1,0 +1,180 @@
+[
+ {
+  "code": "61-095",
+  "a_dire": "Pour 𝑢 = √(2 + √3), chaque élévation au carré enlève une racine, à condition de l'avoir isolée.",
+  "legende_titre": "Faire disparaître les racines en élevant au carré deux fois",
+  "lecture": [
+   "Le cadre bleu du haut montre u avec deux racines carrées imbriquées.",
+   "Dans le deuxième cadre bleu, il reste une racine carrée.",
+   "Le cadre orange montre la racine de 3 isolée : c’est la condition avant le second carré.",
+   "Le cadre vert du bas montre l’égalité sans racine carrée.",
+   "Les flèches orange sont les trois étapes : au carré, isoler, au carré."
+  ],
+  "a_voir": "Le nombre de racines carrées passe de 2 à 1 puis à 0, à condition d’isoler la racine avant le second carré."
+ },
+ {
+  "code": "61-096",
+  "a_dire": "La formule décrit quatre actions : calculer 𝑢², l'élever au carré, retrancher 4 fois 𝑢², ajouter 1 ; le résultat est 0.",
+  "legende_titre": "Une formule lue comme quatre actions chiffrées",
+  "lecture": [
+   "Les deux cadres bleus donnent 𝑢² et son carré, avec leurs valeurs approchées.",
+   "Les deux cadres orange sont les actions qui changent la valeur : retrancher puis ajouter 1.",
+   "Le cadre vert du bas rassemble le calcul 13,93 moins 14,93 plus 1."
+  ],
+  "a_voir": "Le calcul chiffré donne 0."
+ },
+ {
+  "code": "61-097",
+  "a_dire": "La preuve part du polynôme qui annule 𝑢 et arrive à ℚ(𝑢) = 𝐸 de degré 4 grâce à l'étape qui donne √2.",
+  "legende_titre": "D'où part la preuve, et quelle étape décide",
+  "lecture": [
+   "Le cadre bleu est le départ : le polynôme de degré 4 annule 𝑢.",
+   "Le cadre gris montre que √3 est dans ℚ(𝑢).",
+   "Le cadre orange est l'étape décisive : √2 est aussi dans ℚ(𝑢)."
+  ],
+  "a_voir": "Le cadre vert est l'arrivée : ℚ(𝑢) est égal à 𝐸, de degré 4."
+ },
+ {
+  "code": "61-098",
+  "a_dire": "Une tour d'extensions est la suite de trois corps 𝐹, 𝐾, 𝐸, chacun contenu dans le suivant, avec un saut de degré 2 entre chaque étage.",
+  "legende_titre": "Trois corps emboîtés, deux sauts",
+  "lecture": [
+   "Le cadre gris du bas est 𝐹, les fractions.",
+   "Le cadre bleu du milieu est 𝐾 : on a ajouté √2.",
+   "Le cadre bleu du haut est 𝐸 : on a ajouté aussi √3."
+  ],
+  "a_voir": "Chaque flèche orange est un saut de degré 2."
+ },
+ {
+  "code": "61-099",
+  "a_dire": "Dans la tour ℚ, ℚ(√2), ℝ, le premier étage est de degré 2, fini, mais le total est infini, donc le second étage est infini.",
+  "legende_titre": "Un seul étage fini ne suffit pas",
+  "lecture": [
+   "Les trois cadres bleus sont les trois corps de la tour, de gauche à droite.",
+   "La flèche verte est le premier étage, de degré 2, fini.",
+   "La flèche rouge est le second étage, infini."
+  ],
+  "a_voir": "L'accolade rouge montre que le total est infini."
+ },
+ {
+  "code": "61-100",
+  "a_dire": "Le degré total est le produit des deux degrés d'étage : 2 × 3 = 6, 5 × 2 = 10, 1 × 1 = 1.",
+  "legende_titre": "Le degré total est le produit des degrés d'étage",
+  "lecture": [
+   "Les colonnes de cases comptent [𝐸 : 𝐾], en orange.",
+   "Les lignes de cases comptent [𝐾 : 𝐹], en bleu.",
+   "Le nombre de cases du rectangle, en vert à droite, est le degré total."
+  ],
+  "a_voir": "La forme du calcul reste la même quand les nombres changent."
+ },
+ {
+  "code": "61-101",
+  "a_dire": "Le signe 𝐹 ⊆ 𝐾 ⊆ 𝐸 écrit en une ligne trois corps rangés du bas vers le haut, chacun contenu dans le suivant.",
+  "legende_titre": "Écrire trois corps emboîtés sur une ligne",
+  "lecture": [
+   "Chaque lettre bleue est reliée au cadre qui la définit.",
+   "Le cadre de gauche est 𝐹, les fractions, le bas.",
+   "Les cadres du milieu et de droite ajoutent √2, puis √3."
+  ],
+  "a_voir": "Les signes ⊆ orange se lisent « contenu dans »."
+ },
+ {
+  "code": "61-102",
+  "a_dire": "La liste 𝑣₁, …, 𝑣ᵣ dit « les briques de 𝐾 sur 𝐹, numérotées de 1 à 𝑟 » ; seul le numéro change, et 𝑟 est leur nombre.",
+  "legende_titre": "Numéroter les briques pour parler de 𝑟 briques",
+  "lecture": [
+   "Les deux premiers cadres montrent le cas : 𝑣₁ vaut 1 et 𝑣₂ vaut √2.",
+   "Les cadres en tirets sont les briques qu'on ne détaille pas, jusqu'à 𝑣ᵣ.",
+   "Le texte orange sous chaque cadre est le numéro de la brique."
+  ],
+  "a_voir": "L'accolade compte les 𝑟 briques."
+ },
+ {
+  "code": "61-103",
+  "a_dire": "Les briques de 𝐸 sur 𝐾 se notent 𝑤₁, …, 𝑤ₘ, avec une autre lettre que les briques 𝑣 du milieu.",
+  "legende_titre": "Une autre lettre pour les briques de l'étage du haut",
+  "lecture": [
+   "La rangée bleue du haut donne les briques 𝑣 de 𝐾 sur 𝐹.",
+   "La rangée violette donne les briques 𝑤 de 𝐸 sur 𝐾 : 𝑤₁ vaut 1 et 𝑤₂ vaut √3.",
+   "Les cadres en tirets cachent les briques non détaillées, jusqu'à 𝑤ₘ."
+  ],
+  "a_voir": "L'accolade compte les 𝑚 briques."
+ },
+ {
+  "code": "61-104",
+  "a_dire": "Les 𝑚 × 𝑟 produits 𝑤ⱼ𝑣ᵢ s'obtiennent en multipliant chaque brique du haut par chaque brique du milieu : ici 2 × 2 = 4 produits.",
+  "legende_titre": "Chaque brique du haut fois chaque brique du milieu",
+  "lecture": [
+   "Les titres bleus des colonnes sont les briques 𝑣 du milieu.",
+   "Les titres violets des lignes sont les briques 𝑤 du haut.",
+   "Chaque case verte est le produit de sa ligne et de sa colonne : 1, √2, √3, √6."
+  ],
+  "a_voir": "Le nombre de cases est 𝑚 fois 𝑟."
+ },
+ {
+  "code": "61-105",
+  "a_dire": "La preuve écrit 𝑧 avec les briques 𝑤 et des coefficients dans 𝐾, puis remplace chaque coefficient par ses briques 𝑣 : les coefficients sont alors dans 𝐹.",
+  "legende_titre": "Remplacer les coefficients pour tout écrire avec des briques",
+  "lecture": [
+   "Le cadre bleu du haut est le nombre 𝑧.",
+   "Le cadre gris le regroupe en deux parties, aux coefficients dans 𝐾.",
+   "Le cadre orange est l'étape décisive : un coefficient écrit avec les briques de 𝐾."
+  ],
+  "a_voir": "Le cadre vert du bas montre 𝑧 avec des coefficients dans 𝐹."
+ },
+ {
+  "code": "61-106",
+  "a_dire": "La preuve part d'une somme nulle, la regroupe par 𝑤ⱼ ; chaque parenthèse est nulle, puis chaque coefficient est nul.",
+  "legende_titre": "Une somme nulle force tous les coefficients à zéro",
+  "lecture": [
+   "Le cadre bleu du haut est la somme nulle.",
+   "Les deux cadres orange sont les parenthèses après regroupement, chacune dans 𝐾.",
+   "Les flèches vertes appliquent l'indépendance des briques."
+  ],
+  "a_voir": "Le cadre vert du bas montre que les quatre coefficients sont nuls."
+ },
+ {
+  "code": "61-107",
+  "a_dire": "Le cas donne bien 4 briques, 2 fois 2 ; c'est un contrôle du théorème, pas une preuve.",
+  "legende_titre": "Le cas de la figure 1 comme contrôle",
+  "lecture": [
+   "La rangée bleue donne les briques de 𝐾 sur 𝐹 : 1 et √2.",
+   "La rangée violette donne celles de 𝐸 sur 𝐾 : 1 et √3.",
+   "La rangée verte donne les produits : 1, √2, √3, √6."
+  ],
+  "a_voir": "Le compte est 2 fois 2 égale 4."
+ },
+ {
+  "code": "61-108",
+  "a_dire": "Le degré [𝐾 : 𝐹] divise [𝐸 : 𝐹] : 2 divise 4, alors que 3 ne divise pas 4.",
+  "legende_titre": "Le degré d'un corps du milieu divise le degré total",
+  "lecture": [
+   "La rangée du haut a 4 cases vertes, groupées par 2 sans reste.",
+   "La rangée du bas a 4 cases groupées par 3.",
+   "La case rouge est celle qui reste : 3 ne divise pas 4."
+  ],
+  "a_voir": "Seul un degré qui divise 4 peut être celui d'un corps intermédiaire."
+ },
+ {
+  "code": "61-109",
+  "a_dire": "Pour un groupe et pour un corps, la taille de la partie divise celle du tout, donc un nombre qui ne divise pas donne une impossibilité.",
+  "legende_titre": "Même forme que le théorème de Lagrange",
+  "lecture": [
+   "À gauche, 12 cases bleues sont le groupe, groupées par 5.",
+   "À droite, 4 cases violettes sont le degré du corps, groupées par 3.",
+   "Les cases rouges sont les restes : 5 ne divise pas 12, 3 ne divise pas 4."
+  ],
+  "a_voir": "Les deux côtés ont la même forme."
+ },
+ {
+  "code": "61-110",
+  "a_dire": "Si 𝑣 est dans 𝐹(𝑢), les corps forment une tour 𝐹, 𝐹(𝑣), 𝐹(𝑢), donc le degré de 𝑣 divise celui de 𝑢 : 2 divise 4.",
+  "legende_titre": "Le degré de 𝑣 divise celui de 𝑢",
+  "lecture": [
+   "Le grand cadre bleu est 𝐹(𝑢), de degré 4.",
+   "Le cadre orange à l'intérieur est 𝐹(𝑣), de degré 2, qui contient 𝑣 = 𝑢² − 2.",
+   "Le cadre gris le plus petit est 𝐹, le corps de base."
+  ],
+  "a_voir": "Chaque cadre est contenu dans le précédent."
+ }
+]

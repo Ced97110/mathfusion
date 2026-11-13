@@ -1,0 +1,181 @@
+[
+ {
+  "code": "61-143",
+  "a_dire": "Un corps clos n'a pas d'extension algébrique autre que lui-même.",
+  "legende_titre": "Les extensions d'un corps clos",
+  "lecture": [
+   "Le disque vert à gauche est une extension algébrique de ℂ : c'est ℂ lui-même.",
+   "À droite, le petit disque bleu est ℂ et le grand disque rouge est ℂ(x).",
+   "Le nombre x n'est pas dans ℂ : cette extension n'est pas algébrique."
+  ],
+  "a_voir": "Une extension algébrique de ℂ reste égale à ℂ ; seule une extension non algébrique est plus grande."
+ },
+ {
+  "code": "61-144",
+  "a_dire": "Le polynôme minimal de u est irréductible, donc de degré 1, donc u est dans F.",
+  "legende_titre": "Les quatre pas de la preuve",
+  "lecture": [
+   "La boîte grise donne le départ : u dans E, avec E/F algébrique.",
+   "La boîte orange est l'étape décisive : le polynôme minimal de u est irréductible.",
+   "La boîte bleue dit qu'il est de degré 1 : x − a.",
+   "La boîte verte conclut : u = a, donc u est dans F."
+  ],
+  "a_voir": "Chaque flèche mène de l'hypothèse à la conclusion u dans F."
+ },
+ {
+  "code": "61-145",
+  "a_dire": "ℝ a une extension algébrique ℂ de degré 2 ; ℂ n'en a aucune.",
+  "legende_titre": "Deux corps, deux côtés de la propriété",
+  "lecture": [
+   "À gauche, la flèche orange va de ℝ à ℂ, avec le degré 2 : i annule x² + 1.",
+   "À droite, la flèche rouge part de ℂ vers une boîte pointillée « aucune ».",
+   "Sous ℂ, le polynôme x − a s'annule déjà dans ℂ."
+  ],
+  "a_voir": "Sur ℝ on sort du corps, sur ℂ on n'en sort pas."
+ },
+ {
+  "code": "61-146",
+  "a_dire": "La clôture algébrique de F est un corps clos et algébrique sur F.",
+  "legende_titre": "Une clôture n'est pas n'importe quel corps clos",
+  "lecture": [
+   "Le petit disque bleu est ℚ, le disque vert est ℚ̄ et le grand disque rouge est ℂ.",
+   "Le texte vert dit que ℚ̄ remplit les deux conditions : algébriquement clos et algébrique sur ℚ.",
+   "Le texte rouge dit que ℂ est algébriquement clos, mais que π, dans ℂ, n'est pas algébrique sur ℚ."
+  ],
+  "a_voir": "ℚ̄ remplit les deux conditions ; ℂ en échoue une."
+ },
+ {
+  "code": "61-147",
+  "a_dire": "Les deux constructions de la clôture de ℝ ont des écritures différentes mais les mêmes calculs.",
+  "legende_titre": "Deux constructions, une structure",
+  "lecture": [
+   "La boîte bleue écrit les éléments a + b·i, la boîte violette a + b·x.",
+   "Le signe rouge ≠ dit que les écritures sont différentes.",
+   "Les deux boîtes vertes montrent le même calcul : i × i = −1 et x × x = −1.",
+   "La double flèche verte les relie."
+  ],
+  "a_voir": "Les noms diffèrent, les calculs sont les mêmes."
+ },
+ {
+  "code": "61-148",
+  "a_dire": "« Clôture algébrique de F dans E » est un sous-corps de E ; « clôture algébrique de F » est un corps clos.",
+  "legende_titre": "Deux sens pour un même mot",
+  "lecture": [
+   "À gauche, la clôture de F dans E est le disque violet, un sous-corps du disque gris E.",
+   "À droite, la clôture de F est le disque bleu : un corps clos, qui ne dépend pas de E.",
+   "Le signe rouge ≠ dit que ce sont deux notions distinctes."
+  ],
+  "a_voir": "Le premier sens dépend de E, le second non."
+ },
+ {
+  "code": "61-149",
+  "a_dire": "ℚ̄ est algébriquement clos : une racine de f dans ℂ est dans ℚ̄ grâce au théorème C.",
+  "legende_titre": "De f à une racine dans ℚ̄",
+  "lecture": [
+   "La boîte grise donne le polynôme f à coefficients dans ℚ̄.",
+   "La boîte bleue donne une racine u dans ℂ, par le théorème fondamental.",
+   "La boîte orange est l'étape décisive : u est algébrique sur ℚ̄ et ℚ̄ sur ℚ, donc le théorème C s'applique.",
+   "La première boîte verte dit que u est dans ℚ̄ ; la dernière conclut que ℚ̄ est algébriquement clos."
+  ],
+  "a_voir": "Le théorème C ramène u dans ℚ̄, donc ℚ̄ est algébriquement clos."
+ },
+ {
+  "code": "61-150",
+  "a_dire": "ℚ̄ est algébrique sur ℚ mais n'est pas fini : les degrés des racines n-ièmes de 2 grandissent sans borne.",
+  "legende_titre": "Des degrés qui grandissent",
+  "lecture": [
+   "Chaque colonne bleue a autant de cases que le degré n.",
+   "Sous la colonne, on lit la racine n-ième de 2.",
+   "La flèche orange montre que les degrés n'ont pas de borne."
+  ],
+  "a_voir": "La colonne n a n cases : le degré n'est borné par aucun entier."
+ },
+ {
+  "code": "61-151",
+  "a_dire": "Le symbole F̄ désigne une clôture algébrique de F.",
+  "legende_titre": "Lire le symbole F̄",
+  "lecture": [
+   "La grande lettre bleue F est le corps de base.",
+   "La barre orange au-dessus veut dire « une clôture algébrique ».",
+   "La boîte verte donne deux cas : ℚ donne ℚ̄ et F donne F̄."
+  ],
+  "a_voir": "La lettre garde le corps, la barre ajoute la clôture."
+ },
+ {
+  "code": "61-152",
+  "a_dire": "Le point (x, y) et le nombre z = x + iy se correspondent.",
+  "legende_titre": "Un point, un nombre",
+  "lecture": [
+   "Les axes gris forment le repère ; les pointillés gris joignent le point à ses coordonnées 3 et 2.",
+   "Le disque bleu est le point (3 ; 2).",
+   "Le texte vert est le nombre 3 + 2i qui lui correspond."
+  ],
+  "a_voir": "Le point (3 ; 2) correspond au nombre 3 + 2i."
+ },
+ {
+  "code": "61-153",
+  "a_dire": "Les points de départ sont (0, 0) et (1, 0), à distance 1.",
+  "legende_titre": "Les deux points donnés",
+  "lecture": [
+   "Les deux disques bleus sont les points de départ.",
+   "Le premier est sur l'origine des axes gris, le second à droite sur l'axe horizontal.",
+   "L'accolade orange montre que leur distance vaut 1."
+  ],
+  "a_voir": "Les deux couples fixent l'origine et l'unité de longueur."
+ },
+ {
+  "code": "61-154",
+  "a_dire": "Un point constructible s'obtient par une suite finie de tracés à partir des deux points de départ.",
+  "legende_titre": "Construire un point",
+  "lecture": [
+   "Les disques bleus A et B sont les points de départ.",
+   "La droite grise passe par A et B ; les deux cercles orange ont leur centre en A et en B.",
+   "Les disques verts P et Q sont les points construits, à l'intersection des tracés."
+  ],
+  "a_voir": "P et Q sortent de tracés faits à partir de A et B."
+ },
+ {
+  "code": "61-155",
+  "a_dire": "Une tour quadratique ajoute une racine carrée à chaque étage.",
+  "legende_titre": "Une tour d'étages",
+  "lecture": [
+   "La boîte grise du bas est ℚ.",
+   "Chaque flèche orange ajoute une seule racine carrée : √2, puis √3.",
+   "Chaque étage est de degré 2 sur le précédent."
+  ],
+  "a_voir": "Un étage = une racine carrée ajoutée."
+ },
+ {
+  "code": "61-156",
+  "a_dire": "Chaque étage d'une tour quadratique est de degré 1 ou 2.",
+  "legende_titre": "Degré 1 ou degré 2",
+  "lecture": [
+   "À gauche, on ajoute √9 = 3 : le corps reste ℚ, le degré est 1.",
+   "À droite, on ajoute √2 : on obtient ℚ(√2) en bleu, le degré est 2.",
+   "Le degré 1 ne change rien (gris) ; le degré 2 ajoute un nombre nouveau."
+  ],
+  "a_voir": "Si la racine est déjà dans le corps, le degré est 1, sinon 2."
+ },
+ {
+  "code": "61-157",
+  "a_dire": "Un nombre est constructible si et seulement s'il est dans une tour quadratique sur ℚ.",
+  "legende_titre": "Deux descriptions du même nombre",
+  "lecture": [
+   "À gauche, le carré de côté 1 et sa diagonale orange √2 : un nombre constructible.",
+   "À droite, la tour ℚ puis ℚ(√2) : une tour quadratique.",
+   "La double flèche verte dit que les deux se correspondent."
+  ],
+  "a_voir": "√2 est constructible et il est dans une tour quadratique."
+ },
+ {
+  "code": "61-158",
+  "a_dire": "Si z est constructible, il est algébrique et son degré sur ℚ est une puissance de 2.",
+  "legende_titre": "Quels degrés sont permis",
+  "lecture": [
+   "Les disques verts sont les degrés 1, 2, 4 et 8 : des puissances de 2.",
+   "Le disque rouge sur 3 est le degré de ∛2 : interdit.",
+   "Le disque rouge π à droite est de degré infini : interdit."
+  ],
+  "a_voir": "Seules les puissances de 2 sont permises ; 3 et l'infini sont exclus."
+ }
+]

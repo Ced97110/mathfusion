@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,4,56,'dix briques','sujet','s',ha='left')
+for i in range(10): box(ax,4+5.4*i,46,4.5,6,'sujet')
+text(ax,72,49,'trop court','limite','s')
+text(ax,4,40,'mille briques','sujet','s',ha='left')
+for i in range(6): box(ax,4+5.4*i,30,4.5,6,'sujet')
+text(ax,40,33,'…','sujet','m'); box(ax,44,30,4.5,6,'sujet')
+text(ax,72,33,'trop court','limite','s')
+text(ax,44,20,'∞ : aucune liste ne suffit','limite','s')
+arrow(ax,(4,10),(84,10),'limite')
+save(fig,'61-041')

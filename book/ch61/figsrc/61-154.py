@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+ax.add_patch(Circle((26, 25), 20, ec=COL['varie'], fc='none', lw=0.9, zorder=2))
+ax.add_patch(Circle((46, 25), 20, ec=COL['varie'], fc='none', lw=0.9, zorder=2))
+line(ax, [(3, 25), (85, 25)], 'fixe')
+yy = 25 + math.sqrt(400 - 100)
+disc(ax, 26, 25, 1.7, 'sujet'); disc(ax, 46, 25, 1.7, 'sujet')
+disc(ax, 36, yy, 1.7, 'resultat'); disc(ax, 36, 50 - yy, 1.7, 'resultat')
+text(ax, 22.5, 21.5, 'A', 'sujet', 'm'); text(ax, 49.5, 21.5, 'B', 'sujet', 'm')
+text(ax, 36, yy + 3.8, 'P', 'resultat', 'm'); text(ax, 36, 50 - yy - 3.8, 'Q', 'resultat', 'm')
+text(ax, 77, 18, 'points', 'sujet', 's'); text(ax, 77, 14, 'donnés', 'sujet', 's')
+text(ax, 77, 38, 'point', 'resultat', 's'); text(ax, 77, 34, 'construit', 'resultat', 's')
+save(fig, '61-154')

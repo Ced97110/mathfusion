@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+box(ax, 6, 74, 76, 14, 'sujet', label=r'$u=\sqrt{2+\sqrt{3}}$', size='l')
+text(ax, 44, 91.5, 'une racine dans une racine', 'sujet', 's')
+arrow(ax, (44, 73.5), (44, 64), 'varie')
+text(ax, 62, 68.8, 'au carré', 'varie', 's')
+box(ax, 6, 50, 76, 13, 'fixe', label=r'$u^2=2+\sqrt{3}\approx 3{,}73$', size='m')
+arrow(ax, (44, 49.5), (44, 40), 'varie')
+text(ax, 62, 44.8, 'au carré', 'varie', 's')
+box(ax, 6, 26, 76, 13, 'fixe', label=r'$(u^2-2)^2=3$', size='m')
+arrow(ax, (44, 25.5), (44, 16), 'resultat')
+box(ax, 6, 3, 76, 12, 'resultat', label=r'$u^4-4u^2+1=0$', size='m')
+save(fig, '61-094')

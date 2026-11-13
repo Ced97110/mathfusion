@@ -1,0 +1,189 @@
+[
+ {
+  "code": "61-111",
+  "a_dire": "La tour F, F(v), F(u) permet de multiplier les degrés : le degré de u est le produit des deux étages, donc celui de v le divise.",
+  "legende_titre": "Une tour de trois corps et ses degrés",
+  "lecture": [
+   "Les trois cases, de gauche à droite, sont les corps F (gris), F(v) (violet) et F(u) (bleu).",
+   "Chaque flèche orange est un étage de la tour ; son nombre est le degré de cet étage.",
+   "L’accolade violette du haut donne le degré de v : 2.",
+   "L’accolade verte du bas regroupe toute la tour : 2 × 2 = 4.",
+   "Le texte violet du bas conclut : 2 divise 4, donc le degré de v divise celui de u."
+  ],
+  "a_voir": "Le degré de u est le produit des degrés des deux étages, donc le degré de v le divise."
+ },
+ {
+  "code": "61-112",
+  "a_dire": "Une extension algébrique se teste élément par élément avec un polynôme chacun ; une extension finie se teste en une fois avec une seule liste de briques.",
+  "legende_titre": "Deux façons de tester une extension",
+  "lecture": [
+   "À gauche, chaque case bleue est un élément ; sa flèche orange mène à un polynôme vert : un test par élément.",
+   "À droite, la grande case violette contient une seule liste, 1 et racine de 2 : un seul test.",
+   "La flèche verte du bas va de finie vers algébrique : toute extension finie est algébrique."
+  ],
+  "a_voir": "Le test d'une extension algébrique est répété pour chaque élément, celui d'une extension finie est fait une seule fois."
+ },
+ {
+  "code": "61-113",
+  "a_dire": "Une extension simple est obtenue en ajoutant un seul élément u au corps F.",
+  "legende_titre": "Combien de nombres ajoute-t-on ?",
+  "lecture": [
+   "La case grise est le corps des fractions, point de départ des deux lignes.",
+   "Les cases orange sont les nombres ajoutés : un seul sur la ligne du haut, deux sur celle du bas.",
+   "La case de droite est le corps obtenu : bleue pour un seul générateur, violette pour deux."
+  ],
+  "a_voir": "Sur la ligne du haut, un seul nombre ajouté suffit à obtenir le corps."
+ },
+ {
+  "code": "61-114",
+  "a_dire": "Le signe F(u_1, …, u_n) écrit en une seule expression l'ajout de n éléments au corps F.",
+  "legende_titre": "Une écriture pour n ajouts",
+  "lecture": [
+   "La case bleue est le corps de base F.",
+   "Les cases orange sont les éléments ajoutés, de u_1 à u_n ; l'accolade dit qu'il y en a n.",
+   "La case verte du haut est le corps obtenu, écrit avec le signe.",
+   "La ligne du bas donne le cas n = 2 : racine de 2 et racine de 3 ajoutées aux fractions."
+  ],
+  "a_voir": "Le même signe sert quel que soit le nombre n d'éléments ajoutés."
+ },
+ {
+  "code": "61-115",
+  "a_dire": "Ajouter u_1 et u_2 d'un coup donne le même corps que les ajouter l'un après l'autre : F(u_1, u_2) = F(u_1)(u_2).",
+  "legende_titre": "Ajouter deux éléments d'un coup ou un par un",
+  "lecture": [
+   "La case bleue à gauche est le corps F.",
+   "La flèche du haut ajoute u_1 et u_2 d'un coup et mène à F(u_1, u_2), en vert.",
+   "Le chemin du bas ajoute u_1, ce qui donne F(u_1) en violet, puis u_2, ce qui donne F(u_1)(u_2).",
+   "Le signe égal relie les deux cases vertes."
+  ],
+  "a_voir": "Les deux chemins arrivent au même corps."
+ },
+ {
+  "code": "61-116",
+  "a_dire": "Si une extension est finie, avec 3 briques, alors 1, u, u² et u³ sont liés, donc u annule un polynôme non nul : l'extension est algébrique.",
+  "legende_titre": "Pourquoi finie entraîne algébrique",
+  "lecture": [
+   "Les trois cases bleues du haut sont les 3 briques de l'extension finie.",
+   "Les quatre cases orange sont 1, u, u² et u³ : quatre nombres pour trois briques.",
+   "L'accolade dit qu'ils sont liés.",
+   "La case verte du bas donne la conséquence : un polynôme non nul s'annule en u."
+  ],
+  "a_voir": "Quatre nombres dans une extension à trois briques sont toujours liés."
+ },
+ {
+  "code": "61-117",
+  "a_dire": "Dans le corps de degré 2 de racine de 2, les trois éléments 1, u et u² sont liés, ce qui donne u² − 6u + 7 = 0 pour u = 3 + racine de 2.",
+  "legende_titre": "Trois éléments dans un corps de degré 2",
+  "lecture": [
+   "Les deux axes gris sont les deux directions du corps : celle de 1 et celle de racine de 2.",
+   "Les trois flèches bleues sont 1, u et u², placés selon ces deux directions.",
+   "Trois flèches dans un plan sont liées.",
+   "Le texte vert donne la relation trouvée."
+  ],
+  "a_voir": "Trois flèches dans un plan à deux directions sont liées."
+ },
+ {
+  "code": "61-118",
+  "a_dire": "Si le degré est n, les n + 1 éléments 1, u, …, u^n sont liés : il existe des coefficients non tous nuls dont la somme pondérée est 0, donc un polynôme s'annule en u.",
+  "legende_titre": "n + 1 éléments dans une dimension n",
+  "lecture": [
+   "Les cases orange sont les n + 1 éléments 1, u, u², …, u^n.",
+   "Au-dessus de chacune, en gris, se trouve son coefficient a_0, a_1, …, a_n.",
+   "L'accolade compte les éléments : n + 1.",
+   "En bas, la case bleue donne la dimension n ; la case verte donne la conséquence : ils sont liés."
+  ],
+  "a_voir": "Il y a toujours un élément de plus que la dimension."
+ },
+ {
+  "code": "61-119",
+  "a_dire": "Une extension peut être algébrique sans être finie : chaque élément a un degré fini, mais ces degrés (2, 4, 8, …) n'ont pas de borne.",
+  "legende_titre": "Algébrique sans être finie",
+  "lecture": [
+   "Chaque colonne verte est un élément : racine de 2, sa racine quatrième, sa racine huitième.",
+   "La hauteur et le nombre dans la colonne sont son degré : 2, 4, 8.",
+   "Chacun annule un polynôme, donc chacun est algébrique.",
+   "La flèche orange et les points montrent que les degrés continuent de croître sans borne."
+  ],
+  "a_voir": "Les degrés grandissent sans s'arrêter, donc aucune liste finie de briques ne suffit."
+ },
+ {
+  "code": "61-120",
+  "a_dire": "Les trois phrases du théorème B (finie, engendrée par un nombre fini d'éléments algébriques, tour d'étages algébriques) disent la même chose.",
+  "legende_titre": "Trois phrases pour une même extension",
+  "lecture": [
+   "La case du haut est la phrase (1) : l'extension est finie, ici avec 4 briques.",
+   "La case en bas à droite est la phrase (2) : elle est engendrée par racine de 2 et racine de 3, qui sont algébriques.",
+   "La case en bas à gauche est la phrase (3) : c'est une tour de 2 étages algébriques.",
+   "Les flèches vertes forment une boucle : chaque phrase mène à la suivante."
+  ],
+  "a_voir": "La boucle de flèches se ferme : chaque phrase entraîne les deux autres."
+ },
+ {
+  "code": "61-121",
+  "a_dire": "Pour passer de (1) à (2), on prend une base de E sur F ; chaque brique est algébrique par le théorème A, donc E est engendré par ces éléments algébriques.",
+  "legende_titre": "De finie à engendrée par des algébriques",
+  "lecture": [
+   "Les quatre cases bleues sont les briques de la base : 1, racine de 2, racine de 3, racine de 6.",
+   "Chaque flèche verte mène au mot « algébrique » : le théorème A le garantit pour chaque brique.",
+   "L'accolade bleue réunit les briques : E est le corps engendré par elles."
+  ],
+  "a_voir": "Chaque brique de la base est algébrique."
+ },
+ {
+  "code": "61-122",
+  "a_dire": "Un élément algébrique sur F le reste sur un corps plus grand : le même polynôme convient, car ses coefficients sont déjà dans F.",
+  "legende_titre": "Le même polynôme sur un corps plus grand",
+  "lecture": [
+   "La grande case bleue est le corps plus grand, avec racine de 2.",
+   "La case grise à l'intérieur est F, les fractions ; elle contient les coefficients 1, 0 et −3.",
+   "La flèche verte mène au polynôme x² − 3, qui annule racine de 3.",
+   "Les coefficients sont dans la petite case, donc aussi dans la grande."
+  ],
+  "a_voir": "Les coefficients du polynôme sont dans le petit corps, donc aussi dans le grand."
+ },
+ {
+  "code": "61-123",
+  "a_dire": "Si chaque étage de la tour est de degré fini, le degré total est le produit des degrés : 2 × 2 = 4.",
+  "legende_titre": "Des étages finis se multiplient",
+  "lecture": [
+   "Chaque case verte est une brique du corps total ; il y en a 4.",
+   "L'accolade du bas dit que l'étage 1 a le degré 2 : deux cases par rangée.",
+   "Le trait orange de droite dit que l'étage 2 a le degré 2 : deux rangées.",
+   "Le texte du haut donne le produit : 2 × 2 = 4."
+  ],
+  "a_voir": "Le total est le nombre de cases du rectangle 2 par 2, pas une somme."
+ },
+ {
+  "code": "61-124",
+  "a_dire": "La tour des fractions, de racine de 2 puis de racine de 3, vérifie les trois phrases du théorème B : 4 briques, 2 générateurs, 2 étages.",
+  "legende_titre": "Un seul corps, trois phrases",
+  "lecture": [
+   "La colonne de gauche est la tour : les fractions (gris), puis avec racine de 2 (violet), puis avec racine de 2 et racine de 3 (bleu).",
+   "Chaque flèche orange est un étage de degré 2.",
+   "Le texte vert de droite donne les trois phrases vérifiées par le corps du haut : 4 briques, 2 générateurs, 2 étages."
+  ],
+  "a_voir": "Le même corps du haut vérifie les trois phrases."
+ },
+ {
+  "code": "61-125",
+  "a_dire": "Si K est algébrique sur F et E algébrique sur K, alors E est algébrique sur F.",
+  "legende_titre": "Algébrique sur algébrique",
+  "lecture": [
+   "Les trois cases sont les corps F (gris), K et E (bleu), l'un dans l'autre.",
+   "Les deux flèches orange sont ce qu'on suppose : K algébrique sur F, E algébrique sur K.",
+   "La grande flèche verte, à droite, est ce qu'on conclut : E algébrique sur F."
+  ],
+  "a_voir": "Deux étages algébriques donnent un total algébrique."
+ },
+ {
+  "code": "61-126",
+  "a_dire": "Le théorème 2 multiplie des degrés finis ; le théorème C concerne des degrés qui peuvent être infinis, où il n'y a pas de produit : il faut un argument de plus.",
+  "legende_titre": "Pourquoi le théorème 2 ne suffit pas",
+  "lecture": [
+   "La colonne violette de gauche montre le théorème 2 : deux étages de degré fini, 2 et 2, dont le produit est 4.",
+   "La colonne bleue de droite montre le théorème C : des étages de degré infini.",
+   "Le texte rouge dit qu'avec des degrés infinis on n'a pas de produit à calculer."
+  ],
+  "a_voir": "Le produit n'existe que pour des degrés finis."
+ }
+]

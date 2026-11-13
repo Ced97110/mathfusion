@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+arrow(ax,(14,10),(76,10),'fixe'); arrow(ax,(14,10),(14,52),'fixe')
+line(ax,[(44,10),(44,30)],'fixe',dash=True); line(ax,[(14,30),(44,30)],'fixe',dash=True)
+arrow(ax,(14,10),(44,10),'varie',lw=1.6); arrow(ax,(14,10),(14,30),'varie',lw=1.6)
+disc(ax,44,30,2,'sujet')
+text(ax,29,14,'brique 1','varie','s'); text(ax,25,20,'brique i','varie','s')
+text(ax,44,5,'3×1','varie','s'); text(ax,7,30,'2×i','varie','s')
+text(ax,58,36,'3 + 2i','sujet','l'); text(ax,70,5,'réels','fixe','s')
+save(fig,'61-037')

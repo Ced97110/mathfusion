@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 36, 39, 12, 'sujet', label=r'$\mathbb{Q}(\sqrt{2}+\sqrt{3})$', size='s')
+box(ax, 47, 36, 39, 12, 'autre', label=r'$\mathbb{Q}(\sqrt{2},\sqrt{3})$', size='s')
+text(ax, 44, 42, '=', 'resultat', 'xl')
+text(ax, 21.5, 52, 'un générateur', 'sujet', 's'); text(ax, 66.5, 52, 'deux générateurs', 'autre', 's')
+box(ax, 2, 8, 30, 12, 'fixe', label='un fait isolé', size='s')
+box(ax, 50, 8, 36, 12, 'resultat', label='élément primitif', size='s')
+arrow(ax, (32, 14), (50, 14), 'varie'); text(ax, 41, 18, 'ch. 63', 'varie', 's')
+save(fig, '61-249')

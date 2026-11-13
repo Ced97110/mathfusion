@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+box(ax, 3, 46, 28, 24, 'fixe', label=None)
+text(ax, 17, 63, r'$g$ polynôme', 'fixe', 's')
+text(ax, 17, 58, r'à coeff. dans $F$', 'fixe', 's')
+text(ax, 17, 51, r'$1+3x^2$', 'fixe', 's')
+arrow(ax, (31, 58), (41, 58), 'varie')
+text(ax, 36, 63, r'$x\to u$', 'varie', 's')
+box(ax, 41, 40, 44, 34, 'sujet', label=None)
+text(ax, 63, 68, r'$F[u]$ : valeurs $g(u)$', 'sujet', 's', weight='bold')
+text(ax, 63, 58, r'$1+\sqrt{2}$', 'sujet', 'm')
+text(ax, 63, 48, r'$3\times(\sqrt{2})^2$', 'sujet', 'm')
+text(ax, 22, 30, 'on peut :', 'fixe', 's')
+for i, (s, r) in enumerate((('+', 'resultat'), (r'$-$', 'resultat'), (r'$\times$', 'resultat'), (r'$\div$', 'limite'))):
+    box(ax, 6 + i * 19, 8, 15, 14, r, label=s, size='xl')
+text(ax, 63, 27, 'jamais de division', 'limite', 's')
+save(fig, '61-076')

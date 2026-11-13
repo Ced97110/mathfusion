@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 63, r'$u$ = classe de $x$', 'sujet', 'l')
+box(ax, 6, 8, 76, 44, 'sujet', fill=False)
+box(ax, 22, 36, 44, 10, 'sujet', label=r'$x$')
+box(ax, 22, 14, 44, 10, 'sujet', label=r'$x+(x^2+x+1)$')
+arrow(ax, (44, 36), (44, 24), 'varie', both=True)
+text(ax, 48, 33, 'diffèrent d’un multiple', 'varie', 's', ha='left')
+text(ax, 48, 27, r'de $x^2+x+1$', 'varie', 's', ha='left')
+save(fig, '61-233')

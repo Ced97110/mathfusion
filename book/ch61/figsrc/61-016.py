@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,3,5,54,50,'resultat')
+text(ax,30,50,'avec + − × ÷ et racines carrées','resultat','s')
+box(ax,9,28,18,12,'encre',label=r'$\sqrt{2}$'); box(ax,33,28,18,12,'encre',label=r'$\frac{1}{2}$')
+text(ax,30,20,'suites d’opérations','resultat','s')
+arrow(ax,(57,30),(66,30),'varie')
+line(ax,[(59,26),(64,34)],'limite',lw=1.4); line(ax,[(59,34),(64,26)],'limite',lw=1.4)
+box(ax,66,22,20,16,'limite',label=r'$\sqrt[3]{2}$',size='l')
+text(ax,76,16,'jamais atteint','limite','s')
+save(fig,'61-016')

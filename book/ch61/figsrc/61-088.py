@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 3, 64, 38, 11, 'sujet', label=r'$\sqrt{2}$ : algébrique', size='s')
+box(ax, 47, 64, 38, 11, 'autre', label=r'$\pi$ : transcendant', size='s')
+box(ax, 3, 42, 16, 12, 'sujet', label='1')
+box(ax, 22, 42, 16, 12, 'sujet', label=r'$\sqrt{2}$', size='m')
+text(ax, 22, 37, '2 briques', 'sujet', 's')
+for i, s in enumerate(['1', r'$\pi$', r'$\pi^2$']):
+    box(ax, 47 + i * 12, 42, 11, 12, 'autre', label=s, size='s')
+text(ax, 83.5, 48, '…', 'autre', 'l')
+text(ax, 66, 37, 'briques sans fin', 'autre', 's')
+box(ax, 3, 10, 38, 17, 'resultat', label='diviser : aucune\nbrique en plus', size='s')
+box(ax, 47, 10, 38, 17, 'autre', label='diviser : sans fin\nde briques en plus', size='s')
+line(ax, [(22, 63.5), (22, 55)], 'sujet', dash=True)
+line(ax, [(66, 63.5), (66, 55)], 'autre', dash=True)
+save(fig, '61-088')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 6, 40, 28, 12, 'autre', label='ℂ', size='l')
+box(ax, 6, 10, 28, 12, 'sujet', label='ℝ', size='l')
+arrow(ax, (20, 22), (20, 40), 'varie')
+text(ax, 23, 31, 'degré 2', 'varie', 's', ha='left')
+text(ax, 20, 4.5, 'i annule x² + 1', 'varie', 's')
+box(ax, 54, 10, 28, 12, 'autre', label='ℂ', size='l')
+box(ax, 54, 40, 28, 12, 'limite', fill=False, dash=True, label='aucune', size='s')
+arrow(ax, (68, 22), (68, 40), 'limite')
+text(ax, 68, 4.5, 'x − a s’annule', 'resultat', 's')
+save(fig, '61-145')

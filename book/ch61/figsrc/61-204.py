@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+A = (10, 12); u = 24; th = math.radians(40)
+P = lambda t: (A[0] + t * u * math.cos(th), A[1] + t * u * math.sin(th))
+H = (A[0] + 1.5 * u, A[1]); E = (A[0] + 2.7 * u, A[1])
+poly(ax, [A, P(1.8), E], 'varie'); poly(ax, [A, P(1), H], 'sujet')
+line(ax, [A, (A[0] + 3 * u, A[1])], 'fixe'); line(ax, [A, P(2.1)], 'fixe')
+line(ax, [P(1), H], 'sujet', lw=1.4); line(ax, [P(1.8), E], 'varie', lw=1.4)
+for p, r in [(A, 'fixe'), (P(1), 'sujet'), (H, 'sujet'), (P(1.8), 'varie'), (E, 'resultat')]: disc(ax, p[0], p[1], 1.0, r)
+text(ax, 6.5, 8.5, 'A', 'fixe'); text(ax, 25, 29, '1', 'sujet', 's'); text(ax, 39.5, 42, r'$b$', 'varie')
+text(ax, H[0], 8, r'$a$', 'sujet'); text(ax, 70, 8, r'$x=a\times b$', 'resultat', 's')
+save(fig, '61-204')

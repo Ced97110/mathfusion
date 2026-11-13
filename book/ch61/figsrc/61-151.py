@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 28, 30, 'F', 'sujet', 40)
+line(ax, [(21, 38.5), (35, 38.5)], 'varie', lw=2.2)
+arrow(ax, (38, 30), (50, 30), 'sujet')
+text(ax, 52, 30, 'le corps de base F', 'sujet', 's', ha='left')
+arrow(ax, (37, 38.5), (50, 44), 'varie')
+text(ax, 52, 46, 'la barre : une clôture', 'varie', 's', ha='left')
+text(ax, 52, 42, 'algébrique de F', 'varie', 's', ha='left')
+box(ax, 14, 4, 60, 10, 'resultat', label=r'ℚ donne $\overline{\mathbb{Q}}$, F donne $\bar{F}$', size='s')
+save(fig, '61-151')

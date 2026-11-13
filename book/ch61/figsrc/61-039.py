@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+arrow(ax,(8,26),(38,26),'fixe'); arrow(ax,(8,26),(8,58),'fixe')
+line(ax,[(26,26),(26,46)],'fixe',dash=True); line(ax,[(8,46),(26,46)],'fixe',dash=True)
+disc(ax,26,46,1.8,'sujet')
+text(ax,26,22,'a','varie','m'); text(ax,4,46,'b','varie','m')
+text(ax,33,51,'(a ; b)','sujet','s')
+box(ax,50,44,9,9,'varie',label='a'); text(ax,68,48.5,'× 1','fixe','m')
+box(ax,50,28,9,9,'varie',label='b'); text(ax,70,32.5,'× √2','fixe','m')
+text(ax,54.5,39.5,'+','encre','m')
+text(ax,22,14,'2 coordonnées','sujet','s'); text(ax,66,14,'2 coefficients','sujet','s')
+box(ax,22,2,44,8,'resultat',label='degré = dimension = 2',size='s')
+save(fig,'61-039')

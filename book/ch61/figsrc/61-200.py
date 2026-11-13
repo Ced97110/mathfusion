@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+u = 14
+line(ax, [(10, 66), (10 + u, 66)], 'fixe', lw=1.6)
+for x in (10, 10 + u): line(ax, [(x, 64.5), (x, 67.5)], 'fixe')
+text(ax, 10 + u / 2, 69.5, '1', 'fixe', 's')
+text(ax, 30, 66, 'segment de départ', 'fixe', 's', ha='left')
+arrow(ax, (17, 62), (17, 50), 'varie')
+text(ax, 21, 56, 'règle et compas', 'varie', 's', ha='left')
+line(ax, [(10, 44), (10 + 2 * u, 44)], 'resultat', lw=1.6)
+for x in (10, 10 + u, 10 + 2 * u): line(ax, [(x, 42.5), (x, 45.5)], 'resultat')
+text(ax, 31, 47.5, r'$|a|=2$', 'resultat', 's')
+box(ax, 6, 14, 20, 11, 'sujet', label=r'$a=2$')
+box(ax, 30, 14, 20, 11, 'autre', label=r'$a=-2$')
+arrow(ax, (16, 26), (18, 41.5), 'fixe'); arrow(ax, (40, 26), (32, 41.5), 'fixe')
+text(ax, 68, 19.5, r'même longueur $|a|$', 'fixe', 's')
+save(fig, '61-200')

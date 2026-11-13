@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,1,2,86,66,'sujet',fill=False,dash=True)
+text(ax,44,63,'ℚ(√2)','sujet','l')
+text(ax,44,53,'addition','fixe','s')
+box(ax,6,38,18,10,'sujet',label='1+√2'); text(ax,28,43,'+','encre','m')
+box(ax,32,38,18,10,'sujet',label='3+√2'); text(ax,54,43,'=','encre','m')
+box(ax,58,38,24,10,'resultat',label='4+2√2')
+text(ax,44,30,'coefficient dans ℚ','varie','s')
+box(ax,6,16,14,10,'varie',label='½'); text(ax,24,21,'×','encre','m')
+box(ax,28,16,24,10,'sujet',label='4+2√2'); text(ax,56,21,'=','encre','m')
+box(ax,60,16,22,10,'resultat',label='2+√2')
+save(fig,'61-038')

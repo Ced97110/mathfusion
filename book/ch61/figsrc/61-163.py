@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+u = 30; Ax, Ay = 10, 12; R = u * math.sqrt(2)
+poly(ax, [(Ax, Ay), (Ax + u, Ay), (Ax + u, Ay + u), (Ax, Ay + u)], 'sujet')
+arrow(ax, (4, Ay), (72, Ay), 'fixe')
+line(ax, [(Ax, Ay), (Ax + u, Ay + u)], 'varie', lw=1.4)
+arc = [(Ax + R * math.cos(math.radians(a)), Ay + R * math.sin(math.radians(a))) for a in range(0, 46, 3)]
+line(ax, arc, 'varie', lw=0.9, dash=True)
+disc(ax, Ax + R, Ay, 1.1, 'resultat')
+text(ax, 7.5, 8.5, '$A$'); text(ax, Ax + u, 8.5, '$B$')
+text(ax, Ax + u + 2.5, Ay + u + 2.5, '$C$'); text(ax, Ax - 2.5, Ay + u + 2.5, '$D$')
+text(ax, 5.5, 27, '1', 'sujet', 's')
+text(ax, 24, 32, r'$\sqrt{2}$', 'varie')
+text(ax, Ax + R, 8.5, r'$\sqrt{2}$', 'resultat')
+save(fig, '61-163')

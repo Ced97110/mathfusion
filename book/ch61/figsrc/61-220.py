@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(54)
+box(ax,3,34,30,13,'autre',label='extension finie',size='s')
+box(ax,55,34,30,13,'sujet',label='extension algébrique',size='s')
+arrow(ax,(33,43),(55,43),'resultat'); text(ax,44,48.5,'théorème A','resultat',size='s')
+arrow(ax,(55,38),(33,38),'limite'); text(ax,44,33,'faux','limite',size='s')
+box(ax,28,5,32,11,'varie',label='constructibles',size='s')
+arrow(ax,(52,16),(64,34),'resultat'); text(ax,76,24,'algébrique','resultat',size='s')
+arrow(ax,(36,16),(22,34),'limite'); text(ax,12,24,'pas finie','limite',size='s')
+save(fig,'61-220')

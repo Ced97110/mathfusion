@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 3, 46, 28, 11, 'sujet', label=r'$p$ premier'); box(ax, 3, 30, 28, 11, 'autre', label=r'$n$ entier')
+box(ax, 52, 32, 33, 24, 'resultat')
+text(ax, 68.5, 50, 'un corps', 'resultat', 's'); text(ax, 68.5, 44, r'à $p^n$ éléments', 'resultat', 's'); text(ax, 68.5, 37, 'et un seul', 'resultat', 's')
+arrow(ax, (31, 51.5), (52, 48), 'varie'); arrow(ax, (31, 35.5), (52, 40), 'varie')
+text(ax, 44, 23, r'cas $p=2$, $n=2$', 'encre', 's')
+for i in range(4): disc(ax, 28 + i * 11, 13, 3.4, 'resultat')
+text(ax, 44, 3.5, r'$2^2=4$ éléments', 'resultat', 's')
+save(fig, '61-250')

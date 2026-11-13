@@ -1,0 +1,192 @@
+[
+ {
+  "code": "61-063",
+  "a_dire": "deg m se lit « degré de m » : c'est la plus haute puissance de x dans m.",
+  "legende_titre": "Lire le signe deg m",
+  "lecture": [
+   "Les deux cases bleues portent la plus haute puissance de x : x au carré en haut, x puissance 4 en bas.",
+   "Les cases grises portent le reste du polynôme : moins 2 et moins 4.",
+   "Dans chaque case verte, tu lis le degré : 2 en haut, 4 en bas."
+  ],
+  "a_voir": "Le degré est l'exposant de la case bleue, la plus haute puissance de x."
+ },
+ {
+  "code": "61-064",
+  "a_dire": "Si f s'annule en u, alors le polynôme minimal m divise f : la division de f par m tombe juste.",
+  "legende_titre": "Ce qui s'annule est un multiple de m",
+  "lecture": [
+   "En haut, la case bleue pose la condition f(u) = 0 et la flèche orange mène à la case verte : m divise f.",
+   "En bas, f (bleu) est égal à m (violet) fois q (vert).",
+   "Ici q vaut x et le reste r vaut 0."
+  ],
+  "a_voir": "Le polynôme qui s'annule en u s'écrit m fois un autre polynôme, sans reste."
+ },
+ {
+  "code": "61-065",
+  "a_dire": "La preuve part de f(u) = 0, divise f par m, remplace x par u pour obtenir r(u) = 0, puis conclut r = 0.",
+  "legende_titre": "Les étapes de la preuve",
+  "lecture": [
+   "La case bleue du haut est le départ : f vaut 0 en u.",
+   "La flèche « diviser par m » mène à la case grise : f = mq + r.",
+   "La case orange, entourée en gras, est l’étape qui porte le poids : on remplace x par u, mq vaut 0 et donc r(u) = 0.",
+   "Les deux barres comparent les degrés : celle de r (orange) est plus courte que celle de m (bleue).",
+   "La case verte conclut : r = 0."
+  ],
+  "a_voir": "On remplace x par u : cela donne r(u) = 0, et comme r est plus court que m, r = 0."
+ },
+ {
+  "code": "61-066",
+  "a_dire": "x puissance 4 moins 4 s'annule en racine de 2 et m = x au carré moins 2 le divise ; l'autre facteur ne s'annule pas.",
+  "legende_titre": "Un exemple de la propriété",
+  "lecture": [
+   "La case bleue du haut est le polynôme f, qui s'annule en racine de 2.",
+   "Il s'écrit comme le produit de m (violet) par x au carré plus 2 (rouge).",
+   "En racine de 2, m vaut 2 moins 2, donc 0 (vert).",
+   "En racine de 2, l'autre facteur vaut 2 plus 2, donc 4 (rouge) : il ne s'annule pas."
+  ],
+  "a_voir": "Seul le facteur m s'annule en racine de 2."
+ },
+ {
+  "code": "61-067",
+  "a_dire": "Un nombre algébrique est un nombre complexe qui annule un polynôme à coefficients dans les fractions ; le contraire s'appelle transcendant.",
+  "legende_titre": "Algébrique ou transcendant",
+  "lecture": [
+   "Le grand cadre gris contient tous les nombres complexes.",
+   "Le cadre bleu rassemble les nombres algébriques, avec racine de 2 et i.",
+   "Le cadre violet rassemble les nombres transcendants, que aucun polynôme à coefficients dans les fractions n'annule."
+  ],
+  "a_voir": "Le cadre bleu et le cadre violet se partagent les nombres complexes."
+ },
+ {
+  "code": "61-068",
+  "a_dire": "Un nombre transcendant, comme pi, n'est annulé par aucun polynôme non nul à coefficients fractionnaires, même de degré 1 000.",
+  "legende_titre": "Pourquoi un mot pour pi",
+  "lecture": [
+   "Le disque violet est pi, transcendant sur les fractions.",
+   "Chaque case grise est un polynôme non nul, de degré 1, 2, 3, puis jusqu'à 1 000.",
+   "Chaque case rouge dit que la valeur en pi n'est pas 0.",
+   "Les points de suspension disent que cela continue pour tous les degrés."
+  ],
+  "a_voir": "Quel que soit le polynôme choisi, la valeur en pi n'est pas 0."
+ },
+ {
+  "code": "61-069",
+  "a_dire": "Racine de 2 n'est pas une fraction, mais elle annule x au carré moins 2 : algébrique est plus large que fraction.",
+  "legende_titre": "Algébrique sans être une fraction",
+  "lecture": [
+   "Sur la droite graduée, le disque bleu est racine de 2, entre 1 et 2.",
+   "L'étiquette rouge dit que ce n'est pas une fraction.",
+   "La case bleue est le polynôme x au carré moins 2.",
+   "La case verte montre que ce polynôme vaut 0 en racine de 2."
+  ],
+  "a_voir": "Un nombre qui n'est pas une fraction peut quand même annuler un polynôme."
+ },
+ {
+  "code": "61-070",
+  "a_dire": "Le nombre i n'est pas réel, mais il annule x au carré plus 1 : il est algébrique.",
+  "legende_titre": "Un nombre algébrique non réel",
+  "lecture": [
+   "La flèche horizontale grise porte les réels, avec 0 et 1.",
+   "Le disque bleu i est hors de cette ligne : l'étiquette rouge dit qu'il n'est pas réel.",
+   "La case bleue rappelle que i au carré vaut moins 1, donc x au carré plus 1 vaut 0.",
+   "La case verte conclut : algébrique."
+  ],
+  "a_voir": "i est hors des réels et pourtant il annule un polynôme."
+ },
+ {
+  "code": "61-071",
+  "a_dire": "Un essai raté, comme x au carré moins 10 en pi, ne prouve rien : la transcendance de pi et de e porte sur tous les polynômes à la fois.",
+  "legende_titre": "Un essai ne suffit pas",
+  "lecture": [
+   "Les disques violets sont pi et e.",
+   "La case bleue est un polynôme essayé, x au carré moins 10.",
+   "La case rouge donne sa valeur en pi : environ moins 0,13, pas 0.",
+   "Les cases en pointillé sont les autres polynômes qu'il faudrait tous tester.",
+   "La case orange rappelle qu'un essai raté ne prouve rien."
+  ],
+  "a_voir": "Un seul polynôme essayé laisse tous les autres à tester."
+ },
+ {
+  "code": "61-072",
+  "a_dire": "Sur les fractions, pi est transcendant ; sur les réels, il est algébrique : il faut préciser le corps.",
+  "legende_titre": "Le corps de base change la réponse",
+  "lecture": [
+   "Le disque bleu du haut est pi.",
+   "Le cadre violet de gauche prend les fractions comme corps de base : aucun polynôme n'annule pi, il est transcendant.",
+   "Le cadre bleu de droite prend les réels : le polynôme x moins pi, de coefficients 1 et moins pi, annule pi.",
+   "La case verte dit que pi est alors algébrique."
+  ],
+  "a_voir": "Le même nombre pi reçoit deux réponses selon le corps de base."
+ },
+ {
+  "code": "61-073",
+  "a_dire": "Les nombres algébriques se rangent en une liste numérotée, mais les réels non : un réel tiré au hasard n'est presque jamais algébrique.",
+  "legende_titre": "Les algébriques sont rares parmi les réels",
+  "lecture": [
+   "À gauche, les polynômes bleus sont rangés en une liste numérotée 1, 2, 3, et ainsi de suite.",
+   "Les flèches grises mènent aux nombres algébriques, qui forment eux aussi une liste numérotée.",
+   "En bas, la case rouge en pointillé dit qu'une telle liste est impossible pour les réels entre 0 et 1.",
+   "La case orange est un réel qui manque toujours à une liste donnée."
+  ],
+  "a_voir": "La liste des algébriques existe, celle des réels n'existe pas."
+ },
+ {
+  "code": "61-074",
+  "a_dire": "On ne sait pas si pi plus e est algébrique ou transcendant : le problème est ouvert.",
+  "legende_titre": "Une question sans réponse connue",
+  "lecture": [
+   "Les deux disques violets sont pi et e, tous deux transcendants.",
+   "La case bleue est leur somme, pi plus e.",
+   "Les deux cases en pointillé gris sont les deux réponses possibles, avec un point d'interrogation.",
+   "L'étiquette orange dit que personne ne sait laquelle est la bonne."
+  ],
+  "a_voir": "Les deux réponses possibles restent en pointillé : aucune n'est connue."
+ },
+ {
+  "code": "61-075",
+  "a_dire": "F(u) se lit « F auquel on ajoute u » : c'est le plus petit corps qui contient F et u.",
+  "legende_titre": "Ajouter un élément à un corps",
+  "lecture": [
+   "Le grand cadre bleu est F(u), le plus petit corps qui contient F et u.",
+   "Le cadre gris est F, le corps de base.",
+   "Le disque orange est u, l'élément ajouté.",
+   "La dernière ligne donne un cas : F égal aux fractions et u égal à racine de 2 donnent les fractions auxquelles on ajoute racine de 2."
+  ],
+  "a_voir": "F et u sont tous deux à l'intérieur du cadre bleu F(u)."
+ },
+ {
+  "code": "61-076",
+  "a_dire": "F[u] est l'ensemble des valeurs g(u) des polynômes g à coefficients dans F ; on y additionne, soustrait et multiplie, sans diviser.",
+  "legende_titre": "Les valeurs de polynômes en u",
+  "lecture": [
+   "La case grise à gauche est un polynôme g à coefficients dans F.",
+   "La flèche orange remplace x par u.",
+   "Le cadre bleu est F[u] : il contient les valeurs obtenues, comme 1 plus racine de 2.",
+   "En bas, les opérations plus, moins et fois sont vertes ; la division est rouge."
+  ],
+  "a_voir": "La division est la seule opération rouge : elle n'est pas permise dans F[u]."
+ },
+ {
+  "code": "61-077",
+  "a_dire": "F[u] et F(u) ne diffèrent pas par ce qu'on ajoute mais par les opérations : on ne divise pas dans F[u], on divise dans F(u).",
+  "legende_titre": "Deux notations, deux jeux d'opérations",
+  "lecture": [
+   "La colonne de gauche est F[u] : plus, moins et fois sont verts, la division est rouge.",
+   "La colonne de droite est F(u) : les quatre opérations sont vertes.",
+   "La colonne de gauche ressemble aux entiers, celle de droite aux fractions."
+  ],
+  "a_voir": "Seule la case de la division change de couleur entre les deux colonnes."
+ },
+ {
+  "code": "61-078",
+  "a_dire": "Pour u algébrique, F(u) = F[u] : F[u] est déjà un corps, car l'inverse d'un élément reste dans F[u].",
+  "legende_titre": "Diviser ne fait pas sortir de F[u]",
+  "lecture": [
+   "Le cadre violet est F(u) et le cadre bleu à l'intérieur est F[u] : F[u] est toujours dans F(u).",
+   "La flèche orange prend l'inverse de 1 plus racine de 2.",
+   "Le résultat, racine de 2 moins 1, est encore dans F[u].",
+   "La case verte conclut : F(u) égale F[u]."
+  ],
+  "a_voir": "L'inverse d'un élément de F[u] est encore dans F[u], donc les deux ensembles sont égaux."
+ }
+]

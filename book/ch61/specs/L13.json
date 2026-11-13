@@ -1,0 +1,186 @@
+[
+ {
+  "code": "61-191",
+  "a_dire": "Tu dois pouvoir dire : pour un angle θ, on calcule cos 3θ en quatre actions sur le seul nombre cos θ, ici avec 30°.",
+  "legende_titre": "Quatre actions sur un seul nombre",
+  "lecture": [
+   "La case grise du haut est la formule : cos 3θ vaut 4 cos³θ moins 3 cosθ.",
+   "La case bleue est le cosinus de 30°, environ 0,866.",
+   "Les trois cases orange sont les actions : mettre au cube, multiplier par 4, retrancher 3 fois 0,866.",
+   "La case verte du bas est le résultat : 0, qui est le cosinus de 90°."
+  ],
+  "a_voir": "Chaque case de la formule se calcule à partir du seul nombre cosθ."
+ },
+ {
+  "code": "61-192",
+  "a_dire": "Tu dois pouvoir dire : 4a³ − 3a ne change pas avec l'angle, seul le second membre change ; pour 20° il vaut 1/2, d'où 8a³ − 6a − 1 = 0.",
+  "legende_titre": "Ce qui reste et ce qui change",
+  "lecture": [
+   "Les cases grises sont 4a³ − 3a : cette partie ne change pas.",
+   "Les cases orange sont le second membre : cos 3θ pour tout angle, 1/2 pour 20°.",
+   "La flèche orange multiplie les deux membres par 2 et donne la case verte, 8a³ − 6a − 1 = 0."
+  ],
+  "a_voir": "Le gris reste le même sur les deux lignes, l'orange change."
+ },
+ {
+  "code": "61-193",
+  "a_dire": "Tu dois pouvoir dire : en posant b = 2a, l'équation 8a³ − 6a − 1 = 0 devient b³ − 3b − 1 = 0.",
+  "legende_titre": "Poser b égal à 2a",
+  "lecture": [
+   "La case bleue du haut est l'équation en a.",
+   "La flèche orange est le changement de lettre b = 2a.",
+   "La case verte du bas est l'équation en b.",
+   "Les deux lignes grises montrent pourquoi : 8a³ est le cube de 2a et 6a vaut trois fois 2a."
+  ],
+  "a_voir": "Le coefficient 8 devant le cube disparaît."
+ },
+ {
+  "code": "61-194",
+  "a_dire": "Tu dois pouvoir dire : x³ − 3x − 1 n'a pas de racine rationnelle, car seuls 1 et −1 sont possibles et aucun ne donne 0 ; il est donc irréductible.",
+  "legende_titre": "Aucune racine rationnelle possible",
+  "lecture": [
+   "La case bleue du haut est le polynôme de départ.",
+   "La case orange est l'étape clé : la liste des racines possibles, 1 ou −1.",
+   "Les deux cases rouges testent 1 puis −1 : le résultat n'est pas 0.",
+   "La case verte est l'arrivée : le polynôme est irréductible et de degré 3."
+  ],
+  "a_voir": "Les deux essais rouges ferment la liste des possibilités."
+ },
+ {
+  "code": "61-195",
+  "a_dire": "Tu dois pouvoir dire : certains angles se trisectent, comme 90°, mais un seul angle qui échoue, 60°, suffit contre une méthode valable pour tous.",
+  "legende_titre": "Un cas qui marche, un cas qui échoue",
+  "lecture": [
+   "À gauche, l'angle de 90° est partagé en trois parties de 30° : case verte, il se construit.",
+   "À droite, l'angle de 60° est partagé en trois parties de 20° : case rouge, il n'est pas constructible.",
+   "Les traits orange en pointillés sont les coupes en trois."
+  ],
+  "a_voir": "Le cas vert ne rattrape pas le cas rouge."
+ },
+ {
+  "code": "61-196",
+  "a_dire": "Tu dois pouvoir dire : pour un polygone à p côtés avec p premier, il faut que p − 1 soit une puissance de 2.",
+  "legende_titre": "La condition sur p − 1",
+  "lecture": [
+   "La ligne bleue donne le nombre de côtés p : 5, 7, 11, 13, 17.",
+   "La ligne du bas donne p − 1, relié à chaque p par une flèche orange.",
+   "Une case verte est une puissance de 2 : 4 et 16.",
+   "Une case rouge n'est pas une puissance de 2 : 6, 10 et 12."
+  ],
+  "a_voir": "Seuls p = 5 et p = 17 passent la condition."
+ },
+ {
+  "code": "61-197",
+  "a_dire": "Tu dois pouvoir dire : pour 7 côtés, le degré est 6, qui n'est pas une puissance de 2, donc l'heptagone régulier n'est pas constructible.",
+  "legende_titre": "L'heptagone est dans une case rouge",
+  "lecture": [
+   "Le polygone rouge à gauche a 7 côtés.",
+   "La case bleue donne le degré du polynôme : 6.",
+   "La première case rouge dit que 6 n'est pas une puissance de 2, la seconde conclut : non constructible.",
+   "La ligne grise donne deux autres cas : 11 côtés donnent 10, 13 côtés donnent 12."
+  ],
+  "a_voir": "Le degré 6 décide, pas le dessin du polygone."
+ },
+ {
+  "code": "61-198",
+  "a_dire": "Tu dois pouvoir dire : pour 17 côtés, le degré 16 vaut 2⁴, une puissance de 2 ; la case est verte et Gauss a construit ce polygone.",
+  "legende_titre": "17 côtés, degré 16, case verte",
+  "lecture": [
+   "Le polygone vert à gauche a 17 côtés.",
+   "La case bleue donne le degré du polynôme : 16.",
+   "Les quatre cases orange sont quatre facteurs égaux à 2 multipliés entre eux.",
+   "La case verte dit 16 = 2⁴ et la case du bas rappelle que Gauss l'a construit."
+  ],
+  "a_voir": "Quatre fois le facteur 2 donnent 16."
+ },
+ {
+  "code": "61-199",
+  "a_dire": "Tu dois pouvoir dire : le carré de même aire que le cercle de rayon 1 a pour côté √π, il faudrait donc construire π ; avec l'aire 2, le côté √2 est constructible.",
+  "legende_titre": "Le côté du carré de même aire",
+  "lecture": [
+   "Le disque bleu est le cercle de rayon 1, d'aire π.",
+   "Le carré orange a la même aire : son côté est √π, et la case rouge dit qu'il faut construire π.",
+   "En dessous, un carré bleu d'aire 2 a pour côté √2, relié à la case verte : constructible."
+  ],
+  "a_voir": "Le problème vient du nombre π, pas de l'idée de carré."
+ },
+ {
+  "code": "61-200",
+  "a_dire": "Tu dois pouvoir dire : un réel a est constructible si, depuis un segment de longueur 1, on trace en un nombre fini d'étapes un segment de longueur |a| avec la règle et le compas.",
+  "legende_titre": "Un réel est constructible par sa longueur",
+  "lecture": [
+   "Le segment gris du haut est le segment de départ, de longueur 1.",
+   "La flèche orange est le travail à la règle et au compas.",
+   "Le segment vert du bas a pour longueur |a| = 2.",
+   "Les cases bleue et violette, a = 2 et a = −2, pointent vers le même segment."
+  ],
+  "a_voir": "Un réel et son opposé ont la même longueur |a|."
+ },
+ {
+  "code": "61-201",
+  "a_dire": "Tu dois pouvoir dire : une longueur est positive, donc √2 et −√2 sont constructibles ensemble.",
+  "legende_titre": "Un réel et son opposé, même longueur",
+  "lecture": [
+   "Sur la droite graduée, le point bleu est √2 et le point violet est −√2.",
+   "L'accolade bleue et l'accolade violette mesurent chacune 1,41 à partir de 0.",
+   "Les deux accolades ont la même longueur."
+  ],
+  "a_voir": "Les deux points sont à la même distance de 0."
+ },
+ {
+  "code": "61-202",
+  "a_dire": "Tu dois pouvoir dire : les réels constructibles forment un sous-corps de ℝ, car somme, différence, produit et quotient de deux d'entre eux restent dans la famille.",
+  "legende_titre": "Quatre opérations qui restent dedans",
+  "lecture": [
+   "Le grand cadre gris est ℝ, l'ensemble des réels.",
+   "Le cadre bleu à l'intérieur est la famille des réels constructibles, avec 2 et 3 au départ.",
+   "Les quatre cases vertes sont la somme 5, la différence −1, le produit 6 et le quotient 2/3, tous dans le cadre bleu."
+  ],
+  "a_voir": "Les quatre résultats restent dans le cadre bleu."
+ },
+ {
+  "code": "61-203",
+  "a_dire": "Tu dois pouvoir dire : on obtient a + b en reportant b à la suite de a, et a − b en reportant b en revenant en arrière, avec le seul compas.",
+  "legende_titre": "Reporter la longueur b sur la droite",
+  "lecture": [
+   "Dans les deux lignes, la flèche bleue est la longueur a et la flèche orange est la longueur b.",
+   "Dans la ligne du haut, b est reporté bout à bout : l'accolade verte mesure a + b.",
+   "Dans la ligne du bas, b est reporté vers l'arrière : l'accolade verte mesure a − b."
+  ],
+  "a_voir": "Le sens de la flèche orange change la somme en différence."
+ },
+ {
+  "code": "61-204",
+  "a_dire": "Tu dois pouvoir dire : avec deux droites issues de A et deux segments parallèles, la longueur x sur la droite horizontale vaut a × b.",
+  "legende_titre": "Le produit lu comme une longueur",
+  "lecture": [
+   "Les deux droites grises partent du point A.",
+   "Le petit triangle bleu a pour côtés 1 sur l'oblique et a sur l'horizontale.",
+   "Le grand triangle orange a pour côté b sur l'oblique ; son segment orange est parallèle au segment bleu.",
+   "Le point vert, à la longueur x depuis A, donne a × b."
+  ],
+  "a_voir": "Les deux triangles ont la même forme, le grand est le petit agrandi."
+ },
+ {
+  "code": "61-205",
+  "a_dire": "Tu dois pouvoir dire : on trace la droite BC, puis la parallèle par D ; elle coupe la droite horizontale en E et AE vaut a × b.",
+  "legende_titre": "La construction s'arrête en E",
+  "lecture": [
+   "Le segment bleu BC relie le point B de l'oblique au point C de l'horizontale.",
+   "Le segment orange passe par D et reste parallèle à BC.",
+   "Le point vert E est l'endroit où ce segment coupe l'horizontale ; le trait vert AE a pour longueur a × b."
+  ],
+  "a_voir": "Il n'y a rien à tracer après le point E."
+ },
+ {
+  "code": "61-206",
+  "a_dire": "Tu dois pouvoir dire : une parallèle à une droite se construit avec deux perpendiculaires successives.",
+  "legende_titre": "Deux perpendiculaires donnent une parallèle",
+  "lecture": [
+   "La droite grise du bas est la droite donnée.",
+   "La droite bleue verticale lui est perpendiculaire, avec un angle de 90°.",
+   "La droite verte est perpendiculaire à la droite bleue, aussi à 90° : elle est parallèle à la droite donnée."
+  ],
+  "a_voir": "Les deux angles droits marqués donnent deux droites parallèles."
+ }
+]

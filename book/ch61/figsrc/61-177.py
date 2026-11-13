@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+text(ax,44,66,r'$\Delta=B^2-4AC$','sujet','l')
+text(ax,24,56,r'$\Delta=25$','fixe'); text(ax,64,56,r'$\Delta=28$','fixe')
+text(ax,24,48,r'$\sqrt{25}=5$','resultat'); text(ax,64,48,r'$\sqrt{28}$ : pas une fraction','varie','s')
+box(ax,6,22,36,10,'resultat',label=r'$\mathbb{Q}(\sqrt{25})=\mathbb{Q}$',size='s')
+text(ax,24,15,'degré 1','resultat')
+box(ax,46,32,36,10,'varie',label=r'$\mathbb{Q}(\sqrt{28})$',size='s')
+box(ax,46,12,36,10,'fixe',label=r'$\mathbb{Q}$')
+arrow(ax,(64,22),(64,32),'varie')
+text(ax,67,27,'degré 2','varie','s',ha='left')
+save(fig,'61-177')

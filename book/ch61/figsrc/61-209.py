@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig,ax=canvas(62)
+u=16; A=(8,14); th=math.radians(40); c,s=math.cos(th),math.sin(th)
+H=lambda v:(A[0]+v*u,A[1]); O=lambda v:(A[0]+v*u*c,A[1]+v*u*s)
+line(ax,[A,H(3.4)],'fixe'); line(ax,[A,O(2.5)],'fixe')
+line(ax,[O(2),H(3)],'sujet',1.6)
+line(ax,[O(1),H(1.5)],'resultat',1.6)
+for p,r in [(O(2),'sujet'),(H(3),'sujet'),(O(1),'fixe'),(H(1.5),'resultat')]: disc(ax,p[0],p[1],1.4,r)
+text(ax,A[0]-3,A[1]-3.5,r'$A$')
+text(ax,O(2)[0]-6,O(2)[1]+2.5,r'$b$ = 2','sujet')
+text(ax,O(1)[0]-3.5,O(1)[1]+2.5,'1','fixe')
+text(ax,H(3)[0],A[1]-5,r'$a$ = 3','sujet')
+text(ax,H(1.5)[0],A[1]-5,'AC = 1,5','resultat')
+text(ax,60,52,r'$a / b$ = 3 / 2 = 1,5','resultat','l')
+save(fig,'61-209')

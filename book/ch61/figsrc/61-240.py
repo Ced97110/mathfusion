@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 24, 26, 18, 'fixe')
+text(ax, 16, 36, 'corps à 2', 'fixe', 's'); text(ax, 16, 30, 'éléments', 'fixe', 's')
+text(ax, 16, 18, 'aucune racine', 'limite', 's')
+box(ax, 44, 40, 41, 20, 'sujet')
+text(ax, 64.5, 55, 'corps à 4 éléments', 'sujet', 's'); text(ax, 64.5, 49, r'$u$ annule $x^2+x+1$', 'sujet', 's')
+text(ax, 64.5, 43.5, 'racine du polynôme', 'resultat', 's')
+box(ax, 44, 8, 41, 20, 'autre')
+text(ax, 64.5, 23, 'corps à 8 éléments', 'autre', 's'); text(ax, 64.5, 17, r'racine de $x^3+x+1$', 'autre', 's')
+text(ax, 64.5, 11.5, 'racine du polynôme', 'resultat', 's')
+arrow(ax, (29, 36), (44, 48), 'varie'); arrow(ax, (29, 30), (44, 20), 'varie')
+save(fig, '61-240')

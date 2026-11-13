@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+disc(ax, 12, 26, 8, 'sujet', label=r'$\sqrt{2}$', size='l')
+arrow(ax, (20.5, 26), (27, 26), 'varie'); text(ax, 24, 33, r'$m$', 'varie', 's')
+box(ax, 28, 19, 30, 14, 'sujet', label=r'$x^2-2$', size='l')
+arrow(ax, (58.5, 26), (65, 26), 'varie')
+box(ax, 66, 19, 18, 14, 'resultat', label='2', size='xl')
+text(ax, 12, 12, 'élément', 'sujet', 's'); text(ax, 43, 12, 'polynôme minimal', 'sujet', 's')
+text(ax, 75, 12, 'plus haute puissance', 'resultat', 's', ha='center')
+text(ax, 44, 43, 'degré de $\\sqrt{2}$ = 2', 'resultat', 'l', weight='bold')
+save(fig, '61-055')

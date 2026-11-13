@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,r'$(1+\sqrt{2})\times(1+\sqrt{2})$','sujet','m')
+text(ax,44,48,r'$=1+2\sqrt{2}+2$','encre','m')
+arrow(ax,(44,43),(44,35),'varie')
+box(ax,16,18,22,14,'fixe',label=r'$3$',size='l'); text(ax,44,25,'+','encre','l')
+box(ax,50,18,26,14,'varie',label=r'$2\sqrt{2}$',size='l')
+text(ax,27,10,r'$a=3$','fixe','m'); text(ax,63,10,r'$b=2$','varie','m')
+text(ax,44,3.5,r'deux morceaux : $a+b\sqrt{2}$','encre','s')
+save(fig,'61-024')

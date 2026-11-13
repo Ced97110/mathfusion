@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 19, 51, 'on ajoute i', 'sujet', 's')
+text(ax, 69, 51, 'restes par x² + 1', 'autre', 's')
+box(ax, 4, 34, 30, 12, 'sujet', label='a + b·i', size='m')
+box(ax, 54, 34, 30, 12, 'autre', label='a + b·x', size='m')
+text(ax, 44, 40, '≠', 'limite', 'xl')
+text(ax, 44, 29, 'noms différents', 'limite', 's')
+box(ax, 4, 11, 30, 12, 'resultat', label='i × i = −1', size='m')
+box(ax, 54, 11, 30, 12, 'resultat', label='x × x = −1', size='m')
+arrow(ax, (36, 17), (52, 17), 'resultat', both=True)
+text(ax, 44, 5, 'mêmes calculs', 'resultat', 's')
+save(fig, '61-147')

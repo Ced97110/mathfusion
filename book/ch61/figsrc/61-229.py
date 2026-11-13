@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(100)
+box(ax, 14, 88, 60, 10, 'sujet', label=r'$w=\sqrt[6]{5}\,i$')
+arrow(ax, (44, 88), (44, 77), 'varie')
+for k, x in enumerate((8, 34, 60)):
+    box(ax, x, 66, 20, 11, 'sujet', label=r'$i^2=-1$')
+for x in (31, 57): text(ax, x, 71.5, r'$\times$', 'encre', 'l')
+arrow(ax, (44, 66), (44, 60), 'varie')
+box(ax, 24, 50, 40, 10, 'sujet', label=r'$i^6=-1$')
+arrow(ax, (44, 50), (44, 44), 'varie'); text(ax, 47, 47, r'$\times\,5$', 'varie', 's', ha='left')
+box(ax, 14, 34, 60, 10, 'sujet', label=r'$w^6=5\times(-1)=-5$')
+arrow(ax, (44, 34), (44, 24), 'varie'); text(ax, 47, 29, 'Eisenstein, $p=5$', 'varie', 's', ha='left')
+box(ax, 14, 14, 60, 10, 'resultat', label=r'$x^6+5$ irréductible')
+text(ax, 44, 7, 'degré 6', 'resultat', 'l')
+save(fig, '61-229')

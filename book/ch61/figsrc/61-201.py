@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+s = math.sqrt(2)
+f = numberline(ax, 8, 80, 22, -2, 2, 1, arrow_right=False)
+disc(ax, f(-s), 22, 1.6, 'autre'); disc(ax, f(s), 22, 1.6, 'sujet')
+text(ax, f(-s), 26.5, r'$-\sqrt{2}$', 'autre', 's'); text(ax, f(s), 26.5, r'$\sqrt{2}$', 'sujet', 's')
+brace(ax, f(0), f(s), 31, 'sujet', '1,41', down=False)
+brace(ax, f(-s), f(0), 31, 'autre', '1,41', down=False)
+text(ax, 44, 43, 'même longueur des deux côtés', 'encre', 's')
+save(fig, '61-201')

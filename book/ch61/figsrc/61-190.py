@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig,ax=canvas(62)
+o=(12,10); R=40; t=math.radians(20)
+line(ax,[o,(o[0]+R+4,o[1])],'fixe',lw=0.7)
+line(ax,[o,(o[0],o[1]+R+4)],'fixe',lw=0.7)
+line(ax,[(o[0]+R*math.cos(math.radians(k)),o[1]+R*math.sin(math.radians(k))) for k in range(0,91,3)],'fixe',lw=1.0)
+P=(o[0]+R*math.cos(t),o[1]+R*math.sin(t))
+line(ax,[o,P],'sujet',lw=1.3)
+line(ax,[(o[0]+12*math.cos(math.radians(k)),o[1]+12*math.sin(math.radians(k))) for k in range(0,21,2)],'varie',lw=1.2)
+text(ax,o[0]+16.5,o[1]+2.3,'20°','varie','s')
+line(ax,[P,(P[0],o[1])],'resultat',lw=1.0,dash=True)
+disc(ax,P[0],P[1],1.2,'sujet'); disc(ax,P[0],o[1],1.2,'resultat')
+text(ax,P[0]+3,P[1]+3.5,r'$P$','sujet')
+text(ax,26,o[1]+16,'rayon 1','sujet','s')
+text(ax,P[0],o[1]-5,r'$a=\cos 20°$','resultat','s')
+text(ax,66,52,'le point $P$ revient','encre','s'); text(ax,66,47,r'au nombre $a\approx0{,}94$','resultat','s')
+save(fig,'61-190')

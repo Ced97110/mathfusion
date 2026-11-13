@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,2,50,34,14,'sujet',label=r'$\sqrt{2}$ algébrique',size='s')
+box(ax,52,50,34,14,'sujet',label=r'$\sqrt{3}$ algébrique',size='s')
+box(ax,22,22,44,14,'resultat',label=r'$\sqrt{2}+\sqrt{3}$ algébrique',size='s')
+arrow(ax,(19,50),(34,36),'varie'); arrow(ax,(69,50),(54,36),'varie')
+text(ax,44,43,'théorème $D$','varie','s') if False else text(ax,44,45,r'théorème $D$','varie','s')
+box(ax,6,2,76,12,'fixe',dash=True,label=r'$x^4-10x^2+1$ : inutile ici',size='s')
+arrow(ax,(44,22),(44,14),'fixe')
+save(fig,'61-132')

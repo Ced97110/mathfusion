@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+text(ax,26,56,'ℚ','sujet',34)
+line(ax,[(15,65),(37,65)],'varie',lw=1.6)
+text(ax,70,66,'la barre : clôture','varie','s'); arrow(ax,(58,66),(40,67),'varie')
+text(ax,70,50,'ℚ : les fractions','fixe','s'); arrow(ax,(58,50),(40,52),'fixe')
+box(ax,6,24,76,10,'resultat',label='$\overline{\mathbb{Q}}$ : les nombres algébriques' if False else 'nombres algébriques',size='s')
+arrow(ax,(26,40),(26,34),'resultat')
+box(ax,4,2,24,12,'resultat',label=r'$\sqrt{2}\in\overline{\mathbb{Q}}$' if False else r'$\sqrt{2}\in\overline{\mathbb{Q}}$' ,size='s')
+box(ax,32,2,24,12,'resultat',label=r'$i\in\overline{\mathbb{Q}}$',size='s')
+box(ax,60,2,24,12,'limite',label=r'$\pi\notin\overline{\mathbb{Q}}$',size='s')
+save(fig,'61-134')

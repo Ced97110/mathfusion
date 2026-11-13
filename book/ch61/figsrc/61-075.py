@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 22, 80, 54, 'sujet', label=None)
+text(ax, 44, 70, r'$F(u)$ : le plus petit corps', 'sujet', 'm', weight='bold')
+box(ax, 10, 28, 38, 34, 'fixe', label=None)
+text(ax, 29, 56, r'$F$', 'fixe', 'xl')
+text(ax, 29, 45, 'corps de base', 'fixe', 's')
+disc(ax, 66, 45, 7, 'varie', label=r'$u$', size='xl')
+text(ax, 66, 34, 'élément ajouté', 'varie', 's')
+text(ax, 44, 14, r'on lit : « $F$ auquel on ajoute $u$ »', 'encre', 's')
+text(ax, 44, 6, r'$F=\mathbb{Q}$, $u=\sqrt{2}$ : $\mathbb{Q}(\sqrt{2})$', 'sujet', 's')
+save(fig, '61-075')

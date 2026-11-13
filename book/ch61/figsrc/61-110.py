@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 2, 10, 84, 64, 'sujet', label=None)
+box(ax, 10, 10, 68, 46, 'varie', label=None)
+box(ax, 18, 10, 52, 28, 'fixe', label=None)
+text(ax, 44, 68, r'$F(u)$ : degré 4', 'sujet', 'm')
+text(ax, 44, 50, r'$F(v)$ : degré 2, $v=u^2-2$', 'varie', 's')
+text(ax, 44, 26, r'$F$ : corps de base', 'fixe', 'm')
+text(ax, 44, 4, r'$2$ divise $4$', 'resultat', 'm')
+save(fig, '61-110')
