@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 58, "chaque étape garde l'aire 1", 'resultat', 'm')
+box(ax, 6, 36, 22, 10, 'sujet', label='2 s'); text(ax, 31, 41, '+', 'encre', 'l')
+box(ax, 34, 36, 22, 10, 'sujet', label='3 s'); text(ax, 59, 41, '=', 'encre', 'l')
+box(ax, 62, 36, 20, 10, 'resultat', label='5 s')
+text(ax, 44, 28, 'deux mouvements en un seul', 'fixe', 's')
+box(ax, 6, 6, 20, 10, 'fixe', label='départ'); box(ax, 62, 6, 20, 10, 'resultat', label='après')
+arrow(ax, (28, 13), (60, 13), 'varie'); text(ax, 44, 16.5, 'avance 2 s', 'varie', 's')
+arrow(ax, (60, 9), (28, 9), 'autre'); text(ax, 44, 5.5, 'retour 2 s', 'autre', 's')
+save(fig, '75-008')

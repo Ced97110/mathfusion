@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'$x=(1,\ i)$', 'sujet', 'l')
+box(ax, 6, 30, 36, 12, 'varie', label=r'$1\times 1=1$')
+box(ax, 46, 30, 36, 12, 'varie', label=r'$i\times(-i)=1$')
+arrow(ax, (30, 54), (24, 43), 'sujet'); arrow(ax, (58, 54), (64, 43), 'sujet')
+box(ax, 22, 6, 44, 12, 'resultat', label=r'$H(x,x)=2$', size='l')
+arrow(ax, (24, 29), (36, 19), 'varie'); arrow(ax, (64, 29), (52, 19), 'varie')
+text(ax, 44, 24, 'somme', 'varie', 's')
+text(ax, 44, 46, 'coordonnée × conjugué', 'fixe', 's')
+save(fig, '75-064')

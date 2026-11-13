@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+def cell(cx, y, first, val, role, cap):
+    box(ax, cx - 8, y - 8, 16, 16, role)
+    a, b = ('sujet', 'varie') if first == 'x' else ('varie', 'sujet')
+    arrow(ax, (cx - 4, y - 4), (cx + 4, y - 4), a, lw=1.0)
+    arrow(ax, (cx - 4, y - 4), (cx - 4, y + 4), b, lw=1.0)
+    text(ax, cx + 13, y, val, role, 'm', ha='left'); text(ax, cx, y + 11, cap, 'encre', 's')
+text(ax, 22, 66, r'sur $\mathbb{R}$', 'encre', 'm'); text(ax, 66, 66, r'sur $F_2$', 'encre', 'm')
+cell(10, 48, 'x', '1', 'resultat', r'$B(x,y)$')
+cell(10, 18, 'y', '−1', 'limite', r'$B(y,x)$')
+cell(54, 48, 'x', '1', 'resultat', r'$B(x,y)$')
+cell(54, 18, 'y', '1', 'resultat', r'$B(y,x)$')
+text(ax, 22, 33, '≠', 'limite', 'xl'); text(ax, 66, 33, '=', 'resultat', 'xl')
+text(ax, 44, 3, r'flèche bleue : $x$ ; orange : $y$', 'encre', 's')
+save(fig, '75-096')

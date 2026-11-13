@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+def b(x, y, w, lab, role): box(ax, x, y, w, 15, role, label=lab, size='s')
+b(2, 36, 24, '15 choix\nde e', 'sujet'); text(ax, 30, 43.5, '×', 'varie', 'l')
+b(35, 36, 24, '8 choix\nde f', 'sujet'); text(ax, 63, 43.5, '=', 'varie', 'l')
+b(67, 36, 19, '120\npaires', 'resultat')
+b(2, 8, 24, '120\npaires', 'resultat'); text(ax, 30, 15.5, '×', 'varie', 'l')
+b(35, 8, 24, '6 la fixent', 'fixe'); text(ax, 63, 15.5, '=', 'varie', 'l')
+b(67, 8, 19, '720', 'resultat')
+arrow(ax, (76, 35), (14, 24), 'varie', curve=-0.2)
+save(fig, '75-123')

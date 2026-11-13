@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 20, 56, r'$27\times80\times3\times8$', 'fixe', 's')
+box(ax, 4, 34, 32, 16, 'sujet'); text(ax, 20, 44, '51 840', 'sujet', 'l', weight='bold'); text(ax, 20, 38, r'$Sp_4(\mathbb{F}_3)$', 'sujet', 's')
+arrow(ax, (37, 42), (51, 42), 'varie'); text(ax, 44, 46, r'$\div\,2$', 'varie', 'm')
+box(ax, 52, 34, 32, 16, 'resultat'); text(ax, 68, 44, '25 920', 'resultat', 'l', weight='bold'); text(ax, 68, 38, r'$PSp_4(\mathbb{F}_3)$', 'resultat', 's')
+text(ax, 44, 26, r'centre $\{1,\,-1\}$', 'fixe', 's')
+disc(ax, 36, 17, 4.5, 'fixe', label='1'); disc(ax, 52, 17, 4.5, 'fixe', label=r'$-1$')
+text(ax, 44, 7, r'$-1=2$ : 2 éléments', 'varie', 's')
+save(fig, '75-129')

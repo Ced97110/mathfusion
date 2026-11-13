@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+O = (24, 22); u = 5
+P = lambda x, y, z: iso(x, y, z, O, u)
+poly(ax, [P(-2,-2,0), P(2,-2,0), P(2,2,0), P(-2,2,0)], 'sujet')
+arrow(ax, P(0,0,0), P(2,0,0), 'sujet', lw=1.2); arrow(ax, P(0,0,0), P(0,2,0), 'sujet', lw=1.2)
+text(ax, *P(2.3,-0.2,0), r'$e$', 'sujet', 'm', ha='left'); text(ax, *P(-0.2,2.4,0), r'$f$', 'sujet', 'm', ha='right')
+text(ax, 24, 5, 'plan retiré : 2 dimensions', 'sujet', 's')
+arrow(ax, P(0,0,0), P(0,0,8), 'varie', lw=1.5)
+text(ax, 21, 60, r'$w$', 'varie', 'l', ha='right')
+text(ax, 24, 70, 'droite restante : 1 dimension', 'varie', 's')
+text(ax, 67, 70, r'$B$ est alternée', 'autre', 's')
+box(ax, 48, 46, 38, 11, 'resultat', label=r'$B(w,\,w)=0$', size='l')
+line(ax, [(25.5, 52), (47.5, 52)], 'varie', dash=True)
+text(ax, 67, 41, 'étape qui porte la preuve', 'resultat', 's')
+arrow(ax, (67, 38), (67, 29), 'resultat')
+box(ax, 48, 18, 38, 11, 'resultat', label=r'$w$ dans le noyau', size='m')
+save(fig, '75-098')

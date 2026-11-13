@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 6, 82, 46, 'fixe', fill=False, dash=True)
+text(ax, 44, 56, 'espace de dimension 4', 'encre', 's')
+box(ax, 8, 12, 28, 30, 'fixe')
+text(ax, 22, 32, r'$e$ et $f$', 'fixe', 'l'); text(ax, 22, 21, 'ne bougent pas', 'fixe', 's')
+box(ax, 48, 12, 32, 30, 'sujet')
+text(ax, 64, 36, r'$P_{1}^{\perp}$ : plan', 'sujet', 'm'); text(ax, 64, 20, r'agit comme $Sp_{2}$', 'sujet', 's')
+arrow(ax, (58, 40), (70, 40), 'varie', curve=-0.9)
+save(fig, '75-122')

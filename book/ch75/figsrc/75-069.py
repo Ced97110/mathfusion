@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 72, 'sur le corps à 2 éléments', 'fixe', 's')
+text(ax, 44, 63, 'dimension 2', 'encre', 'm')
+box(ax, 4, 44, 32, 14, 'sujet', label='$Sp_2(F)$\n6 éléments', size='s')
+box(ax, 52, 44, 32, 14, 'autre', label='$SL_2(F)$\n6 éléments', size='s')
+text(ax, 44, 51, '=', 'resultat', 20)
+text(ax, 44, 30, 'dimension 4', 'encre', 'm')
+box(ax, 4, 8, 32, 14, 'sujet', label='$Sp_4(F)$\n720 éléments', size='s')
+box(ax, 52, 8, 32, 14, 'autre', label='$SL_4(F)$\n20 160 éléments', size='s')
+text(ax, 44, 15, r'$\neq$', 'limite', 20)
+save(fig, '75-069')

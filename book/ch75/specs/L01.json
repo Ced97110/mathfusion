@@ -1,0 +1,171 @@
+[
+ {
+  "code": "75-001",
+  "a_dire": "Il faut deux nombres pour décrire une bille : sa position x et sa vitesse v, qui forment le couple (x, v).",
+  "legende_titre": "Deux nombres pour une bille",
+  "lecture": [
+   "Sur le rail, le disque bleu est la bille et l'accolade bleue mesure sa position x = 3.",
+   "La flèche orange est sa vitesse v = 2.",
+   "En bas, les mêmes deux nombres donnent un seul point, (3, 2)."
+  ],
+  "a_voir": "Les deux nombres 3 et 2 deviennent un seul point du plan."
+ },
+ {
+  "code": "75-002",
+  "a_dire": "Le plan des phases est le plan dont chaque point (x, v) donne la position et la vitesse d'une bille.",
+  "legende_titre": "Un plan pour la position et la vitesse",
+  "lecture": [
+   "En haut, deux billes sont au même endroit du rail (disque bleu et disque violet).",
+   "En bas, les mêmes billes sont deux points : le bleu à la vitesse 1, le violet à la vitesse 4.",
+   "Le trait gris pointillé montre qu'elles ont la même position 3."
+  ],
+  "a_voir": "Au même endroit du rail, deux vitesses donnent deux points différents."
+ },
+ {
+  "code": "75-003",
+  "a_dire": "Un nuage de billes de positions 0 à 1 et de vitesses 0 à 1 remplit un carré de côté 1, d'aire 1.",
+  "legende_titre": "Le nuage est un carré",
+  "lecture": [
+   "Les points bleus sont les billes.",
+   "Ils remplissent le carré bleu, qui va de 0 à 1 sur chaque axe.",
+   "Le texte vert donne son aire : 1 fois 1."
+  ],
+  "a_voir": "Le nuage occupe un carré de côté 1 et d'aire 1."
+ },
+ {
+  "code": "75-004",
+  "a_dire": "Après 2 secondes, le point (x, v) devient (x + 2v, v) : la position avance de 2v et la vitesse reste la même.",
+  "legende_titre": "Où arrive la bille après 2 secondes",
+  "lecture": [
+   "Le disque bleu est le départ et le disque vert l'arrivée.",
+   "La flèche orange est horizontale : seule la position change.",
+   "Pour la vitesse 1 elle avance de 2, pour la vitesse 4 elle avance de 8."
+  ],
+  "a_voir": "Les points se déplacent à l'horizontale, d'autant plus que la vitesse est grande."
+ },
+ {
+  "code": "75-005",
+  "a_dire": "Le carré devient un parallélogramme étiré vers la droite, mais son aire reste 1.",
+  "legende_titre": "Le carré s'étire sans changer d'aire",
+  "lecture": [
+   "À gauche, le carré bleu d'aire 1.",
+   "La flèche orange est le mouvement de 2 secondes.",
+   "À droite, le parallélogramme vert a la même base 1 et la même hauteur 1 : son aire est 1."
+  ],
+  "a_voir": "La forme change, la base et la hauteur restent 1, donc l'aire reste 1."
+ },
+ {
+  "code": "75-006",
+  "a_dire": "Le mouvement sans frottement conserve l'aire d'un nuage (théorème de Liouville) ; avec frottement, l'aire peut tomber à 0.",
+  "legende_titre": "Quand l'aire est conservée",
+  "lecture": [
+   "En haut, sans frottement : le carré bleu devient un parallélogramme vert de même aire 1.",
+   "En bas, avec frottement : toutes les vitesses tombent à 0 et le nuage devient le trait rouge, d'aire 0."
+  ],
+  "a_voir": "L'aire reste 1 sans frottement et tombe à 0 avec frottement."
+ },
+ {
+  "code": "75-007",
+  "a_dire": "Une transformation symplectique est une transformation linéaire qui conserve l'aire.",
+  "legende_titre": "Ce qui sépare les transformations",
+  "lecture": [
+   "En haut, doubler les positions fait passer le carré bleu à un rectangle rouge d'aire 2 : l'aire n'est pas conservée.",
+   "En bas, le mouvement libre de 2 secondes donne un parallélogramme vert d'aire 1."
+  ],
+  "a_voir": "Seule la transformation du bas garde l'aire 1."
+ },
+ {
+  "code": "75-008",
+  "a_dire": "Les transformations qui gardent l'aire forment un groupe : on peut les enchaîner et les défaire.",
+  "legende_titre": "Enchaîner et défaire",
+  "lecture": [
+   "En haut, 2 s puis 3 s donnent 5 s, et chaque étape garde l'aire 1.",
+   "En bas, la flèche orange avance de 2 s du départ à l'après, et la flèche violette fait le retour de 2 s."
+  ],
+  "a_voir": "Enchaîner ou défaire ces mouvements donne encore un mouvement qui garde l'aire."
+ },
+ {
+  "code": "75-009",
+  "a_dire": "Sur un corps fini, le plan n'a qu'un nombre fini de points, donc on peut compter les transformations.",
+  "legende_titre": "Un plan que l'on peut compter",
+  "lecture": [
+   "À gauche, avec les nombres réels, le carré gris contient une infinité de points.",
+   "À droite, avec les seuls nombres 0 et 1, le plan n'a que 4 points bleus, que l'on compte."
+  ],
+  "a_voir": "Avec peu de nombres, il y a peu de points et la question « combien ? » a une réponse."
+ },
+ {
+  "code": "75-010",
+  "a_dire": "Pour le vecteur non nul (1, i), la somme des carrés des coordonnées vaut 0.",
+  "legende_titre": "Une longueur nulle pour un vecteur non nul",
+  "lecture": [
+   "La flèche bleue avance de 1 (le carré de 1).",
+   "La flèche orange recule de 1 (le carré de i vaut −1).",
+   "Le disque rouge marque le total : 0, alors que le vecteur n'est pas nul."
+  ],
+  "a_voir": "Les deux carrés s'annulent et le total est 0."
+ },
+ {
+  "code": "75-011",
+  "a_dire": "La forme hermitienne est une autre règle qui donne 2 pour (1, i), au lieu de 0 avec les carrés.",
+  "legende_titre": "Deux règles pour le même vecteur",
+  "lecture": [
+   "En haut en rouge, la règle des carrés : 1 puis −1, total 0.",
+   "En bas en vert, la règle avec les conjugués : 1 puis 1, total 2, marqué par le disque vert sur la droite graduée."
+  ],
+  "a_voir": "La nouvelle règle donne 2 pour un vecteur non nul."
+ },
+ {
+  "code": "75-012",
+  "a_dire": "Le carré construit sur e et f a la même aire 1 que le parallélogramme construit sur ηe et ηf, même s'il paraît plus petit.",
+  "legende_titre": "Un carré et son image",
+  "lecture": [
+   "Le carré bleu est construit sur les flèches bleues e et f.",
+   "Le parallélogramme orange est construit sur les flèches orange ηe et ηf.",
+   "Les deux portent l'aire 1."
+  ],
+  "a_voir": "Le parallélogramme paraît plus grand, mais son aire est aussi 1."
+ },
+ {
+  "code": "75-013",
+  "a_dire": "La lettre η est le nom d'une transformation linéaire du plan, qui envoie e sur (2, 1) et f sur (1, 1).",
+  "legende_titre": "η, le nom d'une transformation",
+  "lecture": [
+   "À gauche, les flèches bleues e = (1, 0) et f = (0, 1).",
+   "La flèche orange au milieu porte le nom η.",
+   "À droite, leurs images : ηe = (2, 1) en orange et ηf = (1, 1) en violet."
+  ],
+  "a_voir": "η désigne la règle qui envoie e et f sur leurs images."
+ },
+ {
+  "code": "75-014",
+  "a_dire": "Les nombres a, b, c, d sont les coordonnées de ηe et de ηf sur e et f : ici 2, 1, 1, 1.",
+  "legende_titre": "Quatre nombres pour une transformation",
+  "lecture": [
+   "À gauche, la flèche orange ηe fait a = 2 pas sur e puis b = 1 pas sur f.",
+   "À droite, la flèche violette ηf fait c = 1 pas sur e puis d = 1 pas sur f."
+  ],
+  "a_voir": "Les quatre nombres 2, 1, 1, 1 disent où vont e et f."
+ },
+ {
+  "code": "75-015",
+  "a_dire": "L'aire du parallélogramme construit sur (a, b) et (c, d) se calcule par ad − bc, ici 2 − 1 = 1.",
+  "legende_titre": "Calculer l'aire avec quatre nombres",
+  "lecture": [
+   "Le parallélogramme vert est construit sur la flèche orange (2, 1) et la flèche violette (1, 1).",
+   "Les cases à droite donnent le calcul : ad = 2 en bleu, bc = 1 en orange, puis 2 − 1 = 1 en vert."
+  ],
+  "a_voir": "Quatre nombres et une soustraction donnent l'aire 1, sans mesurer."
+ },
+ {
+  "code": "75-016",
+  "a_dire": "L'aire orientée est l'aire avec un signe : plus si l'on tourne de la 1re à la 2e flèche dans le sens inverse des aiguilles, moins dans l'autre sens.",
+  "legende_titre": "Le signe vient du sens de rotation",
+  "lecture": [
+   "Dans les deux carrés, la 1re flèche est bleue et la 2e est orange.",
+   "À gauche, la flèche courbe verte tourne dans le sens inverse des aiguilles : +1.",
+   "À droite, la flèche courbe rouge tourne dans le sens des aiguilles : −1."
+  ],
+  "a_voir": "Même carré, mais le sens de rotation donne +1 ou −1."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+u = 12
+def sq(ox, oy): poly(ax, [(ox, oy), (ox + u, oy), (ox + u, oy + u), (ox, oy + u)], 'sujet')
+text(ax, 44, 72, 'doubler les positions', 'limite', 'm')
+sq(6, 52); text(ax, 12, 58, 'aire 1', 'sujet', 's')
+arrow(ax, (21, 58), (33, 58), 'varie')
+poly(ax, [(36, 52), (60, 52), (60, 64), (36, 64)], 'limite'); text(ax, 48, 58, 'aire 2', 'limite', 's')
+text(ax, 73, 58, 'non', 'limite', 'l')
+text(ax, 44, 36, 'mouvement libre de 2 s', 'resultat', 'm')
+sq(6, 16); text(ax, 12, 22, 'aire 1', 'sujet', 's')
+arrow(ax, (21, 22), (33, 22), 'varie')
+poly(ax, [(36, 16), (48, 16), (72, 28), (60, 28)][:2] + [(60, 28), (48, 28)], 'resultat') if False else poly(ax, [(36, 16), (48, 16), (72, 28), (60, 28)], 'resultat')
+text(ax, 54, 22, 'aire 1', 'resultat', 's'); text(ax, 81, 22, 'oui', 'resultat', 'l')
+save(fig, '75-007')

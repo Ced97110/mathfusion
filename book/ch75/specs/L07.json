@@ -1,0 +1,187 @@
+[
+ {
+  "code": "75-097",
+  "a_dire": "La flèche verticale (0, 0, 1) a une aire nulle avec toutes les autres flèches : cette forme est dégénérée.",
+  "legende_titre": "La flèche verticale et son ombre",
+  "lecture": [
+   "La flèche bleue est la flèche verticale (0, 0, 1) ; son ombre sur le plan gris est un point.",
+   "La flèche orange (1, 2, 3) a une ombre, tracée en pointillé puis en flèche sur le plan.",
+   "Le cadre vert donne le calcul : 0 fois 2 moins 0 fois 1 égale 0."
+  ],
+  "a_voir": "Une ombre réduite à un point ne forme aucune aire."
+ },
+ {
+  "code": "75-098",
+  "a_dire": "Après avoir retiré un plan, il reste une droite portée par w, et B(w, w) = 0 place w dans le noyau.",
+  "legende_titre": "Le plan retiré, la droite qui reste",
+  "lecture": [
+   "Le losange bleu est le plan retiré, de deux dimensions, avec ses deux flèches e et f.",
+   "La flèche orange est la droite qui reste, portée par w.",
+   "Le premier cadre vert est l'étape décisive B(w, w) = 0, vraie parce que B est alternée.",
+   "Le second cadre vert est la conclusion : w est dans le noyau."
+  ],
+  "a_voir": "La droite restante ne peut pas avoir d'aire avec elle-même."
+ },
+ {
+  "code": "75-099",
+  "a_dire": "Le mot « alternée » est nécessaire : le produit scalaire n’est pas alterné et n’est pas dégénéré.",
+  "legende_titre": "Sans « alternée », la conclusion tombe",
+  "lecture": [
+   "Le cadre vert à gauche est la forme alternée, en dimension 3 : la flèche w a un nombre zéro avec elle-même, donc la forme est dégénérée.",
+   "Le cadre rouge à droite est le produit scalaire, aussi en dimension 3 : la flèche verticale w a 1 avec elle-même, un nombre non nul.",
+   "Dans le cadre rouge, aucune flèche non nulle n'est nulle avec toutes les autres : il n'est pas dégénéré."
+  ],
+  "a_voir": "Le cas rouge casse la conclusion parce que la forme n'est pas alternée."
+ },
+ {
+  "code": "75-100",
+  "a_dire": "Pour une matrice de taille impaire telle que A transposée égale moins A, le déterminant vaut 0, à condition de pouvoir diviser par 1 + 1.",
+  "legende_titre": "Du déterminant égal à son opposé au déterminant nul",
+  "lecture": [
+   "Les cadres bleus sont les étapes de départ : A transposée égale moins A, puis det A égale moins det A.",
+   "Les flèches orange mènent d’une étape à l’autre, avec m impair.",
+   "La flèche verte est la division par 1 + 1, qui donne det A égale 0 dans le cadre vert.",
+   "Le cadre rouge en bas dit que si 1 + 1 égale 0, on ne peut pas diviser."
+  ],
+  "a_voir": "Sans 1 + 1 différent de 0, l’égalité det A = −det A ne prouve rien."
+ },
+ {
+  "code": "75-101",
+  "a_dire": "Dans une matrice antisymétrique, chaque nombre est l’opposé de son symétrique par rapport à la diagonale.",
+  "legende_titre": "Chaque nombre face à son opposé",
+  "lecture": [
+   "Le tableau est la matrice A ; ligne i, colonne j.",
+   "Les deux cases orange, 1 et −1, sont placées de part et d’autre de la diagonale ; la double flèche les relie.",
+   "Les cases bleues de la diagonale valent 0.",
+   "Les valeurs B(e_i, e_j) et B(e_j, e_i) sont opposées, ce qui s’écrit A transposée égale moins A."
+  ],
+  "a_voir": "Échanger lignes et colonnes change chaque nombre en son opposé."
+ },
+ {
+  "code": "75-102",
+  "a_dire": "Multiplier une matrice de taille m par −1 change le signe de m lignes, donc multiplie le déterminant par (−1) puissance m.",
+  "legende_titre": "Un changement de signe par ligne",
+  "lecture": [
+   "La colonne de gauche montre m = 2 : deux lignes multipliées par −1, produit égal à 1.",
+   "La colonne de droite montre m = 3 : trois lignes multipliées par −1, produit égal à −1.",
+   "Chaque cadre orange est une ligne dont on change le signe."
+  ],
+  "a_voir": "Le facteur vaut 1 si m est pair et −1 si m est impair."
+ },
+ {
+  "code": "75-103",
+  "a_dire": "Sur un corps à q éléments, un vecteur à n coordonnées a q choix par coordonnée, donc il y a q puissance n vecteurs.",
+  "legende_titre": "Compter les vecteurs du plan à 3 éléments",
+  "lecture": [
+   "Chaque disque bleu est un vecteur à 2 coordonnées.",
+   "Les nombres orange 0, 1, 2 en bas sont les 3 choix de la première coordonnée.",
+   "Les nombres orange à gauche sont les 3 choix de la seconde coordonnée.",
+   "Le résultat vert est q puissance n, soit 3 au carré, c’est-à-dire 9."
+  ],
+  "a_voir": "Les 9 disques forment 3 colonnes de 3."
+ },
+ {
+  "code": "75-104",
+  "a_dire": "Compter les tableaux inversibles revient à compter les bases formées par leurs colonnes.",
+  "legende_titre": "Un tableau et une base sont le même objet",
+  "lecture": [
+   "À gauche, le tableau a deux colonnes : u1 en bleu, u2 en orange.",
+   "À droite, le cadre vert nomme la base (u1, u2) formée par ces colonnes.",
+   "Le signe égal relie le tableau et la base.",
+   "En bas : 3 choix de u1, 2 choix de u2, soit 6."
+  ],
+  "a_voir": "Un tableau inversible est déterminé par ses colonnes, qui forment une base."
+ },
+ {
+  "code": "75-105",
+  "a_dire": "L’arbre de F2² a 3 choix pour u1, puis 2 choix pour u2 à chaque fois, soit 6 bases.",
+  "legende_titre": "L’arbre des 6 bases",
+  "lecture": [
+   "Le rond gris à gauche est le départ.",
+   "Les trois cadres bleus sont les choix de u1 : 1, 0 puis 0, 1 puis 1, 1.",
+   "De chacun partent deux branches orange vers les choix de u2.",
+   "Les 6 cadres orange à droite sont les 6 bases."
+  ],
+  "a_voir": "Le nombre de choix de u2 est 2 quel que soit u1."
+ },
+ {
+  "code": "75-106",
+  "a_dire": "Pour u1, on choisit parmi les q puissance n vecteurs sauf le vecteur nul : q puissance n moins 1 choix.",
+  "legende_titre": "Tous les vecteurs sauf un",
+  "lecture": [
+   "Les 9 disques sont les vecteurs de l’espace.",
+   "Le disque rouge barré en bas à gauche est le vecteur nul, exclu.",
+   "Les 8 disques verts sont les choix possibles pour u1."
+  ],
+  "a_voir": "On retire un seul vecteur : le vecteur nul."
+ },
+ {
+  "code": "75-107",
+  "a_dire": "Pour u2, on retire toute la droite engendrée par u1, soit q points, et il reste q puissance n moins q choix.",
+  "legende_titre": "On retire une droite entière",
+  "lecture": [
+   "Le disque bleu est u1 = (1, 0).",
+   "Les trois disques rouges alignés avec lui sont les multiples de u1 : la droite de u1.",
+   "Les 6 disques verts sont les choix possibles pour u2."
+  ],
+  "a_voir": "Il faut retirer q points, pas seulement 0 et u1."
+ },
+ {
+  "code": "75-108",
+  "a_dire": "Pour u3, on retire le plan engendré par u1 et u2, soit q au carré points, et il reste q puissance n moins q au carré choix.",
+  "legende_titre": "On retire un plan entier",
+  "lecture": [
+   "Chaque carré de 4 disques est une valeur de la 3e coordonnée : 0 à gauche, 1 à droite.",
+   "Les disques rouges du carré de gauche sont le plan de u1 et u2, avec u1 et u2 en bleu.",
+   "Les 4 disques verts à droite sont les choix possibles pour u3."
+  ],
+  "a_voir": "Le plan engendré contient q au carré points à retirer."
+ },
+ {
+  "code": "75-109",
+  "a_dire": "Pour la dernière colonne, on retire q puissance n−1 points ; avec une colonne de plus, tout l’espace est retiré et il reste 0 choix.",
+  "legende_titre": "La dernière colonne, puis une de plus",
+  "lecture": [
+   "À gauche, la droite pointillée rouge de u1 retire 2 disques : il en reste 2 verts pour la dernière colonne.",
+   "À droite, les 4 disques sont rouges : les colonnes déjà choisies engendrent tout le plan.",
+   "Sous chaque côté, le calcul : 4 moins 2 égale 2 ; 4 moins 4 égale 0."
+  ],
+  "a_voir": "Après n colonnes, il ne reste aucun vecteur pour une colonne de plus."
+ },
+ {
+  "code": "75-110",
+  "a_dire": "La formule est le produit, colonne par colonne, du nombre de vecteurs encore permis ; ici 24 fois 20 égale 480.",
+  "legende_titre": "Un facteur par colonne",
+  "lecture": [
+   "La barre bleue représente les 25 vecteurs.",
+   "Dans la première barre, 1 vecteur rouge est retiré : 24 choix verts pour u1.",
+   "Dans la seconde barre, 5 vecteurs rouges sont retirés : 20 choix verts pour u2.",
+   "Le produit en bas donne 24 fois 20 égale 480."
+  ],
+  "a_voir": "Chaque colonne ajoute un facteur égal à ses choix possibles."
+ },
+ {
+  "code": "75-111",
+  "a_dire": "La formule donne 3 fois 2 égale 6, comme les 6 feuilles de l’arbre.",
+  "legende_titre": "Le produit 3 fois 2 et les 6 bases",
+  "lecture": [
+   "Les trois cadres bleus sont les 3 choix de u1.",
+   "Chaque cadre bleu porte 2 branches orange vers 2 ronds : les 2 choix de u2.",
+   "Les 6 ronds orange sont les 6 bases.",
+   "Le résultat vert 3 fois 2 égale 6 retrouve les 6 feuilles de l’arbre."
+  ],
+  "a_voir": "Le facteur 3 et le facteur 2 donnent le même total que l’arbre."
+ },
+ {
+  "code": "75-112",
+  "a_dire": "La formule donne 8 fois 6 égale 48 tableaux inversibles, sans les compter un par un.",
+  "legende_titre": "8 fois 6 en un rectangle",
+  "lecture": [
+   "Le rectangle vert contient 48 cases.",
+   "L’accolade bleue au-dessus compte 8 colonnes : les 8 choix de u1.",
+   "Le texte orange à gauche donne 6 lignes : les 6 choix de u2.",
+   "Le produit en bas dit 8 fois 6 égale 48."
+  ],
+  "a_voir": "Le produit des deux nombres de choix est le nombre de cases du rectangle."
+ }
+]

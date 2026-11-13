@@ -1,0 +1,193 @@
+[
+ {
+  "code": "75-065",
+  "a_dire": "Le signe U(n) se lit « U n » : U nomme le groupe unitaire, n est le nombre de coordonnées complexes, et le groupe garde H.",
+  "legende_titre": "Lire le signe U(n)",
+  "lecture": [
+   "La lettre bleue U nomme le groupe unitaire.",
+   "Le nombre orange n est le nombre de coordonnées complexes.",
+   "La case verte dit ce que contient le groupe : les transformations η qui gardent H."
+  ],
+  "a_voir": "Chaque morceau du signe a son sens, et le groupe garde H."
+ },
+ {
+  "code": "75-066",
+  "a_dire": "On construit le groupe symplectique dans l'ordre : le corps F, l'espace V, l'aire B, puis le groupe.",
+  "legende_titre": "Dans quel ordre on construit",
+  "lecture": [
+   "La case grise du bas est le corps F, les nombres.",
+   "La case bleue est l'espace V construit sur F.",
+   "La case orange est l'aire B construite sur V.",
+   "La case verte du haut est le groupe : on garde les transformations qui ne changent pas B."
+  ],
+  "a_voir": "Chaque étape dépend de celle du dessous, on monte du corps vers le groupe."
+ },
+ {
+  "code": "75-067",
+  "a_dire": "Pour calculer B(ηe, ηf), on développe en quatre termes ; B alternée annule deux termes et il reste 2 − 1 = 1.",
+  "legende_titre": "Développer l'aire des deux images",
+  "lecture": [
+   "En haut, l'aire de 2e+f et e+f.",
+   "Les quatre cases sont les quatre termes obtenus en développant.",
+   "Les deux cases grises valent 0 car B est alternée.",
+   "Les cases bleues valent 2 et −1 ; la case verte donne le total 1."
+  ],
+  "a_voir": "Les deux termes avec une flèche répétée disparaissent."
+ },
+ {
+  "code": "75-068",
+  "a_dire": "B(ηe, ηf) vaut ad − bc ; la forme du calcul reste la même, seule la valeur change selon a, b, c, d.",
+  "legende_titre": "Même calcul, trois cas",
+  "lecture": [
+   "Chaque ligne donne les quatre nombres a, b, c, d.",
+   "La case bleue est le produit a × d.",
+   "La case orange est le produit b × c.",
+   "La case de droite est la différence : 1, 1 puis 2."
+  ],
+  "a_voir": "On retire la case orange de la case bleue ; la valeur change d'une ligne à l'autre."
+ },
+ {
+  "code": "75-069",
+  "a_dire": "En dimension 2, les groupes Sp et SL ont autant d'éléments (6) ; en dimension 4 ils diffèrent (720 et 20 160), donc l'égalité tient à la dimension 2.",
+  "legende_titre": "Quand l'égalité tient-elle ?",
+  "lecture": [
+   "La case bleue compte les éléments du groupe Sp.",
+   "La case violette compte les éléments du groupe SL.",
+   "En dimension 2, le signe vert « = » : 6 et 6.",
+   "En dimension 4, le signe rouge « ≠ » : 720 et 20 160."
+  ],
+  "a_voir": "L'égalité n'est vraie qu'en dimension 2."
+ },
+ {
+  "code": "75-070",
+  "a_dire": "Un cisaillement fait glisser chaque point parallèlement à une direction fixe, d'autant plus que le point est haut ; le bas ne bouge pas.",
+  "legende_titre": "Un carré qui glisse",
+  "lecture": [
+   "Le carré gris est la forme de départ.",
+   "Le parallélogramme bleu est la forme après glissement.",
+   "Les flèches orange montrent de combien glisse chaque hauteur : 1 puis 2.",
+   "La droite grise du bas ne bouge pas."
+  ],
+  "a_voir": "Plus le point est haut, plus il glisse, et le bas reste en place."
+ },
+ {
+  "code": "75-071",
+  "a_dire": "On calcule τ(x) en quatre actions : B(x,u), fois c, fois u, puis on ajoute à x ; ici on obtient (3, 1).",
+  "legende_titre": "Calculer la transvection pas à pas",
+  "lecture": [
+   "La formule est écrite en haut, avec les données de la fiche.",
+   "La case bleue calcule l'aire B(x,u) : −1.",
+   "Les deux cases orange multiplient par c puis par u.",
+   "La case verte ajoute à x et donne le point (3, 1)."
+  ],
+  "a_voir": "Lis les cases de bas en haut, d'abord, puis, puis, enfin."
+ },
+ {
+  "code": "75-072",
+  "a_dire": "Dans la formule, x glisse dans la direction u, de la longueur c B(x,u) qui dépend de x.",
+  "legende_titre": "Direction et longueur du glissement",
+  "lecture": [
+   "La flèche bleue du bas est la direction u.",
+   "Les deux points orange sont les points de départ, de coordonnées 1 et 0,5.",
+   "Les flèches orange donnent le glissement : 2 et 1.",
+   "Les points verts sont les arrivées."
+  ],
+  "a_voir": "La direction est la même, la longueur change avec le point."
+ },
+ {
+  "code": "75-073",
+  "a_dire": "Un point dont l'aire avec u est nulle ne bouge pas : ces points forment toute la droite portée par u.",
+  "legende_titre": "Les points qui ne bougent pas",
+  "lecture": [
+   "La droite grise est celle où B(x,u) vaut 0.",
+   "La flèche bleue est la direction u ; son bout reste en place.",
+   "Le point vert (3, 0) ne bouge pas.",
+   "Le point orange (3, 1) glisse vers le point violet."
+  ],
+  "a_voir": "Toute la droite reste en place, les autres points bougent."
+ },
+ {
+  "code": "75-074",
+  "a_dire": "Une transvection symplectique glisse chaque point dans la direction u et garde l'aire B.",
+  "legende_titre": "Un glissement qui garde l'aire",
+  "lecture": [
+   "Le carré gris est la forme avant, d'aire 1.",
+   "Le parallélogramme bleu est la forme après, d'aire 1.",
+   "La flèche orange est le glissement.",
+   "La flèche bleue est la direction u."
+  ],
+  "a_voir": "Les deux formes ont la même aire."
+ },
+ {
+  "code": "75-075",
+  "a_dire": "Avec la direction e et c = −2, la transvection est le mouvement libre de 2 secondes : la position devient position + 2 × vitesse.",
+  "legende_titre": "Deux secondes de mouvement libre",
+  "lecture": [
+   "L'axe du bas est la position, l'axe vertical est la vitesse.",
+   "Le point bleu (1, 1) est la bille au départ.",
+   "La flèche orange est le mouvement de 2 secondes.",
+   "Le point vert (3, 1) est la bille après : même vitesse, position 3."
+  ],
+  "a_voir": "La bille avance de 2 × sa vitesse."
+ },
+ {
+  "code": "75-076",
+  "a_dire": "La transvection garde B : l'aire de x et y vaut 5 avant et 5 après, donc elle est dans le groupe Sp.",
+  "legende_titre": "L'aire avant et après",
+  "lecture": [
+   "Le parallélogramme bleu du haut est construit sur x et y : aire 5.",
+   "La flèche orange est la transvection.",
+   "Le parallélogramme vert du bas est construit sur τx et τy : aire 5.",
+   "Les deux aires sont égales."
+  ],
+  "a_voir": "Le parallélogramme change de forme, pas d'aire."
+ },
+ {
+  "code": "75-077",
+  "a_dire": "Deux transvections de même direction u se composent en additionnant les paramètres ; avec des directions différentes, il n'y a plus de somme.",
+  "legende_titre": "Composer deux glissements",
+  "lecture": [
+   "En haut, la flèche orange est le glissement τ(u, c) et la flèche violette est τ(u, c′), bout à bout, de même direction u.",
+   "L'accolade verte est τ(u, c + c′) : un seul glissement, de paramètre c + c′.",
+   "En bas, les glissements τ(e, 1) et τ(f, 1) ont des directions différentes.",
+   "La case rouge dit qu'il n'y a pas de somme."
+  ],
+  "a_voir": "Les paramètres s'additionnent seulement si les directions sont les mêmes."
+ },
+ {
+  "code": "75-078",
+  "a_dire": "Conjuguer un glissement de direction u par η donne le glissement de direction ηu, avec le même paramètre c.",
+  "legende_titre": "Changer de direction par conjugaison",
+  "lecture": [
+   "En haut, les trois flèches orange sont η⁻¹, puis le glissement, puis η.",
+   "La flèche violette courbe est le glissement de direction ηu.",
+   "Les deux chemins vont du point (3, 1) au point vert (3, 4).",
+   "En bas, la flèche bleue u devient la flèche violette ηu par η."
+  ],
+  "a_voir": "Les deux chemins arrivent au même point."
+ },
+ {
+  "code": "75-079",
+  "a_dire": "Toute transformation symplectique est un produit de transvections ; sans « symplectique », la phrase est fausse.",
+  "legende_titre": "Pourquoi l'hypothèse est nécessaire",
+  "lecture": [
+   "En haut, des glissements verts gardent l'aire 1.",
+   "En bas, la flèche rouge double les positions.",
+   "Le rectangle rouge a une aire 2, pas 1.",
+   "Ce n'est donc pas un produit de glissements."
+  ],
+  "a_voir": "Il faut garder l'aire pour être un produit de transvections."
+ },
+ {
+  "code": "75-080",
+  "a_dire": "La preuve règle une paire à la fois : on envoie la paire (u, v) sur la paire voulue, puis on recommence dans le reste, de dimension 2 de moins.",
+  "legende_titre": "Une paire après l'autre",
+  "lecture": [
+   "La case bleue en haut à gauche est la première paire à régler.",
+   "La case grise est le reste, de dimension 2.",
+   "La flèche orange est l'étape qui envoie (u, v) sur (u′, v′).",
+   "Les cases vertes sont les paires réglées : 2 tours pour 4 dimensions."
+  ],
+  "a_voir": "Chaque tour règle une paire."
+ }
+]

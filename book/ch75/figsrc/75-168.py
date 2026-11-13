@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+ox, oy, u = 30, 37, 22
+P = lambda x, y: (ox + x*u, oy + y*u)
+arrow(ax, (ox-12, oy), (ox+38, oy), 'fixe', lw=0.9)
+text(ax, ox-12, oy+4, 'axe réel', 'fixe', 's', ha='left')
+for y, r in ((1, 'resultat'), (-1, 'limite')):
+    arrow(ax, (ox, oy), P(0, y), r, lw=1.3)
+arrow(ax, (ox, oy), P(1, 0), 'sujet', lw=1.3)
+text(ax, P(1, 0)[0]+3, oy-3.5, '1', 'sujet', 'm')
+text(ax, ox-4, P(0, 1)[1], '$i$', 'resultat', 'm')
+text(ax, ox-5, P(0, -1)[1], '$-i$', 'limite', 'm')
+line(ax, [P(0, 1), (ox+30, P(0, 1)[1])], 'fixe', dash=True, lw=0.6); line(ax, [P(0, -1), (ox+30, P(0, -1)[1])], 'fixe', dash=True, lw=0.6)
+arrow(ax, (ox+30, P(0, .95)[1]), (ox+30, P(0, -.95)[1]), 'varie', both=True)
+text(ax, ox+32, oy+3, r'$z\mapsto\bar z$', 'varie', 'm', ha='left')
+text(ax, ox+32, oy-3, 'symétrie', 'varie', 's', ha='left')
+text(ax, 72, 63, 'paire (1 ; $i$)', 'resultat', 's'); text(ax, 72, 57, 'aire +1', 'resultat', 'm', weight='bold')
+text(ax, 72, 17, 'paire (1 ; $-i$)', 'limite', 's'); text(ax, 72, 11, 'aire −1', 'limite', 'm', weight='bold')
+text(ax, 30, 4, r'$\bar z$ n’est pas dans $U(1)$', 'limite', 's')
+save(fig, '75-168')

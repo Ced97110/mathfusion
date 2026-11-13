@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 4, 6, 80, 46, 'fixe', label=None)
+text(ax, 20, 47, r'$GL_n$', 'fixe', 'm')
+box(ax, 8, 10, 42, 30, 'resultat')
+text(ax, 29, 35, r'$SL_n$', 'resultat', 'm')
+disc(ax, 17, 22, 3, 'resultat'); text(ax, 36, 22, r'$\det=1$', 'resultat', 's')
+disc(ax, 58, 22, 3, 'varie'); text(ax, 70, 30, r'$\det=2$', 'varie', 's')
+text(ax, 29, 14, r'$2\times1-1\times1=1$', 'resultat', 's')
+save(fig, '75-061')
