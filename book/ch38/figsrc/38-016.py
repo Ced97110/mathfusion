@@ -1,0 +1,30 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+import math
+fig, ax = canvas(56)
+ta, tb = math.tan(math.radians(18)), math.tan(math.radians(21.25))
+gy = 24
+A = (10, gy); H = (80, gy)
+hh = (H[0] - A[0]) * ta
+B = (H[0] - hh / tb, gy)
+S = (H[0], gy + hh)
+line(ax, [A, H], 'fixe', lw=1.0)
+poly(ax, [A, B, S], 'fixe')
+line(ax, [A, S], 'sujet', lw=1.3)
+line(ax, [B, S], 'varie', lw=1.6)
+ax.add_patch(Arc(A, 14, 14, theta1=0, theta2=18, ec=COL['sujet'], lw=1.2, zorder=3))
+ax.add_patch(Arc(B, 22, 22, theta1=0, theta2=21.25, ec=COL['varie'], lw=1.4, zorder=3))
+disc(ax, A[0], A[1], 1.2, 'sujet')
+disc(ax, B[0], B[1], 1.2, 'varie')
+disc(ax, S[0], S[1], 1.2, 'sujet')
+disc(ax, H[0], H[1], 1.2, 'fixe')
+text(ax, A[0], gy - 4, '$A$', 'sujet', 's')
+text(ax, B[0], gy - 4, '$B$', 'varie', 's')
+text(ax, H[0], gy - 4, '$H$', 'fixe', 's')
+text(ax, S[0], S[1] + 4, '$S$', 'sujet', 's')
+text(ax, 12, 12, r'$\alpha$ = 18° (en $A$)', 'sujet', 's', ha='left')
+text(ax, 12, 6, r'$\beta$ = 21,25° (en $B$)', 'varie', 's', ha='left')
+text(ax, 44, 50, r'plus près : $\beta > \alpha$', 'varie', 's')
+arrow(ax, (B[0] + 20, gy - 5), (H[0] - 3, gy - 5), 'fixe', lw=0.8)
+text(ax, B[0] + 33, gy - 8.5, 'direction $BH$', 'fixe', 's')
+save(fig, '38-016')

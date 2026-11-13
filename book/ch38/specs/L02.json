@@ -1,0 +1,282 @@
+[
+ {
+  "code": "38-025",
+  "a_dire": "On choisit la loi d'après ce qu'on connaît : un côté et les angles donnent la loi des sinus, deux côtés et l'angle entre eux donnent la loi des cosinus.",
+  "legende_titre": "Quelle loi pour quel triangle",
+  "lecture": [
+   "Le triangle bleu a un côté de 200 m et deux angles marqués par des arcs : il va vers la case bleue.",
+   "Le triangle violet a deux côtés de 269,5 m et 347,4 m et l'angle de 30° entre eux : il va vers la case violette.",
+   "Sous chaque triangle, une phrase dit ce qu'on connaît ; la flèche mène à la loi qui convient."
+  ],
+  "a_voir": "Ce qu'on connaît décide de la loi, pas ce qu'on cherche."
+ },
+ {
+  "code": "38-026",
+  "a_dire": "La lettre θ se lit « thêta » et nomme l'angle entre l'horizontale et la visée du sommet de la tour.",
+  "legende_titre": "Un nom pour l'angle de visée",
+  "lecture": [
+   "La droite grise en pointillés est l'horizontale qui part de vous.",
+   "La droite bleue va de vous au sommet de la tour : c'est la visée.",
+   "L'arc orange entre les deux est l'angle, écrit θ = 40°."
+  ],
+  "a_voir": "θ est l'angle entre l'horizontale et la visée, et la figure ne donne aucune distance."
+ },
+ {
+  "code": "38-027",
+  "a_dire": "Pour un pied accessible : on mesure d et θ, puis on multiplie d par la tangente de θ pour obtenir h.",
+  "legende_titre": "La hauteur à partir d'une distance et d'un angle",
+  "lecture": [
+   "Le triangle bleu est rectangle en bas à droite, au pied de la tour.",
+   "Le côté gris du bas est la distance d = 50 m, et l'arc orange est l'angle θ = 40°.",
+   "Le côté vertical vert est la hauteur h, environ 41,95 m.",
+   "La case du bas écrit le calcul : 50 × 0,8391."
+  ],
+  "a_voir": "Le côté opposé à θ est h et le côté adjacent est d."
+ },
+ {
+  "code": "38-028",
+  "a_dire": "Le nombre de triangles dépend de ce qu'on a mesuré : avec la distance au pied, un triangle suffit ; sans elle, il en faut deux.",
+  "legende_titre": "Un triangle ou deux",
+  "lecture": [
+   "À gauche, la tour : un seul triangle bleu, car les 50 m jusqu'au pied sont mesurés.",
+   "À droite, la montagne : deux triangles, un violet et un bleu.",
+   "Le trait gris en pointillés sous le sol va du second point au pied : il est dans la roche et n'est pas mesuré."
+  ],
+  "a_voir": "La distance au pied manque pour la montagne, donc un premier triangle sert à la remplacer."
+ },
+ {
+  "code": "38-029",
+  "a_dire": "On procède en deux triangles : ABS (loi des sinus) donne la visée BS, puis le triangle rectangle BHS donne la hauteur, et le calcul s'arrête.",
+  "legende_titre": "Deux triangles pour une hauteur",
+  "lecture": [
+   "Le triangle violet ABS a pour côté la base de 1 000 m ; il donne BS, environ 5 451 m.",
+   "Le triangle bleu BHS est rectangle en H ; il donne h, environ 1 976 m.",
+   "Les angles valent 18° en A et 21,25° en B.",
+   "Les deux cases du bas disent ce que donne chaque triangle."
+  ],
+  "a_voir": "Le calcul s'arrête au triangle rectangle dont on connaît un angle et un côté."
+ },
+ {
+  "code": "38-030",
+  "a_dire": "L'angle intérieur en B vaut 180° moins β, parce que les deux angles posés sur une droite font 180° à eux deux.",
+  "legende_titre": "Compléter β jusqu'à 180°",
+  "lecture": [
+   "La droite grise passe par B : les deux directions opposées font 180°.",
+   "L'arc orange est β = 21,25°, mesuré du côté du sol qui va vers la montagne.",
+   "L'arc vert est l'angle intérieur, 158,75°, de l'autre côté de la visée.",
+   "En bas, 21,25° + 158,75° = 180° ; avec β = 30°, on obtient 150°."
+  ],
+  "a_voir": "Quand β change, l'autre angle change aussi et la somme reste 180°."
+ },
+ {
+  "code": "38-031",
+  "a_dire": "L'angle en S vaut β − α : on retranche les deux autres angles de 180°, les deux 180° s'annulent, et il reste β − α.",
+  "legende_titre": "L'angle qui reste au sommet",
+  "lecture": [
+   "Le triangle violet a 18° au premier point et 158,75° au second point (arc vert).",
+   "L'angle au sommet S est étroit : 3,25°, en orange.",
+   "La première ligne du bas retire 18 et 158,75 de 180 et trouve 3,25.",
+   "La deuxième ligne fait 21,25 − 18 et trouve aussi 3,25."
+  ],
+  "a_voir": "Les deux calculs donnent 3,25 : l'angle en S vaut β − α."
+ },
+ {
+  "code": "38-032",
+  "a_dire": "BS = d sin α / sin(β − α) : BS reste proportionnel à d, et le rapport BS / d vaut environ 5,451 quelle que soit la base.",
+  "legende_titre": "De la base à la visée",
+  "lecture": [
+   "La case bleue du haut est la formule de BS.",
+   "Chaque case grise « d » est une base : 1 000 m, puis 2 000 m.",
+   "Chaque barre verte est la visée BS qui lui correspond : environ 5 451 m, puis 10 901 m.",
+   "Chaque flèche orange multiplie la base par 5,451, qui vient de sin 18° / sin 3,25°."
+  ],
+  "a_voir": "Les barres vertes sont toujours 5,451 fois les cases grises."
+ },
+ {
+  "code": "38-033",
+  "a_dire": "Dans le triangle rectangle BHS, sin β = h / BS, donc h = BS sin β : on multiplie la visée par le sinus de β.",
+  "legende_titre": "De la visée à la hauteur",
+  "lecture": [
+   "Le triangle bleu est rectangle en H.",
+   "Le côté orange est la visée BS, environ 5 451 m, en face de l'angle droit.",
+   "L'arc orange est β = 21,25°, et le côté vertical vert est h, environ 1 976 m.",
+   "Le calcul écrit : 5 451 × 0,36244 donne environ 1 976 m."
+  ],
+  "a_voir": "Le côté vert est en face de β : h est le côté opposé, BS le plus long côté."
+ },
+ {
+  "code": "38-034",
+  "a_dire": "La formule de la hauteur est h = d sin α sin β / sin(β − α) : si la base double et que les angles restent les mêmes, la hauteur double.",
+  "legende_titre": "La hauteur suit la base",
+  "lecture": [
+   "La case bleue du haut écrit la formule de h.",
+   "À gauche, une base grise de 1 000 m et une barre verte pour h, environ 1 976 m.",
+   "À droite, une base grise deux fois plus longue, 2 000 m, et une barre verte deux fois plus haute, environ 3 951 m.",
+   "La flèche orange marque le × 2 ; les angles sont les mêmes."
+  ],
+  "a_voir": "La barre verte de droite est deux fois la barre de gauche."
+ },
+ {
+  "code": "38-035",
+  "a_dire": "La lettre d désigne la base AB, mesurée au ruban : ici 1 000 m.",
+  "legende_titre": "Un nom pour la base",
+  "lecture": [
+   "Les deux disques bleus A et B sont les deux points de la plaine.",
+   "La flèche à double pointe est le ruban tendu entre eux.",
+   "Le grand texte bleu donne sa longueur : d = 1 000 m.",
+   "La phrase du haut dit que d remplace « longueur de AB »."
+  ],
+  "a_voir": "d est la longueur du segment AB, tendu au ruban."
+ },
+ {
+  "code": "38-036",
+  "a_dire": "La lettre α se lit « alpha » et désigne l'élévation en A : l'angle entre le sol et la visée du sommet depuis A, ici 18°.",
+  "legende_titre": "Un nom pour l'angle en A",
+  "lecture": [
+   "La droite grise est le sol, et le disque bleu A est le premier point.",
+   "La droite bleue est la visée AS vers le sommet S.",
+   "L'arc orange est l'angle entre le sol et la visée : α = 18°."
+  ],
+  "a_voir": "α est l'angle mesuré en A, entre le sol et la visée du sommet."
+ },
+ {
+  "code": "38-037",
+  "a_dire": "La lettre β désigne l'élévation en B, ici 21,25° ; la même lettre apparaît deux fois dans la formule, dans sin β et dans β − α.",
+  "legende_titre": "Une lettre, deux endroits",
+  "lecture": [
+   "À gauche, le violet montre B, la visée vers le sommet S et l'arc β = 21,25°.",
+   "En haut à droite, la case sin β : β est en haut de la fraction.",
+   "En bas à droite, la case β − α : β est en bas de la fraction.",
+   "Les deux flèches violettes partent des cases et vont vers la même visée."
+  ],
+  "a_voir": "Les deux cases désignent le même nombre, 21,25°."
+ },
+ {
+  "code": "38-038",
+  "a_dire": "β − α se lit « bêta moins alpha » : c'est l'angle en S, 3,25°, et on soustrait avant de prendre le sinus.",
+  "legende_titre": "Lire β − α",
+  "lecture": [
+   "Le triangle vert étroit a pour points A, B et le sommet S ; l'angle en S est 3,25°.",
+   "Les angles de départ sont 18° en A et 21,25° en B, et 21,25° − 18° = 3,25°.",
+   "La case verte calcule le sinus de 3,25° : environ 0,05669.",
+   "La case rouge montre le faux calcul, sinus de β moins sinus de α : environ 0,05342."
+  ],
+  "a_voir": "Les deux nombres sont différents : on ne retire pas deux sinus."
+ },
+ {
+  "code": "38-039",
+  "a_dire": "BS est la longueur de la visée de B au sommet, environ 5 451 m : un nombre intermédiaire, donné par le premier triangle et employé par le second pour trouver h.",
+  "legende_titre": "La visée, un nombre en route",
+  "lecture": [
+   "Dans le triangle gris, le trait bleu épais est BS, environ 5 451 m.",
+   "Le côté vertical en pointillés est h, qui n'est pas encore connu.",
+   "En bas, le triangle ABS donne BS, et BS sert ensuite à trouver h."
+  ],
+  "a_voir": "BS n'est pas le résultat : c'est le nombre qui mène à h."
+ },
+ {
+  "code": "38-040",
+  "a_dire": "La lettre h désigne la hauteur SH, la longueur cherchée : on la calcule à partir de d, α et β, qui sont mesurés.",
+  "legende_titre": "La hauteur, un nombre calculé",
+  "lecture": [
+   "À gauche, la flèche verte va de H, le pied, à S, le sommet : c'est h = SH.",
+   "Les trois cases grises à droite sont les nombres mesurés : d, α et β.",
+   "La flèche orange mène à la case verte : h vaut environ 1 976 m."
+  ],
+  "a_voir": "h est seule dans la case verte : on ne la mesure pas, on la calcule."
+ },
+ {
+  "code": "38-041",
+  "a_dire": "Dans la formule de h, d est la seule longueur : avec les mêmes angles, si la base double, la hauteur double.",
+  "legende_titre": "Agrandir la figure entière",
+  "lecture": [
+   "À gauche, la figure pour une base de 1 000 m : la hauteur verte vaut environ 1 976 m.",
+   "À droite, la même figure agrandie deux fois, avec une base de 2 000 m : la hauteur verte vaut environ 3 951 m.",
+   "Les angles sont identiques dans les deux figures : 18° et 21,25°.",
+   "La flèche orange du haut marque l'agrandissement × 2."
+  ],
+  "a_voir": "Les deux triangles ont la même forme ; seule leur taille change."
+ },
+ {
+  "code": "38-042",
+  "a_dire": "Le quotient sin α / sin(β − α) transforme la base d en la visée BS ; il vaut environ 5,451 et ne dépend que des angles.",
+  "legende_titre": "Un quotient qui change la base",
+  "lecture": [
+   "En haut, la case grise est la base de 1 000 m, la case orange est le quotient, la case bleue est la visée de 5 451 m.",
+   "Le quotient vaut 5,451 pour 18° et 21,25°.",
+   "Dessous, le triangle ABS est tracé à l'échelle : le petit trait gris est la base d, le long trait bleu est la visée BS."
+  ],
+  "a_voir": "La visée est 5,451 fois plus longue que la base."
+ },
+ {
+  "code": "38-043",
+  "a_dire": "Le facteur sin β transforme la visée oblique BS en hauteur verticale h ; il vaut environ 0,36244 et h est plus petite que BS.",
+  "legende_titre": "De la visée oblique à la verticale",
+  "lecture": [
+   "La case bleue du haut écrit h = BS sin β.",
+   "La barre orange est la visée BS, environ 5 451 m.",
+   "La barre verte est la hauteur h, environ 1 976 m : elle est plus courte.",
+   "La flèche orange multiplie par 0,36244, le sinus de 21,25°."
+  ],
+  "a_voir": "La barre verte fait un peu plus du tiers de la barre orange."
+ },
+ {
+  "code": "38-044",
+  "a_dire": "Le dénominateur sin(β − α) est sensible aux erreurs : une erreur de 0,1° sur β change la hauteur d'environ 51 m.",
+  "legende_titre": "Une petite erreur, une grande différence",
+  "lecture": [
+   "Sur la droite du haut, l'angle β − α passe de 3,25° (gris) à 3,35° (orange).",
+   "La flèche orange dit que β a augmenté de 0,1°.",
+   "Sur la droite du bas, la hauteur passe de 1 976 m (gris) à 1 925 m (orange).",
+   "L'accolade marque l'écart : 51 m."
+  ],
+  "a_voir": "Un écart de 0,1° sur l'angle déplace la hauteur de 51 m."
+ },
+ {
+  "code": "38-045",
+  "a_dire": "Dans le triangle ABP, la largeur de la rivière w est la hauteur issue de P : le segment perpendiculaire à la rive, de P jusqu'à H, entre A et B.",
+  "legende_titre": "Où est la largeur dans le triangle",
+  "lecture": [
+   "Le triangle bleu a pour base AB = 150 m sur votre rive, et pour sommet le poteau P sur l'autre rive.",
+   "Les arcs orange sont les deux angles mesurés : 51,33° en A et 69,20° en B.",
+   "Le trait vert épais va de P à H et forme un angle droit avec la rive : c'est w = PH.",
+   "Le point H tombe entre A et B."
+  ],
+  "a_voir": "w est une hauteur du triangle, comme h pour la montagne."
+ },
+ {
+  "code": "38-046",
+  "a_dire": "Le montage de la rivière donne trois mesures : la base AB de 150 m sur la rive, l'angle α en A et l'angle β en B vers le poteau P ; 150 m n'est pas la largeur.",
+  "legende_titre": "Ce que le montage mesure",
+  "lecture": [
+   "Le trait gris épais est la base AB sur votre rive : 150 m.",
+   "Les deux flèches bleues partent de A et de B et visent le poteau P.",
+   "Les arcs orange sont les angles mesurés : α = 51,33° en A et β = 69,20° en B.",
+   "Aucun trait ne descend de P vers la rive : la largeur n'est pas dessinée."
+  ],
+  "a_voir": "Il y a une base et deux angles, et la largeur reste à calculer."
+ },
+ {
+  "code": "38-047",
+  "a_dire": "La lettre w désigne la largeur de la rivière, la longueur du segment PH perpendiculaire à la rive ; on la nomme avant de connaître sa valeur.",
+  "legende_titre": "Un nom pour la largeur",
+  "lecture": [
+   "La bande grise est la rivière, entre votre rive en bas et l'autre rive en haut.",
+   "La flèche bleue va du point H de votre rive au poteau P, avec un angle droit en H.",
+   "La lettre w est écrite à côté de cette flèche : w = PH.",
+   "Le texte gris rappelle que sa valeur n'est pas encore calculée."
+  ],
+  "a_voir": "w nomme la longueur PH, même si on ne la connaît pas encore."
+ },
+ {
+  "code": "38-048",
+  "a_dire": "Pour la rivière, les angles sont horizontaux et la figure est vue de dessus comme une carte ; pour la montagne, ce sont des angles d'élévation et la figure est vue de côté.",
+  "legende_titre": "Vue de dessus ou vue de côté",
+  "lecture": [
+   "À gauche, la rivière en bleu : le triangle est à plat, vu de dessus, avec α et β lus sur le cercle horizontal.",
+   "À droite, la montagne en violet : le triangle est dressé, vu de côté, avec α et β lus sur le cercle vertical.",
+   "Les lettres α et β sont les mêmes des deux côtés, mais ne veulent pas dire la même chose."
+  ],
+  "a_voir": "Les deux figures ont les lettres α et β, mais l'une est à plat et l'autre est debout."
+ }
+]

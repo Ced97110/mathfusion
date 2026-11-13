@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+gy = 14
+line(ax, [(2, gy), (86, gy)], 'fixe')
+poly(ax, [(40, gy), (62, 52), (84, gy)], 'fixe')
+S, H = (62, 52), (62, gy)
+line(ax, [S, H], 'sujet', lw=1.6)
+ax.add_patch(Rectangle((H[0] - 2.2, gy), 2.2, 2.2, ec=COL['sujet'], fc='none', lw=0.8, zorder=3))
+disc(ax, S[0], S[1], 1.3, 'sujet')
+disc(ax, H[0], H[1], 1.3, 'sujet')
+text(ax, S[0] + 3, S[1] + 4, '$S$ : en haut', 'sujet', 's')
+text(ax, H[0], 8, '$H$ : dans la roche', 'sujet', 's')
+text(ax, 59, 34, '$SH$ vertical', 'sujet', 's', ha='right')
+disc(ax, 14, gy, 1.3, 'autre')
+text(ax, 14, 8, '$P$ : on peut y aller', 'autre', 's')
+text(ax, 14, 20, 'même niveau que $H$', 'fixe', 's')
+save(fig, '38-011')
