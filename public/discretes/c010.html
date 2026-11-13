@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 10</div>
-<h1>Les preuves combinatoires</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 10</div>
+<h1 class="ct">Les preuves combinatoires</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <img class="vm" src="/discretes/img/c010/p0301_1.svg" alt="Au chapitre 9, tu as obtenu la formule (𝑛𝑘) = 𝑛! . Avec elle, tu peux vérifier (𝑛−𝑘)! 𝑘! n’importe quelle égalité entre coefficients binomiaux par le calcul. Mais un calcul exact ne dit pas pourquoi l’égalité est vraie. Ce chapitre présente une autre façon de prouver : compter le même ensemble de deux façons." style="--w:24.19" loading="lazy">
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 10 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Une finale au meilleur des 7 matchs</h3>
 <p>Au hockey, la finale de la coupe Stanley oppose deux équipes. La première équipe à gagner 4 matchs remporte la coupe. Il y a donc au plus 7 matchs. Dès qu’une équipe atteint 4 victoires, on arrête de jouer. Il n’y a pas de match nul.</p>
 <p>Ton équipe gagne la finale. De combien de façons ? Une « façon » est la liste des résultats, match par match. Par exemple : gagné, perdu, gagné, gagné, perdu, gagné. Ton équipe gagne alors en 6 matchs.</p>
@@ -22,7 +28,8 @@
 <p>Que se passe-t-il au meilleur des 9 matchs, où il faut 5 victoires ? Le même raisonnement donne</p>
 <img class="vm" src="/discretes/img/c010/p0303_4.svg" alt="9 8 7 6 5 4 ( ) = ( ) + ( ) + ( ) + ( ) + ( ). 5 4 4 4 4 4" style="--w:24.12" loading="lazy">
 <p>Vérifie : <span class="m">70+35+15+5+1 = 126</span>, et <span class="m">(</span><sup>9</sup><sub>5</sub><span class="m">) = 126</span>. Voilà le problème qui a forcé la notion. Le calcul algébrique vérifie les égalités entre coefficients binomiaux, mais ne les explique pas. Le double comptage les explique. Il faut donc apprendre à le faire exprès : trouver, pour une égalité donnée, la question de comptage dont ses deux membres sont deux réponses.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 10 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Les 35 finales</h3>
 <p>La figure 10.1 dessine les 35 finales gagnées, une par ligne. Les cases sont les matchs 1 à 7.</p>
 <img class="vf" src="/discretes/img/c010/p0304_5.svg" alt="1 2 3 4 5 6 7 1 2 3 4 5 6 7 4 matchs : 1 7 matchs : 20 5 matchs : 4 total : 1 + 4 + 10 + 20 = 35 6 matchs : 10 gagné perdu non joué" style="--w:24.12" loading="lazy">
@@ -37,7 +44,8 @@
 <img class="vf" src="/discretes/img/c010/p0306_9.svg" alt="ligne 0 1 ligne 1 1 1 ligne 2 1 2 1 ligne 3 1 3 3 1 1 + 4 + 10 + 20 ligne 4 1 4 6 4 1 ligne 5 1 5 10 10 5 1 ligne 6 1 6 15 20 15 6 1 ligne 7 1 7 21 35 35 21 7 1 1 + 4 + 10 + 20 = 35" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>10.2 :</b> Regarde les quatre nombres bleus : ils forment une diagonale qui descend de la ligne 3 à la ligne 6. Leur somme est le nombre rouge, placé juste en dessous de la diagonale, décalé d’un cran vers l’intérieur.</i></p>
 <p>Les lignes et les positions sont numérotées à partir de 0 : à la ligne <span class="m">𝑛</span>, position <span class="m">𝑘</span>, se trouve <span class="m">(</span><sup>𝑛</sup><sub>𝑘</sub><span class="m">)</span>. Les nombres bleus, <span class="m">(</span><sup>3</sup><sub>3</sub><span class="m">)</span>, <span class="m">(</span><sup>4</sup><sub>3</sub><span class="m">)</span>, <span class="m">(</span><sup>5</sup><sub>3</sub><span class="m">)</span>, <span class="m">(</span><sup>6</sup><sub>3</sub><span class="m">)</span>, sont tous en position 3. Le rouge est <span class="m">(</span><sup>7</sup><sub>4</sub><span class="m">)</span>. Le dessin est une diagonale de nombres, puis un pas de côté vers l’intérieur à la ligne suivante. On appelle souvent cette régularité l’identité « de la crosse de hockey », à cause de cette forme. Elle se retrouve partout dans le triangle : la diagonale <span class="m">1, 2, 3</span> (position 1, lignes 1 à 3) a pour somme <span class="m">6 = (</span><sup>4</sup><sub>2</sub><span class="m">)</span>.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 10 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Identité binomiale et preuve combinatoire</h3>
 <img class="vm" src="/discretes/img/c010/p0307_10.svg" alt="Définition : identité binomiale Une identité binomiale est une égalité entre deux expressions qui contiennent des coefficients binomiaux, et qui est vraie pour toutes les valeurs permises des entiers qui y figurent. Définition : preuve combinatoire Soit une identité de la forme 𝐴 = 𝐵. Une preuve combinatoire de cette identité se fait en trois étapes : 1. trouver une question de comptage à laquelle on sait répondre de deux façons ; 2. expliquer pourquoi une des réponses est 𝐴 ; 3. expliquer pourquoi l’autre réponse est 𝐵. Puisque 𝐴 et 𝐵 répondent à la même question, 𝐴 = 𝐵. On parle aussi de preuve par double comptage." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c010/p0308_11.svg" alt="" style="--w:24.19" loading="lazy">
@@ -56,7 +64,8 @@
 <p>Avec <span class="m">𝑛 = 7</span> et <span class="m">𝑘 = 4</span>, tu retrouves (10.1) : <span class="m">𝑚</span> est le numéro du dernier match. Avec <span class="m">𝑛 = 9</span> et <span class="m">𝑘 = 5</span>, la finale au meilleur des 9 matchs.</p>
 <img class="vf" src="/discretes/img/c010/p0310_17.svg" alt="" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c010/p0310_18.svg" alt="Symbole Ce qu’il dit 𝑚 Le plus grand élément du sous-ensemble. Pour {1, 3, 4, 6} : 𝑚 = 6. (𝑚−1𝑘−1 ) Le nombre de façons de choisir les autres éléments. Pour 𝑚 = 6 et 𝑘 = 4 : (53) = 10. (𝑘−1𝑘−1) Le premier terme, pour 𝑚 = 𝑘. Il vaut toujours 1 : si le plus grand élément est 𝑘, le sous-ensemble est forcément {1, … , 𝑘}." style="--w:24.19" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 10 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Quatre régularités du triangle de Pascal</h3>
 <p>Regarde à nouveau le triangle de Pascal. Oublie un instant d’où il vient. Regardele comme un objet. Que remarques-tu ? La figure 10.3 en montre quatre régularités.</p>
 <img class="vm" src="/discretes/img/c010/p0311_19.svg" alt="somme de la ligne 1 = 1 1 1 = 2 1 2 1 = 4 1 3 3 1 = 8 1 4 6 4 1 = 16 1 5 10 10 5 1 = 32 1 6 15 20 15 6 1 = 64 1 7 21 35 35 21 7 1 = 128 axe de symétrie Fig. 10.3 : Regarde les quatre marques : les bords en vert valent 1 ; le 20 rouge est la somme des deux 10 orange au-dessus ; la ligne pointillée est un axe de symétrie ; à droite, chaque ligne a pour somme une puissance de 2." style="--w:24.12" loading="lazy">
@@ -199,7 +208,8 @@
 <img class="vm" src="/discretes/img/c010/p0331_75.svg" alt="Pour passer par (𝑘, 𝑛 − 𝑘), il faut aller de (0, 0) à ce point : 𝑛 pas, dont 𝑘 vers la droite, soit (𝑛𝑘) chemins. Puis de ce point à (𝑛, 𝑛) : 𝑛 𝑛 pas, dont 𝑘 vers le haut, soit encore (𝑘) 𝑛 2 chemins. Cela fait (𝑘) chemins par (𝑘, 𝑛−𝑘). 𝑛 2 Par exemple, par (0, 𝑛) : (0) = 1 chemin, tout en haut puis tout à droite." style="--w:24.38" loading="lazy">
 <img class="vm" src="/discretes/img/c010/p0331_76.svg" alt="Chaque chemin passe par un seul de ces 𝑛 2 𝑛 2 𝑛 2 points. Le total est (0) + (1) + ⋯ + (𝑛) ." style="--w:24.12" loading="lazy">
 <p>Les deux réponses sont égales.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 10 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Ce que tu as obtenu</h3>
 <p>Tu as une méthode de preuve : poser une question, y répondre deux fois, conclure à l’égalité. Elle repose sur un fait : un ensemble fini a un seul cardinal. Le calcul vérifie une identité ; le double comptage montre quels objets sont comptés et comment ils se répartissent.</p>
 <h3>Vers les chapitres suivants</h3>
@@ -209,6 +219,8 @@
 <img class="vm" src="/discretes/img/c010/p0333_79.svg" alt="Lien avec un autre chapitre Au chapitre 21, tu rencontreras le lemme des poignées de main : dans tout graphe, la somme des degrés des sommets vaut deux fois le nombre d’arêtes. Sa preuve est un double comptage. On compte les couples (sommet, arête qui touche ce sommet). Compté par sommet, cela donne la somme des degrés. Compté par arête, cela donne 2 par arête, car chaque arête touche deux sommets. Ce n’est pas une identité binomiale, mais c’est exactement" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c010/p0333_80.svg" alt="la même méthode." style="--w:24.12" loading="lazy">
 <p><b>Chapitre 27.</b> Avec <span class="m">𝑥 = 1</span>, le développement devient <span class="m">(1 + 𝑦)</span><sup>𝑛</sup> <span class="m">= (</span><sup>𝑛</sup><sub>0</sub><span class="m">) + (</span><sup>𝑛</sup><sub>1</sub><span class="m">)𝑦 + ⋯ + (</span><sup>𝑛</sup><sub>𝑛</sub><span class="m">)𝑦</span><sup>𝑛</sup> : la ligne <span class="m">𝑛</span> du triangle devient la suite des coefficients d’un polynôme. C’est le premier exemple de fonction génératrice.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 10 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c010/p0334_81.svg" alt="À toi de chercher Mets 𝑥 = 1 et 𝑦 = −1 dans le développement de (𝑥 + 𝑦)𝑛. Tu obtiens, pour 𝑛 ≥ 1 : 𝑛 𝑛 𝑛 𝑛 ( ) − ( ) + ( ) − ( ) + ⋯ = 0. 0 1 2 3 Vérifie pour 𝑛 = 4 : 1 − 4 + 6 − 4 + 1 = 0. Le calcul prouve cette égalité. Mais un comptage ne produit jamais de nombre négatif. Quelle question de comptage pourrait expliquer une soustraction ? Indice de départ : fais passer les termes négatifs de l’autre côté. L’égalité dit alors" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c010/p0334_82.svg" alt="que deux sortes de sous-ensembles sont en même nombre. Lesquelles ? Peux-tu associer chaque sous-ensemble de la première sorte à un seul sous-ensemble de la seconde, sans calcul ? Et pour 𝑛 = 0 : la somme vaut (00) = 1, pas 0. Où ta correspondance échoue-t-elle dans ce cas ?" style="--w:24.19" loading="lazy">
+</div>
