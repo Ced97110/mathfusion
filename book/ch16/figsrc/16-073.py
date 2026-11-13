@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, r'$-8x=24$', 'encre', 'l')
+box(ax, 6, 32, 22, 10, 'fixe', label='24', size='l')
+arrow(ax, (29, 37), (59, 37), 'varie')
+text(ax, 44, 42, '÷ (−8)', 'varie', 'm')
+box(ax, 60, 32, 22, 10, 'resultat', label='−3', size='l')
+text(ax, 44, 25, 'signes contraires : −', 'varie', 'm')
+f = numberline(ax, 12, 76, 12, -4, 1, arrow_right=False)
+disc(ax, f(-3), 12, 2.2, 'resultat')
+save(fig, '16-073')

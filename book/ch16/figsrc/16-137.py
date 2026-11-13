@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role="fixe", label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$x$ + ($x$ + 1) = 10', 'sujet', 'l')
+box(ax, 2, 42, 40, 14, 'resultat', 'équation :\nune solution', 's'); box(ax, 46, 42, 40, 14, 'limite', 'problème :\naucune solution', 's')
+f = numberline(ax, 10, 72, 16, 3, 7, 1, arrow_right=False, size='m')
+disc(ax, f(4.5), 16, 1.8, 'resultat'); arrow(ax, (22, 41), (f(4.5) - 2, 19), 'resultat')
+text(ax, f(4.5) + 3, 26, r'$x$ = 4,5', 'resultat', 's', ha='left')
+text(ax, 62, 33, '4,5 : pas un entier', 'limite', 's')
+save(fig, '16-137')

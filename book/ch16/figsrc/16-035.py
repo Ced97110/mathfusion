@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+text(ax,19,52,'expression','sujet','m',weight='bold'); text(ax,64,52,'équation','varie','m',weight='bold')
+box(ax,6,24,26,12,'sujet',label=r'$x+3$',size='l')
+brace(ax,6,32,22,'sujet','groupe sans verbe')
+box(ax,43,24,18,12,'sujet',label=r'$x+3$',size='l')
+box(ax,62,24,8,12,'varie',label='$=$',size='l')
+box(ax,71,24,12,12,'autre',label='7',size='l')
+text(ax,66,45,'verbe','varie','m',weight='bold')
+arrow(ax,(66,42.5),(66,37.5),'varie',lw=1.3)
+brace(ax,43,83,22,'varie','phrase avec verbe')
+save(fig,'16-035')

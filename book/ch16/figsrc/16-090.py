@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,3,52,38,10,'sujet',label='5 de plus qu’un nombre',size='s'); box(ax,47,52,38,10,'autre',label='5 ajouté à un nombre',size='s')
+arrow(ax,(22,51),(22,40),'varie'); arrow(ax,(66,51),(66,40),'varie')
+box(ax,9,29,26,10,'sujet',label='$x+5$',size='l'); box(ax,53,29,26,10,'autre',label='$5+x$',size='l')
+text(ax,44,34,'=','resultat','xl')
+arrow(ax,(22,28),(22,20),'resultat'); arrow(ax,(66,28),(66,20),'resultat')
+box(ax,13,9,18,10,'resultat',label='$12$',size='l'); box(ax,57,9,18,10,'resultat',label='$12$',size='l')
+text(ax,44,4,'','encre')
+text(ax,44,14,'$x=7$','varie','m')
+save(fig,'16-090')

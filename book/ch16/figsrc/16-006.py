@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(66)
+text(ax, 44, 61, 'inconnu, mais relié à un nombre connu', 'sujet', 's')
+text(ax, 12, 46, 'manteau', 'fixe', 's')
+box(ax, 22, 41, 12, 10, 'sujet', label='?', dash=True)
+text(ax, 40, 46, '+', 'encre', 'l')
+box(ax, 46, 41, 10, 10, 'fixe', label='3')
+text(ax, 62, 46, '=', 'encre', 'l')
+box(ax, 68, 41, 14, 10, 'resultat', label='44')
+text(ax, 12, 20, 'jardin', 'fixe', 's')
+box(ax, 22, 15, 40, 10, 'sujet', label='(largeur + longueur) × 2', dash=True, size='s')
+text(ax, 68, 20, '=', 'encre', 'l')
+box(ax, 74, 15, 10, 10, 'resultat', label='20')
+text(ax, 44, 6, 'pointillés : on ne connaît pas encore', 'sujet', 's')
+save(fig, '16-006')

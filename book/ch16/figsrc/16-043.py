@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,56,'vérifier : 41 est donné','resultat','s')
+box(ax,6,38,22,11,'sujet',label='41',size='l'); box(ax,60,38,22,11,'resultat',label='44',size='l')
+arrow(ax,(28,43.5),(60,43.5),'varie'); text(ax,44,47.5,r'$+\,3$','varie','m')
+text(ax,44,33,'un calcul suffit','resultat','s')
+text(ax,44,24,'trouver : rien n\'est donné','limite','s')
+box(ax,6,6,22,11,'sujet',label='?',size='l',dash=True); box(ax,60,6,22,11,'resultat',label='44',size='l')
+arrow(ax,(60,11.5),(28,11.5),'limite'); text(ax,44,15.5,'comment ?','limite','s')
+save(fig,'16-043')

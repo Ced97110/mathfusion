@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 3, 36, 27, 8, 'fixe', label='un nombre')
+box(ax, 3, 20, 27, 8, 'fixe', label='une quantité')
+disc(ax, 52, 32, 8, 'sujet', label=r'$x$', size='xl')
+arrow(ax, (30, 40), (45, 35), 'fixe', lw=0.8)
+arrow(ax, (30, 24), (45, 29), 'fixe', lw=0.8)
+text(ax, 65, 32, 'ou', 'fixe', 's')
+disc(ax, 77, 32, 6, 'autre', label=r'$m$', size='l')
+text(ax, 52, 46, 'lettre choisie par vous', 'sujet', 's')
+text(ax, 44, 9, r'$x$ = le nombre cherché', 'sujet', 'm')
+save(fig, '16-098')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 6, 52, 'avec la virgule : deux blocs', 'sujet', 's', ha='left')
+box(ax, 6, 38, 24, 8, 'sujet', label=r'$10 \div 2$')
+text(ax, 33, 41, ',', 'sujet', 'xl')
+box(ax, 36, 38, 14, 8, 'sujet', label=r'$-\,1$')
+text(ax, 66, 42, r'$= 4$', 'resultat', 'xl')
+text(ax, 6, 28, 'virgule ignorée : un seul bloc', 'autre', 's', ha='left')
+box(ax, 6, 14, 14, 8, 'autre', label=r'$10 \div$')
+box(ax, 22, 14, 24, 8, 'autre', label=r'$(2 - 1)$')
+text(ax, 66, 18, r'$= 10$', 'limite', 'xl')
+save(fig, '16-103')

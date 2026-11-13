@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+box(ax,28,54,32,11,'sujet',label=r'$x+3=7$',size='l')
+f=numberline(ax,6,70,20,0,8,arrow_right=True)
+disc(ax,f(4),20,2.2,'resultat'); disc(ax,f(5),20,2.2,'limite')
+box(ax,6,36,30,10,'resultat',label=r'$4+3=7$ vrai',size='s')
+box(ax,50,36,30,10,'limite',label=r'$5+3=8$ faux',size='s')
+line(ax,[(21,36),(f(4),22.4)],'resultat'); line(ax,[(65,36),(f(5),22.4)],'limite')
+arrow(ax,(44,54),(44,48),'fixe')
+save(fig,'16-038')

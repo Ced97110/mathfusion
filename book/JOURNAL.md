@@ -17,6 +17,7 @@
 | 2026-11-12 | 13 — Les nombres signés et la valeur absolue | 148 | 139 | 145 | 13-003 (« 2 seul ne dit pas le côté » n'est pas lu), 13-114 (les quatre propriétés vérifiées par Jacobson ne sont pas lues), 13-116 (« plus la droite est basse, plus le nombre est grand » n'est pas lu) |
 | 2026-11-12 | 14 — Les règles des exposants, exposants négatifs, notation scientifique | 102 | 93 | 101 | 14-058 (l'écriture en un seul bloc, sans barre de fraction, n'est pas lue) |
 | 2026-11-12 | 15 — Expressions algébriques et polynômes | 140 | 129 | 140 | aucune |
+| 2026-11-12 | 16 — Les équations à une inconnue et la méthode en cinq étapes | 146 | 139 | 144 | 16-005 (un essai ne dit pas quelle valeur essayer ensuite : non lu), 16-146 (le lien avec les chapitres 2, 3, 4, 12, 15 n'est pas lu) |
 
 ## Remarques
 
@@ -33,3 +34,4 @@
 - Chapitre 13 : 13-055, le point d'arrivée que la fiche met en rouge est vert (rôles de couleur) ; 13-145, une phrase vraie était en rouge, passée en vert à la correction. Aucun nombre inventé relevé.
 - Chapitre 14 : 14-014 montrait « 2⁰ = 0 » en rouge sans le marquer faux ; corrigé (barré, « faux »). Dernier lot de 6 fiches fusionné dans L06 (un agent de moins). Aucun nombre inventé relevé.
 - Chapitre 15 : nombre ajouté par l'agent : 15-061 (5 ronds pour « poly », absent de la fiche). Erreurs de figure corrigées : 15-075 disait « même valeur : même polynôme » (faux) ; 15-062, case qui contredisait la légende ; 15-076, points hors des repères.
+- Chapitre 16 : nombres ajoutés par l'agent : 16-040 (valeurs 0 à 8 « tous testés »), 16-049 (10 = 7 + 3 calculé), 16-057 (exemple 3x et 1/3). 16-016 : annotation −3 orange au lieu du rouge du livre (rôles de couleur).

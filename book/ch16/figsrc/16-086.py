@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,44,63,'$x=3$','varie','xl')
+box(ax,5,40,34,10,'sujet',label=r'$6x-4$'); box(ax,49,40,34,10,'sujet',label=r'$2x+8$')
+text(ax,44,45,'=','encre','xl')
+arrow(ax,(22,60),(22,51.5),'varie'); arrow(ax,(66,60),(66,51.5),'varie')
+text(ax,22,31,r'$6\times3-4$','fixe','m'); text(ax,66,31,r'$2\times3+8$','fixe','m')
+arrow(ax,(22,38),(22,34),'fixe'); arrow(ax,(66,38),(66,34),'fixe')
+box(ax,13,13,18,10,'resultat',label='$14$',size='l'); box(ax,57,13,18,10,'resultat',label='$14$',size='l')
+text(ax,44,18,'=','resultat','xl')
+arrow(ax,(22,28),(22,23.5),'fixe'); arrow(ax,(66,28),(66,23.5),'fixe')
+text(ax,44,6,'un calcul par membre','resultat','s')
+save(fig,'16-086')

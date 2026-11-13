@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 63, r'$t = 150\,/\,r$ : vitesse $r$ en km/h', 'sujet', 's')
+f = numberline(ax, 8, 70, 46, 0, 100, 50, arrow_right=True)
+arrow(ax, (f(0) + 2, 49.5), (f(100) + 3, 49.5), 'resultat', lw=2.2)
+disc(ax, f(0), 49.5, 1.6, 'limite')
+text(ax, f(0) + 8, 56, r'$r = 0$', 'limite', 's')
+text(ax, f(60), 56, r'$r \neq 0$', 'resultat', 's')
+box(ax, 4, 14, 38, 13, 'resultat', label='150 ÷ 50 = 3 h', size='m')
+box(ax, 46, 14, 38, 13, 'limite', label='150 ÷ 0 = aucun temps', size='s')
+text(ax, 23, 8, 'a un sens', 'resultat', 's')
+text(ax, 65, 8, 'sans réponse', 'limite', 's')
+save(fig, '16-120')
