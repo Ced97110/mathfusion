@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+text(ax, 6, 86, 'départ', 'fixe', 's', ha='left')
+box(ax, 14, 76, 26, 9, 'sujet', label=r'$A=B$'); box(ax, 48, 76, 26, 9, 'autre', label=r'$C=D$')
+arrow(ax, (27, 76), (35, 56), 'varie')
+text(ax, 62, 66, 'ajouter C', 'varie', 's'); text(ax, 62, 62, 'aux deux côtés', 'varie', 's')
+box(ax, 14, 46, 44, 10, 'sujet', label=r'$A+C=B+C$')
+arrow(ax, (36, 46), (36, 28), 'varie', lw=2.4)
+text(ax, 62, 38, 'remplacer C par D', 'varie', 's', weight='bold'); text(ax, 62, 34, 'étape décisive', 'varie', 's', weight='bold')
+box(ax, 14, 17, 44, 10, 'resultat', label=r'$A+C=B+D$'); text(ax, 6, 12, 'arrivée', 'fixe', 's', ha='left')
+save(fig, '24-046')

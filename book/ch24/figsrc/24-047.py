@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 76, 'la règle', 'resultat', 'm')
+box(ax, 3, 58, 22, 10, 'sujet', label=r'$A=B$'); box(ax, 29, 58, 22, 10, 'autre', label=r'$C=D$')
+arrow(ax, (53, 63), (61, 63), 'varie'); box(ax, 62, 58, 24, 10, 'resultat', label=r'$A+C=B+D$')
+for x in (14, 40, 74): text(ax, x, 53, 'vraie', 'resultat', 's')
+text(ax, 44, 36, 'si C = D est fausse', 'encre', 'm')
+box(ax, 3, 16, 22, 10, 'sujet', label=r'$3=3$'); box(ax, 29, 16, 22, 10, 'limite', label=r'$2=5$')
+arrow(ax, (53, 21), (61, 21), 'varie'); box(ax, 62, 16, 24, 10, 'limite', label=r'$5=8$')
+text(ax, 14, 11, 'vraie', 'resultat', 's')
+for x in (40, 74): text(ax, x, 11, 'fausse', 'limite', 's')
+save(fig, '24-047')

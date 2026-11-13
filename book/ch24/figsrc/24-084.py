@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+text(ax, 17, 79, 'le café', 'sujet', 'm')
+box(ax, 4, 66, 26, 7, 'sujet', label=r'$x + y = 5$', size='s')
+box(ax, 4, 57, 26, 7, 'sujet', label=r'$2x + y = 8$', size='s')
+text(ax, 17, 52, '2 équations', 'sujet', 's')
+text(ax, 66, 79, 'les grands cas', 'autre', 'm')
+for i in range(4):
+    box(ax, 50, 66 - i * 9, 32, 7, 'autre')
+text(ax, 66, 32, r'$\vdots$', 'autre', 'l')
+box(ax, 50, 21, 32, 7, 'autre')
+text(ax, 66, 17, 'beaucoup d’équations', 'autre', 's')
+arrow(ax, (32, 60), (48, 60), 'varie')
+text(ax, 40, 64, 'même', 'varie', 's')
+text(ax, 40, 56, 'opération', 'varie', 's')
+text(ax, 44, 8, 'météo · pont · apprentissage', 'encre', 's')
+text(ax, 44, 3.5, 'automatique', 'encre', 's')
+save(fig, '24-084')

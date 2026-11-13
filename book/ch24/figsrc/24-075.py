@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,62,'$0 \\times 5 = 0$ et $0 \\times 100 = 0$','fixe','s')
+box(ax,4,40,26,10,'limite',label=r'$0 \cdot x = 3$')
+line(ax,[(36,45),(80,45)],'fixe'); text(ax,58,52,'aucun $x$ ne convient','fixe','s')
+for v in range(5): ax.plot([40+v*9]*2,[43.8,46.2],color=COL['fixe'],lw=0.8)
+box(ax,4,14,26,10,'resultat',label=r'$0 \cdot x = 0$')
+arrow(ax,(58,19),(84,19),'resultat',lw=2); arrow(ax,(58,19),(36,19),'resultat',lw=2)
+for v in range(5): ax.plot([40+v*9]*2,[17.8,20.2],color=COL['resultat'],lw=0.8)
+text(ax,58,26,'tout $x$ convient','resultat','s')
+text(ax,44,5,'le côté droit décide','fixe','s')
+save(fig,'24-075')

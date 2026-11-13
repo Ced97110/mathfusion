@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+text(ax, 44, 76, r'départ : $P\,(3,\,2)$', 'sujet', 'm')
+box(ax, 3, 56, 40, 10, 'resultat', fill=True, label=r'lundi : $3+2=5$', size='s')
+box(ax, 47, 56, 38, 10, 'resultat', fill=True, label=r'mardi : $2\times3+2=8$', size='s')
+arrow(ax, (23, 56), (33, 47), 'varie')
+arrow(ax, (66, 56), (55, 47), 'varie')
+box(ax, 12, 35, 64, 12, 'varie', fill=True, label=r'règle $A+C=B+D$', size='l', lw=1.8)
+arrow(ax, (44, 35), (44, 27), 'varie', lw=1.4)
+box(ax, 5, 13, 78, 14, 'resultat', fill=True, label=r'$3\times3+2\times2=5+8=13$', size='m')
+text(ax, 44, 7, 'arrivée : la somme est vraie', 'resultat', 's')
+save(fig, '24-054')

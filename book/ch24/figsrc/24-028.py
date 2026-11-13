@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 60, 'le même panier', 'encre', 's')
+box(ax, 18, 44, 24, 11, 'sujet', label='café', size='s')
+text(ax, 44, 49.5, '+', 'encre', 'm')
+box(ax, 46, 44, 24, 11, 'autre', label='croissant', size='s')
+box(ax, 2, 18, 32, 12, 'fixe', label=r'$x + y = 5$', size='m')
+box(ax, 54, 18, 32, 12, 'fixe', label=r'$x + y = 8$', size='m')
+arrow(ax, (30, 43), (18, 31), 'fixe'); arrow(ax, (58, 43), (70, 31), 'fixe')
+text(ax, 44, 24, '≠', 'limite', 'xl')
+text(ax, 44, 8, 'ensemble : impossible', 'limite', 's')
+save(fig, '24-028')

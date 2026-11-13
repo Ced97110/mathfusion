@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,76,'ce qu\'on mesure, depuis la rive','encre','s')
+text(ax,4,69,'descente : 36 km en 3 h','sujet','s',ha='left')
+arrow(ax,(4,64),(64,64),'sujet',lw=1.6); text(ax,75,64,'12 km/h','sujet','m')
+text(ax,4,56,'montée : 24 km en 3 h','autre','s',ha='left')
+arrow(ax,(44,51),(4,51),'autre',lw=1.6); text(ax,60,51,'8 km/h','autre','m')
+text(ax,44,41,'ce qu\'on cherche : $v$ bateau, $c$ courant','fixe','s')
+box(ax,4,26,36,9,'sujet',label=r'$v + c = 12$')
+box(ax,48,26,36,9,'autre',label=r'$v - c = 8$')
+arrow(ax,(44,25),(44,20),'varie')
+box(ax,14,5,60,13,'resultat',label=r'$2v = 20$, $v = 10$, $c = 2$')
+save(fig,'24-067')

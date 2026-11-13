@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+text(ax, 7, 66, '{', 'fixe', 44)
+box(ax, 14, 74, 36, 9, 'sujet', label=r'$x+y=5$'); box(ax, 14, 52, 36, 9, 'autre', label=r'$2x+y=8$')
+disc(ax, 70, 67.5, 5, 'varie', label=r'$y$', size='l')
+arrow(ax, (50, 78.5), (65.5, 69.5), 'varie'); arrow(ax, (50, 56.5), (65.5, 65.5), 'varie')
+text(ax, 70, 58, 'le même y', 'varie', 's')
+text(ax, 44, 40, 'on peut donc écrire :', 'encre', 's')
+box(ax, 3, 22, 30, 9, 'sujet', label=r'$y=5-x$'); box(ax, 56, 22, 30, 9, 'autre', label=r'$2x+(5-x)=8$')
+arrow(ax, (33, 26.5), (56, 26.5), 'varie'); text(ax, 44.5, 31, 'à la place de y', 'varie', 's')
+save(fig, '24-040')

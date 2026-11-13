@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+O=(10,8); s=7
+P=lambda x,y:(O[0]+s*x,O[1]+s*y)
+arrow(ax,P(0,0),P(6,0),'fixe',lw=0.6); arrow(ax,P(0,0),P(0,5.8),'fixe',lw=0.6)
+text(ax,P(6,0)[0]+2.5,P(6,0)[1],'$x$','fixe','s'); text(ax,P(0,5.8)[0],P(0,5.8)[1]+2.5,'$y$','fixe','s')
+line(ax,[P(0,5),P(5,0)],'sujet',lw=1.6); line(ax,[P(0,5),P(5,0)],'autre',lw=0.8,dash=True)
+for (a,b) in [(0,5),(1,4)]: disc(ax,*P(a,b),1.3,'resultat')
+text(ax,P(0,5)[0]+3,P(0,5)[1]+3,'(0, 5)','resultat','s',ha='left')
+text(ax,P(1,4)[0]+3,P(1,4)[1]+3,'(1, 4)','resultat','s',ha='left')
+text(ax,69,46,'$x + y = 5$','sujet','m')
+text(ax,69,38,'$2x + 2y = 10$','autre','m')
+text(ax,69,30,'droites confondues','fixe','s')
+box(ax,54,12,32,9,'resultat',label='10 = 10 : vrai')
+save(fig,'24-071')

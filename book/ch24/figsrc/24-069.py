@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,2,60,46,10,'sujet',label=r'$y = 5 - x$')
+arrow(ax,(25,59),(25,53),'varie'); text(ax,36,56,'remplace','varie','s')
+box(ax,2,43,46,10,'autre',label=r'$x + (5 - x) = 8$')
+arrow(ax,(25,42),(25,36),'varie'); text(ax,38,39,'les $x$ se vont','varie','s')
+box(ax,2,26,46,10,'limite',label='$5 = 8$ : faux')
+text(ax,25,19,'aucune erreur de calcul','fixe','s')
+O=(56,8); s=3.4
+P=lambda x,y:(O[0]+s*x,O[1]+s*y)
+arrow(ax,P(0,0),P(8.3,0),'fixe',lw=0.6); arrow(ax,P(0,0),P(0,8.8),'fixe',lw=0.6)
+line(ax,[P(0,5),P(5,0)],'sujet',lw=1.3); line(ax,[P(0,8),P(8,0)],'autre',lw=1.3)
+text(ax,P(0.4,1.0)[0],P(0.4,1.0)[1],'$x+y=5$','sujet','s',ha='left')
+text(ax,P(0.8,8.4)[0],P(0.8,8.4)[1],'$x+y=8$','autre','s',ha='left')
+text(ax,70,2.5,'droites parallèles','fixe','s')
+save(fig,'24-069')
