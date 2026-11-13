@@ -1,0 +1,180 @@
+[
+ {
+  "code": "29-001",
+  "a_dire": "Le virage se calcule en trois étapes : tour entier, part du tour, longueur de la part.",
+  "legende_titre": "Un virage lu en trois étapes",
+  "lecture": [
+   "Le cercle gris est le tour complet, de 3 141,6 m.",
+   "Le petit secteur bleu est la part du tour : 12° sur 360, soit 1/30.",
+   "La case verte donne la longueur du virage, environ 104,7 m."
+  ],
+  "a_voir": "Tu vois que le virage est une petite part du tour entier."
+ },
+ {
+  "code": "29-002",
+  "a_dire": "Si l'angle double, la longueur de route double ; s'il est réduit de moitié, la longueur l'est aussi.",
+  "legende_titre": "Trois angles, trois longueurs de route",
+  "lecture": [
+   "Chaque barre bleue est une longueur de route.",
+   "La barre de 12° est deux fois plus longue que celle de 6°.",
+   "La barre de 24° est deux fois plus longue que celle de 12°.",
+   "Les flèches orange marquent chaque fois « fois 2 »."
+  ],
+  "a_voir": "Tu vois que la longueur grandit dans la même proportion que l'angle."
+ },
+ {
+  "code": "29-003",
+  "a_dire": "La lettre L tient la place de la longueur de route cherchée, du début à la fin du calcul.",
+  "legende_titre": "Une lettre pour la route cherchée",
+  "lecture": [
+   "L'arc bleu à gauche est la route avant le calcul : on écrit L.",
+   "L'arc vert à droite est la même route après le calcul : L vaut environ 104,7 m.",
+   "La flèche orange montre que la lettre ne change pas."
+  ],
+  "a_voir": "Tu vois que L désigne la même longueur avant et après le calcul."
+ },
+ {
+  "code": "29-004",
+  "a_dire": "On peut changer l'ordre des facteurs : 2π, 500 et 12 donnent le même calcul, avec 2π à la fin.",
+  "legende_titre": "Les mêmes facteurs dans un autre ordre",
+  "lecture": [
+   "La rangée du haut montre 2π (orange), 500 (bleu) et 12 (violet), puis ÷ 360.",
+   "La rangée du bas contient les mêmes trois cases dans un autre ordre.",
+   "Chaque flèche relie une case à sa copie."
+  ],
+  "a_voir": "Tu vois que les trois facteurs sont les mêmes, seule leur place change."
+ },
+ {
+  "code": "29-005",
+  "a_dire": "En plus du rayon 500 et de l'angle 12, un troisième nombre apparaît : 2π ÷ 360, environ 0,01745.",
+  "legende_titre": "Un troisième nombre dans le calcul",
+  "lecture": [
+   "En haut, 2π (environ 6,2832) divisé par 360 donne la case orange 0,01745.",
+   "En bas, le calcul contient 500 (bleu), 12 (violet) et cette même case orange.",
+   "La flèche orange relie les deux."
+  ],
+  "a_voir": "Tu vois que 0,01745 est un troisième nombre, à côté du rayon et de l'angle."
+ },
+ {
+  "code": "29-006",
+  "a_dire": "Le facteur 0,01745 revient dans le problème de l'horloge, avec un autre rayon et un autre angle.",
+  "legende_titre": "Deux problèmes, un même facteur",
+  "lecture": [
+   "À gauche, le virage bleu : rayon 500 m, angle 12°.",
+   "À droite, l'aiguille violette : 12 cm, angle 120°.",
+   "Sous chaque cercle, la même case grise « × 0,01745 »."
+  ],
+  "a_voir": "Tu vois que le même nombre sert pour deux cercles très différents."
+ },
+ {
+  "code": "29-007",
+  "a_dire": "Le nombre 360 est un choix : on aurait pu diviser le tour en 100 ou en 400 parts.",
+  "legende_titre": "Trois façons de découper le tour",
+  "lecture": [
+   "Les trois cercles ont le même quart de tour colorié.",
+   "Celui du milieu, en bleu, compte 360 parts pour le tour : le quart vaut 90.",
+   "Les cercles violets comptent 100 et 400 parts : le quart vaut 25 et 100."
+  ],
+  "a_voir": "Tu vois que le même quart de tour reçoit un nombre différent selon le choix."
+ },
+ {
+  "code": "29-008",
+  "a_dire": "Le degré compte 360 parts pour un tour, le grade en compte 400 : un angle droit vaut 90 degrés ou 100 grades.",
+  "legende_titre": "Deux unités pour le même angle droit",
+  "lecture": [
+   "Le cercle bleu est le degré : tour de 360 parts, angle droit de 90.",
+   "Le cercle violet est le grade : tour de 400 parts, angle droit de 100.",
+   "Le petit carré marque l'angle droit dans les deux cas."
+  ],
+  "a_voir": "Tu vois que l'angle droit est le même, mais son nombre change avec l'unité."
+ },
+ {
+  "code": "29-009",
+  "a_dire": "Avec le grade, le facteur vaut 2π ÷ 400, environ 0,01571, et le virage mesure toujours 104,7 m.",
+  "legende_titre": "Même virage, autre unité, autre facteur",
+  "lecture": [
+   "Chaque rangée lit le virage.",
+   "Le rayon 500 m (gris) est le même.",
+   "L'angle et le facteur (orange) changent : 12° et 0,01745 en degrés, 13,33 et 0,01571 en grades.",
+   "Les deux cases vertes donnent 104,7 m."
+  ],
+  "a_voir": "Tu vois que le facteur change avec l'unité alors que la longueur reste la même."
+ },
+ {
+  "code": "29-010",
+  "a_dire": "Le facteur change quand on change d'unité, alors que le virage reste le même : il vient du choix de l'unité.",
+  "legende_titre": "Un facteur qui suit l'unité, pas le cercle",
+  "lecture": [
+   "Le cercle avec le secteur bleu est le virage, qui mesure 104,7 m.",
+   "Les deux flèches grises partent de lui.",
+   "Les deux cases orange donnent un facteur différent : 0,01745 pour 12°, 0,01571 pour 13,33 grades."
+  ],
+  "a_voir": "Tu vois que le virage ne change pas, mais le facteur oui."
+ },
+ {
+  "code": "29-011",
+  "a_dire": "Le tableau donne sin 1° ≈ 0,01745, sin 2° ≈ 0,03490, sin 3° ≈ 0,05234.",
+  "legende_titre": "Trois sinus de petits angles",
+  "lecture": [
+   "Chaque barre bleue a la longueur du sinus de l'angle orange écrit à sa gauche.",
+   "La valeur est écrite au bout de la barre.",
+   "Les barres grandissent avec l'angle."
+  ],
+  "a_voir": "Tu vois trois angles de 1°, 2° et 3° et leurs trois sinus."
+ },
+ {
+  "code": "29-012",
+  "a_dire": "Pour de petits angles, le sinus est presque proportionnel à l'angle : sin 2° ≈ 2 sin 1° et sin 3° ≈ 3 sin 1°.",
+  "legende_titre": "Sinus : presque « angle double, sinus double »",
+  "lecture": [
+   "Dans chaque couple, la barre violette est faite de 2 (ou 3) copies de sin 1°.",
+   "La barre bleue dessous est sin 2° (ou sin 3°).",
+   "Les deux barres ont presque la même longueur : 0,03490 contre 0,03490, et 0,05235 contre 0,05234."
+  ],
+  "a_voir": "Tu vois que les deux barres de chaque couple sont presque égales."
+ },
+ {
+  "code": "29-013",
+  "a_dire": "Le sinus de 1° et 2π ÷ 360 donnent le même nombre, environ 0,01745.",
+  "legende_titre": "Deux origines, un seul nombre",
+  "lecture": [
+   "Sur la droite graduée, le point vert est à 0,01745.",
+   "La flèche violette vient de la case « cercle : 2π ÷ 360 ».",
+   "La flèche bleue vient de la case « triangle : sin 1° ».",
+   "Elles arrivent au même point."
+  ],
+  "a_voir": "Tu vois que deux calculs différents tombent sur le même point."
+ },
+ {
+  "code": "29-014",
+  "a_dire": "On cherche une façon de mesurer les angles pour laquelle le facteur vaudrait exactement 1.",
+  "legende_titre": "Peut-on faire disparaître le facteur ?",
+  "lecture": [
+   "Les trois cases grises sont le virage, l'horloge et le sinus : chacune utilise 0,01745.",
+   "Les flèches orange vont vers la case verte en pointillés, qui pose la question d'un facteur égal à 1."
+  ],
+  "a_voir": "Tu vois trois problèmes avec le même facteur et la question d'un facteur égal à 1."
+ },
+ {
+  "code": "29-015",
+  "a_dire": "Un arc de cercle de longueur r, entre deux rayons de longueur r, ouvre un angle d'un radian.",
+  "legende_titre": "Un arc aussi long que le rayon",
+  "lecture": [
+   "Les deux traits bleus sont les rayons OA et OB, de longueur r.",
+   "Le trait orange épais est l'arc AB, courbe, lui aussi de longueur r.",
+   "Le petit arc vert au centre marque l'angle d'un radian."
+  ],
+  "a_voir": "Tu vois qu'un arc courbe peut avoir la même longueur qu'un rayon droit."
+ },
+ {
+  "code": "29-016",
+  "a_dire": "L'arc AB est le morceau de cercle qui va du point A au point B.",
+  "legende_titre": "Nommer un morceau de cercle",
+  "lecture": [
+   "Le trait orange épais est l'arc AB, qui va de A à B.",
+   "Le reste du cercle, en gris, est l'autre morceau.",
+   "Le trait gris en pointillés est le segment droit entre A et B : ce n'est pas l'arc."
+  ],
+  "a_voir": "Tu vois quel morceau du cercle porte le nom arc AB."
+ }
+]
