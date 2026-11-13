@@ -1,0 +1,182 @@
+[
+ {
+  "code": "50-001",
+  "a_dire": "Le signe |G| se lit « le nombre d'éléments de G ».",
+  "legende_titre": "Que disent les deux barres ?",
+  "lecture": [
+   "Les cercles bleus sont les éléments du groupe G : il y en a 12.",
+   "La flèche orange relie le groupe à l'écriture |G| = 12.",
+   "La case verte donne le nom de ce nombre : l'ordre du groupe."
+  ],
+  "a_voir": "Les barres autour de G donnent le nombre de cercles, ici 12."
+ },
+ {
+  "code": "50-002",
+  "a_dire": "Lagrange part d'un sous-groupe donné et conclut sur le nombre d'éléments du groupe ; il ne dit pas comment trouver un sous-groupe.",
+  "legende_titre": "Dans quel sens va le théorème ?",
+  "lecture": [
+   "La case bleue à gauche est un sous-groupe donné, avec 4 éléments.",
+   "La flèche orange du haut va vers la case verte : le nombre d'éléments du groupe est un multiple de 4.",
+   "La flèche grise du bas, vers le sous-groupe, n'est pas démontrée par le théorème."
+  ],
+  "a_voir": "Le théorème va du sous-groupe vers le nombre, pas dans l'autre sens."
+ },
+ {
+  "code": "50-003",
+  "a_dire": "La question inverse est une liste de six questions, une par diviseur de 12, chacune avec la réponse oui ou non.",
+  "legende_titre": "Six questions au lieu d'une",
+  "lecture": [
+   "Chaque case porte un diviseur de 12 : 1, 2, 3, 4, 6 et 12.",
+   "Le point d'interrogation dit que la réponse est encore inconnue.",
+   "La case orange est le diviseur 6, celui que Tom choisit."
+  ],
+  "a_voir": "Il y a six questions à résoudre, une par case."
+ },
+ {
+  "code": "50-004",
+  "a_dire": "Lagrange exclut les tailles qui ne divisent pas 12, mais il ne garantit aucune des tailles restantes.",
+  "legende_titre": "Exclure n'est pas garantir",
+  "lecture": [
+   "Les cases rouges sont les tailles exclues : 5, 7, 8, 9, 10 et 11.",
+   "Les cases grises en pointillés sont les tailles permises : 1, 2, 3, 4, 6 et 12.",
+   "Aucune case n'est verte : aucune taille permise n'est assurée."
+  ],
+  "a_voir": "Le rouge est interdit ; le gris en pointillés est seulement permis."
+ },
+ {
+  "code": "50-005",
+  "a_dire": "Dans l'horloge à 12 heures, pour chaque diviseur d de 12, on avance de 12/d heures et on obtient un sous-groupe de d éléments.",
+  "legende_titre": "Un sous-groupe par diviseur dans l'horloge",
+  "lecture": [
+   "Chaque cercle de 12 points est l'horloge ; les cercles orange numérotés sont les heures atteintes.",
+   "À gauche, avec le pas de 4, on passe par 0, 4 et 8 : 3 éléments.",
+   "À droite, avec le pas de 6, on passe par 0 et 6 : 2 éléments."
+  ],
+  "a_voir": "Le pas de 12/d heures donne d éléments qui reviennent à 0."
+ },
+ {
+  "code": "50-006",
+  "a_dire": "Le groupe A4 a 12 éléments (1 + 3 + 8) et aucun sous-groupe de 6 éléments.",
+  "legende_titre": "Un groupe de 12 éléments sans sous-groupe de 6",
+  "lecture": [
+   "Le cercle gris est l'identité, les 3 cercles bleus sont d'ordre 2, les 8 cercles violets sont d'ordre 3.",
+   "Le cadre rouge en pointillés contient 6 cercles vides : aucun choix de 6 éléments ne forme un sous-groupe."
+  ],
+  "a_voir": "Il y a 12 éléments en tout, mais pas de sous-groupe de 6."
+ },
+ {
+  "code": "50-007",
+  "a_dire": "Deux groupes de 12 éléments, l'horloge et A4, donnent des réponses différentes pour le sous-groupe de 6 éléments.",
+  "legende_titre": "Même taille, réponses différentes",
+  "lecture": [
+   "Le cercle bleu est l'horloge, le cercle violet est A4 : chacun a 12 points.",
+   "La flèche orange pose la même question aux deux : un sous-groupe de 6 ?",
+   "La case verte dit oui pour l'horloge, la case rouge dit non pour A4."
+  ],
+  "a_voir": "Les deux anneaux ont 12 points, mais les réponses sont contraires."
+ },
+ {
+  "code": "50-008",
+  "a_dire": "Savoir seulement que |G| = 12 ne suffit pas à dire si G a un sous-groupe de 6 éléments.",
+  "legende_titre": "Le nombre 12 ne suffit pas",
+  "lecture": [
+   "La case grise du haut est un groupe inconnu dont on sait seulement |G| = 12.",
+   "Les deux flèches orange mènent aux deux groupes possibles.",
+   "L'horloge, en vert, répond oui ; A4, en rouge, répond non."
+  ],
+  "a_voir": "Un même nombre 12 mène à deux réponses opposées."
+ },
+ {
+  "code": "50-009",
+  "a_dire": "La question devient : pour quels diviseurs d la réponse est-elle oui dans tous les groupes de cet ordre ? Deux groupes ne suffisent pas à le prouver.",
+  "legende_titre": "Quels diviseurs réussissent partout ?",
+  "lecture": [
+   "Le grand cadre bleu est l'horloge : elle répond oui pour 1, 2, 3, 4, 6 et 12.",
+   "Le cadre violet est A4 : il répond oui pour 1, 2, 3, 4 et 12.",
+   "Le cercle rouge 6 est hors du cadre violet : A4 répond non pour 6.",
+   "Les cercles verts restent des candidats, rien de plus."
+  ],
+  "a_voir": "Seul le diviseur 6 est éliminé ; les autres sont des candidats."
+ },
+ {
+  "code": "50-010",
+  "a_dire": "Sylow est né en 1832, a publié un article de dix pages en 1872 et a obtenu une chaire à l'université en 1898, 26 ans plus tard.",
+  "legende_titre": "Une personne, une date, un article",
+  "lecture": [
+   "Le point gris est la naissance en 1832.",
+   "Le point bleu est l'article de 10 pages en 1872.",
+   "Le point vert est la chaire à l'université en 1898.",
+   "La bande orange entre 1872 et 1898 est le temps passé au lycée : 26 ans."
+  ],
+  "a_voir": "Le résultat a un auteur et une date précis."
+ },
+ {
+  "code": "50-011",
+  "a_dire": "Sylow répond oui pour chaque puissance d'un nombre premier qui divise l'ordre ; pour 12, ce sont 2, 4 et 3, et pas 6.",
+  "legende_titre": "Quels diviseurs sont garantis ?",
+  "lecture": [
+   "Le cadre vert de gauche contient 2 et 4, des puissances de 2 : 4 = 2 × 2.",
+   "Le cadre vert du milieu contient 3, une puissance de 3.",
+   "Le cadre gris en pointillés contient 6 = 2 × 3 : deux premiers différents, donc pas dans la liste."
+  ],
+  "a_voir": "On trie les diviseurs selon leurs facteurs premiers."
+ },
+ {
+  "code": "50-012",
+  "a_dire": "Pour |G| = 12 = 2² × 3, on décompose l'ordre en nombres premiers et on lit les tailles garanties facteur par facteur : 2, 4 et 3, pas 6.",
+  "legende_titre": "Lire les tailles garanties sur 12 = 2² × 3",
+  "lecture": [
+   "Les 4 carrés bleus sont la part de 2 : 2² = 4.",
+   "Les 3 carrés violets sont la part de 3.",
+   "Le texte vert sous chaque part donne les tailles garanties : 2 et 4, puis 3.",
+   "Le texte gris en bas rappelle que 6 n'est pas garanti."
+  ],
+  "a_voir": "Chaque facteur premier donne ses propres tailles garanties."
+ },
+ {
+  "code": "50-013",
+  "a_dire": "Le nombre 6 = 2 × 3 mélange deux premiers différents : la règle de Sylow ne le garantit pas, et A4 est un contre-exemple.",
+  "legende_titre": "Pourquoi 6 n'est pas garanti",
+  "lecture": [
+   "Le cercle bleu 2 et le cercle violet 3 sont les deux premiers de 6 = 2 × 3.",
+   "La case verte montre l'horloge : elle a un sous-groupe de 6.",
+   "La case rouge montre A4 : il n'en a pas, c'est le contre-exemple."
+  ],
+  "a_voir": "Un seul cas qui échoue suffit à refuser la garantie."
+ },
+ {
+  "code": "50-014",
+  "a_dire": "Le chapitre part des actions de groupes du chapitre 49, énonce trois théorèmes, puis les utilise pour décider des ordres comme 15, 12 et 30.",
+  "legende_titre": "Le plan du chapitre en trois temps",
+  "lecture": [
+   "La case grise de gauche est l'origine : les actions de groupes du chapitre 49.",
+   "La case bleue du milieu contient les trois énoncés.",
+   "La case verte de droite contient les usages : les ordres 15, 12 et 30.",
+   "Les flèches orange donnent le sens : de l'origine aux énoncés, puis aux usages."
+  ],
+  "a_voir": "Les théorèmes viennent d'un chapitre antérieur et servent à trancher des cas."
+ },
+ {
+  "code": "50-015",
+  "a_dire": "Sur la grille, une seule case est rouge : A4 pour d = 6 ; tout le reste est vert.",
+  "legende_titre": "Où les deux groupes se séparent",
+  "lecture": [
+   "Chaque colonne est un diviseur d de 12 ; la ligne du haut est Z/12Z, celle du bas est A4.",
+   "Une case verte avec un cercle veut dire oui.",
+   "La case rouge avec une croix veut dire non ; elle est dans le cadre orange, colonne 6."
+  ],
+  "a_voir": "Le désaccord tient dans la seule colonne 6."
+ },
+ {
+  "code": "50-016",
+  "a_dire": "Dans l'horloge, les pas de 6, 4 et 2 heures donnent des sous-groupes de 2, 3 et 6 éléments.",
+  "legende_titre": "Trois sous-groupes de l'horloge",
+  "lecture": [
+   "Chaque cercle de 12 points est l'horloge ; les cercles bleus numérotés sont les éléments du sous-groupe.",
+   "À gauche, le pas de 6 donne 0 et 6.",
+   "Au milieu, le pas de 4 donne 0, 4 et 8.",
+   "À droite, le pas de 2 donne les six heures paires."
+  ],
+  "a_voir": "Ces trois exemples tiennent dans la même horloge."
+ }
+]

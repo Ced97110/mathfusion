@@ -1,0 +1,193 @@
+[
+ {
+  "code": "50-161",
+  "a_dire": "Quand la divisibilité laisse deux valeurs, 𝑛₃ ∈ {1, 4}, le comptage des 3-cycles de 𝐴₄ choisit : huit éléments d'ordre 3, deux par 3-Sylow, donc 𝑛₃ = 4.",
+  "legende_titre": "Deux valeurs possibles, un comptage qui tranche",
+  "lecture": [
+   "En haut, vous lisez les deux valeurs possibles de 𝑛₃ : 1 ou 4.",
+   "Chaque cadre bleu est un 3-Sylow : le disque gris est 𝑒, les deux disques bleus sont d'ordre 3.",
+   "Il y a 4 cadres, donc 8 disques bleus au total, deux par cadre.",
+   "Le cadre vert donne le résultat : 8 divisé par 2 égale 4."
+  ],
+  "a_voir": "Huit éléments d'ordre 3 rangés par paquets de 2 donnent 4 sous-groupes."
+ },
+ {
+  "code": "50-162",
+  "a_dire": "La figure place côte à côte les deux calculs de l'ordre 15 : dans chaque ligne, un candidat est barré et il reste 1.",
+  "legende_titre": "Deux lignes, un même calcul",
+  "lecture": [
+   "La première ligne traite 𝑛₃ : les diviseurs de 5 sont 5 et 1.",
+   "La seconde ligne traite 𝑛₅ : les diviseurs de 3 sont 3 et 1.",
+   "Le cadre rouge barré est le candidat écarté ; la phrase rouge dit pourquoi.",
+   "Le cadre vert à droite donne ce qui reste : 1 dans chaque ligne."
+  ],
+  "a_voir": "Les deux lignes ont la même forme : un candidat barré, il reste 1."
+ },
+ {
+  "code": "50-163",
+  "a_dire": "Pour un groupe de 15 éléments, 𝑛₃ = 1 et 𝑛₅ = 1 : il y a un seul sous-groupe de 3 éléments et un seul de 5 éléments.",
+  "legende_titre": "Un groupe de 15 éléments, deux sous-groupes uniques",
+  "lecture": [
+   "La rangée de 15 disques gris est le groupe 𝐺.",
+   "Le cadre bleu contient 3 disques : le sous-groupe 𝑃, et 𝑛₃ = 1.",
+   "Le cadre violet contient 5 disques : le sous-groupe 𝑄, et 𝑛₅ = 1.",
+   "Chaque flèche part du groupe vers le sous-groupe unique de cette taille."
+  ],
+  "a_voir": "L'ordre 15 seul donne un unique sous-groupe de 3 éléments et un unique de 5 éléments."
+ },
+ {
+  "code": "50-164",
+  "a_dire": "Le nombre 𝑛₅ divise 3, donc vaut 1 ou 3 ; seul 1 laisse le reste 1 modulo 5, donc 𝑛₅ = 1 et 𝑄 est normal.",
+  "legende_titre": "Parmi 1 et 3, un seul convient modulo 5",
+  "lecture": [
+   "Sur la droite graduée, les deux disques bleus sont les nombres 1 et 6, qui laissent le reste 1 modulo 5.",
+   "Le cadre vert 1 et le cadre rouge 3 sont les diviseurs de 3.",
+   "La flèche verte tombe sur un disque bleu : 1 convient.",
+   "La flèche rouge tombe sur un point sans disque : 3 est écarté, car 3 − 1 = 2 n'est pas un multiple de 5."
+  ],
+  "a_voir": "Seul 1 tombe sur un nombre de reste 1 modulo 5, donc 𝑛₅ = 1."
+ },
+ {
+  "code": "50-165",
+  "a_dire": "Le nombre 𝑛₃ divise 5 ; en partageant en groupes de 3, 1 laisse le reste 1 mais 5 laisse le reste 2, donc 𝑛₃ = 1 et 𝑃 est normal.",
+  "legende_titre": "Le reste de la division par 3 départage 1 et 5",
+  "lecture": [
+   "Chaque ligne partage un candidat en groupes de 3 : les disques orange sont ce qui reste.",
+   "Ligne 1 : le candidat 1 laisse 1 disque orange, donc le reste vaut 1.",
+   "Ligne 2 : le candidat 5 fait un groupe de 3 puis laisse 2 disques orange, donc le reste vaut 2.",
+   "Le cadre vert en bas donne le résultat : 𝑛₃ = 1."
+  ],
+  "a_voir": "Le reste doit valoir 1 : 1 est gardé, 5 est écarté."
+ },
+ {
+  "code": "50-166",
+  "a_dire": "L'intersection de 𝑃 (3 éléments) et de 𝑄 (5 éléments) a une taille qui divise 3 et 5 ; elle vaut 1, donc 𝑃 ∩ 𝑄 = {𝑒}.",
+  "legende_titre": "Deux cercles, un seul point commun",
+  "lecture": [
+   "Le cercle bleu est 𝑃 : 3 éléments, dont 𝑒.",
+   "Le cercle violet est 𝑄 : 5 éléments, dont 𝑒.",
+   "Le disque vert dans la partie commune est 𝑒, le seul élément commun.",
+   "Le texte du bas dit pourquoi : la taille commune divise 3 et 5, donc elle vaut 1."
+  ],
+  "a_voir": "La partie commune des deux cercles ne contient que 𝑒."
+ },
+ {
+  "code": "50-167",
+  "a_dire": "Deux sous-groupes dont les tailles sont deux nombres premiers distincts n'ont en commun que l'identité, car 1 est le seul diviseur commun.",
+  "legende_titre": "Les diviseurs de 3 et de 5 n'ont que 1 en commun",
+  "lecture": [
+   "À gauche, en bleu, les diviseurs de 3 : 1 et 3.",
+   "À droite, en violet, les diviseurs de 5 : 1 et 5.",
+   "Les cases 3 et 5 sont barrées en rouge : elles ne sont pas communes.",
+   "Les deux flèches grises mènent au cadre vert « 1 en commun », puis à 𝑃 ∩ 𝑄 = {𝑒}."
+  ],
+  "a_voir": "Le seul diviseur commun de 3 et de 5 est 1, donc l'intersection est {𝑒}."
+ },
+ {
+  "code": "50-168",
+  "a_dire": "Le commutateur 𝑥𝑦𝑥⁻¹𝑦⁻¹, lu de deux façons, est dans 𝑄 et dans 𝑃, donc dans 𝑃 ∩ 𝑄.",
+  "legende_titre": "Un même produit, lu de deux façons",
+  "lecture": [
+   "Les quatre cadres sont les quatre facteurs : 𝑥 et 𝑥⁻¹ en bleu (dans 𝑃), 𝑦 et 𝑦⁻¹ en violet (dans 𝑄).",
+   "Sous le produit, l'accolade violette regroupe 𝑥𝑦𝑥⁻¹, qui est dans 𝑄 ; avec 𝑦⁻¹, le tout est dans 𝑄.",
+   "Au-dessus, l'accolade bleue regroupe 𝑦𝑥⁻¹𝑦⁻¹, qui est dans 𝑃 ; avec 𝑥, le tout est dans 𝑃.",
+   "Le cadre vert conclut : le produit est dans 𝑃 ∩ 𝑄."
+  ],
+  "a_voir": "Deux lectures du même produit le placent dans 𝑃 et dans 𝑄."
+ },
+ {
+  "code": "50-169",
+  "a_dire": "Si 𝑃 et 𝑄 sont normaux et que 𝑃 ∩ 𝑄 = {𝑒}, alors 𝑥𝑦 = 𝑦𝑥 ; sans la normalité de 𝑃, l'égalité peut être fausse.",
+  "legende_titre": "Sans normalité, la commutation tombe",
+  "lecture": [
+   "Colonne verte à gauche : 𝑃 et 𝑄 sont normaux, l'intersection est {𝑒}, donc 𝑥𝑦 = 𝑦𝑥.",
+   "Colonne rouge à droite : 𝑃 n'est pas normal, l'intersection est encore {𝑒}.",
+   "Le cadre rouge du bas dit que 𝑥𝑦 n'est pas égal à 𝑦𝑥.",
+   "Les deux lignes rouges donnent le cas du triangle : 𝑄 les rotations, 𝑃 l'identité et une réflexion."
+  ],
+  "a_voir": "L'intersection {𝑒} ne suffit pas : il faut que les deux sous-groupes soient normaux."
+ },
+ {
+  "code": "50-170",
+  "a_dire": "Tout élément 𝑥 de 𝑃 commute avec tout élément 𝑦 de 𝑄 : 𝑥𝑦 = 𝑦𝑥.",
+  "legende_titre": "Deux chemins, une même arrivée",
+  "lecture": [
+   "Les flèches bleues sont 𝑥, un élément de 𝑃.",
+   "Les flèches violettes sont 𝑦, un élément de 𝑄.",
+   "Chemin du bas : 𝑥 puis 𝑦. Chemin de gauche : 𝑦 puis 𝑥.",
+   "Les deux chemins finissent au même disque vert : 𝑥𝑦 = 𝑦𝑥."
+  ],
+  "a_voir": "Faire 𝑥 puis 𝑦, ou 𝑦 puis 𝑥, mène au même résultat."
+ },
+ {
+  "code": "50-171",
+  "a_dire": "Si 𝑥 est d'ordre 3, 𝑦 d'ordre 5 et qu'ils commutent, 𝑥𝑦 est d'ordre 15 ; sur l'horloge à 15 heures, 5 + 3 = 8 est d'ordre 15.",
+  "legende_titre": "Un produit d'ordre 3 et d'ordre 5 : ordre 15",
+  "lecture": [
+   "Les 15 disques en cercle sont les heures de l'horloge, de 0 à 14.",
+   "Les disques bleus sont les multiples de 5 : 5 est d'ordre 3. Les disques violets sont les multiples de 3 : 3 est d'ordre 5.",
+   "Le disque vert 8 vaut 5 + 3 : les flèches vertes montrent des sauts de 8 depuis 0.",
+   "Il faut 15 sauts de 8 pour revenir à 0 : 8 est d'ordre 15."
+  ],
+  "a_voir": "Les sauts de 8 ne reviennent à 0 qu'après 15 sauts."
+ },
+ {
+  "code": "50-172",
+  "a_dire": "Tout groupe d'ordre 15 est isomorphe à ℤ/15ℤ, l'horloge à 15 heures.",
+  "legende_titre": "Un groupe de 15 éléments est une horloge",
+  "lecture": [
+   "À gauche, les 15 disques bleus sont les éléments de 𝐺 ; le disque orange est 𝑥𝑦, d'ordre 15.",
+   "À droite, les 15 disques verts forment l'horloge ℤ/15ℤ.",
+   "La flèche avec le signe ≅ relie le groupe à l'horloge.",
+   "Tous les éléments de 𝐺 sont des puissances de 𝑥𝑦."
+  ],
+  "a_voir": "Le groupe a les mêmes éléments et les mêmes produits que l'horloge à 15 heures."
+ },
+ {
+  "code": "50-173",
+  "a_dire": "Pour l'ordre 15, chaque décision vient d'une divisibilité : 𝑛₅ = 1, 𝑛₃ = 1, |𝑃 ∩ 𝑄| = 1 et 𝑥𝑦 d'ordre 15.",
+  "legende_titre": "Quatre étapes, quatre divisibilités",
+  "lecture": [
+   "Ligne 1 : 𝑛₅ divise 3 ; le candidat 3 est barré en rouge, il reste 1.",
+   "Ligne 2 : 𝑛₃ divise 5 ; le candidat 5 est barré en rouge, il reste 1.",
+   "Ligne 3 : la taille de 𝑃 ∩ 𝑄 divise 3 et 5, donc elle vaut 1.",
+   "Ligne 4 : 3 et 5 divisent l'ordre de 𝑥𝑦, donc il vaut 15."
+  ],
+  "a_voir": "Chaque ligne s'obtient par une division, sans table de multiplication."
+ },
+ {
+  "code": "50-174",
+  "a_dire": "Pour un groupe d'ordre 𝑝𝑞 avec 𝑝 < 𝑞, 𝑛_𝑞 vaut 1 ou 𝑝, et 𝑝 − 1 est entre 0 et 𝑞, donc pas un multiple de 𝑞 : 𝑛_𝑞 = 1 et le 𝑞-Sylow est normal.",
+  "legende_titre": "Entre 0 et 𝑞, il n'y a aucun multiple de 𝑞",
+  "lecture": [
+   "Le texte du haut rappelle que 𝑛_𝑞 vaut 1 ou 𝑝 ; ici 𝑝 = 3 et 𝑞 = 5.",
+   "Les 5 cases sont les 5 unités de 0 à 𝑞 ; les 2 cases orange comptent 𝑝 − 1 = 2.",
+   "Les repères 0 et 5 sont les seuls multiples de 𝑞 ; 2 n'en est pas un.",
+   "Le cadre vert conclut : 𝑛_𝑞 = 1."
+  ],
+  "a_voir": "𝑝 − 1 reste strictement entre 0 et 𝑞, donc ce n'est pas un multiple de 𝑞."
+ },
+ {
+  "code": "50-175",
+  "a_dire": "Un groupe d'ordre 𝑝𝑞 a un sous-groupe normal ni réduit à {𝑒} ni égal au groupe, donc il n'est jamais simple.",
+  "legende_titre": "Un sous-groupe normal entre {𝑒} et 𝐺",
+  "lecture": [
+   "La case grise du haut est {𝑒} : 1 élément.",
+   "Les 5 cases vertes sont 𝑄, normal : 5 éléments.",
+   "Les 15 cases bleues sont 𝐺 : 15 éléments.",
+   "𝑄 est plus grand que {𝑒} et plus petit que 𝐺 : le groupe n'est pas simple."
+  ],
+  "a_voir": "Le sous-groupe normal 𝑄 n'est ni {𝑒} ni 𝐺."
+ },
+ {
+  "code": "50-176",
+  "a_dire": "Le signe 𝑞 ≢ 1 (mod 𝑝) se lit « 𝑞 n'est pas congru à 1 modulo 𝑝 » et veut dire que 𝑞 − 1 n'est pas un multiple de 𝑝.",
+  "legende_titre": "Lire un signe barré de congruence",
+  "lecture": [
+   "Le signe 5 ≢ 1 (mod 3) est découpé en quatre morceaux, chacun relié à son sens.",
+   "Le 5 est 𝑞 ; le signe rouge ≢ se lit « pas congru » ; le 1 est le reste ; (mod 3) donne le nombre 𝑝 = 3.",
+   "La flèche verte mène à la lecture : 5 − 1 = 4, qui n'est pas un multiple de 3."
+  ],
+  "a_voir": "Le trait barré dit que 𝑞 − 1 n'est pas un multiple de 𝑝."
+ }
+]

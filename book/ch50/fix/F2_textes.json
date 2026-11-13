@@ -1,0 +1,124 @@
+{
+ "50-121": {
+  "lecture": [
+   "La rangée du haut est 𝒮, avec k = 3 ; la case orange P_B est Q.",
+   "L'étape 1 : Q = P_B agit ; les flèches orange mènent aux deux orbites.",
+   "La case verte {P_B} est l'orbite de taille 1 ; la case orange {P_A, P_C} est celle de taille 2.",
+   "L'étape 2 additionne : 1 + 2 = 3. L'étape 3 : 2 ne divise pas 3."
+  ],
+  "a_voir": "Les étapes 1, 2, 3 se suivent : Q = P_B donne les orbites 1 et 2, et 2 ne divise pas 3."
+ },
+ "50-122": {
+  "lecture": [
+   "La barre du haut est |G| = 6 coupée en 1 (centre, gris), 2 (indice 2, orange) et 3 (indice 3, vert).",
+   "L'indice 3 n'est pas divisible par p = 2 : la flèche verte mène au cas 1.",
+   "Le cas 1 (vert) : on travaille dans C(y), plus petit. Le cas 2 (gris, pointillés) : p divise |C|, on passe au quotient.",
+   "Dans les deux cas, la case bleue du bas conclut : on retombe sur un groupe plus petit, donc la récurrence sur |G| s'applique."
+  ],
+  "a_voir": "Deux cas côte à côte mènent tous deux à un groupe plus petit : c'est la récurrence."
+ },
+ "50-126": {
+  "lecture": [
+   "La case bleue du haut est l'énoncé : groupe abélien, p premier divise |G|.",
+   "La flèche verte mène à la conclusion : il existe un élément d'ordre p.",
+   "Les quatre disques sont les éléments de ℤ/2ℤ × ℤ/2ℤ ; le gris est l'identité e, d'ordre 1.",
+   "Les trois disques verts sont d'ordre 2 : x · x = e. Avec p = 2, le lemme est vérifié."
+  ],
+  "a_voir": "Avec p = 2 premier qui divise 4, il y a bien des éléments d'ordre 2."
+ },
+ "50-127": {
+  "lecture": [
+   "Le grand cercle de gauche est G : les douze heures de 0 à 11 ; chaque trait relie deux heures opposées.",
+   "Étape 1 : on passe au quotient G/⟨6⟩, la case de droite, qui a 6 paquets.",
+   "Étape 2 : dans le quotient, les deux paquets orange {0,6} et {3,9} forment un sous-groupe de 2 éléments.",
+   "Étape 3 : on remonte dans G ; la flèche verte mène aux heures vertes 0, 3, 6, 9."
+  ],
+  "a_voir": "On passe au quotient, on y prend 2 paquets, puis on remonte : 4 heures, 0, 3, 6, 9."
+ },
+ "50-155": {
+  "lecture": [
+   "À gauche (indice 2), H est formé des 3 rotations : chaque flèche orange mène de l'élément au carré, et les carrés e, r², r sont dans H.",
+   "Le carré d'une réflexion est e, qui est dans H.",
+   "À droite (indice 3), H n'a que 2 éléments, e et s.",
+   "La flèche orange donne le carré de r : r² est rouge, hors de H."
+  ],
+  "a_voir": "Avec l'indice 2 tous les carrés restent dans H ; avec l'indice 3 le carré de r sort de H."
+ },
+ "50-188": {
+  "lecture": [
+   "Le cercle bleu est un 5-Sylow ; le cercle violet est un autre 5-Sylow ; le cadre pointillé est G, de 30 éléments.",
+   "Les cercles se touchent en un seul point : le disque vert e, le seul élément commun.",
+   "Chaque cercle a 4 autres disques, qui ne sont que dans lui : p − 1 = 4 éléments nouveaux."
+  ],
+  "a_voir": "Les deux cercles ne se touchent qu'en e ; chacun apporte 4 éléments nouveaux."
+ },
+ "50-208": {
+  "lecture": [
+   "Chaque rangée de cases liste les choix possibles pour le nombre de sous-groupes : les diviseurs de 11, de 9 ou de 4.",
+   "Pour l'ordre 99, seule la case verte 1 garde le reste 1 ; les cases rouges sont exclues. Un seul choix reste : le groupe est abélien.",
+   "Pour l'ordre 12, les cases orange 1 et 4 gardent le reste 1 ; la case rouge 2 est exclue.",
+   "Deux choix restent : le groupe alterné A₄ de 12 éléments n'est pas abélien."
+  ],
+  "a_voir": "Pour l'ordre 99 une seule case reste ; pour l'ordre 12 deux cases restent."
+ },
+ "50-218": {
+  "lecture": [
+   "La case bleue du haut est le quotient de 35 = 5 × 7 éléments.",
+   "Les 7 disques sont rangés en un groupe de 5 (bleu) et un reste de 2 (orange) : 7 = 1 × 5 + 2.",
+   "La chaîne du bas se lit de gauche à droite : le reste est 2 et non 1, donc cyclique, donc abélien, donc G′ est dans H₁."
+  ],
+  "a_voir": "Le reste 2, différent de 1, est l'étape qui donne le résultat."
+ },
+ "50-224": {
+  "lecture": [
+   "Le grand cadre gris est G, de 27 = 3 × 3 × 3 éléments.",
+   "Le cadre bleu est le centre Z(G) : 3, 9 ou 27 éléments.",
+   "Le cadre vert est un sous-groupe H d'ordre 3.",
+   "Les trois cases de droite nomment les trois faits : 1 centre non réduit à {e}, 2 centre normal, 3 sous-groupe d'ordre p par Cauchy."
+  ],
+  "a_voir": "Trois faits suffisent, vrais pour tout p et tout n plus grand que 1."
+ },
+ "50-234": {
+  "lecture": [
+   "La rangée du haut montre les deux classes à gauche : L, les 3 rotations (bleu), et le reste, les 3 réflexions (orange).",
+   "La rangée du bas montre les deux classes à droite : ce sont les mêmes deux ensembles.",
+   "Les signes égal relient chaque classe à sa jumelle : hL = Lh pour tout h."
+  ],
+  "a_voir": "Avec l'indice 2, il n'y a que deux classes, à gauche comme à droite, et ce sont les mêmes."
+ },
+ "50-235": {
+  "lecture": [
+   "Les trois cases bleues sont L ; les trois cases orange sont le reste du groupe.",
+   "La case h, au contour épais, est dans le reste : elle n'est pas dans L.",
+   "L'accolade du haut dit que hL est le reste ; celle du bas dit que Lh est aussi le reste.",
+   "Le signe égal relie les deux rangées : hL = Lh."
+  ],
+  "a_voir": "hL et Lh sont le même ensemble : le reste du groupe."
+ },
+ "50-236": {
+  "lecture": [
+   "La boîte pointillée grise est le normalisateur N(H ∩ K).",
+   "La boîte bleue est H (16 éléments), la violette est K (16), la partie verte est H ∩ K (8).",
+   "Étape 1 : H ∩ K est d'indice 2 dans H et dans K. Étape 2 : il est donc normal dans chacun.",
+   "Étape 3 : H et K sont donc dans N."
+  ],
+  "a_voir": "H et K sont tous deux dans la boîte pointillée du normalisateur."
+ },
+ "50-244": {
+  "lecture": [
+   "La case bleue du haut est l'équation et sa question : existe-t-il une formule avec des radicaux ?",
+   "La case violette du bas est son groupe de Galois et sa question : est-il résoluble, c'est-à-dire découpé en quotients abéliens (les marches) ?",
+   "La flèche verte à deux pointes porte « si et seulement si » : les deux questions ont la même réponse."
+  ],
+  "a_voir": "Chercher une formule revient à examiner un groupe fini."
+ },
+ "50-256": {
+  "lecture": [
+   "La case grise de gauche est le groupe G à 6 éléments.",
+   "La flèche orange mène à G′, les 3 rotations : c'est la première marche, et G/G′ est abélien.",
+   "La flèche grise mène à {e} : c'est la deuxième marche, et G′ est abélien.",
+   "La suite G, G′, {e} est faite de marches abéliennes."
+  ],
+  "a_voir": "G′ est la première marche d'une suite de sous-groupes qui définit les groupes résolubles."
+ }
+}

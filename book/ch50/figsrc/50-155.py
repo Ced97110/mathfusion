@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 65, 'indice 2', 'resultat', 'm', weight='bold'); text(ax, 66, 65, 'indice 3', 'limite', 'm', weight='bold')
+box(ax, 3, 30, 38, 30, 'resultat')
+text(ax, 22, 56.5, r'$H$ : rotations → carrés', 'resultat', 's')
+for x, s, q in [(11, r'$e$', r'$e$'), (22, r'$r$', r'$r^2$'), (33, r'$r^2$', r'$r$')]:
+    disc(ax, x, 48, 3.4, 'sujet', label=s, size='s')
+    arrow(ax, (x, 44), (x, 38.6), 'varie')
+    disc(ax, x, 35, 3.4, 'resultat', label=q, size='s')
+text(ax, 22, 21, r'3 réflexions : carré $e\in H$', 'resultat', 's')
+box(ax, 47, 44, 38, 16, 'sujet')
+text(ax, 66, 52, r'$H=\{e,s\}$', 'sujet', 's')
+disc(ax, 55, 33, 3.4, 'limite', label=r'$r$', size='s'); disc(ax, 77, 33, 3.4, 'limite', label=r'$r^2$', size='s')
+arrow(ax, (59, 33), (73, 33), 'varie')
+text(ax, 66, 23, r'carré de $r$ : $r^2\notin H$', 'limite', 's')
+save(fig, '50-155')

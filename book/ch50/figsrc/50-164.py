@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 8, 72, 30, 0, 7)
+for v in (1, 6): disc(ax, f(v), 30, 1.7, 'sujet')
+text(ax, 44, 55, 'diviseurs de 3 : 1 et 3', 'encre', 'm')
+box(ax, f(1) - 5, 40, 10, 8, 'resultat', label='1')
+box(ax, f(3) - 5, 40, 10, 8, 'limite', label='3')
+arrow(ax, (f(1), 39.5), (f(1), 32.5), 'resultat')
+arrow(ax, (f(3), 39.5), (f(3), 32.5), 'limite')
+text(ax, 44, 19, r'points $\equiv1$ (mod 5) : 1 et 6', 'sujet', 's')
+text(ax, 44, 12, r'$3-1=2$ : pas multiple de 5', 'limite', 's')
+box(ax, 24, 1.5, 40, 7.5, 'resultat', label=r'$n_5=1$, $Q$ normal', size='s')
+save(fig, '50-164')

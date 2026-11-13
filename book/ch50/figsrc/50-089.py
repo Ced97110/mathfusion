@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'$6 = 3^1 \times 2$', 'encre', 'm')
+box(ax, 5, 38, 46, 15, 'sujet')
+for x, s in zip((14, 28, 42), (r'$e$', r'$r$', r'$r^2$')): disc(ax, x, 45.5, 4.4, 'sujet', label=s, size='s')
+text(ax, 69, 49, 'seul 3-Sylow', 'sujet', 's', weight='bold'); text(ax, 69, 43, 'rotations, ordre 3', 'sujet', 's')
+box(ax, 5, 12, 46, 15, 'limite', dash=True)
+for x, s in zip((14, 28, 42), (r'$s_A$', r'$s_B$', r'$s_C$')): disc(ax, x, 19.5, 4.4, 'limite', label=s, size='s')
+text(ax, 69, 23, 'réflexions, ordre 2', 'limite', 's'); text(ax, 69, 17, 'ne conviennent pas', 'limite', 's')
+save(fig, '50-089')

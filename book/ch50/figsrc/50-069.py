@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, 'Sans le mot', 'fixe', 'm', weight='bold')
+box(ax, 4, 56, 80, 17, 'fixe')
+text(ax, 44, 67, 'l’ensemble des éléments de $G$', 'fixe', 's')
+text(ax, 44, 61.5, 'qui laissent $H$ inchangé', 'fixe', 's')
+arrow(ax, (44, 54), (44, 45), 'varie', lw=1.3)
+text(ax, 62, 49.5, 'on le nomme', 'varie', 's', ha='left')
+box(ax, 24, 29, 40, 14, 'sujet', label=r'$N(H)$', size='l', weight='bold')
+text(ax, 44, 22, 'conjugués de $H$ :', 'sujet', 's')
+text(ax, 44, 15, r'$[G:N(H)] = 6\ /\ 2 = 3$', 'resultat', 'm', weight='bold')
+text(ax, 44, 7, 'le comptage se lit en une ligne', 'resultat', 's')
+save(fig, '50-069')

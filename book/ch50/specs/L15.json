@@ -1,0 +1,178 @@
+[
+ {
+  "code": "50-225",
+  "a_dire": "Le centre reste en place quand on le conjugue : g z g^(-1) = z.",
+  "legende_titre": "Le centre ne bouge pas",
+  "lecture": [
+   "À gauche, le rond bleu z est un élément du centre. La flèche grise montre la conjugaison par g.",
+   "En bas à gauche, on retrouve le même z, au même endroit.",
+   "À droite, les ronds violets r et r² sont un autre sous-groupe normal. Les flèches orange croisées montrent qu'ils s'échangent."
+  ],
+  "a_voir": "Dans le centre, la conjugaison ne déplace rien ; ailleurs elle peut échanger des éléments."
+ },
+ {
+  "code": "50-226",
+  "a_dire": "Si Z(G) = G, le groupe est abélien, donc le sous-groupe d'ordre p de Cauchy est normal et propre.",
+  "legende_titre": "Un sous-groupe de l'horloge à 9 heures",
+  "lecture": [
+   "Les 9 ronds sont les éléments de l'horloge à 9 heures. Les trois ronds bleus 0, 3 et 6 forment le sous-groupe.",
+   "La boîte grise donne 9 éléments, la boîte bleue en donne 3.",
+   "En vert : 3 est plus petit que 9, donc le sous-groupe est propre ; le groupe est abélien, donc conjuguer ne change rien et le sous-groupe est normal."
+  ],
+  "a_voir": "Les trois ronds bleus sont un sous-groupe normal plus petit que le groupe entier."
+ },
+ {
+  "code": "50-227",
+  "a_dire": "Pour l'ordre 56, n_7 divise 8 et laisse le reste 1 modulo 7 : il vaut 1 ou 8.",
+  "legende_titre": "Deux valeurs possibles pour n_7",
+  "lecture": [
+   "La rangée du haut donne les diviseurs de 8 : 1, 2, 4 et 8.",
+   "La rangée du bas donne le reste de chacun dans la division par 7.",
+   "Les cases vertes ont le reste 1 ; les cases rouges 2 et 4 ont un autre reste et sont écartées."
+  ],
+  "a_voir": "Seuls 1 et 8 gardent le reste 1, donc n_7 vaut 1 ou 8."
+ },
+ {
+  "code": "50-228",
+  "a_dire": "Les 56 éléments se partagent en 48 éléments d'ordre 7 et 8 éléments restants, sans recouvrement.",
+  "legende_titre": "56 cases en deux régions",
+  "lecture": [
+   "Chaque case est un élément du groupe : il y en a 56 en tout.",
+   "Les 48 cases orange, en six lignes de huit, sont les éléments d'ordre 7.",
+   "Les 8 cases bleues de la dernière ligne sont les éléments restants ; l'une porte la lettre e, l'identité."
+  ],
+  "a_voir": "Les deux régions ne se chevauchent pas : il reste exactement 8 cases bleues."
+ },
+ {
+  "code": "50-229",
+  "a_dire": "Huit 7-Sylow qui ne partagent que e apportent 8 × 6 = 48 éléments d'ordre 7.",
+  "legende_titre": "Huit lignes de six éléments",
+  "lecture": [
+   "Le rond bleu au centre est e, commun à toutes les lignes.",
+   "Chacune des 8 lignes bleues est un 7-Sylow.",
+   "Les 6 ronds orange sur chaque ligne sont ses éléments propres, d'ordre 7 ; en tout 48 ronds."
+  ],
+  "a_voir": "Chaque ligne apporte 6 éléments à elle seule, donc 8 × 6 = 48."
+ },
+ {
+  "code": "50-230",
+  "a_dire": "Un 2-Sylow n'a aucun élément d'ordre 7 et a 8 éléments : il occupe les 8 cases restantes, donc n_2 = 1.",
+  "legende_titre": "Où se place le 2-Sylow",
+  "lecture": [
+   "La bande orange en haut représente les 48 éléments d'ordre 7.",
+   "La flèche rouge dit qu'aucun élément de cette bande n'entre dans un 2-Sylow.",
+   "Les 8 cases bleues sont les éléments restants ; le cadre vert pointillé est le 2-Sylow, qui les remplit toutes."
+  ],
+  "a_voir": "Le 2-Sylow n'a pas d'autre place que les 8 cases restantes, il est donc unique."
+ },
+ {
+  "code": "50-231",
+  "a_dire": "Quand le comptage ne conclut pas, on compare deux 2-Sylow H et K : leur partie commune de 8 éléments a pour normalisateur G.",
+  "legende_titre": "Comparer deux 2-Sylow dans un groupe de 48",
+  "lecture": [
+   "La grande boîte grise est le groupe G, de 48 éléments.",
+   "La boîte bleue est H, la violette est K, de 16 éléments chacune.",
+   "La partie verte au milieu est H ∩ K, de 8 éléments ; en dessous, son normalisateur remplit tout G."
+  ],
+  "a_voir": "H ∩ K est une partie commune de 8 éléments dont le normalisateur est tout le groupe."
+ },
+ {
+  "code": "50-232",
+  "a_dire": "On suppose n_2 = 3 et on prend deux 2-Sylow différents H et K de 16 éléments.",
+  "legende_titre": "Deux 2-Sylow et leur partie commune",
+  "lecture": [
+   "La boîte bleue est H et la boîte violette est K, de 16 éléments chacune et différentes.",
+   "Les flèches mènent à leur partie commune H ∩ K, dont la taille est inconnue.",
+   "Cette taille divise 16 et reste plus petite que 16 : les cases orange 1, 2, 4 et 8 sont possibles, la case rouge 16 est exclue."
+  ],
+  "a_voir": "La partie commune vaut 1, 2, 4 ou 8."
+ },
+ {
+  "code": "50-233",
+  "a_dire": "Si la partie commune a 4 éléments ou moins, HK dépasse les 48 éléments de G : c'est impossible.",
+  "legende_titre": "Plus la partie commune est petite, plus HK grandit",
+  "lecture": [
+   "Chaque barre est la taille de HK donnée par la formule 16 × 16 divisé par |H ∩ K|.",
+   "La ligne bleue pointillée marque 48, la taille de G.",
+   "Les barres rouges (64, 128, 256) dépassent la ligne ; la barre verte (32) reste en dessous."
+  ],
+  "a_voir": "Seule la partie commune de 8 éléments donne un HK qui tient dans G."
+ },
+ {
+  "code": "50-234",
+  "a_dire": "Un sous-groupe d'indice 2 est normal : ses classes à gauche et à droite sont les mêmes.",
+  "legende_titre": "Deux classes, à gauche comme à droite",
+  "lecture": [
+   "La rangée du haut montre les deux classes à gauche : les 3 rotations en bleu, les 3 réflexions en orange.",
+   "La rangée du bas montre les deux classes à droite : ce sont les mêmes ensembles.",
+   "Le signe égal relie les deux rangées : hL = Lh pour tout h."
+  ],
+  "a_voir": "Les deux classes à gauche sont les mêmes ensembles que les deux classes à droite."
+ },
+ {
+  "code": "50-235",
+  "a_dire": "Pour h hors de L, hL et Lh sont tous deux le reste du groupe, donc ils sont égaux.",
+  "legende_titre": "Pourquoi hL = Lh",
+  "lecture": [
+   "Les trois cases bleues sont L ; les trois cases orange sont le reste du groupe.",
+   "La case h, au contour épais, est dans le reste : elle n'est pas dans L.",
+   "L'accolade du haut dit que hL est le reste ; celle du bas dit que Lh est aussi le reste."
+  ],
+  "a_voir": "hL et Lh sont le même ensemble : le reste du groupe."
+ },
+ {
+  "code": "50-236",
+  "a_dire": "H et K sont contenus dans le normalisateur de H ∩ K, parce que H ∩ K est normal dans chacun.",
+  "legende_titre": "H et K dans le normalisateur",
+  "lecture": [
+   "La boîte pointillée grise est le normalisateur N(H ∩ K).",
+   "La boîte bleue est H, la violette est K, et la partie verte est H ∩ K.",
+   "L'accolade sous H dit que 16 = 2 × 8 : H ∩ K est d'indice 2 dans H."
+  ],
+  "a_voir": "H et K sont tous deux dans la boîte pointillée du normalisateur."
+ },
+ {
+  "code": "50-237",
+  "a_dire": "Le normalisateur a un nombre d'éléments multiple de 16, plus grand que 16, qui divise 48 : c'est 48, donc N = G.",
+  "legende_titre": "Quelle taille pour le normalisateur",
+  "lecture": [
+   "Les trois boîtes sont les multiples de 16 jusqu'à 48 : 16, 32 et 48.",
+   "16 est rouge : le normalisateur doit dépasser 16. 32 est rouge : il ne divise pas 48.",
+   "48 est vert : il reste, donc le normalisateur est G et H ∩ K est normal dans G."
+  ],
+  "a_voir": "Seul 48 passe les deux conditions, donc N = G."
+ },
+ {
+  "code": "50-238",
+  "a_dire": "Si p ne divise pas l'ordre, le seul p-Sylow est {e}, d'un seul élément.",
+  "legende_titre": "Un premier qui ne divise pas 12",
+  "lecture": [
+   "Chaque rangée a 12 cases, une par élément d'un groupe d'ordre 12.",
+   "Pour p = 2, les 4 cases bleues forment le 2-Sylow ; pour p = 3, les 3 cases bleues forment le 3-Sylow.",
+   "Pour p = 5, la seule case orange est e : le 5-Sylow est {e}."
+  ],
+  "a_voir": "Pour p = 5, le p-Sylow n'a qu'une case, l'identité e."
+ },
+ {
+  "code": "50-239",
+  "a_dire": "Si G est un p-groupe, son seul p-Sylow est G lui-même ; le contenu passe aux sous-groupes d'ordre p^k.",
+  "legende_titre": "Le Sylow est le groupe entier",
+  "lecture": [
+   "Chaque rangée a 8 cases, les éléments d'un groupe d'ordre 8 = 2³.",
+   "Les rangées bleues colorent 1, 2 et 4 cases : des sous-groupes d'ordre 2⁰, 2¹ et 2².",
+   "La dernière rangée, en vert, colore les 8 cases : le 2-Sylow est G entier, et il est le seul."
+  ],
+  "a_voir": "La rangée verte est pleine : le 2-Sylow est G."
+ },
+ {
+  "code": "50-240",
+  "a_dire": "Sylow I donne des sous-groupes de tout ordre p^k pour un p-groupe, mais pas pour tout diviseur de l'ordre.",
+  "legende_titre": "Tous les ordres, ou pas",
+  "lecture": [
+   "À gauche, un groupe d'ordre 8 : les cases vertes 1, 2, 4 et 8 sont des ordres de sous-groupes qui existent.",
+   "À droite, A₄ d'ordre 12 : les cases 1, 2, 3, 4 et 12 existent.",
+   "La case rouge 6 divise 12 mais aucun sous-groupe de A₄ n'a cet ordre."
+  ],
+  "a_voir": "Pour A₄, 6 divise 12 et pourtant il n'y a pas de sous-groupe d'ordre 6."
+ }
+]

@@ -1,0 +1,184 @@
+[
+ {
+  "code": "50-145",
+  "a_dire": "Jacobson et Judson prouvent le même théorème dans un ordre différent : Jacobson prouve Cauchy pour les groupes abéliens puis s’en sert, Judson prouve Cauchy en entier puis refait la récurrence.",
+  "legende_titre": "Deux livres, un même théorème",
+  "lecture": [
+   "La colonne bleue montre l’ordre des étapes chez Jacobson : Cauchy pour les groupes abéliens, puis son emploi sur le centre.",
+   "La colonne violette montre l’ordre chez Judson : Cauchy pour tous les groupes, puis la récurrence refaite pour 𝑝^𝑟.",
+   "La case verte du bas est commune aux deux colonnes : les deux preuves arrivent à Sylow I."
+  ],
+  "a_voir": "Ce qui change est l’ordre des étapes, pas le théorème."
+ },
+ {
+  "code": "50-146",
+  "a_dire": "Pour A_5 d’ordre 60, on écrit 60 = 5 × 12, on garde parmi les diviseurs de 12 ceux qui laissent le reste 1 dans la division par 5 (1 et 6), puis la simplicité de A_5 écarte 1 : il y a 6 sous-groupes de Sylow pour 5.",
+  "legende_titre": "Du calcul 60 = 5 × 12 jusqu’à une valeur",
+  "lecture": [
+   "En haut, 60 est écrit comme 5 fois 12.",
+   "La rangée de six cases donne les diviseurs de 12 ; les deux cases bleues, 1 et 6, laissent le reste 1 dans la division par 5.",
+   "Le 1 est barré en rouge : la simplicité de A_5 l’écarte.",
+   "La case verte donne la valeur qui reste, 6."
+  ],
+  "a_voir": "Un calcul court garde deux valeurs, puis un fait sur A_5 en écarte une."
+ },
+ {
+  "code": "50-147",
+  "a_dire": "Parmi les diviseurs de 12, seuls 1 et 6 laissent le reste 1 dans la division par 5, donc n_5 est dans {1, 6}.",
+  "legende_titre": "Quels diviseurs gardent le reste 1 ?",
+  "lecture": [
+   "La rangée bleue du haut donne les six diviseurs de 12 : 1, 2, 3, 4, 6, 12.",
+   "Chaque flèche orange mène au reste de la division par 5.",
+   "Les restes verts, 1 et 6 donnent 1, sont gardés ; les restes rouges (2, 3, 4, 2) sont écartés."
+  ],
+  "a_voir": "Six candidats deviennent deux : 1 et 6."
+ },
+ {
+  "code": "50-148",
+  "a_dire": "A_5 est simple : ses seuls sous-groupes normaux sont {e} et A_5. Un 5-Sylow a 5 éléments, donc il n’est pas normal, donc n_5 n’est pas 1.",
+  "legende_titre": "Un sous-groupe de 5 éléments n’est pas normal",
+  "lecture": [
+   "Les deux barres bleues sont les seuls sous-groupes normaux : {e} avec 1 élément et A_5 avec 60 éléments.",
+   "La barre rouge est un 5-Sylow : sa longueur, 5 éléments, n’est ni 1 ni 60.",
+   "La ligne verte du bas tire la conclusion : n_5 n’est pas 1, donc n_5 vaut 6."
+  ],
+  "a_voir": "La taille 5 est entre 1 et 60 : le 5-Sylow ne peut pas être normal."
+ },
+ {
+  "code": "50-149",
+  "a_dire": "On compte les 5-cycles en fixant 1 en tête : 4 × 3 × 2 × 1 = 24 façons de ranger 2, 3, 4, 5, donc 24 éléments d’ordre 5.",
+  "legende_titre": "Compter les 5-cycles place par place",
+  "lecture": [
+   "La rangée du haut écrit le 5-cycle (1 3 5 2 4) : la case grise, 1, est fixée en tête.",
+   "Les quatre cases bleues sont les places à remplir par 2, 3, 4, 5.",
+   "Sous chaque place, le chiffre orange donne le nombre de choix : 4, 3, 2, 1.",
+   "La case verte multiplie ces choix et donne 24."
+  ],
+  "a_voir": "Le produit des choix donne 24 cinq-cycles ; cela ne dit pas encore combien il y a de 5-Sylow."
+ },
+ {
+  "code": "50-150",
+  "a_dire": "Six 5-Sylow ont chacun 4 éléments d’ordre 5 et ne partagent que e : cela donne 6 × 4 = 24 éléments d’ordre 5.",
+  "legende_titre": "Six groupes, quatre éléments chacun",
+  "lecture": [
+   "Chaque colonne bleue est un 5-Sylow.",
+   "Les quatre disques verts d’une colonne sont ses éléments d’ordre 5.",
+   "Le disque gris du haut est e, relié aux six colonnes : c’est le seul élément commun.",
+   "Six colonnes de quatre disques font 24 disques."
+  ],
+  "a_voir": "Aucun disque vert n’est compté deux fois, donc 6 × 4 = 24."
+ },
+ {
+  "code": "50-151",
+  "a_dire": "A_4 a 12 éléments : l’identité, 3 éléments d’ordre 2 et 8 éléments d’ordre 3.",
+  "legende_titre": "Les 12 éléments de A_4 classés par ordre",
+  "lecture": [
+   "Le disque gris est l’identité e, d’ordre 1.",
+   "Les trois disques orange sont les éléments d’ordre 2, comme (1 2)(3 4).",
+   "Les huit disques bleus sont les éléments d’ordre 3, comme (1 2 3).",
+   "La ligne du bas additionne : 1 + 3 + 8 = 12."
+  ],
+  "a_voir": "Les disques de trois couleurs font 12 au total."
+ },
+ {
+  "code": "50-152",
+  "a_dire": "La preuve part de l’hypothèse qu’un sous-groupe H de 6 éléments existe, l’étape décisive est que l’indice 2 met le carré de tout élément dans H, et elle arrive à une contradiction.",
+  "legende_titre": "D’où elle part, par où elle passe",
+  "lecture": [
+   "La case bleue du haut est le départ : on suppose un sous-groupe H de 6 éléments.",
+   "La case orange, au cadre épais, est l’étape qui porte le poids : le carré de tout élément est dans H.",
+   "La case rouge est l’arrivée : une contradiction avec |H| = 6."
+  ],
+  "a_voir": "L’étape orange est celle qui produit la contradiction."
+ },
+ {
+  "code": "50-153",
+  "a_dire": "Un sous-groupe d’indice 2 découpe le groupe en deux classes latérales : H et gH pour un g hors de H, chacune de 6 éléments, car 12 / 6 = 2.",
+  "legende_titre": "Deux paquets de 6 éléments",
+  "lecture": [
+   "La bande bleue contient les 6 éléments de H.",
+   "La bande orange contient les 6 éléments de gH ; le disque marqué g est l’élément pris hors de H.",
+   "La ligne verte donne le calcul : 12 / 6 = 2 classes."
+  ],
+  "a_voir": "Les 12 éléments se partagent en deux blocs de même taille."
+ },
+ {
+  "code": "50-154",
+  "a_dire": "Si g est hors de H, alors g² ne peut pas être dans gH : cela mènerait à g = h avec h dans H, ce qui est impossible.",
+  "legende_titre": "Pourquoi g² ne peut pas être dans gH",
+  "lecture": [
+   "La première ligne écrit g² = g h : les cases grises en tirets sont les g de gauche, qu’on enlève.",
+   "La deuxième ligne garde g (orange) et h (bleu) : g = h.",
+   "La case rouge dit pourquoi c’est impossible : g est hors de H et h est dans H."
+  ],
+  "a_voir": "Enlever g à gauche mène à g = h, ce qui est absurde."
+ },
+ {
+  "code": "50-155",
+  "a_dire": "Un sous-groupe d’indice 2 contient le carré de tout élément ; sans cette hypothèse, avec un indice 3, le carré peut sortir du sous-groupe.",
+  "legende_titre": "Le carré reste dans H seulement si l’indice est 2",
+  "lecture": [
+   "À gauche (en vert), H est formé des 3 rotations e, r, r² : le carré de r est r², dans H, et le carré d’une réflexion est e, dans H.",
+   "La case grise représente les 3 réflexions, hors de H.",
+   "À droite (en rouge), H n’a que 2 éléments, e et s : le carré de r, r², est hors de H."
+  ],
+  "a_voir": "Avec l’indice 2 le carré reste dans H ; avec l’indice 3 il peut sortir."
+ },
+ {
+  "code": "50-156",
+  "a_dire": "Un 3-cycle σ est un carré : σ³ = e donne σ⁴ = σ, et σ⁴ = (σ²)², donc σ = (σ²)².",
+  "legende_titre": "σ vu comme un carré",
+  "lecture": [
+   "Les quatre cases montrent σ, σ², σ³ et σ⁴ dans l’ordre ; la case grise σ³ = e est le retour à l’identité.",
+   "La case verte σ⁴ est égale à σ : l’arc vert la relie à la première case.",
+   "L’accolade orange regroupe deux facteurs σ² : (σ²)² vaut σ⁴.",
+   "La case verte du bas conclut : σ est le carré de σ²."
+  ],
+  "a_voir": "Faire σ quatre fois revient à le faire une fois, donc σ est un carré."
+ },
+ {
+  "code": "50-157",
+  "a_dire": "Les huit 3-cycles sont des carrés donc sont tous dans H, mais H n’a que 6 éléments : c’est une contradiction.",
+  "legende_titre": "Huit éléments pour six places",
+  "lecture": [
+   "La rangée de huit disques représente les huit 3-cycles, tous des carrés.",
+   "La case verte est H, avec ses 6 places ; les six flèches bleues y entrent.",
+   "Les deux disques rouges n’ont plus de place dans H."
+  ],
+  "a_voir": "8 est plus grand que 6 : le sous-groupe de 6 éléments n’existe pas."
+ },
+ {
+  "code": "50-158",
+  "a_dire": "A_4 a un seul 2-Sylow de 4 éléments (n_2 = 1) et quatre 3-Sylow de 3 éléments (n_3 = 4).",
+  "legende_titre": "Un 2-Sylow, quatre 3-Sylow",
+  "lecture": [
+   "La grande case bleue est l’unique 2-Sylow : e et trois autres éléments, soit 4 éléments.",
+   "Les quatre petites cases violettes sont les 3-Sylow ; chacune a 2 disques, avec e en plus.",
+   "Le nombre sous chaque groupe est son effectif : n_2 = 1 et n_3 = 4."
+  ],
+  "a_voir": "Pour le premier 2 il y en a un seul, pour le premier 3 il y en a quatre."
+ },
+ {
+  "code": "50-159",
+  "a_dire": "La divisibilité seule ne tranche pas : 1 et 3 divisent 3 et sont impairs, donc il faut un comptage pour choisir n_2.",
+  "legende_titre": "Deux valeurs passent les deux tests",
+  "lecture": [
+   "Les deux cases bleues du haut sont les valeurs possibles de n_2 : 1 et 3.",
+   "Chaque ligne est un test : diviser 3, puis être impair.",
+   "Toutes les cases vertes disent oui : les deux valeurs conviennent.",
+   "La case orange du bas dit qu’il faut un autre argument : un comptage."
+  ],
+  "a_voir": "Les deux valeurs passent les deux tests, donc le test ne choisit pas."
+ },
+ {
+  "code": "50-160",
+  "a_dire": "A_4 n’a que 3 éléments d’ordre 2, donc tout 2-Sylow contient les mêmes trois éléments : il n’y en a qu’un, n_2 = 1.",
+  "legende_titre": "Les trois mêmes éléments dans chaque 2-Sylow",
+  "lecture": [
+   "La case bleue est un 2-Sylow : e (gris) et les trois éléments d’ordre 2 (orange).",
+   "La case rouge est un autre 2-Sylow possible : ses trois places en tirets sont vides, car il n’y a plus d’élément d’ordre 2.",
+   "La ligne verte conclut : un seul 2-Sylow."
+  ],
+  "a_voir": "Les trois éléments d’ordre 2 ne peuvent remplir qu’un seul groupe de 4."
+ }
+]

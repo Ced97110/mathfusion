@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 86, r'$h_1k_1=h_2k_2$', 'encre', 'l')
+arrow(ax, (44, 82), (44, 73), 'varie'); text(ax, 48, 77.5, 'on multiplie des deux côtés', 'varie', 's', ha='left')
+text(ax, 22, 64, r'$h_1^{-1}h_2$', 'sujet', 'm'); text(ax, 44, 64, '=', 'encre', 'l'); text(ax, 66, 64, r'$k_1k_2^{-1}$', 'autre', 'm')
+ax.add_patch(Circle((32, 34), 17, ec=COL['sujet'], fc=FILL['sujet'], alpha=.65, lw=1, zorder=1))
+ax.add_patch(Circle((56, 34), 17, ec=COL['autre'], fc=FILL['autre'], alpha=.65, lw=1, zorder=1))
+text(ax, 22, 28, r'$H$', 'sujet', 'l', weight='bold'); text(ax, 66, 28, r'$K$', 'autre', 'l', weight='bold')
+disc(ax, 44, 34, 2.4, 'resultat', label=r'$a$', size='s')
+arrow(ax, (24, 60), (42.3, 36.2), 'sujet'); arrow(ax, (64, 60), (45.7, 36.2), 'autre')
+text(ax, 44, 9, r'$a\in H\cap K$', 'resultat', 'l', weight='bold')
+save(fig, '50-196')

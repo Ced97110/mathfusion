@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'$A_4$ : 12 éléments', 'sujet', 'l')
+disc(ax, 10, 56, 2.8, 'fixe'); text(ax, 64, 56, 'identité', 'fixe', 's', ha='left')
+for i in range(3): disc(ax, 10 + 7 * i, 47, 2.8, 'sujet')
+text(ax, 64, 47, "3 d'ordre 2", 'sujet', 's', ha='left')
+for i in range(8): disc(ax, 10 + 7 * i, 38, 2.8, 'autre')
+text(ax, 64, 38, "8 d'ordre 3", 'autre', 's', ha='left')
+box(ax, 2, 3, 84, 25, 'limite', dash=True)
+for i in range(6): disc(ax, 20 + 9.5 * i, 20, 3, 'limite', fill=False)
+text(ax, 44, 9, 'aucun sous-groupe de 6', 'limite', 'm')
+save(fig, '50-006')

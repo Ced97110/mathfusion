@@ -1,0 +1,193 @@
+[
+ {
+  "code": "50-097",
+  "a_dire": "Sous le sous-groupe P qui agit, chaque orbite a pour taille une puissance de p.",
+  "legende_titre": "Les tailles d'orbites sous P_A",
+  "lecture": [
+   "Les cases vertes sont les orbites quand P_A agit : P_A seul, puis P_B et P_C.",
+   "Sous chaque case verte, la taille s'écrit comme une puissance de 2.",
+   "La case rouge réunit les trois sous-groupes quand G tout entier agit.",
+   "Sa taille, 3, n'est pas une puissance de 2."
+  ],
+  "a_voir": "Les tailles 1 et 2 sont des puissances de 2 seulement quand c'est P_A qui agit."
+ },
+ {
+  "code": "50-098",
+  "a_dire": "L'orbite de P sous P est réduite à P seul, de taille 1 : conjuguer P par un élément de P redonne P.",
+  "legende_titre": "Conjuguer P_A par deux éléments",
+  "lecture": [
+   "La première flèche orange part de P_A (bleu) et revient sur P_A : il est fixé.",
+   "La seconde flèche part de P_A et arrive sur P_C (violet) : il est déplacé.",
+   "Seul l'élément qui est dans P_A laisse P_A à sa place."
+  ],
+  "a_voir": "Il faut voir que P_A ne bouge pas quand on le conjugue par son propre élément s_A."
+ },
+ {
+  "code": "50-099",
+  "a_dire": "P est la seule orbite de taille 1 : tout autre p-Sylow est déplacé par un élément de P.",
+  "legende_titre": "Qui reste en place sous P_A ?",
+  "lecture": [
+   "La case verte contient P_A, que s_A laisse en place : taille 1.",
+   "La case grise contient P_B et P_C.",
+   "La flèche orange courbe montre que s_A échange P_B et P_C : taille 2.",
+   "Il n'y a qu'une seule case de taille 1."
+  ],
+  "a_voir": "Il faut voir qu'un seul sous-groupe reste en place : P_A."
+ },
+ {
+  "code": "50-100",
+  "a_dire": "La preuve part d'une orbite de taille 1 pour P', passe par le lemme de Jacobson et arrive à P = P'.",
+  "legende_titre": "Les trois temps de la preuve",
+  "lecture": [
+   "Le grand cercle gris est N(P'). P (bleu) et P' (violet) sont dedans.",
+   "La flèche orange épaisse est l'étape du lemme de Jacobson, qui porte le poids de la preuve.",
+   "Au milieu, P est dans P'.",
+   "À droite, le cercle vert dit que P et P' sont le même ensemble."
+  ],
+  "a_voir": "Il faut voir que le lemme fait passer de P dans N(P') à P dans P', puis à l'égalité."
+ },
+ {
+  "code": "50-101",
+  "a_dire": "Un p-sous-groupe de N(P') est contenu dans P'. Un sous-groupe de taille non puissance de p peut en sortir.",
+  "legende_titre": "Qui est dans P' ?",
+  "lecture": [
+   "Le carré bleu relie 0, 3, 6 et 9 : c'est P'.",
+   "Le trait vert relie 0 et 6 : il reste dans le carré.",
+   "Le triangle rouge relie 0, 4 et 8 : 4 et 8 sont hors du carré.",
+   "Le triangle a 3 éléments, ce n'est pas une puissance de 2."
+  ],
+  "a_voir": "Il faut voir que le sous-groupe de 0 et 6 est dans P', mais pas celui de 0, 4, 8."
+ },
+ {
+  "code": "50-102",
+  "a_dire": "Si H sortait de P', le produit HP' serait un p-sous-groupe plus gros que P', ce qui est impossible.",
+  "legende_titre": "Compter les produits HP'",
+  "lecture": [
+   "Chaque case est un couple formé d'un élément de P' (4 lignes) et d'un élément de H (6 colonnes).",
+   "Les deux cases orange donnent la même somme, 5.",
+   "Chaque somme apparaît 2 fois, donc 24 divisé par 2 donne 12 sommes.",
+   "La formule en bleu généralise ce comptage."
+  ],
+  "a_voir": "Il faut voir que la taille de HP' se calcule par taille de H fois taille de P', divisée par les éléments communs."
+ },
+ {
+  "code": "50-103",
+  "a_dire": "n_p est la somme des tailles d'orbites : une de taille 1, les autres multiples de p ; le reste modulo p est 1.",
+  "legende_titre": "Additionner les tailles d'orbites",
+  "lecture": [
+   "La case bleue seule est l'orbite de taille 1.",
+   "Les cases violettes sont rangées par paquets de 2, taille de p quand p vaut 2.",
+   "L'accolade dit que n_p est la somme de toutes ces tailles.",
+   "Les paquets ne laissent rien : il ne reste que la case bleue."
+  ],
+  "a_voir": "Il faut voir qu'après les paquets de p il reste exactement 1."
+ },
+ {
+  "code": "50-104",
+  "a_dire": "Le cas montre 1 + 2 = 3 pour p égal 2 ; il ne montre ni les orbites de taille 4, 8, ni pourquoi il n'y a qu'une orbite de taille 1.",
+  "legende_titre": "Ce que le cas montre, et ce qu'il ne montre pas",
+  "lecture": [
+   "La case bleue est l'orbite de P_A seul.",
+   "Les deux cases violettes sont P_B et P_C.",
+   "Les trois cases vertes sont la somme, 3.",
+   "Les groupes en pointillés gris, de 4 et de 8 cases, sont absents du cas."
+  ],
+  "a_voir": "Il faut voir que le cas ne contient que les tailles 1 et 2."
+ },
+ {
+  "code": "50-105",
+  "a_dire": "On compte Σ deux fois : avec P on trouve le reste 1, avec P'' hors de Σ le reste 0 ; les deux ne vont pas ensemble.",
+  "legende_titre": "Deux comptages de Σ",
+  "lecture": [
+   "Le grand cercle bleu est Σ, qui contient P.",
+   "Le carré violet est une autre orbite, avec P'' dedans.",
+   "La flèche orange montre P'' qui agit sur Σ.",
+   "Les deux cases du bas donnent les deux restes, 0 et 1 : la case rouge dit que c'est contradictoire."
+  ],
+  "a_voir": "Il faut voir que deux comptages de la même orbite donnent deux restes différents."
+ },
+ {
+  "code": "50-106",
+  "a_dire": "Σ est le nom de l'ensemble des conjugués de P : ici P_A, P_B, P_C, donc 3 éléments.",
+  "legende_titre": "Le nom Σ",
+  "lecture": [
+   "Le cercle bleu est l'ensemble Σ.",
+   "Les trois disques à l'intérieur sont ses éléments : P_A, P_B, P_C.",
+   "Le texte vert donne le nombre d'éléments, 3.",
+   "Le texte gris rappelle que Σ n'est pas un signe de somme ici."
+  ],
+  "a_voir": "Il faut voir que Σ désigne un ensemble de sous-groupes, pas une somme."
+ },
+ {
+  "code": "50-107",
+  "a_dire": "Quand P agit sur Σ, il y a une orbite de taille 1 et les autres de taille multiple de p : le reste de |Σ| est 1.",
+  "legende_titre": "Compter Σ avec P_A",
+  "lecture": [
+   "Le cercle bleu est Σ.",
+   "P_A, en haut, est en place : orbite de taille 1.",
+   "La flèche orange double échange P_B et P_C : orbite de taille 2.",
+   "Le total vert est 3, de reste 1."
+  ],
+  "a_voir": "Il faut voir que Σ se découpe en une orbite de taille 1 et des paquets de taille 2."
+ },
+ {
+  "code": "50-108",
+  "a_dire": "Un p-Sylow P'' hors de Σ n'a aucune orbite de taille 1 dans Σ : toutes les tailles sont multiples de p, donc |Σ| est de reste 0.",
+  "legende_titre": "Compter Σ avec P'' hors de Σ",
+  "lecture": [
+   "Les cases violettes sont les orbites de P'' sur Σ : 2, 4 et 8 cases.",
+   "Toutes sont rangées par paquets de 2.",
+   "La case rouge barrée est l'orbite de taille 1 : elle n'existe pas.",
+   "La somme est paire, donc le reste est 0."
+  ],
+  "a_voir": "Il faut voir qu'il n'y a que des paquets de 2, sans case seule."
+ },
+ {
+  "code": "50-109",
+  "a_dire": "Un nombre ne peut pas avoir à la fois le reste 1 et le reste 0 : la contradiction fait conclure qu'il n'y a qu'une orbite.",
+  "legende_titre": "Un seul reste possible",
+  "lecture": [
+   "Chaque disque est un nombre de 0 à 6.",
+   "Bleu : reste 0, nombre pair. Orange : reste 1, nombre impair.",
+   "Le cercle vert entoure 3, qui a le reste 1.",
+   "Aucun disque n'a les deux couleurs : 1 et 0 ne vont pas ensemble."
+  ],
+  "a_voir": "Il faut voir qu'aucun nombre n'est à la fois de reste 0 et de reste 1."
+ },
+ {
+  "code": "50-110",
+  "a_dire": "Q agit sur l'ensemble S des conjugués de P ; comme p ne divise pas k, une orbite est de taille 1, ce qui donne Q = P_j.",
+  "legende_titre": "La preuve de Judson",
+  "lecture": [
+   "Le cercle bleu est S, avec ses trois sous-groupes.",
+   "La flèche orange double échange P_A et P_C quand Q agit.",
+   "P_B, en vert, reste en place : c'est le P_j fixé.",
+   "Les trois cases de droite donnent le départ (k = 3, 2 ne divise pas 3), l'étape (Q agit sur S) et l'arrivée (Q = P_B)."
+  ],
+  "a_voir": "Il faut voir que Q laisse un élément de S en place, et que cet élément est Q lui-même."
+ },
+ {
+  "code": "50-111",
+  "a_dire": "Si x a un ordre puissance de p et que xPx^-1 = P, alors x est dans P ; sans l'hypothèse sur l'ordre, c'est faux.",
+  "legende_titre": "Le lemme et son hypothèse",
+  "lecture": [
+   "Le grand rectangle bleu est P, avec 0, 3, 6, 9.",
+   "Le disque vert 3 a un ordre 4 = 2², et il est dans P.",
+   "Le disque rouge 4 est d'ordre 3 : il est hors de P.",
+   "La flèche orange dit que 4 laisse P inchangé : l'ordre en puissance de 2 est donc nécessaire."
+  ],
+  "a_voir": "Il faut voir que 4 laisse P en place sans être dans P, parce que son ordre n'est pas une puissance de 2."
+ },
+ {
+  "code": "50-112",
+  "a_dire": "Sur S_3, s_A laisse P_A en place et est dans P_A ; s_B envoie P_A sur P_C et n'est pas dans P_A.",
+  "legende_titre": "Le lemme essayé sur deux éléments",
+  "lecture": [
+   "Le rectangle bleu est P_A, avec id et s_A dedans.",
+   "La flèche du haut part de s_A et donne P_A sur P_A, en vert.",
+   "Le disque violet s_B est hors du rectangle.",
+   "La flèche du bas part de s_B et donne P_C, en rouge : P_A change."
+  ],
+  "a_voir": "Il faut voir que seul l'élément qui laisse P_A en place est dans P_A."
+ }
+]

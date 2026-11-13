@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 3, 10, 40, 40, 'sujet', label=None)
+box(ax, 47, 10, 38, 40, 'fixe', label=None)
+text(ax, 23, 44, r'dans le centre $C$', 'sujet', 's'); text(ax, 66, 44, 'hors du centre', 'fixe', 's')
+box(ax, 7, 28, 12, 9, 'sujet', fill=False, label='$z$'); box(ax, 27, 28, 12, 9, 'sujet', fill=False, label='$w$')
+arrow(ax, (19, 32.5), (27, 32.5), 'resultat', both=True)
+text(ax, 23, 20, r'$zw=wz$', 'resultat', 'm'); text(ax, 23, 14.5, 'tout commute', 'resultat', 's')
+box(ax, 50, 28, 12, 9, 'fixe', label=r'$s_A$'); box(ax, 70, 28, 12, 9, 'fixe', label=r'$s_B$')
+arrow(ax, (62, 32.5), (70, 32.5), 'limite', both=True)
+text(ax, 66, 20, r'$s_As_B\neq s_Bs_A$', 'limite', 's'); text(ax, 66, 14.5, 'ne commutent pas', 'limite', 's')
+save(fig, '50-125')

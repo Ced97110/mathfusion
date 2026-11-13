@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+def node(x, y, name, role): disc(ax, x, y, 4.6, role, label=name, size='s')
+box(ax, 4, 28, 20, 20, 'resultat'); node(14, 38, r'$P_A$', 'sujet')
+box(ax, 40, 28, 46, 20, 'fixe'); node(50, 38, r'$P_B$', 'autre'); node(76, 38, r'$P_C$', 'autre')
+arrow(ax, (50.5, 43), (75.5, 43), 'varie', curve=-0.35, both=True); text(ax, 63, 53, r'$s_A$', 'varie', 's')
+text(ax, 14, 53, r'fixé par $s_A$', 'resultat', 's')
+text(ax, 14, 22, 'taille 1', 'resultat', 's'); text(ax, 63, 22, 'taille 2', 'fixe', 's')
+text(ax, 44, 10, r'seul $\{P_A\}$ est de taille 1', 'resultat', 's')
+save(fig, '50-099')

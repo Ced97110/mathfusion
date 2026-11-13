@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+for x, h in ((15, 'départ'), (44, 'lemme de Jacobson'), (73, 'arrivée')): text(ax, x, 61, h, 'varie' if x == 44 else 'encre', 's')
+disc(ax, 15, 40, 12, 'fixe'); text(ax, 15, 33, r"$N(P')$", 'fixe', 's')
+disc(ax, 10.5, 45, 3.8, 'sujet', label=r'$P$', size='s'); disc(ax, 19.5, 45, 3.8, 'autre', label=r"$P'$", size='s')
+disc(ax, 44, 40, 9, 'autre'); text(ax, 44, 28, r"$P'$", 'autre', 's'); disc(ax, 44, 40, 4.2, 'sujet', label=r'$P$', size='s')
+disc(ax, 73, 40, 9, 'resultat', label=r"$P=P'$", size='s')
+arrow(ax, (28.5, 40), (34, 40), 'fixe'); arrow(ax, (54.5, 40), (63, 40), 'varie', lw=1.8)
+text(ax, 15, 18, r"$P\subseteq N(P')$", 'fixe', 's'); text(ax, 44, 18, r"$P\subseteq P'$", 'varie', 's'); text(ax, 73, 18, 'même taille', 'resultat', 's')
+save(fig, '50-100')

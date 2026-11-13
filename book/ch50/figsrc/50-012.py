@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, r'$12 = 2^2 \times 3$', 'encre', 'xl')
+arrow(ax, (22, 49), (22, 41), 'varie'); arrow(ax, (63, 49), (63, 41), 'varie')
+for i in range(4): box(ax, 4 + 9.5 * i, 31, 8, 8, 'sujet', r=0.5)
+for i in range(3): box(ax, 50 + 9.5 * i, 31, 8, 8, 'autre', r=0.5)
+text(ax, 22, 26, r'part de 2 : $2^2 = 4$', 'sujet', 's')
+text(ax, 63, 26, 'part de 3 : 3', 'autre', 's')
+text(ax, 22, 18, 'garantis : 2 et 4 éléments', 'resultat', 's')
+text(ax, 63, 18, 'garanti : 3 éléments', 'resultat', 's')
+text(ax, 44, 7, r'$6 = 2 \times 3$ : pas garanti', 'fixe', 'm')
+save(fig, '50-012')
