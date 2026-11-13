@@ -1,8 +1,14 @@
-<div class="pk">Chapitre 3</div>
-<h1>Déductions, prédicats et quantificateurs</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 3</div>
+<h1 class="ct">Déductions, prédicats et quantificateurs</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 2, tu as appris à calculer la valeur de vérité d’un énoncé à partir de ses morceaux. Tu sais lire <span class="m">𝑃 ∧ 𝑄</span>, <span class="m">𝑃 ∨ 𝑄</span>, <span class="m">𝑃 → 𝑄</span> et <span class="m">¬𝑃</span>. Tu sais remplir une table de vérité.</p>
 <p>Ce chapitre répond à deux questions nouvelles. La première : quand une conclusion découle-t-elle vraiment de ce qu’on sait déjà ? La seconde : comment parler d’une phrase qui contient une variable, comme « <span class="m">𝑛</span> est premier » ?</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 3 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Deux raisonnements presque identiques</h3>
 <p>Lis ces deux raisonnements. Le symbole <span class="m">∴</span> se lit « donc ».</p>
 <img class="vm" src="/discretes/img/c003/p0068_1.svg" alt="Si Edith mange ses légumes, alors elle a un biscuit. Edith mange ses légumes. ∴ Edith a un biscuit." style="--w:24.12" loading="lazy">
@@ -30,7 +36,8 @@
 <p>4. À un certain moment, tu peux tromper tout le monde.</p>
 <p>Certaines disent-elles la même chose ? L’une entraîne-t-elle une autre ?</p>
 <p>Cherche avant de lire la suite. Les deux énigmes sont résolues dans la partie 4.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 3 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>La figure des deux raisonnements</h3>
 <p>Commence par Edith. Appelle <span class="m">𝑃</span> l’énoncé « Edith mange ses légumes » et <span class="m">𝑄</span> l’énoncé « Edith a un biscuit ». La première ligne du raisonnement est <span class="m">𝑃 → 𝑄</span>. La deuxième est <span class="m">𝑃</span>. La conclusion est <span class="m">𝑄</span>.</p>
 <p>Pour Florence, appelle <span class="m">𝑃</span> l’énoncé « Florence mange ses légumes » et <span class="m">𝑄</span> l’énoncé « Florence a un biscuit ». La phrase « elle doit manger ses légumes pour avoir un biscuit » dit : si elle a un biscuit, alors elle a mangé ses légumes. C’est <span class="m">𝑄 → 𝑃</span>, pas <span class="m">𝑃 → 𝑄</span>. Au chapitre 2, tu as vu que « <span class="m">𝑃</span> est nécessaire pour <span class="m">𝑄</span> » s’écrit <span class="m">𝑄 → 𝑃</span>.</p>
@@ -50,7 +57,8 @@
 <p>Regarde ce qui se passe. Tant que <span class="m">𝑛</span> n’est pas choisi, la phrase « <span class="m">𝑛</span> est premier » n’a pas de valeur. Dès que tu choisis une colonne, elle devient un énoncé, vrai ou faux. Par exemple, dans la colonne <span class="m">𝑛 = 5</span>, elle devient « <span class="m">5</span> est premier », qui est vrai.</p>
 <p>La dernière ligne évalue l’implication « si <span class="m">𝑛</span> est premier, alors <span class="m">𝑛 + 7</span> n’est pas premier ». Dans les colonnes encadrées, l’hypothèse est vraie. Il faut alors que <span class="m">𝑛 + 7</span> ne soit pas premier, et c’est le cas : la case <span class="m">𝑃(𝑛 + 7)</span> vaut F. Dans les autres colonnes, l’hypothèse est fausse, et l’implication est vraie d’office (chapitre 2). Toute la dernière ligne vaut V.</p>
 <p>La figure s’arrête à <span class="m">𝑛 = 13</span>. Mais l’affirmation parle de <i>tous</i> les entiers. Il y a une infinité de colonnes. Aucune figure ne peut toutes les montrer. Il faut un symbole qui dise « dans chaque colonne ». Et il faut un raisonnement qui couvre toutes les colonnes d’un coup. Le voici. Si <span class="m">𝑛 = 2</span>, alors <span class="m">𝑛 + 7 = 9 = 3 × 3</span>, pas premier. Si <span class="m">𝑛</span> est un premier autre que <span class="m">2</span>, alors <span class="m">𝑛</span> est impair (tu le prouveras au chapitre 4). Donc <span class="m">𝑛 + 7</span> est la somme de deux impairs : il est pair. Il vaut au moins <span class="m">3 + 7 = 10</span>. Un nombre pair plus grand que <span class="m">2</span> a trois diviseurs au moins : <span class="m">1</span>, <span class="m">2</span> et lui-même. Il n’est pas premier.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 3 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Argument et validité</h3>
 <img class="vm" src="/discretes/img/c003/p0076_8.svg" alt="Définition : argument, argument valide Un argument est une liste d’énoncés. Le dernier est la conclusion. Les autres sont les prémisses. L’argument est valide si la conclusion est vraie dans toute situation où toutes les prémisses sont vraies. Il est invalide sinon : il existe au moins" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c003/p0077_9.svg" alt="une situation où toutes les prémisses sont vraies et la conclusion fausse. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
@@ -125,7 +133,8 @@
 <p>La règle d’ordre donne une telle loi :</p>
 <img class="vm" src="/discretes/img/c003/p0090_39.svg" alt="∃𝑦 ∀𝑥 𝑃(𝑥, 𝑦) → ∀𝑥 ∃𝑦 𝑃(𝑥, 𝑦)." style="--w:24.12" loading="lazy">
 <p>Pour un énoncé toujours vrai de la logique des propositions, on garde le mot « tautologie » (chapitre 2).</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 3 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Vérifier une règle à deux prémisses</h3>
 <p>Montrons que l’argument suivant est une règle de déduction :</p>
 <img class="vm" src="/discretes/img/c003/p0090_40.svg" alt="𝑃 → 𝑄 ¬𝑃 → 𝑄 ∴ 𝑄" style="--w:24.12" loading="lazy">
@@ -231,7 +240,8 @@
 <img class="vf" src="/discretes/img/c003/p0104_69.svg" alt="" style="--w:24.19" loading="lazy">
 <p>trompée peut changer à chaque instant : la diagonale de (c) suffit. La différence tient à l’ordre : qui est choisi d’abord, la personne ou l’instant.</p>
 <img class="vf" src="/discretes/img/c003/p0104_70.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 3 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Ce chapitre t’a donné deux moyens de raisonner : les règles de déduction, et les quantificateurs. Tous les chapitres suivants s’en servent.</p>
 <p><b>Vers les preuves.</b> Au chapitre 4, chaque méthode de preuve sera une règle de déduction. La preuve par l’absurde repose sur le modus tollens. La disjonction de cas repose sur la règle « <span class="m">𝑃 → 𝑄</span>, <span class="m">¬𝑃 → 𝑄</span>, donc <span class="m">𝑄</span> ». Pour réfuter un énoncé <span class="m">∀𝑥 𝑃(𝑥)</span>, on prouvera <span class="m">∃𝑥 ¬𝑃(𝑥)</span> : c’est le contre-exemple. Et pour prouver <span class="m">∀𝑥 (𝑃(𝑥) → 𝑄(𝑥))</span>, on fixera un <span class="m">𝑥</span> quelconque.</p>
 <p><b>Vers les ensembles.</b> Au chapitre 5, un prédicat définit un ensemble : l’ensemble des <span class="m">𝑥</span> tels que <span class="m">𝑃(𝑥)</span> est vrai. « <span class="m">𝐴</span> est inclus dans <span class="m">𝐵</span> » s’écrira <span class="m">∀𝑥 (𝑥 ∈ 𝐴 → 𝑥 ∈ 𝐵)</span>.</p>
@@ -242,5 +252,7 @@
 <img class="vm" src="/discretes/img/c003/p0105_72.svg" alt="∀𝑦 ∃𝑥 (𝑓(𝑥) = 𝑦) ∶" style="--w:24.12" loading="lazy">
 <p>chaque sortie <span class="m">𝑦</span> est atteinte par au moins une entrée <span class="m">𝑥</span>. Échange les quantificateurs : <span class="m">∃𝑥 ∀𝑦 (𝑓(𝑥) = 𝑦)</span>. Cela dirait qu’une seule entrée <span class="m">𝑥</span> donne toutes les sorties à la fois. Une entrée n’a qu’une sortie. Cela n’est donc possible que s’il y a une seule sortie. L’ordre des quantificateurs sépare une propriété banale d’une propriété presque impossible.</p>
 <img class="vf" src="/discretes/img/c003/p0105_73.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 3 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c003/p0106_74.svg" alt="À toi de chercher Sur un domaine fini, un quantificateur se remplace par des connecteurs. Sur le domaine {0, 1}, par exemple, ∀𝑥 ∃𝑦 𝑃(𝑥, 𝑦) devient (𝑃(0, 0) ∨ 𝑃(0, 1)) ∧ (𝑃(1, 0) ∨ 𝑃(1, 1)). Ce sont quatre énoncés, donc une table de 24 = 16 lignes. Sur ce domaine, tu peux donc décider par une table si ∀𝑥 ∃𝑦 𝑃(𝑥, 𝑦) et ∃𝑦 ∀𝑥 𝑃(𝑥, 𝑦) sont équivalents. Sur le domaine ℕ, cette méthode s’effondre : il faudrait une infinité de colonnes. Pourtant, plus haut, tu as conclu en quelques lignes que ∀𝑥 ∃𝑦 (𝑦 &amp;lt; 𝑥) est faux dans ℕ, et que ∃𝑦 ∀𝑥 𝑃(𝑥, 𝑦) entraîne toujours ∀𝑥 ∃𝑦 𝑃(𝑥, 𝑦). Qu’est-ce qui, dans ces raisonnements, a remplacé la liste de toutes les lignes ? Et peux-tu imaginer un énoncé sur ℕ dont personne ne saurait dire s’il est vrai, parce qu’aucun raisonnement de ce type n’a encore été trouvé ?" style="--w:24.19" loading="lazy">
+</div>
