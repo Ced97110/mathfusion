@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 9</div>
-<h1>Combinaisons et permutations</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 9</div>
+<h1 class="ct">Combinaisons et permutations</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <img class="vm" src="/discretes/img/c009/p0269_1.svg" alt="Au chapitre 8, tu as rencontré le nombre 𝑛 (𝑘). Tu sais ce qu’il compte : les façons de choisir 𝑘 objets parmi 𝑛. Mais tu ne sais le calculer qu’avec le triangle de Pascal, ligne après ligne. Pour (146 ), il faut construire quatorze lignes. Ce chapitre donne une formule directe. Pour l’obtenir, on fait un détour par une autre question : de combien de façons peut-on ranger des objets ?" style="--w:24.19" loading="lazy">
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 9 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Des jetons de cinq couleurs</h3>
 <p>Tu as un tas de jetons. Ils existent en cinq couleurs : rouge, bleu, vert, jaune et orange. On note ces couleurs R, B, V, J et O. Tu as autant de jetons de chaque couleur que tu veux. Tu empiles des jetons pour former des piles. Une pile se lit de bas en haut.</p>
 <p><b>Question 1.</b> Combien de piles de 2 jetons peux-tu faire, si le jeton du bas doit être rouge ou bleu ?</p>
@@ -20,7 +26,8 @@
 <h3>Ce que ces quatre questions révèlent</h3>
 <p>Compare les questions 3 et 4. Mêmes jetons, même contrainte : pas de couleur répétée. Une seule différence : dans la pile, l’ordre compte ; dans la poche, il ne compte pas. Les réponses sont 60 et 10. Or <span class="m">60 = 10 × 6</span>. Pour 4 jetons : <span class="m">120 = 5 × 24</span>. D’où viennent ce 6 et ce 24 ? Ce chapitre va l’expliquer.</p>
 <img class="vm" src="/discretes/img/c009/p0271_2.svg" alt="Le problème est donc double. Il faut compter les choix où l’ordre compte : ce seront des arrangements, et des permutations quand on range tous les objets. Il faut compter les choix où l’ordre ne compte pas : ce sont des combinaisons, 𝑛 comptées par (𝑘). Et il faut le lien exact entre les deux." style="--w:24.12" loading="lazy">
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 9 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Ranger trois lettres</h3>
 <p>Commence par le cas le plus simple. Tu veux écrire les trois lettres a, b, c, chacune une fois, dans un certain ordre. Combien de mots obtiens-tu ? La figure 9.1 les produit tous.</p>
 <img class="vm" src="/discretes/img/c009/p0272_3.svg" alt="1re lettre 2e lettre 3e lettre 3 choix 2 choix 1 choix" style="--w:24.12" loading="lazy">
@@ -46,7 +53,8 @@
 <p>Alors la figure ne serait pas un rectangle et la division serait fausse. Elle n’est juste que parce que <i>chaque</i> contenu de poche correspond au <i>même</i> nombre de piles : trois jetons distincts se rangent toujours en 6 ordres, quelles que soient leurs couleurs. Toute division dans un dénombrement repose sur cette condition.</p>
 <img class="vf" src="/discretes/img/c009/p0276_12.svg" alt="" style="--w:24.19" loading="lazy">
 <p>Le même rectangle existe pour 4 jetons. Il a 5 colonnes, une par contenu de poche de 4 couleurs. Il a 24 lignes, car 4 couleurs se rangent en <span class="m">4 × 3 × 2 × 1 = 24</span> ordres. Et <span class="m">5 × 24 = 120</span>, le nombre de piles de 4 jetons trouvé à la question 3.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 9 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>La factorielle</h3>
 <p>Le produit <span class="m">3 × 2 × 1</span> revient sans cesse. Il mérite un nom.</p>
 <img class="vm" src="/discretes/img/c009/p0276_13.svg" alt="Définition : factorielle Pour tout entier 𝑛 ≥ 1, la factorielle de 𝑛, notée 𝑛!, est le produit de tous les entiers de 1 à 𝑛 : 𝑛! = 𝑛 ⋅ (𝑛 − 1) ⋅ (𝑛 − 2) ⋯ 2 ⋅ 1. Par convention, on pose aussi 0! = 1." style="--w:24.19" loading="lazy">
@@ -112,7 +120,8 @@
 <h3>Le mot « combinaison » et le mot « permutation »</h3>
 <p>Les formules de <span class="m">𝑃(𝑛, 𝑘)</span> et de <span class="m">(</span><sup>𝑛</sup><sub>𝑘</sub><span class="m">)</span> ne diffèrent que par le facteur <span class="m">𝑘!</span> au dénominateur de <span class="m">(</span><sup>𝑛</sup><sub>𝑘</sub><span class="m">)</span>. Ce <span class="m">𝑘!</span> traduit un fait précis : <span class="m">(</span><sup>𝑛</sup><sub>𝑘</sub><span class="m">)</span> ne distingue pas les ordres dans lesquels les <span class="m">𝑘</span> objets peuvent apparaître. On choisit les objets, on ne les range pas.</p>
 <p>Le mot « combinaison » peut tromper. Un cadenas « à combinaison » s’ouvre avec des chiffres composés dans un ordre précis : 3, 7, 1 n’est pas 1, 7, 3. Dans le vocabulaire de ce chapitre, ce code est un <i>arrangement</i>. Un exemple réel de combinaison : choisir des parfums pour une coupe de glace. Seul compte quels parfums y sont.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 9 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <p>Voici ce que permettent les trois formules <span class="m">𝑛!</span>, <span class="m">𝑃(𝑛, 𝑘)</span> et <span class="m">(</span><sup>𝑛</sup><sub>𝑘</sub><span class="m">)</span>. Chaque exemple est repris de la source et entièrement calculé.</p>
 <h3>Ranger six lettres</h3>
 <h3>Combien de permutations des lettres a, b, c, d, e, f ?</h3>
@@ -195,7 +204,8 @@
 <img class="vm" src="/discretes/img/c009/p0297_75.svg" alt="ordre ordre ne compte compte pas avec 𝑛𝑘 chapitre 11 répétition 𝑛 sans 𝑃(𝑛, 𝑘) ( ) 𝑘 répétition" style="--w:24.12" loading="lazy">
 <p>L’exposant <span class="m">𝑛</span><sup>𝑘</sup> veut dire <span class="m">𝑛</span> multiplié par lui-même <span class="m">𝑘</span> fois. Pour les piles de 3 jetons avec répétition permise : <span class="m">5</span><sup>3</sup> <span class="m">= 5 × 5 × 5 = 125</span> piles. Chaque étage a 5 choix, quel que soit le reste.</p>
 <p>La case restante (ordre sans importance, répétitions permises) correspond par exemple à une poche de 3 jetons où deux jetons peuvent avoir la même couleur. Elle demande une autre idée : c’est l’objet du chapitre 11.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 9 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Ce que tu as obtenu</h3>
 <img class="vm" src="/discretes/img/c009/p0297_76.svg" alt="Tu as obtenu trois formules : 𝑛! pour les permutations, 𝑃(𝑛, 𝑘) = 𝑛!/(𝑛 − 𝑘)! pour 𝑛 les arrangements, (𝑘) = 𝑃(𝑛, 𝑘)/𝑘! pour" style="--w:24.19" loading="lazy">
 <p>les combinaisons. Le lien est la figure 9.2 : un arrangement, c’est un choix suivi d’un ordre.</p>
@@ -208,7 +218,9 @@
 <p><b>Chapitre 13.</b> Il étend le tableau des quatre cas à toutes les méthodes de dénombrement.</p>
 <p><b>Chapitres 14  et 18 .</b> La relation (9.1), <span class="m">𝑛! = 𝑛 ⋅ (𝑛 − 1)!</span>, définit chaque factorielle à partir de la précédente. C’est une définition par récurrence, étudiée au chapitre 14. Le chapitre 18 montre comment prouver des propriétés de ces suites.</p>
 <img class="vm" src="/discretes/img/c009/p0299_79.svg" alt="Chapitre 21. Dans le graphe complet 𝐾𝑛, chaque paire de sommets est reliée par une arête. Une arête est une paire de sommets, 𝑛 𝑛(𝑛−1) sans ordre. 𝐾𝑛 a donc (2) = arêtes. 2 Pour 𝐾5 : 5⋅4 = 10. 2" style="--w:24.12" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 9 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c009/p0300_80.svg" alt="À toi de chercher Tu as divisé 60 par 6, puis 2 162 160 par 720. Chaque fois, la division était juste parce que chaque objet cherché apparaissait le même nombre de fois dans la liste plus facile à compter. Place 4 personnes autour d’une table ronde à 4 chaises. Deux placements sont identiques quand l’un se déduit de l’autre" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c009/p0300_81.svg" alt="en faisant tourner tout le monde. Chaque placement « à rotation près » regroupe- t-il le même nombre de placements ordinaires ? Par combien faut-il diviser 4! ? Prends maintenant un collier de 4 perles :" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c009/p0300_82.svg" alt="2 rouges et 2 bleues, avec la même règle de rotation. Fais tourner « rouge, bleu, rouge, bleu » : combien de dispositions différentes obtiens-tu ? Et pour « rouge, rouge, bleu, bleu » ? La division marche-t-elle encore ? Sinon, que faudrait-il compter à la place ?" style="--w:24.19" loading="lazy">
+</div>
