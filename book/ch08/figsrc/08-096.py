@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+disc(ax,26,31,25,'resultat')
+text(ax,26,36,'fractions','resultat','m',weight='bold')
+text(ax,26,26,'arrêt ou boucle','resultat','s')
+box(ax,56,36,30,12,'limite',label='√2 = 1,414 213…',size='s')
+text(ax,71,52,'hors du cercle','limite','s')
+arrow(ax,(71,35),(71,26),'limite')
+text(ax,71,21,'ni arrêt ni boucle','limite','s')
+text(ax,71,12,'donc pas une fraction','limite','s',weight='bold')
+save(fig,'08-096')

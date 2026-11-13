@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 22, 80, 'les deux', 'resultat', 'm', weight='bold'); text(ax, 66, 80, 'un seul', 'limite', 'm', weight='bold')
+box(ax, 4, 62, 36, 10, 'sujet', label=r'$4{,}32\div1{,}8$', size='m'); box(ax, 48, 62, 36, 10, 'sujet', label=r'$4{,}32\div1{,}8$', size='m')
+arrow(ax, (10, 61), (10, 47), 'varie'); arrow(ax, (54, 61), (54, 47), 'varie')
+text(ax, 14, 54, r'$\times10$ aux deux', 'varie', 's', ha='left'); text(ax, 58, 54, r'$\times10$ au 1,8', 'varie', 's', ha='left')
+box(ax, 4, 36, 36, 10, 'resultat', label=r'$43{,}2\div18$', size='m'); box(ax, 48, 36, 36, 10, 'limite', label=r'$4{,}32\div18$', size='m')
+arrow(ax, (22, 35), (22, 22), 'resultat'); arrow(ax, (66, 35), (66, 22), 'limite')
+box(ax, 4, 10, 36, 11, 'resultat', label='2,4', size='l'); box(ax, 48, 10, 36, 11, 'limite', label='0,24', size='l')
+text(ax, 66, 4, '10 fois trop petit', 'limite', 's')
+save(fig, '08-058')

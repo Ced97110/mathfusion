@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,2,57,'bas 4','sujet','m',ha='left')
+for k in range(2): disc(ax,26+k*8,57,2.8,'sujet',label='2')
+for k in range(2): disc(ax,46+k*8,57,2.8,'varie',fill=False,label='5')
+text(ax,70,57,'= 100','encre','m',ha='left')
+box(ax,2,38,84,10,'varie',fill=False,dash=True)
+text(ax,44,43,'il manque 5 × 5 = 25','varie','m')
+box(ax,3,10,22,14,'sujet',label='3/4')
+arrow(ax,(27,17),(57,17),'varie'); text(ax,42,22,'× 25 en haut et en bas','varie','s')
+box(ax,59,10,26,14,'resultat',label='75/100')
+save(fig,'08-086')

@@ -23,7 +23,7 @@ def setup(ch, pdf, root='.'):
     subprocess.run(['pdftohtml','-xml','-i','-f',str(p1),'-l',str(p2),'-q',pdf,f'{base}/ch1'],check=True)
     subprocess.run([sys.executable,'parse.py'],cwd=base,stdout=subprocess.DEVNULL); print(subprocess.run([sys.executable,'fiches.py'],cwd=base,capture_output=True,text=True).stdout)
     F=json.load(open(f'{base}/fiches.json')); n=16; bs=[F[i:i+n] for i in range(0,len(F),n)]
-    if len(bs)>1 and len(bs[-1])<6: bs[-2]+=bs.pop()
+    if len(bs)>1 and len(bs[-1])<6: tail=bs.pop(); bs[-1]=bs[-1]+tail
     open(f'{base}/titles.txt','w').write('\n'.join(f"{f['code']} — {plain(f['title'])}" for f in F))
     for bi,b in enumerate(bs,1):
         out=[]

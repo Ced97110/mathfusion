@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 2, 2, 84, 72, 'fixe')
+box(ax, 6, 6, 56, 52, 'sujet')
+box(ax, 10, 10, 28, 34, 'autre')
+text(ax, 6, 69, 'fractions', 'fixe', 's', ha='left')
+text(ax, 10, 53, 'nombres décimaux', 'sujet', 's', ha='left')
+text(ax, 14, 39, 'entiers', 'autre', 's', ha='left')
+text(ax, 24, 25, '7', 'autre', 'l', weight='bold')
+text(ax, 50, 27, '2,35', 'sujet', 'l', weight='bold')
+text(ax, 74, 27, '1/3', 'limite', 'l', weight='bold')
+fig_ = save(fig, '08-021')

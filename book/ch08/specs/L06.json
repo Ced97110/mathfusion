@@ -1,0 +1,203 @@
+[
+ {
+  "code": "08-081",
+  "a_dire": "Les chiffres de 1/7 reviennent par blocs ; ceux de √2 ne s'arrêtent ni ne reviennent, donc √2 n'est pas une fraction.",
+  "legende_titre": "Chiffres qui reviennent, chiffres qui ne reviennent pas",
+  "lecture": [
+   "La ligne bleue montre 1/7 : le bloc 1 4 2 8 5 7 est écrit deux fois.",
+   "La flèche orange relie les deux blocs : le bloc revient, donc 1/7 est une fraction.",
+   "La ligne rouge montre √2 = 1,414 213… : ses chiffres ne reviennent pas, donc √2 n'est pas une fraction."
+  ],
+  "a_voir": "Un bloc qui revient donne une fraction ; sans bloc, ce n'est pas une fraction."
+ },
+ {
+  "code": "08-082",
+  "a_dire": "3/4, 1/5 et 1/8 donnent un décimal qui s'arrête ; 1/3, 1/6 et 2/11 donnent un décimal qui ne s'arrête pas.",
+  "legende_titre": "Trois fractions qui s'arrêtent, trois qui continuent",
+  "lecture": [
+   "La colonne verte contient 3/4 = 0,75, 1/5 = 0,2 et 1/8 = 0,125 : l'écriture s'arrête.",
+   "La colonne rouge contient 1/3, 1/6 et 2/11 : les points de suspension montrent que l'écriture continue."
+  ],
+  "a_voir": "Les deux colonnes se distinguent par la fin de l'écriture."
+ },
+ {
+  "code": "08-083",
+  "a_dire": "Les dénominateurs 4, 5 et 8 n'ont que des facteurs premiers 2 et 5 ; 3, 6 et 11 en ont un autre.",
+  "legende_titre": "Ce qui est commun à 4, 5 et 8",
+  "lecture": [
+   "Chaque case verte écrit 4, 5 ou 8 en facteurs : seuls 2 et 5 apparaissent.",
+   "Chaque case rouge écrit 3, 6 ou 11 : un facteur 3 ou 11 apparaît.",
+   "Les ronds comptent les facteurs de chaque écriture."
+  ],
+  "a_voir": "Les cases vertes n'ont que des 2 et des 5."
+ },
+ {
+  "code": "08-084",
+  "a_dire": "10^n est égal à 2^n × 5^n : il y a autant de facteurs 2 que de facteurs 5.",
+  "legende_titre": "Une puissance de 10 découpée en 2 et en 5",
+  "lecture": [
+   "Chaque ligne écrit 10^n = 2^n × 5^n pour n = 1, 2, 3.",
+   "Les ronds bleus comptent les facteurs 2.",
+   "Les ronds violets comptent les facteurs 5, en même nombre."
+  ],
+  "a_voir": "Sur chaque ligne, il y a autant de ronds bleus que de ronds violets."
+ },
+ {
+  "code": "08-085",
+  "a_dire": "Une fraction réduite s'arrête si et seulement si son dénominateur n'a que des facteurs 2 et 5 ; il faut d'abord réduire.",
+  "legende_titre": "Réduire, puis regarder le bas",
+  "lecture": [
+   "En haut, la règle : le bas réduit n'a que des 2 et des 5.",
+   "La case rouge 3/6 n'est pas réduite : son bas est 6 = 2 × 3, et le 3 est barré.",
+   "La flèche orange divise en haut et en bas par 3.",
+   "La case bleue 1/2 est réduite : son bas est 2. La case verte 0,5 montre que l'écriture s'arrête."
+  ],
+  "a_voir": "C'est le bas de la fraction réduite qui décide."
+ },
+ {
+  "code": "08-086",
+  "a_dire": "Pour écrire une fraction en décimal, on complète le bas avec les facteurs 2 et 5 manquants pour obtenir une puissance de 10 : 3/4 = 75/100.",
+  "legende_titre": "Compléter le bas jusqu'à 100",
+  "lecture": [
+   "Le bas 4 est 2 × 2 (ronds bleus) ; il manque deux 5 (ronds orange vides) pour faire 100.",
+   "Le cadre orange pointillé indique ce qu'il manque : 5 × 5 = 25.",
+   "La flèche orange multiplie le haut et le bas par 25 : 3/4 devient 75/100."
+  ],
+  "a_voir": "Les facteurs ajoutés au bas sont aussi ajoutés au haut."
+ },
+ {
+  "code": "08-087",
+  "a_dire": "Si le bas contient un autre facteur premier, aucune fraction équivalente n'a pour bas 10^n : l'hypothèse mène à une impossibilité.",
+  "legende_titre": "Pourquoi 1/3 ne peut pas s'arrêter",
+  "lecture": [
+   "La case bleue suppose que 1/3 s'écrit N/10^n.",
+   "La case orange en déduit que 3 divise 10^n.",
+   "La case rouge dit que 10^n n'a que 2 et 5 : c'est impossible.",
+   "À droite, 10, 100 et 1 000 laissent chacun le reste 1 quand on les divise par 3."
+  ],
+  "a_voir": "Aucune puissance de 10 n'est multiple de 3."
+ },
+ {
+  "code": "08-088",
+  "a_dire": "La virgule est exacte tant que le bas n'a que des 2 et des 5 ; sinon l'écriture est infinie ou arrondie, et l'arrondi n'est pas exact.",
+  "legende_titre": "Virgule exacte, virgule arrondie",
+  "lecture": [
+   "À gauche, 8 parts de 0,375 remplissent exactement 3 : 8 × 0,375 = 3.",
+   "À droite, 3 parts de 0,33 ne remplissent pas tout le cadre : 3 × 0,33 = 0,99.",
+   "Le cadre pointillé gris marque l'entier 1 que l'arrondi n'atteint pas."
+  ],
+  "a_voir": "À droite, il manque un petit morceau pour atteindre 1."
+ },
+ {
+  "code": "08-089",
+  "a_dire": "Le symbole ≈ veut dire « proche de » : 1/3 ≈ 0,33, mais 1/3 n'est pas égal à 0,33.",
+  "legende_titre": "Le signe qui veut dire « proche de »",
+  "lecture": [
+   "Le bleu 1/3 est le nombre de départ, qui s'écrit 0,333….",
+   "Le signe orange ≈ se lit « proche ».",
+   "Le violet 0,33 est l'arrondi.",
+   "La case rouge rappelle que écrire = serait faux : 3 × 0,33 = 0,99."
+  ],
+  "a_voir": "Chaque morceau de 1/3 ≈ 0,33 a son sens, et = serait faux."
+ },
+ {
+  "code": "08-090",
+  "a_dire": "En arrondissant 1/3 à 0,33, on commet une erreur de 1/300.",
+  "legende_titre": "La taille de l'erreur d'arrondi",
+  "lecture": [
+   "La bande bleue représente 1/3 = 100/300 : 100 cases.",
+   "La bande violette représente 0,33 = 99/300 : 99 cases.",
+   "La dernière case rouge est l'écart : 1/300."
+  ],
+  "a_voir": "Il manque une seule case sur 100."
+ },
+ {
+  "code": "08-091",
+  "a_dire": "Le décimal est le format de presque tous les nombres qui suivent : prix, longueurs, pourcentages, volumes.",
+  "legende_titre": "Le même format pour beaucoup de nombres",
+  "lecture": [
+   "Quatre cases bleues montrent un prix, une longueur, un pourcentage et un volume.",
+   "Chaque nombre est écrit avec une virgule.",
+   "L'accolade verte réunit les quatre : même écriture."
+  ],
+  "a_voir": "Quatre grandeurs différentes s'écrivent avec une virgule."
+ },
+ {
+  "code": "08-092",
+  "a_dire": "Un pourcentage est un nombre de centièmes : 37 % = 37 sur 100 = 0,37.",
+  "legende_titre": "Un pourcentage compte des centièmes",
+  "lecture": [
+   "La grille a 100 cases.",
+   "37 cases sont bleues, les autres sont grises.",
+   "À droite, 37 % se lit 37 sur 100, soit 37 centièmes, soit 0,37."
+  ],
+  "a_voir": "37 cases bleues sur 100 donnent 0,37."
+ },
+ {
+  "code": "08-093",
+  "a_dire": "L'arrondi sert à contrôler l'erreur : avec un chiffre de plus, l'erreur est 10 fois plus petite.",
+  "legende_titre": "Plus de chiffres, moins d'erreur",
+  "lecture": [
+   "Le violet 0,33 a une erreur de 1/300, montrée par une case rouge large.",
+   "Le bleu 0,333 a une erreur de 1/3000, montrée par une case rouge fine.",
+   "La flèche orange dit : 10 fois moins."
+  ],
+  "a_voir": "La case rouge devient 10 fois plus fine."
+ },
+ {
+  "code": "08-094",
+  "a_dire": "Convertir des mètres en centimètres revient à déplacer la virgule : 2,35 m = 235 cm.",
+  "legende_titre": "Changer d'unité en déplaçant la virgule",
+  "lecture": [
+   "La ligne bleue montre 2,35 m avec la virgule après le 2.",
+   "La ligne verte montre les mêmes chiffres, 235 cm, avec la virgule à la fin.",
+   "La flèche orange montre le déplacement de 2 rangs vers la droite : × 100."
+  ],
+  "a_voir": "Les chiffres ne changent pas, seule la virgule bouge."
+ },
+ {
+  "code": "08-095",
+  "a_dire": "La notation scientifique déplace la virgule : 0,000 002 9 = 2,9 × 10^(−6), avec 6 rangs vers la gauche.",
+  "legende_titre": "Écrire un petit nombre avec une puissance de 10",
+  "lecture": [
+   "Les cases bleues sont les chiffres 2 et 9, les cases grises sont les zéros.",
+   "Le point vert marque la virgule de départ, le point orange la nouvelle virgule après le premier chiffre non nul.",
+   "La flèche orange compte 6 rangs vers la gauche, ce qui donne 10^(−6)."
+  ],
+  "a_voir": "La virgule saute de 6 rangs et l'exposant vaut −6."
+ },
+ {
+  "code": "08-096",
+  "a_dire": "√2 = 1,414 213… ne s'arrête pas et ne boucle pas : il n'est donc aucune fraction.",
+  "legende_titre": "Un nombre hors du cercle des fractions",
+  "lecture": [
+   "Le grand cercle vert est celui des fractions : leur écriture s'arrête ou boucle.",
+   "La case rouge √2 est placée en dehors du cercle.",
+   "La flèche rouge dit : ni arrêt ni boucle, donc √2 n'est pas une fraction."
+  ],
+  "a_voir": "√2 est à l'extérieur du cercle des fractions."
+ },
+ {
+  "code": "08-097",
+  "a_dire": "La période est le bloc qui revient : 1 chiffre pour 1/3, 6 chiffres (142857) pour 1/7, 2 chiffres (09) pour 1/11.",
+  "legende_titre": "Trois périodes de longueurs différentes",
+  "lecture": [
+   "Chaque ligne bleue écrit une fraction et son bloc qui revient.",
+   "Le bloc de 1/3 est un chiffre, celui de 1/7 six chiffres, celui de 1/11 deux chiffres.",
+   "Chaque accolade grise donne la longueur du bloc."
+  ],
+  "a_voir": "La largeur du bloc montre la longueur de la période."
+ },
+ {
+  "code": "08-098",
+  "a_dire": "La période de 1/q ne dépasse pas q − 1 chiffres ; elle dépend du nombre de restes différents qui apparaissent.",
+  "legende_titre": "Combien de restes différents ?",
+  "lecture": [
+   "En haut : au plus q − 1 restes différents, car le reste 0 ferait finir la division.",
+   "Pour 1/7, six cases vertes montrent les 6 restes 1, 3, 2, 6, 4, 5 sur 6 possibles.",
+   "Pour 1/11, deux cases rouges (1 et 10) sont occupées sur 10 possibles ; après 10, on revient à 1.",
+   "Les cases pointillées vides sont des restes qui n'apparaissent jamais."
+  ],
+  "a_voir": "La période ne dépasse pas q − 1 chiffres ; elle est plus courte quand beaucoup de cases restent vides."
+ }
+]
