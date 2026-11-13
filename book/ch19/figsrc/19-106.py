@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 62, 50, 12, 'sujet', label=r'$y=\frac{2}{3}x+\frac{1}{3}$')
+box(ax, 2, 40, 50, 12, 'varie', label=r'$y=\frac{8}{3}+\frac{1}{3}$')
+box(ax, 2, 18, 50, 12, 'resultat', label=r'$y=3$')
+arrow(ax, (27, 62), (27, 52.5), 'varie'); text(ax, 30, 57.2, 'x remplacé par 4', 'varie', 's', ha='left')
+arrow(ax, (27, 40), (27, 30.5), 'varie'); text(ax, 30, 35.2, 'on calcule', 'varie', 's', ha='left')
+box(ax, 62, 18, 24, 12, 'autre', label=r'$B(4,\,3)$')
+arrow(ax, (53, 24), (61, 24), 'resultat', both=True)
+text(ax, 57, 29, '=', 'resultat', 'm')
+text(ax, 74, 36, 'le point B', 'autre', 's')
+text(ax, 27, 8, 'même 3 : l’équation est juste', 'resultat', 's')
+save(fig, '19-106')

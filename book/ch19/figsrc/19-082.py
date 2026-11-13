@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 72, r'$y=-\frac{a}{b}\,x+\frac{c}{b}$', 'encre', 'xl')
+box(ax, 3, 6, 40, 34, 'sujet'); box(ax, 45, 6, 40, 34, 'resultat')
+text(ax, 23, 33, r'multiplie $x$', 'sujet', 's'); text(ax, 65, 33, 'nombre seul', 'resultat', 's')
+text(ax, 23, 24, r'$-\frac{a}{b}=-\frac{2}{3}$', 'sujet', 'l')
+text(ax, 65, 24, r'$\frac{c}{b}=\frac{12}{3}=4$', 'resultat', 'l')
+text(ax, 23, 11, r'$a=2,\ b=3$', 'sujet', 's'); text(ax, 65, 11, r'$c=12,\ b=3$', 'resultat', 's')
+arrow(ax, (23, 62), (23, 41), 'sujet'); arrow(ax, (65, 62), (65, 41), 'resultat')
+save(fig, '19-082')

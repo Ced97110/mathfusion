@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 2, 52, 34, 14, 'sujet', label=r'$y=2x+1$', size='l')
+text(ax, 19, 70, 'équation', 'sujet', 's')
+gx = lambda x: 52 + x * 6.5; gy = lambda y: 52 + y * 4.5
+line(ax, [(gx(0), gy(0)), (gx(5), gy(0))]); line(ax, [(gx(0), gy(0)), (gx(0), gy(4))])
+line(ax, [(gx(0), gy(1/3)), (gx(5), gy(2/3*5+1/3))], 'sujet', lw=1.2)
+disc(ax, gx(1), gy(1), 1.0, 'autre'); disc(ax, gx(4), gy(3), 1.0, 'autre')
+text(ax, gx(1) - 1, gy(1) + 4, r'$(1,\,1)$', 'autre', 's', ha='right'); text(ax, gx(4) + 2, gy(3) - 4.5, r'$(4,\,3)$', 'autre', 's')
+text(ax, 69, 73, 'droite', 'sujet', 's')
+arrow(ax, (38, 62), (49, 62), 'fixe'); text(ax, 43.5, 66, 'avant', 'fixe', 's')
+arrow(ax, (49, 56), (38, 56), 'varie', lw=1.4); text(ax, 43.5, 52, 'inverse', 'varie', 's')
+text(ax, 44, 40, 'pour écrire l’équation, il faut :', 'encre', 's')
+box(ax, 2, 22, 40, 11, 'varie', label='pente + un point')
+box(ax, 46, 22, 40, 11, 'varie', label='deux points')
+arrow(ax, (22, 38), (22, 34), 'fixe'); arrow(ax, (66, 38), (66, 34), 'fixe')
+save(fig, '19-098')

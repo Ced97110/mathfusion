@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def plane(ax, ox, oy, ux, uy, x0, x1, y0, y1):
+    arrow(ax, (ox + x0 * ux, oy), (ox + x1 * ux + 3, oy), "fixe", lw=0.8)
+    arrow(ax, (ox, oy + y0 * uy), (ox, oy + y1 * uy + 3), "fixe", lw=0.8)
+    return lambda x, y: (ox + x * ux, oy + y * uy)
+fig, ax = canvas(64)
+box(ax, 4, 40, 28, 12, 'varie', label=r'$0 \times x$')
+text(ax, 38, 46, '+', 'encre', 'l')
+box(ax, 44, 40, 28, 12, 'sujet', label=r'$1 \times y$')
+text(ax, 76, 46, '=', 'encre', 'l')
+text(ax, 84, 46, '3', 'resultat', 'l', weight='bold')
+text(ax, 18, 35, 'vaut 0 : $x$ disparaît', 'varie', 's')
+text(ax, 58, 35, 'reste : $y$', 'sujet', 's')
+arrow(ax, (58, 32), (58, 25), 'resultat'); arrow(ax, (18, 32), (40, 25), 'varie')
+box(ax, 34, 14, 48, 10, 'resultat', label=r'$y=3$', size='l', weight='bold')
+text(ax, 44, 6, r'$a=0$, $b=1$ : $b$ pas nul', 'fixe', 's')
+save(fig, '19-117')
