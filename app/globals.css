@@ -139,3 +139,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #b8500a;outline-offset:2p
 .corps img.vm{width:calc(var(--w) * 1em);margin:4px 0 12px}
 .corps img.vf{width:calc(var(--w) * 1.45em);margin:18px auto 6px}
 .corps .cap{font:14px/1.45 Inter,system-ui,sans-serif;color:#2b3138;margin-bottom:20px}
+/* Figures interactives : la figure du livre (img) reste en repli et pour l'impression */
+.livre img.fi-done{display:none}
+.livre .fi{margin:18px 0 6px}
+.livre .fi svg{max-width:calc(var(--fiw, 34) * 1em);margin:0 auto}
+.livre .fi svg:focus-visible{outline:3px solid #b8500a;outline-offset:2px}
+.fi-s{display:flex;align-items:center;gap:10px;margin:8px 0 0;font:500 14px Inter,system-ui,sans-serif;color:#2b3138}
+.fi-s span{flex:none;min-width:7em}
+.fi-s input{flex:1;min-width:0;accent-color:#b8500a;height:28px}
+.fi-s output{flex:none;min-width:5.5em;text-align:right;font-variant-numeric:tabular-nums}
+.fi-r{margin-top:8px;font:600 13px Inter,system-ui,sans-serif;color:#1f4e79;background:#eef2f7;border:1px solid #c9d3df;border-radius:6px;padding:8px 12px;min-height:40px;cursor:pointer}
+@media print{.livre img.fi-done{display:block}.livre .fi{display:none}}

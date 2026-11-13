@@ -3,6 +3,7 @@
 // Le chapitre n'est pas inclus dans la page elle-même : un chapitre pèse 3 à 7 Mo,
 // et l'inclure ferait copier ce poids plusieurs fois dans le site construit.
 import { useEffect, useRef, useState } from 'react';
+import { enhanceFigures } from './figures';
 
 /** @param {{ file: string, dir?: string }} props  dir: folder of public/ holding the file */
 export default function ChapterBody({ file, dir = 'chapters' }) {
@@ -18,6 +19,7 @@ export default function ChapterBody({ file, dir = 'chapters' }) {
       .then((html) => {
         if (!alive || !ref.current) return;
         ref.current.innerHTML = html;
+        enhanceFigures(ref.current, dir);
         setState('ready');
         const id = decodeURIComponent(window.location.hash.slice(1));
         const el = id && document.getElementById(id);

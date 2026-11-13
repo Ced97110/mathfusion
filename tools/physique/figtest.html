@@ -1,0 +1,51 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>figtest</title>
+<link rel="stylesheet" href="/site.css">
+<body style="margin:0;background:#fff">
+<main style="max-width:44rem;margin:0 auto"><div class="livre" style="padding:8px 18px"><div class="fi" id="box"></div></div></main>
+<pre id="out"></pre>
+<script type="module">
+// Test bench for one interactive figure: ?id=c036/p0416_1&mode=check|default|alt
+const q = new URLSearchParams(location.search);
+const id = q.get('id'), mode = q.get('mode') || 'check';
+const errors = [];
+window.addEventListener('error', (e) => errors.push(String(e.message)));
+window.addEventListener('unhandledrejection', (e) => errors.push(String(e.reason)));
+const box = document.getElementById('box');
+const report = (r) => { document.getElementById('out').textContent = JSON.stringify(r); document.title = 'done'; };
+const bad = (s) => /NaN|Infinity|undefined/.test(s);
+try {
+  const m = await import(`/physique/fig/${id}.js`);
+  m.mount(box);
+  const sliders = [...box.querySelectorAll('input[type=range]')];
+  const svgs = () => [...box.querySelectorAll('svg')].map((s) => s.outerHTML).join('');
+  const first = svgs();
+  const r = { id, svg: box.querySelectorAll('svg').length, sliders: sliders.length, nan: bad(first), changes: 0, nanAfter: 0, errors };
+  if (mode === 'alt') {
+    for (const s of sliders) { s.value = String(Number(s.min) + 0.8 * (Number(s.max) - Number(s.min))); s.dispatchEvent(new Event('input')); }
+    const k = box.querySelector('svg[tabindex]');
+    if (k) for (const key of ['ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowRight', 'ArrowUp', 'ArrowUp', 'ArrowUp', 'ArrowUp']) k.dispatchEvent(new KeyboardEvent('keydown', { key }));
+  }
+  if (mode === 'check') {
+    // stuck = the sliders moved away from the book values but the drawing did not change
+    const key = () => sliders.map((s) => s.value).join('|');
+    const start = key();
+    r.stuck = 0;
+    for (let i = 0; i < 50; i++) {
+      for (const s of sliders) {
+        const lo = Number(s.min), hi = Number(s.max);
+        s.value = String(lo + Math.random() * (hi - lo));
+        s.dispatchEvent(new Event('input'));
+      }
+      const now = svgs();
+      if (now !== first) r.changes++;
+      else if (key() !== start) r.stuck++;
+      if (bad(now)) r.nanAfter++;
+    }
+    const k = box.querySelector('svg[tabindex]');
+    if (k) { const before = svgs(); k.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' })); r.rotates = svgs() !== before; }
+  }
+  report(r);
+} catch (e) { errors.push(String(e && e.stack || e)); report({ id, errors }); }
+</script>
