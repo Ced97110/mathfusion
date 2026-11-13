@@ -1,0 +1,349 @@
+[
+ {
+  "code": "54-059",
+  "a_dire": "On confond 𝑎 de 𝐷 avec la fraction 𝑎/1 de 𝐹, parce que les calculs donnent les mêmes résultats.",
+  "legende_titre": "Deux écritures pour un même nombre",
+  "lecture": [
+   "La case bleue montre l’entier 3, un élément de 𝐷. La case violette montre la fraction 3/1, dans 𝐹.",
+   "La flèche orange envoie 3 sur 3/1.",
+   "En bas, 3 × 4 = 12 est écrit en bleu et 3/1 × 4/1 = 12/1 en violet : le résultat est le même.",
+   "La case verte dit ce que l’on fait : on écrit 3 pour 3/1."
+  ],
+  "a_voir": "On ne fait plus de différence entre 3 et 3/1, car les deux calculs donnent le même résultat."
+ },
+ {
+  "code": "54-060",
+  "a_dire": "Si l’envoi des entiers n’est pas injectif, on ne peut pas toujours donner une image aux fractions : ici 1/2 n’en a pas.",
+  "legende_titre": "Quand le prolongement n’existe pas",
+  "lecture": [
+   "À gauche, les cases bleues montrent les entiers 1 et 2, et la case orange la fraction 1/2.",
+   "À droite, les cases violettes sont les restes modulo 2 : 1 est envoyé sur 1 et 2 sur 0.",
+   "La flèche rouge va de 1/2 vers une case rouge « ? » : il faudrait 1 fois l’inverse de 0.",
+   "Le texte rouge dit que l’inverse de 0 n’existe pas."
+  ],
+  "a_voir": "Comme 2 est envoyé sur 0, la fraction 1/2 n’a pas d’image."
+ },
+ {
+  "code": "54-061",
+  "a_dire": "Tout corps qui contient 𝐷 contient aussi ses fractions : le corps des fractions est le plus petit.",
+  "legende_titre": "Les fractions sont imposées",
+  "lecture": [
+   "Le grand cadre violet est un corps quelconque 𝐹′, ici ℝ. Il contient le cadre vert.",
+   "Le cadre vert est le plus petit corps contenant ℤ. Le cadre bleu à l’intérieur contient les entiers 2 et 3.",
+   "Les flèches orange montrent ce qui est forcé : l’inverse de 3 donne 1/3, puis 2 fois 1/3 donne 2/3.",
+   "Les cases blanches 1/3 et 2/3 sont dans le cadre vert."
+  ],
+  "a_voir": "Chaque fraction est forcée par les entiers, donc aucun corps plus petit ne convient."
+ },
+ {
+  "code": "54-062",
+  "a_dire": "Avec 𝐷 = ℤ, la construction générale redonne les fractions du chapitre 6 : le corps des fractions de ℤ est ℚ.",
+  "legende_titre": "Le chapitre 6 est un cas particulier",
+  "lecture": [
+   "Le cadre violet à gauche montre la règle du chapitre 6 : (2, 3) et (4, 6) sont équivalents, car 2 × 6 = 4 × 3.",
+   "Le cadre bleu à droite montre la même règle écrite avec des lettres : 𝑎𝑑 = 𝑏𝑐.",
+   "La double flèche verte dit que les deux règles sont les mêmes.",
+   "La case verte donne un calcul commun : 2/3 + 4/5 = 22/15."
+  ],
+  "a_voir": "La règle et les calculs sont identiques, donc le corps des fractions de ℤ est ℚ."
+ },
+ {
+  "code": "54-063",
+  "a_dire": "Le corps des fractions de ℝ[x] est fait des quotients 𝑃/𝑄 ; le quotient 1/x en fait partie sans être un polynôme.",
+  "legende_titre": "Des polynômes aux quotients",
+  "lecture": [
+   "En haut, les couples violets (x, x²) et (1, x) sont équivalents, car x × x = x² × 1.",
+   "Le grand cadre vert contient tous les quotients 𝑃/𝑄.",
+   "Le cadre bleu contient les polynômes, par exemple x et x² + 1.",
+   "La case blanche 1/x est dans le cadre vert mais hors du cadre bleu : ce n’est pas un polynôme."
+  ],
+  "a_voir": "Les polynômes sont une partie des quotients, et 1/x est un quotient qui n’est pas un polynôme."
+ },
+ {
+  "code": "54-064",
+  "a_dire": "Quand l’anneau de départ est déjà un corps, les fractions n’ajoutent rien : le corps des fractions de 𝐹 est 𝐹.",
+  "legende_titre": "Un corps ne grandit pas",
+  "lecture": [
+   "Le grand cadre bleu est ℚ. Les cases blanches 1/2 et 1/3 sont deux fractions qui s’y trouvent.",
+   "Les flèches orange montrent le quotient 1/2 ÷ 1/3.",
+   "Le résultat, la case verte 3/2, est dans le même cadre.",
+   "La ligne du bas dit que les fractions de ℚ forment ℚ."
+  ],
+  "a_voir": "Le quotient de deux fractions est déjà une fraction : rien de nouveau n’apparaît."
+ },
+ {
+  "code": "54-065",
+  "a_dire": "[a, b] est une écriture courte pour « la classe du couple (a, b) » ; elle désigne un groupe de couples, pas un seul.",
+  "legende_titre": "Une écriture courte pour la classe",
+  "lecture": [
+   "La case grise du haut est la phrase longue : la classe du couple (2, 3).",
+   "La flèche orange mène à son écriture courte, [2, 3], en bleu.",
+   "À gauche, un seul disque orange est le point (2, 3).",
+   "À droite, le cadre bleu rassemble plusieurs disques : c’est le groupe [2, 3]."
+  ],
+  "a_voir": "Les crochets remplacent la phrase et disent qu’on parle d’un groupe, pas d’un point."
+ },
+ {
+  "code": "54-066",
+  "a_dire": "Le signe 𝐹_D se lit « le corps des fractions de 𝐷 » : l’indice dit de quel anneau on part.",
+  "legende_titre": "Fractions de quel anneau ?",
+  "lecture": [
+   "La colonne bleue de gauche liste des anneaux : ℤ, ℤ[x] et ℚ[x].",
+   "La colonne verte de droite liste les corps de fractions : ℚ et ℚ(x).",
+   "Chaque flèche verte relie un anneau au corps de ses fractions 𝐹_D.",
+   "Deux flèches arrivent à ℚ(x) : ℤ[x] et ℚ[x] ont le même corps de fractions."
+  ],
+  "a_voir": "Le signe répond à « fractions de quoi ? », et deux anneaux peuvent avoir le même corps."
+ },
+ {
+  "code": "54-067",
+  "a_dire": "Les formules en crochets restent les mêmes quand on change les nombres, et leur résultat est une classe.",
+  "legende_titre": "Somme et produit des classes",
+  "lecture": [
+   "Le texte bleu du haut donne la formule de la somme ; celui du milieu donne celle du produit.",
+   "Dans la case grise de la somme, on lit [2, 3] + [4, 5] = [2×5 + 3×4, 3×5].",
+   "La case verte donne le résultat de la somme : [22, 15].",
+   "Dans la case grise du produit, on lit [2, 3] · [4, 5] = [2×4, 3×5], et la case verte donne [8, 15]."
+  ],
+  "a_voir": "On applique les mêmes formules aux nombres 2, 3, 4 et 5 et on obtient toujours une classe entre crochets."
+ },
+ {
+  "code": "54-068",
+  "a_dire": "Une classe [a, b] est une droite entière de points, pas un point : [2, 3] = [4, 6] est vrai, (2, 3) = (4, 6) est faux.",
+  "legende_titre": "Une droite entière, pas un point",
+  "lecture": [
+   "La droite bleue passe par l’origine et par les points orange (2, 3), (4, 6) et (6, 9).",
+   "Toute la droite est la classe [2, 3].",
+   "La case verte dit que [2, 3] = [4, 6] est vrai : c’est la même droite.",
+   "La case rouge dit que (2, 3) = (4, 6) est faux : ce sont deux points."
+  ],
+  "a_voir": "Les crochets désignent la droite entière, donc deux points de la même droite donnent la même classe."
+ },
+ {
+  "code": "54-069",
+  "a_dire": "Les crochets de ℚ[x] désignent les polynômes ; les parenthèses de ℚ(x) désignent les quotients de polynômes.",
+  "legende_titre": "Crochets ou parenthèses",
+  "lecture": [
+   "Le cadre bleu de gauche est ℚ[x] : des polynômes, par exemple x + 1.",
+   "Le cadre vert de droite est ℚ(x) : des quotients de polynômes.",
+   "Le signe ⊂ entre les deux dit que le cadre bleu est dans le cadre vert.",
+   "En rouge, (x + 1)/(x² − 2) est dans le cadre vert, mais ce n’est pas un polynôme."
+  ],
+  "a_voir": "Un seul changement de parenthèse sépare les polynômes des quotients."
+ },
+ {
+  "code": "54-070",
+  "a_dire": "On peut multiplier numérateur et dénominateur par un même facteur f non nul ; avec f = 0, le couple n’est plus permis.",
+  "legende_titre": "Un même facteur en haut et en bas",
+  "lecture": [
+   "La case bleue du haut est le couple (u, v) = (2, 3).",
+   "À gauche, avec f = 5, on obtient (10, 15) en vert : 10 × 3 = 15 × 2, donc il est équivalent à (2, 3).",
+   "À droite, avec f = 0, on obtient (0, 0) en rouge.",
+   "Le texte rouge dit que son dénominateur est nul : le couple est interdit."
+  ],
+  "a_voir": "La règle marche avec f = 5 mais pas avec f = 0."
+ },
+ {
+  "code": "54-071",
+  "a_dire": "La preuve compare les deux côtés de la distributivité ; l’étape qui compte est la simplification par 5, qui rend les deux classes égales.",
+  "legende_titre": "Les deux côtés se rejoignent",
+  "lecture": [
+   "La colonne bleue calcule le côté gauche : ([1, 2] + [1, 3]) · [1, 5] donne [5, 6] · [1, 5], puis [5, 30].",
+   "La colonne violette calcule le côté droit : [1, 10] + [1, 15] donne [25, 150].",
+   "La case orange écrit [25, 150] comme [5 × 5, 5 × 30], avec un 5 en facteur.",
+   "En simplifiant par 5 (÷ 5), on trouve [5, 30], comme à gauche : le signe = en vert."
+  ],
+  "a_voir": "Après simplification par 5, les deux côtés donnent la même classe [5, 30]."
+ },
+ {
+  "code": "54-072",
+  "a_dire": "La caractéristique est le nombre de fois qu’il faut ajouter 1 pour obtenir 0 ; dans ℚ on n’y arrive jamais, elle vaut 0.",
+  "legende_titre": "Compter jusqu’à 0",
+  "lecture": [
+   "À gauche, l’horloge ℤ/5 : cinq disques bleus 0, 1, 2, 3, 4 reliés par des flèches « + 1 ».",
+   "Après cinq flèches, on revient à 0 : la caractéristique est 5.",
+   "À droite, sur la droite des fractions, les disques violets 1, 2, 3 s’éloignent de 0.",
+   "Le texte violet dit qu’on n’obtient jamais 0 : la caractéristique est 0."
+  ],
+  "a_voir": "Dans ℤ/5, cinq fois 1 donne 0 ; dans ℚ, jamais."
+ },
+ {
+  "code": "54-073",
+  "a_dire": "Dans un corps de caractéristique 0, les sommes 1 + 1 + … sont non nulles et inversibles, donc on y retrouve les fractions de ℚ.",
+  "legende_titre": "Les fractions apparaissent",
+  "lecture": [
+   "Sur la droite de ℝ, les disques bleus 1, 2 et 3 sont les sommes de un, deux et trois fois 1 ; elles ne sont pas nulles.",
+   "Le disque orange est 1/3, l’inverse de 3.",
+   "Le disque vert est 2/3, obtenu comme 2 × 1/3.",
+   "Les lignes du bas redisent ces trois étapes."
+  ],
+  "a_voir": "Les sommes de 1 ont des inverses, donc les fractions comme 2/3 existent dans le corps."
+ },
+ {
+  "code": "54-074",
+  "a_dire": "Un corps de caractéristique p contient une copie de ℤ/p ; ℤ/6 n’est pas un corps, donc l’énoncé ne s’y applique pas.",
+  "legende_titre": "Le mot « corps » est nécessaire",
+  "lecture": [
+   "Le cercle bleu montre ℤ/6 : six disques 0 à 5 reliés par des flèches « + 1 ».",
+   "Après six flèches, on revient à 0 : la caractéristique est 6.",
+   "La case rouge écrit 2 × 3 = 0, avec deux nombres non nuls.",
+   "Le texte rouge conclut que ℤ/6 n’est pas un corps."
+  ],
+  "a_voir": "Dans ℤ/6, deux nombres non nuls ont un produit nul, donc ce n’est pas un corps."
+ },
+ {
+  "code": "54-075",
+  "a_dire": "La preuve plonge ℤ dans F par n ↦ n·1, puis le théorème 2.9 prolonge ce plongement à ℚ.",
+  "legende_titre": "De ℤ à ℚ dans F",
+  "lecture": [
+   "La case bleue ℤ envoie ses entiers dans la case verte F par la flèche bleue n ↦ n·1.",
+   "La flèche grise relie ℤ à ℚ (violet) par a ↦ a/1.",
+   "La grosse flèche orange prolonge l’envoi de ℚ vers F : c’est l’étape qui porte le poids.",
+   "La formule orange du bas donne l’image de m/n : (m·1)(n·1)⁻¹."
+  ],
+  "a_voir": "Sans le prolongement orange, on aurait seulement une copie de ℤ dans F."
+ },
+ {
+  "code": "54-076",
+  "a_dire": "Dans ℝ, 2/3 est envoyé sur (1 + 1) × (1 + 1 + 1)⁻¹ ; la formule ne marche pas dans tout corps, par exemple 1/5 dans ℤ/5.",
+  "legende_titre": "Une formule qui ne vaut pas partout",
+  "lecture": [
+   "En haut, dans ℝ : la fraction 2/3 devient (1 + 1) × (1 + 1 + 1)⁻¹, puis le réel 0,666…, en vert.",
+   "En bas, dans ℤ/5 : la fraction 1/5 devient 1 × (1 + 1 + 1 + 1 + 1)⁻¹.",
+   "La case rouge dit que 1 + 1 + 1 + 1 + 1 = 0, donc qu’il faudrait l’inverse de 0, qui n’existe pas."
+  ],
+  "a_voir": "La formule donne un résultat dans ℝ, mais pas pour 1/5 dans ℤ/5."
+ },
+ {
+  "code": "54-077",
+  "a_dire": "En caractéristique p, l’image de ℤ est ℤ/p, qui est déjà un corps : on n’a pas besoin d’ajouter des fractions.",
+  "legende_titre": "L’image est déjà un corps",
+  "lecture": [
+   "La colonne bleue de gauche liste les entiers 1, 2, 5 et 7.",
+   "Les flèches orange donnent leur reste modulo 5 : 1, 2, 0 et 2.",
+   "Les cases blanches de droite sont dans le cadre vert, qui est ℤ/5.",
+   "Le texte vert dit que ce cadre est déjà un corps."
+  ],
+  "a_voir": "Les restes forment tout ℤ/5, qui est un corps sans rien ajouter."
+ },
+ {
+  "code": "54-078",
+  "a_dire": "Le sous-corps premier de F est le plus petit sous-corps de F : ℚ en caractéristique 0, ℤ/p en caractéristique p.",
+  "legende_titre": "Le plus petit sous-corps",
+  "lecture": [
+   "Le grand cadre violet est le corps F, ici ℝ.",
+   "Le cadre bleu ℚ est le sous-corps premier de ℝ.",
+   "À droite, le texte violet dit que ℝ lui-même n’est pas premier, car ℚ est plus petit.",
+   "En bas, les deux cases bleues donnent le sous-corps premier selon la caractéristique : ℚ pour 0, ℤ/p pour p."
+  ],
+  "a_voir": "Le sous-corps premier est le plus petit des sous-corps de F."
+ },
+ {
+  "code": "54-079",
+  "a_dire": "Tout sous-corps K contient 1, donc les sommes de 1, donc leurs inverses et leurs quotients : il contient le sous-corps premier.",
+  "legende_titre": "Tout sous-corps le contient",
+  "lecture": [
+   "Le grand cadre violet est un sous-corps K de ℝ ; le cadre pointillé bleu est le sous-corps premier.",
+   "Sur la première ligne, en bleu, on part de 1 et on ajoute 1 : 1+1, puis 1+1+1.",
+   "La flèche « inverse » mène de 1+1+1 à 1/3, en vert.",
+   "La flèche « × 2 » mène de 1/3 à 2/3, en vert."
+  ],
+  "a_voir": "Les éléments du sous-corps premier sont forcés dans K, étape après étape."
+ },
+ {
+  "code": "54-080",
+  "a_dire": "Le polynôme 2 − x + 3x³ est la suite de ses coefficients, tracée en barres : 2, −1, 0, 3, puis des zéros.",
+  "legende_titre": "Un polynôme en barres",
+  "lecture": [
+   "Chaque barre bleue est un coefficient, placé au-dessus de sa position 𝑥⁰, 𝑥¹, 𝑥², 𝑥³, 𝑥⁴.",
+   "La barre de 𝑥¹ descend sous la ligne : son coefficient est −1.",
+   "Aux positions 2 et 4, il n’y a pas de barre : le coefficient est 0.",
+   "La flèche orange montre la dernière barre non nulle, en position 3 : le degré est 3."
+  ],
+  "a_voir": "Le polynôme est la suite des hauteurs, et le degré est la position de la dernière barre non nulle."
+ },
+ {
+  "code": "54-081",
+  "a_dire": "Un polynôme est la suite de ses barres ; la lettre x ou t sert seulement à nommer les positions.",
+  "legende_titre": "Changer de lettre ne change rien",
+  "lecture": [
+   "Les deux cases grises montrent le même polynôme écrit avec la lettre x, puis avec la lettre t.",
+   "Le signe = vert dit que c’est le même objet.",
+   "Les flèches grises partent des deux écritures et arrivent aux mêmes cases bleues.",
+   "Les cases bleues 2, −1, 0, 3 sont les barres : seule leur suite compte."
+  ],
+  "a_voir": "Les barres restent 2, −1, 0, 3 quelle que soit la lettre."
+ },
+ {
+  "code": "54-082",
+  "a_dire": "R[x] est l’ensemble des suites presque nulles d’éléments de R : celles qui s’arrêtent, pas celles qui continuent sans fin.",
+  "legende_titre": "Les suites qui s’arrêtent",
+  "lecture": [
+   "Le grand cadre gris contient les suites d’éléments de 𝑅.",
+   "Le cadre bleu est 𝑅[x] : les suites qui s’arrêtent. La case verte (3, 0, 0, 2, 0, …) en fait partie.",
+   "La case rouge (1, 1, 1, …) est dans le grand cadre mais hors du cadre bleu.",
+   "Le texte rouge dit pourquoi : elle ne s’arrête jamais."
+  ],
+  "a_voir": "Seules les suites qui finissent par des zéros sont dans 𝑅[x]."
+ },
+ {
+  "code": "54-083",
+  "a_dire": "Une suite presque nulle a des termes non nuls en nombre fini ; à partir d’un certain rang, tous ses termes valent 0.",
+  "legende_titre": "Trois sortes de suites",
+  "lecture": [
+   "À gauche, la suite nulle en gris : que des zéros, aucune barre.",
+   "Au milieu, la suite presque nulle en bleu : deux barres, puis des zéros. Le trait vert pointillé marque le rang 4.",
+   "À droite, la suite rouge (1, 1, 1, …) a une barre à chaque position, sans zéro.",
+   "Les textes sous chaque suite rappellent la différence."
+  ],
+  "a_voir": "Ce qui sépare la suite presque nulle des deux autres est le rang après lequel tout est nul."
+ },
+ {
+  "code": "54-084",
+  "a_dire": "Deux suites sont égales si leurs termes de même position sont égaux ; un seul rang différent suffit pour qu’elles soient différentes.",
+  "legende_titre": "Égales rang par rang",
+  "lecture": [
+   "La rangée bleue donne les coefficients de x² − 1 : −1, 0, 1 aux rangs 0, 1, 2.",
+   "La rangée violette donne ceux du polynôme 0 : 0, 0, 0.",
+   "Sous chaque rang, le signe compare les deux termes : ≠ en rouge, = en vert, ≠ en rouge.",
+   "Les cadres rouges marquent les rangs 0 et 2 où les termes diffèrent : un seul suffit pour que les polynômes soient différents."
+  ],
+  "a_voir": "Il suffit d’un rang où les termes diffèrent pour que x² − 1 et 0 soient différents."
+ },
+ {
+  "code": "54-085",
+  "a_dire": "Le signe R[x] se lit « R crochet x » : R dit d’où viennent les coefficients, et [x] dit qu’on forme des polynômes en x.",
+  "legende_titre": "Lire le signe R[x]",
+  "lecture": [
+   "En haut, la lettre 𝑅 est en bleu et [x] en orange.",
+   "La flèche bleue mène à la case « coefficients dans 𝑅 » ; la flèche orange mène à la case « polynômes en 𝑥 ».",
+   "En bas, pour 𝑅 = ℤ, on lit ℤ[x] : coefficients entiers.",
+   "Pour 𝑅 = ℚ, on lit ℚ[x] : coefficients fractions."
+  ],
+  "a_voir": "Le signe donne en peu de caractères l’anneau des coefficients et le type d’objet."
+ },
+ {
+  "code": "54-086",
+  "a_dire": "𝑎_i est le nom du coefficient de la position i ; par exemple 𝑎₀ = 2 et 𝑎₃ = 3 dans la suite 2, −1, 0, 3, 0.",
+  "legende_titre": "Nommer le coefficient de rang i",
+  "lecture": [
+   "Les cinq cases montrent la suite 2, −1, 0, 3, 0, suivie de trois points.",
+   "Sous chaque case, on lit son nom : 𝑎₀, 𝑎₁, 𝑎₂, 𝑎₃, 𝑎₄.",
+   "Les cases orange sont celles du rang 0 et du rang 3.",
+   "Les flèches orange mènent à 𝑎₀ = 2 et 𝑎₃ = 3."
+  ],
+  "a_voir": "Le petit nombre en bas de la lettre dit à quelle position on regarde."
+ },
+ {
+  "code": "54-087",
+  "a_dire": "(𝑎₀, 𝑎₁, 𝑎₂, …) se lit de gauche à droite : les parenthèses disent que l’ordre compte, les trois points que la suite continue.",
+  "legende_titre": "Lire une suite",
+  "lecture": [
+   "La flèche orange du haut rappelle qu’on lit de gauche à droite.",
+   "Les cases bleues 𝑎₀, 𝑎₁, 𝑎₂, 𝑎₃ sont les noms des termes, entre parenthèses, suivis de trois points.",
+   "Chaque flèche grise mène d’un nom à sa valeur dans une case verte : 2, −1, 0, 3.",
+   "Les deux textes du bas disent ce que signifient les parenthèses et les trois points."
+  ],
+  "a_voir": "Les noms se lisent dans l’ordre, et chacun correspond à une valeur."
+ }
+]

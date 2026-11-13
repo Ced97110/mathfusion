@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 4, 76, 80, 11, 'sujet', label=r'rang 0 : $bd=1$, entiers')
+arrow(ax, (44, 75), (44, 68), 'varie')
+box(ax, 4, 57, 80, 10, 'varie', label=r'$b=d=1$ ou $b=d=-1$ : $b=d$')
+arrow(ax, (44, 56), (44, 49), 'varie')
+box(ax, 4, 38, 80, 10, 'varie', label=r'rang 1 : $b(a+c)=1$, et $a+c=-2$')
+arrow(ax, (44, 37), (44, 30), 'varie')
+box(ax, 4, 19, 80, 10, 'varie', label=r'$-2b=1$, donc $b=-1/2$')
+arrow(ax, (44, 18), (44, 11), 'limite')
+box(ax, 4, 1, 80, 9.5, 'limite', label='pas entier : contradiction')
+save(fig, '54-256')

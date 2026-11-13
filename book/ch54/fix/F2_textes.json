@@ -1,0 +1,109 @@
+{
+  "54-144": {
+    "lecture": [
+      "Chaque rangée de barres est le polynôme qui reste, écrit position par position de x³ à 1. Le terme en x est écrit avec le coefficient 0, un trait plat.",
+      "Le texte orange, au-dessus de chaque rangée de reste, donne le terme du quotient trouvé et le multiple du diviseur que tu retires : x², puis −x, puis −1.",
+      "Les degrés des restes baissent : 3, 2, 1, puis 0.",
+      "La barre verte finale, de hauteur 3, est le reste 3. Les trois termes trouvés forment le quotient écrit en bas."
+    ],
+    "a_voir": "Trois lignes donnent les trois termes x², −x et −1 du quotient, et le reste 3."
+  },
+  "54-159": {
+    "lecture": [
+      "Le cadre gris du haut est le départ : deux écritures de la division.",
+      "Le grand cadre orange est l'étape qui porte la preuve : tu soustrais les deux écritures et obtiens (q − q₁)g = r₁ − r.",
+      "Dedans, le cadre bleu est le côté gauche et le cadre violet le côté droit. La flèche bleue passe le repère m : le degré gauche est au moins m. La flèche violette s'arrête avant m : le degré droit est plus petit que m.",
+      "Le cadre vert est l'arrivée : les deux côtés ne sont égaux que s'ils sont nuls, donc q = q₁ et r = r₁."
+    ],
+    "a_voir": "Le côté gauche a un degré d'au moins m, le côté droit un degré plus petit : ils ne sont égaux que s'ils sont nuls."
+  },
+  "54-177": {
+    "lecture": [
+      "Le cadre bleu du haut est le départ : l'idéal des multiples de x² − 1.",
+      "Le cadre orange est l'étape décisive : x³ − x = x(x² − 1) + 0. Le reste 0 est dans I, et son degré est plus petit que 2 : il vaut 0.",
+      "Le cadre vert du bas est l'arrivée : I = (x² − 1)."
+    ],
+    "a_voir": "L'étape orange est celle où le reste, dans I et de petit degré, est forcé à être nul."
+  },
+  "54-198": {
+    "lecture": [
+      "Chaque cadre en tirets bleus est une classe : les polynômes qui ont le même reste dans la division par x² + 1.",
+      "Dans la classe de 0, x³ + x donne le reste 0. Dans la classe de 3x + 1, x² + 3x + 2 donne le reste 3x + 1.",
+      "Chaque flèche orange est la division par x² + 1. Les deux restes verts sont de degré inférieur à 2.",
+      "Chaque classe a un seul reste vert."
+    ],
+    "a_voir": "Dans chaque classe, un seul reste a un degré plus petit que 2."
+  },
+  "54-211": {
+    "lecture": [
+      "La courbe bleue est f = x⁴ + 4 ; l'orange est g = x² − 2x + 2 ; la violette est h = x² + 2x + 2.",
+      "La ligne grise épaisse est l'axe, la valeur 0 : aucune des trois courbes ne le touche.",
+      "Au trait pointillé x = 1, le point orange donne g = 1. Le point violet et le cercle bleu, au même endroit, donnent h = 5 et f = 5.",
+      "La ligne du bas écrit le produit : 1 × 5 = 5."
+    ],
+    "a_voir": "Aucune courbe ne touche l'axe, mais f vaut bien g fois h."
+  },
+  "54-212": {
+    "lecture": [
+      "En haut à gauche, en bleu, le polynôme x⁴ + 4. À droite, sa courbe reste au-dessus de l'axe gris : aucune racine réelle.",
+      "Au milieu, en violet, ses deux facteurs : x² − 2x + 2 et x² + 2x + 2, reliés par ×.",
+      "En bas, la vérification pour x = 2 : à gauche 16 + 4 = 20, à droite 2 × 10 = 20.",
+      "Le signe = vert dit que les deux côtés sont égaux."
+    ],
+    "a_voir": "x⁴ + 4 n'a aucune racine réelle, et pourtant il est le produit de deux facteurs de degré 2 : les deux côtés valent 20 en x = 2."
+  },
+  "54-218": {
+    "lecture": [
+      "Un polynôme est primitif si son contenu est 1. Chaque case donne son contenu.",
+      "Première ligne, en bleu : 3 + 4x fois x + 1 donne 3 + 7x + 4x². Les deux facteurs ont le contenu 1, le produit aussi : il est primitif.",
+      "Deuxième ligne : 2 + 2x (violet) a le contenu 2. Son produit avec x + 1 est 2 + 4x + 2x² (rouge), de contenu 2 : il n'est pas primitif."
+    ],
+    "a_voir": "Deux cases de contenu 1 donnent un produit de contenu 1 ; avec une case de contenu 2, le produit n'est plus primitif."
+  },
+  "54-221": {
+    "lecture": [
+      "Case bleue : le polynôme x² − 5x + 6 = (x − 2)(x − 3), avec la racine 2.",
+      "Case orange, l'étape clé : par Gauss, le facteur est dans ℤ[x], donc de la forme x − α avec α = 2 entier.",
+      "Case verte : le terme constant s'écrit 6 = −α × c, avec α = 2 et c = −3, car −2 × (−3) = 6.",
+      "Les deux dernières lignes concluent : α divise 6. Sans Gauss, α pourrait être une fraction."
+    ],
+    "a_voir": "L'étape orange rend α entier ; ensuite le terme constant 6 s'écrit −α × c, donc α divise 6."
+  },
+  "54-223": {
+    "lecture": [
+      "Les six cases sont les coefficients de 16x⁵ − 9x⁴ + 3x² + 6x − 21, y compris le 0 du terme en x³.",
+      "La case orange, 16, n'est pas divisible par 3 : première coche.",
+      "Sous l'accolade, −9, 0, 3, 6 et −21 sont tous divisibles par 3 : deuxième coche.",
+      "Troisième coche : 9 ne divise pas −21.",
+      "La case verte conclut : irréductible sur ℚ."
+    ],
+    "a_voir": "Trois coches alignées : les trois conditions du critère sont vraies pour p = 3."
+  },
+  "54-227": {
+    "lecture": [
+      "La case bleue est f = x³ + x² + 2, à coefficients entiers.",
+      "La flèche orange, « modulo 3 », mène à la case violette : f barre, dans ℤ/3.",
+      "Les trois cases violettes du milieu donnent les valeurs de f barre en 0, 1 et 2 : aucune n'est nulle. Degré 3 sans racine : f barre est irréductible.",
+      "Le texte orange rappelle que si f se factorisait en gh, f barre se factoriserait en g barre fois h barre. La flèche verte conclut : f est irréductible sur ℚ."
+    ],
+    "a_voir": "On vérifie le polynôme réduit, puis on conclut pour le polynôme de départ."
+  },
+  "54-279": {
+    "lecture": [
+      "Les six cases grises donnent les valeurs de x³ − 2x² + 4 en 1, −1, 2, −2, 4 et −4.",
+      "Aucune ne vaut 0 : le polynôme n'a pas de racine rationnelle.",
+      "Le rectangle vert en tire la conclusion : il est irréductible, de degré 3.",
+      "La flèche orange mène au rectangle du bas : ce critère est un outil du chapitre 61 pour la construction à la règle et au compas."
+    ],
+    "a_voir": "Six valeurs non nulles suffisent pour conclure à l'irréductibilité, et ce résultat sert ensuite à une question de construction."
+  },
+  "54-282": {
+    "lecture": [
+      "Le rectangle violet est un quotient dont le haut et le bas ont des coefficients fractions : un demi de x, divisé par un tiers.",
+      "La flèche orange multiplie en haut et en bas par 6.",
+      "Le rectangle bleu est le résultat, 3x sur 2 : le haut et le bas ont des coefficients entiers.",
+      "Les deux flèches vertes mènent au même corps de fractions."
+    ],
+    "a_voir": "La même fraction s'écrit avec le haut et le bas à coefficients fractions, ou à coefficients entiers."
+  }
+}

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 21, 68, r'$u\,f$ avec $u=-1$', 'varie', 's')
+text(ax, 67, 68, r'$v\,g$ avec $v=1$', 'autre', 's')
+box(ax, 2, 50, 38, 13, 'varie', label=r'$-(x^2-1)$')
+box(ax, 48, 50, 38, 13, 'autre', label=r'$x^2+x$')
+text(ax, 44, 56.5, '+', 'encre', 'l')
+arrow(ax, (21, 50), (36, 37), 'fixe')
+arrow(ax, (67, 50), (52, 37), 'fixe')
+box(ax, 24, 23, 40, 13, 'resultat', label=r'$d=x+1$')
+text(ax, 44, 16, r'les $x^2$ s’annulent', 'fixe', 's')
+save(fig, '54-183')

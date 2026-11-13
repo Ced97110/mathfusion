@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, 'contrôler la division', 'fixe', 's')
+box(ax, 6, 62, 76, 11, 'sujet', label=r'$(x-1)(x^2-x-1)=x^3-2x^2+1$')
+text(ax, 44, 56, '+', 'encre', 'm')
+box(ax, 30, 40, 28, 11, 'varie', label=r'reste $3$')
+text(ax, 44, 34, '=', 'encre', 'm')
+box(ax, 6, 18, 76, 11, 'resultat', label=r'$x^3-2x^2+4=f$')
+text(ax, 44, 11, r'degré du reste $0<1=$ degré de $x-1$', 'resultat', 's')
+save(fig, '54-244')

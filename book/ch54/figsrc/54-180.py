@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 2, 44, 58, 36, 'sujet', fill=False, dash=True)
+text(ax, 31, 74, r'$I$ : sans terme constant', 'sujet', 's')
+box(ax, 8, 50, 20, 13, 'sujet', label=r'$x$')
+box(ax, 34, 50, 20, 13, 'sujet', label=r'$y$')
+box(ax, 68, 50, 18, 13, 'limite', label='1')
+text(ax, 77, 45, r'$1\notin I$', 'limite', 'm')
+arrow(ax, (31, 43), (31, 33), 'fixe')
+box(ax, 4, 20, 80, 12, 'varie', label=r'générateur : divise $x$ et $y$')
+arrow(ax, (44, 20), (44, 12), 'fixe')
+box(ax, 4, 0, 80, 12, 'limite', label='donc constante : engendre 1')
+save(fig, '54-180')

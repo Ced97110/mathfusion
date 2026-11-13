@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, r'restes $a+bx$', 'sujet', 'm')
+cx, cy, u = 44, 42, 20
+arrow(ax, (6, cy), (80, cy), 'fixe', lw=0.8)
+arrow(ax, (cx, 14), (cx, 72), 'fixe', lw=0.8)
+text(ax, 84, cy - 3.5, 'a', 'fixe', 'm')
+text(ax, cx + 4, 72, 'b', 'fixe', 'm')
+pts = {'one': (cx + u, cy), 'x': (cx, cy + u), 'm1': (cx - u, cy)}
+disc(ax, *pts['one'], 1.8, 'fixe')
+disc(ax, *pts['x'], 1.8, 'sujet')
+disc(ax, *pts['m1'], 1.8, 'resultat')
+text(ax, cx + u, cy - 4.5, '1', 'fixe', 'm')
+text(ax, cx + 5, cy + u + 1, r'$x$', 'sujet', 'm')
+text(ax, cx - u, cy - 4.5, r'$-1$', 'resultat', 'm')
+arrow(ax, (cx + u - 1.5, cy + 1.5), (cx + 1.5, cy + u - 1.5), 'varie', curve=0.3)
+arrow(ax, (cx - 1.5, cy + u - 1.5), (cx - u + 1.5, cy + 1.5), 'varie', curve=0.3)
+text(ax, cx + 15, cy + 17, r'$\times x$', 'varie', 's')
+text(ax, cx - 15, cy + 17, r'$\times x$', 'varie', 's')
+text(ax, 44, 6, r'$x^2=(x^2+1)-1$ : reste $-1$', 'resultat', 's')
+save(fig, '54-201')

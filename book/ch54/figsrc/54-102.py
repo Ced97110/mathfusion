@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+assert 1 + 1 - 2 * 1 ** 2 == 0
+box(ax, 2, 6, 41, 54, 'limite')
+text(ax, 22.5, 54, r'si $x$ était le nombre 1', 'limite', 's', weight='bold')
+text(ax, 22.5, 42, r'$1+x-2x^2$', 'encre', 'm')
+text(ax, 22.5, 33, r'$1+1-2=0$', 'limite', 'm')
+text(ax, 22.5, 22, 'coefficients non nuls', 'encre', 's')
+text(ax, 22.5, 14, 'et pourtant 0', 'limite', 's')
+box(ax, 45, 6, 41, 54, 'resultat')
+text(ax, 65.5, 54, r'pour l’indéterminée $x$', 'resultat', 's', weight='bold')
+text(ax, 65.5, 42, r'$(1,1,-2,0,\ldots)$', 'encre', 's')
+text(ax, 65.5, 33, '≠', 'resultat', 'xl')
+text(ax, 65.5, 24, r'$(0,0,0,\ldots)$', 'encre', 's')
+text(ax, 65.5, 14, 'aucune relation', 'resultat', 's')
+save(fig, '54-102')

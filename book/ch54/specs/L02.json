@@ -1,0 +1,339 @@
+[
+ {
+  "code": "54-030",
+  "a_dire": "La preuve part de ab = 0 avec a ≠ 0, multiplie les deux côtés par l'inverse de a, et arrive à b = 0.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle ?",
+  "lecture": [
+   "La case bleue du haut est le départ : 3/2 fois b égale 0.",
+   "Les deux flèches orange sont l'étape qui compte : multiplier chaque côté par 2/3.",
+   "Les deux cases grises montrent le résultat de chaque côté : à gauche b, à droite 0.",
+   "La case verte du bas est l'arrivée : b = 0."
+  ],
+  "a_voir": "Une seule multiplication par l'inverse fait passer de 3/2 × b = 0 à b = 0."
+ },
+ {
+  "code": "54-031",
+  "a_dire": "Un corps est intègre, donc l'horloge à 6 heures ne s'y plonge pas ; reste la question inverse : tout anneau intègre se plonge-t-il dans un corps ?",
+  "legende_titre": "Que devient la question de la partie 1 ?",
+  "lecture": [
+   "La ligne du haut en gris et rouge montre ℤ/6 : 2 × 3 = 0, impossible dans un corps.",
+   "La ligne du milieu montre les entiers bleus qui se plongent dans les fractions vertes.",
+   "La case orange du bas est la question qui reste ouverte."
+  ],
+  "a_voir": "La condition « intègre » est nécessaire ; on demande maintenant si elle suffit."
+ },
+ {
+  "code": "54-032",
+  "a_dire": "La lettre D désigne un anneau intègre quelconque, ce qui évite de répéter la même phrase pour chaque anneau.",
+  "legende_titre": "À quoi sert la lettre D ?",
+  "lecture": [
+   "Les trois cases grises de gauche sont des exemples d'anneaux intègres : les entiers, les polynômes, un autre anneau intègre.",
+   "Les flèches orange les rassemblent vers une seule case.",
+   "La grande case bleue D est le nom commun qui les remplace tous."
+  ],
+  "a_voir": "Une seule lettre tient la place de n'importe lequel de ces anneaux."
+ },
+ {
+  "code": "54-033",
+  "a_dire": "D* se lit « D étoile » et désigne tous les éléments de D sauf 0.",
+  "legende_titre": "Que dit le signe D* ?",
+  "lecture": [
+   "Les disques bleus sont les entiers de −3 à 3, sauf 0.",
+   "Le disque rouge vide à 0 est l'élément retiré.",
+   "Les deux accolades bleues entourent les éléments gardés."
+  ],
+  "a_voir": "L'étoile retire seulement 0 ; tous les autres entiers restent."
+ },
+ {
+  "code": "54-034",
+  "a_dire": "Le signe (a, b) avec a ∈ D et b ∈ D* décrit en une ligne tous les couples permis : a quelconque, b non nul.",
+  "legende_titre": "Que permet d'écrire ce signe ?",
+  "lecture": [
+   "L'axe horizontal porte le premier nombre a, pris dans D.",
+   "L'axe vertical porte le second nombre b, pris dans D*.",
+   "Les points bleus (3, 5), (0, 7) et (4, 1) sont des couples permis.",
+   "Le point rouge (3, 0) est sur la ligne b = 0 : il est refusé."
+  ],
+  "a_voir": "Tout couple est permis tant que son second nombre n'est pas 0."
+ },
+ {
+  "code": "54-035",
+  "a_dire": "Les couples (2, 3) et (4, 6) sont différents mais représentent la même fraction : l'égalité est trop stricte, on utilise ∼ avec le test des produits en croix.",
+  "legende_titre": "Pourquoi un mot autre que « égal » ?",
+  "lecture": [
+   "La case bleue est le couple (2, 3), la case violette est le couple (4, 6).",
+   "Le signe rouge ≠ dit que les deux couples ne sont pas égaux.",
+   "La flèche verte à double sens et le signe ∼ disent qu'ils sont équivalents.",
+   "La case grise donne le test : 2 × 6 = 3 × 4."
+  ],
+  "a_voir": "Deux couples différents peuvent être équivalents."
+ },
+ {
+  "code": "54-036",
+  "a_dire": "Le signe ∼ se lit « est équivalent à » : il dit que deux couples sont dans le même groupe, sans dire qu'ils sont identiques.",
+  "legende_titre": "Que dit le signe ∼ ?",
+  "lecture": [
+   "En haut, le couple bleu (2, 3) et le couple violet (4, 6) sont reliés par le signe orange ∼.",
+   "La flèche orange descend vers la grande forme verte.",
+   "Dans la forme verte, les deux couples sont rassemblés : même groupe."
+  ],
+  "a_voir": "∼ veut dire « dans le même groupe », pas « à peu près »."
+ },
+ {
+  "code": "54-037",
+  "a_dire": "Le signe ⇔ remplace deux phrases par une : chaque phrase entraîne l'autre, dans les deux sens.",
+  "legende_titre": "Qu'écrit-on plus vite avec ce signe ?",
+  "lecture": [
+   "La case bleue est la phrase de gauche : 2 × 6 = 3 × 4.",
+   "La case violette est la phrase de droite : (2, 3) ∼ (4, 6).",
+   "La flèche orange du haut va de gauche à droite, celle du bas de droite à gauche.",
+   "Le signe vert ⇔ résume les deux sens."
+  ],
+  "a_voir": "Les deux flèches ensemble se lisent d'un coup avec ⇔."
+ },
+ {
+  "code": "54-038",
+  "a_dire": "ad = bc se lit : premier nombre du premier couple fois second du second, égale second du premier fois premier du second ; ce sont les produits en croix.",
+  "legende_titre": "Comment lire cette égalité ?",
+  "lecture": [
+   "Les disques bleus sont les nombres 2 et 3 du premier couple, nommés a et b.",
+   "Les disques violets sont les nombres 4 et 6 du second couple, nommés c et d.",
+   "Le trait orange relie 2 et 6 : ad = 2 × 6 = 12.",
+   "Le trait vert en pointillés relie 3 et 4 : bc = 3 × 4 = 12."
+  ],
+  "a_voir": "Chaque produit relie un nombre du haut à un nombre du bas, en diagonale."
+ },
+ {
+  "code": "54-039",
+  "a_dire": "Sur ℤ/6, (0, 1) ∼ (0, 2) et (0, 2) ∼ (3, 1), mais (0, 1) et (3, 1) ne sont pas équivalents : sans anneau intègre, la transitivité tombe.",
+  "legende_titre": "Que se passe-t-il si l'anneau n'est pas intègre ?",
+  "lecture": [
+   "Les trois cases bleues sont les couples (0, 2), (0, 1) et (3, 1).",
+   "Les deux flèches vertes sont des équivalences : à chaque fois les produits en croix valent 0.",
+   "La flèche rouge du bas dit que (0, 1) et (3, 1) ne sont pas équivalents : 0 ≠ 3."
+  ],
+  "a_voir": "Deux couples équivalents à un même troisième ne le sont pas entre eux."
+ },
+ {
+  "code": "54-040",
+  "a_dire": "La fraction 2/3 est le groupe entier des couples équivalents, pas un seul couple.",
+  "legende_titre": "Qu'est-ce qu'une fraction ?",
+  "lecture": [
+   "La grande forme bleue contient les couples (2, 3), (4, 6) et (6, 9), qui vont ensemble.",
+   "La flèche orange descend du groupe vers la case verte.",
+   "La case verte nomme ce groupe pris comme un tout : la fraction 2/3."
+  ],
+  "a_voir": "La fraction est le groupe, et chaque couple n'en est qu'un membre."
+ },
+ {
+  "code": "54-041",
+  "a_dire": "Le signe a/b nomme en deux lettres un groupe qui contient une infinité de couples ; un même groupe a plusieurs noms.",
+  "legende_titre": "Que permet d'écrire ce signe ?",
+  "lecture": [
+   "La forme bleue de gauche est un seul groupe : (2, 3), (4, 6), (6, 9) et tous les autres.",
+   "Chaque flèche orange part d’un couple du groupe et mène à un nom : 2/3, 4/6, 6/9.",
+   "Les trois noms désignent le même groupe."
+  ],
+  "a_voir": "Un même groupe a plusieurs noms a/b."
+ },
+ {
+  "code": "54-042",
+  "a_dire": "La lettre F désigne la collection de toutes les fractions construites à partir de D ; chacune est un groupe de couples.",
+  "legende_titre": "Que dit la lettre F ?",
+  "lecture": [
+   "La grande case bleue est F.",
+   "Les cases blanches à l'intérieur sont des fractions : 2/3, 1/2 et −7/4.",
+   "Les trois points disent qu'il y en a d'autres."
+  ],
+  "a_voir": "F contient toutes les fractions, et chaque élément de F est un groupe de couples."
+ },
+ {
+  "code": "54-043",
+  "a_dire": "La formule additionne a/b et c/d en calculant ad + bc au numérateur et bd au dénominateur ; sur 2/3 + 4/5, cela donne 22/15.",
+  "legende_titre": "Quelles actions la formule décrit-elle ?",
+  "lecture": [
+   "La case bleue du haut est la somme 2/3 + 4/5.",
+   "Les flèches orange donnent les deux produits : × 5 pour 2/3, × 3 pour 4/5.",
+   "Les cases grises sont 10/15 et 12/15 ; sous elles, les produits a × d et b × c.",
+   "La case verte est le résultat : 22/15, avec le dénominateur 3 × 5 = 15."
+  ],
+  "a_voir": "La formule ne fait que des produits et une somme, sans chercher de dénominateur plus petit."
+ },
+ {
+  "code": "54-044",
+  "a_dire": "Pour multiplier deux fractions, on multiplie les numérateurs et on multiplie les dénominateurs ; le dénominateur reste non nul.",
+  "legende_titre": "Qu'est-ce qui reste vrai quand on change les nombres ?",
+  "lecture": [
+   "La case bleue du haut est le produit 2/3 × 4/5.",
+   "La case orange multiplie les numérateurs : 2 × 4 = 8.",
+   "La case violette multiplie les dénominateurs : 3 × 5 = 15.",
+   "La case verte donne 8/15, et le texte vert rappelle que 15 ≠ 0."
+  ],
+  "a_voir": "La règle est la même pour tous les nombres, et le dénominateur n'est jamais nul."
+ },
+ {
+  "code": "54-045",
+  "a_dire": "Le corps des fractions de ℤ est ℚ : il contient ℤ et n'est fait que de quotients, donc il est plus petit que ℝ.",
+  "legende_titre": "Qu'est-ce qui le sépare de ses voisins ?",
+  "lecture": [
+   "La case grise du centre est ℤ : on n'y divise pas.",
+   "La case bleue autour est ℚ, le corps des fractions de ℤ : que des quotients.",
+   "La grande case violette est ℝ, qui contient ℚ et d'autres nombres en plus."
+  ],
+  "a_voir": "ℚ contient ℤ sans rien de plus que des quotients ; ℝ contient davantage."
+ },
+ {
+  "code": "54-046",
+  "a_dire": "La lecture des produits en croix ad = bc reste la même pour les entiers et pour les polynômes ; seules les lettres changent de domaine.",
+  "legende_titre": "Quelle règle est étendue à tout anneau intègre ?",
+  "lecture": [
+   "La case bleue du haut est la règle ad = bc.",
+   "À gauche, la case grise l'applique aux entiers : 2 × 6 = 4 × 3, soit 12 = 12.",
+   "À droite, la case grise l'applique aux polynômes : x × x = x² × 1, soit x² = x².",
+   "Les nombres verts sont les deux produits égaux."
+  ],
+  "a_voir": "Le test est identique ; ce sont les lettres qui prennent d'autres valeurs."
+ },
+ {
+  "code": "54-047",
+  "a_dire": "Dans un corps contenant D, a b⁻¹ = c d⁻¹ devient, après multiplication par bd, ad = bc : la relation ∼ est forcée.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle ?",
+  "lecture": [
+   "La case bleue du haut est l'égalité avec des inverses : 2 × 1/3 = 4 × 1/6.",
+   "La flèche orange est l'étape qui compte : multiplier par 18, c'est-à-dire 3 × 6.",
+   "La case grise est le résultat sans inverses : 2 × 6 = 4 × 3.",
+   "La case verte est l'arrivée : 12 = 12."
+  ],
+  "a_voir": "Multiplier par bd fait disparaître les inverses et laisse les produits en croix."
+ },
+ {
+  "code": "54-048",
+  "a_dire": "Un couple est équivalent à lui-même : les deux produits en croix de (3, 5) avec (3, 5) valent 15.",
+  "legende_titre": "Que vérifie-t-on pour un couple comparé à lui-même ?",
+  "lecture": [
+   "Les quatre disques bleus sont le couple (3, 5) écrit deux fois.",
+   "Le trait orange relie 3 en haut et 5 en bas : 3 × 5 = 15.",
+   "Le trait vert en pointillés relie 5 en haut et 3 en bas : 5 × 3 = 15.",
+   "La case grise confirme : 15 = 15."
+  ],
+  "a_voir": "Les deux produits sont égaux parce qu'on peut échanger l'ordre des facteurs."
+ },
+ {
+  "code": "54-049",
+  "a_dire": "Si (2, 3) est équivalent à (4, 6), alors (4, 6) est équivalent à (2, 3) : le test marche dans les deux sens.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle ?",
+  "lecture": [
+   "En haut, la flèche verte va de (2, 3) à (4, 6) avec 2 × 6 = 3 × 4.",
+   "La flèche orange du milieu dit qu'on lit l'égalité dans l'autre sens.",
+   "En bas, la flèche verte va de (4, 6) à (2, 3) avec 4 × 3 = 6 × 2.",
+   "Le texte gris dit que les deux produits valent 12."
+  ],
+  "a_voir": "Après échange des facteurs, le même test fonctionne dans l'autre sens."
+ },
+ {
+  "code": "54-050",
+  "a_dire": "Pour montrer que (1, 2) ∼ (3, 6) à partir des deux autres équivalences, on arrive à d(af − be) = 0 puis l'intégrité donne af − be = 0.",
+  "legende_titre": "Quelle étape porte tout le poids de la preuve ?",
+  "lecture": [
+   "Les trois cases bleues sont (1, 2), (2, 4) et (3, 6).",
+   "Les flèches vertes sont les deux équivalences connues, ① et ②, avec leurs produits en croix.",
+   "Les deux flèches vertes mènent à la case grise ③ : 4 × (6 − 6) = 0.",
+   "La flèche orange ④ dit : 4 ≠ 0 et l’anneau est intègre. La case verte conclut 6 − 6 = 0, donc 1 × 6 = 2 × 3, le but écrit en haut."
+  ],
+  "a_voir": "L’étape ④ porte le poids : un produit nul avec 4 non nul oblige l’autre facteur à être nul."
+ },
+ {
+  "code": "54-051",
+  "a_dire": "La transitivité exige l'intégrité parce qu'il faut simplifier par d : permis dans ℤ, interdit sur ℤ/6 où 2 × 3 = 2 × 0 sans que 3 soit 0.",
+  "legende_titre": "Où l'intégrité intervient-elle précisément ?",
+  "lecture": [
+   "À gauche, dans ℤ : 4 × m = 4 × n, on simplifie par 4 et on obtient m = n (vert).",
+   "À droite, sur ℤ/6 : 2 × 3 = 2 × 0, car 6 et 0 sont confondus.",
+   "La case rouge dit que 3 n'est pas 0 : simplifier par 2 est faux."
+  ],
+  "a_voir": "L'intégrité sert à un seul endroit : simplifier par d."
+ },
+ {
+  "code": "54-052",
+  "a_dire": "Remplacer 1/2 par 2/4 doit donner la même somme : 5/6 et 10/12 sont la même fraction car 5 × 12 = 6 × 10.",
+  "legende_titre": "Pourquoi la somme ne peut-elle pas dépendre du couple ?",
+  "lecture": [
+   "La case bleue du haut est 1/2 + 1/3 = 5/6.",
+   "La flèche orange remplace 1/2 par 2/4.",
+   "La case violette du bas est 2/4 + 1/3 = 10/12.",
+   "Les flèches vertes vers le signe ∼ demandent que les deux résultats soient équivalents. La case verte répond : oui, car 5 × 12 = 6 × 10 = 60."
+  ],
+  "a_voir": "Les deux sommes sont la même fraction : sinon une même somme aurait deux valeurs."
+ },
+ {
+  "code": "54-053",
+  "a_dire": "Chaque côté de l'égalité se développe en deux termes, et ces termes sont égaux un à un grâce aux deux hypothèses.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle ?",
+  "lecture": [
+   "Les deux cases grises du haut sont les équivalences de départ : (1, 2) ∼ (2, 4) et (1, 3) ∼ (2, 6).",
+   "La case bleue vaut 5 × 4 × 6 = 120 ; la case violette vaut 20 × 2 × 3 = 120.",
+   "Chaque côté se développe en deux termes : 72 (gris) et 48 (orange).",
+   "Le 72 de gauche est égal au 72 de droite grâce à la première équivalence ; le 48 de gauche est égal au 48 de droite grâce à la seconde."
+  ],
+  "a_voir": "Les termes sont égaux un à un : 72 avec 72 et 48 avec 48."
+ },
+ {
+  "code": "54-054",
+  "a_dire": "Si l'anneau n'est pas intègre, la multiplication peut donner un dénominateur nul : sur ℤ/6, (1, 2) × (1, 3) donne (1, 0), qui n'est pas une fraction.",
+  "legende_titre": "Que se passe-t-il si on retire l'intégrité ?",
+  "lecture": [
+   "La case bleue (1, 2) et la case violette (1, 3) ont des dénominateurs non nuls.",
+   "La flèche orange mène au produit : la case rouge (1, 0).",
+   "Sous les couples, en orange : 1 × 1 = 1 et 2 × 3 = 6 = 0.",
+   "Le texte rouge dit que le dénominateur nul n'est pas permis."
+  ],
+  "a_voir": "Deux dénominateurs non nuls ont ici un produit nul."
+ },
+ {
+  "code": "54-055",
+  "a_dire": "0/1 et 1/1 sont choisis parce qu'ils ne changent rien : 3/5 + 0/1 = 3/5 et 3/5 × 1/1 = 3/5.",
+  "legende_titre": "Que font 0/1 et 1/1 sur un cas chiffré ?",
+  "lecture": [
+   "La ligne du haut ajoute la case grise 0/1 à la case bleue 3/5 et obtient 3/5 en vert.",
+   "Le calcul sous la case : 0 × 5 + 1 × 3 = 3 et 1 × 5 = 5.",
+   "La ligne du bas multiplie 3/5 par la case grise 1/1 et obtient 3/5.",
+   "Le calcul sous la case : 1 × 3 = 3 et 1 × 5 = 5."
+  ],
+  "a_voir": "Le résultat vert est toujours la fraction de départ."
+ },
+ {
+  "code": "54-056",
+  "a_dire": "Si a/b n'est pas nulle, a n'est pas 0, donc b/a existe, et le produit donne ab/ab qui vaut 1/1 : tout élément non nul a un inverse.",
+  "legende_titre": "D'où part la preuve et où arrive-t-elle ?",
+  "lecture": [
+   "La case bleue est la fraction non nulle 2/3.",
+   "La case violette est son inverse candidat 3/2.",
+   "La case orange est leur produit 6/6, équivalent au 1/1 vert à droite.",
+   "Le texte du haut donne l'étape clé : 2 ≠ 0, donc le couple (3, 2) est permis."
+  ],
+  "a_voir": "L'inverse existe parce que le numérateur n'est pas nul."
+ },
+ {
+  "code": "54-057",
+  "a_dire": "Le seul obstacle pour entrer dans un corps est un produit nul entre éléments non nuls : un anneau intègre l'écarte, donc il se plonge dans un corps.",
+  "legende_titre": "Pourquoi le théorème ne peut-il pas être autrement ?",
+  "lecture": [
+   "Les entiers (bleu) entrent dans les fractions (vert).",
+   "Les polynômes ℤ[x] (bleu) entrent dans les quotients de polynômes (vert).",
+   "ℤ/6 (gris) mène à une case rouge en pointillés : aucun corps.",
+   "Le texte rouge donne la raison : 2 × 3 = 0."
+  ],
+  "a_voir": "Seul un produit nul entre éléments non nuls bloque le plongement."
+ },
+ {
+  "code": "54-058",
+  "a_dire": "L'application a ↦ a/1 est un homomorphisme injectif : deux éléments différents ont deux images différentes, contrairement au reste modulo 6.",
+  "legende_titre": "De quelle famille est ce concept ?",
+  "lecture": [
+   "En haut, les cases bleues 4 et 3 vont vers deux cases vertes différentes : 4/1 et 3/1.",
+   "En bas, les cases bleues 0 et 6 vont vers la même case rouge 0.",
+   "Les flèches vertes sont le plongement, les flèches rouges le reste modulo 6, qui n'est pas injectif."
+  ],
+  "a_voir": "Le plongement garde les éléments distincts, le reste modulo 6 en fusionne."
+ }
+]

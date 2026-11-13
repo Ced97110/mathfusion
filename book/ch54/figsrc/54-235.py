@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 26, 62, 36, 10, 'sujet', label=r'$x^2+1$')
+# modulo 3 : une seule pièce de degré 2
+arrow(ax, (36, 61), (24, 52), 'varie')
+arrow(ax, (52, 61), (64, 52), 'varie')
+text(ax, 13, 56, 'modulo 3', 'varie', 's')
+text(ax, 75, 56, 'modulo 2', 'varie', 's')
+box(ax, 4, 38, 40, 10, 'sujet', label=r'$x^2+1$ ne se casse pas')
+text(ax, 24, 32, 'une pièce : 2', 'sujet', 's')
+box(ax, 46, 38, 18, 10, 'varie', label=r'$x+1$')
+box(ax, 66, 38, 18, 10, 'varie', label=r'$x+1$')
+text(ax, 65, 32, 'deux pièces : 1 + 1', 'varie', 's')
+arrow(ax, (44, 26), (44, 19), 'fixe')
+box(ax, 14, 4, 60, 12, 'autre', dash=True, label='groupe de Galois (chapitre 67)')
+save(fig, '54-235')

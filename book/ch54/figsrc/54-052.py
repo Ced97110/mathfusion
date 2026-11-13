@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 2, 50, 62, 14, 'sujet', label=r'$\frac{1}{2}+\frac{1}{3}=\frac{5}{6}$', size='l')
+box(ax, 2, 24, 62, 14, 'autre', label=r'$\frac{2}{4}+\frac{1}{3}=\frac{10}{12}$', size='l')
+arrow(ax, (33, 49), (33, 39), 'varie')
+text(ax, 37, 44, r'$\frac{1}{2}$ devient $\frac{2}{4}$', 'varie', 's', ha='left')
+text(ax, 44, 70, 'même somme ?', 'varie', 's')
+arrow(ax, (66, 57), (76, 46), 'resultat')
+arrow(ax, (66, 31), (76, 42), 'resultat')
+text(ax, 76, 44, r'$\sim$', 'resultat', 'l')
+box(ax, 6, 2, 76, 18, 'resultat', label='oui : $\\frac{5}{6}\\sim\\frac{10}{12}$\ncar $5\\times12=6\\times10=60$', size='m')
+save(fig, '54-052')

@@ -1,0 +1,249 @@
+[
+ {
+  "code": "54-204",
+  "a_dire": "Pour savoir si un polynôme est irréductible, il n'y a pas une seule méthode : l'outil dépend du degré et du corps.",
+  "legende_titre": "Deux polynômes sans racine, deux issues",
+  "lecture": [
+   "À gauche, en bleu, le polynôme x² + 1 : il n'a pas de racine réelle et il est irréductible.",
+   "À droite, en violet, le polynôme x⁴ + 4 : il n'a pas non plus de racine réelle, mais il se casse (case orange).",
+   "Le signe ≠ sépare deux issues différentes pour la même observation.",
+   "En bas, deux outils différents : une racine en degré 2 ou 3, un produit 2 × 2 en degré 4."
+  ],
+  "a_voir": "Avoir « sans racine » ne donne pas toujours la même réponse : il faut choisir un outil selon le degré."
+ },
+ {
+  "code": "54-205",
+  "a_dire": "Le critère des racines demande que F soit un corps : dans les entiers, un polynôme de degré 2 peut se casser sans avoir de racine entière.",
+  "legende_titre": "Sans corps, le critère des racines est faux",
+  "lecture": [
+   "En haut, en bleu, le polynôme 6x² + 5x + 1 et sa factorisation (2x + 1)(3x + 1).",
+   "Sur la droite graduée, seuls −1 et 0 sont des entiers. Les deux racines −1/2 et −1/3 tombent entre eux : aucune n'est entière.",
+   "À gauche en bas, en rouge, ce que le critère annoncerait dans les entiers : « irréductible ». C'est faux.",
+   "À droite en bas, en orange, ce qui se passe vraiment : le polynôme se casse."
+  ],
+  "a_voir": "Les racines sont entre les graduations des entiers, et pourtant le polynôme se casse."
+ },
+ {
+  "code": "54-206",
+  "a_dire": "Les degrés des deux facteurs s'ajoutent : 2 = 1 + 1 et 3 = 1 + 2 ou 2 + 1 obligent un facteur de degré 1.",
+  "legende_titre": "Additionner les degrés force un facteur de degré 1",
+  "lecture": [
+   "Chaque ligne est un degré total (2 ou 3) découpé en deux facteurs ; la largeur d'une case est son degré.",
+   "Les cases vertes sont les facteurs de degré 1.",
+   "Dans les trois lignes, au moins une case est verte.",
+   "La phrase du bas résume : il y a toujours un facteur de degré 1."
+  ],
+  "a_voir": "Dans chaque découpage de 2 ou de 3 en deux nombres positifs, une case de largeur 1 apparaît."
+ },
+ {
+  "code": "54-207",
+  "a_dire": "Un polynôme réel de degré 2 est irréductible exactement quand son discriminant est négatif.",
+  "legende_titre": "Le signe du discriminant décide en degré 2",
+  "lecture": [
+   "À gauche, la courbe bleue de x² + x + 1 reste au-dessus de la ligne grise : aucune racine. Son discriminant 1 − 4 vaut −3, négatif.",
+   "À droite, la courbe violette de x² − 3x + 2 coupe la ligne grise aux points verts 1 et 2. Son discriminant 9 − 8 vaut 1, positif.",
+   "Sous chaque courbe, la case donne la conclusion : irréductible ou réductible sur ℝ."
+  ],
+  "a_voir": "Discriminant négatif : la courbe ne touche pas l'axe ; positif : elle le coupe."
+ },
+ {
+  "code": "54-208",
+  "a_dire": "Dans ℤ/3, il n'y a que trois valeurs possibles pour x ; si p(0), p(1), p(2) sont non nulles, p n'a aucune racine.",
+  "legende_titre": "Trois calculs épuisent toutes les valeurs de x",
+  "lecture": [
+   "Chaque ligne essaie une valeur de x (case orange) : 0, 1, puis 2.",
+   "La case grise montre le calcul : 0 + 0 + 2 = 2, puis 1 + 1 + 2 = 4 qui vaut 1 modulo 3, puis 8 + 4 + 2 = 14 qui vaut 2 modulo 3.",
+   "La case bleue donne la valeur de p : 2, 1 et 2.",
+   "Aucune valeur n'est nulle : il n'y a pas de racine."
+  ],
+  "a_voir": "Les trois essais couvrent tout ℤ/3 et aucun ne donne 0."
+ },
+ {
+  "code": "54-209",
+  "a_dire": "Les trois barres de hauteurs 2, 1 et 2 sont au-dessus du niveau 0 : aucune valeur de p n'est nulle, donc pas de racine dans ℤ/3.",
+  "legende_titre": "Trois barres, aucune au niveau 0",
+  "lecture": [
+   "Chaque barre bleue est la valeur de p modulo 3 pour a = 0, a = 1 et a = 2.",
+   "Les hauteurs sont 2, 1 et 2.",
+   "La ligne grise épaisse est le niveau 0, celui où se trouverait une racine.",
+   "Aucune barre n'est à zéro : elle n'atteint pas la ligne."
+  ],
+  "a_voir": "Toutes les barres ont une hauteur positive : l'absence de racine se voit d'un coup d'œil."
+ },
+ {
+  "code": "54-210",
+  "a_dire": "Le critère des racines est faux dès le degré 4, car 4 = 2 + 2 permet deux facteurs de degré 2 sans aucun facteur de degré 1.",
+  "legende_titre": "Le cas où le critère cesse de marcher",
+  "lecture": [
+   "Première ligne : 3 = 1 + 2. Une case verte de degré 1 existe toujours, donc une racine est garantie.",
+   "Deuxième ligne, en rouge : 4 = 2 + 2. Aucune case de degré 1 : la racine n'est pas garantie.",
+   "La case du bas, en rouge, donne le cas concret : x⁴ + 3x² + 2 = (x² + 1)(x² + 2), deux facteurs de degré 2."
+  ],
+  "a_voir": "En degré 4, le découpage 2 + 2 n'a aucune case de largeur 1."
+ },
+ {
+  "code": "54-211",
+  "a_dire": "Les trois courbes f, g et h ne touchent jamais l'axe, et pourtant f est le produit de g et de h.",
+  "legende_titre": "Trois courbes loin de l'axe, liées par un produit",
+  "lecture": [
+   "La courbe bleue est f = x⁴ + 4 ; l'orange est g = x² − 2x + 2 ; la violette est h = x² + 2x + 2.",
+   "La ligne grise épaisse est l'axe, la valeur 0 : aucune des trois courbes ne le touche.",
+   "Au trait pointillé x = 1, le point orange donne g = 1. Le point violet et le cercle bleu, au même endroit, donnent h = 5 et f = 5.",
+   "La ligne du bas écrit le produit : 1 × 5 = 5."
+  ],
+  "a_voir": "Aucune courbe ne touche l'axe, mais f vaut bien g fois h."
+ },
+ {
+  "code": "54-212",
+  "a_dire": "Le polynôme x⁴ + 4 n'a aucune racine réelle et pourtant il est un produit de deux polynômes de degré 2.",
+  "legende_titre": "Un produit qui n'a pas de racine",
+  "lecture": [
+   "En haut à gauche, en bleu, le polynôme x⁴ + 4. À droite, sa courbe reste au-dessus de l'axe gris : aucune racine réelle.",
+   "Au milieu, en violet, ses deux facteurs : x² − 2x + 2 et x² + 2x + 2, reliés par ×.",
+   "En bas, la vérification pour x = 2 : à gauche 16 + 4 = 20, à droite 2 × 10 = 20.",
+   "Le signe = vert dit que les deux côtés sont égaux."
+  ],
+  "a_voir": "x⁴ + 4 n'a aucune racine réelle, et pourtant il est le produit de deux facteurs de degré 2 : les deux côtés valent 20 en x = 2."
+ },
+ {
+  "code": "54-213",
+  "a_dire": "En posant A = x² + 2 et B = 2x, le produit (A − B)(A + B) devient A² − B², et il reste x⁴ + 4.",
+  "legende_titre": "Le produit se calcule en une seule identité",
+  "lecture": [
+   "Chaque case est une étape, de haut en bas ; la première est le produit (A − B)(A + B), la dernière x⁴ + 4 en vert.",
+   "La case orange est l'étape clé : l'identité A² − B².",
+   "Les deux cases grises développent les carrés : les 4x² s'annulent.",
+   "À droite, avec x = 1, on retrouve 1 × 5 puis 9 − 4, soit 5."
+  ],
+  "a_voir": "Une seule identité remplace le produit de deux trinômes par une différence de deux carrés."
+ },
+ {
+  "code": "54-214",
+  "a_dire": "Il y a une infinité de fractions possibles pour une racine, mais seulement quelques entiers : se limiter aux entiers rend la recherche finie.",
+  "legende_titre": "Une infinité de fractions, peu d'entiers",
+  "lecture": [
+   "Sur la droite du haut, les petits cercles orange sont des fractions : ils continuent sans fin (les points de suspension).",
+   "Sur la droite du bas, seuls les entiers sont marqués.",
+   "Les cercles bleus sont les entiers qui divisent 4 : ±1, ±2, ±4.",
+   "Ce sont les seuls à essayer pour x³ − 2x² + 4 si la racine est entière."
+  ],
+  "a_voir": "Du côté des entiers, il n'y a que six candidats ; du côté des fractions, il y en a sans fin."
+ },
+ {
+  "code": "54-215",
+  "a_dire": "Tout polynôme à coefficients fractions s'écrit une fraction r/s fois un polynôme à coefficients entiers sans diviseur commun.",
+  "legende_titre": "Une fraction devant un polynôme entier",
+  "lecture": [
+   "En haut, p (bleu) est égal à la fraction r/s (orange) fois un polynôme (violet).",
+   "Sous la fraction : r et s sont des entiers premiers entre eux.",
+   "Sous le polynôme violet : ses coefficients a₀ à aₙ sont entiers et n'ont aucun diviseur commun.",
+   "En bas, en rouge, x + √2 ne rentre pas dans ce moule : √2 n'est pas une fraction."
+  ],
+  "a_voir": "Les fractions sortent à gauche, il reste des entiers à droite."
+ },
+ {
+  "code": "54-216",
+  "a_dire": "Pour écrire 1/2 + (2/3)x en fraction fois polynôme entier : on met au même dénominateur 6, puis on sort 1/6.",
+  "legende_titre": "Deux gestes sur un exemple chiffré",
+  "lecture": [
+   "La case bleue du haut est le polynôme de départ : 1/2 + (2/3)x.",
+   "Première flèche orange : tout au dénominateur 6, ce qui donne 3/6 + (4/6)x (case grise).",
+   "Deuxième flèche orange : on sort 1/6, ce qui donne (1/6)(3 + 4x) (case verte).",
+   "Les numérateurs 3 et 4 n'ont rien en commun, comme le dit la ligne du bas."
+  ],
+  "a_voir": "La même expression est écrite trois fois, avec les mêmes valeurs."
+ },
+ {
+  "code": "54-217",
+  "a_dire": "Un polynôme à coefficients entiers est primitif quand ses coefficients n'ont aucun diviseur commun autre que 1 : son contenu vaut 1.",
+  "legende_titre": "Deux polynômes entiers, un seul est primitif",
+  "lecture": [
+   "À gauche, en bleu, 3 + 4x : les coefficients 3 et 4 ont pour diviseurs 1, 3 et 1, 2, 4. Ils ont seulement 1 en commun.",
+   "À droite, en violet, 2 + 4x : les coefficients 2 et 4 ont pour diviseurs 1, 2 et 1, 2, 4. Ils ont 1 et 2 en commun.",
+   "En bas, la conclusion : contenu 1, primitif ; contenu 2, pas primitif."
+  ],
+  "a_voir": "On compare les diviseurs communs des coefficients : seul 1 pour le polynôme primitif."
+ },
+ {
+  "code": "54-218",
+  "a_dire": "Le produit de deux polynômes primitifs est primitif ; si un facteur n'est pas primitif, le produit ne l'est pas.",
+  "legende_titre": "Le produit de deux primitifs reste primitif",
+  "lecture": [
+   "Un polynôme est primitif si son contenu est 1. Chaque case donne son contenu.",
+   "Première ligne, en bleu : 3 + 4x fois x + 1 donne 3 + 7x + 4x². Les deux facteurs ont le contenu 1, le produit aussi : il est primitif.",
+   "Deuxième ligne : 2 + 2x (violet) a le contenu 2. Son produit avec x + 1 est 2 + 4x + 2x² (rouge), de contenu 2 : il n'est pas primitif."
+  ],
+  "a_voir": "Deux cases de contenu 1 donnent un produit de contenu 1 ; avec une case de contenu 2, le produit n'est plus primitif."
+ },
+ {
+  "code": "54-219",
+  "a_dire": "Un polynôme unitaire à coefficients entiers qui se factorise dans ℚ[x] se factorise aussi dans ℤ[x], en facteurs unitaires de mêmes degrés.",
+  "legende_titre": "Un unitaire entier se factorise dans les entiers",
+  "lecture": [
+   "La case bleue du haut est x² − 1 : unitaire, à coefficients entiers.",
+   "Ligne orange, ℚ[x] : x² − 1 = (x − 1)(x + 1).",
+   "Ligne verte, ℤ[x] : ce sont les mêmes facteurs, déjà unitaires et entiers.",
+   "Les flèches relient chaque facteur à lui-même ; les degrés sont 1 et 1."
+  ],
+  "a_voir": "Les facteurs trouvés avec des fractions possibles sont déjà des facteurs entiers."
+ },
+ {
+  "code": "54-220",
+  "a_dire": "Une racine rationnelle d'un polynôme unitaire à coefficients entiers est entière et divise le terme constant.",
+  "legende_titre": "Unitaire : la racine rationnelle est entière",
+  "lecture": [
+   "À gauche, en bleu, x − 3 : le coefficient dominant est 1. Sa racine 3 (point vert) tombe sur une graduation entière et divise −3.",
+   "À droite, en violet, 2x − 1 : le coefficient dominant est 2. Sa racine 1/2 (point rouge) est entre 0 et 1.",
+   "La racine 1/2 n'est pas entière : sans coefficient dominant 1, le résultat tombe."
+  ],
+  "a_voir": "Coefficient dominant 1 : la racine est sur une graduation ; coefficient 2 : elle tombe entre deux."
+ },
+ {
+  "code": "54-221",
+  "a_dire": "La preuve part d'une racine, obtient un facteur x − α avec α entier grâce au lemme de Gauss, puis lit que α divise le terme constant.",
+  "legende_titre": "De la racine à « α divise le terme constant »",
+  "lecture": [
+   "Case bleue : le polynôme x² − 5x + 6 = (x − 2)(x − 3), avec la racine 2.",
+   "Case orange, l'étape clé : par Gauss, le facteur est dans ℤ[x], donc de la forme x − α avec α = 2 entier.",
+   "Case verte : le terme constant s'écrit 6 = −α × c, avec α = 2 et c = −3, car −2 × (−3) = 6.",
+   "Les deux dernières lignes concluent : α divise 6. Sans Gauss, α pourrait être une fraction."
+  ],
+  "a_voir": "L'étape orange rend α entier ; ensuite le terme constant 6 s'écrit −α × c, donc α divise 6."
+ },
+ {
+  "code": "54-222",
+  "a_dire": "Le critère d'Eisenstein pose trois conditions sur un nombre premier p : il ne divise pas le coefficient dominant, il divise les autres, p² ne divise pas le terme constant.",
+  "legende_titre": "Les trois conditions du critère, vérifiées une à une",
+  "lecture": [
+   "Chaque case est un coefficient de x² − 4 : 1, 0 et −4, avec p = 2.",
+   "Premières cases, en vert : 2 ne divise pas 1 (coefficient dominant), 2 divise 0.",
+   "Troisième case, en rouge : 4 divise −4, la condition sur p² est fausse.",
+   "Le bandeau rouge du bas donne la conséquence : x² − 4 se casse en (x − 2)(x + 2)."
+  ],
+  "a_voir": "Une seule case rouge suffit pour que le critère ne conclue plus."
+ },
+ {
+  "code": "54-223",
+  "a_dire": "Avec p = 3, on vérifie les trois conditions du critère sur les coefficients, sans calculer de racine, et le polynôme est irréductible sur ℚ.",
+  "legende_titre": "Eisenstein appliqué à un polynôme de degré 5",
+  "lecture": [
+   "Les six cases sont les coefficients de 16x⁵ − 9x⁴ + 3x² + 6x − 21, y compris le 0 du terme en x³.",
+   "La case orange, 16, n'est pas divisible par 3 : première coche.",
+   "Sous l'accolade, −9, 0, 3, 6 et −21 sont tous divisibles par 3 : deuxième coche.",
+   "Troisième coche : 9 ne divise pas −21.",
+   "La case verte conclut : irréductible sur ℚ."
+  ],
+  "a_voir": "Trois coches alignées : les trois conditions du critère sont vraies pour p = 3."
+ },
+ {
+  "code": "54-224",
+  "a_dire": "Pour un polynôme pris au hasard, le critère d'Eisenstein s'applique rarement ; sa force est de fabriquer des irréductibles de n'importe quel degré.",
+  "legende_titre": "Eisenstein sert surtout à fabriquer",
+  "lecture": [
+   "En haut, en gris, x² + x + 1 : aucun nombre premier ne divise le coefficient 1, le critère ne sert à rien ici.",
+   "En dessous, en bleu, on choisit les coefficients : x³ − 2 a pour coefficients 1, 0, 0 et −2, avec p = 2.",
+   "La case verte du bas conclut : irréductible, et de même pour x à la puissance n moins 2, quel que soit le degré n."
+  ],
+  "a_voir": "Le critère n'est pas un test pour un polynôme donné : on choisit les coefficients pour l'appliquer."
+ }
+]

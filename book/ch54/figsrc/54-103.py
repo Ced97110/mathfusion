@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+assert 2 - 3 + 3 * 27 == 80
+text(ax, 44, 79, 'deux données', 'fixe', 's')
+box(ax, 2, 62, 40, 12, 'fixe', label=r'$\eta$ = identité de ℝ', size='s')
+box(ax, 46, 62, 40, 12, 'varie', label=r'$u=3$ : $x$ envoyé sur 3', size='s')
+arrow(ax, (30, 61), (46, 42), 'varie')
+arrow(ax, (58, 61), (52, 42), 'varie')
+text(ax, 20, 45, r'ℝ[$x$]', 'sujet', 's')
+text(ax, 68, 45, 'ℝ', 'resultat', 's')
+box(ax, 2, 26, 38, 14, 'sujet', label=r'$2-x+3x^3$', size='m')
+box(ax, 58, 26, 28, 14, 'resultat', label='80', size='l')
+arrow(ax, (41, 33), (57, 33), 'varie', lw=1.6)
+text(ax, 49, 38, r'$\eta_u$', 'varie', 'm')
+text(ax, 49, 28, 'le seul', 'varie', 's')
+text(ax, 44, 16, r'image imposée : $2-3+3\times27$', 'resultat', 'm')
+text(ax, 44, 7, r'$=80$ : aucun autre résultat', 'resultat', 'm')
+save(fig, '54-103')

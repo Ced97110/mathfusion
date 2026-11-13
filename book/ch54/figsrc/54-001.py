@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'$3\times y$ avec $y$ entier', 'sujet', 'l')
+f = numberline(ax, 6, 76, 30, -6, 9, 1, labels=False, arrow_right=False)
+for v in range(-6, 10, 3):
+    disc(ax, f(v), 30, 1.5, 'sujet')
+    text(ax, f(v), 24, f'{v}'.replace('-', '−'), 'sujet', 's')
+arrow(ax, (f(0), 33), (f(3), 33), 'varie', curve=-0.5)
+arrow(ax, (f(3), 33), (f(6), 33), 'varie', curve=-0.5)
+text(ax, (f(0) + f(3)) / 2, 40, '+3', 'varie', 's')
+text(ax, (f(3) + f(6)) / 2, 40, '+3', 'varie', 's')
+disc(ax, f(2), 30, 1.5, 'limite', fill=False)
+text(ax, f(2) - 1.5, 24, '2', 'limite', 's')
+line(ax, [(f(2), 21.5), (f(2), 18.5)], 'limite')
+text(ax, f(2), 15, '2 est sauté', 'limite', 's')
+save(fig, '54-001')

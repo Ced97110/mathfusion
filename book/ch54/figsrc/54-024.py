@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 34, 38, 24, 'sujet')
+text(ax, 23, 52, r'dans $\mathbb{Z}$', 'sujet', 'm')
+text(ax, 23, 42, r'$3\times5=5\times3$', 'sujet', 'm')
+box(ax, 46, 34, 38, 24, 'limite', dash=True)
+text(ax, 65, 52, 'quaternions (ch. 51)', 'limite', 's')
+text(ax, 65, 42, 'l’ordre change le résultat', 'limite', 's')
+text(ax, 65, 28, 'exclu ici', 'limite', 's')
+arrow(ax, (23, 34), (30, 22.5), 'resultat')
+box(ax, 4, 9, 80, 13, 'resultat', label=r'ici : $ab=ba$ toujours', size='m')
+text(ax, 44, 3, r'si $ad=bc$ alors $cb=da$', 'resultat', 's')
+save(fig, '54-024')

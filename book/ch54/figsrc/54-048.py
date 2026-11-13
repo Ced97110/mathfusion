@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+xa, xb, y1, y2 = 16, 36, 48, 24
+disc(ax, xa, y1, 4.5, 'sujet', label='3')
+disc(ax, xb, y1, 4.5, 'sujet', label='5')
+disc(ax, xa, y2, 4.5, 'sujet', label='3')
+disc(ax, xb, y2, 4.5, 'sujet', label='5')
+text(ax, 26, 58, 'le couple (3, 5)', 'sujet', 's')
+text(ax, 26, 14, 'comparé à lui-même', 'sujet', 's')
+line(ax, [(xa + 3, y1 - 3), (xb - 3, y2 + 3)], 'varie', lw=1.4)
+line(ax, [(xb - 3, y1 - 3), (xa + 3, y2 + 3)], 'resultat', lw=1.4, dash=True)
+text(ax, 50, 52, r'$3\times5=15$', 'varie', 's', ha='left')
+text(ax, 50, 20, r'$5\times3=15$', 'resultat', 's', ha='left')
+box(ax, 56, 32, 28, 8, 'fixe', label='15 = 15', size='m')
+save(fig, '54-048')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 40, 22, 12, 'sujet', label=r'$(x^2-1)$')
+box(ax, 33, 40, 22, 12, 'varie', label=r'$(x-1)$')
+box(ax, 64, 40, 22, 12, 'fixe', label=r'$\mathbb{R}[x]$')
+arrow(ax, (24.5, 46), (32.5, 46), 'fixe')
+arrow(ax, (55.5, 46), (63.5, 46), 'fixe')
+text(ax, 28.5, 56, r'$\subseteq$', 'fixe', 'l')
+text(ax, 59.5, 56, r'$\subset$', 'fixe', 'l')
+text(ax, 2, 30, r'inclus : $x^2-1=(x-1)(x+1)$', 'resultat', 's', ha='left')
+text(ax, 2, 22, r'strict : $x-1$ de degré $1<2$', 'resultat', 's', ha='left')
+text(ax, 2, 14, r'pas tout : $x-1$ non constant', 'resultat', 's', ha='left')
+save(fig, '54-200')

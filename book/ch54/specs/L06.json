@@ -1,0 +1,341 @@
+[
+ {
+  "code": "54-146",
+  "a_dire": "« plus petit » compare des nombres pour les entiers (r < 12) et des degrés pour les polynômes (deg r < deg g).",
+  "legende_titre": "Deux façons de comparer un reste",
+  "lecture": [
+   "La droite du haut porte les entiers : le trait bleu est le diviseur 12.",
+   "Le point vert 7 est avant 12, le point rouge 15 est après.",
+   "La droite du bas porte les degrés : le trait bleu est le degré 1 du diviseur x − 1.",
+   "Le point vert est le reste 3, de degré 0 ; le point rouge est le reste 2x + 1, de degré 1."
+  ],
+  "a_voir": "Le mot reste le même, mais on compare des nombres en haut et des degrés en bas."
+ },
+ {
+  "code": "54-147",
+  "a_dire": "Dans ℤ[x], diviser x² par 2x − 1 demande 2a = 1, qui n'a aucune solution entière : le théorème a besoin d'un facteur.",
+  "legende_titre": "Une division qui échoue sans facteur",
+  "lecture": [
+   "Les deux cadres bleus sont le dividende x² et le diviseur 2x − 1.",
+   "Les points orange sur la droite sont les valeurs possibles de 2a : 0, 2, 4, 6.",
+   "Le point rouge est 1, la valeur dont on a besoin ; il n'est pas un point orange."
+  ],
+  "a_voir": "Aucun entier a ne donne 2a = 1."
+ },
+ {
+  "code": "54-148",
+  "a_dire": "La formule décrit des étapes : multiplier par b_m = 2, retirer un multiple de g, deux fois, jusqu'à 4x² = (2x + 1)(2x − 1) + 1.",
+  "legende_titre": "La formule suivie pas à pas sur un cas",
+  "lecture": [
+   "Le cadre bleu est x², le point de départ.",
+   "Les flèches orange sont les actions : multiplier par 2, puis retirer un monôme fois g.",
+   "Le cadre vert à droite est le reste 1.",
+   "L'accolade compte les deux multiplications par 2, soit 4."
+  ],
+  "a_voir": "Chaque étape multiplie par 2 puis retire un multiple de g, et le reste final est 1."
+ },
+ {
+  "code": "54-149",
+  "a_dire": "La lettre f désigne le dividende, le polynôme que l'on divise ; dans f = qg + r, il est seul d'un côté du signe égal.",
+  "legende_titre": "Le nom de ce qu'on divise",
+  "lecture": [
+   "Le cadre bleu f est seul à gauche du signe égal.",
+   "Les trois cadres gris q, g et r sont à droite.",
+   "En dessous, le cadre bleu 156 est le dividende des entiers.",
+   "Le grand cadre bleu x³ − 2x² + 4 est le dividende du polynôme."
+  ],
+  "a_voir": "Dans chaque ligne, le cadre bleu est ce qu'on divise."
+ },
+ {
+  "code": "54-150",
+  "a_dire": "g ≠ 0 se lit « le diviseur n'est pas le polynôme nul » ; seul le polynôme nul est exclu.",
+  "legende_titre": "Trois signes pour une condition",
+  "lecture": [
+   "Le cadre bleu g est le diviseur.",
+   "Le cadre gris ≠ veut dire « n'est pas ».",
+   "Le cadre gris 0 est le polynôme nul.",
+   "Le cadre rouge montre le cas interdit g = 0, le cadre vert un cas permis, g = 2x − 1."
+  ],
+  "a_voir": "Un seul diviseur est exclu, le polynôme nul."
+ },
+ {
+  "code": "54-151",
+  "a_dire": "b_m est le coefficient de plus haut rang du diviseur g ; pour g = 2x − 1, c'est b_1 = 2.",
+  "legende_titre": "Quel coefficient porte la lettre b avec un indice",
+  "lecture": [
+   "Les barres montrent les coefficients de g = 2x − 1, chacune à son rang.",
+   "La barre grise est au rang 0 : le coefficient −1.",
+   "La barre bleue est au rang 1, le degré m de g : le coefficient 2.",
+   "La barre bleue est la plus à droite : c'est b_m."
+  ],
+  "a_voir": "b_m est la barre du dernier rang non nul."
+ },
+ {
+  "code": "54-152",
+  "a_dire": "La lettre k compte combien de fois on multiplie par b_m ; ici k = 2, donc b_m^k = 4.",
+  "legende_titre": "Compter les multiplications",
+  "lecture": [
+   "Chaque cadre orange est une multiplication par 2.",
+   "Il y a deux cadres : k = 2.",
+   "La ligne bleue donne le produit 2 × 2 = 4.",
+   "La ligne grise rappelle que k change avec f et g."
+  ],
+  "a_voir": "Le nombre de cadres orange est k."
+ },
+ {
+  "code": "54-153",
+  "a_dire": "La lettre q désigne le quotient : le nombre ou le polynôme qui multiplie le diviseur dans qg + r.",
+  "legende_titre": "Le nom de ce qui multiplie le diviseur",
+  "lecture": [
+   "Les 13 cadres bleus sont les 13 fois où 12 entre dans 157.",
+   "Le petit cadre gris est le reste 1.",
+   "Le grand cadre bleu en bas est le quotient x² − x − 1, qui multiplie x − 1."
+  ],
+  "a_voir": "Le quotient compte combien de fois le diviseur est retiré."
+ },
+ {
+  "code": "54-154",
+  "a_dire": "La lettre r désigne le reste ; la condition deg r < deg g s'écrit avec elle, ici deg r = 0 < 1.",
+  "legende_titre": "Écrire la condition sur le reste",
+  "lecture": [
+   "Dans la ligne du haut, le cadre bleu r est le reste.",
+   "La barre grise est le degré 1 du diviseur x − 1.",
+   "Le trait bleu à plat est le degré 0 du reste 3.",
+   "La ligne verte dit que le reste est plus bas que le diviseur."
+  ],
+  "a_voir": "Le trait du reste est plus bas que la barre du diviseur."
+ },
+ {
+  "code": "54-155",
+  "a_dire": "Le facteur b_m^k sert à rester dans ℤ[x] : sans lui il faudrait le coefficient ½, qui n'est pas entier.",
+  "legende_titre": "Pourquoi multiplier d'abord",
+  "lecture": [
+   "Le cadre rouge montre le calcul sans facteur : il demande le coefficient ½.",
+   "Le cadre vert montre le calcul avec le facteur : 2x² moins x fois g donne x.",
+   "Le texte orange rappelle qu'on a multiplié par 2 avant de retirer."
+  ],
+  "a_voir": "Multiplier par 2 d'abord garde des coefficients entiers."
+ },
+ {
+  "code": "54-156",
+  "a_dire": "La preuve multiplie f par b_m, retire un monôme fois g, ce qui fait baisser le degré, puis recommence.",
+  "legende_titre": "Une étape qui fait baisser le degré",
+  "lecture": [
+   "Le cadre bleu est f = 3x² + x, de degré 2.",
+   "La première flèche orange multiplie par 2 ; le cadre gris garde le degré 2.",
+   "La grande flèche orange retire 3x fois g, et le terme en x² disparaît.",
+   "Le cadre vert est 5x, de degré 1."
+  ],
+  "a_voir": "La soustraction fait passer le degré de 2 à 1."
+ },
+ {
+  "code": "54-157",
+  "a_dire": "Dans un corps, 2 a un inverse, donc la division s'écrit sans facteur : x² = (½x + ¼)(2x − 1) + ¼.",
+  "legende_titre": "La division sans facteur",
+  "lecture": [
+   "Le cadre bleu est le dividende x².",
+   "Les cadres gris sont le quotient ½x + ¼ et le diviseur 2x − 1.",
+   "Le cadre vert est le reste ¼.",
+   "La ligne orange montre que ½ fois 2 égale 1."
+  ],
+  "a_voir": "Avec des fractions, le premier terme ½x existe et rien ne multiplie x²."
+ },
+ {
+  "code": "54-158",
+  "a_dire": "Sur l'horloge à 6 heures, 0 s'écrit avec le quotient 0 et avec le quotient 3 : l'unicité tombe.",
+  "legende_titre": "Deux quotients pour le même dividende",
+  "lecture": [
+   "Le disque gris est l'horloge à 6 heures, où 6 est confondu avec 0.",
+   "Le cadre bleu écrit 0 avec le quotient 0.",
+   "Le cadre violet écrit 0 avec le quotient 3.",
+   "La ligne orange explique : 3 fois 2 donne 6, soit 0."
+  ],
+  "a_voir": "Deux quotients différents donnent le même dividende et le même reste."
+ },
+ {
+  "code": "54-159",
+  "a_dire": "La preuve compare les degrés dans (q − q₁)g = r₁ − r : le côté gauche est de degré au moins m, le droit plus petit, donc q = q₁.",
+  "legende_titre": "Comparer les degrés de deux côtés",
+  "lecture": [
+   "Le cadre gris du haut est le départ : deux écritures de la division.",
+   "Le grand cadre orange est l'étape qui porte la preuve : tu soustrais les deux écritures et obtiens (q − q₁)g = r₁ − r.",
+   "Dedans, le cadre bleu est le côté gauche et le cadre violet le côté droit. La flèche bleue passe le repère m : le degré gauche est au moins m. La flèche violette s'arrête avant m : le degré droit est plus petit que m.",
+   "Le cadre vert est l'arrivée : les deux côtés ne sont égaux que s'ils sont nuls, donc q = q₁ et r = r₁."
+  ],
+  "a_voir": "Le côté gauche a un degré d'au moins m, le côté droit un degré plus petit : ils ne sont égaux que s'ils sont nuls."
+ },
+ {
+  "code": "54-160",
+  "a_dire": "La division des polynômes a la même forme que celle des entiers ; seul le critère sur le reste change : le degré remplace la taille.",
+  "legende_titre": "Même forme, un critère qui change",
+  "lecture": [
+   "Le cadre violet du haut est la division des entiers : 17 = 5 × 3 + 2, avec 0 ≤ 2 < 5.",
+   "La flèche orange dit que la taille devient le degré.",
+   "Le cadre bleu du bas est la division d'un polynôme, avec la même forme.",
+   "Le reste y est plus petit en degré que le diviseur : 0 < 1."
+  ],
+  "a_voir": "Les deux cadres ont la même forme ; seul le critère sur le reste change."
+ },
+ {
+  "code": "54-161",
+  "a_dire": "g divise f quand le reste est nul ; avec un reste non nul, g ne divise pas f.",
+  "legende_titre": "Reste nul ou reste non nul",
+  "lecture": [
+   "Les cadres verts sont les cas où le reste est 0 : 12 divise 156, x − 1 divise x² − 1.",
+   "Les cadres rouges sont les cas où le reste n'est pas nul : 1 pour 157, 3 pour x³ − 2x² + 4.",
+   "La rangée du haut montre des entiers, celle du bas des polynômes."
+  ],
+  "a_voir": "Le reste décide : nul en vert, non nul en rouge."
+ },
+ {
+  "code": "54-162",
+  "a_dire": "g ∣ f se lit « g divise f » : le trait vertical est une relation entre un diviseur et un multiple, pas une fraction.",
+  "legende_titre": "Lire un trait vertical entre deux lettres",
+  "lecture": [
+   "Le cadre bleu g est le diviseur.",
+   "Le cadre orange avec le trait est le signe « divise ».",
+   "Le cadre violet f est le multiple.",
+   "Les deux lignes vertes sont deux exemples : 12 ∣ 156 et (x − 1) ∣ (x² − 1)."
+  ],
+  "a_voir": "Le trait relie deux objets, comme le signe égal."
+ },
+ {
+  "code": "54-163",
+  "a_dire": "Le reste de la division de f par x − a est la valeur f(a) : ici 11 des deux côtés pour f = x² + 3x + 1 et a = 2.",
+  "legende_titre": "Deux chemins vers le même nombre",
+  "lecture": [
+   "La ligne du haut est la division de f par x − 2 : le cadre vert 11 est le reste.",
+   "La ligne du bas remplace x par 2 : 4 + 6 + 1.",
+   "Le cadre vert du bas est la valeur 11.",
+   "La flèche orange dit que les deux nombres sont égaux."
+  ],
+  "a_voir": "Le reste de la division et la valeur en 2 sont le même nombre."
+ },
+ {
+  "code": "54-164",
+  "a_dire": "La preuve remplace x par a : le terme (x − a)q(x) devient 0 et il reste le reste r, donc r = f(a).",
+  "legende_titre": "Remplacer x pour faire disparaître un terme",
+  "lecture": [
+   "Le cadre gris du haut est la division, avec un reste r constant.",
+   "La flèche orange remplace x par 2.",
+   "Le grand cadre orange est l'étape qui porte la preuve : x − 2 devient 0, et 0 fois 7 disparaît.",
+   "Le cadre vert est l'arrivée : 11 = r."
+  ],
+  "a_voir": "Après le remplacement, il ne reste que le reste."
+ },
+ {
+  "code": "54-165",
+  "a_dire": "Ce cas montre le reste pour un seul diviseur : 3 pour x − 1, mais 4 pour x − 2 ; chaque diviseur a son reste.",
+  "legende_titre": "Ce que le cas montre et ce qu'il ne montre pas",
+  "lecture": [
+   "Le cadre bleu est la division par x − 1 : f(1) = 3 et le reste est 3.",
+   "Le cadre violet est la division par x − 2 : f(2) = 4 et le reste est 4.",
+   "Les deux petits cadres verts sont les restes : 3 puis 4."
+  ],
+  "a_voir": "Le reste change quand le diviseur change."
+ },
+ {
+  "code": "54-166",
+  "a_dire": "On peut prédire le reste sans poser la division : remplacer x par 2 donne 5, le reste de la division par x − 2.",
+  "legende_titre": "Prédire le reste sans diviser",
+  "lecture": [
+   "La colonne de gauche est la division de x³ − x² + 2x − 3 par x − 2, ligne par ligne.",
+   "Chaque flèche orange retire un multiple de x − 2.",
+   "Le cadre vert du bas est le reste 5.",
+   "À droite, la flèche orange remplace x par 2 : 8 − 4 + 4 − 3 donne le même 5."
+  ],
+  "a_voir": "Les deux chemins arrivent à 5."
+ },
+ {
+  "code": "54-167",
+  "a_dire": "L'évaluation en α est l'application qui envoie un polynôme sur sa valeur en α, ici x² − 4 sur 0 pour α = 2.",
+  "legende_titre": "Une application entre un polynôme et une valeur",
+  "lecture": [
+   "Le cadre bleu est le polynôme de départ x² − 4.",
+   "Le cadre vert est la valeur d'arrivée 0.",
+   "La flèche orange est l'application φ avec l'indice 2.",
+   "Le cadre gris α = 2 est la valeur choisie, qui remplace x."
+  ],
+  "a_voir": "L'application est la flèche, pas l'un des deux cadres."
+ },
+ {
+  "code": "54-168",
+  "a_dire": "Le signe φ avec un indice α nomme l'évaluation en α : l'indice change, le polynôme reste.",
+  "legende_titre": "Un signe, trois valeurs choisies",
+  "lecture": [
+   "Le cadre bleu est le polynôme x² − 4.",
+   "Chaque flèche orange est une évaluation, avec l'indice 1, 2 ou 3.",
+   "Les cadres verts sont les résultats : −3, 0 et 5."
+  ],
+  "a_voir": "Seul l'indice change d'une flèche à l'autre."
+ },
+ {
+  "code": "54-169",
+  "a_dire": "Une racine de p est une valeur α telle que p(α) = 0 ; pour x² − 4, ce sont 2 et −2, pas 3.",
+  "legende_titre": "Les valeurs qui annulent un polynôme",
+  "lecture": [
+   "La courbe bleue donne la valeur de x² − 4 pour chaque x.",
+   "Les deux points verts sont sur la droite grise : la valeur y est 0, en −2 et en 2.",
+   "Le point gris est en 3, où la valeur est 5."
+  ],
+  "a_voir": "Les racines sont les endroits où la courbe touche la droite grise."
+ },
+ {
+  "code": "54-170",
+  "a_dire": "Dans ℚ[x], √2 annule x² − 2 mais x − √2 n'est pas dans ℚ[x] ; le théorème du facteur ne vaut que pour a pris dans l'anneau.",
+  "legende_titre": "Un a pris hors de l'anneau",
+  "lecture": [
+   "Le point orange est √2 sur la droite, entre 1 et 2.",
+   "Le cadre vert dit que √2 annule f.",
+   "Le cadre rouge reprend l'affirmation « x − √2 divise f », qui est fausse dans ℚ[x]."
+  ],
+  "a_voir": "Annuler f ne suffit pas si a n'est pas dans ℚ."
+ },
+ {
+  "code": "54-171",
+  "a_dire": "Une racine est un élément de l'anneau qui annule f ; elle correspond à un facteur, mais n'est pas ce facteur.",
+  "legende_titre": "Racine, facteur, coefficients et valeur",
+  "lecture": [
+   "Les deux cadres gris du haut sont des voisins : les coefficients −4, 0, 1 et la valeur f(3) = 5.",
+   "Le cadre bleu est la racine : 2 et −2.",
+   "Le cadre violet est le facteur : x − 2 et x + 2.",
+   "La double flèche relie chaque racine à son facteur."
+  ],
+  "a_voir": "La racine est un nombre ; le facteur est un polynôme."
+ },
+ {
+  "code": "54-172",
+  "a_dire": "La méthode échoue quand il n'y a aucune racine dans l'anneau des coefficients : x² + 1 n'en a pas sur ℝ.",
+  "legende_titre": "Quand chercher une racine ne donne rien",
+  "lecture": [
+   "La courbe bleue est x² + 1 sur les réels.",
+   "Le point rouge est son point le plus bas, de valeur 1 : elle ne touche jamais la droite grise.",
+   "Le cadre vert montre la factorisation avec le nombre complexe i."
+  ],
+  "a_voir": "Pas de croisement avec la droite grise, donc pas de racine réelle."
+ },
+ {
+  "code": "54-173",
+  "a_dire": "Un idéal est principal quand un seul élément suffit à décrire tous ses éléments.",
+  "legende_titre": "Un seul générateur suffit",
+  "lecture": [
+   "Les points bleus sont les multiples de 2 : l'idéal engendré par 4 et 6.",
+   "Le cadre vert dit qu'un seul nombre, 2, le décrit.",
+   "Le texte violet est le cas de ℤ[x] : l'idéal contient 3 mais pas 1.",
+   "La ligne rouge dit qu'aucun élément seul ne le décrit."
+  ],
+  "a_voir": "Dans ℤ un seul nombre suffit ; dans ℤ[x] cet idéal n'en a pas un seul."
+ },
+ {
+  "code": "54-174",
+  "a_dire": "Le signe (g) désigne la collection de tous les multiples de g, comme (6) pour les multiples de 6.",
+  "legende_titre": "Un signe pour une collection infinie",
+  "lecture": [
+   "Les parenthèses orange veulent dire « tous les multiples ».",
+   "Le cadre bleu 6 est le générateur, placé entre les parenthèses.",
+   "Les points bleus de la droite sont des multiples de 6 : −12, −6, 0, 6, 12.",
+   "La ligne violette donne un autre exemple : (x²) contient x² fois q."
+  ],
+  "a_voir": "Le signe résume une infinité d'éléments."
+ }
+]

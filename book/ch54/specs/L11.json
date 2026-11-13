@@ -1,0 +1,97 @@
+[
+ {
+  "code": "54-225",
+  "a_dire": "Pour x puissance 5 moins 2 avec p = 2, le premier coefficient n'est pas divisible par 2, les autres le sont, 4 ne divise pas 2 : le polynôme est irréductible sur ℚ, et de même pour tout n.",
+  "legende_titre": "Le polynôme x⁵ − 2 et le nombre premier 2",
+  "lecture": [
+   "La case orange est le coefficient de x⁵, qui vaut 1 : 2 ne le divise pas.",
+   "Les cinq cases bleues sont les autres coefficients, 0, 0, 0, 0 et −2 : 2 les divise tous.",
+   "Le texte à droite rappelle que 4 ne divise pas −2.",
+   "La case verte donne le résultat : irréductible sur ℚ, pour tout n."
+  ],
+  "a_voir": "Le même schéma de coefficients vaut pour x puissance n moins 2, donc il existe un irréductible sur ℚ de chaque degré."
+ },
+ {
+  "code": "54-226",
+  "a_dire": "Sur ℚ il y a des irréductibles de tous les degrés ; sur ℝ il n'y en a qu'aux degrés 1 et 2.",
+  "legende_titre": "Deux lignes de degrés : sur ℚ et sur ℝ",
+  "lecture": [
+   "Chaque colonne est un degré, de 1 à 5.",
+   "La ligne du haut est celle de ℚ : les cinq cases sont vertes, avec une coche.",
+   "La ligne du bas est celle de ℝ : seuls les degrés 1 et 2 ont une coche verte, les degrés 3, 4 et 5 ont une croix rouge.",
+   "Le texte du bas donne x³ − 2 : irréductible sur ℚ, il se casse sur ℝ."
+  ],
+  "a_voir": "Le corps des coefficients décide des degrés où un irréductible existe."
+ },
+ {
+  "code": "54-227",
+  "a_dire": "Si le polynôme réduit modulo p est irréductible sur ℤ/p, alors le polynôme de départ est irréductible sur ℚ.",
+  "legende_titre": "De f à f barre, puis retour vers f",
+  "lecture": [
+   "La case bleue est f = x³ + x² + 2, à coefficients entiers.",
+   "La flèche orange, « modulo 3 », mène à la case violette : f barre, dans ℤ/3.",
+   "Les trois cases violettes du milieu donnent les valeurs de f barre en 0, 1 et 2 : aucune n'est nulle. Degré 3 sans racine : f barre est irréductible.",
+   "Le texte orange rappelle que si f se factorisait en gh, f barre se factoriserait en g barre fois h barre. La flèche verte conclut : f est irréductible sur ℚ."
+  ],
+  "a_voir": "On vérifie le polynôme réduit, puis on conclut pour le polynôme de départ."
+ },
+ {
+  "code": "54-228",
+  "a_dire": "La lettre p désigne le nombre premier choisi pour le test.",
+  "legende_titre": "La lettre p dans la liste des nombres de 2 à 9",
+  "lecture": [
+   "Les cases bleues sont les nombres premiers 2, 5 et 7 : des choix possibles pour p.",
+   "La case orange, 3, est le nombre choisi : p = 3.",
+   "Les cases grises 4, 6, 8 et 9 ne sont pas premières : elles sont exclues.",
+   "La case du bas montre que, pour x³ + x² + 2, le nombre 3 ne divise pas 1."
+  ],
+  "a_voir": "p est un nombre premier que vous choisissez, pas un polynôme."
+ },
+ {
+  "code": "54-229",
+  "a_dire": "Le signe f barre désigne le polynôme f dont chaque coefficient est remplacé par son reste modulo p.",
+  "legende_titre": "Les coefficients de f deviennent ceux de f barre",
+  "lecture": [
+   "La ligne grise donne les coefficients de f : 2, 5 et 7.",
+   "Les flèches orange prennent chaque coefficient modulo 3.",
+   "La ligne bleue donne ceux de f barre : 2, 2 et 1.",
+   "Le texte du bas écrit f barre = 2x² + 2x + 1."
+  ],
+  "a_voir": "Chaque coefficient est remplacé par son reste modulo 3, et la barre le rappelle."
+ },
+ {
+  "code": "54-230",
+  "a_dire": "Le signe (ℤ/p)[x] désigne la collection des polynômes en x dont les coefficients sont pris modulo p.",
+  "legende_titre": "Le signe (ℤ/3)[x] découpé en deux morceaux",
+  "lecture": [
+   "Le morceau violet (ℤ/3) donne les coefficients permis : 0, 1 ou 2.",
+   "Le morceau bleu [x] dit qu'on forme des polynômes en x.",
+   "La grande case bleue contient quatre éléments de cette collection : x² + 2x + 1, 2x³ + x, x + 2 et 2."
+  ],
+  "a_voir": "Les coefficients de chaque polynôme de la collection sont dans 0, 1, 2."
+ },
+ {
+  "code": "54-231",
+  "a_dire": "Si f se factorise en g fois h dans ℤ[x], sa réduction se factorise aussi, et les degrés des facteurs ne baissent pas.",
+  "legende_titre": "Une factorisation qui passe modulo 3",
+  "lecture": [
+   "La ligne bleue montre x² − 1 = (x − 1) fois (x + 1) dans ℤ[x].",
+   "Les flèches orange réduisent modulo 3 chaque facteur.",
+   "La ligne verte montre x² + 2 = (x − 1) fois (x + 1) : le produit reste une factorisation.",
+   "Les accolades vertes indiquent que chaque facteur garde le degré 1."
+  ],
+  "a_voir": "La réduction garde le produit et les degrés, donc un f qui se casse donne un f barre qui se casse."
+ },
+ {
+  "code": "54-232",
+  "a_dire": "Pour x³ + x² + 2, trois valeurs modulo 3 suffisent pour conclure qu'il est irréductible sur ℚ, alors que les racines entières demandent quatre valeurs.",
+  "legende_titre": "Deux façons de vérifier x³ + x² + 2",
+  "lecture": [
+   "La colonne bleue donne les trois valeurs modulo 3 : 2, 1 et 2.",
+   "La colonne violette donne les quatre valeurs dans ℤ : 4, 2, 14 et −2.",
+   "Aucune valeur n'est nulle dans les deux colonnes.",
+   "La case verte conclut : irréductible sur ℚ."
+  ],
+  "a_voir": "Les deux méthodes donnent le même résultat, la première demande moins de calculs."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 74, r'$f=(x-1)(x-2)(x-3)/4$ : racines 1, 2, 3', 'sujet', 's')
+box(ax, 6, 55, 76, 11, 'sujet', label=r'$f = (x-1)\,h_1$')
+arrow(ax, (44, 54), (44, 46), 'varie')
+text(ax, 62, 50, 'on évalue en 2', 'varie', 's')
+box(ax, 6, 35, 76, 11, 'varie', label=r'$0 = (2-1)\times h_1(2) = 1\times h_1(2)$')
+arrow(ax, (44, 34), (44, 26), 'varie')
+text(ax, 66, 30, 'intégrité', 'varie', 's')
+text(ax, 22, 30, r'$1\neq 0$', 'fixe', 's')
+box(ax, 6, 15, 76, 11, 'resultat', label=r'$h_1(2)=0$ : on extrait $x-2$')
+text(ax, 44, 7, 'même geste pour 3, puis les suivantes', 'fixe', 's')
+save(fig, '54-238')

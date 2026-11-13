@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+# deux couples : 1re ligne (2, 3), 2e ligne (4, 6)
+xa, xb, y1, y2 = 16, 36, 48, 24
+disc(ax, xa, y1, 4.5, 'sujet', label='2')
+disc(ax, xb, y1, 4.5, 'sujet', label='3')
+disc(ax, xa, y2, 4.5, 'autre', label='4')
+disc(ax, xb, y2, 4.5, 'autre', label='6')
+text(ax, xa, y1 + 8, '$a$', 'sujet', 's')
+text(ax, xb, y1 + 8, '$b$', 'sujet', 's')
+text(ax, xa, y2 - 8, '$c$', 'autre', 's')
+text(ax, xb, y2 - 8, '$d$', 'autre', 's')
+line(ax, [(xa + 3, y1 - 3), (xb - 3, y2 + 3)], 'varie', lw=1.4)
+line(ax, [(xb - 3, y1 - 3), (xa + 3, y2 + 3)], 'resultat', lw=1.4, dash=True)
+text(ax, 50, 52, r'$ad=2\times6=12$', 'varie', 's', ha='left')
+text(ax, 50, 20, r'$bc=3\times4=12$', 'resultat', 's', ha='left')
+box(ax, 54, 32, 30, 8, 'fixe', label='12 = 12', size='m')
+save(fig, '54-038')

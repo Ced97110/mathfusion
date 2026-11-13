@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, r'$f=x^2-4$', 'encre', 'm')
+# coefficients, valeur
+box(ax, 4, 40, 38, 30, 'fixe')
+text(ax, 23, 64, 'coefficients', 'fixe', 's')
+text(ax, 23, 54, r'$-4$, $0$, $1$', 'fixe', 'm')
+box(ax, 46, 40, 38, 30, 'fixe')
+text(ax, 65, 64, 'valeur', 'fixe', 's')
+text(ax, 65, 54, r'$f(3)=5$', 'fixe', 'm')
+# racine / facteur
+box(ax, 4, 6, 38, 26, 'sujet')
+text(ax, 23, 26, 'racine', 'sujet', 's', weight='bold')
+text(ax, 23, 16, r'$2$ et $-2$', 'sujet', 'm')
+box(ax, 46, 6, 38, 26, 'autre')
+text(ax, 65, 26, 'facteur', 'autre', 's')
+text(ax, 65, 16, r'$x-2$, $x+2$', 'autre', 'm')
+arrow(ax, (42, 19), (46, 19), 'varie', both=True)
+text(ax, 44, 36, r'$f(2)=0$', 'resultat', 's')
+save(fig, '54-171')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 4, 78, 36, 9, 'sujet', label=r'$f=x^3-2x^2+4$')
+box(ax, 48, 78, 36, 9, 'autre', label=r'$g=x-1$')
+arrow(ax, (22, 77), (38, 68), 'varie')
+arrow(ax, (66, 77), (50, 68), 'varie')
+box(ax, 4, 56, 80, 11, 'varie', label=r'$3 = f-(x^2-x-1)\,g$')
+text(ax, 44, 50, r'dans $\mathbb{Q}$, 3 a un inverse $1/3$', 'fixe', 's')
+arrow(ax, (44, 47), (44, 39), 'varie')
+box(ax, 4, 28, 80, 11, 'varie', label=r'$1=\frac{1}{3}\times 3$ est dans l’idéal')
+arrow(ax, (44, 27), (44, 19), 'resultat')
+box(ax, 14, 8, 60, 11, 'resultat', label=r'PGCD $=1$ : premiers entre eux')
+save(fig, '54-246')

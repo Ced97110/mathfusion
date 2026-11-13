@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+p = lambda v: v ** 4 - 2 * v ** 3 + v + 1
+assert (p(1), p(-1)) == (1, 3)
+text(ax, 44, 80, r'cas $1+3$ : un facteur de degré 1', 'sujet', 's')
+box(ax, 4, 62, 80, 10, 'sujet', label='donne une racine rationnelle')
+arrow(ax, (44, 61), (44, 53), 'varie')
+box(ax, 4, 42, 80, 10, 'varie', label='entière, divise le terme constant 1')
+arrow(ax, (30, 41), (22, 32), 'varie')
+arrow(ax, (58, 41), (66, 32), 'varie')
+box(ax, 4, 20, 38, 11, 'fixe', label=r'$p(1)=1$')
+box(ax, 46, 20, 38, 11, 'fixe', label=r'$p(-1)=3$')
+text(ax, 44, 12, 'ni 1 ni −1 : aucune racine', 'limite', 's')
+text(ax, 44, 5, 'le cas 1 + 3 est exclu', 'resultat', 's')
+save(fig, '54-253')

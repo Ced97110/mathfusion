@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 44, 34, 14, 'fixe', label='comment ?', size='l')
+text(ax, 21, 39, 'diviser, factoriser', 'fixe', 's')
+arrow(ax, (38, 51), (50, 51), 'varie')
+box(ax, 50, 44, 34, 14, 'varie', label='pourquoi ?', size='l')
+box(ax, 4, 8, 38, 14, 'autre', label='division : reste\nplus petit', size='s')
+box(ax, 46, 8, 38, 14, 'autre', label='degré 3 : au plus\n3 racines', size='s')
+arrow(ax, (62, 44), (23, 22), 'varie')
+arrow(ax, (72, 44), (65, 22), 'varie')
+save(fig, '54-010')

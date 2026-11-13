@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$R=$ ℤ, $u=3$, $S=$ ℝ', 'encre', 'm')
+box(ax, 2, 28, 26, 16, 'sujet', label=r'ℤ$[x]/I$', size='m')
+arrow(ax, (28, 36), (40, 36), 'varie')
+text(ax, 34, 41, '≅', 'varie', 'l')
+box(ax, 40, 14, 46, 36, 'fixe')
+text(ax, 63, 45, 'ℝ', 'fixe', 'm')
+box(ax, 44, 20, 24, 18, 'resultat', label=r'ℤ$[3]=$ ℤ', size='m')
+text(ax, 77.5, 29, r'$\frac{1}{2}$', 'limite', 'm')
+text(ax, 77.5, 21, 'non atteint', 'limite', 's')
+text(ax, 44, 8, 'iso avec l’image, pas avec ℝ', 'encre', 's')
+save(fig, '54-113')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 6, 36, 28, 12, 'sujet', label='(2, 3)', size='l')
+box(ax, 54, 36, 28, 12, 'autre', label='(4, 6)', size='l')
+text(ax, 44, 54, 'égaux ?  non', 'limite', 's')
+text(ax, 44, 42, r'$\neq$', 'limite', 'l')
+arrow(ax, (34, 30), (54, 30), 'resultat', both=True)
+text(ax, 44, 34, r'$\sim$', 'resultat', 'l')
+text(ax, 44, 22, 'équivalents : même fraction', 'resultat', 's')
+box(ax, 10, 4, 68, 11, 'fixe', label=r'test : $2\times6=3\times4$')
+save(fig, '54-035')

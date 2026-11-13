@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+# entiers (chapitre 5)
+box(ax, 4, 52, 80, 28, 'autre')
+text(ax, 44, 74, r'entiers : $17=5\times3+2$', 'autre', 'm')
+text(ax, 44, 66, 'critère sur le reste', 'autre', 's')
+text(ax, 44, 58, r'$0\leq2<5$ : la taille', 'autre', 'm', weight='bold')
+arrow(ax, (44, 52), (44, 40), 'varie')
+text(ax, 62, 46, 'la taille devient le degré', 'varie', 's')
+# polynômes
+box(ax, 4, 6, 80, 34, 'sujet')
+text(ax, 44, 34, r'$x^3-2x^2+4=(x^2-x-1)(x-1)+3$', 'sujet', 's')
+text(ax, 44, 26, 'même forme : quotient, diviseur, reste', 'sujet', 's')
+text(ax, 44, 17, r'$0<1$ : le degré', 'sujet', 'm', weight='bold')
+text(ax, 44, 10, 'du reste est plus petit que celui du diviseur', 'sujet', 's')
+save(fig, '54-160')

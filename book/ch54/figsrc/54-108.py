@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+assert 2 - 2 + 3 * 8 == 24
+text(ax, 31, 59, 'A', 'sujet', 30)
+text(ax, 41, 59, '(', 'encre', 30)
+text(ax, 49, 59, 'u', 'varie', 30)
+text(ax, 57, 59, ')', 'encre', 30)
+text(ax, 22, 42, 'polynôme', 'sujet', 's')
+text(ax, 65, 42, r'valeur de $x$', 'varie', 's')
+arrow(ax, (27, 45), (31, 51), 'sujet')
+arrow(ax, (60, 45), (51, 51), 'varie')
+box(ax, 4, 22, 38, 9, 'sujet', label=r'$A(x)=2-x+3x^3$', size='s')
+box(ax, 46, 22, 38, 9, 'resultat', label=r'$A(2)=2-2+3\times8$', size='s')
+arrow(ax, (42, 26.5), (46, 26.5), 'varie')
+text(ax, 44, 13, 'A de 2', 'encre', 's')
+text(ax, 44, 6, r'$A(2)=24$', 'resultat', 'l')
+save(fig, '54-108')

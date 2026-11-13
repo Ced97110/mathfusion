@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 4, 4, 80, 68, 'sujet')
+text(ax, 8, 67, r'$\mathbb{R}$ : corps', 'sujet', 'm', ha='left')
+box(ax, 10, 8, 68, 50, 'autre')
+text(ax, 14, 53, r'$\mathbb{Q}$ : corps', 'autre', 'm', ha='left')
+text(ax, 44, 46, r'$5\to1/5$ ; $2/3\to3/2$', 'autre', 's')
+text(ax, 44, 41, '0 : jamais d’inverse', 'fixe', 's')
+box(ax, 16, 12, 56, 24, 'limite')
+text(ax, 20, 32, r'$\mathbb{Z}$ : pas un corps', 'limite', 'm', ha='left')
+text(ax, 44, 23, '3 : aucun inverse', 'limite', 's')
+text(ax, 44, 17, '1 et −1 : leur propre inverse', 'fixe', 's')
+save(fig, '54-028')

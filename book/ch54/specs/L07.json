@@ -1,0 +1,335 @@
+[
+ {
+  "code": "54-175",
+  "a_dire": "Un anneau principal est un anneau intègre où chaque idéal est décrit par un seul élément, comme (2) décrit 4u + 6v dans ℤ.",
+  "legende_titre": "Un seul nombre pour toute la collection",
+  "lecture": [
+   "Le cadre orange est l'expression 4u + 6v, où u et v sont des entiers.",
+   "Sur la droite graduée, les ronds bleus sont les multiples de 2 : ce sont les seuls nombres obtenus.",
+   "Le cadre vert dit que le seul nombre 2 décrit toute cette collection."
+  ],
+  "a_voir": "Les ronds bleus tombent sur les multiples de 2 et un seul nombre les décrit tous."
+ },
+ {
+  "code": "54-176",
+  "a_dire": "Dans F[x] avec F un corps, un idéal est formé des multiples de son polynôme de degré minimal.",
+  "legende_titre": "Le polynôme de plus petit degré engendre l'idéal",
+  "lecture": [
+   "Le cadre bleu est x² − 1, de degré 2 : le plus petit degré de l'idéal.",
+   "Le cadre gris est x³ − x, de degré 3 : il vaut x fois le cadre bleu (flèche orange).",
+   "Le cadre vert dit que l'idéal est formé des multiples de x² − 1."
+  ],
+  "a_voir": "Le second polynôme est un multiple du premier, donc le premier suffit."
+ },
+ {
+  "code": "54-177",
+  "a_dire": "La preuve part d'un idéal non nul, arrive à I = (g), et l'étape qui porte tout est de voir que le reste est dans I et vaut 0.",
+  "legende_titre": "Départ, étape décisive, arrivée",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : l'idéal des multiples de x² − 1.",
+   "Le cadre orange est l'étape décisive : x³ − x = x(x² − 1) + 0. Le reste 0 est dans I, et son degré est plus petit que 2 : il vaut 0.",
+   "Le cadre vert du bas est l'arrivée : I = (x² − 1)."
+  ],
+  "a_voir": "L'étape orange est celle où le reste, dans I et de petit degré, est forcé à être nul."
+ },
+ {
+  "code": "54-178",
+  "a_dire": "La preuve pour les polynômes est la même que pour les entiers, avec le degré à la place de la valeur.",
+  "legende_titre": "Une même preuve, deux mesures",
+  "lecture": [
+   "La colonne violette est la preuve dans les entiers : le plus petit, 6, puis 18 = 3 × 6 + 0, puis le reste 0.",
+   "La colonne bleue est la preuve dans les polynômes : x² − 1, puis x³ − x = x(x² − 1) + 0, puis le reste 0.",
+   "Chaque ligne a le même nom au milieu ; en bas, la mesure est la valeur à gauche et le degré à droite."
+  ],
+  "a_voir": "Les trois étapes sont les mêmes dans les deux colonnes."
+ },
+ {
+  "code": "54-179",
+  "a_dire": "Sans l'exigence unitaire, un idéal a plusieurs générateurs ; on impose le coefficient dominant 1 pour en garder un seul.",
+  "legende_titre": "Deux générateurs pour un même idéal",
+  "lecture": [
+   "Le cadre vert est x, de coefficient dominant 1 : c'est celui qu'on choisit.",
+   "Le cadre violet est 2x, de coefficient dominant 2.",
+   "Les flèches orange montrent que chacun s'obtient de l'autre par une constante, 2 ou un demi.",
+   "Le cadre bleu du bas : ils ont le même idéal, les multiples de x."
+  ],
+  "a_voir": "Deux polynômes différents donnent le même idéal."
+ },
+ {
+  "code": "54-180",
+  "a_dire": "Dans F[x, y], l'idéal des polynômes sans terme constant n'est pas principal, car un seul générateur devrait engendrer 1.",
+  "legende_titre": "Deux lettres : plus de générateur unique",
+  "lecture": [
+   "Le cadre bleu en pointillés est l'idéal I, les polynômes sans terme constant ; x et y sont dedans.",
+   "Le cadre rouge est 1 : il a un terme constant, donc il n'est pas dans I.",
+   "Le cadre orange : un générateur devrait diviser x et y.",
+   "Le cadre rouge du bas : il serait constant et engendrerait 1, ce qui est faux."
+  ],
+  "a_voir": "Le seul générateur possible mènerait à 1, qui n'est pas dans I."
+ },
+ {
+  "code": "54-181",
+  "a_dire": "L'idéal (x²) est formé des polynômes dont les coefficients de rang 0 et 1 sont nuls.",
+  "legende_titre": "Reconnaître l'idéal à ses coefficients",
+  "lecture": [
+   "Chaque barre est un coefficient du polynôme 3x² + 2x³, rangé par rang de 0 à 4.",
+   "L'accolade grise couvre les rangs 0 et 1 : leurs coefficients valent toujours 0.",
+   "L'accolade orange couvre les rangs 2 et plus : ils sont libres, ici 3 puis 2 puis 0."
+  ],
+  "a_voir": "Les deux premières places sont vides, les autres sont libres."
+ },
+ {
+  "code": "54-182",
+  "a_dire": "Le PGCD de deux polynômes est le facteur commun unitaire qui engendre l'idéal des combinaisons uf + vg.",
+  "legende_titre": "Le facteur commun engendre l'idéal",
+  "lecture": [
+   "La première ligne montre f = x² − 1 coupé en x − 1 et x + 1.",
+   "La deuxième ligne montre g = x² + x coupé en x et x + 1.",
+   "Les cadres verts sont le facteur commun x + 1 : c'est le PGCD d.",
+   "Le cadre bleu dit que d engendre l'ensemble des combinaisons uf + vg."
+  ],
+  "a_voir": "x + 1 est dans les deux lignes et il engendre l'idéal."
+ },
+ {
+  "code": "54-183",
+  "a_dire": "Le PGCD d est une combinaison de f et g : d = uf + vg, ici avec u = −1 et v = 1.",
+  "legende_titre": "Le PGCD écrit comme combinaison",
+  "lecture": [
+   "Le cadre orange est u f avec u = −1, soit −(x² − 1).",
+   "Le cadre violet est v g avec v = 1, soit x² + x.",
+   "Les flèches mènent à la somme, le cadre vert : x + 1.",
+   "Les termes en x² s'annulent."
+  ],
+  "a_voir": "En ajoutant les deux cadres du haut on obtient le PGCD."
+ },
+ {
+  "code": "54-184",
+  "a_dire": "L'algorithme d'Euclide divise de façon répétée ; il s'arrête sur un reste nul car les degrés des restes baissent, et le PGCD est le dernier reste non nul.",
+  "legende_titre": "Des divisions jusqu'au reste nul",
+  "lecture": [
+   "Le premier cadre orange est la division de x² − 1 par x² + x : quotient 1, reste −x − 1, de degré 1.",
+   "La flèche grise dit que ce reste devient le diviseur.",
+   "Le second cadre orange est la division de x² + x par −x − 1 : reste 0.",
+   "Le cadre vert donne le dernier reste non nul, −x − 1, rendu unitaire x + 1."
+  ],
+  "a_voir": "Le degré du reste baisse jusqu'à 0, puis la méthode s'arrête."
+ },
+ {
+  "code": "54-185",
+  "a_dire": "Un polynôme irréductible est non constant et ne s'écrit pas comme produit de deux polynômes non constants.",
+  "legende_titre": "Se casser en deux morceaux ou non",
+  "lecture": [
+   "À gauche, en gris, 6 se casse en 2 × 3 et x² − 1 se casse en (x − 1)(x + 1).",
+   "À droite, en bleu, 7 ne se casse pas, et x + 1 non plus.",
+   "Pour x + 1, de degré 1, deux facteurs de degré supérieur à 0 sont impossibles."
+  ],
+  "a_voir": "Les cadres bleus sont ceux qui ne se cassent pas."
+ },
+ {
+  "code": "54-186",
+  "a_dire": "Être irréductible dépend du corps : x² − 2 l'est sur ℚ mais pas sur ℝ.",
+  "legende_titre": "Même polynôme, deux corps",
+  "lecture": [
+   "Le cadre gris du haut est x² − 2.",
+   "À gauche, sur ℚ, le cadre bleu dit qu'il est irréductible : aucun facteur n'a de coefficients fractions.",
+   "À droite, sur ℝ, le cadre violet le montre cassé en (x − √2)(x + √2)."
+  ],
+  "a_voir": "Le même polynôme est entier à gauche et cassé à droite."
+ },
+ {
+  "code": "54-187",
+  "a_dire": "Sur ℝ, x² + 1 n'a pas de racine donc ne se casse pas ; x² − 1 en a deux et se casse.",
+  "legende_titre": "Une racine ou aucune",
+  "lecture": [
+   "La courbe bleue est x² + 1 : elle reste au-dessus de la droite, elle ne vaut jamais 0.",
+   "La courbe violette est x² − 1 : elle coupe la droite en −1 et en 1.",
+   "Les deux ronds violets sont ces deux racines."
+  ],
+  "a_voir": "Seule la courbe violette touche la droite."
+ },
+ {
+  "code": "54-188",
+  "a_dire": "Le polynôme minimal de √2 est le polynôme annulant √2 de plus petit degré, ici x² − 2.",
+  "legende_titre": "Choisir un seul polynôme parmi une infinité",
+  "lecture": [
+   "Chaque cadre de gauche est un polynôme qui s'annule en √2 : x² − 2, x³ − 2x, x⁴ − 4.",
+   "Chaque barre est son degré : 2, 3, 4.",
+   "Le bleu est le plus court : c'est le polynôme minimal."
+  ],
+  "a_voir": "La barre la plus courte désigne le polynôme minimal."
+ },
+ {
+  "code": "54-189",
+  "a_dire": "Tout polynôme qui annule √2 est un multiple du polynôme minimal : la division laisse un reste 0.",
+  "legende_titre": "Un annulateur se divise sans reste",
+  "lecture": [
+   "Le cadre gris est x⁴ − 4, un polynôme qui annule √2.",
+   "Le cadre bleu est le polynôme minimal x² − 2, par lequel on divise.",
+   "Le cadre orange est le quotient x² + 2.",
+   "Le cadre vert est le reste : 0."
+  ],
+  "a_voir": "Le reste est 0, donc x⁴ − 4 est un multiple de x² − 2."
+ },
+ {
+  "code": "54-190",
+  "a_dire": "Si le polynôme minimal se casse, F[u] n'est pas intègre : deux éléments non nuls ont un produit nul.",
+  "legende_titre": "Si le polynôme minimal se casse",
+  "lecture": [
+   "Le cadre bleu du haut est le polynôme minimal x² − 1, qui se casse en (x − 1)(x + 1).",
+   "La lettre u est la classe de x.",
+   "Les cadres violets u − 1 et u + 1 sont tous deux non nuls.",
+   "Leur produit, le cadre rouge, vaut 0 : l'anneau n'est pas intègre."
+  ],
+  "a_voir": "Deux non nuls multipliés donnent 0."
+ },
+ {
+  "code": "54-191",
+  "a_dire": "La preuve part de g = fh, montre f(u) ≠ 0 et h(u) ≠ 0 car leurs degrés sont plus petits que celui de g, et conclut que F[u] n'est pas intègre.",
+  "legende_titre": "Pourquoi aucun facteur ne s'annule",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : g = fh, avec x² − 1 = (x − 1)(x + 1) en exemple.",
+   "Le cadre orange est l'étape qui porte le poids : f(u) et h(u) sont non nuls.",
+   "Les barres montrent les degrés : g a degré 2, f et h degré 1, plus courts que g.",
+   "Le cadre vert est l'arrivée : f(u)h(u) = 0."
+  ],
+  "a_voir": "Les barres grises, plus courtes que la bleue, expliquent l'étape orange."
+ },
+ {
+  "code": "54-192",
+  "a_dire": "Dans ℚ[√2], on trouve l'inverse d'un élément en changeant le signe devant √2 : le produit vaut 1.",
+  "legende_titre": "Un inverse par changement de signe",
+  "lecture": [
+   "Dans la première ligne, 1 + √2 (bleu) multiplié par √2 − 1 (violet) donne 1, car 2 − 1 = 1.",
+   "Dans la seconde, 3 + 2√2 multiplié par 3 − 2√2 donne 1, car 9 − 8 = 1.",
+   "Les cadres verts sont le résultat 1."
+  ],
+  "a_voir": "Chaque nombre du couple est l'inverse de l'autre."
+ },
+ {
+  "code": "54-193",
+  "a_dire": "(p) est maximal si et seulement si p est irréductible : si p se casse, un idéal s'intercale ; sinon rien ne s'intercale.",
+  "legende_titre": "Un idéal entre (p) et l'anneau, ou rien",
+  "lecture": [
+   "À gauche, x² − 1 se casse : le cadre orange (x − 1) s'intercale entre (x² − 1) et ℝ[x].",
+   "À droite, x² + 1 est irréductible : la longue flèche va directement de (x² + 1) à ℝ[x].",
+   "On lit « pas maximal » à gauche et « maximal » à droite."
+  ],
+  "a_voir": "Il y a un cadre au milieu à gauche et rien au milieu à droite."
+ },
+ {
+  "code": "54-194",
+  "a_dire": "Si les coefficients ne forment pas un corps, l'équivalence tombe : dans ℤ[x], (x) n'est pas maximal bien que x soit irréductible.",
+  "legende_titre": "Sans corps, l'équivalence tombe",
+  "lecture": [
+   "Le cadre gris du haut est ℤ[x] tout entier ; le cadre bleu du bas est (x).",
+   "Le cadre orange, les combinaisons de 2 et x, s'intercale entre les deux.",
+   "À droite, ℤ[x]/(x) vaut ℤ, qui n'est pas un corps : 2 n'a pas d'inverse (texte rouge).",
+   "En bas : donc (x) n'est pas maximal."
+  ],
+  "a_voir": "Un idéal orange se glisse entre (x) et l'anneau."
+ },
+ {
+  "code": "54-195",
+  "a_dire": "Le signe (p) désigne la collection de tous les multiples de p.",
+  "legende_titre": "Un signe court pour les multiples",
+  "lecture": [
+   "Le cadre bleu du haut est le signe (p), lu « tous les multiples de p ».",
+   "Sur la droite graduée, pour p = 5, les ronds bleus sont les multiples de 5 : −10, −5, 0, 5, 10.",
+   "Le cadre orange du bas donne le cas p = x² + 1 : ses multiples sont (x² + 1) q."
+  ],
+  "a_voir": "Le même signe vaut pour un nombre et pour un polynôme."
+ },
+ {
+  "code": "54-196",
+  "a_dire": "Le signe F[x]/(p) désigne les classes de polynômes qui ont le même reste dans la division par p.",
+  "legende_titre": "Les restes modulo p",
+  "lecture": [
+   "À gauche, modulo 5 : 2, 7 et −3 sont dans la même classe, leurs écarts sont des multiples de 5.",
+   "À droite, modulo x² + 1 : x, x² + x + 1 et x³ + 2x sont dans la même classe, leurs écarts sont des multiples de x² + 1.",
+   "Les cadres verts sont le reste de chaque classe."
+  ],
+  "a_voir": "Chaque grand cadre est une classe, avec un reste en vert."
+ },
+ {
+  "code": "54-197",
+  "a_dire": "Un idéal est maximal quand rien ne se glisse entre lui et l'anneau entier : (5) l'est dans ℤ, (6) ne l'est pas.",
+  "legende_titre": "Rien entre l'idéal et l'anneau",
+  "lecture": [
+   "Chaque ligne montre les nombres de 0 à 12 ; les gros ronds sont les multiples du nombre de la ligne.",
+   "Les ronds de (6) sont aussi ronds de (3) : les multiples de 3 s'y glissent, donc (6) n'est pas maximal.",
+   "Les ronds de (5) ne sont ronds dans aucune ligne entre lui et ℤ : (5) est maximal."
+  ],
+  "a_voir": "La ligne (6) est contenue dans la ligne (3), pas la ligne (5)."
+ },
+ {
+  "code": "54-198",
+  "a_dire": "Chaque classe de F[x]/(p) contient un seul reste de degré plus petit que celui de p.",
+  "legende_titre": "Un seul reste par classe",
+  "lecture": [
+   "Chaque cadre en tirets bleus est une classe : les polynômes qui ont le même reste dans la division par x² + 1.",
+   "Dans la classe de 0, x³ + x donne le reste 0. Dans la classe de 3x + 1, x² + 3x + 2 donne le reste 3x + 1.",
+   "Chaque flèche orange est la division par x² + 1. Les deux restes verts sont de degré inférieur à 2.",
+   "Chaque classe a un seul reste vert."
+  ],
+  "a_voir": "Dans chaque classe, un seul reste a un degré plus petit que 2."
+ },
+ {
+  "code": "54-199",
+  "a_dire": "Un idéal I contenant (p), avec p irréductible, est égal à l'anneau ou à (p), car son générateur f divise p.",
+  "legende_titre": "Deux cas seulement pour I",
+  "lecture": [
+   "Le cadre bleu du haut : I contient (x² + 1).",
+   "Le cadre orange : comme l'anneau est principal, I = (f), et f divise x² + 1.",
+   "Les deux flèches vont aux deux seuls cas : f constante donne tout l'anneau, f = x² + 1 donne I = (x² + 1).",
+   "Les cadres verts sont ces deux arrivées."
+  ],
+  "a_voir": "Il n'y a que deux flèches : pas de troisième cas."
+ },
+ {
+  "code": "54-200",
+  "a_dire": "Si p se casse en fg, (f) se place strictement entre (p) et l'anneau, donc (p) n'est pas maximal.",
+  "legende_titre": "Trois vérifications pour (f)",
+  "lecture": [
+   "Le cadre bleu est (x² − 1), le cadre orange (x − 1) et le cadre gris ℝ[x].",
+   "La première flèche porte ⊆ : (x² − 1) est inclus dans (x − 1).",
+   "La seconde porte ⊂ : (x − 1) est strictement dans ℝ[x].",
+   "Les trois lignes vertes donnent les trois vérifications : inclus, strict, pas tout."
+  ],
+  "a_voir": "Le cadre orange est entre les deux autres."
+ },
+ {
+  "code": "54-201",
+  "a_dire": "Dans ℝ[x]/(x² + 1), la classe de x multipliée par elle-même vaut −1 : elle se comporte comme i.",
+  "legende_titre": "La classe de x se comporte comme i",
+  "lecture": [
+   "Les points sont placés par leurs coefficients a et b dans a + bx.",
+   "Le point gris est 1, le point bleu est la classe de x, le point vert est −1.",
+   "Chaque flèche orange est une multiplication par x : de 1 à x, puis de x à −1.",
+   "Le texte du bas dit pourquoi : x² = (x² + 1) − 1, le reste est −1."
+  ],
+  "a_voir": "Multiplier deux fois par x mène de 1 à −1."
+ },
+ {
+  "code": "54-202",
+  "a_dire": "Si p se casse en fg, les classes de f et g sont non nulles mais leur produit est la classe de p, c'est-à-dire 0 : le quotient n'est pas intègre.",
+  "legende_titre": "Deux classes non nulles de produit nul",
+  "lecture": [
+   "Le grand cadre vert est la classe de 0 : les multiples de x² − 1 ; x² − 1 est dedans.",
+   "Les cadres orange x − 1 et x + 1 sont hors de ce cadre : ils sont non nuls.",
+   "Les flèches orange les multiplient et arrivent sur x² − 1, qui est dans la classe de 0.",
+   "Le cadre rouge dit le résultat : deux non nuls, produit nul."
+  ],
+  "a_voir": "Deux éléments hors de la classe de 0 se multiplient pour y entrer."
+ },
+ {
+  "code": "54-203",
+  "a_dire": "Les restes a + bx + cx² avec a, b, c pris parmi 0, 1, 2 sont au nombre de 3 × 3 × 3 = 27.",
+  "legende_titre": "Compter les restes",
+  "lecture": [
+   "Chaque petit cube est un reste a + bx + cx².",
+   "Le cube a trois directions : a vers la droite, b vers la gauche, c vers le haut ; chacune a 3 valeurs, 0, 1 ou 2.",
+   "En bas : 3 × 3 × 3 = 27 restes."
+  ],
+  "a_voir": "Le grand cube a 3 cubes par côté, donc 27 cubes."
+ }
+]

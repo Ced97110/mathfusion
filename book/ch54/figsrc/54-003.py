@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, 'degré de ce que l’on obtient', 'encre', 's')
+f = numberline(ax, 12, 64, 36, 0, 4, 1, labels=True, arrow_right=True, size='s')
+box(ax, f(1) - 1.5, 42, f(4) - f(1) + 6, 9, 'sujet', label=r'$x\times P$ : degré $\geq1$', size='s')
+disc(ax, f(0), 36, 1.6, 'limite', fill=False)
+text(ax, f(0), 46, r'$1$', 'limite', 'm')
+text(ax, f(0) + 0.5, 54, 'degré 0', 'limite', 's')
+line(ax, [(f(0), 48.5), (f(0), 52)], 'limite')
+text(ax, 44, 22, r'$P=1$ : $x\times1=x$ (degré 1)', 'fixe', 's')
+text(ax, 44, 14, r'$P=x$ : $x\times x=x^2$ (degré 2)', 'fixe', 's')
+text(ax, 44, 6, 'aucun produit n’a le degré 0', 'limite', 's')
+save(fig, '54-003')
