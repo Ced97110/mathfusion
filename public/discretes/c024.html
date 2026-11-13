@@ -1,14 +1,21 @@
-<div class="pk">Chapitre 24</div>
-<h1>La coloration</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 24</div>
+<h1 class="ct">La coloration</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 23, on se demandait si un graphe peut se dessiner sans croisement. Ici, on attribue une couleur à chaque sommet, avec une seule contrainte : deux sommets reliés par une arête n’ont jamais la même couleur. La question devient : combien de couleurs faut-il au minimum ? Cette question vient des cartes de géographie. Elle sert aussi à construire des emplois du temps, à répartir des fréquences radio ou à organiser un tournoi.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 24 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>La carte d’Euléria</h3>
 <p>Euléria est un pays imaginaire. Il est découpé en 9 duchés, nommés <span class="m">𝐴</span> à <span class="m">𝐼</span> sur la figure 24.1. Les cartographes veulent colorier chaque duché. Deux duchés qui ont une frontière commune doivent recevoir des couleurs différentes. Deux duchés éloignés peuvent recevoir la même couleur. Combien de couleurs faut-il au minimum ?</p>
 <img class="vm" src="/discretes/img/c024/p0774_1.svg" alt="A B G C D E F H I" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>24.1 :</b> Regarde les traits épais : ce sont les frontières. Le duché</i> <span class="m">𝐷</span><i>, au centre, touche cinq duchés :</i> <span class="m">𝐴</span><i>,</i> <span class="m">𝐵</span><i>,</i> <span class="m">𝐸</span><i>,</i> <span class="m">𝐹</span> <i>et</i> <span class="m">𝐶</span><i>. Ces cinq duchés forment un anneau autour de</i> <span class="m">𝐷</span><i>.</i></p>
 <p>Cherche avant de lire la suite. Commence par une borne basse. Les duchés <span class="m">𝐴</span>, <span class="m">𝐵</span> et <span class="m">𝐷</span> se touchent deux à deux : <span class="m">𝐴</span> touche <span class="m">𝐵</span>, <span class="m">𝐴</span> touche <span class="m">𝐷</span>, <span class="m">𝐵</span> touche <span class="m">𝐷</span>. Ces trois duchés exigent trois couleurs différentes. Il faut donc au moins 3 couleurs. Est-ce que 3 suffisent ?</p>
 <p>Les vrais cartographes utilisent souvent environ sept couleurs. L’eau doit avoir sa couleur propre, et avec beaucoup de couleurs il est plus facile de trouver un coloriage permis. La question mathématique est différente : existe-t-il un nombre de couleurs qui suffit pour <i>toutes</i> les cartes, quelles qu’elles soient ?</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 24 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>De la carte au graphe</h3>
 <p>Regarde la figure 24.2. On a placé un point dans chaque duché : sa capitale. On a relié deux capitales par une arête quand leurs duchés ont une frontière commune. On obtient un graphe à 9 sommets et 16 arêtes.</p>
 <img class="vm" src="/discretes/img/c024/p0775_2.svg" alt="A 1 B 2 G 3 D 4 E 1 C F 3 2 H I 1 3" style="--w:24.12" loading="lazy">
@@ -16,7 +23,8 @@
 <p>Colorier les duchés revient à colorier les sommets du graphe. La règle « deux duchés voisins ont des couleurs différentes » devient « les deux extrémités d’une arête ont des couleurs différentes ». Le graphe garde toute l’information utile. La forme des duchés et la longueur des frontières ne comptent plus.</p>
 <p>Lis le coloriage de la figure. Chaque sommet porte un numéro de couleur : 1 (bleu), 2 (rouge), 3 (vert), 4 (orange). Vérifie quelques arêtes : <span class="m">𝐴</span>–<span class="m">𝐵</span> porte 1 et 2, <span class="m">𝐵</span>–<span class="m">𝐸</span> porte 2 et 1, <span class="m">𝐸</span>–<span class="m">𝐺</span> porte 1 et 3. Les 16 arêtes passent ce test. Quatre couleurs suffisent donc.</p>
 <p>Pourquoi trois ne suffisent pas ? Suis l’anneau autour de <span class="m">𝐷</span> : <span class="m">𝐴</span>, <span class="m">𝐵</span>, <span class="m">𝐸</span>, <span class="m">𝐹</span>, <span class="m">𝐶</span>, puis retour à <span class="m">𝐴</span>. C’est un cycle de 5 sommets. Essaie de le colorier avec deux couleurs seulement. Les couleurs doivent alterner : <span class="m">𝐴</span> reçoit 1, <span class="m">𝐵</span> reçoit 2, <span class="m">𝐸</span> reçoit 1, <span class="m">𝐹</span> reçoit 2, <span class="m">𝐶</span> reçoit 1. Mais <span class="m">𝐶</span> touche <span class="m">𝐴</span>, qui a aussi la couleur 1. L’alternance échoue, car le cycle a un nombre impair de sommets. L’anneau utilise donc au moins 3 couleurs. Or <span class="m">𝐷</span> touche les cinq duchés de l’anneau. Il lui faut une couleur absente de l’anneau : une quatrième. La carte d’Euléria exige exactement 4 couleurs.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 24 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c024/p0777_3.svg" alt="Définition : coloration, nombre chromatique Soit 𝐺 un graphe. Une coloration des sommets de 𝐺 attribue une couleur à chaque sommet. La coloration est propre si deux sommets adjacents ont toujours des couleurs différentes. Le nombre chromatique de 𝐺, noté 𝜒(𝐺), est le plus petit nombre de couleurs qui permet une coloration propre de 𝐺." style="--w:24.19" loading="lazy">
 <p>Tout graphe a une coloration propre : il suffit de donner une couleur différente à chaque sommet. La question intéressante est de faire mieux. Les couleurs ne sont que des étiquettes. On peut les remplacer par des numéros 1, 2, 3, et ainsi de suite, comme sur la figure 24.2.</p>
 <img class="vm" src="/discretes/img/c024/p0777_4.svg" alt="Définition : clique, nombre de clique Une clique est un ensemble de sommets tous adjacents deux à deux. Une clique de 𝑛 sommets est une copie du graphe complet 𝐾𝑛 à l’intérieur de 𝐺. Le nombre de clique de 𝐺, noté ici 𝜔(𝐺), est le plus grand 𝑛 tel que 𝐺 contient une clique de 𝑛 sommets." style="--w:24.19" loading="lazy">
@@ -39,7 +47,8 @@
 <p>Pour Euléria : <span class="m">Δ = 5</span>, donc <span class="m">𝜒 ≤ 6</span>. Avec la borne par la clique, on sait déjà que <span class="m">3 ≤ 𝜒 ≤</span> <span class="m">6</span>. La vraie valeur, 4, est entre les deux.</p>
 <img class="vm" src="/discretes/img/c024/p0782_14.svg" alt="Ton objection Tu vas me dire : « Le coloriage glouton donne une coloration propre. Pourquoi ne donne-t-il pas directement 𝜒(𝐺) ? » Parce qu’il utilise la première couleur libre, sans prévoir la suite. Prends le chemin 𝑎–𝑏–𝑐–𝑑 et colorie dans l’ordre 𝑎, 𝑑, 𝑏, 𝑐. Le sommet 𝑎 prend 1. Le sommet 𝑑 n’a aucun voisin colorié : il prend 1. Le sommet 𝑏 touche 𝑎 : il prend 2. Le sommet 𝑐 touche 𝑏 (couleur 2) et 𝑑 (couleur 1) : il prend 3. Or ce chemin est biparti : 2 couleurs suffisent. Le glouton garantit la borne Δ + 1, pas le minimum." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c024/p0782_15.svg" alt="" style="--w:24.19" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 24 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Trois graphes, trois nombres chromatiques</h3>
 <p>Levin propose de trouver le nombre chromatique des trois graphes de la figure 24.4.</p>
 <img class="vm" src="/discretes/img/c024/p0783_16.svg" alt="K6 : 6 couleurs 3 couleurs K2, 3 : 2 couleurs 1 2 1 2 2 6 3 3 2 1 1 1 5 4 2 1 3" style="--w:24.12" loading="lazy">
@@ -124,9 +133,12 @@
 <p>Pour <span class="m">𝐾</span><sub>5</sub>, oui. Colorie en rouge le tour du pentagone <span class="m">𝑃</span>, <span class="m">𝑄</span>, <span class="m">𝑅</span>, <span class="m">𝑆</span>, <span class="m">𝑇</span>, et en bleu les cinq diagonales (figure 24.8, à gauche). Un triangle rouge utiliserait trois côtés du pentagone. Or, parmi trois sommets du pentagone, deux au moins ne sont pas voisins sur le tour : un triangle rouge n’existe pas. Un triangle bleu utiliserait trois diagonales. Les diagonales forment une étoile à cinq branches, qui est un seul cycle de 5 sommets, sans triangle.</p>
 <p>Pour <span class="m">𝐾</span><sub>6</sub>, non. Prends un sommet <span class="m">𝑢</span>. Il a 5 arêtes, chacune rouge ou bleue. Si au plus 2 étaient rouges et au plus 2 bleues, il n’y en aurait que 4. Donc au moins 3 ont la même couleur, disons rouge, vers <span class="m">𝑥</span>, <span class="m">𝑦</span>, <span class="m">𝑧</span>. C’est le principe des tiroirs : 5 objets dans 2 tiroirs, l’un en reçoit au moins 3. Regarde alors les trois arêtes <span class="m">𝑥𝑦</span>, <span class="m">𝑦𝑧</span>, <span class="m">𝑥𝑧</span>. Si l’une d’elles est rouge, elle forme avec <span class="m">𝑢</span> un triangle rouge. Sinon, les trois sont bleues, et <span class="m">𝑥</span>, <span class="m">𝑦</span>, <span class="m">𝑧</span> forment un triangle bleu. Dans les deux cas, un triangle monochrome existe.</p>
 <p>On peut étendre la question. Avec trois couleurs, il faut aller jusqu’à <span class="m">𝐾</span><sub>17</sub> pour forcer un triangle monochrome. Avec plus de couleurs, personne ne connaît la réponse. Avec deux couleurs, <span class="m">𝐾</span><sub>18</sub> est le plus petit graphe complet qui force un <span class="m">𝐾</span><sub>4</sub> monochrome. Pour forcer un <span class="m">𝐾</span><sub>5</sub> monochrome, on sait seulement que la réponse est entre <span class="m">𝐾</span><sub>43</sub> et <span class="m">𝐾</span><sub>49</sub> (chiffres de Levin ; en 2024, un calcul par ordinateur a abaissé la borne haute à <span class="m">𝐾</span><sub>46</sub>). Ce domaine s’appelle la théorie de Ramsey.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 24 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>La coloration réunit plusieurs chapitres. Les graphes bipartis du chapitre 21 sont exactement ceux qui se colorient avec 2 couleurs. Un arbre (chapitre 22) n’a aucun cycle, donc aucun cycle impair : on peut montrer qu’il est biparti, et <span class="m">𝜒 = 2</span> dès qu’il a une arête. Les cartes mènent aux graphes planaires du chapitre 23. Une coloration propre découpe aussi l’ensemble des sommets en groupes disjoints, un par couleur, au sens des ensembles du chapitre 5.</p>
 <p>Au chapitre 26, on étudiera les couplages : des ensembles d’arêtes sans extrémité commune. Chaque heure du tournoi d’échecs est un couplage. Une coloration propre des arêtes est donc un découpage des arêtes en couplages. Le théorème de König sur les graphes bipartis, cité plus haut, s’y rattache directement.</p>
 <p>Au chapitre 25, on parcourra les arêtes d’un graphe. Là encore, la parité des degrés décidera, comme la parité de la longueur d’un cycle a décidé ici entre 2 et 3 couleurs.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 24 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c024/p0799_47.svg" alt="À toi de chercher La borne par la clique dit 𝜒(𝐺) ≥ 𝜔(𝐺). Le cycle 𝐶5 montre qu’un graphe sans triangle (𝜔 = 2) peut exiger 3 couleurs. Peut-on aller plus loin ? Existe-t-il un graphe sans aucun triangle qui exige 4 couleurs ? Et 5 ? Et autant qu’on veut ? Si oui, que reste-t-il de l’idée qu’un graphe exige beaucoup de couleurs parce qu’il contient beaucoup de sommets reliés deux à deux ? Qu’est-ce qui, à la place, force les couleurs ?" style="--w:24.19" loading="lazy">
+</div>
