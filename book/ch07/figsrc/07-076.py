@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 72, r'$\frac{5}{6} - \frac{1}{8} + \frac{7}{16}$', 'sujet', 'l')
+arrow(ax, (12, 63), (12, 49), 'varie')
+text(ax, 18, 56, 'dénominateur commun : 48', 'varie', 's', ha='left')
+text(ax, 44, 42, r'$\frac{40}{48} - \frac{6}{48} + \frac{21}{48}$', 'sujet', 'l')
+arrow(ax, (12, 33), (12, 19), 'varie')
+text(ax, 18, 26, '40 − 6 = 34 ; 34 + 21 = 55', 'varie', 's', ha='left')
+text(ax, 44, 11, r'$\frac{55}{48} = 1\frac{7}{48}$', 'resultat', 'l')
+save(fig, '07-076')

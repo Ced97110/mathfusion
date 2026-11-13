@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 20, 60, 'simple', 'fixe', 'm', weight='bold'); text(ax, 62, 60, 'complexe', 'sujet', 'm', weight='bold')
+text(ax, 20, 46, '12', 'fixe', 'l'); text(ax, 20, 26, '5', 'fixe', 'l')
+line(ax, [(12, 36), (28, 36)], 'fixe', lw=1.4)
+box(ax, 52, 42, 20, 10, 'varie'); text(ax, 62, 47, r'$\frac{1}{2}$', 'varie', 'l')
+box(ax, 52, 20, 20, 10, 'varie'); text(ax, 62, 25, r'$\frac{3}{4}$', 'varie', 'l')
+line(ax, [(44, 36), (80, 36)], 'sujet', lw=2.0)
+text(ax, 20, 10, 'haut et bas entiers', 'fixe', 's'); text(ax, 62, 10, 'haut et bas : fractions', 'varie', 's')
+save(fig, '07-063')

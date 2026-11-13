@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(100)
+cw = 14
+text(ax, 4, 88, 'R', 'sujet', 'l', weight='bold')
+for i in range(4): box(ax, 10 + i * cw, 83, cw, 9, 'sujet' if i < 3 else 'fixe', fill=i < 3, r=0.2)
+arrow(ax, (38, 81), (38, 72), 'varie')
+text(ax, 44, 76.5, r'on retire $\frac{3}{4}$', 'varie', 's', ha='left')
+for i in range(4): box(ax, 10 + i * cw, 62, cw, 9, 'fixe', fill=False, r=0.2)
+text(ax, 44, 54, r'$\frac{3}{4} - \frac{3}{4} = 0$', 'resultat', 'm')
+text(ax, 4, 30, 'S', 'autre', 'l', weight='bold')
+text(ax, 10 + 1.5 * cw, 41, r'$\frac{3}{4}$', 'sujet', 'm')
+text(ax, 10 + 4 * cw, 41, r'$+ \frac{2}{4}$', 'varie', 'm')
+for i in range(4): box(ax, 10 + i * cw, 26, cw, 9, 'varie' if i == 3 else ('sujet' if i < 3 else 'fixe'), fill=i >= 0, r=0.2)
+box(ax, 10 + 4 * cw, 26, cw, 9, 'varie', r=0.2)
+line(ax, [(10 + 4 * cw, 24), (10 + 4 * cw, 37)], 'fixe', dash=True)
+text(ax, 44, 17, r'$\frac{3}{4} + \frac{2}{4} = \frac{5}{4}$', 'resultat', 'm')
+text(ax, 44, 7, r'$\frac{5}{4} = 1\frac{1}{4}$ : plus que la barre', 'resultat', 'm')
+save(fig, '07-080')

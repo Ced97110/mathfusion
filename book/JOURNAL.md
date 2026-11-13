@@ -8,6 +8,7 @@
 | 2026-11-12 | 4 — Exposants, racines et ordre des opérations | 89 | 77 | 87 | 04-002, 04-041 |
 | 2026-11-12 | 5 — Nombres premiers, PGCD, PPCM | 187 | 176 | 185 | 05-068, 05-104 |
 | 2026-11-12 | 6 — Les fractions : définition, équivalence, multiplication, division | 89 | 86 | 88 | 06-015 (la condition « a, b entiers, b ≠ 0 » n'est pas lue) |
+| 2026-11-12 | 7 — Additionner, soustraire, comparer des fractions ; fractions complexes | 93 | 86 | 90 | 07-007 (on ne voit pas que les zones coloriées restent en place), 07-016 (la lettre a n'est pas nommée), 07-088 (l'expression (x+1)(x−1) n'est pas lue) |
 
 ## Remarques
 
@@ -15,3 +16,4 @@
 - Le livre dit que le point O est rouge ; les figures le dessinent en gris ou en bleu, car le rouge signifie « faux ».
 - Nombres ajoutés par un agent, absents de la fiche : 01-004 (« 4 329 + 10 »), 02-034 (52 et 27 repris pour la comparaison), 03-007 (groupes de 4), 03-009 (rectangle 6 × 4), 03-019 (426 places et 4 euros repris de 03-001).
 - Chapitre 6 : graduation « −1 » ajoutée par l'agent de correction sur 06-088, absente de la fiche (elle dit seulement « à gauche de 0 »). Aucune couleur du livre changée.
+- Chapitre 7 : 07-021 prend « 3/4 » (d = 4) dans une fiche voisine comme cas qui marche, absent de la fiche. 07-056 : traits de fin de zone en gris pointillé au lieu du rouge du livre (rôles de couleur). Chapitre fait dans la même session que le 6, à la demande de l'utilisateur.

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 87, r'$x=6$', 'fixe', 'l')
+box(ax, 2, 70, 28, 8, 'sujet', label=r'$x+1=7$'); box(ax, 38, 70, 28, 8, 'autre', label=r'$x-1=5$')
+arrow(ax, (16, 70), (22, 61), 'fixe'); arrow(ax, (52, 70), (46, 61), 'fixe')
+box(ax, 4, 52, 80, 9, 'resultat', label=r'dénominateur commun $(x+1)(x-1)=7\times5=35$', size='s')
+text(ax, 18, 42, r'$\frac{2}{7}$', 'sujet', 'l'); text(ax, 58, 42, r'$\frac{3}{5}$', 'autre', 'l')
+arrow(ax, (18, 36), (18, 26), 'varie'); text(ax, 22, 31, '$\\times 5$\n$(x-1)$', 'autre', 's', ha='left')
+arrow(ax, (58, 36), (58, 26), 'varie'); text(ax, 62, 31, '$\\times 7$\n$(x+1)$', 'sujet', 's', ha='left')
+text(ax, 16, 16, r'$\frac{10}{35}$', 'sujet', 'l'); text(ax, 36, 16, '+', 'fixe', 'l')
+text(ax, 56, 16, r'$\frac{21}{35}$', 'autre', 'l'); text(ax, 68, 16, '=', 'fixe', 'l')
+text(ax, 79, 16, r'$\frac{31}{35}$', 'resultat', 'l', weight='bold')
+save(fig, '07-088')
