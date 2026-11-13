@@ -1,8 +1,14 @@
-<div class="pk">Chapitre 11</div>
-<h1>Étoiles et barres</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 11</div>
+<h1 class="ct">Étoiles et barres</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <img class="vm" src="/discretes/img/c011/p0335_1.svg" alt="Étoiles et barres" style="--w:24.12" loading="lazy">
 <p>Jusqu’ici, tu as compté des objets que l’on peut distinguer. Des lettres dans un mot. Des personnes dans un comité. Des chemises et des pantalons. Dans ce chapitre, les objets sont identiques. Ce sont des biscuits, des cubes, des boules de glace. Seul compte le nombre d’objets que reçoit chaque destinataire. Cette différence change la manière de compter. Tu vas voir qu’un dessin très simple, fait d’étoiles et de barres, ramène ces problèmes à un problème déjà résolu au chapitre 8.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 11 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Des cubes à partager</h3>
 <p>Tu as des cubes identiques. Tu veux les donner à des amis. Un ami peut ne rien recevoir. Deux partages sont différents si au moins un ami ne reçoit pas le même nombre de cubes dans les deux.</p>
 <p>Commence petit. Tu as 3 cubes et 2 amis. Note <span class="m">(𝑎, 𝑏)</span> le partage où le premier ami reçoit <span class="m">𝑎</span> cubes et le second <span class="m">𝑏</span> cubes. Le premier peut recevoir 3, 2, 1 ou 0 cubes. Une fois ce nombre fixé, le second reçoit le reste. Il n’a pas de choix. Tu obtiens donc 4 partages :</p>
@@ -31,7 +37,8 @@
 <h3>Une deuxième tentative</h3>
 <p>Décris un partage par les quatre parts, dans l’ordre A, B, C, D. Par exemple, <span class="m">3112</span> veut dire : A reçoit 3 biscuits, B reçoit 1 biscuit, C reçoit 1 biscuit, D reçoit 2 biscuits. Ici l’ordre des chiffres compte. Le mot <span class="m">1312</span> décrit un autre partage, car A reçoit alors 1 biscuit et non 3.</p>
 <p>Chaque chiffre vaut entre 0 et 7, soit 8 valeurs. Cela fait <span class="m">8</span><sup>4</sup> <span class="m">= 4 096</span> mots. Mais le mot <span class="m">7777</span> donnerait 28 biscuits. Il faut que la <i>somme</i> des chiffres vaille 7. Compter ces mots, c’est le problème de départ. Tu n’as pas avancé. Il faut une autre écriture.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 11 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c011/p0339_6.svg" alt="1. Les parts (A, B, C, D) A B C D 3 1 1 2 2. Biscuit par biscuit (dans l&#x27;ordre du don) 1 2 3 4 5 6 7 A B A A D C D 3. Les mêmes lettres, triées A A A B C D D 4. Étoiles et barres : 7 étoiles, 3 barres A B C D" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>11.1 :</b> Quatre écritures du même partage. Regarde la ligne 2 : chaque biscuit porte la lettre de l’enfant qui le reçoit. Regarde la ligne 3 : les mêmes lettres triées. Regarde la ligne 4 : une étoile par biscuit, une barre à chaque passage d’un enfant au suivant. Les quatre lignes disent toutes : A reçoit 3, B reçoit 1, C reçoit 1, D reçoit 2.</i></p>
 <h3>Lire la figure ligne par ligne</h3>
@@ -68,7 +75,8 @@
 <img class="vm" src="/discretes/img/c011/p0345_17.svg" alt="(0, 2, 1) (2, 0, 1)" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0345_18.svg" alt="(0, 3, 0) (2, 1, 0)" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0345_19.svg" alt="(1, 0, 2) (3, 0, 0) parts (A, B, C) Fig. 11.4 : Les 10 diagrammes de 3 étoiles et 2 barres, avec le partage (𝑎, 𝑏, 𝑐) que chacun donne. Regarde la colonne de droite des parts : tu y retrouves exactement les 10 partages listés dans le problème, chacun une seule fois." style="--w:24.12" loading="lazy">
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 11 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c011/p0345_20.svg" alt="Définition : répartition et diagramme Soit 𝑘 un entier naturel et 𝑛 un entier au moins égal à 1. Une répartition de 𝑘 objets identiques entre 𝑛 destinataires distincts est une suite de 𝑛 entiers naturels (𝑥1, 𝑥2, … , 𝑥𝑛) dont la somme vaut 𝑘 : 𝑥1 + 𝑥2 + ⋯ + 𝑥𝑛 = 𝑘. Le nombre 𝑥𝑖 est la part du destinataire numéro 𝑖." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0346_21.svg" alt="Le diagramme d’étoiles et de barres de cette répartition est le mot formé de 𝑥1 étoiles, une barre, 𝑥2 étoiles, une barre, …, une barre, 𝑥 étoiles. Il contient 𝑘 𝑛 étoiles et 𝑛 − 1 barres. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0346_22.svg" alt="𝑘 Le nombre d’objets identiques. Pour les biscuits, 𝑘 = 7. 𝑛 Le nombre de destinataires. Pour les enfants, 𝑛 = 4. 𝑥𝑖 Se lit « 𝑥 indice 𝑖 ». C’est la part du destinataire numéro 𝑖. Dans le partage ★★★ | ★ | ★ | ★★, 𝑥1 = 3, 𝑥2 = 1, 𝑥3 = 1, 𝑥4 = 2. … « Et ainsi de suite jusqu’au dernier. » Avec 𝑛 = 4, 𝑥1 + ⋯ + 𝑥𝑛 veut dire 𝑥1 + 𝑥2 + 𝑥3 + 𝑥4. 𝑛 − 1 Le nombre de barres, une par passage d’un destinataire au suivant. Ici 4 − 1 = 3. 𝑘 + 𝑛 − 1 Le nombre total de symboles du" style="--w:24.19" loading="lazy">
@@ -106,7 +114,8 @@
 <img class="vf" src="/discretes/img/c011/p0353_43.svg" alt="" style="--w:24.12" loading="lazy">
 <p>première règle. Avec <span class="m">𝑘 = 0</span> objet, elle donne <span class="m">(</span><sup>𝑛−1</sup><sub>𝑛−1</sub><span class="m">) = 1</span> : le seul partage est « personne ne reçoit rien », et son diagramme est fait des <span class="m">𝑛 − 1</span> barres seules. Avec <span class="m">𝑛 = 1</span> destinataire, elle donne <span class="m">(</span><sup>𝑘</sup><sub>0</sub><span class="m">) = 1</span> : il n’y a aucune barre, et le seul destinataire reçoit tout.</p>
 <img class="vf" src="/discretes/img/c011/p0353_44.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 11 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Retour aux cubes : au moins un chacun</h3>
 <p>L’activité de départ posait aussi cette question : que deviennent les nombres si chaque ami doit recevoir au moins un cube ? La règle « au moins un » répond.</p>
 <img class="vm" src="/discretes/img/c011/p0353_45.svg" alt="3 cubes 4 cubes 5 cubes 2 amis (21) = 2 (31) = 3 (41) = 4 3 amis (22) = 1 (32) = 3 (42) = 6" style="--w:24.12" loading="lazy">
@@ -179,7 +188,8 @@
 <img class="vf" src="/discretes/img/c011/p0364_70.svg" alt="" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c011/p0365_71.svg" alt="" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0365_72.svg" alt="Un partage peut provenir de 1 fonction ou de 420 fonctions. Aucun diviseur unique ne peut passer de 47 à 120. C’est pourquoi il faut une méthode nouvelle : les étoiles et les barres." style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 11 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Tu sais maintenant compter les répartitions d’objets identiques, avec ou sans minimum par destinataire. Voici où cela mène.</p>
 <h3>Vers une limite par le haut (chapitre 12).</h3>
 <p>Tu sais imposer « au moins 2 biscuits chacun » : il suffit de donner 2 biscuits d’office. Mais comment imposer « au plus 4 biscuits chacun » ? Donner d’office ne marche plus. Le chapitre 12 répondra en combinant les étoiles et les barres avec le principe d’inclusion-exclusion du chapitre 7.</p>
@@ -190,6 +200,8 @@
 <img class="vm" src="/discretes/img/c011/p0366_74.svg" alt="Ce sont les nombres triangulaires du chapitre 14. La deuxième ligne du tableau du problème (10, 15, 21) en faisait partie. Au chapitre 16, tu verras que leurs différences successives deviennent constantes au deuxième étage. Cela vient du 𝑘+2 (𝑘+2)(𝑘+1) fait que ( 2 ) = est un polynôme 2 de degré 2 en 𝑘. Avec 𝑛 destinataires, (𝑘+𝑛−1𝑛−1 ) est un polynôme de degré 𝑛 − 1 en 𝑘." style="--w:24.12" loading="lazy">
 <h3>Vers les fonctions génératrices</h3>
 <p><b>(chapitre 27).</b> Un destinataire peut recevoir 0, 1, 2, 3, … objets. Au chapitre 27, tu coderas ces possibilités par l’expression <span class="m">1 + 𝑥 + 𝑥</span><sup>2</sup> <span class="m">+ 𝑥</span><sup>3</sup> <span class="m">+ ⋯</span>. Avec <span class="m">𝑛</span> destinataires, tu multiplieras <span class="m">𝑛</span> expressions de ce type. Le nombre placé devant <span class="m">𝑥</span><sup>𝑘</sup> dans le produit sera exactement <span class="m">(</span><sup>𝑘+𝑛−1</sup><sub>𝑛−1</sub> <span class="m">)</span>. Une limite « au plus 4 » se codera en arrêtant l’expression à <span class="m">𝑥</span><sup>4</sup> .</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 11 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c011/p0367_75.svg" alt="À toi de chercher Dans tout ce chapitre, les objets étaient identiques et les destinataires étaient distincts. Les barres servaient justement à dire « ici commence la part du destinataire suivant ». Imagine maintenant que les destinataires soient aussi identiques. Tu ranges 7 biscuits identiques dans 4 sacs identiques, sans étiquette. Seule compte la liste des tailles des tas, sans dire à qui appartient" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c011/p0367_76.svg" alt="chaque tas. Ainsi (3, 1, 1, 2) et (2, 1, 3, 1) deviennent le même rangement. Combien de diagrammes d’étoiles et de barres correspondent alors à un même rangement ? Ce nombre est-il le même pour tous les rangements ? Que t’apprend ta réponse sur la possibilité de trouver 𝑘+𝑛−1 une formule aussi simple que ( 𝑛−1 ) pour ce nouveau problème ?" style="--w:24.19" loading="lazy">
+</div>
