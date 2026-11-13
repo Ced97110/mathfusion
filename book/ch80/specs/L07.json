@@ -1,0 +1,267 @@
+[
+ {
+  "code": "80-145",
+  "a_dire": "Pour chaque a, il existe un complément a′ : réunion = I, partie commune = O.",
+  "legende_titre": "Un complément pour chaque partie",
+  "lecture": [
+   "La case bleue contient la partie a de 1 seul.",
+   "La case orange contient son complément, 2 et 3.",
+   "Les deux cases vertes disent ce que donnent leur réunion et leur partie commune."
+  ],
+  "a_voir": "Ensemble : a et a′ le remplissent sans rien en commun."
+ },
+ {
+  "code": "80-146",
+  "a_dire": "O est l'élément qui ne change rien avec ∨, noté 0, le plus petit.",
+  "legende_titre": "Le signe O, élément qui ne change rien",
+  "lecture": [
+   "La case bleue du haut écrit a ∨ O = a.",
+   "La case de gauche donne O dans les parties : la partie vide.",
+   "La case de droite donne O dans les circuits : un fil coupé."
+  ],
+  "a_voir": "O ne change rien et prend un exemple dans chaque algèbre."
+ },
+ {
+  "code": "80-147",
+  "a_dire": "I est l'élément qui ne change rien avec ∧, noté 1, le plus grand.",
+  "legende_titre": "Le signe I, un seul caractère",
+  "lecture": [
+   "La case bleue du haut écrit a ∧ I = a.",
+   "La case de gauche donne I dans les parties : l'ensemble entier.",
+   "La case de droite donne I dans les circuits : un simple fil."
+  ],
+  "a_voir": "I est neutre pour ∧ et prend un exemple dans chaque algèbre."
+ },
+ {
+  "code": "80-148",
+  "a_dire": "A1 à A5 sont des noms courts pour citer les cinq axiomes.",
+  "legende_titre": "Cinq noms pour cinq règles",
+  "lecture": [
+   "Chaque case bleue porte un nom, de A1 à A5.",
+   "La flèche orange relie chaque nom à la règle qu'il désigne.",
+   "La ligne du bas montre l'emploi : « par A3 »."
+  ],
+  "a_voir": "Chaque nom court remplace une règle entière."
+ },
+ {
+  "code": "80-149",
+  "a_dire": "A4 dans les parties : A ∪ ∅ = A et A ∩ S = A.",
+  "legende_titre": "A4 lu dans les parties de 1, 2, 3",
+  "lecture": [
+   "La case bleue est la partie {1, 2}.",
+   "La case grise du milieu est le neutre : ∅ en haut, S en bas.",
+   "La case verte donne le résultat : {1, 2}, comme au départ."
+  ],
+  "a_voir": "Dans les deux lignes, le résultat est la partie de départ."
+ },
+ {
+  "code": "80-150",
+  "a_dire": "O joue le rôle de 0 et I celui de 1, avec ∨ comme + et ∧ comme ×.",
+  "legende_titre": "O et I comme 0 et 1",
+  "lecture": [
+   "Les cases bleues sont les égalités de l'algèbre de Boole.",
+   "Les cases violettes sont les égalités sur les nombres.",
+   "La double flèche orange relie les deux écritures qui se ressemblent."
+  ],
+  "a_voir": "Chaque égalité de gauche a son pendant sur les nombres."
+ },
+ {
+  "code": "80-151",
+  "a_dire": "Les axiomes ne contiennent ni a ∨ a = a, ni un ordre.",
+  "legende_titre": "Ce que la liste ne dit pas",
+  "lecture": [
+   "La colonne grise est la liste A1 à A5.",
+   "Les deux cases violettes en pointillés sont absentes de la liste.",
+   "Elles sont vraies pourtant : elles se déduisent des cinq règles."
+  ],
+  "a_voir": "La liste est plus courte que l'ensemble des faits vrais."
+ },
+ {
+  "code": "80-152",
+  "a_dire": "a ∨ a = a se déduit des axiomes, pas après pas.",
+  "legende_titre": "Déduire a ∨ a = a",
+  "lecture": [
+   "La case bleue du haut est le point de départ.",
+   "Chaque flèche orange nomme l'axiome utilisé.",
+   "La case verte du bas est l'arrivée : a."
+  ],
+  "a_voir": "Chaque pas cite un axiome de la liste et rien d'autre."
+ },
+ {
+  "code": "80-153",
+  "a_dire": "L'ordre a ≤ b quand a ∨ b = b a besoin de a ∨ a = a ; avec l'addition, 1 ≤ 1 est faux.",
+  "legende_titre": "Quand cet ordre échoue",
+  "lecture": [
+   "La ligne du haut rappelle la règle de l'ordre.",
+   "La colonne verte : pour les parties, A ∪ A = A, donc A ≤ A est vrai.",
+   "La colonne rouge : pour l'addition, 1 + 1 = 2, donc 1 ≤ 1 est faux."
+  ],
+  "a_voir": "Sans a ∨ a = a, la règle a ≤ a peut être fausse."
+ },
+ {
+  "code": "80-154",
+  "a_dire": "O est le plus petit élément, car O ∨ a = a donne O ≤ a.",
+  "legende_titre": "O est sous tous les éléments",
+  "lecture": [
+   "La case grise du haut est la règle de l'ordre.",
+   "La case bleue est A4 : O ∨ a = a.",
+   "La case verte lit cette égalité avec la règle : O ≤ a."
+  ],
+  "a_voir": "A4 se lit directement comme O ≤ a."
+ },
+ {
+  "code": "80-155",
+  "a_dire": "I est le plus grand élément, car a ∨ I = I donne a ≤ I.",
+  "legende_titre": "I est au-dessus de tous",
+  "lecture": [
+   "La case bleue du haut est a ∨ I.",
+   "Les cases grises sont les étapes, avec l'axiome ou la règle à chaque flèche.",
+   "La case verte finale donne I, donc a ≤ I."
+  ],
+  "a_voir": "Il faut trois règles pour passer de a ∨ I à I."
+ },
+ {
+  "code": "80-156",
+  "a_dire": "Un isomorphisme d'algèbres de Boole est une bijection φ qui respecte ∨ et ∧.",
+  "legende_titre": "Une bijection qui respecte deux opérations",
+  "lecture": [
+   "Les cases bleues sont les parties de S : ∅ et S.",
+   "Les cases violettes sont les nombres 0 et 1.",
+   "Les flèches orange φ les associent deux à deux.",
+   "Les deux cases vertes disent que φ respecte ∨ et ∧."
+  ],
+  "a_voir": "φ envoie chaque élément sur un seul autre et garde les deux opérations."
+ },
+ {
+  "code": "80-157",
+  "a_dire": "Un interrupteur est un élément qui a deux états : fermé ou ouvert.",
+  "legende_titre": "Le nom de l'élément entre pile et lampe",
+  "lecture": [
+   "La case grise est la pile, le cercle gris est la lampe.",
+   "L'élément bleu entre les deux est l'interrupteur.",
+   "En bas, vert : fermé ; gris : ouvert."
+  ],
+  "a_voir": "L'interrupteur n'a que deux états."
+ },
+ {
+  "code": "80-158",
+  "a_dire": "Fermé, le courant passe ; ouvert, il ne passe pas.",
+  "legende_titre": "Deux états seulement",
+  "lecture": [
+   "La ligne verte du haut montre l'interrupteur fermé : la lampe est allumée.",
+   "La ligne grise du bas montre l'interrupteur ouvert : la lampe est éteinte.",
+   "Il n'y a que ces deux lignes."
+  ],
+  "a_voir": "Un état à la fois, deux possibles."
+ },
+ {
+  "code": "80-159",
+  "a_dire": "Deux interrupteurs de même lettre a bougent ensemble.",
+  "legende_titre": "Deux interrupteurs a commandés ensemble",
+  "lecture": [
+   "Les deux interrupteurs portent la même lettre a.",
+   "La flèche orange dit qu'ils bougent ensemble.",
+   "En haut, tous deux fermés : le courant passe. En bas, tous deux ouverts : il est coupé."
+  ],
+  "a_voir": "Les deux a sont toujours dans le même état."
+ },
+ {
+  "code": "80-160",
+  "a_dire": "Le montage en série a un seul chemin à travers deux interrupteurs.",
+  "legende_titre": "Un seul chemin pour deux interrupteurs",
+  "lecture": [
+   "Le fil bleu va de la borne de départ à la borne d'arrivée.",
+   "Les deux interrupteurs a et b sont l'un après l'autre.",
+   "L'accolade orange rappelle qu'il n'y a qu'un chemin."
+  ],
+  "a_voir": "Le fil n'a pas d'autre passage que par a puis b."
+ },
+ {
+  "code": "80-161",
+  "a_dire": "La série laisse passer seulement si a et b sont fermés.",
+  "legende_titre": "Un interrupteur ouvert coupe tout",
+  "lecture": [
+   "Le fil vert est la partie où le courant passe : a est fermé.",
+   "L'interrupteur rouge est b, ouvert : le courant s'arrête.",
+   "Le fil gris en pointillés ne reçoit rien : la lampe est éteinte."
+  ],
+  "a_voir": "Un seul interrupteur ouvert suffit à couper."
+ },
+ {
+  "code": "80-162",
+  "a_dire": "a ∧ b est l'écriture courte du montage en série de a et b.",
+  "legende_titre": "Une écriture courte pour la série",
+  "lecture": [
+   "Le montage du haut est la série de a puis b.",
+   "La flèche orange dit qu'il se note avec les signes du dessous.",
+   "Les trois signes se lisent : premier interrupteur, en série, second."
+  ],
+  "a_voir": "Trois signes remplacent toute la phrase."
+ },
+ {
+  "code": "80-163",
+  "a_dire": "Le montage en parallèle donne deux chemins entre les mêmes bornes.",
+  "legende_titre": "Deux chemins entre deux bornes",
+  "lecture": [
+   "Le fil bleu part de la borne de départ et se sépare en deux branches.",
+   "La branche du haut porte a, celle du bas porte b.",
+   "Les deux branches se rejoignent à la borne d'arrivée."
+  ],
+  "a_voir": "Le courant a le choix entre deux branches."
+ },
+ {
+  "code": "80-164",
+  "a_dire": "Le parallèle laisse passer si a ou b est fermé.",
+  "legende_titre": "Une branche fermée suffit",
+  "lecture": [
+   "Le premier montage a seulement a fermé : la branche du haut est verte.",
+   "Le deuxième a seulement b fermé : la branche du bas est verte.",
+   "Le troisième a les deux ouverts : rien ne passe."
+  ],
+  "a_voir": "Dès qu'une branche est fermée, le courant passe."
+ },
+ {
+  "code": "80-165",
+  "a_dire": "a ∨ b se lit « a ou b » et note le montage en parallèle.",
+  "legende_titre": "Le signe du parallèle",
+  "lecture": [
+   "Le montage du haut est le parallèle de a et b.",
+   "La flèche orange dit qu'il se note avec les signes du dessous.",
+   "Les trois signes se lisent : une branche, ou, l'autre."
+  ],
+  "a_voir": "Le signe ∨ se lit « ou »."
+ },
+ {
+  "code": "80-166",
+  "a_dire": "Fermé se code 1 et ouvert se code 0.",
+  "legende_titre": "Un nombre pour chaque état",
+  "lecture": [
+   "Le fil vert fermé devient la case verte 1.",
+   "Le fil gris ouvert devient la case grise 0.",
+   "Dans le cas du bas, a est fermé et b ouvert : le couple est (1, 0)."
+  ],
+  "a_voir": "Chaque interrupteur devient 1 ou 0."
+ },
+ {
+  "code": "80-167",
+  "a_dire": "La série vaut 1 seulement quand les deux valent 1 : c'est le « et », ∧.",
+  "legende_titre": "Les quatre positions de la série",
+  "lecture": [
+   "Chaque ligne montre deux interrupteurs en série dans une position.",
+   "La case de droite écrit le résultat avec les codes 1 et 0.",
+   "Seule la première ligne, verte, donne 1."
+  ],
+  "a_voir": "Une seule position sur quatre donne 1."
+ },
+ {
+  "code": "80-168",
+  "a_dire": "Le parallèle vaut 1 dès qu'un des deux vaut 1 : le « ou », ∨.",
+  "legende_titre": "Les quatre positions du parallèle",
+  "lecture": [
+   "Chaque ligne montre deux branches dans une position.",
+   "La case de droite écrit le résultat avec les codes 1 et 0.",
+   "Trois lignes vertes donnent 1, dont celle où les deux sont fermés ; la note rouge dit qu'un « ou » exclusif refuserait ce cas."
+  ],
+  "a_voir": "Seule la position où les deux sont ouverts donne 0."
+ }
+]

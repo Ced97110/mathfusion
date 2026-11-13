@@ -1,0 +1,267 @@
+[
+ {
+  "code": "80-289",
+  "a_dire": "Les droites non parallèles se coupent en (0, 0) et le vecteur (0, 0, 1) touche l’écran.",
+  "legende_titre": "Un point d’intersection peut toucher l’écran",
+  "lecture": [
+   "À gauche, la droite bleue et la droite violette se croisent au point vert (0, 0).",
+   "À droite, la flèche orange est le vecteur (0, 0, 𝑡).",
+   "Elle monte jusqu’à l’écran 𝑧 = 1 et touche l’écran au point vert."
+  ],
+  "a_voir": "La flèche orange atteint l’écran : ce point n’a pas 𝑧 = 0."
+ },
+ {
+  "code": "80-290",
+  "a_dire": "« 0 = 1 » veut dire : aucun point d’intersection sur l’écran 𝑧 = 1.",
+  "legende_titre": "Aucun point sur l’écran, mais un vecteur commun",
+  "lecture": [
+   "La ligne grise du haut est l’écran 𝑧 = 1.",
+   "La flèche bleue (1, 1, 0) reste à 𝑧 = 0.",
+   "Elle est parallèle à l’écran et ne le touche jamais."
+  ],
+  "a_voir": "Le vecteur bleu existe mais n’atteint pas l’écran."
+ },
+ {
+  "code": "80-291",
+  "a_dire": "Le point (1, 1, 0) est la direction commune des droites de pente 1.",
+  "legende_titre": "Une direction, un point",
+  "lecture": [
+   "Les deux droites bleue et violette montent de la même façon.",
+   "La flèche orange avance de 1 et monte de 1.",
+   "Le rectangle vert donne le point (1, 1, 0) qui leur correspond."
+  ],
+  "a_voir": "Les deux droites de pente 1 ont la même flèche orange."
+ },
+ {
+  "code": "80-292",
+  "a_dire": "Des pentes différentes donnent des points à l’infini différents.",
+  "legende_titre": "Deux pentes, deux points",
+  "lecture": [
+   "En haut, une droite bleue de pente 1 et une droite violette de pente 2.",
+   "Elles ont deux cases différentes : (1, 1, 0) et (1, 2, 0).",
+   "En bas, deux droites de même pente 1 donnent la même case rouge."
+  ],
+  "a_voir": "Sans pentes différentes, les deux droites donnent le même point."
+ },
+ {
+  "code": "80-293",
+  "a_dire": "Tous les points à l’infini ont 𝑧 = 0 et sont dans le plan 𝑧 = 0, l’horizon.",
+  "legende_titre": "Tous les points à l’infini sont sur l’horizon",
+  "lecture": [
+   "Le losange vert est le plan 𝑧 = 0.",
+   "Chaque flèche bleue est une direction : (1, 0, 0), (1, 1, 0), (1, 2, 0) et (0, 1, 0).",
+   "Toutes restent dans le losange."
+  ],
+  "a_voir": "Chaque flèche reste dans le plan vert."
+ },
+ {
+  "code": "80-294",
+  "a_dire": "Les vecteurs à trois nombres pris dans 0 et 1 donnent 8 vecteurs, 7 non nuls, donc 7 points.",
+  "legende_titre": "Compter les points avec 0 et 1",
+  "lecture": [
+   "Les huit cases sont les huit vecteurs.",
+   "La case grise est le vecteur nul.",
+   "Les sept cases bleues sont les vecteurs non nuls : 7 points."
+  ],
+  "a_voir": "Huit cases moins la case grise donnent sept points."
+ },
+ {
+  "code": "80-295",
+  "a_dire": "Pour 𝑝 = 3, il y a 3 × 3 × 3 = 27 vecteurs et 26 non nuls.",
+  "legende_titre": "27 vecteurs, dont un nul",
+  "lecture": [
+   "Les trois grilles sont les trois valeurs de 𝑧 : 0, 1 et 2.",
+   "Chaque case est un vecteur ; il y en a 9 par grille.",
+   "La case grise est le vecteur nul (0, 0, 0)."
+  ],
+  "a_voir": "Vingt-sept cases, dont une grise qu’on retire."
+ },
+ {
+  "code": "80-296",
+  "a_dire": "Une droite vectorielle a 𝑝 − 1 vecteurs non nuls : 4 pour 𝑝 = 5.",
+  "legende_titre": "Les multiples non nuls d’un vecteur",
+  "lecture": [
+   "Chaque case orange est un nombre non nul qui multiplie 𝑣.",
+   "Chaque case bleue est le vecteur obtenu.",
+   "L’accolade verte réunit les 4 vecteurs, tous différents."
+  ],
+  "a_voir": "Quatre multiplicateurs donnent quatre vecteurs différents."
+ },
+ {
+  "code": "80-297",
+  "a_dire": "Le nombre de points est (𝑝³ − 1)/(𝑝 − 1) et aussi 𝑝² + 𝑝 + 1.",
+  "legende_titre": "Deux calculs, un même nombre",
+  "lecture": [
+   "Les cases bleues sont le calcul par division.",
+   "Les cases violettes sont la somme 𝑝² + 𝑝 + 1.",
+   "Le signe égal vert montre le même résultat : 7, 13, 31."
+  ],
+  "a_voir": "Pour 𝑝 = 2, 3 et 5, les deux côtés sont égaux."
+ },
+ {
+  "code": "80-298",
+  "a_dire": "Pour 𝑝 = 2, il y a 7 points : le plan de Fano.",
+  "legende_titre": "Le plan de Fano",
+  "lecture": [
+   "Chaque cercle bleu est un point, avec son vecteur.",
+   "Les côtés, les trois traits du milieu et le cercle sont les droites.",
+   "Il y a 7 points, un vecteur non nul chacun."
+  ],
+  "a_voir": "Sept points, chacun avec un seul vecteur non nul."
+ },
+ {
+  "code": "80-299",
+  "a_dire": "Une droite projective a 𝑝 + 1 points : 3 pour Fano.",
+  "legende_titre": "Trois points par droite",
+  "lecture": [
+   "Les quatre cases du haut sont les 4 vecteurs du plan.",
+   "La case grise, le vecteur nul, n’est pas un point.",
+   "Les trois cases bleues donnent les trois points sur la ligne orange."
+  ],
+  "a_voir": "Quatre vecteurs moins le nul donnent trois points."
+ },
+ {
+  "code": "80-300",
+  "a_dire": "En dimension 1, 𝐿(𝑉) = {0, 𝑉}.",
+  "legende_titre": "Deux sous-espaces seulement",
+  "lecture": [
+   "À gauche, la droite bleue est 𝑉 et le point gris est 0.",
+   "À droite, le cercle bleu est 𝑉 et le cercle gris est {0}.",
+   "Le trait relie les deux : il n’y en a pas d’autre."
+  ],
+  "a_voir": "Il n’y a que deux éléments : {0} et 𝑉."
+ },
+ {
+  "code": "80-301",
+  "a_dire": "En dimension 1, il y a un seul point et aucune droite.",
+  "legende_titre": "Un point, aucune droite",
+  "lecture": [
+   "La ligne bleue est 𝑉 et la flèche orange est le vecteur 𝑣.",
+   "Le cercle vert est l’unique point.",
+   "Le cadre rouge en pointillés est vide : aucune droite."
+  ],
+  "a_voir": "Un seul cercle vert et un cadre vide."
+ },
+ {
+  "code": "80-302",
+  "a_dire": "Le treillis à deux éléments est identique pour tous les corps.",
+  "legende_titre": "Le même treillis pour trois corps",
+  "lecture": [
+   "Trois cases en haut : ℚ en bleu, ℝ en violet, ℤ/2 en orange.",
+   "Sous chacune, le même dessin : 𝑉 au-dessus de 0.",
+   "Les corps ont des tailles différentes, pas les dessins."
+  ],
+  "a_voir": "Les trois dessins sont identiques."
+ },
+ {
+  "code": "80-303",
+  "a_dire": "La conclusion est fausse en dimension 1 : ℤ/2 et ℚ ont le même treillis.",
+  "legende_titre": "Treillis égaux, corps différents",
+  "lecture": [
+   "Les deux dessins 𝑉 au-dessus de 0 sont égaux (signe vert).",
+   "Deux points bleus sont les éléments de ℤ/2.",
+   "Beaucoup de points violets sont ceux de ℚ : signe ≠ rouge."
+  ],
+  "a_voir": "Même treillis, mais 2 éléments contre une infinité."
+ },
+ {
+  "code": "80-304",
+  "a_dire": "En dimension 2, l’espace projectif est une seule droite.",
+  "legende_titre": "Une seule droite projective",
+  "lecture": [
+   "En haut, les droites de pente 0, 1, 2 et la verticale.",
+   "Chaque droite donne un cercle de même couleur sur la ligne verte.",
+   "La ligne verte est l’unique droite projective."
+  ],
+  "a_voir": "Les pentes deviennent les points d’une même ligne."
+ },
+ {
+  "code": "80-305",
+  "a_dire": "Deux points distincts vérifient 𝑃 ∩ 𝑄 = 0 et 𝑃 + 𝑄 = 𝑉.",
+  "legende_titre": "Deux points, intersection 0, somme 𝑉",
+  "lecture": [
+   "La droite bleue est 𝑃 et la droite violette est 𝑄 ; elles se croisent en 0.",
+   "La flèche bleue puis la flèche violette s’ajoutent.",
+   "La flèche verte 𝑤 est leur somme : le plan se remplit."
+  ],
+  "a_voir": "Un vecteur 𝑤 du plan s’écrit comme somme d’un vecteur de 𝑃 et d’un de 𝑄."
+ },
+ {
+  "code": "80-306",
+  "a_dire": "Toute bijection des points garde les relations de paires.",
+  "legende_titre": "Échanger des points sans rien casser",
+  "lecture": [
+   "En haut, trois points : 𝑃₀ bleu, 𝑃₁ violet, 𝑃₂ gris.",
+   "Les flèches orange échangent 𝑃₀ et 𝑃₁.",
+   "La flèche grise laisse 𝑃₂ en place."
+  ],
+  "a_voir": "Après l’échange, chaque paire a les mêmes relations."
+ },
+ {
+  "code": "80-307",
+  "a_dire": "On échange les droites de pente 0 et 1 ; les autres restent.",
+  "legende_titre": "Échanger les pentes 0 et 1",
+  "lecture": [
+   "La rangée du haut donne les pentes 0, 1, 2, 3 et ∞.",
+   "Les flèches orange croisées échangent 0 et 1.",
+   "Les flèches grises laissent 2, 3 et ∞."
+  ],
+  "a_voir": "Deux cercles échangés, trois cercles qui restent."
+ },
+ {
+  "code": "80-308",
+  "a_dire": "Dans ℂ, la conjugaison est un automorphisme différent de l’identité.",
+  "legende_titre": "Un automorphisme qui n’est pas l’identité",
+  "lecture": [
+   "Le cercle bleu est 2 + 3𝑖.",
+   "Le cercle orange est 2 − 3𝑖.",
+   "La flèche orange les relie à travers l’axe réel."
+  ],
+  "a_voir": "Le nombre change de place : ce n’est pas l’identité."
+ },
+ {
+  "code": "80-309",
+  "a_dire": "Une application qui fixe trois droites est la multiplication par 𝜆.",
+  "legende_titre": "Multiplier par 4 garde chaque droite",
+  "lecture": [
+   "À droite, de haut en bas : η fixe les pentes ∞, 2, 3 ; le test sur la pente 3 donne c = λ ; donc η est la multiplication par λ.",
+   "Les deux lignes grises dessous disent ce que sont c et λ.",
+   "À gauche, un exemple avec λ = 4 : chaque flèche colorée est un multiple de la petite flèche grise, sur la même droite."
+  ],
+  "a_voir": "Fixer ces trois droites suffit : η est une multiplication par λ."
+ },
+ {
+  "code": "80-310",
+  "a_dire": "La multiplication par 𝜆 fixe toute droite et ne peut pas échanger les pentes 0 et 1.",
+  "legende_titre": "Fixer toute droite",
+  "lecture": [
+   "La droite bleue est la pente 0 et la violette la pente 1.",
+   "Avec 𝜂(𝑣) = 4𝑣, les flèches colorées vont de (1, 0) à (4, 0) et de (1, 1) à (4, 4) : chacune reste sur sa droite.",
+   "Le trait rouge et la croix montrent l'échange voulu, qui est impossible.",
+   "Le texte vert donne la conclusion : les pentes 0 et 1 restent en place."
+  ],
+  "a_voir": "Chaque flèche reste sur sa droite : pas d'échange."
+ },
+ {
+  "code": "80-311",
+  "a_dire": "Le théorème est faux en dimension 2 : on peut échanger deux pentes.",
+  "legende_titre": "L’hypothèse dim 𝑉 ≥ 3 est nécessaire",
+  "lecture": [
+   "À gauche, trois axes bleus : trois directions libres.",
+   "À droite, la droite bleue de pente 0 et la violette de pente 1.",
+   "La flèche rouge est l’échange, qu’aucune application 𝜂 ne fait."
+  ],
+  "a_voir": "Trois directions pour le cas vrai, deux pentes échangées pour le cas faux."
+ },
+ {
+  "code": "80-312",
+  "a_dire": "𝑆 = {a, 𝑏, 𝑐}, 𝐴 = {a, 𝑏}, 𝐵 = {𝑏, 𝑐} dans 𝒫(𝑆).",
+  "legende_titre": "Deux parties qui se chevauchent",
+  "lecture": [
+   "Le cadre gris est 𝑆.",
+   "Le cercle bleu est 𝐴 et le cercle violet est 𝐵.",
+   "L’élément vert 𝑏 est dans les deux."
+  ],
+  "a_voir": "L’élément 𝑏 est dans la partie commune."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 4, 78, 'avant : combien vaut x ?', 'fixe', 'm', ha='left')
+box(ax, 4, 60, 30, 11, 'sujet', label=r'$x + 3 = 8$'); box(ax, 54, 60, 30, 11, 'resultat', label=r'$x = 5$')
+arrow(ax, (35, 65.5), (53, 65.5), 'varie')
+text(ax, 4, 49, 'maintenant : deux questions', 'fixe', 'm', ha='left')
+box(ax, 24, 33, 40, 10, 'fixe', label=r'$a + b = b + a$')
+arrow(ax, (34, 32), (22, 24), 'varie'); arrow(ax, (54, 32), (66, 24), 'varie')
+box(ax, 2, 4, 40, 19, 'sujet', label='quels ensembles\nsuivent la règle ?')
+box(ax, 46, 4, 40, 19, 'autre', label='comment comparer\ndeux ensembles ?')
+save(fig, '80-489')

@@ -1,0 +1,275 @@
+[
+ {
+  "code": "80-409",
+  "a_dire": "Le théorème 8.8 n'utilise que trois gestes (combiner, revenir en arrière, changer l'ordre), que les entiers avec + et les rationnels non nuls avec × permettent aussi.",
+  "legende_titre": "Deux groupes, trois mêmes gestes",
+  "lecture": [
+   "La colonne bleue montre les entiers : on additionne.",
+   "La colonne violette montre les rationnels non nuls : on multiplie.",
+   "Chaque ligne est un des trois gestes, fait dans les deux colonnes."
+  ],
+  "a_voir": "Les deux colonnes permettent exactement les mêmes trois gestes."
+ },
+ {
+  "code": "80-410",
+  "a_dire": "Dans un groupe de produits, chaque somme devient un produit et chaque coefficient devient un exposant.",
+  "legende_titre": "Des sommes aux produits",
+  "lecture": [
+   "La colonne bleue est l'addition, la violette la multiplication.",
+   "Chaque flèche orange change une écriture de la colonne bleue en son écriture de la colonne violette.",
+   "Le coefficient 3 devient l'exposant 3, le coefficient moins 1 devient l'inverse 1/5."
+  ],
+  "a_voir": "Le coefficient de gauche devient l'exposant de droite."
+ },
+ {
+  "code": "80-411",
+  "a_dire": "Pour n = 4, on forme x^(n/d) − 1 pour chaque diviseur d, on le met à la puissance μ(d), et le produit est x² + 1.",
+  "legende_titre": "La formule pour n égal à 4",
+  "lecture": [
+   "La ligne grise donne les diviseurs de 4 : 1, 2, 4.",
+   "La ligne bleue donne le facteur x^(4/d) − 1 de chaque diviseur.",
+   "La ligne orange donne les valeurs de μ : 1, moins 1, 0, qui servent de puissances.",
+   "La case verte est le résultat du produit."
+  ],
+  "a_voir": "Chaque diviseur a son facteur et sa puissance ; le produit donne un polynôme."
+ },
+ {
+  "code": "80-412",
+  "a_dire": "Pour n = 6, la formule pleine de quotients se simplifie en le polynôme x² − x + 1.",
+  "legende_titre": "Φ6 : le quotient se simplifie",
+  "lecture": [
+   "La case bleue est la formule avec les quatre facteurs de 6.",
+   "La case orange montre les facteurs écrits en produit.",
+   "La case verte est ce qui reste après simplification.",
+   "La ligne du bas vérifie le résultat par multiplication."
+  ],
+  "a_voir": "Après simplification, il reste un polynôme de degré 2."
+ },
+ {
+  "code": "80-413",
+  "a_dire": "Dans les entiers modulo 2, x⁴ − x est le produit de deux facteurs de degré 1 et d'un de degré 2, de degrés totaux 4.",
+  "legende_titre": "Les degrés des facteurs s'additionnent",
+  "lecture": [
+   "Chaque case est un facteur ; sa largeur est son degré.",
+   "Les deux cases bleues ont degré 1, la case orange a degré 2.",
+   "L'accolade donne le degré total 4.",
+   "Le calcul vert additionne les degrés."
+  ],
+  "a_voir": "Les degrés des facteurs font 4, le degré de x⁴ − x."
+ },
+ {
+  "code": "80-414",
+  "a_dire": "Pour p = 3 et n = 2, la formule de Gauss donne 9 − 3 = 6, puis 6/2 = 3 polynômes irréductibles de degré 2.",
+  "legende_titre": "La formule de Gauss pour p = 3, n = 2",
+  "lecture": [
+   "La case bleue est le diviseur 1 : 1 fois 9.",
+   "La case violette est le diviseur 2 : moins 1 fois 3.",
+   "La case orange est leur somme 9 − 3 = 6.",
+   "La case verte divise par n et donne 3."
+  ],
+  "a_voir": "On additionne les termes, puis on divise par n."
+ },
+ {
+  "code": "80-415",
+  "a_dire": "Parmi seize polynômes de degré 4 modulo 2, seuls trois sont irréductibles ; la formule donne le nombre, pas la liste.",
+  "legende_titre": "Trois polynômes sur seize",
+  "lecture": [
+   "La grille a seize cases, une par polynôme de degré 4.",
+   "Les trois cases vertes sont les polynômes écrits dans la liste verte.",
+   "La case rouge est x⁴ + x² + 1, qui se coupe.",
+   "Les douze autres cases grises se coupent aussi."
+  ],
+  "a_voir": "Seulement trois cases sur seize sont vertes."
+ },
+ {
+  "code": "80-416",
+  "a_dire": "Quand aucun élément n'est sous un autre, la somme partielle est la valeur elle-même : g = f, il n'y a rien à défaire.",
+  "legende_titre": "Aucun élément sous un autre : g égale f",
+  "lecture": [
+   "Les cases bleues sont les scores 5, 7 et 2.",
+   "Les cases vertes sont les sommes partielles de chacun.",
+   "Chaque flèche relie un score à sa somme partielle : même nombre."
+  ],
+  "a_voir": "Chaque somme partielle est égale au score."
+ },
+ {
+  "code": "80-417",
+  "a_dire": "Sur une chaîne, on retrouve une valeur en retirant la somme partielle juste en dessous : f(3) = 10 − 6.",
+  "legende_titre": "Sur une chaîne, une marche à la fois",
+  "lecture": [
+   "La ligne du haut donne les sommes partielles 1, 3, 6, 10, reliées dans l'ordre.",
+   "Les deux cases orange sont les deux dernières sommes.",
+   "La flèche orange donne f(3) dans la case verte : 10 − 6 = 4.",
+   "La ligne du bas donne les valeurs 1, 2, 3, 4."
+  ],
+  "a_voir": "Pour f(3), on regarde seulement g(3) et g(2)."
+ },
+ {
+  "code": "80-418",
+  "a_dire": "Les chemins de 1 à 6 dans les diviseurs de 6 donnent μ(1,6) : un chemin d'une marche compte moins 1, deux chemins de deux marches comptent plus 1 chacun.",
+  "legende_titre": "Compter les chemins de 1 à 6",
+  "lecture": [
+   "Les ronds sont les diviseurs de 6.",
+   "La flèche orange va directement de 1 à 6 : une marche, signe moins.",
+   "Les chemins bleu et violet passent par 2 ou par 3 : deux marches, signe plus.",
+   "Le calcul vert additionne les trois signes."
+  ],
+  "a_voir": "Chaque chemin porte un signe, et la somme donne μ(1,6)."
+ },
+ {
+  "code": "80-419",
+  "a_dire": "Aucun axiome ne parle de a ∨ a, pourtant A3, A4 et A5 fixent sa valeur : a.",
+  "legende_titre": "Les axiomes fixent a ∨ a",
+  "lecture": [
+   "Les trois cases bleues sont les axiomes A3, A4, A5.",
+   "La case orange est a ∨ a, qu'aucun axiome ne nomme.",
+   "Les flèches orange montrent que les axiomes servent à le calculer.",
+   "La case verte est la valeur obtenue : a."
+  ],
+  "a_voir": "La valeur de a ∨ a est imposée par les axiomes."
+ },
+ {
+  "code": "80-420",
+  "a_dire": "L'idempotence a ∨ a = a vient des axiomes : si ∨ était l'addition, 3 ∨ 3 ferait 6, pas 3.",
+  "legende_titre": "a ∨ a = a ne va pas de soi",
+  "lecture": [
+   "La droite graduée montre les nombres de 0 à 6.",
+   "La case verte pointe le 3 : avec les axiomes, a ∨ a reste a.",
+   "La case rouge pointe le 6 : avec l'addition, 3 ∨ 3 arrive en 6."
+  ],
+  "a_voir": "Avec les axiomes on reste en 3 ; avec l'addition on arrive en 6."
+ },
+ {
+  "code": "80-421",
+  "a_dire": "Chaque signe égal de la preuve est permis par un axiome : A4, A5, A3, A5, A4.",
+  "legende_titre": "Un axiome pour chaque signe égal",
+  "lecture": [
+   "Les cases bleues sont les étapes du calcul, la verte est l'arrivée.",
+   "Chaque case orange à droite nomme l'axiome qui permet de passer à l'étape de sa ligne.",
+   "Les cinq cases orange se lisent de haut en bas : A4, A5, A3, A5, A4."
+  ],
+  "a_voir": "Chaque ligne qui commence par un signe égal a son axiome."
+ },
+ {
+  "code": "80-422",
+  "a_dire": "Le calcul va de a à a ∨ a ; l'étape qui porte le poids est A3, qui fait apparaître a ∨ a.",
+  "legende_titre": "L'étape décisive du calcul",
+  "lecture": [
+   "La case bleue du haut est le départ : a.",
+   "Les cases grises sont les étapes ordinaires.",
+   "La case orange et la flèche épaisse montrent l'étape A3, la décisive.",
+   "La case verte du bas est l'arrivée : a ∨ a."
+  ],
+  "a_voir": "L'étape orange est celle qui fait apparaître a ∨ a."
+ },
+ {
+  "code": "80-423",
+  "a_dire": "I ∨ b est égal à I pour b ouvert comme pour b fermé : I absorbe tout ; avec l'addition ce serait faux.",
+  "legende_titre": "I absorbe tout dans une réunion",
+  "lecture": [
+   "Les cases orange sont les deux positions de b.",
+   "Les cases vertes montrent que le résultat reste I dans les deux cas.",
+   "Les cases rouges essaient l'addition avec I égal 5 : 5 ∨ 3 donne 8, pas I."
+  ],
+  "a_voir": "Quelle que soit la position de b, le résultat est I."
+ },
+ {
+  "code": "80-424",
+  "a_dire": "Le calcul de I ∨ b à I passe par une étape décisive : A1 et A2 placent les deux b côte à côte.",
+  "legende_titre": "Placer les deux b côte à côte",
+  "lecture": [
+   "Les cases bleues sont les étapes, la verte est l'arrivée.",
+   "Les cases grises à droite nomment les règles ordinaires.",
+   "La case orange nomme l'étape décisive : A1 et A2 rapprochent les deux b."
+  ],
+  "a_voir": "Sans l'étape orange, les deux b restent séparés."
+ },
+ {
+  "code": "80-425",
+  "a_dire": "Le circuit a en parallèle avec « a puis b » laisse passer le courant exactement quand a est fermé, comme a seul.",
+  "legende_titre": "Le circuit se comporte comme a seul",
+  "lecture": [
+   "Chaque ligne est une position de a et de b.",
+   "La colonne « circuit » et la colonne « a seul » montrent si le courant passe.",
+   "Un rond vert veut dire que le courant passe, un rond gris qu'il est coupé."
+  ],
+  "a_voir": "Les deux colonnes sont identiques sur les quatre lignes."
+ },
+ {
+  "code": "80-426",
+  "a_dire": "Le calcul de a ∨ (a ∧ b) à a commence par l'étape décisive A4, qui fait apparaître a dans les deux termes.",
+  "legende_titre": "L'absorption pas à pas",
+  "lecture": [
+   "Les cases bleues sont les étapes, la verte est l'arrivée a.",
+   "La case orange à droite nomme l'étape décisive : A4.",
+   "Les cases grises nomment les autres règles."
+  ],
+  "a_voir": "La première étape rend possible toutes les suivantes."
+ },
+ {
+  "code": "80-427",
+  "a_dire": "Échanger ∨ et ∧, et O et I, envoie chaque axiome sur son jumeau, donc la liste des axiomes ne change pas.",
+  "legende_titre": "Chaque axiome a son jumeau",
+  "lecture": [
+   "La colonne bleue montre des axiomes.",
+   "La colonne violette montre leur jumeau après l'échange.",
+   "Les flèches orange à deux pointes sont l'échange."
+  ],
+  "a_voir": "Chaque ligne bleue a sa jumelle violette."
+ },
+ {
+  "code": "80-428",
+  "a_dire": "Les calculs échangés ne valent pas pour toute lecture : avec ∨ lu comme × et ∧ lu comme +, a ∨ a = a est vrai mais a ∧ a = a est faux.",
+  "legende_titre": "Le résultat échangé peut être faux",
+  "lecture": [
+   "La case verte lit a ∨ a avec la multiplication : 1 × 1 = 1, vrai.",
+   "La case rouge lit a ∧ a avec l'addition modulo 2 : 1 + 1 = 0, faux.",
+   "La flèche orange est l'échange."
+  ],
+  "a_voir": "Après l'échange, le résultat devient faux dans ce cas."
+ },
+ {
+  "code": "80-429",
+  "a_dire": "Si ∨ est l'addition modulo 2, 1 ∨ 1 = 0, donc a ∨ a = a est faux et ce n'est pas un treillis.",
+  "legende_titre": "Une loi qui manque",
+  "lecture": [
+   "Le tableau donne le résultat de ∨ lu comme l'addition modulo 2.",
+   "Les cases bleues sont les quatre résultats.",
+   "La case rouge est 1 ∨ 1 = 0 : la loi a ∨ a = a est fausse."
+  ],
+  "a_voir": "La case rouge est la seule qui contredit la loi."
+ },
+ {
+  "code": "80-430",
+  "a_dire": "Deux interrupteurs a commandés ensemble donnent une lampe allumée quand a est fermé et éteinte quand a est ouvert, comme un seul.",
+  "legende_titre": "Deux interrupteurs a en parallèle",
+  "lecture": [
+   "Chaque dessin est un circuit : deux branches avec un interrupteur a.",
+   "Le trait orange en pointillés relie les deux interrupteurs : ils bougent ensemble.",
+   "Vert veut dire que le courant passe, gris qu'il est coupé."
+  ],
+  "a_voir": "Les deux interrupteurs sont fermés ensemble ou ouverts ensemble."
+ },
+ {
+  "code": "80-431",
+  "a_dire": "Un fil en parallèle laisse passer le courant : la lampe est allumée, que b soit ouvert ou fermé.",
+  "legende_titre": "Le fil laisse toujours passer",
+  "lecture": [
+   "La branche du haut est le fil I.",
+   "La branche du bas porte l'interrupteur b, ouvert dans le premier dessin, fermé dans le second.",
+   "La lampe verte est allumée dans les deux dessins."
+  ],
+  "a_voir": "Le fil laisse passer le courant dans les deux positions de b."
+ },
+ {
+  "code": "80-432",
+  "a_dire": "Dans le circuit a en parallèle avec « a puis b », la branche a puis b ne change jamais le résultat : tout dépend de a.",
+  "legende_titre": "La branche a puis b ne sert à rien",
+  "lecture": [
+   "Le premier dessin a ouvert : les deux interrupteurs a sont ouverts, la lampe est éteinte.",
+   "Le second dessin a fermé : le courant passe par la branche du haut, la lampe est allumée.",
+   "La case pointillée b est l'interrupteur b, dont la position ne compte pas."
+  ],
+  "a_voir": "Seule la position de a décide si la lampe est allumée."
+ }
+]

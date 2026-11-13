@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig,ax=canvas(66)
+o=(10,9)
+p1=(21,29); p2=(32,49)
+line(ax,[(4,29),(84,29)],'fixe',lw=0.9,dash=True)
+line(ax,[o,(37,58)],'sujet',lw=1.6)
+disc(ax,o[0],o[1],1.2,'encre')
+disc(ax,p1[0],p1[1],2,'sujet')
+disc(ax,p2[0],p2[1],2,'varie')
+text(ax,18,33,'(2, 3, 1)','sujet','s',ha='right')
+text(ax,36,49,'(4, 6, 2)','varie','s',ha='left')
+arrow(ax,(33,45.5),(23,32.5),'varie',curve=0.3)
+text(ax,40,37,'÷ 2','varie','m',ha='left')
+text(ax,70,32.5,'écran z = 1','fixe','s')
+text(ax,10,4,'origine','encre','s')
+text(ax,62,14,'écran : point (2, 3)','resultat','m')
+save(fig,'80-089')

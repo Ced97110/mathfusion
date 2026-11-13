@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,52,24,14,'sujet',label=r'$x=2+3i$',size='s'); box(ax,3,6,24,14,'sujet',label=r'$y=1+i$',size='s')
+box(ax,34,52,22,14,'sujet',label=r'$x+y=3+4i$',size='s'); box(ax,62,52,23,14,'varie',label=r'$\eta(x+y)=3-4i$',size='s')
+box(ax,34,28,22,14,'varie',label=r'$2-3i,\ 1-i$',size='s'); box(ax,62,28,23,14,'resultat',label=r'$3-4i$',size='s')
+text(ax,45,47,r'additionner','sujet','s'); arrow(ax,(27,59),(34,59),'sujet'); arrow(ax,(56,59),(62,59),'varie')
+arrow(ax,(27,18),(34,33),'varie'); arrow(ax,(27,54),(34,38),'varie'); arrow(ax,(56,35),(62,35),'resultat')
+text(ax,73,22,r'$\eta(x)+\eta(y)$','resultat','s'); text(ax,45,22,r'appliquer $\eta$','varie','s')
+arrow(ax,(73,51),(73,43),'resultat',both=True)
+text(ax,80,47,'=','resultat','m')
+save(fig,'80-101')

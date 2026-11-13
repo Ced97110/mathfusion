@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 50, 44, 12, 'fixe', label=r'$ab + ba = 0$')
+arrow(ax, (24, 50), (24, 38), 'varie'); text(ax, 28, 44, r'on prend $b = a$', 'varie', 's', ha='left')
+box(ax, 2, 26, 44, 12, 'varie', label=r'$a^2 + a^2 = 0$')
+arrow(ax, (24, 26), (24, 14), 'varie'); text(ax, 28, 20, r'$a^2 = a$', 'varie', 's', ha='left')
+box(ax, 2, 2, 44, 12, 'resultat', label=r'$a + a = 0$')
+box(ax, 52, 11, 34, 18, 'limite', dash=True, label='sans $a^2=a$ :\n3 + 3 = 6, pas 0', size='s')
+line(ax, [(52, 20), (40, 20)], 'limite', lw=1.0, dash=True)
+save(fig, '80-321')

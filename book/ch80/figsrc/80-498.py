@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+s3 = math.sqrt(3) / 2; Lg = 36; hh = Lg * s3
+B = (4, 20); C = (4 + Lg, 20); A = (4 + Lg / 2, 20 + hh)
+mid = lambda p, q: ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
+G = ((A[0] + B[0] + C[0]) / 3, (A[1] + B[1] + C[1]) / 3)
+line(ax, [A, B, C, A], 'fixe')
+for v, m in [(A, mid(B, C)), (B, mid(A, C)), (C, mid(A, B))]: line(ax, [v, m], 'fixe')
+ax.add_patch(Circle(G, hh / 3, ec=COL['fixe'], fc='none', lw=0.9, zorder=3))
+for p in [A, B, C, mid(A, B), mid(B, C), mid(A, C), G]: disc(ax, p[0], p[1], 1.7, 'sujet')
+text(ax, 22, 11, 'plan de Fano : 7 points', 'sujet', 's')
+text(ax, 67, 57, r'$q^2 + q + 1$', 'encre', 'l')
+text(ax, 67, 49, r'$q = 2$ : 4 + 2 + 1 = 7', 'sujet', 'm')
+for i in range(7): disc(ax, 67 + (i - 3) * 4.2, 42, 1.6, 'sujet')
+text(ax, 67, 31, r'$q = 3$ : 9 + 3 + 1 = 13', 'autre', 'm')
+for i in range(13): disc(ax, 67 + (i - 6) * 2.9, 24, 1.2, 'autre')
+save(fig, '80-498')

@@ -1,0 +1,275 @@
+[
+ {
+  "code": "80-457",
+  "a_dire": "Avec a et b ouverts, le bloc 1 coupe, donc la lampe est éteinte.",
+  "legende_titre": "Une ligne du tableau, lue sur le circuit",
+  "lecture": [
+   "Les trois cadres sont les trois blocs, l'un après l'autre.",
+   "Les interrupteurs gris sont ouverts, ceux en vert sont fermés.",
+   "Le cadre rouge est le bloc 1 : ses deux interrupteurs sont ouverts.",
+   "Le rond gris à droite est la lampe éteinte."
+  ],
+  "a_voir": "Un seul bloc coupé suffit à éteindre la lampe."
+ },
+ {
+  "code": "80-458",
+  "a_dire": "Avec a ouvert et b fermé, b′ est ouvert et le bloc 2 coupe.",
+  "legende_titre": "Une ligne où seul le bloc 2 coupe",
+  "lecture": [
+   "Les cadres verts (blocs 1 et 3) laissent passer grâce à b fermé.",
+   "Le cadre rouge est le bloc 2 : a et b′ sont ouverts.",
+   "Le rond gris à droite est la lampe éteinte."
+  ],
+  "a_voir": "Le bloc 2 est coupé à cause de b′, donc rien ne passe."
+ },
+ {
+  "code": "80-459",
+  "a_dire": "La colonne de la lampe est la même que la colonne de a : 0, 0, 1, 1.",
+  "legende_titre": "Deux colonnes, ligne par ligne",
+  "lecture": [
+   "La colonne bleue est a, de haut en bas : 0, 0, 1, 1.",
+   "La colonne verte est la lampe, dans le même ordre.",
+   "Chaque trait relie deux cases d'une même ligne, avec le signe =."
+  ],
+  "a_voir": "Sur chaque ligne, la case de a et la case de la lampe sont égales."
+ },
+ {
+  "code": "80-460",
+  "a_dire": "Le tableau et le calcul répondent à la même question et donnent C = a.",
+  "legende_titre": "Deux chemins vers le même résultat",
+  "lecture": [
+   "La colonne bleue est le tableau : quatre essais.",
+   "La colonne violette est le calcul : cinq lignes.",
+   "Les deux flèches orange arrivent dans la case verte C = a."
+  ],
+  "a_voir": "Les deux travaux séparés aboutissent à la même case."
+ },
+ {
+  "code": "80-461",
+  "a_dire": "Si b′ est remplacé par b, les trois blocs sont égaux à a ∨ b.",
+  "legende_titre": "Trois blocs identiques",
+  "lecture": [
+   "Chaque cadre est un bloc avec a et b en parallèle.",
+   "Le titre orange dit que b prend la place de b′ dans le bloc 2.",
+   "Le texte bleu en bas donne le circuit qui reste : a ∨ b."
+  ],
+  "a_voir": "Les trois blocs sont les mêmes, donc un seul suffit."
+ },
+ {
+  "code": "80-462",
+  "a_dire": "Avec a ouvert et b fermé, a ∨ b allume la lampe mais a seul ne l'allume pas.",
+  "legende_titre": "Deux circuits dans la même position",
+  "lecture": [
+   "En haut, le circuit a ∨ b : b est fermé (vert), la lampe est allumée.",
+   "En bas, a seul : a est ouvert (gris), la lampe est éteinte.",
+   "Les deux lampes montrent deux résultats différents."
+  ],
+  "a_voir": "Les deux circuits diffèrent, donc a ∨ b ne se réduit pas à a."
+ },
+ {
+  "code": "80-463",
+  "a_dire": "C'est la présence de b′ avec b qui fait disparaître b.",
+  "legende_titre": "Avec b′ ou sans b′",
+  "lecture": [
+   "La ligne du haut met b puis b′ en série : b′ est ouvert, c'est coupé (rouge).",
+   "La ligne du bas met b puis b : les deux sont fermés, ça passe (vert).",
+   "Les cases à droite disent ce qui arrive à b dans chaque cas."
+  ],
+  "a_voir": "Sans b′, la série ne coupe rien et b reste."
+ },
+ {
+  "code": "80-464",
+  "a_dire": "Trois blocs en parallèle donnent a ∨ b ∨ b′ = I : la lampe est toujours allumée.",
+  "legende_titre": "Trois chemins côte à côte",
+  "lecture": [
+   "Chaque ligne est un chemin : a, b ou b′.",
+   "a et b sont ouverts (gris), b′ est fermé (vert) : le courant passe par lui.",
+   "Le rond vert est la lampe allumée."
+  ],
+  "a_voir": "Il y a toujours un chemin fermé, donc le circuit est un fil."
+ },
+ {
+  "code": "80-465",
+  "a_dire": "Ce dernier chapitre reprend des questions déjà posées, comme celle du chapitre 24.",
+  "legende_titre": "Un retour vers le chapitre 24",
+  "lecture": [
+   "Les trois ronds sont les chapitres 1, 24 et 80 sur la ligne du livre.",
+   "La flèche orange part du chapitre 80 et revient au chapitre 24.",
+   "Le texte orange est la question de ce chapitre : x − y = 0 et x − y = −1 donnent 0 = 1."
+  ],
+  "a_voir": "Le chapitre 80 revient en arrière au lieu de commencer une théorie."
+ },
+ {
+  "code": "80-466",
+  "a_dire": "Le PGCD et le PPCM de 4 et 6 sont la borne inférieure et la borne supérieure dans les diviseurs de 12.",
+  "legende_titre": "Diviseurs de 12 rangés par divisibilité",
+  "lecture": [
+   "Les ronds sont les diviseurs de 12, du plus bas (1) au plus haut (12).",
+   "Les ronds bleus sont 4 et 6.",
+   "Le rond vert du bas, 2, est sous 4 et 6 : c'est le PGCD.",
+   "Le rond vert du haut, 12, est au-dessus : c'est le PPCM."
+  ],
+  "a_voir": "Le PGCD est le plus grand élément sous les deux, le PPCM le plus petit au-dessus."
+ },
+ {
+  "code": "80-467",
+  "a_dire": "Le 0 = 1 du plan veut dire que les deux droites se coupent hors de l'écran.",
+  "legende_titre": "Parallèles ici, jointes à l'horizon",
+  "lecture": [
+   "À gauche, deux droites parallèles dans le plan : elles n'ont aucun point commun.",
+   "À droite, deux rails se rejoignent au rond vert, sur la ligne d'horizon.",
+   "Les couleurs bleu et violet désignent les mêmes deux droites."
+  ],
+  "a_voir": "Là où le plan voit 0 = 1, la perspective voit un point commun."
+ },
+ {
+  "code": "80-468",
+  "a_dire": "Les valeurs de départ se trouvent une par une, de bas en haut, avec les résultats déjà obtenus.",
+  "legende_titre": "Calcul de 1, 2, 3 à partir de 1, 3, 6",
+  "lecture": [
+   "La colonne bleue donne les sommes partielles : 1, 3, 6.",
+   "La colonne orange est le calcul : 1, puis 3 − 1, puis 6 − 1 − 2.",
+   "La colonne verte donne les valeurs : 1, 2, 3.",
+   "La flèche à gauche monte de la première ligne à la dernière."
+  ],
+  "a_voir": "Chaque ligne n'utilise que les valeurs des lignes du dessous."
+ },
+ {
+  "code": "80-469",
+  "a_dire": "Un circuit à une lettre a les mêmes quatre éléments que les parties de {1, 2}, aux noms près.",
+  "legende_titre": "Deux losanges de même forme",
+  "lecture": [
+   "Le losange de gauche est le circuit : O, a, a′, I.",
+   "Le losange de droite est formé du vide, {1}, {2}, {1, 2}.",
+   "Deux ronds de même couleur et de même place se correspondent."
+  ],
+  "a_voir": "Il suffit de renommer les éléments pour passer de l'un à l'autre."
+ },
+ {
+  "code": "80-470",
+  "a_dire": "Une droite horizontale et une droite verticale se complètent : leur somme est le plan et leur seul point commun est l'origine.",
+  "legende_titre": "Droite et complément dans le plan",
+  "lecture": [
+   "Le grand carré gris est le plan entier.",
+   "La droite bleue est la droite horizontale.",
+   "La droite orange est la droite verticale, le complément.",
+   "Le rond vert est l'origine, seul point commun."
+  ],
+  "a_voir": "Les deux droites remplissent le plan et ne se croisent qu'en un point."
+ },
+ {
+  "code": "80-471",
+  "a_dire": "Pour 4, trois résultats sont des totaux écrits sur les mêmes diviseurs 1, 2 et 4.",
+  "legende_titre": "Trois totaux sur les diviseurs de 4",
+  "lecture": [
+   "Les trois colonnes sont les diviseurs de 4 : 1, 2 et 4 ; chaque ligne a une case par diviseur.",
+   "La ligne bleue donne 1, 1, 2 : somme 4.",
+   "La ligne violette donne les degrés 1, 1, 2 : somme 4.",
+   "La ligne orange donne 2, 2, 12 : total 16, soit 2 puissance 4."
+  ],
+  "a_voir": "Chaque fois, le total s'écrit comme une somme sur les mêmes diviseurs."
+ },
+ {
+  "code": "80-472",
+  "a_dire": "Pour deux droites du plan, 2 + 0 = 1 + 1 : la formule des dimensions donne un modèle de la modularité.",
+  "legende_titre": "Dimensions de deux droites et de leur somme",
+  "lecture": [
+   "Le carré gris est le plan, somme des deux droites.",
+   "Les droites bleue et violette passent par l'origine orange.",
+   "Les quatre cases donnent les dimensions : somme 2, commun 0, droite 1, droite 1.",
+   "La ligne du milieu écrit 2 + 0 = 1 + 1."
+  ],
+  "a_voir": "Les dimensions de la somme et du commun égalent celles des deux droites."
+ },
+ {
+  "code": "80-473",
+  "a_dire": "La série est le partage commun de deux ensembles de positions, le parallèle est leur réunion.",
+  "legende_titre": "Série et parallèle comme ensembles",
+  "lecture": [
+   "Le cercle bleu est l'ensemble des positions où a est fermé.",
+   "Le cercle violet est l'ensemble où b est fermé.",
+   "À gauche, la zone verte commune est la série.",
+   "À droite, toute la zone colorée est le parallèle."
+  ],
+  "a_voir": "Un circuit se lit comme un ensemble de positions."
+ },
+ {
+  "code": "80-474",
+  "a_dire": "Un circuit à trois lettres a 8 positions et 2 choix par position : 256 tables possibles.",
+  "legende_titre": "Huit positions, deux choix chacune",
+  "lecture": [
+   "Chaque case bleue est une position, il y en a huit.",
+   "Sous chaque case, un rond gris (éteinte) et un rond vert (allumée) : deux choix.",
+   "La case verte donne le total : 2 puissance 8 égale 256."
+  ],
+  "a_voir": "Chaque table est un élément de l'algèbre, donc il y en a 256."
+ },
+ {
+  "code": "80-475",
+  "a_dire": "Simplifier, c'est choisir, dans la classe des circuits de même table, celui qui a le moins d'interrupteurs.",
+  "legende_titre": "Une classe, un circuit choisi",
+  "lecture": [
+   "Le cadre en pointillés est la classe : même table.",
+   "Le bloc bleu est C, avec six petits carrés pour six interrupteurs.",
+   "Le bloc vert, au contour gras, est a, avec un seul carré : c'est le choisi.",
+   "En bas : on garde le plus petit, 1 contre 6."
+  ],
+  "a_voir": "Les deux circuits ont la même table ; on garde le plus petit."
+ },
+ {
+  "code": "80-476",
+  "a_dire": "Un point de l'espace devient quatre nombres en ajoutant 1, et la perspective devient une application linéaire sur ces nombres.",
+  "legende_titre": "Du point (2, 3, 5) à (2, 3, 5, 1)",
+  "lecture": [
+   "La ligne du haut montre les trois coordonnées 2, 3, 5.",
+   "La flèche orange dit qu'on ajoute 1 : la ligne du milieu a quatre cases, dont la case orange est le 1 ajouté.",
+   "La deuxième flèche orange mène à quatre nombres calculés : la perspective est une application linéaire sur les quatre nombres."
+  ],
+  "a_voir": "Le point est une liste de quatre nombres sur laquelle on calcule."
+ },
+ {
+  "code": "80-477",
+  "a_dire": "Un fil d'ordinateur porte 0 ou 1, et un « ou » de deux fils donne 1 si l'un porte 1.",
+  "legende_titre": "Un « ou » sur deux fils",
+  "lecture": [
+   "Le rond gris à gauche est un fil qui porte 0.",
+   "Le rond bleu est un fil qui porte 1.",
+   "La case orange « ou » réunit les deux fils.",
+   "Le rond vert à droite est la sortie : 1."
+  ],
+  "a_voir": "Les fils se calculent comme les interrupteurs, avec 0 et 1."
+ },
+ {
+  "code": "80-478",
+  "a_dire": "La simplification qui passe de 600 à 100 interrupteurs économise 500 interrupteurs.",
+  "legende_titre": "600 interrupteurs, puis 100",
+  "lecture": [
+   "La barre bleue est le circuit avant : 600 interrupteurs.",
+   "La petite case verte est le circuit après : 100.",
+   "La zone orange en pointillés est ce qui disparaît : 500."
+  ],
+  "a_voir": "La barre du bas est six fois plus courte que celle du haut."
+ },
+ {
+  "code": "80-479",
+  "a_dire": "La fonction de Möbius est l'outil de base de la combinatoire, dont le comptage de 30 est un exemple simple.",
+  "legende_titre": "Möbius au centre de plusieurs comptages",
+  "lecture": [
+   "Le rond bleu au centre est la fonction de Möbius.",
+   "Les flèches orange vont vers des objets qu'on compte : parties d'un ensemble, permutations, coloriages.",
+   "La case verte est l'exemple simple du chapitre : 8 entiers sans facteur commun avec 30."
+  ],
+  "a_voir": "Le comptage avec 30 est un cas parmi d'autres."
+ },
+ {
+  "code": "80-480",
+  "a_dire": "Le livre revient à compter : au chapitre 1 on récite 1, 2, 3, ici on compte les entiers de 1 à 30 sans facteur commun avec 30.",
+  "legende_titre": "Compter au début et à la fin",
+  "lecture": [
+   "Les trois ronds bleus du haut sont les nombres 1, 2, 3 du chapitre 1.",
+   "La flèche orange descend vers le chapitre 80.",
+   "Sur la ligne de 1 à 30, les huit ronds verts sont les entiers sans facteur commun avec 30."
+  ],
+  "a_voir": "On compte encore, mais autre chose : huit entiers."
+ }
+]

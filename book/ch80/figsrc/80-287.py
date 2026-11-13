@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 10, 58, 68, 9, 'autre', label=r'droite $D_2$ : $x-y=-1$', size='s')
+arrow(ax, (44, 57), (44, 49), 'varie'); text(ax, 56, 53, 'lire $c$', 'varie', 's', ha='left')
+box(ax, 10, 40, 68, 9, 'varie', label=r'$c=-1$, donc $-cz=+z$', size='s')
+arrow(ax, (44, 39), (44, 31), 'varie'); text(ax, 56, 35, 'remplacer', 'varie', 's', ha='left')
+box(ax, 10, 22, 68, 9, 'resultat', label=r'plan : $x-y+z=0$', size='s')
+box(ax, 10, 6, 68, 10, 'fixe', label=r'vérifier $(0,1,1)$ : $0-1+1=0$', size='s')
+arrow(ax, (44, 21), (44, 17), 'fixe', lw=0.7)
+save(fig, '80-287')

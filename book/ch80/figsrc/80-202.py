@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 20, 22, 22, 'sujet', label='algèbre\n' + r'$\wedge\ \vee\ {}^{\prime}$', size='m')
+box(ax, 64, 20, 22, 22, 'autre', label='anneau\n' + r'$+\ \times$', size='m')
+arrow(ax, (25, 36), (63, 36), 'resultat')
+arrow(ax, (25, 26), (63, 26), 'varie')
+text(ax, 44, 41, r'$ab=a\wedge b$', 'resultat', 's')
+text(ax, 44, 21, r'$a+b=(a\wedge b^{\prime})\vee(a^{\prime}\wedge b)$', 'varie', 's')
+text(ax, 44, 52, 'deux nouvelles opérations', 'encre', 'm')
+text(ax, 44, 8, 'rien de nouveau à apprendre', 'fixe', 's')
+save(fig, '80-202')

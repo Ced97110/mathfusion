@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+ox,oy,s=44,44,12
+P=lambda a,b:(ox+a*s,oy+b*s)
+poly(ax,[P(-2.8,-2.0),P(2.8,-2.0),P(2.8,2.0),P(-2.8,2.0)],'fixe')
+line(ax,[P(-2.5,0),P(2.5,0)],'sujet',lw=2.2)
+line(ax,[P(0,-1.8),P(0,1.8)],'autre',lw=2.2)
+line(ax,[P(-1.7,-1.7),P(1.7,1.7)],'autre',lw=2.2,dash=True)
+disc(ax,*P(1,1),1.3,'autre')
+text(ax,P(1,1)[0]+8,P(1,1)[1]-1,'(1, 1)','autre','s')
+text(ax,P(2.1,0)[0],P(2.1,0)[1]-4,r'$U$','sujet','m')
+text(ax,P(0,1.9)[0]-9,P(0,1.9)[1]+3,'complément 1','autre','s'); text(ax,P(1.7,1.7)[0]+3,P(1.7,1.7)[1]+5,'complément 2','autre','s')
+text(ax,44,15,'complément 1 : l’axe vertical','autre','s')
+text(ax,44,9.5,'complément 2 : la droite par (1, 1)','autre','s')
+text(ax,44,4,'même somme, même intersection','encre','s')
+save(fig,'80-072')

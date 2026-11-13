@@ -1,0 +1,269 @@
+[
+ {
+  "code": "80-025",
+  "a_dire": "Un interrupteur couplé à b est ouvert quand b est fermé, et fermé quand b est ouvert.",
+  "legende_titre": "Un interrupteur qui va à l'envers de b",
+  "lecture": [
+   "Les deux interrupteurs orange portent la lettre 𝑏 : ils sont ouverts ensemble, puis fermés ensemble.",
+   "L'interrupteur gris 𝑎 reste dans le même état dans les deux lignes.",
+   "L'interrupteur bleu 𝑏′ est fermé quand 𝑏 est ouvert, et ouvert quand 𝑏 est fermé."
+  ],
+  "a_voir": "Seul 𝑏′ change en sens contraire de 𝑏."
+ },
+ {
+  "code": "80-026",
+  "a_dire": "Les interrupteurs qui portent la même lettre bougent ensemble.",
+  "legende_titre": "Même lettre, même état",
+  "lecture": [
+   "Les trois interrupteurs gris portent la lettre 𝑎.",
+   "Les deux interrupteurs orange portent la lettre 𝑏 : le trait orange au-dessus les relie.",
+   "L'interrupteur bleu 𝑏′ suit 𝑏 en sens contraire : il est ouvert quand les 𝑏 sont fermés."
+  ],
+  "a_voir": "Chaque lettre a son groupe, et le groupe bouge d'un seul bloc."
+ },
+ {
+  "code": "80-027",
+  "a_dire": "On se demande si l'on peut remplacer les six interrupteurs par moins, sans changer l'état de la lampe.",
+  "legende_titre": "Peut-on faire avec moins d'interrupteurs ?",
+  "lecture": [
+   "En haut, trois blocs bleus contiennent les six interrupteurs : 𝑎 ou 𝑏, 𝑎 ou 𝑏′, 𝑎 ou 𝑏.",
+   "En bas, la case orange en pointillés est le montage plus petit que l'on cherche.",
+   "La flèche verte relie les deux lampes : elles doivent être dans le même état pour chaque position."
+  ],
+  "a_voir": "Le montage cherché doit donner à la lampe le même état que les six interrupteurs."
+ },
+ {
+  "code": "80-028",
+  "a_dire": "Un seul interrupteur suffit : la lampe est allumée exactement quand 𝑎 est fermé.",
+  "legende_titre": "Les quatre positions de deux interrupteurs",
+  "lecture": [
+   "Chaque ligne est une position de 𝑎 (bleu) et de 𝑏 (violet).",
+   "Le disque vert est la lampe allumée, le disque gris est la lampe éteinte.",
+   "La lampe est allumée dans les deux lignes où 𝑎 est fermé, et éteinte dans les deux autres."
+  ],
+  "a_voir": "Regarde 𝑎 seulement : 𝑏 ne change jamais l'état de la lampe."
+ },
+ {
+  "code": "80-029",
+  "a_dire": "Trois ensembles rangés par un ordre : les diviseurs de 12, les parties d'un ensemble, les droites et le plan.",
+  "legende_titre": "Trois ensembles rangés par un ordre",
+  "lecture": [
+   "Colonne de gauche : les diviseurs de 12 ; un trait relie un diviseur à un multiple qui le suit.",
+   "Colonne du milieu : les parties de l'ensemble {a, b}, de la partie vide jusqu'à l'ensemble entier.",
+   "Colonne de droite : {0}, puis les droites, puis le plan entier.",
+   "La flèche orange montre le sens de l'ordre : du bas vers le haut."
+  ],
+  "a_voir": "Dans les trois colonnes, on monte du plus petit au plus grand."
+ },
+ {
+  "code": "80-030",
+  "a_dire": "Un triangle, ses trois médianes et un cercle donnent 7 points et 7 lignes.",
+  "legende_titre": "Compter les points et les lignes",
+  "lecture": [
+   "Les points : 3 sommets, 3 milieux de côtés et 1 centre, soit 7.",
+   "Les lignes grises sont les 3 côtés du triangle.",
+   "Les lignes bleues sont les 3 médianes.",
+   "Le cercle orange est la septième ligne : 3 + 3 + 1 = 7."
+  ],
+  "a_voir": "Il y a 7 points et 7 lignes."
+ },
+ {
+  "code": "80-031",
+  "a_dire": "Le plan de Fano a 7 points et 7 lignes ; deux points sont sur une même ligne et deux lignes se coupent.",
+  "legende_titre": "Le plan de Fano",
+  "lecture": [
+   "Les sept points bleus sont les 7 points.",
+   "Les côtés gris, les médianes bleues et le cercle orange sont les 7 lignes.",
+   "Deux points quelconques ont une ligne commune.",
+   "Deux lignes quelconques ont un point commun."
+  ],
+  "a_voir": "Sept points, sept lignes, et ces deux propriétés."
+ },
+ {
+  "code": "80-032",
+  "a_dire": "Chaque point est marqué par trois cases remplies par 0 ou 1.",
+  "legende_titre": "Trois cases pour marquer un point",
+  "lecture": [
+   "Chaque rangée de trois cases orange est une étiquette : 100, 110 ou 111.",
+   "Dans le triangle, les trois points orange portent ces mêmes étiquettes.",
+   "Chaque case contient seulement 0 ou 1."
+  ],
+  "a_voir": "Une étiquette de trois chiffres marque un point."
+ },
+ {
+  "code": "80-033",
+  "a_dire": "Il y a 2 × 2 × 2 = 8 étiquettes ; sans 000 il en reste 7.",
+  "legende_titre": "Pourquoi 7 étiquettes",
+  "lecture": [
+   "Les trois cases bleues sont les trois chiffres : chacune a 2 choix, 0 ou 1.",
+   "Les huit cases du bas sont les 8 étiquettes possibles.",
+   "La case rouge 000 est celle qu'on retire ; il reste 7 cases vertes."
+  ],
+  "a_voir": "2 × 2 × 2 = 8, puis 8 − 1 = 7."
+ },
+ {
+  "code": "80-034",
+  "a_dire": "Les sommets du triangle portent 100, 010 et 001 : un seul chiffre 1 chacun.",
+  "legende_titre": "Les étiquettes des sommets",
+  "lecture": [
+   "Chaque sommet est un disque bleu avec ses trois cases.",
+   "Dans chaque étiquette, la case orange est le chiffre 1.",
+   "Les cases grises sont des 0 ; le 1 change de place d'un sommet à l'autre."
+  ],
+  "a_voir": "Le 1 est à la première, à la deuxième ou à la troisième place."
+ },
+ {
+  "code": "80-035",
+  "a_dire": "Les milieux des côtés portent 110, 101 et 011, et le centre porte 111.",
+  "legende_titre": "Les étiquettes des milieux et du centre",
+  "lecture": [
+   "Les trois points orange sont les milieux des côtés.",
+   "Le point vert au centre porte 111.",
+   "Les sommets gris gardent 100, 010 et 001."
+  ],
+  "a_voir": "Chaque milieu a deux chiffres 1 ; le centre en a trois."
+ },
+ {
+  "code": "80-036",
+  "a_dire": "Les trois côtés, les trois médianes et le cercle sont tous des droites : 3 + 3 + 1 = 7.",
+  "legende_titre": "Sept droites de trois sortes",
+  "lecture": [
+   "Dans chaque triangle, la ligne bleue épaisse est la droite montrée.",
+   "À gauche, un côté ; au milieu, une médiane ; à droite, le cercle.",
+   "Les trois sont de la même couleur : ce sont toutes des droites."
+  ],
+  "a_voir": "Le cercle compte comme une droite, comme un côté ou une médiane."
+ },
+ {
+  "code": "80-037",
+  "a_dire": "La septième droite est le cercle : sans lui, deux droites seulement passent par 110.",
+  "legende_titre": "Le cercle est la septième droite",
+  "lecture": [
+   "Le point vert est le milieu 110.",
+   "Le côté gris et la médiane bleue passent par 110 : cela fait 2 droites.",
+   "Le cercle orange passe aussi par 110, 101 et 011 : c'est la troisième droite."
+  ],
+  "a_voir": "Par 110, il manque une droite : c'est le cercle."
+ },
+ {
+  "code": "80-038",
+  "a_dire": "Chaque droite porte exactement 3 points.",
+  "legende_titre": "Trois points sur chaque droite",
+  "lecture": [
+   "Chaque rangée donne une droite : un trait de sa couleur, puis la liste de ses points.",
+   "Les trois premières sont les côtés, les trois suivantes les médianes, la dernière le cercle.",
+   "Les trois disques verts à droite rappellent que chaque liste a 3 points."
+  ],
+  "a_voir": "Les sept listes ont toutes trois points."
+ },
+ {
+  "code": "80-039",
+  "a_dire": "Par chaque point passent exactement 3 droites : 2 sans le cercle, puis le cercle en ajoute 1.",
+  "legende_titre": "Trois droites par chaque point",
+  "lecture": [
+   "Le cercle est en pointillés rouges : on le retire.",
+   "Chaque milieu orange porte le nombre 2 : un côté et une médiane passent par lui.",
+   "Avec le cercle, chaque milieu a 3 droites."
+  ],
+  "a_voir": "Sans le cercle 2 droites, avec le cercle 3."
+ },
+ {
+  "code": "80-040",
+  "a_dire": "Deux points déterminent une droite : 110 et 001 sont sur une seule droite, la médiane.",
+  "legende_titre": "Deux points, une seule droite",
+  "lecture": [
+   "Les deux points orange sont 110 et 001.",
+   "La droite verte épaisse, la médiane, passe par les deux.",
+   "Les deux autres droites par 110, en pointillés rouges, ne passent pas par 001."
+  ],
+  "a_voir": "Une seule droite contient les deux points."
+ },
+ {
+  "code": "80-041",
+  "a_dire": "Deux droites se coupent en un point : le cercle et la médiane se coupent en 011.",
+  "legende_titre": "Deux droites, un point commun",
+  "lecture": [
+   "Le cercle orange porte 110, 101 et 011.",
+   "La médiane bleue porte 100, 111 et 011.",
+   "Le disque vert 011 est le seul point des deux listes."
+  ],
+  "a_voir": "Les deux droites ont exactement un point en commun."
+ },
+ {
+  "code": "80-042",
+  "a_dire": "Il n'y a pas de parallèles : deux droites se coupent toujours, ce qui donne 21 paires de droites repérées.",
+  "legende_titre": "Pas de droites parallèles",
+  "lecture": [
+   "Le point vert 011 est sur trois droites : d₁ est un côté gris, d₂ la médiane bleue, d₃ le cercle orange.",
+   "Les trois paires de ces droites se coupent chacune en 011.",
+   "7 points avec 3 paires chacun font 21 paires, et aucune paire n’est parallèle."
+  ],
+  "a_voir": "Chaque paire de droites se coupe en un point : aucune n’est parallèle."
+ },
+ {
+  "code": "80-043",
+  "a_dire": "Trois points sont alignés quand la somme de leurs étiquettes, chiffre par chiffre, vaut 000.",
+  "legende_titre": "Trois points alignés : somme nulle",
+  "lecture": [
+   "Les trois rangées bleues sont les étiquettes des trois points du cercle orange.",
+   "Chaque colonne de chiffres s'additionne seule ; dans l'horloge à 2 heures, 1 + 1 = 0.",
+   "La rangée verte du bas est la somme : 000."
+  ],
+  "a_voir": "Les trois points du cercle donnent 000."
+ },
+ {
+  "code": "80-044",
+  "a_dire": "Le troisième point de la droite par u et v est u + v.",
+  "legende_titre": "Le troisième point est la somme",
+  "lecture": [
+   "La rangée bleue est 𝑢 = 100, la rangée violette est 𝑣 = 010.",
+   "La rangée verte est leur somme chiffre par chiffre : 110.",
+   "Dans le triangle, 110 est le troisième point de la droite verte qui passe par 𝑢 et 𝑣."
+  ],
+  "a_voir": "La somme de deux points est le troisième point de leur droite."
+ },
+ {
+  "code": "80-045",
+  "a_dire": "Dans l'horloge à 2 heures, 1 + 1 donne 0 : on ajoute chiffre par chiffre avec cette règle.",
+  "legende_titre": "Une horloge qui n'a que 0 et 1",
+  "lecture": [
+   "L'horloge de gauche est à 1 : l'aiguille orange vise le 1.",
+   "La flèche orange avance d'une heure.",
+   "L'horloge de droite est revenue à 0 : l'aiguille vise le 0."
+  ],
+  "a_voir": "1 plus 1 donne 0."
+ },
+ {
+  "code": "80-046",
+  "a_dire": "Sur le cercle, 110 + 101 = 011, puis 011 + 011 = 000.",
+  "legende_titre": "Deux additions sur le cercle",
+  "lecture": [
+   "À gauche, 110 (bleu) plus 101 (violet) donne 011 (vert), chiffre par chiffre.",
+   "La ligne grise sous chaque addition montre les additions des chiffres.",
+   "À droite, 011 plus 011 donne 000 : chaque chiffre ajouté à lui-même donne 0."
+  ],
+  "a_voir": "Un point ajouté à lui-même donne 000."
+ },
+ {
+  "code": "80-047",
+  "a_dire": "Sur la médiane bleue, 100 + 011 = 111.",
+  "legende_titre": "Une addition sur la médiane",
+  "lecture": [
+   "La rangée bleue est 100, la rangée violette est 011.",
+   "La rangée verte est la somme : 111.",
+   "Dans le triangle, ces trois points sont sur la médiane bleue."
+  ],
+  "a_voir": "Les deux premiers points donnent le troisième de la médiane."
+ },
+ {
+  "code": "80-048",
+  "a_dire": "Les étiquettes sont les triplets non nuls de nombres de l'horloge à 2 heures ; on peut les additionner et les multiplier par 0 ou 1.",
+  "legende_titre": "Les étiquettes se calculent comme des vecteurs",
+  "lecture": [
+   "Les trois cases bleues forment le triplet 101 : trois chiffres, donc dimension 3.",
+   "La case verte de gauche additionne deux triplets chiffre par chiffre.",
+   "Les deux cases vertes de droite multiplient 101 par 0 puis par 1."
+  ],
+  "a_voir": "On additionne les triplets, et on les multiplie par 0 ou par 1."
+ }
+]

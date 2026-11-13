@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 38, 26, 12, 'sujet', label=r'$3$ et $4$'); box(ax, 58, 38, 26, 12, 'sujet', label=r'$7$')
+box(ax, 4, 6, 26, 12, 'autre', label=r'restes $1$, $0$'); box(ax, 58, 6, 26, 12, 'resultat', label=r'$1$')
+arrow(ax, (31, 44), (57, 44), 'varie'); text(ax, 44, 47.5, r'$3 + 4$', 'varie', 's')
+arrow(ax, (31, 12), (57, 12), 'varie'); text(ax, 44, 15.5, r'$1 + 0$', 'varie', 's')
+arrow(ax, (17, 37), (17, 19), 'autre'); text(ax, 19.5, 28, 'reste', 'autre', 's', ha='left')
+arrow(ax, (71, 37), (71, 19), 'autre'); text(ax, 68.5, 28, 'reste', 'autre', 's', ha='right')
+text(ax, 44, 28, 'les deux chemins\ndonnent 1', 'resultat', 's')
+save(fig, '80-490')

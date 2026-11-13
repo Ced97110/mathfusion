@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'un plan pour $q = 6$ ?', 'varie', 'm')
+for i, n in enumerate([2, 3, 4, 5]): box(ax, 3 + i * 17, 38, 15, 11, 'sujet', label=str(n), size='l')
+box(ax, 71, 38, 15, 11, 'autre', label='6', size='l')
+brace(ax, 3, 66, 51, 'sujet', label='puissances d’un nombre premier', down=False)
+text(ax, 3 + 2 * 17 + 7.5, 34, r'$2 \times 2$', 'sujet', 's')
+text(ax, 78.5, 33.5, 'pas une\npuissance', 'autre', 's')
+arrow(ax, (78.5, 29), (78.5, 24), 'varie')
+box(ax, 22, 12, 64, 11, 'varie', label=r'$q = 6$ : 36 + 6 + 1 = 43 points')
+text(ax, 54, 6, 'un tel plan existe-t-il ? ouvert', 'varie', 's', weight='bold')
+save(fig, '80-499')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+box(ax, 2, 20, 26, 14, 'sujet', label=r'$AB = \{b\}$')
+text(ax, 33, 27, '+', 'varie', 'xl')
+box(ax, 38, 20, 26, 14, 'autre', label=r'$BA = \{b\}$')
+text(ax, 69, 27, '=', 'encre', 'xl')
+box(ax, 74, 20, 12, 14, 'resultat', label=r'$\varnothing$', size='l')
+text(ax, 33, 12, r'même partie : $\{b\}$ deux fois', 'fixe', 's')
+text(ax, 80, 12, 'vide', 'resultat', 's')
+save(fig, '80-320')

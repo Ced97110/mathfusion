@@ -1,0 +1,267 @@
+[
+ {
+  "code": "80-193",
+  "a_dire": "Le parallèle garde les positions où au moins un circuit passe.",
+  "legende_titre": "Deux circuits, une réunion",
+  "lecture": [
+   "Le disque bleu est le premier circuit, le disque violet est le second.",
+   "La partie du milieu est la position commune, où les deux passent.",
+   "Tout le vert, sous l'accolade, est la réunion ∪."
+  ],
+  "a_voir": "La position commune est gardée aussi, car l'un au moins passe."
+ },
+ {
+  "code": "80-194",
+  "a_dire": "Chacune des 16 parties de 4 positions a un circuit.",
+  "legende_titre": "Seize parties, seize circuits",
+  "lecture": [
+   "Chaque petit carré de quatre cases est une partie des 4 positions.",
+   "Une case bleue est dans la partie, une case en pointillés n'y est pas.",
+   "Le carré tout en pointillés est la partie vide, le carré tout bleu contient les quatre positions."
+  ],
+  "a_voir": "Les 16 carrés sont différents, et aucun n'est laissé de côté."
+ },
+ {
+  "code": "80-195",
+  "a_dire": "La série a, b′ ne passe que dans la position (1, 0).",
+  "legende_titre": "Une position, une série",
+  "lecture": [
+   "La case bleue est l'interrupteur a, fermé.",
+   "La case orange est b′, le couplé de b, fermé parce que b est ouvert.",
+   "Les deux cases sont l'une après l'autre sur le même fil."
+  ],
+  "a_voir": "Le courant passe seulement si a est fermé et b ouvert."
+ },
+ {
+  "code": "80-196",
+  "a_dire": "On met en parallèle une série par position de la partie.",
+  "legende_titre": "Deux séries côte à côte",
+  "lecture": [
+   "La branche du haut est la série a, b pour la position (1, 1).",
+   "La branche du bas est la série a′, b pour la position (0, 1).",
+   "Les deux branches sont reliées aux mêmes bornes : c'est le parallèle."
+  ],
+  "a_voir": "Il y a deux branches parce que la partie a deux positions."
+ },
+ {
+  "code": "80-197",
+  "a_dire": "La partie vide est réalisée par O, le fil coupé.",
+  "legende_titre": "Aucune position, aucun courant",
+  "lecture": [
+   "Le fil gris va d'une borne à l'autre.",
+   "Le trait rouge ouvre le fil : c'est le circuit O.",
+   "Il n'y a aucune branche, car la partie n'a aucune position."
+  ],
+  "a_voir": "Le fil coupé ne laisse passer le courant dans aucune position."
+ },
+ {
+  "code": "80-198",
+  "a_dire": "Avec deux lettres, 4 positions donnent 2×2×2×2 = 16 circuits.",
+  "legende_titre": "Quatre choix de deux",
+  "lecture": [
+   "Chaque colonne est une des 4 positions, écrite dans ses deux cases.",
+   "La case bleue du haut est le choix « dans la partie », la case en pointillés est « hors ».",
+   "Les quatre colonnes se multiplient : 2 × 2 × 2 × 2 = 16."
+  ],
+  "a_voir": "Chaque position offre deux choix, et il y a quatre positions."
+ },
+ {
+  "code": "80-199",
+  "a_dire": "Avec trois lettres, 8 positions donnent 2⁸ = 256 circuits.",
+  "legende_titre": "Huit positions, deux choix chacune",
+  "lecture": [
+   "Chaque case bleue est l'une des 8 positions des trois interrupteurs.",
+   "Le rond sous une case est la lampe : pleine pour 1, vide pour 0.",
+   "Huit choix de 2 donnent 2⁸ = 256 circuits, donc 256 fonctions booléennes."
+  ],
+  "a_voir": "Chaque position a sa lampe allumée ou éteinte, et chaque choix fait une fonction."
+ },
+ {
+  "code": "80-200",
+  "a_dire": "Un anneau de Boole vérifie x² = x pour tous ses éléments.",
+  "legende_titre": "Trois anneaux, une règle",
+  "lecture": [
+   "La première ligne, rouge, montre que 2² = 4 dans les entiers, et 4 n'est pas 2.",
+   "La deuxième ligne, rouge, montre que 2² = 0 sur le cadran à 4 heures, et 0 n'est pas 2.",
+   "La ligne verte montre que 0² = 0 et 1² = 1 dans ℤ/2."
+  ],
+  "a_voir": "La règle est fausse dans les deux premiers anneaux et vraie dans le troisième."
+ },
+ {
+  "code": "80-201",
+  "a_dire": "ℤ/2 est un anneau de Boole : 0² = 0 et 1² = 1.",
+  "legende_titre": "Deux tests suffisent",
+  "lecture": [
+   "Les cases bleues sont les deux éléments, 0 et 1.",
+   "Chaque flèche orange est la mise au carré.",
+   "Les cases vertes montrent le résultat : égal à l'élément de départ."
+  ],
+  "a_voir": "Les deux tests réussissent, donc la règle tient pour tout l'anneau."
+ },
+ {
+  "code": "80-202",
+  "a_dire": "On passe d'une algèbre de Boole à un anneau avec ab = a ∧ b et a + b = (a ∧ b′) ∨ (a′ ∧ b).",
+  "legende_titre": "De l'algèbre à l'anneau",
+  "lecture": [
+   "La case bleue est l'algèbre, avec ses opérations ∧, ∨ et ′.",
+   "La case violette est l'anneau, avec + et ×.",
+   "La flèche verte donne le produit, la flèche orange donne la somme."
+  ],
+  "a_voir": "Les deux formules n'emploient que ∧, ∨ et le complément."
+ },
+ {
+  "code": "80-203",
+  "a_dire": "La somme (a ∧ b′) ∨ (a′ ∧ b) se calcule en trois actions.",
+  "legende_titre": "Trois actions pour A + B",
+  "lecture": [
+   "Les lignes bleue et violette sont A et B : une case pleine est un nombre dans la partie.",
+   "Les deux lignes orange sont les actions 1 et 2 : ce qui est dans A seul, puis dans B seul.",
+   "La ligne verte réunit les deux résultats : 1 et 3."
+  ],
+  "a_voir": "Le nombre 2, qui est dans A et dans B, disparaît."
+ },
+ {
+  "code": "80-204",
+  "a_dire": "Le produit ab = a ∧ b est la partie commune.",
+  "legende_titre": "Le produit est la partie commune",
+  "lecture": [
+   "Les lignes bleue et violette sont A et B.",
+   "La ligne verte AB garde seulement les nombres présents dans A et dans B.",
+   "Dans le second cas, aucune case verte : la partie est vide."
+  ],
+  "a_voir": "La formule reste la même, seules les parties changent."
+ },
+ {
+  "code": "80-205",
+  "a_dire": "La différence symétrique A + B garde ce qui est dans A ou dans B, pas dans les deux.",
+  "legende_titre": "Ce qui est gardé et écarté",
+  "lecture": [
+   "Le disque bleu est A, le disque violet est B.",
+   "Les parties vertes contiennent 1 et 3 : ils sont gardés.",
+   "La partie rouge au milieu contient 2 : il est écarté."
+  ],
+  "a_voir": "La partie commune est le seul endroit écarté."
+ },
+ {
+  "code": "80-206",
+  "a_dire": "En logique, la somme a + b est le « ou exclusif » : elle refuse le cas où les deux sont vrais.",
+  "legende_titre": "Deux « ou » comparés",
+  "lecture": [
+   "La colonne verte est a ∨ b, la colonne orange est a + b.",
+   "Chaque ligne donne les valeurs de a et de b à gauche.",
+   "La case rouge montre que a + b vaut 0 quand a et b valent tous deux 1."
+  ],
+  "a_voir": "Seule la dernière ligne est différente : 1 pour ∨, 0 pour +."
+ },
+ {
+  "code": "80-207",
+  "a_dire": "De l'anneau à l'algèbre, trois formules ; elles échouent si x² = x est fausse.",
+  "legende_titre": "Trois formules et un échec",
+  "lecture": [
+   "Les trois cases bleues du haut sont les formules.",
+   "Les cases orange appliquent les formules à 2 : 2′ vaut 3, puis 2 × 3 vaut 6.",
+   "La case rouge montre que 6 n'est pas 0, donc le passage échoue."
+  ],
+  "a_voir": "Le résultat attendu est 0, mais le calcul donne 6."
+ },
+ {
+  "code": "80-208",
+  "a_dire": "Le « ou » s'écrit a ∨ b = a + b + ab.",
+  "legende_titre": "Trois actions pour le « ou »",
+  "lecture": [
+   "La case orange de gauche est la somme a + b, qui vaut 0.",
+   "La case orange de droite est le produit ab, qui vaut 1.",
+   "La case verte additionne les deux : le résultat est 1."
+  ],
+  "a_voir": "Le terme ab corrige la somme, qui seule donnerait 0."
+ },
+ {
+  "code": "80-209",
+  "a_dire": "Le « et » s'écrit a ∧ b = ab.",
+  "legende_titre": "Le produit de deux valeurs",
+  "lecture": [
+   "Les chiffres violets en haut sont les valeurs de b.",
+   "Les chiffres bleus à gauche sont les valeurs de a.",
+   "Chaque case est le produit ab ; seule la case verte vaut 1."
+  ],
+  "a_voir": "Le produit vaut 1 seulement quand a et b valent 1."
+ },
+ {
+  "code": "80-210",
+  "a_dire": "Le complément s'écrit a′ = 1 + a : il échange 0 et 1.",
+  "legende_titre": "Ajouter 1 échange 0 et 1",
+  "lecture": [
+   "Les cases bleues sont les éléments a de départ.",
+   "Chaque flèche orange est l'ajout de 1.",
+   "Les cases vertes sont les compléments a′."
+  ],
+  "a_voir": "Les deux flèches croisent les valeurs : 0 donne 1 et 1 donne 0."
+ },
+ {
+  "code": "80-211",
+  "a_dire": "Algèbre et anneau de Boole sont deux descriptions du même objet, tant que x × x = x.",
+  "legende_titre": "Le passage tient grâce à x² = x",
+  "lecture": [
+   "La double flèche verte relie l’algèbre à l’anneau quand la règle x × x = x est vraie : c’est le même objet.",
+   "Sans la règle, dans le cadran à 4 h, 2 × 2 vaut 0 et non 2.",
+   "Les cases suivent le passage : 2′ vaut 3, puis 2 ∧ 2′ vaut 2 et non 0."
+  ],
+  "a_voir": "Sans la règle, le calcul donne 2 là où une algèbre de Boole donne 0."
+ },
+ {
+  "code": "80-212",
+  "a_dire": "Passer de l'anneau à l'algèbre puis revenir redonne l'anneau de départ.",
+  "legende_titre": "Un aller-retour sans perte",
+  "lecture": [
+   "La case bleue du haut est l'anneau au départ ; la case bleue du bas est l'anneau au retour.",
+   "La grande case violette est l'algèbre : elle porte les formules de l'aller.",
+   "La flèche du bas donne la formule du retour pour la somme.",
+   "Le signe = vert relie les deux anneaux : leurs sommes sont les mêmes."
+  ],
+  "a_voir": "Rien n'est perdu ni ajouté pendant l'aller-retour."
+ },
+ {
+  "code": "80-213",
+  "a_dire": "Stone a montré que l'algèbre de la logique est un anneau avec la seule règle x² = x.",
+  "legende_titre": "Les anneaux, plus une règle",
+  "lecture": [
+   "La case grise est l'ensemble des règles des anneaux.",
+   "La case orange est la seule règle en plus : x² = x.",
+   "La case verte, à droite du signe =, est l'algèbre de la logique."
+  ],
+  "a_voir": "Une seule règle s'ajoute à celles des anneaux."
+ },
+ {
+  "code": "80-214",
+  "a_dire": "Un atome est un élément a ≠ 0 sans élément strictement entre 0 et a.",
+  "legende_titre": "Les atomes des diviseurs de 30",
+  "lecture": [
+   "Chaque rond est un diviseur de 30 ; un trait relie un diviseur au suivant plus haut.",
+   "Le rond du bas, 1, est le plus bas.",
+   "Les ronds bleus 2, 3 et 5 sont les atomes : rien n'est entre 1 et eux."
+  ],
+  "a_voir": "Les atomes sont 2, 3 et 5, sans parler de parties."
+ },
+ {
+  "code": "80-215",
+  "a_dire": "Dans P(S), les atomes sont les parties à un seul élément.",
+  "legende_titre": "Les parties de {1, 2, 3}",
+  "lecture": [
+   "Chaque case est une partie de {1, 2, 3} ; le vide est en bas.",
+   "Les cases bleues {1}, {2} et {3} sont juste au-dessus du vide : ce sont les atomes.",
+   "Le trait orange montre que {1} est entre le vide et {1, 2}, donc {1, 2} n'est pas un atome."
+  ],
+  "a_voir": "Trois atomes, parce que l'ensemble a trois éléments."
+ },
+ {
+  "code": "80-216",
+  "a_dire": "Dans le cas fini, chaque élément est connu par l'ensemble de ses atomes.",
+  "legende_titre": "Un élément, ses atomes",
+  "lecture": [
+   "Les cases bleues du haut sont les éléments 6 et 10.",
+   "Les cases violettes à droite sont leurs atomes, reliés par une flèche à double sens.",
+   "En bas, 2 et 5 donnent 10, leur plus petit multiple commun."
+  ],
+  "a_voir": "Deux éléments différents n'ont jamais les mêmes atomes."
+ }
+]

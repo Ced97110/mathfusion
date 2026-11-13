@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 78, 'les trois formules', 'sujet', 'm')
+box(ax, 2, 62, 40, 10, 'sujet', label=r'$a\vee b=a+b+ab$', size='s')
+box(ax, 46, 62, 40, 10, 'sujet', label=r'$a\wedge b=ab$', size='s')
+box(ax, 24, 48, 40, 10, 'sujet', label=r'$a^{\prime}=1+a$', size='s')
+text(ax, 44, 40, r'essai dans les entiers, avec 2', 'fixe', 's')
+box(ax, 4, 26, 80, 9, 'varie', label=r'$2^{\prime}=1+2=3$', size='s')
+box(ax, 4, 14, 80, 9, 'varie', label=r'$2\wedge2^{\prime}=2\times3=6$', size='s')
+box(ax, 4, 2, 80, 9, 'limite', label=r'attendu $0$ : $6\neq0$, échec', size='s')
+save(fig, '80-207')

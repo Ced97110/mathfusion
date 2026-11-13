@@ -1,0 +1,52 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+def hasse(ax, cx, y0, dx, dy, roles=None, hot=None, bw=7.5, bh=5.0, size='m'):
+    roles = roles or {}; hot = hot or {}
+    pos = {1: (cx, y0), 2: (cx - dx, y0 + dy), 3: (cx, y0 + dy), 5: (cx + dx, y0 + dy),
+           6: (cx - dx, y0 + 2 * dy), 10: (cx, y0 + 2 * dy), 15: (cx + dx, y0 + 2 * dy), 30: (cx, y0 + 3 * dy)}
+    edges = [(1, 2), (1, 3), (1, 5), (2, 6), (3, 6), (2, 10), (5, 10), (3, 15), (5, 15), (6, 30), (10, 30), (15, 30)]
+    for a, b in edges:
+        (xa, ya), (xb, yb) = pos[a], pos[b]
+        line(ax, [(xa, ya + bh / 2), (xb, yb - bh / 2)], hot.get((a, b), 'fixe'), lw=1.6 if (a, b) in hot else 0.8)
+    for n, (x, y) in pos.items():
+        box(ax, x - bw / 2, y - bh / 2, bw, bh, roles.get(n, 'fixe'), label=str(n), size=size)
+    return pos
+
+def seg(ax, p, q, rp=0.0, rq=0.0, role='fixe', lw=0.8):
+    d = math.hypot(q[0] - p[0], q[1] - p[1]); ux, uy = (q[0] - p[0]) / d, (q[1] - p[1]) / d
+    line(ax, [(p[0] + ux * rp, p[1] + uy * rp), (q[0] - ux * rq, q[1] - uy * rq)], role, lw=lw)
+
+def steps(ax, y_top, items, h=11, gap=4, nums=True):
+    x0 = 12 if nums else 4
+    cx = (x0 + 86) / 2; y = y_top
+    for i, (role, l1, l2) in enumerate(items):
+        yb = y - h
+        box(ax, x0, yb, 86 - x0, h, role, lw=1.6 if role == 'varie' else 0.8)
+        if l2:
+            text(ax, cx, yb + h * 0.7, l1, role, 's'); text(ax, cx, yb + h * 0.27, l2, 'encre', 's')
+        else:
+            text(ax, cx, yb + h / 2, l1, role, 's')
+        if nums: disc(ax, 7, yb + h / 2, 3, role, label=str(i + 1), size='s')
+        if i < len(items) - 1: arrow(ax, (cx, yb), (cx, yb - gap), 'fixe')
+        y = yb - gap
+
+GX = {2: 40, 3: 53, 5: 66}
+def grow(ax, y, name, present, role):
+    text(ax, 30, y + 3.5, name, 'encre', 's', ha='right')
+    for p, x in GX.items():
+        if p in present: box(ax, x - 5.5, y, 11, 7, role, label=str(p), size='s')
+        else: box(ax, x - 5.5, y, 11, 7, 'fixe', fill=False, dash=True, lw=0.5)
+
+fig, ax = canvas(56)
+line(ax, [(44, 6), (44, 54)], 'fixe', dash=True)
+text(ax, 22, 52, 'atomes distincts', 'resultat', 's')
+box(ax, 9, 36, 10, 7, 'sujet', label='2'); box(ax, 25, 36, 10, 7, 'sujet', label='3')
+arrow(ax, (14, 36), (19, 29.3), 'fixe'); arrow(ax, (30, 36), (25, 29.3), 'fixe')
+box(ax, 16, 22, 12, 7, 'resultat', label='1')
+text(ax, 22, 14, '2 ∧ 3 = 1 = O', 'resultat', 'm')
+text(ax, 66, 52, 'même atome deux fois', 'limite', 's')
+box(ax, 53, 36, 10, 7, 'sujet', label='2'); box(ax, 69, 36, 10, 7, 'sujet', label='2')
+arrow(ax, (58, 36), (63, 29.3), 'fixe'); arrow(ax, (74, 36), (69, 29.3), 'fixe')
+box(ax, 60, 22, 12, 7, 'limite', label='2')
+text(ax, 66, 14, '2 ∧ 2 = 2, pas O', 'limite', 'm')
+save(fig, '80-231')

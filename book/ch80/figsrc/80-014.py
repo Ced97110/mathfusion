@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,22,56,'plan actuel','encre','m'); text(ax,66,56,'géométrie cherchée','encre','m')
+for x in (14,30): line(ax,[(x,16),(x,48)],'sujet',lw=1.4)
+text(ax,22,9,'aucun point commun','limite','s')
+line(ax,[(54,16),(66,48)],'sujet',lw=1.4); line(ax,[(78,16),(66,48)],'sujet',lw=1.4)
+disc(ax,66,48,1.5,'varie')
+text(ax,66,42,'point ajouté','varie','s')
+text(ax,66,9,'toujours un point commun','resultat','s')
+save(fig,'80-014')

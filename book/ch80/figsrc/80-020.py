@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(54)
+text(ax,44,48,'Boole, 1847 : une algèbre','varie','l',weight='bold')
+box(ax,2,8,34,32,'fixe')
+text(ax,19,34,'alarme décrite','fixe','s'); text(ax,19,30,'par des mots','fixe','s')
+text(ax,19,19,r'« $x$ ou $x$ »','encre','m')
+box(ax,52,8,34,32,'sujet')
+text(ax,69,34,'règles de calcul','sujet','s'); text(ax,69,30,'sur des lettres','sujet','s')
+text(ax,69,19,r'$x$ ou $x=x$','sujet','m')
+arrow(ax,(38,19),(50,19),'varie',lw=1.5)
+text(ax,44,25,'Boole','varie','s')
+text(ax,44,3,'comme les lettres du chapitre 15','encre','s')
+save(fig,'80-020')

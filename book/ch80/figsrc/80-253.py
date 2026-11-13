@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+text(ax,44,70,'1 point par contrôle','fixe','s')
+text(ax,2,56,r'$S$ fini','sujet','s',ha='left')
+for x in (36,52,68): box(ax,x,51,14,10,'sujet',label='1',size='s')
+text(ax,52,43,r'$g$(0) = 1 + 1 + 1 = 3','resultat','s')
+text(ax,2,28,r'$S$ infini','limite','s',ha='left')
+text(ax,30,28,'…','limite','l')
+for x in (36,52,68): box(ax,x,23,14,10,'limite',label='1',size='s')
+text(ax,52,15,r'$g$(0) : aucun nombre','limite','s')
+text(ax,52,7,'1 + 1 + 1 + … sans fin','limite','s')
+save(fig,'80-253')

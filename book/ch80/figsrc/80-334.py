@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+f = numberline(ax, 8, 68, 56, 0, 24, step=1, every=6)
+for v in (0, 6, 12, 18, 24): disc(ax, f(v), 56, 2.2, 'sujet')
+text(ax, 38, 68, r'multiples de 6 : un idéal de $\mathbb{Z}$', 'sujet', 's')
+text(ax, 44, 42, r'idéal : $x+y$ et $k\,x$ restent dedans', 'varie', 's'); text(ax, 44, 36, r'($k$ : n’importe quel élément)', 'varie', 's')
+box(ax, 2, 14, 38, 14, 'sujet', label=r'idéaux de l’algèbre $B$', size='s')
+box(ax, 48, 14, 38, 14, 'autre', label=r'idéaux de l’anneau $B$', size='s')
+text(ax, 44, 21, '=', 'resultat', 'xl', weight='bold'); text(ax, 44, 8, 'mêmes idéaux', 'resultat', 's')
+save(fig, '80-334')

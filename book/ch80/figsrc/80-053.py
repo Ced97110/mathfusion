@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,4,4,80,56,'autre')
+text(ax,44,54,'corps gauche','autre','m',weight='bold')
+text(ax,44,47,r'$a\times b$ peut différer de $b\times a$','autre','s')
+box(ax,10,8,68,32,'sujet')
+text(ax,44,34,'corps','sujet','m',weight='bold')
+text(ax,44,28,r'$a\times b = b\times a$','resultat','s')
+disc(ax,26,16,6,'fixe',label=r'$\mathbb{R}$',size='m')
+disc(ax,60,16,6,'fixe',label=r'$\mathbb{Z}/2$',size='s')
+save(fig,'80-053')

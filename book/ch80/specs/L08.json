@@ -1,0 +1,266 @@
+[
+ {
+  "code": "80-169",
+  "a_dire": "Un circuit série-parallèle s'obtient en remplaçant un interrupteur par une série ou un parallèle, puis en recommençant.",
+  "legende_titre": "On remplace, puis on recommence",
+  "lecture": [
+   "La ligne du haut montre deux interrupteurs en série ; le b orange va être remplacé.",
+   "Au milieu, b est remplacé par deux interrupteurs en parallèle, b et c ; c est orange.",
+   "En bas, c est remplacé à son tour par deux interrupteurs en série, c et d."
+  ],
+  "a_voir": "Chaque ligne est le circuit de la ligne précédente avec un interrupteur remplacé."
+ },
+ {
+  "code": "80-170",
+  "a_dire": "Deux circuits sont équivalents s'ils laissent passer le courant dans les mêmes positions, même avec des dessins différents.",
+  "legende_titre": "Six interrupteurs, un seul : même effet",
+  "lecture": [
+   "À gauche, six interrupteurs a en bleu ; à droite, un seul a en violet.",
+   "La flèche à deux pointes dit que les deux circuits se comparent.",
+   "Les deux lignes en bas disent que le courant passe quand a est fermé et pas quand a est ouvert, pour les deux."
+  ],
+  "a_voir": "Les deux dessins sont très différents, mais ils passent dans les mêmes positions."
+ },
+ {
+  "code": "80-171",
+  "a_dire": "Des circuits équivalents sont écrits égaux : ce qui compte est ce que fait le circuit.",
+  "legende_titre": "Deux dessins, une égalité",
+  "lecture": [
+   "À gauche, six interrupteurs : trois branches en parallèle, chacune avec deux interrupteurs en série (lettres a, b, b′).",
+   "À droite, un seul interrupteur a.",
+   "Le signe = orange les relie, et l’accolade verte dit qu’ils passent dans les mêmes positions."
+  ],
+  "a_voir": "On écrit = entre deux dessins différents qui se comportent de la même façon."
+ },
+ {
+  "code": "80-172",
+  "a_dire": "L'interrupteur a′ est couplé à a en sens contraire : ouvert quand a est fermé, fermé quand a est ouvert.",
+  "legende_titre": "Deux interrupteurs qui font l'inverse",
+  "lecture": [
+   "Sur chaque ligne, a est à gauche et a′ est à droite.",
+   "Un cadre vert plein est fermé ; un cadre gris en tirets est ouvert.",
+   "Sur la première ligne a est ouvert et a′ est fermé ; sur la seconde, c'est le contraire."
+  ],
+  "a_voir": "Quand l'un est fermé, l'autre est ouvert."
+ },
+ {
+  "code": "80-173",
+  "a_dire": "Le circuit I est un fil : le courant passe toujours.",
+  "legende_titre": "Un fil laisse toujours passer",
+  "lecture": [
+   "Le trait vert relie les deux bornes sans interrupteur.",
+   "La lettre I en vert nomme ce fil.",
+   "Le cadre vert dit que le courant passe dans toutes les positions."
+  ],
+  "a_voir": "Il n'y a aucun interrupteur à manœuvrer sur ce fil."
+ },
+ {
+  "code": "80-174",
+  "a_dire": "Le circuit O est un fil coupé : le courant ne passe jamais.",
+  "legende_titre": "Un fil coupé ne laisse jamais passer",
+  "lecture": [
+   "Le trait gris est interrompu au milieu par une croix rouge.",
+   "La lettre O en rouge nomme ce fil coupé.",
+   "Le cadre rouge dit que le courant ne passe dans aucune position."
+  ],
+  "a_voir": "Le fil est coupé, donc aucune position ne laisse passer."
+ },
+ {
+  "code": "80-175",
+  "a_dire": "Le dictionnaire met fermé en face de 1 et ouvert en face de 0.",
+  "legende_titre": "Fermé devient 1, ouvert devient 0",
+  "lecture": [
+   "Le cadre vert plein est un interrupteur fermé ; la flèche mène à 1.",
+   "Le cadre gris en tirets est un interrupteur ouvert ; la flèche mène à 0.",
+   "La colonne de gauche est le circuit, celle de droite est l'algèbre."
+  ],
+  "a_voir": "Chaque état d'un interrupteur a un chiffre."
+ },
+ {
+  "code": "80-176",
+  "a_dire": "Dans le dictionnaire, deux interrupteurs en série s'écrivent a ∧ b.",
+  "legende_titre": "La série devient ∧",
+  "lecture": [
+   "Le circuit du haut a deux interrupteurs a (bleu) et b (violet) l'un après l'autre.",
+   "La flèche orange mène à l'écriture a ∧ b.",
+   "Le texte vert dit quand le courant passe : quand a et b sont fermés."
+  ],
+  "a_voir": "Le signe ∧ se lit « et » et correspond à la série."
+ },
+ {
+  "code": "80-177",
+  "a_dire": "Dans le dictionnaire, deux interrupteurs en parallèle s'écrivent a ∨ b.",
+  "legende_titre": "Le parallèle devient ∨",
+  "lecture": [
+   "Le circuit du haut a deux branches : a (bleu) en haut, b (violet) en bas.",
+   "La flèche orange mène à l'écriture a ∨ b.",
+   "Le texte vert dit quand le courant passe : quand a ou b est fermé."
+  ],
+  "a_voir": "Le signe ∨ se lit « ou » et correspond au parallèle."
+ },
+ {
+  "code": "80-178",
+  "a_dire": "Dans le dictionnaire, l'interrupteur couplé inversé de a s'écrit a′.",
+  "legende_titre": "Le couplé inversé devient a′",
+  "lecture": [
+   "Le cadre bleu est l'interrupteur a.",
+   "Le cadre violet est l'interrupteur couplé inversé, lié à a par la flèche à deux pointes orange.",
+   "La flèche de droite mène à son écriture a′."
+  ],
+  "a_voir": "L'interrupteur qui fait le contraire de a s'écrit a′."
+ },
+ {
+  "code": "80-179",
+  "a_dire": "Le dictionnaire écrit le fil I et le fil coupé O.",
+  "legende_titre": "Fil et fil coupé en lettres",
+  "lecture": [
+   "La ligne du haut est un fil vert, écrit I.",
+   "La ligne du bas est un fil coupé par une croix rouge, écrit O.",
+   "Le circuit est à gauche, l'algèbre à droite."
+  ],
+  "a_voir": "Une lettre pour le fil, une lettre pour le fil coupé."
+ },
+ {
+  "code": "80-180",
+  "a_dire": "Les circuits série-parallèle restent dans l'ensemble quand on fait une série, un parallèle ou un couplé : ils forment une algèbre de Boole.",
+  "legende_titre": "On ne sort pas de l'ensemble",
+  "lecture": [
+   "Le grand cadre bleu en tirets est l’ensemble des circuits série-parallèle.",
+   "Dedans, trois circuits verts : a ∧ b en série, a ∨ b en parallèle, a′ couplé.",
+   "Chaque résultat est lui-même dans le cadre ; les cinq axiomes tiennent, donc c’est une algèbre de Boole."
+  ],
+  "a_voir": "Chaque opération donne encore un circuit du cadre : c’est une algèbre de Boole."
+ },
+ {
+  "code": "80-181",
+  "a_dire": "L'ordre de deux interrupteurs en série ne change pas le passage du courant.",
+  "legende_titre": "L'ordre ne change rien en série",
+  "lecture": [
+   "La première ligne a un a fermé (vert) puis un b ouvert (gris, tirets) : ne passe pas.",
+   "La flèche orange échange l'ordre sur la deuxième ligne : ne passe toujours pas.",
+   "La troisième ligne a deux interrupteurs fermés : le courant passe."
+  ],
+  "a_voir": "Le courant passe seulement si chaque interrupteur est fermé, quel que soit l'ordre."
+ },
+ {
+  "code": "80-182",
+  "a_dire": "Un interrupteur a en parallèle avec un fil coupé O se comporte comme a seul.",
+  "legende_titre": "a avec O revient à a",
+  "lecture": [
+   "À gauche, a est en haut et le fil coupé O est en bas.",
+   "À droite, a est seul.",
+   "Le texte vert dit que le courant passe quand a est fermé."
+  ],
+  "a_voir": "La branche O ne laisse rien passer, seule la branche a compte."
+ },
+ {
+  "code": "80-183",
+  "a_dire": "a et a′ en série ne passent jamais ; en parallèle, ils passent toujours.",
+  "legende_titre": "Série jamais, parallèle toujours",
+  "lecture": [
+   "La colonne de gauche est la position a fermé, celle de droite a ouvert.",
+   "Dans les deux colonnes, la série de a et a′ ne passe pas.",
+   "Dans les deux colonnes, le parallèle de a et a′ passe."
+  ],
+  "a_voir": "Un des deux est fermé et l'autre ouvert, dans chaque position."
+ },
+ {
+  "code": "80-184",
+  "a_dire": "Les deux circuits de la distributivité ont des formes différentes mais passent dans les mêmes positions.",
+  "legende_titre": "Deux dessins pour la distributivité",
+  "lecture": [
+   "En haut, a en bleu est en série avec b et c (violet) en parallèle.",
+   "En bas, deux branches : a puis b, et a puis c.",
+   "Le signe = orange les relie ; le texte vert dit quand le courant passe."
+  ],
+  "a_voir": "Dans les deux cas, a doit être fermé et b ou c aussi."
+ },
+ {
+  "code": "80-185",
+  "a_dire": "Les lois de De Morgan : le couplé d'une série est un parallèle de couplés, et inversement.",
+  "legende_titre": "Deux règles qui échangent ∧ et ∨",
+  "lecture": [
+   "La première ligne écrit (a ∧ b)′ = a′ ∨ b′.",
+   "La deuxième ligne écrit (a ∨ b)′ = a′ ∧ b′.",
+   "Le texte orange dit ce qui change : le signe et chaque lettre."
+  ],
+  "a_voir": "Le signe ∧ devient ∨, et chaque lettre prend ′."
+ },
+ {
+  "code": "80-186",
+  "a_dire": "Le circuit (a ∧ b)′ laisse passer le courant exactement quand la série ne passe pas.",
+  "legende_titre": "Le couplé passe quand la série bloque",
+  "lecture": [
+   "Les quatre colonnes sont les quatre positions (a, b).",
+   "La ligne du haut est la série : elle ne passe qu'en (1,1).",
+   "La ligne du bas est son couplé : il passe partout sauf en (1,1)."
+  ],
+  "a_voir": "Chaque flèche relie un résultat à son contraire."
+ },
+ {
+  "code": "80-187",
+  "a_dire": "Le couplé de la série a ∧ b est le parallèle de a′ et b′.",
+  "legende_titre": "Le couplé d'une série devient un parallèle",
+  "lecture": [
+   "À gauche, le cadre orange en tirets entoure la série de a et b : tout le montage est couplé.",
+   "À droite, a′ et b′ sont en parallèle.",
+   "Le signe = orange dit que les deux passent dans les mêmes positions."
+  ],
+  "a_voir": "Coupler tout le montage revient à coupler chaque interrupteur et à passer en parallèle."
+ },
+ {
+  "code": "80-188",
+  "a_dire": "Le contraire d'un parallèle de a et b est la série de a′ et b′.",
+  "legende_titre": "Le contraire du parallèle est une série",
+  "lecture": [
+   "À gauche, a et b sont ouverts (gris, tirets) en parallèle : le courant ne passe pas.",
+   "À droite, a′ et b′ sont fermés (vert) en série : le courant passe.",
+   "La flèche orange relie les deux avec le mot « contraire »."
+  ],
+  "a_voir": "Quand le parallèle bloque, la série des couplés passe."
+ },
+ {
+  "code": "80-189",
+  "a_dire": "Un circuit et une partie d'un ensemble de positions se correspondent : chacun détermine l'autre.",
+  "legende_titre": "Circuit et partie d'ensemble",
+  "lecture": [
+   "À gauche, le circuit a, en bleu.",
+   "À droite, les deux positions de a : 0 pour ouvert, 1 pour fermé. Le cadre en tirets entoure 1, où a passe.",
+   "La flèche à deux pointes relie le circuit à cette partie."
+  ],
+  "a_voir": "Le circuit a correspond à la partie des positions où il passe."
+ },
+ {
+  "code": "80-190",
+  "a_dire": "Avec deux interrupteurs, il y a quatre positions : (0,0), (0,1), (1,0), (1,1).",
+  "legende_titre": "Les quatre positions de deux interrupteurs",
+  "lecture": [
+   "Les lignes donnent l'état de a : ouvert (0) en haut, fermé (1) en bas.",
+   "Les colonnes donnent l'état de b : ouvert (0) à gauche, fermé (1) à droite.",
+   "Chaque case bleue est un couple (état de a, état de b)."
+  ],
+  "a_voir": "Chaque case est une position différente."
+ },
+ {
+  "code": "80-191",
+  "a_dire": "Un circuit est connu par l'ensemble des positions où il passe.",
+  "legende_titre": "Une liste de positions suffit",
+  "lecture": [
+   "En haut à gauche, un montage de six interrupteurs (lettres a, b, b′). En bas à gauche, un seul interrupteur a, en violet.",
+   "À droite, les quatre positions (a, b) ; le cadre vert entoure (1,0) et (1,1), où a est fermé.",
+   "Les deux flèches orange mènent au même cadre."
+  ],
+  "a_voir": "Les deux circuits passent dans les mêmes positions, donc ils sont égaux."
+ },
+ {
+  "code": "80-192",
+  "a_dire": "La série garde seulement les positions où les deux circuits passent : l'intersection ∩.",
+  "legende_titre": "La série garde les positions communes",
+  "lecture": [
+   "Le cercle bleu est le premier circuit : (1,0) et (1,1).",
+   "Le cercle violet est le second circuit : (1,1) et (0,1).",
+   "La case verte (1,1) est dans les deux cercles ; (1,0), où seul le premier passe, est rouge dans le texte."
+  ],
+  "a_voir": "Seule la position commune aux deux cercles reste en série."
+ }
+]

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig,ax=canvas(62)
+arrow(ax,(10,8),(44,8),'fixe',lw=0.9); arrow(ax,(10,8),(10,44),'fixe',lw=0.9)
+text(ax,44,3.5,'x','fixe','s'); text(ax,5,43,'y','fixe','s')
+line(ax,[(10,35),(37,8)],'sujet',lw=1.8)
+disc(ax,19,26,1.7,'resultat')
+text(ax,23,29.5,'(1, 2)','resultat','s',ha='left')
+text(ax,30,40,'x + y = 3','sujet','s')
+text(ax,67,55,'avec (1, 2, 1)','fixe','m')
+box(ax,48,41,38,9,'sujet',label='1 + 2 = 3',size='m')
+box(ax,48,28,38,9,'varie',label='3 × 1 = 3',size='m')
+box(ax,48,15,38,9,'resultat',label='3 − 3 = 0',size='m')
+arrow(ax,(67,40.8),(67,37.2),'fixe'); arrow(ax,(67,27.8),(67,24.2),'fixe')
+text(ax,67,9,'donc sur le plan','resultat','s')
+save(fig,'80-090')

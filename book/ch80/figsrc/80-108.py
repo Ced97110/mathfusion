@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,3,42,24,14,'sujet',label=r'$(1,0,0)$',size='s')
+box(ax,34,42,24,14,'sujet',label=r'$(i,0,0)$',size='s'); box(ax,62,42,23,14,'varie',label=r'$(-i,0,0)$',size='s')
+box(ax,34,12,24,14,'varie',label=r'$(1,0,0)$',size='s'); box(ax,62,12,23,14,'resultat',label=r'$(i,0,0)$',size='s')
+text(ax,45,36,r'multiplier par $i$','sujet','s'); text(ax,73,36,'conjuguer','varie','s')
+arrow(ax,(27,49),(34,49),'sujet'); arrow(ax,(56,49),(62,49),'varie')
+arrow(ax,(18,42),(34,22),'varie'); arrow(ax,(56,19),(62,19),'resultat')
+text(ax,45,6,'conjuguer, puis multiplier','resultat','s')
+box(ax,64,29,19,6,'limite',label=r'$\neq$',size='m')
+save(fig,'80-108')

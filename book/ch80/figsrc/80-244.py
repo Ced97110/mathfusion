@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(96)
+for x,n in ((24,2),(44,3),(64,5)):
+    disc(ax,x,16,4,'resultat',label=str(n))
+    arrow(ax,(x+(44-x)*0.15,20.5),(44+(x-44)*0.3,35.5),'varie')
+text(ax,44,6,'atomes sous 30','resultat','s')
+text(ax,76,27,'PPCM des atomes','varie','s')
+box(ax,30,36,28,10,'sujet',label=r'$b_1$ = 30')
+box(ax,30,66,28,10,'autre',label=r'$b$ = 30')
+arrow(ax,(38,47),(38,65),'resultat')
+text(ax,35,56,r'1. $b_1$ est sous $b$','resultat','s',ha='right')
+arrow(ax,(50,65),(50,47),'varie')
+text(ax,53,58,r'2. $b$ est sous $b_1$','varie','s',ha='left')
+text(ax,53,53,'étape décisive','varie','s',ha='left')
+text(ax,44,87,r'donc $b$ = $b_1$','resultat','m')
+save(fig,'80-244')

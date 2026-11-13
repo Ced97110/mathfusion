@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(100)
+box(ax, 31, 86, 26, 11, 'sujet', label=r'$(a+b)^2$')
+box(ax, 6, 62, 24, 11, 'resultat', label=r'$a+b$')
+box(ax, 42, 62, 42, 11, 'varie', label=r'$a^2+ab+ba+b^2$')
+box(ax, 42, 40, 42, 11, 'varie', label=r'$a+ab+ba+b$')
+box(ax, 4, 10, 80, 12, 'resultat', label=r'$a+b = a+ab+ba+b$')
+arrow(ax, (38, 86), (22, 73), 'varie'); text(ax, 12, 80, 'chemin 1\nrègle $x^2=x$', 'varie', 's')
+arrow(ax, (50, 86), (62, 73), 'varie'); text(ax, 75, 80, 'chemin 2\ndistributivité', 'varie', 's')
+arrow(ax, (62, 62), (62, 51), 'varie'); text(ax, 65, 56.5, r'$a^2=a,\ b^2=b$', 'varie', 's', ha='left')
+arrow(ax, (18, 62), (18, 22), 'resultat'); arrow(ax, (62, 40), (62, 22), 'resultat')
+text(ax, 40, 30, 'même départ, donc égaux', 'resultat', 's')
+save(fig, '80-319')

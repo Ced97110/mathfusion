@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+text(ax,44,79,r'but : montrer que $a$ est 2 ou 3','encre','m')
+text(ax,44,70,r'$a$ = 3 est sous 6 = PPCM(2, 3)','sujet','s')
+text(ax,44,62,r'$a=a\wedge(2\vee3)=(a\wedge2)\vee(a\wedge3)$','varie','s')
+box(ax,4,38,40,12,'fixe',label=r'PGCD(3, 2) = 1',size='s')
+box(ax,48,38,36,12,'resultat',label=r'PGCD(3, 3) = 3',size='s')
+text(ax,24,33,r'vaut $O$ (ici 1)','fixe','s')
+text(ax,66,33,r'reste $a$','resultat','s')
+arrow(ax,(24,28.5),(34,19),'varie')
+arrow(ax,(66,28.5),(54,19),'varie')
+box(ax,10,6,68,12,'resultat',label=r'PPCM(1, 3) = 3 = $a$ : $a$ est dans la liste',size='s')
+save(fig,'80-245')

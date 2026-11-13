@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 56, 38, 12, 'limite', label=r'porte et nuit : $0$', size='s')
+box(ax, 48, 56, 38, 12, 'resultat', label=r'fenêtre : $1$', size='s')
+box(ax, 4, 30, 80, 12, 'varie', label=r'$0 + 1 + 0 \times 1 = 1$')
+text(ax, 44, 49, r'$a + b + ab$', 'varie', 's')
+arrow(ax, (21, 56), (30, 42), 'fixe'); arrow(ax, (67, 56), (58, 42), 'fixe')
+arrow(ax, (44, 30), (44, 18), 'resultat')
+box(ax, 14, 4, 60, 14, 'resultat', label=r'alarme : elle sonne ($1$)')
+save(fig, '80-328')

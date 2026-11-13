@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 52, r'$D_1$ : $c=0$ (passe par $(0,0)$)', 'sujet', 's')
+box(ax, 4, 28, 22, 9, 'sujet', label=r'$x-y$')
+box(ax, 30, 28, 30, 9, 'fixe', label=r'$-\,0\cdot z$')
+line(ax, [(32, 29), (58, 36)], 'fixe', lw=1.3)
+text(ax, 45, 41, 'terme nul : disparaît', 'fixe', 's')
+box(ax, 64, 28, 20, 9, 'sujet', label=r'$=0$')
+arrow(ax, (44, 27), (44, 20), 'varie')
+box(ax, 22, 8, 44, 11, 'resultat', label=r'plan $x-y=0$')
+text(ax, 44, 3, 'aucun terme en $z$', 'resultat', 's')
+save(fig, '80-286')

@@ -1,0 +1,276 @@
+[
+ {
+  "code": "80-385",
+  "a_dire": "Dire où sont les zéros de 𝜇(1, d) sur les diviseurs de 12.",
+  "legende_titre": "Les diviseurs de 12 et leur valeur",
+  "lecture": [
+   "Chaque rond est un diviseur de 12, placé plus haut quand il est plus grand dans l’ordre des traits.",
+   "Le nombre écrit à droite est 𝜇(1, d) : vert pour +1, rouge pour −1, gris pour 0.",
+   "Les deux ronds gris sont 4 et 12."
+  ],
+  "a_voir": "Les zéros sont sur 4 et 12 seulement ; 12 est tout en haut mais vaut 0."
+ },
+ {
+  "code": "80-386",
+  "a_dire": "Lire les étages et les traits des diviseurs de 12.",
+  "legende_titre": "Étages et traits des diviseurs",
+  "lecture": [
+   "Chaque rond bleu est un diviseur de 12 ; les étages sont numérotés à droite.",
+   "Un trait relie deux diviseurs sans étape entre eux.",
+   "Les deux traits orange partent de 2 : vers 4 (fois 2) et vers 6 (fois 3).",
+   "Il n’y a pas de trait de 1 vers 4."
+  ],
+  "a_voir": "On retrouve la divisibilité en suivant les traits vers le haut."
+ },
+ {
+  "code": "80-387",
+  "a_dire": "Calculer 𝜇(1, d) étage par étage en montant, avec les valeurs déjà trouvées.",
+  "legende_titre": "Le calcul en montant",
+  "lecture": [
+   "Chaque ligne a un rond bleu : le diviseur dont on calcule la valeur.",
+   "À droite du rond, la somme des valeurs déjà trouvées plus bas, avec le signe moins devant.",
+   "La flèche orange montre le sens : de 1 jusqu’à 12.",
+   "Il y a six lignes, donc six calculs."
+  ],
+  "a_voir": "Chaque ligne n’utilise que des valeurs des lignes du dessous."
+ },
+ {
+  "code": "80-388",
+  "a_dire": "Dire que le calcul commence par 𝜇(1, 1) = 1, car rien n’est en dessous de 1.",
+  "legende_titre": "Le point de départ",
+  "lecture": [
+   "Le rond bleu du bas est 1.",
+   "Les ronds gris vides au-dessus sont 2 et 3, pas encore calculés.",
+   "La case en pointillés dit qu’il n’y a rien sous 1.",
+   "La case verte donne la valeur : 1."
+  ],
+  "a_voir": "Sous 1 il n’y a rien, donc la valeur de départ est 1."
+ },
+ {
+  "code": "80-389",
+  "a_dire": "Dire que 𝜇(1, 2) et 𝜇(1, 3) valent −1, car chacun n’a que 1 sous lui.",
+  "legende_titre": "Deux diviseurs avec un seul voisin dessous",
+  "lecture": [
+   "Le rond du bas est 1 ; sa valeur est 1 (en vert).",
+   "Les deux flèches orange montent de 1 vers 2 et vers 3.",
+   "Au-dessus de chacun, le calcul −(1) = −1 en rouge."
+  ],
+  "a_voir": "Un seul terme dans la somme : 1, dont l’opposé est −1."
+ },
+ {
+  "code": "80-390",
+  "a_dire": "Dire que 𝜇(1, 4) = 0 parce que 1 + (−1) = 0.",
+  "legende_titre": "Une somme qui s’annule",
+  "lecture": [
+   "La colonne de ronds est 1, 2, 4, avec des flèches orange qui montent.",
+   "Les valeurs à droite : 1 pour 1 (vert), −1 pour 2 (rouge).",
+   "La case orange fait la somme sous 4 : 1 + (−1) = 0.",
+   "La valeur de 4 est 0, en gris."
+  ],
+  "a_voir": "La somme sous 4 est nulle, donc 𝜇(1, 4) vaut 0."
+ },
+ {
+  "code": "80-391",
+  "a_dire": "Dire que 𝜇(1, 6) = 1 : somme −1 sous 6, puis l’opposé.",
+  "legende_titre": "Le calcul pour 6",
+  "lecture": [
+   "Le losange relie 1, 2, 3 et 6 ; 6 est en orange, en haut.",
+   "Les valeurs sous 6 : +1 pour 1, −1 pour 2, −1 pour 3.",
+   "À droite du bas, la somme : 1 − 1 − 1 = −1.",
+   "En haut, l’opposé donne 𝜇(1, 6) = 1."
+  ],
+  "a_voir": "Le calcul passe par deux éléments, 2 et 3, et donne +1."
+ },
+ {
+  "code": "80-392",
+  "a_dire": "Dire que 𝜇(1, 12) = 0, car la somme des cinq valeurs sous 12 vaut 0.",
+  "legende_titre": "Le dernier calcul",
+  "lecture": [
+   "Chaque rond est un diviseur ; la valeur est écrite à droite.",
+   "Le rond orange du haut est 12.",
+   "Le texte en haut à droite additionne les cinq valeurs sous 12 : 1 − 1 − 1 + 0 + 1 = 0."
+  ],
+  "a_voir": "Le 0 de 4 entre dans la somme, et le total est 0."
+ },
+ {
+  "code": "80-393",
+  "a_dire": "Dire que la valeur dépend de la forme du nombre : premiers différents ou facteur répété.",
+  "legende_titre": "Valeur et facteurs",
+  "lecture": [
+   "Chaque rond du haut donne la valeur de 𝜇(1, d), en vert, rouge ou gris.",
+   "Sous chaque rond, le diviseur écrit en produit de premiers.",
+   "Les deux ronds gris sont 2×2 et 2×2×3 : un premier se répète."
+  ],
+  "a_voir": "Un facteur répété donne 0 ; un seul premier donne −1 ; deux premiers différents donnent +1."
+ },
+ {
+  "code": "80-394",
+  "a_dire": "Dire que chaque diviseur de 12 est 2^a × 3^b et que l’ordre se lit coordonnée par coordonnée.",
+  "legende_titre": "Les diviseurs de 12 en grille",
+  "lecture": [
+   "Chaque case bleue est un diviseur de 12, rangé selon a (colonnes) et b (lignes).",
+   "Les flèches grises vont de a vers a+1 ou de b vers b+1.",
+   "La case orange est 6, avec a = 1 et b = 1."
+  ],
+  "a_voir": "La grille de 3 par 2 donne les 6 diviseurs."
+ },
+ {
+  "code": "80-395",
+  "a_dire": "Dire que sur une chaîne 𝜇 vaut −1 seulement après un pas, alors que 𝜇(1, 30) = −1 après trois pas.",
+  "legende_titre": "Une chaîne et un cas qui n’en est pas une",
+  "lecture": [
+   "La rangée du haut est une chaîne 0, 1, 2, 3 ; dessous, les valeurs 1, −1, 0, 0.",
+   "La rangée du bas va de 1 à 30 en trois pas orange.",
+   "Le texte rouge donne tout de même −1 pour 30."
+  ],
+  "a_voir": "Sans l’hypothèse de chaîne, −1 peut venir après trois pas."
+ },
+ {
+  "code": "80-396",
+  "a_dire": "Dire que 𝜇(c, d) ne dépend que du quotient d ÷ c.",
+  "legende_titre": "Même quotient, mêmes valeurs",
+  "lecture": [
+   "À gauche, les diviseurs entre 1 et 6 ; à droite, ceux entre 2 et 12.",
+   "Chaque rond porte le diviseur et sa valeur.",
+   "Le signe égal entre les deux losanges dit que les valeurs sont les mêmes.",
+   "Sous chaque losange, le quotient : 6."
+  ],
+  "a_voir": "Les deux losanges ont la même forme et les mêmes valeurs."
+ },
+ {
+  "code": "80-397",
+  "a_dire": "Dire que la formule (−1)^l demande des premiers distincts.",
+  "legende_titre": "Premiers distincts ou égaux",
+  "lecture": [
+   "À gauche, 6 = 2 × 3 : deux ronds différents (bleu et violet) ; la formule est juste et la valeur est 1.",
+   "À droite, 4 = 2 × 2 : deux ronds bleus identiques.",
+   "En rouge, la formule donnerait 1 : elle est fausse, car 𝜇(1, 4) vaut 0."
+  ],
+  "a_voir": "Quand les deux premiers sont égaux, la formule est fausse."
+ },
+ {
+  "code": "80-398",
+  "a_dire": "Dire que 𝜇 vaut 0 dès que le nombre est divisible par un carré autre que 1.",
+  "legende_titre": "Les carrés donnent 0",
+  "lecture": [
+   "Chaque ligne décompose 4, 12 ou 18 en premiers.",
+   "Les ronds orange sont le premier répété, entouré en pointillés rouges.",
+   "À droite de chaque ligne, 𝜇 = 0."
+  ],
+  "a_voir": "Un premier répété suffit pour que la valeur soit 0."
+ },
+ {
+  "code": "80-399",
+  "a_dire": "Dire que 𝜇(n) s’écrit à la place de 𝜇(1, n).",
+  "legende_titre": "On retire le 1",
+  "lecture": [
+   "La ligne du haut est 𝜇(1, 12) : la case grise est le 1, la case bleue est le nombre.",
+   "La flèche orange descend vers la ligne du bas.",
+   "La ligne du bas est 𝜇(12) : il ne reste que le nombre."
+  ],
+  "a_voir": "Le 1 est toujours le même, donc on ne l’écrit plus."
+ },
+ {
+  "code": "80-400",
+  "a_dire": "Dire que la fonction de Möbius des nombres est le cas d’origine, de 1832.",
+  "legende_titre": "Un cas particulier d’une construction générale",
+  "lecture": [
+   "Le grand cadre en pointillés est tout ensemble ordonné fini.",
+   "Le cadre bleu contient les diviseurs d’un entier.",
+   "Les deux cadres violets sont d’autres ordres.",
+   "La case orange donne la date : 1832."
+  ],
+  "a_voir": "Les diviseurs d’un entier sont un cas parmi les ordres possibles."
+ },
+ {
+  "code": "80-401",
+  "a_dire": "Dire que 𝜇(30) = −1 car 30 est un produit de trois premiers différents.",
+  "legende_titre": "Les diviseurs de 30 et leur signe",
+  "lecture": [
+   "Chaque rond porte un diviseur de 30 et sa valeur.",
+   "Le rond orange du haut est 30, produit de trois premiers : valeur −1.",
+   "À droite, chaque rangée dit combien de premiers forment le nombre : 2, 3, 5 en ont un (−1), 6, 10, 15 en ont deux (+1)."
+  ],
+  "a_voir": "Un produit de trois premiers différents donne −1."
+ },
+ {
+  "code": "80-402",
+  "a_dire": "Dire que les 12 heures se rangent selon leur nombre de pas, et que le total fait 12.",
+  "legende_titre": "Les 12 heures, rangées par pas",
+  "lecture": [
+   "Chaque colonne a un nombre d : le nombre de pas avant de revenir à 0.",
+   "Chaque carré bleu est une heure ; il y en a 1, 1, 2, 2, 2 et 4.",
+   "L’accolade compte les 12 heures ; le total est en vert."
+  ],
+  "a_voir": "En additionnant les colonnes, on retrouve 12."
+ },
+ {
+  "code": "80-403",
+  "a_dire": "Dire qu’on additionne 𝜑(d) pour chaque diviseur d de 12 et que le total est 12.",
+  "legende_titre": "Les quatre actions sur 12",
+  "lecture": [
+   "La rangée de ronds bleus est les diviseurs de 12.",
+   "Sous chaque rond, une case verte donne 𝜑(d) : 1, 1, 2, 2, 2, 4.",
+   "L’accolade verte réunit les six cases ; la somme en dessous est 12."
+  ],
+  "a_voir": "La somme des six nombres est 12."
+ },
+ {
+  "code": "80-404",
+  "a_dire": "Dire que d ∣ n veut dire n = d × un entier.",
+  "legende_titre": "Diviser et ne pas diviser",
+  "lecture": [
+   "En haut, 12 carrés en deux groupes de 6 : 6 divise 12.",
+   "En bas, 12 carrés en groupes de 5 : il en reste 2, en rouge.",
+   "Les accolades donnent la taille de chaque groupe."
+  ],
+  "a_voir": "Quand les groupes tombent juste, d divise n ; sinon il reste des carrés."
+ },
+ {
+  "code": "80-405",
+  "a_dire": "Dire que la somme des 𝜑 sur les diviseurs de 6 est une somme sur tout ce qui est en dessous de 6.",
+  "legende_titre": "La somme sous 6",
+  "lecture": [
+   "Le losange relie 1, 2, 3 et 6 ; 6 est en orange.",
+   "Chaque case verte à côté d’un rond donne 𝜑 de ce diviseur.",
+   "Le total en vert : 1 + 1 + 2 + 2 = 6."
+  ],
+  "a_voir": "Le total de 6 est la somme des valeurs de tout ce qui est sous 6, 6 compris."
+ },
+ {
+  "code": "80-406",
+  "a_dire": "Dire que 𝜑(6) = 2 est la somme des termes 𝜇(d) × 6/d.",
+  "legende_titre": "Quatre termes pour n = 6",
+  "lecture": [
+   "Chaque colonne est un diviseur d, avec sa valeur 𝜇 écrite au-dessus.",
+   "Les carrés verts au-dessus de la ligne sont des termes positifs, les rouges en dessous des termes négatifs.",
+   "Le nombre de carrés est 6/d : 6, 3, 2 et 1.",
+   "En bas : 6 − 3 − 2 + 1 = 2."
+  ],
+  "a_voir": "Le signe vient de 𝜇(d), la taille vient de 6/d."
+ },
+ {
+  "code": "80-407",
+  "a_dire": "Dire que 𝜑(12) = 4 est la somme des six termes, dont deux sont nuls.",
+  "legende_titre": "Six termes pour n = 12",
+  "lecture": [
+   "Chaque colonne est un diviseur d, avec sa valeur 𝜇.",
+   "Les carrés verts sont les termes positifs, les rouges les termes négatifs ; le nombre de carrés est 12/d.",
+   "Pour 4 et 12, il n’y a aucun carré : 𝜇 vaut 0.",
+   "En bas : 12 − 6 − 4 + 0 + 2 + 0 = 4."
+  ],
+  "a_voir": "Le total des termes est 4."
+ },
+ {
+  "code": "80-408",
+  "a_dire": "Dire que le calcul de 𝜑(30) en partie 1 avait déjà huit termes 𝜇(d) × 30/d.",
+  "legende_titre": "Les huit termes pour 30",
+  "lecture": [
+   "Chaque colonne est un diviseur d de 30, avec son terme écrit au-dessus.",
+   "Les barres vertes montent (termes positifs), les rouges descendent (termes négatifs).",
+   "La plus haute barre est +30 pour d = 1 ; la dernière est −1 pour d = 30.",
+   "En bas : la somme des huit termes est 8."
+  ],
+  "a_voir": "Les signes alternés du calcul sont les valeurs de 𝜇(d)."
+ }
+]

@@ -1,0 +1,278 @@
+[
+ {
+  "code": "80-265",
+  "a_dire": "On lit la formule en parcourant les contrôles sous x, en multipliant chaque total par son coefficient, puis en additionnant.",
+  "legende_titre": "Lire la formule contrôle par contrôle",
+  "lecture": [
+   "Chaque ligne est un contrôle sous le contrôle 3 : son total en bleu, son coefficient en orange.",
+   "La case grise à droite est le produit de la ligne.",
+   "Le bloc vert en bas additionne les trois produits et donne les points du contrôle 3."
+  ],
+  "a_voir": "Il faut voir trois produits, puis une seule addition qui donne 8."
+ },
+ {
+  "code": "80-266",
+  "a_dire": "La preuve part d'un ensemble ordonné fini, passe par un rangement en liste, et arrive à l'existence de μ.",
+  "legende_titre": "Le rangement en liste porte la preuve",
+  "lecture": [
+   "Le bloc bleu du haut est le point de départ : un ensemble ordonné fini 𝑆.",
+   "Le grand bloc orange est l'étape qui porte le poids : ranger en liste, chaque nombre après ceux qui le divisent. La liste donne les diviseurs de 12 : 1, 2, 3, 4, 6, 12.",
+   "Le bloc vert est l'arrivée : 𝜇 existe.",
+   "Le bloc rouge montre ce qui casse si 6 est placé avant 2."
+  ],
+  "a_voir": "Départ, rangement en liste, arrivée : tout passe par le rangement au milieu."
+ },
+ {
+  "code": "80-267",
+  "a_dire": "On prend un élément sans rien sous lui, on le place, on le retire, puis on recommence.",
+  "legende_titre": "Prendre un minimal, le retirer, recommencer",
+  "lecture": [
+   "La ligne du haut est l'ensemble de départ ; la case bleue 1 est celle qui n'a rien sous elle.",
+   "La flèche orange mène 1 en première place de la liste, en vert.",
+   "Sur la ligne du bas, 2 et 3 en orange n'ont plus rien sous eux."
+  ],
+  "a_voir": "Il faut voir que 1 est retiré et que 2 et 3 deviennent libres."
+ },
+ {
+  "code": "80-268",
+  "a_dire": "Pour le premier élément de la liste, le total est égal au nombre associé : g(1) = f(1).",
+  "legende_titre": "Le premier total est le premier nombre",
+  "lecture": [
+   "Dans la ligne de cases, la case bleue 1 est le premier élément, sans rien dessous.",
+   "La case verte est le total g(1).",
+   "La case bleue de droite est le nombre f(1) : les deux sont égaux."
+  ],
+  "a_voir": "Il faut voir que g(1) et f(1) sont la même chose."
+ },
+ {
+  "code": "80-269",
+  "a_dire": "Dans l'équation de g(4), seul f(4) est nouveau, avec le coefficient 1 : les autres sont déjà trouvés.",
+  "legende_titre": "Une seule inconnue nouvelle par équation",
+  "lecture": [
+   "L'accolade bleue du haut est le total g(4), somme de trois termes.",
+   "Les deux cases grises f(1) et f(2) sont déjà trouvées.",
+   "La case orange f(4) est le seul terme nouveau, compté une fois."
+  ],
+  "a_voir": "Il faut voir qu'une seule case sur trois est nouvelle."
+ },
+ {
+  "code": "80-270",
+  "a_dire": "On résout le système en remplaçant la valeur trouvée, et on ne fait que soustraire, sans diviser.",
+  "legende_titre": "Remplacer de proche en proche, sans diviser",
+  "lecture": [
+   "La case bleue donne a = 7 : une seule inconnue.",
+   "La case grise a + b = 12 ajoute une inconnue.",
+   "La case orange remplace a par 7.",
+   "La case verte donne b = 12 − 7 = 5 par une soustraction."
+  ],
+  "a_voir": "Il faut voir que chaque étape ne fait qu'une soustraction."
+ },
+ {
+  "code": "80-271",
+  "a_dire": "Le tableau ζ est triangulaire avec des 1 sur la diagonale ; le tableau μ qui défait ζ a la même forme.",
+  "legende_titre": "Deux tableaux de même forme, l'un défait l'autre",
+  "lecture": [
+   "Le tableau bleu à gauche est ζ : trois lignes, une par total.",
+   "Le tableau vert à droite est μ.",
+   "Les cases colorées marquent la diagonale, qui ne porte que des 1.",
+   "La flèche orange dit que μ défait ζ."
+  ],
+  "a_voir": "Il faut voir les 1 sur la diagonale et les 0 d'un seul côté."
+ },
+ {
+  "code": "80-272",
+  "a_dire": "Comme on ne divise jamais, on retrouve des points entiers à partir de totaux entiers.",
+  "legende_titre": "Des soustractions, jamais de division",
+  "lecture": [
+   "La ligne bleue du haut donne les totaux 12, 19 et 27.",
+   "Les flèches orange sont des soustractions entre totaux voisins.",
+   "La ligne verte du bas donne les points 7 et 8, des nombres entiers."
+  ],
+  "a_voir": "Il faut voir que 7 et 8 sortent de soustractions seules."
+ },
+ {
+  "code": "80-273",
+  "a_dire": "Dans une chaîne, chaque total est le total précédent plus les points du nouveau contrôle.",
+  "legende_titre": "La chaîne : un contrôle après l'autre",
+  "lecture": [
+   "Les cases bleues sont les contrôles 0 à 3, reliés dans l'ordre.",
+   "Les cases orange du haut sont les points : 5, 2, 4, 1.",
+   "Les cases vertes du bas sont les totaux : 5, 7, 11, 12."
+  ],
+  "a_voir": "Il faut voir que chaque total ajoute un seul nombre au précédent."
+ },
+ {
+  "code": "80-274",
+  "a_dire": "Les points du contrôle 2 sont le total jusqu'à 2 moins le total jusqu'à 1.",
+  "legende_titre": "Retirer le total précédent",
+  "lecture": [
+   "La barre entière est le total g(2) = 11.",
+   "La partie grise est le total g(1) = 7.",
+   "La partie orange est ce qui reste : f(2) = 4."
+  ],
+  "a_voir": "Il faut voir que 11 moins 7 laisse la part orange, 4."
+ },
+ {
+  "code": "80-275",
+  "a_dire": "Le coefficient vaut 1 sur le total du contrôle, −1 sur le total précédent et 0 sur les autres.",
+  "legende_titre": "Trois sortes de coefficients",
+  "lecture": [
+   "La ligne bleue donne les totaux 5, 7, 11, 12.",
+   "Sous chaque total, une case donne son coefficient : 0, −1, 1, 0.",
+   "La case verte (1) et la case orange (−1) sont les seules non nulles.",
+   "Le résultat vert est −7 + 11 = 4."
+  ],
+  "a_voir": "Il faut voir que deux coefficients sur quatre ne sont pas nuls."
+ },
+ {
+  "code": "80-276",
+  "a_dire": "Sur une chaîne, appliquer μ aux totaux revient à soustraire le total précédent.",
+  "legende_titre": "Sur une chaîne, μ est la soustraction",
+  "lecture": [
+   "Les trois disques bleus sont les totaux 12, 19 et 27 sur la droite graduée.",
+   "Chaque arc orange va d'un total au suivant.",
+   "Le texte de chaque arc donne la soustraction et son résultat : 7 puis 8."
+  ],
+  "a_voir": "Il faut voir une soustraction pour chaque arc."
+ },
+ {
+  "code": "80-277",
+  "a_dire": "Pour 6, on retire les totaux 3 et 4, puis on remet 1 compté deux fois : la soustraction s'étend à tout ordre.",
+  "legende_titre": "Retirer deux totaux, remettre le commun",
+  "lecture": [
+   "Les disques sont les diviseurs de 6, reliés du plus bas au plus haut.",
+   "Le disque bleu 6 a le total 10, compté une fois.",
+   "Les disques gris 2 et 3 sont retirés : 3 et 4 comptés −1.",
+   "Le disque orange 1 est remis, car il est compté deux fois."
+  ],
+  "a_voir": "Il faut voir 10 − 3 − 4 + 1 = 4."
+ },
+ {
+  "code": "80-278",
+  "a_dire": "Les deux rails se coupent en un point de la ligne ℎ, où s'arrêtent les traverses qui raccourcissent.",
+  "legende_titre": "Deux rails qui se rejoignent sur la ligne ℎ",
+  "lecture": [
+   "Les deux traits bleus sont les rails D1 et D2.",
+   "Les traits orange sont les traverses : longues en bas, courtes en haut.",
+   "La ligne grise ℎ est l'horizon.",
+   "Le point rouge est la rencontre des rails, sur ℎ."
+  ],
+  "a_voir": "Il faut voir que le point rouge est sur la ligne ℎ, où les traverses deviennent minuscules."
+ },
+ {
+  "code": "80-279",
+  "a_dire": "Les traits bleus sont les rails, deux droites ; les traits orange sont des traverses de même longueur au sol.",
+  "legende_titre": "Ce que chaque couleur représente",
+  "lecture": [
+   "À gauche, le sol : deux rails bleus D₁ et D₂, parallèles, et des traverses orange égales.",
+   "À droite, le dessin : les mêmes rails D₁ et D₂ se rapprochent, les traverses orange raccourcissent.",
+   "Chaque trait gris pointillé relie une traverse du sol à sa copie sur le dessin.",
+   "Les deux cases en bas rappellent le sens des couleurs."
+  ],
+  "a_voir": "Les traverses sont égales à gauche et inégales à droite."
+ },
+ {
+  "code": "80-280",
+  "a_dire": "Plus une traverse est loin, plus elle est courte sur le dessin et proche de la ligne ℎ.",
+  "legende_titre": "Plus loin, plus court, plus haut",
+  "lecture": [
+   "Les deux traits bleus sont les rails ; ils se rejoignent sur la ligne pointillée ℎ.",
+   "Les trois barres orange font 6 cm, 4 cm et 2 cm sur le dessin ; ce sont les mêmes barres au sol.",
+   "La flèche orange à droite va du plus proche au plus loin.",
+   "La barre la plus courte est la plus proche de ℎ."
+  ],
+  "a_voir": "Les barres raccourcissent en montant vers ℎ."
+ },
+ {
+  "code": "80-281",
+  "a_dire": "Sur le sol les rails ne se touchent pas ; sur l'image leurs traits se touchent au point rouge P∞.",
+  "legende_titre": "Parallèles au sol, concourants sur l'image",
+  "lecture": [
+   "À gauche, les deux traits bleus restent à la même distance : ils ne se touchent pas.",
+   "À droite, les deux traits bleus se rapprochent.",
+   "Le disque rouge est le point P∞, où ils se touchent sur l'image."
+  ],
+  "a_voir": "Il faut voir le point rouge, qui n'existe que sur l'image."
+ },
+ {
+  "code": "80-282",
+  "a_dire": "Plus le point du rail est loin, plus le rayon visuel ressemble à la direction du rail.",
+  "legende_titre": "Les rayons tendent vers la direction du rail",
+  "lecture": [
+   "Le trait bleu est le rail, avec trois points à 10 m, 100 m et 1000 m.",
+   "Chaque flèche orange est le rayon de l'œil vers un point.",
+   "Le trait gris pointillé est la direction du rail : les flèches s'en rapprochent."
+  ],
+  "a_voir": "Il faut voir la flèche la plus longue presque sur le pointillé."
+ },
+ {
+  "code": "80-283",
+  "a_dire": "Le rayon limite touche l'image en un seul point, P∞.",
+  "legende_titre": "Un rayon touche l'image en un point",
+  "lecture": [
+   "La barre bleue est l'image.",
+   "La flèche orange est le rayon limite qui part de l'œil.",
+   "Le disque rouge est l'unique point P∞ où il touche l'image."
+  ],
+  "a_voir": "Il faut voir un seul disque rouge sur la barre."
+ },
+ {
+  "code": "80-284",
+  "a_dire": "Les points de D1 donnent 0 et ceux de D2 donnent −1 : aucun point du plan n'est sur les deux droites.",
+  "legende_titre": "Deux droites, aucun point commun",
+  "lecture": [
+   "La droite bleue D1 porte les points (0,0), (1,1), (2,2).",
+   "La droite violette D2 porte les points (0,1), (1,2), (2,3).",
+   "Les deux droites montent de la même façon et ne se croisent pas."
+  ],
+  "a_voir": "Il faut voir que les disques bleus et violets sont sur deux droites distinctes."
+ },
+ {
+  "code": "80-285",
+  "a_dire": "La règle fait passer d'une droite à un plan, mais aucune droite ne donne le plan z = 0.",
+  "legende_titre": "La règle n'atteint pas le plan z = 0",
+  "lecture": [
+   "En haut, la droite x = 2 devient le plan x − 2z = 0 (a = 1, b = 0, c = 2).",
+   "En bas, la case « droite ? » est vide : aucune droite ne mène au plan z = 0.",
+   "La croix rouge barre la flèche.",
+   "Le texte rouge donne la raison : il faut a = 0 et b = 0, et il reste 0 = c."
+  ],
+  "a_voir": "La flèche marche en haut ; en bas, elle est barrée."
+ },
+ {
+  "code": "80-286",
+  "a_dire": "Pour une droite de constante 0, le terme en z disparaît : l'équation du plan ne change pas.",
+  "legende_titre": "Constante 0 : le terme en z disparaît",
+  "lecture": [
+   "La case bleue x − y est la partie de la droite D1.",
+   "La case grise est le terme en z, barré en gris car 0 · z = 0 : il disparaît.",
+   "La case bleue = 0 termine l'équation.",
+   "La case verte est le plan obtenu : x − y = 0, sans z."
+  ],
+  "a_voir": "Le terme nul disparaît : il n'est plus dans le résultat."
+ },
+ {
+  "code": "80-287",
+  "a_dire": "La constante −1 donne +z : le plan de D2 est x − y + z = 0, et le point (0, 1, 1) le vérifie.",
+  "legende_titre": "De D2 à son plan en trois actions",
+  "lecture": [
+   "La case violette est la droite D2.",
+   "La case orange lit c = −1 et remplace −cz par +z.",
+   "La case verte est le plan x − y + z = 0.",
+   "La case grise vérifie avec (0, 1, 1) : 0 − 1 + 1 = 0."
+  ],
+  "a_voir": "Il faut voir le terme −cz devenir +z."
+ },
+ {
+  "code": "80-288",
+  "a_dire": "En soustrayant les deux plans, les termes en x et y s'annulent et il reste 3z = 0, donc z = 0.",
+  "legende_titre": "Soustraire : il ne reste que z",
+  "lecture": [
+   "Les deux premières lignes sont les plans 2x − y + 3z = 0 et 2x − y = 0.",
+   "Les cases grises 2x − y sont identiques : elles s'annulent.",
+   "La case orange 3z est la seule qui reste.",
+   "La case verte donne z = 0."
+  ],
+  "a_voir": "Il faut voir que seule la case orange survit à la soustraction."
+ }
+]
