@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(54)
+box(ax,2,30,30,12,'fixe',label=r'$6x+9$',size='l')
+box(ax,56,30,30,12,'sujet',label=r'$3(2x+3)$',size='l')
+arrow(ax,(34,38),(54,38),'varie'); text(ax,44,42,'factoriser','varie','s')
+arrow(ax,(54,33),(34,33),'fixe'); text(ax,44,29,'développer','fixe','s')
+text(ax,17,25,'somme de 2 termes','fixe','s')
+text(ax,71,25,'produit de 2 facteurs','sujet','s')
+text(ax,17,15,'6 × 5 + 9 = 39','resultat','s'); text(ax,71,15,'3 × 13 = 39','resultat','s')
+text(ax,44,15,'=','encre','l')
+text(ax,44,50,'pour x = 5','fixe','s')
+save(fig,'18-022')

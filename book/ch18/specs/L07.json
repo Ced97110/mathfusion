@@ -1,0 +1,239 @@
+[
+ {
+  "code": "18-097",
+  "a_dire": "Un polynôme premier n'a pour facteurs que des constantes et lui-même, comme 7.",
+  "legende_titre": "Premier ou se factorise",
+  "lecture": [
+   "Les cases bleues sont premières : 7 n'a que 1 et 7, et x² + 1 n'a que des constantes et lui-même.",
+   "Les cases violettes se factorisent : 12 = 3 × 4 et x² − 9 = (x + 3)(x − 3).",
+   "La ligne du haut montre les nombres, celle du bas les polynômes."
+  ],
+  "a_voir": "Chaque polynôme a le même comportement qu'un nombre de la même colonne."
+ },
+ {
+  "code": "18-098",
+  "a_dire": "Pour x = 4, x² + 1 vaut 17 et le rectangle (x + 2)(x − 1) vaut 18 : aucun rectangle ne convient pour tout x.",
+  "legende_titre": "Un rectangle qui convient une fois, pas toujours",
+  "lecture": [
+   "Les carrés bleus comptent x² et le petit carré orange compte 1.",
+   "Le rectangle vert a pour côtés x + 2 et x − 1.",
+   "Pour x = 3, les deux ont 10 cases. Pour x = 4, il y en a 17 et 18."
+  ],
+  "a_voir": "Les deux formes ont la même aire pour x = 3, pas pour x = 4."
+ },
+ {
+  "code": "18-099",
+  "a_dire": "Avec √2 permis, x² − 2 s'écrit (x + √2)(x − √2) ; pour x = 3, on trouve 7 des deux côtés.",
+  "legende_titre": "x² − 2 selon les nombres permis",
+  "lecture": [
+   "La case bleue est le polynôme x² − 2.",
+   "Avec les entiers, il est premier. Avec les réels, la case verte le factorise.",
+   "En bas, pour x = 3, les deux écritures valent 7."
+  ],
+  "a_voir": "Le même polynôme est premier ou non selon les nombres permis."
+ },
+ {
+  "code": "18-100",
+  "a_dire": "x² − 4 se factorise car 4 = 2 × 2 ; x² − 2 est premier avec les entiers car 2 n'est le carré d'aucun entier.",
+  "legende_titre": "Deux polynômes qui se ressemblent",
+  "lecture": [
+   "À gauche en vert, 4 cases forment un carré de côté 2 : x² − 4 se factorise.",
+   "À droite en rouge, 2 cases ne forment aucun carré.",
+   "Les carrés entiers rappelés sont 1 × 1 = 1 et 2 × 2 = 4."
+  ],
+  "a_voir": "Il faut regarder si le nombre est le carré d'un entier."
+ },
+ {
+  "code": "18-101",
+  "a_dire": "Le mot premier dépend de l'ensemble de nombres où l'on cherche les facteurs.",
+  "legende_titre": "Premier : avec quels nombres ?",
+  "lecture": [
+   "La case bleue du haut est x² − 2, le même pour les deux choix.",
+   "À gauche, en rouge, les couples de produit −2 ont pour sommes −1 et 1, jamais 0.",
+   "À droite, en vert, avec √2 le polynôme se factorise."
+  ],
+  "a_voir": "Un même polynôme reçoit deux réponses selon les nombres permis."
+ },
+ {
+  "code": "18-102",
+  "a_dire": "L'écriture x − 3 = ½(2x − 6) utilise un facteur fraction, permis seulement si les fractions le sont.",
+  "legende_titre": "Un facteur qui est une fraction",
+  "lecture": [
+   "La case bleue est x − 3, la case orange est ½, la case violette est 2x − 6.",
+   "Pour x = 5, la barre violette a 4 cases : 2x − 6 = 4.",
+   "La barre bleue en a 2, soit la moitié.",
+   "Le texte orange rappelle que ½ n'est pas un entier : cette écriture demande les coefficients fractionnaires."
+  ],
+  "a_voir": "Le facteur ½ n'est pas un entier : cette écriture demande les fractions."
+ },
+ {
+  "code": "18-103",
+  "a_dire": "Sans autre précision, les coefficients sont entiers : on n'a pas besoin de l'écrire.",
+  "legende_titre": "Une précision sous-entendue",
+  "lecture": [
+   "La première ligne dit tout : le polynôme est premier, avec des coefficients entiers.",
+   "La seconde ligne garde la phrase et laisse la précision sous-entendue (pointillés).",
+   "Les deux phrases ont le même sens."
+  ],
+  "a_voir": "La convention rend la phrase plus courte sans changer son sens."
+ },
+ {
+  "code": "18-104",
+  "a_dire": "Un dernier terme négatif ne peut pas être un carré : x² + 6x − 9 n'est pas un trinôme carré parfait.",
+  "legende_titre": "Même début, dernier terme différent",
+  "lecture": [
+   "À gauche, en vert, le dernier terme est +9 : pour x = 1 on trouve 16, soit 4 × 4 en 16 cases.",
+   "À droite, en rouge, le dernier terme est −9 : pour x = 1 on trouve −2.",
+   "Un carré n'est jamais négatif, donc la formule ne s'applique pas à droite."
+  ],
+  "a_voir": "Il faut vérifier le signe du dernier terme."
+ },
+ {
+  "code": "18-105",
+  "a_dire": "Le premier terme et le terme du milieu vérifient la formule, mais le dernier terme −64b² échoue.",
+  "legende_titre": "Trois vérifications, une échoue",
+  "lecture": [
+   "La première ligne verte : 4a⁴ est le carré de 2a².",
+   "La deuxième ligne verte : 32a²b vaut 2 × 2a² × 8b.",
+   "La troisième ligne rouge : le carré de 8b est 64b², et non −64b².",
+   "En bas, pour a = b = 1, le polynôme vaut −28 et non 100."
+  ],
+  "a_voir": "Les trois vérifications doivent réussir ensemble."
+ },
+ {
+  "code": "18-106",
+  "a_dire": "Un carré est positif : un dernier terme négatif ne peut pas en être un.",
+  "legende_titre": "Aucun carré ne vaut −64",
+  "lecture": [
+   "La première ligne verte : 8 × 8 = 64.",
+   "La deuxième ligne verte : (−8) × (−8) = 64.",
+   "La troisième ligne rouge cherche un nombre dont le carré vaut −64 : il n'y en a aucun.",
+   "En bas : deux nombres de même signe ont un produit positif."
+  ],
+  "a_voir": "Un carré est toujours positif."
+ },
+ {
+  "code": "18-107",
+  "a_dire": "Factoriser prépare une autre opération : on écrit 12 et 18 en produits pour voir le facteur 6 et le supprimer.",
+  "legende_titre": "Factoriser avant de réduire",
+  "lecture": [
+   "La case grise est la fraction 12 sur 18.",
+   "La case bleue montre 12 = 2 × 6 et 18 = 3 × 6.",
+   "La case verte est le résultat 2 sur 3, après suppression du 6."
+  ],
+  "a_voir": "La factorisation sert d'étape avant la réduction."
+ },
+ {
+  "code": "18-108",
+  "a_dire": "Pour réduire une fraction de polynômes, on factorise d'abord pour voir le facteur commun x + 3.",
+  "legende_titre": "Réduire demande de factoriser",
+  "lecture": [
+   "La case grise du haut est la fraction de départ.",
+   "La case bleue du milieu montre les deux polynômes factorisés : x + 3 est en haut et en bas.",
+   "La case verte du bas est la fraction réduite.",
+   "Pour x = 1, la première et la dernière fraction valent −2 sur 3."
+  ],
+  "a_voir": "Sans factorisation, le facteur commun reste invisible."
+ },
+ {
+  "code": "18-109",
+  "a_dire": "Pour un dénominateur commun de polynômes, on garde chaque facteur le plus de fois qu'il apparaît, comme pour 4 et 6.",
+  "legende_titre": "Le plus petit multiple commun, avec des lettres",
+  "lecture": [
+   "Chaque petite case est un facteur : la case orange x + 3 est présente dans les deux lignes du haut.",
+   "Les deux premières lignes sont x² − 9 et x² + 5x + 6, factorisés.",
+   "La ligne du bas (PPCM) garde x + 3 une seule fois et ajoute x + 2 et x − 3.",
+   "En bas, la règle des nombres : 4 et 6 donnent 2 × 2 × 3 = 12."
+  ],
+  "a_voir": "La règle des nombres s'applique aux facteurs de polynômes."
+ },
+ {
+  "code": "18-110",
+  "a_dire": "La règle du produit nul : si un produit vaut 0, l'un des facteurs vaut 0.",
+  "legende_titre": "Quand un produit vaut zéro",
+  "lecture": [
+   "À gauche, en rouge, x = 1 : 3 × 4 = 12, aucun facteur n'est nul.",
+   "À droite, en vert, x = −2 : 0 × 1 = 0, le facteur x + 2 est nul.",
+   "La règle ne vaut que pour un produit égal à 0."
+  ],
+  "a_voir": "Un produit nul a au moins un facteur nul."
+ },
+ {
+  "code": "18-111",
+  "a_dire": "Dans x² + 5x + 6 = 0, x est dans deux termes différents, et les méthodes du chapitre 16 ne les réunissent pas.",
+  "legende_titre": "Retirer 6 ne suffit pas",
+  "lecture": [
+   "La case du haut est l'équation de départ.",
+   "La flèche orange retire 6 des deux côtés.",
+   "À droite, la case bleue x² et la case orange 5x restent deux termes séparés."
+  ],
+  "a_voir": "Il faut une autre idée que les méthodes du chapitre 16."
+ },
+ {
+  "code": "18-112",
+  "a_dire": "La factorisation sépare l'équation en deux équations simples, où x apparaît une seule fois.",
+  "legende_titre": "Une équation devient deux équations",
+  "lecture": [
+   "La case du haut est le produit (x + 2)(x + 3) égal à 0.",
+   "Les flèches mènent aux deux équations x + 2 = 0 et x + 3 = 0.",
+   "Les cases vertes donnent x = −2 et x = −3."
+  ],
+  "a_voir": "Chaque équation simple donne une valeur de x."
+ },
+ {
+  "code": "18-113",
+  "a_dire": "Aucune valeur de x ne donne 0 pour x² + 1 : il n'y a pas de solution réelle.",
+  "legende_titre": "Aucune valeur n'atteint 0",
+  "lecture": [
+   "Les disques bleus sont les valeurs 1, 5 et 10, pour x = 0, 2 et −3.",
+   "La croix rouge sur le 0 est la valeur cherchée.",
+   "Aucun disque ne tombe sur le 0."
+  ],
+  "a_voir": "Les valeurs de x² + 1 restent au moins à 1."
+ },
+ {
+  "code": "18-114",
+  "a_dire": "Le discriminant est un nombre qu'on calcule avant tout essai pour savoir si l'équation a des solutions réelles.",
+  "legende_titre": "Un nombre au lieu d'essais",
+  "lecture": [
+   "À gauche, en gris, la méthode par essais : 1 × 6 donne une somme 7, 2 × 3 donne 5.",
+   "À droite, en bleu, on calcule un nombre à partir de l'équation.",
+   "Ce nombre répond à la question en vert : y a-t-il des solutions réelles ?"
+  ],
+  "a_voir": "Le discriminant remplace les essais lents par un calcul."
+ },
+ {
+  "code": "18-115",
+  "a_dire": "Le conjugué change seulement le signe du milieu ; l'opposé change tous les signes.",
+  "legende_titre": "Conjugué ou opposé",
+  "lecture": [
+   "La case bleue est √5 + 2.",
+   "Ligne du haut, orange : le conjugué √5 − 2 ; le produit vaut 5 − 4 = 1.",
+   "Ligne du bas, violette : l'opposé −√5 − 2, où tous les signes changent."
+  ],
+  "a_voir": "Le conjugué garde le premier terme et change le signe du milieu."
+ },
+ {
+  "code": "18-116",
+  "a_dire": "Développer et factoriser sont les deux sens d'une même égalité.",
+  "legende_titre": "Une égalité, deux sens",
+  "lecture": [
+   "La case de gauche est (x + 2)(x + 3), celle de droite x² + 5x + 6.",
+   "La flèche orange du haut va de gauche à droite : développer.",
+   "La flèche violette du bas va de droite à gauche : factoriser.",
+   "Pour x = 1, les deux côtés valent 12."
+  ],
+  "a_voir": "Les deux côtés sont égaux, on les lit dans un sens ou dans l'autre."
+ },
+ {
+  "code": "18-117",
+  "a_dire": "On se demande si un nombre dont le carré vaut −1 permettrait de factoriser x² + 1, comme √2 pour x² − 2.",
+  "legende_titre": "Refaire pour x² + 1 ce qui a réussi",
+  "lecture": [
+   "En haut, avec un nombre de carré 2, x² − 2 se factorise (case verte).",
+   "En bas, on cherche de même un nombre de carré −1 pour x² + 1.",
+   "La case rouge en pointillés montre la factorisation encore inconnue, avec des points d'interrogation."
+  ],
+  "a_voir": "On répète l'idée de √2, mais avec un carré égal à −1."
+ }
+]

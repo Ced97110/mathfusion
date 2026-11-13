@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 75, r'$a\times c=2\times1=2$', 'sujet', 'm')
+for (c, s, y) in ((r'$1$ et $2$', r'somme $3$', 56), (r'$-1$ et $-2$', r'somme $-3$', 44)):
+    box(ax, 8, y, 34, 9, 'sujet', label=c)
+    arrow(ax, (42, y + 4.5), (50, y + 4.5), 'varie')
+    box(ax, 50, y, 30, 9, 'varie', label=s)
+f = numberline(ax, 14, 74, 26, -4, 4, labels=False, arrow_right=False)
+disc(ax, f(3), 26, 2.6, 'varie', label=r'$3$', size='s')
+disc(ax, f(-3), 26, 2.6, 'varie', label=r'$-3$', size='s')
+ax.add_patch(Circle((f(1), 26), 2.6, ec=COL['sujet'], fc='none', lw=0.9, ls='--', zorder=2))
+text(ax, f(1), 26, r'$1$', 'sujet', 's')
+text(ax, f(1), 19, 'cherchée', 'sujet', 's')
+text(ax, 44, 8, r'aucune somme ne vaut $1$', 'limite', 'm')
+save(fig, '18-079')

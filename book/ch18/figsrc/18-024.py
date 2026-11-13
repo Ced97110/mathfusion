@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(50)
+box(ax,2,28,30,12,'sujet',label=r'$a(b+c)$',size='l')
+box(ax,56,28,30,12,'autre',label=r'$ab+ac$',size='l')
+arrow(ax,(34,37),(54,37),'varie'); text(ax,44,41,'développer','varie','s')
+arrow(ax,(54,31),(34,31),'varie'); text(ax,44,27,'factoriser','varie','s')
+text(ax,17,21,r'$3\times(4+5)$','sujet','m'); text(ax,71,21,r'$3\times4+3\times5$','autre','m')
+text(ax,44,21,'=','encre','l')
+text(ax,17,11,r'$3\times9=27$','resultat','m'); text(ax,71,11,r'$12+15=27$','resultat','m')
+text(ax,44,11,'=','encre','l')
+text(ax,44,46,'une seule égalité','fixe','s')
+save(fig,'18-024')

@@ -19,6 +19,7 @@
 | 2026-11-12 | 15 — Expressions algébriques et polynômes | 140 | 129 | 140 | aucune |
 | 2026-11-12 | 16 — Les équations à une inconnue et la méthode en cinq étapes | 146 | 139 | 144 | 16-005 (un essai ne dit pas quelle valeur essayer ensuite : non lu), 16-146 (le lien avec les chapitres 2, 3, 4, 12, 15 n'est pas lu) |
 | 2026-11-12 | 17 — Les inéquations à une variable | 126 | 120 | 126 | aucune |
+| 2026-11-12 | 18 — Factoriser les polynômes | 117 | 108 | 115 | 18-002 (les côtés comme inconnues ne sont pas lus), 18-044 (« aucun facteur commun à tous » n'est pas lu) |
 
 ## Remarques
 
@@ -37,3 +38,4 @@
 - Chapitre 15 : nombre ajouté par l'agent : 15-061 (5 ronds pour « poly », absent de la fiche). Erreurs de figure corrigées : 15-075 disait « même valeur : même polynôme » (faux) ; 15-062, case qui contredisait la légende ; 15-076, points hors des repères.
 - Chapitre 16 : nombres ajoutés par l'agent : 16-040 (valeurs 0 à 8 « tous testés »), 16-049 (10 = 7 + 3 calculé), 16-057 (exemple 3x et 1/3). 16-016 : annotation −3 orange au lieu du rouge du livre (rôles de couleur).
 - Chapitre 17 : nombres repris d'une fiche voisine ou calculés : 17-027 (−3, de 17-025), 17-028 (x ≤ 5y + 3, de 17-031), 17-105 (40 = 4 × 10 calculé). 17-123 : ligne « produit » ajoutée à la correction, que la fiche n'explique pas. 17-090 dessine le cas de la rubrique 1, pas l'inéquation du titre.
+- Chapitre 18 : erreurs de figure corrigées : 18-051 (« pas un carré » au-dessus de x²), 18-072 (bon couple 2 et 3 en rouge), 18-031 (« reste » au lieu de quotient). 18-004 cassé par une suppression du superviseur, réparé (positions des rangées). Aucun nombre inventé relevé.

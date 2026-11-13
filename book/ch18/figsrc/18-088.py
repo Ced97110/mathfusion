@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 6, 74, 76, 10, 'sujet', label=r'$3x^2-27$')
+arrow(ax, (44, 74), (44, 66), 'varie'); text(ax, 48, 70, 'retirer le facteur 3', 'varie', 's', ha='left')
+box(ax, 6, 54, 14, 10, 'varie', label='3')
+box(ax, 22, 54, 60, 10, 'sujet', label=r'$(x^2-9)$')
+arrow(ax, (52, 54), (52, 46), 'varie'); text(ax, 56, 50, r'$a^2-b^2$', 'varie', 's', ha='left')
+box(ax, 6, 34, 14, 10, 'varie', label='3')
+box(ax, 22, 34, 60, 10, 'resultat', label=r'$(x+3)(x-3)$')
+text(ax, 44, 22, r'$x=5$ : $48$ des deux côtés', 'fixe', 's')
+text(ax, 44, 12, 'deux méthodes à la suite', 'varie', 's')
+save(fig, '18-088')

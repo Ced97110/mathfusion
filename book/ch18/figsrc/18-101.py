@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,28,64,32,10,'sujet',label=r'$x^2-2$',size='l')
+text(ax,22,57,'entiers seulement','autre','m',weight='bold'); text(ax,66,57,r'avec $\sqrt{2}$ permis','resultat','m',weight='bold')
+arrow(ax,(36,64),(24,60),'fixe'); arrow(ax,(52,64),(64,60),'fixe')
+box(ax,4,22,40,31,'limite')
+text(ax,24,47,'produit $-2$, somme 0 ?','limite','s')
+text(ax,24,38,r'$1$ et $-2$ : somme $-1$','limite','s'); text(ax,24,31,r'$-1$ et $2$ : somme $1$','limite','s')
+text(ax,24,25,'aucun : premier','limite','s',weight='bold')
+box(ax,48,22,36,31,'resultat')
+text(ax,66,43,r'$(x+\sqrt{2})$','resultat','m'); text(ax,66,34,r'$(x-\sqrt{2})$','resultat','m'); text(ax,66,25,'se factorise','resultat','s',weight='bold')
+text(ax,44,12,'même polynôme, deux réponses','encre','m')
+save(fig,'18-101')

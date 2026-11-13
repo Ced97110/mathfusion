@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,22,60,'par essais','fixe','m',weight='bold'); text(ax,66,60,'discriminant','sujet','m',weight='bold')
+box(ax,4,42,36,10,'fixe',label=r'$x^2+5x+6=0$',size='m'); box(ax,48,42,36,10,'sujet',label=r'$x^2+5x+6=0$',size='m')
+text(ax,22,33,r'$1\times6$ : somme 7','limite','s'); text(ax,22,26,r'$2\times3$ : somme 5','resultat','s'); text(ax,22,19,'lent, avant de savoir','fixe','s')
+arrow(ax,(66,42),(66,32),'varie'); text(ax,70,37,'calcul','varie','s',ha='left')
+box(ax,50,22,32,10,'sujet',label='un nombre',size='m')
+arrow(ax,(66,22),(66,13),'varie')
+text(ax,66,8,'solutions réelles ?','resultat','m')
+save(fig,'18-114')

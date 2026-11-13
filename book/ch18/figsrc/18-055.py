@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 6, 76, 16, -10, 30, 5, every=2, arrow_right=False)
+disc(ax, f(25), 16, 1.6, 'sujet'); disc(ax, f(-7), 16, 1.6, 'limite')
+text(ax, f(25), 8, '25', 'sujet', 'm', weight='bold')
+text(ax, f(-7), 8, '−7', 'limite', 'm', weight='bold')
+text(ax, f(25) - 6, 29, r'$3^2+4^2$ = 25', 'sujet', 'm', weight='bold')
+text(ax, f(-7) + 8, 29, r'$(3+4)(3-4)$ = −7', 'limite', 'm', weight='bold')
+arrow(ax, (f(-7) + 2, 21), (f(25) - 2, 21), 'limite', both=True)
+text(ax, (f(25) + f(-7)) / 2, 25, r'$\neq$', 'limite', 'l', weight='bold')
+text(ax, 44, 45, r'copier la formule : ça ne donne pas $a^2+b^2$', 'encre', 's')
+save(fig, '18-055')

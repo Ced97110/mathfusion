@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,20,61,'un nombre','fixe','s'); text(ax,64,61,'une expression','sujet','s')
+box(ax,6,44,28,10,'fixe',label='156',weight='bold')
+text(ax,20,35,r'$12\times13$ ou $6\times26$ ?','limite','s')
+text(ax,20,29,'on ne sait plus','limite','s')
+box(ax,38,43,20,10,'sujet',label=r'$x^2$'); text(ax,60,48,'x · x','sujet','s',ha='left')
+box(ax,38,29,20,10,'varie',label=r'$5x$'); text(ax,60,34,'autres produits','varie','s',ha='left')
+box(ax,38,15,20,10,'fixe',label='6'); text(ax,60,20,'nombres × nombres','fixe','s',ha='left')
+text(ax,63,6,'la fabrication se lit','resultat','s')
+save(fig,'18-005')

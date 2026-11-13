@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+text(ax,2,53,'Chapitre 15 : on développe','fixe','s',ha='left')
+box(ax,2,36,34,10,'sujet',label=r'$(x+2)(x+3)$')
+box(ax,52,36,34,10,'resultat',label=r'$x^2+5x+6$')
+arrow(ax,(37,41),(51,41),'fixe'); text(ax,44,44.5,'produit','fixe','s')
+text(ax,2,26,'Problème inverse : on cherche','limite','s',ha='left')
+box(ax,2,8,34,10,'fixe',fill=False,dash=True,label=r'$?\ \times\ ?$')
+box(ax,52,8,34,10,'resultat',label=r'$x^2+5x+6$')
+arrow(ax,(51,13),(37,13),'varie'); text(ax,44,16.5,'retrouver','varie','s')
+save(fig,'18-001')

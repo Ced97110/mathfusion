@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, 'les deux produits du milieu', 'fixe', 's')
+box(ax, 14, 52, 24, 11, 'varie', label=r'$5x$', size='l')
+text(ax, 44, 57.5, r'$+$', 'encre', 'l')
+box(ax, 50, 52, 24, 11, 'varie', label=r'$4x$', size='l')
+brace(ax, 14, 74, 50, 'varie')
+arrow(ax, (44, 46), (44, 40), 'varie')
+box(ax, 32, 28, 24, 11, 'resultat', label=r'$9x$', size='l')
+text(ax, 44, 18, r'$b = p + q$', 'sujet', 'l')
+text(ax, 44, 9, r'$9 = 4 + 5$', 'resultat', 'm')
+save(fig, '18-065')

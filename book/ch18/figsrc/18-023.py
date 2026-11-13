@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,6,36,16,10,'sujet',label='3',size='l'); box(ax,36,36,44,10,'sujet',label=r'$2x+3$',size='l')
+text(ax,29,41,r'$\times$','sujet','l')
+text(ax,14,50,'facteur','sujet','s'); text(ax,58,50,'facteur','sujet','s')
+text(ax,29,31,'lié par ×','sujet','s')
+line(ax,[(50,36),(46,22)],'fixe',dash=True); line(ax,[(66,36),(70,22)],'fixe',dash=True)
+box(ax,36,12,20,10,'autre',label=r'$2x$',size='l'); box(ax,60,12,20,10,'autre',label='3',size='l')
+text(ax,58,17,'+','autre','l')
+text(ax,46,7.5,'terme','autre','s'); text(ax,70,7.5,'terme','autre','s')
+text(ax,16,17,'lié par +','autre','s')
+save(fig,'18-023')

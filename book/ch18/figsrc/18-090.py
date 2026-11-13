@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 8, 70, 30, 11, 'limite', label=r'$12x^2$'); text(ax, 48, 75.5, r'$-$', 'encre', 'l'); box(ax, 56, 70, 24, 11, 'limite', label='48')
+text(ax, 44, 63, 'ni l’un ni l’autre n’est un carré', 'limite', 's')
+arrow(ax, (44, 59), (44, 52), 'varie'); text(ax, 48, 55.5, 'retirer 12', 'varie', 's', ha='left')
+box(ax, 4, 33, 14, 12, 'varie', label='12'); text(ax, 22, 39, r'$\times$', 'encre', 'l')
+box(ax, 28, 30, 56, 18, 'fixe', fill=False, dash=True)
+box(ax, 32, 33, 20, 12, 'resultat', label=r'$x^2$'); text(ax, 56, 39, r'$-$', 'encre', 'l'); box(ax, 60, 33, 20, 12, 'resultat', label='4')
+text(ax, 56, 24, 'deux carrés', 'resultat', 's')
+text(ax, 44, 10, r'$12(x+2)(x-2)$', 'resultat', 'l')
+save(fig, '18-090')

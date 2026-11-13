@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,6,43,8,10,'fixe',label='6',dash=True); text(ax,18,48,'×','fixe','l'); box(ax,22,43,8,10,'sujet',label='4')
+text(ax,38,48,'+','encre','l')
+box(ax,46,43,8,10,'fixe',label='6',dash=True); text(ax,58,48,'×','fixe','l'); box(ax,62,43,8,10,'sujet',label='7')
+text(ax,30,58,'on retire le 6','fixe','s')
+arrow(ax,(22,56.5),(11,54.5),'fixe'); arrow(ax,(38,56.5),(49,54.5),'fixe')
+arrow(ax,(26,42),(34,27),'sujet'); arrow(ax,(66,42),(46,27),'sujet')
+box(ax,6,15,8,10,'autre',label='6'); text(ax,20,20,'×','encre','l'); box(ax,26,15,28,10,'sujet',label=r'$(4+7)$')
+text(ax,58,20,r'$=6\times11=66$','resultat','m',ha='left')
+brace(ax,26,54,15,'sujet','6 multiplie toute la somme')
+save(fig,'18-028')
