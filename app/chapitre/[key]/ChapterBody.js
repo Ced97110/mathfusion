@@ -4,7 +4,8 @@
 // et l'inclure ferait copier ce poids plusieurs fois dans le site construit.
 import { useEffect, useRef, useState } from 'react';
 
-export default function ChapterBody({ file }) {
+/** @param {{ file: string, dir?: string }} props  dir: folder of public/ holding the file */
+export default function ChapterBody({ file, dir = 'chapters' }) {
   const ref = useRef(null);
   const [state, setState] = useState('loading');
   useEffect(() => {
@@ -12,8 +13,8 @@ export default function ChapterBody({ file }) {
     // Vercel (trailingSlash) serves public/chapters/chNN.html at /chapters/chNN/ only:
     // try the file name first, then the clean URL.
     const get = (url) => fetch(url).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); });
-    get(`/chapters/${file}`)
-      .catch(() => get(`/chapters/${file.replace(/\.html$/, '/')}`))
+    get(`/${dir}/${file}`)
+      .catch(() => get(`/${dir}/${file.replace(/\.html$/, '/')}`))
       .then((html) => {
         if (!alive || !ref.current) return;
         ref.current.innerHTML = html;
@@ -24,12 +25,12 @@ export default function ChapterBody({ file }) {
       })
       .catch(() => alive && setState('error'));
     return () => { alive = false; };
-  }, [file]);
+  }, [file, dir]);
   return (
     <>
       {state === 'loading' && <p id="load">Chargement du chapitre…</p>}
       {state === 'error' && <p id="load">Ce chapitre n’a pas pu être chargé. Rechargez la page.</p>}
-      <div id="chap" ref={ref} />
+      <div id="chap" className={dir === 'chapters' ? undefined : 'livre'} ref={ref} />
     </>
   );
 }

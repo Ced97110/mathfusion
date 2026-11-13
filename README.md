@@ -29,3 +29,15 @@ ou, à la main dans Claude Code : « Fais le chapitre 6 en suivant CLAUDE.md ».
 Le suivi des chapitres est dans `book/JOURNAL.md`.
 
 Les polices (Inter, Lora, Noto Sans Math) viennent de Google Fonts.
+
+## Section Mathématiques discrètes
+
+Le livre « Mathématiques discrètes : cause, effets, finalité » (d'après Oscar Levin, 27 chapitres et 3 annexes)
+est publié sous `/discretes/`. Il est converti sans agent par `tools/discretes/build.py` :
+
+```
+python3 tools/discretes/build.py <chemin du PDF>
+```
+
+Le script écrit `content/discretes.json` (table des matières), `public/discretes/cNNN.html` (texte du livre)
+et `public/discretes/img/` (formules, encadrés, tableaux et figures découpés du PDF en SVG ; rien n'est redessiné).
