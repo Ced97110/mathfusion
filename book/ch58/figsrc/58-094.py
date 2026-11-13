@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+ox, oy, k = 6, 8, 10
+P = lambda a, b: (ox + a * k, oy + b * k)
+for i in range(0, 4): line(ax, [P(i, 0), P(i, 3.5)], 'fixe', lw=0.25)
+for j in range(0, 4): line(ax, [P(0, j), P(3.5, j)], 'fixe', lw=0.25)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.5)
+arrow(ax, P(0, 0), P(1, 2), 'autre', lw=1.5)
+arrow(ax, P(0, 0), P(3, 3), 'resultat', lw=1.5)
+line(ax, [P(2, 1), P(3, 3)], 'fixe', lw=0.6, dash=True)
+line(ax, [P(1, 2), P(3, 3)], 'fixe', lw=0.6, dash=True)
+text(ax, P(2, 1)[0] + 1.5, P(2, 1)[1] - 3, '(2, 1)', 'sujet', 's', ha='left')
+text(ax, P(1, 2)[0] - 1.5, P(1, 2)[1] + 3, '(1, 2)', 'autre', 's', ha='right')
+text(ax, P(3, 3)[0] + 1.5, P(3, 3)[1] + 2.5, '(3, 3)', 'resultat', 's', ha='left')
+box(ax, 50, 36, 36, 9, 'resultat', label=r'$u+v=(3,\,3)$', size='s')
+box(ax, 50, 23, 36, 9, 'varie', label=r'$3\,u=(6,\,3)$', size='s')
+box(ax, 50, 10, 36, 9, 'fixe', label=r'$u\times v=\,?$', size='s', dash=True)
+save(fig, '58-094')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 4, 74, 80, 11, 'sujet', label=r'$(1,0),\ (0,1)$ engendrent $V$', size='s')
+arrow(ax, (44, 73), (44, 63), 'varie', lw=1.4)
+text(ax, 48, 68, 'on retire (1, 0)', 'varie', 's', ha='left')
+box(ax, 4, 42, 80, 20, 'varie')
+text(ax, 44, 57, 'étape qui porte le poids', 'varie', 's', weight='bold')
+text(ax, 44, 49, r'$(1,0)=\frac{1}{3}\,(3,1)-\frac{1}{3}\,(0,1)$', 'varie', 'm')
+arrow(ax, (44, 41), (44, 31), 'resultat', lw=1.4)
+text(ax, 48, 36, 'tout reste atteint', 'resultat', 's', ha='left')
+box(ax, 4, 18, 80, 11, 'resultat', label=r'$(3,1),\ (0,1)$ engendrent $V$', size='s', weight='bold')
+text(ax, 44, 8, r'$u_1$ prend la place de $w_1$', 'fixe', 's')
+save(fig, '58-175')

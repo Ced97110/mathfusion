@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 72, 'famille qui engendre le plan', 'sujet', 's')
+box(ax, 16, 56, 26, 10, 'sujet', label='(1, 0)')
+box(ax, 46, 56, 26, 10, 'sujet', label='(1, 1)')
+text(ax, 44, 48, 'combinaison de l’autre ? non', 'fixe', 's')
+arrow(ax, (44, 45), (44, 34), 'varie', lw=1.2)
+text(ax, 48, 39.5, 'rien retiré', 'varie', 's', ha='left')
+box(ax, 16, 21, 26, 10, 'resultat', label='(1, 0)')
+box(ax, 46, 21, 26, 10, 'resultat', label='(1, 1)')
+text(ax, 44, 14, 'base : 2 vecteurs', 'resultat', 'm')
+text(ax, 44, 8, 'toute base du plan en a 2', 'fixe', 's')
+save(fig, '58-297')

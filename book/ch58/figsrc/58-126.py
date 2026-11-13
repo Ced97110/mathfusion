@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+u, O = 9.0, (46, 28)
+P = lambda p: iso(p[0], p[1], p[2], O, u)
+A, B = (1, 2, 1), (0, 1, -1)
+comb = lambda s, t: tuple(s * A[i] + t * B[i] for i in range(3))
+# axes gris
+for e in [(3.3, 0, 0), (0, 3.3, 0), (0, 0, 3.3)]:
+    arrow(ax, P((0, 0, 0)), P(e), 'fixe', lw=0.8)
+poly(ax, [P(comb(s, t)) for s, t in [(-.5, -.5), (1.5, -.5), (1.5, 1.5), (-.5, 1.5)]], 'sujet')
+arrow(ax, P((0, 0, 0)), P(A), 'sujet', lw=1.6)
+arrow(ax, P((0, 0, 0)), P(B), 'autre', lw=1.6)
+disc(ax, *P((0, 0, 0)), 0.9, 'encre')
+text(ax, O[0] + 3, O[1] - 3.5, r'$O$', 'encre', 'm')
+pa, pb = P(A), P(B)
+text(ax, pa[0] + 3, pa[1] + 1.5, r'$a$', 'sujet', 'l', weight='bold')
+text(ax, pb[0] + 3, pb[1] - 1.5, r'$b$', 'autre', 'l', weight='bold')
+pw = P(comb(1.35, 1.35))
+text(ax, pw[0] - 5, pw[1] + 0.5, r'plan $W$', 'sujet', 'm')
+save(fig, '58-126')

@@ -1,0 +1,32 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import numpy as np
+fig, ax = canvas(64)
+ox, oy, wx, ky = 8, 10, 34, 17
+P = lambda x, y: (ox + x * wx, oy + y * ky)
+arrow(ax, (ox - 2, oy), (ox + wx + 3, oy), 'fixe', lw=0.6)
+line(ax, [(ox, oy - 1), (ox, oy + 2 * ky + 3)], 'fixe', lw=0.6)
+xs = np.linspace(0, 1, 40)
+line(ax, [P(x, x) for x in xs], 'sujet', lw=1.3)
+line(ax, [P(x, x * x) for x in xs], 'autre', lw=1.3)
+line(ax, [P(x, x + x * x) for x in xs], 'resultat', lw=1.5)
+for y, role in [(0.5, 'sujet'), (0.25, 'autre'), (0.75, 'resultat')]:
+    disc(ax, *P(0.5, y), 1.0, role)
+line(ax, [P(0.5, 0), P(0.5, 0.75)], 'fixe', lw=0.4, dash=True)
+text(ax, P(0.5, 0)[0], oy - 3, '0,5', 'fixe', 's')
+text(ax, P(0.5, 0.25)[0] + 2, P(0.5, 0.25)[1] - 3.2, '0,25', 'autre', 's', ha='left')
+text(ax, P(0.5, 0.5)[0] + 4, P(0.5, 0.5)[1] + 1, '0,5', 'sujet', 's', ha='left')
+text(ax, P(0.5, 0.75)[0] - 2, P(0.5, 0.75)[1] + 4, '0,75', 'resultat', 's', ha='right')
+text(ax, P(1, 2)[0] - 2, P(1, 2)[1] + 3.5, r'$f+g$', 'resultat', 's', ha='right')
+# fonction à saut (exclue)
+qx = 54
+line(ax, [(qx, oy), (qx + 28, oy)], 'fixe', lw=0.6)
+line(ax, [(qx, oy - 1), (qx, oy + 20)], 'fixe', lw=0.6)
+line(ax, [(qx, oy + 1.5), (qx + 14, oy + 1.5)], 'limite', lw=1.5)
+line(ax, [(qx + 14, oy + 1.5), (qx + 14, oy + 13)], 'limite', lw=0.8, dash=True)
+line(ax, [(qx + 14, oy + 13), (qx + 28, oy + 13)], 'limite', lw=1.5)
+text(ax, qx + 14, oy + 25, 'un saut :', 'limite', 's')
+text(ax, qx + 14, oy + 21, 'crayon levé', 'limite', 's')
+text(ax, qx + 14, oy + 29, 'exclue', 'limite', 's', weight='bold')
+text(ax, P(0.8, 0.8)[0] - 2.5, P(0.8, 0.8)[1] + 3.5, r'$f$', 'sujet', 's')
+text(ax, P(0.9, 0.81)[0] + 1, P(0.9, 0.81)[1] - 4, r'$g$', 'autre', 's')
+save(fig, '58-102')

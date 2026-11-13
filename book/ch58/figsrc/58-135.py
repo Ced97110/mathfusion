@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+# (x^2 + x) + (-x^2) = x : les termes de degré 2 se compensent
+c1, c2 = (0, 1, 1), (0, 0, -1)          # coefficients de 1, x, x^2
+cs = tuple(a + b for a, b in zip(c1, c2))
+assert cs == (0, 1, 0)
+box(ax, 2, 40, 34, 11, 'sujet', label=r'$x^2+x$')
+text(ax, 19, 55, 'degré 2', 'sujet', 's')
+box(ax, 2, 18, 34, 11, 'autre', label=r'$-x^2$')
+text(ax, 19, 33, 'degré 2', 'autre', 's')
+text(ax, 42, 34.5, '+', 'encre', 'l')
+arrow(ax, (38, 46), (50, 38), 'varie')
+arrow(ax, (38, 24), (50, 32), 'varie')
+box(ax, 52, 29, 34, 12, 'limite', label=r'$x$')
+text(ax, 69, 45, 'degré 1', 'limite', 's')
+text(ax, 69, 24, 'les termes en', 'varie', 's')
+text(ax, 69, 20, r'$x^2$ se compensent', 'varie', 's')
+box(ax, 2, 3, 34, 9, 'limite', fill=False, dash=True, label=r'polynôme nul')
+text(ax, 62, 7.5, 'pas de degré 2 non plus', 'limite', 's')
+save(fig, '58-135')

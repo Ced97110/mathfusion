@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+ox, oy, u = 26, 14, 9.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(-2.6, 0), P(3.6, 0)], 'sujet', lw=1.4)
+line(ax, [P(-0.5, -0.5), P(3.7, 3.7)], 'autre', lw=1.4)
+text(ax, P(3.6, 0)[0] - 1, P(3.6, 0)[1] - 3.5, r'$M_1$ : axe horizontal', 'sujet', 's', ha='right')
+text(ax, P(3.7, 3.7)[0] + 1.5, P(3.7, 3.7)[1], r'$M_2$', 'autre', 's', ha='left')
+# P = x1 + x2
+line(ax, [P(1, 3), P(-2, 0)], 'fixe', lw=0.7, dash=True)
+line(ax, [P(1, 3), P(3, 3)], 'fixe', lw=0.7, dash=True)
+arrow(ax, P(0, 0), P(-2, 0), 'resultat', lw=1.4)
+arrow(ax, P(0, 0), P(3, 3), 'autre', lw=1.1)
+disc(ax, P(1, 3)[0], P(1, 3)[1], 1.2, 'sujet')
+text(ax, P(1, 3)[0] - 2, P(1, 3)[1] + 3, 'P = (1, 3)', 'sujet', 's', ha='right')
+text(ax, P(-2, 0)[0], P(-2, 0)[1] - 3.5, r'$x_1$ = (−2, 0)', 'resultat', 's', ha='center')
+text(ax, P(3, 3)[0] + 2, P(3, 3)[1] - 3, r'$x_2$ = (3, 3)', 'autre', 's', ha='left')
+arrow(ax, (P(1, 3)[0] - 5, P(1, 3)[1] - 3), (P(-2, 0)[0] + 3, P(-2, 0)[1] + 4), 'varie', lw=1.2, curve=0.0)
+text(ax, 66, 28, r'$\pi_1(P)=x_1$', 'varie', 'm')
+text(ax, 66, 23, r'garde $x_1$, oublie $x_2$', 'varie', 's')
+text(ax, 66, 5, r'$\pi_1(x_1)=x_1$', 'resultat', 's')
+save(fig, '58-279')

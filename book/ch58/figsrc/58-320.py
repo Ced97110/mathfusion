@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 12, 76, 14, 58, 60, step=1, arrow_right=False, size='m', tick=1.6)
+text(ax, 44, 4.5, 'chapitres du livre', 'fixe', 's')
+disc(ax, f(58), 14, 1.6, 'varie')
+disc(ax, f(60), 14, 1.6, 'sujet')
+# ch. 58 : obstacle
+box(ax, 2, 34, 40, 24, 'varie', fill=True)
+text(ax, 22, 54, 'chapitre 58 : obstacle', 'varie', 's', weight='bold')
+text(ax, 22, 46, '2 × 1 = 0 dans ℤ/2ℤ', 'varie', 's')
+text(ax, 22, 40, 'pas de base', 'varie', 's')
+# ch. 60 : sujet
+box(ax, 46, 34, 40, 24, 'sujet', fill=True)
+text(ax, 66, 54, 'chapitre 60 : sujet', 'sujet', 's', weight='bold')
+text(ax, 66, 46, '2 × 1 = 0 dans ℤ/2ℤ', 'sujet', 's')
+text(ax, 66, 40, 'la torsion étudiée', 'sujet', 's')
+arrow(ax, (22, 34), (f(58), 17), 'fixe', lw=0.6)
+arrow(ax, (66, 34), (f(60), 17), 'fixe', lw=0.6)
+arrow(ax, (42, 46), (46, 46), 'encre', lw=1.0)
+save(fig, '58-320')

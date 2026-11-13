@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+yt, yb = 44, 20
+ft = numberline(ax, 8, 56, yt, 0, 4, 1, labels=False, arrow_right=False)
+fb = numberline(ax, 8, 56, yb, 0, 4, 1, arrow_right=False)
+text(ax, 32, 62, 'coefficients entiers', 'sujet', 'm', weight='bold')
+for v in (0, 2, 4):
+    disc(ax, ft(v), yt, 1.5, 'resultat')
+disc(ax, ft(1), yt, 1.5, 'limite', fill=False, lw=1.2)
+arrow(ax, (ft(0), yt + 2), (ft(2), yt + 2), 'varie', curve=-0.5)
+arrow(ax, (ft(2), yt + 2), (ft(4), yt + 2), 'varie', curve=-0.5)
+text(ax, ft(1), yt + 9.5, '$f_1$', 'varie', 'm')
+text(ax, ft(3), yt + 9.5, '$f_1$', 'varie', 'm')
+text(ax, ft(1), yt - 5, 'pas atteint', 'limite', 's')
+text(ax, 32, 34, 'coefficients rationnels', 'autre', 'm', weight='bold')
+disc(ax, fb(0), yb, 1.5, 'resultat')
+disc(ax, fb(1), yb, 1.5, 'resultat')
+arrow(ax, (fb(0), yb + 2), (fb(1), yb + 2), 'varie', curve=-0.5)
+text(ax, (fb(0) + fb(1)) / 2, yb + 8, r'$\frac{1}{2}f_1$', 'varie', 's')
+text(ax, 74, 53, 'avec $f_1=(2,0)$', 'varie', 's')
+save(fig, '58-235')

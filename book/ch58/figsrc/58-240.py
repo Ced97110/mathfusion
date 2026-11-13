@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+y, h = 26, 12
+box(ax, 2, y, 12, h, 'sujet', label='5')
+arrow(ax, (14.5, y + h / 2), (25.5, y + h / 2), 'varie')
+text(ax, 20, y + h / 2 + 3.5, r'$\iota_1$', 'varie', 'm')
+box(ax, 26, y - 2, 36, h + 4, 'fixe', fill=False, dash=True, lw=0.7)
+box(ax, 28, y, 12, h, 'sujet', label='5')
+box(ax, 42, y, 18, h, 'fixe', label='(0, 0)')
+arrow(ax, (62.5, y + h / 2), (71.5, y + h / 2), 'varie')
+text(ax, 67, y + h / 2 + 3.5, r'$\pi_1$', 'varie', 'm')
+box(ax, 72, y, 14, h, 'resultat', label='5')
+arrow(ax, (8, y - 3), (79, y - 3), 'resultat', curve=0.3)
+text(ax, 43, 6, r'$\pi_1\circ\iota_1$ : le 5 revient', 'resultat', 'm')
+save(fig, '58-240')

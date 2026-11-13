@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, u = 12, 6, 8.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+arrow(ax, P(0, 0), P(1, 2), 'sujet', lw=1.5)
+arrow(ax, P(0, 0), P(3, 1), 'varie', lw=1.5)
+arrow(ax, P(0, 0), P(2, 5), 'autre', lw=1.5)
+text(ax, P(1, 2)[0] - 2, P(1, 2)[1], '(1, 2)', 'sujet', 's', ha='right')
+text(ax, P(3, 1)[0] + 2, P(3, 1)[1] - 1, '(3, 1)', 'varie', 's', ha='left')
+text(ax, P(2, 5)[0] + 2, P(2, 5)[1], '(2, 5)', 'autre', 's', ha='left')
+text(ax, 68, 40, 'plan : dimension 2', 'fixe', 's')
+text(ax, 68, 32, '3 vecteurs > 2', 'varie', 'm')
+text(ax, 68, 24, 'donc liés, sans calcul', 'resultat', 's')
+text(ax, 68, 12, 'quelle relation ? il faut', 'fixe', 's')
+text(ax, 68, 8, 'calculer', 'fixe', 's')
+save(fig, '58-300')

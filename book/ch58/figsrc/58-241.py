@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+text(ax, 44.5, 81, 'la liste', 'sujet', 'm', weight='bold')
+# liste de départ : 4 et (1, 2)
+box(ax, 27, 62, 12, 11, 'sujet', label='4', weight='bold')
+box(ax, 40, 62, 22, 11, 'sujet', label='(1, 2)', weight='bold')
+# deux listes : une seule case remise en place, l'autre à zéro
+box(ax, 4, 36, 12, 11, 'sujet', label='4', weight='bold')
+box(ax, 17, 36, 22, 11, 'fixe', label='(0, 0)')
+box(ax, 49, 36, 12, 11, 'fixe', label='0')
+box(ax, 62, 36, 22, 11, 'sujet', label='(1, 2)', weight='bold')
+arrow(ax, (31, 61), (22, 48), 'varie')
+arrow(ax, (58, 61), (66, 48), 'varie')
+text(ax, 12, 56, r'$\iota_1\circ\pi_1$', 'varie', 's')
+text(ax, 76, 56, r'$\iota_2\circ\pi_2$', 'varie', 's')
+text(ax, 44.5, 41.5, '+', 'encre', 'l', weight='bold')
+# somme case par case
+box(ax, 27, 10, 12, 11, 'resultat', label='4', weight='bold')
+box(ax, 40, 10, 22, 11, 'resultat', label='(1, 2)', weight='bold')
+arrow(ax, (22, 35), (34, 23), 'resultat')
+arrow(ax, (66, 35), (55, 23), 'resultat')
+text(ax, 44.5, 4.5, 'la somme : la même liste', 'resultat', 's')
+save(fig, '58-241')

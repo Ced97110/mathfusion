@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+H = 11
+text(ax, 44, 76, r'la fonction $f$ : $x\mapsto x+1$', 'sujet', 'm', weight='bold')
+text(ax, 22, 68, 'en général', 'encre', 's', weight='bold')
+text(ax, 66, 68, r'en $x=2$ : $f(2)=3$', 'encre', 's', weight='bold')
+box(ax, 3, 52, 40, H, 'sujet', label=r'$((\alpha+\beta)f)(x)$', size='s')
+box(ax, 47, 52, 38, H, 'sujet', label=r'$\alpha=2,\ \beta=3$', size='s')
+box(ax, 3, 30, 40, H, 'sujet', label=r'$=(\alpha+\beta)\,f(x)$', size='s')
+box(ax, 47, 30, 38, H, 'sujet', label=r'$(2+3)\times3=15$', size='s')
+box(ax, 3, 6, 40, H, 'resultat', label=r'$=\alpha f(x)+\beta f(x)$', size='s', lw=1.2)
+box(ax, 47, 6, 38, H, 'resultat', label=r'$2\times3+3\times3=15$', size='s', lw=1.2)
+arrow(ax, (23, 52), (23, 41), 'fixe', lw=1.0)
+text(ax, 25, 46.5, 'on évalue', 'fixe', 's', ha='left')
+arrow(ax, (23, 30), (23, 17), 'varie', lw=2.0)
+text(ax, 25, 23.5, 'distributivité', 'varie', 's', ha='left', weight='bold')
+save(fig, '58-107')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+ox, oy, u = 12, 12, 26.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+arrow(ax, P(0, 0), P(1, 0), 'sujet', lw=1.6)
+arrow(ax, P(0, 0), P(1, 1), 'autre', lw=1.6)
+arrow(ax, P(1, 0), P(1, 1), 'resultat', lw=1.4)
+text(ax, P(1, 0)[0], P(1, 0)[1] - 4, '(1, 0)', 'sujet', 's')
+text(ax, P(1, 1)[0] - 2, P(1, 1)[1] + 3.5, '(1, 1)', 'autre', 's', ha='right')
+text(ax, P(1, 0.5)[0] + 2, P(1, 0.5)[1], '(0, 1)', 'resultat', 's', ha='left')
+text(ax, 66, 40, '(0, 1) = (1, 1) − (1, 0)', 'resultat', 's')
+text(ax, 66, 34, 'les deux engendrent le plan', 'resultat', 's')
+text(ax, 66, 24, '2 vecteurs = dimension 2', 'fixe', 's')
+text(ax, 66, 18, 'donc déjà une base', 'sujet', 'm')
+save(fig, '58-293')

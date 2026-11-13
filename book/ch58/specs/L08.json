@@ -1,0 +1,361 @@
+[
+ {
+  "code": "58-211",
+  "a_dire": "La composée ρ ∘ η fait d’abord η, puis ρ : l’arrivée de η est le départ de ρ.",
+  "legende_titre": "Deux applications l’une après l’autre",
+  "lecture": [
+   "La case grise est le sac type 1, (1, 0).",
+   "La première flèche orange, η, l’envoie sur la case bleue (2, 1).",
+   "La seconde flèche orange, ρ, envoie la case bleue sur la case verte (2, 3).",
+   "La grande flèche bleue du bas va du départ à l’arrivée : c’est ρ ∘ η."
+  ],
+  "a_voir": "L’arrivée de η est le départ de ρ, et η agit en premier."
+ },
+ {
+  "code": "58-212",
+  "a_dire": "La preuve part de l’image du sac écrite en lots, fait entrer ρ dans la somme, et arrive à l’image écrite avec les lots g.",
+  "legende_titre": "Trois écritures de la même image",
+  "lecture": [
+   "Les trois cadres numérotés sont les trois étapes de la preuve, de haut en bas.",
+   "Étape 1, en bleu : l’image du sac par η est écrite avec les lots f et les nombres a ; pour le sac type 1 : 2 f₁ + f₂.",
+   "Étape 2, en orange : ρ entre dans la somme, et chaque lot est remplacé par son image : 2 (1, 1) + (0, 1).",
+   "Étape 3, en vert : avec les nombres c, l’image est écrite avec les lots g : (2, 3). Le texte gris sous la seconde flèche dit par quoi on remplace ρ(f_j)."
+  ],
+  "a_voir": "L’étape 2, où ρ entre dans la somme, relie l’écriture en lots f à l’écriture en lots g."
+ },
+ {
+  "code": "58-213",
+  "a_dire": "La case ligne k, colonne i du produit CA est la somme des produits c_kj a_ji : la ligne k de C combinée à la colonne i de A.",
+  "legende_titre": "Une case du produit, ligne contre colonne",
+  "lecture": [
+   "Le tableau de gauche est celui de la seconde application ; sa ligne 2 est entourée en bleu : (1, 1).",
+   "Le tableau du milieu est celui de la première ; sa colonne 2 est entourée en violet : (1, 3).",
+   "On multiplie case par case, puis on additionne : 1 × 1 + 1 × 3.",
+   "La flèche orange mène à la case verte : 4, ligne 2 et colonne 2 de CA."
+  ],
+  "a_voir": "Une ligne de C et une colonne de A donnent une seule case du résultat."
+ },
+ {
+  "code": "58-214",
+  "a_dire": "Le produit de tableaux est la composition : CA, avec le tableau de l’application faite en dernier écrit d’abord, est le tableau de la composée ; AC ne l’est pas.",
+  "legende_titre": "Deux produits, une seule composée",
+  "lecture": [
+   "En haut, A est le tableau de la première application η (bleu), C celui de la seconde ρ (violet).",
+   "En bas à gauche, en vert, CA est le tableau de η puis ρ : c’est la composée. Ses lignes sont (2, 1) et (3, 4).",
+   "En bas à droite, en rouge, AC est le tableau de ρ puis η, l’autre ordre : ce n’est pas la composée. Ses lignes sont (3, 1) et (4, 3).",
+   "Le signe ≠ montre que les deux produits sont différents."
+  ],
+  "a_voir": "Il faut écrire d’abord le tableau de l’application faite en dernier : CA est la composée."
+ },
+ {
+  "code": "58-215",
+  "a_dire": "La règle ligne par colonne est forcée : le sac passe par chaque lot, chaque passage donne un produit, et les produits s’additionnent parce que l’image d’une somme est la somme des images.",
+  "legende_titre": "D’où vient l’addition des produits",
+  "lecture": [
+   "Le sac e₂ (bleu) part à gauche ; l’arrivée g₂ (vert) est à droite.",
+   "Il passe par les deux lots f₁ et f₂ (gris) ; les flèches de départ portent les nombres 1 et 3.",
+   "De chaque lot, une flèche mène à g₂ avec le nombre 1.",
+   "Par f₁ : 1 × 1 ; par f₂ : 1 × 3 ; les deux passages s’additionnent : 4."
+  ],
+  "a_voir": "Chaque chemin donne un produit, et le résultat est la somme des chemins."
+ },
+ {
+  "code": "58-216",
+  "a_dire": "On calcule l’image du sac type 1 par les deux applications l’une après l’autre : 2 (1, 1) + (0, 1) = (2, 3).",
+  "legende_titre": "Premier calcul : par les applications",
+  "lecture": [
+   "Le haut écrit l’image du sac type 1 par η : (2, 1), soit 2 f₁ + f₂.",
+   "Dans le plan, les deux flèches orange sont 2 fois (1, 1), mises bout à bout.",
+   "La flèche bleue est (0, 1), mise au bout des deux autres.",
+   "Le point vert est l’arrivée : (2, 3)."
+  ],
+  "a_voir": "Les trois flèches mises bout à bout mènent au point (2, 3)."
+ },
+ {
+  "code": "58-217",
+  "a_dire": "La première colonne de CA est le tableau C appliqué à la colonne (2, 1) : on trouve (2, 3), comme avec les applications.",
+  "legende_titre": "Second calcul : par le produit",
+  "lecture": [
+   "À gauche, le tableau C : sa ligne 1 est en bleu, (1, 0), sa ligne 2 en violet, (1, 1).",
+   "Au milieu, en orange, la première colonne de A : (2, 1).",
+   "À droite, la première colonne de CA : 2 vient de la ligne bleue, 3 de la ligne violette.",
+   "Sous le schéma, les deux calculs : 1 × 2 + 0 × 1 = 2 en bleu, 1 × 2 + 1 × 1 = 3 en violet."
+  ],
+  "a_voir": "Le produit donne le même vecteur (2, 3) que l’enchaînement."
+ },
+ {
+  "code": "58-218",
+  "a_dire": "La seconde colonne de CA est (1, 4), et donc CA = (2 1 ; 3 4).",
+  "legende_titre": "La seconde colonne et le tableau complet",
+  "lecture": [
+   "En haut : l’image du sac type 2 par η, (1, 3) = f₁ + 3 f₂, puis son image par ρ.",
+   "Dans le plan, la flèche orange est 1 fois (1, 1).",
+   "Les trois flèches bleues sont 3 fois (0, 1), mises bout à bout ; le point vert est (1, 4).",
+   "Le tableau CA, à droite, a pour seconde colonne (1, 4) en vert ; la première colonne, (2, 3), est en gris."
+  ],
+  "a_voir": "Les deux colonnes (2, 3) et (1, 4) forment le tableau CA."
+ },
+ {
+  "code": "58-219",
+  "a_dire": "(DC)A = D(CA) vient de ce que les parenthèses ne changent pas ce qu’on fait au sac : trois actions, dans le même ordre.",
+  "legende_titre": "Trois actions, deux regroupements",
+  "lecture": [
+   "Le sac (bleu) subit trois actions orange dans cet ordre : η (tableau A), ρ (tableau C), τ (tableau D).",
+   "La première accolade groupe η et ρ : c’est D(CA).",
+   "La seconde accolade groupe ρ et τ : c’est (DC)A.",
+   "Dans les deux cas, le sac subit les mêmes actions dans le même ordre : les deux écritures sont égales (en vert)."
+  ],
+  "a_voir": "Les accolades changent le regroupement, jamais l’ordre des trois actions."
+ },
+ {
+  "code": "58-220",
+  "a_dire": "CA ≠ AC en général, car faire η puis ρ n’est pas faire ρ puis η ; quand chaque application agit case par case, les deux ordres donnent le même résultat.",
+  "legende_titre": "Quand l’ordre compte, et quand il ne compte pas",
+  "lecture": [
+   "Dans le cadre de gauche, chaque application multiplie les cases séparément : 2 et 3, puis 5 et 7.",
+   "Dans les deux ordres, la première case est multipliée par 10 et la seconde par 21 : le signe = est vert.",
+   "Dans le cadre de droite, les applications mélangent les cases : CA (bleu) a pour lignes (2, 1) et (3, 4), AC (violet) a pour lignes (3, 1) et (4, 3).",
+   "Le signe ≠ dit que ces deux tableaux sont différents."
+  ],
+  "a_voir": "À gauche les deux ordres s’accordent, à droite ils se contredisent."
+ },
+ {
+  "code": "58-221",
+  "a_dire": "Le tableau AC a pour colonnes (3, 4) et (1, 3), donc AC est différent de CA.",
+  "legende_titre": "L’autre ordre : on fait la seconde d’abord",
+  "lecture": [
+   "Dans le plan, la flèche orange est 1 fois (2, 1), image de (1, 0) par A.",
+   "La flèche bleue qui la suit est (1, 3) : elle mène au point vert (3, 4), première colonne de AC.",
+   "La flèche bleue partant du bas à gauche est aussi (1, 3) : c’est la seconde colonne de AC.",
+   "À droite, AC (bleu) est placé au-dessus de CA (violet), avec le signe ≠ entre les deux."
+  ],
+  "a_voir": "Les colonnes (3, 4) et (1, 3) ne sont pas celles de CA."
+ },
+ {
+  "code": "58-222",
+  "a_dire": "Pour des listes à n cases vers des listes à n cases, applications et tableaux carrés se correspondent, la somme à la somme et la composée au produit : c’est un isomorphisme d’anneaux.",
+  "legende_titre": "Applications d’un côté, tableaux de l’autre",
+  "lecture": [
+   "La colonne bleue de gauche contient des applications : η, η + η′, ρ ∘ η.",
+   "La colonne violette de droite contient des tableaux 2 × 2 : A, A + A′, CA.",
+   "Chaque flèche verte à double sens relie une application à son tableau.",
+   "La somme va avec la somme, la composée avec le produit : les deux opérations sont respectées."
+  ],
+  "a_voir": "Chaque ligne relie une opération sur les applications à la même opération sur les tableaux."
+ },
+ {
+  "code": "58-223",
+  "a_dire": "Avec la convention de Jacobson, le tableau de la composée s’écrit dans l’ordre inverse de celui du livre : AC au lieu de CA.",
+  "legende_titre": "Deux conventions, deux ordres d’écriture",
+  "lecture": [
+   "Dans chaque cadre, η (bleu) est faite d’abord et ρ (violet) ensuite ; A est le tableau de η, C celui de ρ.",
+   "Cadre de gauche, le livre : on écrit C puis A ; les deux traits orange se croisent.",
+   "Cadre de droite, Jacobson : on écrit A puis C ; les deux traits sont parallèles.",
+   "Le texte du haut rappelle l’ordre des actions."
+  ],
+  "a_voir": "Le croisement des traits montre que l’ordre des facteurs est inversé."
+ },
+ {
+  "code": "58-224",
+  "a_dire": "Une application est inversible quand son tableau l’est ; doubler la première case n’envoie pas deux couples sur le même, mais son inverse demande un demi, qui n’est pas entier.",
+  "legende_titre": "Un inverse doit rester dans les entiers",
+  "lecture": [
+   "La droite graduée porte la première case a du couple (a, b) : 0, 1, 2, 3, 4.",
+   "Les arcs orange montrent ×2 : 1 va sur 2, et 2 va sur 4.",
+   "Pour défaire l’application, il faudrait envoyer 1 sur un demi : c’est le cercle rouge, qui n’est pas un entier.",
+   "À droite, le tableau de l’application a pour lignes (2, 0) et (0, 1)."
+  ],
+  "a_voir": "Le demi, en rouge, sort des entiers : pas d’inverse."
+ },
+ {
+  "code": "58-225",
+  "a_dire": "La matrice de passage P a pour colonne j les coordonnées du nouveau vecteur f_j dans l’ancienne base.",
+  "legende_titre": "Écrire les nouveaux vecteurs avec les anciens",
+  "lecture": [
+   "Les flèches grises sont l’ancienne base : e₁ = (1, 0) et e₂ = (0, 1).",
+   "La flèche orange est le premier nouveau vecteur, f₁ = (2, 1) ; la flèche violette est f₂ = (1, 1).",
+   "Les traits pointillés montrent f₁ = 2 e₁ + 1 e₂ et f₂ = 1 e₁ + 1 e₂.",
+   "Le tableau P a pour colonnes (2, 1) en orange et (1, 1) en violet."
+  ],
+  "a_voir": "Chaque colonne de P est un nouveau vecteur écrit avec l’ancienne base."
+ },
+ {
+  "code": "58-226",
+  "a_dire": "(f_j) est une base si et seulement si P a un inverse Q : les colonnes de Q écrivent les anciens vecteurs avec les nouveaux, et l’écriture dans une base est unique.",
+  "legende_titre": "Base et inverse vont ensemble",
+  "lecture": [
+   "Le cadre violet du haut dit : P a un inverse Q. Le cadre bleu du bas dit : les f_j forment une base. Le signe ⇔ au milieu dit que chacun entraîne l’autre.",
+   "La flèche qui descend a pour cause les colonnes de Q.",
+   "La flèche qui monte a pour cause l’unicité des écritures.",
+   "En bas, P de colonnes (2, 1) et (1, 1), multiplié par Q, donne le tableau 1 en vert."
+  ],
+  "a_voir": "Base et inverse s’entraînent dans les deux sens, chaque sens avec sa cause."
+ },
+ {
+  "code": "58-227",
+  "a_dire": "Si P a un inverse Q, les f_j engendrent M et sont indépendants, car P d = 0 donne d = Q P d = 0.",
+  "legende_titre": "Du tableau inversible à la base",
+  "lecture": [
+   "Le départ, en violet : P a un inverse Q ; ici les colonnes de P sont (2, 1) et (1, 1).",
+   "À gauche, les colonnes de Q écrivent les e_i avec les f_j : les f_j engendrent M (en vert).",
+   "À droite, une relation Σ d_j f_j = 0 donne P d = 0.",
+   "L’étape clé, en orange : d = Q P d = Q · 0 = 0, d’où l’indépendance (en vert)."
+  ],
+  "a_voir": "L’inverse Q ramène les coefficients d à zéro."
+ },
+ {
+  "code": "58-228",
+  "a_dire": "Si les f_j forment une base, la matrice Q qui écrit les e_i avec les f_j vérifie P Q = 1 et Q P = 1, parce que l’écriture est unique.",
+  "legende_titre": "De la base au tableau inversible",
+  "lecture": [
+   "Le texte bleu du haut donne la nouvelle base : f₁ = (2, 1) et f₂ = (1, 1).",
+   "À gauche, le sac e₁ = (1, 0) s’écrit f₁ − f₂ : la flèche orange f₁, puis la flèche violette −f₂, mènent au point vert.",
+   "À droite, le sac e₂ = (0, 1) s’écrit −f₁ + 2 f₂ : la flèche orange −f₁, puis deux flèches violettes f₂.",
+   "Ces deux écritures sont les colonnes de Q : (1, −1) et (−1, 2). Le texte du haut donne la raison : une seule écriture, donc QP = 1 et PQ = 1."
+  ],
+  "a_voir": "Chaque ancien sac a une seule écriture avec les nouveaux : ce sont les colonnes de Q."
+ },
+ {
+  "code": "58-229",
+  "a_dire": "Sur ℤ, une matrice entière est inversible dans M_n(ℤ) seulement si son déterminant vaut 1 ou −1 ; le déterminant 2 ne convient pas.",
+  "legende_titre": "Quels déterminants permettent un inverse entier",
+  "lecture": [
+   "La droite graduée porte les valeurs du déterminant, de −3 à 3.",
+   "Les deux cercles verts, en 1 et en −1, sont les déterminants qui donnent une matrice inversible dans M₂(ℤ).",
+   "Le cercle rouge, en 2, est le déterminant de la matrice de lignes (2, 0) et (0, 1) : 2 × 1 − 0 × 0 = 2.",
+   "Son inverse aurait pour cases ½, 0 et 0, 1 : un demi n’est pas entier."
+  ],
+  "a_voir": "Seuls 1 et −1 donnent un inverse à cases entières."
+ },
+ {
+  "code": "58-230",
+  "a_dire": "Si P a un inverse entier Q, alors det P × det Q = det(PQ) = 1 : deux entiers de produit 1 valent 1 ou −1.",
+  "legende_titre": "Pourquoi le déterminant vaut 1 ou −1",
+  "lecture": [
+   "La boîte bleue calcule det P = 1, pour P de colonnes (2, 1) et (1, 1). La boîte violette calcule det Q = 1, pour Q de colonnes (1, −1) et (−1, 2).",
+   "Les deux flèches mènent à la boîte orange, l’étape clé : det P × det Q = det(PQ) = 1.",
+   "La boîte verte conclut : deux entiers de produit 1 sont (1, 1) ou (−1, −1), donc ils valent 1 ou −1."
+  ],
+  "a_voir": "Deux entiers dont le produit vaut 1 valent tous deux 1, ou tous deux −1."
+ },
+ {
+  "code": "58-231",
+  "a_dire": "Le carré bleu bâti sur e₁ et e₂ et le parallélogramme orange bâti sur f₁ et f₂ ont la même aire, 1, et leurs sommets sont des points du réseau.",
+  "legende_titre": "Deux bases, deux formes, une même surface",
+  "lecture": [
+   "Les points gris sont le réseau ℤ².",
+   "Le carré bleu est bâti sur les flèches e₁ = (1, 0) et e₂ = (0, 1) ; son aire est 1.",
+   "Le parallélogramme orange est bâti sur f₁ = (2, 1) et f₂ = (1, 1) ; son aire est aussi 1.",
+   "Les sommets des deux formes tombent sur des points gris."
+  ],
+  "a_voir": "Le carré droit et le parallélogramme penché couvrent la même surface."
+ },
+ {
+  "code": "58-232",
+  "a_dire": "La matrice de passage P de colonnes (2, 1) et (1, 1) a pour déterminant 1, donc elle a un inverse entier Q.",
+  "legende_titre": "Un cas chiffré : de P à son inverse",
+  "lecture": [
+   "À gauche, en bleu, P a pour lignes (2, 1) et (1, 1).",
+   "La flèche orange porte son déterminant : 2 × 1 − 1 × 1 = 1.",
+   "À droite, en vert, l’inverse Q a pour lignes (1, −1) et (−1, 2).",
+   "La ligne du bas lit la première colonne de Q : le sac (1, 0) s’écrit (2, 1) − (1, 1)."
+  ],
+  "a_voir": "Le déterminant 1 va avec un inverse à cases entières."
+ },
+ {
+  "code": "58-233",
+  "a_dire": "L’aire du parallélogramme est la valeur absolue du déterminant : déterminant 1, aire 1 ; déterminant −3, aire 3.",
+  "legende_titre": "Ce que mesure le déterminant",
+  "lecture": [
+   "À gauche, le parallélogramme orange est bâti sur (2, 1) et (1, 1) : déterminant 2 × 1 − 1 × 1 = 1, aire |1| = 1.",
+   "À droite, le parallélogramme violet est bâti sur (1, 2) et (2, 1) : déterminant 1 × 1 − 2 × 2 = −3, aire |−3| = 3.",
+   "Les points gris sont les points à coordonnées entières.",
+   "Le déterminant peut être négatif ; l’aire ne l’est pas."
+  ],
+  "a_voir": "La valeur absolue du déterminant donne la surface."
+ },
+ {
+  "code": "58-234",
+  "a_dire": "La famille (2, 0), (0, 1) a pour déterminant 2 et n’est pas une base de ℤ² : pour atteindre (1, 0), il faudrait un demi de f₁.",
+  "legende_titre": "Une famille qui n’atteint pas tous les points",
+  "lecture": [
+   "Le rectangle orange est bâti sur f₁ = (2, 0) et f₂ = (0, 1) ; son aire est 2.",
+   "Les points verts pleins sont atteints avec des coefficients entiers : leur première case est 0, 2 ou 4.",
+   "Les cercles rouges ne le sont pas, par exemple (1, 0) : il faudrait un demi de f₁.",
+   "La légende en haut à droite rappelle les deux marques."
+  ],
+  "a_voir": "Le point (1, 0) du réseau reste hors d’atteinte."
+ },
+ {
+  "code": "58-235",
+  "a_dire": "Une famille est une base selon l’anneau : (2, 0), (0, 1) n’atteint pas (1, 0) avec des entiers, mais l’atteint avec des fractions.",
+  "legende_titre": "Mêmes vecteurs, coefficients différents",
+  "lecture": [
+   "Les deux droites portent la première case des couples, de 0 à 4 ; f₁ = (2, 0).",
+   "Ligne du haut, coefficients entiers : les arcs orange vont de 0 à 2, puis à 4 ; le point 1 est un cercle rouge, non atteint.",
+   "Ligne du bas, coefficients fractionnaires : un demi de f₁ est l’arc orange qui mène au point 1, en vert.",
+   "Les vecteurs sont les mêmes sur les deux lignes ; seuls les coefficients permis changent."
+  ],
+  "a_voir": "Le même point est hors d’atteinte avec des entiers et atteint avec des fractions."
+ },
+ {
+  "code": "58-236",
+  "a_dire": "La somme directe externe est l’ensemble des listes dont chaque case vient de son module, avec les opérations case par case.",
+  "legende_titre": "Une liste dont chaque case a son module",
+  "lecture": [
+   "En haut, deux modules : M₁, les entiers (bleu), et M₂, les couples d’entiers (violet).",
+   "Les flèches x₁ et x₂ prennent un élément dans chaque module pour le mettre dans une case.",
+   "Le cadre pointillé est la liste : première case 4 (bleu), seconde case (1, 2) (violet).",
+   "Les cases n’ont pas la même nature ; additions et multiplications se font case par case."
+  ],
+  "a_voir": "Chaque case de la liste garde la couleur de son module."
+ },
+ {
+  "code": "58-237",
+  "a_dire": "R^(n) = R ⊕ … ⊕ R : les listes de cases de même nature sont un cas de la somme directe, qui autorise des cases de natures diverses.",
+  "legende_titre": "Un cas particulier de la somme directe",
+  "lecture": [
+   "Le grand cadre pointillé est la somme directe M₁ ⊕ M₂.",
+   "Le cadre bleu est R^(n) : des listes dont toutes les cases viennent de R, comme 3 ⊕ 5.",
+   "À droite, dans la somme directe mais hors du cadre bleu : un entier (bleu, M₁) et un couple (violet, M₂), reliés par ⊕.",
+   "Le cadre bleu est donc contenu dans le grand cadre."
+  ],
+  "a_voir": "Les listes de même nature sont un cas de la somme directe, qui autorise des cases de natures diverses."
+ },
+ {
+  "code": "58-238",
+  "a_dire": "L’injection ι_i place x_i en position i et des zéros ailleurs.",
+  "legende_titre": "Placer un morceau dans la somme",
+  "lecture": [
+   "À gauche, l’élément (4, 7), un couple d’entiers du module M₂ (violet).",
+   "La flèche orange ι₂ l’envoie dans une liste de la somme M₁ ⊕ M₂.",
+   "Dans la liste, la seconde case est (4, 7) : c’est la position 2.",
+   "La première case est 0, en gris : des zéros ailleurs."
+  ],
+  "a_voir": "Un seul morceau part ; tout le reste de la liste est rempli de zéros."
+ },
+ {
+  "code": "58-239",
+  "a_dire": "La projection π_i garde seulement la case i de la liste.",
+  "legende_titre": "Ne garder qu’une case",
+  "lecture": [
+   "En haut, la liste de la somme : première case 4 (bleu), seconde case (1, 2) (violet).",
+   "La flèche π₁ part de la première case et donne 4.",
+   "La flèche π₂ part de la seconde case et donne le couple (1, 2).",
+   "Le résultat est un élément d’un seul module, non la liste entière."
+  ],
+  "a_voir": "Chaque flèche garde une case et oublie l’autre."
+ },
+ {
+  "code": "58-240",
+  "a_dire": "Faire ι₁ puis π₁ redonne l’élément de départ : π_i ∘ ι_i est l’identité de M_i.",
+  "legende_titre": "Placer puis relire : on retrouve l’élément",
+  "lecture": [
+   "À gauche, l’élément 5 (bleu).",
+   "La flèche ι₁ l’envoie dans la liste : première case 5, seconde case (0, 0) en gris.",
+   "La flèche π₁ ne garde que la première case : 5, en vert.",
+   "La grande flèche verte du bas résume : ι₁ puis π₁ redonne le 5 de départ."
+  ],
+  "a_voir": "Le 5 du départ est le 5 de l’arrivée."
+ }
+]

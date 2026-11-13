@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+# tout module a-t-il une base ? Non : on cherche des sacs types dans deux modules
+text(ax, 44, 56, 'Tout module a-t-il une base ?', 'encre', 'm', weight='bold')
+text(ax, 2, 42, r'couples d’entiers', 'sujet', 's', ha='left')
+box(ax, 2, 28, 16, 9, 'sujet', label='(1, 0)', size='s')
+box(ax, 20, 28, 16, 9, 'autre', label='(0, 1)', size='s')
+arrow(ax, (38, 32.5), (46, 32.5), 'resultat', lw=1.2)
+box(ax, 48, 28, 38, 9, 'resultat', label='deux sacs types : base', size='s', weight='bold')
+text(ax, 2, 20, 'horloge à 2 heures', 'autre', 's', ha='left')
+box(ax, 2, 6, 16, 9, 'autre', label='1', size='s')
+text(ax, 28, 10.5, 'seul candidat', 'fixe', 's')
+arrow(ax, (38, 10.5), (46, 10.5), 'limite', lw=1.2)
+box(ax, 48, 6, 38, 9, 'limite', label='pas d’écriture unique', size='s', weight='bold')
+save(fig, '58-012')

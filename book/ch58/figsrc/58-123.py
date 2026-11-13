@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+n = lambda v: str(v).replace('-', '−')
+f = lambda x1, x2: (x1, 2 * x1 + x2, x1 - x2)
+t3 = lambda t: '(' + ', '.join(n(v) for v in t) + ')'
+p0, p1 = (1, 2), (3, 6)
+assert f(*p0) == (1, 4, -1) and f(*p1) == (3, 12, -3) and tuple(3 * v for v in f(*p0)) == f(*p1)
+cx = [13, 44, 75]
+text(ax, cx[0], 53, 'départ', 'fixe', 's'); text(ax, cx[1], 53, 'étape décisive', 'fixe', 's'); text(ax, cx[2], 53, 'arrivée', 'fixe', 's')
+box(ax, cx[0] - 11, 36, 22, 10, 'sujet', label=t3(f(*p0)))
+box(ax, cx[1] - 11, 36, 22, 10, 'varie', label=r'$\times\,3$')
+box(ax, cx[2] - 11, 36, 22, 10, 'resultat', label=t3(f(*p1)))
+arrow(ax, (cx[0] + 12, 41), (cx[1] - 12, 41), 'varie')
+arrow(ax, (cx[1] + 12, 41), (cx[2] - 12, 41), 'varie')
+text(ax, cx[0], 31.5, 'paramètres 1 et 2', 'sujet', 's')
+text(ax, cx[1], 31.5, r'paramètres $\times3$', 'varie', 's')
+text(ax, cx[2], 31.5, 'paramètres 3 et 6', 'resultat', 's')
+text(ax, 44, 16, r'$2\times3+6=12$  et  $3-6=-3$', 'resultat', 'm')
+text(ax, 44, 8, r'le résultat est encore dans $W$', 'resultat', 's')
+save(fig, '58-123')

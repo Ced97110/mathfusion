@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(100)
+# u1 = (3,1) = 3 e1 + 1 e2 ; u2 = (1,2) = (1/3) u1 + (5/3) e2 ; u3 = (-1,3) = -u1 + 2 u2
+assert (3 * 1, 1 * 1) == (3, 1)
+assert (3 / 3, 3 / 3 * 0 + 1 / 3 + 5 / 3) == (1, 2)
+assert (-3 + 2 * 1, -1 + 2 * 2) == (-1, 3)
+def rowboxes(y, a, ra, da, b, rb, db):
+    box(ax, 8, y, 30, 9, ra, label=a, size='s', dash=da)
+    box(ax, 50, y, 30, 9, rb, label=b, size='s', dash=db)
+text(ax, 44, 94, 'les trois vecteurs : (3, 1), (1, 2), (−1, 3)', 'fixe', 's')
+rowboxes(80, r'$e_1=(1,0)$', 'varie', True, r'$e_2=(0,1)$', 'sujet', False)
+arrow(ax, (23, 79), (23, 72), 'varie')
+text(ax, 48, 75.5, '$u_1$ remplace $e_1$ :\ncoefficient 3', 'resultat', 's', ha='left')
+rowboxes(62, r'$u_1=(3,1)$', 'varie', False, r'$e_2=(0,1)$', 'varie', True)
+arrow(ax, (65, 61), (65, 54), 'varie')
+text(ax, 4, 57.5, '$u_2$ remplace $e_2$ :\ncoefficient $\\frac{5}{3}$', 'resultat', 's', ha='left')
+rowboxes(44, r'$u_1=(3,1)$', 'varie', False, r'$u_2=(1,2)$', 'varie', False)
+arrow(ax, (44, 43), (44, 36), 'varie')
+text(ax, 48, 39.5, 'plus de générateur de départ', 'fixe', 's', ha='left')
+box(ax, 4, 20, 40, 10, 'autre', dash=True, label=r'$u_3=(-1,3)$', size='s')
+text(ax, 64, 25, r'$=-u_1+2\,u_2$', 'resultat', 'm')
+text(ax, 44, 10, r'$u_3$ s’écrit avec $u_1$, $u_2$', 'resultat', 's')
+save(fig, '58-178')

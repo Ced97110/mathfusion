@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+text(ax, 44, 84, '2 équations, 3 inconnues, seconds membres 0', 'fixe', 's')
+box(ax, 6, 68, 76, 10, 'sujet', label=r'$3x+y-z=0$')
+text(ax, 44, 64, r'$3\times(-1)+2-(-1)=0$', 'resultat', 's')
+box(ax, 6, 48, 76, 10, 'sujet', label=r'$x+2y+3z=0$')
+text(ax, 44, 44, r'$-1+2\times 2+3\times(-1)=0$', 'resultat', 's')
+arrow(ax, (44, 39), (44, 31), 'varie')
+text(ax, 48, 35, 'plus d’inconnues', 'varie', 's', ha='left')
+box(ax, 6, 16, 76, 12, 'resultat', label=r'$(x,\,y,\,z)=(-1,\,2,\,-1)$', weight='bold')
+text(ax, 44, 8, 'une solution non nulle', 'resultat', 's')
+save(fig, '58-173')

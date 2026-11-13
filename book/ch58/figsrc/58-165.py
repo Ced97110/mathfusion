@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+s = 4.8; ox, oy = 8.0, 12.0
+P = lambda x, y: (ox + s * x, oy + s * y)
+u, v = (3, 1), (1, 2)
+assert (2 * u[0] + v[0], 2 * u[1] + v[1]) == (7, 4)
+# chemin : 2u puis v, vers (7, 4)
+arrow(ax, P(0, 0), P(6, 2), 'sujet', lw=1.5)
+arrow(ax, P(6, 2), P(7, 4), 'varie', lw=1.5)
+disc(ax, *P(7, 4), 1.4, 'resultat')
+text(ax, P(7, 4)[0] - 2, P(7, 4)[1] + 5, '(7, 4)', 'resultat', 's')
+text(ax, P(3, 1)[0] - 1, P(3, 1)[1] + 4.5, r'$2\times(3,1)$', 'sujet', 's')
+text(ax, P(6.6, 3)[0] + 6, P(6.6, 3)[1] - 1, r'$1\times(1,2)$', 'varie', 's')
+# deux écritures du même vecteur : mêmes nombres un à un
+text(ax, 68, 57, r'$\alpha$ : 1re écriture', 'fixe', 's')
+text(ax, 68, 52.5, r'$\beta$ : 2e écriture', 'fixe', 's')
+box(ax, 52, 38, 32, 10, 'sujet', label=r'$\alpha_1=\beta_1=2$')
+box(ax, 52, 24, 32, 10, 'varie', label=r'$\alpha_2=\beta_2=1$')
+text(ax, 68, 15, 'mêmes nombres, un à un', 'resultat', 's', weight='bold')
+save(fig, '58-165')

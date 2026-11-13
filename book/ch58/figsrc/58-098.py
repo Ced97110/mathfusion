@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+ox, oy, k = 8, 12, 11
+P = lambda a, b: (ox + a * k, oy + b * k)
+for i in range(0, 5): line(ax, [P(i, 0), P(i, 2.6)], 'fixe', lw=0.25)
+for j in range(0, 3): line(ax, [P(0, j), P(4.6, j)], 'fixe', lw=0.25)
+line(ax, [P(1, 0), P(3, 0), P(3, 2)], 'varie', lw=1.3, dash=True)
+arrow(ax, P(0, 0), P(3, 2), 'sujet', lw=1.8)
+arrow(ax, P(0, 0), P(1, 0), 'fixe', lw=1.8)
+arrow(ax, P(0, 0), P(0, 1), 'fixe', lw=1.8)
+text(ax, P(0.5, 0)[0], P(0, 0)[1] + 2.5, r'$i$', 'fixe', 's')
+text(ax, P(0, 0.5)[0] - 2.5, P(0, 0.5)[1], r'$j$', 'fixe', 's')
+brace(ax, P(0, 0)[0], P(3, 0)[0], P(0, 0)[1] - 0.5, 'varie', label=r'$3\,i$', depth=1.4)
+text(ax, P(3, 1)[0] + 2, P(3, 1)[1], r'$2\,j$', 'varie', 's', ha='left')
+text(ax, P(1.4, 1.2)[0] - 3.5, P(1.4, 1.2)[1] + 2.5, r'$\langle 3,\,2\rangle$', 'sujet', 's')
+box(ax, 54, 22, 32, 10, 'sujet', label=r'$\langle3,2\rangle=3\,i+2\,j$', size='s')
+save(fig, '58-098')

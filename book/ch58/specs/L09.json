@@ -1,0 +1,333 @@
+[
+ {
+  "code": "58-241",
+  "a_dire": "Remettre chaque case à sa place avec ι puis π, puis additionner, redonne la liste de départ.",
+  "legende_titre": "Recomposer les cases",
+  "lecture": [
+   "En haut, en bleu, la liste de départ : 4 et le couple (1, 2).",
+   "Au milieu, deux listes : dans chacune, une seule case est gardée en bleu et l’autre est mise à zéro en gris.",
+   "En bas, en vert, la somme case par case donne (4, (1, 2))."
+  ],
+  "a_voir": "La somme des deux listes à une case redonne exactement la liste du haut."
+ },
+ {
+  "code": "58-242",
+  "a_dire": "Quand tous les homomorphismes arrivent dans le même module, la somme de leurs résultats définit un homomorphisme sur la liste.",
+  "legende_titre": "Additionner les résultats case par case",
+  "lecture": [
+   "La liste (3, (1, 2)) a deux cases : 3 en bleu, (1, 2) en violet.",
+   "Chaque case passe dans son homomorphisme, en orange : le premier double, le second additionne.",
+   "Les résultats 6 et 3 arrivent dans les entiers ; leur somme est 9."
+  ],
+  "a_voir": "Le résultat est la somme des résultats de chaque case : 6 plus 3 égale 9."
+ },
+ {
+  "code": "58-243",
+  "a_dire": "Comme les opérations se font case par case, l’assemblage d’une somme de listes est la somme des assemblages.",
+  "legende_titre": "Somme avant ou après l’assemblage",
+  "lecture": [
+   "En haut, deux listes (bleu et violet) et leur somme (gris) : (4, (1, 7)).",
+   "Chaque flèche applique l’assemblage η.",
+   "En bas, 9 plus 7 donne 16, et la somme des listes donne aussi 16."
+  ],
+  "a_voir": "Additionner avant ou après η donne le même nombre, 16."
+ },
+ {
+  "code": "58-244",
+  "a_dire": "Un couple d’entiers se coupe en un morceau de riz pur et un morceau de lentilles pur, sans être construit comme une liste.",
+  "legende_titre": "Un couple coupé en deux morceaux",
+  "lecture": [
+   "L’axe bleu porte les stocks de riz pur, l’axe violet les stocks de lentilles pur.",
+   "Le point vert (5, 4) est un couple d’entiers.",
+   "Les pointillés verts mènent à (5, 0) sur l’axe bleu et à (0, 4) sur l’axe violet."
+  ],
+  "a_voir": "Le couple (5, 4) est la somme de (5, 0) et de (0, 4)."
+ },
+ {
+  "code": "58-245",
+  "a_dire": "Le module est donné d’avance et l’on se demande comment le couper : un même couple se coupe de plusieurs façons.",
+  "legende_titre": "Deux coupures du même couple",
+  "lecture": [
+   "Dans les deux dessins, le point vert est le même couple (1, 3).",
+   "À gauche, l’axe bleu et l’axe violet vertical donnent (1, 0) et (0, 3).",
+   "À droite, l’axe bleu et la diagonale violette donnent (−2, 0) et (3, 3)."
+  ],
+  "a_voir": "Le module ne change pas ; ce sont les morceaux choisis qui changent."
+ },
+ {
+  "code": "58-246",
+  "a_dire": "Le critère demande deux conditions ; sans la seconde, un élément peut avoir deux écritures et la somme n’est pas directe.",
+  "legende_titre": "Une condition qui manque",
+  "lecture": [
+   "Deux sous-modules identiques : M₁ en bleu et M₂ en violet, tous deux égaux aux couples d’entiers.",
+   "Les deux lignes écrivent (1, 0) comme somme d’un élément de M₁ et d’un élément de M₂ : deux écritures différentes.",
+   "La case verte dit que la première condition est vraie ; la case rouge dit que la seconde est fausse."
+  ],
+  "a_voir": "Tout couple est une somme, mais (1, 0) a deux écritures."
+ },
+ {
+  "code": "58-247",
+  "a_dire": "La condition (i) demande que chaque élément du module soit une somme d’éléments des sous-modules.",
+  "legende_titre": "Tout élément est-il atteint ?",
+  "lecture": [
+   "À gauche, riz pur (axe bleu) et lentilles pur (axe violet) : tous les points verts sont des sommes.",
+   "À droite, le riz pur seul : seuls les points bleus de l’axe sont atteints.",
+   "Le point rouge (0, 1) n’est la somme d’aucun élément du riz pur."
+  ],
+  "a_voir": "Avec le riz seul, le couple (0, 1) n’est pas atteint."
+ },
+ {
+  "code": "58-248",
+  "a_dire": "La condition (ii) dit que chaque sous-module rencontre la somme des autres seulement en zéro ; trois droites peuvent la manquer.",
+  "legende_titre": "Une droite dans la somme des deux autres",
+  "lecture": [
+   "X est l’axe bleu, Y l’axe violet, Z la diagonale orange.",
+   "Le point vert (1, 1) est sur Z, et il vaut aussi (1, 0) plus (0, 1), un point de X plus un point de Y.",
+   "En rouge : Z est dans la somme X + Y, donc elle la rencontre ailleurs qu’en zéro."
+  ],
+  "a_voir": "Le point (1, 1) a deux écritures parce que Z est dans X + Y."
+ },
+ {
+  "code": "58-249",
+  "a_dire": "Si les deux conditions sont vraies, l’application qui additionne les cases est un isomorphisme de la somme directe sur M.",
+  "legende_titre": "L’application qui additionne les cases",
+  "lecture": [
+   "À gauche, la liste ((5, 0), (0, 4)) : (5, 0) en bleu, (0, 4) en violet.",
+   "La flèche orange ι additionne les cases et arrive en vert sur (5, 4).",
+   "Les deux cases vertes du bas disent ce que les conditions garantissent : un seul antécédent et tous les couples atteints."
+  ],
+  "a_voir": "ι envoie la liste sur (5, 4), un seul antécédent, et atteint tout M."
+ },
+ {
+  "code": "58-250",
+  "a_dire": "Dans une somme directe externe, les images des injections se rencontrent seulement en zéro et leur somme est tout le module.",
+  "legende_titre": "Deux images qui se touchent en un seul point",
+  "lecture": [
+   "Le cercle bleu contient les listes dont la seconde case est nulle, par exemple (4, (0, 0)).",
+   "Le cercle violet contient les listes dont la première case est nulle, par exemple (0, (1, 2)).",
+   "La zone commune, en vert, ne contient que la liste (0, (0, 0)).",
+   "La ligne du bas dit que la somme des deux images est tout le module."
+  ],
+  "a_voir": "Les deux cercles ne partagent que la liste nulle, et leur somme est tout le module."
+ },
+ {
+  "code": "58-251",
+  "a_dire": "Le mot interne désigne un module déjà donné qui se coupe en sous-modules, alors que l’externe construit une nouvelle liste.",
+  "legende_titre": "Construire ou constater",
+  "lecture": [
+   "À gauche, deux modules M₁ et M₂ donnés servent à construire la liste M₁ ⊕ M₂, en vert.",
+   "À droite, le module M = ℤ² existe déjà, en gris.",
+   "Dans M, le riz pur (bleu) et les lentilles pur (violet) sont des sous-modules."
+  ],
+  "a_voir": "À gauche on fabrique la somme ; à droite les morceaux sont déjà à l’intérieur de M."
+ },
+ {
+  "code": "58-252",
+  "a_dire": "Des sous-modules sont indépendants quand chacun rencontre la somme des autres en zéro seulement.",
+  "legende_titre": "Indépendants ou non",
+  "lecture": [
+   "À gauche, l’axe bleu X et l’axe violet Y ne se rencontrent qu’en O, point vert.",
+   "À droite, on ajoute la diagonale orange Z.",
+   "Z rencontre la somme X + Y ailleurs qu’en O : le point O est en rouge."
+  ],
+  "a_voir": "Deux axes sont indépendants ; avec la diagonale en plus, ils ne le sont plus."
+ },
+ {
+  "code": "58-253",
+  "a_dire": "La preuve montre que le noyau est nul : si une somme de morceaux est nulle, chaque morceau est nul grâce à la condition (ii).",
+  "legende_titre": "Pourquoi le noyau est nul",
+  "lecture": [
+   "Le haut, en gris, est le départ : un stock de riz plus un stock de lentilles valent (0, 0).",
+   "Le riz est donc l’opposé des lentilles : il est dans riz pur (bleu) et dans lentilles pur (violet).",
+   "Les flèches orange portent le poids : par la condition (ii), le riz est (0, 0)."
+  ],
+  "a_voir": "L’étape décisive est que le riz est dans les deux sous-modules, donc nul."
+ },
+ {
+  "code": "58-254",
+  "a_dire": "La condition (ii) dit que l’écriture comme somme d’éléments des sous-modules est unique, comme l’écriture sur une base.",
+  "legende_titre": "Une écriture unique, deux fois",
+  "lecture": [
+   "La première ligne écrit (5, 4) avec une base : 5 fois (1, 0) plus 4 fois (0, 1).",
+   "La seconde ligne l’écrit avec des sous-modules : (5, 0) plus (0, 4).",
+   "Dans les deux lignes, le résultat vert est le même couple (5, 4)."
+  ],
+  "a_voir": "Dans les deux cas, il n’y a qu’une seule écriture de (5, 4)."
+ },
+ {
+  "code": "58-255",
+  "a_dire": "Un module libre est la somme directe des multiples de chaque vecteur de base, et chacun ressemble à l’anneau.",
+  "legende_titre": "Les multiples de chaque vecteur de base",
+  "lecture": [
+   "La ligne bleue envoie un entier sur son multiple de (1, 0), par exemple 3 sur (3, 0).",
+   "La ligne violette envoie un entier sur son multiple de (0, 1), par exemple 4 sur (0, 4).",
+   "Les deux sous-modules, réunis par ⊕, donnent ℤ² en vert."
+  ],
+  "a_voir": "Chaque entier correspond à un seul multiple : chaque ligne ressemble à ℤ."
+ },
+ {
+  "code": "58-256",
+  "a_dire": "L’application qui envoie r sur r fois le vecteur est injective, parce que l’écriture du vecteur nul est unique.",
+  "legende_titre": "Pourquoi r doit être zéro",
+  "lecture": [
+   "En haut, l’hypothèse en orange : r fois (1, 0) vaut (0, 0).",
+   "Cela donne deux écritures de (0, 0) : une avec r en bleu, une avec deux zéros en violet.",
+   "Les flèches orange passent par l’unicité de l’écriture, et le résultat vert est r égal à 0."
+  ],
+  "a_voir": "Deux écritures de (0, 0) doivent être la même, donc r vaut 0."
+ },
+ {
+  "code": "58-257",
+  "a_dire": "Un point du plan se décompose en un morceau sur chaque droite en suivant deux pointillés parallèles, et une seule paire est possible.",
+  "legende_titre": "La décomposition par pointillés parallèles",
+  "lecture": [
+   "La droite bleue X est l’axe horizontal ; la droite orange Z est la diagonale.",
+   "Le point vert P = (1, 3) mène par un pointillé à (−2, 0) sur X et par un autre à (3, 3) sur Z.",
+   "Les deux flèches partant de l’origine sont deux côtés du parallélogramme."
+  ],
+  "a_voir": "P est la somme de (−2, 0) et de (3, 3), les côtés d’un seul parallélogramme."
+ },
+ {
+  "code": "58-258",
+  "a_dire": "Le cas décompose le seul point (1, 3) en (−2, 0) sur X plus (3, 3) sur Z, case par case.",
+  "legende_titre": "Le calcul pour le point (1, 3)",
+  "lecture": [
+   "La ligne bleue est un point de X : sa seconde case vaut 0.",
+   "La ligne orange est un point de Z : ses deux cases sont égales.",
+   "La ligne verte est la somme case par case : −2 plus 3 donne 1, et 0 plus 3 donne 3."
+  ],
+  "a_voir": "La somme case par case redonne le point P = (1, 3)."
+ },
+ {
+  "code": "58-259",
+  "a_dire": "Pour X et Z, la condition (ii) se vérifie en cherchant les points communs, et la condition (i) vient du fait que les droites ne sont pas parallèles.",
+  "legende_titre": "Vérifier les deux conditions",
+  "lecture": [
+   "À gauche, l’axe bleu X et la diagonale orange Z se croisent seulement en O, point vert.",
+   "En haut à droite : un point de X a sa seconde case nulle, un point de Z a deux cases égales.",
+   "Le point commun a donc ses deux cases nulles : X ∩ Z = {O}."
+  ],
+  "a_voir": "Un point sur X et sur Z a ses deux cases égales à 0."
+ },
+ {
+  "code": "58-260",
+  "a_dire": "Les morceaux d’une somme directe ne doivent pas être perpendiculaires : deux directions distinctes suffisent.",
+  "legende_titre": "Pas besoin d’angle droit",
+  "lecture": [
+   "À gauche, deux droites à angle droit coupent (1, 3) en (1, 0) et (0, 3).",
+   "À droite, l’axe et la diagonale font un autre angle et coupent (1, 3) en (−2, 0) et (3, 3).",
+   "Dans les deux dessins, le point vert, marqué (1, 3), est le même couple, écrit sous chaque dessin comme une somme."
+  ],
+  "a_voir": "Deux directions distinctes suffisent : le même point se décompose aussi quand l’angle n’est pas droit."
+ },
+ {
+  "code": "58-261",
+  "a_dire": "Trois droites peuvent se couper deux à deux seulement en zéro sans être indépendantes.",
+  "legende_titre": "Le cas limite des trois droites",
+  "lecture": [
+   "L’axe horizontal est bleu, l’axe vertical violet, la diagonale orange.",
+   "Les trois lignes vertes disent que chaque paire ne se coupe qu’en O.",
+   "La case rouge dit que les trois droites ne sont pourtant pas indépendantes."
+  ],
+  "a_voir": "Vérifier les paires ne suffit pas pour conclure à l’indépendance."
+ },
+ {
+  "code": "58-262",
+  "a_dire": "La condition (ii) porte sur la somme des autres sous-modules, non sur chacun pris seul.",
+  "legende_titre": "Face à la somme, pas face à chacun",
+  "lecture": [
+   "La zone grise est la somme X + Y des deux axes : c’est tout le plan.",
+   "La diagonale orange Z est tout entière dans cette zone.",
+   "Les deux lignes vertes disent que Z ne rencontre chaque axe qu’en O ; la case rouge dit que Z rencontre la somme en Z entier."
+  ],
+  "a_voir": "Z ne rencontre pas chaque axe, mais elle est dans leur somme."
+ },
+ {
+  "code": "58-263",
+  "a_dire": "Le couple (1, 1) a deux écritures avec X, Y et Z, donc ces trois droites ne forment pas de somme directe.",
+  "legende_titre": "Deux écritures de (1, 1)",
+  "lecture": [
+   "La flèche orange va de l’origine à (1, 1) le long de la diagonale Z.",
+   "La flèche bleue sur X puis la flèche violette sur Y mènent aussi à (1, 1).",
+   "La case rouge rappelle qu’il y a deux écritures."
+  ],
+  "a_voir": "Le même point vert est atteint par deux chemins différents."
+ },
+ {
+  "code": "58-264",
+  "a_dire": "Un module libre donne des coordonnées à chaque élément ; sans base, comme l’horloge à deux heures, il n’y en a pas.",
+  "legende_titre": "Avec base ou sans base",
+  "lecture": [
+   "À gauche, un élément de ℤ² (libre, en bleu) devient une liste de deux cases vertes.",
+   "À droite, dans l’horloge à deux heures, 1 fois 1 et 3 fois 1 arrivent tous deux sur l’élément 1.",
+   "Ces deux écritures du même élément, en rouge, empêchent d’avoir des coordonnées."
+  ],
+  "a_voir": "Un élément à deux écritures n’a pas de coordonnées uniques."
+ },
+ {
+  "code": "58-265",
+  "a_dire": "Composer des applications devient multiplier des tableaux, et résoudre η(x) = y devient résoudre un système d’équations.",
+  "legende_titre": "Deux calculs sur des tableaux",
+  "lecture": [
+   "En haut, la composée η₂ ∘ η₁ en bleu devient un produit de deux tableaux en vert.",
+   "En bas, l’équation η(x) = y en bleu devient un système de deux équations en vert.",
+   "Le système porte les nombres 14 et 17 de l’exemple."
+  ],
+  "a_voir": "Chaque notion abstraite correspond à un calcul sur des nombres."
+ },
+ {
+  "code": "58-266",
+  "a_dire": "Retrouver le stock de départ de (14, 17) revient à résoudre un système avec une équation par case d’arrivée.",
+  "legende_titre": "Remonter au stock de départ",
+  "lecture": [
+   "Le tableau bleu 2, 1, 1, 3 multiplie les inconnues orange x₁ et x₂ et donne les résultats verts 14 et 17.",
+   "Chaque ligne du produit donne une équation : 2x₁ + x₂ = 14 et x₁ + 3x₂ = 17.",
+   "La flèche mène au stock de départ en vert : (5, 4)."
+  ],
+  "a_voir": "Deux équations, une par case d’arrivée, donnent le stock (5, 4)."
+ },
+ {
+  "code": "58-267",
+  "a_dire": "L’élimination s’arrête quand il ne reste qu’une équation à une inconnue ; on remonte alors pour trouver l’autre.",
+  "legende_titre": "Les étapes de l’élimination",
+  "lecture": [
+   "En haut, en gris, les deux équations de départ.",
+   "La case orange est la seconde équation après remplacement de x₂ par 14 − 2x₁ : il ne reste que x₁.",
+   "Les cases vertes donnent x₁ = 5, puis x₂ = 14 − 10 = 4 en remontant."
+  ],
+  "a_voir": "Une seule inconnue : on résout, puis on remonte."
+ },
+ {
+  "code": "58-268",
+  "a_dire": "Le déterminant 5 n’est ni 1 ni −1 : le stock qui donnerait (1, 0) a des cases fractionnaires, donc non entières.",
+  "legende_titre": "Un résultat sans stock entier",
+  "lecture": [
+   "En haut, le déterminant de A vaut 5.",
+   "Les deux équations cherchent le stock qui donne (1, 0).",
+   "Sur la droite graduée, les deux points rouges sont −1/5 et 3/5 : ils sont entre les graduations entières."
+  ],
+  "a_voir": "Les deux cases du stock tombent entre deux entiers."
+ },
+ {
+  "code": "58-269",
+  "a_dire": "L’image de η est une partie stricte de ℤ² : (1, 0) lui manque, et l’indice 5 mesure ce manque.",
+  "legende_titre": "Une image plus petite que le module",
+  "lecture": [
+   "Chaque rond est un couple d’entiers.",
+   "Les ronds bleus pleins sont dans l’image, dont (2, 1) et (1, 3).",
+   "Le rond rouge (1, 0) n’est pas dans l’image, comme tous les ronds gris vides."
+  ],
+  "a_voir": "L’image ne contient qu’une case sur cinq : l’indice est 5."
+ },
+ {
+  "code": "58-270",
+  "a_dire": "A′ = P⁻¹AP applique trois actions dans l’ordre : passer par P, appliquer A, revenir par P⁻¹.",
+  "legende_titre": "Trois actions pour A′",
+  "lecture": [
+   "La première case bleue est (1, 0) dans la nouvelle base.",
+   "La flèche P donne (2, 1) puis la flèche A donne (5, 5), deux cases violettes de l’ancienne base.",
+   "La flèche P⁻¹ revient à la nouvelle base : (0, 5) en vert, première colonne de A′."
+  ],
+  "a_voir": "Le produit s’écrit de droite à gauche : P d’abord, P⁻¹ en dernier."
+ }
+]

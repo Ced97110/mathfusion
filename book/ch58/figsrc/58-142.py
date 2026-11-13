@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+# somme : départ, étape qui porte le poids, arrivée
+text(ax, 44, 85, 'somme', 'fixe', 'm', weight='bold')
+box(ax, 2, 66, 30, 12, 'sujet', label=r'$u=\sum\alpha_i v_i$', size='s')
+box(ax, 2, 50, 30, 12, 'autre', label=r"$u'=\sum\beta_i v_i$", size='s')
+text(ax, 17, 63.8, '+', 'encre', 'm')
+arrow(ax, (34, 66), (40, 60), 'varie')
+arrow(ax, (34, 62), (40, 60), 'varie')
+box(ax, 41, 50, 44, 28, 'varie', label='')
+text(ax, 63, 72, 'étape décisive', 'varie', 's')
+text(ax, 63, 65, r'$\alpha_i v_i+\beta_i v_i$', 'varie', 'm')
+text(ax, 63, 59, r'$=(\alpha_i+\beta_i)\,v_i$', 'varie', 'm')
+text(ax, 63, 53.5, 'on regroupe par $v_i$', 'varie', 's')
+arrow(ax, (63, 49), (63, 43), 'resultat')
+box(ax, 14, 31, 60, 10, 'resultat', label=r'$u+u^\prime=\sum(\alpha_i+\beta_i)\,v_i$', size='s')
+# produit : cas chiffré avec le scalaire 2
+text(ax, 44, 24, 'produit par 2', 'fixe', 'm', weight='bold')
+box(ax, 2, 8, 26, 10, 'sujet', label=r'$u=(2,7)$', size='s')
+arrow(ax, (30, 13), (40, 13), 'varie')
+text(ax, 35, 17, r'$\times2$', 'varie', 's')
+box(ax, 42, 8, 44, 10, 'resultat', label=r'$2u=(4,14)$ : scalaires 4 et 6', size='s')
+save(fig, '58-142')

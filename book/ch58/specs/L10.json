@@ -1,0 +1,362 @@
+[
+ {
+  "code": "58-271",
+  "a_dire": "On part des coordonnées nouvelles, on les convertit par P, on applique A, puis on reconvertit par P⁻¹ ; la première conversion porte l’argument.",
+  "legende_titre": "Convertir, appliquer, reconvertir",
+  "lecture": [
+   "Le cadre bleu du bas, (1, 0), est l’élément de départ, en coordonnées nouvelles ; le cadre bleu du haut, (2, 1), est le même élément en coordonnées anciennes.",
+   "Étape 1, la flèche orange épaisse de gauche, « × P » : la première conversion, marquée « étape clé ».",
+   "Étape 2, la flèche du haut, applique A et donne (5, 5), en orange. Étape 3, la flèche de droite, « × P⁻¹ », redonne le cadre vert (0, 5) en coordonnées nouvelles : l’arrivée.",
+   "La flèche grise du bas, A′, relie directement (1, 0) à (0, 5)."
+  ],
+  "a_voir": "Les trois étapes 1, 2, 3 aboutissent au même résultat que la flèche grise du bas."
+ },
+ {
+  "code": "58-272",
+  "a_dire": "Une même application a des tableaux différents selon la base ; chercher la base qui donne le tableau le plus simple est le programme des chapitres 59 et 60.",
+  "legende_titre": "Un même objet, deux tableaux",
+  "lecture": [
+   "Le tableau bleu de gauche est celui de l’ancienne base : colonnes (2, 1) et (1, 3).",
+   "Le tableau violet de droite est celui de la nouvelle base : colonnes (0, 5) et (−1, 5).",
+   "La flèche orange dit que l’application est la même ; seul le tableau change.",
+   "La case verte, 0, montre un zéro : un tableau avec des zéros se calcule plus facilement."
+  ],
+  "a_voir": "Deux tableaux différents décrivent la même application, et le choix de la base décide du tableau."
+ },
+ {
+  "code": "58-273",
+  "a_dire": "La somme directe découpe un module en morceaux plus simples, que l’on étudie séparément.",
+  "legende_titre": "Couper un module en morceaux",
+  "lecture": [
+   "Le cadre bleu du haut contient les couples (a, b).",
+   "Les deux flèches orange coupent ce module en deux morceaux : le riz pur (a, 0) en bleu et les lentilles pur (0, b) en violet.",
+   "Sous chaque morceau, une flèche verte dit qu’il ressemble aux entiers.",
+   "Le cadre gris du bas résume : une question sur les couples devient deux questions plus simples."
+  ],
+  "a_voir": "Chaque morceau ressemble aux entiers, que l’on connaît bien."
+ },
+ {
+  "code": "58-274",
+  "a_dire": "Un homomorphisme défini sur une somme directe est connu dès que l’on connaît ses restrictions à chaque case.",
+  "legende_titre": "Un résultat en deux morceaux",
+  "lecture": [
+   "Le cadre bleu du haut est la liste (3, (1, 2)) ; elle se sépare en sa première case, bleue, et sa seconde case, violette.",
+   "Sur la première case, la flèche orange dit : η∘ι₁ double l’entier, ce qui donne 6.",
+   "Sur la seconde case, la flèche orange dit : η∘ι₂ additionne 1 et 2, ce qui donne 3.",
+   "Les deux résultats s’additionnent dans le cadre vert : 6 + 3 = 9."
+  ],
+  "a_voir": "Le résultat sur la liste entière est la somme des résultats donnés par chaque restriction."
+ },
+ {
+  "code": "58-275",
+  "a_dire": "Un endomorphisme qui garde chaque morceau a une matrice en blocs : les cases hors de la diagonale sont nulles ; s’il échange les morceaux, ce n’est plus vrai.",
+  "legende_titre": "Diagonale et cases hors diagonale",
+  "lecture": [
+   "Le tableau de gauche est celui de l’application qui double chaque case : diagonale bleue 2 et 2, cases grises 0 et 0.",
+   "Le tableau de droite est celui de l’application qui échange les deux cases : diagonale grise 0 et 0, cases rouges 1 et 1.",
+   "Sous le tableau de gauche, en vert, l’application garde chaque morceau.",
+   "Sous le tableau de droite, en rouge, le riz pur est envoyé sur les lentilles pur."
+  ],
+  "a_voir": "Garder chaque morceau donne des zéros hors de la diagonale ; échanger les morceaux met des 1."
+ },
+ {
+  "code": "58-276",
+  "a_dire": "Les sommes directes se regroupent et se redécoupent librement : regrouper des morceaux donne encore une somme directe.",
+  "legende_titre": "Regrouper et redécouper",
+  "lecture": [
+   "La rangée du haut montre les listes (a, b, c) coupées en trois morceaux : M₁ en bleu, M₂ en orange, M₃ en violet.",
+   "La rangée du bas montre les deux premiers morceaux entourés d’un cadre pointillé bleu : c’est N = M₁ ⊕ M₂.",
+   "Le troisième morceau, M₃, reste seul à côté.",
+   "La flèche verte qui descend dit « regrouper » ; la flèche verte qui monte dit « redécouper »."
+  ],
+  "a_voir": "On passe de trois morceaux à deux, et inversement, sans perdre la somme directe."
+ },
+ {
+  "code": "58-277",
+  "a_dire": "Si M est somme directe des Mᵢ et chaque Mᵢ somme directe des Mᵢⱼ, alors M est somme directe de tous les Mᵢⱼ ; cela tombe si un Mᵢ n’est qu’une somme.",
+  "legende_titre": "Directe, puis directe : et si l’une ne l’est pas ?",
+  "lecture": [
+   "Le cadre vert du haut énonce la règle quand chaque morceau est direct.",
+   "À gauche, avec l’axe horizontal et l’axe vertical seulement, le point (1, 1) a une seule écriture : (1, 0) + (0, 1).",
+   "À droite, on ajoute la diagonale en orange : le point rouge (1, 1) s’écrit (1, 0) + (0, 1) et aussi 1·(1, 1).",
+   "Il y a donc deux écritures : la somme n’est pas directe et la règle tombe."
+  ],
+  "a_voir": "La règle marche avec les deux axes ; elle tombe dès que la somme des axes et de la diagonale n’est pas directe."
+ },
+ {
+  "code": "58-278",
+  "a_dire": "On peut regrouper des paquets consécutifs de morceaux en morceaux N_k et obtenir encore une somme directe ; l’écriture reste unique.",
+  "legende_titre": "Regrouper des paquets de morceaux",
+  "lecture": [
+   "La rangée du haut montre trois morceaux M₁, M₂, M₃ ; une accolade bleue regroupe les deux premiers en paquet N₁, une accolade violette garde M₃ comme paquet N₂.",
+   "Un élément (a, b, c) s’écrit en deux termes : (a, b, 0) dans N₁ et (0, 0, c) dans N₂.",
+   "Le terme (a, b, 0) s’écrit à son tour (a, 0, 0) et (0, b, 0), par les deux flèches orange.",
+   "Le mot vert dit que l’écriture est unique."
+  ],
+  "a_voir": "Chaque niveau garde une écriture unique, donc le regroupement n’en crée pas de seconde."
+ },
+ {
+  "code": "58-279",
+  "a_dire": "La projection π₁ garde la part du premier morceau et oublie l’autre ; c’est un endomorphisme, et la répéter ne change rien : π₁∘π₁ = π₁.",
+  "legende_titre": "Garder une part, oublier l’autre",
+  "lecture": [
+   "La droite bleue est l’axe horizontal M₁ ; la droite violette est la diagonale M₂.",
+   "Le point bleu P = (1, 3) se décompose en x₁ = (−2, 0), flèche verte sur l’axe, et x₂ = (3, 3), flèche violette sur la diagonale ; les pointillés gris forment le parallélogramme.",
+   "La flèche orange va de P vers x₁ : c’est π₁(P) = x₁.",
+   "En vert, π₁(x₁) = x₁ : projeter x₁ ne le bouge pas."
+  ],
+  "a_voir": "La projection garde x₁, oublie x₂, et laisse x₁ en place si on la répète."
+ },
+ {
+  "code": "58-280",
+  "a_dire": "On projette P sur X parallèlement à Z ; le point obtenu est sur X, donc projeter une seconde fois ne le déplace pas.",
+  "legende_titre": "Projeter une deuxième fois",
+  "lecture": [
+   "La droite bleue est l’axe X ; le point bleu en haut est P = (1, 3).",
+   "La flèche orange est la première projection : elle suit la direction de Z, marquée en pointillé violet, et arrive en (−2, 0).",
+   "Le point vert (−2, 0) est entouré d’un cercle vert : à la deuxième projection, il reste en (−2, 0).",
+   "Le texte vert en bas à droite dit que tout point de X reste fixe."
+  ],
+  "a_voir": "Après la première projection le point est sur l’axe, et un point de l’axe ne bouge plus."
+ },
+ {
+  "code": "58-281",
+  "a_dire": "Un endomorphisme π avec π∘π = π découpe M en image ⊕ noyau ; sans cette hypothèse, image et noyau peuvent se recouvrir sur tout un axe.",
+  "legende_titre": "Sans π∘π = π : l’énoncé tombe",
+  "lecture": [
+   "La rangée du haut suit (3, 5) : une première application de π donne (5, 0), orange, une seconde donne (0, 0), rouge.",
+   "Le texte rouge dit que π∘π(3, 5) est (0, 0) et non (5, 0) : l’hypothèse est fausse.",
+   "Le trait bleu épais est l’axe horizontal : c’est à la fois l’image et le noyau.",
+   "En rouge, tout l’axe est commun, pas seulement 0 : la somme n’est pas directe."
+  ],
+  "a_voir": "Sans l’hypothèse, image et noyau ont tout un axe en commun."
+ },
+ {
+  "code": "58-282",
+  "a_dire": "On écrit x = π(x) + (x − π(x)) : le premier terme est dans l’image, le second dans le noyau, et seul 0 est commun aux deux.",
+  "legende_titre": "Couper en image et noyau",
+  "lecture": [
+   "La ligne du haut écrit (1, 3) = (−2, 0) + (3, 3) : x en bleu, π(x) en vert dans l’image, le reste en violet dans le noyau.",
+   "Le texte violet rappelle que π(3, 3) vaut 0.",
+   "Dans le dessin, la droite verte est l’image, la droite violette est le noyau.",
+   "Elles se croisent seulement au point O : image ∩ noyau = {0}."
+  ],
+  "a_voir": "Chaque élément se coupe en deux morceaux, et les deux droites ne se touchent qu’en O."
+ },
+ {
+  "code": "58-283",
+  "a_dire": "Sur un corps, une famille génératrice finie contient une base : en retirant les vecteurs qui sont combinaison des autres, on garde une famille qui engendre encore.",
+  "legende_titre": "Retirer ce qui est en trop",
+  "lecture": [
+   "À gauche, trois flèches : (1, 0) en bleu, (0, 1) en violet, (1, 1) en orange ; les pointillés montrent que (1, 1) = (1, 0) + (0, 1).",
+   "La flèche orange du milieu dit « retirer (1, 1) ».",
+   "À droite, il reste (1, 0) et (0, 1) : une base du plan.",
+   "Le texte vert dit que cette famille engendre encore le plan."
+  ],
+  "a_voir": "Retirer le vecteur en trop ne fait rien perdre, et il reste une base."
+ },
+ {
+  "code": "58-284",
+  "a_dire": "Le tri retire un vecteur qui est combinaison des autres, puis recommence, jusqu’à ce que plus aucun vecteur ne soit en trop.",
+  "legende_titre": "Le tri, étape par étape",
+  "lecture": [
+   "La rangée du haut montre trois vecteurs : (1, 0) et (0, 1) en bleu, (−1, 2) en orange.",
+   "Sous (−1, 2), le texte orange dit qu’il est combinaison des autres : −(1, 0) + 2·(0, 1).",
+   "La flèche orange « retirer » mène à la rangée du bas : (1, 0) et (0, 1) en vert, (−1, 2) en pointillé gris.",
+   "Les deux vecteurs verts engendrent encore le plan ; le texte gris dit de recommencer s’il y a encore un vecteur en trop."
+  ],
+  "a_voir": "On retire un seul vecteur à la fois, et la famille restante engendre toujours le plan."
+ },
+ {
+  "code": "58-285",
+  "a_dire": "La famille sans le vecteur retiré engendre encore V : on remplace ce vecteur, partout où il apparaît, par son écriture avec les autres.",
+  "legende_titre": "Remplacer le vecteur retiré",
+  "lecture": [
+   "La première rangée écrit (−1, 7) avec trois vecteurs : 2·(1, 0), (0, 1) et, en orange, 3·(−1, 2).",
+   "Le texte orange donne l’écriture de (−1, 2) avec les deux autres ; la flèche orange l’applique au dernier cadre.",
+   "La deuxième rangée met les termes en orange : −3·(1, 0) et 6·(0, 1).",
+   "La troisième rangée, en vert, regroupe les mêmes vecteurs : −1·(1, 0) et 7·(0, 1)."
+  ],
+  "a_voir": "(−1, 7) s’écrit avec deux vecteurs seulement, sans (−1, 2)."
+ },
+ {
+  "code": "58-286",
+  "a_dire": "Chaque retrait diminue le nombre de vecteurs, donc le tri s’arrête sur une base ; si V = {0}, tout est retiré et la base est vide.",
+  "legende_titre": "Où le tri s’arrête",
+  "lecture": [
+   "En haut, trois disques représentent trois vecteurs du plan ; le disque orange est retiré par la flèche orange.",
+   "Il reste deux disques verts : le tri s’arrête, car plus aucun retrait n’est possible.",
+   "En bas, la famille du seul vecteur nul, en orange, est retirée par la flèche orange.",
+   "Il reste le cadre vert pointillé « famille vide » : c’est la base de {0}."
+  ],
+  "a_voir": "Le nombre de vecteurs baisse à chaque retrait, donc le tri finit."
+ },
+ {
+  "code": "58-287",
+  "a_dire": "La famille (u, v, w) est liée car w = −u + 2v ; on retire w et (u, v) est une base.",
+  "legende_titre": "Une famille liée devient une base",
+  "lecture": [
+   "Les deux flèches bleues sont u = (1, 0) et v = (0, 1).",
+   "La flèche orange est w = (−1, 2) ; les pointillés gris montrent le chemin −u puis 2v qui y mène.",
+   "Le texte orange dit que w = −u + 2v : la famille est liée, on retire w.",
+   "Le texte vert dit que (u, v) est une base."
+  ],
+  "a_voir": "w se lit avec u et v, donc on peut le retirer."
+ },
+ {
+  "code": "58-288",
+  "a_dire": "Dans ℤ/2ℤ vu sur ℤ, la famille (1) est liée mais 1 n’est combinaison d’aucun autre vecteur : le tri est bloqué.",
+  "legende_titre": "Un cas où le tri échoue",
+  "lecture": [
+   "Les deux disques sont les deux éléments de l’horloge à deux heures : 0 en gris, 1 en bleu.",
+   "Les flèches orange « + 1 » passent de l’un à l’autre ; le disque 1 engendre tout.",
+   "Le cadre violet dit que la famille (1) est liée : 2·1 = 0 alors que 2 n’est pas nul.",
+   "Le cadre rouge répond à « retirer 1 ? » : 1 n’est combinaison d’aucun autre vecteur, donc le tri est bloqué."
+  ],
+  "a_voir": "La famille est liée, mais 1 n’est combinaison d’aucun autre vecteur : rien à retirer."
+ },
+ {
+  "code": "58-289",
+  "a_dire": "Toute la différence entre modules et espaces vectoriels tient dans la division : sur ℤ, on ne peut pas toujours écrire un vecteur avec un autre, faute de pouvoir diviser.",
+  "legende_titre": "Diviser ou ne pas diviser",
+  "lecture": [
+   "Sur la droite graduée, le disque bleu est (1, 0) et le disque orange est (2, 0).",
+   "La flèche verte de 1 vers 2 est « × 2 » : c’est un entier, c’est possible.",
+   "La flèche rouge de 2 vers 1 est « × ½ » : ce n’est pas un entier.",
+   "Le texte vert dit qu’avec des fractions ½ existe ; le cadre gris donne la différence : diviser ou non."
+  ],
+  "a_voir": "Aller de (2, 0) à (1, 0) demande une division que les entiers n’ont pas."
+ },
+ {
+  "code": "58-290",
+  "a_dire": "Dans un espace de dimension n, plus de n vecteurs sont toujours liés ; sans dimension donnée, il n’y a pas de borne.",
+  "legende_titre": "Plus de vecteurs que la dimension",
+  "lecture": [
+   "Le cadre vert du haut dit que, dans le plan de dimension 2, trois vecteurs sont liés.",
+   "Le texte rouge dit ce qui change sans dimension donnée : le dessin montre des fonctions continues.",
+   "Trois courbes partent de zéro : 1 en bleu, x en orange, x² en violet ; elles sont indépendantes.",
+   "Le texte violet dit que x³, x⁴ continuent sans fin, donc aucune borne n."
+  ],
+  "a_voir": "Avec les fonctions, on trouve toujours une fonction indépendante de plus."
+ },
+ {
+  "code": "58-291",
+  "a_dire": "Dans un espace de dimension n, moins de n vecteurs n’engendrent jamais l’espace.",
+  "legende_titre": "Un seul vecteur dans le plan",
+  "lecture": [
+   "La flèche bleue est (1, 2) ; le pointillé bleu qui la prolonge est la droite de ses multiples.",
+   "La flèche violette est (0, 1), entourée d’un cercle violet.",
+   "Le point (0, 1) n’est pas sur la droite : le texte violet dit qu’il n’est pas atteint.",
+   "Le texte gris dit : 1 vecteur, moins que 2, n’engendre pas le plan."
+  ],
+  "a_voir": "Un vecteur n’atteint que sa droite, pas tout le plan."
+ },
+ {
+  "code": "58-292",
+  "a_dire": "Sur un anneau comme ℤ, n vecteurs indépendants dans un module de rang n ne forment pas toujours une base : la règle est propre aux corps.",
+  "legende_titre": "Indépendants, mais pas une base",
+  "lecture": [
+   "Les points sont les couples d’entiers ; les flèches violettes sont f₁ = (2, 0) et f₂ = (0, 1).",
+   "Les disques bleus pleins sont les couples atteints par a·f₁ + b·f₂ ; les cercles gris vides ne le sont pas.",
+   "Le disque rouge est (1, 0), qui n’est pas atteint.",
+   "La légende du bas reprend ces trois sortes de points."
+  ],
+  "a_voir": "Les deux vecteurs sont indépendants, mais (1, 0) reste hors de leur portée."
+ },
+ {
+  "code": "58-293",
+  "a_dire": "Dans un espace de dimension n, n vecteurs qui engendrent V forment une base.",
+  "legende_titre": "Deux vecteurs qui engendrent le plan",
+  "lecture": [
+   "La flèche bleue est (1, 0) et la flèche violette est (1, 1).",
+   "La flèche verte relie le bout de (1, 0) au bout de (1, 1) : c’est (0, 1) = (1, 1) − (1, 0).",
+   "Le texte vert dit que les deux vecteurs engendrent le plan.",
+   "Le texte du bas dit que deux vecteurs en dimension 2 forment déjà une base."
+  ],
+  "a_voir": "Comme le nombre est le bon, il n’y a rien à retirer."
+ },
+ {
+  "code": "58-294",
+  "a_dire": "Plus de n vecteurs sont liés, parce qu’on compare la famille à une base qui engendre, avec le lemme : une famille indépendante n’a pas plus de vecteurs qu’une famille génératrice.",
+  "legende_titre": "Comparer à une base",
+  "lecture": [
+   "La rangée bleue du haut est la base (1, 0), (0, 1) : 2 vecteurs qui engendrent.",
+   "La rangée violette du bas est la famille (1, 2), (3, 1), (2, 5) : 3 vecteurs.",
+   "Le texte gris au milieu donne le lemme : indépendante ≤ génératrice.",
+   "Le cadre orange conclut : 3 > 2, donc la famille est liée."
+  ],
+  "a_voir": "La base sert de famille génératrice, et trois vecteurs dépassent ses deux."
+ },
+ {
+  "code": "58-295",
+  "a_dire": "Si moins de n vecteurs engendraient V, les n vecteurs d’une base, indépendants, contrediraient le lemme.",
+  "legende_titre": "Une contradiction avec le lemme",
+  "lecture": [
+   "Le cadre rouge pointillé du haut est la supposition : un seul vecteur engendre le plan.",
+   "Le texte gris au milieu donne le lemme : indépendante ≤ génératrice.",
+   "La rangée bleue du bas est la base (1, 0), (0, 1) : 2 vecteurs indépendants.",
+   "Le cadre rouge du bas dit que 2 > 1 : le lemme l’interdit, donc la supposition tombe."
+  ],
+  "a_voir": "La base a plus de vecteurs que la famille supposée génératrice."
+ },
+ {
+  "code": "58-296",
+  "a_dire": "Avec n vecteurs indépendants, on fait n échanges du lemme avec une base ; à la fin, ces vecteurs engendrent l’espace.",
+  "legende_titre": "Deux échanges dans le plan",
+  "lecture": [
+   "La rangée du haut est la base de départ : (1, 0) et (0, 1) en bleu.",
+   "La première flèche orange remplace (1, 0) par (1, 1), en orange, car (1, 0) = (1, 1) − (0, 1).",
+   "La seconde flèche orange remplace (0, 1) par (1, 2), car (0, 1) = (1, 2) − (1, 1).",
+   "La rangée du bas, (1, 1) et (1, 2), engendre le plan, dit le texte vert."
+  ],
+  "a_voir": "Après deux échanges, il ne reste plus de vecteur de la base de départ."
+ },
+ {
+  "code": "58-297",
+  "a_dire": "Le tri extrait une base de la famille ; toute base a n éléments, donc, si la famille en a n, le tri n’a rien retiré.",
+  "legende_titre": "Rien à retirer",
+  "lecture": [
+   "La rangée bleue du haut est la famille (1, 0), (1, 1), qui engendre le plan.",
+   "Le texte gris demande si l’un est combinaison de l’autre : non.",
+   "La flèche orange dit que rien n’est retiré.",
+   "La rangée verte du bas est la même famille, qui est la base : 2 vecteurs, comme toute base du plan."
+  ],
+  "a_voir": "La famille d’avant et la base d’après sont les mêmes deux vecteurs."
+ },
+ {
+  "code": "58-298",
+  "a_dire": "Quand le nombre de vecteurs est celui de la dimension, une seule condition d’une base suffit : indépendance ou génération.",
+  "legende_titre": "Une seule condition suffit",
+  "lecture": [
+   "Le premier cadre bleu dit que le nombre de vecteurs, 2, est la dimension 2.",
+   "Le deuxième cadre bleu dit que (1, 0) et (1, 1) sont indépendants.",
+   "Le cadre gris pointillé dit qu’il n’y a pas besoin de vérifier qu’ils engendrent.",
+   "Les flèches vertes mènent au cadre vert : base du plan."
+  ],
+  "a_voir": "Deux vérifications suffisent ici : le nombre et l’indépendance, pas la génération."
+ },
+ {
+  "code": "58-299",
+  "a_dire": "Pour montrer qu’une famille engendre, on retrouve les trois vecteurs e₁, e₂, e₃ par des soustractions ; avec trois vecteurs en dimension 3, c’est une base.",
+  "legende_titre": "Retrouver e₁, e₂, e₃ par soustractions",
+  "lecture": [
+   "Les trois cadres bleus du haut sont les vecteurs v₁, v₂, v₃ de la famille.",
+   "Chaque ligne a, à gauche, une soustraction en bleu et, à droite, son résultat.",
+   "Les cadres verts donnent e₃, e₁ et e₂ ; le cadre orange (1, 1, 0) est un résultat intermédiaire utilisé deux fois.",
+   "Le texte du bas dit : e₁, e₂, e₃ retrouvés, et trois vecteurs en dimension 3 forment une base."
+  ],
+  "a_voir": "Les trois vecteurs de base sont tous obtenus par des soustractions."
+ },
+ {
+  "code": "58-300",
+  "a_dire": "Trois vecteurs dans le plan, de dimension 2, sont liés sans calcul ; on ne sait pas pour autant quelle relation les lie.",
+  "legende_titre": "Trois vecteurs dans le plan",
+  "lecture": [
+   "Les trois flèches sont (1, 2) en bleu, (3, 1) en orange et (2, 5) en violet.",
+   "Le texte gris dit que le plan est de dimension 2.",
+   "Le texte orange dit que 3 vecteurs dépassent 2 ; le texte vert dit qu’ils sont donc liés, sans calcul.",
+   "Le texte gris du bas dit qu’il faut calculer pour trouver la relation."
+  ],
+  "a_voir": "Compter suffit pour savoir qu’ils sont liés, mais pas pour trouver la relation."
+ }
+]

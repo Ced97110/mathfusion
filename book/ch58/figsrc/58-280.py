@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+ox, oy, u = 34, 12, 9.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(-3.4, 0), P(3.0, 0)], 'sujet', lw=1.4)
+text(ax, P(3.0, 0)[0] + 1, P(3.0, 0)[1] + 3, r'$X$', 'sujet', 'm')
+# direction de Z : (1, 1)
+line(ax, [P(1, 3), P(-2, 0)], 'autre', lw=0.8, dash=True)
+text(ax, P(0.3, 1.8)[0] + 1, P(0.3, 1.8)[1] + 3.5, r'parallèle à $Z$', 'autre', 's', ha='left')
+disc(ax, P(1, 3)[0], P(1, 3)[1], 1.3, 'sujet')
+text(ax, P(1, 3)[0] + 3, P(1, 3)[1], '(1, 3)', 'sujet', 's', ha='left')
+a0 = (P(1, 3)[0] - 1.6, P(1, 3)[1] - 1.6)
+a1 = (P(-2, 0)[0] + 2.0, P(-2, 0)[1] + 2.0)
+arrow(ax, a0, a1, 'varie', lw=1.3)
+text(ax, P(-0.6, 2.4)[0] - 2, P(-0.6, 2.4)[1] + 1, '1re projection', 'varie', 's', ha='right')
+disc(ax, P(-2, 0)[0], P(-2, 0)[1], 1.3, 'resultat')
+text(ax, P(-2, 0)[0], P(-2, 0)[1] - 4, '(−2, 0)', 'resultat', 's')
+# 2e projection : le point ne bouge pas
+disc(ax, P(-2, 0)[0], P(-2, 0)[1], 3.0, 'resultat', fill=False)
+text(ax, 66, 27, '2e projection :', 'resultat', 's')
+text(ax, 66, 22.5, 'il reste en (−2, 0)', 'resultat', 's')
+text(ax, 66, 6, 'tout point de X est fixe', 'resultat', 's')
+save(fig, '58-280')

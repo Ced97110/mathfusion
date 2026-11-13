@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 64, r'$M_1\oplus M_2$', 'sujet', 'm', weight='bold')
+text(ax, 71, 64, r'$M$', 'resultat', 'm', weight='bold')
+box(ax, 3, 44, 19, 11, 'sujet', label='(5, 0)', size='s')
+box(ax, 24, 44, 19, 11, 'autre', label='(0, 4)', size='s')
+arrow(ax, (44, 49.5), (60, 49.5), 'varie', lw=1.3)
+text(ax, 52, 55, r'$\iota$ additionne', 'varie', 's')
+box(ax, 61, 44, 24, 11, 'resultat', label='(5, 4)', weight='bold')
+box(ax, 4, 22, 80, 9, 'resultat', label='un seul antécédent : injective', size='s')
+box(ax, 4, 8, 80, 9, 'resultat', label='tout couple atteint : surjective', size='s')
+save(fig, '58-249')
