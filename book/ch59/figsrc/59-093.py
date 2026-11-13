@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 50, 36, 12, 'sujet', label='diag(1, 20)')
+box(ax, 48, 50, 36, 12, 'autre', label='diag(2, 10)')
+box(ax, 4, 34, 36, 10, 'fixe', label='déterminant : 20', size='s')
+box(ax, 48, 34, 36, 10, 'fixe', label='déterminant : 20', size='s')
+text(ax, 44, 39, '=', 'fixe', 'l')
+text(ax, 44, 28, 'ne les distingue pas', 'fixe', 's')
+box(ax, 4, 12, 36, 10, 'sujet', label='facteurs : 1 et 20', size='s')
+box(ax, 48, 12, 36, 10, 'autre', label='facteurs : 2 et 10', size='s')
+text(ax, 44, 17, r'$\neq$', 'resultat', 'l')
+text(ax, 44, 6, 'les facteurs les distinguent', 'resultat', 's')
+save(fig, '59-093')

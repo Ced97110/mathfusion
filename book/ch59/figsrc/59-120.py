@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, 'deux points, une seule classe', 'encre', 'm', weight='bold')
+box(ax, 4, 44, 20, 9, 'sujet', label='(5, 13)')
+box(ax, 4, 24, 20, 9, 'autre', label='(7, 23)')
+box(ax, 58, 28, 24, 20, 'resultat', label='(1, 3)', size='l', weight='bold')
+arrow(ax, (25, 48.5), (57, 42), 'sujet', lw=1.1)
+arrow(ax, (25, 28.5), (57, 34), 'autre', lw=1.1)
+text(ax, 38, 57, '5 mod 2 = 1, 13 mod 10 = 3', 'sujet', 's')
+text(ax, 38, 19, '7 mod 2 = 1, 23 mod 10 = 3', 'autre', 's')
+text(ax, 70, 23, 'dans ℤ/2 ⊕ ℤ/10', 'resultat', 's')
+text(ax, 44, 8, 'différence (2, 10) : dans K', 'fixe', 's')
+save(fig, '59-120')

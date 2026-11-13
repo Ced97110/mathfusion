@@ -1,0 +1,26 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+cy, r = 36, 10
+# gauche : base ordinaire x1, x2 -> les deux ensembles se recouvrent
+disc(ax, 14, cy, r, 'sujet', fill=False, lw=1.2)
+disc(ax, 28, cy, r, 'autre', fill=False, lw=1.2)
+text(ax, 9, cy, 'Dx₁', 'sujet', 's')
+text(ax, 33, cy, 'Dx₂', 'autre', 's')
+disc(ax, 21, cy, 1.0, 'limite')
+arrow(ax, (21, 21), (21, cy - 2), 'limite')
+text(ax, 21, 16, 'commun : 4x₁ = −6x₂', 'limite', 's')
+text(ax, 21, 11, 'et ce n’est pas 0', 'limite', 's')
+text(ax, 21, 62, 'base ordinaire x₁, x₂', 'fixe', 's')
+text(ax, 21, 55, 'pas somme directe', 'limite', 's')
+# droite : base adaptée y1, y2 -> seul 0 en commun
+disc(ax, 56, cy, r, 'sujet', fill=False, lw=1.2)
+disc(ax, 76, cy, r, 'autre', fill=False, lw=1.2)
+text(ax, 52, cy, 'Dy₁', 'sujet', 's')
+text(ax, 80, cy, 'Dy₂', 'autre', 's')
+disc(ax, 66, cy, 1.0, 'resultat')
+arrow(ax, (66, 21), (66, cy - 2), 'resultat')
+text(ax, 66, 16, 'seul 0 en commun', 'resultat', 's')
+text(ax, 66, 11, 'quotient = Dy₁ ⊕ Dy₂', 'resultat', 's')
+text(ax, 66, 62, 'base adaptée y₁, y₂', 'fixe', 's')
+text(ax, 66, 55, 'somme directe', 'resultat', 's')
+save(fig, '59-097')

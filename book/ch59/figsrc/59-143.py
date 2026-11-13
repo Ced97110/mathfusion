@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 52, 38, 12, 'autre', label=r'$\mathbb{Z}/6\oplus\mathbb{Z}/4$', size='m')
+box(ax, 48, 52, 38, 12, 'autre', label=r'$\mathbb{Z}/2\oplus\mathbb{Z}/12$', size='m')
+arrow(ax, (21, 51.5), (21, 43), 'varie')
+arrow(ax, (67, 51.5), (67, 43), 'varie')
+box(ax, 2, 30, 38, 12, 'sujet', label='facteurs 2, 12', size='m')
+box(ax, 48, 30, 38, 12, 'sujet', label='facteurs 2, 12', size='m')
+text(ax, 44, 36, '=', 'resultat', 'xl', weight='bold')
+arrow(ax, (44, 29), (44, 21), 'varie')
+box(ax, 14, 8, 60, 12, 'resultat', label='mêmes listes : isomorphes', size='m')
+save(fig, '59-143')

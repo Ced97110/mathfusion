@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 22, 52, 44, 12, 'fixe', label='déterminant 20', size='m')
+arrow(ax, (32, 51.5), (22, 40), 'varie')
+arrow(ax, (56, 51.5), (66, 40), 'varie')
+text(ax, 44, 44, '20 éléments', 'fixe', 's')
+box(ax, 4, 26, 36, 13, 'sujet', label=r'$\mathbb{Z}/20$')
+box(ax, 48, 26, 36, 13, 'autre', label=r'$\mathbb{Z}/2\oplus\mathbb{Z}/10$')
+text(ax, 22, 20, 'facteurs (1, 20)', 'sujet', 's')
+text(ax, 66, 20, 'facteurs (2, 10)', 'autre', 's')
+text(ax, 44, 32.5, r'$\neq$', 'limite', 'xl', weight='bold')
+text(ax, 44, 8, 'il faut la liste, pas un nombre', 'resultat', 's', weight='bold')
+save(fig, '59-157')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 4, 28, 54, 42, 'sujet', dash=True)
+text(ax, 31, 65, r'$K$ : $2\cdot\ldots+x\cdot\ldots$', 'sujet', 's')
+box(ax, 10, 38, 18, 14, 'sujet', label=r'$2$', size='l')
+box(ax, 34, 38, 18, 14, 'sujet', label=r'$x$', size='l')
+text(ax, 31, 33, 'aucun multiple de l’autre', 'limite', 's')
+box(ax, 64, 38, 20, 14, 'limite', label=r'$1$', size='l')
+text(ax, 74, 58, r'$1\notin K$', 'limite', 's')
+text(ax, 74, 32, 'terme constant', 'limite', 's'); text(ax, 74, 27, 'impair', 'limite', 's')
+text(ax, 44, 14, 'aucun élément seul', 'limite', 's')
+text(ax, 44, 8, 'n’engendre K', 'limite', 's')
+save(fig, '59-032')

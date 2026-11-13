@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 63, r'entiers : $2\mid10$', 'fixe', 's')
+box(ax, 2, 44, 34, 12, 'fixe', label='2')
+box(ax, 52, 44, 34, 12, 'fixe', label='10')
+arrow(ax, (37, 50), (51, 50), 'fixe')
+text(ax, 44, 54, r'$\times\,5$', 'fixe', 's')
+text(ax, 44, 36, r'polynômes : $d_1(x)\mid d_2(x)$', 'sujet', 's')
+box(ax, 2, 12, 34, 14, 'sujet', label=r'$x-1$')
+box(ax, 46, 12, 40, 14, 'sujet', label=r'$(x-1)(x+2)$')
+arrow(ax, (37, 19), (45, 19), 'varie')
+text(ax, 41, 29, r'$\times\,(x+2)$', 'varie', 's')
+save(fig, '59-149')

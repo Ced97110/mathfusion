@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, r'$x$ entier : $2x$ vaut 0, 2, 4, 6', 'sujet', 'm')
+f = numberline(ax, 8, 70, 58, 0, 6, arrow_right=False, size='s')
+for v in (0, 2, 4, 6): disc(ax, f(v), 58, 1.4, 'sujet')
+disc(ax, f(1), 58, 1.4, 'limite')
+text(ax, f(1), 66, r'$1$ ?', 'limite', 's')
+text(ax, 44, 46, r'$2x=1$ : pas de $x$ entier', 'limite', 's')
+text(ax, 44, 34, r'$x$ fraction : $2x$ atteint tout', 'resultat', 'm')
+g = numberline(ax, 8, 70, 18, 0, 6, arrow_right=False, size='s')
+for v in range(7): disc(ax, g(v), 18, 1.4, 'resultat')
+text(ax, g(1), 26, r'$x=\frac{1}{2}$', 'resultat', 's')
+save(fig, '59-010')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 75, 'un segment, deux mesures', 'encre', 'l')
+box(ax, 8, 55, 72, 5, 'sujet', lw=1.0, r=0.5)
+brace(ax, 8, 80, 61, 'varie', label='30 cm', down=False, depth=2.2)
+brace(ax, 8, 80, 54, 'autre', label='300 mm', down=True, depth=2.2)
+line(ax, [(4, 40), (84, 40)], 'fixe', lw=0.5, dash=True)
+text(ax, 44, 35, 'deux tableaux, un module', 'encre', 'l')
+box(ax, 6, 18, 30, 9, 'varie', label=r'tableau $A$')
+box(ax, 52, 18, 30, 9, 'autre', label=r'tableau $B$')
+box(ax, 22, 3, 44, 9, 'sujet', label=r'le même module $M$')
+line(ax, [(28, 18), (28, 12)], 'varie', lw=1.0); line(ax, [(60, 18), (60, 12)], 'autre', lw=1.0)
+save(fig, '59-051')

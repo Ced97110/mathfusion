@@ -1,0 +1,386 @@
+[
+ {
+  "code": "59-097",
+  "a_dire": "Avec les classes y₁ et y₂ de la base adaptée, le quotient est la somme directe de Dy₁ et Dy₂ ; avec x₁ et x₂ de la base ordinaire, les deux ensembles ont un élément non nul commun (4x₁ = −6x₂), donc ce n’est pas une somme directe.",
+  "legende_titre": "Deux bases, deux résultats",
+  "lecture": [
+   "À gauche, le cercle bleu est Dx₁ et le cercle violet est Dx₂ : ils se recouvrent.",
+   "Le point rouge dans la partie commune est 4x₁, qui vaut aussi −6x₂ et n’est pas nul.",
+   "À droite, le cercle bleu est Dy₁ et le cercle violet est Dy₂ : ils se touchent en un seul point vert, le zéro.",
+   "Seul le zéro est commun aux deux : c’est la somme directe."
+  ],
+  "a_voir": "Les cercles de gauche se recouvrent, ceux de droite ne partagent que 0."
+ },
+ {
+  "code": "59-098",
+  "a_dire": "Dy₂ est cyclique : ses éléments sont 0, y₂, 2y₂, … ; 10 fois y₂ vaut zéro, l’annulateur est (10) et Dy₂ est isomorphe à ℤ/(10).",
+  "legende_titre": "Les multiples d’une seule classe",
+  "lecture": [
+   "Chaque rond est un multiple k·y₂ de la classe de (1, 1), avec k de 0 à 9.",
+   "Le rond gris est 0. La flèche orange est l’ajout d’une fois y₂ : elle passe de 0 à 1.",
+   "Après 10 ajouts, on est de nouveau en 0 : l’annulateur est (10).",
+   "Il y a 10 ronds, comme les restes modulo 10."
+  ],
+  "a_voir": "Dix multiples en cercle, puis retour au départ."
+ },
+ {
+  "code": "59-099",
+  "a_dire": "Le quotient de 20 éléments est la somme directe d’un morceau de 2 éléments, Dz₁, et d’un morceau de 10 éléments, Dz₂, dont les annulateurs (2) et (10) s’emboîtent.",
+  "legende_titre": "Deux morceaux mis bout à bout",
+  "lecture": [
+   "Les 2 cases bleues sont les éléments de Dz₁ ; l’annulateur de z₁ est (2).",
+   "Les 10 cases violettes sont les éléments de Dz₂ ; l’annulateur de z₂ est (10).",
+   "Le signe ⊕ entre les deux dit que le module est formé des deux morceaux sans recouvrement.",
+   "En bas, (2) contient (10) : les annulateurs s’emboîtent."
+  ],
+  "a_voir": "Un module de 20 éléments fait de 2 + 10 cases."
+ },
+ {
+  "code": "59-100",
+  "a_dire": "Dz désigne en deux signes l’ensemble de tous les b fois z, avec b dans D.",
+  "legende_titre": "Un nom pour les multiples de z",
+  "lecture": [
+   "La case bleue de gauche est l’élément z.",
+   "La flèche orange « × b » dit qu’on le multiplie par un b de D.",
+   "Les cases de droite sont les résultats : 0, z, 2z, 3z, 4z et ainsi de suite.",
+   "L’accolade les regroupe sous le nom Dz."
+  ],
+  "a_voir": "Dz est l’ensemble de tous les b·z."
+ },
+ {
+  "code": "59-101",
+  "a_dire": "Le signe ⊕ dit que chaque élément s’écrit d’une seule façon comme un élément du premier morceau plus un élément du second : ici 20 éléments, 20 couples (u, v).",
+  "legende_titre": "Une écriture, une case",
+  "lecture": [
+   "Chaque case est un élément : u·y₁ + v·y₂, avec u en colonne (0 ou 1) et v en ligne (0 à 9).",
+   "Il y a 2 colonnes et 10 lignes : 2 × 10 = 20 cases, donc 20 éléments.",
+   "La case orange est l’élément 1·y₁ + 7·y₂.",
+   "Cet élément n’occupe qu’une seule case : son écriture est unique."
+  ],
+  "a_voir": "Chaque élément a une seule case."
+ },
+ {
+  "code": "59-102",
+  "a_dire": "ann z est l’ensemble des b tels que bz = 0 ; pour y₂, ce sont les multiples de 10, noté (10).",
+  "legende_titre": "Les entiers qui effacent y₂",
+  "lecture": [
+   "La droite porte les entiers b de 0 à 30.",
+   "Les ronds verts en 0, 10, 20 et 30 sont les b pour lesquels b·y₂ vaut zéro.",
+   "Le rond rouge en 7 est un b pour lequel 7·y₂ n’est pas nul.",
+   "L’accolade verte regroupe les multiples de 10 : c’est ann y₂ = (10)."
+  ],
+  "a_voir": "Seuls les multiples de 10 donnent zéro."
+ },
+ {
+  "code": "59-103",
+  "a_dire": "Le signe ⊇ se lit « contient » : (2) ⊇ (10) car tout multiple de 10 est un multiple de 2.",
+  "legende_titre": "Un ensemble dans un autre",
+  "lecture": [
+   "Le grand cadre bleu est (2), l’ensemble des multiples de 2 : 2, 4, 6, 8, 12, 14 et les nombres du cadre violet.",
+   "Le cadre violet, à l’intérieur, est (10) : 10, 20, 30.",
+   "Les nombres du cadre violet sont aussi des multiples de 2, donc le cadre violet est dans le cadre bleu.",
+   "La ligne du bas écrit cela : (2) ⊇ (10)."
+  ],
+  "a_voir": "Le petit cadre est entièrement dans le grand."
+ },
+ {
+  "code": "59-104",
+  "a_dire": "ℤ/(10) range les entiers selon leur reste dans la division par 10 : dix rangements, de 0 à 9.",
+  "legende_titre": "Dix rangements des entiers",
+  "lecture": [
+   "Chaque colonne porte un reste, de 0 à 9 : c’est un rangement.",
+   "La colonne bleue du reste 7 contient 7, 17 et 27.",
+   "Deux entiers d’une même colonne diffèrent d’un multiple de 10.",
+   "Les ronds gris des autres colonnes sont d’autres entiers de ces rangements."
+  ],
+  "a_voir": "Dix colonnes, une par reste."
+ },
+ {
+  "code": "59-105",
+  "a_dire": "(d₁) ⊇ (d₂) exactement quand d₁ divise d₂ : les multiples de 2 contiennent ceux de 10 car 2 divise 10, mais les multiples de 3 ne contiennent pas ceux de 4.",
+  "legende_titre": "Diviseur et ensemble de multiples",
+  "lecture": [
+   "En haut, la rangée bleue marque les multiples de 2 et la rangée violette ceux de 10.",
+   "Les pointillés verts montrent que 10 et 20 sont aussi sur la rangée de 2.",
+   "En bas, la rangée bleue marque les multiples de 3 et la rangée violette ceux de 4.",
+   "Les ronds rouges 4 et 8 n’ont rien au-dessus d’eux : ce ne sont pas des multiples de 3."
+  ],
+  "a_voir": "Quand le petit nombre divise, ses multiples contiennent les autres."
+ },
+ {
+  "code": "59-106",
+  "a_dire": "Si dᵢ est inversible, (dᵢ) vaut D et yᵢ vaut 0 : ce générateur disparaît du module.",
+  "legende_titre": "Un facteur 1 ne laisse rien",
+  "lecture": [
+   "Le tableau diag(1, 6) donne deux morceaux.",
+   "Le morceau de gauche, en pointillés gris, ne contient que 0 : 1 fois y₁ vaut zéro, donc y₁ = 0.",
+   "Le morceau de droite a 6 cases bleues : Dy₂ a 6 éléments.",
+   "Le facteur 1 est inversible, son générateur est supprimé."
+  ],
+  "a_voir": "Le facteur 1 donne un morceau réduit à 0."
+ },
+ {
+  "code": "59-107",
+  "a_dire": "Un facteur dᵢ nul donne un morceau libre, isomorphe à D, dont les éléments ne reviennent jamais à zéro ; les facteurs non nuls donnent des morceaux qui reviennent à zéro.",
+  "legende_titre": "Morceaux qui reviennent et morceau qui ne revient pas",
+  "lecture": [
+   "Le tableau diag(2, 10, 0) donne trois lignes.",
+   "Les deux lignes grises ont 2 puis 10 cases, et une flèche ramène à 0 après 2 puis après 10 ajouts.",
+   "La ligne bleue n’a pas de retour : la case orange est 5·z₃, qui n’est pas nul, et la flèche continue.",
+   "L’annulateur de cette ligne est (0) : c’est la partie libre."
+  ],
+  "a_voir": "Deux lignes bouclent, la ligne libre ne boucle pas."
+ },
+ {
+  "code": "59-108",
+  "a_dire": "Le théorème dit que la liste est complète pour un anneau principal ; sans cette hypothèse, ℤ[x]/(2, x) a 2 éléments mais n’est pas un quotient D/(d), car (2, x) n’a pas de générateur seul.",
+  "legende_titre": "Que devient la liste sans « principal » ?",
+  "lecture": [
+   "Le cadre vert du haut donne la liste complète pour un anneau principal : ℤ et ℤ/(d_i).",
+   "À gauche, dans ℤ, un seul élément 2 engendre (2) : le quotient ℤ/(2) a 2 éléments et est dans la liste.",
+   "À droite, dans ℤ[x], il faut deux éléments, 2 et x, pour engendrer (2, x). Le quotient ℤ[x]/(2, x) a aussi 2 éléments.",
+   "Aucun élément seul n’engendre (2, x) : ce quotient n’est pas dans la liste."
+  ],
+  "a_voir": "La liste est complète pour un anneau principal ; à droite, un générateur ne suffit pas, donc le quotient n'y est pas."
+ },
+ {
+  "code": "59-109",
+  "a_dire": "C₂ ← C₂ − C₁ se lit « C deux devient C deux moins C un » : la colonne 2 est remplacée par la différence, la colonne 1 ne change pas ; sur A, la colonne (6, 4) devient (2, −2).",
+  "legende_titre": "Lire une opération sur les colonnes",
+  "lecture": [
+   "Le tableau de gauche est A, de lignes (4, 6) et (6, 4) ; la colonne 1 est grise et la colonne 2 est orange.",
+   "La flèche orange porte l’opération C₂ ← C₂ − C₁.",
+   "Dans le tableau de droite, la colonne 1 est la même, et la colonne 2 vaut 6 − 4 = 2 et 4 − 6 = −2.",
+   "Les deux calculs sont écrits sous le tableau de droite."
+  ],
+  "a_voir": "Seule la colonne orange change."
+ },
+ {
+  "code": "59-110",
+  "a_dire": "Dans le tableau de lignes (4, 6) et (6, 4), le plus petit coefficient en valeur absolue est 4 et il est déjà en (1, 1) : l’étape 2 ne change rien.",
+  "legende_titre": "Étape 2 sur un tableau déjà prêt",
+  "lecture": [
+   "Le tableau a pour lignes (4, 6) et (6, 4).",
+   "La case verte en haut à gauche porte 4, le plus petit nombre : c’est le pivot en (1, 1).",
+   "La case en pointillés verts en bas à droite porte aussi 4.",
+   "Rien n’est à échanger."
+  ],
+  "a_voir": "Le pivot est déjà en haut à gauche."
+ },
+ {
+  "code": "59-111",
+  "a_dire": "6 = 1 × 4 + 2 : on retire 1 fois la colonne 1 de la colonne 2, ce qui donne les lignes (4, 2) et (6, −2) ; il reste un reste 2 non nul et un nombre −2 apparu en bas.",
+  "legende_titre": "Une division avec reste sur la première ligne",
+  "lecture": [
+   "En haut, la division de 6 par 4 donne 1 et il reste 2.",
+   "À gauche, le tableau de lignes (4, 6) et (6, 4), avec le 6 en orange.",
+   "La flèche orange retire 1 fois la colonne 1 de la colonne 2.",
+   "À droite, le reste 2 est en haut et le nombre −2, en violet, est apparu en bas."
+  ],
+  "a_voir": "Un reste 2 non nul reste en haut."
+ },
+ {
+  "code": "59-112",
+  "a_dire": "Le reste 2 non nul devient le nouveau pivot : on échange les colonnes pour l’amener en (1, 1), et le pivot passe de 4 à 2.",
+  "legende_titre": "Un reste devient le pivot",
+  "lecture": [
+   "Le tableau de gauche a pour lignes (4, 2) et (6, −2) ; la case verte porte 2, le plus petit nombre, en (1, 2).",
+   "La flèche orange est l’échange des colonnes 1 et 2.",
+   "Dans le tableau de droite, de lignes (2, 4) et (−2, 6), le 2 vert est en (1, 1).",
+   "Aucun nombre n’a changé, ils ont seulement changé de place."
+  ],
+  "a_voir": "Le 2 passe de la colonne 2 à la colonne 1."
+ },
+ {
+  "code": "59-113",
+  "a_dire": "4 = 2 × 2 + 0 : retirer 2 fois la colonne 1 de la colonne 2 donne les lignes (2, 0) et (−2, 10) ; la première ligne est vidée et 10 apparaît en bas.",
+  "legende_titre": "Une division sans reste",
+  "lecture": [
+   "En haut, la division de 4 par 2 donne 2 et il reste 0.",
+   "À gauche, le tableau de lignes (2, 4) et (−2, 6) ; la colonne 2 est orange.",
+   "La flèche retire 2 fois la colonne 1 de la colonne 2.",
+   "À droite, le 0 vert est le reste, et le 10 orange vient de 6 − 2 × (−2)."
+  ],
+  "a_voir": "La première ligne devient (2, 0)."
+ },
+ {
+  "code": "59-114",
+  "a_dire": "−2 = (−1) × 2 + 0 : retrancher −1 fois la ligne 1, c’est l’ajouter ; L₂ ← L₂ + L₁ donne la ligne (0, 10) et le tableau diag(2, 10).",
+  "legende_titre": "Une division avec un quotient négatif",
+  "lecture": [
+   "En haut, −2 vaut −1 fois 2 plus 0.",
+   "À gauche, le tableau de lignes (2, 0) et (−2, 10) ; la ligne 2 est orange.",
+   "La flèche orange ajoute la ligne 1 à la ligne 2.",
+   "À droite, −2 + 2 = 0 en vert et 10 + 0 = 10 : le tableau est diag(2, 10)."
+  ],
+  "a_voir": "Le −2 devient 0 en ajoutant la ligne 1."
+ },
+ {
+  "code": "59-115",
+  "a_dire": "Le seul nombre restant est 10 et 2 divise 10, donc rien ne change : d₁ = 2, d₂ = 10 et la forme normale est diag(2, 10).",
+  "legende_titre": "La fin du calcul",
+  "lecture": [
+   "Le tableau a pour lignes (2, 0) et (0, 10).",
+   "En haut, 10 = 5 × 2 + 0 : 2 divise 10, il n’y a rien à changer.",
+   "Les deux cases vertes de la diagonale portent d₁ = 2 et d₂ = 10.",
+   "En bas, la forme normale est écrite : diag(2, 10)."
+  ],
+  "a_voir": "Les deux nombres de la diagonale sont d₁ et d₂."
+ },
+ {
+  "code": "59-116",
+  "a_dire": "La formule des mineurs (Δ₁ = 2, Δ₂ = 20, d₂ = 10) donne les mêmes nombres 2 et 10 que les opérations sur les lignes et colonnes : les deux méthodes concordent.",
+  "legende_titre": "Deux méthodes, un contrôle",
+  "lecture": [
+   "Le tableau gris en haut est A, de lignes (4, 6) et (6, 4).",
+   "À gauche, en bleu, les mineurs : Δ₁ = pgcd(4, 6, 6, 4) = 2, Δ₂ = |4·4 − 6·6| = 20, puis d₂ = 20 ÷ 2 = 10.",
+   "À droite, en violet, les opérations donnent diag(2, 10), donc d₁ = 2 et d₂ = 10.",
+   "Les flèches vertes réunissent les deux résultats : mêmes nombres."
+  ],
+  "a_voir": "Les deux colonnes aboutissent à 2 et 10."
+ },
+ {
+  "code": "59-117",
+  "a_dire": "Les opérations sur les colonnes se combinent en un tableau P, de lignes (−1, 3) et (1, −2) ; son inverse, de lignes (2, 3) et (1, 1), donne les nouveaux vecteurs e′₁ = (2, 3) et e′₂ = (1, 1).",
+  "legende_titre": "Des colonnes aux nouveaux vecteurs",
+  "lecture": [
+   "Le tableau gris de gauche est P, qui réunit les 3 opérations sur les colonnes.",
+   "La flèche orange « inverse » mène au tableau orange P⁻¹.",
+   "La ligne 1 de P⁻¹ est (2, 3) : c’est e′₁.",
+   "La ligne 2 de P⁻¹ est (1, 1) : c’est e′₂."
+  ],
+  "a_voir": "Les lignes du tableau inverse sont les nouveaux vecteurs."
+ },
+ {
+  "code": "59-118",
+  "a_dire": "L’opération sur les lignes remplace f₂ par f₂ + f₁ : on a f₁ = (4, 6) = 2e′₁ et f₁ + f₂ = (10, 10) = 10e′₂ ; les colonnes changent la base, les lignes changent les générateurs.",
+  "legende_titre": "Les nouveaux générateurs dans la nouvelle base",
+  "lecture": [
+   "La flèche bleue va de l’origine à f₁ = (4, 6) ; ses deux ronds marquent 2 pas de e′₁ = (2, 3).",
+   "La flèche violette va de l’origine à f₁ + f₂ = (10, 10) ; ses 10 ronds marquent 10 pas de e′₂ = (1, 1).",
+   "Le texte orange rappelle l’opération sur les lignes : f₂ ← f₂ + f₁.",
+   "Ainsi f₁ vaut 2e′₁ et f₁ + f₂ vaut 10e′₂."
+  ],
+  "a_voir": "2 pas dans une direction, 10 pas dans l’autre."
+ },
+ {
+  "code": "59-119",
+  "a_dire": "Dans les coordonnées (u, v) de la base adaptée, K est formé des points u pair et v multiple de 10 : K = 2ℤ × 10ℤ, régulièrement espacés, avec un seul point par rectangle de côtés 2 et 10.",
+  "legende_titre": "K dans la base adaptée",
+  "lecture": [
+   "Chaque point est placé par ses coordonnées (u, v) : u vers la droite, v vers le haut.",
+   "Les gros points bleus sont ceux de K : u pair et v multiple de 10.",
+   "Le rectangle orange en pointillés a pour côtés 2 et 10 et contient un seul point bleu.",
+   "Les petits points gris sont les autres points du quadrillage."
+  ],
+  "a_voir": "Les points de K sont espacés de 2 et de 10."
+ },
+ {
+  "code": "59-120",
+  "a_dire": "Deux points sont dans la même classe quand leurs u diffèrent d’un nombre pair et leurs v d’un multiple de 10 ; la classe est donnée par u modulo 2 et v modulo 10 : ℤ²/K ≅ ℤ/2 ⊕ ℤ/10.",
+  "legende_titre": "Deux restes fixent la classe",
+  "lecture": [
+   "Le point bleu (5, 13) donne les restes 1 et 3.",
+   "Le point violet (7, 23) donne aussi les restes 1 et 3.",
+   "Les deux flèches arrivent dans la même case verte (1, 3) de ℤ/2 ⊕ ℤ/10.",
+   "Leur différence (2, 10) est dans K : c’est pourquoi ils sont dans la même classe."
+  ],
+  "a_voir": "Deux points différents, un seul couple de restes."
+ },
+ {
+  "code": "59-121",
+  "a_dire": "ℤ/10 est l’horloge à dix heures (0 à 9, on revient à 0 après 9) et ℤ/2 l’horloge à deux heures (0 et 1) ; ℤ/2 ⊕ ℤ/10 donne une heure sur chaque horloge.",
+  "legende_titre": "Deux horloges",
+  "lecture": [
+   "À gauche, l’horloge ℤ/10 a dix heures, de 0 à 9, en cercle.",
+   "L’arc orange part de l’heure 7 (orange), fait 5 pas et arrive à l’heure 2 (vert) : 7 + 5 = 12, soit 2.",
+   "À droite, l’horloge ℤ/2 n’a que les heures 0 et 1.",
+   "ℤ/2 ⊕ ℤ/10 prend une heure sur chacune."
+  ],
+  "a_voir": "Après 9 on revient à 0 ; après 1, de même sur l’autre horloge."
+ },
+ {
+  "code": "59-122",
+  "a_dire": "Le quotient a 2 × 10 = 20 éléments : un reste u modulo 2 et un reste v modulo 10, choisis librement, forment un couple.",
+  "legende_titre": "Compter les classes par produit",
+  "lecture": [
+   "Les deux cases bleues du haut sont les 2 valeurs de u.",
+   "Les dix cases violettes du bas sont les 10 valeurs de v.",
+   "Chaque trait relie une valeur de u à une valeur de v : c’est un couple, donc une classe.",
+   "Le trait orange est le couple (1, 7) ; en tout 2 × 10 = 20 traits."
+  ],
+  "a_voir": "Vingt traits, un par couple."
+ },
+ {
+  "code": "59-123",
+  "a_dire": "Les 20 classes forment un rectangle de 2 colonnes et 10 lignes ; après 2 pas dans la direction e′₁ et après 10 pas dans la direction e′₂ on revient au départ : deux horloges indépendantes, ℤ/2 ⊕ ℤ/10.",
+  "legende_titre": "Un rectangle qui se recolle",
+  "lecture": [
+   "Les 20 ronds bleus dans le rectangle orange en pointillés sont les 20 classes : 2 colonnes, 10 lignes.",
+   "Les points gris sont d’autres points du quadrillage, hors du rectangle.",
+   "La flèche du bas va du point deux pas à droite jusqu’au départ : 2 pas ramènent à 0.",
+   "La flèche de gauche va du dixième pas vers le haut jusqu’au départ : 10 pas ramènent à 0."
+  ],
+  "a_voir": "On sort d’un côté du rectangle et on rentre de l’autre."
+ },
+ {
+  "code": "59-124",
+  "a_dire": "(2, 2) = 2e′₂ a pour coordonnées u = 0 et v = 2 ; comme 2 n’est pas multiple de 10, (2, 2) n’est pas dans K, et on le voit sans résoudre de système.",
+  "legende_titre": "Tester un point sur ses coordonnées",
+  "lecture": [
+   "La droite porte la coordonnée v, de 0 à 20.",
+   "Les ronds bleus en 0, 10 et 20 sont les valeurs de v possibles pour un point de K.",
+   "Le rond rouge en 2 est la coordonnée v du point (2, 2).",
+   "2 n’est pas un multiple de 10 : le point n’est pas dans K."
+  ],
+  "a_voir": "Le rond rouge n’est pas sur un rond bleu."
+ },
+ {
+  "code": "59-125",
+  "a_dire": "ℤ/20 et ℤ/2 ⊕ ℤ/10 ont chacun 20 éléments, mais avoir le même nombre d’éléments ne suffit pas à dire qu’ils sont le même module.",
+  "legende_titre": "Vingt éléments des deux côtés",
+  "lecture": [
+   "À gauche, 20 ronds bleus en cercle : l’horloge à 20 heures, ℤ/20.",
+   "À droite, 20 ronds violets en 2 colonnes de 10 : les couples de ℤ/2 ⊕ ℤ/10.",
+   "Le point d’interrogation pose la question : est-ce le même module ?",
+   "Le nombre d’éléments est le même des deux côtés."
+  ],
+  "a_voir": "Même nombre de ronds, mais disposés autrement."
+ },
+ {
+  "code": "59-126",
+  "a_dire": "Dans ℤ/20, l’élément 1 demande 20 additions pour revenir à 0 ; dans ℤ/2 ⊕ ℤ/10, tout couple revient à (0, 0) après 10 additions : les deux modules ne sont pas isomorphes.",
+  "legende_titre": "Combien d’additions pour revenir à 0 ?",
+  "lecture": [
+   "La droite du haut compte les additions k dans ℤ/20 : à k = 10, 10·1 n’est pas nul (rond orange).",
+   "Sur cette droite, on ne revient à 0 qu’en k = 20 (ronds verts).",
+   "La droite du bas compte les additions de (1, 1) dans ℤ/2 ⊕ ℤ/10 : à k = 10 on a (0, 0).",
+   "On y est déjà revenu à 0 en 10 additions."
+  ],
+  "a_voir": "Le retour à 0 vient en 20 en haut, en 10 en bas."
+ },
+ {
+  "code": "59-127",
+  "a_dire": "Les listes (2, 10) et (1, 20) ont le même produit 20 et vérifient toutes deux d₁ ∣ d₂, mais ce sont deux listes différentes, donc deux modules différents.",
+  "legende_titre": "Même produit, listes différentes",
+  "lecture": [
+   "La rangée bleue montre la liste (2, 10), pour ℤ/2 ⊕ ℤ/10 : une case de largeur 2 et une de largeur 10.",
+   "La rangée violette montre la liste (1, 20), pour ℤ/20 : une case de largeur 1 et une de largeur 20.",
+   "Dans les deux, le premier nombre divise le second et le produit vaut 20.",
+   "Seule la liste complète distingue les deux modules."
+  ],
+  "a_voir": "20 = 2 × 10 = 1 × 20, mais les listes ne sont pas les mêmes."
+ },
+ {
+  "code": "59-128",
+  "a_dire": "Si le tableau des relations est nul, K = {0} et M est libre : trois copies de D pour trois générateurs, sans aucun retour à zéro, donc sans torsion.",
+  "legende_titre": "Un tableau de zéros",
+  "lecture": [
+   "Le tableau A est nul : K = {0}, il n’y a aucune relation.",
+   "Chacune des trois lignes bleues est une copie de D : Dz₁, Dz₂ et Dz₃.",
+   "Aucune flèche ne ramène à 0 : les lignes se poursuivent vers la droite.",
+   "M est donc D³, libre, sans torsion."
+  ],
+  "a_voir": "Trois lignes qui ne bouclent jamais."
+ }
+]

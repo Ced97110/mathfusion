@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 55, r'chaque $b_i$ multiple de $d_i$ ?', 'encre', 's')
+box(ax, 3, 34, 30, 12, 'sujet', label=r'$4y_1+30y_2$', size='s')
+box(ax, 36, 34, 15, 12, 'resultat', label=r'$2\mid4$', size='s')
+box(ax, 53, 34, 17, 12, 'resultat', label=r'$10\mid30$', size='s')
+box(ax, 73, 34, 13, 12, 'resultat', label=r'$=0$', size='s')
+box(ax, 3, 12, 30, 12, 'autre', label=r'$3y_1+10y_2$', size='s')
+box(ax, 36, 12, 15, 12, 'limite', label=r'$2\nmid3$', size='s')
+box(ax, 53, 12, 17, 12, 'resultat', label=r'$10\mid10$', size='s')
+box(ax, 73, 12, 13, 12, 'fixe', label=r'$\neq0$', size='s')
+save(fig, '59-096')

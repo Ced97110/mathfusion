@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 52, r'$D_i(u)$ : $u$ doit être inversible', 'encre', 'm')
+box(ax, 3, 20, 24, 10, 'sujet', label='(0, −6)')
+box(ax, 58, 34, 26, 10, 'resultat', label='(0, 6)')
+box(ax, 58, 6, 26, 10, 'limite', label='(0, −1)', dash=True)
+arrow(ax, (27.8, 27), (57.2, 38), 'varie', lw=1.2)
+text(ax, 38, 36, r'$\times(-1)$', 'varie', 's')
+text(ax, 71, 29.5, r'se défait : $\times(-1)$', 'resultat', 's')
+arrow(ax, (27.8, 23), (57.2, 12), 'limite', lw=1.2)
+text(ax, 38, 12, r'$\times\frac{1}{6}$', 'limite', 's')
+text(ax, 71, 20, r'$\frac{1}{6}\notin\mathbb{Z}$', 'limite', 's')
+save(fig, '59-055')

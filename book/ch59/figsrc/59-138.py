@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 2, 46, 26, 12, 'sujet', label=r'$f_1$ (2, 4)', size='s')
+box(ax, 31, 46, 26, 12, 'sujet', label=r'$f_2$ (4, 2)', size='s')
+box(ax, 60, 46, 26, 12, 'fixe', label=r'$f_3$ (6, 6)', size='s', dash=True)
+brace(ax, 2, 86, 60, label='3 générateurs', down=False)
+brace(ax, 2, 57, 46, role='resultat', label='base : m = 2', down=True)
+text(ax, 73, 41, 'superflu', 'fixe', 's')
+box(ax, 2, 20, 84, 11, 'sujet', label=r'déterminant $2\times2-4\times4=-12$', size='s')
+box(ax, 2, 3, 84, 11, 'resultat', label=r'$\mathbb{Z}^2/K\cong\mathbb{Z}/2\oplus\mathbb{Z}/6$ : 12 éléments', size='s')
+arrow(ax, (44, 19.5), (44, 14.5), 'varie')
+save(fig, '59-138')
