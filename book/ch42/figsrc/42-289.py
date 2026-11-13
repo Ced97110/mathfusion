@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+text(ax,44,46,'deux ensembles différents','encre','m')
+box(ax,6,14,30,24,'fixe',dash=True)
+text(ax,21,26,'vide','fixe','s')
+text(ax,21,8,r'$\varnothing$ : 0 élément','fixe','m')
+box(ax,52,14,30,24,'sujet')
+box(ax,60,19,14,14,'fixe',dash=True)
+text(ax,67,26,'vide','fixe','s')
+text(ax,67,8,r'$\{\varnothing\}$ : 1 élément','sujet','m')
+text(ax,44,26,r'$\neq$','limite','xl')
+save(fig,'42-289')

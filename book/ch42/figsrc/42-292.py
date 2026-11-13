@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,3,22,18,22,'fixe',dash=True); text(ax,12,33,r'$\varnothing$','fixe','l')
+box(ax,34,22,18,22,'sujet'); disc(ax,43,33,1.8,'sujet',label=None); text(ax,43,38,'a','sujet','s')
+text(ax,12,16,'départ','fixe','s'); text(ax,43,16,'arrivée','sujet','s')
+text(ax,70,54,'injective ?','resultat','m')
+box(ax,57,40,28,9,'resultat',label='oui : rien à comparer',size='s')
+text(ax,70,32,'surjective ?','limite','m')
+box(ax,57,18,28,9,'limite',label='non : a pas atteint',size='s')
+text(ax,70,10,r'$im=\varnothing\neq T$','limite','m')
+save(fig,'42-292')

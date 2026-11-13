@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+o = (16, 12); u = 8
+P = lambda x, y: (o[0] + u * x, o[1] + u * y)
+arrow(ax, P(0, 0), P(4.8, 0), 'fixe'); arrow(ax, P(0, 0), P(0, 6.2), 'fixe')
+for i in range(1, 5): line(ax, [(P(i, 0)[0], 10.8), (P(i, 0)[0], 13.2)], 'fixe')
+for j in range(1, 7): line(ax, [(14.8, P(0, j)[1]), (17.2, P(0, j)[1])], 'fixe')
+arrow(ax, P(0, 0.9), P(2, 0.9), 'varie'); arrow(ax, P(2, 0.9), P(2, 4.8), 'varie')
+disc(ax, *P(2, 5), 2.6, 'sujet')
+text(ax, P(2, 5)[0] + 4, P(2, 5)[1], r'$(2,\,5)$', 'sujet', 'm', ha='left')
+text(ax, P(2, 0)[0], 7, '2', 'varie', 'm'); text(ax, 11, P(0, 5)[1], '5', 'varie', 'm')
+text(ax, 62, 12, r'1er $\mathbb{R}$', 'fixe', 's'); text(ax, 16, 70, r'2e $\mathbb{R}$', 'fixe', 's')
+text(ax, 73, 40, r'$\mathbb{R}\times\mathbb{R}$', 'resultat', 'l', weight='bold')
+text(ax, 73, 30, 'tous les\ncouples $(x,\\,y)$', 'resultat', 's')
+save(fig, '42-166')

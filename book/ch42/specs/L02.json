@@ -1,0 +1,179 @@
+[
+ {
+  "code": "42-017",
+  "a_dire": "Les 8 sacs sont les 8 coins d’un cube : chaque objet est une direction, ajouter l’objet fait avancer d’une arête.",
+  "legende_titre": "Un cube : une direction par objet",
+  "lecture": [
+   "Les trois couleurs de traits (bleu, orange, violet) sont les trois directions : +a, +b, +c.",
+   "Chaque coin est un sac ; le coin du bas à gauche est le sac vide, le coin du haut est le sac plein.",
+   "Chaque trait est une arête : il ajoute un seul objet."
+  ],
+  "a_voir": "Il y a 8 coins et 12 arêtes, et chaque direction ajoute un objet."
+ },
+ {
+  "code": "42-018",
+  "a_dire": "Un diagramme de Hasse est un schéma de cases reliées par des traits, rangées par niveaux ; ici chaque case est un sac.",
+  "legende_titre": "Cases, traits et niveaux",
+  "lecture": [
+   "Chaque case bleue est un sac.",
+   "Les cases sont rangées en quatre niveaux, de 0 en bas à 3 en haut.",
+   "Un trait gris relie deux sacs quand l’un a un objet de plus que l’autre."
+  ],
+  "a_voir": "Regarde la façon de dessiner : des cases, des traits, des niveaux."
+ },
+ {
+  "code": "42-019",
+  "a_dire": "Un ensemble dit seulement quels objets sont là, sans ordre et sans répétition, à la différence d’une liste ou d’un couple.",
+  "legende_titre": "Ensemble, liste et couple côte à côte",
+  "lecture": [
+   "À gauche, la liste est écrite dans un ordre (flèche orange) et le lait y est deux fois.",
+   "Au milieu, les couples (2, 5) et (5, 2) sont différents : l’ordre compte.",
+   "À droite, le fond bleu est l’ensemble : trois objets, sans ordre."
+  ],
+  "a_voir": "Seul l’ensemble ignore l’ordre et la répétition."
+ },
+ {
+  "code": "42-020",
+  "a_dire": "Le mot élément nomme le lien entre un objet et l’ensemble qui le contient, et permet de compter : ce sac a 2 éléments.",
+  "legende_titre": "Les objets d’un sac sont ses éléments",
+  "lecture": [
+   "Le grand cadre gris est le sac.",
+   "Les deux cases bleues dedans sont ses éléments, au nombre de 2.",
+   "La case en pointillés à droite, la lampe, est hors du sac."
+  ],
+  "a_voir": "Un objet dans le sac est un élément ; la lampe n’en est pas un."
+ },
+ {
+  "code": "42-021",
+  "a_dire": "La construction des 8 sacs ne dépend pas de la nature des objets : seul compte leur nombre, ici 3.",
+  "legende_titre": "Objets, livres ou nombres : 8 sacs",
+  "lecture": [
+   "Chaque rangée a trois objets de nature différente.",
+   "Les flèches orange mènent toutes au même résultat vert.",
+   "Le résultat est le même dans les trois rangées : 8 sacs."
+  ],
+  "a_voir": "Changer les objets ne change pas le nombre de sacs."
+ },
+ {
+  "code": "42-022",
+  "a_dire": "Pour chaque objet la réponse est oui ou non, donc 2 choix par objet et 2 × 2 × 2 = 8 sacs.",
+  "legende_titre": "Oui ou non pour chaque objet",
+  "lecture": [
+   "Chaque rangée est un objet avec deux réponses possibles : oui (vert) ou non (gris).",
+   "En bas, le produit 2 × 2 × 2 donne 8 sacs.",
+   "La case rouge en pointillés, « à moitié », n’est pas permise."
+  ],
+  "a_voir": "Chaque objet a exactement deux réponses, jamais une troisième."
+ },
+ {
+  "code": "42-023",
+  "a_dire": "Un ensemble est donné par ses éléments : gourde puis carte, ou carte puis gourde, c’est le même sac.",
+  "legende_titre": "Même objets, même sac",
+  "lecture": [
+   "Les deux rangées bleues mettent les mêmes objets dans deux ordres.",
+   "Les flèches vertes mènent au même sac {a, b}.",
+   "En bas, si l’ordre comptait on aurait 16 sacs (rouge) ; il ne compte pas : 8 sacs (vert)."
+  ],
+  "a_voir": "Deux ordres différents donnent le même ensemble."
+ },
+ {
+  "code": "42-024",
+  "a_dire": "{a, b} et {b, a} sont deux écritures du même ensemble : l’ordre vient de l’écriture, pas de l’ensemble.",
+  "legende_titre": "Deux écritures, un seul ensemble",
+  "lecture": [
+   "En haut, les deux écritures en bleu sont reliées par le signe égal.",
+   "Les flèches orange partent des deux écritures vers un même cadre vert.",
+   "Dans le cadre, les objets a et b n’ont pas de premier."
+  ],
+  "a_voir": "L’ordre d’écriture ne change pas l’ensemble."
+ },
+ {
+  "code": "42-025",
+  "a_dire": "{a, a, b} et {a, b} sont le même ensemble : la répétition vient de l’écriture, on compte les objets distincts.",
+  "legende_titre": "Trois lignes, deux objets",
+  "lecture": [
+   "À gauche, la liste écrite a 3 lignes ; la gourde (orange) y est deux fois.",
+   "La flèche mène au sac vert.",
+   "Dans le sac, la gourde est une seule fois et la carte aussi : 2 objets."
+  ],
+  "a_voir": "Écrire deux fois le même objet ne le met qu’une fois dans l’ensemble."
+ },
+ {
+  "code": "42-026",
+  "a_dire": "La lettre S désigne un ensemble quelconque, une collection d’objets dont on parle.",
+  "legende_titre": "S tient la place d’une collection",
+  "lecture": [
+   "Le grand cadre bleu porte la lettre S : un ensemble.",
+   "Les trois flèches grises vont vers trois collections possibles.",
+   "Chaque collection peut être S."
+  ],
+  "a_voir": "S peut désigner n’importe quelle collection."
+ },
+ {
+  "code": "42-027",
+  "a_dire": "a ∈ S se lit « a appartient à S » : l’objet a, le signe ∈, l’ensemble S.",
+  "legende_titre": "a ∈ S en trois morceaux",
+  "lecture": [
+   "En haut, a est en orange, ∈ en bleu, S en gris, chacun avec son sens écrit dessous.",
+   "En bas, le cadre gris est le sac S.",
+   "Le disque orange a est dans le sac : l’écriture est vraie."
+  ],
+  "a_voir": "Chaque morceau de l’écriture a son sens : l’objet, le signe, l’ensemble."
+ },
+ {
+  "code": "42-028",
+  "a_dire": "c ∉ S se lit « c n’appartient pas à S » : la lampe c n’est pas dans le sac S ; c ∈ S est faux.",
+  "legende_titre": "c ∉ S : la lampe n’est pas dans le sac",
+  "lecture": [
+   "Le cadre gris est le sac S avec a et b ; le disque orange c est dehors.",
+   "La case verte c ∉ S est vraie.",
+   "La case rouge c ∈ S est fausse."
+  ],
+  "a_voir": "c est hors de S, donc c ∉ S est vrai."
+ },
+ {
+  "code": "42-029",
+  "a_dire": "L’écriture en liste cite les éléments entre accolades, séparés par des virgules : {a, b, c}.",
+  "legende_titre": "Les éléments cités entre accolades",
+  "lecture": [
+   "Les accolades bleues entourent la liste.",
+   "Les trois lettres orange a, b, c sont les éléments : gourde, carte, lampe.",
+   "Les virgules grises les séparent."
+  ],
+  "a_voir": "On lit les 3 éléments un par un entre les accolades."
+ },
+ {
+  "code": "42-030",
+  "a_dire": "{x ∈ S | x pair} se lit « les x pris dans S tels que x est pair » : ici 2, 4 et 6.",
+  "legende_titre": "Choisir par une condition",
+  "lecture": [
+   "La rangée du haut est S : les nombres de 1 à 6.",
+   "Les cases vertes sont celles qui vérifient la condition (pairs) ; les grises sont écartées.",
+   "En bas, les cases vertes 2, 4, 6 forment l’ensemble obtenu."
+  ],
+  "a_voir": "La condition choisit les éléments sans les écrire un par un."
+ },
+ {
+  "code": "42-031",
+  "a_dire": "Une propriété permet de définir un ensemble sans fin : pour chaque nombre elle répond oui ou non.",
+  "legende_titre": "Une propriété à la place d’une liste",
+  "lecture": [
+   "Sur la droite, les points verts sont les nombres pairs ; elle continue sans fin.",
+   "Dans la rangée du haut, 7 passe le test « est pair ? » et reçoit non (rouge).",
+   "Dans la rangée du bas, 10 reçoit oui (vert)."
+  ],
+  "a_voir": "Le test oui ou non décide pour chaque nombre, même sans liste."
+ },
+ {
+  "code": "42-032",
+  "a_dire": "ℕ se définit à partir de ℤ en gardant les x qui vérifient x ≥ 0 ; −2 et −1 sont écartés.",
+  "legende_titre": "ℕ défini par une condition dans ℤ",
+  "lecture": [
+   "La droite graduée montre les entiers de ℤ.",
+   "Les points rouges, −2 et −1, sont écartés.",
+   "Les points verts, de 0 à 5, vérifient x ≥ 0 : ils forment ℕ.",
+   "Le trait orange en pointillés sépare les deux groupes."
+  ],
+  "a_voir": "On part de ℤ, on ajoute la condition x ≥ 0, on garde ce qui la vérifie."
+ }
+]

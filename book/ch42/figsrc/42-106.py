@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, 'énoncé de départ', 'fixe', 's')
+box(ax, 2, 62, 36, 12, 'fixe', label=r'$p$ : multiple de 4', size='s'); box(ax, 50, 62, 36, 12, 'fixe', label=r'$q$ : pair', size='s')
+arrow(ax, (40, 68), (48, 68), 'fixe')
+text(ax, 20, 54.5, 'hypothèse', 'sujet', 's'); text(ax, 68, 54.5, 'conclusion', 'sujet', 's')
+box(ax, 2, 40, 36, 12, 'sujet', label=r'$q$ : pair', size='s'); box(ax, 50, 40, 36, 12, 'sujet', label=r'$p$ : multiple de 4', size='s')
+arrow(ax, (40, 46), (48, 46), 'varie')
+text(ax, 44, 35, r'réciproque $q \Rightarrow p$', 'varie', 's')
+arrow(ax, (68, 38.5), (60, 24), 'limite')
+box(ax, 8, 10, 52, 12, 'limite', label='6 : pair, non multiple de 4', size='s')
+text(ax, 72, 16, 'faux', 'limite', 's')
+save(fig, '42-106')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 22, 38, 24, 'sujet')
+text(ax, 23, 40, '« tous les premiers', 'sujet', 's'); text(ax, 23, 34, 'sont impairs »', 'sujet', 's')
+text(ax, 23, 27, 'énoncé « pour tout »', 'fixe', 's')
+disc(ax, 70, 34, 7, 'limite', label='2', size='l')
+text(ax, 70, 22, 'premier et pair', 'limite', 's')
+arrow(ax, (63, 34), (42, 34), 'limite'); text(ax, 52.5, 38, 'réfute', 'limite', 's', weight='bold')
+text(ax, 44, 8, 'un seul cas suffit : contre-exemple', 'limite', 's')
+save(fig, '42-087')

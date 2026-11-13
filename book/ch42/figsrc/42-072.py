@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_box = box
+def box(ax, x, y, w, h, role='fixe', label=None, size='m', **kw): return _box(ax, x, y, w, h, role, label=label, size=size, **kw)
+fig, ax = canvas(84)
+text(ax, 44, 79, 'si hypothèse, alors conclusion', 'fixe', 's')
+box(ax, 2, 58, 84, 15, 'sujet'); text(ax, 44, 68.5, 'hypothèse', 'sujet', 's', weight='bold')
+text(ax, 44, 62.5, r'$ax^2+bx+c=0$ avec $a\neq 0$', 'sujet', 'm')
+text(ax, 44, 51, r'$\Downarrow$', 'fixe', 'xl')
+box(ax, 2, 25, 84, 22, 'resultat'); text(ax, 44, 43, 'conclusion', 'resultat', 's', weight='bold')
+text(ax, 44, 33, r'$x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$', 'resultat', 'xl')
+text(ax, 44, 19, 'exemple', 'fixe', 's')
+box(ax, 2, 4, 36, 11, 'sujet', r'$a=1,\ b=-5,\ c=6$', 's')
+arrow(ax, (39.5, 9.5), (48.5, 9.5), 'fixe')
+box(ax, 50, 4, 36, 11, 'resultat', r'$x=2$ ou $x=3$', 'm')
+save(fig, '42-072')

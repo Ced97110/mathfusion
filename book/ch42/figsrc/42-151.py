@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,2,50,52,11,'sujet',label=r'$x\in A\cup A$')
+text(ax,28,64.5,'départ : la définition','sujet','s')
+box(ax,2,27,52,11,'varie',label=r'$x\in A\ \mathrm{ou}\ x\in A$',lw=1.4)
+arrow(ax,(28,50),(28,38),'varie')
+text(ax,29,19,'même phrase écrite deux fois','varie','s')
+arrow(ax,(28,27),(28,13),'varie')
+box(ax,2,2,52,11,'resultat',label=r'$x\in A$')
+text(ax,58,8,'arrivée','resultat','s',ha='left')
+box(ax,62,28,22,26,'fixe'); text(ax,73,49,'A','fixe','l')
+disc(ax,68,38,3,'fixe',label='2'); disc(ax,78,38,3,'fixe',label='4')
+save(fig,'42-151')

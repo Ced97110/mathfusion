@@ -1,0 +1,179 @@
+[
+ {
+  "code": "42-241",
+  "a_dire": "L’écriture α⁻¹ désigne l’application qui revient de T vers S et défait α.",
+  "legende_titre": "Un nom pour l’application qui revient",
+  "lecture": [
+   "Les flèches grises vont de S vers T : c’est α.",
+   "Les flèches bleues reviennent de T vers S : c’est α⁻¹.",
+   "Chaque élément de S est relié à un seul élément de T, dans les deux sens."
+  ],
+  "a_voir": "Les flèches bleues sont celles de α⁻¹, qui défait α."
+ },
+ {
+  "code": "42-242",
+  "a_dire": "Défaire l’inverse de α redonne α.",
+  "legende_titre": "Défaire deux fois",
+  "lecture": [
+   "Le premier schéma gris montre α : 1 va sur a et 2 va sur b.",
+   "Le schéma bleu du milieu montre les flèches inversées : c’est α⁻¹.",
+   "Le schéma vert montre qu’en inversant encore, on retrouve les flèches de α."
+  ],
+  "a_voir": "Après deux inversions, les flèches vertes sont celles du départ."
+ },
+ {
+  "code": "42-243",
+  "a_dire": "Deux applications qui défont α sont égales : β′ = β.",
+  "legende_titre": "Une preuve en cinq étapes",
+  "lecture": [
+   "La case violette en haut est β′, la case bleue en bas est β.",
+   "Chaque case grise est une écriture égale à la précédente ; à droite, tu lis la raison.",
+   "La case orange est l’étape qui regroupe : elle fait apparaître β′ ∘ α."
+  ],
+  "a_voir": "L’étape orange, le regroupement, permet d’utiliser β′ ∘ α = 1_S."
+ },
+ {
+  "code": "42-244",
+  "a_dire": "Pour défaire β ∘ α, on défait β d’abord, puis α.",
+  "legende_titre": "Revenir dans l’autre ordre",
+  "lecture": [
+   "En haut, les flèches grises montrent +1 puis ×2 : de 1 on va à 2, puis à 4.",
+   "Les flèches vertes reviennent : ÷2 d’abord, puis −1, et on retrouve 1.",
+   "En bas, les flèches rouges gardent l’ordre : −1 puis ÷2 donne 1,5, ce qui est faux."
+  ],
+  "a_voir": "Le chemin vert revient à 1 ; le chemin rouge arrive à 1,5."
+ },
+ {
+  "code": "42-245",
+  "a_dire": "Ce qu’on a fait en dernier est ce qu’on défait en premier.",
+  "legende_titre": "Faire puis défaire",
+  "lecture": [
+   "En haut, les chaussettes sont mises en premier, les chaussures en second.",
+   "En bas, en vert, les chaussures sont enlevées en premier, les chaussettes en second.",
+   "Les cases sont à la même place : la flèche du bas va dans l’autre sens."
+  ],
+  "a_voir": "L’ordre du bas est l’inverse de l’ordre du haut."
+ },
+ {
+  "code": "42-246",
+  "a_dire": "Le cube a un inverse, la racine cubique ; le carré n’en a pas.",
+  "legende_titre": "Cube et carré",
+  "lecture": [
+   "À gauche, x³ envoie 2 sur 8 et la racine cubique ramène 8 sur 2.",
+   "À droite, x² envoie 2 et −2 sur le même nombre 4.",
+   "Le point d’interrogation rouge montre qu’on ne sait pas quel nombre choisir au retour."
+  ],
+  "a_voir": "À gauche un seul retour est possible ; à droite, il y en a deux."
+ },
+ {
+  "code": "42-247",
+  "a_dire": "Le signe f⁻¹(8) désigne le nombre que f envoie sur 8, et non 1 divisé par f(8).",
+  "legende_titre": "Deux écritures, deux résultats",
+  "lecture": [
+   "En haut, la flèche bleue revient de 8 à 2 : c’est f⁻¹(8) = 2.",
+   "En bas, f envoie 8 sur 512, puis on divise 1 par 512.",
+   "La case rouge 1/512 est un autre objet que la case verte 2."
+  ],
+  "a_voir": "Les deux écritures donnent 2 et 1/512, qui sont différents."
+ },
+ {
+  "code": "42-248",
+  "a_dire": "Une permutation envoie un ensemble sur lui-même, chaque place étant reçue une fois.",
+  "legende_titre": "Un ensemble, trois places",
+  "lecture": [
+   "La rangée du haut donne les places de départ 1, 2, 3.",
+   "La rangée du bas donne les mêmes places 1, 2, 3 à l’arrivée.",
+   "Les flèches orange envoient 1 sur 2, 2 sur 3 et 3 sur 1."
+  ],
+  "a_voir": "Chaque place de la rangée du bas reçoit exactement une flèche."
+ },
+ {
+  "code": "42-249",
+  "a_dire": "Dans le tableau, on lit par colonne : sous chaque nombre du haut, on trouve son image.",
+  "legende_titre": "Le tableau à deux lignes",
+  "lecture": [
+   "La ligne grise du haut contient les départs 1, 2, 3.",
+   "La ligne verte du bas contient les arrivées 2, 3, 1.",
+   "Chaque flèche orange relie un nombre à celui qui est dessous, ce que dit l’égalité en dessous."
+  ],
+  "a_voir": "Dans chaque colonne, le nombre du bas est l’image de celui du haut."
+ },
+ {
+  "code": "42-250",
+  "a_dire": "L’inverse de π est la permutation dont le tableau en bas est 3, 1, 2.",
+  "legende_titre": "π et son inverse",
+  "lecture": [
+   "À gauche, le tableau de π a 2, 3, 1 en bas, en bleu.",
+   "À droite, le tableau de l’inverse a 3, 1, 2 en bas, en vert.",
+   "La ligne du haut est 1, 2, 3 dans les deux tableaux."
+  ],
+  "a_voir": "Les deux tableaux ont la même ligne du haut ; seule la ligne du bas change."
+ },
+ {
+  "code": "42-251",
+  "a_dire": "Pour inverser une permutation, on échange les deux lignes puis on range les colonnes.",
+  "legende_titre": "Inverser le tableau",
+  "lecture": [
+   "Le tableau du haut est celui de π.",
+   "Le tableau orange a les deux lignes échangées ; le haut n’est pas dans l’ordre.",
+   "Le tableau vert est rangé selon le haut : c’est l’inverse de π."
+  ],
+  "a_voir": "Les lignes échangées, puis rangées, donnent le tableau vert."
+ },
+ {
+  "code": "42-252",
+  "a_dire": "Une matrice 2 × 2 est un tableau de quatre nombres, en deux lignes et deux colonnes.",
+  "legende_titre": "Un tableau carré",
+  "lecture": [
+   "Les cases violettes du haut forment un couple et un triplet : une seule ligne.",
+   "Les cases bleues forment la matrice : 3 et 1 en haut, 5 et 2 en bas.",
+   "Les mots à côté comptent les lignes et les colonnes de la matrice."
+  ],
+  "a_voir": "Le tableau bleu a deux lignes ; les listes violettes n’en ont qu’une."
+ },
+ {
+  "code": "42-253",
+  "a_dire": "Chaque ligne du tableau fabrique une coordonnée de l’image : ax + by et cx + dy.",
+  "legende_titre": "Une ligne, une coordonnée",
+  "lecture": [
+   "Les cases bleues forment le tableau 3, 1 en haut et 5, 2 en bas.",
+   "Les cases violettes donnent le point : 2 puis 1.",
+   "Les cases vertes montrent les calculs ; la 1re ligne donne 7 et la 2e ligne donne 12."
+  ],
+  "a_voir": "Chaque case verte utilise une seule ligne du tableau."
+ },
+ {
+  "code": "42-254",
+  "a_dire": "Une application linéaire n’a que des termes de la forme a·x ou b·y.",
+  "legende_titre": "Linéaire ou non",
+  "lecture": [
+   "En haut, les deux cases bleues a x et b y sont des multiples de x et de y.",
+   "Au milieu, 1 est en rouge : ce n’est pas un multiple de x.",
+   "En bas, x² est en rouge : ce n’est pas un nombre fixé fois x."
+  ],
+  "a_voir": "Seule la première ligne est faite de multiples de x et de y."
+ },
+ {
+  "code": "42-255",
+  "a_dire": "Pour A = (3 1 ; 5 2), le point (1, 0) va sur (3, 5) et le point (0, 1) va sur (1, 2).",
+  "legende_titre": "Lire le tableau comme application",
+  "lecture": [
+   "Les flèches grises courtes sont les points (1, 0) et (0, 1).",
+   "La flèche bleue est l’image de (1, 0) : le point (3, 5).",
+   "La flèche violette est l’image de (0, 1) : le point (1, 2).",
+   "Les colonnes du tableau ont les mêmes couleurs que ces deux images."
+  ],
+  "a_voir": "Les couleurs du tableau sont celles des deux images dans le plan."
+ },
+ {
+  "code": "42-256",
+  "a_dire": "Les colonnes du tableau sont les images des points (1, 0) et (0, 1).",
+  "legende_titre": "Les colonnes sont des images",
+  "lecture": [
+   "Les cases grises du haut sont les points (1, 0) et (0, 1).",
+   "Les flèches orange les envoient sur (3, 5) en bleu et sur (1, 2) en violet.",
+   "Chaque grande case colorée en bas est le tableau, colonne par colonne : 3 et 5, puis 1 et 2."
+  ],
+  "a_voir": "La colonne bleue est l’image de (1, 0) ; la colonne violette, celle de (0, 1)."
+ }
+]

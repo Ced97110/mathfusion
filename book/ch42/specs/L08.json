@@ -1,0 +1,191 @@
+[
+ {
+  "code": "42-113",
+  "a_dire": "Le complémentaire de A dans S, c’est tout ce qui est dans S et pas dans A : le reste.",
+  "legende_titre": "Le reste de S une fois A mis de côté",
+  "lecture": [
+   "Le grand rectangle gris est S, les entiers naturels.",
+   "Le disque bleu est A : les pairs.",
+   "Les points verts, hors du disque, sont le reste : les impairs."
+  ],
+  "a_voir": "Le reste est la partie de S qui est hors de A."
+ },
+ {
+  "code": "42-114",
+  "a_dire": "S − A se lit « S privé de A » : on part de S, on enlève A, il reste Max.",
+  "legende_titre": "Lire S − A pas à pas",
+  "lecture": [
+   "Le rectangle gris est S : la classe.",
+   "Le disque orange est A : le groupe de judo, qu’on enlève.",
+   "La case verte est ce qui reste : Max.",
+   "À droite, chaque étape de la lecture a sa couleur."
+  ],
+  "a_voir": "Le signe moins retire A de S et laisse le reste."
+ },
+ {
+  "code": "42-115",
+  "a_dire": "Ā se lit « A barre » et désigne le reste de S ; c’est plus court que S − A, mais S doit être connu.",
+  "legende_titre": "Une écriture courte pour le reste",
+  "lecture": [
+   "Le rectangle gris est S, le disque orange est A.",
+   "La case verte est le reste : Max.",
+   "En bleu, Ā : le trait au-dessus veut dire « tout le reste ».",
+   "En bas, S − A répète S, alors que Ā le sous-entend."
+  ],
+  "a_voir": "Ā désigne la même chose que S − A sans écrire S."
+ },
+ {
+  "code": "42-116",
+  "a_dire": "Deux ensembles sont disjoints quand ils n’ont aucun élément commun.",
+  "legende_titre": "Aucun élément dans les deux groupes",
+  "lecture": [
+   "À gauche, le disque bleu et le disque violet sont séparés : aucun nom n’est dans les deux.",
+   "Au milieu, les disques se chevauchent : deux points rouges sont communs.",
+   "À droite, le disque violet est dans le disque bleu : il partage tout avec lui.",
+   "Seul le cas de gauche est vert : A ∩ B est vide."
+  ],
+  "a_voir": "Seuls les deux disques séparés n’ont rien en commun."
+ },
+ {
+  "code": "42-117",
+  "a_dire": "∩ ressemble à un A sans barre (And, « et ») et donne un résultat plus petit ; ∪ donne un résultat plus grand.",
+  "legende_titre": "Deux moyens de retenir ∩ et ∪",
+  "lecture": [
+   "En haut, la lettre A devient ∩ quand on enlève la barre : And, « et ».",
+   "La rangée bleue compte 3 judokas, la violette 3 guitaristes.",
+   "La rangée verte de ∩ compte 2 cases : plus petit.",
+   "La rangée verte de ∪ compte 4 cases : plus grand."
+  ],
+  "a_voir": "∩ a moins de cases que les groupes, ∪ en a plus."
+ },
+ {
+  "code": "42-118",
+  "a_dire": "A ∩ B est dans A, et A est dans A ∪ B : chaque ensemble contient le précédent.",
+  "legende_titre": "Une chaîne de trois ensembles emboîtés",
+  "lecture": [
+   "En haut, la chaîne est écrite avec une couleur par ensemble.",
+   "La zone verte est A ∩ B, où se trouve Lina.",
+   "Le disque bleu entier est A.",
+   "Le grand ensemble, les deux disques ensemble, est A ∪ B."
+  ],
+  "a_voir": "Lina est dans la zone verte, donc dans A, donc dans A ∪ B."
+ },
+ {
+  "code": "42-119",
+  "a_dire": "Avec S = {a, b, c}, A = {a, b} et B = {b, c}, on trouve A ∩ B = {b}, A ∪ B = {a, b, c} et Ā = {c}, élément par élément.",
+  "legende_titre": "Les trois résultats, case par case",
+  "lecture": [
+   "Chaque colonne est un élément : a, b ou c.",
+   "Une case colorée veut dire que l’élément est dans l’ensemble de la rangée.",
+   "Les rangées bleue et violette sont A et B.",
+   "Les trois rangées vertes sont A ∩ B, A ∪ B et Ā."
+  ],
+  "a_voir": "Chaque résultat se lit en regardant les cases colorées de chaque colonne."
+ },
+ {
+  "code": "42-120",
+  "a_dire": "Dans un diagramme de Hasse, A ∩ B est le point le plus haut sous A et B, et A ∪ B le point le plus bas au-dessus.",
+  "legende_titre": "Intersection et union lues par la position",
+  "lecture": [
+   "Les points bleu et violet sont A et B.",
+   "Le point vert du bas, relié à A et à B par-dessous, est A ∩ B.",
+   "Le point vert du haut, relié à A et à B par-dessus, est A ∪ B.",
+   "Le point gris tout en bas est aussi sous A et B, mais plus bas que {b}."
+  ],
+  "a_voir": "∩ est le plus haut point sous les deux, ∪ le plus bas au-dessus."
+ },
+ {
+  "code": "42-121",
+  "a_dire": "A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) : on peut mettre A devant chaque cas du « ou ».",
+  "legende_titre": "Les deux côtés de la loi donnent les mêmes nombres",
+  "lecture": [
+   "Chaque colonne est un nombre de 1 à 8.",
+   "La rangée bleue est A, la violette est B ∪ C.",
+   "La première rangée verte, A ∩ (B ∪ C), contient 2, 4 et 6.",
+   "Les deux rangées grises sont A ∩ B et A ∩ C ; leur union, en vert, contient aussi 2, 4 et 6."
+  ],
+  "a_voir": "Les deux rangées vertes sont identiques."
+ },
+ {
+  "code": "42-122",
+  "a_dire": "∩ joue le rôle de × et ∪ celui de + : la loi des ensembles a la même forme que celle des nombres.",
+  "legende_titre": "Même forme pour les nombres et les ensembles",
+  "lecture": [
+   "Les cases bleues relient × et ∩ : même rôle.",
+   "Les cases orange relient + et ∪ : même rôle.",
+   "La ligne du haut écrit la loi avec des nombres : 14 des deux côtés.",
+   "La ligne du bas écrit la loi avec des ensembles."
+  ],
+  "a_voir": "Les deux lois ont la même forme, signe pour signe."
+ },
+ {
+  "code": "42-123",
+  "a_dire": "La preuve va du côté gauche au droit, puis revient ; l’étape qui porte tout est la séparation de x en deux cas.",
+  "legende_titre": "Le chemin de la preuve",
+  "lecture": [
+   "La case bleue du haut est le départ : x est dans le côté gauche.",
+   "Les deux cases orange sont les deux cas : x ∈ B ou x ∈ C.",
+   "Les deux cases bleues du bas en découlent, puis la case verte est l’arrivée.",
+   "La flèche grise en pointillés est le chemin inverse."
+  ],
+  "a_voir": "Sans les deux cas orange, on n’arrive pas au côté droit."
+ },
+ {
+  "code": "42-124",
+  "a_dire": "Un diagramme de Venn dessine chaque ensemble par un cercle ; un diagramme de Hasse le dessine par un point.",
+  "legende_titre": "Venn : des cercles ; Hasse : des points",
+  "lecture": [
+   "À gauche, trois cercles bleus qui se chevauchent sont les ensembles A, B et C.",
+   "La zone verte est la région A ∩ (B ∪ C).",
+   "À droite, les quatre points gris reliés sont des ensembles.",
+   "Un trait relie deux ensembles quand on passe de l’un à l’autre en ajoutant un objet."
+  ],
+  "a_voir": "Dans un Venn on lit les zones communes, dans un Hasse les inclusions."
+ },
+ {
+  "code": "42-125",
+  "a_dire": "Si on ne change qu’un signe, la loi devient fausse ; il faut échanger ∩ et ∪ ensemble.",
+  "legende_titre": "Un seul signe changé : la loi casse",
+  "lecture": [
+   "Les rangées bleue et violettes sont A = {1}, B = {2} et C = {3}.",
+   "La première rangée verte, A ∪ (B ∪ C), a trois cases : 1, 2 et 3.",
+   "Les rangées grises sont A ∪ B et A ∪ C.",
+   "La dernière rangée verte, leur ∩, n’a qu’une case : 1. Le signe rouge dit que les deux côtés diffèrent."
+  ],
+  "a_voir": "Le côté gauche a trois cases, le côté droit une seule."
+ },
+ {
+  "code": "42-126",
+  "a_dire": "Pour les nombres, a + (b × c) ne vaut pas (a + b) × (a + c) : avec 1, 2 et 3, on trouve 7 et 12.",
+  "legende_titre": "Avec des nombres, les deux côtés diffèrent",
+  "lecture": [
+   "À gauche, la case bleue est a et le bloc orange est b × c : 2 rangées de 3.",
+   "Cela fait 7 cases en tout.",
+   "À droite, le bloc violet a 3 rangées et 4 colonnes : (a + b) × (a + c).",
+   "Cela fait 12 cases, et le signe rouge dit que 7 et 12 diffèrent."
+  ],
+  "a_voir": "Le bloc de droite a plus de cases que celui de gauche."
+ },
+ {
+  "code": "42-127",
+  "a_dire": "Pour les ensembles les deux distributivités sont vraies ; pour les nombres une seule : l’algèbre des ensembles est plus symétrique.",
+  "legende_titre": "Deux lois pour les ensembles, une pour les nombres",
+  "lecture": [
+   "La colonne de gauche est celle des nombres : × sur + est vrai, + sur × est faux (case rouge).",
+   "La colonne de droite est celle des ensembles : ∩ sur ∪ et ∪ sur ∩ sont vrais.",
+   "En bas, on compte les lois vraies : 1 et 2."
+  ],
+  "a_voir": "Les ensembles ont deux cases vertes, les nombres une seule."
+ },
+ {
+  "code": "42-128",
+  "a_dire": "L’ensemble universel est l’ensemble fixe où l’on travaille ; le reste de A dépend de lui.",
+  "legende_titre": "Le reste change avec l’ensemble où l’on cherche",
+  "lecture": [
+   "À gauche, S est la classe : le reste de A est une case verte, Max.",
+   "À droite, S est le lycée : le reste de A est un grand nombre de points verts.",
+   "Le disque bleu A est le même dans les deux cas."
+  ],
+  "a_voir": "Le même A laisse un reste différent selon S."
+ }
+]

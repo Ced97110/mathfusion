@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,6,58,'opération','sujet','m',ha='left')
+box(ax,42,52,12,12,'sujet',label=r'$M$'); text(ax,57,58,r'$\times$','sujet','m')
+box(ax,60,52,12,12,'sujet',label=r'$M$'); arrow(ax,(73,58),(78,58),'varie')
+box(ax,78,52,8,12,'sujet',label=r'$M$')
+text(ax,6,34,'associative','sujet','m',ha='left')
+text(ax,60,34,r'$(2+3)+4=2+(3+4)$','sujet','m')
+text(ax,6,14,'neutre','sujet','m',ha='left')
+text(ax,60,14,r'$3+0=3$','sujet','m')
+line(ax,[(4,44),(84,44)],'fixe'); line(ax,[(4,24),(84,24)],'fixe')
+text(ax,60,5,r'exemple : entiers et addition','fixe','s')
+save(fig,'42-298')

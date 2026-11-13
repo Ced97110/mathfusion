@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 3, 82, 56, 'sujet', fill=False, dash=True)
+text(ax, 44, 53, 'groupe linéaire', 'sujet', 'l'); text(ax, 44, 47, 'matrices inversibles', 'sujet', 's')
+box(ax, 12, 18, 22, 20, 'sujet')
+for (x, y, s) in [(19, 33, '3'), (27, 33, '1'), (19, 23, '5'), (27, 23, '2')]: text(ax, x, y, s, 'sujet', 'l')
+text(ax, 23, 12, r'$A$', 'sujet', 'm')
+arrow(ax, (35, 28), (52, 28), 'varie'); text(ax, 43.5, 32, 'inverse', 'varie', 's')
+box(ax, 53, 22, 24, 12, 'resultat', label=r'$A^{-1}$')
+text(ax, 65, 17, 'aussi inversible', 'resultat', 's')
+save(fig, '42-310')

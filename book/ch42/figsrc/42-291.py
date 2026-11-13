@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,5,34,20,22,'fixe',dash=True); text(ax,15,45,r'$\varnothing$','fixe','l')
+text(ax,15,29,'départ vide','fixe','s')
+box(ax,63,30,20,28,'sujet')
+for i in range(3): disc(ax,73,36+i*8,1.6,'sujet')
+text(ax,73,25,'arrivée','sujet','s')
+arrow(ax,(27,45),(61,45),'resultat',lw=1.4)
+text(ax,44,50,'application vide','resultat','m',weight='bold')
+text(ax,44,40,'aucun couple','fixe','s')
+box(ax,14,3,60,12,'resultat',label='son graphe est l’ensemble vide',size='s')
+save(fig,'42-291')

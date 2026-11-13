@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,8,38,76,13,'sujet'); box(ax,8,6,76,13,'autre')
+text(ax,4,44.5,'A','sujet','m',weight='bold'); text(ax,4,12.5,'B','autre','m',weight='bold')
+for x,l in [(26,'4'),(47,'7'),(68,'9')]: disc(ax,x,44.5,4.5,'limite' if l=='7' else 'sujet',label=l,size='l')
+for x,l in [(14,'2'),(26,'4'),(37,'5'),(56,'8'),(68,'9')]: disc(ax,x,12.5,4.5,'resultat' if l in '49' else 'autre',label=l,size='l')
+disc(ax,47,12.5,3.4,'limite',fill=False)
+for x in (26,68): arrow(ax,(x,37.5),(x,19.5),'resultat')
+arrow(ax,(47,37.5),(47,29),'limite'); line(ax,[(43,27),(51,27)],'limite',lw=1.8)
+text(ax,47,23,'7 absent de B','limite','s')
+text(ax,44,58,'A ⊄ B','limite','xl',weight='bold')
+text(ax,44,62.5,'un seul manque suffit','limite','s')
+save(fig,'42-059')

@@ -1,0 +1,192 @@
+[
+ {
+  "code": "42-257",
+  "a_dire": "On trouve l'inverse de T_A en résolvant le système : on multiplie la première équation par 2, on soustrait la seconde, puis on remplace.",
+  "legende_titre": "Résoudre le système pour trouver l'inverse",
+  "lecture": [
+   "Les deux cadres bleus du haut sont les équations 3x + y = u et 5x + 2y = v.",
+   "Le cadre orange est la première équation multipliée par 2.",
+   "Le signe moins orange relie ce cadre à la seconde équation : on les soustrait ligne par ligne.",
+   "Les cadres verts donnent x puis y, écrits avec u et v."
+  ],
+  "a_voir": "Les inconnues x et y s'écrivent avec u et v : la méthode s'arrête."
+ },
+ {
+  "code": "42-258",
+  "a_dire": "Le signe A^(-1) désigne le tableau de l'application qui défait T_A.",
+  "legende_titre": "Que désigne le signe en haut à droite de A ?",
+  "lecture": [
+   "La flèche violette va de (1, 1) à (4, 7) : c'est T_A, définie par le tableau violet.",
+   "La flèche bleue revient de (4, 7) à (1, 1) : c'est l'application inverse.",
+   "Le tableau bleu, de lignes 2 et −1 puis −5 et 3, est celui de l'inverse, noté A^(-1)."
+  ],
+  "a_voir": "Le tableau bleu ramène le point d'arrivée au point de départ."
+ },
+ {
+  "code": "42-259",
+  "a_dire": "L'inverse existe parce que chaque point d'arrivée reçoit une flèche et une seule.",
+  "legende_titre": "Pourquoi T_A a un inverse",
+  "lecture": [
+   "Les cercles bleus sont les points de départ, les cercles verts les points d'arrivée.",
+   "Chaque cercle vert reçoit exactement une flèche orange.",
+   "Le cadre de gauche dit « au moins une » : surjective. Celui de droite dit « au plus une » : injective.",
+   "Les deux ensemble donnent le cadre bleu du bas : l'inverse existe."
+  ],
+  "a_voir": "Chaque point d'arrivée est atteint une fois et une seule."
+ },
+ {
+  "code": "42-260",
+  "a_dire": "Avec B, tout point arrive sur la droite horizontale : (0, 0) et (0, 5) ont la même image et (0, 1) n'est atteint par personne.",
+  "legende_titre": "Un tableau avec des zéros sans inverse",
+  "lecture": [
+   "À gauche, les deux points bleus (0, 0) et (0, 5) sont les départs.",
+   "À droite, la ligne verte épaisse est l'ensemble des points atteints.",
+   "Les deux flèches orange arrivent au même point (0, 0) : pas injective.",
+   "Le point rouge (0, 1) n'est sur aucune flèche : pas surjective."
+  ],
+  "a_voir": "Deux départs pour une arrivée, et une arrivée sans départ."
+ },
+ {
+  "code": "42-261",
+  "a_dire": "Une relation entre S et T est un ensemble de liens entre éléments de S et de T, sans condition sur le nombre de liens.",
+  "legende_titre": "Le mot pour des liens qui ne sont pas des applications",
+  "lecture": [
+   "Les cercles bleus sont les éléments de S : 2, 3 et 7.",
+   "Les cercles violets sont les éléments de T : 2, 3 et 7.",
+   "Chaque flèche relie un nombre à un nombre plus grand ou égal.",
+   "Les trois flèches orange partent toutes de 2 : il a plusieurs liens."
+  ],
+  "a_voir": "Un élément de départ peut avoir plusieurs liens."
+ },
+ {
+  "code": "42-262",
+  "a_dire": "Toute application est une relation, mais une relation n'est pas toujours une application.",
+  "legende_titre": "Application et relation : un seul sens",
+  "lecture": [
+   "La grille de gauche a trois cases bleues, une par colonne : c'est une application.",
+   "La grille de droite a trois cases violettes, deux dans la colonne 1 et aucune dans la colonne 2.",
+   "Les cadres verts disent que les deux grilles sont des relations.",
+   "Le cadre rouge dit que celle de droite n'est pas une application."
+  ],
+  "a_voir": "Le dessin de gauche est aussi une relation, pas celui de droite à l'envers."
+ },
+ {
+  "code": "42-263",
+  "a_dire": "Les couples (x, y) avec x ≤ y forment une relation, mais la colonne de 2 a plusieurs points : ce n'est pas une application.",
+  "legende_titre": "La relation x ≤ y dans une grille",
+  "lecture": [
+   "Les points bleus sont les couples où x est plus petit que y ou égal à y.",
+   "Le cadre orange en pointillés entoure la colonne de 2.",
+   "Les deux gros points orange sont (2, 3) et (2, 7).",
+   "Les petits cercles gris sont les couples qui ne sont pas dans la relation."
+  ],
+  "a_voir": "La colonne de 2 contient plusieurs points."
+ },
+ {
+  "code": "42-264",
+  "a_dire": "Le produit de r ensembles est l'ensemble des listes ordonnées de r éléments, le k-ième pris dans le k-ième ensemble.",
+  "legende_titre": "Le produit de quatre ensembles",
+  "lecture": [
+   "Les cadres bleus sont les ensembles S1, S2, S3 et S4, reliés par le signe ×.",
+   "Chaque flèche orange part d'un ensemble vers l'élément choisi dedans.",
+   "Les cadres verts, dans l'ordre, forment la liste (2, 5, 7, 1).",
+   "L'accolade du haut désigne l'ensemble produit, celle du bas un 4-uplet."
+  ],
+  "a_voir": "Chaque place de la liste vient de l'ensemble qui est au-dessus."
+ },
+ {
+  "code": "42-265",
+  "a_dire": "Une opération binaire prend deux éléments de S et rend un élément de S.",
+  "legende_titre": "Ce qui distingue l'opération binaire",
+  "lecture": [
+   "La première ligne : le couple (3, 4) donne 7, un entier. C'est une opération binaire.",
+   "La deuxième ligne : l'opposé ne prend qu'un entier, en rouge.",
+   "La troisième ligne : « plus petit » prend deux entiers mais rend oui, pas un entier, en rouge."
+  ],
+  "a_voir": "Deux entrées et une sortie du même genre que les entrées."
+ },
+ {
+  "code": "42-266",
+  "a_dire": "L'addition sur Z et l'union sur P(S) prennent deux éléments d'un ensemble et rendent un élément du même ensemble.",
+  "legende_titre": "Deux opérations binaires très différentes",
+  "lecture": [
+   "À gauche, sur la droite, la flèche bleue est a et la flèche violette est b.",
+   "Le point vert à leur bout est a + b, sur la même droite.",
+   "À droite, les cercles bleu et violet sont les parties A et B.",
+   "La zone verte est leur union : une partie du même cadre S."
+  ],
+  "a_voir": "Dans chaque cas, le résultat reste dans l'ensemble de départ."
+ },
+ {
+  "code": "42-267",
+  "a_dire": "Un ensemble à n éléments distincts a 2^n sous-ensembles ; si deux noms désignent le même objet, la formule ne s'applique pas à la liste.",
+  "legende_titre": "Quand la formule 2^n ne marche pas",
+  "lecture": [
+   "En haut, la liste a, a, b a deux noms égaux en rouge : il n'y a que 2 objets.",
+   "Le cadre rouge dit que compter 8 sacs est faux.",
+   "En bas, les cadres bleus a et b sont les 2 objets distincts.",
+   "Les quatre cadres verts sont les 4 sacs possibles : 2^2 = 4."
+  ],
+  "a_voir": "Des noms répétés ne font pas des objets en plus."
+ },
+ {
+  "code": "42-268",
+  "a_dire": "Un sac est une application de S vers {oui, non} : chaque objet reçoit une réponse, d'où 2 × 2 × 2 = 8 sacs.",
+  "legende_titre": "Compter les sacs objet par objet",
+  "lecture": [
+   "Les cadres bleus a, b, c sont les trois objets de S.",
+   "Chaque flèche orange donne à un objet sa réponse : oui en vert ou non en rouge.",
+   "Les trois flèches ensemble décrivent un sac.",
+   "Le cadre vert du bas multiplie les 2 choix de chacun des 3 objets."
+  ],
+  "a_voir": "Un objet, une flèche, deux réponses possibles."
+ },
+ {
+  "code": "42-269",
+  "a_dire": "Pour 10 objets il y a 1 024 sacs, pour 20 objets 1 048 576 : une règle donne ce nombre sans écrire la liste.",
+  "legende_titre": "Deux valeurs de la règle",
+  "lecture": [
+   "Les cadres bleus donnent le nombre d'objets : 10 puis 20.",
+   "Chaque flèche orange porte la règle : 2 puissance 10, puis 2 puissance 20.",
+   "Les cadres verts donnent le nombre de sacs.",
+   "Le cadre rouge dit que la liste est impossible, le cadre vert que la règle suffit."
+  ],
+  "a_voir": "Un seul calcul remplace une liste trop longue."
+ },
+ {
+  "code": "42-270",
+  "a_dire": "Les sacs rangés par taille donnent 1 + 3 + 3 + 1 = 8, et la formule du binôme donne (1 + 1)^3 = 2^3.",
+  "legende_titre": "Compter les sacs par taille",
+  "lecture": [
+   "Chaque carré bleu est un sac.",
+   "Les quatre colonnes rangent les sacs par nombre d'objets : 0, 1, 2 ou 3.",
+   "Au-dessus de chaque colonne, le coefficient binomial donne son nombre de carrés.",
+   "L'accolade verte additionne les colonnes ; la ligne du bas donne la même valeur par le binôme."
+  ],
+  "a_voir": "La somme des colonnes est 8, comme (1 + 1)^3."
+ },
+ {
+  "code": "42-271",
+  "a_dire": "Deux raisonnements différents qui donnent le même nombre sont un signe que la notion est juste.",
+  "legende_titre": "Deux chemins, un même nombre",
+  "lecture": [
+   "Le cadre gris du haut pose la question pour 3 objets.",
+   "Le cadre bleu compte par les choix : 2 × 2 × 2.",
+   "Le cadre violet compte par la taille : 1 + 3 + 3 + 1.",
+   "Les deux flèches vertes arrivent au même cadre vert : 8 sacs."
+  ],
+  "a_voir": "Les deux chemins arrivent au même nombre."
+ },
+ {
+  "code": "42-272",
+  "a_dire": "Sur un cas chiffré, on vérifie dans l'ordre : application, injectivité, surjectivité, composée, image réciproque.",
+  "legende_titre": "Toutes les questions sur un cas chiffré",
+  "lecture": [
+   "Les cercles bleus 1, 2, 3 vont par les flèches bleues vers les cercles violets a et b : c'est f.",
+   "Les flèches violettes vont de a et b vers x, y, z : c'est g.",
+   "Les cadres du milieu disent que f est surjective mais pas injective, et que g est injective mais pas surjective (y reste sans flèche, en rouge).",
+   "Les cadres du bas donnent la composée et l'image réciproque de z."
+  ],
+  "a_voir": "Chaque question reçoit sa réponse sur les trois ensembles."
+ }
+]

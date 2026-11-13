@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 2, 70, 'liste : a, a, b', 'limite', 's', ha='left')
+for x, l, r in ((6, 'a', 'limite'), (18, 'a', 'limite'), (30, 'b', 'fixe')): box(ax, x, 54, 10, 9, r, label=l)
+brace(ax, 6, 28, 54, 'limite', label='même objet')
+box(ax, 48, 54, 38, 9, 'limite', label='8 sacs : faux', size='s')
+text(ax, 2, 40, 'ensemble : 2 objets', 'sujet', 's', ha='left')
+for x, l in ((2, 'a'), (13, 'b')): box(ax, x, 24, 9, 9, 'sujet', label=l)
+arrow(ax, (23, 28.5), (28, 28.5), 'varie')
+for i, l in enumerate((r'$\emptyset$', '{a}', '{b}', '{a, b}')): box(ax, 28 + 15 * i, 24, 11.5, 9, 'resultat', label=l, size='s')
+text(ax, 56, 16, r'$2^2 = 4$ sacs', 'resultat', 'm')
+save(fig, '42-267')

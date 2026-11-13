@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+O=(14,12);u=14
+arrow(ax,O,(78,12),'fixe'); arrow(ax,O,(14,56),'fixe')
+line(ax,[(14,12),(70,12)],'resultat',lw=2.2)
+P=(O[0]+3*u,O[1]+2*u);Q=(O[0]+3*u,12)
+line(ax,[P,Q],'fixe',dash=True); line(ax,[P,(14,P[1])],'fixe',dash=True)
+disc(ax,*P,2.2,'sujet'); disc(ax,*Q,2.2,'resultat')
+text(ax,P[0]+4,P[1]+4,'3 + 2i','sujet','m',ha='left')
+text(ax,Q[0]+4,Q[1]+5,'3 + 0i','resultat','m',ha='left')
+text(ax,Q[0],6.5,'a = 3','fixe','s')
+text(ax,8,P[1],'b = 2','fixe','s')
+text(ax,28,6.5,'réels : b = 0','resultat','s')
+text(ax,52,61,'ℂ : tous les a + bi','sujet','l')
+save(fig,'42-053')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,'on fait','fixe','m',weight='bold')
+box(ax,6,40,34,10,'fixe',label='chaussettes'); box(ax,48,40,34,10,'fixe',label='chaussures')
+arrow(ax,(40.8,45),(47.2,45),'varie')
+text(ax,23,35,r'$\alpha$ : en premier','fixe','s'); text(ax,65,35,r'$\beta$ : en second','fixe','s')
+text(ax,44,24,'on défait','resultat','m',weight='bold')
+box(ax,6,5,34,10,'resultat',label='chaussettes'); box(ax,48,5,34,10,'resultat',label='chaussures')
+arrow(ax,(47.2,10),(40.8,10),'varie')
+text(ax,23,19,'en second','resultat','s'); text(ax,65,19,'en premier','resultat','s')
+save(fig,'42-245')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,11,50,14,9,'sujet',label='$p$')
+line(ax,[(10,47.5),(26,47.5)],'encre',lw=1.2)
+box(ax,11,36,14,9,'autre',label='$q$')
+text(ax,32,54.5,'haut : un entier de ℤ','sujet','s',ha='left')
+text(ax,32,40.5,'bas : un entier de ℤ','autre','s',ha='left')
+text(ax,32,35,'bas jamais égal à 0','limite','s',ha='left')
+box(ax,4,3,80,25,'resultat')
+text(ax,9,23,'ℚ','resultat','xl',ha='left',weight='bold')
+for x,l in zip([16,38,60],['3/4','7/2','6/1']): box(ax,x,7,16,10,'sujet',label=l,size='l')
+save(fig,'42-051')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,r'application de $\varnothing$ vers $T$','encre','m')
+box(ax,5,26,22,22,'fixe',dash=True); text(ax,16,52-8-14,r'$\varnothing$','fixe','m')
+text(ax,16,37,'aucun\nélément','fixe','s')
+box(ax,61,22,22,26,'sujet')
+for i in range(3): disc(ax,72,28+i*8,1.6,'sujet')
+text(ax,72,17,r'$T$','sujet','m')
+text(ax,44,40,'aucun couple','limite','s')
+line(ax,[(31,36),(57,36)],'limite',dash=True)
+box(ax,12,3,64,9,'resultat',label='1 seule application : le graphe vide',size='s')
+save(fig,'42-290')
