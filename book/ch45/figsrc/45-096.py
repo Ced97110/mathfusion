@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 58, 'représentation régulière', 'sujet', 'm'); text(ax, 44, 53, 'à gauche', 'sujet', 'm')
+box(ax, 2, 32, 24, 14, 'fixe', label=r'$G$', size='l'); box(ax, 52, 32, 34, 14, 'sujet', label='permutations')
+arrow(ax, (27, 39), (51, 39), 'varie', lw=1.4)
+text(ax, 39, 43.5, r'$a\mapsto a_L$', 'varie', 'm'); text(ax, 39, 34.5, 'isomorphisme', 'varie', 's')
+text(ax, 44, 22, r'$a_L(x)\ =$', 'sujet', 'l', ha='right'); text(ax, 46, 22, r'$a$', 'varie', 'l', ha='left')
+text(ax, 50.5, 22, r'$x$', 'fixe', 'l', ha='left')
+arrow(ax, (47.5, 11), (47.5, 18), 'varie'); text(ax, 47.5, 7, 'à gauche de x', 'varie', 's')
+save(fig, '45-096')

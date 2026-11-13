@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 36, r'$\prod$', 'sujet', 30)
+text(ax, 44, 55, r'$n$', 'varie', 'l'); text(ax, 44, 17, r'$i=1$', 'varie', 'l')
+text(ax, 62, 36, r'$a_{i}$', 'autre', 'xl')
+arrow(ax, (30, 55), (40, 55), 'varie'); text(ax, 2, 55, 'on finit au numéro', 'varie', 's', ha='left')
+arrow(ax, (30, 17), (36, 17), 'varie'); text(ax, 2, 17, 'on part du numéro', 'varie', 's', ha='left')
+arrow(ax, (72, 36), (78, 36), 'autre'); text(ax, 86, 44, 'élément', 'autre', 's', ha='right'); text(ax, 86, 40, 'numéro $i$', 'autre', 's', ha='right')
+text(ax, 44, 5, r'$=a_{1}\,a_{2}\cdots a_{n}$', 'resultat', 'm')
+save(fig, '45-106')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+def dots(x0, y, n, role):
+    for i in range(n): disc(ax, x0 + i * 3.4, y, 1.3, role)
+text(ax, 44, 74, 'tailles différentes : exclu', 'limite', 'm', weight='bold')
+text(ax, 4, 66, r'$\mathbb{Z}/8$', 'sujet', 'm', ha='left'); dots(18, 66, 8, 'sujet')
+text(ax, 4, 58, r'$\mathbb{Z}/12$', 'autre', 'm', ha='left'); dots(18, 58, 12, 'autre')
+text(ax, 72, 62, r'$8\neq12$', 'limite', 'l')
+line(ax, [(2, 50), (86, 50)], 'fixe', dash=True)
+text(ax, 44, 44, 'même taille : on ne sait rien', 'varie', 'm', weight='bold')
+text(ax, 4, 36, r'$\mathbb{Z}/4$', 'sujet', 'm', ha='left'); dots(18, 36, 4, 'sujet')
+text(ax, 4, 28, 'rectangle', 'autre', 'm', ha='left'); dots(18, 28, 4, 'autre')
+text(ax, 72, 32, r'$4=4$', 'fixe', 'l')
+box(ax, 4, 6, 80, 11, 'fixe', label='il faut un autre test', size='m')
+save(fig, '45-226')

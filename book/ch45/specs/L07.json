@@ -1,0 +1,188 @@
+[
+ {
+  "code": "45-097",
+  "a_dire": "Une représentation est un isomorphisme dont le groupe d'arrivée est un groupe bien connu, où l'on calcule facilement.",
+  "legende_titre": "Quand un isomorphisme devient une représentation",
+  "lecture": [
+   "En haut, en gris, un isomorphisme quelconque relie deux groupes de même structure.",
+   "En bas, la case bleue est le groupe étudié : l'horloge à 4 h.",
+   "La case violette est le groupe d'arrivée : des permutations, que l'on sait bien calculer.",
+   "La flèche orange est l'isomorphisme qui les relie."
+  ],
+  "a_voir": "Ce qui distingue la représentation : le groupe d'arrivée est un groupe bien connu."
+ },
+ {
+  "code": "45-098",
+  "a_dire": "Cayley a exercé un autre métier : il a été avocat 14 ans, a écrit plus de 300 articles de mathématiques, puis est devenu professeur en 1863.",
+  "legende_titre": "Un nom de théorème, un homme et son parcours",
+  "lecture": [
+   "Le point de gauche est 1821 : sa naissance en Angleterre.",
+   "Le point de droite est 1863 : il devient professeur à Cambridge.",
+   "La case orange est la période où il est avocat, pendant 14 ans.",
+   "Le texte orange dit ce qu'il écrit pendant cette période."
+  ],
+  "a_voir": "Le nom du théorème est celui d'un homme dont on connaît le parcours."
+ },
+ {
+  "code": "45-099",
+  "a_dire": "Pour quatre éléments, il y a cinq façons de placer les parenthèses.",
+  "legende_titre": "Cinq placements pour quatre éléments",
+  "lecture": [
+   "Chaque schéma bleu est un placement : les quatre points sont les éléments a, b, c, d.",
+   "Les traits qui se rejoignent montrent quels éléments sont combinés ensemble.",
+   "Sous chaque schéma, l'écriture avec ses parenthèses.",
+   "Il y a cinq schémas, tous différents."
+  ],
+  "a_voir": "Compte les cinq schémas : ce sont cinq placements différents."
+ },
+ {
+  "code": "45-100",
+  "a_dire": "Les cinq écritures avec parenthèses aboutissent toutes au même résultat, écrit abcd sans parenthèses.",
+  "legende_titre": "Cinq écritures, une seule arrivée",
+  "lecture": [
+   "Les cinq cases bleues du haut sont les cinq placements des parenthèses.",
+   "De chaque case part une flèche vers la case verte du bas.",
+   "La case verte est le résultat commun, écrit sans parenthèses."
+  ],
+  "a_voir": "Les cinq flèches arrivent dans la même case verte."
+ },
+ {
+  "code": "45-101",
+  "a_dire": "Quel que soit le placement des parenthèses, la somme de 2, 3, 4, 5 donne le même résultat, 14.",
+  "legende_titre": "Deux groupements, un même résultat",
+  "lecture": [
+   "La colonne bleue calcule (2 + 3) + (4 + 5) : on obtient 5 + 9.",
+   "La colonne violette calcule ((2 + 3) + 4) + 5 : on obtient (5 + 4) + 5, puis 9 + 5.",
+   "Les deux colonnes arrivent dans la case verte : 14."
+  ],
+  "a_voir": "Deux écritures différentes, un seul résultat : 14."
+ },
+ {
+  "code": "45-102",
+  "a_dire": "Les points et les numéros permettent d'écrire une liste de n éléments en quelques signes.",
+  "legende_titre": "Une liste de n éléments en quelques signes",
+  "lecture": [
+   "Les cases bleues sont les éléments a avec leur numéro en bas à droite.",
+   "La case grise avec les points remplace tous les éléments du milieu.",
+   "La flèche orange montre le numéro de la dernière place : n.",
+   "L'accolade dit qu'il y a n éléments en tout."
+  ],
+  "a_voir": "Le numéro donne la place de l'élément ; les points remplacent le reste."
+ },
+ {
+  "code": "45-103",
+  "a_dire": "La preuve part du théorème vrai pour moins de n éléments et arrive au cas de n éléments grâce au lemme.",
+  "legende_titre": "Du départ à l'arrivée, par le lemme",
+  "lecture": [
+   "La case verte du haut est le point de départ : vrai pour moins de n éléments.",
+   "La case orange est l'étape qui porte la preuve : le lemme recolle u et v.",
+   "La case verte du bas est l'arrivée : vrai pour n éléments."
+  ],
+  "a_voir": "Départ, étape décisive en orange, arrivée."
+ },
+ {
+  "code": "45-104",
+  "a_dire": "Le produit de référence est celui où les parenthèses s'accumulent à gauche ; on compare tous les autres à lui.",
+  "legende_titre": "Un seul placement pour tout comparer",
+  "lecture": [
+   "Le grand schéma bleu en haut est le produit de référence : les parenthèses sont à gauche.",
+   "Les quatre petits schémas gris sont les autres placements.",
+   "Les flèches vertes montrent que chacun est égal à la référence."
+  ],
+  "a_voir": "Un placement sert de référence ; les autres lui sont égaux."
+ },
+ {
+  "code": "45-105",
+  "a_dire": "Le produit de référence de n éléments se calcule en combinant, à gauche, celui des n moins 1 premiers avec le dernier.",
+  "legende_titre": "Construire pas à pas le produit de référence",
+  "lecture": [
+   "Les trois cases bleues 2, 3, 4 sont les premiers éléments ; l'accolade donne leur référence : 9.",
+   "La case orange 5 est le dernier élément.",
+   "La flèche grise mène à la case verte : 9 + 5 = 14."
+  ],
+  "a_voir": "On combine le résultat des premiers avec le dernier, à gauche."
+ },
+ {
+  "code": "45-106",
+  "a_dire": "Le signe grand pi écrit le produit des éléments de numéro 1 à numéro n.",
+  "legende_titre": "Le signe qui répète un produit",
+  "lecture": [
+   "Le grand signe bleu est le produit répété.",
+   "Le n orange en haut est le numéro où l'on finit.",
+   "Le i = 1 orange en bas est le numéro où l'on part.",
+   "Le a avec i, en violet, est l'élément de numéro i.",
+   "En vert, la même écriture développée : a1 a2 jusqu'à an."
+  ],
+  "a_voir": "En haut, le numéro d'arrivée ; en bas, celui de départ."
+ },
+ {
+  "code": "45-107",
+  "a_dire": "Pour quatre éléments, le produit de référence se construit en trois combinaisons successives.",
+  "legende_titre": "Trois combinaisons pour quatre éléments",
+  "lecture": [
+   "Les quatre cases bleues sont les éléments a1 à a4.",
+   "La première accolade orange réunit a1 et a2.",
+   "La deuxième réunit a1, a2 et a3.",
+   "La troisième réunit les quatre."
+  ],
+  "a_voir": "Chaque accolade plus grande ajoute un élément à droite."
+ },
+ {
+  "code": "45-108",
+  "a_dire": "Coller deux produits de référence donne un produit de référence quand l'opération est associative ; ce n'est pas vrai pour la soustraction.",
+  "legende_titre": "Ce qui marche pour l'addition casse pour la soustraction",
+  "lecture": [
+   "La colonne verte, l'addition : les deux écritures donnent 10.",
+   "La colonne rouge, la soustraction : on obtient 7 et 3.",
+   "Le signe égal en vert et le signe différent en rouge résument chaque cas."
+  ],
+  "a_voir": "Avec l'addition les deux sont égaux ; avec la soustraction non."
+ },
+ {
+  "code": "45-109",
+  "a_dire": "Pour passer d'un bloc de deux éléments à une écriture groupée à gauche, on déplace une parenthèse avec la règle à trois termes.",
+  "legende_titre": "Déplacer une parenthèse d'un cran",
+  "lecture": [
+   "En haut : un bloc bleu, 1 et 2, et un second bloc orange, 3 et 4.",
+   "La flèche orange est la règle à trois termes.",
+   "En bas : 3 est passé dans le groupe de gauche, 4 reste seul."
+  ],
+  "a_voir": "Le 3 passe à gauche après un seul changement de parenthèses."
+ },
+ {
+  "code": "45-110",
+  "a_dire": "Pour passer de r à r plus 1 éléments, on utilise la règle à trois termes une seule fois.",
+  "legende_titre": "Une seule règle par étape",
+  "lecture": [
+   "Les trois cases sont le bloc de gauche (bleu), les r premiers (violet) et le dernier (orange).",
+   "En haut, l'accolade violette groupe les r premiers avec le dernier.",
+   "En bas, l'accolade bleue groupe le bloc de gauche avec les r premiers.",
+   "La flèche orange dit : une seule fois."
+  ],
+  "a_voir": "Un seul changement de parenthèses suffit à chaque étape."
+ },
+ {
+  "code": "45-111",
+  "a_dire": "On coupe un produit de n éléments en deux blocs u et v, chacun égal à sa référence, puis le lemme les recolle.",
+  "legende_titre": "Couper en deux, puis recoller",
+  "lecture": [
+   "Les quatre cases grises sont les éléments du produit.",
+   "L'accolade bleue est le bloc u ; l'accolade violette est le bloc v : deux éléments chacun.",
+   "Chaque bloc est égal à sa référence.",
+   "Les flèches orange passent par le lemme et arrivent à la case verte : la référence des 4."
+  ],
+  "a_voir": "Chaque bloc a moins d'éléments que le tout ; le lemme les recolle."
+ },
+ {
+  "code": "45-112",
+  "a_dire": "On peut écrire le produit sans parenthèses, car leur place ne change pas le résultat ; il y a n moins 2 paires à enlever.",
+  "legende_titre": "Enlever les parenthèses",
+  "lecture": [
+   "En haut, en gris, l'écriture avec ses 2 paires de parenthèses pour 4 éléments.",
+   "La flèche orange est le geste : on enlève les parenthèses.",
+   "En vert, l'écriture sans parenthèses.",
+   "Pour n éléments, n moins 2 paires disparaissent."
+  ],
+  "a_voir": "Même produit, écrit sans aucune parenthèse."
+ }
+]

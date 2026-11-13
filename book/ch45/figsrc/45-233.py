@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(85)
+box(ax, 4, 66, 34, 14, 'sujet', label=r'$\mathbb{Z}/8$ : 8 éléments', size='s')
+box(ax, 50, 66, 34, 14, 'autre', label=r'$\mathbb{Z}/12$ : 12 éléments', size='s')
+text(ax, 44, 73, r'$\neq$', 'limite', 'l', weight='bold')
+arrow(ax, (21, 65), (21, 52), 'varie'); arrow(ax, (67, 65), (67, 52), 'varie')
+text(ax, 44, 59, 'restes inversibles', 'varie', 's')
+box(ax, 4, 38, 34, 13, 'sujet', label=r'$U(8)=\{1,3,5,7\}$', size='s')
+box(ax, 50, 38, 34, 13, 'autre', label=r'$U(12)=\{1,5,7,11\}$', size='s')
+text(ax, 44, 44.5, r'$\cong$', 'resultat', 'l', weight='bold')
+arrow(ax, (21, 37), (36, 26), 'resultat'); arrow(ax, (67, 37), (52, 26), 'resultat')
+box(ax, 14, 8, 60, 17, 'resultat', label=r'$\mathbb{Z}/2\times\mathbb{Z}/2$' + '\n4 éléments chacun', size='m')
+save(fig, '45-233')

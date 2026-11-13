@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,2,26,18,12,'fixe',label='7 × 8',size='m')
+box(ax,32,44,30,11,'sujet',label='mod 3 : 1 × 2 = 2',size='s')
+box(ax,32,8,30,11,'autre',label='mod 5 : 2 × 3 = 1',size='s')
+box(ax,68,26,18,12,'resultat',label='11',size='l')
+arrow(ax,(20,36),(32,48),'varie'); arrow(ax,(20,28),(32,15),'varie')
+arrow(ax,(62,48),(72,38),'varie'); arrow(ax,(62,15),(72,26),'varie')
+text(ax,77,43,'(2, 1)','resultat','s',ha='center')
+arrow(ax,(20,32),(68,32),'fixe',lw=0.8)
+text(ax,44,28,'56 = 3 × 15 + 11','fixe','s')
+text(ax,44,62,'deux petites horloges, même 11','resultat','s')
+save(fig,'45-255')

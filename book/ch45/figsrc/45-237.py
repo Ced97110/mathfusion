@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 75, r'pas pour revenir à $(0,0)$', 'encre', 'm', weight='bold')
+f = numberline(ax, 28, 80, 22, 0, 15, 1, every=3, arrow_right=False)
+text(ax, 2, 60, r'8 dans $\mathbb{Z}/12$', 'sujet', 's', ha='left'); text(ax, 2, 55, 'ordre 3', 'sujet', 's', ha='left')
+text(ax, 2, 42, r'56 dans $\mathbb{Z}/60$', 'autre', 's', ha='left'); text(ax, 2, 37, 'ordre 15', 'autre', 's', ha='left')
+for k in range(0, 16, 3): disc(ax, f(k), 58, 1.5, 'sujet')
+disc(ax, f(0), 40, 1.5, 'autre'); disc(ax, f(15), 40, 1.5, 'autre')
+line(ax, [(f(15), 26), (f(15), 62)], 'resultat', dash=True)
+text(ax, f(15) - 1, 68, 'retour ensemble : 15', 'resultat', 's', ha='right', weight='bold')
+text(ax, 44, 11, r'PPCM$(3,15)=15$, pas $3\times15=45$', 'limite', 's')
+save(fig, '45-237')

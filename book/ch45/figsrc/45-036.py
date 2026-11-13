@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(55)
+f=numberline(ax,8,70,25,-2,3,1)
+ax.add_patch(Rectangle((f(0),22.5),f(3)+5-f(0),5,fc=FILL['sujet'],ec='none',zorder=1))
+ax.add_patch(Rectangle((f(-2),22.5),f(0)-f(-2),5,fc=FILL['limite'],ec='none',zorder=1))
+disc(ax,f(0),25,1.6,'limite',fill=False,lw=1.1)
+disc(ax,f(0.5),25,1.2,'sujet'); disc(ax,f(3),25,1.2,'sujet')
+text(ax,f(0.5),31,'0,5','sujet','s')
+text(ax,f(-1),41,'négatifs : exclus','limite','s')
+text(ax,f(0),48,r'$0$ exclu','limite','s')
+arrow(ax,(f(0),45),(f(0),28),'limite')
+text(ax,f(2.3),41,r'$\mathbb{R}^{+}$ : plus grand que 0','sujet','m',weight='bold')
+save(fig,'45-036')

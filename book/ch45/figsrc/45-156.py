@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 14, 36, 44, 'sujet'); box(ax, 48, 14, 36, 44, 'autre')
+text(ax, 22, 52, 'interrupteur', 'sujet', 'm'); text(ax, 66, 52, 'cadran', 'autre', 'm')
+text(ax, 22, 36, r'$1+1$ = 2', 'sujet', 'm'); text(ax, 22, 28, 'reste 0', 'sujet', 'm')
+text(ax, 66, 36, r'$2+2$ = 4', 'autre', 'm'); text(ax, 66, 28, 'reste 1', 'autre', 'm')
+text(ax, 22, 20, 'modulo 2', 'sujet', 's'); text(ax, 66, 20, 'modulo 3', 'autre', 's')
+line(ax, [(41.5, 33), (46.5, 39)], 'limite', lw=1.2); line(ax, [(41.5, 39), (46.5, 33)], 'limite', lw=1.2)
+text(ax, 44, 6, 'les cases ne se parlent pas', 'limite', 's')
+save(fig, '45-156')

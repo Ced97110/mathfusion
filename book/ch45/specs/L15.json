@@ -1,0 +1,185 @@
+[
+ {
+  "code": "45-225",
+  "a_dire": "Calculer r₁⁹ en coupant, puis en utilisant r₁⁴ = r₀, jusqu'à un exposant plus petit que 4.",
+  "legende_titre": "Quatre lignes du calcul de r₁⁹",
+  "lecture": [
+   "Chaque ligne bleue est une étape du calcul ; la première coupe r₁⁹ en r₁⁸ fois r₁.",
+   "Le texte orange à droite dit la règle utilisée à cette étape.",
+   "La dernière ligne bleue est r₁.",
+   "La boîte verte dit pourquoi on s'arrête : l'exposant 1 est plus petit que 4."
+  ],
+  "a_voir": "Il faut voir que chaque ligne vient de la précédente par une règle, jusqu'à r₁."
+ },
+ {
+  "code": "45-226",
+  "a_dire": "Avoir le même nombre d'éléments exclut parfois l'isomorphie, mais ne la prouve jamais.",
+  "legende_titre": "Compter les éléments : exclure, pas conclure",
+  "lecture": [
+   "En haut, les ronds bleus (8) et violets (12) ne sont pas en même nombre : c'est rouge, 8 ≠ 12.",
+   "En bas, les deux groupes ont 4 ronds : même nombre.",
+   "Dans ce cas la boîte grise dit qu'il faut un autre test."
+  ],
+  "a_voir": "Il faut voir que des nombres différents excluent, et que des nombres égaux ne décident rien."
+ },
+ {
+  "code": "45-227",
+  "a_dire": "Deux groupes à 4 éléments peuvent ne pas être isomorphes : la taille seule ne suffit pas.",
+  "legende_titre": "Deux groupes de même taille",
+  "lecture": [
+   "Le cadre bleu montre l'horloge à quatre heures : 0, 1, 2, 3, et 1 + 1 = 2, pas 0.",
+   "Le cadre violet montre le rectangle : chaque symétrie appliquée deux fois donne e.",
+   "La boîte rouge dit que même taille ne veut pas dire isomorphes."
+  ],
+  "a_voir": "Il faut voir que les deux groupes ont 4 éléments mais se comportent différemment."
+ },
+ {
+  "code": "45-228",
+  "a_dire": "Pour distinguer deux groupes, on cherche une propriété vraie dans l'un et fausse dans l'autre.",
+  "legende_titre": "Une propriété qui sépare deux groupes",
+  "lecture": [
+   "Le cadre violet liste h², v², d² : chacun égale e, c'est vrai (vert).",
+   "Le cadre bleu montre 1 + 1 = 2, différent de 0 : c'est faux (rouge).",
+   "La boîte grise dit qu'un isomorphisme conserverait la propriété, donc il n'existe pas."
+  ],
+  "a_voir": "Il faut voir la même propriété vraie d'un côté et fausse de l'autre."
+ },
+ {
+  "code": "45-229",
+  "a_dire": "La preuve part de l'hypothèse d'un isomorphisme η, passe par η(1)² = e, et arrive à une contradiction.",
+  "legende_titre": "Une preuve en quatre étapes",
+  "lecture": [
+   "La boîte bleue est le départ : on suppose que η existe.",
+   "La boîte grise calcule η(2) = η(1)².",
+   "La boîte orange, au contour épais, est l'étape clé : η(1)² = e.",
+   "La boîte rouge est l'arrivée : η(2) et η(0) sont égaux alors que 2 et 0 sont différents."
+  ],
+  "a_voir": "Il faut voir quelle étape porte le poids : η(1)² = e."
+ },
+ {
+  "code": "45-230",
+  "a_dire": "Le groupe du rectangle correspond à ℤ/2 × ℤ/2 : e, h, v, d vont sur (0,0), (1,0), (0,1), (1,1).",
+  "legende_titre": "Rectangle et couples de deux positions",
+  "lecture": [
+   "Les boîtes bleues sont les quatre symétries e, h, v, d.",
+   "Les boîtes violettes sont les couples (0, 0), (1, 0), (0, 1), (1, 1).",
+   "Les flèches orange relient chaque symétrie à son couple.",
+   "Les boîtes vertes montrent un seul produit vérifié : h puis v donne d, et (1, 0) + (0, 1) = (1, 1)."
+  ],
+  "a_voir": "Il faut voir une correspondance, dont un seul produit est vérifié."
+ },
+ {
+  "code": "45-231",
+  "a_dire": "S₃ et ℤ/6 ont six éléments, mais dans S₃ l'ordre change le résultat, pas dans ℤ/6.",
+  "legende_titre": "Comparer l'ordre des opérations",
+  "lecture": [
+   "À gauche (bleu), échange puis décalage donne échange 1 et 3, et décalage puis échange donne échange 2 et 3 : c'est différent.",
+   "À droite (violet), 2 + 3 et 3 + 2 donnent 5.",
+   "Le signe rouge ≠ et le signe vert = résument la comparaison."
+  ],
+  "a_voir": "Il faut voir un groupe où l'ordre compte et un où il ne compte pas."
+ },
+ {
+  "code": "45-232",
+  "a_dire": "Un seul invariant remplace les 720 essais de bijections.",
+  "legende_titre": "720 essais évités",
+  "lecture": [
+   "Les six cases grises sont les choix 6, 5, 4, 3, 2, 1.",
+   "Le calcul rouge donne 720 bijections possibles.",
+   "La flèche orange mène au test unique : a + b = b + a dans ℤ/6 (violet), mais pas toujours ab = ba dans S₃ (bleu).",
+   "Le texte vert dit qu'aucune bijection n'est essayée."
+  ],
+  "a_voir": "Il faut voir un test qui évite 720 essais."
+ },
+ {
+  "code": "45-233",
+  "a_dire": "ℤ/8 et ℤ/12 ne sont pas isomorphes, mais U(8) et U(12) le sont, et chacun est isomorphe à ℤ/2 × ℤ/2.",
+  "legende_titre": "Des groupes différents, des unités semblables",
+  "lecture": [
+   "En haut, ℤ/8 (bleu) et ℤ/12 (violet) ont 8 et 12 éléments : ≠ en rouge.",
+   "Les flèches orange mènent aux restes inversibles : {1, 3, 5, 7} et {1, 5, 7, 11}.",
+   "Le signe vert ≅ dit qu'ils sont isomorphes.",
+   "La boîte verte donne ℤ/2 × ℤ/2, avec 4 éléments."
+  ],
+  "a_voir": "Il faut voir des groupes différents dont les unités sont isomorphes."
+ },
+ {
+  "code": "45-234",
+  "a_dire": "Pour comparer deux petits groupes, on calcule l'ordre de chaque élément.",
+  "legende_titre": "Les ordres dans U(8) et U(12)",
+  "lecture": [
+   "La première ligne (bleu) montre 1, 3, 5, 7 de U(8) ; la seconde (violet) montre 1, 5, 7, 11 de U(12).",
+   "Dans chaque ligne, la case grise 1 est d'ordre 1.",
+   "Les trois autres cases ont leur carré égal à 1 : ordre 2."
+  ],
+  "a_voir": "Il faut voir un élément d'ordre 1 et trois d'ordre 2 dans chaque groupe."
+ },
+ {
+  "code": "45-235",
+  "a_dire": "L'application 1 ↦ 1, 3 ↦ 5, 5 ↦ 7, 7 ↦ 11 conserve la multiplication parce que les deux tables ont la même forme.",
+  "legende_titre": "Une bijection qui conserve le produit",
+  "lecture": [
+   "La colonne bleue est U(8), la colonne violette est U(12).",
+   "Les flèches orange envoient 1 sur 1, 3 sur 5, 5 sur 7, 7 sur 11.",
+   "En bas, 3 × 5 = 7 devient 5 × 7 = 11 : le produit est conservé (vert)."
+  ],
+  "a_voir": "Il faut voir que le produit de deux éléments est envoyé sur le produit de leurs images."
+ },
+ {
+  "code": "45-236",
+  "a_dire": "U(8) n'est pas isomorphe à ℤ/4, car il n'a aucun élément d'ordre 4.",
+  "legende_titre": "Chercher un élément d'ordre 4",
+  "lecture": [
+   "La première ligne (bleu) montre les pas 1, 2, 3, 0 dans ℤ/4 : quatre pas.",
+   "La deuxième (violet) montre les puissances de 2 dans U(5) : 2, 4, 3, 1.",
+   "La troisième (rouge) montre que 3, 5 et 7 donnent 1 en deux pas dans U(8)."
+  ],
+  "a_voir": "Il faut voir qu'il y a un élément d'ordre 4 dans ℤ/4 et U(5), mais pas dans U(8)."
+ },
+ {
+  "code": "45-237",
+  "a_dire": "L'ordre d'un couple est le plus petit nombre de pas où les deux cases reviennent ensemble : le PPCM des ordres.",
+  "legende_titre": "Quand le couple revient à (0, 0)",
+  "lecture": [
+   "Les points bleus marquent les retours de la première case : tous les 3 pas.",
+   "Les points violets marquent les retours de la seconde : au pas 15.",
+   "Le trait vert pointillé est le pas 15, où les deux reviennent ensemble.",
+   "Le texte rouge rappelle que ce n'est pas 3 × 15 = 45."
+  ],
+  "a_voir": "Il faut voir que les deux cases reviennent ensemble au pas 15."
+ },
+ {
+  "code": "45-238",
+  "a_dire": "Dans ℤ/12, avancer de 8 à chaque pas donne 8, 4, 0 : l'ordre est 3.",
+  "legende_titre": "Avancer de 8 sur l'horloge à douze heures",
+  "lecture": [
+   "Le cercle montre les nombres de 0 à 11.",
+   "Les flèches orange vont de 0 à 8, de 8 à 4, puis de 4 à 0.",
+   "Le texte orange au centre dit : 3 pas."
+  ],
+  "a_voir": "Il faut voir un retour à 0 au troisième pas."
+ },
+ {
+  "code": "45-239",
+  "a_dire": "L'ordre de a dans ℤ/n est n divisé par PGCD(a, n).",
+  "legende_titre": "Ordre de a dans ℤ/12",
+  "lecture": [
+   "La formule bleue donne la règle.",
+   "La ligne verte (a = 5) a PGCD 1 : les 12 cases sont visitées.",
+   "La ligne orange (a = 8) a PGCD 4 : seules trois cases (0, 4, 8) sont visitées."
+  ],
+  "a_voir": "Il faut voir que plus le PGCD est grand, moins il y a de cases visitées."
+ },
+ {
+  "code": "45-240",
+  "a_dire": "Pour 56 dans ℤ/60, on divise par le PGCD 4 : l'ordre est 15 = 60 / 4.",
+  "legende_titre": "Pourquoi l'ordre de 56 est 15",
+  "lecture": [
+   "Les boîtes bleues 56 et 60 sont divisées par 4 (flèches orange).",
+   "Les boîtes violettes 14 et 15 n'ont pas de diviseur commun.",
+   "56k multiple de 60 revient à 14k multiple de 15, donc k est multiple de 15.",
+   "La boîte verte donne l'ordre : 15 = 60 / 4."
+  ],
+  "a_voir": "Il faut voir la division par 4 qui mène à 15."
+ }
+]

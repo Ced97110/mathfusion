@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+for i in range(6): disc(ax,14+i*12,48,3.8,'sujet')
+for i in range(6): disc(ax,14+i*12,28,3.8,'fixe')
+for i in range(3): disc(ax,14+i*12,8,3.8,'resultat')
+text(ax,2,56,'S₃ : 6 éléments','sujet','s',ha='left')
+text(ax,2,36,'Cayley : permuter 6 objets','fixe','s',ha='left')
+text(ax,2,16,'S₃ réel : 3 objets','resultat','s',ha='left')
+text(ax,66,8,'3 < 6 ?','limite','m')
+save(fig,'45-261')

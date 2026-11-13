@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,8,66,72,10,'sujet',label=r'$(g,h)^k=(e_G,\,e_H)$')
+arrow(ax,(30,66),(22,54.5),'fixe'); arrow(ax,(58,66),(66,54.5),'fixe')
+box(ax,2,44,40,10,'sujet',label=r'$g^k=e_G$'); box(ax,46,44,40,10,'autre',label=r'$h^k=e_H$')
+arrow(ax,(22,44),(22,32.5),'varie'); arrow(ax,(66,44),(66,32.5),'varie')
+text(ax,44,38.5,r'étape décisive $\Leftrightarrow$','varie','s')
+box(ax,2,22,40,10,'sujet',label=r'$k$ multiple de $r$'); box(ax,46,22,40,10,'autre',label=r'$k$ multiple de $s$')
+arrow(ax,(22,22),(34,12.5),'fixe'); arrow(ax,(66,22),(54,12.5),'fixe')
+box(ax,10,2,68,10,'resultat',label=r'plus petit $k$ commun : PPCM')
+save(fig,'45-178')

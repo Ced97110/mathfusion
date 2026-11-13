@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+text(ax, 44, 80, r'$a^k=1 \Rightarrow \eta(a)^k=1^\prime$', 'sujet', 's')
+box(ax, 4, 62, 30, 9, 'sujet', label=r'$a^k=1$'); box(ax, 54, 62, 30, 9, 'resultat', label=r'$\eta(a)^k=1^\prime$', size='s')
+arrow(ax, (35, 66.5), (53, 66.5), 'fixe')
+text(ax, 44, 52, r'$\eta(a)^k=1^\prime \Rightarrow a^k=1$', 'sujet', 's')
+box(ax, 2, 33, 27, 9, 'resultat', label=r'$\eta(a)^k=1^\prime$', size='s'); box(ax, 33, 33, 25, 9, 'fixe', label=r'$\eta(a^k)=\eta(1)$', size='s'); box(ax, 62, 33, 24, 9, 'sujet', label=r'$a^k=1$')
+arrow(ax, (29.5, 37.5), (32.5, 37.5), 'fixe'); arrow(ax, (58.5, 37.5), (61.5, 37.5), 'varie', lw=1.4)
+text(ax, 60, 28, 'injectivité', 'varie', 's')
+box(ax, 4, 6, 80, 11, 'resultat', label=r'mêmes $k$ : $o(\eta(a))=o(a)$')
+save(fig, '45-071')

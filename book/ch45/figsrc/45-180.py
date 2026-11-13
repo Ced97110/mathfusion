@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+X=lambda i: 8+5.4*i+1.5*(i//4)
+text(ax,8,51,r'$k=10$ : reste $t=2$, pas le neutre','limite','m',ha='left')
+for i in range(10): box(ax,X(i),40,5,6,'varie' if i>=8 else 'fixe',lw=0.6,r=0.4)
+brace(ax,X(0),X(7)+5,40,'fixe',label=r'$q=2$ blocs de $r=4$')
+brace(ax,X(8),X(9)+5,40,'varie',label=r'$t=2$')
+text(ax,8,23,r'$k=12$ : reste $t=0$, le neutre','resultat','m',ha='left')
+for i in range(12): box(ax,X(i),12,5,6,'fixe',lw=0.6,r=0.4)
+brace(ax,X(0),X(11)+5,12,'fixe',label=r'$q=3$ blocs de $r=4$')
+save(fig,'45-180')

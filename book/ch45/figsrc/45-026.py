@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 46, 26, 12, 'sujet', label='3 et 2')
+box(ax, 58, 46, 26, 12, 'sujet', label='1')
+box(ax, 4, 6, 26, 12, 'autre', label=r'$r_3$ et $r_2$')
+box(ax, 58, 6, 26, 12, 'resultat', label=r'$r_1$')
+arrow(ax, (31, 52), (57, 52), 'varie'); text(ax, 44, 56, r'$3+2$', 'varie', 's')
+arrow(ax, (71, 45), (71, 19), 'varie'); text(ax, 76.5, 32, r'$\eta$', 'varie', 's')
+arrow(ax, (17, 45), (17, 19), 'autre'); text(ax, 11.5, 32, r'$\eta$', 'autre', 's')
+arrow(ax, (31, 12), (57, 12), 'autre'); text(ax, 44, 8, r'$r_3\circ r_2$', 'autre', 's')
+text(ax, 44, 64, r'$\eta(xy)=\eta(x)\eta(y)$', 'resultat', 'm')
+save(fig, '45-026')

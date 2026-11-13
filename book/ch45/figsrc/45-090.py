@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 26, 62, 38, 10, 'sujet', label=r'$a_L = b_L$'); text(ax, 3, 67, 'départ', 'sujet', 's', ha='left')
+arrow(ax, (45, 61.5), (45, 47.5), 'varie', lw=1.6)
+text(ax, 48, 54.5, r'évaluer en $1$ (neutre)', 'varie', 's', ha='left')
+box(ax, 26, 37, 38, 10, 'fixe', label=r'$a1 = b1$')
+arrow(ax, (45, 36.5), (45, 22.5), 'varie', lw=1.2)
+text(ax, 48, 29.5, r'$a1=a$ et $b1=b$', 'varie', 's', ha='left')
+box(ax, 26, 12, 38, 10, 'resultat', label=r'$a = b$'); text(ax, 3, 17, 'arrivée', 'resultat', 's', ha='left')
+save(fig, '45-090')

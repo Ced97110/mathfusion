@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+box(ax, 4, 74, 80, 14, 'limite', label=r'$6\times5\times4\times3\times2\times1=720$ essais', size='s')
+line(ax, [(8, 77), (80, 85)], 'limite', lw=1.2)
+text(ax, 44, 64, 'une seule vérification par groupe', 'encre', 's')
+box(ax, 4, 38, 36, 15, 'autre', label=r'$S_3$ : $ab\neq ba$', size='s'); box(ax, 48, 38, 36, 15, 'sujet', label=r'$\mathbb{Z}/6\mathbb{Z}$ : $ab=ba$', size='s')
+arrow(ax, (41, 45.5), (47, 45.5), 'varie', both=True)
+text(ax, 44, 57, r'$\neq$', 'varie', 'l')
+arrow(ax, (44, 36), (44, 24), 'varie')
+box(ax, 4, 6, 80, 17, 'resultat', label='aucun isomorphisme', size='m')
+save(fig, '45-074')

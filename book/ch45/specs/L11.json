@@ -1,0 +1,192 @@
+[
+ {
+  "code": "45-161",
+  "a_dire": "Un produit de deux groupes est un groupe, car chaque exigence se vérifie dans chaque case.",
+  "legende_titre": "Trois exigences, deux cases",
+  "lecture": [
+   "Chaque ligne grise est une exigence : neutre, inverse, associativité.",
+   "La case bleue et la case violette valent pour la case G et la case H.",
+   "Chaque case reçoit une coche : l’exigence est vérifiée dans G et dans H.",
+   "Le rectangle vert du bas dit le résultat : le produit est un groupe."
+  ],
+  "a_voir": "Une coche dans chaque case pour chaque exigence donne un groupe."
+ },
+ {
+  "code": "45-162",
+  "a_dire": "Le neutre du produit est le couple des deux neutres : il ne change aucun couple.",
+  "legende_titre": "Le couple qui ne change rien",
+  "lecture": [
+   "La ligne du haut est un couple : g en bleu, h en violet.",
+   "La ligne grise est le couple des neutres, e G et e H.",
+   "Les flèches orange mènent à la ligne verte : le résultat.",
+   "Le résultat a les mêmes cases que le couple de départ : il est inchangé."
+  ],
+  "a_voir": "Le couple des neutres laisse le couple de départ identique."
+ },
+ {
+  "code": "45-163",
+  "a_dire": "L’inverse d’un couple est le couple des inverses, qui donne le neutre.",
+  "legende_titre": "Inverser chaque case",
+  "lecture": [
+   "La première ligne est le couple (1, 2) : 1 dans la case bleue, 2 dans la case violette.",
+   "Les flèches orange donnent l’inverse de chaque case : (1, 1).",
+   "La ligne verte du milieu additionne chaque case avec son inverse : 0 et 0.",
+   "Le rectangle du bas montre (0, 0), le neutre."
+  ],
+  "a_voir": "Chaque case a son inverse, et le couple des inverses donne le neutre."
+ },
+ {
+  "code": "45-164",
+  "a_dire": "Le produit est associatif parce que chaque case l’est dans son groupe.",
+  "legende_titre": "Deux groupements, un résultat",
+  "lecture": [
+   "La ligne du haut groupe d’abord les deux premiers états : (0, 0), puis (0, 2).",
+   "La ligne du bas groupe d’abord les deux derniers états : (1, 1), puis (0, 2).",
+   "Les flèches orange ajoutent le troisième état.",
+   "Les deux cases vertes sont égales : le signe = les relie."
+  ],
+  "a_voir": "Les deux façons de grouper donnent le même état (0, 2)."
+ },
+ {
+  "code": "45-165",
+  "a_dire": "Le produit externe fabrique un groupe nouveau à partir de deux groupes donnés côte à côte.",
+  "legende_titre": "Deux groupes donnés, un nouveau",
+  "lecture": [
+   "Les deux rangées grises du haut sont les groupes donnés : G, l’interrupteur, et H, le cadran.",
+   "Ils sont posés côte à côte, séparés.",
+   "Les flèches orange partent des deux groupes.",
+   "La grille bleue est le groupe nouveau : une case pour chaque couple, soit 6."
+  ],
+  "a_voir": "Le nouveau groupe vient de l’extérieur, de deux groupes séparés."
+ },
+ {
+  "code": "45-166",
+  "a_dire": "Le produit de n groupes est l’ensemble des listes de n cases, une case par groupe.",
+  "legende_titre": "Une liste de n cases",
+  "lecture": [
+   "La rangée du haut a une case bleue par groupe, de G un à G n ; les points grisés sont les groupes omis.",
+   "L’accolade dit qu’un élément est une liste de n cases.",
+   "La rangée du milieu montre n égal à 3 : trois cases, ici 0, 1, 1.",
+   "Le texte vert compte les états : 2 fois 2 fois 2, soit 8."
+  ],
+  "a_voir": "Un élément est une liste de n cases, chacune dans son groupe."
+ },
+ {
+  "code": "45-167",
+  "a_dire": "ℝ × ℝ avec l’addition case par case est un groupe de couples, qui s’additionnent case par case.",
+  "legende_titre": "Additionner des couples de réels",
+  "lecture": [
+   "La flèche bleue part de l’origine vers (1, 2).",
+   "La flèche violette part du bout de la bleue : elle ajoute (3, 4).",
+   "La flèche verte va de l’origine à (4, 6) : le résultat.",
+   "À droite, 1 plus 3 donne 4 et 2 plus 4 donne 6."
+  ],
+  "a_voir": "Le couple (4, 6) s’obtient en additionnant chaque case."
+ },
+ {
+  "code": "45-168",
+  "a_dire": "Le produit ℤ/2 × ℤ/3 a 2 fois 3 couples : tous les choix d’une case de chacun.",
+  "legende_titre": "Les six états de la machine",
+  "lecture": [
+   "Les lignes sont les deux positions de l’interrupteur, ℤ/2.",
+   "Les colonnes sont les trois positions du cadran, ℤ/3.",
+   "Chaque case bleue est un couple (a, b).",
+   "Le texte vert compte : 2 fois 3 donne 6 états."
+  ],
+  "a_voir": "Six couples : 2 lignes fois 3 colonnes."
+ },
+ {
+  "code": "45-169",
+  "a_dire": "ℤ/n est une écriture plus courte de ℤ/nℤ ; Judson écrit ℤₙ.",
+  "legende_titre": "Trois écritures de la même horloge",
+  "lecture": [
+   "Le rectangle gris est l’écriture complète, avec deux lettres ℤ.",
+   "La flèche orange enlève un ℤ : le rectangle bleu est l’écriture courte.",
+   "Le rectangle violet est l’écriture de Judson, avec le nombre en bas : elle vaut la même horloge.",
+   "En bas, le produit de deux horloges perd une lettre ℤ par horloge."
+  ],
+  "a_voir": "Les trois écritures désignent la même horloge à n heures."
+ },
+ {
+  "code": "45-170",
+  "a_dire": "(ℤ/2)^n est l’ensemble des listes de n chiffres 0 ou 1, qu’on additionne chiffre par chiffre avec 1 + 1 = 0.",
+  "legende_titre": "Additionner des listes de chiffres",
+  "lecture": [
+   "La ligne bleue est la liste 101, la ligne violette est 011.",
+   "L’accolade dit que chaque liste a 3 chiffres.",
+   "La ligne verte est la somme 110, calculée colonne par colonne.",
+   "La colonne orange montre 1 plus 1 qui donne 0."
+  ],
+  "a_voir": "Chaque colonne s’additionne seule, et 1 plus 1 donne 0."
+ },
+ {
+  "code": "45-171",
+  "a_dire": "Le « ou exclusif » donne 0 pour 1 et 1, comme l’addition modulo 2 ; le « ou » ordinaire donne 1.",
+  "legende_titre": "Deux sens du mot « ou »",
+  "lecture": [
+   "La colonne de gauche est le « ou » ordinaire, la colonne de droite le « ou exclusif ».",
+   "Les trois premières lignes grises sont identiques des deux côtés.",
+   "La dernière ligne violette donne 1 pour 1 ou 1.",
+   "La dernière ligne bleue donne 0 pour 1 ⊕ 1."
+  ],
+  "a_voir": "Les deux colonnes ne diffèrent que pour 1 et 1."
+ },
+ {
+  "code": "45-172",
+  "a_dire": "Chaque rang s’additionne seul, sans retenue, et la somme a un 1 aux rangs où les listes diffèrent.",
+  "legende_titre": "Additionner huit chiffres, rang par rang",
+  "lecture": [
+   "La ligne bleue est la liste 01011101, la ligne violette 01001011.",
+   "La ligne verte est la somme 00010110.",
+   "Les trois colonnes orange sont les rangs 4, 6 et 7 : les chiffres y sont différents.",
+   "Dans les autres colonnes, les chiffres sont égaux et la somme vaut 0."
+  ],
+  "a_voir": "Le 1 de la somme est aux rangs où les deux listes diffèrent."
+ },
+ {
+  "code": "45-173",
+  "a_dire": "Écrire un message comme une liste de chiffres permet de l’additionner avec le message reçu pour repérer le rang changé.",
+  "legende_titre": "Comparer deux listes par la somme",
+  "lecture": [
+   "La ligne bleue est la liste envoyée 0101, la ligne violette la liste reçue 0111.",
+   "La ligne verte est leur somme : 0010.",
+   "La colonne orange est le rang où les deux listes diffèrent.",
+   "Le 1 de la somme est au même rang."
+  ],
+  "a_voir": "La somme a un 1 exactement au rang changé."
+ },
+ {
+  "code": "45-174",
+  "a_dire": "G ⊕ H désigne le même produit que G × H, pour des groupes abéliens notés avec un plus.",
+  "legende_titre": "Même produit, autre signe",
+  "lecture": [
+   "Le rectangle gris est G × H, le rectangle bleu est G ⊕ H, reliés par le signe =.",
+   "Le rectangle violet donne la condition : groupes abéliens, notés avec +.",
+   "Le rectangle vert montre l’addition case par case d’un couple de la machine."
+  ],
+  "a_voir": "Seul le signe change : les couples et l’opération restent les mêmes."
+ },
+ {
+  "code": "45-175",
+  "a_dire": "Le signe ⊕ est un plus dans un rond : il note le produit direct de groupes abéliens notés additivement.",
+  "legende_titre": "Un plus dans un rond",
+  "lecture": [
+   "Le plus bleu rappelle l’addition.",
+   "Le rond violet rappelle une construction de couples.",
+   "En bas, G ⊕ H se lit « G somme directe H »."
+  ],
+  "a_voir": "Le signe se découpe en deux morceaux : le plus et le rond."
+ },
+ {
+  "code": "45-176",
+  "a_dire": "Dans un produit, une puissance d’un couple se calcule case par case : on répète chaque case.",
+  "legende_titre": "Répéter un couple ou répéter ses cases",
+  "lecture": [
+   "La rangée du haut répète le couple (1, 1) quatre fois : le dernier état, en vert, est (0, 1).",
+   "Le rectangle bleu répète la première case 4 fois : le reste est 0.",
+   "Le rectangle violet répète la seconde case 4 fois : le reste est 1.",
+   "Les flèches orange rassemblent les deux restes en (0, 1), le même couple."
+  ],
+  "a_voir": "Les deux chemins donnent le même couple (0, 1)."
+ }
+]
