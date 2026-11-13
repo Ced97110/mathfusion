@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from math import pi, cos, sin, radians
+fig, ax = canvas(72)
+s = 15.0; c = (10.0, 36.0)
+pp = lambda r, t: (c[0] + s * r * cos(t), c[1] + s * r * sin(t))
+T = lambda a, b, n: [a + (b - a) * i / n for i in range(n + 1)]
+line(ax, [pp(1 + cos(t), t) for t in T(0, pi, 300)], 'sujet', lw=1.3)
+line(ax, [pp(1 + cos(t), t) for t in T(-pi, 0, 300)], 'resultat', lw=1.3, dash=True)
+line(ax, [(c[0] - 4, c[1]), (c[0] + 2 * s + 5, c[1])], 'fixe', lw=0.9, dash=True)
+text(ax, c[0] + 2 * s + 8, c[1] + 3, 'miroir', 'fixe', 's')
+t = radians(60)
+P, Q = pp(1.5, t), pp(1.5, -t)
+line(ax, [c, P], 'sujet', lw=0.9); line(ax, [c, Q], 'resultat', lw=0.9)
+line(ax, [P, Q], 'fixe', lw=0.5, dash=True)
+disc(ax, *P, 1.2, 'sujet'); disc(ax, *Q, 1.2, 'resultat'); disc(ax, *c, 1.0, 'encre')
+text(ax, P[0] + 2, P[1] + 4, '$\\theta$ : $r=1{,}5$', 'sujet', 's', ha='left')
+text(ax, Q[0] + 2, Q[1] - 4, '$-\\theta$ : $r=1{,}5$', 'resultat', 's', ha='left')
+line(ax, [pp(0.45, a) for a in T(0, t, 20)], 'sujet', lw=0.8)
+line(ax, [pp(0.6, a) for a in T(-t, 0, 20)], 'resultat', lw=0.8)
+box(ax, 50, 2, 36, 9, 'encre', label='$\\cos(-\\theta)=\\cos\\theta$', size='s')
+save(fig, '40-020')

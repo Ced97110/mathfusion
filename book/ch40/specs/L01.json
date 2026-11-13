@@ -1,0 +1,327 @@
+[
+ {
+  "code": "40-001",
+  "a_dire": "Au rouleau, la distance au centre est proportionnelle à l’angle tourné : chaque tour ajoute 0,1 mm.",
+  "legende_titre": "Un tour de plus, la même distance en plus",
+  "lecture": [
+   "La courbe bleue est le bord du papier qui s’enroule autour de l’axe gris, au centre.",
+   "Les points orange sont les endroits où le bord recoupe la demi-droite grise, après 1, 2, 3 et 4 tours.",
+   "Sur la droite graduée du bas, ces points sont à 0,1 ; 0,2 ; 0,3 et 0,4 mm : ils sont régulièrement espacés.",
+   "Le texte orange rappelle le calcul : on ajoute 0,1 mm à chaque tour."
+  ],
+  "a_voir": "Les points orange sont à égale distance les uns des autres : 1 tour de plus ajoute toujours 0,1 mm."
+ },
+ {
+  "code": "40-002",
+  "a_dire": "La spirale n’est pas le graphe de y = f(x) : une verticale la coupe plusieurs fois, donc un même x donne plusieurs y.",
+  "legende_titre": "Une verticale qui coupe la courbe plusieurs fois",
+  "lecture": [
+   "La courbe bleue est la spirale du rouleau.",
+   "La droite orange en tirets est une verticale : tous ses points ont le même x.",
+   "Les disques orange sont les points où cette verticale coupe la spirale : il y en a cinq.",
+   "Le texte gris rappelle que y = f(x) donne un seul y pour un x."
+  ],
+  "a_voir": "Une seule verticale touche la spirale en cinq points, donc cinq hauteurs pour un même x."
+ },
+ {
+  "code": "40-003",
+  "a_dire": "Le motif à trois boucles est une même courbe écrite de deux façons : en x et y, ou avec une distance et un angle.",
+  "legende_titre": "Une courbe, deux équations",
+  "lecture": [
+   "La courbe bleue est le motif : trois boucles qui partent du centre.",
+   "Les trois demi-droites en tirets passent par le milieu de chaque boucle ; elles sont écartées de 120 degrés.",
+   "Le cercle orange marque les trois angles de 120 degrés : ils font un tour complet.",
+   "La case bleue donne l’équation en x et y ; la case violette donne l’équation r = cos 3θ."
+  ],
+  "a_voir": "Trois boucles écartées de 120 degrés, et deux équations pour la même courbe."
+ },
+ {
+  "code": "40-004",
+  "a_dire": "L’équation cartésienne se teste point par point : on calcule les deux côtés, et le point est sur la courbe si les résultats sont égaux ; son degré est 4.",
+  "legende_titre": "Tester un point dans l’équation",
+  "lecture": [
+   "Les cases bleues calculent le côté gauche, le carré de x² + y², pour chaque point.",
+   "Les cases orange calculent le côté droit, x³ − 3xy², pour chaque point.",
+   "Pour le point (1 ; 0), les deux côtés valent 1 : la case verte dit que le point est sur la courbe.",
+   "Pour le point (0 ; 1), on trouve 1 et 0 : la case rouge dit que le point n’est pas sur la courbe.",
+   "La ligne du bas compte le degré : 2 + 2 = 4."
+  ],
+  "a_voir": "Deux côtés égaux (1 et 1) donnent un point de la courbe ; deux côtés différents (1 et 0) n’en donnent pas."
+ },
+ {
+  "code": "40-005",
+  "a_dire": "Dans r = cos 3θ, la règle reste la même pour tout angle : multiplier l’angle par 3, prendre le cosinus, lire le résultat comme distance r.",
+  "legende_titre": "Trois angles, une même règle",
+  "lecture": [
+   "La courbe bleue est une boucle du motif, tracée autour du point O à gauche.",
+   "Les demi-droites grises en tirets sont les angles 30, 20 et 0 degrés ; les arcs gris sont les cercles de rayon 0,5 et 1.",
+   "Les disques verts sont les points obtenus : en O pour 30 degrés, à 0,5 du centre pour 20 degrés, à 1 pour 0 degré.",
+   "Chaque case de droite est reliée par un trait à sa demi-droite et donne le calcul du cosinus pour cet angle."
+  ],
+  "a_voir": "Pour chaque angle, le cosinus de trois fois l’angle donne la distance du point au centre."
+ },
+ {
+  "code": "40-006",
+  "a_dire": "On donne la position de la Terre par une distance au Soleil et un angle, avec la règle r = 149,6 / (1 + 0,017 cos θ).",
+  "legende_titre": "Positionner la Terre depuis le Soleil",
+  "lecture": [
+   "Le disque orange est le Soleil, au centre ; la courbe bleue est l’orbite.",
+   "Le segment orange relie le Soleil à un point vert de l’orbite : sa longueur est r, et l’arc orange est l’angle θ.",
+   "À droite, au plus près, la distance est 147,1 ; à gauche, au plus loin, elle est 152,2 (millions de kilomètres).",
+   "La case bleue du haut donne la règle."
+  ],
+  "a_voir": "Deux nombres suffisent à placer la Terre : la distance r et l’angle θ depuis le Soleil."
+ },
+ {
+  "code": "40-007",
+  "a_dire": "Le Soleil est un foyer de l’ellipse : il n’est pas au centre, qui est à 2,55 de lui, et le second foyer est à 2,55 de l’autre côté.",
+  "legende_titre": "Le Soleil n’est pas au milieu de l’orbite",
+  "lecture": [
+   "La droite du haut est le grand axe, de 0 à 299,3, entre la position la plus proche et la plus lointaine.",
+   "Les trois points bleus, serrés au milieu, sont agrandis sur la droite graduée du bas.",
+   "Sur la droite du bas, le Soleil est à 147,1, le centre à 149,65 et le second foyer à 152,2.",
+   "Les deux accolades orange mesurent chacune 2,55.",
+   "Le calcul vert du bas donne la somme des distances aux deux foyers : 147,1 + 152,2 = 299,3."
+  ],
+  "a_voir": "Le Soleil (bleu) est à 2,55 du centre, et le second foyer (violet) est à 2,55 de l’autre côté."
+ },
+ {
+  "code": "40-008",
+  "a_dire": "La règle de l’orbite se lit en quatre actions : choisir θ, calculer cos θ, former 1 + 0,017 cos θ, diviser 149,6 par ce nombre.",
+  "legende_titre": "Les quatre actions de la règle",
+  "lecture": [
+   "Les quatre cases du haut nomment les actions dans l’ordre, de gauche à droite.",
+   "La première ligne chiffrée prend θ = π/2 : cos θ vaut 0, le nombre sous la barre vaut 1, la distance vaut 149,6.",
+   "La deuxième ligne prend θ = π/3 : cos θ vaut 0,5, le nombre sous la barre vaut 1,0085, la distance vaut environ 148,3.",
+   "Les couleurs suivent les actions : orange pour le choix et le cosinus, bleu pour le nombre sous la barre, vert pour le résultat."
+  ],
+  "a_voir": "Chaque ligne suit les quatre actions de gauche à droite et finit par la distance en vert."
+ },
+ {
+  "code": "40-009",
+  "a_dire": "Le rouleau, le motif et l’orbite ont une cause commune : un centre autour duquel on lit une distance et un angle, que x et y ne montrent pas.",
+  "legende_titre": "Trois courbes autour d’un centre",
+  "lecture": [
+   "Les trois courbes bleues sont le rouleau, le motif à trois boucles et l’orbite.",
+   "Dans chacune, le disque orange est le centre : l’axe, le centre du motif, le Soleil.",
+   "Le segment orange part du centre et l’arc orange mesure l’angle : on lit une distance et un angle.",
+   "La case verte du bas résume : autour d’un centre, on lit r et θ."
+  ],
+  "a_voir": "Les trois courbes ont un centre orange, d’où partent une distance et un angle."
+ },
+ {
+  "code": "40-010",
+  "a_dire": "Pour la valve d’une roue qui roule, on ne peut pas utiliser une distance et un angle autour d’un point fixe, car le centre de la roue avance.",
+  "legende_titre": "La valve d’une roue qui avance",
+  "lecture": [
+   "Les deux cercles bleus sont la même roue au départ et après un demi-tour ; elle roule sur le sol gris.",
+   "Le disque orange est la valve : au sol au départ, au sommet après un demi-tour, à 0,70 m du sol.",
+   "La courbe orange en tirets est le chemin de la valve entre les deux positions.",
+   "La flèche grise relie les deux centres de roue, qui sont à 1,10 m l’un de l’autre : le centre avance, il n’y a pas de point fixe."
+  ],
+  "a_voir": "Le centre de la roue avance de 1,10 m : la valve ne tourne pas autour d’un point fixe."
+ },
+ {
+  "code": "40-011",
+  "a_dire": "On donne x et y séparément, chacun par sa propre règle en fonction du temps t : ce sont les équations paramétriques.",
+  "legende_titre": "Deux règles, une pour x et une pour y",
+  "lecture": [
+   "Sur les axes de gauche, le disque bleu est la valve après un demi-tour.",
+   "Ses projections orange sur les axes donnent x = 1,10 m et y = 0,70 m ; au départ, x et y valent 0.",
+   "À droite, la case orange est le temps t.",
+   "Deux flèches mènent de t à deux cases bleues : une règle pour x, une autre pour y."
+  ],
+  "a_voir": "Le temps t donne x par une règle et y par une autre : aucune des deux ne se calcule à partir de l’autre."
+ },
+ {
+  "code": "40-012",
+  "a_dire": "La figure montre la forme d’ensemble de la cardioïde r = 1 + cos θ : large à droite, pointue en O, symétrique haut et bas.",
+  "legende_titre": "La forme d’ensemble de la courbe",
+  "lecture": [
+   "Les cercles gris et les rayons gris forment la grille polaire autour du point O ; les cercles ont pour rayons 0,5 ; 1 ; 1,5 et 2.",
+   "La courbe bleue est fermée : elle est large à droite, à la distance 2, et se resserre en pointe en O.",
+   "Le point vert P est celui de l’angle π/3, à 1,5 ; le point orange du bas est son symétrique, relié par un trait en tirets.",
+   "Le point orange de droite, à 2, est le plus éloigné de O."
+  ],
+  "a_voir": "La courbe fermée est large à droite, pointue en O, et son haut et son bas sont symétriques."
+ },
+ {
+  "code": "40-013",
+  "a_dire": "L’axe polaire est la demi-droite à droite de O : la partie positive de l’axe des x, d’où l’on mesure les angles.",
+  "legende_titre": "La demi-droite d’où partent les angles",
+  "lecture": [
+   "La flèche grise est l’axe des x entier, à gauche et à droite du point O.",
+   "La flèche bleue épaisse est l’axe polaire : seulement la partie à droite de O.",
+   "Le point noir est le pôle O ; le disque vert est à 2 cm de O sur l’axe polaire, donc d’angle 0.",
+   "La flèche orange courbe montre que l’angle θ part de l’axe polaire et tourne vers le haut."
+  ],
+  "a_voir": "L’axe polaire est la moitié droite de l’axe des x, en bleu épais, à partir de O."
+ },
+ {
+  "code": "40-014",
+  "a_dire": "Une grille polaire est un quadrillage de cercles centrés en O et de rayons tracés tous les 30 degrés, qui repère un point par une distance et un angle.",
+  "legende_titre": "Deux quadrillages, deux façons de repérer",
+  "lecture": [
+   "À gauche, la grille ordinaire : le point vert est au croisement de la colonne 3 et de la ligne 2, en bleu.",
+   "À droite, la grille polaire : des cercles de même centre et des demi-droites qui en partent.",
+   "Le cercle de rayon 1,5 et la demi-droite de 60 degrés sont en bleu ; le point vert est à leur croisement."
+  ],
+  "a_voir": "Dans les deux grilles, deux lignes bleues se croisent au point vert : colonne et ligne à gauche, cercle et rayon à droite."
+ },
+ {
+  "code": "40-015",
+  "a_dire": "Pour lire le point P, on trouve d’abord le rayon d’angle π/3, puis le cercle de rayon 1,5 ; le calcul 1 + cos(π/3) = 1,5 donne la même distance.",
+  "legende_titre": "Lire un point sur la grille en deux étapes",
+  "lecture": [
+   "La grille montre le quart haut droit : le point O en bas à gauche, quatre cercles gris, des rayons gris.",
+   "Le rayon bleu est celui de l’angle π/3, soit 60 degrés ; le cercle orange est le troisième, de rayon 1,5.",
+   "Le point vert P est à leur croisement.",
+   "La case verte vérifie par le calcul : 1 + cos(π/3) = 1,5."
+  ],
+  "a_voir": "Le rayon bleu et le cercle orange se croisent en P, et le calcul donne la même distance 1,5."
+ },
+ {
+  "code": "40-016",
+  "a_dire": "La règle r = 1 + cos θ donne une distance entre 0 et 2 : 2 à 0 degré, 1,5 à 60, 1 à 90, 0 à 180.",
+  "legende_titre": "Quatre angles, quatre distances",
+  "lecture": [
+   "La courbe bleue est la courbe r = 1 + cos θ ; les cercles gris sont ceux de rayon 1 et 2.",
+   "Les demi-droites en tirets sont les angles 0, 60, 90 et 180 degrés ; un disque orange marque le point de chaque angle.",
+   "Les quatre cases orange donnent le calcul de chaque distance : 2, 1,5, 1 et 0.",
+   "La courbe reste dans le cercle de rayon 2."
+  ],
+  "a_voir": "La courbe ne sort pas du grand cercle de rayon 2 et touche le centre à 180 degrés."
+ },
+ {
+  "code": "40-017",
+  "a_dire": "Pour dessiner une courbe polaire, on la construit point par point : choisir l’angle, calculer la distance, placer le point sur le rayon.",
+  "legende_titre": "Dessiner une courbe point par point",
+  "lecture": [
+   "Les cercles gris et les rayons gris, tous les 30 degrés, forment la grille du demi-plan haut.",
+   "Les sept disques orange sont les points calculés de 0 à 180 degrés ; le vert est celui de 60 degrés, à 1,5.",
+   "La ligne bleue les relie dans l’ordre des angles.",
+   "Les trois cases de droite donnent les gestes, avec les nombres du point vert."
+  ],
+  "a_voir": "Chaque disque se place par trois gestes ; la ligne bleue joint ensuite les points dans l’ordre."
+ },
+ {
+  "code": "40-018",
+  "a_dire": "Le tableau donne sept points de 0 à 180 degrés, arrondis ; il ne montre ni la moitié basse ni les angles entre ses lignes.",
+  "legende_titre": "Ce que le tableau donne et ne donne pas",
+  "lecture": [
+   "Chaque colonne bleue donne un angle, son cosinus et la distance r, de 0 à 180 degrés.",
+   "Les barres vertes ont pour hauteur la distance r de chaque colonne ; à 180 degrés, r = 0 : il n’y a pas de barre, seulement un point sur la ligne.",
+   "Le cadre en tirets du bas rappelle ce que le tableau ne donne pas : les angles de 180 à 360 degrés et ceux entre les colonnes.",
+   "La phrase au-dessus du cadre rappelle qu’il n’y a que sept points et que 1,87 est un nombre arrondi."
+  ],
+  "a_voir": "Le tableau s’arrête à 180 degrés et ne contient que sept points."
+ },
+ {
+  "code": "40-019",
+  "a_dire": "Quand θ augmente de 0 à π, cos θ diminue donc r diminue de 2 à 0 : les points se rapprochent de O et la courbe y arrive pour θ = π.",
+  "legende_titre": "Les points se rapprochent du centre en tournant",
+  "lecture": [
+   "La courbe bleue est la moitié haute de r = 1 + cos θ ; les disques orange sont les points tous les 30 degrés.",
+   "Les flèches orange vont d’un point au suivant, dans le sens des angles croissants.",
+   "Le point de départ est à la distance 2 ; le point d’arrivée est en O, où r vaut 0.",
+   "Les cases de droite disent : cos θ passe de 1 à −1, et r passe de 2 à 0."
+  ],
+  "a_voir": "En suivant les flèches orange, chaque point est plus près de O que le précédent."
+ },
+ {
+  "code": "40-020",
+  "a_dire": "La moitié basse se dessine par reflet : cos(−θ) = cos θ, donc les angles θ et −θ donnent la même distance.",
+  "legende_titre": "Le bas de la courbe est le reflet du haut",
+  "lecture": [
+   "La moitié haute de la courbe est en bleu ; la moitié basse, en vert et en tirets, en est le reflet.",
+   "La droite grise en tirets, horizontale, est le miroir.",
+   "Le disque bleu est le point d’angle θ à 1,5 ; le disque vert est le point d’angle −θ, aussi à 1,5.",
+   "La case du bas donne l’égalité qui explique le reflet."
+  ],
+  "a_voir": "Les deux points bleu et vert sont à la même distance 1,5 de O, de part et d’autre du miroir."
+ },
+ {
+  "code": "40-021",
+  "a_dire": "Le mot cardioïde nomme la courbe arrondie d’un côté et pointue en O de l’autre, que l’on retrouve avec r = 1 + cos θ et r = 2(1 + cos θ).",
+  "legende_titre": "Une forme, un nom",
+  "lecture": [
+   "La courbe bleue est r = 1 + cos θ ; la courbe violette est r = 2(1 + cos θ), aux distances doubles.",
+   "Les deux courbes ont la même forme : arrondies à droite, pointues en O.",
+   "Le disque noir marque O, où elles se terminent en pointe.",
+   "Le mot vert, en haut, est le nom commun aux deux courbes."
+  ],
+  "a_voir": "La courbe violette est la bleue en deux fois plus grande, avec la même pointe en O."
+ },
+ {
+  "code": "40-022",
+  "a_dire": "L’équation polaire r = f(θ) se distingue de y = f(x) et d’une équation en x et y : son entrée est l’angle θ et sa sortie la distance r.",
+  "legende_titre": "Trois écritures du même cercle",
+  "lecture": [
+   "Les trois cercles bleus de rayon 2 sont le même cercle, écrit de trois façons.",
+   "À gauche, y = f(x) : la verticale orange coupe le cercle en deux points rouges, donc deux y pour un x.",
+   "Au milieu, x² + y² = 4 : le point vert est repéré par x et y, liés sans que l’un soit l’entrée.",
+   "À droite, r = f(θ) : l’angle θ entre, et la distance 2 sort, quel que soit l’angle."
+  ],
+  "a_voir": "Seule l’écriture de droite a un angle pour entrée et une distance pour sortie."
+ },
+ {
+  "code": "40-023",
+  "a_dire": "La courbe polaire est l’ensemble des points dont la distance et l’angle vérifient la règle ; elle utilise r et θ là où y = f(x) utilise x et y.",
+  "legende_titre": "Un ensemble de points qui vérifient une règle",
+  "lecture": [
+   "À gauche, le graphe de y = f(x) : une courbe bleue dans le repère des x et des y.",
+   "À droite, la courbe polaire de la règle r = 2 : un cercle bleu de rayon 2 autour de O.",
+   "Le disque vert, à distance 2 sur l’angle 0, vérifie la règle : il est sur la courbe.",
+   "Le disque rouge, à distance 1 sur l’angle 0, ne la vérifie pas : il n’est pas sur la courbe."
+  ],
+  "a_voir": "Les points à distance 2 forment le cercle ; le point à distance 1 est en dehors."
+ },
+ {
+  "code": "40-024",
+  "a_dire": "Le signe O se lit « grand O » : c’est le pôle, le point d’où l’on mesure les distances ; un point est en O quand r vaut 0.",
+  "legende_titre": "Le point d’où partent les distances",
+  "lecture": [
+   "Le disque bleu au centre est le pôle O.",
+   "Les deux flèches orange partent de O : leur longueur est la distance r, ici 2 et 1.",
+   "La courbe bleue est r = 1 + cos θ ; elle passe par O, en pointe, pour θ = π.",
+   "Le texte vert rappelle qu’en O, r vaut 0."
+  ],
+  "a_voir": "Toutes les distances partent de O, et la courbe revient en O quand r vaut 0."
+ },
+ {
+  "code": "40-025",
+  "a_dire": "La lettre θ désigne l’angle mesuré depuis l’axe polaire, dans le sens inverse des aiguilles d’une montre ; on peut lui donner n’importe quelle valeur, comme π/3.",
+  "legende_titre": "Une lettre pour l’angle",
+  "lecture": [
+   "La flèche grise est l’axe polaire : l’angle part de là.",
+   "La flèche bleue est la demi-droite obtenue après avoir tourné d’un angle π/3, soit 60 degrés.",
+   "L’arc orange avec la flèche est l’angle θ, qui tourne vers le haut, dans le sens inverse des aiguilles d’une montre.",
+   "La case verte montre la règle écrite avec θ."
+  ],
+  "a_voir": "L’arc orange va de l’axe polaire à la flèche bleue : c’est θ."
+ },
+ {
+  "code": "40-026",
+  "a_dire": "La lettre r désigne la distance entre le pôle O et le point : r vaut 1,5 pour P et 2 pour le point sur l’axe polaire.",
+  "legende_titre": "Une lettre pour la distance",
+  "lecture": [
+   "La courbe bleue est r = 1 + cos θ, sur une grille de cercles gris centrés en O.",
+   "Les deux flèches orange partent de O : l’une va au point P, l’autre au point de l’axe polaire.",
+   "La longueur de la première est r = 1,5 ; celle de la seconde est r = 2.",
+   "La case orange du bas dit ce que désigne r."
+  ],
+  "a_voir": "Chaque flèche orange est une distance r, mesurée depuis O jusqu’à un point de la courbe."
+ },
+ {
+  "code": "40-027",
+  "a_dire": "Le signe f remplace une règle quelconque qui calcule la distance à partir de l’angle : r = f(θ) s’écrit une fois pour toutes les règles.",
+  "legende_titre": "Une lettre pour n’importe quelle règle",
+  "lecture": [
+   "La case bleue du haut est l’écriture unique r = f(θ).",
+   "Trois flèches mènent à trois courbes bleues, dessinées à la même échelle.",
+   "Sous chaque courbe, le texte orange donne la règle que f remplace : toujours 2, 1 + cos θ, cos 3θ.",
+   "La première courbe est un cercle, la deuxième une cardioïde, la troisième le motif à trois boucles."
+  ],
+  "a_voir": "Une seule écriture r = f(θ) convient aux trois courbes ; seule la règle f change."
+ }
+]

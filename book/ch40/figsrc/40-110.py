@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 8, 74, 72, 12, 'sujet', label=r'$r=\cos 3\theta$', size='l')
+text(ax, 44, 70.5, r'$\cos 3\theta=4\cos^3\theta-3\cos\theta$', 'fixe', 's')
+arrow(ax, (44, 67), (44, 58), 'varie')
+text(ax, 48, 62.5, 'multiplier par r³ (pas par r)', 'varie', 's', ha='left')
+box(ax, 8, 46, 72, 12, 'fixe', label=r'$r^4=4x^3-3x\,r^2$', size='l')
+text(ax, 24, 41, r'$r^3\cos^3\theta=x^3$', 'fixe', 's')
+text(ax, 64, 41, r'$r^3\cos\theta=x\,r^2$', 'fixe', 's')
+arrow(ax, (44, 46), (44, 28), 'varie')
+text(ax, 48, 33, r'$r^2=x^2+y^2$', 'varie', 's', ha='left')
+box(ax, 8, 14, 72, 12, 'resultat', label=r'$(x^2+y^2)^2=x^3-3xy^2$', size='l')
+save(fig, '40-110')

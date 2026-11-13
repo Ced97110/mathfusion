@@ -1,0 +1,317 @@
+[
+ {
+  "code": "40-082",
+  "a_dire": "Dans la spirale hyperbolique r = a/θ, la distance r diminue quand l’angle θ augmente ; la spirale d’Archimède r = aθ, elle, grandit.",
+  "legende_titre": "Deux spirales, deux sens pour la distance",
+  "lecture": [
+   "À gauche, la courbe bleue est la spirale r = a/θ pour a = 1 : elle s’enroule vers le pôle, le point gris.",
+   "Les quatre points orange sont ceux de la fiche : pour θ = 0,5 ; 1 ; 2 ; 4 radians, la distance vaut 2 ; 1 ; 0,5 ; 0,25.",
+   "À droite, la courbe violette est la spirale d’Archimède r = aθ : elle s’éloigne du pôle à chaque tour."
+  ],
+  "a_voir": "À gauche la courbe se rapproche du pôle quand l’angle grandit, à droite elle s’en éloigne."
+ },
+ {
+  "code": "40-083",
+  "a_dire": "Pour un petit angle, la spirale hyperbolique reste presque à la hauteur y = a, car sin θ ≈ θ.",
+  "legende_titre": "Une spirale qui longe une droite",
+  "lecture": [
+   "La courbe bleue est la spirale r = a/θ, vue de θ = 0,1 radian jusqu’à un demi-tour.",
+   "La droite verte en pointillés est la droite y = a, ici avec a = 1.",
+   "Le point orange est celui de θ = 0,1 : sa hauteur vaut environ 0,998, presque la hauteur de la droite.",
+   "Les deux lignes du haut disent pourquoi : y = a sin θ/θ, et sin θ/θ est proche de 1."
+  ],
+  "a_voir": "La courbe bleue se colle à la droite verte quand elle s’éloigne vers la droite."
+ },
+ {
+  "code": "40-084",
+  "a_dire": "Pour passer de x et y à r et θ, on remplace x par r cos θ, y par r sin θ et x² + y² par r².",
+  "legende_titre": "Les trois remplacements, du plan vers l’angle",
+  "lecture": [
+   "Dans le cercle bleu, le point est à la distance r du pôle, sur le segment orange, avec l’angle θ.",
+   "Les deux segments verts sont sa position horizontale x = r cos θ et sa hauteur y = r sin θ.",
+   "À droite, l’équation x² + y² = 2x devient r² = 2r cos θ, puis r = 2 cos θ après division par r."
+  ],
+  "a_voir": "Les deux côtés verts du triangle donnent x et y ; le segment orange donne r."
+ },
+ {
+  "code": "40-085",
+  "a_dire": "Pour passer de l’équation polaire à x et y, on multiplie d’abord par r : le chemin est plus court que le remplacement direct.",
+  "legende_titre": "Deux chemins vers la même équation",
+  "lecture": [
+   "Le cadre bleu du haut est la règle de départ : r = 2 cos θ.",
+   "À gauche, les cadres gris montrent le chemin direct : trois étapes, avec r qui reste au dénominateur.",
+   "À droite, le cadre vert montre le chemin qui multiplie d’abord par r : deux étapes.",
+   "Le cadre vert du bas est l’arrivée des deux chemins : x² + y² = 2x."
+  ],
+  "a_voir": "Le chemin de droite arrive au même cadre vert avec une étape de moins."
+ },
+ {
+  "code": "40-086",
+  "a_dire": "Dans la forme paramétrique, x = f(t) et y = g(t) donnent chaque coordonnée séparément à partir de la troisième variable t.",
+  "legende_titre": "Deux règles qui partent de la même variable",
+  "lecture": [
+   "La courbe bleue est la route de la valve de la roue, de rayon 0,35 m.",
+   "Les trois points orange sont le départ (0 ; 0), le demi-tour (1,10 ; 0,70) et le tour (2,20 ; 0).",
+   "Le cadre orange t envoie une flèche vers chacun des deux cadres bleus : x = f(t) et y = g(t)."
+  ],
+  "a_voir": "Une seule variable t, en orange, commande les deux coordonnées en bleu."
+ },
+ {
+  "code": "40-087",
+  "a_dire": "Le paramètre t n’est pas une coordonnée du point : c’est une troisième variable, alors que x dans y = f(x) et θ dans r = f(θ) sont des coordonnées.",
+  "legende_titre": "Une entrée qui n’est pas une coordonnée",
+  "lecture": [
+   "Dans le cadre gris de gauche, l’entrée orange x est une coordonnée du point de la courbe y = f(x).",
+   "Dans le cadre gris du milieu, l’entrée orange θ est l’angle du point de la courbe r = f(θ).",
+   "Dans le cadre bleu de droite, la variable orange t est sur sa propre ligne, hors des axes : elle commande le point."
+  ],
+  "a_voir": "Dans le cadre bleu, la variable orange est à part des axes."
+ },
+ {
+  "code": "40-088",
+  "a_dire": "La même lettre t sert dans les deux règles : quand t change, x et y changent ensemble.",
+  "legende_titre": "Une lettre pour les deux règles",
+  "lecture": [
+   "La flèche orange est la grandeur t qui avance, avec trois instants : départ, demi-tour, tour.",
+   "La rangée du milieu donne x = f(t) à chacun de ces instants : 0 ; 1,10 ; 2,20.",
+   "La rangée du bas donne y = g(t) aux mêmes instants : 0 ; 0,70 ; 0.",
+   "Les pointillés orange relient chaque instant à ses deux valeurs."
+  ],
+  "a_voir": "Chaque instant donne une valeur de x et une valeur de y, le long du même pointillé."
+ },
+ {
+  "code": "40-089",
+  "a_dire": "f(t) se lit « f de t » : c’est la position horizontale de la valve à l’instant t, pas un produit.",
+  "legende_titre": "Lire f(t) sur un graphe",
+  "lecture": [
+   "L’axe du bas porte les instants : départ, demi-tour, tour. L’axe de gauche porte la position horizontale en mètres.",
+   "La courbe bleue est la règle f : à chaque instant, elle donne un nombre.",
+   "Au demi-tour, le pointillé orange monte jusqu’à la courbe, puis le pointillé vert lit 1,10 à gauche.",
+   "Au tour, la courbe atteint 2,20."
+  ],
+  "a_voir": "Le pointillé vert donne la valeur de f(t) pour l’instant choisi."
+ },
+ {
+  "code": "40-090",
+  "a_dire": "g(t) est la hauteur de la valve à l’instant t ; la règle g est distincte de la règle f.",
+  "legende_titre": "Une écriture pour toutes les hauteurs",
+  "lecture": [
+   "L’axe du bas porte les instants, l’axe de gauche la hauteur en mètres.",
+   "La courbe bleue est la règle g : elle monte puis redescend.",
+   "Aux trois points orange, la hauteur vaut 0 au départ, 0,70 au demi-tour et 0 au tour.",
+   "Le texte bleu rappelle que g est une autre règle que f."
+  ],
+  "a_voir": "La courbe monte jusqu’à 0,70 au demi-tour, puis revient à 0."
+ },
+ {
+  "code": "40-091",
+  "a_dire": "(x, y) est le point produit : pour chaque t, f donne x et g donne y, et ensemble ils forment un seul point.",
+  "legende_titre": "Deux nombres, un point",
+  "lecture": [
+   "L’arche grise est la route de la valve.",
+   "Les deux points verts sur les axes sont les deux nombres : f(t) = 1,10 et g(t) = 0,70.",
+   "Les pointillés verts les rejoignent au point bleu, qui est (1,10 ; 0,70).",
+   "La flèche orange montre le sens du mouvement quand t augmente."
+  ],
+  "a_voir": "Les deux pointillés verts se croisent au point bleu."
+ },
+ {
+  "code": "40-092",
+  "a_dire": "x et y dépendent tous deux de t, et aucun des deux ne commande l’autre.",
+  "legende_titre": "Un seul commandant, deux coordonnées",
+  "lecture": [
+   "Le cadre orange t est le temps.",
+   "Deux flèches orange partent de t vers x = 4 cos t et vers y = 4 sin t, cadres bleus.",
+   "Entre les deux cadres bleus, le pointillé rouge barré dit qu’il n’y a pas de lien de commande.",
+   "Les deux lignes du haut donnent deux instants : (4 ; 0) au départ, (0 ; 4) après un quart de tour."
+  ],
+  "a_voir": "Les flèches partent de t seulement ; entre x et y, le trait est barré."
+ },
+ {
+  "code": "40-093",
+  "a_dire": "Avec x = 4 cos t et y = 4 sin t, le point décrit un cercle de rayon 4 : on choisit t, on calcule x et y, on place le point.",
+  "legende_titre": "Un cercle tracé par t",
+  "lecture": [
+   "Le cercle bleu est de rayon 4, centré au point où les deux axes gris se croisent.",
+   "Trois points orange sont placés : t = 0 en (4 ; 0), le quart de tour en (0 ; 4), le demi-tour en (−4 ; 0).",
+   "La flèche orange montre que t augmente en tournant."
+  ],
+  "a_voir": "Les trois points orange sont sur le cercle, à la distance 4 du centre."
+ },
+ {
+  "code": "40-094",
+  "a_dire": "Éliminer le paramètre, c’est transformer les deux équations jusqu’à ce que t ait disparu : il reste une équation entre x et y.",
+  "legende_titre": "Faire disparaître t",
+  "lecture": [
+   "Chaque cadre est une étape ; le rond orange t signale les cadres où t est encore présent.",
+   "Les flèches orange disent le geste : isoler cos t et sin t, les mettre dans cos² t + sin² t = 1, multiplier par 16.",
+   "Dans les deux derniers cadres, il n’y a plus de t : le dernier, vert, est x² + y² = 16.",
+   "La ligne du bas vérifie : pour 60°, x = 2 et y ≈ 3,46, et 4 + 12 = 16."
+  ],
+  "a_voir": "Le rond orange t disparaît à partir du troisième cadre."
+ },
+ {
+  "code": "40-095",
+  "a_dire": "Une courbe polaire est une courbe paramétrique dont le paramètre est l’angle θ : x = f(θ) cos θ et y = f(θ) sin θ.",
+  "legende_titre": "L’angle comme paramètre",
+  "lecture": [
+   "La courbe bleue est la cardioïde r = 1 + cos θ.",
+   "Le segment orange est la distance r = 1,5 pour θ = 60° ; le point bleu est au bout.",
+   "Les deux pointillés verts sont x et y : x = 1,5 × 0,5 = 0,75 et y = 1,5 × 0,866 ≈ 1,30.",
+   "La colonne de droite écrit ces calculs et rappelle que le paramètre est θ."
+  ],
+  "a_voir": "Le point de la courbe polaire se place avec x et y, calculés à partir de l’angle seul."
+ },
+ {
+  "code": "40-096",
+  "a_dire": "La valve M d’une roue qui roule décrit une arche, la cycloïde ; la figure donne l’arche entière d’un coup.",
+  "legende_titre": "La route de la valve",
+  "lecture": [
+   "La courbe bleue est l’arche décrite par la valve ; la droite grise du bas est le sol.",
+   "Le cercle gris est la roue de centre C, qui touche le sol en I ; le point orange M est la valve.",
+   "L’arc noir est l’angle t entre CI et CM.",
+   "Les trois points bleus sont t = 0 au départ, t = π au sommet, t = 2π au retour au sol."
+  ],
+  "a_voir": "La valve part du sol, monte au sommet à t = π et revient au sol à t = 2π."
+ },
+ {
+  "code": "40-097",
+  "a_dire": "La roue ne glisse pas : la longueur OI posée sur le sol égale l’arc IM, qui vaut a t, donc le centre C est en (at, a).",
+  "legende_titre": "Une longueur d’arc devient une position",
+  "lecture": [
+   "Le trait orange épais sur le sol est la longueur OI, de O à I : 1,10 m.",
+   "L’arc orange épais de la roue, de I à M, est la partie de roue qui a touché le sol : 0,35 × π ≈ 1,10 m.",
+   "Le pointillé gris monte de I au centre C, à la hauteur a = 0,35 m.",
+   "À droite, C = (1,10 ; 0,35) et OI = arc IM = a t."
+  ],
+  "a_voir": "Le trait orange du sol et l’arc orange de la roue ont la même longueur."
+ },
+ {
+  "code": "40-098",
+  "a_dire": "Par rapport au centre C, la valve est à a sin t à gauche et à a cos t en dessous.",
+  "legende_titre": "Un triangle rectangle dans la roue",
+  "lecture": [
+   "À gauche, le trait bleu CM est de longueur a, avec l’angle t (arc noir) depuis le segment CI.",
+   "Le côté vert vertical vaut a cos t ; le côté vert horizontal vaut a sin t.",
+   "À droite, pour t = 90° et a = 0,35 m, la valve M est à gauche de C de 0,35 m et sous C de 0 m."
+  ],
+  "a_voir": "Le côté vertical vaut a cos t (sous C) et le côté horizontal vaut a sin t (à gauche de C)."
+ },
+ {
+  "code": "40-099",
+  "a_dire": "x = at − a sin t et y = a − a cos t : on part du centre, puis on retranche le décalage de la valve.",
+  "legende_titre": "Le calcul pour un quart de tour",
+  "lecture": [
+   "La roue de rayon 0,35 m est tournée d’un quart de tour ; la valve M, en orange, est à gauche du centre C.",
+   "La flèche orange du bas est at ≈ 0,55 : l’abscisse du centre.",
+   "La flèche verte revient de 0,35 (a sin t) : on arrive à x ≈ 0,20, sous la valve.",
+   "La barre verte de droite est la hauteur : y = 0,35 − 0 = 0,35."
+  ],
+  "a_voir": "La flèche verte ramène de 0,55 à 0,20, juste sous la valve."
+ },
+ {
+  "code": "40-100",
+  "a_dire": "La cycloïde est une courbe paramétrique où un point tourne autour d’un centre qui avance ; le cercle tourne autour d’un centre fixe.",
+  "legende_titre": "Un centre fixe ou un centre qui avance",
+  "lecture": [
+   "En haut, le cercle violet x = 4 cos t, y = 4 sin t : son centre gris ne bouge pas.",
+   "En bas, la courbe bleue est la cycloïde x = at − a sin t, y = a − a cos t.",
+   "La roue grise porte la valve ; la flèche orange montre que son centre avance."
+  ],
+  "a_voir": "Le centre du cercle reste en place ; celui de la roue avance le long de la flèche orange."
+ },
+ {
+  "code": "40-101",
+  "a_dire": "Les formules restent justes quand t dépasse π/2 : cos t devient négatif et « sous C » veut dire « au-dessus ».",
+  "legende_titre": "Quand « sous » devient « au-dessus »",
+  "lecture": [
+   "À gauche, pour t < π/2, la valve orange M est sous le centre C ; le trait vert est a cos t, positif.",
+   "À droite, pour t = π, la valve est au sommet de la roue, au-dessus de C.",
+   "Le texte vert dit pourquoi : cos t = −1, donc M est au-dessus de C.",
+   "Le calcul orange donne la hauteur : 0,35 + 0,35 = 0,70."
+  ],
+  "a_voir": "Le même calcul place la valve sous C à gauche et au-dessus de C à droite."
+ },
+ {
+  "code": "40-102",
+  "a_dire": "L’astroïde a des points plus proches de l’origine que le cercle, car elle utilise cos³ t et sin³ t ; ils se touchent en (a ; 0) et (0 ; a).",
+  "legende_titre": "L’astroïde à l’intérieur du cercle",
+  "lecture": [
+   "Le cercle violet est x = cos t, y = sin t, avec a = 1.",
+   "La courbe bleue est l’astroïde x = cos³ t, y = sin³ t : elle rentre en pointes vers l’origine.",
+   "À 45°, le point violet du cercle est à la distance 1 ; le point bleu de l’astroïde, sur le même rayon en pointillés, est à la distance 0,5.",
+   "Les points verts sont les quatre endroits où les deux courbes se touchent."
+  ],
+  "a_voir": "Sur le même rayon, le point bleu est deux fois plus près de l’origine que le point violet."
+ },
+ {
+  "code": "40-103",
+  "a_dire": "L’ellipse x = a cos t, y = b sin t est un cercle étiré : ici 4 en largeur et 2 en hauteur.",
+  "legende_titre": "Un cercle écrasé en hauteur",
+  "lecture": [
+   "La courbe bleue est l’ellipse x = 4 cos t, y = 2 sin t : elle passe par (4 ; 0) et (0 ; 2).",
+   "Les deux cercles en pointillés gris sont de rayon 4 et de rayon 2.",
+   "La flèche orange part du cercle de rayon 4 et arrive sur l’ellipse : la hauteur passe de 4 à 2."
+  ],
+  "a_voir": "L’ellipse touche le grand cercle à droite et le petit cercle en haut."
+ },
+ {
+  "code": "40-104",
+  "a_dire": "Pour reconnaître la courbe de r = 4 cos θ + 2 sin θ, on suit cinq étapes : multiplier par r, remplacer, regrouper, compléter les carrés, lire.",
+  "legende_titre": "Cinq étapes pour reconnaître une courbe",
+  "lecture": [
+   "Le cadre bleu du haut est la règle de départ.",
+   "Chaque cadre orange de gauche nomme une étape ; le cadre bleu à droite montre l’équation obtenue.",
+   "Les flèches orange relient les étapes dans l’ordre, de haut en bas.",
+   "Le cadre vert du bas est la lecture : un cercle de centre (2 ; 1) et de rayon √5."
+  ],
+  "a_voir": "Cinq cadres du haut vers le bas, et le dernier, vert, donne la courbe."
+ },
+ {
+  "code": "40-105",
+  "a_dire": "La règle r = 8 cos θ + 9 sin θ donne un cercle de centre (4 ; 4,5) et de rayon environ 6,02, et ce centre n’est plus sur l’axe horizontal.",
+  "legende_titre": "Un cercle dont le centre quitte l’axe",
+  "lecture": [
+   "Le cercle bleu est la courbe, tracée avec l’échelle des axes gris.",
+   "Les deux traits orange épais sont les distances de la fiche : 8 pour θ = 0 et 9 pour θ = 90°.",
+   "Le point vert est le centre (4 ; 4,5) ; le pointillé gris est le rayon, d’environ 6,02, jusqu’à O.",
+   "Les deux lignes du haut donnent la règle et l’équation en x et y."
+  ],
+  "a_voir": "Le centre vert est à gauche et au-dessus de l’axe : il n’est pas sur l’axe horizontal."
+ },
+ {
+  "code": "40-106",
+  "a_dire": "Le cercle passe par O : en polaire, r = 0 quand 8 cos θ = −9 sin θ, pour l’angle θ₀ ≈ 138,4°.",
+  "legende_titre": "Le cercle passe par le pôle",
+  "lecture": [
+   "Le cercle bleu est r = 8 cos θ + 9 sin θ ; le point vert O est le pôle, sur le cercle.",
+   "Le trait orange est le rayon d’angle θ₀ ≈ 138,4° ; l’arc orange est cet angle depuis l’axe gris.",
+   "Les trois lignes du bas donnent le calcul : 8 cos θ₀ ≈ −5,98 et 9 sin θ₀ ≈ +5,98, somme 0, donc r = 0."
+  ],
+  "a_voir": "Le long du trait orange, la distance est 0 : la courbe arrive en O."
+ },
+ {
+  "code": "40-107",
+  "a_dire": "Pour écrire la droite 8x − 3y + 10 = 0 en polaire : remplacer x et y, mettre r en facteur, diviser.",
+  "legende_titre": "Une droite écrite avec r et θ",
+  "lecture": [
+   "Le cadre bleu du haut est la droite de départ ; les cadres orange sont les deux étapes intermédiaires.",
+   "Les flèches orange disent le geste : remplacer x et y, mettre r en facteur, diviser.",
+   "Le cadre vert du bas est le résultat : r = −10 / (8 cos θ − 3 sin θ).",
+   "À droite, la droite bleue passe à côté du point gris O, car 10 n’est pas 0."
+  ],
+  "a_voir": "Trois gestes, de haut en bas, mènent du cadre bleu au cadre vert."
+ },
+ {
+  "code": "40-108",
+  "a_dire": "Un r négatif n’est pas une erreur : pour θ = 0, r = −1,25 fait reculer le point en (−1,25 ; 0), et il vérifie la droite de départ.",
+  "legende_titre": "Reculer au lieu d’avancer",
+  "lecture": [
+   "La droite bleue est 8x − 3y + 10 = 0 ; la droite grise horizontale est l’axe polaire, pour θ = 0.",
+   "La flèche orange part de O vers la gauche : la distance r = −1,25 recule au lieu d’avancer.",
+   "Le point vert (−1,25 ; 0), au bout de la flèche, est sur la droite bleue.",
+   "Le calcul vert en bas le vérifie : 8 × (−1,25) + 10 = 0."
+  ],
+  "a_voir": "La flèche orange va vers la gauche et s’arrête sur la droite bleue."
+ }
+]

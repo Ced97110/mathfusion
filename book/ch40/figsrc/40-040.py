@@ -1,0 +1,27 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# r = sin θ : P (0,5 ; 30°) vérifie la règle ; son reflet par l'axe x est (0,5 ; -30°) ou (-0,5 ; 150°) : aucun nom ne convient
+fig, ax = canvas(88)
+o = (22, 42); u = 34
+def pt(r, deg): return (o[0] + u * r * math.cos(math.radians(deg)), o[1] + u * r * math.sin(math.radians(deg)))
+arrow(ax, (o[0] - 20, o[1]), (o[0] + 24, o[1]), 'fixe', lw=0.9)
+text(ax, o[0] + 26, o[1] - 3, r'$x$', 'fixe', 's')
+line(ax, [pt(math.sin(math.radians(a)), a) for a in range(0, 181, 3)], 'sujet', lw=1.4)
+P = pt(0.5, 30); R = pt(0.5, -30)
+line(ax, [P, R], 'fixe', lw=0.8, dash=True)
+line(ax, [o, P], 'sujet', lw=1.0); line(ax, [o, R], 'limite', lw=1.0, dash=True)
+disc(ax, P[0], P[1], 1.4, 'sujet'); disc(ax, R[0], R[1], 1.4, 'limite', fill=False); disc(ax, o[0], o[1], 0.8, 'encre')
+text(ax, o[0] - 4, o[1] - 3, 'O', 'encre', 's')
+text(ax, P[0] + 9, P[1] + 10, '$P$ (0,5 ; 30°)', 'sujet', 's')
+text(ax, R[0] + 5, R[1] - 4, 'reflet', 'limite', 's')
+text(ax, 44, 84, r'$r = \sin\theta$ : le reflet n’est pas sur la courbe', 'encre', 'm')
+# deux noms du reflet, chacun testé
+box(ax, 50, 36, 36, 20, 'limite', fill=True, size='s')
+text(ax, 68, 52, 'nom 1 : (0,5 ; −30°)', 'limite', 's')
+text(ax, 68, 46, r'$\sin(-30°) = -0{,}5$', 'limite', 's')
+text(ax, 68, 40, r'$-0{,}5 \neq 0{,}5$', 'limite', 's')
+box(ax, 50, 10, 36, 20, 'limite', fill=True, size='s')
+text(ax, 68, 26, 'nom 2 : (−0,5 ; 150°)', 'limite', 's')
+text(ax, 68, 20, r'$\sin 150° = 0{,}5$', 'limite', 's')
+text(ax, 68, 14, r'$0{,}5 \neq -0{,}5$', 'limite', 's')
+text(ax, 24, 14, 'aucun nom ne convient', 'limite', 's')
+save(fig, '40-040')
