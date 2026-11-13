@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 4</div>
-<h1>Les preuves</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 4</div>
+<h1 class="ct">Les preuves</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 3, tu as appris à juger un argument : il est valide si la conclusion est vraie chaque fois que les prémisses le sont. Une preuve est un argument valide qui part de ce qu’on sait et arrive à ce qu’on veut établir. Ce chapitre montre les cinq formes de preuve les plus courantes. Pour chacune, tu verras sa forme logique, pourquoi elle est valide, et des exemples entièrement rédigés.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 4 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Des milliards d’exemples ne suffisent pas</h3>
 <p>En 1742, le mathématicien allemand Christian Goldbach se pose une question. Tout nombre pair plus grand que <span class="m">2</span> est-il la somme de deux nombres premiers ? Essaie :</p>
 <img class="vm" src="/discretes/img/c004/p0107_1.svg" alt="4 = 2 + 2, 6 = 3 + 3, 8 = 3 + 5," style="--w:24.12" loading="lazy">
@@ -24,7 +30,8 @@
 <img class="vm" src="/discretes/img/c004/p0109_5.svg" alt="𝑎𝑏 = (2𝑘 + 1)𝑏 2𝑛 = 2𝑘𝑏 + 𝑏 2𝑛 − 2𝑘𝑏 = 𝑏 2(𝑛 − 𝑘𝑏) = 𝑏." style="--w:24.12" loading="lazy">
 <p>Donc <span class="m">𝑏</span> est pair.</p>
 <p>Les quatre calculs sont justes. Mais un calcul juste ne suffit pas. Il faut encore qu’il prouve <i>l’énoncé demandé</i>. Décide, pour chaque texte, s’il est une preuve. La réponse est à la fin de la partie 4.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 4 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Ce que veulent dire « pair » et « impair »</h3>
 <p>Presque toutes les preuves de ce chapitre parlent de nombres pairs et impairs. La figure 4.1 montre ces deux mots comme des dispositions de points.</p>
 <img class="vf" src="/discretes/img/c004/p0110_6.svg" alt="pair : deux rangées égales, rien ne dépasse" style="--w:24.12" loading="lazy">
@@ -46,7 +53,8 @@
 <p>Ligne bleue : la preuve par contraposée de <span class="m">𝑃 → 𝑄</span>. Tu supposes <span class="m">¬𝑄</span>. Tu expliques. Tu arrives à <span class="m">¬𝑃</span>. Tu prouves donc <span class="m">¬𝑄 → ¬𝑃</span> par une preuve directe. Au chapitre 2, tu as vu que cette implication est logiquement équivalente à <span class="m">𝑃 → 𝑄</span>.</p>
 <p>Ligne rouge : la preuve par l’absurde d’un énoncé <span class="m">𝑃</span>. Tu supposes <span class="m">¬𝑃</span>. Tu expliques. Tu arrives à quelque chose d’impossible. Donc <span class="m">¬𝑃</span> est faux, et <span class="m">𝑃</span> est vrai.</p>
 <p>La partie suivante dit précisément pourquoi chaque ligne est un argument valide.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 4 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Les définitions dont les preuves se servent</h3>
 <p>Une preuve répète sans cesse la question « qu’est-ce que cela veut dire ? ». Il faut donc des définitions exactes.</p>
 <img class="vm" src="/discretes/img/c004/p0113_12.svg" alt="Définition : pair, impair Un entier 𝑛 est pair s’il existe un entier 𝑘 tel que 𝑛 = 2𝑘. Un entier 𝑛 est impair s’il existe un entier 𝑘 tel que 𝑛 = 2𝑘 + 1. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
@@ -68,7 +76,8 @@
 <img class="vm" src="/discretes/img/c004/p0117_21.svg" alt="Pourquoi c’est vrai. ∃𝑥 𝑃(𝑥) demande une valeur au moins : 𝑥0 en est une. Pour la seconde phrase : par la négation des quantificateurs (chapitre 3), ¬∀𝑥 𝑃(𝑥) équivaut à ∃𝑥 ¬𝑃(𝑥). Une valeur 𝑥0 avec 𝑃(𝑥0) faux prouve ce dernier énoncé. Le symbole 𝑥0 se lit « 𝑥 zéro » : c’est une valeur précise de 𝑥, par exemple 𝑥0 = 41. Règle : disjonction de cas Prémisses. Au moins un des énoncés 𝑄1, 𝑄2, … , 𝑄𝑛 est vrai. On a prouvé 𝑄1 → 𝑃, 𝑄2 → 𝑃, …, 𝑄𝑛 → 𝑃. Conclusion. 𝑃 est vrai." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c004/p0117_22.svg" alt="Pourquoi c’est vrai. L’indice numérote les cas : 𝑄 est le cas numéro 1, 𝑄 le cas 1 2 numéro 2. Avec deux cas 𝑄 et ¬𝑄, c’est la règle « 𝑄 → 𝑃, ¬𝑄 → 𝑃, donc 𝑃 » vérifiée par table au chapitre 3. Avec 𝑛 cas : l’un des 𝑄𝑖 est vrai, disons 𝑄3. Comme 𝑄3 → 𝑃 est vrai, le modus ponens donne 𝑃. Le point à surveiller : les cas doivent couvrir toutes les situations. Sinon, une situation hors des cas" style="--w:24.19" loading="lazy">
 <p>échappe à la preuve.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 4 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Lire une preuve ligne par ligne : l’infinité des nombres premiers</h3>
 <img class="vm" src="/discretes/img/c004/p0118_23.svg" alt="Règle : il y a une infinité de nombres premiers Prémisses. Aucune, en dehors des définitions et de deux faits connus sur les entiers (rappelés plus bas). Conclusion. Il existe une infinité de nombres premiers." style="--w:24.19" loading="lazy">
 <p>Deux faits servent dans la preuve. Premier fait : la factorielle. On note <span class="m">𝑝!</span> (lu « factorielle <span class="m">𝑝</span> ») le produit <span class="m">𝑝×(𝑝−1)×⋯×2×1</span>. Par exemple, <span class="m">5! = 5 × 4 × 3 × 2 × 1 = 120</span>. Chaque entier de <span class="m">1</span> à <span class="m">𝑝</span> divise <span class="m">𝑝!</span>, car il figure dans le produit. Second fait : tout entier <span class="m">𝑁 ≥ 2</span> est divisible par au moins un nombre premier. Par exemple <span class="m">121 = 11 × 11</span> est divisible par <span class="m">11</span>. La raison : prends le plus petit diviseur <span class="m">𝑑 ≥ 2</span> de <span class="m">𝑁</span>. S’il n’était pas premier, il aurait un diviseur <span class="m">𝑒</span> avec <span class="m">2 ≤ 𝑒 &lt; 𝑑</span>, et <span class="m">𝑒</span> diviserait aussi <span class="m">𝑁</span> (exemple 2 plus bas). Ce serait un diviseur de <span class="m">𝑁</span> plus petit que <span class="m">𝑑</span>. Donc <span class="m">𝑑</span> est premier.</p>
@@ -211,7 +220,8 @@
 <img class="vm" src="/discretes/img/c004/p0140_74.svg" alt="∀𝑝 ∀𝑞 (¬Pr(𝑝) ∨ ¬Pr(𝑞) ∨ 𝑛 ≠ 𝑝 + 𝑞))." style="--w:24.12" loading="lazy">
 <p>En mots : « il existe un entier <span class="m">𝑛</span>, pair et plus grand que <span class="m">2</span>, tel que, pour tous entiers <span class="m">𝑝</span> et <span class="m">𝑞</span>, <span class="m">𝑝</span> n’est pas premier, ou <span class="m">𝑞</span> n’est pas premier, ou <span class="m">𝑛 ≠ 𝑝 + 𝑞</span> ». Une preuve par l’absurde supposerait cet énoncé et chercherait une contradiction. Si tu la trouves, tu auras résolu le problème ouvert le plus célèbre des mathématiques.</p>
 <p>La forme logique ne donne pas la preuve. Elle donne la première et la dernière ligne. Le milieu demande de l’invention.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 4 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Tu disposes maintenant des cinq formes de preuve. Le reste du livre s’en sert à chaque page.</p>
 <p><b>Ensembles.</b> Au chapitre 5, pour prouver qu’un ensemble <span class="m">𝐴</span> est inclus dans un ensemble <span class="m">𝐵</span>, tu prendras un élément <span class="m">𝑥</span> quelconque de <span class="m">𝐴</span> et tu montreras qu’il est dans <span class="m">𝐵</span>. C’est une preuve directe de <span class="m">∀𝑥 (𝑥 ∈</span> <span class="m">𝐴 → 𝑥 ∈ 𝐵)</span>.</p>
 <p><b>Dénombrement.</b> Au chapitre 10, une preuve combinatoire montrera qu’une égalité est vraie en comptant le même ensemble de deux façons. C’est une nouvelle forme de preuve directe.</p>
@@ -221,5 +231,7 @@
 <img class="vm" src="/discretes/img/c004/p0141_75.svg" alt="Lien avec un autre chapitre La preuve de l’exemple 3 (« si 𝑛2 est pair, alors 𝑛 est pair ») est la raison pour" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c004/p0141_76.svg" alt="laquelle la preuve de l’irrationalité de √2 fonctionne. Au chapitre 20, le lemme de Gauss donnera la version générale : si un nombre premier 𝑝 divise 𝑛2, alors 𝑝 divise 𝑛. Avec elle, la même preuve montre que" style="--w:24.12" loading="lazy">
 <img class="vm" src="/discretes/img/c004/p0141_77.svg" alt="√3, √5, √7 sont irrationnels." style="--w:24.19" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 4 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c004/p0142_78.svg" alt="À toi de chercher La preuve de l’infinité des nombres premiers fabrique 𝑁 = 𝑝! + 1. Pour 𝑝 = 5, 𝑁 = 121 = 11 × 11 n’est pas premier. Pour 𝑝 = 3, 𝑁 = 3! + 1 = 7 est premier. La preuve ne dit donc pas que 𝑁 est premier. Elle dit seulement que 𝑁 a un diviseur premier plus grand que 𝑝. Pourquoi la preuve reste-t-elle correcte même quand 𝑁 n’est pas premier ? Pourrait-on remplacer 𝑝! + 1 par 𝑝! − 1 ? Par 2 × 3 × 5 × ⋯ × 𝑝 + 1, le produit des seuls nombres premiers jusqu’à 𝑝 ? Qu’est-ce qu’un nombre doit vérifier pour pouvoir jouer le rôle de 𝑁 dans cette preuve ?" style="--w:24.19" loading="lazy">
+</div>
