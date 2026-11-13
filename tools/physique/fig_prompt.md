@@ -17,6 +17,8 @@ Une figure ne devient interactive que si une grandeur du concept peut varier et 
 - **État de départ = la figure du livre** : mêmes éléments, lettres, valeurs, couleurs, disposition. `resetButton` y ramène.
 - Le curseur porte sur ce qui change dans le texte. Les valeurs affichées sont recalculées par la formule du livre, jamais écrites en dur.
 - **Aucun nombre inventé.** Bornes des curseurs autour de la valeur du livre ; tout nombre mesuré sur le dessin est signalé dans le rapport.
+- **Les nombres du texte priment sur les mesures du dessin.** Si le dessin n'est pas à l'échelle, l'état de départ affiche les valeurs du texte (vérifie-les en refaisant le calcul du texte) ; le dessin s'en approche autant que possible.
+- Toute étiquette suit l'objet qu'elle nomme : aucune position en dur pour un texte placé près d'un objet qui bouge.
 - Animation seulement avec un bouton Lecture/Pause, jamais automatique, coupée si `reducedMotion()`.
 - `aria-label` sur le SVG qui dit ce que montre la figure. Aucune décoration, aucune métaphore.
 

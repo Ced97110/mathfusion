@@ -12,6 +12,7 @@ Regarde les trois images avec ton outil de lecture d'image. Réponds à quatre q
 1. Chaque élément de la figure du livre (objet, lettre, flèche, courbe, valeur) est-il dans l'état de départ, à la même place relative et de la même couleur ? Liste ce qui manque ou diffère.
 2. Les nombres écrits dans la version interactive sont-ils compatibles avec la légende et le texte ? Liste tout nombre absent du livre.
 3. Dans l'état modifié, ce qui change correspond-il à ce que dit le texte, et la figure reste-t-elle lisible et dans le cadre ?
+Règle : si le dessin du livre n'est pas à l'échelle des nombres de son texte, la version interactive suit le texte. Une forme différente du dessin n'est alors pas un écart, à condition que les nombres affichés soient ceux du texte ; vérifie-les en refaisant le calcul du texte.
 4. Verdict : `OK` si rien ne manque et rien n'est faux ; `ECART` sinon.
 
 Écris `{BATCH}/check.json` : `{"<id>": {"verdict": "OK" | "ECART", "ecarts": ["…"]}}` avec une entrée par id. Vérifie à la fin que le nombre d'entrées égale le nombre d'ids.
