@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, 'une classe de couples = une fraction', 'encre', 's') if False else text(ax, 44, 71, 'une classe = une fraction', 'encre', 'm')
+box(ax, 4, 34, 80, 28, 'sujet', fill=True)
+box(ax, 10, 42, 30, 12, 'fixe', label=r'$(3,\,4)$', size='m'); box(ax, 48, 42, 30, 12, 'fixe', label=r'$(6,\,8)$', size='m')
+text(ax, 44, 48, '∼', 'sujet', 'xl')
+text(ax, 44, 26, r'$3\times8=4\times6$', 'resultat', 'l')
+text(ax, 44, 19, r'$a\,d=b\,c$', 'resultat', 'm')
+box(ax, 2, 2, 40, 10, 'sujet', label='entiers → ℚ', size='s'); box(ax, 46, 2, 40, 10, 'autre', label='autre ensemble → corps', size='s')
+save(fig, '43-151')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 6, 70, 28, -21, 39, step=12, arrow_right=True)
+for v in (-21, -9, 3, 15, 27, 39): disc(ax, f(v), 28, 1.8, 'sujet')
+disc(ax, f(9), 28, 1.8, 'limite')
+text(ax, f(9), 24.6, '9', 'limite', 's')
+text(ax, f(9), 33, 'hors classe', 'limite', 's')
+brace(ax, f(-21), f(39), 38, 'sujet', label='classe de 3', down=False)
+text(ax, 44, 9, 'en relation avec 3 :\ndifférence = multiple de 12', 'encre', 'm')
+save(fig, '43-062')

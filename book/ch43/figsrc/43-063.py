@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(42)
+box(ax, 2, 14, 44, 22, 'fixe')
+text(ax, 24, 30.5, 'l’ensemble des nombres', 'encre', 'm')
+text(ax, 24, 25, 'dont la différence avec 3', 'encre', 'm')
+text(ax, 24, 19.5, 'est un multiple de 12', 'encre', 'm')
+arrow(ax, (47.5, 25), (60, 25), 'varie')
+text(ax, 54, 30, 'se note', 'varie', 's')
+text(ax, 73, 24, '3', 'sujet', 'l')
+line(ax, [(70.4, 27.4), (75.6, 27.4)], 'varie', lw=1.4)
+text(ax, 86, 9, 'barre : « classe de »', 'varie', 's', ha='right')
+text(ax, 86, 4, 'le nombre : l’élément', 'sujet', 's', ha='right')
+save(fig, '43-063')

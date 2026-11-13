@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 2, 78, 'sans réflexivité', 'sujet', 's', ha='left')
+box(ax, 4, 60, 22, 12, 'fixe', fill=False); disc(ax, 10, 66, 1.4, 'fixe'); disc(ax, 20, 66, 1.4, 'fixe')
+text(ax, 10, 62.5, '1', 'fixe', 's'); text(ax, 20, 62.5, '2', 'fixe', 's')
+disc(ax, 40, 66, 1.6, 'limite'); text(ax, 40, 60.5, '3', 'limite', 'm'); text(ax, 62, 66, 'hors de toute classe', 'limite', 's')
+text(ax, 2, 50, 'sans transitivité', 'sujet', 's', ha='left')
+box(ax, 4, 30, 40, 9, 'sujet', fill=False); box(ax, 26, 40, 40, 9, 'autre', fill=False)
+text(ax, 10, 34.5, r'$\bar{0}$', 'sujet', 'm'); text(ax, 60, 44.5, r'$\bar{1}$', 'autre', 'm')
+text(ax, 76, 38.5, 'se chevauchent', 'limite', 's')
+text(ax, 2, 22, 'sans symétrie', 'sujet', 's', ha='left')
+disc(ax, 14, 8, 2.2, 'fixe'); disc(ax, 44, 8, 2.2, 'fixe'); text(ax, 14, 14, '1', 'fixe', 'm'); text(ax, 44, 14, '2', 'fixe', 'm')
+arrow(ax, (17, 8), (41, 8), 'varie'); arrow(ax, (41, 5), (17, 5), 'limite') if False else None
+line(ax, [(41, 4), (17, 4)], 'limite', dash=True); text(ax, 29, 4, '×', 'limite', 'l', weight='bold')
+text(ax, 66, 8, 'pas de retour', 'limite', 's')
+save(fig, '43-073')

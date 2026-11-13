@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, 'la division dépend des noms', 'encre', 'm')
+box(ax, 2, 44, 28, 16, 'sujet'); text(ax, 16, 56, 'noms', 'sujet', 's'); text(ax, 16, 49, r'$6$ et $3$', 'sujet', 'm')
+box(ax, 2, 12, 28, 16, 'autre'); text(ax, 16, 24, 'autres noms', 'autre', 's'); text(ax, 16, 17, r'$18$ et $15$', 'autre', 'm')
+line(ax, [(16, 43.5), (16, 28.5)], 'fixe', dash=True)
+text(ax, 38, 36, 'mêmes positions', 'fixe', 's', ha='left') if False else text(ax, 19, 36, 'mêmes positions', 'fixe', 's', ha='left')
+arrow(ax, (30.5, 52), (45, 52), 'sujet'); arrow(ax, (30.5, 20), (45, 20), 'autre')
+box(ax, 46, 44, 38, 16, 'resultat', label=r'$6\div3=2$', size='m')
+box(ax, 46, 12, 38, 16, 'limite', label=r'$18\div15=1{,}2$', size='m')
+text(ax, 65, 36, '≠', 'limite', 'xl')
+save(fig, '43-154')

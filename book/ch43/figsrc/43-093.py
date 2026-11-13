@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'règle : « la classe donne son nom »', 'fixe', 's')
+box(ax, 4, 22, 34, 36, 'sujet')
+disc(ax, 14, 40, 3.4, 'sujet', label='1'); disc(ax, 28, 40, 3.4, 'sujet', label='4')
+disc(ax, 74, 50, 3.6, 'limite', label='1'); disc(ax, 74, 30, 3.6, 'limite', label='4')
+arrow(ax, (16, 43), (70, 49), 'limite'); arrow(ax, (28, 37), (70.5, 31), 'limite')
+text(ax, 52, 54, 'nom 1', 'limite', 's'); text(ax, 52, 26, 'nom 4', 'limite', 's')
+text(ax, 74, 40, r'$\neq$', 'limite', 'l', weight='bold')
+text(ax, 44, 8, 'deux valeurs : mal définie', 'limite', 'm', weight='bold')
+save(fig, '43-093')

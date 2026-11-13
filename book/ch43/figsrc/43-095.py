@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'$h\circ\nu=f$ force la valeur de $h$', 'sujet', 'm', weight='bold')
+disc(ax, 10, 26, 3.6, 'fixe', label='1', size='l'); box(ax, 32, 18, 24, 16, 'sujet', label=r'$\bar{1}=\{1,4\}$', size='s')
+disc(ax, 78, 26, 4, 'resultat', label='1', size='l')
+arrow(ax, (14, 26), (31.5, 26), 'varie'); arrow(ax, (57, 26), (73.5, 26), 'sujet')
+arrow(ax, (10, 31), (78, 31), 'fixe', curve=-0.3)
+text(ax, 22, 21, r'$\nu$', 'varie', 'l'); text(ax, 65, 21, r'$h$', 'sujet', 'l'); text(ax, 44, 41, r'$f$', 'fixe', 'l')
+text(ax, 44, 9, r'$h(\bar{1})=f(1)=1$ : aucun choix', 'resultat', 's', weight='bold')
+save(fig, '43-095')

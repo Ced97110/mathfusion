@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+X = 36
+text(ax, 2, 71, 'sans réflexivité', 'limite', 's', ha='left')
+box(ax, X, 62, 24, 12, 'sujet')
+text(ax, X + 6, 68, '1', 'sujet', 'm'); text(ax, X + 17, 68, '2', 'sujet', 'm')
+box(ax, X + 30, 62, 12, 12, 'limite', dash=True, fill=False, label='3', size='m')
+text(ax, X + 26, 58, '3 : aucune classe', 'limite', 's')
+text(ax, 2, 43, 'sans symétrie', 'limite', 's', ha='left')
+box(ax, X, 34, 44, 15, 'autre'); box(ax, X + 3, 36, 26, 11, 'sujet')
+text(ax, X + 22, 30, 'classes emboîtées', 'limite', 's')
+text(ax, 2, 17, 'sans transitivité', 'limite', 's', ha='left')
+box(ax, X, 10, 28, 14, 'sujet', fill=False, lw=1.2); box(ax, X + 14, 7, 28, 14, 'autre', fill=False, lw=1.2)
+text(ax, X + 22, 3, 'classes qui se chevauchent', 'limite', 's')
+save(fig, '43-144')

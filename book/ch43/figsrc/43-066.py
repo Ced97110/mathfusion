@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 38, 30, 16, 'sujet', label=r'$\bar{x}$', size='l')
+box(ax, 54, 38, 30, 16, 'autre', label=r'$[x]$', size='l')
+text(ax, 19, 58, 'le livre : la barre', 'sujet', 's'); text(ax, 69, 58, 'Judson : les crochets', 'autre', 's')
+text(ax, 44, 46, '=', 'resultat', 'l', weight='bold')
+box(ax, 14, 4, 60, 12, 'fixe', label=r'$\{y\in X\mid y\sim x\}$', size='m')
+text(ax, 44, 21, 'le même ensemble', 'fixe', 's')
+arrow(ax, (19, 37), (30, 17), 'fixe'); arrow(ax, (69, 37), (58, 17), 'fixe')
+save(fig, '43-066')

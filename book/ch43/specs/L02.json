@@ -1,0 +1,178 @@
+[
+ {
+  "code": "43-017",
+  "a_dire": "Les entiers 3 + 12k sont à la position 3, et après 11 on revient à 0.",
+  "legende_titre": "Les nombres qui tombent sur la position 3",
+  "lecture": [
+   "Sur l'horloge, le point bleu est la position 3 ; la flèche orange va de 11 à 0.",
+   "Sur la droite, les quatre points bleus sont −9, 3, 15 et 27.",
+   "Chaque flèche orange ajoute 12 au nombre de gauche."
+  ],
+  "a_voir": "Les nombres de la forme 3 + 12k sont tous au même point, et l'horloge repart à 0 après 11."
+ },
+ {
+  "code": "43-018",
+  "a_dire": "Les 12 positions coupent ℤ en 12 blocs, et chaque bloc contient une infinité d'entiers.",
+  "legende_titre": "12 blocs, tous infinis",
+  "lecture": [
+   "Chaque colonne est une position de l'horloge.",
+   "La colonne bleue est la position 3 : elle contient −9, 3, 15, 27 et d'autres.",
+   "Les points de suspension disent que la colonne continue vers le haut et vers le bas."
+  ],
+  "a_voir": "Il y a 12 colonnes, mais chaque colonne n'a pas de fin."
+ },
+ {
+  "code": "43-019",
+  "a_dire": "On dessine un point par bloc et on écrit quelques entiers à côté ; les autres se trouvent en ajoutant ou retirant 12.",
+  "legende_titre": "Un point, quelques noms",
+  "lecture": [
+   "Les 12 points sont les 12 blocs.",
+   "Le point bleu est la position 3 ; à côté, vous lisez 3, 15 et −9.",
+   "Le cadre orange est la règle : ajouter ou retirer 12 donne d'autres noms."
+  ],
+  "a_voir": "Un seul point suffit pour tout un bloc, avec la règle ±12."
+ },
+ {
+  "code": "43-020",
+  "a_dire": "Une relation binaire sur S est l'ensemble R des couples pour lesquels la règle répond oui, un sous-ensemble de S × S.",
+  "legende_titre": "Les couples où la règle dit oui",
+  "lecture": [
+   "La grille a 9 cases : une case par couple, avec le premier nombre à gauche et le second en haut.",
+   "Les 3 cases bleues, avec un rond, sont les couples où la règle « plus petit que » répond oui.",
+   "Les 6 cases grises sont les couples où elle répond non."
+  ],
+  "a_voir": "R est la partie bleue de la grille complète S × S."
+ },
+ {
+  "code": "43-021",
+  "a_dire": "a R b dit que le couple « a puis b » est dans R ; l'ordre compte.",
+  "legende_titre": "Lire a R b",
+  "lecture": [
+   "Les trois lettres du haut sont le premier nombre, la règle et le second nombre.",
+   "La case verte montre 2 R 5 avec la règle « plus petit que » : oui.",
+   "La case rouge montre 5 R 2 : non."
+  ],
+  "a_voir": "Écrire a R b, c'est dire oui pour le couple pris dans cet ordre."
+ },
+ {
+  "code": "43-022",
+  "a_dire": "Le même couple peut avoir des réponses différentes selon la relation sur ℝ.",
+  "legende_titre": "Un couple, trois règles",
+  "lecture": [
+   "Le couple (14 ; 2) est testé dans trois règles.",
+   "Chaque case bleue est une règle écrite avec les nombres.",
+   "La case de droite donne la réponse : verte pour oui, rouge pour non."
+  ],
+  "a_voir": "Pour 14 et 2, deux règles disent oui et une dit non."
+ },
+ {
+  "code": "43-023",
+  "a_dire": "Une relation d'équivalence a trois conditions : réflexive, symétrique et transitive.",
+  "legende_titre": "Les trois conditions réunies",
+  "lecture": [
+   "Chaque colonne est une relation : « plus petit ou égal », « écart au plus 1 » et l'équivalence.",
+   "Chaque ligne est une condition.",
+   "Un rond vert dit que la condition est vraie ; un rond rouge barré dit qu'elle est fausse."
+  ],
+  "a_voir": "Seule la dernière colonne a trois ronds verts."
+ },
+ {
+  "code": "43-024",
+  "a_dire": "La réflexivité dit qu'un élément est en relation avec lui-même.",
+  "legende_titre": "Un élément avec lui-même",
+  "lecture": [
+   "Chaque rond bleu est un élément seul.",
+   "La flèche part de l'élément et revient sur lui-même.",
+   "Elle est verte si la règle répond oui, rouge si elle répond non."
+  ],
+  "a_voir": "Une règle réflexive répond oui pour 13 avec 13, et la règle « plus grand que » répond non pour 5 avec 5."
+ },
+ {
+  "code": "43-025",
+  "a_dire": "La symétrie dit que si a E b est vrai, alors b E a est vrai aussi.",
+  "legende_titre": "Échanger l'ordre des deux éléments",
+  "lecture": [
+   "Chaque ligne est une règle avec deux éléments.",
+   "La flèche du haut va du bleu au violet ; celle du bas fait le chemin inverse.",
+   "Verte : oui. Rouge : non."
+  ],
+  "a_voir": "La règle « même chiffre des unités » répond oui dans les deux sens ; « plus petit ou égal » ne le fait pas."
+ },
+ {
+  "code": "43-026",
+  "a_dire": "La transitivité enchaîne a E b et b E c pour obtenir a E c.",
+  "legende_titre": "Deux oui qui s'enchaînent",
+  "lecture": [
+   "Les trois ronds bleus sont trois nombres à la suite.",
+   "Les deux flèches droites vertes sont les réponses oui connues.",
+   "L'arc du haut est la réponse pour le premier et le dernier : verte si oui, rouge si non."
+  ],
+  "a_voir": "Avec 3, 13 et 23 l'arc est vert ; avec 0, 1 et 2 il est rouge."
+ },
+ {
+  "code": "43-027",
+  "a_dire": "Les trois conditions sont trois faits sur « être dans le même bloc », écrits avec des couples.",
+  "legende_titre": "Trois faits sur les blocs",
+  "lecture": [
+   "Chaque cadre bleu est un bloc ; les ronds violets sont des éléments dedans.",
+   "Premier cadre : un élément est dans son bloc.",
+   "Deuxième cadre : si a est avec b, b est avec a. Troisième cadre : a avec b et b avec c donne a avec c."
+  ],
+  "a_voir": "Chaque condition s'écrit à gauche et se voit à droite dans un bloc."
+ },
+ {
+  "code": "43-028",
+  "a_dire": "Pour 27, 15 et 3, chaque différence est un multiple de 12, donc les trois nombres sont ensemble.",
+  "legende_titre": "Vérifier avec les différences",
+  "lecture": [
+   "Les ronds bleus sont les nombres 3, 15 et 27.",
+   "Les arcs orange montrent l'écart de 12 entre deux voisins ; l'arc violet montre l'écart de 24 entre 3 et 27.",
+   "Les trois lignes vertes écrivent chaque différence comme 12 fois un nombre."
+  ],
+  "a_voir": "Chaque différence est 12 fois un entier."
+ },
+ {
+  "code": "43-029",
+  "a_dire": "Dire que 15 est congru à 3 modulo 12 remplace la phrase « la différence est un multiple de 12 ».",
+  "legende_titre": "Un mot court pour une phrase longue",
+  "lecture": [
+   "Le cadre gris est la phrase longue.",
+   "Le cadre bleu est le mot court qui dit la même chose.",
+   "Sur l'horloge, le point bleu porte les deux noms 15 et 3."
+  ],
+  "a_voir": "Le mot congru dit que deux nombres ont la même place sur l'horloge."
+ },
+ {
+  "code": "43-030",
+  "a_dire": "Le signe a ≡ b (mod 12) écrit en une ligne « a et b ont la même position sur l'horloge à 12 positions ».",
+  "legende_titre": "Lire 109 ≡ 1 (mod 12)",
+  "lecture": [
+   "Les deux nombres bleus sont 109 et 1.",
+   "Le signe orange ≡ dit « même position », sans dire « égaux ».",
+   "La partie violette (mod 12) donne l'horloge utilisée."
+  ],
+  "a_voir": "Le signe ≡ n'est pas =, et (mod 12) dit quelle horloge."
+ },
+ {
+  "code": "43-031",
+  "a_dire": "Deux fractions a/b et c/d sont liées si ad = bc : on compare deux produits en croix.",
+  "legende_titre": "Tester deux fractions en croix",
+  "lecture": [
+   "Chaque cadre compare deux fractions : la bleue et la violette.",
+   "Les flèches orange en croix relient chaque haut au bas de l'autre fraction.",
+   "À droite, les deux produits sont comparés : égaux dans le cadre vert, différents dans le cadre rouge."
+  ],
+  "a_voir": "3/4 et 6/8 donnent 24 et 24 ; 3/4 et 5/6 donnent 18 et 20."
+ },
+ {
+  "code": "43-032",
+  "a_dire": "Simplifier une fraction, c'est écrire un autre nom du même bloc.",
+  "legende_titre": "Changer d'écriture, pas de bloc",
+  "lecture": [
+   "Le grand cadre bleu est un seul bloc.",
+   "Les trois fractions 6/8, 3/4 et 9/12 sont dedans.",
+   "Les flèches orange montrent l'action : diviser par 2, puis multiplier par 3."
+  ],
+  "a_voir": "Les trois fractions restent dans le même cadre."
+ }
+]
