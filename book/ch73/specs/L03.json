@@ -1,0 +1,186 @@
+[
+ {
+  "code": "73-033",
+  "a_dire": "Si A multiplie les aires par 2 et B par 3, faire B puis A les multiplie par 6.",
+  "legende_titre": "Deux facteurs d'aire qui se multiplient",
+  "lecture": [
+   "Le carré bleu de gauche a une aire de 1.",
+   "La première flèche orange, B, le transforme en trois carrés bleus : l'aire est 3.",
+   "La seconde flèche orange, A, double cette aire : les six carrés verts donnent l'aire 6."
+  ],
+  "a_voir": "Les facteurs 3 puis 2 se multiplient et donnent 6."
+ },
+ {
+  "code": "73-034",
+  "a_dire": "Tout a non nul est le déterminant d'une matrice diagonale qui porte a en haut à gauche et 1 ailleurs.",
+  "legende_titre": "Chaque valeur non nulle est atteinte",
+  "lecture": [
+   "Le rectangle bleu à gauche est un nombre a quelconque non nul.",
+   "La grille de quatre cases est la matrice : a en haut à gauche, 1 en bas à droite, 0 ailleurs.",
+   "Le rectangle vert à droite est son déterminant : a fois 1, soit a."
+  ],
+  "a_voir": "Le déterminant de cette matrice est exactement a, quel que soit a."
+ },
+ {
+  "code": "73-035",
+  "a_dire": "Le noyau du déterminant est fait des matrices de déterminant 1, car 1 est le neutre de la multiplication.",
+  "legende_titre": "Pourquoi le noyau garde le déterminant 1",
+  "lecture": [
+   "Le disque vert à gauche est le noyau : les matrices de déterminant 1.",
+   "La flèche orange det les envoie sur 1, le neutre de la multiplication.",
+   "Le produit 1 fois 1 reste dedans et l'identité y est.",
+   "Le disque rouge à droite garde le déterminant 2 : 2 fois 2 donne 4, dehors, et l'identité 1 est aussi dehors."
+  ],
+  "a_voir": "Le noyau est ce qui va sur le neutre 1 : seul le déterminant 1 est stable et contient l'identité."
+ },
+ {
+  "code": "73-036",
+  "a_dire": "SL_n(F) est la partie de GL_n(F) formée des matrices de déterminant 1.",
+  "legende_titre": "Une partie des matrices inversibles",
+  "lecture": [
+   "Le grand cadre gris est l'ensemble des matrices inversibles, de déterminant non nul.",
+   "Le cadre bleu à l'intérieur est le groupe spécial linéaire, de déterminant 1.",
+   "Les deux points verts, le cisaillement et la rotation de 30°, sont dedans.",
+   "Le point rouge, la dilatation de déterminant 2, est dans le cadre gris seulement."
+  ],
+  "a_voir": "Le cadre bleu est inclus dans le cadre gris."
+ },
+ {
+  "code": "73-037",
+  "a_dire": "Le produit g inverse, h, g reste de déterminant 1 quand h est de déterminant 1.",
+  "legende_titre": "Le déterminant ne quitte pas la valeur 1",
+  "lecture": [
+   "Le rectangle orange de gauche est le déterminant de g : 2.",
+   "Le rectangle bleu du milieu est le déterminant de h : 1.",
+   "Le second rectangle orange est le déterminant de l'inverse de g : 1/2.",
+   "Le rectangle vert est le produit : 1."
+  ],
+  "a_voir": "Les deux facteurs de g se compensent et le produit vaut 1."
+ },
+ {
+  "code": "73-038",
+  "a_dire": "Les classes de GL_n(F) modulo SL_n(F) correspondent une à une aux valeurs non nulles de F.",
+  "legende_titre": "Une classe par valeur du déterminant",
+  "lecture": [
+   "La grille bleue de 24 cases est la classe des matrices de déterminant 1.",
+   "La grille violette de 24 cases est la classe des matrices de déterminant 2.",
+   "Les deux flèches envoient chaque classe vers une valeur non nulle du corps, 1 ou 2, en vert."
+  ],
+  "a_voir": "48 matrices, 2 classes, 2 valeurs : une classe par valeur."
+ },
+ {
+  "code": "73-039",
+  "a_dire": "Le signe ≅ dit que deux groupes se multiplient de la même façon quand on renomme leurs éléments.",
+  "legende_titre": "Même table de produits, autres noms",
+  "lecture": [
+   "La colonne bleue donne les produits des restes non nuls 1 et 2.",
+   "La colonne violette donne les produits de 1 et de moins 1.",
+   "Chaque flèche orange relie deux produits de même forme.",
+   "Le renommage est : 2 devient moins 1."
+  ],
+  "a_voir": "Les trois lignes se correspondent quand 2 prend la place de moins 1."
+ },
+ {
+  "code": "73-040",
+  "a_dire": "Deux matrices sont dans la même classe quand elles ont le même déterminant, même si elles agissent différemment.",
+  "legende_titre": "Même classe, actions différentes",
+  "lecture": [
+   "Le carré bleu est le carré d'aire 1.",
+   "Le rectangle orange large vient de la dilatation des largeurs.",
+   "Le rectangle orange haut vient de la dilatation des hauteurs.",
+   "Les deux ont une aire de 2 : elles sont dans la même classe, en vert."
+  ],
+  "a_voir": "Deux formes différentes, une même aire, une même classe."
+ },
+ {
+  "code": "73-041",
+  "a_dire": "SL_2(R) est fait des transformations du plan qui gardent l'aire et ne retournent pas les figures.",
+  "legende_titre": "Deux conditions résumées par det = 1",
+  "lecture": [
+   "Le carré bleu est le départ ; le point orange puis le point violet donnent un sens.",
+   "La rotation de 30° et le cisaillement, en vert, gardent l'aire et le sens.",
+   "La réflexion, en rouge, inverse le sens.",
+   "La dilatation, en rouge, change l'aire."
+  ],
+  "a_voir": "Seules les figures vertes remplissent les deux conditions."
+ },
+ {
+  "code": "73-042",
+  "a_dire": "La matrice e_ij a un 1 en ligne i, colonne j, des 0 ailleurs ; l'ordre de i et j compte.",
+  "legende_titre": "Un seul 1, à une place précise",
+  "lecture": [
+   "La grille de gauche a son 1 bleu en ligne 1, colonne 2 : c'est e 1 2.",
+   "La grille de droite a son 1 bleu en ligne 2, colonne 1 : c'est e 2 1.",
+   "Toutes les autres cases, grises, valent 0.",
+   "Le signe rouge dit que ces deux grilles sont différentes."
+  ],
+  "a_voir": "Échanger i et j déplace le 1."
+ },
+ {
+  "code": "73-043",
+  "a_dire": "T_ij(b) est l'identité avec b ajouté dans la case (i, j) hors de la diagonale.",
+  "legende_titre": "L'identité avec une case changée",
+  "lecture": [
+   "La grille grise de gauche est l'identité de taille deux.",
+   "La grille de droite est la même, mais la case orange de la ligne 1, colonne 2 contient 3.",
+   "La flèche orange est l'ajout de 3 dans cette case."
+  ],
+  "a_voir": "Une seule case, hors de la diagonale, diffère de l'identité."
+ },
+ {
+  "code": "73-044",
+  "a_dire": "Une transvection fait glisser chaque plan de l'espace d'une longueur proportionnelle à sa profondeur.",
+  "legende_titre": "Des plans entiers qui glissent",
+  "lecture": [
+   "Le plan gris, à profondeur 0, ne bouge pas.",
+   "Le plan bleu, à profondeur 1, contient le point (1, 1, 1).",
+   "La flèche orange le fait glisser de 2 vers la droite : c'est le plan vert, avec le point (3, 1, 1)."
+  ],
+  "a_voir": "Le glissement dépend de la profondeur ; la hauteur ne change pas."
+ },
+ {
+  "code": "73-045",
+  "a_dire": "T_12(b) est le cisaillement horizontal (x, y) devient (x + by, y), ici avec b = 2.",
+  "legende_titre": "Chaque point glisse de 2 fois sa hauteur",
+  "lecture": [
+   "Les points bleus (0, 1) et (3, 1) sont les points de départ à hauteur 1.",
+   "Les flèches orange les déplacent de 2 vers la droite : points verts (2, 1) et (5, 1).",
+   "Le point gris (1, 0), à hauteur 0, ne bouge pas."
+  ],
+  "a_voir": "Le déplacement vaut 2 fois la hauteur, donc 0 sur l'axe horizontal."
+ },
+ {
+  "code": "73-046",
+  "a_dire": "Une transvection est triangulaire avec des 1 sur la diagonale, donc de déterminant 1 ; cela exige i différent de j.",
+  "legende_titre": "Pourquoi le déterminant vaut 1",
+  "lecture": [
+   "À gauche, la case orange 5 est hors de la diagonale ; les cases bleues de la diagonale valent 1 et 1, produit 1.",
+   "À droite, i égale j : la matrice est diagonale, avec 2 et 1 en rouge.",
+   "Son produit de diagonale vaut 2, pas 1."
+  ],
+  "a_voir": "La condition i différent de j garde la diagonale faite de 1."
+ },
+ {
+  "code": "73-047",
+  "a_dire": "Une transvection fixe tout point d'un hyperplan U et déplace chaque point d'un vecteur de U.",
+  "legende_titre": "Fixer U et glisser le long de U",
+  "lecture": [
+   "Le trait bleu épais est U, la droite fixée point par point.",
+   "À gauche, le cisaillement déplace (3, 2) en (5, 2), le long de U : en vert.",
+   "À droite, la dilatation fixe U mais déplace (3, 2) en (6, 2), hors de U : en rouge."
+  ],
+  "a_voir": "Le déplacement doit rester dans U."
+ },
+ {
+  "code": "73-048",
+  "a_dire": "Multiplier à gauche par T_ij(b) ajoute b fois la ligne j à la ligne i, comme une étape d'élimination.",
+  "legende_titre": "Une étape d'élimination est une matrice",
+  "lecture": [
+   "Le rectangle bleu du haut est la matrice multipliée à gauche, de lignes (1, 0) et (−3, 1).",
+   "À gauche, les lignes avant : (1, 2) et (3, 4).",
+   "La flèche orange est l'opération : ligne 2 moins 3 fois ligne 1.",
+   "À droite, les lignes après : (1, 2) et (0, −2) en vert."
+  ],
+  "a_voir": "La ligne 1 ne change pas, la ligne 2 devient (0, −2)."
+ }
+]

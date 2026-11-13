@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+o=(30,42); r=22
+def pol(rad,deg): return (o[0]+rad*math.cos(math.radians(deg)),o[1]+rad*math.sin(math.radians(deg)))
+def arc(rad,a0,a1,role,head=False,lw=1.2):
+    n=24; pts=[pol(rad,a0+(a1-a0)*i/n) for i in range(n+1)]
+    line(ax,pts[:-1] if head else pts,role,lw=lw)
+    if head: arrow(ax,pts[-2],pts[-1],role,lw=lw)
+ax.add_patch(Circle(o,r,ec=COL['fixe'],fc='none',lw=0.5,zorder=1))
+line(ax,[pol(r+4,180),pol(r+4,0)],'fixe',lw=0.8,dash=True)
+line(ax,[pol(r+4,225),pol(r+4,45)],'autre',lw=0.8,dash=True)
+text(ax,pol(r+3,0)[0]+2,o[1]-3,'axe 0°','fixe','s',ha='left')
+text(ax,pol(r+3,45)[0]+1,pol(r+3,45)[1]+2,'axe 45°','autre','s',ha='left')
+arc(9,0,45,'autre'); text(ax,o[0]+13,o[1]+2.2,'45°','autre','s')
+Pp=pol(r,90); S=pol(r,270); T=pol(r,180)
+arrow(ax,Pp,S,'fixe',lw=0.8); arrow(ax,S,T,'fixe',lw=0.8)
+arc(r-5,90,180,'resultat',head=True,lw=1.6)
+for p in (Pp,S,T): disc(ax,*p,1.1,'sujet')
+text(ax,Pp[0]+2,Pp[1]+3,r'$(0,1)$','sujet','s',ha='left')
+text(ax,S[0]+2,S[1]-3,r'$(0,-1)$','sujet','s',ha='left')
+text(ax,T[0]-2,T[1]-4,r'$(-1,0)$','sujet','s',ha='left')
+text(ax,68,76,r'$B(0)$ puis $B(90°)$','fixe','s')
+text(ax,68,66,r'$R(90°)$','resultat','m')
+text(ax,68,59,r'$90°=2\times45°$','resultat','s')
+save(fig,'73-234')

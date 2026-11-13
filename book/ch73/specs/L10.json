@@ -1,0 +1,186 @@
+[
+ {
+  "code": "73-145",
+  "a_dire": "Une tour est une liste de groupes, chacun contenu dans le précédent.",
+  "legende_titre": "Deux tours de groupes de matrices",
+  "lecture": [
+   "Chaque tour est une suite de cases emboîtées : chaque groupe est dans le précédent.",
+   "La tour bleue, de l'extérieur vers l'intérieur : matrices inversibles, déterminant 1, centre, puis {1}.",
+   "La tour violette : O, SO, Ω, puis {1}.",
+   "Le texte orange dans une case dit la condition ajoutée pour y entrer."
+  ],
+  "a_voir": "Chaque étage est plus petit que le précédent, avec une condition de plus."
+ },
+ {
+  "code": "73-146",
+  "a_dire": "La descente s'arrête à {1} ; on regarde un quotient par étage.",
+  "legende_titre": "Une descente qui s'arrête",
+  "lecture": [
+   "La case bleue en haut est le groupe des matrices de taille 2 de déterminant 1.",
+   "La case grise est son centre, qui a 2 matrices.",
+   "La case verte en bas est {1}, qui a une seule matrice.",
+   "Les flèches orange sont les quotients pris d'un étage au suivant."
+  ],
+  "a_voir": "Le nombre de matrices diminue jusqu'à 1, puis la descente s'arrête."
+ },
+ {
+  "code": "73-147",
+  "a_dire": "Le groupe euclidien a deux étages reliés par (A, x) ↦ A.",
+  "legende_titre": "Deux étages pour les déplacements",
+  "lecture": [
+   "La case bleue en haut est O(n) : on garde la matrice A et on oublie le décalage.",
+   "La case grise en bas est E(n), faite de couples (A, x).",
+   "Les deux cases orange sont les deux déplacements : même A, décalages (3, 1) et (5, 0).",
+   "Les flèches orange, notées (A, x) ↦ A, envoient chaque couple sur A."
+  ],
+  "a_voir": "Deux déplacements différents ont la même image A."
+ },
+ {
+  "code": "73-148",
+  "a_dire": "La matrice double les largeurs, divise les hauteurs par 2 et garde l'aire.",
+  "legende_titre": "Largeur double, hauteur moitié",
+  "lecture": [
+   "Le rectangle bleu est la photo de départ : 1 000 sur 800 pixels.",
+   "Le rectangle vert est la photo après : 2 000 sur 400 pixels.",
+   "La flèche orange donne l'action : largeur fois 2, hauteur divisée par 2.",
+   "Les deux aires valent 800 000."
+  ],
+  "a_voir": "Les deux aires sont égales : 2 fois un demi vaut 1."
+ },
+ {
+  "code": "73-149",
+  "a_dire": "𝑤(a) est le produit de trois cisaillements, dont le deuxième dépend de l'inverse de a.",
+  "legende_titre": "Trois cisaillements multipliés",
+  "lecture": [
+   "Le titre dit que w(a) est le produit de trois cisaillements.",
+   "Les deux cases bleues sont le même cisaillement, avec a en haut à droite.",
+   "La case orange est le cisaillement du milieu, avec moins l'inverse de a en bas à gauche.",
+   "Les deux lignes du bas donnent l'inverse puis l'opposé pour a = 2 et a = −1."
+  ],
+  "a_voir": "Seules les deux cases qui contiennent a changent quand a change."
+ },
+ {
+  "code": "73-150",
+  "a_dire": "Pour a = 2, le produit des trois cisaillements est la matrice de lignes (0, 2) et (−½, 0).",
+  "legende_titre": "Le calcul de 𝑤(2)",
+  "lecture": [
+   "Première ligne : le cisaillement bleu T12(2) fois le cisaillement orange T21(−½) donne la matrice grise.",
+   "La flèche grise reprend cette matrice grise au début de la seconde ligne.",
+   "Seconde ligne : la matrice grise fois le même cisaillement T12(2) donne la matrice verte.",
+   "La matrice verte, de lignes (0, 2) et (−½, 0), est w(2)."
+  ],
+  "a_voir": "Le calcul se fait en deux produits, un cisaillement à la fois."
+ },
+ {
+  "code": "73-151",
+  "a_dire": "Pour a = −1, les trois cisaillements donnent le quart de tour.",
+  "legende_titre": "Le quart de tour en trois cisaillements",
+  "lecture": [
+   "Le carré bleu est le carré de départ.",
+   "Le carré vert est son image : le point (1, 0) va en (0, 1), et (0, 1) va en (−1, 0).",
+   "La matrice verte est 𝑤(−1).",
+   "La ligne du bas donne les trois cisaillements."
+  ],
+  "a_voir": "Le quart de tour est un produit de trois cisaillements."
+ },
+ {
+  "code": "73-152",
+  "a_dire": "Le produit 𝑤(2) 𝑤(−1) donne la matrice de diagonale 2 et ½.",
+  "legende_titre": "Deux matrices, une dilatation",
+  "lecture": [
+   "La matrice bleue est 𝑤(2), la matrice orange est 𝑤(−1).",
+   "La matrice verte à droite est leur produit, de diagonale 2 et ½.",
+   "Les deux lignes du bas calculent la case en haut à gauche et la case en bas à droite."
+  ],
+  "a_voir": "Les deux cases calculées valent 2 et ½ ; le déterminant reste 1."
+ },
+ {
+  "code": "73-153",
+  "a_dire": "La méthode demande 𝑑 non nul : avec d = 0, la matrice n'a pas le déterminant 1.",
+  "legende_titre": "Pourquoi d ne peut pas être 0",
+  "lecture": [
+   "La case verte montre d = 3 : la diagonale est 3 et un tiers, et 3 fois un tiers vaut 1.",
+   "La case rouge montre d = 0 : aucun nombre fois 0 ne vaut 1.",
+   "La matrice rouge n'a que des 0 et son déterminant est 0."
+  ],
+  "a_voir": "Avec d = 0, le déterminant est 0 et aucun produit de cisaillements ne convient."
+ },
+ {
+  "code": "73-154",
+  "a_dire": "Une dilatation qui double les largeurs double l'aire : son déterminant est 2.",
+  "legende_titre": "Une dilatation qui double l'aire",
+  "lecture": [
+   "Le rectangle bleu à gauche est la photo de départ : aire 800 000.",
+   "À droite, la partie bleue est la photo de départ et la partie orange est ce qui s'ajoute.",
+   "L'aire finale est 1 600 000, donc le déterminant est 2 et non 1."
+  ],
+  "a_voir": "L'aire double, donc ce déterminant est différent de 1."
+ },
+ {
+  "code": "73-155",
+  "a_dire": "Un produit de cisaillements a toujours le déterminant 1, donc jamais 2.",
+  "legende_titre": "Le déterminant sépare deux cas",
+  "lecture": [
+   "Les trois cases bleues sont des cisaillements, chacun de déterminant 1.",
+   "La case verte est leur produit : 1 fois 1 fois 1 vaut 1.",
+   "La case rouge est la dilatation de déterminant 2 : elle n'est pas atteinte."
+  ],
+  "a_voir": "Le produit reste à 1, alors que la dilatation demande 2."
+ },
+ {
+  "code": "73-156",
+  "a_dire": "Les cisaillements fabriquent exactement les transformations de déterminant 1.",
+  "legende_titre": "Ce que les cisaillements fabriquent",
+  "lecture": [
+   "La grande case grise contient toutes les transformations réversibles.",
+   "La zone verte contient celles de déterminant 1 : le quart de tour y est.",
+   "Le point rouge, hors de la zone verte, est la dilatation de déterminant 2."
+  ],
+  "a_voir": "Tout ce qui est dans la zone verte est fabricable, et rien en dehors."
+ },
+ {
+  "code": "73-157",
+  "a_dire": "Une matrice qui commute avec les deux cisaillements a la forme p fois 1.",
+  "legende_titre": "De M à p fois 1",
+  "lecture": [
+   "La matrice bleue est M, de nombres p, q, r, s.",
+   "La matrice orange est M après l'étape avec 𝑇_(12)(1) : r vaut 0 et p vaut s.",
+   "La matrice verte est M après l'étape avec 𝑇_(21)(1) : q vaut 0, donc M est p fois 1."
+  ],
+  "a_voir": "Deux étapes donnent 0 en bas à gauche, 0 en haut à droite et le même p sur la diagonale."
+ },
+ {
+  "code": "73-158",
+  "a_dire": "M envoie la droite fixe D sur D ; un quart de tour sort de D.",
+  "legende_titre": "Un point de D reste sur D",
+  "lecture": [
+   "La ligne bleue horizontale est la droite D, dont chaque point reste en place.",
+   "Le point vert (6, 0) est l'image de (3, 0) par l'homothétie : il reste sur D.",
+   "Le point rouge (0, 3) est l'image de (3, 0) par le quart de tour : il sort de D."
+  ],
+  "a_voir": "Seule l'homothétie garde le point sur D."
+ },
+ {
+  "code": "73-159",
+  "a_dire": "Une transvection est un commutateur : g h g⁻¹ h⁻¹.",
+  "legende_titre": "Un cisaillement écrit en commutateur",
+  "lecture": [
+   "Les cases bleues sont D et son inverse, les cases orange sont T(2) et T(−2).",
+   "L'accolade du bas montre que D T(2) D⁻¹ donne le cisaillement de pente 8.",
+   "Ensuite, 8 moins 2 donne la pente 6 : la case verte."
+  ],
+  "a_voir": "Le produit de quatre matrices de cette forme est le cisaillement de pente 6."
+ },
+ {
+  "code": "73-160",
+  "a_dire": "Il suffit de traiter les transvections, car elles engendrent toutes les matrices de déterminant 1.",
+  "legende_titre": "Une seule famille à traiter",
+  "lecture": [
+   "La grande case grise contient les matrices de déterminant 1.",
+   "La case orange contient les transvections : une pour chaque pente.",
+   "Dans la ligne du bas, deux transvections orange de pente 1 se multiplient.",
+   "Le produit est la matrice violette (2, 1 ; 1, 1) : de déterminant 1, mais pas une transvection."
+  ],
+  "a_voir": "Une matrice de déterminant 1 s'écrit avec des transvections : il suffit de traiter les transvections."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+u = 5; O = (30, 32)
+ax.add_patch(Circle(O, 5 * u, ec=COL['fixe'], fc='none', lw=0.6, ls='--', zorder=1))
+arrow(ax, O, (O[0] + 3 * u, O[1] + 4 * u), 'sujet', lw=1.4)
+arrow(ax, O, (O[0] - 1.4 * u, O[1] + 4.8 * u), 'varie', lw=1.4)
+text(ax, 58, 52, r'$x=(3,\,4)$', 'sujet', 's', ha='left')
+text(ax, 3, 62, r'$Ax=(-1{,}4;\ 4{,}8)$', 'varie', 's', ha='left')
+text(ax, 58, 42, r'$\|x\|=5$', 'sujet', 's', ha='left')
+text(ax, 58, 36, r'$\|Ax\|=5$', 'varie', 's', ha='left')
+text(ax, 58, 26, 'même longueur', 'resultat', 's', ha='left')
+text(ax, 58, 21.5, r'$1{,}96+23{,}04=25$', 'resultat', 's', ha='left')
+save(fig, '73-088')

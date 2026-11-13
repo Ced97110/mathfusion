@@ -1,0 +1,184 @@
+[
+ {
+  "code": "73-049",
+  "a_dire": "Les transvections, multipliées entre elles, donnent toutes les matrices de déterminant 1.",
+  "legende_titre": "Des cisaillements qui font une matrice",
+  "lecture": [
+   "Les cases grises du haut sont trois cisaillements ; chaque case montre le carré en pointillé gris et le carré déformé en orange.",
+   "Leur produit donne le quart de tour.",
+   "Les six cases du bas sont six cisaillements ; leur produit donne la dilatation.",
+   "Les cases vertes sont des matrices de déterminant 1."
+  ],
+  "a_voir": "Une matrice de déterminant 1 est un produit de transvections."
+ },
+ {
+  "code": "73-050",
+  "a_dire": "L'élimination pousse une matrice de déterminant 1 jusqu'à la diagonale, chaque étape étant une transvection.",
+  "legende_titre": "De la matrice à l'identité",
+  "lecture": [
+   "La case bleue est la matrice A de départ.",
+   "Chaque flèche orange retire une ligne d'une autre : c'est une transvection.",
+   "La case verte est la matrice diagonale D où l'on s'arrête."
+  ],
+  "a_voir": "Deux étapes mènent de A à la diagonale."
+ },
+ {
+  "code": "73-051",
+  "a_dire": "Une homothétie donne le même résultat dans les deux ordres, une dilatation des largeurs non.",
+  "legende_titre": "Deux ordres, un résultat ou deux",
+  "lecture": [
+   "Les cases bleues sont la multiplication par 3 et le cisaillement, dans les deux ordres.",
+   "Les deux ordres donnent (6, 3) en vert.",
+   "Les cases violettes sont la dilatation des largeurs et le cisaillement.",
+   "Les deux ordres donnent (4, 1) et (3, 1) en rouge."
+  ],
+  "a_voir": "Seule la multiplication par 3 donne le même point dans les deux ordres."
+ },
+ {
+  "code": "73-052",
+  "a_dire": "Le centre est fait des homothéties ; une matrice qui n'est pas une homothétie en sort.",
+  "legende_titre": "Qui est dans le centre",
+  "lecture": [
+   "La grande case grise est l'ensemble des matrices inversibles.",
+   "La case verte est le centre : les homothéties a fois 1.",
+   "La case rouge est la dilatation des largeurs : elle ne commute pas avec le cisaillement."
+  ],
+  "a_voir": "La dilatation des largeurs est inversible mais hors du centre."
+ },
+ {
+  "code": "73-053",
+  "a_dire": "Une homothétie d·1 est dans SL quand d puissance n vaut 1.",
+  "legende_titre": "Quelle homothétie reste dans SL",
+  "lecture": [
+   "La case verte, moins 1 sur la diagonale, a le déterminant 1.",
+   "La case rouge, 2 sur la diagonale, a le déterminant 4.",
+   "Le cadre vert est dans le groupe, le cadre rouge est dehors."
+  ],
+  "a_voir": "Seule la matrice dont le déterminant est 1 reste dans le groupe."
+ },
+ {
+  "code": "73-054",
+  "a_dire": "Le déterminant de d·1 est le produit de n fois d, donc d puissance n.",
+  "legende_titre": "Trois fois le même nombre",
+  "lecture": [
+   "Les cases bleues de la diagonale contiennent toutes le nombre 2.",
+   "Les cases grises hors diagonale contiennent 0.",
+   "Le produit de la diagonale, en vert, donne 8."
+  ],
+  "a_voir": "La diagonale a n fois d, donc le déterminant est d puissance n."
+ },
+ {
+  "code": "73-055",
+  "a_dire": "Une homothétie envoie chaque point d'une droite par l'origine sur la même droite.",
+  "legende_titre": "Les points changent, la droite reste",
+  "lecture": [
+   "Les points bleus sont (1, 1), (2, 2) et (5, 5).",
+   "Les points verts sont leurs images par 3 : (3, 3), (6, 6) et (15, 15).",
+   "Les flèches orange vont de chaque point à son image.",
+   "Le point gris, l'origine, ne bouge pas."
+  ],
+  "a_voir": "Tous les points restent sur la même droite."
+ },
+ {
+  "code": "73-056",
+  "a_dire": "L'espace projectif est l'ensemble des droites par l'origine ; sur le corps à 2 éléments il en a 3.",
+  "legende_titre": "Les trois droites du plan",
+  "lecture": [
+   "Les points sont (0, 0), (1, 0), (0, 1) et (1, 1).",
+   "Chaque trait bleu passe par (0, 0) et par un autre point.",
+   "Il y a trois traits : l'ensemble de ces droites est le nouvel objet."
+  ],
+  "a_voir": "Trois droites passent par l'origine."
+ },
+ {
+  "code": "73-057",
+  "a_dire": "Une matrice T envoie la droite Fx sur la droite F(Tx).",
+  "legende_titre": "Une droite envoyée sur une droite",
+  "lecture": [
+   "La droite bleue passe par (1, 1), (2, 2) et (3, 3).",
+   "Chaque flèche orange montre l'image d'un point par le cisaillement.",
+   "Les points verts (2, 1), (4, 2) et (6, 3) sont sur une même droite."
+  ],
+  "a_voir": "Tous les points de la droite vont sur une autre droite."
+ },
+ {
+  "code": "73-058",
+  "a_dire": "Seules les homothéties fixent toutes les droites ; la dilatation en déplace une.",
+  "legende_titre": "Toutes les droites fixées ou non",
+  "lecture": [
+   "À gauche, l'homothétie fixe les trois droites, en vert.",
+   "À droite, la dilatation fixe l'horizontale et la verticale, en vert.",
+   "Le trait gris pointillé est la diagonale de départ ; le trait rouge est son image."
+  ],
+  "a_voir": "Fixer seulement certaines droites ne suffit pas."
+ },
+ {
+  "code": "73-059",
+  "a_dire": "PSL est le groupe des classes de matrices de SL qui diffèrent par un élément du centre.",
+  "legende_titre": "24 matrices rangées en 12 classes",
+  "lecture": [
+   "Chaque point bleu est une matrice de SL sur le corps à 3 éléments.",
+   "Chaque case verte réunit une matrice et sa multiple par moins 1.",
+   "Il y a 12 cases : ce sont les 12 classes."
+  ],
+  "a_voir": "Le quotient range les matrices par paires."
+ },
+ {
+  "code": "73-060",
+  "a_dire": "PSL_2 est simple sauf si le corps a 2 ou 3 éléments.",
+  "legende_titre": "Quels corps donnent un groupe simple",
+  "lecture": [
+   "Les barres rouges sont les corps à 2 et 3 éléments : le groupe n'est pas simple.",
+   "La barre verte est le corps à 5 éléments : le groupe est simple.",
+   "La longueur de chaque barre suit le nombre écrit à droite."
+  ],
+  "a_voir": "Les deux cas rouges sont les exceptions."
+ },
+ {
+  "code": "73-061",
+  "a_dire": "Une transformation orthogonale garde la valeur de Q.",
+  "legende_titre": "Le quart de tour garde Q",
+  "lecture": [
+   "La flèche bleue est le vecteur (3, 4), de valeur 25.",
+   "La flèche verte est son image (−4, 3), de valeur 25.",
+   "La flèche orange est le quart de tour.",
+   "L'arc gris pointillé réunit les vecteurs de même valeur."
+  ],
+  "a_voir": "Les deux vecteurs ont la même valeur 25."
+ },
+ {
+  "code": "73-062",
+  "a_dire": "Le groupe orthogonal est un sous-groupe du groupe linéaire, qui recoupe SL sans lui être égal.",
+  "legende_titre": "O et SL dans GL",
+  "lecture": [
+   "Le grand cadre est le groupe linéaire GL.",
+   "Le cercle bleu est le groupe orthogonal, le cercle violet est SL.",
+   "Le miroir est seulement dans O, le cisaillement seulement dans SL, le quart de tour dans les deux."
+  ],
+  "a_voir": "O et SL sont deux parties différentes de GL."
+ },
+ {
+  "code": "73-063",
+  "a_dire": "Les rotations sont les transformations orthogonales de déterminant 1 ; les miroirs sont dehors.",
+  "legende_titre": "Rotations et miroirs dans O",
+  "lecture": [
+   "La grande case grise est O.",
+   "La case verte, de déterminant 1, contient le quart de tour et l'identité.",
+   "La case rouge est le miroir, de déterminant moins 1.",
+   "La flèche orange montre que deux miroirs ramènent à l'identité."
+  ],
+  "a_voir": "Un miroir sort des rotations, deux miroirs y reviennent."
+ },
+ {
+  "code": "73-064",
+  "a_dire": "La réflexion S_u envoie u sur −u et fixe l'axe perpendiculaire à u.",
+  "legende_titre": "Un miroir qui retourne u",
+  "lecture": [
+   "Le trait gris pointillé est l'axe, qui ne bouge pas.",
+   "La flèche bleue u devient la flèche verte −u.",
+   "Le vecteur bleu (3, 2) devient le vecteur vert (−3, 2).",
+   "La flèche orange est le retournement ; son déterminant est moins 1."
+  ],
+  "a_voir": "Le miroir change le signe du côté de u et laisse l'axe en place."
+ }
+]

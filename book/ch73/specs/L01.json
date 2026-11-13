@@ -1,0 +1,184 @@
+[
+ {
+  "code": "73-001",
+  "a_dire": "Un quart de tour de la photo est compliqué ; un glissement de lignes est simple, et trois glissements suffiront.",
+  "legende_titre": "Une photo à tourner, une ligne qui glisse",
+  "lecture": [
+   "En haut, le rectangle bleu est la photo ; la flèche orange est le quart de tour, compliqué.",
+   "En bas à gauche, la photo fait 1 000 pixels de large et 800 pixels de haut.",
+   "À droite, le parallélogramme bleu est la photo dont chaque ligne a glissé vers la droite.",
+   "La flèche orange en haut montre que la ligne du haut a glissé de 200 pixels ; le pointillé gris est la place de départ.",
+   "La ligne du bas ne bouge pas."
+  ],
+  "a_voir": "Un quart de tour est compliqué ; un glissement de lignes est simple, et trois glissements suffisent."
+ },
+ {
+  "code": "73-002",
+  "a_dire": "Une lettre en italique est une lettre dont le sommet a glissé vers la droite alors que son pied reste en place.",
+  "legende_titre": "La lettre l penchée sur sa ligne",
+  "lecture": [
+   "Le contour gris est la lettre droite ; la forme bleue est la même lettre en italique.",
+   "Le pied touche la ligne d’écriture au même endroit dans les deux cas.",
+   "Les flèches orange montrent que le milieu glisse un peu et le sommet glisse le plus."
+  ],
+  "a_voir": "Voir que plus un point de la lettre est haut, plus il glisse."
+ },
+ {
+  "code": "73-003",
+  "a_dire": "Un cisaillement fait glisser chaque ligne d’un nombre de pixels égal à b fois sa hauteur.",
+  "legende_titre": "Trois lignes qui glissent de plus en plus",
+  "lecture": [
+   "Chaque barre grise est une ligne à sa place de départ ; chaque barre bleue est la même ligne après le glissement.",
+   "Les flèches orange montrent le glissement : 0 pixel à la hauteur 0, 25 pixels à la hauteur 100, 50 pixels à la hauteur 200.",
+   "Le nombre b vaut 0,25 ; le glissement est b fois la hauteur."
+  ],
+  "a_voir": "Voir que le glissement grandit en même temps que la hauteur."
+ },
+ {
+  "code": "73-004",
+  "a_dire": "Un cisaillement garde 800 lignes de 1 000 pixels : l’aire reste 800 000 pixels.",
+  "legende_titre": "Même nombre de lignes, même nombre de pixels",
+  "lecture": [
+   "Le rectangle bleu est l’image avant : 800 lignes de 1 000 pixels.",
+   "Le parallélogramme bleu est l’image après le glissement : elle a encore 800 lignes de 1 000 pixels.",
+   "Le texte vert donne le même total des deux côtés : 800 000 pixels."
+  ],
+  "a_voir": "Voir que le glissement ne change ni le nombre de lignes ni le nombre de pixels par ligne."
+ },
+ {
+  "code": "73-005",
+  "a_dire": "Avec seulement deux glissements, le point (1, 0) arrive en (1, 1) et non en (0, 1) : il en faut un troisième.",
+  "legende_titre": "Deux glissements ne suffisent pas",
+  "lecture": [
+   "La flèche rouge montre le chemin de (1, 0) vers (1, 1) avec deux glissements.",
+   "L’arc vert pointillé montre où un quart de tour envoie (1, 0) : en (0, 1).",
+   "La flèche verte du haut est le troisième glissement, qui amène (1, 1) en (0, 1)."
+  ],
+  "a_voir": "Voir que l’arrivée avec deux glissements n’est pas celle du quart de tour."
+ },
+ {
+  "code": "73-006",
+  "a_dire": "Les trois glissements envoient (3, 2) sur (−2, 3), comme un quart de tour, et (x, y) sur (−y, x).",
+  "legende_titre": "Le point (3, 2) glisse trois fois",
+  "lecture": [
+   "Le disque bleu est le point de départ (3, 2).",
+   "Les trois flèches orange sont les trois glissements : d’abord vers (1, 2), puis vers (1, 3), puis vers (−2, 3).",
+   "Le disque vert est l’arrivée (−2, 3).",
+   "Le texte vert du bas écrit la règle générale."
+  ],
+  "a_voir": "Voir le chemin du point en trois étapes jusqu’à l’arrivée du quart de tour."
+ },
+ {
+  "code": "73-007",
+  "a_dire": "Les trois glissements envoient (1, 0) sur (0, 1) et (0, 1) sur (−1, 0), comme un quart de tour.",
+  "legende_titre": "Deux points suivis pas à pas",
+  "lecture": [
+   "Le dessin de gauche suit le point (1, 0) : il reste en place, monte en (1, 1), puis arrive en (0, 1).",
+   "Le dessin de droite suit le point (0, 1) : il va en (−1, 1), puis arrive en (−1, 0).",
+   "Les disques bleus sont les départs, les disques verts sont les arrivées."
+  ],
+  "a_voir": "Voir les deux points de départ et leurs arrivées."
+ },
+ {
+  "code": "73-008",
+  "a_dire": "Un cisaillement garde l’aire, une dilatation la double : la question est de savoir ce que les cisaillements seuls fabriquent.",
+  "legende_titre": "Une transformation exclue, une transformation gardée",
+  "lecture": [
+   "Le rectangle bleu est la photo de 800 000 pixels.",
+   "Le rectangle rouge est la photo dilatée : elle occupe 1 600 000 pixels.",
+   "Le parallélogramme vert est la photo cisaillée : elle occupe encore 800 000 pixels."
+  ],
+  "a_voir": "Voir que la dilatation change l’aire et que le cisaillement la garde."
+ },
+ {
+  "code": "73-009",
+  "a_dire": "Les transformations réversibles du plan forment un ensemble où chacune se défait, et on demande de quelles pièces il est fait.",
+  "legende_titre": "Chaque transformation se défait",
+  "lecture": [
+   "Le grand cadre bleu pointillé contient toutes les transformations réversibles du plan.",
+   "Chaque boîte bleue est une transformation ; la boîte verte en face est celle qui la défait.",
+   "La flèche orange à deux pointes relie une transformation à celle qui la défait."
+  ],
+  "a_voir": "Voir que chaque transformation a une transformation qui la défait."
+ },
+ {
+  "code": "73-010",
+  "a_dire": "Le quart de tour et le miroir gardent la distance 5 du point (3, 4) à l’origine.",
+  "legende_titre": "Deux transformations qui gardent les longueurs",
+  "lecture": [
+   "Le cercle gris pointillé est l’ensemble des points à la distance 5 de l’origine.",
+   "Le disque bleu est (3, 4) ; la flèche orange courbe le tourne d’un quart de tour vers le disque vert (−4, 3).",
+   "La flèche violette le renvoie par le miroir, dans l’axe vertical, sur le disque violet (−3, 4).",
+   "Les trois points sont sur le cercle."
+  ],
+  "a_voir": "Voir que les deux transformations laissent le point sur le même cercle."
+ },
+ {
+  "code": "73-011",
+  "a_dire": "Dans un cisaillement, les points de la droite D ne bougent pas et les autres glissent parallèlement à D, d’autant plus loin qu’ils sont hauts.",
+  "legende_titre": "Le quadrillage qui penche",
+  "lecture": [
+   "La droite grise épaisse en bas est D, la droite fixe.",
+   "Le quadrillage gris est le quadrillage de départ ; le quadrillage bleu est son image.",
+   "Les flèches orange montrent le glissement : +1/2, +1 et +3/2 aux hauteurs 1, 2 et 3.",
+   "Le disque orange P glisse vers le disque vert P′."
+  ],
+  "a_voir": "Voir que le glissement grandit avec la hauteur et que D reste en place."
+ },
+ {
+  "code": "73-012",
+  "a_dire": "La formule lit la hauteur y, calcule b fois y, l’ajoute à x et garde y : le point (4, 6) arrive en (7, 6).",
+  "legende_titre": "La formule en quatre actions",
+  "lecture": [
+   "La formule du haut est la règle du cisaillement.",
+   "Les quatre boîtes donnent les actions dans l’ordre, avec les nombres du point (4, 6).",
+   "La boîte verte du bas donne le résultat : (4, 6) devient (7, 6)."
+  ],
+  "a_voir": "Voir chaque morceau de la formule devenir un calcul sur le point (4, 6)."
+ },
+ {
+  "code": "73-013",
+  "a_dire": "Le signe ↦ se lit « est envoyé sur » : départ à gauche, arrivée à droite, et les deux points sont différents.",
+  "legende_titre": "Départ, arrivée et le signe entre eux",
+  "lecture": [
+   "La boîte bleue de gauche est le point de départ (1, 2).",
+   "La boîte verte de droite est le point d’arrivée (2, 2).",
+   "La flèche orange et le signe ↦ se lisent « est envoyé sur ».",
+   "Le texte rouge rappelle que les deux points ne sont pas égaux."
+  ],
+  "a_voir": "Voir que ↦ relie un départ à une arrivée et ne dit pas « égale »."
+ },
+ {
+  "code": "73-014",
+  "a_dire": "Avec b = 1/2, le point (1, 2) glisse de 1/2 × 2 = 1 et arrive en (2, 2).",
+  "legende_titre": "Un point de hauteur 2 qui glisse",
+  "lecture": [
+   "Le disque orange est P = (1, 2) ; le pointillé gris donne sa hauteur 2.",
+   "La flèche orange est le glissement : un demi fois 2, soit 1.",
+   "Le disque vert est P′ = (2, 2), à la même hauteur que P."
+  ],
+  "a_voir": "Voir que le glissement vaut b fois la hauteur et que la hauteur ne change pas."
+ },
+ {
+  "code": "73-015",
+  "a_dire": "Un cisaillement garde la droite D et envoie chaque point parallèlement à D : (5, 0) reste, (5, 2) va en (6, 2).",
+  "legende_titre": "Un point qui reste, un point qui glisse",
+  "lecture": [
+   "La droite grise épaisse est D, à la hauteur 0 ; le disque gris (5, 0) y reste.",
+   "Le disque orange (5, 2), à la hauteur 2, glisse vers le disque vert (6, 2).",
+   "La flèche orange est horizontale : elle est parallèle à D."
+  ],
+  "a_voir": "Voir qu’un point de D ne bouge pas et qu’un point plus haut glisse parallèlement à D."
+ },
+ {
+  "code": "73-016",
+  "a_dire": "Le cisaillement garde la base 1 et la hauteur 1 du carré, donc son aire ; la dilatation change la base et donc l’aire.",
+  "legende_titre": "Trois figures, trois produits base × hauteur",
+  "lecture": [
+   "Le carré bleu a pour base 1 et pour hauteur 1 : aire 1.",
+   "Le parallélogramme vert est le carré cisaillé : base 1, hauteur 1 (pointillé), aire 1.",
+   "Le rectangle rouge est le carré dilaté : base 2, hauteur 1, aire 2."
+  ],
+  "a_voir": "Voir que l’aire change seulement quand la base ou la hauteur change."
+ }
+]

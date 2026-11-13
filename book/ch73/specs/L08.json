@@ -1,0 +1,194 @@
+[
+ {
+  "code": "73-113",
+  "a_dire": "L'application qui garde la matrice et oublie le vecteur transforme un produit en produit ; son noyau est l'ensemble des translations.",
+  "legende_titre": "Garder la matrice, oublier le vecteur",
+  "lecture": [
+   "Le cadre bleu est E(n) : ses éléments sont des couples (A, x).",
+   "Le cadre vert est O(n) : il ne contient que les matrices A.",
+   "La flèche orange (A, x) ↦ A oublie x. Le produit (A, x)(B, y) donne le produit AB.",
+   "Le rectangle orange des translations est envoyé sur le disque vert I : c'est le noyau, les mouvements où A = I."
+  ],
+  "a_voir": "Les translations, seules, arrivent sur la matrice identité."
+ },
+ {
+  "code": "73-114",
+  "a_dire": "E(2) contient toutes les transformations du plan qui gardent les distances, même celles qui ne fixent pas l'origine.",
+  "legende_titre": "Un miroir qui déplace l'origine est dans E(2)",
+  "lecture": [
+   "La droite grise en pointillés est le miroir x = 1.",
+   "Les points bleus sont les points de départ, les points verts leurs images.",
+   "La flèche du haut envoie (3, 2) sur (−1, 2).",
+   "La flèche du bas envoie (0, 0) sur (2, 0) : l'origine bouge."
+  ],
+  "a_voir": "Le miroir garde les distances et pourtant l'origine n'est pas fixe."
+ },
+ {
+  "code": "73-115",
+  "a_dire": "Ω est le groupe engendré par les commutateurs ; ici le commutateur du miroir et de la rotation de 30° est une rotation de 60°.",
+  "legende_titre": "Les commutateurs engendrent Ω",
+  "lecture": [
+   "Les deux cases orange sont le miroir τ, aux places de g et de g⁻¹.",
+   "Les cases bleues sont la rotation de −30° puis celle de 30°.",
+   "La case verte est le résultat : la rotation de 60°.",
+   "Le cadre bleu du bas dit que ce résultat est dans Ω."
+  ],
+  "a_voir": "Le miroir et la rotation ne commutent pas : leur commutateur n'est pas l'identité."
+ },
+ {
+  "code": "73-116",
+  "a_dire": "La norme spinorielle est le produit des valeurs Q(u) des miroirs, pris à un carré près.",
+  "legende_titre": "Un produit de valeurs, à un carré près",
+  "lecture": [
+   "Chaque ligne a deux cases bleues : les valeurs Q(u₁) et Q(u₂) de deux miroirs.",
+   "La case de droite est leur produit.",
+   "En haut, le produit −1 est en rouge : c'est une autre classe.",
+   "En bas, 4 vaut 1 fois 2 fois 2 : il est dans la même classe que 1."
+  ],
+  "a_voir": "Multiplier par un carré ne change pas la classe, changer de signe la change."
+ },
+ {
+  "code": "73-117",
+  "a_dire": "Le calcul avec d'autres vecteurs donne le même résultat à un carré près, mais la preuve générale est admise.",
+  "legende_titre": "Une autre écriture, la même classe",
+  "lecture": [
+   "La case bleue du haut est la rotation ζ, le demi-tour.",
+   "La case violette donne les vecteurs (0, 1) et (1, 0), de produit −1.",
+   "La case orange donne les vecteurs multipliés par 2 et par 3, de produit −36.",
+   "La case verte dit que −36 vaut −1 fois 6 fois 6 : même classe. Le cadre rouge en pointillés rappelle que le reste est admis."
+  ],
+  "a_voir": "Un seul cas est vérifié ; le cadre en pointillés dit que la preuve générale n'est pas donnée."
+ },
+ {
+  "code": "73-118",
+  "a_dire": "La lettre F désigne n'importe quel corps, comme ℝ, ℂ ou les restes de la division par 5.",
+  "legende_titre": "Une lettre pour plusieurs ensembles",
+  "lecture": [
+   "La case bleue du haut est la lettre F.",
+   "Les trois cases violettes sont des exemples : ℝ, ℂ et les restes de la division par 5.",
+   "Les flèches grises relient F à chaque exemple.",
+   "Le texte vert rappelle que les quatre opérations marchent dans un corps."
+  ],
+  "a_voir": "Un seul signe F couvre les trois ensembles à la fois."
+ },
+ {
+  "code": "73-119",
+  "a_dire": "F* se lit « F étoile » et désigne F sans le 0 ; dans les restes de la division par 5, il reste 1, 2, 3, 4.",
+  "legende_titre": "F étoile : tout sauf zéro",
+  "lecture": [
+   "Le disque rouge vide est le 0, retiré.",
+   "Les quatre disques bleus 1, 2, 3, 4 sont ce qui reste.",
+   "L'accolade bleue les réunit sous le signe F*.",
+   "La flèche orange entre 2 et 3 montre qu'ils sont inverses l'un de l'autre."
+  ],
+  "a_voir": "On retire seulement le 0 ; les autres restes forment F*."
+ },
+ {
+  "code": "73-120",
+  "a_dire": "GL_n(F) est le nom de l'ensemble des matrices inversibles de taille n sur n ; la rotation et le cisaillement y sont, l'écrasement non.",
+  "legende_titre": "Un nom pour les matrices inversibles",
+  "lecture": [
+   "Le carré gris est le carré de départ.",
+   "La forme verte de gauche est son image par la rotation de 30°.",
+   "La forme verte du milieu est son image par le cisaillement.",
+   "Le trait rouge est l'image par l'écrasement : le carré est aplati, la matrice n'est pas inversible."
+  ],
+  "a_voir": "Seules les deux premières matrices sont dans GL₂(ℝ)."
+ },
+ {
+  "code": "73-121",
+  "a_dire": "Le signe det se lit « déterminant » ; devant une matrice, il donne un nombre, ici l'aire 6 de l'image du carré.",
+  "legende_titre": "Le mot det donne un nombre",
+  "lecture": [
+   "Le petit carré gris est le carré de côté 1.",
+   "Le rectangle bleu est son image par la matrice de lignes (2, 0) et (0, 3).",
+   "Ses côtés valent 2 et 3, donc son aire vaut 6.",
+   "La case verte dit : le déterminant de A est 6."
+  ],
+  "a_voir": "Le nombre det A est l'aire du rectangle."
+ },
+ {
+  "code": "73-122",
+  "a_dire": "SL_n(F) est le nom des matrices de déterminant 1 ; avec n = 2 et 3 éléments dans F, ce sont 24 des 48 matrices inversibles.",
+  "legende_titre": "Un nom pour le déterminant 1",
+  "lecture": [
+   "La grille a 48 cases : les 48 matrices inversibles.",
+   "Les 24 cases bleues du haut sont celles de déterminant 1.",
+   "Les 24 cases grises du bas ont un autre déterminant.",
+   "Le texte bleu donne le nom de l'ensemble bleu."
+  ],
+  "a_voir": "SL₂(F) est la moitié bleue de la grille."
+ },
+ {
+  "code": "73-123",
+  "a_dire": "e_ij est la matrice qui a un 1 en ligne i, colonne j et des 0 ailleurs ; e₂₃ se lit « e deux trois ».",
+  "legende_titre": "Un seul 1, à la place (i, j)",
+  "lecture": [
+   "La grille a trois lignes et trois colonnes.",
+   "La case orange contient le 1 : ligne 2, colonne 3.",
+   "Les huit cases grises contiennent 0.",
+   "Le texte de droite donne le nom de cette matrice et sa lecture."
+  ],
+  "a_voir": "Le premier petit nombre est la ligne, le second la colonne."
+ },
+ {
+  "code": "73-124",
+  "a_dire": "T_ij(b) désigne l'opération « ajouter b fois la ligne j à la ligne i » ; ici i = 3, j = 2, b = 5.",
+  "legende_titre": "Trois nombres pour une opération",
+  "lecture": [
+   "La grille est l'identité : les 1 sont en bleu, les 0 en gris.",
+   "La case orange contient 5, en ligne 3 et colonne 2.",
+   "La flèche orange va de la ligne 2 à la ligne 3.",
+   "Le texte à droite dit ce que fait la matrice."
+  ],
+  "a_voir": "Le 5 est la seule case hors de la diagonale."
+ },
+ {
+  "code": "73-125",
+  "a_dire": "La lettre C désigne le centre : dans le plan réel, l'identité et le demi-tour.",
+  "legende_titre": "Le centre : deux matrices",
+  "lecture": [
+   "À gauche, l'identité laisse le point v en place.",
+   "À droite, le demi-tour envoie le point bleu v sur le point vert −v.",
+   "Les deux axes gris se croisent à l'origine.",
+   "Le texte du bas dit que ces deux matrices forment C."
+  ],
+  "a_voir": "Deux matrices seulement : l'une ne bouge rien, l'autre prend l'opposé."
+ },
+ {
+  "code": "73-126",
+  "a_dire": "PSL_n(F) est le nom du quotient de SL_n(F) par son centre C ; ici 120 matrices donnent 60 classes.",
+  "legende_titre": "Quotienter par le centre",
+  "lecture": [
+   "La case bleue de gauche est SL₂(F), avec 120 matrices.",
+   "La flèche orange divise par C.",
+   "La case verte de droite est PSL₂(F), avec 60 classes.",
+   "Le cadre en pointillés montre une classe : M et −M."
+  ],
+  "a_voir": "Deux matrices M et −M font une seule classe."
+ },
+ {
+  "code": "73-127",
+  "a_dire": "(g, h) désigne g⁻¹h⁻¹gh ; il ne change rien quand g et h commutent, et déplace l'origine sinon.",
+  "legende_titre": "Le commutateur lu en quatre pas",
+  "lecture": [
+   "Le titre est le produit des quatre facteurs.",
+   "À gauche, deux translations : les flèches orange font un carré et reviennent au départ.",
+   "À droite, le quart de tour et la translation : l'arrivée verte est en (1, 1).",
+   "Le disque bleu est le point de départ (0, 0)."
+  ],
+  "a_voir": "À gauche on revient au départ, à droite non."
+ },
+ {
+  "code": "73-128",
+  "a_dire": "G' est le groupe dérivé, engendré par les commutateurs ; pour un groupe commutatif il est réduit à l'identité.",
+  "legende_titre": "Le groupe dérivé d'un groupe commutatif",
+  "lecture": [
+   "La case orange est la rotation de 20°, la case violette celle de 30°.",
+   "La ligne du haut fait 20° puis 30°, celle du bas 30° puis 20°.",
+   "Les deux lignes arrivent à la case verte 50°.",
+   "Le texte du bas dit que G' contient seulement l'identité."
+  ],
+  "a_voir": "L'ordre ne change pas le résultat, donc tous les commutateurs valent l'identité."
+ }
+]

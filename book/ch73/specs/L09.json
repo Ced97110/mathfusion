@@ -1,0 +1,177 @@
+[
+ {
+  "code": "73-129",
+  "a_dire": "La lettre Q désigne une règle qui donne un nombre à partir d'un vecteur, ici la somme des carrés.",
+  "legende_titre": "Une règle, des nombres",
+  "lecture": [
+   "Le rectangle bleu est la règle Q : à gauche entre un vecteur, à droite sort un nombre.",
+   "Pour (3, 4), la règle donne 25 ; pour (1, 2), elle donne 5."
+  ],
+  "a_voir": "Q est une règle, pas un nombre."
+ },
+ {
+  "code": "73-130",
+  "a_dire": "Le signe O(V, Q) désigne les transformations qui gardent la valeur de Q ; la transformation du cas garde le produit des coordonnées.",
+  "legende_titre": "Ce que la transformation garde",
+  "lecture": [
+   "Les deux boîtes bleues sont le vecteur de départ (3, 4) et son image (6, 2).",
+   "La flèche orange est la transformation : on double la première coordonnée et on divise la seconde par 2.",
+   "Les boîtes vertes donnent le même nombre, 12, avant et après."
+  ],
+  "a_voir": "La valeur de Q est la même avant et après."
+ },
+ {
+  "code": "73-131",
+  "a_dire": "Le signe SO(V, Q) désigne les transformations qui gardent Q et ont le déterminant 1 : le quart de tour y est, le miroir n'y est pas.",
+  "legende_titre": "Garder Q, avec déterminant 1",
+  "lecture": [
+   "Le triangle bleu est la figure de départ, la même dans les deux dessins.",
+   "À gauche, le triangle vert est le quart de tour : déterminant 1, il est dans SO.",
+   "À droite, le triangle rouge est le miroir : déterminant −1, il n'est pas dans SO."
+  ],
+  "a_voir": "Les deux gardent les longueurs, seul le déterminant 1 est dans SO."
+ },
+ {
+  "code": "73-132",
+  "a_dire": "Le signe S_u désigne le miroir défini par le vecteur u : il envoie u sur son opposé et laisse en place ce qui est perpendiculaire à u.",
+  "legende_titre": "Un miroir défini par u",
+  "lecture": [
+   "La flèche bleue est le vecteur u = (1, 1).",
+   "La droite orange en tirets est le miroir : elle est perpendiculaire à u.",
+   "Le point bleu (3, 2) est envoyé sur le point vert (−2, −3)."
+  ],
+  "a_voir": "Changer u change le miroir."
+ },
+ {
+  "code": "73-133",
+  "a_dire": "Le signe R(θ) désigne la rotation du plan d'angle θ ; deux angles qui diffèrent d'un tour donnent la même rotation.",
+  "legende_titre": "Un angle, une rotation",
+  "lecture": [
+   "Chaque disque montre une rotation ; la flèche orange est l'image de la flèche en tirets.",
+   "Pour 90°, la flèche fait un quart de tour.",
+   "Pour 0° et pour 360°, la flèche revient à sa place : c'est la même rotation."
+  ],
+  "a_voir": "0° et 360° donnent la même rotation."
+ },
+ {
+  "code": "73-134",
+  "a_dire": "Le signe ν est le nombre qui donne la plus grande dimension d'un sous-espace de vecteurs de valeur 0 pour Q.",
+  "legende_titre": "Compter la dimension des vecteurs nuls",
+  "lecture": [
+   "En haut, ν est la plus grande dimension d'un sous-espace formé de vecteurs où Q vaut 0.",
+   "À gauche, la forme x² + y² n'a aucun vecteur non nul de valeur 0 : dimension 0, ν vaut 0.",
+   "À droite, la forme x² − y² a la droite verte des multiples de (1, 1) : dimension 1, ν vaut 1."
+  ],
+  "a_voir": "ν est la dimension de la droite de valeur 0, ou 0 s'il n'y en a pas."
+ },
+ {
+  "code": "73-135",
+  "a_dire": "La lettre Ω est une lettre grecque qui désigne le groupe dérivé de O ; elle ne se lit pas comme la lettre latine O.",
+  "legende_titre": "Deux lettres qui se ressemblent",
+  "lecture": [
+   "À gauche, en bleu, la lettre latine O : le groupe orthogonal.",
+   "À droite, en violet, la lettre grecque Ω, qui se lit « oméga » : le groupe dérivé.",
+   "Le signe rouge dit que ce sont deux lettres différentes."
+  ],
+  "a_voir": "Ω se lit « oméga » et n'est pas un O."
+ },
+ {
+  "code": "73-136",
+  "a_dire": "Le signe Aᵗ désigne la transposée de A : les lignes de A écrites en colonnes.",
+  "legende_titre": "Les lignes deviennent des colonnes",
+  "lecture": [
+   "À gauche, la matrice A : les cases bleues valent 1, les cases vides valent 0.",
+   "Le cadre orange entoure la première ligne de A.",
+   "À droite, ce même cadre est devenu la première colonne de la matrice Aᵗ."
+  ],
+  "a_voir": "La ligne de A devient la colonne de Aᵗ."
+ },
+ {
+  "code": "73-137",
+  "a_dire": "Le signe O(n) désigne l'ensemble des matrices dont l'inverse est la transposée.",
+  "legende_titre": "Qui est dans O(n) ?",
+  "lecture": [
+   "Le grand cadre bleu est l'ensemble O(3).",
+   "La boîte verte, la matrice qui décale (4, 5, 6) en (5, 6, 4), a son inverse égal à sa transposée : elle est dedans.",
+   "La boîte rouge, le cisaillement, n'a pas cette égalité : elle est dehors."
+  ],
+  "a_voir": "La condition est inverse = transposée."
+ },
+ {
+  "code": "73-138",
+  "a_dire": "Le signe SO(n) désigne les matrices de O(n) dont le déterminant est 1.",
+  "legende_titre": "Dans O(n), garder le déterminant 1",
+  "lecture": [
+   "Le grand cadre bleu est O(3).",
+   "La boîte verte est SO(3) : le décalage des coordonnées, de déterminant 1.",
+   "La boîte rouge est dans O(3) mais pas dans SO(3) : l'échange de deux coordonnées a pour déterminant −1."
+  ],
+  "a_voir": "SO(n) est la partie de O(n) de déterminant 1."
+ },
+ {
+  "code": "73-139",
+  "a_dire": "Le signe ⟨x, y⟩ désigne le nombre obtenu en multipliant les coordonnées deux à deux, puis en additionnant.",
+  "legende_titre": "Multiplier puis additionner",
+  "lecture": [
+   "Chaque cadre gris réunit une coordonnée de x (bleu) et la coordonnée de y (violet) à la même place.",
+   "Chaque boîte orange est leur produit : 4, 10 et 18.",
+   "On additionne les trois boîtes et on obtient le nombre 32."
+  ],
+  "a_voir": "Le résultat est un nombre, ici 32."
+ },
+ {
+  "code": "73-140",
+  "a_dire": "Le signe ‖x‖ désigne la longueur de x : la racine carrée du produit scalaire de x avec lui-même.",
+  "legende_titre": "La longueur par la racine de 9",
+  "lecture": [
+   "Les trois carrés bleus ont pour côtés 1, 2 et 2, les coordonnées de x.",
+   "Leurs aires 1, 4 et 4 font ensemble 9.",
+   "Le carré vert a pour aire 9 : son côté 3 est la longueur ‖x‖."
+  ],
+  "a_voir": "La longueur est le côté du carré d'aire 9."
+ },
+ {
+  "code": "73-141",
+  "a_dire": "Le signe δ_rs vaut 1 si les numéros r et s sont égaux, 0 sinon.",
+  "legende_titre": "Un signe pour la matrice identité",
+  "lecture": [
+   "La grille est la matrice identité de taille 3 : r est le numéro de ligne, s le numéro de colonne.",
+   "Les cases vertes, sur la diagonale, valent 1.",
+   "Le cadre orange est la case 2, 2 : δ vaut 1. Le cadre violet est la case 2, 3 : δ vaut 0."
+  ],
+  "a_voir": "1 quand les numéros sont égaux, 0 sinon."
+ },
+ {
+  "code": "73-142",
+  "a_dire": "Le signe B(θ) désigne le miroir du plan qui correspond à l'angle θ ; il y a un miroir pour chaque angle.",
+  "legende_titre": "Un miroir pour chaque angle",
+  "lecture": [
+   "La ligne orange épaisse est le miroir B(0), l'axe horizontal.",
+   "Chaque point bleu est envoyé sur le point vert de l'autre côté : (3, 2) sur (3, −2), (5, 1) sur (5, −1).",
+   "Les tirets gris sont d'autres miroirs, pour d'autres angles."
+  ],
+  "a_voir": "Un seul signe désigne tous les miroirs."
+ },
+ {
+  "code": "73-143",
+  "a_dire": "Le signe E(n) désigne l'ensemble de tous les déplacements, chacun donné par un couple formé d'une matrice A de O(n) et d'un décalage x.",
+  "legende_titre": "Un déplacement, deux informations",
+  "lecture": [
+   "Le triangle gris est la figure de départ.",
+   "Le triangle bleu est la figure après le quart de tour A.",
+   "Le triangle vert est la figure après le décalage x = (3, 1) : le couple (A, x) donne ce déplacement."
+  ],
+  "a_voir": "Un déplacement = une matrice A + un décalage x."
+ },
+ {
+  "code": "73-144",
+  "a_dire": "Le signe (A, x) désigne le déplacement qui envoie v sur Av + x : la matrice agit d'abord, puis on ajoute le décalage.",
+  "legende_titre": "Appliquer A, puis ajouter x",
+  "lecture": [
+   "Le point bleu est le point de départ v = (1, 0).",
+   "Le point orange est Av = (0, 1), après le quart de tour.",
+   "Le point vert est Av + x = (3, 2), après le décalage x."
+  ],
+  "a_voir": "La matrice agit d'abord, le décalage s'ajoute ensuite."
+ }
+]

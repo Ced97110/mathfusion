@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+u = 9; o = (30, 8)
+P = lambda x, y, z: iso(x, y, z, o, u)
+for a, lab in [((3.7, 0, 0), r'$x$'), ((0, 2.3, 0), r'$y$ (profondeur)'), ((0, 0, 2.6), r'$z$')]:
+    arrow(ax, P(0, 0, 0), P(*a), 'fixe', lw=0.8)
+text(ax, P(3.7, 0, 0)[0] + 3, P(3.7, 0, 0)[1] - 1, r'$x$', 'fixe', 'm'); text(ax, P(0, 2.3, 0)[0] - 3, P(0, 2.3, 0)[1] + 1, r'$y$', 'fixe', 'm'); text(ax, P(0, 0, 2.6)[0], P(0, 0, 2.6)[1] + 3, r'$z$', 'fixe', 'm')
+poly(ax, [P(0, 0, 0), P(1, 0, 0), P(1, 0, 1), P(0, 0, 1)], 'fixe')
+poly(ax, [P(0, 1, 0), P(1, 1, 0), P(1, 1, 1), P(0, 1, 1)], 'sujet')
+poly(ax, [P(2, 1, 0), P(3, 1, 0), P(3, 1, 1), P(2, 1, 1)], 'resultat')
+arrow(ax, P(1, 1, 1.2), P(3, 1, 1.2), 'varie', curve=-0.15)
+disc(ax, *P(1, 1, 1), 0.9, 'sujet'); disc(ax, *P(3, 1, 1), 0.9, 'resultat')
+text(ax, P(1, 1, 1)[0] - 6, P(1, 1, 1)[1] + 6, '(1, 1, 1)', 'sujet', 's'); text(ax, P(3, 1, 1)[0] + 3, P(3, 1, 1)[1] + 6, '(3, 1, 1)', 'resultat', 's')
+text(ax, P(3, 1, 0.3)[0] + 5, P(3, 1, 0.3)[1], 'glisse de 2', 'varie', 's', ha='left')
+text(ax, 44, 55, 'profondeur 0 : le plan ne bouge pas', 'fixe', 's')
+save(fig, '73-044')

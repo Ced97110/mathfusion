@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 44, 34, 11, 'sujet', label=r'$SL_2(F)$ : 120'); box(ax, 52, 44, 34, 11, 'resultat', label=r'$PSL_2(F)$ : 60')
+arrow(ax, (37, 49.5), (51, 49.5), 'varie'); text(ax, 44, 54, r'$/\,C$', 'varie', 's')
+box(ax, 24, 14, 40, 18, 'varie', fill=False, dash=True)
+box(ax, 28, 17, 14, 12, 'sujet', label=r'$M$'); box(ax, 46, 17, 14, 12, 'sujet', label=r'$-M$')
+text(ax, 44, 36.5, r'1 classe : $M$ et $-M$', 'varie', 's')
+arrow(ax, (62, 32.5), (70, 43.5), 'varie')
+text(ax, 44, 6, r'$F$ : restes de ÷ 5', 'fixe', 's')
+save(fig, '73-126')

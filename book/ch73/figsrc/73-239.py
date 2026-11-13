@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(48)
+o=(10,8); u=8.0
+P=lambda x,y:(o[0]+x*u,o[1]+y*u)
+arrow(ax,P(-0.5,0),P(4,0),'fixe',lw=0.6); arrow(ax,P(0,-0.5),P(0,2.6),'fixe',lw=0.6)
+arrow(ax,P(1,0),P(0,1),'sujet',lw=1.3,curve=-0.35); arrow(ax,P(0,1),P(2,1),'sujet',lw=1.3)
+arrow(ax,P(0,0),P(2,0),'autre',lw=1.3)
+for p,rl in ((P(1,0),'sujet'),(P(0,1),'sujet'),(P(2,1),'sujet')): disc(ax,*p,1.0,rl)
+disc(ax,*P(0,0),1.0,'autre'); disc(ax,*P(2,0),1.3,'resultat')
+text(ax,P(1,0)[0],P(1,0)[1]-4,r'$P$','sujet','s')
+text(ax,P(0,1)[0]-3,P(0,1)[1]+3.5,r'$(0,1)$','sujet','s',ha='left')
+text(ax,P(2,1)[0]+3,P(2,1)[1]+1,r'$(2,1)$','sujet','s',ha='left')
+text(ax,P(2,0)[0]+3,P(2,0)[1]-1.5,r'$(2,0)$','resultat','s',ha='left')
+text(ax,70,40,'tourner d’abord,','encre','s'); text(ax,70,35,'puis translater','encre','s')
+text(ax,70,18,'origine : (2, 0)','resultat','s',)
+save(fig,'73-239')

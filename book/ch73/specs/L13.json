@@ -1,0 +1,191 @@
+[
+ {
+  "code": "73-193",
+  "a_dire": "Chaque rotation de SO(2) correspond à un seul point du cercle, et composer deux rotations revient à additionner leurs angles.",
+  "legende_titre": "Rotations et points du cercle",
+  "lecture": [
+   "Le cercle violet porte les points à 30, 60 et 90 degrés du point 1.",
+   "Dans le cadre violet, tu lis 30° + 60° = 90° : les angles s’ajoutent sur le cercle.",
+   "Dans le cadre bleu, tu lis R(30°) R(60°) = R(90°) : les mêmes angles, côté rotations.",
+   "La flèche grise relie les deux écritures : elles donnent le même résultat."
+  ],
+  "a_voir": "Le produit de deux rotations a pour angle la somme des angles, comme sur le cercle."
+ },
+ {
+  "code": "73-194",
+  "a_dire": "Dans SO(2), tourner de α puis de β donne la même rotation que tourner de β puis de α.",
+  "legende_titre": "Deux ordres, une même rotation",
+  "lecture": [
+   "Les deux dessins montrent la flèche (1, 0, 0) dans l'espace, avec les axes x, y et z.",
+   "À gauche, un quart de tour autour de l'axe vertical (orange, 1), puis autour de l'axe x (violet, 2) : la flèche finit en (0, 0, 1).",
+   "À droite, l'ordre est inversé : l'axe x d'abord ne la déplace pas, puis l'axe vertical (violet, 2) la mène en (0, 1, 0).",
+   "Les deux points verts sont différents : dans l'espace, l'ordre compte. Dans le plan, α puis β donne le même résultat que β puis α."
+  ],
+  "a_voir": "Dans l'espace les deux ordres finissent en deux points différents ; dans le plan, ils finissent au même endroit."
+ },
+ {
+  "code": "73-195",
+  "a_dire": "Le quart de tour (90°) s’obtient en tournant de 30° puis de 60°, ou de 60° puis de 30° : les angles s’additionnent.",
+  "legende_titre": "Fabriquer un quart de tour",
+  "lecture": [
+   "La demi-droite grise est le départ ; la demi-droite verte verticale est à 90°.",
+   "L’arc orange est la rotation de 30°, l’arc violet celle de 60°.",
+   "Le petit carré vert marque l’angle de 90°.",
+   "Les deux lignes bleues écrivent le produit dans les deux ordres."
+  ],
+  "a_voir": "30° plus 60° remplissent exactement le quart de tour."
+ },
+ {
+  "code": "73-196",
+  "a_dire": "Un miroir change le sens de rotation : τ R(θ) τ = R(−θ), donc O(2) n’est pas commutatif.",
+  "legende_titre": "Le miroir renverse le tour",
+  "lecture": [
+   "La ligne grise est l’axe du miroir ; le point bleu (1, 0) est dessus.",
+   "L’arc orange est le quart de tour, qui envoie (1, 0) en (0, 1).",
+   "La flèche violette est le miroir, qui envoie (0, 1) en (0, −1).",
+   "L’arc vert est le quart de tour dans l’autre sens : il arrive au même point (0, −1)."
+  ],
+  "a_voir": "Miroir, quart de tour, miroir donne le quart de tour dans l’autre sens."
+ },
+ {
+  "code": "73-197",
+  "a_dire": "Pour la forme Q = xy, la transformation (x, y) vers (2x, y/2) garde le produit des coordonnées : (3, 4) va en (6, 2), et 12 reste 12.",
+  "legende_titre": "Une forme qui multiplie les coordonnées",
+  "lecture": [
+   "La courbe bleue rassemble les points dont le produit des coordonnées vaut 12.",
+   "Le point bleu (3, 4) et le point vert (6, 2) sont tous deux sur cette courbe.",
+   "La flèche orange double la première coordonnée et divise la seconde par 2."
+  ],
+  "a_voir": "Le produit des coordonnées vaut 12 avant et après la transformation."
+ },
+ {
+  "code": "73-198",
+  "a_dire": "Avec la forme xy, le demi-tour n’est le carré d’aucune rotation, alors que sur le cercle le demi-tour est le carré du quart de tour : les deux groupes diffèrent.",
+  "legende_titre": "Même définition, autre forme, autre groupe",
+  "lecture": [
+   "En haut, deux flèches orange de 90° font un demi-tour de 180° (point vert).",
+   "En bas, la transformation avec a = −1 envoie (3, 4) sur (−3, −4).",
+   "Pour la faire deux fois, il faudrait un nombre a tel que a × a = −1.",
+   "Ce nombre n’existe pas parmi les nombres réels (texte rouge)."
+  ],
+  "a_voir": "Sur le cercle le demi-tour est un carré ; pour xy, il n’en est pas un."
+ },
+ {
+  "code": "73-199",
+  "a_dire": "En dimension 1, SO ne contient que 1 et n’est pas simple ; en dimension 2, SO est commutatif, donc simple seulement avec un nombre premier d’éléments ; le vrai théorème commence en dimension 3.",
+  "legende_titre": "Trois dimensions, trois situations",
+  "lecture": [
+   "Ligne du haut : O a deux éléments, 1 (bleu) et −1 (rouge, déterminant −1) ; SO garde seulement 1.",
+   "Ligne du milieu : le cercle montre deux rotations, α puis β, qui commutent.",
+   "Ligne du bas : le cadre vert dit que le vrai théorème commence à partir de la dimension 3."
+  ],
+  "a_voir": "Les dimensions 1 et 2 ne donnent pas de groupe simple utile ; le théorème commence en dimension 3."
+ },
+ {
+  "code": "73-200",
+  "a_dire": "Le théorème ne dit pas que Ω est simple : il divise Ω par son centre {1, −1}, et le quotient est simple.",
+  "legende_titre": "Diviser Ω par son centre",
+  "lecture": [
+   "Le grand cadre bleu est le groupe Ω.",
+   "Le cadre gris à l’intérieur est {1, −1} : −1 commute avec tout, donc Ω seul n’est pas simple.",
+   "La flèche orange divise Ω par ce centre.",
+   "Le cadre vert est le quotient, qui est simple."
+  ],
+  "a_voir": "On retire le centre {1, −1} pour obtenir un quotient simple."
+ },
+ {
+  "code": "73-201",
+  "a_dire": "Le signe ∩ désigne les éléments communs à deux ensembles : {2, 4, 6, 8} ∩ {3, 6, 9} = {6}.",
+  "legende_titre": "Ce que deux listes ont en commun",
+  "lecture": [
+   "Le disque bleu contient 2, 4, 6 et 8.",
+   "Le disque violet contient 3, 6 et 9.",
+   "La zone verte, où les deux disques se recouvrent, ne contient que 6.",
+   "L’écriture du bas dit la même chose avec le signe ∩."
+  ],
+  "a_voir": "Le signe ∩ garde seulement ce qui est dans les deux ensembles."
+ },
+ {
+  "code": "73-202",
+  "a_dire": "Un élément qui commute avec tous les miroirs ne peut être que 1 ou −1 ; un seul miroir ne suffit pas, car deux miroirs différents ne commutent pas.",
+  "legende_titre": "Deux miroirs qui ne commutent pas",
+  "lecture": [
+   "La ligne bleue est l'axe du miroir τ ; la ligne violette en tirets est l'axe du miroir σ.",
+   "Le point (1, 0) est laissé en place par τ, puis σ l'envoie en (0, 1) (point vert).",
+   "Dans l'autre ordre, σ l'envoie en (0, 1), puis τ en (0, −1) (point orange).",
+   "Les deux résultats sont différents : un seul miroir ne suffit pas. Le texte du haut dit que commuter avec tous les miroirs ne laisse que 1 et −1."
+  ],
+  "a_voir": "Deux miroirs ne commutent pas ; avec tous les miroirs, il ne reste que 1 et −1."
+ },
+ {
+  "code": "73-203",
+  "a_dire": "La méthode a besoin de vecteurs isotropes : la somme de trois carrés n’en a aucun, mais avec le carré du temps retranché, (1, 0, 0, 1) donne 0.",
+  "legende_titre": "Il faut un vecteur qui donne zéro",
+  "lecture": [
+   "À gauche, la somme de trois carrés vaut 0 seulement au point (0, 0, 0) en rouge.",
+   "À droite, on retranche le carré du temps.",
+   "La droite verte est l’ensemble des directions où la forme vaut 0.",
+   "Le point vert (1, 0, 0, 1) est sur cette droite : 1 moins 1 donne 0."
+  ],
+  "a_voir": "Sans vecteur isotrope, la méthode n’a rien sur quoi travailler."
+ },
+ {
+  "code": "73-204",
+  "a_dire": "Une rotation ρ(x,u) fixe le vecteur isotrope x et déplace les vecteurs perpendiculaires à x en leur ajoutant un multiple de x.",
+  "legende_titre": "Un déplacement parallèle à x",
+  "lecture": [
+   "La flèche bleue de gauche est x = (1, 0, 1), qui ne bouge pas.",
+   "La flèche orange est u = (0, 1, 0), perpendiculaire à x.",
+   "La flèche bleue partant de u est le déplacement 2x : il est parallèle à x.",
+   "Le point vert (2, 1, 2) est l’arrivée du vecteur u déplacé."
+  ],
+  "a_voir": "Le vecteur u glisse parallèlement à x ; x lui-même reste en place."
+ },
+ {
+  "code": "73-205",
+  "a_dire": "Deux déplacements de la forme « ajouter un multiple de x » s’additionnent et donnent le même résultat dans les deux ordres : 2x puis 3x, ou 3x puis 2x, donnent 5x.",
+  "legende_titre": "Des ajouts qui s’additionnent",
+  "lecture": [
+   "Chaque droite graduée compte les multiples de x, de 0 à 5.",
+   "En haut, l’arc orange ajoute 2x puis l’arc violet ajoute 3x.",
+   "En bas, l’ordre est inversé : 3x puis 2x.",
+   "Les deux chemins finissent au même point vert, 5x."
+  ],
+  "a_voir": "L’ordre des deux ajouts ne change pas le résultat 5x."
+ },
+ {
+  "code": "73-206",
+  "a_dire": "L’hypothèse ν ≥ 1 assure qu’il existe un vecteur isotrope : x² + y² n’en a aucun, alors que xy en a, comme (1, 0).",
+  "legende_titre": "Pourquoi il faut un vecteur isotrope",
+  "lecture": [
+   "À gauche, x² + y² vaut 0 seulement au point (0, 0), en rouge.",
+   "À droite, xy vaut 0 sur tous les points des axes (traits verts).",
+   "Le point vert (1, 0) est sur un axe : il est isotrope."
+  ],
+  "a_voir": "Seule la forme xy donne un vecteur non nul qui vaut 0."
+ },
+ {
+  "code": "73-207",
+  "a_dire": "Dans chaque tour de groupes, le quotient simple se trouve à un endroit précis : entre SL et C à gauche, entre Ω et {1} à droite.",
+  "legende_titre": "Les deux tours et leurs quotients",
+  "lecture": [
+   "La colonne bleue descend de GL(n) à {1} ; la colonne violette de O à {1}.",
+   "Chaque trait entre deux cadres porte le quotient de ces deux groupes.",
+   "Les traits gris fins portent des quotients commutatifs : 4, 2, {±1} et abélien.",
+   "Les bandes vertes épaisses portent le quotient simple : 60 à gauche, simple* à droite (simple après division par ±1)."
+  ],
+  "a_voir": "Dans chaque colonne, une seule bande verte marque le quotient simple."
+ },
+ {
+  "code": "73-208",
+  "a_dire": "Le signe ⊃ se lit « contient » : l’ensemble de gauche contient celui de droite quand chaque élément de droite est aussi à gauche.",
+  "legende_titre": "Un ensemble qui en contient un autre",
+  "lecture": [
+   "Le grand cadre bleu est l’ensemble de gauche : il contient 1, 2, 3, 4, 5 et 6.",
+   "Le cadre violet à l’intérieur est l’ensemble de droite : 2, 4 et 6.",
+   "Tous les éléments du cadre violet sont aussi dans le cadre bleu.",
+   "L’écriture du bas utilise le signe ⊃ entre les deux ensembles."
+  ],
+  "a_voir": "Le petit ensemble est entièrement dans le grand : on écrit ⊃."
+ }
+]

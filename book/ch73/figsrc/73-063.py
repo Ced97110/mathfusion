@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 2, 84, 56, 'fixe', r=2)
+text(ax, 14, 53, r'$O(V,Q)$', 'fixe', 'm')
+box(ax, 6, 6, 40, 40, 'resultat')
+text(ax, 26, 41, r'$SO(V,Q)$ : dét 1', 'resultat', 's')
+text(ax, 26, 29, 'quart de tour', 'resultat', 's'); text(ax, 26, 12, 'identité', 'resultat', 's')
+box(ax, 52, 22, 30, 16, 'limite', label='miroir\ndét −1', size='s')
+arrow(ax, (52, 26), (40, 14), 'varie', curve=0.3)
+text(ax, 66, 14, 'deux miroirs', 'varie', 's')
+save(fig, '73-063')

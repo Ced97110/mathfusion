@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+u = 11; ox, oy = 44, 12
+Q = lambda x, y: (ox + u * x, oy + u * y)
+line(ax, [(ox, oy - 3), (ox, oy + 3.3 * u)], 'fixe', lw=1.0, dash=True)
+line(ax, [(ox - 4.2 * u, oy), (ox + 4.2 * u, oy)], 'fixe', lw=0.5)
+poly(ax, [Q(0, 0), Q(1, 0), Q(1, 1), Q(0, 1)], 'sujet')
+poly(ax, [Q(0, 0), Q(-1, 0), Q(-1, 1), Q(0, 1)], 'limite')
+arrow(ax, Q(2.8, 2), Q(-2.8, 2), 'varie', lw=0.9, curve=0.0)
+for x, role in [(3, 'sujet'), (-3, 'limite')]:
+    ax.add_patch(Circle(Q(x, 2), 1.0, fc=COL[role], ec=COL[role], zorder=6))
+ax.add_patch(Circle(Q(0, 2), 1.0, fc=COL['fixe'], ec=COL['fixe'], zorder=6))
+text(ax, Q(3, 2)[0], Q(3, 2)[1] + 3.4, '(3, 2)', 'sujet', 's')
+text(ax, Q(-3, 2)[0], Q(-3, 2)[1] + 3.4, '(−3, 2)', 'limite', 's')
+text(ax, Q(0, 2)[0] + 2, Q(0, 2)[1] - 3.4, '(0, 2) ne bouge pas', 'fixe', 's', ha='left')
+text(ax, ox, oy + 3.3 * u + 3.5, 'axe vertical', 'fixe', 's')
+text(ax, Q(1.9, 0.5)[0], Q(1.9, 0.5)[1], 'carré', 'sujet', 's', ha='left')
+text(ax, Q(-1.9, 0.5)[0], Q(-1.9, 0.5)[1], 'image', 'limite', 's', ha='right')
+text(ax, 44, 4, r'$(x,\,y)\mapsto(-x,\,y)$ : $\det=-1$', 'limite', 's')
+save(fig, '73-021')

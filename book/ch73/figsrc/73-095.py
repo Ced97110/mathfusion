@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+u = 18; O = (36, 32); d = (-0.8, 0.6)
+P = lambda k: (O[0] + k * u * d[0], O[1] + k * u * d[1])
+ax.add_patch(Circle(O, u, ec=COL['fixe'], fc='none', lw=0.6, ls='--', zorder=1))
+line(ax, [P(-1.2), P(2.2)], 'fixe', lw=0.7, dash=True)
+arrow(ax, O, (O[0] + 0.6 * u, O[1] + 0.8 * u), 'sujet', lw=1.5)
+for k, r in [(-1, 'resultat'), (1, 'resultat'), (2, 'limite'), (0.5, 'limite')]:
+    disc(ax, *P(k), 1.1, r)
+text(ax, O[0] + 0.6 * u + 2, O[1] + 0.8 * u + 3, '(0,6 ; 0,8)', 'sujet', 's', ha='left')
+text(ax, P(1)[0] - 2, P(1)[1] - 3.5, '$k=1$', 'resultat', 's', ha='right')
+text(ax, P(0.5)[0] + 2, P(0.5)[1] + 4, '$k=0{,}5$', 'limite', 's', ha='left')
+text(ax, P(2)[0] + 2, P(2)[1] + 3.5, '$k=2$', 'limite', 's', ha='left')
+text(ax, P(-1)[0] + 2, P(-1)[1] - 5.5, r'$k=-1$', 'resultat', 's', ha='left')
+text(ax, 44, 7, 'seuls k = 1 et k = −1', 'resultat', 's')
+text(ax, 44, 3, 'donnent la longueur 1', 'resultat', 's')
+save(fig, '73-095')

@@ -1,0 +1,118 @@
+{
+ "73-160": {
+  "lecture": [
+   "La grande case grise contient les matrices de déterminant 1.",
+   "La case orange contient les transvections : une pour chaque pente.",
+   "Dans la ligne du bas, deux transvections orange de pente 1 se multiplient.",
+   "Le produit est la matrice violette (2, 1 ; 1, 1) : de déterminant 1, mais pas une transvection."
+  ],
+  "a_voir": "Une matrice de déterminant 1 s'écrit avec des transvections : il suffit de traiter les transvections."
+ },
+ "73-176": {
+  "lecture": [
+   "La barre grise est le nombre de matrices inversibles : 480.",
+   "La première flèche orange divise par q − 1, c'est-à-dire par 4, et donne la barre bleue : 120.",
+   "La seconde divise par le pgcd de 2 et 4, c'est-à-dire par 2, et donne la barre verte : 60."
+  ],
+  "a_voir": "Le nombre est écrit dans chaque barre : 480, 120, 60."
+ },
+ "73-179": {
+  "lecture": [
+   "Le triangle bleu montre les trois droites 1, 2 et 3.",
+   "Les six cases sont les six façons de les ranger.",
+   "Les trois cases vertes, dans le cadre en pointillés, sont les façons qui ne changent rien ou qui font tourner les droites : elles forment A₃, un sous-groupe normal.",
+   "Les trois cases orange sont les échanges de deux droites."
+  ],
+  "a_voir": "3 + 3 = 6 façons : le groupe contient A₃ normal, donc il n'est pas simple."
+ },
+ "73-185": {
+  "lecture": [
+   "Le triangle gris montre les trois droites rangées par S₃.",
+   "Les cases vertes avec ✓ sont les conditions vraies pour S₃ : tout couple va sur tout couple, et les conjugués de l'échange engendrent S₃.",
+   "La case rouge avec ✗ est la condition fausse : G = G′.",
+   "Le texte du bas dit que S₃ contient A₃ normal."
+  ],
+  "a_voir": "Deux conditions sont vraies, une seule est fausse, et cela suffit pour que S₃ ne soit pas simple."
+ },
+ "73-190": {
+  "lecture": [
+   "En haut, G est le groupe entier et H un sous-groupe normal.",
+   "À l'étape 1, les flèches orange partent de la droite 1 vers 2 et 3 : H atteint toutes les droites.",
+   "À l'étape 2, la case bleue H et la case grise H · échange couvrent tout G : le quotient est commutatif.",
+   "À l'étape 3, la case verte dit que H contient le dérivé, qui est G : donc H = G. Le texte rouge dit que dans S₃ cette étape manque."
+  ],
+  "a_voir": "Sans l'étape 3, H = A₃ passe les deux premières étapes sans être S₃."
+ },
+ "73-194": {
+  "lecture": [
+   "Les deux dessins montrent la flèche (1, 0, 0) dans l'espace, avec les axes x, y et z.",
+   "À gauche, un quart de tour autour de l'axe vertical (orange, 1), puis autour de l'axe x (violet, 2) : la flèche finit en (0, 0, 1).",
+   "À droite, l'ordre est inversé : l'axe x d'abord ne la déplace pas, puis l'axe vertical (violet, 2) la mène en (0, 1, 0).",
+   "Les deux points verts sont différents : dans l'espace, l'ordre compte. Dans le plan, α puis β donne le même résultat que β puis α."
+  ],
+  "a_voir": "Dans l'espace les deux ordres finissent en deux points différents ; dans le plan, ils finissent au même endroit."
+ },
+ "73-202": {
+  "lecture": [
+   "La ligne bleue est l'axe du miroir τ ; la ligne violette en tirets est l'axe du miroir σ.",
+   "Le point (1, 0) est laissé en place par τ, puis σ l'envoie en (0, 1) (point vert).",
+   "Dans l'autre ordre, σ l'envoie en (0, 1), puis τ en (0, −1) (point orange).",
+   "Les deux résultats sont différents : un seul miroir ne suffit pas. Le texte du haut dit que commuter avec tous les miroirs ne laisse que 1 et −1."
+  ],
+  "a_voir": "Deux miroirs ne commutent pas ; avec tous les miroirs, il ne reste que 1 et −1."
+ },
+ "73-207": {
+  "lecture": [
+   "La colonne bleue descend de GL(n) à {1} ; la colonne violette de O à {1}.",
+   "Chaque trait entre deux cadres porte le quotient de ces deux groupes.",
+   "Les traits gris fins portent des quotients commutatifs : 4, 2, {±1} et abélien.",
+   "Les bandes vertes épaisses portent le quotient simple : 60 à gauche, simple* à droite (simple après division par ±1)."
+  ],
+  "a_voir": "Dans chaque colonne, une seule bande verte marque le quotient simple."
+ },
+ "73-212": {
+  "lecture": [
+   "La ligne du haut calcule la forme sur (1, 0, 0, 1) : le résultat vert est 0, le vecteur est isotrope.",
+   "Sur la droite graduée, la partie verte est celle des nombres positifs, qui sont des carrés (4 = 2²).",
+   "La partie violette est celle des nombres négatifs, qui ne sont pas des carrés.",
+   "Chaque partie est une classe : sur les réels, à un carré près, il reste deux classes."
+  ],
+  "a_voir": "La droite se coupe en deux classes : les carrés et les nombres qui n'en sont pas."
+ },
+ "73-215": {
+  "lecture": [
+   "Chaque case bleue est un vecteur ; la case verte à sa droite est la valeur de la forme.",
+   "Les trois valeurs, 1, 2 et 9, sont positives.",
+   "La grande case verte dit le résultat : des valeurs positives sont des carrés dans les réels.",
+   "Le calcul du bas montre 2 × 1 = 2, qui est le carré de la racine de 2."
+  ],
+  "a_voir": "Toutes les valeurs sont positives, donc ce sont des carrés réels et la norme ne distingue rien."
+ },
+ "73-226": {
+  "lecture": [
+   "Les deux cases grises du haut sont les deux premières écritures du produit scalaire de Ax et Ay.",
+   "La flèche grise est la règle de la transposée.",
+   "La case bleue AᵗA = I est le départ (propriété 2) ; elle remplace AᵗA : c'est l'étape clé, en orange.",
+   "La case verte du bas est l'arrivée (propriété 3) : le produit scalaire de x et y, par exemple 15 pour x = (3, 4) et y = (5, 0)."
+  ],
+  "a_voir": "L'étape orange, qui remplace AᵗA par I, porte toute la preuve."
+ },
+ "73-233": {
+  "lecture": [
+   "Les deux lignes en pointillés sont les axes des miroirs : gris à 0 degré, violet à 45 degrés.",
+   "Les flèches orange, numérotées 1 et 2, suivent le point (1, 0) : 1. miroir 90° (axe 45°), il va en (0, 1) ; 2. miroir 0° (axe 0°), il va en (0, −1).",
+   "L'arc vert va de (1, 0) à (0, −1) : c'est le quart de tour dans le sens des aiguilles d'une montre, R(−90°).",
+   "Avec β = 90° d'abord, puis α = 0, la règle donne R(α − β)."
+  ],
+  "a_voir": "Le point finit en (0, −1), donc l'angle est α − β et non α + β."
+ },
+ "73-250": {
+  "lecture": [
+   "La barre bleue du haut est le groupe des 480 matrices ; à droite, la case bleue donne les chapitres 44, 51 et 58.",
+   "La barre orange est le noyau du déterminant, 120 matrices ; la case orange à droite donne les chapitres 47 et 48.",
+   "La barre verte est le quotient par le centre, 60 éléments, simple ; la case verte à droite donne le chapitre 64.",
+   "Les barres ont des largeurs proportionnelles aux nombres d'éléments."
+  ],
+  "a_voir": "Chaque étape du calcul fait appel à un chapitre différent."
+ }
+}

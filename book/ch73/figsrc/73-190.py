@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+text(ax,2,87,'G : le groupe entier ; H : sous-groupe normal','encre','s',ha='left')
+text(ax,2,78,'étape 1','encre','s',ha='left')
+xs=[34,50,66]
+for k,x in enumerate(xs): disc(ax,x,76,3.5,'sujet',label=str(k+1))
+arrow(ax,(xs[0]+2,79.5),(xs[1]-2,79.2),'varie',curve=-0.3); arrow(ax,(xs[0]+1,80.5),(xs[2]-1,80.5),'varie',curve=-0.2)
+text(ax,50,68,r'$H$ atteint toutes les droites','sujet','s')
+text(ax,2,54,'étape 2','encre','s',ha='left')
+box(ax,28,50,26,9,'sujet',label=r'$H$ : 3',size='m'); box(ax,58,50,26,9,'fixe',label=r'$H$ · échange : 3',size='s')
+brace(ax,28,84,48,'fixe',label=r'tout $G$ : quotient commutatif')
+text(ax,2,28,'étape 3','encre','s',ha='left')
+box(ax,22,22,62,12,'resultat',label='$H$ contient le dérivé, qui est $G$ :\n donc $H=G$',size='s')
+text(ax,50,10,'dans $S_3$ : $H=A_3\\neq S_3$\nl’étape 3 manque','limite','s')
+save(fig,'73-190')

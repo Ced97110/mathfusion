@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+O = (34, 34); u = 20
+ax.add_patch(Circle(O, u, ec=COL['fixe'], fc='none', lw=0.6, ls='--', zorder=1))
+arrow(ax, O, (O[0] + u, O[1]), 'sujet', lw=1.4)
+arrow(ax, O, (O[0], O[1] + u), 'resultat', lw=1.4)
+arrow(ax, O, (O[0], O[1] - u), 'resultat', lw=1.4)
+arrow(ax, O, (O[0] + u, O[1] + u), 'limite', lw=1.2)
+line(ax, [(O[0] + 2.5, O[1]), (O[0] + 2.5, O[1] + 2.5), (O[0], O[1] + 2.5)], 'resultat')
+text(ax, O[0] + u + 2, O[1] - 3.5, '(1, 0)', 'sujet', 's', ha='left')
+text(ax, O[0], O[1] + u + 4, '(0, 1)', 'resultat', 's')
+text(ax, O[0], O[1] - u - 4, '(0, −1)', 'resultat', 's')
+text(ax, O[0] + u + 2, O[1] + u + 3, '(1, 1)', 'limite', 's', ha='left')
+text(ax, O[0] + u + 4, O[1] + 12, 'longueur √2 > 1', 'limite', 's', ha='left')
+text(ax, 3, 2.8, 'seuls choix : (0, 1) ou (0, −1)', 'resultat', 's', ha='left')
+save(fig, '73-093')
