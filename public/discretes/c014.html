@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 14</div>
-<h1>Décrire une suite</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 14</div>
+<h1 class="ct">Décrire une suite</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Les chapitres précédents comptaient les éléments d’un ensemble fixé. Ici, la question change. On ne cherche plus un seul nombre. On cherche une liste de nombres, un pour chaque taille du problème. Cette liste s’appelle une suite. Ce chapitre dit ce qu’est une suite et comment on la décrit.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 14 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>La tour de Hanoï</h3>
 <p>Voici une légende. Dans un monastère de Hanoï, une grande salle contient trois piliers. Appelle-les A, B et C. Sur le pilier A sont empilés 64 disques, tous de tailles différentes. Le plus grand est en bas, le plus petit en haut. Les moines doivent déplacer toute la pile sur le pilier C. Ils suivent trois règles.</p>
 <p class="li">Ils déplacent un seul disque à la fois.</p>
@@ -37,7 +43,8 @@
 <p class="li">Longueur 3 : CCC, CD, DC. Donc <span class="m">𝑝</span><sub>3</sub> <span class="m">= 3</span>.</p>
 <p class="li">Longueur 4 : CCCC, CCD, CDC, DCC, DD. Donc <span class="m">𝑝</span><sub>4</sub> <span class="m">= 5</span>.</p>
 <p>Pour la longueur 15, tu ne vas pas tout écrire. Et pour la longueur 1000 ? Il te faut une autre méthode. La figure suivante la montre.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 14 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <img class="vf" src="/discretes/img/c014/p0428_11.svg" alt="carré à la fin domino à la fin reste : bande 1×4 reste : bande 1×3 p5 = p4 + p3 = 5 + 3 = 8" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>14.2 :</b> Regarde la dernière pièce de chaque bande</i> <span class="m">1 × 5</span><i>, en rouge. À gauche, c’est un carré : si tu l’enlèves, il reste une bande</i> <span class="m">1 × 4</span><i>, et tu retrouves les 5 bandes de longueur 4. À droite, c’est un domino : il reste une bande</i> <span class="m">1 × 3</span><i>, et tu retrouves les 3 bandes de longueur 3.</i></p>
 <p>Lis la figure 14.2 avec moi. Elle montre les 8 façons de remplir une bande <span class="m">1 × 5</span>. Elles sont rangées en deux colonnes, selon la dernière pièce.</p>
@@ -53,7 +60,8 @@
 <img class="vf" src="/discretes/img/c014/p0431_15.svg" alt="n an 25 0 0 20 1 1 a n e 15 2 4 rm 3 9 te 10 a3 = 9 4 16 5 indice → terme 0 0 1 2 3 4 5 indice n" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>14.3 :</b> Regarde la flèche rouge, à gauche : elle part de l’indice 3 et arrive au terme 9. Chaque indice</i> <span class="m">𝑛</span> <i>reçoit exactement un terme, ici</i> <span class="m">𝑎</span><sub>𝑛</sub> <span class="m">= 𝑛</span><sup>2</sup><i>. À droite, le même objet en graphique : des points isolés, un par indice. Entre l’indice 3 et l’indice 4, il n’y a rien.</i></p>
 <p>Lis la figure. Le nombre de départ d’une flèche s’appelle l’<i>indice</i>. Le nombre d’arrivée s’appelle le <i>terme</i>. Chaque indice a une flèche et une seule : c’est une fonction, au sens du chapitre 6. À droite, le graphique n’est pas une courbe : il n’existe pas de terme d’indice <span class="m">3,5</span>. C’est ce qui rend une suite <i>discrète</i> (chapitre 1).</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 14 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Suite, terme, indice</h3>
 <img class="vm" src="/discretes/img/c014/p0432_16.svg" alt="Définition : suite Une suite est une liste ordonnée infinie de nombres : 𝑎0, 𝑎1, 𝑎2, 𝑎3, … Plus précisément, une suite est une fonction dont l’ensemble de départ est ℕ. Le nombre 𝑎𝑛 est l’image de l’entier 𝑛. On l’appelle le terme d’indice 𝑛. La suite entière se note (𝑎𝑛)𝑛∈ℕ ou (𝑎𝑛)𝑛≥0. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c014/p0432_17.svg" alt="𝑎𝑛 Le terme numéro 𝑛. Se lit « 𝑎 indice 𝑛 ». Pour la suite des carrés, 𝑎3 = 9. 𝑛 L’indice : la position du terme dans la liste. C’est un entier naturel. Dans 𝑎3, l’indice vaut 3. 𝑎𝑛−1 Le terme placé juste avant 𝑎𝑛. Si 𝑛 = 4, c’est 𝑎3 = 9. Ce n’est pas 𝑎4 − 1 = 15. (𝑎𝑛)𝑛∈ℕ La suite entière, pas un seul terme. Se lit « la suite des 𝑎𝑛 pour 𝑛 dans ℕ ». Pour les carrés : 0, 1, 4, 9, … (𝑎𝑛)𝑛≥1 La même idée, mais la suite commence à 𝑎1 . Pour 𝐻𝑛 : 𝐻1 = 1, 𝐻2 = 3, … (𝑎𝑛) Écriture abrégée. Sans précision, on suppose que la suite commence à 𝑎0." style="--w:24.19" loading="lazy">
@@ -82,7 +90,8 @@
 <img class="vf" src="/discretes/img/c014/p0437_30.svg" alt="" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c014/p0438_31.svg" alt="149 150 termes 1, 2, 4, 8, 16 125 identiques 128 e 100 rm 75 bn = 2n + (n5) 70 te an = 2n 64 50 33 25 32 0 0 1 2 3 4 5 6 7 indice n" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>14.4 :</b> Regarde la zone bleutée : pour les indices 0 à 4, les carrés rouges et les points bleus sont au même endroit. À partir de l’indice 5, ils se séparent : 33 contre 32, puis 70 contre 64, puis 149 contre 128. Connaître cinq termes ne dit rien du sixième.</i></p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 14 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Deviner le terme suivant</h3>
 <p>Voici dix suites. Peux-tu trouver le terme suivant de chacune ? Cache la fin de chaque ligne et essaie.</p>
 <p>1. <span class="m">7, 7, 7, 7, 7, …</span> — 7 : la suite est constante.</p>
@@ -224,7 +233,8 @@
 <p>Les bandes donnent la suite <span class="m">(𝑝</span><sub>𝑛</sub><span class="m">)</span><sub>𝑛≥1</sub> :</p>
 <p><span class="m">𝑝</span><sub>𝑛</sub> <span class="m">= 𝑝</span><sub>𝑛−1</sub> <span class="m">+ 𝑝</span><sub>𝑛−2</sub><span class="m">,</span> <span class="m">𝑝</span><sub>1</sub> <span class="m">= 1,</span> <span class="m">𝑝</span><sub>2</sub> <span class="m">= 2.</span></p>
 <img class="vm" src="/discretes/img/c014/p0456_91.svg" alt="Tu as calculé 𝑝 = 987. La formule avec √5, 15 avec 𝑛 + 1 à la place de 𝑛, donne une formule explicite. Tu ne sais pas encore pourquoi elle est juste." style="--w:24.19" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 14 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c014/p0456_92.svg" alt="Lien avec un autre chapitre Une suite est une fonction de ℕ vers les nombres, au sens du chapitre 6. L’indice est l’entrée, le terme est la sortie. On écrit 𝑎𝑛 au lieu de 𝑎(𝑛). Les opérations sur les fonctions s’appliquent donc aux suites. Tu peux décaler une suite, comme 𝑒𝑛 = 𝑇𝑛+2 (figure 14.6). Tu peux additionner deux suites terme à terme. Tu peux regarder de combien une suite change d’un indice au suivant : ce sont les différences finies du chapitre 16." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c014/p0456_93.svg" alt="" style="--w:24.19" loading="lazy">
 <p>Voici où mène chaque idée du chapitre.</p>
@@ -234,5 +244,7 @@
 <p class="li"><b>Prouver une formule pour tout</b> <span class="m">𝑛</span> demande le raisonnement par récurrence (induction) du chapitre 18. La preuve de la première règle en était déjà un.</p>
 <p class="li"><b>Ranger une suite entière dans un seul objet</b> est l’idée des fonctions génératrices (chapitre 27).</p>
 <img class="vm" src="/discretes/img/c014/p0457_96.svg" alt="Enfin, les nombres triangulaires sont des coefficients binomiaux : 𝑇𝑛 = (𝑛+12 ), par 5 exemple 𝑇4 = (2) = 10. Le chapitre suivant dira pourquoi." style="--w:24.12" loading="lazy">
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 14 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c014/p0458_97.svg" alt="À toi de chercher Une formule explicite calcule 𝑎𝑛 avec un nombre fixe et fini d’opérations. La 𝑛 somme ∑ 𝑎𝑘 n’en est pas une : elle 𝑘=1 demande 𝑛 − 1 additions. Mais alors, 𝑛! est-il une formule explicite ? Il demande 𝑛 − 1 multiplications. Et 2𝑛 ? Lui aussi cache 𝑛 − 1 multiplications. Pourtant tout le monde l’appelle une formule explicite. Et la formule avec √5, qui contient deux puissances 𝑛-ièmes ? Quelles opérations acceptes-tu comme « une seule opération » ? Si tu changes cette liste, quelles suites gagnent ou perdent une formule explicite ? Peut-il exister une suite définie par récurrence qui n’a aucune formule explicite, quelle que soit la liste d’opérations finie que tu choisis ?" style="--w:24.19" loading="lazy">
+</div>
