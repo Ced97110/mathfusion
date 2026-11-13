@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 12</div>
-<h1>Inclusion-exclusion avancée : dérangements et fonctions</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 12</div>
+<h1 class="ct">Inclusion-exclusion avancée : dérangements et fonctions</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 7, tu as compté les éléments d’une réunion de deux ou trois ensembles qui se chevauchent. C’était le principe d’inclusion-exclusion. Au chapitre 11, tu as compté les façons de répartir des objets identiques. Ce chapitre réunit les deux. Il étend le principe à un nombre quelconque d’ensembles. Puis il l’applique à trois problèmes : les répartitions avec un maximum, les permutations sans élément fixe, et les fonctions surjectives.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 12 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Un minimum, c’est facile</h3>
 <p>Au chapitre 11, tu as appris à compter des répartitions. Avec la même règle, tu sais compter les façons de donner 10 biscuits à 3 enfants, ou les solutions de <span class="m">𝑥 + 𝑦 + 𝑧 = 11</span> en entiers naturels. Tu sais imposer un <i>minimum</i>. Si chaque enfant doit recevoir au moins 2 biscuits, tu donnes d’abord 2 biscuits à chacun. Puis tu répartis le reste avec les étoiles et les barres.</p>
 <h3>Un maximum, c’est plus dur</h3>
@@ -22,7 +28,8 @@
 <p><i>Les plaques.</i> Pour une farce, tu échanges les plaques nominatives des portes de 5 professeurs. Tu veux qu’aucune plaque ne reste sur la bonne porte. De combien de façons peux-tu le faire ?</p>
 <p><i>Les jeux vidéo.</i> Tu donnes tes 8 jeux vidéo, tous différents, à 5 amis. Chaque ami doit recevoir au moins un jeu. De combien de façons peux-tu le faire ?</p>
 <p>Les trois problèmes ont la même forme. Il y a des « mauvais » événements : un enfant reçoit trop ; une plaque reste à sa place ; un ami ne reçoit rien. Tu veux compter les cas où <i>aucun</i> mauvais événement n’arrive. Chaque mauvais événement, pris seul, est facile à compter. La difficulté est qu’ils peuvent arriver ensemble.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 12 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Commence par un problème plus petit que celui des tartes, où l’on peut tout dessiner.</p>
 <p>Trois enfants, Alberto, Bernadette et Carlos, se partagent 11 biscuits identiques. Aucun ne doit recevoir plus de 4 biscuits. Un enfant peut ne rien recevoir. Combien de partages possibles ?</p>
 <p>Note <span class="m">𝑎</span>, <span class="m">𝑏</span> et <span class="m">𝑐</span> les parts d’Alberto, de Bernadette et de Carlos. On a <span class="m">𝑎 + 𝑏 + 𝑐 = 11</span>. Si tu connais <span class="m">𝑎</span> et <span class="m">𝑏</span>, tu connais <span class="m">𝑐 = 11 − 𝑎 − 𝑏</span>. Un partage est donc un point <span class="m">(𝑎, 𝑏)</span> d’un quadrillage, avec <span class="m">𝑎 ≥ 0</span>, <span class="m">𝑏 ≥ 0</span> et <span class="m">𝑎 + 𝑏 ≤ 11</span>.</p>
@@ -49,7 +56,8 @@
 <p>Voici enfin la figure du troisième problème, avec 5 jeux et 3 amis <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span>. Une façon de donner les jeux est une fonction de <span class="m">{1, 2, 3, 4, 5}</span> (les jeux) vers <span class="m">{𝑎, 𝑏, 𝑐}</span> (les amis).</p>
 <img class="vm" src="/discretes/img/c012/p0376_8.svg" alt="1 1 a a 2 2 3 b 3 b 4 4 c c 5 5 surjective évite a Fig. 12.4 : Deux fonctions de {1, 2, 3, 4, 5} vers {𝑎, 𝑏, 𝑐}. Regarde à gauche : chacun de 𝑎, 𝑏, 𝑐 reçoit au moins une flèche, la fonction est surjective. Regarde à droite : aucune flèche n’arrive sur 𝑎, en rouge. La fonction « évite » 𝑎 : elle n’est pas surjective." style="--w:24.31" loading="lazy">
 <p>Sur la figure 12.4, tu le vois : une fonction n’est pas surjective quand elle évite au moins une sortie. Les mauvais événements sont : « éviter <span class="m">𝑎</span> », « éviter <span class="m">𝑏</span> », « éviter <span class="m">𝑐</span> ». Ils peuvent arriver ensemble : la fonction qui envoie tout sur <span class="m">𝑐</span> évite à la fois <span class="m">𝑎</span> et <span class="m">𝑏</span>.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 12 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Le principe pour un nombre quelconque d’ensembles</h3>
 <p>Rappelle-toi la formule du chapitre 7 pour trois ensembles :</p>
 <p><span class="m">|𝐴 ∪ 𝐵 ∪ 𝐶| = |𝐴| + |𝐵| + |𝐶|</span></p>
@@ -100,7 +108,8 @@
 <p>Commence par 5 entrées et 2 sorties <span class="m">{𝑎, 𝑏}</span>. Il y a <span class="m">2</span><sup>5</sup> <span class="m">= 32</span> fonctions : chaque entrée a 2 sorties possibles. Une fonction qui évite <span class="m">𝑎</span> envoie tout sur <span class="m">𝑏</span> : il y en a une seule. De même, une seule évite <span class="m">𝑏</span>. Aucune n’évite les deux. Il y a donc <span class="m">32 − 2 = 30</span> surjections.</p>
 <img class="vm" src="/discretes/img/c012/p0385_27.svg" alt="Règle : nombre de surjections Prémisses. 𝑋 a 𝑘 éléments et 𝑌 a 𝑛 éléments, avec 𝑘 ≥ 1 et 𝑛 ≥ 1. Conclusion. Le nombre de surjections de 𝑋 vers 𝑌 vaut 𝑘 𝑛 𝑘 𝑛 𝑘 𝑛 − ( )(𝑛 − 1) + ( )(𝑛 − 2) 1 2 𝑛 𝑘 − ⋯ ± ( )1 . 𝑛 − 1" style="--w:24.19" loading="lazy">
 <p><b>Pourquoi c’est vrai.</b> <span class="m">𝑈</span> est l’ensemble des fonctions de <span class="m">𝑋</span> vers <span class="m">𝑌</span>. Il en contient <span class="m">𝑛</span><sup>𝑘</sup> : chacune des <span class="m">𝑘</span> entrées a <span class="m">𝑛</span> sorties possibles (principe multiplicatif). Pour chaque <span class="m">𝑦</span> de <span class="m">𝑌</span>, soit <span class="m">𝐴</span><sub>𝑦</sub> l’ensemble des fonctions qui évitent <span class="m">𝑦</span>. Une surjection n’est dans aucun <span class="m">𝐴</span><sub>𝑦</sub> . Une fonction qui évite <span class="m">𝑗</span> sorties données envoie chaque entrée vers l’une des <span class="m">𝑛 − 𝑗</span> sorties restantes : il y en a <span class="m">(𝑛 − 𝑗)</span><sup>𝑘</sup>. Ce nombre ne dépend pas des sorties évitées. Le cas symétrique donne la formule. Le dernier terme, avec <span class="m">(</span><sup>𝑛</sup><sub>𝑛</sub><span class="m">)0</span><sup>𝑘</sup>, vaut 0 dès que <span class="m">𝑘 ≥ 1</span> : une fonction ne peut pas éviter toutes les sorties. On l’omet.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 12 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Alberto, Bernadette et Carlos, sans figure</h3>
 <p>Sans la figure, les étoiles et les barres donnent tous les cardinaux. <span class="m">|𝑈| = (</span><sup>13</sup><sub>2</sub> <span class="m">) = 78</span>. Pour <span class="m">|𝐴|</span>, donne 5 biscuits à Alberto : il reste 6 étoiles et 2 barres, <span class="m">(</span><sup>8</sup><sub>2</sub><span class="m">) = 28</span>. Pour <span class="m">|𝐴 ∩ 𝐵|</span>, donne 5 biscuits à Alberto et 5 à Bernadette : il reste 1 étoile et 2 barres, <span class="m">(</span><sup>3</sup><sub>2</sub><span class="m">) = 3</span>. Enfin <span class="m">|𝐴 ∩ 𝐵 ∩ 𝐶| = 0</span>. Donc <span class="m">|𝐴 ∪ 𝐵 ∪ 𝐶| = 3 × 28 − 3 × 3 + 0 = 75</span> et la réponse vaut <span class="m">78 − 75 = 3</span>.</p>
 <img class="vm" src="/discretes/img/c012/p0386_28.svg" alt="Ton objection Tu vas me dire : « Il suffisait de remarquer que deux enfants reçoivent 4 et le troisième 3. Il y a 3 choix pour celui qui reçoit 3. Pourquoi tout ce calcul ? » Tu as raison pour ce problème. Mais cette remarque ne marche que parce que 11 est tout près du maximum 3 × 4 = 12. Le but de l’exemple est de vérifier que la méthode donne la bonne réponse sur un cas où l’on peut contrôler. Le problème suivant n’a pas de raccourci aussi simple." style="--w:24.19" loading="lazy">
@@ -202,7 +211,8 @@
 <img class="vm" src="/discretes/img/c012/p0397_58.svg" alt="𝑃(9, 3) compte séparément les deux injections 𝑓 et 𝑔 de la figure 12.7. Mais (93), lu « 3 parmi 9 », ne compte que leur image commune {4, 5, 8}. En termes de fonctions, (9) compte les images possibles 3 des injections. C’est naturel : un coefficient binomial compte des sous-ensembles, et" style="--w:24.12" loading="lazy">
 <p>l’image d’une injection est un sous-ensemble de 3 éléments de l’ensemble d’arrivée. Chaque image provient de <span class="m">3! = 6</span> injections, une par ordre de ses 3 éléments. D’où <span class="m">(</span><sup>9</sup><sub>3</sub><span class="m">) =</span> <span class="m">504/6 = 84</span>.</p>
 <p>On peut dire cela plus savamment. On déclare deux injections <i>équivalentes</i> si elles ont la même image. Les injections se regroupent alors en paquets d’injections équivalentes. <span class="m">(</span><sup>9</sup><sub>3</sub><span class="m">)</span> compte ces paquets. Il est donc possible de voir les combinaisons comme des fonctions. Mais le conseil pratique est l’inverse : quand une question ne se lit pas naturellement comme un compte de fonctions, utilise directement les combinaisons ou les étoiles et les barres. Au chapitre 11, tu as vu que les fonctions comptent mal les biscuits identiques.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 12 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Vers le choix de la méthode</h3>
 <p><b>(chapitre 13).</b> Tu as maintenant un modèle commun : la fonction. Les mots sont toutes les fonctions. Les arrangements sont les injections. Les répartitions où chacun reçoit quelque chose, avec des objets distincts, sont les surjections. Le chapitre 13 rangera toutes les méthodes de dénombrement selon deux questions : l’ordre compte-t-il ? les répétitions sont-elles permises ?</p>
 <h3>Vers les relations de récurrence</h3>
@@ -215,6 +225,8 @@
 <p>Passer de <span class="m">𝑛</span> à <span class="m">𝑛 + 1</span> ajoute un seul terme, <span class="m">±1/(𝑛 + 1)!</span>. Ce terme est minuscule : <span class="m">1/6! ≈</span> <span class="m">0,0014</span>, <span class="m">1/10! &lt; 0,000 0003</span>. La proportion ne bouge donc presque plus. L’analyse montre que cette somme s’approche de <span class="m">1/𝑒</span>, où <span class="m">𝑒 ≈ 2,718</span> ; tu l’admets ici. Pour 10 chapeaux comme pour 1 000, environ 36,8 % des façons de rendre les chapeaux ne rendent son chapeau à personne.</p>
 <h3>Vers les fonctions génératrices</h3>
 <p><b>(chapitre 27).</b> Pour les tartes, l’inclusion-exclusion a demandé quatre étages. Au chapitre 27, tu coderas « 0 à 3 tartes » par <span class="m">1 + 𝑥 + 𝑥</span><sup>2</sup> <span class="m">+ 𝑥</span><sup>3</sup>. Le nombre de répartitions sera le nombre placé devant <span class="m">𝑥</span><sup>11</sup> dans <span class="m">(1 + 𝑥 + 𝑥</span><sup>2</sup> <span class="m">+ 𝑥</span><sup>3</sup><span class="m">)</span><sup>4</sup>. Le maximum sera dans la formule dès le départ.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 12 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c012/p0401_62.svg" alt="À toi de chercher Il y a 150 surjections de {1, 2, 3, 4, 5} vers {𝑎, 𝑏, 𝑐}. Divise ce nombre par 3! = 6 : tu obtiens 25. Une surjection découpe l’ensemble {1, 2, 3, 4, 5} en trois groupes non vides : les entrées envoyées sur 𝑎, celles envoyées sur 𝑏, celles envoyées sur 𝑐. Si tu échanges les noms 𝑎, 𝑏, 𝑐, tu obtiens une autre surjection, mais le découpage en groupes reste le même. Que compte donc le nombre 25 ? Pourquoi la division par 3! est-elle juste ici, alors qu’au chapitre 11 la division de 47 par 7! ne donnait même pas un entier ? Que devient ce raisonnement si l’on remplace" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c012/p0401_63.svg" alt="« surjections » par « toutes les fonctions » ?" style="--w:24.19" loading="lazy">
+</div>
