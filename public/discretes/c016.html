@@ -1,6 +1,9 @@
-<div class="pk">Chapitre 16</div>
-<h1>Différences finies et ajustement polynomial</h1>
-<h2>1. Le problème qui a forcé la notion</h2>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 16</div>
+<h1 class="ct">Différences finies et ajustement polynomial</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<section class="sec" id="s1"><div class="sk">Chapitre 16 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <p>Un échiquier ordinaire a 8 lignes et 8 colonnes. Il contient donc <span class="m">8 × 8 = 64</span> petites cases. Mais la question est plus large : combien de <i>carrés</i> contient-il, toutes tailles confondues ?</p>
 <p>Un carré, ici, c’est un bloc de cases qui a autant de lignes que de colonnes. Une case seule est un carré de côté 1. Un bloc de <span class="m">2 ×</span> <span class="m">2</span> cases est un carré de côté 2. L’échiquier entier est un carré de côté 8. Entre les deux, il y a des carrés de côté 3, 4, 5, 6 et 7. Ils se chevauchent. Les compter un par un sur un échiquier <span class="m">8 × 8</span> serait long, et tu risquerais d’en oublier.</p>
 <h3>Commencer petit</h3>
@@ -19,7 +22,8 @@
 <p class="li">Une suite <i>arithmétique</i> ajoute toujours le même nombre d’un terme au suivant. Ici, <span class="m">5 − 1 = 4</span> mais <span class="m">14 − 5 = 9</span>. Ce n’est pas le même nombre. La suite n’est pas arithmétique.</p>
 <p class="li">Une suite <i>géométrique</i> multiplie toujours par le même nombre. Ici, <span class="m">5 ÷ 1 = 5</span> mais <span class="m">14 ÷ 5 = 2,8</span>. La suite n’est pas géométrique.</p>
 <p>Tu as aussi vu qu’on sait sommer une suite arithmétique. Une suite dont les écarts forment une suite arithmétique a donc une formule (exemple 2.2.6 de Levin : la suite <span class="m">2, 3, 7, 14, 24, …</span> ). Mais ici, les écarts sont <span class="m">4, 9, 16, 25</span>. Ce ne sont pas des écarts réguliers non plus. On dirait qu’il faut descendre encore d’un niveau. Ce chapitre fait cette descente de façon systématique : les <i>différences finies</i>. Puis il montre comment s’en servir pour trouver la formule : l’<i>ajustement polynomial</i>.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 16 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Écris la suite des carrés de l’échiquier sur une ligne. En dessous, entre deux termes voisins, écris leur écart : le terme de droite moins le terme de gauche. Tu obtiens une nouvelle ligne. Recommence avec cette nouvelle ligne. C’est la figure 16.2. On a ajouté <span class="m">𝑎</span><sub>6</sub> <span class="m">= 36 + 25 + 16 + 9 + 4 + 1 = 91</span> pour avoir une ligne de plus.</p>
 <img class="vf" src="/discretes/img/c016/p0493_3.svg" alt="n = 1 n = 2 n = 3 n = 4 n = 5 n = 6 an 1 5 14 30 55 91 Δ 4 9 16 25 36 Δ2 5 7 9 11 Δ3 2 2 2 ligne constante" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>16.2 :</b> Le tableau des différences de la suite</i> <span class="m">1, 5, 14, 30, 55, 91</span><i>. Chaque nombre est la différence des deux nombres placés au-dessus de lui (celui de droite moins celui de gauche), reliés par les traits gris. Regarde la dernière ligne : tous ses nombres valent 2. Il a fallu descendre trois fois pour obtenir une ligne constante.</i></p>
@@ -37,7 +41,8 @@
 <p><b>Fig.</b> <i><b>16.3 :</b> À gauche, les points</i> <span class="m">(𝑛, 𝑛</span><sup>2</sup><span class="m">)</span><i>. Chaque segment rouge est la montée d’un point au suivant : c’est une différence</i> <span class="m">Δ</span><i>. Regarde les nombres rouges : 1, 3, 5, 7, 9, 11. À droite, ces montées sont placées sur leur propre graphique : la montée de</i> <span class="m">𝑛</span> <i>à</i> <span class="m">𝑛 + 1</span><i>, notée</i> <span class="m">Δ𝑎</span><sub>𝑛</sub><i>, est placée en</i> <span class="m">𝑛</span><i>. Elles sont alignées. Chaque segment vert, qui vaut toujours 2, est la montée d’une montée : c’est une différence</i> <span class="m">Δ</span><sup>2</sup><i>.</i></p>
 <p>À gauche, la suite monte de plus en plus vite. La hauteur de chaque segment rouge est l’écart entre deux termes voisins. La ligne <span class="m">Δ</span> mesure donc <i>de combien la suite monte à chaque pas</i>.</p>
 <p>À droite, ces montées forment une droite. Chaque montée dépasse la précédente de 2 exactement. La ligne <span class="m">Δ</span><sup>2</sup> mesure <i>de combien la montée augmente à chaque pas</i>. Ici, elle augmente toujours de la même quantité, 2. Résumons. Une suite dont la ligne <span class="m">Δ</span> est constante monte du même pas à chaque fois : ses points sont sur une droite. Une suite dont la ligne <span class="m">Δ</span><sup>2</sup> est constante a une montée qui grandit du même pas à chaque fois : ses points sont sur une courbe en forme de parabole, comme <span class="m">𝑛</span><sup>2</sup>. La suite de l’échiquier a sa ligne <span class="m">Δ</span><sup>3</sup> constante : c’est la montée de la montée qui grandit du même pas.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 16 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c016/p0496_7.svg" alt="Définition : différences d’une suite Soit une suite 𝑎0, 𝑎1 , 𝑎2, … La suite des différences (ou différences premières) de cette suite est la suite Δ𝑎 définie par Δ𝑎𝑛 = 𝑎𝑛+1 − 𝑎𝑛. Les différences 𝑘-ièmes s’obtiennent en recommençant 𝑘 fois : Δ2𝑎 est la suite des différences de Δ𝑎, Δ3 𝑎 est la suite des différences de Δ2𝑎, et ainsi de suite. Par convention, Δ0𝑎 est la suite 𝑎 elle-même. On dit que la suite est Δ𝑘-constante si la suite des différences 𝑘-ièmes est constante." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c016/p0497_8.svg" alt="" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c016/p0497_9.svg" alt="Symbole Ce qu’il dit 𝑎𝑛 Le terme numéro 𝑛 de la suite. Pour l’échiquier : 𝑎3 = 14. 𝑎𝑛+1 Le terme qui suit 𝑎𝑛. Si 𝑛 = 3, alors 𝑎𝑛+1 = 𝑎4 = 30. Δ Lettre grecque « delta » majuscule, pour « différence ». Δ𝑎𝑛 se lit « delta 𝑎 𝑛 ». Pour l’échiquier : Δ𝑎3 = 𝑎4 − 𝑎3 = 30 − 14 = 16. Δ𝑎 La suite entière des écarts. Pour l’échiquier : 4, 9, 16, 25, 36, … Δ2 𝑎𝑛 « Delta deux 𝑎 𝑛 ». C’est Δ𝑎𝑛+1 − Δ𝑎𝑛. Pour l’échiquier : Δ2𝑎3 = 25 − 16 = 9. Δ𝑘 Faire 𝑘 fois l’opération « prendre les écarts ». Le 𝑘 en haut n’est pas un exposant de multiplication. Pour l’échiquier, Δ3𝑎𝑛 = 2 pour tout 𝑛. Δ𝑘- La 𝑘-ième ligne du tableau ne constante contient qu’un seul nombre, répété." style="--w:24.19" loading="lazy">
@@ -103,7 +108,8 @@
 <img class="vm" src="/discretes/img/c016/p0506_39.svg" alt="Raison 2 : le tableau se reconstruit. Regarde le bord gauche du tableau des différences. Pour une suite Δ𝑘- constante, ce bord contient 𝑘 + 1 nombres : 𝑎0, Δ𝑎0, Δ2 𝑎0, … , Δ𝑘𝑎0 . Ces nombres suffisent à refaire tout le tableau. La dernière ligne est constante : tu la connais entière. La ligne au-dessus commence par Δ𝑘−1𝑎0, et chaque nombre suivant est le précédent plus le nombre placé en dessous entre eux. Tu remontes ainsi ligne par ligne jusqu’à la suite elle-même. Or ces 𝑘 + 1 nombres du bord se calculent à partir de 𝑎 , 𝑎 , … , 𝑎 seulement. Donc deux suites 0 1 𝑘" style="--w:24.12" loading="lazy">
 <p><span class="m">Δ</span><sup>𝑘</sup>-constantes qui ont les mêmes <span class="m">𝑘 + 1</span> premiers termes sont identiques jusqu’au bout.</p>
 <p>Cette remarque a une conséquence pratique. Le tableau se lit aussi dans l’autre sens : vers la gauche. Si tu connais une ligne constante, tu peux prolonger le tableau d’une colonne <i>avant</i> le premier terme. C’est ainsi qu’on calcule <span class="m">𝑎</span><sub>0</sub> quand la suite commence à <span class="m">𝑎</span><sub>1</sub>.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 16 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Effet 1 : reconnaître le degré d’une suite</h3>
 <p>Le tableau des différences dit si une suite a une formule polynomiale, et de quel degré. Voici les trois suites de l’exemple 2.3.1 de Levin. <b>Suite 1 :</b> <span class="m">2, 3, 7, 14, 24, 37, …</span></p>
 <img class="vm" src="/discretes/img/c016/p0507_40.svg" alt="𝑎𝑛 2, 3, 7, 14, 24, 37 Δ 1, 4, 7, 10, 13 Δ2 3, 3, 3, 3" style="--w:24.12" loading="lazy">
@@ -200,7 +206,8 @@
 <img class="vf" src="/discretes/img/c016/p0519_82.svg" alt="" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c016/p0520_83.svg" alt="128 125 les 5 premiers termes coïncident 100 99 75 2n−1 64 1 + (n2) + (n4) 50 57 32 25 31 0 1 2 3 4 5 6 7 8 n" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>16.6 :</b> Deux suites qui coïncident sur leurs cinq premiers termes (zone bleue) :</i> <span class="m">2</span><sup>𝑛−1</sup> <i>(carrés gris) et le polynôme</i> <span class="m">1 + (</span><sup>𝑛</sup><sub>2</sub><span class="m">) + (</span><sup>𝑛</sup><sub>4</sub><span class="m">)</span> <i>(points rouges). Regarde à partir de</i> <span class="m">𝑛 = 6</span> <i>: 31 au lieu de 32, puis 57 au lieu de 64. Cinq termes ne suffisent pas à distinguer une croissance polynomiale d’une croissance en</i> <span class="m">2</span><sup>𝑛</sup><i>.</i></p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 16 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Les différences finies regardent une suite par ses écarts. Ce point de vue revient dans plusieurs chapitres.</p>
 <h3>En arrière : les chapitres 14 et 15</h3>
 <p>Au chapitre 15, une suite arithmétique était définie par un écart constant : c’est une suite <span class="m">Δ</span><sup>1</sup>-constante. Les sommes de suites arithmétiques, comme les nombres triangulaires du chapitre 14, sont <span class="m">Δ</span><sup>2</sup> - constantes. Ce chapitre range ces cas dans une échelle qui ne s’arrête pas : <span class="m">Δ</span><sup>3</sup>, <span class="m">Δ</span><sup>4</sup>, et ainsi de suite.</p>
@@ -210,5 +217,7 @@
 <img class="vm" src="/discretes/img/c016/p0521_85.svg" alt="L’ajustement polynomial trouve une formule. Le raisonnement par récurrence la prouve. 𝑛 2 Par exemple, la formule ∑ 𝑘 = 𝑘=1 𝑛(𝑛+1)(2𝑛+1) se démontre par récurrence 6 en quelques lignes : il suffit de vérifier que l’écart entre la formule au rang 𝑛 et au rang 𝑛 − 1 vaut 𝑛2. Tu remarqueras que cette vérification est un calcul de différence." style="--w:24.19" loading="lazy">
 <h3>En avant : le chapitre 27</h3>
 <p>Les fonctions génératrices traduisent l’opération « prendre les différences » en une multiplication par <span class="m">(1 − 𝑥)</span>. Une suite <span class="m">Δ</span><sup>𝑘</sup>-constante y devient une fraction dont le dénominateur est <span class="m">(1−𝑥)</span><sup>𝑘+1</sup>. Le degré que tu lis ici dans le tableau deviendra un exposant visible dans une formule.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 16 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c016/p0523_86.svg" alt="À toi de chercher Pour la suite 2𝑛, la ligne Δ redonne exactement la suite de départ. Calcule maintenant le tableau de 3𝑛 : 1, 3, 9, 27, 81. Tu dois trouver que la ligne Δ est 2, 6, 18, 54, c’est-à-dire le double de la suite. Cherche pourquoi. Puis pose-toi la question en général : pour quels nombres 𝑟 la suite 𝑟𝑛 a-t-elle une ligne Δ proportionnelle à elle-même ? Quel est alors le facteur de proportion ? Existe- t-il un polynôme non nul dont la ligne Δ est proportionnelle à lui-même ? Que t’apprend ta réponse sur la différence de nature entre les polynômes et les suites 𝑟𝑛 ?" style="--w:24.19" loading="lazy">
+</div>
