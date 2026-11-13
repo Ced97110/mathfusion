@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+line(ax, [(44, 4), (44, 60)], 'fixe', dash=True)
+text(ax, 22, 61, 'anneau commutatif', 'resultat', 's')
+text(ax, 66, 61, 'tableaux', 'limite', 's')
+text(ax, 22, 51, 'ab = ba', 'resultat', 'l')
+box(ax, 4, 31, 17, 10, 'resultat', label=r'3 $\times$ 4 = 12', size='s')
+box(ax, 23, 31, 17, 10, 'resultat', label=r'4 $\times$ 3 = 12', size='s')
+text(ax, 22, 22, r'$(3+4)^2 = 9+2\times 12+16$', 'resultat', 's'); text(ax, 22, 14, '= 49', 'resultat', 's')
+text(ax, 66, 51, 'AB ≠ BA', 'limite', 'l')
+box(ax, 47, 31, 38, 10, 'limite', label='AB : (4, 17) (0, 18)', size='s')
+box(ax, 47, 19, 38, 10, 'limite', label='BA : (4, 23) (0, 18)', size='s')
+save(fig, '51-096')

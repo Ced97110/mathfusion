@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 22, 77, 'première forme', 'sujet', 'm', weight='bold'); text(ax, 66, 77, 'seconde forme', 'autre', 'm', weight='bold')
+box(ax, 2, 52, 40, 17, 'sujet', label=r'$\frac{1}{6}+\frac{1}{4}=\frac{5}{12}$')
+arrow(ax, (22, 51), (22, 41), 'varie'); text(ax, 25, 46, 'retourner', 'varie', 's', ha='left')
+box(ax, 2, 26, 40, 14, 'sujet', label=r'$\frac{12}{5}$')
+box(ax, 46, 26, 40, 43, 'autre', label='')
+text(ax, 66, 60, r'$\frac{6\times 4}{6+4}$', 'autre', 'm')
+text(ax, 66, 47, 'une seule division', 'varie', 's')
+text(ax, 66, 34, r'$\frac{24}{10}$', 'autre', 'm')
+arrow(ax, (22, 25), (22, 17), 'varie'); arrow(ax, (66, 25), (66, 17), 'varie')
+box(ax, 2, 4, 84, 12, 'resultat', label=r'même valeur : $2{,}4$')
+save(fig, '21-137')

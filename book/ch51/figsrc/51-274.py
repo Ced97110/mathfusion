@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 70, 'Un corps sans la condition $1\\neq 0$', 'fixe', 's')
+box(ax, 3, 46, 24, 16, 'sujet', label='$\\{0\\}$', size='l')
+arrow(ax, (27, 54), (40, 54), 'limite')
+box(ax, 40, 46, 45, 16, 'limite', label='il serait un corps', size='m')
+text(ax, 44, 38, 'Avec la condition $1\\neq 0$', 'fixe', 's')
+box(ax, 3, 12, 24, 16, 'sujet', label='$\\{0\\}$', size='l')
+arrow(ax, (27, 20), (40, 20), 'resultat')
+box(ax, 40, 12, 45, 16, 'resultat', label='refusé', size='m')
+save(fig, '51-274')

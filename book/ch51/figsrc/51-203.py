@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+box(ax, 2, 78, 40, 14, 'fixe', label=r'$(-a)b=-(ab)$', size='s')
+box(ax, 46, 78, 40, 14, 'fixe', label=r'$a(-b)=-(ab)$', size='s')
+text(ax, 22, 94, 'étape 1', 'fixe', 's'); text(ax, 66, 94, 'étape 2', 'fixe', 's')
+arrow(ax, (22, 78), (30, 66), 'varie')
+text(ax, 62, 71, r'dans l’étape 1 : $b\to -b$', 'varie', 's', weight='bold')
+box(ax, 8, 54, 72, 12, 'sujet', label=r'$(-a)(-b)=-\,(a\,(-b))$', size='s')
+arrow(ax, (66, 78), (66, 66), 'fixe', lw=0.7)
+arrow(ax, (44, 54), (44, 44), 'fixe')
+text(ax, 44, 48.5, 'étape 2', 'fixe', 's', ha='left') if False else None
+box(ax, 8, 31, 72, 13, 'fixe', label=r'$=-\,(-(ab))$', size='s')
+arrow(ax, (44, 31), (44, 21), 'fixe')
+box(ax, 22, 6, 44, 15, 'resultat', label=r'$(-a)(-b)=ab$', size='m')
+save(fig, '51-203')

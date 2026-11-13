@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 65, 'dans les fractions', 'resultat', 's'); text(ax, 66, 65, 'dans les entiers', 'limite', 's')
+box(ax, 6, 48, 32, 10, 'sujet', label=r'$3x=12$')
+arrow(ax, (22, 48), (22, 33), 'varie'); text(ax, 25, 40.5, r'$\times\frac{1}{3}$ à gauche', 'varie', 's', ha='left')
+box(ax, 6, 22, 32, 10, 'resultat', label=r'$x=4$')
+text(ax, 22, 15, r'$3\times 4=12$', 'resultat', 's')
+box(ax, 50, 48, 32, 10, 'limite', label=r'$2x=3$')
+text(ax, 66, 40, 'aucun entier', 'limite', 's'); text(ax, 66, 34, 'ne convient', 'limite', 's')
+line(ax, [(44, 8), (44, 62)], 'fixe', dash=True)
+text(ax, 44, 4, r'$ax=b$ avec $a\neq 0$ : $x=a^{-1}b$', 'sujet', 's')
+save(fig, '51-115')

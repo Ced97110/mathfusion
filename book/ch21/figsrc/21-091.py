@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 4, 66, 26, 11, 'sujet', True, r'$x=-13$')
+text(ax, 36, 71.5, r'$\notin$', 'encre', 'l')
+box(ax, 42, 66, 42, 11, 'varie', True, r'interdites : $1$ et $-6$', 's')
+text(ax, 26, 58.5, 'on remplace x', 'varie', 's', ha='left')
+box(ax, 3, 30, 38, 20, 'sujet', True, r'$\frac{4}{-14}=-\frac{2}{7}$')
+box(ax, 47, 30, 38, 20, 'autre', True, r'$\frac{2}{-7}=-\frac{2}{7}$')
+text(ax, 44, 40, r'$=$', 'resultat', 'l')
+text(ax, 44, 18, 'les deux côtés sont égaux', 'resultat', 's')
+text(ax, 44, 8, 'candidat vérifié', 'resultat', 'm')
+save(fig, '21-091')

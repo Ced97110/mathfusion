@@ -1,0 +1,179 @@
+[
+ {
+  "code": "21-097",
+  "a_dire": "Une fraction complexe a une petite fraction dans son haut ou son bas.",
+  "legende_titre": "Une fraction dans une fraction",
+  "lecture": [
+   "Le trait bleu épais est le trait de la grande fraction.",
+   "Au-dessus du trait, le haut contient la petite fraction encadrée en violet : 1 sur x.",
+   "Sous le trait, le bas contient la petite fraction encadrée en violet : 1 sur x au carré."
+  ],
+  "a_voir": "Il y a des fractions à deux niveaux : une grande, et des petites dans son haut et son bas."
+ },
+ {
+  "code": "21-098",
+  "a_dire": "Méthode 1 : réduire le haut en une fraction, réduire le bas en une fraction, puis diviser le haut par le bas.",
+  "legende_titre": "Trois actions pour simplifier",
+  "lecture": [
+   "Chaque case bleue est un morceau de la grande fraction : le haut, puis le bas.",
+   "La flèche orange est l'action de réduire ; la case verte à droite est le résultat : une seule fraction.",
+   "La dernière ligne montre la division à faire entre les deux cases vertes obtenues."
+  ],
+  "a_voir": "Deux réductions, puis une division."
+ },
+ {
+  "code": "21-099",
+  "a_dire": "Méthode 2 : on multiplie le haut et le bas par le PPCM des petits dénominateurs, et il ne reste plus de petite fraction.",
+  "legende_titre": "Multiplier haut et bas par le même nombre",
+  "lecture": [
+   "La case violette donne le PPCM de x et de x au carré : x au carré.",
+   "Chaque flèche orange est une multiplication par x au carré, faite directement, sans réduire avant.",
+   "Les cases vertes sont le haut et le bas obtenus : plus aucune petite fraction."
+  ],
+  "a_voir": "Le même multiplicateur sert au haut et au bas, et les petites fractions disparaissent."
+ },
+ {
+  "code": "21-100",
+  "a_dire": "On multiplie par x au carré, on factorise, on retire x moins 1 et il reste x sur x plus 1 ; pour x égal 2, on trouve 2 sur 3.",
+  "legende_titre": "Un exemple complet de la méthode 2",
+  "lecture": [
+   "La case bleue du haut est la fraction obtenue après la multiplication.",
+   "La case bleue du milieu est la même fraction factorisée ; on retire x moins 1.",
+   "La case verte est le résultat ; à droite, x égal 2 donne 2 sur 3, et le rouge liste les valeurs interdites."
+  ],
+  "a_voir": "Trois étapes menent au résultat, que le cas x égal 2 confirme."
+ },
+ {
+  "code": "21-101",
+  "a_dire": "Pour diviser un polynôme par un monôme, on divise chaque terme, puis on additionne.",
+  "legende_titre": "Diviser chaque terme",
+  "lecture": [
+   "La règle en haut est a plus b sur c égale a sur c plus b sur c.",
+   "La case grise divise le total : 12 plus 8, soit 20, divisé par 4 donne 5.",
+   "La case bleue divise chaque terme : 3 plus 2 donne aussi 5."
+  ],
+  "a_voir": "Les deux chemins donnent le même résultat, 5."
+ },
+ {
+  "code": "21-102",
+  "a_dire": "Le polynôme est divisé terme par terme : 3x au carré sur x donne 3x, x sur x donne 1, et moins 11 sur x reste.",
+  "legende_titre": "Le calcul terme par terme",
+  "lecture": [
+   "Chaque case bleue du haut est un terme du polynôme, écrit sur x.",
+   "Chaque flèche orange est une division par x.",
+   "Chaque case verte est le résultat : 3x, puis 1, puis moins 11 sur x, qui reste une fraction."
+  ],
+  "a_voir": "Les deux premiers termes se divisent, le dernier garde sa fraction."
+ },
+ {
+  "code": "21-103",
+  "a_dire": "Le dernier terme reste une fraction, car 11 ne se divise pas par x.",
+  "legende_titre": "Un terme qui ne se divise pas",
+  "lecture": [
+   "À gauche, les 11 cases sont rangées par 4 : deux rangées pleines en vert, et 3 cases grises de reste.",
+   "À droite, la case bleue montre 11 sur x.",
+   "Le texte orange dit que x est inconnu, donc rien ne se retire de 11."
+  ],
+  "a_voir": "Avec 4, il reste 3 sur 4 ; avec x, il reste 11 sur x."
+ },
+ {
+  "code": "21-104",
+  "a_dire": "Quand le haut et le bas n'ont aucun facteur commun, on ne peut pas réduire, mais on peut poser la division.",
+  "legende_titre": "Quand la réduction ne marche plus",
+  "lecture": [
+   "La case bleue est la fraction x au carré plus 1 sur x plus 1.",
+   "La flèche rouge mène à la case rouge : aucun facteur commun, rien à retirer.",
+   "La flèche orange mène à la case verte : poser la division donne un quotient plus le reste sur le diviseur."
+  ],
+  "a_voir": "Il reste un chemin quand la réduction est impossible : la division."
+ },
+ {
+  "code": "21-105",
+  "a_dire": "La division posée s'arrête quand le reste est assez petit ; chaque tour a trois gestes.",
+  "legende_titre": "Les gestes d'un tour et l'arrêt",
+  "lecture": [
+   "Les trois cases orange du haut sont les trois gestes d'un tour : diviser, multiplier, soustraire.",
+   "Les deux cases bleues sont les tours de 156 divisé par 12, avec leur reste : 3, puis 0.",
+   "La case verte dit que l'on s'arrête quand le reste est 0."
+  ],
+  "a_voir": "Chaque tour répète les mêmes trois gestes jusqu'à l'arrêt."
+ },
+ {
+  "code": "21-106",
+  "a_dire": "Une division de nombres et une division de polynômes ont la même disposition, ligne par ligne.",
+  "legende_titre": "Deux divisions, même disposition",
+  "lecture": [
+   "La colonne de gauche est 156 divisé par 12 ; la colonne de droite est x au carré plus 5x plus 6 divisé par x plus 2.",
+   "Les lignes orange sont les produits soustraits, au même endroit dans les deux colonnes.",
+   "Les traits gris sont les soustractions ; le 0 vert en bas est le reste des deux colonnes."
+  ],
+  "a_voir": "Les deux colonnes ont la même forme et finissent par le reste 0."
+ },
+ {
+  "code": "21-107",
+  "a_dire": "Le reste 0 veut dire que le diviseur divise exactement ; un reste non nul laisse un morceau en plus.",
+  "legende_titre": "Reste 0 et reste 1",
+  "lecture": [
+   "Chaque case bleue représente 12 ; il y en a 13 en haut et 13 en bas.",
+   "En haut, les 13 cases font 156 et il ne reste rien : reste 0, en vert.",
+   "En bas, la petite case orange est le 1 en plus : 157, reste 1."
+  ],
+  "a_voir": "Le reste 0, c'est l'absence de la petite case orange."
+ },
+ {
+  "code": "21-108",
+  "a_dire": "On divise 156 par 12 en répétant : chercher combien de fois, multiplier, soustraire, écrire le chiffre suivant.",
+  "legende_titre": "156 divisé par 12, geste par geste",
+  "lecture": [
+   "À gauche, la division posée : 156 à diviser, 12 à droite, quotient 13 en vert.",
+   "Les lignes orange à gauche sont les produits à soustraire : 12, puis 36.",
+   "Le texte à droite de chaque ligne dit ce qu'on fait à cette ligne."
+  ],
+  "a_voir": "La division s'enchaîne par tours et finit par le reste 0 et le quotient 13."
+ },
+ {
+  "code": "21-109",
+  "a_dire": "On divise x au carré plus 5x plus 6 par x plus 2 avec les mêmes gestes : le quotient est x plus 3 et le reste est 0.",
+  "legende_titre": "Même gestes avec des polynômes",
+  "lecture": [
+   "À gauche, la division posée : le polynôme à diviser, le diviseur x plus 2 en violet, le quotient x plus 3 en vert.",
+   "Les lignes orange sont les produits soustraits : x au carré plus 2x, puis 3x plus 6.",
+   "Le 0 vert en bas est le reste ; le texte à droite nomme chaque geste."
+  ],
+  "a_voir": "Les gestes sont ceux des nombres, et la division tombe juste."
+ },
+ {
+  "code": "21-110",
+  "a_dire": "Chaque ligne a un geste : diviser le premier terme, multiplier le diviseur, soustraire tout le produit.",
+  "legende_titre": "Lire la division ligne par ligne",
+  "lecture": [
+   "La colonne verte donne les trois gestes justes : 1. diviser, 2. multiplier, 3. soustraire.",
+   "La case rouge du haut divise 5x par x : on ne divise que le premier terme.",
+   "Les textes verts disent que le produit et la soustraction portent sur tous les termes.",
+   "La case rouge du bas oublie la parenthèse et donne 7x plus 6, ce qui est faux."
+  ],
+  "a_voir": "Trois gestes justes, et deux erreurs à éviter."
+ },
+ {
+  "code": "21-111",
+  "a_dire": "Une division de polynômes donne deux résultats : le quotient x plus 3 et le reste 0.",
+  "legende_titre": "Deux résultats, deux noms",
+  "lecture": [
+   "La première écriture bleue est le polynôme de départ.",
+   "Les écritures violette et verte sont le diviseur et le quotient, multipliés.",
+   "Le 0 orange est le reste, ajouté à la fin."
+  ],
+  "a_voir": "Départ égale diviseur fois quotient, plus reste."
+ },
+ {
+  "code": "21-112",
+  "a_dire": "La division par x plus 2 donne le même produit que la recherche de deux nombres au chapitre 18.",
+  "legende_titre": "Deux chemins, un même produit",
+  "lecture": [
+   "La case bleue est le polynôme de départ.",
+   "La flèche violette du haut est le chemin du chapitre 18 : produit 6, somme 5, donc 2 et 3.",
+   "La flèche orange du bas est la division par x plus 2, qui donne x plus 3 ; la case verte est le produit des deux facteurs."
+  ],
+  "a_voir": "Les deux chemins donnent les mêmes facteurs."
+ }
+]

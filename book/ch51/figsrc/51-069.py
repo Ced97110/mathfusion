@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,12,44,20,14,'sujet',label='ℤ',size='xl',weight='bold'); box(ax,34,44,30,14,'varie',label=r'$[\sqrt{2}]$',size='xl')
+arrow(ax,(22,43),(22,33),'sujet'); arrow(ax,(49,43),(49,33),'varie')
+text(ax,22,28,'m et n','sujet','m'); text(ax,22,22,'entiers','sujet','m')
+text(ax,52,28,r'on ajoute $\sqrt{2}$','varie','m')
+text(ax,52,22,'aux entiers','varie','m')
+box(ax,6,4,76,11,'resultat',label=r'$m+n\sqrt{2}$,  $m$, $n$ entiers',size='m')
+arrow(ax,(44,19),(44,16),'resultat')
+save(fig,'51-069')

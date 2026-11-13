@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+box(ax, 4, 80, 48, 11, 'sujet', label=r'$ab = 0$', size='l'); text(ax, 70, 85.5, r'avec $a \neq 0$', 'sujet', 's')
+arrow(ax, (28, 79), (28, 64), 'varie', lw=1.8)
+text(ax, 31, 71.5, r'on écrit $0 = a \cdot 0$', 'varie', 's', ha='left', weight='bold')
+box(ax, 4, 52, 48, 11, 'varie', label=r'$ab = a \cdot 0$', size='l'); text(ax, 70, 57.5, 'même facteur', 'varie', 's')
+arrow(ax, (28, 51), (28, 36), 'fixe')
+text(ax, 31, 43.5, 'on simplifie par a', 'fixe', 's', ha='left')
+box(ax, 4, 24, 48, 11, 'resultat', label=r'$b = 0$', size='l')
+text(ax, 56, 29.5, 'arrivée', 'resultat', 's', ha='left')
+line(ax, [(4, 17), (84, 17)], 'fixe', lw=0.5)
+text(ax, 44, 11, r'donc $a \neq 0$ et $ab = 0$', 'fixe', 's'); text(ax, 44, 5.5, r'obligent $b = 0$', 'fixe', 's')
+save(fig, '51-110')

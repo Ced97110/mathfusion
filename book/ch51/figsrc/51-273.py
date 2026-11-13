@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 3, 60, 22, 12, 'sujet', label='$0\\times 0$', size='l')
+text(ax, 31, 66, '=', 'encre', 'l')
+box(ax, 37, 60, 14, 12, 'sujet', label='$0$', size='l')
+text(ax, 57, 66, '=', 'encre', 'l')
+box(ax, 63, 60, 14, 12, 'varie', label='$1$', size='l')
+text(ax, 44, 53, 'le 0 est aussi le 1', 'varie', 's')
+arrow(ax, (44, 49), (44, 40), 'sujet')
+box(ax, 4, 26, 80, 13, 'resultat', label='le 0 est son propre inverse', size='m')
+arrow(ax, (44, 26), (44, 17), 'limite')
+box(ax, 4, 4, 80, 13, 'limite', label='cas absurde : à exclure', size='m')
+save(fig, '51-273')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+def frac(cx, yb, n, d, rn, rd, w=14, h=9):
+    box(ax, cx - w / 2, yb + 2, w, h, rn, label=n, size='l')
+    box(ax, cx - w / 2, yb - 2 - h, w, h, rd, label=d, size='l')
+    line(ax, [(cx - w / 2, yb), (cx + w / 2, yb)], 'encre', lw=1.0)
+frac(24, 30, '2', '3', 'sujet', 'fixe')
+frac(64, 30, '5', '7', 'sujet', 'fixe')
+text(ax, 44, 30, r'$\times$', 'encre', 'l')
+text(ax, 24, 53, r'$P=2$', 'sujet', 'l')
+text(ax, 64, 53, r'$R=5$', 'sujet', 'l')
+arrow(ax, (24, 49), (24, 43), 'sujet')
+arrow(ax, (64, 49), (64, 43), 'sujet')
+text(ax, 44, 68, 'les hauts : numérateurs', 'sujet', 'm')
+text(ax, 44, 6, 'un haut par fraction', 'fixe', 's')
+save(fig, '21-059')

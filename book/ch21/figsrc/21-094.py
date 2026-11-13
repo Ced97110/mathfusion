@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 72, r'$\frac{4a}{a-4}=2+\frac{16}{a-4}$', 'encre', 'l')
+text(ax, 16, 56, 'candidat', 'sujet', 's')
+box(ax, 4, 42, 24, 11, 'sujet', True, r'$a=4$')
+arrow(ax, (29, 47.5), (42, 47.5), 'varie')
+text(ax, 35.5, 53, 'essai', 'varie', 's')
+text(ax, 63, 56, 'dans le bas', 'fixe', 's')
+box(ax, 44, 42, 40, 11, 'fixe', True, r'$a-4=0$')
+arrow(ax, (16, 41), (30, 26), 'varie'); arrow(ax, (64, 41), (58, 26), 'varie')
+box(ax, 14, 12, 60, 13, 'limite', True, 'solution parasite')
+save(fig, '21-094')

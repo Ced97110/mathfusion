@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 5, 38, 44, 14, 'fixe', fill=False, dash=True)
+box(ax, 8, 40, 10, 10, 'sujet', label='$b$', size='l'); text(ax, 27, 45, '+', 'encre', 'l')
+box(ax, 34, 40, 10, 10, 'autre', label='$c$', size='l')
+box(ax, 54, 40, 10, 10, 'varie', label='$a$', size='l')
+text(ax, 4, 30, '=', 'encre', 'l')
+box(ax, 8, 12, 10, 10, 'sujet', label='$b$', size='l'); box(ax, 19, 12, 10, 10, 'varie', label='$a$', size='l')
+text(ax, 38, 17, '+', 'encre', 'l')
+box(ax, 45, 12, 10, 10, 'autre', label='$c$', size='l'); box(ax, 56, 12, 10, 10, 'varie', label='$a$', size='l')
+arrow(ax, (57, 39), (24, 23.5), 'varie'); arrow(ax, (60, 39), (61, 23.5), 'varie')
+text(ax, 44, 4, 'a est recopié à droite', 'varie', 'm')
+save(fig, '51-042')

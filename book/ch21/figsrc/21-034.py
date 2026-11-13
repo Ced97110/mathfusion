@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 20, 36, 30, 14, 'limite', label=r'$\sqrt{x}$', size='l')
+line(ax, [(18, 32), (52, 32)], 'encre', lw=1.4)
+box(ax, 20, 14, 30, 14, 'sujet', label=r'$2x-1$', size='l')
+text(ax, 69, 43, 'pas un polynôme', 'limite', 's')
+text(ax, 69, 21, 'un polynôme', 'sujet', 's')
+arrow(ax, (59, 43), (51, 43), 'limite'); arrow(ax, (59, 21), (51, 21), 'sujet')
+text(ax, 44, 58, 'haut et bas : polynômes ?', 'encre', 's')
+text(ax, 44, 6, 'donc pas rationnelle', 'limite', 's')
+save(fig, '21-034')

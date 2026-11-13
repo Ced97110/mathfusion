@@ -1,0 +1,189 @@
+[
+ {
+  "code": "51-081",
+  "a_dire": "Dans ℤ ⊕ ℤ, la somme et le produit se calculent place par place, comme dans les entiers.",
+  "legende_titre": "Deux couples, deux calculs séparés",
+  "lecture": [
+   "Les deux colonnes sont la première place et la seconde place, séparées par un trait.",
+   "Dans chaque colonne, les cases vertes donnent la somme puis le produit de cette place seule.",
+   "En bas, le couple (6, 8) est la somme et le couple (8, 15) est le produit."
+  ],
+  "a_voir": "Chaque place est calculée sans regarder l'autre."
+ },
+ {
+  "code": "51-082",
+  "a_dire": "Chaque règle se vérifie dans chaque case, donc dans les entiers où elle est déjà connue.",
+  "legende_titre": "Une règle, vérifiée case par case",
+  "lecture": [
+   "Les deux cases bleues du haut montrent que (2, 3) + (4, 5) et (4, 5) + (2, 3) donnent (6, 8).",
+   "Chaque flèche orange mène à une place : la première place vérifie 2 + 4 = 4 + 2, la seconde 3 + 5 = 5 + 3.",
+   "Le texte du bas dit que ces égalités sont des règles des entiers."
+  ],
+  "a_voir": "La règle sur les couples se ramène à la même règle dans chaque place."
+ },
+ {
+  "code": "51-083",
+  "a_dire": "Le signe ⊕ pose deux anneaux côte à côte sans les mélanger, et donne des couples.",
+  "legende_titre": "Deux mondes posés côte à côte",
+  "lecture": [
+   "La case bleue est le monde des entiers, sur une droite graduée.",
+   "La case violette est le cadran à 4 heures, avec les heures 0, 1, 2, 3.",
+   "Le signe orange ⊕ les relie ; les deux flèches grises mènent à la case verte des couples (entier, heure)."
+  ],
+  "a_voir": "Le nouveau monde garde chaque monde séparé, sous forme de couples."
+ },
+ {
+  "code": "51-084",
+  "a_dire": "Un sous-anneau est une partie S de R qui contient 0 et 1 et reste stable par somme, différence et produit.",
+  "legende_titre": "Une partie qui garde les trois opérations",
+  "lecture": [
+   "Le grand cadre gris est R, les fractions.",
+   "Le cadre bleu est S, les entiers, une partie de R.",
+   "Les deux ronds verts sont 0 et 1, présents dans S.",
+   "Les trois cases vertes disent que la somme, la différence et le produit restent dans S."
+  ],
+  "a_voir": "S contient 0 et 1 et les trois opérations ne la quittent pas."
+ },
+ {
+  "code": "51-085",
+  "a_dire": "Les entiers, les fractions, les réels et les complexes s'emboîtent : chacun est contenu dans le suivant.",
+  "legende_titre": "Des mondes emboîtés les uns dans les autres",
+  "lecture": [
+   "Chaque cadre bleu est un monde de nombres ; le plus petit, rempli, est celui des entiers.",
+   "Chaque cadre contient le précédent : entiers dans fractions, fractions dans réels, réels dans complexes.",
+   "Dans le cadre des entiers, 3 s'écrit aussi 3 sur 1, donc il est une fraction.",
+   "La ligne du bas écrit la chaîne avec le signe ⊂."
+  ],
+  "a_voir": "Chaque monde est dans le suivant."
+ },
+ {
+  "code": "51-086",
+  "a_dire": "Le test demande que la différence et le produit restent dans S ; sans la condition du produit, l'ensemble peut échouer.",
+  "legende_titre": "Quand le produit sort de l'ensemble",
+  "lecture": [
+   "Le grand cadre bleu est S : les entiers fois racine de 2, avec 2√2 et √2.",
+   "Les flèches vertes montrent que la différence r − s donne −√2, qui reste dans S.",
+   "La flèche rouge montre que √2 × √2 donne 2, rond rouge hors de S.",
+   "Le texte rouge dit que 2 n'est pas dans S."
+  ],
+  "a_voir": "La différence reste dans S, mais le produit en sort."
+ },
+ {
+  "code": "51-087",
+  "a_dire": "Depuis la stabilité par différence, trois étapes donnent 0, puis l'opposé, puis la somme ; l'étape de l'opposé porte le poids.",
+  "legende_titre": "Trois étapes de la différence à la somme",
+  "lecture": [
+   "La case bleue du haut est le départ : r − s reste dans S.",
+   "Les trois cases du milieu sont les étapes, avec la formule générale à gauche et le cas r = 6, s = 9 à droite.",
+   "La case orange, 0 − s = −s, est l'étape qui porte le poids.",
+   "La case verte du bas est l'arrivée : r + s = 6 + 9 = 15."
+  ],
+  "a_voir": "On passe de la différence à la somme en passant par l'opposé."
+ },
+ {
+  "code": "51-088",
+  "a_dire": "Avec la définition de Jacobson, on ajoute la condition 1 dans S : les pairs échouent sur 1.",
+  "legende_titre": "Trois conditions, les pairs en échouent une",
+  "lecture": [
+   "Sur la droite, les ronds bleus sont les nombres pairs 0, 2, 4, 6.",
+   "Le rond rouge sur 1 montre que 1 manque.",
+   "Les deux cases vertes disent que la différence et le produit de pairs restent pairs.",
+   "La case rouge dit que 1 n'est pas dans S."
+  ],
+  "a_voir": "Deux conditions sont vraies, la troisième, 1 dans S, est fausse."
+ },
+ {
+  "code": "51-089",
+  "a_dire": "Une matrice triangulaire supérieure est un tableau 2 × 2 dont la case en bas à gauche vaut 0.",
+  "legende_titre": "Trois tableaux, des zéros imposés différents",
+  "lecture": [
+   "À gauche, le tableau gris quelconque : aucune case imposée.",
+   "Au milieu, le tableau bleu 1, 2 puis 0, 3 : la case orange en bas à gauche est 0.",
+   "À droite, le tableau violet : deux cases orange hors diagonale valent 0."
+  ],
+  "a_voir": "La triangulaire supérieure impose un seul zéro, en bas à gauche."
+ },
+ {
+  "code": "51-090",
+  "a_dire": "Les matrices triangulaires supérieures forment un sous-anneau : le produit garde le 0 en bas à gauche.",
+  "legende_titre": "Pourquoi le zéro du bas survit au produit",
+  "lecture": [
+   "Le premier tableau est (1, 2) et (0, 3) ; sa ligne du bas est en orange.",
+   "Le deuxième tableau est (4, 5) et (0, 6) ; sa colonne de gauche est en orange.",
+   "Le tableau produit (4, 17) et (0, 18) a une case verte : 0 en bas à gauche.",
+   "La ligne verte dit que chaque terme du calcul contient un facteur 0."
+  ],
+  "a_voir": "Le calcul de la case du bas contient toujours un 0."
+ },
+ {
+  "code": "51-091",
+  "a_dire": "Le produit de deux triangulaires reste triangulaire dans les deux ordres, mais AB et BA ne sont pas égaux.",
+  "legende_titre": "Deux ordres, un zéro commun",
+  "lecture": [
+   "Les deux premières lignes donnent les tableaux A en bleu et B en violet.",
+   "La première grille est AB : (4, 17) et (0, 18).",
+   "La seconde grille est BA : (4, 23) et (0, 18).",
+   "Les cases vertes sont les 0 qui restent ; les cases rouges, 17 et 23, sont différentes."
+  ],
+  "a_voir": "Le 0 reste en bas à gauche, mais 17 est différent de 23."
+ },
+ {
+  "code": "51-092",
+  "a_dire": "Chez Judson un anneau n'a pas à contenir 1 ; dans ce livre il le doit, donc les pairs sont un anneau chez l'un et pas chez l'autre.",
+  "legende_titre": "Une même partie, deux conventions",
+  "lecture": [
+   "La case grise du haut dit que les nombres pairs et leurs opérations sont les mêmes.",
+   "La colonne violette est Judson : 1 n'est pas exigé, et les pairs forment un anneau (vert).",
+   "La colonne bleue est ce livre : 1 est exigé, mais 1 est impair (case rouge en tirets).",
+   "Les pairs n'y forment donc pas un anneau (case rouge)."
+  ],
+  "a_voir": "Même ensemble, mais la convention sur 1 change la réponse."
+ },
+ {
+  "code": "51-093",
+  "a_dire": "Le signe 2ℤ désigne les nombres obtenus en multipliant 2 par un entier : les nombres pairs.",
+  "legende_titre": "Lire 2ℤ morceau par morceau",
+  "lecture": [
+   "Le 2 orange dit par quel nombre on multiplie.",
+   "Le ℤ bleu dit que l'on prend tous les entiers.",
+   "La rangée bleue donne des entiers −1, 0, 1, 2.",
+   "Les flèches orange multiplient par 2 et donnent la rangée verte −2, 0, 2, 4."
+  ],
+  "a_voir": "2ℤ est l'ensemble des 2 fois un entier."
+ },
+ {
+  "code": "51-094",
+  "a_dire": "2ℤ n'est pas un sous-anneau ici car 1 manque, mais c'est un idéal : un pair fois un entier reste pair.",
+  "legende_titre": "Pas un sous-anneau, mais pas perdu",
+  "lecture": [
+   "Le grand cadre gris est ℤ ; le cadre bleu est 2ℤ, les pairs.",
+   "La flèche orange multiplie 4 par 3 et donne 12, qui reste dans 2ℤ.",
+   "Le rond rouge 1 est hors de 2ℤ.",
+   "La case rouge dit que 1 manque ; la case verte dit que le résultat reste dans 2ℤ."
+  ],
+  "a_voir": "On multiplie un pair par un entier et on reste dans 2ℤ."
+ },
+ {
+  "code": "51-095",
+  "a_dire": "On obtient des types d'anneaux en ajoutant une condition sur la multiplication, mais une condition trop forte échoue.",
+  "legende_titre": "Une condition ajoutée, un type obtenu ou un échec",
+  "lecture": [
+   "La case bleue du haut est l'anneau de départ.",
+   "Les trois cases orange sont des conditions ajoutées : ab = ba, inverse pour les non nuls, inverse pour tout élément.",
+   "Les deux premières mènent à des types d'anneaux (cases vertes).",
+   "La troisième échoue (case rouge) : 0 × x = 0, jamais 1."
+  ],
+  "a_voir": "Chaque condition donne un type, sauf celle qui est trop forte."
+ },
+ {
+  "code": "51-096",
+  "a_dire": "Un anneau est commutatif si ab = ba ; les tableaux sortent de cette frontière.",
+  "legende_titre": "De chaque côté de la frontière",
+  "lecture": [
+   "À gauche du trait, 3 × 4 et 4 × 3 valent tous deux 12 (cases vertes).",
+   "Dessous, le carré de 3 + 4 se calcule par 9 + 2 × 12 + 16 = 49.",
+   "À droite, les tableaux A et B : AB a pour lignes (4, 17) et (0, 18), BA (4, 23) et (0, 18), en rouge."
+  ],
+  "a_voir": "À gauche l'ordre ne compte pas ; à droite, si."
+ }
+]

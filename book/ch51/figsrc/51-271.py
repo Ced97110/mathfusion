@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role, label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(56)
+box(ax, 3, 8, 30, 40, 'sujet', None, dash=True)
+disc(ax, 18, 28, 6, 'sujet', label=r'$0$', size='xl')
+text(ax, 18, 51.5, 'un seul élément', 'sujet', 's')
+text(ax, 18, 14, 'anneau nul', 'sujet', 's')
+box(ax, 42, 38, 44, 10, 'fixe', r'$0+0=0$', 'm')
+box(ax, 42, 25, 44, 10, 'fixe', r'$0\times0=0$', 'm')
+box(ax, 42, 12, 44, 10, 'varie', r'$0$ joue le rôle de $1$', 's')
+text(ax, 64, 4, 'les huit règles tiennent', 'resultat', 's')
+save(fig, '51-271')

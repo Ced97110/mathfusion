@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 6, 36, 22, 14, 'sujet', label=r'$a$', size='l'); text(ax, 17, 31.5, r'$a \neq 0$', 'sujet', 's')
+box(ax, 33, 36, 22, 14, 'autre', label=r'$b$', size='l'); text(ax, 44, 31.5, r'$b \neq 0$', 'autre', 's')
+text(ax, 30.5, 43, r'$\times$', 'encre', 'l')
+arrow(ax, (56.5, 43), (62, 43), 'varie')
+box(ax, 62.5, 36, 20, 14, 'varie', label=r'$ab = 0$', size='l')
+text(ax, 72.5, 31.5, 'produit nul', 'varie', 's')
+brace(ax, 6, 55, 26.5, 'fixe', 'les deux sont non nuls', True)
+line(ax, [(6, 18), (82, 18)], 'fixe', lw=0.5)
+text(ax, 44, 12, 'Cadran à 12 heures', 'fixe', 's')
+text(ax, 44, 5.5, r'$3 \times 4 = 12 = 0$', 'encre', 'm')
+save(fig, '51-097')

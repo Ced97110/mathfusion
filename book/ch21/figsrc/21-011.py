@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 2, 52, 'nombres', 'sujet', 's', ha='left')
+box(ax, 2, 36, 40, 11, 'sujet', label=r'$156 \div 12 = 13$'); box(ax, 46, 36, 40, 11, 'resultat', label=r'$12 \times 13 = 156$')
+arrow(ax, (42.5, 41.5), (45.5, 41.5), 'varie')
+text(ax, 2, 28, 'polynômes', 'autre', 's', ha='left')
+box(ax, 2, 12, 40, 11, 'autre', label=r'$(x^2+5x+6)\div(x+2)=x+3$', size='s'); box(ax, 46, 12, 40, 11, 'resultat', label=r'$(x+2)(x+3)=x^2+5x+6$', size='s')
+arrow(ax, (42.5, 17.5), (45.5, 17.5), 'varie')
+text(ax, 44, 4, 'on contrôle en multipliant', 'varie', 's')
+save(fig, '21-011')

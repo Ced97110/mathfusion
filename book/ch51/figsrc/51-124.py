@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 26, 70, 36, 11, 'sujet', label=r'$5\times b=0$')
+text(ax, 44, 63, r'à gauche par ⅕', 'varie', 's')
+arrow(ax, (36, 70), (22, 59), 'varie'); arrow(ax, (52, 70), (66, 59), 'varie')
+box(ax, 4, 46, 36, 11, 'fixe', label=r'⅕ $\times(5\times b)$'); box(ax, 48, 46, 36, 11, 'fixe', label=r'⅕ $\times 0$')
+arrow(ax, (22, 46), (22, 29), 'varie', lw=2.2); text(ax, 25, 37.5, r'⅕ $\times 5=1$', 'varie', 's', ha='left', weight='bold')
+arrow(ax, (66, 46), (66, 29), 'fixe'); text(ax, 69, 37.5, 'produit par 0', 'fixe', 's', ha='left')
+box(ax, 14, 18, 16, 11, 'sujet', label=r'$b$'); box(ax, 58, 18, 16, 11, 'fixe', label=r'$0$')
+arrow(ax, (22, 18), (36, 8), 'resultat'); arrow(ax, (66, 18), (52, 8), 'resultat')
+text(ax, 44, 4, r'donc $b=0$', 'resultat', 'm', weight='bold')
+save(fig, '51-124')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 46, 22, 10, 'sujet', label=r'156 $\div$ 12', size='s')
+arrow(ax, (26, 51), (36, 51), 'varie')
+text(ax, 31, 56, 'tour 1', 'varie', 's')
+box(ax, 37, 46, 18, 10, 'fixe', label='reste 3', size='s')
+text(ax, 59.5, 51, '+ 6', 'varie', 's')
+arrow(ax, (63, 51), (68, 51), 'varie')
+box(ax, 69, 46, 16, 10, 'varie', label='36', size='s')
+# 2 mm par unité
+box(ax, 8, 28, 72, 8, 'varie', label='36', size='s')
+box(ax, 8, 14, 24, 8, 'sujet', label='12', size='s')
+text(ax, 58, 18, '36 contient 12 :', 'encre', 's')
+text(ax, 58, 12, 'tour 2', 'varie', 's')
+text(ax, 44, 40, 'longueurs à la même échelle', 'fixe', 's')
+save(fig, '21-113')

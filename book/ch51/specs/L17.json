@@ -1,0 +1,191 @@
+[
+ {
+  "code": "51-256",
+  "a_dire": "Le signe N(α) se lit « N de alpha » et désigne la norme de l'entier de Gauss α.",
+  "legende_titre": "Un nom court pour la norme",
+  "lecture": [
+   "Le rectangle bleu est la lettre N : le nom de la norme.",
+   "Le rectangle orange est la lettre α : l'entier de Gauss auquel on l'applique.",
+   "En bas, pour α de parties 3 et 1, le rectangle vert donne N(α) = 10."
+  ],
+  "a_voir": "Le signe se lit en deux morceaux : N, puis α."
+ },
+ {
+  "code": "51-257",
+  "a_dire": "La norme d'un produit est le produit des normes.",
+  "legende_titre": "Deux produits, un même fait",
+  "lecture": [
+   "En haut, deux rectangles bleus 1 + i, multipliés, donnent le rectangle vert 2i.",
+   "En dessous, chaque nombre a sa norme : 2, 2 et 4.",
+   "Le rectangle vert du bas relie les trois normes : 2 fois 2 vaut 4."
+  ],
+  "a_voir": "La norme du produit, 4, est le produit des deux normes, 2 et 2."
+ },
+ {
+  "code": "51-258",
+  "a_dire": "Avec 1 + 2i et 3 + i, les normes 5 et 10 ont pour produit 50, la norme du produit 1 + 7i.",
+  "legende_titre": "Un cas chiffré à contrôler",
+  "lecture": [
+   "Le haut montre le produit de 1 + 2i par 3 + i, qui donne 1 + 7i.",
+   "Dessous, les normes sont 5, 10 et 50.",
+   "Les points verts forment 5 lignes de 10 points : 50 points.",
+   "En rouge, la somme 5 + 10 vaut 15, pas 50."
+  ],
+  "a_voir": "Il faut multiplier les normes 5 et 10, pas les additionner."
+ },
+ {
+  "code": "51-259",
+  "a_dire": "La preuve part de quatre facteurs, les réordonne grâce à la commutativité de ℂ et obtient le produit des normes.",
+  "legende_titre": "Réordonner quatre facteurs",
+  "lecture": [
+   "La rangée du haut montre les quatre facteurs α, β et leurs conjugués.",
+   "Les flèches orange échangent la deuxième et la troisième place : c'est l'étape qui porte la preuve.",
+   "La rangée du bas forme deux groupes : N(α) = 5 en bleu et N(β) = 10 en violet.",
+   "Le rectangle vert donne 5 fois 10, soit 50."
+  ],
+  "a_voir": "Le réordonnement des facteurs est permis parce que ℂ est commutatif."
+ },
+ {
+  "code": "51-260",
+  "a_dire": "Si αβ = 1 avec des parties entières, alors N(α) = 1 ; avec des parties fractionnaires, N(α) peut valoir un demi.",
+  "legende_titre": "Sans parties entières, la norme change",
+  "lecture": [
+   "En haut, α a pour parties un demi et moins un demi, β a pour parties 1 et 1 : leur produit vaut 1.",
+   "Sur la droite graduée, le point vert est la valeur 1 imposée aux entiers.",
+   "Le point rouge est N(α), qui vaut un demi ; le point violet est N(β), qui vaut 2.",
+   "Le cadre rouge dit que un demi n'est pas 1."
+  ],
+  "a_voir": "Un demi fois 2 vaut 1, mais N(α) n'est pas 1."
+ },
+ {
+  "code": "51-261",
+  "a_dire": "Les seuls entiers de Gauss inversibles sont 1, −1, i et −i, car a² + b² = 1 n'a que quatre solutions.",
+  "legende_titre": "Quatre points sur le cercle",
+  "lecture": [
+   "Chaque point est un couple (a, b) d'entiers, placé sur la grille.",
+   "Le cercle bleu en pointillés passe par les points où a² + b² vaut 1.",
+   "Les quatre points verts, 1, −1, i et −i, sont sur le cercle.",
+   "Les points rouges, avec 2 et 4 pour somme des carrés, sont hors du cercle."
+  ],
+  "a_voir": "Seuls quatre points de la grille ont une somme des carrés égale à 1."
+ },
+ {
+  "code": "51-262",
+  "a_dire": "i et −i sont inverses l'un de l'autre dans ℤ[i], mais 2 et 1 + i n'ont pas d'inverse entier.",
+  "legende_titre": "Trois produits, un seul inverse entier",
+  "lecture": [
+   "La ligne verte montre i × (−i) = 1 : l'inverse −i est un entier de Gauss.",
+   "La ligne rouge du milieu montre 2 × un demi = 1 : un demi n'est pas entier.",
+   "La ligne rouge du bas montre 1 + i et (1 − i)/2 : cet inverse n'est pas entier non plus."
+  ],
+  "a_voir": "Seule la première ligne a un inverse qui est un entier de Gauss."
+ },
+ {
+  "code": "51-263",
+  "a_dire": "ℤ[i] est intègre, car il est dans le corps ℂ, mais il n'est pas un corps : 2 n'y a pas d'inverse.",
+  "legende_titre": "Intègre sans être un corps",
+  "lecture": [
+   "Le grand cadre vert est ℂ, où tout nombre non nul a un inverse.",
+   "Le cadre bleu à l'intérieur est ℤ[i] : il garde de ℂ le fait qu'un produit nul est impossible.",
+   "Le point orange est 2, dans ℤ[i] ; la flèche mène à son inverse un demi.",
+   "Le point rouge, un demi, est hors du cadre bleu."
+  ],
+  "a_voir": "L'inverse de 2 existe dans ℂ, mais il sort de ℤ[i]."
+ },
+ {
+  "code": "51-264",
+  "a_dire": "ℤ[i] est infini, donc le théorème sur les anneaux intègres finis ne s'applique pas.",
+  "legende_titre": "Infini : le théorème se tait",
+  "lecture": [
+   "Les points bleus sont des entiers de Gauss a + bi ; les flèches orange montrent qu'ils continuent sans fin.",
+   "Le rectangle vert dit que ℤ[i] est intègre.",
+   "Le rectangle rouge dit que ℤ[i] n'est pas fini.",
+   "Le rectangle gris dit que le théorème ne dit rien ici."
+  ],
+  "a_voir": "Une des deux conditions du théorème manque, parce que ℤ[i] est infini."
+ },
+ {
+  "code": "51-265",
+  "a_dire": "Pour (1 + i)(1 + j), seul le produit i·j change de signe quand on inverse l'ordre.",
+  "legende_titre": "Un seul produit change d'ordre",
+  "lecture": [
+   "Chaque tableau contient les quatre produits de la distributivité.",
+   "À gauche, i·j vaut k ; à droite, j·i vaut −k : ce sont les rectangles orange.",
+   "Les trois autres rectangles, en gris, sont les mêmes des deux côtés.",
+   "Les sommes vertes diffèrent seulement par le signe de k."
+  ],
+  "a_voir": "La différence entre les deux ordres vient du produit de i et de j."
+ },
+ {
+  "code": "51-266",
+  "a_dire": "Dans l'autre ordre, (1 + j)(1 + i) vaut 1 + i + j − k, parce que j·i vaut −k.",
+  "legende_titre": "Le produit dans l'ordre inverse",
+  "lecture": [
+   "Le rectangle bleu du haut est le produit à calculer.",
+   "La rangée du milieu donne les quatre produits ; celui en orange est j·i.",
+   "Dessous, les valeurs sont 1, i, j et −k.",
+   "Le rectangle vert est la somme : 1 + i + j − k."
+  ],
+  "a_voir": "Le dernier terme vaut −k à cause de j·i."
+ },
+ {
+  "code": "51-267",
+  "a_dire": "Les deux produits ont les mêmes trois premiers termes ; seul le signe de k change.",
+  "legende_titre": "Un seul signe change",
+  "lecture": [
+   "La rangée du haut est le résultat de (1 + i)(1 + j) : 1, i, j, +k.",
+   "La rangée du bas est le résultat de (1 + j)(1 + i) : 1, i, j, −k.",
+   "Les traits gris relient les trois termes égaux.",
+   "Le rectangle orange et le signe ≠ marquent le terme k qui change de signe."
+  ],
+  "a_voir": "La non-commutativité se lit dans le signe de k."
+ },
+ {
+  "code": "51-268",
+  "a_dire": "L'inverse de 1 + i est son conjugué 1 − i divisé par la somme des carrés, 2.",
+  "legende_titre": "Un inverse en trois étapes",
+  "lecture": [
+   "Le rectangle bleu est le quaternion 1 + i ; la flèche orange mène à son conjugué 1 − i, en violet.",
+   "Le rectangle gris donne la somme des carrés : 1 + 1 = 2.",
+   "Le produit de 1 + i par 1 − i vaut aussi 2.",
+   "Le rectangle vert divise le conjugué par 2 : (1 − i)/2."
+  ],
+  "a_voir": "On divise le conjugué par la somme des carrés."
+ },
+ {
+  "code": "51-269",
+  "a_dire": "Si 1 = 0 dans un anneau, tout élément vaut 0 : l'anneau n'a qu'un élément.",
+  "legende_titre": "Un élément qui devient 0",
+  "lecture": [
+   "La colonne montre un élément quelconque, ici 5, et ses transformations de haut en bas.",
+   "La première flèche utilise la règle M2 : 5 devient 1 fois 5.",
+   "La deuxième flèche utilise 1 = 0 : on obtient 0 fois 5, en orange.",
+   "La dernière flèche utilise le produit par 0 : le résultat vert est 0."
+  ],
+  "a_voir": "Chaque élément est égal à 0, donc il n'y en a qu'un."
+ },
+ {
+  "code": "51-270",
+  "a_dire": "La preuve part de a, passe par 1·a puis 0·a, et arrive à 0.",
+  "legende_titre": "De a à 0 en trois égalités",
+  "lecture": [
+   "Le rectangle bleu est le départ : a.",
+   "Les trois flèches sont les égalités, avec la raison sous chacune : M2, 1 = 0, 0·a = 0.",
+   "La flèche orange, appuyée sur 1 = 0, est l'étape qui porte la preuve.",
+   "Le rectangle vert est l'arrivée : 0."
+  ],
+  "a_voir": "L'étape clé est le remplacement de 1 par 0."
+ },
+ {
+  "code": "51-271",
+  "a_dire": "L'anneau nul n'a que 0 comme élément, et 0 y joue aussi le rôle de 1.",
+  "legende_titre": "Un anneau d'un seul élément",
+  "lecture": [
+   "Le cadre bleu en pointillés contient un seul élément : 0.",
+   "Les rectangles gris montrent 0 + 0 = 0 et 0 × 0 = 0.",
+   "Le rectangle orange dit que 0 joue aussi le rôle de 1.",
+   "Le texte vert dit que les huit règles sont vérifiées."
+  ],
+  "a_voir": "Un ensemble à un seul élément peut être un anneau."
+ }
+]

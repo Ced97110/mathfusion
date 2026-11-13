@@ -1,0 +1,185 @@
+[
+ {
+  "code": "51-129",
+  "a_dire": "Écrire n r pour une somme de n termes r, et non un produit répété.",
+  "legende_titre": "Somme répétée ou produit répété",
+  "lecture": [
+   "Sur le cadran à 4 heures, la ligne bleue additionne trois fois 2 : 2 + 2 + 2 = 6, soit 2.",
+   "La ligne violette multiplie trois fois 2 : 2 × 2 × 2 = 8, soit 0.",
+   "Les deux lignes ont trois cases, mais les résultats sont différents."
+  ],
+  "a_voir": "3 · 2 répète l'addition ; la puissance répète la multiplication."
+ },
+ {
+  "code": "51-130",
+  "a_dire": "Dans n r, n est un compteur de termes, pas un élément de l'anneau.",
+  "legende_titre": "Le nombre qui compte les termes",
+  "lecture": [
+   "Les cases grises sont les heures du cadran à 4, de 0 à 3.",
+   "La case rouge en pointillés est le nombre 5 : ce n'est pas une heure.",
+   "Les cinq cases bleues sont les cinq termes égaux à 2, et leur somme est 10, soit 2."
+  ],
+  "a_voir": "5 sert à compter les termes, sans être une heure du cadran."
+ },
+ {
+  "code": "51-131",
+  "a_dire": "La caractéristique est le nombre de 1 à additionner pour retomber sur 0, ou 0 si cela n'arrive jamais.",
+  "legende_titre": "Combien de pas pour retomber sur 0",
+  "lecture": [
+   "Chaque disque bleu est un 1 qu'on ajoute.",
+   "Sur la première ligne, 7 disques donnent 0, et le nombre à droite est 7.",
+   "Sur la deuxième ligne, 6 disques donnent 0, et le nombre est 6.",
+   "Sur la dernière ligne, on n'arrive jamais à 0, et le nombre est 0."
+  ],
+  "a_voir": "Le nombre de droite compte les 1 qu'il faut pour retomber sur 0."
+ },
+ {
+  "code": "51-132",
+  "a_dire": "Si aucune somme de 1 ne donne 0, la caractéristique est 0 par convention.",
+  "legende_titre": "Quand aucun pas ne revient à 0",
+  "lecture": [
+   "Chaque ligne bleue calcule n fois 1 dans les entiers pour une valeur de n.",
+   "Chaque case rouge à droite dit que le résultat n'est pas 0.",
+   "La case verte du bas donne la conclusion : la caractéristique est 0."
+  ],
+  "a_voir": "Aucune ligne n'atteint 0, donc on écrit 0."
+ },
+ {
+  "code": "51-133",
+  "a_dire": "Il suffit de tester 1 : si n fois 1 vaut 0, alors n fois chaque r vaut 0.",
+  "legende_titre": "Un seul test suffit",
+  "lecture": [
+   "La ligne bleue est le test avec r égal à 1 : 7 fois 1 donne 0.",
+   "Les deux lignes violettes testent r égal à 3 et r égal à 5.",
+   "Les flèches orange montrent que les autres essais donnent le même résultat.",
+   "Chaque case verte contient 0."
+  ],
+  "a_voir": "Après le test avec 1, les autres éléments donnent 0 aussi."
+ },
+ {
+  "code": "51-134",
+  "a_dire": "La preuve part de n fois 1 égale 0, regroupe n termes r avec D2, et arrive à n r égale 0.",
+  "legende_titre": "De 1 à n'importe quel r",
+  "lecture": [
+   "La case bleue du haut est le départ : 6 fois 1 donne 0.",
+   "Les disques bleus sont six termes égaux à 4 ; les disques violets sont la somme de six uns, fois 4.",
+   "Le signe égal orange, marqué D2, est l'étape qui porte la preuve.",
+   "La case verte du bas est l'arrivée : 24 donne 0."
+  ],
+  "a_voir": "L'étape D2 passe d'un calcul sur 1 à un calcul sur 4."
+ },
+ {
+  "code": "51-135",
+  "a_dire": "Les exemples donnent char de Z/7 égale 7, de Z/6 égale 6, de Z et de Q égale 0.",
+  "legende_titre": "Quatre exemples de caractéristique",
+  "lecture": [
+   "Les deux cases bleues du haut sont les cadrans à 7 et à 6 heures, avec 7 et 6 pas.",
+   "Les deux cases violettes du bas sont les entiers et les fractions.",
+   "Dans ces deux cases, aucune somme de 1 ne donne 0, donc le nombre est 0."
+  ],
+  "a_voir": "Chaque case donne une valeur de la caractéristique."
+ },
+ {
+  "code": "51-136",
+  "a_dire": "Dans un anneau intègre, la caractéristique est 0 ou un nombre premier.",
+  "legende_titre": "Ce que l'hypothèse « intègre » écarte",
+  "lecture": [
+   "Les deux cases vertes sont des anneaux intègres : leur caractéristique est 7, qui est premier, ou 0.",
+   "La case rouge est le cadran à 6 heures, qui n'est pas intègre.",
+   "Sa caractéristique 6 n'est ni 0 ni premier."
+  ],
+  "a_voir": "Sans l'hypothèse intègre, la caractéristique peut valoir 6."
+ },
+ {
+  "code": "51-137",
+  "a_dire": "Dans Z/6, la caractéristique 6 = 2 × 3 fournit deux facteurs non nuls dont le produit est 0.",
+  "legende_titre": "Le produit 2 × 3 donne six uns",
+  "lecture": [
+   "Les six disques bleus forment un tableau de 2 lignes et 3 colonnes.",
+   "Le signe bleu à gauche dit que 2 fois 1 n'est pas 0, et le signe violet en haut que 3 fois 1 n'est pas 0.",
+   "La case verte montre que leur produit est 6 fois 1, soit 0.",
+   "La case rouge nomme 2 et 3 diviseurs de zéro."
+  ],
+  "a_voir": "Deux facteurs non nuls ont un produit nul."
+ },
+ {
+  "code": "51-138",
+  "a_dire": "Si n = ab, le produit (a1)(b1) vaut 0, ce qui contredit la minimalité dans un anneau intègre.",
+  "legende_titre": "Pourquoi n ne peut pas se factoriser",
+  "lecture": [
+   "La case bleue est le départ : n s'écrit ab avec a et b plus petits que n.",
+   "La case orange est l'étape clé : n fois 1 vaut (a1)(b1), donc 0.",
+   "La case grise applique l'hypothèse intègre : un facteur est nul.",
+   "La case rouge est l'arrivée : cela contredit le plus petit n."
+  ],
+  "a_voir": "La case orange porte la preuve : un produit nul."
+ },
+ {
+  "code": "51-139",
+  "a_dire": "L'application n vers n1 envoie les entiers dans l'anneau en respectant les sommes ; ses zéros sont les multiples de la caractéristique.",
+  "legende_titre": "Des entiers vers le cadran à 7",
+  "lecture": [
+   "À gauche, les cases sont des entiers n.",
+   "À droite, les cases vertes sont leurs images n fois 1 dans le cadran à 7 heures.",
+   "Les trois cases orange, 0, 7 et 14, vont toutes sur 0 : ce sont des multiples de 7.",
+   "Les cases bleues 5, 10 et 15 vont sur 5, 3 et 1."
+  ],
+  "a_voir": "Les entiers envoyés sur 0 sont les multiples de 7."
+ },
+ {
+  "code": "51-140",
+  "a_dire": "Une matrice 2 × 2 sur R est un tableau de quatre éléments de R, sur deux lignes et deux colonnes.",
+  "legende_titre": "Un tableau de quatre cases",
+  "lecture": [
+   "Les quatre cases bleues contiennent 1, 2, 3 et 4.",
+   "Elles sont rangées sur deux lignes et deux colonnes, entre deux crochets.",
+   "Ici, les cases sont des entiers, mais elles peuvent venir de n'importe quel anneau R."
+  ],
+  "a_voir": "Quatre cases, deux lignes, deux colonnes, toutes dans R."
+ },
+ {
+  "code": "51-141",
+  "a_dire": "Le signe a_ij désigne la case de la ligne i et de la colonne j.",
+  "legende_titre": "L'adresse d'une case",
+  "lecture": [
+   "Chaque case porte deux petits nombres : le premier est sa ligne, le second est sa colonne.",
+   "La case orange est a_21 : ligne 2, colonne 1.",
+   "Les étiquettes orange de la ligne 2 et de la colonne 1 sont celles qui la désignent."
+  ],
+  "a_voir": "Le premier petit nombre est la ligne, le second la colonne."
+ },
+ {
+  "code": "51-142",
+  "a_dire": "Le signe M_n(R) désigne tous les tableaux à n lignes et n colonnes de cases dans R.",
+  "legende_titre": "Une écriture pour toutes les tailles",
+  "lecture": [
+   "Les trois tableaux bleus ont 2, 3 et 4 lignes, avec autant de colonnes.",
+   "Chacun a son nom : M_2(R), M_3(R), M_4(R).",
+   "La case du bas dit que M_n(R) couvre n lignes et n colonnes pour tout n."
+  ],
+  "a_voir": "M_n(R) regroupe les tableaux carrés de toute taille."
+ },
+ {
+  "code": "51-143",
+  "a_dire": "Pour additionner deux matrices, on additionne les cases de même place.",
+  "legende_titre": "Case par case",
+  "lecture": [
+   "Le tableau bleu et le tableau violet sont additionnés.",
+   "Le tableau vert est leur somme.",
+   "Les cases orange sont celles du haut à gauche : 1 + 5 = 6.",
+   "Chaque autre case suit la même règle : 2 + 6 = 8, 3 + 7 = 10, 4 + 8 = 12."
+  ],
+  "a_voir": "Chaque case de la somme vient des deux cases de même place."
+ },
+ {
+  "code": "51-144",
+  "a_dire": "La matrice nulle est le tableau dont toutes les cases valent 0 ; l'ajouter ne change rien.",
+  "legende_titre": "Le tableau rempli de zéros",
+  "lecture": [
+   "Le tableau bleu de gauche est ajouté au tableau gris, rempli de zéros.",
+   "Le tableau bleu de droite est le résultat.",
+   "Ses quatre cases sont les mêmes que celles de départ."
+  ],
+  "a_voir": "Ajouter la matrice nulle laisse le tableau inchangé."
+ }
+]

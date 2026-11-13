@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+ax.add_patch(Circle((20, 36), 17, ec=COL['sujet'], fc=FILL['sujet'], lw=0.9, zorder=1))
+text(ax, 20, 48, '$\\mathbb{H}$', 'sujet', 'l')
+ax.add_patch(Circle((20, 31), 8, ec=COL['resultat'], fc=FILL['resultat'], lw=0.9, zorder=2))
+text(ax, 20, 31, '$\\mathbb{R}$', 'resultat', 'l')
+text(ax, 20, 14, 'ℝ est dans le centre', 'resultat', 's')
+box(ax, 42, 44, 44, 14, 'sujet', label='$3\\times(2+i)=6+3i$', size='s')
+box(ax, 42, 22, 44, 14, 'sujet', label='$(2+i)\\times 3=6+3i$', size='s')
+text(ax, 64, 62, 'même résultat', 'resultat', 's')
+text(ax, 64, 40, '=', 'resultat', 'l')
+text(ax, 64, 14, '3 commute avec 2 + i', 'resultat', 's')
+save(fig, '51-282')

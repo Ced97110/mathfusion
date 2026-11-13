@@ -1,0 +1,182 @@
+[
+ {
+  "code": "21-001",
+  "a_dire": "Un même trajet de 120 km dure plus longtemps quand la vitesse baisse : 60 donne 2, 40 donne 3, 30 donne 4.",
+  "legende_titre": "Trois vitesses, un seul trajet",
+  "lecture": [
+   "Chaque case orange est une vitesse en km/h.",
+   "Chaque barre bleue est le temps du trajet ; sa longueur suit le nombre d'heures.",
+   "Dans chaque barre, la division de 120 par la vitesse donne le temps."
+  ],
+  "a_voir": "Plus la vitesse est basse, plus la barre est longue."
+ },
+ {
+  "code": "21-002",
+  "a_dire": "Pour trouver le temps, on remplace v par la vitesse puis on divise 120 par elle.",
+  "legende_titre": "Une formule, deux calculs",
+  "lecture": [
+   "La formule en haut relie le temps t et la vitesse v.",
+   "Chaque case orange est une vitesse mise à la place de v.",
+   "La case bleue montre 120 divisé par cette vitesse.",
+   "La case verte donne le temps obtenu."
+  ],
+  "a_voir": "L'ordre est le même pour 40 et pour 30 : remplacer, puis diviser."
+ },
+ {
+  "code": "21-003",
+  "a_dire": "Dans 120/v, le dénominateur est une lettre : on ne le connaît pas avant de savoir ce que vaut v.",
+  "legende_titre": "Deux dénominateurs",
+  "lecture": [
+   "À gauche, la case grise contient 40, un nombre connu.",
+   "À droite, la case orange contient v, qui n'est pas encore connue.",
+   "Les deux fractions ont 120 en haut."
+  ],
+  "a_voir": "Le dénominateur de droite est à vérifier avant tout calcul."
+ },
+ {
+  "code": "21-004",
+  "a_dire": "Une fraction dont le dénominateur contient la lettre donne un résultat pour certaines valeurs et rien pour une autre : un trou.",
+  "legende_titre": "Une fraction avec un trou",
+  "lecture": [
+   "Chaque case orange est une valeur de v.",
+   "Les cases vertes donnent 2, 3 et 4 pour 60, 40 et 30.",
+   "La case rouge en pointillé, sous v = 0, ne contient aucun résultat."
+  ],
+  "a_voir": "Pour v = 0, la flèche n'arrive sur aucun nombre."
+ },
+ {
+  "code": "21-005",
+  "a_dire": "Deux ouvriers mettent 6 h et 4 h seuls ; on cherche le temps pour la même dalle à deux.",
+  "legende_titre": "Deux ouvriers, une dalle",
+  "lecture": [
+   "La rangée bleue a 6 cases : les 6 heures du premier ouvrier.",
+   "La rangée violette a 4 cases : les 4 heures du second.",
+   "La case orange en pointillé porte la question : combien d'heures à deux."
+  ],
+  "a_voir": "Le cas pose une question ; il n'en donne pas la réponse."
+ },
+ {
+  "code": "21-006",
+  "a_dire": "6 + 4 = 10 heures répond à une autre question et échoue : à deux, on met moins de 4 heures.",
+  "legende_titre": "Pourquoi 10 heures est faux",
+  "lecture": [
+   "La barre bleue et la barre violette mises bout à bout font 6 + 4, en rouge.",
+   "La barre violette du bas est le plus rapide, seul, en 4 heures.",
+   "La ligne en pointillé marque 4 heures.",
+   "La flèche verte part de cette ligne vers la gauche : à deux, c'est plus court."
+  ],
+  "a_voir": "10 dépasse 4 heures, donc le contrôle échoue."
+ },
+ {
+  "code": "21-007",
+  "a_dire": "On additionne les parts de dalle faites en une heure, pas les durées.",
+  "legende_titre": "Des parts de dalle en une heure",
+  "lecture": [
+   "La rangée bleue a 6 parts égales : le premier ouvrier en fait 1/6.",
+   "La rangée violette a 4 parts égales : le second en fait 1/4.",
+   "En bas, les deux parts sont posées bout à bout sur la même dalle.",
+   "L'accolade orange donne la somme 1/6 + 1/4."
+  ],
+  "a_voir": "Ce sont des parts de la même dalle qui s'ajoutent."
+ },
+ {
+  "code": "21-008",
+  "a_dire": "L'équation a toujours la même forme : deux fractions de numérateur 1 qui s'additionnent, égales à 1/x.",
+  "legende_titre": "Même forme, autres nombres",
+  "lecture": [
+   "Les fractions orange ont des dénominateurs connus qui changent : 6 et 4, puis 3 et 6.",
+   "La fraction bleue 1/x garde x en bas.",
+   "x est le temps à deux."
+  ],
+  "a_voir": "Seuls les deux dénominateurs orange changent d'une ligne à l'autre."
+ },
+ {
+  "code": "21-009",
+  "a_dire": "L'équation contient deux difficultés séparées : additionner à gauche, et x dans un dénominateur à droite.",
+  "legende_titre": "Deux difficultés à part",
+  "lecture": [
+   "Le cadre orange entoure 1/6 + 1/4, aux dénominateurs différents.",
+   "Le cadre violet entoure 1/x, avec x en bas.",
+   "La flèche orange renvoie au chapitre 7 ; la flèche violette à un outil neuf."
+  ],
+  "a_voir": "Chaque cadre est une difficulté différente."
+ },
+ {
+  "code": "21-010",
+  "a_dire": "Les règles des fractions restent les mêmes ; seul le contenu change : un polynôme prend la place d'un nombre.",
+  "legende_titre": "Mêmes règles, nouveaux objets",
+  "lecture": [
+   "La ligne du haut montre un produit de fractions de nombres, du chapitre 6.",
+   "La flèche grise dit que les règles restent.",
+   "Dans la ligne du bas, le cadre orange met le polynôme x + 1 à la place de 3."
+  ],
+  "a_voir": "Le numérateur change de nature, pas la règle."
+ },
+ {
+  "code": "21-011",
+  "a_dire": "Diviser des polynômes se comprend comme diviser des nombres : on contrôle en multipliant.",
+  "legende_titre": "Diviser comme 156 par 12",
+  "lecture": [
+   "La ligne bleue : 156 ÷ 12 = 13.",
+   "La ligne violette : la même idée avec des polynômes, résultat x + 3.",
+   "Chaque case verte est le contrôle par multiplication."
+  ],
+  "a_voir": "Dans les deux lignes, le produit retrouve le nombre ou le polynôme de départ."
+ },
+ {
+  "code": "21-012",
+  "a_dire": "La courbe de 1/(x − 2) a deux morceaux séparés par la ligne x = 2, qu'elle ne touche pas.",
+  "legende_titre": "Une courbe coupée en deux",
+  "lecture": [
+   "La courbe bleue est le graphe de y = 1/(x − 2).",
+   "La ligne rouge en pointillé est x = 2.",
+   "Le morceau de droite est au-dessus de l'axe horizontal, celui de gauche en dessous."
+  ],
+  "a_voir": "Aucune partie de la courbe ne traverse la ligne rouge."
+ },
+ {
+  "code": "21-013",
+  "a_dire": "Un point est sur la courbe si le calcul avec son premier nombre redonne son second nombre.",
+  "legende_titre": "Le test d'un point",
+  "lecture": [
+   "La courbe bleue est y = 1/(x − 2).",
+   "Le point vert (4, 1/2) réussit le test : 1/(4 − 2) = 1/2.",
+   "Le point rouge (4, 1) échoue : 1/(4 − 2) n'est pas 1."
+  ],
+  "a_voir": "Deux points au même premier nombre 4 : un seul est sur la courbe."
+ },
+ {
+  "code": "21-014",
+  "a_dire": "Le point P(3, 1) est sur la courbe : pour x = 3, le calcul donne 1.",
+  "legende_titre": "Le point P",
+  "lecture": [
+   "La courbe grise est le décor.",
+   "Le point bleu P est placé par ses deux nombres : 3 sur l'axe horizontal, 1 sur l'axe vertical.",
+   "Les pointillés bleus relient P à ces deux nombres."
+  ],
+  "a_voir": "Le calcul avec x = 3 donne 1, la hauteur de P."
+ },
+ {
+  "code": "21-015",
+  "a_dire": "À gauche de 2, le dénominateur est négatif, donc la courbe est en dessous de l'axe : Q(1, −1).",
+  "legende_titre": "Le point Q à gauche",
+  "lecture": [
+   "La courbe grise est le décor.",
+   "Le point bleu Q a pour premier nombre 1 et pour second nombre −1.",
+   "Les pointillés bleus relient Q aux deux axes.",
+   "Le calcul 1 ÷ (−1) = −1 place Q sous l'axe horizontal."
+  ],
+  "a_voir": "Q est sous l'axe, à gauche de la ligne x = 2."
+ },
+ {
+  "code": "21-016",
+  "a_dire": "La ligne pointillée x = 2 réunit les points de premier nombre 2 ; aucun n'est sur la courbe.",
+  "legende_titre": "La ligne x = 2",
+  "lecture": [
+   "La ligne rouge en pointillé est la verticale x = 2.",
+   "Les trois points gris vides (2, 0), (2, 1) et (2, −3) sont alignés sur elle.",
+   "Le texte gris dit qu'aucun de ces points n'est sur la courbe : la courbe n'est pas dessinée."
+  ],
+  "a_voir": "Tous les points de la ligne ont 2 pour premier nombre, et aucun n'est sur la courbe."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 14, 74, 60, 10, 'sujet', True, r'$5y+3-(2y+4)$')
+arrow(ax, (30, 73), (22, 62), 'varie'); arrow(ax, (58, 73), (66, 62), 'varie')
+text(ax, 22, 56, 'tous les signes changent', 'resultat', 's')
+text(ax, 66, 56, 'le signe de 4 reste', 'limite', 's')
+box(ax, 3, 40, 38, 10, 'resultat', True, r'$5y+3-2y-4$')
+box(ax, 47, 40, 38, 10, 'limite', True, r'$5y+3-2y+4$')
+arrow(ax, (22, 39), (22, 28), 'varie'); arrow(ax, (66, 39), (66, 28), 'varie')
+box(ax, 8, 14, 28, 12, 'resultat', True, r'$=8$')
+box(ax, 52, 14, 28, 12, 'limite', True, r'$=16$')
+text(ax, 44, 5, 'pour y = 3', 'fixe', 's')
+save(fig, '21-084')

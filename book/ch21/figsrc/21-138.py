@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 58, r'haut et bas $\times\sqrt{2}$', 'varie', 'm')
+box(ax, 2, 28, 20, 20, 'sujet', label=r'$\frac{1}{\sqrt{2}}$')
+arrow(ax, (23, 38), (31, 38), 'varie')
+box(ax, 32, 28, 33, 20, 'fixe', label=r'$\frac{1\times\sqrt{2}}{\sqrt{2}\times\sqrt{2}}$', size='s')
+arrow(ax, (66, 38), (70, 38), 'varie')
+box(ax, 71, 28, 15, 20, 'resultat', label=r'$\frac{\sqrt{2}}{2}$')
+text(ax, 48, 18, r'le bas : $\sqrt{2}\times\sqrt{2}=2$', 'encre', 's')
+text(ax, 44, 8, r'condition : $b\neq 0$', 'fixe', 's')
+save(fig, '21-138')

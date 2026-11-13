@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 22, 42, 44, 14, 'sujet', label=r'$P\,/\,Q$', size='l')
+text(ax, 44, 60, 'expression rationnelle', 'sujet', 's')
+box(ax, 3, 4, 38, 16, 'autre', label=r'fraction $\frac{3}{8}$')
+text(ax, 22, 26, r'$P$ et $Q$ : nombres', 'autre', 's')
+box(ax, 47, 4, 38, 16, 'resultat', label=r'polynôme $4x-5$')
+text(ax, 66, 26, r'$Q=1$', 'resultat', 's')
+arrow(ax, (34, 42), (22, 30), 'autre'); arrow(ax, (54, 42), (66, 30), 'resultat')
+save(fig, '21-033')

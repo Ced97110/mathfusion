@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 68, r'$2\cdot 3+(-2)\cdot 3=(2+(-2))\cdot 3$', 'encre', 's')
+text(ax, 44, 61, r'$=0\cdot 3=0$', 'encre', 's')
+f = numberline(ax, 14, 74, 36, -6, 6, step=6, labels=False, arrow_right=False)
+for v in (-6, 0, 6):
+    text(ax, f(v), 31, f'{v}'.replace('-', '−'), 'fixe', 's')
+arrow(ax, (f(0), 38), (f(6), 38), 'sujet', lw=1.3, curve=-0.5)
+text(ax, f(3), 50, r'$2\cdot 3=6$', 'sujet', 's')
+for v in (0, 6): line(ax, [(f(v), 25), (f(v), 22)], 'varie', lw=0.6)
+arrow(ax, (f(6), 22), (f(0), 22), 'varie', lw=1.3)
+text(ax, f(3), 17, r'$(-2)\cdot 3$ ramène à 0', 'varie', 's')
+disc(ax, f(0), 36, 1.4, 'resultat')
+disc(ax, f(-6), 36, 1.4, 'resultat')
+text(ax, f(-6), 42, r'$(-2)\cdot 3$', 'resultat', 's')
+text(ax, 44, 6, r'$(-2)\cdot 3=-6$', 'resultat', 'm')
+save(fig, '51-201')

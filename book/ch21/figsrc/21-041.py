@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+text(ax, 24, 47, r'$\frac{4x-5}{x^2+1}$', 'sujet', 'l')
+box(ax, 46, 41, 38, 11, 'resultat', label=r'$x=2$ : $\frac{3}{5}$', size='s')
+box(ax, 46, 27, 38, 11, 'resultat', label=r'$x=-1$ : $-\frac{9}{2}$', size='s')
+text(ax, 24, 30, 'bas : $x^2+1$', 'sujet', 's')
+f = numberline(ax, 8, 70, 12, 0, 6, 1, labels=False, arrow_right=True)
+ax.plot([f(1), f(6)], [12, 12], color=COL['resultat'], lw=2.4, zorder=3, solid_capstyle='round')
+disc(ax, f(0), 12, 1.8, 'limite', fill=False, lw=1.0); text(ax, f(0), 6.5, '0', 'limite', 's')
+for v in (1, 2, 5): disc(ax, f(v), 12, 1.4, 'resultat'); text(ax, f(v), 6.5, f'{v}', 'resultat', 's')
+text(ax, f(3.5), 18, 'bas : au moins 1', 'resultat', 's')
+save(fig, '21-041')

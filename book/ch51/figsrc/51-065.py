@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,3,36,38,22,'sujet'); box(ax,47,36,38,22,'autre')
+text(ax,22,53,'addition','sujet','m',weight='bold'); text(ax,66,53,'multiplication','autre','m',weight='bold')
+text(ax,22,44,r'$4+5=9$','sujet','l'); text(ax,66,44,r'$3\times9=27$','autre','l')
+text(ax,44,29,'calculs qui mêlent + et ×','fixe','s')
+text(ax,20,20,r'$3\times(4+5)$','sujet','m'); text(ax,68,20,r'$3\times4+3\times5$','autre','m')
+line(ax,[(31,20),(41,20)],'limite',dash=True); line(ax,[(46,20),(55,20)],'limite',dash=True)
+text(ax,43.5,20,'?','limite','l',weight='bold')
+text(ax,44,10,'aucune règle ne les relie','limite','s')
+save(fig,'51-065')

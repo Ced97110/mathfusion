@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+box(ax, 4, 80, 80, 14, 'sujet', label=r'$\frac{P}{Q}\times\frac{R}{S}=\frac{P\times R}{Q\times S}$', size='l')
+text(ax, 44, 70, r'$\frac{2}{3}\times\frac{5}{7}$', 'sujet', 'l')
+arrow(ax, (30, 64), (22, 55), 'varie')
+arrow(ax, (58, 64), (66, 55), 'varie')
+box(ax, 4, 41, 38, 13, 'varie', label=r'haut : $2\times5=10$', size='m')
+box(ax, 46, 41, 38, 13, 'varie', label=r'bas : $3\times7=21$', size='m')
+arrow(ax, (22, 40), (36, 29), 'varie')
+arrow(ax, (66, 40), (52, 29), 'varie')
+box(ax, 28, 8, 32, 20, 'resultat', label=r'$\frac{10}{21}$', size='xl')
+save(fig, '21-057')

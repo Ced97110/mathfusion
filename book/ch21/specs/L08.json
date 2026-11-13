@@ -1,0 +1,178 @@
+[
+ {
+  "code": "21-113",
+  "a_dire": "On recommence diviser, multiplier, soustraire tant que le reste contient encore le diviseur.",
+  "legende_titre": "Un seul tour ne suffit pas toujours",
+  "lecture": [
+   "En bleu, la division 156 ÷ 12 : c'est le point de départ.",
+   "En gris, le reste 3 après le premier tour ; en orange, le 6 écrit à côté donne 36.",
+   "Les deux barres du bas ont la même échelle : la barre orange de 36 est plus longue que la barre bleue de 12."
+  ],
+  "a_voir": "36 contient encore 12 : un second tour est nécessaire."
+ },
+ {
+  "code": "21-114",
+  "a_dire": "Pour des polynômes, un reste est assez grand si son degré est au moins égal à celui du diviseur.",
+  "legende_titre": "Quand le reste contient-il le diviseur ?",
+  "lecture": [
+   "À gauche, les nombres : 36 contient 12 (vert), 8 ne contient pas 12 (rouge).",
+   "À droite, les polynômes : 3x + 6 contient x + 2, car les degrés sont 1 et 1 (vert).",
+   "En rouge, 7 ne contient pas x + 2 : son degré 0 est plus petit que le degré 1."
+  ],
+  "a_voir": "Le degré joue pour les polynômes le rôle de la taille pour les nombres."
+ },
+ {
+  "code": "21-115",
+  "a_dire": "On s'arrête quand le reste a un degré plus petit que celui du diviseur.",
+  "legende_titre": "Le moment de s'arrêter",
+  "lecture": [
+   "En haut, x + 5 = 1 × (x + 2) + 3 : le premier tour donne 1 et il reste 3.",
+   "Sur la droite des degrés, le reste 3 (vert) est en 0 et x + 2 (bleu) est en 1.",
+   "Le cadre rouge montre ce qui arriverait si on continuait : 3/x, qui n'est pas un polynôme."
+  ],
+  "a_voir": "Le reste est au degré 0, à gauche du degré 1 du diviseur : on s'arrête."
+ },
+ {
+  "code": "21-116",
+  "a_dire": "Si un degré manque, on l'écrit avec un coefficient 0, comme le 0 de 1 056.",
+  "legende_titre": "Écrire le degré qui manque",
+  "lecture": [
+   "En haut, les chiffres de 1 056 ; le 0 orange dit qu'il y a 0 centaine.",
+   "En bas, 2x³, 0x², −4x, 1 : chaque case est un degré.",
+   "La case orange 0x² tient la place du degré qui manque."
+  ],
+  "a_voir": "Le 0 garde la place, dans le nombre comme dans le polynôme."
+ },
+ {
+  "code": "21-117",
+  "a_dire": "On écrit tous les degrés en colonnes pour que la soustraction tombe en face du bon terme.",
+  "legende_titre": "Les colonnes restent alignées",
+  "lecture": [
+   "La ligne bleue est le dividende en quatre colonnes ; la case orange est le terme 0x² ajouté.",
+   "La ligne grise est le produit 2x² × (x + 6) : 2x³ et 12x² sont chacun sous leur colonne.",
+   "La ligne verte est la soustraction : 0 puis −12x², dans la colonne 0x² entourée en pointillé."
+  ],
+  "a_voir": "Sans la case orange, 12x² n'aurait aucun terme en face de lui."
+ },
+ {
+  "code": "21-118",
+  "a_dire": "La méthode se fait en cinq étapes sur l'équation, puis x = 4 vérifie l'équation.",
+  "legende_titre": "Les étapes d'une équation avec fractions",
+  "lecture": [
+   "En haut, l'équation à résoudre.",
+   "Les cinq cases bleues puis verte donnent les étapes dans l'ordre, de haut en bas.",
+   "À droite, le résultat x = 4 et la vérification : 73/12 des deux côtés."
+  ],
+  "a_voir": "Chaque étape suit la précédente et la dernière confirme x = 4."
+ },
+ {
+  "code": "21-119",
+  "a_dire": "On factorise le dénominateur x² − x en x(x − 1) ; chaque facteur donne une valeur interdite, 0 et 1.",
+  "legende_titre": "Chercher les valeurs interdites",
+  "lecture": [
+   "En gris, le dénominateur x² − x ; il s'écrit x fois x − 1.",
+   "La flèche bleue part du facteur x et arrive sur 0 ; la flèche violette part de x − 1 et arrive sur 1.",
+   "Les deux points rouges sont les valeurs interdites."
+  ],
+  "a_voir": "Chaque facteur du dénominateur désigne une valeur interdite sur la droite."
+ },
+ {
+  "code": "21-120",
+  "a_dire": "Le PPCM prend chaque facteur au plus une fois ; ici il est égal à x(x − 1).",
+  "legende_titre": "Construire le PPCM",
+  "lecture": [
+   "Les trois lignes du haut sont les trois dénominateurs : x, x − 1 et x(x − 1).",
+   "Le facteur x est en bleu, le facteur x − 1 en violet, chacun dans sa colonne.",
+   "La ligne verte du bas garde une case par colonne : x et x − 1, une fois chacun."
+  ],
+  "a_voir": "Le PPCM est une seule case par colonne, ici égal au troisième dénominateur."
+ },
+ {
+  "code": "21-121",
+  "a_dire": "Une lettre M remplace x(x − 1) pour ne pas l'écrire trois fois.",
+  "legende_titre": "Une lettre pour une écriture longue",
+  "lecture": [
+   "La rangée du haut écrit trois fois x(x − 1), en cases larges.",
+   "La flèche orange donne le nom : M = x(x − 1).",
+   "La rangée du bas écrit trois fois M, en cases étroites."
+  ],
+  "a_voir": "Les cases étroites du bas disent la même chose que les larges du haut."
+ },
+ {
+  "code": "21-122",
+  "a_dire": "Multiplier chaque terme par M fait disparaître son dénominateur.",
+  "legende_titre": "Chaque dénominateur disparaît",
+  "lecture": [
+   "Chaque case bleue est un terme multiplié par M.",
+   "La flèche orange dit quel facteur se retire.",
+   "La case verte montre ce qui reste : 3(x − 1), 4x², puis 4x² + x + 5."
+  ],
+  "a_voir": "Dans les trois lignes de droite, il n'y a plus de dénominateur."
+ },
+ {
+  "code": "21-123",
+  "a_dire": "On retire 4x² des deux côtés ; il reste une équation du premier degré qui donne x = 4.",
+  "legende_titre": "De l'équation à x = 4",
+  "lecture": [
+   "La case bleue du haut est l'équation de départ.",
+   "Chaque flèche orange est un geste écrit à droite : retirer, ajouter, diviser.",
+   "La case verte du bas donne x = 4."
+  ],
+  "a_voir": "Le terme 4x² disparaît dès le premier geste."
+ },
+ {
+  "code": "21-124",
+  "a_dire": "On contrôle deux choses : 4 n'est pas interdit, et les deux côtés valent 73/12.",
+  "legende_titre": "Les deux contrôles de la fin",
+  "lecture": [
+   "Sur la droite, les points rouges 0 et 1 sont interdits ; le point vert 4 est le candidat, à part.",
+   "En bas, le côté gauche (bleu) vaut 73/12.",
+   "Le côté droit (violet) vaut aussi 73/12."
+  ],
+  "a_voir": "Le candidat 4 n'est pas sur un point rouge et les deux côtés sont égaux."
+ },
+ {
+  "code": "21-125",
+  "a_dire": "Multiplier 1/6, 1/4 et 1/x par 12x donne 2x, 3x et 12, donc 5x = 12 et x = 2,4 heures.",
+  "legende_titre": "La méthode appliquée à l'équation de la dalle",
+  "lecture": [
+   "Les cases bleues sont les trois termes de l'équation.",
+   "Chaque flèche orange multiplie par 12x : on obtient 2x, 3x et 12.",
+   "La ligne du bas va de 2x + 3x = 12 à 5x = 12, puis à x = 2,4 heures."
+  ],
+  "a_voir": "Après la multiplication, il n'y a plus de fraction."
+ },
+ {
+  "code": "21-126",
+  "a_dire": "2,4 heures font 2 heures 24 minutes, moins que 4 heures : le résultat est compatible.",
+  "legende_titre": "Comparer le résultat à ce qu'on savait",
+  "lecture": [
+   "La barre grise du haut va jusqu'à 4 heures, le temps du plus rapide.",
+   "La barre du bas va jusqu'à 2,4 heures : 2 heures en vert, 0,4 heure en orange.",
+   "Le 0,4 heure orange fait 24 minutes."
+  ],
+  "a_voir": "La barre de 2 h 24 min est plus courte que celle de 4 h."
+ },
+ {
+  "code": "21-127",
+  "a_dire": "Le calcul additionne des parts de travail et corrige le résultat absurde de 6 + 4.",
+  "legende_titre": "Le calcul corrige l'intuition",
+  "lecture": [
+   "La barre rouge est le résultat de l'intuition, 10 heures.",
+   "Les deux barres grises sont les temps de chaque ouvrier, 6 heures et 4 heures.",
+   "La barre verte est le résultat du calcul, 2,4 heures, obtenu avec 1/6 + 1/4 = 1/x."
+  ],
+  "a_voir": "La barre rouge dépasse même celle d'un seul ouvrier ; la verte est la plus courte."
+ },
+ {
+  "code": "21-128",
+  "a_dire": "On multiplie chaque terme par a − 4, y compris le 2, et a = 4 reste interdit.",
+  "legende_titre": "Un même dénominateur, trois termes à multiplier",
+  "lecture": [
+   "En rouge, la valeur interdite a = 4.",
+   "Les trois cases bleues sont les trois termes de l'équation.",
+   "Chaque flèche orange multiplie par a − 4 : on obtient 4a, 2(a − 4) et 16."
+  ],
+  "a_voir": "Le terme 2 sans fraction est multiplié lui aussi."
+ }
+]

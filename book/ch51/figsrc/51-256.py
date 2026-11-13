@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role, label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(80)
+text(ax, 44, 74, r'$N(\alpha)$', 'sujet', 'xl')
+text(ax, 44, 67, 'se lit « N de alpha »', 'encre', 's')
+box(ax, 14, 44, 24, 12, 'sujet', r'$N$', 'xl')
+box(ax, 50, 44, 24, 12, 'varie', r'$\alpha$', 'xl')
+text(ax, 26, 39.5, 'nom de la norme', 'sujet', 's')
+text(ax, 62, 39.5, 'un entier de Gauss', 'varie', 's')
+text(ax, 44, 29, r'si $\alpha = 3 + i$ (parties 3 et 1)', 'encre', 's')
+arrow(ax, (44, 26), (44, 19.5), 'resultat')
+box(ax, 26, 7, 36, 11, 'resultat', r'$N(\alpha) = 10$', 'l')
+save(fig, '51-256')

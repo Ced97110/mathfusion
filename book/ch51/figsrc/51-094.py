@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 22, 84, 56, 'fixe')
+text(ax, 6, 74, 'ℤ : tous les entiers', 'fixe', 's', ha='left')
+box(ax, 8, 28, 48, 40, 'sujet')
+text(ax, 12, 64, '2ℤ : les pairs', 'sujet', 's', ha='left')
+disc(ax, 20, 46, 5, 'sujet', label='4'); disc(ax, 44, 46, 5, 'resultat', label='12')
+arrow(ax, (25.5, 46), (38.5, 46), 'varie'); text(ax, 32, 51, '× 3', 'varie', 's')
+disc(ax, 71, 46, 5, 'limite', fill=False, label='1', lw=1.2)
+text(ax, 71, 36, 'hors de 2ℤ', 'limite', 's')
+box(ax, 8, 12, 72, 8, 'limite', label='1 manque : pas sous-anneau', size='s')
+box(ax, 8, 2, 72, 8, 'resultat', label='idéal : reste dans 2ℤ', size='s')
+save(fig, '51-094')

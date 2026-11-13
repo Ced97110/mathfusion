@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 22, 59, 'dans un corps', 'resultat', 'm', weight='bold'); text(ax, 66, 59, r'sans inverse de $2$', 'limite', 'm', weight='bold')
+line(ax, [(44, 6), (44, 62)], 'fixe', dash=True)
+box(ax, 6, 40, 32, 11, 'sujet', label=r'$2\times b=0$')
+arrow(ax, (22, 40), (22, 22), 'varie'); text(ax, 25, 31, r'$\times\frac{1}{2}$', 'varie', 'm', ha='left')
+box(ax, 6, 10, 32, 11, 'resultat', label=r'$b=0$')
+box(ax, 50, 40, 32, 11, 'limite', label=r'$2\times 3=0$')
+arrow(ax, (66, 40), (66, 22), 'limite'); text(ax, 69, 31, 'pas de ½', 'limite', 's', ha='left')
+box(ax, 50, 10, 32, 11, 'limite', label=r'$b=3\neq 0$')
+save(fig, '51-123')

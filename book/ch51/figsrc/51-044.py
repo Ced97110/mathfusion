@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+disc(ax, 44, 37, 34, 'sujet')
+disc(ax, 28, 37, 15, 'autre')
+text(ax, 44, 60, '8 règles : le plus de mondes', 'sujet', 's', weight='bold')
+text(ax, 28, 45, r'+ $ab=ba$', 'autre', 's', weight='bold')
+text(ax, 28, 38, 'entiers', 'autre', 'm')
+text(ax, 28, 30, 'moins\nde mondes', 'autre', 's')
+disc(ax, 62, 42, 1.2, 'limite')
+text(ax, 62, 46.5, 'tableaux', 'sujet', 'm')
+text(ax, 64, 35, r'exclus : $ab\neq ba$', 'limite', 's', weight='bold')
+save(fig, '51-044')

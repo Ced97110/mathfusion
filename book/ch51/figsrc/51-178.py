@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+y=24
+line(ax,[(6,y),(82,y)],'fixe')
+for x in (20,44,68): ax.plot([x,x],[y-1.3,y+1.3],color=COL['fixe'],lw=0.8)
+disc(ax,68,y,4.4,'resultat',label=r'$k$')
+disc(ax,20,y,4.4,'varie',label=r'$-k$',size='s')
+text(ax,44,y+3.5,'0','fixe','s')
+box(ax,54,40,28,10,'resultat',label=r'$ij=k$')
+box(ax,6,40,28,10,'varie',label=r'$ji=-k$')
+arrow(ax,(68,40),(68,28.5),'resultat'); arrow(ax,(20,40),(20,28.5),'varie')
+arrow(ax,(36,44),(52,44),'fixe',both=True)
+text(ax,44,47.5,'ordre échangé','fixe','s')
+brace(ax,20,44,19,'fixe',label='même taille'); brace(ax,44,68,19,'fixe',label='même taille')
+text(ax,44,6,'seul le signe change','encre','m')
+save(fig,'51-178')

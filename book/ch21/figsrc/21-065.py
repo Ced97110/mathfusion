@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, 'la question', 'fixe', 's')
+box(ax, 20, 52, 48, 12, 'sujet', label=r'$\frac{5}{7}\times ? = \frac{2}{3}$')
+arrow(ax, (44, 51), (44, 36), 'varie')
+text(ax, 47, 43.5, r'$\times\frac{7}{5}$ des deux côtés', 'varie', 's', ha='left')
+box(ax, 3, 9, 38, 14, 'fixe', label=r'$\frac{5}{7}\times\frac{7}{5}=1$')
+box(ax, 47, 9, 38, 14, 'resultat', label=r'$\frac{2}{3}\times\frac{7}{5}$')
+arrow(ax, (30, 35), (22, 24), 'varie'); arrow(ax, (58, 35), (66, 24), 'varie')
+text(ax, 22, 4.5, r'$?$ reste seul', 'fixe', 's')
+text(ax, 66, 4.5, 'arrivée', 'resultat', 's')
+save(fig, '21-065')

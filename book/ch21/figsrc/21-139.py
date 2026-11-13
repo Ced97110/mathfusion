@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 2, 64, 56, 15, 'sujet', label=r'$\frac{3}{a^2}-\frac{2}{a}=1$')
+arrow(ax, (30, 63), (30, 53), 'varie'); text(ax, 34, 58, r'$\times a^2$', 'varie', 'm', ha='left')
+box(ax, 2, 38, 56, 14, 'sujet', label=r'$3-2a=a^2$')
+arrow(ax, (30, 37), (30, 27), 'varie'); text(ax, 34, 32, 'tout du même côté', 'varie', 's', ha='left')
+box(ax, 2, 12, 56, 14, 'resultat', label=r'$a^2+2a-3=0$')
+arrow(ax, (59, 19), (66, 19), 'resultat')
+text(ax, 76, 19, 'un carré :\nsecond degré', 'resultat', 's')
+save(fig, '21-139')

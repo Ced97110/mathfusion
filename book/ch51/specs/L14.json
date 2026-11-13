@@ -1,0 +1,182 @@
+[
+ {
+  "code": "51-208",
+  "a_dire": "Le produit de deux tableaux change quand on change l'ordre : RS et SR ont une case différente, donc M₂(ℝ) n'est pas commutatif.",
+  "legende_titre": "Deux produits, une case qui diffère",
+  "lecture": [
+   "À gauche, le tableau RS : sa case en haut à droite (orange) vaut −1.",
+   "À droite, le tableau SR : sa case en haut à droite (orange) vaut −2.",
+   "Le signe rouge ≠ dit que les deux tableaux ne sont pas égaux."
+  ],
+  "a_voir": "Il suffit d'une case différente (−1 contre −2) pour que RS ne soit pas SR."
+ },
+ {
+  "code": "51-209",
+  "a_dire": "Étirer puis tourner envoie la flèche u ailleurs que tourner puis étirer.",
+  "legende_titre": "Deux ordres, deux arrivées",
+  "lecture": [
+   "La flèche bleue part de l'origine et finit en u.",
+   "Le chemin orange étire u en Su, puis tourne Su : il arrive en RSu, aux coordonnées −0,5 et 3.",
+   "Le chemin violet tourne u en Ru, puis étire Ru : il arrive en SRu, aux coordonnées −1 et 1,5."
+  ],
+  "a_voir": "Les deux chemins partent du même point u et finissent à deux endroits différents."
+ },
+ {
+  "code": "51-210",
+  "a_dire": "Une unité matricielle est un tableau qui a un seul 1 ; le tableau unité en a deux et le tableau nul n'en a aucun.",
+  "legende_titre": "Un seul 1, quatre places possibles",
+  "lecture": [
+   "En haut, quatre tableaux bleus ont chacun un seul 1, à une place différente : e₁₁, e₁₂, e₂₁, e₂₂.",
+   "En bas à gauche, le tableau violet a deux 1 sur la diagonale : c'est le tableau unité.",
+   "En bas à droite, le tableau gris n'a aucun 1 : c'est le tableau nul.",
+   "Une case vide vaut 0."
+  ],
+  "a_voir": "Les unités matricielles ont un seul 1, entre le tableau nul (aucun 1) et le tableau unité (deux 1)."
+ },
+ {
+  "code": "51-211",
+  "a_dire": "Le signe eᵢⱼ se lit « e i j » et donne la place du seul 1 : ligne i, colonne j.",
+  "legende_titre": "Le signe découpé en trois morceaux",
+  "lecture": [
+   "Le grand signe à gauche est découpé en trois lignes : e en bleu, i en orange, j en violet.",
+   "Dans le tableau, la ligne orange est la ligne i et la colonne violette est la colonne j.",
+   "La case bleue, à leur croisement, contient le 1 : ici ligne 1, colonne 2, soit e₁₂."
+  ],
+  "a_voir": "Les deux numéros i et j suffisent à dire où est le 1."
+ },
+ {
+  "code": "51-212",
+  "a_dire": "Le produit eᵢⱼ eₖₗ vaut eᵢₗ quand j = k, et le tableau nul sinon.",
+  "legende_titre": "Le 1 de la colonne lit la ligne",
+  "lecture": [
+   "Le premier tableau e₁₂ a son 1 en colonne 2 ; cette colonne est en orange.",
+   "Le deuxième tableau e₂₁ a son 1 en ligne 2 ; cette ligne est en orange.",
+   "Les deux numéros sont 2 et 2 : ils sont égaux, donc le produit est le tableau vert e₁₁.",
+   "La ligne rouge en bas rappelle que des numéros différents donnent le tableau nul."
+  ],
+  "a_voir": "Quand le numéro de colonne du premier est celui de ligne du second, le 1 passe ; sinon rien ne passe."
+ },
+ {
+  "code": "51-213",
+  "a_dire": "Dans un ordre, e₁₁ e₁₂ vaut e₁₂ ; dans l'autre, e₁₂ e₁₁ vaut 0 : le produit dépend de l'ordre.",
+  "legende_titre": "Mêmes tableaux, deux ordres",
+  "lecture": [
+   "Première ligne : e₁₁ fois e₁₂ donne le tableau vert e₁₂, avec un 1 en haut à droite.",
+   "Deuxième ligne : e₁₂ fois e₁₁ donne le tableau gris, qui n'a que des 0.",
+   "Les cases orange sont la colonne du premier et la ligne du second, lues l'une contre l'autre.",
+   "Dans la deuxième ligne, la ligne orange du second tableau ne contient que des 0."
+  ],
+  "a_voir": "Les deux mêmes tableaux donnent deux produits différents selon l'ordre."
+ },
+ {
+  "code": "51-214",
+  "a_dire": "Pour n ≥ 2 et R ≠ {0}, le produit de tableaux dépend de l'ordre ; avec la taille 1 il n'en dépend pas.",
+  "legende_titre": "Ce que la taille 2 change",
+  "lecture": [
+   "À gauche, taille 1 : 2 × 3 et 3 × 2 valent 6, dans les deux boîtes vertes.",
+   "À droite, taille 2 : les mêmes tableaux à un seul 1 (cases bleues) donnent un 1 vert dans un ordre et un tableau gris de 0 dans l'autre.",
+   "En bas, si R = {0}, il n'y a qu'un seul tableau, le tableau nul."
+  ],
+  "a_voir": "Retirer la taille 2 ou garder R = {0} fait disparaître le contre-exemple."
+ },
+ {
+  "code": "51-215",
+  "a_dire": "Le produit de deux tableaux non nuls peut être le tableau nul : M_n(R) a des diviseurs de zéro pour n ≥ 2.",
+  "legende_titre": "Deux tableaux non nuls, produit nul",
+  "lecture": [
+   "Les deux tableaux bleus e₁₂ et e₁₁ ont chacun un 1 : ils ne sont pas nuls.",
+   "Le tableau vert à droite n'a que des 0 : c'est le produit.",
+   "Les cases orange sont la colonne 2 du premier et la ligne 2 du second, qui ne contient que des 0."
+  ],
+  "a_voir": "Le seul 1 du premier tableau lit une ligne de 0, donc tout le produit vaut 0."
+ },
+ {
+  "code": "51-216",
+  "a_dire": "Le cadran à n heures est un corps exactement quand n est premier.",
+  "legende_titre": "Deux cadrans, deux résultats",
+  "lecture": [
+   "Le cercle de gauche est le cadran à 7 heures : 7 points ; 3 fois 5 vaut 1 (point vert).",
+   "Le cercle de droite est le cadran à 6 heures : 6 points ; 2 fois 3 vaut 0 (point rouge).",
+   "Sous chaque cercle, le mot dit si le cadran est un corps, vert ou rouge."
+  ],
+  "a_voir": "Le cadran à 7 heures, où 7 est premier, est un corps ; celui à 6 heures, où 6 = 2 × 3, n'en est pas un."
+ },
+ {
+  "code": "51-217",
+  "a_dire": "Si n n'est pas premier, on écrit n = ab ; sur le cadran ab vaut 0 avec a et b non nuls, donc ce n'est pas un corps.",
+  "legende_titre": "De 6 à deux facteurs non nuls",
+  "lecture": [
+   "La boîte bleue, au départ, montre n = 6 : six points, un nombre non premier.",
+   "La boîte orange, l'étape qui porte la preuve, range les six points en 2 lignes de 3 : 6 = 2 × 3.",
+   "La boîte verte, à l'arrivée, dit que sur le cadran 2 × 3 vaut 0 alors que 2 et 3 ne valent pas 0."
+  ],
+  "a_voir": "L'étape orange, écrire n comme un produit de deux plus petits nombres, produit le diviseur de zéro."
+ },
+ {
+  "code": "51-218",
+  "a_dire": "Sur le cadran à 6 heures, 2 fois un nombre ne donne jamais 1 : 2 n'a pas d'inverse.",
+  "legende_titre": "Les produits de 2 sur le cadran à 6",
+  "lecture": [
+   "La ligne grise du haut donne les nombres k de 1 à 5.",
+   "La ligne bleue du bas donne 2 × k sur le cadran : 2, 4, 0, 2, 4.",
+   "La boîte rouge en pointillés est le 1 qu'on cherche : aucune case de la ligne bleue ne le contient."
+  ],
+  "a_voir": "Aucun des résultats n'est 1."
+ },
+ {
+  "code": "51-219",
+  "a_dire": "Si n est premier, l'identité ua + vn = 1 donne un inverse u de a sur le cadran.",
+  "legende_titre": "De 15 − 14 = 1 à l'inverse",
+  "lecture": [
+   "La barre bleue est 5 blocs de 3 : 15.",
+   "La barre violette est 2 blocs de 7 : 14 ; le petit bloc orange est le 1 qui manque pour arriver à 15.",
+   "Sur le cadran à 7 heures, 2 × 7 vaut 0 : il reste 5 × 3 = 1, donc 5 est l'inverse de 3."
+  ],
+  "a_voir": "Le bloc orange, 15 − 14 = 1, est l'étape qui fabrique l'inverse."
+ },
+ {
+  "code": "51-220",
+  "a_dire": "Sur le cadran à 7 heures, chaque nombre non nul a un inverse : 1 et 6 sont leur propre inverse, 2 et 4 sont inverses, 3 et 5 sont inverses.",
+  "legende_titre": "Les six nombres et leurs inverses",
+  "lecture": [
+   "Les six cases bleues sont les nombres non nuls du cadran à 7 heures.",
+   "L'arc vert du haut relie 2 et 4 : 2 × 4 vaut 1. L'arc vert du bas relie 3 et 5 : 3 × 5 vaut 1.",
+   "Un trait vert sous 1 × 1 et 6 × 6 dit que 1 et 6 ont 1 pour produit avec eux-mêmes."
+  ],
+  "a_voir": "Chacune des six cases est dans un produit qui vaut 1."
+ },
+ {
+  "code": "51-221",
+  "a_dire": "Un corps fini est un corps où l'on divise avec un nombre limité d'éléments : par exemple 2, 3, 5 ou 7.",
+  "legende_titre": "Infini en haut, fini en bas",
+  "lecture": [
+   "En haut, la droite grise avec ses flèches aux deux bouts est infinie : c'est le cas des fractions et des réels.",
+   "En bas, quatre cadrans bleus ont 2, 3, 5 et 7 points.",
+   "Chaque cadran premier est un corps : on y divise avec peu d'éléments."
+  ],
+  "a_voir": "Un corps peut n'avoir que 2, 3, 5 ou 7 éléments."
+ },
+ {
+  "code": "51-222",
+  "a_dire": "Dans un anneau intègre fini, multiplier par un nombre non nul donne chaque résultat une seule fois, donc atteint 1 : tout non nul a un inverse.",
+  "legende_titre": "Multiplier par 3 sur le cadran à 7",
+  "lecture": [
+   "La ligne grise du haut donne les nombres non nuls de 1 à 6.",
+   "Les flèches orange multiplient par 3 : la ligne bleue du bas donne 3, 6, 2, 5, 1, 4.",
+   "Ces six résultats sont tous différents ; le 1 est atteint depuis 5 (cases vertes)."
+  ],
+  "a_voir": "Les six résultats sont différents, donc le 1 en fait partie."
+ },
+ {
+  "code": "51-223",
+  "a_dire": "Le théorème est une règle : deux prémisses, D intègre et D fini, donnent la conclusion que tout élément non nul a un inverse.",
+  "legende_titre": "Deux prémisses, une conclusion",
+  "lecture": [
+   "Les deux boîtes bleues du haut sont les prémisses : D est intègre, D est fini.",
+   "Le trait noir marqué « donc » sépare les prémisses de la conclusion.",
+   "La boîte verte est la conclusion : tout non nul a un inverse.",
+   "Sous chaque phrase, une ligne grise vérifie le cas du cadran à 7 heures."
+  ],
+  "a_voir": "Si les deux prémisses sont vraies, la conclusion suit sans chercher les inverses un par un."
+ }
+]

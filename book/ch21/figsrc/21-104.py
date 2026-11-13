@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,28,30,20,'sujet'); text(ax,18,38,r'$\frac{x^2+1}{x+1}$','sujet','xl')
+arrow(ax,(34,42),(50,58),'limite',curve=-0.1); arrow(ax,(34,34),(50,18),'varie',curve=0.1)
+box(ax,51,54,34,14,'limite',label='aucun facteur commun',size='s')
+text(ax,68,72,'réduire : rien à retirer','limite','s')
+box(ax,51,10,34,14,'resultat',label=r'quotient $+\ \frac{reste}{diviseur}$',size='s')
+text(ax,68,5,'poser la division','varie','s')
+text(ax,18,16,r'comme $\frac{35}{8}=4+\frac{3}{8}$','fixe','s')
+save(fig,'21-104')

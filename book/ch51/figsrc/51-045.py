@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, 'D1 : a à gauche de la somme', 'sujet', 'm')
+box(ax, 4, 50, 80, 12, 'sujet', label=r'$a(b+c)=ab+ac$', size='m')
+text(ax, 44, 28, 'D2 : a à droite de la somme', 'autre', 'm')
+box(ax, 4, 10, 80, 12, 'autre', label=r'$(b+c)a=ba+ca$', size='m')
+arrow(ax, (44, 48), (44, 42.5), 'limite'); line(ax, [(44, 36.5), (44, 33)], 'limite', dash=True)
+line(ax, [(41.5, 42), (46.5, 37)], 'limite', lw=1.4); line(ax, [(41.5, 37), (46.5, 42)], 'limite', lw=1.4)
+text(ax, 39, 39.5, 'pas de passage', 'limite', 's', ha='right')
+text(ax, 50, 39.5, r'sans $ab=ba$', 'limite', 's', ha='left')
+save(fig, '51-045')

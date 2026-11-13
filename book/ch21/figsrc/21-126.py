@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 8, 68, 16, 0, 4, 1)
+box(ax, f(0), 38, f(4) - f(0), 8, 'fixe', label='le plus rapide : 4 h', size='s')
+box(ax, f(0), 22, f(2) - f(0), 8, 'resultat', label='2 h', size='s')
+box(ax, f(2), 22, f(2.4) - f(2), 8, 'varie', r=0.3)
+brace(ax, f(0), f(2.4), 31, 'resultat', label='2 h 24 min', down=False)
+text(ax, 20, 5, r'$0{,}4$ h = 24 min', 'varie', 's')
+arrow(ax, (34, 7.5), (f(2.2), 21), 'varie', lw=0.7)
+save(fig, '21-126')

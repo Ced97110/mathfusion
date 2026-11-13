@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 86, r'valeur de $(x-1)(x+6)$', 'varie', 's')
+f = numberline(ax, 8, 78, 40, -7, 3, 1, labels=False, arrow_right=False)
+for v, t in ((-6, r'$-6$'), (1, r'$1$'), (2, r'$2$')):
+    text(ax, f(v), 34, t, 'fixe', 's')
+box(ax, f(-6) - 4, 50, 8, 9, 'varie', True, '0')
+line(ax, [(f(-6), 50), (f(-6), 40)], 'varie'); disc(ax, f(-6), 40, 1.4, 'varie')
+box(ax, f(1) - 4, 50, 8, 9, 'varie', True, '0')
+line(ax, [(f(1), 50), (f(1), 40)], 'varie'); disc(ax, f(1), 40, 1.4, 'varie')
+box(ax, 57, 66, 26, 9, 'resultat', True, r'$1\times 8=8$', 's')
+line(ax, [(f(2), 66), (f(2), 40)], 'resultat', dash=True); disc(ax, f(2), 40, 1.4, 'resultat')
+box(ax, 3, 8, 38, 11, 'sujet', True, '1 valeurs interdites', 's')
+box(ax, 47, 8, 38, 11, 'sujet', True, '2 multiplier', 's')
+arrow(ax, (41, 13.5), (47, 13.5), 'varie')
+save(fig, '21-093')
