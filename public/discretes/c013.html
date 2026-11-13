@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 13</div>
-<h1>Choisir la bonne méthode de dénombrement</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 13</div>
+<h1 class="ct">Choisir la bonne méthode de dénombrement</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Les chapitres 7 à 12 t’ont donné beaucoup de méthodes de dénombrement. Le principe additif et le principe multiplicatif. L’inclusion-exclusion. Les coefficients binomiaux. Les arrangements et les combinaisons. Le double comptage. Les étoiles et les barres. L’inclusion-exclusion avancée. Le calcul, une fois la méthode choisie, est souvent court. La vraie difficulté est de choisir la méthode. Ce chapitre fait le bilan. Il te donne deux questions à poser à chaque problème, et quelques réflexes pour vérifier ta réponse.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 13 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Une boîte de biscuits-animaux</h3>
 <p>Tu as une énorme boîte de biscuits en forme d’animaux. Il y a 10 animaux différents : lion, girafe, zèbre, et ainsi de suite. Chaque animal est présent en très grand nombre. Tu ne manqueras jamais d’un animal.</p>
 <p>Voici huit questions. Chacune a pour réponse l’un des quatre nombres suivants :</p>
@@ -19,7 +25,8 @@
 <h3>Ce qui rend ces questions difficiles</h3>
 <p>Les huit questions parlent des mêmes nombres : 10 animaux, 6 biscuits. Pourtant elles ont quatre réponses différentes. Les nombres ne te disent donc pas quelle formule utiliser. Ce sont des détails de l’énoncé qui décident : « défilé », « ordre alphabétique », « différents », « enfants », « girafes ».</p>
 <p>Il te faut donc une façon sûre de lire un énoncé. La figure va la montrer sur un cas assez petit pour tout écrire.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 13 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Prends seulement 3 lettres, <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span>, et choisis-en 2. Écris tous les couples possibles dans un carré. La ligne donne la première lettre choisie. La colonne donne la seconde.</p>
 <img class="vf" src="/discretes/img/c013/p0405_2.svg" alt="ordre compte ordre compte répétitions permises pas de répétition a b c a b c a aa ab ac a aa ab ac b ba bb bc b ba bb bc c ca cb cc c ca cb cc 32 = 9 P(3, 2) = 6" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c013/p0405_3.svg" alt="ordre indifférent ordre indifférent répétitions permises pas de répétition a b c a b c a aa ab ac a aa ab ac b ba bb bc b ba bb bc c ca cb cc c ca cb cc 4 3 (2 ) = 6 (2 ) = 3" style="--w:24.12" loading="lazy">
@@ -40,7 +47,8 @@
 <img class="vf" src="/discretes/img/c013/p0407_5.svg" alt="répétitions répétitions permises interdites" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c013/p0407_6.svg" alt="mots arrangements l&#x27;ordre nk P(n, k) compte 106 = 1 000 000 P(10, 6) = 151 200 étoiles et barres combinaisons l&#x27;ordre ne k+ n −1 n ( k ) (k) compte pas (156 ) = 5 005 (106 ) = 210" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>13.2 :</b> Le tableau des quatre cas, pour</i> <span class="m">𝑛 = 10</span> <i>sortes d’animaux et</i> <span class="m">𝑘 = 6</span> <i>biscuits choisis. Regarde la ligne du haut : l’ordre compte, les nombres sont grands. Regarde la colonne de droite : sans répétition, les nombres sont plus petits que dans la colonne de gauche. La case en bas à droite est la plus petite.</i></p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 13 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c013/p0408_7.svg" alt="Définition : sélection, ordre, répétitions Une sélection de 𝑘 objets parmi 𝑛 sortes est le résultat de 𝑘 choix, chacun pris dans un même ensemble de 𝑛 sortes. • L’ordre compte si deux sélections qui contiennent les mêmes objets dans des ordres différents sont deux issues différentes. • Les répétitions sont permises si une même sorte peut être choisie plusieurs fois. Les quatre cas portent des noms. L’ordre compte et les répétitions sont permises : un mot de longueur 𝑘. L’ordre compte sans répétition : un arrangement. L’ordre ne compte pas, répétitions permises : un multiensemble. L’ordre ne compte pas, sans répétition : une combinaison." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c013/p0409_8.svg" alt="" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c013/p0409_9.svg" alt="Symbole Ce qu’il dit 𝑛 Le nombre de sortes dans lesquelles on choisit. Les animaux : 𝑛 = 10. Sur la figure 13.1 : 𝑛 = 3. 𝑘 Le nombre de choix faits. Les biscuits : 𝑘 = 6. Sur la figure : 𝑘 = 2. 𝑛𝑘 Le produit de 𝑘 facteurs égaux à 𝑛. 32 = 9, 106 = 1 000 000. 𝑃(𝑛, 𝑘) Le produit 𝑛 × (𝑛 − 1) × … de 𝑘 facteurs qui diminuent de 1. 𝑃(3, 2) = 6, 𝑃(10, 6) = 151 200. (𝑛𝑘) « 𝑘 parmi 𝑛 », égal à 𝑃(𝑛, 𝑘)/𝑘!. (32) = 3, (106 ) = 210. (𝑘+𝑛−1𝑘 ) Les étoiles et les barres : 𝑘 étoiles, 𝑛 − 1 barres. (42) = 6, (156 ) = 5 005. Règle : les quatre cas Prémisses. On fait une sélection de 𝑘 objets parmi 𝑛 sortes. On sait si l’ordre compte et si les répétitions sont permises. Conclusion. Le nombre de sélections vaut : • 𝑛𝑘 si l’ordre compte et les répétitions sont permises ; • 𝑃(𝑛, 𝑘) si l’ordre compte sans répétition ; • (𝑘+𝑛−1𝑘 ) si l’ordre ne compte pas et les répétitions sont permises ; • (𝑛𝑘) si l’ordre ne compte pas sans répétition." style="--w:24.19" loading="lazy">
@@ -54,7 +62,8 @@
 <p><b>Pourquoi c’est vrai.</b> Une fonction de <span class="m">𝐴</span> vers <span class="m">𝐵</span> est un mot de longueur <span class="m">𝑘</span> écrit avec les <span class="m">𝑛</span> éléments de <span class="m">𝐵</span> : la lettre en position <span class="m">𝑖</span> est l’image du <span class="m">𝑖</span>-ème élément de <span class="m">𝐴</span>. Une injection est un mot sans répétition : un arrangement. Les surjections ont été comptées par inclusion-exclusion au chapitre 12. Quand <span class="m">𝑘 = 𝑛</span>, une injection atteint <span class="m">𝑛</span> sorties différentes, donc toutes : c’est une bijection, et il y en a <span class="m">𝑃(𝑛, 𝑛) = 𝑛!</span>.</p>
 <img class="vm" src="/discretes/img/c013/p0411_12.svg" alt="Lien avec un autre chapitre Ce modèle relie le chapitre 6 à tout le bloc de dénombrement. Le vocabulaire des fonctions (injection, surjection, bijection) correspond aux contraintes des problèmes. « Deux enfants n’ont jamais le même animal » veut dire « injection ». « Chaque ami reçoit au moins un jeu » veut dire « surjection ». « Chaque plaque change de porte » veut dire « dérangement ». Traduire l’énoncé en vocabulaire de fonctions te dit souvent quelle méthode utiliser." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c013/p0411_13.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 13 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Les biscuits-animaux, question par question</h3>
 <p>Pour chaque question, demande-toi d’abord ce que tu sélectionnes. Puis pose les deux questions : l’ordre compte-t-il ? les répétitions sont-elles permises ?</p>
 <p><b>1. Défilés de 6 biscuits.</b> Tu choisis un animal pour chaque place du défilé. Un défilé « lion, zèbre » diffère du défilé « zèbre, lion » : l’ordre compte. Deux lions peuvent défiler : répétitions permises. Réponse : <span class="m">10</span><sup>6</sup> <span class="m">= 1 000 000</span>.</p>
@@ -107,12 +116,15 @@
 <p class="li">Une égalité entre deux nombres à prouver : le double comptage (chapitre 10).</p>
 <p class="li">Des objets identiques dans des boîtes distinctes : les étoiles et les barres (chapitre 11).</p>
 <p class="li">Un maximum par boîte, aucun élément fixe, chacun reçoit quelque chose : l’inclusion-exclusion avancée (chapitre 12).</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 13 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Ces méthodes ne sont qu’un début. Le dénombrement est un domaine de recherche à part entière, la <i>combinatoire énumérative</i>. Certaines questions très simples à énoncer n’y ont toujours pas de formule connue.</p>
 <p><b>Vers les suites (chapitre 14).</b> Jusqu’ici, tu as répondu à une question à la fois. Au chapitre 14, tu considéreras toute une famille de questions : 0 biscuit, 1 biscuit, 2 biscuits, et ainsi de suite. Les réponses forment une suite de nombres. Pour 3 enfants, c’est <span class="m">1, 3, 6, 10, 15, …</span> Étudier la suite, c’est répondre d’un coup à une infinité de questions.</p>
 <h3>Vers les récurrences (chapitres 17</h3>
 <img class="vm" src="/discretes/img/c013/p0421_24.svg" alt="et 18). Plusieurs résultats de ces chapitres se calculent de proche en proche : la relation de Pascal (𝑛𝑘) = (𝑛−1𝑘−1) + (𝑛−1𝑘 ), ou la relation des dérangements 𝐷 = 𝑛 (𝑛 − 1)(𝐷𝑛−1 + 𝐷𝑛−2). Les chapitres 17 et 18 apprennent à les résoudre et à les prouver." style="--w:24.19" loading="lazy">
 <h3>Vers les fonctions génératrices</h3>
 <p><b>(chapitre 27).</b> Les fonctions génératrices rangent toute une suite de réponses dans une seule expression. Les étoiles et les barres, avec ou sans maximum, y deviennent des calculs sur des produits.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 13 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c013/p0422_25.svg" alt="À toi de chercher Le tableau de ce chapitre repose sur deux questions à réponse oui ou non : il a 2×2 = 4 cases. Pense à des objets rangés dans des boîtes. Pose trois questions. Les objets sont- ils discernables ? Les boîtes sont-elles discernables ? Chaque boîte reçoit-elle au moins un objet, au plus un objet, ou n’importe quel nombre ? Combien de situations obtiens-tu ? Lesquelles sais-tu déjà compter avec les chapitres 7 à 12 ? Laquelle te paraît la plus difficile, et pourquoi ?" style="--w:24.19" loading="lazy">
+</div>
