@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Des nombres aux structures — fiches illustrées',
-  description: 'Une fiche par concept, une figure par fiche.',
+  description: 'Un livre de mathématiques en fiches : une fiche par concept, une figure par fiche.',
 };
 
 export default function RootLayout({ children }) {
@@ -19,8 +19,11 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <header id="bar">
-          <Link href="/" className="bb">Sommaire</Link>
-          <div className="t">Des nombres aux structures</div>
+          <Link href="/" className="brand">Des nombres aux structures</Link>
+          <nav aria-label="Navigation principale">
+            <Link href="/#lire">Lire une fiche</Link>
+            <Link href="/#chapitres">Chapitres</Link>
+          </nav>
         </header>
         <main>{children}</main>
       </body>

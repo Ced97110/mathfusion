@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getToc, slugOf, labelOf } from '../../../lib/book';
-import ChapterBody from './ChapterBody';
+import { getToc, slugOf, labelOf, prefixOf, getParts } from '../../../lib/book';
+import Reader from './Reader';
 
 // Une page statique par chapitre déjà fait.
 export function generateStaticParams() {
@@ -15,26 +14,26 @@ export async function generateMetadata({ params }) {
   return c ? { title: `${labelOf(c)} — ${c.title}` } : {};
 }
 
+const link = (c) => (c ? { href: `/chapitre/${slugOf(c)}/`, label: labelOf(c) } : null);
+
 export default async function Chapter({ params }) {
   const { key } = await params;
   const done = getToc().filter((c) => c.file);
   const i = done.findIndex((c) => slugOf(c) === key);
   if (i < 0) notFound();
   const c = done[i];
-  const prev = done[i - 1];
-  const next = done[i + 1];
-  const nav = (
-    <nav className="pn" aria-label="Chapitres voisins">
-      {prev ? <Link href={`/chapitre/${slugOf(prev)}/`}>‹ {labelOf(prev)}</Link> : <span />}
-      {next ? <Link href={`/chapitre/${slugOf(next)}/`}>{labelOf(next)} ›</Link> : <span />}
-    </nav>
-  );
+  const parts = getParts(c.file);
   return (
-    <>
-      {nav}
-      {/* Le contenu du chapitre est du HTML produit par le kit (texte du livre + figures SVG). */}
-      <ChapterBody file={c.file} />
-      {nav}
-    </>
+    <Reader
+      file={c.file}
+      prefix={prefixOf(c)}
+      label={labelOf(c)}
+      title={c.title}
+      parts={parts}
+      total={parts.reduce((a, p) => a + p.n, 0)}
+      chapters={done.map((d) => ({ prefix: prefixOf(d), slug: slugOf(d) }))}
+      prev={link(done[i - 1])}
+      next={link(done[i + 1])}
+    />
   );
 }
