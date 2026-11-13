@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 8, 76, 24, 0, 60, 15)
+arrow(ax, (f(0), 27), (f(45), 27), 'sujet', curve=-0.22)
+text(ax, f(22.5), 38, 'A = 45°', 'sujet', 's')
+arrow(ax, (f(45), 16), (f(15), 16), 'varie', curve=-0.4)
+text(ax, f(30), 4, '+ (−B) = −30°', 'varie', 's')
+ax.plot([f(15)], [24], 'o', color=COL['resultat'], ms=4, zorder=6)
+text(ax, f(15), 29.5, '15°', 'resultat', 's')
+text(ax, 44, 50, 'A − B = A + (−B)', 'sujet', 'm')
+save(fig, '34-061')

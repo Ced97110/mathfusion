@@ -1,0 +1,180 @@
+[
+ {
+  "code": "34-113",
+  "a_dire": "Pour calculer sin 75°, tu écris la formule, tu remplaces par les valeurs, tu multiplies, puis tu réunis.",
+  "legende_titre": "Quatre étapes dans l’ordre",
+  "lecture": [
+   "Chaque case orange nomme une étape ; les flèches orange donnent l’ordre.",
+   "Les cases bleues montrent le calcul de l’étape : la formule, les valeurs, les produits.",
+   "La case verte donne le résultat : 0,9659."
+  ],
+  "a_voir": "Tu vois les quatre étapes l’une après l’autre sur le cas 45° et 30°."
+ },
+ {
+  "code": "34-114",
+  "a_dire": "Pour contrôler 0,9659, tu convertis la valeur exacte en nombre et tu vérifies qu’il est plus petit que 1.",
+  "legende_titre": "Convertir en nombre pour vérifier",
+  "lecture": [
+   "La case bleue du haut est la valeur exacte.",
+   "La case orange donne la somme des deux racines en nombres ; la flèche « ÷ 4 » mène au nombre.",
+   "La case verte est 0,9659 ; le point vert sur la droite graduée est juste avant 1."
+  ],
+  "a_voir": "Tu vois que le nombre obtenu se place avant 1 sur la droite graduée."
+ },
+ {
+  "code": "34-115",
+  "a_dire": "Chaque morceau est multiplié par un cosinus plus petit que 1, donc il raccourcit et la somme reste sous 1.",
+  "legende_titre": "Des morceaux raccourcis par la multiplication",
+  "lecture": [
+   "La barre rouge du haut est l'addition simple : 0,5 et 0,7071 dépassent le trait du 1 et font 1,2071.",
+   "Les cadres en pointillés du bas sont les morceaux de départ : 0,5 et 0,7071.",
+   "Les nombres orange sont les cosinus qui multiplient chaque morceau et le raccourcissent.",
+   "Les morceaux pleins, 0,3536 et 0,6124, sont plus courts et font 0,9659 : la barre s'arrête avant le 1."
+  ],
+  "a_voir": "Tu vois que les morceaux multipliés sont plus courts et que la barre s'arrête avant le 1."
+ },
+ {
+  "code": "34-116",
+  "a_dire": "cos 15° se calcule avec cos(45° − 30°) : produit des cosinus plus produit des sinus, soit 0,9659.",
+  "legende_titre": "cos 15° par une différence d’angles",
+  "lecture": [
+   "La case bleue du haut est le cosinus de 15° écrit comme cos(45° − 30°).",
+   "La case bleue du bas à gauche est le produit des cosinus : 0,6124.",
+   "La case violette est le produit des sinus : 0,3536 ; la case verte est leur somme, 0,9659, écrite aussi avec les racines."
+  ],
+  "a_voir": "Tu vois deux produits qui s’additionnent pour donner 0,9659."
+ },
+ {
+  "code": "34-117",
+  "a_dire": "15° et 75° sont complémentaires : dans un triangle rectangle, le côté de 0,9659 est opposé à l’un et adjacent à l’autre.",
+  "legende_titre": "Deux angles aigus qui font 90°",
+  "lecture": [
+   "Le triangle bleu est rectangle ; l’hypoténuse vaut 1.",
+   "L’angle bleu en bas à gauche vaut 15° ; l’angle violet en haut à droite vaut 75°.",
+   "Le côté vert du bas vaut 0,9659 : il est opposé à 75° et adjacent à 15°."
+  ],
+  "a_voir": "Tu vois un même côté qui sert au sinus de 75° et au cosinus de 15°."
+ },
+ {
+  "code": "34-118",
+  "a_dire": "tan 75° se simplifie en 2 + √3, soit environ 3,732, en multipliant haut et bas.",
+  "legende_titre": "Simplifier le quotient de tangentes",
+  "lecture": [
+   "La case du haut écrit tan 75° comme tan(45° + 30°).",
+   "Les trois fractions bleues sont le quotient avant et après chaque étape. La première vaut 1,5774 / 0,4226.",
+   "Les flèches orange disent par quoi on multiplie, puis par quoi on divise.",
+   "La case verte donne 2 + √3, environ 3,732."
+  ],
+  "a_voir": "Tu vois le quotient se simplifier étape par étape jusqu'à 2 + √3."
+ },
+ {
+  "code": "34-119",
+  "a_dire": "Les deux produits s’additionnent en un seul nombre, −0,5, qui est le cosinus de 120°.",
+  "legende_titre": "Deux produits, un seul cosinus",
+  "lecture": [
+   "La flèche orange part de 0 vers la gauche : c’est le premier produit, −0,5714.",
+   "La petite flèche violette repart vers la droite : c’est le second produit, 0,0714.",
+   "Le point vert est l’arrivée : −0,5, qui est cos 120°, avec 175° − 55° = 120°."
+  ],
+  "a_voir": "Tu vois que la somme des deux produits arrive à −0,5."
+ },
+ {
+  "code": "34-120",
+  "a_dire": "Une somme de produits cos × cos + sin × sin se lit à l’envers comme cos(A − B).",
+  "legende_titre": "Lire la formule à l’envers",
+  "lecture": [
+   "La case grise est l’expression donnée, avec 175° et 55°.",
+   "La case bleue est la formule du cosinus d’une différence : son second membre a la même forme que la case grise.",
+   "La case verte donne le résultat : cos 120°, avec A = 175° et B = 55°."
+  ],
+  "a_voir": "Tu vois que l’expression donnée a la forme du second membre de la formule."
+ },
+ {
+  "code": "34-121",
+  "a_dire": "cos 120° = −1/2 : le point à 120° est le symétrique du point à 60° et son déplacement horizontal change de signe.",
+  "legende_titre": "Symétrique par rapport à la verticale",
+  "lecture": [
+   "Le point bleu est à 60° : il est à 0,5 vers la droite et à 0,866 de hauteur.",
+   "Le point vert est à 120° : même hauteur, mais à −0,5 vers la gauche.",
+   "Le trait orange pointillé relie les deux points, de part et d’autre de l’axe vertical."
+  ],
+  "a_voir": "Tu vois deux points à même hauteur et à déplacements horizontaux opposés, 0,5 et −0,5."
+ },
+ {
+  "code": "34-122",
+  "a_dire": "On donne cos α = 0,6 et cos β = 0,8 pour deux angles aigus ; il faut leurs sinus avant de trouver la somme, 90°.",
+  "legende_titre": "Deux cosinus donnés, une somme à trouver",
+  "lecture": [
+   "Le triangle bleu est l’angle α : le côté du bas vaut 0,6 et l’hypoténuse 1.",
+   "Le triangle violet est l’angle β : le côté du bas vaut 0,8.",
+   "Les points d’interrogation orange sont les sinus à calculer ; la case verte donne la somme, 90°."
+  ],
+  "a_voir": "Tu vois deux cosinus connus, deux sinus inconnus, et la somme qui en sort."
+ },
+ {
+  "code": "34-123",
+  "a_dire": "La lettre β se lit « bêta » : c’est le nom d’un angle, pris dans l’alphabet grec pour ne pas le confondre avec A et B.",
+  "legende_titre": "β, un nom d’angle",
+  "lecture": [
+   "La case grise rappelle que A et B sont déjà utilisés.",
+   "L’angle violet porte la lettre α, lue « alpha ».",
+   "L’angle bleu porte la lettre β, lue « bêta » : c’est un angle aigu."
+  ],
+  "a_voir": "Tu vois β écrit sur un angle, à côté de α."
+ },
+ {
+  "code": "34-124",
+  "a_dire": "sin α vaut 0,8 et non −0,8, parce que α est aigu et que le sinus est positif entre 0° et 90°.",
+  "legende_titre": "Choisir le signe du sinus",
+  "lecture": [
+   "Le secteur bleu est la zone des angles aigus.",
+   "Le trait vert est la hauteur 0,8 du point gardé, qui est dans cette zone.",
+   "Le trait rouge pointillé mène au point à −0,8, écarté parce qu’il est hors de la zone."
+  ],
+  "a_voir": "Tu vois deux points de même cosinus 0,6 et un seul dans la zone des angles aigus."
+ },
+ {
+  "code": "34-125",
+  "a_dire": "Le point du cercle qui a pour sinus 1 et pour cosinus 0, entre 0° et 180°, est celui du haut : α + β = 90°.",
+  "legende_titre": "Un seul point en haut du cercle",
+  "lecture": [
+   "L’arc gris est le demi-cercle de 0° à 180°.",
+   "Le trait vert est la hauteur 1 jusqu’au point du haut, où le cosinus est 0.",
+   "Le point vert est à 90° : c’est la valeur de α + β."
+  ],
+  "a_voir": "Tu vois qu’un seul point du demi-cercle a un sinus 1 et un cosinus 0."
+ },
+ {
+  "code": "34-126",
+  "a_dire": "Quand cos(α + β) = 0, la longueur QH vaut 0 : H tombe sur Q et l’angle en Q est droit.",
+  "legende_titre": "H confondu avec Q",
+  "lecture": [
+   "À gauche, le cosinus est positif : le trait vert QH a une longueur.",
+   "À droite, le cosinus est nul : QH est nul, donc Q et H sont au même point.",
+   "Le trait violet de longueur 15 va de Q à S dans les deux cas."
+  ],
+  "a_voir": "Tu vois QH raccourcir jusqu’à 0 : le pied de la hauteur est sur Q."
+ },
+ {
+  "code": "34-127",
+  "a_dire": "Pour le triangle 3-4-5, le double de l’angle A a pour sinus 24/25, pour cosinus 7/25 et pour tangente 24/7.",
+  "legende_titre": "Doubler l’angle du triangle 3-4-5",
+  "lecture": [
+   "Le triangle bleu est l’angle A : les côtés valent 4/5 et 3/5, l’hypoténuse 1.",
+   "Le triangle vert est l’angle double 2A : les côtés valent 7/25 et 24/25, l’hypoténuse 1.",
+   "Les trois cases vertes donnent sin 2A, cos 2A et tan 2A."
+  ],
+  "a_voir": "Tu vois l’angle A et son double côte à côte, avec leurs côtés en fractions."
+ },
+ {
+  "code": "34-128",
+  "a_dire": "Les trois valeurs de l’angle double sortent de sin A = 3/5 et cos A = 4/5 par trois calculs.",
+  "legende_titre": "Les trois calculs de l’angle double",
+  "lecture": [
+   "Les cases bleues nomment ce qu’on cherche : sin 2A, cos 2A, tan 2A.",
+   "Les cases orange donnent le calcul : un produit, une différence de carrés, un quotient.",
+   "Les cases vertes donnent les résultats : 24/25, 7/25 et 24/7."
+  ],
+  "a_voir": "Tu vois chaque calcul avec son résultat sur une même ligne."
+ }
+]

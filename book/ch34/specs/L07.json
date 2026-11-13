@@ -1,0 +1,194 @@
+[
+ {
+  "code": "34-097",
+  "a_dire": "Dans le triangle rectangle d'hypoténuse 2 cos A et d'angle A, le côté contre l'angle vaut l'hypoténuse fois cos A, et le côté en face vaut l'hypoténuse fois sin A.",
+  "legende_titre": "Les deux côtés du triangle à partir de l'hypoténuse",
+  "lecture": [
+   "Le triangle bleu a un angle droit en bas à droite, au point F.",
+   "Le trait bleu épais est l'hypoténuse : elle vaut 1,732.",
+   "Le côté du bas est vert : 1,732 fois 0,866 donne 1,5.",
+   "Le côté de droite est vert : 1,732 fois 0,5 donne 0,866."
+  ],
+  "a_voir": "Chaque côté de l'angle droit est l'hypoténuse multipliée par un cosinus ou un sinus."
+ },
+ {
+  "code": "34-098",
+  "a_dire": "Le segment FP a deux écritures, sin 2A comme hauteur de P et 2 sin A cos A comme côté du triangle, donc elles sont égales.",
+  "legende_titre": "Un seul segment, deux écritures",
+  "lecture": [
+   "Le trait vert épais est le segment FP : un seul segment.",
+   "La flèche violette le lit comme la hauteur du point P sur le cercle : 0,866.",
+   "La flèche bleue le lit comme un côté du triangle bleu : 0,866.",
+   "Les deux nombres sont égaux, d'où l'égalité écrite en bas."
+  ],
+  "a_voir": "Le même segment porte deux écritures qui donnent le même nombre."
+ },
+ {
+  "code": "34-099",
+  "a_dire": "Quand le rayon vaut 1, la longueur KF est le rayon KO plus OF, c'est-à-dire 1 + cos 2A.",
+  "legende_titre": "KF découpé en deux morceaux sur l'axe",
+  "lecture": [
+   "Le cercle a un rayon de 1 ; le point K est à gauche, le point F est sous le point P.",
+   "L'accolade bleue mesure KO : c'est le rayon, 1.",
+   "L'accolade orange mesure OF : c'est cos 2A, soit 0,5.",
+   "L'accolade verte, sous les deux autres, mesure KF : 1 + 0,5 = 1,5."
+  ],
+  "a_voir": "KF se compose du rayon 1 et du morceau OF."
+ },
+ {
+  "code": "34-100",
+  "a_dire": "Le « 2 » vient de la corde KP qui est le double de sa moitié KM, et le « −1 » vient du rayon KO retiré de KF pour retrouver OF.",
+  "legende_titre": "D'où viennent le « 2 » et le « −1 »",
+  "lecture": [
+   "Le trait bleu épais est la corde KP ; le point M est son milieu : KP vaut 2 fois KM.",
+   "Le trait orange sur l'axe est le rayon KO, de 1, qu'on retire.",
+   "Le trait vert sur l'axe est OF : 1,5 moins 1 donne 0,5.",
+   "Le texte bleu à droite explique le « 2 » ; le texte du bas explique le « −1 »."
+  ],
+  "a_voir": "Chaque nombre de la formule correspond à un segment de la figure."
+ },
+ {
+  "code": "34-101",
+  "a_dire": "On pose θ = 2A, donc A = θ/2, et la formule du cosinus de 2A devient une formule avec θ et θ/2.",
+  "legende_titre": "Remplacer 2A par θ et A par θ/2",
+  "lecture": [
+   "À gauche, l'angle orange est θ ; le trait bleu en pointillés le coupe en deux moitiés.",
+   "Chaque moitié est l'angle A, qui vaut θ/2.",
+   "En haut à droite, la formule de départ avec A ; en bas, la même formule avec θ.",
+   "Avec θ = 60°, on lit : 0,5 égale 2 fois 0,75 moins 1."
+  ],
+  "a_voir": "La lettre A disparaît : il ne reste que θ et θ/2."
+ },
+ {
+  "code": "34-102",
+  "a_dire": "Pour obtenir le cosinus de la moitié d'un angle, on lit cos θ, on ajoute 1, on divise par 2, puis on prend la racine carrée avec le signe ±.",
+  "legende_titre": "Les quatre actions de la formule du demi-angle",
+  "lecture": [
+   "La case bleue du haut part de cos 60° = 0,5.",
+   "Les flèches orange donnent les actions : ajouter 1, diviser par 2, prendre la racine avec ±.",
+   "Les cases grises sont les nombres intermédiaires : 1,5 puis 0,75.",
+   "La case verte du bas donne ± 0,866 ; il reste à choisir + ou − selon le quadrant de θ/2."
+  ],
+  "a_voir": "Le signe ± de la racine reste à choisir à la dernière étape."
+ },
+ {
+  "code": "34-103",
+  "a_dire": "Le carré du cosinus et le carré du sinus de la moitié de l'angle ont toujours pour somme 1, pour tout angle θ.",
+  "legende_titre": "Deux carrés qui font toujours 1",
+  "lecture": [
+   "La case violette est le carré du cosinus de la moitié ; la case bleue est le carré du sinus.",
+   "Pour θ = 60°, elles valent 0,75 et 0,25.",
+   "Pour θ = 180°, elles valent 0 et 1.",
+   "Dans les deux lignes, les cases mises bout à bout font 1."
+  ],
+  "a_voir": "La longueur totale reste 1 quand l'angle change."
+ },
+ {
+  "code": "34-104",
+  "a_dire": "Le signe ± se choisit selon la position de θ/2 sur le cercle : à gauche le cosinus est négatif, en haut le sinus est positif.",
+  "legende_titre": "Le signe est fixé par la position de θ/2",
+  "lecture": [
+   "Le trait bleu épais mène du centre au point à 150°, moitié de θ = 300°.",
+   "Le trait orange pointillé descend sur l'axe : le point est à gauche, donc cos vaut −0,866.",
+   "Le trait vert pointillé va vers l'axe vertical : le point est en haut, donc sin vaut +0,5.",
+   "Les paires grises donnent les signes (cos, sin) de chaque quart du cercle."
+  ],
+  "a_voir": "Le point à 150° est dans le quart en haut à gauche : cos moins, sin plus."
+ },
+ {
+  "code": "34-105",
+  "a_dire": "Pour θ entre 270° et 360°, la moitié θ/2 est entre 135° et 180°, où le cosinus est négatif et le sinus positif.",
+  "legende_titre": "Un exemple : θ entre 270° et 360°",
+  "lecture": [
+   "La droite du haut mesure θ ; le trait orange couvre de 270° à 360°.",
+   "La droite du dessous mesure θ/2 ; le trait orange couvre de 135° à 180°.",
+   "Le point bleu marque θ = 300° en haut et θ/2 = 150° en dessous.",
+   "Les deux cases du bas donnent les signes dans ce cas."
+  ],
+  "a_voir": "Moitiés de 270° à 360° : cos négatif, sin positif."
+ },
+ {
+  "code": "34-106",
+  "a_dire": "La tangente de θ/2 est sin θ divisé par 1 + cos θ : dans le triangle, c'est le côté de droite divisé par le côté du bas.",
+  "legende_titre": "La tangente de la moitié lue dans un triangle",
+  "lecture": [
+   "Le côté bleu du bas mesure 1 + cos θ, soit 1,5.",
+   "Le côté bleu de droite mesure sin θ, soit 0,866.",
+   "L'arc vert en K est l'angle θ/2, qui vaut 30°.",
+   "Le quotient 0,866 divisé par 1,5 donne 0,5774, la tangente de 30°."
+  ],
+  "a_voir": "Le côté de droite divisé par le côté du bas donne la tangente de l'angle en K."
+ },
+ {
+  "code": "34-107",
+  "a_dire": "Avec sin θ/(1 + cos θ), il n'y a pas de ± à choisir : le dénominateur n'est jamais négatif, donc le signe est celui de sin θ.",
+  "legende_titre": "Pourquoi cette forme n'a pas de ±",
+  "lecture": [
+   "La formule en haut est tan(θ/2) = sin θ / (1 + cos θ), ici avec θ = 300°.",
+   "Le côté gris du haut est 1 + cos θ : il vaut 1,5 et n'est pas négatif.",
+   "Le côté orange descend : sin θ vaut −0,866, il est négatif.",
+   "Le quotient −0,866 ÷ 1,5 vaut −0,5774, la tangente de 150°, la moitié de 300°. Il a le signe de sin θ."
+  ],
+  "a_voir": "Le signe du résultat vient seulement du numérateur sin θ."
+ },
+ {
+  "code": "34-108",
+  "a_dire": "La formule cos² A = (1 + cos 2A)/2 donne toujours un nombre entre 0 et 1, comme il faut pour un carré de cosinus.",
+  "legende_titre": "Le résultat reste entre 0 et 1",
+  "lecture": [
+   "Les trois droites ont la même échelle, de −1 à 2. La bande verte va de 0 à 1.",
+   "La première droite montre cos 2A : le trait gris va de −1 à 1 et le point est à 0,5 pour A = 30°.",
+   "La deuxième droite montre 1 + cos 2A : le trait va de 0 à 2 et le point est à 1,5.",
+   "La troisième droite montre la moitié : le trait vert reste dans la bande 0 à 1 et le point est à 0,75."
+  ],
+  "a_voir": "Ajouter 1 puis diviser par 2 ramène tout entre 0 et 1."
+ },
+ {
+  "code": "34-109",
+  "a_dire": "Pour obtenir sin² A, on calcule cos 2A, on le retire de 1, puis on divise par 2.",
+  "legende_titre": "Trois actions pour obtenir le carré du sinus",
+  "lecture": [
+   "La longueur de départ vaut 1 : l'accolade grise.",
+   "La case orange est cos 2A, 0,5, qu'on retire ; la case bleue garde 0,5.",
+   "La flèche orange divise cette longueur par 2 : deux cases de 0,25.",
+   "La case verte est le carré du sinus de 30° : 0,25."
+  ],
+  "a_voir": "Retirer cos 2A de 1 puis couper en deux donne sin² A."
+ },
+ {
+  "code": "34-110",
+  "a_dire": "Les formules de réduction partent de cos 2A et donnent cos² A sans racine ni signe, au contraire des angles doubles et du demi-angle.",
+  "legende_titre": "Trois familles de formules à distinguer",
+  "lecture": [
+   "La ligne du haut, grise, va de cos A à cos 2A : les angles doubles.",
+   "La ligne bleue du milieu va de cos 2A à cos² A : les formules de réduction, sans racine ni signe.",
+   "La ligne du bas, grise, va de cos θ à cos(θ/2) : le demi-angle, avec racine et signe ±.",
+   "Les flèches orange donnent le sens de chaque formule."
+  ],
+  "a_voir": "La réduction des puissances donne un carré, sans racine ni ±."
+ },
+ {
+  "code": "34-111",
+  "a_dire": "La formule de tan² A donne un nombre exactement quand la tangente existe : elle marche pour 45° et échoue pour 90°, où le dénominateur vaut 0.",
+  "legende_titre": "La formule marche quand la tangente existe",
+  "lecture": [
+   "La colonne verte de gauche traite A = 45° : cos 90° = 0, puis 1 divisé par 1 donne 1.",
+   "La colonne rouge de droite traite A = 90° : cos 180° = −1.",
+   "Le dénominateur 1 − 1 vaut 0 : la division est impossible.",
+   "Le texte du bas rappelle que tan 45° existe et que tan 90° n'existe pas."
+  ],
+  "a_voir": "Le dénominateur vaut 0 au même angle où la tangente n'existe pas."
+ },
+ {
+  "code": "34-112",
+  "a_dire": "Pour trouver sin 75°, on l'écrit comme sin(45° + 30°), on applique la formule de la somme, et on obtient la valeur exacte (√6 + √2)/4.",
+  "legende_titre": "Une valeur exacte à partir d'angles connus",
+  "lecture": [
+   "L'angle de 75° est coupé en deux : 45° en bleu et 30° en orange.",
+   "La case bleue est le premier produit : 0,6124 environ.",
+   "La case orange est le second produit : 0,3536 environ.",
+   "La flèche orange les additionne ; la case verte donne 0,9659 et la valeur exacte."
+  ],
+  "a_voir": "75° est la somme de 45° et 30° ; la formule donne la valeur exacte."
+ }
+]

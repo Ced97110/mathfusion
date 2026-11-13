@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(64)
+cx, cy, r = 28, 30, 22
+P = lambda d: (cx + r * math.cos(math.radians(d)), cy + r * math.sin(math.radians(d)))
+disc(ax, cx, cy, r, 'fixe', fill=False)
+line(ax, [(cx - r - 2, cy), (cx + r + 2, cy)], 'fixe', lw=0.6); line(ax, [(cx, cy - r - 2), (cx, cy + r + 2)], 'fixe', lw=0.6)
+p, q = P(30), P(120)
+line(ax, [(cx, cy), p], 'sujet', lw=1.2); line(ax, [(cx, cy), q], 'autre', lw=1.2)
+line(ax, [p, (p[0], cy)], 'sujet', dash=True); line(ax, [q, (cx, q[1])], 'autre', dash=True)
+line(ax, [p, (cx, p[1])], 'sujet', dash=True); line(ax, [q, (q[0], cy)], 'autre', dash=True)
+disc(ax, p[0], p[1], 1.0, 'sujet'); disc(ax, q[0], q[1], 1.0, 'autre')
+text(ax, p[0] + 2, p[1] + 3, '30°', 'sujet', 's', ha='left')
+text(ax, q[0] - 2, q[1] + 3, '120°', 'autre', 's', ha='right')
+arrow(ax, (cx + 9.5, cy + 5.5), (cx - 4.8, cy + 9.5), 'varie', curve=0.35)
+text(ax, cx + 4, cy + 14.5, '+90°', 'varie', 's')
+text(ax, 69, 54, 'cos 30° = 0,866', 'sujet', 's'); text(ax, 69, 47, 'sin 30° = 0,5', 'sujet', 's')
+text(ax, 69, 36, 'sin 120° = 0,866', 'autre', 's'); text(ax, 69, 29, 'cos 120° = −0,5', 'autre', 's')
+text(ax, 69, 18, 'sin(A+90°) = cos A', 'resultat', 's'); text(ax, 69, 11, 'cos(A+90°) = −sin A', 'resultat', 's')
+save(fig, '34-150')

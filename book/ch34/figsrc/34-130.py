@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+ox, oy, R = 44, 10, 36
+line(ax, [(6, oy), (82, oy)], 'fixe')
+P = (ox + R * 7 / 25, oy + R * 24 / 25); Q = (ox - R * 7 / 25, oy + R * 24 / 25)
+poly(ax, [(ox, oy), (P[0], oy), P], 'resultat')
+poly(ax, [(ox, oy), (Q[0], oy), Q], 'limite', fill=False)
+line(ax, [(ox, oy), P], 'resultat', lw=1.2); line(ax, [(ox, oy), Q], 'limite', lw=1.2)
+def arc(a, r, role):
+    line(ax, [(ox + r * math.cos(a * t / 20), oy + r * math.sin(a * t / 20)) for t in range(21)], role, lw=1.2)
+arc(math.atan2(24, 7), 7, 'varie'); arc(math.atan2(24, -7), 12, 'varie')
+text(ax, ox + 6.5, oy + 8.5, r'$2A$', 'varie', 's')
+text(ax, ox - 7.5, oy + 5, r'$2B$', 'varie', 's')
+text(ax, P[0] + 2, oy + 24, '24', 'resultat', 's', ha='left')
+text(ax, ox + 3.8, oy - 3.3, '7', 'resultat', 's')
+text(ax, ox + 10, oy - 3.3, r'$\cos 2A=7/25$', 'resultat', 's', ha='left')
+text(ax, ox - 10, oy - 3.3, r'$\cos 2B=-7/25$', 'limite', 's', ha='right')
+text(ax, 66, 50, 'triangle 7-24-25', 'resultat', 's')
+text(ax, 22, 50, 'pas ce triangle', 'limite', 's')
+save(fig, '34-130')

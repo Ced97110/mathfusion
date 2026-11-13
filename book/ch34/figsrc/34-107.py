@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+k = 40; y0 = 52; K = (10, y0); F = (K[0] + 1.5 * k, y0); P = (F[0], y0 - 0.866 * k)
+text(ax, 44, 72, r'$\tan(\theta/2)=\sin\theta\ /\ (1+\cos\theta)$', 'sujet', 'm')
+text(ax, 44, 66.5, r'$\theta = 300°$, donc $\theta/2 = 150°$', 'sujet', 's')
+poly(ax, [K, F, P], 'fixe')
+line(ax, [K, F], 'fixe', lw=2.2); line(ax, [F, P], 'varie', lw=2.2)
+s = 3.0
+line(ax, [(F[0] - s, y0), (F[0] - s, y0 - s), (F[0], y0 - s)], 'fixe')
+text(ax, K[0] - 3, y0 + 2, '$K$'); text(ax, F[0] + 3, y0 + 2, '$F$'); text(ax, P[0] + 3, P[1] - 1, '$P$')
+text(ax, 35, y0 + 5.5, r'$1+\cos\theta = 1{,}5\ \geq 0$', 'fixe', 's')
+text(ax, F[0] - 2, y0 - 17, r'$\sin\theta = -0{,}866$', 'varie', 's', ha='right')
+text(ax, 6, 14, r'$-0{,}866 \div 1{,}5 = -0{,}5774 = \tan 150°$', 'resultat', 's', ha='left')
+text(ax, 6, 8.5, r'signe du quotient = signe de $\sin\theta$', 'resultat', 's', ha='left')
+save(fig, '34-107')

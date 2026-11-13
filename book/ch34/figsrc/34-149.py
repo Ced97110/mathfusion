@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(62)
+cx, cy, r = 28, 31, 22
+P = lambda d: (cx + r * math.cos(math.radians(d)), cy + r * math.sin(math.radians(d)))
+disc(ax, cx, cy, r, 'fixe', fill=False)
+line(ax, [(cx - r - 2, cy), (cx + r + 2, cy)], 'fixe', lw=0.6)
+p, q = P(30), P(-30)
+line(ax, [(cx, cy), p], 'sujet', lw=1.2); line(ax, [(cx, cy), q], 'autre', lw=1.2)
+line(ax, [p, (p[0], q[1])], 'fixe', dash=True)
+disc(ax, p[0], p[1], 1.0, 'sujet'); disc(ax, q[0], q[1], 1.0, 'autre')
+text(ax, p[0] + 2, p[1] + 3, 'A = 30°', 'sujet', 's', ha='left')
+text(ax, q[0] + 2, q[1] - 3, 'B = −30°', 'autre', 's', ha='left')
+text(ax, p[0] - 1.5, cy + 2.6, 'sin 0,5', 'sujet', 's', ha='right')
+text(ax, q[0] - 1.5, cy - 2.6, 'sin −0,5', 'autre', 's', ha='right')
+text(ax, 68, 52, 'A + B = 0°', 'varie', 'm')
+text(ax, 68, 43, 'cos 0° = 1', 'varie', 'm')
+text(ax, 68, 30, r'$\cos^2 A + \sin^2 A$', 'resultat', 's')
+text(ax, 68, 23, '0,75 + 0,25 = 1', 'resultat', 'm')
+text(ax, 28, 4, 'même cos 0,866, sin opposés', 'fixe', 's')
+save(fig, '34-149')

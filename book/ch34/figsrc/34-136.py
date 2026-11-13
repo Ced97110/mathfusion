@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 26, 57, 36, 11, 'encre', label=r'$\cos 15^\circ$', size='m')
+box(ax, 2, 36, 40, 11, 'sujet', label=r'$45^\circ-30^\circ$', size='m')
+box(ax, 46, 36, 40, 11, 'autre', label='moitié de ' + r'$30^\circ$', size='m')
+arrow(ax, (38, 56.5), (22, 47.5), 'sujet'); arrow(ax, (50, 56.5), (66, 47.5), 'autre')
+box(ax, 2, 15, 40, 14, 'sujet', label=r'$\frac{\sqrt{6}+\sqrt{2}}{4}$', size='l')
+box(ax, 46, 15, 40, 14, 'autre', label=r'$\frac{\sqrt{2+\sqrt{3}}}{2}$', size='l')
+arrow(ax, (22, 35.5), (22, 29.5), 'sujet'); arrow(ax, (66, 35.5), (66, 29.5), 'autre')
+box(ax, 26, 1, 36, 8, 'resultat', label=r'$\approx 0{,}9659$', size='m')
+arrow(ax, (22, 14.5), (34, 9.5), 'resultat'); arrow(ax, (66, 14.5), (54, 9.5), 'resultat')
+save(fig, '34-136')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 24, 52, 40, 9, 'encre', label='A = 90°, B = 45°', size='m')
+arrow(ax, (34, 51), (20, 43), 'limite'); arrow(ax, (54, 51), (68, 43), 'resultat')
+box(ax, 2, 33, 40, 9, 'limite', label='formule en tangentes', size='s')
+text(ax, 22, 27, 'cos 90° = 0', 'limite', 's'); text(ax, 22, 21, 'division par 0', 'limite', 's')
+box(ax, 46, 33, 40, 9, 'sujet', label='sin 135° ÷ cos 135°', size='s')
+arrow(ax, (66, 32), (66, 25), 'varie')
+box(ax, 46, 14, 40, 10, 'varie', label='0,7071 ÷ (−0,7071)', size='s')
+arrow(ax, (66, 13), (66, 9), 'resultat')
+text(ax, 66, 4, '= −1', 'resultat', 'm')
+save(fig, '34-159')

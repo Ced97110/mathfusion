@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+R = 24; c = (36, 38)
+g = lambda x, y: (c[0] + R * x, c[1] + R * y)
+ax.add_patch(Circle(c, R, ec=COL['fixe'], fc='none', lw=0.8, zorder=1))
+K = g(-1, 0); O = g(0, 0); F = g(0.5, 0); P = g(0.5, 0.866)
+line(ax, [g(-1.1, 0), g(1.1, 0)], 'fixe', lw=0.6)
+line(ax, [K, P], 'fixe', lw=0.8); line(ax, [O, P], 'fixe', lw=0.8); line(ax, [F, P], 'sujet', lw=1.2)
+text(ax, K[0] - 3, K[1] + 2.5, '$K$'); text(ax, O[0], O[1] + 3, '$O$'); text(ax, F[0] + 2, F[1] - 3, '$F$'); text(ax, P[0] + 1, P[1] + 3, '$P$')
+brace(ax, K[0], O[0], 30, 'sujet', '$KO$ = 1')
+brace(ax, O[0], F[0], 30, 'varie', '$OF$ = 0,5')
+brace(ax, K[0], F[0], 18, 'resultat', '$KF$ = 1 + 0,5 = 1,5', depth=2.2)
+save(fig, '34-099')

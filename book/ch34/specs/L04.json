@@ -1,0 +1,183 @@
+[
+ {
+  "code": "34-049",
+  "a_dire": "Dans cos(A + B), le terme sin A sin B est nécessaire : deux couples qui ont les mêmes cosinus donnent des cosinus de somme différents.",
+  "legende_titre": "Même produit de cosinus, deux sommes différentes",
+  "lecture": [
+   "Les barres grises montrent le produit des cosinus : il est le même pour les deux couples.",
+   "La barre orange est le produit des sinus : il est retiré pour 30° et 30°, ajouté pour moins 30° et 30°.",
+   "La barre verte donne le cosinus de la somme : 0,5 dans le premier cas, 1 dans le second."
+  ],
+  "a_voir": "Avec les mêmes cosinus, seule la barre orange change le résultat vert."
+ },
+ {
+  "code": "34-050",
+  "a_dire": "La preuve part de Pythagore dans le triangle PHR, compare deux écritures de (x + y)², et les carrés x² et y² s'annulent.",
+  "legende_titre": "Une preuve en trois étapes dans le triangle PHR",
+  "lecture": [
+   "Le triangle bleu est rectangle en H ; son côté PR mesure x + y, soit 14 ; RH vaut 12,92 et HP vaut 5,38.",
+   "La première case bleue écrit Pythagore dans le triangle PHR.",
+   "La case orange développe le même carré.",
+   "La case verte égale les deux écritures : x² et y² disparaissent des deux côtés."
+  ],
+  "a_voir": "Deux écritures de (x + y)² sont mises en face, et x² et y² s'annulent."
+ },
+ {
+  "code": "34-051",
+  "a_dire": "Le côté QP se coupe en QH et HP, donc HP est ce qui reste de QP quand on retire QH.",
+  "legende_titre": "Le côté entier moins sa première partie",
+  "lecture": [
+   "L'accolade bleue entoure le côté entier QP, qui vaut r, soit 13.",
+   "La case grise est la partie QH, environ 7,62, égale à p cos(A + B).",
+   "La case verte est ce qui reste, HP, environ 5,38."
+  ],
+  "a_voir": "Les deux cases mises bout à bout refont le côté QP ; la verte est le reste."
+ },
+ {
+  "code": "34-052",
+  "a_dire": "Le carré de l'hypoténuse x + y est égal à la somme des carrés de RH et de HP, ce que les aires 167,0 + 29,0 = 196 vérifient.",
+  "legende_titre": "Trois carrés autour du triangle rectangle PHR",
+  "lecture": [
+   "Le triangle gris est rectangle en H.",
+   "Les deux carrés bleus sont construits sur RH et HP ; leurs aires valent 167,0 et 29,0.",
+   "Le carré vert est construit sur PR ; son aire vaut 196."
+  ],
+  "a_voir": "Les deux aires bleues ajoutées donnent l'aire verte."
+ },
+ {
+  "code": "34-053",
+  "a_dire": "sin² A se lit « sinus carré de A » : on calcule le sinus de A, puis on le multiplie par lui-même.",
+  "legende_titre": "Le carré porte sur le nombre, pas sur l'angle",
+  "lecture": [
+   "Le carré en pointillés gris a pour côté 1.",
+   "Le carré bleu a pour côté sin A, soit 0,6 ; son aire vaut 0,36.",
+   "À droite, les deux écritures sin² A et (sin A)² désignent cette même aire."
+  ],
+  "a_voir": "Le côté du carré est le nombre 0,6 ; l'aire est 0,36."
+ },
+ {
+  "code": "34-054",
+  "a_dire": "cos⁻¹ 0,5 est l'angle 60° (nombre vers angle) ; ce n'est pas 1 divisé par cos 60°, qui est le nombre 2.",
+  "legende_titre": "Deux écritures voisines, deux calculs différents",
+  "lecture": [
+   "À gauche, en bleu, le calcul part du nombre 0,5 et donne l'angle 60°.",
+   "À droite, en violet, le calcul part de l'angle 60° et donne le nombre 2.",
+   "Les mots « nombre » et « angle » au-dessus des cases disent ce qui entre et ce qui sort."
+  ],
+  "a_voir": "Les deux flèches vont en sens contraires : nombre vers angle, angle vers nombre."
+ },
+ {
+  "code": "34-055",
+  "a_dire": "On regroupe les deux termes en p² sous un seul p² (sin² + cos² = 1), ce qui donne 225, soit 15².",
+  "legende_titre": "Deux termes en p² réunis en un seul",
+  "lecture": [
+   "La case bleue est le terme en sinus carré, 167,0.",
+   "La case orange est le terme en cosinus carré, 58,0.",
+   "La flèche indique que sin² + cos² vaut 1.",
+   "La case verte en bas donne le total : 225, soit 15²."
+  ],
+  "a_voir": "Les deux cases du haut mises ensemble font la case verte."
+ },
+ {
+  "code": "34-056",
+  "a_dire": "(x + y)² vaut r² + p² moins 2rp cos(A + B) : avec un angle aigu, on retire quelque chose à r² + p².",
+  "legende_titre": "Ce que l'angle aigu retire à r² + p²",
+  "lecture": [
+   "Les deux cases bleues du haut forment r² + p², soit 394.",
+   "Le trait en pointillés marque 196 sur la même échelle.",
+   "La case verte est (x + y)², soit 196.",
+   "La case orange en pointillés est la part retirée, 198, égale à 2rp cos(A + B) : l'angle A + B est aigu, donc on retire."
+  ],
+  "a_voir": "La case orange est ce qui manque pour passer de 394 à 196."
+ },
+ {
+  "code": "34-057",
+  "a_dire": "r² = x² + h² demande un angle droit : sans angle droit (60° ici), le carré du troisième côté n'est plus 169.",
+  "legende_titre": "Pythagore ne marche que si l'angle est droit",
+  "lecture": [
+   "Le triangle bleu a un angle droit ; ses côtés 5 et 12 donnent r² = 169.",
+   "Le triangle violet a les mêmes côtés 5 et 12, mais avec un angle de 60°.",
+   "Son troisième côté mesure 10,44 et son carré vaut environ 109, pas 169 (en rouge)."
+  ],
+  "a_voir": "Mêmes côtés 5 et 12, mais le carré du troisième côté change quand l'angle n'est plus droit."
+ },
+ {
+  "code": "34-058",
+  "a_dire": "On retire x² et y² des deux côtés de l'égalité ; il reste 2xy = 2h² − 2rp cos(A + B), soit 90 de chaque côté.",
+  "legende_titre": "Retirer les carrés en trop des deux côtés",
+  "lecture": [
+   "La rangée du haut est le côté gauche : 25 + 90 + 81 = 196.",
+   "La rangée du bas est le côté droit, avec le morceau du milieu 288 − 198.",
+   "Les cases grises en pointillés, x² et y², sont retirées des deux côtés.",
+   "Les cases orange restent : 90 de chaque côté."
+  ],
+  "a_voir": "Après retrait des cases grises, les deux cases orange valent 90."
+ },
+ {
+  "code": "34-059",
+  "a_dire": "cos A cos B vient de h × h, sin A sin B vient de x × y, et le signe moins vient de QP − QH.",
+  "legende_titre": "D'où vient chaque morceau de la formule",
+  "lecture": [
+   "Le trait bleu est la hauteur h, lue dans les deux petits triangles.",
+   "Les deux traits orange sont les morceaux x et y de la base.",
+   "À droite, cos A cos B est relié à h × h, et sin A sin B à x × y.",
+   "Le signe moins est relié à la soustraction QP − QH, en vert."
+  ],
+  "a_voir": "Chaque morceau de la formule a sa couleur dans le triangle ou dans la case à droite."
+ },
+ {
+  "code": "34-060",
+  "a_dire": "Quand l'angle s'ouvre, H se rapproche de Q et QH raccourcit : le terme sin A sin B mesure ce qu'on retire.",
+  "legende_titre": "Le signe moins : QH raccourcit quand l'angle s'ouvre",
+  "lecture": [
+   "Les deux triangles ont le même côté oblique ; leur angle vaut 30° à gauche et 60° à droite.",
+   "Le trait orange sur la base est QH : 0,866 à gauche, 0,5 à droite.",
+   "La ligne verte dit : 0,75 moins 0,25 donne 0,5, le cosinus de 60°."
+  ],
+  "a_voir": "Le trait orange est plus court quand l'angle est plus ouvert."
+ },
+ {
+  "code": "34-061",
+  "a_dire": "On écrit A − B comme A + (−B), puis on applique la formule d'addition avec l'angle opposé −B.",
+  "legende_titre": "Une soustraction d'angles devient une addition",
+  "lecture": [
+   "La flèche bleue part de 0° et va à A = 45°.",
+   "La flèche orange revient de 45° vers 15° : c'est l'ajout de l'angle −B, soit −30°.",
+   "Le point vert est le résultat, 15°."
+  ],
+  "a_voir": "Reculer de 30° revient à ajouter l'angle −30°."
+ },
+ {
+  "code": "34-062",
+  "a_dire": "Les points aux angles B et −B sont symétriques par rapport à l'axe horizontal : même cosinus, sinus opposés.",
+  "legende_titre": "Deux angles opposés, un même déplacement horizontal",
+  "lecture": [
+   "Le point bleu est à l'angle 30° et le point violet à l'angle −30°.",
+   "Le trait vert sur l'axe est leur déplacement horizontal commun, 0,866.",
+   "Leurs hauteurs sont 0,5 et −0,5."
+  ],
+  "a_voir": "Les deux points sont au même endroit horizontalement et à des hauteurs opposées."
+ },
+ {
+  "code": "34-063",
+  "a_dire": "sin(A − B) se calcule en retirant cos A sin B de sin A cos B ; avec 45° et 30°, on trouve 0,2588, le sinus de 15°.",
+  "legende_titre": "Un produit moins l'autre donne le sinus de la différence",
+  "lecture": [
+   "La barre bleue est sin A cos B, soit 0,6124.",
+   "La barre orange est le produit retiré, cos A sin B, soit 0,3536.",
+   "La barre verte est ce qui reste, 0,2588, le sinus de 15°."
+  ],
+  "a_voir": "La barre verte est la barre bleue privée de la barre orange."
+ },
+ {
+  "code": "34-064",
+  "a_dire": "cos(A − B) = cos A cos B + sin A sin B ; quand A = B, la somme cos² A + sin² A vaut toujours 1.",
+  "legende_titre": "Ici les deux produits s'ajoutent",
+  "lecture": [
+   "En haut, la barre bleue (0,6124) et la barre orange (0,3536) s'ajoutent pour faire la barre verte, 0,9659, le cosinus de 15°.",
+   "En bas, avec A = B = 45°, les deux barres valent 0,5 chacune.",
+   "Mises bout à bout, elles font 1."
+  ],
+  "a_voir": "Les deux produits s'additionnent ; pour deux angles égaux, la somme fait 1."
+ }
+]

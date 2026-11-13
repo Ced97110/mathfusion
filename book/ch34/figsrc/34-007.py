@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 6, 86, 'longueurs : ça s’additionne', 'encre', 'm', ha='left', weight='bold')
+box(ax, 6, 73, 24, 8, 'sujet', label='3 m')
+box(ax, 30, 73, 32, 8, 'autre', label='4 m')
+text(ax, 65, 77, '= 7 m', 'resultat', 'm', ha='left')
+line(ax, [(4, 66), (36, 66)], 'fixe', dash=True); line(ax, [(52, 66), (84, 66)], 'fixe', dash=True)
+text(ax, 44, 66, 'mais', 'varie', 'l', weight='bold')
+text(ax, 6, 59, 'rapports : ça ne s’additionne pas', 'encre', 'm', ha='left', weight='bold')
+def row(y, n, ok, name, lab, role, size='s', weight='normal'):
+    text(ax, 22, y + 3.5, name, 'encre', 's', ha='right')
+    for i in range(n):
+        box(ax, 24 + 8*i, y, 7, 7, role if i < ok else 'fixe')
+    text(ax, 24 + 8*n + 1, y + 3.5, lab, role, size, ha='left', weight=weight)
+row(48, 2, 1, 'test 1', '1 sur 2', 'sujet')
+row(38, 3, 1, 'test 2', '1 sur 3', 'autre')
+row(26, 5, 2, 'ensemble', '2 sur 5', 'resultat', 'm', 'bold')
+text(ax, 44, 15, r'$\frac{2}{5}=0{,}4$', 'resultat', 'xl', weight='bold')
+text(ax, 44, 5, r'$\frac{1}{2}+\frac{1}{3}\approx 0{,}83\neq 0{,}4$', 'limite', 'm')
+save(fig, '34-007')

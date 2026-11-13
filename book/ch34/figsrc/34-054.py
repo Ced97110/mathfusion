@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 56, r'$\cos^{-1}\,0{,}5$', 'sujet', 'l'); text(ax, 66, 56, r'$1\,/\,\cos 60°$', 'autre', 'l')
+box(ax, 5, 28, 14, 9, 'fixe', label='0,5', size='m'); box(ax, 28, 28, 14, 9, 'sujet', label='60°', size='m')
+arrow(ax, (19.5, 32.5), (27.5, 32.5), 'sujet')
+text(ax, 12, 40, 'nombre', 'fixe', 's'); text(ax, 35, 40, 'angle', 'sujet', 's')
+box(ax, 48, 28, 14, 9, 'fixe', label='60°', size='m'); box(ax, 72, 28, 14, 9, 'autre', label='2', size='m')
+arrow(ax, (62.5, 32.5), (71.5, 32.5), 'autre')
+text(ax, 55, 40, 'angle', 'fixe', 's'); text(ax, 79, 40, 'nombre', 'autre', 's')
+text(ax, 22, 16, 'arccos 0,5', 'sujet', 'm'); text(ax, 66, 16, '1 ÷ 0,5', 'autre', 'm')
+text(ax, 44, 5, 'deux calculs différents', 'encre', 's')
+save(fig, '34-054')

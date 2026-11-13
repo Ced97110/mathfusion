@@ -1,0 +1,180 @@
+[
+ {
+  "code": "34-001",
+  "a_dire": "Additionner sin 30° et sin 45° donne 1,2071, alors que sin 75° vaut environ 0,9659 : la règle de l'addition des sinus est fausse.",
+  "legende_titre": "Deux calculs pour le même angle de 75°",
+  "lecture": [
+   "La barre bleue vaut 0,5 et la barre violette vaut 0,7071 : ce sont les deux sinus mis bout à bout.",
+   "L'accolade rouge donne leur somme, 1,2071.",
+   "La barre verte vaut 0,9659 : c'est le sinus de 75° donné par la calculatrice.",
+   "Le trait pointillé marque la valeur 1."
+  ],
+  "a_voir": "La somme dépasse la valeur 1 et la barre verte, donc elle ne donne pas sin 75°."
+ },
+ {
+  "code": "34-002",
+  "a_dire": "Les angles s'additionnent (30° + 45° = 75°), mais une opération sur les angles ne se retrouve pas sur les résultats : pour les carrés, 900 + 2025 = 2925 et non 5625.",
+  "legende_titre": "Ce qui s'additionne, et ce qui ne suit pas",
+  "lecture": [
+   "En haut, la barre bleue (30°) et la barre violette (45°) ont la longueur de la barre verte (75°).",
+   "En bas, la barre bleue (900) et la barre violette (2025) font 2925, écrit en rouge.",
+   "La barre verte du bas vaut 5625, le carré de 75, et elle est plus longue que les deux barres réunies."
+  ],
+  "a_voir": "Pour les angles la somme tombe juste, pour les carrés elle ne tombe pas juste."
+ },
+ {
+  "code": "34-003",
+  "a_dire": "Un sinus est la hauteur d'un point du cercle de rayon 1, donc il ne dépasse jamais 1 ; 1,2071 ne peut pas être un sinus.",
+  "legende_titre": "Une hauteur limite pour tous les sinus",
+  "lecture": [
+   "Le disque bleu est le cercle de rayon 1 ; son trait bleu va du centre au point le plus haut.",
+   "Le trait vert à droite a la hauteur 1, celle du point le plus haut.",
+   "Le trait rouge au-dessus est la partie de 1,2071 qui dépasse 1."
+  ],
+  "a_voir": "Le nombre 1,2071 monte plus haut que le cercle."
+ },
+ {
+  "code": "34-004",
+  "a_dire": "Avec deux angles de 90°, l'addition des sinus donne 1 + 1 = 2 alors que sin 180° vaut 0 : un second cas où l'addition échoue.",
+  "legende_titre": "Deux angles droits et leur somme",
+  "lecture": [
+   "L'arc bleu est le demi-cercle de rayon 1 ; le trait bleu vertical monte à la hauteur 1, c'est sin 90°.",
+   "Le point à gauche est à 180°, sur la ligne horizontale, à la hauteur 0.",
+   "À droite, la barre rouge mesure 1 + 1 = 2 ; le point vert à la base vaut 0, la vraie valeur."
+  ],
+  "a_voir": "La somme 2 est très loin de la vraie valeur 0."
+ },
+ {
+  "code": "34-005",
+  "a_dire": "L'addition simple des carrés échoue (2925 au lieu de 5625), mais le carré de 75 s'obtient par une autre règle : 900 + 2 × 30 × 45 + 2025 = 5625. Une règle peut exister même si l'addition simple échoue.",
+  "legende_titre": "Pas de règle simple, mais une règle",
+  "lecture": [
+   "La barre verte du haut vaut 5625, le carré de 75.",
+   "Au milieu, les barres bleue (900) et violette (2025) ne l'atteignent pas : leur somme est 2925, en rouge.",
+   "En bas, la barre orange 2 × 30 × 45 s'ajoute et la barre complète atteint 5625."
+  ],
+  "a_voir": "La barre du bas, avec le terme orange en plus, a la même longueur que la barre verte du haut."
+ },
+ {
+  "code": "34-006",
+  "a_dire": "Relever l'échelle de 45° ajoute 0,7071 depuis le sol mais seulement 0,4659 depuis 30° : la deuxième rotation part de la position atteinte, donc le sinus de 45° ne s'ajoute pas tel quel.",
+  "legende_titre": "Même rotation, deux gains de hauteur différents",
+  "lecture": [
+   "La barre grise à 30° est l'échelle de départ, de 1 m ; la barre bleue à 75° est l'échelle relevée.",
+   "La ligne violette en tirets est une échelle qui part du sol et monte de 45°.",
+   "Le trait violet à droite mesure 0,7071 depuis le sol ; le trait orange mesure 0,4659 depuis 30°, de 0,5 à 0,9659."
+  ],
+  "a_voir": "Le trait orange est plus court que le trait violet pour la même rotation de 45°."
+ },
+ {
+  "code": "34-007",
+  "a_dire": "Les longueurs s'additionnent (3 + 4 = 7), mais les rapports ne s'additionnent pas : 1/2 + 1/3 ≈ 0,83 alors que 2 sur 5 vaut 0,4. Le sinus est un rapport.",
+  "legende_titre": "Longueurs qui s'additionnent, rapports qui ne suivent pas",
+  "lecture": [
+   "En haut, la planche bleue de 3 m et la planche violette de 4 m mises bout à bout font 7 m : les longueurs s'additionnent.",
+   "Sous le mot « mais », les trois rangées de cases montrent les rapports : les cases colorées sont les questions réussies, 1 sur 2, 1 sur 3, puis 2 sur 5 pour l'ensemble.",
+   "La ligne rouge en bas montre que 1/2 + 1/3 vaut environ 0,83 et n'est pas 0,4."
+  ],
+  "a_voir": "Pour l'ensemble, le rapport est 0,4, pas la somme des deux rapports."
+ },
+ {
+  "code": "34-008",
+  "a_dire": "Le problème donne quatre nombres (sin A, cos A, sin B, cos B) et demande deux nombres (sin(A + B) et cos(A + B)), par des additions et des multiplications, sans mesurer d'angle.",
+  "legende_titre": "Quatre nombres connus, deux nombres cherchés",
+  "lecture": [
+   "À gauche, les boîtes bleues donnent le sinus et le cosinus de A ; les boîtes violettes donnent ceux de B.",
+   "La boîte orange au milieu est le calcul : additions et multiplications.",
+   "À droite, les boîtes vertes en tirets sont les deux nombres cherchés."
+  ],
+  "a_voir": "Les quatre nombres entrent dans le calcul et deux nombres en sortent."
+ },
+ {
+  "code": "34-009",
+  "a_dire": "Un angle composé est obtenu en additionnant ou en retranchant deux angles : 45° + 30° = 75° et 45° − 30° = 15°.",
+  "legende_titre": "Deux angles qui en font un troisième",
+  "lecture": [
+   "À gauche, le secteur bleu (45°) et le secteur orange (30°) se suivent et font 75°.",
+   "À droite, le secteur orange (30°) est retiré de l'angle de 45° : il reste le secteur vert de 15°."
+  ],
+  "a_voir": "Le même couple 45° et 30° donne 75° en additionnant et 15° en retranchant."
+ },
+ {
+  "code": "34-010",
+  "a_dire": "Les formules d'addition portent sur deux angles différents A et B et donnent le sinus de A + B ; la relation du chapitre 31 porte sur un seul angle, et l'angle double est le cas A = B.",
+  "legende_titre": "Trois familles de formules à distinguer",
+  "lecture": [
+   "Le secteur gris de gauche est un seul angle, avec sa relation sin² + cos² = 1.",
+   "Le panneau encadré en bleu montre deux angles de tailles différentes, bleu et orange : ce sont les formules d'addition.",
+   "Le secteur de droite montre deux angles égaux : c'est le cas de l'angle double."
+  ],
+  "a_voir": "Les formules d'addition sont celles du milieu, avec deux angles."
+ },
+ {
+  "code": "34-011",
+  "a_dire": "Les angles doubles, les demi-angles et les angles triples découlent des formules d'addition : 30° + 30° = 60°, 60° ÷ 2 = 30°, 3 × 30° = 90°.",
+  "legende_titre": "Une seule famille de formules, trois usages",
+  "lecture": [
+   "La boîte bleue du haut est la source des trois flèches.",
+   "Le premier secteur met deux angles de 30° bout à bout pour faire 60° : le double.",
+   "Le secteur vert est un angle de 60° coupé en deux par le tiret : le demi-angle de 30°.",
+   "Le dernier secteur met trois angles de 30° pour faire 90° : le triple."
+  ],
+  "a_voir": "Les trois cas viennent de la même source, les formules d'addition."
+ },
+ {
+  "code": "34-012",
+  "a_dire": "La figure de Neill place deux triangles rectangles côte à côte autour de Q, le long du côté commun de longueur 12 : l'angle en Q vaut A + B et la base vaut 5 + 9 = 14.",
+  "legende_titre": "Deux triangles collés le long d'un côté",
+  "lecture": [
+   "Le triangle bleu a les côtés 5, 12 et 13 ; le triangle orange a les côtés 9, 12 et 15.",
+   "Le trait noir vertical de longueur 12 appartient aux deux triangles.",
+   "Les angles A (bleu) et B (orange) sont côte à côte en Q, sans trou.",
+   "L'accolade donne la base totale : 14."
+  ],
+  "a_voir": "Les deux triangles se touchent seulement par le côté commun de 12."
+ },
+ {
+  "code": "34-013",
+  "a_dire": "Le signe h est le nom de la longueur du segment vertical QN, la même pour les deux triangles ; dans le cas chiffré, h vaut 12.",
+  "legende_titre": "Un nom pour le segment vertical",
+  "lecture": [
+   "Le trait bleu épais est le segment QN.",
+   "La lettre h est écrite de chaque côté de ce trait : c'est le même nombre pour les deux triangles gris.",
+   "La formule en haut dit que h est la longueur de QN et vaut 12."
+  ],
+  "a_voir": "Une seule lettre h désigne le segment commun."
+ },
+ {
+  "code": "34-014",
+  "a_dire": "Le nom PNQ désigne le triangle bleu, ce qui évite de confondre ses côtés (5, 12, 13) avec ceux de l'autre triangle (9, 12, 15).",
+  "legende_titre": "Nommer un triangle pour le distinguer",
+  "lecture": [
+   "Le triangle bleu a les sommets P, N et Q ; la boîte bleue le nomme.",
+   "Ses nombres 5 et 13 sont écrits en bleu.",
+   "L'autre triangle est gris, avec ses propres nombres 9 et 15."
+  ],
+  "a_voir": "Le nom indique de quel triangle on parle quand deux côtés horizontaux existent."
+ },
+ {
+  "code": "34-015",
+  "a_dire": "Le signe A désigne l'angle en Q du triangle bleu, sans donner sa mesure ; son sinus est 5 sur 13.",
+  "legende_titre": "Un nom pour l'angle en Q",
+  "lecture": [
+   "Le triangle bleu a les côtés 5, 12 et 13.",
+   "L'arc orange est tracé au sommet Q et porte la lettre A.",
+   "Le texte vert donne le sinus de A : 5 sur 13."
+  ],
+  "a_voir": "La lettre A remplace la phrase « l'angle en Q » sans donner de mesure en degrés."
+ },
+ {
+  "code": "34-016",
+  "a_dire": "Le signe r est le nom de la longueur du segment QP, hypoténuse du triangle bleu, en face de l'angle droit ; ici r vaut 13.",
+  "legende_titre": "Un nom pour le côté en face de l'angle droit",
+  "lecture": [
+   "Le petit carré en N marque l'angle droit.",
+   "Le trait bleu épais est le segment QP, en face de cet angle ; la lettre r le nomme.",
+   "Le texte donne sa longueur : 13."
+  ],
+  "a_voir": "Le côté nommé r est celui qui ne touche pas l'angle droit."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+f = numberline(ax, 12, 76, 44, -4, 4, step=1, every=2, arrow_right=False, size='s')
+poly(ax, [(f(0), 44), (f(4), 44), (f(4), 56), (f(0), 56)], 'resultat')
+text(ax, f(2), 53.5, 'positifs', 'resultat', 's')
+disc(ax, f(-3), 44, 1.7, 'autre'); disc(ax, f(3), 44, 1.7, 'sujet')
+text(ax, f(-3), 49, r'$-3$', 'autre', 's'); text(ax, f(3), 49, r'$3$', 'sujet', 's')
+arrow(ax, (f(-3), 41.5), (38, 22), 'varie'); arrow(ax, (f(3), 41.5), (50, 22), 'varie')
+text(ax, 12, 31, 'au carré', 'varie', 's', ha='left')
+box(ax, 34, 8, 20, 13, 'fixe', label=r'$9$', size='l')
+text(ax, 44, 3, 'même carré, pas égaux', 'encre', 's')
+save(fig, '34-135')
