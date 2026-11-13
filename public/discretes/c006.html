@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 6</div>
-<h1>Les fonctions</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 6</div>
+<h1 class="ct">Les fonctions</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Ce chapitre relie deux ensembles du chapitre 5 : à chaque élément du premier, on associe un élément du second. Cette association s’appelle une fonction.</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 6 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <p>Quatre élèves, numérotés 1, 2, 3 et 4, arrivent dans une école. L’école a quatre casiers, nommés <span class="m">𝑎</span>, <span class="m">𝑏</span>, <span class="m">𝑐</span> et <span class="m">𝑑</span>. Le secrétariat doit donner un casier à chaque élève. Trois secrétaires proposent chacun un plan.</p>
 <p class="li">Plan <span class="m">𝑓</span> : 1 prend <span class="m">𝑑</span>, 2 prend <span class="m">𝑎</span>, 3 prend <span class="m">𝑐</span>, 4 prend <span class="m">𝑏</span>.</p>
 <p class="li">Plan <span class="m">𝑔</span> : 1 prend <span class="m">𝑑</span>, 2 prend <span class="m">𝑎</span>, 3 prend <span class="m">𝑎</span>, 4 prend <span class="m">𝑏</span>.</p>
@@ -12,14 +18,16 @@
 <p>3. Dans quels plans deux élèves partagentils un casier ? Dans <span class="m">𝑔</span>, les élèves 2 et 3 ont tous deux le casier <span class="m">𝑎</span>.</p>
 <p>4. Le gardien ouvre le casier <span class="m">𝑎</span>. Quels élèves peut-il y trouver ? Avec <span class="m">𝑓</span>, l’élève 2 seul. Avec <span class="m">𝑔</span>, les élèves 2 et 3. Avec <span class="m">𝑔</span> et le casier <span class="m">𝑐</span>, personne.</p>
 <p>Ces questions reviennent partout en mathématiques. Pour les poser sans ambiguïté, il faut quatre notions : la <i>fonction</i> (question 1), la <i>surjection</i> (question 2), l’<i>injection</i> (question 3) et l’<i>image réciproque</i> (question 4). Ce chapitre les construit dans cet ordre.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 6 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <p>Regarde la figure 6.1. Chaque plan est dessiné en <i>diagramme de flèches</i>. En haut, les élèves : c’est l’ensemble <span class="m">𝑋 = {1, 2, 3, 4}</span>. En bas, les casiers : c’est l’ensemble <span class="m">𝑌 =</span> <span class="m">{𝑎, 𝑏, 𝑐, 𝑑}</span>. Une flèche part d’un élève et arrive sur le casier qu’il reçoit.</p>
 <img class="vf" src="/discretes/img/c006/p0178_1.svg" alt="f : X → Y g : X → Y h : X → Y" style="--w:24.12" loading="lazy">
 <img class="vf" src="/discretes/img/c006/p0178_2.svg" alt="1 2 3 4 1 2 3 4 1 2 3 4 aucune flèche a b c d a b c d a b c d" style="--w:24.12" loading="lazy">
 <p><b>Fig.</b> <i><b>6.1 :</b> Regarde le nombre de flèches qui</i> partent <i>de chaque nombre du haut : exactement une pour</i> <span class="m">𝑓</span> <i>et pour</i> <span class="m">𝑔</span><i>, mais zéro pour 1 et deux pour 2 dans</i> <span class="m">ℎ</span> <i>(en rouge). Regarde ensuite le bas de</i> <span class="m">𝑔</span> <i>: deux flèches orange arrivent sur</i> <span class="m">𝑎</span><i>, et aucune n’arrive sur</i> <span class="m">𝑐</span> <i>(en gris).</i></p>
 <p>Compte les flèches. <b>En haut</b>, dans <span class="m">𝑓</span> et <span class="m">𝑔</span>, chaque élève est le départ d’une seule flèche ; dans <span class="m">ℎ</span>, l’élève 1 n’en a aucune et l’élève 2 en a deux. C’est ce défaut qui rend <span class="m">ℎ</span> inutilisable. <b>En bas</b>, dans <span class="m">𝑓</span>, chaque casier reçoit une flèche ; dans <span class="m">𝑔</span>, le casier <span class="m">𝑎</span> en reçoit deux et le casier <span class="m">𝑐</span> aucune.</p>
 <p>Retiens la différence. La condition sur le <i>haut</i> (exactement une flèche part de chaque élément) fait qu’un plan est une fonction. Les comptes sur le <i>bas</i> ne sont pas obligatoires : ils distinguent des sortes de fonctions. La suite du chapitre nomme ces comptes de flèches.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 6 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <h3>Fonction</h3>
 <img class="vm" src="/discretes/img/c006/p0179_3.svg" alt="Définition : fonction Une fonction (ou application) 𝑓 d’un ensemble 𝑋 vers un ensemble 𝑌 est une règle qui associe à chaque élément de 𝑋 exactement un élément de 𝑌. On écrit 𝑓 ∶ 𝑋 → 𝑌. • 𝑋 est l’ensemble de départ : l’ensemble des entrées. • 𝑌 est l’ensemble d’arrivée : l’ensemble des sorties permises. • L’élément de 𝑌 associé à l’entrée 𝑥 se note 𝑓(𝑥). On l’appelle l’image de 𝑥 par 𝑓. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c006/p0179_4.svg" alt="𝑓 Le nom de la fonction. Dans la figure 6.1, 𝑓 est le premier plan. 𝑓 ∶ 𝑋 → Se lit « 𝑓 va de 𝑋 dans 𝑌 ». Exemple : 𝑌 𝑓 ∶ {1, 2, 3, 4} → {𝑎, 𝑏, 𝑐, 𝑑}. Cette écriture donne le nom et les deux ensembles, pas encore la règle. 𝑓(𝑥) Se lit « 𝑓 de 𝑥 ». C’est la sortie de 𝑓 quand l’entrée vaut 𝑥. Exemple : 𝑓(2) = 𝑎, car la flèche partie de 2 arrive sur 𝑎. Les parenthèses ne sont pas une multiplication. image de Autre nom de 𝑓(𝑥). Exemple :" style="--w:24.25" loading="lazy">
@@ -56,7 +64,8 @@
 <p>élément de <span class="m">𝑋</span> dont l’image est <span class="m">𝑦</span>. Ce sont les trois inégalités de la conclusion. Vérifie sur <span class="m">𝑔</span> : <span class="m">|𝑔</span><sup>−1</sup><span class="m">(𝑎)| = 2</span>, donc <span class="m">𝑔</span> n’est pas injective ; <span class="m">|𝑔</span><sup>−1</sup><span class="m">(𝑐)| = 0</span>, donc <span class="m">𝑔</span> n’est pas surjective.</p>
 <img class="vm" src="/discretes/img/c006/p0186_20.svg" alt="Ton objection Tu vas me dire : « Si 𝑓−1 s’écrit avec un −1, c’est la fonction réciproque, celle qui annule 𝑓. » Non. 𝑓−1(𝑦) est un ensemble, défini pour toute fonction. Il peut être vide (𝑔−1(𝑐) = ∅) ou avoir plusieurs éléments (𝑔−1(𝑎) = {2, 3}). Une fonction réciproque devrait donner exactement un élément de 𝑋 pour chaque 𝑦 : d’après la règle précédente, elle n’existe que si 𝑓 est bijective. Pour 𝑔, il n’y a pas de fonction réciproque, mais 𝑔−1(𝑎) a un sens." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c006/p0186_21.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 6 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Trois fonctions, et deux règles qui n’en sont pas</h3>
 <p>Voici trois fonctions.</p>
 <p>1. <span class="m">𝑓 ∶ ℤ → ℤ</span> définie par <span class="m">𝑓(𝑛) = 3𝑛</span>, c’est-à-dire <span class="m">3×𝑛</span>. Départ et arrivée sont tous deux <span class="m">ℤ</span>. Mais l’image est seulement l’ensemble des multiples de 3 : <span class="m">{… , −6, −3, 0, 3, 6, … }</span>.</p>
@@ -180,11 +189,14 @@
 <p class="li"><i>Fonction</i> <span class="m">𝑓 ∶ 𝑋 → 𝑌</span> : chaque entrée de <span class="m">𝑋</span> reçoit exactement une sortie <span class="m">𝑓(𝑥)</span> dans <span class="m">𝑌</span>, appelée <i>image</i> de <span class="m">𝑥</span>. L’<i>image</i> de <span class="m">𝑓</span> est l’ensemble des sorties.</p>
 <p class="li"><i>Injective</i>, <i>surjective</i>, <i>bijective</i> : chaque élément de <span class="m">𝑌</span> est l’image d’au plus un, d’au moins un, d’exactement un élément de <span class="m">𝑋</span>.</p>
 <p class="li"><span class="m">𝑓(𝐴) = {𝑓(𝑎) ∶ 𝑎 ∈ 𝐴}</span> et <span class="m">𝑓</span><sup>−1</sup><span class="m">(𝐵) = {𝑥 ∈</span> <span class="m">𝑋 ∶ 𝑓(𝑥) ∈ 𝐵}</span> ; <span class="m">𝑓</span><sup>−1</sup><span class="m">(𝑦)</span> est l’ensemble des entrées de sortie <span class="m">𝑦</span>.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 6 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p class="li"><b>Dénombrement.</b> Pour montrer que deux ensembles ont le même cardinal, il suffit de construire une bijection entre eux : c’est la règle des flèches. Au chapitre 8, une bijection entre les sous-ensembles et les mots binaires permet de compter les uns par les autres.</p>
 <p class="li"><b>Compter des fonctions.</b> Combien y at-il de fonctions de <span class="m">{1, 2, 3}</span> dans <span class="m">{𝑎, 𝑏}</span> ? Le principe multiplicatif du chapitre 7 répond. Le nombre d’injections est un nombre d’arrangements (chapitre 9). Le nombre de surjections demande l’inclusion-exclusion du chapitre 12. Le chapitre 13 range tous ces comptes dans un tableau.</p>
 <p class="li"><b>Suites et récurrences.</b> Une suite est une fonction de départ <span class="m">ℕ</span> (chapitres 14 à 18).</p>
 <p class="li"><b>Graphes.</b> Deux graphes sont isomorphes quand une bijection entre leurs sommets respecte les arêtes (chapitre 21). Une coloration est une fonction des sommets vers les couleurs (chapitre 24). Un couplage parfait d’un graphe biparti est une bijection (chapitre 26).</p>
 <p>En arrière, <span class="m">𝑓(𝑋)</span> et <span class="m">𝑓</span><sup>−1</sup><span class="m">(𝐵)</span> sont des ensembles définis par compréhension (chapitre 5), et « au plus un », « au moins un » sont des énoncés quantifiés (chapitre 3).</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 6 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c006/p0206_58.svg" alt="À toi de chercher Prends un ensemble fini 𝑋 et une fonction 𝑓 ∶ 𝑋 → 𝑋, de 𝑋 dans lui-même. La règle des flèches donne alors ceci : si 𝑓 est injective, elle est automatiquement surjective, et inversement. Vérifie-le sur quelques petits exemples avec 𝑋 = {1, 2, 3}. Prends maintenant 𝑋 = ℕ et 𝑓(𝑛) = 𝑛 + 1. Cette fonction est injective : deux entrées différentes donnent deux sorties différentes. Mais 0 n’est la sortie d’aucune entrée, donc elle n’est pas surjective. Quelle étape du raisonnement fini cesse de fonctionner quand 𝑋 est infini ? Peux- tu trouver, à l’inverse, une fonction de ℕ dans ℕ surjective mais pas injective ? Et que peut bien vouloir dire « deux ensembles infinis ont le même nombre d’éléments » ?" style="--w:24.19" loading="lazy">
+</div>
