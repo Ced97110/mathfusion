@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, a): return (c[0] + r * math.cos(math.radians(a)), c[1] + r * math.sin(math.radians(a)))
+def arc(ax, c, r, a0, a1, role='varie', lw=0.9, n=30):
+    line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw)
+def sq(ax, p, d1, d2, s=2.2, role='fixe'):
+    a = (p[0] + d1[0] * s, p[1] + d1[1] * s); b = (a[0] + d2[0] * s, a[1] + d2[1] * s); c = (p[0] + d2[0] * s, p[1] + d2[1] * s)
+    line(ax, [a, b, c], role, lw=0.7)
+fig, ax = canvas(72)
+G = 10; A = (12, G); H = (42, G); B = (42, G + 51.96)
+line(ax, [(4, G), (84, G)], 'fixe'); text(ax, 80, G - 4, 'sol', 'fixe', 's')
+line(ax, [A, B], 'sujet', lw=1.6)
+line(ax, [B, H], 'varie', dash=True)
+line(ax, [A, H], 'autre', lw=1.8)
+sq(ax, H, (-1, 0), (0, 1))
+arc(ax, A, 9, 0, 60, 'varie')
+text(ax, 23, G + 3.6, r'$\theta$', 'varie', 'm')
+text(ax, 22, 40, 'bâton 10 m', 'sujet', 's', rot=60)
+text(ax, 27, G - 4, 'projection 5 m', 'autre', 's')
+text(ax, 62, 37, 'à angle droit', 'varie', 's')
+text(ax, 68, 28, r'$\cos\theta=\frac{5}{10}=0{,}5$', 'encre', 'm')
+text(ax, 68, 17, r'$\theta=60°$', 'resultat', 'l', weight='bold')
+save(fig, '26-115')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 14, 50, 60, 9, 'fixe', label='écran : 60,0735…')
+arrow(ax, (44, 50), (44, 40), 'fixe'); text(ax, 56, 45, 'on écrit', 'fixe', 's')
+text(ax, 41, 33, '60,07', 'sujet', 'xl', ha='right', weight='bold')
+text(ax, 45, 33, '…', 'varie', 'xl', weight='bold')
+text(ax, 49, 33, '°', 'sujet', 'xl', ha='left', weight='bold')
+arrow(ax, (34, 28), (24, 20), 'sujet'); arrow(ax, (45, 28), (62, 20), 'varie')
+text(ax, 20, 15, 'chiffres écrits', 'sujet', 's'); text(ax, 62, 15, 'le nombre continue', 'varie', 's')
+box(ax, 8, 2, 72, 8, 'resultat', label='la suite utilise 60,0735…', size='m', weight='bold')
+line(ax, [(74, 54.5), (83, 54.5), (83, 6)], 'resultat', lw=1.4); arrow(ax, (83, 6), (80.2, 6), 'resultat', lw=1.4)
+text(ax, 86, 30, 'tous les chiffres', 'resultat', 's', rot=90)
+save(fig, '26-084')

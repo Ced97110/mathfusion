@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 6, 62, 36, 9, "varie", label="complementi", size="m")
+box(ax, 46, 62, 36, 9, "sujet", label="sinus", size="m")
+text(ax, 24, 57, "le complément", "varie", "s"); text(ax, 64, 57, "le sinus", "sujet", "s")
+arrow(ax, (24, 54), (28, 46), "fixe"); arrow(ax, (64, 54), (53, 46), "fixe")
+box(ax, 20, 36, 16, 9, "varie", label="co", size="m"); box(ax, 36, 36, 26, 9, "sujet", label="sinus", size="m")
+text(ax, 62, 40.5, "= cosinus", "resultat", "m", ha="left")
+text(ax, 44, 25, "40° + 50° = 90°", "fixe", "m")
+box(ax, 4, 5, 80, 11, "resultat", label="cos 40° = sin 50° ≈ 0,7660", size="m")
+save(fig, "26-030")
