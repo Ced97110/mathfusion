@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(62)
+box(ax, 20, 48, 48, 12, 'sujet', label=r'$\sqrt{-121}$ dans la formule')
+box(ax, 2, 28, 38, 12, 'limite', label='refuser la formule')
+box(ax, 48, 28, 38, 12, 'resultat', label='calculer avec lui')
+arrow(ax, (34, 48), (21, 40), 'limite')
+arrow(ax, (54, 48), (67, 40), 'resultat')
+fl = numberline(ax, 6, 36, 16, 0, 6, step=1, every=2, arrow_right=False)
+fr = numberline(ax, 50, 80, 16, 0, 6, step=1, every=2, arrow_right=False)
+arrow(ax, (10, 28), (10, 20), 'limite')
+arrow(ax, (54, 28), (54, 20), 'resultat')
+text(ax, 21, 6, 'aucune solution trouvée', 'limite', 's')
+disc(ax, fr(4), 16, 1.4, 'resultat')
+text(ax, fr(4), 22, r'$x=4$', 'resultat')
+save(fig, '39-007')

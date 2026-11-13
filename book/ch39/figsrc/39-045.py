@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 10, 80, 50, 'sujet')
+text(ax, 14, 52, 'ℂ', 'sujet', 'xl', weight='bold')
+text(ax, 58, 52, r'tous les $a + b\,i$', 'sujet', 's')
+disc(ax, 24, 34, 1.6, 'sujet')
+text(ax, 28, 34, r'$2 + 3\,i$', 'sujet', 's', ha='left')
+disc(ax, 54, 22, 1.6, 'sujet')
+text(ax, 58, 22, r'$z$', 'sujet', 'm', ha='left')
+text(ax, 44, 4, r'$z \in$ ℂ : $z$ appartient à ℂ', 'encre', 's')
+save(fig, '39-045')

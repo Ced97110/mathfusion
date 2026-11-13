@@ -1,0 +1,288 @@
+[
+ {
+  "code": "39-097",
+  "a_dire": "Les racines cubiques de 8 sont trois nombres : 2, −1 + √3 i et −1 − √3 i, tous à la distance 2 de l'origine.",
+  "legende_titre": "Trois nombres dont le cube vaut 8",
+  "lecture": [
+   "Le grand cercle gris a pour rayon 2 : c'est le module des racines.",
+   "Les trois points bleus sont z₀ = 2, z₁ et z₂ ; chacun est relié à l'origine par un trait pointillé.",
+   "Les arcs orange mesurent les angles 120° et 240° à partir de l'axe horizontal.",
+   "Les points z₁ et z₂ sont l'un au-dessus, l'autre au-dessous de l'axe horizontal, à la même place à gauche."
+  ],
+  "a_voir": "Il y a un point sur l'axe horizontal et deux points symétriques de part et d'autre de cet axe."
+ },
+ {
+  "code": "39-098",
+  "a_dire": "Les racines n-ièmes de l'unité sont les solutions de z^n = 1 ; pour n = 4 il y en a quatre : 1, i, −1 et −i, dont deux seulement sont réelles.",
+  "legende_titre": "Les solutions de z⁴ = 1",
+  "lecture": [
+   "Le cercle bleu est formé des points à la distance 1 de l'origine.",
+   "Les quatre points bleus sont les solutions : 1, i, −1 et −i.",
+   "Les points 1 et −1 sont sur l'axe horizontal : ce sont les solutions réelles.",
+   "Les points i et −i sont hors de cet axe : ils demandent les nombres complexes."
+  ],
+  "a_voir": "Les quatre solutions sont toutes sur le cercle de rayon 1, mais deux seulement sont sur l'axe horizontal."
+ },
+ {
+  "code": "39-099",
+  "a_dire": "La racine numéro k est cis(k × 360°/n) : pour chaque n, les racines sont espacées de 360°/n sur le cercle de rayon 1.",
+  "legende_titre": "Le même écart d'angle, quel que soit n",
+  "lecture": [
+   "Chaque cercle gris a pour rayon 1 ; les points bleus et orange sont les racines.",
+   "Pour n = 3, 4 et 6, les points sont régulièrement répartis : l'écart est 120°, 90° puis 60°.",
+   "Le point orange est la racine k = 1 ; l'arc orange mesure l'écart depuis le point d'angle 0°.",
+   "La formule en haut donne ces trois cas avec le même modèle."
+  ],
+  "a_voir": "L'écart d'angle entre deux racines voisines est toujours 360° divisé par n."
+ },
+ {
+  "code": "39-100",
+  "a_dire": "La lettre ω remplace le nombre cis(360°/n) ; pour n = 6, ω = cis 60°, et six pas de 60° ramènent à 1.",
+  "legende_titre": "Un nom court pour le premier pas",
+  "lecture": [
+   "La case grise contient le nombre cis(360°/n) ; la flèche orange montre qu'on lui donne un nom, ω.",
+   "Sur le cercle, le point 1 et le point ω sont bleus ; l'arc orange entre eux mesure 60°.",
+   "À droite, en vert : ω⁶ = 1, car six pas de 60° font un tour."
+  ],
+  "a_voir": "ω est le point à 60° de 1 ; six pas de cette taille ramènent au point de départ."
+ },
+ {
+  "code": "39-101",
+  "a_dire": "Chaque racine s'obtient en multipliant la précédente par ω ; pour n = 4, ce sont 1, i, −1 et −i, c'est-à-dire les puissances de ω.",
+  "legende_titre": "Chaque racine est la précédente fois ω",
+  "lecture": [
+   "Les quatre points bleus sont 1, ω = i, ω² = −1 et ω³ = −i.",
+   "Chaque flèche orange va d'une racine à la suivante et porte « × ω ».",
+   "La flèche grise ramène de ω³ à 1 : on repart du début."
+  ],
+  "a_voir": "Une seule multiplication par ω fait passer d'une racine à la suivante, donc ω suffit à les produire toutes."
+ },
+ {
+  "code": "39-102",
+  "a_dire": "Pour n = 6, ω = cis 60° = 1/2 + (√3/2) i, et ses puissances sont les six sommets d'un hexagone.",
+  "legende_titre": "Six racines, six sommets",
+  "lecture": [
+   "Les six points bleus sont 1, ω, ω², ω³, ω⁴ et ω⁵ ; ils sont sur le cercle de rayon 1.",
+   "En les reliant, on obtient l'hexagone bleu.",
+   "Le trait orange pointillé donne les deux nombres de ω : 1/2 vers la droite, √3/2 vers le haut.",
+   "L'arc orange mesure 60°, l'angle de ω."
+  ],
+  "a_voir": "Les six racines forment un hexagone dont un sommet est le point 1."
+ },
+ {
+  "code": "39-103",
+  "a_dire": "Le produit de deux racines de l'unité est encore une racine de l'unité, parce que leur puissance n vaut 1 ; avec z² = 2 le produit sort de l'ensemble.",
+  "legende_titre": "Le produit reste dans l'ensemble, ou sort",
+  "lecture": [
+   "À gauche, le cercle montre les quatre solutions de z⁴ = 1 : i et −1 sont orange, leur produit −i est vert.",
+   "Le produit −i est une des quatre solutions : il reste dans l'ensemble.",
+   "À droite, les solutions de z² = 2 sont −√2 et √2, en bleu sur une droite.",
+   "Le produit √2 × √2 = 2 est en rouge : 2² = 4 n'est pas 2, donc il sort de l'ensemble."
+  ],
+  "a_voir": "Avec z⁴ = 1 le produit reste dans l'ensemble ; avec z² = 2 il en sort."
+ },
+ {
+  "code": "39-104",
+  "a_dire": "Le groupe des racines 6-ièmes est cyclique : toutes ses six valeurs sont les puissances de ω, et ω⁶ = 1 ramène au départ.",
+  "legende_titre": "Un seul nombre produit tout le groupe",
+  "lecture": [
+   "Les six points bleus sont 1, ω, ω², ω³, ω⁴, ω⁵ sur le cercle.",
+   "Les flèches orange suivent le cercle : chaque flèche multiplie par ω.",
+   "La flèche verte ferme le tour : ω⁶ = 1 ramène à 1.",
+   "Au centre : le groupe a 6 éléments."
+  ],
+  "a_voir": "En multipliant sans cesse par ω, on parcourt les six éléments puis on revient au départ."
+ },
+ {
+  "code": "39-105",
+  "a_dire": "Le cercle unité 𝕋 est l'ensemble des complexes de module 1 ; le produit de deux d'entre eux a pour module 1 × 1 = 1 et reste dans 𝕋.",
+  "legende_titre": "Les complexes à la distance 1 de l'origine",
+  "lecture": [
+   "Le grand cadre gris représente tous les complexes non nuls.",
+   "Le cercle bleu épais est 𝕋 : les nombres de module 1.",
+   "Les deux points bleus, 3/5 + 4/5 i et cis 60°, sont sur ce cercle.",
+   "Le texte vert rappelle que 1 × 1 = 1 : le produit reste sur le cercle."
+  ],
+  "a_voir": "𝕋 est un petit cercle à l'intérieur de l'ensemble des complexes non nuls."
+ },
+ {
+  "code": "39-106",
+  "a_dire": "Le signe 𝕋 se lit « grand T à double barre » et désigne l'ensemble des complexes de module 1 ; z ∈ 𝕋 veut dire |z| = 1.",
+  "legende_titre": "Un signe pour un ensemble de nombres",
+  "lecture": [
+   "À gauche, le grand signe bleu 𝕋 avec sa lecture en gris.",
+   "La flèche orange le relie au cercle bleu à droite.",
+   "Les points 1, ω et cis θ sont sur ce cercle : ils sont dans 𝕋.",
+   "La ligne verte dit : z ∈ 𝕋 veut dire |z| = 1."
+  ],
+  "a_voir": "Le signe 𝕋 désigne tout le cercle, pas un seul de ses points."
+ },
+ {
+  "code": "39-107",
+  "a_dire": "Les racines n-ièmes de l'unité sont des points du cercle 𝕋 en nombre fini ; leur produit reste parmi elles : c'est un sous-groupe fini de 𝕋.",
+  "legende_titre": "Quatre points du cercle, un ensemble fini",
+  "lecture": [
+   "Le cercle gris épais est 𝕋 en entier.",
+   "Les quatre points bleus 1, i, −1 et −i sont les racines 4-ièmes de 1.",
+   "Le carré bleu relie ces quatre points : ils sont seuls, le reste du cercle n'est pas pris.",
+   "Le texte vert en haut rappelle que u⁴ = 1 donne |u| = 1 : les racines sont sur le cercle."
+  ],
+  "a_voir": "Les racines sont quelques points du cercle, pas le cercle entier."
+ },
+ {
+  "code": "39-108",
+  "a_dire": "Une racine primitive est une racine dont les puissances donnent toutes les racines : cis 45° donne les 8 racines, cis 90° n'en donne que 4.",
+  "legende_titre": "Les puissances donnent tout, ou une partie",
+  "lecture": [
+   "Chaque cercle porte les huit racines 8-ièmes de 1 : les petits points gris sont ceux qui ne sont pas atteints.",
+   "À gauche, les puissances de cis 45° passent par les huit points bleus : tout le groupe.",
+   "À droite, les puissances de cis 90° passent par quatre points violets seulement.",
+   "Le premier nombre est une racine primitive, le second ne l'est pas."
+  ],
+  "a_voir": "Le polygone bleu touche les 8 points, le carré violet n'en touche que 4."
+ },
+ {
+  "code": "39-109",
+  "a_dire": "Avec r = 40 km et θ = 30°, l'avion est à x = 20√3 ≈ 34,64 km vers l'est et y = 20 km vers le nord ; le contrôle par Pythagore retrouve 40.",
+  "legende_titre": "De la distance et de l'angle aux deux positions",
+  "lecture": [
+   "Le trait bleu épais est la distance de 40 km entre le radar et l'avion.",
+   "Le trait orange horizontal est x vers l'est ; le trait orange vertical est y vers le nord.",
+   "L'arc orange mesure 30°, l'angle donné par le radar.",
+   "La ligne verte contrôle : 1 200 + 400 = 1 600, c'est 40²."
+  ],
+  "a_voir": "Les deux traits orange et le trait bleu forment un triangle dont les côtés vérifient le contrôle."
+ },
+ {
+  "code": "39-110",
+  "a_dire": "Le bateau en (−4, 4) est à r = 4√2 ≈ 5,66 km du phare, dans la direction 135° ; l'arctangente seule donne −45°, qui désigne un autre point.",
+  "legende_titre": "Le bon angle pour le point (−4, 4)",
+  "lecture": [
+   "Le trait bleu épais va du phare au bateau, en haut à gauche ; sa longueur est r = 4√2 ≈ 5,66 km.",
+   "L'arc orange mesure 135° depuis l'axe horizontal vers la droite.",
+   "Le trait rouge en tirets suit l'angle −45° : il mène au point (4, −4), qui est faux.",
+   "Le bateau et le mauvais point sont opposés par rapport au phare."
+  ],
+  "a_voir": "L'angle −45° mène vers le bas à droite, pas vers le bateau ; le bon angle est 135°."
+ },
+ {
+  "code": "39-111",
+  "a_dire": "Le produit (√3 + i)(1 + i) donne le même point par la forme algébrique et par la forme polaire : modules multipliés, angles ajoutés.",
+  "legende_titre": "Deux chemins vers le même produit",
+  "lecture": [
+   "Le trait bleu est z = √3 + i, d'angle 30° ; le trait violet est w = 1 + i, d'angle 45°.",
+   "Le trait vert est le produit zw, d'angle 75°, plus long que les deux autres.",
+   "La case orange (forme algébrique) et la case violette (forme polaire) pointent chacune vers ce même point.",
+   "Les modules se multiplient, 2 × √2, et les angles s'ajoutent, 30° + 45°."
+  ],
+  "a_voir": "Les deux flèches arrivent au même point vert."
+ },
+ {
+  "code": "39-112",
+  "a_dire": "En égalant les deux écritures de la partie réelle du produit, on trouve cos 75° = (√6 − √2)/4 ; 0,2588 n'est qu'un contrôle arrondi.",
+  "legende_titre": "La partie réelle donne le cosinus de 75°",
+  "lecture": [
+   "Le trait vert part de l'origine, de longueur 2√2, avec l'angle 75°.",
+   "Le segment bleu épais sur l'axe horizontal est sa partie réelle, marquée par l'accolade.",
+   "La case bleue écrit cette partie réelle de deux façons : 2√2 cos 75° = √3 − 1.",
+   "Les deux flèches orange donnent les étapes jusqu'à la case verte, le résultat."
+  ],
+  "a_voir": "Une même longueur, la partie réelle, s'écrit de deux façons ; les égaler donne le cosinus."
+ },
+ {
+  "code": "39-113",
+  "a_dire": "(1 + i)¹⁰ = 32 i : on met le module à la puissance et on multiplie l'angle ; le contrôle (1 + i)² = 2i puis (2i)⁵ donne le même nombre.",
+  "legende_titre": "Une grande puissance en deux petits calculs",
+  "lecture": [
+   "La case bleue du haut est le nombre de départ, (1 + i)¹⁰.",
+   "À gauche, en orange, la voie polaire : module (√2)¹⁰ = 32, angle 450° soit 1 tour + 90°, donc 32 cis 90°.",
+   "À droite, en violet, la voie de contrôle : (1 + i)² = 2i, puis (2i)⁵ = 32 i⁵ = 32 i.",
+   "Les deux voies arrivent à la case verte, 32 i."
+  ],
+  "a_voir": "Deux voies différentes aboutissent au même résultat, 32 i."
+ },
+ {
+  "code": "39-114",
+  "a_dire": "(−3 + √7 i)⁶ a pour module 4⁶ = 4 096 et pour angle 111,54° après avoir retiré deux tours ; le résultat arrondi est −1 504,0 + 3 809,9 i.",
+  "legende_titre": "Une puissance avec des angles non remarquables",
+  "lecture": [
+   "Le trait bleu épais est le nombre de départ, d'angle 138,59° (arc bleu).",
+   "Les deux cercles orange sont les deux tours complets de 360° retirés de 831,54°.",
+   "Le trait vert en tirets donne l'angle final 111,54° ; seul l'angle est dessiné, pas la longueur 4 096.",
+   "Le texte du bas donne le résultat arrondi, qui n'est pas exact."
+  ],
+  "a_voir": "Six fois l'angle fait deux tours de trop ; on les retire pour trouver 111,54°."
+ },
+ {
+  "code": "39-115",
+  "a_dire": "De Moivre avec n = 2 donne cos 2θ = cos²θ − sin²θ et sin 2θ = 2 sin θ cos θ, en comparant la partie réelle et la partie imaginaire.",
+  "legende_titre": "De Moivre produit des formules",
+  "lecture": [
+   "Le trait bleu est cis θ avec θ = 30° ; le trait vert est cis 2θ, d'angle 60°.",
+   "En haut à droite, le carré de cos θ + i sin θ est égal à cos 2θ + i sin 2θ.",
+   "La case orange compare les parties réelles ; la case violette compare les parties imaginaires.",
+   "Dans chaque case, la ligne du bas vérifie la formule pour 30°."
+  ],
+  "a_voir": "Deux nombres complexes égaux ont la même partie réelle et la même partie imaginaire : cela donne deux formules."
+ },
+ {
+  "code": "39-116",
+  "a_dire": "Avec n = 3, la même méthode donne cos 3θ = cos³θ − 3 cos θ sin²θ et sin 3θ = 3 cos²θ sin θ − sin³θ ; pour 30° la première donne 0.",
+  "legende_titre": "La même méthode avec le cube",
+  "lecture": [
+   "Le trait bleu est cis θ avec θ = 30° ; le trait vert est cis 3θ, d'angle 90°, égal à i.",
+   "En haut à droite, le cube de cos θ + i sin θ est égal à cos 3θ + i sin 3θ.",
+   "On développe le cube et on compare : la case orange donne la formule de cos 3θ, la partie réelle.",
+   "La case violette donne la formule de sin 3θ, la partie imaginaire. En bas, l'essai avec θ = 30° donne 3√3/8 − 3√3/8 = 0."
+  ],
+  "a_voir": "La méthode est la même qu'avec le carré ; seul l'exposant change, et chaque partie donne sa formule."
+ },
+ {
+  "code": "39-117",
+  "a_dire": "Pour vérifier que −1 + √3 i est une racine cubique de 8, on calcule son cube : les termes en i s'annulent et il reste 2 + 6 = 8.",
+  "legende_titre": "Le cube d'un nombre non réel qui vaut 8",
+  "lecture": [
+   "La case bleue du haut est z ; à droite, en orange, son carré −2 − 2√3 i.",
+   "La rangée donne les quatre termes du produit z² × z : 2, −2√3 i, +2√3 i et +6.",
+   "Les deux cases orange se compensent : leur somme vaut 0.",
+   "La case verte du bas additionne : 2 + 0 + 6 = 8."
+  ],
+  "a_voir": "Les deux termes avec i s'annulent, et il reste 8."
+ },
+ {
+  "code": "39-118",
+  "a_dire": "x³ − 8 = (x − 2)(x² + 2x + 4) ; pour x = 3 les deux côtés valent 19, mais cet essai ne prouve pas l'égalité.",
+  "legende_titre": "Un essai chiffré de la factorisation",
+  "lecture": [
+   "À gauche, 19 cubes bleus : 27 cubes moins 8 retirés, c'est x³ − 8 pour x = 3.",
+   "À droite, la case orange x − 2 vaut 1 ; la case violette x² + 2x + 4 vaut 9 + 6 + 4 = 19.",
+   "Les deux flèches mènent au produit vert 1 × 19 = 19.",
+   "Les deux côtés valent 19 : l'essai est d'accord, pour ce seul x, et un essai n'est pas une preuve."
+  ],
+  "a_voir": "Les deux côtés de l'égalité donnent le même nombre, 19, pour x = 3 ; cela ne prouve pas l'égalité."
+ },
+ {
+  "code": "39-119",
+  "a_dire": "√−12 = 2√3 i : on sort le signe avec i, on simplifie √12 en 2√3, puis on contrôle que le carré donne −12.",
+  "legende_titre": "Racine carrée d'un nombre négatif",
+  "lecture": [
+   "La colonne de gauche a trois cases dans l'ordre : sortir le signe, simplifier, contrôler.",
+   "La case verte contrôle : (2√3 i)² = 4 × 3 × i² = −12.",
+   "À droite, l'axe vertical est celui de i : le point vert est 2√3 i, à environ 3,46.",
+   "Le point gris plus bas est l'autre nombre, −2√3 i."
+  ],
+  "a_voir": "Trois actions simples donnent un nombre dont le carré est −12."
+ },
+ {
+  "code": "39-120",
+  "a_dire": "Quand D < 0, les deux solutions complexes ont la même partie réelle et sont symétriques par rapport à l'axe horizontal ; avec D > 0 elles sont sur l'axe.",
+  "legende_titre": "Deux solutions de part et d'autre de l'axe",
+  "lecture": [
+   "Les deux points bleus, −1 + √3 i et −1 − √3 i, sont à gauche, au-dessus et au-dessous de l'axe horizontal.",
+   "Le trait bleu pointillé les relie : ils ont la même partie réelle, −1.",
+   "Les deux points rouges, 2 et −2, sont les solutions de x² − 4 = 0 ; elles sont sur l'axe.",
+   "Quand D est positif, il n'y a donc plus de part et d'autre de l'axe."
+  ],
+  "a_voir": "Les points bleus se reflètent dans l'axe horizontal ; les points rouges sont posés dessus."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 65, r'$(2 + 3i) + (1 - 2i)$', 'encre', 'l')
+text(ax, 23, 53, 'parties réelles', 'sujet', 's')
+text(ax, 65, 53, 'parties en i', 'varie', 's')
+box(ax, 4, 34, 38, 12, 'sujet', label=r'$2 + 1 = 3$', size='m')
+box(ax, 46, 34, 38, 12, 'varie', label=r'$3 + (-2) = 1$', size='m')
+arrow(ax, (23, 33), (34, 21), 'fixe')
+arrow(ax, (65, 33), (54, 21), 'fixe')
+box(ax, 18, 8, 52, 12, 'resultat', label=r'$3 + 1\,i = 3 + i$', size='m')
+save(fig, '39-047')

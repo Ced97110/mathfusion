@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 10, 80, 52, 'sujet')
+text(ax, 12, 55, 'ℂ', 'sujet', 'xl', weight='bold')
+box(ax, 10, 16, 38, 32, 'resultat')
+text(ax, 29, 42, 'ℝ : b = 0', 'resultat', 's', weight='bold')
+disc(ax, 29, 34, 1.6, 'resultat')
+text(ax, 29, 27, r'$5 = 5 + 0\,i$', 'resultat', 's')
+disc(ax, 66, 40, 1.6, 'sujet')
+text(ax, 66, 33, r'$2 + 3\,i$', 'sujet', 's')
+text(ax, 66, 26, r'$b \neq 0$', 'sujet', 's')
+text(ax, 44, 4, 'les réels sont dans ℂ', 'encre', 's')
+save(fig, '39-046')

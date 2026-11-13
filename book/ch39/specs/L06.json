@@ -1,0 +1,293 @@
+[
+ {
+  "code": "39-121",
+  "a_dire": "Le cube de 2 + i vaut 2 + 11i, donc la formule de Cardan, qui passe par la racine de −121, donne bien la solution réelle 4.",
+  "legende_titre": "Un calcul avec 𝑖 qui finit sur 4",
+  "lecture": [
+   "Le point bleu est 2 + i, le point orange est son carré 3 + 4i, le point vert est son cube 2 + 11i.",
+   "Chaque flèche orange est une multiplication par 2 + i.",
+   "À droite, la case verte montre la somme de 2 + i et de 2 − i : elle vaut 4."
+  ],
+  "a_voir": "Trois multiplications de suite mènent à 2 + 11i, et la somme de 2 + i et 2 − i est le nombre réel 4."
+ },
+ {
+  "code": "39-122",
+  "a_dire": "Les parties imaginaires 1 et −1 de 2 + i et 2 − i s'annulent dans la somme, qui est le nombre réel 4.",
+  "legende_titre": "Ce qui disparaît dans la somme",
+  "lecture": [
+   "La flèche bleue est 2 + i : elle monte d'une unité.",
+   "La flèche violette est 2 − i : elle descend d'une unité.",
+   "En mettant la violette au bout de la bleue, on arrive sur la droite horizontale, au point vert 4."
+  ],
+  "a_voir": "Le point d'arrivée est sur la droite horizontale : il n'a plus de partie imaginaire."
+ },
+ {
+  "code": "39-123",
+  "a_dire": "Le nombre (1 + i)/√2 est le point à 45° sur le cercle de rayon 1, et son carré vaut i, à 90°.",
+  "legende_titre": "Un huitième de tour",
+  "lecture": [
+   "Le point bleu est ω, à 45° du point gris 1.",
+   "Le point orange est ω², à encore 45° : il est à 90° et vaut i.",
+   "À droite, le calcul (1 + i)² = 2i, puis 2i divisé par 2 donne i."
+  ],
+  "a_voir": "Deux pas de 45° font un quart de tour : ω² = i."
+ },
+ {
+  "code": "39-124",
+  "a_dire": "Sur le cercle, les huit puissances de ω sont à 45° les unes des autres ; un point sur deux, les points bleus, est une racine primitive.",
+  "legende_titre": "Où sont les racines primitives",
+  "lecture": [
+   "Les flèches vertes vont d'un point au suivant, par pas de 45°.",
+   "Les points bleus, ω, ω³, ω⁵ et ω⁷, sont aux angles 45°, 135°, 225° et 315°.",
+   "Les points gris, ω² = i, ω⁴ = −1, ω⁶ = −i et ω⁸ = 1, sont sur les axes."
+  ],
+  "a_voir": "Les points bleus et gris alternent, et huit pas de 45° ramènent à 1."
+ },
+ {
+  "code": "39-125",
+  "a_dire": "Les exposants de ω se lisent comme les heures d'une horloge à 8 heures : on additionne et on retire un tour de 8.",
+  "legende_titre": "Les exposants en tournant",
+  "lecture": [
+   "Les huit disques sont les heures de 0 à 7 d'une horloge à 8 heures.",
+   "Le disque bleu est l'heure 5 ; les six flèches orange sont les six heures avancées.",
+   "Le disque vert est l'heure d'arrivée, 3, car 11 = 8 + 3.",
+   "À droite, ω⁵ · ω⁶ = ω¹¹ = ω³ : même résultat que sur l'horloge."
+  ],
+  "a_voir": "Avancer de 6 heures depuis 5 mène à 3, comme ω⁵ · ω⁶ = ω³."
+ },
+ {
+  "code": "39-126",
+  "a_dire": "Les racines 8-ièmes de l'unité, que l'on multiplie, et les heures d'une horloge à 8 heures, que l'on additionne, ont la même table : elles sont isomorphes.",
+  "legende_titre": "Deux ensembles, un seul calcul",
+  "lecture": [
+   "À gauche, le cercle des racines de l'unité : les points bleus sont ω⁵ et ω⁶, le point vert est ω³.",
+   "À droite, l'horloge : les points violets sont les heures 5 et 6, le point vert est l'heure 3.",
+   "La flèche verte associe chaque puissance ω^k à l'heure k.",
+   "En bas, ω⁵ · ω⁶ = ω³ et 5 + 6 = 3 : les deux calculs se correspondent."
+  ],
+  "a_voir": "À chaque point de gauche correspond un point de droite, et les calculs donnent le même résultat."
+ },
+ {
+  "code": "39-127",
+  "a_dire": "ω² = i n'est pas primitive : ses puissances ne visitent que quatre points ; ω³ l'est : par pas de 135°, elle visite les huit points.",
+  "legende_titre": "Quatre points ou huit points",
+  "lecture": [
+   "À gauche, les flèches orange avancent de 90° : elles ne visitent que les quatre disques orange.",
+   "Les quatre disques gris ne sont jamais atteints.",
+   "À droite, les flèches vertes avancent de 135° : elles passent par les huit points avant de revenir."
+  ],
+  "a_voir": "Le pas de 90° referme la boucle en quatre points, le pas de 135° la referme en huit."
+ },
+ {
+  "code": "39-128",
+  "a_dire": "Les exposants 1, 3, 5, 7 n'ont avec 8 que le diviseur commun 1 et donnent des racines primitives ; 2, 4 et 6 ont un diviseur commun autre que 1 et n'en donnent pas.",
+  "legende_titre": "Quels exposants donnent une primitive",
+  "lecture": [
+   "Les cases vertes sont les exposants 1, 3, 5 et 7.",
+   "Les cases grises sont les exposants 2, 4 et 6.",
+   "La case verte du bas dit que leur seul diviseur commun avec 8 est 1 : ω, ω³, ω⁵, ω⁷ sont primitives.",
+   "La case grise du bas dit qu'ils ont un diviseur commun autre que 1 : pas primitives."
+  ],
+  "a_voir": "Les exposants qui ont un diviseur commun avec 8 autre que 1 sont écartés."
+ },
+ {
+  "code": "39-129",
+  "a_dire": "Au centre, à distance 0, tous les angles conviennent : l'argument de 0 n'est pas défini et on ne peut pas diviser par 0.",
+  "legende_titre": "Le cas du centre",
+  "lecture": [
+   "Le disque bleu est le point O, le centre, à distance 0.",
+   "Les trois traits orange pointillés sont trois directions : 30°, 100° et 250°.",
+   "Pour chacune, 0 fois le cosinus et 0 fois le sinus valent 0.",
+   "En rouge : la formule de la tangente donne 0/0, qui n'a pas de sens."
+  ],
+  "a_voir": "Aucune direction n'est meilleure qu'une autre au centre."
+ },
+ {
+  "code": "39-130",
+  "a_dire": "ℂ* désigne tous les nombres complexes sauf 0 : l'étoile porte la condition « différent de 0 ».",
+  "legende_titre": "Le signe ℂ*",
+  "lecture": [
+   "Le grand carré bleu représente tous les nombres complexes.",
+   "Le petit disque blanc au centre, bordé de rouge, est le nombre 0 : il est exclu.",
+   "À droite, on lit z ∈ ℂ* pour dire que z est différent de 0.",
+   "En vert : on peut y multiplier et y diviser sans en sortir."
+  ],
+  "a_voir": "Tout est dans ℂ* sauf le point 0."
+ },
+ {
+  "code": "39-131",
+  "a_dire": "Pour n = 1, la racine de z est z lui-même : un seul point, aucun pas, la formule n'apprend rien.",
+  "legende_titre": "Quand n vaut 1",
+  "lecture": [
+   "La droite graduée montre les nombres de 0 à 8.",
+   "Le disque vert est la seule racine : 7, la même place que z = 7.",
+   "L'accolade verte dit qu'il n'y a qu'un point.",
+   "En bas : w = z, aucun pas, et l'angle 1θ reste θ."
+  ],
+  "a_voir": "La racine et le nombre de départ sont le même point."
+ },
+ {
+  "code": "39-132",
+  "a_dire": "Les racines carrées de −1 sont i et −i : à 90° et à 270°, opposées l'une de l'autre.",
+  "legende_titre": "Les racines carrées de −1",
+  "lecture": [
+   "Le point bleu est −1, à 180° du côté droit de l'axe horizontal.",
+   "L'arc orange montre la moitié de 180°, soit 90° : le point vert du haut est i.",
+   "L'arc vert ajoute 180° : il mène au point vert du bas, −i, à 270°."
+  ],
+  "a_voir": "Les deux racines sont à 180° l'une de l'autre."
+ },
+ {
+  "code": "39-133",
+  "a_dire": "Les deux racines carrées d'un nombre sont toujours opposées, que le nombre soit positif ou négatif.",
+  "legende_titre": "Deux racines opposées",
+  "lecture": [
+   "À gauche, le point bleu est 9 ; les points verts 3 et −3 sont ses racines carrées.",
+   "À droite, le point bleu est −9 ; les points verts 3i et −3i sont ses racines carrées.",
+   "Dans chaque dessin, les deux points verts sont de part et d'autre du centre, sur un même trait."
+  ],
+  "a_voir": "Les deux racines sont symétriques par rapport au centre."
+ },
+ {
+  "code": "39-134",
+  "a_dire": "En polaire, le cercle de rayon 2 s'écrit r = 2, plus simplement qu'avec x et y : on choisit l'écriture qui rend l'équation lisible.",
+  "legende_titre": "Le cercle en une ligne",
+  "lecture": [
+   "La surface bleue est le cercle de rayon 2 autour du centre.",
+   "Les flèches orange partent du centre dans trois directions (20°, 110°, 235°) ; chacune mesure 2.",
+   "À droite, l'écriture polaire r = 2 est courte.",
+   "En gris, l'écriture avec x et y, x² + y² = 4, est plus lourde."
+  ],
+  "a_voir": "La distance au centre est la même dans toutes les directions : une ligne suffit."
+ },
+ {
+  "code": "39-135",
+  "a_dire": "Le point (1, √3) a pour module 2 et pour angle 60° ; le nombre complexe 1 + √3 i et le vecteur de longueur 2 à 60° décrivent la même flèche.",
+  "legende_titre": "Un point, trois écritures",
+  "lecture": [
+   "La flèche bleue part du centre jusqu'au point (1, √3).",
+   "Les traits en pointillé donnent ses mesures 1 et √3 ; l'arc orange donne l'angle 60°.",
+   "À droite, quatre écritures de la même flèche : (x, y), a + bi, ai + bj et (r, θ).",
+   "La lettre i dans ai + bj nomme une flèche, pas le nombre i."
+  ],
+  "a_voir": "Les mêmes conversions servent pour un point, un nombre complexe et un vecteur."
+ },
+ {
+  "code": "39-136",
+  "a_dire": "ℂ* est un ensemble où l'on multiplie sans en sortir (un groupe) ; le cercle 𝕋 en est une partie qui a la même propriété (un sous-groupe).",
+  "legende_titre": "Un groupe et son sous-groupe",
+  "lecture": [
+   "Le grand carré gris est ℂ*, tous les complexes sauf 0 ; le petit rond blanc est 0.",
+   "Le disque bleu est le cercle 𝕋, les nombres de module 1.",
+   "Sur 𝕋, z (violet) et w (orange) ont pour produit zw (vert), qui reste sur le cercle.",
+   "À droite : 2 × 3 = 6 n'est pas 0, et 1 × 1 = 1."
+  ],
+  "a_voir": "Le produit de deux points de 𝕋 reste dans 𝕋, qui est lui-même dans ℂ*."
+ },
+ {
+  "code": "39-137",
+  "a_dire": "L'ordre d'un élément est le nombre de pas pour revenir au départ : avancer de 3 sur l'horloge à 8 heures a pour ordre 8, avancer de 4 a pour ordre 2.",
+  "legende_titre": "Compter les pas pour revenir",
+  "lecture": [
+   "À gauche, les flèches orange avancent de 3 heures : elles passent par les huit heures avant de revenir à 0.",
+   "À droite, les flèches orange avancent de 4 heures : elles vont à l'heure 4 puis reviennent à 0.",
+   "Le nombre de pas pour revenir à 0 est l'ordre : 8 à gauche, 2 à droite."
+  ],
+  "a_voir": "Le nombre de pas avant le retour se lit en comptant les flèches."
+ },
+ {
+  "code": "39-138",
+  "a_dire": "L'inverse de a + bi est (a − bi) divisé par a² + b² : on change le signe de la partie imaginaire puis on divise par la somme des carrés ; ℂ est un corps.",
+  "legende_titre": "Calculer l'inverse d'un complexe",
+  "lecture": [
+   "La flèche bleue est 3 + 4i ; la flèche orange est 3 − 4i, avec la partie imaginaire de signe changé.",
+   "Leur produit vaut 9 + 16 = 25, un nombre réel non nul.",
+   "L'inverse de 3 + 4i est donc (3 − 4i)/25.",
+   "Le même chemin donne (1 − i)/2 pour 1 + i, et (a − bi)/(a² + b²) en général."
+  ],
+  "a_voir": "On multiplie par le nombre au signe changé pour obtenir un réel, puis on divise."
+ },
+ {
+  "code": "39-139",
+  "a_dire": "Les quaternions ont trois nombres nouveaux i, j, k, dont chacun a pour carré −1, alors que les complexes n'en ont qu'un.",
+  "legende_titre": "Un nombre nouveau, puis trois",
+  "lecture": [
+   "La case grise du haut est le seul nombre nouveau des complexes : i² = −1.",
+   "En dessous de la ligne pointillée, trois cases bleues : i, j et k.",
+   "Chacune des trois a pour carré −1."
+  ],
+  "a_voir": "Une case en haut, trois cases en bas : le nombre de nombres nouveaux passe de un à trois."
+ },
+ {
+  "code": "39-140",
+  "a_dire": "Dessiner un polygone régulier à la règle et au compas revient à savoir si cos(360°/n) s'obtient par des racines carrées successives ; pour 5 côtés, il faut cos 72°.",
+  "legende_titre": "Du dessin du polygone au nombre",
+  "lecture": [
+   "Les cinq disques sont les sommets du pentagone, sur le cercle de rayon 1, à 72° les uns des autres.",
+   "L'arc orange est l'angle 72° ; le trait vert sur l'axe horizontal est cos 72°.",
+   "À droite, les cinq opérations permises à la règle et au compas.",
+   "La question en vert : peut-on obtenir cos 72° par des racines carrées ?"
+  ],
+  "a_voir": "Placer le sommet à 72° demande de connaître la longueur cos 72°."
+ },
+ {
+  "code": "39-141",
+  "a_dire": "Tourner de θ autour du centre, c'est multiplier par cis θ : le cercle 𝕋 est l'ensemble des rotations du plan, noté SO(2).",
+  "legende_titre": "Tourner, c'est multiplier",
+  "lecture": [
+   "Le cercle bleu est 𝕋 ; le disque bleu est le point (1, 0).",
+   "La flèche orange est un quart de tour, 90°.",
+   "Le disque vert est le point d'arrivée (0, 1), égal à 1 × cis 90° = i.",
+   "En bas à droite : SO(2) = 𝕋."
+  ],
+  "a_voir": "La rotation de 90° et la multiplication par cis 90° envoient le même point au même endroit."
+ },
+ {
+  "code": "39-142",
+  "a_dire": "Multiplier par a + bi, c'est tourner de l'angle de ce nombre puis agrandir dans le rapport de son module.",
+  "legende_titre": "Multiplier est un mouvement",
+  "lecture": [
+   "Le point bleu est 1, au départ.",
+   "L'arc orange en pointillé est la rotation de 45° : le petit disque orange est le point après la rotation.",
+   "La flèche orange le prolonge jusqu'au disque vert 1 + i : c'est l'agrandissement par √2.",
+   "À droite, les deux étapes et le module |1 + i| = √2."
+  ],
+  "a_voir": "Une rotation de 45° suivie d'un agrandissement par √2 envoie (1, 0) sur (1, 1)."
+ },
+ {
+  "code": "39-143",
+  "a_dire": "Le carré du module d'un produit est le produit des carrés des modules : (a² + b²)(c² + d²) = (ac − bd)² + (ad + bc)². Avec 1 + 2i et 3 + 4i, les deux côtés valent 125.",
+  "legende_titre": "Une égalité de sommes de carrés",
+  "lecture": [
+   "La flèche bleue est z = 1 + 2i et la violette est w = 3 + 4i.",
+   "La flèche verte est leur produit, −5 + 10i.",
+   "À droite, de haut en bas : 5, 25, puis 5 × 25 = 125.",
+   "En vert, le produit donne (−5)² + 10² = 125 : même valeur."
+  ],
+  "a_voir": "Le côté gauche et le côté droit de l'égalité valent tous deux 125."
+ },
+ {
+  "code": "39-144",
+  "a_dire": "Le produit de deux sommes de deux carrés est encore une somme de deux carrés ; le problème de Hurwitz demande si c'est possible avec 3, 4, 5 nombres.",
+  "legende_titre": "Le problème de Hurwitz",
+  "lecture": [
+   "En haut, l'énoncé général : le produit de deux sommes de deux carrés est une somme de deux carrés.",
+   "Chaque ligne écrit un nombre comme somme de deux carrés : 2, 13 et 26.",
+   "Les aires des carrés dessinés sont proportionnelles à 1, 1 ; 4, 9 ; puis 25, 1.",
+   "Le produit 2 × 13 donne 26, qui est encore une somme de deux carrés. En bas : oui avec 2 nombres ; la case en pointillé pose la question pour 3, 4, 5 nombres."
+  ],
+  "a_voir": "Deux sommes de deux carrés, multipliées, donnent encore une somme de deux carrés ; avec 3, 4, 5 nombres, la question reste posée."
+ },
+ {
+  "code": "39-145",
+  "a_dire": "Dans le plan, multiplier par i est un quart de tour ; on demande s'il existe des nombres qui fassent tourner l'espace, où l'on tourne autour de n'importe quelle droite, et quelle règle abandonner.",
+  "legende_titre": "Du plan à l'espace",
+  "lecture": [
+   "À gauche, le plan : la flèche orange est le quart de tour qui envoie le disque bleu sur le disque vert.",
+   "À droite, l'espace avec trois axes : est, nord, hauteur.",
+   "L'ellipse orange est un tour autour de la droite verticale, l'ellipse violette un tour autour d'une droite horizontale.",
+   "La question en violet : quelle règle de calcul abandonner ?"
+  ],
+  "a_voir": "Dans l'espace, il y a plusieurs droites autour desquelles tourner, alors que le plan n'a qu'un seul centre."
+ }
+]
