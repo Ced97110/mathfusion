@@ -1,5 +1,5 @@
 'use client';
-// Charge le fichier du chapitre (public/chapters/chNN.html) et l'affiche.
+// Charge le fichier du chapitre (public/<base>/<file>, par défaut public/chapters/chNN.html) et l'affiche.
 // Le chapitre n'est pas inclus dans la page elle-même : un chapitre pèse 3 à 7 Mo,
 // et l'inclure ferait copier ce poids plusieurs fois dans le site construit.
 import { useEffect, useRef, useState } from 'react';

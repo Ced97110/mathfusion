@@ -57,3 +57,12 @@ Les dossiers `book/chNN` ne gardent dans Git que les sources (`fiches.json`, `me
 - Chapitres 1 à 4 (ancien réglage, Opus à la conception) : 82 à 91 % de réussite au premier test, environ 40 000 tokens par fiche.
 - Chapitre 5 (réglage de cette procédure) : 94 % au premier test, 99 % après correction, environ 14 600 tokens par fiche.
 - À partir du chapitre 42 (groupes, anneaux, Galois), les concepts sont plus abstraits : surveiller le taux de réussite.
+
+## Second livre : « Avant l'apprentissage automatique »
+
+- Source : `book/source/Avant_l_apprentissage_automatique_cause_effets_finalite.pdf` (5 547 pages, pas dans Git). D'après Jorge Brasil, *Before Machine Learning*, vol. 1 à 3. 14 parties, 119 chapitres, deux textes d'ouverture, un « Contrôle final ».
+- Pas de fiches ni de figures à fabriquer : le livre a déjà ses figures. On le convertit tel quel, sans réécrire le texte.
+- Conversion (zéro token) : `python3 tools/ml/build.py book/source/Avant_l_apprentissage_automatique_cause_effets_finalite.pdf`. Écrit `content/ml.json`, `public/ml/cNNN.html` et `public/ml/img/cNNN/*.svg`. Cache dans `book/ml-work/` (ignoré par Git). `ML_ONLY=002,003` ne refait que ces chapitres.
+- Le texte français et la traduction anglaise (en bleu dans le PDF) restent deux paragraphes distincts (`<p class="en">`). Formules détachées, tableaux, encadrés et figures sont découpés du PDF en SVG.
+- Publication : un commit par chapitre sur `main` (`git add public/ml/cNNN.html public/ml/img/cNNN`), `git pull --rebase` puis `git push`. Le site ne montre que les chapitres dont le fichier est présent.
+- Site : `/apprentissage/` (sommaire) et `/apprentissage/<clé>/` (chapitre), lien « Apprentissage » dans la barre du haut.

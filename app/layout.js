@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
           <Link href="/" className="bb">Sommaire</Link>
           <div className="t">Des nombres aux structures</div>
           <Link href="/physique/" className="bb">Physique</Link>
+          <Link href="/apprentissage/" className="bb">Apprentissage</Link>
         </header>
         <BranchMenu />
         <main>{children}</main>
