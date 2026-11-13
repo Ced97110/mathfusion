@@ -1,7 +1,13 @@
-<div class="pk">Chapitre 23</div>
-<h1>Graphes planaires et polyèdres</h1>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 23</div>
+<h1 class="ct">Graphes planaires et polyèdres</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<div class="corps">
 <p>Au chapitre 21, un graphe était une liste de sommets et une liste d’arêtes. Le dessin servait seulement à voir cette liste. Dans ce chapitre, le dessin devient lui-même l’objet d’étude. Une seule question guide tout le chapitre : peut-on dessiner le graphe sans qu’aucune arête n’en croise une autre ?</p>
-<h2>1. Le problème qui a forcé la notion</h2>
+
+</div>
+<section class="sec" id="s1"><div class="sk">Chapitre 23 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <h3>Trois maisons et trois services</h3>
 <p>Trois maisons <span class="m">𝐴</span>, <span class="m">𝐵</span> et <span class="m">𝐶</span> sont construites dans un lotissement. Chaque maison doit être reliée à trois services : l’eau (<span class="m">𝑋</span>), le gaz (<span class="m">𝑌</span>) et l’électricité (<span class="m">𝑍</span>). Chaque liaison est une conduite enterrée. Toutes les conduites sont posées à la même profondeur. Deux conduites ne doivent donc jamais se croiser.</p>
 <p>Compte les conduites. Chaque maison en reçoit 3. Il y a 3 maisons. Il faut donc <span class="m">3 × 3 =</span> <span class="m">9</span> conduites.</p>
@@ -16,7 +22,8 @@
 <p>1. avec autant de sommets, d’arêtes et de faces l’un que l’autre ;</p>
 <p>2. avec autant de sommets et d’arêtes, mais pas autant de faces.</p>
 <p>Cherche avant de lire la suite. La seconde question va résister. La raison de cette résistance est le résultat central du chapitre.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 23 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Un graphe, deux dessins</h3>
 <p>Regarde la figure 23.2. Elle montre deux dessins.</p>
 <img class="vm" src="/discretes/img/c023/p0745_2.svg" alt="sans croisement avec croisements P 3 P Q 1 2 R S T R S T Q" style="--w:24.12" loading="lazy">
@@ -34,7 +41,8 @@
 <p><b>Fig.</b> <i><b>23.3 :</b> Regarde le point rouge au centre du dessin de gauche : les deux diagonales s’y croisent, et ce croisement fabrique une région de trop. À droite, la diagonale</i> <span class="m">𝐴</span><i>–</i><span class="m">𝐶</span> <i>passe par l’extérieur : il n’y a plus de croisement et on compte 4 faces.</i></p>
 <p>À gauche, les diagonales <span class="m">𝐴𝐶</span> et <span class="m">𝐵𝐷</span> se croisent au centre. Les traits découpent la feuille en 5 régions : quatre triangles et l’extérieur. À droite, la diagonale <span class="m">𝐴𝐶</span> contourne le carré. Plus aucun croisement, et on compte 4 faces : <span class="m">𝐴𝐵𝐷</span>, <span class="m">𝐵𝐶𝐷</span>, la région sous la grande courbe, et l’extérieur.</p>
 <p>Pourquoi 5 d’un côté et 4 de l’autre ? Le croisement central coupe chaque diagonale en deux morceaux. Il se comporte comme un sommet supplémentaire, absent du graphe, et crée une région de trop. On ne compte donc les faces que sur un dessin sans croisement.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 23 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c023/p0747_4.svg" alt="Définition : graphe planaire, face Un graphe est planaire s’il est possible de le dessiner dans le plan de sorte que deux arêtes ne se rencontrent jamais, sauf en un sommet qu’elles ont en commun. Un tel dessin s’appelle une représentation planaire du graphe. Quand un graphe planaire est dessiné sans croisement, ses arêtes découpent le plan en régions. Chaque région s’appelle" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c023/p0747_5.svg" alt="une face. La région extérieure, qui n’est pas bornée, compte comme une face." style="--w:24.19" loading="lazy">
 <p>Le mot important est « possible ». Le graphe de la figure 23.2 est planaire, car le dessin de droite existe. Pour montrer qu’un graphe est planaire, il suffit d’exhiber un dessin sans croisement. Pour montrer qu’il ne l’est pas, il faut exclure tous les dessins. C’est beaucoup plus difficile.</p>
@@ -73,7 +81,8 @@
 <p><i>Pourquoi</i> <span class="m">𝐵 = 2𝑒</span><i>.</i> Chaque arête a exactement deux côtés. Chaque côté est compté une fois, dans la face qu’il touche. Donc chaque arête contribue exactement 2 au total.</p>
 <p><i>Pourquoi</i> <span class="m">𝑔𝑓 ≤ 2𝑒</span><i>.</i> Le tour d’une face suit des arêtes du graphe. Si le graphe n’est pas un arbre, ce tour contient un cycle du graphe. Sinon la face ne serait fermée par rien, et le dessin n’aurait qu’une seule face, comme un arbre. Ce cycle a au moins <span class="m">𝑔</span> arêtes, par définition de la maille. Donc chaque face a au moins <span class="m">𝑔</span> côtés. On additionne sur les <span class="m">𝑓</span> faces : <span class="m">𝐵 ≥ 𝑔 𝑓</span>. Avec <span class="m">𝐵 = 2𝑒</span>, on obtient <span class="m">𝑔 𝑓 ≤ 2𝑒</span>.</p>
 <p>Vérifie sur la figure 23.5. Le plus petit cycle est le toit <span class="m">𝐷𝐶𝑇</span>, donc <span class="m">𝑔 = 3</span>. On a <span class="m">𝑓 = 3</span> et <span class="m">𝑒 = 7</span>. Alors <span class="m">3 × 3 = 9 ≤ 14</span>. C’est vrai.</p>
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 23 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Les réponses à l’activité de Levin</h3>
 <p><i>Première question.</i> Oui, deux graphes différents peuvent avoir les mêmes <span class="m">𝑣</span>, <span class="m">𝑒</span>, <span class="m">𝑓</span>.</p>
 <p>Prends le chemin <span class="m">𝐴</span>–<span class="m">𝐵</span>–<span class="m">𝐶</span>–<span class="m">𝐷</span>. Prends aussi l’étoile : un centre <span class="m">𝐴</span> relié à <span class="m">𝐵</span>, <span class="m">𝐶</span> et <span class="m">𝐷</span>. Les deux ont <span class="m">𝑣 = 4</span>, <span class="m">𝑒 = 3</span>, <span class="m">𝑓 = 1</span>. Ils ne sont pas isomorphes : l’étoile a un sommet de degré 3, le chemin n’en a pas.</p>
@@ -169,9 +178,12 @@
 <p>On a trouvé exactement cinq solutions, et la figure 23.8 montre que chacune existe. Il y a donc exactement cinq polyèdres réguliers.</p>
 <img class="vm" src="/discretes/img/c023/p0770_50.svg" alt="Le cas limite La courbe rouge des hexagones (figure 23.10) s’approche de 𝑘 = 3 sans l’atteindre. Le cas limite existe pourtant : un carrelage de tout le plan par des hexagones réguliers, avec 3 hexagones à chaque sommet. Mais il a une infinité de faces, et il reste plat : il ne se referme jamais en un solide." style="--w:24.19" loading="lazy">
 <img class="vf" src="/discretes/img/c023/p0770_51.svg" alt="" style="--w:24.12" loading="lazy">
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 23 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <p>Ce chapitre a réutilisé les poignées de main (chapitre 21), les arbres (chapitre 22), l’absurde (chapitre 4) et le double comptage (chapitre 10).</p>
 <p>Au chapitre 24, colorier une carte reviendra à colorier les sommets d’un graphe planaire, et le théorème des quatre couleurs ne parlera que des graphes planaires. La borne <span class="m">𝑒 ≤ 3𝑣 − 6</span> y servira : elle garantit qu’un graphe planaire (à au moins 3 sommets) a toujours un sommet de degré 5 au plus. En effet, si tous les degrés valaient au moins 6, la somme des degrés vaudrait au moins <span class="m">6𝑣</span>. Elle vaut <span class="m">2𝑒</span>. On aurait <span class="m">2𝑒 ≥ 6𝑣</span>, donc <span class="m">𝑒 ≥ 3𝑣</span>, ce qui dépasse <span class="m">3𝑣 − 6</span>. C’est le premier pas de la preuve, donnée au chapitre suivant, que six couleurs suffisent pour toute carte.</p>
 <p>Au chapitre 25, le nom d’Euler revient pour une autre question : parcourir toutes les arêtes d’un graphe sans repasser par la même.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 23 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c023/p0772_52.svg" alt="À toi de chercher Cherche un graphe connexe qui passe le test de la maille : sa maille 𝑔 et ses nombres 𝑣, 𝑒 vérifient 𝑔 (2 − 𝑣 + 𝑒) ≤ 2𝑒. Et qui, pourtant, n’est pas planaire. Y trouves-tu un 𝐾5 ou un 𝐾3,3, peut-être déformé, avec des sommets intercalés au milieu de certaines arêtes ? Est-ce toujours le cas pour un graphe non planaire ? Que faudrait-il montrer pour en être sûr ?" style="--w:24.19" loading="lazy">
+</div>
