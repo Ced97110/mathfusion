@@ -10,6 +10,7 @@ subprocess.run([sys.executable, f'{root}/tools/kit/web.py', f'{root}/book', tmp,
 os.makedirs(f'{root}/public/chapters', exist_ok=True)
 for p in glob.glob(f'{tmp}/ch*.html'): shutil.copy(p, f'{root}/public/chapters/')
 shutil.copy(f'{tmp}/toc.json', f'{root}/content/toc.json')
+shutil.rmtree(tmp, ignore_errors=True)  # mkdtemp is never cleaned otherwise and fills the disk
 # Only chapters with a row in book/JOURNAL.md are published: a chapter still in progress
 # (possibly in another session) stays off the site.
 import re
