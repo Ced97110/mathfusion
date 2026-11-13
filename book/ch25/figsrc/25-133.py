@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+A = (6, 12); B = (30, 12); C = (30, 30)
+line(ax, [A, B], 'fixe', lw=1.2)
+line(ax, [B, C], 'sujet', lw=1.8); line(ax, [A, C], 'sujet', lw=1.8)
+line(ax, [(30, 15), (27, 15), (27, 12)], 'fixe', lw=0.7)
+text(ax, 31.5, 21, 'opposé 3', 'sujet', 's', ha='left'); text(ax, 18, 8.5, 'adjacent 4', 'fixe', 's')
+text(ax, 15.6, 24.4, 'hypoténuse 5', 'sujet', 's', rot=37)
+arcpts = [(A[0] + 6 * math.cos(math.radians(37 * k / 12)), A[1] + 6 * math.sin(math.radians(37 * k / 12))) for k in range(13)]
+line(ax, arcpts, 'varie'); text(ax, 15, 14.2, r'$\theta$', 'varie', 's')
+text(ax, 44, 3, 'sinus = opposé ÷ hypoténuse', 'sujet', 's')
+box(ax, 50, 34, 34, 9, 'fixe', label='tangente = 3 ÷ 4 = 0,75', size='s')
+box(ax, 50, 22, 34, 9, 'sujet', label='sinus = 3 ÷ 5 = 0,6', lw=1.4, weight='bold', size='s')
+box(ax, 50, 10, 34, 9, 'fixe', label='cosinus = 4 ÷ 5 = 0,8', size='s')
+save(fig, '25-133')

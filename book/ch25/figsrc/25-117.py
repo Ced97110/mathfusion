@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, c, r, a0, a1, role="varie", n=24):
+    line(ax, [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)), c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)], role)
+fig, ax = canvas(60)
+line(ax, [(8, 12), (82, 12)], 'fixe')
+line(ax, [(40, 12), (40, 56)], 'sujet', lw=1.4)
+text(ax, 40, 7.5, '3', 'fixe', 's')
+line(ax, [(40, 15), (43, 15), (43, 12)], 'fixe')
+text(ax, 50, 17, '90°', 'fixe', 's')
+disc(ax, 40, 30, 1.1, 'sujet')
+arrow(ax, (41.5, 30), (60.5, 30), 'varie')
+text(ax, 50, 26, 'avancée 1', 'varie', 's')
+disc(ax, 62, 30, 1.6, 'limite', fill=False)
+text(ax, 68, 36, 'hors de la droite', 'limite', 's')
+text(ax, 21, 46, 'avancée 0', 'varie', 's')
+text(ax, 21, 40, 'montée ÷ 0', 'limite', 's')
+text(ax, 21, 22, 'tan 90° n’existe pas', 'limite', 's', weight='bold')
+save(fig, '25-117')

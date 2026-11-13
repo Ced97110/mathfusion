@@ -21,6 +21,7 @@
 | 2026-11-12 | 17 — Les inéquations à une variable | 126 | 120 | 126 | aucune |
 | 2026-11-12 | 18 — Factoriser les polynômes | 117 | 108 | 115 | 18-002 (les côtés comme inconnues ne sont pas lus), 18-044 (« aucun facteur commun à tous » n'est pas lu) |
 | 2026-11-12 | 19 — Le plan, les droites : équations à deux variables, pente | 128 | 117 | 125 | 19-015 (axes croisés à angle droit en leur 0 : non lu), 19-090 (« y seul à gauche » non lu), 19-126 (« parallèles : aucune solution » non lu) |
+| 2026-11-12 | 25 — Le triangle rectangle et la tangente | 153 | 130 | 146 | 25-028 (les deux angles aigus qui font 90° ne sont pas lus), 25-064 (« c ne sert pas » lu comme « la tangente ne dépend que de l'angle »), 25-095 (les points 1 à 45° et 1,73 à 60° non lus), 25-115 (« seulement des exemples, seul 36,87 arrondi » non lu), 25-130 (« chaque nombre > 0 est la tangente d'un seul angle » non lu), 25-136 (le triangle rectangle dans l'espace non lu), 25-153 (pourquoi tan A suffit n'est pas lu) |
 
 ## Remarques
 
@@ -41,3 +42,4 @@
 - Chapitre 17 : nombres repris d'une fiche voisine ou calculés : 17-027 (−3, de 17-025), 17-028 (x ≤ 5y + 3, de 17-031), 17-105 (40 = 4 × 10 calculé). 17-123 : ligne « produit » ajoutée à la correction, que la fiche n'explique pas. 17-090 dessine le cas de la rubrique 1, pas l'inéquation du titre.
 - Chapitre 18 : erreurs de figure corrigées : 18-051 (« pas un carré » au-dessus de x²), 18-072 (bon couple 2 et 3 en rouge), 18-031 (« reste » au lieu de quotient). 18-004 cassé par une suppression du superviseur, réparé (positions des rangées). Aucun nombre inventé relevé.
 - Chapitre 19 : 19-044, l'ordonnée à l'origine que la fiche met en rouge est violette (rôles de couleur) ; 19-123 garde du rouge pour « non définie » (pas un faux). Erreurs de figure corrigées : 19-124 (droite pleine pour une inégalité stricte), 19-125 (x × x × x à côté de carrés). Aucun nombre inventé relevé.
+- Chapitre 25 : nombres ajoutés par un agent, absents de la fiche : 25-092 (la liste des onze angles 0, 10, 20, 30, 40, 45, 50, 60, 70, 80, 85, déduite de « onze angles de 0 à 85 »), 25-130 (rapports 0,5 ; 0,75 ; 1 ; 1,5 ; 2 pris comme exemples). Couleurs du livre changées à cause des rôles : arcs d'angle rouges du livre tracés en noir (25-048, 25-065, 25-066, 25-067, 25-070, 25-071, 25-073, 25-076). 25-070 : la fiche dit « côté 4 à gauche » après un quart de tour, ce qui demande un miroir ; la figure montre un vrai quart de tour. Premier chapitre de la branche « Géométrie et trigonométrie » de cette session.

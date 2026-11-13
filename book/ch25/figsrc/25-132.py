@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, 'trigonométrie', 'sujet', 'xl', weight='bold')
+text(ax, 44, 47.5, 'mesure des triangles', 'sujet', 's')
+box(ax, 3, 3, 82, 38, 'sujet', fill=False, dash=True, lw=0.7)
+poly(ax, [(8, 8), (34, 8), (34, 28)], 'sujet')
+line(ax, [(34, 11), (31, 11), (31, 8)], 'sujet', lw=0.7)
+text(ax, 21, 33, 'rapports des côtés', 'sujet', 's')
+box(ax, 54, 22, 28, 9, 'resultat', label='une longueur')
+box(ax, 54, 8, 28, 9, 'resultat', label='un angle')
+arrow(ax, (36, 24), (52, 26), 'varie'); arrow(ax, (36, 11), (52, 12), 'varie')
+save(fig, '25-132')

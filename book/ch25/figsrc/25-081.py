@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 52, 36, 14, 'sujet', label=r'$0{,}5^{-1}$', size='l')
+arrow(ax, (22, 52), (22, 40), 'sujet')
+text(ax, 22, 34, r'$1/0{,}5 = 2$', 'resultat', 'm')
+text(ax, 22, 26, 'un nombre', 'resultat', 's')
+text(ax, 44, 40, r'$\neq$', 'limite', 'l')
+box(ax, 48, 52, 36, 14, 'autre', label=r'$\tan^{-1}\,0{,}5$', size='l')
+arrow(ax, (66, 52), (66, 36), 'autre')
+A = (52, 20); B = (76, 20); C = (76, 32)
+poly(ax, [A, B, C], 'autre')
+th = [math.radians(a) for a in [i * 26.565 / 8 for i in range(9)]]
+line(ax, [(A[0] + 9 * math.cos(t), A[1] + 9 * math.sin(t)) for t in th], 'varie', lw=1.2)
+text(ax, 66, 11, '26,565° : un angle', 'varie', 's')
+save(fig, '25-081')

@@ -1,0 +1,28 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+def pol(V, d, r): return (V[0] + r * math.cos(math.radians(d)), V[1] + r * math.sin(math.radians(d)))
+def arc(ax, V, a1, a2, r, role, lw=1.1): ax.add_patch(Arc(V, 2 * r, 2 * r, theta1=a1, theta2=a2, ec=COL[role], lw=lw, zorder=3))
+def sq(ax, V, d, s, role='fixe'):
+    p1 = pol(V, d, s); p3 = pol(V, d + 90, s); p2 = (p1[0] + p3[0] - V[0], p1[1] + p3[1] - V[1]); line(ax, [p1, p2, p3], role, lw=0.8)
+def inl(pts, V, k):
+    gx = sum(p[0] for p in pts) / 3; gy = sum(p[1] for p in pts) / 3; dx, dy = gx - V[0], gy - V[1]; n = math.hypot(dx, dy)
+    return (V[0] + k * dx / n, V[1] + k * dy / n)
+fig, ax = canvas(64)
+t = math.tan(math.radians(40))
+A = (6, 16); C = (34, 16); B = (34, 16 + 28 * t)
+poly(ax, [A, C, B], 'sujet'); sq(ax, C, 90, 3, 'fixe')
+text(ax, *inl([A, B, C], A, 12), '40°', 'sujet', 's')
+text(ax, *inl([A, B, C], B, 9.5), '50°', 'sujet', 's')
+text(ax, 28.5, 22, '90°', 'fixe', 's')
+P = (49, 16); Q = (82, 16)
+R = pol(P, 70, 33 * math.sin(math.radians(60)) / math.sin(math.radians(50)))
+poly(ax, [P, Q, R], 'autre')
+text(ax, *inl([P, Q, R], P, 11), '70°', 'autre', 's')
+text(ax, *inl([P, Q, R], Q, 11), '60°', 'autre', 's')
+text(ax, *inl([P, Q, R], R, 12), '50°', 'autre', 's')
+text(ax, 21, 58, 'avec angle droit', 'sujet', 's')
+text(ax, 65, 58, 'sans angle droit', 'autre', 's')
+text(ax, 21, 8, '40 + 50 = 90', 'resultat', 's')
+text(ax, 65, 8, '70 + 60 = 130', 'limite', 's')
+text(ax, 65, 3.5, 'jamais 90', 'limite', 's')
+save(fig, '25-027')

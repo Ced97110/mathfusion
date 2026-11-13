@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, c, r, a0, a1, role="varie", n=24):
+    line(ax, [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)), c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)], role)
+fig, ax = canvas(64)
+O = (24, 34)
+line(ax, [(6, 34), (82, 34)], 'fixe')
+line(ax, [O, (46, 56)], 'fixe', lw=1.3)
+line(ax, [O, (46, 12)], 'sujet', lw=1.4)
+arc(ax, O, 9, 0, 45, 'fixe')
+arc(ax, O, 9, 0, -45, 'varie')
+text(ax, 50, 52, 'vers le haut :', 'fixe', 's', ha='left')
+text(ax, 50, 47.5, 'pente positive', 'fixe', 's', ha='left')
+text(ax, 50, 18, 'vers le bas :', 'sujet', 's', ha='left')
+text(ax, 50, 13.5, 'pente −1', 'sujet', 's', ha='left')
+box(ax, 4, 4, 30, 8, 'fixe', label='voir le chapitre 28', size='s', dash=True)
+save(fig, '25-118')

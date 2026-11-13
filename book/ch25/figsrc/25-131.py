@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 30, 42, 28, 9, 'varie', label=r'angle $A$')
+xs = (15.5, 44, 72.5)
+box(ax, xs[0] - 12.5, 14, 25, 11, 'sujet', label=r'$\tan A$', size='l', lw=1.2)
+box(ax, xs[1] - 12.5, 14, 25, 11, 'fixe', label=r'$\sin A$', size='l', dash=True)
+box(ax, xs[2] - 12.5, 14, 25, 11, 'fixe', label=r'$\cos A$', size='l', dash=True)
+arrow(ax, (38, 42), (xs[0], 26), 'varie'); arrow(ax, (44, 42), (xs[1], 26), 'varie'); arrow(ax, (50, 42), (xs[2], 26), 'varie')
+text(ax, xs[0], 8, 'la première', 'sujet', 's')
+text(ax, xs[1], 8, 'annoncé (ch. 26)', 'fixe', 's')
+text(ax, xs[2], 8, 'annoncé (ch. 26)', 'fixe', 's')
+text(ax, 44, 33, 'un nombre pour chaque angle', 'encre', 's')
+save(fig, '25-131')

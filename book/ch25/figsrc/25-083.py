@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 26, 50, 36, 12, 'encre', label=r'$\tan\,40$', size='l')
+arrow(ax, (36, 50), (22, 40), 'resultat')
+arrow(ax, (52, 50), (66, 40), 'limite')
+box(ax, 4, 26, 36, 12, 'resultat', label='mode degrés', size='m')
+box(ax, 48, 26, 36, 12, 'limite', label='mode radians', size='m')
+text(ax, 22, 18, '0,8391', 'resultat', 'l')
+text(ax, 66, 18, '−1,1172', 'limite', 'l')
+text(ax, 22, 10, 'le bon résultat', 'resultat', 's')
+text(ax, 66, 10, 'faux ici', 'limite', 's')
+save(fig, '25-083')

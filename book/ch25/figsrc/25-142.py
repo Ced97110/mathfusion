@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'onde $a \sin x + b \cos x$', 'sujet', 's')
+A = (8, 10); B = (26, 10); C = (26, 34)
+poly(ax, [A, B, C], 'sujet'); line(ax, [A, B], 'fixe', lw=1.8); line(ax, [B, C], 'varie', lw=1.8)
+text(ax, 17, 6, r'$a = 3$', 'fixe', 's'); text(ax, 31, 22, r'$b = 4$', 'varie', 's')
+box(ax, 48, 32, 36, 9, 'fixe', label='4 ÷ 3 ≈ 1,333')
+box(ax, 48, 18, 36, 9, 'sujet', label='arctan 1,333')
+box(ax, 48, 4, 36, 9, 'resultat', label='≈ 53,13°')
+arrow(ax, (66, 31), (66, 28), 'varie'); arrow(ax, (66, 17), (66, 14), 'varie')
+save(fig, '25-142')
