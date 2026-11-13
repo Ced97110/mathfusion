@@ -18,6 +18,7 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 ## Règles de budget (prioritaires)
 
 - L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Dix chapitres par session, enchaînés sans attendre (décision du 2026-11-12). Commit et push à la fin de chaque chapitre.
+- Plusieurs sessions peuvent tourner en même temps dans ce dossier. Chaque session reçoit une plage de chapitres explicite et n'en sort pas. `next_chapter.py` saute les chapitres qui ont déjà un dossier `book/chNN`. Ne jamais lancer `setup` sur un chapitre dont le dossier existe. Au commit, ajouter seulement les fichiers de son chapitre (`git add book/chNN book/JOURNAL.md content/toc.json public/chapters/chNN.html`), jamais `git add -A`.
 - Chaque sous-agent coûte environ 80 000 tokens au démarrage, quel que soit le travail : peu d'agents, gros lots.
 - Tout ce qui est mécanique passe par les scripts (zéro token).
 - Modèles des sous-agents : **Sonnet** pour concevoir et coder les figures, juger, corriger ; **Haiku** pour la lecture à l'aveugle. Pas d'Opus, sauf si la réussite au premier test tombe sous 75 % (le signaler dans le bilan avant de l'utiliser).
@@ -34,7 +35,7 @@ Toutes les commandes partent de la racine du dépôt, sauf mention contraire.
 5. **Jugement.** `python3 pipe.py judgein`, puis un seul sous-agent Sonnet : « Lis `<…>/judge_prompt.md` et exécute ses instructions en remplaçant {J} par J1. Traite tous les objets et vérifie le nombre d'entrées. »
 6. **Correction.** `python3 pipe.py fixin`, puis un seul sous-agent Sonnet (deux au-delà de 20 figures) : « Lis `<…>/fix_prompt.md` et exécute ses instructions en remplaçant {F} par F1. Lance tes scripts un par un. »
 7. **Contrôle des corrections.** Préparer un jeu aveugle avec les seules figures corrigées (fonction `blind(codes, 'R')` de `pipe.py`), un sous-agent Haiku, puis comparer soi-même les réponses aux phrases « a_dire ». Pas d'agent juge pour une douzaine de lignes.
-8. **Site.** `python3 tools/site.py`, puis `npm install` (si besoin) et `npm run build`. Le site doit se construire sans erreur et `content/toc.json` doit montrer le chapitre N comme fait.
+8. **Site.** Écrire d'abord la ligne du journal (étape 9) : `tools/site.py` ne publie que les chapitres présents dans `book/JOURNAL.md`. Puis `python3 tools/site.py`, puis `npm install` (si besoin) et `npm run build`. Le site doit se construire sans erreur et `content/toc.json` doit montrer le chapitre N comme fait.
 9. **Journal.** Ajouter une entrée à `book/JOURNAL.md` : date, chapitre, nombre de fiches, réussies au premier test, réussies après correction, liste des figures encore partielles avec ce qui manque, tout nombre inventé par un agent, toute couleur du livre changée à cause des rôles.
 10. **Commit et push.** Un commit « Chapitre N : <titre> (<n> fiches) » sur `main`, puis `git push`. Ne pas pousser si la construction du site a échoué.
 11. **Bilan** en réponse finale : les chiffres du journal, en quelques lignes.
