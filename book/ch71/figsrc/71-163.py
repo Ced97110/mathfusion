@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 44, 46, r'$Q = 2xy$', 'sujet', 'l')
+box(ax, 4, 22, 22, 11, 'limite', fill=False, dash=True, label=r'$x^2$')
+box(ax, 33, 22, 22, 11, 'sujet', label=r'$2xy$')
+box(ax, 62, 22, 22, 11, 'limite', fill=False, dash=True, label=r'$y^2$')
+text(ax, 15, 17, 'absent', 'limite', 's')
+text(ax, 44, 17, 'seul terme', 'sujet', 's')
+text(ax, 73, 17, 'absent', 'limite', 's')
+text(ax, 44, 7, 'aucun carré à compléter', 'encre', 's')
+save(fig, '71-163')

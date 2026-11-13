@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 24, 56, 40, 11, 'sujet', label=r'$x=(1,\ i)$')
+arrow(ax, (34, 56), (22, 46), 'fixe'); arrow(ax, (54, 56), (66, 46), 'fixe')
+box(ax, 2, 31, 40, 14, 'limite'); text(ax, 22, 40, r'$B(x,x)$', 'limite', 's'); text(ax, 22, 35, r'$1\cdot1+i\cdot i$', 'limite', 's')
+box(ax, 46, 31, 40, 14, 'resultat'); text(ax, 66, 40, r'$\sum x_i\bar{x}_i$', 'resultat', 's'); text(ax, 66, 35, r'$1\cdot1+i\cdot(-i)$', 'resultat', 's')
+text(ax, 22, 25, r'$=0$ : vecteur non nul', 'limite', 's'); text(ax, 66, 25, r'$=2$ : positif', 'resultat', 's')
+arrow(ax, (42, 38), (46, 38), 'varie')
+text(ax, 44, 17, r'second facteur : $i\to-i$', 'varie', 's'); text(ax, 44, 11, 'on prend le conjugué', 'varie', 's')
+save(fig, '71-218')

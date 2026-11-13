@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,2,22,84,52,'resultat')
+text(ax,44,69,'orthogonalité symétrique','resultat','m')
+disc(ax,28,43,17,'sujet'); disc(ax,60,43,17,'autre')
+text(ax,21,55,'symétrique','sujet','s'); text(ax,67,55,'alternée','autre','s')
+text(ax,20,47,r'$B(x,y)$','sujet','s'); text(ax,20,42.5,r'$=B(y,x)$','sujet','s')
+text(ax,68,47,r'$B(x,x)=0$','autre','s')
+text(ax,20,36,'produit scalaire','sujet','s'); text(ax,68,36,'aire orientée','autre','s')
+box(ax,2,2,84,15,'limite',label='toutes les autres formes : ordre à préciser',size='s')
+save(fig,'71-085')

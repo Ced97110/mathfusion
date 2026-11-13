@@ -1,0 +1,179 @@
+[
+ {
+  "code": "71-049",
+  "a_dire": "Le produit scalaire d'une flèche avec elle-même donne le carré de sa longueur, et il vaut 0 pour deux flèches perpendiculaires.",
+  "legende_titre": "Une même opération, deux mesures",
+  "lecture": [
+   "À gauche, la flèche bleue (3 ; 4) donne 3² + 4² = 25, le carré de sa longueur 5.",
+   "À droite, la flèche bleue (1 ; 2) et la flèche violette (2 ; −1) forment un angle droit.",
+   "Le résultat vert 0 signale cet angle droit."
+  ],
+  "a_voir": "Avec y = x, le résultat est le carré de la longueur ; avec 0, l'angle est droit."
+ },
+ {
+  "code": "71-050",
+  "a_dire": "Si on fixe une flèche, le produit scalaire est linéaire en l'autre.",
+  "legende_titre": "La seule propriété gardée",
+  "lecture": [
+   "Le cadre bleu : y est fixé, le résultat est linéaire en x.",
+   "Le cadre violet : x est fixé, le résultat est linéaire en y.",
+   "Les deux droites partent de l'origine : 1 euro pour x₁ (bleu), 2 euros pour x₂ (orange)."
+  ],
+  "a_voir": "Chaque coordonnée a un prix fixe : le résultat suit en ligne droite."
+ },
+ {
+  "code": "71-051",
+  "a_dire": "Une forme bilinéaire B(x, y) prend deux flèches et suit chacune quand l'autre reste fixe.",
+  "legende_titre": "Une fonction de deux flèches",
+  "lecture": [
+   "Le cadre bleu est la première flèche, le cadre violet la seconde.",
+   "Elles donnent le nombre 5 dans le cadre vert du milieu.",
+   "Les flèches orange montrent que doubler une flèche double le résultat : 10 dans les deux cas."
+  ],
+  "a_voir": "Le résultat double quand on double l'une des deux flèches, l'autre ne bougeant pas."
+ },
+ {
+  "code": "71-052",
+  "a_dire": "B(x + x′, y) = B(x, y) + B(x′, y) : le résultat d'une somme est la somme des résultats.",
+  "legende_titre": "Additivité en x",
+  "lecture": [
+   "La flèche bleue x et la flèche violette x′ se suivent dans le carré en pointillés.",
+   "La flèche verte est leur somme.",
+   "À droite, 1 (bleu) plus 2 (violet) donne 3 (vert)."
+  ],
+  "a_voir": "Le résultat de la somme est la somme des résultats."
+ },
+ {
+  "code": "71-053",
+  "a_dire": "B(ax, y) = a B(x, y) : multiplier x par a multiplie le résultat par a.",
+  "legende_titre": "Homogénéité en x",
+  "lecture": [
+   "La flèche bleue courte est x, la flèche orange longue est 4x, marquée en quatre morceaux égaux.",
+   "Le résultat bleu est 5 pour x.",
+   "Le résultat vert est 20, soit 4 fois 5."
+  ],
+  "a_voir": "4 fois la flèche donne 4 fois le résultat."
+ },
+ {
+  "code": "71-054",
+  "a_dire": "B(x, y + y′) doit être égal à B(x, y) + B(x, y′) : cette règle est exigée sur y.",
+  "legende_titre": "La règle sur la seconde flèche",
+  "lecture": [
+   "Le cadre bleu du haut dit que la règle est exigée sur y.",
+   "Les quatre carrés orange sont B(x, y + y′) = 4, pour x = (1, 0).",
+   "Le carré bleu et le carré violet sont B(x, y) et B(x, y′) : 1 + 1 = 2.",
+   "Le signe rouge ≠ montre que, sans la règle, 4 et 2 diffèrent."
+  ],
+  "a_voir": "Sans la règle sur y, les deux nombres diffèrent : la règle est nécessaire."
+ },
+ {
+  "code": "71-055",
+  "a_dire": "B(x, ay) = a B(x, y) : multiplier y par a multiplie le résultat par a.",
+  "legende_titre": "Homogénéité en y",
+  "lecture": [
+   "La flèche grise est x, fixée.",
+   "La flèche violette courte est y, la flèche orange longue est 4y.",
+   "Le résultat passe de 5 (violet) à 20 (vert), soit 4 fois 5."
+  ],
+  "a_voir": "4 fois la seconde flèche donne 4 fois le résultat."
+ },
+ {
+  "code": "71-056",
+  "a_dire": "La matrice de B range les nombres B(eᵢ, eⱼ) pris sur les flèches de base.",
+  "legende_titre": "De la forme à la matrice",
+  "lecture": [
+   "Chaque case de gauche donne la valeur de B sur deux flèches de base.",
+   "La flèche orange range ces valeurs en deux lignes et deux colonnes.",
+   "Les cases vertes sont les nombres 2 et 1, les cases grises les 0."
+  ],
+  "a_voir": "Le nombre bᵢⱼ est à la ligne i, colonne j."
+ },
+ {
+  "code": "71-057",
+  "a_dire": "B(x, y) = xᵀAy : on multiplie A par y, puis la ligne xᵀ par le résultat.",
+  "legende_titre": "Deux multiplications",
+  "lecture": [
+   "En haut : la ligne bleue xᵀ, la matrice grise A, la colonne violette y.",
+   "La flèche orange donne la colonne Ay = (2 ; 2).",
+   "En bas, la ligne bleue fois cette colonne donne 8, en vert."
+  ],
+  "a_voir": "Le résultat est un seul nombre, 8."
+ },
+ {
+  "code": "71-058",
+  "a_dire": "xᵀ est la même liste de nombres que x, écrite en ligne au lieu d'en colonne.",
+  "legende_titre": "Colonne devenue ligne",
+  "lecture": [
+   "Le cadre bleu est la colonne x : 3 en haut, 1 en bas.",
+   "Le cadre violet est la ligne xᵀ : 3, puis 1.",
+   "La flèche orange dit que la liste est la même."
+  ],
+  "a_voir": "Les nombres et leur ordre ne changent pas, seule la disposition change."
+ },
+ {
+  "code": "71-059",
+  "a_dire": "Une matrice carrée donne le même nombre de coordonnées à x et à y.",
+  "legende_titre": "Pourquoi la matrice doit être carrée",
+  "lecture": [
+   "Les cases bleues à gauche comptent les coordonnées de x, les cases violettes en haut celles de y.",
+   "À gauche, 2 et 2 : on peut prendre x = y.",
+   "À droite, 2 et 3 : x = y est impossible, en rouge."
+  ],
+  "a_voir": "Matrice carrée : x et y ont autant de coordonnées."
+ },
+ {
+  "code": "71-060",
+  "a_dire": "Pour le produit scalaire, dans la base habituelle, b₁₁ = 1, b₂₂ = 1 et les deux autres nombres valent 0.",
+  "legende_titre": "La matrice du produit scalaire",
+  "lecture": [
+   "Les flèches e₁ (bleue) et e₂ (violette) sont les flèches de base.",
+   "Les cases vertes b₁₁ et b₂₂ valent 1.",
+   "Les cases grises b₁₂ et b₂₁ valent 0 : c'est la matrice unité."
+  ],
+  "a_voir": "Des 1 sur la diagonale, des 0 ailleurs."
+ },
+ {
+  "code": "71-061",
+  "a_dire": "Les colonnes de P sont les coordonnées des nouvelles flèches, et x = P x′.",
+  "legende_titre": "Changer de base",
+  "lecture": [
+   "Les colonnes de la matrice P : bleue pour u₁ = (1 ; 1), violette pour u₂ = (1 ; −1).",
+   "Pour arriver au point vert, on fait 2 fois u₁ (bleu) puis 1 fois u₂ (violet).",
+   "Le point vert est (3 ; 1) dans l'ancienne base."
+  ],
+  "a_voir": "Les coordonnées (2 ; 1) dans la nouvelle base donnent (3 ; 1) dans l'ancienne."
+ },
+ {
+  "code": "71-062",
+  "a_dire": "La nouvelle matrice est A′ = PᵀAP, et B garde la même valeur.",
+  "legende_titre": "Le calcul PᵀAP",
+  "lecture": [
+   "À gauche, la matrice bleue A et ses flèches x et y.",
+   "À droite, la matrice violette A′ et les mêmes flèches en nouvelles coordonnées.",
+   "Les deux résultats verts sont égaux à 7."
+  ],
+  "a_voir": "Avec A ou avec A′, la valeur de B est 7."
+ },
+ {
+  "code": "71-063",
+  "a_dire": "Deux matrices congruentes décrivent la même forme dans deux bases.",
+  "legende_titre": "Une forme, deux matrices",
+  "lecture": [
+   "Le cadre bleu du haut est la forme.",
+   "À gauche, sa matrice dans la base (eᵢ) ; à droite, sa matrice dans la base (uⱼ).",
+   "La flèche orange relie les deux par PᵀAP."
+  ],
+  "a_voir": "Les deux matrices, 2-0-0-1 et 3-1-1-3, décrivent la même forme."
+ },
+ {
+  "code": "71-064",
+  "a_dire": "La congruence utilise Pᵀ à gauche, la similitude utilise P⁻¹ : ce sont deux matrices différentes.",
+  "legende_titre": "Pᵀ et P⁻¹ ne sont pas égales",
+  "lecture": [
+   "Le cadre bleu montre Pᵀ, pour une forme.",
+   "Le cadre violet montre P⁻¹, pour une transformation.",
+   "Le signe rouge ≠ dit que ces deux matrices sont différentes."
+  ],
+  "a_voir": "Même matrice P, mais Pᵀ n'est pas P⁻¹."
+ }
+]

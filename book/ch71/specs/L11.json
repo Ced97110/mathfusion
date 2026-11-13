@@ -1,0 +1,177 @@
+[
+ {
+  "code": "71-161",
+  "a_dire": "La courbe x²+4xy+y²=4, vue par Lagrange, a des points pour y = 10 : un coefficient positif, un négatif, la courbe est ouverte.",
+  "legende_titre": "Une valeur de y donne deux points",
+  "lecture": [
+   "Le cadre bleu écrit l'équation pour y = 10.",
+   "Le cadre vert donne X² = 304, un nombre positif.",
+   "Sur la droite graduée, les deux disques verts sont les deux solutions de X."
+  ],
+  "a_voir": "Un carré égal à un nombre positif a deux solutions."
+ },
+ {
+  "code": "71-162",
+  "a_dire": "Avec un coefficient positif et un négatif, le côté droit reste positif : la courbe s'éloigne sans fin.",
+  "legende_titre": "Deux signes : courbe fermée ou ouverte",
+  "lecture": [
+   "La courbe violette à gauche a deux signes plus : elle se referme.",
+   "La courbe bleue à droite a un plus et un moins : elle a deux branches qui s'éloignent.",
+   "Le texte vert rappelle que 4 + 3Y² est positif pour toute valeur de Y."
+  ],
+  "a_voir": "Le signe des coefficients suffit à dire si la courbe est ouverte."
+ },
+ {
+  "code": "71-163",
+  "a_dire": "La forme 2xy n'a ni x² ni y² : la méthode ne trouve aucun carré pour commencer.",
+  "legende_titre": "Une forme sans carré",
+  "lecture": [
+   "Le cadre bleu au centre est le seul terme, 2xy.",
+   "Les deux cadres rouges en pointillés sont les carrés x² et y², qui sont absents."
+  ],
+  "a_voir": "Il n'y a aucun carré à compléter."
+ },
+ {
+  "code": "71-164",
+  "a_dire": "En prenant u₁ = e₁ + e₂, on obtient un nombre non nul alors que les deux flèches de base donnent 0.",
+  "legende_titre": "Une somme qui donne un nombre non nul",
+  "lecture": [
+   "Les deux flèches grises sont e₁ et e₂ : la forme vaut 0 sur chacune.",
+   "La flèche orange est leur somme u₁.",
+   "Le cadre vert donne la valeur de la forme sur u₁ : 2, qui n'est pas nul."
+  ],
+  "a_voir": "La somme des deux flèches donne 2, pas 0."
+ },
+ {
+  "code": "71-165",
+  "a_dire": "Avec x = s + t et y = s − t, le produit 2xy devient 2s² − 2t² : deux carrés, un positif et un négatif.",
+  "legende_titre": "Un changement de variables fabrique des carrés",
+  "lecture": [
+   "Le cadre bleu en haut est 2xy.",
+   "Les deux cadres orange remplacent x et y.",
+   "Le cadre vert est le carré de s, le cadre violet est le carré de t, séparés par un moins."
+  ],
+  "a_voir": "Après le changement, il reste deux carrés et plus de terme croisé."
+ },
+ {
+  "code": "71-166",
+  "a_dire": "Quand 2 vaut 0, le facteur 2 disparaît et le carré fabriqué ne marche plus.",
+  "legende_titre": "Le facteur 2 qui disparaît",
+  "lecture": [
+   "La colonne verte est le cas usuel : 2 n'est pas nul, la valeur est 2.",
+   "La colonne rouge est le cas où 1 + 1 = 0 : 2 est nul, la valeur est 0.",
+   "Les flèches relient chaque cas à sa valeur de la forme sur u₁."
+  ],
+  "a_voir": "L'échec vient du fait que 2 vaut 0."
+ },
+ {
+  "code": "71-167",
+  "a_dire": "Sur ℤ/2, la forme est symétrique et non dégénérée, mais elle donne 0 sur chaque flèche : aucune base orthogonale.",
+  "legende_titre": "Une forme qui donne 0 sur toute flèche",
+  "lecture": [
+   "Le cadre bleu est la matrice de lignes 0, 1 puis 1, 0 ; son déterminant vaut 1.",
+   "Les quatre cadres gris sont les quatre flèches possibles.",
+   "Chaque cadre rouge dessous donne la valeur 0 de la forme sur cette flèche."
+  ],
+  "a_voir": "La forme vaut 0 sur chaque flèche, donc aucune base ne peut être orthogonale."
+ },
+ {
+  "code": "71-168",
+  "a_dire": "Une base orthogonale pour la forme n'est pas toujours perpendiculaire au sens usuel ; on choisit u₁ = (1, 1) et u₂ = (1, −1).",
+  "legende_titre": "Orthogonale pour la forme, pas toujours perpendiculaire",
+  "lecture": [
+   "À gauche, les deux flèches bleues sont celles de la première courbe ; l'arc rouge montre qu'elles ne sont pas perpendiculaires.",
+   "À droite, les deux flèches vertes sont la base choisie ; le petit carré montre l'angle droit."
+  ],
+  "a_voir": "La base choisie est orthogonale pour la forme et perpendiculaire."
+ },
+ {
+  "code": "71-169",
+  "a_dire": "La matrice P s'écrit avec les deux flèches u₁ et u₂ rangées en colonnes.",
+  "legende_titre": "Ranger des flèches en colonnes",
+  "lecture": [
+   "Le cadre bleu u₁ = (1, 1) devient la colonne 1, en bleu.",
+   "Le cadre violet u₂ = (1, −1) devient la colonne 2, en violet.",
+   "Le tableau a deux lignes et deux colonnes."
+  ],
+  "a_voir": "Chaque flèche est écrite comme une colonne de P."
+ },
+ {
+  "code": "71-170",
+  "a_dire": "Chaque coefficient de AP est une ligne de A multipliée par une colonne de P.",
+  "legende_titre": "Ligne par colonne",
+  "lecture": [
+   "Le cadre bleu est la première ligne de A : 5 et 3.",
+   "Les cadres violets sont les deux colonnes de P.",
+   "Les cadres verts donnent 5 + 3 = 8 et 5 − 3 = 2, première ligne de AP."
+  ],
+  "a_voir": "Une ligne par une colonne donne un nombre."
+ },
+ {
+  "code": "71-171",
+  "a_dire": "PᵀAP se calcule ligne par colonne et donne 16 et 4 sur la diagonale, 0 ailleurs.",
+  "legende_titre": "Un produit qui donne une diagonale",
+  "lecture": [
+   "Chaque case est une ligne de Pᵀ multipliée par une colonne de AP.",
+   "Les cases vertes sont sur la diagonale : 16 et 4.",
+   "Les cases grises valent 0."
+  ],
+  "a_voir": "Les zéros sont hors de la diagonale, 16 et 4 sur la diagonale."
+ },
+ {
+  "code": "71-172",
+  "a_dire": "Les termes en s fois t s'annulent : la forme vaut 16s² + 4t² pour tous les points.",
+  "legende_titre": "Les termes croisés s'annulent",
+  "lecture": [
+   "Les deux cadres orange sont +10st et −10st : ils s'annulent.",
+   "Le cadre vert est le résultat, 16s² + 4t².",
+   "En bas, l'essai avec s = t = 1 donne 20 des deux côtés."
+  ],
+  "a_voir": "Le résultat avec des lettres est confirmé par l'essai chiffré."
+ },
+ {
+  "code": "71-173",
+  "a_dire": "La courbe 4s² + t² = 1 coupe les axes en s = ±1/2 et t = ±1.",
+  "legende_titre": "Quatre points sur les axes",
+  "lecture": [
+   "La courbe bleue est 4s² + t² = 1.",
+   "Les quatre disques verts sont ses points sur les axes.",
+   "Sur l'axe des s, ils sont à 1/2 et −1/2 ; sur l'axe des t, à 1 et −1."
+  ],
+  "a_voir": "Les sommets sont s = ±1/2 et t = ±1."
+ },
+ {
+  "code": "71-174",
+  "a_dire": "La même courbe est inclinée avec les coordonnées x, y et droite avec s, t.",
+  "legende_titre": "Même courbe, deux séries de coordonnées",
+  "lecture": [
+   "À gauche, la courbe bleue est inclinée ; la flèche orange est u₁, la flèche verte est u₂.",
+   "À droite, la même courbe est droite ; l'axe orange est s, l'axe vert est t.",
+   "Seules les coordonnées changent."
+  ],
+  "a_voir": "Les axes suivent l'ellipse après le changement de base."
+ },
+ {
+  "code": "71-175",
+  "a_dire": "La première courbe est une ellipse inclinée à 45 degrés, plus longue selon u₂ que selon u₁.",
+  "legende_titre": "Ellipse inclinée à 45 degrés",
+  "lecture": [
+   "La courbe bleue est l'ellipse.",
+   "La flèche orange u₁ va à environ 0,71 de l'origine : c'est la direction courte.",
+   "La flèche verte u₂ va à environ 1,41 : c'est la direction longue.",
+   "L'arc orange montre l'angle de 45 degrés avec l'axe x."
+  ],
+  "a_voir": "L'ellipse est plus longue selon u₂ et inclinée à 45 degrés."
+ },
+ {
+  "code": "71-176",
+  "a_dire": "Le contrôle donne 64 des deux côtés : (det P)² × det A = det de la matrice diagonale.",
+  "legende_titre": "Deux produits qui donnent 64",
+  "lecture": [
+   "Le rectangle de gauche a pour côtés 4 et 16 : (det P)² et det A.",
+   "Le rectangle de droite a pour côtés 16 et 4 : la diagonale.",
+   "Les deux rectangles ont la même aire, 64."
+  ],
+  "a_voir": "Les deux calculs donnent 64."
+ }
+]

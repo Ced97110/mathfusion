@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 24, 68, 40, 10, 'sujet', label=r'$A$ (5, 3 ; 3, 5)')
+arrow(ax, (34, 67), (23, 60), 'resultat'); arrow(ax, (54, 67), (65, 60), 'limite')
+text(ax, 22, 56, r'$P/\sqrt{2}$ : $P^T=P^{-1}$', 'resultat', 's'); text(ax, 66, 56, r'$P$ : $P^T\neq P^{-1}$', 'limite', 's')
+box(ax, 3, 36, 40, 11, 'autre', label=r'$P^TAP$ : diag(8, 2)', size='s'); box(ax, 45, 36, 40, 11, 'autre', label=r'$P^TAP$ : diag(16, 4)', size='s')
+box(ax, 3, 10, 40, 11, 'sujet', label=r'$P^{-1}AP$ : diag(8, 2)', size='s'); box(ax, 45, 10, 40, 11, 'sujet', label=r'$P^{-1}AP$ : diag(8, 2)', size='s')
+text(ax, 23, 28.5, '=', 'resultat', 'xl'); text(ax, 65, 28.5, r'$\neq$', 'limite', 'xl')
+text(ax, 23, 3.5, 'même résultat', 'resultat', 's'); text(ax, 65, 3.5, 'résultats différents', 'limite', 's')
+save(fig, '71-209')

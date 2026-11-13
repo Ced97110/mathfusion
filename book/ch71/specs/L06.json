@@ -1,0 +1,188 @@
+[
+ {
+  "code": "71-081",
+  "a_dire": "Quand B est non dégénérée et que U a pour dimension k, l'orthogonal de U a pour dimension n − k.",
+  "legende_titre": "Une droite dans le plan : sa perpendiculaire",
+  "lecture": [
+   "Le cadre en pointillés est le plan, de dimension 2 (n = 2).",
+   "La droite bleue est U, de dimension 1 (k = 1).",
+   "La droite verte est l'orthogonal de U : elle coupe la droite bleue à angle droit.",
+   "Dans l'encadré, 2 moins 1 donne la dimension de la droite verte : 1."
+  ],
+  "a_voir": "La droite verte a pour dimension n − k, soit 2 − 1 = 1."
+ },
+ {
+  "code": "71-082",
+  "a_dire": "Dans l'espace usuel, la droite perpendiculaire à un plan a pour dimension 3 − 2 = 1.",
+  "legende_titre": "Un crayon planté sur une feuille",
+  "lecture": [
+   "Le losange bleu est le plan, de dimension 2.",
+   "La flèche verte est la droite perpendiculaire au plan, de dimension 1.",
+   "L'espace entier a 3 dimensions.",
+   "L'encadré vert écrit le calcul : 3 − 2 = 1."
+  ],
+  "a_voir": "La droite perpendiculaire a la dimension de l'espace moins celle du plan."
+ },
+ {
+  "code": "71-083",
+  "a_dire": "L'orthogonalité n'est pas toujours réciproque : x ⟂ y ne donne pas toujours y ⟂ x.",
+  "legende_titre": "Perpendiculaire dans un seul sens ?",
+  "lecture": [
+   "À gauche, pour le produit scalaire, les deux flèches vertes vont dans les deux sens : x ⟂ y et y ⟂ x.",
+   "À droite, pour une autre forme, la flèche de x vers y est verte.",
+   "La flèche rouge barrée, de y vers x, montre que ce sens n'est pas assuré.",
+   "Le cercle bleu est x et le cercle orange est y."
+  ],
+  "a_voir": "Seul le cas de gauche marche dans les deux sens."
+ },
+ {
+  "code": "71-084",
+  "a_dire": "Avec B(x, y) = x₁y₂, e₂ est orthogonal à e₁ mais e₁ n'est pas orthogonal à e₂.",
+  "legende_titre": "Un cas où l'ordre change la réponse",
+  "lecture": [
+   "Les deux flèches de gauche sont e₁ = (1, 0) en bleu et e₂ = (0, 1) en violet.",
+   "L'encadré rouge calcule B(e₁, e₂) = 1 × 1 = 1 : ce n'est pas zéro, donc e₁ n'est pas orthogonal à e₂.",
+   "L'encadré vert calcule B(e₂, e₁) = 0 × 0 = 0 : c'est zéro, donc e₂ est orthogonal à e₁."
+  ],
+  "a_voir": "Les deux ordres donnent deux réponses différentes : 1 et 0."
+ },
+ {
+  "code": "71-085",
+  "a_dire": "L'orthogonalité est symétrique exactement quand B est symétrique ou alternée.",
+  "legende_titre": "Deux familles où l'ordre ne compte pas",
+  "lecture": [
+   "Le grand cadre vert contient les formes dont l'orthogonalité est symétrique.",
+   "Le disque bleu est la famille des formes symétriques, comme le produit scalaire.",
+   "Le disque violet est la famille des formes alternées, comme l'aire orientée.",
+   "Le cadre rouge du bas contient toutes les autres formes : l'ordre doit être précisé."
+  ],
+  "a_voir": "Seules deux familles sont dans le cadre vert."
+ },
+ {
+  "code": "71-086",
+  "a_dire": "Une forme est symétrique si échanger x et y ne change pas la valeur : B(x, y) = B(y, x).",
+  "legende_titre": "Échanger les deux flèches",
+  "lecture": [
+   "La flèche bleue est x = (3, 1) et la flèche orange est y = (1, 2).",
+   "L'encadré bleu calcule B(x, y) = 3 × 1 + 1 × 2 = 5.",
+   "L'encadré orange calcule B(y, x) = 1 × 3 + 2 × 1 = 5, après l'échange.",
+   "La double flèche grise relie les deux ordres, et le bandeau vert dit que les deux résultats sont égaux."
+  ],
+  "a_voir": "Les deux ordres donnent le même nombre : 5."
+ },
+ {
+  "code": "71-087",
+  "a_dire": "Seules deux familles de formes, les symétriques et les alternées, permettent de dire « perpendiculaire » sans préciser l'ordre.",
+  "legende_titre": "Trois formes, deux familles",
+  "lecture": [
+   "Chaque ligne est une forme : le produit scalaire, l'aire orientée, et la forme x₁y₂.",
+   "Les deux flèches vertes des deux premières lignes vont dans les deux sens : l'ordre n'est pas à préciser.",
+   "Sur la troisième ligne, la flèche du retour est rouge et barrée : il faut préciser l'ordre."
+  ],
+  "a_voir": "Les deux premières lignes se disent sans ordre, la troisième non."
+ },
+ {
+  "code": "71-088",
+  "a_dire": "B(x, y) = x₁y₂ − x₂y₁ est le déterminant de la matrice dont les colonnes sont x et y.",
+  "legende_titre": "Un déterminant 2 par 2 en deux produits",
+  "lecture": [
+   "La colonne bleue est x = (3, 1) et la colonne orange est y = (1, 2) : elles forment une matrice.",
+   "Le trait vert relie 3 et 2 : il donne x₁y₂ = 3 × 2 = 6.",
+   "Le trait orange relie 1 et 1 : il donne x₂y₁ = 1 × 1 = 1.",
+   "Le cadre vert dit que B(x, y) est le déterminant de la matrice : x₁y₂ − x₂y₁ = 6 − 1 = 5."
+  ],
+  "a_voir": "On multiplie en croix, on soustrait : c'est le déterminant de la matrice des colonnes x et y."
+ },
+ {
+  "code": "71-089",
+  "a_dire": "Échanger l'ordre garde le même parallélogramme mais renverse le sens de rotation : B(x, y) = 5 et B(y, x) = −5.",
+  "legende_titre": "Même dessin, sens inverse",
+  "lecture": [
+   "Dans les deux dessins, la flèche bleue est x = (3, 1) et la flèche orange est y = (1, 2).",
+   "Le parallélogramme gris est le même à gauche et à droite.",
+   "La flèche courbe orange va de x vers y à gauche, de y vers x à droite.",
+   "À gauche la valeur est 5, à droite elle est −5."
+  ],
+  "a_voir": "Seul le sens de la flèche courbe change, et avec lui le signe."
+ },
+ {
+  "code": "71-090",
+  "a_dire": "Pour x = (3, 1) et y = (1, 2), B(x, y) = 3 × 2 − 1 × 1 = 5 est l'aire du parallélogramme.",
+  "legende_titre": "Le calcul et l'aire du parallélogramme",
+  "lecture": [
+   "La flèche bleue est x et la flèche orange est y, sur une grille de carreaux.",
+   "Le parallélogramme hachuré a pour aire 5.",
+   "Le cadre bleu calcule B(x, y) = 3 × 2 − 1 × 1.",
+   "Le signe = relie ce calcul à l'aire hachurée, dans le cadre vert."
+  ],
+  "a_voir": "Le calcul B(x, y) donne 5, comme l'aire du parallélogramme."
+ },
+ {
+  "code": "71-091",
+  "a_dire": "Le signe de l'aire orientée dit dans quel sens on tourne du premier vecteur au second.",
+  "legende_titre": "Aire et sens de rotation",
+  "lecture": [
+   "Le parallélogramme bleu a une aire de 5 carreaux.",
+   "La petite flèche courbe va de x vers y, dans le sens inverse des aiguilles d'une montre : signe +.",
+   "La grande flèche courbe va de y vers x, dans le sens des aiguilles d'une montre : signe −."
+  ],
+  "a_voir": "La taille de l'aire ne change pas, le signe dit le sens."
+ },
+ {
+  "code": "71-092",
+  "a_dire": "B(x, x) = 0 : le parallélogramme construit sur x et x est aplati, son aire est nulle.",
+  "legende_titre": "Deux fois la même flèche",
+  "lecture": [
+   "À gauche, le parallélogramme gris est construit sur x et y : son aire est 5.",
+   "À droite, les flèches bleue et orange sont la même flèche x.",
+   "Le trait rouge est le parallélogramme aplati sur une droite.",
+   "Le calcul 3 × 1 − 1 × 3 donne 0 : l'aire est nulle."
+  ],
+  "a_voir": "Avec deux fois la même flèche, l'aire vaut 0."
+ },
+ {
+  "code": "71-093",
+  "a_dire": "Une forme est alternée si B(x, x) = 0 pour toute flèche x.",
+  "legende_titre": "Quand une flèche prise deux fois donne 0",
+  "lecture": [
+   "Les deux colonnes calculent la forme sur x = (3, 1) prise deux fois.",
+   "À gauche, le produit scalaire donne 10 : il n'est pas alterné.",
+   "À droite, l'aire orientée donne 0 : elle est alternée."
+  ],
+  "a_voir": "Une forme alternée donne 0 sur une flèche prise deux fois."
+ },
+ {
+  "code": "71-094",
+  "a_dire": "Une forme alternée change de signe quand on échange ses arguments : B(y, x) = −B(x, y).",
+  "legende_titre": "Échanger les arguments change le signe",
+  "lecture": [
+   "Sur la première droite graduée, l'aire orientée donne 5 (point bleu) et −5 (point orange).",
+   "La flèche courbe va de 5 à −5 : les deux valeurs sont opposées.",
+   "Sur la seconde droite, le produit scalaire donne 5 dans les deux ordres : un seul point, bleu dans orange."
+  ],
+  "a_voir": "L'aire orientée passe de 5 à −5, le produit scalaire reste à 5."
+ },
+ {
+  "code": "71-095",
+  "a_dire": "Pour montrer B(y, x) = −B(x, y), on développe B(x + y, x + y), qui vaut 0.",
+  "legende_titre": "La preuve en trois étapes",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : B(x + y, x + y) = 0.",
+   "La flèche orange est l'étape qui porte le poids : le développement en quatre termes.",
+   "Les deux termes gris sont nuls ; les deux termes orange restent.",
+   "Les cadres verts donnent l'arrivée : B(x, y) + B(y, x) = 0, donc B(y, x) = −B(x, y)."
+  ],
+  "a_voir": "Les deux termes gris tombent et il reste la somme des deux termes orange."
+ },
+ {
+  "code": "71-096",
+  "a_dire": "La matrice S de l'aire orientée a des lignes (0, 1) et (−1, 0).",
+  "legende_titre": "Les quatre nombres de la matrice S",
+  "lecture": [
+   "Chaque case est B(eᵢ, eⱼ) : la ligne donne i et la colonne donne j.",
+   "Les cases grises de la diagonale valent 0.",
+   "Les cases orange valent 1 et −1 : elles sont opposées, reliées par la double flèche."
+  ],
+  "a_voir": "La diagonale est nulle et les deux autres cases sont opposées."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 3, 3, 82, 62, 'sujet', fill=False, dash=True)
+text(ax, 44, 60, r'$V^*$ : les règles de prix', 'sujet', 'l')
+box(ax, 8, 38, 24, 10, 'sujet', label=r'$f$ : 2 ; 1')
+box(ax, 8, 10, 24, 10, 'autre', label=r'$g$ : 1 ; 3')
+box(ax, 50, 38, 30, 10, 'resultat', label=r'$2f$ : 4 ; 2')
+box(ax, 50, 10, 30, 10, 'resultat', label=r'$f+g$ : 3 ; 4')
+arrow(ax, (33, 43), (49, 43), 'varie'); text(ax, 41, 47, r'$\times 2$', 'varie', 's')
+arrow(ax, (33, 15), (49, 15), 'varie'); arrow(ax, (24, 37), (56, 21), 'varie'); text(ax, 41, 28, '+', 'varie', 'l')
+save(fig, '71-038')

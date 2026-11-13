@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,'chaque case sert une fois','encre','m')
+text(ax,40,49,r'$y_1=1$','autre','m'); text(ax,70,49,r'$y_2=2$','autre','m')
+text(ax,14,38,r'$x_1=3$','autre','m'); text(ax,14,23,r'$x_2=1$','autre','m')
+box(ax,26,32,28,12,'sujet',label=r'$2\times3\times1=6$')
+box(ax,56,32,28,12,'fixe',label='0')
+box(ax,26,17,28,12,'fixe',label='0')
+box(ax,56,17,28,12,'sujet',label=r'$1\times1\times2=2$')
+arrow(ax,(30,32),(30,12),'varie'); arrow(ax,(70,17),(70,12),'varie')
+box(ax,26,2,58,10,'resultat',label=r'somme : $6+2=8$',weight='bold')
+save(fig,'71-147')

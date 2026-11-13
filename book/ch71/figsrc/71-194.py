@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+o = (36, 34); s = 6
+G = lambda x, y: (o[0] + x * s, o[1] + y * s)
+arrow(ax, G(-3.5, 0), G(3.8, 0), 'fixe', lw=0.7)
+for x in (-1, 1): line(ax, [G(x, -4.2), G(x, 6.2)], 'sujet', lw=1.4)
+arrow(ax, G(0, -4.2), G(0, 6.4), 'varie', lw=1.0)
+for p in ((1, 0), (1, 5), (1, -3)): disc(ax, *G(*p), 0.9, 'sujet')
+text(ax, G(1, 5)[0] + 2, G(1, 5)[1], r'$(1,5)$', 'sujet', 's', ha='left')
+text(ax, G(1, 0)[0] + 2, G(1, 0)[1] + 2.2, r'$(1,0)$', 'sujet', 's', ha='left')
+text(ax, G(1, -3)[0] + 2, G(1, -3)[1], r'$(1,-3)$', 'sujet', 's', ha='left')
+text(ax, G(-1, 5)[0] - 2, G(-1, 5)[1], r'$x=-1$', 'sujet', 's', ha='right')
+text(ax, G(1, -4.2)[0] + 2, G(-1, -4.2)[1] - 2, r'$x=1$', 'sujet', 's', ha='left')
+text(ax, 4, 56, 'axe vertical :', 'varie', 's', ha='left'); text(ax, 4, 52, 'le radical', 'varie', 's', ha='left')
+text(ax, 4, 72, r'$Q=x^2=1$', 'sujet', 'm', ha='left')
+text(ax, 62, 66, 'la 2e coordonnée', 'encre', 's', ha='left'); text(ax, 62, 62, 'ne change rien', 'encre', 's', ha='left')
+save(fig, '71-194')

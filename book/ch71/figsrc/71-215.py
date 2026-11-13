@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+o = (44, 36)
+arrow(ax, (o[0]-40, o[1]), (o[0]+40, o[1]), 'fixe', lw=0.6); arrow(ax, (o[0], o[1]-33), (o[0], o[1]+33), 'fixe', lw=0.6)
+text(ax, o[0]-39, o[1]+3, 'axe horizontal', 'fixe', 's', ha='left')
+text(ax, o[0]+2, o[1]+31, 'axe vertical', 'fixe', 's', ha='left')
+a, b = 20, 14
+P = (o[0]+a, o[1]+b); P1 = (o[0]+a, o[1]-b); P2 = (o[0]-a, o[1]-b)
+arrow(ax, (P[0], P[1]-2), (P1[0], P1[1]+2), 'varie'); arrow(ax, (P1[0]-2, P1[1]), (P2[0]+2, P2[1]), 'varie')
+disc(ax, *P, 1.4, 'sujet', fill=True); disc(ax, *P1, 1.4, 'autre', fill=True); disc(ax, *P2, 1.4, 'resultat', fill=True)
+text(ax, P[0]+3, P[1]+3, r'$(x,\ y)$', 'sujet', 's', ha='left')
+text(ax, P1[0]+3, P1[1]-3, r'$(x,\ -y)$', 'autre', 's', ha='left')
+text(ax, P2[0]-3, P2[1]-3.5, r'$(-x,\ -y)$', 'resultat', 's', ha='right'); ax.texts[-1].set_ha('left'); ax.texts[-1].set_x(P2[0]-6)
+text(ax, o[0]+4, o[1]-b-8+14-14, 'symétrie 1', 'varie', 's', ha='left')
+ax.texts[-1].set_position((P[0]+3, o[1]+0)); ax.texts[-1].set_va('bottom')
+text(ax, o[0]-4, o[1]-b-6.5, 'symétrie 2', 'varie', 's', ha='right')
+text(ax, 44, 4, 'chaque symétrie conserve B', 'resultat', 's')
+save(fig, '71-215')

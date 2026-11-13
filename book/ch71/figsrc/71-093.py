@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,r'$x=(3,1)$ prise deux fois','encre','s')
+box(ax,2,28,40,24,'fixe'); box(ax,46,28,40,24,'resultat')
+text(ax,22,46,'produit scalaire','encre','s'); text(ax,22,38,r'$3\times3+1\times1$','encre','s'); text(ax,22,32,r'$=10$','encre','m')
+text(ax,66,46,'aire orientée','resultat','s'); text(ax,66,38,r'$3\times1-1\times3$','resultat','s'); text(ax,66,32,r'$=0$','resultat','m')
+box(ax,46,6,40,16,'resultat',label=r'alternée : $B(x,x)=0$',size='s')
+box(ax,2,6,40,16,'fixe',label='pas alternée',size='s')
+arrow(ax,(66,28),(66,22.5),'resultat'); arrow(ax,(22,28),(22,22.5),'fixe')
+save(fig,'71-093')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+text(ax,44,74,'compléter le carré en $x$','encre','m')
+box(ax,16,60,30,10,'sujet',label=r'$x^2+4xy$'); box(ax,52,60,20,10,'fixe',label=r'$+y^2$')
+arrow(ax,(44,58),(44,47),'varie'); text(ax,48,52.5,'regrouper en carré','varie','s',ha='left')
+box(ax,4,36,28,10,'sujet',label=r'$(x+2y)^2$'); box(ax,38,36,20,10,'varie',label=r'$-4y^2$'); box(ax,62,36,18,10,'fixe',label=r'$+y^2$')
+arrow(ax,(48,34),(48,23),'varie'); text(ax,52,28.5,r'$-4y^2+y^2$','varie','s',ha='left')
+box(ax,4,10,30,10,'sujet',label=r'$(x+2y)^2$'); box(ax,40,10,22,10,'varie',label=r'$-3y^2$')
+box(ax,68,10,18,10,'resultat',label=r'plus de $xy$')
+save(fig,'71-155')

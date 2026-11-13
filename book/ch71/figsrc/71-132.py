@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(66)
+s = 7.0; o = (8, 12)
+arrow(ax, o, (o[0] + 40, o[1]), 'fixe'); arrow(ax, o, (o[0], o[1] + 50), 'fixe')
+p = (o[0] + 3 * s, o[1] + 5 * s)
+arrow(ax, o, p, 'sujet', lw=1.5)
+line(ax, [p, (p[0], o[1])], 'varie', dash=True); line(ax, [p, (o[0], p[1])], 'resultat', dash=True)
+text(ax, p[0] + 9, p[1] - 1, '(3, 5)', 'sujet', 's')
+text(ax, p[0], o[1] - 4, r'$e_1^*$ lit 3', 'varie', 's')
+text(ax, o[0] + 11, p[1] + 4, r'$e_2^*$ lit 5', 'resultat', 's')
+text(ax, 66, 54, r'$e_i^*$', 'encre', 'xl')
+text(ax, 66, 40, 'l’étoile : une forme', 'fixe', 's')
+text(ax, 66, 34, 'l’indice : le numéro', 'fixe', 's')
+save(fig, '71-132')

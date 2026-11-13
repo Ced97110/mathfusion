@@ -1,0 +1,146 @@
+[
+ {
+  "code": "71-209",
+  "a_dire": "Les deux produits PᵀAP et P⁻¹AP donnent le même résultat quand Pᵀ = P⁻¹.",
+  "legende_titre": "Deux chemins pour A",
+  "lecture": [
+   "La boîte bleue du haut est la matrice A.",
+   "À gauche (vert), avec P divisée par racine de 2, on a Pᵀ = P⁻¹ : PᵀAP et P⁻¹AP valent tous deux diag(8, 2).",
+   "À droite (rouge), avec P seule, Pᵀ n'est pas P⁻¹ : PᵀAP vaut diag(16, 4) et P⁻¹AP vaut diag(8, 2).",
+   "Le signe = vert et le signe ≠ rouge disent si les deux résultats sont égaux."
+  ],
+  "a_voir": "Les deux produits donnent le même résultat quand Pᵀ = P⁻¹."
+ },
+ {
+  "code": "71-210",
+  "a_dire": "Compléter le carré est la diagonalisation de Lagrange, et le discriminant est lié au déterminant.",
+  "legende_titre": "Compléter le carré, c'est Lagrange",
+  "lecture": [
+   "La boîte bleue est la forme de coefficients a = 5, b = 6 et c = 5.",
+   "La flèche orange est l'action de compléter le carré.",
+   "La boîte verte est le résultat : 5 et seize cinquièmes devant des carrés ; 3/5 est b/2a et 16/5 est c − b²/4a.",
+   "En bas, les deux boîtes violettes sont le discriminant et le déterminant, reliés par le facteur −1/4."
+  ],
+  "a_voir": "Compléter le carré, c'est la diagonalisation de Lagrange ; le déterminant vaut −1/4 fois le discriminant."
+ },
+ {
+  "code": "71-211",
+  "a_dire": "Le radical est l'ensemble des vecteurs z tels que Az = 0 ; la forme est non dégénérée si det A ≠ 0.",
+  "legende_titre": "Radical et déterminant",
+  "lecture": [
+   "La boîte bleue donne la matrice A et son déterminant, qui vaut 0.",
+   "La flèche bleue est le vecteur z = (−2, 1).",
+   "La droite verte contient tous les vecteurs qui donnent 0 : c'est le radical.",
+   "Le rond orange est l'origine, point de départ."
+  ],
+  "a_voir": "Comme le déterminant vaut 0, des vecteurs non nuls donnent 0 : la forme est dégénérée."
+ },
+ {
+  "code": "71-212",
+  "a_dire": "La base duale lit combien de fois on prend chaque vecteur de la base.",
+  "legende_titre": "Compter les vecteurs de la base",
+  "lecture": [
+   "Les trois flèches bleues sont trois fois le premier vecteur de la base.",
+   "La flèche orange est une fois le second vecteur.",
+   "Le rond vert est le point (4, 2), atteint au bout du chemin.",
+   "À droite, les deux formules donnent 3 et 1 : ce sont ces nombres de fois."
+  ],
+  "a_voir": "Les formules de droite lisent les nombres de fois, 3 et 1, de chaque flèche."
+ },
+ {
+  "code": "71-213",
+  "a_dire": "Avec les vecteurs divisés par racine de 2, la diagonale vaut 8 et 2, les valeurs propres de A.",
+  "legende_titre": "8 et 2 sont les valeurs propres",
+  "lecture": [
+   "La boîte violette est diag(16, 4), obtenue avec u₁ et u₂.",
+   "La flèche orange divise chaque vecteur par racine de 2.",
+   "La boîte verte est diag(8, 2) : ce sont les valeurs propres de A.",
+   "Les deux flèches du bas ont la même direction : A u₁ est 8 fois u₁."
+  ],
+  "a_voir": "Les coefficients 8 et 2 sont aussi ceux par lesquels A multiplie ses vecteurs propres."
+ },
+ {
+  "code": "71-214",
+  "a_dire": "Sans la condition de garder B on peut envoyer (1, 0) sur (1, 1) ; en la gardant, c'est impossible car Q vaut 1 et 2.",
+  "legende_titre": "Garder B ou non",
+  "lecture": [
+   "Le cercle bleu est l'ensemble où Q vaut 1 ; (1, 0) est dessus.",
+   "Le cercle violet en pointillés est l'ensemble où Q vaut 2 ; (1, 1) est dessus.",
+   "La flèche orange va de (1, 0) à (1, 1).",
+   "Garder B garde Q : on ne peut pas passer d'un cercle à l'autre."
+  ],
+  "a_voir": "Les deux points sont sur deux cercles différents, donc aucune transformation qui garde B ne les relie."
+ },
+ {
+  "code": "71-215",
+  "a_dire": "Enchaîner deux symétries qui conservent B donne une transformation qui conserve B.",
+  "legende_titre": "Symétrie, puis symétrie",
+  "lecture": [
+   "Le rond bleu est le point (x, y).",
+   "La première flèche orange le renvoie sur (x, −y) en violet, de l'autre côté de l'axe horizontal.",
+   "La seconde flèche l'envoie sur (−x, −y) en vert, de l'autre côté de l'axe vertical.",
+   "Chaque symétrie conserve B, donc le résultat aussi."
+  ],
+  "a_voir": "Le résultat vert vient de deux symétries : le produit conserve B."
+ },
+ {
+  "code": "71-216",
+  "a_dire": "Le groupe orthogonal est la famille des P avec PᵀAP = A ; enchaîner deux membres reste dans la famille.",
+  "legende_titre": "Le groupe orthogonal",
+  "lecture": [
+   "Le grand cadre bleu en pointillés est le groupe orthogonal.",
+   "Les trois boîtes bleues sont trois matrices du groupe.",
+   "La flèche verte enchaîne deux d'entre elles : on reste dans le cadre.",
+   "La boîte violette est le voisin, le groupe symplectique, qui conserve aussi quelque chose."
+  ],
+  "a_voir": "Les matrices dans le cadre vérifient PᵀAP = A, et enchaîner deux d'entre elles reste dans le cadre."
+ },
+ {
+  "code": "71-217",
+  "a_dire": "Le groupe symplectique contient des transformations qui conservent l'aire orientée sans conserver les longueurs.",
+  "legende_titre": "Aire conservée, longueur changée",
+  "lecture": [
+   "Le carré bleu est formé des vecteurs (1, 0) et (0, 1) : son aire vaut 1.",
+   "Le rectangle vert est son image : (2, 0) et (0, un demi), aire 1 aussi.",
+   "La flèche orange est la transformation : fois 2 d'un côté, divisé par 2 de l'autre.",
+   "En rouge, la longueur de (1, 0) passe de 1 à 2."
+  ],
+  "a_voir": "L'aire reste 1 mais la longueur change : il faut un groupe pour l'aire."
+ },
+ {
+  "code": "71-218",
+  "a_dire": "Avec le conjugué, la somme donne un nombre positif, nul seulement pour le vecteur nul.",
+  "legende_titre": "Le conjugué rend la mesure positive",
+  "lecture": [
+   "La boîte bleue du haut est le vecteur (1, i).",
+   "La boîte rouge est la forme bilinéaire : elle donne 0 pour ce vecteur non nul.",
+   "La boîte verte est la somme avec le conjugué : elle donne 2.",
+   "La flèche orange est le changement : le second facteur i devient −i."
+  ],
+  "a_voir": "Un seul changement, le conjugué, fait passer de 0 à 2."
+ },
+ {
+  "code": "71-219",
+  "a_dire": "L'aire orientée en dimension 2 est le déterminant ; en dimension 3, le même objet est un volume orienté.",
+  "legende_titre": "Aire, volume, même objet",
+  "lecture": [
+   "Le rectangle bleu de 2 sur 3 cases est l'aire orientée : 6.",
+   "Les cubes forment un bloc de 2 sur 3 sur 4 : le volume orienté vaut 24.",
+   "La flèche orange relie les deux : c'est le même objet.",
+   "Le produit des côtés donne le nombre dans les deux cas."
+  ],
+  "a_voir": "Le déterminant du plan, 6, devient le volume de l'espace, 24, avec un facteur de plus."
+ },
+ {
+  "code": "71-220",
+  "a_dire": "Pour (2, 1) la surface a un seul morceau, pour (1, 2) deux morceaux ; les deux exemples ne disent pas qui décide.",
+  "legende_titre": "Combien de morceaux ?",
+  "lecture": [
+   "À gauche, la surface bleue est faite de cercles qui se suivent : un morceau.",
+   "À droite, la surface violette est coupée en deux parties, de part et d'autre de x = 0.",
+   "Le texte rouge dit que x doit être au moins 1 ou au plus −1 : rien entre les deux.",
+   "En haut : p et q changent tous les deux d'un exemple à l'autre."
+  ],
+  "a_voir": "Il y a un morceau à gauche et deux à droite ; il faut d'autres exemples pour savoir de p ou q lequel décide."
+ }
+]

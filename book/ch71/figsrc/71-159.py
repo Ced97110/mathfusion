@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+text(ax,44,59,r'au point $(1,-1)$','encre','m')
+box(ax,4,40,38,10,'sujet',label=r'$5x^2+6xy+5y^2$'); arrow(ax,(42,45),(48,45),'varie')
+box(ax,48,40,36,10,'resultat',label=r'$5-6+5=4$')
+box(ax,4,24,38,10,'autre',label=r'$5(x+\frac{3}{5}y)^2$'); arrow(ax,(42,29),(48,29),'varie'); box(ax,48,24,14,10,'varie',label='0,8')
+box(ax,4,8,38,10,'autre',label=r'$\frac{16}{5}y^2$'); arrow(ax,(42,13),(48,13),'varie'); box(ax,48,8,14,10,'varie',label='3,2')
+arrow(ax,(62,29),(68,29),'resultat'); arrow(ax,(62,13),(68,13),'resultat')
+box(ax,68,8,16,26,'resultat',label='4',size='l',weight='bold')
+text(ax,76,37,'=','resultat','l',weight='bold')
+save(fig,'71-159')

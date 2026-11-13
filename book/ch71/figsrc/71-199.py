@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 60, r'sur la droite $U$', 'resultat', 'm'); text(ax, 66, 60, 'deux droites', 'limite', 'm')
+line(ax, [(4, 38), (40, 38)], 'fixe', lw=2.2)
+text(ax, 38, 43, r'$U$', 'fixe', 'm')
+arrow(ax, (6, 38), (14, 38), 'sujet', lw=1.5); arrow(ax, (6, 33), (22, 33), 'autre', lw=1.5)
+text(ax, 10, 28, r'$(1,0)$', 'sujet', 's'); text(ax, 24, 28, r'$(2,0)$', 'autre', 's')
+text(ax, 22, 51, r'$B(x,x)=0$ : $x\perp x$', 'resultat', 's')
+text(ax, 22, 18, 'aire 0 : orthogonaux', 'resultat', 's'); text(ax, 22, 10, r'$U^\perp = U$', 'resultat', 'm')
+o = (54, 32); s = 14
+poly(ax, [o, (o[0] + s, o[1]), (o[0] + s, o[1] + s), (o[0], o[1] + s)], 'varie')
+arrow(ax, o, (o[0] + s, o[1]), 'sujet', lw=1.5); arrow(ax, o, (o[0], o[1] + s), 'autre', lw=1.5)
+text(ax, o[0] + s / 2 + 1, o[1] + s / 2 + 1, 'aire 1', 'varie', 's')
+text(ax, 66, 51, r'$(1,0)$ puis $(0,1)$', 'fixe', 's')
+text(ax, 66, 18, 'aire 1 : non orthogonaux', 'limite', 's')
+line(ax, [(44, 6), (44, 56)], 'fixe', lw=0.5, dash=True)
+save(fig, '71-199')

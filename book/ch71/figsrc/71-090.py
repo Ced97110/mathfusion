@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Polygon as MP
+fig,ax=canvas(52)
+u=6.2; o=(5,8)
+for i in range(6): line(ax,[(o[0]+i*u,o[1]),(o[0]+i*u,o[1]+3*u)],'fixe',lw=0.3)
+for j in range(4): line(ax,[(o[0],o[1]+j*u),(o[0]+5*u,o[1]+j*u)],'fixe',lw=0.3)
+P=lambda a,b:(o[0]+a*u,o[1]+b*u)
+poly(ax,[P(0,0),P(3,1),P(4,3),P(1,2)],'sujet')
+ax.add_patch(MP([P(0,0),P(3,1),P(4,3),P(1,2)],closed=True,fill=False,hatch='////',ec=COL['sujet'],lw=0,zorder=2.5))
+arrow(ax,P(0,0),P(3,1),'sujet',lw=1.4); arrow(ax,P(0,0),P(1,2),'varie',lw=1.4)
+text(ax,P(3,1)[0]+3,P(3,1)[1]-2.5,r'$x$','sujet','m'); text(ax,P(1,2)[0]-3,P(1,2)[1]+2.5,r'$y$','varie','m')
+text(ax,44,47,r'$x=(3,1)$ et $y=(1,2)$','encre','s')
+box(ax,40,28,46,12,'sujet',label=r'$B(x,y)=3\times2-1\times1$',size='s')
+text(ax,63,22.5,'=','resultat','l')
+box(ax,40,8,46,12,'resultat',label='aire hachurée = 5',size='s')
+save(fig,'71-090')

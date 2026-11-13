@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+arrow(ax, (4, 10), (40, 10), 'fixe'); arrow(ax, (10, 4), (10, 52), 'fixe')
+line(ax, [(10, 10), (31, 10)], 'varie', lw=1.6); line(ax, [(31, 10), (31, 45)], 'autre', lw=1.6)
+disc(ax, 31, 45, 1.5, 'sujet'); text(ax, 31, 51, '(3 ; 5)', 'sujet', 's')
+text(ax, 20, 5.5, r'$e_1^* = 3$', 'varie', 's'); text(ax, 40, 28, r'$e_2^* = 5$', 'autre', 's', ha='left')
+box(ax, 46, 40, 40, 10, 'sujet', label=r'$f = 2e_1^* + e_2^*$')
+arrow(ax, (66, 39), (66, 28), 'fixe')
+box(ax, 46, 17, 40, 10, 'resultat', label=r'$2\times 3 + 1\times 5 = 11$', size='s')
+save(fig, '71-041')

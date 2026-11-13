@@ -1,0 +1,186 @@
+[
+ {
+  "code": "71-129",
+  "a_dire": "𝑉 est le nom de l’ensemble de flèches étudié, et 𝑛 le nombre de coordonnées : 2 pour le plan, 3 pour l’espace.",
+  "legende_titre": "Un nom pour les flèches, un nombre pour la taille",
+  "lecture": [
+   "Le grand rectangle bleu est 𝑉, l’ensemble des flèches étudiées.",
+   "Le dessin du haut montre le plan : une flèche bleue, deux coordonnées, 𝑛 vaut 2.",
+   "Le dessin du bas montre l’espace : une flèche bleue, trois coordonnées, 𝑛 vaut 3."
+  ],
+  "a_voir": "Une seule lettre 𝑉 sert pour le plan et pour l’espace ; 𝑛 change."
+ },
+ {
+  "code": "71-130",
+  "a_dire": "𝑓 : 𝑉 → 𝐹 se lit « 𝑓 de 𝑉 vers 𝐹 » : la règle 𝑓 prend un vecteur de 𝑉 et rend un nombre de 𝐹.",
+  "legende_titre": "Lire le signe de gauche à droite",
+  "lecture": [
+   "Le rectangle bleu est 𝑉, le départ : les vecteurs.",
+   "Le rectangle orange est 𝑓, la règle.",
+   "Le rectangle vert est 𝐹, l’arrivée : les nombres.",
+   "Les flèches grises vont du départ vers l’arrivée."
+  ],
+  "a_voir": "La règle prend un vecteur et rend un nombre."
+ },
+ {
+  "code": "71-131",
+  "a_dire": "𝑉* est l’ensemble de toutes les règles de prix 𝑓 sur 𝑉 ; 𝑓 ∈ 𝑉* dit que 𝑓 est l’une d’elles.",
+  "legende_titre": "Un seul signe pour toutes les règles",
+  "lecture": [
+   "Le rectangle gris est 𝑉, l’espace des paniers.",
+   "Le grand rectangle bleu en pointillés est 𝑉*, l’ensemble des règles.",
+   "Chaque petit rectangle orange est une règle 𝑓, un élément de 𝑉*."
+  ],
+  "a_voir": "Les règles 𝑓 sont rangées dans un même ensemble, noté 𝑉*."
+ },
+ {
+  "code": "71-132",
+  "a_dire": "𝑒*ᵢ est la règle qui lit la coordonnée numéro 𝑖 ; pour la flèche (3, 5), 𝑒*₂ rend 5 et 𝑒*₁ rend 3.",
+  "legende_titre": "Quelle coordonnée la forme lit-elle ?",
+  "lecture": [
+   "La flèche bleue a pour coordonnées 3 et 5.",
+   "Le trait orange pointillé descend sur l’axe horizontal : 𝑒*₁ lit 3.",
+   "Le trait vert pointillé va sur l’axe vertical : 𝑒*₂ lit 5.",
+   "À droite, l’étoile dit « une forme » et l’indice dit « le numéro »."
+  ],
+  "a_voir": "L’indice choisit la coordonnée lue, l’étoile dit que c’est une forme."
+ },
+ {
+  "code": "71-133",
+  "a_dire": "𝐵(𝑥, 𝑦) est le nombre associé au couple dans cet ordre ; échanger 𝑥 et 𝑦 peut changer le résultat, ici 5 devient −5.",
+  "legende_titre": "L’ordre des lettres compte",
+  "lecture": [
+   "La ligne du haut met 𝑥 en bleu en premier, puis 𝑦 en violet : le résultat vert est 5.",
+   "La ligne du bas met 𝑦 en premier, puis 𝑥 : le résultat orange est −5.",
+   "Les flèches grises mènent des deux flèches au nombre."
+  ],
+  "a_voir": "Même deux flèches, ordre inversé, résultat différent."
+ },
+ {
+  "code": "71-134",
+  "a_dire": "𝑏ᵢⱼ est le nombre 𝐵(𝑒ᵢ, 𝑒ⱼ) rangé à la ligne 𝑖 et à la colonne 𝑗 ; ici 𝑏₁₂ vaut 3.",
+  "legende_titre": "Deux indices : une ligne, une colonne",
+  "lecture": [
+   "Le tableau a deux lignes et deux colonnes, nommées en gris.",
+   "La case verte est 𝑏₁₂ : première ligne, deuxième colonne.",
+   "Sous le tableau, la formule dit que cette case vaut 𝐵(𝑒₁, 𝑒₂), soit 3."
+  ],
+  "a_voir": "Le premier indice donne la ligne, le second la colonne."
+ },
+ {
+  "code": "71-135",
+  "a_dire": "𝐴ᵀ est la matrice 𝐴 dont les lignes et les colonnes sont échangées.",
+  "legende_titre": "Les lignes deviennent des colonnes",
+  "lecture": [
+   "À gauche, la matrice 𝐴 : la première ligne est orange (1, 2), la seconde violette (0, 3).",
+   "À droite, 𝐴ᵀ : l’orange (1, 2) est devenu la première colonne, le violet (0, 3) la seconde.",
+   "La flèche grise va de 𝐴 à 𝐴ᵀ."
+  ],
+  "a_voir": "Chaque ligne de 𝐴 devient une colonne de 𝐴ᵀ."
+ },
+ {
+  "code": "71-136",
+  "a_dire": "𝑃 est la matrice dont chaque colonne contient les coordonnées d’une nouvelle flèche de base.",
+  "legende_titre": "Les colonnes de 𝑃 sont les nouvelles flèches",
+  "lecture": [
+   "Sur le dessin, la flèche bleue 𝑢₁ a pour coordonnées 1 et 1.",
+   "La flèche violette 𝑢₂ a pour coordonnées 1 et −1.",
+   "Dans 𝑃, la colonne bleue est 𝑢₁ et la colonne violette est 𝑢₂."
+  ],
+  "a_voir": "Chaque colonne de 𝑃 est une flèche du dessin."
+ },
+ {
+  "code": "71-137",
+  "a_dire": "𝑃ᵀ𝐴𝑃 est le produit transposée de 𝑃, puis 𝐴, puis 𝑃 : la matrice de 𝐵 dans la nouvelle base.",
+  "legende_titre": "Trois matrices, dans cet ordre",
+  "lecture": [
+   "Le rectangle gris est 𝑃ᵀ, la transposée de 𝑃.",
+   "Le rectangle bleu est 𝐴, la matrice dans l’ancienne base.",
+   "Le rectangle orange est 𝑃, la matrice de passage.",
+   "Le rectangle vert est le résultat, la matrice dans la nouvelle base."
+  ],
+  "a_voir": "Le produit des trois facteurs, dans l’ordre, donne la matrice de la nouvelle base."
+ },
+ {
+  "code": "71-138",
+  "a_dire": "det 𝐴 est un nombre calculé avec tous les coefficients de 𝐴 ; ici 2 × 1 − 0 × 0 = 2.",
+  "legende_titre": "Un nombre calculé avec toute la matrice",
+  "lecture": [
+   "Le tableau est la matrice 𝐴 : lignes 2, 0 et 0, 1.",
+   "Les cases bleues sont la diagonale : 2 fois 1 vaut 2.",
+   "Les cases grises sont l’autre diagonale : 0 fois 0 vaut 0.",
+   "Le texte vert donne le résultat : 2 moins 0, soit 2."
+  ],
+  "a_voir": "Le déterminant est le produit d’une diagonale moins le produit de l’autre."
+ },
+ {
+  "code": "71-139",
+  "a_dire": "𝑥 ⟂ 𝑦 veut dire 𝐵(𝑥, 𝑦) = 0 : les deux écritures disent la même chose.",
+  "legende_titre": "Un signe pour « le nombre vaut 0 »",
+  "lecture": [
+   "Le rectangle bleu à gauche est 𝑥 ⟂ 𝑦.",
+   "Le rectangle vert à droite est 𝐵(𝑥, 𝑦) = 0.",
+   "Le signe ⇔ dit qu’ils veulent dire la même chose.",
+   "En bas, deux flèches à angle droit : 𝑥 en bleu, 𝑦 en violet, pour le produit scalaire."
+  ],
+  "a_voir": "Le signe ⟂ remplace toute la condition 𝐵(𝑥, 𝑦) = 0."
+ },
+ {
+  "code": "71-140",
+  "a_dire": "𝑈⟂ est l’ensemble des vecteurs orthogonaux à tout vecteur de 𝑈.",
+  "legende_titre": "Les flèches orthogonales à toute une droite",
+  "lecture": [
+   "Le grand rectangle gris est 𝑉, le plan entier.",
+   "La droite bleue est 𝑈 : les multiples d’une flèche.",
+   "La droite verte est 𝑈⟂ : toutes les flèches orthogonales à 𝑈."
+  ],
+  "a_voir": "𝑈⟂ est une droite entière de flèches, pas une seule flèche."
+ },
+ {
+  "code": "71-141",
+  "a_dire": "𝑆 est la matrice de l’aire orientée : lignes (0, 1) et (−1, 0).",
+  "legende_titre": "Un nom pour un tableau de quatre valeurs",
+  "lecture": [
+   "Le tableau a deux lignes et deux colonnes, repérées par 𝑒₁ et 𝑒₂.",
+   "La case verte vaut 1 : 𝐵(𝑒₁, 𝑒₂).",
+   "La case orange vaut −1 : 𝐵(𝑒₂, 𝑒₁).",
+   "Les deux cases grises valent 0."
+  ],
+  "a_voir": "Quatre valeurs rangées en tableau portent le nom 𝑆."
+ },
+ {
+  "code": "71-142",
+  "a_dire": "Pf est le pfaffien : un nombre lu sur la matrice alternée dont le carré est le déterminant ; ici 3, et 3² = 9.",
+  "legende_titre": "Un nombre dont le carré est le déterminant",
+  "lecture": [
+   "À gauche, la matrice alternée de lignes 0, 3 et −3, 0 ; la case bleue est 3.",
+   "La flèche « Pf » mène au rectangle vert : le pfaffien vaut 3.",
+   "La flèche « carré » mène au rectangle violet : 3 au carré fait 9, le déterminant."
+  ],
+  "a_voir": "Le carré du pfaffien est égal au déterminant."
+ },
+ {
+  "code": "71-143",
+  "a_dire": "𝑄(𝑥) = 𝐵(𝑥, 𝑥) : on prend 𝑥 deux fois dans 𝐵 ; pour la flèche (3, 4), 𝑄(𝑥) vaut 25.",
+  "legende_titre": "𝑥 pris deux fois dans la forme",
+  "lecture": [
+   "À gauche, la flèche bleue 𝑥 de coordonnées 3 et 4.",
+   "Les deux rectangles bleus montrent 𝑥 pris deux fois.",
+   "Le rectangle orange est 𝐵(𝑥, 𝑥).",
+   "Le rectangle vert donne 𝑄(𝑥) = 25."
+  ],
+  "a_voir": "𝑄 ne prend qu’un vecteur, mais calcule 𝐵 avec ce vecteur deux fois."
+ },
+ {
+  "code": "71-144",
+  "a_dire": "diag(3, 2, 5) est la matrice carrée de diagonale 3, 2, 5 et de 0 partout ailleurs.",
+  "legende_titre": "On écrit seulement la diagonale",
+  "lecture": [
+   "Le tableau de 3 lignes et 3 colonnes est la matrice.",
+   "Les cases bleues 3, 2, 5 forment la diagonale.",
+   "Les cases grises valent 0.",
+   "À droite, l’écriture courte diag(3, 2, 5) ne donne que la diagonale."
+  ],
+  "a_voir": "Seule la diagonale est écrite, le reste est 0."
+ }
+]
