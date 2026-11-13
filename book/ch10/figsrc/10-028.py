@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$38 \times 52 \approx 40 \times 50$', 'encre', 'm')
+text(ax, 44, 50, r'pas de faute : $40 \times 50 = 2\,000$', 'resultat', 's')
+f = numberline(ax, 8, 80, 26, 1960, 2010, 10, labels=False, arrow_right=False)
+disc(ax, f(1976), 26, 1.5, 'sujet'); disc(ax, f(2000), 26, 1.5, 'varie')
+brace(ax, f(1976), f(2000), 30, 'varie', r'$E = \tilde{V} - V = 24$', down=False)
+text(ax, f(1976), 17, r'$V$ = 1 976', 'sujet', 's'); text(ax, f(2000), 17, r'$\tilde{V}$ = 2 000', 'varie', 's')
+text(ax, 44, 7, 'écart voulu, pas une faute', 'varie', 's')
+save(fig, '10-028')

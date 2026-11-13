@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 8.5, 64, 'exact', 'fixe', 's')
+text(ax, 51, 64, 'estimé', 'sujet', 's')
+for y, a, b, c in [(52, '4', '1/5', '1/4'), (40, '2', '5/6', '3/4'), (28, '1', '1/9', '0')]:
+    box(ax, 4, y, 9, 9, 'fixe', label=a)
+    box(ax, 14, y, 14, 9, 'varie', label=b)
+    arrow(ax, (29, y + 4.5), (44, y + 4.5), 'varie')
+    box(ax, 45, y, 12, 9, 'sujet', label=c)
+line(ax, [(8.5, 27), (8.5, 22)], 'fixe', dash=True)
+line(ax, [(51, 27), (51, 22)], 'sujet', dash=True)
+text(ax, 8.5, 19, '7', 'fixe', 'l'); text(ax, 51, 19, '1', 'sujet', 'l')
+arrow(ax, (10, 16.5), (22, 14.2), 'varie'); arrow(ax, (50, 16.5), (46, 14.2), 'varie')
+box(ax, 20, 4, 36, 10, 'resultat', label='7 + 1 = 8')
+save(fig, '10-070')

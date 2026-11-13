@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+f=numberline(ax,8,78,36,38,48,1,labels=False,arrow_right=False)
+for v,r in((40,'limite'),(43,'sujet'),(46,'resultat')): disc(ax,f(v),36,1.6,r)
+text(ax,f(40),31,'prévu 40','limite','s'); text(ax,f(43),31,'vrai 43','sujet','s'); text(ax,f(46),31,'prévu 46','resultat','s')
+arrow(ax,(f(43)-1.8,40.5),(f(40),40.5),'limite'); arrow(ax,(f(43)+1.8,40.5),(f(46),40.5),'resultat')
+text(ax,(f(40)+f(43))/2,43,'écart 3','limite','s'); text(ax,(f(43)+f(46))/2,43,'écart 3','resultat','s')
+box(ax,3,48,39,12,'limite',label='Caisse : il manque 3 €\nPont : danger')
+box(ax,46,48,39,12,'resultat',label='Caisse : il reste 3 €\nPont : sans danger')
+save(fig,'10-033')

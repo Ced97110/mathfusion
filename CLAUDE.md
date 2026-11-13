@@ -17,7 +17,7 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 
 ## Règles de budget (prioritaires)
 
-- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Un chapitre par session. Ne jamais enchaîner un second chapitre dans la même session.
+- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Dix chapitres par session, enchaînés sans attendre (décision du 2026-11-12). Commit et push à la fin de chaque chapitre.
 - Chaque sous-agent coûte environ 80 000 tokens au démarrage, quel que soit le travail : peu d'agents, gros lots.
 - Tout ce qui est mécanique passe par les scripts (zéro token).
 - Modèles des sous-agents : **Sonnet** pour concevoir et coder les figures, juger, corriger ; **Haiku** pour la lecture à l'aveugle. Pas d'Opus, sauf si la réussite au premier test tombe sous 75 % (le signaler dans le bilan avant de l'utiliser).

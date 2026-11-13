@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 64, r'$6 \times (10 + 4)$', 'sujet', 'l')
+box(ax, 3, 26, 14, 12, 'sujet', label='6', size='l')
+box(ax, 26, 42, 34, 9, 'varie', label=r'$6 \times 10 = 60$')
+box(ax, 26, 13, 34, 9, 'autre', label=r'$6 \times 4 = 24$')
+arrow(ax, (17, 34), (26, 46.5), 'sujet'); arrow(ax, (17, 30), (26, 17.5), 'sujet')
+box(ax, 70, 22, 15, 14, 'resultat', label='84', size='l')
+arrow(ax, (60, 46.5), (70, 33), 'resultat'); arrow(ax, (60, 17.5), (70, 25), 'resultat')
+text(ax, 65, 29.5, '+', 'resultat', 'm')
+text(ax, 10, 20, 'le 6 va aux deux', 'sujet', 's', ha='center')
+save(fig, '10-055')

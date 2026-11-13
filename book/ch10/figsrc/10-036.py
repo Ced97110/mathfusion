@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+f=numberline(ax,8,78,34,8000,8600,100,labels=False,arrow_right=False)
+disc(ax,f(8000),34,1.6,'varie'); disc(ax,f(8463),34,1.6,'sujet'); disc(ax,f(8500),34,1.6,'autre')
+box(ax,2,46,40,12,'varie',label='1 chiffre : 8 000\n2 + 6 : calcul court')
+box(ax,46,46,40,12,'autre',label='2 chiffres : 8 500\n24 + 61 : plus long')
+arrow(ax,(f(8000),46),(f(8000),36),'varie'); arrow(ax,(f(8500),46),(f(8500),36),'autre')
+text(ax,44,40.5,'vrai : 8 463','sujet','s'); arrow(ax,(51,40),(f(8463)-0.8,35.8),'sujet',lw=0.7)
+brace(ax,f(8000),f(8463),31,'varie',label='écart 463')
+brace(ax,f(8463),f(8500),31,'autre',label='37')
+save(fig,'10-036')

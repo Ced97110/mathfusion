@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 4, 74, 'exact, de tête : distributivité', 'sujet', 'm', ha='left')
+box(ax, 14, 46, 40, 16, 'sujet', label='500'); box(ax, 54, 46, 14, 16, 'sujet', label='75')
+text(ax, 34, 66.5, '20', 'sujet', 's'); text(ax, 61, 66.5, '3', 'sujet', 's'); text(ax, 8, 54, '25', 'sujet', 's')
+text(ax, 78, 54, '= 575', 'resultat', 'm')
+text(ax, 4, 34, 'approché, de tête', 'varie', 'm', ha='left')
+text(ax, 4, 24, r'73 $\times$ 46 $\approx$ 3 500', 'varie', 'l', ha='left')
+text(ax, 4, 14, 'le vrai produit est 3 358', 'fixe', 'm', ha='left')
+text(ax, 4, 6, 'les deux : quelques secondes', 'encre', 's', ha='left')
+save(fig, '10-008')

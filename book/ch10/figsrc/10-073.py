@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(44)
+f = lambda v: 8 + (v - 83) / 4 * 62
+ax.add_patch(Rectangle((f(84), 19), f(86) - f(84), 10, ec=COL['resultat'], fc=FILL['resultat'], lw=0.8, zorder=1))
+line(ax, [(8, 24), (70, 24)], 'fixe')
+arrow(ax, (70, 24), (76, 24), 'fixe')
+disc(ax, f(85), 24, 1.3, 'varie')
+disc(ax, f(84.36), 24, 1.3, 'sujet'); disc(ax, f(84.63), 24, 1.3, 'sujet')
+text(ax, f(84.36) + 1.5, 16.5, '84,36', 'sujet', 's', ha='right')
+text(ax, f(84.63) - 0.5, 16.5, '84,63', 'sujet', 's', ha='left')
+text(ax, f(85), 33, 'estimation 85 ± 1', 'resultat', 'm')
+text(ax, 81, 24, '184,63', 'limite', 'm')
+text(ax, 81, 18, 'trop loin', 'limite', 's')
+text(ax, 38, 8, 'écart 0,27 < 1 : non séparés', 'fixe', 's')
+save(fig, '10-073')

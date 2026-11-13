@@ -1,0 +1,237 @@
+[
+ {
+  "code": "10-081",
+  "a_dire": "Dans les quatre paires, la barre vraie dépasse la barre arrondie de 4, donc les écarts s'ajoutent : E = −16.",
+  "legende_titre": "Quatre paires, un seul côté",
+  "lecture": [
+   "Chaque barre bleue est un nombre vrai : 14, 24, 34, 44.",
+   "Chaque barre orange est ce nombre arrondi : 10, 20, 30, 40.",
+   "La flèche grise entre les deux barres mesure l'écart de 4."
+  ],
+  "a_voir": "Chaque barre bleue dépasse sa barre orange : aucun écart de l'autre côté."
+ },
+ {
+  "code": "10-082",
+  "a_dire": "x_(3) se lit « x trois » : c'est le troisième nombre de la liste, ici 34.",
+  "legende_titre": "Un numéro de place sous la lettre",
+  "lecture": [
+   "Les quatre cases bleues sont les nombres 14, 24, 34, 44.",
+   "Au-dessus de chaque case, la même lettre x avec un petit numéro différent.",
+   "En dessous, le numéro de place de la case.",
+   "La case orange est la troisième : x(3) vaut 34."
+  ],
+  "a_voir": "Le petit numéro dit la place, il ne multiplie rien."
+ },
+ {
+  "code": "10-083",
+  "a_dire": "L'erreur −16 vient des restes de 4 perdus quatre fois quand on garde seulement les dizaines.",
+  "legende_titre": "D'où vient l'erreur de 16",
+  "lecture": [
+   "La rangée du haut montre les dizaines gardées : 10, 20, 30, 40, soit 100.",
+   "La rangée du bas montre les nombres vrais : chaque dizaine suivie d'un reste orange de 4, soit 116.",
+   "Les quatre petits blocs orange sont ce que l'estimation perd."
+  ],
+  "a_voir": "Les quatre restes de 4 font les 16 qui séparent 100 de 116."
+ },
+ {
+  "code": "10-084",
+  "a_dire": "Si les écarts n'ont pas tous le même signe, ils se compensent et l'erreur peut être nulle.",
+  "legende_titre": "Même signe ou signes mêlés",
+  "lecture": [
+   "À gauche, les quatre barres orange montent : +4 quatre fois, total +16.",
+   "À droite, deux barres montent et deux descendent : +2, −3, +3, −2.",
+   "Le total à droite est 0, en vert."
+  ],
+  "a_voir": "Les barres qui descendent compensent celles qui montent."
+ },
+ {
+  "code": "10-085",
+  "a_dire": "Une estimation est fiable quand les erreurs vont des deux côtés, trompeuse quand elles vont toutes du même côté.",
+  "legende_titre": "Deux groupes remplacés par 50",
+  "lecture": [
+   "Sur la droite A, les points bleus 38, 41, 59, 62 sont de part et d'autre de 50 ; les flèches orange vont dans les deux sens.",
+   "Sur la droite B, le point bleu 51 est répété quatre fois, d'un seul côté de 50.",
+   "En A, la somme estimée et la somme vraie valent 200 ; en B, 200 et 204."
+  ],
+  "a_voir": "Les grands écarts de A se compensent ; les petits écarts de B s'ajoutent."
+ },
+ {
+  "code": "10-086",
+  "a_dire": "Si tous les arrondis vont dans le même sens, l'erreur est multipliée par le nombre de termes.",
+  "legende_titre": "Dix restes de 2, tous perdus",
+  "lecture": [
+   "Chaque colonne bleue est une dizaine gardée.",
+   "Chaque bloc orange en haut est le reste de 2 perdu.",
+   "L'accolade orange regroupe les dix restes : 10 × 2 = 20."
+  ],
+  "a_voir": "Dix nombres arrondis vers le bas perdent dix fois 2."
+ },
+ {
+  "code": "10-087",
+  "a_dire": "Pour un produit, l'erreur se mesure en proportion du facteur, et cette proportion passe telle quelle au produit.",
+  "legende_titre": "Même proportion perdue",
+  "lecture": [
+   "Le groupe du haut compare le facteur 4 316 (bleu) à 4 000 (orange).",
+   "Le groupe du bas compare le produit 375 492 (bleu) à 348 000 (orange).",
+   "Le pointillé orange est la partie retirée : 316, puis 27 492."
+  ],
+  "a_voir": "Dans les deux groupes, la partie en pointillé a la même taille relative : plus de 7 %."
+ },
+ {
+  "code": "10-088",
+  "a_dire": "Pour un produit, une hausse de 3,4 % et une baisse de 7,3 % ne s'annulent pas : il reste une baisse d'environ 4,1 %.",
+  "legende_titre": "Hausse et baisse ne s'annulent pas",
+  "lecture": [
+   "La première barre orange monte : 87 devient 90, soit +3,4 %.",
+   "La deuxième barre orange descend : 4 316 devient 4 000, soit −7,3 %.",
+   "La barre verte est le produit : il baisse de 4,1 %."
+  ],
+  "a_voir": "La barre verte descend : la hausse ne compense pas la baisse."
+ },
+ {
+  "code": "10-089",
+  "a_dire": "Garder un chiffre non nul de plus (4 300) donne une erreur bien plus petite que la marge, donc on peut s'arrêter.",
+  "legende_titre": "L'erreur reste dans la marge",
+  "lecture": [
+   "Le point orange est l'estimation 374 100.",
+   "Le point bleu est le vrai poids 375 492 ; la petite accolade orange est l'erreur de 1 392.",
+   "La grande accolade grise est la marge jusqu'à la limite 400 000 : 25 900."
+  ],
+  "a_voir": "La petite accolade est minuscule devant la grande."
+ },
+ {
+  "code": "10-090",
+  "a_dire": "Une mesure est une estimation : on lit le trait le plus proche de la vraie longueur.",
+  "legende_titre": "Lire le trait le plus proche",
+  "lecture": [
+   "Le point bleu est la vraie longueur 21,04.",
+   "Les deux traits gris sont 21,0 et 21,1 ; le trait vert 21,0 est celui que l'on lit.",
+   "Les accolades donnent les distances : 0,04 et 0,06."
+  ],
+  "a_voir": "Le point bleu est plus près de 21,0 que de 21,1."
+ },
+ {
+  "code": "10-091",
+  "a_dire": "Le signe π écrit un nombre exact ; π ≈ 3,14 en garde seulement le début et perd la suite.",
+  "legende_titre": "Garder le début de π",
+  "lecture": [
+   "Le signe π, en haut, écrit tout le nombre.",
+   "La case bleue contient 3,14, la partie gardée.",
+   "La case orange en pointillé contient 159…, la partie perdue.",
+   "Le cercle a un diamètre de 10 cm ; à droite, 10 × 3,14 = 31,4 cm."
+  ],
+  "a_voir": "Le calcul avec 3,14 donne 31,4 cm, un peu moins que la vraie longueur."
+ },
+ {
+  "code": "10-092",
+  "a_dire": "La notation scientifique sépare deux informations : la taille (10³) et la précision (les chiffres devant).",
+  "legende_titre": "Taille et précision séparées",
+  "lecture": [
+   "Les cases bleues sont les chiffres devant : 4, puis 4,3, puis 4,316.",
+   "La case orange × 10³ reste la même à chaque ligne : c'est la taille.",
+   "À droite, la valeur obtenue : 4 000, 4 300, 4 316."
+  ],
+  "a_voir": "Plus il y a de chiffres, plus c'est précis ; la taille ne change pas."
+ },
+ {
+  "code": "10-093",
+  "a_dire": "L'ordre de grandeur est l'exposant de la puissance de 10 dans l'écriture scientifique.",
+  "legende_titre": "Même exposant, même ordre",
+  "lecture": [
+   "Le grand cadre de gauche porte 10³ en orange et contient 4 316 et 1 200.",
+   "Le petit cadre de droite porte 10⁴ et contient 52 000.",
+   "Sous chaque nombre, son écriture scientifique."
+  ],
+  "a_voir": "4 316 et 1 200 sont dans le même cadre : même exposant 3."
+ },
+ {
+  "code": "10-094",
+  "a_dire": "Les chiffres significatifs sont les chiffres écrits devant la puissance de 10 ; on les compte sans ambiguïté.",
+  "legende_titre": "Compter les chiffres qui comptent",
+  "lecture": [
+   "Les cases bleues sont les chiffres significatifs, les chiffres connus ; les cases grises sont des zéros dont on ne sait rien.",
+   "La première ligne, 4 000, a un 4 bleu et trois zéros gris : on ne sait pas combien de chiffres sont connus.",
+   "La deuxième ligne, 4 × 10³, a un seul chiffre devant.",
+   "La troisième ligne, 4,3 × 10³, en a deux."
+  ],
+  "a_voir": "Avec la puissance de 10, le compte des chiffres est clair."
+ },
+ {
+  "code": "10-095",
+  "a_dire": "Pour multiplier 9 × 10¹ par 4 × 10³, on multiplie les chiffres (36) et on additionne les exposants (4).",
+  "legende_titre": "Chiffres d'un côté, exposants de l'autre",
+  "lecture": [
+   "Les cases bleues 9 et 4 sont les chiffres ; leur produit est 36.",
+   "Les cases orange 10¹ et 10³ sont les puissances ; 1 + 3 donne 10⁴.",
+   "La case verte réunit les deux : 36 × 10⁴ = 360 000."
+  ],
+  "a_voir": "Deux flèches vertes mènent au résultat 360 000."
+ },
+ {
+  "code": "10-096",
+  "a_dire": "La distributivité sert à réécrire 3(x + 2) en 3x + 6, même si x n'a pas de valeur.",
+  "legende_titre": "Un rectangle coupé en deux",
+  "lecture": [
+   "Le rectangle a une hauteur 3.",
+   "La partie bleue en pointillé a pour largeur x et pour aire 3x.",
+   "La partie orange a pour largeur 2 et pour aire 6.",
+   "L'accolade du haut montre la largeur totale x + 2."
+  ],
+  "a_voir": "Les deux aires 3x et 6 forment ensemble l'aire 3(x + 2)."
+ },
+ {
+  "code": "10-097",
+  "a_dire": "Factoriser, c'est lire la distributivité de droite à gauche : le facteur commun 7 réunit deux rectangles en un seul.",
+  "legende_titre": "Un facteur commun, un seul rectangle",
+  "lecture": [
+   "Le trait vert à gauche est la hauteur 7, commune aux deux rectangles.",
+   "Le rectangle bleu a une largeur 20 et une aire 140 ; l'orange a une largeur 3 et une aire 21.",
+   "L'accolade du haut donne la largeur totale 20 + 3 = 23."
+  ],
+  "a_voir": "La hauteur 7 est la même : on peut l'écrire une seule fois."
+ },
+ {
+  "code": "10-098",
+  "a_dire": "√50 se place entre 7 et 8, proche de 7, car 50 est entre les carrés parfaits 49 et 64.",
+  "legende_titre": "Placer √50 entre 7 et 8",
+  "lecture": [
+   "La droite du haut porte les carrés parfaits 49 = 7² et 64 = 8², et le point orange 50.",
+   "La droite du bas porte 7 et 8, et le point orange √50.",
+   "Les flèches bleues relient chaque carré à sa racine ; la flèche orange relie 50 à √50."
+  ],
+  "a_voir": "Le point 50 est tout près de 49, donc √50 est tout près de 7."
+ },
+ {
+  "code": "10-099",
+  "a_dire": "On estime √17 ≈ 4 car 17 est proche de 16 ; on contrôle ainsi les deux solutions de la formule.",
+  "legende_titre": "Contrôler avec √17 ≈ 4",
+  "lecture": [
+   "La case bleue du haut donne √17 ≈ 4, car 17 est proche de 16 et 4 × 4 = 16.",
+   "Les flèches bleues remplacent √17 par 4 dans chaque calcul.",
+   "Sur la droite, chaque point vert est une solution estimée : −3,5 et 0,5, qui servent de contrôle."
+  ],
+  "a_voir": "Les deux points verts contrôlent les deux solutions de la formule."
+ },
+ {
+  "code": "10-100",
+  "a_dire": "Le mathématicien estime d'abord, calcule ensuite, puis revient à l'estimation pour vérifier.",
+  "legende_titre": "Avant, pendant, après",
+  "lecture": [
+   "La case orange « avant » est l'estimation 50 × 50 ≈ 2 500.",
+   "La case bleue « pendant » est le calcul exact 48 × 52 = 2 496.",
+   "Sur la droite « après », le point bleu 2 496 est tout près du point orange 2 500."
+  ],
+  "a_voir": "Les deux points sont proches : le calcul est vérifié."
+ },
+ {
+  "code": "10-101",
+  "a_dire": "Les totaux possibles sont 100, 110, 120, 130 et 140 : 116 n'en fait pas partie.",
+  "legende_titre": "116 est hors de portée",
+  "lecture": [
+   "Les cinq points bleus sont les totaux possibles.",
+   "Chaque flèche orange ajoute 10 : un nombre arrondi vers le haut.",
+   "Le cercle rouge est le total voulu, 116 : il tombe entre deux points."
+  ],
+  "a_voir": "Aucune flèche n'arrive sur 116."
+ }
+]

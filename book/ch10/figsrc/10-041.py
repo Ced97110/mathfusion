@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+s = 0.88; ox = 14; oy = 22
+ax.add_patch(Rectangle((ox, oy), 73 * s, 46 * s, fc=FILL['sujet'], ec=COL['sujet'], lw=0.8, zorder=2))
+ax.add_patch(Rectangle((ox, oy), 70 * s, 50 * s, fc='none', ec=COL['varie'], lw=1.2, ls='--', zorder=3))
+# strip added on top (height +4, width 70) and strip removed on the right (width -3, height 46)
+ax.add_patch(Rectangle((ox, oy + 46 * s), 70 * s, 4 * s, fc=FILL['varie'], ec=COL['varie'], lw=0.6, zorder=3))
+ax.add_patch(Rectangle((ox + 70 * s, oy), 3 * s, 46 * s, fc=FILL['limite'], ec=COL['limite'], lw=0.6, zorder=3))
+brace(ax, ox, ox + 73 * s, oy, 'sujet', label='largeur 73 → 70 : −3', down=True)
+text(ax, ox - 3, oy + 23 * s, 'hauteur 46 → 50 : +4', 'varie', 's', rot=90)
+text(ax, ox + 35 * s, oy + 52 * s + 3.5, '+4 ajouté', 'varie', 's')
+text(ax, ox + 73 * s + 2, oy + 23 * s, '−3 retiré', 'limite', 's', ha='left', rot=90)
+text(ax, 44, 12, 'estimé 70 × 50 = 3 500', 'varie', 's'); text(ax, 44, 7.5, 'exact 73 × 46 = 3 358', 'sujet', 's')
+text(ax, 44, 3, 'erreur nette : +142 (en partie compensée)', 'resultat', 's')
+save(fig, '10-041')
