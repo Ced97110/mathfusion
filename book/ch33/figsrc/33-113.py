@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(52)
+text(ax, 14, 43, 'fonction intérieure', 'sujet', 's')
+box(ax, 2, 20, 24, 16, 'sujet', label=r'arctan $\frac{3}{4}$')
+arrow(ax, (27, 28), (32, 28), 'varie')
+s = 5; A = (34, 18); B = (A[0] + 4*s, A[1]); C = (B[0], A[1] + 3*s)
+poly(ax, [A, B, C], 'sujet')
+line(ax, [(B[0]-2, B[1]), (B[0]-2, B[1]+2), (B[0], B[1]+2)], 'sujet')
+text(ax, 44, 43, 'on dessine un triangle', 'varie', 's')
+text(ax, (A[0]+B[0])/2, A[1]-3, '4', 'sujet', 's'); text(ax, B[0]+2.5, (B[1]+C[1])/2, '3', 'sujet', 's')
+arrow(ax, (B[0]+5, 28), (B[0]+10, 28), 'varie')
+text(ax, 74, 43, 'fonction extérieure', 'resultat', 's')
+box(ax, 64, 20, 22, 16, 'resultat', label=r'cos $\frac{4}{5}$', size='m')
+save(fig, '33-113')

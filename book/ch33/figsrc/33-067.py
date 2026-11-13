@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+cx, cy, R = 44, 39, 25
+P = lambda d, r=R: (cx + r * math.cos(math.radians(d)), cy + r * math.sin(math.radians(d)))
+line(ax, [P(d) for d in range(0, 361, 3)], 'fixe')
+line(ax, [P(d) for d in range(-90, 91, 3)], 'sujet', lw=1.8)
+line(ax, [(cx - 30, cy), (cx + 30, cy)], 'fixe', lw=0.6); line(ax, [(cx, cy - 30), (cx, cy + 30)], 'fixe', lw=0.6)
+line(ax, [P(-45, 30), P(135, 30)], 'varie')
+disc(ax, *P(-45), 1.5, 'resultat'); disc(ax, *P(135), 1.5, 'limite')
+text(ax, 71, 15, '−45°', 'resultat', 'm')
+text(ax, 71, 9, 'on garde', 'resultat', 's')
+text(ax, 17, 66, '135°', 'limite', 'm')
+text(ax, 17, 60, 'point à gauche :', 'limite', 's')
+text(ax, 17, 55, 'pas retenu', 'limite', 's')
+text(ax, 72, 70, 'moitié droite', 'sujet', 's')
+text(ax, 44, 5, r'$\arctan(-1)=-\pi/4$', 'resultat', 'm')
+text(ax, 72, 63, 'pente −1', 'varie', 's')
+save(fig, '33-067')

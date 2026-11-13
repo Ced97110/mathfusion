@@ -1,0 +1,203 @@
+[
+ {
+  "code": "33-128",
+  "a_dire": "arctan x s’approche de 90° quand la pente grandit, sans jamais l’atteindre.",
+  "legende_titre": "Un angle qui monte vers un plafond",
+  "lecture": [
+   "La courbe bleue donne l’angle pour chaque pente, de 1 à 1 000.",
+   "Le trait gris pointillé est le plafond de 90°.",
+   "Le rond orange est la pente 1 000 : son angle est 89,94°, tout près du plafond mais pas dessus."
+  ],
+  "a_voir": "La courbe monte vers 90° et ne touche jamais le pointillé."
+ },
+ {
+  "code": "33-129",
+  "a_dire": "Les bouts sont compris pour l’arcsinus parce que sin 90° = 1 existe, et exclus pour l’arctangente parce que tan 90° n’existe pas.",
+  "legende_titre": "Deux intervalles, deux sortes de bouts",
+  "lecture": [
+   "La ligne bleue du haut a des ronds pleins aux deux bouts : −90° et 90° sont compris.",
+   "La ligne violette du bas a des ronds vides : ces bouts sont exclus.",
+   "Le texte vert dit que sin 90° = 1 existe ; le texte rouge dit que tan 90° n’existe pas."
+  ],
+  "a_voir": "Ronds pleins en haut, ronds vides en bas, et la raison écrite sous chaque ligne."
+ },
+ {
+  "code": "33-130",
+  "a_dire": "arctan(−1 000) vaut environ −89,94°, l’opposé de l’angle pour la pente 1 000.",
+  "legende_titre": "Le côté négatif de la même courbe",
+  "lecture": [
+   "La courbe verte passe par le centre et s’aplatit des deux côtés.",
+   "Les deux pointillés gris sont à 90° et à −90°.",
+   "Les ronds bleus sont les pentes 1 000 et −1 000 : leurs angles sont 89,94° et −89,94°."
+  ],
+  "a_voir": "Les deux bouts de la courbe sont symétriques par rapport au centre."
+ },
+ {
+  "code": "33-131",
+  "a_dire": "Quand on connaît deux longueurs et qu’on cherche un angle, on applique l’arctangente, puis on vérifie que l’angle est dans l’intervalle.",
+  "legende_titre": "De deux longueurs à un angle de 4,76°",
+  "lecture": [
+   "Le triangle bleu a une base de 12 et une hauteur de 1.",
+   "L’arc vert est l’angle cherché : 4,76°.",
+   "La barre violette est l’intervalle de l’arctangente, de −90° à 90° ; la barre bleue est celle des angles d’un triangle rectangle.",
+   "Le rond vert est 4,76° : il est dans les deux barres."
+  ],
+  "a_voir": "Le rond vert est dans l’intervalle, donc l’arctangente donne le bon angle."
+ },
+ {
+  "code": "33-132",
+  "a_dire": "Les formules d’addition donnent la tangente de la somme ; l’arctangente ne rend ensuite que −45°, pas 135°, car la somme sort de l’intervalle.",
+  "legende_titre": "Une somme d’angles qui sort de l’intervalle",
+  "lecture": [
+   "Le trait bleu fait 63,43° avec l’horizontale.",
+   "L’arc violet ajoute 71,57° : le trait vert est à 135°, la somme.",
+   "Le trait rouge pointillé est à −45°, ce que rend l’arctangente de −1."
+  ],
+  "a_voir": "Le trait vert (135°) et le trait rouge (−45°) ne sont pas au même endroit."
+ },
+ {
+  "code": "33-133",
+  "a_dire": "Pour le point (−1 ; 1), l’arctangente donne −45° ; il faut ajouter 180° pour obtenir l’angle 135° du point.",
+  "legende_titre": "Ajouter 180° quand le point est à gauche",
+  "lecture": [
+   "Le trait bleu va de l’origine au point (−1 ; 1) : son angle est 135°, en vert.",
+   "Le trait violet pointillé va au point (1 ; −1) : son angle est −45°, celui de l’arctangente.",
+   "La flèche orange est l’ajout de 180° qui passe de −45° à 135°."
+  ],
+  "a_voir": "La flèche orange relie l’angle de l’arctangente à l’angle du point."
+ },
+ {
+  "code": "33-134",
+  "a_dire": "Avec la loi des cosinus, l’arccosinus rend un angle entre 0° et 180°, donc toujours un angle possible du triangle.",
+  "legende_titre": "Un arccosinus toujours dans les angles du triangle",
+  "lecture": [
+   "Le triangle bleu a des côtés 2, 3 et 4.",
+   "L’arc vert est l’angle en face du côté 4 : 104,48°.",
+   "La barre grise est l’ensemble des angles possibles, de 0° à 180° ; le rond vert y est."
+  ],
+  "a_voir": "Le rond vert est dans la barre : la réponse est un angle de triangle."
+ },
+ {
+  "code": "33-135",
+  "a_dire": "L’arcsinus rend un angle aigu, mais un angle obtus de même sinus existe aussi : deux triangles répondent aux données.",
+  "legende_titre": "Deux triangles pour les mêmes données",
+  "lecture": [
+   "Le trait gris de longueur 8 et l’angle de 30° sont communs aux deux triangles.",
+   "Le trait bleu de longueur 5 donne l’angle de 126,87°.",
+   "Le trait violet de longueur 5 donne l’angle de 53,13°."
+  ],
+  "a_voir": "Deux traits de longueur 5 touchent la base : l’un fait 53,13°, l’autre 126,87°."
+ },
+ {
+  "code": "33-136",
+  "a_dire": "En topographie, on passe d’une distance horizontale et d’une hauteur à un angle par l’arctangente.",
+  "legende_titre": "De deux distances à un angle",
+  "lecture": [
+   "Le triangle bleu a une base de 100 m et une hauteur de 20 m.",
+   "L’arc vert est l’angle : 11,31°.",
+   "La boîte bleue donne le rapport 20 ÷ 100 = 0,2 ; la flèche orange applique l’arctangente ; la boîte verte donne l’angle."
+  ],
+  "a_voir": "On part de deux mesures et on arrive à un angle."
+ },
+ {
+  "code": "33-137",
+  "a_dire": "L’argument de a + bi est arctan(b/a), plus 180° si le point est à gauche.",
+  "legende_titre": "Quand ajouter 180° à l’arctangente",
+  "lecture": [
+   "À gauche du dessin, le point (1 ; 1) est à droite : son angle est 45°, sans rien ajouter.",
+   "À droite du dessin, le point (−1 ; 1) est à gauche : l’arctangente donne −45°.",
+   "On ajoute 180° et l’angle vert devient 135°."
+  ],
+  "a_voir": "Point à droite : rien à ajouter. Point à gauche : ajouter 180°."
+ },
+ {
+  "code": "33-138",
+  "a_dire": "Écrire t = arccos(…) n’est valable que si t est entre 0° et 180° ; pour 240°, l’arccosinus rend 120°.",
+  "legende_titre": "Un arccosinus qui change l’angle",
+  "lecture": [
+   "Le demi-cercle bleu épais est l’ensemble des angles de 0° à 180°.",
+   "Le trait orange pointillé est la hauteur où le cosinus vaut −0,5.",
+   "Le rond vert est 120°, sur le demi-cercle ; le rond rouge est 240°, en dehors."
+  ],
+  "a_voir": "Deux angles ont le même cosinus, mais seul 120° est rendu par l’arccosinus."
+ },
+ {
+  "code": "33-139",
+  "a_dire": "L’angle entre deux vecteurs va de 0° à 180°, exactement l’intervalle de l’arccosinus.",
+  "legende_titre": "Des angles de 0° à 180° entre deux flèches",
+  "lecture": [
+   "Dans chaque dessin, la flèche bleue est la première et la violette est la seconde.",
+   "À gauche, elles ont le même sens : 0°.",
+   "Au milieu, elles sont perpendiculaires : 90°.",
+   "À droite, elles sont de sens opposés : 180°."
+  ],
+  "a_voir": "Les trois cas couvrent tout l’intervalle de 0° à 180°."
+ },
+ {
+  "code": "33-140",
+  "a_dire": "Une application a une réciproque exactement quand elle est bijective ; le sinus restreint à [−90°, 90°] l’est.",
+  "legende_titre": "Restreindre le sinus pour qu’il ait une réciproque",
+  "lecture": [
+   "La courbe grise est le sinus sur tous les angles ; la partie bleue épaisse est celle de [−90°, 90°].",
+   "Le trait orange pointillé est la valeur 0,5.",
+   "Le rond vert est le seul point où la partie bleue atteint 0,5 ; les ronds violets sont d’autres angles de sinus 0,5."
+  ],
+  "a_voir": "Dans le cadre bleu, 0,5 est atteint une seule fois."
+ },
+ {
+  "code": "33-141",
+  "a_dire": "Le quotient du produit scalaire par les longueurs joue le rôle d’un cosinus ; il doit rester entre −1 et 1 pour que l’angle existe.",
+  "legende_titre": "Un quotient qui doit rester entre −1 et 1",
+  "lecture": [
+   "La boîte bleue couvre les nombres de −1 à 1.",
+   "Le rond vert est 0,7071 : il est dans la boîte, et l’arccosinus donne environ 45°.",
+   "Le rond rouge est 1,5 : il est hors de la boîte, donc pas d’angle."
+  ],
+  "a_voir": "Un quotient dans la boîte donne un angle ; un quotient hors de la boîte n’en donne pas."
+ },
+ {
+  "code": "33-142",
+  "a_dire": "Un seul nombre, cosinus ou sinus, laisse deux angles possibles ; les deux ensemble n’en laissent qu’un.",
+  "legende_titre": "Deux nombres pour un seul angle",
+  "lecture": [
+   "Dans chaque cercle, les traits orange pointillés sont le cosinus 0,5 (vertical) et le sinus 0,866 (horizontal).",
+   "À gauche, le cosinus seul laisse 60° et −60°.",
+   "Au milieu, le sinus seul laisse 60° et 120°.",
+   "À droite, les deux ensemble ne laissent que 60°."
+  ],
+  "a_voir": "Un seul trait coupe le cercle en deux points ; deux traits le coupent en un point."
+ },
+ {
+  "code": "33-143",
+  "a_dire": "Multiplier par a + bi tourne d’un angle égal à son argument, calculé avec l’arctangente corrigée.",
+  "legende_titre": "Les angles de 1 + i et de −1 + i",
+  "lecture": [
+   "Le rond gris est le nombre 1, sur l’horizontale.",
+   "Le trait bleu va au point (1 ; 1) : la flèche orange tourne de 45°.",
+   "Le trait violet va au point (−1 ; 1) : la flèche orange tourne de 135°."
+  ],
+  "a_voir": "Chaque flèche orange part du nombre 1 et va jusqu’à l’angle du point."
+ },
+ {
+  "code": "33-144",
+  "a_dire": "arctan(1/2) + arctan(1/3) = 45° : à la calculatrice, les deux angles se complètent pour faire l’angle de la diagonale d’un carré.",
+  "legende_titre": "Deux angles quelconques qui font 45°",
+  "lecture": [
+   "Le carré gris a pour diagonale le trait vert, à 45°.",
+   "Le trait bleu va au point (2 ; 1) : son angle est 26,57°.",
+   "L’arc violet est le reste jusqu’à la diagonale : 18,43°."
+  ],
+  "a_voir": "26,57° et 18,43° remplissent ensemble l’angle de la diagonale."
+ },
+ {
+  "code": "33-145",
+  "a_dire": "La tangente de la somme vaut (1/2 + 1/3) divisé par (1 − 1/6), soit 5/6 divisé par 5/6, donc 1 : la somme est 45°.",
+  "legende_titre": "Deux longueurs égales donnent 1",
+  "lecture": [
+   "La barre du haut est la somme des tangentes : 1/2 en bleu et 1/3 en violet.",
+   "La barre du bas est 1 moins 1/6 : la partie orange, 1/6, est enlevée.",
+   "Le pointillé vert montre que les deux barres finissent au même endroit : 5/6."
+  ],
+  "a_voir": "Les deux barres ont la même longueur, donc leur quotient vaut 1."
+ }
+]
