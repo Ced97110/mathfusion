@@ -1,6 +1,9 @@
-<div class="pk">Chapitre 20</div>
-<h1>Congruences et équations diophantiennes</h1>
-<h2>1. Le problème qui a forcé la notion</h2>
+<section class="cover"><div class="ck">Mathématiques discrètes</div><div class="cn">Chapitre 20</div>
+<h1 class="ct">Congruences et équations diophantiennes</h1>
+<p class="cx">D’après Oscar Levin, Discrete Mathematics: An Open Introduction. Le texte et les figures sont ceux du livre.</p></section>
+
+<section class="toc"><h1>Les parties du chapitre</h1><ol><li><a href="#s1">Le problème qui a forcé la notion</a></li><li><a href="#s2">La figure</a></li><li><a href="#s3">La définition, symbole par symbole</a></li><li><a href="#s4">Ce que la notion permet de faire</a></li><li><a href="#s5">Où elle mène</a></li><li><a href="#s6">Une question pour toi</a></li></ol></section>
+<section class="sec" id="s1"><div class="sk">Chapitre 20 · partie 1</div><h1>Le problème qui a forcé la notion</h1></section><div class="corps">
 <p>Le chapitre 19 s’est arrêté sur une question ouverte. Avec des timbres de 2 et 4 centimes, aucun montant impair n’est payable, parce que 2 divise les deux valeurs. Avec des timbres de 5 et 8 centimes, aucun diviseur commun ne bloque. Mais cela suffitil pour payer tout montant assez grand ? Rien ne l’a encore prouvé.</p>
 <p>Prends un cas précis. Tu dois affranchir un colis pour 6,37 €, c’est-à-dire 637 centimes. Tu n’as que des timbres de 5 et de 8 centimes. Appelle <span class="m">𝑥</span> le nombre de timbres de 5 et <span class="m">𝑦</span> le nombre de timbres de 8. Il faut</p>
 <img class="vm" src="/discretes/img/c020/p0627_1.svg" alt="5𝑥 + 8𝑦 = 637," style="--w:24.12" loading="lazy">
@@ -8,7 +11,8 @@
 <p>Tu peux essayer les 80 valeurs <span class="m">𝑦 =</span> <span class="m">0, 1, … , 79</span> et regarder chaque fois si <span class="m">637 −</span> <span class="m">8𝑦</span> est divisible par 5. C’est long, et cela n’explique rien.</p>
 <p>Deuxième question : quel est le reste de <span class="m">3</span><sup>123</sup> dans la division par 7 ? Le nombre <span class="m">3</span><sup>123</sup> est le produit de 123 facteurs égaux à 3. Il a 59 chiffres. Le calculer à la main est hors de portée.</p>
 <p>Dans les deux questions, seuls des restes comptent : celui de <span class="m">637 − 8𝑦</span> modulo 5, celui de <span class="m">3</span><sup>123</sup> modulo 7. Il faudrait <i>calculer directement avec les restes</i>. Ce chapitre montre quand c’est permis et quand c’est interdit.</p>
-<h2>2. La figure</h2>
+</div>
+<section class="sec" id="s2"><div class="sk">Chapitre 20 · partie 2</div><h1>La figure</h1></section><div class="corps">
 <h3>Le résultat ne dépend que des classes</h3>
 <p>Regarde la figure 20.1. On prend quatre nombres de la classe de <span class="m">2</span> modulo <span class="m">5</span> : <span class="m">−3</span>, <span class="m">2</span>, <span class="m">7</span>, <span class="m">12</span> (en vert, à gauche des tableaux). On prend quatre nombres de la classe de <span class="m">4</span> modulo <span class="m">5</span> : <span class="m">−1</span>, <span class="m">4</span>, <span class="m">9</span>, <span class="m">14</span> (en violet, en haut). Le tableau de gauche contient toutes les sommes <span class="m">𝑎 + 𝑐</span>. Le tableau de droite contient tous les produits <span class="m">𝑎 × 𝑐</span>. Chaque case est colorée selon la classe du résultat, avec les couleurs du chapitre 19.</p>
 <img class="vm" src="/discretes/img/c020/p0629_2.svg" alt="a + c a × c a \ c −1 4 9 14 a \ c −1 4 9 14 −3 −4 1 6 11 −3 3 −12 −27 −42 2 1 6 11 16 2 −2 8 18 28 7 6 11 16 21 7 −7 28 63 98 12 11 16 21 26 12 −12 48 108 168 classe de 1 classe de 3 Fig. 20.1 : Regarde les couleurs. À gauche, les 16 sommes sont toutes rouges : elles ont toutes le reste 1 modulo 5. À droite, les 16 produits sont tous orange : ils ont tous le reste 3 modulo 5, même −42 et 168. Le choix du représentant dans chaque classe ne change pas la classe du résultat." style="--w:24.19" loading="lazy">
@@ -20,7 +24,8 @@
 <p><b>Fig.</b> <i><b>20.2 :</b> À gauche, chaque reste de droite reçoit exactement une flèche : multiplier par 3 modulo 8 se défait. À droite, les restes 1, 3, 5, 7 ne reçoivent aucune flèche et les restes 0, 2, 4, 6 en reçoivent deux. Les deux flèches rouges partent de 3 et de 7 et arrivent toutes deux sur 2 : connaître le reste de</i> <span class="m">6𝑥</span> <i>ne permet pas de retrouver</i> <span class="m">𝑥</span><i>.</i></p>
 <p>Lis le côté droit. <span class="m">6 × 3 = 18 = 2 × 8 + 2</span>, reste 2. <span class="m">6 × 7 = 42 = 5 × 8 + 2</span>, reste 2 aussi. Donc <span class="m">6 × 3 ≡ 6 × 7 (</span>mod <span class="m">8)</span>. Pourtant <span class="m">3 ≢ 7 (</span>mod <span class="m">8)</span>. On ne peut pas « simplifier par 6 ». Avec 3, c’est possible : les huit flèches de gauche arrivent sur huit restes différents.</p>
 <p>La différence vient des nombres 6 et 8. Ils ont un diviseur commun, 2. Les nombres 3 et 8 n’en ont aucun autre que 1. Le reste du chapitre explique ce lien et en tire une méthode pour résoudre les équations du problème.</p>
-<h2>3. La définition, symbole par symbole</h2>
+</div>
+<section class="sec" id="s3"><div class="sk">Chapitre 20 · partie 3</div><h1>La définition, symbole par symbole</h1></section><div class="corps">
 <p>Dans tout ce chapitre, <span class="m">𝑛</span> est un entier strictement positif, le module. On rappelle les trois formes équivalentes de la congruence vues au chapitre 19 :</p>
 <p><span class="m">𝑎 ≡ 𝑏</span> <span class="m">(</span>mod <span class="m">𝑛) ⟺ 𝑛 ∣ 𝑎 − 𝑏</span></p>
 <img class="vm" src="/discretes/img/c020/p0631_4.svg" alt="⟺ 𝑎 = 𝑏 + 𝑘𝑛, 𝑘 ∈ ℤ." style="--w:24.12" loading="lazy">
@@ -91,7 +96,8 @@
 <img class="vm" src="/discretes/img/c020/p0641_27.svg" alt="Définition : équation diophantienne Une équation à deux inconnues ou plus est une équation diophantienne quand seules ses solutions entières nous intéressent. Une équation diophantienne linéaire a la forme 𝑎1𝑥1 + 𝑎2 𝑥2 + ⋯ + 𝑎𝑚𝑥𝑚 = 𝑏," style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0642_28.svg" alt="où 𝑎1 , … , 𝑎𝑚 et 𝑏 sont des entiers fixés. Une solution est une liste d’entiers 𝑥1, … , 𝑥𝑚 qui vérifie l’égalité. Symbole Ce qu’il dit" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0642_29.svg" alt="𝑥1, 𝑥2 Les inconnues. 𝑥1 se lit « 𝑥 indice 1 » : la première inconnue. Dans 5𝑥 + 8𝑦 = 637, 𝑥1 = 𝑥 et 𝑥2 = 𝑦. 𝑎1 , 𝑎2 Les coefficients fixés devant chaque inconnue. Ici 𝑎1 = 5, 𝑎2 = 8. 𝑚 Le nombre d’inconnues. Ici 𝑚 = 2. 𝑏 Le membre de droite. Ici 𝑏 = 637. linéaire Chaque inconnue apparaît seule, sans carré ni produit d’inconnues. L’équation diophantienne la plus célèbre n’est pas linéaire : 𝑎2 + 𝑏2 = 𝑐2. Ses solutions entières s’appellent les triplets pythagoriciens, par exemple 32 + 42 = 52 (9 + 16 = 25). En général, résoudre une équation diophantienne est difficile. Il est même prouvé qu’aucun algorithme général ne peut décider si une équation diophantienne quelconque a une solution : c’est le théorème de Matiyasevich (1970). On se limite ici aux équations linéaires, beaucoup plus simples." style="--w:24.19" loading="lazy">
-<h2>4. Ce que la notion permet de faire</h2>
+</div>
+<section class="sec" id="s4"><div class="sk">Chapitre 20 · partie 4</div><h1>Ce que la notion permet de faire</h1></section><div class="corps">
 <h3>Trouver un reste sans poser la division</h3>
 <p>Quel est le reste de <span class="m">3491</span> dans la division par <span class="m">9</span> ? On cherche <span class="m">𝑥</span> tel que <span class="m">𝑥 ≡ 3491</span> <span class="m">(</span>mod <span class="m">9)</span>. Décompose : <span class="m">3491 = 3000 + 400 +</span> <span class="m">90 + 1</span>.</p>
 <p>D’abord, <span class="m">90 = 10 × 9</span>, donc <span class="m">90 ≡ 0</span> <span class="m">(</span>mod <span class="m">9)</span>. On peut remplacer <span class="m">90</span> par <span class="m">0</span> dans la somme. Pourquoi est-ce permis ? Parce qu’on soustrait la « même » chose des deux côtés, selon la règle (2) :</p>
@@ -228,14 +234,17 @@
 <img class="vm" src="/discretes/img/c020/p0662_74.svg" alt="Le premier cas a été prouvé au chapitre 19. Prouve le second. On cherche 𝑥, 𝑦 ≥ 0 avec 𝑝𝑥+𝑝′𝑦 = 𝑐. La congruence 𝑝𝑥 ≡ 𝑐 (mod 𝑝′) a une solution, car pgcd(𝑝, 𝑝′) = 1 (règle « nombre de solutions »). On peut la choisir entre 0 et 𝑝′ − 1 : appelle-la 𝑥 . Alors 𝑐 − 𝑝𝑥 0 0 est un multiple de 𝑝′. De plus" style="--w:24.31" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0662_75.svg" alt="𝑐 − 𝑝𝑥0 ≥ 𝑐 − 𝑝(𝑝′ − 1) ≥ 0. Donc 𝑦0 = (𝑐 − 𝑝𝑥0 )/𝑝′ est un entier positif ou nul, et 𝑝𝑥0 + 𝑝′𝑦0 = 𝑐. Pour 𝑝 = 5, 𝑝′ = 8 : tout montant 𝑐 ≥ 5 × 7 = 35 est payable. En échangeant les rôles (𝑝 = 8, 𝑝′ = 5), on obtient 𝑐 ≥ 8 × 4 = 32. Le vrai seuil est 28 (figure 19.1), mais l’essentiel est démontré : à partir d’un certain montant, tout est payable. Pour 4 et 9 : pgcd = 1, tout montant 𝑐 ≥ 9 × 3 = 27 est payable. Pour 2 et 4 : pgcd = 2, les montants impairs sont impossibles." style="--w:24.12" loading="lazy">
 <p>La réponse à la question de Levin est donc : deux valeurs de timbres finissent par tout payer <i>si et seulement si</i> leur pgcd vaut 1. Et ce pgcd se calcule tout de suite, par l’algorithme d’Euclide.</p>
-<h2>5. Où elle mène</h2>
+</div>
+<section class="sec" id="s5"><div class="sk">Chapitre 20 · partie 5</div><h1>Où elle mène</h1></section><div class="corps">
 <h3>Ce que ce chapitre relie</h3>
 <img class="vm" src="/discretes/img/c020/p0663_76.svg" alt="La règle des puissances est une récurrence (chapitre 18). La règle « congruence sans solution » se prouve par contraposée (chapitre 4). Le nombre de solutions d’une congruence vient d’une bijection entre ensembles finis (chapitre 6). Les solutions 𝑥 + 𝑘𝑏 forment des suites arithmétiques 0 (chapitre 15)." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0663_77.svg" alt="Lien avec un autre chapitre L’algorithme d’Euclide est une relation de récurrence (chapitre 17) : chaque reste est le reste de la division des deux précédents. Il est le plus lent quand tous les quotients valent 1, ce qui arrive avec deux nombres de Fibonacci consécutifs (chapitre 14). Pour 13 et 8 : 13 = 8 + 5, 8 = 5 + 3, 5 = 3 + 2, 3 = 2 + 1, 2 = 2 × 1. Les restes redescendent la suite de Fibonacci. Comme cette suite croît de façon géométrique (formule de Binet), le nombre d’étapes reste de l’ordre" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0663_78.svg" alt="du nombre de chiffres." style="--w:24.19" loading="lazy">
 <h3>Où cela mène</h3>
 <p>Aux graphes (chapitre 21) : le lemme des poignées de main dit qu’une somme de degrés est congrue à 0 modulo 2. À la cryptographie : le chiffrement RSA calcule des puissances modulo un grand nombre, comme pour <span class="m">3</span><sup>123</sup>, et son déchiffrement « divise » modulo ce nombre grâce à l’identité de Bézout.</p>
-<h2>6. Une question pour toi</h2>
+</div>
+<section class="sec" id="s6"><div class="sk">Chapitre 20 · partie 6</div><h1>Une question pour toi</h1></section><div class="corps">
 <img class="vm" src="/discretes/img/c020/p0665_79.svg" alt="À toi de chercher Avec des timbres de 5 et 8 centimes, le dernier montant impossible est 27. Avec des timbres de 4 et 9 centimes, c’est 23." style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0665_80.svg" alt="Calcule 5 × 8 − 5 − 8 et 4 × 9 − 4 − 9. Que remarques-tu ? Essaie d’autres paires de valeurs premières entre elles, comme 3 et 5, ou 3 et 7. La même formule donne-t-elle le dernier montant impossible ? Pourquoi ce montant précis ne peut-il pas s’écrire 𝑝𝑥 + 𝑝′𝑦 avec 𝑥, 𝑦 ≥ 0 ? Regarde la figure 20.3 : sur la droite 𝑝𝑥 + 𝑝′𝑦 = 𝑐, les points entiers sont espacés d’un déplacement fixe. Que faut-il pour qu’au moins un d’eux tombe dans le quart de plan où 𝑥 ≥ 0 et 𝑦 ≥ 0 ? Et que se" style="--w:24.19" loading="lazy">
 <img class="vm" src="/discretes/img/c020/p0665_81.svg" alt="passe-t-il quand on passe à trois valeurs de timbres ?" style="--w:24.19" loading="lazy">
+</div>
