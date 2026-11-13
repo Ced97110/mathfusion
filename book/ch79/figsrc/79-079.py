@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 22, 78, r'$(4\vee 6)\vee 10$', 'sujet', 's'); text(ax, 66, 78, r'$4\vee(6\vee 10)$', 'autre', 's')
+for xs, labs, r in [((3, 15, 29), ('4', '6', '10'), 'sujet'), ((47, 63, 77), ('4', '6', '10'), 'autre')]:
+    for xx, s in zip(xs, labs): box(ax, xx, 6, 10, 10, r, label=s)
+box(ax, 3, 29, 24, 11, 'varie', label=r'$4\vee 6 = 12$', size='s')
+box(ax, 12, 52, 26, 12, 'resultat', label=r'$12\vee 10 = 60$', size='s')
+arrow(ax, (8, 16), (10, 29), 'fixe'); arrow(ax, (20, 16), (20, 29), 'fixe')
+arrow(ax, (15, 40), (18, 52), 'fixe'); arrow(ax, (34, 16), (30, 52), 'fixe')
+box(ax, 61, 29, 24, 11, 'varie', label=r'$6\vee 10 = 30$', size='s')
+box(ax, 48, 52, 26, 12, 'resultat', label=r'$4\vee 30 = 60$', size='s')
+arrow(ax, (68, 16), (68, 29), 'fixe'); arrow(ax, (82, 16), (80, 29), 'fixe')
+arrow(ax, (70, 40), (66, 52), 'fixe'); arrow(ax, (52, 16), (54, 52), 'fixe')
+text(ax, 43, 58, '=', 'resultat', 'xl')
+save(fig, '79-079')

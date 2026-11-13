@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+def nd(x, y, n, role, w=12, h=7): box(ax, x - w/2, y - h/2, w, h, role, label=n)
+line(ax, [(38,26),(24,38)], 'fixe'); line(ax, [(50,26),(64,38)], 'fixe')
+line(ax, [(24,46),(38,58)], 'fixe'); line(ax, [(64,46),(50,58)], 'fixe')
+nd(44,62,'12','varie'); nd(24,42,'4','sujet'); nd(64,42,'6','autre'); nd(44,22,'2','varie')
+text(ax, 15, 50, r'$a$', 'sujet', 's'); text(ax, 73, 50, r'$b$', 'autre', 's')
+text(ax, 54, 69, r'$a\vee b$', 'varie', 's', ha='left'); text(ax, 54, 15, r'$a\wedge b$', 'varie', 's', ha='left')
+text(ax, 44, 88, 'on revient à 4', 'resultat', 'm', weight='bold')
+text(ax, 44, 8, r'$(4\wedge6)\vee4=2\vee4=4$', 'resultat', 's')
+text(ax, 44, 79, r'$(4\vee6)\wedge4=12\wedge4=4$', 'resultat', 's')
+save(fig, '79-081')

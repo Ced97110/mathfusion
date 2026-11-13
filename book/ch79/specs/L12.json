@@ -1,0 +1,179 @@
+[
+ {
+  "code": "79-177",
+  "a_dire": "Dans le pentagone, un côté a 3 marches et l'autre 2 : sans modularité, le nombre de marches change.",
+  "legende_titre": "Deux chaînes de 0 à 1 qui ne se ressemblent pas",
+  "lecture": [
+   "Le trait bleu monte de 0 à 1 en passant par u et v : trois marches.",
+   "Le trait orange monte de 0 à 1 en passant par w : deux marches.",
+   "Le signe rouge au centre dit que 3 et 2 sont différents."
+  ],
+  "a_voir": "Les deux chaînes relient les mêmes extrémités 0 et 1 mais n'ont pas le même nombre de marches."
+ },
+ {
+  "code": "79-178",
+  "a_dire": "On peut associer les marches des deux chaînes deux à deux, chaque couple étant formé d'intervalles transposés.",
+  "legende_titre": "Une marche de chaque chaîne mise en face de l'autre",
+  "lecture": [
+   "La chaîne bleue va de 1 à 60 par 2, 4, 12.",
+   "La chaîne orange va de 1 à 60 par 5, 15, 30.",
+   "Les deux traits verts épais sont la marche de 12 à 60 et celle de 1 à 5 : elles sont appariées par la double flèche."
+  ],
+  "a_voir": "La marche verte du haut à gauche est associée à la marche verte du bas à droite."
+ },
+ {
+  "code": "79-179",
+  "a_dire": "Si a ∨ b recouvre a et b, alors a et b recouvrent a ∧ b.",
+  "legende_titre": "Un losange de recouvrements dans les diviseurs de 60",
+  "lecture": [
+   "Le texte du haut donne l'implication : la condition est en bleu, la conclusion en vert.",
+   "Les traits bleus du haut montrent que a ∨ b = 60 recouvre a = 12 et b = 20 (×5 et ×3).",
+   "Les traits verts du bas montrent que a et b recouvrent a ∧ b = 4 (×3 et ×5)."
+  ],
+  "a_voir": "Le haut du losange est la condition, le bas est la conclusion."
+ },
+ {
+  "code": "79-180",
+  "a_dire": "Dans le pentagone, qui n'est pas modulaire, l'implication de la semi-modularité échoue.",
+  "legende_titre": "Le losange qui marche et le pentagone qui échoue",
+  "lecture": [
+   "À gauche, dans les diviseurs de 60, les deux traits orange 4-12 et 20-60 sont deux intervalles isomorphes : ×3 chacun. L'implication est vraie.",
+   "À droite, dans le pentagone, les traits verts montrent que 1 recouvre v et w.",
+   "Les traits rouges montrent que v ne recouvre pas 0 : u est entre les deux, soit 2 marches. L'implication est fausse."
+  ],
+  "a_voir": "Dans le pentagone, 1 recouvre v et w mais v ne recouvre pas v ∧ w = 0."
+ },
+ {
+  "code": "79-181",
+  "a_dire": "La preuve par récurrence fabrique le losange a, a₂, a'₂, a₂ ∧ a'₂ grâce à la semi-modularité.",
+  "legende_titre": "Le losange de la preuve, sur les diviseurs de 60",
+  "lecture": [
+   "Le trait bleu descend de 60 à 12 puis 6 : première chaîne.",
+   "Le trait orange descend de 60 à 30 puis 6 : seconde chaîne.",
+   "Le disque vert 6 est a₂ ∧ a'₂ ; la chaîne grise 6, 2, 1 se raccorde en dessous."
+  ],
+  "a_voir": "Les deux chaînes se rejoignent en 6 et forment un losange."
+ },
+ {
+  "code": "79-182",
+  "a_dire": "L'intersection de deux sous-groupes joue le rôle de l'inf a₂ ∧ a'₂ : c'est le même losange qu'au chapitre 64.",
+  "legende_titre": "Deux sous-groupes de Z60 et leur partie commune",
+  "lecture": [
+   "Le grand disque bleu est G₂, d'ordre 12 : les multiples de 5.",
+   "Le grand disque violet est H₂, d'ordre 30 : les multiples de 2.",
+   "La zone verte commune est G₂ ∩ H₂ : les multiples de 10, d'ordre 6, c'est le pgcd de 12 et 30."
+  ],
+  "a_voir": "La partie commune a 6 éléments, égal au pgcd de 12 et 30."
+ },
+ {
+  "code": "79-183",
+  "a_dire": "Toute chaîne de 1 à 60 a quatre marches, avec les mêmes facteurs 2, 2, 3, 5 dans un ordre différent.",
+  "legende_titre": "Trois chaînes, quatre marches chacune",
+  "lecture": [
+   "Chaque ligne est une chaîne de 1 à 60 ; chaque case est une marche.",
+   "La ligne bleue multiplie par 2, 2, 3, 5.",
+   "La ligne orange multiplie par 5, 3, 2, 2 ; la ligne violette par 3, 2, 2, 5."
+  ],
+  "a_voir": "Chaque ligne a quatre cases et les mêmes facteurs."
+ },
+ {
+  "code": "79-184",
+  "a_dire": "Pour les diviseurs, le théorème dit que 60 se factorise d'une seule façon, à l'ordre près.",
+  "legende_titre": "Deux chemins, mêmes nombres premiers",
+  "lecture": [
+   "La ligne bleue range les facteurs de 60 dans l'ordre 2, 2, 3, 5.",
+   "La ligne orange les range dans l'ordre 5, 3, 2, 2.",
+   "Les traits gris relient chaque facteur à son semblable dans l'autre ligne."
+  ],
+  "a_voir": "Les deux lignes contiennent les mêmes quatre nombres premiers."
+ },
+ {
+  "code": "79-185",
+  "a_dire": "Le rang d(a) est le nombre de marches d'une chaîne de 0 à a : 3 pour 12, 2 pour 4, 4 pour 60.",
+  "legende_titre": "Chaque élément a son étage",
+  "lecture": [
+   "Le trait bleu vertical monte de 1 à 2, 4, puis 12 : trois marches jusqu'à 12.",
+   "Les étiquettes à gauche donnent le rang de chaque étage, de 0 à 4.",
+   "Le disque violet 20 est au même étage que 12 : même rang 3, mais pas le même élément."
+  ],
+  "a_voir": "Le rang se lit à l'étage où se trouve le nombre."
+ },
+ {
+  "code": "79-186",
+  "a_dire": "d(a ∨ b) + d(a ∧ b) = d(a) + d(b) : ici 4 + 2 = 3 + 3.",
+  "legende_titre": "Les rangs du haut et du bas, ceux des deux côtés",
+  "lecture": [
+   "Les disques verts 60 et 4 sont le sup et l'inf de 12 et 20 ; leurs rangs sont 4 et 2.",
+   "Le disque bleu 12 et le disque violet 20 ont chacun le rang 3.",
+   "À droite, les deux sommes valent 6."
+  ],
+  "a_voir": "La somme des rangs du haut et du bas égale celle des rangs des côtés."
+ },
+ {
+  "code": "79-187",
+  "a_dire": "Le test pour 12 et 20 donne 4 + 2 = 6 et 3 + 3 = 6, sans rien prouver de plus.",
+  "legende_titre": "Un test chiffré avec 12 et 20",
+  "lecture": [
+   "Le texte du haut dit ce que mesure d : le nombre de marches depuis 1.",
+   "La ligne du haut additionne les rangs de 60 et de 4 : 4 + 2.",
+   "La ligne du bas additionne les rangs de 12 et de 20 : 3 + 3.",
+   "Les deux cases vertes donnent 6, et le signe égal les relie. Le texte du bas rappelle que c'est un exemple, pas une preuve."
+  ],
+  "a_voir": "Les deux sommes valent 6, pour ce seul couple : un exemple, pas une preuve."
+ },
+ {
+  "code": "79-188",
+  "a_dire": "Pour chaque nombre premier, le plus grand exposant plus le plus petit égale la somme des deux exposants.",
+  "legende_titre": "Exposants premier par premier, pour 12 et 20",
+  "lecture": [
+   "Chaque colonne verte est un nombre premier : 2, 3 ou 5.",
+   "La ligne du milieu donne les exposants de 12 et de 20.",
+   "La ligne du bas écrit max + min à gauche et la somme à droite : elles sont égales."
+  ],
+  "a_voir": "Dans chaque colonne, les deux membres de l'égalité sont égaux."
+ },
+ {
+  "code": "79-189",
+  "a_dire": "Dans les sous-espaces, le rang est la dimension : dim(U + W) + dim(U ∩ W) = dim U + dim W, ici 3 + 1 = 2 + 2.",
+  "legende_titre": "Deux plans et leur droite commune",
+  "lecture": [
+   "Le parallélogramme bleu est le plan U, de dimension 2.",
+   "Le parallélogramme violet est le plan W, de dimension 2.",
+   "Le trait vert est leur intersection, de dimension 1 ; leur somme est l'espace, de dimension 3."
+  ],
+  "a_voir": "Les deux plans se coupent selon une droite, et 3 + 1 = 2 + 2."
+ },
+ {
+  "code": "79-190",
+  "a_dire": "Dans les parties d'un ensemble, le rang est le nombre d'éléments : |A ∪ B| + |A ∩ B| = |A| + |B|, ici 4 + 2 = 3 + 3.",
+  "legende_titre": "Deux parties de {1, 2, 3, 4} et leur comptage",
+  "lecture": [
+   "Le disque bleu est A, avec 1, 2, 3 ; le disque violet est B, avec 2, 3, 4.",
+   "La zone verte commune contient 2 et 3 : deux éléments.",
+   "À droite, l'union a 4 éléments, A en a 3 et B en a 3."
+  ],
+  "a_voir": "4 + 2 est égal à 3 + 3."
+ },
+ {
+  "code": "79-191",
+  "a_dire": "Les trois formules ont la même forme : c'est un seul théorème, seul le sens du rang change.",
+  "legende_titre": "Trois formules, une seule forme",
+  "lecture": [
+   "La case bleue du haut est la formule commune.",
+   "Chaque case grise est un treillis : diviseurs, sous-espaces, parties.",
+   "À droite, le résultat en vert et le sens du rang : facteurs, dimension, éléments."
+  ],
+  "a_voir": "Les trois lignes ont la même forme de somme."
+ },
+ {
+  "code": "79-192",
+  "a_dire": "Les diviseurs de 24 forment deux rangées obliques : 1, 2, 4, 8 et 3, 6, 12, 24.",
+  "legende_titre": "Le treillis des diviseurs de 24",
+  "lecture": [
+   "La rangée bleue monte de 1 à 8 en multipliant par 2.",
+   "La rangée violette monte de 3 à 24 en multipliant par 2.",
+   "Les traits gris relient chaque nombre à son triple ; il y a 8 diviseurs."
+  ],
+  "a_voir": "Le dessin a deux rangées obliques de quatre nombres."
+ }
+]

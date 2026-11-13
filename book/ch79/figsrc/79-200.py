@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+disc(ax, 44, 30, 7, 'sujet', label='$e$', size='l')
+text(ax, 44, 48, r'plus grand : $1=e$', 'resultat', 'm')
+arrow(ax, (44, 44), (44, 38.5), 'resultat')
+text(ax, 44, 12, r'plus petit : $0=e$', 'resultat', 'm')
+arrow(ax, (44, 16), (44, 21.5), 'resultat')
+text(ax, 4, 30, r'$e\leq e$', 'sujet', 'm', ha='left')
+text(ax, 84, 34, r'sup : $e\vee e=e$', 'resultat', 's', ha='right')
+text(ax, 84, 26, r'inf : $e\wedge e=e$', 'resultat', 's', ha='right')
+save(fig, '79-200')

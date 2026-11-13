@@ -1,0 +1,184 @@
+[
+ {
+  "code": "79-161",
+  "a_dire": "Dans D4, avec B contenu dans K, le calcul de la loi M donne K d'un côté et B de l'autre : la loi M échoue.",
+  "legende_titre": "Un cas où le calcul des deux côtés diffère",
+  "lecture": [
+   "Le dessin de gauche range cinq sous-groupes : {e} en bas, D4 en haut, B sous K en bleu, C en violet.",
+   "Le premier calcul à droite donne K, parce que B joint C est tout D4.",
+   "Le deuxième calcul donne B, parce que K rencontre C se réduit à {e}.",
+   "En rouge, K est différent de B : les deux côtés ne sont pas égaux."
+  ],
+  "a_voir": "Les deux calculs partent des mêmes B, K, C et finissent sur K et sur B, qui sont différents."
+ },
+ {
+  "code": "79-162",
+  "a_dire": "Les cinq sous-groupes {e}, B, K, C et D4 se rangent en un pentagone N5.",
+  "legende_titre": "Cinq sous-groupes rangés en pentagone",
+  "lecture": [
+   "En bas, {e} ; en haut, D4 avec ses 8 symétries.",
+   "À gauche, la branche en bleu : B est sous K, avec leurs éléments écrits.",
+   "À droite, C en violet est seul sur l'autre branche.",
+   "Les traits relient chaque sous-groupe à celui qui le contient juste au-dessus."
+  ],
+  "a_voir": "Le dessin a la forme d'un pentagone : une branche à deux étages et une branche à un étage."
+ },
+ {
+  "code": "79-163",
+  "a_dire": "Pour B et C non normaux, le produit n'a que 4 éléments et n'est pas le sup, qui en a 8.",
+  "legende_titre": "Le produit de B et C ne remplit pas le sup",
+  "lecture": [
+   "Le tableau en bleu donne les produits d'une symétrie de B (lignes) et d'une symétrie de C (colonnes) : e, t, s, st.",
+   "Dessous, les 8 ronds sont les éléments du sup ; les 4 bleus sont les produits.",
+   "Les 4 ronds gris sont les éléments en plus ; la case rouge dit que ts n'est pas dans le produit."
+  ],
+  "a_voir": "Quatre ronds bleus sur huit : le produit ne couvre pas tout le sup."
+ },
+ {
+  "code": "79-164",
+  "a_dire": "Dans le diamant, a et b sont différents alors que a rencontre c et b rencontre c donnent 0, et a joint c et b joint c donnent 1.",
+  "legende_titre": "Trois éléments du milieu, deux égalités, un écart",
+  "lecture": [
+   "En bas, 0 ; en haut, 1 ; au milieu, a et b en bleu et c en orange.",
+   "Chaque élément du milieu est relié à 0 et à 1.",
+   "Les deux lignes vertes donnent les mêmes résultats pour a et pour b avec c.",
+   "En rouge en haut à droite, a est différent de b."
+  ],
+  "a_voir": "Deux éléments différents, a et b, ont les mêmes rencontre et joint avec c."
+ },
+ {
+  "code": "79-165",
+  "a_dire": "Dans N5, b et c de la chaîne ont les mêmes rencontre et joint avec a, et pourtant b est différent de c.",
+  "legende_titre": "Le quintuplet que le théorème exclut",
+  "lecture": [
+   "À gauche en bleu, la chaîne b sous c, qui est B sous K.",
+   "À droite en violet, a est l'élément isolé, qui est C.",
+   "Les deux lignes vertes donnent 0 pour les rencontres et 1 pour les joints, avec b comme avec c.",
+   "En rouge, b est différent de c."
+  ],
+  "a_voir": "La chaîne b sous c donne les mêmes résultats avec a, mais b et c sont deux éléments distincts."
+ },
+ {
+  "code": "79-166",
+  "a_dire": "La preuve va de a à b par cinq égalités ; la troisième, la loi M, porte le poids ; avec 6, 2 et 5 la chaîne casse dès la deuxième.",
+  "legende_titre": "Une chaîne d'égalités, vérifiée sur 6, 2 et 5",
+  "lecture": [
+   "La colonne de gauche écrit la chaîne de a à b, de haut en bas ; les deux cases orange encadrent l'étape de la loi M.",
+   "La colonne de droite calcule chaque ligne avec a = 6, b = 2, c = 5.",
+   "La deuxième étape demande a ∨ c = b ∨ c ; le texte rouge montre que 30 ≠ 10.",
+   "Les flèches rouges montrent où le 6 devient 2."
+  ],
+  "a_voir": "La chaîne écrite va de a à b, mais le calcul avec 6, 2 et 5 casse à la deuxième étape."
+ },
+ {
+  "code": "79-167",
+  "a_dire": "Dans les diviseurs de 6, x envoyé sur x rencontre 3 relie l'intervalle de 2 à 6 à l'intervalle de 1 à 3, et y joint 2 revient en arrière.",
+  "legende_titre": "Deux intervalles reliés dans les deux sens",
+  "lecture": [
+   "À gauche en bleu, l'intervalle de 2 à 6 ; à droite en violet, l'intervalle de 1 à 3.",
+   "Les flèches orange vont de gauche à droite : 2 donne 1 et 6 donne 3.",
+   "Les flèches vertes reviennent : 1 donne 2 et 3 donne 6."
+  ],
+  "a_voir": "Chaque nombre du bas va sur le bas, chaque nombre du haut sur le haut, et le retour redonne le départ."
+ },
+ {
+  "code": "79-168",
+  "a_dire": "Avec a = 4 et b = 30, le PGCD avec 30 envoie 4, 12, 20, 60 sur 2, 6, 10, 30, un à un.",
+  "legende_titre": "Quatre nombres envoyés sur quatre nombres",
+  "lecture": [
+   "La colonne bleue est l'intervalle de 4 à 60 : 4, 12, 20, 60.",
+   "La colonne violette est l'intervalle de 2 à 30 : 2, 6, 10, 30.",
+   "Chaque flèche orange relie un nombre à son PGCD avec 30."
+  ],
+  "a_voir": "Quatre flèches, une par nombre, sans doublon à l'arrivée."
+ },
+ {
+  "code": "79-169",
+  "a_dire": "Avec x = 12, a = 4, b = 30, les deux calculs (x rencontre b) joint a et x rencontre (b joint a) donnent 12, par la loi M.",
+  "legende_titre": "Deux calculs qui se rejoignent sur 12",
+  "lecture": [
+   "La colonne bleue calcule 12 rencontre 30, puis joint 4 : on trouve 6, puis 12.",
+   "La colonne violette calcule 30 joint 4, puis rencontre 12 : on trouve 60, puis 12.",
+   "La flèche orange entre les deux titres est la loi M.",
+   "Les flèches vertes mènent au résultat 12 = 12."
+  ],
+  "a_voir": "Les deux chemins arrivent au même nombre, 12."
+ },
+ {
+  "code": "79-170",
+  "a_dire": "Les intervalles de a à a joint b et de a rencontre b à b sont dits transposés ; ici 4 à 60 et 2 à 30.",
+  "legende_titre": "Deux côtés opposés d'un losange",
+  "lecture": [
+   "Le losange a pour sommets 2 en bas, 4 à gauche, 30 à droite et 60 en haut.",
+   "Le trait bleu épais, de 4 à 60, est le premier intervalle.",
+   "Le trait violet épais, de 2 à 30, est le second intervalle, du côté opposé."
+  ],
+  "a_voir": "Les deux intervalles transposés sont les deux côtés opposés épais du losange."
+ },
+ {
+  "code": "79-171",
+  "a_dire": "Des intervalles sont projectifs quand une suite de transpositions les relie ; ici de 1 à 2 jusqu'à 15 à 30 en deux étapes.",
+  "legende_titre": "Trois intervalles reliés en chaîne",
+  "lecture": [
+   "Chaque grande case est un intervalle avec son nombre du bas et son nombre du haut : 1 à 2, 3 à 6, 15 à 30.",
+   "Chaque flèche orange est une transposition : la première va de 1 à 2 vers 3 à 6, la seconde vers 15 à 30.",
+   "L'accolade du bas compte les deux transpositions."
+  ],
+  "a_voir": "Le premier et le dernier intervalle ne sont pas reliés directement, mais par deux flèches."
+ },
+ {
+  "code": "79-172",
+  "a_dire": "Chaque transposition envoie le bas sur le bas et le haut sur le haut ; l'enchaînement fait de même, donc les intervalles projectifs sont isomorphes.",
+  "legende_titre": "Bas sur bas, haut sur haut, de bout en bout",
+  "lecture": [
+   "Trois intervalles à deux nombres : 1 et 2, 3 et 6, 15 et 30.",
+   "Les flèches orange envoient chaque nombre du bas sur le bas suivant et chaque nombre du haut sur le haut suivant.",
+   "Les deux grandes flèches vertes montrent l'enchaînement du premier au dernier intervalle."
+  ],
+  "a_voir": "Le premier intervalle arrive sur le dernier, bas sur bas et haut sur haut."
+ },
+ {
+  "code": "79-173",
+  "a_dire": "Deux chaînes de 1 à 60 ne partagent que le départ et l'arrivée : bleu ×2, ×2, ×3, ×5 et orange ×5, ×3, ×2, ×2, quatre marches chacune.",
+  "legende_titre": "Deux chemins de 1 à 60",
+  "lecture": [
+   "Le chemin bleu passe par 2, 4 et 12 ; ses multiplications sont écrites en bleu en haut, dans l'ordre du bas vers le haut.",
+   "Le chemin orange passe par 5, 15 et 30 ; ses multiplications sont écrites en orange.",
+   "Chaque chemin a quatre traits."
+  ],
+  "a_voir": "Les mêmes nombres 2, 2, 3, 5 sont multipliés dans un autre ordre sur le chemin orange."
+ },
+ {
+  "code": "79-174",
+  "a_dire": "Un ensemble ordonné est de longueur finie quand ses chaînes ont un nombre d'éléments borné : au plus 5 pour les diviseurs de 60, sans fin pour les entiers positifs.",
+  "legende_titre": "Une chaîne qui s'arrête, une qui continue",
+  "lecture": [
+   "La chaîne bleue 1, 2, 4, 12, 60 est la plus longue des diviseurs de 60 : 5 éléments.",
+   "La chaîne orange 1, 2, 4, 8, 16 part des entiers positifs.",
+   "La flèche rouge dit qu'elle continue sans fin."
+  ],
+  "a_voir": "Une chaîne se termine à 60, l'autre a une flèche qui continue."
+ },
+ {
+  "code": "79-175",
+  "a_dire": "Une chaîne connexe monte de b à a sans sauter d'élément ; 1, 2, 4, 12, 60 a 4 marches, alors que 1, 4, 60 saute le 2.",
+  "legende_titre": "Monter sans sauter, en comptant les marches",
+  "lecture": [
+   "À gauche en bleu, la chaîne 1, 2, 4, 12, 60 : chaque nombre suit le précédent sans rien entre eux ; elle a n = 4 marches.",
+   "À droite en gris, la chaîne 1, 4, 60.",
+   "Le rond rouge 2, dessiné vide, est le nombre qu'elle saute."
+  ],
+  "a_voir": "Le 2 manque sur la chaîne de droite, il est présent sur celle de gauche."
+ },
+ {
+  "code": "79-176",
+  "a_dire": "Une chaîne connexe est une chaîne maximale : on ne peut rien insérer entre deux voisins, alors qu'on peut insérer 2 dans 1, 4, 60.",
+  "legende_titre": "Rien à insérer d'un côté, une place de l'autre",
+  "lecture": [
+   "À gauche en bleu, la chaîne 1, 2, 4, 12, 60 ; à côté de chaque trait, « rien » indique qu'aucun nombre ne s'y insère.",
+   "À droite en gris, la chaîne 1, 4, 60.",
+   "La flèche orange montre le 2 qui peut être inséré entre 1 et 4."
+  ],
+  "a_voir": "Une place libre existe à droite entre 1 et 4, aucune à gauche."
+ }
+]

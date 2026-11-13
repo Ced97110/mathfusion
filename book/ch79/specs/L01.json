@@ -1,0 +1,179 @@
+[
+ {
+  "code": "79-001",
+  "a_dire": "Pour deux réels distincts, l’un est à gauche de l’autre.",
+  "legende_titre": "Deux paires sur une droite",
+  "lecture": [
+   "Le point bleu et le point violet sont deux nombres de la droite.",
+   "La flèche verte va du point de gauche vers celui de droite.",
+   "Sur la droite du haut, 3,5 est à gauche de 7. Sur celle du bas, 0,2 est à gauche de 0,25."
+  ],
+  "a_voir": "Pour chaque paire, un point est à gauche de l’autre."
+ },
+ {
+  "code": "79-002",
+  "a_dire": "Un nombre a est en dessous de b quand a divise b, sans parler de taille.",
+  "legende_titre": "Ranger les diviseurs de 60",
+  "lecture": [
+   "Chaque disque gris est un diviseur de 60 ; le disque 1 est en bas.",
+   "Le disque bleu 4 et le disque violet 12 sont reliés par le gros trait orange.",
+   "Le trait orange porte la multiplication par 3 : 4 × 3 = 12, donc 4 est en dessous de 12.",
+   "Le titre donne la règle : en dessous = divise."
+  ],
+  "a_voir": "Un trait monte de a à b quand a divise b ; la taille des nombres ne compte pas."
+ },
+ {
+  "code": "79-003",
+  "a_dire": "12 et 20 sont incomparables : aucun des deux ne divise l’autre.",
+  "legende_titre": "Deux nombres sans lien",
+  "lecture": [
+   "Le disque bleu est 12 et le disque violet est 20.",
+   "La flèche rouge du haut va de 12 vers 20 : 20 ÷ 12 ≈ 1,67, pas un entier.",
+   "La flèche rouge du bas va de 20 vers 12 : 12 ÷ 20 = 0,6, pas un entier."
+  ],
+  "a_voir": "Les deux divisions donnent un non : les deux nombres sont incomparables."
+ },
+ {
+  "code": "79-004",
+  "a_dire": "Les parties {a, b} et {b, c} sont incomparables par inclusion.",
+  "legende_titre": "Des parties sans inclusion",
+  "lecture": [
+   "Chaque boîte est une partie de {a, b, c} ; la partie vide est en bas.",
+   "La boîte bleue est {a, b}, la boîte violette est {b, c}.",
+   "Aucun trait ne monte de l’une à l’autre."
+  ],
+  "a_voir": "Les deux boîtes colorées sont à la même hauteur, sans chemin entre elles."
+ },
+ {
+  "code": "79-005",
+  "a_dire": "12 et 20 sont incomparables, mais ils ont un PPCM (60) et un PGCD (4).",
+  "legende_titre": "Le PPCM et le PGCD de 12 et 20",
+  "lecture": [
+   "Le disque bleu est 12 et le disque violet est 20 ; le trait rouge pointillé dit qu’ils ne se comparent pas.",
+   "Le disque vert du haut est 60, le PPCM.",
+   "Le disque vert du bas est 4, le PGCD."
+  ],
+  "a_voir": "Sans comparer 12 et 20, on trouve 60 au-dessus et 4 au-dessous."
+ },
+ {
+  "code": "79-006",
+  "a_dire": "Pour des parties, l’union est la plus petite partie au-dessus et l’intersection la plus grande au-dessous.",
+  "legende_titre": "Union et intersection comme rangs",
+  "lecture": [
+   "La boîte bleue est {r, b} et la boîte violette est {b, v}.",
+   "La boîte verte du haut est {r, b, v} : l’union.",
+   "La boîte verte du bas est {b} : l’intersection."
+  ],
+  "a_voir": "L’union est juste au-dessus des deux, l’intersection juste au-dessous."
+ },
+ {
+  "code": "79-007",
+  "a_dire": "Des nombres et des parties se rangent « les uns sous les autres » avec la même forme de dessin.",
+  "legende_titre": "Deux mondes, un même dessin",
+  "lecture": [
+   "À gauche, en bleu, les diviseurs 4, 12, 20 et 60 rangés par divisibilité.",
+   "À droite, en violet, les parties {b}, {a, b}, {b, c} et {a, b, c} rangées par inclusion.",
+   "Les deux dessins ont la même forme."
+  ],
+  "a_voir": "Les deux dessins ont quatre éléments disposés de la même façon."
+ },
+ {
+  "code": "79-008",
+  "a_dire": "Deux chemins différents de 1 à 60 ont chacun quatre étapes.",
+  "legende_titre": "Deux chemins de 1 à 60",
+  "lecture": [
+   "Le chemin orange passe par 2, 4 et 12 ; le chemin violet passe par 5, 15 et 30.",
+   "Chaque flèche est une multiplication par un nombre premier, écrite en bas dans l’ordre.",
+   "Les deux chemins partent de 1 (bleu) et arrivent à 60 (vert)."
+  ],
+  "a_voir": "Chaque chemin compte quatre flèches."
+ },
+ {
+  "code": "79-009",
+  "a_dire": "Sur le dessin des diviseurs de 60, 60 est au-dessus de 12 et 20, et 4 est au-dessous des deux.",
+  "legende_titre": "Les diviseurs de 60, avec 12 et 20",
+  "lecture": [
+   "Chaque disque est un diviseur de 60 ; chaque trait est une multiplication par un nombre premier.",
+   "Les disques orange sont 12 et 20.",
+   "Le disque vert du haut est 60 (PPCM) ; celui de gauche est 4 (PGCD). Les traits verts relient ces quatre nombres."
+  ],
+  "a_voir": "Les traits verts montent de 12 et 20 vers 60 et descendent vers 4."
+ },
+ {
+  "code": "79-010",
+  "a_dire": "Un trait relie deux disques quand on multiplie par un seul nombre premier.",
+  "legende_titre": "Ce que dit un trait",
+  "lecture": [
+   "Chaque trait orange porte la multiplication écrite à côté : ×3 ou ×5.",
+   "Le trait rouge pointillé relie 4 à 60 : ce serait ×15, qui n’est pas premier.",
+   "Pour aller de 4 à 60, il faut deux traits."
+  ],
+  "a_voir": "Il n’y a pas de trait direct de 4 à 60."
+ },
+ {
+  "code": "79-011",
+  "a_dire": "Un diagramme de Hasse peut placer deux disques côte à côte sans chemin entre eux.",
+  "legende_titre": "Ligne ou diagramme",
+  "lecture": [
+   "À gauche, 4, 12 et 60 sont alignés : chacun se compare aux autres.",
+   "À droite, 12 et 20 sont côte à côte.",
+   "Le trait rouge pointillé entre 12 et 20 dit qu’il n’y a pas de chemin."
+  ],
+  "a_voir": "À droite seulement, deux disques ne se comparent pas."
+ },
+ {
+  "code": "79-012",
+  "a_dire": "x est en dessous de y quand on peut monter de x à y par des traits.",
+  "legende_titre": "Monter par les traits",
+  "lecture": [
+   "Les disques et traits orange forment le chemin 2, 6, 12, 60 qui monte.",
+   "Les disques rouges 4 et 15 n’ont aucun chemin montant entre eux.",
+   "Les traits gris sont les autres traits du dessin."
+  ],
+  "a_voir": "On peut monter de 2 à 60 en trois traits, mais pas de 4 à 15."
+ },
+ {
+  "code": "79-013",
+  "a_dire": "L’étage d’un nombre est son nombre de facteurs premiers, répétés compris.",
+  "legende_titre": "Compter les facteurs",
+  "lecture": [
+   "Chaque ligne donne un nombre et son étage.",
+   "Chaque boîte est un facteur premier : bleu pour 2, orange pour 3, violet pour 5.",
+   "Le nombre de boîtes est l’étage : 5 a une boîte, 60 en a quatre."
+  ],
+  "a_voir": "Le nombre de boîtes de chaque ligne est l’étage."
+ },
+ {
+  "code": "79-014",
+  "a_dire": "Au-dessus de 12 et 20 il n’y a que 60 ; au-dessous, le plus haut est 4.",
+  "legende_titre": "Au-dessus et au-dessous",
+  "lecture": [
+   "Le disque bleu est 12 et le disque violet est 20.",
+   "Le disque vert du haut est 60, seul disque au-dessus des deux.",
+   "Sous les deux, la colonne 4, 2, 1 est la liste des disques au-dessous ; le vert 4 est le plus haut."
+  ],
+  "a_voir": "On choisit 60 en haut et 4 en bas dans de petites listes."
+ },
+ {
+  "code": "79-015",
+  "a_dire": "Le PPCM se lit sur le dessin comme le disque juste au-dessus de 12 et 20.",
+  "legende_titre": "Calcul ou dessin",
+  "lecture": [
+   "À gauche, les multiples de 12 (bleu) et de 20 (violet) sont écrits en liste ; 60 est le premier nombre commun, en vert.",
+   "À droite, 12 et 20 sont reliés au disque vert 60.",
+   "Le dessin montre 60 d’un coup d’œil."
+  ],
+  "a_voir": "Le même 60 apparaît dans les listes et au-dessus des deux disques."
+ },
+ {
+  "code": "79-016",
+  "a_dire": "Un ensemble partiellement ordonné est un ensemble avec une règle a ≤ b qui a trois propriétés.",
+  "legende_titre": "Les trois propriétés de la règle",
+  "lecture": [
+   "La ligne du haut : la flèche verte revient sur 4, un élément est sous lui-même.",
+   "La ligne du milieu : la flèche verte va de 4 à 12 ; la flèche rouge de retour est impossible.",
+   "La ligne du bas : 4 sous 12 et 12 sous 60 donnent la grande flèche verte, 4 sous 60."
+  ],
+  "a_voir": "Chaque ligne montre une propriété de la règle."
+ }
+]

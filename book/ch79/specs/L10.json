@@ -1,0 +1,188 @@
+[
+ {
+  "code": "79-145",
+  "a_dire": "Les deux côtés de l'égalité donnent le même résultat, 2, avec les exposants 2, 2 et 1.",
+  "legende_titre": "Cinq actions sur trois exposants",
+  "lecture": [
+   "Les trois cases bleues sont les exposants du même premier : 2, 2 et 1.",
+   "Les cases orange sont les calculs du plus petit et du plus grand.",
+   "À gauche, on prend d'abord le plus grand de b et c, puis le plus petit avec a.",
+   "À droite, on calcule deux plus petits, puis le plus grand des deux. Les deux cases vertes valent 2."
+  ],
+  "a_voir": "Les deux chemins partent des mêmes trois cases et arrivent à la même valeur."
+ },
+ {
+  "code": "79-146",
+  "a_dire": "Avec d'autres nombres, les calculs changent mais les deux côtés restent égaux.",
+  "legende_titre": "Deux essais, une même égalité",
+  "lecture": [
+   "Chaque colonne est un essai : 8, 12, 18 à gauche ; 6, 10, 15 à droite.",
+   "Les cases orange sont les calculs intermédiaires : ils changent d'un essai à l'autre.",
+   "La case verte du bas montre les deux côtés égaux : 4 = 4, puis 6 = 6."
+  ],
+  "a_voir": "Les nombres et les calculs changent, mais l'égalité est vraie dans les deux colonnes."
+ },
+ {
+  "code": "79-147",
+  "a_dire": "Le calcul vérifie la loi pour 12, 20 et 30 seulement : les deux côtés valent 12.",
+  "legende_titre": "Un calcul complet avec 12, 20 et 30",
+  "lecture": [
+   "La ligne du haut est le côté gauche : PPCM de 20 et 30, puis PGCD avec 12.",
+   "Les deux cases du bas à gauche sont les deux PGCD du côté droit.",
+   "Les deux flèches mènent au PPCM de 4 et 6.",
+   "Les deux cases vertes valent 12 : le signe = les relie."
+  ],
+  "a_voir": "Les deux côtés valent 12, pour ce triplet seulement."
+ },
+ {
+  "code": "79-148",
+  "a_dire": "Chaque nombre devient une liste d'exposants, et on compare les listes une position à la fois.",
+  "legende_titre": "Des nombres devenus des listes d'exposants",
+  "lecture": [
+   "Chaque ligne est un nombre : 12, 20 ou 30, écrit par ses exposants de 2, 3 et 5.",
+   "Chaque colonne en pointillé orange est une position, avec des entiers rangés par taille.",
+   "L'accolade dit que chaque colonne est une chaîne."
+  ],
+  "a_voir": "On compare liste par liste, une colonne à la fois."
+ },
+ {
+  "code": "79-149",
+  "a_dire": "Le plan à quatre vecteurs a cinq sous-espaces, qui se rencontrent seulement au vecteur nul.",
+  "legende_titre": "Les cinq sous-espaces du plan à quatre vecteurs",
+  "lecture": [
+   "Chaque carré montre les quatre vecteurs du plan : (0, 0), (1, 0), (0, 1), (1, 1). Les points pleins forment le sous-espace.",
+   "Le carré du bas a un seul point plein, gris : le vecteur nul.",
+   "Les trois carrés du milieu, D1, D2 et D3, ont deux points pleins : ligne, colonne, diagonale.",
+   "Le carré du haut a les quatre points pleins : le plan E."
+  ],
+  "a_voir": "Il y a cinq sous-espaces, et le point gris du coin du bas est le seul point commun aux trois droites."
+ },
+ {
+  "code": "79-150",
+  "a_dire": "On peut dresser la liste complète des sous-espaces du plan à quatre vecteurs : le vecteur nul, trois droites, le plan.",
+  "legende_titre": "Les quatre couples et les trois droites",
+  "lecture": [
+   "La rangée du haut donne la liste des cinq sous-espaces : {0}, D1, D2, D3 et E.",
+   "Les trois points bleus sont les couples non nuls : (1, 0), (0, 1) et (1, 1). Le point gris est le couple nul (0, 0).",
+   "Chaque flèche orange part du couple nul vers un couple non nul : c'est une droite D1, D2 ou D3.",
+   "Les pointillés et la formule du bas montrent que (1, 1) est la somme de (1, 0) et (0, 1), modulo 2."
+  ],
+  "a_voir": "Chaque droite est engendrée par un des trois couples non nuls ; avec {0} et E, cela fait cinq sous-espaces."
+ },
+ {
+  "code": "79-151",
+  "a_dire": "L'inf de deux sous-espaces est leur intersection, et le sup est leur somme U + W.",
+  "legende_titre": "Inf et sup de deux droites",
+  "lecture": [
+   "La case bleue est la droite U, avec (0, 0) et (1, 0) ; la case violette est la droite W, avec (0, 0) et (0, 1).",
+   "La case verte du bas est leur partie commune : le couple nul seul.",
+   "La case verte du haut est la somme U + W : les quatre sommes donnent le plan entier."
+  ],
+  "a_voir": "En bas, ce que U et W ont en commun ; en haut, ce qu'on obtient en les additionnant."
+ },
+ {
+  "code": "79-152",
+  "a_dire": "Pour ces trois droites, les deux côtés de la loi D donnent deux sous-espaces différents : D3 et {0}.",
+  "legende_titre": "Le calcul qui fait échouer la loi D",
+  "lecture": [
+   "La ligne du haut est le côté gauche : D1 + D2 est le plan E, et D3 coupé avec E donne D3.",
+   "La ligne du bas est le côté droit : D3 coupé avec D1, puis avec D2, donne {0} et {0}, donc {0}.",
+   "Les deux cases vertes sont les résultats ; le signe rouge dit qu'ils sont différents."
+  ],
+  "a_voir": "D3 et {0} ne sont pas égaux, donc la loi D est fausse."
+ },
+ {
+  "code": "79-153",
+  "a_dire": "Le treillis des sous-espaces du plan à quatre vecteurs est le diamant M3 : le vecteur nul, trois droites, le plan.",
+  "legende_titre": "Le diamant à cinq éléments",
+  "lecture": [
+   "Le disque vert du bas est le vecteur nul, celui du haut est le plan entier.",
+   "Les trois disques bleus du milieu sont les droites D1, D2 et D3.",
+   "Aucun trait ne relie deux droites entre elles : elles ne se contiennent pas."
+  ],
+  "a_voir": "Cinq éléments : un en bas, un en haut, trois au milieu sans lien entre eux."
+ },
+ {
+  "code": "79-154",
+  "a_dire": "Les sous-groupes de Z/2 × Z/2 sont les mêmes cinq parties que les sous-espaces du plan à quatre vecteurs.",
+  "legende_titre": "Même liste pour sous-groupes et sous-espaces",
+  "lecture": [
+   "La colonne bleue liste les cinq sous-espaces du plan à quatre vecteurs.",
+   "La colonne violette liste les cinq sous-groupes du groupe V.",
+   "Chaque flèche verte relie deux cases qui contiennent les mêmes couples."
+  ],
+  "a_voir": "Ligne par ligne, les deux colonnes sont identiques : même treillis."
+ },
+ {
+  "code": "79-155",
+  "a_dire": "Sur tout corps, deux vecteurs non colinéaires x et y donnent trois droites Fx, Fy et F(x + y) qui forment un diamant M3.",
+  "legende_titre": "Trois droites du plan réel et leur diamant",
+  "lecture": [
+   "À gauche, les trois droites orange sont Fx, Fy et F(x + y) dans le plan réel, avec le point gris à l'origine.",
+   "À droite, chaque droite est une case orange au milieu du diamant.",
+   "La case verte du bas est l'origine, celle du haut est le plan."
+  ],
+  "a_voir": "Les trois droites sont incomparables deux à deux, entre l'origine et le plan."
+ },
+ {
+  "code": "79-156",
+  "a_dire": "Pour les sous-groupes qui ne sont pas tous normaux, le treillis n'est pas modulaire : K ≠ B dans le contre-exemple de D4.",
+  "legende_titre": "Le contre-exemple des symétries du carré",
+  "lecture": [
+   "À gauche, la chaîne bleue est B, contenu dans K ; la case violette est C.",
+   "Les cases grises sont {e} en bas et le sup de B et C en haut.",
+   "À droite, le premier calcul donne K et le second donne B.",
+   "La case rouge dit que K et B sont différents : la loi M est fausse."
+  ],
+  "a_voir": "Les deux membres de la loi M donnent K et B, qui sont différents."
+ },
+ {
+  "code": "79-157",
+  "a_dire": "Le produit H2 H3 a 12 nombres, l'union de H2 et H3 n'en a que 6.",
+  "legende_titre": "Produit et union de deux sous-groupes modulo 12",
+  "lecture": [
+   "Les disques bleus sont 0, 4 et 8, les éléments de H2.",
+   "Les disques violets sont 3, 6 et 9, qui s'ajoutent à 0 pour former H3 ; le contour violet marque les éléments de H3.",
+   "Les six disques verts sont les sommes qui ne sont ni dans H2 ni dans H3.",
+   "Le texte compte : 6 nombres dans l'union, 12 dans le produit."
+  ],
+  "a_voir": "Les disques verts sont dans le produit mais pas dans l'union."
+ },
+ {
+  "code": "79-158",
+  "a_dire": "La preuve part de H2 ⊆ H1 et montre que H2(H1 ∩ H3) est dans H1 et dans H2H3.",
+  "legende_titre": "Une inclusion en trois temps",
+  "lecture": [
+   "La colonne de gauche donne la preuve, la colonne de droite le cas chiffré modulo 12.",
+   "La case grise du haut est le départ : H2 est contenu dans H1.",
+   "La case violette prend h2 dans H2 et k dans H1 ∩ H3 ; ici 4 et 6.",
+   "La case orange porte le poids : h2 + k reste dans H1 parce que H2 ⊆ H1, comme 4 + 6 = 10.",
+   "La case verte est l'arrivée : on retrouve tous les pairs. H2H3 désigne les sommes h2 + h3."
+  ],
+  "a_voir": "L'étape orange utilise H2 ⊆ H1 pour rester dans H1."
+ },
+ {
+  "code": "79-159",
+  "a_dire": "On écrit h3 = g − h2 ; comme h2 et g sont dans H1, h3 est dans H1, et il est déjà dans H3.",
+  "legende_titre": "De g = 10 à h3 = 6",
+  "lecture": [
+   "Sur la droite graduée, g = 10 est la somme de h2 = 4 (accolade bleue, de 0 à 4) et de h3 = 6 (accolade violette, de 4 à 10).",
+   "Le point bleu est 4, le point violet est 6, le point vert est 10.",
+   "La flèche orange revient de 10 à 6 : c'est le calcul h3 = g − h2 = 10 − 4.",
+   "Le texte vert dit que 6 est pair, donc dans H1, et qu'il est dans H3."
+  ],
+  "a_voir": "Retirer h2 de g donne h3, qui reste parmi les pairs."
+ },
+ {
+  "code": "79-160",
+  "a_dire": "« Faire passer » h2 de l'autre côté veut dire retirer 4 des deux côtés, et le résultat reste dans H1.",
+  "legende_titre": "Isoler h3 dans 10 = 4 + h3",
+  "lecture": [
+   "La case bleue du haut est l'égalité de départ : 10 = 4 + h3.",
+   "La case orange du milieu est le résultat de « on retire 4 des deux côtés ».",
+   "La case verte du bas donne h3 = 6.",
+   "Le texte vert dit pourquoi on reste dans les pairs : 4 et 10 sont pairs."
+  ],
+  "a_voir": "Le calcul est une soustraction, et elle reste parmi les nombres pairs."
+ }
+]

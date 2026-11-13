@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+def nd(x, y, n, role, w=12, h=8): box(ax, x - w/2, y - h/2, w, h, role, label=n)
+nd(14,54,'12','sujet'); nd(74,54,'12','resultat')
+arrow(ax, (21,54), (67,54), 'varie'); text(ax, 44, 59, r'on joint $a=4$', 'varie', 's')
+text(ax, 44, 44, '12 est un multiple de 4', 'resultat', 's')
+nd(14,22,'20','autre'); nd(74,22,'60','limite')
+arrow(ax, (21,22), (67,22), 'varie'); text(ax, 44, 27, r'on joint $a=12$', 'varie', 's')
+text(ax, 44, 11, "20 n'est pas multiple de 12", 'limite', 's')
+text(ax, 74, 66, 'inchangé', 'resultat', 's'); text(ax, 74, 34, 'change', 'limite', 's')
+save(fig, '79-092')

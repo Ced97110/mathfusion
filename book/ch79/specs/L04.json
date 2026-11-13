@@ -1,0 +1,179 @@
+[
+ {
+  "code": "79-049",
+  "a_dire": "Le contre-exemple : quatre points p, q en bas, r, s en haut, tous reliés, montre que p ∨ q n’existe pas.",
+  "legende_titre": "Quatre points tous reliés",
+  "lecture": [
+   "Les points p et q (bleu) sont en bas. Les points r et s (violet) sont en haut. Chaque point du bas est relié à chaque point du haut.",
+   "Le trait rouge en pointillé relie r et s : aucun des deux n’est en dessous de l’autre.",
+   "L’accolade dit que r et s sont les majorants de p et q."
+  ],
+  "a_voir": "Il y a deux majorants et aucun n’est le plus petit : p ∨ q n’existe pas."
+ },
+ {
+  "code": "79-050",
+  "a_dire": "Le signe a ≤ b se lit « a est en dessous de b » : on monte de a à b.",
+  "legende_titre": "Lire le signe ≤",
+  "lecture": [
+   "À gauche, on monte de 4 à 12 : la flèche verte monte et la phrase est vraie.",
+   "À droite, la flèche rouge descend de 12 à 4 : la phrase est fausse.",
+   "Les nombres sont les diviseurs de 60."
+  ],
+  "a_voir": "L’ordre d’écriture compte : on monte de a vers b."
+ },
+ {
+  "code": "79-051",
+  "a_dire": "Le signe a < b veut dire a ≤ b et a ≠ b, et il permet d’écrire une suite a < u < b en une ligne.",
+  "legende_titre": "Le signe < pour écrire plus vite",
+  "lecture": [
+   "Le cadre bleu dit « en dessous de » et le cadre violet dit « différent de ».",
+   "Les flèches orange les réunissent dans le cadre vert 4 < 12.",
+   "En bas, les trois points 4, 12 et 60 se lisent en une ligne : 4 < 12 < 60."
+  ],
+  "a_voir": "Un seul signe remplace les deux phrases."
+ },
+ {
+  "code": "79-052",
+  "a_dire": "Le signe a ⪯ b se lit comme a ≤ b : c’est la même phrase avec une autre forme.",
+  "legende_titre": "Deux signes, une même lecture",
+  "lecture": [
+   "Le cadre bleu montre la notation du livre et le cadre violet celle de Judson.",
+   "Les deux mènent au cadre vert, qui est la même phrase.",
+   "En bas, 6 ⪯ 12 est vrai (vert) et 5 ⪯ 12 est faux (rouge) pour la divisibilité."
+  ],
+  "a_voir": "Les deux signes ont le même sens, et il ne s’agit pas de la taille des nombres."
+ },
+ {
+  "code": "79-053",
+  "a_dire": "Le signe a ∣ b veut dire que b est égal à a fois un nombre entier : a divise b.",
+  "legende_titre": "Le signe ∣ remplace une phrase",
+  "lecture": [
+   "En haut, les 12 carrés bleus forment trois groupes de 4 : 12 = 4 × 3, donc 4 ∣ 12.",
+   "En bas, les 12 carrés forment deux groupes de 5 et il reste 2 carrés rouges.",
+   "Le cadre rouge dit que 5 ne divise pas 12."
+  ],
+  "a_voir": "Il faut des groupes égaux sans reste pour que a divise b."
+ },
+ {
+  "code": "79-054",
+  "a_dire": "Le signe sup A désigne le plus petit majorant de la partie A, qui n’est pas forcément dans A.",
+  "legende_titre": "Le signe sup A",
+  "lecture": [
+   "Le cadre en pointillé bleu contient la partie A = {4, 6}.",
+   "Le point vert 12 est le plus petit majorant : sup A = 12.",
+   "Le point gris 60 est un autre majorant, plus grand."
+  ],
+  "a_voir": "12 est au-dessus de 4 et de 6 et n’est pas dans A."
+ },
+ {
+  "code": "79-055",
+  "a_dire": "Le signe inf A désigne le plus grand minorant d’une partie A, de n’importe quelle taille.",
+  "legende_titre": "Le signe inf A",
+  "lecture": [
+   "Le cadre en pointillé bleu contient les trois éléments de A : 12, 20 et 30.",
+   "Le point vert 2 est le plus grand minorant : inf A = 2.",
+   "Le point gris 1 est un autre minorant, plus petit."
+  ],
+  "a_voir": "Une seule écriture donne la borne d’une partie de trois éléments."
+ },
+ {
+  "code": "79-056",
+  "a_dire": "Le signe a ∨ b se lit « le plus petit majorant de a et b », et le calcul dépend de l’ensemble.",
+  "legende_titre": "Un signe ∨, trois calculs",
+  "lecture": [
+   "Dans chaque colonne, les deux cadres bleus du bas sont a et b, et le cadre vert du haut est a ∨ b.",
+   "Pour les diviseurs de 60, 4 ∨ 6 = 12 (PPCM).",
+   "Pour les parties, rouge et bleu donnent rouge + bleu (union). Pour les réels, 3 ∨ 7 = 7."
+  ],
+  "a_voir": "La lecture est la même partout ; seul le calcul change."
+ },
+ {
+  "code": "79-057",
+  "a_dire": "Le signe a ∧ b désigne le plus grand minorant de a et b, et permet d’écrire (a ∨ b) ∧ a = a.",
+  "legende_titre": "Le signe ∧ sur un calcul",
+  "lecture": [
+   "Le point bleu 4 et le point violet 6 ont pour plus petit majorant 12 (orange).",
+   "La flèche verte redescend de 12 vers 4 : 12 ∧ 4 = 4.",
+   "Le cadre vert résume : (4 ∨ 6) ∧ 4 = 4."
+  ],
+  "a_voir": "On retrouve le point de départ 4."
+ },
+ {
+  "code": "79-058",
+  "a_dire": "Le signe 0 désigne le plus petit élément du treillis, qui n’est pas forcément le nombre 0.",
+  "legende_titre": "Le signe 0 est un rôle",
+  "lecture": [
+   "Le titre dit que 0 désigne le plus petit élément, pas le nombre zéro.",
+   "À gauche, dans les diviseurs de 60, le point 1 est en dessous des 11 autres : 0 = 1.",
+   "À droite, dans les parties de 3 stylos, la partie vide est en dessous des 7 autres : 0 = ∅.",
+   "Les flèches grises montent vers tous les autres éléments."
+  ],
+  "a_voir": "Le même signe 0 désigne des éléments différents selon le treillis."
+ },
+ {
+  "code": "79-059",
+  "a_dire": "Le signe 1 désigne le plus grand élément du treillis : dans les diviseurs de 60, c’est 60.",
+  "legende_titre": "Le signe 1 dans les diviseurs de 60",
+  "lecture": [
+   "Les points bleus 12, 20 et 30 sont reliés au point vert 60.",
+   "1 = 60 est le plus grand élément.",
+   "Les phrases a ≤ 1 pour tout a et 12 ∨ 60 = 60 s’écrivent sans citer 60."
+  ],
+  "a_voir": "Tout élément est en dessous de 1."
+ },
+ {
+  "code": "79-060",
+  "a_dire": "Le signe P(S) désigne l’ensemble des parties de S, rangées par inclusion ; pour 3 stylos il y a 8 parties.",
+  "legende_titre": "L’ensemble des parties de S",
+  "lecture": [
+   "Chaque point est une partie des trois stylos r, b, v ; le point du bas est la partie vide.",
+   "Les traits montent d’une partie à une partie qui la contient.",
+   "Le point du haut, rbv, est S entier. Le calcul 2 × 2 × 2 = 8 donne le nombre de points."
+  ],
+  "a_voir": "Les éléments de P(S) sont des parties, pas des stylos."
+ },
+ {
+  "code": "79-061",
+  "a_dire": "Le signe I[a, b] désigne tous les éléments situés entre a et b, a et b compris.",
+  "legende_titre": "L’intervalle entre deux éléments",
+  "lecture": [
+   "Le point du bas, 4, est a et le point du haut, 60, est b.",
+   "Les points verts 12 et 20 sont entre les deux.",
+   "Le cadre en pointillé contient {4, 12, 20, 60} : c’est I[4, 60]."
+  ],
+  "a_voir": "L’intervalle regroupe tout ce qui vérifie 4 ≤ x ≤ 60."
+ },
+ {
+  "code": "79-062",
+  "a_dire": "Le signe L(V) désigne l’ensemble des sous-espaces de V, rangés par inclusion.",
+  "legende_titre": "Les sous-espaces d’un plan",
+  "lecture": [
+   "À droite, le plan V est en bleu et les droites violettes passent par l’origine.",
+   "À gauche, le point du bas est {0}, les points violets sont des droites, le point du haut est V.",
+   "Les traits montent d’un sous-espace à celui qui le contient."
+  ],
+  "a_voir": "Les éléments de L(V) sont des sous-espaces, pas des vecteurs."
+ },
+ {
+  "code": "79-063",
+  "a_dire": "Le signe F₂ désigne l’ensemble {0, 1} où 1 + 1 = 0, et F₂² désigne les couples de ses éléments, au nombre de quatre.",
+  "legende_titre": "Le nom court F₂",
+  "lecture": [
+   "À gauche, les quatre additions de 0 et 1 ; la ligne orange est la règle 1 + 1 = 0.",
+   "À droite, les quatre points bleus sont les couples (0, 0), (1, 0), (0, 1) et (1, 1).",
+   "Ces quatre couples forment F₂²."
+  ],
+  "a_voir": "Un nom court garde la règle 1 + 1 = 0 attachée à l’ensemble."
+ },
+ {
+  "code": "79-064",
+  "a_dire": "Le signe N₅ nomme le treillis à cinq éléments 0, 1, a, b, c, où b est en dessous de c.",
+  "legende_titre": "Le treillis N₅",
+  "lecture": [
+   "Les points gris 0 et 1 sont le bas et le haut.",
+   "Le point violet a est seul sur une branche ; les points bleus b et c sont sur l’autre, b sous c.",
+   "Le trait rouge en pointillé relie a et c, qui sont incomparables."
+  ],
+  "a_voir": "Le nom N₅ désigne ce dessin de cinq points."
+ }
+]

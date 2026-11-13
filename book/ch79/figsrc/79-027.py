@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 41, 30, 9, 'sujet', label=r'$2 \preceq 6$')
+arrow(ax, (17, 41), (17, 28.5), 'varie'); text(ax, 20, 34.5, 'le couple', 'varie', 's', ha='left')
+box(ax, 2, 19.5, 30, 9, 'resultat', label=r'$(2, 6) \in P$')
+box(ax, 40, 4, 46, 52, 'fixe'); text(ax, 63, 52, r'$X \times X$', 'fixe', 'm')
+box(ax, 44, 8, 38, 29, 'sujet'); text(ax, 63, 33, r'$P$', 'sujet', 'm')
+disc(ax, 52, 20, 1.6, 'varie', fill=True); text(ax, 66, 20, r'$(2, 6)$', 'varie', 's')
+disc(ax, 50, 44, 1.6, 'limite', fill=True); text(ax, 68, 44, r'$(6, 2) \notin P$', 'limite', 's')
+save(fig, '79-027')

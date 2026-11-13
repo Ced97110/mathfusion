@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(55)
+text(ax, 44, 49, 'règle : avoir le même étage', 'fixe', 's')
+disc(ax, 18, 26, 7, 'sujet', label='4')
+disc(ax, 70, 26, 7, 'autre', label='6')
+text(ax, 18, 14, '2 × 2', 'sujet', 's'); text(ax, 70, 14, '2 × 3', 'autre', 's')
+arrow(ax, (26, 31), (62, 31), 'varie'); text(ax, 44, 35, '4 ≤ 6', 'varie', 's')
+arrow(ax, (62, 21), (26, 21), 'varie'); text(ax, 44, 17, '6 ≤ 4', 'varie', 's')
+text(ax, 44, 26, '4 ≠ 6', 'limite', 'm', weight='bold')
+save(fig, '79-018')

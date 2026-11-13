@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+line(ax, [(44, 6), (44, 54)], 'fixe', dash=True)
+disc(ax, 20, 42, 4, 'sujet', label='2', size='m')
+disc(ax, 20, 22, 4, 'sujet', label='1', size='m')
+line(ax, [(20, 26), (20, 38)], 'fixe')
+text(ax, 27, 42, 'plus grand', 'resultat', 's', ha='left')
+text(ax, 27, 22, 'plus petit', 'resultat', 's', ha='left')
+text(ax, 22, 8, r'plus petit $\neq$ plus grand', 'resultat', 's')
+disc(ax, 66, 30, 5, 'limite', label='$x$', size='m')
+text(ax, 66, 46, r'si $0=1$ :', 'limite', 'm')
+text(ax, 66, 14, 'un seul élément :\ntout est égal à $x$', 'limite', 's')
+save(fig, '79-201')

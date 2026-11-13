@@ -1,0 +1,184 @@
+[
+ {
+  "code": "79-081",
+  "a_dire": "Absorber a : (a ∨ b) ∧ a redonne a, et (a ∧ b) ∨ a aussi.",
+  "legende_titre": "Revenir au nombre de départ",
+  "lecture": [
+   "Le 4 bleu est a, le 6 violet est b.",
+   "Le 12 orange en haut est le plus petit majorant de 4 et 6.",
+   "Le 2 orange en bas est le plus grand minorant de 4 et 6.",
+   "Les deux lignes vertes montrent que le calcul ramène à 4."
+  ],
+  "a_voir": "Les deux calculs partent de 4 et reviennent à 4."
+ },
+ {
+  "code": "79-082",
+  "a_dire": "Pour 12 et 20, prendre le PPCM puis le PGCD avec 12 redonne 12, mais cela ne prouve rien pour les autres paires.",
+  "legende_titre": "Un cas chiffré de la loi",
+  "lecture": [
+   "En haut, le 60 orange est le PPCM de 12 (bleu) et de 20 (violet).",
+   "En bas, la chaîne part de 60, puis du 12 bleu.",
+   "La case verte montre que l’on retrouve 12."
+  ],
+  "a_voir": "Le calcul ramène à 12 pour cette seule paire."
+ },
+ {
+  "code": "79-083",
+  "a_dire": "a ∨ b est au-dessus de a, donc le plus grand nombre en dessous des deux est a lui-même.",
+  "legende_titre": "Pourquoi l’absorption marche",
+  "lecture": [
+   "Le 60 orange en haut est a ∨ b, relié au 12 bleu qui est a.",
+   "Les six cases grises sont les nombres en dessous de 12 et de 60.",
+   "La case verte 12 est la plus grande des six."
+  ],
+  "a_voir": "Le plus grand nombre en dessous de 12 et de 60 est 12."
+ },
+ {
+  "code": "79-084",
+  "a_dire": "Dans un treillis, ∨ existe pour toute paire ; sans cela, les lois n’ont pas de sens.",
+  "legende_titre": "Quand les quatre lois s’appliquent",
+  "lecture": [
+   "À gauche, 4 et 6 ont un sup vert : 12.",
+   "À droite, 2 et 3 sont sous 12 et 18, deux nombres rouges incomparables.",
+   "Les traits montrent quel nombre est au-dessus de quel autre."
+  ],
+  "a_voir": "Il faut un sup pour chaque paire, comme à gauche et pas comme à droite."
+ },
+ {
+  "code": "79-085",
+  "a_dire": "a ∨ b et b ∨ a sont le sup de la même partie, donc ils sont égaux.",
+  "legende_titre": "L’ordre d’écriture ne compte pas",
+  "lecture": [
+   "La case bleue est la partie {4, 6}, la case violette est {6, 4}.",
+   "Le signe vert dit que c'est la même partie.",
+   "Les flèches orange mènent au même cadre : les mêmes majorants, 12 et 60.",
+   "Le rond vert 12 est le plus petit des deux : c'est le sup."
+  ],
+  "a_voir": "Les deux écritures donnent la même partie, donc les mêmes majorants et le même sup, 12."
+ },
+ {
+  "code": "79-086",
+  "a_dire": "a ∨ a est le sup de la partie {a}, et ce sup est a lui-même.",
+  "legende_titre": "Joindre un nombre à lui-même",
+  "lecture": [
+   "Les trois cases grises 12, 20 et 60 sont au-dessus de 4.",
+   "La case verte 4 est elle aussi un majorant de {4}.",
+   "Le texte vert dit que 4 est le plus petit des majorants."
+  ],
+  "a_voir": "Le plus petit majorant de {4} est 4."
+ },
+ {
+  "code": "79-087",
+  "a_dire": "(a ∨ b) ∨ c est le sup de {a, b, c}, parce que tout majorant des trois est au-dessus de d puis de d ∨ c.",
+  "legende_titre": "Deux regroupements, un seul sup",
+  "lecture": [
+   "Les cases 4 et 10 bleues et 6 violette sont a, b, c.",
+   "Le 12 orange est d = a ∨ b.",
+   "Le 60 vert est d ∨ c.",
+   "La case en pointillés u est un majorant quelconque, au-dessus de 60."
+  ],
+  "a_voir": "Tout majorant des trois nombres est au-dessus de 12 puis de 60."
+ },
+ {
+  "code": "79-088",
+  "a_dire": "Les deux regroupements de PPCM(4, 6, 10) passent par 12 ou par 30, mais finissent à 60.",
+  "legende_titre": "Deux chemins, même résultat",
+  "lecture": [
+   "L’arbre de gauche regroupe d’abord 4 et 6 : 12 orange.",
+   "L’arbre de droite regroupe d’abord 6 et 10 : 30 orange.",
+   "Les deux arbres finissent sur le 60 vert."
+  ],
+  "a_voir": "Les nombres intermédiaires diffèrent, le résultat est 60 des deux côtés."
+ },
+ {
+  "code": "79-089",
+  "a_dire": "Avec seulement ∨ et ∧, la règle a ≤ b quand a ∨ b = b fabrique un ordre qui redonne la divisibilité.",
+  "legende_titre": "Fabriquer un ordre par le calcul",
+  "lecture": [
+   "La case bleue du haut donne la règle : a ≤ b si a ∨ b = b, avec seulement le PPCM et le PGCD.",
+   "Dans la ligne du haut, le PPCM vaut 12, donc 4 ≤ 12 est vrai (vert) : 4 divise 12.",
+   "Dans la ligne du bas, le PPCM vaut 60, donc 12 ≤ 20 est faux (rouge) : 12 ne divise pas 20."
+  ],
+  "a_voir": "La règle posée avec le seul calcul redonne la divisibilité : oui pour 4 et 12, non pour 12 et 20."
+ },
+ {
+  "code": "79-090",
+  "a_dire": "Un treillis se voit comme un dessin (un ordre) ou comme un calcul (deux opérations), avec le même résultat.",
+  "legende_titre": "Deux façons de voir un treillis",
+  "lecture": [
+   "À gauche, le dessin : 60 vert est au-dessus de 12 bleu et de 20 violet.",
+   "À droite, le calcul : les multiples de 12 (bleus) et de 20 (violets).",
+   "Le 60 vert à droite est le premier nombre commun aux deux listes."
+  ],
+  "a_voir": "Le dessin et le calcul donnent le même 60."
+ },
+ {
+  "code": "79-091",
+  "a_dire": "La définition algébrique d’un treillis est un ensemble avec deux opérations ∨ et ∧ et quatre lois, sans ordre au départ.",
+  "legende_titre": "Une structure faite d’opérations",
+  "lecture": [
+   "La case grise du haut à gauche est un groupe : une opération, +.",
+   "La case grise du bas à gauche est un anneau : deux opérations, + et ×.",
+   "La grande case bleue est le treillis : deux opérations, ∨ et ∧, et les quatre lois L1 à L4 écrites avec leur nom.",
+   "Le texte du bas dit qu'il n'y a aucun ordre au départ."
+  ],
+  "a_voir": "Le treillis est défini par deux opérations et quatre lois, sans ordre au départ."
+ },
+ {
+  "code": "79-092",
+  "a_dire": "a ∨ b = b veut dire que b ne change pas quand on y joint a ; pour le PPCM, b est un multiple de a.",
+  "legende_titre": "Ce que dit l’égalité a ∨ b = b",
+  "lecture": [
+   "En haut, on joint 4 au 12 bleu : le résultat vert est encore 12.",
+   "Le texte vert dit que 12 est un multiple de 4.",
+   "En bas, on joint 12 au 20 violet : le résultat rouge est 60, donc le nombre change.",
+   "Le texte rouge dit que 20 n’est pas multiple de 12."
+  ],
+  "a_voir": "Si b ne change pas quand on joint a, alors a est en dessous de b."
+ },
+ {
+  "code": "79-093",
+  "a_dire": "PPCM(4, 12) = 12 donne 4 ≤ 12, mais PPCM(12, 20) = 60 donne que 12 et 20 ne sont pas comparables.",
+  "legende_titre": "Deux paires testées",
+  "lecture": [
+   "La flèche verte va de 4 à 12 : 4 ≤ 12, car le PPCM est 12.",
+   "Le trait rouge en pointillés relie 12 et 20, qui sont incomparables.",
+   "Le 60 orange est le PPCM de 12 et 20."
+  ],
+  "a_voir": "4 est en dessous de 12, mais 12 et 20 ne sont ni l’un ni l’autre en dessous."
+ },
+ {
+  "code": "79-094",
+  "a_dire": "Passer de l’ordre aux opérations, puis revenir aux opérations vers l’ordre, redonne l’ordre de départ.",
+  "legende_titre": "Aller puis retour",
+  "lecture": [
+   "La case bleue est l’ordre ≤, la case violette est l’opération ∨.",
+   "La flèche du haut est l’aller : on prend le PPCM.",
+   "La flèche du bas est le retour : on pose a ∨ b = b.",
+   "Les cases du bas montrent 4 ≤ 12 vrai deux fois, 12 ≤ 20 faux deux fois."
+  ],
+  "a_voir": "Les deux ordres disent la même chose pour chaque paire."
+ },
+ {
+  "code": "79-095",
+  "a_dire": "La preuve se fait en trois étapes : ≤ est un ordre partiel, a ∨ b est un plus petit majorant, a ∧ b est un plus grand minorant.",
+  "legende_titre": "Le plan en trois étapes",
+  "lecture": [
+   "La case grise du haut est le point de départ : L, ∨, ∧ et les quatre lois L1 à L4 avec leur nom.",
+   "Les trois cases numérotées sont les étapes dans l'ordre.",
+   "La case verte du bas est ce que l'on veut obtenir."
+  ],
+  "a_voir": "Il y a trois étapes entre le départ et le treillis."
+ },
+ {
+  "code": "79-096",
+  "a_dire": "La relation a ≤ b est un ordre partiel car elle est réflexive (L3), antisymétrique (L1) et transitive (L2).",
+  "legende_titre": "Les trois règles d’un ordre",
+  "lecture": [
+   "La première ligne montre 4 ∨ 4 = 4, donc 4 ≤ 4 : réflexivité, loi L3 idempotence.",
+   "La deuxième ligne dit que a ≤ b et b ≤ a donnent a = b : antisymétrie, loi L1 commutativité.",
+   "La troisième ligne enchaîne 4, 12, 60 ; l'arc vert donne directement 4 ≤ 60 : transitivité, loi L2 associativité."
+  ],
+  "a_voir": "Chaque règle d'un ordre vient d'une des lois L1, L2, L3, écrite à côté d'elle."
+ }
+]

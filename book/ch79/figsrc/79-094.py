@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 40, 28, 14, 'sujet', label=r'ordre $\leq$')
+box(ax, 58, 40, 28, 14, 'autre', label=r'opération $\vee$')
+arrow(ax, (31, 51), (57, 51), 'varie'); text(ax, 44, 56, 'aller : PPCM', 'varie', 's')
+arrow(ax, (57, 43), (31, 43), 'varie'); text(ax, 44, 37, r'retour : $a\vee b=b$', 'varie', 's')
+box(ax, 2, 8, 40, 9, 'resultat', label=r'$4\leq12$ : oui puis oui', size='s')
+box(ax, 46, 8, 40, 9, 'limite', label=r'$12\leq20$ : non puis non', size='s')
+text(ax, 44, 26, "l'ordre de départ est retrouvé", 'resultat', 's')
+save(fig, '79-094')

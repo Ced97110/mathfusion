@@ -1,0 +1,191 @@
+[
+ {
+  "code": "79-033",
+  "a_dire": "Dans les réels, entre 3 et 4 il n'y a aucun nombre juste au-dessus de 3, donc le diagramme de Hasse n'aurait aucun trait.",
+  "legende_titre": "Une droite où il n'y a pas de voisin",
+  "lecture": [
+   "Les deux ronds bleus sont 3 et 4.",
+   "Les ronds orange sont des milieux : 3,5 est entre 3 et 4, 3,25 est entre 3 et 3,5, et on peut continuer.",
+   "Le texte vert dit que 3 est bien en dessous de 4.",
+   "Le texte rouge dit qu'aucun nombre n'est juste au-dessus de 3."
+  ],
+  "a_voir": "Il y a toujours un milieu, donc aucun trait de recouvrement n'existe entre 3 et 4."
+ },
+ {
+  "code": "79-034",
+  "a_dire": "Dans un ensemble fini, si a < b, il existe une suite de recouvrements de a à b ; ici 1, 2, 4, 12.",
+  "legende_titre": "De 1 à 12 par des petits pas",
+  "lecture": [
+   "Les ronds sont les diviseurs de 12, rangés du bas vers le haut.",
+   "Les traits bleus épais relient 1, 2, 4 et 12 : ce sont trois recouvrements qui se suivent.",
+   "1 est le départ a, 12 est l'arrivée b.",
+   "Les ronds gris 3 et 6 ne servent pas à cette suite."
+  ],
+  "a_voir": "Une suite de traits bleus va de 1 jusqu'à 12."
+ },
+ {
+  "code": "79-035",
+  "a_dire": "Un majorant de A est un élément au-dessus de tous les éléments de A ; pour {4, 6}, 12 et 60 sont des majorants, 10 n'en est pas un.",
+  "legende_titre": "Au-dessus de 4 et de 6 en même temps",
+  "lecture": [
+   "Les ronds bleus sont les éléments de A : 4 et 6.",
+   "Les ronds verts 12 et 60 sont au-dessus de 4 et de 6 : ce sont des majorants.",
+   "Le rond rouge 10 n'est pas au-dessus de 4 : le trait rouge en pointillés ne mène à aucune relation.",
+   "12 n'est ni 4 ni 6."
+  ],
+  "a_voir": "12 et 60 sont verts parce qu'ils sont au-dessus de tous les éléments de A."
+ },
+ {
+  "code": "79-036",
+  "a_dire": "La borne supérieure sup A est le plus petit des majorants de A ; pour {4, 6}, c'est 12.",
+  "legende_titre": "Le plus bas des majorants",
+  "lecture": [
+   "Les diviseurs de 60 sont rangés du bas (1) vers le haut (60).",
+   "Les ronds bleus 4 et 6 forment la partie A.",
+   "Le rond vert 12 est le plus bas des éléments au-dessus de 4 et de 6 : c'est sup A.",
+   "Le rond 60 est aussi au-dessus de 4 et de 6, mais il est plus haut."
+  ],
+  "a_voir": "12 est le plus bas des deux majorants 12 et 60."
+ },
+ {
+  "code": "79-037",
+  "a_dire": "Un minorant de A est un élément en dessous de tous les éléments de A ; pour {12, 20}, ce sont 1, 2 et 4.",
+  "legende_titre": "En dessous de 12 et de 20 en même temps",
+  "lecture": [
+   "Les ronds bleus 12 et 20 forment la partie A.",
+   "Les ronds verts 1, 2 et 4 sont en dessous de 12 et de 20 : ce sont des minorants.",
+   "Le rond rouge 3 est en dessous de 12 mais pas de 20 : il n'est pas un minorant.",
+   "Les traits bleus épais relient 4 à 12 et à 20."
+  ],
+  "a_voir": "Un minorant est en dessous de chaque élément de A, pas d'un seul."
+ },
+ {
+  "code": "79-038",
+  "a_dire": "La borne inférieure inf A est le plus grand des minorants de A ; pour {12, 20}, c'est 4.",
+  "legende_titre": "Le plus haut des minorants",
+  "lecture": [
+   "Les ronds bleus 12 et 20 forment la partie A.",
+   "Les ronds orange 1 et 2 sont des minorants plus bas que 4.",
+   "Le rond vert 4 est le plus haut des minorants : c'est inf A.",
+   "Le rond gris 3 n'est pas un minorant."
+  ],
+  "a_voir": "4 est le plus haut des minorants 1, 2 et 4."
+ },
+ {
+  "code": "79-039",
+  "a_dire": "Si le plus petit majorant existe, il est unique : un autre candidat u' serait égal à 12.",
+  "legende_titre": "Un seul plus petit majorant",
+  "lecture": [
+   "Les ronds bleus 4 et 6 forment la partie A.",
+   "Le rond vert 12 est le plus petit majorant. Le rond violet u' est un autre candidat au même titre.",
+   "Les deux flèches orange comparent 12 et u' dans les deux sens.",
+   "Le texte vert en haut donne la conclusion : u' est égal à 12."
+  ],
+  "a_voir": "Deux candidats qui se comparent dans les deux sens sont le même."
+ },
+ {
+  "code": "79-040",
+  "a_dire": "Si u et u' sont deux plus petits majorants, u ≤ u' et u' ≤ u, et l'antisymétrie donne u = u'.",
+  "legende_titre": "Deux sens, puis l'antisymétrie",
+  "lecture": [
+   "La case bleue dit u ≤ u' parce que u est le plus petit.",
+   "La case violette dit u' ≤ u parce que u' est le plus petit.",
+   "Les flèches orange mènent à la case verte u = u' : c'est l'étape de l'antisymétrie.",
+   "Le cadre rouge montre une règle sans antisymétrie : 4 et 6 ont chacun 2 facteurs, chacun est en dessous de l'autre, et 4 ≠ 6."
+  ],
+  "a_voir": "L'étape qui porte la preuve est l'antisymétrie, sans elle 4 et 6 seraient deux cas à part."
+ },
+ {
+  "code": "79-041",
+  "a_dire": "Un treillis est un ensemble rangé où toute paire a un plus petit majorant et un plus grand minorant.",
+  "legende_titre": "Une paire a toujours deux bornes",
+  "lecture": [
+   "Le cadre vert à gauche montre 12 et 20 en bleu, avec 60 au-dessus et 4 en dessous : 12 ∨ 20 = 60 et 12 ∧ 20 = 4.",
+   "Le cadre rouge à droite montre 2 et 3 en bas, 12 et 18 en haut.",
+   "Le trait rouge en pointillés dit que 12 et 18 ne se comparent pas : 2 ∨ 3 n'existe pas."
+  ],
+  "a_voir": "Dans un treillis, il n'y a pas de paire sans borne."
+ },
+ {
+  "code": "79-042",
+  "a_dire": "Les signes ∨ et ∧ remplacent les phrases « plus petit majorant » et « plus grand minorant » : 12 ∨ 20 = 60 et 12 ∧ 20 = 4.",
+  "legende_titre": "Deux signes pour deux phrases",
+  "lecture": [
+   "Les cases grises sont les phrases longues.",
+   "Les cases bleues sont les écritures courtes : ∨ pour le plus petit majorant, ∧ pour le plus grand minorant.",
+   "Les flèches orange relient chaque phrase à son écriture.",
+   "Le texte vert dit que chaque écriture désigne un élément."
+  ],
+  "a_voir": "∨ et ∧ donnent chacun un élément, qu'on peut écrire dans une égalité."
+ },
+ {
+  "code": "79-043",
+  "a_dire": "12 ∨ 20 et 12 ∧ 20 se lisent comme des noms qui donnent un élément, alors que 12 ≤ 20 se lit comme une phrase.",
+  "legende_titre": "Lire un nom ou une phrase",
+  "lecture": [
+   "Les deux cases bleues du haut sont 12 ∨ 20 et 12 ∧ 20, avec leur lecture en dessous.",
+   "Les cases vertes disent qu'elles donnent un élément : 60 et 4.",
+   "La case violette du bas est 12 ≤ 20 : c'est une affirmation, vraie ou fausse.",
+   "Les flèches orange vont de l'écriture à ce qu'elle désigne."
+  ],
+  "a_voir": "∨ et ∧ nomment un élément, ≤ affirme quelque chose."
+ },
+ {
+  "code": "79-044",
+  "a_dire": "Dans les parties d'un ensemble, ∨ est l'union ∪ et ∧ est l'intersection ∩.",
+  "legende_titre": "Union et intersection, deux bornes",
+  "lecture": [
+   "Le cercle bleu est la partie {rouge, bleu}, le cercle violet est la partie {bleu, vert}.",
+   "La zone commune porte le mot bleu en vert : c'est l'intersection, notée ∧.",
+   "Les trois mots ensemble forment l'union, notée ∨.",
+   "Les deux lignes du bas relient chaque signe à sa partie."
+  ],
+  "a_voir": "L'union est le joint et l'intersection est la rencontre."
+ },
+ {
+  "code": "79-045",
+  "a_dire": "Les parties de S rangées par inclusion forment un treillis : A ∪ B est le plus petit ensemble qui contient A et B, A ∩ B le plus grand contenu dans les deux.",
+  "legende_titre": "Les parties de S forment un treillis",
+  "lecture": [
+   "La case bleue est A = {r, b}, la case violette est B = {b, v}.",
+   "La case verte du haut est A ∪ B : elle contient A et B.",
+   "La case verte du bas est A ∩ B : elle est dans A et dans B.",
+   "Les traits vont de la plus petite partie vers la plus grande."
+  ],
+  "a_voir": "Pour deux parties, l'union est la borne du haut et l'intersection la borne du bas."
+ },
+ {
+  "code": "79-046",
+  "a_dire": "Dans les diviseurs de 12, le PPCM de 4 et 6 est 12 et le PGCD est 2 : le PPCM est le plus petit majorant et le PGCD le plus grand minorant.",
+  "legende_titre": "PPCM et PGCD de 4 et 6",
+  "lecture": [
+   "Les ronds sont les diviseurs de 12, rangés par divisibilité.",
+   "Les ronds bleus 4 et 6 sont la paire choisie.",
+   "Le rond vert du haut, 12, est le PPCM : le plus petit majorant.",
+   "Le rond vert du bas, 2, est le PGCD : le plus grand minorant."
+  ],
+  "a_voir": "12 est au-dessus de 4 et de 6, 2 est en dessous."
+ },
+ {
+  "code": "79-047",
+  "a_dire": "Dans les réels, le plus petit majorant de deux nombres est le plus grand des deux et le plus grand minorant est le plus petit : max et min.",
+  "legende_titre": "Max et min de 3,5 et 7",
+  "lecture": [
+   "Le rond bleu est 3,5 et le rond violet est 7 sur la droite.",
+   "Le trait vert épais à droite de 7 montre les majorants : 7 est son bord le plus bas, c'est max = 7.",
+   "Le trait orange épais à gauche de 3,5 montre les minorants : 3,5 est son bord le plus haut, c'est min = 3,5."
+  ],
+  "a_voir": "Un des deux nombres est toujours au-dessus de l'autre, donc il est le plus petit majorant."
+ },
+ {
+  "code": "79-048",
+  "a_dire": "Dans une chaîne, si a ≤ b alors a ∨ b = b et a ∧ b = a : une chaîne est toujours un treillis.",
+  "legende_titre": "Dans une chaîne, deux éléments se comparent",
+  "lecture": [
+   "À gauche, a est sous b sur une seule ligne : a ∨ b est le plus grand, b, et a ∧ b est le plus petit, a.",
+   "À droite, sans l'hypothèse chaîne, 2 et 3 sont en bas ; le cadre orange contient leurs majorants 12 et 18.",
+   "Le tiret rouge entre 12 et 18 dit qu'ils ne se comparent pas, donc 2 ∨ 3 n'existe pas."
+  ],
+  "a_voir": "Dans une chaîne, a ∨ b est le plus grand des deux et a ∧ b le plus petit."
+ }
+]

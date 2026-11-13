@@ -1,0 +1,183 @@
+[
+ {
+  "code": "79-193",
+  "a_dire": "Les rangs de 4 et 3 donnent 2 + 1, ceux de 12 et 1 donnent 3 + 0 : même somme.",
+  "legende_titre": "Rangs et somme dans les diviseurs de 24",
+  "lecture": [
+   "Les disques bleus 4 et 3 ont pour rang 2 et 1 (nombre à droite de leur ligne).",
+   "Le disque vert 12 est au rang 3, le disque vert 1 au rang 0.",
+   "Le texte du bas écrit les deux sommes : 3 + 0 et 2 + 1."
+  ],
+  "a_voir": "Les deux sommes de rangs valent 3."
+ },
+ {
+  "code": "79-194",
+  "a_dire": "Les disques au-dessus de tous les orange sont 12 et 24 ; le plus bas, 12, est le sup ; le seul disque en dessous est 1.",
+  "legende_titre": "Une partie dans le dessin des diviseurs de 24",
+  "lecture": [
+   "Les disques orange 2, 3, 4 et 6 forment Y.",
+   "Les disques rouges 12 et 24 sont au-dessus de tous les orange ; le plus bas est 12.",
+   "Le disque vert 1 est en bas, seul sous tous les orange.",
+   "Le disque gris 8 n’a aucun trait qui le relie à 3."
+  ],
+  "a_voir": "Suis les traits montants depuis les orange : tu arrives à 12 puis 24."
+ },
+ {
+  "code": "79-195",
+  "a_dire": "On teste chaque diviseur de 24 : ceux qui sont multiples de 2, 3, 4 et 6 sont 12 et 24, et le plus petit est le sup.",
+  "legende_titre": "Chercher les majorants, puis le plus petit",
+  "lecture": [
+   "La case rouge 8 échoue : 3 ne divise pas 8.",
+   "Les cases vertes 12 et 24 sont multiples de 2, 3, 4 et 6.",
+   "La flèche part de 12, le plus petit des deux, vers le résultat du bas."
+  ],
+  "a_voir": "Le sup est le plus petit des majorants : 12."
+ },
+ {
+  "code": "79-196",
+  "a_dire": "Un minorant divise 2 et 3 ; seul 1 convient, donc l’inf est 1.",
+  "legende_titre": "Chercher les minorants de la partie",
+  "lecture": [
+   "En haut, les cases bleues sont les quatre nombres de la partie Y : 2, 3, 4 et 6.",
+   "Les cases rouges 2 et 3 échouent : l'un ne divise pas l'autre.",
+   "La case verte 1 divise 2, 3, 4 et 6 : les flèches vertes vont de 1 vers chaque case de Y.",
+   "Le texte du bas donne le résultat : inf Y = 1."
+  ],
+  "a_voir": "Un seul nombre divise tous les nombres de Y : 1."
+ },
+ {
+  "code": "79-197",
+  "a_dire": "Le sup de Y est 12 et 12 ne fait pas partie de Y.",
+  "legende_titre": "Le sup peut être hors de la partie",
+  "lecture": [
+   "Le cadre orange en pointillés entoure Y : 2, 3, 4 et 6.",
+   "Le disque vert 12 est au-dessus, hors du cadre.",
+   "Le disque gris 1 est en dessous, aussi hors du cadre."
+  ],
+  "a_voir": "12 est le sup de Y mais il est dehors."
+ },
+ {
+  "code": "79-198",
+  "a_dire": "Y contient des paires comparables et une paire incomparable, et le sup 12 existe quand même.",
+  "legende_titre": "Comparables et incomparables dans une même partie",
+  "lecture": [
+   "Les traits verts épais relient 2 à 4 et 3 à 6 : paires comparables.",
+   "Le trait rouge en pointillés relie 4 et 6 : aucun ne divise l’autre.",
+   "Le disque vert 12 est le sup de Y malgré ce mélange."
+  ],
+  "a_voir": "Le mélange de paires ne gêne pas le sup."
+ },
+ {
+  "code": "79-199",
+  "a_dire": "En retirant 2 et 6, il reste 4 et 3 et leur sup est encore 12.",
+  "legende_titre": "Retirer deux éléments ne change pas le sup",
+  "lecture": [
+   "Les disques bleus 4 et 3 sont les éléments gardés.",
+   "Les disques vides 2 et 6 sont retirés.",
+   "Le disque vert 12 est le sup, égal au PPCM de 4 et 3."
+  ],
+  "a_voir": "Seuls 4 et 3 comptent pour trouver 12."
+ },
+ {
+  "code": "79-200",
+  "a_dire": "Dans un treillis à un seul élément, le plus petit et le plus grand élément sont le même e.",
+  "legende_titre": "Le treillis à un seul élément",
+  "lecture": [
+   "Le disque bleu e est l’unique élément.",
+   "Les deux flèches vertes disent que le plus grand et le plus petit sont e.",
+   "Le texte de droite dit que le sup et l’inf de e et e valent e.",
+   "Le texte de gauche écrit la seule comparaison : e ≤ e."
+  ],
+  "a_voir": "Un seul disque est à la fois en haut et en bas."
+ },
+ {
+  "code": "79-201",
+  "a_dire": "Si le plus petit et le plus grand étaient égaux, le treillis n’aurait qu’un élément ; sinon ils sont différents.",
+  "legende_titre": "Pourquoi 0 et 1 sont différents",
+  "lecture": [
+   "À gauche, les disques bleus 1 et 2 : le plus petit et le plus grand sont différents.",
+   "À droite, le disque rouge x : si 0 = 1, tout est égal à x.",
+   "Le trait en pointillés sépare les deux cas."
+  ],
+  "a_voir": "Deux éléments ou plus donnent un plus petit différent du plus grand."
+ },
+ {
+  "code": "79-202",
+  "a_dire": "Dans une chaîne, le sup de deux éléments est le plus grand et l’inf est le plus petit.",
+  "legende_titre": "Une chaîne : un seul trait vertical",
+  "lecture": [
+   "Les disques sont alignés sur un seul trait : 1, 2, 4, 8.",
+   "Les disques bleus 2 et 8 sont les deux nombres choisis.",
+   "Le texte du haut donne le sup : 8, le plus grand.",
+   "Le texte du bas donne l’inf : 2, le plus petit."
+  ],
+  "a_voir": "Tout est sur un trait : le sup est le plus haut, l’inf le plus bas."
+ },
+ {
+  "code": "79-203",
+  "a_dire": "Les sous-groupes de Z/8 forment une chaîne, comme les diviseurs de 8, avec les mêmes ordres 1, 2, 4, 8.",
+  "legende_titre": "Deux chaînes qui se ressemblent",
+  "lecture": [
+   "La colonne de gauche (bleu) donne les sous-groupes, chacun dans le suivant.",
+   "La colonne de droite (violet) donne les diviseurs de 8, chacun divise le suivant.",
+   "Chaque trait en pointillés relie deux éléments de même ordre."
+  ],
+  "a_voir": "Les deux colonnes ont la même forme : une chaîne."
+ },
+ {
+  "code": "79-204",
+  "a_dire": "Les entiers positifs par divisibilité forment une chaîne 1, 2, 4, 8, … qui ne s’arrête jamais.",
+  "legende_titre": "Une chaîne sans dernier nombre",
+  "lecture": [
+   "Les disques bleus sont 1, 2, 4, 8, 16, chacun divise le suivant.",
+   "Le trait en pointillés et la flèche orange montent plus haut.",
+   "Le texte dit que 32, 64 suivent, sans dernier nombre."
+  ],
+  "a_voir": "La chaîne monte sans fin."
+ },
+ {
+  "code": "79-205",
+  "a_dire": "Pour parler du rang, on se limite à l’intervalle fini des diviseurs de 60 : le rang de 12 est 3 et celui de 60 est 4.",
+  "legende_titre": "Un intervalle fini pour parler du rang",
+  "lecture": [
+   "Le cadre en pointillés entoure les douze diviseurs de 60.",
+   "Chaque ligne de disques est un rang, de 0 en bas à 4 en haut.",
+   "Les disques verts 12 et 60 portent les rangs 3 et 4."
+  ],
+  "a_voir": "Dans le cadre fini, on peut compter les marches."
+ },
+ {
+  "code": "79-206",
+  "a_dire": "Le PGCD prend les plus petits exposants (4) et le PPCM les plus grands (60).",
+  "legende_titre": "PGCD et PPCM par les exposants",
+  "lecture": [
+   "Chaque carré est une unité d’exposant ; la ligne bleue est 12, la violette est 20.",
+   "Une case en pointillés marquée 0 est un exposant nul.",
+   "Les carrés verts sont la partie commune : le PGCD vaut 4.",
+   "Pour chaque facteur, la ligne la plus longue donne le PPCM : 60."
+  ],
+  "a_voir": "Le PGCD garde le plus court, le PPCM le plus long."
+ },
+ {
+  "code": "79-207",
+  "a_dire": "L’union et l’intersection sont le sup et l’inf des parties ; pour les réels, sup et inf sont le plus grand et le plus petit.",
+  "legende_titre": "Union, intersection et droite des réels",
+  "lecture": [
+   "La case bleue A et la violette B sont deux parties de {1, 2, 3}.",
+   "La case verte du haut est A ∪ B, le sup ; la case verte du milieu est A ∩ B, l’inf.",
+   "Sur la droite du bas, 3 est l’inf et 5 le sup."
+  ],
+  "a_voir": "Le dessin des parties n’est pas un trait, celui des réels l’est."
+ },
+ {
+  "code": "79-208",
+  "a_dire": "Le treillis des sous-groupes de Z/12 contient un intervalle qui correspond aux sous-groupes d’un quotient.",
+  "legende_titre": "Un intervalle et un quotient se correspondent",
+  "lecture": [
+   "La colonne bleue donne les sous-groupes qui contiennent {0, 4, 8} : ordres 3, 6, 12.",
+   "La colonne violette donne ceux du quotient : ordres 1, 2, 4.",
+   "Les flèches orange relient chaque ordre à son correspondant."
+  ],
+  "a_voir": "Les deux colonnes ont la même forme."
+ }
+]

@@ -1,0 +1,113 @@
+{
+ "79-031": {
+  "lecture": [
+   "Le rond bleu est 4 en bas ; le rond vert est 12 ; le rond gris est 20 ; le rond rouge est 60.",
+   "Le gros trait vert de 4 à 12 est un recouvrement : rien n'est entre les deux.",
+   "60 est au-dessus de 4, mais 12 est entre 4 et 60 : 60 ne recouvre pas 4, et il n'y a pas de trait direct."
+  ],
+  "a_voir": "Le trait vert est direct ; entre 4 et 60, il y a 12, donc pas de recouvrement."
+ },
+ "79-048": {
+  "lecture": [
+   "À gauche, a est sous b sur une seule ligne : a ∨ b est le plus grand, b, et a ∧ b est le plus petit, a.",
+   "À droite, sans l'hypothèse chaîne, 2 et 3 sont en bas ; le cadre orange contient leurs majorants 12 et 18.",
+   "Le tiret rouge entre 12 et 18 dit qu'ils ne se comparent pas, donc 2 ∨ 3 n'existe pas."
+  ],
+  "a_voir": "Dans une chaîne, a ∨ b est le plus grand des deux et a ∧ b le plus petit."
+ },
+ "79-073": {
+  "lecture": [
+   "Les ronds bleus 4 et 6, dans le cadre pointillé bleu, forment la partie A.",
+   "Le cadre orange B contient 12 et 60, les majorants de A ; le rond vert 12 est b, le plus grand minorant de B.",
+   "Les cases à droite se lisent de bas en haut : A, puis B, puis b.",
+   "La case verte donne l'arrivée : b = 12 est le sup de A."
+  ],
+  "a_voir": "Le plus grand minorant b de l'ensemble B des majorants de A est le sup de A."
+ },
+ "79-076": {
+  "lecture": [
+   "Les trois cases du haut nomment des objets du même genre ; la case bleue « sous-espaces » est le cas dessiné.",
+   "La case du milieu donne la même règle pour les trois : inf = intersection, sup = le plus petit objet qui contient les deux.",
+   "La droite bleue et la droite violette passent par le point O.",
+   "Le point O est leur intersection ; le plan vert est le plus petit sous-espace qui contient les deux droites."
+  ],
+  "a_voir": "La règle écrite dans la case vaut pour les trois genres d'objets ; ici, deux droites ont pour inf le point O et pour sup le plan entier."
+ },
+ "79-077": {
+  "lecture": [
+   "Les ronds bleus sont les multiples de 4 ; les ronds violets sont les multiples de 6.",
+   "La ligne verte du haut montre des sommes b1 + b2 : ce sont les nombres pairs de 0 à 16.",
+   "Les tirets verts relient 4 + 6 = 10, 8 + 6 = 14 et 4 + 12 = 16 à leur place sur la droite graduée."
+  ],
+  "a_voir": "Le sup des deux idéaux est l'ensemble des sommes b1 + b2 : ici, les nombres pairs."
+ },
+ "79-085": {
+  "lecture": [
+   "La case bleue est la partie {4, 6}, la case violette est {6, 4}.",
+   "Le signe vert dit que c'est la même partie.",
+   "Les flèches orange mènent au même cadre : les mêmes majorants, 12 et 60.",
+   "Le rond vert 12 est le plus petit des deux : c'est le sup."
+  ],
+  "a_voir": "Les deux écritures donnent la même partie, donc les mêmes majorants et le même sup, 12."
+ },
+ "79-089": {
+  "lecture": [
+   "La case bleue du haut donne la règle : a ≤ b si a ∨ b = b, avec seulement le PPCM et le PGCD.",
+   "Dans la ligne du haut, le PPCM vaut 12, donc 4 ≤ 12 est vrai (vert) : 4 divise 12.",
+   "Dans la ligne du bas, le PPCM vaut 60, donc 12 ≤ 20 est faux (rouge) : 12 ne divise pas 20."
+  ],
+  "a_voir": "La règle posée avec le seul calcul redonne la divisibilité : oui pour 4 et 12, non pour 12 et 20."
+ },
+ "79-091": {
+  "lecture": [
+   "La case grise du haut à gauche est un groupe : une opération, +.",
+   "La case grise du bas à gauche est un anneau : deux opérations, + et ×.",
+   "La grande case bleue est le treillis : deux opérations, ∨ et ∧, et les quatre lois L1 à L4 écrites avec leur nom.",
+   "Le texte du bas dit qu'il n'y a aucun ordre au départ."
+  ],
+  "a_voir": "Le treillis est défini par deux opérations et quatre lois, sans ordre au départ."
+ },
+ "79-095": {
+  "lecture": [
+   "La case grise du haut est le point de départ : L, ∨, ∧ et les quatre lois L1 à L4 avec leur nom.",
+   "Les trois cases numérotées sont les étapes dans l'ordre.",
+   "La case verte du bas est ce que l'on veut obtenir."
+  ],
+  "a_voir": "Il y a trois étapes entre le départ et le treillis."
+ },
+ "79-096": {
+  "lecture": [
+   "La première ligne montre 4 ∨ 4 = 4, donc 4 ≤ 4 : réflexivité, loi L3 idempotence.",
+   "La deuxième ligne dit que a ≤ b et b ≤ a donnent a = b : antisymétrie, loi L1 commutativité.",
+   "La troisième ligne enchaîne 4, 12, 60 ; l'arc vert donne directement 4 ≤ 60 : transitivité, loi L2 associativité."
+  ],
+  "a_voir": "Chaque règle d'un ordre vient d'une des lois L1, L2, L3, écrite à côté d'elle."
+ },
+ "79-024": {
+  "lecture": [
+   "Le titre dit que tout est vérifié sur 4, 12 et 36 seulement.",
+   "La case verte du haut écrit réflexivité : 4 = 4 × 1.",
+   "Au milieu, les flèches orange vont de 4 à 12 puis de 12 à 36, chacune × 3 ; l'arc vert va de 4 à 36, × 9.",
+   "En bas, la flèche verte dit que 4 divise 12 ; la flèche rouge dit que 12 ne divise pas 4."
+  ],
+  "a_voir": "Les trois règles sont vues sur les seuls nombres 4, 12 et 36 : ce n'est pas une preuve pour tous les entiers."
+ },
+ "79-058": {
+  "lecture": [
+   "Le titre dit que 0 désigne le plus petit élément, pas le nombre zéro.",
+   "À gauche, dans les diviseurs de 60, le point 1 est en dessous des 11 autres : 0 = 1.",
+   "À droite, dans les parties de 3 stylos, la partie vide est en dessous des 7 autres : 0 = ∅.",
+   "Les flèches grises montent vers tous les autres éléments."
+  ],
+  "a_voir": "Le même signe 0 désigne des éléments différents selon le treillis."
+ },
+ "79-002": {
+  "lecture": [
+   "Chaque disque gris est un diviseur de 60 ; le disque 1 est en bas.",
+   "Le disque bleu 4 et le disque violet 12 sont reliés par le gros trait orange.",
+   "Le trait orange porte la multiplication par 3 : 4 × 3 = 12, donc 4 est en dessous de 12.",
+   "Le titre donne la règle : en dessous = divise."
+  ],
+  "a_voir": "Un trait monte de a à b quand a divise b ; la taille des nombres ne compte pas."
+ }
+}

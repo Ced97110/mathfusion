@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 8, 74, 14, 10, 'sujet', label='4'); box(ax, 30, 74, 14, 10, 'sujet', label='6'); box(ax, 62, 74, 14, 10, 'autre', label='10')
+box(ax, 4, 44, 44, 11, 'varie', label=r'$4\vee 6 = 12$')
+box(ax, 30, 8, 48, 11, 'resultat', label=r'$12\vee 10 = 60$')
+arrow(ax, (15, 74), (22, 56), 'fixe'); arrow(ax, (37, 74), (30, 56), 'fixe')
+arrow(ax, (26, 44), (44, 20), 'fixe'); arrow(ax, (69, 74), (60, 20), 'fixe')
+text(ax, 62, 50, 'étape 1 : deux à deux', 'varie', 's'); text(ax, 70, 30, 'étape 2 : on ajoute 10', 'varie', 's')
+text(ax, 44, 90, 'un élément à la fois', 'encre', 's')
+text(ax, 44, 2.5, '60 est au-dessus de 4, 6 et 10', 'resultat', 's')
+save(fig, '79-067')
