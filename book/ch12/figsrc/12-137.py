@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 8, 76, 22, 0, 1, step=1)
+for v in [1/2, 1/4, 1/8, 1/16]: disc(ax, f(v), 22, 1.2, 'sujet')
+for v, s in [(1/2, r'$\frac{1}{2}$'), (1/4, r'$\frac{1}{4}$'), (1/8, r'$\frac{1}{8}$')]: text(ax, f(v), 28.5, s, 'sujet', 's')
+text(ax, 9.5, 28.5, '…', 'sujet', 'm')
+text(ax, 25, 38, 'fractions : sans fin', 'sujet', 's')
+t = 1 / math.sqrt(2)
+disc(ax, f(t), 22, 1.4, 'autre')
+line(ax, [(f(t), 24.5), (f(t), 33)], 'autre', dash=True)
+text(ax, f(t) + 3, 37, 'pas une fraction', 'autre', 's')
+text(ax, f(t), 14, r'$\approx 0{,}707$', 'autre', 's')
+save(fig, '12-137')

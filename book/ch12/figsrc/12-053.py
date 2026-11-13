@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 58, 'avec le trait', 'resultat', 'm', weight='bold')
+box(ax, 3, 40, 38, 11, 'sujet', label='9(5 + 1) = 54', size='m')
+line(ax, [(2, 37), (42, 37)], 'sujet', lw=2.2)
+box(ax, 3, 23, 38, 11, 'sujet', label='24 + 3 = 27', size='m')
+text(ax, 22, 12, r'$54 \div 27 = 2$', 'resultat', 'l')
+text(ax, 66, 58, 'sans le trait', 'limite', 'm', weight='bold')
+box(ax, 47, 40, 38, 11, 'limite', label='54 ÷ 24 + 3', size='m')
+arrow(ax, (66, 39.5), (66, 35), 'limite')
+box(ax, 47, 23, 38, 11, 'limite', label='2,25 + 3 = 5,25', size='m')
+text(ax, 66, 12, r'$5{,}25 \neq 2$', 'limite', 'l')
+save(fig, '12-053')

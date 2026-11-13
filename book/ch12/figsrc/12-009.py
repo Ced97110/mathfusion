@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 2, 68, 'sans origine', 'limite', 's', ha='left')
+line(ax, [(8, 50), (70, 50)], 'fixe')
+disc(ax, 48, 50, 1.8, 'sujet')
+disc(ax, 26, 50, 3, 'limite', label='?', size='m')
+arrow(ax, (30, 50), (45.5, 50), 'fixe')
+text(ax, 38, 56, 'à droite de quoi ?', 'limite', 's')
+text(ax, 2, 40, r'avec l’origine $O$', 'sujet', 's', ha='left')
+y = 18
+f = numberline(ax, 10, 70, y, -3, 3, arrow_right=False)
+disc(ax, f(0), y, 1.8, 'encre'); text(ax, f(0), y + 4, r'$O$', 'encre', 'm')
+disc(ax, f(2), y, 1.8, 'sujet'); disc(ax, f(-2), y, 1.8, 'sujet')
+arrow(ax, (f(0), y + 8), (f(2), y + 8), 'varie')
+arrow(ax, (f(0), y + 8), (f(-2), y + 8), 'varie')
+text(ax, f(1), y + 11.5, '2 à droite', 'varie', 's')
+text(ax, f(-1), y + 11.5, '2 à gauche', 'varie', 's')
+save(fig, '12-009')

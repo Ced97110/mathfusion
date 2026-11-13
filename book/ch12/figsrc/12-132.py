@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'$x+4>6$', 'sujet', 'l')
+f = numberline(ax, 8, 70, 26, 0, 5)
+line(ax, [(f(2) + 1.4, 26), (f(5) + 5, 26)], 'resultat', lw=2.4)
+for v, r in [(1, 'limite'), (2.5, 'resultat'), (3, 'resultat')]: disc(ax, f(v), 26, 1.4, r)
+disc(ax, f(2), 26, 1.4, 'limite', fill=False)
+text(ax, f(1), 40, 'ne conviennent pas', 'limite', 's')
+text(ax, f(3.9), 40, 'conviennent : une zone', 'resultat', 's')
+text(ax, 72, 15, '100 aussi', 'resultat', 's')
+save(fig, '12-132')

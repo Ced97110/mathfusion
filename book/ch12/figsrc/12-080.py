@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 2, 45, r'$\pi =$', 'encre', 'm', ha='left')
+box(ax, 18, 40, 40, 10, 'sujet', label='3,1415927', size='l')
+box(ax, 60, 40, 14, 10, 'fixe', fill=False, dash=True, label='…', size='l')
+text(ax, 2, 25, r'$\sqrt{2} =$', 'encre', 'm', ha='left')
+box(ax, 18, 20, 40, 10, 'sujet', label='1,4142135', size='l')
+box(ax, 60, 20, 14, 10, 'fixe', fill=False, dash=True, label='…', size='l')
+brace(ax, 18, 58, 18, 'sujet', label='7 chiffres montrés')
+brace(ax, 60, 74, 18, 'fixe', label='suite non montrée')
+save(fig, '12-080')

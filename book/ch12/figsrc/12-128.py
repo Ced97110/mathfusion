@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+f = numberline(ax, 8, 78, 40, 1.3, 1.6, step=0.1, arrow_right=False)
+line(ax, [(f(1.4), 40), (f(1.5), 40)], 'varie', lw=2.0)
+disc(ax, f(2 ** 0.5), 40, 1.8, 'resultat')
+arrow(ax, (f(2 ** 0.5), 56), (f(2 ** 0.5), 43), 'resultat')
+text(ax, f(2 ** 0.5), 60, r'$\sqrt{2}$ : un point sans fraction', 'resultat', 's')
+text(ax, 38, 22, r'$1{,}4^2=1{,}96<2$', 'varie', 's', ha='right')
+text(ax, 46, 22, r'$1{,}5^2=2{,}25>2$', 'varie', 's', ha='left')
+text(ax, 44, 10, 'le point est entre 1,4 et 1,5', 'encre', 's')
+save(fig, '12-128')

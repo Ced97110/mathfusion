@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 42, 34, 14, 'fixe', label=r'$\sqrt{2}$ : annoncé', size='m')
+arrow(ax, (36, 49), (47, 49), 'varie')
+box(ax, 47, 42, 39, 14, 'sujet', label='ch. 22 : preuve', size='m')
+arrow(ax, (66.5, 41), (66.5, 31), 'varie')
+box(ax, 47, 17, 39, 14, 'resultat', label='calculs avec les racines', size='s')
+box(ax, 2, 17, 34, 14, 'limite', label='1,4142135…', size='m')
+text(ax, 19, 11, 'ne prouve rien', 'limite', 's')
+arrow(ax, (19, 41), (19, 32), 'limite')
+save(fig, '12-135')

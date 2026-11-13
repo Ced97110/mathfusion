@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 24, 50, 40, 10, 'sujet', label='8 · (3 + 6)', size='l')
+arrow(ax, (34, 49.5), (22, 42.5), 'limite'); arrow(ax, (54, 49.5), (66, 42.5), 'resultat')
+box(ax, 3, 33, 38, 9, 'limite', label='d\'abord 8 · 3 = 24', size='s')
+arrow(ax, (22, 32.5), (22, 28), 'limite')
+box(ax, 3, 18, 38, 9, 'limite', label='24 + 6 = 30', size='m')
+box(ax, 47, 33, 38, 9, 'resultat', label='d\'abord 3 + 6 = 9', size='s')
+arrow(ax, (66, 32.5), (66, 28), 'resultat')
+box(ax, 47, 18, 38, 9, 'resultat', label='8 · 9 = 72', size='m')
+text(ax, 22, 11, '( ) pas en premier', 'limite', 's')
+text(ax, 66, 11, '( ) en premier', 'resultat', 's')
+save(fig, '12-054')

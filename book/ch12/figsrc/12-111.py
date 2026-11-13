@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+y = 32
+box(ax, 2, y - 4.5, 7, 9, 'sujet', label=r'$a$', r=0.5)
+box(ax, 10.5, y - 5.5, 21.5, 11, 'fixe', dash=True)
+for x, t in [(15, 'b'), (21, '+'), (27, 'c')]: text(ax, x, y, r'$' + t + r'$' if t != '+' else '+')
+text(ax, 36, y, '=', 'encre', 'l')
+box(ax, 41, y - 4.5, 7, 9, 'sujet', label=r'$a$', r=0.5); box(ax, 48.5, y - 4.5, 8, 9, 'fixe', label=r'$b$', r=0.5)
+text(ax, 59, y, '+')
+box(ax, 62, y - 4.5, 7, 9, 'sujet', label=r'$a$', r=0.5); box(ax, 69.5, y - 4.5, 8, 9, 'fixe', label=r'$c$', r=0.5)
+arrow(ax, (5.5, y + 5), (44.5, y + 5), 'varie', curve=-0.35); arrow(ax, (5.5, y + 5), (65.5, y + 5), 'varie', curve=-0.35)
+text(ax, 44, 54, 'distribué sur chaque terme', 'varie', 's')
+text(ax, 17, 21, 'a collé à la parenthèse', 'sujet', 's')
+text(ax, 59, 21, 'a écrit deux fois', 'sujet', 's')
+save(fig, '12-111')
