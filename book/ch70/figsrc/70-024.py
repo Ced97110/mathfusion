@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 24, 80, 'deux droites', 'sujet', 's', weight='bold')
+text(ax, 67, 80, r'deux polynômes en $y$', 'sujet', 's', weight='bold')
+u, ox, oy = 4.6, 10.0, 30.0
+P = lambda x, y: (ox + u * x, oy + u * y)
+arrow(ax, P(-0.5, 0), P(3.6, 0), 'fixe', lw=0.6)
+arrow(ax, P(0, -0.3), P(0, 8.6), 'fixe', lw=0.6)
+# y = 2x + 1 and y = 2x + 4 : same slope, never meet
+line(ax, [P(0, 1), P(3.2, 7.4)], 'sujet', lw=1.4)
+line(ax, [P(0, 4), P(2.3, 8.6)], 'autre', lw=1.4)
+text(ax, P(3.2, 7.4)[0] + 1, P(3.2, 7.4)[1] - 3, r'$y=2x+1$', 'sujet', 's', ha='left')
+text(ax, P(2.3, 8.6)[0] + 1.5, P(2.3, 8.6)[1] + 1, r'$y=2x+4$', 'autre', 's', ha='left')
+line(ax, [(ox - 3, P(0, 1)[1]), (ox - 3, P(0, 4)[1])], 'varie', lw=1.0)
+text(ax, ox - 5.5, (P(0, 1)[1] + P(0, 4)[1]) / 2, '3', 'varie', 's')
+box(ax, 26, 28, 19, 16, 'limite', label='$3=0$\naucune\nsolution', size='s')
+text(ax, 24, 21, 'même pente : 2', 'fixe', 's')
+box(ax, 50, 48, 36, 14, 'resultat', label='une racine\ncommune', size='s')
+arrow(ax, (24, 19), (24, 13), 'fixe')
+arrow(ax, (68, 47), (68, 13), 'fixe')
+box(ax, 4, 2, 80, 10, 'sujet', label=r'même calcul : $a_1b_0-a_0b_1=0$', size='s')
+save(fig, '70-024')

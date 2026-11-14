@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+s = 8
+def P(o, a, b):
+    return (o[0] + s * a, o[1] + s * b)
+L, R = (6, 14), (50, 14)
+arrow(ax, L, P(L, 4, 2), 'autre', lw=1.5)
+arrow(ax, L, P(L, 2, 1), 'sujet', lw=1.5)
+text(ax, P(L, 2, 1)[0] + 1.5, P(L, 2, 1)[1] - 4, r'$(2,\ 1)$', 'sujet', 's', ha='left')
+text(ax, P(L, 4, 2)[0] - 2, P(L, 4, 2)[1] + 3.5, r'$(4,\ 2)$', 'autre', 's', ha='right')
+poly(ax, [R, P(R, 2, 1), P(R, 3, 3), P(R, 1, 2)], 'resultat')
+arrow(ax, R, P(R, 2, 1), 'sujet', lw=1.5)
+arrow(ax, R, P(R, 1, 2), 'autre', lw=1.5)
+text(ax, P(R, 2, 1)[0] + 1.5, P(R, 2, 1)[1] - 3.5, r'$(2,\ 1)$', 'sujet', 's', ha='left')
+text(ax, P(R, 1, 2)[0] - 1.5, P(R, 1, 2)[1] + 2, r'$(1,\ 2)$', 'autre', 's', ha='right')
+text(ax, 22, 50, r'aire $0$ : parallèles', 'resultat', 's')
+text(ax, 66, 50, r'aire $3$', 'resultat', 's')
+text(ax, 22, 6, r'$2\times2-1\times4=0$', 'encre', 's')
+text(ax, 66, 6, r'$2\times2-1\times1=3$', 'encre', 's')
+save(fig, '70-149')

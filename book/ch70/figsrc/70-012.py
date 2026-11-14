@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+s, ox, oy = 8.0, 28.0, 20.0
+P = lambda x, y: (ox + s * x, oy + s * y)
+arrow(ax, P(-2.9, 0), P(2.9, 0), 'fixe', lw=0.6)
+arrow(ax, P(0, -2.4), P(0, 5.6), 'fixe', lw=0.6)
+line(ax, [P(t / 20, (t / 20) ** 2 - 2) for t in range(-54, 55)], 'varie', lw=1.3)
+# on the parabola : (2, 2) ; not on it : (1, 0)
+disc(ax, *P(2, 2), 1.2, 'resultat')
+disc(ax, *P(1, 0), 1.2, 'limite')
+text(ax, 62, 62, r'$g=y-x^2+2$', 'varie', 'm', ha='left')
+text(ax, 62, 50, r'point $(2\,;\,2)$', 'resultat', 's', ha='left')
+text(ax, 62, 45, r'$2-4+2=0$', 'resultat', 'm', ha='left')
+text(ax, 62, 33, r'point $(1\,;\,0)$', 'limite', 's', ha='left')
+text(ax, 62, 28, r'$0-1+2=1$', 'limite', 'm', ha='left')
+text(ax, 57, 17, r'$g=0$ : sur la parabole', 'resultat', 's', ha='left')
+save(fig, '70-012')

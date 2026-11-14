@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 50, 84, 11, 'sujet', label=r'$\exists x\ (x^2-2>0$ ou $x=0)$', size='s')
+arrow(ax, (44, 31.5), (44, 49.5), 'varie')
+text(ax, 47, 40, r'il existe $x$', 'varie', 's', ha='left')
+box(ax, 2, 20, 84, 11, 'sujet', label=r'$x^2-2>0$ ou $x=0$', size='s')
+arrow(ax, (24, 11.5), (36, 19.5), 'varie')
+arrow(ax, (64, 11.5), (52, 19.5), 'varie')
+text(ax, 44, 12, 'ou', 'varie', 'm')
+box(ax, 2, 2, 40, 9.5, 'fixe', label=r'$x^2-2>0$', size='s')
+box(ax, 46, 2, 40, 9.5, 'fixe', label=r'$x=0$', size='s')
+text(ax, 44, 66, 'on construit de bas en haut', 'fixe', 's')
+save(fig, '70-090')

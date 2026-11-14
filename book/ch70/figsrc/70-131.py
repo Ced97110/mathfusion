@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 24, 74, 40, 10, 'sujet', label=r'$ax+b=0$', size='m')
+box(ax, 3, 44, 40, 16, 'resultat', label='$a\\neq0$ : on divise par $a$\n$a=2$, $b=6$ : $x=-3$', size='s')
+box(ax, 45, 44, 40, 16, 'limite', label='$a=0$ : diviser par $a$\nest impossible', size='s')
+arrow(ax, (38, 74), (23, 60), 'varie', lw=1.0)
+arrow(ax, (50, 74), (65, 60), 'varie', lw=1.0)
+box(ax, 44, 12, 20, 16, 'fixe', label='$b=3$ :\npas de $x$', size='s')
+box(ax, 66, 12, 20, 16, 'fixe', label='$b=0$ :\ntout $x$', size='s')
+arrow(ax, (58, 44), (54, 28), 'varie', lw=1.0)
+arrow(ax, (72, 44), (76, 28), 'varie', lw=1.0)
+save(fig, '70-131')

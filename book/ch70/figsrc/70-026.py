@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+u, ox, oy = 12.0, 12.0, 24.0
+P = lambda y, v: (ox + u * y, oy + u * v)
+arrow(ax, P(-0.4, 0), P(3.6, 0), 'fixe', lw=0.6)
+arrow(ax, P(0, -1.7), P(0, 2.7), 'fixe', lw=0.6)
+text(ax, P(3.6, 0)[0] + 2.5, oy - 1.5, r'$y$', 'fixe', 's')
+ys = [t / 20 for t in range(0, 63)]
+line(ax, [P(y, y * y - 3 * y + 2) for y in ys], 'sujet', lw=1.4)
+line(ax, [P(0, -1), P(2.6, 1.6)], 'autre', lw=1.4)
+disc(ax, *P(2, 0), 1.0, 'fixe')
+disc(ax, *P(1, 0), 1.4, 'resultat')
+text(ax, P(1, 0)[0], oy - 4.5, '1', 'resultat', 's')
+text(ax, P(2, 0)[0] + 1, oy - 4.5, '2', 'fixe', 's')
+text(ax, 72, 54, r'$f=y^2-3y+2$', 'sujet', 's')
+text(ax, 72, 48.5, 'degré 2', 'sujet', 's')
+text(ax, 72, 38, r'$g=y-1$', 'autre', 's')
+text(ax, 72, 32.5, 'degré 1', 'autre', 's')
+text(ax, 72, 20, 'racine commune : 1', 'resultat', 's')
+text(ax, 72, 14.5, 'racine de $f$ seule : 2', 'fixe', 's')
+save(fig, '70-026')

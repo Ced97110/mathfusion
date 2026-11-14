@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+u, ox, oy = 6.0, 28.0, 22.0
+P = lambda x, y: (ox + u * x, oy + u * y)
+arrow(ax, P(-3.5, 0), P(3.5, 0), 'fixe', lw=0.7)
+arrow(ax, P(0, -2.6), P(0, 6.2), 'fixe', lw=0.7)
+text(ax, P(3.5, 0)[0] + 2.5, oy - 1, r'$x$', 'fixe', 's')
+text(ax, ox + 3, P(0, 6.2)[1] + 1, r'$y$', 'fixe', 's')
+# two points with the same x, different heights : both fall on the same place
+disc(ax, *P(0, -2), 1.3, 'sujet')
+disc(ax, *P(0, 5), 1.3, 'autre')
+text(ax, P(0, -2)[0] + 3, P(0, -2)[1], r'$(0\,;\,-2)$', 'sujet', 's', ha='left')
+text(ax, P(0, 5)[0] + 3, P(0, 5)[1], r'$(0\,;\,5)$', 'autre', 's', ha='left')
+arrow(ax, (ox - 2.5, P(0, 5)[1] - 1.5), (ox - 2.5, oy + 1.2), 'varie', lw=1.1)
+arrow(ax, (ox - 2.5, P(0, -2)[1] + 1.5), (ox - 2.5, oy - 1.2), 'varie', lw=1.1)
+ax.add_patch(Rectangle((ox - 1.2, oy - 1.2), 2.4, 2.4, ec=COL['resultat'], fc=COL['resultat'], zorder=4))
+box(ax, 52, 36, 34, 16, 'resultat', size='s')
+text(ax, 69, 47, 'expression sans $y$', 'resultat', 's')
+text(ax, 69, 41, 'même valeur', 'resultat', 's')
+text(ax, 69, 28, 'deux points,', 'fixe', 's')
+text(ax, 69, 23, 'une seule image', 'fixe', 's')
+save(fig, '70-015')

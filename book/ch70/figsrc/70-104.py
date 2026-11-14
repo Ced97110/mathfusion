@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 14, 68, 60, 12, 'sujet', label=r'$(2-x^2)^2+x^2-4$')
+arrow(ax, (44, 67.5), (44, 57.5), 'varie', lw=1.2)
+text(ax, 64, 62.5, 'développer le carré', 'varie', 's', ha='left')
+box(ax, 8, 44, 72, 12, 'fixe', label=r'$4-4x^2+x^4+x^2-4$')
+arrow(ax, (44, 43.5), (44, 33.5), 'varie', lw=1.2)
+text(ax, 50, 38.5, 'regrouper', 'varie', 's', ha='left')
+text(ax, 8, 38.5, r'$4-4=0$', 'fixe', 's', ha='left')
+box(ax, 14, 20, 60, 12, 'resultat', label=r'$x^4-3x^2$')
+text(ax, 44, 12, r'$-4x^2+x^2=-3x^2$', 'fixe', 's')
+save(fig, '70-104')

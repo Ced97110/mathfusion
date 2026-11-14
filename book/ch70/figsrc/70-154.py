@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 52, 40, 11, 'sujet', label=r'courbe : $y=x^2+1$', size='s')
+box(ax, 46, 52, 40, 11, 'autre', label=r'cercle : $x^2+y^2-c^2=0$', size='s')
+arrow(ax, (22, 52), (32, 44), 'fixe'); arrow(ax, (66, 52), (56, 44), 'fixe')
+box(ax, 10, 33, 68, 11, 'varie', label=r'on remplace $y$ par $x^2+1$', size='s')
+arrow(ax, (44, 33), (44, 25), 'fixe')
+box(ax, 10, 14, 68, 11, 'resultat', label=r'$x^4+3x^2+1-c^2$', size='m')
+text(ax, 44, 7, 'plus de y : une seule inconnue x', 'resultat', 's')
+save(fig, '70-154')

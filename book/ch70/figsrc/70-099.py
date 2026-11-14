@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 70, r'$\exists y,\ y^2=2$', 'encre', 'l')
+text(ax, 7, 52, r'$\mathbb{R}$', 'sujet', 'l')
+f = numberline(ax, 14, 68, 52, 0, 3, 1, arrow_right=True)
+disc(ax, f(2 ** 0.5), 52, 1.6, 'resultat')
+text(ax, f(2 ** 0.5), 59, r'$y=\sqrt{2}$ : vraie', 'resultat', 's')
+text(ax, 7, 26, r'$\mathbb{Q}$', 'autre', 'l')
+g = numberline(ax, 14, 68, 26, 0, 3, 1, arrow_right=True)
+disc(ax, g(2 ** 0.5), 26, 1.6, 'limite', fill=False)
+text(ax, g(2 ** 0.5), 33, r'$\sqrt{2}$ pas une fraction : fausse', 'limite', 's')
+save(fig, '70-099')

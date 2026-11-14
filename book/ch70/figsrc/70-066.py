@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+box(ax, 22, 62, 44, 11, 'fixe', label=r'$f=x^2\,y$', size='l')
+arrow(ax, (44, 61.5), (44, 51.5), 'varie')
+text(ax, 48, 56.5, r'on fixe $y=5$', 'varie', 's', ha='left')
+box(ax, 22, 40, 44, 11, 'fixe', label=r'$5\,x^2$', size='l')
+arrow(ax, (44, 39.5), (44, 29.5), 'varie')
+text(ax, 48, 34.5, r'on dérive en $x$', 'varie', 's', ha='left')
+box(ax, 22, 18, 44, 11, 'sujet', label=r'$\partial f/\partial x=10\,x$', size='l')
+text(ax, 44, 8, '« d rond f sur d rond x »', 'sujet', 's')
+save(fig, '70-066')

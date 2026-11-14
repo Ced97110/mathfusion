@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 28, 26, 14, 'fixe', label=r'$f,\ g$', size='l')
+text(ax, 15, 22, r'avec $x$ et $y$', 'fixe', 's')
+box(ax, 46, 44, 40, 11, 'sujet', label=r'$x^2(x^2-3)$')
+text(ax, 66, 59, 'allée de départ', 'fixe', 's')
+box(ax, 46, 14, 40, 11, 'sujet', label=r'$x^4-x^2-3$')
+text(ax, 66, 29, 'allée remontée de 1', 'fixe', 's')
+arrow(ax, (28.5, 38), (45.5, 48), 'varie')
+arrow(ax, (28.5, 32), (45.5, 20), 'varie')
+text(ax, 38, 33, r'élimine $y$', 'varie', 's')
+text(ax, 44, 4, r'plus de $y$ : seulement $x$', 'resultat', 's')
+save(fig, '70-071')

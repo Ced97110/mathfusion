@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+# table of the numbers of f = 2y + 6 and g = 3y + 9, with its two diagonals
+text(ax, 6, 56, r'$f$', 'sujet', 'm', weight='bold')
+text(ax, 6, 28, r'$g$', 'autre', 'm', weight='bold')
+box(ax, 12, 50, 20, 11, 'sujet', label=r'$a_1=2$', size='s')
+box(ax, 36, 50, 20, 11, 'varie', label=r'$a_0=6$', size='s')
+box(ax, 12, 22, 20, 11, 'varie', label=r'$b_1=3$', size='s')
+box(ax, 36, 22, 20, 11, 'sujet', label=r'$b_0=9$', size='s')
+arrow(ax, (30, 50), (38, 33), 'sujet', lw=1.2)
+arrow(ax, (38, 50), (30, 33), 'varie', lw=1.2)
+text(ax, 34, 66, r'$a_1b_0-a_0b_1$', 'encre', 's')
+box(ax, 62, 52, 24, 9, 'sujet', label=r'$2\times 9=18$', size='s')
+box(ax, 62, 38, 24, 9, 'varie', label=r'$6\times 3=18$', size='s')
+box(ax, 62, 22, 24, 11, 'resultat', label=r'$18-18=0$', size='s')
+text(ax, 44, 11, r'0 : racine commune $-3$', 'resultat', 's')
+save(fig, '70-021')

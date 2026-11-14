@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 50, 36, 10, 'fixe', label=r'$f=xy-1$')
+box(ax, 48, 50, 36, 10, 'fixe', label=r'$g=xy-2$')
+arrow(ax, (22, 49.5), (22, 30.5), 'varie')
+arrow(ax, (66, 49.5), (66, 30.5), 'varie')
+text(ax, 25, 40, r'élimine $y$', 'varie', 's', ha='left')
+text(ax, 63, 40, r'élimine $x$', 'varie', 's', ha='right')
+box(ax, 2, 18, 40, 11, 'sujet', label=r'$\mathrm{Res}_y(f,g)=-x$', size='s')
+box(ax, 46, 18, 40, 11, 'autre', label=r'$\mathrm{Res}_x(f,g)=-y$', size='s')
+text(ax, 44, 8, r'mêmes $f$ et $g$, deux résultats', 'encre', 's')
+save(fig, '70-070')

@@ -1,0 +1,331 @@
+[
+ {
+  "code": "70-091",
+  "a_dire": "« Pour tout x » s'écrit avec « non » et « il existe » : dire que la formule vaut pour tout x revient à dire qu'aucun x ne la rend fausse.",
+  "legende_titre": "Deux écritures de la même phrase",
+  "lecture": [
+   "Les deux cases bleues du haut sont reliées par le signe égal : ce sont deux écritures de la même phrase.",
+   "Les trois cases vertes sont des essais : x égale moins 1, 0 et 1 donnent 2, 1 et 2, tous plus grands que 0.",
+   "La phrase du bas dit qu'aucun x ne rend la formule fausse."
+  ],
+  "a_voir": "La case de gauche et celle de droite disent la même chose : aucun x ne rend la formule fausse."
+ },
+ {
+  "code": "70-092",
+  "a_dire": "Une variable liée est une lettre qui suit un quantificateur : on peut la renommer sans changer le sens.",
+  "legende_titre": "Changer le nom d'une lettre",
+  "lecture": [
+   "La case bleue de gauche utilise la lettre y après « il existe ».",
+   "La flèche orange renomme y en z : la case bleue de droite a le même sens.",
+   "La case grise du bas montre x : sa lettre ne suit aucun quantificateur et garde son nom."
+  ],
+  "a_voir": "Les lettres y et z sont liées et se remplacent l'une par l'autre ; x ne se renomme pas."
+ },
+ {
+  "code": "70-093",
+  "a_dire": "Une variable libre ne suit aucun quantificateur : sa valeur reste à choisir et la phrase est vraie ou fausse selon ce choix.",
+  "legende_titre": "Une lettre dont la valeur reste à choisir",
+  "lecture": [
+   "La case bleue du haut est la phrase ; x y est la variable libre, en orange.",
+   "À gauche, x égale 9 : la case verte dit que la phrase est vraie, avec y égale 3.",
+   "À droite, x égale moins 1 : la case rouge dit que la phrase est fausse."
+  ],
+  "a_voir": "La même phrase est vraie pour x égale 9 et fausse pour x égale moins 1."
+ },
+ {
+  "code": "70-094",
+  "a_dire": "Un énoncé élémentaire est une formule sans variable libre : il est vrai ou faux tout de suite.",
+  "legende_titre": "Formule avec ou sans lettre libre",
+  "lecture": [
+   "La colonne bleue montre la phrase avec 9 : aucune variable libre, elle est vraie tout de suite avec y égale 3.",
+   "La colonne violette montre la phrase avec x : x est libre, donc la case orange dit qu'elle dépend de x."
+  ],
+  "a_voir": "Seule la colonne bleue n'a aucune variable libre et donne tout de suite vrai."
+ },
+ {
+  "code": "70-095",
+  "a_dire": "Dans un énoncé du premier ordre, les quantificateurs portent sur des nombres, pas sur des ensembles de nombres.",
+  "legende_titre": "Sur quoi porte « il existe »",
+  "lecture": [
+   "En haut, en bleu, la phrase parle d'un seul nombre : le point sur la droite, dont le carré vaut 2.",
+   "En bas, en violet, la phrase parle d'un ensemble de nombres : les points entourés en pointillés.",
+   "Seule la phrase du haut est du premier ordre."
+  ],
+  "a_voir": "Un seul point pour le premier ordre, un groupe de points entouré pour l'autre cas."
+ },
+ {
+  "code": "70-096",
+  "a_dire": "Le théorème de Tarski dit qu'on peut remplacer une phrase avec « il existe y » par une liste finie de systèmes d'équations et d'inégalités sans y.",
+  "legende_titre": "Une phrase devient une liste de systèmes",
+  "lecture": [
+   "La case bleue est la phrase, avec le paramètre x et l'inconnue y.",
+   "La flèche orange élimine y.",
+   "Les deux cases vertes sont la liste obtenue : x plus grand que 0, ou x égale 0, sans y."
+  ],
+  "a_voir": "La phrase de gauche et la liste de droite, sans y, disent la même chose."
+ },
+ {
+  "code": "70-097",
+  "a_dire": "Éliminer le quantificateur, c'est remplacer une phrase avec « il existe y » par une phrase équivalente sans y.",
+  "legende_titre": "Faire disparaître « il existe »",
+  "lecture": [
+   "La case bleue est la phrase avec « il existe y » ; la flèche orange l'élimine.",
+   "La case verte est la phrase sans y : x plus grand ou égal à 0.",
+   "Sur la droite des x, le trait vert (de 0 vers la droite) marque les x pour lesquels y existe ; le trait rouge à gauche de 0, ceux pour lesquels aucun y n'existe."
+  ],
+  "a_voir": "La phrase sans y est vraie exactement sur le trait vert."
+ },
+ {
+  "code": "70-098",
+  "a_dire": "On élimine les quantificateurs un par un, puis on calcule : tout énoncé du premier ordre sur les réels se décide.",
+  "legende_titre": "Éliminer puis calculer",
+  "lecture": [
+   "La case bleue du haut est l'énoncé sur les réels.",
+   "La première flèche orange élimine « il existe y » : la case grise est une affirmation sans variable.",
+   "La seconde flèche orange calcule : la case verte dit vrai."
+  ],
+  "a_voir": "Après l'élimination, il ne reste qu'un calcul sans variable, dont le résultat est vrai ou faux."
+ },
+ {
+  "code": "70-099",
+  "a_dire": "Dans tout corps réel clos le même calcul donne la même réponse ; sans cette condition, la même phrase peut avoir deux réponses.",
+  "legende_titre": "La même phrase dans deux ensembles",
+  "lecture": [
+   "La phrase du haut dit qu'un nombre a pour carré 2.",
+   "Sur la droite des réels, le point vert est racine de 2 : la phrase est vraie.",
+   "Sur la droite des fractions, le cercle rouge vide est à la place de racine de 2, qui n'est pas une fraction : la phrase est fausse."
+  ],
+  "a_voir": "Le point plein dans les réels et le cercle vide dans les fractions : deux réponses pour une phrase."
+ },
+ {
+  "code": "70-100",
+  "a_dire": "Un énoncé élémentaire vrai dans les réels est vrai dans tout corps réel clos, car le calcul n'utilise que des propriétés communes.",
+  "legende_titre": "La vérité passe d'un corps à l'autre",
+  "lecture": [
+   "La case bleue est l'énoncé, vrai dans les réels.",
+   "La case grise est le calcul qui le réduit : 9 plus grand ou égal à 0, avec additions, produits et comparaisons.",
+   "Les deux cases violettes sont d'autres corps réels clos : le même calcul y donne vrai aussi."
+  ],
+  "a_voir": "Le même calcul, relié par les flèches orange à chaque corps."
+ },
+ {
+  "code": "70-101",
+  "a_dire": "Étape 1 : on lit f et g comme des polynômes en y ; leurs coefficients contiennent x.",
+  "legende_titre": "Lire les coefficients en y",
+  "lecture": [
+   "La ligne bleue donne f : les coefficients de y au carré, de y et du nombre seul.",
+   "La ligne violette donne g, de degré 1 : il n'y a pas de terme en y au carré.",
+   "La phrase orange rappelle que x est caché dans les coefficients a de 0 et b de 0."
+  ],
+  "a_voir": "Cinq coefficients en tout : trois pour f, deux pour g."
+ },
+ {
+  "code": "70-102",
+  "a_dire": "La grille 3 × 3 a une ligne pour f et deux lignes décalées pour g.",
+  "legende_titre": "Où chaque coefficient est rangé",
+  "lecture": [
+   "La ligne bleue est celle de f : 1, 0, puis x au carré moins 4.",
+   "Les deux lignes violettes sont celles de g, la seconde décalée d'une case vers la droite.",
+   "Les cases grises contiennent 0."
+  ],
+  "a_voir": "Trois lignes : une pour f, deux pour g."
+ },
+ {
+  "code": "70-103",
+  "a_dire": "Étape 3 : on développe par la première ligne ; la méthode s'arrête quand les trois termes sont écrits.",
+  "legende_titre": "Trois termes, puis la somme",
+  "lecture": [
+   "Les trois cases orange sont les trois nombres de la première ligne : 1, 0 et x au carré moins 4.",
+   "Dessous, chaque nombre est multiplié par son déterminant 2 × 2 : le deuxième terme vaut 0.",
+   "La case verte additionne les trois termes."
+  ],
+  "a_voir": "Une case par nombre de la première ligne, puis une somme."
+ },
+ {
+  "code": "70-104",
+  "a_dire": "On développe le carré, puis on regroupe : l'expression longue devient x puissance 4 moins 3 x au carré.",
+  "legende_titre": "Développer puis simplifier",
+  "lecture": [
+   "La case bleue est l'expression de départ.",
+   "La première flèche développe le carré : la case grise la montre avec ses cinq termes.",
+   "La seconde flèche regroupe : 4 et moins 4 s'annulent, moins 4 x au carré plus x au carré donne moins 3 x au carré. La case verte est le résultat."
+  ],
+  "a_voir": "Trois lignes de plus en plus courtes."
+ },
+ {
+  "code": "70-105",
+  "a_dire": "La forme x au carré fois (x au carré moins 3) reste la même quand x change ; seul le nombre obtenu change.",
+  "legende_titre": "Même formule, nombres différents",
+  "lecture": [
+   "La case bleue du haut est la formule.",
+   "Pour x égale 2 (orange), la formule donne 4 et le tableau donne 4.",
+   "Pour x égale 3, la formule donne 54 et le tableau donne 54."
+  ],
+  "a_voir": "Dans chaque colonne, formule et tableau donnent le même nombre."
+ },
+ {
+  "code": "70-106",
+  "a_dire": "Les racines du résultant, 0 (double), moins racine de 3 et racine de 3, sont les abscisses des points communs C, A et B.",
+  "legende_titre": "Les racines lues sous les points",
+  "lecture": [
+   "Le cercle est en bleu, la parabole en orange.",
+   "Les trois points verts A, B et C sont les points communs.",
+   "Les traits verts en pointillés descendent chaque point vers sa racine sur la droite du bas ; C donne la racine double 0."
+  ],
+  "a_voir": "Chaque racine est juste sous un point commun."
+ },
+ {
+  "code": "70-107",
+  "a_dire": "On remonte à y avec g, puis on vérifie dans f : chaque abscisse reçoit une hauteur contrôlée.",
+  "legende_titre": "De l'abscisse au point vérifié",
+  "lecture": [
+   "Chaque ligne commence par une abscisse (orange).",
+   "La case violette donne la hauteur y avec g : 1 pour racine de 3, moins 2 pour 0.",
+   "La case verte vérifie dans f : 3 plus 1 égale 4, et 0 plus 4 égale 4."
+  ],
+  "a_voir": "Deux lignes, chacune avec les trois mêmes étapes."
+ },
+ {
+  "code": "70-108",
+  "a_dire": "Pour g de degré 1, le résultant se retrouve aussi en remplaçant y par la racine de g dans f : on obtient le même polynôme.",
+  "legende_titre": "Deux chemins, un résultat",
+  "lecture": [
+   "Le chemin bleu est le tableau 3 × 3 et son déterminant.",
+   "Le chemin violet remplace y par x au carré moins 2 dans f, puis développe.",
+   "Les deux flèches orange arrivent à la même case verte : x puissance 4 moins 3 x au carré."
+  ],
+  "a_voir": "Deux flèches qui arrivent à la même case."
+ },
+ {
+  "code": "70-109",
+  "a_dire": "La racine double 0 vient du contact en C : les deux courbes ont la même tangente et se touchent sans se traverser.",
+  "legende_titre": "Racine double et contact",
+  "lecture": [
+   "À gauche, le cercle bleu et la parabole orange ; le trait gris en pointillés en C est leur tangente commune.",
+   "À droite, le facteur x au carré, en orange, donne la racine double 0, qui correspond à C.",
+   "Racine de 3 et moins racine de 3, en vert, sont des racines simples : en A et B les courbes se traversent."
+  ],
+  "a_voir": "En C les courbes se touchent, en A et B elles se croisent."
+ },
+ {
+  "code": "70-110",
+  "a_dire": "Remonter la parabole d'une unité change le nombre de points communs : il en reste deux.",
+  "legende_titre": "La parabole remontée",
+  "lecture": [
+   "Le cercle est bleu ; la parabole en pointillés gris est la position de départ.",
+   "La flèche orange remonte la parabole d'une unité : la courbe orange est y égale x au carré moins 1.",
+   "Les deux points verts sont les points communs restants."
+  ],
+  "a_voir": "Deux points verts seulement, le bas de la parabole est à l'intérieur du cercle."
+ },
+ {
+  "code": "70-111",
+  "a_dire": "La formule décrit une suite d'actions : remplacer y, développer le carré, ajouter x au carré moins 4, regrouper.",
+  "legende_titre": "Le calcul pour e égale 1",
+  "lecture": [
+   "La première case bleue remplace y par s égale x au carré moins 1.",
+   "Les deux cases grises développent le carré, puis ajoutent x au carré moins 4.",
+   "La case verte donne x puissance 4 moins x au carré moins 3 ; la ligne du bas redonne les nombres de la formule pour e égale 1."
+  ],
+  "a_voir": "Quatre cases reliées par des flèches, de haut en bas."
+ },
+ {
+  "code": "70-112",
+  "a_dire": "On pose u égale x au carré : l'équation de degré 4 en x devient un second degré en u, dont le produit des racines est e au carré moins 4e.",
+  "legende_titre": "Changer de lettre pour baisser le degré",
+  "lecture": [
+   "En haut, la case bleue en x devient la case verte en u grâce à u égale x au carré, car x puissance 4 est u au carré.",
+   "La case bleue du milieu est la forme générale en u.",
+   "L'accolade orange désigne le nombre seul, e au carré moins 4e, produit des racines."
+  ],
+  "a_voir": "Le même polynôme écrit en x puis en u."
+ },
+ {
+  "code": "70-113",
+  "a_dire": "Pour e égale 0,1, le produit des racines est négatif : une racine u est positive et donne deux points, l'autre est négative et n'en donne aucun.",
+  "legende_titre": "Une racine positive, une négative",
+  "lecture": [
+   "Sur la première droite, le point vert est la racine u positive ; le point gris est la racine u négative.",
+   "Les flèches vertes relient la racine positive à deux points de la droite des x.",
+   "La racine négative n'a aucune flèche : aucun x."
+  ],
+  "a_voir": "Deux flèches seulement, parties de la racine positive."
+ },
+ {
+  "code": "70-114",
+  "a_dire": "Pour e égale moins 0,1, les deux racines u sont positives, chacune donne deux points : quatre points communs.",
+  "legende_titre": "Deux racines positives",
+  "lecture": [
+   "Sur la droite du haut, les deux points verts sont les racines u, toutes deux positives.",
+   "Chaque racine envoie deux flèches vers la droite du bas.",
+   "Quatre points verts apparaissent sur la droite des x."
+  ],
+  "a_voir": "Deux racines en haut, quatre points en bas."
+ },
+ {
+  "code": "70-115",
+  "a_dire": "Quand e tend vers 0, la petite racine u tend vers 0 et les deux points du bas se rejoignent en C.",
+  "legende_titre": "Deux points qui se rejoignent",
+  "lecture": [
+   "En haut, le point orange u vaut environ 0,13 ; la flèche l'amène à 0 (point vert).",
+   "En bas, les deux points orange, moins 0,37 et 0,37, avancent l'un vers l'autre.",
+   "Ils se confondent au point vert C, de position 0."
+  ],
+  "a_voir": "Les deux flèches orange du bas se rejoignent au point vert."
+ },
+ {
+  "code": "70-116",
+  "a_dire": "La racine double est la frontière : pour e négatif il y a deux points en bas, pour e nul un point double, pour e positif aucun.",
+  "legende_titre": "Trois cas autour de e égale 0",
+  "lecture": [
+   "Chaque colonne est un cas : e négatif en vert, e nul en orange, e positif en gris.",
+   "La droite du haut place la racine u : à droite de 0, sur 0, à gauche de 0.",
+   "La droite du bas montre les points obtenus : deux, un point double entouré, aucun."
+  ],
+  "a_voir": "Le cas orange, au milieu, sépare les deux autres."
+ },
+ {
+  "code": "70-117",
+  "a_dire": "Quand la racine commune est double dans f, deux différences valent 0 : le produit est nul et le résultant aussi.",
+  "legende_titre": "Les quatre différences de racines",
+  "lecture": [
+   "Les lignes sont les racines de f, 1 et 1 (1 est double), en bleu ; les colonnes sont celles de g, 1 et moins 1, en violet.",
+   "Chaque case est une différence : 1 moins 1 égale 0 (vert) ou 1 plus 1 égale 2 (gris).",
+   "Chaque ligne a une case à 0 : deux cases valent 0, donc le produit est 0."
+  ],
+  "a_voir": "La racine double donne deux cases vertes à 0 : le produit et le résultant sont nuls."
+ },
+ {
+  "code": "70-118",
+  "a_dire": "Un résultant nul signale qu'une racine commune existe sans dire laquelle ni sa multiplicité ; le PGCD la donne.",
+  "legende_titre": "Le résultant signale, le PGCD identifie",
+  "lecture": [
+   "Les cases bleue et violette sont f et g.",
+   "La case orange est le résultant nul : une alerte.",
+   "La case verte est le PGCD, y moins 1 : la racine commune est 1."
+  ],
+  "a_voir": "D'abord l'alerte, ensuite le PGCD qui donne la racine."
+ },
+ {
+  "code": "70-119",
+  "a_dire": "Si g est une constante non nulle c, le résultant est c puissance n, non nul : pas de racine commune ; avec c égale 0 il serait nul.",
+  "legende_titre": "Une constante non nulle ou nulle",
+  "lecture": [
+   "À gauche, g égale 5 (violet) : les deux lignes du tableau donnent 5 fois 5 moins 0 fois 0, soit 25, différent de 0.",
+   "À droite, g égale 0 (rouge) : le tableau n'a que des 0 et le déterminant vaut 0.",
+   "Le résultat vert dit : pas de racine commune."
+  ],
+  "a_voir": "Le tableau de gauche a des 5 et un déterminant non nul ; celui de droite n'a que des 0."
+ },
+ {
+  "code": "70-120",
+  "a_dire": "Avec f égale y au carré moins 1 et g égale 5, le résultant vaut 25 et n'est pas nul.",
+  "legende_titre": "Un exemple avec une constante",
+  "lecture": [
+   "Sur la droite, les deux points bleus sont les racines de f : moins 1 et 1.",
+   "g égale 5, en violet, n'a aucune racine.",
+   "Le tableau violet 5, 0, 0, 5 a pour déterminant 5 fois 5 moins 0 fois 0 ; la case verte donne 25, différent de 0."
+  ],
+  "a_voir": "Résultant 25, non nul."
+ }
+]

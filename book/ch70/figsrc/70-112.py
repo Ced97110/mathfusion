@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 2, 56, 34, 13, 'sujet', label=r'$x^4-x^2-3$')
+arrow(ax, (37, 62.5), (50, 62.5), 'varie', lw=1.2)
+text(ax, 43.5, 68, r'$u=x^2$', 'varie', 's')
+box(ax, 52, 56, 34, 13, 'resultat', label=r'$u^2-u-3$')
+text(ax, 44, 49, r'car $x^4=(x^2)^2=u^2$', 'fixe', 's')
+box(ax, 4, 22, 80, 13, 'sujet', label=r'$u^2+(2e-3)\,u+e^2-4e$')
+text(ax, 44, 40, 'forme générale', 'fixe', 's')
+brace(ax, 52, 80, 21, 'varie', label=r'produit des racines', down=True)
+save(fig, '70-112')

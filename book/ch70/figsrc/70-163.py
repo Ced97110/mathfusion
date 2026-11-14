@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 70, r'$(x-1)(y^2+1)=0$', 'encre', 'm')
+box(ax, 6, 54, 30, 10, 'varie', label=r'$x-1$', size='m')
+text(ax, 44, 59, '×', 'encre', 'm')
+box(ax, 52, 54, 30, 10, 'sujet', label=r'$y^2+1$', size='m')
+# plane : the whole vertical line x = 1
+line(ax, [(6, 18), (42, 18)], 'fixe', lw=0.7); line(ax, [(14, 10), (14, 44)], 'fixe', lw=0.7)
+arrow(ax, (22, 10), (22, 46), 'varie', lw=1.6, both=True)
+arrow(ax, (22, 54), (22, 48), 'varie')
+text(ax, 38, 51, 'ne contient que x', 'varie', 's')
+text(ax, 25, 37, 'x = 1 : droite entière', 'varie', 's', ha='left')
+arrow(ax, (67, 54), (67, 36), 'sujet')
+box(ax, 50, 22, 36, 12, 'resultat', label=r'il reste : $y^2+1$', size='s')
+text(ax, 68, 15, 'plus de facteur en x seul', 'resultat', 's')
+save(fig, '70-163')
