@@ -5,6 +5,8 @@ import { formatDeg } from '../../../lib/niveau_vent.js';
 
 const R = 80;
 const C = 100;
+// Coordonnées arrondies au centième : le serveur et le navigateur doivent écrire le même texte (hydratation).
+const r2 = (v) => Math.round(v * 100) / 100;
 const norm = (d) => Math.round((((d % 360) + 360) % 360) * 10) / 10;
 
 /** @param {{ cap: number, bloque: boolean, onChange: (cap:number) => void }} props */
@@ -50,10 +52,10 @@ export default function Molette({ cap, bloque, onChange }) {
     graduations.push(
       <line
         key={d}
-        x1={C + R * Math.sin(r)}
-        y1={C - R * Math.cos(r)}
-        x2={C + (R - long) * Math.sin(r)}
-        y2={C - (R - long) * Math.cos(r)}
+        x1={r2(C + R * Math.sin(r))}
+        y1={r2(C - R * Math.cos(r))}
+        x2={r2(C + (R - long) * Math.sin(r))}
+        y2={r2(C - (R - long) * Math.cos(r))}
         stroke="var(--gris)"
         strokeWidth={d % 90 === 0 ? 2 : 1}
       />,
@@ -89,8 +91,8 @@ export default function Molette({ cap, bloque, onChange }) {
         ].map(([t, d]) => (
           <text
             key={t}
-            x={C + (R - 24) * Math.sin((d * Math.PI) / 180)}
-            y={C - (R - 24) * Math.cos((d * Math.PI) / 180) + 5}
+            x={r2(C + (R - 24) * Math.sin((d * Math.PI) / 180))}
+            y={r2(C - (R - 24) * Math.cos((d * Math.PI) / 180) + 5)}
             textAnchor="middle"
             fontSize="14"
             fill="var(--gris)"
@@ -98,7 +100,7 @@ export default function Molette({ cap, bloque, onChange }) {
             {t}
           </text>
         ))}
-        <line x1={C} y1={C} x2={C + (R - 4) * Math.sin(a)} y2={C - (R - 4) * Math.cos(a)} stroke="var(--orange)" strokeWidth="4" strokeLinecap="round" />
+        <line x1={C} y1={C} x2={r2(C + (R - 4) * Math.sin(a))} y2={r2(C - (R - 4) * Math.cos(a))} stroke="var(--orange)" strokeWidth="4" strokeLinecap="round" />
         <circle cx={C} cy={C} r="6" fill="var(--orange)" />
       </svg>
       <div className="nv-cap" aria-live="polite">

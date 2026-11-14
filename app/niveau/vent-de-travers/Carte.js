@@ -23,11 +23,13 @@ export function pointCarte(svg, clientX, clientY) {
   return { estNm: p.x / K + XMIN, nordNm: YMAX - p.y / K };
 }
 
+// Coordonnées arrondies au centième : le serveur et le navigateur doivent écrire le même texte (hydratation).
+const r2 = (v) => Math.round(v * 100) / 100;
 const rad = (d) => (d * Math.PI) / 180;
 const VERS = rad(VENT.vientDuDeg + 180);
 // Flèches de vent à l'échelle : longueur = distance parcourue par l'air en une heure.
-const VENT_DX = VENT.vitesseKt * Math.sin(VERS) * K;
-const VENT_DY = -VENT.vitesseKt * Math.cos(VERS) * K;
+const VENT_DX = r2(VENT.vitesseKt * Math.sin(VERS) * K);
+const VENT_DY = r2(-VENT.vitesseKt * Math.cos(VERS) * K);
 const POINTS_VENT = [
   [10, 22],
   [50, 22],
@@ -40,12 +42,12 @@ const POINTS_VENT = [
 function Fleche({ x1, y1, x2, y2, couleur, epaisseur = 3, pointilles }) {
   const a = Math.atan2(y2 - y1, x2 - x1);
   const t = 9;
-  const p1 = `${x2 - t * Math.cos(a - 0.4)},${y2 - t * Math.sin(a - 0.4)}`;
-  const p2 = `${x2 - t * Math.cos(a + 0.4)},${y2 - t * Math.sin(a + 0.4)}`;
+  const p1 = `${r2(x2 - t * Math.cos(a - 0.4))},${r2(y2 - t * Math.sin(a - 0.4))}`;
+  const p2 = `${r2(x2 - t * Math.cos(a + 0.4))},${r2(y2 - t * Math.sin(a + 0.4))}`;
   return (
     <g>
-      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={couleur} strokeWidth={epaisseur} strokeDasharray={pointilles ? '6 5' : undefined} />
-      <polygon points={`${x2},${y2} ${p1} ${p2}`} fill={couleur} />
+      <line x1={r2(x1)} y1={r2(y1)} x2={r2(x2)} y2={r2(y2)} stroke={couleur} strokeWidth={epaisseur} strokeDasharray={pointilles ? '6 5' : undefined} />
+      <polygon points={`${r2(x2)},${r2(y2)} ${p1} ${p2}`} fill={couleur} />
     </g>
   );
 }
@@ -98,8 +100,8 @@ export default function Carte({ phase, cap, prediction, resultat, triangle, onTa
         <Fleche
           x1={X(0)}
           y1={Y(0)}
-          x2={X(AVION_KT * Math.sin(rad(cap)))}
-          y2={Y(AVION_KT * Math.cos(rad(cap)))}
+          x2={r2(X(AVION_KT * Math.sin(rad(cap))))}
+          y2={r2(Y(AVION_KT * Math.cos(rad(cap))))}
           couleur="var(--orange)"
           epaisseur={2}
           pointilles
