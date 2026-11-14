@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(72)
+cx, cy, U = 30, 36, 15.0
+R = 2 ** (1 / 3)
+arrow(ax, (3, cy), (56, cy), 'fixe', lw=0.8)
+arrow(ax, (cx, 6), (cx, 66), 'fixe', lw=0.8)
+P1 = (cx + R * U, cy)
+P2 = (cx + R * U * math.cos(2 * math.pi / 3), cy + R * U * math.sin(2 * math.pi / 3))
+P3 = (P2[0], 2 * cy - P2[1])
+disc(ax, *P1, 2.0, 'sujet')
+disc(ax, *P2, 2.0, 'varie')
+disc(ax, *P3, 2.0, 'varie')
+arrow(ax, (P2[0], P2[1] - 3), (P3[0], P3[1] + 3), 'varie', both=True)
+text(ax, P1[0], P1[1] + 5, r'$r_1$', 'sujet', 's')
+text(ax, P2[0] + 6, P2[1], r'$r_2$', 'varie', 's')
+text(ax, P3[0] + 6, P3[1], r'$r_3$', 'varie', 's')
+text(ax, 72, 56, 'reste en place', 'sujet', 's')
+text(ax, 72, 48, '(corps réel)', 'sujet', 's')
+text(ax, 72, 28, 'échangées', 'varie', 's')
+text(ax, 72, 20, 'conjugaison', 'varie', 's')
+text(ax, 44, 4, '2 éléments : rien, ou ' + r'$(r_2\ r_3)$', 'resultat', 's')
+save(fig, '65-154')

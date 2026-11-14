@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, r'$f(x)=x^2-2$ et $r=1{,}41$ (carré $\approx 2$)', 'fixe', 's')
+box(ax, 14, 58, 60, 12, 'sujet', label=r'départ : $f(r)=0$', size='m')
+arrow(ax, (44, 58), (44, 46), 'varie')
+box(ax, 4, 30, 80, 16, 'varie', label=r'$f(\eta(r))=\eta(f(r))$', size='l', weight='bold')
+text(ax, 44, 25, r'$\eta$ respecte $+$ et $\times$, et fixe $-2$', 'varie', 's')
+arrow(ax, (44, 20), (44, 14.5), 'varie')
+box(ax, 14, 2, 60, 12, 'resultat', label=r'arrivée : $\eta(0)=0$', size='m')
+save(fig, '65-005')

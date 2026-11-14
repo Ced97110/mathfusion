@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 21, 62, 'voisins : une équation', 'fixe', 's')
+text(ax, 67, 62, 'ici : toutes les équations', 'sujet', 's')
+box(ax, 2, 40, 38, 14, 'fixe', label="valeur approchée\nd'une racine", size='s')
+box(ax, 2, 16, 38, 14, 'fixe', label="racines exactes\nd'une seule équation", size='s')
+box(ax, 48, 40, 38, 14, 'sujet', label="une formule en\n" + r'$t_1,\ldots,t_n$ et radicaux', size='s')
+arrow(ax, (67, 40), (67, 27), 'varie')
+text(ax, 69, 33.5, "on remplace\nles " + r'$t_i$', 'varie', 's', ha='left')
+box(ax, 48, 10, 38, 17, 'resultat', label="racines de chaque\néquation du degré " + r'$n$', size='s')
+save(fig, '65-098')

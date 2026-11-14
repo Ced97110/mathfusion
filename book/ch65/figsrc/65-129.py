@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+# colonne gauche : équation à lettres (groupe connu)
+text(ax, 22, 58, 'équation à lettres', 'sujet', 's')
+box(ax, 4, 42, 36, 11, 'sujet', label=r'$t_1,\ldots,t_5$')
+arrow(ax, (22, 42), (22, 30), 'sujet')
+box(ax, 4, 18, 36, 11, 'sujet', label=r'$S_5$ : 120')
+text(ax, 22, 12, 'groupe connu', 'sujet', 's')
+# colonne droite : équation à coefficients rationnels
+text(ax, 66, 58, 'équation rationnelle', 'autre', 's')
+box(ax, 48, 42, 36, 11, 'autre', label='coefficients ' + r'$\mathbb{Q}$', size='s')
+arrow(ax, (66, 42), (66, 30), 'autre')
+box(ax, 48, 18, 36, 11, 'autre', fill=False, dash=True, label=r'$S_5$ ou moins ?')
+text(ax, 66, 12, 'groupe : question', 'autre', 's')
+text(ax, 44, 36, '?', 'varie', 'l', weight='bold')
+save(fig, '65-129')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 4, 40, 14, 'sujet', label='étage 1 : racine carrée\n' + r'$\sqrt{324}=18$', size='s')
+box(ax, 24, 24, 40, 12, 'fixe', label=r'$z_1^3=54$', size='m')
+box(ax, 46, 42, 40, 14, 'sujet', label='étage 2 : racine cubique\n' + r'$\sqrt[3]{54}=3\sqrt[3]{2}$', size='s')
+arrow(ax, (32, 18), (36, 24), 'varie')
+arrow(ax, (54, 36), (58, 42), 'varie')
+text(ax, 45, 11, 'marche de taille 2\n' + r'$S_3\supset A_3$', 'fixe', 's', ha='left')
+text(ax, 44, 49, 'marche de taille 3\n' + r'$A_3\supset 1$', 'fixe', 's', ha='right')
+save(fig, '65-123')

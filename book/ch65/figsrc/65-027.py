@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 4, 54, 38, 16, 'autre', label='automorphisme\ndu corps $E$', size='s')
+box(ax, 46, 54, 38, 16, 'sujet', label='rangement\ndes racines', size='s')
+text(ax, 23, 74, r'$G$', 'autre', 'l')
+text(ax, 65, 74, r'$G_f$', 'sujet', 'l')
+arrow(ax, (42, 62), (46, 62), 'resultat', both=True)
+arrow(ax, (23, 54), (38, 36), 'fixe', lw=0.9)
+arrow(ax, (65, 54), (50, 36), 'fixe', lw=0.9)
+box(ax, 20, 22, 48, 14, 'resultat', label=r'un seul nom : $\sigma$', size='m')
+text(ax, 44, 14, 'et un seul groupe, noté $G$', 'resultat', 's')
+text(ax, 44, 6, r'$G=G_f$', 'resultat', 'l')
+save(fig, '65-027')

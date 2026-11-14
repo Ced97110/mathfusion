@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 22, 60, r'équation générale, $n\geq5$', 'sujet', 's')
+box(ax, 2, 40, 40, 13, 'sujet', label=r'$x^5-t_1x^4+\cdots=0$', size='s')
+arrow(ax, (22, 40), (22, 30), 'varie')
+box(ax, 2, 10, 40, 20, 'limite', fill=False, dash=True, label="aucune formule\nen " + r'$t_i$' + " et radicaux", size='s')
+text(ax, 66, 60, 'équation particulière', 'resultat', 's')
+box(ax, 46, 40, 40, 13, 'resultat', label=r'$x^5-2=0$')
+arrow(ax, (66, 40), (66, 30), 'varie')
+box(ax, 46, 10, 40, 20, 'resultat', label=r'$x=\sqrt[5]{2}$' + "\nun seul radical", size='s')
+save(fig, '65-104')
