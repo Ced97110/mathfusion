@@ -113,13 +113,13 @@ section,article{padding-left:0;padding-right:0}
 .roles i{width:26px;height:18px;border-radius:4px}
 .roles b{width:4rem}
 .chap{margin-top:88px;padding-top:28px;border-top:1px solid var(--filet);scroll-margin-top:calc(var(--bar) + 16px)}
-#chl{list-style:none;margin:0;padding:0;font-family:var(--ui)}
-#chl li{border-top:1px solid var(--filet)}
-#chl li:last-child{border-bottom:1px solid var(--filet)}
-#chl a{display:grid;grid-template-columns:3rem 1fr auto;gap:12px;align-items:baseline;padding:16px 8px;text-decoration:none;color:var(--encre);font-size:17px;line-height:1.35;transition:background .12s}
-#chl a:hover{background:var(--survol)}
-#chl .k{font-weight:700;font-variant-numeric:tabular-nums}
-#chl .c{font-size:14px;color:var(--sec);white-space:nowrap;font-variant-numeric:tabular-nums}
+.chl{list-style:none;margin:0;padding:0;font-family:var(--ui)}
+.chl li{border-top:1px solid var(--filet)}
+.chl li:last-child{border-bottom:1px solid var(--filet)}
+.chl a{display:grid;grid-template-columns:3rem 1fr auto;gap:12px;align-items:baseline;padding:16px 8px;text-decoration:none;color:var(--encre);font-size:17px;line-height:1.35;transition:background .12s}
+.chl a:hover{background:var(--survol)}
+.chl .k{font-weight:700;font-variant-numeric:tabular-nums}
+.chl .c{font-size:14px;color:var(--sec);white-space:nowrap;font-variant-numeric:tabular-nums}
 .avt{font:400 15.5px var(--ui);color:var(--sec);margin:18px 0 28px}
 .foot{margin-top:88px;padding:24px 0 40px;border-top:1px solid var(--filet);font:400 14px var(--ui);color:var(--sec)}
 
@@ -199,8 +199,8 @@ figure svg{border:1px solid var(--filet);border-radius:8px}
   .how,.chap,.foot{margin-top:56px}
   .how>div+div{margin-top:12px}
   .plan li{grid-template-columns:1fr;row-gap:2px}
-  #chl a{grid-template-columns:2.2rem 1fr;padding:14px 4px;font-size:16px}
-  #chl .c{grid-column:2}
+  .chl a{grid-template-columns:2.2rem 1fr;padding:14px 4px;font-size:16px}
+  .chl .c{grid-column:2}
   .reader{display:block;padding:0 20px}
   .rail{display:none}
   .rcol{padding-bottom:calc(56px + 20vh)}
@@ -234,14 +234,7 @@ figure svg{border:1px solid var(--filet);border-radius:8px}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
 
-/* Fusion avec main : listes de chapitres par branche, menu des branches, autres livres */
-.chl{list-style:none;margin:0;padding:0;font-family:Inter,system-ui,sans-serif}
-.chl li{border-top:1px solid #d9dde3}
-.chl a,.chl span.na{display:flex;gap:12px;align-items:baseline;padding:13px 2px;text-decoration:none;color:#1c1c1c;font-size:15.5px;line-height:1.35}
-.chl .k{flex:none;width:2.6rem;font-weight:700;color:#1f4e79;font-variant-numeric:tabular-nums}
-.chl .c{flex:none;margin-left:auto;font-size:12.5px;color:#5f6773;white-space:nowrap}
-.chl span.na{color:#9aa1ab}.chl span.na .k{color:#9aa1ab}
-.chl a:hover{background:#f3f6fa}
+/* Fusion avec main : menu des branches, autres livres */
 #br{position:sticky;top:56px;z-index:9;display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:#e8eef5;border-bottom:1px solid #d9dde3;font:600 13.5px Inter,system-ui,sans-serif;scrollbar-width:none}
 #br::-webkit-scrollbar{display:none}
 #br a{flex:none;color:#1f4e79;text-decoration:none;padding:7px 11px;border-radius:6px;background:#fff;white-space:nowrap}
