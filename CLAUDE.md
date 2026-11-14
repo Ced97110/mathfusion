@@ -28,7 +28,9 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 - Travail par branche : une session peut recevoir une branche de `content/branches.json` (par exemple « algèbre abstraite »). Elle fait alors, dans l'ordre, les chapitres de cette branche qui n'ont ni ligne dans `book/JOURNAL.md` ni dossier `book/chNN`, et aucun autre. Avant chaque `setup`, revérifier que le dossier n'existe pas (une autre session a pu le créer entre-temps). Avant `git push`, faire `git pull --rebase`.
 - Chaque sous-agent coûte environ 80 000 tokens au démarrage, quel que soit le travail : peu d'agents, gros lots.
 - Tout ce qui est mécanique passe par les scripts (zéro token).
-- Modèles des sous-agents : **Sonnet** pour concevoir et coder les figures, juger, corriger ; **Haiku** pour la lecture à l'aveugle. Pas d'Opus, sauf si la réussite au premier test tombe sous 75 % (le signaler dans le bilan avant de l'utiliser).
+- Modèles des sous-agents (décision de l'utilisateur du 2026-11-14), plus de Sonnet :
+  - **Opus 5.5** (`model: opus`) pour tout ce qui demande un raisonnement pointu : conception et code des figures, lecture à l'aveugle et contrôle des figures, jugement, correction, réécriture, lecteur test d'une réécriture (il doit voir ce qu'un débutant ne peut pas suivre).
+  - **Haiku** (`model: haiku`) seulement pour ce qui n'en demande pas : relevés et vérifications mécaniques qu'un script ne peut pas faire. Jamais pour lire ou contrôler une figure.
 - Un seul tour de correction. Le superviseur ne commente pas chaque étape : une ligne au plus, bilan à la fin.
 
 ## Procédure pour un chapitre N
@@ -36,12 +38,12 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 Toutes les commandes partent de la racine du dépôt, sauf mention contraire.
 
 1. **Préparer.** `python3 tools/kit/pipe.py setup N book/source/Des_nombres_aux_structures_fiches.pdf book` crée `book/chNN/`, découpe les fiches, écrit `meta.json` et les lots `batches/Lxx.txt` (16 fiches par lot). Vérifier que la sortie n'annonce aucune anomalie.
-2. **Figures.** Un sous-agent Sonnet par lot, tous lancés ensemble, avec la consigne : « Lis le fichier `<chemin absolu de book/chNN>/figure_prompt.md` et exécute exactement ses instructions, en remplaçant partout {L} par Lxx. » Chaque agent écrit `figsrc/<code>.py` et `specs/Lxx.json`.
+2. **Figures.** Un sous-agent Opus par lot, tous lancés ensemble, avec la consigne : « Lis le fichier `<chemin absolu de book/chNN>/figure_prompt.md` et exécute exactement ses instructions, en remplaçant partout {L} par Lxx. » Chaque agent écrit `figsrc/<code>.py` et `specs/Lxx.json`.
 3. **Contrôle.** Dans `book/chNN` : `python3 pipe.py check`. La sortie doit donner aucun échec, toutes les figures, aucune légende manquante. Corriger ce qui manque avant de continuer.
-4. **Lecture à l'aveugle.** `python3 pipe.py blind`, puis un sous-agent Haiku par dossier `blind/Txx` : « Lis `<…>/blind_prompt.md` et exécute ses instructions en remplaçant {T} par Txx. Traite toutes les images. »
-5. **Jugement.** `python3 pipe.py judgein`, puis un seul sous-agent Sonnet : « Lis `<…>/judge_prompt.md` et exécute ses instructions en remplaçant {J} par J1. Traite tous les objets et vérifie le nombre d'entrées. »
-6. **Correction.** `python3 pipe.py fixin`, puis un seul sous-agent Sonnet (deux au-delà de 20 figures) : « Lis `<…>/fix_prompt.md` et exécute ses instructions en remplaçant {F} par F1. Lance tes scripts un par un. »
-7. **Contrôle des corrections.** Préparer un jeu aveugle avec les seules figures corrigées (fonction `blind(codes, 'R')` de `pipe.py`), un sous-agent Haiku, puis comparer soi-même les réponses aux phrases « a_dire ». Pas d'agent juge pour une douzaine de lignes.
+4. **Lecture à l'aveugle.** `python3 pipe.py blind`, puis un sous-agent Opus par dossier `blind/Txx` : « Lis `<…>/blind_prompt.md` et exécute ses instructions en remplaçant {T} par Txx. Traite toutes les images. »
+5. **Jugement.** `python3 pipe.py judgein`, puis un seul sous-agent Opus : « Lis `<…>/judge_prompt.md` et exécute ses instructions en remplaçant {J} par J1. Traite tous les objets et vérifie le nombre d'entrées. »
+6. **Correction.** `python3 pipe.py fixin`, puis un seul sous-agent Opus (deux au-delà de 20 figures) : « Lis `<…>/fix_prompt.md` et exécute ses instructions en remplaçant {F} par F1. Lance tes scripts un par un. »
+7. **Contrôle des corrections.** Préparer un jeu aveugle avec les seules figures corrigées (fonction `blind(codes, 'R')` de `pipe.py`), un sous-agent Opus, puis comparer soi-même les réponses aux phrases « a_dire ». Pas d'agent juge pour une douzaine de lignes.
 8. **Site.** Écrire d'abord la ligne du journal (étape 9) : `tools/site.py` ne publie que les chapitres présents dans `book/JOURNAL.md`. Puis `python3 tools/site.py`, puis `npm install` (si besoin) et `npm run build`. Le site doit se construire sans erreur et `content/toc.json` doit montrer le chapitre N comme fait.
 9. **Journal.** Ajouter une entrée à `book/JOURNAL.md` : date, chapitre, nombre de fiches, réussies au premier test, réussies après correction, liste des figures encore partielles avec ce qui manque, tout nombre inventé par un agent, toute couleur du livre changée à cause des rôles.
 10. **Commit et push.** Un commit « Chapitre N : <titre> (<n> fiches) » sur `main`, puis `git push`. Ne pas pousser si la construction du site a échoué.

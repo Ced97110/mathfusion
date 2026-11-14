@@ -1,0 +1,485 @@
+<div class="pk">Chapitre 41</div>
+<h1>Les vecteurs du plan et de l’espace</h1>
+
+<h2>1. Le problème concret</h2>
+<p>Un petit avion de tourisme vole vers l’est. Son moteur le pousse à 180 km/h dans l’air. Mais l’air lui-même bouge. Un vent souffle à 100 km/h. Sa <b>direction</b> (le côté vers lequel il souffle) fait un angle de 60° avec l’est, du côté du nord.</p>
+<img class="vf" src="/chapters/img/ch41/r41_A.svg" alt="Deux axes gris partent du point O : est vers la droite, nord vers le haut. Une flèche bleue « avion : 180 km/h » va vers l’est. Une flèche orange « vent 100 km/h » monte entre l’est et le nord. Un arc gris marque 60° entre l’est et le vent. Un arc en pointillés marque 90°, un quart de tour, entre l’est et le nord." style="--w:22">
+<p class="cap">Fig. 41.A : l’avion part de <i>O</i> vers l’est (flèche bleue, 180 km/h). Le vent (flèche orange, 100 km/h) souffle vers un côté situé entre l’est et le nord. L’arc gris marque l’angle de 60° entre l’est et le vent. L’arc en pointillés marque 90°, un quart de tour, entre l’est et le nord.</p>
+<div class="rappel"><p class="rt">Rappel : l’angle et le degré</p>
+<p>Un angle mesure l’écart entre deux directions parties du même point. On le mesure en degrés, notés °. Un tour complet fait 360°. Un demi-tour fait 180°. Un quart de tour fait 90° : c’est l’angle entre l’est et le nord, marqué en pointillés sur la figure 41.A.</p>
+<p>Un angle de 90° s’appelle un <b>angle droit</b>. Un angle de 60° est plus petit qu’un angle droit. Les angles sont revus aux chapitres 26 et 28.</p></div>
+<p>Le pilote veut deux réponses. À quelle vitesse avance-t-il au-dessus du sol ? Et dans quelle direction ?</p>
+<p>Premier réflexe : additionner. 180 + 100 = 280 km/h. Cette réponse est fausse. Elle serait juste si le vent poussait exactement vers l’est, dans le même sens que l’avion.</p>
+<p>Deuxième réflexe : soustraire. 180 − 100 = 80 km/h. Cette réponse serait juste si le vent soufflait exactement vers l’ouest, contre l’avion. Ici, le vent souffle de biais.</p>
+<p>La vraie réponse est donc quelque part entre 80 et 280. Où exactement ? Cela dépend de l’angle de 60°.</p>
+<p>Voici le fait qui force l’invention de ce chapitre. Le nombre 100 ne suffit pas à décrire le vent. Deux vents de 100 km/h, l’un vers l’est et l’autre vers l’ouest, ont des effets opposés sur l’avion.</p>
+<p>Pour décrire le vent, il faut deux informations. La première est une <b>grandeur</b> : la valeur du nombre, ici 100 km/h. La seconde est une direction : ici, 60° au-dessus de l’est.</p>
+<p>Les nombres que vous manipulez depuis le chapitre 1 n’ont qu’une grandeur. Il faut un objet nouveau.</p>
+<p>Deuxième situation. Vous tirez une valise à roulettes sur un quai. Vous tirez la poignée avec une force de 50 <b>newtons</b>.</p>
+<p>Le newton, noté N, est l’unité de force. Une force de 50 N correspond à peu près à l’effort pour soulever un sac de 5 kg.</p>
+<p>La poignée est inclinée de 30° au-dessus du sol. Une partie de votre effort tire la valise vers le haut. Cette partie ne la fait pas avancer.</p>
+<img class="vf" src="/chapters/img/ch41/r41_B.svg" alt="Une valise posée sur le sol. Depuis le haut de la valise, une flèche bleue « votre force : 50 N » monte vers la droite à 30° au-dessus de l’horizontale. Une flèche verte en pointillés, horizontale, porte « ? la part qui fait avancer ». Une flèche grise en pointillés, verticale, porte « la part qui tire vers le haut »." style="--w:22">
+<p class="cap">Fig. 41.B : votre force (flèche bleue, 50 N) monte à 30° au-dessus du sol. Elle se partage en deux parts. La part couchée le long du sol (flèche verte en pointillés) fait avancer la valise. La part verticale (flèche grise en pointillés) tire la valise vers le haut. La longueur de la part verte est la question.</p>
+<p>Quelle part des 50 N fait réellement avancer la valise ? Là encore, la grandeur seule ne répond pas. Il faut savoir dans quelle direction la force est exercée.</p>
+<p>Vous avez déjà deux outils qui touchent au problème. Au chapitre 19, la pente d’une droite disait de combien elle monte quand on avance de 1. Elle donnait une direction, mais pas de longueur.</p>
+<p>Au chapitre 22, le théorème de Pythagore donnait une longueur, mais pas de direction. Il est rappelé en partie 3.</p>
+<p>L’objet de ce chapitre réunit les deux. C’est le <b>vecteur</b> : un objet qui possède une longueur et une direction.</p>
+
+<h2>2. La figure</h2>
+<img class="vf" src="/chapters/img/ch41/p0939_1.svg" alt="Un point noir O. Une flèche bleue a de longueur 180 part vers la droite. Une flèche orange v de longueur 100 monte vers la droite avec un angle de 60° marqué par un arc gris. Une flèche verte r = a + v va de O au coin opposé d’un parallélogramme bleu clair. Les copies fines de a et de v complètent le parallélogramme." style="--w:24.06">
+<p class="cap">Fig. 41.1 : la flèche verte r part de O et va au coin opposé de la figure bleu clair à quatre côtés. Elle est plus courte que 180 + 100 = 280, parce que a et v ne vont pas dans la même direction. Les deux chemins, a puis v, ou v puis a, arrivent au même coin.</p>
+<p>Voici ce que vous voyez. Le point noir <i>O</i> est la position de l’avion au départ. L’est est vers la droite. Le nord est vers le haut.</p>
+<p>La flèche bleue part de <i>O</i> vers la droite. Elle est nommée a, pour « avion », et porte le nombre 180. Sa longueur représente 180 km/h. Elle dit ce que ferait l’avion sans vent : en une heure, il parcourrait 180 km vers l’est.</p>
+<p>La flèche orange part aussi de <i>O</i>. Elle est nommée v, pour « vent », et porte le nombre 100. Elle est plus courte que la bleue. Sa longueur représente 100 km/h.</p>
+<p>La flèche orange monte en faisant un angle de 60° avec la flèche bleue. Un arc gris marque cet angle. Elle dit ce que ferait une feuille posée dans l’air. En une heure, le vent la porterait de 100 km dans cette direction.</p>
+<p>Deux flèches fines sont des copies. La copie orange de v part du bout de a. La copie bleue de a part du bout de v.</p>
+<p>Les quatre flèches forment un <b>parallélogramme</b>. C’est une figure à quatre côtés droits dont les côtés opposés sont parallèles et de même longueur (chapitre 11). Il est colorié en bleu clair.</p>
+<p>Deux côtés sont parallèles quand ils ne se croisent jamais, même prolongés : l’écart entre eux reste le même. Sur la figure, le bas et le haut sont parallèles. Le côté gauche et le côté droit aussi.</p>
+<p>Pourquoi ces copies ? Pendant une heure, deux déplacements ont lieu en même temps. Le moteur déplace l’avion de 180 km vers l’est dans l’air. L’air lui-même se déplace de 100 km dans la direction du vent.</p>
+<p>Le point d’arrivée est le même que si les deux déplacements avaient lieu l’un après l’autre. Faites d’abord a, puis v : vous suivez le bas puis le côté droit du parallélogramme. Faites d’abord v, puis a : vous suivez le côté gauche puis le haut. Les deux chemins arrivent au même coin, le coin opposé à <i>O</i>.</p>
+<p>La flèche verte part de <i>O</i> et va directement à ce coin. Elle est nommée r, pour « résultat », et la figure écrit r = a + v. C’est le déplacement réel de l’avion au-dessus du sol en une heure.</p>
+<p>Sa longueur est la vitesse cherchée. Son inclinaison est la direction cherchée. Sur la figure, elle est plus courte que 180 et 100 mis bout à bout en ligne droite. Elle monte un peu au-dessus de l’est.</p>
+<p>Le calcul exact, en partie 4, donne environ 245,8 km/h, à 20,6° au-dessus de l’est.</p>
+<p>La figure contient donc la règle d’addition des flèches. Elle s’appelle la <b>règle du parallélogramme</b>.</p>
+
+<h2>3. La définition et ses symboles</h2>
+<h3>Le vecteur</h3>
+<p>Un vecteur est un objet qui possède une longueur et une direction. On le dessine par une flèche. La longueur de la flèche représente la grandeur. L’inclinaison de la flèche et le côté où pointe sa pointe représentent la direction.</p>
+<p>Certains manuels français distinguent deux mots. La direction est la droite qui porte la flèche. Le sens dit de quel côté de cette droite on va. Ici, le mot « direction » désigne les deux à la fois.</p>
+<p>Un nombre ordinaire, qui n’a qu’une grandeur, s’appelle un <b>scalaire</b>. Une température, une masse, un prix sont des scalaires. Une vitesse avec sa direction, une force, un déplacement sont des vecteurs.</p>
+<p>Deux flèches qui ont la même longueur et la même direction représentent le même vecteur. Elles peuvent partir de points différents. Sur la figure 41.1, la copie fine de v est encore v : seul son point de départ a changé.</p>
+<p>Beaucoup de livres écrivent un vecteur avec une lettre en gras. À la main, on écrit une flèche au-dessus de la lettre. Ce chapitre écrit simplement v. Le vecteur qui va du point <i>A</i> au point <i>B</i> se note AB, avec une flèche au-dessus.</p>
+<p>Ici, v est le vent. Plus loin, la lettre v servira aussi pour d’autres vecteurs. Chaque exemple dira de quel vecteur il s’agit.</p>
+<p>La longueur d’un vecteur s’appelle sa <b>norme</b>. On la note ‖v‖, avec deux barres de chaque côté. Cela se lit « norme de v ». Pour le vent, ‖v‖ = 100 km/h.</p>
+
+<h3>Découper un vecteur en deux longueurs</h3>
+<img class="vf" src="/chapters/img/ch41/p0942_2.svg" alt="Deux axes : x (est) vers la droite et y (nord) vers le haut, se croisant en O. Une flèche orange v de longueur 100 va de O au point V, avec un angle thêta marqué par un arc gris. Le côté bleu le long de l’axe x est noté norme de v fois cosinus thêta, égal à 50. Le côté vert vertical est noté norme de v fois sinus thêta, environ 86,6. Un petit carré marque l’angle droit." style="--w:24.06">
+<p class="cap">Fig. 41.2 : le triangle formé par O, V et le point de l’axe x situé juste sous V. Il a un angle droit en ce dernier point. La flèche orange v en est le plus long côté. Le côté bleu, couché le long de l’axe x, mesure ‖v‖ cos θ = 50. Le côté vert, vertical, mesure ‖v‖ sin θ ≈ 86,6.</p>
+<p>La figure 41.2 reprend le vent seul. Elle pose un <b>repère</b> : deux axes qui se croisent en un point <i>O</i>, l’origine. Un axe est une droite avec un sens, marqué par une flèche. On y mesure les distances depuis <i>O</i>.</p>
+<p>L’axe x pointe vers l’est. L’axe y pointe vers le nord. Le point <i>O</i> est au début de la flèche.</p>
+<p>La flèche orange va de <i>O</i> au point <i>V</i>. L’arc gris marque l’angle entre l’axe x et la flèche. On le note θ, lettre grecque qui se lit « thêta ». Ici θ = 60°.</p>
+<p>Depuis <i>V</i>, descendez tout droit jusqu’à l’axe x. Vous arrivez au point de l’axe x situé juste sous <i>V</i>. Vous obtenez un triangle avec un angle droit, marqué sur la figure par un petit coin. Le côté bleu, horizontal, dit de combien le vent pousse vers l’est. Le côté vert, vertical, dit de combien il pousse vers le nord.</p>
+<p>Ces deux longueurs s’appellent les <b>composantes</b> de v. On les note a (vers l’est) et b (vers le nord).</p>
+<p>Attention : la lettre a nomme déjà la flèche de l’avion sur la figure 41.1. Désormais, a seul désigne un nombre : la composante vers l’est. La flèche de l’avion sera toujours appelée « la flèche a de l’avion ».</p>
+<div class="rappel"><p class="rt">Rappel : cosinus et sinus</p>
+<p>Prenez un triangle qui a un angle droit. Son côté le plus long, en face de l’angle droit, s’appelle l’<b>hypoténuse</b>. Choisissez un autre angle, θ. Le côté qui touche θ est le côté adjacent. Le côté en face de θ est le côté opposé.</p>
+<p>Le <b>rapport</b> de deux nombres est le résultat de leur division. La barre / se lit « divisé par ». Exemple : le rapport 6 / 3 vaut 2 (chapitre 9).</p>
+<p>Le cosinus de θ, noté cos θ, est le rapport côté adjacent / hypoténuse. Le sinus de θ, noté sin θ, est le rapport côté opposé / hypoténuse. Ces rapports ne dépendent que de l’angle θ, pas de la taille du triangle.</p>
+<p>Leurs valeurs se lisent sur une calculatrice. Réglez-la en degrés : l’écran affiche DEG ou D. Tapez cos 60 : elle affiche 0,5. Tapez sin 60 : elle affiche 0,8660254…, arrondi à 0,8660.</p>
+<p>Exemple : un triangle de ce genre dont l’hypoténuse mesure 10 a un côté adjacent de 10 × 0,5 = 5. Voir le chapitre 26.</p></div>
+<p>Dans le triangle de la figure, l’hypoténuse est la flèche orange. Sa longueur est ‖v‖ = 100. Le côté bleu est le côté adjacent à θ. Le côté vert est le côté opposé.</p>
+<p>Calcul pour le vent. Le côté bleu est 100 × cos 60°. Comme cos 60° = 0,5, on obtient 100 × 0,5 = 50. Le côté vert est 100 × sin 60°. Comme sin 60° ≈ 0,8660, on obtient 100 × 0,8660 = 86,60, arrondi à deux décimales.</p>
+<p>Le vent pousse l’avion de 50 km/h vers l’est et de 86,60 km/h vers le nord.</p>
+<p>Refaisons ce calcul avec des lettres. Les définitions du cosinus et du sinus donnent :</p>
+<p class="eq">a / ‖v‖ = cos θ,    b / ‖v‖ = sin θ.</p>
+<p>Avec les nombres, la première égalité dit : 50 / 100 = 0,5.</p>
+<p>Multipliez les deux côtés de chaque égalité par ‖v‖. Cette opération est permise : on fait la même chose des deux côtés d’une égalité. Avec les nombres, 50 / 100 = 0,5 devient 50 = 100 × 0,5. Avec les lettres, vous obtenez :</p>
+<p class="eq">a = ‖v‖ cos θ,    b = ‖v‖ sin θ.</p>
+<p>Avec ‖v‖ = 100 et θ = 60°, on retrouve a = 50 et b = 86,60.</p>
+<div class="rappel"><p class="rt">Rappel : les nombres négatifs</p>
+<p>Sur un axe, les nombres plus petits que 0 se placent à gauche de 0. On les écrit avec un signe moins : −3 se lit « moins trois ». Exemple : partez de 5 et reculez de 8. Vous arrivez à −3. On écrit 5 − 8 = −3.</p>
+<img class="vf" src="/chapters/img/ch41/r41_F.svg" alt="Un axe gradué de −6 à 6. Un point gris marque le départ à 5. Une flèche orange courbe « reculer de 8 » va de 5 à −3. Un point vert marque l’arrivée à −3. À gauche, « nombres négatifs » ; à droite, « nombres positifs »." style="--w:22">
+<p class="cap">Fig. 41.F : un axe gradué. On part de 5 (point gris) et on recule de 8 (flèche orange). On arrive à −3 (point vert), à gauche de 0.</p>
+<p>Sur l’axe x, un nombre négatif mène vers l’ouest. Sur l’axe y, il mène vers le sud.</p>
+<p>Règle des signes, pour multiplier ou diviser. Deux nombres de même signe donnent un résultat positif. Deux nombres de signes contraires donnent un résultat négatif.</p>
+<p>Exemples : 3 × (−4) = −12. (−1) × 50 = −50. (−12) × (−12) = 144. (−6) / (−3) = 2.</p>
+<p>Soustraire un nombre négatif revient à ajouter ce nombre sans son signe moins. Exemple : 5 − (−1) = 5 + 1 = 6. Voir le chapitre 13.</p></div>
+<div class="rappel"><p class="rt">Rappel : cosinus et sinus d’un angle plus grand que 90°</p>
+<p>Pour un angle de plus de 90°, le triangle ne sert plus. On utilise un cercle de rayon 1, centré en <i>O</i> (chapitre 28).</p>
+<p>Les <b>coordonnées</b> d’un point sont ses deux nombres dans le repère. Le premier est sa position le long de l’axe x. Le second est sa position le long de l’axe y. On les écrit entre parenthèses, par exemple (5, 7).</p>
+<p>Partez du point du cercle situé à l’est. Tournez de θ vers le nord, sur le cercle. Le cosinus de θ est la coordonnée x du point atteint. Le sinus de θ est sa coordonnée y.</p>
+<img class="vf" src="/chapters/img/ch41/r41_G.svg" alt="Un demi-cercle de rayon 1 autour de O, avec les axes x (est) et y (nord). Un rayon bleu à 60° mène à un point dont la coordonnée x, marquée en vert, est « cos 60° = 0,5 ». Un rayon violet à 120° mène à un point dont la coordonnée x, marquée en vert, est « cos 120° = −0,5 »." style="--w:22">
+<p class="cap">Fig. 41.G : le cercle de rayon 1. Le point à 60° (bleu) est à droite de l’axe y : cos 60° = 0,5. Le point à 120° (violet) est à gauche : cos 120° = −0,5. Les points verts sur l’axe x marquent ces deux valeurs.</p>
+<p>Pour un angle de moins de 90°, cette règle donne les mêmes valeurs que le triangle. La calculatrice donne aussi les valeurs pour les grands angles, avec leur signe.</p></div>
+<p>Une flèche dirigée vers le nord-ouest a donc une composante a négative, car elle recule vers l’ouest.</p>
+<p>On écrit le vecteur par ses composantes entre chevrons : ⟨a, b⟩.</p>
+<p class="eq">v = ⟨a, b⟩</p>
+<p>Pour le vent, v = ⟨50 ; 86,60⟩. Quand une composante contient une virgule, comme 86,60, on sépare les deux composantes par un point-virgule.</p>
+<p>Les chevrons distinguent deux choses. Le vecteur ⟨50 ; 86,60⟩ est un déplacement. Le point (50 ; 86,60), avec des parenthèses, est un endroit.</p>
+<p>Un vecteur peut aussi aller d’un point à un autre. Exemple : du point <i>A</i>(5, 7) au point <i>B</i>(18, 13). Vers l’est, l’écart est 18 − 5 = 13. Vers le nord, l’écart est 13 − 7 = 6. Le vecteur AB vaut donc ⟨13, 6⟩.</p>
+<img class="vf" src="/chapters/img/ch41/r41_H.svg" alt="Un repère avec les axes x et y. Le point A(5, 7) et le point B(18, 13). Une flèche bleue va de A à B. Une flèche orange en pointillés va vers la droite, marquée « 18 − 5 = 13 », puis une autre monte, marquée « 13 − 7 = 6 »." style="--w:22">
+<p class="cap">Fig. 41.H : la flèche bleue va de <i>A</i>(5, 7) à <i>B</i>(18, 13). Les deux flèches orange en pointillés sont ses composantes : 13 vers l’est, puis 6 vers le nord.</p>
+<p>Avec des lettres, on nomme x<sub>1</sub> et y<sub>1</sub> les coordonnées de <i>A</i>. Le petit 1 écrit en bas veut dire « du premier point ». x<sub>1</sub> se lit « x un ». Ici, x<sub>1</sub> = 5 et y<sub>1</sub> = 7.</p>
+<p>De même, x<sub>2</sub> et y<sub>2</sub> sont les coordonnées de <i>B</i> : x<sub>2</sub> = 18 et y<sub>2</sub> = 13. La règle s’écrit :</p>
+<p class="eq">AB = ⟨x<sub>2</sub> − x<sub>1</sub>, y<sub>2</sub> − y<sub>1</sub>⟩</p>
+<p>Avec nos nombres : ⟨18 − 5, 13 − 7⟩ = ⟨13, 6⟩.</p>
+<p>Dans l’autre sens, les composantes donnent la norme. Il faut d’abord un rappel.</p>
+<div class="rappel"><p class="rt">Rappel : le théorème de Pythagore</p>
+<p>Le <b>carré</b> d’un nombre est ce nombre multiplié par lui-même. On écrit 7² = 7 × 7 = 49.</p>
+<p>La <b>racine carrée</b> fait le chemin inverse. On écrit √49 = 7, car 7 × 7 = 49. Le carré d’une racine carrée redonne donc le nombre de départ : (√49)² = 7 × 7 = 49.</p>
+<p>Le théorème de Pythagore s’applique à un triangle avec un angle droit. Le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés. Exemple : deux côtés de 3 et 4 donnent 9 + 16 = 25. L’hypoténuse vaut √25 = 5. Voir le chapitre 22.</p></div>
+<p>Le triangle de la figure 41.2 a un angle droit. Pythagore donne donc :</p>
+<p class="eq">‖v‖ = √(a² + b²)</p>
+<p>Vérifiez avec le vent. Le carré de 50 est 2 500. Le carré de 86,60 est environ 7 500. La somme est 2 500 + 7 500 = 10 000. La racine carrée de 10 000 est 100. On retrouve bien ‖v‖ = 100.</p>
+<div class="rappel"><p class="rt">Rappel : tangente et arctangente</p>
+<p>La tangente de θ, notée tan θ, est le rapport côté opposé / côté adjacent. Exemple : si les deux côtés sont égaux, le rapport vaut 1. C’est le cas pour θ = 45°, donc tan 45° = 1.</p>
+<p>L’arctangente, notée arctan, fait le chemin inverse. Elle part du rapport et rend l’angle. Exemple : arctan(1) = 45°. Sur la calculatrice, réglée en degrés, c’est la touche tan<sup>−1</sup>. Voir les chapitres 25 et 33.</p></div>
+<p>La direction se retrouve donc par tan θ = b / a. Mais deux flèches de sens contraires donnent le même rapport. Par exemple, ⟨1, 1⟩ et ⟨−1, −1⟩ donnent 1 / 1 = 1 et (−1) / (−1) = 1. La calculatrice rend toujours l’angle de la flèche qui va vers l’est, entre −90° et 90°.</p>
+<p>Il faut donc aussi savoir de quel côté va la flèche. Les deux axes découpent le repère en quatre quarts. On les appelle les <b>quadrants</b>.</p>
+<img class="vf" src="/chapters/img/ch41/r41_C.svg" alt="Deux axes se croisent en O : x (est) vers la droite, y (nord) vers le haut. En haut à droite : 1er quadrant, est et nord, a positif, b positif. En haut à gauche : 2e quadrant, ouest et nord, a négatif, b positif. En bas à gauche : 3e quadrant, ouest et sud, a négatif, b négatif. En bas à droite : 4e quadrant, est et sud, a positif, b négatif." style="--w:22">
+<p class="cap">Fig. 41.C : les quatre quadrants. Le signe de a (composante vers l’est) et celui de b (composante vers le nord) disent où va la flèche.</p>
+<p>Le signe des deux composantes donne le quadrant. Ce point est revu au chapitre 39. L’effet 2 de la partie 4 montre comment corriger l’angle.</p>
+<p>Voici les symboles de ce passage.</p>
+<p class="li">v : le vecteur.</p>
+<p class="li">‖v‖ : sa norme, c’est-à-dire sa longueur.</p>
+<p class="li">θ : l’angle avec l’axe x.</p>
+<p class="li">a : la composante en x.</p>
+<p class="li">b : la composante en y.</p>
+<p class="li">⟨a, b⟩ : l’écriture par composantes.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Un vecteur a pour composantes ⟨6, 8⟩. Calculez sa norme.</p>
+<details><summary>Voir la réponse</summary>
+<p>Le carré de 6 est 6 × 6 = 36.</p>
+<p>Le carré de 8 est 8 × 8 = 64.</p>
+<p>La somme est 36 + 64 = 100.</p>
+<p>La racine carrée de 100 est 10. La norme vaut donc 10.</p></details></div>
+
+<h3>Les vecteurs unitaires i, j, k</h3>
+<p>Un <b>vecteur unitaire</b> est un vecteur de norme 1. Deux d’entre eux ont un nom. Le vecteur i = ⟨1, 0⟩ a une longueur 1 le long de l’axe x. Le vecteur j = ⟨0, 1⟩ a une longueur 1 le long de l’axe y.</p>
+<p>Pourquoi les nommer ? Parce que tout vecteur du plan s’écrit avec eux. Le vecteur ⟨a, b⟩ se lit ainsi. On fait a pas de longueur 1 vers l’est. Puis on fait b pas de longueur 1 vers le nord.</p>
+<p>On écrit a i pour « la flèche i allongée a fois ». Par exemple, 50 i = ⟨50, 0⟩ : 50 pas vers l’est. Cette multiplication d’un vecteur par un nombre est détaillée plus bas. Mettre deux flèches bout à bout s’écrit avec +, comme sur la figure 41.1. On écrit :</p>
+<p class="eq">v = a i + b j</p>
+<p>Le vent s’écrit donc v = 50 i + 86,60 j. En regroupant les deux formules des composantes, on obtient :</p>
+<p class="eq">v = ‖v‖ cos θ i + ‖v‖ sin θ j</p>
+<p>C’est la formule qui sert en physique pour découper une force.</p>
+<p>Pour fabriquer un vecteur unitaire qui a la direction de v, on divise v par sa norme : v / ‖v‖. Chaque composante est divisée par ‖v‖.</p>
+<p>Exemple, avec un autre vecteur : v = ⟨5, −12⟩. Le carré de 5 est 25. Le carré de −12 est (−12) × (−12) = 144, par la règle des signes. La somme est 169. La norme est √169 = 13.</p>
+<p>Le vecteur unitaire de même direction est ⟨5 / 13, −12 / 13⟩. Vérifions sa norme. Pour élever une fraction au carré, on élève au carré le haut et le bas.</p>
+<p>Ainsi, (5 / 13)² = (5 × 5) / (13 × 13) = 25 / 169. De même, (−12 / 13)² = 144 / 169. La somme est 169 / 169 = 1. La racine carrée de 1 est 1.</p>
+<p>Dans l’espace, il faut une troisième direction : vers le haut. C’est l’axe z, avec le vecteur unitaire k = ⟨0, 0, 1⟩. Un vecteur de l’espace s’écrit avec trois composantes :</p>
+<p class="eq">v = a i + b j + c k = ⟨a, b, c⟩</p>
+<p>Sa norme s’écrit avec trois carrés :</p>
+<p class="eq">‖v‖ = √(a² + b² + c²)</p>
+<p>Pourquoi trois carrés ? Regardez la boîte de la figure 41.D. Ses côtés mesurent a, b et c. La flèche bleue v va du coin <i>O</i> au coin opposé de la boîte.</p>
+<img class="vf" src="/chapters/img/ch41/r41_D.svg" alt="Une boîte dessinée en perspective, de côtés a, b et c. Les arêtes cachées sont en pointillés. Le fond est bleu clair. Une diagonale orange, notée racine de a carré plus b carré, traverse le fond depuis le coin O. Au bout de cette diagonale, l’arête verticale grise c monte. Une flèche bleue v va de O jusqu’au haut de cette arête. Deux petits carrés gris marquent les angles droits." style="--w:22">
+<p class="cap">Fig. 41.D : une boîte de côtés a, b et c. Sur le fond bleu clair, la diagonale orange va de <i>O</i> au coin opposé du fond. Elle fait un angle droit avec l’arête grise verticale c. La flèche bleue v est le plus long côté de ce second triangle.</p>
+<p>Sur le fond de la boîte, la diagonale orange mesure √(a² + b²). C’est Pythagore une première fois, dans le triangle de côtés a et b. Cette diagonale du fond et l’arête verticale c forment un second triangle avec un angle droit. Son côté le plus long est la flèche.</p>
+<p>Pythagore une seconde fois donne : carré de la flèche = (√(a² + b²))² + c². Le carré d’une racine carrée redonne le nombre de départ. Donc (√(a² + b²))² = a² + b². Le carré de la flèche vaut a² + b² + c². C’est le calcul du chapitre 27 sur la trigonométrie dans l’espace.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Calculez la norme du vecteur ⟨2, 3, 6⟩.</p>
+<details><summary>Voir la réponse</summary>
+<p>Les carrés sont 2 × 2 = 4, 3 × 3 = 9 et 6 × 6 = 36.</p>
+<p>La somme est 4 + 9 + 36 = 49.</p>
+<p>La racine carrée de 49 est 7. La norme vaut 7.</p></details></div>
+
+<h3>L’addition et la multiplication par un scalaire</h3>
+<p>Reprenons l’avion et le vent. La flèche a de l’avion est ⟨180, 0⟩. Le vent est v = ⟨50 ; 86,60⟩. Le déplacement total vers l’est est 180 + 50 = 230. Le déplacement total vers le nord est 0 + 86,60 = 86,60.</p>
+<p>Le total est donc ⟨230 ; 86,60⟩. On a additionné les composantes une à une.</p>
+<p>Voici la règle générale, pour deux vecteurs quelconques u et v. On note u<sub>1</sub> et u<sub>2</sub> les composantes de u. u<sub>1</sub> se lit « u un » : c’est la composante vers l’est. u<sub>2</sub> est la composante vers le nord. Pour le vent, v<sub>1</sub> = 50 et v<sub>2</sub> = 86,60.</p>
+<p>Si u = ⟨u<sub>1</sub>, u<sub>2</sub>⟩ et v = ⟨v<sub>1</sub>, v<sub>2</sub>⟩, alors :</p>
+<p class="eq">u + v = ⟨u<sub>1</sub> + v<sub>1</sub>, u<sub>2</sub> + v<sub>2</sub>⟩</p>
+<p>Pourquoi cette formule est-elle la règle du parallélogramme ? Reprenez la figure 41.1 et suivez le chemin a puis v. Le déplacement total vers l’est est celui de a plus celui de v. Le déplacement total vers le nord est celui de a plus celui de v.</p>
+<p>Les deux directions, est et nord, se traitent séparément. L’addition des flèches devient deux additions de nombres.</p>
+<p>Multiplier un vecteur par un scalaire m (un nombre) multiplie chaque composante. Exemple avec le vent et m = 2. Le double de 50 est 100. Le double de 86,60 est 173,20. On obtient 2v = ⟨100 ; 173,20⟩, de norme 2 × 100 = 200. La flèche a doublé de longueur. Elle garde sa direction.</p>
+<p>La <b>valeur absolue</b> d’un nombre, notée |m|, est ce nombre sans son signe moins. Ainsi |−2| = 2 et |2| = 2. C’est la distance du nombre à 0 sur un axe (chapitre 13). Les doubles barres de la norme ‖v‖ rappellent ces barres simples : elles mesurent aussi une distance.</p>
+<p>Voici la règle générale :</p>
+<p class="eq">m v = ⟨m v<sub>1</sub>, m v<sub>2</sub>⟩</p>
+<p class="eq">‖m v‖ = |m| ‖v‖</p>
+<p>Avec m = −1, la flèche garde sa longueur mais pointe de l’autre côté. Pour le vent, (−1) × 50 = −50 et (−1) × 86,60 = −86,60. Donc −v = ⟨−50 ; −86,60⟩. C’est le <b>vecteur opposé</b>.</p>
+<p>La valeur absolue |m| vient de là. Avec m = −2, la norme est |−2| × 100 = 2 × 100 = 200. Une longueur n’est jamais négative.</p>
+<p>La soustraction se définit alors par u − v = u + (−v). Le vecteur nul, noté 0 = ⟨0, 0⟩, a une norme égale à 0.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Soit u = ⟨2, 5⟩ et v = ⟨7, −1⟩. Calculez u + v, puis u − v, puis 3u.</p>
+<details><summary>Voir la réponse</summary>
+<p>Pour u + v : 2 + 7 = 9 et 5 + (−1) = 4. On obtient ⟨9, 4⟩.</p>
+<p>Pour u − v : 2 − 7 = −5 et 5 − (−1) = 5 + 1 = 6. On obtient ⟨−5, 6⟩.</p>
+<p>Pour 3u : 3 × 2 = 6 et 3 × 5 = 15. On obtient ⟨6, 15⟩.</p></details></div>
+
+<h3>Multiplier deux vecteurs</h3>
+<p>Voici une nouvelle opération. Elle prend deux vecteurs et rend un nombre.</p>
+<p>À partir d’ici, u et v ne désignent plus l’avion ni le vent. Ce sont deux vecteurs pris en exemple : u = ⟨1, 3⟩ et v = ⟨4, 2⟩. Ce sont ceux des figures 41.3 et 41.4.</p>
+<p>Multipliez les premières composantes entre elles : 1 × 4 = 4. Multipliez les secondes entre elles : 3 × 2 = 6. Additionnez : 4 + 6 = 10. Ce nombre 10 est le <b>produit scalaire</b> de u et v.</p>
+<p>Voici la définition générale. Pour u = ⟨u<sub>1</sub>, u<sub>2</sub>⟩ et v = ⟨v<sub>1</sub>, v<sub>2</sub>⟩ :</p>
+<p class="eq">u ⋅ v = u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub></p>
+<p>u ⋅ v se lit « u scalaire v ». Le mot rappelle que le résultat est un scalaire, c’est-à-dire un nombre, pas un vecteur. Dans l’espace, on ajoute u<sub>3</sub> v<sub>3</sub>. D’autres livres notent ce produit u ∘ v.</p>
+
+<h3>Ce que mesure le produit scalaire : l’angle</h3>
+<p>Vous pouvez vous demander : « Pourquoi inventer ce calcul ? Il sort de nulle part. » La réponse est un théorème. Il dit que ce calcul, qui ne regarde que les composantes, mesure l’angle entre les deux flèches. Essayons-le d’abord sur l’exemple.</p>
+<p>Pour u = ⟨1, 3⟩ : ‖u‖ = √(1² + 3²) = √(1 + 9) = √10. Pour v = ⟨4, 2⟩ : ‖v‖ = √(4² + 2²) = √(16 + 4) = √20.</p>
+<div class="rappel"><p class="rt">Rappel : multiplier deux racines carrées</p>
+<p>Le produit de deux racines carrées est la racine carrée du produit. Ainsi √10 × √20 = √(10 × 20) = √200.</p>
+<p>Vérification à la calculatrice : √10 ≈ 3,162 et √20 ≈ 4,472. Puis 3,162 × 4,472 ≈ 14,14. Et √200 ≈ 14,14 aussi. Voir le chapitre 22.</p></div>
+<p>Le produit des normes est donc √10 × √20 = √200, soit environ 14,14.</p>
+<p>Divisons le produit scalaire par ce nombre : 10 / 14,14 ≈ 0,7071. Quel angle a ce cosinus ? La calculatrice répond, avec la touche cos<sup>−1</sup> réglée en degrés : 45°.</p>
+<p>Cette opération inverse du cosinus s’appelle l’<b>arccosinus</b>, notée arccos (chapitre 33). Elle part d’un cosinus et rend un angle entre 0° et 180°. Ici, arccos(0,7071) ≈ 45°.</p>
+<p>L’angle entre u et v est donc 45°. Voici le théorème :</p>
+<p class="eq">u ⋅ v = ‖u‖ ‖v‖ cos θ</p>
+<p>Ici, la lettre θ désigne l’angle entre u et v. Il est compris entre 0° et 180°.</p>
+<img class="vf" src="/chapters/img/ch41/p0949_12.svg" alt="Un triangle O, U, V. Depuis O, une flèche orange vers U, de longueur notée norme de u, et une flèche bleue vers V, de longueur notée norme de v. Un arc gris marque l’angle thêta entre elles en O. Une flèche rouge, notée u moins v, va de V à U." style="--w:24.06">
+<p class="cap">Fig. 41.3 : le triangle OUV. Ses deux côtés issus de O sont les flèches orange u et bleue v, avec l’angle θ entre elles. Son troisième côté, la flèche rouge, va de V à U : c’est u − v. La figure ne porte aucun nombre : elle vaut pour deux vecteurs quelconques.</p>
+<p>La figure 41.3 montre ce triangle. La flèche rouge va de <i>V</i> à <i>U</i>. Pour aller de <i>V</i> à <i>U</i>, on peut revenir de <i>V</i> à <i>O</i>, ce qui est −v. Puis on va de <i>O</i> à <i>U</i>, ce qui est u. La flèche rouge est donc u − v.</p>
+<div class="rappel"><p class="rt">Rappel : la loi des cosinus</p>
+<p>Pythagore ne vaut que pour un triangle avec un angle droit. La loi des cosinus vaut pour tous les triangles. Prenez deux côtés et l’angle θ entre eux. Le troisième côté est en face de θ.</p>
+<p>La loi dit ceci :</p>
+<p class="eq">(3e côté)² = (1er côté)² + (2e côté)² − 2 × 1er côté × 2e côté × cos θ</p>
+<p>Exemple : deux côtés de 3 et 4, avec un angle de 60° entre eux. Le carré du premier est 3 × 3 = 9. Le carré du second est 4 × 4 = 16. Le terme à retirer est 2 × 3 × 4 × cos 60°. Il vaut 2 × 3 × 4 × 0,5 = 12.</p>
+<p>Le carré du troisième côté vaut donc 9 + 16 − 12 = 13. Le troisième côté mesure √13 ≈ 3,606.</p>
+<p>Si l’angle vaut 90°, alors cos 90° = 0 (calculatrice). Le terme à retirer vaut 0, et on retrouve Pythagore. La loi est démontrée au chapitre 36.</p></div>
+<p>Dans le triangle <i>OUV</i>, les deux côtés autour de θ sont u et v. Le troisième côté est la flèche rouge. La loi s’écrit donc :</p>
+<p class="eq">‖u − v‖² = ‖u‖² + ‖v‖² − 2 ‖u‖ ‖v‖ cos θ</p>
+<p>Vérifions avec les nombres de u et v. Avec les composantes : u − v = ⟨1 − 4, 3 − 2⟩ = ⟨−3, 1⟩. Le carré de sa longueur est (−3)² + 1² = 9 + 1 = 10.</p>
+<p>Avec la loi : ‖u‖² = (√10)² = 10 et ‖v‖² = (√20)² = 20. Le terme à retirer est 2 × √10 × √20 × cos 45°. Or √10 × √20 × cos 45° ≈ 14,14 × 0,7071 ≈ 10. Le terme vaut donc 2 × 10 = 20.</p>
+<p>Le résultat est 10 + 20 − 20 = 10. Les deux calculs concordent. La preuve du théorème, pour tous les vecteurs, est dans le bloc « Pour aller plus loin ».</p>
+<p>Voici les symboles de ce passage.</p>
+<p class="li">u ⋅ v : le produit scalaire.</p>
+<p class="li">u<sub>1</sub> v<sub>1</sub> : le produit des composantes en x.</p>
+<p class="li">u<sub>2</sub> v<sub>2</sub> : le produit des composantes en y.</p>
+<p class="li">θ : l’angle entre les flèches.</p>
+<p class="li">cos θ : son cosinus.</p>
+<p>Deux conséquences se lisent tout de suite.</p>
+<p><b>Angle entre deux vecteurs.</b> Partez de u ⋅ v = ‖u‖ ‖v‖ cos θ. Divisez les deux côtés par ‖u‖ ‖v‖. C’est permis si les deux vecteurs ne sont pas nuls. Vous obtenez :</p>
+<p class="eq">cos θ = u ⋅ v / (‖u‖ ‖v‖)</p>
+<p>C’est le calcul fait plus haut : 10 = 14,14 × cos θ devient cos θ = 10 / 14,14. Puis l’arccosinus donne θ.</p>
+<p>Deux vecteurs non nuls sont <b>orthogonaux</b> quand l’angle entre eux vaut 90° : ils sont perpendiculaires. Or cos 90° = 0. Ils sont donc orthogonaux exactement quand u ⋅ v = 0. Exemple : i ⋅ j = 1 × 0 + 0 × 1 = 0.</p>
+<p>Prenez enfin v = u. L’angle vaut 0° et cos 0° = 1. Donc u ⋅ u = ‖u‖². Vérifiez avec u = ⟨1, 3⟩ : u ⋅ u = 1 + 9 = 10, et ‖u‖² = 10. Le produit scalaire d’un vecteur avec lui-même redonne Pythagore.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Calculez le produit scalaire de ⟨2, 3⟩ et ⟨6, −4⟩. Que dit le résultat sur l’angle ?</p>
+<details><summary>Voir la réponse</summary>
+<p>2 × 6 = 12.</p>
+<p>3 × (−4) = −12, par la règle des signes.</p>
+<p>12 + (−12) = 0.</p>
+<p>Le produit scalaire est nul. Les deux vecteurs sont donc orthogonaux : l’angle vaut 90°.</p></details></div>
+
+<h3>La part d’un vecteur dans la direction d’un autre</h3>
+<img class="vf" src="/chapters/img/ch41/p0952_17.svg" alt="Une flèche orange u va de O au point U. Une flèche bleue v part de O vers la droite en montant. Un segment gris descend de U vers la droite de v et la rencontre au point H avec un angle droit. Une flèche verte va de O à H, notée norme de u fois cosinus thêta. Un arc gris marque l’angle thêta en O." style="--w:24.06">
+<p class="cap">Fig. 41.4 : depuis U, un segment gris descend sur la droite de la flèche bleue v. Il la touche au point H avec un angle droit. Le segment vert va de O à H. Sa longueur est ‖u‖ cos θ : c’est le côté adjacent du triangle OHU.</p>
+<p>La figure 41.4 reprend u = ⟨1, 3⟩ et v = ⟨4, 2⟩. Depuis la pointe <i>U</i>, on trace un segment qui tombe sur la droite qui porte v. Il la touche avec un angle droit, au point <i>H</i>.</p>
+<p>La flèche verte, de <i>O</i> à <i>H</i>, s’appelle la <b>projection</b> de u sur v. Elle répond à la question de la valise : quelle part de u va dans la direction de v ?</p>
+<p>Le triangle <i>OHU</i> a un angle droit en <i>H</i>. Son hypoténuse est <i>OU</i>, de longueur ‖u‖. Le côté <i>OH</i> est adjacent à θ. Par la définition du cosinus, la longueur de la flèche verte est :</p>
+<p class="eq">OH = ‖u‖ cos θ</p>
+<p>Avec nos nombres : OH = √10 × cos 45° ≈ 3,162 × 0,7071 ≈ 2,236.</p>
+<p>Remplaçons cos θ par u ⋅ v / (‖u‖ ‖v‖), trouvé plus haut :</p>
+<p class="eq">OH = ‖u‖ × u ⋅ v / (‖u‖ ‖v‖)</p>
+<p>Le nombre ‖u‖ multiplie en haut et divise en bas. Multiplier puis diviser par le même nombre ne change rien. Exemple : 3 × 10 / (3 × 5) = 30 / 15 = 2, et 10 / 5 = 2 aussi. On peut donc retirer ‖u‖ en haut et en bas :</p>
+<p class="eq">OH = u ⋅ v / ‖v‖</p>
+<p>Avec nos nombres : OH = 10 / √20 ≈ 10 / 4,472 ≈ 2,236. On retrouve le même nombre.</p>
+<p>Pour obtenir la flèche verte elle-même, on part du vecteur unitaire de v, v / ‖v‖. Il a la direction de v et la longueur 1. On le multiplie par la longueur voulue, OH = 10 / √20 :</p>
+<p class="eq">(10 / √20) × ⟨4, 2⟩ / √20 = (10 / 20) × ⟨4, 2⟩</p>
+<p>En effet, √20 × √20 = 20. Puis (10 / 20) × ⟨4, 2⟩ = 0,5 × ⟨4, 2⟩ = ⟨2, 1⟩.</p>
+<p>Avec des lettres, le même calcul donne (u ⋅ v / ‖v‖) × v / ‖v‖. Comme ‖v‖ × ‖v‖ = ‖v‖², on obtient :</p>
+<p class="eq">proj<sub>v</sub> u = (u ⋅ v / ‖v‖²) v</p>
+<p>proj<sub>v</sub> u se lit « projection de u sur v ». Le nombre u ⋅ v / ‖v‖² est un scalaire. Il dit combien de fois v tient dans la flèche verte. Ici, il vaut 10 / 20 = 0,5.</p>
+<p>La projection découpe u en deux parties. Appelons p la flèche verte, de <i>O</i> à <i>H</i> : p = proj<sub>v</sub> u. Appelons q le segment gris, de <i>H</i> à <i>U</i> : q = u − p. Alors u = p + q.</p>
+<p>La partie p est sur la droite de v. La partie q est orthogonale à v. Le livre d’origine nomme ces parties u<sub>1</sub> et u<sub>2</sub>. Ce chapitre les appelle p et q, car u<sub>1</sub> désigne déjà une composante de u.</p>
+<p>Les composantes a et b de la figure 41.2 étaient le cas particulier où v est l’axe x.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Projetez u = ⟨3, 4⟩ sur v = ⟨5, 0⟩. Donnez la flèche verte.</p>
+<details><summary>Voir la réponse</summary>
+<p>Le produit scalaire : 3 × 5 + 4 × 0 = 15.</p>
+<p>Le carré de la norme de v : 5 × 5 + 0 × 0 = 25.</p>
+<p>Le scalaire : 15 / 25 = 0,6.</p>
+<p>La projection : 0,6 × ⟨5, 0⟩ = ⟨3, 0⟩.</p>
+<p>On retrouve la composante en x de u : la projection sur l’axe x garde le 3 et supprime le 4.</p></details></div>
+
+<div class="plus"><p class="rt">Pour aller plus loin (facultatif)</p>
+<p>Ce bloc contient les règles de calcul, la démonstration du théorème précédent, puis deux opérations de l’espace. Vous pouvez passer directement à la partie 4.</p>
+<h3>Les règles de calcul</h3>
+<p>L’addition et la multiplication par un scalaire obéissent aux règles que vous connaissez pour les nombres (chapitres 2 et 3). Ici, m et n sont deux nombres, et u, v, w trois vecteurs.</p>
+<p class="li">u + v = v + u ;</p>
+<p class="li">u + (v + w) = (u + v) + w ;</p>
+<p class="li">v + 0 = v ;</p>
+<p class="li">v + (−v) = 0 ;</p>
+<p class="li">m(n v) = (m n) v ;</p>
+<p class="li">m(u + v) = m u + m v ;</p>
+<p class="li">(m + n) v = m v + n v ;</p>
+<p class="li">1 v = v.</p>
+<p>Exemple pour la première. On a ⟨2, 5⟩ + ⟨7, −1⟩ = ⟨9, 4⟩. Et ⟨7, −1⟩ + ⟨2, 5⟩ = ⟨9, 4⟩ aussi.</p>
+<p>La raison est toujours la même. Chaque règle est vraie composante par composante, parce qu’elle est vraie pour les nombres.</p>
+<h3>Démonstration du théorème u ⋅ v = ‖u‖ ‖v‖ cos θ</h3>
+<p>On écrit de deux façons le carré de la longueur de la flèche rouge de la figure 41.3. Les vecteurs u et v sont quelconques.</p>
+<p>Première façon, avec l’angle. La loi des cosinus, rappelée plus haut, donne :</p>
+<p class="eq">‖u − v‖² = ‖u‖² + ‖v‖² − 2 ‖u‖ ‖v‖ cos θ</p>
+<p>Seconde façon, avec les composantes. La flèche rouge a pour composantes ⟨u<sub>1</sub> − v<sub>1</sub>, u<sub>2</sub> − v<sub>2</sub>⟩. Par Pythagore :</p>
+<p class="eq">‖u − v‖² = (u<sub>1</sub> − v<sub>1</sub>)² + (u<sub>2</sub> − v<sub>2</sub>)²</p>
+<div class="rappel"><p class="rt">Rappel : le carré d’une différence et d’une somme</p>
+<p>Pour deux nombres m et n : (m − n)² = m² − 2 m n + n². Exemple : (5 − 2)² = 3² = 9. Et 5² − 2 × 5 × 2 + 2² = 25 − 20 + 4 = 9.</p>
+<p>De même, (m + n)² = m² + 2 m n + n². Exemple : (5 + 2)² = 7² = 49. Et 25 + 20 + 4 = 49. Voir le chapitre 15.</p></div>
+<p>Développons chaque carré avec la première égalité. Elle est permise pour tous les nombres :</p>
+<p class="eq">= u<sub>1</sub>² − 2 u<sub>1</sub> v<sub>1</sub> + v<sub>1</sub>² + u<sub>2</sub>² − 2 u<sub>2</sub> v<sub>2</sub> + v<sub>2</sub>²</p>
+<p>Regroupons. On a u<sub>1</sub>² + u<sub>2</sub>² = ‖u‖², et v<sub>1</sub>² + v<sub>2</sub>² = ‖v‖². Il reste :</p>
+<p class="eq">‖u − v‖² = ‖u‖² + ‖v‖² − 2 (u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub>)</p>
+<p>Les deux égalités ont le même membre de gauche. Leurs membres de droite sont donc égaux. Enlevons ‖u‖² + ‖v‖² des deux côtés. Il reste :</p>
+<p class="eq">−2 ‖u‖ ‖v‖ cos θ = −2 (u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub>)</p>
+<p>Divisons les deux côtés par −2. Ces opérations sont permises : on fait la même chose des deux côtés. On obtient :</p>
+<p class="eq">u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub> = ‖u‖ ‖v‖ cos θ</p>
+<p>C’est le théorème. Dans l’espace, la preuve est la même avec un troisième carré.</p>
+<p>Lisez maintenant la structure de la formule. Les termes −2 u<sub>1</sub> v<sub>1</sub> et −2 u<sub>2</sub> v<sub>2</sub> viennent des deux carrés développés. Ensemble, ils forment −2 (u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub>).</p>
+<p>C’est le morceau qui manque pour que Pythagore s’applique au triangle <i>OUV</i>, qui n’a pas d’angle droit. La loi des cosinus dit que ce morceau vaut −2 ‖u‖ ‖v‖ cos θ. Le produit scalaire est donc la correction que l’angle θ apporte au théorème de Pythagore.</p>
+<h3>Une opération de l’espace : l’angle mesuré par le sinus</h3>
+<img class="vf" src="/chapters/img/ch41/p0954_20.svg" alt="Trois axes x, y, z. Une flèche bleue u le long de l’axe x, jusqu’à 2. Une flèche orange v dans le plan du sol. Un parallélogramme bleu clair construit sur u et v, marqué « aire 4 ». Une flèche verte u × v se dresse verticalement depuis l’origine, jusqu’à 4 sur l’axe z." style="--w:24.06">
+<p class="cap">Fig. 41.5 : la flèche verte u × v se dresse perpendiculairement au parallélogramme bleu clair construit sur u et v. Sa longueur, 4, est l’aire de ce parallélogramme. Sa base mesure 2 le long de x. Sa hauteur mesure 2 le long de y.</p>
+<p>Le produit scalaire mesure l’angle par son cosinus. Une seconde opération le mesure par son sinus. Elle n’existe pas dans le plan, qui n’a que deux axes. Il lui faut l’espace, avec ses trois axes. En dehors des dimensions 3 et 7, il n’existe aucun produit de ce genre.</p>
+<p>La figure 41.5 montre u = ⟨2, 0, 0⟩, le long de l’axe x. Elle montre aussi v = ⟨1, 2, 0⟩, posé sur le sol. Ils forment un parallélogramme, colorié en bleu clair.</p>
+<p>Le <b>produit vectoriel</b> u × v est le vecteur défini par trois exigences :</p>
+<p class="li">sa direction est perpendiculaire à u et à v ;</p>
+<p class="li">sa norme est l’aire du parallélogramme : ‖u × v‖ = ‖u‖ ‖v‖ sin θ ;</p>
+<p class="li">son sens suit la règle de la main droite. L’index de la main droite suit u. Le majeur suit v. Le pouce dressé donne le sens de u × v.</p>
+<p>Les deux premières exigences se voient sur la figure 41.5. La troisième ne s’y voit pas : faites le geste avec votre main devant la figure.</p>
+<p>En français, on note souvent ce produit u ∧ v. Le chapitre 78 écrit u × v.</p>
+<p>Pourquoi l’aire vaut-elle ‖u‖ ‖v‖ sin θ ? L’aire d’un parallélogramme est base × hauteur (chapitre 11). La base est ‖u‖. La hauteur est la distance de la pointe de v à la droite de u.</p>
+<p>Cette hauteur est le côté opposé à θ dans un triangle qui a un angle droit et dont l’hypoténuse est v. Elle vaut donc ‖v‖ sin θ (chapitre 26). C’est la formule d’aire du triangle du chapitre 37, doublée.</p>
+<p>Vérifions avec les nombres de la figure. ‖u‖ = 2. ‖v‖ = √(1² + 2²) = √(1 + 4) = √5. La pointe de v est à 2 de l’axe x : sa composante en y vaut 2. Ce côté est opposé à θ, donc sin θ = 2 / √5.</p>
+<p>L’aire vaut ‖u‖ × ‖v‖ × sin θ = 2 × √5 × 2 / √5. Le nombre √5 multiplie puis divise : il se retire. Il reste 2 × 2 = 4.</p>
+<p>Voici sa formule en composantes. Le premier vecteur est u = ⟨u<sub>1</sub>, u<sub>2</sub>, u<sub>3</sub>⟩. Le second est v = ⟨v<sub>1</sub>, v<sub>2</sub>, v<sub>3</sub>⟩.</p>
+<p class="eq">u × v = ⟨u<sub>2</sub> v<sub>3</sub> − u<sub>3</sub> v<sub>2</sub>, u<sub>3</sub> v<sub>1</sub> − u<sub>1</sub> v<sub>3</sub>, u<sub>1</sub> v<sub>2</sub> − u<sub>2</sub> v<sub>1</sub>⟩</p>
+<p>Voici comment lire cette formule. La première composante n’utilise pas l’indice 1 : seulement 2 et 3. La deuxième n’utilise pas l’indice 2 : seulement 3 et 1. La troisième n’utilise pas l’indice 3 : seulement 1 et 2. Chaque composante est une différence de deux produits.</p>
+<p>Calculons avec la figure. Pour u = ⟨2, 0, 0⟩ : u<sub>1</sub> = 2, u<sub>2</sub> = 0, u<sub>3</sub> = 0. Pour v = ⟨1, 2, 0⟩ : v<sub>1</sub> = 1, v<sub>2</sub> = 2, v<sub>3</sub> = 0.</p>
+<p class="li">Première composante : u<sub>2</sub> v<sub>3</sub> − u<sub>3</sub> v<sub>2</sub> = 0 × 0 − 0 × 2 = 0.</p>
+<p class="li">Deuxième composante : u<sub>3</sub> v<sub>1</sub> − u<sub>1</sub> v<sub>3</sub> = 0 × 1 − 2 × 0 = 0.</p>
+<p class="li">Troisième composante : u<sub>1</sub> v<sub>2</sub> − u<sub>2</sub> v<sub>1</sub> = 2 × 2 − 0 × 1 = 4.</p>
+<p>Donc u × v = ⟨0, 0, 4⟩. C’est une flèche verticale de longueur 4. L’aire du parallélogramme vaut base 2 fois hauteur 2, soit 4. Les deux nombres concordent.</p>
+<p>Pourquoi cette formule donne-t-elle un vecteur perpendiculaire à u ? Calculez le produit scalaire de u et u × v :</p>
+<p class="eq">u ⋅ (u × v) = u<sub>1</sub> u<sub>2</sub> v<sub>3</sub> − u<sub>1</sub> u<sub>3</sub> v<sub>2</sub> + u<sub>2</sub> u<sub>3</sub> v<sub>1</sub> − u<sub>2</sub> u<sub>1</sub> v<sub>3</sub> + u<sub>3</sub> u<sub>1</sub> v<sub>2</sub> − u<sub>3</sub> u<sub>2</sub> v<sub>1</sub></p>
+<p>Comparez le 1er terme, u<sub>1</sub> u<sub>2</sub> v<sub>3</sub>, et le 4e, −u<sub>2</sub> u<sub>1</sub> v<sub>3</sub>. Ils contiennent les mêmes trois nombres. L’ordre d’une multiplication ne change pas son résultat (chapitre 3). Ils ont des signes contraires : leur somme vaut 0.</p>
+<p>De même, le 2e terme s’annule avec le 5e, et le 3e avec le 6e. Le résultat est 0. Donc u × v est orthogonal à u. Le même calcul vaut pour v.</p>
+<p>Pourquoi sa norme est-elle l’aire ? Faites le calcul dans le cas du sol, où u<sub>3</sub> = v<sub>3</sub> = 0. Il reste seulement la troisième composante, u<sub>1</sub> v<sub>2</sub> − u<sub>2</sub> v<sub>1</sub>. Développez son carré avec la règle de la différence :</p>
+<p class="eq">(u<sub>1</sub> v<sub>2</sub> − u<sub>2</sub> v<sub>1</sub>)² = u<sub>1</sub>² v<sub>2</sub>² − 2 u<sub>1</sub> v<sub>2</sub> u<sub>2</sub> v<sub>1</sub> + u<sub>2</sub>² v<sub>1</sub>²</p>
+<p>Développez le carré du produit scalaire avec la règle de la somme :</p>
+<p class="eq">(u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub>)² = u<sub>1</sub>² v<sub>1</sub>² + 2 u<sub>1</sub> v<sub>1</sub> u<sub>2</sub> v<sub>2</sub> + u<sub>2</sub>² v<sub>2</sub>²</p>
+<p>Additionnez les deux. Regardez les deux termes du milieu. Ils contiennent les mêmes quatre nombres, avec des signes contraires. Ils s’annulent.</p>
+<p>Il reste quatre termes :</p>
+<p class="eq">u<sub>1</sub>² v<sub>2</sub>² + u<sub>2</sub>² v<sub>1</sub>² + u<sub>1</sub>² v<sub>1</sub>² + u<sub>2</sub>² v<sub>2</sub>²</p>
+<p>Ce sont les quatre produits de (u<sub>1</sub>² + u<sub>2</sub>²) × (v<sub>1</sub>² + v<sub>2</sub>²). Donc :</p>
+<p class="eq">‖u × v‖² + (u ⋅ v)² = ‖u‖² ‖v‖²</p>
+<p>Cette égalité porte le nom de Lagrange. Elle reste vraie dans l’espace ; le développement a seulement plus de termes.</p>
+<p>Vérifions sur la figure 41.5. On a ‖u × v‖² = 4 × 4 = 16. On a u ⋅ v = 2 × 1 + 0 × 2 + 0 × 0 = 2. Donc (u ⋅ v)² = 4. La somme est 16 + 4 = 20. D’autre part ‖u‖² ‖v‖² = 4 × 5 = 20.</p>
+<p>La notation sin² θ veut dire (sin θ)², le carré du sinus. De même pour cos² θ. Le chapitre 31 montre que sin² θ + cos² θ = 1 pour tout angle θ.</p>
+<p>Exemple avec 60° : sin² 60° ≈ 0,8660 × 0,8660 ≈ 0,75, et cos² 60° = 0,5 × 0,5 = 0,25. Leur somme vaut 1. En retirant cos² θ des deux côtés, on obtient 1 − cos² θ = sin² θ.</p>
+<p>Revenons à l’égalité de Lagrange. Retirez (u ⋅ v)² des deux côtés. Puis remplacez u ⋅ v par ‖u‖ ‖v‖ cos θ :</p>
+<p class="eq">‖u × v‖² = ‖u‖² ‖v‖² − ‖u‖² ‖v‖² cos² θ</p>
+<p>Les deux termes contiennent ‖u‖² ‖v‖². On l’écrit une seule fois, devant une parenthèse. Avec des nombres, c’est 6 − 6 × 0,25 = 6 × (1 − 0,25). Ici :</p>
+<p class="eq">‖u × v‖² = ‖u‖² ‖v‖² (1 − cos² θ) = ‖u‖² ‖v‖² sin² θ</p>
+<p>Le carré ‖u‖² ‖v‖² est donc la somme de deux termes. L’un est le carré de la norme du produit vectoriel, qui contient sin θ. L’autre est le carré du produit scalaire, qui contient cos θ.</p>
+<p>Sur les vecteurs unitaires : i × j = k, j × k = i, k × i = j. Si on échange les deux facteurs, la main droite doit se retourner. Le pouce pointe alors vers le bas : j × i = −k. En général, v × u = −(u × v). Le produit vectoriel n’est pas commutatif : l’ordre compte.</p>
+<h3>Trois vecteurs et un volume</h3>
+<p>Prenez trois vecteurs u, v, w de l’espace, partis du même point <i>O</i>. Ils construisent une boîte dont les six faces sont des parallélogrammes. Cette boîte s’appelle un <b>parallélépipède</b>.</p>
+<img class="vf" src="/chapters/img/ch41/r41_I.svg" alt="Une boîte penchée, dessinée en perspective. Depuis le coin O partent trois flèches : u en bleu (en pointillés, car cachée), v en orange et w en violet. La base, bleu clair, est construite sur u et v. Un segment gris en pointillés, marqué « hauteur », descend tout droit de la face du haut jusqu’à la base. Les arêtes cachées sont en pointillés." style="--w:22">
+<p class="cap">Fig. 41.I : le parallélépipède construit sur u (bleu), v (orange) et w (violet). Sa base, bleu clair, est le parallélogramme construit sur u et v. La hauteur (gris, en pointillés) va tout droit de la face du haut jusqu’à la base. Les arêtes cachées sont en pointillés. La flèche u est cachée derrière la boîte : elle est aussi en pointillés.</p>
+<p>Le <b>produit mixte</b> est le nombre w ⋅ (u × v). Sa valeur absolue est le volume de cette boîte. Le livre d’origine écrit u ⋅ (v × w), avec la base construite sur v et w. C’est la même idée, avec d’autres noms.</p>
+<p>Pourquoi ? Le volume d’une telle boîte est l’aire de la base fois la hauteur. La base est le parallélogramme construit sur u et v. Son aire est ‖u × v‖.</p>
+<p>La hauteur se mesure perpendiculairement à la base, donc dans la direction de u × v. Appelons φ l’angle entre w et u × v. La lettre φ se lit « phi ».</p>
+<p>La flèche w et la hauteur forment un triangle avec un angle droit. La flèche w en est l’hypoténuse. La hauteur est le côté adjacent à φ. Elle vaut donc ‖w‖ cos φ, comme OH = ‖u‖ cos θ pour la projection.</p>
+<p>Le volume vaut ‖u × v‖ × ‖w‖ cos φ. Par le théorème du produit scalaire, c’est exactement w ⋅ (u × v). Si w est du côté opposé à u × v, cos φ est négatif. C’est pourquoi on prend la valeur absolue.</p>
+</div>
+
+<h2>4. Ce que la notion permet (effets)</h2>
+<h3>Effet 1 : répondre au pilote</h3>
+<p>Reprenez le problème de la partie 1. La flèche a de l’avion est ⟨180, 0⟩. Le vent est v = ⟨100 cos 60°, 100 sin 60°⟩ = ⟨50 ; 86,60⟩.</p>
+<p>Étape 1 : additionner composante par composante. 180 + 50 = 230, et 0 + 86,60 = 86,60.</p>
+<p class="eq">r = ⟨230 ; 86,60⟩</p>
+<p>Étape 2 : la norme, par Pythagore. Le carré de 230 est 52 900. Le carré de 86,60 est environ 7 500. La somme est 60 400.</p>
+<p class="eq">‖r‖ = √60 400 ≈ 245,76 km/h</p>
+<p>Étape 3 : la direction. Le vecteur r est dans le premier quadrant de la figure 41.C (est et nord), car ses deux composantes sont positives. La calculatrice donne donc le bon angle. Le rapport vaut 86,60 / 230 ≈ 0,3765. La touche tan<sup>−1</sup>, en degrés, donne :</p>
+<p class="eq">θ = arctan(0,3765) ≈ 20,63°</p>
+<p>L’avion avance à environ 245,8 km/h par rapport au sol. Sa direction fait 20,6° avec l’est, côté nord (arrondis à une décimale). Le pilote qui veut vraiment aller vers l’est doit donc orienter son avion un peu vers le sud.</p>
+<p>Contrôle par la loi des cosinus, rappelée en partie 3. Regardez la figure 41.J.</p>
+<img class="vf" src="/chapters/img/ch41/r41_J.svg" alt="Un triangle. La flèche bleue « a : 180 » va de O vers la droite jusqu’au point « bout de a ». De là, une flèche orange « v : 100 » monte vers la droite jusqu’au point « bout de r ». La flèche verte r va de O au bout de r. Au bout de a, un trait gris en pointillés prolonge a vers la droite. Un arc gris marque 60° entre ce prolongement et la flèche orange. Un arc vert marque 120° entre la flèche orange et le chemin de retour vers O." style="--w:22">
+<p class="cap">Fig. 41.J : le triangle formé par O, le bout de a et le bout de r. Au bout de a, la flèche orange fait 60° avec le prolongement de a (gris, en pointillés). L’angle du triangle à cet endroit (arc vert) est de l’autre côté de la flèche orange : 120°.</p>
+<p>Le côté bleu est la flèche a de l’avion (180). Le côté orange est la copie de v (100), qui part du bout de a. Le côté vert est r.</p>
+<p>Au bout de a, le prolongement gris continue vers l’est. La copie de v fait 60° avec lui. L’angle du triangle est entre la copie de v et le chemin du retour vers <i>O</i>. Ce retour va vers l’ouest.</p>
+<p>De l’est à l’ouest, il y a un demi-tour, soit 180°. L’angle du triangle vaut donc 180° − 60° = 120°. Le côté r est en face de cet angle. La loi donne :</p>
+<p class="eq">‖r‖² = 180² + 100² − 2 × 180 × 100 × cos 120°</p>
+<p>On a 180² = 32 400 et 100² = 10 000. Puis 2 × 180 × 100 = 36 000. La calculatrice donne cos 120° = −0,5 (voir aussi la figure 41.G).</p>
+<p>Le terme −36 000 × (−0,5) vaut +18 000, par la règle des signes. Le total est 32 400 + 10 000 + 18 000 = 60 400. C’est le même résultat.</p>
+<p>Les composantes évitent la loi des cosinus. Elles marchent aussi pour trois, quatre ou cent vecteurs.</p>
+<h3>Effet 2 : additionner des forces obliques</h3>
+<p>Deux cordes tirent un objet. La première tire avec 60 N vers le nord-est, à 40° du nord. La seconde tire avec 70 N vers le nord-ouest, à 40° du nord.</p>
+<img class="vf" src="/chapters/img/ch41/r41_E.svg" alt="Vue de dessus. L’objet est au point O. Axes gris : est, ouest, nord. Une flèche bleue F1, 60 N, monte entre le nord et l’est, à 40° du nord. Une flèche violette F2, 70 N, monte entre le nord et l’ouest, à 40° du nord. Deux arcs en pointillés mesurent les mêmes directions depuis l’est : 50° et 130°." style="--w:22">
+<p class="cap">Fig. 41.E : vue de dessus, l’objet est en <i>O</i>. La corde F<sub>1</sub> (flèche bleue, 60 N) tire entre le nord et l’est, à 40° du nord. La corde F<sub>2</sub> (flèche violette, 70 N) tire entre le nord et l’ouest, à 40° du nord. Les arcs en pointillés mesurent les mêmes directions depuis l’est : 50° et 130°.</p>
+<p>Pourquoi mesurer depuis l’est ? Les formules a = ‖v‖ cos θ et b = ‖v‖ sin θ demandent un angle précis. C’est l’angle θ compté depuis l’est, en tournant vers le nord.</p>
+<p>Le nord est à 90° de l’est. F<sub>1</sub> s’arrête 40° avant le nord : 90° − 40° = 50°. F<sub>2</sub> va 40° plus loin que le nord : 90° + 40° = 130°.</p>
+<p>La calculatrice, en degrés, donne cos 50° ≈ 0,642788 et sin 50° ≈ 0,766044. Elle donne aussi cos 130° ≈ −0,642788 et sin 130° ≈ 0,766044.</p>
+<p class="li">Pour F<sub>1</sub> : 60 × 0,642788 ≈ 38,567 et 60 × 0,766044 ≈ 45,963. Donc F<sub>1</sub> ≈ ⟨38,567 ; 45,963⟩, en newtons.</p>
+<p class="li">Pour F<sub>2</sub> : 70 × (−0,642788) ≈ −44,995 et 70 × 0,766044 ≈ 53,623. Donc F<sub>2</sub> ≈ ⟨−44,995 ; 53,623⟩, en newtons.</p>
+<p>La composante −44,995 est négative. La seconde corde tire vers l’ouest, et cos 130° est négatif (figure 41.G, chapitre 28).</p>
+<p>Additionnons. 38,567 + (−44,995) = −6,428. Et 45,963 + 53,623 = 99,586. Donc F<sub>1</sub> + F<sub>2</sub> ≈ ⟨−6,428 ; 99,586⟩.</p>
+<p>La norme : (−6,428)² ≈ 41,32 et 99,586² ≈ 9 917,37. La somme est environ 9 958,69. Sa racine carrée est environ 99,79 N.</p>
+<p>Voici le piège pour la direction. Le rapport vaut 99,586 / (−6,428) ≈ −15,49. La calculatrice donne arctan(−15,49) ≈ −86,31°. Cet angle pointe vers le sud, un peu à l’est.</p>
+<img class="vf" src="/chapters/img/ch41/r41_K.svg" alt="Axes gris : est, ouest, nord, sud. Une flèche verte « F1 + F2, 93,69° » monte vers le nord, un peu à gauche. Une flèche rouge en pointillés « réponse de arctan : −86,31° » descend vers le sud, un peu à droite. Un arc orange passe par l’est de l’une à l’autre, marqué « +180° : un demi-tour »." style="--w:22">
+<p class="cap">Fig. 41.K : la force totale (flèche verte) pointe vers le nord, un peu à l’ouest. La calculatrice rend la direction opposée (flèche rouge en pointillés, −86,31°). Un demi-tour (arc orange, 180°) passe de l’une à l’autre.</p>
+<p>Or la force pointe vers le nord et un peu vers l’ouest : le vecteur est dans le deuxième quadrant. Pourquoi cette erreur ? La flèche exactement opposée a pour composantes ⟨6,428 ; −99,586⟩. Son rapport est −99,586 / 6,428 ≈ −15,49 : le même nombre.</p>
+<p>La calculatrice ne peut pas distinguer ces deux flèches. Elle rend toujours celle qui va vers l’est, entre −90° et 90° (chapitre 33).</p>
+<p>Pour passer d’une flèche à la flèche opposée, on fait un demi-tour. On ajoute donc 180° : θ ≈ −86,31° + 180° = 93,69°, soit environ 93,7°.</p>
+<p>La force totale vaut environ 99,8 N, presque plein nord, légèrement vers l’ouest.</p>
+<h3>Effet 3 : mesurer un angle sans rapporteur</h3>
+<p>Quel est l’angle entre u = ⟨1, −1⟩ et v = ⟨4, 5⟩ ?</p>
+<p>Produit scalaire : 1 × 4 + (−1) × 5 = 4 − 5 = −1.</p>
+<p>Normes : ‖u‖ = √(1² + (−1)²) = √(1 + 1) = √2. Puis ‖v‖ = √(4² + 5²) = √(16 + 25) = √41.</p>
+<p>Produit des normes : √2 × √41 = √82 ≈ 9,055. Donc cos θ = −1 / 9,055 ≈ −0,1104. La touche cos<sup>−1</sup> de la calculatrice, en degrés, donne θ ≈ 96,3°.</p>
+<p>Le signe moins du produit scalaire annonçait déjà un angle obtus (plus grand que 90°). Un cosinus négatif correspond à un angle entre 90° et 180°.</p>
+<p>Et les vecteurs ⟨4, 3⟩ et ⟨3, −4⟩ ? Produit scalaire : 4 × 3 + 3 × (−4) = 12 − 12 = 0. Ils sont orthogonaux, sans aucun dessin.</p>
+<h3>Effet 4 : décomposer un vecteur</h3>
+<p>Prenez u = ⟨1, 3⟩ et v = ⟨4, 2⟩ de la figure 41.4. On a u ⋅ v = 10 et ‖v‖² = 20.</p>
+<p>Donc p = (10 / 20) ⟨4, 2⟩ = 0,5 × ⟨4, 2⟩ = ⟨2, 1⟩. C’est la flèche de <i>O</i> à <i>H</i> : <i>H</i> est le point (2, 1).</p>
+<p>Puis q = u − p = ⟨1, 3⟩ − ⟨2, 1⟩ = ⟨−1, 2⟩.</p>
+<p>Contrôle : q ⋅ v = (−1) × 4 + 2 × 2 = −4 + 4 = 0. La partie q est bien perpendiculaire à v.</p>
+<h3>Effet 5 : une force qui déplace un objet</h3>
+<p>En physique, le <b>travail</b> W d’une force mesure l’énergie qu’elle fournit à un objet en le déplaçant.</p>
+<p>On le mesure en <b>joules</b>. Un joule est le travail d’une force d’un newton qui pousse un objet sur un mètre, dans sa direction.</p>
+<p>La force F déplace l’objet du point <i>A</i> au point <i>B</i>. Alors :</p>
+<p class="eq">W = F ⋅ AB = ‖F‖ ‖AB‖ cos θ</p>
+<p>Seule la projection de la force sur le déplacement compte. La partie perpendiculaire ne fait ni avancer ni reculer l’objet.</p>
+<p>La valise de la partie 1 roule sur le sol : son déplacement est horizontal (figure 41.B). La force fait 30° avec le sol, donc 30° avec le déplacement.</p>
+<p>La part qui fait avancer est 50 × cos 30°. La calculatrice donne cos 30° ≈ 0,8660. Cela donne 50 × 0,8660 ≈ 43,30 N.</p>
+<p>Sur 20 mètres, le travail vaut 50 × 20 × cos 30°. On a 50 × 20 = 1 000. Puis 1 000 × 0,8660 ≈ 866,0 joules.</p>
+<p>En composantes : une force F = ⟨5, 2⟩ N déplace un objet. Il va de <i>A</i>(5, 7) à <i>B</i>(18, 13), en mètres. Ce sont les points de la figure 41.H. Le déplacement est AB = ⟨18 − 5, 13 − 7⟩ = ⟨13, 6⟩. Le travail vaut 5 × 13 + 2 × 6 = 65 + 12 = 77 joules.</p>
+<h3>Les cas limites</h3>
+<p><b>Le vecteur nul.</b> Le vecteur 0 n’a pas de direction : aucun angle θ ne lui correspond. La formule cos θ = u ⋅ v / (‖u‖ ‖v‖) demanderait de diviser par 0 (chapitre 3). C’est pourquoi la définition de l’orthogonalité exige des vecteurs non nuls. Le vecteur v / ‖v‖ n’existe pas non plus pour v = 0.</p>
+<p><b>Angle de 90°.</b> Alors cos 90° = 0, donc u ⋅ v = 0. La projection est le vecteur nul : <i>H</i> tombe sur <i>O</i>. Une force perpendiculaire au déplacement ne travaille pas.</p>
+<p>Exemple : vous portez un sac à hauteur constante sur 100 mètres.</p>
+<img class="vf" src="/chapters/img/ch41/r41_L.svg" alt="Un sac au-dessus du sol. Depuis le côté du sac, une flèche bleue monte tout droit : « votre bras pousse vers le haut ». Une flèche orange en pointillés part du même point vers la droite : « le sac avance à hauteur constante ». Un petit coin gris marque l’angle droit entre les deux flèches." style="--w:22">
+<p class="cap">Fig. 41.L : votre bras pousse vers le haut (flèche bleue). Le sac avance à l’horizontale (flèche orange en pointillés). Les deux flèches font un angle droit.</p>
+<p>La force de votre bras et le déplacement font 90°. Le travail de cette force vaut donc 0.</p>
+<p><b>Deux vecteurs sur la même droite.</b> On les dit <b>colinéaires</b>. Alors θ = 0° ou 180°. Le produit scalaire atteint ses valeurs extrêmes, +‖u‖ ‖v‖ ou −‖u‖ ‖v‖.</p>
+<p>Exemple : ⟨3, 4⟩ et ⟨6, 8⟩, le second étant le double du premier. Produit scalaire : 3 × 6 + 4 × 8 = 18 + 32 = 50. Normes : 5 et 10, et 5 × 10 = 50.</p>
+<p>Dans ce cas, le triangle <i>OUV</i> de la figure 41.3 est aplati. Si θ = 0°, les deux flèches vont du même côté. La loi des cosinus devient ‖u − v‖ = | ‖u‖ − ‖v‖ |. Si θ = 180°, elles vont de côtés opposés. La loi devient ‖u − v‖ = ‖u‖ + ‖v‖. Dans les deux cas, la preuve reste valable.</p>
+<div class="avous"><p class="rt">À vous</p>
+<p>Une force F = ⟨4, 3⟩ N déplace un objet du point (1, 1) au point (6, 5), en mètres. Calculez le travail.</p>
+<details><summary>Voir la réponse</summary>
+<p>Le déplacement : ⟨6 − 1, 5 − 1⟩ = ⟨5, 4⟩.</p>
+<p>Le produit scalaire : 4 × 5 + 3 × 4 = 20 + 12 = 32.</p>
+<p>Le travail vaut 32 joules.</p></details></div>
+<div class="plus"><p class="rt">Pour aller plus loin (facultatif)</p>
+<p>Ce bloc reprend ce qui concerne l’espace : aires, volumes, cas limites du produit vectoriel, et une formule de trigonométrie.</p>
+<h3>Effet 6 : aires et volumes</h3>
+<p>Reprenez u et v de la figure 41.5 et ajoutez w = ⟨1, 1, 3⟩. C’est la boîte de la figure 41.I. On a déjà u × v = ⟨0, 0, 4⟩.</p>
+<p>Le produit mixte vaut w ⋅ (u × v). On calcule 1 × 0 + 1 × 0 + 3 × 4 = 12.</p>
+<p>Le parallélépipède a une base d’aire 4. Sa hauteur est 3, la composante verticale de w, car u × v est vertical. Son volume est 4 × 3 = 12.</p>
+<h3>Une formule du chapitre 34, retrouvée en une ligne</h3>
+<p>Le produit scalaire redonne une formule du chapitre 34. Prenez deux vecteurs unitaires sur le cercle de rayon 1. Le premier est u = ⟨cos α, sin α⟩. Le second est v = ⟨cos β, sin β⟩. Les lettres α et β se lisent « alpha » et « bêta ».</p>
+<p>Avec les composantes, u ⋅ v = cos α cos β + sin α sin β. Les deux normes valent 1, et l’angle entre u et v est α − β. Le théorème donne donc u ⋅ v = 1 × 1 × cos(α − β). Donc :</p>
+<p class="eq">cos(α − β) = cos α cos β + sin α sin β</p>
+<p>Exemple avec α = 90° et β = 30°. À gauche : cos 60° = 0,5. À droite : cos 90° × cos 30° + sin 90° × sin 30°. La calculatrice donne 0 × 0,8660 + 1 × 0,5 = 0,5.</p>
+<h3>Cas limites du produit vectoriel et du produit mixte</h3>
+<p class="li"><b>Vecteurs colinéaires.</b> Si u et v sont sur la même droite, alors sin θ = 0. Le parallélogramme est aplati, son aire est nulle : u × v = 0. En particulier u × u = 0.</p>
+<p class="li"><b>Trois vecteurs dans un même plan.</b> Le parallélépipède est aplati, son volume est nul : le produit mixte vaut 0. Inversement, un produit mixte nul prouve que les trois vecteurs sont dans un même plan.</p>
+<p class="li"><b>Pas d’associativité.</b> On a (i × i) × j = 0 × j = 0. Mais i × (i × j) = i × k = −j. L’ordre des parenthèses change le résultat. C’est différent de la multiplication des nombres (chapitre 3).</p>
+</div>
+
+<h2>5. Où cela mène (finalité)</h2>
+<p>Ce chapitre clôt la trigonométrie. Il en rassemble les outils.</p>
+<p class="li">Le cosinus et le sinus du chapitre 26 découpent un vecteur en composantes.</p>
+<p class="li">Le cercle de rayon 1 du chapitre 28 donne leurs signes.</p>
+<p class="li">L’arctangente du chapitre 33 rend la direction.</p>
+<p class="li">La loi des cosinus du chapitre 36 prouve la formule du produit scalaire.</p>
+<p class="li">Le chapitre 39 décrit un point par sa distance à <i>O</i> et son angle. C’est une autre écriture d’un vecteur : sa norme et son angle θ.</p>
+<p class="li">Les courbes du chapitre 40 décrivent un point qui bouge. Sa position est un vecteur qui change avec le temps.</p>
+<p>L’origine historique du chapitre est ailleurs. Vers 1843, Hamilton invente les quaternions (chapitre 51), des nombres à quatre composantes. Prenez deux quaternions dont la première composante vaut 0. Leur produit contient deux morceaux. Le premier est l’opposé du produit scalaire. Le second est le produit vectoriel.</p>
+<p>Vers 1880, les physiciens Gibbs et Heaviside ont séparé ces deux morceaux. Ils en ont fait les deux produits de ce chapitre.</p>
+<p>La suite du livre reprend chaque idée de façon abstraite.</p>
+<p class="li"><b>Chapitre 58 (modules libres, bases).</b> L’écriture v = a i + b j est unique, parce que i et j ne sont pas sur la même droite. Le chapitre 58 étudie les objets qui ont cette propriété, et ce qu’on perd quand ils ne l’ont pas. Les huit règles de calcul du bloc facultatif de la partie 3 y deviennent des règles de départ.</p>
+<p class="li"><b>Chapitre 71 (formes bilinéaires).</b> Le produit scalaire a une propriété décisive. Si on fixe v, doubler u double le résultat, et additionner deux vecteurs u additionne les résultats. Il en va de même si on fixe u. Le chapitre 71 étudie tous les calculs qui ont cette propriété. Certains ne mesurent plus des longueurs ordinaires. En relativité, un vecteur non nul peut avoir une « longueur au carré » égale à 0.</p>
+<p class="li"><b>Chapitre 72 (géométrie orthogonale).</b> Prenez la droite perpendiculaire à v. Le reflet de u par rapport à cette droite est u − 2 proj<sub>v</sub> u. La projection de ce chapitre donne donc la formule de tous les reflets. Le chapitre 72 montre que toute rotation s’obtient par des reflets successifs.</p>
+<p class="li"><b>Chapitre 76 (déterminant).</b> Dans le plan, le nombre u<sub>1</sub> v<sub>2</sub> − u<sub>2</sub> v<sub>1</sub> donne l’aire du parallélogramme au signe près. Il peut en effet être négatif. Il est positif quand on tourne de u vers v dans le sens inverse des aiguilles d’une montre. Ce nombre s’appelle le déterminant 2 × 2. Le produit mixte est le déterminant 3 × 3. Le chapitre 76 le construit en toute dimension.</p>
+<p class="li"><b>Chapitre 78 (produit vectoriel).</b> Le produit vectoriel n’est pas associatif, et u × u = 0. Le chapitre 78 étudie les calculs qui suivent ces deux règles. Il explique aussi pourquoi Hamilton a eu besoin d’une quatrième composante.</p>
+
+<h2>6. Une question pour vous</h2>
+<p>Dans le plan, il y a une seule direction perpendiculaire à un vecteur non nul donné. Dans l’espace, il y a une seule direction perpendiculaire à deux vecteurs non colinéaires donnés. C’est celle de leur produit vectoriel.</p>
+<p>Le produit scalaire se définit sans difficulté en dimension 4, avec quatre composantes. Mais dans un espace à quatre dimensions, combien de directions sont perpendiculaires à deux vecteurs donnés ? Et que dit cette réponse sur la possibilité de définir un produit vectoriel en dimension 4 ?</p>
+
+<div class="retenir"><p class="rt">À retenir</p>
+<p>Un vecteur est une flèche : il a une longueur, sa norme, et une direction. Ses composantes ⟨a, b⟩ donnent ses déplacements vers l’est et vers le nord. On a a = ‖v‖ cos θ et b = ‖v‖ sin θ.</p>
+<p>Sa norme se calcule avec Pythagore : ‖v‖ = √(a² + b²). Pour additionner des vecteurs, on additionne les composantes une à une : c’est la règle du parallélogramme.</p>
+<p>Multiplier par un scalaire m multiplie la longueur par |m|. Le produit scalaire u ⋅ v = u<sub>1</sub> v<sub>1</sub> + u<sub>2</sub> v<sub>2</sub> vaut aussi ‖u‖ ‖v‖ cos θ. Il donne l’angle entre deux vecteurs et dit si deux vecteurs sont orthogonaux (résultat 0).</p>
+<p>La projection de u sur v vaut (u ⋅ v / ‖v‖²) v. Elle donne la part de u qui va dans la direction de v. Le travail d’une force est le produit scalaire de la force et du déplacement.</p>
+<p>Pour trouver une direction avec l’arctangente, vérifiez toujours le quadrant : si la flèche va vers l’ouest, ajoutez 180°. Dans l’espace, le produit vectoriel donne une flèche perpendiculaire dont la longueur est l’aire du parallélogramme.</p></div>

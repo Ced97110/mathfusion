@@ -1,0 +1,31 @@
+{
+  "_doc": "Mesures réelles du niveau « Vent de travers » (chapitre 41). Aucune valeur inventée : chaque nombre vient d'une source ci-dessous. Les valeurs dérivées (composantes, correction de cap, vitesse sol) sont calculées par le code et vérifiées par Vitest.",
+  "avion": {
+    "modele": "Cessna 172S",
+    "vitesse_air_kt": 119,
+    "unite": "KTAS (nœuds, vitesse vraie dans l'air)",
+    "conditions": "4000 pieds, 75 % de puissance, mélange « recommended lean »",
+    "source": "Cessna Model 172S Pilot's Operating Handbook, Revision 4, Section 4, Figure 4-3 « Cruise Performance Table » (page 103 du PDF)",
+    "url": "https://www.befa.org/wp-content/uploads/2019/12/POH-Cessna-172S.pdf",
+    "consulte_le": "2026-11-14"
+  },
+  "vent": {
+    "station": "06260 De Bilt (Pays-Bas), radiosondage",
+    "date_utc": "2026-11-12T12:00:00Z",
+    "niveau": {"pression_hpa": 861.4, "altitude_m": 1222},
+    "vient_du_deg": 316,
+    "vitesse_m_s": 9.5,
+    "convention": "Direction météorologique : le côté d'où vient le vent, compté depuis le nord dans le sens des aiguilles d'une montre. Le vent pousse donc vers 316 − 180 = 136°.",
+    "choix": "Niveau mesuré le plus proche de 4000 pieds (1219,2 m), sans interpolation. Uccle (06447) absente de l'archive ; De Bilt est la station la plus proche disponible.",
+    "source": "University of Wyoming, Department of Atmospheric Science, archive des radiosondages (TEXT:LIST)",
+    "url": "https://weather.uwyo.edu/wsgi/sounding?datetime=2026-11-12%2012:00:00&id=06260&type=TEXT:LIST",
+    "consulte_le": "2026-11-14",
+    "niveaux_voisins": [
+      {"altitude_m": 1212, "vient_du_deg": 318, "vitesse_m_s": 9.6},
+      {"altitude_m": 1222, "vient_du_deg": 316, "vitesse_m_s": 9.5},
+      {"altitude_m": 1231, "vient_du_deg": 315, "vitesse_m_s": 9.5}
+    ]
+  },
+  "conversion": {"metres_par_seconde_par_noeud": 0.514444, "note": "1 nœud = 1852 m / 3600 s (définition)"},
+  "mission": {"route_voulue_deg": 90, "note": "La piste est plein est : route vraie 090°. Choix de conception du niveau, pas une mesure."}
+}
