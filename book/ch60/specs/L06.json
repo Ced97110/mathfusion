@@ -1,0 +1,350 @@
+[
+ {
+  "code": "60-151",
+  "a_dire": "Les relations λuᵢ − Σ aᵢⱼ uⱼ = 0 suffisent à définir V à partir du module libre à n générateurs : ici λu1 = u2 et λu2 = u1, et on en déduit λ²u1 = u1.",
+  "legende_titre": "Deux relations entre u₁ et u₂",
+  "lecture": [
+   "Les deux boîtes bleues sont les deux vecteurs de base u1 et u2.",
+   "La flèche orange du haut dit : lambda fois u1 égale u2. La flèche orange du bas dit : lambda fois u2 égale u1.",
+   "La boîte verte en bas est ce qu’on déduit des deux relations : lambda au carré fois u1 égale lambda fois u2, égale u1."
+  ],
+  "a_voir": "Chaque relation dit où lambda envoie un vecteur de base, et leur enchaînement donne λ²u1 = u1."
+ },
+ {
+  "code": "60-152",
+  "a_dire": "La matrice λ1 − A range les coefficients des relations : c’est une matrice dont les cases sont des polynômes, avec λ sur la diagonale.",
+  "legende_titre": "La matrice qui range les relations",
+  "lecture": [
+   "La première matrice, en orange, a lambda sur la diagonale et 0 ailleurs : c’est λ1.",
+   "La matrice grise est A, celle de l’échange des coordonnées : 0 sur la diagonale, 1 ailleurs.",
+   "La matrice bleue est la différence : lambda sur la diagonale, moins 1 ailleurs. C’est la matrice des relations."
+  ],
+  "a_voir": "La lettre λ apparaît sur la diagonale de la matrice des relations, et nulle part dans A."
+ },
+ {
+  "code": "60-153",
+  "a_dire": "Le signe 1 en gras est la matrice identité : des 1 sur la diagonale, des 0 ailleurs ; dans λ1, on multiplie cette matrice par λ.",
+  "legende_titre": "Le signe 1 : une matrice, pas un nombre",
+  "lecture": [
+   "À gauche, la matrice 2 × 2 entre crochets porte 1 en bleu sur la diagonale et 0 en gris ailleurs : c'est le 1 en gras, la matrice identité.",
+   "La flèche orange multiplie toute la matrice par lambda.",
+   "À droite, les cases orange portent lambda sur la diagonale ; les cases grises gardent 0 : c'est λ1."
+  ],
+  "a_voir": "Le 1 en gras désigne la matrice identité, et λ1 porte λ sur la diagonale."
+ },
+ {
+  "code": "60-154",
+  "a_dire": "On peut ramener λ1 − A, par opérations sur les lignes et les colonnes, à une matrice diagonale qui porte des 1 puis les facteurs invariants.",
+  "legende_titre": "Ramener la matrice à sa forme normale",
+  "lecture": [
+   "La matrice bleue du haut a pour diagonale lambda moins 2 et lambda moins 3.",
+   "Le texte vert à droite dit que la différence de ces deux polynômes vaut 1 : ils sont premiers entre eux.",
+   "La flèche orange est la suite d’opérations sur lignes et colonnes.",
+   "La matrice bleue du bas porte 1 puis le produit des deux polynômes : c’est le facteur invariant d1."
+  ],
+  "a_voir": "Deux polynômes premiers entre eux se ramènent à 1 et à leur produit."
+ },
+ {
+  "code": "60-155",
+  "a_dire": "Les facteurs invariants d1, …, ds redonnent f (leur produit) et m (le dernier), mais f seul ne redonne pas la liste : deux matrices de même f peuvent avoir des listes différentes.",
+  "legende_titre": "Deux listes de facteurs pour un même f",
+  "lecture": [
+   "À gauche, la matrice 1 (2, 0 ; 0, 2) a pour facteurs λ − 2 et λ − 2.",
+   "À droite, la matrice 2 (2, 1 ; 0, 2) a pour facteurs 1 et (λ − 2) au carré.",
+   "Sous chaque liste, le produit des facteurs vaut (λ − 2) au carré, le même f.",
+   "Le signe ≠ sépare les deux listes : elles sont différentes."
+  ],
+  "a_voir": "Même f, mais la liste des facteurs invariants n’est pas la même."
+ },
+ {
+  "code": "60-156",
+  "a_dire": "Si on remplace le corps F par les entiers, l’énoncé n’est plus garanti : l’ensemble des 2p + λq n’est engendré par aucun polynôme seul.",
+  "legende_titre": "Que devient l’énoncé avec des entiers ?",
+  "lecture": [
+   "Le cadre bleu en pointillés est l’ensemble des polynômes de la forme 2 fois p plus lambda fois q.",
+   "Les deux boîtes bleues, 2 et λ, sont deux éléments de cet ensemble.",
+   "À gauche, la boîte rouge dit que g égale 2 ne donne pas λ. À droite, celle-ci dit que g égale λ ne donne pas 2.",
+   "La phrase rouge du bas conclut : aucun polynôme g seul ne suffit."
+  ],
+  "a_voir": "Avec des entiers, il faut deux polynômes, 2 et λ, pour obtenir l’ensemble."
+ },
+ {
+  "code": "60-157",
+  "a_dire": "Le polynôme caractéristique est le déterminant f(λ) = det(λ1 − A) : un seul polynôme, de degré n, tiré de toute la matrice.",
+  "legende_titre": "Un seul polynôme tiré de toute la matrice",
+  "lecture": [
+   "La matrice bleue est λ1 − A pour l’échange : lambda et moins 1.",
+   "Le texte orange calcule le déterminant : lambda fois lambda, moins (moins 1) fois (moins 1).",
+   "Le texte vert donne f(λ) égale lambda au carré moins 1, de degré 2.",
+   "Sur la droite graduée, les deux points verts, en −1 et en 1, sont les valeurs où f s’annule."
+  ],
+  "a_voir": "Le déterminant de la matrice des relations est un polynôme dont le degré vaut la dimension 2."
+ },
+ {
+  "code": "60-158",
+  "a_dire": "Une matrice P inversible a pour déterminant une constante non nulle, pas un polynôme.",
+  "legende_titre": "Constante ou polynôme ?",
+  "lecture": [
+   "À gauche, la matrice bleue P a pour lignes (1, 0) et (2, 1) ; son déterminant vaut 1 fois 1 moins 0 fois 2, soit 1.",
+   "Le trait vert plat dessine cette constante : elle ne change pas quand lambda change.",
+   "À droite, la matrice violette est λ1 − A ; son déterminant est lambda au carré moins 1.",
+   "La courbe orange montre ce polynôme : il change avec lambda."
+  ],
+  "a_voir": "Le déterminant de P est un nombre fixe, alors que celui de λ1 − A est un polynôme."
+ },
+ {
+  "code": "60-159",
+  "a_dire": "Le polynôme caractéristique est le produit des facteurs invariants : f = d1 × d2 × … × ds.",
+  "legende_titre": "Le produit des facteurs donne f",
+  "lecture": [
+   "La matrice bleue est la forme normale du doublement du plan : lambda moins 2 sur la diagonale.",
+   "Le texte à droite rappelle que le déterminant d’une matrice diagonale est le produit des cases de la diagonale.",
+   "Les deux flèches orange mènent chaque case à un facteur, d1 et d2, dans les boîtes bleues.",
+   "La boîte verte est leur produit : f égale (λ − 2) au carré."
+  ],
+  "a_voir": "Le produit des deux cases de la diagonale est exactement f."
+ },
+ {
+  "code": "60-160",
+  "a_dire": "Le degré de f est n : la somme des degrés des facteurs invariants vaut la dimension.",
+  "legende_titre": "Le degré de f se lit dans la dimension",
+  "lecture": [
+   "Les deux cases bleues du haut comptent la dimension : n égale 2.",
+   "Les deux boîtes vertes sont les facteurs d1 et d2, chacun de degré 1.",
+   "L’accolade verte additionne les degrés : 1 plus 1 égale 2.",
+   "La ligne du bas dit que f est de degré n."
+  ],
+  "a_voir": "La somme des degrés des facteurs est égale au nombre de cases de la dimension."
+ },
+ {
+  "code": "60-161",
+  "a_dire": "Quand V est cyclique (s = 1), un seul vecteur z engendre V et l’annulateur de z est l’ensemble des multiples de f.",
+  "legende_titre": "Un seul vecteur engendre tout le plan",
+  "lecture": [
+   "La flèche bleue est le vecteur z égal à (1, 0).",
+   "La flèche orange est λz égal à (0, 1) : c’est l’image de z par l’échange, montrée par la flèche courbe.",
+   "Le point vert (a, b) est a fois z plus b fois λz : tout point du plan s’écrit ainsi.",
+   "La ligne bleue du bas dit que l’annulateur de z est l’ensemble des multiples de lambda au carré moins 1."
+  ],
+  "a_voir": "z et λz suffisent à atteindre tous les points du plan."
+ },
+ {
+  "code": "60-162",
+  "a_dire": "Sans l’hypothèse « V est cyclique », z, λz, … ne forment pas une base : pour le doublement, λz = 2z reste sur la même droite.",
+  "legende_titre": "Que se passe-t-il si V n’est pas cyclique ?",
+  "lecture": [
+   "La flèche bleue est z égal à (1, 0).",
+   "La flèche orange est λz, qui vaut 2z : elle est sur la même droite que z.",
+   "Le trait gris en pointillés est l’autre direction : aucun des deux vecteurs ne l’atteint.",
+   "La boîte rouge conclut : z et λz ne forment pas une base."
+  ],
+  "a_voir": "Les deux vecteurs sont sur une seule droite : ils sont liés."
+ },
+ {
+  "code": "60-163",
+  "a_dire": "Dans la base z, λz, … la transformation T envoie chaque vecteur sur le suivant, et le dernier sur une combinaison des précédents donnée par f(λ)z = 0.",
+  "legende_titre": "T envoie chaque vecteur sur le suivant",
+  "lecture": [
+   "La boîte bleue est z égal à (1, 0) ; la boîte orange est λz égal à (0, 1).",
+   "La flèche orange du haut montre que T envoie z sur λz.",
+   "La flèche verte du bas montre que T envoie λz sur 1 fois z plus 0 fois λz, c’est-à-dire sur z."
+  ],
+  "a_voir": "Le premier vecteur va sur le suivant ; le dernier revient sur une combinaison des précédents."
+ },
+ {
+  "code": "60-164",
+  "a_dire": "La matrice compagnon de f est la matrice carrée faite de 1 voisins de la diagonale et, sur sa dernière ligne, des coefficients de f.",
+  "legende_titre": "La matrice compagnon de λ² − 1",
+  "lecture": [
+   "La case bleue est le 1 voisin de la diagonale.",
+   "La case grise, en haut à gauche, est un 0.",
+   "Les deux cases vertes de la dernière ligne portent les coefficients de f : b0 égale 1 et b1 égale 0.",
+   "Cette matrice est celle de l’échange des coordonnées."
+  ],
+  "a_voir": "Un 1 au-dessus de la diagonale, puis les coefficients de f sur la dernière ligne."
+ },
+ {
+  "code": "60-165",
+  "a_dire": "Pour d(λ) = λ² − b1λ − b0, la matrice compagnon est (0, 1 ; b0, b1) ; avec λ² − 2λ + 1, on obtient (0, 1 ; −1, 2).",
+  "legende_titre": "Matrice compagnon d’un polynôme de degré 2",
+  "lecture": [
+   "La première ligne du texte écrit le polynôme sous la forme lambda au carré moins b1 lambda moins b0.",
+   "Le texte bleu en dessous donne les valeurs : b1 égale 2 et b0 égale moins 1.",
+   "La case bleue est le 1 au-dessus de la diagonale.",
+   "Les deux cases vertes de la dernière ligne sont b0 égale moins 1 et b1 égale 2."
+  ],
+  "a_voir": "Les nombres de la dernière ligne sont b0 puis b1, avec leur signe."
+ },
+ {
+  "code": "60-166",
+  "a_dire": "Dans le cas général, la matrice de T est diagonale par blocs, et chaque bloc est la matrice compagnon d’un facteur invariant.",
+  "legende_titre": "Une matrice faite de blocs compagnons",
+  "lecture": [
+   "Les deux cases bleues sont deux blocs de taille 1 : B1 égale (2) et B2 égale (2).",
+   "Ces blocs sont posés le long de la diagonale.",
+   "Les deux cases grises portent 0 : hors des blocs, tout est nul.",
+   "Chaque bloc est la matrice compagnon de lambda moins 2."
+  ],
+  "a_voir": "Des blocs sur la diagonale, des 0 ailleurs."
+ },
+ {
+  "code": "60-167",
+  "a_dire": "La forme canonique rationnelle est la matrice choisie une fois pour toutes pour une transformation : les blocs compagnons des facteurs invariants, la même quelle que soit la base.",
+  "legende_titre": "Une seule matrice choisie pour une transformation",
+  "lecture": [
+   "Les deux matrices bleues, (2, 0 ; 0, 3) dans la base 1 et (3, 0 ; 0, 2) dans la base 2, décrivent la même transformation.",
+   "Les flèches orange mènent chacune à la même matrice.",
+   "La matrice verte (0, 1 ; −6, 5) est le compagnon de lambda au carré moins 5 lambda plus 6 : sa dernière ligne reprend 6 et −5 avec les signes changés."
+  ],
+  "a_voir": "Deux matrices différentes de la même transformation donnent la même forme rationnelle."
+ },
+ {
+  "code": "60-168",
+  "a_dire": "Le mot « rationnelle » dit que la forme se calcule sans sortir du corps F : elle existe même si les racines du polynôme caractéristique ne sont pas dans F.",
+  "legende_titre": "Pourquoi « rationnelle » ?",
+  "lecture": [
+   "Le cadre vert en pointillés contient la matrice compagnon (0, 1 ; 2, 0) de lambda au carré moins 2 : tous ses nombres sont rationnels.",
+   "Sur la droite graduée, les deux points violets sont les racines moins racine de 2 et racine de 2.",
+   "Ces racines ne sont pas rationnelles : elles sont hors du cadre."
+  ],
+  "a_voir": "La matrice reste dans les rationnels même si les racines n’y sont pas."
+ },
+ {
+  "code": "60-169",
+  "a_dire": "Deux matrices sont semblables quand A′ = S A S⁻¹ : elles décrivent la même transformation dans deux bases, S étant le changement de base.",
+  "legende_titre": "Deux matrices pour une même transformation",
+  "lecture": [
+   "La formule du haut donne A′ = S A S⁻¹, dans cet ordre.",
+   "La matrice bleue A est diagonale, de diagonale 2 puis 3.",
+   "Les deux matrices orange sont S, le changement de base, qui échange les deux vecteurs de base, et son inverse.",
+   "La matrice violette A′, à gauche du signe =, est le résultat : diagonale 3 puis 2."
+  ],
+  "a_voir": "Entourée de S et de son inverse, A devient A′, qui décrit la même transformation dans une autre base."
+ },
+ {
+  "code": "60-170",
+  "a_dire": "Deux matrices ne sont pas semblables si leurs formes rationnelles diffèrent, même quand elles ont le même polynôme caractéristique : ce polynôme seul ne suffit pas.",
+  "legende_titre": "Même polynôme, matrices non semblables",
+  "lecture": [
+   "En haut, la matrice bleue (2, 0 ; 0, 2) et la matrice violette (2, 1 ; 0, 2) ont le même f, écrit en vert.",
+   "En bas, la forme rationnelle bleue est formée des blocs (2) et (2).",
+   "La forme rationnelle violette est le compagnon de (λ − 2) au carré : (0, 1 ; −4, 4).",
+   "Le signe rouge ≠ marque que les deux formes diffèrent : les matrices ne sont pas semblables."
+  ],
+  "a_voir": "Le même f ne suffit pas : il faut comparer les formes entières."
+ },
+ {
+  "code": "60-171",
+  "a_dire": "Le dernier facteur invariant m = ds annule tout vecteur, donc m(T) = 0 et m(A) = 0.",
+  "legende_titre": "Le dernier facteur annule tout vecteur",
+  "lecture": [
+   "Les deux boîtes du haut sont les facteurs d1 et d2 du doublement du plan ; la boîte verte est le dernier, m égale lambda moins 2.",
+   "Le texte vert dit que m fois x égale 0 pour tout vecteur x.",
+   "En bas, T moins 2 fois la matrice identité donne la matrice verte, nulle : m(T) égale 0."
+  ],
+  "a_voir": "En remplaçant λ par T dans m, on obtient la matrice nulle."
+ },
+ {
+  "code": "60-172",
+  "a_dire": "Si g(A) = 0 alors ds divise g ; un polynôme qui n’annule qu’un vecteur de base ne suffit pas.",
+  "legende_titre": "g doit annuler la matrice entière",
+  "lecture": [
+   "La matrice A est diagonale, de diagonale 2 puis 3 ; le polynôme g est lambda moins 2.",
+   "Pour le vecteur bleu u1, g donne 0 : la boîte verte.",
+   "Pour le vecteur bleu u2, g ne donne pas 0 : la boîte rouge.",
+   "La matrice rouge g(A) est (0, 0 ; 0, 1), donc non nulle : ds ne divise pas g."
+  ],
+  "a_voir": "g annule u1 mais pas u2, donc g n’annule pas la matrice."
+ },
+ {
+  "code": "60-173",
+  "a_dire": "Le polynôme minimal m est le polynôme non nul de plus petit degré, de coefficient dominant 1, qui annule A.",
+  "legende_titre": "Le plus petit degré qui annule la matrice",
+  "lecture": [
+   "Chaque colonne est une matrice : (2, 1 ; 0, 2) en bleu, (2, 0 ; 0, 2) en violet.",
+   "Chaque ligne essaie un polynôme : λ − 2 de degré 1, puis (λ − 2) au carré de degré 2.",
+   "Une croix rouge dit que le polynôme n’annule pas la matrice ; une coche dit qu’il l’annule.",
+   "La coche au cadre épais, la première de la colonne, donne m : (λ − 2) au carré pour la bleue, λ − 2 pour la violette."
+  ],
+  "a_voir": "m est le premier polynôme, par degré croissant, qui annule la matrice."
+ },
+ {
+  "code": "60-174",
+  "a_dire": "f = d1 … ds est un multiple de m = ds, et m(A) = 0 ; donc f(A) = 0.",
+  "legende_titre": "Un multiple de m annule aussi la matrice",
+  "lecture": [
+   "La boîte bleue est f et la boîte violette est m : ici les deux valent (λ − 2) au carré, donc f est 1 fois m.",
+   "Le texte du milieu dit que f est un multiple de m et que m(A) vaut 0.",
+   "En bas, la matrice violette (0, 1 ; 0, 0) est A moins 2 fois l’identité, écrite deux fois.",
+   "Leur produit est la matrice verte nulle : f(A) égale 0."
+  ],
+  "a_voir": "Le carré de A − 2 est la matrice nulle, donc f annule A."
+ },
+ {
+  "code": "60-175",
+  "a_dire": "Cayley-Hamilton : toute matrice annule son polynôme caractéristique entier ; un seul facteur de f ne suffit pas.",
+  "legende_titre": "Cayley-Hamilton : le polynôme entier annule A",
+  "lecture": [
+   "La matrice est A, de lignes (2, 1) et (0, 2), avec f égal à (λ − 2) au carré.",
+   "En haut, en rouge, un seul facteur λ − 2 donne la matrice (0, 1 ; 0, 0), qui n’est pas nulle.",
+   "En bas, en vert, f entier donne le carré de A moins 2 fois l’identité : la matrice nulle."
+  ],
+  "a_voir": "Il faut f avec toutes ses multiplicités pour obtenir la matrice nulle."
+ },
+ {
+  "code": "60-176",
+  "a_dire": "m divise f, et m et f ont les mêmes facteurs irréductibles, avec des multiplicités éventuellement différentes.",
+  "legende_titre": "Mêmes facteurs, multiplicités différentes",
+  "lecture": [
+   "La ligne du haut, en bleu, est f : deux facteurs λ − 2.",
+   "Pour la matrice (2, 1 ; 0, 2), m a aussi deux facteurs λ − 2.",
+   "Pour la matrice (2, 0 ; 0, 2), m n’a qu’un facteur λ − 2 ; la place du second, en pointillés, est vide."
+  ],
+  "a_voir": "m n’a jamais de facteur absent de f, mais peut en avoir moins d’exemplaires."
+ },
+ {
+  "code": "60-177",
+  "a_dire": "Cayley-Hamilton tombe en une ligne, mais la profondeur est dans la forme normale du chapitre 59, qui donne la chaîne de facteurs.",
+  "legende_titre": "Une ligne de preuve, une grosse base",
+  "lecture": [
+   "La boîte verte du haut est Cayley-Hamilton : f(A) égale 0, une preuve en une ligne.",
+   "La boîte bleue du bas est la forme normale du chapitre 59 : P(λ1 − A)Q égale diag(1, (λ − 2) au carré), avec sa chaîne de facteurs.",
+   "La boîte orange du milieu est l'étape qui porte le poids : le produit des facteurs de la forme normale est f.",
+   "Les flèches orange montent de la forme normale vers le produit, puis vers la ligne verte."
+  ],
+  "a_voir": "La preuve courte repose sur la forme normale, qui donne la chaîne de facteurs."
+ },
+ {
+  "code": "60-178",
+  "a_dire": "Pour la forme de Jordan, on suppose que f se factorise en facteurs de degré 1 dans F[λ] ; c’est toujours vrai sur ℂ, pas toujours sur ℝ.",
+  "legende_titre": "L’hypothèse porte sur le corps choisi",
+  "lecture": [
+   "La courbe bleue est f égale lambda au carré plus 1, tracée sur les nombres réels.",
+   "Elle ne touche pas l’axe : aucune racine réelle, comme le dit le texte rouge.",
+   "Le texte vert à droite dit que sur ℂ, f s’écrit (λ − i)(λ + i), en facteurs de degré 1."
+  ],
+  "a_voir": "Sans racine réelle, f ne se factorise pas en degré 1 sur ℝ, mais il le fait sur ℂ."
+ },
+ {
+  "code": "60-179",
+  "a_dire": "Si f se factorise en degré 1, les diviseurs élémentaires sont de la forme (λ − r)^e ; sans cette hypothèse, l’énoncé est faux.",
+  "legende_titre": "Sans l’hypothèse, la forme (λ − r)^e échoue",
+  "lecture": [
+   "La matrice est (0, −1 ; 1, 0), de polynôme caractéristique lambda au carré plus 1.",
+   "Sur ℝ, la boîte rouge montre un seul bloc, λ² + 1, qui n’est pas de la forme (λ − r)^e.",
+   "Sur ℂ, les deux boîtes vertes sont λ − i et λ + i : deux blocs de la forme (λ − r)^e avec e égal à 1."
+  ],
+  "a_voir": "Sur ℝ un bloc ne se coupe pas ; sur ℂ il se coupe en deux blocs de degré 1."
+ },
+ {
+  "code": "60-180",
+  "a_dire": "Un morceau cyclique primaire F[λ]w avec ann w = ((λ − r)^e) a pour base w, (λ − r)w, …, (λ − r)^(e−1) w : e vecteurs.",
+  "legende_titre": "Une base faite de w et de ses images",
+  "lecture": [
+   "La flèche bleue est le vecteur w, égal à (0, 1), second vecteur de base.",
+   "La flèche orange est (λ − 2)w, égal à (1, 0) ; la flèche courbe orange montre qu’on l’obtient en multipliant w par λ − 2.",
+   "La boîte verte compte les vecteurs : e égale 2, et ils forment une base du plan."
+  ],
+  "a_voir": "Les e vecteurs w, (λ − r)w, … remplissent la base du morceau."
+ }
+]

@@ -1,0 +1,334 @@
+[
+ {
+  "code": "60-031",
+  "a_dire": "D est un anneau principal : on y additionne et multiplie, le produit de deux éléments non nuls n’est pas nul, et tout idéal est formé des multiples d’un seul élément, comme dans ℤ et dans F[λ].",
+  "legende_titre": "Un idéal est formé des multiples d’un seul élément",
+  "lecture": [
+   "En haut, D est un anneau : on y additionne, on y multiplie, et un produit de deux éléments non nuls n’est pas nul.",
+   "Ensuite, les disques bleus sur la droite sont tous les multiples de 6 : −18, −12, −6, 0, 6, 12, 18. Les flèches orange partent de 6 : × 2 donne 12, × (−3) donne −18.",
+   "En bas, les trois cases bleues sont des multiples du seul polynôme λ − 1 : × 1, × λ, × (λ + 2)."
+  ],
+  "a_voir": "Dans ℤ comme dans F[λ], un idéal se réduit aux multiples d’un seul élément."
+ },
+ {
+  "code": "60-032",
+  "a_dire": "M est un D-module de type fini : un groupe où D agit par multiplication et qu’un nombre fini d’éléments engendrent, comme l’horloge de 12 heures où l’entier 1 suffit.",
+  "legende_titre": "Un groupe engendré par un nombre fini d’éléments",
+  "lecture": [
+   "Les douze disques forment l’horloge de 12 heures, de 0 à 11 : c’est le groupe M.",
+   "Le disque violet, l’heure 1, est le seul générateur : D = ℤ agit en multipliant, et n × 1 donne toutes les heures.",
+   "Le disque orange est l’heure 3 : la flèche « × 3 » y mène depuis 1."
+  ],
+  "a_voir": "Un seul élément, 1, produit toute l’horloge : le module est de type fini."
+ },
+ {
+  "code": "60-033",
+  "a_dire": "Un élément y est de torsion s’il existe un scalaire a non nul avec a y = 0 : l’heure 5 de ℤ/12 l’est, le nombre 5 de ℤ ne l’est pas.",
+  "legende_titre": "Un scalaire non nul qui fait disparaître l’élément",
+  "lecture": [
+   "En haut, la case bleue est l’heure 5 : la flèche orange la multiplie par 12 et donne la case verte 60 = 0.",
+   "En bas, la case violette est le nombre 5 de ℤ : multiplié par un a non nul, il ne donne jamais 0.",
+   "La case grise du bas écrit ce résultat : a × 5 ≠ 0 si a ≠ 0."
+  ],
+  "a_voir": "Le haut a un scalaire non nul qui donne 0, le bas n’en a aucun."
+ },
+ {
+  "code": "60-034",
+  "a_dire": "Dans ℤ/12, le même scalaire 12 envoie toutes les heures sur 0, donc tout élément est de torsion.",
+  "legende_titre": "Un même scalaire pour toutes les heures",
+  "lecture": [
+   "La rangée de cases bleues porte les 12 heures, de 0 à 11.",
+   "Chaque flèche orange part d’une heure et multiplie par 12.",
+   "Les douze flèches arrivent dans la même case verte, 0."
+  ],
+  "a_voir": "Les douze heures sont toutes envoyées sur 0 par le même scalaire 12."
+ },
+ {
+  "code": "60-035",
+  "a_dire": "Dans ℤ vu comme ℤ-module, seul 0 est de torsion : un entier non nul multiplié par un a non nul ne donne jamais 0.",
+  "legende_titre": "Un seul élément de torsion parmi tous les entiers",
+  "lecture": [
+   "Les disques sont les entiers de −5 à 5 sur la droite graduée.",
+   "Le disque bleu, 0, est le seul élément de torsion ; la flèche bleue le désigne.",
+   "Le disque violet est 5 : le texte du bas rappelle que a × 5 n’est pas 0 dès que a n’est pas 0."
+  ],
+  "a_voir": "Sur toute la droite des entiers, un seul disque est bleu : 0."
+ },
+ {
+  "code": "60-036",
+  "a_dire": "Le sous-module de torsion tor M est l’ensemble de tous les éléments de torsion de M : dans les couples (entier, heure de l’horloge de 4), ce sont les 4 couples dont l’entier vaut 0.",
+  "legende_titre": "L’ensemble des éléments de torsion",
+  "lecture": [
+   "Chaque disque est un couple : l’entier est lu en haut (−2 à 2), l’heure à gauche (0 à 3).",
+   "Les 4 disques bleus de la colonne 0 sont de torsion ; le cadre en pointillés les rassemble.",
+   "Les disques gris, d’entier non nul, ne sont pas de torsion."
+  ],
+  "a_voir": "tor M est la colonne bleue encadrée : 4 éléments parmi tous les couples."
+ },
+ {
+  "code": "60-037",
+  "a_dire": "Le signe tor M se lit « les éléments de torsion du module M » : tor veut dire torsion, M est le module.",
+  "legende_titre": "Lire le signe tor M",
+  "lecture": [
+   "En haut, la case bleue « tor » et la case grise « M » forment le signe.",
+   "Chaque flèche relie une partie du signe à son sens : « les éléments de torsion » et « du module M ».",
+   "Le texte du bas donne un cas : dans les couples (entier, heure de 4), tor M est formé des 4 couples (0, heure)."
+  ],
+  "a_voir": "Chaque morceau du signe a sa phrase : tor pour torsion, M pour le module."
+ },
+ {
+  "code": "60-038",
+  "a_dire": "tor M est un sous-module : si 4 y1 = 0 et 6 y2 = 0, alors 24 = 4 × 6, non nul parce que D est intègre, tue y1 + y2.",
+  "legende_titre": "La somme de deux éléments de torsion est de torsion",
+  "lecture": [
+   "En haut, les deux cases bleues sont le départ : y1 tué par 4, y2 tué par 6.",
+   "La case orange du milieu est l’étape qui porte la preuve : 24 = 4 × 6, et 24 n’est pas nul parce que D est intègre.",
+   "La case verte du bas est l’arrivée : 24 multiplié par la somme y1 + y2 donne 0."
+  ],
+  "a_voir": "Le produit 4 × 6 est non nul, et c’est lui qui tue la somme."
+ },
+ {
+  "code": "60-039",
+  "a_dire": "La torsion est stable par addition grâce à l’intégrité de D : dans ℤ, 2 × 3 n’est pas nul ; dans ℤ/6, 2 × 3 = 0 et la somme 3 + 2 = 5 de deux éléments de torsion n’est pas de torsion.",
+  "legende_titre": "Ce qui rend la somme stable",
+  "lecture": [
+   "En haut à gauche, la case verte : dans ℤ, 2 × 3 = 6 n’est pas 0, le produit de deux non nuls reste non nul.",
+   "En haut à droite, la case rouge : dans ℤ/6, 2 × 3 = 6 = 0, le produit de deux non nuls peut être nul.",
+   "En bas, les cases bleues 3 et 2 sont de torsion, mais leur somme 5, en rouge, n’est pas de torsion."
+  ],
+  "a_voir": "Sans intégrité, deux éléments de torsion ont une somme qui n’est plus de torsion."
+ },
+ {
+  "code": "60-040",
+  "a_dire": "Un module de torsion est un module où M = tor M : tout élément est tué par un scalaire non nul, à la différence du module libre et du module mixte.",
+  "legende_titre": "Trois modules, trois places pour tor M",
+  "lecture": [
+   "La ligne du haut, ℤ/12, est une seule case bleue : M et tor M sont égaux, le module est de torsion.",
+   "La ligne du milieu, ℤ × ℤ/4, a une case bleue tor M à l’intérieur de la case grise M : le module est mixte.",
+   "La ligne du bas, ℤ, a seulement le petit rectangle bleu 0 dans M : le module est libre."
+  ],
+  "a_voir": "Seule la première ligne a tor M qui remplit tout M."
+ },
+ {
+  "code": "60-041",
+  "a_dire": "Tout module de type fini sur un anneau principal est la somme directe M = tor M ⊕ L de son sous-module de torsion et d’un module libre L.",
+  "legende_titre": "Un module se coupe en torsion et libre",
+  "lecture": [
+   "Chaque disque est un couple (entier, heure de 4) : l’entier va de −2 à 2 vers la droite, l’heure de 0 à 3 vers le haut.",
+   "La colonne bleue encadrée est tor M ; la ligne violette encadrée en bas est le module libre L ; le disque vert, à leur croisement, est (0, 0).",
+   "Le disque orange (2, 3) est la somme du disque (0, 3) de la colonne et du disque (2, 0) de la ligne : les pointillés orange le montrent."
+  ],
+  "a_voir": "Chaque couple s’écrit d’une seule façon comme un élément de la colonne plus un élément de la ligne."
+ },
+ {
+  "code": "60-042",
+  "a_dire": "On trie les générateurs z de M = Dz1 ⊕ Dz2 selon leur annulateur : annulateur non nul, torsion, dans tor M ; annulateur nul, copie de D, dans L.",
+  "legende_titre": "Trier les générateurs par leur annulateur",
+  "lecture": [
+   "La case grise du haut est le point de départ : M écrit comme somme directe de Dz1 et Dz2.",
+   "La case bleue de gauche est z1 = (0, 1), d’annulateur (4), non nul : elle mène à tor M.",
+   "La case violette de droite est z2 = (1, 0), d’annulateur (0) : elle mène à une copie de D, dans L libre."
+  ],
+  "a_voir": "Deux générateurs, deux sorties : l’annulateur non nul ou nul décide."
+ },
+ {
+  "code": "60-043",
+  "a_dire": "Si y = b1 z1 + b2 z2 est tué par un a non nul, alors a × b2 = 0, donc b2 = 0 parce que D est intègre : aucun élément de torsion ne se cache dans L.",
+  "legende_titre": "Pourquoi L n’a pas de torsion",
+  "lecture": [
+   "La case bleue du haut écrit y comme somme des deux morceaux.",
+   "Les deux cases grises suivantes disent que a, non nul, tue y, donc a × b2 = 0 sur le morceau libre.",
+   "La flèche orange est l’étape qui porte la preuve : D est intègre et a est non nul, donc la case verte donne b2 = 0."
+  ],
+  "a_voir": "Le coefficient du morceau libre est forcément 0, donc y reste dans les morceaux de torsion."
+ },
+ {
+  "code": "60-044",
+  "a_dire": "La composante p-primaire M_p est l’ensemble des y tués par une puissance de p ; elle est contenue dans tor M, lui-même contenu dans M.",
+  "legende_titre": "Trois ensembles emboîtés dans ℤ/12",
+  "lecture": [
+   "La grande case grise est M = ℤ/12, avec ses 12 heures.",
+   "La case violette à l’intérieur est tor M : ses 12 heures sont de torsion.",
+   "La case bleue au centre est M_2 : les heures 0, 3, 6, 9, tuées par 4 = 2², une puissance de 2."
+  ],
+  "a_voir": "M_2 est contenu dans tor M, qui est contenu dans M."
+ },
+ {
+  "code": "60-045",
+  "a_dire": "Le signe M_p se lit « la partie de M tuée par une puissance du nombre premier p » ; la lettre p en bas dit quel premier on regarde.",
+  "legende_titre": "Lire le signe M_p",
+  "lecture": [
+   "La case bleue du haut est le signe M_p, avec la phrase qui le lit au-dessus.",
+   "La flèche bleue mène au cas p = 2 : M_2, la partie tuée par une puissance de 2.",
+   "La flèche violette mène au cas p = 3 : M_3, la partie tuée par une puissance de 3."
+  ],
+  "a_voir": "Un seul signe donne une partie différente pour chaque nombre premier p."
+ },
+ {
+  "code": "60-046",
+  "a_dire": "Dans ℤ/12, la composante 2-primaire est formée des heures y telles que 4 y = 0 : {0, 3, 6, 9}, un groupe à 4 éléments.",
+  "legende_titre": "Les heures tuées par 4",
+  "lecture": [
+   "Les disques sont les heures de l’horloge ; les quatre disques bleus 0, 3, 6, 9 sont ceux qui répondent 4 × y = 0.",
+   "À droite, les trois lignes bleues vérifient : 4 × 3 = 12, 4 × 6 = 24, 4 × 9 = 36, tous égaux à 0 sur l’horloge.",
+   "Le disque rouge 1 et la ligne rouge montrent le cas qui échoue : 4 × 1 = 4 n’est pas 0."
+  ],
+  "a_voir": "Quatre heures sur douze sont tuées par 4 : 0, 3, 6 et 9."
+ },
+ {
+  "code": "60-047",
+  "a_dire": "Dans ℤ/12, la composante 3-primaire est formée des heures y telles que 3 y = 0 : {0, 4, 8}, un groupe à 3 éléments.",
+  "legende_titre": "Les heures tuées par 3",
+  "lecture": [
+   "Les disques bleus 0, 4, 8 sont les heures qui répondent 3 × y = 0 ; les lignes bleues vérifient 3 × 4 = 12 et 3 × 8 = 24.",
+   "Le disque rouge 2 et la ligne rouge montrent un échec : 3 × 2 = 6 n’est pas 0.",
+   "Les disques violets 3, 6, 9, avec le 0 entouré de violet, rappellent la composante 2-primaire : elle n’a que 0 en commun avec celle-ci."
+  ],
+  "a_voir": "Les heures 0, 4, 8 forment un groupe à 3 éléments, qui ne partage que 0 avec {0, 3, 6, 9}."
+ },
+ {
+  "code": "60-048",
+  "a_dire": "Le lemme de découpage demande que g et h soient premiers entre eux : avec g = 2 et h = 6, qui ont le facteur 2 en commun, les morceaux Dy et Dz se recouvrent en 0 et 6 et n’engendrent pas l’heure 1.",
+  "legende_titre": "Ce qui casse sans facteurs premiers entre eux",
+  "lecture": [
+   "La rangée est l’horloge de 12 heures ; les deux cases bleues 0 et 6 forment Dy = {0, 6}.",
+   "Les cases violettes et bleues, toutes les heures paires, forment Dz ; les heures impaires sont en pointillés.",
+   "La case rouge 1, hors de ces deux morceaux, montre que la somme Dy + Dz n’atteint pas l’heure 1."
+  ],
+  "a_voir": "Dy et Dz ont en commun 0 et 6, et l’heure 1 n’est atteinte par aucun."
+ },
+ {
+  "code": "60-049",
+  "a_dire": "Comme g et h sont premiers entre eux, a h + b g = 1 ; avec 12 = 4 × 3, a = −1 et b = 1 donnent −3 + 4 = 1, d’où x = a y + b z.",
+  "legende_titre": "Écrire 1 avec deux nombres premiers entre eux",
+  "lecture": [
+   "En haut, g = 4, h = 3, a = −1, b = 1. En bas, y = h x et z = g x.",
+   "La flèche orange part de 0 et recule de 3 : a h = (−1) × 3 = −3.",
+   "La flèche violette part de −3 et avance de 4 : b g = 1 × 4 = 4, et le disque vert arrive en 1 : −3 + 4 = 1.",
+   "En multipliant cette somme 1 par x, on obtient la ligne verte du bas : x = a y + b z."
+  ],
+  "a_voir": "Les deux pas −3 et +4 se rejoignent exactement en 1."
+ },
+ {
+  "code": "60-050",
+  "a_dire": "Un élément y commun à Dy et Dz est tué par 4 et par 3, donc par 4 − 3 = 1 : il est nul, la somme est directe.",
+  "legende_titre": "Un élément commun est tué par 1",
+  "lecture": [
+   "Le cercle bleu est Dy, qui contient 3, 6, 9 ; le cercle violet est Dz, qui contient 4, 8.",
+   "La seule place commune aux deux cercles porte 0, en vert.",
+   "Les deux lignes du bas montrent pourquoi : y est tué par 4 et par 3, donc par (4 − 3) = 1, d’où y = 0."
+  ],
+  "a_voir": "Les deux cercles ne se coupent qu’en 0."
+ },
+ {
+  "code": "60-051",
+  "a_dire": "Le lemme avec d = 12 = 4 × 3 est la grille 4 sur 3 : la colonne 0 et la ligne 0 ne se coupent qu’en 0, et chaque case est somme d’une case de la colonne et d’une case de la ligne.",
+  "legende_titre": "Le lemme sur la grille de 12 heures",
+  "lecture": [
+   "Chaque case porte une des 12 heures ; la colonne bleue 0, 9, 6, 3 est Dy.",
+   "La ligne violette 0, 4, 8 est Dz ; la case verte 0 est leur seule case commune.",
+   "La case orange 7 est somme de 3 de la colonne et de 4 de la ligne : 7 = 3 + 4."
+  ],
+  "a_voir": "Toutes les cases de la grille sont des sommes colonne plus ligne, avec 0 seul en commun."
+ },
+ {
+  "code": "60-052",
+  "a_dire": "Un module cyclique primaire a pour annulateur (p^e) : le lemme ne peut plus le couper, car 4 = 2 × 2 a un facteur commun, alors que 12 = 4 × 3 se coupe.",
+  "legende_titre": "Où le lemme de découpage s’arrête",
+  "lecture": [
+   "En haut, ℤ/12 se coupe en ℤ/4 (bleu) et ℤ/3 (violet) : 4 et 3 sont premiers entre eux.",
+   "En bas, ℤ/4 a pour annulateur (2²) ; la flèche rouge vers deux cases ℤ/2 en pointillés dit que 4 = 2 × 2 ne donne pas de coupe.",
+   "Les deux facteurs 2 ont un facteur commun : ce morceau est cyclique primaire."
+  ],
+  "a_voir": "12 se coupe en 4 et 3, mais 4 ne se coupe pas en 2 et 2."
+ },
+ {
+  "code": "60-053",
+  "a_dire": "Un module de torsion de type fini est somme directe de ses composantes primaires, en nombre fini : ℤ/12 = M_2 ⊕ M_3, et M_5 est réduite à 0.",
+  "legende_titre": "Les composantes primaires de ℤ/12",
+  "lecture": [
+   "La case grise du haut est M = ℤ/12, avec ses 12 heures.",
+   "La case bleue M_2 contient 0, 3, 6, 9 et la case violette M_3 contient 0, 4, 8 ; le signe ⊕ les relie.",
+   "La case en pointillés M_5 est réduite à {0}.",
+   "Le texte vert du bas donne l’écriture unique 7 = 3 + 4, un élément de M_2 plus un de M_3."
+  ],
+  "a_voir": "Seuls les premiers 2 et 3 donnent des composantes non nulles, et chaque heure s’écrit d’une seule façon."
+ },
+ {
+  "code": "60-054",
+  "a_dire": "Un module de torsion de type fini est une somme directe de modules cycliques primaires ; sans l’hypothèse de torsion, ℤ est cyclique mais son annulateur (0) n’est pas une puissance d’un premier.",
+  "legende_titre": "Le théorème a besoin de la torsion",
+  "lecture": [
+   "En haut, ℤ/12 s’écrit ℤ/4 (annulateur 2²) plus ℤ/3 (annulateur 3) : ça marche.",
+   "En bas à gauche, la case rouge est ℤ, engendré par 1, d’annulateur (0).",
+   "La case en pointillés à droite décrit ce qu’on attend, une puissance d’un premier p ; le signe ≠ en rouge dit que (0) n’en est pas une."
+  ],
+  "a_voir": "ℤ n’est pas de torsion, et son annulateur (0) n’est pas une puissance d’un premier."
+ },
+ {
+  "code": "60-055",
+  "a_dire": "Les composantes sont indépendantes : un y commun à M_2 et M_3 est tué par 4 et par 3, premiers entre eux, donc par 1, donc y = 0.",
+  "legende_titre": "Pourquoi les composantes ne se recouvrent pas",
+  "lecture": [
+   "La case bleue de gauche est le départ : y est dans M_2 et M_3, tué par 4 et par 3.",
+   "La case orange du milieu est l’étape clé : −3 + 4 = 1, parce que 4 et 3 sont premiers entre eux.",
+   "La case verte de droite conclut : 1 × y = 0, donc y = 0 ; la ligne rouge rappelle qu’avec 2 et 6 on n’obtient jamais 1."
+  ],
+  "a_voir": "Deux scalaires premiers entre eux fabriquent 1, qui tue y."
+ },
+ {
+  "code": "60-056",
+  "a_dire": "Deux décompositions en modules cycliques ont le même nombre de morceaux, s = t, et les mêmes annulateurs, même si les morceaux diffèrent.",
+  "legende_titre": "Deux décompositions, mêmes annulateurs",
+  "lecture": [
+   "Les disques sont les 12 éléments de ℤ/2 × ℤ/6 : deux colonnes, six lignes.",
+   "La décomposition A utilise les disques bleus (1, 0) et (0, 1) ; la décomposition B utilise le disque violet (1, 3) et le bleu (0, 1).",
+   "Dans les deux cas, les annulateurs sont 2 et 6, et il y a 2 morceaux : s = t = 2."
+  ],
+  "a_voir": "Les disques choisis diffèrent, la liste 2, 6 reste."
+ },
+ {
+  "code": "60-057",
+  "a_dire": "Les morceaux cycliques peuvent changer, mais la liste de leurs annulateurs ne change pas.",
+  "legende_titre": "Ce qui change et ce qui reste",
+  "lecture": [
+   "La ligne A a deux cases bleues : le morceau de (1, 0) à 2 éléments et celui de (0, 1) à 6 éléments.",
+   "La ligne B change le premier morceau, en orange : celui de (1, 3), aussi à 2 éléments ; le second reste celui de (0, 1).",
+   "À droite de chaque ligne, la même liste verte : annulateurs 2 puis 6."
+  ],
+  "a_voir": "Un morceau a changé en orange, la liste verte est la même."
+ },
+ {
+  "code": "60-058",
+  "a_dire": "Les idéaux facteurs invariants sont la liste des idéaux annulateurs des morceaux cycliques ; dans la grille 2 sur 6, ce sont (2) et (6), avec (6) contenu dans (2).",
+  "legende_titre": "La liste des annulateurs",
+  "lecture": [
+   "La rangée de disques bleus marque les multiples de 2 : 0, 2, 4, 6, 8, 10, 12 ; c’est l’idéal (2).",
+   "La rangée de disques violets marque les multiples de 6 : 0, 6, 12 ; c’est l’idéal (6).",
+   "Les pointillés relient chaque multiple de 6 au multiple de 2 qui est le même nombre : (6) est dans (2)."
+  ],
+  "a_voir": "Chaque multiple de 6 est aussi un multiple de 2."
+ },
+ {
+  "code": "60-059",
+  "a_dire": "Un idéal a plusieurs générateurs : on choisit le générateur normalisé, positif sur ℤ, de coefficient dominant 1 sur F[λ].",
+  "legende_titre": "Choisir un seul générateur",
+  "lecture": [
+   "En haut, la case bleue est l’idéal des multiples de 6 ; la case grise −6 l’engendre aussi ; la case verte 6, positive, est le choix.",
+   "En bas, la case bleue est l’idéal des multiples de λ − 1 ; la case grise 2λ − 2 l’engendre aussi ; la case verte λ − 1, de coefficient dominant 1, est le choix.",
+   "Les flèches grises à double pointe disent que deux générateurs donnent les mêmes multiples."
+  ],
+  "a_voir": "Deux générateurs pour un même idéal : le choix vert lève l’ambiguïté."
+ },
+ {
+  "code": "60-060",
+  "a_dire": "Les facteurs invariants d1, …, ds sont les générateurs normalisés des idéaux, chacun divise le suivant ; les diviseurs élémentaires s’obtiennent en coupant chaque facteur en puissances de premiers.",
+  "legende_titre": "Facteurs invariants et diviseurs élémentaires",
+  "lecture": [
+   "En haut, les cases bleues d1 = 2 et d2 = 6 sont les facteurs invariants ; la flèche dit que d1 divise d2.",
+   "En bas, les cases violettes 2, 2 et 3 sont les diviseurs élémentaires.",
+   "Les flèches bleues les relient : d1 donne un 2, et 6 = 2 × 3 donne un 2 et un 3."
+  ],
+  "a_voir": "Deux listes distinctes pour le même module : 2 et 6, ou 2, 2 et 3."
+ }
+]

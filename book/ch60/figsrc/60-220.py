@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 21, 57, r'$s=1$', 'autre', 'l', weight='bold')
+text(ax, 21, 51, r'$T$ cyclique', 'autre', 's')
+box(ax, 5, 20, 32, 24, 'autre', label='polynômes en A\n= matrices\ncommutant avec A')
+line(ax, [(44, 8), (44, 56)], 'fixe', dash=True)
+text(ax, 66, 57, r'$s=2>1$', 'sujet', 'l', weight='bold')
+text(ax, 66, 51, r'$T$ non cyclique', 'sujet', 's')
+box(ax, 48, 10, 37, 34, 'fixe', label=None)
+text(ax, 66, 39.5, r'commutent avec $A$', 'fixe', 's')
+box(ax, 51, 14, 19, 18, 'sujet', label='polynômes\nen A', size='s')
+text(ax, 77.5, 23, 'autres', 'fixe', 's')
+save(fig, '60-220')

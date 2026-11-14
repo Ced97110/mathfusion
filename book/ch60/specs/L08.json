@@ -1,0 +1,344 @@
+[
+ {
+  "code": "60-210",
+  "a_dire": "Les facteurs invariants sont λ − 1 et (λ − 1)², les diviseurs élémentaires sont les mêmes ici, et le polynôme minimal est le dernier facteur, (λ − 1)².",
+  "legende_titre": "Deux facteurs, un seul premier, un dernier facteur",
+  "lecture": [
+   "La rangée bleue du haut donne les deux facteurs invariants : λ − 1, puis (λ − 1)².",
+   "La rangée violette du milieu donne les diviseurs élémentaires : ce sont les mêmes deux facteurs.",
+   "La flèche verte part du dernier facteur et mène au polynôme minimal, (λ − 1)²."
+  ],
+  "a_voir": "Le polynôme minimal est le facteur de droite, le dernier de la liste."
+ },
+ {
+  "code": "60-211",
+  "a_dire": "A − 1 n'est pas nulle, mais son carré (A − 1)² est la matrice nulle.",
+  "legende_titre": "Une matrice non nulle dont le carré est nul",
+  "lecture": [
+   "La matrice bleue de gauche est A − 1 : ses trois lignes sont proportionnelles à (−1, −1, 3) et elle n'est pas nulle.",
+   "La flèche orange dit « au carré » : on multiplie la matrice par elle-même.",
+   "La matrice verte de droite ne contient que des zéros : (A − 1)² = 0."
+  ],
+  "a_voir": "Des nombres non nuls à gauche, neuf zéros à droite après la mise au carré."
+ },
+ {
+  "code": "60-212",
+  "a_dire": "Comme (A − 1)² est déjà nul, (A − 1)³ est nul aussi : Cayley-Hamilton est vérifié à plus forte raison.",
+  "legende_titre": "Trois puissances de A − 1, du non nul au nul",
+  "lecture": [
+   "La case bleue de gauche est A − 1 : elle est différente de 0.",
+   "La case verte du milieu est le carré : il vaut 0, c'est le polynôme minimal.",
+   "La case verte de droite est le cube : il vaut 0 aussi, car on multiplie encore par A − 1 (flèches orange).",
+   "Le premier exposant qui donne zéro est 2."
+  ],
+  "a_voir": "Le zéro apparaît dès l'exposant 2 ; l'exposant 3 reste nul."
+ },
+ {
+  "code": "60-213",
+  "a_dire": "La forme rationnelle place le bloc compagnon 1 × 1 de λ − 1 en haut à gauche et le bloc 2 × 2 de (λ − 1)² en bas à droite.",
+  "legende_titre": "Deux blocs le long de la diagonale",
+  "lecture": [
+   "La case bleue en haut à gauche est le bloc 1 × 1 de λ − 1 : elle contient 1.",
+   "Le carré orange de quatre cases en bas à droite est le bloc 2 × 2 de (λ − 1)² : lignes (0, 1) et (−1, 2).",
+   "Les cases grises ne contiennent que des 0."
+  ],
+  "a_voir": "Un bloc par facteur invariant, rangés sur la diagonale, des 0 partout ailleurs."
+ },
+ {
+  "code": "60-214",
+  "a_dire": "Un diviseur élémentaire (λ − r) à la puissance e donne un bloc de taille e avec r sur la diagonale : ici des blocs de taille 1 et 2, avec r = 1.",
+  "legende_titre": "De l'exposant à la taille du bloc",
+  "lecture": [
+   "La case bleue du haut est le diviseur (λ − 1)¹ ; la flèche mène à un bloc d'une case, qui contient 1.",
+   "La case orange du bas est le diviseur (λ − 1)² ; la flèche mène à un bloc de quatre cases : 1, 1 sur la première ligne, 0, 1 sur la seconde.",
+   "Dans les deux blocs, la diagonale vaut 1, la racine."
+  ],
+  "a_voir": "La taille du bloc est l'exposant du diviseur, et la diagonale porte la racine 1."
+ },
+ {
+  "code": "60-215",
+  "a_dire": "La forme de Jordan de A est une matrice 3 × 3 faite d'un bloc de taille 1 (J₁) et d'un bloc de taille 2 (J₂) séparés par des zéros.",
+  "legende_titre": "Où tombent les blocs de Jordan",
+  "lecture": [
+   "La case bleue en haut à gauche est le bloc J₁ de taille 1 : elle contient 1.",
+   "Le carré orange de quatre cases est le bloc J₂ de taille 2 : ses lignes sont (1, 1) et (0, 1).",
+   "Les cases grises contiennent des 0 et séparent les deux blocs."
+  ],
+  "a_voir": "Les deux blocs sont côte à côte sur la diagonale ; le 1 du bloc orange au-dessus de la diagonale est le seul 1 hors diagonale."
+ },
+ {
+  "code": "60-216",
+  "a_dire": "Il y a deux chaînes : v → w → 0 et u → 0, avec v = (1, 0, 0), w = (−2, −1, −1) et u = (1, −1, 0), chaque flèche étant l'action de A − 1.",
+  "legende_titre": "Deux chaînes de vecteurs dans A",
+  "lecture": [
+   "La colonne bleue est la chaîne 1 : v = (1, 0, 0) est envoyé sur w = (−2, −1, −1), puis w est envoyé sur 0.",
+   "La colonne violette est la chaîne 2 : u = (1, −1, 0) est envoyé directement sur 0.",
+   "Chaque flèche porte la même étiquette, A − 1. Les cases vertes sont le vecteur nul."
+  ],
+  "a_voir": "La chaîne 1 a deux flèches, la chaîne 2 en a une."
+ },
+ {
+  "code": "60-217",
+  "a_dire": "Dans la base (u, w, v), T envoie u sur u, w sur w et v sur v + w, ce qui donne les trois colonnes de la matrice.",
+  "legende_titre": "Lire les colonnes sur les images",
+  "lecture": [
+   "La première colonne (violette) est l'image de u : un 1 sur la ligne u, des 0 ailleurs.",
+   "La deuxième colonne (bleue) est l'image de w : un 1 sur la ligne w.",
+   "La troisième colonne (bleue) est l'image de v : v + w, donc un 1 sur la ligne w et un 1 sur la ligne v.",
+   "Les lettres à gauche nomment les lignes."
+  ],
+  "a_voir": "Chaque colonne écrit l'image d'un vecteur de la base ; la troisième a deux 1."
+ },
+ {
+  "code": "60-218",
+  "a_dire": "La formule de Frobenius donne N = 3 × 1 + 1 × 2 = 3 + 2 = 5 matrices indépendantes qui commutent avec A.",
+  "legende_titre": "Compter 3 + 2 avec la formule de Frobenius",
+  "lecture": [
+   "La ligne bleue montre 3 × n₁ = 3 × 1 : trois carrés.",
+   "La ligne orange montre 1 × n₂ = 1 × 2 : deux carrés.",
+   "La ligne verte du bas réunit les deux : 3 + 2 = 5 carrés, donc N = 5."
+  ],
+  "a_voir": "Trois carrés bleus plus deux carrés orange font cinq carrés verts."
+ },
+ {
+  "code": "60-219",
+  "a_dire": "Les polynômes en A forment une partie de dimension 2 de l'espace de dimension 5 des matrices qui commutent avec A.",
+  "legende_titre": "Deux dimensions sur cinq",
+  "lecture": [
+   "Les cinq cases représentent les cinq dimensions de l'espace des matrices qui commutent avec A.",
+   "Les deux cases bleues, 1 et A, sont les polynômes en A : dimension 2.",
+   "Les trois cases grises avec « ? » sont les autres matrices : le livre n'en écrit aucune."
+  ],
+  "a_voir": "Les polynômes en A n'occupent que 2 cases sur 5."
+ },
+ {
+  "code": "60-220",
+  "a_dire": "Quand s = 2 est plus grand que 1, T n'est pas cyclique et des matrices qui commutent avec A ne sont pas des polynômes en A.",
+  "legende_titre": "Le nombre s sert de test",
+  "lecture": [
+   "À gauche (violet), s = 1 : T est cyclique, les polynômes en A sont toutes les matrices qui commutent avec A.",
+   "À droite, s = 2 : le grand cadre gris contient toutes les matrices qui commutent avec A.",
+   "Le cadre bleu à l'intérieur contient seulement les polynômes en A ; le reste du cadre gris est « autres »."
+  ],
+  "a_voir": "À droite, le cadre bleu est plus petit que le cadre gris ; à gauche, il n'y a qu'un seul cadre."
+ },
+ {
+  "code": "60-221",
+  "a_dire": "Une partition d'un entier a est une écriture de a comme somme d'entiers positifs sans tenir compte de l'ordre : 2 + 1 et 1 + 2 sont la même.",
+  "legende_titre": "Écrire 3 comme somme, sans ordre",
+  "lecture": [
+   "Les trois rangées bleues sont les partitions de 3 : 3, puis 2 + 1, puis 1 + 1 + 1.",
+   "Chaque case est une part ; la longueur totale de chaque rangée est la même, 3.",
+   "La rangée grise en pointillés, 1 + 2, est la même partition que 2 + 1 : on ne la compte pas à part."
+  ],
+  "a_voir": "Trois rangées bleues de même longueur ; la rangée grise ne s'ajoute pas."
+ },
+ {
+  "code": "60-222",
+  "a_dire": "Le mot partition d'un entier découpe un nombre en parts ; au chapitre 43 il découpait un ensemble en blocs : ce sont deux objets différents.",
+  "legende_titre": "Deux emplois du mot partition",
+  "lecture": [
+   "À gauche (violet), chapitre 43 : un ensemble de points est découpé en deux blocs en pointillés.",
+   "À droite (bleu), ici : le nombre 4 est découpé en deux parts, 2 et 2.",
+   "Les flèches orange montrent le découpage du nombre en parts."
+  ],
+  "a_voir": "À gauche on découpe des points ; à droite on découpe un nombre."
+ },
+ {
+  "code": "60-223",
+  "a_dire": "P(a) se lit « grand P de a » et désigne le nombre de partitions de a ; par exemple P(3) = 3.",
+  "legende_titre": "Lire le signe P(3) = 3",
+  "lecture": [
+   "La lettre bleue P est le nom du nombre de partitions.",
+   "Le 3 orange entre parenthèses est l'entier qu'on découpe.",
+   "Le 3 vert après le signe égale est le nombre trouvé : trois partitions.",
+   "La ligne grise du bas les liste : 3 ; 2 + 1 ; 1 + 1 + 1."
+  ],
+  "a_voir": "P nomme le nombre ; le 3 orange est l'entier découpé ; le 3 vert est le résultat."
+ },
+ {
+  "code": "60-224",
+  "a_dire": "On liste les écritures puis on les compte : P(1) = 1, P(2) = 2 et P(3) = 3.",
+  "legende_titre": "Compter les partitions de 1, 2 et 3",
+  "lecture": [
+   "La colonne de gauche liste les partitions de 1 : une seule rangée, 1.",
+   "La colonne du milieu liste celles de 2 : 2, et 1 + 1.",
+   "La colonne de droite liste celles de 3 : 3, 2 + 1, et 1 + 1 + 1.",
+   "Sous chaque colonne, le nombre de rangées est la valeur de P."
+  ],
+  "a_voir": "Une rangée pour la première colonne, deux pour la deuxième, trois pour la troisième."
+ },
+ {
+  "code": "60-225",
+  "a_dire": "Le nombre 4 a cinq partitions : 4, 3 + 1, 2 + 2, 2 + 1 + 1 et 1 + 1 + 1 + 1, donc P(4) = 5.",
+  "legende_titre": "Les écritures du nombre 4",
+  "lecture": [
+   "Chaque rangée est une écriture de 4 ; toutes ont la même longueur.",
+   "Il y a cinq rangées : 4 ; 3 + 1 ; 2 + 2 ; 2 + 1 + 1 ; 1 + 1 + 1 + 1.",
+   "La rangée orange, 2 + 2, répète la même part deux fois.",
+   "Le résultat vert est P(4) = 5."
+  ],
+  "a_voir": "Cinq rangées de même longueur, dont une seule avec une part répétée."
+ },
+ {
+  "code": "60-226",
+  "a_dire": "Une partition a = c₁ + c₂ + … de l'exposant de p donne le groupe ℤ/p^c₁ ⊕ ℤ/p^c₂ ⊕ …, qui a pᵃ éléments : ici p = 2 et 1 + 1 + 1 donnent ℤ/2 ⊕ ℤ/2 ⊕ ℤ/2, d'ordre 8.",
+  "legende_titre": "Une partition qui construit un groupe",
+  "lecture": [
+   "Les trois cases violettes sont les parts de 3 = 1 + 1 + 1 : c₁, c₂ et c₃ valent 1.",
+   "Chaque flèche orange mène à un morceau bleu ℤ/2, qui a 2 éléments.",
+   "Les signes ⊕ relient les trois morceaux.",
+   "L'accolade verte multiplie les nombres d'éléments : 2 × 2 × 2 = 8 = 2³."
+  ],
+  "a_voir": "Trois parts égales à 1 donnent trois morceaux à 2 éléments, donc 8 éléments."
+ },
+ {
+  "code": "60-227",
+  "a_dire": "Pour p = 3, la partition 2 + 1 de 3 donne ℤ/9 ⊕ ℤ/3, qui a 9 × 3 = 27 = 3³ éléments.",
+  "legende_titre": "Le groupe ℤ/9 ⊕ ℤ/3 compté en cases",
+  "lecture": [
+   "La largeur du rectangle compte 9 cases : c'est ℤ/9.",
+   "La hauteur compte 3 cases : c'est ℤ/3.",
+   "Chaque case bleue est un élément de la somme directe ; le cadre vert entoure les 27 cases.",
+   "Le calcul vert donne 9 × 3 = 27 = 3³."
+  ],
+  "a_voir": "9 cases en largeur et 3 en hauteur font 27 cases."
+ },
+ {
+  "code": "60-228",
+  "a_dire": "L'algorithme liste tous les groupes abéliens d'un ordre n, sans oubli ni doublon, en passant par les facteurs premiers puis les partitions de leurs exposants ; pour n = 12 il donne deux groupes.",
+  "legende_titre": "Lister les groupes d'ordre 12",
+  "lecture": [
+   "La case bleue du haut est l'ordre n = 12 ; la case suivante le décompose : 12 = 2² × 3 (étape 1).",
+   "Les cases violettes donnent, pour chaque premier, les partitions de son exposant : 2 et 1 + 1 pour p = 2, 1 pour p = 3 (étape 2).",
+   "Les cases vertes sont les groupes obtenus en choisissant une partition par premier : ℤ/4 ⊕ ℤ/3 et ℤ/2 ⊕ ℤ/2 ⊕ ℤ/3 (étape 3)."
+  ],
+  "a_voir": "Trois étapes de haut en bas, qui finissent sur deux groupes."
+ },
+ {
+  "code": "60-229",
+  "a_dire": "L'étape 1 divise l'ordre par des premiers jusqu'à obtenir un nombre premier : 540 = 2² × 3³ × 5.",
+  "legende_titre": "Diviser 540 jusqu'à un nombre premier",
+  "lecture": [
+   "Les nombres bleus se suivent : 540, 270, 135, 45, 15 ; chaque flèche est une division par un premier.",
+   "Deux flèches orange divisent par 2 (accolade 2²) ; trois flèches violettes divisent par 3 (accolade 3³).",
+   "Le dernier nombre, 5 en vert, est premier : la division s'arrête.",
+   "Le résultat est écrit en bas : 540 = 2² × 3³ × 5."
+  ],
+  "a_voir": "Les divisions s'arrêtent sur 5, qui est premier."
+ },
+ {
+  "code": "60-230",
+  "a_dire": "L'étape 2 liste, pour chaque premier, toutes les partitions de son exposant : deux pour l'exposant 2, trois pour l'exposant 3, une pour l'exposant 1.",
+  "legende_titre": "Une liste de partitions par premier",
+  "lecture": [
+   "Les trois cases bleues du haut sont les premiers de 540 avec leur exposant : 2², 3³ et 5¹.",
+   "Sous chacune, les cases violettes listent les partitions de cet exposant.",
+   "Sous 2² : 2 et 1 + 1 ; sous 3³ : 3, 2 + 1 et 1 + 1 + 1 ; sous 5¹ : 1."
+  ],
+  "a_voir": "Trois colonnes de longueurs 2, 3 et 1."
+ },
+ {
+  "code": "60-231",
+  "a_dire": "L'étape 3 choisit une partition par premier ; chaque choix donne un groupe, somme directe des morceaux obtenus : pour 540, un choix donne ℤ/4 ⊕ ℤ/9 ⊕ ℤ/3 ⊕ ℤ/5.",
+  "legende_titre": "Choisir une partition par premier",
+  "lecture": [
+   "Chaque colonne correspond à un premier : p = 2, p = 3, p = 5.",
+   "Dans chaque colonne, la case orange est la partition choisie ; les cases grises ne sont pas choisies.",
+   "Sous chaque colonne, en orange, se trouvent les morceaux donnés par ce choix : ℤ/4 ; ℤ/9 et ℤ/3 ; ℤ/5.",
+   "Les signes ⊕ relient les morceaux en un seul groupe."
+  ],
+  "a_voir": "Une seule case orange par colonne, et les morceaux correspondants en dessous."
+ },
+ {
+  "code": "60-232",
+  "a_dire": "Le nombre de groupes est P(a₁) × P(a₂) × … × P(aₖ), un facteur par premier : 2 × 3 × 1 = 6 pour 540, et P(5) = 7 pour 32.",
+  "legende_titre": "Un facteur par premier, pour deux ordres",
+  "lecture": [
+   "En haut (bleu), n = 540 : trois piles de carrés, de hauteurs 2, 3 et 1 ; ce sont P(2), P(3) et P(1).",
+   "Les signes × orange les multiplient, et le résultat vert est 6.",
+   "En bas (violet), n = 32 = 2⁵ : un seul exposant, donc une seule rangée de 7 carrés, P(5) = 7."
+  ],
+  "a_voir": "Le même calcul, un facteur par premier, avec trois facteurs en haut et un seul en bas."
+ },
+ {
+  "code": "60-233",
+  "a_dire": "Le choix de la partition de chaque premier est indépendant des autres, donc on multiplie les nombres de choix : 2 × 3 × 1 = 6.",
+  "legende_titre": "Pourquoi on multiplie les choix",
+  "lecture": [
+   "Les deux cases bleues du haut sont les deux choix pour le premier 2 : 2 et 1 + 1.",
+   "Sous chacune, trois cases violettes sont les trois choix pour le premier 3 : les mêmes trois sous chaque choix de 2.",
+   "Le premier 5 n'a qu'un seul choix, qui ne multiplie rien.",
+   "Les six cases du bas sont les combinaisons : 2 × 3 × 1 = 6."
+  ],
+  "a_voir": "Chaque choix du haut a les mêmes trois choix dessous : on obtient 2 fois 3 branches."
+ },
+ {
+  "code": "60-234",
+  "a_dire": "Si on retire l'hypothèse « fini », la liste n'est plus complète : ℤ est abélien mais infini, donc il n'est somme finie d'aucun ℤ/d et aucun ordre n ne le décrit.",
+  "legende_titre": "Un groupe abélien infini hors de la liste",
+  "lecture": [
+   "La droite bleue en haut représente ℤ : ses flèches vont des deux côtés, il a une infinité d'éléments.",
+   "Le cercle violet en bas à gauche est ℤ/4 : il a seulement 4 éléments, 0, 1, 2 et 3.",
+   "La flèche rouge mène à l'énoncé faux : ℤ n'est jamais une somme finie de ℤ/d, et aucun ordre n ne le décrit."
+  ],
+  "a_voir": "Une droite sans fin en haut, un cercle de 4 éléments en bas : le cercle ne peut pas remplacer la droite."
+ },
+ {
+  "code": "60-235",
+  "a_dire": "540 se décompose en 2² × 3³ × 5 : les exposants sont 2, 3 et 1.",
+  "legende_titre": "Décomposer 540 en nombres premiers",
+  "lecture": [
+   "Les cases bleues du haut sont 540, 270, 135 et 27 ; chaque flèche orange enlève un facteur.",
+   "Sous chaque case bleue, la case verte donne le facteur enlevé : 2, 2, 5, et pour 27 le facteur 3³.",
+   "L'accolade 2² regroupe les deux facteurs 2.",
+   "L'égalité du bas écrit le résultat : 540 = 2² × 3³ × 5."
+  ],
+  "a_voir": "Les cases vertes, lues ensemble, donnent la décomposition de 540."
+ },
+ {
+  "code": "60-236",
+  "a_dire": "Sous chaque premier de 540, les cadres sont les partitions de son exposant ; le nombre de groupes est le nombre de façons de choisir un cadre par colonne : 2 × 3 × 1 = 6.",
+  "legende_titre": "Les cadres de chaque premier de 540",
+  "lecture": [
+   "Chaque colonne porte un premier avec son exposant : 2², 3³, 5¹.",
+   "Chaque cadre est une partition de l'exposant ; la ligne du dessous donne les ordres des morceaux : par exemple 9 et 3 sous 2 + 1.",
+   "La colonne 2² a 2 cadres, la colonne 3³ en a 3, la colonne 5¹ en a 1.",
+   "Le produit vert est 2 × 3 × 1 = 6 groupes."
+  ],
+  "a_voir": "Deux, trois et un cadre dans les trois colonnes : leur produit est 6."
+ },
+ {
+  "code": "60-237",
+  "a_dire": "Chaque partition donne un groupe de la bonne taille : pour p = 2, ℤ/4 ou ℤ/2 ⊕ ℤ/2 ; pour p = 3, ℤ/27, ℤ/9 ⊕ ℤ/3 ou ℤ/3 ⊕ ℤ/3 ⊕ ℤ/3 ; pour p = 5, ℤ/5.",
+  "legende_titre": "Les groupes de chaque premier de 540",
+  "lecture": [
+   "La case bleue de gauche nomme le premier : p = 2, p = 3 ou p = 5.",
+   "Chaque case orange est une partition de l'exposant de ce premier.",
+   "À droite de chaque partition, la case grise donne le groupe qui lui correspond."
+  ],
+  "a_voir": "Chaque partition donne un groupe : à chaque ligne orange correspond une case grise."
+ },
+ {
+  "code": "60-238",
+  "a_dire": "Le total est P(2) × P(3) × P(1) = 2 × 3 × 1 = 6 : il y a six groupes abéliens d'ordre 540, et pas un de plus.",
+  "legende_titre": "Six groupes d'ordre 540",
+  "lecture": [
+   "La première ligne écrit le produit P(2) × P(3) × P(1) ; la seconde le calcule : 2 × 3 × 1 = 6.",
+   "Les six cases vertes numérotées de 1 à 6 sont les six groupes, sous l'accolade « six groupes ».",
+   "La case rouge en pointillés, 7, est celle qui n'existe pas : il n'y a pas de septième groupe."
+  ],
+  "a_voir": "Six cases vertes, et une septième en rouge qui n'existe pas."
+ },
+ {
+  "code": "60-239",
+  "a_dire": "Une même liste de six groupes se lit de deux façons : par diviseurs élémentaires à gauche, par facteurs invariants à droite ; le produit de chaque liste vaut 540.",
+  "legende_titre": "Deux lectures des six groupes d'ordre 540",
+  "lecture": [
+   "Chaque ligne est un groupe : les cases violettes de gauche donnent ses diviseurs élémentaires, les cases bleues de droite ses facteurs invariants, reliés par une double flèche.",
+   "La ligne orange montre un exemple : 4, 3, 3, 3, 5 à gauche et 3, 3, 60 à droite.",
+   "Dans chaque ligne, le produit des nombres vaut 540, par exemple 3 × 3 × 60 = 540."
+  ],
+  "a_voir": "Chaque ligne a deux listes différentes qui ont le même produit, 540."
+ }
+]

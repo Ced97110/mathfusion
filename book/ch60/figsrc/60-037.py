@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 26, 42, 20, 14, 'sujet', label='tor', size='l')
+box(ax, 46, 42, 16, 14, 'fixe', label='M', size='l')
+box(ax, 4, 18, 38, 12, 'sujet', label='les éléments de torsion', size='s')
+box(ax, 46, 18, 38, 12, 'fixe', label='du module M', size='s')
+arrow(ax, (36, 42), (23, 31), 'sujet')
+arrow(ax, (54, 42), (65, 31), 'fixe')
+text(ax, 44, 8, 'ex. couples (entier, heure de 4) :', 'fixe', 's')
+text(ax, 44, 2.5, 'tor M = les 4 couples (0, heure)', 'sujet', 's')
+save(fig, '60-037')

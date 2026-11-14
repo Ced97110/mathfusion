@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 9, 82, 54, 'fixe')
+text(ax, 8, 58, 'M = ℤ/12 : 12 heures', 'fixe', 'm', ha='left')
+box(ax, 9, 13, 70, 38, 'autre')
+text(ax, 14, 46, 'tor M : 12 heures', 'autre', 'm', ha='left')
+box(ax, 15, 17, 44, 22, 'sujet')
+text(ax, 37, 32, r'$M_2$ : 0, 3, 6, 9', 'sujet', 'm')
+text(ax, 37, 23, '4 × y = 0', 'sujet', 'm')
+text(ax, 69, 28, r'$4 = 2^2$', 'sujet', 's')
+text(ax, 44, 3.5, r'$M_2 \subseteq \mathrm{tor}\,M \subseteq M$', 'encre', 'm')
+save(fig, '60-044')

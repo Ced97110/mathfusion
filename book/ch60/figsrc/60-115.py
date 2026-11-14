@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 22, 58, 44, 11, 'sujet', label=r'$G$ , $p$ divise $|G|$')
+box(ax, 2, 32, 40, 12, 'fixe', label='aucun sous-groupe propre', size='s')
+box(ax, 46, 32, 40, 12, 'sujet', label=r'un sous-groupe propre $H$', size='s')
+arrow(ax, (32, 57), (22, 45), 'fixe')
+arrow(ax, (56, 57), (66, 45), 'varie')
+box(ax, 2, 8, 40, 14, 'resultat', label='G engendré par\nun élément non nul', size='s')
+box(ax, 46, 8, 40, 14, 'varie', label='H et G/H plus petits :\nrécurrence', size='s')
+arrow(ax, (22, 31), (22, 23), 'fixe')
+arrow(ax, (66, 31), (66, 23), 'varie')
+save(fig, '60-115')

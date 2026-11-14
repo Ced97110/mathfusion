@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 3, 55, 'décomposition A', 'fixe', 's', ha='left')
+box(ax, 3, 38, 26, 13, 'sujet', label='⟨(1, 0)⟩' + '\n' + '2 éléments', size='s')
+box(ax, 32, 38, 26, 13, 'sujet', label='⟨(0, 1)⟩' + '\n' + '6 éléments', size='s')
+text(ax, 73, 44.5, 'annulateurs' + '\n' + '2 puis 6', 'resultat', 's')
+text(ax, 3, 31, 'décomposition B', 'fixe', 's', ha='left')
+box(ax, 3, 14, 26, 13, 'varie', label='⟨(1, 3)⟩' + '\n' + '2 éléments', size='s')
+box(ax, 32, 14, 26, 13, 'sujet', label='⟨(0, 1)⟩' + '\n' + '6 éléments', size='s')
+text(ax, 73, 20.5, 'annulateurs' + '\n' + '2 puis 6', 'resultat', 's')
+text(ax, 44, 5, 'morceaux changés, même liste', 'varie', 'm')
+save(fig, '60-057')

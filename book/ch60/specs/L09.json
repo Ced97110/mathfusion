@@ -1,0 +1,372 @@
+[
+ {
+  "code": "60-240",
+  "a_dire": "Pour la ligne 2, 2, 3, 3, 3, 5, on prend le plus grand de chaque premier, on multiplie, puis on recommence : 30, 6, 3.",
+  "legende_titre": "Le calcul de la première ligne",
+  "lecture": [
+   "À gauche, chaque rangée de cases est une liste de diviseurs élémentaires ; les cases orange sont celles que l'on prend, les cases bleues celles qui restent.",
+   "Première rangée : on prend 2, 3 et 5, et le produit 2 × 3 × 5 donne 30.",
+   "La deuxième rangée contient ce qui reste, 2, 3, 3 : on prend 2 et 3, le produit est 6.",
+   "La dernière case, 3, est ce qui reste : c'est 3. Les nombres verts à droite, 30, 6 et 3, sont les facteurs invariants."
+  ],
+  "a_voir": "Les diviseurs élémentaires donnent, rangée après rangée, les facteurs invariants en vert."
+ },
+ {
+  "code": "60-241",
+  "a_dire": "Quand il n'y a qu'un seul facteur invariant, 540, le groupe est ℤ/540 : un groupe cyclique, qui contient un élément d'ordre 540.",
+  "legende_titre": "Un seul facteur invariant : 540",
+  "lecture": [
+   "En haut, les trois cases bleues 4, 27 et 5 sont les diviseurs élémentaires de la dernière ligne.",
+   "Leur produit est la case verte 540 : c'est l'unique facteur invariant.",
+   "Le cercle en bas représente ℤ/540 : on revient à 0 après 539.",
+   "Le point orange marque 1 : en ajoutant 1 on parcourt tout le cercle, donc 1 est d'ordre 540."
+  ],
+  "a_voir": "Un seul facteur invariant donne un groupe où un seul élément fait tout le tour."
+ },
+ {
+  "code": "60-242",
+  "a_dire": "Si aucun premier n'est répété (30 = 2 × 3 × 5), chaque exposant vaut 1, chaque P(1) vaut 1, et il n'y a qu'un seul groupe : ℤ/30.",
+  "legende_titre": "Le cas où rien n'est répété : n = 30",
+  "lecture": [
+   "Les trois cases bleues sont les trois premiers de 30, chacun avec l'exposant 1.",
+   "Sous chaque case, en vert, P(1) = 1 : il n'y a qu'une façon d'écrire 1 comme somme.",
+   "Les trois valeurs se multiplient dans la case verte du bas : 1 × 1 × 1 = 1 groupe, qui est ℤ/30."
+  ],
+  "a_voir": "Trois exposants égaux à 1 donnent un produit égal à 1 : un seul groupe."
+ },
+ {
+  "code": "60-243",
+  "a_dire": "Pour 32 = 2^5, il y a P(5) = 7 façons d'écrire 5 comme somme, donc 7 groupes d'ordre 32.",
+  "legende_titre": "Un seul premier, un grand exposant : n = 32",
+  "lecture": [
+   "Chaque rangée est une façon d'écrire 5 comme somme ; l'écriture est à gauche.",
+   "Les cases bleues ont une largeur égale à chaque terme : toutes les rangées ont la même longueur totale, 5.",
+   "Il y a sept rangées différentes, et l'accolade verte à droite donne leur nombre : P(5) = 7."
+  ],
+  "a_voir": "Le seul exposant 5 donne sept rangées différentes, donc sept groupes."
+ },
+ {
+  "code": "60-244",
+  "a_dire": "Le nombre de groupes dépend des répétitions dans la factorisation de n, pas de la taille de n : 30 donne 1 groupe, 32 en donne 7.",
+  "legende_titre": "Répétitions ou taille ?",
+  "lecture": [
+   "En haut, 30 s'écrit avec trois cases bleues différentes, 2, 3 et 5 : aucun premier n'est répété, donc 1 groupe.",
+   "En bas, 32 s'écrit avec cinq cases orange égales à 2 : le premier 2 est répété, donc 7 groupes.",
+   "Les deux nombres sont proches, mais le nombre de groupes est très différent."
+  ],
+  "a_voir": "Ce qui change le nombre de groupes, ce sont les cases répétées, pas la valeur de n."
+ },
+ {
+  "code": "60-245",
+  "a_dire": "Si la torsion de M est réduite à 0, la somme tor M ⊕ L ne contient que L : M est égal à L, donc M est libre.",
+  "legende_titre": "Quand la torsion est nulle",
+  "lecture": [
+   "Les points forment le groupe des couples d'entiers.",
+   "Le gros point orange est (0, 0) : c'est le seul couple tué par un entier non nul, donc la torsion est 0.",
+   "Tous les autres points bleus ne sont tués par aucun entier non nul.",
+   "À droite, M = tor M ⊕ L ; avec tor M = 0, la case verte conclut : M = L, M est libre."
+  ],
+  "a_voir": "Sans autre point que 0 dans la torsion, il ne reste que le module libre."
+ },
+ {
+  "code": "60-246",
+  "a_dire": "Pour ℤ ⊕ ℤ ⊕ ℤ, tous les facteurs invariants sont nuls, il n'y a aucun diviseur élémentaire, et le seul invariant est le rang : le nombre de copies de ℤ, ici 3.",
+  "legende_titre": "Le seul nombre qui reste : le rang",
+  "lecture": [
+   "Les trois droites bleues sont trois copies de ℤ, mises en somme directe par les signes ⊕.",
+   "Les trois traits verts se rejoignent dans la case verte : le nombre de copies est le rang, 3.",
+   "Les deux cases grises du bas disent qu'il n'y a que des facteurs invariants nuls et aucun diviseur élémentaire."
+  ],
+  "a_voir": "Le seul nombre qui décrit le module est le nombre de copies de ℤ."
+ },
+ {
+  "code": "60-247",
+  "a_dire": "Sans torsion, le théorème d'invariance se réduit à dire que deux bases d'un même module libre ont le même nombre d'éléments : l'invariance du rang.",
+  "legende_titre": "Deux bases, un seul nombre",
+  "lecture": [
+   "La rangée bleue du haut est une base du module libre au centre.",
+   "La rangée violette du bas est une autre base du même module.",
+   "Les deux rangées ont 3 éléments : la case verte dit que le nombre est le même."
+  ],
+  "a_voir": "Deux bases différentes du même module ont le même nombre d'éléments."
+ },
+ {
+  "code": "60-248",
+  "a_dire": "Un module libre non nul comme F[λ] est sans torsion mais de dimension infinie ; pour une transformation d'un espace de dimension finie, le cas sans torsion est impossible.",
+  "legende_titre": "Sans torsion, mais en dimension infinie",
+  "lecture": [
+   "Les cases bleues sont les polynômes 1, λ, λ², λ³ et ainsi de suite ; chaque flèche orange multiplie par λ.",
+   "Multiplier un polynôme non nul par λ ne donne jamais 0 : il n'y a pas de torsion.",
+   "La longue flèche grise indique que cette suite ne s'arrête pas : la dimension est infinie.",
+   "Le cadre rouge dit que cette situation n'existe pas en dimension finie."
+  ],
+  "a_voir": "Sans torsion, la suite ne s'arrête jamais : la dimension finie force la torsion."
+ },
+ {
+  "code": "60-249",
+  "a_dire": "Pour la matrice à une case égale à 5, λ1 − A vaut λ − 5, qui n'est pas le polynôme nul : le déterminant de λ1 − A est donc différent de 0.",
+  "legende_titre": "Un déterminant qui n'est jamais nul",
+  "lecture": [
+   "La case orange est λ1, la case bleue est la matrice A, qui vaut 5.",
+   "La case verte est le résultat de la soustraction : λ − 5, un polynôme de degré 1.",
+   "La grande case verte du bas écrit le déterminant, égal à λ − 5, qui est différent de 0."
+  ],
+  "a_voir": "Le déterminant de λ1 − A est un vrai polynôme, jamais nul."
+ },
+ {
+  "code": "60-250",
+  "a_dire": "Si tous les diviseurs élémentaires ont l'exposant 1, tous les blocs de Jordan sont de taille 1 et la matrice est diagonale.",
+  "legende_titre": "Exposants tous égaux à 1",
+  "lecture": [
+   "Les deux cases bleues de gauche sont les diviseurs élémentaires λ − 2, chacun avec l'exposant 1.",
+   "Chaque flèche orange mène à un bloc de taille 1 : la case 2 sur la diagonale.",
+   "Les deux cases grises 0 montrent qu'il n'y a aucun 1 hors de la diagonale."
+  ],
+  "a_voir": "Chaque diviseur d'exposant 1 donne une seule case sur la diagonale."
+ },
+ {
+  "code": "60-251",
+  "a_dire": "T est diagonalisable quand tous les blocs de sa forme de Jordan sont de taille 1 ; la matrice (2, 0 ; 0, 2) l'est, la matrice (2, 1 ; 0, 2) ne l'est pas.",
+  "legende_titre": "Diagonalisable ou non",
+  "lecture": [
+   "À gauche, la matrice bleue qui double le plan : des 2 sur la diagonale et des 0 ailleurs, donc diagonalisable.",
+   "À droite, la matrice violette a un 1 en rouge au-dessus de la diagonale.",
+   "Ce 1 marque un bloc de taille 2 : la matrice n'est pas diagonalisable."
+  ],
+  "a_voir": "Le 1 hors de la diagonale est ce qui empêche d'être diagonalisable."
+ },
+ {
+  "code": "60-252",
+  "a_dire": "T est diagonalisable si et seulement si le polynôme minimal n'a que des racines simples ; le polynôme caractéristique ne suffit pas pour décider.",
+  "legende_titre": "Le critère porte sur le polynôme minimal",
+  "lecture": [
+   "À gauche, la matrice qui double le plan : elle est diagonale.",
+   "La case rouge du haut est le polynôme caractéristique f = (λ − 2)², qui a une racine double : un test sur f donnerait une réponse fausse.",
+   "La case verte du bas est le polynôme minimal m = λ − 2, qui a une racine simple : le test sur m est juste."
+  ],
+  "a_voir": "La matrice est diagonale alors que f a une racine double : c'est m qui décide."
+ },
+ {
+  "code": "60-253",
+  "a_dire": "A′ est diagonalisable car son polynôme minimal λ − 2 a une racine simple ; A ne l'est pas car (λ − 1)² divise son polynôme minimal.",
+  "legende_titre": "Le critère appliqué à deux matrices",
+  "lecture": [
+   "À gauche, la matrice A′ a pour polynôme minimal λ − 2 : une seule case bleue, une racine simple.",
+   "À droite, la matrice A a pour polynôme minimal (λ − 1)² : deux cases violettes égales, une racine double.",
+   "Le texte vert dit que A′ est diagonalisable, le texte rouge que A ne l'est pas."
+  ],
+  "a_voir": "Une racine simple (une case) donne une matrice diagonalisable, une racine double (deux cases) non."
+ },
+ {
+  "code": "60-254",
+  "a_dire": "Comme le discriminant nul du chapitre 23 signalait une racine double, une racine double du polynôme minimal signale un bloc de taille au moins 2.",
+  "legende_titre": "Un signal de racine double",
+  "lecture": [
+   "À gauche, la courbe bleue touche la droite grise en un seul point orange : une racine double, quand le discriminant est nul.",
+   "À droite, la matrice a un 1 orange au-dessus de la diagonale : c'est un bloc de taille au moins 2.",
+   "La flèche orange à double sens relie les deux : dans les deux cas, une racine double sert de signal."
+  ],
+  "a_voir": "Racine double d'un côté, bloc de taille au moins 2 de l'autre : les deux sont des signaux."
+ },
+ {
+  "code": "60-255",
+  "a_dire": "Dans ℤ/4 ⊕ ℤ/2, l'élément g = (2, 0) est d'ordre 2 alors que l'ordre maximal est 4 : c'est un cas où l'hypothèse « ordre maximal » n'est pas remplie.",
+  "legende_titre": "Un élément qui n'est pas d'ordre maximal",
+  "lecture": [
+   "Les huit cases sont les huit éléments du groupe, écrits comme des couples.",
+   "Les cases bleues (1, 0), (3, 0), (1, 1) et (3, 1) sont d'ordre 4, l'ordre maximal.",
+   "La case orange est g = (2, 0), d'ordre 2.",
+   "Les cases grises sont d'ordre 2 au plus."
+  ],
+  "a_voir": "g = (2, 0) est d'ordre 2, alors que quatre éléments sont d'ordre 4."
+ },
+ {
+  "code": "60-256",
+  "a_dire": "Un complément K de ⟨g⟩ aurait 8 ÷ 2 = 4 éléments, et un groupe à 4 éléments est ℤ/4 ou ℤ/2 ⊕ ℤ/2.",
+  "legende_titre": "Combien d'éléments pour K ?",
+  "lecture": [
+   "La rangée bleue du haut a 8 cases : les 8 éléments de G.",
+   "La rangée orange a 2 cases : les éléments de ⟨g⟩.",
+   "La rangée violette a 4 cases : 8 ÷ 2 = 4 éléments pour K.",
+   "En bas, deux groupes à 4 éléments : ℤ/4, des points sur un cercle, ou ℤ/2 ⊕ ℤ/2, des points en carré."
+  ],
+  "a_voir": "K a 4 éléments, et il n'y a que deux sortes de groupes à 4 éléments."
+ },
+ {
+  "code": "60-257",
+  "a_dire": "Si K est engendré par un élément d'ordre 4, le double de cet élément vaut (2, 0) dans les quatre cas : K contient (2, 0).",
+  "legende_titre": "Premier cas : un générateur d'ordre 4",
+  "lecture": [
+   "Les quatre cases bleues sont les quatre éléments d'ordre 4 du groupe.",
+   "Chaque flèche orange double l'élément de départ.",
+   "Les quatre flèches arrivent à la même case orange, (2, 0).",
+   "Le texte rouge conclut que K contient (2, 0)."
+  ],
+  "a_voir": "Les quatre doubles donnent le même résultat, (2, 0)."
+ },
+ {
+  "code": "60-258",
+  "a_dire": "Si K est formé de 4 éléments d'ordre au plus 2, K est exactement l'ensemble de ces éléments du groupe, et il contient (2, 0).",
+  "legende_titre": "Second cas : éléments d'ordre au plus 2",
+  "lecture": [
+   "Les huit cases sont les huit éléments du groupe ℤ/4 ⊕ ℤ/2.",
+   "Les cases bleues (0, 0), (0, 1) et (2, 1) sont d'ordre au plus 2 ; la case orange (2, 0) l'est aussi.",
+   "Ces quatre cases sont exactement les quatre éléments de K.",
+   "Les cases grises sont d'ordre 4 : elles ne sont pas dans K."
+  ],
+  "a_voir": "Les quatre éléments d'ordre au plus 2 forment K, et (2, 0) en fait partie."
+ },
+ {
+  "code": "60-259",
+  "a_dire": "⟨(2, 0)⟩ n'a pas de complément : les deux sortes de groupes à 4 éléments contiennent (2, 0), donc l'hypothèse « ordre maximal » ne peut pas être retirée.",
+  "legende_titre": "Aucun complément possible",
+  "lecture": [
+   "En haut, K est le complément cherché : il aurait 4 éléments.",
+   "La rangée du haut est ⟨g⟩ : les deux éléments (0, 0) et (2, 0).",
+   "La rangée du milieu est un K de type ℤ/4 ; la rangée du bas est un K de type ℤ/2 ⊕ ℤ/2.",
+   "Dans les trois rangées, la case rouge est (2, 0) : le trait rouge pointillé les relie. K touche ⟨g⟩ ailleurs qu'en (0, 0) : aucun complément."
+  ],
+  "a_voir": "Dans chaque cas possible, K contient (2, 0), le même élément que ⟨g⟩ : il n'y a pas de complément."
+ },
+ {
+  "code": "60-260",
+  "a_dire": "Sur ℂ, tout polynôme se factorise en degré 1 ; la forme de Jordan existe donc pour toute matrice complexe.",
+  "legende_titre": "Sur ℂ, tout se factorise",
+  "lecture": [
+   "À gauche, la courbe bleue du polynôme λ² + 1 ne touche jamais la droite des nombres réels : il n'a pas de racine réelle.",
+   "À droite, le plan des nombres complexes montre deux points verts, i et −i : ce sont ses deux racines.",
+   "La case verte écrit la factorisation en deux facteurs de degré 1."
+  ],
+  "a_voir": "Ce qui n'a pas de racine réelle se factorise en degré 1 avec les nombres complexes."
+ },
+ {
+  "code": "60-261",
+  "a_dire": "On passe aux nombres complexes même pour un problème réel, parce qu'ils donnent les racines manquantes et garantissent la forme de Jordan.",
+  "legende_titre": "Pourquoi sortir des nombres réels",
+  "lecture": [
+   "La grande case violette est ℂ : elle contient toutes les racines.",
+   "La case bleue à l'intérieur est le problème de départ : une matrice réelle.",
+   "La flèche orange sort de ℝ vers ℂ, où se trouve la racine verte qui manquait dans ℝ.",
+   "Le texte vert du bas donne le gain : la forme de Jordan est garantie."
+  ],
+  "a_voir": "La racine qui manque dans ℝ existe dans ℂ, qui contient ℝ."
+ },
+ {
+  "code": "60-262",
+  "a_dire": "Au chapitre 63, le groupe de Galois d'une extension est un groupe fini, souvent abélien, que le théorème de structure permet de classer.",
+  "legende_titre": "Un premier usage : le groupe de Galois",
+  "lecture": [
+   "La case violette est un corps plus grand, qui contient le corps de la case bleue.",
+   "La flèche « ch. 63 » mène au groupe de Galois, groupe fini et souvent abélien.",
+   "La case verte est le théorème de structure, qui décrit ce groupe comme une somme de ℤ/d.",
+   "La formule en bas est le résultat : une somme directe de groupes ℤ/d."
+  ],
+  "a_voir": "Un corps plus grand donne un groupe fini, que l'on classe avec le théorème de structure."
+ },
+ {
+  "code": "60-263",
+  "a_dire": "Au chapitre 66, pour savoir quels polygones réguliers sont constructibles, on utilise la structure du groupe abélien fini (ℤ/n)^×.",
+  "legende_titre": "Un second usage : les polygones constructibles",
+  "lecture": [
+   "Le polygone bleu a tous ses côtés égaux, marqués par un trait : c'est un polygone régulier.",
+   "La question orange est de savoir s'il est constructible à la règle et au compas ; la flèche « ch. 66 » mène au groupe violet (ℤ/n)^×, que l'on étudie.",
+   "Ce groupe est abélien fini : le théorème de structure l'écrit comme une somme de groupes cycliques, case verte."
+  ],
+  "a_voir": "Une question de géométrie, le polygone, se ramène à l'étude d'un groupe de l'algèbre."
+ },
+ {
+  "code": "60-264",
+  "a_dire": "Si le dernier facteur invariant d_s est égal à l'ordre, les autres facteurs valent 1 et le groupe est ℤ/d_s, donc cyclique.",
+  "legende_titre": "Le dernier facteur égale l'ordre",
+  "lecture": [
+   "Les cases grises sont les premiers facteurs, tous égaux à 1 ; la case bleue est le dernier, d_s = 12.",
+   "Les signes × les multiplient : l'accolade verte dit que le produit est l'ordre, 12.",
+   "Comme d_s vaut déjà 12, les autres valent 1.",
+   "La case verte du bas conclut : le groupe est ℤ/12, cyclique."
+  ],
+  "a_voir": "Un seul facteur différent de 1 donne un groupe cyclique."
+ },
+ {
+  "code": "60-265",
+  "a_dire": "La preuve de Judson détache un sous-groupe H, passe au quotient G/H qui a moins d'éléments, et recommence : c'est une méthode qui sert de modèle.",
+  "legende_titre": "La preuve de Judson comme modèle",
+  "lecture": [
+   "La rangée du haut est G : la part orange est le sous-groupe H, la part bleue est le quotient G/H.",
+   "La rangée du milieu reprend G/H, plus courte : on détache un nouveau sous-groupe H′ en orange.",
+   "La rangée du bas est encore plus courte : on recommence.",
+   "Les traits pointillés montrent que chaque rangée est la partie bleue de la précédente."
+  ],
+  "a_voir": "À chaque étape, la rangée est plus courte : le nombre d'éléments diminue."
+ },
+ {
+  "code": "60-266",
+  "a_dire": "Deux matrices sont conjuguées si et seulement si elles ont les mêmes facteurs invariants ; le polynôme caractéristique seul ne suffit pas, il faut la liste complète.",
+  "legende_titre": "Il faut la liste complète",
+  "lecture": [
+   "Les deux matrices ont le même polynôme caractéristique, (λ − 2)², écrit en vert en haut.",
+   "Sous la matrice bleue de gauche, la liste a un seul facteur, (λ − 2)².",
+   "Sous la matrice violette de droite, la liste a deux facteurs, λ − 2 et λ − 2.",
+   "Les listes sont différentes : le texte rouge dit que les matrices ne sont pas semblables."
+  ],
+  "a_voir": "Même produit, listes différentes : les matrices ne sont pas semblables."
+ },
+ {
+  "code": "60-267",
+  "a_dire": "Pour une forme symétrique réelle, la matrice est symétrique et son polynôme caractéristique a toutes ses racines réelles : la forme de Jordan est diagonale.",
+  "legende_titre": "Matrice symétrique, racines réelles",
+  "lecture": [
+   "La matrice de gauche est symétrique : deux cases placées de façon symétrique par rapport à la diagonale ont la même lettre et la même couleur.",
+   "La flèche orange mène aux racines du polynôme caractéristique f : trois points verts sur la droite des nombres réels.",
+   "Toutes les racines sont réelles, donc la forme de Jordan est diagonale."
+  ],
+  "a_voir": "Une matrice symétrique réelle n'a que des racines réelles, donc une forme diagonale."
+ },
+ {
+  "code": "60-268",
+  "a_dire": "Les matrices qui commutent avec A s'additionnent, se multiplient et se multiplient par un scalaire en restant des matrices qui commutent avec A : elles forment une algèbre.",
+  "legende_titre": "Matrices qui commutent avec A",
+  "lecture": [
+   "Le grand cadre pointillé est l'ensemble des matrices qui commutent avec A.",
+   "Les deux cases bleues X et Y sont deux de ces matrices.",
+   "Les trois flèches orange mènent à la somme X + Y, au produit X × Y et au multiple cX.",
+   "Les trois cases vertes sont dans le cadre : le résultat commute encore avec A."
+  ],
+  "a_voir": "Somme, produit et multiple restent dans le cadre."
+ },
+ {
+  "code": "60-269",
+  "a_dire": "A et A′ ont le même polynôme caractéristique (λ − 2)², mais des polynômes minimaux différents : elles ne sont pas semblables, et le polynôme minimal apporte une information de plus.",
+  "legende_titre": "Même f, polynômes minimaux différents",
+  "lecture": [
+   "La matrice bleue A a des 2 sur la diagonale et un 1 en haut à droite ; la matrice violette A′ est celle qui double le plan.",
+   "Les deux flèches du haut mènent à la même case grise : f = (λ − 2)² pour les deux.",
+   "Les deux flèches du bas mènent à des polynômes minimaux différents : (λ − 2)² pour A, λ − 2 pour A′.",
+   "Le signe rouge ≠ marque cette différence."
+  ],
+  "a_voir": "f est le même pour les deux matrices, m ne l'est pas."
+ },
+ {
+  "code": "60-270",
+  "a_dire": "La question est de savoir si deux listes de facteurs invariants peuvent avoir le même produit f et le même dernier terme m sans être égales.",
+  "legende_titre": "Deux invariants suffisent-ils ?",
+  "lecture": [
+   "La rangée du haut est la liste d₁, d₂, d₃ d'une matrice ; la rangée du bas est la liste e₁, e₂, e₃ d'une autre.",
+   "Le produit de chaque liste donne f, écrit à droite ; la case verte à la fin de chaque liste est m.",
+   "Le texte vert du milieu dit que f et m sont les mêmes pour les deux.",
+   "La question orange est de savoir si les listes peuvent quand même être différentes."
+  ],
+  "a_voir": "On compare deux listes qui ont le même produit et le même dernier terme."
+ },
+ {
+  "code": "60-271",
+  "a_dire": "Il faut trouver deux listes de diviseurs élémentaires différentes, de mêmes f et m, et chercher la plus petite taille n, somme des degrés d'une liste.",
+  "legende_titre": "Chercher la plus petite taille",
+  "lecture": [
+   "La rangée bleue est une liste de diviseurs élémentaires q₁, q₂, q₃ ; la rangée violette en est une autre, t₁, t₂, t₃.",
+   "La largeur de chaque case représente son degré.",
+   "Les deux rangées ont la même longueur totale : c'est la taille n, somme des degrés, marquée par l'accolade.",
+   "Le texte vert rappelle que f et m sont les mêmes ; le texte orange pose la question de la plus petite valeur de n."
+  ],
+  "a_voir": "Deux listes différentes ont la même longueur totale n ; on cherche la plus petite."
+ }
+]

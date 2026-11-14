@@ -1,0 +1,350 @@
+[
+ {
+  "code": "60-001",
+  "a_dire": "Dans ℤ/12, on additionne puis on garde le reste dans la division par 12 : 9 + 5 = 14 revient à 2.",
+  "legende_titre": "Ajouter 5 heures à 9 heures",
+  "lecture": [
+   "Les douze disques bleus sont les heures de 0 à 11.",
+   "Le disque orange est l’heure de départ, 9.",
+   "La flèche orange « +5 » avance de cinq heures en passant par 0.",
+   "Le disque vert est l’heure d’arrivée, 2 : le total 14 revient à 2."
+  ],
+  "a_voir": "Après 11, l’horloge revient à 0, donc 14 devient 2."
+ },
+ {
+  "code": "60-002",
+  "a_dire": "Un groupe est cyclique si au moins un élément, ajouté plusieurs fois, produit tout le groupe.",
+  "legende_titre": "Un nombre qui produit toute l’horloge",
+  "lecture": [
+   "À gauche, les flèches orange suivent « ajouter 5 » en partant de 0 : elles passent par les 12 disques verts.",
+   "À droite, les flèches orange suivent « ajouter 3 » : elles ne passent que par 4 disques bleus.",
+   "Les 8 disques gris de droite ne sont jamais atteints.",
+   "Un seul nombre, 5, produit toute l’horloge : le groupe est cyclique."
+  ],
+  "a_voir": "Le nombre 5 atteint les 12 heures : il engendre tout le groupe. Le nombre 3 s’arrête à 4 heures."
+ },
+ {
+  "code": "60-003",
+  "a_dire": "La grille 4 × 3 est un groupe de 12 cases : on additionne les lignes entre elles et les colonnes entre elles.",
+  "legende_titre": "Additionner deux cases de la grille",
+  "lecture": [
+   "Les nombres à gauche numérotent les 4 lignes, ceux du haut les 3 colonnes.",
+   "La case bleue est (2, 1).",
+   "La flèche orange va de cette case à la case verte (0, 2), résultat de (2, 1) + (2, 1).",
+   "Pour les lignes, 2 + 2 = 4 revient à 0. Pour les colonnes, 1 + 1 = 2."
+  ],
+  "a_voir": "Les lignes et les colonnes s’additionnent chacune de leur côté."
+ },
+ {
+  "code": "60-004",
+  "a_dire": "Cet exemple montre un seul calcul : (3, 2) + (1, 1) = (0, 0), car chaque composante revient à 0.",
+  "legende_titre": "Un calcul dans la grille 4 × 3",
+  "lecture": [
+   "À gauche, l’horloge à 4 positions des lignes : le disque bleu 3 est le départ.",
+   "La flèche orange « +1 » mène au disque vert 0.",
+   "À droite, l’horloge à 3 positions des colonnes : 2 plus 1 revient à 0.",
+   "Chaque horloge fait son retour à 0 sans l’autre."
+  ],
+  "a_voir": "La ligne et la colonne reviennent à 0 chacune dans leur horloge."
+ },
+ {
+  "code": "60-005",
+  "a_dire": "La grille 4 × 3 est le groupe ℤ/4 ⊕ ℤ/3 : une ligne de ℤ/4 et une colonne de ℤ/3 forment une case, soit 12 cases.",
+  "legende_titre": "Deux horloges côte à côte",
+  "lecture": [
+   "Les nombres bleus 0 à 3 à gauche sont les éléments de ℤ/4, les lignes.",
+   "Les nombres violets 0 à 2 en haut sont les éléments de ℤ/3, les colonnes.",
+   "La case bleue (2, 1) est un couple : une ligne et une colonne.",
+   "Il y a 4 × 3 = 12 cases."
+  ],
+  "a_voir": "Chaque case est un couple formé d’un élément de chaque horloge."
+ },
+ {
+  "code": "60-006",
+  "a_dire": "Le signe ⊕ dit : on prend un élément de chaque groupe, ensemble, et on additionne composante par composante.",
+  "legende_titre": "Lire le signe ⊕",
+  "lecture": [
+   "La rangée bleue de gauche montre les éléments de ℤ/4, la rangée violette de droite ceux de ℤ/3.",
+   "Les deux cases orange sont les éléments choisis : 3 dans ℤ/4 (1re place) et 1 dans ℤ/3 (2e place).",
+   "Les flèches orange les réunissent dans la case verte (3, 1)."
+  ],
+  "a_voir": "Un élément du groupe obtenu est un couple : un élément de chaque rangée."
+ },
+ {
+  "code": "60-007",
+  "a_dire": "L’horloge et la grille ont toutes deux 12 éléments : on se demande si ce sont le même groupe écrit de deux façons.",
+  "legende_titre": "Même groupe ou deux groupes ?",
+  "lecture": [
+   "Les 12 disques bleus sont l’horloge de 12 heures.",
+   "Les 12 cases violettes sont la grille de 4 lignes sur 3 colonnes.",
+   "Le point d’interrogation orange est la question posée entre les deux."
+  ],
+  "a_voir": "Avoir 12 éléments des deux côtés ne répond pas à la question."
+ },
+ {
+  "code": "60-008",
+  "a_dire": "La grille 2 × 6 a aussi 12 cases, mais la case (1, 1) ajoutée six fois revient déjà à (0, 0).",
+  "legende_titre": "Ajouter six fois la case (1, 1)",
+  "lecture": [
+   "La grille a 2 lignes et 6 colonnes, numérotées sur les bords.",
+   "Les flèches orange sont numérotées de 1 à 6 : chacune ajoute (1, 1) et mène à une nouvelle case bleue.",
+   "La flèche 6 ramène de la dernière case bleue à la case verte (0, 0), la case de départ."
+  ],
+  "a_voir": "Après 6 additions seulement, on est déjà revenu à (0, 0)."
+ },
+ {
+  "code": "60-009",
+  "a_dire": "Le théorème de structure donne une liste de morceaux, mais ne dit pas si deux listes différentes sont égales.",
+  "legende_titre": "Chaque liste vient du théorème, pas la comparaison",
+  "lecture": [
+   "En haut, le théorème donne une liste d’un seul morceau, ℤ/12 (en bleu).",
+   "En bas, le théorème donne une liste de deux morceaux, ℤ/4 et ℤ/3 (en violet).",
+   "La flèche grise entre les deux listes porte la question « listes égales ? » : le théorème n’y répond pas."
+  ],
+  "a_voir": "Le théorème fournit les listes, il ne les compare pas."
+ },
+ {
+  "code": "60-010",
+  "a_dire": "ℤ/12 s’écrit en un morceau et ℤ/4 ⊕ ℤ/3 en deux morceaux : le nombre de morceaux écrits ne dit pas si les groupes sont différents.",
+  "legende_titre": "Un morceau, deux morceaux",
+  "lecture": [
+   "La rangée bleue du haut a 12 cases : ℤ/12 en un seul morceau.",
+   "En bas, 4 cases bleues et 3 cases violettes, reliées par ⊕ : deux morceaux.",
+   "« même groupe ? » en orange est la question que l’écriture ne tranche pas."
+  ],
+  "a_voir": "Une écriture en un morceau et une écriture en deux morceaux peuvent décrire le même groupe."
+ },
+ {
+  "code": "60-011",
+  "a_dire": "Les trois objets ont 12 éléments : le comptage donne le même nombre et ne permet pas de décider.",
+  "legende_titre": "Trois objets, un même comptage",
+  "lecture": [
+   "À gauche, 12 disques en rond : l’horloge.",
+   "Au milieu, 4 lignes de 3 cases : la grille 4 × 3.",
+   "À droite, 2 lignes de 6 cases : la grille 2 × 6.",
+   "Sous chaque objet, le nombre 12."
+  ],
+  "a_voir": "Le comptage donne 12, 12, 12 : il ne sépare pas les trois objets."
+ },
+ {
+  "code": "60-012",
+  "a_dire": "Un invariant plus fin que le comptage sépare les groupes : le plus grand nombre d’additions pour revenir à 0 vaut 12 dans l’horloge et 6 dans la grille 2 × 6.",
+  "legende_titre": "Une donnée qui sépare ce que le comptage confond",
+  "lecture": [
+   "En haut, deux barres de même longueur : le nombre d’éléments est 12 pour l’horloge (bleu) et pour la grille 2 × 6 (violet).",
+   "En bas, les barres diffèrent : 12 additions au plus pour l’horloge, 6 pour la grille.",
+   "La longueur de chaque barre est proportionnelle au nombre écrit à sa droite."
+  ],
+  "a_voir": "Le comptage est égal, mais le maximum d’additions pour revenir à 0 est différent."
+ },
+ {
+  "code": "60-013",
+  "a_dire": "Deux matrices différentes peuvent décrire une même transformation dans deux repères, comme deux écritures peuvent décrire un même groupe.",
+  "legende_titre": "Deux matrices, une transformation",
+  "lecture": [
+   "À gauche, la matrice bleue de lignes (2, 0) et (0, 3), avec ses axes perpendiculaires : repère 1.",
+   "À droite, la matrice violette de lignes (2, 0) et (1, 3), avec un second axe penché : repère 2.",
+   "La flèche verte relie les deux : c’est la même transformation."
+  ],
+  "a_voir": "Les nombres des deux matrices diffèrent, la transformation reste la même."
+ },
+ {
+  "code": "60-014",
+  "a_dire": "La question des invariants se pose pareillement dans les entiers et dans les polynômes : on découpe un objet en facteurs.",
+  "legende_titre": "Découper 12 et découper un polynôme",
+  "lecture": [
+   "À gauche, dans ℤ, la boîte bleue 12 se découpe en 4 et 3.",
+   "À droite, dans F[λ], la boîte violette λ² − 1 se découpe en λ − 1 et λ + 1.",
+   "Les deux schémas ont la même forme : un objet, deux facteurs multipliés."
+  ],
+  "a_voir": "Le même schéma de découpage sert dans les deux anneaux."
+ },
+ {
+  "code": "60-015",
+  "a_dire": "Les nombres de 0 à 11 se placent dans la grille 4 × 3 ; le 7 est en ligne 3 et colonne 1.",
+  "legende_titre": "Les nombres 0 à 11 dans la grille",
+  "lecture": [
+   "Chaque case bleue porte un nombre de 0 à 11.",
+   "Dans une ligne, passer à la case suivante revient à ajouter 4 : la ligne du haut est 0, 4, 8.",
+   "La case orange est celle du 7.",
+   "Les textes donnent sa ligne, 3, et sa colonne, 1, avec le reste de 7 ÷ 4 et de 7 ÷ 3."
+  ],
+  "a_voir": "Chaque nombre a sa case, et le 7 est dans la ligne 3, colonne 1."
+ },
+ {
+  "code": "60-016",
+  "a_dire": "Pour placer un nombre, on prend son reste dans la division par 4 (la ligne) et son reste dans la division par 3 (la colonne).",
+  "legende_titre": "Placer le nombre 10",
+  "lecture": [
+   "La boîte bleue de gauche est le nombre 10.",
+   "Deux boîtes bleues donnent les restes : 2 pour la division par 4, 1 pour la division par 3.",
+   "Les flèches orange mènent à la ligne 2 et à la colonne 1 de la grille.",
+   "Le 10 est dans la case orange."
+  ],
+  "a_voir": "Deux divisions donnent la ligne et la colonne de la case."
+ },
+ {
+  "code": "60-017",
+  "a_dire": "7 est placé en (3, 1) et 5 en (1, 2), d’après leurs restes dans les divisions par 4 et par 3.",
+  "legende_titre": "Les restes de 7 et de 5",
+  "lecture": [
+   "Chaque rangée de petites cases représente le nombre : les cases bleues forment des groupes complets, les cases orange sont le reste.",
+   "Pour 7 : 1 × 4 + 3 donne la ligne 3, et 2 × 3 + 1 donne la colonne 1.",
+   "Pour 5 : 1 × 4 + 1 donne la ligne 1, et 1 × 3 + 2 donne la colonne 2.",
+   "Les flèches orange mènent aux cases vertes (3, 1) et (1, 2)."
+  ],
+  "a_voir": "Le reste de chaque division donne un numéro de la case."
+ },
+ {
+  "code": "60-018",
+  "a_dire": "Les 12 nombres occupent les 12 cases : deux nombres ne peuvent pas partager une case, donc aucune n’est vide.",
+  "legende_titre": "12 nombres, 12 cases",
+  "lecture": [
+   "Les 12 cases de la grille 4 × 3 sont vertes : aucune n’est vide.",
+   "Les lignes sont numérotées par le reste dans la division par 4, les colonnes par le reste dans la division par 3.",
+   "Le 2 (bleu) est en ligne 2, colonne 2 ; le 10 (violet) est en ligne 2, colonne 1.",
+   "Leur différence 8 = 2 × 4 les met dans la même ligne ; 8 n’est pas multiple de 3, donc leurs colonnes sont différentes."
+  ],
+  "a_voir": "2 et 10 sont dans des cases différentes : deux nombres ne partagent pas une case, et les 12 cases sont remplies."
+ },
+ {
+  "code": "60-019",
+  "a_dire": "La preuve part de deux nombres dans la même case ; l’étape qui porte tout est : multiple de 4 et de 3, donc de 12 ; puis la différence vaut 0.",
+  "legende_titre": "Pourquoi deux nombres ne partagent pas une case",
+  "lecture": [
+   "La boîte bleue du haut est le départ : x − y est multiple de 4 et de 3.",
+   "La boîte orange, au bord épais, est l’étape qui porte le poids : donc multiple de 12.",
+   "La boîte verte est l’arrivée : x − y = 0.",
+   "Sur la droite, entre −11 et 11, seul 0 (vert) est multiple de 12 ; −12 et 12 (gris) sont hors de la zone."
+  ],
+  "a_voir": "Entre −11 et 11, le seul multiple de 12 est 0."
+ },
+ {
+  "code": "60-020",
+  "a_dire": "Si deux nombres sont premiers entre eux, leurs restes déterminent un seul nombre ; sans cette hypothèse, deux nombres peuvent avoir les mêmes restes.",
+  "legende_titre": "Retirer l’hypothèse « premiers entre eux »",
+  "lecture": [
+   "À gauche (vert), avec 4 et 3, premiers entre eux, la case (2, 1) ne reçoit que le nombre 10.",
+   "À droite (rouge), avec 2 et 6, qui ont le facteur commun 2, la case (0, 0) reçoit les deux nombres 0 et 6.",
+   "Les flèches vont des nombres vers la case qu’ils ont pour restes."
+  ],
+  "a_voir": "Avec 4 et 3, un nombre par case ; avec 2 et 6, deux nombres tombent dans la même case."
+ },
+ {
+  "code": "60-021",
+  "a_dire": "Le placement respecte l’addition : 7 + 5 = 12 revient à 0 dans l’horloge, et (3, 1) + (1, 2) = (0, 0) dans la grille.",
+  "legende_titre": "Additionner avant ou après le placement",
+  "lecture": [
+   "La rangée bleue du haut additionne dans l’horloge : 7 + 5 = 12, qui revient à 0.",
+   "La rangée violette du bas additionne dans la grille : (3, 1) + (1, 2) = (4, 3), qui revient à (0, 0).",
+   "Les flèches orange « placement » relient chaque boîte du haut à sa case en bas.",
+   "Les deux résultats, en vert, se correspondent aussi."
+  ],
+  "a_voir": "Le résultat du haut est placé sur le résultat du bas."
+ },
+ {
+  "code": "60-022",
+  "a_dire": "Un isomorphisme est un placement parfait qui conserve l’addition ; le placement ligne après ligne ne la conserve pas.",
+  "legende_titre": "Un placement qui garde l’addition, un qui la perd",
+  "lecture": [
+   "À gauche, par restes : 1 en (1, 1) plus 2 en (2, 2) donne (3, 0), la case verte du 3.",
+   "À droite, ligne après ligne : 1 en (0, 1) plus 2 en (0, 2) donne (0, 0).",
+   "Dans ce second placement, la case (0, 0) porte le 0 (en rouge), pas le 3, qui est en (1, 0).",
+   "Le titre de chaque grille dit le placement utilisé."
+  ],
+  "a_voir": "À droite, 1 + 2 ne tombe pas sur la case du 3."
+ },
+ {
+  "code": "60-023",
+  "a_dire": "Le signe ≅ dit que deux groupes sont le même, à renommage près : 7 et (3, 1) jouent le même rôle sans être égaux.",
+  "legende_titre": "Renommer sans dire « égal »",
+  "lecture": [
+   "À gauche, des éléments de ℤ/12 (bleu) : 7, 5 et 0.",
+   "À droite, des éléments de ℤ/4 ⊕ ℤ/3 (violet) : (3, 1), (1, 2) et (0, 0).",
+   "Les flèches orange à deux pointes sont le renommage : 7 devient (3, 1).",
+   "Le signe ≅ vert est en haut entre les deux groupes."
+  ],
+  "a_voir": "Chaque élément d’un côté a un nom de l’autre côté."
+ },
+ {
+  "code": "60-024",
+  "a_dire": "Avec 2 et 6, le placement par restes met 0 et 6 dans la même case et laisse des cases vides.",
+  "legende_titre": "Le placement qui échoue",
+  "lecture": [
+   "La grille a 2 lignes et 6 colonnes ; les lignes sont numérotées par le reste dans la division par 2, les colonnes par le reste dans la division par 6.",
+   "Chaque case bleue reçoit deux nombres : par exemple 2 et 8, ou 3 et 9.",
+   "La case rouge (0, 0) reçoit 0 et 6 : c’est le défaut du placement.",
+   "Les six cases grises ne reçoivent aucun nombre."
+  ],
+  "a_voir": "Six cases reçoivent chacune deux nombres, et six restent vides."
+ },
+ {
+  "code": "60-025",
+  "a_dire": "2 et 6 ont un facteur commun : le premier nombre non nul divisible par les deux est 6, pas 12.",
+  "legende_titre": "Où les deux listes de multiples se rejoignent",
+  "lecture": [
+   "En haut, 4 (bleu) et 3 (violet) : leurs multiples ne coïncident (vert) qu’en 0 et en 12.",
+   "En bas, 2 et 6 : leurs multiples coïncident déjà en 6, ce qui fait un gros disque vert.",
+   "Les nombres 0, 6 et 12 sont marqués sous chaque bloc."
+  ],
+  "a_voir": "Avec 2 et 6, les restes se répètent dès 6 ; avec 4 et 3, seulement à 12."
+ },
+ {
+  "code": "60-026",
+  "a_dire": "Dans ℤ/12, l’heure 1 demande 12 additions pour revenir à 0 ; dans la grille 2 × 6, toute case revient à (0, 0) en 6 additions, donc aucune n’en demande 12.",
+  "legende_titre": "Combien d’additions pour revenir à 0",
+  "lecture": [
+   "La droite du haut va de 0 à 12 : le trait bleu et le disque vert à 12 montrent que l’heure 1 revient à 0 après 12 additions.",
+   "La droite du bas : le trait violet s’arrête à 6, où se trouve le disque vert.",
+   "« 12 : jamais » en rouge indique qu’aucune case de la grille n’en demande 12."
+  ],
+  "a_voir": "La grille revient à (0, 0) au plus tard après 6 additions."
+ },
+ {
+  "code": "60-027",
+  "a_dire": "ℤ/12 se découpe en morceaux sans facteur commun, 4 et 3, mais pas en 2 et 6.",
+  "legende_titre": "Découper 12 : bien ou mal",
+  "lecture": [
+   "À gauche (vert), 12 se découpe en 4 = 2² et 3 : sans facteur commun, donc ℤ/12 ≅ ℤ/2² ⊕ ℤ/3.",
+   "À droite (rouge), 12 se découpe en 2 et 6 : facteur commun 2, donc ℤ/12 n’est pas isomorphe à ℤ/2 ⊕ ℤ/6.",
+   "Les flèches grises partent de la boîte bleue 12."
+  ],
+  "a_voir": "Seul le découpage sans facteur commun est valable."
+ },
+ {
+  "code": "60-028",
+  "a_dire": "Une composante primaire est une horloge dont le nombre de positions est une puissance d’un seul nombre premier : 4 = 2² et 3.",
+  "legende_titre": "Les morceaux de 12",
+  "lecture": [
+   "En haut, 12 = 2 × 2 × 3 : les deux 2 sont bleus, le 3 est violet.",
+   "L’accolade bleue réunit les deux 2 : 2² = 4.",
+   "Les flèches grises mènent à une horloge de 4 positions (bleue) et une horloge de 3 positions (violette).",
+   "Chaque horloge ne contient qu’un seul nombre premier."
+  ],
+  "a_voir": "Chaque morceau vient d’un seul nombre premier."
+ },
+ {
+  "code": "60-029",
+  "a_dire": "Quelle que soit l’écriture du groupe, découper en puissances de premiers donne la même liste : 4 et 3.",
+  "legende_titre": "Deux écritures, une même liste",
+  "lecture": [
+   "En haut, deux écritures grises : ℤ/12 et ℤ/4 ⊕ ℤ/3.",
+   "Les flèches orange « découper » partent de chacune.",
+   "Toutes mènent aux deux mêmes boîtes du bas : ℤ/2² (bleu) et ℤ/3 (violet).",
+   "« même liste » en vert résume le résultat."
+  ],
+  "a_voir": "Les deux écritures aboutissent aux mêmes morceaux."
+ },
+ {
+  "code": "60-030",
+  "a_dire": "ℤ/12 a pour morceaux 2² et 3, et ℤ/2 ⊕ ℤ/6 a pour morceaux 2, 2 et 3 : les deux listes sont différentes.",
+  "legende_titre": "Comparer les listes de morceaux",
+  "lecture": [
+   "À gauche, ℤ/12 : un morceau de 4 cases (2²) et un de 3 cases.",
+   "À droite, ℤ/2 ⊕ ℤ/6 : un morceau de 2 cases, puis ℤ/6 qui se découpe en 2 et 3.",
+   "Le bleu marque les morceaux du premier 2, le violet ceux du premier 3.",
+   "Le signe ≠ en rouge dit que les listes diffèrent."
+  ],
+  "a_voir": "La liste de droite a trois morceaux, celle de gauche en a deux."
+ }
+]

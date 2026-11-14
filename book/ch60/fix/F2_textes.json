@@ -1,0 +1,134 @@
+{
+  "60-066": {
+    "lecture": [
+      "Chaque rangée montre les éléments de M, puis de 2M, puis de 4M : 8, 2 et 1 petits rectangles bleus.",
+      "Chaque cadre vert est une classe : des éléments qui deviennent égaux dans le quotient.",
+      "À droite, M(k) est le quotient de deux rangées voisines : il a 4, 2 et 1 classes.",
+      "Doubler une classe donne la classe de 0 : M(k) est tué par p."
+    ],
+    "a_voir": "M(k) est formé des classes de la rangée k, et p fois une classe donne 0."
+  },
+  "60-068": {
+    "lecture": [
+      "Chaque colonne est un morceau, de hauteur son exposant e : 2 pour le premier, 1 pour le second.",
+      "À gauche, la décomposition z est en bleu ; à droite, la décomposition w est en violet.",
+      "Une case pleine en rangée k signifie que e est plus grand que k ; une case en pointillés est vide.",
+      "Au centre, le nombre de cases pleines de chaque rangée est la dimension : 2, 1 et 0."
+    ],
+    "a_voir": "La dimension de M(k) compte les morceaux d'exposant plus grand que k, pour z comme pour w."
+  },
+  "60-074": {
+    "lecture": [
+      "Les 12 ronds forment l'horloge ℤ/12, qui est le module M sur ℤ.",
+      "Le rond bleu est l'heure 1, le seul élément choisi.",
+      "La flèche orange × 5 mène de 1 à 5 : multiplier 1 par 5 donne 5.",
+      "Les ronds verts sont les heures obtenues en multipliant 1 par un entier."
+    ],
+    "a_voir": "Un seul élément, 1, suffit à produire toutes les heures de M."
+  },
+  "60-076": {
+    "lecture": [
+      "Les 12 ronds sont les heures de l'horloge ℤ/12.",
+      "Le carré bleu relie les heures 0, 3, 6 et 9 : c'est M₂, la partie du premier 2, tuée par 4 = 2².",
+      "Le triangle violet relie les heures 0, 4 et 8 : c'est M₃, la partie du premier 3, tuée par 3.",
+      "L'heure 0, en vert, appartient aux deux parties."
+    ],
+    "a_voir": "Chaque premier, 2 ou 3, donne sa propre partie de l'horloge ; elles ont seulement 0 en commun."
+  },
+  "60-093": {
+    "lecture": [
+      "Chaque ligne de cases bleues est un premier : 3, puis 5, puis 7.",
+      "Une case grise « 1 » veut dire qu'il n'y a pas de puissance de ce premier dans cette colonne.",
+      "Chaque flèche orange multiplie une colonne ; la case verte donne le produit et le facteur : 9, 4 725 et 17 364 375.",
+      "Le texte du bas dit que chaque facteur divise le suivant."
+    ],
+    "a_voir": "Il y a trois colonnes parce que le premier 3 apparaît trois fois ; chaque colonne multipliée donne un facteur."
+  },
+  "60-103": {
+    "lecture": [
+      "Chaque forme a 8 éléments : la colonne a 8 cases, la grille 4 × 2 a 8 cases, le cube a 8 sommets.",
+      "Dans la colonne, les 8 cases orange sont toutes parcourues : longueur 8.",
+      "Dans la grille, seule la colonne orange de 4 cases est parcourue : longueur 4.",
+      "Dans le cube, la flèche orange double relie 2 sommets orange : aller-retour, longueur 2."
+    ],
+    "a_voir": "Même nombre d'éléments, mais des parcours de longueur 8, 4 et 2."
+  },
+  "60-117": {
+    "lecture": [
+      "La rangée bleue part de a = 2 : 3a = 6 est dans H, mais n'est pas nul.",
+      "La flèche orange est la multiplication par r = 2.",
+      "La rangée verte part de ra = 4 : 3 × 4 = 12 = 0, donc cet élément est d'ordre 3."
+    ],
+    "a_voir": "Multiplier a par r donne l'élément 4, qui est d'ordre 3 dans le groupe."
+  },
+  "60-130": {
+    "lecture": [
+      "Le disque bleu contient les éléments de ⟨g⟩, avec g = (1, 0) ; le cercle orange contient ceux du sous-groupe ajouté.",
+      "À gauche, on ajoute (1, 1), d'ordre 4 : la zone commune porte (0, 0) et (2, 0), en rouge.",
+      "À droite, on ajoute (0, 1), d'ordre 2 : la zone commune ne porte que (0, 0), en vert."
+    ],
+    "a_voir": "Le choix d'ordre 4 partage deux éléments avec ⟨g⟩, le choix d'ordre 2 un seul."
+  },
+  "60-133": {
+    "lecture": [
+      "La case bleue du haut donne le calcul : 2 fois (1, 1) égale (2, 0), égal à 2 fois g, donc r = 2.",
+      "La condition est que p divise r.",
+      "À gauche, en rouge, le cas où p ne divise pas r : r g engendrerait ⟨g⟩ ; c'est impossible, car r g est d'ordre 2 et g d'ordre 4.",
+      "À droite, en vert, p = 2 divise r = 2 : on obtient s = 1 et a = (0, 1)."
+    ],
+    "a_voir": "Dans la grille, p = 2 divise r = 2, donc la correction réussit."
+  },
+  "60-137": {
+    "lecture": [
+      "En haut, G, g et H sont donnés pour la grille 4 sur 2.",
+      "Les quatre disques bleus forment l'horloge de 4 engendrée par g + H.",
+      "La case orange K/H = {0} est le complément, réduit à 0.",
+      "La flèche orange remonte dans G : la case du haut est K, qui contient H.",
+      "La formule verte du bas écrit la découpe du quotient."
+    ],
+    "a_voir": "Un complément trouvé dans le quotient correspond à un sous-groupe K de G."
+  },
+  "60-142": {
+    "lecture": [
+      "Dans les deux grilles, K est le cadre orange : la rangée du haut, (0, 0) et (0, 1).",
+      "À gauche, ⟨g⟩ est la colonne bleue, pour g = (1, 0).",
+      "À droite, ⟨g⟩ est formé des cases bleues (0, 0), (1, 1), (2, 0), (3, 1), pour g = (1, 1).",
+      "Dans les deux cas, les morceaux ont 4 et 2 éléments."
+    ],
+    "a_voir": "Les deux écritures sont valables, mais leurs morceaux ne sont pas les mêmes."
+  },
+  "60-153": {
+    "lecture": [
+      "À gauche, la matrice 2 × 2 entre crochets porte 1 en bleu sur la diagonale et 0 en gris ailleurs : c'est le 1 en gras, la matrice identité.",
+      "La flèche orange multiplie toute la matrice par lambda.",
+      "À droite, les cases orange portent lambda sur la diagonale ; les cases grises gardent 0 : c'est λ1."
+    ],
+    "a_voir": "Le 1 en gras désigne la matrice identité, et λ1 porte λ sur la diagonale."
+  },
+  "60-155": {
+    "lecture": [
+      "À gauche, la matrice 1 (2, 0 ; 0, 2) a pour facteurs λ − 2 et λ − 2.",
+      "À droite, la matrice 2 (2, 1 ; 0, 2) a pour facteurs 1 et (λ − 2) au carré.",
+      "Sous chaque liste, le produit des facteurs vaut (λ − 2) au carré, le même f.",
+      "Le signe ≠ sépare les deux listes : elles sont différentes."
+    ],
+    "a_voir": "Même f, mais la liste des facteurs invariants n’est pas la même."
+  },
+  "60-167": {
+    "lecture": [
+      "Les deux matrices bleues, (2, 0 ; 0, 3) dans la base 1 et (3, 0 ; 0, 2) dans la base 2, décrivent la même transformation.",
+      "Les flèches orange mènent chacune à la même matrice.",
+      "La matrice verte (0, 1 ; −6, 5) est le compagnon de lambda au carré moins 5 lambda plus 6 : sa dernière ligne reprend 6 et −5 avec les signes changés."
+    ],
+    "a_voir": "Deux matrices différentes de la même transformation donnent la même forme rationnelle."
+  },
+  "60-169": {
+    "lecture": [
+      "La formule du haut donne A′ = S A S⁻¹, dans cet ordre.",
+      "La matrice bleue A est diagonale, de diagonale 2 puis 3.",
+      "Les deux matrices orange sont S, le changement de base, qui échange les deux vecteurs de base, et son inverse.",
+      "La matrice violette A′, à gauche du signe =, est le résultat : diagonale 3 puis 2."
+    ],
+    "a_voir": "Entourée de S et de son inverse, A devient A′, qui décrit la même transformation dans une autre base."
+  }
+}

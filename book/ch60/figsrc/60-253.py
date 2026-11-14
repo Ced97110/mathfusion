@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 61, r"$A'$", 'sujet', 'l')
+text(ax, 22, 52, r'$m=\lambda-2$', 'sujet', 'm')
+box(ax, 10, 28, 24, 9, 'sujet', label=r'$\lambda-2$')
+text(ax, 22, 15, 'diagonalisable', 'resultat', 'm')
+text(ax, 66, 61, r'$A$', 'autre', 'l')
+text(ax, 66, 52, r'$m=(\lambda-1)^2$', 'autre', 'm')
+box(ax, 54, 28, 24, 9, 'autre', label=r'$\lambda-1$')
+box(ax, 54, 38, 24, 9, 'autre', label=r'$\lambda-1$')
+text(ax, 66, 15, 'non diagonalisable', 'limite', 'm')
+line(ax, [(44, 8), (44, 58)], 'fixe', lw=0.5, dash=True)
+save(fig, '60-253')

@@ -1,0 +1,335 @@
+[
+ {
+  "code": "60-091",
+  "a_dire": "Pour passer des facteurs invariants aux diviseurs élémentaires, on factorise chaque facteur en puissances de premiers et on garde toutes les puissances.",
+  "legende_titre": "Factoriser chaque facteur, garder tous les morceaux",
+  "lecture": [
+   "Les deux cases bleues à gauche sont les facteurs invariants 2 et 6.",
+   "Les flèches orange montrent la factorisation : 2 donne 2, et 6 = 2 × 3 donne deux morceaux.",
+   "Les trois cases vertes à droite forment la liste 2, 2, 3 : ce sont les diviseurs élémentaires."
+  ],
+  "a_voir": "Chaque facteur invariant se coupe en puissances de premiers, et la liste finale les réunit toutes."
+ },
+ {
+  "code": "60-092",
+  "a_dire": "Pour revenir des diviseurs élémentaires aux facteurs invariants, on prend à chaque tour la plus grande puissance de chaque premier, on les multiplie, on les retire, et on recommence jusqu'à épuisement.",
+  "legende_titre": "Prendre les plus grandes puissances, retirer, recommencer",
+  "lecture": [
+   "Les trois cases du haut sont la liste 2, 2, 3 ; les cases orange sont prises au tour 1.",
+   "Leur produit 2 × 3 = 6 est le dernier facteur, dans la case verte du haut.",
+   "La case grise est ce qui reste : le tour 2 la prend et donne le facteur 2, en vert."
+  ],
+  "a_voir": "Deux tours vident la liste, donc il y a deux facteurs : 2 puis 6."
+ },
+ {
+  "code": "60-093",
+  "a_dire": "Dans l'exemple de Jacobson, chaque colonne de puissances, multipliée, donne un facteur invariant, et chaque facteur divise le suivant.",
+  "legende_titre": "Sept puissances, trois facteurs",
+  "lecture": [
+   "Chaque ligne de cases bleues est un premier : 3, puis 5, puis 7.",
+   "Une case grise « 1 » veut dire qu'il n'y a pas de puissance de ce premier dans cette colonne.",
+   "Chaque flèche orange multiplie une colonne ; la case verte donne le produit et le facteur : 9, 4 725 et 17 364 375.",
+   "Le texte du bas dit que chaque facteur divise le suivant."
+  ],
+  "a_voir": "Il y a trois colonnes parce que le premier 3 apparaît trois fois ; chaque colonne multipliée donne un facteur."
+ },
+ {
+  "code": "60-094",
+  "a_dire": "Un module sur les entiers est un groupe abélien : multiplier par un entier veut dire répéter l'addition.",
+  "legende_titre": "Multiplier par un entier, c'est additionner plusieurs fois",
+  "lecture": [
+   "Les deux cases bleues du haut disent que les deux notions sont la même.",
+   "Les trois cases bleues g, reliées par des +, sont trois copies de g.",
+   "La case orange 3g est le résultat de la multiplication par 3 : l'addition répétée trois fois."
+  ],
+  "a_voir": "3g n'est rien d'autre que g + g + g."
+ },
+ {
+  "code": "60-095",
+  "a_dire": "Un groupe abélien de type fini est la somme d'une partie finie (torsion) et d'une partie libre formée de copies de ℤ ; le nombre de copies est un invariant.",
+  "legende_titre": "Une partie finie plus des copies de ℤ",
+  "lecture": [
+   "Les six disques bleus forment la torsion ℤ/6 : six éléments, en cercle.",
+   "Chaque flèche violette est une copie de ℤ : elle continue des deux côtés.",
+   "Il y a deux flèches violettes : le rang vaut 2."
+  ],
+  "a_voir": "Le groupe est une partie finie à gauche et 2 copies de ℤ à droite."
+ },
+ {
+  "code": "60-096",
+  "a_dire": "Sans l'hypothèse abélien, l'énoncé est faux : les 6 rangements de trois objets ne forment pas un groupe commutatif, donc pas une somme de cycliques.",
+  "legende_titre": "Quand l'ordre des échanges change le résultat",
+  "lecture": [
+   "La ligne du haut part de A B C : on échange 1-2, puis 2-3, et on arrive à B C A.",
+   "La ligne du bas part de A B C : on échange 2-3, puis 1-2, et on arrive à C A B.",
+   "Les deux cases orange d'arrivée sont différentes : le signe rouge ≠ le dit."
+  ],
+  "a_voir": "Deux échanges dans l'autre ordre donnent un autre rangement."
+ },
+ {
+  "code": "60-097",
+  "a_dire": "Deux groupes abéliens finis ayant des listes de diviseurs élémentaires différentes ne sont pas le même groupe, même avec 12 éléments chacun.",
+  "legende_titre": "Même nombre d'éléments, listes différentes",
+  "lecture": [
+   "À gauche, les 12 disques bleus en cercle sont l'horloge de 12 heures, de diviseurs 4 et 3.",
+   "À droite, les 12 disques violets en grille 2 × 6 ont pour diviseurs 2, 2 et 3.",
+   "Le signe rouge ≠ entre les deux dit que les groupes sont différents."
+  ],
+  "a_voir": "La liste de diviseurs distingue deux groupes de même taille."
+ },
+ {
+  "code": "60-098",
+  "a_dire": "La méthode de listage ne trouve que les groupes abéliens : pour l'ordre 6, elle donne l'horloge de 6 heures et ne voit pas les rangements de trois objets.",
+  "legende_titre": "Ce que la méthode ne voit pas",
+  "lecture": [
+   "À gauche, les six disques bleus sont le seul groupe que la méthode liste pour l'ordre 6.",
+   "À droite, dans le cadre rouge en pointillés, six cases sont les rangements de trois objets : un autre groupe de 6 éléments.",
+   "Ce second groupe n'est pas commutatif, donc la méthode ne le voit pas."
+  ],
+  "a_voir": "Pour l'ordre 6, il existe un groupe que la liste oublie."
+ },
+ {
+  "code": "60-099",
+  "a_dire": "L'ordre 8 = 2³ n'a qu'un premier ; chaque façon d'écrire l'exposant 3 comme somme donne un groupe, et il y en a trois.",
+  "legende_titre": "Trois façons d'écrire l'exposant 3",
+  "lecture": [
+   "Chaque ligne est une écriture de 3 comme somme : 3, 2 + 1, 1 + 1 + 1.",
+   "Chaque case bleue vaut 1 de l'exposant ; les cases d'un même morceau se touchent.",
+   "L'accolade verte compte les trois lignes : trois groupes."
+  ],
+  "a_voir": "Trois sommes possibles, donc trois groupes d'ordre 8."
+ },
+ {
+  "code": "60-100",
+  "a_dire": "G₁ = ℤ/8 est une seule horloge : ajouter 1 avance d'une case, et il faut 8 additions pour revenir à 0 ; son diviseur élémentaire est 2³ = 8.",
+  "legende_titre": "Un seul bloc : une horloge de 8 cases",
+  "lecture": [
+   "La colonne bleue a 8 cases, numérotées de 0 à 7 ; la case 0 est en vert.",
+   "La flèche orange courte à droite montre « + 1 » : on descend d'une case.",
+   "La grande flèche orange à gauche ramène de 7 à 0 : au bout de 8 pas on est revenu.",
+   "Le texte vert donne le diviseur élémentaire 2³ = 8."
+  ],
+  "a_voir": "Une partition à un seul terme donne une seule horloge de 8 cases."
+ },
+ {
+  "code": "60-101",
+  "a_dire": "Dans ℤ/4 ⊕ ℤ/2, aucun élément ne demande 8 additions : le plus grand ordre est 4, donc ce n'est pas une horloge de 8 heures.",
+  "legende_titre": "Une grille 4 × 2 où l'on revient plus vite",
+  "lecture": [
+   "Les huit cases sont les éléments (i, j) de la grille 4 lignes, 2 colonnes.",
+   "La case verte (0, 0) est d'ordre 1, les cases grises d'ordre 2, les cases orange d'ordre 4.",
+   "Aucune case n'est d'un ordre plus grand que 4 : le texte rouge dit « jamais 8 »."
+  ],
+  "a_voir": "Le plus grand ordre est 4, pas 8."
+ },
+ {
+  "code": "60-102",
+  "a_dire": "Dans ℤ/2 ⊕ ℤ/2 ⊕ ℤ/2, chaque triplet non nul revient à 0 après 2 additions : tous sont d'ordre 2.",
+  "legende_titre": "Trois horloges à 2 positions côte à côte",
+  "lecture": [
+   "Les trois cases bleues sont trois horloges ℤ/2, reliées par ⊕.",
+   "Les flèches orange et les cases dessous additionnent composante par composante : 1 + 1 = 0, 0 + 0 = 0, 1 + 1 = 0.",
+   "Le texte vert écrit le résultat : (1, 0, 1) + (1, 0, 1) = (0, 0, 0)."
+  ],
+  "a_voir": "Un triplet ajouté à lui-même retombe sur (0, 0, 0)."
+ },
+ {
+  "code": "60-103",
+  "a_dire": "Les trois groupes de 8 éléments ont des formes différentes : le parcours fermé le plus long vaut 8 dans la colonne, 4 dans la grille, 2 dans le cube.",
+  "legende_titre": "Trois formes, trois longueurs de parcours",
+  "lecture": [
+   "Chaque forme a 8 éléments : la colonne a 8 cases, la grille 4 × 2 a 8 cases, le cube a 8 sommets.",
+   "Dans la colonne, les 8 cases orange sont toutes parcourues : longueur 8.",
+   "Dans la grille, seule la colonne orange de 4 cases est parcourue : longueur 4.",
+   "Dans le cube, la flèche orange double relie 2 sommets orange : aller-retour, longueur 2."
+  ],
+  "a_voir": "Même nombre d'éléments, mais des parcours de longueur 8, 4 et 2."
+ },
+ {
+  "code": "60-104",
+  "a_dire": "Le dernier facteur invariant est le plus grand nombre d'additions pour revenir à 0 : 8, 4 et 2 pour les trois groupes d'ordre 8.",
+  "legende_titre": "Compter les additions pour revenir à 0",
+  "lecture": [
+   "Chaque ligne est un des trois groupes, nommé en bleu à gauche.",
+   "La barre verte a autant de cases que d'additions nécessaires.",
+   "Sous chaque barre, l'accolade donne le nombre : 8, 4 et 2."
+  ],
+  "a_voir": "Les nombres 8, 4 et 2 se lisent en comptant des additions."
+ },
+ {
+  "code": "60-105",
+  "a_dire": "Additionner, c'est se déplacer : d'une case dans la colonne, d'une ligne ou d'une colonne dans la grille, le long d'une arête dans le cube.",
+  "legende_titre": "Une addition est un déplacement",
+  "lecture": [
+   "En haut, la colonne bleue : la flèche orange descend d'une case, c'est « + 1 ».",
+   "Au milieu, la grille : la flèche orange descend d'une ligne, la flèche violette va d'une colonne.",
+   "En bas, le cube : trois flèches de couleurs différentes suivent chacune une arête."
+  ],
+  "a_voir": "Chaque groupe a ses propres déplacements possibles."
+ },
+ {
+  "code": "60-106",
+  "a_dire": "Les trois groupes d'ordre 8 ont des listes de diviseurs élémentaires différentes, donc ne sont pas le même groupe.",
+  "legende_titre": "Trois listes différentes deux à deux",
+  "lecture": [
+   "Chaque ligne nomme un groupe en bleu et donne sa liste dans les cases vertes.",
+   "Les listes sont 8 ; 4, 2 ; 2, 2, 2.",
+   "Les signes rouges ≠ entre les lignes disent que les listes diffèrent."
+  ],
+  "a_voir": "Trois listes différentes donnent trois groupes différents."
+ },
+ {
+  "code": "60-107",
+  "a_dire": "Pour l'ordre 12 = 2² × 3, on a 2 choix pour le premier 2 et 1 choix pour le premier 3 : 2 × 1 = 2 groupes.",
+  "legende_titre": "Deux choix fois un choix",
+  "lecture": [
+   "La colonne bleue donne les écritures de l'exposant 2 du premier 2 : 2, ou 1 + 1.",
+   "La colonne violette donne l'écriture de l'exposant 1 du premier 3 : une seule, 1.",
+   "Chaque ligne, par la flèche orange, donne un groupe vert : ℤ/12 et ℤ/2 ⊕ ℤ/6."
+  ],
+  "a_voir": "2 × 1 = 2 combinaisons, donc 2 groupes."
+ },
+ {
+  "code": "60-108",
+  "a_dire": "L'horloge de 12 heures et la grille 4 × 3 ont la même liste (4 ; 3), donc sont le même groupe ; la grille 2 × 6 a la liste 2 ; 2 ; 3, c'est un autre groupe.",
+  "legende_titre": "Comparer des listes, pas des cases",
+  "lecture": [
+   "Les disques en cercle sont l'horloge ℤ/12, de liste 4 ; 3.",
+   "La grille bleue 4 × 3 a la même liste : le signe vert = les rapproche.",
+   "La grille violette 2 × 6 a la liste 2 ; 2 ; 3 : le signe rouge ≠ la sépare."
+  ],
+  "a_voir": "Des listes égales donnent le même groupe, des listes différentes un autre groupe."
+ },
+ {
+  "code": "60-109",
+  "a_dire": "Pour un groupe abélien fini, Judson démontre l'existence de la décomposition en restant dans le groupe, sans module ni matrice.",
+  "legende_titre": "Un chemin direct, sans module ni matrice",
+  "lecture": [
+   "La ligne grise du haut est le chemin long : groupe, module, matrices, décomposition.",
+   "En bas, la case bleue « groupe » est reliée par une flèche orange à la case verte « décomposition ».",
+   "Les mots oranges disent que ce chemin évite le module et la matrice."
+  ],
+  "a_voir": "Le chemin de Judson va du groupe à la décomposition en une seule flèche."
+ },
+ {
+  "code": "60-110",
+  "a_dire": "La preuve a trois étapes : trouver un élément d'ordre premier, séparer les premiers, détacher un morceau cyclique à la fois ; sur ℤ/12 deux morceaux suffisent.",
+  "legende_titre": "Trois étapes sur l'horloge de 12 heures",
+  "lecture": [
+   "Étape 1 : la case bleue 4 est un élément d'ordre 3, car 3 × 4 = 12 = 0.",
+   "Étape 2 : 9 (ordre 4, bleu) et 4 (ordre 3, violet) s'additionnent en 13 = 1, case verte.",
+   "Étape 3 : les multiples de 9 et ceux de 4 sont les deux morceaux cycliques détachés."
+  ],
+  "a_voir": "ℤ/12 se détache en un morceau à 4 éléments et un morceau à 3 éléments."
+ },
+ {
+  "code": "60-111",
+  "a_dire": "|g| est le plus petit nombre d'additions de g qui ramène à 0, et ⟨g⟩ est la liste de tous les multiples de g.",
+  "legende_titre": "Deux signes pour l'ordre et les multiples",
+  "lecture": [
+   "Les douze disques sont les heures ; les quatre disques bleus sont 0, 3, 6 et 9.",
+   "Les flèches orange partent de 0 et font des sauts de 3 jusqu'au retour à 0 : quatre sauts.",
+   "À droite, |g| = 4 note le nombre de sauts et ⟨g⟩ = {0, 3, 6, 9} note la liste."
+  ],
+  "a_voir": "Pour g = 3, l'ordre vaut 4 et ⟨g⟩ a 4 éléments."
+ },
+ {
+  "code": "60-112",
+  "a_dire": "Judson écrit autrement la même chose : g^m = e pour mg = 0, ℤₙ pour ℤ/n, × pour ⊕.",
+  "legende_titre": "Traduire les signes de Judson",
+  "lecture": [
+   "La colonne violette montre les écritures de Judson.",
+   "La colonne bleue montre les écritures de ce chapitre.",
+   "Chaque signe = relie deux écritures qui disent la même chose."
+  ],
+  "a_voir": "Trois écritures de Judson, trois écritures équivalentes ici."
+ },
+ {
+  "code": "60-113",
+  "a_dire": "Sans l'hypothèse « fini », l'énoncé est faux : ℤ est abélien mais infini, alors qu'un produit de groupes cycliques finis est fini.",
+  "legende_titre": "Quand le groupe est infini",
+  "lecture": [
+   "La droite rouge avec ses disques est ℤ : elle continue des deux côtés, une infinité d'éléments.",
+   "La grille bleue de 12 disques est ℤ/4 ⊕ ℤ/3 : un produit fini.",
+   "Le signe rouge ≠ dit qu'on ne peut pas passer de l'un à l'autre."
+  ],
+  "a_voir": "Un groupe infini ne peut pas être un produit de cycliques finis."
+ },
+ {
+  "code": "60-114",
+  "a_dire": "Si p n'est pas premier, le lemme est faux : dans ℤ/2 ⊕ ℤ/2, 4 divise l'ordre mais aucun élément n'est d'ordre 4, alors qu'il en existe d'ordre 2.",
+  "legende_titre": "Un diviseur de l'ordre sans élément de cet ordre",
+  "lecture": [
+   "Les quatre cases sont les éléments du groupe ; l'ordre de chacun est écrit dessous.",
+   "Les trois cases bleues non nulles sont d'ordre 2 : le texte vert l'indique.",
+   "Aucune case n'est d'ordre 4 : le texte rouge le dit."
+  ],
+  "a_voir": "Il existe des éléments d'ordre 2 mais aucun d'ordre 4."
+ },
+ {
+  "code": "60-115",
+  "a_dire": "La preuve par récurrence sépare deux cas : G n'a pas de sous-groupe propre, ou il a un sous-groupe propre H, plus petit, où la récurrence s'applique.",
+  "legende_titre": "Deux cas, dont un qui utilise la récurrence",
+  "lecture": [
+   "La case bleue du haut est le point de départ : G et un premier p qui divise |G|.",
+   "À gauche, la voie grise : aucun sous-groupe propre, donc un élément non nul engendre G.",
+   "À droite, la voie orange : un sous-groupe propre H, donc des groupes plus petits et la récurrence."
+  ],
+  "a_voir": "Le cas du sous-groupe propre est celui qui porte la récurrence."
+ },
+ {
+  "code": "60-116",
+  "a_dire": "Si p ne divise pas |H|, comme |G| = |H| × |G/H|, alors p divise l'ordre du quotient G/H.",
+  "legende_titre": "Quand p divise le quotient",
+  "lecture": [
+   "La case bleue {0, 6} est H, avec 2 éléments.",
+   "Les six cases ensemble sont les classes du quotient G/H : 6 classes.",
+   "Les textes disent que 12 = 2 × 6, que 3 ne divise pas 2 et que 3 divise 6."
+  ],
+  "a_voir": "3 ne divise pas 2, donc 3 divise 6."
+ },
+ {
+  "code": "60-117",
+  "a_dire": "Sur ℤ/12, la classe de a = 2 est d'ordre 3 dans le quotient, mais 3a = 6 n'est pas nul ; multiplier par r = 2 donne l'élément 4 d'ordre 3.",
+  "legende_titre": "Passer au quotient, puis revenir dans le groupe",
+  "lecture": [
+   "La rangée bleue part de a = 2 : 3a = 6 est dans H, mais n'est pas nul.",
+   "La flèche orange est la multiplication par r = 2.",
+   "La rangée verte part de ra = 4 : 3 × 4 = 12 = 0, donc cet élément est d'ordre 3."
+  ],
+  "a_voir": "Multiplier a par r donne l'élément 4, qui est d'ordre 3 dans le groupe."
+ },
+ {
+  "code": "60-118",
+  "a_dire": "Judson remplace a par ra, où r est l'ordre de H : dans l'exemple, ra = 4 est d'ordre 3.",
+  "legende_titre": "Remplacer a par ra",
+  "lecture": [
+   "Sur l'horloge de 12 heures, le disque orange est a = 2.",
+   "La flèche orange le mène à 4, disque vert : c'est ra = 2 × 2.",
+   "Les flèches vertes de 4 à 8 puis à 0 font 3 pas : l'ordre de 4 est 3."
+  ],
+  "a_voir": "Trois pas de 4 ramènent à 0 : l'élément choisi est d'ordre 3."
+ },
+ {
+  "code": "60-119",
+  "a_dire": "p(ra) = r(pa) = 0 : pa est dans H, et r fois un élément de H donne 0 (Lagrange).",
+  "legende_titre": "Pourquoi 3 fois ra revient à 0",
+  "lecture": [
+   "Sur la droite, le disque orange en 2 est a ; la première flèche orange multiplie par 3 et arrive en 6, disque bleu, qui est dans H.",
+   "La seconde flèche multiplie par r = 2 et arrive en 12, disque vert.",
+   "Dans ℤ/12, 12 = 0 : le résultat est nul."
+  ],
+  "a_voir": "Deux multiplications successives mènent de a à 0."
+ },
+ {
+  "code": "60-120",
+  "a_dire": "ra ≠ 0 : sinon l'identité de Bézout donnerait a = 6, qui est dans H, alors que a = 2 n'y est pas.",
+  "legende_titre": "Pourquoi ra n'est pas nul",
+  "lecture": [
+   "Les deux premières lignes écrivent Bézout, puis a = 1 × (pa) − 1 × (ra), soit 2 = 6 − 4.",
+   "Sur la droite, les disques bleus 0 et 6 sont H, le disque orange 2 est a, le disque gris 4 est ra.",
+   "La flèche rouge montre ce qui arriverait si ra valait 0 : a serait égal à 6, dans H, ce qui est faux."
+  ],
+  "a_voir": "Si ra était nul, a serait dans H, ce qui est faux."
+ }
+]

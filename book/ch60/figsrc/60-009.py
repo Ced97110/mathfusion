@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 14, 56, 'théorème', 'varie', 'm'); arrow(ax, (26, 56), (40, 56), 'varie')
+box(ax, 42, 51, 28, 10, 'sujet', label='ℤ/12', size='l')
+text(ax, 79, 56, 'un\nmorceau', 'sujet', 's')
+text(ax, 14, 14, 'théorème', 'varie', 'm'); arrow(ax, (26, 14), (40, 14), 'varie')
+box(ax, 42, 9, 13, 10, 'autre', label='ℤ/4', size='m'); box(ax, 58, 9, 13, 10, 'autre', label='ℤ/3', size='m')
+text(ax, 79, 14, 'deux\nmorceaux', 'autre', 's')
+arrow(ax, (56, 49), (56, 21), 'fixe', both=True)
+text(ax, 60, 35, 'listes égales ?', 'fixe', 's', ha='left')
+save(fig, '60-009')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 48, 80, 11, 'fixe', label='M = ℤ/12 (12 heures)')
+box(ax, 4, 22, 28, 16, 'sujet', label=r'$M_2$' + '\n0, 3, 6, 9', size='s')
+box(ax, 36, 22, 26, 16, 'autre', label=r'$M_3$' + '\n0, 4, 8', size='s')
+box(ax, 66, 22, 18, 16, 'fixe', label=r'$M_5$' + '\n{0}', size='s', dash=True)
+text(ax, 34, 30, '⊕', 'encre', 'l')
+text(ax, 64, 30, '⊕', 'encre', 'l')
+arrow(ax, (18, 48), (18, 38.5), 'sujet')
+arrow(ax, (49, 48), (49, 38.5), 'autre')
+arrow(ax, (75, 48), (75, 38.5), 'fixe')
+text(ax, 44, 9, 'écriture unique : 7 = 3 + 4', 'resultat', 'm')
+save(fig, '60-053')

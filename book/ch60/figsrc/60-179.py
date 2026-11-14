@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'$A$ de lignes (0, −1) et (1, 0) : $f=\lambda^2+1$', 'encre', 's')
+text(ax, 2, 44, r'sur $\mathbb{R}$', 'encre', 's', ha='left')
+box(ax, 24, 38, 60, 12, 'limite', label=r'$\lambda^2+1$ : un seul bloc', size='m')
+text(ax, 54, 33, r'pas de la forme $(\lambda-r)^e$', 'limite', 's')
+text(ax, 2, 18, r'sur $\mathbb{C}$', 'encre', 's', ha='left')
+box(ax, 24, 12, 28, 12, 'resultat', label=r'$\lambda-i$', size='m')
+box(ax, 56, 12, 28, 12, 'resultat', label=r'$\lambda+i$', size='m')
+text(ax, 54, 7, r'formes $(\lambda-r)^e$ avec $e=1$', 'resultat', 's')
+save(fig, '60-179')
