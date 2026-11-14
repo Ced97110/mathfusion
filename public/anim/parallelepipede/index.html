@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Le parallélépipède dans le réel</title>
+<style>
+  :root { --bleu: #6fa3d6; --orange: #e98a45; --gris: #b4bac4; --vert: #5fc48c; --violet: #b593e0; --encre: #f3f4f6; }
+  html, body { margin: 0; height: 100%; background: #0b0c0e; overflow: hidden; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--encre); }
+  canvas { display: block; width: 100vw; height: 100vh; touch-action: none; }
+  #cap { position: fixed; left: 50%; bottom: 7vh; transform: translateX(-50%); width: min(760px, calc(100vw - 32px));
+         text-align: center; font-size: clamp(16px, 2.3vw, 22px); line-height: 1.45; font-weight: 500;
+         text-shadow: 0 1px 12px rgba(0,0,0,.85); opacity: 0; transition: opacity .6s ease; pointer-events: none; }
+  #cap.on { opacity: 1; }
+  .lab { position: fixed; left: 0; top: 0; font-size: clamp(12px, 1.5vw, 15px); font-weight: 600; white-space: nowrap;
+         transform: translate(-50%, -50%); text-shadow: 0 1px 8px rgba(0,0,0,.9); opacity: 0; transition: opacity .4s ease;
+         pointer-events: none; }
+  .lab.on { opacity: 1; }
+  .lab.big { font-size: clamp(18px, 2.6vw, 28px); font-weight: 700; }
+  #fade { position: fixed; inset: 0; background: #0b0c0e; opacity: 1; pointer-events: none; }
+  #ui { position: fixed; right: 16px; bottom: 16px; display: flex; gap: 8px; }
+  #ui button { font: 600 14px system-ui, sans-serif; color: var(--encre); background: rgba(255,255,255,.08);
+               border: 1px solid rgba(255,255,255,.18); border-radius: 8px; padding: 10px 14px; cursor: pointer; }
+  #ui button:hover { background: rgba(255,255,255,.16); }
+  #ui button:focus-visible { outline: 3px solid var(--encre); outline-offset: 2px; }
+  #src { position: fixed; left: 16px; bottom: 16px; font-size: 11px; color: #8a9099; max-width: calc(100vw - 180px); }
+  .b { color: var(--bleu); } .o { color: var(--orange); } .g { color: var(--gris); } .v { color: var(--vert); } .p { color: var(--violet); }
+  @media (max-width: 560px) { #cap { bottom: 12vh; } #src { display: none; } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./lib/three.module.js", "three/addons/": "./lib/addons/" } }
+</script>
+</head>
+<body>
+<canvas id="c" aria-label="Animation : la calcite, une rame de papier et deux boîtes remplies de liquide montrent ce qu'est un parallélépipède"></canvas>
+<div id="cap" role="status" aria-live="polite"></div>
+<div id="fade"></div>
+<div id="ui"><button id="replay" type="button">Rejouer</button></div>
+<div id="src">Calcite : faces en losange de 101°55′ et 78°05′ ; indices 1,658 et 1,486 (Britannica, Wikipédia). Boîtes : u = (2 ; 0 ; 0), v = (1 ; 2 ; 0), w = (1 ; 1 ; 3), fiche 41-123.</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
