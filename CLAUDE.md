@@ -9,6 +9,12 @@ Le livre source est un PDF de 14 315 fiches en 82 chapitres (avant-propos, 1 à 
 
 Langue de travail et des réponses : français, phrases simples, sans métaphore.
 
+## Version publiée sur le site (depuis le 2026-11-14)
+
+- Le site ne montre plus les fiches : `/chapitre/<clé>/` affiche la version rédigée du livre, convertie telle quelle depuis `Des_nombres_aux_structures_11pt.pdf` (2 291 pages, pas dans Git ; à placer dans `book/source/`).
+- Conversion (zéro token, environ 90 s) : `python3 tools/livre/build.py book/source/Des_nombres_aux_structures_11pt.pdf`. Écrit `content/toc.json` (82 sections : AP, 1 à 80, A), `public/chapters/chNN.html` et `public/chapters/img/chNN/*.svg`. `LIVRE_ONLY=AP,13` ne refait que ces sections. Cache dans `book/livre-work/` (ignoré par Git).
+- `tools/site.py` est bloqué : il remettrait les fiches. `FICHES=1` pour le lancer quand même. Les sources des fiches (`book/chNN`) restent dans Git ; la procédure ci-dessous ne sert plus qu'à elles.
+
 ## Avant de commencer
 
 - Le PDF du livre doit être à `book/source/Des_nombres_aux_structures_fiches.pdf` (il n'est pas dans Git). S'il manque, s'arrêter et le demander.

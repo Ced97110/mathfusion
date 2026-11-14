@@ -28,7 +28,7 @@ export default async function Branch({ params }) {
       <div className="ck">Branche</div>
       <h1>{b.title}</h1>
       <p className="st">
-        {done.length} chapitres disponibles sur {all.length} · {done.reduce((a, c) => a + c.n, 0)} fiches illustrées
+        {done.length} chapitres disponibles sur {all.length}
       </p>
       {b.sections.map((s) => (
         <section key={s.title} className="bs">

@@ -3,8 +3,8 @@ import Link from 'next/link';
 import BranchMenu from './components/BranchMenu';
 
 export const metadata = {
-  title: 'Des nombres aux structures — fiches illustrées',
-  description: 'Un livre de mathématiques en fiches : une fiche par concept, une figure par fiche.',
+  title: 'Des nombres aux structures',
+  description: 'Arithmétique, algèbre, trigonométrie, algèbre abstraite : un livre de mathématiques, une figure avant chaque formule.',
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
         <header id="bar">
           <Link href="/" className="brand">Des nombres aux structures</Link>
           <nav aria-label="Navigation principale">
-            <Link href="/#lire">Lire une fiche</Link>
             <Link href="/#chapitres">Chapitres</Link>
             <Link href="/physique/">Physique</Link>
             <Link href="/apprentissage/">Apprentissage</Link>

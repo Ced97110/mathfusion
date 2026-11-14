@@ -4,6 +4,10 @@ Seuls les chapitres qui ont une ligne dans book/JOURNAL.md sont publiés.
 Reconstruit le fragment HTML de chaque chapitre de book/chNN, le copie dans public/chapters/,
 et met à jour content/toc.json en gardant les chapitres déjà connus."""
 import os, sys, subprocess, shutil, glob, json, tempfile
+# Since 2026-11-14 the site shows the prose edition (tools/livre/build.py), not the fiches.
+# Running this script would overwrite public/chapters/ and content/toc.json with the fiches.
+if os.environ.get('FICHES') != '1':
+    sys.exit('Le site publie la version rédigée (tools/livre/build.py). FICHES=1 pour republier les fiches.')
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 tmp = tempfile.mkdtemp()
 subprocess.run([sys.executable, f'{root}/tools/kit/web.py', f'{root}/book', tmp, f'{root}/content/toc.json'], check=True)

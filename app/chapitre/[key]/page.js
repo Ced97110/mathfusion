@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getToc, slugOf, labelOf, prefixOf, getParts, branchOf } from '../../../lib/book';
-import Reader from './Reader';
+import { getToc, slugOf, labelOf, branchOf } from '../../../lib/book';
+import ChapterBody from './ChapterBody';
 
-// Une page statique par chapitre déjà fait.
+// Une page statique par section du livre (avant-propos, chapitres 1 à 80, annexe).
 export function generateStaticParams() {
   return getToc().filter((c) => c.file).map((c) => ({ key: slugOf(c) }));
 }
@@ -15,34 +15,32 @@ export async function generateMetadata({ params }) {
   return c ? { title: `${labelOf(c)} — ${c.title}` } : {};
 }
 
-const link = (c) => (c ? { href: `/chapitre/${slugOf(c)}/`, label: labelOf(c) } : null);
-
 export default async function Chapter({ params }) {
   const { key } = await params;
   const done = getToc().filter((c) => c.file);
   const i = done.findIndex((c) => slugOf(c) === key);
   if (i < 0) notFound();
   const c = done[i];
-  const parts = getParts(c.file);
   const branch = branchOf(c.key);
+  const prev = done[i - 1];
+  const next = done[i + 1];
+  const nav = (
+    <nav className="pn" aria-label="Chapitres voisins">
+      {prev ? <Link href={`/chapitre/${slugOf(prev)}/`}>‹ {labelOf(prev)}</Link> : <span />}
+      {next ? <Link href={`/chapitre/${slugOf(next)}/`}>{labelOf(next)} ›</Link> : <span />}
+    </nav>
+  );
   return (
-    <>
+    <div className="lecture">
       {branch && (
         <p className="crumb">
           <Link href={`/branche/${branch.slug}/`}>{branch.title}</Link>
         </p>
       )}
-      <Reader
-      file={c.file}
-      prefix={prefixOf(c)}
-      label={labelOf(c)}
-      title={c.title}
-      parts={parts}
-      total={parts.reduce((a, p) => a + p.n, 0)}
-      chapters={done.map((d) => ({ prefix: prefixOf(d), slug: slugOf(d) }))}
-      prev={link(done[i - 1])}
-      next={link(done[i + 1])}
-      />
-    </>
+      {nav}
+      {/* HTML written by tools/livre/build.py: the book's text plus SVG bands cut out of the PDF. */}
+      <ChapterBody file={c.file} />
+      {nav}
+    </div>
   );
 }

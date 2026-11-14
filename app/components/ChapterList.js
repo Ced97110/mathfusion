@@ -14,7 +14,6 @@ export default function ChapterList({ chapters, base = '/chapitre/' }) {
             <Link href={`${base}${slugOf(c)}/`}>
               <span className="k">{c.num ?? c.key}</span>
               <span>{c.title}</span>
-              {c.n ? <span className="c">{c.n} fiches</span> : null}
             </Link>
           ) : (
             <span className="na">
