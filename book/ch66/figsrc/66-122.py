@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 8, 42, 28, 11, 'sujet', label=r'$3+\sqrt{2}$')
+box(ax, 52, 42, 28, 11, 'varie', label=r'$3-\sqrt{2}$')
+arrow(ax, (36, 47.5), (52, 47.5), 'varie')
+text(ax, 44, 51.5, 'image', 'varie', 's')
+arrow(ax, (22, 42), (36, 29), 'fixe')
+arrow(ax, (66, 42), (52, 29), 'fixe')
+text(ax, 44, 38, '+', 'encre', 'l')
+box(ax, 30, 17, 28, 12, 'resultat', label='6')
+text(ax, 44, 9, r"somme des images : $T'$", 'resultat', 'm')
+save(fig, '66-122')

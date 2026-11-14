@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, 'valeur absolue de la somme', 'fixe', 's')
+f = numberline(ax, 8, 70, 40, 0, 4, step=1)
+box(ax, f(0), 44, f(1) - f(0), 9, 'varie', label=r'$<1$')
+box(ax, f(1), 44, f(4) - f(1), 9, 'sujet', label=r'entier non nul : $\geq1$')
+box(ax, 14, 22, 60, 8, 'limite', label='les deux à la fois : impossible', size='s')
+box(ax, 2, 4, 24, 10, 'sujet', label='relation (63)', size='s')
+arrow(ax, (26, 9), (32, 9), 'varie')
+box(ax, 32, 4, 24, 10, 'varie', label=r'$p$ grand', size='s')
+arrow(ax, (56, 9), (62, 9), 'varie')
+box(ax, 62, 4, 24, 10, 'limite', label='contradiction', size='s')
+save(fig, '66-125')

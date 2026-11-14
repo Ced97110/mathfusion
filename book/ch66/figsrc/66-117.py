@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 2, 14, 38, 38, 'fixe', r=1.2)
+box(ax, 4, 16, 34, 29, 'varie', r=1.2)
+text(ax, 5, 48.5, 'réels ℝ', 'fixe', 's', ha='left', weight='bold')
+text(ax, 21, 32, 'algébriques', 'varie', 's', weight='bold')
+text(ax, 21, 7, 'le dessin laisse croire :', 'limite', 's')
+text(ax, 21, 3, 'transcendants rares', 'limite', 's')
+text(ax, 65, 52, 'algébriques : une liste', 'varie', 's')
+for i, t in enumerate(['1', '2', '3', '…']):
+    box(ax, 46 + 10 * i, 38, 9, 9, 'varie', label=t, size='m')
+text(ax, 65, 31, 'réels : aucune liste', 'fixe', 's')
+text(ax, 65, 21, 'presque tous les réels', 'resultat', 's')
+text(ax, 65, 16, 'sont transcendants', 'resultat', 's')
+save(fig, '66-117')

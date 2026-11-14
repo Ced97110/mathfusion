@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 42, 50, 20, 'fixe')
+text(ax, 27, 56, 'le polynôme dont les racines', 'fixe', 's')
+text(ax, 27, 52, 'sont exactement les racines', 'fixe', 's')
+text(ax, 27, 48, 'primitives 6-ièmes', 'fixe', 's')
+arrow(ax, (53, 52), (62, 52), 'varie')
+text(ax, 57.5, 56, 'se note', 'varie', 's')
+box(ax, 63, 44, 22, 16, 'sujet', label=r'$\Phi_6$', size='xl')
+line(ax, [(2, 36), (86, 36)], 'fixe', lw=0.5, dash=True)
+for x, lab, sub in [(16, r'$\Phi_5$', '5 côtés'), (44, r'$\Phi_6$', '6 côtés'), (72, r'$\Phi_n$', r'$n$ côtés')]:
+    box(ax, x - 11, 14, 22, 14, 'sujet', label=lab, size='l')
+    text(ax, x, 10, sub, 'sujet', 's')
+text(ax, 44, 32, 'un indice pour tous', 'sujet', 's')
+save(fig, '66-036')

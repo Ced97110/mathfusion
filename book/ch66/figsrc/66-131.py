@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'$2M^{p}/(p-1)!$ avec $M=2$', 'encre', 'm')
+f = numberline(ax, 8, 64, 24, 0, 3, step=1)
+disc(ax, f(2.67), 24, 1.6, 'varie')
+disc(ax, f(0.0011), 24, 1.6, 'sujet')
+text(ax, f(2.67), 30, r'$p=5$ : 2,67', 'varie', 's')
+text(ax, 3, 30, r'$p=11$ : 0,0011', 'sujet', 's', ha='left')
+arrow(ax, (f(2.67) - 4, 41), (f(0.0011) + 4, 41), 'varie')
+text(ax, 34, 46, 'p grandit', 'varie', 's')
+text(ax, 3, 13, r'$p=5$ : 64 / 24', 'fixe', 's', ha='left')
+text(ax, 3, 6, r'$p=11$ : 4 096 / 3 628 800', 'fixe', 's', ha='left')
+save(fig, '66-131')

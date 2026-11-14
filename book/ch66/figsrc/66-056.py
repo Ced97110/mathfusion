@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 68, r'$p=2$ et $k(x)=x+1$', 'sujet', 'm')
+box(ax, 8, 48, 72, 11, 'sujet', label=r'$k(x^2)=x^2+1$')
+box(ax, 8, 31, 72, 11, 'autre', label=r'$k(x)^2=x^2+2x+1$')
+text(ax, 44, 44.5, 'comparer', 'fixe', 's')
+box(ax, 8, 14, 72, 11, 'varie', label=r'modulo 2 : $2x \equiv 0$')
+arrow(ax, (44, 30), (44, 26), 'varie')
+text(ax, 44, 7, r'donc $k(x^2)\equiv k(x)^2$ modulo 2', 'resultat', 'm')
+save(fig, '66-056')

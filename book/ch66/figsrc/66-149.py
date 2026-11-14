@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 21, 56, 'ingrédients de la preuve', 'fixe', 's')
+box(ax, 2, 36, 38, 12, 'sujet', label=r'polynôme $f$ à choisir', size='s')
+box(ax, 2, 14, 38, 12, 'sujet', label='identité du type (65)', size='s')
+arrow(ax, (40, 42), (62, 34), 'varie')
+arrow(ax, (40, 20), (62, 28), 'varie')
+text(ax, 51, 43, '?', 'varie', 'l')
+text(ax, 51, 19, '?', 'varie', 'l')
+box(ax, 62, 22, 24, 18, 'autre', label=r'$e+\pi$', dash=True, size='l')
+text(ax, 44, 6, 'le livre ne tranche pas', 'fixe', 's')
+save(fig, '66-149')

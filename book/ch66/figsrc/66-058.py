@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 64, r'$n=4$ et $p=2$ divise 4', 'sujet', 'm')
+text(ax, 44, 54, r'1er point : $z^p$ reste primitive ?', 'fixe', 's')
+box(ax, 4, 38, 34, 11, 'sujet', label=r'$z=i$ : primitive')
+arrow(ax, (38, 43.5), (50, 43.5), 'varie')
+text(ax, 44, 47.5, r'$z^2$', 'varie', 's')
+box(ax, 50, 38, 34, 11, 'limite', label=r'$-1$ : pas primitive')
+text(ax, 44, 26, '2e point : racine répétée ?', 'fixe', 's')
+box(ax, 4, 10, 38, 11, 'fixe', label=r'$x^4-1\equiv(x+1)^4$')
+arrow(ax, (42, 15.5), (50, 15.5), 'varie')
+box(ax, 50, 10, 34, 11, 'limite', label='racine répétée')
+save(fig, '66-058')

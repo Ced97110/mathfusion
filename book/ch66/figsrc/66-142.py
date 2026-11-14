@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+line(ax, [(44, 4), (44, 56)], 'fixe', dash=True)
+text(ax, 22, 54, 'dans le langage', 'resultat', 'm')
+text(ax, 66, 54, 'hors du langage', 'limite', 'm')
+box(ax, 3, 36, 38, 10, 'fixe', label=r'$+\ \times\ <$ et polynômes', size='s')
+box(ax, 3, 20, 38, 10, 'resultat', label=r'$\exists\,x>0,\ x^{2}=2$', size='s')
+text(ax, 22, 13, 'se décide par algorithme', 'resultat', 's')
+box(ax, 50, 36, 14, 10, 'limite', label=r'$\pi$')
+box(ax, 68, 36, 14, 10, 'limite', label=r'$e$')
+text(ax, 66, 28, 'transcendants', 'limite', 's')
+text(ax, 66, 21, 'pas dans ce langage', 'limite', 's')
+save(fig, '66-142')
