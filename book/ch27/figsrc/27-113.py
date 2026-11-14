@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 48, 33, 11, 'sujet', label='sin 20° ≈ 0,3420')
+text(ax, 44, 53.5, r'$\times$', 'encre', 'l')
+box(ax, 53, 48, 33, 11, 'autre', label='cos 50° ≈ 0,6428')
+box(ax, 20, 26, 48, 11, 'resultat', label='sin α ≈ 0,2198')
+arrow(ax, (18, 48), (36, 37.5), 'fixe'); arrow(ax, (70, 48), (52, 37.5), 'fixe')
+text(ax, 44, 42.5, 'produit', 'fixe', 's')
+arrow(ax, (44, 26), (44, 14), 'varie')
+text(ax, 48, 20, 'calculatrice', 'varie', 's', ha='left')
+box(ax, 24, 2, 40, 11, 'resultat', label='α ≈ 12,70°')
+save(fig, '27-113')

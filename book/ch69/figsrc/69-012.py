@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+y = 28
+f = numberline(ax, 8, 78, y, -1, 3, labels=False, arrow_right=False)
+box(ax, f(-1), 10, f(0) - f(-1) - 0.6, 7, 'autre', label='N')
+box(ax, f(0) + 0.6, 10, f(3) - f(0) - 0.6, 7, 'resultat', label='P')
+disc(ax, f(1.5), y, 2, 'varie')
+x2 = f(2.25)
+poly(ax, [(x2 - 1.5, y - 1.5), (x2 + 1.5, y - 1.5), (x2 + 1.5, y + 1.5), (x2 - 1.5, y + 1.5)], 'varie')
+arrow(ax, (f(1.5), y + 2.4), (x2, y + 2.4), 'varie', curve=-0.5)
+text(ax, f(0), 23, '0', 'fixe', 's')
+text(ax, f(1.5), 23, 'b = 1,5', 'varie', 's')
+text(ax, x2 + 3, 23, 'b² = 2,25', 'varie', 's', ha='left')
+text(ax, 55, 40, '1,5 × 1,5 = 2,25', 'varie', 'm')
+save(fig, '69-012')

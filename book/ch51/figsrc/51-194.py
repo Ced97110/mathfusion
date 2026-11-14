@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$v\mapsto q\,v\,q^{-1}$', 'encre', 'xl')
+text(ax, 44, 58, r'$q=i$ , $v=j$', 'sujet', 'm')
+cx, cy = 44, 32
+arrow(ax, (cx, cy), (cx + 30, cy), 'autre', lw=1.4)
+arrow(ax, (cx, cy), (cx - 30, cy), 'resultat', lw=1.4)
+text(ax, cx + 30, cy - 5, r'$v=j$', 'autre', 'm')
+text(ax, cx - 30, cy - 5, r'$qvq^{-1}=-j$', 'resultat', 'm', ha='left')
+arrow(ax, (cx + 28, cy + 4), (cx - 28, cy + 4), 'varie', lw=1.2, curve=0.55)
+text(ax, cx, 41, 'demi-tour', 'varie', 'm')
+disc(ax, cx, cy, 3.2, 'sujet', label='i', size='s')
+text(ax, cx, 17, r'axe $i$ : vers vous, il reste en place', 'sujet', 's')
+text(ax, cx, 10, 'vue le long de l’axe', 'fixe', 's')
+save(fig, '51-194')

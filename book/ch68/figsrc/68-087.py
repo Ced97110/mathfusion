@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 2, 23, 22, 12, 'varie', label='101')
+text(ax, 13, 18.5, 'mot reçu', 'varie', 's')
+box(ax, 64, 42, 22, 12, 'fixe', label='000')
+box(ax, 64, 6, 22, 12, 'resultat', label='111')
+arrow(ax, (25, 31), (63, 46), 'fixe', lw=1.0)
+arrow(ax, (25, 27), (63, 12), 'resultat', lw=1.8)
+text(ax, 36, 43.5, r'$d=2$', 'fixe', 'm')
+text(ax, 44, 11, r'$d=1$', 'resultat', 'm')
+text(ax, 75, 2.5, 'le plus proche', 'resultat', 's')
+save(fig, '68-087')

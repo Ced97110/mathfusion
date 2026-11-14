@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 2, 32, 32, 17, 'sujet'); text(ax, 18, 45, 'étape 1', 'sujet', 's'); text(ax, 18, 38, '0,6216… → 0,622', 'sujet', 's')
+box(ax, 54, 32, 32, 17, 'autre'); text(ax, 70, 45, 'étape 2', 'autre', 's'); text(ax, 70, 38, 'arcsin(0,622)', 'autre', 's')
+arrow(ax, (34.8, 40.5), (53.2, 40.5), 'varie', lw=1.2)
+text(ax, 44, 44, 'donnée', 'varie', 's')
+box(ax, 2, 12, 32, 9, 'limite', label='erreur 0,0004', size='s')
+box(ax, 54, 12, 32, 9, 'limite', label='faux de 0,03°', size='s')
+arrow(ax, (18, 31.5), (18, 21.8), 'limite'); arrow(ax, (70, 31.5), (70, 21.8), 'limite')
+arrow(ax, (34.8, 16.5), (53.2, 16.5), 'limite', lw=1.2)
+text(ax, 44, 20, 'héritée', 'limite', 's')
+save(fig, '26-082')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,57,'S + I = ensemble des sommes s + i','encre','s')
+box(ax,2,34,22,10,'sujet',label='s ∈ S',size='m'); text(ax,28,39,'+','encre','l')
+box(ax,32,34,22,10,'autre',label='i ∈ I',size='m'); text(ax,58,39,'=','encre','l')
+box(ax,62,34,24,10,'resultat',label='s + i',size='m')
+box(ax,2,16,22,10,'sujet',label='(3, 3)',size='m'); text(ax,28,21,'+','encre','l')
+box(ax,32,16,22,10,'autre',label='(5, 0)',size='m'); text(ax,58,21,'=','encre','l')
+box(ax,62,16,24,10,'resultat',label='(8, 3)',size='m')
+for x in (13,43,74): arrow(ax,(x,34),(x,26),'fixe')
+brace(ax,62,86,16,'resultat',label='un élément de S + I',down=True)
+save(fig,'52-168')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 24, 78, 'au moins 18 ans', 'sujet', 'm')
+text(ax, 66, 78, r'$a \geq 18$', 'sujet', 'm')
+f = numberline(ax, 6, 70, 60, 16, 42, labels=False, arrow_right=True)
+arrow(ax, (f(18), 60), (82, 60), 'resultat', lw=2.0)
+for v, role in [(17, 'limite'), (18, 'resultat'), (40, 'resultat')]:
+    disc(ax, f(v), 60, 1.9, role)
+    text(ax, f(v) + {17: -2.4, 18: 2.4, 40: 0}[v], 54.5, str(v), role, 's')
+text(ax, 3, 66, 'ne vote pas', 'limite', 's', ha='left')
+text(ax, 64, 66, 'votent', 'resultat', 's')
+text(ax, 24, 36, 'au plus 8 personnes', 'sujet', 'm')
+text(ax, 66, 36, r'$n \leq 8$', 'sujet', 'm')
+g = numberline(ax, 6, 70, 18, 0, 10, labels=False, arrow_right=True)
+line(ax, [(g(0), 18), (g(8), 18)], 'resultat', lw=2.4)
+for v, role in [(5, 'resultat'), (8, 'resultat'), (9, 'limite')]:
+    disc(ax, g(v), 18, 1.9, role)
+    text(ax, g(v), 12.5, str(v), role, 's')
+text(ax, g(9) + 1, 24, 'interdit', 'limite', 's')
+save(fig, '17-011')

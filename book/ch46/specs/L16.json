@@ -1,0 +1,179 @@
+[
+ {
+  "code": "46-241",
+  "a_dire": "Le mélange revient en place après 4 répétitions, plus petit nombre commun aux longueurs 4 et 2.",
+  "legende_titre": "Quand les cartes reviennent-elles ?",
+  "lecture": [
+   "Le cycle bleu a quatre cartes : il revient après 4, 8, 12 répétitions.",
+   "Le cycle violet a deux cartes : il revient après 2, 4, 6, 8, 10, 12.",
+   "Le cadre vert entoure le premier moment où les deux reviennent : 4."
+  ],
+  "a_voir": "Le plus petit multiple commun à 4 et 2 est 4."
+ },
+ {
+  "code": "46-242",
+  "a_dire": "Pour trouver l'ordre, on répète chaque cycle m fois et on cherche le plus petit m qui les ramène tous deux.",
+  "legende_titre": "Répéter chaque cycle séparément",
+  "lecture": [
+   "La rangée bleue montre, pour m de 1 à 8, quand le cycle de longueur 4 est revenu : en vert.",
+   "La rangée violette fait de même pour le cycle de longueur 2.",
+   "La rangée grise est verte seulement quand les deux autres le sont."
+  ],
+  "a_voir": "Le premier m vert dans la dernière rangée est 4."
+ },
+ {
+  "code": "46-243",
+  "a_dire": "L'ordre d'une permutation est le PPCM des longueurs de ses cycles disjoints (ici 4 et 6, donc 12).",
+  "legende_titre": "Deux cycles, un seul moment commun",
+  "lecture": [
+   "Le cercle bleu a 4 points : un cycle de longueur 4.",
+   "Le cercle violet a 6 points : un cycle de longueur 6.",
+   "Les cases colorées sont les multiples de 4 et de 6 ; le cadre vert marque 12, où les deux se rejoignent."
+  ],
+  "a_voir": "Le premier nombre colorié dans les deux rangées est 12."
+ },
+ {
+  "code": "46-244",
+  "a_dire": "Le carré de (1 3 5 8)(2 6) est (1 5)(3 8) : deux échanges, les autres cartes en place.",
+  "legende_titre": "Le mélange fait deux fois",
+  "lecture": [
+   "Les disques bleus 1, 3, 5, 8 sont les cartes qui changent de place.",
+   "Les flèches orange relient 1 et 5 en haut, 3 et 8 en bas.",
+   "Les disques gris, 2, 4, 6, 7, restent à leur place."
+  ],
+  "a_voir": "Faire deux fois le mélange échange 1 avec 5 et 3 avec 8."
+ },
+ {
+  "code": "46-245",
+  "a_dire": "Un 4-cycle élevé au carré se casse en deux 2-cycles, et le 2-cycle disparaît.",
+  "legende_titre": "Avant et après le carré",
+  "lecture": [
+   "À gauche, le cycle bleu relie 1, 3, 5, 8 ; le cycle violet est (2 6).",
+   "La flèche orange « ×2 » marque que l'on fait le mélange deux fois.",
+   "À droite, en vert, deux paires : 1 avec 5 et 3 avec 8 ; les deux disques gris n'ont plus de flèche."
+  ],
+  "a_voir": "Un cycle de longueur 4 donne deux cycles de longueur 2 ; l'échange (2 6) s'annule."
+ },
+ {
+  "code": "46-246",
+  "a_dire": "Le nombre N(σ) s'obtient en additionnant (longueur − 1) de chaque cycle ; ici 3 + 1 = 4, pair, donc sg(σ) = +1.",
+  "legende_titre": "Compter pour trouver la signature",
+  "lecture": [
+   "Le cycle bleu a quatre disques : on compte 4 − 1 = 3.",
+   "Le cycle violet a deux disques : on compte 2 − 1 = 1.",
+   "En vert, la somme 4 est paire, donc la signature vaut +1.",
+   "Les quatre cases orange sont quatre échanges : même parité."
+  ],
+  "a_voir": "La somme 3 + 1 = 4 est paire, comme les quatre échanges."
+ },
+ {
+  "code": "46-247",
+  "a_dire": "La signature du carré se calcule de deux façons qui donnent la même réponse : paire.",
+  "legende_titre": "Deux calculs, un résultat",
+  "lecture": [
+   "À gauche, les deux paires bleues comptent 1 chacune : 1 + 1 = 2, pair.",
+   "À droite, sg(σ) = +1 multiplié par lui-même donne +1.",
+   "Le cadre vert du bas réunit les deux résultats."
+  ],
+  "a_voir": "Calcul direct et produit donnent tous deux : paire."
+ },
+ {
+  "code": "46-248",
+  "a_dire": "Pour calculer αβ, on suit chaque nombre : β d'abord, puis α ; on obtient (1 3 5 6).",
+  "legende_titre": "Deux cycles qui donnent un troisième",
+  "lecture": [
+   "Le cercle bleu est α : 1, 3, 5, 2.",
+   "Le cercle violet est β : 2, 5, 6, appliqué d'abord.",
+   "Le cercle vert est le produit αβ : 1, 3, 5, 6."
+  ],
+  "a_voir": "Le produit αβ est le cycle (1 3 5 6)."
+ },
+ {
+  "code": "46-249",
+  "a_dire": "Le nombre 2, déplacé par les deux facteurs, revient à sa place dans le produit.",
+  "legende_titre": "Un nombre qui revient",
+  "lecture": [
+   "Le disque bleu à gauche est 2 au départ.",
+   "La flèche violette (β) l'envoie sur 5, disque gris.",
+   "La flèche bleue (α) envoie 5 sur 2, disque vert."
+  ],
+  "a_voir": "2 est déplacé deux fois puis revient : le produit le laisse en place."
+ },
+ {
+  "code": "46-250",
+  "a_dire": "Avec α et β, les produits αβ et βα envoient 1 sur 3 et sur 4 : ils sont différents.",
+  "legende_titre": "Les deux ordres, deux arrivées",
+  "lecture": [
+   "La rangée du haut suit 1 quand on applique β puis α : on arrive en 3.",
+   "La rangée du bas suit 1 quand on applique α puis β : on arrive en 6 puis 4.",
+   "Les deux disques de fin ont des couleurs différentes : 3 et 4 ne sont pas égaux."
+  ],
+  "a_voir": "Le résultat dépend de l'ordre : 3 ≠ 4."
+ },
+ {
+  "code": "46-251",
+  "a_dire": "L'ordre des facteurs compte pour les permutations, alors qu'il ne compte pas pour les nombres.",
+  "legende_titre": "Les nombres, puis les permutations",
+  "lecture": [
+   "À gauche, 3 rangées de 5 disques et 5 rangées de 3 disques ont le même total.",
+   "À droite, αβ envoie 1 sur 3 (bleu) et βα envoie 1 sur 4 (violet).",
+   "Le trait rouge souligne que 3 et 4 diffèrent."
+  ],
+  "a_voir": "Avec les nombres l'ordre ne change rien ; avec les permutations il change le résultat."
+ },
+ {
+  "code": "46-252",
+  "a_dire": "Les douze racines se rangent par ordre : 1, 2, 3, 4, 6 ou 12, selon 12/d.",
+  "legende_titre": "Les racines rangées par ordre",
+  "lecture": [
+   "Chaque ligne donne un ordre et les numéros k des racines qui l'ont.",
+   "Chaque disque bleu est une racine.",
+   "Le cadre orange montre la ligne de l'exemple : k = 3 donne l'ordre 4."
+  ],
+  "a_voir": "Chaque racine k est dans la ligne d'ordre 12/PGCD(k, 12)."
+ },
+ {
+  "code": "46-253",
+  "a_dire": "Le nombre de racines d'ordre q est φ(q) : 1, 1, 2, 2, 2, 4.",
+  "legende_titre": "Combien de racines par ligne",
+  "lecture": [
+   "Chaque ligne commence par φ(q) pour un ordre q.",
+   "Chaque carré bleu est une racine de cet ordre.",
+   "Le chiffre à droite est le nombre de carrés."
+  ],
+  "a_voir": "Les lignes ont 1, 1, 2, 2, 2 et 4 racines : ce sont φ(1), φ(2), φ(3), φ(4), φ(6), φ(12)."
+ },
+ {
+  "code": "46-254",
+  "a_dire": "Chaque racine a un seul ordre, qui divise 12 : on les compte une fois chacune et la somme fait 12.",
+  "legende_titre": "D'où vient la somme 12",
+  "lecture": [
+   "Les douze disques gris du haut sont les racines.",
+   "Chaque flèche en place une dans un seul groupe vert.",
+   "Sous chaque groupe, le nombre est son ordre ; leurs tailles donnent 1 + 1 + 2 + 2 + 2 + 4."
+  ],
+  "a_voir": "Chaque racine est dans exactement un groupe, donc la somme vaut 12."
+ },
+ {
+  "code": "46-255",
+  "a_dire": "La somme des φ(q) vaut n seulement pour les diviseurs q de n ; avec tous les q de 1 à 12, elle vaut 46.",
+  "legende_titre": "Si on retire la condition",
+  "lecture": [
+   "Chaque barre est la valeur de φ(q) pour q de 1 à 12.",
+   "Les barres vertes sont les diviseurs de 12 : leur somme est 12.",
+   "Les barres rouges ne divisent pas 12 : elles ajoutent 34, soit 46 en tout."
+  ],
+  "a_voir": "Sans la condition sur les diviseurs, la somme est trop grande."
+ },
+ {
+  "code": "46-256",
+  "a_dire": "On distingue ℤ/4ℤ et ℤ/2ℤ × ℤ/2ℤ en comptant leurs sous-groupes propres : un seul contre trois.",
+  "legende_titre": "Deux groupes de quatre éléments",
+  "lecture": [
+   "À gauche, les disques bleus 0, 1, 2, 3 forment l'horloge à 4 heures ; le trait orange relie 0 et 2.",
+   "À droite, les disques violets sont les couples ; chaque trait orange part de 00 vers un couple non nul.",
+   "Il y a un trait à gauche, trois à droite."
+  ],
+  "a_voir": "Un sous-groupe propre d'un côté, trois de l'autre : les groupes sont différents."
+ }
+]

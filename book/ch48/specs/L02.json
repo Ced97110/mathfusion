@@ -1,0 +1,184 @@
+[
+ {
+  "code": "48-017",
+  "a_dire": "Chaque fibre est le noyau décalé, et on peut revenir en arrière.",
+  "legende_titre": "Le noyau et sa copie décalée",
+  "lecture": [
+   "Ligne bleue : le noyau 4ℤ, avec 0, 4, 8, 12.",
+   "Ligne orange : la fibre 3 + 4ℤ, avec 3, 7, 11, 15.",
+   "Chaque flèche grise va dans les deux sens : on ajoute 3 pour aller vers la fibre, on retire 3 pour revenir."
+  ],
+  "a_voir": "Chaque case bleue a une seule case orange en face, et inversement."
+ },
+ {
+  "code": "48-018",
+  "a_dire": "Un homomorphisme est une application qui respecte l'opération ; une application quelconque ne le fait pas.",
+  "legende_titre": "Trois applications, un seul test",
+  "lecture": [
+   "Chaque ligne est une application.",
+   "La colonne bleue donne l'image de 1 + 1, la colonne violette la somme des images de 1 et de 1.",
+   "Les deux premières lignes (vertes) ont deux nombres égaux.",
+   "La troisième (rouge) a deux nombres différents."
+  ],
+  "a_voir": "Le signe égal est vrai pour les deux premières applications, faux pour la troisième."
+ },
+ {
+  "code": "48-019",
+  "a_dire": "La condition f(ab) = f(a) f(b) reste vraie pour toute paire de nombres, ici deux paires.",
+  "legende_titre": "La même égalité pour deux paires",
+  "lecture": [
+   "Pour chaque paire, le chemin bleu additionne d'abord, puis applique f.",
+   "Le chemin violet prend les positions, puis les additionne.",
+   "Les deux cases vertes sont égales : 2 et 2."
+  ],
+  "a_voir": "Les nombres changent d'une paire à l'autre, l'égalité reste."
+ },
+ {
+  "code": "48-020",
+  "a_dire": "Les deux chemins, additionner puis f, ou f puis additionner, arrivent au même endroit.",
+  "legende_titre": "Deux chemins, une arrivée",
+  "lecture": [
+   "Le haut gris donne les nombres 3 et 6.",
+   "À gauche, en bleu, vous additionnez (9) puis vous passez à la position.",
+   "À droite, en violet, vous passez aux positions (3 et 2) puis vous additionnez (5).",
+   "Les deux cases vertes disent position 1."
+  ],
+  "a_voir": "Les deux cases vertes du bas sont les mêmes."
+ },
+ {
+  "code": "48-021",
+  "a_dire": "Le produit ab se calcule dans G, le produit f(a)f(b) se calcule dans G′, et ce sont deux opérations différentes.",
+  "legende_titre": "Deux produits, deux groupes",
+  "lecture": [
+   "Le cadre bleu est le groupe de départ : le produit ab y est l'addition ordinaire, 5 + 9 = 14.",
+   "Le cadre violet est le groupe d'arrivée : le produit f(a)f(b) y est l'addition qui garde le reste de la division par 4, 1 + 1 = 2.",
+   "La flèche orange est f, de G vers G′."
+  ],
+  "a_voir": "Chaque cadre porte sa propre opération."
+ },
+ {
+  "code": "48-022",
+  "a_dire": "Pour les monoïdes, il faut en plus que le neutre aille sur le neutre : f(1) = 1′.",
+  "legende_titre": "Le neutre doit aller sur le neutre",
+  "lecture": [
+   "Le disque bleu est le neutre 1 des entiers.",
+   "La rangée violette est le cadran à six positions.",
+   "La position 1, en vert, est le neutre 1′ : la flèche verte montre où le neutre devrait aller.",
+   "La flèche rouge montre où il va ici : sur 3."
+  ],
+  "a_voir": "La flèche rouge ne tombe pas sur le disque vert."
+ },
+ {
+  "code": "48-023",
+  "a_dire": "Pour un groupe, f(1) = 1′ est automatique : l'image du neutre ne peut être que le neutre.",
+  "legende_titre": "Le neutre ne peut aller ailleurs",
+  "lecture": [
+   "Le disque bleu est l'entier 0.",
+   "La flèche rouge l'envoie sur la position 2, en rouge.",
+   "La boîte bleue dit que l'image de 0 + 0 est 2.",
+   "La boîte violette dit que la somme des images est 2 + 2 = 0 : les deux sont différentes."
+  ],
+  "a_voir": "Si 0 va sur 2, les deux boîtes du bas se contredisent ; seule la position 0, en vert, convient."
+ },
+ {
+  "code": "48-024",
+  "a_dire": "La preuve va de 1 = 1·1 à f(1) = 1′ en deux étapes : appliquer f, puis retirer f(1) des deux côtés.",
+  "legende_titre": "Du neutre à son image, en deux étapes",
+  "lecture": [
+   "Boîte bleue : le départ, 1 = 1 · 1.",
+   "Boîte violette : ce que donne f, f(1) = f(1) f(1).",
+   "Boîte verte : l'arrivée, f(1) = 1′.",
+   "La flèche épaisse est l'étape qui porte la preuve : on retire f(1) des deux côtés, comme pour x = x + x qui donne x = 0."
+  ],
+  "a_voir": "L'étape de la flèche épaisse utilise l'inverse de f(1)."
+ },
+ {
+  "code": "48-025",
+  "a_dire": "Un homomorphisme envoie l'inverse de a sur l'inverse de f(a).",
+  "legende_titre": "L'inverse garde son rôle après f",
+  "lecture": [
+   "En haut, 5 et −5 sont inverses l'un de l'autre.",
+   "En bas, 1 et 3 sont inverses l'un de l'autre.",
+   "Les flèches orange sont f : elle envoie 5 sur 1, et −5 sur 3.",
+   "Les cases vertes sont les inverses."
+  ],
+  "a_voir": "La case verte du haut va sur la case verte du bas."
+ },
+ {
+  "code": "48-026",
+  "a_dire": "Un homomorphisme envoie a puissance k sur f(a) puissance k : chaque facteur donne un facteur.",
+  "legende_titre": "Un facteur de plus, un facteur de plus",
+  "lecture": [
+   "La rangée bleue est 5 + 5 + 5, soit 15.",
+   "La rangée violette est 1 + 1 + 1, soit 3.",
+   "Chaque flèche orange est f : un facteur 5 va sur un facteur 1."
+  ],
+  "a_voir": "Trois facteurs en haut, trois facteurs en bas, un pour un."
+ },
+ {
+  "code": "48-027",
+  "a_dire": "Le signe f : G → G′ dit d'un coup le nom de l'application, son départ et son arrivée.",
+  "legende_titre": "Lire f : G → G′",
+  "lecture": [
+   "Le signe est écrit en grand en haut, en quatre morceaux colorés.",
+   "Chaque ligne du dessous reprend un morceau avec la même couleur et dit ce qu'il désigne."
+  ],
+  "a_voir": "Le départ est avant la flèche, l'arrivée est après."
+ },
+ {
+  "code": "48-028",
+  "a_dire": "Le signe f(ab) = f(a)f(b) se lit : combiner puis f est égal à f puis combiner.",
+  "legende_titre": "Les deux côtés du signe égal",
+  "lecture": [
+   "La formule bleue à gauche : on combine, puis on applique f.",
+   "La formule violette à droite : on applique f, puis on combine.",
+   "Le signe égal les relie.",
+   "Dessous, le même schéma avec 3 et 6 : les deux côtés donnent 1."
+  ],
+  "a_voir": "Chaque côté de l'égalité est un ordre différent des deux gestes."
+ },
+ {
+  "code": "48-029",
+  "a_dire": "Le signe ker f désigne les éléments du départ que f envoie sur le neutre.",
+  "legende_titre": "Le noyau, par un exemple",
+  "lecture": [
+   "La rangée du haut montre des nombres de quarts de tour.",
+   "Les cases bleues, 0, 4 et 8, sont envoyées par les flèches orange sur le disque vert, la position 0.",
+   "Le signe ker f désigne les cases bleues."
+  ],
+  "a_voir": "Les cases bleues sont celles qui arrivent sur le disque vert."
+ },
+ {
+  "code": "48-030",
+  "a_dire": "Le signe im f désigne l'ensemble des éléments d'arrivée atteints par f.",
+  "legende_titre": "L'image, par un exemple",
+  "lecture": [
+   "La rangée grise du haut montre des nombres.",
+   "Les flèches orange vont vers les disques verts du bas.",
+   "Le cadre vert en pointillé entoure toutes les positions atteintes : c'est im f."
+  ],
+  "a_voir": "Le cadre entoure les positions où une flèche arrive."
+ },
+ {
+  "code": "48-031",
+  "a_dire": "Le signe G/K désigne le groupe dont les éléments sont des paquets de G.",
+  "legende_titre": "Le quotient, paquet par paquet",
+  "lecture": [
+   "Les quatre boîtes sont les paquets des entiers selon le reste dans la division par 4.",
+   "La boîte bleue est le paquet de 0.",
+   "L'accolade verte regroupe les quatre paquets : ce sont les quatre éléments de G/K."
+  ],
+  "a_voir": "Un paquet est un élément du nouveau groupe."
+ },
+ {
+  "code": "48-032",
+  "a_dire": "Le signe ν : G → G/K envoie chaque élément a sur son paquet aK.",
+  "legende_titre": "Nommer l'application qui donne le paquet",
+  "lecture": [
+   "Le disque bleu est l'élément 7 de G.",
+   "La flèche orange est ν : elle envoie a sur aK.",
+   "La boîte verte est le paquet de 7, noté 7 + 4ℤ, qui contient 3, 7, 11."
+  ],
+  "a_voir": "La flèche part d'un élément et arrive sur un paquet entier."
+ }
+]

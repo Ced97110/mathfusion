@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,2,60,50,16,'fixe'); text(ax,27,68,r'$\frac{x^2-9}{x^2+5x+6}$','fixe','m')
+box(ax,2,32,50,18,'sujet'); text(ax,27,41,r'$\frac{(x+3)(x-3)}{(x+2)(x+3)}$','sujet','m')
+box(ax,2,5,50,18,'resultat'); text(ax,27,14,r'$\frac{x-3}{x+2}$','resultat','l')
+arrow(ax,(27,60),(27,50),'varie'); arrow(ax,(27,32),(27,23),'varie')
+text(ax,70,55,'factoriser','varie','m'); text(ax,70,27,r'supprimer $x+3$','varie','m')
+text(ax,70,46,r'$x+3$ est commun','varie','s')
+text(ax,70,8,r'$x=1$ : $\frac{-8}{12}=\frac{-2}{3}$','encre','s')
+save(fig,'18-108')

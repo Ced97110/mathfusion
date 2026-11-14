@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 68, 'anneau principal', 'sujet', 'm')
+box(ax, 34, 48, 20, 12, 'sujet', label='D', size='xl')
+box(ax, 4, 22, 36, 14, 'varie', label='D = ℤ')
+box(ax, 48, 22, 36, 14, 'varie', label='D = F[λ]')
+arrow(ax, (39, 48), (24, 37), 'varie')
+arrow(ax, (49, 48), (64, 37), 'varie')
+text(ax, 22, 15, 'groupes abéliens', 'varie', 's')
+text(ax, 66, 15, 'matrices', 'varie', 's')
+text(ax, 22, 7, '… −1, 0, 1, 2 …', 'fixe', 's')
+text(ax, 66, 7, 'λ² − 2λ + 1', 'fixe', 's')
+save(fig, '60-073')

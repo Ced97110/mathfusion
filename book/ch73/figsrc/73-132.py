@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+ox, oy, k = 44, 42, 7
+Pt = lambda x, y: (ox + k * x, oy + k * y)
+line(ax, [Pt(-4.5, 0), Pt(4.5, 0)], 'fixe', 0.5); line(ax, [Pt(0, -4.5), Pt(0, 4.5)], 'fixe', 0.5)
+line(ax, [Pt(-3.2, 3.2), Pt(3.2, -3.2)], 'varie', 1.0, dash=True)
+text(ax, *Pt(-2.6, 3.7), 'le miroir', 'varie', 's')
+arrow(ax, Pt(0, 0), Pt(1, 1), 'sujet', 1.4)
+text(ax, *Pt(0.2, 1.9), r'$u=(1,1)$', 'sujet', 's', ha='right')
+disc(ax, *Pt(3, 2), 1.1, 'sujet'); disc(ax, *Pt(-2, -3), 1.1, 'resultat')
+arrow(ax, Pt(2.8, 1.8), Pt(-1.8, -2.8), 'varie', 0.9)
+text(ax, *Pt(3.2, 2.9), '(3, 2)', 'sujet', 's')
+text(ax, *Pt(-2.1, -4.0), '(−2, −3)', 'resultat', 's')
+text(ax, *Pt(2.6, -2.2), r'$S_u$', 'varie', 'l')
+save(fig, '73-132')

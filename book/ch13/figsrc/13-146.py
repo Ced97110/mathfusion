@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 3, 6, 82, 64, 'autre', fill=False, dash=True)
+text(ax, 44, 65, 'dans tout anneau', 'autre', 'm')
+box(ax, 9, 40, 30, 14, 'sujet', label='ℤ', size='l')
+text(ax, 24, 36, 'un cas : les entiers', 'sujet', 's')
+box(ax, 49, 40, 30, 14, 'fixe', label='distributivité', size='s')
+arrow(ax, (64, 39), (64, 27), 'resultat')
+arrow(ax, (39, 47), (49, 47), 'fixe')
+box(ax, 44, 13, 40, 13, 'resultat', label=r'$(-1)\times(-1)=1$', size='s')
+text(ax, 22, 19, 'même règle', 'resultat', 's')
+save(fig, '13-146')

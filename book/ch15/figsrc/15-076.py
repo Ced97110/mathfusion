@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+f = numberline(ax, 16, 72, 28, -56, 56, step=56, arrow_right=False, size='m')
+disc(ax, f(56), 28, 2.0, 'sujet'); disc(ax, f(-56), 28, 2.0, 'varie')
+text(ax, f(56) + 3, 44, r'$7p^{3}=56$', 'sujet', 'm', ha='center'); text(ax, f(-56) + 3, 44, r'$-7p^{3}=-56$', 'varie', 'm')
+arrow(ax, (f(-56) + 2, 31), (f(56) - 2, 31), 'fixe', curve=-0.35, both=True)
+text(ax, 44, 56, 'signe − : l’opposé', 'encre', 'm')
+text(ax, 44, 14, r'$10-7p^{3}=10+(-7p^{3})$', 'fixe', 'm')
+text(ax, 44, 6, r'pour $p=2$', 'encre', 'm', weight='bold')
+save(fig, '15-076')

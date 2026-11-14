@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 22, 51, r'règle : $\alpha\mathbf{0}=\mathbf{0}$', 'resultat', 's', weight='bold')
+box(ax, 3, 30, 38, 9, 'resultat', label=r'$3\times(0,0)=(0,0)$', size='s')
+box(ax, 3, 15, 38, 9, 'resultat', label=r'$7\times(0,0)=(0,0)$', size='s')
+line(ax, [(44, 6), (44, 54)], 'fixe', lw=0.6, dash=True)
+text(ax, 66, 51, r'produit inventé $\circledast$', 'limite', 's', weight='bold')
+ox, oy, k = 54, 24, 14
+arrow(ax, (ox - 4, oy), (ox + 2 * k + 2, oy), 'fixe', lw=0.6)
+line(ax, [(ox, oy - 4), (ox, oy + 12)], 'fixe', lw=0.6)
+arrow(ax, (ox, oy), (ox + k - 1, oy), 'limite', lw=1.6)
+disc(ax, ox, oy, 1.2, 'sujet')
+disc(ax, ox + k, oy, 1.2, 'limite')
+text(ax, ox, oy - 4, '(0, 0)', 'sujet', 's')
+text(ax, ox + k, oy - 4, '(1, 0)', 'limite', 's')
+text(ax, ox + 14, oy + 9, r'$2\circledast(0,0)=(1,0)$', 'limite', 's')
+save(fig, '58-109')

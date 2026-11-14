@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 6, 56, 76, 14, 'sujet', label=r'$x=-2$ : $4-10+6=0$')
+arrow(ax, (44, 55), (44, 44), 'varie'); text(ax, 47, 49.5, r'donc $x+2$ est un facteur', 'varie', 's', ha='left')
+brace(ax, 8, 80, 38, 'sujet', label=r'$x^2+5x+6$', down=False)
+box(ax, 8, 18, 32, 14, 'sujet', label=r'$x+2$')
+text(ax, 44, 25, r'$\times$', 'encre', 'l')
+box(ax, 48, 18, 32, 14, 'resultat', label=r'$x+3$')
+text(ax, 24, 11, 'facteur connu', 'sujet', 's'); text(ax, 64, 11, 'division : l’autre', 'resultat', 's')
+save(fig, '21-141')

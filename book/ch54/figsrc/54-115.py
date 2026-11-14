@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+assert (2 ** 0.5) ** 2 - 2 < 1e-12 and abs((2 ** 0.5) ** 3 - 2 * 2 ** 0.5) < 1e-12 and abs((2 ** 0.5) ** 4 - 4) < 1e-12
+box(ax, 2, 6, 41, 52, 'sujet')
+text(ax, 22.5, 52, r'$\sqrt{2}$ : algébrique', 'sujet', 's', weight='bold')
+text(ax, 22.5, 41, r'$(\sqrt{2})^2=2$', 'encre', 's')
+text(ax, 22.5, 32, r'$(\sqrt{2})^3=2\sqrt{2}$', 'encre', 's')
+text(ax, 22.5, 23, r'$(\sqrt{2})^4=4$', 'encre', 's')
+text(ax, 22.5, 12, 'les puissances se simplifient', 'sujet', 's')
+box(ax, 45, 6, 41, 52, 'fixe')
+text(ax, 65.5, 52, r'$\pi$ : pas algébrique', 'fixe', 's', weight='bold')
+text(ax, 65.5, 41, r'$\pi^2$', 'encre', 'm')
+text(ax, 65.5, 32, r'$\pi^3$', 'encre', 'm')
+text(ax, 65.5, 23, r'$\pi^4$', 'encre', 'm')
+text(ax, 65.5, 12, 'toutes restent différentes', 'fixe', 's')
+save(fig, '54-115')

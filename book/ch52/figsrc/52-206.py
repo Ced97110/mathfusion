@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,44,54,r'$k=4=2\times2$','encre','m')
+box(ax,4,28,22,10,'sujet',label=r'$2\cdot1\neq0$',size='s')
+text(ax,31,33,r'$\times$','encre','m')
+box(ax,36,28,22,10,'sujet',label=r'$2\cdot1\neq0$',size='s')
+text(ax,63,33,r'$=$','encre','m')
+box(ax,68,28,16,10,'limite',label=r'$4\cdot1=0$',size='s')
+box(ax,4,6,80,12,'limite',label='deux diviseurs de zéro : interdit',size='s')
+arrow(ax,(15,28),(30,18),'limite',lw=0.7); arrow(ax,(47,28),(58,18),'limite',lw=0.7)
+text(ax,15,43,r'$l\cdot1$','sujet','s'); text(ax,47,43,r'$m\cdot1$','sujet','s')
+save(fig,'52-206')

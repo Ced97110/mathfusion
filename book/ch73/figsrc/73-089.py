@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 3, 18, 34, 28, 'sujet'); box(ax, 51, 18, 34, 28, 'autre')
+text(ax, 20, 50, 'calcul sur les nombres', 'sujet', 's')
+text(ax, 68, 50, 'fait géométrique', 'autre', 's')
+text(ax, 20, 40, r'$A^{t}A=I$', 'sujet', 'l')
+text(ax, 20, 31, '1    0', 'sujet'); text(ax, 20, 25, '0    1', 'sujet')
+text(ax, 68, 38, r'$\|x\|=5$', 'autre', 'l')
+text(ax, 68, 27, r'$\|Ax\|=5$', 'autre', 'l')
+text(ax, 44, 32, '=', 'resultat', 'xl', weight='bold')
+text(ax, 44, 8, 'deux tests, une seule réponse', 'resultat', 's')
+save(fig, '73-089')

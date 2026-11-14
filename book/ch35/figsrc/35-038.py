@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 52, 38, 11, 'sujet', label=r'$a=1,\ b=-3$', size='s')
+box(ax, 47, 52, 38, 11, 'autre', label=r'$a=-1,\ b=3$', size='s')
+box(ax, 20, 31, 48, 11, 'fixe', label='même quotient : −3', size='s')
+arrow(ax, (22, 52), (35, 42), 'fixe'); arrow(ax, (66, 52), (53, 42), 'fixe')
+box(ax, 3, 4, 38, 11, 'sujet', label='α = −71,57°', size='s')
+box(ax, 47, 4, 38, 11, 'autre', label='α = 108,43°', size='s')
+arrow(ax, (35, 31), (22, 15), 'fixe'); arrow(ax, (53, 31), (66, 15), 'fixe')
+arrow(ax, (42, 9.5), (46, 9.5), 'varie', both=True)
+text(ax, 44, 21, '180° d’écart', 'varie', 's')
+save(fig, '35-038')

@@ -1,0 +1,180 @@
+[
+ {
+  "code": "17-001",
+  "a_dire": "Pour 0, 1, 2, 4 et 6 kilomètres, le prix part de 3 € et monte de 2 € par kilomètre, jusqu'à 15 € pour 6 kilomètres.",
+  "legende_titre": "Le prix du taxi, kilomètre après kilomètre",
+  "lecture": [
+   "Le bloc gris est le départ : 3 €.",
+   "Chaque bloc orange ajoute 2 € pour un kilomètre.",
+   "La ligne verte marque les 15 € que vous avez en poche."
+  ],
+  "a_voir": "Le prix monte quand la distance monte et atteint 15 € à 6 kilomètres."
+ },
+ {
+  "code": "17-002",
+  "a_dire": "La lettre d est le nombre de kilomètres, et une seule écriture, 3 + 2d, donne le prix pour n'importe quelle distance.",
+  "legende_titre": "Une lettre pour toutes les distances",
+  "lecture": [
+   "Les deux cases grises sont deux phrases, une pour 4 km, une pour 5 km.",
+   "Les nombres en orange sont les distances choisies.",
+   "La case bleue est l'écriture unique 3 + 2d, où d est le nombre de kilomètres."
+  ],
+  "a_voir": "Une seule écriture remplace une phrase par distance."
+ },
+ {
+  "code": "17-003",
+  "a_dire": "Écrire = 15 n'accepte que 6 kilomètres, alors que « ne pas dépasser 15 € » accepte aussi 4 et 1 kilomètre.",
+  "legende_titre": "Une égalité qui refuse trop de distances",
+  "lecture": [
+   "En haut, le point violet est la seule distance de l'égalité : 6.",
+   "Les deux cercles rouges, 1 et 4, conviennent mais l'égalité les refuse.",
+   "En bas, le trait vert et ses points montrent toutes les distances acceptées de 0 à 6."
+  ],
+  "a_voir": "L'égalité ne garde qu'un point ; la phrase en garde beaucoup."
+ },
+ {
+  "code": "17-004",
+  "a_dire": "Une contrainte s'écrit : la quantité qui varie, puis le signe ≤, puis la limite.",
+  "legende_titre": "Écrire une limite en trois morceaux",
+  "lecture": [
+   "La case orange est la quantité qui varie.",
+   "La case bleue est le signe ≤.",
+   "La case grise est la limite : 15 € pour le taxi, 20 € pour le cinéma."
+  ],
+  "a_voir": "Les deux lignes ont la même disposition : varie, signe, limite."
+ },
+ {
+  "code": "17-005",
+  "a_dire": "Le signe ≤ réunit « plus petit que » et « égal à » en une seule écriture : p ≤ 15.",
+  "legende_titre": "Deux cas réunis en un signe",
+  "lecture": [
+   "Le trait vert va jusqu'à 15 et ses points 5, 11 et 15 sont permis.",
+   "L'accolade verte montre les valeurs plus petites que 15.",
+   "La flèche orange montre le cas égal à 15.",
+   "Le point rouge 16 est refusé."
+  ],
+  "a_voir": "15, 11 et 5 vérifient p ≤ 15 ; 16 ne la vérifie pas."
+ },
+ {
+  "code": "17-006",
+  "a_dire": "Une équation fixe une valeur exacte, une contrainte fixe une limite que le prix ne franchit pas.",
+  "legende_titre": "Valeur exacte ou limite",
+  "lecture": [
+   "En haut, le point violet est le prix exact : 15 €.",
+   "En bas, le trait bleu est tous les prix de 15 € ou moins.",
+   "Le trait rouge vertical est la limite, et la partie rouge à droite est interdite."
+  ],
+  "a_voir": "L'égalité donne un point, la contrainte donne un trait arrêté par une limite."
+ },
+ {
+  "code": "17-007",
+  "a_dire": "6, 4 et 2,5 kilomètres sont permis, 7 kilomètres est interdit, car le prix est 15 € ou moins pour les premiers et 17 € pour le dernier.",
+  "legende_titre": "Quatre essais de distance",
+  "lecture": [
+   "Chaque cercle est une distance essayée.",
+   "Les cercles verts coûtent 8 €, 11 € et 15 € : permis.",
+   "Le cercle rouge, 7 kilomètres, coûte 17 € : interdit."
+  ],
+  "a_voir": "Chaque essai a son prix, et le prix décide si la distance est permise."
+ },
+ {
+  "code": "17-008",
+  "a_dire": "Plusieurs distances différentes, comme 2,5, 4 et 6, sont toutes de bonnes réponses, et il y en a une infinité entre 0 et 6.",
+  "legende_titre": "Pas une réponse, une infinité",
+  "lecture": [
+   "Les trois cercles verts sont les réponses données : 2,5, 4 et 6.",
+   "Le trait vert et ses petits points sont toutes les autres distances de 0 à 6.",
+   "Le trait ne s'arrête pas sur une liste : il continue sans fin de petits points."
+  ],
+  "a_voir": "Beaucoup de distances conviennent, pas seulement une."
+ },
+ {
+  "code": "17-009",
+  "a_dire": "La réponse est un ensemble : toute la collection des distances de 0 à 6 kilomètres, qui contient 4 et 6 mais pas 7.",
+  "legende_titre": "Une réponse faite d'une collection",
+  "lecture": [
+   "La grande case bleue est l'ensemble des distances de 0 à 6 km.",
+   "Les cercles verts à l'intérieur, 0, 2,5, 4 et 6, en font partie.",
+   "Le cercle rouge 7, à l'extérieur, n'en fait pas partie."
+  ],
+  "a_voir": "Dedans toute la collection, dehors 7."
+ },
+ {
+  "code": "17-010",
+  "a_dire": "Une inéquation sert à écrire, dessiner et calculer l'ensemble des distances permises.",
+  "legende_titre": "Un outil, trois tâches",
+  "lecture": [
+   "Chaque case bleue à gauche est une tâche.",
+   "À droite de « écrire » se trouve la ligne 3 + 2d ≤ 15.",
+   "À droite de « dessiner » se trouve le trait vert de 0 à 6.",
+   "À droite de « calculer » se trouve le résultat vert : de 0 à 6 km."
+  ],
+  "a_voir": "Le même outil écrit, dessine et calcule."
+ },
+ {
+  "code": "17-011",
+  "a_dire": "« Au moins » et « au plus » donnent chacun une limite et un sens, et la limite elle-même est permise : a ≥ 18 et n ≤ 8.",
+  "legende_titre": "« Au moins » et « au plus »",
+  "lecture": [
+   "En haut, la flèche verte part de 18 vers la droite : 18 et 40 votent, 17 ne vote pas.",
+   "En bas, le trait vert va de 0 à 8 : 5 et 8 sont permis, 9 est interdit.",
+   "Les cercles rouges sont les cas refusés."
+  ],
+  "a_voir": "Dans les deux phrases, la limite elle-même est permise."
+ },
+ {
+  "code": "17-012",
+  "a_dire": "x > 2 se dessine par un point vide sur 2 et une flèche vers la droite qui ne s'arrête pas.",
+  "legende_titre": "Tous les nombres plus grands que 2",
+  "lecture": [
+   "Le point vide sur 2 dit que 2 n'est pas pris.",
+   "La flèche bleue couvre tous les nombres plus grands que 2.",
+   "La flèche dépasse le bord du dessin : elle continue sans fin."
+  ],
+  "a_voir": "Le point vide marque le départ, la flèche couvre tout ce qui suit."
+ },
+ {
+  "code": "17-013",
+  "a_dire": "La lettre x au bout de la droite dit que les nombres de la droite sont les valeurs de x.",
+  "legende_titre": "Ce que sont les nombres de la droite",
+  "lecture": [
+   "La lettre x en bleu est placée au bout de la droite.",
+   "Chaque point orange est un nombre de la droite.",
+   "Chaque case orange lit le point comme « x vaut ce nombre »."
+  ],
+  "a_voir": "Les nombres de la droite sont les valeurs de x."
+ },
+ {
+  "code": "17-014",
+  "a_dire": "Un point vide veut dire que le nombre ne convient pas, un point plein veut dire qu'il convient.",
+  "legende_titre": "Point vide, point plein",
+  "lecture": [
+   "En haut, le point blanc sur 2 dit que 2 ne convient pas pour x > 2.",
+   "En bas, le point bleu plein sur 2 dit que 2 convient pour x ≥ 2.",
+   "La flèche bleue est la même dans les deux dessins."
+  ],
+  "a_voir": "Seul le remplissage du point change entre les deux."
+ },
+ {
+  "code": "17-015",
+  "a_dire": "Un trait qui s'arrête oublie des nombres comme 6 ; la pointe de la flèche dit que le trait continue sans fin, vers la droite.",
+  "legende_titre": "Pourquoi une flèche et pas un trait",
+  "lecture": [
+   "En haut, le trait bleu s'arrête à la barre rouge en 5 et oublie 6.",
+   "En bas, la flèche bleue continue au-delà de 6.",
+   "Le cercle vert sur 6 est compris dans la flèche."
+  ],
+  "a_voir": "Un trait qui s'arrête oublie des nombres ; la flèche n'en oublie aucun."
+ },
+ {
+  "code": "17-016",
+  "a_dire": "La figure représente l'affirmation x > 2, mais son point n'est pas toujours posé sur le nombre écrit : pour x + 7 > 4, il est sur −3.",
+  "legende_titre": "Ce que la figure ne montre pas",
+  "lecture": [
+   "La ligne du haut est x > 2 : le point est sur le 2 écrit.",
+   "La ligne du bas est x + 7 > 4 : le nombre écrit est 4, gris.",
+   "Le point de la ligne du bas est sur −3, en orange, et la flèche part de là."
+  ],
+  "a_voir": "Le calcul qui trouve où commence la flèche n'est pas dans la figure."
+ }
+]

@@ -1,0 +1,115 @@
+{
+ "55-010": {
+  "lecture": [
+   "À gauche, le problème 1 : la case violette est le tableau de valeurs, la case bleue est la liste des coefficients.",
+   "La flèche orange va du tableau vers la liste : peut-on retrouver la liste ?",
+   "À droite, le problème 2 : la case bleue donne les coefficients, la case violette la somme et le produit des racines.",
+   "La flèche orange va des coefficients vers la somme et le produit : peut-on les retrouver ?"
+  ],
+  "a_voir": "Chaque problème demande si une information se retrouve à partir d'une autre."
+ },
+ "55-025": {
+  "lecture": [
+   "L'axe du bas donne l'entrée 0, 1 ou 2 ; l'axe de gauche donne la sortie.",
+   "Les disques gris du haut sont la fonction constante : 2, 2, 2.",
+   "Les petits disques bleus sont l'identité : 0, 1, 2, tous sur la diagonale verte.",
+   "Les disques violets sont le carré : 0, 1, 1."
+  ],
+  "a_voir": "Seuls les disques bleus sont sur la diagonale verte : la sortie est égale à l'entrée."
+ },
+ "55-046": {
+  "lecture": [
+   "Les deux rectangles bleus de gauche sont les coordonnées du point (1, 2) : 1 et 2.",
+   "Les flèches orange montrent ce que chaque projection garde : une seule coordonnée.",
+   "La somme, en violet, reçoit les deux coordonnées : 1 + 2 = 0.",
+   "Le rectangle gris en pointillés est la constante 2 : aucune flèche ne l'atteint."
+  ],
+  "a_voir": "Une projection ne garde qu'une coordonnée, la somme les prend toutes, la constante n'en prend aucune."
+ },
+ "55-053": {
+  "lecture": [
+   "La colonne de gauche est ℤ/5ℤ, un corps : 2⁵ = 32 = 6 × 5 + 2, et 3⁵ = 243 = 48 × 5 + 3.",
+   "Les restes sont 2 et 3 : on retrouve a.",
+   "La colonne de droite est ℤ/6ℤ : 2⁶ = 64 = 10 × 6 + 4.",
+   "Le reste est 4, pas 2 (rouge). Le rectangle gris dit pourquoi : 2 fois 3 vaut 0."
+  ],
+  "a_voir": "Le fait est vrai à gauche et faux à droite."
+ },
+ "55-067": {
+  "lecture": [
+   "La colonne bleue donne les valeurs au point (1, 3) ; la colonne violette donne les valeurs au point (3, 1).",
+   "La première ligne est x − y : −2 puis 2.",
+   "La seconde ligne est x²y : 3 puis 9.",
+   "Sur chaque ligne, la flèche orange relie les deux valeurs du même polynôme, et le signe rouge ≠ dit qu'elles diffèrent."
+  ],
+  "a_voir": "Chaque polynôme change de valeur quand on échange x et y."
+ },
+ "55-079": {
+  "lecture": [
+   "Chaque rangée de disques bleus est un jeu de variables : 2, 3, 4 ; puis 1, 2, 3, 4 ; puis 2, 5, 7.",
+   "L'accolade verte sous une rangée réunit tous ses disques, sans en oublier.",
+   "À droite, en vert, on lit le nombre de variables r et le produit de tous les disques : 24, 24 et 70."
+  ],
+  "a_voir": "Le produit utilise chaque disque une fois, quel que soit le nombre r de variables."
+ },
+ "55-084": {
+  "lecture": [
+   "Chaque ligne choisit un terme dans chacun des trois facteurs : x en gris, ou le nombre avec son signe moins en orange.",
+   "Le nombre k de disques orange donne le signe (−1)^k : +1 pour k = 0, −1 pour k = 1, +1 pour k = 2.",
+   "Pour k = 1, il y a trois choix : −2x², −3x² et −4x², soit −9x²."
+  ],
+  "a_voir": "Chaque disque orange ajoute un signe moins : le signe est (−1)^k."
+ },
+ "55-086": {
+  "lecture": [
+   "À gauche, en violet, chaque point est (somme, double de la somme) : tous les points sont sur la même droite en pointillés, il y a un lien.",
+   "À droite, en bleu, chaque point est (somme, produit) pour des paires de nombres de 1 à 5 : les points ne sont sur aucune droite.",
+   "Les axes sont gradués et nommés."
+  ],
+  "a_voir": "Le double est lié à la somme ; le produit ne l'est pas."
+ },
+ "55-106": {
+  "lecture": [
+   "La courbe bleue coupe l'axe horizontal aux deux disques bleus, r₁ = 2 et r₂ = 3.",
+   "Le trait vert sur l'axe vertical est la hauteur 6 de la courbe en x = 0 : c'est le produit 2 × 3.",
+   "La droite orange en pointillés est l'axe de symétrie, en 2,5 : 2 × 2,5 donne la somme 5."
+  ],
+  "a_voir": "Le produit se lit comme une hauteur en x = 0, la somme comme le double de la position de l'axe."
+ },
+ "55-114": {
+  "lecture": [
+   "La case bleue du haut est ax² + bx + c.",
+   "La case orange : on divise par a, ce qui donne e₁ = −b/a et e₂ = c/a.",
+   "La case bleue du milieu remplace ces valeurs dans e₁² − 4e₂ : on obtient b²/a² − 4c/a.",
+   "La case verte simplifie : (b² − 4ac)/a². Pour 2x² − 10x + 12, on trouve (100 − 96)/4 = 1, comme 5² − 4 × 6."
+  ],
+  "a_voir": "On remplace la somme et le produit par −b/a et c/a, et on arrive à (b² − 4ac)/a²."
+ },
+ "55-126": {
+  "lecture": [
+   "Les colonnes sont les deux monômes x²y et xy².",
+   "La ligne bleue est le reste f₁ : −3 sous x²y et −3 sous xy².",
+   "La ligne orange est −3e₁e₂ : les mêmes coefficients, −3 et −3.",
+   "La ligne verte, la différence f₂, ne contient que des 0 : l'algorithme s'arrête."
+  ],
+  "a_voir": "Les deux lignes du dessus sont identiques, donc leur différence est nulle."
+ },
+ "55-129": {
+  "lecture": [
+   "Les deux cases du haut écrivent la relation pour deux variables (violet), puis pour trois variables (bleu) : le second membre est le même.",
+   "Les trois disques sont x = 1, y = 2 et z = 4.",
+   "Les cases orange donnent e₁ = 1 + 2 + 4 = 7 et e₂ = 2 + 4 + 8 = 14.",
+   "La case verte calcule 49 moins 28, soit 21 ; le contrôle 1 + 4 + 16 donne aussi 21."
+  ],
+  "a_voir": "Avec trois variables, la somme des carrés s'écrit encore e₁² − 2e₂ : ici 21."
+ },
+ "55-135": {
+  "lecture": [
+   "Les cases orange à gauche sont les choix de a et de b, chacun 0 ou 1 : quatre lignes.",
+   "Les cases bleues à droite donnent les valeurs p(0) et p(1) du programme a + bx de la même ligne.",
+   "L'accolade verte rassemble les quatre tableaux possibles 0 0, 0 1, 1 1 et 1 0, tous différents.",
+   "Le texte vert en dessous conclut : toute application est de la forme a + bx. Le texte du bas rappelle que x² et x ont les mêmes valeurs en 0 et en 1."
+  ],
+  "a_voir": "Les quatre lignes de droite sont les quatre tableaux possibles, donc il n'en manque aucun."
+ }
+}

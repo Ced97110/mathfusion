@@ -1,0 +1,194 @@
+[
+ {
+  "code": "42-161",
+  "a_dire": "Chaque colonne de S et chaque ligne de T se croisent en un point : les six points forment un rectangle de 3 colonnes et 2 lignes, sans trou ni doublon ; la colonne donne le premier terme, la ligne le second.",
+  "legende_titre": "La grille 3 colonnes, 2 lignes",
+  "lecture": [
+   "Les colonnes 1, 2 et 3 sont les éléments de S, en haut.",
+   "Les lignes a et b sont les éléments de T, à gauche.",
+   "Chaque point bleu est un croisement d'une colonne et d'une ligne.",
+   "Le point orange, avec ses traits pointillés, est le couple (2, b)."
+  ],
+  "a_voir": "Six points qui remplissent un rectangle, un par croisement."
+ },
+ {
+  "code": "42-162",
+  "a_dire": "Le produit cartésien est l'ensemble des couples (s, t) : il n'est ni l'union (5 objets) ni l'intersection (vide), et ses éléments sont des couples.",
+  "legende_titre": "Produit, union et intersection",
+  "lecture": [
+   "La ligne du haut, en violet, montre l'union : cinq objets 1, 2, 3, a et b.",
+   "La ligne du milieu, en violet, montre l'intersection : un cadre vide.",
+   "La ligne du bas, en bleu, montre le produit : six points, un par couple.",
+   "Le produit ne contient aucun des objets 1, 2, 3, a, b : il contient des couples."
+  ],
+  "a_voir": "Trois ensembles différents construits avec S et T : 5 objets, aucun objet, 6 couples."
+ },
+ {
+  "code": "42-163",
+  "a_dire": "L'écriture S × T se lit « S croix T » et désigne l'ensemble des couples : S donne la première place, T la seconde.",
+  "legende_titre": "Lire S × T",
+  "lecture": [
+   "Le cadre bleu S est l'ensemble de gauche : il donne la première place du couple.",
+   "Le cadre orange est le signe croix, qui relie les deux ensembles.",
+   "Le cadre violet T est l'ensemble de droite : il donne la seconde place.",
+   "Les six points verts du bas sont les couples que S × T contient."
+  ],
+  "a_voir": "Le signe relie deux ensembles et donne un nouvel ensemble de couples."
+ },
+ {
+  "code": "42-164",
+  "a_dire": "Si S a m éléments et T en a n, on forme m groupes de n couples, donc S × T a m × n éléments.",
+  "legende_titre": "Pourquoi compter m fois n",
+  "lecture": [
+   "Les trois cadres bleus sont les trois choix de s, un par colonne.",
+   "Dans chaque cadre, deux points sont les deux choix de t, les lignes a et b.",
+   "L'accolade du haut compte les colonnes : m = 3.",
+   "L'accolade violette du bas compte les points d'un cadre : n = 2. Le total vert est 3 × 2 = 6."
+  ],
+  "a_voir": "Trois groupes de deux couples font six couples."
+ },
+ {
+  "code": "42-165",
+  "a_dire": "ℝ × ℝ désigne l'ensemble de tous les couples (x, y) de réels : c'est le plan, avec un premier ℝ pour x et un second ℝ pour y.",
+  "legende_titre": "Écrire le plan en trois signes",
+  "lecture": [
+   "Le carré bleu est le plan, avec ses deux axes gris.",
+   "L'axe horizontal est le premier ℝ : il donne x.",
+   "L'axe vertical est le second ℝ : il donne y.",
+   "Le point (x, y) est un couple ; en vert, ℝ × ℝ nomme tous ces points."
+  ],
+  "a_voir": "Le plan est formé de tous les couples de deux réels, dans cet ordre."
+ },
+ {
+  "code": "42-166",
+  "a_dire": "Le plan est un ensemble : chaque point est un couple (x, y) de réels, l'axe des x est le premier ℝ et l'axe des y le second.",
+  "legende_titre": "Le plan vu comme un ensemble",
+  "lecture": [
+   "Les deux axes gris portent les graduations ; le premier est horizontal, le second vertical.",
+   "La flèche orange horizontale avance de 2 sur le premier axe.",
+   "La flèche orange verticale monte de 5 sur le second axe et arrive au point bleu (2, 5).",
+   "Le texte vert dit que l'ensemble de tous ces couples est ℝ × ℝ."
+  ],
+  "a_voir": "Un point du plan est un couple de deux réels, pris dans l'ordre."
+ },
+ {
+  "code": "42-167",
+  "a_dire": "ℝ^((2)) de Jacobson et ℝ² de Judson sont deux écritures du même ensemble ℝ × ℝ, avec deux facteurs égaux à ℝ.",
+  "legende_titre": "Deux écritures, un même produit",
+  "lecture": [
+   "Le cadre violet à gauche est l'écriture de Judson.",
+   "Le cadre bleu à droite est l'écriture de Jacobson.",
+   "Le signe égal vert dit que les deux désignent la même chose.",
+   "Le cadre vert du bas est ℝ × ℝ ; l'accolade compte deux facteurs ℝ."
+  ],
+  "a_voir": "Les deux écritures mènent au même produit de deux ℝ."
+ },
+ {
+  "code": "42-168",
+  "a_dire": "S × T et T × S ne sont pas le même ensemble quand S et T sont différents, car l'ordre des places compte ; ils ont pourtant le même nombre de couples.",
+  "legende_titre": "Produit dans l'autre ordre",
+  "lecture": [
+   "La grille bleue de gauche est S × T : colonnes 1, 2, 3 et lignes a, b.",
+   "La grille violette de droite est T × S : colonnes a, b et lignes 1, 2, 3.",
+   "Le point orange de gauche est (2, b) ; celui de droite est (b, 2).",
+   "Le signe rouge dit que ces deux ensembles sont différents."
+  ],
+  "a_voir": "Chaque grille a six points, mais (2, b) n'est pas (b, 2)."
+ },
+ {
+  "code": "42-169",
+  "a_dire": "Un produit avec l'ensemble vide en seconde place est vide, car il faut un second terme qui n'existe pas : S × ∅ = ∅.",
+  "legende_titre": "Produit avec l'ensemble vide",
+  "lecture": [
+   "En haut, T a un élément, 1 : les deux points violets sont les couples avec x et y.",
+   "Le calcul violet 2 × 1 = 2 compte ces couples.",
+   "En bas, T est vide : le cadre en pointillés ne contient aucun couple.",
+   "Le calcul vert 2 × 0 = 0 donne le même résultat."
+  ],
+  "a_voir": "Sans élément dans T, aucun couple n'est possible."
+ },
+ {
+  "code": "42-170",
+  "a_dire": "A^n est le produit cartésien de n facteurs égaux à A ; avec A = ℝ, ℝ² est le plan (2 facteurs) et ℝ³ l'espace (3 facteurs).",
+  "legende_titre": "Écrire un produit répété",
+  "lecture": [
+   "La ligne du haut montre n cadres A reliés par des croix ; l'accolade les compte.",
+   "À droite de cette ligne, le texte vert donne l'écriture courte A^n.",
+   "La ligne du milieu a deux cadres ℝ : c'est ℝ², le plan.",
+   "La ligne du bas a trois cadres ℝ : c'est ℝ³, l'espace."
+  ],
+  "a_voir": "L'exposant compte les facteurs, pas une multiplication de nombres."
+ },
+ {
+  "code": "42-171",
+  "a_dire": "ℝ³ est l'ensemble des triplets (x, y, z) de réels : un point de l'espace se donne par trois nombres dans cet ordre.",
+  "legende_titre": "Les points de l'espace",
+  "lecture": [
+   "Les trois axes gris sont x (est), y (nord) et z (hauteur).",
+   "La flèche orange avance d'abord selon x.",
+   "Elle avance ensuite selon y, puis monte selon z.",
+   "Elle arrive au point bleu (x, y, z) ; le texte vert nomme l'ensemble ℝ³."
+  ],
+  "a_voir": "Trois nombres, pris dans l'ordre, donnent un point de l'espace."
+ },
+ {
+  "code": "42-172",
+  "a_dire": "(s, t) se lit « couple s, t » : les parenthèses entourent le couple, la virgule sépare deux places, s est en première place et t en seconde.",
+  "legende_titre": "Lire (s, t)",
+  "lecture": [
+   "L'accolade du haut montre que les parenthèses entourent un seul couple.",
+   "La lettre bleue s est le premier élément écrit.",
+   "La lettre violette t est le second, après la virgule.",
+   "Les deux cadres du bas disent que, pour (2, b), s est la colonne 2 et t la ligne b."
+  ],
+  "a_voir": "Deux places, dans cet ordre : d'abord s, puis t."
+ },
+ {
+  "code": "42-173",
+  "a_dire": "Une application de S vers T associe à chaque élément de départ un seul élément d'arrivée ; un ensemble de couples où un point a deux flèches, ou aucune, n'en est pas une.",
+  "legende_titre": "Ce qui fait une application",
+  "lecture": [
+   "À gauche, les points bleus forment un couple par colonne : c'est une application.",
+   "Au milieu, la colonne 1 a deux points rouges : deux lettres pour un nombre.",
+   "À droite, la colonne 2 en pointillés rouges n'a aucun point.",
+   "Les petits cercles gris sont les couples non choisis."
+  ],
+  "a_voir": "Il faut exactement un point dans chaque colonne."
+ },
+ {
+  "code": "42-174",
+  "a_dire": "Le domaine est l'ensemble de départ, où l'on a le droit de choisir le point de départ : la même règle donne deux applications différentes selon ce choix.",
+  "legende_titre": "Le domaine change le résultat",
+  "lecture": [
+   "Le haut montre le domaine ℝ : un trait bleu continu sur la droite graduée.",
+   "Le point orange 1,5 est dans ce domaine : la flèche ×2 mène au point vert 3.",
+   "Le bas montre le domaine ℕ : seulement des points aux entiers.",
+   "La croix rouge sur 1,5 dit que ce départ n'est pas permis."
+  ],
+  "a_voir": "Avec la même règle, 1,5 a un double dans ℝ et n'en a pas dans ℕ."
+ },
+ {
+  "code": "42-175",
+  "a_dire": "Le codomaine est l'ensemble d'arrivée annoncé à l'avance ; il peut contenir des éléments jamais obtenus, comme 3 pour la règle « doubler ».",
+  "legende_titre": "Annoncé ou obtenu",
+  "lecture": [
+   "Le grand cadre bleu est le codomaine T, avec ses éléments 0 à 5.",
+   "Les points gris à gauche sont les départs 0, 1 et 2.",
+   "Les flèches vertes ×2 arrivent aux points verts 0, 2 et 4 : les éléments obtenus.",
+   "Le point rouge 3 est dans le cadre mais aucune flèche n'y arrive."
+  ],
+  "a_voir": "Un élément du cadre peut ne recevoir aucune flèche."
+ },
+ {
+  "code": "42-176",
+  "a_dire": "Le graphe d'une application est un sous-ensemble de S × T : il contient seulement certains des couples, ici 3 sur 6.",
+  "legende_titre": "Le graphe, une partie de la grille",
+  "lecture": [
+   "Le cadre en pointillés gris est le produit S × T, avec ses six croisements.",
+   "Les trois gros points bleus sont les couples du graphe : un par colonne.",
+   "Les trois petits cercles gris sont les couples du produit qui ne sont pas dans le graphe.",
+   "La flèche bleue et le texte nomment le graphe : 3 couples."
+  ],
+  "a_voir": "Le graphe est une partie des six points de la grille."
+ }
+]

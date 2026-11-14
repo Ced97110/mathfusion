@@ -1,0 +1,374 @@
+[
+ {
+  "code": "65-097",
+  "a_dire": "L'équation générale de degré n a pour coefficients des lettres ; en remplaçant les lettres par des nombres, on retrouve chaque équation particulière.",
+  "legende_titre": "Une équation avec des lettres, plusieurs équations",
+  "lecture": [
+   "Le cadre bleu du haut est l'équation avec les lettres t1 et t2 (ici n = 2).",
+   "Les deux flèches orange sont deux choix de nombres pour les lettres : 5 et 6, puis 0 et −2.",
+   "Les cadres verts du bas sont les équations obtenues : x² − 5x + 6 = 0 et x² − 2 = 0."
+  ],
+  "a_voir": "Un seul cadre en haut donne deux équations différentes en bas."
+ },
+ {
+  "code": "65-098",
+  "a_dire": "Résoudre l'équation générale par radicaux demande une seule formule en t1,…,tn et en radicaux, qui donne les racines de toute équation du même degré ; c'est plus que les deux voisins.",
+  "legende_titre": "Une formule pour toutes les équations du degré",
+  "lecture": [
+   "Les deux cadres gris à gauche sont les voisins : une valeur approchée, ou les racines exactes d'une seule équation.",
+   "Le cadre bleu à droite est la formule en t1,…,tn et en radicaux.",
+   "La flèche orange remplace les t_i par des nombres ; le cadre vert donne les racines de chaque équation du degré n."
+  ],
+  "a_voir": "À gauche on traite une équation ; à droite une seule formule sert pour toutes."
+ },
+ {
+  "code": "65-099",
+  "a_dire": "Pour n = 2, la formule du second degré en t1 et t2 est une résolution de l'équation générale : on y met des nombres et on obtient les racines.",
+  "legende_titre": "Le second degré : une formule, deux calculs",
+  "lecture": [
+   "Le cadre bleu du haut est la formule x = ½t1 ± ½√(t1² − 4t2).",
+   "Les cadres orange donnent deux choix de nombres : 5 et 6, puis 0 et −2.",
+   "Les cadres gris sont le calcul de la formule avec ces nombres.",
+   "Les cadres verts sont les racines : 3 et 2, puis ±√2."
+  ],
+  "a_voir": "La même formule, avec deux paires de nombres, donne deux résultats."
+ },
+ {
+  "code": "65-100",
+  "a_dire": "Pour l'équation générale, les 6 permutations des 3 racines sont toutes dans le groupe (S3) ; une équation particulière peut avoir un groupe plus petit, ici 3 sur 6.",
+  "legende_titre": "Groupe plein pour les lettres, plus petit pour les nombres",
+  "lecture": [
+   "Les six cadres bleus sont les 6 permutations des 3 racines de l'équation générale : toutes sont présentes.",
+   "Les six cadres violets sont les mêmes permutations pour x³ − 3x + 1 = 0.",
+   "Trois cadres violets sont pleins : les permutations du groupe. Les trois en pointillé sont absentes."
+  ],
+  "a_voir": "Six cadres pleins en bleu, trois seulement en violet."
+ },
+ {
+  "code": "65-101",
+  "a_dire": "Les quantités p1, …, pn sont la somme des lettres, la somme des produits de deux lettres, et ainsi de suite jusqu'au produit des n lettres ; échanger les lettres ne les change pas.",
+  "legende_titre": "Somme, produits deux à deux, produit",
+  "lecture": [
+   "Les trois disques bleus sont les lettres x1 = 2, x2 = 3, x3 = 5.",
+   "Chaque cadre bleu de gauche dit ce que fait p1, p2 ou p3 : somme, produits deux à deux, produit.",
+   "Les cadres verts donnent les valeurs : 10, 31 et 30."
+  ],
+  "a_voir": "Chaque p se lit en français à gauche et se calcule à droite avec 2, 3 et 5."
+ },
+ {
+  "code": "65-102",
+  "a_dire": "La preuve part des lettres x_i, s'appuie sur le fait que les p_k sont symétriques, donc fixés par toute permutation des x_i, et arrive au groupe S_n.",
+  "legende_titre": "Les p ne bougent pas quand on échange les x",
+  "lecture": [
+   "Les deux disques bleus sont les lettres x1 et x2 ; la flèche orange les échange.",
+   "Les cadres verts sont p1 = x1 + x2 et p2 = x1x2 : ils restent inchangés, c'est l'étape décisive.",
+   "Le cadre bleu du bas conclut : toute permutation des x_i fixe le corps des p_k, le groupe est S_n."
+  ],
+  "a_voir": "L'échange des lettres laisse les deux quantités vertes en place."
+ },
+ {
+  "code": "65-103",
+  "a_dire": "L'application t_i vers p_i est injective parce qu'elle a un retour : en envoyant x_j sur les racines y_j, on envoie chaque p_i sur t_i.",
+  "legende_titre": "Un aller, et un retour qui le défait",
+  "lecture": [
+   "Le cadre bleu à gauche contient les lettres t1 et t2 ; le cadre violet à droite contient p1 et p2.",
+   "La flèche orange du haut est l'aller, t_i vers p_i ; la flèche verte est le retour, où x_j devient y_j.",
+   "Le cadre gris est l'équation y² − t1y + t2 = 0, dont les racines y1 et y2 remplacent les x_j.",
+   "Les cadres verts du bas montrent le retour : p1 devient y1 + y2 = t1 et p2 devient y1y2 = t2."
+  ],
+  "a_voir": "La flèche verte revient de p vers t : l'aller ne peut pas confondre deux départs."
+ },
+ {
+  "code": "65-104",
+  "a_dire": "Pour n ≥ 5, il n'existe aucune formule unique en radicaux pour l'équation générale, mais une équation particulière comme x⁵ − 2 = 0 peut se résoudre par radicaux.",
+  "legende_titre": "Pas de formule générale, des cas particuliers résolubles",
+  "lecture": [
+   "À gauche, le cadre bleu est l'équation générale de degré 5 ; la flèche orange mène à un cadre rouge en pointillé : aucune formule.",
+   "À droite, le cadre vert du haut est x⁵ − 2 = 0 ; la flèche orange mène à sa solution, la racine cinquième de 2."
+  ],
+  "a_voir": "La colonne de gauche n'a pas de formule, la colonne de droite en a une."
+ },
+ {
+  "code": "65-105",
+  "a_dire": "S5 n'est pas résoluble, car A5 est simple : il n'y a aucun sous-groupe normal entre A5 (60 éléments) et l'identité.",
+  "legende_titre": "La descente de S5 est bloquée en A5",
+  "lecture": [
+   "Le cadre bleu du haut est S5 avec 120 permutations.",
+   "La flèche verte mène à A5, qui en a 60 : cette marche est permise.",
+   "La flèche rouge barrée de A5 vers l'identité dit qu'aucun sous-groupe normal n'existe entre 60 et 1.",
+   "Le cadre gris en pointillé est l'identité, que la descente n'atteint pas."
+  ],
+  "a_voir": "La descente passe de 120 à 60 puis se bloque avant 1."
+ },
+ {
+  "code": "65-106",
+  "a_dire": "Le résultat a été esquissé par Ruffini en 1799, démontré par Abel en 1824, puis expliqué par Galois en 1831 par le groupe.",
+  "legende_titre": "Trois dates, trois gestes",
+  "lecture": [
+   "La droite graduée porte les années de 1790 à 1840.",
+   "Le cadre gris relève de 1799 : Ruffini esquisse le résultat.",
+   "Le cadre bleu relève de 1824 : Abel le démontre.",
+   "Le cadre vert relève de 1831 : Galois donne la cause, le groupe."
+  ],
+  "a_voir": "Trois points sur la droite des années, un geste différent pour chacun."
+ },
+ {
+  "code": "65-107",
+  "a_dire": "Pour 2, 3 ou 4 racines, on peut descendre de Sn à l'identité par des marches à quotient abélien, donc des formules existent.",
+  "legende_titre": "Les descentes de S3 et de S4 vers 1",
+  "lecture": [
+   "La rangée du haut est S3 → A3 → 1, avec 6, 3 et 1 éléments.",
+   "La rangée du bas est S4 → A4 → V → 1, avec 24, 12, 4 et 1 éléments.",
+   "Le nombre orange sur chaque flèche est la taille de la marche : 2 et 3 en haut ; 2, 3 et 4 en bas."
+  ],
+  "a_voir": "Chaque descente arrive à 1 en quelques marches de taille 2, 3 ou 4."
+ },
+ {
+  "code": "65-108",
+  "a_dire": "Au degré 2 un étage de radicaux suffit, au degré 3 il en faut deux, au degré 5 l'escalier est coupé : aucun nombre d'étages n'atteint les racines.",
+  "legende_titre": "Trois escaliers de radicaux",
+  "lecture": [
+   "À gauche, le degré 2 : une marche bleue (la racine carrée) puis le cadre vert x, les racines.",
+   "Au milieu, le degré 3 : deux marches bleues, racine carrée puis racine cubique, puis x.",
+   "À droite, le degré 5 : la marche rouge en pointillé est coupée, et x reste hors d'atteinte."
+  ],
+  "a_voir": "Les deux premiers escaliers arrivent à x ; le troisième s'interrompt."
+ },
+ {
+  "code": "65-109",
+  "a_dire": "On construit la tour de radicaux marche par marche en suivant la suite de groupes : chaque marche du groupe ajoute un radical, et on s'arrête quand le groupe est réduit à l'identité.",
+  "legende_titre": "Un radical par marche du groupe",
+  "lecture": [
+   "La rangée bleue du haut est la suite de groupes S3 (6), A3 (3), 1 (1).",
+   "La rangée du bas est la tour de corps : K, K(√d), puis E, le corps des racines.",
+   "Les flèches orange relient chaque marche à un radical : marche de 2, racine carrée ; marche de 3, racine cubique.",
+   "Le tout s'arrête quand le groupe vaut 1."
+  ],
+  "a_voir": "Chaque flèche du haut a sa flèche du bas qui ajoute un radical."
+ },
+ {
+  "code": "65-110",
+  "a_dire": "En posant y = x − t1/3, chaque racine perd le tiers de leur somme, la nouvelle somme vaut 0 et l'équation devient y³ + py + q = 0, sans terme en y².",
+  "legende_titre": "Décaler les racines pour annuler leur somme",
+  "lecture": [
+   "La droite bleue du haut porte les racines x = 1, 2, 3, de somme 6.",
+   "La droite verte du bas porte les racines y = −1, 0, 1, de somme 0.",
+   "Chaque flèche orange retire 2, le tiers de la somme, à une racine.",
+   "Le texte du bas donne l'équation obtenue, y³ − y = 0."
+  ],
+  "a_voir": "Les trois points glissent de 2 vers la gauche et leur somme devient 0."
+ },
+ {
+  "code": "65-111",
+  "a_dire": "La première marche S3 vers A3 est de taille 6 ÷ 3 = 2 : elle correspond à ajouter la racine carrée √d, donc à passer de K à K(√d).",
+  "legende_titre": "Une marche de taille 2 donne une racine carrée",
+  "lecture": [
+   "Les six cadres sont les 6 permutations de S3 ; les trois bleus sont celles de A3, les trois gris sont les autres.",
+   "L'accolade du bas compte 6 permutations en tout.",
+   "Le calcul 6 ÷ 3 = 2 donne la taille de la marche.",
+   "La flèche orange va du corps K violet au corps K(√d) violet en ajoutant √d ; pour y³ − 2, d = −108."
+  ],
+  "a_voir": "Trois permutations sur six forment A3 : la marche vaut 2, soit une racine carrée."
+ },
+ {
+  "code": "65-112",
+  "a_dire": "A3 est formé des répétitions d'un seul circuit σ ; la marche A3 vers 1, de taille 3, correspond à ajouter une racine cubique à K(√d).",
+  "legende_titre": "Un circuit répété trois fois",
+  "lecture": [
+   "Les trois disques bleus sont les racines y1, y2, y3.",
+   "Les trois flèches orange forment le circuit σ qui envoie chaque racine sur la suivante.",
+   "Le texte bleu dit que A3 est formé de 1, σ et σ² ; trois répétitions de σ ramènent à l'identité.",
+   "Le cadre vert du bas montre ce que la marche de taille 3 ajoute : une racine cubique à K(√d)."
+  ],
+  "a_voir": "Trois flèches en rond : on revient au départ après trois pas."
+ },
+ {
+  "code": "65-113",
+  "a_dire": "La résolvante de Lagrange z1 est la combinaison des trois racines avec les multiplicateurs 1, w, w² ; avec 1, 1, 1 on obtiendrait seulement leur somme.",
+  "legende_titre": "Trois racines, trois multiplicateurs",
+  "lecture": [
+   "La rangée du haut donne les racines y1 = −3, y2 = 1, y3 = 2.",
+   "La rangée grise du dessous est la somme, multiplicateurs 1, 1, 1 : elle vaut −3 + 1 + 2 = 0.",
+   "La rangée du bas, bleue puis orange, a les multiplicateurs 1, w, w².",
+   "Le cadre bleu final donne z1 = −3 + w + 2w² = −5 − w."
+  ],
+  "a_voir": "Seuls les multiplicateurs changent entre la somme et z1."
+ },
+ {
+  "code": "65-114",
+  "a_dire": "Le symbole z2 = y1 + w²y2 + w y3 est la même combinaison que z1 où w et w² sont échangés ; on l'écrit seulement z2.",
+  "legende_titre": "z1 et z2 : w et w² échangés",
+  "lecture": [
+   "La rangée du haut donne les racines −3, 1 et 2.",
+   "La rangée bleue et orange donne les multiplicateurs de z1 : 1, w, w².",
+   "La rangée violette et orange donne ceux de z2 : 1, w², w.",
+   "Les deux flèches orange croisées montrent l'échange de w et w² ; z1 = −5 − w et z2 = −4 + w."
+  ],
+  "a_voir": "Les deux dernières cases de multiplicateurs se croisent entre z1 et z2."
+ },
+ {
+  "code": "65-115",
+  "a_dire": "Le circuit σ envoie z1 sur w² z1 : il déplace les racines mais agit sur z1 comme une multiplication par w².",
+  "legende_titre": "σ multiplie z1 par w²",
+  "lecture": [
+   "La rangée du haut donne les racines y1, y2, y3.",
+   "La rangée bleue donne les coefficients de z1 : 1, w, w².",
+   "Les flèches orange mènent aux coefficients de σ(z1) en violet : w², 1, w.",
+   "Le cadre vert conclut : σ(z1) = w² z1, chaque case du haut multipliée par w² donne la case du bas."
+  ],
+  "a_voir": "Chaque case violette est la case bleue au-dessus multipliée par w²."
+ },
+ {
+  "code": "65-116",
+  "a_dire": "Chaque élément de A3 multiplie z1 par 1, w² ou w, donc son cube ne change pas : z1³ est fixé par A3, donc dans K(√d).",
+  "legende_titre": "Le cube de z1 ne bouge pas",
+  "lecture": [
+   "La rangée grise du haut nomme les trois éléments de A3 : 1, σ, σ².",
+   "La rangée orange donne l'effet sur z1 : z1, w²z1, wz1.",
+   "Les flèches bleues élèvent au cube.",
+   "La rangée verte montre le même résultat, −111 − 60w, pour les trois."
+  ],
+  "a_voir": "Trois cases différentes en haut, trois cases identiques en bas."
+ },
+ {
+  "code": "65-117",
+  "a_dire": "Le cube de z1 se calcule en quatre actions : le discriminant d, la racine de −3d, deux termes, puis leur somme ; pour y³ − 2 cela donne 27 + 27 = 54.",
+  "legende_titre": "Calculer z1³ pas à pas sur y³ − 2",
+  "lecture": [
+   "Le titre bleu donne les nombres du cas : p = 0 et q = −2.",
+   "La rangée du haut enchaîne d = −108, −3d = 324 et √324 = 18.",
+   "Les deux cadres du milieu sont les deux termes : −27q/2 = 27 et (3/2) × 18 = 27.",
+   "Le cadre vert est la somme 27 + 27 = 54, égale à z1³."
+  ],
+  "a_voir": "Les deux termes valent 27 chacun et se somment en 54."
+ },
+ {
+  "code": "65-118",
+  "a_dire": "z2³ a la même forme que z1³ avec le signe de la racine carrée changé ; en additionnant les deux, le terme à racine carrée disparaît.",
+  "legende_titre": "z1³ et z2³ : même forme, signe changé",
+  "lecture": [
+   "La première rangée est z1³ : le terme gris 27, le terme orange +27, le total bleu 54.",
+   "La seconde rangée est z2³ : le terme gris 27, le terme orange devenu −27, le total violet 0.",
+   "Le texte vert du bas fait la somme : 54 + 0 = 54, qui vaut −27q."
+  ],
+  "a_voir": "Seul le signe du second terme change entre les deux rangées."
+ },
+ {
+  "code": "65-119",
+  "a_dire": "Chaque cube a trois racines cubiques, donc 9 couples ; la condition z1z2 = −3p n'en garde que 3.",
+  "legende_titre": "Neuf couples possibles, trois qui conviennent",
+  "lecture": [
+   "La colonne bleue de gauche donne les trois racines cubiques de z1³ : a = −5 − w, aw, aw².",
+   "La colonne violette de droite donne celles de z2³ : b = −4 + w, bw, bw².",
+   "Les 9 traits gris relient tous les couples ; les 3 traits verts épais sont ceux dont le produit vaut 21 = −3p."
+  ],
+  "a_voir": "Sur neuf traits, seuls trois sont verts."
+ },
+ {
+  "code": "65-120",
+  "a_dire": "y1 = (z1 + z2)/3 : on additionne les deux résolvantes, avec la somme des racines qui vaut 0, puis on prend le tiers.",
+  "legende_titre": "Additionner les résolvantes, puis le tiers",
+  "lecture": [
+   "Le cadre bleu est z1 = −5 − w, le violet est z2 = −4 + w, le gris est la somme des racines, qui vaut 0.",
+   "Les flèches orange les réunissent dans le cadre orange : z1 + z2 + 0 = −9 = 3y1.",
+   "La flèche du bas divise par 3.",
+   "Le cadre vert donne y1 = −3."
+  ],
+  "a_voir": "Trois entrées, une addition, une division par 3."
+ },
+ {
+  "code": "65-121",
+  "a_dire": "y2 = (w² z1 + w z2)/3 : on multiplie z1 par w² et z2 par w, on additionne, puis on prend le tiers.",
+  "legende_titre": "y2 : multiplier, additionner, diviser par 3",
+  "lecture": [
+   "Le cadre bleu est z1 et le violet est z2.",
+   "Les flèches orange multiplient z1 par w² et z2 par w, ce qui donne −1 − 5w² et w² − 4w.",
+   "Le cadre gris additionne : −1 − 4(w + w²) = 3.",
+   "La dernière flèche divise par 3 et donne y2 = 1 dans le cadre vert."
+  ],
+  "a_voir": "Deux produits, une somme égale à 3, un tiers égal à 1."
+ },
+ {
+  "code": "65-122",
+  "a_dire": "y3 = (w z1 + w² z2)/3 : w multiplie z1, w² multiplie z2, on prend le tiers ; la forme reste la même pour y³ − 2 et pour y³ − 7y + 6.",
+  "legende_titre": "y3 : la même forme sur deux équations",
+  "lecture": [
+   "Le cadre bleu du haut est la formule de y3.",
+   "La colonne de gauche est y³ − 2, avec z1 = 3∛2 et z2 = 0, d'où y3 = w∛2.",
+   "La colonne de droite est y³ − 7y + 6, avec z1 = −5 − w et z2 = −4 + w, d'où y3 = 2.",
+   "Les flèches orange amènent de l'équation aux résolvantes, puis à la racine verte."
+  ],
+  "a_voir": "Une formule, deux équations, deux racines."
+ },
+ {
+  "code": "65-155",
+  "a_dire": "La lettre w remplace −½ + ½√−3 et w² vaut −½ − ½√−3 ; on a w³ = 1 et w ≠ 1, donc 1, w, w² sont les trois nombres de cube 1.",
+  "legende_titre": "Une lettre pour une écriture à deux termes",
+  "lecture": [
+   "La première rangée écrit w : le terme gris −½ et le terme orange +½√−3.",
+   "La seconde rangée écrit w² : le même terme gris −½ et le terme orange −½√−3.",
+   "Le cadre vert dit w³ = 1 et w ≠ 1.",
+   "Le texte vert du bas conclut : 1, w, w² sont les 3 nombres de cube 1."
+  ],
+  "a_voir": "w et w² ont la même partie grise et des parties orange de signes opposés."
+ },
+ {
+  "code": "65-156",
+  "a_dire": "1 + w + w² = 0 : les parties sans √−3 donnent 0 et les parties avec √−3 donnent 0 aussi.",
+  "legende_titre": "Deux colonnes, deux sommes nulles",
+  "lecture": [
+   "Chaque rangée est un des nombres 1, w, w² (gris, bleu, violet).",
+   "La colonne de gauche donne la partie sans √−3 : 1, −½, −½.",
+   "La colonne de droite donne le coefficient de √−3 : 0, +½, −½.",
+   "La rangée verte du bas fait la somme : 0 dans chaque colonne."
+  ],
+  "a_voir": "Chaque colonne s'annule, donc la somme 1 + w + w² vaut 0."
+ },
+ {
+  "code": "65-123",
+  "a_dire": "Les formules de Cardan ont deux étages, une racine carrée puis une racine cubique, qui reproduisent les marches de taille 2 et de taille 3 du groupe.",
+  "legende_titre": "Deux étages, comme les deux marches du groupe",
+  "lecture": [
+   "Le cadre bleu du bas est l'étage 1 : la racine carrée √324 = 18.",
+   "Le cadre gris du milieu est le résultat, z1³ = 54.",
+   "Le cadre bleu du haut est l'étage 2 : la racine cubique de 54, soit 3∛2.",
+   "Les textes gris rappellent les marches du groupe : taille 2 pour S3 ⊃ A3 et taille 3 pour A3 ⊃ 1."
+  ],
+  "a_voir": "Deux étages, un par marche du groupe."
+ },
+ {
+  "code": "65-124",
+  "a_dire": "Pour y³ − 2 = 0, la formule de Cardan donne, étape par étape, le discriminant, la racine carrée, les deux cubes, les résolvantes, puis les trois racines.",
+  "legende_titre": "Cardan sur y³ − 2, du début aux racines",
+  "lecture": [
+   "La colonne de gauche enchaîne quatre cadres : p, q et d ; −3d et sa racine 18 ; z1³ = 54 et z2³ = 0 ; z1 = 3∛2 et z2 = 0.",
+   "Les flèches orange relient chaque étape à la suivante.",
+   "Le texte vert rappelle z1z2 = 0 = −3p.",
+   "Les trois cadres verts du bas sont les racines : ∛2, w²∛2 et w∛2."
+  ],
+  "a_voir": "Un seul enchaînement mène du polynôme aux trois racines."
+ },
+ {
+  "code": "65-125",
+  "a_dire": "Pour x³ − 3x + 1, la formule de Cardan demande √−243, qui n'est pas réelle, alors que les trois racines sont réelles.",
+  "legende_titre": "Trois racines réelles, une racine carrée non réelle",
+  "lecture": [
+   "À gauche, la courbe bleue de x³ − 3x + 1 coupe la ligne grise en trois points verts : trois racines réelles.",
+   "À droite, le cadre gris du haut donne le discriminant d = 81.",
+   "Le cadre suivant donne −3d = −243.",
+   "Le cadre violet dit que √−243 n'est pas un nombre réel."
+  ],
+  "a_voir": "Trois points verts sur la courbe, mais un cadre violet qui sort des nombres réels."
+ },
+ {
+  "code": "65-126",
+  "a_dire": "Aucune tour de radicaux réels n'atteint les racines d'une cubique irréductible à trois racines réelles, ce qui n'arrive pas pour une cubique réductible comme x³ − x.",
+  "legende_titre": "Irréductible : aucun radical réel ; réductible : aucun radical",
+  "lecture": [
+   "La colonne de gauche part de x³ − 3x + 1, irréductible : des nombres rationnels on monte à une tour de radicaux réels (cadre bleu), mais la flèche rouge barrée n'atteint pas les 3 racines.",
+   "La colonne de droite part de x³ − x, réductible, qui s'écrit x(x − 1)(x + 1).",
+   "La droite verte montre ses trois racines −1, 0 et 1, écrites sans radical."
+  ],
+  "a_voir": "À gauche la flèche barrée en rouge ; à droite trois racines vertes sur une droite."
+ }
+]

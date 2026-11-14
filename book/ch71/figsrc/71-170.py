@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'ligne 1 de $A$ $\times$ colonnes de $P$', 'encre', 's')
+box(ax, 4, 30, 22, 10, 'sujet', label='5   3', size='m')
+text(ax, 15, 45, 'ligne', 'sujet', 's')
+box(ax, 36, 28, 18, 14, 'autre', label='1\n1', size='m')
+box(ax, 62, 28, 22, 14, 'autre', label='1\n−1', size='m')
+text(ax, 45, 46, 'colonne 1', 'autre', 's'); text(ax, 73, 46, 'colonne 2', 'autre', 's')
+arrow(ax, (45, 28), (45, 22), 'varie'); arrow(ax, (73, 28), (73, 22), 'varie')
+box(ax, 33, 11, 24, 11, 'resultat', label='5 + 3 = 8', size='s')
+box(ax, 61, 11, 24, 11, 'resultat', label='5 − 3 = 2', size='s')
+text(ax, 44, 4, r'$AP$ : lignes $(8,\ 2)$ et $(8,\ -2)$', 'resultat', 's')
+save(fig, '71-170')

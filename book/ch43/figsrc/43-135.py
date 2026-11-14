@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+disc(ax, 17, 26, 12, 'sujet'); disc(ax, 71, 26, 12, 'autre')
+text(ax, 17, 26, r'$S$', 'sujet', 'xl'); text(ax, 71, 26, r'$T$', 'autre', 'xl')
+arrow(ax, (27, 33), (61, 33), 'resultat', curve=-0.3)
+text(ax, 44, 46, 'injection de S dans T', 'resultat', 's')
+arrow(ax, (61, 19), (27, 19), 'resultat', curve=-0.3)
+text(ax, 44, 6, 'injection de T dans S', 'resultat', 's')
+box(ax, 34, 21, 20, 10, 'resultat', label=r'$|S|=|T|$', size='m')
+save(fig, '43-135')

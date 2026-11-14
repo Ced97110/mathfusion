@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+box(ax,3,46,38,9,'sujet',label='2 357'); text(ax,44,50.5,'+','encre','l'); box(ax,47,46,38,9,'sujet',label='6 106')
+arrow(ax,(22,46),(22,39)); arrow(ax,(66,46),(66,39))
+text(ax,44,42.5,'on garde 2 chiffres non nuls','varie','s')
+box(ax,3,30,38,9,'varie',label='2 400'); text(ax,44,34.5,'+','encre','l'); box(ax,47,30,38,9,'varie',label='6 100')
+arrow(ax,(22,30),(22,23),'fixe')
+box(ax,3,14,36,9,'fixe',label='24 + 61 = 85'); arrow(ax,(40,18.5),(46,18.5),'varie'); box(ax,47,14,38,9,'resultat',label='≈ 8 500')
+text(ax,44,6,'2 357 + 6 106 ≈ 8 500','resultat','l')
+save(fig,'10-034')

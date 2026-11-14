@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, d): return (c[0] + r * math.cos(math.radians(d)), c[1] + r * math.sin(math.radians(d)))
+def arc(ax, c, r, a0, a1, role, lw=0.9, dash=False, n=48): line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw, dash)
+def dot(ax, p, role, r=1.0): ax.add_patch(Circle(p, r, ec=COL[role], fc=COL[role], lw=0.5, zorder=4))
+def sq(ax, p, ux, uy, s=2.2, role='fixe'): line(ax, [(p[0] + ux * s, p[1]), (p[0] + ux * s, p[1] + uy * s), (p[0], p[1] + uy * s)], role, lw=0.7)
+
+fig, ax = canvas(56)
+O = (30, 28); R = 24; A = (54, 28)
+arrow(ax, (4, 28), (84, 28), 'fixe', lw=0.7); arrow(ax, (30, 4), (30, 54), 'fixe', lw=0.7)
+arc(ax, O, R, 0, 360, 'sujet', lw=1.2, n=120)
+dot(ax, O, 'fixe', 1.0); dot(ax, A, 'varie', 1.6)
+brace(ax, 30, 54, 25, 'varie', label='1 pas à droite')
+text(ax, 26, 31.5, r'$O$')
+text(ax, 58, 22, r'$A(1,\,0)$', 'varie', 'l', ha='left', weight='bold')
+text(ax, 58, 36, '0 pas en hauteur', 'fixe', 's', ha='left')
+save(fig, '28-013')

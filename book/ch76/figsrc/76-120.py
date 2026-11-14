@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+for x,r,l in [(4,'sujet',r'$a=(1,2)$'),(32,'autre',r'$b=(1,1)$'),(60,'fixe',r'$c=(5,8)$')]: box(ax,x,64,24,10,r,label=l)
+box(ax,2,34,40,20,'sujet'); box(ax,46,34,40,20,'varie')
+text(ax,22,49,r'$a\wedge b$','sujet','m'); text(ax,22,40,r'$1\times1-2\times1=-1$','sujet','m')
+text(ax,66,49,r'$c\wedge b$','varie','m'); text(ax,66,40,r'$5\times1-8\times1=-3$','varie','m')
+text(ax,44,59,r'$c$ remplace $a$','varie','s')
+arrow(ax,(16,63),(20,55),'sujet'); arrow(ax,(72,63),(68,55),'varie')
+arrow(ax,(22,33),(36,22),'sujet'); arrow(ax,(66,33),(52,22),'varie')
+text(ax,44,12,r'$x=\dfrac{c\wedge b}{a\wedge b}=\dfrac{-3}{-1}=3$','resultat','l')
+save(fig,'76-120')

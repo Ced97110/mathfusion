@@ -1,0 +1,109 @@
+[
+ {
+  "code": "25-145",
+  "a_dire": "Un point se repère par sa distance à l'origine et par un angle de tangente y/x ; cet angle est l'argument d'un nombre complexe.",
+  "legende_titre": "Repérer un point par un angle et une distance",
+  "lecture": [
+   "Le triangle bleu a pour sommet l'origine ; ses côtés gris mesurent 3 et 4.",
+   "Le côté bleu foncé joint l'origine au point : il mesure 5.",
+   "L'arc orange est l'angle avec l'horizontale : environ 53,13 degrés.",
+   "Le rapport 4 sur 3, environ 1,333, est la tangente de cet angle."
+  ],
+  "a_voir": "Le point (3 ; 4) est aussi donné par la distance 5 et l'angle dont la tangente est 4/3."
+ },
+ {
+  "code": "25-146",
+  "a_dire": "La direction d'une flèche est l'angle dont la tangente est la montée sur l'avancée, ici 3 sur 4.",
+  "legende_titre": "La direction d'une flèche",
+  "lecture": [
+   "La flèche bleue avance de 4 et monte de 3.",
+   "Les traits gris montrent l'avance et la montée.",
+   "L'arc orange est la direction, l'angle avec l'horizontale.",
+   "Le calcul en vert donne environ 36,87 degrés."
+  ],
+  "a_voir": "Montée sur avancée, puis arc tangente, donne l'angle de la flèche."
+ },
+ {
+  "code": "25-147",
+  "a_dire": "Deux droites de pentes dont le produit vaut -1 font un angle droit : c'est le premier cas de l'orthogonalité.",
+  "legende_titre": "Le produit des pentes marque l'angle droit",
+  "lecture": [
+   "La droite bleue a pour pente 0,75.",
+   "La droite violette a pour pente -4/3.",
+   "Le petit carré vert marque l'angle droit entre elles.",
+   "Le calcul en vert montre que le produit des pentes vaut -1."
+  ],
+  "a_voir": "Le produit -1 des deux pentes correspond à deux droites qui se coupent à angle droit."
+ },
+ {
+  "code": "25-148",
+  "a_dire": "Chaque rotation du plan correspond à un point du cercle ; enchaîner deux rotations revient à avancer encore sur le cercle, et 360 degrés ramènent au départ.",
+  "legende_titre": "Les rotations du plan forment un cercle",
+  "lecture": [
+   "Le point bleu est la rotation de 0 degré, qui est aussi celle de 360 degrés. La flèche grise donne le sens des rotations.",
+   "L'arc orange est la rotation de 40 degrés.",
+   "L'arc violet est la rotation de 50 degrés ajoutée ensuite.",
+   "Le point vert est la rotation de 90 degrés : les angles s'ajoutent."
+  ],
+  "a_voir": "Enchaîner deux rotations, c'est avancer sur le cercle de la somme des angles."
+ },
+ {
+  "code": "25-149",
+  "a_dire": "Multiplier par a + bi fait tourner le plan d'un angle de tangente b/a ; pour 1 + i, l'angle est 45 degrés et le plan est agrandi de racine de 2.",
+  "legende_titre": "Multiplier par un nombre complexe",
+  "lecture": [
+   "La flèche violette est le point 1, avec a = 1.",
+   "La flèche bleue est le point 1 + i, avec b = 1 (trait gris pointillé). Sa longueur, en vert, est racine de 2.",
+   "L'arc orange est la rotation de 45 degrés, de tangente 1 sur 1.",
+   "En vert : la flèche violette de longueur 1 devient la flèche bleue de longueur racine de 2, agrandie d'un facteur racine de 2."
+  ],
+  "a_voir": "Le passage de la flèche violette à la flèche bleue est une rotation de 45 degrés avec agrandissement."
+ },
+ {
+  "code": "25-150",
+  "a_dire": "Un rapport qui ne dépend que d'un angle sert à l'arbre, à la pente d'une droite et à la direction d'une flèche, et traverse tout le livre.",
+  "legende_titre": "Un même rapport pour un même angle",
+  "lecture": [
+   "Trois traits verticaux coupent le même grand triangle gris : ils ont des tailles différentes.",
+   "Le trait vert est l'usage « flèche », l'orange « droite », le bleu « arbre ».",
+   "Les trois triangles ont le même angle, marqué en noir en bas à gauche."
+  ],
+  "a_voir": "Les trois triangles ont des tailles différentes mais le même angle, donc le même rapport."
+ },
+ {
+  "code": "25-151",
+  "a_dire": "Doubler l'angle fait plus que doubler la tangente, et l'écart grandit avec l'angle.",
+  "legende_titre": "La tangente grandit plus vite que l'angle",
+  "lecture": [
+   "La barre bleue est la tangente de l'angle de départ.",
+   "La barre grise est le double de cette tangente.",
+   "La barre verte est la vraie tangente de l'angle doublé.",
+   "De 10 à 20 degrés elle dépasse peu la barre grise ; de 40 à 80 degrés elle la dépasse beaucoup."
+  ],
+  "a_voir": "La barre verte est toujours plus longue que la grise, et très nettement pour 40 degrés."
+ },
+ {
+  "code": "25-152",
+  "a_dire": "L'écart entre la tangente du double et le double de la tangente est petit pour 10 degrés et énorme près de 45 degrés, parce que le double de 45 degrés est 90 degrés.",
+  "legende_titre": "Où l'écart au double devient énorme",
+  "lecture": [
+   "Chaque barre orange est l'écart pour un angle A.",
+   "Pour 10 degrés la barre est presque invisible : 0,0113.",
+   "Pour 40 degrés elle mesure 3,9931. Pour 44 degrés elle est très longue : 28,64 moins 1,93.",
+   "Pour 45 degrés, il n'y a plus de barre : le double est 90 degrés et la tangente de 90 degrés n'existe pas."
+  ],
+  "a_voir": "Plus l'angle approche 45 degrés, plus la barre est longue ; à 45 degrés, le double vaut 90 degrés."
+ },
+ {
+  "code": "25-153",
+  "a_dire": "Connaître tan A seul suffit en principe pour trouver tan 2A, car tan A donne un seul angle A, qui donne son double, qui donne tan 2A ; la règle reste à trouver.",
+  "legende_titre": "Passer de tan A à tan 2A sans connaître A",
+  "lecture": [
+   "La case bleue est la valeur connue : 0,5774.",
+   "Les deux cases grises en pointillé sont l'angle A puis son double, qu'on ne connaît pas.",
+   "La case verte est la tangente cherchée. Chaque étape donne un seul résultat.",
+   "La flèche orange en pointillé est la règle directe qu'il reste à trouver."
+  ],
+  "a_voir": "Chaque étape donne un seul résultat, donc une règle directe de la case bleue à la case verte existe."
+ }
+]

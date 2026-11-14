@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 60, r'$a\vee b$ avec $a=1$, $b=1$', 'sujet', 'm')
+box(ax, 4, 38, 38, 12, 'varie', label=r'$1+1=0$', size='m')
+box(ax, 46, 38, 38, 12, 'varie', label=r'$1\times1=1$', size='m')
+text(ax, 23, 33, r'$a+b$', 'varie', 's'); text(ax, 65, 33, r'$ab$', 'varie', 's')
+arrow(ax, (23, 30), (36, 20), 'resultat'); arrow(ax, (65, 30), (52, 20), 'resultat')
+box(ax, 24, 8, 40, 12, 'resultat', label=r'$0+1=1$', size='m')
+text(ax, 44, 3, '« vrai ou vrai » : 1', 'resultat', 's')
+save(fig, '80-208')

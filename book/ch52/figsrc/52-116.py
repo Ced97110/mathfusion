@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 6, 74, 'preuve générale : aucun nombre', 'sujet', 's', ha='left')
+box(ax, 6, 56, 76, 14, 'sujet', label=r'$1=b\,a+m$', size='l')
+text(ax, 6, 43.5, 'chapitre 52 : cas chiffré', 'varie', 's', ha='left')
+box(ax, 6, 30, 76, 10, 'varie', label=r'$1=5\times3+(-14)$')
+text(ax, 6, 21.5, 'chapitre 5 : nombres précis', 'autre', 's', ha='left')
+box(ax, 6, 8, 76, 10, 'autre', label=r'$6=12\times(-1)+18\times1$')
+arrow(ax, (74, 18), (74, 30), 'fixe'); arrow(ax, (74, 40), (74, 56), 'fixe')
+save(fig, '52-116')

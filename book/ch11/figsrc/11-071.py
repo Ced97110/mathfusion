@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+xs = (28, 56)
+text(ax, xs[0], 83, 'lb', 'fixe', 'm'); text(ax, xs[1], 83, 'oz', 'fixe', 'm')
+def r(y, a, b, role):
+    box(ax, xs[0] - 8, y, 16, 9, role, label=a, size='m'); box(ax, xs[1] - 8, y, 16, 9, role, label=b, size='m')
+r(68, '5', '3', 'sujet')
+text(ax, 84, 72.5, '3 < 14', 'limite', 's', ha='right')
+r(50, '4', '19', 'varie')
+arrow(ax, (xs[0] + 9, 70), (xs[1] - 9, 60), 'varie', curve=0.0)
+text(ax, 52, 64, '1 lb = 16 oz', 'varie', 's', ha='left')
+r(32, '3', '14', 'autre'); text(ax, 10, 36.5, '−', 'encre', 'l')
+r(14, '1', '5', 'resultat')
+arrow(ax, (xs[0], 67), (xs[0], 60), 'varie')
+save(fig, '11-071')

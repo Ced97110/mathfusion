@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,14,56,60,11,'sujet',label=r'$\sin^2 A+\cos^2 A=1$')
+arrow(ax,(44,55.5),(44,46),'varie')
+text(ax,48,51,'en découle','varie','s',ha='left')
+box(ax,3,30,36,12,'autre',label=r'$1+\tan^2 A$')
+box(ax,49,30,36,12,'autre',label=r'$\frac{1}{\cos^2 A}$')
+text(ax,44,36,'=','resultat','l')
+box(ax,3,10,36,12,'resultat',label='1 + 0,5625 = 1,5625',size='s')
+box(ax,49,10,36,12,'resultat',label='1 ÷ 0,64 = 1,5625',size='s')
+arrow(ax,(21,29.5),(21,22.5),'fixe'); arrow(ax,(67,29.5),(67,22.5),'fixe')
+save(fig,'26-044')

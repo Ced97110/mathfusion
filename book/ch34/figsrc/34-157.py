@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 8, 80, 36, 0, 180, step=45, arrow_right=False, every=2)
+box(ax, f(0), 44, f(90) - f(0), 9, 'fixe', label='dénominateur positif', size='s')
+box(ax, f(90), 44, f(180) - f(90), 9, 'autre', label='dénominateur négatif', size='s')
+line(ax, [(f(90), 38), (f(90), 44)], 'fixe', dash=True)
+disc(ax, f(105), 36, 1.3, 'varie')
+text(ax, f(105) + 2, 27, '105° = 60° + 45°', 'varie', 's', ha='left')
+text(ax, 44, 18, 'tan 60° × tan 45° = 1,732', 'sujet', 's')
+text(ax, 44, 11, '1 − 1,732 = −0,732', 'autre', 's')
+text(ax, 44, 4, 'quotient ≈ −3,732', 'resultat', 's')
+save(fig, '34-157')

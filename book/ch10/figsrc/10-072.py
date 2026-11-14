@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+text(ax, 28, 45, 'estimation 85 (24 + 61)', 'varie', 'm')
+line(ax, [(28, 11), (28, 40)], 'varie', dash=True)
+text(ax, 3, 36, 'écran', 'fixe', 's', ha='left')
+text(ax, 3, 29, '84,63', 'sujet', 'm', ha='left')
+ax.add_patch(Rectangle((28, 26), 0.4, 6, ec=COL['sujet'], fc=COL['sujet'], lw=0.5, zorder=2))
+text(ax, 31, 29, 'écart 0,37', 'sujet', 'm', ha='left')
+text(ax, 3, 17, '184,63', 'limite', 'm', ha='left')
+ax.add_patch(Rectangle((28, 14), 99.63 * 0.54, 6, ec=COL['limite'], fc=FILL['limite'], lw=0.8, zorder=2))
+text(ax, 28 + 99.63 * 0.27, 17, 'écart 99,63', 'limite', 'm')
+save(fig, '10-072')

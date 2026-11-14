@@ -1,0 +1,375 @@
+[
+ {
+  "code": "62-001",
+  "a_dire": "Deux fois de suite, un polynôme sans racine a mené au même geste : on ajoute le nombre qui manque, défini par son équation.",
+  "legende_titre": "Le même geste appliqué deux fois",
+  "lecture": [
+   "Les cases grises à gauche sont les nombres connus : les fractions, puis les réels, avec un polynôme qui n'a pas de racine.",
+   "Les flèches orange sont le même geste : on ajoute un nombre.",
+   "Les cases vertes à droite sont les nombres fabriqués : √2, dont le carré vaut 2, puis i, dont le carré vaut −1."
+  ],
+  "a_voir": "Les deux lignes sont construites de la même façon : un polynôme sans racine, puis un nombre fabriqué pour lui."
+ },
+ {
+  "code": "62-002",
+  "a_dire": "Le geste a réussi pour deux polynômes de degré 2 ; on se demande s'il marche pour tout degré et tout corps.",
+  "legende_titre": "Le geste marche-t-il partout ?",
+  "lecture": [
+   "Les deux cases vertes sont les cas déjà vus : x² − 2 sur les fractions et x² + 1 sur les réels, tous deux de degré 2.",
+   "Les cases orange en pointillés avec « ? » sont les cas non vus : un autre corps, ou un degré plus grand que 2.",
+   "Les colonnes sont les corps, les lignes sont les degrés."
+  ],
+  "a_voir": "Deux cases seulement sont remplies : la question porte sur toutes les autres."
+ },
+ {
+  "code": "62-003",
+  "a_dire": "Le polynôme x³ − 2 a une seule racine réelle, ∛2, environ 1,26 ; les deux autres racines ne sont pas réelles.",
+  "legende_titre": "Une racine réelle sur trois",
+  "lecture": [
+   "La courbe bleue est celle de x³ − 2.",
+   "Elle coupe l'axe gris une seule fois, au point vert, à environ 1,26.",
+   "Le texte orange dit que les deux autres racines ne sont pas sur cet axe."
+  ],
+  "a_voir": "La courbe ne coupe l'axe qu'en un seul point : une seule racine réelle."
+ },
+ {
+  "code": "62-004",
+  "a_dire": "Un polynôme de degré 3 se casse en trois facteurs de degré 1 seulement s'il a trois racines ; x³ − 2 en a une, il en manque deux.",
+  "legende_titre": "Compter les facteurs et les racines",
+  "lecture": [
+   "En haut, trois cases bleues sont les facteurs x − 1, x − 2 et x − 3 ; chaque flèche orange mène à sa racine verte : 1, 2 et 3.",
+   "En bas, x³ − 2 n'a qu'un facteur bleu, x − ∛2.",
+   "Les deux cases orange en pointillés vides sont les deux racines qui manquent."
+  ],
+  "a_voir": "Trois facteurs donnent trois racines ; en bas, deux places restent vides."
+ },
+ {
+  "code": "62-005",
+  "a_dire": "On annonce que les trois racines de x³ − 2 se placent dans le plan comme les sommets d'un triangle dont les trois côtés sont égaux.",
+  "legende_titre": "Trois racines, un triangle",
+  "lecture": [
+   "Les deux traits gris en croix sont les axes du plan.",
+   "Les trois points bleus sont les trois racines r₁, r₂ et r₃.",
+   "Le triangle bleu les relie ; les petits traits orange au milieu des côtés montrent que les trois côtés sont égaux."
+  ],
+  "a_voir": "Les trois points forment un triangle aux trois côtés marqués du même trait."
+ },
+ {
+  "code": "62-006",
+  "a_dire": "Dans le corps à deux éléments, x³ + x + 1 ne vaut 0 ni pour 0 ni pour 1 : il n'a aucune racine.",
+  "legende_titre": "Essayer 0 et 1",
+  "lecture": [
+   "Les deux cases bleues du haut sont les deux nombres essayés : 0 et 1.",
+   "Les cases grises montrent le calcul : 0 + 0 + 1 d'un côté, 1 + 1 + 1 = 3 de l'autre.",
+   "Les cases rouges donnent le résultat : 1 et 3, qui vaut 1 ici, sont différents de 0."
+  ],
+  "a_voir": "Les deux résultats sont dans des cases rouges : aucun des deux essais ne donne 0."
+ },
+ {
+  "code": "62-007",
+  "a_dire": "Le corps à deux éléments n'est pas contenu dans les complexes, car 1 + 1 y vaut 0 alors que dans ℂ, 1 + 1 vaut 2.",
+  "legende_titre": "Pourquoi ℂ ne convient pas",
+  "lecture": [
+   "La case violette est le corps à deux éléments, où 1 + 1 = 0.",
+   "La case bleue est ℂ, où 1 + 1 = 2.",
+   "La flèche rouge barrée dit que le premier corps ne peut pas être placé dans le second."
+  ],
+  "a_voir": "Les deux cases n'ont pas le même résultat pour 1 + 1 : l'une dans l'autre est impossible."
+ },
+ {
+  "code": "62-008",
+  "a_dire": "Il faut une méthode qui n'utilise ni les réels ni les complexes, seulement le calcul avec les polynômes : le quotient d'un anneau par un idéal.",
+  "legende_titre": "Une méthode sans réels ni complexes",
+  "lecture": [
+   "Les deux cases rouges en pointillés en haut sont les réels et les complexes : on n'a pas le droit de s'y appuyer.",
+   "La case bleue est le calcul avec les polynômes seuls.",
+   "La flèche orange mène à la case verte : un corps qui contient la racine."
+  ],
+  "a_voir": "La méthode part des polynômes seuls, les cases rouges ne servent pas."
+ },
+ {
+  "code": "62-009",
+  "a_dire": "Le corps de décomposition de f est le plus petit corps E qui contient F et où f se casse en facteurs de degré 1.",
+  "legende_titre": "Un corps qui contient les racines",
+  "lecture": [
+   "Le petit disque bleu est F, le corps de départ.",
+   "Le grand disque vert est E, un corps plus grand qui contient F.",
+   "Les trois points orange dans E, hors de F, sont les racines r₁, r₂ et r₃ de f."
+  ],
+  "a_voir": "Le corps de départ est dans un corps plus grand, qui porte les trois racines."
+ },
+ {
+  "code": "62-010",
+  "a_dire": "Un polynôme peut se casser en deux facteurs égaux : x² − 2x + 1 = (x − 1)(x − 1) ; un seul nombre, 1, est alors racine double.",
+  "legende_titre": "Deux facteurs, un seul nombre",
+  "lecture": [
+   "Les deux cases bleues sont les deux facteurs, identiques : x − 1.",
+   "Les deux flèches orange partent chacune d'un facteur.",
+   "Elles arrivent toutes les deux au même point vert, le nombre 1 sur la droite."
+  ],
+  "a_voir": "Deux flèches arrivent au même point : deux facteurs, une seule valeur."
+ },
+ {
+  "code": "62-011",
+  "a_dire": "On annonce qu'un calcul de dérivée, avec un facteur commun, suffit à repérer une racine multiple sur tout corps.",
+  "legende_titre": "La dérivée repère la racine multiple",
+  "lecture": [
+   "La case bleue est le polynôme f = x² − 2x + 1.",
+   "La flèche orange mène à la case violette, sa dérivée : 2x − 2.",
+   "Les flèches grises mènent à la case verte : le facteur commun x − 1, qui conduit à la racine double."
+  ],
+  "a_voir": "On trouve le facteur commun de f et de sa dérivée sans casser f en facteurs."
+ },
+ {
+  "code": "62-012",
+  "a_dire": "Les trois racines de x³ − 2 sont trois points du plan complexe sur un même cercle de centre 0 ; une seule est sur l'axe réel.",
+  "legende_titre": "Les trois racines dans le plan",
+  "lecture": [
+   "Les deux flèches grises sont l'axe réel, horizontal, et l'axe imaginaire, vertical.",
+   "Les trois points bleus sont r₁ à (1,26 ; 0), r₂ à (−0,63 ; 1,09) et r₃ à (−0,63 ; −1,09).",
+   "Le cercle gris en pointillés passe par les trois points ; le triangle bleu les relie."
+  ],
+  "a_voir": "Les trois points sont sur le même cercle, et seul r₁ est sur l'axe horizontal."
+ },
+ {
+  "code": "62-013",
+  "a_dire": "Le nombre complexe a + bi se place au point (a ; b) : a vers la droite, b vers le haut.",
+  "legende_titre": "Un nombre complexe, un point",
+  "lecture": [
+   "La grille grise est le plan avec ses deux axes.",
+   "La flèche orange va de 0 vers la droite : a = 2.",
+   "La flèche violette monte : b = 3.",
+   "Le point bleu est 2 + 3i, au point (2 ; 3)."
+  ],
+  "a_voir": "Le nombre et le point utilisent les deux mêmes nombres, dans le même ordre."
+ },
+ {
+  "code": "62-014",
+  "a_dire": "Le cube de la distance d'une racine à 0 vaut 2, donc les trois racines sont à la distance ∛2 de 0, sur un même cercle.",
+  "legende_titre": "Les racines sont à la même distance de 0",
+  "lecture": [
+   "Le petit cercle noir est le point 0.",
+   "Les trois traits verts joignent 0 à chaque racine ; chacun a pour longueur ∛2.",
+   "Les trois points bleus sont les racines, et le cercle gris en pointillés passe par eux."
+  ],
+  "a_voir": "Les trois traits verts ont la même longueur : les trois points sont sur un seul cercle."
+ },
+ {
+  "code": "62-015",
+  "a_dire": "La lettre r₁ désigne la racine réelle ∛2, environ 1,26 ; le petit chiffre 1 est un numéro.",
+  "legende_titre": "Nommer la racine réelle",
+  "lecture": [
+   "La droite grise est graduée de 0 à 2.",
+   "Le point bleu est placé à environ 1,26.",
+   "La flèche bleue relie le point au signe r₁ = ∛2, qui le nomme."
+  ],
+  "a_voir": "Le nom r₁ désigne le point placé à environ 1,26."
+ },
+ {
+  "code": "62-016",
+  "a_dire": "r₂ = j r₁ et r₃ = j² r₁ : les deux autres racines s'écrivent à partir de r₁ en multipliant par j.",
+  "legende_titre": "Deux racines écrites à partir de r₁",
+  "lecture": [
+   "Les trois points bleus sont r₁, r₂ et r₃ sur le cercle gris en pointillés.",
+   "La première flèche orange va de r₁ à r₂ : on multiplie par j.",
+   "La deuxième flèche orange va de r₂ à r₃ : on multiplie encore par j, donc r₃ = j² r₁."
+  ],
+  "a_voir": "Chaque flèche orange est la même multiplication par j."
+ },
+ {
+  "code": "62-017",
+  "a_dire": "j = −1/2 + (√3/2) i est le point à un demi à gauche de 0 et à √3/2, environ 0,87, au-dessus de l'axe horizontal.",
+  "legende_titre": "La valeur de j",
+  "lecture": [
+   "La flèche orange va de 0 vers la gauche, d'un demi : c'est la partie horizontale −1/2.",
+   "La flèche violette monte de √3/2, environ 0,87 : c'est la partie verticale.",
+   "Le point bleu au bout est j."
+  ],
+  "a_voir": "Les deux nombres −1/2 et √3/2 sont les deux coordonnées du point j."
+ },
+ {
+  "code": "62-018",
+  "a_dire": "j³ = 1 et j n'est pas 1 : en multipliant trois fois par j, on revient à 1, mais j est un autre point.",
+  "legende_titre": "Une propriété de j",
+  "lecture": [
+   "Le point vert est 1, aussi noté j³.",
+   "Les points bleus sont j et j², placés à part du point 1.",
+   "Chaque flèche orange est une multiplication par j ; la troisième ramène au point vert."
+  ],
+  "a_voir": "Trois flèches font le tour et reviennent à 1, mais j se trouve ailleurs que 1."
+ },
+ {
+  "code": "62-019",
+  "a_dire": "Multiplier par j, c'est tourner d'un tiers de tour autour de 0 ; les trois points obtenus forment un triangle aux côtés égaux.",
+  "legende_titre": "Multiplier par j fait tourner",
+  "lecture": [
+   "Le petit cercle noir est le point 0 ; les traits gris le relient aux trois points bleus.",
+   "Chaque flèche orange est une multiplication par j : un tiers de tour.",
+   "Le triangle bleu relie les trois points ; ses trois côtés sont égaux."
+  ],
+  "a_voir": "Trois tiers de tour font le tour complet, et les trois points forment un triangle régulier."
+ },
+ {
+  "code": "62-020",
+  "a_dire": "(j r₁)³ = j³ r₁³ = 1 × 2 = 2 : r₂ est bien une racine, et l'étape qui conclut est le remplacement de j³ par 1 et de r₁³ par 2.",
+  "legende_titre": "Vérifier que r₂ est une racine",
+  "lecture": [
+   "La première case bleue est le départ : (j r₁)³.",
+   "La deuxième case bleue sépare le cube du produit : j³ r₁³.",
+   "La case orange au cadre épais remplace j³ par 1 et r₁³ par 2 : c'est l'étape qui conclut.",
+   "La case verte est l'arrivée : 2."
+  ],
+  "a_voir": "La case orange à cadre épais porte tout le poids de la preuve."
+ },
+ {
+  "code": "62-021",
+  "a_dire": "j vient de x³ − 1 = (x − 1)(x² + x + 1) : un facteur donne 1, l'autre donne j et j², qui ne sont pas réels.",
+  "legende_titre": "D'où vient j",
+  "lecture": [
+   "La case bleue est x³ − 1, écrite comme un produit de la case grise x − 1 et de la case violette x² + x + 1.",
+   "La case grise donne la racine verte 1, qui est réelle.",
+   "La case violette donne j et j², qui ne sont pas réelles : son discriminant vaut −3.",
+   "Le texte gris en bas vérifie l'égalité avec le nombre 2 : 7 des deux côtés."
+  ],
+  "a_voir": "Le deuxième facteur est la source de j et de j²."
+ },
+ {
+  "code": "62-022",
+  "a_dire": "ℚ(∛2) est contenu dans ℝ, donc il ne contient ni r₂ ni r₃, qui ne sont pas réels : ajouter une racine ne suffit pas.",
+  "legende_titre": "Pourquoi ℚ(∛2) ne suffit pas",
+  "lecture": [
+   "Le grand rectangle bleu est ℝ.",
+   "Le rectangle vert à l'intérieur est ℚ(∛2), qui contient le point r₁.",
+   "Les deux points orange r₂ et r₃ sont au-dessus et au-dessous de ℝ, donc hors de ℚ(∛2)."
+  ],
+  "a_voir": "r₂ et r₃ sont en dehors de la bande ℝ, donc en dehors de ℚ(∛2)."
+ },
+ {
+  "code": "62-023",
+  "a_dire": "Le corps de décomposition de x³ − 2 est ℚ(∛2, j) : avec ∛2 et j, on fabrique les trois racines.",
+  "legende_titre": "Le corps de x³ − 2",
+  "lecture": [
+   "La case bleue ∛2 et la case orange j sont les deux nombres ajoutés aux fractions.",
+   "La grande case verte est ℚ(∛2, j).",
+   "Elle contient r₁ = ∛2 en bleu, puis r₂ = j r₁ et r₃ = j² r₁ en violet."
+  ],
+  "a_voir": "Deux nombres de départ suffisent pour obtenir les trois racines."
+ },
+ {
+  "code": "62-024",
+  "a_dire": "On peut toujours se ramener à un polynôme unitaire : on divise par le coefficient dominant, et les racines ne changent pas.",
+  "legende_titre": "Se ramener à un polynôme unitaire",
+  "lecture": [
+   "La case grise est 2x³ − 4, dont le coefficient dominant est 2.",
+   "La flèche orange divise par 2.",
+   "La case bleue est x³ − 2, dont le coefficient dominant est 1.",
+   "Le texte vert dit que les racines restent les mêmes."
+  ],
+  "a_voir": "Diviser par 2 donne un coefficient dominant 1 sans changer les racines."
+ },
+ {
+  "code": "62-025",
+  "a_dire": "Une racine r de f dans une extension E est un nombre de E tel que f(r) = 0 ; elle n'est pas forcément dans F, où sont les coefficients.",
+  "legende_titre": "Une racine dans un corps plus grand",
+  "lecture": [
+   "Le petit disque bleu est F, les fractions, où se trouve le coefficient −2 de f.",
+   "Le grand disque violet est E, les réels, qui contient F.",
+   "Le point vert est r = ∛2, dans E mais hors de F, et f(r) = 0."
+  ],
+  "a_voir": "La racine est dans le grand corps, pas dans le petit corps des coefficients."
+ },
+ {
+  "code": "62-026",
+  "a_dire": "Un nombre est racine de f exactement quand x moins ce nombre divise f ; le reste de la division est la valeur de f en ce nombre.",
+  "legende_titre": "Racine et division par x − r",
+  "lecture": [
+   "La case bleue du haut est f = x² − 9.",
+   "À gauche, on divise par x − 3 : f(3) = 9 − 9, le reste vaut 0, donc la division tombe juste.",
+   "À droite, on divise par x − 2 : f(2) = 4 − 9, le reste vaut −5, donc la division ne tombe pas juste."
+  ],
+  "a_voir": "Le reste de la division est toujours la valeur de f en ce nombre."
+ },
+ {
+  "code": "62-027",
+  "a_dire": "f se scinde dans E quand f est un produit de facteurs de degré 1 écrits dans E ; cela dépend du corps où l'on écrit le produit.",
+  "legende_titre": "Se scinder dans un corps",
+  "lecture": [
+   "Chaque case bleue donne un polynôme et un corps.",
+   "Les cases vertes montrent un produit de facteurs de degré 1 : x² − 1 dans ℚ, x² − 2 dans ℝ.",
+   "La case rouge montre que x² − 2 n'est pas un tel produit dans ℚ."
+  ],
+  "a_voir": "Le même polynôme x² − 2 se scinde dans ℝ mais pas dans ℚ."
+ },
+ {
+  "code": "62-028",
+  "a_dire": "Quand f se scinde dans un corps, les racines du produit sont toutes les racines de f ; modulo 6, qui n'est pas un corps, il y a des zéros en plus.",
+  "legende_titre": "Toutes les racines, dans un corps",
+  "lecture": [
+   "Chaque case est un reste modulo 6 avec la valeur de f = (x − 2)(x − 3).",
+   "Les cases vertes, x = 2 et x = 3, sont les zéros donnés par les facteurs.",
+   "Les cases rouges, x = 0 et x = 5, sont des zéros en plus : par exemple en 5, 3 × 2 = 6 = 0."
+  ],
+  "a_voir": "Les cases rouges sont des racines qui ne sont pas parmi les facteurs : ce cas n'arrive pas dans un corps."
+ },
+ {
+  "code": "62-029",
+  "a_dire": "La preuve part de f(r) = 0, écrit le produit en r, et conclut parce que dans un corps un produit nul a un facteur nul : r est l'un des r_i.",
+  "legende_titre": "Preuve : un produit nul a un facteur nul",
+  "lecture": [
+   "La première case bleue est le départ : f(r) = 0.",
+   "La deuxième case bleue remplace x par r dans le produit des facteurs.",
+   "La case orange au cadre épais est l'étape qui conclut : un facteur est nul.",
+   "La case verte est l'arrivée : r est égal à l'un des r_i.",
+   "La case grise donne l'exemple du produit de x − 1, x − 2 et x − 3 : 0 en 2, 6 en 4."
+  ],
+  "a_voir": "La case orange à cadre épais porte tout le poids de la preuve."
+ },
+ {
+  "code": "62-030",
+  "a_dire": "Le corps de décomposition de f est un corps qui casse f sans rien d'inutile : ni trop petit, ni trop grand.",
+  "legende_titre": "Ni trop petit, ni trop grand",
+  "lecture": [
+   "Les rectangles emboîtés sont des corps pour x² − 2 sur les fractions : ℚ au centre, puis ℚ(√2), ℝ, ℂ.",
+   "Le rectangle bleu ℚ est trop petit : f n'y casse pas.",
+   "Le rectangle vert ℚ(√2) est juste.",
+   "Les rectangles gris ℝ et ℂ cassent f mais sont trop grands.",
+   "La légende en bas donne le sens des trois couleurs."
+  ],
+  "a_voir": "Un seul des quatre corps est juste : le vert."
+ },
+ {
+  "code": "62-031",
+  "a_dire": "La condition (i), f se scinde dans E, fixe un minimum : le corps de départ seul ne suffit pas, il faut ajouter des nombres.",
+  "legende_titre": "La condition (i) fixe un minimum",
+  "lecture": [
+   "La ligne orange en pointillés est le seuil de la condition (i).",
+   "La case rouge en dessous, ℚ, ne passe pas le seuil : x² − 2 n'y est pas un produit.",
+   "Les cases vertes au-dessus, ℚ(√2), ℝ et ℂ, passent toutes le seuil.",
+   "La flèche grise montre qu'on peut aller plus gros sans limite."
+  ],
+  "a_voir": "Au-dessus du seuil, aucune case ne dit où s'arrêter : (i) donne un minimum, pas un maximum."
+ },
+ {
+  "code": "62-032",
+  "a_dire": "La condition (ii) dit que E est engendré par les racines : ses nombres sont fabriqués avec F et les racines seulement, rien d'autre.",
+  "legende_titre": "Engendré par les racines",
+  "lecture": [
+   "Le titre dit : E est fabriqué avec F et les racines, rien d'autre.",
+   "Le disque vert est ℚ(√2) : ses nombres s'écrivent a + b√2, avec a et b des fractions.",
+   "Les deux points bleus dans ce disque sont les racines √2 et −√2.",
+   "Le grand disque gris est ℂ, qui contient aussi le point rouge i : il n'est pas fabriqué avec les racines."
+  ],
+  "a_voir": "Le point rouge est dans ℂ mais pas dans le disque vert."
+ },
+ {
+  "code": "62-033",
+  "a_dire": "Sans la condition (ii), ℂ serait un corps de décomposition de x² − 2 ; avec elle, un seul corps convient, le plus petit.",
+  "legende_titre": "Sans (ii), beaucoup trop de corps",
+  "lecture": [
+   "À gauche, avec la condition (i) seule, ℚ(√2), ℝ et ℂ conviennent tous.",
+   "À droite, avec (i) et (ii), seul ℚ(√2) convient, en vert.",
+   "Les cases rouges ℝ et ℂ sont exclues."
+  ],
+  "a_voir": "Trois cases vertes à gauche, une seule à droite."
+ }
+]

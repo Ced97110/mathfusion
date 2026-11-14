@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(100)
+box(ax,16,84,56,10,'sujet',label=r'$(a\,b)(b^{-1}a^{-1})$')
+box(ax,13,60,14,10,'fixe',label=r'$a$'); box(ax,31,60,26,10,'resultat',label=r'$b\,b^{-1}$'); box(ax,61,60,14,10,'fixe',label=r'$a^{-1}$')
+box(ax,28,36,14,10,'fixe',label=r'$a$'); box(ax,46,36,14,10,'fixe',label=r'$a^{-1}$')
+box(ax,37,12,14,10,'resultat',label=r'$1$')
+arrow(ax,(44,84),(44,70),'varie'); text(ax,50,77,r'$b$ et $b^{-1}$ se touchent','varie','s',ha='left')
+arrow(ax,(44,60),(44,46),'varie'); text(ax,50,53,r'$b\,b^{-1}=1$ disparaît','varie','s',ha='left')
+arrow(ax,(44,36),(44,22),'varie'); text(ax,50,29,r'$a\,a^{-1}=1$','varie','s',ha='left')
+text(ax,44,4,r'$a$ agit en dernier : $a^{-1}$ en premier','sujet','s')
+save(fig,'44-250')

@@ -1,0 +1,352 @@
+[
+ {
+  "code": "60-121",
+  "a_dire": "Un groupe est un p-groupe exactement quand son ordre est une puissance de p.",
+  "legende_titre": "Horloge de 8 h et horloge de 12 h",
+  "lecture": [
+   "À gauche, les ordres des éléments de l'horloge de 8 heures sont 1, 2, 4 et 8, en vert : ce sont des puissances de 2.",
+   "L'ordre du groupe, 8, est lui aussi une puissance de 2.",
+   "À droite, dans l'horloge de 12 heures, l'heure 1 est d'ordre 12 et l'heure 4 d'ordre 3, en rouge : ce ne sont pas des puissances de 2.",
+   "Le groupe de 12 heures n'est donc pas un 2-groupe."
+  ],
+  "a_voir": "Quand tous les ordres sont des puissances de 2, l'ordre du groupe en est une aussi ; sinon aucun des deux ne l'est."
+ },
+ {
+  "code": "60-122",
+  "a_dire": "Pour séparer un groupe en parties, une par nombre premier, il faut que le groupe soit abélien ; les six rangements de trois objets le montrent.",
+  "legende_titre": "Six rangements de trois objets",
+  "lecture": [
+   "Les quatre cases bleues sont l'identité et les trois échanges : les éléments d'ordre 1 ou 2.",
+   "Les deux flèches orange partent de deux échanges différents : on en fait le produit.",
+   "La case rouge montre le résultat : ce produit est d'ordre 3, donc il sort de l'ensemble."
+  ],
+  "a_voir": "L'ensemble des éléments d'ordre 1 ou 2 n'est pas stable pour le produit, donc il ne forme pas un sous-groupe."
+ },
+ {
+  "code": "60-123",
+  "a_dire": "Les parties G_i de Judson sont les composantes primaires déjà vues : les éléments dont l'ordre est une puissance d'un nombre premier.",
+  "legende_titre": "Les parties de l'horloge de 12 heures",
+  "lecture": [
+   "Les 12 disques sont les heures de l'horloge de 12 heures.",
+   "Les disques bleus 0, 3, 6, 9 forment la composante de 2 : leurs ordres sont des puissances de 2.",
+   "Les disques violets 4 et 8, avec le 0 entouré de violet, forment la composante de 3.",
+   "Les disques gris n'appartiennent à aucune des deux composantes."
+  ],
+  "a_voir": "Chaque composante regroupe les éléments dont l'ordre est une puissance d'un seul nombre premier, et elles ne se chevauchent qu'en 0."
+ },
+ {
+  "code": "60-124",
+  "a_dire": "Pour découper un élément en morceaux d'ordres premiers entre eux, on divise son ordre, on applique Bézout, puis on multiplie par l'élément.",
+  "legende_titre": "Découper l'élément 1 de l'horloge de 12 heures",
+  "lecture": [
+   "Les trois cases bleues sont les étapes dans l'ordre : l'ordre 12 = 4 × 3, les divisions, puis l'égalité de Bézout.",
+   "Les flèches orange relient les étapes ; les deux dernières flèches multiplient par 1.",
+   "Les deux cases vertes sont les morceaux obtenus : 9 d'ordre 4 et 4 d'ordre 3.",
+   "Le texte vert du bas les additionne : 1 = 9 + 4."
+  ],
+  "a_voir": "Chaque morceau a pour ordre une puissance d'un seul nombre premier."
+ },
+ {
+  "code": "60-125",
+  "a_dire": "Dans ℤ/12, on écrit 1 = 9 + 4 grâce à l'égalité de Bézout 3 × (−1) + 4 × 1 = 1.",
+  "legende_titre": "1 en deux morceaux dans ℤ/12",
+  "lecture": [
+   "Le texte du haut donne l'égalité de Bézout utilisée ; −3 et 9 ont le même reste dans l'horloge.",
+   "L'arc orange va de 0 à 9 : c'est le morceau 9, d'ordre 4.",
+   "L'arc violet va de 9 à 13 : c'est le morceau 4, d'ordre 3.",
+   "La flèche verte indique que 13 a le même reste que 1, car 13 − 12 = 1."
+  ],
+  "a_voir": "Les deux morceaux mis bout à bout arrivent à 13, qui vaut 1 dans l'horloge."
+ },
+ {
+  "code": "60-126",
+  "a_dire": "Le découpage de Judson est le lemme de découpage appliqué élément par élément : les deux méthodes donnent les mêmes morceaux.",
+  "legende_titre": "Judson et le lemme donnent les mêmes morceaux",
+  "lecture": [
+   "La colonne bleue donne les morceaux de Judson : 9, tué par 4, et 4, tué par 3.",
+   "La colonne violette donne ceux du lemme : 3 fois 1 et 4 fois 1, soit 3 et 4.",
+   "Les cases vertes du milieu montrent le sous-groupe engendré : 0, 3, 6, 9 pour 9 comme pour 3, et 0, 4, 8 pour 4."
+  ],
+  "a_voir": "Des nombres différents, 9 et 3, engendrent le même sous-groupe."
+ },
+ {
+  "code": "60-127",
+  "a_dire": "Dans un p-groupe abélien fini, si g est d'ordre maximal, le groupe s'écrit comme la somme directe de ⟨g⟩ et d'un sous-groupe K.",
+  "legende_titre": "Grille 4 × 2 : ⟨g⟩ et son complément K",
+  "lecture": [
+   "La colonne bleue, de (0, 0) à (3, 0), est ⟨g⟩ pour g = (1, 0), d'ordre 4.",
+   "Le cadre orange en pointillés est K : les deux cases (0, 0) et (0, 1).",
+   "Les cases grises de la colonne 1 sont les autres éléments du groupe."
+  ],
+  "a_voir": "Chaque case s'obtient par un élément de ⟨g⟩ plus un élément de K, et ces deux sous-groupes ne partagent que (0, 0)."
+ },
+ {
+  "code": "60-128",
+  "a_dire": "Le choix de l'élément à ajouter décide du succès : on voit le chevauchement comme un recouvrement de cases.",
+  "legende_titre": "Deux choix de H dans la grille 4 × 2",
+  "lecture": [
+   "Dans les deux grilles, la colonne bleue est ⟨g⟩ pour g = (1, 0).",
+   "À gauche, H est engendré par (0, 1) : la case orange (0, 1) s'ajoute et seule (0, 0) est commune.",
+   "À droite, H est engendré par (1, 1) : les cases orange (1, 1) et (3, 1) s'ajoutent, et (2, 0), en rouge, est aussi dans H.",
+   "Le texte en vert ou en rouge dit si la somme est directe."
+  ],
+  "a_voir": "Une case rouge en plus du coin (0, 0) rend la somme non directe."
+ },
+ {
+  "code": "60-129",
+  "a_dire": "g = (1, 0) a pour ordre 4, le plus grand de la grille ; hors de ⟨g⟩, les cases ont pour ordres 2, 4, 2 et 4.",
+  "legende_titre": "Les ordres des huit cases de la grille",
+  "lecture": [
+   "Chaque case porte son ordre : le nombre d'additions qui la ramène à (0, 0).",
+   "La colonne bleue est ⟨g⟩ ; la case de bord épais, ligne 1, est g, d'ordre 4.",
+   "La colonne grise, hors de ⟨g⟩, lue de haut en bas, donne 2, 4, 2, 4."
+  ],
+  "a_voir": "Hors de ⟨g⟩, on trouve des ordres 2 et des ordres 4, donc on a le choix."
+ },
+ {
+  "code": "60-130",
+  "a_dire": "Ajouter (1, 1), d'ordre 4, chevauche ⟨g⟩ en (2, 0) ; ajouter (0, 1), d'ordre 2, ne le touche qu'en (0, 0).",
+  "legende_titre": "Deux choix comparés : ce qu'ils ont en commun avec ⟨g⟩",
+  "lecture": [
+   "Le disque bleu contient les éléments de ⟨g⟩, avec g = (1, 0) ; le cercle orange contient ceux du sous-groupe ajouté.",
+   "À gauche, on ajoute (1, 1), d'ordre 4 : la zone commune porte (0, 0) et (2, 0), en rouge.",
+   "À droite, on ajoute (0, 1), d'ordre 2 : la zone commune ne porte que (0, 0), en vert."
+  ],
+  "a_voir": "Le choix d'ordre 4 partage deux éléments avec ⟨g⟩, le choix d'ordre 2 un seul."
+ },
+ {
+  "code": "60-131",
+  "a_dire": "La preuve part de g d'ordre maximal et veut un complément K ; l'étape qui porte tout le poids est le choix de h hors de ⟨g⟩ d'ordre le plus petit.",
+  "legende_titre": "La preuve de Judson en trois cases",
+  "lecture": [
+   "La case bleue du haut est le départ : g d'ordre 4, maximal.",
+   "La case orange du milieu est l'étape décisive : prendre h hors de ⟨g⟩ d'ordre le plus petit.",
+   "La case verte du bas est l'arrivée : K complète ⟨g⟩.",
+   "À droite, les quatre cases hors de ⟨g⟩ ont pour ordres 2, 4, 2, 4 ; les deux en orange, d'ordre 2, sont les bons choix."
+  ],
+  "a_voir": "On choisit un élément d'ordre 2 et non d'ordre 4."
+ },
+ {
+  "code": "60-132",
+  "a_dire": "Le premier point montre que h, d'ordre le plus petit hors de ⟨g⟩, a pour ordre p ; l'étape décisive est de montrer que p divise r.",
+  "legende_titre": "Premier point : l'ordre de h",
+  "lecture": [
+   "Les deux cases bleues du haut donnent le départ : h est d'ordre le plus petit hors de ⟨g⟩, et p fois h est dans ⟨g⟩, égal à r fois g.",
+   "La case orange est l'étape décisive : p divise r, donc r = p fois s.",
+   "Les cases vertes en déduisent a = h − s g, d'ordre p, puis l'ordre de h égal à p.",
+   "Le texte gris du bas donne le cas de la grille : h = (0, 1) est d'ordre 2, qui est p."
+  ],
+  "a_voir": "Chaque flèche orange est une étape de la preuve, du départ à l'arrivée."
+ },
+ {
+  "code": "60-133",
+  "a_dire": "La correction a = h − s g échoue seulement si p ne divise pas r ; on montre que p divise toujours r.",
+  "legende_titre": "Quand la correction a = h − s g peut-elle échouer ?",
+  "lecture": [
+   "La case bleue du haut donne le calcul : 2 fois (1, 1) égale (2, 0), égal à 2 fois g, donc r = 2.",
+   "La condition est que p divise r.",
+   "À gauche, en rouge, le cas où p ne divise pas r : r g engendrerait ⟨g⟩ ; c'est impossible, car r g est d'ordre 2 et g d'ordre 4.",
+   "À droite, en vert, p = 2 divise r = 2 : on obtient s = 1 et a = (0, 1)."
+  ],
+  "a_voir": "Dans la grille, p = 2 divise r = 2, donc la correction réussit."
+ },
+ {
+  "code": "60-134",
+  "a_dire": "Sur le mauvais choix h = (1, 1), la correction avec r = 2 et s = 1 ramène l'élément a = (0, 1), d'ordre 2.",
+  "legende_titre": "Corriger le mauvais choix (1, 1) dans la grille",
+  "lecture": [
+   "La case rouge (1, 1) est le mauvais choix h, d'ordre 4 ; la case à bord épais (1, 0) est g.",
+   "La flèche orange monte d'une ligne : elle retire g de h.",
+   "La case verte (0, 1) est le résultat a, d'ordre 2.",
+   "Le texte de droite donne les calculs : 2h = (2, 0) = 2 fois g, r = 2, s = 1."
+  ],
+  "a_voir": "En retirant g, on passe de la case rouge à la case verte."
+ },
+ {
+  "code": "60-135",
+  "a_dire": "La partie commune de ⟨g⟩ et de H est réduite à {0} : elle a 1 ou p éléments, et p éléments est impossible.",
+  "legende_titre": "Deuxième point : ⟨g⟩ ∩ H = {0}",
+  "lecture": [
+   "La case orange du haut est H, avec p = 2 éléments : (0, 0) et (0, 1).",
+   "La partie commune avec ⟨g⟩ est un sous-groupe de H ; le théorème de Lagrange donne 1 ou p éléments.",
+   "À gauche, en vert, le cas à 1 élément : seul (0, 0).",
+   "À droite, en rouge, le cas à 2 éléments : H entier serait dans ⟨g⟩, ce qui est impossible car (0, 1) n'y est pas."
+  ],
+  "a_voir": "Il ne reste que le cas vert, donc la partie commune est {0}."
+ },
+ {
+  "code": "60-136",
+  "a_dire": "Dans le quotient G/H, la classe g + H a encore l'ordre de g, car ⟨g⟩ et H n'ont que 0 en commun.",
+  "legende_titre": "Le quotient de la grille par H",
+  "lecture": [
+   "À gauche, la grille de 8 cases ; chaque cadre en pointillés est une ligne, formée d'une case bleue et d'une case orange.",
+   "La flèche grise passe au quotient : les deux cases d'un cadre deviennent un seul élément.",
+   "À droite, les 4 disques sont les classes 0 + H, g + H, 2g + H, 3g + H.",
+   "Les flèches orange ajoutent g à chaque pas et font le tour en 4 pas."
+  ],
+  "a_voir": "La classe g + H revient à 0 + H après 4 pas : elle est d'ordre 4, comme g."
+ },
+ {
+  "code": "60-137",
+  "a_dire": "Par récurrence le quotient se découpe, G/H = ⟨g + H⟩ ⊕ K/H, et le théorème de correspondance permet de remonter à un sous-groupe K de G.",
+  "legende_titre": "Le quotient se découpe, puis on remonte",
+  "lecture": [
+   "En haut, G, g et H sont donnés pour la grille 4 sur 2.",
+   "Les quatre disques bleus forment l'horloge de 4 engendrée par g + H.",
+   "La case orange K/H = {0} est le complément, réduit à 0.",
+   "La flèche orange remonte dans G : la case du haut est K, qui contient H.",
+   "La formule verte du bas écrit la découpe du quotient."
+  ],
+  "a_voir": "Un complément trouvé dans le quotient correspond à un sous-groupe K de G."
+ },
+ {
+  "code": "60-138",
+  "a_dire": "Un élément b qui est à la fois dans ⟨g⟩ et dans K est nul ; l'étape décisive est de revenir dans G.",
+  "legende_titre": "Un élément commun à ⟨g⟩ et à K",
+  "lecture": [
+   "La case bleue du haut est le départ : b est dans ⟨g⟩ et dans K.",
+   "La deuxième case dit que dans le quotient sa classe est nulle, donc b est dans H.",
+   "La case orange est l'étape décisive : on revient dans G, où b est dans ⟨g⟩ et dans H.",
+   "La case verte conclut b = 0 ; le texte gris donne le cas de la grille : seul (0, 0) est commun."
+  ],
+  "a_voir": "Le deuxième point, ⟨g⟩ ∩ H = {0}, termine le raisonnement."
+ },
+ {
+  "code": "60-139",
+  "a_dire": "Tout x de G s'écrit comme un multiple de g plus un élément de K, donc G = ⟨g⟩ ⊕ K.",
+  "legende_titre": "Écrire x = (3, 1) comme multiple de g plus un élément de K",
+  "lecture": [
+   "La flèche bleue descend la colonne de ⟨g⟩, de (0, 0) à (3, 0) : c'est 3 fois g.",
+   "La flèche orange passe de (3, 0) à la case verte (3, 1) : on ajoute y = (0, 1), un élément de K.",
+   "La case verte est x = (3, 1) ; le texte de droite écrit (3, 1) = (3, 0) + (0, 1)."
+  ],
+  "a_voir": "Deux déplacements, l'un le long de ⟨g⟩, l'autre dans K, atteignent la case x."
+ },
+ {
+  "code": "60-140",
+  "a_dire": "On recommence la découpe sur le complément K, qui a strictement moins d'éléments, donc le procédé s'arrête.",
+  "legende_titre": "Recommencer sur K : le nombre d'éléments diminue",
+  "lecture": [
+   "La rangée bleue du haut compte 8 cases : les 8 éléments de G.",
+   "La flèche orange retire ⟨g⟩, de 4 éléments : il reste K, la rangée orange de 2 cases, 8 ÷ 4 = 2.",
+   "La flèche grise courbe rappelle que, si K n'est pas cyclique, on recommence sur K.",
+   "La case verte du bas dit que le procédé s'arrête quand K est cyclique."
+  ],
+  "a_voir": "Le nombre d'éléments baisse à chaque tour, donc il n'y a pas de tour sans fin."
+ },
+ {
+  "code": "60-141",
+  "a_dire": "Sur la figure 3, un seul tour suffit car K est cyclique ; pour d'autres groupes il faut un second tour.",
+  "legende_titre": "Un tour ou deux, selon la forme du groupe",
+  "lecture": [
+   "À gauche, le groupe ℤ/4 ⊕ ℤ/2 : la rangée bleue de 4 disques et K, le cadre orange à 2 disques.",
+   "K est cyclique, donc un seul tour suffit.",
+   "À droite, le groupe ℤ/4 ⊕ ℤ/2 ⊕ ℤ/2 : K contient deux rangées de 2 disques et n'est pas cyclique.",
+   "Il faut donc un second tour."
+  ],
+  "a_voir": "Le nombre de tours dépend de la forme du groupe."
+ },
+ {
+  "code": "60-142",
+  "a_dire": "La preuve de Judson donne une écriture de G, pas l'unicité : deux choix de g donnent deux écritures aux morceaux différents.",
+  "legende_titre": "Deux choix de g avec le même K",
+  "lecture": [
+   "Dans les deux grilles, K est le cadre orange : la rangée du haut, (0, 0) et (0, 1).",
+   "À gauche, ⟨g⟩ est la colonne bleue, pour g = (1, 0).",
+   "À droite, ⟨g⟩ est formé des cases bleues (0, 0), (1, 1), (2, 0), (3, 1), pour g = (1, 1).",
+   "Dans les deux cas, les morceaux ont 4 et 2 éléments."
+  ],
+  "a_voir": "Les deux écritures sont valables, mais leurs morceaux ne sont pas les mêmes."
+ },
+ {
+  "code": "60-143",
+  "a_dire": "Le théorème sur les groupes abéliens de type fini a besoin de cette hypothèse : les rationnels ne sont pas une somme de copies des entiers.",
+  "legende_titre": "Les rationnels ne sont pas de type fini",
+  "lecture": [
+   "La droite graduée porte les cases bleues 0, a, 2a, 3a, 4a : les multiples entiers d'un seul nombre a.",
+   "Le disque rouge est a/2, qui est dans ℚ.",
+   "La flèche rouge montre que a/2 tombe entre 0 et a : ce n'est pas un multiple entier de a."
+  ],
+  "a_voir": "Un seul nombre ne suffit pas à engendrer les rationnels."
+ },
+ {
+  "code": "60-144",
+  "a_dire": "D = F[λ], l'anneau des polynômes en λ à coefficients dans un corps F, joue le rôle des entiers.",
+  "legende_titre": "Les polynômes à la place des entiers",
+  "lecture": [
+   "En haut, le polynôme λ² − 2λ + 1 : chaque case bleue est un coefficient, 1, −2 et 1, sous sa puissance de λ.",
+   "La colonne violette de gauche rappelle les entiers : entier, nombre premier, multiple.",
+   "La colonne bleue de droite donne ce qui joue le même rôle pour les polynômes : polynôme, polynôme irréductible, multiple d'un polynôme.",
+   "Les doubles flèches orange relient les rôles qui se correspondent."
+  ],
+  "a_voir": "Les mots changent, la structure reste la même."
+ },
+ {
+  "code": "60-145",
+  "a_dire": "Le couple (V, T) est un espace vectoriel de dimension n sur F muni d'une transformation linéaire T, ici l'échange des deux coordonnées du plan.",
+  "legende_titre": "Le plan et la transformation qui échange les coordonnées",
+  "lecture": [
+   "Les deux axes gris portent le plan V, de dimension n = 2.",
+   "Le disque bleu est le couple (1, 0), le disque orange est (0, 1).",
+   "Les deux flèches courbes, notées T, envoient chaque couple sur l'autre : (a, b) devient (b, a)."
+  ],
+  "a_voir": "T est une application du plan dans lui-même, qui échange les deux coordonnées."
+ },
+ {
+  "code": "60-146",
+  "a_dire": "Un polynôme agit sur un vecteur en remplaçant λ par T : chaque terme devient une action de T répétée, puis on additionne.",
+  "legende_titre": "3 + 2λ + λ² agit sur le vecteur (1, 0)",
+  "lecture": [
+   "Les trois flèches orange sont mises bout à bout : 3x, de longueur 3 vers la droite, puis 2Tx, de 2 vers le haut, puis T²x, de 1 vers la droite.",
+   "La flèche verte part de l'origine et arrive au même point : c'est la somme (4, 2).",
+   "Le texte de droite donne les trois termes et leur somme."
+  ],
+  "a_voir": "Le résultat du polynôme est encore un vecteur du plan."
+ },
+ {
+  "code": "60-147",
+  "a_dire": "Multiplier par λ, c'est appliquer T ; cela fait de V un module sur les polynômes.",
+  "legende_titre": "Multiplier par λ revient à échanger les coordonnées",
+  "lecture": [
+   "La case bleue de gauche est le vecteur (1, 0) ; la première flèche orange multiplie par λ.",
+   "La case orange du milieu est (0, 1) : le vecteur échangé.",
+   "La deuxième flèche multiplie encore par λ et ramène la case bleue de droite, (1, 0).",
+   "Le texte vert du bas : multiplier par λ² − 1 donne le vecteur nul."
+  ],
+  "a_voir": "Deux multiplications par λ sont deux échanges, qui se compensent."
+ },
+ {
+  "code": "60-148",
+  "a_dire": "La dimension finie force la torsion : sans elle, l'espace de tous les polynômes n'est pas un module de torsion.",
+  "legende_titre": "Avec et sans dimension finie",
+  "lecture": [
+   "En haut, en vert, le plan : la suite (1, 0), (0, 1), (1, 0) revient à son point de départ.",
+   "En bas, en rouge, l'espace de tous les polynômes : la suite 1, λ, λ², λ³, … ne revient jamais.",
+   "Chaque flèche orange multiplie par λ.",
+   "Les textes disent ce que cela donne : la torsion en haut, pas de torsion en bas."
+  ],
+  "a_voir": "Dans le plan la suite revient, avec les polynômes elle ne revient pas."
+ },
+ {
+  "code": "60-149",
+  "a_dire": "Dans un espace de dimension n, les vecteurs x, Tx, T²x, … sont liés, donc il existe un polynôme g non nul avec g(λ)x = 0.",
+  "legende_titre": "Trois vecteurs dans un plan sont liés",
+  "lecture": [
+   "La flèche bleue est x = (1, 0), la flèche orange est Tx = (0, 1).",
+   "La flèche verte, tracée juste dessous, est T²x = (1, 0) : elle est égale à x.",
+   "Donc T²x − x = 0, ce qui donne le polynôme g = λ² − 1 avec g(λ)x = 0."
+  ],
+  "a_voir": "La troisième flèche est la copie de la première : les trois vecteurs sont liés."
+ },
+ {
+  "code": "60-150",
+  "a_dire": "La matrice A de T dans une base remplace T par des nombres : sa ligne i donne l'image du vecteur de base u_i.",
+  "legende_titre": "La matrice de l'échange dans la base (1, 0), (0, 1)",
+  "lecture": [
+   "Le texte du haut donne la base : u₁ = (1, 0) et u₂ = (0, 1).",
+   "La relation bleue, T u₁ = 0 u₁ + 1 u₂, devient la ligne bleue (0, 1) de la matrice.",
+   "La relation orange, T u₂ = 1 u₁ + 0 u₂, devient la ligne orange (1, 0)."
+  ],
+  "a_voir": "Les coefficients de chaque relation, lus de gauche à droite, forment une ligne de A."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+u, x0, h = 3.0, 18, 8
+# liste (2, 10)
+text(ax, 44, 68, 'ℤ/2 ⊕ ℤ/10 : liste (2, 10)', 'sujet', 's', weight='bold')
+box(ax, x0, 52, 2 * u, h, 'sujet', label='2', size='s', r=0.5)
+box(ax, x0 + 2 * u + 2, 52, 10 * u, h, 'sujet', label='10', size='s', r=0.8)
+text(ax, 44, 46, '2 ∣ 10 ; 2 × 10 = 20', 'sujet', 's')
+# liste (1, 20)
+text(ax, 44, 36, 'ℤ/20 : liste (1, 20)', 'autre', 's', weight='bold')
+box(ax, x0, 20, 1 * u, h, 'autre', label='1', size='s', r=0.4)
+box(ax, x0 + u + 2, 20, 20 * u, h, 'autre', label='20', size='s', r=0.8)
+text(ax, 44, 14, '1 ∣ 20 ; 1 × 20 = 20', 'autre', 's')
+text(ax, 44, 4, 'même produit, deux listes', 'varie', 's', weight='bold')
+save(fig, '59-127')

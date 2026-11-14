@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+O=(10,8); s=6
+P=lambda x,y:(O[0]+s*x,O[1]+s*y)
+poly(ax,[P(0,0),P(4,0),P(3,2),P(0,5)],'resultat')
+arrow(ax,P(0,0),P(6,0),'fixe',lw=0.6); arrow(ax,P(0,0),P(0,8),'fixe',lw=0.6)
+line(ax,[P(0,5),P(5,0)],'sujet',lw=1.3); line(ax,[P(0,8),P(4,0)],'autre',lw=1.3)
+disc(ax,*P(2.5,2),1.1,'resultat'); disc(ax,*P(3.5,2),1.1,'fixe')
+arrow(ax,(P(2.5,2)[0]+1.5,P(2.5,2)[1]),(P(3.5,2)[0]-1.5,P(3.5,2)[1]),'varie')
+disc(ax,*P(3,2),1.5,'sujet')
+text(ax,P(3,2)[0]+2,P(3,2)[1]+10,'sommet $P$','sujet','s',ha='left')
+arrow(ax,(P(3,2)[0]+2,P(3,2)[1]+8),(P(3,2)[0]+0.5,P(3,2)[1]+2),'sujet')
+text(ax,P(2.5,2)[0]-3,P(2.5,2)[1]-5,'(2,5 ; 2) dedans','resultat','s',ha='right')
+text(ax,P(3.5,2)[0]+4,P(3.5,2)[1]-4.5,'(3,5 ; 2) dehors','fixe','s',ha='left')
+text(ax,69,52,'bord : $x + y = 5$','sujet','s')
+text(ax,69,45,'bord : $2x + y = 8$','autre','s')
+text(ax,69,38,'région','resultat','s')
+save(fig,'24-078')

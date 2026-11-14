@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+f=numberline(ax,26,84,14,0,12,arrow_right=False)
+for v in range(1,12,2): disc(ax,f(v),26,1.7,'resultat' if v in (5,11) else 'sujet')
+for v in (2,5,8,11): disc(ax,f(v),38,1.7,'resultat' if v in (5,11) else 'varie')
+for v in (5,11): line([(f(v),16),(f(v),36)],'resultat',dash=True) if False else line(ax,[(f(v),16),(f(v),36)],'resultat',dash=True)
+text(ax,1,26,'reste 1\npar 2','sujet','s',ha='left'); text(ax,1,38,'reste 2\npar 3','varie','s',ha='left')
+arrow(ax,(f(5),42),(f(11),42),'varie',curve=-0.4); text(ax,f(8),52,r'$+6$','varie','s')
+text(ax,13,53,r'$n=5+6q$','resultat','m')
+save(fig,'52-232')

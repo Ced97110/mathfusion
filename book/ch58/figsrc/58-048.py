@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+assert (2 * 2 + 1 * 1, 2 * 1 + 1 * 2) == (5, 4)
+text(ax, 44, 57, 'le même stock (5, 4)', 'encre', 'm')
+def row(y, c1, v1, c2, v2, res, tag):
+    box(ax, 2, y, 7, 9, 'varie', label=c1, r=0.6)
+    box(ax, 10, y, 17, 9, 'sujet', label=v1, size='s', r=0.6)
+    text(ax, 30, y + 4.5, '+', 'fixe', 'l', weight='bold')
+    box(ax, 33, y, 7, 9, 'varie', label=c2, r=0.6)
+    box(ax, 41, y, 17, 9, 'sujet', label=v2, size='s', r=0.6)
+    arrow(ax, (59, y + 4.5), (64, y + 4.5), 'resultat', lw=1.0)
+    box(ax, 64, y, 22, 9, 'resultat', label=res, size='s')
+    text(ax, 75, y + 13, tag, 'resultat', 's')
+row(30, '5', '(1, 0)', '4', '(0, 1)', '(5, 4)', 'coordonnées')
+row(8, '2', '(2, 1)', '1', '(1, 2)', '(2, 1)', 'coordonnées')
+text(ax, 20, 44, 'base des sacs', 'sujet', 's')
+text(ax, 20, 22, 'base des flèches', 'sujet', 's')
+save(fig, '58-048')

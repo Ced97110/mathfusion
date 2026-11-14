@@ -1,0 +1,353 @@
+[
+ {
+  "code": "58-121",
+  "a_dire": "W est l'ensemble des triplets (x1, 2x1 + x2, x1 − x2) : chaque couple de paramètres donne un triplet, mais (1, 0, 0) ne s'obtient avec aucun couple.",
+  "legende_titre": "Des paramètres aux triplets de W",
+  "lecture": [
+   "Chaque case orange est un couple de paramètres x1 et x2.",
+   "Chaque flèche bleue mène au triplet de W que ce couple donne : (1, 2, 1), (0, 1, −1) et (2, 7, −1).",
+   "La ligne rouge du bas montre le triplet (1, 0, 0) : aucun couple ne le donne."
+  ],
+  "a_voir": "Les triplets de W viennent tous d'un couple de paramètres ; (1, 0, 0) n'en vient pas."
+ },
+ {
+  "code": "58-122",
+  "a_dire": "La colonne et la ligne écrivent le même triplet ; la colonne donne une ligne à chaque case, ce qui permet d'écrire des formules longues.",
+  "legende_titre": "Le même triplet, écrit autrement",
+  "lecture": [
+   "En haut à gauche, la case bleue montre le triplet (2, 7, −1) sur une ligne.",
+   "En haut à droite, les mêmes trois nombres sont l'un sous l'autre, entre de grandes parenthèses.",
+   "En bas, le triplet aux formules longues tient en colonne : une case par ligne."
+  ],
+  "a_voir": "Seule la place des cases change, pas le triplet."
+ },
+ {
+  "code": "58-123",
+  "a_dire": "Un triplet de W multiplié par un nombre reste un triplet de W : l'étape qui porte la preuve est la multiplication des deux paramètres par ce nombre.",
+  "legende_titre": "Multiplier un triplet de W",
+  "lecture": [
+   "À gauche, la case bleue est le triplet de départ (1, 4, −1), avec les paramètres 1 et 2.",
+   "Au milieu, la case orange est l'étape décisive : on multiplie les paramètres par 3.",
+   "À droite, la case verte est le triplet d'arrivée (3, 12, −3), avec les paramètres 3 et 6.",
+   "La ligne verte du bas vérifie les deux cases : 2 × 3 + 6 = 12 et 3 − 6 = −3."
+  ],
+  "a_voir": "Le résultat s'écrit encore avec deux paramètres : il est dans W."
+ },
+ {
+  "code": "58-124",
+  "a_dire": "La somme de deux triplets de W est un triplet de W : les paramètres s'additionnent un à un.",
+  "legende_titre": "Additionner deux triplets de W",
+  "lecture": [
+   "La case bleue (1, 4, −1) et la case violette (2, 7, −1) sont les deux triplets de départ, avec leurs paramètres en orange.",
+   "La flèche verte mène à leur somme (3, 11, −2).",
+   "La somme a pour paramètres 3 et 5, obtenus par 1 + 2 et 2 + 3."
+  ],
+  "a_voir": "Les paramètres de la somme sont les sommes des paramètres."
+ },
+ {
+  "code": "58-125",
+  "a_dire": "Un triplet de W s'écrit x1 fois a plus x2 fois b, avec a = (1, 2, 1) et b = (0, 1, −1) : il suffit de connaître a et b.",
+  "legende_titre": "Séparer les deux paramètres",
+  "lecture": [
+   "La case bleue est a ; la flèche orange × 2 donne 2a = (2, 4, 2).",
+   "La case violette est b ; la flèche orange × 3 donne 3b = (0, 3, −3).",
+   "Le signe + réunit ces deux résultats.",
+   "La case verte du bas donne la somme 2a + 3b = (2, 7, −1)."
+  ],
+  "a_voir": "Le triplet (2, 7, −1) est 2 fois a plus 3 fois b."
+ },
+ {
+  "code": "58-126",
+  "a_dire": "W est un plan de l'espace : il passe par l'origine O et contient les flèches a et b.",
+  "legende_titre": "Un ensemble de triplets devenu un plan",
+  "lecture": [
+   "Les trois flèches grises sont les axes de l'espace ; ils se croisent en O.",
+   "Le grand parallélogramme bleu est le plan W.",
+   "La flèche bleue est a et la flèche violette est b : elles partent de O et restent dans le plan."
+  ],
+  "a_voir": "Le plan W passe par O et contient a et b."
+ },
+ {
+  "code": "58-127",
+  "a_dire": "Le parallélogramme construit sur a et b reste dans le plan W, et a + b en est la diagonale.",
+  "legende_titre": "Le plan W avec a, b et leur somme",
+  "lecture": [
+   "Le plan bleu W et les trois axes gris se croisent à l'origine O.",
+   "La flèche bleue est a = (1, 2, 1) et la flèche violette est b = (0, 1, −1).",
+   "Les traits verts en pointillé complètent le parallélogramme.",
+   "La flèche verte est a + b = (1, 3, 0) : sa pointe est dans le plan."
+  ],
+  "a_voir": "La pointe de a + b est dans le plan W."
+ },
+ {
+  "code": "58-128",
+  "a_dire": "En additionnant a = (1, 2, 1) et b = (0, 1, −1) case par case, on obtient (1, 3, 0), un triplet de W.",
+  "legende_titre": "Additionner a et b",
+  "lecture": [
+   "La ligne bleue donne les trois cases de a et la ligne violette celles de b.",
+   "Le trait noir sépare les données du résultat.",
+   "La ligne verte donne la somme case par case : 1, 3 et 0.",
+   "Le texte vert rappelle les trois additions et dit que ce triplet vient des paramètres 1 et 1."
+  ],
+  "a_voir": "Chaque case de la somme est la somme des deux cases au-dessus."
+ },
+ {
+  "code": "58-129",
+  "a_dire": "Le produit vectoriel a × b donne (−3, 1, 1), qui fournit l'équation −3x + y + z = 0 du plan W.",
+  "legende_titre": "Calculer l'équation du plan",
+  "lecture": [
+   "Les cases bleue et violette du haut sont a et b.",
+   "Les trois cases orange calculent a × b, une case après l'autre : −3, 1 et 1.",
+   "La case verte donne le résultat (−3, 1, 1).",
+   "Le texte du bas écrit l'équation du plan : −3x + y + z = 0."
+  ],
+  "a_voir": "Les trois nombres du produit vectoriel deviennent les coefficients de l'équation."
+ },
+ {
+  "code": "58-130",
+  "a_dire": "Les flèches a et b vérifient l'équation −3x + y + z = 0 ; leurs combinaisons la vérifient donc aussi.",
+  "legende_titre": "Tester l'équation sur a et b",
+  "lecture": [
+   "La case bleue est a et la case orange à sa droite remplace x, y, z par ses cases : −3 × 1 + 2 + 1 = 0.",
+   "La case violette est b et la case orange à sa droite fait le même calcul : −3 × 0 + 1 + (−1) = 0.",
+   "La case verte du bas dit que toute combinaison de a et b donne aussi 0."
+  ],
+  "a_voir": "Deux vérifications suffisent pour tous les triplets de W."
+ },
+ {
+  "code": "58-131",
+  "a_dire": "Le plan −3x + y + z = 1 est parallèle au plan de W mais ne passe pas par l'origine : ce n'est pas un sous-espace.",
+  "legende_titre": "Un plan décalé",
+  "lecture": [
+   "Le plan bleu plein est le plan −3x + y + z = 0, qui passe par l'origine O.",
+   "Le contour rouge en pointillé est le plan −3x + y + z = 1, décalé vers le haut.",
+   "La flèche orange montre le décalage depuis O jusqu'au point rouge du plan décalé.",
+   "Le texte rouge dit que ce plan ne passe pas par O."
+  ],
+  "a_voir": "Le plan décalé ne contient pas O."
+ },
+ {
+  "code": "58-132",
+  "a_dire": "Le plan décalé a deux défauts : il ne contient pas l'origine, et la somme de deux de ses points en sort.",
+  "legende_titre": "Deux défauts du plan décalé",
+  "lecture": [
+   "La droite graduée donne la valeur de −3x + y + z ; le plan décalé est celui de la valeur 1.",
+   "Les deux cases vertes (0, 1, 0) et (0, 0, 1) valent 1 : elles sont dans le plan.",
+   "La case rouge de gauche, l’origine O, vaut 0 : c’est le défaut 1, elle n’est pas dans le plan.",
+   "La case rouge de droite, leur somme (0, 1, 1), vaut 2 : c’est le défaut 2, elle sort du plan."
+  ],
+  "a_voir": "Deux défauts : O vaut 0 et non 1 ; les deux points valent 1, leur somme vaut 2."
+ },
+ {
+  "code": "58-133",
+  "a_dire": "Un plan de l'espace est un sous-espace exactement quand il passe par l'origine.",
+  "legende_titre": "Passer ou non par l'origine",
+  "lecture": [
+   "À gauche, le plan vert passe par O ; il est un sous-espace.",
+   "À droite, le plan rouge en pointillé a le même aspect mais O est en dehors ; il n'est pas un sous-espace.",
+   "Sous chaque plan, l'équation dit la différence : 0 à droite du signe égal à gauche, 1 à droite."
+  ],
+  "a_voir": "La position par rapport à O décide."
+ },
+ {
+  "code": "58-134",
+  "a_dire": "Les polynômes sans terme de degré impair forment un sous-espace : la somme de deux d'entre eux n'a toujours pas de terme de degré impair.",
+  "legende_titre": "Polynômes sans degré impair",
+  "lecture": [
+   "Chaque ligne donne les coefficients des degrés 0 à 4 : la ligne bleue p = 1 + 3x² − x⁴, la ligne violette q = 2 − x².",
+   "La ligne verte p + q a les coefficients 3, 0, 2, 0 et −1.",
+   "Les deux colonnes orange, les degrés 1 et 3, valent 0 dans p, dans q et dans p + q."
+  ],
+  "a_voir": "Les colonnes orange restent à 0, même dans la somme."
+ },
+ {
+  "code": "58-135",
+  "a_dire": "Les polynômes de degré exactement 2 ne forment pas un sous-espace : leur somme peut être de degré 1, et le polynôme nul n'est pas de degré 2.",
+  "legende_titre": "Degré exactement 2",
+  "lecture": [
+   "La case bleue est x² + x et la case violette est −x² : toutes deux sont de degré 2.",
+   "Les flèches orange mènent à leur somme, la case rouge x, de degré 1.",
+   "Le texte orange dit que les termes en x² se compensent.",
+   "La case rouge en pointillé du bas, le polynôme nul, n'a pas non plus de degré 2."
+  ],
+  "a_voir": "La somme sort de la famille des polynômes de degré 2."
+ },
+ {
+  "code": "58-136",
+  "a_dire": "Une combinaison linéaire se calcule en multipliant chaque vecteur par son scalaire puis en additionnant ; elle généralise la somme et le multiple.",
+  "legende_titre": "Combiner (1, 2) et (0, 1)",
+  "lecture": [
+   "La flèche bleue est 2 fois (1, 2), soit (2, 4).",
+   "La flèche violette part de sa pointe : c'est 3 fois (0, 1), soit (0, 3).",
+   "La flèche verte part de O et arrive au même point : w = (2, 7).",
+   "Le quadrillage gris sert à lire les coordonnées."
+  ],
+  "a_voir": "Les deux pas bout à bout mènent au même point que w."
+ },
+ {
+  "code": "58-137",
+  "a_dire": "On multiplie chaque vecteur par son scalaire, puis on additionne les produits ; le nombre d'étapes vient du nombre de vecteurs.",
+  "legende_titre": "Deux temps : multiplier, additionner",
+  "lecture": [
+   "Les trois cases orange sont les trois produits à faire : 2 × (1, 2), 3 × (0, 1) et −1 × (3, 0).",
+   "Les cases bleues donnent chaque produit : (2, 4), (0, 3) et (−3, 0).",
+   "L'accolade réunit les trois produits.",
+   "La case verte donne la somme : (−1, 7)."
+  ],
+  "a_voir": "Trois produits, puis une somme."
+ },
+ {
+  "code": "58-138",
+  "a_dire": "Le sous-espace engendré par des vecteurs est l'ensemble de toutes leurs combinaisons ; pour (1, 2), c'est la droite de ses multiples.",
+  "legende_titre": "Tout ce que (1, 2) peut atteindre",
+  "lecture": [
+   "Les deux flèches grises sont les axes ; ils se croisent en O.",
+   "La flèche orange est le vecteur de départ (1, 2).",
+   "La droite bleue passe par O ; ses points (1, 2), (2, 4) et (3, 6) sont des multiples du vecteur.",
+   "Le texte bleu dit que la droite contient tous les multiples."
+  ],
+  "a_voir": "Les multiples de (1, 2) forment une droite par l'origine."
+ },
+ {
+  "code": "58-139",
+  "a_dire": "⟨v1, …, vn⟩ se lit « engendré par v un jusqu'à v n » : les chevrons entourent la liste, et le signe désigne l'ensemble de toutes les combinaisons.",
+  "legende_titre": "Lire le signe ⟨ ⟩",
+  "lecture": [
+   "Les deux cases grises portent les chevrons.",
+   "La case bleue du milieu est la liste des vecteurs de départ.",
+   "La petite case bleue du bas est l'écriture abrégée ⟨vi⟩.",
+   "La flèche verte mène à ce que le signe désigne : l'ensemble de toutes les combinaisons."
+  ],
+  "a_voir": "Le signe désigne un ensemble, pas une liste."
+ },
+ {
+  "code": "58-140",
+  "a_dire": "Une famille est génératrice de V quand ses combinaisons atteignent tout V ; (1, 0) et (0, 1) engendrent le plan, (1, 0) seul non.",
+  "legende_titre": "Atteindre tout le plan ou non",
+  "lecture": [
+   "À gauche, la flèche bleue va 5 fois (1, 0) vers la droite et la flèche violette monte 4 fois (0, 1) : elles atteignent le point vert (5, 4).",
+   "À droite, la ligne bleue épaisse est tout ce que (1, 0) atteint : l'axe horizontal.",
+   "Le point rouge (5, 4) est en dehors de cette ligne."
+  ],
+  "a_voir": "Avec (1, 0) seul, on reste sur l'axe horizontal."
+ },
+ {
+  "code": "58-141",
+  "a_dire": "La somme de deux combinaisons des mêmes vecteurs est une combinaison de ces vecteurs : les scalaires s'additionnent un à un.",
+  "legende_titre": "Additionner deux combinaisons",
+  "lecture": [
+   "La ligne bleue est la combinaison de scalaires 2 et 3, qui donne (2, 7).",
+   "La ligne violette est la combinaison de scalaires 1 et 5, qui donne (1, 7).",
+   "Le texte orange additionne les scalaires un à un : 2 + 1 = 3 et 3 + 5 = 8.",
+   "La ligne verte est la somme : scalaires 3 et 8, vecteur (3, 14)."
+  ],
+  "a_voir": "La somme garde la même forme : des scalaires devant (1, 2) et (0, 1)."
+ },
+ {
+  "code": "58-142",
+  "a_dire": "La somme de deux combinaisons se regroupe par vecteur en Σ(αi + βi)vi, et un multiple d'une combinaison reste une combinaison.",
+  "legende_titre": "Somme et multiple d'une combinaison",
+  "lecture": [
+   "En haut, les cases bleue u et violette u' sont les deux combinaisons de départ.",
+   "La grande case orange est l'étape décisive : on regroupe les termes qui ont le même vi.",
+   "La case verte donne l'arrivée : une combinaison dont les scalaires sont αi + βi.",
+   "En bas, le produit par 2 de u = (2, 7) donne (4, 14), de scalaires 4 et 6."
+  ],
+  "a_voir": "Regrouper par vi suffit pour retrouver une combinaison."
+ },
+ {
+  "code": "58-143",
+  "a_dire": "Les triplets de W s'écrivent avec a et b seulement : (a, b) est une famille génératrice de W.",
+  "legende_titre": "Écrire des triplets de W avec a et b",
+  "lecture": [
+   "La case bleue est a = (1, 2, 1) et la case violette est b = (0, 1, −1).",
+   "Chaque case orange est une combinaison de a et b : 2a + 3b, puis 1a + 1b.",
+   "Les flèches vertes mènent aux triplets de W obtenus : (2, 7, −1) et (1, 3, 0).",
+   "Le texte vert du bas écrit W = ⟨a, b⟩."
+  ],
+  "a_voir": "Chaque triplet de W vient d'une combinaison de a et b."
+ },
+ {
+  "code": "58-144",
+  "a_dire": "Un polynôme de degré au plus n est une combinaison de 1, x, x², …, xⁿ : ses coefficients sont les scalaires.",
+  "legende_titre": "Les coefficients comme scalaires",
+  "lecture": [
+   "Les trois cases bleues sont les polynômes de départ 1, x et x².",
+   "Au-dessus, les nombres orange 3, 4 et 5 sont les scalaires ; en dessous, ils sont nommés c0, c1 et c2.",
+   "L'accolade réunit les trois termes.",
+   "La case verte donne le polynôme obtenu : 3 + 4x + 5x²."
+  ],
+  "a_voir": "On lit les scalaires directement dans le polynôme."
+ },
+ {
+  "code": "58-145",
+  "a_dire": "Toute flèche de l'espace s'écrit avec i, j et k : ici 3 fois i, plus 2 fois j, plus 5 fois k.",
+  "legende_titre": "Une flèche de l'espace avec i, j, k",
+  "lecture": [
+   "La flèche bleue va de 3 unités vers la droite : 3 i.",
+   "La flèche violette va de 2 unités vers l'avant : 2 j.",
+   "La flèche orange monte de 5 unités : 5 k.",
+   "La flèche verte part de O et arrive au même point : 3i + 2j + 5k."
+  ],
+  "a_voir": "Trois pas, un par direction, mènent au bout de la flèche."
+ },
+ {
+  "code": "58-146",
+  "a_dire": "Une famille est liée quand une combinaison à scalaires non tous nuls donne le vecteur nul.",
+  "legende_titre": "Revenir au départ avec des scalaires non nuls",
+  "lecture": [
+   "La flèche bleue est −1 fois (3, 1) et part de O.",
+   "La flèche violette est 2 fois (1, 2) et part de la pointe de la précédente.",
+   "La flèche orange est −1 fois (−1, 3) et ramène au point de départ.",
+   "Le point vert est (0, 0) : la somme des trois pas est le vecteur nul."
+  ],
+  "a_voir": "Les trois pas reviennent à O, et aucun scalaire n'est nul."
+ },
+ {
+  "code": "58-147",
+  "a_dire": "La relation α1v1 + … + αnvn = 0 se calcule en trois temps : multiplier chaque vecteur, additionner case par case, comparer au vecteur nul.",
+  "legende_titre": "Vérifier la relation sur un cas",
+  "lecture": [
+   "Les cases orange du haut sont les produits à faire : −1 × (3, 1), 2 × (1, 2) et −1 × (−1, 3).",
+   "Les cases bleues donnent (−3, −1), (2, 4) et (1, −3).",
+   "Les deux lignes vertes additionnent case par case : −3 + 2 + 1 = 0 et −1 + 4 − 3 = 0.",
+   "La case verte du bas compare au vecteur nul : (0, 0) = 0."
+  ],
+  "a_voir": "La somme case par case est le vecteur nul."
+ },
+ {
+  "code": "58-148",
+  "a_dire": "Une famille libre est une famille qui n'est pas liée ; elle peut ne pas atteindre tout le plan, et une famille qui atteint tout le plan peut ne pas être libre.",
+  "legende_titre": "Libre et génératrice, deux questions",
+  "lecture": [
+   "Chaque case bleue est une famille de vecteurs du plan.",
+   "La première colonne dit si la famille est libre ; la seconde dit si elle atteint tout le plan.",
+   "Une case verte dit oui et une case rouge dit non.",
+   "Seule la dernière famille, (1, 0), (0, 1), a deux fois oui."
+  ],
+  "a_voir": "Libre et atteindre tout le plan sont deux propriétés séparées."
+ },
+ {
+  "code": "58-149",
+  "a_dire": "La combinaison triviale, où tous les scalaires valent 0, donne toujours le vecteur nul, quels que soient les vecteurs.",
+  "legende_titre": "Tous les scalaires à zéro",
+  "lecture": [
+   "La ligne du haut montre deux vecteurs bleus, (3, 1) et (1, 2).",
+   "La ligne du bas montre deux autres vecteurs violets, (5, 5) et (7, 1).",
+   "Dans les deux lignes, la flèche orange « 0 × » multiplie chaque vecteur par 0.",
+   "Les deux cases vertes donnent le même résultat : (0, 0)."
+  ],
+  "a_voir": "Le résultat est (0, 0) pour n'importe quels vecteurs."
+ },
+ {
+  "code": "58-150",
+  "a_dire": "Une famille est libre quand la seule combinaison qui donne le vecteur nul est la combinaison triviale.",
+  "legende_titre": "Le test des combinaisons nulles",
+  "lecture": [
+   "La ligne du haut teste (1, 0) et (0, 1) : seule la combinaison avec 0 et 0 donne (0, 0), donc la case verte dit libre.",
+   "La ligne du bas teste (1, 0) et (2, 0) : 2 × (1, 0) − 1 × (2, 0) donne aussi (0, 0).",
+   "Ces scalaires 2 et −1 ne sont pas nuls : la case rouge dit liée."
+  ],
+  "a_voir": "Une seule combinaison nulle non triviale suffit à rendre la famille liée."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 60, r'$f=x\,y^2+y-1$', 'encre', 'l')
+text(ax, 44, 52, r'$a_n=x$ : devant $y^2$', 'sujet', 'm')
+text(ax, 20, 43, r'$x=2$', 'fixe', 'm')
+text(ax, 68, 43, r'$x=0$', 'varie', 'm')
+box(ax, 2, 29, 36, 10, 'sujet', label=r'$2y^2+y-1$')
+box(ax, 50, 29, 36, 10, 'varie', label=r'$y-1$')
+arrow(ax, (39, 34), (49, 34), 'varie')
+text(ax, 20, 21, r'$a_n=2$ : degré 2', 'sujet', 's')
+text(ax, 68, 21, r'$a_n=0$ : degré 1', 'varie', 's')
+text(ax, 44, 8, r'$f$ perd un degré', 'varie', 'm')
+save(fig, '70-072')

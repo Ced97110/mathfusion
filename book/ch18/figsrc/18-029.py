@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,22,60,r'$6\times4+6\times7$','autre','m'); text(ax,66,60,r'$6\times(4+7)$','sujet','m')
+box(ax,2,38,18,10,'autre',label='6 × 4 = 24',size='s'); box(ax,24,38,18,10,'autre',label='6 × 7 = 42',size='s')
+box(ax,6,22,32,10,'resultat',label='24 + 42 = 66',size='s')
+arrow(ax,(11,38),(16,32.5),'autre'); arrow(ax,(33,38),(28,32.5),'autre')
+box(ax,50,38,32,10,'sujet',label='4 + 7 = 11',size='s'); box(ax,50,22,32,10,'resultat',label='6 × 11 = 66',size='s')
+arrow(ax,(66,38),(66,32.5),'sujet')
+text(ax,22,14,'3 calculs','autre','s'); text(ax,66,14,'2 calculs','sujet','s')
+for x in (16,22,28): disc(ax,x,6.5,2,'autre')
+for x in (63,69): disc(ax,x,6.5,2,'sujet')
+save(fig,'18-029')

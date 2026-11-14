@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 3, 56, 34, 11, 'fixe', label='3 × 11 = 33')
+arrow(ax, (37, 61.5), (47, 61.5), 'varie')
+box(ax, 47, 56, 38, 11, 'sujet', label='33 × 17 = 561')
+text(ax, 44, 48, 'on garde le reste par 561', 'encre', 's')
+box(ax, 3, 30, 82, 11, 'resultat', label=r'$2^{560}\equiv 1\ (\mathrm{mod}\ 561)$')
+box(ax, 3, 14, 82, 11, 'resultat', label=r'$5^{560}\equiv 1\ (\mathrm{mod}\ 561)$')
+text(ax, 44, 7, 'seulement les bases 2 et 5', 'fixe', 's')
+save(fig, '53-185')

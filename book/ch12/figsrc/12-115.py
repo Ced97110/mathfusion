@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+f = numberline(ax, 6, 74, 62, -15, 3, step=3)
+disc(ax, f(-12), 62, 2.0, 'sujet')
+text(ax, f(-12), 70, r'$-12$', 'sujet', 'l')
+text(ax, f(-12) + 24, 74, 'à gauche de 0', 'fixe', 's')
+box(ax, 8, 40, 72, 9, 'resultat', label='sur un trait : relatif, rationnel, réel', size='s')
+line(ax, [(4, 33), (84, 33)], 'fixe', dash=True)
+text(ax, 38, 24, '86,', 'sujet', 'xl', ha='right')
+text(ax, 38, 24, '3333…', 'varie', 'xl', ha='left')
+brace(ax, 38, 54, 19, 'varie', label='le bloc 3 se répète')
+box(ax, 8, 2, 72, 9, 'resultat', label='décimale à bloc : rationnel, réel', size='s')
+save(fig, '12-115')

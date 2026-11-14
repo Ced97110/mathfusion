@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+def nd(x, y, n, role, w=12, h=7): box(ax, x - w/2, y - h/2, w, h, role, label=n)
+line(ax, [(24,50),(38,62)]); line(ax, [(64,50),(50,62)])
+nd(44,66,'60','varie'); nd(24,46,'12','sujet'); nd(64,46,'20','autre')
+text(ax, 54, 73, 'PPCM(12, 20)', 'varie', 's', ha='left')
+text(ax, 44, 36, 'puis PGCD avec 12', 'varie', 's')
+nd(18,18,'60','varie'); nd(44,18,'12','sujet'); nd(70,18,'12','resultat')
+arrow(ax, (25,18), (37,18), 'varie'); arrow(ax, (51,18), (63,18), 'varie')
+text(ax, 70, 8, 'on retrouve 12', 'resultat', 's')
+save(fig, '79-082')

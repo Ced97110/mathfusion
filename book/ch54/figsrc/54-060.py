@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 65, 'ℤ', 'sujet', 'l')
+text(ax, 66, 65, 'ℤ/2', 'autre', 'l')
+ys = [50, 36, 22]
+box(ax, 15, ys[0] - 4.5, 14, 9, 'sujet', label='1')
+box(ax, 15, ys[1] - 4.5, 14, 9, 'sujet', label='2')
+box(ax, 15, ys[2] - 4.5, 14, 9, 'varie', label='1/2')
+box(ax, 59, ys[0] - 4.5, 14, 9, 'autre', label='1')
+box(ax, 59, ys[1] - 4.5, 14, 9, 'autre', label='0')
+box(ax, 59, ys[2] - 4.5, 14, 9, 'limite', label='?')
+arrow(ax, (31, ys[0]), (57, ys[0]), 'sujet')
+arrow(ax, (31, ys[1]), (57, ys[1]), 'sujet')
+arrow(ax, (31, ys[2]), (57, ys[2]), 'limite')
+text(ax, 44, ys[1] + 3.2, 'reste mod 2', 'fixe', 's')
+text(ax, 44, ys[2] + 3.2, '1 × inverse de 0', 'limite', 's')
+text(ax, 44, 8, 'inverse de 0 : n’existe pas', 'limite', 's')
+save(fig, '54-060')

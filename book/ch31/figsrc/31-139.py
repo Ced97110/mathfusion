@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def lbox(ax, x, y, w, h, role, label=None, **k): return box(ax, x, y, w, h, role, label=label, **k)
+fig, ax = canvas(64)
+lbox(ax, 18, 50, 52, 11, 'encre', r'$\sin x\,(1-\sin x)=0$', size='m')
+arrow(ax, (36, 49), (24, 41), 'varie'); arrow(ax, (52, 49), (64, 41), 'varie')
+lbox(ax, 6, 30, 30, 10, 'sujet', r'$\sin x=0$'); lbox(ax, 50, 30, 32, 10, 'autre', r'$\sin x=1$')
+f = numberline(ax, 10, 78, 12, 0, 360, 90, arrow_right=False)
+text(ax, 44, 2.5, 'angle en degrés', 'fixe', 's')
+for v in (0, 180, 360): disc(ax, f(v), 18, 1.8, 'sujet')
+disc(ax, f(90), 18, 1.8, 'autre'); text(ax, 44, 24, '4 angles', 'resultat', 's')
+save(fig, '31-139')

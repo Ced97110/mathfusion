@@ -1,0 +1,26 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+u = 14; ox, oy = 9, 12
+P = lambda x, y: (ox + x * u, oy + y * u)
+arrow(ax, (ox - 4, oy), (ox + 3 * u + 5, oy), 'fixe', lw=0.7)
+arrow(ax, (ox, oy - 4), (ox, oy + 2 * u + 6), 'fixe', lw=0.7)
+poly(ax, [P(0, 0), P(2, 0), P(2, 1), P(0, 1)], 'varie')
+poly(ax, [P(0, 0), P(1, 0), P(1, 1), P(0, 1)], 'sujet')
+for x in range(4):
+    for y in range(3):
+        role = 'sujet' if (x, y) in [(0, 0), (1, 0), (0, 1), (1, 1)] else ('varie' if (x, y) in [(2, 0), (2, 1)] else 'fixe')
+        disc(ax, *P(x, y), 1.5, role)
+for x in (1, 2, 3): text(ax, P(x, 0)[0], oy - 4.2, str(x), 'fixe', 's')
+text(ax, ox - 3.8, P(0, 1)[1], r'$\sqrt{2}$', 'fixe', 's'); text(ax, ox - 4.5, P(0, 2)[1], r'$2\sqrt{2}$', 'fixe', 's')
+arrow(ax, (P(1, 1)[0] + 2, P(1, 1)[1]), (P(2, 1)[0] - 2, P(2, 1)[1]), 'varie')
+arrow(ax, (P(1, 0)[0] - 1.5, P(1, 0)[1] + 1.3), (P(0, 1)[0] + 1.5, P(0, 1)[1] - 1.8), 'varie')
+arrow(ax, (P(0, 1)[0] + 2, P(0, 1)[1] - 1.2), (P(2, 0)[0] - 2, P(2, 0)[1] + 1.2), 'varie')
+text(ax, P(1, 1)[0], P(1, 1)[1] + 4, r'$1+\sqrt{2}$', 'sujet', 's')
+text(ax, P(2, 1)[0] + 1, P(2, 1)[1] + 4, r'$2+\sqrt{2}$', 'varie', 's')
+text(ax, P(1.5, 1)[0], P(1.5, 1)[1] - 4.2, r'$\times\sqrt{2}$', 'varie', 's')
+box(ax, 61, 46, 4, 4, 'sujet'); text(ax, 67, 48, 'carré unité', 'sujet', 's', ha='left')
+box(ax, 61, 38, 4, 4, 'varie'); text(ax, 67, 40, 'rectangle', 'varie', 's', ha='left')
+text(ax, 61, 33, r'aire $2=|N(\sqrt{2})|$', 'varie', 's', ha='left')
+disc(ax, 63, 25.5, 1.5, 'fixe'); text(ax, 67, 25.5, 'points', 'fixe', 's', ha='left')
+text(ax, 61, 21, r'$x+y\sqrt{2}$', 'fixe', 's', ha='left')
+save(fig, '77-081')

@@ -1,0 +1,253 @@
+[
+ {
+  "code": "54-262",
+  "a_dire": "Deux restes non nuls dont le produit est nul montrent que le quotient par x⁴+4 n'est pas un corps.",
+  "legende_titre": "Deux restes non nuls, un produit nul",
+  "lecture": [
+   "Le rectangle bleu est le reste g = x² − 2x + 2, le rectangle violet est le reste h = x² + 2x + 2.",
+   "Chacun est non nul, car son degré est 2.",
+   "Le rectangle vert montre que leur produit g × h vaut x⁴ + 4, dont la classe est 0.",
+   "Le rectangle rouge donne la conséquence : deux non nuls de produit nul."
+  ],
+  "a_voir": "Le produit de deux éléments non nuls vaut 0, donc ce quotient n'est pas un corps."
+ },
+ {
+  "code": "54-263",
+  "a_dire": "Dans ℤ/8 les quatre éléments inversibles ont tous un carré égal à 1, donc aucun n'engendre le groupe : sans corps, le théorème tombe.",
+  "legende_titre": "Les inversibles de ℤ/8",
+  "lecture": [
+   "Les quatre disques bleus sont les éléments inversibles 1, 3, 5 et 7.",
+   "Chaque flèche orange mène à son carré : 1, 9 soit 1, 25 soit 1, 49 soit 1.",
+   "Le rectangle vert dit que tous ces carrés valent 1.",
+   "Le rectangle rouge dit qu'aucun élément n'engendre les quatre."
+  ],
+  "a_voir": "Chaque élément revient à 1 après deux produits : le groupe n'est pas cyclique."
+ },
+ {
+  "code": "54-264",
+  "a_dire": "L'exposant est le plus petit e tel que a^e = 1 pour tous les éléments à la fois.",
+  "legende_titre": "Le plus petit e qui convient à tous",
+  "lecture": [
+   "La ligne du haut donne les éléments 1, 2 et 4 du groupe dans ℤ/7.",
+   "Chaque rangée donne les valeurs de a^e pour un e : 1, 2, 3.",
+   "Les cases vertes valent 1, les cases rouges ne valent pas 1.",
+   "Seule la rangée e = 3 est entièrement verte."
+  ],
+  "a_voir": "Pour e = 1 et e = 2 une case échoue ; pour e = 3 les trois réussissent."
+ },
+ {
+  "code": "54-265",
+  "a_dire": "Tous les éléments de G sont racines de x^e − 1, qui a au plus e racines : |G| ≤ e, et comme e ≤ |G|, on a e = |G|.",
+  "legende_titre": "Compter les racines pour trouver e",
+  "lecture": [
+   "Les six disques bleus sont les éléments non nuls de ℤ/7 : le groupe G, d'ordre 6.",
+   "Chaque flèche orange dit que l'élément est racine de x⁶ − 1.",
+   "Le rectangle orange rappelle qu'un tel polynôme a au plus 6 racines.",
+   "Le rectangle vert enchaîne les deux inégalités et conclut e = |G|."
+  ],
+  "a_voir": "Six éléments sont racines d'un polynôme qui a au plus 6 racines : tout est plein."
+ },
+ {
+  "code": "54-266",
+  "a_dire": "Les éléments non nuls de ℤ/p forment un groupe pour la multiplication quand p est premier ; pour 8, le produit 2 × 4 sort de la liste.",
+  "legende_titre": "Ce qui manque quand p n'est pas premier",
+  "lecture": [
+   "Les disques 1 à 7 sont les éléments non nuls de ℤ/8 ; le disque en pointillé à gauche est 0.",
+   "Le disque bleu est 2 et le disque violet est 4.",
+   "Le rectangle rouge montre leur produit : 8, soit 0.",
+   "La flèche rouge ramène ce produit vers 0, qui n'est pas dans la liste."
+  ],
+  "a_voir": "Le produit de deux éléments non nuls tombe sur 0 : la liste n'est pas stable."
+ },
+ {
+  "code": "54-267",
+  "a_dire": "Les puissances de 3 dans ℤ/7 donnent 3, 2, 6, 4, 5, 1 : les six éléments non nuls, chacun une fois ; on dit que 3 engendre le groupe.",
+  "legende_titre": "Les puissances de 3 modulo 7",
+  "lecture": [
+   "Les six disques verts sont les valeurs des puissances de 3 : 3, 2, 6, 4, 5, 1.",
+   "Le petit texte orange près de chaque disque donne la puissance : 3¹ à 3⁶.",
+   "Les flèches orange suivent l'ordre des puissances et reviennent au début."
+  ],
+  "a_voir": "Les six puissances donnent six éléments différents : tous les non nuls apparaissent."
+ },
+ {
+  "code": "54-268",
+  "a_dire": "Dans les quaternions, les huit éléments ±1, ±i, ±j, ±k forment un groupe non cyclique et x²+1 a plus de deux racines : sans commutativité, les deux théorèmes tombent.",
+  "legende_titre": "Les huit éléments des quaternions",
+  "lecture": [
+   "Les deux disques gris sont 1 et −1 : leur carré vaut 1.",
+   "Les six disques bleus sont ±i, ±j et ±k : leur carré vaut −1.",
+   "Le premier rectangle rouge dit qu'aucun élément n'engendre les huit.",
+   "Le second rectangle rouge dit que x² + 1 a six racines, pas seulement deux."
+  ],
+  "a_voir": "Aucun carré ne dépasse deux valeurs, donc aucun élément n'a huit puissances différentes."
+ },
+ {
+  "code": "54-269",
+  "a_dire": "Le corps des fractions est la première brique d'une suite de corps construits chacun sur le précédent.",
+  "legende_titre": "Une suite de corps",
+  "lecture": [
+   "Le rectangle gris à gauche est ℤ, le point de départ.",
+   "Le rectangle bleu est ℚ, obtenu par les fractions : c'est la première brique.",
+   "Le rectangle violet est ℚ[√2], dont les éléments sont a + b√2 : la deuxième brique.",
+   "Les flèches orange vont d'une brique à la suivante."
+  ],
+  "a_voir": "Chaque corps est construit sur le précédent, et ℚ vient en premier."
+ },
+ {
+  "code": "54-270",
+  "a_dire": "Un polynôme de F[x] s'écrit comme produit d'irréductibles d'une seule manière, à l'ordre et aux constantes près.",
+  "legende_titre": "Deux listes, les mêmes facteurs",
+  "lecture": [
+   "La rangée du haut donne les facteurs de x⁴ − 1 : x − 1, x + 1 et x² + 1.",
+   "La rangée du bas donne une autre liste : dans un autre ordre, avec des constantes.",
+   "Chaque trait vert relie un facteur du haut à son pareil du bas.",
+   "Le rectangle vert dit que les deux listes sont les mêmes à l'ordre et aux constantes près."
+  ],
+  "a_voir": "Chaque facteur du haut a exactement un pareil dans la liste du bas."
+ },
+ {
+  "code": "54-271",
+  "a_dire": "Un polynôme est une suite de coefficients ; sur un corps fini, deux suites différentes peuvent donner les mêmes valeurs.",
+  "legende_titre": "Même fonction, polynômes différents",
+  "lecture": [
+   "La rangée bleue est le polynôme x² − x, avec ses coefficients 0, −1, 1.",
+   "La rangée violette est le polynôme nul, avec les coefficients 0, 0, 0.",
+   "Les deux suites de coefficients sont différentes.",
+   "Les cases vertes à droite donnent les valeurs en 0 et en 1 : 0 pour les deux polynômes."
+  ],
+  "a_voir": "Les coefficients diffèrent, mais les valeurs sont identiques dans ℤ/2."
+ },
+ {
+  "code": "54-272",
+  "a_dire": "Dans ℤ/p, le polynôme x^p − x vaut 0 en tous les éléments, sans être le polynôme nul ; ici pour p = 3.",
+  "legende_titre": "Un polynôme qui s'annule partout",
+  "lecture": [
+   "Les trois valeurs orange sont les éléments de ℤ/3 : 0, 1 et 2.",
+   "Sous chacune, le calcul de x³ − x : 0 − 0, 1 − 1, puis 8 − 2 = 6, soit 0.",
+   "Les trois cases vertes valent toutes 0.",
+   "L'accolade verte compte trois racines pour un polynôme de degré 3."
+  ],
+  "a_voir": "Les trois éléments de ℤ/3 sont tous racines de x³ − x."
+ },
+ {
+  "code": "54-273",
+  "a_dire": "Quand un polynôme irréductible n'a pas de racine, on fabrique un corps F[x]/(g) où la classe de x en est une.",
+  "legende_titre": "Fabriquer la racine qui manque",
+  "lecture": [
+   "La courbe bleue est x² + 1 sur les réels : elle ne touche pas l'axe gris.",
+   "Le texte rouge dit qu'il n'y a aucune racine réelle.",
+   "La flèche orange mène au corps ℝ[x]/(x² + 1), dans le rectangle bleu.",
+   "Le rectangle vert montre que la classe [x] y a pour carré −1 : elle est racine."
+  ],
+  "a_voir": "Ce qui manque sur l'axe réel existe dans le nouveau corps."
+ },
+ {
+  "code": "54-274",
+  "a_dire": "Le corps de rupture F[x]/(g) est le corps qui contient F et où le polynôme g, sans racine dans F, en a une.",
+  "legende_titre": "Le corps où x² − 2 a une racine",
+  "lecture": [
+   "Le rectangle rouge du haut dit que x² − 2 n'a pas de racine dans ℚ.",
+   "Le grand rectangle bleu est le corps de rupture ℚ[x]/(x² − 2).",
+   "Le rectangle gris dedans est ℚ : les fractions sont contenues dans ce corps.",
+   "Le disque orange est la classe [x], dont le carré vaut 2 : c'est la racine."
+  ],
+  "a_voir": "Le grand corps contient ℚ et une racine de x² − 2."
+ },
+ {
+  "code": "54-275",
+  "a_dire": "Le corps de décomposition s'obtient en répétant la construction du corps de rupture, jusqu'à ce que le polynôme se casse en facteurs de degré 1.",
+  "legende_titre": "De ℝ au corps de décomposition",
+  "lecture": [
+   "La première rangée est le corps de départ ℝ, où x² + 1 n'a aucune racine.",
+   "La deuxième rangée est le corps de rupture, qui contient une racine, [x].",
+   "La troisième rangée est le corps de décomposition, où x² + 1 se casse en (x − [x])(x + [x]).",
+   "Les flèches orange verticales sont les étapes de la construction."
+  ],
+  "a_voir": "On ajoute des racines, étape après étape, jusqu'à ce que tout se casse."
+ },
+ {
+  "code": "54-276",
+  "a_dire": "Dans un corps à q éléments, les q − 1 éléments non nuls forment un groupe cyclique d'ordre q − 1.",
+  "legende_titre": "Les non nuls d'un corps à q éléments",
+  "lecture": [
+   "Les sept disques sont les éléments de ℤ/7 ; le disque en pointillé est 0, mis à part.",
+   "Les six disques bleus sont les éléments non nuls, comptés par l'accolade : q − 1 = 6.",
+   "La flèche verte mène au groupe qu'ils forment.",
+   "Le rectangle vert dit que ce groupe est cyclique d'ordre 6."
+  ],
+  "a_voir": "Sept éléments moins 0 donnent six non nuls, et leur groupe est cyclique."
+ },
+ {
+  "code": "54-277",
+  "a_dire": "Un polynôme s'applique à un vecteur en remplaçant x par la transformation T ; ainsi x² + 1 annule le quart de tour.",
+  "legende_titre": "Un polynôme qui annule une transformation",
+  "lecture": [
+   "La flèche bleue est le vecteur v.",
+   "La première flèche orange est T(v), le quart de tour de v.",
+   "La flèche orange vers la gauche est T(T(v)) : l'opposé de v.",
+   "Le rectangle vert écrit T(T(v)) + v = 0, ce qui montre que x² + 1 annule T."
+  ],
+  "a_voir": "Deux quarts de tour donnent l'opposé de v ; en ajoutant v, on trouve 0."
+ },
+ {
+  "code": "54-278",
+  "a_dire": "Un corps de départ et un polynôme irréductible donnent, par le quotient, un nouveau corps : c'est une recette pour fabriquer des corps.",
+  "legende_titre": "La recette pour fabriquer un corps",
+  "lecture": [
+   "La colonne bleue donne le corps de départ : ℝ, puis ℤ/3.",
+   "La colonne orange donne le polynôme irréductible : x² + 1, puis x³ + x² + 2.",
+   "La colonne verte donne le corps obtenu : ℂ, puis un corps à 27 éléments.",
+   "Chaque flèche verte est le passage au quotient."
+  ],
+  "a_voir": "Chaque rangée suit la même recette : corps, polynôme, nouveau corps."
+ },
+ {
+  "code": "54-279",
+  "a_dire": "Un critère d'irréductibilité, comme l'absence de racine en degré 3, sert aussi à répondre à une question de construction à la règle et au compas.",
+  "legende_titre": "Un critère qui sert à la géométrie",
+  "lecture": [
+   "Les six cases grises donnent les valeurs de x³ − 2x² + 4 en 1, −1, 2, −2, 4 et −4.",
+   "Aucune ne vaut 0 : le polynôme n'a pas de racine rationnelle.",
+   "Le rectangle vert en tire la conclusion : il est irréductible, de degré 3.",
+   "La flèche orange mène au rectangle du bas : ce critère est un outil du chapitre 61 pour la construction à la règle et au compas."
+  ],
+  "a_voir": "Six valeurs non nulles suffisent pour conclure à l'irréductibilité, et ce résultat sert ensuite à une question de construction."
+ },
+ {
+  "code": "54-280",
+  "a_dire": "Un mot de n bits se lit comme les coefficients d'un polynôme de degré inférieur à n, donc comme un reste dans le quotient.",
+  "legende_titre": "Un mot binaire vu comme polynôme",
+  "lecture": [
+   "Les quatre rectangles bleus sont les bits du mot : 1, 0, 1, 1.",
+   "Sous chacun, son rang, de 0 à 3.",
+   "Les rectangles du milieu donnent le terme de chaque rang : 1, 0·x, x², x³.",
+   "Le rectangle vert donne le polynôme : 1 + x² + x³."
+  ],
+  "a_voir": "Chaque bit devient le coefficient d'une puissance de x."
+ },
+ {
+  "code": "54-281",
+  "a_dire": "Une application qui part des générateurs se prolonge d'une seule manière : on choisit où va x, le reste est imposé.",
+  "legende_titre": "Choisir x, le reste suit",
+  "lecture": [
+   "La première rangée grise dit que les fractions restent inchangées.",
+   "La rangée orange montre le seul choix libre : x va sur √2.",
+   "Les rangées vertes montrent ce qui est imposé : x² va sur 2 et x³ va sur 2√2.",
+   "Chaque flèche relie un polynôme bleu à son image."
+  ],
+  "a_voir": "Un seul choix, celui de x, détermine toutes les autres images."
+ },
+ {
+  "code": "54-282",
+  "a_dire": "Le corps des fractions de ℤ[x] est le même que celui de ℚ[x] : on efface les fractions des coefficients en multipliant en haut et en bas.",
+  "legende_titre": "Deux anneaux, une seule écriture",
+  "lecture": [
+   "Le rectangle violet est un quotient dont le haut et le bas ont des coefficients fractions : un demi de x, divisé par un tiers.",
+   "La flèche orange multiplie en haut et en bas par 6.",
+   "Le rectangle bleu est le résultat, 3x sur 2 : le haut et le bas ont des coefficients entiers.",
+   "Les deux flèches vertes mènent au même corps de fractions."
+  ],
+  "a_voir": "La même fraction s'écrit avec le haut et le bas à coefficients fractions, ou à coefficients entiers."
+ }
+]

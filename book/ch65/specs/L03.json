@@ -1,0 +1,384 @@
+[
+ {
+  "code": "65-065",
+  "a_dire": "Quand le discriminant est un carré dans le corps de base, les racines sont déjà dans ce corps et le groupe ne contient que l'identité.",
+  "legende_titre": "Un discriminant carré : rien à échanger",
+  "lecture": [
+   "Le cadre bleu en haut est le polynôme x² − 4.",
+   "Le texte vert donne d = 16 = 4², un carré.",
+   "Les deux disques verts sur la droite graduée sont les racines −2 et 2, déjà dans ℚ.",
+   "La flèche mène au cadre gris du bas : il n'y a rien à échanger, le groupe est {1}."
+  ],
+  "a_voir": "Les deux racines sont des points de la droite des rationnels, donc le groupe est réduit à l'identité."
+ },
+ {
+  "code": "65-066",
+  "a_dire": "Pour un polynôme réductible de degré 3, le groupe est celui du facteur de degré 2, car la racine rationnelle ne bouge pas.",
+  "legende_titre": "Une racine reste en place, deux s'échangent",
+  "lecture": [
+   "Le cadre bleu est le polynôme (x − 1)(x² − 2).",
+   "Le disque gris est la racine 1 : elle est rationnelle et ne bouge pas.",
+   "Les deux disques orange sont −√2 et √2 : la flèche orange double les échange.",
+   "Le cadre vert dit que le groupe de g a 2 éléments."
+  ],
+  "a_voir": "Seules les deux racines du facteur de degré 2 s'échangent."
+ },
+ {
+  "code": "65-067",
+  "a_dire": "Un sous-groupe transitif de S3 a un ordre multiple de 3, parce que l'orbite d'un point a 3 éléments et que sa taille divise l'ordre.",
+  "legende_titre": "Seuls les groupes d'ordre 3 ou 6 sont transitifs",
+  "lecture": [
+   "Quatre colonnes donnent les ordres 1, 2, 3 et 6 ; chaque colonne montre trois points bleus.",
+   "Les colonnes grises (ordres 1 et 2) ne sont pas transitives : un point reste hors des flèches.",
+   "Les colonnes vertes (ordres 3 et 6) sont transitives : les flèches orange relient les trois points.",
+   "Le cadre vert du bas dit que 3 divise l'ordre."
+  ],
+  "a_voir": "Le troisième point n'est atteint que dans les colonnes d'ordre 3 et 6."
+ },
+ {
+  "code": "65-068",
+  "a_dire": "Pour un polynôme irréductible de degré 3 dont le discriminant est un carré, l'ordre du groupe est 3 ou 6 et il est dans A3 : c'est A3.",
+  "legende_titre": "Entre 3 ou 6 et au plus 3 : il reste 3",
+  "lecture": [
+   "Le texte vert donne d = 81 = 9² ; le texte gris dit que l'ordre est 3 ou 6.",
+   "Les six cases sont les 6 permutations de S3 ; les trois cases vertes forment A3.",
+   "L'accolade verte du haut marque A3 : 3 éléments ; l'accolade grise du bas marque S3 : 6 éléments.",
+   "Le cadre vert du bas donne G_f = A3."
+  ],
+  "a_voir": "Le groupe doit tenir dans les 3 cases vertes, donc il a 3 éléments."
+ },
+ {
+  "code": "65-069",
+  "a_dire": "La règle « d non carré donne S3 » demande que le polynôme soit irréductible : le polynôme (x − 1)(x² − 2) a d = 8 mais un groupe de 2 éléments.",
+  "legende_titre": "Sans l'irréductibilité, la règle échoue",
+  "lecture": [
+   "Le cadre bleu est le polynôme (x − 1)(x² − 2) ; le texte gris donne d = 8, pas un carré dans ℚ.",
+   "Les deux cases bleues, 1 et (23), forment le groupe de f : 2 éléments.",
+   "L'accolade rouge sous les six cases marque S3 à 6 éléments : faux ici.",
+   "Le cadre orange dit que x − 1 est un facteur, donc f est réductible."
+  ],
+  "a_voir": "Le groupe a 2 éléments et non 6, parce que le polynôme est réductible."
+ },
+ {
+  "code": "65-070",
+  "a_dire": "Pour x³ − 3x + 1, le discriminant 81 est un carré et le polynôme n'a pas de racine rationnelle, donc le groupe est A3.",
+  "legende_titre": "Du polynôme au groupe, en cinq lignes",
+  "lecture": [
+   "Le cadre bleu du haut est le polynôme x³ − 3x + 1.",
+   "Le cadre vert suivant donne d = 108 − 27 = 81 = 9².",
+   "Les deux cadres gris testent les racines possibles 1 et −1 : f(1) = −1 et f(−1) = 3.",
+   "Le cadre vert du bas donne G_f = A3."
+  ],
+  "a_voir": "Chaque flèche orange mène d'un calcul au suivant jusqu'à A3."
+ },
+ {
+  "code": "65-071",
+  "a_dire": "Pour x³ − 2, le discriminant −108 est négatif, donc il n'est le carré d'aucun nombre réel : le groupe est S3.",
+  "legende_titre": "Un discriminant négatif n'est jamais un carré",
+  "lecture": [
+   "Le cadre bleu est le polynôme x³ − 2 ; le texte orange donne d = −27 × 4 = −108.",
+   "Sur la droite graduée, la bande verte à droite de 0 contient les carrés, toujours positifs ou nuls.",
+   "Le disque orange marque d = −108, à gauche de 0, hors de la bande.",
+   "Le cadre vert du bas conclut S3."
+  ],
+  "a_voir": "Le point d est du côté gauche, où il n'y a aucun carré."
+ },
+ {
+  "code": "65-072",
+  "a_dire": "Le signe de d est lié au nombre de racines réelles, en plus de la question de savoir si d est un carré.",
+  "legende_titre": "Deux polynômes, deux signes, deux nombres de racines",
+  "lecture": [
+   "À gauche, le cadre bleu est x³ − 3x + 1 avec d = 81 > 0 ; trois disques bleus sont sur l'axe horizontal, celui des nombres réels.",
+   "À droite, le cadre bleu est x³ − 2 avec d = −108 < 0 ; un seul disque est sur l'axe, les deux autres sont hors de l'axe.",
+   "Les légendes vertes et orange donnent 3 racines réelles et 1 racine réelle."
+  ],
+  "a_voir": "d positif va avec trois racines sur l'axe, d négatif avec une seule."
+ },
+ {
+  "code": "65-073",
+  "a_dire": "Les deux courbes ont la même forme ; la bleue a son creux sous l'axe et coupe l'axe trois fois, la violette a son creux au-dessus et le coupe une fois.",
+  "legende_titre": "Deux cubiques décalées d'une même forme",
+  "lecture": [
+   "La courbe bleue est x³ − 3x + 1, avec d = 81 > 0.",
+   "La courbe violette est x³ − 3x + 3, avec d = −135 < 0.",
+   "Les petits disques donnent les hauteurs 3 et −1 pour la bleue, 5 et 1 pour la violette, en −1 et en 1.",
+   "Les disques verts sur l'axe sont les racines réelles : trois pour la bleue, une pour la violette."
+  ],
+  "a_voir": "Le creux de la courbe est sous l'axe pour la bleue et au-dessus pour la violette."
+ },
+ {
+  "code": "65-074",
+  "a_dire": "Pour x³ − 3x + 3, le discriminant vaut −135, négatif, et la courbe ne coupe l'axe qu'une fois, entre −3 et −2.",
+  "legende_titre": "Une seule traversée de l'axe",
+  "lecture": [
+   "Le cadre gris du haut donne d = 108 − 27 × 9 = −135.",
+   "La courbe violette passe par les points de hauteur −15, 1, 3 et 5 pour les abscisses −3, −2, 0 et 2.",
+   "Le disque vert sur l'axe est la seule racine réelle, entre −3 et −2.",
+   "Le texte vert dit une seule racine réelle."
+  ],
+  "a_voir": "La hauteur passe de −15 à 1 entre −3 et −2 : c'est là que la courbe coupe l'axe."
+ },
+ {
+  "code": "65-075",
+  "a_dire": "Pour une cubique à coefficients réels, d > 0 donne trois racines réelles et d < 0 une seule ; avec un coefficient non réel, la règle est fausse.",
+  "legende_titre": "La règle sur le signe et sa condition",
+  "lecture": [
+   "La colonne de gauche, en vert, a des coefficients réels : d > 0 pour trois racines réelles, d < 0 pour une.",
+   "Les exemples sont x³ − 3x + 1 avec d = 81 et x³ − 3x + 3 avec d = −135.",
+   "La colonne de droite, en rouge, a un coefficient i non réel : x³ − i a d = 27 > 0.",
+   "Le cadre rouge dit qu'il n'a aucune racine réelle : la règle est fausse ici."
+  ],
+  "a_voir": "Le pointillé sépare les cas où la règle marche de celui où elle échoue."
+ },
+ {
+  "code": "65-076",
+  "a_dire": "Avec une racine réelle et deux conjuguées, la différence des deux conjuguées est un imaginaire pur dont le carré est négatif, donc d est négatif.",
+  "legende_titre": "Les conjuguées rendent d négatif",
+  "lecture": [
+   "Les trois disques bleus sont les racines r1 = 1, r2 = i et r3 = −i du polynôme (x − 1)(x² + 1).",
+   "La flèche orange double relie r2 et r3, les deux conjuguées : r2 − r3 = 2i.",
+   "Le cadre orange donne (r2 − r3)² = −4 ; le cadre bleu donne un produit positif, 2.",
+   "Le cadre vert donne d = 2² × (−4) = −16."
+  ],
+  "a_voir": "L'étape qui fixe le signe est le carré négatif de r2 − r3."
+ },
+ {
+  "code": "65-077",
+  "a_dire": "Les groupes transitifs de S4 ont un ordre multiple de 4 qui divise 24 ; on en compte cinq : S4, A4, D, V et C.",
+  "legende_titre": "Cinq groupes, des ordres 24, 12, 8, 4 et 4",
+  "lecture": [
+   "Chaque barre est un groupe, dont la longueur est son nombre d'éléments.",
+   "Les barres bleues sont S4 (24), A4 (12) et D (8).",
+   "Les barres violettes sont V et C, qui ont chacun 4 éléments.",
+   "Le texte du haut rappelle la règle : un multiple de 4 qui divise 24."
+  ],
+  "a_voir": "Deux groupes différents, V et C, ont la même longueur de barre : 4 éléments."
+ },
+ {
+  "code": "65-078",
+  "a_dire": "Le signe V désigne l'identité et les trois doubles échanges (12)(34), (13)(24), (14)(23) de quatre objets.",
+  "legende_titre": "Un nom pour quatre permutations",
+  "lecture": [
+   "Quatre petits carrés montrent les objets 1, 2, 3, 4 dans chaque permutation de V.",
+   "Le premier ne change rien (1) ; dans les trois autres, deux flèches orange doubles échangent deux paires d'objets.",
+   "Les légendes sont 1, (12)(34), (13)(24) et (14)(23).",
+   "Le texte gris du bas dit que, dans ces trois-là, aucun objet n'est immobile."
+  ],
+  "a_voir": "Chaque double échange déplace les quatre objets."
+ },
+ {
+  "code": "65-079",
+  "a_dire": "Le signe C désigne les quatre puissances d'un cycle (1234) : tout le groupe vient d'un seul élément.",
+  "legende_titre": "Un cycle répété donne quatre éléments",
+  "lecture": [
+   "Les quatre ronds montrent les objets 1, 2, 3, 4 ; le cycle (1234) est pris 1, 2, 3 puis 4 fois.",
+   "Les flèches orange donnent où va chaque objet ; le texte orange dessous écrit où va chacun des numéros.",
+   "À la deuxième puissance, 1 va sur 3 et 2 sur 4.",
+   "À la quatrième puissance, rien ne bouge. Le texte bleu du bas rappelle : 4 éléments, tous venus de (1234)."
+  ],
+  "a_voir": "Les quatre éléments sont les puissances du même cycle."
+ },
+ {
+  "code": "65-080",
+  "a_dire": "Le signe D désigne les 8 symétries d'un carré vues comme permutations des sommets : 4 rotations et 4 réflexions.",
+  "legende_titre": "Les huit symétries du carré",
+  "lecture": [
+   "Le carré bleu a ses sommets numérotés de 1 à 4 ; la flèche bleue courbe montre une rotation.",
+   "Les pointillés orange sont les axes des 4 réflexions : 2 diagonales et 2 médiatrices.",
+   "Les barres du bas comparent C (4), D (8) et S4 (24) en nombre de permutations des sommets.",
+   "D est plus long que C et plus court que S4."
+  ],
+  "a_voir": "D rassemble 4 rotations et 4 réflexions, soit 8 permutations des sommets."
+ },
+ {
+  "code": "65-081",
+  "a_dire": "Le discriminant ne donne que deux réponses, alors que cinq groupes sont possibles en degré 4 : il ne suffit plus.",
+  "legende_titre": "Deux réponses pour cinq groupes",
+  "lecture": [
+   "Les cinq cadres bleus du haut sont les groupes A4 (12), V (4), S4 (24), D (8) et C (4).",
+   "Le cadre orange du bas à gauche regroupe ceux dont les permutations sont paires : A4 et V.",
+   "Le cadre gris du bas à droite regroupe les trois autres.",
+   "Les flèches relient chaque groupe à sa réponse : il n'y a que deux réponses."
+  ],
+  "a_voir": "Deux groupes différents, A4 et V, donnent la même réponse au test."
+ },
+ {
+  "code": "65-082",
+  "a_dire": "On calcule t1 en groupant r1 avec r2 et r3 avec r4, en multipliant chaque groupe, puis en additionnant les produits.",
+  "legende_titre": "Trois actions pour obtenir t1",
+  "lecture": [
+   "Les quatre disques bleus sont les racines r1 = 1, r2 = 2, r3 = 3, r4 = 4.",
+   "Les deux arcs orange regroupent les racines 1-2 et 3-4 ; dessous, les produits 1 × 2 = 2 et 3 × 4 = 12.",
+   "Le cadre vert additionne : t1 = 2 + 12 = 14."
+  ],
+  "a_voir": "Les arcs montrent quelles racines sont multipliées ensemble avant l'addition."
+ },
+ {
+  "code": "65-083",
+  "a_dire": "t2 utilise le partage r1 avec r3 et r2 avec r4 ; la construction reste la même quand les nombres changent.",
+  "legende_titre": "Le partage 1-3 et 2-4",
+  "lecture": [
+   "Les quatre disques bleus sont les racines r1 = 2, r2 = 3, r3 = 5, r4 = 7.",
+   "L'arc orange du haut relie r1 et r3 : 2 × 5 = 10.",
+   "L'arc violet du bas relie r2 et r4 : 3 × 7 = 21.",
+   "Le cadre vert additionne : t2 = 10 + 21 = 31."
+  ],
+  "a_voir": "Les deux arcs se croisent : c'est un autre partage que celui de t1."
+ },
+ {
+  "code": "65-084",
+  "a_dire": "On calcule t3 en groupant r1 avec r4 et r2 avec r3, en multipliant chaque groupe, puis en additionnant ; c'est le troisième partage possible.",
+  "legende_titre": "Le partage 1-4 et 2-3",
+  "lecture": [
+   "Les quatre disques bleus sont les racines r1 = 1, r2 = 2, r3 = 3, r4 = 4.",
+   "Le grand arc orange relie r1 et r4 : 1 × 4 = 4.",
+   "Le petit arc violet, dessous, relie r2 et r3 : 2 × 3 = 6.",
+   "Le cadre vert additionne : t3 = 4 + 6 = 10."
+  ],
+  "a_voir": "Un arc enveloppe l'autre : c'est le dernier des trois partages."
+ },
+ {
+  "code": "65-085",
+  "a_dire": "Toute permutation des racines transforme un partage en deux groupes en un autre partage, donc elle permute les trois nombres t_k.",
+  "legende_titre": "Échanger deux racines échange deux des t",
+  "lecture": [
+   "En haut, les racines 1, 2, 3, 4 donnent t1 = 14, t2 = 11, t3 = 10.",
+   "En bas, on a échangé r1 et r2 : les racines sont 2, 1, 3, 4, et la flèche orange le rappelle.",
+   "t1 reste 14, en gris ; t2 devient 10 et t3 devient 11.",
+   "Les deux flèches orange croisées montrent que t2 et t3 se sont échangés."
+  ],
+  "a_voir": "Les trois valeurs restent les mêmes, mais deux d'entre elles ont changé de place."
+ },
+ {
+  "code": "65-086",
+  "a_dire": "Les permutations qui fixent les trois t_k sont celles de V ; fixer un seul t ne suffit pas.",
+  "legende_titre": "Fixer un t ou fixer les trois",
+  "lecture": [
+   "À gauche, l'échange (12) laisse t1 = 14 en gris mais échange t2 et t3, en orange.",
+   "Le cadre rouge dit qu'il fixe t1 seul et n'est pas dans V.",
+   "À droite, l'échange (12)(34) laisse t1, t2 et t3 à leur place.",
+   "Le cadre vert dit qu'il fixe les trois et est dans V."
+  ],
+  "a_voir": "Seul le double échange laisse les trois nombres en place."
+ },
+ {
+  "code": "65-087",
+  "a_dire": "La résolvante cubique est le polynôme de degré 3 dont les racines sont t1, t2, t3 ; ses coefficients sont dans F.",
+  "legende_titre": "Un polynôme de degré 3 construit sur les t",
+  "lecture": [
+   "Le cadre bleu du haut donne les racines de f : 1, 2, 3, 4.",
+   "Le cadre violet donne les trois nombres t1 = 14, t2 = 11, t3 = 10.",
+   "Le premier cadre vert écrit g(x) = (x − 14)(x − 11)(x − 10).",
+   "Le second cadre vert donne x³ − 35x² + 404x − 1540, développé."
+  ],
+  "a_voir": "Les flèches orange vont des racines de f jusqu'au polynôme g de degré 3."
+ },
+ {
+  "code": "65-088",
+  "a_dire": "b1 est la somme t1 + t2 + t3, qui est égale à la somme des produits de deux racines de f, car chaque produit apparaît une fois.",
+  "legende_titre": "Six produits, trois groupes, une même somme",
+  "lecture": [
+   "Les six cases bleues sont les produits de deux racines 2, 3, 5, 7 : 6, 35, 10, 21, 14, 15.",
+   "Chaque accolade bleue regroupe deux produits et donne un des nombres t : 41, 31, 29.",
+   "L'accolade verte du haut donne la somme des six produits : 101.",
+   "Le cadre vert du bas donne b1 = 41 + 31 + 29 = 101."
+  ],
+  "a_voir": "Chaque produit est utilisé exactement une fois dans les trois groupes."
+ },
+ {
+  "code": "65-089",
+  "a_dire": "b2 se calcule en multipliant a1 par a3, puis en retirant 4 fois a4 : 500 − 96 = 404 pour les racines 1, 2, 3, 4.",
+  "legende_titre": "Un produit moins quatre fois un autre",
+  "lecture": [
+   "La barre entière représente a1 × a3 = 10 × 50 = 500.",
+   "La partie orange à droite est 4a4 = 96, celle qu'on retire.",
+   "La partie verte à gauche est ce qui reste : 404.",
+   "Le cadre vert donne b2 = 500 − 96 = 404, égal à 14 × 11 + 14 × 10 + 11 × 10."
+  ],
+  "a_voir": "La barre de 500 est coupée en deux : 96 est retiré et 404 reste."
+ },
+ {
+  "code": "65-090",
+  "a_dire": "b3 se calcule avec a1, a3, a2 et a4 par la formule a1²a4 + a3² − 4a2a4 ; pour les racines 2, 3, 5, 7 on obtient 36 859, le produit de t1, t2, t3.",
+  "legende_titre": "Deux termes ajoutés, un terme retiré",
+  "lecture": [
+   "Les deux cases bleues du haut sont a1²a4 = 60 690 et a3² = 61 009.",
+   "L'accolade grise du haut donne leur somme : 121 699.",
+   "Sous les cases, la case orange est 4a2a4 = 84 840, qui est retiré.",
+   "La case verte est le résultat, 36 859, égal à 41 × 31 × 29."
+  ],
+  "a_voir": "On additionne les deux premiers termes, on retire le troisième et on trouve le produit des t."
+ },
+ {
+  "code": "65-091",
+  "a_dire": "Chaque différence entre deux t est un produit de deux différences de racines ; ces trois produits contiennent les six différences, donc g a le même discriminant que f.",
+  "legende_titre": "Trois différences de t, six différences de racines",
+  "lecture": [
+   "Chaque ligne a une différence de deux t en violet : 3, 4 et 1.",
+   "Elle est égale au produit de deux différences de racines, en bleu : (r1 − r4)(r2 − r3), (r1 − r3)(r2 − r4), (r1 − r2)(r3 − r4).",
+   "Les nombres à droite donnent les valeurs pour les racines 1, 2, 3, 4.",
+   "Le cadre vert donne 3 × 4 × 1 = 12, donc d = 12² = 144 pour f et pour g."
+  ],
+  "a_voir": "Les six différences de racines apparaissent, chacune une fois, dans les trois lignes."
+ },
+ {
+  "code": "65-092",
+  "a_dire": "Chaque permutation des quatre racines donne une permutation des trois t ; l'image est le groupe de g et les éléments qui ne changent rien aux t forment le noyau Gf ∩ V.",
+  "legende_titre": "Vingt-quatre éléments, six images, un noyau de quatre",
+  "lecture": [
+   "Le haut montre G_f, 24 éléments, rangés en 6 blocs de 4 petits carrés.",
+   "Le premier bloc, en orange, est le noyau G_f ∩ V : 4 éléments.",
+   "Les flèches grises envoient chaque bloc sur une case violette du bas.",
+   "Les 6 cases violettes sont les permutations des t : c'est le groupe de g, l'image de G_f. Le noyau va sur l'identité. Le texte rappelle 24 = 6 × 4."
+  ],
+  "a_voir": "Chaque bloc de 4 éléments est envoyé sur une seule permutation des t ; le premier bloc, le noyau, ne change rien aux t."
+ },
+ {
+  "code": "65-093",
+  "a_dire": "L'ordre du groupe de g donne G_f : 6 donne S4, 3 donne A4, 1 donne V, et 2 laisse deux possibilités, D ou C.",
+  "legende_titre": "Du nombre d'éléments de g au groupe de f",
+  "lecture": [
+   "Chaque ligne a des disques violets : leur nombre est l'ordre du groupe de g, soit 6, 3, 1 puis 2.",
+   "La flèche mène au cadre qui donne G_f.",
+   "Les trois premiers cadres, verts, donnent un seul groupe : S4, A4, V.",
+   "Le dernier cadre, orange, laisse deux candidats : D ou C."
+  ],
+  "a_voir": "Seule la ligne d'ordre 2 ne donne pas un seul groupe."
+ },
+ {
+  "code": "65-094",
+  "a_dire": "Quand l'ordre est 2, on passe au corps F(√d) : D garde 4 permutations paires et reste transitif, C en garde 2 et n'est plus transitif, donc f devient réductible.",
+  "legende_titre": "Garder les permutations paires pour trancher",
+  "lecture": [
+   "La première ligne montre D avec 8 cases ; les 4 cases bleues sont ses permutations paires.",
+   "Sa flèche mène au cadre vert : transitif, f reste irréductible.",
+   "La seconde ligne montre C avec 4 cases ; les 2 cases bleues sont ses permutations paires.",
+   "Sa flèche mène au cadre orange : pas transitif, f devient réductible."
+  ],
+  "a_voir": "Le nombre de paires gardées (4 ou 2) décide si f reste irréductible."
+ },
+ {
+  "code": "65-095",
+  "a_dire": "Pour trouver un groupe inconnu, on construit un polynôme auxiliaire dont on sait calculer le groupe, puis on lit le groupe de départ.",
+  "legende_titre": "Passer par un polynôme auxiliaire",
+  "lecture": [
+   "Le cadre bleu du haut est f, de degré 4, dont le groupe est inconnu.",
+   "Le cadre violet suivant est g, de degré 3, le polynôme auxiliaire.",
+   "Le deuxième cadre violet est l'ordre du groupe de g.",
+   "Le cadre vert du bas est G_f, lu à partir de cet ordre ; les flèches orange sont les actions construire, calculer, lire."
+  ],
+  "a_voir": "Trois flèches orange mènent du groupe inconnu à une lecture simple."
+ },
+ {
+  "code": "65-096",
+  "a_dire": "Une indéterminée n'a ni valeur connue comme un nombre de F, ni valeur à trouver comme l'inconnue d'une équation ; avec elles on forme des quotients de polynômes.",
+  "legende_titre": "Trois sortes de lettres et de nombres",
+  "lecture": [
+   "Le cadre gris, avec un disque plein, est un nombre de valeur connue : 2 et 1/3.",
+   "Le cadre orange est l'inconnue de x − 5 = 0, dont la valeur est à trouver.",
+   "Le cadre bleu est t1 et t2 : ni l'une ni l'autre.",
+   "Le cadre vert donne un quotient en ces lettres, (t1² + 1)/t2, qui est dans F(t1, t2)."
+  ],
+  "a_voir": "Les lettres t1 et t2 n'ont aucune valeur, mais on peut quand même écrire des quotients avec elles."
+ }
+]

@@ -1,0 +1,183 @@
+[
+ {
+  "code": "79-017",
+  "a_dire": "Pour tout a, on a a ≤ a : chaque élément est en dessous de lui-même.",
+  "legende_titre": "Trois cas où un élément se compare à lui-même",
+  "lecture": [
+   "Chaque rond bleu est un élément : 5, le stylo bleu, 7.",
+   "La flèche orange part du rond et revient sur le même rond.",
+   "Le texte vert dessous écrit la vérification : 5 = 5 × 1, bleu ⊆ bleu, 7 ≤ 7."
+  ],
+  "a_voir": "Dans les trois rangements, la flèche revient sur le même élément."
+ },
+ {
+  "code": "79-018",
+  "a_dire": "Sans l'antisymétrie, deux éléments différents peuvent être chacun en dessous de l'autre.",
+  "legende_titre": "Une règle qui permet deux sens pour deux nombres",
+  "lecture": [
+   "Le rond bleu est 4 et le rond violet est 6, écrits 2 × 2 et 2 × 3.",
+   "Les deux flèches orange vont dans les deux sens : 4 ≤ 6 et 6 ≤ 4.",
+   "Le texte rouge au milieu rappelle que 4 et 6 sont différents."
+  ],
+  "a_voir": "Deux flèches opposées entre deux éléments différents : c'est ce que la règle interdit."
+ },
+ {
+  "code": "79-019",
+  "a_dire": "Si a ≤ b et b ≤ c, alors a ≤ c : monter en deux pas revient à monter en un seul.",
+  "legende_titre": "Deux pas qui font un seul pas",
+  "lecture": [
+   "Les trois cases bleues sont 2, 6 et 12.",
+   "Les deux flèches orange sont les deux pas, avec 6 = 2 × 3 et 12 = 6 × 2.",
+   "La grande flèche verte au-dessus va directement de 2 à 12, avec 12 = 2 × 6.",
+   "Le texte vert du bas écrit 12 = 2 × 3 × 2."
+  ],
+  "a_voir": "La flèche verte directe existe parce que les deux pas orange existent."
+ },
+ {
+  "code": "79-020",
+  "a_dire": "Les trois règles sont ce que les réels, la divisibilité et l'inclusion ont en commun.",
+  "legende_titre": "Trois exemples, les mêmes trois règles",
+  "lecture": [
+   "Chaque ligne est un exemple : les réels, les diviseurs de 60, les parties de trois stylos.",
+   "Chaque colonne est une règle : réflexivité, antisymétrie, transitivité.",
+   "Chaque case verte avec un trait de validation dit que la règle est vraie dans cet exemple."
+  ],
+  "a_voir": "Les neuf cases sont toutes vertes : les règles viennent de ce que les exemples partagent."
+ },
+ {
+  "code": "79-021",
+  "a_dire": "La totalité dit : pour deux éléments quelconques, l'un est en dessous de l'autre ; les réels la vérifient, pas les diviseurs de 60.",
+  "legende_titre": "Deux éléments toujours comparables, ou non",
+  "lecture": [
+   "En haut, la droite graduée place 3,5 et 7 ; la flèche verte va de 3,5 à 7.",
+   "En bas, les cases bleues sont 12 et 20.",
+   "Les deux flèches rouges disent que 12 ne divise pas 20 et que 20 ne divise pas 12."
+  ],
+  "a_voir": "Sur la droite, les deux nombres se comparent ; pour 12 et 20, aucun sens ne marche."
+ },
+ {
+  "code": "79-022",
+  "a_dire": "Une chaîne est un ensemble ordonné où toute paire d'éléments se compare.",
+  "legende_titre": "Une chaîne et un ensemble qui n'en est pas une",
+  "lecture": [
+   "À gauche, les ronds bleus 1, 2, 4, 8 sont reliés en une seule colonne.",
+   "À droite, les ronds violets sont 4, 12, 20 et 60.",
+   "Le tiret rouge entre 12 et 20 marque la paire qui ne se compare pas."
+  ],
+  "a_voir": "À gauche tout se range sur une colonne ; à droite 12 et 20 restent à côté."
+ },
+ {
+  "code": "79-023",
+  "a_dire": "Le mot « partiel » veut dire seulement que la totalité n'est pas exigée.",
+  "legende_titre": "Le mot « partiel » : une exigence en moins",
+  "lecture": [
+   "Le grand cadre gris contient tous les ordres qui vérifient les trois règles.",
+   "Le cadre vert dedans ajoute la totalité : c'est le cadre des chaînes, avec les réels en bleu.",
+   "Le cadre violet est dans le grand cadre mais hors du cadre vert : les diviseurs de 60, avec 12 et 20 sans lien."
+  ],
+  "a_voir": "Les réels sont à la fois partiellement ordonnés et une chaîne."
+ },
+ {
+  "code": "79-024",
+  "a_dire": "On vérifie les trois règles sur la divisibilité avec 4, 12 et 36 seulement : c'est une vérification sur des cas, pas une preuve pour tous les entiers.",
+  "legende_titre": "Les trois règles vérifiées sur 4, 12 et 36",
+  "lecture": [
+   "Le titre dit que tout est vérifié sur 4, 12 et 36 seulement.",
+   "La case verte du haut écrit réflexivité : 4 = 4 × 1.",
+   "Au milieu, les flèches orange vont de 4 à 12 puis de 12 à 36, chacune × 3 ; l'arc vert va de 4 à 36, × 9.",
+   "En bas, la flèche verte dit que 4 divise 12 ; la flèche rouge dit que 12 ne divise pas 4."
+  ],
+  "a_voir": "Les trois règles sont vues sur les seuls nombres 4, 12 et 36 : ce n'est pas une preuve pour tous les entiers."
+ },
+ {
+  "code": "79-025",
+  "a_dire": "Dans les entiers relatifs, 3 divise −3 et −3 divise 3 sans que 3 = −3 : l'antisymétrie est fausse.",
+  "legende_titre": "3 et −3 se divisent l'un l'autre",
+  "lecture": [
+   "Les deux ronds bleus sont −3 et 3 sur la droite graduée.",
+   "L'arc orange du haut va de −3 à 3 : −3 = 3 × (−1).",
+   "L'arc orange du bas va de 3 à −3 : 3 = (−3) × (−1).",
+   "Le cadre rouge rappelle que 3 et −3 sont différents."
+  ],
+  "a_voir": "Deux arcs en sens opposés entre deux nombres différents."
+ },
+ {
+  "code": "79-026",
+  "a_dire": "Jacobson dessine l'ordre à l'envers : le diviseur est en haut chez lui, en bas dans ce livre.",
+  "legende_titre": "Les mêmes diviseurs de 12, dessinés à l'envers",
+  "lecture": [
+   "À gauche, le dessin de ce livre : 1 en bas, 12 en haut.",
+   "À droite, le dessin de Jacobson : 1 en haut, 12 en bas.",
+   "Le rond bleu est 4 et le rond orange est 12 dans les deux dessins ; les traits sont les mêmes."
+  ],
+  "a_voir": "Les deux dessins ont les mêmes traits ; seul le haut et le bas sont échangés."
+ },
+ {
+  "code": "79-027",
+  "a_dire": "Un ordre peut s'écrire comme un ensemble P de couples, partie de X × X.",
+  "legende_titre": "L'ordre vu comme un ensemble de couples",
+  "lecture": [
+   "La case bleue de gauche dit que 2 est en dessous de 6 ; la flèche orange donne le couple (2, 6).",
+   "La case verte écrit (2, 6) ∈ P.",
+   "Le grand cadre gris est X × X, tous les couples ; le cadre bleu dedans est P.",
+   "Le point orange (2, 6) est dans P ; le point rouge (6, 2) est hors de P."
+  ],
+  "a_voir": "P est une partie de X × X : on écrit l'ordre en listant ses couples."
+ },
+ {
+  "code": "79-028",
+  "a_dire": "L'ordre des diviseurs de 6 est la liste de neuf couples : quatre avec le même nombre, cinq avec deux nombres différents.",
+  "legende_titre": "Les neuf couples des diviseurs de 6",
+  "lecture": [
+   "La rangée orange a les quatre couples avec le même nombre deux fois.",
+   "La rangée bleue a les cinq couples de nombres différents.",
+   "Les deux cases rouges en tirets, (2, 3) et (3, 2), ne sont pas dans la liste : 2 et 3 ne se comparent pas."
+  ],
+  "a_voir": "Neuf couples présents ; l'absence de (2, 3) et de (3, 2) est aussi une information."
+ },
+ {
+  "code": "79-029",
+  "a_dire": "Chaque règle se lit sur la liste par la présence ou l'absence de couples.",
+  "legende_titre": "Lire les trois règles sur la liste",
+  "lecture": [
+   "La première rangée verte montre les quatre couples (a, a) présents.",
+   "La deuxième rangée montre (1, 2) présent en vert et son inverse (2, 1) absent en rouge.",
+   "La troisième rangée montre (1, 2) et (2, 6) présents, donc (1, 6) présent."
+  ],
+  "a_voir": "Chaque règle devient une question : ce couple est-il dans la liste ?"
+ },
+ {
+  "code": "79-030",
+  "a_dire": "a < b veut dire a ≤ b et a ≠ b : l'égalité est retirée.",
+  "legende_titre": "Strictement en dessous : sans le cas égal",
+  "lecture": [
+   "Chaque colonne teste un couple : 4 et 12 à gauche, 4 et 4 à droite.",
+   "La première case est le test a ≤ b, la deuxième le test a ≠ b.",
+   "La case du bas est verte si les deux tests sont verts, rouge sinon."
+  ],
+  "a_voir": "4 < 12 est vrai ; 4 < 4 est faux parce que 4 n'est pas différent de 4."
+ },
+ {
+  "code": "79-031",
+  "a_dire": "b recouvre a quand a est strictement en dessous de b et qu'aucun élément n'est entre les deux.",
+  "legende_titre": "12 recouvre 4, mais 60 ne recouvre pas 4",
+  "lecture": [
+   "Le rond bleu est 4 en bas ; le rond vert est 12 ; le rond gris est 20 ; le rond rouge est 60.",
+   "Le gros trait vert de 4 à 12 est un recouvrement : rien n'est entre les deux.",
+   "60 est au-dessus de 4, mais 12 est entre 4 et 60 : 60 ne recouvre pas 4, et il n'y a pas de trait direct."
+  ],
+  "a_voir": "Le trait vert est direct ; entre 4 et 60, il y a 12, donc pas de recouvrement."
+ },
+ {
+  "code": "79-032",
+  "a_dire": "12 recouvre 4 car aucun diviseur de 12 n'est entre 4 et 12, mais 60 ne recouvre pas 4 car 12 est entre les deux.",
+  "legende_titre": "Chercher un nombre entre 4 et 12, puis entre 4 et 60",
+  "lecture": [
+   "En haut, les diviseurs de 12 : seuls 4 et 12, en bleu, sont des multiples de 4.",
+   "L'accolade verte dit qu'aucun nombre n'est entre 4 et 12.",
+   "En bas, la flèche verte va de 4 à 12 : 12 recouvre 4.",
+   "L'arc rouge va de 4 à 60 par-dessus 12 : 60 ne recouvre pas 4."
+  ],
+  "a_voir": "Entre 4 et 12 il n'y a rien ; entre 4 et 60 il y a 12."
+ }
+]

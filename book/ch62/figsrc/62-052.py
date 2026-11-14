@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 6, 74, 76, 11, 'sujet', label=r'$(1+2x)(3+x)$')
+arrow(ax, (44, 73), (44, 67), 'varie')
+text(ax, 62, 70, 'développer', 'varie', 's')
+box(ax, 6, 55, 76, 11, 'fixe', label=r'$3+7x+2x^2$')
+arrow(ax, (44, 54), (44, 48), 'varie')
+text(ax, 62, 51, 'règle', 'varie', 's')
+box(ax, 6, 36, 76, 11, 'varie', label=r'$x^2=2$ donc $2x^2=4$')
+arrow(ax, (44, 35), (44, 29), 'varie')
+box(ax, 6, 17, 76, 11, 'resultat', label=r'$3+7x+4=7+7x$')
+text(ax, 44, 8, r'encore un reste $a+bx$', 'resultat', 's')
+save(fig, '62-052')

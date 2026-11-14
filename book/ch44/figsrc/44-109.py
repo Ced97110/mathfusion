@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'$M$ : entiers relatifs, $\times$', 'encre', 's')
+box(ax, 2, 18, 40, 36, 'fixe', dash=True)
+for k in range(6):
+    disc(ax, 9 + (k % 3) * 10, 42 - (k // 3) * 9, 3, 'fixe')
+disc(ax, 12, 25, 3.5, 'sujet', label='$1$', size='s')
+disc(ax, 28, 25, 3.5, 'sujet', label='$-1$', size='s')
+text(ax, 22, 13, 'ceux qui se défont : bleu', 'sujet', 's') if False else text(ax, 22, 13, 'les autres : gris', 'fixe', 's')
+arrow(ax, (42, 28), (52, 28), 'varie')
+text(ax, 47, 33, 'garder', 'varie', 's')
+box(ax, 52, 20, 34, 16, 'resultat')
+disc(ax, 62, 28, 3.5, 'sujet', label='$1$', size='s')
+disc(ax, 76, 28, 3.5, 'sujet', label='$-1$', size='s')
+text(ax, 69, 42, r'$U(M)$', 'resultat', 'l')
+text(ax, 69, 13, 'un groupe', 'resultat', 's')
+save(fig, '44-109')

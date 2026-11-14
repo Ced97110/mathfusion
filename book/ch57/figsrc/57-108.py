@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 56, '$x(a+b)=xa+xb$', 'encre', 'l')
+text(ax, 44, 50.5, '$x$ = (2 ; 1), $a$ = 3, $b$ = 2', 'fixe', 's')
+O = (10, 12); u = 5
+P = lambda a, b: (O[0] + u * a, O[1] + u * b)
+line(ax, [P(-1, 0), P(11, 0)], 'fixe', lw=0.4)
+line(ax, [P(0, -0.4), P(0, 6)], 'fixe', lw=0.4)
+arrow(ax, P(0, 0), P(6, 3), 'sujet', lw=1.8)
+arrow(ax, P(6, 3), P(10, 5), 'autre', lw=1.8)
+off = (1.8, -3.6)
+arrow(ax, (O[0] + off[0], O[1] + off[1]), (P(10, 5)[0] + off[0], P(10, 5)[1] + off[1]), 'resultat', lw=1.8)
+text(ax, 12, 32, '(2 ; 1)·3 = (6 ; 3)', 'sujet', 's', ha='left')
+text(ax, 50, 43, '(2 ; 1)·2 = (4 ; 2)', 'autre', 's')
+text(ax, 70, 22, '(2 ; 1)·5 = (10 ; 5)', 'resultat', 's')
+save(fig, '57-108')

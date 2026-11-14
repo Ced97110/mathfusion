@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+def eq(x, y, role, neq=False):
+    line(ax, [(x - 3, y + 1), (x + 3, y + 1)], role, lw=1.2)
+    line(ax, [(x - 3, y - 1), (x + 3, y - 1)], role, lw=1.2)
+    if neq: line(ax, [(x - 1.6, y - 2.6), (x + 1.6, y + 2.6)], role, lw=1.2)
+text(ax, 44, 71, '(2 ; 1) et (1 ; 4), coefficient 3', 'resultat', 's')
+box(ax, 2, 48, 38, 18, 'resultat', label='somme puis × 3\n(3 ; 5) puis (9 ; 15)', size='s')
+box(ax, 50, 48, 36, 18, 'resultat', label='× 3 chacun :\n(6 ; 3) et (3 ; 12)\nsomme : (9 ; 15)', size='s')
+eq(45, 57, 'resultat')
+text(ax, 44, 38, 'action $x$ + $a$, sans la règle', 'limite', 's')
+box(ax, 2, 10, 38, 22, 'limite', label='somme puis + 3\n(2 + 1) + 3\n= 6', size='s')
+box(ax, 50, 10, 36, 22, 'limite', label='+ 3 chacun, puis somme\n(2 + 3) + (1 + 3)\n= 9', size='s')
+eq(45, 21, 'limite', True)
+save(fig, '57-107')

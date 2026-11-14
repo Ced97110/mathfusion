@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+cx, cy, R = 30, 39, 26
+P = lambda d, r=R: (cx + r * math.cos(math.radians(d)), cy + r * math.sin(math.radians(d)))
+line(ax, [P(d) for d in range(0, 360, 3)] + [P(0)], 'fixe')
+line(ax, [P(d) for d in range(-90, 91, 3)], 'sujet', lw=1.8)
+line(ax, [(cx - 29, cy), (cx + 29, cy)], 'fixe', lw=0.6); line(ax, [(cx, cy - 29), (cx, cy + 29)], 'fixe', lw=0.6)
+line(ax, [P(45, -30), P(45, 30)], 'varie'); line(ax, [P(-45, -30), P(-45, 30)], 'varie')
+line(ax, [P(d, 9) for d in range(0, 46, 3)], 'resultat', lw=1.2)
+line(ax, [P(d, 9) for d in range(-45, 1, 3)], 'resultat', lw=1.2)
+for d in (45, -45): disc(ax, *P(d), 1.4, 'resultat')
+text(ax, 53, 56, r'$\arctan 1=\pi/4$', 'resultat', 's', ha='left')
+text(ax, 53, 22, r'$\arctan(-1)=-\pi/4$', 'resultat', 's', ha='left')
+text(ax, 56, 64, 'pente 1', 'varie', 's', ha='left'); text(ax, 56, 14, 'pente −1', 'varie', 's', ha='left')
+text(ax, P(22, 15)[0], P(22, 15)[1], '45°', 'resultat', 's'); text(ax, P(-22, 15)[0], P(-22, 15)[1], '−45°', 'resultat', 's')
+text(ax, 11, 70, 'cercle de rayon 1', 'fixe', 's')
+save(fig, '33-066')

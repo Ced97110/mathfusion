@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+# v et son image par eta
+box(ax, 3, 66, 22, 9, 'sujet', label=r'$v$')
+box(ax, 63, 66, 22, 9, 'autre', label=r'$\eta(v)$')
+arrow(ax, (25, 70.5), (63, 70.5), 'varie')
+text(ax, 44, 74, r'$\eta$', 'varie')
+# conjugués : le même ensemble, dans l'autre ordre
+text(ax, 18, 59, r'conjugués de $v$', 'sujet')
+text(ax, 70, 59, r'conjugués de $\eta(v)$', 'autre')
+box(ax, 3, 47, 14, 9, 'sujet', label=r'$v$')
+box(ax, 19, 47, 14, 9, 'autre', label=r'$\eta(v)$')
+box(ax, 55, 47, 14, 9, 'autre', label=r'$\eta(v)$')
+box(ax, 71, 47, 14, 9, 'sujet', label=r'$v$')
+line(ax, [(10, 47), (10, 43), (78, 43), (78, 47)], 'sujet')
+line(ax, [(26, 47), (26, 39.5), (62, 39.5), (62, 47)], 'autre')
+text(ax, 44, 34, 'même ensemble, autre ordre', 'resultat')
+arrow(ax, (44, 31), (44, 26.8), 'resultat')
+box(ax, 12, 17, 64, 9, 'resultat', label=r'$N(v)=N(\eta(v))$')
+arrow(ax, (44, 17), (44, 12.8), 'resultat')
+box(ax, 12, 3, 64, 9, 'resultat', label=r'$N(v/\eta(v))=1$')
+save(fig, '67-151')

@@ -1,0 +1,118 @@
+{
+ "67-001": {
+  "lecture": [
+   "Les quatre cases du haut sont les mots de 2 bits : 00, 01, 10, 11.",
+   "Le mot 00, en gris, est le mot nul : on ne divise pas par lui. Les trois autres, en bleu, sont non nuls.",
+   "Les trois cases orange sont les divisions que le programme de correction doit faire : par 01, par 10, par 11.",
+   "La case verte donne l’exigence : la division doit être toujours possible, donc l’ensemble doit être un corps."
+  ],
+  "a_voir": "Le programme de correction divise par chaque mot non nul : l’ensemble des mots doit être un corps."
+ },
+ "67-007": {
+  "lecture": [
+   "Le grand rectangle bleu est le grand corps E ; le rectangle violet est le petit corps F.",
+   "Dans E, deux cases orange et une case grise forment la base spéciale : c’est l’outil 1, une base choisie avec une propriété.",
+   "Les deux flèches orange vont de E vers F : la trace et la norme, c’est l’outil 2."
+  ],
+  "a_voir": "Outil 1 : une base spéciale dans E. Outil 2 : la trace et la norme, qui envoient E vers F."
+ },
+ "67-019": {
+  "lecture": [
+   "En haut, le polynôme x² + x + 1 sur ℤ/2ℤ ; on l’essaie en 0 puis en 1.",
+   "Les deux cases grises donnent 1 chaque fois : aucune racine, donc le polynôme est irréductible.",
+   "La case orange est le geste de Kronecker : on ajoute une racine α. La case bleue dit alors α² + α + 1 = 0.",
+   "On ajoute α + 1 de chaque côté : la case verte donne α² = α + 1."
+  ],
+  "a_voir": "Comme le polynôme n’a pas de racine dans ℤ/2ℤ, on en ajoute une, α, et elle vérifie α² = α + 1."
+ },
+ "67-022": {
+  "lecture": [
+   "En haut, 𝔽₄ en vert : son ordre est 4 = 2², une puissance d’un nombre premier.",
+   "Au milieu, ℤ/6ℤ en rouge : son ordre est 6 = 2 × 3, pas une puissance d’un nombre premier.",
+   "Les cases orange 2 et 3 sont deux éléments non nuls dont le produit est 0.",
+   "La case rouge du bas dit que ce n’est pas un corps."
+  ],
+  "a_voir": "L’ordre d’un corps est une puissance d’un premier ; ℤ/6ℤ a 6 éléments mais n’est pas un corps."
+ },
+ "67-038": {
+  "lecture": [
+   "La première ligne montre 𝔽₄ avec les diviseurs de 4 : 1, 2 et 4.",
+   "La seconde ligne montre 𝔽₉ avec les diviseurs de 9 : 1, 3 et 9.",
+   "L’accolade au-dessus de chaque ligne dit que la divisibilité laisse 3 choix.",
+   "La case verte de chaque ligne est la caractéristique : 2 pour 𝔽₄, 3 pour 𝔽₉. Les cases grises sont les autres diviseurs."
+  ],
+  "a_voir": "Trois diviseurs sont possibles sur chaque ligne, mais seule la case verte est la caractéristique."
+ },
+ "67-067": {
+  "lecture": [
+   "En haut, les cases bleues sont les 4 éléments du corps ; la flèche orange est l’élévation à la puissance 4.",
+   "Les cases vertes en dessous redonnent exactement les mêmes éléments : u⁴ = u.",
+   "En bas, dans les entiers modulo 6, la même opération sur 2 donne 2⁶ = 64, de reste 4.",
+   "La case rouge dit que ce reste 4 est différent de 2 : l’égalité est fausse."
+  ],
+  "a_voir": "Dans le corps, u puissance q redonne u ; dans les entiers modulo 6, 2 puissance 6 ne redonne pas 2."
+ },
+ "67-069": {
+  "lecture": [
+   "La case grise du haut est le départ : un corps E où le polynôme a toutes ses racines.",
+   "La case bleue est la première vérification : il y a 4 racines distinctes.",
+   "La case orange, au bord épais, est la seconde vérification : l’ensemble R des racines est un corps. Sans elle, R serait une simple liste.",
+   "La case verte du bas est l’arrivée : un corps à 4 éléments."
+  ],
+  "a_voir": "Deux vérifications côte à côte mènent à l’arrivée ; la seconde, au bord épais, est l’étape décisive."
+ },
+ "67-076": {
+  "lecture": [
+   "En haut, on rappelle que u est une racine de x³ − x, c’est-à-dire u³ = u, dans le corps à 3 éléments.",
+   "Ligne du haut : u = 1, son opposé vaut 2 (case violette), et 2³ = 8 = 2 : c’est encore une racine.",
+   "Ligne du bas : u = 2, son inverse vaut 2 (case violette), et 2³ = 2 : c’est encore une racine."
+  ],
+  "a_voir": "L’opposé et l’inverse d’une racine de x³ − x sont encore des racines."
+ },
+ "67-084": {
+  "lecture": [
+   "La case grise de gauche est le résultat du pas 3 : n ≤ m.",
+   "La case orange, au bord épais, est l’étape décisive : un élément d’ordre m existe. Par Lagrange, m divise n.",
+   "La case bleue en dessous en déduit m ≤ n.",
+   "La case verte réunit les deux inégalités : m = n.",
+   "Les quatre disques verts sont les 4 puissances d’un élément d’ordre 4."
+  ],
+  "a_voir": "Les deux inégalités n ≤ m et m ≤ n donnent m = n ; l’élément d’ordre m remplit le groupe."
+ },
+ "67-087": {
+  "lecture": [
+   "La case violette est F, avec ses deux éléments 0 et 1.",
+   "La case orange est l’ajout de z = α.",
+   "La grande case bleue est F(z), qui est E : elle contient 0 et les puissances de α en orange.",
+   "Les trois puissances orange sont les trois éléments non nuls : plus aucun élément de E ne manque."
+  ],
+  "a_voir": "Les puissances de z remplissent tous les éléments non nuls ; avec 0, F(z) est E tout entier."
+ },
+ "67-094": {
+  "lecture": [
+   "Les trois cases bleues sont alpha, alpha carré et alpha carré plus alpha.",
+   "Les flèches 1 et 2 vont de case en case : chaque pas élève au carré.",
+   "La grande flèche verte, numéro 3, ramène à alpha.",
+   "Les trois lignes du milieu écrivent le calcul de chaque pas ; en bas, la règle du cube qu’elles utilisent."
+  ],
+  "a_voir": "La flèche verte numéro 3 revient à la première case : trois pas forment un cycle."
+ },
+ "67-098": {
+  "lecture": [
+   "Le plan montre les trois solutions de x³ = 2 : une sur la droite des réels, bleue, dans le corps.",
+   "Les deux disques rouges sont les solutions non réelles, hors du corps.",
+   "Les flèches rouges barrées d’une croix : aucune transformation du corps n’envoie la racine réelle sur elles.",
+   "En bas, la case bleue donne le degré du corps, 3 ; la case violette donne le groupe de Galois, 1 élément : ce n’est pas 3."
+  ],
+  "a_voir": "Le degré du corps est 3, mais le groupe de Galois n’a qu’un élément."
+ },
+ "67-107": {
+  "lecture": [
+   "Sur la droite graduée, les arcs bleus font des sauts de 4 : 0, 4, 8, 12.",
+   "Le disque violet est 6 : il tombe entre 4 et 8, sur aucun saut.",
+   "La case rouge dit que 4k = 6 n’a aucun entier k, donc pas d’inclusion.",
+   "Dans le schéma du bas, les deux cercles se chevauchent : la zone verte commune est 𝔽_(p²), avec 2 = PGCD(4, 6)."
+  ],
+  "a_voir": "Le point 6 n’est atteint par aucun saut de 4 ; les deux corps ont en commun 𝔽_(p²)."
+ }
+}

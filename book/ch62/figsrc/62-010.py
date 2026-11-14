@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 8, 44, 26, 10, 'sujet', label='$x-1$')
+text(ax, 44, 49, '×', 'encre', 'l')
+box(ax, 54, 44, 26, 10, 'sujet', label='$x-1$')
+text(ax, 44, 59, '$x^2-2x+1$ = deux facteurs', 'encre', 'm')
+f = numberline(ax, 12, 70, 18, 0, 3, step=1, arrow_right=False)
+disc(ax, f(1), 18, 1.7, 'resultat')
+arrow(ax, (21, 43.5), (f(1) - 1.5, 20.5), 'varie')
+arrow(ax, (67, 43.5), (f(1) + 1.5, 20.5), 'varie')
+text(ax, 56, 27, 'même nombre : 1', 'resultat', 'm', ha='left')
+text(ax, 44, 5, '2 facteurs, 1 seul nombre : racine double', 'resultat', 's')
+save(fig, '62-010')

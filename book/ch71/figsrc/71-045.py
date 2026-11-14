@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+disc(ax, 44, 66, 2.2, 'sujet'); text(ax, 52, 66, r'point (3 ; 1)', 'sujet', 's', ha='left'); text(ax, 36, 66, 'même point', 'encre', 's', ha='right')
+arrow(ax, (40, 63), (23, 54), 'fixe'); arrow(ax, (48, 63), (65, 54), 'autre')
+box(ax, 4, 42, 38, 11, 'fixe', label=r'base $(e_1, e_2)$'); box(ax, 46, 42, 38, 11, 'autre', label=r'base $(u_1, u_2)$')
+text(ax, 23, 37, 'forme de lecture', 'fixe', 's'); text(ax, 65, 37, 'forme de lecture', 'autre', 's')
+arrow(ax, (23, 34), (23, 27), 'fixe'); arrow(ax, (65, 34), (65, 27), 'autre')
+box(ax, 4, 6, 34, 20, 'fixe', label=r'$e_1^*$ lit 3', size='l'); box(ax, 50, 6, 34, 20, 'autre', label=r'$u_1^*$ lit 2', size='l')
+text(ax, 44, 16, r'$\neq$', 'limite', 'xl')
+save(fig, '71-045')

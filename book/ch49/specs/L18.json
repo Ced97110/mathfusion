@@ -1,0 +1,193 @@
+[
+ {
+  "code": "49-272",
+  "a_dire": "Dire que, pour quatre fils et les 8 symétries du carré, 76 928 divisé par 8 donne 9 616 circuits.",
+  "legende_titre": "Quatre fils, huit symétries",
+  "lecture": [
+   "Le carré bleu a pour sommets les quatre fils a, b, c, d ; ses 8 symétries sont les permutations autorisées.",
+   "Les quatre cases orange donnent les nombres de cycles : 16, 12, 6 et 10.",
+   "Le total des fonctions fixes est 76 928.",
+   "Le résultat vert est ce total divisé par 8 : 9 616 circuits."
+  ],
+  "a_voir": "Le total 76 928 est divisé par 8 pour obtenir 9 616."
+ },
+ {
+  "code": "49-273",
+  "a_dire": "Dire que le nombre de circuits est la somme divisée par le nombre de permutations, dans les trois cas.",
+  "legende_titre": "Trois cas, une même règle",
+  "lecture": [
+   "Le bandeau bleu du haut donne la règle : somme divisée par le nombre de permutations.",
+   "Chaque case orange donne le nombre de fils.",
+   "Chaque case grise donne le calcul : 16 plus 8 divisé par 2, puis 480 divisé par 6, puis 76 928 divisé par 8.",
+   "Chaque case verte donne le nombre de circuits : 12, 80 et 9 616."
+  ],
+  "a_voir": "Seuls les nombres changent ; la division par le nombre de permutations reste."
+ },
+ {
+  "code": "49-274",
+  "a_dire": "Dire que les 8 symétries du carré se rangent en cinq groupes de tailles 1, 1, 2, 2, 2, et que les deux groupes d'un seul élément forment le centre.",
+  "legende_titre": "Les 8 symétries en cinq groupes",
+  "lecture": [
+   "Chaque case est un groupe de symétries ; le nombre sous la case est sa taille.",
+   "Les deux cases vertes, d'un seul élément, sont 1 et r au carré : elles forment le centre.",
+   "Les trois cases bleues contiennent chacune deux symétries.",
+   "L'égalité du bas additionne les tailles et donne 8."
+  ],
+  "a_voir": "Les tailles 1, 1, 2, 2, 2 s'additionnent en 8, et les groupes de taille 1 forment le centre."
+ },
+ {
+  "code": "49-275",
+  "a_dire": "Dire que la classe de r a 2 éléments, que 4 symétries commutent avec r, et que 2 fois 4 donne 8.",
+  "legende_titre": "La classe de r et ses symétries",
+  "lecture": [
+   "La rangée grise du haut montre les 4 rotations, qui commutent avec r.",
+   "Les deux ronds bleus, r et r au cube, forment la classe de r : 2 éléments.",
+   "La rangée du bas montre les 4 autres symétries, qui ne commutent pas avec r.",
+   "La case verte donne le produit : 2 fois 4 égale 8."
+  ],
+  "a_voir": "Classe de 2 éléments fois 4 symétries qui commutent avec r : 8 en tout."
+ },
+ {
+  "code": "49-276",
+  "a_dire": "Dire que le demi-tour r au carré commute avec chacune des 8 symétries, donc qu'il est dans le centre.",
+  "legende_titre": "Le demi-tour commute avec tout",
+  "lecture": [
+   "Le rond bleu est le demi-tour r au carré.",
+   "Les ronds gris sont les autres symétries du carré.",
+   "Chaque flèche verte relie le demi-tour à une symétrie avec laquelle il commute.",
+   "Le calcul du bas montre le cas de la réflexion s : s, r au carré, s égale r au carré."
+  ],
+  "a_voir": "Le demi-tour est relié par une flèche verte à toutes les autres symétries."
+ },
+ {
+  "code": "49-277",
+  "a_dire": "Dire que la réflexion s et la réflexion r au carré s sont conjuguées par r, et forment une classe de 2 éléments.",
+  "legende_titre": "Deux réflexions dans une classe",
+  "lecture": [
+   "Le carré de gauche montre l'axe diagonal de la réflexion s, en bleu.",
+   "Le carré de droite montre l'autre axe diagonal, celui de la réflexion r au carré s.",
+   "La flèche orange dit que l'on passe de l'une à l'autre en conjuguant par r.",
+   "Les deux réflexions forment donc une classe de 2 éléments."
+  ],
+  "a_voir": "Conjuguer s par r donne l'autre réflexion d'axe diagonal."
+ },
+ {
+  "code": "49-278",
+  "a_dire": "Dire que les deux réflexions d'axe médian, rs et r au cube s, s'échangent par conjugaison et forment la dernière classe.",
+  "legende_titre": "La dernière classe : deux réflexions",
+  "lecture": [
+   "Le carré de gauche montre l'axe vertical de la réflexion rs, en bleu.",
+   "Le carré de droite montre l'axe horizontal de la réflexion r au cube s.",
+   "La flèche orange dit que l'on passe de l'une à l'autre en conjuguant par une réflexion d'axe diagonal.",
+   "Les cinq cases du bas sont les cinq classes, de tailles 1, 1, 2, 2, 2 ; la case bleue est celle de ces deux réflexions."
+  ],
+  "a_voir": "Les tailles des cinq classes s'additionnent en 8 : la dernière classe complète le compte."
+ },
+ {
+  "code": "49-279",
+  "a_dire": "Dire que le centre du groupe de 8 symétries a 2 éléments, et que 2 est bien un multiple de 2.",
+  "legende_titre": "Le centre a 2 éléments",
+  "lecture": [
+   "Le cadre vert entoure les deux éléments du centre : 1 et r au carré.",
+   "Les six ronds gris sont les autres symétries, reliés deux par deux par un trait.",
+   "L'accolade verte donne le nombre d'éléments du centre : 2.",
+   "Les trois paires grises font 6, un nombre pair, et 8 moins 6 donne 2."
+  ],
+  "a_voir": "Les 6 symétries hors du centre vont par paires ; il reste 2 éléments dans le centre."
+ },
+ {
+  "code": "49-280",
+  "a_dire": "Dire qu'un groupe dont le nombre d'éléments est le carré d'un nombre premier est commutatif.",
+  "legende_titre": "Ordre p au carré : commutatif",
+  "lecture": [
+   "À gauche, 4 ronds bleus rangés en 2 fois 2, pour p égal à 2.",
+   "À droite, 9 ronds bleus rangés en 3 fois 3, pour p égal à 3.",
+   "Sous chaque rangement, la case verte dit que le groupe est commutatif."
+  ],
+  "a_voir": "Dans les deux cas, le nombre d'éléments est p fois p, et le groupe est commutatif."
+ },
+ {
+  "code": "49-281",
+  "a_dire": "Dire que, pour un groupe de 9 éléments, le centre ne peut pas avoir 1 élément, que l'étape décisive est 3 éléments avec un quotient cyclique, et que le cas 9 donne la commutativité.",
+  "legende_titre": "Trois cas pour la taille du centre",
+  "lecture": [
+   "La case rouge du haut écarte le cas où le centre a 1 élément.",
+   "Les trois cases bleues sont les 3 paquets de 3 éléments : C, aC et a au carré C.",
+   "Les flèches orange passent d'un paquet au suivant ; ces 3 paquets forment un quotient cyclique.",
+   "La case verte du bas dit que, avec 9 éléments au centre, tout commute."
+  ],
+  "a_voir": "Le cas du milieu, avec 3 paquets cycliques, est l'étape qui porte la preuve."
+ },
+ {
+  "code": "49-282",
+  "a_dire": "Dire que conjuguer le centre par n'importe quel élément g redonne le centre.",
+  "legende_titre": "Le centre reste en place",
+  "lecture": [
+   "La case bleue de gauche est le centre C, avec les éléments 1 et z.",
+   "La flèche orange est la conjugaison par g.",
+   "La case verte de droite est le résultat : les mêmes éléments 1 et z.",
+   "L'égalité du bas dit que g C g moins un égale C."
+  ],
+  "a_voir": "Les éléments de la case de droite sont les mêmes que ceux de la case de gauche."
+ },
+ {
+  "code": "49-283",
+  "a_dire": "Dire que, si le centre a 3 éléments dans un groupe de 9, le quotient a 3 éléments et un seul élément a l'engendre.",
+  "legende_titre": "Un quotient de 3 éléments",
+  "lecture": [
+   "À gauche, les 3 cases bleues sont les 3 paquets de 3 éléments du groupe de 9.",
+   "La flèche orange passe au quotient G sur C.",
+   "À droite, les 3 ronds verts sont les 3 éléments du quotient : C, aC et a au carré C.",
+   "Les flèches orange en triangle montrent que a mène de chacun au suivant."
+  ],
+  "a_voir": "Un seul élément a parcourt les 3 éléments du quotient."
+ },
+ {
+  "code": "49-284",
+  "a_dire": "Dire que chaque élément du groupe de 9 s'écrit a puissance m fois un élément z du centre.",
+  "legende_titre": "Chaque élément : a^m fois z",
+  "lecture": [
+   "Chaque rangée de ronds correspond à une puissance de a : m égale 0, 1 ou 2.",
+   "Chaque colonne correspond à un des 3 éléments z du centre.",
+   "Le rond orange montre un élément écrit a puissance m fois z.",
+   "Les 3 fois 3 ronds font 9 : tout le groupe."
+  ],
+  "a_voir": "Les 3 rangées et les 3 colonnes couvrent les 9 éléments."
+ },
+ {
+  "code": "49-285",
+  "a_dire": "Dire que le centre d'un groupe de 9 éléments ne peut pas avoir 3 éléments, car alors tout commuterait et le centre en aurait 9.",
+  "legende_titre": "Le cas à 3 éléments se contredit",
+  "lecture": [
+   "Les trois cases sont les tailles possibles du centre : 1, 3 et 9.",
+   "La case grise, 1, est exclue.",
+   "La case rouge, 3, est celle que l'on suppose ; la flèche orange montre que tout commuterait alors.",
+   "La case verte, 9, est ce qu'on obtiendrait : une contradiction avec 3."
+  ],
+  "a_voir": "La flèche part de la case 3 et arrive à la case 9 : le cas 3 est impossible."
+ },
+ {
+  "code": "49-286",
+  "a_dire": "Dire que, pour le carré, faire s puis r ne donne pas la même symétrie que r puis s : le groupe de 8 éléments n'est pas commutatif.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "Le carré bleu du haut est le départ, avec les sommets a, b, c, d.",
+   "La flèche violette, s puis r, mène au carré violet de gauche.",
+   "La flèche orange, r puis s, mène au carré orange de droite.",
+   "Le signe rouge entre les deux carrés dit que les sommets ne sont pas aux mêmes places."
+  ],
+  "a_voir": "Les deux carrés du bas n'ont pas leurs sommets dans le même ordre."
+ },
+ {
+  "code": "49-287",
+  "a_dire": "Dire que dans une action triviale, chaque élément laisse chaque point en place, et que le pion forme à lui seul son orbite.",
+  "legende_titre": "Le pion ne bouge jamais",
+  "lecture": [
+   "Chaque ligne montre le carré avant et après une rotation : 1, r, r au carré ou r au cube.",
+   "Le point orange est un coin du carré : il se déplace.",
+   "Le rond bleu est le pion au centre : il reste à la même place dans chaque ligne.",
+   "Le pion seul forme son orbite."
+  ],
+  "a_voir": "Le coin orange change de place d'une ligne à l'autre, le pion bleu ne change jamais."
+ }
+]

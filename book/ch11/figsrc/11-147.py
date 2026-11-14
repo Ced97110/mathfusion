@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+cx, cy, R = 23, 31, 17
+disc(ax, cx, cy, R, 'sujet')
+line(ax, [(cx, cy), (cx + R, cy)], 'varie', lw=1.2)
+disc(ax, cx, cy, 0.8, 'varie')
+text(ax, cx + R / 2, cy + 2.6, '3 m', 'varie', 's')
+text(ax, cx, cy - 6, 'surface', 'sujet', 's')
+disc(ax, cx, cy, R, 'varie', fill=False, lw=1.8)
+text(ax, cx, 10, 'tour', 'varie', 's')
+text(ax, 62, 50, 'tour : 6π m', 'varie', 'm')
+text(ax, 62, 42, 'surface : 9π m²', 'sujet', 'm')
+text(ax, 62, 31, '9π ÷ 6π = 1,5 m', 'resultat', 'm', weight='bold')
+text(ax, 62, 23, '= 3 ÷ 2', 'resultat', 'm')
+text(ax, 62, 14, 'π a disparu', 'resultat', 's')
+save(fig, '11-147')

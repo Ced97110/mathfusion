@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+for x,l in zip([14,44,74],[r'$s$',r'$g(s)$',r'$f(g(s))$']): disc(ax,x,56,5,'sujet',fill=True); text(ax,x,56,l,'sujet','s')
+text(ax,14,66,r'$S$','sujet','m'); text(ax,44,66,r'$S$','sujet','m'); text(ax,74,66,r'$S$','sujet','m')
+arrow(ax,(20,56),(37,56),'varie'); text(ax,28.5,59.5,r'$g$','varie','s')
+arrow(ax,(51,56),(66,56),'varie'); text(ax,58.5,59.5,r'$f$','varie','s')
+arrow(ax,(14,50),(74,50),'resultat',curve=0.35); text(ax,44,36,r'$f\circ g$ : encore $S\to S$','resultat','s')
+text(ax,6,28,'associative','sujet','s',ha='left'); text(ax,60,28,r'$(f\circ g)\circ h=f\circ(g\circ h)$','sujet','s')
+text(ax,6,14,'neutre','sujet','s',ha='left'); text(ax,60,14,r'$f\circ 1_S=f$','sujet','s')
+line(ax,[(4,34),(84,34)],'fixe'); line(ax,[(4,21),(84,21)],'fixe')
+save(fig,'42-299')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,58,20,12,'sujet',label='30 %')
+arrow(ax,(23.5,64),(45.5,64),'varie'); text(ax,34.5,69,'÷ 100','varie','s')
+box(ax,46,58,38,12,'sujet',label=r'$Q$ = 0,30')
+box(ax,3,26,40,12,'limite',label='30 × 50 = 1 500')
+box(ax,46,26,38,12,'resultat',label='0,30 × 50 = 15')
+arrow(ax,(13,57.5),(13,38.5),'limite'); arrow(ax,(65,57.5),(65,38.5),'resultat')
+text(ax,23,19,'cent fois trop grand','limite','s'); text(ax,65,19,'juste','resultat','s')
+save(fig,'09-090')

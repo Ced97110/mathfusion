@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 14, 64, r'$\mathbb{Z}$', 'sujet', 'xl')
+text(ax, 32, 64, r'$\times$', 'encre', 'xl')
+text(ax, 62, 64, r'$(\mathbb{Z}\setminus\{0\})$', 'autre', 'xl')
+box(ax, 4, 38, 22, 10, 'sujet', label='tout entier', size='s')
+box(ax, 44, 38, 40, 10, 'autre', label='tout entier sauf 0', size='s')
+arrow(ax, (14, 59), (14, 48.5), 'sujet')
+arrow(ax, (62, 59), (64, 48.5), 'autre')
+text(ax, 15, 33, 'premier terme', 'sujet', 's')
+text(ax, 64, 33, 'second terme', 'autre', 's')
+text(ax, 34, 25, 'acceptés', 'resultat', 's')
+text(ax, 75, 25, 'refusé', 'limite', 's')
+for i, c in enumerate(['(3, 5)', '(0, 4)', '(7, 2)']):
+    box(ax, 4 + 20 * i, 10, 18, 9, 'resultat', label=c, size='s')
+box(ax, 66, 10, 18, 9, 'limite', label='(4, 0)', size='s')
+save(fig, '54-016')

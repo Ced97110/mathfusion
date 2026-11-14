@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,'sur les flèches','fixe','s')
+box(ax,4,44,12,10,'sujet',label=r'$e_1$'); arrow(ax,(17,49),(29,49),'varie'); text(ax,23,53,r'$L$','varie','m')
+box(ax,30,44,14,10,'resultat',label='(2 ; 1)',size='s')
+box(ax,46,44,12,10,'sujet',label=r'$e_2$'); arrow(ax,(59,49),(69,49),'varie'); text(ax,64,53,r'$L$','varie','m')
+box(ax,70,44,14,10,'resultat',label='(1 ; 3)',size='s')
+text(ax,44,32,'sur les produits','fixe','s')
+box(ax,4,14,24,12,'sujet',label=r'$e_1$ ∧ $e_2$',size='m'); arrow(ax,(29,20),(43,20),'varie'); text(ax,36,24,r'$\eta(L)$','varie','m')
+box(ax,44,14,40,12,'resultat',label='(2 ; 1) ∧ (1 ; 3)',size='m')
+save(fig,'76-089')

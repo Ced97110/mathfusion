@@ -1,0 +1,347 @@
+[
+ {
+  "code": "60-181",
+  "a_dire": "T envoie u sur r fois u plus le vecteur suivant de la chaîne ; pour le dernier vecteur, le suivant est 0.",
+  "legende_titre": "Deux parts dans l’image de u",
+  "lecture": [
+   "Le cadre bleu est u, ici le vecteur e₂. La flèche orange T l’envoie sur deux cadres.",
+   "Le cadre gris est r fois u, soit 2 fois e₂ : le même vecteur multiplié par 2.",
+   "Le cadre orange est (λ − r)u, soit e₁ : le vecteur suivant de la chaîne.",
+   "En bas, la chaîne va de e₂ à e₁, puis de e₁ à 0 (cadre vert)."
+  ],
+  "a_voir": "T e₂ est la somme de 2 fois e₂ et du suivant e₁ ; après e₁, le suivant est 0."
+ },
+ {
+  "code": "60-182",
+  "a_dire": "Sur chaque vecteur de la chaîne, T fait deux choses : il le multiplie par λ et il ajoute le vecteur suivant.",
+  "legende_titre": "La chaîne v, puis 0, et l’action de T",
+  "lecture": [
+   "Les trois cadres bleus sont les vecteurs de la chaîne ; le cadre vert est 0. Chaque flèche orange applique T − λ.",
+   "En dessous, T w est écrit comme une somme de deux cadres.",
+   "Le cadre gris λ w reste à sa place dans la chaîne.",
+   "Le cadre orange (T − λ) w passe au vecteur suivant ; pour le dernier vecteur, il vaut 0."
+  ],
+  "a_voir": "T garde une part sur place et envoie l’autre au suivant."
+ },
+ {
+  "code": "60-183",
+  "a_dire": "Le nombre de flèches avant 0 est la longueur de la chaîne, et c’est l’exposant de l’annulateur (λ − r).",
+  "legende_titre": "Compter les flèches jusqu’à 0",
+  "lecture": [
+   "Les cadres bleus sont v, (T − r)v et (T − r)²v ; le cadre vert est 0.",
+   "Les nombres orange 1, 2, 3 numérotent les flèches.",
+   "L’accolade orange regroupe les trois flèches : la longueur est 3.",
+   "Le grand cadre vert donne l’annulateur de v : (λ − r) puissance 3."
+  ],
+  "a_voir": "Trois flèches avant 0 donnent l’exposant 3."
+ },
+ {
+  "code": "60-184",
+  "a_dire": "Un bloc de Jordan de taille 3 pour la valeur 5 a des 5 sur la diagonale, des 1 juste au-dessus et des 0 ailleurs.",
+  "legende_titre": "Un tableau de trois lignes",
+  "lecture": [
+   "Les trois cases bleues, sur la diagonale, portent la valeur 5.",
+   "Les deux cases orange, juste au-dessus de la diagonale, portent 1.",
+   "Les quatre cases grises portent 0."
+  ],
+  "a_voir": "Le même nombre sur la diagonale et des 1 collés au-dessus."
+ },
+ {
+  "code": "60-185",
+  "a_dire": "La matrice de lignes (2, 1) et (0, 2) a une chaîne e₂ → e₁ → 0 de deux vecteurs, donc un seul bloc de taille 2.",
+  "legende_titre": "Une chaîne, une matrice",
+  "lecture": [
+   "En haut, la chaîne va de e₂ (bleu) à e₁ (orange), puis à 0 (vert) ; chaque flèche applique T − 2.",
+   "En bas, la matrice A a deux 2 bleus sur la diagonale, un 1 orange au-dessus et un 0 gris dessous.",
+   "À droite, T e₁ vaut 2 fois e₁, et T e₂ vaut e₁ plus 2 fois e₂."
+  ],
+  "a_voir": "Une chaîne de deux vecteurs donne un bloc de taille 2."
+ },
+ {
+  "code": "60-186",
+  "a_dire": "Pour cette matrice, il y a une seule chaîne de longueur 2 ; le diviseur élémentaire et le polynôme minimal valent tous deux (λ − 2)².",
+  "legende_titre": "Un bloc, deux polynômes égaux",
+  "lecture": [
+   "La chaîne e₂ → e₁ → 0 a deux flèches, marquées 1 et 2.",
+   "L’accolade orange dit : une chaîne, deux flèches.",
+   "Le cadre bleu donne le diviseur élémentaire (λ − 2)².",
+   "Le cadre violet donne le polynôme minimal, aussi (λ − 2)² ; le signe vert est le signe égal."
+  ],
+  "a_voir": "Avec une seule chaîne, les deux polynômes sont égaux."
+ },
+ {
+  "code": "60-187",
+  "a_dire": "La matrice 2·I a deux chaînes de longueur 1, donc deux blocs de taille 1 ; son polynôme minimal est de degré 1, plus petit que le caractéristique.",
+  "legende_titre": "Deux chaînes très courtes",
+  "lecture": [
+   "À gauche, la matrice 2·I en bleu.",
+   "À droite, e₁ et e₂ (bleu) sont chacun envoyés sur 0 (vert) par T − 2 : deux chaînes de longueur 1.",
+   "En dessous, le polynôme minimal (violet) est λ − 2, de degré 1.",
+   "Le polynôme caractéristique (bleu) est (λ − 2)², de degré 2."
+  ],
+  "a_voir": "Deux blocs de taille 1 donnent un polynôme minimal plus petit que le caractéristique."
+ },
+ {
+  "code": "60-188",
+  "a_dire": "Deux matrices peuvent avoir le même polynôme caractéristique sans être semblables ; la liste des diviseurs élémentaires les sépare.",
+  "legende_titre": "Même polynôme, listes différentes",
+  "lecture": [
+   "En haut, A en bleu (lignes 2, 1 et 0, 2) et A′ en violet (lignes 2, 0 et 0, 2).",
+   "Première ligne de cadres : le polynôme caractéristique est (λ − 2)² pour les deux ; le signe vert dit qu’il est égal.",
+   "Deuxième ligne : A a un seul diviseur élémentaire, (λ − 2)² ; A′ en a deux, λ − 2 et λ − 2 ; le signe orange dit qu’ils sont différents."
+  ],
+  "a_voir": "Le polynôme caractéristique est le même, la liste des diviseurs élémentaires change."
+ },
+ {
+  "code": "60-189",
+  "a_dire": "La forme de Jordan est faite de blocs de Jordan, un par diviseur élémentaire ; elle se distingue de la forme rationnelle, faite de blocs compagnons.",
+  "legende_titre": "Deux écritures de la même matrice",
+  "lecture": [
+   "À gauche, la forme de Jordan en bleu : 2 sur la diagonale, un 1 au-dessus.",
+   "À droite, la forme rationnelle en violet : le bloc compagnon de (λ − 2)², de lignes (0, 1) et (−4, 4).",
+   "Le signe orange dit que les deux matrices sont différentes."
+  ],
+  "a_voir": "Même matrice de départ, deux formes : Jordan avec des 1 au-dessus de la racine, rationnelle avec −4 et 4 en dernière ligne."
+ },
+ {
+  "code": "60-190",
+  "a_dire": "Le critère par la forme de Jordan demande des racines dans le corps ; sur les réels, la matrice de lignes (0, −1) et (1, 0) n’a pas de forme de Jordan.",
+  "legende_titre": "Quand le critère ne s’applique pas",
+  "lecture": [
+   "À gauche, la matrice réelle (0, −1 ; 1, 0) en bleu ; le texte rouge dit qu’elle n’a pas de forme de Jordan sur les réels.",
+   "À droite, la courbe bleue est le polynôme λ² + 1 ; elle reste au-dessus de la droite grise.",
+   "Le texte rouge dit qu’il n’y a aucune racine réelle ; le texte vert dit que, sur les complexes, il y a deux racines, i et −i."
+  ],
+  "a_voir": "La courbe ne touche pas la droite : pas de racine réelle, donc pas de forme de Jordan."
+ },
+ {
+  "code": "60-272",
+  "a_dire": "Avec la convention en colonnes, la colonne j de la matrice donne l’image du vecteur de base e_j.",
+  "legende_titre": "Où lire les images",
+  "lecture": [
+   "À gauche, la matrice de lignes (2, 1) et (0, 2) : la colonne 1 est bleue, la colonne 2 est orange.",
+   "À droite, dans le plan, e₁ et e₂ sont les deux points gris.",
+   "La flèche bleue est T e₁ = (2, 0), lue dans la colonne 1.",
+   "La flèche orange est T e₂ = (1, 2), lue dans la colonne 2."
+  ],
+  "a_voir": "Chaque colonne de la matrice est l’endroit où va le vecteur de base de même numéro."
+ },
+ {
+  "code": "60-191",
+  "a_dire": "On cherche les matrices U telles que UA = AU ; plus A est variée, moins il y en a.",
+  "legende_titre": "Quelles matrices passent avec A ?",
+  "lecture": [
+   "À gauche, pour A = 2·I, les quatre cases a, b, c, d de U sont libres (orange).",
+   "À droite, pour A = diag(2, 3), seules a et d sont libres ; les deux cases grises valent 0.",
+   "Sous chaque tableau, le nombre de cases libres : 4 à gauche, 2 à droite."
+  ],
+  "a_voir": "Avec A diagonale 2 puis 3, les cases hors diagonale de U sont forcées à 0."
+ },
+ {
+  "code": "60-192",
+  "a_dire": "U commute avec T si et seulement si U (λx) = λ U (x), c’est-à-dire si U respecte la multiplication par λ.",
+  "legende_titre": "Deux chemins dans un carré",
+  "lecture": [
+   "En haut à gauche, x (bleu) ; en haut à droite, λx, qui est T x (orange).",
+   "Les flèches orange horizontales multiplient par λ, c’est-à-dire appliquent T.",
+   "Les flèches violettes verticales appliquent U.",
+   "En bas à droite, le cadre vert λ·U(x) est atteint par les deux chemins."
+  ],
+  "a_voir": "Appliquer U puis multiplier par λ donne le même vecteur que multiplier puis appliquer U."
+ },
+ {
+  "code": "60-193",
+  "a_dire": "Les endomorphismes du module forment un anneau, noté Hom(M, M) : la somme et la composée de deux d’entre eux en sont encore.",
+  "legende_titre": "Un ensemble qui a une structure",
+  "lecture": [
+   "Le grand cadre en pointillés bleus est Hom(M, M).",
+   "Les deux cadres bleus U et V sont deux endomorphismes.",
+   "Les cadres verts U + V et U ∘ V sont leur somme et leur composée.",
+   "Les flèches orange partent de U et de V vers les deux résultats ; tout reste dans le grand cadre."
+  ],
+  "a_voir": "La somme et la composée ne sortent pas de Hom(M, M)."
+ },
+ {
+  "code": "60-194",
+  "a_dire": "Un endomorphisme est déterminé par les images des générateurs, et l’image de z₁ doit être tuée par ce qui tue z₁ ; ici 2 × w doit valoir 0.",
+  "legende_titre": "Où envoyer z₁ ?",
+  "lecture": [
+   "Le cadre bleu du haut rappelle que z₁ est dans ℤ/2 et que 2 × z₁ = 0.",
+   "Les trois disques sont les images possibles w dans ℤ/3 : 0, 1 et 2.",
+   "Pour w = 0, 2 × 0 = 0 : le cadre vert accepte.",
+   "Pour w = 1 et w = 2, 2 × w n’est pas 0 : les cadres rouges refusent."
+  ],
+  "a_voir": "Seule l’image 0 est permise pour z₁."
+ },
+ {
+  "code": "60-195",
+  "a_dire": "En écrivant w₁ = b₁₁ z₁ + b₁₂ z₂, la condition devient : 2 × b₁₂ est un multiple de 6.",
+  "legende_titre": "Quelles valeurs pour b₁₂ ?",
+  "lecture": [
+   "En haut, w₁ écrit avec ses coefficients, et la condition en bleu.",
+   "Le cercle de six disques est ℤ/6 : les nombres 0 à 5.",
+   "Les disques verts 0 et 3 vérifient la condition : 2 × 0 = 0 et 2 × 3 = 6.",
+   "Les disques gris 1, 2, 4, 5 ne la vérifient pas. En bas : b₁₂ vaut 0 ou 3."
+  ],
+  "a_voir": "Dans ℤ/6, seuls 0 et 3 conviennent pour b₁₂."
+ },
+ {
+  "code": "60-196",
+  "a_dire": "Les endomorphismes sont décrits par les matrices B = (bᵢⱼ) qui vérifient la divisibilité, chaque bᵢⱼ pris modulo dⱼ.",
+  "legende_titre": "Compter les matrices B permises",
+  "lecture": [
+   "Chaque cadre est une case de B pour ℤ/2 ⊕ ℤ/6, avec son nombre de choix.",
+   "Les cadres bleus b₁₁, b₂₁ et b₂₂ ont 2, 2 et 6 choix.",
+   "Le cadre orange b₁₂ est limité par la condition : multiple de 3 modulo 6, donc 2 choix.",
+   "En vert, le produit 2 × 2 × 2 × 6 = 48 endomorphismes."
+  ],
+  "a_voir": "Chaque case compte ses choix ; le produit est 48."
+ },
+ {
+  "code": "60-197",
+  "a_dire": "Si M est cyclique, les endomorphismes sont les éléments de D/(d) ; pour une somme de deux ℤ/2, qui n’est pas cyclique, il y en a 16, pas 2.",
+  "legende_titre": "Sans hypothèse cyclique",
+  "lecture": [
+   "À gauche (violet), M = ℤ/2 ⊕ ℤ/2 : quatre cases orange, chacune 0 ou 1, donc 16 endomorphismes.",
+   "À droite (bleu), D/(2) = ℤ/2 n’a que deux éléments, 0 et 1.",
+   "Le signe rouge 16 ≠ 2 montre que l’énoncé est faux ici."
+  ],
+  "a_voir": "Il y a 16 endomorphismes, pas seulement les 2 multiplications."
+ },
+ {
+  "code": "60-198",
+  "a_dire": "Pour A de lignes (0, 1) et (1, 0), les matrices qui commutent avec A sont les polynômes en A : a fois l’identité plus b fois A.",
+  "legende_titre": "Les matrices qui commutent avec A",
+  "lecture": [
+   "En haut, UA = AU donne b = c et a = d.",
+   "À gauche, U s’écrit avec a sur la diagonale et b en dehors (bleu).",
+   "Elle est égale à a fois l’identité (gris) plus b fois A (violet).",
+   "En bas, deux paramètres a et b : dimension 2, le degré de f."
+  ],
+  "a_voir": "U = a·identité + b·A : un polynôme en A."
+ },
+ {
+  "code": "60-199",
+  "a_dire": "Une matrice qui commute avec (1 0 ; 0 0) puis avec (0 1 ; 0 0) est une multiplication par un seul nombre a.",
+  "legende_titre": "Deux tests qui forcent la forme",
+  "lecture": [
+   "En haut, U est quelconque, avec quatre cases a, b, c, d (bleu).",
+   "Après le premier test, b et c valent 0 (orange).",
+   "Après le second test, a = d : U vaut a × 1 (vert)."
+  ],
+  "a_voir": "Deux commutations suffisent à réduire U à la multiplication par a."
+ },
+ {
+  "code": "60-200",
+  "a_dire": "Une matrice qui commute avec seulement A n’est pas forcément scalaire ; le mot « toutes » force le résultat.",
+  "legende_titre": "Remplacer « toutes » par « A »",
+  "lecture": [
+   "En haut, A (violet) et M (bleu), de lignes (1, 2) et (2, 1).",
+   "Au milieu, M A et A M valent chacun la matrice de lignes (2, 1) et (1, 2) : M commute avec A.",
+   "En dessous, M vaut 1 + 2A, un polynôme en A.",
+   "Le texte rouge dit que M n’est pas de la forme a × 1 : l’énoncé devient faux."
+  ],
+  "a_voir": "M commute avec A mais n’est pas scalaire."
+ },
+ {
+  "code": "60-201",
+  "a_dire": "La formule de Frobenius compte la dimension de l’espace des matrices qui commutent avec A en additionnant, pour chaque case (i, j), le plus petit des degrés nᵢ et nⱼ.",
+  "legende_titre": "Une case, un nombre de paramètres",
+  "lecture": [
+   "Pour A = 2·I, il y a deux facteurs invariants de degré 1 : n₁ = 1 et n₂ = 1, écrits en bleu autour du tableau.",
+   "Chaque case verte (i, j) vaut le plus petit des degrés : 1.",
+   "En bas, la somme 1 + 1 + 1 + 1 = 4, la dimension de toutes les matrices 2 × 2."
+  ],
+  "a_voir": "Quatre cases qui valent 1 donnent la dimension 4."
+ },
+ {
+  "code": "60-202",
+  "a_dire": "La dimension N est la somme, pour j de 1 à s, de (2s − 2j + 1) × nⱼ ; avec s = 3 et les degrés 1, 1, 2, on trouve 10.",
+  "legende_titre": "Trois produits, puis leur somme",
+  "lecture": [
+   "En haut, s = 3 et les degrés 1, 1, 2.",
+   "Chaque ligne j donne le coefficient 2s − 2j + 1 multiplié par le degré : 5 × 1, 3 × 1, 1 × 2.",
+   "Les petits carrés bleus comptent chaque produit : 5, 3 et 2.",
+   "En bas, vert : N = 5 + 3 + 2 = 10."
+  ],
+  "a_voir": "Les trois lignes ont 5, 3 et 2 carrés : en tout 10."
+ },
+ {
+  "code": "60-203",
+  "a_dire": "L’exemple de Jacobson est une matrice 3 × 3 à coefficients rationnels, point de départ de tout le calcul du chapitre.",
+  "legende_titre": "La matrice de départ",
+  "lecture": [
+   "Le tableau bleu est la matrice A, 3 × 3, avec ses neuf nombres, à coefficients dans ℚ.",
+   "En bas, les étapes du chapitre : former λ1 − A (orange), la réduire (orange), lire les facteurs invariants (vert).",
+   "Sous la case verte, les trois facteurs invariants obtenus : 1, λ − 1 et (λ − 1) au carré."
+  ],
+  "a_voir": "On part d’une matrice A précise sur ℚ et l'on arrive à ses facteurs invariants."
+ },
+ {
+  "code": "60-204",
+  "a_dire": "Étape 1 : on passe de la matrice de nombres à la matrice de polynômes λ1 − A, en retranchant chaque case de A à λ sur la diagonale.",
+  "legende_titre": "Soustraire A de λ sur la diagonale",
+  "lecture": [
+   "À gauche, λ1 (orange) : λ sur la diagonale, 0 ailleurs.",
+   "Au milieu, A (bleu), ici de lignes (3, 1) et (0, 3).",
+   "À droite, le résultat (vert) : λ − 3 sur la diagonale (orange), −1 et 0 hors de la diagonale (gris)."
+  ],
+  "a_voir": "Sur la diagonale on retranche, hors de la diagonale on prend l’opposé."
+ },
+ {
+  "code": "60-205",
+  "a_dire": "La réduction s’arrête quand la matrice est diagonale et que chaque case divise la suivante.",
+  "legende_titre": "Quand la réduction s’arrête",
+  "lecture": [
+   "Le tableau a deux cases bleues sur la diagonale, λ − 1 et (λ − 1)(λ + 1), et deux cases grises à 0.",
+   "Les trois lignes vertes vérifient les conditions : zéros hors de la diagonale, λ − 1 divise l’autre case, coefficient dominant 1.",
+   "En bas : arrêt, aucune opération."
+  ],
+  "a_voir": "Cette matrice est déjà normale."
+ },
+ {
+  "code": "60-206",
+  "a_dire": "La forme normale de λ1 − A est la matrice diagonale de cases 1, λ − 1 et (λ − 1)², chacune divisant la suivante.",
+  "legende_titre": "Le résultat de la réduction",
+  "lecture": [
+   "Le tableau a trois cases bleues sur la diagonale : 1, λ − 1 et (λ − 1)². Les six autres cases, grises, valent 0.",
+   "En haut, P et Q sont des matrices inversibles ; P(λ1 − A)Q est égal à ce tableau.",
+   "En bas, les trois cases de la diagonale sont recopiées en ligne. Chaque flèche orange va d'une case à la suivante et lit « divise »."
+  ],
+  "a_voir": "Une matrice diagonale dont chaque case divise la suivante."
+ },
+ {
+  "code": "60-207",
+  "a_dire": "Le polynôme caractéristique est le produit des facteurs invariants : les exposants s’additionnent, 0 + 1 + 2 = 3.",
+  "legende_titre": "Multiplier les trois cases",
+  "lecture": [
+   "En haut, les trois facteurs invariants bleus : 1 (zéro facteur λ − 1), λ − 1 (un facteur) et (λ − 1)² (deux facteurs).",
+   "En bas, le produit f en vert : trois cadres λ − 1, donc f égale (λ − 1) au cube.",
+   "L’accolade verte compte : 0 + 1 + 2 = 3 facteurs."
+  ],
+  "a_voir": "Le polynôme caractéristique f est le produit des cases : (λ − 1)³."
+ },
+ {
+  "code": "60-208",
+  "a_dire": "La trace est la somme des éléments de la diagonale ; les autres cases n’y entrent pas.",
+  "legende_titre": "Additionner la diagonale",
+  "lecture": [
+   "Le tableau de lignes (1, 5) et (7, 3) : les cases bleues 1 et 3 sont sur la diagonale (trait pointillé).",
+   "Les cases grises 5 et 7 ne comptent pas.",
+   "À droite, en vert : trace = 1 + 3 = 4."
+  ],
+  "a_voir": "On n’additionne que 1 et 3."
+ },
+ {
+  "code": "60-209",
+  "a_dire": "La trace de A vaut la somme des racines de f, chacune comptée autant de fois que son exposant : 1 + 1 + 1 = 3.",
+  "legende_titre": "Deux calculs, un même nombre",
+  "lecture": [
+   "À gauche (bleu), la trace de A : −1 + 0 + 4 = 3.",
+   "À droite (violet), f = (λ − 1)³ a la racine 1, écrite trois fois dans les trois disques ; leur somme est 3.",
+   "Le signe vert dit que les deux nombres sont égaux.",
+   "Le texte rouge dit que compter la racine une seule fois donne 1, pas 3."
+  ],
+  "a_voir": "Il faut compter la racine 1 trois fois."
+ }
+]

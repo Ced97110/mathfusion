@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+f = numberline(ax, 12, 76, 14, -2, 2, 1, arrow_right=False)
+r2 = math.sqrt(2)
+disc(ax, f(-r2), 14, 1.8, 'autre')
+disc(ax, f(r2), 14, 1.8, 'sujet')
+text(ax, f(-r2), 24, r'Marc : $-\sqrt{2}$', 'autre', 'm')
+text(ax, f(r2), 24, r'Léa : $\sqrt{2}$', 'sujet', 'm')
+box(ax, 24, 46, 40, 12, 'resultat', label='carré = 2 pour les deux')
+arrow(ax, (f(-r2), 27), (32, 45), 'varie')
+arrow(ax, (f(r2), 27), (56, 45), 'varie')
+save(fig, '63-003')

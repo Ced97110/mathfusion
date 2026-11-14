@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 2, 28, 34, 36, 'sujet')
+text(ax, 19, 59, 'entiers', 'sujet', 's')
+f = numberline(ax, 6, 28, 44, 0, 3)
+box(ax, 52, 28, 34, 36, 'autre')
+text(ax, 69, 59, 'cadran à 4 heures', 'autre', 's')
+for k in range(4):
+    a = math.radians(90 - 90 * k)
+    disc(ax, 69 + 8 * math.cos(a), 43 + 8 * math.sin(a), 3.2, 'autre', label=str(k), size='s')
+text(ax, 44, 46, '⊕', 'varie', 'xl')
+text(ax, 44, 23, 'somme directe', 'varie', 's')
+arrow(ax, (19, 28), (28, 16), 'fixe'); arrow(ax, (69, 28), (60, 16), 'fixe')
+box(ax, 14, 4, 60, 12, 'resultat', label='couples (entier, heure)')
+save(fig, '51-083')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 34, 34, 16, 'sujet', label='corps $E$\n' + r'$\mathbb{Q}(\sqrt[3]{2},\,j)$', size='s')
+box(ax, 52, 34, 34, 16, 'autre', label='corps $E^\\prime$\n' + r'$\mathbb{Q}(j\sqrt[3]{2},\,j)$', size='s')
+text(ax, 19, 29, 'degré 6', 'sujet', 's')
+text(ax, 69, 29, 'degré 6', 'autre', 's')
+arrow(ax, (37, 42), (51, 42), 'varie', both=True)
+text(ax, 44, 55, 'isomorphisme', 'varie', 's')
+box(ax, 12, 4, 64, 11, 'fixe', label='ℚ : chaque élément reste fixe', size='s')
+arrow(ax, (24, 16), (19, 26), 'fixe')
+arrow(ax, (64, 16), (69, 26), 'fixe')
+save(fig, '62-068')

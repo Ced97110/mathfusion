@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 52, 'deux écritures du vecteur', 'encre', 'm')
+box(ax, 4, 22, 30, 24, 'sujet', label=r'$\mathbf{v}$', size='xl')
+box(ax, 54, 22, 30, 24, 'sujet', label=r'$\vec{v}$', size='xl')
+text(ax, 44, 34, '=', 'resultat', 'xl')
+text(ax, 19, 17, 'imprimé : gras', 'sujet', 's')
+text(ax, 69, 17, 'à la main : flèche', 'sujet', 's')
+text(ax, 44, 6, 'même objet : un vecteur', 'resultat', 's')
+save(fig, '41-021')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 23, 66, r'dans $\mathbb{Q}$', 'sujet', 'm')
+text(ax, 65, 66, r'dans $\mathbb{Z}$', 'autre', 'm')
+box(ax, 4, 40, 38, 14, 'resultat', label=r'$3\times\frac{1}{3}=1$', size='l')
+text(ax, 23, 34, 'inverse de 3 : 1/3', 'resultat', 's')
+text(ax, 65, 58, r'$3\times0=0$', 'fixe', 'm')
+text(ax, 65, 50, r'$3\times1=3$', 'fixe', 'm')
+box(ax, 48, 32, 34, 11, 'limite', label='aucun inverse', size='m')
+box(ax, 4, 6, 80, 15, 'sujet', label='corps : tout élément non nul\na un inverse', size='m')
+save(fig, '54-027')

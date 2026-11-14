@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 12, 50, 64, 12, 'sujet', label=r'$\frac{3}{2}\times b=0$', size='l')
+arrow(ax, (26, 50), (22, 38), 'varie')
+arrow(ax, (62, 50), (66, 38), 'varie')
+text(ax, 44, 44, '× 2/3 des deux côtés', 'varie', 'm')
+box(ax, 2, 24, 40, 12, 'fixe', label=r'$\frac{2}{3}\times\frac{3}{2}\times b=b$')
+box(ax, 46, 24, 40, 12, 'fixe', label=r'$\frac{2}{3}\times 0=0$')
+arrow(ax, (22, 24), (38, 14), 'fixe')
+arrow(ax, (66, 24), (50, 14), 'fixe')
+box(ax, 26, 4, 36, 10, 'resultat', label=r'$b=0$', size='l')
+save(fig, '54-030')

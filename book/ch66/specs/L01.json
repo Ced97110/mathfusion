@@ -1,0 +1,335 @@
+[
+ {
+  "code": "66-001",
+  "a_dire": "Le mot n-gone désigne d'un coup toutes les figures obtenues avec n points à égale distance sur un cercle.",
+  "legende_titre": "Un seul mot pour trois figures et toutes les autres",
+  "lecture": [
+   "Chaque cercle gris porte des points orange à égale distance : 3, 4 puis 6.",
+   "Le polygone bleu relie ces points : triangle, carré, hexagone.",
+   "L'accolade du bas regroupe les trois figures sous un seul mot, avec n au moins égal à 3."
+  ],
+  "a_voir": "Le nombre de points est le nombre de côtés, et un seul mot couvre tous les cas."
+ },
+ {
+  "code": "66-002",
+  "a_dire": "Le triangle, le carré et l'hexagone se tracent en quelques traits, mais cela ne donne pas de méthode pour tout n.",
+  "legende_titre": "Trois polygones tracés en quelques traits",
+  "lecture": [
+   "À gauche, le triangle bleu utilise un sommet sur deux de l'hexagone ; les points gris sont les autres sommets.",
+   "Au milieu, les deux diamètres orange sont perpendiculaires et donnent les 4 sommets du carré.",
+   "À droite, le rayon orange r est reporté sur le cercle et donne les 6 sommets de l'hexagone."
+  ],
+  "a_voir": "Chaque cas a son tracé court, propre à sa valeur de n."
+ },
+ {
+  "code": "66-003",
+  "a_dire": "Le pentagone se construit, mais personne n'a réussi l'heptagone ni l'ennéagone : la difficulté dépend de n.",
+  "legende_titre": "Trois nombres de côtés, trois situations",
+  "lecture": [
+   "Le pentagone vert, plein, est la figure qui se construit.",
+   "L'heptagone (7 côtés) et l'ennéagone (9 côtés) sont en pointillés gris : personne n'a réussi à les tracer.",
+   "Les points orange sont leurs sommets, placés par la fiche mais non obtenus par la construction."
+  ],
+  "a_voir": "L'échec touche des valeurs précises de n, pas tous les polygones."
+ },
+ {
+  "code": "66-004",
+  "a_dire": "On ne demande plus si un polygone précis se construit, mais pour quels n il se construit ; la réponse est une liste qui contient 17 et pas 7.",
+  "legende_titre": "La question change : pour quels n ?",
+  "lecture": [
+   "Les cases vertes 3, 4, 5, 6 sont les polygones qui se construisent.",
+   "La case grise en pointillés, 7, résiste.",
+   "La case verte 17 montre que la liste continue plus loin : Gauss l'a construit en 1796."
+  ],
+  "a_voir": "La réponse est une liste de valeurs de n, et 17 y figure alors que 7 n'y figure pas."
+ },
+ {
+  "code": "66-005",
+  "a_dire": "Pour savoir si le n-gone se construit, on calcule un seul nombre à partir de n : phi de n, le nombre d'entiers de 1 à n sans diviseur commun avec n.",
+  "legende_titre": "Un seul nombre à compter pour chaque n",
+  "lecture": [
+   "Dans la rangée du haut, n = 5 : les cases vertes 1, 2, 3, 4 sont sans diviseur commun avec 5, la case 5 est grise.",
+   "Dans la rangée du bas, n = 6 : seules les cases vertes 1 et 5 sont sans diviseur commun avec 6.",
+   "Le nombre de cases vertes est phi de n : 4 pour n = 5, 2 pour n = 6.",
+   "La case bleue du bas relie n, phi de n et la question : le n-gone se construit-il ?"
+  ],
+  "a_voir": "Le seul nombre à compter à partir de n est phi de n."
+ },
+ {
+  "code": "66-006",
+  "a_dire": "La quadrature du cercle est le nom du problème : tracer à la règle et au compas un carré de même aire qu'un cercle, de côté racine de pi.",
+  "legende_titre": "Un cercle, un carré de même aire",
+  "lecture": [
+   "Le disque bleu a pour rayon 1 (trait orange) et pour aire pi.",
+   "Le carré violet doit avoir la même aire, pi.",
+   "L'accolade sous le carré montre son côté : racine carrée de pi."
+  ],
+  "a_voir": "Le côté du carré à tracer mesure racine de pi, un peu moins de 2 fois le rayon."
+ },
+ {
+  "code": "66-007",
+  "a_dire": "Pour montrer que la quadrature est impossible, il suffit de montrer que pi n'est racine d'aucun polynôme à coefficients entiers.",
+  "legende_titre": "Ramener le dessin à une question sur un nombre",
+  "lecture": [
+   "Les deux premières boîtes bleues suivent l'hypothèse : si racine de pi se construit, il est racine d'un polynôme.",
+   "La boîte rouge en dit la suite : pi serait alors racine d'un polynôme, ce qui est faux.",
+   "La boîte verte du bas dit ce qu'il suffit de montrer : pi n'est racine d'aucun polynôme."
+  ],
+  "a_voir": "Il suffit de montrer que pi n'est racine d'aucun polynôme."
+ },
+ {
+  "code": "66-008",
+  "a_dire": "Lindemann a démontré en 1882 qu'aucun polynôme à coefficients entiers n'a pi pour racine, alors que 2 et racine de 2 en ont.",
+  "legende_titre": "Des nombres qui ont un polynôme, et pi qui n'en a pas",
+  "lecture": [
+   "Sur la droite graduée, les points verts 2 et racine de 2 ont chacun un polynôme : x - 2 et x au carré - 2.",
+   "Le point rouge, pi, environ 3,14159, n'a aucun polynôme.",
+   "Lindemann a démontré ce manque en 1882."
+  ],
+  "a_voir": "Le résultat porte sur tous les polynômes à la fois, pas sur un essai."
+ },
+ {
+  "code": "66-009",
+  "a_dire": "Hermite a montré en 1873 que e n'est racine d'aucun polynôme à coefficients entiers, par le même argument que pour pi, en plus simple.",
+  "legende_titre": "Deux nombres, une même propriété",
+  "lecture": [
+   "Sur la droite graduée, e, e au carré et e au cube tombent entre deux entiers : 2,718 ; 7,389 ; 20,09.",
+   "La boîte bleue est le résultat d'Hermite sur e, la violette celui de Lindemann sur pi.",
+   "L'accolade orange dit que l'argument est le même, plus simple pour e.",
+   "La boîte verte donne la propriété commune : aucun polynôme à coefficients entiers n'a e ni pi pour racine."
+  ],
+  "a_voir": "e comme pi n'est racine d'aucun polynôme à coefficients entiers."
+ },
+ {
+  "code": "66-010",
+  "a_dire": "Chaque étape d'une construction résout une équation de degré 1 ou 2 ; un dessin au compas devient donc une suite d'équations.",
+  "legende_titre": "Du trait à l'équation",
+  "lecture": [
+   "À gauche, la diagonale orange d du carré de côté 1 se trouve avec l'équation d au carré = 2, de degré 2.",
+   "À droite, deux droites qui se coupent donnent un point par une équation de degré 1.",
+   "Une droite et un cercle, ou deux cercles, donnent des points verts par une équation de degré 2."
+  ],
+  "a_voir": "Chaque point tracé vient d'une équation de degré 1 ou 2."
+ },
+ {
+  "code": "66-011",
+  "a_dire": "Construire le n-gone revient à construire le nombre cosinus de 2 pi sur n, dont le degré se calcule avec phi de n.",
+  "legende_titre": "Le plan : viser un seul nombre",
+  "lecture": [
+   "À gauche, le pentagone sur le cercle de rayon 1 : le sommet zêta est à 72 degrés du point 1 et le point orange c est sa position horizontale.",
+   "La boîte du haut est le but de départ, construire le 5-gone.",
+   "La boîte orange le remplace par un seul nombre, environ 0,309 ; la verte donne son degré 2, lu avec phi de 5 = 4."
+  ],
+  "a_voir": "Le but passe d'une figure entière à un seul nombre dont on calcule le degré."
+ },
+ {
+  "code": "66-012",
+  "a_dire": "Les sommets zêta et zêta puissance 4 sont symétriques : leurs traits verticaux tombent au même point c de l'axe.",
+  "legende_titre": "Cinq points sur le cercle et un point c sur l'axe",
+  "lecture": [
+   "Les cinq points sont à égale distance sur le cercle de rayon 1, dont le point 1 à droite ; zêta et zêta puissance 4 sont en orange.",
+   "Le trait orange en pointillés relie zêta et zêta puissance 4 ; il est vertical et coupe l'axe horizontal au point orange c.",
+   "L'arc orange marque l'angle de 72 degrés entre le point 1 et zêta."
+  ],
+  "a_voir": "Zêta et zêta puissance 4 ont le même point c sur l'axe."
+ },
+ {
+  "code": "66-013",
+  "a_dire": "Le signe zêta, lu « dzêta », nomme le premier sommet rencontré après le point 1 en tournant dans le sens inverse des aiguilles d'une montre.",
+  "legende_titre": "Un nom pour le premier sommet",
+  "lecture": [
+   "Le point bleu large est le sommet à nommer ; les points gris sont les autres sommets.",
+   "La flèche orange part du point 1 et tourne de 72 degrés, soit 2 pi sur 5, jusqu'à ce point.",
+   "À droite, le signe zêta et sa lecture « dzêta »."
+  ],
+  "a_voir": "Zêta est le sommet atteint après un cinquième de tour depuis 1."
+ },
+ {
+  "code": "66-014",
+  "a_dire": "Le signe c remplace la longue phrase « position horizontale du premier sommet » : c vaut cosinus de 2 pi sur 5, environ 0,309.",
+  "legende_titre": "Une lettre pour une phrase",
+  "lecture": [
+   "Le point bleu est zêta ; le trait orange en pointillés descend de lui jusqu'à l'axe.",
+   "Le gros trait orange, du centre au point c, mesure environ 0,309.",
+   "En bas, la phrase de la boîte bleue est égale à la boîte orange c = cosinus de 2 pi sur 5."
+  ],
+  "a_voir": "Le signe c est la longueur horizontale entre le centre et le pied du trait."
+ },
+ {
+  "code": "66-015",
+  "a_dire": "Multiplier deux nombres de module 1 additionne leurs angles : zêta fois zêta est le sommet à 144 degrés, le deuxième sommet.",
+  "legende_titre": "Les angles s'additionnent",
+  "lecture": [
+   "Le premier arc orange tourne de 72 degrés et mène au point zêta.",
+   "Le deuxième arc orange ajoute 72 degrés et mène au point zêta au carré.",
+   "Le texte vert de droite additionne les deux tours : 72 degrés + 72 degrés = 144 degrés."
+  ],
+  "a_voir": "Chaque produit par zêta fait avancer d'un sommet, donc de 72 degrés."
+ },
+ {
+  "code": "66-016",
+  "a_dire": "Après cinq tours de 72 degrés on revient au point 1 : zêta puissance 5 vaut 1, et les cinq sommets sont solutions de z puissance 5 = 1.",
+  "legende_titre": "Cinq pas pour faire un tour",
+  "lecture": [
+   "Les cinq points bleus sont zêta, zêta au carré, zêta au cube, zêta puissance 4 ; le point vert est le point 1.",
+   "Chaque flèche orange avance de 72 degrés ; les angles 72, 144, 216, 288, 360 sont écrits dans le cercle.",
+   "La cinquième flèche arrive en 1 au bout de 360 degrés."
+  ],
+  "a_voir": "Le cinquième sommet retombe sur le point 1."
+ },
+ {
+  "code": "66-017",
+  "a_dire": "Le point c suffit : la perpendiculaire en c donne zêta et zêta puissance 4, puis le compas reporte le côté pour les autres sommets.",
+  "legende_titre": "Tout le polygone depuis un seul point",
+  "lecture": [
+   "Le point orange c est placé sur l'axe horizontal ; la droite orange verticale passe par c.",
+   "Elle coupe le cercle en deux points bleus, zêta et zêta puissance 4.",
+   "Les petits arcs en pointillés orange reportent la longueur du côté et donnent les points verts."
+  ],
+  "a_voir": "Placer c suffit pour obtenir les cinq sommets."
+ },
+ {
+  "code": "66-018",
+  "a_dire": "La valeur annoncée de c se calcule en trois actions permises : racine carrée de 5, moins 1, divisé par 4.",
+  "legende_titre": "La formule de c, pas à pas sur la droite",
+  "lecture": [
+   "Le point bleu est racine de 5, environ 2,236.",
+   "La première flèche orange retire 1 : le point orange est à environ 1,236.",
+   "La deuxième flèche divise par 4 : le point vert est c, environ 0,309."
+  ],
+  "a_voir": "Trois actions simples mènent de 5 à c."
+ },
+ {
+  "code": "66-019",
+  "a_dire": "Une racine n-ième de l'unité est un nombre complexe z tel que z puissance n = 1 ; il y en a 2 pour n = 2 et 4 pour n = 4.",
+  "legende_titre": "Les nombres dont la puissance n vaut 1",
+  "lecture": [
+   "À gauche, les 2 points bleus sont 1 et −1 : leur carré vaut 1.",
+   "À droite, les 4 points bleus sont 1, −1 et deux nombres complexes.",
+   "Chaque cercle a pour rayon 1 et les points sont tous sur lui."
+  ],
+  "a_voir": "Le nombre de solutions est égal à la puissance : 2 pour n = 2, 4 pour n = 4."
+ },
+ {
+  "code": "66-020",
+  "a_dire": "Il y a exactement n racines n-ièmes de l'unité, aux angles 0, 2 pi sur n, et ainsi de suite ; pour n = 6 : 0, 60, 120, 180, 240, 300 degrés.",
+  "legende_titre": "Six parts égales, six solutions",
+  "lecture": [
+   "Le cercle est partagé en 6 parts égales par les traits gris.",
+   "Les 6 points bleus sont aux angles 0, 60, 120, 180, 240 et 300 degrés.",
+   "L'arc orange marque l'angle d'un sixième de tour, 2 pi sur 6."
+  ],
+  "a_voir": "Six points égaux sur le cercle sont les six solutions."
+ },
+ {
+  "code": "66-021",
+  "a_dire": "Le signe zêta indice n est le sommet d'angle 2 pi sur n ; l'indice n dit en combien de parts égales le cercle est coupé.",
+  "legende_titre": "Lire zêta indice n",
+  "lecture": [
+   "Le point bleu à 60 degrés est zêta indice 6 ; l'arc orange marque cet angle.",
+   "Les points gris portent les puissances de zêta indice 6, jusqu'à la puissance 5.",
+   "À droite, le signe zêta indice n est découpé : zêta est un sommet, n est le nombre de parts égales."
+  ],
+  "a_voir": "L'indice n compte les parts ; ici n = 6 donne 60 degrés."
+ },
+ {
+  "code": "66-022",
+  "a_dire": "Le signe z puissance 12 écrit en peu de signes un produit de 12 facteurs tous égaux à z.",
+  "legende_titre": "Douze facteurs en un signe",
+  "lecture": [
+   "Le signe bleu z puissance 12 est en haut.",
+   "La flèche orange le relie aux 12 cases bleues, chacune égale à z.",
+   "L'accolade compte les 12 facteurs : c'est le petit chiffre de l'exposant."
+  ],
+  "a_voir": "Le petit chiffre en haut à droite dit combien de cases z on multiplie."
+ },
+ {
+  "code": "66-023",
+  "a_dire": "Le signe zêta indice n puissance k est le sommet atteint après k pas de 2 pi sur n depuis le point 1.",
+  "legende_titre": "Compter les pas depuis 1",
+  "lecture": [
+   "Les deux flèches orange, numérotées 1 et 2, font deux pas de 60 degrés à partir de 1.",
+   "Le point bleu atteint est zêta indice 6 au carré, à 120 degrés.",
+   "Le point violet en bas est zêta indice 6 puissance 4, après 4 pas, à 240 degrés."
+  ],
+  "a_voir": "L'exposant k est le nombre de pas."
+ },
+ {
+  "code": "66-024",
+  "a_dire": "Le signe C désigne l'ensemble de tous les nombres complexes, c'est-à-dire tous les points du plan.",
+  "legende_titre": "Un signe pour tout le plan",
+  "lecture": [
+   "Le rectangle bleu clair est le plan entier, nommé C en haut à droite.",
+   "Le point orange est le point d'abscisse 3 et d'ordonnée 2, un nombre complexe.",
+   "Le point vert, 5 sur l'axe horizontal, en est un aussi."
+  ],
+  "a_voir": "Chaque point du plan est un nombre de C."
+ },
+ {
+  "code": "66-025",
+  "a_dire": "Les racines n-ièmes de l'unité se multiplient sans sortir de la liste : multiplier additionne les angles, et chaque racine est une puissance de zêta indice n.",
+  "legende_titre": "Multiplier deux sommets donne un sommet",
+  "lecture": [
+   "Le point bleu est à 60 degrés, le point violet à 180 degrés.",
+   "L'arc orange ajoute 180 degrés à 60 degrés.",
+   "Il arrive au point vert à 240 degrés, un autre des 6 sommets."
+  ],
+  "a_voir": "Le produit de deux sommets retombe sur un sommet."
+ },
+ {
+  "code": "66-026",
+  "a_dire": "Le signe U est la lettre que Jacobson donne au groupe des racines n-ièmes de l'unité ; pour n = 4, c'est le groupe des 4 sommets du carré.",
+  "legende_titre": "Une lettre pour le groupe des sommets",
+  "lecture": [
+   "Le cadre en pointillés bleus entoure tout le groupe : le cercle et ses 4 sommets.",
+   "Les 4 points bleus sont les 4 racines, sommets du carré.",
+   "À droite, la lecture de U et la remarque qu'il s'agit d'une notation de Jacobson."
+  ],
+  "a_voir": "U désigne l'ensemble des 4 sommets pris ensemble."
+ },
+ {
+  "code": "66-027",
+  "a_dire": "Une racine primitive est un sommet dont les puissances donnent tous les sommets ; celui à 120 degrés n'en atteint que 3 sur 6.",
+  "legende_titre": "Ce que chaque sommet atteint",
+  "lecture": [
+   "À gauche, le pas de 60 degrés bleu passe par les 6 sommets : racine primitive.",
+   "À droite, le pas de 120 degrés violet ne passe que par 3 sommets.",
+   "Les 3 points gris de droite ne sont jamais atteints."
+  ],
+  "a_voir": "Une racine primitive atteint tout le groupe, l'autre non."
+ },
+ {
+  "code": "66-028",
+  "a_dire": "Le groupe U a exactement phi de n générateurs : 4 pour n = 5, 2 pour n = 6.",
+  "legende_titre": "Combien de sommets engendrent tout le groupe",
+  "lecture": [
+   "À gauche, n = 5 : les 4 points verts, tous sauf 1, engendrent tout le groupe.",
+   "À droite, n = 6 : seuls 2 points verts, à 60 et 300 degrés, engendrent tout.",
+   "Les points gris, dont le point 1, n'engendrent pas tout le groupe."
+  ],
+  "a_voir": "Le nombre de points verts est phi de n."
+ },
+ {
+  "code": "66-029",
+  "a_dire": "Pour n = 5, les entiers 1, 2, 3, 4 sont premiers avec 5, donc phi de 5 = 4 et les quatre sommets autres que 1 sont primitifs.",
+  "legende_titre": "Le cas n = 5 : tous les sommets autres que 1",
+  "lecture": [
+   "Les quatre points verts sont zêta, zêta au carré, zêta au cube, zêta puissance 4.",
+   "Les flèches orange suivent les puissances de zêta au carré : en 5 pas elles visitent les 5 sommets.",
+   "Le point gris est le point 1 ; les quatre verts sont primitifs, phi de 5 = 4."
+  ],
+  "a_voir": "Un pas de 2 sommets suffit à visiter tous les sommets."
+ },
+ {
+  "code": "66-030",
+  "a_dire": "Pour n = 6, seuls 1 et 5 sont premiers avec 6, donc phi de 6 = 2 ; zêta indice 6 au carré n'atteint que 3 sommets sur 6.",
+  "legende_titre": "Le cas n = 6 : tous les sommets ne sont pas primitifs",
+  "lecture": [
+   "Chaque point porte son exposant, de 1 à 6 ; l'exposant 6 est le point 1.",
+   "Les points verts, 1 et 5, sont primitifs : phi de 6 = 2.",
+   "Le triangle violet relie 2, 4 et 6 : zêta 6 au carré, multiplié 3 fois, revient à 1, donc n'atteint que 3 sommets sur 6.",
+   "Le point 3, gris, n'est pas primitif non plus."
+  ],
+  "a_voir": "Zêta 6 au carré tourne en rond sur 3 sommets seulement."
+ }
+]

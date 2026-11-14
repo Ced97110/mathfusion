@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+O=(8,12);F=(40,12);P=(40,36)
+poly(ax,[O,F,P],'sujet')
+line(ax,[(38,12),(38,14),(40,14)],'sujet')
+line(ax,[O,P],'varie',lw=1.6)
+text(ax,24,28,r'$OP=1$','varie','s',ha='right')
+text(ax,24,8.5,r'$x=0{,}8$','sujet','s')
+text(ax,43,24,r'$y=0{,}6$','sujet','s',ha='left')
+text(ax,O[0]-1,O[1]-3,'O','encre','s'); text(ax,P[0]+1.5,P[1]+3,'P','encre','s')
+text(ax,66,52,r'$\cos\theta=\frac{x}{1}=x$','resultat','m')
+text(ax,66,42,r'$\sin\theta=\frac{y}{1}=y$','resultat','m')
+save(fig,'26-046')

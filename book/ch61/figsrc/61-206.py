@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+line(ax, [(6, 14), (82, 14)], 'fixe', lw=1.3)
+line(ax, [(30, 8), (30, 56)], 'sujet', lw=1.3)
+line(ax, [(6, 44), (82, 44)], 'resultat', lw=1.3)
+line(ax, [(30, 17), (33, 17), (33, 14)], 'sujet', lw=0.8)
+line(ax, [(30, 41), (33, 41), (33, 44)], 'sujet', lw=0.8)
+text(ax, 38, 19, '90°', 'sujet', 's'); text(ax, 38, 39, '90°', 'sujet', 's')
+text(ax, 64, 10, 'droite donnée', 'fixe', 's')
+text(ax, 34, 29, 'perpendiculaire', 'sujet', 's', ha='left')
+text(ax, 64, 48.5, 'parallèle', 'resultat', 's')
+save(fig, '61-206')

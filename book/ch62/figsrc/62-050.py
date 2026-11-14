@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 6, 76, 76, 12, 'fixe', label=r'$x^2-2$ : pas de racine dans ℚ', size='s')
+arrow(ax, (44, 75), (44, 69), 'varie')
+box(ax, 6, 57, 76, 12, 'fixe', label=r'prendre les polynômes ℚ[$x$]', size='s')
+arrow(ax, (44, 56), (44, 50), 'varie')
+box(ax, 6, 38, 76, 12, 'varie', label='même reste : même objet', size='s')
+arrow(ax, (44, 37), (44, 31), 'varie')
+box(ax, 6, 19, 76, 12, 'sujet', label=r'les restes : ℚ[$x$]/($x^2-2$)', size='s')
+arrow(ax, (44, 18), (44, 12), 'varie')
+box(ax, 6, 0.5, 76, 11.5, 'resultat', label=r'règle $x^2-2=0$ : racine $x$', size='s')
+save(fig, '62-050')

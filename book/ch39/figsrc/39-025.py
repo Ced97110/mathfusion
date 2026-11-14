@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+s = 1.5
+O = (10, 10)
+H = (O[0] + 34.64 * s, 10)
+P = (H[0], 10 + 20 * s)
+line(ax, [(4, 10), (82, 10)], 'fixe', lw=0.6)
+line(ax, [O, P], 'fixe')
+line(ax, [O, H], 'fixe')
+line(ax, [H, P], 'sujet', lw=2.4)
+m = 2.2
+line(ax, [(H[0] - m, 10), (H[0] - m, 10 + m), (H[0], 10 + m)], 'fixe', lw=0.6)
+disc(ax, *O, 1.0, 'fixe'); disc(ax, *H, 1.0, 'fixe'); disc(ax, *P, 1.4, 'sujet')
+text(ax, 6, 10, r'$O$', 'fixe', 'm')
+text(ax, H[0], 5.5, r'$H$', 'fixe', 'm')
+text(ax, P[0], P[1] + 4.5, r'$P$', 'sujet', 'm')
+text(ax, 36, 5.5, r'$x$', 'fixe', 'm')
+text(ax, H[0] + 3, 28, r'$y = HP = 20$ km', 'sujet', 'm', ha='left')
+text(ax, H[0] + 3, 22, 'vers le nord', 'sujet', 's', ha='left')
+save(fig, '39-025')

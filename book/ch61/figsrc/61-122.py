@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 6, 52, 42, 'sujet', fill=True)
+text(ax, 28, 43, r'$\mathbb{Q}(\sqrt{2})$', 'sujet', 'm')
+box(ax, 6, 10, 44, 26, 'fixe')
+text(ax, 28, 31.5, r'$\mathbb{Q}$ : coefficients', 'fixe', 's')
+for i, n in enumerate(['1', '0', '−3']): box(ax, 10 + i * 13.5, 14, 11, 11, 'fixe', label=n, size='m')
+arrow(ax, (55, 27), (62, 27), 'resultat', lw=1.2)
+box(ax, 63, 20, 23, 14, 'resultat', label=r'$x^2 - 3$', size='m')
+text(ax, 74.5, 14, r'annule $\sqrt{3}$', 'resultat', 's')
+save(fig, '61-122')

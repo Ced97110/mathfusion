@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,4,44,26,10,'sujet',label=r'$x = -6$')
+box(ax,58,44,26,10,'autre',label=r'$x^2 = 36$')
+arrow(ax,(31,49),(57,49),'varie')
+text(ax,44,53,'au carré','varie','s')
+text(ax,17,40,'1 solution','sujet','s')
+text(ax,71,40,'2 solutions','autre','s')
+f=numberline(ax,8,76,24,-8,8,labels=False,arrow_right=False)
+disc(ax,f(-6),24,2.2,'sujet'); disc(ax,f(6),24,2.2,'limite')
+text(ax,f(-6),18,'−6','sujet'); text(ax,f(6),18,'6','limite'); text(ax,f(0),18,'0','fixe')
+text(ax,44,8,'le 6 n’était pas au départ','limite','s')
+save(fig,'22-110')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 76, 'départ : a = b', 'fixe', 's')
+box(ax, 6, 60, 28, 9, 'sujet', label=r'$a$ : 2 $\times$ 3'); box(ax, 54, 60, 28, 9, 'autre', label=r'$b$ : 6')
+arrow(ax, (22, 59), (38, 51), 'fixe'); arrow(ax, (66, 59), (50, 51), 'fixe')
+disc(ax, 44, 44, 7, 'sujet', label='6'); text(ax, 54, 44, 'un seul nombre', 'sujet', 's', ha='left')
+text(ax, 54, 39, 'étape clé', 'sujet', 's', ha='left', weight='bold')
+arrow(ax, (44, 36), (44, 21), 'varie'); text(ax, 47, 29, r'$+\,c$ (5)', 'varie', 's', ha='left')
+box(ax, 22, 11, 44, 9, 'resultat', label=r'$a+c=b+c$')
+text(ax, 44, 5, 'les deux : 11', 'resultat', 's')
+save(fig, '16-053')

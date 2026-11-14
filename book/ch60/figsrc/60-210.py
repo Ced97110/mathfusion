@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 86, 'facteurs invariants', 'sujet', 'm', weight='bold')
+box(ax, 6, 68, 36, 11, 'sujet', label=r'$d_1=\lambda-1$')
+box(ax, 46, 68, 36, 11, 'sujet', label=r'$d_2=(\lambda-1)^2$')
+text(ax, 44, 62, 'ici : les mêmes', 'fixe', 's')
+text(ax, 44, 56, 'diviseurs élémentaires', 'autre', 'm', weight='bold')
+box(ax, 6, 39, 36, 11, 'autre', label=r'$\lambda-1$')
+box(ax, 46, 39, 36, 11, 'autre', label=r'$(\lambda-1)^2$')
+arrow(ax, (64, 38), (64, 20), 'resultat')
+text(ax, 24, 13.5, 'polynôme minimal', 'resultat', 'm', weight='bold')
+box(ax, 46, 8, 36, 11, 'resultat', label=r'$(\lambda-1)^2$')
+save(fig, '60-210')

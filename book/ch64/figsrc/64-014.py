@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 6, 42, 76, 20, 'sujet')
+text(ax, 44, 55, 'moitié 1 : groupes finis', 'sujet', 'm', weight='bold')
+text(ax, 44, 48, 'quels groupes se découpent ?', 'sujet', 's')
+box(ax, 6, 4, 76, 20, 'autre')
+text(ax, 44, 17, 'moitié 2 : équations', 'autre', 'm', weight='bold')
+text(ax, 44, 10, 'lesquelles ont des racines ?', 'autre', 's')
+arrow(ax, (44, 41.5), (44, 24.5), 'varie')
+text(ax, 48, 33, 'correspondance de Galois', 'varie', 's', ha='left')
+save(fig, '64-014')

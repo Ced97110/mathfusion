@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+f = numberline(ax, 8, 70, 32, 0, 70, step=10, every=2, arrow_right=False)
+ax.add_patch(Rectangle((f(0), 33.5), f(60) - f(0), 2.5, fc=FILL['fixe'], ec=COL['fixe'], lw=0.6, zorder=2))
+line(ax, [(f(60), 31), (f(60), 38)], 'varie', lw=1.4)
+disc(ax, f(55), 40.5, 1.5, 'resultat'); text(ax, f(55) - 3, 45, '55', 'resultat', 'm')
+disc(ax, f(65), 40.5, 1.5, 'limite'); text(ax, f(65) + 3, 45, '65', 'limite', 'm')
+text(ax, 44, 17, '2 h 55 min : simplifié', 'resultat', 'm', weight='bold')
+text(ax, 44, 8, '2 h 65 min : pas simplifié', 'limite', 'm', weight='bold')
+save(fig, '11-066')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 6, 80, 52, 'autre')
+text(ax, 10, 52, r'$\mathbb{C}$ : toutes les racines', 'autre', 'm', ha='left')
+box(ax, 10, 16, 34, 26, 'sujet', label=r'$\mathbb{R}$ : matrice réelle')
+arrow(ax, (45, 28), (61, 28), 'varie')
+text(ax, 53, 33, 'on passe à ℂ', 'varie', 's')
+disc(ax, 65, 28, 2.5, 'resultat')
+text(ax, 65, 21, 'racine complexe', 'resultat', 's')
+text(ax, 44, 10, 'forme de Jordan garantie', 'resultat', 's')
+save(fig, '60-261')

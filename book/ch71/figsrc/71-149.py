@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+text(ax,44,51,r'$A^T\neq -A$','encre','l')
+box(ax,8,32,14,12,'fixe',label='1'); box(ax,24,32,14,12,'sujet',label='2')
+box(ax,8,16,14,12,'autre',label='0'); box(ax,24,16,14,12,'fixe',label='3')
+box(ax,46,32,38,12,'sujet',label=r'$x=e_1,\ y=e_2$ : 2')
+box(ax,46,16,38,12,'autre',label=r'$x=e_2,\ y=e_1$ : 0')
+text(ax,65,30,r'$\neq$','limite','l',weight='bold')
+box(ax,8,2,76,9,'limite',label=r'pas opposés : $-2\neq0$')
+save(fig,'71-149')

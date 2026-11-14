@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 3, 36, 22, 16, 'sujet', label=r'$F$' + '\nfractions', size='s')
+disc(ax, 14, 20, 5, 'varie', label=r'$\sqrt{5}$', size='s')
+text(ax, 14, 11, r'$d=\sqrt{5}$', 'varie', 's')
+arrow(ax, (28, 36), (41, 36), 'varie')
+text(ax, 34.5, 40.5, 'adjoindre', 'varie', 's')
+box(ax, 44, 8, 41, 52, 'resultat', label=None)
+text(ax, 64.5, 55, r'$F(d)$ : le plus petit corps', 'resultat', 's', weight='bold')
+box(ax, 48, 32, 18, 16, 'sujet', label=r'$F$', size='m')
+disc(ax, 77, 40, 4, 'varie', label=r'$d$', size='m')
+box(ax, 48, 12, 33, 14, 'fixe', fill=False, dash=True, label='ce que +, −, ×, ÷\nforcent en plus', size='s')
+save(fig, '64-056')

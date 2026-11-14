@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,4,34,34,24,'sujet'); box(ax,50,34,34,24,'autre')
+text(ax,21,53,'fille','sujet','m'); text(ax,67,53,'personne','autre','m')
+text(ax,21,44,r'$\frac{5}{3\frac{1}{3}}$','sujet','l'); text(ax,67,44,r'$\frac{h}{3}$','autre','l')
+text(ax,21,37,'taille / ombre','sujet','s'); text(ax,67,37,'taille / ombre','autre','s')
+text(ax,44,46,'=','encre','xl')
+arrow(ax,(44,33),(44,28),'varie')
+box(ax,14,17,60,10,'resultat',label=r'$h = 4{,}5$ pieds',size='l')
+box(ax,6,3,76,9,'fixe',dash=True,label='vrai si ombres au même moment',size='s')
+save(fig,'09-099')

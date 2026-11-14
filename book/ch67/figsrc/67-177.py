@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 6, 78, 26, 0, 15, arrow_right=False, every=5)
+disc(ax, f(10), 26, 1.8, 'sujet')
+disc(ax, f(6), 26, 1.8, 'resultat')
+text(ax, f(10), 18.5, r'$\alpha^{10}$', 'sujet', 's')
+text(ax, f(6), 18.5, r'$\alpha^6$', 'resultat', 's')
+arrow(ax, (f(10) - 0.5, 28), (f(6) + 0.5, 28), 'varie', curve=0.5)
+text(ax, 44, 38, r'$\div\,\alpha^4$ : $10-4=6$', 'varie')
+text(ax, 44, 10, r'vérification : $6+4=10$', 'resultat')
+text(ax, 44, 52, 'diviser, c’est soustraire', 'resultat')
+save(fig, '67-177')

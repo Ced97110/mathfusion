@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+# r1 ~ 1.26 ; r2 ~ -0.63 + 1.09 i ; r3 = -r1 - r2 ~ -0.63 - 1.09 i ; r1 + r2 + r3 = 0 (closed triangle)
+u = 17.0
+ox, oy = 12, 10
+O = (ox, oy)
+P1 = (ox + 1.26 * u, oy)
+P2 = (ox + (1.26 - 0.63) * u, oy + 1.09 * u)
+arrow(ax, O, P1, 'sujet', lw=1.3)
+arrow(ax, P1, P2, 'varie', lw=1.3)
+arrow(ax, P2, O, 'resultat', lw=1.3)
+text(ax, (O[0] + P1[0]) / 2, oy - 4, r'$r_1$', 'sujet', 'm')
+text(ax, (P1[0] + P2[0]) / 2 + 5, (oy + P2[1]) / 2, r'$r_2$', 'varie', 'm')
+text(ax, (O[0] + P2[0]) / 2 - 5, P2[1] / 2 + oy / 2 + 1, r'$r_3$', 'resultat', 'm')
+text(ax, 50, 52, r'$r_1\approx1{,}26$', 'sujet', 's', ha='left')
+text(ax, 50, 42, r'$r_2\approx-0{,}63+1{,}09\,i$', 'varie', 's', ha='left')
+text(ax, 50, 32, r'$r_3\approx-0{,}63-1{,}09\,i$', 'resultat', 's', ha='left')
+text(ax, 50, 18, r'$r_1+r_2+r_3=0$', 'encre', 'm', ha='left')
+text(ax, 4, 58, r'$r_3=-r_1-r_2$', 'encre', 'm', ha='left')
+save(fig, '62-123')

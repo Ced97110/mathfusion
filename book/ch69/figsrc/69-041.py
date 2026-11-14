@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, '(i) : tout positif a une racine', 'sujet', 's')
+box(ax, 4, 28, 26, 12, 'sujet', label=r'$2>0$')
+box(ax, 54, 40, 30, 12, 'resultat', label=r'$\mathbb{R}$ : $x\approx 1{,}414$', size='s')
+box(ax, 54, 8, 30, 12, 'limite', label=r'$\mathbb{Q}$ : aucune fraction', size='s')
+arrow(ax, (31, 36), (53, 45), 'varie')
+arrow(ax, (31, 32), (53, 15), 'varie')
+text(ax, 43, 21, r'$x^2=2$ ?', 'varie', 's')
+save(fig, '69-041')

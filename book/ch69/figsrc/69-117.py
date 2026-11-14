@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, 'avec les lettres : une fois', 'sujet', 'm')
+box(ax, 9, 48, 70, 11, 'sujet', label=r'$-9\,(27q^2+4p^3)$', size='l')
+arrow(ax, (30, 47.5), (22, 29.5), 'varie')
+arrow(ax, (58, 47.5), (66, 29.5), 'varie')
+text(ax, 44, 38, 'puis on remplace', 'varie', 'm')
+box(ax, 2, 12, 40, 17, 'resultat', label=r'$p=-3,\ q=1$' + '\n' + r'$729$', size='m')
+box(ax, 46, 12, 40, 17, 'resultat', label=r'$p=1,\ q=0$' + '\n' + r'$-36$', size='m')
+save(fig, '69-117')

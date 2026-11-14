@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, cx, cy, r, a0, a1, role):
+    line(ax, [(cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a))) for a in range(a0, a1 + 1, 2)], role, lw=1.0)
+fig, ax = canvas(66)
+cx, cy, R = 32, 28, 21
+ax.add_patch(Circle((cx, cy), R, ec=COL['fixe'], fc='none', lw=0.9, zorder=1))
+line(ax, [(cx - R - 2, cy), (cx + R + 2, cy)], 'fixe', lw=0.5)
+line(ax, [(cx, cy - R - 2), (cx, cy + R + 2)], 'fixe', lw=0.5)
+ky = cy + 0.5 * R; dx = R * math.cos(math.radians(30))
+line(ax, [(2, ky), (cx + R + 2, ky)], 'varie', lw=1.1)
+qx, qy = cx + R * math.cos(math.radians(120)), cy + R * math.sin(math.radians(120))
+line(ax, [(qx, qy), (cx, qy)], 'limite', dash=True, lw=0.9)
+line(ax, [(cx, cy), (qx, qy)], 'limite', lw=0.6)
+arc(ax, cx, cy, 6, 0, 150, 'resultat')
+disc(ax, cx + dx, ky, 1.7, 'sujet'); disc(ax, cx - dx, ky, 1.7, 'resultat'); disc(ax, qx, qy, 1.7, 'limite')
+text(ax, cx + 5, ky + 2.3, '0,5', 'varie', 's'); text(ax, cx + 6.5, qy + 2.6, '0,87', 'limite', 's')
+text(ax, qx - 1, qy + 4.2, '120°', 'limite', 's')
+disc(ax, 62, 50, 1.7, 'sujet'); text(ax, 66, 50, 'P : 30°', 'sujet', 's', ha='left')
+disc(ax, 62, 38, 1.7, 'resultat'); text(ax, 66, 38, "P′ : 150°\n= 180° − 30°", 'resultat', 's', ha='left')
+disc(ax, 62, 22, 1.7, 'limite'); text(ax, 66, 22, "120° : hauteur\n0,87, pas 0,5", 'limite', 's', ha='left')
+save(fig, '32-021')

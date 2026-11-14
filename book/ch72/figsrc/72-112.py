@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,4,10,80,56,'fixe'); text(ax,10,62,r'$V$','fixe','l')
+box(ax,20,22,48,22,'autre',dash=True); text(ax,44,40,r'rad $V$','autre','m')
+disc(ax,32,31,2.4,'sujet'); disc(ax,58,31,2.4,'resultat')
+arrow(ax,(36,31),(54,31),'varie'); text(ax,45,35,r'$\eta$ : ×5','varie','s')
+text(ax,32,26,r'$r=(0,0,1)$','sujet','s'); text(ax,58,26,r'$\eta r=(0,0,5)$','resultat','s')
+text(ax,44,55,r'$B(\eta r,\eta y)=0$','encre','m'); text(ax,44,49.5,r'$\eta y$ atteint tout $V$','fixe','s')
+text(ax,44,5,r'$\eta r$ reste dans rad $V$','resultat','m')
+save(fig,'72-112')

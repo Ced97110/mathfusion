@@ -1,0 +1,187 @@
+[
+ {
+  "code": "50-065",
+  "a_dire": "Il faut lire I, puis II, puis III, car chacun utilise le précédent.",
+  "legende_titre": "Trois lectures, un seul bon ordre",
+  "lecture": [
+   "Les trois cases bleues I, II, III, reliées par des flèches vertes, donnent le bon ordre : un p-Sylow existe, tous sont conjugués, on compte leur nombre.",
+   "La case rouge en bas montre III lu en premier.",
+   "À droite de la case rouge, les deux phrases disent ce qui manque : sans I, l’ensemble pourrait être vide ; sans II, on ne voit pas pourquoi compter."
+  ],
+  "a_voir": "Chaque case s’appuie sur celle de gauche."
+ },
+ {
+  "code": "50-066",
+  "a_dire": "Le théorème I garantit que l’ensemble des p-Sylow n’est pas vide.",
+  "legende_titre": "Un ensemble qui ne peut pas être vide",
+  "lecture": [
+   "La case rouge en pointillés montre un ensemble sans aucun p-Sylow : c’est le cas que le théorème I exclut.",
+   "La grande case verte est l’ensemble des 2-Sylow du triangle.",
+   "Les trois cases bleues dedans sont les trois sous-groupes de 2 éléments."
+  ],
+  "a_voir": "L’ensemble des p-Sylow contient au moins un élément."
+ },
+ {
+  "code": "50-067",
+  "a_dire": "Les p-Sylow forment une seule orbite : en conjuguant l’un d’eux, on atteint tous les autres.",
+  "legende_titre": "Une seule orbite pour tous les p-Sylow",
+  "lecture": [
+   "Chaque triangle gris porte un trait bleu : l’axe de la réflexion du sous-groupe {e, s_A}, {e, s_B} ou {e, s_C}.",
+   "Les flèches orange sont la conjugaison par r, le tiers de tour : elle passe d’un sous-groupe au suivant.",
+   "Le cercle en pointillés bleus entoure les trois sous-groupes : c’est l’orbite Σ."
+  ],
+  "a_voir": "Un seul cercle contient tous les sous-groupes atteints."
+ },
+ {
+  "code": "50-068",
+  "a_dire": "Le théorème III compte l’orbite : sa taille est l’indice du stabilisateur, ici 6 divisé par 2.",
+  "legende_titre": "Compter l’orbite avec une division",
+  "lecture": [
+   "La rangée du haut a 6 cases : les 6 éléments de G, groupés par paires.",
+   "La paire bleue est N(P), de 2 éléments ; les deux paires grises ont aussi 2 éléments.",
+   "Chaque flèche orange mène d’une paire à un sous-groupe conjugué en bas : il y en a 3."
+  ],
+  "a_voir": "6 divisé par 2 donne 3 sous-groupes dans l’orbite."
+ },
+ {
+  "code": "50-069",
+  "a_dire": "On nomme normalisateur l’ensemble des éléments qui laissent H inchangé, pour écrire le comptage en une ligne.",
+  "legende_titre": "Un mot pour une longue phrase",
+  "lecture": [
+   "La case grise du haut est la phrase longue qu’il faudrait écrire à chaque fois.",
+   "La flèche orange mène au mot N(H), dans la case bleue.",
+   "La ligne verte du bas compte les conjugués de H avec ce mot : 6 divisé par 2 donne 3."
+  ],
+  "a_voir": "Le nom N(H) remplace toute la phrase."
+ },
+ {
+  "code": "50-070",
+  "a_dire": "Pour trouver n_p : on choisit P, on cherche N(P), on compte ses éléments, on divise |G|.",
+  "legende_titre": "Les quatre actions de la formule",
+  "lecture": [
+   "Les quatre étiquettes orange donnent les actions dans l’ordre, de gauche à droite.",
+   "Les ronds bleus sont les éléments de P ; les ronds violets sont ceux de N(P).",
+   "La colonne verte donne la division : 6 divisé par 2 égale 3 pour p = 2, et 6 divisé par 6 égale 1 pour p = 3."
+  ],
+  "a_voir": "Chaque ligne suit les quatre actions sur un cas chiffré."
+ },
+ {
+  "code": "50-071",
+  "a_dire": "Comme P est contenu dans N(P), l’indice [G : N(P)] divise [G : P] = q.",
+  "legende_titre": "Un indice qui en divise un autre",
+  "lecture": [
+   "En haut, la case bleue est le départ P ⊆ N(P) ; la case verte est l’arrivée, n_p divise q.",
+   "Chaque rangée de 6 cases est G. La rangée bleue est coupée en 1 morceau de la taille de N(P).",
+   "Les deux rangées du bas sont coupées en 2 morceaux de la taille de P (la partie violette est un morceau).",
+   "L’égalité du bas, 2 = 1 × 2, relie les trois rangées."
+  ],
+  "a_voir": "Le nombre de morceaux de P dans G est le produit des deux autres nombres."
+ },
+ {
+  "code": "50-072",
+  "a_dire": "Pour montrer n_p ≡ 1 (mod p), la divisibilité ne suffit pas : il faut une idée de plus.",
+  "legende_titre": "Pourquoi la divisibilité ne suffit pas",
+  "lecture": [
+   "Sur la droite graduée, les ronds du haut sont les valeurs permises par « n_p divise 2 » : 1 et 2.",
+   "Le rond rouge, 2, est écarté par la seconde moitié.",
+   "Les ronds verts du bas sont les valeurs congrues à 1 modulo 3 : 1 et 4.",
+   "Seule la valeur 1 est dans les deux rangées."
+  ],
+  "a_voir": "La seconde moitié écarte une valeur que la première laisse passer."
+ },
+ {
+  "code": "50-073",
+  "a_dire": "N(H) est l’ensemble des g de G tels que gHg⁻¹ = H, et il contient H et est contenu dans G.",
+  "legende_titre": "Le normalisateur pour deux sous-groupes",
+  "lecture": [
+   "Chaque rangée de 6 cases est le groupe G.",
+   "Les cases bleues sont les éléments de N(H) ; les cases grises sont hors de N(H).",
+   "Les ronds violets sont les éléments de H : ils sont toujours dans des cases bleues.",
+   "Première rangée : 2 cases bleues. Seconde rangée : 6 cases bleues."
+  ],
+  "a_voir": "H est dans N(H), qui est dans G, pour les deux sous-groupes."
+ },
+ {
+  "code": "50-074",
+  "a_dire": "On lit la définition ainsi : prendre chaque g, garder ceux pour lesquels gHg⁻¹ est égal à H.",
+  "legende_titre": "Tester chaque élément g",
+  "lecture": [
+   "En haut à gauche, le triangle montre H : le trait bleu est l’axe de s_A.",
+   "Chaque colonne teste un élément g : e, s_A, puis r.",
+   "Le triangle du bas montre le conjugué de H par g : son trait est le nouvel axe.",
+   "Les colonnes vertes passent le test (le trait est celui de H) ; la colonne rouge échoue (le trait est celui de s_B)."
+  ],
+  "a_voir": "Seuls les g qui redonnent le même trait appartiennent à N(H)."
+ },
+ {
+  "code": "50-075",
+  "a_dire": "Chaque élément de H laisse H inchangé par conjugaison, donc H est contenu dans N(H).",
+  "legende_titre": "H posé dans N(H)",
+  "lecture": [
+   "La grande case bleue est N(H).",
+   "La case violette dedans est H, avec ses deux éléments e et s_A.",
+   "En bas, le triangle violet est H ; la flèche orange le conjugue par s_A.",
+   "Le triangle vert à droite a le même trait : on retrouve H."
+  ],
+  "a_voir": "Un élément de H redonne H, donc il est dans N(H)."
+ },
+ {
+  "code": "50-076",
+  "a_dire": "H est normal dans N(H) : tout élément de N(H) redonne H, et H est contenu dans N(H).",
+  "legende_titre": "H est normal dans son normalisateur",
+  "lecture": [
+   "Les trois cases violettes e, r, r² sont H, les trois rotations.",
+   "Les trois cases bleues s_A, s_B, s_C complètent N(H), qui est ici tout le groupe.",
+   "L’accolade bleue en bas entoure les 6 éléments g de N(H).",
+   "La ligne verte dit que chaque g donne gHg⁻¹ = H."
+  ],
+  "a_voir": "Aucun élément de N(H) ne change H."
+ },
+ {
+  "code": "50-077",
+  "a_dire": "N(H) est le plus grand sous-groupe de G dans lequel H est normal : tous les autres y sont contenus.",
+  "legende_titre": "Le plus grand sous-groupe où H est normal",
+  "lecture": [
+   "La grande case grise est G ; la case bleue dedans est N(H).",
+   "Les cases violettes K et K' sont des sous-groupes où H est normal : ils sont dans N(H).",
+   "La case rouge en pointillés sort de N(H) : H n’y est pas normal."
+  ],
+  "a_voir": "Tout sous-groupe où H est normal reste dans N(H)."
+ },
+ {
+  "code": "50-078",
+  "a_dire": "N(H) = G exactement quand H est normal dans G : c’est une question de taille de N(H).",
+  "legende_titre": "Normal : N(H) a-t-il la taille de G ?",
+  "lecture": [
+   "En haut, les deux cases bleues disent la même chose, d’où la double flèche verte.",
+   "Chaque rangée de 6 cases est G ; les cases bleues sont N(H).",
+   "Pour les trois rotations, les 6 cases sont bleues : 6 sur 6.",
+   "Pour {e, s_A}, seulement 2 cases sont bleues : 2 sur 6."
+  ],
+  "a_voir": "Les rotations remplissent G ; la réflexion ne le remplit pas."
+ },
+ {
+  "code": "50-079",
+  "a_dire": "Si N(H) = G, l’indice [G : N(H)] vaut 1 : H n’a qu’un seul conjugué, lui-même.",
+  "legende_titre": "Un seul conjugué",
+  "lecture": [
+   "Les 6 cases grises du haut sont les éléments de G.",
+   "Chaque flèche orange est la conjugaison de H par un de ces éléments.",
+   "Les 6 flèches arrivent dans la même case bleue : H, les 3 rotations.",
+   "La ligne verte donne l’indice : 6 divisé par 6 égale 1."
+  ],
+  "a_voir": "Les six conjugaisons donnent toutes le même ensemble."
+ },
+ {
+  "code": "50-080",
+  "a_dire": "n_p = 1 exactement quand N(P) = G, à condition que P soit un p-Sylow.",
+  "legende_titre": "Ce qui casse si P n’est pas un p-Sylow",
+  "lecture": [
+   "La ligne du haut donne les 4 éléments du groupe : e, a, b, c.",
+   "Chaque rangée a 2 cases violettes : un sous-groupe P de 2 éléments.",
+   "À droite de chaque rangée, N(P) = G : tous les éléments commutent.",
+   "Pourtant il y a 3 rangées, donc 3 sous-groupes, et pas 1."
+  ],
+  "a_voir": "Sans l’hypothèse p-Sylow, N(P) = G n’impose pas un seul sous-groupe."
+ }
+]

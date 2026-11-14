@@ -1,0 +1,194 @@
+[
+ {
+  "code": "42-193",
+  "a_dire": "L'image d'une partie A est l'ensemble des images des seuls éléments de A.",
+  "legende_titre": "Les images des éléments de A seulement",
+  "lecture": [
+   "Le cadre bleu en tirets contient les éléments 1 et 2, la partie A.",
+   "Les flèches orange partent de 1 et de 2 et arrivent toutes deux sur a.",
+   "Le cadre vert entoure a : c'est l'ensemble des images de A.",
+   "Le 3 et le b sont en gris : ils ne comptent pas."
+  ],
+  "a_voir": "Seuls les éléments du cadre bleu envoient leurs images dans le cadre vert."
+ },
+ {
+  "code": "42-194",
+  "a_dire": "L'image de l'application est l'ensemble des images de tous les éléments de départ.",
+  "legende_titre": "Les images de tout l'ensemble de départ",
+  "lecture": [
+   "Le cadre en tirets contient tous les éléments de départ : 1, 2 et 3.",
+   "Les flèches orange arrivent sur a (deux fois) et sur b.",
+   "Le cadre vert entoure a et b : ce sont les éléments atteints.",
+   "Le c est en gris : il est dans l'arrivée mais aucune flèche n'y arrive."
+  ],
+  "a_voir": "L'image est formée des seuls éléments d'arrivée qui reçoivent une flèche."
+ },
+ {
+  "code": "42-195",
+  "a_dire": "L'image est toujours dans le codomaine, mais peut en être une partie plus petite.",
+  "legende_titre": "L'arrivée réelle et l'arrivée annoncée",
+  "lecture": [
+   "Le grand cadre en tirets gris est l'ensemble d'arrivée T avec a, b et c.",
+   "Le cadre vert à l'intérieur contient a et b : ce sont les éléments atteints.",
+   "Le c est en rouge : aucune flèche n'y arrive.",
+   "Les trois éléments de départ sont en gris."
+  ],
+  "a_voir": "Le cadre vert est plus petit que le cadre gris, parce que c n'est pas atteint."
+ },
+ {
+  "code": "42-196",
+  "a_dire": "Le signe im α remplace la phrase « l'ensemble de toutes les images » et se lit « image ».",
+  "legende_titre": "Un signe court pour toutes les images",
+  "lecture": [
+   "En haut, la phrase en gris devient le signe en bleu.",
+   "Le morceau bleu « im » se lit « image ».",
+   "Le morceau violet est le nom de l'application.",
+   "Le cadre vert en bas écrit l'égalité avec l'exemple : a et b."
+  ],
+  "a_voir": "Le signe im α désigne le même ensemble que la phrase, ici a et b."
+ },
+ {
+  "code": "42-197",
+  "a_dire": "L'image réciproque d'une partie B est l'ensemble des éléments de départ dont l'image est dans B.",
+  "legende_titre": "On remonte de B vers le départ",
+  "lecture": [
+   "Le cadre violet contient a, la partie B de l'arrivée.",
+   "Les flèches orange remontent de a vers 1 et vers 2.",
+   "Le cadre bleu entoure 1 et 2 : c'est l'image réciproque de B.",
+   "Le 3 et le b sont en gris : ils ne sont pas concernés."
+  ],
+  "a_voir": "Les flèches vont de B vers le départ et désignent 1 et 2."
+ },
+ {
+  "code": "42-198",
+  "a_dire": "Le signe α^(−1)(B) a trois morceaux et désigne l'ensemble des antécédents des éléments de B.",
+  "legende_titre": "Lire le signe morceau par morceau",
+  "lecture": [
+   "Le morceau bleu est l'application.",
+   "Le morceau orange est le signe de sens inverse, écrit en haut à droite.",
+   "Le morceau violet est la partie B de l'arrivée.",
+   "En bas, B = {a} donne les antécédents 1 et 2 dans le cadre vert."
+  ],
+  "a_voir": "Chaque morceau du signe a son sens, et l'ensemble obtenu est {1, 2}."
+ },
+ {
+  "code": "42-199",
+  "a_dire": "L'image réciproque existe même quand a vient de plusieurs éléments : c'est un ensemble, pas une application inverse.",
+  "legende_titre": "Un ensemble, même sans retour unique",
+  "lecture": [
+   "Le cadre violet contient a, la partie B.",
+   "Les deux flèches orange remontent vers 1 et vers 2.",
+   "En rouge : a vient de 1 et de 2, donc pas un seul retour.",
+   "Le cadre vert entoure 1 et 2 : cet ensemble existe quand même."
+  ],
+  "a_voir": "Deux éléments ont la même image, et l'ensemble {1, 2} existe."
+ },
+ {
+  "code": "42-200",
+  "a_dire": "La restriction garde la même règle, mais seulement pour les éléments de S₁ : trois couples.",
+  "legende_titre": "Même règle, moins de départs",
+  "lecture": [
+   "Chaque point est un couple : n en bas, son double en hauteur.",
+   "Les trois points bleus (0, 0), (1, 2), (2, 4) sont ceux de S₁.",
+   "Les points gris sont les couples abandonnés.",
+   "L'accolade sous l'axe montre les éléments gardés : 0, 1 et 2."
+  ],
+  "a_voir": "Seuls les trois points bleus restent dans le graphe de la restriction."
+ },
+ {
+  "code": "42-201",
+  "a_dire": "Le signe α|S₁ se lit « α restreinte à S₁ » : même application, seulement sur S₁.",
+  "legende_titre": "Lire le signe de restriction",
+  "lecture": [
+   "Le morceau bleu est l'application.",
+   "Le morceau orange, la barre, annonce qu'on garde seulement.",
+   "Le morceau violet est l'ensemble gardé.",
+   "En bas, on passe de tous les entiers à 0, 1, 2."
+  ],
+  "a_voir": "On garde trois entiers de départ et on abandonne les autres."
+ },
+ {
+  "code": "42-202",
+  "a_dire": "Il suffit de compter les flèches qui arrivent à chaque point d'arrivée pour distinguer injective, surjective et bijective.",
+  "legende_titre": "Compter les flèches à l'arrivée",
+  "lecture": [
+   "Les points bleus sont les points de départ, les autres sont les points d'arrivée.",
+   "À gauche, un point d'arrivée rouge ne reçoit aucune flèche.",
+   "Au milieu, un point rouge reçoit deux flèches.",
+   "À droite, chaque point vert reçoit une seule flèche."
+  ],
+  "a_voir": "Un point rouge est un point qui ne reçoit pas exactement une flèche."
+ },
+ {
+  "code": "42-203",
+  "a_dire": "Une application injective n'envoie jamais deux éléments différents sur le même point.",
+  "legende_titre": "Jamais deux flèches vers le même point",
+  "lecture": [
+   "À gauche, s₁ (bleu) et s₂ (orange) arrivent sur deux points différents.",
+   "Le point c reste gris : il peut ne rien recevoir.",
+   "À droite, en rouge, deux flèches arrivent sur le même point a.",
+   "Ce cas rouge n'est pas injectif."
+  ],
+  "a_voir": "À gauche chaque flèche a son point ; à droite deux flèches se rejoignent."
+ },
+ {
+  "code": "42-204",
+  "a_dire": "Une application surjective atteint chaque point d'arrivée au moins une fois.",
+  "legende_titre": "Chaque arrivée reçoit une flèche",
+  "lecture": [
+   "À gauche, les trois points de départ envoient des flèches bleues vers a et b.",
+   "Les points a et b sont verts : ils reçoivent au moins une flèche.",
+   "Le cadre vert en tirets entoure toute l'arrivée.",
+   "À droite, b est rouge : il ne reçoit rien."
+  ],
+  "a_voir": "À gauche aucun point d'arrivée n'est vide ; à droite b est vide."
+ },
+ {
+  "code": "42-205",
+  "a_dire": "Une application bijective est à la fois injective et surjective : chaque arrivée reçoit exactement une flèche.",
+  "legende_titre": "Les deux conditions ensemble",
+  "lecture": [
+   "À gauche, trois flèches vertes relient 1, 2, 3 à a, b, c.",
+   "Chaque point reçoit une seule flèche.",
+   "Le cadre bleu est la condition injective, le cadre violet la condition surjective.",
+   "Les deux ensemble donnent le cadre vert : bijective."
+  ],
+  "a_voir": "Deux conditions vraies à la fois donnent le mot bijective."
+ },
+ {
+  "code": "42-206",
+  "a_dire": "Une correspondance biunivoque apparie chaque point de S à un seul point de T, et inversement.",
+  "legende_titre": "Des couples qui se lisent dans les deux sens",
+  "lecture": [
+   "Les points bleus 1, 2, 3 sont ceux de S.",
+   "Les points violets a, b, c sont ceux de T.",
+   "Chaque flèche verte à deux pointes relie un partenaire à l'autre.",
+   "Chaque point est dans une seule paire."
+  ],
+  "a_voir": "Chaque flèche se lit de S vers T et de T vers S."
+ },
+ {
+  "code": "42-207",
+  "a_dire": "Injectivité et surjectivité se testent séparément sur chaque dessin.",
+  "legende_titre": "Deux tests pour chaque dessin",
+  "lecture": [
+   "Chaque dessin a deux tests écrits dessous.",
+   "À gauche, le point rouge sans flèche fait échouer la surjectivité.",
+   "Au milieu, le point rouge à deux flèches fait échouer l'injectivité.",
+   "À droite, les deux tests réussissent."
+  ],
+  "a_voir": "Un point rouge fait échouer un test ; sans point rouge, les deux réussissent."
+ },
+ {
+  "code": "42-208",
+  "a_dire": "Dire « deux images égales donnent le même départ » est équivalent à « deux départs différents donnent deux images différentes ».",
+  "legende_titre": "Deux phrases qui disent la même chose",
+  "lecture": [
+   "À gauche, s₁ (bleu) et s₂ (orange) arrivent sur a et b, deux points différents.",
+   "Aucun point ne reçoit deux flèches.",
+   "Le cadre bleu est la première forme, le cadre violet la seconde.",
+   "La double flèche orange dit qu'elles ont la même vérité."
+  ],
+  "a_voir": "Les deux formes sont équivalentes ; dans le dessin, les deux sont vraies."
+ }
+]

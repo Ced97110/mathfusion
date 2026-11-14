@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 4, 22, 48, 50, 'sujet', fill=False, dash=True, lw=0.7)
+T, R, L = (28, 62), (42, 34), (14, 34)
+for (px, py), n in zip([T, R, L], [r'$a$ ET $b$', r'$b$ ET $c$', r'$c$ ET $a$']):
+    box(ax, px - 9.5, py - 3.5, 19, 7, 'sujet', label=n, size='s')
+arrow(ax, (33, 58.2), (43, 38), 'varie', lw=1.1)
+arrow(ax, (31.8, 34), (24.2, 34), 'varie', lw=1.1)
+arrow(ax, (13, 38), (23, 58.2), 'varie', lw=1.1)
+text(ax, 28, 48, 'rebranchement', 'varie', 's')
+text(ax, 28, 79, 'un seul circuit', 'sujet', 'm')
+text(ax, 28, 15, 'une orbite = un circuit', 'sujet', 's')
+box(ax, 60, 36, 24, 24, 'autre', fill=False, dash=True, lw=0.7)
+box(ax, 63, 43, 18, 10, 'autre', label='autre fonction', size='s')
+text(ax, 72, 64, 'autre orbite', 'autre', 's')
+save(fig, '49-264')

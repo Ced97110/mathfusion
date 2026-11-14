@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 11, 36, r'$\Pi$', 'sujet', 30, weight='bold')
+text(ax, 11, 22, 'grand pi', 'encre', 's')
+arrow(ax, (20, 36), (26, 36), 'fixe')
+box(ax, 26, 22, 60, 26, 'fixe', fill=False, dash=True)
+for k, x in zip('ABC', (29, 48, 67)): box(ax, x, 28, 16, 14, 'sujet', label=r'$P_%s$' % k, size='m')
+text(ax, 56, 53, 'ensemble de tous les 2-Sylow', 'encre', 's')
+brace(ax, 28, 84, 20, 'resultat', r'$|\Pi| = n_2 = 3$')
+text(ax, 44, 6, 'pas le nombre 3,14', 'limite', 's')
+save(fig, '50-094')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+cA, cB, cC = 14, 44, 74
+box(ax, 4, 58, 20, 12, role='sujet', fill=True, label='12')
+text(ax, 29, 64, '=', 'encre', 'l')
+box(ax, 34, 58, 20, 12, role='varie', fill=True, label='4')
+text(ax, 59, 64, r'$\times$', 'encre', 'l')
+box(ax, 64, 58, 20, 12, role='fixe', fill=True, label='3')
+for c in (cA, cB, cC): arrow(ax, (c, 58), (c, 42), 'encre')
+text(ax, cB+3, 50, r'$\sqrt{4}=2$', 'varie', 's', ha='left')
+box(ax, 4, 30, 20, 12, role='sujet', fill=True, label=r'$\sqrt{12}$')
+text(ax, 29, 36, '=', 'encre', 'l')
+box(ax, 34, 30, 20, 12, role='varie', fill=True, label='2')
+box(ax, 64, 30, 20, 12, role='fixe', fill=True, label=r'$\sqrt{3}$')
+arrow(ax, (cB, 30), (cB, 18), 'resultat')
+text(ax, cB+3, 24, 'contrôle', 'resultat', 's', ha='left')
+box(ax, 4, 6, 80, 12, role='resultat', fill=True, label=r'$(2\sqrt{3})^2=4\times3=12$')
+save(fig, '22-071')

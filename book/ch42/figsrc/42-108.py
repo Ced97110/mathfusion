@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 12, 30, 28, 'sujet'); box(ax, 56, 12, 30, 28, 'sujet')
+text(ax, 17, 31, r'$p$', 'sujet', 'l'); text(ax, 17, 22, 'entier pair', 'sujet', 's')
+text(ax, 71, 31, r'$q$', 'sujet', 'l'); text(ax, 71, 22, 'suivant impair', 'sujet', 's')
+arrow(ax, (34, 34), (54, 34), 'resultat'); arrow(ax, (54, 18), (34, 18), 'resultat')
+text(ax, 44, 38.5, r'$p \Rightarrow q$', 'resultat', 's'); text(ax, 44, 13.5, r'$q \Rightarrow p$', 'resultat', 's')
+text(ax, 44, 26, r'$\Leftrightarrow$', 'resultat', 'xl')
+text(ax, 44, 50, 'les deux sens sont vrais', 'resultat', 'm')
+save(fig, '42-108')

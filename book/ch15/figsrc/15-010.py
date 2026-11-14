@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'$x+x+x$', 'sujet', 'l')
+for i in range(3): box(ax, 20 + 16 * i, 40, 16, 8, 'sujet', label=r'$x$')
+brace(ax, 20, 68, 39, 'varie', '3 barres')
+text(ax, 41, 22, '3', 'varie', 'xl', weight='bold'); text(ax, 46, 22, r'$x$', 'sujet', 'xl', weight='bold')
+arrow(ax, (44, 31), (43, 27), 'varie')
+text(ax, 41, 12, 'combien', 'varie', 's'); text(ax, 58, 12, 'quelle longueur', 'sujet', 's')
+text(ax, 72, 22, r'$100x$ : cent barres', 'fixe', 's')
+save(fig, '15-010')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 28, 20, 10, 'fixe', label=r'$G$ : 12', size='s')
+box(ax, 33, 46, 20, 10, 'sujet', label='6 paquets', size='s')
+box(ax, 66, 46, 20, 10, 'resultat', label='2 paquets', size='s')
+box(ax, 66, 10, 20, 10, 'resultat', label='2 paquets', size='s')
+arrow(ax, (22.5, 36), (32.5, 47), 'varie'); text(ax, 22, 46, r'par $K$', 'varie', 's')
+arrow(ax, (53.5, 51), (65.5, 51), 'varie'); text(ax, 59.5, 58, r'par $H/K$', 'varie', 's')
+arrow(ax, (22.5, 30), (65.5, 16), 'varie'); text(ax, 40, 18, r'par $H$ d’un coup', 'varie', 's')
+text(ax, 76, 33, r'$\cong$', 'resultat', 'xl')
+text(ax, 44, 4, 'deux étapes = une étape', 'resultat', 's')
+save(fig, '48-107')

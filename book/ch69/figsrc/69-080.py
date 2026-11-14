@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+text(ax, 44, 76, 'racines : on ne sait pas les écrire', 'fixe', 'm')
+f = numberline(ax, 14, 74, 58, -2, 2, step=1, labels=False, arrow_right=False)
+for r, lab in [(-1.88, '≈ −1,88'), (0.35, '≈ 0,35'), (1.53, '≈ 1,53')]:
+    disc(ax, f(r), 58, 1.6, 'resultat')
+    text(ax, f(r), 63, lab, 'resultat', 's')
+arrow(ax, (14, 56.5), (14, 44), 'varie')
+arrow(ax, (74, 56.5), (74, 44), 'varie')
+text(ax, 17, 51, r'$a=-2$', 'varie', 's', ha='left')
+text(ax, 71, 51, r'$b=2$', 'varie', 's', ha='right')
+box(ax, 4, 30, 28, 14, 'sujet', label='− + − +\nV = 3')
+box(ax, 56, 30, 28, 14, 'sujet', label='+ + + +\nV = 0')
+box(ax, 4, 8, 80, 13, 'resultat', label=r'$3-0=3$ racines, sans les écrire')
+save(fig, '69-080')

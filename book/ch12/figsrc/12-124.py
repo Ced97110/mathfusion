@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 18, 44, 52, 14, 'limite', label=r'diviser par $0$ : sans sens', size='m')
+box(ax, 3, 6, 38, 18, 'sujet')
+text(ax, 22, 18, r'$5\div0$', 'sujet', 'l'); text(ax, 22, 11, 'pas un réel', 'limite', 's')
+box(ax, 47, 6, 38, 18, 'sujet')
+text(ax, 66, 18, r'$a/b$', 'sujet', 'l'); text(ax, 66, 11, r'on écrit $b\neq0$', 'resultat', 's')
+arrow(ax, (30, 44), (22, 25), 'varie'); arrow(ax, (58, 44), (66, 25), 'varie')
+text(ax, 44, 33, 'une seule raison', 'varie', 's')
+save(fig, '12-124')

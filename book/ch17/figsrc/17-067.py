@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+f=numberline(ax,14,74,50,-4,4,labels=False,arrow_right=False)
+g=numberline(ax,14,74,16,-4,4,labels=False,arrow_right=False)
+line(ax,[(f(0),10),(f(0),56)],'fixe',dash=True)
+text(ax,f(0)+1,6,'miroir en 0','fixe','s',ha='left')
+text(ax,2,66,'avant','fixe','s',ha='left'); text(ax,2,28,'après','fixe','s',ha='left')
+disc(ax,f(1),50,3.2,'sujet',label='$1$',size='s'); disc(ax,f(3),50,3.2,'autre',label='$3$',size='s')
+disc(ax,g(-1),16,3.2,'sujet',label='$-1$',size='s'); disc(ax,g(-3),16,3.2,'autre',label='$-3$',size='s')
+text(ax,f(1),57,'petit','sujet','s'); text(ax,f(3),57,'grand','autre','s')
+text(ax,g(-3),9,'grand','autre','s'); text(ax,g(-1),9,'petit','sujet','s')
+arrow(ax,(f(1),46),(g(-1),20.5),'varie'); arrow(ax,(f(3),46),(g(-3),20.5),'varie')
+for pt in ax.patches:
+    if pt.__class__.__name__=='Circle': pt.set_zorder(3.5)
+save(fig,'17-067')

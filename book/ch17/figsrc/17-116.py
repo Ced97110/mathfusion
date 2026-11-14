@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+def empty_line(y):
+    line(ax, [(50, y), (84, y)], 'fixe', lw=1.0, dash=True)
+    line(ax, [(64, y - 2), (70, y + 2)], 'limite', lw=1.6); line(ax, [(64, y + 2), (70, y - 2)], 'limite', lw=1.6)
+    text(ax, 67, y - 5, 'aucune valeur', 'limite', 's')
+text(ax, 2, 68, 'Chapitre 16 : équation', 'fixe', 's', ha='left')
+text(ax, 24, 54, r'$-19 = -18$', 'sujet', 'l')
+text(ax, 24, 47, 'faux, sans lettre', 'limite', 's')
+empty_line(54)
+line(ax, [(2, 38), (86, 38)], 'fixe', lw=0.5, dash=True)
+text(ax, 2, 33, 'Ici : inéquation', 'fixe', 's', ha='left')
+text(ax, 24, 26, r'$x > x + 1$', 'sujet', 'l')
+arrow(ax, (24, 22), (24, 15), 'varie')
+text(ax, 28, 18.5, r'$x=0$', 'varie', 's', ha='left')
+text(ax, 24, 9, r'$0 > 1$', 'limite', 'l')
+empty_line(18)
+save(fig, '17-116')

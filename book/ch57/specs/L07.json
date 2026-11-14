@@ -1,0 +1,349 @@
+[
+ {
+  "code": "57-181",
+  "a_dire": "Pour la règle qui envoie (p ; q) sur p, la dimension du plan (2) vaut la dimension du noyau (1) plus celle de l'image (1).",
+  "legende_titre": "Départ, noyau et image : trois dimensions",
+  "lecture": [
+   "Le grand carré bleu est le plan de départ ; son trait orange épais, vertical, est le noyau.",
+   "Les traits gris en pointillé sont les droites verticales : chacune est repérée par son premier nombre p.",
+   "La flèche grise envoie chaque couple sur p ; la droite verte à droite est l'image.",
+   "Les légendes du bas donnent 2 pour le plan et 1 pour chaque autre partie, puis 2 = 1 + 1."
+  ],
+  "a_voir": "Il faut voir que le plan se découpe en une direction retirée (le noyau) et une direction conservée (l'image)."
+ },
+ {
+  "code": "57-182",
+  "a_dire": "Dans les couples d'entiers, on regroupe les couples qui diffèrent d'un multiple de (2 ; 1) ; le cas montre deux paires dans la même classe, mais pas combien il y a de classes.",
+  "legende_titre": "Des couples regroupés, un nombre de classes inconnu",
+  "lecture": [
+   "Chaque rond est un couple d'entiers.",
+   "Les ronds bleus sont dans la classe de (0 ; 0) : on passe de l'un à l'autre en ajoutant la flèche orange u.",
+   "Les ronds violets sont dans la classe de (1 ; 0), obtenue en décalant d'un rang.",
+   "Les ronds gris vides n'ont pas été classés : la question reste ouverte."
+  ],
+  "a_voir": "Il faut voir des couples regroupés par la flèche u, sans que le nombre de groupes soit donné."
+ },
+ {
+  "code": "57-183",
+  "a_dire": "Deux couples de la même classe ont le même nombre x − 2y.",
+  "legende_titre": "Un même nombre pour deux couples voisins",
+  "lecture": [
+   "Dans chaque ligne, la flèche orange part d'un couple bleu et ajoute (2 ; 1) pour arriver à l'autre couple bleu.",
+   "Sous chaque couple, le calcul vert donne x − 2y.",
+   "Le signe égal vert au milieu montre que les deux calculs donnent le même nombre : 3 pour la première ligne, 1 pour la seconde."
+  ],
+  "a_voir": "Il faut voir que ajouter (2 ; 1) ne change pas x − 2y."
+ },
+ {
+  "code": "57-184",
+  "a_dire": "Si deux couples ont le même nombre x − 2y, leur différence est un multiple de (2 ; 1), donc ils sont dans la même classe.",
+  "legende_titre": "Du même repère à la même classe",
+  "lecture": [
+   "En haut, les deux couples bleus (6 ; 1) et (0 ; −2) ont le même nombre 4.",
+   "Le rectangle orange donne k, la différence des seconds nombres : 3.",
+   "Le rectangle bleu montre que la différence (6 ; 3) vaut 3 fois (2 ; 1).",
+   "Le rectangle vert conclut : la différence est dans N, les deux couples ont la même classe."
+  ],
+  "a_voir": "Il faut voir le chemin du même nombre jusqu'à la même classe, en passant par k."
+ },
+ {
+  "code": "57-185",
+  "a_dire": "La règle (x ; y) ↦ x − 2y respecte l'addition et la multiplication par un entier : c'est un homomorphisme.",
+  "legende_titre": "Une règle qui respecte somme et multiple",
+  "lecture": [
+   "Les rectangles bleus de gauche sont des calculs sur des couples ; les rectangles verts de droite donnent les images.",
+   "Dans la première ligne, la somme des couples a pour image −7, somme de 0 et de −7.",
+   "Dans la seconde ligne, le triple du couple a pour image −21, triple de −7.",
+   "Les flèches orange portent la lettre êta, la règle."
+  ],
+  "a_voir": "Il faut voir que calculer avant ou après la règle donne le même nombre."
+ },
+ {
+  "code": "57-186",
+  "a_dire": "Le noyau de la règle est l'ensemble N des multiples de (2 ; 1) et son image est tout ℤ.",
+  "legende_titre": "Noyau et image de la règle x − 2y",
+  "lecture": [
+   "À gauche, les ronds bleus pleins, alignés sur le trait bleu, sont les couples envoyés sur 0 : x égale 2y.",
+   "Les ronds gris vides sont les autres couples.",
+   "À droite, la droite graduée est ℤ ; les ronds verts marquent 5 et −3.",
+   "Les lignes vertes disent quels couples (5 ; 0) et (−3 ; 0) donnent ces nombres."
+  ],
+  "a_voir": "Il faut voir un noyau aligné sur les multiples de (2 ; 1) et une image qui couvre tous les entiers."
+ },
+ {
+  "code": "57-187",
+  "a_dire": "Chaque classe du quotient a un seul repère entier : le quotient ℤ²/N est la même structure que ℤ.",
+  "legende_titre": "Des classes et des entiers, un pour un",
+  "lecture": [
+   "À gauche, trois droites de ronds : bleue, orange et violette, chacune est une classe.",
+   "À droite, la droite graduée porte trois ronds de mêmes couleurs, aux repères −1, 0 et 1.",
+   "Le signe ≅ relie les deux côtés : une classe correspond à un entier."
+  ],
+  "a_voir": "Il faut voir que chaque droite a une couleur et un seul entier de la même couleur."
+ },
+ {
+  "code": "57-188",
+  "a_dire": "Les trois couples (1 ; 1), (1 ; 0) et (2 ; 1) ont pour repères −1, 1 et 0 ; (2 ; 1) est dans la classe de zéro, N.",
+  "legende_titre": "Trois droites, trois repères",
+  "lecture": [
+   "Chaque droite colorée est une classe ; le rond plein plus gros est le couple choisi sur elle.",
+   "Les cadres de droite donnent le calcul x − 2y de chaque couple : −1 en violet, 1 en orange, 0 en bleu.",
+   "La droite bleue passe par (0 ; 0) : c'est N lui-même."
+  ],
+  "a_voir": "Il faut voir que trois droites parallèles ont trois repères différents."
+ },
+ {
+  "code": "57-189",
+  "a_dire": "Avec le générateur (2 ; 0), le sous-module est formé des couples (2k ; 0) : seconds nombres nuls et premiers nombres pairs.",
+  "legende_titre": "Le sous-module engendré par (2 ; 0)",
+  "lecture": [
+   "Les ronds bleus pleins, sur la ligne du bas, sont les couples (2k ; 0).",
+   "La flèche orange u′ est le pas de (0 ; 0) à (2 ; 0).",
+   "Les deux ronds rouges, (1 ; 0) et (0 ; 1), ne font pas partie du sous-module.",
+   "Les ronds gris vides sont d'autres couples."
+  ],
+  "a_voir": "Il faut voir que le sous-module ne contient qu'un couple sur deux de la ligne du bas, et rien ailleurs."
+ },
+ {
+  "code": "57-190",
+  "a_dire": "Le quotient ℤ²/N′ a une partie finie (le reste de x modulo 2) et une partie infinie (le nombre y).",
+  "legende_titre": "Un quotient mêlant fini et infini",
+  "lecture": [
+   "Chaque rond est un couple : bleu quand le premier nombre est pair (reste 0), orange quand il est impair (reste 1).",
+   "La flèche verte relie (1 ; 3) et (5 ; 3) : ils sont dans la même classe.",
+   "L'accolade du bas dit que le reste de x ne prend que deux valeurs.",
+   "La flèche grise verticale dit que y prend tous les entiers."
+  ],
+  "a_voir": "Il faut voir deux couleurs seulement en largeur, et un nombre sans fin en hauteur."
+ },
+ {
+  "code": "57-191",
+  "a_dire": "Tout quotient de ℤⁿ est une somme de modules ℤ/dℤ (finis) et de modules ℤ (infinis).",
+  "legende_titre": "Le schéma commun des quotients de ℤⁿ",
+  "lecture": [
+   "Le cercle bleu à gauche est une horloge à 3 positions : trois restes, une partie finie.",
+   "La droite verte à droite est ℤ : une partie infinie.",
+   "Le signe × assemble les deux parties.",
+   "Le cas est le quotient de ℤ² par les multiples de (3 ; 0)."
+  ],
+  "a_voir": "Il faut voir qu'un quotient se range en horloges finies et en droites infinies."
+ },
+ {
+  "code": "57-192",
+  "a_dire": "Pour v = (2 ; 0,8), le polynôme x² + 1 annule v, car deux quarts de tour renversent v.",
+  "legende_titre": "Un polynôme qui annule le vecteur v",
+  "lecture": [
+   "La flèche bleue est v ; les deux flèches orange sont Tv puis T²v, obtenues par un quart de tour chacune.",
+   "L'arc gris indique le sens du quart de tour de v vers Tv.",
+   "T²v est l'opposé de v.",
+   "Le cadre vert écrit le résultat : x² + 1 envoie v sur (0 ; 0)."
+  ],
+  "a_voir": "Il faut voir que T²v est opposé à v, donc que leur somme est nulle."
+ },
+ {
+  "code": "57-193",
+  "a_dire": "Tous les multiples (x² + 1)g de x² + 1 annulent v : ils sont dans l'annulateur de v.",
+  "legende_titre": "Une famille infinie de polynômes annulants",
+  "lecture": [
+   "Les deux flèches orange sont Tv et T³v : elles sont opposées, leur somme est (0 ; 0).",
+   "Les cadres de droite sont des multiples de x² + 1 : g = 1, g = x, puis g quelconque.",
+   "Le cadre orange (g = x) est celui dont la flèche gauche donne le calcul.",
+   "La ligne verte dit que tous envoient v sur (0 ; 0)."
+  ],
+  "a_voir": "Il faut voir que le calcul de x³ + x est un cas d'une famille sans fin."
+ },
+ {
+  "code": "57-194",
+  "a_dire": "Aucun polynôme de degré 1 n'annule v, car Tv et v ne sont pas alignés.",
+  "legende_titre": "Pourquoi le degré 1 ne suffit pas",
+  "lecture": [
+   "La flèche bleue est v ; la flèche orange est Tv ; elles ne sont pas alignées.",
+   "On ajoute 0,4 fois v au bout de Tv : c'est le petit trait bleu.",
+   "La flèche rouge verticale donne le résultat (0 ; 2,32), qui n'est pas (0 ; 0)."
+  ],
+  "a_voir": "Il faut voir que, pour annuler le premier nombre, le second reste non nul."
+ },
+ {
+  "code": "57-195",
+  "a_dire": "L'annulateur de v est exactement l'ensemble des multiples de x² + 1.",
+  "legende_titre": "Ce qui annule v et ce qui ne l'annule pas",
+  "lecture": [
+   "Le grand cadre gris contient tous les polynômes ; le cadre bleu est l'ensemble des multiples de x² + 1.",
+   "Le rond vert est x³ + x² + x + 1 : multiple de x² + 1, il annule v.",
+   "Le rond rouge est x³ + 2 : il laisse le reste −x + 2, qui envoie v sur (4,8 ; −0,4), différent de 0."
+  ],
+  "a_voir": "Il faut voir un polynôme dans l'ensemble qui annule v, et un autre qui n'y est pas."
+ },
+ {
+  "code": "57-196",
+  "a_dire": "Deux polynômes qui diffèrent d'un multiple de x² + 1 donnent le même vecteur : ℝ[x]v ressemble à ℝ[x] pris à un multiple de x² + 1 près.",
+  "legende_titre": "Même classe de polynômes, même vecteur",
+  "lecture": [
+   "Les deux cadres bleus sont les polynômes 3x + 2 et x² + 3x + 3 ; leur différence est x² + 1 (trait orange).",
+   "Les flèches orange les appliquent au même vecteur v.",
+   "Le cadre vert est le vecteur obtenu, (1,6 ; 7,6), le même pour les deux. Sous lui, le calcul pour 3x + 2.",
+   "En bas : même classe, même vecteur, donc ℝ[x]v ≅ ℝ[x]/(x² + 1)."
+  ],
+  "a_voir": "Deux polynômes qui diffèrent de x² + 1 arrivent sur le même vecteur."
+ },
+ {
+  "code": "57-197",
+  "a_dire": "Le quotient ℝ[x]/(x² + 1) est le corps ℂ : la classe de x joue le rôle de i.",
+  "legende_titre": "Un quotient déjà connu",
+  "lecture": [
+   "La colonne bleue de gauche contient des classes de polynômes, où x² vaut −1.",
+   "La colonne violette de droite contient des nombres complexes, où i² vaut −1.",
+   "Les flèches doubles relient chaque classe à son nombre : 2 + x à 2 + i, 3 + x à 3 + i.",
+   "Les produits (en bas) donnent le même résultat : 5 + 5x et 5 + 5i."
+  ],
+  "a_voir": "Il faut voir les deux colonnes se répondre ligne par ligne."
+ },
+ {
+  "code": "57-198",
+  "a_dire": "Le quart de tour du plan est la multiplication par i dans ℂ.",
+  "legende_titre": "Le quart de tour devient une multiplication",
+  "lecture": [
+   "La flèche bleue est le couple (2 ; 0,8), écrit aussi 2 + 0,8i.",
+   "La flèche orange est le quart de tour, (−0,8 ; 2), écrit aussi −0,8 + 2i.",
+   "L'arc gris de l'une à l'autre est la multiplication par i."
+  ],
+  "a_voir": "Il faut voir que multiplier par i fait tourner la flèche d'un quart de tour."
+ },
+ {
+  "code": "57-199",
+  "a_dire": "Le cisaillement S(x ; y) = (x + y ; y) garde la hauteur y et décale le premier nombre de y.",
+  "legende_titre": "Un décalage égal à la hauteur",
+  "lecture": [
+   "Les ronds bleus sont des points de départ ; les ronds verts sont leurs images ; les flèches orange sont les décalages.",
+   "Le point (1 ; 0), en gris, est sur la ligne du bas et ne bouge pas.",
+   "À la hauteur 1, le décalage est 1 ; à la hauteur 3, il est 3.",
+   "Les pointillés gris montrent que la hauteur ne change pas."
+  ],
+  "a_voir": "Il faut voir que plus le point est haut, plus il est décalé."
+ },
+ {
+  "code": "57-200",
+  "a_dire": "Le cisaillement appliqué deux fois envoie (x ; y) sur (x + 2y ; y), et deux fois « image moins départ » envoie tout sur (0 ; 0).",
+  "legende_titre": "Deux applications du cisaillement",
+  "lecture": [
+   "La ligne du haut applique S deux fois : (x ; y), (x + y ; y), (x + 2y ; y). Avec (2 ; 3) : (2 ; 3), (5 ; 3), (8 ; 3).",
+   "La ligne du bas applique S − 1, « image moins départ » : (x ; y), (y ; 0), (0 ; 0). Avec (2 ; 3) : (2 ; 3), (3 ; 0), (0 ; 0).",
+   "Les flèches orange portent le nom de l’opération ; le cadre vert est l’arrivée.",
+   "Les lettres montrent que le résultat vaut pour tout couple."
+  ],
+  "a_voir": "Deux fois S − 1 envoie tout couple sur (0 ; 0)."
+ },
+ {
+  "code": "57-201",
+  "a_dire": "Pour tout couple, deux fois « image moins départ » donne (0 ; 0) : l'annulateur de tout vecteur contient (x − 1)².",
+  "legende_titre": "Un même polynôme pour tous les couples",
+  "lecture": [
+   "La ligne du haut est le cas général : (x ; y) devient (y ; 0), puis (0 ; 0).",
+   "La ligne du bas est le cas chiffré : (5 ; −2) devient (−2 ; 0), puis (0 ; 0).",
+   "Chaque flèche orange est l'opération S − 1 ; les cadres verts sont les résultats nuls."
+  ],
+  "a_voir": "Il faut voir la même chaîne pour les lettres et pour les nombres."
+ },
+ {
+  "code": "57-202",
+  "a_dire": "Sur le même plan, le quart de tour et le cisaillement donnent deux modules différents, car ils n'ont pas les mêmes polynômes annulants.",
+  "legende_titre": "Deux transformations, deux modules",
+  "lecture": [
+   "Chaque ligne est une transformation, chaque colonne un polynôme ; la case donne le polynôme appliqué à v.",
+   "Une case verte donne (0 ; 0) : le polynôme annule v.",
+   "Une case rouge ne donne pas (0 ; 0) : il ne l'annule pas.",
+   "Les cases vertes sont en diagonale : x² + 1 pour le quart de tour, (x − 1)² pour le cisaillement."
+  ],
+  "a_voir": "Il faut voir que les cases vertes ne sont pas aux mêmes places selon la transformation."
+ },
+ {
+  "code": "57-203",
+  "a_dire": "L'ensemble réduit à 0 est un module sur tout anneau : a·0 = 0 et chaque règle devient 0 = 0.",
+  "legende_titre": "Un module à un seul élément",
+  "lecture": [
+   "Le cadre bleu en pointillé contient un seul rond, 0 : c'est M.",
+   "La flèche orange part d'un coefficient a et arrive sur 0 : a fois 0 donne 0.",
+   "Les quatre lignes vertes disent que chaque règle se réduit à 0 = 0."
+  ],
+  "a_voir": "Il faut voir que tout coefficient renvoie l'unique élément sur lui-même."
+ },
+ {
+  "code": "57-204",
+  "a_dire": "Le module nul est le plus petit sous-module de tout module, et le quotient M/M n'a qu'une classe : il vaut 0.",
+  "legende_titre": "Le module nul de deux façons",
+  "lecture": [
+   "À gauche, parmi les couples d'entiers (ronds gris), le rond bleu plein est (0 ; 0), le plus petit sous-module.",
+   "À droite, tous les ronds sont dans un seul cadre vert en pointillé.",
+   "Ce cadre unique est la seule classe de ℤ²/ℤ²."
+  ],
+  "a_voir": "Il faut voir un seul point d'un côté, et tous les points dans une seule classe de l'autre."
+ },
+ {
+  "code": "57-205",
+  "a_dire": "Pour x = 0, l'annulateur est tout l'anneau, et les deux côtés de la formule Rx ≅ R/ann x n'ont qu'un élément.",
+  "legende_titre": "La formule pour le vecteur nul",
+  "lecture": [
+   "Le cadre bleu de gauche est le sous-module engendré par (0 ; 0) : un seul rond, 0.",
+   "Le cadre violet de droite est le quotient de ℤ par ℤ : une seule classe, un seul rond, 0.",
+   "Le signe ≅ relie les deux côtés ; la ligne orange du haut donne la raison : tout entier n envoie (0 ; 0) sur (0 ; 0)."
+  ],
+  "a_voir": "Il faut voir deux côtés qui ont chacun un seul élément."
+ },
+ {
+  "code": "57-206",
+  "a_dire": "Pour savoir si un groupe abélien est un module sur ℤ/nℤ, on teste si n fois chaque élément vaut 0.",
+  "legende_titre": "Le test pour n = 6",
+  "lecture": [
+   "Chaque cercle est une horloge : trois positions à gauche, quatre à droite.",
+   "À gauche, 6 fois 1 retombe sur 0, rond vert : le test réussit.",
+   "À droite, 6 fois 1 arrive sur 2, rond rouge, pas sur 0 : le test échoue."
+  ],
+  "a_voir": "Il faut voir que la même opération retombe sur 0 sur une horloge et pas sur l'autre."
+ },
+ {
+  "code": "57-207",
+  "a_dire": "Si la classe de n agit comme 0, alors n fois x vaut 0 pour tout x ; cela vient de l'égalité de la classe de n avec 0.",
+  "legende_titre": "L'étape qui porte la preuve",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : un module sur ℤ/6ℤ, où la classe de 6 est la somme de 6 classes de 1 et agit comme 6x.",
+   "Le cadre orange épais est l’étape décisive : la classe de 6 vaut la classe de 0.",
+   "Le cadre vert du bas est l’arrivée : 6x = (classe de 6)x = (classe de 0)x = 0, pour tout x.",
+   "Sous le trait, en gris, la réciproque : 4 et 10, de même classe, agissent pareil."
+  ],
+  "a_voir": "Il faut voir l’étape orange comme le passage obligé entre départ et arrivée."
+ },
+ {
+  "code": "57-208",
+  "a_dire": "Les modules sur ℤ/nℤ sont les groupes abéliens dont tout élément a un ordre qui divise n.",
+  "legende_titre": "Un critère sur les ordres",
+  "lecture": [
+   "Les trois cadres verts du haut sont des éléments de l'horloge à 6 positions, avec leurs ordres 6, 3 et 2 : tous divisent 6 et 12.",
+   "Le cadre rouge du bas est l'élément 1 des restes modulo 4 : son ordre est 4.",
+   "4 ne divise pas 2 : on ne peut pas faire agir ℤ/2ℤ sur ce groupe."
+  ],
+  "a_voir": "Il faut voir qu'un seul ordre qui ne divise pas n suffit à faire échouer."
+ },
+ {
+  "code": "57-209",
+  "a_dire": "L'horloge ℤ/12ℤ est un module sur ℤ/12ℤ et sur ℤ/24ℤ, pas sur ℤ/5ℤ.",
+  "legende_titre": "Trois essais sur l'horloge à 12",
+  "lecture": [
+   "Le cercle de gauche est l'horloge à 12 positions ; le rond vert est 0, le rond rouge est 5.",
+   "Les deux cadres verts disent que 12 fois 1 et 24 fois 1 valent 0.",
+   "Le cadre rouge dit que 5 fois 1 vaut 5, qui n'est pas 0."
+  ],
+  "a_voir": "Il faut voir deux essais qui retombent sur 0 et un seul qui n'y retombe pas."
+ },
+ {
+  "code": "57-210",
+  "a_dire": "Les rationnels ne peuvent pas agir sur un groupe abélien fini non nul : seul le module nul convient.",
+  "legende_titre": "Les rationnels ne passent pas sur ℤ/6ℤ",
+  "lecture": [
+   "Les six ronds bleus sont les éléments y de l’horloge à 6 positions, de 0 à 5.",
+   "Les flèches grises mènent toutes à 6y = 0, vrai pour tout y (cadre vert).",
+   "Si 1/6 agissait, il faudrait x = 6y. Seul x = 0 est atteint (flèche verte).",
+   "Les valeurs x = 1 à 5 ne sont jamais atteintes (trait rouge barré) : seul le module nul reste."
+  ],
+  "a_voir": "Tous les y donnent 6y = 0 : seule la valeur 0 est possible."
+ }
+]

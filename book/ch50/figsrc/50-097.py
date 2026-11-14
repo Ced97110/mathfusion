@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+def node(x, y, name, role): disc(ax, x, y, 4.6, role, label=name, size='s')
+text(ax, 23, 46, r'$P_A$ agit seul', 'sujet', 'm')
+text(ax, 67, 46, r'$G$ entier agit', 'limite', 'm')
+box(ax, 3, 22, 15, 16, 'resultat'); node(10.5, 30, r'$P_A$', 'sujet')
+box(ax, 21, 22, 23, 16, 'resultat'); node(27, 30, r'$P_B$', 'autre'); node(38, 30, r'$P_C$', 'autre')
+text(ax, 10.5, 16, r'$1=2^0$', 'resultat', 's'); text(ax, 32.5, 16, r'$2=2^1$', 'resultat', 's')
+box(ax, 48, 22, 37, 16, 'limite')
+for x, n, r in ((57, 'A', 'sujet'), (66.5, 'B', 'autre'), (76, 'C', 'autre')): node(x, 30, r'$P_%s$' % n, r)
+text(ax, 66.5, 16, '3 : pas une puissance de 2', 'limite', 's')
+save(fig, '50-097')

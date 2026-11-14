@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+f = numberline(ax, 10, 78, 30, 0, 10, step=1, labels=False, arrow_right=False)
+ax.add_patch(Rectangle((f(5), 26.5), f(10) - f(5), 7, fc=FILL['resultat'], ec='none', zorder=1))
+text(ax, f(0), 24, '32,11', 'fixe', 's'); text(ax, f(10), 24, '32,12', 'resultat', 's', weight='bold')
+text(ax, f(5), 24, '32,115', 'fixe', 's')
+disc(ax, f(6), 30, 1.3, 'varie')
+text(ax, f(6), 45, '32,116', 'varie', 'm')
+arrow(ax, (f(6) + 1, 32), (f(10) - 1, 32), 'varie', curve=-0.5)
+text(ax, f(7.5), 15, 'moitié haute', 'resultat', 's')
+text(ax, 44, 54, r'$6 \geq 5$ : on monte', 'varie', 'm')
+save(fig, '08-043')

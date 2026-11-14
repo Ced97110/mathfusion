@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+o = (12, 12); s = 28
+arrow(ax, (o[0]-6, o[1]), (o[0]+66, o[1]), 'fixe', lw=0.6)
+line(ax, [(o[0], o[1]-4), (o[0], o[1]+50)], 'fixe', lw=0.6)
+m = (o[0]+s/2, o[1]+s/2); P = (o[0]+s, o[1])
+arrow(ax, o, m, 'fixe', lw=0.9); arrow(ax, m, P, 'fixe', lw=0.9)
+disc(ax, P[0], P[1], 1.3, 'fixe')
+text(ax, P[0], P[1]-4.5, r'$P$', 'fixe', 'm')
+u = (o[0]+s, o[1]+s); Q = (u[0]+s/4, u[1]-s/4)
+arrow(ax, o, u, 'sujet', lw=1.8)
+arrow(ax, u, Q, 'autre', lw=1.8)
+disc(ax, Q[0], Q[1], 1.6, 'resultat')
+text(ax, u[0]-9, u[1]-6, r'$u$', 'sujet', 'l')
+text(ax, Q[0]+3, Q[1]-4, r'$\frac{1}{2}v$', 'autre', 'l', ha='left')
+text(ax, Q[0]+3, Q[1]+4, r'$\eta P$', 'resultat', 'l', ha='left')
+text(ax, 50, 57, r'$\eta P=u+\frac{1}{2}v$', 'resultat', 'l')
+save(fig, '72-094')

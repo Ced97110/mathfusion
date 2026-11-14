@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 3, 24, 18, 24, 'fixe', label=r'$G$ : 6', size='m')
+box(ax, 35, 24, 18, 14, 'sujet', label=r"$G'$ : 3", size='m')
+box(ax, 67, 24, 18, 8, 'fixe', label=r'$\{e\}$', size='m', dash=True)
+arrow(ax, (21, 34), (35, 34), 'varie', lw=1.4); arrow(ax, (53, 28), (67, 28), 'fixe', lw=1.4)
+text(ax, 28, 52, '1re marche', 'varie', 's', weight='bold'); text(ax, 60, 42, '2e marche', 'fixe', 's')
+text(ax, 28, 18, r"$G/G'$ abélien", 'resultat', 's'); text(ax, 60, 18, r"$G'$ abélien", 'resultat', 's')
+text(ax, 44, 8, 'suite de marches abéliennes', 'sujet', 's')
+save(fig, '50-256')

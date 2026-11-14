@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 60, "ils s'annulent en $2+i$", 'encre')
+box(ax, 2, 36, 64, 10, 'fixe', label=r'$(\lambda-7)(\lambda^2-4\lambda+5)$')
+for k in range(3): box(ax, 69 + 5.3 * k, 38.5, 4.6, 5, 'fixe')
+text(ax, 77, 33, 'degré 3', 'fixe', 's')
+box(ax, 2, 14, 64, 10, 'resultat', label=r'$\lambda^2-4\lambda+5$')
+for k in range(2): box(ax, 69 + 5.3 * k, 16.5, 4.6, 5, 'resultat')
+text(ax, 74, 10, 'degré 2', 'resultat', 's')
+text(ax, 34, 8, r'choisi : $m_a$', 'resultat', 's')
+save(fig, '77-040')

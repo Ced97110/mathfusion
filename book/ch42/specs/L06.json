@@ -1,0 +1,178 @@
+[
+ {
+  "code": "42-081",
+  "a_dire": "La contraposée de « si p, alors q » est « si non q, alors non p » : on échange et on nie.",
+  "legende_titre": "Contraposée : échange et négation",
+  "lecture": [
+   "Le bleu est l'énoncé de départ « multiple de 4 ⇒ pair ».",
+   "Le vert est la contraposée « pas pair ⇒ pas multiple de 4 ».",
+   "Le rouge est la réciproque « pair ⇒ multiple de 4 »."
+  ],
+  "a_voir": "Seule la contraposée, en vert, est vraie comme le départ."
+ },
+ {
+  "code": "42-082",
+  "a_dire": "Prouver « si p, alors q » revient à prouver « si non q, alors non p ».",
+  "legende_titre": "Deux énoncés qui disent la même chose",
+  "lecture": [
+   "Le grand disque violet Q contient les nombres pairs.",
+   "Le disque bleu P, dedans, contient les multiples de 4.",
+   "Le 7 rouge est hors de Q, donc hors de P."
+  ],
+  "a_voir": "Un nombre hors de Q est forcément hors de P."
+ },
+ {
+  "code": "42-083",
+  "a_dire": "Quand l'hypothèse ne permet pas de calculer, on prouve la contraposée.",
+  "legende_titre": "Quand le direct ne mène nulle part",
+  "lecture": [
+   "En haut, on part de n² = 36 et on ne sait pas retrouver n : c'est le rouge.",
+   "En bas, on part de n impair écrit 2k + 1.",
+   "L'orange est le calcul de n².",
+   "Le vert est le résultat : n² impair."
+  ],
+  "a_voir": "Écrire n = 2k + 1 permet de calculer."
+ },
+ {
+  "code": "42-084",
+  "a_dire": "La preuve part de n = 2k + 1, calcule n² et arrive à n² impair.",
+  "legende_titre": "Une preuve en trois temps",
+  "lecture": [
+   "Le bleu est le départ n = 2k + 1.",
+   "L'orange, encadré en gras, est le calcul qui porte tout.",
+   "Le vert est l'arrivée : n² est impair.",
+   "Avec 7, on trouve 49 = 2 × 24 + 1."
+  ],
+  "a_voir": "Le calcul du milieu relie le départ à l'arrivée."
+ },
+ {
+  "code": "42-085",
+  "a_dire": "Des exemples qui réussissent ne prouvent pas un énoncé « pour tout ».",
+  "legende_titre": "Beaucoup d'essais, aucune preuve",
+  "lecture": [
+   "Les cinq disques verts sont des essais qui réussissent.",
+   "Le disque rouge est le nombre 2, premier et pair.",
+   "Le cadre gris rappelle que des essais ne prouvent rien."
+  ],
+  "a_voir": "Cinq réussites n'empêchent pas un cas contraire."
+ },
+ {
+  "code": "42-086",
+  "a_dire": "Quarante essais réussis ne suffisent pas : n = 40 donne un nombre non premier.",
+  "legende_titre": "Quarante réussites, puis un échec",
+  "lecture": [
+   "Les quarante cases vertes sont les valeurs de n de 0 à 39 : le résultat est premier.",
+   "Le cadre rouge est n = 40 : 1681 égale 41 × 41, qui n'est pas premier."
+  ],
+  "a_voir": "Un seul cas rouge réfute l'énoncé après quarante verts."
+ },
+ {
+  "code": "42-087",
+  "a_dire": "Un contre-exemple est un seul cas qui réfute un énoncé « pour tout ».",
+  "legende_titre": "Un seul cas qui réfute",
+  "lecture": [
+   "Le cadre bleu est l'énoncé « tous les premiers sont impairs ».",
+   "Le disque rouge 2 est premier et pair.",
+   "La flèche rouge dit qu'il réfute l'énoncé."
+  ],
+  "a_voir": "Un seul objet précis suffit pour réfuter."
+ },
+ {
+  "code": "42-088",
+  "a_dire": "Les quantificateurs disent sur combien d'objets porte une affirmation : tous, ou au moins un.",
+  "legende_titre": "Sur combien d'objets ?",
+  "lecture": [
+   "À gauche, « pour tout » : les quatre nombres pairs sont en bleu.",
+   "À droite, « il existe » : un seul, le 4, est en orange.",
+   "Les autres sont en gris."
+  ],
+  "a_voir": "« Pour tout » prend tous les objets, « il existe » en prend au moins un."
+ },
+ {
+  "code": "42-089",
+  "a_dire": "Le signe ∀ se lit « pour tout » et s'écrit devant la lettre.",
+  "legende_titre": "∀ : le signe de « pour tout »",
+  "lecture": [
+   "Le bleu est le signe ∀.",
+   "Les deux gris sont la lettre x et son ensemble ℝ.",
+   "Le violet est la condition x² ≥ 0.",
+   "Les accolades séparent les objets visés et la condition."
+  ],
+  "a_voir": "Avant la virgule, les objets ; après, la condition."
+ },
+ {
+  "code": "42-090",
+  "a_dire": "Le signe ∃ remplace « il existe un » et s'écrit comme ∀.",
+  "legende_titre": "∃ : écrire plus vite « il existe »",
+  "lecture": [
+   "En haut, la phrase en trois morceaux.",
+   "En bas, l'écriture courte du même morceau, reliée par une flèche orange.",
+   "Le bleu est ∃, le gris est x ∈ ℝ, le violet est x² = 2."
+  ],
+  "a_voir": "Chaque morceau de la phrase a son signe."
+ },
+ {
+  "code": "42-091",
+  "a_dire": "« Pour tout réel x, x² ≥ 0 » est vrai, et la règle des signes le prouve.",
+  "legende_titre": "Un carré n'est jamais négatif",
+  "lecture": [
+   "La courbe verte est x².",
+   "Les trois points bleus sont −3, 0 et 3, de carrés 9, 0 et 9.",
+   "La zone rouge sous l'axe gris est celle où x² serait négatif : la courbe n'y entre jamais."
+  ],
+  "a_voir": "La courbe reste au-dessus de l'axe ou sur lui."
+ },
+ {
+  "code": "42-092",
+  "a_dire": "« Pour tout réel x, x² > 0 » est faux : x = 0 est un contre-exemple.",
+  "legende_titre": "Un seul point suffit à rendre faux",
+  "lecture": [
+   "La courbe grise est x².",
+   "Les deux points verts, −2 et 3, ont un carré plus grand que 0.",
+   "Le point rouge x = 0 a un carré égal à 0, pas plus grand."
+  ],
+  "a_voir": "Le point rouge sur l'axe réfute l'énoncé."
+ },
+ {
+  "code": "42-093",
+  "a_dire": "« Il existe un réel x tel que x² = 2 » est vrai : √2 convient.",
+  "legende_titre": "Il existe un réel de carré 2",
+  "lecture": [
+   "La courbe bleue est x².",
+   "La ligne orange en tirets est la valeur 2.",
+   "Les deux points verts sont les réels qui conviennent : −√2 et √2."
+  ],
+  "a_voir": "Au moins un réel convient, ici deux."
+ },
+ {
+  "code": "42-094",
+  "a_dire": "« Il existe une fraction x telle que x² = 2 » est faux, et des essais ne le montrent pas seuls.",
+  "legende_titre": "Aucune fraction n'a un carré égal à 2",
+  "lecture": [
+   "La droite montre les carrés.",
+   "Le cercle vert est la cible 2.",
+   "Les points rouges sont 1,96 pour 7/5 et 2,25 pour 3/2 : ils ratent la cible."
+  ],
+  "a_voir": "Les deux essais ratent 2, mais ne prouvent pas pour toutes les fractions."
+ },
+ {
+  "code": "42-095",
+  "a_dire": "L'ensemble où l'on cherche x fait partie de l'énoncé et peut changer sa vérité.",
+  "legende_titre": "Même phrase, deux ensembles",
+  "lecture": [
+   "En haut, dans ℝ, le point vert √2 est sur la droite : vrai.",
+   "En bas, dans ℚ, les points bleus sont des fractions et le cercle rouge à la place de √2 reste vide : faux."
+  ],
+  "a_voir": "Dans ℚ, il manque un point à la place de √2."
+ },
+ {
+  "code": "42-096",
+  "a_dire": "L'ordre des quantificateurs décide si y peut changer avec x.",
+  "legende_titre": "L'ordre change la vérité",
+  "lecture": [
+   "En haut, chaque x reçoit son propre y = x + 1 : tout est vert.",
+   "En bas, un seul y = 1000 doit convenir : x = 5 va, mais x = 1000 en rouge échoue."
+  ],
+  "a_voir": "Si y vient avant x, un seul y doit convenir à tous."
+ }
+]

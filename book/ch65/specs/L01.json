@@ -1,0 +1,354 @@
+[
+ {
+  "code": "65-001",
+  "a_dire": "Le critère de Galois parle du groupe de Galois, mais ne dit pas comment le calculer : c'est la question du chapitre.",
+  "legende_titre": "Une étape manque entre les solutions et le critère",
+  "lecture": [
+   "Les trois points bleus sont les solutions connues : 1,53, 0,35 et −1,88.",
+   "La case orange en pointillés est le groupe de Galois : on ne sait pas encore comment l'obtenir.",
+   "La case grise est la résolution par radicaux. La flèche verte, le critère, part du groupe."
+  ],
+  "a_voir": "Entre les solutions et le groupe, il y a une flèche « comment ? » sans réponse."
+ },
+ {
+  "code": "65-002",
+  "a_dire": "Les changements de signe de x³ − 3x + 1 montrent trois solutions réelles sans les calculer, mais ces valeurs ne donnent pas le groupe.",
+  "legende_titre": "Compter les solutions par les signes",
+  "lecture": [
+   "La courbe bleue est l'expression x³ − 3x + 1.",
+   "Les points orange sont les essais : −1 pour −2, 1 pour 0, −1 pour 1 et 3 pour 2.",
+   "Les points verts sont les trois solutions, là où la courbe coupe l'axe : −1,88, 0,35 et 1,53."
+  ],
+  "a_voir": "Le signe change trois fois, donc la courbe coupe trois fois l'axe."
+ },
+ {
+  "code": "65-003",
+  "a_dire": "Au second degré une formule avec des radicaux existe ; pour x⁵ − 4x + 2 = 0, qui a cinq solutions dans ℂ, la question reste ouverte.",
+  "legende_titre": "Une formule au degré 5 ?",
+  "lecture": [
+   "En haut, la case grise est le second degré. La case verte est sa formule avec des racines.",
+   "La case bleue est l'équation x⁵ − 4x + 2 = 0, avec ses cinq solutions dans ℂ.",
+   "La case orange en pointillés pose la question : une formule du même genre ?"
+  ],
+  "a_voir": "Le second degré a une formule ; pour le degré 5, la case reste une question."
+ },
+ {
+  "code": "65-004",
+  "a_dire": "Un automorphisme qui fixe le corps de base envoie une racine sur une racine de la même équation.",
+  "legende_titre": "Une racine est envoyée sur une racine",
+  "lecture": [
+   "La case bleue à gauche est la racine 1,41, dont le carré vaut environ 2.",
+   "Les cases vertes sont les images possibles : 1,41 ou −1,41, dont le carré vaut aussi environ 2.",
+   "La case rouge est une image impossible : son carré moins 2 ne donne pas 0."
+  ],
+  "a_voir": "Les images possibles sont des racines ; un autre nombre est exclu."
+ },
+ {
+  "code": "65-005",
+  "a_dire": "Comme η respecte les sommes et les produits et fixe les coefficients, f(η(r)) = η(f(r)) = η(0) = 0 : l'image d'une racine est une racine.",
+  "legende_titre": "Les trois temps de la preuve",
+  "lecture": [
+   "La case bleue est le départ : r est une racine, donc f(r) = 0.",
+   "La case orange est l'étape qui porte la preuve : f(η(r)) = η(f(r)), car η respecte + et × et fixe −2.",
+   "La case verte est l'arrivée : η(0) = 0."
+  ],
+  "a_voir": "L'étape orange fait passer de f(r) = 0 à une image qui annule aussi f."
+ },
+ {
+  "code": "65-006",
+  "a_dire": "Quand E est engendré par les racines, la permutation des racines détermine l'automorphisme ; avec un corps plus grand, deux automorphismes peuvent donner la même permutation.",
+  "legende_titre": "Une permutation, un seul automorphisme",
+  "lecture": [
+   "À gauche (vert), E est engendré par les racines : chaque permutation, identité ou échange, donne un seul automorphisme.",
+   "À droite (rouge), E est plus grand, avec √3 : l'identité donne deux automorphismes η₁ et η₂.",
+   "η₁ garde √3 ; η₂ l'envoie sur −√3."
+  ],
+  "a_voir": "À gauche, une flèche par permutation ; à droite, deux flèches rouges partent de la même permutation."
+ },
+ {
+  "code": "65-007",
+  "a_dire": "Le groupe de Galois d'un polynôme à n racines est une partie de Sn, qui contient toujours l'identité.",
+  "legende_titre": "Une partie des six rangements",
+  "lecture": [
+   "Le grand cadre gris est S₃ : 3 × 2 × 1 = 6 permutations.",
+   "Les six disques sont les permutations ; le disque marqué 1 est l'identité.",
+   "Le cadre bleu en pointillés est G_f : il regroupe une partie des permutations, dont l'identité."
+  ],
+  "a_voir": "G_f est une partie de S₃, pas forcément S₃ en entier."
+ },
+ {
+  "code": "65-008",
+  "a_dire": "Le chapitre répond à trois questions dans l'ordre : calculer un groupe, le cas des coefficients en lettres, le cas des coefficients entiers.",
+  "legende_titre": "Les trois questions du chapitre",
+  "lecture": [
+   "Les trois cases bleues sont les trois questions, de haut en bas.",
+   "Les flèches orange donnent l'ordre : d'abord, ensuite, enfin.",
+   "La case orange en pointillés est le but : une formule au degré 5 ?"
+  ],
+  "a_voir": "Les trois étapes se suivent et mènent à la question du degré 5."
+ },
+ {
+  "code": "65-009",
+  "a_dire": "Le groupe de x³ − 3x + 1 contient le circuit σ : r₁ vers r₂, r₂ vers r₃, r₃ vers r₁, et on revient au départ après trois pas.",
+  "legende_titre": "Trois flèches qui bouclent",
+  "lecture": [
+   "Les trois disques bleus sont les racines r₁ = 1,53, r₂ = 0,35 et r₃ = −1,88 sur la droite.",
+   "La première flèche orange va de r₁ à r₂, la deuxième de r₂ à r₃.",
+   "La flèche du bas va de r₃ à r₁ et ferme le circuit."
+  ],
+  "a_voir": "En suivant les trois flèches depuis r₁, on revient sur r₁."
+ },
+ {
+  "code": "65-010",
+  "a_dire": "Le signe (r₁ r₂ r₃) liste les racines dans l'ordre du circuit, sans répéter la première.",
+  "legende_titre": "Lire un cycle dans l'ordre",
+  "lecture": [
+   "Le signe bleu (r₁ r₂ r₃) est écrit en grand.",
+   "Les trois cases bleues sont les racines, dans l'ordre où elles sont écrites.",
+   "Les flèches orange vont de r₁ à r₂, de r₂ à r₃, puis de r₃ à r₁ : ce dernier retour n'est pas écrit."
+  ],
+  "a_voir": "Le retour sur r₁ est sous-entendu dans l'écriture."
+ },
+ {
+  "code": "65-011",
+  "a_dire": "Le symbole σ nomme le circuit r₁ → r₂ → r₃ → r₁ ; σ² est le circuit deux fois, σ³ revient à l'identité.",
+  "legende_titre": "Un seul signe pour le circuit",
+  "lecture": [
+   "Dans chaque colonne, la rangée du haut (bleu) est « avant » et celle du bas (gris) est « après ».",
+   "À gauche, les flèches orange de σ : r₁ vers la deuxième place, r₂ vers la troisième, r₃ vers la première.",
+   "Au milieu, σ² : le circuit deux fois. À droite, σ³ = 1 : chaque racine revient à sa place (flèches vertes)."
+  ],
+  "a_voir": "Trois fois σ ne déplace plus rien."
+ },
+ {
+  "code": "65-012",
+  "a_dire": "Le groupe de x³ − 3x + 1 n'a que trois éléments, 1, σ et σ² (c'est A₃), parmi les six rangements de S₃.",
+  "legende_titre": "Trois rangements sur six",
+  "lecture": [
+   "Le grand cadre gris contient les 6 rangements de S₃.",
+   "Le cadre vert contient les 3 éléments du groupe : l'identité 1, le circuit σ, le circuit à l'envers σ².",
+   "Les trois cases rouges en pointillés sont les échanges de deux racines : absents du groupe."
+  ],
+  "a_voir": "Seuls les trois rangements du cadre vert sont dans le groupe."
+ },
+ {
+  "code": "65-013",
+  "a_dire": "Dans le groupe de x³ − 3x + 1, aucun échange de deux racines avec la troisième fixe n'est présent.",
+  "legende_titre": "Le circuit est là, l'échange est absent",
+  "lecture": [
+   "Les trois disques bleus sont les racines r₁, r₂ et r₃.",
+   "Les flèches orange forment le circuit : présent dans le groupe.",
+   "La double flèche rouge barrée d'une croix est l'échange de r₁ et r₂, avec r₃ en place : absent."
+  ],
+  "a_voir": "La double flèche rouge barrée n'est pas dans le groupe."
+ },
+ {
+  "code": "65-014",
+  "a_dire": "Les trois racines de x³ − 2 sont à la même distance 1,26 de 0 et forment un triangle ; une seule est réelle.",
+  "legende_titre": "Trois racines en triangle",
+  "lecture": [
+   "Le plan montre les réels à l'horizontale et les imaginaires à la verticale.",
+   "Le point vert, à droite, est la racine réelle : elle est à 1,26 de 0.",
+   "Les deux points bleus sont non réels, à la même distance de 0 ; le triangle bleu relie les trois."
+  ],
+  "a_voir": "Les trois racines sont sur un cercle autour de 0, une seule sur l'axe des réels."
+ },
+ {
+  "code": "65-015",
+  "a_dire": "Le triangle des racines de x³ − 2 a trois axes de pliage, un par sommet ; chacun échange deux racines et laisse la troisième.",
+  "legende_titre": "Trois pliages, trois échanges",
+  "lecture": [
+   "Le triangle bleu a pour sommets r₁, r₂ et r₃.",
+   "Les trois droites orange en pointillés passent par le centre et un sommet : un axe par sommet.",
+   "La flèche verte montre l'axe horizontal : r₂ et r₃ s'échangent, r₁ ne bouge pas."
+  ],
+  "a_voir": "Chaque axe de pliage donne un échange de deux sommets."
+ },
+ {
+  "code": "65-016",
+  "a_dire": "Le signe τ = (r₂ r₃) n'écrit que les deux racines échangées ; la racine qui reste en place n'apparaît pas.",
+  "legende_titre": "Écrire seulement ce qui bouge",
+  "lecture": [
+   "Les deux disques bleus r₂ et r₃ sont échangés par les deux flèches orange.",
+   "Le disque gris r₁ reste en place.",
+   "L'accolade bleue montre que seules r₂ et r₃ sont écrites dans le signe."
+  ],
+  "a_voir": "r₁ est absente de l'écriture parce qu'elle ne bouge pas."
+ },
+ {
+  "code": "65-017",
+  "a_dire": "La conjugaison complexe échange 3 + 2i et 3 − 2i et laisse 5 en place : c'est la transposition (r₂ r₃).",
+  "legende_titre": "Conjuguer, c'est échanger deux racines",
+  "lecture": [
+   "Les deux points bleus sont 3 + 2i et 3 − 2i, de part et d'autre de l'axe des réels.",
+   "La double flèche orange les échange.",
+   "Le point gris 5 est réel : il reste en place."
+  ],
+  "a_voir": "Les deux nombres conjugués s'échangent, le réel ne bouge pas."
+ },
+ {
+  "code": "65-018",
+  "a_dire": "Le groupe de x³ − 2 est S₃ en entier : ses 6 rangements sont tous présents, échanges compris.",
+  "legende_titre": "Les six rangements sont présents",
+  "lecture": [
+   "Le grand cadre vert est le groupe de x³ − 2 : 3 × 2 × 1 = 6 éléments.",
+   "En haut, les trois éléments de A₃ : 1, σ et σ².",
+   "En bas, les trois échanges de deux racines, cette fois présents."
+  ],
+  "a_voir": "Les trois échanges, absents pour x³ − 3x + 1, sont ici dans le groupe."
+ },
+ {
+  "code": "65-019",
+  "a_dire": "On veut décider du groupe à partir des coefficients, avec le discriminant, sans connaître les racines ni dessiner.",
+  "legende_titre": "Des coefficients au groupe",
+  "lecture": [
+   "En haut (gris), l'ancienne voie : racines connues, dessin, groupe.",
+   "En bas, la nouvelle voie : les coefficients 1, 0, −3, 1 (bleu) donnent le discriminant (orange).",
+   "Le discriminant mène à A₃ ou S₃ (vert), sans dessin."
+  ],
+  "a_voir": "La nouvelle voie part des coefficients, qui sont donnés dès le départ."
+ },
+ {
+  "code": "65-020",
+  "a_dire": "La caractéristique est différente de 2 quand 1 + 1 n'est pas 0, comme dans ℚ et ℝ ; dans {0, 1} avec 1 + 1 = 0, ce n'est pas le cas.",
+  "legende_titre": "1 + 1 vaut-il 0 ?",
+  "lecture": [
+   "À gauche (vert), sur la droite des nombres, 1 + 1 = 2, et 2 n'est pas 0.",
+   "À droite (rouge), l'ensemble {0, 1} : la flèche montre 1 + 1 = 0.",
+   "Ce deuxième cas est écarté du chapitre."
+  ],
+  "a_voir": "Tout se joue sur le résultat de 1 + 1."
+ },
+ {
+  "code": "65-021",
+  "a_dire": "Le cadre : f unitaire de degré n à racines distinctes, et E = F(r₁, …, rₙ) est le corps engendré par F et les racines.",
+  "legende_titre": "Un polynôme, ses racines, le corps E",
+  "lecture": [
+   "La case bleue du haut est f = x³ − 2 dans F[x], de degré 3, coefficient dominant 1.",
+   "Le cadre violet est le corps E = F(r₁, r₂, r₃).",
+   "Dedans, la case grise est F = ℚ et les trois disques bleus sont les trois racines distinctes."
+  ],
+  "a_voir": "E contient F et les trois racines, et rien de plus."
+ },
+ {
+  "code": "65-022",
+  "a_dire": "E = F(r₁, …, rₙ) se lit « F auquel on ajoute les racines » : c'est le plus petit corps qui les contient.",
+  "legende_titre": "Ajouter un nombre à un corps",
+  "lecture": [
+   "La case grise est le corps de départ F = ℚ.",
+   "Le disque orange est le nombre ajouté, √2.",
+   "La case bleue est le résultat ℚ(√2), formé des nombres a + b√2 avec a et b rationnels."
+  ],
+  "a_voir": "On part de ℚ, on ajoute √2, on obtient ℚ(√2)."
+ },
+ {
+  "code": "65-023",
+  "a_dire": "Le groupe de Galois du polynôme f est l'ensemble des rangements des racines donnés par les automorphismes de E.",
+  "legende_titre": "Des automorphismes aux rangements",
+  "lecture": [
+   "Le cadre violet à gauche est G : trois automorphismes, 1, σ et σ².",
+   "Le cadre gris à droite est S₃ : 6 rangements.",
+   "Les flèches orange envoient chaque automorphisme sur son rangement ; les trois disques bleus forment G_f."
+  ],
+  "a_voir": "Chaque automorphisme donne un rangement ; trois rangements sur six sont atteints."
+ },
+ {
+  "code": "65-024",
+  "a_dire": "Le symbole G_f désigne le groupe de Galois du polynôme f ; l'indice f dit de quel polynôme on parle.",
+  "legende_titre": "Un symbole pour une longue phrase",
+  "lecture": [
+   "La case grise en haut est la longue phrase ; la flèche orange mène au symbole G_f.",
+   "L'indice f est le polynôme.",
+   "En bas, deux exemples : f = x³ − 3x + 1 avec G_f = A₃ (bleu), et f = x³ − 2 avec G_f = S₃ (violet)."
+  ],
+  "a_voir": "Le même symbole donne un groupe différent selon le polynôme."
+ },
+ {
+  "code": "65-025",
+  "a_dire": "G_f est un sous-groupe de Sn isomorphe à G : à chaque automorphisme correspond une seule permutation, et la composition suit des deux côtés.",
+  "legende_titre": "Même composition des deux côtés",
+  "lecture": [
+   "À gauche (violet), les trois automorphismes de G : 1, σ et σ².",
+   "À droite (bleu), leurs permutations : l'identité, (r₁ r₂ r₃) et (r₁ r₃ r₂).",
+   "Les flèches vertes relient chaque élément à son image unique ; en bas, σ puis σ donne σ², et deux fois le cycle donne (r₁ r₃ r₂)."
+  ],
+  "a_voir": "Composer à gauche ou à droite donne des résultats qui se correspondent."
+ },
+ {
+  "code": "65-026",
+  "a_dire": "Si deux automorphismes donnent la même permutation des racines, ils sont égaux, car E est engendré par les racines : G_f est isomorphe à G.",
+  "legende_titre": "Deux automorphismes pareils sont égaux",
+  "lecture": [
+   "La case bleue est le départ : η et θ donnent la même permutation des racines.",
+   "La case orange est l'étape qui porte la preuve : E est engendré par les racines, donc η et θ agissent pareil sur F et sur les racines.",
+   "La case verte est l'arrivée : η = θ sur tout E."
+  ],
+  "a_voir": "Connaître l'effet sur les racines suffit à connaître l'automorphisme."
+ },
+ {
+  "code": "65-027",
+  "a_dire": "On confond G et G_f : un automorphisme et son rangement des racines portent le même nom σ, et on note un seul groupe G.",
+  "legende_titre": "Un seul nom pour deux objets",
+  "lecture": [
+   "La case violette est un automorphisme du corps E, dans G.",
+   "La case bleue est le rangement des racines, dans G_f ; la flèche verte les relie.",
+   "Les deux flèches grises mènent au seul nom σ, puis au groupe unique G = G_f."
+  ],
+  "a_voir": "Deux objets liés un à un reçoivent le même nom."
+ },
+ {
+  "code": "65-028",
+  "a_dire": "Sn est le groupe des permutations de n objets et a n! éléments : 3 × 2 × 1 = 6, 4 × 6 = 24, 5 × 24 = 120.",
+  "legende_titre": "Compter les rangements",
+  "lecture": [
+   "La première ligne montre 6 carrés pour S₃ : 3 × 2 × 1 = 6.",
+   "La deuxième ligne montre 4 groupes de 6 carrés pour S₄ : 4 × 6 = 24.",
+   "La troisième ligne montre 5 blocs de 24 pour S₅ : 5 × 24 = 120."
+  ],
+  "a_voir": "Chaque ligne reprend la précédente autant de fois que de nouveaux choix."
+ },
+ {
+  "code": "65-029",
+  "a_dire": "An est le groupe alterné : la moitié des éléments de Sn, ceux obtenus avec un nombre pair d'échanges (n!/2).",
+  "legende_titre": "La moitié des rangements",
+  "lecture": [
+   "Chaque rangée est un groupe Sn : S₃ avec 6, S₄ avec 24, S₅ avec 120 éléments.",
+   "La partie verte de gauche est An : les permutations paires.",
+   "La partie grise de droite est l'autre moitié : les impaires. On lit 3 et 3, 12 et 12, 60 et 60."
+  ],
+  "a_voir": "Dans chaque rangée, le vert et le gris sont de même taille."
+ },
+ {
+  "code": "65-030",
+  "a_dire": "Le cycle (r₁ r₂ r₃) peut s'écrire en commençant par n'importe quelle racine : (r₁ r₂ r₃) = (r₂ r₃ r₁).",
+  "legende_titre": "Même circuit, autre départ",
+  "lecture": [
+   "À gauche, les trois disques bleus sont les racines et les flèches orange forment le circuit.",
+   "À droite, deux écritures bleues sont reliées par le signe =.",
+   "Elles décrivent le même circuit, avec un autre point de départ."
+  ],
+  "a_voir": "Choisir un autre départ ne change pas le circuit."
+ },
+ {
+  "code": "65-031",
+  "a_dire": "Avec cinq racines, (r₂ r₃) échange la deuxième et la troisième et laisse les trois autres en place.",
+  "legende_titre": "Deux racines bougent, trois restent",
+  "lecture": [
+   "La rangée du haut montre les cinq racines r₁ à r₅, celle du bas leurs places après.",
+   "Les deux flèches orange croisées échangent r₂ et r₃.",
+   "Les trois flèches grises verticales laissent r₁, r₄ et r₅ en place."
+  ],
+  "a_voir": "Le signe ne cite que r₂ et r₃, mais les cinq flèches existent."
+ },
+ {
+  "code": "65-032",
+  "a_dire": "G_f ∩ A_n est la liste des permutations qui sont à la fois dans G_f et paires : pour x³ − 2, ce sont 3 permutations sur 6.",
+  "legende_titre": "Les permutations paires de G_f",
+  "lecture": [
+   "Le grand disque bleu est G_f : 6 permutations.",
+   "Le disque vert en pointillés est A₃ : les permutations paires, avec 3 éléments dans G_f.",
+   "Les trois disques gris à gauche sont les impaires ; les trois disques verts à droite forment G_f ∩ A₃."
+  ],
+  "a_voir": "La partie commune aux deux ensembles contient les 3 permutations paires."
+ }
+]

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+u = 11.0; ox, oy = 8.0, 14.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+O = P(0, 0)
+arrow(ax, O, P(6, 3), 'sujet', lw=1.4)
+arrow(ax, O, (P(1, 1)[0] - 0.4, P(1, 1)[1] - 0.4), 'autre', lw=1.4)
+arrow(ax, P(6, 3), (P(4, 1)[0] + 0.5, P(4, 1)[1] + 0.5), 'autre', lw=1.4)
+disc(ax, *O, 1.0, 'fixe'); disc(ax, *P(2, 1), 1.1, 'sujet'); disc(ax, *P(6, 3), 1.1, 'sujet')
+disc(ax, *P(4, 1), 1.5, 'resultat')
+text(ax, P(2, 1)[0] + 3, P(2, 1)[1] + 4, r'$y_1=(2\,;\,1)$', 'sujet', 's')
+text(ax, P(1, 1)[0] - 3, P(1, 1)[1] + 4, r'$y_2=(1\,;\,1)$', 'autre', 's')
+text(ax, P(6, 3)[0] - 4, P(6, 3)[1] + 4.5, r'$3y_1=(6\,;\,3)$', 'sujet', 's')
+text(ax, P(5, 2)[0] + 9, P(5, 2)[1] - 1, r'$-2y_2$', 'autre', 's')
+text(ax, P(4, 1)[0] + 3, P(4, 1)[1] - 4.5, r'$(4\,;\,1)$', 'resultat', 's')
+text(ax, 44, 60, r'$3\,y_1+(-2)\,y_2=(4\,;\,1)$', 'resultat', 'm')
+save(fig, '57-139')

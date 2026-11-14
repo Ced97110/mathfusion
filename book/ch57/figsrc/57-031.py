@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, u = 6, 10, 12.0
+arrow(ax, (ox - 3, oy), (ox + 34, oy), 'fixe', lw=0.5)
+arrow(ax, (ox, oy - 3), (ox, oy + 36), 'fixe', lw=0.5)
+arrow(ax, (ox, oy), (ox + 2 * u, oy + u), 'fixe', lw=1.5)
+text(ax, 22, 44, 'la même flèche', 'fixe', 'm')
+text(ax, 30, 33, 'arrive en 2 ; 1', 'fixe', 's')
+text(ax, 66, 54, 'coefficients permis', 'varie', 's')
+box(ax, 46, 36, 11, 10, 'varie', label=r'$\mathbb{R}$', size='l')
+box(ax, 62, 36, 24, 10, 'resultat', label='½ permis', size='s')
+arrow(ax, (57.5, 41), (61.5, 41), 'varie')
+box(ax, 46, 20, 11, 10, 'varie', label=r'$\mathbb{Z}$', size='l')
+box(ax, 62, 20, 24, 10, 'limite', label='½ interdit', size='s')
+arrow(ax, (57.5, 25), (61.5, 25), 'varie')
+box(ax, 62, 6, 24, 10, 'resultat', label='2, 3 permis', size='s')
+arrow(ax, (54, 19.5), (61.5, 12), 'varie')
+save(fig, '57-031')

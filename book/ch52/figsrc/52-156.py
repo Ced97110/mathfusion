@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 8, 34, 46, 'sujet', fill=True)
+text(ax, 21, 49, 'classe de 3 par 4', 'sujet', 's')
+disc(ax, 21, 38, 5, 'sujet', label='3'); disc(ax, 21, 20, 5, 'sujet', label='7')
+disc(ax, 72, 29, 8, 'resultat', label='1')
+arrow(ax, (26, 38), (65, 31), 'fixe', lw=0.7); arrow(ax, (26, 20), (65, 27), 'fixe', lw=0.7)
+text(ax, 52, 42, r'$\bar{\eta}$', 'varie', 'l', weight='bold')
+text(ax, 72, 16, r'dans $\mathbb{Z}/2$', 'fixe', 's')
+text(ax, 44, 3, 'même image pour 3 et pour 7', 'resultat', 's')
+save(fig, '52-156')

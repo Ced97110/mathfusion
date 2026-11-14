@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 66, 'Paquets : même nombre de chiffres', 'encre', 'm')
+box(ax, 3, 6, 40, 52, 'sujet', fill=False, dash=True); text(ax, 23, 53, '1 chiffre', 'sujet', 'm')
+box(ax, 55, 6, 30, 52, 'autre', fill=False, dash=True); text(ax, 70, 53, '2 chiffres', 'autre', 'm')
+box(ax, 6, 36, 14, 9, 'sujet', label='5', size='l'); box(ax, 26, 36, 14, 9, 'sujet', label='9', size='l')
+box(ax, 6, 10, 14, 9, 'resultat', label='6', size='l'); box(ax, 62, 36, 14, 9, 'limite', label='10', size='l')
+arrow(ax, (13, 35), (13, 20), 'resultat'); text(ax, 19, 28, '+ 1', 'resultat', 's')
+arrow(ax, (41, 40.5), (61, 40.5), 'limite'); text(ax, 51, 44, '+ 1', 'limite', 's')
+save(fig, '47-006')

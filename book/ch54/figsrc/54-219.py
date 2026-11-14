@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 64, 60, 11, 'sujet', label=r'$x^2-1$', size='l')
+text(ax, 44, 59, 'unitaire, coefficients entiers', 'sujet', 's')
+# two worlds, same factors
+text(ax, 10, 46, r'$\mathbb{Q}[x]$', 'varie', 'l')
+box(ax, 20, 41, 26, 10, 'varie', label=r'$x-1$', size='m')
+box(ax, 50, 41, 26, 10, 'varie', label=r'$x+1$', size='m')
+text(ax, 48, 46, '×', 'encre', 'l')
+arrow(ax, (33, 40.5), (33, 31.5), 'fixe')
+arrow(ax, (63, 40.5), (63, 31.5), 'fixe')
+text(ax, 10, 26, r'$\mathbb{Z}[x]$', 'resultat', 'l')
+box(ax, 20, 21, 26, 10, 'resultat', label=r'$x-1$', size='m')
+box(ax, 50, 21, 26, 10, 'resultat', label=r'$x+1$', size='m')
+text(ax, 48, 26, '×', 'encre', 'l')
+text(ax, 44, 11, 'mêmes facteurs : unitaires, entiers,', 'resultat', 's')
+text(ax, 44, 6, 'de degré 1 + 1', 'resultat', 's')
+save(fig, '54-219')

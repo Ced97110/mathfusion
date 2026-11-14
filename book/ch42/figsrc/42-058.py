@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,3,20,32,34,'sujet'); box(ax,53,20,32,34,'autre')
+text(ax,19,58,'A','sujet','xl',weight='bold'); text(ax,69,58,'B','autre','xl',weight='bold')
+box(ax,7,41.5,24,7,'resultat',label='gourde',size='s'); box(ax,7,28.5,24,7,'limite',label='téléphone',size='s')
+box(ax,57,41.5,24,7,'fixe',label='gourde',size='s'); box(ax,57,32.5,24,7,'fixe',label='objet',size='s'); box(ax,57,23.5,24,7,'fixe',label='objet',size='s')
+arrow(ax,(31,45),(57,45),'resultat')
+arrow(ax,(31,32),(46,32),'limite'); line(ax,[(48,28.5),(48,35.5)],'limite',lw=1.6)
+text(ax,44,25,'absent de B','limite','s')
+text(ax,44,9,'A ⊄ B','sujet','l',weight='bold')
+save(fig,'42-058')

@@ -1,0 +1,266 @@
+[
+ {
+  "code": "80-361",
+  "a_dire": "Les parties de S s'écrivent en listes de chiffres comparées chiffre à chiffre, comme un produit de chaînes 0 < 1.",
+  "legende_titre": "Deux parties comparées chiffre à chiffre",
+  "lecture": [
+   "La ligne bleue est la partie {2}, écrite 010.",
+   "La ligne violette est la partie {1, 3}, écrite 101.",
+   "Entre les deux, chaque comparaison est verte si le chiffre du haut est plus petit, rouge sinon."
+  ],
+  "a_voir": "Le chiffre du milieu va dans l'autre sens : aucune liste n'est plus petite partout."
+ },
+ {
+  "code": "80-362",
+  "a_dire": "Dans un produit de deux chaînes, μ est le produit des deux μ.",
+  "legende_titre": "Un carré pour deux chaînes",
+  "lecture": [
+   "Les quatre boîtes grises sont les éléments 00, 10, 01, 11 du produit.",
+   "Les flèches bleues suivent la chaîne 1, les flèches violettes la chaîne 2.",
+   "En vert, la formule : μ vaut μ1 fois μ2."
+  ],
+  "a_voir": "Chaque élément du produit est une paire : un chiffre pour chaque chaîne."
+ },
+ {
+  "code": "80-363",
+  "a_dire": "Sur 0 < 1, chaque chiffre qui monte apporte −1 et chaque chiffre inchangé apporte 1.",
+  "legende_titre": "Chaque chiffre qui monte compte −1",
+  "lecture": [
+   "Les boîtes bleues sont les listes U, les boîtes violettes les listes V.",
+   "Un triangle orange marque un chiffre qui monte de 0 à 1.",
+   "En vert, la valeur de μ : (−1) puissance le nombre de triangles."
+  ],
+  "a_voir": "Deux triangles donnent 1, un triangle donne −1, aucun triangle donne 1."
+ },
+ {
+  "code": "80-364",
+  "a_dire": "Chaque entier k reçoit la partie de {2, 3, 5} formée des premiers qui le divisent.",
+  "legende_titre": "À chaque entier, ses premiers parmi 2, 3, 5",
+  "lecture": [
+   "Les disques en haut sont les premiers 2, 3 et 5.",
+   "Un disque bleu plein dit que ce premier divise k.",
+   "À droite, en vert, la partie T(k) qui en résulte."
+  ],
+  "a_voir": "6, 10, 7 et 30 reçoivent quatre parties différentes."
+ },
+ {
+  "code": "80-365",
+  "a_dire": "f compte les entiers dont l'ensemble est exactement T ; g compte ceux dont l'ensemble contient T.",
+  "legende_titre": "Exactement ou au moins : 8 et 15",
+  "lecture": [
+   "La barre entière de 15 est g({2}) : les entiers pairs.",
+   "Le bloc bleu de 8 est f({2}) : les entiers dont le seul premier est 2.",
+   "Les blocs orange 4, 2, 1 sont les pairs aussi divisibles par 3 ou 5."
+  ],
+  "a_voir": "8 + 4 + 2 + 1 fait 15."
+ },
+ {
+  "code": "80-366",
+  "a_dire": "g(T) est la somme des f(U) pour les parties U qui contiennent T.",
+  "legende_titre": "g(T) additionne les parties au-dessus",
+  "lecture": [
+   "La boîte bleue est T = {2} avec f = 8.",
+   "Les boîtes orange sont les parties au-dessus de T, avec leur f.",
+   "En vert, la somme 8 + 4 + 2 + 1 = 15."
+  ],
+  "a_voir": "On additionne vers le haut, jamais vers le bas."
+ },
+ {
+  "code": "80-367",
+  "a_dire": "Pour retrouver f(∅), on additionne sur toutes les parties U avec le signe (−1) puissance |U| fois g(U).",
+  "legende_titre": "Le signe change à chaque étage",
+  "lecture": [
+   "Chaque boîte porte le nombre g d'une partie, rangée par nombre d'éléments.",
+   "Bleu : signe plus (0 ou 2 éléments). Orange : signe moins (1 ou 3 éléments).",
+   "Le bas est la partie vide : toutes les autres sont au-dessus."
+  ],
+  "a_voir": "Les signes alternent étage par étage."
+ },
+ {
+  "code": "80-368",
+  "a_dire": "On multiplie chaque g(U) par +1 ou −1 selon |U|, puis on additionne : on obtient f(∅) = 8.",
+  "legende_titre": "Huit termes, un total",
+  "lecture": [
+   "Chaque boîte est un terme signé : bleu pour plus, orange pour moins.",
+   "Les accolades regroupent les termes par nombre d'éléments de U.",
+   "La boîte verte est le total."
+  ],
+  "a_voir": "+30 −15 −10 −6 +5 +3 +2 −1 donne 8."
+ },
+ {
+  "code": "80-369",
+  "a_dire": "Le calcul signé donne 8, comme le comptage direct des entiers sans facteur commun avec 30.",
+  "legende_titre": "Deux calculs, le même 8",
+  "lecture": [
+   "Le grand bloc bleu est le calcul signé de la formule.",
+   "Les boîtes violettes sont les entiers de 1 à 30 sans facteur commun avec 30.",
+   "Le bloc vert et l'accolade verte donnent le même nombre, 8."
+  ],
+  "a_voir": "Le signe égal relie les deux résultats."
+ },
+ {
+  "code": "80-370",
+  "a_dire": "Un dérangement est une distribution de chapeaux où personne ne reçoit le sien.",
+  "legende_titre": "Chacun reçoit le chapeau du suivant",
+  "lecture": [
+   "Les disques bleus sont les personnes 1, 2, 3.",
+   "Les boîtes violettes sont leurs chapeaux.",
+   "Chaque flèche orange va d'une personne à un chapeau qui n'est pas le sien."
+  ],
+  "a_voir": "Aucune flèche ne tombe sur le chapeau de la même personne."
+ },
+ {
+  "code": "80-371",
+  "a_dire": "Sur 6 façons de rendre 3 chapeaux, 2 ne rendent son chapeau à personne.",
+  "legende_titre": "6 façons de rendre 3 chapeaux",
+  "lecture": [
+   "Chaque boîte est une façon : le chiffre i est le chapeau reçu par la personne i.",
+   "Gris : 1 façon où tous ont le leur. Orange : 3 façons où un seul l'a.",
+   "Vert : 2 façons où personne ne l'a."
+  ],
+  "a_voir": "Les boîtes vertes sont les dérangements."
+ },
+ {
+  "code": "80-372",
+  "a_dire": "g(T) compte les façons où au moins les personnes de T gardent leur chapeau.",
+  "legende_titre": "Le 1 est fixé, les autres varient",
+  "lecture": [
+   "La colonne grise est la personne 1, qui garde son chapeau.",
+   "Les boîtes orange sont les personnes 2 et 3, libres.",
+   "Les deux lignes sont les 2 façons possibles."
+  ],
+  "a_voir": "Fixer 1 laisse (3 − 1)! = 2 façons."
+ },
+ {
+  "code": "80-373",
+  "a_dire": "La formule additionne les termes n!/i! avec des signes qui alternent.",
+  "legende_titre": "Des termes aux signes alternés",
+  "lecture": [
+   "Chaque ligne est un n : 3 puis 4.",
+   "Bleu : terme plus. Orange : terme moins.",
+   "En vert, le total de chaque ligne."
+  ],
+  "a_voir": "Les deux premiers termes sont égaux et s'annulent."
+ },
+ {
+  "code": "80-374",
+  "a_dire": "Quand T est fixé, les n − |T| autres personnes se permutent librement : (n − |T|)! façons.",
+  "legende_titre": "Deux fixés, deux libres : 2 façons",
+  "lecture": [
+   "Les boîtes grises 1 et 2 sont les personnes de T, fixées.",
+   "Les boîtes orange 3 et 4 sont libres.",
+   "Les deux boîtes du bas sont les deux ordres possibles."
+  ],
+  "a_voir": "Si T est vide, les 4 sont libres : 24 façons."
+ },
+ {
+  "code": "80-375",
+  "a_dire": "Le nombre de parties à i éléments est n!/(i!(n−i)!) : ici 6 pour i = 2 et n = 4.",
+  "legende_titre": "Les groupes de 2 parmi 4",
+  "lecture": [
+   "Les quatre disques sont les personnes 1 à 4.",
+   "Chaque trait bleu relie deux personnes : un groupe de 2.",
+   "En vert, le compte et le calcul : 6."
+  ],
+  "a_voir": "Il y a 6 traits."
+ },
+ {
+  "code": "80-376",
+  "a_dire": "Pour n = 3, la formule donne 2, les deux rotations des chapeaux.",
+  "legende_titre": "Le calcul 6 − 6 + 3 − 1 et ses deux rotations",
+  "lecture": [
+   "En vert, le calcul qui donne 2.",
+   "À gauche, flèches orange : chacun reçoit le chapeau du suivant.",
+   "À droite, flèches violettes : chacun reçoit celui du précédent."
+  ],
+  "a_voir": "Deux triangles, deux rotations."
+ },
+ {
+  "code": "80-377",
+  "a_dire": "Pour n = 4, la formule donne 9 dérangements sur 24 façons.",
+  "legende_titre": "9 façons sur 24",
+  "lecture": [
+   "Chaque case est une façon de rendre les 4 chapeaux : 24 cases.",
+   "Les 9 cases vertes sont celles où personne ne reçoit le sien.",
+   "Les 15 cases grises sont les autres."
+  ],
+  "a_voir": "9 cases vertes parmi 24."
+ },
+ {
+  "code": "80-378",
+  "a_dire": "La proportion de dérangements, 2/6 puis 9/24, reste proche de 1/e.",
+  "legende_titre": "Des proportions voisines de 1/e",
+  "lecture": [
+   "Le point bleu est 2/6 pour n = 3.",
+   "Le point violet est 9/24 pour n = 4.",
+   "Le cercle vert est 1/e, environ 0,368."
+  ],
+  "a_voir": "Les trois points sont dans le même petit intervalle."
+ },
+ {
+  "code": "80-379",
+  "a_dire": "Un coloriage correct donne deux couleurs différentes à deux pays qui se touchent.",
+  "legende_titre": "Trois pays, deux couleurs",
+  "lecture": [
+   "Chaque ligne est un coloriage de A, B, C ; les boîtes se touchent quand les pays se touchent.",
+   "Bleu et orange sont les deux couleurs, bleu et rouge, écrites dans les boîtes.",
+   "Deux pays voisins n'ont jamais la même couleur."
+  ],
+  "a_voir": "Il y a 2 coloriages corrects."
+ },
+ {
+  "code": "80-380",
+  "a_dire": "En effaçant des frontières, on obtient des sous-cartes qui se déduisent les unes des autres.",
+  "legende_titre": "Des cartes de plus en plus fusionnées",
+  "lecture": [
+   "En haut, la carte A, B, C avec 3 pays bleus.",
+   "Les boîtes orange sont des pays fusionnés.",
+   "Chaque flèche efface une frontière."
+  ],
+  "a_voir": "Les 4 sous-cartes forment un losange."
+ },
+ {
+  "code": "80-381",
+  "a_dire": "Avec k couleurs et c pays, on a k choix par pays, donc k puissance c coloriages.",
+  "legende_titre": "Un choix de couleur par pays",
+  "lecture": [
+   "Chaque niveau de l'arbre est un pays : A, B, C.",
+   "Chaque disque est une couleur : bleu ou rouge (orange).",
+   "Chaque chemin du haut vers le bas est un coloriage."
+  ],
+  "a_voir": "8 chemins : 2 × 2 × 2."
+ },
+ {
+  "code": "80-382",
+  "a_dire": "Le nombre de coloriages corrects est une somme signée de puissances de k, une par sous-carte.",
+  "legende_titre": "Une puissance de k par sous-carte",
+  "lecture": [
+   "Chaque groupe de cases est une sous-carte ; une case est un pays.",
+   "Les cases orange sont des pays fusionnés.",
+   "Sous chaque groupe, le terme : k puissance le nombre de cases."
+  ],
+  "a_voir": "Avec k = 2 : 8 − 4 − 4 + 2 = 2."
+ },
+ {
+  "code": "80-383",
+  "a_dire": "Le polynôme chromatique est une seule expression en k qui donne le nombre de coloriages corrects pour tout k.",
+  "legende_titre": "Une expression pour tous les k",
+  "lecture": [
+   "Les points bleus sont les nombres 2, 12, 36 pour k = 2, 3, 4.",
+   "La courbe verte est k(k − 1)² pour toutes les valeurs de k.",
+   "L'axe horizontal est le nombre de couleurs k."
+  ],
+  "a_voir": "La courbe passe par les trois points."
+ },
+ {
+  "code": "80-384",
+  "a_dire": "Le théorème dit que le polynôme est strictement positif pour k = 4 ; pour 5 pays tous voisins, il vaut 0.",
+  "legende_titre": "Cinq pays voisins, quatre couleurs",
+  "lecture": [
+   "Chaque disque est un pays ; chaque trait relie deux voisins.",
+   "Le nombre dans le disque est le nombre de choix de couleur restants.",
+   "Le disque rouge porte 0 : plus de couleur possible."
+  ],
+  "a_voir": "Le produit 4 × 3 × 2 × 1 × 0 vaut 0."
+ }
+]

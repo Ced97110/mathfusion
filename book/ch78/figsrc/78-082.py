@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(40)
+box(ax, 2, 18, 24, 11, 'varie', label=r'$T(x)\,1=2$')
+text(ax, 29, 23.5, r'$-$', size='l')
+box(ax, 32, 18, 24, 11, 'sujet', label=r'$x=1+2i$')
+text(ax, 59, 23.5, r'$=$', size='l')
+box(ax, 62, 18, 24, 11, 'resultat', label=r'$\bar{x}=1-2i$')
+text(ax, 14, 14, 'nombre fixé', 'varie', 's')
+text(ax, 44, 14, 'élément', 'sujet', 's')
+text(ax, 74, 14, 'conjugué', 'resultat', 's')
+text(ax, 44, 33, r'$\bar{x}=T(x)\,1-x$', 'encre', 'l')
+text(ax, 44, 5, 'une règle pour toute algèbre de composition', 'fixe', 's')
+save(fig, '78-082')

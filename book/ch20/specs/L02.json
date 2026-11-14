@@ -1,0 +1,185 @@
+[
+ {
+  "code": "20-017",
+  "a_dire": "Aucun point de la droite n'est une solution : la zone commence juste au-dessus d'elle.",
+  "legende_titre": "Les points de la droite sont refusés",
+  "lecture": [
+   "La zone verte est la zone des solutions.",
+   "La droite bleue en pointillés est le bord de la zone.",
+   "Les deux ronds rouges, (0, 1) et (2, 3), sont sur la droite : 1 > 1 et 3 > 3 sont faux."
+  ],
+  "a_voir": "Les deux points sur la droite sont refusés, donc le bord ne fait pas partie de la zone."
+ },
+ {
+  "code": "20-018",
+  "a_dire": "Le pointillé marque une limite exclue, comme le point vide de la droite des nombres.",
+  "legende_titre": "Le pointillé comme le point vide",
+  "lecture": [
+   "En haut, la droite des nombres montre x > 2 : le rond vide en 2 est exclu.",
+   "En bas, la zone verte montre y > x + 1.",
+   "La droite en pointillés joue le rôle du point vide : la flèche orange les relie."
+  ],
+  "a_voir": "Le point vide exclut un nombre, le pointillé exclut toute une ligne de couples."
+ },
+ {
+  "code": "20-019",
+  "a_dire": "La droite coupe le plan en deux morceaux, le haut et le bas.",
+  "legende_titre": "Deux morceaux de plan",
+  "lecture": [
+   "Le morceau bleu est le haut, avec le couple (0, 3).",
+   "Le morceau violet est le bas, avec le couple (0, −1).",
+   "La droite en pointillés sépare les deux morceaux."
+  ],
+  "a_voir": "Un couple hors de la droite est dans un seul des deux morceaux."
+ },
+ {
+  "code": "20-020",
+  "a_dire": "La zone des solutions est tout le morceau du haut et rien du morceau du bas.",
+  "legende_titre": "Le résultat bascule en un seul endroit",
+  "lecture": [
+   "Les points sont sur la verticale du premier nombre 0, de bas en haut.",
+   "Toute la zone verte du haut est vraie ; toute la zone rouge du bas est fausse.",
+   "Les ronds rouges, (0, −1), (0, 0) et (0, 1), donnent faux.",
+   "Les ronds verts, (0, 1,5) et (0, 3), donnent vrai."
+  ],
+  "a_voir": "Le résultat passe de faux à vrai une seule fois, au point (0, 1) sur la droite."
+ },
+ {
+  "code": "20-021",
+  "a_dire": "Une inéquation linéaire compare à un nombre fixé une somme de deux termes, un par inconnue.",
+  "legende_titre": "Deux inéquations de même type",
+  "lecture": [
+   "La première ligne est la boulangerie : 2 fois x plus 3 fois y, comparé à 12.",
+   "La deuxième ligne est l'exemple réécrit : moins x plus y, comparé à 1.",
+   "Dans chaque ligne, les cases bleues sont des nombres fixés qui multiplient x et y."
+  ],
+  "a_voir": "Chaque inconnue est multipliée par un nombre fixé, puis on ajoute et on compare."
+ },
+ {
+  "code": "20-022",
+  "a_dire": "On repère le nombre qui multiplie x (a), celui qui multiplie y (b) et celui de droite (c).",
+  "legende_titre": "De 3x + 2y < 10 à ax + by < c",
+  "lecture": [
+   "La ligne du haut est le cas chiffré : 3, 2 et 10 sont en bleu.",
+   "La ligne du bas est la forme : a, b et c prennent la place de 3, 2 et 10.",
+   "Les flèches orange relient chaque nombre à sa lettre.",
+   "Le signe gris ne change pas."
+  ],
+  "a_voir": "3 devient a, 2 devient b, 10 devient c, et le signe reste le même."
+ },
+ {
+  "code": "20-023",
+  "a_dire": "La structure reste la même quand a, b et c prennent d'autres valeurs, avec le signe ≤.",
+  "legende_titre": "La structure reste, les nombres changent",
+  "lecture": [
+   "La ligne du haut est la forme avec a, b et c.",
+   "La deuxième ligne donne a = 2, b = 3, c = 12.",
+   "La troisième ligne donne a = 5, b = 1, c = 7.",
+   "Le signe gris ≤ est le même dans les trois lignes."
+  ],
+  "a_voir": "Les trois lignes ont la même forme ; seuls les nombres bleus changent."
+ },
+ {
+  "code": "20-024",
+  "a_dire": "On repère a, b et c comme pour <, ici 1, 2 et 5, avec le signe >.",
+  "legende_titre": "De x + 2y > 5 à ax + by > c",
+  "lecture": [
+   "La ligne du haut est le cas chiffré : x + 2y > 5.",
+   "Le cadre orange en pointillés est le 1 qui multiplie x : il est là mais n'est pas écrit.",
+   "La ligne du bas est la forme ax + by > c.",
+   "Les flèches orange relient chaque nombre à sa lettre."
+  ],
+  "a_voir": "a vaut 1 même quand on ne l'écrit pas devant x."
+ },
+ {
+  "code": "20-025",
+  "a_dire": "Avec ≥ les nombres 2, 3 et 12 restent les mêmes ; seul le sens de la comparaison change.",
+  "legende_titre": "Même dépense, sens inversé",
+  "lecture": [
+   "La ligne du haut est la boulangerie avec ≤ : la dépense est au plus 12.",
+   "La ligne du bas a les mêmes nombres 2, 3 et 12 mais avec ≥ en orange : au moins 12.",
+   "La flèche orange montre que seul le signe change."
+  ],
+  "a_voir": "Les trois nombres bleus ne bougent pas ; seul le signe change."
+ },
+ {
+  "code": "20-026",
+  "a_dire": "Les lettres x et y sont les deux inconnues et servent à écrire une même forme pour deux situations.",
+  "legende_titre": "Deux lettres, deux situations",
+  "lecture": [
+   "Les cases bleues au centre sont x et y.",
+   "À gauche, la boulangerie : x est le nombre de pains, y le nombre de gâteaux.",
+   "À droite, l'exemple : x est le premier nombre, y le second.",
+   "Les flèches orange donnent le sens des lettres dans chaque situation."
+  ],
+  "a_voir": "Les mêmes lettres x et y prennent un sens différent selon la situation."
+ },
+ {
+  "code": "20-027",
+  "a_dire": "Les lettres a et b sont les nombres fixés qui multiplient x et y : les coefficients.",
+  "legende_titre": "a et b : les nombres qui multiplient",
+  "lecture": [
+   "En haut, les lettres a et b sont bleues et pointent vers les cases bleues.",
+   "Dans la première ligne, a vaut 2 et b vaut 3.",
+   "Dans la seconde ligne, a vaut 3 et b vaut 2.",
+   "Les lettres x et y en orange sont celles qui varient."
+  ],
+  "a_voir": "a et b sont fixés ; x et y changent d'un couple à l'autre."
+ },
+ {
+  "code": "20-028",
+  "a_dire": "La lettre c remplace le nombre fixé placé à droite du signe de comparaison.",
+  "legende_titre": "c : le nombre de droite",
+  "lecture": [
+   "La case bleue c est le nombre de droite.",
+   "La flèche de gauche donne c = 12 dans la boulangerie.",
+   "La flèche de droite donne c = 20 dans un autre problème."
+  ],
+  "a_voir": "Une seule lettre c remplace 12, 20 ou tout autre nombre de droite."
+ },
+ {
+  "code": "20-029",
+  "a_dire": "Les signes < et > se lisent strictement plus petit et strictement plus grand, et refusent l'égalité.",
+  "legende_titre": "Strictement plus petit, plus grand",
+  "lecture": [
+   "La première case verte, 3 < 7, est vraie.",
+   "La deuxième case verte, 7 > 3, est vraie : c'est le même fait écrit à l'envers.",
+   "La case rouge, 5 < 5, est fausse car 5 égale 5."
+  ],
+  "a_voir": "Le signe strict refuse l'égalité."
+ },
+ {
+  "code": "20-030",
+  "a_dire": "Le signe ≤ remplace « plus petit que, ou égal à » et accepte l'égalité.",
+  "legende_titre": "Un signe pour deux idées",
+  "lecture": [
+   "En haut, la case bleue « plus petit que 12 » et la case orange « égal à 12 » sont réunies par « ou ».",
+   "La flèche mène à la case verte ≤ 12.",
+   "En bas, la case verte 5 ≤ 5 est vraie.",
+   "La case rouge 5 < 5 est fausse."
+  ],
+  "a_voir": "Avec ≤, l'égalité est acceptée : 5 ≤ 5 est vrai, alors que 5 < 5 est faux."
+ },
+ {
+  "code": "20-031",
+  "a_dire": "Une inéquation linéaire n'a ni exposant ni produit de x par y.",
+  "legende_titre": "Linéaire et ses deux voisins",
+  "lecture": [
+   "La case bleue du haut, 2x + 3y ≤ 12, est linéaire.",
+   "La case violette du milieu a un x au carré : il y a un exposant.",
+   "La case violette du bas a x fois y : les deux inconnues sont multipliées."
+  ],
+  "a_voir": "Seule la première inéquation n'a ni exposant ni produit."
+ },
+ {
+  "code": "20-032",
+  "a_dire": "La condition linéaire donne une frontière droite : l'accroissement est constant, sinon la ligne se courbe.",
+  "legende_titre": "Accroissement constant ou qui change",
+  "lecture": [
+   "À gauche, la ligne bleue est droite : chaque marche orange a la même taille.",
+   "À droite, la ligne violette passe par 0, 1, 4 et 9 pour x = 0, 1, 2, 3.",
+   "Les marches orange de la courbe valent +1, +3 et +5."
+  ],
+  "a_voir": "Une ligne droite monte de la même quantité à chaque pas ; la courbe, non."
+ }
+]

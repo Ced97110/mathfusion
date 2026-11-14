@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+U, V, x0, y0 = 24.0, 14.0, 4.0, 10.0
+box(ax, x0, y0, U, U, 'sujet', label=r'$u^2$', r=0.3)
+box(ax, x0 + U, y0, V, U, 'varie', label=r'$uv$', r=0.3)
+box(ax, x0, y0 + U, U, V, 'varie', label=r'$uv$', r=0.3)
+box(ax, x0 + U, y0 + U, V, V, 'autre', label=r'$v^2$', r=0.3)
+brace(ax, x0, x0 + U, y0, 'sujet', r'$u$')
+brace(ax, x0 + U, x0 + U + V, y0, 'autre', r'$v$')
+text(ax, 26, 58, r'côté $u+v$', 'encre', 's')
+text(ax, 66, 54, 'terme de degré 2 :', 'encre', 's')
+text(ax, 66, 46, r'$\frac{u^2}{2}$', 'sujet', 'm')
+text(ax, 66, 38, r'$+\,uv$', 'varie', 'm')
+text(ax, 66, 30, r'$+\,\frac{v^2}{2}$', 'autre', 'm')
+text(ax, 66, 20, r'$=\frac{(u+v)^2}{2}$', 'resultat', 'm')
+save(fig, '66-084')

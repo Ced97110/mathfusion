@@ -1,0 +1,285 @@
+[
+ {
+  "code": "36-025",
+  "a_dire": "La hauteur est l’hypoténuse multipliée par le sinus de l’angle du bas : h = a sin B.",
+  "legende_titre": "Même hypoténuse, deux angles, deux hauteurs",
+  "lecture": [
+   "Le trait bleu est l’hypoténuse a, qui vaut 10 dans les deux triangles.",
+   "L’arc violet est l’angle B : 30° à gauche, 60° à droite.",
+   "Le trait vert est la hauteur h : elle vaut 5 à gauche et environ 8,66 à droite.",
+   "Sous chaque triangle, le calcul vert multiplie 10 par le sinus de l’angle."
+  ],
+  "a_voir": "Seuls a et B changent ; la hauteur se calcule toujours en multipliant a par le sinus de B."
+ },
+ {
+  "code": "36-026",
+  "a_dire": "Les deux produits b sin A et a sin B donnent la même longueur, la hauteur h.",
+  "legende_titre": "Deux calculs, une seule hauteur",
+  "lecture": [
+   "Le côté bleu est b ; la boîte bleue calcule b fois sinus de A : environ 91,92.",
+   "Le côté violet est a ; la boîte violette calcule a fois sinus de B : environ 91,92.",
+   "Le trait vert est la hauteur h, mesurée par les deux produits.",
+   "Le signe = vert relie les deux boîtes."
+  ],
+  "a_voir": "Les deux boîtes donnent le même nombre parce qu’elles mesurent le même trait vert."
+ },
+ {
+  "code": "36-027",
+  "a_dire": "Un angle de triangle est strictement entre 0° et 180° ; son sinus est donc plus grand que 0, et on peut diviser par le produit des sinus.",
+  "legende_titre": "Le sinus d’un angle de triangle n’est jamais nul",
+  "lecture": [
+   "La courbe grise donne le sinus de chaque angle de 0° à 180°.",
+   "Les deux points sont les angles A = 50° (bleu, 0,7660) et B = 82,03° (violet, 0,9903).",
+   "Les cercles rouges vides aux deux bouts sont 0° et 180° : le sinus y est nul, mais ce ne sont pas des angles de triangle.",
+   "La boîte verte montre le produit des deux sinus : environ 0,7586, plus grand que 0."
+  ],
+  "a_voir": "La courbe est au-dessus de la ligne pour tous les angles du triangle, et seulement nulle aux bouts exclus."
+ },
+ {
+  "code": "36-028",
+  "a_dire": "On refait la preuve avec la hauteur issue de A : c sin B et b sin C sont deux écritures de cette hauteur, puis on divise pour obtenir b/sin B = c/sin C.",
+  "legende_titre": "La même preuve avec la hauteur issue de A",
+  "lecture": [
+   "Le trait vert part de A et tombe sur le côté a : c’est la hauteur h.",
+   "La boîte bleue écrit h avec le côté c (bleu) : c sin B ≈ 89,13.",
+   "La boîte violette écrit h avec le côté b (violet) : b sin C ≈ 89,13.",
+   "La flèche orange divise les deux écritures par sin B et sin C ; le résultat vert est b/sin B = c/sin C."
+  ],
+  "a_voir": "L’égalité des deux boîtes est l’étape qui relie c et b ; la division donne ensuite le rapport."
+ },
+ {
+  "code": "36-029",
+  "a_dire": "Si A est obtus, la hauteur tombe hors du triangle, mais sin(180° − A) = sin A, donc h = b sin A comme pour un angle aigu.",
+  "legende_titre": "Angle obtus : la hauteur tombe dehors",
+  "lecture": [
+   "L’angle noir en A vaut 130° ; le côté bleu b mesure 10.",
+   "Le trait pointillé gris prolonge la base vers la gauche : la hauteur verte h tombe sur ce prolongement, hors du triangle.",
+   "L’arc orange est l’angle aigu de 50° du triangle rectangle formé.",
+   "Les boîtes vertes donnent sin 130° = sin 50° ≈ 0,7660 et h = 10 × 0,7660 ≈ 7,66."
+  ],
+  "a_voir": "Les angles 50° et 130° sont différents, mais leurs sinus sont égaux."
+ },
+ {
+  "code": "36-030",
+  "a_dire": "Les lettres a, b, c nomment les longueurs des trois côtés du triangle ; ici 92,82 ; 120 et 90.",
+  "legende_titre": "a, b, c : un nom par côté",
+  "lecture": [
+   "Chaque côté bleu porte sa lettre et sa longueur : a = 92,82 ; b = 120 ; c = 90.",
+   "Les lettres grises A, B, C marquent les trois coins.",
+   "Le triangle est le même ; dans un autre triangle, les mêmes lettres auraient d’autres longueurs."
+  ],
+  "a_voir": "Chaque lettre minuscule est un nom pour la longueur d’un côté."
+ },
+ {
+  "code": "36-031",
+  "a_dire": "Les lettres A, B, C nomment les angles, chacun en face du côté de même lettre ; ici 50°, 82,03° et 47,97°.",
+  "legende_titre": "A, B, C : un nom par angle",
+  "lecture": [
+   "Chaque arc bleu marque un angle et porte sa valeur : A = 50°, B = 82,03°, C = 47,97°.",
+   "Les lettres bleues a, b, c nomment les côtés.",
+   "Chaque trait en tirets part d'un angle et arrive au milieu du côté en face : de A vers a, de B vers b, de C vers c."
+  ],
+  "a_voir": "Chaque trait en tirets relie un angle majuscule au côté de même lettre, en face de lui."
+ },
+ {
+  "code": "36-032",
+  "a_dire": "sin A se lit « sinus de A » : c’est un nombre qui dépend de l’angle, côté opposé divisé par hypoténuse.",
+  "legende_titre": "sin A : un nombre associé à un angle",
+  "lecture": [
+   "Chaque triangle rectangle a une hypoténuse bleue de même longueur, prise comme 1.",
+   "L’arc orange est l’angle : 30°, 50° puis 90°.",
+   "Le trait vert est le côté opposé : sa longueur donne le sinus 0,5 ; 0,7660 puis 1.",
+   "Sous chaque dessin, le nombre vert est le sinus de cet angle."
+  ],
+  "a_voir": "Plus l’angle s’ouvre, plus le trait vert est long, et le sinus est ce nombre."
+ },
+ {
+  "code": "36-033",
+  "a_dire": "a/sin A se lit « a sur sinus de A » : la longueur du côté divisée par le sinus de l’angle en face ; ici environ 121,2.",
+  "legende_titre": "a/sin A : côté sur sinus",
+  "lecture": [
+   "Le côté bleu du triangle est a, qui vaut 92,82.",
+   "L’arc violet est l’angle A en face de a ; son sinus vaut 0,7660.",
+   "Le trait noir sépare le côté (en haut) du sinus (en bas), comme une fraction.",
+   "Le résultat vert est environ 121,2."
+  ],
+  "a_voir": "Le haut de la fraction est le côté bleu, le bas est le sinus de l’angle violet en face."
+ },
+ {
+  "code": "36-034",
+  "a_dire": "Le signe = dit que les trois fractions a/sin A, b/sin B et c/sin C ont la même valeur, environ 121,2.",
+  "legende_titre": "Trois fractions, une même valeur",
+  "lecture": [
+   "Chaque barre verte est une des trois fractions : a/sin A, b/sin B, c/sin C.",
+   "Les trois barres ont la même longueur, repérée par le trait pointillé.",
+   "Chaque barre porte la valeur environ 121,2.",
+   "Les signes = verts relient les barres l’une à l’autre."
+  ],
+  "a_voir": "Les trois barres s’arrêtent au même trait : c’est ce que dit le signe =."
+ },
+ {
+  "code": "36-035",
+  "a_dire": "Dans la loi des sinus, le rapport de deux côtés est égal au rapport des sinus des angles en face : les côtés sont proportionnels aux sinus.",
+  "legende_titre": "Côtés et sinus en proportion",
+  "lecture": [
+   "Les deux barres bleues sont les côtés a = 92,82 et b = 120.",
+   "Les deux barres violettes sont les sinus de A et de B : 0,7660 et 0,9903.",
+   "Les barres bleues et violettes ont les mêmes longueurs relatives.",
+   "La boîte bleue divise les côtés ; la boîte violette divise les sinus ; les deux donnent environ 0,7735."
+  ],
+  "a_voir": "Les deux divisions donnent le même nombre : 0,7735."
+ },
+ {
+  "code": "36-036",
+  "a_dire": "Dans un même triangle, le plus grand sinus va avec le plus grand côté ; dans deux triangles différents, ce n’est plus vrai.",
+  "legende_titre": "Un seul triangle, ou deux triangles",
+  "lecture": [
+   "Dans le cadre vert, les trois côtés bleus d'un même triangle (90 m, 92,82 m, 120 m) sont rangés avec leurs sinus violets (0,7428, 0,7660, 0,9903) : le plus long côté a le plus grand sinus.",
+   "Dans le cadre rouge, deux triangles différents : un côté de 10 m avec un sinus de 0,5, et un côté de 5 m avec un sinus de 1.",
+   "Le sinus de 1 est plus grand, mais le côté de 5 m est plus petit : l'ordre n'est plus le même entre deux triangles."
+  ],
+  "a_voir": "L'ordre des sinus suit l'ordre des côtés dans le cadre vert, et pas dans le cadre rouge."
+ },
+ {
+  "code": "36-037",
+  "a_dire": "La fraction commune est une longueur : mètres divisés par un nombre sans unité donnent des mètres, et elle change d’unité comme les côtés.",
+  "legende_titre": "La fraction commune est une longueur",
+  "lecture": [
+   "En haut, le côté bleu mesure 92,82 m ; en divisant par 0,7660 on obtient la barre verte de 121,2 m.",
+   "En bas, le même côté mesure 0,09282 km ; on obtient 0,1212 km.",
+   "Les deux traits pointillés montrent que les barres ont les mêmes longueurs dans les deux unités."
+  ],
+  "a_voir": "La fraction a la même unité que le côté : c’est une longueur."
+ },
+ {
+  "code": "36-038",
+  "a_dire": "Le cercle circonscrit est le cercle qui passe par les trois sommets du triangle.",
+  "legende_titre": "Le cercle qui passe par les trois sommets",
+  "lecture": [
+   "Le triangle gris a pour sommets les points A, B et C.",
+   "Les trois points bleus sont ses trois sommets.",
+   "Le cercle bleu passe par ces trois points : c'est le cercle circonscrit."
+  ],
+  "a_voir": "Les trois sommets A, B et C sont sur le cercle."
+ },
+ {
+  "code": "36-039",
+  "a_dire": "La fraction commune a/sin A est le diamètre 2R du cercle circonscrit ; ici 5 pour le triangle 3, 4, 5, et R = 2,5.",
+  "legende_titre": "a/sin A = 2R : le diamètre du cercle",
+  "lecture": [
+   "Le triangle 3, 4, 5 est dans son cercle bleu.",
+   "Le trait orange va du centre à un sommet : c’est le rayon R = 2,5.",
+   "Le côté de 5 est le diamètre : 2R = 5, en vert.",
+   "Les trois boîtes vertes donnent 3 ÷ 0,6, 4 ÷ 0,8 et 5 ÷ 1 : chacune vaut 5."
+  ],
+  "a_voir": "Les trois fractions valent 5, le diamètre du cercle."
+ },
+ {
+  "code": "36-040",
+  "a_dire": "Quand A = 90°, sin A = 1, donc la fraction est le côté a, qui est l’hypoténuse et le diamètre du cercle circonscrit.",
+  "legende_titre": "A = 90° : la fraction est l’hypoténuse",
+  "lecture": [
+   "Le triangle a un angle droit violet en A, au bord du cercle bleu.",
+   "Le côté a = 5, trait vert, est l’hypoténuse : il traverse le centre du cercle.",
+   "La flèche verte du bas montre que ce côté est le diamètre : 5.",
+   "À droite : sin A = 1, puis 5 ÷ 1 = 5."
+  ],
+  "a_voir": "Diviser par 1 ne change rien : la fraction vaut le côté de 5, qui est le diamètre."
+ },
+ {
+  "code": "36-041",
+  "a_dire": "Quand C = 90°, sin C = 1 et la loi des sinus donne sin A = a/c : le côté opposé divisé par l’hypoténuse.",
+  "legende_titre": "Le sinus retrouvé par la loi des sinus",
+  "lecture": [
+   "Le triangle a un angle droit C ; ses côtés bleus sont a = 3 et c = 5, l’hypoténuse.",
+   "L’arc violet est l’angle A, en face de a.",
+   "La boîte du haut dit sin C = 1.",
+   "La boîte bleue applique la loi : 3 ÷ sin A = 5 ÷ 1 = 5 ; la boîte verte en tire sin A = 3/5 = 0,6."
+  ],
+  "a_voir": "Avec C = 90°, la loi dit que sin A est le côté opposé sur l’hypoténuse."
+ },
+ {
+  "code": "36-042",
+  "a_dire": "Dans la loi des cosinus, le terme 2bc cos A est nul à 90°, positif avant et négatif après ; c’est pourquoi a grandit quand l’angle A s’ouvre.",
+  "legende_titre": "Le côté a grandit quand l’angle s’ouvre",
+  "lecture": [
+   "Chaque ligne montre le même triangle avec b = 120 et c = 90 (traits gris) et un angle A différent : 50°, 90°, 130°.",
+   "Le trait orange est le troisième côté a.",
+   "Chaque barre orange donne sa longueur : 92,82 ; 150 ; 190,7.",
+   "La formule au-dessus relie ces trois cas."
+  ],
+  "a_voir": "Les barres orange s’allongent quand l’angle passe de 50° à 130°."
+ },
+ {
+  "code": "36-043",
+  "a_dire": "La preuve part de la hauteur et de Pythagore à droite, remplace h² par b² − x², et arrive à a² = b² + c² − 2bc cos A.",
+  "legende_titre": "Preuve par la hauteur et Pythagore",
+  "lecture": [
+   "Le triangle de gauche, bleu, a pour hypoténuse b ; le triangle de droite, violet, a pour hypoténuse a. Le trait vert est la hauteur h.",
+   "La boîte violette part de Pythagore à droite : a² = h² + (c − x)², soit environ 8 615,8 = 8 450,3 + 165,5.",
+   "La flèche orange remplace h² par b² − x², donné par la boîte bleue.",
+   "La boîte verte est l’arrivée : a² = b² + c² − 2bc cos A."
+  ],
+  "a_voir": "Remplacer h² fait disparaître h, qui n’est ni donné ni cherché."
+ },
+ {
+  "code": "36-044",
+  "a_dire": "Le point D tombe entre A et B si A est aigu, et de l’autre côté de A si A est obtus : x = b cos A est positif puis négatif.",
+  "legende_titre": "Où tombe D : angle aigu ou obtus",
+  "lecture": [
+   "En haut, A = 50° : le segment vert x = 77,13 va de A à D, et il reste c − x = 12,87 jusqu’à B (accolade violette).",
+   "En bas, A = 130° : D est de l’autre côté de A ; x vaut −77,13.",
+   "La distance de D à B est alors c + x = 167,13 (accolade violette).",
+   "Le côté bleu b = 120 est le même dans les deux dessins."
+  ],
+  "a_voir": "Le segment vert est placé de l’autre côté de A quand l’angle est obtus."
+ },
+ {
+  "code": "36-045",
+  "a_dire": "La projection x de b sur c est la longueur de b le long de c ; elle se distingue de b et de la hauteur h, qui est à angle droit de c.",
+  "legende_titre": "Trois longueurs voisines du même triangle",
+  "lecture": [
+   "Le trait gris incliné est b = 120, l’hypoténuse.",
+   "Le trait bleu épais le long de c est la projection x = 77,13.",
+   "Le trait orange vertical est la hauteur h = 91,92, à angle droit de c.",
+   "Le trait gris du bas se prolonge jusqu’au bout de c = 90."
+  ],
+  "a_voir": "La projection est le long de c ; la hauteur est à angle droit de c."
+ },
+ {
+  "code": "36-046",
+  "a_dire": "Dans le triangle rectangle, cos A = x/b, donc x = b cos A ; ici 120 × 0,6428 ≈ 77,1.",
+  "legende_titre": "Étape 1 : calculer x avec le cosinus",
+  "lecture": [
+   "Le trait bleu est l’hypoténuse b = 120 ; l’arc violet est l’angle A = 50°.",
+   "Le trait vert est x, le côté adjacent à A.",
+   "La boîte du haut écrit cos A = x/b ; la flèche orange multiplie par b ; la boîte bleue donne x = b cos A.",
+   "La boîte verte calcule : 120 × 0,6428 ≈ 77,1."
+  ],
+  "a_voir": "On passe de cos A = x/b à x = b cos A en multipliant par b, puis on calcule."
+ },
+ {
+  "code": "36-047",
+  "a_dire": "Dans le triangle rectangle d’hypoténuse b, h² = b² − x² ; ici 14 400 − 5 949,7 = 8 450,3.",
+  "legende_titre": "Étape 2 : retrancher x² de b²",
+  "lecture": [
+   "Le petit triangle a l’hypoténuse b en bleu, x en violet et la hauteur h en vert.",
+   "La barre bleue du haut est b² = 14 400.",
+   "En dessous, la barre violette est x² = 5 949,7 et la barre verte est h² = 8 450,3.",
+   "Les deux barres du bas, mises bout à bout, ont la longueur de la barre bleue."
+  ],
+  "a_voir": "Ce qui reste de b² quand on retire x² est h²."
+ },
+ {
+  "code": "36-048",
+  "a_dire": "Dans le triangle de droite, a² = h² + (c − x)² : on calcule c − x, on élève au carré, on additionne, puis on prend la racine ; ici a ≈ 92,82.",
+  "legende_titre": "Étape 3 : Pythagore dans le triangle de droite",
+  "lecture": [
+   "Le triangle étroit est le triangle de droite : hauteur h en vert, reste c − x en orange, hypoténuse a en bleu.",
+   "La première boîte calcule c − x = 90 − 77,13 = 12,87.",
+   "La deuxième donne les deux carrés : environ 8 450,3 et 165,5 ; la troisième les additionne : 8 615,8.",
+   "La dernière boîte, verte, donne a ≈ 92,82."
+  ],
+  "a_voir": "Les quatre boîtes se lisent de haut en bas : reste, carrés, somme, résultat."
+ }
+]

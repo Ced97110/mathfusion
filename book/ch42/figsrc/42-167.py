@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 8, 48, 28, 16, 'autre', label=r'$\mathbb{R}^{2}$', size='l')
+box(ax, 52, 48, 28, 16, 'sujet', label=r'$\mathbb{R}^{(2)}$', size='l')
+text(ax, 22, 70, 'Judson', 'autre', 'm'); text(ax, 66, 70, 'Jacobson', 'sujet', 'm')
+text(ax, 44, 56, '=', 'resultat', 'l', weight='bold')
+arrow(ax, (22, 47), (34, 37), 'resultat'); arrow(ax, (66, 47), (54, 37), 'resultat')
+box(ax, 28, 24, 32, 12, 'resultat', label=r'$\mathbb{R}\times\mathbb{R}$', size='l')
+brace(ax, 28, 60, 23, 'resultat', '2 facteurs $\\mathbb{R}$')
+save(fig, '42-167')

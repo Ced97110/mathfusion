@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 2, 18, 84, 52, 'sujet', fill=False, lw=1.4, r=1.5)
+text(ax, 44, 65, 'cryptosystème', 'sujet', 'l', weight='bold')
+# les quatre éléments contenus
+box(ax, 6, 40, 36, 16, 'fixe', label=None)
+text(ax, 24, 51, 'famille', 'fixe', 'm')
+text(ax, 24, 45, 'de règles', 'fixe', 'm')
+box(ax, 46, 40, 36, 16, 'varie', label=None)
+text(ax, 64, 51, 'clé', 'varie', 'm', weight='bold')
+text(ax, 64, 45, 'ici : 3', 'varie', 'm')
+box(ax, 6, 22, 36, 14, 'sujet', label=None)
+text(ax, 24, 31.5, 'chiffrement', 'sujet', 'm')
+text(ax, 24, 26, 'ajouter 3', 'sujet', 's')
+box(ax, 46, 22, 36, 14, 'autre', label=None)
+text(ax, 64, 31.5, 'déchiffrement', 'autre', 'm')
+text(ax, 64, 26, 'retrancher 3', 'autre', 's')
+# hors du système : les messages
+box(ax, 22, 2, 44, 9, 'fixe', fill=False, dash=True, label='les messages : hors système', size='s')
+save(fig, '53-031')

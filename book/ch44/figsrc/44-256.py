@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(68)
+text(ax,44,64,r'$g=\sigma,\ h=\tau_1,\ n=2$','encre','m')
+text(ax,20.5,56,r'$(gh)^{2}$','sujet','l'); text(ax,67.5,56,r'$g^{2}h^{2}$','autre','l')
+box(ax,2,42,37,9,'sujet',label=r'$gh=\sigma\circ\tau_1=\tau_3$',size='s')
+box(ax,2,24,37,9,'sujet',label=r'$(gh)^{2}=\tau_3^{2}=1$',size='s')
+box(ax,49,42,37,9,'autre',label=r'$g^{2}h^{2}=\sigma^{2}\circ1$',size='s')
+box(ax,49,24,37,9,'autre',label=r'$=\sigma^{2}$',size='s')
+arrow(ax,(20.5,42),(20.5,33),'sujet'); arrow(ax,(67.5,42),(67.5,33),'autre')
+text(ax,44,28.5,r'$\neq$','limite','l')
+text(ax,44,12,'g et h ne commutent pas','limite','m')
+save(fig,'44-256')

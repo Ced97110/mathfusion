@@ -1,0 +1,182 @@
+[
+ {
+  "code": "46-273",
+  "a_dire": "Pour n = 2, S_2 a 2 permutations, A_2 n'a que l'identité, et 2!/2 = 1 : la formule tient.",
+  "legende_titre": "Les deux permutations de deux cartes",
+  "lecture": [
+   "Le grand cadre gris est S_2 : il contient les deux permutations.",
+   "La case bleue (1) est l'identité, la seule paire : c'est A_2.",
+   "La case orange (1 2) est l'échange, impaire, donc absente de A_2."
+  ],
+  "a_voir": "Une permutation sur deux est paire : 1 sur 2, comme 2!/2."
+ },
+ {
+  "code": "46-274",
+  "a_dire": "Pour n = 1 il n'y a aucune transposition et la formule donnerait 1/2 ; elle exige n ≥ 2.",
+  "legende_titre": "Là où la formule cesse d'avoir un sens",
+  "lecture": [
+   "La droite graduée porte les valeurs de n de 1 à 4.",
+   "Sous chaque n, la case donne n!/2.",
+   "La case rouge sous n = 1 vaut 1/2, qui n'est pas un nombre d'éléments.",
+   "Les cases vertes, pour n ≥ 2, donnent 1, 3 et 12."
+  ],
+  "a_voir": "Seule la case de n = 1 est rouge."
+ },
+ {
+  "code": "46-275",
+  "a_dire": "Les ordres des éléments divisent le nombre d'éléments du groupe, ici 6 et 12 ; le chapitre 47 le démontrera.",
+  "legende_titre": "Des ordres qui divisent toujours le groupe",
+  "lecture": [
+   "La première ligne donne les ordres 1, 2, 3 pour les mélanges de 3 cartes, avec |G| = 6.",
+   "La seconde ligne donne les ordres 1, 2, 3, 4, 6, 12 des racines douzièmes, avec |G| = 12.",
+   "Toutes les cases vertes sont des diviseurs du nombre en bleu à droite de leur ligne."
+  ],
+  "a_voir": "Chaque nombre d'une ligne divise le nombre bleu de la même ligne."
+ },
+ {
+  "code": "46-276",
+  "a_dire": "L'horloge ℤ/nℤ est l'ensemble des entiers découpé selon le sous-groupe des multiples de n.",
+  "legende_titre": "Des entiers qui tombent sur la même heure",
+  "lecture": [
+   "La droite grise est celle des entiers ℤ.",
+   "Les points orange −12, 0, 12 et 24 sont des multiples de 12.",
+   "Les flèches orange les envoient tous sur la même heure, le disque bleu 0 h."
+  ],
+  "a_voir": "Quatre entiers différents donnent une seule heure."
+ },
+ {
+  "code": "46-277",
+  "a_dire": "La signature est une application de S_n vers {+1, −1} qui respecte le produit ; A_n est l'ensemble des permutations envoyées sur +1.",
+  "legende_titre": "La signature envoie S_n sur deux valeurs",
+  "lecture": [
+   "Le grand cadre gris est S_n.",
+   "La case bleue (1 2 3), dans A_n, est envoyée sur +1, case verte.",
+   "La case orange (1 2) est envoyée sur −1, case orange à droite."
+  ],
+  "a_voir": "Tout ce qui est dans A_n arrive sur +1."
+ },
+ {
+  "code": "46-278",
+  "a_dire": "L'application n ↦ 5n de ℤ vers l'horloge respecte la somme : c'est un homomorphisme.",
+  "legende_titre": "Multiplier par 5 respecte la somme",
+  "lecture": [
+   "Les cases bleues de gauche sont les entiers 2, 3 et leur somme 5.",
+   "Les flèches orange multiplient par 5.",
+   "Les cases violettes donnent les résultats lus sur l'horloge : 10, 3 et 1.",
+   "Le résultat de 5 est celui de la somme 10 + 3, lue sur l'horloge."
+  ],
+  "a_voir": "Le résultat de la somme est la somme des résultats."
+ },
+ {
+  "code": "46-279",
+  "a_dire": "Un élément d'ordre p engendre un sous-groupe cyclique de p éléments ; Sylow part de là.",
+  "legende_titre": "Un élément d'ordre premier engendre un sous-groupe",
+  "lecture": [
+   "La case bleue de gauche est un élément : (1 2) en bas, (1 2 3) en haut.",
+   "Le texte orange donne son ordre, 2 ou 3.",
+   "Les cases vertes sont les éléments qu'il engendre : autant que son ordre."
+  ],
+  "a_voir": "Le nombre de cases vertes est égal à l'ordre."
+ },
+ {
+  "code": "46-280",
+  "a_dire": "Par le théorème de Cayley, tout groupe fini se lit comme un groupe de permutations, donc avec des cycles.",
+  "legende_titre": "Un groupe à 4 éléments lu comme permutations",
+  "lecture": [
+   "Les quatre disques bleus sont les éléments du groupe : 00, 01, 10, 11.",
+   "Les flèches orange montrent ce que fait « ajouter 01 » : 00 et 01 s'échangent, 10 et 11 aussi.",
+   "Cela fait deux cycles de longueur 2."
+  ],
+  "a_voir": "Ajouter 01 mélange les quatre éléments : c'est une permutation."
+ },
+ {
+  "code": "46-281",
+  "a_dire": "Les cinq solutions d'une équation de degré 5 se mélangent par des permutations : S_5, avec A_5 à l'intérieur.",
+  "legende_titre": "Mélanger les solutions d'une équation",
+  "lecture": [
+   "La rangée bleue du haut est la liste des 5 solutions.",
+   "La rangée orange du bas est la même liste après un mélange.",
+   "Les flèches orange montrent où va chaque solution : x1 et x2 se croisent."
+  ],
+  "a_voir": "Un mélange de la liste des solutions est une permutation de cinq nombres."
+ },
+ {
+  "code": "46-282",
+  "a_dire": "La signature, un signe + ou −, sert de signe devant chaque terme de la somme du déterminant.",
+  "legende_titre": "Un signe devant un terme",
+  "lecture": [
+   "Les cases bleues sont deux permutations : l'identité et un échange.",
+   "Les cases du milieu donnent leur signature : +1 en vert, −1 en rouge.",
+   "Les cases de droite montrent le signe placé devant un terme."
+  ],
+  "a_voir": "La signature décide du plus ou du moins devant chaque terme."
+ },
+ {
+  "code": "46-283",
+  "a_dire": "Les groupes abéliens finis seront des produits de groupes cycliques ; le groupe des couples de 0 ou 1 est un produit de deux horloges à 2 heures.",
+  "legende_titre": "Deux horloges à 2 heures côte à côte",
+  "lecture": [
+   "Les cases bleues du bas sont la première horloge : 0 et 1.",
+   "Les cases violettes à gauche sont la seconde horloge : 0 et 1.",
+   "Les cases vertes sont les 4 couples formés d'une heure de chaque horloge."
+  ],
+  "a_voir": "Le groupe à 4 couples vient de deux horloges à 2 heures."
+ },
+ {
+  "code": "46-284",
+  "a_dire": "Sur l'horloge à 12 heures, 5 puissance φ(12) = 4 donne 625, qui laisse le reste 1.",
+  "legende_titre": "Une puissance qui revient au reste 1",
+  "lecture": [
+   "Les quatre cases bleues sont 5 multiplié 4 fois, 4 étant φ(12).",
+   "La case grise donne le produit : 625.",
+   "La barre grise est 52 fois 12 ; la case verte est ce qui reste, 1."
+  ],
+  "a_voir": "625 est 52 fois 12 plus 1 : le reste est 1."
+ },
+ {
+  "code": "46-285",
+  "a_dire": "Parmi les 12 racines douzièmes, 4 sont primitives ; ce nombre est φ(12), le degré du polynôme cyclotomique.",
+  "legende_titre": "Les racines primitives parmi les douze",
+  "lecture": [
+   "Les douze disques forment les racines douzièmes de l'unité, numérotés par l'exposant k de ω^k.",
+   "Les disques bleus, d'exposants 1, 5, 7 et 11, sont les racines primitives.",
+   "Il y en a 4, c'est-à-dire φ(12)."
+  ],
+  "a_voir": "Quatre disques bleus sur douze."
+ },
+ {
+  "code": "46-286",
+  "a_dire": "A_4 a 12 éléments, 6 divise 12, mais A_4 n'a aucun sous-groupe de 6 éléments.",
+  "legende_titre": "6 divise 12 sans sous-groupe de 6",
+  "lecture": [
+   "Les douze disques bleus sont les éléments de A_4.",
+   "Le texte vert dit que 6 divise 12.",
+   "Le texte rouge dit qu'il n'existe pourtant aucun sous-groupe de six éléments."
+  ],
+  "a_voir": "Un diviseur de l'ordre n'est pas toujours l'ordre d'un sous-groupe."
+ },
+ {
+  "code": "46-287",
+  "a_dire": "Pour reconnaître un sous-groupe, on vérifie qu'il contient 0 et que gh^(−1) reste dedans, pour tous g et h.",
+  "legende_titre": "Le critère de la différence",
+  "lecture": [
+   "Les points sont des multiples de 3 sur la droite graduée.",
+   "Les points bleus 12 et 21 sont deux éléments de H.",
+   "La flèche orange donne 12 − 21 = −9, point vert, encore un multiple de 3.",
+   "Le point gris 0 doit aussi appartenir à H."
+  ],
+  "a_voir": "La différence de deux éléments retombe dans l'ensemble."
+ },
+ {
+  "code": "46-288",
+  "a_dire": "S_8 n'est pas cyclique car son plus grand ordre, 15, est très inférieur à 40 320 ; S_2 est cyclique.",
+  "legende_titre": "Un ordre trop petit pour engendrer S_8",
+  "lecture": [
+   "Les disques bleus et orange sont un cycle de 5 et un cycle de 3 : 8 cartes en tout.",
+   "Leur ordre est le ppcm, 15, le plus grand possible.",
+   "Il faudrait 40 320 pour engendrer S_8 : en rouge, il n'est pas cyclique.",
+   "En bas, (1 2) d'ordre 2 engendre les 2 éléments de S_2."
+  ],
+  "a_voir": "15 est loin de 40 320 ; pour S_2, l'ordre égale le nombre d'éléments."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 3, 41, r'$f=$', 'fixe', 'm', ha='left')
+box(ax, 12, 36, 12, 10, 'sujet', label='3', size='l', weight='bold')
+box(ax, 25, 36, 14, 10, 'fixe', label=r'$y^2$', size='m')
+box(ax, 44, 36, 16, 10, 'fixe', label=r'$+5y$', size='m')
+box(ax, 62, 36, 14, 10, 'fixe', label=r'$+7$', size='m')
+arrow(ax, (18, 35.5), (18, 26), 'sujet')
+text(ax, 34, 22, r'coefficient de tête : $a_n=3$', 'sujet', 's')
+arrow(ax, (32, 35.5), (60, 26), 'fixe')
+text(ax, 70, 22, r'exposant $n=2$', 'fixe', 's')
+save(fig, '70-060')

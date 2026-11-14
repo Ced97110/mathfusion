@@ -1,0 +1,135 @@
+{
+ "72-005": {
+  "lecture": [
+   "Le plan orange est le plan du pli.",
+   "Le cube bleu est l'objet.",
+   "Le cube vert est son symétrique, de l'autre côté du plan.",
+   "La flèche orange relie les deux, à la même distance du plan.",
+   "En bas, la question : combien de plans au plus ? La case reste vide."
+  ],
+  "a_voir": "Un plan joue le rôle du pli, et la question est de savoir combien de plans il faut au plus."
+ },
+ "72-006": {
+  "lecture": [
+   "À gauche, un pli laisse en place tous les points de sa droite (points verts).",
+   "À droite, le quart de tour déplace le point (1, 0) vers (0, 1) ; seul le point (0, 0), la croix, reste en place.",
+   "En bas à gauche, en dimension 2, un seul pli ne suffit pas.",
+   "En bas à droite, en dimension n, n plis au plus."
+  ],
+  "a_voir": "Un pli laisse une droite en place, le quart de tour seulement la croix : un seul pli ne suffit pas en dimension 2, et n plis suffisent en dimension n."
+ },
+ "72-014": {
+  "lecture": [
+   "Les quatre cadres se lisent de haut en bas : le départ y, puis p, puis q, puis le contrôle qui vaut 0.",
+   "À droite, x est bleue, y violette, p verte et q orange.",
+   "La flèche orange q va du bout de p au bout de y, et le petit angle droit la montre perpendiculaire à x."
+  ],
+  "a_voir": "Le reste q est perpendiculaire à x, car le contrôle donne 0."
+ },
+ "72-036": {
+  "lecture": [
+   "À gauche, le plan habituel : le point vert (0, 0) est le seul vecteur de carré 0.",
+   "À droite, la seconde mesure : deux droites rouges sont formées de vecteurs de carré 0, comme (1, 1)."
+  ],
+  "a_voir": "À gauche un seul point, à droite deux droites entières : seule la seconde mesure a des vecteurs isotropes."
+ },
+ "72-046": {
+  "lecture": [
+   "À gauche, la droite bleue est de dimension 1 : elle est non dégénérée, mais ni de dimension 2, ni avec un vecteur isotrope.",
+   "À droite, le plan est de dimension 2 et la droite rouge contient le vecteur isotrope (1, 1).",
+   "Les trois conditions sont cochées en vert à droite : c'est un plan hyperbolique. À gauche, des conditions manquent."
+  ],
+  "a_voir": "Un plan hyperbolique est de dimension 2, non dégénéré, et contient un vecteur isotrope."
+ },
+ "72-051": {
+  "lecture": [
+   "Les trois cadres, de haut en bas, sont : plan hyperbolique (bleu), base en paire hyperbolique (violet), discriminant égal à −1 (vert).",
+   "Les flèches à deux pointes disent que chaque condition entraîne l'autre.",
+   "En haut à droite, la base (u, v) est dessinée dans le plan.",
+   "À droite, le tableau violet 0, 1, 1, 0 est celui de la mesure dans la base (u, v).",
+   "Le calcul vert 0 fois 0 moins 1 fois 1 donne −1."
+  ],
+  "a_voir": "Si une condition est vraie, les deux autres le sont aussi."
+ },
+ "72-062": {
+  "lecture": [
+   "Sur la droite graduée, le rond bleu en −1 est le pli : la transformation impropre.",
+   "Le rond gris en 1 est le quart de tour, une rotation.",
+   "Le rond rouge en 2 est l'application (2a ; b), de déterminant 2, qui ne garde pas la mesure.",
+   "L'accolade englobe −1 et 1 : pour une transformation orthogonale, il n'y a pas d'autre valeur."
+  ],
+  "a_voir": "La transformation impropre est celle de déterminant −1, de l'autre côté de 0 par rapport à la rotation."
+ },
+ "72-064": {
+  "lecture": [
+   "À gauche, la flèche bleue est u et la flèche violette est v, avec B(u, v) = 1.",
+   "La flèche orange η les envoie à droite.",
+   "À droite, la flèche bleue est devenue 2u, deux fois plus longue, et la violette est devenue v/2, deux fois plus courte.",
+   "Le calcul vert 2 fois un demi fois 1 donne encore 1.",
+   "En bas, tu lis que c'est un exemple seulement, pas toutes les isométries."
+  ],
+  "a_voir": "Le nombre associé aux deux flèches ne change pas : 1 avant, 1 après ; mais ce n'est qu'un exemple."
+ },
+ "72-082": {
+  "lecture": [
+   "La droite bleue U contient les multiples de (2 ; 1) ; la flèche bleue est (2 ; 1).",
+   "La droite violette U⟂ contient les multiples de (−1 ; 2) ; la flèche violette est (−1 ; 2).",
+   "Chaque légende est écrite au bout de sa droite.",
+   "Le carré vert marque l'angle droit entre les deux droites."
+  ],
+  "a_voir": "U⟂ est tout l'ensemble des vecteurs à angle droit avec tous ceux de U, pas un seul vecteur."
+ },
+ "72-083": {
+  "lecture": [
+   "Le plan gris et les deux flèches bleues sont les deux premiers axes ; avec l'axe vertical, ils forment V, tout l'espace.",
+   "La flèche verte est l'axe du troisième nombre, le vecteur (0 ; 0 ; 1), que la mesure ignore.",
+   "Cette flèche est rad V, écrit aussi V⟂ : les vecteurs orthogonaux à tous ceux de V."
+  ],
+  "a_voir": "Le vecteur (0 ; 0 ; 1) donne 0 avec tout vecteur de V : il est dans rad V."
+ },
+ "72-113": {
+  "lecture": [
+   "La droite bleue (axe horizontal) est U₁ ; son carré vaut 1.",
+   "La droite violette (axe vertical) est U₂ ; son carré vaut −1.",
+   "En haut à droite, les carrés 1 et −1 diffèrent : U₁ et U₂ ne sont pas isométriques.",
+   "Les deux cadres du bas donnent les orthogonaux : U₁⟂ a pour carré −1 et U₂⟂ a pour carré 1.",
+   "Leurs carrés diffèrent aussi : la conclusion tombe quand l'hypothèse manque."
+  ],
+  "a_voir": "Sans l'hypothèse d'isométrie, les orthogonaux ne sont pas isométriques non plus."
+ },
+ "72-116": {
+  "lecture": [
+   "Le schéma montre le plan de u₁ (bleu) et u₂ (violet), de carré 1 chacun.",
+   "La différence d, en rouge pointillé, a un carré nul : elle ne définit pas de réflexion.",
+   "La somme s, en vert, a un carré 4, différent de 0.",
+   "La droite du pli est perpendiculaire à s ; la flèche orange S_s envoie u₁ sur −u₂."
+  ],
+  "a_voir": "Comme d est de carré 0, on prend s, de carré 4 ; alors S_s envoie u₁ sur −u₂."
+ },
+ "72-141": {
+  "lecture": [
+   "À gauche, un pli laisse en place une droite grise, de dimension 1 : cela ne donne pas 2 − k ≤ 0 pour k = 1.",
+   "À droite, le quart de tour ne laisse en place que le point vert : dimension 0, donc il faut 2 − k ≤ 0.",
+   "Le cadre vert du bas donne la conséquence : k ≥ 2, au moins 2 plis."
+  ],
+  "a_voir": "Le quart de tour ne laisse que 0 en place : il faut donc au moins 2 plis."
+ },
+ "72-145": {
+  "lecture": [
+   "En haut, tu lis qu'il s'agit d'une rotation de l'espace à 3 dimensions, avec au plus 3 réflexions.",
+   "Sur la droite, chaque disque est un nombre possible de réflexions : 0, 1, 2 ou 3.",
+   "Les disques verts (0 et 2) sont les nombres pairs.",
+   "Les disques rouges (1 et 3) sont les nombres impairs : une rotation ne les prend pas."
+  ],
+  "a_voir": "Seuls 0 et 2 sont pairs et au plus 3."
+ },
+ "72-159": {
+  "lecture": [
+   "Dans chaque dessin du haut, la droite bleue est L₁ et la droite violette est L₂.",
+   "L'arc orange marque l'angle de 45° de L₁ vers L₂.",
+   "L₁ est différente dans chaque dessin ; L₂ est toujours à 45° de L₁.",
+   "Sous chaque dessin, la même flèche orange montre le même quart de tour."
+  ],
+  "a_voir": "L₁ change d'un dessin à l'autre, l'angle reste 45° et le quart de tour est le même : il y a une infinité de paires."
+ }
+}

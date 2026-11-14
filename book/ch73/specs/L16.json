@@ -1,0 +1,218 @@
+[
+ {
+  "code": "73-241",
+  "a_dire": "Deux ordres, deux résultats : le sommet P n’arrive pas au même endroit, mais les deux triangles ont la même orientation.",
+  "legende_titre": "Deux ordres, deux positions",
+  "lecture": [
+   "Le triangle gris est le triangle de départ ; le point noir en bas à gauche est P, en (1, 0).",
+   "Le triangle bleu, en haut à gauche, est le résultat de « translater puis tourner » : P arrive en (0, 3).",
+   "Le triangle orange, à droite, est le résultat de « tourner puis translater » : P arrive en (2, 1).",
+   "Les flèches partent de P et vont vers chaque résultat."
+  ],
+  "a_voir": "Les triangles bleu et orange sont tournés de la même façon mais placés à des endroits différents."
+ },
+ {
+  "code": "73-242",
+  "a_dire": "Deux miroirs pris dans deux ordres donnent le quart de tour dans un sens ou dans l’autre : les matrices diffèrent.",
+  "legende_titre": "Deux miroirs, deux ordres",
+  "lecture": [
+   "Dans chaque dessin, les deux traits en pointillés sont les deux miroirs : l’horizontal et celui à 45 degrés.",
+   "À gauche, en bleu, le point (1, 0) va en (0, 1) : c’est R(90°).",
+   "À droite, en orange, l’ordre est inversé et (1, 0) va en (0, −1) : c’est R(−90°)."
+  ],
+  "a_voir": "Les deux ordres donnent deux matrices différentes, en rouge en bas."
+ },
+ {
+  "code": "73-243",
+  "a_dire": "L’inverse défait le déplacement dans l’ordre inverse : il retire le décalage, puis défait le quart de tour.",
+  "legende_titre": "Aller et retour d’un déplacement",
+  "lecture": [
+   "Les flèches bleues montrent f : le point (1, 0) va en (0, 1) par le quart de tour, puis en (2, 1) par le décalage (2, 0).",
+   "Les flèches orange montrent l’inverse de f : il retire le décalage, puis fait le quart de tour dans l’autre sens.",
+   "Le point (2, 1) revient donc sur (1, 0)."
+  ],
+  "a_voir": "Le chemin orange refait le chemin bleu à l’envers."
+ },
+ {
+  "code": "73-244",
+  "a_dire": "Pour inverser une matrice 2 sur 2 : calculer le déterminant, échanger la diagonale, changer deux signes, diviser.",
+  "legende_titre": "Les quatre actions de l’inverse",
+  "lecture": [
+   "De haut en bas, quatre matrices : la matrice de départ, puis le résultat de chaque action.",
+   "Les cases en orange sont celles qui changent à cette étape : la diagonale, puis les deux autres cases.",
+   "La dernière matrice, en vert, est l’inverse : ses lignes sont (1, −½) et (−3, 2)."
+  ],
+  "a_voir": "Le déterminant 8 − 6 = 2 sert à la dernière étape, la division."
+ },
+ {
+  "code": "73-245",
+  "a_dire": "Quand le déterminant vaut 1, on obtient l’inverse en échangeant la diagonale et en changeant deux signes, sans diviser.",
+  "legende_titre": "Inverse sans division",
+  "lecture": [
+   "La matrice bleue est la matrice de départ ; son déterminant est 6 − 5 = 1.",
+   "Les cases orange sont la diagonale : 2 et 3 sont échangés.",
+   "Les cases grises de départ deviennent vertes à droite : 1 et 5 changent de signe.",
+   "La matrice verte à droite est l’inverse, avec des nombres entiers."
+  ],
+  "a_voir": "Diviser par 1 ne change rien : il n’y a pas de division à faire."
+ },
+ {
+  "code": "73-246",
+  "a_dire": "La formule de l’inverse appliquée à une rotation donne la transposée, qui est la rotation dans l’autre sens.",
+  "legende_titre": "Deux chemins, une même matrice",
+  "lecture": [
+   "La matrice bleue est le quart de tour R(90°).",
+   "La flèche du haut applique la formule de l’inverse ; celle du bas prend la transposée.",
+   "Les deux flèches arrivent à la même matrice verte, R(−90°)."
+  ],
+  "a_voir": "La formule générale et la transposée donnent le même résultat."
+ },
+ {
+  "code": "73-247",
+  "a_dire": "Le cisaillement garde l’aire du carré mais allonge le côté vertical de 1 à environ 1,41.",
+  "legende_titre": "Aire gardée, longueur changée",
+  "lecture": [
+   "Le carré gris tracé en trait fin a pour côté 1 et pour aire 1.",
+   "Le parallélogramme bleu est l’image du carré ; son aire est aussi 1.",
+   "La flèche grise verticale, de longueur 1, est envoyée sur la flèche orange, de longueur √2, soit environ 1,41."
+  ],
+  "a_voir": "L’aire reste la même, mais la flèche s’allonge."
+ },
+ {
+  "code": "73-248",
+  "a_dire": "L’homothétie de rapport 2 a des colonnes perpendiculaires, mais de longueur 2 : elle double les longueurs.",
+  "legende_titre": "Perpendiculaires, mais trop longues",
+  "lecture": [
+   "Les deux flèches bleues sont les colonnes (2, 0) et (0, 2) ; le petit carré vert marque l’angle droit entre elles.",
+   "La flèche grise est le point (3, 4), de longueur 5.",
+   "La flèche orange est son image (6, 8), de longueur 10."
+  ],
+  "a_voir": "L’angle droit est gardé, mais les longueurs sont doublées."
+ },
+ {
+  "code": "73-249",
+  "a_dire": "En dimension 1, seuls 1 et −1 vérifient a × a = 1 : le cercle des rotations se réduit à un point.",
+  "legende_titre": "Seuls 1 et −1 conviennent",
+  "lecture": [
+   "Sur la droite graduée, les deux disques verts sont 1 et −1 : chacun, multiplié par lui-même, donne 1.",
+   "Le disque rouge est 2 : 2 × 2 donne 4, pas 1.",
+   "La flèche orange va de 1 à −1 : c’est le miroir x ↦ −x."
+  ],
+  "a_voir": "Il n’y a que deux nombres sur la droite qui conviennent."
+ },
+ {
+  "code": "73-250",
+  "a_dire": "Le chapitre emploie en même temps plusieurs chapitres : groupes, anneaux, normaux et quotients, groupes simples.",
+  "legende_titre": "Plusieurs chapitres à la fois",
+  "lecture": [
+   "La barre bleue du haut est le groupe des 480 matrices ; à droite, la case bleue donne les chapitres 44, 51 et 58.",
+   "La barre orange est le noyau du déterminant, 120 matrices ; la case orange à droite donne les chapitres 47 et 48.",
+   "La barre verte est le quotient par le centre, 60 éléments, simple ; la case verte à droite donne le chapitre 64.",
+   "Les barres ont des largeurs proportionnelles aux nombres d'éléments."
+  ],
+  "a_voir": "Chaque étape du calcul fait appel à un chapitre différent."
+ },
+ {
+  "code": "73-251",
+  "a_dire": "Une isométrie du plan est de quatre types : translation, rotation, réflexion ou symétrie glissée.",
+  "legende_titre": "Les quatre types d’isométries",
+  "lecture": [
+   "Dans chaque case, le triangle gris est le triangle de départ et le triangle bleu est son image.",
+   "En haut à gauche, le triangle est décalé de 2 vers la droite ; en haut à droite, il tourne d’un quart de tour.",
+   "En bas à gauche, il est renversé par rapport à l’axe horizontal ; en bas à droite, il est renversé puis décalé de 2 vers la droite."
+  ],
+  "a_voir": "Les quatre images ont des positions différentes, et ce sont les quatre seuls types."
+ },
+ {
+  "code": "73-252",
+  "a_dire": "L’application qui garde la matrice a pour noyau les translations : un décalage donne la matrice identité.",
+  "legende_titre": "Le noyau : les translations",
+  "lecture": [
+   "La ligne du haut est une frise : un même motif répété.",
+   "La flèche orange décale la frise de 2 vers la droite ; la matrice est I, sans changement.",
+   "La ligne du bas montre le miroir par rapport à l’axe en pointillés violets ; la matrice est celle du miroir.",
+   "La phrase verte en bas donne le noyau : les translations."
+  ],
+  "a_voir": "Le décalage a pour matrice l’identité, le miroir a une autre matrice."
+ },
+ {
+  "code": "73-253",
+  "a_dire": "La même méthode sert pour le groupe linéaire, le groupe orthogonal, puis le groupe symplectique et les groupes unitaires.",
+  "legende_titre": "Une méthode, plusieurs groupes",
+  "lecture": [
+   "Le cadre en pointillés rassemble les trois pièces de la méthode : transvections, action sur les droites, critère d’Iwasawa.",
+   "La boîte grise à droite est le cas déjà vu au chapitre 73.",
+   "Les deux boîtes bleues sont les groupes du chapitre 75 où la méthode s’applique aussi.",
+   "En bas, en vert, le comptage 48 = 8 × 6 de la même façon."
+  ],
+  "a_voir": "Les flèches partent toutes de la même méthode."
+ },
+ {
+  "code": "73-254",
+  "a_dire": "Si un étage du groupe est simple et non commutatif, il ne se découpe plus et le groupe n’est pas résoluble.",
+  "legende_titre": "Résoluble ou non",
+  "lecture": [
+   "À gauche, la tour de 6, 3 et 1 éléments : les deux quotients, 2 et 3, sont commutatifs (en vert).",
+   "À droite, une tour de GL, SL, C et {1} : deux couches commutatives en vert.",
+   "La couche en rouge, simple et non commutative, ne se découpe plus."
+  ],
+  "a_voir": "À gauche, tout se découpe ; à droite, une couche rouge bloque."
+ },
+ {
+  "code": "73-255",
+  "a_dire": "Le déterminant d’un produit est le produit des déterminants : −2 fois −1 donne 2.",
+  "legende_titre": "Déterminant d’un produit",
+  "lecture": [
+   "La matrice bleue A a pour déterminant −2.",
+   "La matrice violette B a pour déterminant −1.",
+   "La matrice verte AB, leur produit, a pour déterminant 2.",
+   "La ligne du bas rassemble : (−2) × (−1) = 2."
+  ],
+  "a_voir": "Le déterminant de AB est le produit de ceux de A et de B."
+ },
+ {
+  "code": "73-256",
+  "a_dire": "Une transformation proche de l’identité est un cisaillement avec un petit b ; il diffère à peine du carré.",
+  "legende_titre": "Presque l’identité",
+  "lecture": [
+   "Le carré gris est ce que donne la matrice identité.",
+   "À gauche, le cisaillement bleu avec b = 0,01 se confond presque avec le carré.",
+   "À droite, le cisaillement orange avec b = 5 est très éloigné du carré."
+  ],
+  "a_voir": "Plus b est petit, plus la figure ressemble au carré gris."
+ },
+ {
+  "code": "73-257",
+  "a_dire": "Deux découpages d’un même groupe donnent les mêmes pièces simples, 2 et 3, dans un ordre différent.",
+  "legende_titre": "Deux découpages, mêmes pièces",
+  "lecture": [
+   "À gauche, la tour 6, 3, 1 : on divise par 2, puis par 3.",
+   "À droite, la tour 6, 2, 1 : on divise par 3, puis par 2.",
+   "Les nombres divisés sont de même couleur dans les deux tours : orange pour 2, violet pour 3."
+  ],
+  "a_voir": "Les pièces 2 et 3 sont les mêmes dans les deux tours."
+ },
+ {
+  "code": "73-258",
+  "a_dire": "Connaître un groupe, c’est connaître ses pièces simples : ici une seule est non commutative, celle de 60 éléments.",
+  "legende_titre": "Les pièces d’un groupe",
+  "lecture": [
+   "L’accolade en haut dit que les 480 matrices se découpent en pièces de 4, 60 et 2 éléments.",
+   "Les deux boîtes grises, 4 et 2, sont commutatives.",
+   "La grande boîte bleue, 60, est la seule pièce simple et non commutative."
+  ],
+  "a_voir": "Une seule pièce sur trois est non commutative."
+ },
+ {
+  "code": "73-259",
+  "a_dire": "Sur les nombres réels, x² + y² + z² n’est jamais nul sans que les trois nombres le soient : il n’y a pas de vecteur isotrope.",
+  "legende_titre": "Aucun vecteur isotrope",
+  "lecture": [
+   "Chaque ligne donne un vecteur et la valeur de la somme des carrés : 1, 2 et 9.",
+   "La longueur de chaque barre bleue est la valeur.",
+   "Le trait rouge en pointillés est la valeur 0 : aucune barre n’y arrive.",
+   "Le cadre violet en bas pose la question que la fiche laisse ouverte."
+  ],
+  "a_voir": "Aucune barre n’est de longueur zéro."
+ }
+]

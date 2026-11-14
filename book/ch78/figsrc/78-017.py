@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+O = (32, 30); U = 9
+P = lambda x, y, z: iso(x, y, z, O, U)
+poly(ax, [P(0,0,0), P(2,0,0), P(3,1.5,0), P(1,1.5,0)], 'fixe')
+line(ax, [P(0,0,-1.2), P(0,0,0)], 'resultat', dash=True)
+line(ax, [P(0,0,3), P(0,0,3.8)], 'resultat', dash=True)
+arrow(ax, P(0,0,0), P(0,0,3), 'resultat', lw=1.6)
+arrow(ax, P(0,0,0), P(2,0,0), 'sujet', lw=1.6)
+arrow(ax, P(0,0,0), P(1,1.5,0), 'varie', lw=1.6)
+line(ax, [P(.9,0,0), P(.9,0,.9), P(0,0,.9)], 'encre', lw=0.7)
+a, b = 0.555 * .9, 0.832 * .9
+line(ax, [P(a,b,0), P(a,b,.9), P(0,0,.9)], 'encre', lw=0.7)
+text(ax, 51, 35, r'$u$', 'sujet', 'l', ha='left')
+text(ax, 24, 44, r'$v$', 'varie', 'l', ha='right')
+text(ax, 36, 58, r'$u \times v$', 'resultat', 'l', ha='left')
+text(ax, 15, 21, 'angle droit', 'encre', 's')
+line(ax, [(24, 24), (33, 30.5)], 'encre', lw=0.6)
+text(ax, 44, 12, '0 × 2 + 0 × 0 + 3 × 0 = 0', 'sujet', 's')
+text(ax, 44, 5, '0 × 1 + 0 × 1,5 + 3 × 0 = 0', 'varie', 's')
+save(fig, '78-017')

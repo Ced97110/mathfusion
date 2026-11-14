@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+text(ax,44,69,'S : la liste des mots déclarés égaux à 1','sujet','m')
+text(ax,4,56,'carré : 3 mots','encre','s',ha='left')
+box(ax,4,44,80,10,'sujet')
+for x,s in zip([20,44,68],[r'$x^4$',r'$y^2$',r'$xyxy$']): text(ax,x,49,s,'sujet','m')
+text(ax,4,36,'autre groupe : 10 mots','encre','s',ha='left')
+box(ax,4,24,80,10,'autre')
+for i in range(10): disc(ax,12+7.3*i,29,1.8,'autre')
+text(ax,4,16,'aucun mot : S vide','encre','s',ha='left')
+box(ax,4,4,80,10,'fixe',dash=True,label='aucun mot',size='s')
+save(fig,'49-070')

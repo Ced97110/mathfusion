@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+# p = 2 : on suppose t = (g/h)^2, on compare les degrés des deux côtés
+box(ax, 14, 84, 60, 11, 'fixe', label=r'on suppose $t=(g/h)^2$')
+arrow(ax, (44, 84), (44, 74), 'varie', lw=1.2)
+text(ax, 49, 79, r'multiplier par $h^2$', 'varie', 's', ha='left')
+box(ax, 14, 63, 60, 11, 'encre', label=r'$t\,h^2=g^2$')
+arrow(ax, (30, 63), (22, 52), 'varie', lw=1.0)
+arrow(ax, (58, 63), (66, 52), 'varie', lw=1.0)
+box(ax, 2, 28, 40, 24, 'varie', label=r'$t\,h^2$' + '\ndegré $2d+1$\nimpair', size='s')
+box(ax, 46, 28, 40, 24, 'sujet', label=r'$g^2$' + '\ndegré $2e$\npair', size='s')
+arrow(ax, (22, 28), (32, 21), 'limite', lw=1.0)
+arrow(ax, (66, 28), (56, 21), 'limite', lw=1.0)
+box(ax, 14, 9, 60, 12, 'limite', label='impair ≠ pair : impossible')
+text(ax, 44, 3.5, r'$d$ = degré de $h$, $e$ = degré de $g$', 'fixe', 's')
+save(fig, '62-143')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(56)
+s = 6.0; o = (6, 8)
+arrow(ax, o, (o[0] + 28, o[1]), 'fixe'); arrow(ax, o, (o[0], o[1] + 36), 'fixe')
+p = (o[0] + 3 * s, o[1] + 4 * s)
+arrow(ax, o, p, 'sujet', lw=1.5)
+line(ax, [p, (p[0], o[1])], 'fixe', dash=True); line(ax, [p, (o[0], p[1])], 'fixe', dash=True)
+text(ax, p[0] + 8, p[1] + 1, r'$x$', 'sujet', 'm'); text(ax, p[0] - 7, o[1] + 4, '(3, 4)', 'sujet', 's')
+box(ax, 44, 36, 14, 12, 'sujet', label=r'$x$', size='l'); box(ax, 61, 36, 14, 12, 'sujet', label=r'$x$', size='l')
+text(ax, 60, 52, 'pris deux fois', 'sujet', 's')
+arrow(ax, (60, 35), (60, 28), 'varie')
+box(ax, 44, 17, 30, 10, 'varie', label=r'$B(x,x)$', size='m')
+arrow(ax, (60, 16), (60, 11), 'varie')
+box(ax, 44, 1, 32, 10, 'resultat', label=r'$Q(x)=25$', size='m')
+save(fig, '71-143')

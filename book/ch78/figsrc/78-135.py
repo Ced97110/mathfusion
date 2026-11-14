@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 3, 50, 46, 16, 'sujet', label='$ij=(i,0)(0,1)$\n$=(0,\\ i)$')
+box(ax, 3, 27, 46, 16, 'autre', label='$ji=(0,1)(i,0)$\n$=(0,\\ -i)$')
+arrow(ax, (26, 27), (26, 19), 'varie')
+box(ax, 10, 6, 32, 12, 'resultat', label='$ji=-ij$')
+cx = 70
+line(ax, [(cx, 14), (cx, 62)], 'fixe')
+ax.plot([cx - 1.2, cx + 1.2], [38, 38], color=COL['fixe'], lw=0.8, zorder=1.5)
+text(ax, cx + 4, 38, '$0$', 'fixe', 's')
+disc(ax, cx, 54, 2, 'sujet'); text(ax, cx + 4.5, 54, '$i$', 'sujet', 'm')
+disc(ax, cx, 22, 2, 'autre'); text(ax, cx + 5.5, 22, '$-i$', 'autre', 'm')
+arrow(ax, (cx - 2.5, 51), (cx - 2.5, 25), 'varie', curve=0.35)
+text(ax, cx - 14, 38, 'conjugué', 'varie', 's')
+save(fig, '78-135')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 6, 84, 60, 'fixe', label=None)
+text(ax, 44, 61, 'tous les polynômes', 'fixe', 's')
+box(ax, 8, 12, 72, 40, 'sujet')
+text(ax, 44, 47, r'$(x^2+1)$ = ann $v$ : les multiples', 'sujet', 's')
+disc(ax, 18, 33, 2.2, 'resultat')
+text(ax, 24, 36, r'$x^3+x^2+x+1$', 'resultat', 's', ha='left')
+text(ax, 24, 29.5, r'$=(x+1)(x^2+1)$ : annule $v$', 'resultat', 's', ha='left')
+disc(ax, 18, 19, 2.2, 'limite')
+text(ax, 24, 22, r'$x^3+2$ reste $-x+2$', 'limite', 's', ha='left')
+text(ax, 24, 16, r'donne $(4{,}8\,;\,-0{,}4)\neq 0$', 'limite', 's', ha='left')
+save(fig, '57-195')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,6,46,32,12,'sujet',label=r'$x = 1+e_1$')
+box(ax,50,46,32,12,'autre',label=r'$\bar{x} = 1-e_1$')
+arrow(ax,(38,52),(50,52),'varie'); text(ax,44,55.5,'signe','varie','s')
+arrow(ax,(22,46),(35,37),'fixe'); arrow(ax,(66,46),(53,37),'fixe')
+box(ax,8,24,72,12,'resultat',label=r'$x\bar{x} = 1+1 = 2 = Q(x)$')
+arrow(ax,(44,24),(44,15),'varie'); text(ax,62,19.5,r'$\bar{x}$ divisé par 2','varie','s')
+box(ax,8,2,72,12,'resultat',label=r'$x^{-1}=\bar{x}/Q(x)=(1-e_1)/2$')
+save(fig,'78-145')

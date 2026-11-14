@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 2, 4, 84, 70, 'fixe')
+text(ax, 44, 68, 'partie : rien n’est exigé', 'fixe', 's')
+box(ax, 8, 8, 72, 54, 'autre')
+text(ax, 44, 56, 'sous-groupe : stable par +', 'autre', 's')
+text(ax, 44, 13, r'ex. $\mathbb{Z}^2$ avec coefficients $\mathbb{R}$', 'autre', 's')
+box(ax, 16, 22, 56, 28, 'sujet')
+text(ax, 44, 44, 'sous-module : + et action', 'sujet', 's', weight='bold')
+text(ax, 44, 28, r'ex. $\mathbb{Z}^2$ avec coefficients $\mathbb{Z}$', 'sujet', 's')
+save(fig, '57-123')

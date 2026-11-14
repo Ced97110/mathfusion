@@ -1,0 +1,332 @@
+[
+ {
+  "code": "58-091",
+  "a_dire": "ℝ^n note les listes de n nombres réels : on remplace n par 2, 3 ou un autre nombre sans changer l’écriture.",
+  "legende_titre": "Une écriture pour toutes les listes de réels",
+  "lecture": [
+   "Chaque ligne est une liste en bleu : deux cases pour n = 2, trois cases pour n = 3.",
+   "La dernière ligne a n cases : la première, des points de suspension, la dernière.",
+   "L’accolade sous la dernière ligne compte les n cases."
+  ],
+  "a_voir": "Le même signe ℝ^n couvre les listes de 2, de 3 et de n cases."
+ },
+ {
+  "code": "58-092",
+  "a_dire": "⟨v⟩ désigne l’ensemble de tous les multiples du vecteur v : pour (1, 2), c’est une droite.",
+  "legende_titre": "Ce que le vecteur (1, 2) engendre",
+  "lecture": [
+   "La flèche orange est le vecteur (1, 2).",
+   "Les points (0, 0), (2, 4) et (3, 6) sont ses multiples ; ils sont tous sur la droite bleue.",
+   "Le cadre bleu en bas à droite nomme cette droite ⟨v⟩."
+  ],
+  "a_voir": "Tous les multiples de (1, 2) forment la droite bleue."
+ },
+ {
+  "code": "58-093",
+  "a_dire": "dim V est le nombre de directions indépendantes de l’espace V : 1 pour la droite, 2 pour le plan, 3 pour l’espace.",
+  "legende_titre": "Compter les directions",
+  "lecture": [
+   "Une flèche bleue pour la droite : dim V = 1.",
+   "Deux flèches bleues de directions différentes pour le plan : dim V = 2.",
+   "Trois flèches bleues de directions différentes pour l’espace : dim V = 3."
+  ],
+  "a_voir": "Le nombre vert à droite est le nombre de flèches de la ligne."
+ },
+ {
+  "code": "58-094",
+  "a_dire": "On sait additionner deux vecteurs et multiplier un vecteur par un nombre ; un produit de deux vecteurs n’existe pas en général.",
+  "legende_titre": "Deux opérations, pas trois",
+  "lecture": [
+   "Les flèches bleue (2, 1) et violette (1, 2) s’additionnent : la flèche verte mène à (3, 3).",
+   "Le cadre orange donne 3u = (6, 3) : une flèche multipliée par un nombre.",
+   "Le cadre gris en tirets, u × v = ?, n’a pas de résultat."
+  ],
+  "a_voir": "Le cadre gris reste sans réponse, contrairement aux deux autres."
+ },
+ {
+  "code": "58-095",
+  "a_dire": "Un espace vectoriel ne garde que deux opérations, additionner et multiplier par un scalaire ; flèches, polynômes et fonctions les partagent.",
+  "legende_titre": "Ce que les trois exemples ont en commun",
+  "lecture": [
+   "Chaque ligne est un exemple : flèches, polynômes, fonctions.",
+   "Les deux colonnes bleue et orange sont remplies pour chaque ligne : additionner, multiplier par un nombre.",
+   "Le cadre gris en tirets à droite, u × v, est mis à part."
+  ],
+  "a_voir": "Les deux opérations sont communes aux trois lignes."
+ },
+ {
+  "code": "58-096",
+  "a_dire": "Le produit scalaire et le produit vectoriel sont des structures ajoutées, propres à ℝ² et ℝ³ ; ils ne font pas partie de l’espace vectoriel.",
+  "legende_titre": "Deux produits ajoutés",
+  "lecture": [
+   "Le cadre gris du haut est la structure d’espace vectoriel : la somme et le multiple.",
+   "À gauche, dans ℝ², les flèches (2, 1) et (1, 2) donnent 2 × 1 + 1 × 2 = 4 : un nombre.",
+   "À droite, dans ℝ³, les flèches u et v donnent la flèche verte u × v : une flèche.",
+   "Les textes orange disent que chaque produit est ajouté et propre à ℝ² ou à ℝ³."
+  ],
+  "a_voir": "Les deux produits sont ajoutés à l’espace vectoriel ; ils ne font pas partie de sa structure."
+ },
+ {
+  "code": "58-097",
+  "a_dire": "Dans ℝ^n, on additionne et on multiplie par un nombre case par case, avec des nombres réels.",
+  "legende_titre": "Des listes de réels, case par case",
+  "lecture": [
+   "Les listes a (bleu) et b (violet) ont trois cases chacune.",
+   "La liste verte a + b est la somme de chaque colonne : 2, 3, 3.",
+   "Le cadre orange donne 2 × a : chaque case est multipliée par 2, soit (3 ; 4 ; 0)."
+  ],
+  "a_voir": "Chaque case du résultat ne dépend que des cases de sa colonne."
+ },
+ {
+  "code": "58-098",
+  "a_dire": "La flèche ⟨3, 2⟩ s’écrit 3 fois la flèche horizontale i plus 2 fois la flèche verticale j : les nombres dépendent de la base i, j.",
+  "legende_titre": "La flèche (3, 2) et ses deux morceaux",
+  "lecture": [
+   "Les deux flèches grises i et j sont la base : une unité à droite, une unité en haut.",
+   "L’accolade orange mesure 3 i, le trait orange en tirets mesure 2 j.",
+   "La flèche bleue relie le départ au point (3, 2)."
+  ],
+  "a_voir": "Il faut aller 3 fois i, puis 2 fois j pour arriver au bout de la flèche."
+ },
+ {
+  "code": "58-099",
+  "a_dire": "Un polynôme peut être un vecteur : on additionne deux polynômes ou on multiplie l’un par un nombre, et le résultat reste un polynôme.",
+  "legende_titre": "Un vecteur qui est un polynôme",
+  "lecture": [
+   "Les cadres bleus sont des polynômes : 2 + 3x et 1 + 4x.",
+   "Le cadre vert est leur somme : 3 + 7x.",
+   "Le cadre orange est 5 fois 2 + 3x : 10 + 15x."
+  ],
+  "a_voir": "Somme et multiple sont encore des polynômes."
+ },
+ {
+  "code": "58-100",
+  "a_dire": "Le produit de deux polynômes existe, mais il ne fait pas partie de la structure d’espace vectoriel ; il appartient à une autre structure.",
+  "legende_titre": "Une opération mise de côté",
+  "lecture": [
+   "Dans le cadre du haut, 1 + x et 1 − x s’additionnent : la somme est 2.",
+   "Dans le cadre du bas, les mêmes polynômes se multiplient : le produit en gris est 1 − x².",
+   "Le cadre du bas est nommé « autre structure : anneau »."
+  ],
+  "a_voir": "Le produit est rangé dans un cadre à part, en gris."
+ },
+ {
+  "code": "58-101",
+  "a_dire": "P_n est la collection des polynômes de degré au plus n ; x et x² sont dans P₂, x³ n’y est pas.",
+  "legende_titre": "Les polynômes de degré au plus 2",
+  "lecture": [
+   "La droite graduée en bas donne le degré : 0, 1, 2, 3.",
+   "Les points bleus x et x² sont dans le cadre en tirets P₂ ; le point vert x + x² y est aussi.",
+   "Le point rouge x³ est hors du cadre."
+  ],
+  "a_voir": "Le cadre s’arrête au degré 2 : x³ reste dehors."
+ },
+ {
+  "code": "58-102",
+  "a_dire": "Les fonctions continues sur un intervalle s’additionnent ; un vecteur est la fonction tout entière, et une fonction à saut est exclue.",
+  "legende_titre": "Des fonctions continues comme vecteurs",
+  "lecture": [
+   "La courbe bleue f est x ↦ x, la violette g est x ↦ x² ; en 0,5 elles valent 0,5 et 0,25.",
+   "La courbe verte f + g vaut 0,75 en 0,5.",
+   "À droite, la courbe rouge fait un saut : elle est exclue."
+  ],
+  "a_voir": "La courbe verte s’obtient point par point à partir des deux autres."
+ },
+ {
+  "code": "58-103",
+  "a_dire": "La somme f + g et le produit αf se calculent valeur par valeur, en chaque point.",
+  "legende_titre": "Additionner des fonctions point par point",
+  "lecture": [
+   "Les colonnes bleue et violette donnent les valeurs de f(x) = 2x et de g(x) = x + 1.",
+   "En x = 2 : 4 + 3 = 7 ; en x = 5 : 10 + 6 = 16, en vert.",
+   "Le cadre orange dit que αf multiplie chaque valeur par α."
+  ],
+  "a_voir": "Chaque ligne du tableau se calcule seule, avec des nombres."
+ },
+ {
+  "code": "58-104",
+  "a_dire": "Une combinaison de fonctions se calcule en chaque point : (2f + 5g)(1) vaut environ 6,68.",
+  "legende_titre": "Une combinaison évaluée au point 1",
+  "lecture": [
+   "Le cadre du haut donne la formule (2f + 5g)(x) = 2 sin x + 5x².",
+   "Au point x = 1, le morceau bleu vaut 1,68 (2 sin 1) et le morceau violet vaut 5 (5 × 1²).",
+   "L’accolade verte donne la somme : environ 6,68.",
+   "En bas, au point x = 0 : 0 + 0 = 0."
+  ],
+  "a_voir": "Les deux morceaux s’additionnent pour donner 6,68."
+ },
+ {
+  "code": "58-105",
+  "a_dire": "Les nombres a + b√2 s’additionnent et se multiplient par une fraction en gardant la même forme, avec les fractions comme scalaires.",
+  "legende_titre": "Des nombres a + b√2 comme vecteurs",
+  "lecture": [
+   "Chaque cadre est un nombre a + b√2 : la case de gauche est a, la case de droite est b.",
+   "En haut, 1 + 2√2 (bleu) plus 3 − √2 (violet) donne 4 + √2 (vert), qui a encore deux cases.",
+   "En bas, un demi fois 1 + 2√2 donne le cadre orange : cases 1/2 et 1, soit 1/2 + √2."
+  ],
+  "a_voir": "Après une somme ou une multiplication par une fraction, le résultat a toujours deux cases a et b."
+ },
+ {
+  "code": "58-106",
+  "a_dire": "Pour vérifier une règle, on la vérifie case par case pour une liste, point par point pour une fonction : on se ramène à des nombres.",
+  "legende_titre": "Se ramener à un calcul sur des nombres",
+  "lecture": [
+   "À gauche, la liste a trois cases ; la case 1 est entourée en orange.",
+   "À droite, la courbe violette a deux points : point 1 en orange, point 2 en gris.",
+   "Les flèches orange mènent toutes deux vers le cadre vert : un calcul sur les nombres."
+  ],
+  "a_voir": "Une case ou un point suffit : on ne regarde qu’un nombre."
+ },
+ {
+  "code": "58-107",
+  "a_dire": "La règle 2 pour les fonctions se prouve en un point x : on remplace la fonction par sa valeur, puis on emploie la distributivité des nombres.",
+  "legende_titre": "Une preuve en un point",
+  "lecture": [
+   "En haut, la fonction f envoie x sur x + 1.",
+   "La colonne de gauche est la preuve : départ ((α + β)f)(x), puis la valeur, puis le résultat vert.",
+   "La flèche orange épaisse est l’étape décisive : la distributivité.",
+   "La colonne de droite reprend le calcul avec f(2) = 3, α = 2, β = 3 : on trouve 15 dans les deux cas."
+  ],
+  "a_voir": "Toute la preuve repose sur la flèche orange."
+ },
+ {
+  "code": "58-108",
+  "a_dire": "Multiplier un vecteur par 0 donne le vecteur nul, car chaque case est multipliée par 0.",
+  "legende_titre": "Multiplier par zéro",
+  "lecture": [
+   "Les listes bleues (4, 7) et (1, −2) sont multipliées par 0 (flèches orange).",
+   "Dans les deux lignes, le résultat vert est (0, 0), le vecteur nul."
+  ],
+  "a_voir": "Quelle que soit la liste de départ, les deux cases deviennent 0."
+ },
+ {
+  "code": "58-109",
+  "a_dire": "Un scalaire fois le vecteur nul donne le vecteur nul ; cela vient de la distributivité sur les vecteurs, et un produit inventé sans elle peut échouer.",
+  "legende_titre": "Un scalaire fois le vecteur nul",
+  "lecture": [
+   "À gauche, en vert, 3 × (0, 0) et 7 × (0, 0) donnent (0, 0).",
+   "À droite, en rouge, le produit inventé ⊛ envoie 2 ⊛ (0, 0) sur (1, 0), pas sur l’origine.",
+   "La flèche rouge va de (0, 0) à (1, 0)."
+  ],
+  "a_voir": "Le produit inventé ne rend pas (0, 0), donc il ne suit pas la règle."
+ },
+ {
+  "code": "58-110",
+  "a_dire": "(−1)v est l’opposé de v : ajouté à v, il donne le vecteur nul.",
+  "legende_titre": "Moins un fois un vecteur",
+  "lecture": [
+   "La flèche bleue est v = (2, 3).",
+   "La flèche orange est (−1)v = (−2, −3) : même longueur, sens contraire.",
+   "Le cadre vert dit que leur somme est (0, 0)."
+  ],
+  "a_voir": "Les deux flèches partent de l’origine en sens opposés et s’annulent."
+ },
+ {
+  "code": "58-111",
+  "a_dire": "αv = 0 entraîne α = 0 ou v = 0 sur un corps, parce qu’on peut diviser par α ; sans corps, la règle tombe.",
+  "legende_titre": "Un corps porte la règle",
+  "lecture": [
+   "À gauche, en vert : αv = 0 avec α non nul, on multiplie par α⁻¹ et on trouve v = 0.",
+   "À droite, en rouge : 2 × 1 = 0 avec 2 ≠ 0 et 1 ≠ 0 ; la règle tombe."
+  ],
+  "a_voir": "La flèche orange ×α⁻¹ existe à gauche et pas à droite."
+ },
+ {
+  "code": "58-112",
+  "a_dire": "Les trois premières règles valent dans tout module ; la quatrième demande de diviser et ne vaut que sur un corps.",
+  "legende_titre": "Trois règles pour tout module, une pour les corps",
+  "lecture": [
+   "Le cadre vert du haut liste 0v = 0, α0 = 0 et (−1)v = −v, avec un exemple dans ℤ² à droite.",
+   "Le cadre gris en tirets du bas contient αv = 0 ⇒ …, qui demande de diviser.",
+   "Le texte gris précise : seulement sur un corps."
+  ],
+  "a_voir": "Trois règles dans le cadre vert, une seule dans le cadre gris."
+ },
+ {
+  "code": "58-113",
+  "a_dire": "Pour prouver 0v = 0, on part de 0v = (0 + 0)v, la règle 2 sépare en 0v + 0v, puis on ajoute −0v des deux côtés.",
+  "legende_titre": "Prouver que 0v est le vecteur nul",
+  "lecture": [
+   "La colonne va du départ bleu à l’arrivée verte : 0 = 0v.",
+   "La flèche orange épaisse est la règle 2 : (0 + 0)v = 0v + 0v. C’est l’étape qui porte le poids.",
+   "La flèche grise ajoute −0v des deux côtés."
+  ],
+  "a_voir": "Sans la règle 2, la preuve ne peut pas passer du cadre bleu au cadre orange."
+ },
+ {
+  "code": "58-114",
+  "a_dire": "La quatrième règle se prouve en multipliant par l’inverse α⁻¹ ; sans cet inverse, la preuve ne marche pas.",
+  "legende_titre": "Prouver avec l’inverse de α",
+  "lecture": [
+   "Le cadre du haut est le départ : 2v = (0, 0).",
+   "La flèche orange épaisse multiplie par 1/2, l’inverse de 2 : c’est l’étape décisive.",
+   "Le cadre du bas est l’arrivée : v = (0, 0)."
+  ],
+  "a_voir": "L’étape décisive est l’existence de l’inverse de 2."
+ },
+ {
+  "code": "58-115",
+  "a_dire": "Sur les fractions on peut diviser par 2 et la quatrième règle est vraie ; sur les entiers on ne peut pas et elle est fausse.",
+  "legende_titre": "Fractions contre entiers",
+  "lecture": [
+   "À gauche, en vert : 2 a pour inverse 1/2 parmi les fractions, la règle est vraie.",
+   "À droite, en rouge : 1/2 n’est pas un entier, le trait en tirets ne mène à rien, la règle est fausse."
+  ],
+  "a_voir": "Le cercle de 1/2 est plein à gauche et vide à droite."
+ },
+ {
+  "code": "58-116",
+  "a_dire": "Dans ℤ/2ℤ, 2·1 = 0 alors que 2 ≠ 0 et 1 ≠ 0 : c’est un contre-exemple à la quatrième règle.",
+  "legende_titre": "Un cas où la règle casse",
+  "lecture": [
+   "Le cercle montre les heures 0 et 1 ; chaque flèche orange ajoute 1.",
+   "Les cadres de droite : 2 · 1 = 0, mais 2 ≠ 0 et 1 ≠ 0.",
+   "Le cadre rouge conclut : règle 4 fausse."
+  ],
+  "a_voir": "Deux nombres non nuls ont un produit nul."
+ },
+ {
+  "code": "58-117",
+  "a_dire": "La torsion est un produit nul avec un scalaire non nul et un élément non nul ; sur un corps, elle n’existe pas.",
+  "legende_titre": "La case de la torsion",
+  "lecture": [
+   "Le tableau croise α = 0 ou non nul avec v = 0 ou non nul.",
+   "Trois cases grises donnent zéro parce que α ou v est nul.",
+   "La case orange 2 × 1 = 0 est la torsion : les deux sont non nuls.",
+   "Le cadre gris en bas dit que sur un corps cette case n’existe pas."
+  ],
+  "a_voir": "Seule la case orange a les deux facteurs non nuls."
+ },
+ {
+  "code": "58-118",
+  "a_dire": "Un sous-espace est une partie stable : la somme de deux vecteurs et un multiple restent dans la partie.",
+  "legende_titre": "Une partie stable ou non",
+  "lecture": [
+   "La droite bleue contient (0, 0), (1, 2), (2, 4) et (3, 6) ; leurs sommes restent sur elle.",
+   "La droite rouge à la hauteur 2 contient (1, 2) et (2, 2) ; leur somme est à la hauteur 4, hors de la droite.",
+   "Le cadre vert dit stable, le cadre rouge dit pas stable."
+  ],
+  "a_voir": "La droite bleue contient ses sommes, la rouge non."
+ },
+ {
+  "code": "58-119",
+  "a_dire": "Un sous-espace est un sous-module où l’anneau est un corps : même idée, une partie stable.",
+  "legende_titre": "Sous-module et sous-espace",
+  "lecture": [
+   "À gauche, dans les couples d’entiers, les points bleus sur l’axe sont le sous-module « riz pur » ; l’anneau est ℤ.",
+   "À droite, la droite bleue est les multiples d’une flèche orange ; le corps est ℝ.",
+   "Le cadre vert dit : même idée, une partie stable."
+  ],
+  "a_voir": "Seul l’ensemble des scalaires change entre les deux dessins."
+ },
+ {
+  "code": "58-120",
+  "a_dire": "Un sous-espace contient toujours 0 : un multiple 0 fois un vecteur est le vecteur nul.",
+  "legende_titre": "Le vecteur nul est toujours dedans",
+  "lecture": [
+   "À gauche, la droite bleue contient (2, 4), (4, 8) et, en vert, 0 × (2, 4) = (0, 0).",
+   "À droite, la droite rouge à la hauteur 2 ne passe pas par l’origine : (0, 0) est absent."
+  ],
+  "a_voir": "La droite de gauche passe par l’origine, celle de droite non."
+ }
+]

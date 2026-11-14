@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+box(ax,2,26,20,18,'fixe'); text(ax,12,35,r'$\frac{12}{18}$','fixe','l')
+box(ax,34,26,26,18,'sujet'); text(ax,47,35,r'$\frac{2\times6}{3\times6}$','sujet','m')
+box(ax,72,26,14,18,'resultat'); text(ax,79,35,r'$\frac{2}{3}$','resultat','l')
+arrow(ax,(22,35),(34,35),'varie'); arrow(ax,(60,35),(72,35),'varie')
+text(ax,28,46,'factoriser','varie','s'); text(ax,66,46,'supprimer 6','varie','s')
+text(ax,47,16,'le 6 devient visible','varie','s')
+text(ax,44,6,'factoriser : une préparation','encre','m')
+save(fig,'18-107')

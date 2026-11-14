@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 8, 78, 26, -6, 6, step=3, arrow_right=False, size='m')
+for v, r in ((-6, 'limite'), (6, 'resultat')): disc(ax, f(v), 26, 1.6, r)
+text(ax, f(-3), 36, r'$a=-3$', 'sujet', 'm'); disc(ax, f(-3), 26, 1.6, 'sujet')
+text(ax, f(-6)+6, 46, r'$2a=-6$ : faux', 'limite', 's')
+arrow(ax, (f(-6)+3, 43), (f(-6), 28.5), 'limite')
+text(ax, f(6)-6, 46, r'$\sqrt{4a^2}=6$', 'resultat', 's')
+arrow(ax, (f(6)-3, 43), (f(6), 28.5), 'resultat')
+text(ax, 44, 10, r'$\pm$ donne déjà 6 et $-6$', 'varie', 's')
+brace(ax, f(-6), f(6), 18, 'varie', None, down=True, depth=2.4)
+text(ax, 44, 56, r'$\sqrt{4a^2}=2|a|$', 'sujet', 'l', weight='bold')
+save(fig, '23-053')

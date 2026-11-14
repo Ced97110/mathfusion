@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 3, 20, 82, 46, 'sujet', fill=False, lw=1.2)
+text(ax, 13, 60, r'$\mathbb{C}^*$', 'sujet', 'l')
+box(ax, 8, 42, 24, 11, 'sujet', label=r'$1+i$')
+box(ax, 56, 42, 24, 11, 'autre', label=r'$(1-i)/2$')
+text(ax, 44, 47.5, r'$\times$', 'varie', 'l')
+box(ax, 34, 23, 20, 11, 'resultat', label=r'$1$', size='l')
+arrow(ax, (20, 41.5), (36, 34.5), 'varie')
+arrow(ax, (68, 41.5), (52, 34.5), 'varie')
+box(ax, 3, 3, 50, 10, 'fixe', label=r'$(1+i)(1-i)=2$')
+box(ax, 60, 3, 25, 10, 'limite', label=r'$0$ exclu', dash=True)
+save(fig, '44-194')

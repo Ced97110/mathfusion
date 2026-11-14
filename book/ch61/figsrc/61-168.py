@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 4, 4, 80, 52, 'sujet', label=None)
+text(ax, 44, 51, 'constructibles : un corps', 'sujet', 'm', weight='bold')
+box(ax, 8, 8, 40, 38, 'fixe')
+text(ax, 28, 41, 'ℚ : les fractions', 'fixe', 's')
+for x, v in zip((17, 39), '12'):
+    disc(ax, x, 31, 4, 'sujet', label=v)
+arrow(ax, (39, 26.5), (17, 26.5), 'varie', curve=-0.45)
+text(ax, 28, 13, r'$+\ -\ \times\ \div$ : reste dans ℚ', 'varie', 's')
+disc(ax, 69, 31, 7, 'resultat', label=r'$\sqrt{2}$')
+arrow(ax, (50, 31), (61.5, 31), 'varie')
+text(ax, 56, 36, r'$\sqrt{\ }$', 'varie', 'm')
+text(ax, 69, 17, 'encore dedans', 'resultat', 's')
+save(fig, '61-168')

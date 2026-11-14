@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 2, 70, 24, 12, 'sujet', label=r'$x^2-2$', size='m')
+for y, lab in [(80, r'$\sqrt{2}$'), (66, r'$-\sqrt{2}$')]:
+    arrow(ax, (26.5, 76), (42, y), 'varie'); disc(ax, 47, y, 5, 'resultat', label=lab, size='s')
+text(ax, 72, 73, 'peu de racines', 'varie', 's')
+text(ax, 3, 54, 'toutes les racines : une liste', 'resultat', 's', ha='left')
+for i in range(7): disc(ax, 8 + 10 * i, 46, 3, 'resultat')
+text(ax, 80, 46, '…', 'resultat', 'l')
+line(ax, [(4, 20), (84, 20)], 'autre', lw=3)
+text(ax, 44, 10, 'les réels : pas en liste', 'autre', 's')
+disc(ax, 45, 20, 2.4, 'limite')
+arrow(ax, (45, 33), (45, 23.5), 'limite')
+text(ax, 45, 36, 'réel hors de la liste', 'limite', 's')
+save(fig, '43-152')

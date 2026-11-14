@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 68, r"$(f,f')=1$", 'encre', 'xl')
+text(ax, 44, 59, r"$f=x^2-1$", 'sujet', 'm')
+box(ax, 6, 44, 34, 11, 'sujet', label=r'$x-1$')
+box(ax, 48, 44, 34, 11, 'sujet', label=r'$x+1$')
+text(ax, 44, 32, r"$f'=2x$", 'autre', 'm')
+box(ax, 6, 17, 34, 11, 'autre', label=r'$2$')
+box(ax, 48, 17, 34, 11, 'autre', label=r'$x$')
+text(ax, 44, 5, 'aucun facteur commun : PGCD = 1', 'resultat', 's')
+save(fig, '62-043')

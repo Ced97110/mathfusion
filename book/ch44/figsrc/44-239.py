@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,22,60,44,9,'sujet',label=r'$x\,a = b$',size='l')
+box(ax,3,26,38,22,'resultat'); box(ax,47,26,38,22,'autre')
+text(ax,22,42,r'$x = b\,a^{-1}$','resultat'); text(ax,22,33,r'$\tau_2\circ\sigma^2=\tau_1$','resultat')
+text(ax,66,42,r'$a^{-1}b$','autre'); text(ax,66,33,r'$\sigma^2\circ\tau_2=\tau_3$','autre')
+arrow(ax,(33,60),(22,49),'sujet'); arrow(ax,(55,60),(66,49),'autre')
+text(ax,44,37,r'$\neq$','limite','xl')
+text(ax,22,21,r'solution de $x\,a=b$','resultat','s'); text(ax,66,21,r'solution de $a\,x=b$','autre','s')
+text(ax,44,8,r'$a=\sigma$, $b=\tau_2$, $a^{-1}=\sigma^2$','fixe','s')
+save(fig,'44-239')

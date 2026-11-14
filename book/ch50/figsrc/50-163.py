@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, r'$|G|=15=3\times5$', 'encre', 'l')
+for i in range(15):
+    disc(ax, 6 + 5.5 * i, 64, 2.0, 'fixe')
+box(ax, 4, 23, 30, 23, 'sujet')
+for i in range(3): disc(ax, 13 + 6 * i, 40, 2.3, 'sujet')
+text(ax, 19, 32, r'$P$ : 3 éléments', 'sujet', 's')
+text(ax, 19, 27, r'$n_3=1$', 'sujet', 'm')
+box(ax, 40, 23, 44, 23, 'autre')
+for i in range(5): disc(ax, 49 + 7 * i, 40, 2.3, 'autre')
+text(ax, 62, 32, r'$Q$ : 5 éléments', 'autre', 's')
+text(ax, 62, 27, r'$n_5=1$', 'autre', 'm')
+arrow(ax, (19, 60), (19, 47), 'fixe')
+arrow(ax, (62, 60), (62, 47), 'fixe')
+text(ax, 44, 12, 'deux sous-groupes uniques', 'resultat', 'm')
+save(fig, '50-163')

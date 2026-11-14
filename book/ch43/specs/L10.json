@@ -1,0 +1,125 @@
+[
+ {
+  "code": "43-145",
+  "a_dire": "Les 12 positions de l'horloge forment un premier groupe fini, dont la table des sommes est une table de Cayley.",
+  "legende_titre": "Le tableau des sommes de l'horloge",
+  "lecture": [
+   "Chaque ligne et chaque colonne porte une position de 0 à 11.",
+   "La colonne bleue et la ligne bleue se croisent sur la case verte : 9 plus 7 donne 4.",
+   "La colonne orange et la ligne orange se croisent sur la case verte : 11 plus 1 donne 0."
+  ],
+  "a_voir": "Chaque case du tableau contient la somme de la position de sa ligne et de celle de sa colonne."
+ },
+ {
+  "code": "43-146",
+  "a_dire": "Un sous-groupe découpe le groupe en classes qui ont toutes le même nombre d'éléments, d'où 4 fois 3 égale 12.",
+  "legende_titre": "Des paquets égaux sur l'horloge",
+  "lecture": [
+   "La bande bleue est H : les positions 0, 4 et 8.",
+   "Chaque bande orange est un autre paquet de 3 positions.",
+   "Les 4 bandes contiennent chacune 3 cercles, et le total vaut 12."
+  ],
+  "a_voir": "Les 4 paquets ont la même taille, et 4 fois 3 donne les 12 positions."
+ },
+ {
+  "code": "43-147",
+  "a_dire": "Le quotient du groupe de départ par le noyau correspond une à une à l'image.",
+  "legende_titre": "Le diagramme des entiers et de l'horloge",
+  "lecture": [
+   "La case bleue est le groupe de départ ; la flèche grise f l'envoie sur les 12 positions, en vert.",
+   "La flèche orange ν envoie chaque entier dans sa classe : la case violette contient les 12 classes.",
+   "La flèche verte g va dans les deux sens : les 12 classes et les 12 positions se correspondent une à une."
+  ],
+  "a_voir": "Passer par les classes (ν puis g) revient à aller directement avec f."
+ },
+ {
+  "code": "43-148",
+  "a_dire": "La conjugaison b = p a p⁻¹ existe dans tout groupe, et ses classes n'ont pas toutes la même taille.",
+  "legende_titre": "Multiplier à gauche par p, à droite par p⁻¹",
+  "lecture": [
+   "La case bleue est a, la case orange est p a, la case violette est b.",
+   "Les deux flèches orange sont les deux multiplications : p à gauche, puis p⁻¹ à droite.",
+   "Le grand cadre de gauche contient un seul élément, l'identité ; celui de droite en contient plus."
+  ],
+  "a_voir": "Les classes de conjugaison n'ont pas la même taille : l'identité est seule dans la sienne."
+ },
+ {
+  "code": "43-149",
+  "a_dire": "Dans une classe de matrices, on choisit la matrice la plus simple pour représenter la classe.",
+  "legende_titre": "Choisir la plus simple d'une classe",
+  "lecture": [
+   "Le cadre en tirets est une classe de deux matrices semblables.",
+   "La matrice grise, avec −18, 33, −11 et 20, est la plus compliquée.",
+   "La matrice verte, avec 1, 2, −1 et 1, est la plus simple ; la flèche orange la désigne."
+  ],
+  "a_voir": "Les deux matrices sont dans la même classe, mais une seule est choisie pour la représenter."
+ },
+ {
+  "code": "43-150",
+  "a_dire": "Un anneau quotient garde deux opérations, l'addition et la multiplication, bien définies sur les classes.",
+  "legende_titre": "Deux opérations sur l'horloge",
+  "lecture": [
+   "La ligne bleue additionne : 9 plus 7 donne 16, soit 12 plus 4, donc la position 4.",
+   "La ligne orange multiplie : 9 fois 7 donne 63, soit 5 fois 12 plus 3, donc la position 3.",
+   "La droite du bas montre le bloc de 0 : les multiples de 12 sont marqués."
+  ],
+  "a_voir": "Les deux opérations donnent une position de l'horloge."
+ },
+ {
+  "code": "43-151",
+  "a_dire": "La construction de ℚ avec des couples (a, b) et la relation a d = b c marche aussi pour d'autres ensembles et donne leur corps des fractions.",
+  "legende_titre": "Les couples qui valent la même fraction",
+  "lecture": [
+   "Le cadre bleu est une classe : elle contient les couples (3, 4) et (6, 8).",
+   "Le signe ∼ dit que ces deux couples sont équivalents.",
+   "Le calcul vert 3 fois 8 égale 4 fois 6 est le test a d = b c.",
+   "La case bleue du bas est la construction avec les entiers ; la violette, avec un autre ensemble."
+  ],
+  "a_voir": "Une fraction est une classe de couples, et la même construction vaut pour d'autres ensembles."
+ },
+ {
+  "code": "43-152",
+  "a_dire": "Pour montrer qu'un nombre existe, on compte : les racines se mettent en liste, les réels non.",
+  "legende_titre": "Compter les racines et les réels",
+  "lecture": [
+   "La case bleue est le polynôme x au carré moins 2 ; les deux cercles verts sont ses racines.",
+   "La rangée de cercles verts est la liste de toutes les racines.",
+   "Le trait violet est l'ensemble des réels, qui ne se mettent pas en liste.",
+   "Le point rouge est un réel qui n'est pas dans la liste."
+  ],
+  "a_voir": "Il y a un réel hors de la liste des racines."
+ },
+ {
+  "code": "43-153",
+  "a_dire": "Un entier relatif est un paquet de couples d'entiers naturels qui ont le même écart.",
+  "legende_titre": "Des couples qui font tous −2",
+  "lecture": [
+   "Chaque flèche bleue va du deuxième nombre du couple au premier.",
+   "Les trois flèches ont la même longueur et vont vers la gauche.",
+   "Le calcul vert 1 plus 4 égale 3 plus 2 est le test des couples (1, 3) et (2, 4)."
+  ],
+  "a_voir": "Les couples (1, 3), (2, 4) et (0, 2) forment un même paquet : l'entier −2."
+ },
+ {
+  "code": "43-154",
+  "a_dire": "La division de classes dépend des noms choisis : avec 6 et 3 on trouve 2, avec 18 et 15 on trouve 1,2.",
+  "legende_titre": "La division dépend des noms",
+  "lecture": [
+   "La case bleue donne les noms 6 et 3 ; la case verte donne le résultat 2.",
+   "La case violette donne les noms 18 et 15, qui désignent les mêmes positions ; la case rouge donne 1,2.",
+   "Le signe rouge dit que les deux résultats sont différents."
+  ],
+  "a_voir": "Les mêmes positions donnent deux résultats différents, donc la division n'est pas bien définie."
+ },
+ {
+  "code": "43-155",
+  "a_dire": "Le nombre d'éléments du groupe est la somme des tailles de ses classes de conjugaison.",
+  "legende_titre": "Compter un groupe classe par classe",
+  "lecture": [
+   "Les trois cases bleues sont les trois classes, avec 1, 2 et 3 cercles.",
+   "Chaque cercle est un élément, compté une seule fois.",
+   "L'accolade verte regroupe les trois classes et donne 6 égale 1 plus 2 plus 3."
+  ],
+  "a_voir": "Les tailles des classes s'additionnent pour donner les 6 éléments."
+ }
+]

@@ -1,0 +1,180 @@
+[
+ {
+  "code": "72-033",
+  "a_dire": "Une mesure est dégénérée quand le tableau de ses nombres a un déterminant nul.",
+  "legende_titre": "Un tableau avec une ligne nulle",
+  "lecture": [
+   "Les cases bleues sont les nombres de b pour les vecteurs de base.",
+   "La ligne rouge ne contient que des 0.",
+   "Le texte rouge donne le déterminant : 0.",
+   "Le vecteur (0, 0, 1) donne 0 avec tout."
+  ],
+  "a_voir": "Une ligne de zéros donne un déterminant nul : la mesure ne voit pas un vecteur."
+ },
+ {
+  "code": "72-034",
+  "a_dire": "Deux vecteurs qui diffèrent d'un vecteur du radical ont les mêmes mesures.",
+  "legende_titre": "Deux vecteurs, une seule mesure",
+  "lecture": [
+   "La ligne du haut est x = (1, 2, 3), la ligne du dessous est x + r = (1, 2, 4).",
+   "La case orange est le troisième nombre, le seul qui change.",
+   "Les flèches vertes arrivent à la même case : −7.",
+   "Le nombre −7 est obtenu avec y = (5, 6, 7)."
+  ],
+  "a_voir": "Les deux vecteurs sont différents mais la mesure donne −7 pour les deux."
+ },
+ {
+  "code": "72-035",
+  "a_dire": "Un vecteur isotrope est non nul et son carré est nul.",
+  "legende_titre": "Un vecteur non nul de carré zéro",
+  "lecture": [
+   "La flèche rouge (1, 1) a un carré nul.",
+   "La flèche bleue (1, 0) a un carré 1.",
+   "Le point gris à l'origine est le vecteur nul."
+  ],
+  "a_voir": "Seule la flèche rouge est non nulle avec un carré 0."
+ },
+ {
+  "code": "72-036",
+  "a_dire": "Le plan habituel n'a pas de vecteur isotrope ; la seconde mesure en a, sur deux droites.",
+  "legende_titre": "Deux plans, deux réponses",
+  "lecture": [
+   "À gauche, le plan habituel : le point vert (0, 0) est le seul vecteur de carré 0.",
+   "À droite, la seconde mesure : deux droites rouges sont formées de vecteurs de carré 0, comme (1, 1)."
+  ],
+  "a_voir": "À gauche un seul point, à droite deux droites entières : seule la seconde mesure a des vecteurs isotropes."
+ },
+ {
+  "code": "72-037",
+  "a_dire": "Dans un sous-espace totalement isotrope, tous les nombres entre ses vecteurs valent 0.",
+  "legende_titre": "Une droite qui se mesure à zéro",
+  "lecture": [
+   "La droite rouge est U.",
+   "Les flèches (1, 1) et (3, 3) sont deux de ses vecteurs.",
+   "Le calcul donne 1×3 − 1×3 = 0, et U est dans son orthogonal."
+  ],
+  "a_voir": "Deux vecteurs quelconques de la droite rouge donnent 0."
+ },
+ {
+  "code": "72-038",
+  "a_dire": "Un espace anisotrope n'a aucun vecteur isotrope.",
+  "legende_titre": "Aucun vecteur de carré zéro",
+  "lecture": [
+   "À gauche, le plan habituel : les flèches bleues ont des carrés 25 et 4, jamais 0.",
+   "À droite, la droite rouge est faite de vecteurs de carré 0."
+  ],
+  "a_voir": "A gauche, tous les carrés sont positifs ; à droite, une droite rouge a un carré nul."
+ },
+ {
+  "code": "72-039",
+  "a_dire": "Un sous-espace est non dégénéré quand lui et son orthogonal n'ont que 0 en commun.",
+  "legende_titre": "Une droite et son orthogonal",
+  "lecture": [
+   "À gauche, la droite bleue U et la droite violette orthogonale se croisent en un seul point vert.",
+   "À droite, la droite rouge est égale à son orthogonal : elles ont tout en commun."
+  ],
+  "a_voir": "A gauche un seul point commun, à droite toute la droite."
+ },
+ {
+  "code": "72-040",
+  "a_dire": "Pour un sous-espace U, les dimensions de U et de son orthogonal font n.",
+  "legende_titre": "Les dimensions s'additionnent",
+  "lecture": [
+   "Le losange bleu est le plan U, de dimension 2, avec ses deux flèches de base.",
+   "La flèche violette est la droite orthogonale, de dimension 1.",
+   "Le calcul vert donne 2 + 1 = 3."
+  ],
+  "a_voir": "Le plan et la droite orthogonale remplissent les 3 dimensions."
+ },
+ {
+  "code": "72-041",
+  "a_dire": "Si U est non dégénéré, tout vecteur se coupe en une part dans U et une part dans U orthogonal.",
+  "legende_titre": "Un vecteur coupé en deux parts",
+  "lecture": [
+   "La flèche orange est le vecteur (3, 5).",
+   "La part bleue (3, 0) est sur la droite U.",
+   "La part violette (0, 5) est sur l'orthogonal de U.",
+   "Les pointillés montrent que les deux parts font le vecteur."
+  ],
+  "a_voir": "Le vecteur orange est la somme des deux parts."
+ },
+ {
+  "code": "72-042",
+  "a_dire": "Le signe ⊕ dit que le vecteur s'écrit comme somme de deux parts, et d'une seule façon.",
+  "legende_titre": "Une seule façon de couper",
+  "lecture": [
+   "La flèche orange est y = (1 ; 2).",
+   "La droite bleue est U ; la flèche bleue est la part dans U.",
+   "La flèche violette courte est la part orthogonale à U.",
+   "Aucune autre part sur la droite ne convient."
+  ],
+  "a_voir": "La part bleue et la part violette donnent y, et c'est la seule façon."
+ },
+ {
+  "code": "72-043",
+  "a_dire": "On pose p = B(y, x)/B(x, x) · x, puis q = y − p : q est orthogonal à x.",
+  "legende_titre": "Le calcul qui coupe y",
+  "lecture": [
+   "Les deux cases bleues donnent les nombres 4 et 5.",
+   "Les cases orange construisent p puis q.",
+   "La case verte montre que le nombre de q avec x est 0.",
+   "Le texte rouge dit que la division par 5 est possible car il n'est pas nul."
+  ],
+  "a_voir": "Le nombre de q avec x vaut 4 − 4 = 0."
+ },
+ {
+  "code": "72-044",
+  "a_dire": "Une somme directe orthogonale est une somme directe dont les parties sont à angle droit.",
+  "legende_titre": "Somme directe et angle droit",
+  "lecture": [
+   "À gauche, deux droites U1 (bleue) et U2 (violette) ne sont pas à angle droit.",
+   "À droite, U1 (bleue) et U2 (verte) font un angle droit marqué."
+  ],
+  "a_voir": "Seule la figure de droite a des parties orthogonales."
+ },
+ {
+  "code": "72-045",
+  "a_dire": "Si deux vecteurs sont orthogonaux, le carré de leur somme est la somme de leurs carrés.",
+  "legende_titre": "9 + 16 = 25",
+  "lecture": [
+   "Le carré bleu a pour valeur 9 : c'est le carré de (3, 0).",
+   "Le carré orange a pour valeur 16 : c'est le carré de (0, 4).",
+   "Le carré vert vaut 25 : c'est le carré de la somme (3, 4)."
+  ],
+  "a_voir": "Les aires 9 et 16 s'additionnent en 25."
+ },
+ {
+  "code": "72-046",
+  "a_dire": "Un plan hyperbolique est un plan non dégénéré qui contient un vecteur isotrope.",
+  "legende_titre": "Du premier cas au plan hyperbolique",
+  "lecture": [
+   "À gauche, la droite bleue est de dimension 1 : elle est non dégénérée, mais ni de dimension 2, ni avec un vecteur isotrope.",
+   "À droite, le plan est de dimension 2 et la droite rouge contient le vecteur isotrope (1, 1).",
+   "Les trois conditions sont cochées en vert à droite : c'est un plan hyperbolique. À gauche, des conditions manquent."
+  ],
+  "a_voir": "Un plan hyperbolique est de dimension 2, non dégénéré, et contient un vecteur isotrope."
+ },
+ {
+  "code": "72-047",
+  "a_dire": "Le plan de la seconde mesure est hyperbolique : tableau diag(1, −1), déterminant −1, vecteur (1, 1) isotrope.",
+  "legende_titre": "Les trois conditions vérifiées",
+  "lecture": [
+   "Les cases bleues sont le tableau b, de dimension 2.",
+   "Le texte vert donne son déterminant : −1, donc non nul.",
+   "La droite rouge est le vecteur isotrope (1, 1), de carré 0."
+  ],
+  "a_voir": "Le déterminant n'est pas nul et (1, 1) est isotrope."
+ },
+ {
+  "code": "72-048",
+  "a_dire": "Une paire hyperbolique est formée de deux vecteurs isotropes dont le nombre associé vaut 1.",
+  "legende_titre": "Deux vecteurs isotropes, un nombre 1",
+  "lecture": [
+   "La flèche bleue u = (1, 1) est sur une droite pointillée.",
+   "La flèche violette v = (0,5 ; −0,5) est sur l'autre droite pointillée.",
+   "Chacune donne 0 avec elle-même.",
+   "Le nombre vert de u avec v vaut 1."
+  ],
+  "a_voir": "Les deux carrés valent 0 et B(u, v) vaut 1."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 6, 70, 76, 10, 'sujet', label=r'$18x^2-56x+6$')
+arrow(ax, (44, 70), (44, 62), 'varie'); text(ax, 48, 66, 'retirer 2', 'varie', 's', ha='left')
+box(ax, 6, 50, 14, 10, 'varie', label='2')
+box(ax, 22, 50, 60, 10, 'sujet', label=r'$(9x^2-28x+3)$')
+arrow(ax, (52, 50), (52, 42), 'varie'); text(ax, 56, 46, 'factoriser le reste', 'varie', 's', ha='left')
+box(ax, 6, 30, 14, 10, 'varie', label='2')
+box(ax, 22, 30, 60, 10, 'resultat', label=r'$(9x-1)(x-3)$')
+text(ax, 44, 18, r'$x=1$ : $-32$ des deux côtés', 'fixe', 's')
+text(ax, 44, 10, 'le 2 est remis devant', 'varie', 's')
+save(fig, '18-083')

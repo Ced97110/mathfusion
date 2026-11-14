@@ -1,0 +1,186 @@
+[
+ {
+  "code": "71-097",
+  "a_dire": "Une matrice alternée a des 0 sur la diagonale et sa transposée est son opposée.",
+  "legende_titre": "Diagonale nulle, transposée opposée",
+  "lecture": [
+   "Les deux cases bleues de la diagonale valent 0 dans les deux matrices.",
+   "La flèche orange est la transposition : lignes et colonnes échangées.",
+   "Les cases hors diagonale, grises à gauche, deviennent orange à droite : leur signe a changé."
+  ],
+  "a_voir": "Les 0 restent à leur place et les autres signes s'inversent."
+ },
+ {
+  "code": "71-098",
+  "a_dire": "Toute forme alternée a une base où sa matrice est faite de r blocs S suivis de zéros.",
+  "legende_titre": "Une matrice en blocs sur la diagonale",
+  "lecture": [
+   "À gauche, le petit tableau bleu est le bloc S : lignes 0 et 1, puis moins 1 et 0.",
+   "Dans le plan, il n'y a qu'un seul bloc : r = 1.",
+   "À droite, une matrice 5 × 5 a r = 2 blocs S bleus le long de la diagonale.",
+   "Tout le reste, en gris, est fait de zéros, y compris la dernière ligne et la dernière colonne."
+  ],
+  "a_voir": "Des blocs S sur la diagonale, des zéros partout ailleurs ; le plan est le cas r = 1."
+ },
+ {
+  "code": "71-099",
+  "a_dire": "Une base symplectique est une base où la matrice est faite de blocs S, suivis de zéros.",
+  "legende_titre": "Trois formes de matrice pour trois sortes de bases",
+  "lecture": [
+   "À gauche, en gris, la matrice d'une base quelconque : toutes les cases peuvent être remplies.",
+   "Au milieu, en violet, la base orthogonale : seule la diagonale est remplie.",
+   "À droite, en bleu, la base symplectique : des blocs S le long de la diagonale."
+  ],
+  "a_voir": "Ce qui distingue la base symplectique, ce sont ses blocs S sur la diagonale."
+ },
+ {
+  "code": "71-100",
+  "a_dire": "L'espace se découpe en plans de la forme aire orientée, et les flèches restantes sont orthogonales à tout.",
+  "legende_titre": "Un plan et une flèche à part",
+  "lecture": [
+   "Le losange bleu est le plan formé des flèches u₁ et v₁ : B y est l'aire orientée.",
+   "La flèche verte z₁ sort du plan : elle donne 0 avec toutes les autres flèches.",
+   "Cette flèche forme le radical."
+  ],
+  "a_voir": "Un plan bleu, plus une flèche verte orthogonale à tout."
+ },
+ {
+  "code": "71-101",
+  "a_dire": "On divise le second vecteur par b pour obtenir un couple où B vaut exactement 1.",
+  "legende_titre": "Rendre l'aire orientée égale à 1",
+  "lecture": [
+   "À gauche, u est la flèche bleue de longueur 1 et v la flèche orange de longueur 3 : l'aire est 3.",
+   "La flèche orange du milieu est la division de v par 3.",
+   "À droite, la nouvelle flèche v/3 est de longueur 1 : l'aire est 1, en vert."
+  ],
+  "a_voir": "Diviser v par 3 ramène l'aire de 3 à 1."
+ },
+ {
+  "code": "71-102",
+  "a_dire": "On retire de x sa part dans le plan (u₁, v₁) : il reste un vecteur orthogonal à ce plan.",
+  "legende_titre": "Retirer la part dans le plan",
+  "lecture": [
+   "La flèche grise est le vecteur x de coordonnées 3, 5 et 7.",
+   "La flèche orange est sa part dans le plan bleu : coordonnées 3, 5 et 0.",
+   "Le trait pointillé est ce qu'on retire de x, c'est-à-dire ce qui reste.",
+   "La flèche verte est le résultat y : coordonnées 0, 0 et 7."
+  ],
+  "a_voir": "Une fois la part dans le plan retirée, il reste seulement la troisième coordonnée."
+ },
+ {
+  "code": "71-103",
+  "a_dire": "La construction de la base reprend le geste de l'élimination de Gauss : traiter une partie, puis recommencer sur le reste.",
+  "legende_titre": "Le même geste, deux méthodes",
+  "lecture": [
+   "En haut, trois équations : la barre orange est celle qu'on utilise, il en reste deux, puis une.",
+   "En bas, les carrés violets sont les espaces de plus en plus petits de la construction.",
+   "Le petit carré orange est la partie traitée en premier.",
+   "Les flèches grises montrent qu'on recommence sur ce qui reste."
+  ],
+  "a_voir": "Dans les deux lignes, le problème devient plus petit à chaque étape."
+ },
+ {
+  "code": "71-104",
+  "a_dire": "Le rang d'une matrice alternée est pair et son déterminant est un carré.",
+  "legende_titre": "Rang pair et déterminant carré",
+  "lecture": [
+   "En haut, la matrice 2 sur 2 de lignes 0 et 3, puis moins 3 et 0 : rang 2 et déterminant 9, égal à 3 au carré.",
+   "En bas, une matrice alternée 3 sur 3 : le bloc bleu de 2 sur 2 donne le rang, le reste gris est nul.",
+   "Le rang est donc au plus 2 et le déterminant vaut 0."
+  ],
+  "a_voir": "Le rang compte les cases du bloc par paires ; le déterminant est un carré."
+ },
+ {
+  "code": "71-105",
+  "a_dire": "Dans la base symplectique, le rang est 2r et le déterminant vaut 1 ou 0.",
+  "legende_titre": "Lire rang et déterminant sur les blocs",
+  "lecture": [
+   "À gauche, la matrice 4 sur 4 : deux blocs S bleus, rang 4 égal à 2 fois 2, déterminant 1.",
+   "À droite, la matrice 5 sur 5 : les mêmes deux blocs et une ligne et une colonne de zéros en gris.",
+   "Son rang est encore 4, mais son déterminant est 0."
+  ],
+  "a_voir": "Chaque bloc S ajoute 2 au rang ; une ligne de zéros met le déterminant à 0."
+ },
+ {
+  "code": "71-106",
+  "a_dire": "Deux matrices alternées de même taille sont congruentes si et seulement si elles ont le même rang ; pour les symétriques, cela est faux.",
+  "legende_titre": "Même rang, pas forcément congruentes",
+  "lecture": [
+   "À gauche, pour les formes alternées, le bloc bleu S est la forme de rang 2 en taille 2.",
+   "À gauche, même rang donne congruentes (vert).",
+   "À droite, les matrices bleue et violette de lignes 1 et 0, puis 0 et 1 ou moins 1, ont le même rang 2.",
+   "Leurs déterminants 1 et moins 1 diffèrent : elles ne sont pas congruentes (rouge)."
+  ],
+  "a_voir": "Pour les alternées, le rang suffit ; pour les symétriques, il ne suffit pas."
+ },
+ {
+  "code": "71-107",
+  "a_dire": "Le pfaffien est une racine carrée du déterminant, lue directement sur les coefficients de la matrice.",
+  "legende_titre": "D'un coefficient au déterminant",
+  "lecture": [
+   "La case verte, en haut à droite de la matrice, vaut 3.",
+   "Cette valeur est le pfaffien, dans la boîte verte.",
+   "La flèche orange élève ce nombre au carré.",
+   "La boîte bleue donne le déterminant : 9."
+  ],
+  "a_voir": "Le pfaffien 3 se lit sur la matrice, et son carré est le déterminant 9."
+ },
+ {
+  "code": "71-108",
+  "a_dire": "Pour une matrice alternée 2 sur 2, le pfaffien est a et le déterminant est a au carré.",
+  "legende_titre": "Pfaffien et déterminant en taille 2",
+  "lecture": [
+   "La case verte a, en haut à droite, est le pfaffien.",
+   "La case orange moins a, en bas à gauche, est son opposée.",
+   "Les deux 0 de la diagonale, en gris, donnent 0 fois 0.",
+   "L'autre produit, en orange, donne a au carré, qui est le déterminant."
+  ],
+  "a_voir": "Le coefficient a est le pfaffien et son carré est le déterminant."
+ },
+ {
+  "code": "71-109",
+  "a_dire": "Pour une matrice alternée 4 sur 4, le pfaffien est x12 fois x34, moins x13 fois x24, plus x14 fois x23.",
+  "legende_titre": "Le pfaffien en taille 4",
+  "lecture": [
+   "Les six cases colorées au-dessus de la diagonale sont les six coefficients.",
+   "Chaque couleur marque deux cases dont on fait le produit : bleu, violet, orange.",
+   "Les trois lignes à droite, de mêmes couleurs, donnent 2, moins 6 et 2.",
+   "La ligne verte additionne : le pfaffien vaut moins 2."
+  ],
+  "a_voir": "Trois produits de deux coefficients, avec les signes plus, moins, plus."
+ },
+ {
+  "code": "71-110",
+  "a_dire": "L'égalité Pf au carré égale déterminant vaut en toute caractéristique, car le calcul n'utilise aucune division par 2.",
+  "legende_titre": "Pourquoi la caractéristique ne gêne pas",
+  "lecture": [
+   "En haut, le pfaffien 3 est élevé au carré : 9, égal au déterminant 9.",
+   "La boîte verte dit que le calcul n'utilise que des produits et des sommes.",
+   "La boîte rouge barrée est la division par 2 : on n'en fait jamais.",
+   "L'égalité reste donc vraie même quand 2 est égal à 0."
+  ],
+  "a_voir": "Sans division par 2, l'égalité vaut aussi quand 2 vaut 0."
+ },
+ {
+  "code": "71-111",
+  "a_dire": "Une forme quadratique prend un seul vecteur et rend un nombre, somme de termes à deux coordonnées multipliées.",
+  "legende_titre": "Un vecteur en entrée, un nombre en sortie",
+  "lecture": [
+   "Les deux points bleus sont les vecteurs de coordonnées 1 et 1, puis 1 et moins 1.",
+   "Chaque flèche orange mène à la valeur de Q en ce point : 16 et 4.",
+   "En bas, les trois termes de Q : chacun contient deux coordonnées multipliées."
+  ],
+  "a_voir": "Q associe un nombre à chaque vecteur, par une somme de termes de degré 2."
+ },
+ {
+  "code": "71-112",
+  "a_dire": "Une forme quadratique est un polynôme dont tous les termes ont le degré 2.",
+  "legende_titre": "Tous les termes ont le même degré",
+  "lecture": [
+   "En haut, les trois termes bleus ont chacun le degré 2 : le terme 6xy a un x et un y, donc 1 plus 1.",
+   "En bas, le terme x au carré est de degré 2.",
+   "Le terme x en rouge est de degré 1 : l'expression n'est pas homogène."
+  ],
+  "a_voir": "Un seul terme d'un autre degré suffit à casser la forme."
+ }
+]

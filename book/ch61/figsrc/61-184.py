@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+poly(ax,[(12,30),(30,30),(30,48),(12,48)],'sujet')
+line(ax,[(12,30),(30,48)],'resultat',lw=1.4)
+text(ax,21,26.5,'1','sujet','s')
+text(ax,18,43,r'$\sqrt{2}$','resultat','s')
+text(ax,21,19,'degré 2','encre'); text(ax,21,12,'puissance de 2','resultat','s'); text(ax,21,5,'constructible','resultat')
+box(ax,48,30,34,18,'limite',label=r'$\sqrt[3]{2}$',size='xl')
+text(ax,65,19,'degré 3','encre'); text(ax,65,12,'pas une puissance de 2','limite','s'); text(ax,65,5,'jamais constructible','limite')
+save(fig,'61-184')

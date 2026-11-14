@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+ox, oy, s = 5, 6, 9.5
+P = lambda x, y: (ox + s * x, oy + s * y)
+O, U, V, H = P(0, 0), P(1, 3), P(4, 2), P(2, 1)
+arrow(ax, O, V, 'autre', lw=1.4)
+arrow(ax, O, U, 'sujet', lw=1.4)
+line(ax, [U, H], 'fixe', lw=0.9, dash=True)
+arrow(ax, O, H, 'resultat', lw=3.0)
+text(ax, U[0] + 3, U[1], r'$u$', 'sujet', 'm')
+text(ax, V[0] + 2.5, V[1] + 1, r'$v$', 'autre', 'm')
+text(ax, H[0] + 4, H[1] - 4.5, r'$\langle2,1\rangle$', 'resultat', 's')
+text(ax, O[0] + 0.5, O[1] - 3, r'$O$', 'encre', 's')
+text(ax, 67, 46, 'deux vecteurs en entrée', 'fixe', 's')
+box(ax, 47, 26, 38, 15, 'fixe', label='produit scalaire\n→ un nombre : 10', size='s')
+box(ax, 47, 5, 38, 15, 'resultat', label='projection de $u$ sur $v$\n→ une flèche', size='s')
+save(fig, '41-094')

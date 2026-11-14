@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+arrow(ax, (4, 22), (36, 22), 'fixe', lw=0.7); arrow(ax, (8, 18), (8, 50), 'fixe', lw=0.7)
+arrow(ax, (8, 22), (28, 22), 'sujet', lw=1.6); text(ax, 18, 27, r'$u=(1,\,0)$', 'sujet', 's')
+text(ax, 20, 60, 'forme alternée', 'encre', 'm')
+box(ax, 42, 44, 44, 10, 'sujet', label=r'$B(u,u)$')
+box(ax, 42, 30, 44, 10, 'varie', label=r'$1\times0-0\times1$')
+box(ax, 42, 16, 44, 10, 'resultat', label='0', weight='bold')
+arrow(ax, (64, 43), (64, 41), 'fixe'); arrow(ax, (64, 29), (64, 27), 'fixe')
+box(ax, 4, 2, 48, 9, 'limite', fill=False, dash=True, label=r'$H(u,u)\neq0$ : introuvable', size='s')
+text(ax, 68, 6.5, 'car. 2 : $1+1=0$', 'fixe', 's')
+save(fig, '75-157')

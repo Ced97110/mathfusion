@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 10, 70, 14, 0, 6)
+box(ax, f(0), 26, f(6) - f(0), 8, 'sujet')
+line(ax, [(f(3), 22), (f(3), 38)], 'varie', lw=1.2, dash=True)
+text(ax, f(3), 42, 'coupure', 'varie', 's')
+brace(ax, f(0) + 1, f(3) - 1, 26, 'resultat', label='3', down=True)
+brace(ax, f(3) + 1, f(6) - 1, 26, 'resultat', label='3', down=True)
+text(ax, f(0), 48, r'$O$', 'encre', 'l'); text(ax, f(6), 48, r'$P$', 'encre', 'l')
+save(fig, '16-071')

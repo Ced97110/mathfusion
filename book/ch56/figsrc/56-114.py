@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+cx, cy = 44, 34
+disc(ax, cx, cy, 26, 'fixe')
+disc(ax, cx, cy, 19, 'autre')
+disc(ax, cx, cy, 10, 'sujet')
+text(ax, cx, 56, 'ℤ', 'fixe', 'm')
+text(ax, cx, 48, '(3)', 'autre', 'm')
+text(ax, cx, 40, '(6)', 'sujet', 'm')
+disc(ax, cx, 31, 2.4, 'sujet', label='6')
+disc(ax, cx + 14.5, 31, 2.4, 'autre', label='3')
+disc(ax, cx + 22.5, 31, 2.4, 'fixe', label='1')
+text(ax, 44, 66, '(6) ⊂ (3) ⊂ ℤ : (6) pas maximal', 'encre', 'm')
+text(ax, 44, 3, '3 ∉ (6) ; 1 ∉ (3) ; 6 = 2 × 3', 'fixe', 's')
+save(fig, '56-114')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+ay = 38
+text(ax, 22, 67, r'$f=x^3-3x+1$', 'encre', 'm')
+text(ax, 66, 67, r'$h=x^3-3x+2$', 'encre', 'm')
+line(ax, [(3, ay), (41, ay)], 'fixe')
+line(ax, [(47, ay), (85, ay)], 'fixe')
+line(ax, [(8, ay + 2.25 * 5), (36, ay + 2.25 * 5)], 'sujet', lw=1.5)
+text(ax, 22, 58, r'$f_3=9/4$', 'sujet', 'm')
+text(ax, 22, 33, 'jamais nul', 'resultat', 's')
+line(ax, [(52, ay - 14), (80, ay + 14)], 'autre', lw=1.5)
+text(ax, 66, 58.5, r'$h_2=2(x-1)$', 'autre', 'm')
+disc(ax, 66, ay, 1.6, 'varie')
+text(ax, 66, 33, r'nul en $x=1$', 'varie', 's')
+box(ax, 2, 6, 40, 11, 'resultat', label='pas de racine multiple', size='s')
+box(ax, 46, 6, 40, 11, 'varie', label='racine multiple', size='s')
+save(fig, '69-108')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 21, 60, 'anneau principal', 'resultat', 's')
+box(ax, 2, 42, 38, 12, 'resultat', label=r'$\mathbb{Z}$ ou $F[x]$', size='s')
+arrow(ax, (21, 41.5), (21, 30), 'varie')
+box(ax, 2, 14, 38, 15, 'resultat', label='un seul générateur\nla preuve marche', size='s')
+text(ax, 67, 60, r'$\mathbb{Z}[x]$ : pas principal', 'limite', 's')
+box(ax, 48, 42, 16, 12, 'autre', label='2')
+box(ax, 70, 42, 16, 12, 'autre', label=r'$x$')
+arrow(ax, (56, 41.5), (58, 30), 'varie')
+arrow(ax, (78, 41.5), (74, 30), 'varie')
+box(ax, 46, 14, 40, 15, 'limite', label='aucun élément seul\nne les engendre', size='s')
+save(fig, '59-155')

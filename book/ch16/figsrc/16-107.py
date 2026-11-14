@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 44, 46, r'une seule lettre : $x$', 'sujet', 'm')
+text(ax, 22, 36, 'largeur', 'sujet', 's', ha='right')
+box(ax, 26, 32, 30, 8, 'sujet', label=r'$x$')
+text(ax, 22, 20, 'longueur', 'autre', 's', ha='right')
+box(ax, 26, 16, 30, 8, 'sujet', label=r'$x$')
+box(ax, 56, 16, 18, 8, 'varie', label=r'$+\,4$')
+line(ax, [(56, 24), (56, 32)], 'fixe', dash=True)
+brace(ax, 26, 74, 14, 'autre', r'longueur : $x + 4$')
+save(fig, '16-107')

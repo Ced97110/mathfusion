@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, 'la formule', 'sujet', 's')
+box(ax, 4, 46, 34, 13, 'sujet', label=r'$y-y_1$', size='l')
+text(ax, 44, 52.5, '=', 'encre', 'l')
+box(ax, 50, 46, 34, 13, 'sujet', label=r'$m(x-x_1)$', size='l')
+text(ax, 44, 36, 'avec m = 2 et le point (4, 3)', 'fixe', 's')
+box(ax, 4, 14, 34, 13, 'resultat', label=r'$y-3$', size='l')
+text(ax, 44, 20.5, '=', 'encre', 'l')
+box(ax, 50, 14, 34, 13, 'resultat', label=r'$2(x-4)$', size='l')
+arrow(ax, (21, 45), (21, 28.5), 'varie'); arrow(ax, (67, 45), (67, 28.5), 'varie')
+text(ax, 44, 6, r'on relie par le signe $=$', 'varie', 's')
+save(fig, '19-100')

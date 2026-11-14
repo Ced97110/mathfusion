@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 29, 73, 30, 10, 'sujet', label=r'$(a,\ b)$')
+box(ax, 5, 45, 26, 10, 'sujet', label=r'$ab$')
+box(ax, 41, 45, 44, 10, 'varie', label=r'$(gag^{-1},\ gbg^{-1})$', size='s')
+arrow(ax, (33, 72), (22, 57), 'varie'); text(ax, 15, 66, 'produit', 'varie', 's')
+arrow(ax, (55, 72), (64, 57), 'varie'); text(ax, 76, 66, 'conjuguer chacun', 'varie', 's')
+box(ax, 14, 6, 60, 16, 'resultat', label=r'$g\,ab\,g^{-1}$' + '\n' + r'$=(gag^{-1})(gbg^{-1})$', size='s')
+arrow(ax, (18, 44), (30, 24), 'varie'); text(ax, 11, 34, 'conjuguer', 'varie', 's')
+arrow(ax, (62, 44), (56, 24), 'varie'); text(ax, 74, 34, 'produit', 'varie', 's')
+save(fig, '49-173')

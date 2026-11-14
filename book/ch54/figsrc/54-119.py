@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'deux choix libres', 'varie', 'm')
+box(ax, 14, 40, 26, 10, 'varie', label=r'$x\mapsto 2$')
+box(ax, 48, 40, 26, 10, 'varie', label=r'$y\mapsto 3$')
+text(ax, 19, 26, r'ℤ[$x,y$]', 'sujet', 'm')
+text(ax, 69, 26, 'ℤ', 'resultat', 'm')
+box(ax, 4, 8, 30, 12, 'sujet', label=r'$x+xy$')
+box(ax, 54, 8, 30, 12, 'resultat', label=r'$2+2\times3=8$')
+arrow(ax, (35, 14), (53, 14), 'varie')
+text(ax, 44, 18.5, 'un seul', 'varie', 's')
+text(ax, 44, 9.5, 'homomorphisme', 'varie', 's')
+save(fig, '54-119')

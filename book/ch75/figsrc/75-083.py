@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+ox, oy, s = 12, 22, 22
+P = lambda x, y: (ox + x * s, oy + y * s)
+line(ax, [P(-0.3, 0), P(2.5, 0)], 'fixe', lw=0.6); line(ax, [P(0, -0.2), P(0, 2.0)], 'fixe', lw=0.6)
+arrow(ax, P(0, 0), P(2, 0), 'resultat', lw=1.3)
+arrow(ax, P(0, 0), P(1, 0), 'sujet', lw=1.3)
+arrow(ax, P(0, 0), P(0, 1), 'varie', lw=1.3)
+arrow(ax, P(1, 0.08), P(0.08, 1), 'varie', lw=0.9, curve=-0.3)
+arrow(ax, P(0.08, 1.0), P(2, 0.08), 'varie', lw=0.9, curve=-0.3)
+text(ax, *P(0.5, -0.22), r'$u$', 'sujet', 'm'); text(ax, *P(1.6, -0.22), r"$u'$", 'resultat', 'm')
+text(ax, *P(-0.22, 0.5), r"$u''$", 'varie', 'm')
+text(ax, *P(0.5, 0.45), '1', 'varie', 'l'); text(ax, *P(1.55, 0.85), '2', 'varie', 'l'); text(ax, 70, 50, '1, 2 : les deux\ntransvections', 'varie', 's')
+text(ax, 40, 10, r'$B(u,u^{\prime})=0$ : même droite', 'limite', 's')
+text(ax, 40, 4, r"$B(u,u'')=1$ et $B(u'',u')=-2$", 'encre', 's')
+save(fig, '75-083')

@@ -1,0 +1,46 @@
+{
+  "63-002": {
+    "lecture": ["Chaque ligne essaie un nombre à la place de √2 : le cadre de gauche donne ce nombre.", "Le cadre de droite donne son carré et dit si c’est vrai : 2 pour √2 et pour −√2.", "Le cadre rouge de la dernière ligne donne 50 pour 5√2, ce qui n’est pas 2 : c’est faux.", "Le titre orange rappelle la règle : le carré du nouveau nombre doit valoir 2."],
+    "a_voir": "Seul le carré qui vaut 2 permet le remplacement ; 5√2 donne 50."
+  },
+  "63-008": {
+    "lecture": ["Le cadre bleu en haut à gauche est le sous-groupe {1, σ} ; σ change √2 en −√2 et laisse √3 en place.", "La flèche orange du haut mène au cadre violet ℚ(√3), le corps fixe : les nombres a + c√3.", "La flèche orange courbe revient de ce corps vers un cadre vert : les remplacements qui le fixent.", "Le trait vert en pointillés dit que le cadre vert est le même groupe {1, σ} : on est revenu au départ."],
+    "a_voir": "Les deux flèches font un aller-retour qui revient à {1, σ}."
+  },
+  "63-014": {
+    "lecture": ["Le cadre gris du haut est le corps de départ ℚ.", "Chaque ligne part d’un groupe (cadre bleu) et la flèche orange donne son corps fixe.", "Pour {1, σ}, le cadre vert est ℚ : le trait vert en pointillés dit qu’il est égal au corps de départ.", "Pour {1}, le cadre violet est ℚ(√2) : il est plus grand que ℚ."],
+    "a_voir": "Seule la première ligne retombe sur le corps de départ."
+  },
+  "63-030": {
+    "lecture": ["Le cadre bleu du haut est le départ : les nombres u et v.", "Les deux cadres gris donnent σ(uv) et σ(u)σ(v), qui valent tous deux 4 − 3√2.", "Les deux cadres orange, aux bords épais, sont l’étape clé : le produit de deux racines vaut 2, avec ou sans signe moins ; le signe = vert dit que c’est le même nombre.", "Le cadre vert du bas est l’arrivée : σ(uv) = σ(u)σ(v)."],
+    "a_voir": "Les deux cadres orange donnent le même nombre 2 des deux côtés."
+  },
+  "63-033": {
+    "lecture": ["Le titre nomme le groupe Gal(E/F) = {1, τ} ; le tableau est sa table pour ∘ : τ change le signe de √3 et laisse √2 en place.", "Les cadres gris sont ceux où 1 ne change rien : c’est l’identité.", "Les cadres verts sont des enchaînements : chaque case vaut 1 ou τ, jamais autre chose.", "Le cadre orange est τ ∘ τ = 1 : l’inverse de τ est τ."],
+    "a_voir": "Aucun enchaînement ne sort de l’ensemble {1, τ}."
+  },
+  "63-034": {
+    "lecture": ["Les trois cadres du haut se lisent de haut en bas : départ en bleu, étape clé en orange, arrivée en vert.", "L’étape clé est que η est bijectif, donc η⁻¹ existe ; la flèche « donne » mène à l’arrivée : η⁻¹ respecte +.", "Dans le cas chiffré, η change √2 en −√2, avec x = 1 + √2 et y = 2 + √2.", "Les deux cadres verts du bas donnent le même nombre, 3 − 2√2 : l’image de la somme est la somme des images."],
+    "a_voir": "Les deux cases vertes sont égales : η respecte la somme."
+  },
+  "63-055": {
+    "lecture": ["La colonne bleue est le groupe de Klein : ses quatre ronds sont 1, σ, τ et στ, avec σ² = τ² = 1 et στ = τσ.", "La colonne violette du milieu est ℤ/4ℤ : ses quatre ronds sont 0, 1, 2 et 3, et 1 + 1 = 2 n’est pas 0.", "La colonne violette de droite est S₃ : ses six ronds sont 1, σ, σ², τ, στ et σ²τ, et τσ n’est pas égal à στ.", "Les trois groupes ne sont pas les mêmes."],
+    "a_voir": "Le groupe de Klein est le seul des trois où chaque élément enchaîné avec lui-même donne 1 et où l’ordre ne compte pas."
+  },
+  "63-056": {
+    "lecture": ["Le texte du haut dit ce que font σ et τ : σ change r en jr, τ change j en j².", "Les trois cadres bleus de gauche donnent les trois images possibles de r : r, jr, j²r.", "Les deux cadres bleus du haut donnent les deux images possibles de j : j et j².", "Chaque case verte nomme l’automorphisme qui fait les deux choix : 1, τ, σ, στ, σ², σ²τ. Il y a 3 lignes et 2 colonnes : 3 × 2 = 6."],
+    "a_voir": "Six cases vertes, une par paire de choix."
+  },
+  "63-077": {
+    "lecture": ["En haut, ℚ est dans ℚ(√2) (signe ⊆ vert) : les groupes {1, σ, τ, στ} et {1, τ} sont emboîtés dans l’autre sens (signe ⊇ vert).", "En bas, K₁ = ℚ(√2) (bleu) et K₂ = ℚ(√3) (violet) : aucun ne contient l’autre.", "Les signes rouges ⊄ disent qu’aucun cadre n’est dans l’autre, ni pour les corps ni pour les groupes {1, τ} et {1, σ}.", "σ change √2 en −√2 ; τ change √3 en −√3."],
+    "a_voir": "Avec l’inclusion des corps, les groupes s’emboîtent en sens inverse ; sans elle, ils ne s’emboîtent pas."
+  },
+  "63-084": {
+    "lecture": ["Les boîtes violettes à gauche sont une base de E sur F : leur nombre est le degré [E : F] ; les boîtes bleues à droite sont les éléments de G.", "Pour G = {1, σ}, F = Inv G = ℚ : 2 boîtes (1 et √2) contre 2 boîtes (1 et σ).", "Pour G = {1}, F = Inv G = E : 1 boîte contre 1 boîte.", "Le signe vert ≤ relie le degré à la taille du groupe."],
+    "a_voir": "À gauche, il n’y a jamais plus de boîtes qu’à droite."
+  },
+  "63-085": {
+    "lecture": ["Le titre dit : 3 inconnues x₁, x₂, x₃ et 2 équations ; 3 est plus grand que 2.", "Chaque ligne bleue est une équation, une par élément du groupe (η₁ = 1 et η₂ = σ) ; ses cadres sont les nombres 1, √2, 1 + √2 changés par η.", "Chaque équation vaut 0 (en orange à droite).", "La boîte verte donne la solution non nulle (1, 1, −1)."],
+    "a_voir": "Deux équations et trois inconnues laissent une solution non nulle."
+  }
+}

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+text(ax,21,64,'cube : un seul retour','resultat','m')
+disc(ax,8,40,4,'fixe',label='2'); disc(ax,34,40,4,'fixe',label='8')
+arrow(ax,(12.6,40),(29.4,40),'varie',curve=-0.3); text(ax,21,49,r'$x^3$','varie','m')
+arrow(ax,(29.4,40),(12.6,40),'resultat',curve=-0.3); text(ax,21,31,'racine cubique','resultat','s')
+text(ax,67,64,'carré : deux départs','limite','m')
+disc(ax,52,50,4,'fixe',label='2'); disc(ax,52,24,4,'fixe',label='−2'); disc(ax,80,37,4,'fixe',label='4')
+arrow(ax,(56.4,48.5),(75.6,38.5),'varie'); arrow(ax,(56.4,25.5),(75.6,35.5),'varie')
+text(ax,70,53,r'$x^2$','varie','m'); text(ax,63,37,'?','limite','l',weight='bold')
+text(ax,67,12,'quel retour ?','limite','s')
+save(fig,'42-246')

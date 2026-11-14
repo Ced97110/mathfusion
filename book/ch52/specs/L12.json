@@ -1,0 +1,185 @@
+[
+ {
+  "code": "52-177",
+  "a_dire": "Si la somme des deux idéaux n’est pas l’anneau, un système de restes peut ne pas avoir de solution.",
+  "legende_titre": "Quand la somme n’est pas tout l’anneau",
+  "lecture": [
+   "Le bleu est l’idéal (4) et le violet est l’idéal (6) ; leur somme, en rouge, est (2) et non ℤ.",
+   "Les deux cases du milieu donnent les restes demandés : 1 par 4 (impair) et 0 par 6 (pair).",
+   "La case rouge du bas dit qu’aucun nombre ne convient."
+  ],
+  "a_voir": "La somme (2) n’est pas ℤ, et aucun nombre n’a les deux restes demandés."
+ },
+ {
+  "code": "52-178",
+  "a_dire": "a ≡ a₁ (mod I₁) veut dire que la différence a − a₁ est dans l’idéal I₁.",
+  "legende_titre": "Lire la congruence modulo un idéal",
+  "lecture": [
+   "Sur la droite, les points bleus 3, 7 et 11 sont séparés par des pas de 4 (flèches orange).",
+   "11 − 3 = 8 est un multiple de 4 : 11 est équivalent à 3.",
+   "Le point rouge 10 donne 10 − 3 = 7, qui n’est pas un multiple de 4."
+  ],
+  "a_voir": "Les points bleus sont les nombres dont la différence avec 3 est un multiple de 4."
+ },
+ {
+  "code": "52-179",
+  "a_dire": "Chaque entier est envoyé sur la paire de ses restes, et chaque paire est atteinte exactement une fois.",
+  "legende_titre": "Une case de grille pour chaque entier modulo 6",
+  "lecture": [
+   "Chaque case de la grille porte un entier de 0 à 5.",
+   "La ligne donne le reste par 2 et la colonne donne le reste par 3.",
+   "La case verte est le nombre 5, de restes 1 et 2.",
+   "Les 6 entiers occupent les 6 paires, sans répétition."
+  ],
+  "a_voir": "Six entiers, six paires de restes, une case chacun."
+ },
+ {
+  "code": "52-180",
+  "a_dire": "Pour les entiers, (m) + (n) = ℤ veut dire que m et n n’ont pas d’autre diviseur commun que 1.",
+  "legende_titre": "Somme des idéaux et diviseur commun",
+  "lecture": [
+   "À gauche, (4) + (9) a pour PGCD 1 : la somme est ℤ tout entier (vert).",
+   "À droite, (4) + (6) a pour PGCD 2 : la somme est (2), pas ℤ (rouge).",
+   "Les flèches orange vont de la somme au PGCD, puis au résultat."
+  ],
+  "a_voir": "Le PGCD vaut 1 à gauche et 2 à droite."
+ },
+ {
+  "code": "52-181",
+  "a_dire": "Dans ℤ/2ℤ × ℤ/2ℤ, tout élément ajouté à lui-même donne (0, 0) ; dans ℤ/4ℤ, 1 + 1 donne 2, pas 0.",
+  "legende_titre": "Deux anneaux de 4 éléments qui diffèrent",
+  "lecture": [
+   "À gauche, les quatre paires du produit ; la paire verte (1, 1) ajoutée à elle-même donne (0, 0).",
+   "À droite, les quatre restes par 4 ; la case orange 1 ajoutée à elle-même donne 2.",
+   "Le texte rouge dit que 2 n’est pas 0."
+  ],
+  "a_voir": "Une propriété du produit que ℤ/4ℤ n’a pas."
+ },
+ {
+  "code": "52-182",
+  "a_dire": "Si les modules 4 et 6 ont un diviseur commun, seules 12 paires de restes sur 24 sont atteintes.",
+  "legende_titre": "12 paires atteintes sur 24",
+  "lecture": [
+   "La grille a 4 lignes (reste par 4) et 6 colonnes (reste par 6), soit 24 cases.",
+   "Les cases bleues sont les paires atteintes : 12.",
+   "Les cases rouges ne sont atteintes par aucun nombre : 12.",
+   "La case en haut à gauche porte 0 et 12, qui ont les mêmes restes."
+  ],
+  "a_voir": "La moitié des cases est rouge."
+ },
+ {
+  "code": "52-183",
+  "a_dire": "La grille montre qu’une solution existe, mais pas comment la trouver quand elle est très grande.",
+  "legende_titre": "Une grille trop grande pour être dessinée",
+  "lecture": [
+   "À gauche, la grille bleue de 4 × 5 = 20 cases, qu'on peut dessiner.",
+   "À droite, la grille grise de 95 × 97 = 9 215 cases : on ne la dessine pas.",
+   "Les deux phrases du bas disent ce que la grille apporte et ce qu'elle laisse."
+  ],
+  "a_voir": "La grille dit qu'une solution existe, pas où elle est."
+ },
+ {
+  "code": "52-184",
+  "a_dire": "Le système x ≡ a (mod m), x ≡ b (mod n) a une solution, et deux solutions diffèrent d’un multiple de mn.",
+  "legende_titre": "Une solution, puis une de plus tous les mn",
+  "lecture": [
+   "Les points bleus sont les nombres de reste 2 par 3.",
+   "Les points violets sont les nombres de reste 4 par 5.",
+   "Les points verts 14, 29 et 44 sont dans les deux listes.",
+   "La flèche orange montre l’écart de 15 = 3 × 5."
+  ],
+  "a_voir": "Les solutions vertes sont espacées de 15."
+ },
+ {
+  "code": "52-185",
+  "a_dire": "On part de a, on avance de m en m ; si m et n ont un diviseur commun, on n’atteint jamais le reste voulu.",
+  "legende_titre": "Avancer de m en m, avec et sans diviseur commun",
+  "lecture": [
+   "En haut, modules 4 et 5 : chaque case donne un nombre puis son reste par 5, et on arrive au reste 4 (vert).",
+   "En bas, modules 4 et 6 : les restes par 6 sont 1, 5, 3, 1, 5 et jamais 0 (rouge).",
+   "Les flèches orange sont les pas de 4."
+  ],
+  "a_voir": "Le rang du haut atteint le reste voulu, celui du bas non."
+ },
+ {
+  "code": "52-186",
+  "a_dire": "s est un nombre tel que m·s a le reste 1 par n ; ici 4 × 4 = 16 a le reste 1 par 5.",
+  "legende_titre": "Le nombre s qui donne le reste 1",
+  "lecture": [
+   "Les 16 points sont rangés par lignes de 5.",
+   "Les trois lignes grises sont 3 paquets de 5.",
+   "Le point vert seul est le reste 1."
+  ],
+  "a_voir": "16 points font 3 paquets de 5 et 1 de reste."
+ },
+ {
+  "code": "52-187",
+  "a_dire": "En multipliant ms + nt = 1 par b − a, le terme en n est un multiple de n, donc (b−a)sm a le même reste que b − a.",
+  "legende_titre": "De ms + nt = 1 à (b−a)sm ≡ b−a",
+  "lecture": [
+   "La case bleue du haut est la relation de départ.",
+   "La flèche orange est la multiplication par b − a.",
+   "Dans la ligne du milieu, la case grise est un multiple de n : son reste est 0.",
+   "La case verte est le résultat.",
+   "Les deux lignes du bas donnent un cas : m = 4, n = 5, s = 4, t = −3, donc b − a = 1, et 16 a le même reste que 1 par 5."
+  ],
+  "a_voir": "Le terme gris disparaît quand on prend le reste par n."
+ },
+ {
+  "code": "52-188",
+  "a_dire": "La solution est x = a + (b−a)sm ; avec a = 2, b = 4, m = 3, s = 2 on obtient 14.",
+  "legende_titre": "La formule x = a + (b−a)sm sur un exemple",
+  "lecture": [
+   "Le segment bleu va de 0 à a = 2.",
+   "Le segment orange vaut (b−a)sm = 12 et mène de 2 à 14.",
+   "Le point vert est la solution x = 14."
+  ],
+  "a_voir": "2 plus 12 donne 14."
+ },
+ {
+  "code": "52-189",
+  "a_dire": "k = (b−a)s est le nombre de pas de longueur m à ajouter à a ; ici 4 pas de 4.",
+  "legende_titre": "Le nombre de pas k",
+  "lecture": [
+   "La case bleue est le départ a = 3.",
+   "Les quatre cases orange sont les quatre pas de 4, numérotés.",
+   "La case verte est l’arrivée, 19.",
+   "La ligne du bas calcule k = 1 × 4 = 4."
+  ],
+  "a_voir": "Quatre pas de 4 mènent de 3 à 19."
+ },
+ {
+  "code": "52-190",
+  "a_dire": "a et b sont les deux restes imposés : a = 3 par m = 4 et b = 4 par n = 5.",
+  "legende_titre": "Les deux restes imposés",
+  "lecture": [
+   "La rangée du haut est celle des restes par 4 ; la case bleue 3 est a.",
+   "La rangée du bas est celle des restes par 5 ; la case violette 4 est b."
+  ],
+  "a_voir": "Une case colorée par rangée : a = 3 et b = 4."
+ },
+ {
+  "code": "52-191",
+  "a_dire": "On part de a, on calcule l’écart qui manque, on le change en pas de m, et on arrive à la solution.",
+  "legende_titre": "Les trois temps de la construction",
+  "lecture": [
+   "La case bleue est le départ : 3 a le bon reste par 4.",
+   "La case grise est l’écart qui manque par 5.",
+   "La case orange change cet écart en pas de 4.",
+   "La case verte est l’arrivée, 19."
+  ],
+  "a_voir": "Quatre cases dans l’ordre : départ, écart, pas, arrivée."
+ },
+ {
+  "code": "52-192",
+  "a_dire": "Ajouter n pas de m ajoute mn à la solution et ne change aucun reste ; seul le reste de k par n compte.",
+  "legende_titre": "Neuf pas ou quatre pas, mêmes restes",
+  "lecture": [
+   "Le point bleu est le départ a = 3.",
+   "Le point vert 19 est obtenu avec 4 pas, le point vert 39 avec 9 pas.",
+   "La flèche orange montre 5 pas de 4, soit + 20 = 4 × 5.",
+   "Les deux points ont les mêmes restes, 3 par 4 et 4 par 5 : seul le reste de k par 5 compte."
+  ],
+  "a_voir": "39 − 19 = 20 : même reste par 4 et par 5."
+ }
+]

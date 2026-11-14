@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 22, 86, 'polynômes', 'sujet', 'm', weight='bold')
+text(ax, 66, 86, 'nombres algébriques', 'sujet', 'm', weight='bold')
+for i, y in enumerate((74, 62, 50)):
+    box(ax, 8, y - 4.5, 28, 9, 'sujet', label=f'n° {i + 1}', size='s')
+    arrow(ax, (36, y), (50, y), 'fixe')
+    box(ax, 50, y - 4.5, 30, 9, 'sujet', label=f'n° {i + 1}', size='s')
+text(ax, 22, 41, '. . .', 'sujet', 'l'); text(ax, 65, 41, '. . .', 'sujet', 'l')
+text(ax, 44, 34, 'une liste numérotée', 'sujet', 's')
+text(ax, 44, 24, r'réels entre 0 et 1', 'limite', 'm', weight='bold')
+box(ax, 8, 8, 40, 11, 'limite', label='liste impossible', size='s', dash=True)
+box(ax, 52, 8, 32, 11, 'varie', label='un réel absent', size='s')
+arrow(ax, (50, 13.5), (48, 13.5), 'varie')
+save(fig, '61-073')

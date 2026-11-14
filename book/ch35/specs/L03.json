@@ -1,0 +1,190 @@
+[
+ {
+  "code": "35-033",
+  "a_dire": "Deux sommes peuvent être égales en un angle sans avoir les mêmes nombres ; il faut l'égalité en 0° et 90°.",
+  "legende_titre": "Deux sommes égales à 45° mais pas à 0°",
+  "lecture": [
+   "Le cadre bleu est la somme 3 sin x + 4 cos x, le cadre violet est 4 sin x + 3 cos x.",
+   "Les cadres verts donnent leur valeur à 45° : environ 4,95 pour les deux, donc égales.",
+   "Les cadres rouges donnent leur valeur à 0° : 4 pour la première, 3 pour la seconde, donc différentes."
+  ],
+  "a_voir": "Il suffit d'un angle où elles sont égales pour que 3 et 4 soient pourtant différents ; l'égalité des nombres demande 0° et 90°."
+ },
+ {
+  "code": "35-034",
+  "a_dire": "Pour comparer deux sommes, on compare leurs valeurs à 0° et à 90° : elles donnent les nombres devant cos et devant sin.",
+  "legende_titre": "Deux angles, deux nombres",
+  "lecture": [
+   "Le cadre bleu du haut est la somme 3 sin x + 4 cos x.",
+   "Dans le cadre de gauche, x vaut 0° : le sinus vaut 0, le cosinus vaut 1, et la somme est 4.",
+   "Dans le cadre de droite, x vaut 90° : le sinus vaut 1, le cosinus vaut 0, et la somme est 3.",
+   "Les cadres verts montrent quel nombre on lit : celui devant cos à 0°, celui devant sin à 90°."
+  ],
+  "a_voir": "À 0° on lit le nombre devant cos, à 90° le nombre devant sin."
+ },
+ {
+  "code": "35-035",
+  "a_dire": "R est la distance de O au point A(a, b) et α est la direction de OA.",
+  "legende_titre": "Un triangle qui donne distance et direction",
+  "lecture": [
+   "Le triangle gris a pour côtés 3 (en bas) et 4 (à droite) à partir du point O.",
+   "Le trait bleu épais va de O à A : sa longueur est R, ici 5.",
+   "L'arc orange est l'angle entre l'horizontale et le trait OA : α, ici 53,13°.",
+   "Le point vert est le point A(3 ; 4)."
+  ],
+  "a_voir": "R mesure la distance de O à A et α mesure l'angle de la direction de OA."
+ },
+ {
+  "code": "35-036",
+  "a_dire": "On obtient R² = a² + b² en élevant au carré les deux égalités, en les additionnant, puis en remplaçant cos² + sin² par 1.",
+  "legende_titre": "Du carré des deux égalités à R²",
+  "lecture": [
+   "La première ligne bleue donne le départ : R cos α = 3 et R sin α = 4.",
+   "Les lignes suivantes montrent les carrés 9 et 16, leur somme 25, puis R² en facteur.",
+   "La flèche orange et l'étape 4 remplacent cos² + sin² par 1.",
+   "La case verte donne le résultat : R² = 25."
+  ],
+  "a_voir": "L'étape 4, cos² + sin² = 1, permet d'isoler R²."
+ },
+ {
+  "code": "35-037",
+  "a_dire": "R² = 25 a deux solutions, 5 et −5, et on garde 5 parce que R est une distance.",
+  "legende_titre": "5 et −5 : une seule est une longueur",
+  "lecture": [
+   "Sur la droite, le point vert est en 5 et le point rouge est en −5.",
+   "La flèche verte part de 0 vers 5 : c'est une distance positive.",
+   "La flèche rouge part de 0 vers −5 : ce nombre est refusé."
+  ],
+  "a_voir": "Les deux nombres ont pour carré 25, mais seul 5 peut être une distance."
+ },
+ {
+  "code": "35-038",
+  "a_dire": "Le quotient b/a est le même pour deux couples différents, donc il ne suffit pas à trouver l'angle.",
+  "legende_titre": "Un même quotient, deux angles",
+  "lecture": [
+   "Le cadre bleu est le couple a = 1, b = −3 ; le cadre violet est le couple a = −1, b = 3.",
+   "Les deux flèches grises mènent au même cadre gris : le quotient vaut −3 dans les deux cas.",
+   "Les cadres du bas donnent les angles : −71,57° pour le bleu, 108,43° pour le violet.",
+   "La double flèche orange marque l'écart de 180° entre les deux angles."
+  ],
+  "a_voir": "Le même quotient −3 vient de deux couples dont les angles diffèrent de 180°."
+ },
+ {
+  "code": "35-039",
+  "a_dire": "Les points A(1, −3) et A(−1, 3) ont la même tangente, −3, mais des directions opposées.",
+  "legende_titre": "Deux points, une droite, deux directions",
+  "lecture": [
+   "La flèche bleue va de l'origine au point A(1 ; −3), angle −71,57°.",
+   "La flèche violette va de l'origine au point (−1 ; 3), angle 108,43°.",
+   "Les deux points sont sur la même droite grise en pointillé, donc la tangente vaut −3 pour les deux.",
+   "Les flèches partent dans des sens opposés."
+  ],
+  "a_voir": "Même droite, même tangente, mais les deux flèches vont dans des sens opposés."
+ },
+ {
+  "code": "35-040",
+  "a_dire": "La calculatrice (arctan) répond toujours entre −90° et 90° ; pour un point à gauche, sa réponse est fausse de 180°.",
+  "legende_titre": "La calculatrice répond d'un seul côté",
+  "lecture": [
+   "La zone verte à droite contient les angles de −90° à 90° : la calculatrice répond dans cette zone.",
+   "Le point A(1 ; −3), en bleu, est dans la zone verte : −71,57° est juste.",
+   "Le point B(−1 ; 3), en violet, est dans la zone rouge : la calculatrice répond encore −71,57°.",
+   "L'angle juste de B est 108,43°."
+  ],
+  "a_voir": "Pour un point à gauche, la réponse de la calculatrice est fausse de 180°."
+ },
+ {
+  "code": "35-041",
+  "a_dire": "La tangente donne la valeur de l'angle, et les signes de a et b donnent le quadrant.",
+  "legende_titre": "Valeur par la tangente, quadrant par les signes",
+  "lecture": [
+   "Le bandeau orange en haut est la première étape : la calculatrice répond −71,57°.",
+   "Les quatre cases sont les quatre quadrants, avec les signes de a et de b.",
+   "La case verte, avec a < 0 et b > 0, contient le point A(−1 ; 3).",
+   "Dans cette case l'angle est 108,43°."
+  ],
+  "a_voir": "Les signes de a et b désignent le quadrant ; ici a < 0 et b > 0 donnent 108,43°."
+ },
+ {
+  "code": "35-042",
+  "a_dire": "La formule se lit en cinq étapes : deux ondes, un point, une distance, une direction, une onde unique.",
+  "legende_titre": "Cinq étapes de lecture",
+  "lecture": [
+   "Les deux cadres bleus du haut sont le départ : les ondes de hauteurs 3 et 4, puis le point (3 ; 4).",
+   "Les cadres orange sont les deux mesures du point : la distance 5 et la direction 53,13°.",
+   "Le cadre vert du bas est l'arrivée : une onde de hauteur 5, décalée de 53,13°.",
+   "Les numéros donnent l'ordre de lecture."
+  ],
+  "a_voir": "On lit la formule comme un parcours du haut vers le bas, pas comme une phrase."
+ },
+ {
+  "code": "35-043",
+  "a_dire": "(a, b) et (R, α) sont deux descriptions du même point.",
+  "legende_titre": "Un point, deux descriptions",
+  "lecture": [
+   "À gauche, le trait bleu décrit le point par ses côtés : 3 vers la droite, 4 vers le haut.",
+   "À droite, le trait violet décrit le même point par sa distance 5 et l'arc orange de 53,13°.",
+   "Le point vert est au même endroit dans les deux dessins."
+  ],
+  "a_voir": "Le même point se décrit par deux côtés ou par une distance et une direction."
+ },
+ {
+  "code": "35-044",
+  "a_dire": "Pour 3 sin x − 4 cos x : on calcule R, on cherche α, on écrit R sin(x − α), puis on vérifie.",
+  "legende_titre": "Quatre actions pour la variante en sinus",
+  "lecture": [
+   "Le premier cadre bleu calcule R avec 3 et 4 : R vaut 5.",
+   "Le deuxième cadre bleu donne cos α = 3/5 et sin α = 4/5.",
+   "Le cadre orange écrit la forme obtenue.",
+   "Le cadre vert vérifie à x = 0 : 5 fois −0,8 donne −4, la valeur de départ."
+  ],
+  "a_voir": "Les quatre actions sont dans l'ordre : R, α, écriture, vérification."
+ },
+ {
+  "code": "35-045",
+  "a_dire": "Dans la variante a cos x + b sin x, R et α se calculent comme avant ; seule la forme finale change.",
+  "legende_titre": "Ce qui change et ce qui reste",
+  "lecture": [
+   "La colonne bleue est la forme principale, la colonne orange est la variante.",
+   "Les cadres du haut montrent 3 sin x + 4 cos x et 3 cos x + 4 sin x.",
+   "Les cadres du milieu montrent la forme finale : sin(x + α) ou cos(x − α).",
+   "Le cadre gris du bas est commun : R = 5, α = 53,13°, avec cos α = 0,6 et sin α = 0,8."
+  ],
+  "a_voir": "R et α restent les mêmes ; la forme finale est la seule chose qui change."
+ },
+ {
+  "code": "35-046",
+  "a_dire": "Pour 3 cos x − 4 sin x = 5 cos(x + α), la vérification donne 3 à 0° et −4 à 90°.",
+  "legende_titre": "Vérifier la variante à deux angles",
+  "lecture": [
+   "La courbe bleue est 5 cos(x + 53,13°) entre 0° et 90°.",
+   "Le point vert de gauche est à 0° et vaut 3.",
+   "Le point vert de droite est à 90° et vaut −4.",
+   "Ces deux valeurs sont celles de 3 cos x − 4 sin x."
+  ],
+  "a_voir": "La courbe passe par 3 à 0° et par −4 à 90°, comme la somme de départ."
+ },
+ {
+  "code": "35-047",
+  "a_dire": "La variante donne la même onde que la forme principale ; elle évite seulement un signe moins dans le calcul de α.",
+  "legende_titre": "Deux écritures, la même onde",
+  "lecture": [
+   "Le cadre bleu est la forme principale avec b = −4 : α vaut −53,13°, en orange.",
+   "Le cadre violet est la variante avec b = 4 : α vaut 53,13°.",
+   "Les flèches vertes mènent au cadre vert : la même onde, de hauteur 5 et de décalage −53,13°."
+  ],
+  "a_voir": "Les deux écritures donnent la même hauteur et le même décalage."
+ },
+ {
+  "code": "35-048",
+  "a_dire": "En additionnant les formules d'addition du sinus de A + B et de A − B, le terme cos A sin B disparaît et il reste 2 sin A cos B.",
+  "legende_titre": "L'addition qui fait disparaître un terme",
+  "lecture": [
+   "La ligne bleue est sin(A + B) et la ligne violette est sin(A − B), chacune en deux termes.",
+   "Les deux termes rouges, + cos A sin B et − cos A sin B, sont barrés : ils s’annulent.",
+   "La ligne verte, sous le trait orange, est la somme : il reste 2 sin A cos B.",
+   "En bas, avec 60° et 30° : 0,75 + 0,25 = 1 et 0,75 − 0,25 = 0,5 ; leur somme 1 + 0,5 vaut 2 fois 0,75."
+  ],
+  "a_voir": "Le terme cos A sin B disparaît et laisse 2 sin A cos B."
+ }
+]

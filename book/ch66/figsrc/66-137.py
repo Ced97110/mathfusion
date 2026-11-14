@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 40, 61, 'épreuve 1 :', 'fixe', 's'); text(ax, 40, 57.5, 'être algébrique', 'fixe', 's')
+text(ax, 72, 61, 'épreuve 2 :', 'fixe', 's'); text(ax, 72, 57.5, 'degré : puissance de 2', 'fixe', 's')
+box(ax, 2, 36, 20, 12, 'sujet', label=r'$\sqrt[3]{2}$')
+box(ax, 2, 14, 20, 12, 'autre', label=r'$\pi$')
+box(ax, 26, 36, 28, 12, 'resultat', label='réussie')
+box(ax, 58, 36, 28, 12, 'limite', label='échec : degré 3', size='s')
+box(ax, 26, 14, 28, 12, 'limite', label='échec')
+box(ax, 58, 14, 28, 12, 'fixe', label='non atteinte', dash=True, size='s')
+arrow(ax, (22, 42), (26, 42), 'fixe'); arrow(ax, (54, 42), (58, 42), 'fixe')
+arrow(ax, (22, 20), (26, 20), 'fixe'); arrow(ax, (54, 20), (58, 20), 'fixe')
+save(fig, '66-137')

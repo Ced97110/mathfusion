@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+R=lambda x,y,w,h,r: poly(ax,[(x,y),(x+w,y),(x+w,y+h),(x,y+h)],r)
+R(16,22,14,28,'sujet'); R(54,22,28,14,'sujet')
+text(ax,23,59,'avant','sujet','l'); text(ax,68,59,'après','sujet','l')
+text(ax,23,53,r'$b=1$','sujet'); text(ax,68,39,r'$b=\frac{1}{2}$','sujet')
+text(ax,23,18,r'$a=\frac{1}{2}$','sujet'); text(ax,68,18,r'$a=1$','sujet')
+arrow(ax,(33,36),(51,36),'varie')
+text(ax,42,40,r'$\eta$','varie','l'); text(ax,42,32,r'$a\times2$ ; $b\div2$','varie','s')
+text(ax,23,9,r'$ab=\frac{1}{2}$','resultat','l'); text(ax,68,9,r'$ab=\frac{1}{2}$','resultat','l')
+text(ax,45.5,9,'=','resultat','l')
+save(fig,'72-097')

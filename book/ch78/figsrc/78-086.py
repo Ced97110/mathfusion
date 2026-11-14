@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 22, 50, r'$e_1,\ e_2,\ e_3$', 'encre', 'm'); text(ax, 22, 45, 'trois différentes', 'limite', 's')
+text(ax, 66, 50, r'$e_1,\ e_1,\ e_2$', 'encre', 'm'); text(ax, 66, 45, 'deux égales', 'resultat', 's')
+box(ax, 3, 26, 15, 10, 'limite', label=r'$-e_6$'); text(ax, 22, 31, r'$\neq$', 'limite', 'l'); box(ax, 26, 26, 15, 10, 'limite', label=r'$e_6$')
+box(ax, 47, 26, 15, 10, 'resultat', label=r'$-e_2$'); text(ax, 66, 31, r'$=$', 'resultat', 'l'); box(ax, 70, 26, 15, 10, 'resultat', label=r'$-e_2$')
+text(ax, 22, 20, 'ne s’associent pas', 'limite', 's')
+text(ax, 66, 20, 'les deux groupements', 'resultat', 's'); text(ax, 66, 16.5, 'sont égaux', 'resultat', 's')
+text(ax, 44, 5, 'moins de triplets exigés', 'sujet', 's')
+save(fig, '78-086')

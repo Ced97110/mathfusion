@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+w_,h_=24,15; xs=[2,32,62]; y=28
+box(ax,xs[0],y,w_,h_,'sujet',label=r'$\frac{a/c}{b/c}$')
+box(ax,xs[1],y,w_,h_,'varie',label=r'$\frac{a}{c}\times\frac{c}{b}$')
+box(ax,xs[2],y,w_,h_,'resultat',label=r'$\frac{a}{b}$')
+arrow(ax,(xs[0]+w_+0.5,y+h_/2),(xs[1]-0.5,y+h_/2),'varie')
+arrow(ax,(xs[1]+w_+0.5,y+h_/2),(xs[2]-0.5,y+h_/2),'resultat')
+text(ax,xs[0]+w_/2,y+h_+3,'départ','sujet','s')
+text(ax,xs[1]+w_/2,y+h_+3,'étape décisive','varie','s')
+text(ax,xs[2]+w_/2,y+h_+3,'arrivée','resultat','s')
+text(ax,xs[1]+w_/2,y-4,r'$\div\frac{b}{c}$ devient $\times\frac{c}{b}$','varie','s')
+text(ax,xs[2]+w_/2,y-4,r'$c$ disparaît','resultat','s')
+text(ax,44,8,r'$\frac{3}{5}\times\frac{5}{4}=\frac{3}{4}$','encre','m')
+save(fig,'26-036')

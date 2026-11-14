@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+fig, ax = canvas(72)
+A, B, C = (6, 30), (62, 30), (62, 30 + 56 * math.tan(math.radians(30)))
+poly(ax, [A, B, C], 'fixe')
+line(ax, [B, C], 'varie', lw=1.8)
+line(ax, [A, C], 'sujet', lw=1.8)
+ax.add_patch(Arc(A, 24, 24, theta1=0, theta2=30, color=COL['varie'], lw=1.0, zorder=4))
+ax.add_patch(Arc(C, 20, 20, theta1=210, theta2=270, color=COL['autre'], lw=1.0, zorder=4))
+ax.add_patch(Rectangle((B[0]-4, B[1]), 4, 4, ec=COL['fixe'], fc='none', lw=0.8, zorder=3))
+text(ax, 24, 34.5, 'θ', 'varie', 'm')
+text(ax, 53, 49.5, '90° − θ', 'autre', 's')
+text(ax, 67, 46, 'a', 'varie', 'm')
+text(ax, 34, 26, 'b', 'fixe', 'm')
+text(ax, 29, 52, 'c', 'sujet', 'm')
+text(ax, 44, 14, 'sin θ = a / c', 'resultat', 'm')
+text(ax, 44, 6, 'cos(90° − θ) = a / c', 'resultat', 'm')
+save(fig, '32-117')

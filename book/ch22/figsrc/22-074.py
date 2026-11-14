@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 50, 44, 12, role='sujet', fill=True, label=r'$75=25\times3$')
+arrow(ax, (24, 50), (24, 40), 'varie')
+box(ax, 2, 28, 44, 12, role='sujet', fill=True, label=r'$\sqrt{75}=\sqrt{25}\,\sqrt{3}$')
+arrow(ax, (24, 28), (24, 18), 'varie')
+box(ax, 2, 6, 44, 12, role='resultat', fill=True, label=r'$=5\sqrt{3}$')
+text(ax, 49, 56, 'étape 1 : séparer 25', 'varie', 's', ha='left')
+text(ax, 49, 34, 'étape 2 : séparer les racines', 'varie', 's', ha='left')
+text(ax, 49, 12, r'étape 3 : $\sqrt{25}=5$', 'varie', 's', ha='left')
+save(fig, '22-074')

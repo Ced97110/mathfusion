@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 14, 64, 60, 10, 'sujet', label=r'$f=x^4+x+1$')
+arrow(ax, (30, 64), (22.5, 54.8), 'varie')
+arrow(ax, (58, 64), (65.5, 54.8), 'varie')
+for x, title in [(3, 'facteur de degré 1 ?'), (46, 'facteur de degré 2 ?')]:
+    poly(ax, [(x, 22), (x + 39, 22), (x + 39, 54), (x, 54)], 'fixe')
+    text(ax, x + 19.5, 49, title, 'encre')
+    box(ax, x + 3, 24.5, 33, 8, 'resultat', label='exclu', size='s')
+text(ax, 22.5, 40, r'$f(0)=1$ et $f(1)=1$', 'encre', 's')
+text(ax, 65.5, 43, r'division par $x^2+x+1$', 'encre', 's')
+text(ax, 65.5, 37, r'reste $1$, non nul', 'encre', 's')
+arrow(ax, (22.5, 22), (32, 13.8), 'fixe')
+arrow(ax, (65.5, 22), (56, 13.8), 'fixe')
+box(ax, 14, 3, 60, 10, 'resultat', label=r'$f$ est irréductible')
+save(fig, '67-168')

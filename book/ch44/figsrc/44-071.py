@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$(\mathbb{Z},\,+,\,0)$', 'sujet', 'xl')
+f = numberline(ax, 8, 80, 28, -7, 7, arrow_right=False, every=7)
+for v in range(-7, 8): disc(ax, f(v), 28, 1.0, 'sujet')
+disc(ax, f(0), 28, 1.6, 'resultat')
+arrow(ax, (f(7), 33), (f(0) + 2, 33), 'varie', curve=0.0); arrow(ax, (f(-7), 33), (f(0) - 2, 33), 'varie')
+text(ax, f(3.5), 37, '+ (−7)', 'varie', 's'); text(ax, f(-3.5), 37, '+ 7', 'varie', 's')
+text(ax, f(0), 12, 'neutre', 'resultat', 's')
+box(ax, 14, 40, 60, 9, 'resultat', label=r'$7+(-7)=0$', size='m')
+text(ax, 44, 4, 'chaque entier a son opposé', 'sujet', 's')
+save(fig, '44-071')

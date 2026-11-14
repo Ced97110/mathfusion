@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+s=2.5
+text(ax,44,70,r'$\frac{xh}{rp}=\frac{x}{r}\times\frac{h}{p}$','encre','l')
+text(ax,44,62,'un seul terme, coupé en deux fractions','encre','s')
+ox,oy=8,24
+P=(ox,oy);N=(ox+5*s,oy);Q=(ox+5*s,oy+12*s)
+poly(ax,[P,N,Q],'sujet')
+line(ax,[P,N],'sujet',lw=2);line(ax,[P,Q],'sujet',lw=2)
+text(ax,ox+2.5*s,oy-3,r'$x$','sujet','m');text(ax,ox+1.9*s-1.5,oy+7*s,r'$r$','sujet','m')
+text(ax,N[0]+2.5,oy+6*s,r'$h$','varie','m')
+n0=(54,oy);R2=(54+9*s,oy);Q2=(54,oy+12*s)
+poly(ax,[n0,R2,Q2],'varie')
+line(ax,[n0,Q2],'varie',lw=2);line(ax,[R2,Q2],'varie',lw=2)
+text(ax,54-3,oy+6*s,r'$h$','varie','m');text(ax,54+11*s*0.5+4,oy+7*s,r'$p$','varie','m')
+text(ax,ox+2.5*s,oy-10,r'$\frac{x}{r}=\frac{5}{13}$','sujet','m')
+text(ax,ox+2.5*s,oy-17,'sinus','sujet','s')
+text(ax,54+4.5*s,oy-10,r'$\frac{h}{p}=\frac{12}{15}$','varie','m')
+text(ax,54+4.5*s,oy-17,'cosinus','varie','s')
+text(ax,44,oy-10,'×','encre','l')
+text(ax,44,5,r'$\mathrm{produit}=\frac{4}{13}$','resultat','m')
+save(fig,'34-042')

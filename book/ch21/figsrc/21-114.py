@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 60, 'nombres', 'fixe', 'm'); text(ax, 66, 60, 'polynômes', 'fixe', 'm')
+box(ax, 2, 40, 40, 12, 'resultat', label='36 contient 12', size='s')
+text(ax, 22, 35, '36 $\\geq$ 12', 'resultat', 's')
+box(ax, 46, 40, 40, 12, 'resultat', label=r'$3x+6$ contient $x+2$', size='s')
+text(ax, 66, 35, 'degré 1 et degré 1', 'resultat', 's')
+box(ax, 2, 14, 40, 12, 'limite', label='8 ne contient pas 12', size='s')
+text(ax, 22, 9, '8 $<$ 12', 'limite', 's')
+box(ax, 46, 14, 40, 12, 'limite', label=r'$7$ ne contient pas $x+2$', size='s')
+text(ax, 66, 9, 'degré 0 $<$ degré 1', 'limite', 's')
+save(fig, '21-114')

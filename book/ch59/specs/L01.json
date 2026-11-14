@@ -1,0 +1,362 @@
+[
+ {
+  "code": "59-001",
+  "a_dire": "Le quadrillage est l'ensemble des points à coordonnées entières ; on y additionne des points et on multiplie un point par un entier, et le point (3, 5) s'écrit 3e1 + 5e2.",
+  "legende_titre": "Le quadrillage et ses deux flèches de base",
+  "lecture": [
+   "Les petits ronds gris sont les croisements du quadrillage.",
+   "Les deux flèches bleues partent du coin : e1 va d'un carreau vers la droite, e2 d'un carreau vers le haut.",
+   "Le pointillé orange fait 3 pas vers la droite puis 5 pas vers le haut.",
+   "Il arrive au rond vert : le point (3, 5), écrit 3e1 + 5e2."
+  ],
+  "a_voir": "Chaque croisement se lit avec les deux flèches bleues et deux nombres entiers."
+ },
+ {
+  "code": "59-002",
+  "a_dire": "On part de deux points du quadrillage, f1 = (4, 6) et f2 = (6, 4), qui donnent deux directions différentes.",
+  "legende_titre": "Deux sauts sur le quadrillage",
+  "lecture": [
+   "La flèche bleue va du coin à f1 = (4, 6) : 4 carreaux à droite, 6 vers le haut.",
+   "La flèche violette va du coin à f2 = (6, 4) : 6 carreaux à droite, 4 vers le haut.",
+   "Les deux flèches ne sont pas sur la même ligne."
+  ],
+  "a_voir": "Les deux sauts partent dans des directions différentes."
+ },
+ {
+  "code": "59-003",
+  "a_dire": "Une combinaison a·f1 + b·f2 avec a et b entiers (négatifs compris) est un point atteint par des sauts ; un seul point atteint ne montre pas tout l'ensemble.",
+  "legende_titre": "Enchaîner des sauts, en avant ou en arrière",
+  "lecture": [
+   "Les deux flèches bleues sont deux sauts de f1 = (4, 6), l'un après l'autre.",
+   "La flèche violette est un saut de f2 = (6, 4) ; elle arrive au rond vert (14, 16).",
+   "La flèche orange vers le bas à gauche est un saut en arrière : moins f1."
+  ],
+  "a_voir": "Deux sauts de f1 et un saut de f2 mènent à (14, 16) ; un saut peut aussi aller en arrière."
+ },
+ {
+  "code": "59-004",
+  "a_dire": "K est stable : la somme de deux points de K est dans K, et un multiple entier d'un point de K est dans K.",
+  "legende_titre": "Ce qui reste dans K quand on calcule",
+  "lecture": [
+   "Les ronds bleus sont des points de K.",
+   "Les deux flèches bleues vont à (10, 10) et à (2, 8) ; leur somme est le rond vert (12, 18), qui est 3 fois f1.",
+   "La flèche orange ajoute encore (10, 10) et arrive au rond orange (20, 20), le double de (10, 10)."
+  ],
+  "a_voir": "La somme et le double de points de K retombent sur des points de K."
+ },
+ {
+  "code": "59-005",
+  "a_dire": "Le signe K nomme l'ensemble de tous les points a·f1 + b·f2 avec a et b entiers, une liste qui ne finit pas.",
+  "legende_titre": "Un seul nom pour une liste sans fin",
+  "lecture": [
+   "Les quatre boîtes bleues montrent quatre points atteints : (0, 0), (4, 6), (6, 4), (10, 10).",
+   "Les trois petits points disent que la liste continue.",
+   "L'accolade bleue réunit toute la liste sous le nom K."
+  ],
+  "a_voir": "La lettre K remplace toute la liste des points atteints."
+ },
+ {
+  "code": "59-006",
+  "a_dire": "La question 1 demande une règle qui dise, pour n'importe quel point du quadrillage, s'il est dans K, et non une réponse point par point.",
+  "legende_titre": "Quels points sont atteints ?",
+  "lecture": [
+   "Les gros ronds bleus sont des points de K ; les petits points gris sont les autres croisements.",
+   "Le rond vert entoure (10, 10), qui est dans K.",
+   "Le rond orange entoure (2, 2), dont on ne sait pas encore si le pion peut l'atteindre."
+  ],
+  "a_voir": "Chaque point appelle une réponse, mais il faut une règle valable pour tous."
+ },
+ {
+  "code": "59-007",
+  "a_dire": "(2, 2) n'est pas dans K, car le système conduit à 10a = 2 et aucun entier a ne convient.",
+  "legende_titre": "Le point (2, 2) est-il atteint ?",
+  "lecture": [
+   "Les deux boîtes bleues sont les deux équations du système.",
+   "En les retranchant on obtient −2a + 2b = 0, donc a = b, puis 10a = 2.",
+   "Sur la droite, les ronds bleus sont les valeurs de 10a : 0, 10, 20.",
+   "Le rond rouge est le nombre 2 : il n'est pas sur un rond bleu."
+  ],
+  "a_voir": "Les valeurs de 10a ne tombent jamais sur 2."
+ },
+ {
+  "code": "59-008",
+  "a_dire": "La question 2 compte des paquets de points, deux points étant dans le même paquet quand leur différence est dans K ; le livre en trouvera 20.",
+  "legende_titre": "Compter des paquets de croisements",
+  "lecture": [
+   "Le parallélogramme orange part du coin et passe par (4, 6), (6, 4) et (10, 10).",
+   "Les ronds bleus sont ses quatre coins, des points de K.",
+   "Les ronds orange sont les autres croisements du parallélogramme.",
+   "Avec le coin (0, 0), cela fait 20 croisements, un par paquet."
+  ],
+  "a_voir": "Le parallélogramme contient 20 croisements, un par paquet."
+ },
+ {
+  "code": "59-009",
+  "a_dire": "Trois sauts peuvent engendrer K sans former une base du quadrillage : ici (6, 6) est la somme de (2, 4) et (4, 2), donc deux sauts suffisent.",
+  "legende_titre": "Trois sauts, dont un de trop",
+  "lecture": [
+   "La flèche bleue est le saut (2, 4) et la flèche violette le saut (4, 2).",
+   "La flèche orange est le saut (6, 6), la diagonale du parallélogramme gris.",
+   "Le parallélogramme gris montre que (6, 6) est la somme des deux autres."
+  ],
+  "a_voir": "Le troisième saut est la somme des deux premiers."
+ },
+ {
+  "code": "59-010",
+  "a_dire": "On ne peut pas diviser sur les entiers : 2x = 1 a pour solution un demi, qui n'est pas entier.",
+  "legende_titre": "Résoudre 2x = 1 selon les nombres permis",
+  "lecture": [
+   "La droite du haut montre 2x quand x est entier : les ronds bleus sont 0, 2, 4, 6.",
+   "Le rond rouge est 1 : aucun x entier ne l'atteint.",
+   "La droite du bas montre le cas où x peut être une fraction : x = un demi atteint 1 (rond vert)."
+  ],
+  "a_voir": "Avec des entiers 2x saute par-dessus 1 ; avec des fractions on l'atteint."
+ },
+ {
+  "code": "59-011",
+  "a_dire": "Sur les entiers on ne permet que la division avec reste : 6 = 1 × 4 + 2, le reste 2 étant plus petit que 4.",
+  "legende_titre": "Six objets partagés en groupes de quatre",
+  "lecture": [
+   "Le cadre bleu entoure un groupe de 4 ronds bleus.",
+   "Les deux ronds orange qui restent sont le reste : 2.",
+   "La ligne du bas écrit le partage : 6 = 1 × 4 + 2."
+  ],
+  "a_voir": "Il reste 2 objets, moins que la taille du groupe."
+ },
+ {
+  "code": "59-012",
+  "a_dire": "Les facteurs invariants 2 et 10 portent deux informations : leur produit 20 est la valeur absolue du déterminant et d1 = 2 est le PGCD des quatre cases.",
+  "legende_titre": "Deux nombres qui résument le tableau",
+  "lecture": [
+   "Les quatre cases bleues sont le tableau 4, 6, 6, 4.",
+   "La boîte grise de gauche donne le PGCD des quatre cases : 2.",
+   "La boîte grise de droite donne la valeur absolue du déterminant : 20.",
+   "La boîte verte de gauche dit que d1 = 2 est ce PGCD. La boîte verte de droite dit que d1 fois d2 fait 2 fois 10, soit 20."
+  ],
+  "a_voir": "La liste (2, 10) contient à la fois le PGCD, 2, et le déterminant, 20 = 2 fois 10."
+ },
+ {
+  "code": "59-013",
+  "a_dire": "Un anneau principal est un anneau où tout idéal est engendré par un seul élément ; ici tous les 4a + 6b sont les multiples de 2.",
+  "legende_titre": "Un seul nombre engendre tout l'ensemble",
+  "lecture": [
+   "Les ronds bleus sur la droite sont les nombres pairs de 0 à 12, de la forme 4a + 6b.",
+   "Les ronds gris vides sont les nombres impairs : ils n'en font pas partie.",
+   "Les flèches orange avancent de 2 en 2.",
+   "Le nombre 2 s'obtient en faisant 6 − 4."
+  ],
+  "a_voir": "Tous les nombres 4a + 6b sont les multiples d'un seul nombre, 2."
+ },
+ {
+  "code": "59-014",
+  "a_dire": "Les entiers et les polynômes F[x] ont une division avec reste où le reste est plus petit que le diviseur ; la taille est la valeur absolue pour les entiers et le degré pour les polynômes.",
+  "legende_titre": "Deux anneaux, une même division avec reste",
+  "lecture": [
+   "La colonne bleue montre 17 = 3 × 5 + 2 : le bloc de gauche (5) est plus haut que celui de droite (2).",
+   "La colonne violette montre A = Q B + R : le bloc du degré de R est plus bas que celui du degré de B.",
+   "Dans les deux colonnes, le reste est plus petit que le diviseur."
+  ],
+  "a_voir": "Le reste est toujours plus petit que le diviseur, avec une taille propre à chaque anneau."
+ },
+ {
+  "code": "59-015",
+  "a_dire": "Les points de K se répètent : ils forment un motif régulier construit sur f1 et f2, dont le parallélogramme a pour aire 20, et deux flèches plus courtes e'1 et e'2 décrivent tout le quadrillage.",
+  "legende_titre": "K, son parallélogramme et deux flèches plus courtes",
+  "lecture": [
+   "Les gros ronds bleus sont les points de K entre 0 et 12 ; les petits points gris sont les autres croisements.",
+   "Le parallélogramme bleu est construit sur les flèches bleues f1 = (4, 6) et f2 = (6, 4) ; son aire est 20, écrite dedans.",
+   "Les deux flèches orange, e'1 = (2, 3) et e'2 = (1, 1), sont plus courtes que f1 et f2 et suffisent pour tout le quadrillage."
+  ],
+  "a_voir": "Les points bleus se répètent, le parallélogramme a pour aire 20, et les flèches orange sont plus courtes que f1 et f2."
+ },
+ {
+  "code": "59-016",
+  "a_dire": "Dans le carré de 0 à 12, 10 croisements sur 169 sont dans K ; (8, 12) est le double de f1 et (12, 8) le double de f2.",
+  "legende_titre": "Les points atteints dans le carré de 0 à 12",
+  "lecture": [
+   "Chaque petit point gris est un croisement du carré ; il y en a 169.",
+   "Les gros ronds bleus sont les 10 points de K.",
+   "Les deux ronds entourés en orange sont (8, 12), le double de f1, et (12, 8), le double de f2."
+  ],
+  "a_voir": "Peu de croisements sont dans K, et K se prolonge en suivant les sauts."
+ },
+ {
+  "code": "59-017",
+  "a_dire": "Il y a en moyenne 20 points gris pour un point de K, et 20 est la valeur absolue du déterminant ; dans le carré de 0 à 12, on en trouve environ 17.",
+  "legende_titre": "Combien de croisements pour un point de K ?",
+  "lecture": [
+   "Dans le carré de 0 à 12, il y a 169 croisements dont 10 points de K : 169 divisé par 10 fait environ 17.",
+   "La première rangée montre ce compte : un carré bleu (un point de K) et 17 carrés gris.",
+   "La seconde rangée montre la moyenne annoncée : un carré bleu et 20 carrés gris.",
+   "Le cadre du bas dit que 20 est la valeur absolue du déterminant, c'est-à-dire l'aire du parallélogramme."
+  ],
+  "a_voir": "Le carré donne environ 17, la moyenne vaut 20, et 20 est la valeur absolue du déterminant."
+ },
+ {
+  "code": "59-018",
+  "a_dire": "Le déterminant se calcule en retranchant le produit de la diagonale qui monte du produit de celle qui descend : 4 × 4 − 6 × 6 = −20, et l'aire est 20.",
+  "legende_titre": "Calculer le déterminant du tableau",
+  "lecture": [
+   "Les deux cases bleues sont la diagonale qui descend : 4 × 4 = 16.",
+   "Les deux cases orange sont l'autre diagonale : 6 × 6 = 36.",
+   "Le résultat vert est 16 − 36 = −20.",
+   "L'aire du parallélogramme est la valeur absolue de ce résultat : 20."
+  ],
+  "a_voir": "Les deux diagonales, en couleurs différentes, donnent 16 puis 36, et la différence vaut −20."
+ },
+ {
+  "code": "59-019",
+  "a_dire": "Les flèches e'1 = (2, 3) et e'2 = (1, 1) forment une base de tout le quadrillage, choisie pour décrire K.",
+  "legende_titre": "Une autre base du même quadrillage",
+  "lecture": [
+   "Les deux flèches orange sont e'1 = (2, 3) et e'2 = (1, 1) ; le petit parallélogramme orange est construit sur elles.",
+   "Les lignes grises sont parallèles à ces deux flèches ; chaque croisement du quadrillage est un point où deux lignes se coupent.",
+   "Les deux ronds verts sont (1, 0) et (0, 1), atteints avec ces flèches."
+  ],
+  "a_voir": "Chaque point du quadrillage se trouve à un croisement de lignes, donc s'écrit d'une seule façon."
+ },
+ {
+  "code": "59-020",
+  "a_dire": "On obtient e1 = (1, 0) par −e'1 + 3e'2 et e2 = (0, 1) par e'1 − 2e'2.",
+  "legende_titre": "Retrouver (1, 0) et (0, 1) avec les nouveaux pas",
+  "lecture": [
+   "À gauche, la flèche orange recule d'un pas de e'1 ; la flèche violette avance de trois pas de e'2 et arrive au rond vert e1 = (1, 0).",
+   "À droite, la flèche orange avance d'un pas de e'1 ; la flèche violette recule de deux pas de e'2 et arrive au rond vert e2 = (0, 1)."
+  ],
+  "a_voir": "Deux petits chemins de pas mènent à (1, 0) et à (0, 1)."
+ },
+ {
+  "code": "59-021",
+  "a_dire": "Dans la base adaptée, f1 = 2e'1 et f1 + f2 = 10e'2 : chacun des deux points s'écrit avec un seul pas.",
+  "legende_titre": "Deux points de K portés chacun par un seul pas",
+  "lecture": [
+   "La flèche bleue va à f1 = (4, 6) en deux pas de (2, 3) : les deux ronds bleus.",
+   "La flèche orange va à (10, 10) en dix pas de (1, 1) : les dix ronds orange.",
+   "Le pointillé gris est f2, qui va de f1 à f1 + f2."
+  ],
+  "a_voir": "f1 utilise seulement le pas (2, 3) et f1 + f2 seulement le pas (1, 1)."
+ },
+ {
+  "code": "59-022",
+  "a_dire": "Dans la base adaptée, K est l'ensemble des points 2a·e'1 + 10b·e'2 : une maille de côtés 2 et 10, d'aire 20, se répète avec un seul point de K par maille.",
+  "legende_titre": "K vu dans la base adaptée",
+  "lecture": [
+   "Les deux axes gris sont les coordonnées sur e'1 (horizontal) et sur e'2 (vertical).",
+   "Les gros ronds bleus sont les points de K : un sur 2 en largeur et un sur 10 en hauteur.",
+   "Le rectangle bleu est une maille de côtés 2 et 10 ; son aire est 2 × 10 = 20."
+  ],
+  "a_voir": "K devient un réseau régulier de mailles 2 sur 10."
+ },
+ {
+  "code": "59-023",
+  "a_dire": "Le but du chapitre est de trouver la base qui redresse le parallélogramme penché de K.",
+  "legende_titre": "Redresser le parallélogramme",
+  "lecture": [
+   "À gauche, le parallélogramme bleu penché est construit sur f1 et f2.",
+   "La flèche orange indique le changement de base.",
+   "À droite, le rectangle vert a des côtés 2 e'1 et 10 e'2 : il est droit, avec la même aire 20."
+  ],
+  "a_voir": "Après le changement de base, la forme penchée devient un rectangle de même aire."
+ },
+ {
+  "code": "59-024",
+  "a_dire": "D(n) est l'ensemble des listes de n éléments de D, qu'on additionne et multiplie case par case ; avec D = Z et n = 3, c'est l'ensemble des listes de trois entiers.",
+  "legende_titre": "Une liste de n cases",
+  "lecture": [
+   "Les trois boîtes bleues sont les trois cases d'une liste.",
+   "Les ronds orange comptent le contenu de chaque case.",
+   "Les nombres orange sous les boîtes forment la liste (2, 0, 5)."
+  ],
+  "a_voir": "Un élément est une liste de n nombres, un par case."
+ },
+ {
+  "code": "59-025",
+  "a_dire": "Un sous-module de D(n), avec D principal, est libre et a une base de m éléments avec m au plus n ; ici les listes dont la première case est multiple de 4 ont pour base (4, 0) et (0, 1).",
+  "legende_titre": "Une base pour les listes à première case multiple de 4",
+  "lecture": [
+   "Les ronds bleus sont les listes dont la première case est un multiple de 4 ; ils forment K.",
+   "Les deux flèches orange sont les éléments de la base : (4, 0) et (0, 1).",
+   "La ligne du bas compte : m = 2 éléments, n = 2 cases."
+  ],
+  "a_voir": "Deux flèches suffisent pour atteindre tous les points bleus."
+ },
+ {
+  "code": "59-026",
+  "a_dire": "L'idée de la preuve : une division euclidienne sur la première case permet de retrancher un multiple d'un point pour annuler cette case.",
+  "legende_titre": "Annuler la première case par une division",
+  "lecture": [
+   "La droite du haut montre 10 divisé par d = 2 : cinq pas orange, donc quotient 5 et reste 0.",
+   "La boîte bleue est le point (10, 10) ; la boîte orange est 5 fois (2, 8).",
+   "La différence, en vert, est (0, −30) : sa première case est nulle."
+  ],
+  "a_voir": "Retrancher 5 fois (2, 8) met la première case de (10, 10) à zéro."
+ },
+ {
+  "code": "59-027",
+  "a_dire": "Les premières cases des points de K forment un ensemble stable par somme et par multiple, engendré par un seul nombre d : ici I = (2), les multiples de 2.",
+  "legende_titre": "Les premières cases des points de K",
+  "lecture": [
+   "La première case d'un point (x, y) est x.",
+   "Les ronds bleus sont les premières cases des points de K : 0, 2, 4, 6, 8, 10, 12.",
+   "L'arc orange ajoute 4 et 6 et arrive à 10, qui est encore un rond bleu.",
+   "L'arc vert triple 4 et arrive à 12, aussi un rond bleu. Le cadre du bas dit que ce sont tous les multiples de 2 : I = (2)."
+  ],
+  "a_voir": "Sommes et multiples retombent sur des multiples de 2, et un seul nombre, 2, les engendre."
+ },
+ {
+  "code": "59-028",
+  "a_dire": "En retranchant k1 fois f1 d'un point x de K, on met sa première case à zéro et on se ramène à des listes d'une case de moins.",
+  "legende_titre": "Retrancher un multiple pour annuler la première case",
+  "lecture": [
+   "La première ligne bleue est x = (10, 10).",
+   "La ligne orange est 5 fois f1, avec f1 = (2, 8) : (10, 40).",
+   "La ligne verte est la différence : (0, −30), dont la première case est nulle.",
+   "Il reste une seule case à traiter."
+  ],
+  "a_voir": "La première colonne de la dernière ligne vaut 0."
+ },
+ {
+  "code": "59-029",
+  "a_dire": "Quand d = 0, toutes les premières cases sont nulles et on n'ajoute rien à la base ; la base peut donc avoir moins d'éléments que n.",
+  "legende_titre": "Quand toutes les premières cases sont nulles",
+  "lecture": [
+   "Les trois lignes sont (0, 5), (0, 8) et leur somme (0, 13).",
+   "Les boîtes grises en pointillé sont les premières cases : toutes valent 0.",
+   "Les boîtes bleues sont les secondes cases : 5, 8 et 13."
+  ],
+  "a_voir": "La colonne de gauche ne contient que des zéros : rien à ajouter pour cette case."
+ },
+ {
+  "code": "59-030",
+  "a_dire": "Si K ne contient que 0, sa base est vide : m = 0, et m ≤ n reste vrai.",
+  "legende_titre": "Le plus petit sous-module",
+  "lecture": [
+   "Le rond bleu est le seul point de K : (0, 0).",
+   "Les petits points gris sont les autres croisements, qui ne sont pas dans K.",
+   "La ligne du bas dit que la base n'a aucun élément : m = 0."
+  ],
+  "a_voir": "K se réduit à un seul point, donc n'a besoin d'aucun générateur."
+ },
+ {
+  "code": "59-031",
+  "a_dire": "Si D est un corps, le théorème redonne le résultat connu : un sous-espace d'un espace de dimension n a une dimension au plus n.",
+  "legende_titre": "Le cas où l'on peut diviser",
+  "lecture": [
+   "Le grand rectangle gris est le plan, de dimension 2.",
+   "La droite bleue passe par l'origine ; la flèche orange est sa base, avec un seul élément.",
+   "Le texte de droite compare : 1 est au plus 2."
+  ],
+  "a_voir": "Une droite dans le plan a une dimension plus petite que celle du plan."
+ },
+ {
+  "code": "59-032",
+  "a_dire": "L'hypothèse « principal » est nécessaire : dans les polynômes à coefficients entiers, l'ensemble engendré par 2 et x n'a pas de générateur unique.",
+  "legende_titre": "Un contre-exemple sans anneau principal",
+  "lecture": [
+   "Le cadre bleu en pointillé est K, formé de 2 fois un polynôme plus x fois un polynôme.",
+   "Les deux boîtes bleues sont 2 et x : aucun n'est multiple de l'autre.",
+   "La boîte rouge est le polynôme 1 : il n'est pas dans K, car son terme constant est impair."
+  ],
+  "a_voir": "Ni 2 ni x ne suffit seul pour engendrer K."
+ }
+]

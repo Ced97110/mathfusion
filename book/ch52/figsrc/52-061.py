@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 64, 40, 11, 'fixe', label='avant : un maximum', size='s')
+box(ax, 46, 64, 40, 11, 'sujet', label='maintenant : se construit', size='s')
+text(ax, 22, 54, 'le plus grand', 'fixe', 's'); text(ax, 22, 48, 'diviseur commun', 'fixe', 's')
+text(ax, 22, 42, 'de 252 et 198', 'fixe', 's')
+text(ax, 66, 54, r'$4 \times 252 - 5 \times 198$', 'varie', 's')
+text(ax, 66, 48, r'$= 1\,008 - 990$', 'varie', 's')
+text(ax, 66, 42, 'plus petit positif', 'sujet', 's')
+arrow(ax, (22, 38), (36, 22), 'fixe'); arrow(ax, (66, 38), (52, 22), 'sujet')
+box(ax, 20, 8, 48, 14, 'resultat', label='18', size='l')
+text(ax, 44, 3, '« quoi chercher » / « comment fabriquer »', 'fixe', 's')
+save(fig, '52-061')

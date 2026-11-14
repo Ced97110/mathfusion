@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 29, 78, 30, 10, 'sujet', label=r'$(a^2)^3$', size='l')
+box(ax, 14, 56, 60, 10, 'sujet', label=r'$a^2 \times a^2 \times a^2$')
+box(ax, 29, 34, 30, 10, 'varie', label=r'$a^{2+2+2}$', size='l')
+box(ax, 29, 12, 30, 10, 'resultat', label=r'$a^6$', size='l')
+arrow(ax, (44, 77.5), (44, 67), 'fixe'); arrow(ax, (44, 55.5), (44, 45), 'varie', lw=1.6); arrow(ax, (44, 33.5), (44, 23), 'resultat')
+text(ax, 50, 72, 'définition', 'fixe', 's', ha='left')
+text(ax, 50, 50, 'règle du produit', 'varie', 's', ha='left', weight='bold')
+text(ax, 50, 28, '2 + 2 + 2 = 6', 'resultat', 's', ha='left')
+save(fig, '14-042')

@@ -1,0 +1,185 @@
+[
+ {
+  "code": "71-145",
+  "a_dire": "Écrire en deux nombres combien de coefficients sont positifs et négatifs.",
+  "legende_titre": "Un couple pour deux comptages",
+  "lecture": [
+   "Le cadre bleu montre le coefficient positif : +1 devant x².",
+   "Le cadre violet montre le coefficient négatif : −1 devant y².",
+   "Le cadre vert en bas réunit les deux comptages : (1, 1)."
+  ],
+  "a_voir": "Les deux nombres (p, q) comptent les coefficients positifs et négatifs."
+ },
+ {
+  "code": "71-146",
+  "a_dire": "Lire x^T(Ay) de droite à gauche : d'abord la colonne Ay, puis un seul nombre.",
+  "legende_titre": "Deux étapes, de droite à gauche",
+  "lecture": [
+   "Première ligne : la matrice bleue agit sur la colonne violette y et donne la colonne orange 2 et 2.",
+   "Deuxième ligne : la ligne violette 3 et 1 est combinée avec cette colonne.",
+   "Le cadre vert donne le nombre final : 8."
+  ],
+  "a_voir": "Chaque étape a un sens : une colonne, puis un nombre."
+ },
+ {
+  "code": "71-147",
+  "a_dire": "Chaque case b_ij sert une seule fois, avec la coordonnée i de x et la coordonnée j de y.",
+  "legende_titre": "Une contribution par case",
+  "lecture": [
+   "Les valeurs de x sont à gauche et celles de y en haut.",
+   "Les deux cases bleues donnent une contribution : 6 et 2.",
+   "Les deux cases grises valent 0.",
+   "Le cadre vert additionne : 8."
+  ],
+  "a_voir": "Le résultat est la somme des contributions de chaque case."
+ },
+ {
+  "code": "71-148",
+  "a_dire": "Si A est symétrique, échanger x et y ne change pas le nombre.",
+  "legende_titre": "Deux ordres, un seul nombre",
+  "lecture": [
+   "Dans la matrice, la case bleue et la case violette valent toutes deux 3.",
+   "Le cadre bleu donne le résultat avec e1 puis e2 : 3.",
+   "Le cadre violet donne le résultat avec e2 puis e1 : 3.",
+   "Le signe égal en vert relie les deux résultats."
+  ],
+  "a_voir": "Les deux ordres donnent le même nombre : 3."
+ },
+ {
+  "code": "71-149",
+  "a_dire": "Sans A^T = −A, échanger x et y ne change pas simplement le signe.",
+  "legende_titre": "Quand l'échange ne suffit pas",
+  "lecture": [
+   "La case bleue vaut 2 et la case violette vaut 0.",
+   "Le cadre bleu donne 2 avec e1 puis e2.",
+   "Le cadre violet donne 0 avec e2 puis e1.",
+   "Le cadre rouge dit que 0 n'est pas l'opposé de 2."
+  ],
+  "a_voir": "Les deux nombres 2 et 0 ne sont pas opposés."
+ },
+ {
+  "code": "71-150",
+  "a_dire": "Dans une base orthogonale, B(u_i, u_j) = 0 si i ≠ j, et la matrice est diagonale.",
+  "legende_titre": "Deux flèches, des zéros hors diagonale",
+  "lecture": [
+   "La flèche bleue est u1 et la flèche violette est u2.",
+   "Le petit angle droit marque que B(u1, u2) vaut 0.",
+   "Dans la matrice, les cases vertes valent 0 et les cases bleues valent 2."
+  ],
+  "a_voir": "Les zéros sont hors de la diagonale : la matrice est diag(2, 2)."
+ },
+ {
+  "code": "71-151",
+  "a_dire": "Dans une base orthogonale, Q n'a plus de terme croisé.",
+  "legende_titre": "Quatre termes, deux disparaissent",
+  "lecture": [
+   "Les cadres bleus aux extrémités sont les carrés : 2 s1² et 2 s2².",
+   "Les cadres rouges au milieu sont les termes croisés, multipliés par 0.",
+   "Le cadre vert garde seulement les deux carrés."
+  ],
+  "a_voir": "Il ne reste que les carrés."
+ },
+ {
+  "code": "71-152",
+  "a_dire": "Q vaut la somme des b_i fois s_i au carré, avec b_i = B(u_i, u_i).",
+  "legende_titre": "Quatre actions, une somme",
+  "lecture": [
+   "La ligne bleue donne les coefficients b : 2 et 2.",
+   "La ligne orange donne les nombres s : 3 et 1.",
+   "La ligne verte donne b fois s au carré : 18 et 2.",
+   "Le cadre vert additionne : 20."
+  ],
+  "a_voir": "On calcule chaque terme b·s² puis on additionne."
+ },
+ {
+  "code": "71-153",
+  "a_dire": "En caractéristique 2, une forme symétrique peut n'avoir aucune base orthogonale.",
+  "legende_titre": "Le cas où le théorème échoue",
+  "lecture": [
+   "La matrice a des 1 hors diagonale (cases bleues) et des 0 sur la diagonale.",
+   "Les trois cadres rouges montrent que B(u, u) vaut 0 pour chaque vecteur non nul.",
+   "Le cadre rouge du bas dit qu'une diagonale nulle est impossible."
+  ],
+  "a_voir": "Tous les B(u, u) valent 0, donc aucune base ne convient."
+ },
+ {
+  "code": "71-154",
+  "a_dire": "Le rang r compte les coefficients non nuls ; les n − r autres vecteurs forment le radical.",
+  "legende_titre": "Compter les non nuls, repérer le radical",
+  "lecture": [
+   "Les cadres bleus sont les coefficients non nuls : 3 et 2.",
+   "L'accolade bleue dit que r vaut 2.",
+   "Le cadre violet vaut 0 : c'est le radical, de dimension n − r = 1."
+  ],
+  "a_voir": "Deux directions comptent, une seule donne 0 avec tout."
+ },
+ {
+  "code": "71-155",
+  "a_dire": "La méthode de Lagrange complète le carré une variable après l'autre.",
+  "legende_titre": "Regrouper puis corriger",
+  "lecture": [
+   "En haut, la forme de départ : x² + 4xy en bleu, y² en gris.",
+   "Au milieu, x² + 4xy devient le carré (x + 2y)², corrigé par −4y² en orange.",
+   "En bas, les termes en y² se réduisent à −3y²."
+  ],
+  "a_voir": "Le terme croisé a disparu après le carré et la correction."
+ },
+ {
+  "code": "71-156",
+  "a_dire": "Si les flèches de base donnent 0, on prend leur somme pour u1.",
+  "legende_titre": "Quelle flèche donne un nombre non nul ?",
+  "lecture": [
+   "Les deux flèches rouges e1 et e2 donnent 0.",
+   "La flèche verte e1 + e2 donne 2.",
+   "Les pointillés montrent que la flèche verte est la somme des deux."
+  ],
+  "a_voir": "Choisir u1 = e1 + e2 quand e1 et e2 donnent 0."
+ },
+ {
+  "code": "71-157",
+  "a_dire": "On retire de x un multiple de u1 pour obtenir une flèche orthogonale à u1.",
+  "legende_titre": "Retirer 2 fois u1",
+  "lecture": [
+   "La flèche bleue est u1 ; le pointillé gris montre 2 u1.",
+   "La flèche orange est x.",
+   "La flèche verte est x − 2 u1, avec un angle droit avec u1.",
+   "Le texte vert dit que le résultat avec u1 vaut 0."
+  ],
+  "a_voir": "Après avoir retiré 2 u1, le résultat avec u1 vaut 0."
+ },
+ {
+  "code": "71-158",
+  "a_dire": "On recommence avec ce qui reste, jusqu'à ce que le reste soit le radical.",
+  "legende_titre": "Dimension 3, puis 2, puis 1",
+  "lecture": [
+   "Chaque ligne montre ce qui reste à traiter, en pointillés.",
+   "Le cadre bleu est le vecteur choisi à cette étape.",
+   "Les cadres gris sont les vecteurs déjà choisis.",
+   "Le cadre violet est la direction qui reste : le radical."
+  ],
+  "a_voir": "La dimension baisse de 1 à chaque étape, jusqu'au radical."
+ },
+ {
+  "code": "71-159",
+  "a_dire": "L'écriture de Lagrange donne la même valeur que la forme de départ.",
+  "legende_titre": "Deux écritures, une valeur",
+  "lecture": [
+   "Le cadre bleu est la forme de départ ; elle donne 4 au point (1, −1).",
+   "Les deux cadres violets sont les deux termes de l'écriture de Lagrange.",
+   "Les cadres oranges donnent 0,8 et 3,2.",
+   "Le cadre vert à droite additionne : 4."
+  ],
+  "a_voir": "Les deux écritures donnent 4 au même point."
+ },
+ {
+  "code": "71-160",
+  "a_dire": "Comme les deux coefficients sont positifs, la courbe Q = 4 est fermée.",
+  "legende_titre": "Une courbe qui reste dans un rectangle",
+  "lecture": [
+   "La courbe verte est celle où la somme vaut 4.",
+   "Le rectangle en pointillés borne X² (au plus 0,8) et Y² (au plus 1,25).",
+   "Les axes gris se croisent à l'origine."
+  ],
+  "a_voir": "La courbe ne part pas à l'infini : elle est fermée."
+ }
+]

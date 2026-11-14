@@ -1,5 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
+import BranchMenu from './components/BranchMenu';
 
 export const metadata = {
   title: 'Des nombres aux structures — fiches illustrées',
@@ -23,8 +24,11 @@ export default function RootLayout({ children }) {
           <nav aria-label="Navigation principale">
             <Link href="/#lire">Lire une fiche</Link>
             <Link href="/#chapitres">Chapitres</Link>
+            <Link href="/physique/">Physique</Link>
+            <Link href="/apprentissage/">Apprentissage</Link>
           </nav>
         </header>
+        <BranchMenu />
         <main>{children}</main>
       </body>
     </html>

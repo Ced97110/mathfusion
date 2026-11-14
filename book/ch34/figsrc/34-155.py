@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 21, 59, 'numérateur', 'fixe', 's')
+box(ax, 2, 44, 38, 10, 'fixe', label='2,309', size='l')
+line(ax, [(2, 38), (40, 38)], 'encre', lw=1.2)
+box(ax, 2, 22, 38, 12, 'limite', label='1 − 1 = 0', size='l')
+text(ax, 21, 15, 'dénominateur nul', 'limite', 's')
+box(ax, 48, 48, 38, 10, 'sujet', label='tan 60° ≈ 1,732', size='s')
+text(ax, 67, 42, '×', 'encre', 'l')
+box(ax, 48, 28, 38, 10, 'autre', label='tan 30° ≈ 0,5774', size='s')
+text(ax, 67, 19, 'produit = 1', 'varie', 'm')
+arrow(ax, (59, 17), (41, 24.5), 'varie', curve=0.0)
+save(fig, '34-155')

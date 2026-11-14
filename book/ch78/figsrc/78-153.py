@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(86)
+box(ax,4,56,80,22,'fixe',fill=False,dash=True)
+text(ax,44,73.5,'espace de dimension 4','fixe','s')
+for i,l in enumerate(['1','$i$','$j$','$k$']): box(ax,8+i*19,59,15,10,'sujet',label=l)
+box(ax,34,41,20,10,'limite',dash=True,label=r'$l$ ?')
+text(ax,70,46,'pas de place','limite','s')
+arrow(ax,(44,41),(44,34),'limite')
+box(ax,4,22,38,10,'sujet',label=r'$lk=kl$'); box(ax,46,22,38,10,'autre',label=r'$lk=-kl$')
+arrow(ax,(23,22),(36,13),'fixe'); arrow(ax,(65,22),(52,13),'fixe')
+box(ax,12,2,64,10,'limite',label=r'$lk=0$ : impossible')
+save(fig,'78-153')

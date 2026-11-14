@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 2, 56, 'chapitre 6 : des nombres', 'sujet', 's', ha='left')
+text(ax, 14, 44, r'$\frac{3}{4}$', 'sujet', 'xl'); text(ax, 28, 44, r'$\times$', 'fixe', 'l'); text(ax, 42, 44, r'$\frac{2}{5}$', 'sujet', 'xl')
+text(ax, 56, 44, '=', 'fixe', 'l'); text(ax, 70, 44, r'$\frac{6}{20}$', 'resultat', 'xl')
+arrow(ax, (44, 34), (44, 26), 'fixe'); text(ax, 62, 30, 'mêmes règles', 'fixe', 's')
+text(ax, 2, 20, 'ici : un polynôme', 'varie', 's', ha='left')
+box(ax, 4, 3, 22, 14, 'varie', fill=False, dash=True)
+text(ax, 15, 10, r'$\frac{x+1}{4}$', 'varie', 'l'); text(ax, 33, 10, r'$\times$', 'fixe', 'l'); text(ax, 48, 10, r'$\frac{2}{5}$', 'sujet', 'xl')
+save(fig, '21-010')

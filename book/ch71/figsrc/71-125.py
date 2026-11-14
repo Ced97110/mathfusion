@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,2,48,38,20,'sujet'); box(ax,48,48,38,20,'autre')
+text(ax,21,62,r'$Q_1=xy$','sujet','m'); text(ax,21,53,r'en $(1,\,0)$ : 0','sujet','s')
+text(ax,67,62,r'$Q_2=x^2+xy+y^2$','autre','s'); text(ax,67,53,r'en $(1,\,0)$ : 1','autre','s')
+box(ax,16,22,56,14,'resultat')
+text(ax,44,32,'même forme associée','resultat','m'); text(ax,44,26,r'$x_1y_2+x_2y_1$','resultat','m')
+arrow(ax,(21,47.5),(32,36.5),'varie'); arrow(ax,(67,47.5),(56,36.5),'varie')
+text(ax,44,10,r'pourtant $Q_1\neq Q_2$','limite','m')
+save(fig,'71-125')

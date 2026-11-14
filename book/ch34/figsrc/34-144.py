@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 4, 66, 50, 13, 'sujet', label=r'$\cos^4\varphi-\sin^4\varphi$', size='m')
+text(ax, 58, 72.5, 'membre le plus long', 'sujet', 's', ha='left')
+arrow(ax, (29, 65.5), (29, 56), 'varie'); text(ax, 32, 61, 'factoriser', 'varie', 's', ha='left')
+box(ax, 2, 40, 40, 13, 'sujet', label=r'$\cos^2\varphi-\sin^2\varphi$', size='s')
+text(ax, 44, 46.5, r'$\times$', 'encre', 'm')
+box(ax, 46, 40, 40, 13, 'fixe', label=r'$\cos^2\varphi+\sin^2\varphi$', size='s')
+text(ax, 66, 36, 'vaut 1', 'fixe', 's')
+arrow(ax, (22, 39.5), (22, 25), 'varie'); text(ax, 25, 31, 'garder le premier facteur', 'varie', 's', ha='left')
+box(ax, 4, 9, 56, 13, 'autre', label=r'$\cos 2\varphi$ = autre membre', size='s')
+text(ax, 72, 15.5, 'on s’arrête', 'resultat', 's')
+save(fig, '34-144')

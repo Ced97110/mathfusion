@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,3,4,82,72,'fixe'); text(ax,12,70,'FG','fixe','l')
+box(ax,9,10,70,52,'sujet')
+text(ax,44,57,r'normal engendré par $S$','sujet','s'); text(ax,44,52,r'le plus petit qui contient $S$','sujet','s',weight='bold')
+box(ax,14,16,24,30,'varie',dash=True,lw=1.4); text(ax,26,41,r'engendré par $x^4$','varie','s')
+text(ax,26,28,r'$x^4$','varie','l')
+text(ax,62,28,r'$yx^4y^{-1}$','sujet','l')
+text(ax,62,35,'hors de la zone orange','limite','s')
+arrow(ax,(38,22),(52,22),'varie',curve=0.3); text(ax,46,12.5,r'conjuguer par $y$','varie','s')
+save(fig,'49-071')

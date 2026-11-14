@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(65)
+box(ax, 4, 44, 16, 10, 'sujet', label=r'$2^3$')
+text(ax, 25, 49, '=', 'encre')
+for i in range(3):
+    box(ax, 30 + i * 18, 44, 11, 10, 'sujet', label='2')
+    if i < 2: text(ax, 43 + i * 18 + 2.5, 49, r'$\times$', 'encre')
+text(ax, 60, 58, '3 facteurs égaux à 2', 'sujet', 's')
+arrow(ax, (12, 43), (12, 33), 'varie')
+text(ax, 15, 38, 'exposant opposé', 'varie', 's', ha='left')
+box(ax, 4, 20, 16, 10, 'varie', label=r'$2^{-3}$')
+text(ax, 25, 25, '=', 'encre')
+box(ax, 30, 20, 30, 10, 'resultat', label=r'$1 \div 2^3$')
+text(ax, 44, 12, 'le « − » est un opposé', 'varie', 's')
+save(fig, '13-138')

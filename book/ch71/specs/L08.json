@@ -1,0 +1,183 @@
+[
+ {
+  "code": "71-113",
+  "a_dire": "L'expression Q(x, y) = 5x² + 6xy + 5y² vaut 5, 5 et 16 en (1, 0), (0, 1) et (1, 1) ; l'écart vient du terme croisé.",
+  "legende_titre": "Trois valeurs de Q(x, y)",
+  "lecture": [
+   "Les deux premières barres bleues ont 5 cases : ce sont les valeurs 5 en (1, 0) et en (0, 1).",
+   "La troisième barre a 16 cases : la valeur de Q en (1, 1).",
+   "Dans cette barre, les cases bleues sont 5x² et 5y², les cases orange sont le terme 6xy."
+  ],
+  "a_voir": "16 n'est pas 5 + 5 : le terme croisé ajoute 6."
+ },
+ {
+  "code": "71-114",
+  "a_dire": "Une forme quadratique vérifie Q(ax) = a²Q(x), et Q(x + y) − Q(x) − Q(y) est bilinéaire ; la seconde condition seule ne suffit pas.",
+  "legende_titre": "Deux conditions à vérifier",
+  "lecture": [
+   "Les deux cadres bleus du haut sont les deux conditions.",
+   "Les trois barres de gauche comparent, pour la première coordonnée d'un vecteur doublé : la valeur 3, la valeur obtenue 6 (rouge) et la valeur attendue 4 × 3 (vert).",
+   "À droite, le vert dit que la seconde condition est vérifiée, car l'expression vaut 0."
+  ],
+  "a_voir": "La seconde condition est vraie, la première est fausse : il faut les deux."
+ },
+ {
+  "code": "71-115",
+  "a_dire": "Quand on prend Q(x) = B(x, x), chaque case de la matrice donne un terme de degré 2 : on obtient une forme quadratique.",
+  "legende_titre": "De B à Q",
+  "lecture": [
+   "La grille de gauche est la matrice de B : 1, 2, 0 et 3.",
+   "Chaque case donne un terme, de la même couleur, dans la colonne de droite.",
+   "La case 0 (grise) ne donne aucun terme.",
+   "Le cadre vert en bas rassemble les termes : x² + 2xy + 3y², qui vaut 6 en (1, 1)."
+  ],
+  "a_voir": "Chaque terme est un nombre fois deux coordonnées : Q est de degré 2."
+ },
+ {
+  "code": "71-116",
+  "a_dire": "La matrice symétrique de lignes (5, 3) et (3, 5) donne B(x, x) = 5x² + 6xy + 5y².",
+  "legende_titre": "Une matrice et ses quatre termes",
+  "lecture": [
+   "La grille du haut est la matrice symétrique : les 5 sont bleus, les 3 sont orange.",
+   "Les quatre cadres du milieu sont les quatre termes de B(x, x), de la même couleur que leur case.",
+   "L'accolade orange réunit 3xy et 3yx, qui valent ensemble 6xy.",
+   "Le cadre vert donne le résultat : 5x² + 6xy + 5y²."
+  ],
+  "a_voir": "Les deux 3 de la matrice forment le 6 du terme croisé."
+ },
+ {
+  "code": "71-117",
+  "a_dire": "Le coefficient 6 du terme croisé est la somme de deux cases égales, 3 et 3, de part et d'autre de la diagonale.",
+  "legende_titre": "Le 6 coupé en deux cases",
+  "lecture": [
+   "Les cases grises 5 et 5 sont sur la diagonale.",
+   "Les deux cases orange valent 3 : l'une est à droite de la diagonale, l'autre à gauche.",
+   "Les deux flèches orange les amènent dans le cadre vert : 3 + 3 = 6."
+  ],
+  "a_voir": "Le coefficient 6 est réparti en deux moitiés égales."
+ },
+ {
+  "code": "71-118",
+  "a_dire": "La polarisation retrouve B(x, y) : on prend la moitié de Q(x + y) − Q(x) − Q(y).",
+  "legende_titre": "Retrouver B à partir de Q",
+  "lecture": [
+   "La grande barre est Q(x + y) = 37, découpée en trois parts.",
+   "La part bleue vaut Q(x) = 5, la part violette vaut Q(y) = 16, la part orange est le reste : 16.",
+   "Le reste est coupé en deux moitiés de 8 ; la moitié verte est B(x, y)."
+  ],
+  "a_voir": "Le reste vaut deux fois B(x, y), donc sa moitié est B(x, y)."
+ },
+ {
+  "code": "71-119",
+  "a_dire": "Avec Q(1, 1) = 16, Q(1, 0) = 5 et Q(0, 1) = 5, la polarisation donne 3, le coefficient hors diagonale.",
+  "legende_titre": "Vérifier la polarisation",
+  "lecture": [
+   "La barre du haut a trois parts : Q(1, 0) = 5 en bleu, Q(0, 1) = 5 en violet, le reste 6 en orange.",
+   "Le reste est coupé en deux moitiés de 3.",
+   "La flèche verte mène à la matrice, dont les deux cases hors diagonale, vertes, valent 3."
+  ],
+  "a_voir": "La moitié du reste est le 3 de la matrice."
+ },
+ {
+  "code": "71-120",
+  "a_dire": "Si 2 ≠ 0, on passe de B à Q par Q(x) = B(x, x) et de Q à B par la polarisation : c'est le même objet.",
+  "legende_titre": "Aller et retour entre B et Q",
+  "lecture": [
+   "Le cadre bleu est B, la forme bilinéaire.",
+   "Le cadre violet est Q, la forme quadratique.",
+   "La flèche du haut va de B vers Q, la flèche du bas revient de Q vers B.",
+   "Le cadre vert dit qu'à chaque B correspond un seul Q."
+  ],
+  "a_voir": "L'aller et le retour donnent chacun l'autre forme."
+ },
+ {
+  "code": "71-121",
+  "a_dire": "Jacobson appelle forme associée Q(x + y) − Q(x) − Q(y), sans le facteur ½ : il trouve 6 là où le livre trouve 3.",
+  "legende_titre": "Deux conventions, deux nombres",
+  "lecture": [
+   "La barre bleue est le résultat de Jacobson : 16 − 5 − 5 = 6.",
+   "La barre violette est celui du livre : la moitié, 3.",
+   "La flèche orange est la division par 2."
+  ],
+  "a_voir": "Les deux nombres diffèrent d'un facteur 2."
+ },
+ {
+  "code": "71-122",
+  "a_dire": "La caractéristique de F est le plus petit nombre p de termes égaux à 1 dont la somme vaut 0.",
+  "legende_titre": "Compter les 1 jusqu'à 0",
+  "lecture": [
+   "Chaque rond bleu est un terme égal à 1 ; il y en a cinq.",
+   "Chaque cadre dessous donne la somme obtenue : 1, 2, 3, 4, puis 0.",
+   "Le cadre vert est le premier où la somme vaut 0, car 5 = 0 : p = 5."
+  ],
+  "a_voir": "On s'arrête à la première somme nulle : p = 5."
+ },
+ {
+  "code": "71-123",
+  "a_dire": "Dans {0, 1} avec 1 + 1 = 0, aucun nombre ne vaut un demi, car le double de 0 et de 1 est 0.",
+  "legende_titre": "Chercher un demi dans {0, 1}",
+  "lecture": [
+   "Les cadres bleus sont les deux nombres essayés : 0 et 1.",
+   "Les cadres rouges donnent leur double : 0 dans les deux cas.",
+   "Le signe rouge ≠ 1 dit que ce n'est pas la valeur cherchée."
+  ],
+  "a_voir": "Aucun essai ne donne 1 : le demi n'existe pas."
+ },
+ {
+  "code": "71-124",
+  "a_dire": "En caractéristique 2, Q = x² n'est pas nulle, mais Q(x + y) − Q(x) − Q(y) = 2xy = 0.",
+  "legende_titre": "Une forme non nulle, une forme associée nulle",
+  "lecture": [
+   "Le cadre bleu est Q(x) = x² : en 1 elle vaut 1, elle n'est pas nulle.",
+   "Le cadre rouge est l'expression Q(x + y) − Q(x) − Q(y) : elle vaut 2xy, donc 0.",
+   "La flèche orange va de Q vers la forme associée."
+  ],
+  "a_voir": "Q n'est pas nulle, sa forme associée l'est."
+ },
+ {
+  "code": "71-125",
+  "a_dire": "En caractéristique 2, Q₁ = xy et Q₂ = x² + xy + y² ont la même forme associée, mais ne sont pas égales.",
+  "legende_titre": "Deux Q pour une même forme associée",
+  "lecture": [
+   "Le cadre bleu est Q₁ : elle vaut 0 en (1, 0).",
+   "Le cadre violet est Q₂ : elle vaut 1 en (1, 0).",
+   "Les flèches orange mènent au cadre vert : la forme associée commune."
+  ],
+  "a_voir": "Deux fonctions différentes donnent la même forme associée."
+ },
+ {
+  "code": "71-126",
+  "a_dire": "En caractéristique 2, B(x, x) = 2Q(x) = 0 : la forme associée est alternée.",
+  "legende_titre": "Une diagonale toujours nulle",
+  "lecture": [
+   "La ligne du haut suit trois égalités : B(x, x), puis 2Q(x), puis 0.",
+   "Le texte orange donne la raison : 2 = 0 dans ce corps.",
+   "Dans la grille du bas, les deux cases vertes de la diagonale valent 0 ; les cases grises b sont libres."
+  ],
+  "a_voir": "Pour chaque x, B(x, x) vaut 0."
+ },
+ {
+  "code": "71-127",
+  "a_dire": "En caractéristique 2, on ne retrouve pas Q à partir de B ; le chapitre suppose donc la caractéristique différente de 2.",
+  "legende_titre": "Pourquoi le chapitre écarte la caractéristique 2",
+  "lecture": [
+   "Les deux cadres gris du haut sont deux fonctions, Q₁ et Q₂.",
+   "Les flèches orange mènent au cadre bleu : leur forme associée B, la même.",
+   "Le « Q ? » rouge marque le choix impossible entre les deux.",
+   "Le cadre vert donne la règle du chapitre."
+  ],
+  "a_voir": "Deux Q pour un seul B : le retour est impossible."
+ },
+ {
+  "code": "71-128",
+  "a_dire": "Le symbole F désigne le corps de nombres dans lequel on travaille : ℚ, ℝ, ℂ ou les nombres modulo 5.",
+  "legende_titre": "Un seul nom pour plusieurs corps",
+  "lecture": [
+   "Le cadre bleu est le symbole F.",
+   "Les quatre cadres violets sont des corps possibles : ℚ, ℝ, ℂ et ℤ/5.",
+   "Les flèches orange montrent que F peut être l'un d'eux.",
+   "Le cadre gris rappelle les opérations permises dans F."
+  ],
+  "a_voir": "F est un nom pour l'ensemble choisi, pas un nombre."
+ }
+]

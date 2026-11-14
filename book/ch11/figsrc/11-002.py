@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 8, 50, 14, 9, 'sujet', label=r'$po$', size='l')
+arrow(ax, (23, 54.5), (34, 54.5), 'fixe')
+text(ax, 36, 54.5, 'pouce', 'sujet', 'l', ha='left')
+text(ax, 8, 41, r'$cm$ : deux morceaux', 'autre', 's', ha='left')
+box(ax, 8, 26, 10, 9, 'autre', label=r'$c$', size='l')
+arrow(ax, (19, 30.5), (34, 30.5), 'fixe')
+text(ax, 36, 30.5, 'centi : un centième', 'autre', 's', ha='left')
+box(ax, 8, 10, 10, 9, 'autre', label=r'$m$', size='l')
+arrow(ax, (19, 14.5), (34, 14.5), 'fixe')
+text(ax, 36, 14.5, 'mètre', 'autre', 'm', ha='left')
+save(fig, '11-002')

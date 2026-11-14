@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 30, 66, 28, 10, 'sujet', label='x² = k')
+text(ax, 44, 61, 'pour k > 0', 'fixe', 's')
+box(ax, 4, 44, 36, 10, 'resultat', label='x = √k')
+box(ax, 48, 44, 36, 10, 'resultat', label='x = −√k')
+arrow(ax, (36, 65), (22, 55), 'varie'); arrow(ax, (52, 65), (66, 55), 'varie')
+box(ax, 8, 26, 24, 9, 'resultat', label='x = 3')
+box(ax, 56, 26, 24, 9, 'resultat', label='x = −3')
+text(ax, 44, 30.5, 'k = 9', 'sujet', 'm')
+text(ax, 44, 20, 'k = −9', 'sujet', 'm')
+box(ax, 9, 5, 70, 10, 'limite', label='√(−9) : aucun nombre réel')
+save(fig, '23-035')

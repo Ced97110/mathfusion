@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 8, 64, 72, 11, 'sujet', label=r'$\cos^4\varphi-\sin^4\varphi$', size='l')
+text(ax, 44, 56.5, r'forme $a^2-b^2$ avec $a=\cos^2\varphi$', 'sujet', 's')
+text(ax, 44, 51, r'et $b=\sin^2\varphi$', 'sujet', 's')
+arrow(ax, (44, 48), (44, 40), 'varie')
+box(ax, 8, 28, 72, 11, 'varie', label=r'$(a-b)\,(a+b)$', size='l')
+arrow(ax, (44, 26), (44, 20), 'resultat')
+box(ax, 8, 8, 72, 11, 'resultat', label=r'$a+b=\cos^2\varphi+\sin^2\varphi=1$', size='s')
+text(ax, 44, 3.5, '30° : 0,5625 − 0,0625 = 0,5', 'fixe', 's')
+save(fig, '34-146')

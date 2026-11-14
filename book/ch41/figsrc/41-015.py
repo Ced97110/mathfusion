@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# Échelle 1 mm = 4 km. Sommets : O (0;0), (180;0), (50;86,6), (230;86,6).
+fig, ax = canvas(62)
+k = 4.0
+O = (8, 24)
+A = (O[0] + 180 / k, O[1])
+V = (O[0] + 50 / k, O[1] + 86.6 / k)
+R = (O[0] + 230 / k, O[1] + 86.6 / k)
+poly(ax, [O, A, R, V], 'sujet')
+line(ax, [V, R], 'sujet', lw=0.9, dash=True)
+line(ax, [A, R], 'varie', lw=0.9, dash=True)
+arrow(ax, O, A, 'sujet', lw=1.5)
+arrow(ax, O, V, 'varie', lw=1.5)
+arrow(ax, O, R, 'resultat', lw=1.8)
+text(ax, 6, 20, r'$O$ (0 ; 0)', 'encre', 's', ha='left')
+text(ax, A[0], 19.5, '(180 ; 0)', 'sujet', 's')
+text(ax, V[0], V[1] + 4, '(50 ; 86,6)', 'varie', 's')
+text(ax, R[0] - 2, R[1] + 4, '(230 ; 86,6)', 'resultat', 's')
+text(ax, 44, 30, r'$r = a + v$', 'resultat', 'm')
+text(ax, 44, 10, 'est : 180 + 50 = 230', 'encre', 's')
+text(ax, 44, 4, 'nord : 0 + 86,6 = 86,6', 'encre', 's')
+save(fig, '41-015')

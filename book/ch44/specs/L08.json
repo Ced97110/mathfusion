@@ -1,0 +1,180 @@
+[
+ {
+  "code": "44-112",
+  "a_dire": "Pour défaire un produit de deux éléments, on défait d'abord le second, puis le premier.",
+  "legende_titre": "Défaire deux gestes : dans quel ordre ?",
+  "lecture": [
+   "La ligne orange montre les deux gestes faits : τ1 puis σ.",
+   "La ligne verte les défait dans l'ordre inversé : σ puis τ1, chacun avec son inverse.",
+   "La ligne rouge défait dans le même ordre que les gestes : c'est faux."
+  ],
+  "a_voir": "Les deux inverses verts sont dans l'ordre contraire des gestes orange."
+ },
+ {
+  "code": "44-113",
+  "a_dire": "La preuve que U(M) est un groupe repose sur le produit de deux inversibles, dont l'inverse est u2⁻¹u1⁻¹.",
+  "legende_titre": "Pourquoi les inversibles forment un groupe",
+  "lecture": [
+   "Les trois cases du haut sont les trois conditions du test ; la case orange est la deuxième.",
+   "Dans la ligne du bas, la case bleue est le produit de u1u2 par l'inverse proposé.",
+   "On regroupe u2 et son inverse au milieu : ils donnent 1 (case orange).",
+   "Puis u1 et son inverse donnent 1 (case verte)."
+  ],
+  "a_voir": "L'étape décisive est le regroupement du milieu, qui ramène tout à 1."
+ },
+ {
+  "code": "44-114",
+  "a_dire": "Dans ℤ×, ℕ× et ℕ+, très peu d'éléments se défont : ±1, 1 et 0.",
+  "legende_titre": "Peu d'inversibles dans trois monoïdes",
+  "lecture": [
+   "Chaque ligne est un monoïde, nommé à gauche.",
+   "Les ronds verts sont les éléments qui se défont.",
+   "Les ronds gris sont ceux qui ne se défont pas."
+  ],
+  "a_voir": "Il y a deux ronds verts dans la première ligne et un seul dans chacune des autres."
+ },
+ {
+  "code": "44-115",
+  "a_dire": "Les transformations inversibles de S sont exactement les transformations bijectives.",
+  "legende_titre": "Se défaire, c'est être bijective",
+  "lecture": [
+   "À gauche en vert, l'échange envoie chaque numéro sur un autre : il se défait.",
+   "À droite en rouge, les deux flèches arrivent sur 1.",
+   "Alors, en voyant 1, on ne sait pas d'où l'on vient."
+  ],
+  "a_voir": "Une transformation se défait quand chaque arrivée vient d'un seul départ."
+ },
+ {
+  "code": "44-116",
+  "a_dire": "Sym S est le groupe des transformations de S qui se défont, une partie des 256 transformations.",
+  "legende_titre": "Le groupe des transformations qui se défont",
+  "lecture": [
+   "Le grand cadre gris contient toutes les transformations de quatre numéros : 256.",
+   "Le cadre bleu est Sym S : les 24 qui se défont.",
+   "Le texte bleu rappelle qu'il contient le neutre, les produits et les inverses."
+  ],
+  "a_voir": "Sym S est une partie du grand cadre : seules 24 sur 256 se défont."
+ },
+ {
+  "code": "44-117",
+  "a_dire": "Sym S est un signe court pour « le groupe des transformations bijectives de S ».",
+  "legende_titre": "Un signe qui contient l'ensemble S",
+  "lecture": [
+   "Le mot bleu Sym veut dire groupe symétrique.",
+   "La lettre orange S est l'ensemble de départ.",
+   "La ligne du bas montre que si S change, le signe change avec lui."
+  ],
+  "a_voir": "Le signe garde l'ensemble de départ dans son écriture."
+ },
+ {
+  "code": "44-118",
+  "a_dire": "Sn est le groupe symétrique sur les nombres de 1 à n ; n est le nombre de numéros.",
+  "legende_titre": "S indice n : n numéros",
+  "lecture": [
+   "En haut, le signe Sn avec n en bas.",
+   "La ligne du haut donne n égal 3, puis S3, puis 6 permutations.",
+   "La ligne du dessous donne n égal 4, puis S4, puis 24 permutations."
+  ],
+  "a_voir": "Quand n change, le groupe change : le petit n dit combien de numéros."
+ },
+ {
+  "code": "44-119",
+  "a_dire": "Une transformation est une permutation si et seulement si sa seconde ligne contient chaque nombre une fois.",
+  "legende_titre": "Lire la seconde ligne",
+  "lecture": [
+   "En vert, la seconde ligne 2, 3, 1 contient chaque nombre une fois.",
+   "En rouge, la seconde ligne 1, 1, 3 contient 1 deux fois.",
+   "Dans le cas rouge, les flèches de 1 et de 2 arrivent au même rond."
+  ],
+  "a_voir": "Dans le cas rouge, le nombre 2 manque et le nombre 1 est en double."
+ },
+ {
+  "code": "44-120",
+  "a_dire": "L'ordre de Sn est n! : pour n égal 3, 3 fois 2 fois 1 égale 6.",
+  "legende_titre": "Compter les permutations de 3 numéros",
+  "lecture": [
+   "Chaque case bleue est le choix de l'image d'un numéro.",
+   "Les ronds orange sont les choix possibles : 3, puis 2, puis 1.",
+   "Le produit en vert donne 6 ; pour 4 numéros, 24."
+  ],
+  "a_voir": "Chaque case a un rond de moins que la précédente."
+ },
+ {
+  "code": "44-121",
+  "a_dire": "On choisit l'image de 1 parmi n, puis de 2 parmi n−1, et ainsi de suite ; le produit est n!.",
+  "legende_titre": "Les choix diminuent d'un à chaque fois",
+  "lecture": [
+   "Chaque colonne est le choix de l'image d'un numéro de 1 à 5.",
+   "Les ronds bleus sont les images encore libres ; les ronds gris sont déjà pris.",
+   "Le nombre en bas de chaque colonne est le nombre de choix : 5, 4, 3, 2, 1.",
+   "La colonne orange est l'étape clé : une image est déjà prise."
+  ],
+  "a_voir": "Le deuxième choix n'a que 4 ronds libres, pas 5."
+ },
+ {
+  "code": "44-122",
+  "a_dire": "n! est un signe qui note le produit n fois n−1 et ainsi de suite jusqu'à 1 ; 5! vaut 120.",
+  "legende_titre": "Le point d'exclamation note un produit",
+  "lecture": [
+   "Le produit bleu en haut a cinq facteurs.",
+   "La flèche orange le résume en un signe : 5 suivi de !.",
+   "Le texte du bas donne la valeur 120 et rappelle que n! vaut pour tout n."
+  ],
+  "a_voir": "Un seul signe remplace tous les facteurs."
+ },
+ {
+  "code": "44-123",
+  "a_dire": "Les permutations sont une petite partie des transformations : 6 sur 27, 24 sur 256.",
+  "legende_titre": "Peu de transformations se défont",
+  "lecture": [
+   "Chaque case est une transformation ; à gauche n égale 3, à droite n égale 4.",
+   "Les cases vertes sont les permutations : 6 sur 27, puis 24 sur 256.",
+   "Les cases grises ne se défont pas."
+  ],
+  "a_voir": "La part de vert est plus petite pour n égal 4 que pour n égal 3."
+ },
+ {
+  "code": "44-124",
+  "a_dire": "Un groupe de permutations est une partie de Sym S qui est elle-même un groupe.",
+  "legende_titre": "Une partie qui est un groupe",
+  "lecture": [
+   "Le grand cadre gris est le groupe symétrique, avec ses 24 éléments.",
+   "Le cadre bleu est les 4 rotations : elles forment un groupe.",
+   "Le cadre violet pointillé est une partie quelconque, qui n'est pas forcément un groupe."
+  ],
+  "a_voir": "Seul le cadre bleu a le neutre, les produits et les inverses."
+ },
+ {
+  "code": "44-125",
+  "a_dire": "Les 8 mouvements du carreau sont une partie des 24 permutations des coins : un sous-groupe d'ordre 8.",
+  "legende_titre": "8 mouvements parmi 24 permutations",
+  "lecture": [
+   "Les 24 cases sont les réordonnements des coins ; les 8 cases bleues sont les mouvements du carreau.",
+   "Le carreau bleu du bas est le départ avec les coins 1 2 4 3.",
+   "Le carreau rouge est le résultat de l'échange de 1 et 2 : le coin 1 n'est plus en face du coin 3."
+  ],
+  "a_voir": "Échanger deux coins est une permutation, mais pas un mouvement du carreau."
+ },
+ {
+  "code": "44-126",
+  "a_dire": "D4 est le nom du groupe des 8 mouvements du carreau : 4 rotations et 4 retournements.",
+  "legende_titre": "D4 : le groupe des 8 mouvements du carreau",
+  "lecture": [
+   "La ligne bleue montre les 4 rotations : 1, r, r², r³.",
+   "Le rond orange suit un coin à chaque quart de tour.",
+   "La ligne violette montre les 4 retournements, chacun autour d'un axe pointillé."
+  ],
+  "a_voir": "Quatre carreaux en haut, quatre en bas : huit mouvements."
+ },
+ {
+  "code": "44-127",
+  "a_dire": "Diédral veut dire à deux faces : 4 mouvements gardent la face, 4 la changent.",
+  "legende_titre": "Deux faces, deux sortes de mouvements",
+  "lecture": [
+   "La ligne bleue montre les rotations : on voit toujours le recto.",
+   "La ligne violette montre les retournements : on voit le verso.",
+   "Le rond orange suit un coin ; au verso il est de l'autre côté."
+  ],
+  "a_voir": "Chaque ligne compte 4 mouvements : 4 fois 2 donne 8."
+ }
+]

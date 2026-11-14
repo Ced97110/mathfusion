@@ -1,0 +1,190 @@
+[
+ {
+  "code": "73-065",
+  "a_dire": "Une preuve en trois temps : partir de AᵗMA = M, prendre le déterminant, diviser par det M (non nul) pour obtenir (det A)² = 1, donc det A vaut 1 ou −1.",
+  "legende_titre": "Du produit à det A = 1 ou −1",
+  "lecture": [
+   "Le premier cadre bleu est le point de départ : A garde la forme.",
+   "Le second cadre bleu est l’égalité obtenue en prenant le déterminant des deux côtés.",
+   "La flèche orange épaisse est l’étape qui porte le poids : diviser par det M, permis car det M n’est pas nul.",
+   "Les cadres verts sont l’arrivée : (det A)² = 1, puis det A = 1 ou −1."
+  ],
+  "a_voir": "Tu vois que la division par det M est la seule étape qui amène au carré égal à 1."
+ },
+ {
+  "code": "73-066",
+  "a_dire": "Le déterminant envoie O sur {1, −1} ; SO est l’ensemble des transformations qui vont sur 1 (le noyau), les miroirs vont sur −1, donc O/SO a deux classes.",
+  "legende_titre": "SO et les miroirs dans {1, −1}",
+  "lecture": [
+   "En haut, le miroir envoie (3, 2) sur (−3, 2) : son déterminant est −1. Deux miroirs de suite ramènent en (3, 2) : le déterminant est 1.",
+   "Le grand cadre gris est O, l'ensemble de toutes les transformations orthogonales.",
+   "Le cadre bleu est SO : toutes ses transformations ont pour déterminant 1, c'est le cercle bleu de droite.",
+   "Le cadre orange contient les miroirs : leur déterminant est −1, c'est le cercle orange.",
+   "Les deux flèches « det » montrent que chaque transformation arrive sur 1 ou sur −1, jamais ailleurs."
+  ],
+  "a_voir": "Il y a exactement deux valeurs, donc deux paquets dans O : SO et les miroirs."
+ },
+ {
+  "code": "73-067",
+  "a_dire": "La matrice R(θ) a pour cases cos θ, −sin θ, sin θ, cos θ ; avec θ = 90°, elle envoie (3, 4) sur (−4, 3).",
+  "legende_titre": "La matrice qui tourne d’un angle θ",
+  "lecture": [
+   "Les quatre cadres bleus à gauche sont les quatre cases de R(θ), dans l’ordre de la fiche.",
+   "Le texte orange donne les valeurs prises pour θ = 90° : cos 90° = 0 et sin 90° = 1.",
+   "Le point bleu à droite est (3, 4), le point vert est son arrivée (−4, 3).",
+   "La flèche orange est le quart de tour qui va de l’un à l’autre."
+  ],
+  "a_voir": "Tu vois la matrice à gauche et ce qu’elle fait au point (3, 4) à droite."
+ },
+ {
+  "code": "73-068",
+  "a_dire": "Chaque rotation est connue par l’endroit où elle envoie (1, 0), un point du cercle de rayon 1 ; chaque point du cercle donne une rotation.",
+  "legende_titre": "Rotations et points du cercle",
+  "lecture": [
+   "Le disque bleu est le cercle de centre l’origine et de rayon 1.",
+   "Le point bleu à droite est (1, 0), l’angle de départ 0°.",
+   "Les deux points orange sont les arrivées de (1, 0) pour 90° et 180° : (0, 1) et (−1, 0).",
+   "Chaque rayon relie l’origine à un de ces points."
+  ],
+  "a_voir": "Une rotation correspond à un seul point du cercle, et inversement."
+ },
+ {
+  "code": "73-069",
+  "a_dire": "Une matrice orthogonale est une matrice dont l’inverse est égal à la transposée ; ce n’est pas le cas pour toute matrice inversible.",
+  "legende_titre": "Inverse et transposée, égales ou non",
+  "lecture": [
+   "Chaque ligne montre une matrice A en bleu, son inverse en orange, sa transposée en violet.",
+   "Pour le quart de tour, l’inverse et la transposée sont les mêmes : le signe « = » est vert.",
+   "Pour le cisaillement, les deux sont différentes : le signe « ≠ » est rouge."
+  ],
+  "a_voir": "Seule la matrice orthogonale a un inverse égal à sa transposée."
+ },
+ {
+  "code": "73-070",
+  "a_dire": "La ligne i de A devient la colonne i de Aᵗ ; la diagonale ne bouge pas.",
+  "legende_titre": "Les lignes de A deviennent des colonnes",
+  "lecture": [
+   "La matrice de gauche est A, celle de droite est sa transposée Aᵗ.",
+   "La première ligne de A est en orange ; elle se retrouve en orange comme première colonne de Aᵗ.",
+   "Les cases grises sont la diagonale : 2, 3 et 6 restent à leur place.",
+   "La flèche relie la ligne 1 à la colonne 1."
+  ],
+  "a_voir": "Tu vois la ligne 2, 0, 1 se coucher en colonne."
+ },
+ {
+  "code": "73-071",
+  "a_dire": "Pour défaire une transformation orthogonale A, on applique sa transposée : le point (−4, 3) revient en (3, 4) sans calculer d’inverse.",
+  "legende_titre": "Défaire avec la transposée",
+  "lecture": [
+   "Le point bleu à droite est (3, 4), le point bleu à gauche est (−4, 3).",
+   "La flèche orange va de (3, 4) à (−4, 3) : c'est le quart de tour A.",
+   "La flèche verte revient de (−4, 3) à (3, 4) : c'est la transposée Aᵗ.",
+   "La matrice verte en bas est Aᵗ, obtenue en écrivant les lignes de A en colonnes : on défait sans calculer d'inverse."
+  ],
+  "a_voir": "La transposée ramène le point à sa place."
+ },
+ {
+  "code": "73-072",
+  "a_dire": "La transposée de la matrice de lignes (1, 2) et (3, 4) a pour lignes (1, 3) et (2, 4) : on échange lignes et colonnes.",
+  "legende_titre": "Transposer une matrice deux par deux",
+  "lecture": [
+   "La matrice de gauche est A, celle de droite est Aᵗ.",
+   "Les cases grises 1 et 4 sont la diagonale : elles ne bougent pas.",
+   "Les cases orange 2 et 3 changent de place d’une matrice à l’autre.",
+   "La flèche orange est l’action de transposer."
+  ],
+  "a_voir": "Tu vois 2 et 3 s’échanger, alors que 1 et 4 restent."
+ },
+ {
+  "code": "73-073",
+  "a_dire": "O(n) est l’ensemble des matrices dont l’inverse est égale à la transposée ; il est à l’intérieur de l’ensemble des matrices inversibles.",
+  "legende_titre": "O(n) parmi les matrices inversibles",
+  "lecture": [
+   "Le grand cadre gris contient toutes les matrices inversibles de taille deux.",
+   "Le cadre bleu est O(n) : l’identité, le quart de tour et le miroir y sont.",
+   "Le point rouge est le cisaillement : il est inversible, mais son inverse n’est pas sa transposée, donc il est hors de O(n)."
+  ],
+  "a_voir": "Tu vois O(n) comme une partie des matrices inversibles."
+ },
+ {
+  "code": "73-074",
+  "a_dire": "SO(n) est la partie commune de O(n) et de SL_n(ℝ) : orthogonales et de déterminant 1.",
+  "legende_titre": "SO(n), la partie commune",
+  "lecture": [
+   "Le cercle gris est O(n) ; il contient le miroir.",
+   "Le cercle violet est SL_n(ℝ) ; il contient le cisaillement.",
+   "La zone bleue est leur partie commune, SO(n) ; le quart de tour y est."
+  ],
+  "a_voir": "SO(n) se trouve là où les deux cercles se recouvrent."
+ },
+ {
+  "code": "73-075",
+  "a_dire": "O(n) = O(V, Q) quand Q est la somme des carrés ; pour Q = xy, la transformation (x, y) ↦ (2x, y/2) garde Q mais change les longueurs, donc les groupes diffèrent.",
+  "legende_titre": "Quand les deux groupes sont égaux ou non",
+  "lecture": [
+   "En haut, Q est la somme des carrés : sa matrice est l’identité, la condition devient AᵗA = I, et les deux groupes sont égaux (vert).",
+   "En rouge, Q = xy : la transformation garde Q, car 3 × 4 = 6 × 2.",
+   "Le trait bleu est la longueur de (1, 0), le trait orange celle de son image (2, 0) : la longueur change.",
+   "Donc O(V, Q) n’est pas O(n) pour cette forme."
+  ],
+  "a_voir": "L’égalité demande que Q soit la somme des carrés."
+ },
+ {
+  "code": "73-076",
+  "a_dire": "Le produit scalaire de x et y est la somme des produits des coordonnées ; pour (3, 4) et (5, 0), c’est 15.",
+  "legende_titre": "Du couple de vecteurs à un nombre",
+  "lecture": [
+   "La flèche bleue est x = (3, 4) et la flèche violette est y = (5, 0).",
+   "Le texte bleu multiplie les premières coordonnées : 3 × 5 = 15.",
+   "Le texte violet multiplie les secondes : 4 × 0 = 0.",
+   "Le résultat vert est la somme : 15."
+  ],
+  "a_voir": "Un seul nombre sort de deux vecteurs."
+ },
+ {
+  "code": "73-077",
+  "a_dire": "La longueur de x est la racine carrée de ⟨x, x⟩ ; pour (3, 4), ⟨x, x⟩ = 25 et la longueur est 5.",
+  "legende_titre": "Longueur de (3, 4)",
+  "lecture": [
+   "La flèche bleue est le vecteur x ; ses deux côtés gris valent 3 et 4.",
+   "À droite, ⟨x, x⟩ = 9 + 16 = 25 est le carré de la longueur.",
+   "La flèche orange est la racine carrée, qui donne 5 en vert."
+  ],
+  "a_voir": "La longueur 5 est la racine carrée de 25."
+ },
+ {
+  "code": "73-078",
+  "a_dire": "La distance entre x et y est la longueur de x − y ; pour (3, 4) et (5, 0), c’est la racine de 20, environ 4,47.",
+  "legende_titre": "Distance entre deux points",
+  "lecture": [
+   "Les deux points bleus sont x = (3, 4) et y = (5, 0).",
+   "Le trait bleu qui les relie est la distance cherchée.",
+   "Le texte orange calcule la différence (−2, 4), puis 4 + 16 = 20.",
+   "Le résultat vert est la racine de 20, environ 4,47."
+  ],
+  "a_voir": "La distance est la longueur de la différence des deux points."
+ },
+ {
+  "code": "73-079",
+  "a_dire": "La case (r, s) de AᵗA est ⟨a_r, a_s⟩ ; AᵗA = I donne 1 sur la diagonale et 0 ailleurs, soit δ_rs.",
+  "legende_titre": "Les cases de AᵗA sont des produits scalaires",
+  "lecture": [
+   "En haut, la matrice A a sa première colonne a₁ en bleu et sa seconde colonne a₂ en violet.",
+   "En dessous, chaque case de AᵗA est le produit scalaire de deux colonnes.",
+   "Les cases vertes de la diagonale valent 1.",
+   "Les cases grises hors diagonale valent 0."
+  ],
+  "a_voir": "Chaque case de AᵗA est un produit de deux colonnes de A."
+ },
+ {
+  "code": "73-080",
+  "a_dire": "Le symbole δ_rs vaut 1 si r = s et 0 sinon : c’est la case (r, s) de la matrice identité.",
+  "legende_titre": "Le symbole δ dans la grille",
+  "lecture": [
+   "La grille est de taille trois : r numérote les lignes, s les colonnes.",
+   "Les trois cases vertes de la diagonale sont celles où r = s : elles valent 1.",
+   "Les six cases grises sont celles où r ≠ s : elles valent 0."
+  ],
+  "a_voir": "Les neuf égalités tiennent dans la grille d’un seul symbole."
+ }
+]

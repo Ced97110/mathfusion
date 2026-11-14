@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,52,24,14,'sujet',label=r'$x=1+i$',size='s'); box(ax,34,52,22,14,'sujet',label=r'$ax=-1+i$',size='s')
+box(ax,62,52,23,14,'varie',label=r'$\eta(ax)=-1-i$',size='s')
+box(ax,34,26,22,14,'varie',label=r'$\eta(x)=1-i$',size='s'); box(ax,62,26,23,14,'resultat',label=r'$-i\,(1-i)=-1-i$',size='s')
+text(ax,14,46,r'$a=i$','varie','s'); text(ax,45,46,r'multiplier par $a$','sujet','s'); text(ax,73,46,r'conjuguer','varie','s')
+arrow(ax,(27,59),(34,59),'sujet'); arrow(ax,(56,59),(62,59),'varie')
+arrow(ax,(20,52),(34,35),'varie'); arrow(ax,(56,33),(62,33),'resultat')
+arrow(ax,(73,51),(73,41),'resultat',both=True); text(ax,80,46,'=','resultat','m')
+text(ax,45,20,r'$\sigma(a)=-i$ : scalaire conjugué','resultat','s')
+text(ax,45,8,r'$a=2$ : $\sigma(2)=2$, inchangé','fixe','s')
+save(fig,'80-102')

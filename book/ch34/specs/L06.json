@@ -1,0 +1,189 @@
+[
+ {
+  "code": "34-081",
+  "a_dire": "La preuve générale demande un cas par position ; elle viendra aux chapitres 39 et 41.",
+  "legende_titre": "Pourquoi la figure ne suffit pas",
+  "lecture": [
+   "Le triangle vert a un angle de 80° : c'est un angle aigu, la figure marche.",
+   "Le triangle orange est celui de l'angle de 100° : il se place autrement, hors de l'angle.",
+   "La boîte grise dit qu'il faudrait un cas par position.",
+   "Les deux boîtes vertes annoncent les chapitres 39 et 41, qui traitent tous les angles."
+  ],
+  "a_voir": "Il faut voir que 100° ne se dessine pas comme 80°, d'où la preuve annoncée plus loin."
+ },
+ {
+  "code": "34-082",
+  "a_dire": "On pose B = A dans la formule d'addition : deux angles égaux de 30° donnent 60°.",
+  "legende_titre": "Deux angles égaux",
+  "lecture": [
+   "Le bleu est l'angle A de 30°.",
+   "Le violet est l'angle B, pris égal à A.",
+   "L'arc vert englobe les deux : il vaut 2A, soit 60°.",
+   "Le texte du bas calcule sin 60° avec deux produits égaux de 0,433, et la boîte verte donne 0,866."
+  ],
+  "a_voir": "Il faut voir que B prend la valeur de A, donc que A + A fait 2A."
+ },
+ {
+  "code": "34-083",
+  "a_dire": "sin 2A est deux fois le produit sin A × cos A.",
+  "legende_titre": "Le sinus du double d'un angle",
+  "lecture": [
+   "Le segment bleu est le sinus de A : 0,5.",
+   "Le segment violet, sur l'axe, est le cosinus de A : 0,866.",
+   "Le segment vert est le sinus de 2A : 0,866.",
+   "Le calcul du bas fait 2 × 0,5 × 0,866 et retrouve 0,866."
+  ],
+  "a_voir": "Il faut voir que le segment vert a la même longueur que deux fois le produit des deux autres."
+ },
+ {
+  "code": "34-084",
+  "a_dire": "cos 2A est le carré du cosinus moins le carré du sinus.",
+  "legende_titre": "Du carré du cosinus au cosinus du double",
+  "lecture": [
+   "La barre complète, de 0 à 0,75, est le carré du cosinus de A.",
+   "La partie orange, 0,25, est le carré du sinus qu'on retire.",
+   "Il reste la partie verte, 0,5, qui est cos 2A.",
+   "La droite graduée du bas permet de lire les longueurs."
+  ],
+  "a_voir": "Il faut voir qu'on retire 0,25 de 0,75 et qu'il reste 0,5."
+ },
+ {
+  "code": "34-085",
+  "a_dire": "tan 2A est le quotient de 2 tan A par 1 − tan² A ; avec 30°, il vaut 1,732.",
+  "legende_titre": "La tangente du double d'un angle",
+  "lecture": [
+   "La barre bleue du haut est le numérateur : 1,1547.",
+   "La barre du milieu part de 1 : la partie orange, 0,3333, est le carré de la tangente ; la partie violette, 0,6667, est le dénominateur.",
+   "En bas, la barre violette entre une fois dans la barre bleue, puis un reste de 0,732 : en tout 1,732 fois."
+  ],
+  "a_voir": "Il faut voir combien de fois le dénominateur entre dans le numérateur."
+ },
+ {
+  "code": "34-086",
+  "a_dire": "cos 2A s'écrit de trois façons qui donnent la même valeur.",
+  "legende_titre": "Trois écritures, une valeur",
+  "lecture": [
+   "Chaque ligne est une des trois formes de cos 2A, calculée pour 30°.",
+   "La partie verte de chaque ligne vaut 0,5.",
+   "La partie orange est ce qu'on retire : 0,25, 1 ou 0,5.",
+   "La ligne pointillée verte montre que les trois lignes s'arrêtent au même endroit."
+  ],
+  "a_voir": "Il faut voir que les trois parties vertes ont la même longueur, 0,5."
+ },
+ {
+  "code": "34-087",
+  "a_dire": "cos 2A = 2 cos² A − 1 : on calcule le carré, on double, on retire 1.",
+  "legende_titre": "Trois actions sur le cosinus",
+  "lecture": [
+   "La barre bleue est le carré du cosinus de 30° : 0,75.",
+   "La ligne orange la répète deux fois : 1,5.",
+   "Sur la ligne du bas, la partie grise est le 1 qu'on retire ; la partie verte qui reste, 0,5, est cos 2A.",
+   "Seul le cosinus de A est utilisé."
+  ],
+  "a_voir": "Il faut voir les trois étapes dans l'ordre : 0,75, puis 1,5, puis 0,5."
+ },
+ {
+  "code": "34-088",
+  "a_dire": "cos 2A = 1 − 2 sin² A : on retire 2 sin² A de 1, avec le seul sinus.",
+  "legende_titre": "Le cosinus du double avec le sinus seul",
+  "lecture": [
+   "Chaque ligne est une barre de longueur 1.",
+   "La partie orange est 2 sin² A, ce qu'on retire.",
+   "La partie verte est ce qui reste, cos 2A. Pour 0°, on ne retire rien et il reste 1. Pour 30°, il reste 0,5. Pour 45°, on retire tout et il reste 0."
+  ],
+  "a_voir": "Il faut voir que plus l'angle grandit, plus la partie orange prend de place."
+ },
+ {
+  "code": "34-089",
+  "a_dire": "Les trois formes de cos 2A valent la même chose ; on choisit celle dont on connaît tous les termes.",
+  "legende_titre": "Choisir la bonne forme",
+  "lecture": [
+   "La boîte bleue du haut est la donnée : sin A = 0,6.",
+   "Les deux boîtes grises en pointillés demandent cos A, qu'on n'a pas.",
+   "La boîte verte n'utilise que le sinus.",
+   "Le calcul du bas donne 1 − 2 × 0,36 = 0,28."
+  ],
+  "a_voir": "Il faut voir que seule la forme verte se calcule avec la donnée."
+ },
+ {
+  "code": "34-090",
+  "a_dire": "Dans le demi-cercle, KP = 2 cos A et KF = 1 + cos 2A, qui valent aussi 2 cos² A.",
+  "legende_titre": "Un demi-cercle, deux angles",
+  "lecture": [
+   "Le demi-cercle a pour centre O. L'angle A est en K, l'angle 2A est en O.",
+   "Le segment bleu KP vaut 2 cos A, soit 1,732.",
+   "Le segment vert KF sur l'axe se coupe en deux : KO vaut 1 et OF vaut cos 2A.",
+   "KF vaut donc 1 + cos 2A, soit 1,5, et aussi 2 cos² A."
+  ],
+  "a_voir": "Il faut voir l'angle A en K, l'angle 2A en O, et KF = 1 + cos 2A = 2 cos² A."
+ },
+ {
+  "code": "34-091",
+  "a_dire": "La preuve part du demi-cercle, passe par KP = 2 cos A et arrive aux deux formules de l'angle double.",
+  "legende_titre": "Départ, étape clé, arrivée",
+  "lecture": [
+   "En haut, le demi-cercle avec les points K, O, F, P ; le triangle bleu est le triangle KFP.",
+   "La boîte orange du milieu est l'étape qui porte la preuve : KP = 2 cos A.",
+   "Les deux boîtes vertes du bas sont les formules obtenues."
+  ],
+  "a_voir": "Il faut voir que tout passe par la boîte orange entre le départ et l'arrivée."
+ },
+ {
+  "code": "34-092",
+  "a_dire": "On construit K, P et F pour lire cos 2A et sin 2A comme des segments.",
+  "legende_titre": "Placer trois points",
+  "lecture": [
+   "K est le point bleu à −1 sur l'axe.",
+   "P est le point orange sur le cercle, à l'angle 2A.",
+   "F est le point vert sous P, sur l'axe.",
+   "Le segment vert OF vaut cos 2A, et le segment violet pointillé FP vaut sin 2A."
+  ],
+  "a_voir": "Il faut voir que cos 2A et sin 2A deviennent deux segments de la figure."
+ },
+ {
+  "code": "34-093",
+  "a_dire": "Le triangle OKP a deux côtés égaux de 1 ; son angle en K vaut A, soit 30°.",
+  "legende_titre": "L'angle en K",
+  "lecture": [
+   "Les deux traits noirs marquent les côtés égaux, de longueur 1.",
+   "L'arc orange est l'angle de 120° en O.",
+   "Il reste 60° à partager entre les deux autres angles.",
+   "Les deux arcs verts valent donc 30° chacun, et celui de K est A."
+  ],
+  "a_voir": "Il faut voir que les 60° restants se partagent en deux angles égaux de 30°."
+ },
+ {
+  "code": "34-094",
+  "a_dire": "Un triangle à deux côtés égaux a deux angles égaux.",
+  "legende_titre": "Deux côtés égaux, deux angles égaux",
+  "lecture": [
+   "Le triangle de côtés 5, 5 et 6 est coupé en deux par le trait pointillé du sommet O au milieu M.",
+   "Le triangle bleu et le triangle violet ont les mêmes côtés : 5, 3 et 4.",
+   "Leurs angles en K et en P, en vert, sont donc égaux."
+  ],
+  "a_voir": "Il faut voir que les deux petits triangles ont les mêmes trois côtés."
+ },
+ {
+  "code": "34-095",
+  "a_dire": "KP = 2 cos A : KM vaut cos A et KP est le double de KM.",
+  "legende_titre": "La corde KP",
+  "lecture": [
+   "Le trait vert épais est KM, qui vaut 0,866, soit cos A.",
+   "M est le milieu de KP, donc le trait bleu entier KP est le double : 1,732.",
+   "Le trait pointillé va du centre O à M ; le côté OK vaut 1."
+  ],
+  "a_voir": "Il faut voir que la moitié verte est cos A et que la corde entière en est le double."
+ },
+ {
+  "code": "34-096",
+  "a_dire": "Dans un triangle à deux côtés égaux, le segment du sommet au milieu de la base est perpendiculaire à la base.",
+  "legende_titre": "Un angle droit en M",
+  "lecture": [
+   "Le triangle bleu a deux côtés égaux de 1, marqués d'un trait.",
+   "Le milieu M de la base partage la base en deux parties égales, marquées de deux traits.",
+   "Le segment vert va du sommet O à M.",
+   "Il forme un angle droit de 90° avec la base."
+  ],
+  "a_voir": "Il faut voir l'angle droit en M, entre le segment vert et la base."
+ }
+]

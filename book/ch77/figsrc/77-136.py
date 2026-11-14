@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 28, 24, 12, 'sujet', label=r'$\lambda^2+1$', size='m')
+box(ax, 32, 28, 26, 12, 'autre', label=r'$(\lambda-i)(\lambda+i)$', size='s')
+box(ax, 64, 28, 22, 12, 'resultat', label=r'$(j-i)(j+i)$', size='s')
+arrow(ax, (26.5, 34), (31.5, 34), 'varie'); arrow(ax, (58.5, 34), (63.5, 34), 'varie')
+text(ax, 29, 45, 'sur ℂ', 'varie', 's'); text(ax, 61, 45, r'$\lambda\to j$', 'varie', 's')
+text(ax, 14, 21, 'sur ℝ : pas de facteur', 'limite', 's')
+text(ax, 75, 21, r'$=j^2+1=0$', 'resultat', 's')
+text(ax, 44, 8, 'deux facteurs non nuls', 'resultat', 's')
+save(fig, '77-136')

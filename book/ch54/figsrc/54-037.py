@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 34, 36, 14, 'sujet', label=r'$2\times6=3\times4$', size='m')
+box(ax, 50, 34, 36, 14, 'autre', label=r'$(2,3)\sim(4,6)$', size='m')
+arrow(ax, (38, 44), (50, 44), 'varie')
+arrow(ax, (50, 38), (38, 38), 'varie')
+text(ax, 44, 56, 'sens 1 : si…, alors', 'varie', 's')
+text(ax, 44, 29, 'sens 2 : si…, alors', 'varie', 's')
+text(ax, 44, 15, r'$\Leftrightarrow$', 'resultat', 'l')
+text(ax, 44, 6, 'les deux sens en une ligne', 'resultat', 's')
+save(fig, '54-037')

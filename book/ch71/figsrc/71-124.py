@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,56,r'corps où $1+1=0$','fixe','m')
+box(ax,2,22,38,28,'sujet')
+text(ax,21,43,r'$Q(x)=x^2$','sujet','m'); text(ax,21,35,r'$Q(1)=1$','sujet','m'); text(ax,21,27,'non nulle','sujet','s')
+box(ax,48,22,38,28,'limite')
+text(ax,67,43,r'$Q(x+y)-Q(x)-Q(y)$','limite','s'); text(ax,67,35,r'$=2xy=0$','limite','m'); text(ax,67,27,'nulle','limite','s')
+arrow(ax,(40.5,36),(47.5,36),'varie')
+text(ax,44,10,r'$Q\neq 0$, forme associée $=0$','varie','m')
+save(fig,'71-124')

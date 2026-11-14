@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+text(ax,44,66,r'$(\sigma\tau_1)^{-1} = \tau_1\sigma^2$','sujet','l')
+for x,t in [(3,r'$1\ 2\ 3$'),(34,r'$1\ 3\ 2$'),(65,r'$2\ 1\ 3$')]: box(ax,x,30,20,10,'fixe',label=t)
+arrow(ax,(23,38),(34,38),'varie'); arrow(ax,(54,38),(65,38),'varie')
+text(ax,28.5,44,r'$\tau_1$','varie'); text(ax,59.5,44,r'$\sigma$','varie')
+arrow(ax,(65,32),(54,32),'resultat'); arrow(ax,(34,32),(23,32),'resultat')
+text(ax,59.5,26,r'$\sigma^2$','resultat'); text(ax,28.5,26,r'$\tau_1$','resultat')
+text(ax,44,54,'faire','varie','s'); text(ax,44,19,'défaire : on repasse par les mêmes états','resultat','s')
+text(ax,44,8,'chaque case : sommets aux places 1, 2, 3','fixe','s')
+save(fig,'44-248')

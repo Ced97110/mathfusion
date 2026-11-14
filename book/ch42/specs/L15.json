@@ -1,0 +1,182 @@
+[
+ {
+  "code": "42-225",
+  "a_dire": "Si f et g sont surjectives, g ∘ f est surjective : tout point d'arrivée est atteint en remontant.",
+  "legende_titre": "Deux surjections, une composée surjective",
+  "lecture": [
+   "Les trois cadres bleus A, B, C sont les ensembles ; les flèches f et g les relient.",
+   "La flèche verte revient de C vers A : chaque point de C est atteint.",
+   "En bas, en gris et rouge : 1 va sur a, mais b n'est l'image de rien, donc y n'est l'image de rien."
+  ],
+  "a_voir": "Quand f n'atteint pas b, y reste sans flèche ; avec deux surjections, rien ne reste sans flèche."
+ },
+ {
+  "code": "42-226",
+  "a_dire": "La preuve part d'un c quelconque, trouve b par g, puis a par f, et remonte de C vers A.",
+  "legende_titre": "Remonter de C vers A pas à pas",
+  "lecture": [
+   "Le point orange x est le point choisi dans C.",
+   "La flèche verte de g ramène x à b ; l'étape de g porte le poids de la preuve.",
+   "La flèche verte de f ramène b à 3 : on a trouvé un point de départ."
+  ],
+  "a_voir": "Le chemin vert va de x à b puis à 3, à l'envers des flèches."
+ },
+ {
+  "code": "42-227",
+  "a_dire": "La composée de deux bijections est une bijection : un élément pour un, de départ à arrivée.",
+  "legende_titre": "Deux bijections composées",
+  "lecture": [
+   "Chaque colonne bleue est un ensemble de trois éléments.",
+   "Chaque point reçoit une flèche et en envoie une, de A à B puis de B à C.",
+   "La flèche verte du bas est la composée : elle va de A à C, un pour un."
+  ],
+  "a_voir": "Chaque point de départ envoie une flèche et chaque point d'arrivée en reçoit exactement une."
+ },
+ {
+  "code": "42-228",
+  "a_dire": "Le regroupement de trois applications ne change pas le résultat : 4 donne 17 dans les deux cas.",
+  "legende_titre": "Regrouper autrement, même résultat",
+  "lecture": [
+   "Chaque ligne suit le même chemin : 4, puis 6, puis 18, puis 17.",
+   "L'accolade bleue de la première ligne groupe f et g.",
+   "L'accolade bleue de la deuxième ligne groupe g et h.",
+   "Le résultat vert est 17 dans les deux lignes."
+  ],
+  "a_voir": "Les trois flèches sont les mêmes et dans le même ordre ; seule l'accolade change de place."
+ },
+ {
+  "code": "42-229",
+  "a_dire": "Les deux regroupements ont le même domaine, le même codomaine et donnent la même image de chaque s : 7 pour 1.",
+  "legende_titre": "Pourquoi les deux regroupements sont égaux",
+  "lecture": [
+   "Le point bleu 1 est dans S ; le point vert 7 est dans V.",
+   "Les trois flèches orange sont f, g et h : 1 devient 2, puis 4, puis 7.",
+   "L'accolade violette groupe g et h ; l'accolade bleue groupe f et g.",
+   "Les deux accolades portent sur la même chaîne."
+  ],
+  "a_voir": "Les deux regroupements suivent la même chaîne de 1 jusqu'à 7."
+ },
+ {
+  "code": "42-230",
+  "a_dire": "Pour des nombres comme pour des applications, regrouper trois objets deux à deux ne change pas le résultat.",
+  "legende_titre": "Même règle pour l'addition",
+  "lecture": [
+   "Chaque ligne combine 2, 3 et 4.",
+   "L'accolade bleue groupe 2 et 3 et donne 5 ; l'accolade violette groupe 3 et 4 et donne 7.",
+   "Les deux lignes donnent 9, en vert."
+  ],
+  "a_voir": "Les deux regroupements différents arrivent au même résultat, 9."
+ },
+ {
+  "code": "42-231",
+  "a_dire": "Un triangle commute quand le chemin par T et la flèche directe arrivent au même point.",
+  "legende_titre": "Un triangle de flèches qui commute",
+  "lecture": [
+   "Les trois cadres bleus sont les ensembles S, T et U.",
+   "Le point vert de chaque cadre est un même élément suivi le long des flèches.",
+   "Les flèches orange f et g forment le chemin par T ; la flèche bleue est g ∘ f, le chemin direct.",
+   "Les deux chemins finissent sur le même point vert de U."
+  ],
+  "a_voir": "Deux chemins différents partent du même point et arrivent au même point."
+ },
+ {
+  "code": "42-232",
+  "a_dire": "L'identité envoie chaque élément sur lui-même : elle ne déplace rien et ne rassemble rien.",
+  "legende_titre": "L'identité et ses voisines",
+  "lecture": [
+   "À gauche, en bleu, chaque flèche reste sur sa ligne : 1 reste 1, 2 reste 2, 3 reste 3.",
+   "Au milieu, en rouge, toutes les flèches arrivent sur 1 : elle rassemble les éléments.",
+   "À droite, en rouge, 1 va sur 2, 2 sur 3 et 3 sur 1 : elle déplace tous les éléments."
+  ],
+  "a_voir": "Seule la figure bleue a des flèches horizontales."
+ },
+ {
+  "code": "42-233",
+  "a_dire": "1_S se lit « un indice S » : l'identité de l'ensemble S.",
+  "legende_titre": "Lire le signe 1 indice S",
+  "lecture": [
+   "Le cadre bleu contient le 1 : il dit que c'est l'identité.",
+   "Le cadre orange contient S : il dit de quel ensemble on parle.",
+   "En bas, deux identités différentes : celle des entiers et celle des réels."
+  ],
+  "a_voir": "Le signe dit deux choses : l'identité, et l'ensemble auquel elle est attachée."
+ },
+ {
+  "code": "42-234",
+  "a_dire": "Le graphe de l'identité est la diagonale de S × S : les couples (s, s).",
+  "legende_titre": "L'identité dans la grille",
+  "lecture": [
+   "Les colonnes et les lignes sont numérotées 1, 2, 3.",
+   "Les trois points bleus (1, 1), (2, 2), (3, 3) ont la même colonne et la même ligne.",
+   "Le trait orange en pointillés est la diagonale qui les relie."
+  ],
+  "a_voir": "Les points bleus sont alignés en diagonale."
+ },
+ {
+  "code": "42-235",
+  "a_dire": "Composer avec l'identité du bon ensemble ne change rien à α.",
+  "legende_titre": "L'identité ne change pas α",
+  "lecture": [
+   "Dans la ligne du haut, α va de 1 et 2 vers a et b, puis l'identité de T (flèche grise) laisse a et b en place.",
+   "Dans la ligne du bas, l'identité de S (flèche grise) laisse 1 et 2 en place, puis α les envoie sur a et b.",
+   "Dans les deux lignes, les points verts à droite sont les mêmes."
+  ],
+  "a_voir": "Les flèches grises ne déplacent aucun point ; le résultat est le même que α seule."
+ },
+ {
+  "code": "42-236",
+  "a_dire": "α est bijective exactement quand une application β défait α dans les deux sens : β ∘ α = 1_S et α ∘ β = 1_T.",
+  "legende_titre": "Bijective si et seulement si on peut la défaire",
+  "lecture": [
+   "Les flèches bleues sont α, de S vers T.",
+   "Les flèches orange sont β, qui revient de T vers S.",
+   "Les deux lignes vertes disent que, dans les deux ordres, on revient au point de départ."
+  ],
+  "a_voir": "Chaque point revient à lui-même, qu'on parte de S ou de T."
+ },
+ {
+  "code": "42-237",
+  "a_dire": "Pour une bijection, en retournant toutes les flèches, chaque point de T envoie exactement une flèche : on obtient β.",
+  "legende_titre": "Retourner les flèches d'une bijection",
+  "lecture": [
+   "En haut, les flèches bleues sont celles de α : 1 vers a, 2 vers b, 3 vers c.",
+   "En bas, les flèches orange sont les mêmes, retournées.",
+   "Chaque point de la colonne de droite envoie une flèche, ni zéro, ni deux."
+  ],
+  "a_voir": "Après retournement, chaque point a, b, c envoie exactement une flèche."
+ },
+ {
+  "code": "42-238",
+  "a_dire": "Si β défait α, alors α est surjective (on atteint t par β puis α) et injective (on applique β à l'égalité).",
+  "legende_titre": "Ce que β apporte à α",
+  "lecture": [
+   "La ligne du haut part de t, applique β pour obtenir s, puis α ramène à t : tout t est atteint.",
+   "La ligne du bas part de α(s1) = α(s2) et applique β : on obtient s1 = s2.",
+   "La flèche orange épaisse est l'étape qui porte le poids de l'injectivité."
+  ],
+  "a_voir": "Deux départs de même image sont égaux, car β les ramène au même point."
+ },
+ {
+  "code": "42-239",
+  "a_dire": "Une seule égalité ne suffit pas : β ∘ α = 1_S peut être vraie alors que α ∘ β ≠ 1_T.",
+  "legende_titre": "Une seule égalité ne suffit pas",
+  "lecture": [
+   "Les flèches bleues sont α : 1 va sur a et 2 va sur c.",
+   "Les flèches orange sont β : a et b vont sur 1, c va sur 2.",
+   "Le point rouge b ne reçoit aucune flèche de α.",
+   "À droite : la première égalité est vraie, la seconde est fausse car b va sur 1 puis sur a."
+  ],
+  "a_voir": "Le point rouge b ne revient pas à lui-même."
+ },
+ {
+  "code": "42-240",
+  "a_dire": "L'inverse d'une bijection est une application de T vers S qui défait α ; il n'est ni une image réciproque ni l'identité.",
+  "legende_titre": "L'inverse et ses voisins",
+  "lecture": [
+   "En haut, en bleu et orange : α envoie 1 sur a, l'inverse renvoie a sur 1.",
+   "Au milieu, en violet : l'image réciproque de B est un ensemble de points de départ.",
+   "En bas, en gris : l'identité laisse 1 sur 1 et ne défait rien."
+  ],
+  "a_voir": "Seul l'inverse est une application qui revient de l'arrivée au départ."
+ }
+]

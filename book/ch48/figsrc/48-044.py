@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 8, 36, 22, 16, 'sujet', label=r'$\mathbb{Z}$', size='l')
+arrow(ax, (30, 48), (30, 40), 'resultat', lw=1.2, curve=-1.6)
+text(ax, 50, 44, r'$\times 3$ : retour en $\mathbb{Z}$', 'resultat', 's', ha='left')
+text(ax, 44, 59, 'départ = arrivée', 'resultat', 's')
+line(ax, [(4, 28), (84, 28)], 'fixe', lw=0.5, dash=True)
+box(ax, 8, 6, 22, 16, 'sujet', label=r'$\mathbb{Z}$', size='l')
+box(ax, 54, 6, 26, 16, 'autre', label=r'$\mathbb{Z}/4\mathbb{Z}$', size='m')
+arrow(ax, (30, 14), (54, 14), 'fixe', lw=1.0)
+text(ax, 42, 18.5, 'bouton', 'fixe', 's')
+text(ax, 42, 2.5, 'départ ≠ arrivée', 'fixe', 's')
+save(fig, '48-044')

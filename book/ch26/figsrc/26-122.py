@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, a): return (c[0] + r * math.cos(math.radians(a)), c[1] + r * math.sin(math.radians(a)))
+def arc(ax, c, r, a0, a1, role='varie', lw=0.9, n=30):
+    line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw)
+def sq(ax, p, d1, d2, s=2.2, role='fixe'):
+    a = (p[0] + d1[0] * s, p[1] + d1[1] * s); b = (a[0] + d2[0] * s, a[1] + d2[1] * s); c = (p[0] + d2[0] * s, p[1] + d2[1] * s)
+    line(ax, [a, b, c], role, lw=0.7)
+fig, ax = canvas(60)
+L = 40; A = (10, 12); C = pol(A, L, 40); H = (C[0], 12); B = (76, 12)
+poly(ax, [A, B, C], 'fixe')
+poly(ax, [A, H, C], 'sujet')
+line(ax, [A, C], 'sujet', lw=1.6); line(ax, [C, H], 'varie', lw=1.6)
+sq(ax, H, (-1, 0), (0, 1))
+arc(ax, A, 10, 0, 40, 'varie')
+text(ax, 23, 15.5, '40°', 'varie', 's')
+text(ax, 22, 33, 'côté 10 cm', 'sujet', 's', rot=40)
+text(ax, H[0] + 9, 25, 'hauteur', 'varie', 's')
+text(ax, 43, 7, 'base', 'fixe', 's')
+text(ax, 44, 54, r'hauteur $=10\times\sin 40°$', 'resultat', 'm', weight='bold')
+text(ax, H[0] + 11, 20, r'$\approx 6{,}43$ cm', 'resultat', 's')
+save(fig, '26-122')

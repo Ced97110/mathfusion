@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def lbox(ax, x, y, w, h, role, label=None, **k): return box(ax, x, y, w, h, role, label=label, **k)
+fig, ax = canvas(54)
+lbox(ax, 3, 34, 12, 9, 'varie', r'$\cos x$'); text(ax, 17.5, 38.5, r'$\times$')
+lbox(ax, 20, 34, 18, 9, 'sujet', r'$(1+\sin x)$'); line(ax, [(3, 30), (38, 30)], 'encre')
+lbox(ax, 3, 17, 12, 9, 'varie', r'$\cos x$'); text(ax, 17.5, 21.5, r'$\times$')
+lbox(ax, 20, 17, 12, 9, 'fixe', r'$\cos x$')
+text(ax, 9, 11, 'facteur commun', 'varie', 's', ha='left')
+arrow(ax, (42, 30), (54, 30), 'varie'); text(ax, 48, 35, r'$\div\cos x$', 'varie', 's'); text(ax, 48, 25, 'haut et bas', 'varie', 's')
+lbox(ax, 58, 34, 18, 9, 'sujet', r'$(1+\sin x)$'); line(ax, [(58, 30), (76, 30)], 'encre')
+lbox(ax, 58, 17, 12, 9, 'fixe', r'$\cos x$')
+text(ax, 58, 11, 'plus de facteur commun', 'resultat', 's', ha='left')
+save(fig, '31-129')

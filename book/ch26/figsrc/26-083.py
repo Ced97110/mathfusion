@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 28, 24, 12, 'sujet', label='0,6216…')
+box(ax, 32, 28, 24, 12, 'fixe', label='arcsin')
+box(ax, 62, 28, 24, 12, 'resultat', label='38,43°', size='l')
+arrow(ax, (26.8, 34), (31.2, 34), 'fixe'); arrow(ax, (56.8, 34), (61.2, 34), 'fixe')
+text(ax, 14, 47, 'nombre complet', 'sujet', 's')
+text(ax, 29, 22.5, '×', 'limite', 'xl', weight='bold')
+text(ax, 29, 15, 'pas d\'arrondi ici', 'limite', 's')
+text(ax, 74, 22.5, '✓', 'resultat', 'xl', weight='bold')
+text(ax, 72, 15, 'un seul arrondi', 'resultat', 's')
+text(ax, 72, 8, 'à la fin', 'resultat', 's')
+save(fig, '26-083')

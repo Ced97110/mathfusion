@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+disc(ax, 14, 58, 8, 'fixe', label=r'$s$'); text(ax, 14, 46, 'un élément', 'fixe', 's')
+arrow(ax, (24, 58), (32, 58), 'fixe')
+box(ax, 34, 52, 18, 12, 'fixe', label=r'$\varnothing = 0$', size='s'); box(ax, 54, 52, 18, 12, 'fixe', label=r'$\{s\} = 1$', size='s')
+text(ax, 60, 44, r'$2^1 = 2$ parties : $0 \neq 1$', 'fixe', 's')
+disc(ax, 14, 26, 8, 'sujet', fill=False); text(ax, 14, 12, 'ensemble vide', 'sujet', 's')
+arrow(ax, (24, 26), (32, 26), 'sujet')
+box(ax, 34, 20, 38, 12, 'sujet', label=r'$\varnothing = 0 = 1$')
+text(ax, 54, 12, r'$2^0 = 1$ partie : $0 = 1$', 'resultat', 'm')
+save(fig, '80-333')

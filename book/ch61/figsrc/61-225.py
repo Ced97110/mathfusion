@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+for y, role, lab in [(8, 'fixe', 'ℚ'), (38, 'sujet', r'ℚ$(\sqrt{3})$'), (68, 'resultat', r'ℚ$(\sqrt{3},\sqrt{5})$')]:
+    box(ax, 3, y, 30, 11, role, label=lab)
+arrow(ax, (18, 19), (18, 38), 'varie'); text(ax, 21, 28.5, 'degré 2', 'varie', 's', ha='left')
+arrow(ax, (18, 49), (18, 68), 'varie'); text(ax, 21, 58.5, 'degré 2 ?', 'varie', 's', ha='left')
+text(ax, 18, 87, 'degré total : 4', 'resultat', 's')
+box(ax, 40, 78, 46, 11, 'varie', label=r'$\sqrt{5}=a+b\sqrt{3}$ ?')
+box(ax, 40, 56, 46, 11, 'fixe', label=r'$5=a^2+3b^2+2ab\sqrt{3}$')
+box(ax, 40, 34, 46, 11, 'sujet', label=r'$2ab=0$')
+arrow(ax, (50, 78), (50, 67)); text(ax, 53, 72.5, 'au carré', 'varie', 's', ha='left')
+arrow(ax, (50, 56), (50, 45)); text(ax, 53, 50.5, r'$\sqrt{3}$ irrationnel', 'varie', 's', ha='left')
+box(ax, 40, 8, 22, 11, 'limite', label=r'$b=0$ : $\sqrt{5}=a$', size='s')
+box(ax, 64, 8, 22, 11, 'limite', label=r'$a=0$ : $5=3b^2$', size='s')
+arrow(ax, (47, 34), (51, 19), 'limite'); arrow(ax, (79, 34), (75, 19), 'limite')
+text(ax, 63, 27, 'deux cas : faux', 'limite', 's')
+save(fig, '61-225')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+cx, cy, r = 44, 40, 22
+disc(ax, cx, cy, r, 'fixe', fill=False)
+line(ax, [(cx - r - 3, cy), (cx + r + 3, cy)], 'fixe')
+line(ax, [(cx, cy - r - 3), (cx, cy + r + 3)], 'limite', lw=1.2)
+px, py = cx + r * math.cos(math.radians(330)), cy + r * math.sin(math.radians(330))
+line(ax, [(cx, py), (px, py)], 'varie', lw=1.8)
+disc(ax, px, py, 1.9, 'resultat')
+text(ax, px + 7.5, py, '330°', 'resultat', 's')
+text(ax, cx + 9.5, py + 3.5, 'cos x', 'varie', 's')
+disc(ax, cx, cy + r, 1.9, 'limite'); disc(ax, cx, cy - r, 1.9, 'limite')
+text(ax, 44, 70, 'cos 90° = 0 : ÷ 0 interdit', 'limite', 's')
+text(ax, 44, 8, 'cos x ≠ 0 : ÷ permise', 'resultat', 's')
+save(fig, '32-124')

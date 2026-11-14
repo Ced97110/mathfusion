@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 62, 80, 12, 'encre', label=r'abélien fini $=\ \mathbb{Z}/p^{k}\ \times\ \mathbb{Z}/q^{m}\ \times\ \cdots$', size='m', weight='bold')
+text(ax, 44, 55, 'cas particulier', 'fixe', 's')
+box(ax, 28, 40, 32, 11, 'fixe', label='ℤ/12', size='l')
+box(ax, 8, 14, 28, 12, 'sujet', label='ℤ/4', size='l')
+box(ax, 52, 14, 28, 12, 'autre', label='ℤ/3', size='l')
+text(ax, 44, 20, '×', 'varie', 'xl', weight='bold')
+arrow(ax, (38, 39), (24, 27), 'varie'); arrow(ax, (50, 39), (66, 27), 'varie')
+text(ax, 22, 9, 'puissance de 2 : 2²', 'sujet', 's'); text(ax, 66, 9, 'puissance de 3 : 3¹', 'autre', 's')
+text(ax, 44, 3.5, '12 = 4 × 3', 'resultat', 'm')
+save(fig, '45-257')

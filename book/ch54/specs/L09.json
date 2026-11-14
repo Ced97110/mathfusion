@@ -1,0 +1,332 @@
+[
+ {
+  "code": "54-233",
+  "a_dire": "Le polynôme x² + 1 ne se casse pas sur les fractions, mais modulo 2 il se casse en (x + 1)(x + 1) : un polynôme irréductible peut avoir une réduction qui se casse, donc la réciproque du test est fausse.",
+  "legende_titre": "Un polynôme qui se casse seulement modulo 2",
+  "lecture": [
+   "À gauche, la courbe bleue de x² + 1 reste au-dessus de l’axe gris : aucune racine, le polynôme ne se casse pas sur les fractions.",
+   "À droite, les deux cases orange x + 1 multipliées donnent x² + 1 modulo 2, parce que 2x vaut 0.",
+   "La case rouge rappelle ce que ce cas montre : la réciproque est fausse."
+  ],
+  "a_voir": "Le même polynôme ne se casse pas sur les fractions et se casse modulo 2."
+ },
+ {
+  "code": "54-234",
+  "a_dire": "Si le nombre premier 2 divise le coefficient dominant 2, le degré de 2x² + x baisse modulo 2 : il reste x, irréductible, alors que le polynôme de départ se casse.",
+  "legende_titre": "Quand le degré baisse modulo 2",
+  "lecture": [
+   "En haut, les deux cases bleues x et 2x + 1 forment le polynôme qui se casse, de degrés 1 et 1.",
+   "En bas, après modulo 2, la case 2x + 1 devient la constante 1 (case grise en tirets) : il ne reste que x, de degré 1.",
+   "La case rouge dit la faute : on conclurait « irréductible » alors que le polynôme se casse."
+  ],
+  "a_voir": "Le facteur 2x + 1 devient la constante 1, donc le degré baisse."
+ },
+ {
+  "code": "54-235",
+  "a_dire": "La façon dont x² + 1 se casse change selon le nombre premier : modulo 3 il reste en une pièce, modulo 2 il se casse en deux pièces x + 1, et cette façon de se casser renseigne sur le groupe de Galois (chapitre 67).",
+  "legende_titre": "Le même polynôme, deux façons de se casser",
+  "lecture": [
+   "La case bleue du haut est x² + 1 ; la flèche de gauche le lit modulo 3, celle de droite modulo 2.",
+   "À gauche, la case bleue reste entière : une pièce de degré 2.",
+   "À droite, deux cases orange x + 1 : deux pièces de degrés 1 et 1.",
+   "La case violette en tirets, groupe de Galois, annonce ce que ce renseignement servira à étudier plus tard."
+  ],
+  "a_voir": "Une seule pièce modulo 3, deux pièces modulo 2."
+ },
+ {
+  "code": "54-236",
+  "a_dire": "La courbe de degré 3 coupe l’axe en exactement trois points a₁, a₂, a₃ ; chacun donne un facteur de degré 1 et 1 + 1 + 1 = 3 épuise le degré, donc il n’y a pas de quatrième racine.",
+  "legende_titre": "Trois points sur l’axe, trois facteurs",
+  "lecture": [
+   "La courbe bleue est celle du polynôme de degré 3 ; elle traverse l’axe gris aux trois points verts a₁, a₂, a₃.",
+   "Sous chaque point, une case bleue donne le facteur x − a correspondant, de degré 1.",
+   "Le total 1 + 1 + 1 vaut 3 : un quatrième point demanderait un degré 4 (texte rouge)."
+  ],
+  "a_voir": "Un point sur l’axe, un facteur de degré 1 ; trois points suffisent pour le degré 3."
+ },
+ {
+  "code": "54-237",
+  "a_dire": "Un polynôme de degré n sur un corps a au plus n racines : en degré 2, il en a 2, 1 ou 0, jamais 3.",
+  "legende_titre": "Au plus autant de racines que le degré",
+  "lecture": [
+   "À gauche, la courbe bleue de x² − 1 coupe l’axe gris en deux points verts, −1 et 1.",
+   "À droite, la courbe violette de x² + 1 reste au-dessus de l’axe : aucune racine.",
+   "La case verte du bas résume : le nombre de racines r est au plus le degré n."
+  ],
+  "a_voir": "Deux racines, ou zéro, mais jamais trois pour le degré 2."
+ },
+ {
+  "code": "54-238",
+  "a_dire": "On sort les facteurs x − a un à un : après x − 1, la racine 2 annule le reste h₁ parce que 2 − 1 n’est pas nul et qu’un corps est intègre ; la case orange du milieu porte tout le poids.",
+  "legende_titre": "Sortir un facteur après l’autre",
+  "lecture": [
+   "La case bleue du haut écrit f = (x − 1) fois h₁ : le premier facteur est sorti.",
+   "La case orange du milieu évalue en 2 : 0 = 1 × h₁(2), car 2 − 1 vaut 1.",
+   "L’intégrité, avec 1 différent de 0, donne h₁(2) = 0 : la case verte du bas permet de sortir x − 2.",
+   "Le geste se répète pour 3, puis pour les racines suivantes."
+  ],
+  "a_voir": "L’étape orange : un produit nul avec un facteur non nul force l’autre facteur à être nul."
+ },
+ {
+  "code": "54-239",
+  "a_dire": "Quelles que soient les racines distinctes, f s’écrit comme le produit des facteurs x − a par un polynôme restant k ; ce qui ne change pas, c’est la forme, avec n = r + degré de k.",
+  "legende_titre": "Changer les racines, garder la forme",
+  "lecture": [
+   "La première ligne montre les racines 1, 2, 3 : trois cases bleues x − a puis la case grise k = 1/4.",
+   "La deuxième ligne montre les racines 5, 6, 7 : les cases bleues changent, la forme reste la même.",
+   "La case verte du bas donne ce qui reste vrai : n = r + degré de k."
+  ],
+  "a_voir": "Les nombres des facteurs changent d’une ligne à l’autre, pas la forme du produit."
+ },
+ {
+  "code": "54-240",
+  "a_dire": "Dans le cas de la figure, trois racines épuisent le degré 3 : trois facteurs, k = 1/4 constant, r = n ; mais un polynôme de degré 3 avec deux racines seulement aurait un k de degré 1.",
+  "legende_titre": "Le cas où le maximum est atteint",
+  "lecture": [
+   "En haut, trois cases bleues x − a puis la case grise k = 1/4, de degré 0 : le degré 3 est épuisé.",
+   "Le texte vert dit que r = n = 3 : c’est le maximum du théorème.",
+   "En bas, avec deux racines seulement, deux cases bleues et une case orange k de degré 1."
+  ],
+  "a_voir": "Ici k est constant parce que les trois racines remplissent tout le degré."
+ },
+ {
+  "code": "54-241",
+  "a_dire": "Dans ℤ/8, le polynôme x² − 1 de degré 2 a quatre racines, 1, 3, 5, 7 : le théorème du nombre de racines exige un corps, pas seulement un anneau.",
+  "legende_titre": "Un polynôme de degré 2 avec quatre racines",
+  "lecture": [
+   "Chaque case donne un nombre x de 0 à 7 et la valeur de x² − 1 modulo 8.",
+   "Les quatre cases vertes, pour x = 1, 3, 5, 7, ont la valeur 0 : ce sont des racines.",
+   "Les quatre cases grises ont une valeur non nulle, 7 ou 3.",
+   "La case rouge compare : quatre racines, plus que le degré 2."
+  ],
+  "a_voir": "Quatre cases vertes alors que le degré vaut seulement 2."
+ },
+ {
+  "code": "54-242",
+  "a_dire": "La preuve casse à l’étape où l’on passe de (a₂ − a₁)h₁(a₂) = 0 à h₁(a₂) = 0 : dans ℤ/8, 2 × 4 vaut 0 sans que 2 ni 4 soit nul.",
+  "legende_titre": "L’étape de la preuve qui échoue",
+  "lecture": [
+   "Les deux cases bleues donnent 3 − 1 = 2 et 3 + 1 = 4, deux nombres non nuls.",
+   "La case verte dit que leur produit vaut 8, soit 0 modulo 8.",
+   "La flèche rouge mène à la conclusion « donc h₁(a₂) = 0 », fausse : cette valeur est 4."
+  ],
+  "a_voir": "Un produit nul de deux nombres non nuls fait échouer la conclusion."
+ },
+ {
+  "code": "54-243",
+  "a_dire": "Avec f = x³ − 2x² + 4 et g = x − 1 sur ℚ, un seul calcul suivi jusqu’au bout montre les cinq effets du chapitre : division, reste, facteur, PGCD, racines.",
+  "legende_titre": "Un exemple, cinq effets",
+  "lecture": [
+   "En haut, la case bleue est f et la case violette est g.",
+   "Chaque ligne du dessous a un nom gris, un effet du chapitre, et le résultat dans une case verte.",
+   "La division donne q = x² − x − 1 et r = 3 ; le reste est f(1) = 3 ; x − 1 ne divise pas f ; le PGCD vaut 1 ; aucune racine rationnelle."
+  ],
+  "a_voir": "Les cinq résultats viennent du même couple f et g."
+ },
+ {
+  "code": "54-244",
+  "a_dire": "On contrôle une division en développant le diviseur fois le quotient, puis en ajoutant le reste : (x − 1)(x² − x − 1) + 3 redonne f, et le degré 0 du reste est plus petit que le degré 1 du diviseur.",
+  "legende_titre": "Contrôler la division",
+  "lecture": [
+   "La case bleue du haut est le produit (x − 1)(x² − x − 1), qui vaut x³ − 2x² + 1.",
+   "La case orange est le reste 3, qu’on ajoute.",
+   "La case verte du bas donne x³ − 2x² + 4, c’est f.",
+   "Le texte vert compare les degrés : 0 est plus petit que 1."
+  ],
+  "a_voir": "Le produit plus le reste redonne le dividende, et le reste a un degré plus petit."
+ },
+ {
+  "code": "54-245",
+  "a_dire": "Un seul calcul, f(1) = 3, donne deux informations : le reste de la division par x − 1 est 3, et 1 n’est pas racine parce que 3 n’est pas nul.",
+  "legende_titre": "Une valeur, deux informations",
+  "lecture": [
+   "La courbe bleue est celle de f ; le trait vert vertical va de l’axe gris au point x = 1 et mesure f(1) = 3.",
+   "La case verte de gauche lit cette hauteur comme le reste de la division par x − 1.",
+   "La case verte de droite lit que cette hauteur n’est pas nulle : 1 n’est pas racine."
+  ],
+  "a_voir": "La hauteur du point au-dessus de l’axe est à la fois le reste et la preuve que 1 n’est pas racine."
+ },
+ {
+  "code": "54-246",
+  "a_dire": "En retranchant à f un multiple de g on obtient la constante 3 ; comme 3 a un inverse dans ℚ, 1 est dans l’idéal, donc le PGCD vaut 1 et f et g sont premiers entre eux.",
+  "legende_titre": "Un PGCD trouvé sans l’algorithme d’Euclide",
+  "lecture": [
+   "La case bleue est f et la case violette est g ; les flèches orange mènent à leur combinaison.",
+   "La première case orange écrit 3 = f − (x² − x − 1) g.",
+   "Dans ℚ, 3 a pour inverse 1/3 : la deuxième case orange donne 1 dans l’idéal.",
+   "La case verte conclut : PGCD égal à 1."
+  ],
+  "a_voir": "Une constante non nulle dans l’idéal suffit pour que le PGCD vaille 1."
+ },
+ {
+  "code": "54-247",
+  "a_dire": "Dans ℤ[x], les combinaisons de f et g valent en 1 un multiple de 3 : 3 est dans l’idéal mais pas 1, donc l’idéal n’est pas principal ; ℤ est principal mais ℤ[x] ne l’est pas.",
+  "legende_titre": "Principal pour ℤ, pas pour ℤ[x]",
+  "lecture": [
+   "La droite graduée porte les valeurs possibles d’une combinaison de f et g en 1.",
+   "Les points verts, aux multiples de 3, sont atteints.",
+   "Le point rouge, à 1, n’est jamais atteint.",
+   "La case violette rappelle le résultat : ℤ[x] n’est pas principal, bien que ℤ le soit."
+  ],
+  "a_voir": "Seuls les multiples de 3 sont atteints, jamais 1."
+ },
+ {
+  "code": "54-248",
+  "a_dire": "Une racine rationnelle p/q de x³ − 2x² + 4 donne q = 1 et p divise 4 ; les six candidats ±1, ±2, ±4 donnent tous une valeur non nulle, donc aucun n’est racine.",
+  "legende_titre": "Six candidats, aucune racine",
+  "lecture": [
+   "Les trois cases bleues du haut enchaînent : q vaut 1, p divise 4, donc les candidats sont ±1, ±2, ±4.",
+   "Chaque case rouge du dessous donne un candidat et la valeur de f en ce candidat : −4 : −92, −2 : −12, −1 : 1, 1 : 3, 2 : 4, 4 : 36.",
+   "Aucune valeur n’est nulle : tous les candidats sont écartés."
+  ],
+  "a_voir": "Les six valeurs sont toutes différentes de 0."
+ },
+ {
+  "code": "54-249",
+  "a_dire": "Pour chercher les racines rationnelles p/q d’un polynôme à coefficients entiers, p divise le terme constant et q divise le coefficient dominant : il reste un petit nombre de fractions à tester au lieu d’une infinité.",
+  "legende_titre": "Réduire l’infini à quelques candidats",
+  "lecture": [
+   "Les quatre cases du haut sont les termes de f = x³ − 2x² + 0x + 4.",
+   "La case violette, le terme dominant 1, mène à « q divise 1 » ; la case bleue, le terme constant 4, mène à « p divise 4 ».",
+   "La case verte du bas liste les candidats : ±1, ±2, ±4."
+  ],
+  "a_voir": "Deux nombres de f, le dominant et le constant, limitent p et q."
+ },
+ {
+  "code": "54-250",
+  "a_dire": "f = x³ − 2x² + 4 n’a pas de racine rationnelle ; en degré 3, se casser demande un facteur de degré 1, donc une racine ; f est donc irréductible sur ℚ et ℚ[u] est un corps.",
+  "legende_titre": "De l’absence de racine au corps ℚ[u]",
+  "lecture": [
+   "La case bleue du haut dit que f n’a aucune racine dans ℚ.",
+   "Les deux cases du milieu coupent le degré 3 en 1 + 2 : la case rouge en tirets, de degré 1, donnerait une racine, ce qui n’existe pas.",
+   "La première case verte conclut que f est irréductible sur ℚ ; la seconde, que ℚ[u] est un corps."
+  ],
+  "a_voir": "Casser le degré 3 demande un facteur de degré 1, donc une racine."
+ },
+ {
+  "code": "54-251",
+  "a_dire": "Pour p(x) = x⁴ − 2x³ + x + 1, les seules racines possibles 1 et −1 ne sont pas des racines, mais en degré 4 cela ne suffit pas : il reste à examiner un produit de deux facteurs de degré 2.",
+  "legende_titre": "Un polynôme de degré 4 sans racine",
+  "lecture": [
+   "La case bleue du haut est le polynôme p.",
+   "Les deux cases grises donnent p(1) = 1 et p(−1) = 3 : ni 1 ni −1 n’est racine.",
+   "Les deux cases orange en tirets, x² plus des termes, posent la question restante : p est-il un produit 2 + 2 ?"
+  ],
+  "a_voir": "Aucune racine, mais la question 2 + 2 reste ouverte."
+ },
+ {
+  "code": "54-252",
+  "a_dire": "Si p de degré 4 se casse en deux facteurs, les degrés s’additionnent à 4 : il n’y a que deux découpages, 1 + 3 et 2 + 2, à éliminer.",
+  "legende_titre": "Les deux découpages possibles de 4",
+  "lecture": [
+   "Chaque rangée a quatre cases, une par degré du polynôme.",
+   "Dans la première rangée, la case bleue et les trois cases violettes montrent 1 + 3.",
+   "Dans la seconde, deux cases bleues et deux cases violettes montrent 2 + 2.",
+   "Ces deux rangées sont les seuls cas à éliminer."
+  ],
+  "a_voir": "Quatre cases se partagent en deux paquets de deux façons."
+ },
+ {
+  "code": "54-253",
+  "a_dire": "Un facteur de degré 1 donne une racine entière qui divise le terme constant 1 : les candidats 1 et −1 donnent p(1) = 1 et p(−1) = 3, non nuls, donc le cas 1 + 3 est exclu.",
+  "legende_titre": "Éliminer le cas 1 + 3",
+  "lecture": [
+   "La case bleue du haut part d’un facteur de degré 1, qui donne une racine rationnelle.",
+   "La case orange dit que cette racine est entière et divise le terme constant 1.",
+   "Les deux cases grises du bas calculent p(1) = 1 et p(−1) = 3.",
+   "Le texte rouge puis le texte vert concluent : aucune racine, le cas 1 + 3 est exclu."
+  ],
+  "a_voir": "Le corollaire ne laisse que deux candidats, et aucun n’est racine."
+ },
+ {
+  "code": "54-254",
+  "a_dire": "Dans le cas 2 + 2, p est le produit de deux facteurs x² + ax + b et x² + cx + d ; par le lemme de Gauss, a, b, c, d sont entiers, et on compare le produit développé avec p.",
+  "legende_titre": "Écrire le cas 2 + 2",
+  "lecture": [
+   "La case bleue x² + ax + b et la case violette x² + cx + d sont les deux facteurs de degré 2.",
+   "La flèche orange développe leur produit pour le comparer, dans la case grise, avec p.",
+   "Le texte vert rappelle que le lemme de Gauss rend a, b, c, d entiers ; la case verte annonce quatre équations sur des entiers."
+  ],
+  "a_voir": "Deux facteurs inconnus de degré 2, comparés à p."
+ },
+ {
+  "code": "54-255",
+  "a_dire": "Deux polynômes sont égaux quand leurs coefficients sont égaux rang par rang : le produit développé donne a + c = −2 au rang 3, ac + b + d = 0 au rang 2, ad + bc = 1 au rang 1 et bd = 1 au rang 0.",
+  "legende_titre": "Comparer les coefficients rang par rang",
+  "lecture": [
+   "Le nombre orange à gauche de chaque ligne est le rang : 3, 2, 1, 0.",
+   "La case bleue donne le coefficient de ce rang dans le produit développé.",
+   "Le double trait orange la relie à la case grise : le coefficient de p au même rang, −2, 0, 1, 1."
+  ],
+  "a_voir": "Chaque rang donne une équation."
+ },
+ {
+  "code": "54-256",
+  "a_dire": "Avec bd = 1 en entiers, b = d ; le rang 1 devient b(a + c) = 1 et le rang 3 donne a + c = −2, d’où −2b = 1 et b = −1/2, qui n’est pas entier : contradiction.",
+  "legende_titre": "La contradiction sur b",
+  "lecture": [
+   "La case bleue du haut est l’équation du rang 0 : bd = 1 avec des entiers.",
+   "La première case orange en tire b = d, puis la deuxième remplace d par b dans le rang 1 : b(a + c) = 1, avec a + c = −2.",
+   "La troisième case orange donne −2b = 1, donc b = −1/2.",
+   "La case rouge conclut : ce n’est pas un entier, c’est une contradiction."
+  ],
+  "a_voir": "Les équations des rangs 0, 1 et 3 se contredisent."
+ },
+ {
+  "code": "54-257",
+  "a_dire": "Le lemme de Gauss impose des coefficients entiers : l’équation bd = 1 a une infinité de solutions en fractions, mais seulement deux en entiers, b = d = 1 ou b = d = −1.",
+  "legende_titre": "Ce que change le lemme de Gauss",
+  "lecture": [
+   "La courbe grise, la même à gauche et à droite, est l’ensemble des couples (b, d) tels que bd = 1.",
+   "À gauche, les points orange sont des couples de fractions : il y en a une infinité.",
+   "À droite, les deux points verts, (1, 1) et (−1, −1), sont les seuls couples d’entiers."
+  ],
+  "a_voir": "Beaucoup de points orange à gauche, seulement deux points verts à droite."
+ },
+ {
+  "code": "54-258",
+  "a_dire": "Modulo 2, le terme −2x³ de p disparaît car −2 vaut 0, et comme 2 ne divise pas le coefficient dominant 1, il reste x⁴ + x + 1 : le test de réduction s’applique.",
+  "legende_titre": "Réduire p modulo 2",
+  "lecture": [
+   "La rangée du haut donne les termes de p : x⁴, −2x³, x, 1.",
+   "Les flèches orange les lisent modulo 2.",
+   "Dans la rangée du bas, la case orange en tirets montre que −2x³ devient 0 ; les autres termes ne changent pas.",
+   "La case verte du bas écrit le résultat, x⁴ + x + 1, et rappelle que 2 ne divise pas 1."
+  ],
+  "a_voir": "Un seul terme disparaît, et le terme dominant reste."
+ },
+ {
+  "code": "54-259",
+  "a_dire": "Sur ℤ/2, x⁴ + x + 1 n’a pas de racine et n’est pas le seul produit possible (x² + x + 1)², qui vaut x⁴ + x² + 1 ; il est donc irréductible.",
+  "legende_titre": "Deux cas écartés sur ℤ/2",
+  "lecture": [
+   "La case bleue du haut est le polynôme réduit.",
+   "À gauche, ses valeurs en 0 et en 1 valent 1 : aucune racine, le cas 1 + 3 est écarté.",
+   "À droite, le seul produit de deux facteurs de degré 2 sans racine, en violet, vaut x⁴ + x² + 1 ; ce n’est pas le polynôme (texte rouge).",
+   "La case verte du bas conclut : le polynôme réduit est irréductible."
+  ],
+  "a_voir": "Les deux découpages sont écartés par un calcul fini."
+ },
+ {
+  "code": "54-260",
+  "a_dire": "Sur ℤ/2 il n’y a que quatre polynômes unitaires de degré 2, car le terme en x et la constante valent chacun 0 ou 1 ; un seul, x² + x + 1, est sans racine.",
+  "legende_titre": "Les quatre polynômes de degré 2 sur ℤ/2",
+  "lecture": [
+   "Chaque case est un choix du terme en x, 0 en haut et 1 en bas, et de la constante, 0 à gauche et 1 à droite.",
+   "Chaque case écrit son polynôme en bleu et ses racines dessous.",
+   "Seule la case verte, x² + x + 1, n’a aucune racine."
+  ],
+  "a_voir": "Quatre cases, une seule sans racine."
+ },
+ {
+  "code": "54-261",
+  "a_dire": "La réduction modulo p remplace un problème infini par un problème fini : dans ℤ les coefficients sont illimités, dans ℤ/2 chaque coefficient vaut 0 ou 1 et on peut lister tous les cas.",
+  "legende_titre": "De l’infini au fini",
+  "lecture": [
+   "À gauche, la grille de points orange représente les couples de coefficients entiers ; les flèches montrent qu’elle continue dans toutes les directions.",
+   "À droite, la case verte en tirets contient les quatre couples possibles avec 0 ou 1.",
+   "On peut donc tous les examiner."
+  ],
+  "a_voir": "Une grille qui ne finit pas contre quatre points."
+ }
+]

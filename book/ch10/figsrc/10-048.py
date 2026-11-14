@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,4,52,80,9,'sujet',label='48 + 49 + 51 + 52')
+brace(ax,4,84,52,'fixe',label='4 termes différents')
+arrow(ax,(44,44),(44,38.5)); text(ax,48,41.3,'remplacer chacun par 50','varie','s',ha='left')
+box(ax,4,28,80,9,'varie',label='50 + 50 + 50 + 50')
+arrow(ax,(44,28),(44,21)); text(ax,48,24.5,'= 4 × 50','resultat','m',ha='left')
+for i in range(4): box(ax,4+i*20.33,11,19,9,'varie')
+brace(ax,4,84,11,'varie',label='4 termes égaux')
+save(fig,'10-048')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 10, 66, 20, -2, 1, 1)
+xa, xb = f(-1.618), f(0.382)
+disc(ax, xa, 20, 1.3, 'sujet')
+disc(ax, xb, 20, 1.3, 'resultat')
+text(ax, xa + 3, 25.5, 'ζ² + ζ⁻² ≈ −1,618', 'sujet', 's')
+text(ax, xb, 25.5, 'y² ≈ 0,382', 'resultat', 's')
+arrow(ax, (xa, 29), (xb, 29), 'varie', curve=-0.3)
+text(ax, (xa + xb) / 2, 38, '+ 2', 'varie', 'l', weight='bold')
+text(ax, 44, 47, r'$y^2=\zeta^2+2+\zeta^{-2}$', 'encre', 'l')
+text(ax, 44, 6, '0,382 − 2 = −1,618', 'encre', 'm')
+save(fig, '66-092')

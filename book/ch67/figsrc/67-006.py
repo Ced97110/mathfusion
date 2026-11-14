@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(108)
+box(ax, 14, 94, 60, 12, 'sujet', label='équation de degré 6', size='m')
+for i in range(6):
+    disc(ax, 26.5 + 7 * i, 87, 2.6, 'sujet')
+text(ax, 44, 81, '6 solutions', 'sujet', 's')
+arrow(ax, (44, 77), (44, 66), 'varie')
+text(ax, 48, 71.5, 'coefficients modulo $p$', 'varie', 's', ha='left')
+box(ax, 14, 54, 60, 12, 'sujet', label='polynôme dans un corps fini', size='s')
+arrow(ax, (44, 54), (44, 44), 'varie')
+text(ax, 48, 49, 'on le factorise', 'varie', 's', ha='left')
+box(ax, 14, 32, 60, 12, 'resultat', label='les cycles des échanges', size='m')
+arrow(ax, (44, 32), (44, 22), 'resultat')
+text(ax, 48, 27, 'on en déduit', 'resultat', 's', ha='left')
+box(ax, 14, 8, 60, 14, 'resultat', label=r'$S_6$ : tous les échanges', size='m')
+save(fig, '67-006')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 24, 70, r'$\frac{a}{b}$', 'sujet', 'xl')
+text(ax, 44, 70, '=', 'varie', 'xl')
+text(ax, 64, 70, r'$\frac{c}{d}$', 'autre', 'xl')
+box(ax, 3, 36, 38, 11, 'sujet', label=r'1. $3 \div 4 = 0{,}75$', size='s')
+box(ax, 47, 36, 38, 11, 'autre', label=r'2. $6 \div 8 = 0{,}75$', size='s')
+arrow(ax, (24, 61), (22, 48), 'varie')
+arrow(ax, (64, 61), (66, 48), 'varie')
+arrow(ax, (22, 35), (36, 24), 'varie')
+arrow(ax, (66, 35), (52, 24), 'varie')
+box(ax, 12, 9, 64, 14, 'resultat', label='3. comparer : égaux ?', size='s')
+save(fig, '09-045')

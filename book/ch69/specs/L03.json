@@ -1,0 +1,341 @@
+[
+ {
+  "code": "69-061",
+  "a_dire": "Si R est réel clos, le corps R(i) des nombres a + bi est algébriquement clos ; il faut pour cela que tout positif ait une racine carrée.",
+  "legende_titre": "R(i) et la propriété (i)",
+  "lecture": [
+   "En haut, les trois cases vont de R réel clos à R(i), formé des a + bi, puis à « algébriquement clos » en vert, en gras.",
+   "La flèche orange épaisse est marquée « avec (i) » : la propriété (i) permet cette conclusion.",
+   "En bas à gauche, la case verte montre que (2 + i) au carré vaut 3 + 4i : avec la propriété (i), une racine carrée existe.",
+   "En bas à droite, les cases rouges montrent ℚ, où (i) manque : le carré a² − b² + 2abi ne vaut 2 que si 2ab = 0, et aucun cas ne marche."
+  ],
+  "a_voir": "Avec la propriété (i), R(i) est algébriquement clos ; dans ℚ, le nombre 2 n'a pas de racine carrée de cette forme."
+ },
+ {
+  "code": "69-062",
+  "a_dire": "Pour R = ℝ, le théorème sur R(i) est le théorème fondamental de l’algèbre : ℂ est algébriquement clos.",
+  "legende_titre": "Le cas particulier R = ℝ",
+  "lecture": [
+   "Les trois cases grises du haut sont ce que la preuve utilise : la propriété (i), la propriété (ii) et la théorie de Galois.",
+   "La case bleue dit que, pour tout R réel clos, R(i) est algébriquement clos.",
+   "La flèche orange prend le cas R = ℝ et mène à la case verte : ℂ est algébriquement clos."
+  ],
+  "a_voir": "Le théorème sur ℂ est un cas d’un théorème qui vaut pour tout R réel clos."
+ },
+ {
+  "code": "69-063",
+  "a_dire": "On part de 3 + 4i, on pose deux équations sur x et y, et l’étape décisive est la racine carrée de a² + b², qui donne x = 2 et y = 1.",
+  "legende_titre": "De 3 + 4i à sa racine carrée",
+  "lecture": [
+   "La case bleue du haut est le départ : on cherche x + iy dont le carré est 3 + 4i ; les deux cases bleues dessous sont les deux équations.",
+   "La case orange est l’étape qui porte tout le poids : la racine carrée de 3² + 4², soit 25, qui vaut 5, par la propriété (i).",
+   "Les cases grises donnent x² + y² = 5 puis, en additionnant avec x² − y² = 3, 2x² = 8 et x² = 4.",
+   "La case verte est l’arrivée : x = 2, y = 1, et 2xy = 4 est bien b."
+  ],
+  "a_voir": "L’étape orange, la racine carrée de 25, permet de trouver x et y."
+ },
+ {
+  "code": "69-064",
+  "a_dire": "Une extension de degré impair de R n’ajoute rien : le polynôme a déjà une racine dans R par la propriété (ii), donc l’extension est R lui-même.",
+  "legende_titre": "Pas d’extension de degré impair",
+  "lecture": [
+   "La case bleue du haut est le point de départ : une extension de R de degré impair ; la case grise dessous ajoute une racine de x³ − 3x + 1.",
+   "La case orange est l’étape décisive : par (ii), cette racine r existe déjà dans R. Sur la droite graduée, f(0) = 1 et f(1) = −1, et le point vert r est entre 0 et 1.",
+   "La case grise dit que x − r divise le polynôme ; la case verte conclut que l’extension est R lui-même."
+  ],
+  "a_voir": "La racine r est déjà un nombre de R, donc rien n’est ajouté."
+ },
+ {
+  "code": "69-065",
+  "a_dire": "Si le groupe de Galois a 2^e fois m éléments avec m impair, Sylow donne un sous-groupe de 2^e éléments ; m impair est interdit sauf 1, donc le groupe est un 2-groupe, puis E = R(i).",
+  "legende_titre": "Galois et Sylow assemblés",
+  "lecture": [
+   "Les 12 disques sont les 12 éléments de G, en 3 rangées de 4 ; la rangée encadrée est le sous-groupe H de 4 = 2² éléments donné par Sylow.",
+   "La case rouge dit que les 3 rangées donnent un degré 3 sur R, ce qui est interdit.",
+   "La case verte, après « donc », conclut que le seul cas possible est m = 1 : G est un 2-groupe.",
+   "La case bleue du bas, après « donc », conclut que E = R(i), car un degré 2 de plus est interdit par l'étape 1."
+  ],
+  "a_voir": "La chaîne se lit de haut en bas : m impair exclu, donc 2-groupe, donc E = R(i)."
+ },
+ {
+  "code": "69-066",
+  "a_dire": "Les irréductibles de R[x] sont de degré 1 ou 2 ; x² + ax + b est irréductible exactement quand a² < 4b, comme x² + 2x + 5 qui reste au-dessus de 0.",
+  "legende_titre": "Irréductible de degré 2",
+  "lecture": [
+   "Les deux lignes du haut donnent la règle : degré 1 ou 2, et x² + ax + b est irréductible exactement quand a² < 4b.",
+   "La courbe bleue est x² + 2x + 5 : son point le plus bas vaut 4, elle ne touche jamais l'axe, car a² = 4 est plus petit que 4b = 20.",
+   "La courbe violette est x² + 2x − 3 : elle coupe l'axe aux deux points verts, −3 et 1 ; 4 < −12 est faux.",
+   "Les deux lignes du bas rappellent le calcul de a² et de 4b pour chaque polynôme."
+  ],
+  "a_voir": "La courbe bleue, où a² < 4b, ne coupe pas l'axe ; la violette, où cette condition est fausse, le coupe deux fois."
+ },
+ {
+  "code": "69-067",
+  "a_dire": "Si f(a) et f(b) ont des signes opposés, c’est-à-dire f(a) f(b) < 0, alors f a une racine entre a et b.",
+  "legende_titre": "Une racine entre deux signes opposés",
+  "lecture": [
+   "La courbe bleue est x² − 2 entre 1 et 2 ; les deux points orange sont f(1) = −1 et f(2) = 2.",
+   "Le produit −2 est négatif : les deux valeurs ont des signes opposés (texte vert du haut).",
+   "Le point vert sur l’axe est la racine, environ 1,414, entre 1 et 2."
+  ],
+  "a_voir": "La courbe passe de dessous à dessus de l’axe : elle le coupe entre 1 et 2."
+ },
+ {
+  "code": "69-068",
+  "a_dire": "f se factorise en facteurs x − r et en facteurs de degré 2 sans racine ; ces derniers sont toujours positifs, donc seuls les facteurs x − r peuvent changer le signe.",
+  "legende_titre": "Qui change le signe du produit",
+  "lecture": [
+   "Chaque ligne est un facteur de f entre 0 et 2 ; la colonne de gauche donne sa valeur en 0, celle de droite sa valeur en 2.",
+   "Le facteur x − 1 passe de −1 (orange) à 1 (vert) : il change de signe en 1, là où il s’annule.",
+   "Les facteurs x + 2 et x² + 1 restent verts : ils sont positifs partout entre 0 et 2.",
+   "La ligne du produit passe de −2 à 20 : elle change de signe au même endroit que x − 1, repéré par le trait pointillé."
+  ],
+  "a_voir": "Le seul facteur qui change de signe est x − 1."
+ },
+ {
+  "code": "69-069",
+  "a_dire": "Le raisonnement de la partie 1 sur x³ − 3x + 1 est maintenant démontré par une factorisation, sans continuité, dans tout corps réel clos.",
+  "legende_titre": "Une observation devenue démonstration",
+  "lecture": [
+   "La courbe grise est celle de la partie 1, entre −2 et 0 ; les points orange sont f(−2) = −1 et f(0) = 1.",
+   "Le point vert est la racine entre −2 et 0, lue sur la courbe.",
+   "La flèche orange « maintenant » mène à la case verte : le même argument est démontré par une factorisation, sans passer par la courbe."
+  ],
+  "a_voir": "Ce qui était lu sur la courbe est maintenant une conséquence du théorème."
+ },
+ {
+  "code": "69-070",
+  "a_dire": "La suite de Sturm commence par f₀ = f et f₁ = f′ ; chaque terme suivant est l’opposé du reste de la division des deux précédents.",
+  "legende_titre": "Construire la suite de Sturm",
+  "lecture": [
+   "Les deux cases bleues du haut sont f₀ = x³ − 3x + 1 et sa dérivée f₁ = 3x² − 3.",
+   "La flèche « diviser f₀ par f₁ » mène à la case grise : le reste r vaut −2x + 1.",
+   "La dernière flèche change le signe du reste et donne la case verte : f₂ = 2x − 1."
+  ],
+  "a_voir": "On divise, on garde le reste, puis on le remplace par son opposé."
+ },
+ {
+  "code": "69-071",
+  "a_dire": "Chaque étape s’écrit f_{j−1} = q_j f_j − f_{j+1} : le dividende est le quotient fois le diviseur, moins le polynôme suivant.",
+  "legende_titre": "Une étape en formule",
+  "lecture": [
+   "La ligne du haut est la formule : dividende f_{j−1} (bleu), quotient q_j (orange), diviseur f_j (violet), polynôme suivant f_{j+1} (vert).",
+   "La ligne du bas met les polynômes du cas j = 1 sous les mêmes couleurs : x³ − 3x + 1, x/3, 3x² − 3 et 2x − 1.",
+   "Les flèches relient chaque lettre à son polynôme."
+  ],
+  "a_voir": "Chaque case de la formule a sa case chiffrée juste en dessous."
+ },
+ {
+  "code": "69-072",
+  "a_dire": "Dans la formule, le dernier terme est écrit avec un signe moins : f_{j+1} n’est pas le reste, c’est l’opposé du reste.",
+  "legende_titre": "Le signe moins devant le dernier terme",
+  "lecture": [
+   "La ligne du haut est la division ordinaire : dividende, quotient, diviseur, puis le reste −2x + 1 en gris avec un signe plus.",
+   "La ligne du bas est la suite de Sturm : les trois premières cases sont les mêmes, puis un signe moins devant la case verte 2x − 1.",
+   "La flèche orange relie le reste −2x + 1 à son opposé 2x − 1."
+  ],
+  "a_voir": "2x − 1 est l’opposé du reste −2x + 1."
+ },
+ {
+  "code": "69-073",
+  "a_dire": "La suite de Sturm est l’algorithme d’Euclide avec le signe de chaque reste renversé.",
+  "legende_titre": "Euclide et Sturm côte à côte",
+  "lecture": [
+   "À gauche, les polynômes de l’algorithme d’Euclide ; à droite, ceux de la suite de Sturm.",
+   "Les deux premières lignes, grises, sont identiques des deux côtés.",
+   "Sur les deux lignes du bas, une flèche orange multiplie par −1 : le reste −2x + 1 devient 2x − 1, et −9/4 devient 9/4."
+  ],
+  "a_voir": "Les restes sont les mêmes au signe près."
+ },
+ {
+  "code": "69-074",
+  "a_dire": "Le dernier terme f_s de la suite est, au signe près, le PGCD de f et de f′, c’est-à-dire leur facteur commun.",
+  "legende_titre": "Le dernier terme et le facteur commun",
+  "lecture": [
+   "La ligne du haut montre les facteurs de f = x³ − 3x + 2 : x − 1, x − 1 et x + 2 ; celle du dessous montre ceux de sa dérivée f′ : x − 1, x + 1 et 3.",
+   "Les deux cases vertes x − 1 sont le facteur commun, relié par la flèche verte à deux pointes.",
+   "La case verte du bas est le dernier terme, 2(x − 1) : le PGCD de f et f′, au signe près."
+  ],
+  "a_voir": "Le facteur x − 1 présent dans f et dans f′ se retrouve dans le dernier terme."
+ },
+ {
+  "code": "69-075",
+  "a_dire": "On renverse le signe pour que le nombre de changements de signe ne bouge qu’aux racines de f.",
+  "legende_titre": "Pourquoi renverser le signe",
+  "lecture": [
+   "Chaque colonne est un point : juste avant 1, en 1, juste après 1 ; chaque case donne les signes de f₀, f₁, f₂ et le nombre V.",
+   "La rangée verte (reste renversé) donne V = 1 dans les trois colonnes : le nombre ne bouge pas en 1, qui n’est pas une racine de f.",
+   "La rangée du bas (reste ordinaire) donne V = 0, 0 puis 2 ; la case rouge est un comptage faux, car il n’y a pas de racine en 1."
+  ],
+  "a_voir": "Avec le signe renversé, V reste constant en 1 ; avec le reste ordinaire, il saute."
+ },
+ {
+  "code": "69-076",
+  "a_dire": "Pour compter V(c), on efface les zéros de la liste des valeurs en c, puis on compte les paires voisines de signes opposés.",
+  "legende_titre": "Compter les changements de signe",
+  "lecture": [
+   "Ligne du haut, c = −2 : la liste est −1, 9, −5, 9/4 ; chaque arc orange marque une paire voisine de signes opposés, soit 3 changements.",
+   "Ligne du bas, c = 1 : la liste est −1, 0, 1, 9/4 ; la case 0 en pointillé est effacée.",
+   "L’arc orange relie −1 et 1, de signes opposés ; la paire 1 et 9/4 n’en a pas : V(1) = 1."
+  ],
+  "a_voir": "On compte les paires voisines de signes opposés, après avoir effacé le zéro."
+ },
+ {
+  "code": "69-077",
+  "a_dire": "Dans la liste 1, −3, −1, 2, il y a deux changements de signe : de 1 à −3, puis de −1 à 2.",
+  "legende_titre": "Un exemple de comptage",
+  "lecture": [
+   "Les quatre cases bleues sont les nombres de la liste ; leur signe est écrit dessous.",
+   "Chaque arc relie deux voisins : orange quand les signes sont opposés, gris quand ils sont les mêmes.",
+   "Il y a deux arcs orange : le total est 2 changements."
+  ],
+  "a_voir": "Deux arcs orange sur trois : deux changements."
+ },
+ {
+  "code": "69-078",
+  "a_dire": "Dans un corps réel clos, le nombre de racines distinctes de f entre a et b est V(a) − V(b) ; sur x² − 2 entre 1 et 2, on trouve 1 − 0 = 1.",
+  "legende_titre": "Le théorème de Sturm sur un cas",
+  "lecture": [
+   "La droite graduée va de a = 1 à b = 2 ; le point vert est la racine de x² − 2 entre les deux.",
+   "Sous chaque borne, une colonne donne les signes de f₀, f₁, f₂ : −, +, + en 1 et +, +, + en 2.",
+   "Les nombres V(1) = 1 et V(2) = 0 sont les changements de signe de chaque colonne.",
+   "La case verte les soustrait : 1 − 0 = 1 racine entre 1 et 2."
+  ],
+  "a_voir": "La différence 1 − 0 est le nombre de racines entre 1 et 2."
+ },
+ {
+  "code": "69-079",
+  "a_dire": "Le théorème a trois prémisses à vérifier, puis une conclusion qui est la soustraction de deux entiers.",
+  "legende_titre": "Trois prémisses, une conclusion",
+  "lecture": [
+   "À gauche, les trois cases bleues numérotées sont les prémisses à vérifier : ℝ est réel clos, f est de degré 3, f(−2) = −1 et f(2) = 3 ne sont pas nuls.",
+   "Les trois traits gris se rejoignent en une seule flèche vers la case verte de droite.",
+   "La conclusion est une soustraction de deux entiers : V(−2) − V(2) = 3 − 0 = 3."
+  ],
+  "a_voir": "On vérifie les trois cases bleues, puis on calcule une seule soustraction."
+ },
+ {
+  "code": "69-080",
+  "a_dire": "On compte des racines, qu’on ne sait pas écrire exactement, en ne calculant que des signes en deux points.",
+  "legende_titre": "Compter sans connaître",
+  "lecture": [
+   "Sur la droite graduée, les trois points verts sont les racines, données seulement par des valeurs approchées : environ −1,88, 0,35 et 1,53.",
+   "Les flèches orange partent des deux bornes seulement, a = −2 et b = 2.",
+   "Les deux cases bleues donnent les signes aux bornes et V : 3 en −2 et 0 en 2.",
+   "La case verte conclut : 3 − 0 = 3 racines, sans les avoir écrites."
+  ],
+  "a_voir": "Seuls les deux bornes servent au calcul ; les racines ne sont pas écrites."
+ },
+ {
+  "code": "69-081",
+  "a_dire": "La courbe de x³ − 3x + 1 entre −2 et 2 coupe l’axe en trois points r₁, r₂, r₃, et les bornes ne sont pas des racines.",
+  "legende_titre": "La courbe entre −2 et 2",
+  "lecture": [
+   "La courbe bleue part de f(a) = −1 en a = −2 et finit à f(b) = 3 en b = 2 ; ces deux valeurs, non nulles, sont marquées par les carrés orange.",
+   "Elle coupe l'axe aux trois points verts r₁, r₂ et r₃, environ −1,88, 0,35 et 1,53.",
+   "Les bornes −2 et 2 ne sont pas des racines : les carrés orange sont hors de l'axe."
+  ],
+  "a_voir": "Trois croisements avec l'axe, et les carrés orange hors de l'axe."
+ },
+ {
+  "code": "69-082",
+  "a_dire": "Une figure ne prouve rien : une racine double ou deux racines très proches ne se voient pas sur le dessin.",
+  "legende_titre": "Ce que la figure ne montre pas",
+  "lecture": [
+   "À gauche, la courbe bleue de (x − 1)²(x + 2) touche l’axe en 1 : un seul point de contact, alors que 1 est une racine double.",
+   "À droite, la courbe violette de x² − 0,01 coupe l’axe en −0,1 et 0,1 : les deux points verts sont à peine séparés.",
+   "Le texte du haut rappelle que la figure donne une idée, pas une preuve."
+  ],
+  "a_voir": "Les deux dessins ont l’air d’avoir un seul point de contact avec l’axe."
+ },
+ {
+  "code": "69-083",
+  "a_dire": "La dérivée de x³ − 3x + 1 se calcule terme par terme : x³ devient 3x², −3x devient −3, et 1 disparaît.",
+  "legende_titre": "Dériver terme par terme",
+  "lecture": [
+   "La case bleue du haut est le polynôme ; dessous, ses trois termes x³, −3x et 1 sont dans les cases bleues de gauche.",
+   "Les flèches orange donnent, à droite, le résultat de chaque terme : 3x², −3 et rien.",
+   "La case verte du bas rassemble les termes : f′ = 3x² − 3."
+  ],
+  "a_voir": "Chaque terme donne son propre résultat, et le terme 1 disparaît."
+ },
+ {
+  "code": "69-084",
+  "a_dire": "Pour passer de f₁ à f₂, on divise x³ − 3x + 1 par 3x² − 3, on obtient le reste −2x + 1, puis on renverse son signe : f₂ = 2x − 1.",
+  "legende_titre": "Première division",
+  "lecture": [
+   "En haut, le dividende bleu x³ − 3x + 1 et le diviseur violet 3x² − 3.",
+   "La case orange donne le quotient x/3 ; la case grise dessous montre que x/3 fois le diviseur vaut x³ − x.",
+   "La case grise suivante soustrait ce produit du dividende et donne le reste −2x + 1.",
+   "La flèche orange renverse le signe et mène à la case verte : f₂ = 2x − 1."
+  ],
+  "a_voir": "Les quatre étapes descendent dans l’ordre : diviser, multiplier, soustraire, renverser."
+ },
+ {
+  "code": "69-085",
+  "a_dire": "La deuxième division, de 3x² − 3 par 2x − 1, a pour reste −9/4 ; en le renversant on obtient la constante f₃ = 9/4.",
+  "legende_titre": "Deuxième division",
+  "lecture": [
+   "La ligne du haut s’écrit : 3x² − 3 (bleu) égale 3x/2 + 3/4 (orange) fois 2x − 1 (violet).",
+   "La case grise est le reste −9/4 ; la flèche orange renverse son signe et donne la case verte f₃ = 9/4.",
+   "En bas, la hauteur des quatre cases bleues et verte baisse avec le degré : 3, 2, 1, 0 ; f₃ est une constante."
+  ],
+  "a_voir": "Le degré baisse à chaque étape et la suite finit sur la constante 9/4."
+ },
+ {
+  "code": "69-086",
+  "a_dire": "Quand le dernier terme est une constante non nulle, le PGCD de f et f′ est constant : f n’a pas de racine multiple.",
+  "legende_titre": "Arrêt sur une constante",
+  "lecture": [
+   "La ligne bleue du haut est la suite de x³ − 3x + 1 : f₀, f₁, f₂, puis f₃ = 9/4 en vert, une constante.",
+   "La case verte dessous en tire que f n’a pas de racine multiple.",
+   "La ligne violette du bas est la suite d’un autre polynôme, x³ − 3x + 2 : son dernier terme 2x − 2 n’est pas constant, ce qui est l’autre situation."
+  ],
+  "a_voir": "Dans la ligne bleue, le dernier terme est une constante ; dans la violette, non."
+ },
+ {
+  "code": "69-087",
+  "a_dire": "On calcule f₀, f₁, f₂, f₃ en −2 et en 2, on garde les signes et on compte les changements : V(−2) = 3 et V(2) = 0.",
+  "legende_titre": "Les signes aux deux bornes",
+  "lecture": [
+   "La colonne de gauche donne les valeurs des quatre polynômes en −2 : −1, 9, −5 et 9/4.",
+   "Les flèches orange marquent les trois changements de signe entre voisins : V = 3.",
+   "La colonne de droite donne les valeurs en 2 : 3, 9, 3 et 9/4, tous positifs, sans flèche : V = 0."
+  ],
+  "a_voir": "Trois flèches à gauche, aucune à droite."
+ },
+ {
+  "code": "69-088",
+  "a_dire": "V(−2) − V(2) = 3 − 0 = 3 : le polynôme a exactement trois racines distinctes entre −2 et 2.",
+  "legende_titre": "La différence et les racines",
+  "lecture": [
+   "Les trois carrés bleus de gauche sont les 3 changements de signe en −2 ; le carré en pointillé est V(2) = 0, sans changement.",
+   "Le signe moins retire 0 : il reste 3 disques verts, les 3 racines.",
+   "La case verte du bas donne la conclusion : trois racines distinctes entre −2 et 2."
+  ],
+  "a_voir": "Trois carrés moins zéro carré font trois disques verts."
+ },
+ {
+  "code": "69-089",
+  "a_dire": "En lisant la ligne V de gauche à droite, on voit 3, 2, 1, 0 : V baisse d’une unité à chaque colonne.",
+  "legende_titre": "Le tableau des signes",
+  "lecture": [
+   "Chaque colonne donne, de haut en bas, les signes de f0, f1, f2, f3 pour x = −2, 0, 1 et 2.",
+   "En x = 1, la valeur de f1 est 0 : on l’efface avant de compter.",
+   "La ligne V en vert donne le nombre de changements de signe de chaque colonne : 3, 2, 1, 0.",
+   "Les flèches orange montrent la baisse d’une colonne à la suivante."
+  ],
+  "a_voir": "Les nombres V baissent de 3 à 0 de gauche à droite."
+ },
+ {
+  "code": "69-090",
+  "a_dire": "En x = 0, les valeurs ont les signes +, −, −, +, donc V(0) = 2 ; V vaut 3 en −2, 2 en 0 et 0 en 2 : il ne remonte pas.",
+  "legende_titre": "Le comptage en x = 0",
+  "lecture": [
+   "En haut, les quatre valeurs en x = 0 sont 1, −3, −1 et 9/4.",
+   "Les arcs orange marquent les deux changements de signe ; l’arc gris entre −3 et −1 n’en marque pas : V(0) = 2.",
+   "En bas, les trois points montrent V en −2, 0 et 2 : 3, 2 et 0 ; le point vert est celui de x = 0."
+  ],
+  "a_voir": "V baisse de gauche à droite : 3, puis 2, puis 0."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+disc(ax,10,30,5,'varie',label='4'); text(ax,10,20,'un seul nombre','varie','s')
+arrow(ax,(16,30),(30,30),'varie'); text(ax,23,35,r'$\bar{4}$','varie','l')
+box(ax,32,14,54,32,'sujet')
+text(ax,37.5,30,'…','sujet','l')
+for x,l,r in [(48,'1','sujet'),(60,'4','varie'),(72,'7','sujet')]: disc(ax,x,30,4.8,r,label=l)
+text(ax,81,30,'…','sujet','l')
+text(ax,59,40,'classe : tous les congrus','sujet','s')
+text(ax,59,52,r'$\bar{4}=\bar{1}$ : même classe','sujet','l'); text(ax,59,9,'un ensemble de nombres','sujet','m')
+save(fig,'47-106')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 6, 46, r'$z =$', 'encre', 'm')
+box(ax, 12, 40, 14, 12, 'fixe', label='2', size='l')
+text(ax, 31, 46, '+', 'encre', 'm')
+box(ax, 36, 40, 14, 12, 'varie', label='3', size='l', lw=1.6)
+box(ax, 52, 40, 12, 12, 'fixe', label=r'$i$', size='l')
+arrow(ax, (43, 39), (43, 30), 'varie')
+box(ax, 30, 18, 26, 11, 'varie', label=r'$b = 3$', size='m')
+box(ax, 62, 18, 22, 11, 'limite', label=r'pas $3\,i$', size='s')
+text(ax, 44, 8, 'b est un nombre réel', 'varie', 's')
+save(fig, '39-043')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 4, 66, 80, 8, 'limite', label=r'$x^2-2$ : pas de racine dans ℚ', size='s')
+box(ax, 4, 6, 80, 54, 'sujet', label=None)
+text(ax, 44, 55, r'corps de rupture ℚ[$x$]/($x^2-2$)', 'sujet', 's', weight='bold')
+box(ax, 9, 14, 30, 33, 'fixe', label=None)
+text(ax, 24, 40, 'ℚ', 'fixe', 'l')
+text(ax, 24, 30, 'les fractions', 'fixe', 's')
+text(ax, 24, 21, 'sont dedans', 'fixe', 's')
+disc(ax, 63, 40, 6.5, 'varie', label=r'$[x]$')
+text(ax, 63, 27, r'$[x]^2=2$', 'resultat', 'm')
+text(ax, 63, 20, 'une racine', 'resultat', 's')
+save(fig, '54-274')

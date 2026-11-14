@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+f = numberline(ax, 6, 76, 18, 0, 180, step=30, every=3, arrow_right=False)
+box(ax, f(0), 22, f(90) - f(0), 10, 'fixe', label='aigu')
+box(ax, f(90), 22, f(180) - f(90), 10, 'varie', label='obtus')
+text(ax, (f(0) + f(90)) / 2, 38, r'$u\cdot v>0$', 'fixe', 'm')
+text(ax, (f(90) + f(180)) / 2, 38, r'$u\cdot v<0$', 'varie', 'm')
+disc(ax, f(96.3), 18, 2.0, 'resultat')
+text(ax, f(96.3) + 2, 7, r'$96{,}3°$ : $u\cdot v=-1$', 'resultat', 's')
+text(ax, 20, 44, 'angle entre les flèches', 'fixe', 's')
+save(fig, '41-136')

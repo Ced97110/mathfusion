@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+disc(ax, 16, 26, 8, 'sujet', label='départ')
+disc(ax, 72, 26, 8, 'varie', label='déplacé', size='s')
+arrow(ax, (24.5, 29), (63.5, 29), 'varie', curve=-0.3)
+text(ax, 44, 41, r'$P$', 'varie', 'l')
+arrow(ax, (63.5, 23), (24.5, 23), 'resultat', curve=-0.3)
+text(ax, 44, 11, r'$P^{-1}$', 'resultat', 'l')
+text(ax, 44, 26, 'ramène au départ', 'resultat', 's')
+text(ax, 44, 3.5, r'$P^{-1}$ défait $P$', 'encre', 'm')
+save(fig, '43-049')

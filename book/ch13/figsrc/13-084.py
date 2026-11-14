@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 56, '12 ÷ 0 : 0 × c = 12 ?', 'sujet', 'l')
+box(ax, 3, 28, 38, 16, 'limite')
+text(ax, 22, 39, 'c positif', 'limite', 's')
+text(ax, 22, 33, '0 × c = 0', 'limite', 'm')
+box(ax, 47, 28, 38, 16, 'limite')
+text(ax, 66, 39, 'c négatif', 'limite', 's')
+text(ax, 66, 33, '0 × c = 0', 'limite', 'm')
+text(ax, 22, 21, '0 ≠ 12', 'limite', 'l')
+text(ax, 66, 21, '0 ≠ 12', 'limite', 'l')
+box(ax, 14, 3, 60, 10, 'fixe', label='aucun c ne convient', size='m')
+save(fig, '13-084')

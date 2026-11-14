@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 64, 'une lettre pour deux termes', 'encre', 's')
+text(ax, 9, 51.5, r'$w=$', 'sujet', 'm')
+text(ax, 9, 35.5, r'$w^2=$', 'autre', 'm')
+box(ax, 16, 46, 28, 11, 'fixe', label=r'$-\frac{1}{2}$')
+box(ax, 48, 46, 38, 11, 'varie', label=r'$+\frac{1}{2}\sqrt{-3}$')
+box(ax, 16, 30, 28, 11, 'fixe', label=r'$-\frac{1}{2}$')
+box(ax, 48, 30, 38, 11, 'varie', label=r'$-\frac{1}{2}\sqrt{-3}$')
+box(ax, 3, 14, 83, 11, 'resultat', label=r'$w^3=1$ et $w\neq1$')
+text(ax, 44, 6, '1, ' + r'$w$' + ', ' + r'$w^2$' + " : les 3 nombres\nde cube 1", 'resultat', 's')
+save(fig, '65-155')

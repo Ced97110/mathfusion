@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+arrow(ax, (4, 88), (11, 88), 'varie', lw=1.3); text(ax, 13, 88, 'échanger', 'varie', 's', ha='left', weight='bold')
+arrow(ax, (50, 88), (57, 88), 'sujet', lw=1.3); text(ax, 59, 88, 'X', 'sujet', 's', ha='left', weight='bold')
+def row(y, X, a, b, e1, e2, role_end, title, ok):
+    text(ax, 4, y + 22, title, 'resultat' if ok else 'limite', 's', ha='left', weight='bold')
+    box(ax, 2, y - 6, 16, 12, 'fixe', label=r'$(1\,;\,0)$', size='s')
+    box(ax, 34, y + 6, 18, 11, 'varie', label=a, size='s')
+    box(ax, 34, y - 17, 18, 11, 'sujet', label=b, size='s')
+    box(ax, 68, y + 6, 18, 11, role_end, label=e1, size='s')
+    box(ax, 68, y - 17, 18, 11, role_end, label=e2, size='s')
+    arrow(ax, (18.5, y + 3), (33.5, y + 10), 'varie', lw=1.2); arrow(ax, (52.5, y + 11.5), (67.5, y + 11.5), 'sujet', lw=1.2)
+    arrow(ax, (18.5, y - 3), (33.5, y - 10), 'sujet', lw=1.2); arrow(ax, (52.5, y - 11.5), (67.5, y - 11.5), 'varie', lw=1.2)
+row(60, 'D', r'$(0\,;\,1)$', r'$(2\,;\,0)$', r'$(0\,;\,2)$', r'$(0\,;\,2)$', 'resultat', r'X = doubler : dans $\mathrm{End}_R\,M$', True)
+row(18, 'C', r'$(0\,;\,1)$', r'$(1\,;\,0)$', r'$(1\,;\,1)$', r'$(0\,;\,1)$', 'limite', 'X = cisaillement : pas dedans', False)
+save(fig, '57-178')

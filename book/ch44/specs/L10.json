@@ -1,0 +1,194 @@
+[
+ {
+  "code": "44-144",
+  "a_dire": "Pour additionner modulo n, on additionne des entiers comme d'habitude, puis on garde le reste de la division par n.",
+  "legende_titre": "Additionner deux classes avec des entiers",
+  "lecture": [
+   "Le cadre bleu montre un entier choisi dans chaque classe : 7 et 4.",
+   "Le cadre orange montre leur somme ordinaire : 11.",
+   "Le cadre vert montre le reste de 11 divisé par 5 : 1.",
+   "La ligne du bas écrit la division : 11 = 2 × 5 + 1."
+  ],
+  "a_voir": "Il faut voir trois étapes : choisir, additionner, garder le reste."
+ },
+ {
+  "code": "44-145",
+  "a_dire": "Pour multiplier modulo n, on multiplie, puis on garde le reste de la division par n.",
+  "legende_titre": "Un produit trop grand ramené au reste",
+  "lecture": [
+   "Les 15 cases représentent le produit 3 × 5.",
+   "Les 8 premières cases grises forment un tour de 8.",
+   "Les 7 cases vertes qui restent forment le reste.",
+   "La ligne du bas écrit la division : quotient 1, reste 7."
+  ],
+  "a_voir": "Il faut voir que le reste est ce qui dépasse les tours complets."
+ },
+ {
+  "code": "44-146",
+  "a_dire": "L'addition 7 + 4 modulo 5 se fait en trois temps : somme 11, division 11 = 2 × 5 + 1, reste 1.",
+  "legende_titre": "Les étapes de 7 + 4 modulo 5",
+  "lecture": [
+   "L'arc bleu va de 0 à 7, l'arc orange avance de 4 et arrive à 11.",
+   "Les deux accolades grises comptent deux tours de 5.",
+   "L'accolade verte montre ce qui reste après les tours : 1.",
+   "La ligne verte conclut 7 + 4 ≡ 1 (mod 5)."
+  ],
+  "a_voir": "Il faut voir 11 découpé en deux tours de 5 et un reste de 1."
+ },
+ {
+  "code": "44-147",
+  "a_dire": "Modulo 5, 7 × 3 laisse le reste 1 : la classe de 3 défait la classe de 7.",
+  "legende_titre": "7 fois 3 modulo 5",
+  "lecture": [
+   "Les 21 cases représentent le produit 7 × 3, rangées par lignes de 5.",
+   "Les 20 cases grises forment 4 lignes pleines de 5.",
+   "La case verte seule est le reste : 1.",
+   "La dernière ligne dit que 3 défait 7 modulo 5."
+  ],
+  "a_voir": "Il faut voir 4 lignes pleines et une case qui reste."
+ },
+ {
+  "code": "44-148",
+  "a_dire": "Modulo 8, le produit 3 × 5 = 15 dépasse 7 et revient parmi les noms de classe : 15 = 8 + 7, donc le reste est 7.",
+  "legende_titre": "15 pas sur une horloge de 8",
+  "lecture": [
+   "Les 8 disques sont les noms de classe 0 à 7.",
+   "La spirale grise fait un tour complet de 8 pas.",
+   "La spirale verte fait les 7 pas suivants et arrive sur le disque vert, 7.",
+   "Les textes de droite écrivent 15 = 8 + 7."
+  ],
+  "a_voir": "Il faut voir qu'un tour complet ne change pas la position."
+ },
+ {
+  "code": "44-149",
+  "a_dire": "Modulo 12, 3 × 4 donne 0 alors que 3 et 4 ne sont pas 0 : deux non-nuls ont un produit nul.",
+  "legende_titre": "Un produit nul avec deux facteurs non nuls",
+  "lecture": [
+   "Les quatre cadres bleus sont quatre groupes de 3.",
+   "L'accolade orange montre que ces groupes remplissent les 12 cases d'un tour entier.",
+   "La ligne rouge du haut rappelle que 3 et 4 ne sont pas 0.",
+   "La ligne rouge du bas écrit le résultat : 3 × 4 ≡ 0 (mod 12)."
+  ],
+  "a_voir": "Il faut voir 12 cases remplies exactement : le reste est 0."
+ },
+ {
+  "code": "44-150",
+  "a_dire": "La propriété du produit nul est vraie dans les entiers, mais fausse dans ℤ_12, parce que sa preuve divise.",
+  "legende_titre": "Produit nul : vrai dans ℤ, faux dans ℤ_12",
+  "lecture": [
+   "Le cadre vert donne la propriété dans ℤ : si a × b = 0, alors a = 0 ou b = 0.",
+   "Le cadre rouge donne un cas de ℤ_12 : 3 × 4 ≡ 0 avec 3 et 4 non nuls.",
+   "Sous le cadre vert, la preuve divise par a.",
+   "Sous le cadre rouge, 3 n'a pas d'inverse, donc on ne peut pas diviser."
+  ],
+  "a_voir": "Il faut voir les deux cadres côte à côte, l'un vrai, l'autre faux."
+ },
+ {
+  "code": "44-151",
+  "a_dire": "Modulo 12, on ne peut pas diviser par 3, car aucun nombre v ne donne 3v ≡ 1.",
+  "legende_titre": "Aucun v ne donne 3 × v ≡ 1",
+  "lecture": [
+   "Les 12 disques sont les restes possibles modulo 12.",
+   "Les disques orange 0, 3, 6, 9 sont les seuls restes que 3 × v peut donner.",
+   "Le disque rouge 1 est le reste cherché : il n'est pas atteint.",
+   "Le texte du centre pose la question 3 × v ≡ 1."
+  ],
+  "a_voir": "Il faut voir que le disque rouge n'est pas orange."
+ },
+ {
+  "code": "44-152",
+  "a_dire": "Modulo n, a + b et b + a donnent le même entier, donc le même reste.",
+  "legende_titre": "3 + 4 et 4 + 3 modulo 5",
+  "lecture": [
+   "La première rangée met 3 (bleu) puis 4 (orange).",
+   "La deuxième rangée met 4 (orange) puis 3 (bleu).",
+   "Les deux rangées ont la même longueur : 7.",
+   "La ligne verte donne le même reste : 2."
+  ],
+  "a_voir": "Il faut voir deux ordres qui remplissent la même longueur."
+ },
+ {
+  "code": "44-153",
+  "a_dire": "Modulo n, a × b et b × a donnent le même entier, donc le même reste.",
+  "legende_titre": "3 × 4 et 4 × 3 modulo 5",
+  "lecture": [
+   "Le tableau bleu a 3 lignes de 4 points.",
+   "Le tableau violet a 4 lignes de 3 points.",
+   "Les deux tableaux ont 12 points.",
+   "La ligne verte donne le même reste : 2."
+  ],
+  "a_voir": "Il faut voir deux tableaux de même nombre de points."
+ },
+ {
+  "code": "44-154",
+  "a_dire": "Modulo n, on peut grouper les termes d'une somme de deux façons : l'entier est le même, donc le reste aussi.",
+  "legende_titre": "Deux groupements de 2 + 3 + 4",
+  "lecture": [
+   "Les trois cadres sont 2 (bleu), 3 (orange) et 4 (violet).",
+   "L'accolade du haut groupe 2 et 3 d'abord.",
+   "L'accolade du bas groupe 3 et 4 d'abord.",
+   "Les deux groupements donnent 9, de reste 4 modulo 5."
+  ],
+  "a_voir": "Il faut voir la même rangée de 9, groupée de deux façons."
+ },
+ {
+  "code": "44-155",
+  "a_dire": "Modulo n, une multiplication de trois nombres donne le même entier quel que soit le groupement, donc le même reste.",
+  "legende_titre": "Un produit de trois nombres en volume",
+  "lecture": [
+   "Le bloc est fait de 2 × 3 × 4 cubes.",
+   "Les chiffres 2, 3 et 4 donnent les trois côtés du bloc.",
+   "Les deux premières lignes écrivent les deux groupements : 24 dans les deux cas.",
+   "La ligne verte donne le reste de 24 modulo 5 : 4."
+  ],
+  "a_voir": "Il faut voir un seul bloc de 24 cubes, quel que soit le groupement."
+ },
+ {
+  "code": "44-156",
+  "a_dire": "Modulo n, ajouter 0 laisse chaque classe à sa place : 0 est neutre pour l'addition.",
+  "legende_titre": "Ajouter 0 ne change aucune classe",
+  "lecture": [
+   "La colonne de gauche liste les classes avant : 0 à 4.",
+   "La colonne de droite liste les classes après avoir ajouté 0.",
+   "Chaque trait relie une classe à elle-même.",
+   "Le trait vert relie 3 à 3 : 3 + 0 ≡ 3."
+  ],
+  "a_voir": "Il faut voir que tous les traits restent horizontaux."
+ },
+ {
+  "code": "44-157",
+  "a_dire": "Modulo n, 1 laisse chaque classe inchangée, alors qu'un autre nombre comme 2 la change : 1 est neutre pour la multiplication.",
+  "legende_titre": "1 laisse 3 inchangé, pas 2",
+  "lecture": [
+   "À gauche, 1 × 3 donne 3 points verts : le reste est 3.",
+   "À droite, 2 × 3 donne 6 points : 5 gris et 1 rouge.",
+   "Le point rouge est le reste : 1, qui n'est pas 3.",
+   "La ligne verte du bas dit que 1 est le neutre."
+  ],
+  "a_voir": "Il faut voir 3 inchangé à gauche et un autre reste à droite."
+ },
+ {
+  "code": "44-158",
+  "a_dire": "Modulo n, la multiplication se distribue sur l'addition : 2 × (3 + 4) = 2 × 3 + 2 × 4.",
+  "legende_titre": "Distribuer 2 sur 3 + 4",
+  "lecture": [
+   "Le tableau a 2 lignes et 7 colonnes de points.",
+   "Les 3 colonnes bleues sont 3 ; les 4 colonnes orange sont 4.",
+   "Les accolades du bas comptent 2 × 3 = 6 et 2 × 4 = 8.",
+   "La ligne verte donne 14, de reste 0 modulo 7."
+  ],
+  "a_voir": "Il faut voir un tableau coupé en deux parties dont les points s'additionnent."
+ },
+ {
+  "code": "44-159",
+  "a_dire": "Modulo n, l'opposé de a est n − a, car a + (n − a) = n et n a pour reste 0.",
+  "legende_titre": "L'opposé de a dans une rangée de n",
+  "lecture": [
+   "La rangée entière a n = 5 cases.",
+   "Le cadre bleu prend a = 2 cases.",
+   "Le cadre orange prend les n − a = 3 cases qui restent.",
+   "Les lignes vertes disent que 2 + 3 = 5 ≡ 0 modulo 5."
+  ],
+  "a_voir": "Il faut voir a et n − a remplir ensemble les n cases."
+ }
+]

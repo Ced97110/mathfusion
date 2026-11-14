@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'$5(s+t)^2 + 6(s+t)(s-t) + 5(s-t)^2$', 'sujet', 's')
+box(ax, 8, 40, 22, 9, 'varie', label=r'$+10st$', size='s')
+box(ax, 58, 40, 22, 9, 'varie', label=r'$-10st$', size='s')
+text(ax, 44, 44.5, 's’annulent', 'varie', 's')
+arrow(ax, (30, 44.5), (35, 44.5), 'varie'); arrow(ax, (58, 44.5), (53, 44.5), 'varie')
+box(ax, 18, 25, 52, 9, 'resultat', label=r'$16s^2 + 4t^2$', size='m')
+text(ax, 44, 17.5, r'essai : $s = t = 1$, point $(2,\ 0)$', 'encre', 's')
+box(ax, 4, 3, 36, 9, 'sujet', label=r'$5 \times 4 = 20$', size='s')
+box(ax, 48, 3, 36, 9, 'resultat', label=r'$16 + 4 = 20$', size='s')
+text(ax, 44, 7.5, '=', 'resultat', 'l')
+save(fig, '71-172')

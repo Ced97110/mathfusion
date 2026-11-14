@@ -1,0 +1,181 @@
+[
+ {
+  "code": "73-177",
+  "a_dire": "Pour q = 7, on part de 2 016 matrices inversibles, on divise par 6, puis par 2, et on obtient 168.",
+  "legende_titre": "Les trois calculs qui donnent 168 pour q = 7",
+  "lecture": [
+   "Les deux premières cases grises sont 2 016 et 336 : ce sont des nombres de matrices.",
+   "Les flèches orange sont les deux divisions : par 6 (q − 1), puis par 2 (le pgcd).",
+   "La case verte est le résultat : 168, l'ordre du groupe."
+  ],
+  "a_voir": "Les deux divisions successives qui mènent de 2 016 à 168."
+ },
+ {
+  "code": "73-178",
+  "a_dire": "Pour q = 3, on divise 48 par 2 pour obtenir 24, puis 24 par 2 pour obtenir 12.",
+  "legende_titre": "Le détail du calcul pour trois éléments",
+  "lecture": [
+   "La rangée grise a 48 petites cases : les matrices inversibles.",
+   "La rangée bleue en a 24 : celles de déterminant 1, deux fois moins.",
+   "La rangée verte en a 12 : on divise encore par 2 à cause du centre {1, −1}."
+  ],
+  "a_voir": "Chaque rangée est deux fois plus courte que la précédente."
+ },
+ {
+  "code": "73-179",
+  "a_dire": "Le groupe a 6 éléments : il range 3 droites de 6 façons, c'est S₃, qui contient A₃ normal donc n'est pas simple.",
+  "legende_titre": "Trois droites rangées de toutes les façons",
+  "lecture": [
+   "Le triangle bleu montre les trois droites 1, 2 et 3.",
+   "Les six cases sont les six façons de les ranger.",
+   "Les trois cases vertes, dans le cadre en pointillés, sont les façons qui ne changent rien ou qui font tourner les droites : elles forment A₃, un sous-groupe normal.",
+   "Les trois cases orange sont les échanges de deux droites."
+  ],
+  "a_voir": "3 + 3 = 6 façons : le groupe contient A₃ normal, donc il n'est pas simple."
+ },
+ {
+  "code": "73-180",
+  "a_dire": "A₄ a 12 éléments ; 4 d'entre eux forment le sous-groupe normal de Klein, donc A₄ n'est pas simple.",
+  "legende_titre": "Un sous-groupe de 4 permutations dans 12",
+  "lecture": [
+   "La rangée bleue montre les 4 éléments du sous-groupe de Klein.",
+   "Les 8 cases grises sont les autres éléments, tous des cycles.",
+   "Le texte rouge donne la conclusion : le groupe n'est pas simple."
+  ],
+  "a_voir": "Un sous-groupe normal de 4 éléments se trouve dans les 12."
+ },
+ {
+  "code": "73-181",
+  "a_dire": "Parmi les 120 façons de ranger 5 objets, 60 sont paires : c'est A₅, et le tableau donne 60 pour q = 4 et q = 5.",
+  "legende_titre": "Le groupe de 60 éléments dans les 120 rangements",
+  "lecture": [
+   "Le bloc vert a 60 petites cases : les rangements pairs, soit A₅.",
+   "Le bloc gris a 60 petites cases : les rangements impairs.",
+   "Les deux cases bleues, q = 4 et q = 5, donnent 60 : elles pointent vers le bloc vert."
+  ],
+  "a_voir": "Deux corps différents donnent un groupe de 60 éléments, comme A₅."
+ },
+ {
+  "code": "73-182",
+  "a_dire": "Les groupes alternés sur 3 à 7 objets ont 3, 12, 60, 360 et 2 520 éléments ; aucun n'en a 168, donc le groupe de 168 éléments est d'une autre famille.",
+  "legende_titre": "168 n'est l'ordre d'aucun groupe alterné",
+  "lecture": [
+   "Les cases grises de la rangée du haut donnent les ordres des groupes alternés.",
+   "Le signe rouge ≠ dit que 168 n'est aucun de ces nombres.",
+   "La case violette est le groupe de 168 éléments, d'une autre famille."
+  ],
+  "a_voir": "168 est absent de la rangée des groupes alternés."
+ },
+ {
+  "code": "73-183",
+  "a_dire": "Pour n = 1, une matrice est un nombre : inversible si non nul, de déterminant 1 seulement si c'est 1, et sans case hors diagonale pour une transvection.",
+  "legende_titre": "Une matrice de taille 1 est un nombre",
+  "lecture": [
+   "La case verte 5 est inversible ; la case rouge 0 ne l'est pas.",
+   "La case bleue 1 est le seul nombre de déterminant 1 ; le produit 5 × 3 = 3 × 5 montre que le groupe est commutatif.",
+   "Dans la matrice 2 sur 2, la case orange est hors diagonale ; la case barrée de rouge n'a aucune case de ce genre."
+  ],
+  "a_voir": "Avec une seule case, il n'y a pas de case hors diagonale."
+ },
+ {
+  "code": "73-184",
+  "a_dire": "Les 120 matrices de déterminant 1 du corps à 5 éléments agissent sur seulement 6 droites.",
+  "legende_titre": "Cent vingt matrices rangent six droites",
+  "lecture": [
+   "Le bloc gris contient 120 petites cases : les matrices.",
+   "La flèche orange dit que chaque matrice agit sur les droites.",
+   "Les 6 disques bleus sont les 6 droites du plan."
+  ],
+  "a_voir": "On étudie 6 droites au lieu de 120 matrices."
+ },
+ {
+  "code": "73-185",
+  "a_dire": "Avec S₃, deux conditions sont vraies et la condition G = G′ est fausse : le groupe n'est pas simple, donc elle ne peut pas manquer.",
+  "legende_titre": "Les trois conditions ne se passent pas de l'une d'elles",
+  "lecture": [
+   "Le triangle gris montre les trois droites rangées par S₃.",
+   "Les cases vertes avec ✓ sont les conditions vraies pour S₃ : tout couple va sur tout couple, et les conjugués de l'échange engendrent S₃.",
+   "La case rouge avec ✗ est la condition fausse : G = G′.",
+   "Le texte du bas dit que S₃ contient A₃ normal."
+  ],
+  "a_voir": "Deux conditions sont vraies, une seule est fausse, et cela suffit pour que S₃ ne soit pas simple."
+ },
+ {
+  "code": "73-186",
+  "a_dire": "Les symétries du carré gardent les paquets {1, 3} et {2, 4}, mais l'échange de 1 et 2 envoie {1, 3} sur {2, 3}, qui n'est pas un paquet.",
+  "legende_titre": "Respecter un partage en paquets",
+  "lecture": [
+   "À gauche, la diagonale bleue {1, 3} et la diagonale violette {2, 4} sont les deux paquets.",
+   "À droite, la flèche orange échange 1 et 2.",
+   "Le segment rouge {2, 3} est l'image de {1, 3} : ce n'est pas un paquet."
+  ],
+  "a_voir": "À gauche les paquets sont gardés, à droite l'un d'eux est cassé."
+ },
+ {
+  "code": "73-187",
+  "a_dire": "Si un paquet contient 1 et 2, un élément peut envoyer 1 sur 1 et 2 sur 3 ; l'image {1, 3} n'est ni égale ni disjointe, donc le paquet ne peut pas exister.",
+  "legende_titre": "Un paquet qui touche son image sans lui être égal",
+  "lecture": [
+   "La rangée du haut montre le paquet {1, 2} en bleu.",
+   "Les flèches orange montrent où vont 1 et 2 : 1 reste, 2 va en 3.",
+   "La rangée du bas montre l'image {1, 3} en violet."
+  ],
+  "a_voir": "L'image a la droite 1 en commun avec le paquet, mais n'est pas le même paquet."
+ },
+ {
+  "code": "73-188",
+  "a_dire": "Avec le corps à 2 éléments, le groupe a 6 éléments et son groupe dérivé en a 3 : la condition G = G′ est fausse.",
+  "legende_titre": "Le groupe dérivé est plus petit que le groupe",
+  "lecture": [
+   "Le cadre en pointillés contient les 6 éléments du groupe.",
+   "Les 3 disques violets sont le groupe dérivé.",
+   "Le signe rouge ≠ dit que le dérivé n'est pas tout le groupe."
+  ],
+  "a_voir": "3 éléments dérivés sur 6 : le dérivé est plus petit."
+ },
+ {
+  "code": "73-189",
+  "a_dire": "Les cisaillements parallèles à l'axe laissent chaque point de l'axe en place, et leurs pentes s'ajoutent : 2 plus 3 donne 5.",
+  "legende_titre": "Des cisaillements qui s'ajoutent et laissent l'axe en place",
+  "lecture": [
+   "La droite bleue du bas est l'axe : chacun de ses points reste en place.",
+   "Sur la droite graduée, la flèche orange + 2 puis la flèche orange + 3 se suivent.",
+   "La flèche verte + 5 est le résultat des deux."
+  ],
+  "a_voir": "Deux cisaillements de pentes 2 et 3 donnent un cisaillement de pente 5."
+ },
+ {
+  "code": "73-190",
+  "a_dire": "Un sous-groupe normal H qui atteint toutes les droites, avec un quotient commutatif, contient le groupe dérivé, qui est tout le groupe.",
+  "legende_titre": "Les trois étapes de la preuve avec S₃",
+  "lecture": [
+   "En haut, G est le groupe entier et H un sous-groupe normal.",
+   "À l'étape 1, les flèches orange partent de la droite 1 vers 2 et 3 : H atteint toutes les droites.",
+   "À l'étape 2, la case bleue H et la case grise H · échange couvrent tout G : le quotient est commutatif.",
+   "À l'étape 3, la case verte dit que H contient le dérivé, qui est G : donc H = G. Le texte rouge dit que dans S₃ cette étape manque."
+  ],
+  "a_voir": "Sans l'étape 3, H = A₃ passe les deux premières étapes sans être S₃."
+ },
+ {
+  "code": "73-191",
+  "a_dire": "Tourner de 40 degrés puis de 70 degrés revient à tourner de 110 degrés.",
+  "legende_titre": "Deux rotations mises bout à bout",
+  "lecture": [
+   "L'arc bleu est la première rotation, de 40 degrés.",
+   "L'arc orange commence là où le bleu finit : c'est la seconde, de 70 degrés.",
+   "L'arc vert, plus grand, va du départ à l'arrivée : 110 degrés."
+  ],
+  "a_voir": "Les deux arcs se suivent et font l'arc vert de 110 degrés."
+ },
+ {
+  "code": "73-192",
+  "a_dire": "En multipliant deux matrices de quart de tour, la case en haut à gauche vaut 0 × 0 − 1 × 1 = −1, qui est le cosinus de 180 degrés.",
+  "legende_titre": "Deux quarts de tour donnent un demi-tour",
+  "lecture": [
+   "Les deux matrices du produit ont chacune 0, −1, 1, 0.",
+   "Les cases orange sont la ligne du haut de la première et la colonne de gauche de la seconde.",
+   "La case verte du résultat vaut −1."
+  ],
+  "a_voir": "La case verte −1 vient du calcul des cases orange."
+ }
+]

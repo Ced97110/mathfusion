@@ -1,0 +1,180 @@
+[
+ {
+  "code": "28-049",
+  "a_dire": "𝜃 compte maintenant une rotation avec un signe, pas l’ouverture d’un coin de triangle.",
+  "legende_titre": "Avant : un coin. Après : une rotation",
+  "lecture": [
+   "Le triangle gris montre l’ancien sens : un coin de 30°, entre 0° et 90°.",
+   "Les deux flèches montrent le nouveau sens : bleu, +130° tourne dans un sens ; orange, −310° tourne dans l’autre sens.",
+   "Le trait en tirets gris est le point de départ de la rotation."
+  ],
+  "a_voir": "Les nombres 130° et −310° disent un mouvement et son sens."
+ },
+ {
+  "code": "28-050",
+  "a_dire": "cos 𝜃 et sin 𝜃 sont des coordonnées : des nombres avec un signe, qui peuvent être négatifs.",
+  "legende_titre": "Un nombre qui dit à gauche ou à droite",
+  "lecture": [
+   "Le point P est atteint après une rotation de 130°.",
+   "Le trait bleu va de l’origine au-dessous de P : c’est cos 𝜃, et il va vers la gauche.",
+   "Le trait violet va de l’axe horizontal à P : c’est sin 𝜃, et il va vers le haut."
+  ],
+  "a_voir": "Le trait bleu est à gauche de l’origine, donc cos 𝜃 est négatif."
+ },
+ {
+  "code": "28-051",
+  "a_dire": "tan 𝜃 est la pente de la droite OP : la montée divisée par l’avancée.",
+  "legende_titre": "Ce que mesure la tangente",
+  "lecture": [
+   "La droite bleue passe par l’origine O et par le point P.",
+   "Le trait violet est l’avancée, de O jusqu’au-dessous de P, vers la gauche.",
+   "Le trait orange est la montée, jusqu’à P."
+  ],
+  "a_voir": "Montée divisée par avancée donne tan 𝜃, ici environ −1,19 : la droite descend vers la droite."
+ },
+ {
+  "code": "28-052",
+  "a_dire": "On part d’un angle (un nombre), on tourne, on arrive en un point, et on lit deux nombres.",
+  "legende_titre": "Quatre étapes dans l’ordre",
+  "lecture": [
+   "La case bleue de gauche est le nombre 130°.",
+   "La case orange montre le geste : une rotation depuis le trait en tirets.",
+   "La case bleue suivante montre le point P sur le cercle.",
+   "La case verte donne les deux nombres lus : x et y."
+  ],
+  "a_voir": "Chaque case mène à la suivante, de l’angle jusqu’aux deux coordonnées."
+ },
+ {
+  "code": "28-053",
+  "a_dire": "La nouvelle définition doit donner le même nombre que l’ancienne là où l’ancienne existe.",
+  "legende_titre": "Deux définitions, un seul sinus",
+  "lecture": [
+   "Le cadre violet est l’ancienne définition ; le cadre bleu est la nouvelle.",
+   "Les deux cadres verts donnent 0,5 pour 30° et sont égaux.",
+   "Le cadre rouge en tirets montre le cas à éviter : un autre nombre, 0,6."
+  ],
+  "a_voir": "Les deux définitions doivent donner 0,5 : sinon un même angle aurait deux sinus."
+ },
+ {
+  "code": "28-054",
+  "a_dire": "Entre 0° et 90°, le triangle ONP d’hypoténuse 1 donne le même sinus que la nouvelle définition.",
+  "legende_titre": "Le triangle dans le quart de cercle",
+  "lecture": [
+   "Le triangle bleu a un côté orange de longueur 1 (le rayon OP), un côté de 0,866 et un côté de 0,5.",
+   "Le point P est au bout du côté orange, sur le cercle.",
+   "À droite, la division par OP donne y ÷ 1, donc y."
+  ],
+  "a_voir": "Diviser par l’hypoténuse 1 ne change rien : le résultat est y."
+ },
+ {
+  "code": "28-055",
+  "a_dire": "Avec un rayon de 1, la division par le rayon disparaît : la hauteur est le sinus.",
+  "legende_titre": "Pourquoi le rayon vaut 1",
+  "lecture": [
+   "L’arc violet est le cercle de rayon 2 ; sa hauteur est 1, à diviser par 2.",
+   "L’arc bleu est le cercle de rayon 1 ; sa hauteur est 0,5.",
+   "Les deux points sont sur la même droite en tirets, à 30°."
+  ],
+  "a_voir": "Sur le cercle de rayon 1, la hauteur est déjà le sinus, sans division."
+ },
+ {
+  "code": "28-056",
+  "a_dire": "Après 90°, le triangle n’existe plus mais le point P et ses deux coordonnées existent toujours.",
+  "legende_titre": "Après 90°, le point continue",
+  "lecture": [
+   "Le triangle bleu à droite est à 30° : il existe.",
+   "Le trait orange est tourné de 130° : il n’y a pas de triangle.",
+   "Les tirets orange mènent de P à x et à y."
+  ],
+  "a_voir": "Pour 130°, le point P a quand même deux coordonnées, x et y."
+ },
+ {
+  "code": "28-057",
+  "a_dire": "Le triangle de M est le triangle de P agrandi r fois, donc les deux coordonnées sont multipliées par r.",
+  "legende_titre": "Un triangle agrandi",
+  "lecture": [
+   "Le petit triangle bleu est celui du point P du cercle.",
+   "Le grand triangle violet est celui du point M, sur le même trait orange.",
+   "La flèche orange dit : tout est multiplié par r."
+  ],
+  "a_voir": "Avec r = 17, on obtient environ 14,72 et 8,5."
+ },
+ {
+  "code": "28-058",
+  "a_dire": "M a pour coordonnées r cos 𝜃 et r sin 𝜃 : on multiplie cos 𝜃 et sin 𝜃 par r.",
+  "legende_titre": "De r et 𝜃 aux coordonnées de M",
+  "lecture": [
+   "La flèche orange en arc montre la rotation de 210°.",
+   "Le trait bleu va de l’origine au point vert M.",
+   "Les tirets orange donnent les deux coordonnées de M : −14,72 et −8,5.",
+   "À droite, chaque nombre est multiplié par 17."
+  ],
+  "a_voir": "M est à gauche et en dessous de l’origine."
+ },
+ {
+  "code": "28-059",
+  "a_dire": "La distance de M à l’origine est r = racine carrée de (x² + y²).",
+  "legende_titre": "La distance par les carrés",
+  "lecture": [
+   "Le triangle bleu a deux côtés de longueur 3 et 4.",
+   "Le carré gris 9 et le carré gris 16 sont construits sur ces côtés.",
+   "Le carré vert 25 est construit sur le côté orange, qui est la distance r."
+  ],
+  "a_voir": "9 + 16 = 25, donc la distance r vaut 5."
+ },
+ {
+  "code": "28-060",
+  "a_dire": "cos 𝜃 est l’abscisse x divisée par la distance r.",
+  "legende_titre": "Le cosinus par la division",
+  "lecture": [
+   "Le point bleu M est à gauche de l’axe vertical.",
+   "Le trait orange sous l’axe est l’abscisse x = −3.",
+   "Le trait bleu de O à M est la distance r = 5."
+  ],
+  "a_voir": "−3 divisé par 5 donne −0,6 : le signe vient de x."
+ },
+ {
+  "code": "28-061",
+  "a_dire": "sin 𝜃 est l’ordonnée y divisée par la distance r, et reste le même sur toute la demi-droite.",
+  "legende_titre": "Trois points, un seul sinus",
+  "lecture": [
+   "Les trois points sont sur la même demi-droite grise.",
+   "Chaque trait en tirets est l’ordonnée y de son point : 8, 4 et 2.",
+   "À gauche, chaque couleur donne la division de son point."
+  ],
+  "a_voir": "Les trois divisions donnent 0,8."
+ },
+ {
+  "code": "28-062",
+  "a_dire": "Diviser les coordonnées par r ramène le point M sur le cercle de rayon 1, avec cos 𝜃 et sin 𝜃.",
+  "legende_titre": "Ramener M sur le cercle de rayon 1",
+  "lecture": [
+   "Le point violet est M, de coordonnées −6 et 8, à la distance 10.",
+   "La flèche orange divise ses deux coordonnées par 10.",
+   "Le point vert est sur le petit cercle bleu, de rayon 1."
+  ],
+  "a_voir": "Le point obtenu a pour coordonnées cos 𝜃 et sin 𝜃."
+ },
+ {
+  "code": "28-063",
+  "a_dire": "Un angle du quadrant II est un angle dont le côté final tombe en haut à gauche.",
+  "legende_titre": "Les quatre quadrants",
+  "lecture": [
+   "Les deux axes découpent le cercle en quatre régions I, II, III et IV.",
+   "La région II est en bleu.",
+   "Le trait orange est le côté final : il est tourné de 130° et tombe dans cette région."
+  ],
+  "a_voir": "Le côté final à 130° est dans le quadrant II."
+ },
+ {
+  "code": "28-064",
+  "a_dire": "Les signes de cos 𝜃 et sin 𝜃 sont les signes de x et de y pour le point P.",
+  "legende_titre": "Quatre régions, quatre paires de signes",
+  "lecture": [
+   "Chaque région porte les signes de x puis de y.",
+   "Le trait bleu est tourné de 210° depuis la partie droite de l’axe horizontal.",
+   "Le point P est dans la région en bleu : x et y sont tous deux négatifs."
+  ],
+  "a_voir": "Les signes de cos 𝜃 et sin 𝜃 sont ceux de x et de y."
+ }
+]

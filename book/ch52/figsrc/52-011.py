@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,14,62,60,15,'sujet')
+text(ax,44,72,'idéal','sujet','xl',weight='bold')
+text(ax,44,65.5,'pour multiplier les paquets','sujet','s')
+box(ax,2,8,40,42,'resultat'); box(ax,46,8,40,42,'limite')
+arrow(ax,(30,62),(22,50.8),'sujet'); arrow(ax,(58,62),(66,50.8),'sujet')
+text(ax,22,45,'convient','resultat','m',weight='bold'); text(ax,66,45,'ne convient pas','limite','m',weight='bold')
+text(ax,22,36,'multiples de 12','resultat','s'); text(ax,22,27,'0, 12, 24, …','resultat','m')
+text(ax,22,18,'× un entier :','resultat','s'); text(ax,22,12.5,'reste dedans','resultat','s')
+text(ax,66,36,'nombres impairs','limite','s'); text(ax,66,27,'1, 3, 5, …','limite','m')
+text(ax,66,18,'le 0 n’y est pas :','limite','s'); text(ax,66,12.5,'pas d’addition','limite','s')
+save(fig,'52-011')

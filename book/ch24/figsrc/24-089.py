@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 18, 51, 52, 9, 'sujet', label=r'solution : $(3, 2)$', size='m')
+arrow(ax, (30, 50), (22, 42), 'varie'); arrow(ax, (58, 50), (66, 42), 'varie')
+box(ax, 3, 32, 38, 9, 'fixe', label=r'$x - y = 1$', size='m')
+box(ax, 47, 32, 38, 9, 'fixe', label=r'$x + y = 7$', size='m')
+arrow(ax, (22, 31), (22, 24), 'varie'); arrow(ax, (66, 31), (66, 24), 'varie')
+box(ax, 3, 15, 38, 9, 'resultat', label=r'$3 - 2 = 1$', size='m')
+box(ax, 47, 15, 38, 9, 'limite', label=r'$3 + 2 = 5 \neq 7$', size='m')
+text(ax, 22, 8, 'vrai : rien enlevé', 'resultat', 's')
+text(ax, 66, 8, 'faux : solution perdue', 'limite', 's')
+save(fig, '24-089')

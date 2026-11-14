@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+y = 30
+f = numberline(ax, 6, 70, y, -4, 6, labels=False, arrow_right=True)
+for v in (-1, 4): text(ax, f(v), y - 4.5, f'{v}'.replace('-', '−'), 'encre', 's')
+text(ax, 44, 61, r'$4 < x < -1$', 'sujet', 'l')
+line(ax, [(6, y + 8), (f(-1), y + 8)], 'sujet', lw=2.6)
+disc(ax, f(-1), y + 8, 1.2, 'sujet', fill=False)
+text(ax, 20, y + 14, r'$x < -1$', 'sujet', 's')
+line(ax, [(f(4), y + 8), (80, y + 8)], 'autre', lw=2.6)
+disc(ax, f(4), y + 8, 1.2, 'autre', fill=False)
+text(ax, 64, y + 14, r'$4 < x$', 'autre', 's')
+line(ax, [(f(-1), y + 8), (f(-1), y)], 'fixe', dash=True); line(ax, [(f(4), y + 8), (f(4), y)], 'fixe', dash=True)
+text(ax, (f(-1) + f(4)) / 2, y + 14, 'rien en commun', 'limite', 's')
+box(ax, 22, 4, 44, 9, 'limite', label='aucune solution', weight='bold')
+save(fig, '17-117')

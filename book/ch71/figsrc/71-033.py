@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 4, 42, 22, 9, 'sujet', label='1 panier')
+arrow(ax, (27, 46.5), (52, 46.5), 'fixe'); text(ax, 39.5, 49.5, r'$f$', 'fixe')
+box(ax, 55, 42, 24, 9, 'resultat', label='4 €')
+for i in range(3): box(ax, 4 + 8 * i, 16, 8, 9, 'sujet')
+brace(ax, 4, 28, 16, 'sujet', label='3 paniers')
+arrow(ax, (31, 20.5), (52, 20.5), 'fixe'); text(ax, 41.5, 23.5, r'$f$', 'fixe')
+box(ax, 55, 16, 24, 9, 'resultat', label='12 €')
+arrow(ax, (15, 40), (15, 27), 'varie'); text(ax, 21, 33.5, r'$\times 3$', 'varie')
+arrow(ax, (67, 40), (67, 27), 'varie'); text(ax, 73, 33.5, r'$\times 3$', 'varie')
+text(ax, 67, 8, r'$= 3 \times 4$', 'resultat')
+save(fig, '71-033')

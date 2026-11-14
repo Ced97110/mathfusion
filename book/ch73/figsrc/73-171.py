@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'$n\geq 3$ : ligne intermédiaire', 'encre', 'm')
+box(ax, 6, 14, 20, 9, 'sujet', label='ligne 2'); box(ax, 62, 14, 20, 9, 'sujet', label='ligne 1')
+box(ax, 34, 46, 20, 9, 'autre', label='ligne 3')
+arrow(ax, (16, 24), (36, 45.5), 'varie'); arrow(ax, (52, 45.5), (72, 24), 'varie')
+arrow(ax, (27, 18.5), (61, 18.5), 'resultat', lw=1.4)
+text(ax, 20, 38, '1', 'varie', 'm'); text(ax, 68, 38, '5', 'varie', 'm')
+text(ax, 44, 9, '5 × 1 = 5 en case (1, 2)', 'resultat', 's')
+save(fig, '73-171')

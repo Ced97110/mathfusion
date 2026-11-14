@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+box(ax,2,16,48,28,'sujet',fill=True)
+text(ax,26,39.5,'noyau : envoyés sur 0','sujet','s')
+disc(ax,12,24,4.5,'sujet',label='30',size='m'); disc(ax,40,24,5.5,'resultat',label='210',size='m')
+arrow(ax,(16.8,24),(34,24),'varie'); text(ax,25.5,29,'× 7','varie','m')
+disc(ax,78,30,4,'fixe',label='0',size='m')
+arrow(ax,(50.6,32),(73.5,30.5),'fixe'); text(ax,64,38,'reste par 6','fixe','s')
+text(ax,26,8.5,'le produit reste dans le noyau','resultat','s')
+save(fig,'52-013')

@@ -1,0 +1,179 @@
+[
+ {
+  "code": "49-048",
+  "a_dire": "Le signe x barre indice i désigne la classe du mot x indice i : un élément, pas un mot.",
+  "legende_titre": "Une barre pour l’élément, pas pour le mot",
+  "lecture": [
+   "En haut, en gris, vous voyez deux mots différents : un mot de 3 lettres et un mot d’une lettre.",
+   "En bas, la case bleue est leur classe, notée avec une barre.",
+   "Les deux flèches orange arrivent dans la même case : les deux mots ont la même classe."
+  ],
+  "a_voir": "Deux mots différents peuvent avoir la même classe, notée avec une barre."
+ },
+ {
+  "code": "49-049",
+  "a_dire": "Le signe x exposant moins un désigne l’élément qui défait x.",
+  "legende_titre": "Le signe de l’élément qui défait x",
+  "lecture": [
+   "Les deux carrés gris sont le départ et l’état après le geste x ; le rond bleu repère un coin.",
+   "La flèche orange du haut est le geste x : un quart de tour.",
+   "La flèche bleue du bas revient au départ : c’est le geste qui défait x, noté avec l’exposant moins un."
+  ],
+  "a_voir": "x exposant moins un n’est pas un calcul : c’est le geste qui ramène au départ."
+ },
+ {
+  "code": "49-050",
+  "a_dire": "Un mot réduit est un mot dans lequel aucune lettre n’est suivie de son inverse.",
+  "legende_titre": "Un mot sans lettre suivie de son inverse",
+  "lecture": [
+   "À gauche, le mot a deux cases orange côte à côte : une lettre suivie de son inverse.",
+   "À droite, les cases vertes forment un mot où aucune lettre n’est suivie de son inverse.",
+   "Seul le mot vert est réduit."
+  ],
+  "a_voir": "Un mot est réduit quand il ne contient aucune paire lettre-inverse côte à côte."
+ },
+ {
+  "code": "49-051",
+  "a_dire": "Quel que soit l’ordre d’effacement des paires, on obtient le même mot réduit.",
+  "legende_titre": "Deux effacements, un seul résultat",
+  "lecture": [
+   "En haut, le mot de trois cases contient deux paires qui partagent la case violette.",
+   "La flèche de gauche efface les deux premières cases ; la flèche de droite efface les deux dernières.",
+   "Les deux cases vertes du bas sont le même mot réduit."
+  ],
+  "a_voir": "Les deux ordres d’effacement laissent le même mot réduit : x."
+ },
+ {
+  "code": "49-052",
+  "a_dire": "Dans le mot x y y⁻¹ x, on efface la paire y y⁻¹ et il reste x x, qui est réduit.",
+  "legende_titre": "Du mot de départ au mot réduit",
+  "lecture": [
+   "La ligne du haut est le mot de départ ; les deux cases orange au milieu sont la paire à effacer.",
+   "La flèche orange est l’effacement de cette paire.",
+   "La ligne verte du bas est le mot qui reste : x x, sans paire."
+  ],
+  "a_voir": "Effacer la paire y y⁻¹ laisse x x, qui n’a plus de paire."
+ },
+ {
+  "code": "49-053",
+  "a_dire": "Pour multiplier deux mots réduits, on les met bout à bout puis on efface les paires à la jonction jusqu’à ce qu’il n’y en ait plus.",
+  "legende_titre": "Mettre bout à bout, puis effacer à la jonction",
+  "lecture": [
+   "La ligne du haut met bout à bout deux mots : les cases bleues, puis les cases violettes. La flèche orange du haut marque la jonction.",
+   "Une première flèche efface la paire de la jonction : il reste 2 lettres.",
+   "Une seconde flèche efface la nouvelle paire de la jonction : il reste le mot vide, en vert."
+  ],
+  "a_voir": "On efface seulement à la jonction, paire après paire, jusqu’à l’arrêt."
+ },
+ {
+  "code": "49-054",
+  "a_dire": "Si l’ensemble d’arrivée n’est pas un groupe, l’homomorphisme peut ne pas exister.",
+  "legende_titre": "Quand l’arrivée n’a pas d’inverses",
+  "lecture": [
+   "La droite grise montre les nombres 0, 1, 2, 3, 4 : le monoïde, avec l’addition.",
+   "La flèche orange envoie x sur 1.",
+   "La flèche rouge devrait envoyer x exposant moins un sur moins 1, mais ce point est vide : il n’est pas dans le monoïde."
+  ],
+  "a_voir": "Sans inverses dans l’arrivée, x exposant moins un n’a aucune image possible."
+ },
+ {
+  "code": "49-055",
+  "a_dire": "La preuve choisit des images pour les lettres, vérifie que la paire lettre-inverse va sur le neutre, puis passe au quotient.",
+  "legende_titre": "Trois étapes, dont une décide de tout",
+  "lecture": [
+   "La case bleue du haut est le départ : les images choisies pour les lettres.",
+   "La case orange, au bord épais, est l’étape décisive : la paire va sur le neutre, par exemple 3 plus moins 3 égale 0.",
+   "La case verte du bas est l’arrivée : l’homomorphisme sur le groupe libre."
+  ],
+  "a_voir": "Sans la case orange, le passage au quotient est impossible."
+ },
+ {
+  "code": "49-056",
+  "a_dire": "Il faut vérifier que le passage au quotient ne confond pas deux lettres distinctes.",
+  "legende_titre": "Le quotient confond-il les deux lettres ?",
+  "lecture": [
+   "En haut, en vert, les deux lettres donnent deux classes séparées : c’est ce qu’il faut montrer.",
+   "En bas, en rouge pointillé, les deux lettres tomberaient dans une seule classe : c’est ce qu’on craint.",
+   "Bleu et violet sont les deux lettres de départ."
+  ],
+  "a_voir": "Le quotient pourrait tout confondre ; il faut montrer que ce n’est pas le cas."
+ },
+ {
+  "code": "49-057",
+  "a_dire": "Les deux lettres ont des images différentes dans ℤ², donc leurs classes sont différentes.",
+  "legende_titre": "Séparer les classes avec des couples",
+  "lecture": [
+   "La grille grise est l’ensemble des couples d’entiers.",
+   "Le point bleu est (1, 0), l’image de la première lettre.",
+   "Le point violet est (0, 1), l’image de la seconde lettre.",
+   "Des images différentes obligent des classes différentes."
+  ],
+  "a_voir": "Deux images différentes prouvent que les deux classes sont différentes."
+ },
+ {
+  "code": "49-058",
+  "a_dire": "Le signe ℤ exposant r désigne les suites de r entiers, additionnées terme à terme.",
+  "legende_titre": "Un signe pour des suites de nombres",
+  "lecture": [
+   "Chaque paire de cases est une suite de 2 entiers : la case bleue est la place 1, la case violette la place 2.",
+   "Pour additionner, on additionne place par place : 3 plus moins 2 donne 1, et 5 plus 4 donne 9.",
+   "Le résultat est une suite de même longueur."
+  ],
+  "a_voir": "Le signe désigne les suites de r entiers ; on les additionne place par place."
+ },
+ {
+  "code": "49-059",
+  "a_dire": "Le signe (0, …, 1, …, 0) désigne une suite avec un seul 1, à la position de la lettre, et des 0 ailleurs.",
+  "legende_titre": "Une suite avec un seul 1",
+  "lecture": [
+   "Chaque ligne est une suite de 3 termes, pour une lettre.",
+   "La case bleue est le seul 1 de la ligne ; les cases grises sont des 0.",
+   "Le 1 change de place d’une ligne à l’autre : c’est ce qui sépare les lettres."
+  ],
+  "a_voir": "La place du 1 correspond au numéro de la lettre."
+ },
+ {
+  "code": "49-060",
+  "a_dire": "Le groupe abélien libre est le groupe des suites d’entiers où l’ordre d’addition ne change pas le résultat.",
+  "legende_titre": "L’ordre ne compte pas pour l’addition",
+  "lecture": [
+   "Le chemin bleu ajoute (1, 0) puis (0, 1).",
+   "Le chemin violet ajoute (0, 1) puis (1, 0).",
+   "Les deux chemins arrivent au même point vert (1, 1)."
+  ],
+  "a_voir": "Les deux ordres d’addition donnent le même point."
+ },
+ {
+  "code": "49-061",
+  "a_dire": "Un groupe de type fini est un groupe engendré par une liste finie d’éléments, même s’il a une infinité d’éléments.",
+  "legende_titre": "Peu de générateurs, parfois beaucoup d’éléments",
+  "lecture": [
+   "En haut, la case bleue {1} est une liste d’un seul élément ; elle engendre tous les entiers, en nombre infini.",
+   "En bas, la case bleue est une liste de 2 gestes ; elle engendre les 8 éléments du carré.",
+   "Les ronds verts sont les éléments obtenus."
+  ],
+  "a_voir": "Ce qui compte est la liste finie de générateurs, pas le nombre d’éléments."
+ },
+ {
+  "code": "49-062",
+  "a_dire": "Un homomorphisme du groupe libre vers G est fixé par les images choisies pour les lettres.",
+  "legende_titre": "Les images des lettres fixent tout",
+  "lecture": [
+   "La case bleue x indice 1 est envoyée sur le quart de tour, la case violette x indice 2 sur la réflexion.",
+   "Les petits carrés montrent ces deux gestes.",
+   "La case grise, le mot x1 x2, a pour seule image : quart de tour, puis réflexion."
+  ],
+  "a_voir": "Une fois les images des lettres choisies, l’image de chaque mot est imposée."
+ },
+ {
+  "code": "49-063",
+  "a_dire": "Si on n’envoie qu’une lettre sur le quart de tour, l’homomorphisme n’atteint pas tout le groupe.",
+  "legende_titre": "Une seule lettre n’atteint pas tout G",
+  "lecture": [
+   "Le grand cadre gris est le groupe G, avec 8 éléments.",
+   "La ligne de ronds verts est celle des 4 rotations : la flèche orange les atteint.",
+   "La ligne de ronds rouges en pointillé est celle des 4 réflexions : aucune flèche n’y arrive."
+  ],
+  "a_voir": "Sans assez de générateurs, certains éléments ne sont atteints par aucun mot."
+ }
+]

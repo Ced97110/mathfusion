@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 71, 72, 'facteur commun', 'resultat', 's')
+text(ax, 2, 61.5, r'$f=x^2-1$', 'encre', 'm', ha='left')
+box(ax, 30, 56, 26, 11, 'fixe', label=r'$x-1$')
+box(ax, 58, 56, 26, 11, 'resultat', label=r'$x+1$')
+text(ax, 2, 39.5, r'$g=x^2+x$', 'encre', 'm', ha='left')
+box(ax, 30, 34, 26, 11, 'fixe', label=r'$x$')
+box(ax, 58, 34, 26, 11, 'resultat', label=r'$x+1$')
+arrow(ax, (71, 56), (71, 45), 'resultat', both=True)
+arrow(ax, (71, 33), (71, 24), 'resultat')
+box(ax, 8, 10, 76, 13, 'sujet', label=r'$d=x+1$ engendre $\{uf+vg\}$')
+save(fig, '54-182')

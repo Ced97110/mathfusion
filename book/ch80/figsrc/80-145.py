@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+box(ax,3,26,82,36,'fixe',fill=False)
+text(ax,44,58,r'ensemble $\{1,2,3\}$','fixe','s')
+box(ax,8,29,20,22,'sujet'); disc(ax,18,40,5,'sujet',label='1',size='l')
+box(ax,36,29,44,22,'varie'); disc(ax,50,40,5,'varie',label='2',size='l'); disc(ax,66,40,5,'varie',label='3',size='l')
+text(ax,18,55,r'$a$','sujet','m',weight='bold'); text(ax,58,55,r'$a^{\prime}$','varie','m',weight='bold')
+box(ax,3,10,40,11,'resultat',label=r'$a\vee a^{\prime}=I$'); box(ax,46,10,39,11,'resultat',label=r'$a\wedge a^{\prime}=O$')
+text(ax,23,4.5,'réunion : tout','resultat','s'); text(ax,65,4.5,'partie commune : vide','resultat','s')
+arrow(ax,(23,26),(23,22),'resultat'); arrow(ax,(65,26),(65,22),'resultat')
+save(fig,'80-145')

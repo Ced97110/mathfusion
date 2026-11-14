@@ -1,0 +1,184 @@
+[
+ {
+  "code": "45-049",
+  "a_dire": "Tout groupe est isomorphe à lui-même : le renommage qui ne change rien convient.",
+  "legende_titre": "Un renommage qui ne change rien",
+  "lecture": [
+   "À gauche, en bleu, tu vois les éléments 0, 1, 2, 3 du groupe.",
+   "À droite, en bleu aussi, tu vois les mêmes éléments : c’est le même groupe.",
+   "Chaque flèche verte relie un élément à lui-même."
+  ],
+  "a_voir": "Chaque élément a pour nouveau nom son propre nom, donc rien ne change."
+ },
+ {
+  "code": "45-050",
+  "a_dire": "Si on défait un isomorphisme, on obtient encore un isomorphisme.",
+  "legende_titre": "Défaire le renommage",
+  "lecture": [
+   "Les cercles bleus à gauche sont les nombres 0, 1, 2, 3.",
+   "Les cercles violets à droite sont les rotations : 0, ¼, ½, ¾ de tour.",
+   "Chaque flèche orange va d’un nombre à sa rotation ; chaque flèche verte revient en sens inverse."
+  ],
+  "a_voir": "Chaque rotation reçoit une seule flèche, donc on peut revenir en arrière."
+ },
+ {
+  "code": "45-051",
+  "a_dire": "Faire un isomorphisme puis un autre donne un isomorphisme.",
+  "legende_titre": "Deux renommages à la suite",
+  "lecture": [
+   "La colonne bleue montre les nombres 3 et 2.",
+   "La colonne violette montre les rotations : ¾ tour et ½ tour.",
+   "La colonne grise montre les résultats : 3 et 4.",
+   "La grande flèche verte résume les deux renommages en un seul."
+  ],
+  "a_voir": "Les deux flèches orange mises bout à bout donnent la flèche verte."
+ },
+ {
+  "code": "45-052",
+  "a_dire": "Être isomorphe est lié à soi-même, se lit dans les deux sens, et se transmet en chaîne.",
+  "legende_titre": "Trois propriétés de la relation",
+  "lecture": [
+   "La flèche verte qui boucle sur G relie un groupe à lui-même.",
+   "La flèche verte à deux pointes relie G et G′ dans les deux sens.",
+   "Les deux flèches orange vont de G à G′ puis à G″ ; la flèche verte au-dessus relie directement G à G″."
+  ],
+  "a_voir": "Les trois lignes sont les trois propriétés d’une relation d’équivalence."
+ },
+ {
+  "code": "45-053",
+  "a_dire": "Les groupes isomorphes se rangent dans une même classe, les autres dans une autre.",
+  "legende_titre": "Les groupes rangés en paquets",
+  "lecture": [
+   "Le grand cadre bleu en pointillés est une classe.",
+   "Les trois cases bleues sont trois groupes isomorphes entre eux.",
+   "Le cadre violet est une autre classe : les symétries du rectangle.",
+   "Le signe rouge ≠ dit que les deux classes sont différentes."
+  ],
+  "a_voir": "Une classe regroupe plusieurs groupes qui comptent pour le même."
+ },
+ {
+  "code": "45-054",
+  "a_dire": "Le projet est de lister les groupes, en comptant pour un seul ceux qui ont la même table.",
+  "legende_titre": "Une liste de tous les groupes",
+  "lecture": [
+   "Les trois cases bleues sont trois façons d’écrire un groupe : horloge, nombres 1, i, −1, −i, rotations du carré.",
+   "Les flèches orange les envoient vers la case verte.",
+   "La case verte est le seul groupe qu’ils représentent."
+  ],
+  "a_voir": "Trois lignes de la liste décrivent un seul groupe."
+ },
+ {
+  "code": "45-055",
+  "a_dire": "Dans la liste, on met une seule entrée par classe d’isomorphie.",
+  "legende_titre": "Une entrée par classe",
+  "lecture": [
+   "Les trois cases bleues sont des groupes isomorphes à quatre éléments.",
+   "Leurs flèches vont toutes vers « entrée 1 ».",
+   "La case violette est un groupe différent ; sa flèche va vers « entrée 2 »."
+  ],
+  "a_voir": "Trois groupes bleus partagent une entrée, le violet en a une autre."
+ },
+ {
+  "code": "45-056",
+  "a_dire": "Il y a un seul groupe cyclique infini, ℤ, et un seul à r éléments, ℤ/rℤ.",
+  "legende_titre": "Deux types de groupe cyclique",
+  "lecture": [
+   "En haut, la droite graduée est ℤ : elle ne s’arrête jamais, des deux côtés.",
+   "Les arcs orange sont les pas de +1.",
+   "En bas, les quatre cercles forment l’horloge ℤ/rℤ avec r = 4.",
+   "Les flèches orange font le tour et reviennent au départ."
+  ],
+  "a_voir": "Les pas de +1 ne reviennent jamais en haut, et reviennent au départ en bas."
+ },
+ {
+  "code": "45-057",
+  "a_dire": "Un groupe à p éléments, p premier, est isomorphe à ℤ/pℤ.",
+  "legende_titre": "Quatre éléments, puis cinq",
+  "lecture": [
+   "À gauche, avec quatre éléments, deux groupes sont possibles : l’horloge (bleu) et le rectangle (violet).",
+   "Le signe rouge ≠ dit qu’ils ne sont pas isomorphes.",
+   "À droite, avec cinq éléments (nombre premier), un seul groupe : l’horloge à cinq heures, en vert."
+  ],
+  "a_voir": "Pour quatre éléments il y a deux groupes, pour cinq il n’y en a qu’un."
+ },
+ {
+  "code": "45-058",
+  "a_dire": "L’ordre d’un groupe est son nombre d’éléments.",
+  "legende_titre": "Un nombre pour chaque groupe",
+  "lecture": [
+   "Chaque colonne est un groupe, avec son nom en haut.",
+   "Chaque cercle bleu est un élément du groupe.",
+   "Le nombre vert en bas est le nombre de cercles : l’ordre."
+  ],
+  "a_voir": "Les groupes ont 4, 4 et 6 éléments, donc des ordres 4, 4 et 6."
+ },
+ {
+  "code": "45-059",
+  "a_dire": "Le signe |G| se lit « taille de G » et remplace « le nombre d’éléments de G ».",
+  "legende_titre": "Le signe |G|",
+  "lecture": [
+   "Le grand signe |G| est découpé : les barres et la lettre G.",
+   "La flèche orange désigne les barres : elles veulent dire « nombre d’éléments de ».",
+   "La flèche bleue désigne G : le groupe.",
+   "En bas, deux groupes de quatre cercles s’écrivent |G| = |G′|."
+  ],
+  "a_voir": "Les barres autour de G remplacent toute la phrase."
+ },
+ {
+  "code": "45-060",
+  "a_dire": "L’ordre d’un élément est le plus petit nombre de pas qui le ramène au neutre.",
+  "legende_titre": "Les pas qui ramènent à 0",
+  "lecture": [
+   "Chaque horloge a quatre éléments ; le cercle vert 0 est le neutre.",
+   "À gauche, les flèches orange partent de 0 et passent par 1, 2, 3 avant de revenir : 4 pas.",
+   "À droite, les flèches orange vont de 0 à 2 et reviennent : 2 pas."
+  ],
+  "a_voir": "Le nombre de flèches avant le retour à 0 est l’ordre."
+ },
+ {
+  "code": "45-061",
+  "a_dire": "o(a) est l’ordre de l’élément a, le nombre de pas pour revenir au neutre.",
+  "legende_titre": "Le signe o(a)",
+  "lecture": [
+   "Le grand signe o(a) est découpé en deux morceaux.",
+   "La flèche orange désigne la lettre o, qui vient du mot ordre.",
+   "La flèche bleue désigne a, un élément du groupe.",
+   "En bas, chaque point orange est un pas : 4 points pour o(1), 2 points pour o(2)."
+  ],
+  "a_voir": "La lettre o et l’élément entre parenthèses donnent un nombre de pas."
+ },
+ {
+  "code": "45-062",
+  "a_dire": "Un élément dont les pas ne ramènent jamais au neutre est d’ordre infini.",
+  "legende_titre": "Des pas qui ne reviennent jamais",
+  "lecture": [
+   "La droite graduée montre les entiers ; le cercle vert est le neutre 0.",
+   "Les arcs orange sont les pas de +1, qui continuent sans fin.",
+   "Le texte rouge dit que le point de départ n’est jamais retrouvé."
+  ],
+  "a_voir": "Les arcs vont toujours vers la droite et ne retombent jamais sur 0."
+ },
+ {
+  "code": "45-063",
+  "a_dire": "Dans ℤ/4ℤ, 1 et 3 sont d’ordre 4 et 2 est d’ordre 2.",
+  "legende_titre": "Les ordres dans l’horloge à quatre heures",
+  "lecture": [
+   "Chaque ligne est un élément qu’on additionne à lui-même.",
+   "Chaque case donne le résultat d’un pas ; la case verte est 0.",
+   "Le nombre à droite compte les cases : l’ordre."
+  ],
+  "a_voir": "La ligne de 2 a deux cases, celles de 1 et de 3 en ont quatre."
+ },
+ {
+  "code": "45-064",
+  "a_dire": "Un isomorphisme associe un à un les éléments, donc les deux groupes ont le même nombre d’éléments.",
+  "legende_titre": "Un nom pour chaque élément",
+  "lecture": [
+   "À gauche, les quatre cercles bleus sont les éléments de G.",
+   "À droite, les quatre cercles violets sont ceux de G′.",
+   "Chaque flèche orange relie un cercle à un seul autre, sans reste.",
+   "En haut, le signe vert écrit que les deux nombres sont égaux."
+  ],
+  "a_voir": "Les flèches forment quatre paires, donc 4 et 4."
+ }
+]

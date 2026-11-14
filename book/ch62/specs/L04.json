@@ -1,0 +1,369 @@
+[
+ {
+  "code": "62-100",
+  "a_dire": "Les racines de f sont toutes simples exactement quand f et f′ n’ont aucun facteur commun autre que 1.",
+  "legende_titre": "Facteur commun ou non entre f et sa dérivée",
+  "lecture": [
+   "À gauche, en bleu, f a une racine double en 1 : f et f′ ont le facteur x − 1 en commun.",
+   "À droite, en violet, f = x² − 2 a deux racines distinctes, moins racine de 2 et racine de 2.",
+   "La case verte dit que le PGCD de f et de f′ vaut 1 : aucun facteur commun."
+  ],
+  "a_voir": "Une racine double va avec un facteur commun ; deux racines simples vont avec un PGCD égal à 1."
+ },
+ {
+  "code": "62-101",
+  "a_dire": "Le PGCD se calcule par des divisions de polynômes sur les coefficients, sans connaître les racines.",
+  "legende_titre": "Un calcul sur les coefficients seulement",
+  "lecture": [
+   "La première ligne divise f = x³ − 3x + 2 (bleu) par f′ = 3x² − 3 (violet) et donne le reste −2x + 2 (orange).",
+   "La deuxième ligne divise f′ par ce reste ; le reste est 0 (vert).",
+   "Le dernier diviseur non nul, x − 1, est le PGCD, dans la case verte du bas."
+  ],
+  "a_voir": "Aucune racine n’est écrite : seuls des polynômes à coefficients connus sont divisés."
+ },
+ {
+  "code": "62-102",
+  "a_dire": "Si une racine r est de multiplicité au moins 2, alors x − r divise à la fois f et f′.",
+  "legende_titre": "Le facteur répété passe dans la dérivée",
+  "lecture": [
+   "La ligne du haut montre f = (x − 1)(x − 1)(x + 2) : deux cases bleues x − 1 et une case grise x + 2.",
+   "La ligne du milieu montre f′ avec ses deux termes séparés par un plus ; chaque terme contient une case bleue x − 1.",
+   "La case verte du bas dit que x − 1 divise f et f′."
+  ],
+  "a_voir": "Les deux termes de la dérivée contiennent chacun une case bleue x − 1."
+ },
+ {
+  "code": "62-103",
+  "a_dire": "Si les racines sont simples, f′ ne s’annule pas en une racine : f et f′ n’ont aucun facteur commun.",
+  "legende_titre": "La dérivée en une racine simple",
+  "lecture": [
+   "Les trois cases du haut sont les trois produits de deux facteurs dont la somme donne f′.",
+   "En x = 1, les deux cases grises valent 0 car elles contiennent le facteur x − 1.",
+   "La case bleue vaut (−1)(−2) = 2, donc la case verte donne f′(1) = 2, différent de 0."
+  ],
+  "a_voir": "Un seul terme survit en x = 1, et il n’est pas nul."
+ },
+ {
+  "code": "62-104",
+  "a_dire": "Pour un polynôme irréductible, le seul cas à craindre pour une racine multiple est f′ = 0.",
+  "legende_titre": "Où se cache la racine double d’un irréductible",
+  "lecture": [
+   "La case bleue du haut est un polynôme f irréductible ; le texte dit : racine multiple possible seulement si f′ = 0. Deux flèches mènent à deux cas.",
+   "À gauche, en vert, le PGCD vaut 1 : l'exemple x² − 2 a deux racines distinctes sur la droite graduée.",
+   "À droite, en orange, le PGCD vaut f, donc f divise f′, mais le degré de f′ est plus petit : il reste f′ = 0, le seul cas à craindre."
+  ],
+  "a_voir": "Le cas orange force f′ = 0 ; c'est le seul cas qui peut donner une racine multiple."
+ },
+ {
+  "code": "62-105",
+  "a_dire": "En caractéristique 0, un polynôme irréductible n’a jamais de racine multiple ; en caractéristique 2 cela peut arriver.",
+  "legende_titre": "Pourquoi la caractéristique compte",
+  "lecture": [
+   "La colonne bleue, caractéristique 0, prend f = x² + t ; le coefficient 2 × 1 vaut 2, différent de 0.",
+   "La colonne violette, caractéristique 2, prend le même f ; 2 × 1 vaut 0.",
+   "Dans la colonne de gauche la case verte dit jamais de racine multiple ; à droite la case rouge dit racine double possible."
+  ],
+  "a_voir": "Le seul changement entre les colonnes est que 2 est non nul à gauche et nul à droite."
+ },
+ {
+  "code": "62-106",
+  "a_dire": "Un polynôme est séparable si chacun de ses facteurs irréductibles a toutes ses racines distinctes.",
+  "legende_titre": "Séparable : on regarde les facteurs irréductibles",
+  "lecture": [
+   "Le texte du haut donne la définition : chaque facteur irréductible a toutes ses racines distinctes. Le trait pointillé sépare les deux cas.",
+   "À gauche, f = (x − 1)² s'écrit avec deux cases bleues x − 1 ; le facteur irréductible x − 1 n'a qu'une racine, le disque bleu.",
+   "Donc f est séparable (case verte), bien qu'il ait une racine double.",
+   "À droite, x² + t est lui-même irréductible et sa racine est double : les deux disques violets se superposent ; la case rouge dit non séparable."
+  ],
+  "a_voir": "À gauche la répétition vient de f ; à droite elle vient du facteur irréductible lui-même."
+ },
+ {
+  "code": "62-107",
+  "a_dire": "Un corps est parfait si tous ses polynômes irréductibles sont séparables.",
+  "legende_titre": "Un corps où tout est séparable",
+  "lecture": [
+   "À gauche, sur ℚ, les six cases vertes sont six polynômes irréductibles, tous séparables.",
+   "À droite, sur les fractions en t où 1 + 1 = 0, cinq cases sont vertes et une case rouge porte x² + t.",
+   "Une seule case rouge suffit : le corps de droite n’est pas parfait."
+  ],
+  "a_voir": "Il suffit d’un polynôme non séparable pour que le corps ne soit pas parfait."
+ },
+ {
+  "code": "62-108",
+  "a_dire": "En caractéristique 0, un irréductible n’a pas de facteur commun avec sa dérivée, donc tout corps de ce type est parfait.",
+  "legende_titre": "Pourquoi ℚ est un corps parfait",
+  "lecture": [
+   "La ligne bleue montre f de degré 3 avec les quatre cases x³, x², x, 1.",
+   "La ligne violette montre f′ : la case x³ disparaît (pointillés), il reste x², x, 1, donc le degré est 2 et f′ n’est pas nul.",
+   "Un polynôme de degré 3 ne divise pas f′ de degré 2 : la case verte conclut PGCD égal à 1."
+  ],
+  "a_voir": "La dérivée perd le terme de plus haut degré mais reste non nulle."
+ },
+ {
+  "code": "62-109",
+  "a_dire": "En caractéristique p, la dérivée de xᵖ vaut p·xᵖ⁻¹ = 0 : une dérivée nulle n’oblige plus le polynôme à être constant.",
+  "legende_titre": "Une dérivée nulle sans polynôme constant",
+  "lecture": [
+   "La case bleue x² est dérivée (flèche orange) en la case orange 2x.",
+   "Les deux disques gris 0 et 1 montrent le corps à deux éléments : 1 + 1 revient à 0.",
+   "La case verte du bas dit que (x²)′ = 0 alors que x² n’est pas constant."
+  ],
+  "a_voir": "Le facteur 2 de la dérivée vaut 0 dans ce corps."
+ },
+ {
+  "code": "62-110",
+  "a_dire": "En caractéristique p, f′ = 0 exactement quand f ne contient que des puissances de xᵖ.",
+  "legende_titre": "Quels polynômes ont une dérivée nulle",
+  "lecture": [
+   "Les cinq cases représentent les puissances x⁰ à x⁴ avec p = 2.",
+   "Les cases bleues x⁰, x², x⁴ portent un coefficient b₀, b₁, b₂ ; les cases en pointillés gris x¹ et x³ sont vides.",
+   "La case verte du bas dit que ce polynôme a une dérivée nulle."
+  ],
+  "a_voir": "Seules les puissances multiples de p apparaissent."
+ },
+ {
+  "code": "62-111",
+  "a_dire": "Un corps de caractéristique p est parfait exactement quand tout élément est une puissance p-ième, c’est-à-dire F = Fᵖ.",
+  "legende_titre": "Parfait ou non selon les puissances p-ièmes",
+  "lecture": [
+   "À gauche, le grand disque vert contient les cinq restes modulo 5, bleus ; chacun est égal à sa puissance 5, par exemple 2⁵ = 32 de reste 2.",
+   "À droite, le grand disque gris est le corps des fractions en t ; le disque violet Fᵖ est plus petit.",
+   "Le petit disque rouge t est dans le corps mais hors de Fᵖ : le corps n’est pas parfait."
+  ],
+  "a_voir": "À gauche tout est dans Fᵖ ; à droite un élément reste dehors."
+ },
+ {
+  "code": "62-112",
+  "a_dire": "En caractéristique p, (a + b)ᵖ = aᵖ + bᵖ, ce qui est faux dans les réels.",
+  "legende_titre": "Le terme du milieu qui disparaît",
+  "lecture": [
+   "À gauche, dans ℝ, les trois cases a², 2ab, b² valent 1, 2, 1 ; le carré de la somme vaut 4 et la somme des carrés vaut 2, donc la case rouge dit 4 ≠ 2.",
+   "À droite, dans 𝔽₂, la case grise du milieu vaut 0 ; le carré de la somme vaut 0 et la somme des carrés vaut 0.",
+   "La case verte dit 0 = 0 : l’identité est vraie."
+  ],
+  "a_voir": "Le terme du milieu vaut 2 à gauche et 0 à droite."
+ },
+ {
+  "code": "62-113",
+  "a_dire": "Les coefficients du milieu de (a + b)ᵖ sont des multiples de p, donc valent 0 dans le corps ; il reste aᵖ + bᵖ.",
+  "legende_titre": "Les coefficients du milieu s’annulent",
+  "lecture": [
+   "La ligne du haut donne les coefficients de (a + b)⁵ : 1, 5, 10, 10, 5, 1.",
+   "Les quatre cases orange du milieu sont des multiples de 5 ; les deux cases vertes aux extrémités valent 1.",
+   "La ligne du bas donne les restes modulo 5 : quatre zéros gris au milieu, et 1 aux extrémités."
+  ],
+  "a_voir": "Il ne reste que les deux extrémités, donc a⁵ + b⁵."
+ },
+ {
+  "code": "62-114",
+  "a_dire": "L’application a ↦ aᵖ respecte somme et produit, elle est injective, et son image est un sous-corps.",
+  "legende_titre": "Ce que fait a ↦ a⁵ modulo 5",
+  "lecture": [
+   "La rangée bleue du haut montre les restes 0 à 4 ; chaque flèche orange mène à la puissance 5 du reste, en violet.",
+   "Le cadre en pointillés violets entoure les images : un sous-corps.",
+   "Les deux lignes du bas vérifient une somme et un produit : 2 + 3 = 0 et 2 × 3 = 1 gardent la même forme après la puissance 5."
+  ],
+  "a_voir": "Deux restes différents ont deux images différentes, et les opérations sont respectées."
+ },
+ {
+  "code": "62-115",
+  "a_dire": "Si F = Fᵖ, un polynôme de dérivée nulle est la puissance p-ième d’un autre polynôme, donc il n’est pas irréductible.",
+  "legende_titre": "De f′ = 0 à une puissance p-ième",
+  "lecture": [
+   "La case bleue du haut est le départ : f = 2 + 3x⁵ modulo 5, qui ne contient que des puissances de x⁵.",
+   "La case orange est l’étape clé : 2 = 2⁵ et 3 = 3⁵.",
+   "La case verte donne f = (2 + 3x)⁵ ; la case rouge conclut que f n’est pas irréductible."
+  ],
+  "a_voir": "Les coefficients étant des puissances 5, tout le polynôme devient une puissance 5."
+ },
+ {
+  "code": "62-116",
+  "a_dire": "Si a n’est pas une puissance p-ième, xᵖ − a est irréductible et de dérivée nulle, donc F n’est pas parfait.",
+  "legende_titre": "Le cas où a n’est pas une puissance p-ième",
+  "lecture": [
+   "En haut, en bleu, le cas contraire : a = 2 est une puissance 5, et x⁵ − 2 = (x − 2)⁵ se casse en cinq facteurs.",
+   "En bas, a = t n’est pas un carré : la case violette x² + t reste irréductible.",
+   "La flèche mène à la case rouge : sa dérivée est nulle et le corps n’est pas parfait."
+  ],
+  "a_voir": "Le polynôme ne se casse que si a est une puissance p-ième."
+ },
+ {
+  "code": "62-117",
+  "a_dire": "Dans un corps fini, a ↦ aᵖ est injective donc surjective : tout élément est une puissance p-ième et le corps est parfait.",
+  "legende_titre": "Cinq restes, cinq places",
+  "lecture": [
+   "Les cinq disques bleus du haut sont les restes modulo 5.",
+   "Chaque flèche orange mène à une case verte du bas : la puissance 5 du reste.",
+   "Les cinq cases sont toutes occupées, chacune une seule fois : aucune place vide."
+  ],
+  "a_voir": "Cinq images distinctes dans cinq places remplissent toutes les places."
+ },
+ {
+  "code": "62-118",
+  "a_dire": "Pour x² − 2, une fois r₁ fabriquée dans K, la seconde racine −r₁ est déjà dans K : le corps de décomposition est K, de degré 2.",
+  "legende_titre": "Deux racines, un seul ajout",
+  "lecture": [
+   "La formule du haut factorise x² − 2 en (x − r₁)(x + r₁).",
+   "Le disque bleu est r₁ ; le disque vert est −r₁, placé de l’autre côté de 0.",
+   "La flèche orange passe de r₁ à son opposé ; la case verte dit que les deux racines sont dans K."
+  ],
+  "a_voir": "La seconde racine est l’opposé de la première, donc elle est déjà là."
+ },
+ {
+  "code": "62-119",
+  "a_dire": "Pour x² + ax + b, la somme des racines vaut −a, donc r₂ = −a − r₁ est dans F(r₁) : le degré du corps est 1 ou 2.",
+  "legende_titre": "Une racine donne l’autre",
+  "lecture": [
+   "Sur la droite graduée, la case bleue va de 0 à 2 : r₁ = 2.",
+   "La case verte va de 2 à 5 : r₂ = 3. L’accolade orange montre que la somme vaut 5, soit −a.",
+   "La ligne du bas calcule r₂ = 5 − r₁ = 5 − 2 = 3."
+  ],
+  "a_voir": "La somme des deux racines est connue, donc la seconde se déduit de la première."
+ },
+ {
+  "code": "62-120",
+  "a_dire": "La tour ℚ ⊂ ℚ(∛2) ⊂ ℚ(∛2, j) a deux étages de degrés 3 et 2, et le degré total est 3 × 2 = 6.",
+  "legende_titre": "Trois niveaux, un degré qui se multiplie",
+  "lecture": [
+   "En bas, la case grise est ℚ ; au milieu, la case bleue ajoute la racine cubique de 2 ; en haut, la case violette ajoute j.",
+   "Les flèches orange portent le degré de chaque étage : × 3 puis × 2.",
+   "La longue flèche verte à droite donne le total : 3 × 2 = 6."
+  ],
+  "a_voir": "Chaque étage ajoute un seul nombre et le degré total est le produit des degrés."
+ },
+ {
+  "code": "62-121",
+  "a_dire": "x³ − 2 n’a pas de racine rationnelle, donc il est irréductible ; K = ℚ(r₁) est de degré 3 avec la base 1, r₁, r₁².",
+  "legende_titre": "Premier étage : pas de racine rationnelle",
+  "lecture": [
+   "Sur la droite graduée, les disques gris sont 1³ = 1 et 2³ = 8 ; le disque orange est le nombre 2 que l’on cherche.",
+   "Aucun cube entier ne tombe sur 2, donc x³ − 2 est irréductible.",
+   "Les trois cases bleues du bas sont la base 1, r₁, r₁² de K : le degré est 3."
+  ],
+  "a_voir": "Les cubes entiers sautent de 1 à 8 sans passer par 2."
+ },
+ {
+  "code": "62-122",
+  "a_dire": "Dans K, x³ − 2 = (x − r₁)(x² + r₁x + r₁²) et le facteur de degré 2 n’a pas de racine dans K, donc [E : K] = 2.",
+  "legende_titre": "Deuxième étage : le facteur de degré 2",
+  "lecture": [
+   "En haut, la case bleue x − r₁ et la case orange x² + r₁x + r₁² forment la factorisation.",
+   "La droite bleue horizontale représente K, contenu dans les réels ; le disque bleu r₁ est dessus : c'est la racine de x − r₁, dans K.",
+   "Les disques orange j·r₁ et j²·r₁ sont hors de la droite : ce sont les racines du facteur de degré 2, pas dans K. La case verte conclut [E : K] = 2."
+  ],
+  "a_voir": "Le facteur x − r₁ a sa racine dans K ; le facteur de degré 2 n'en a aucune, donc [E : K] = 2."
+ },
+ {
+  "code": "62-123",
+  "a_dire": "La somme des trois racines vaut 0, donc r₃ = −r₁ − r₂ est déjà dans E ; le degré total est 2 × 3 = 6.",
+  "legende_titre": "La troisième racine est déjà là",
+  "lecture": [
+   "La flèche bleue part de 0 et représente r₁ ≈ 1,26.",
+   "La flèche orange ajoute r₂ ≈ −0,63 + 1,09 i ; la flèche verte r₃ revient au point de départ.",
+   "Le triangle fermé montre r₁ + r₂ + r₃ = 0 ; les valeurs approchées sont écrites à droite."
+  ],
+  "a_voir": "Les trois flèches bout à bout reviennent à 0."
+ },
+ {
+  "code": "62-124",
+  "a_dire": "Commencer par j ou par la racine cubique de 2 donne deux tours différentes : 3 puis 2, ou 2 puis 3, avec le même degré 6.",
+  "legende_titre": "Deux chemins vers le même corps",
+  "lecture": [
+   "En haut de chaque colonne, le chemin : celui de gauche passe par ℚ(racine cubique de 2), celui de droite par ℚ(j).",
+   "La tour de gauche : × 3 puis × 2. La tour de droite : × 2 puis × 3.",
+   "Les deux cases vertes E du haut sont le même corps, reliées par le signe =.",
+   "La case verte du bas dit : 3 × 2 = 2 × 3 = 6."
+  ],
+  "a_voir": "L'ordre des étages change, pas le degré total."
+ },
+ {
+  "code": "62-125",
+  "a_dire": "x⁴ − 1 = (x − 1)(x + 1)(x² + 1) : deux facteurs de degré 1 sont déjà dans ℚ, un seul étage ℚ(i) suffit, degré 2.",
+  "legende_titre": "Une factorisation de x⁴ − 1",
+  "lecture": [
+   "Les trois cases ont une largeur proportionnelle à leur degré : 1, 1 et 2, soit 4 en tout (accolade du haut).",
+   "Les deux cases grises x − 1 et x + 1 sont déjà dans ℚ ; la case orange x² + 1 demande un étage ℚ(i).",
+   "En x = 2, le produit 1 × 3 × 5 vaut 15, c’est-à-dire 2⁴ − 1 ; la case verte donne le corps ℚ(i)."
+  ],
+  "a_voir": "Seul le facteur de degré 2 demande un étage."
+ },
+ {
+  "code": "62-126",
+  "a_dire": "Le degré du corps de décomposition peut être très différent du degré du polynôme : 2 pour x⁴ − 1 de degré 4.",
+  "legende_titre": "Degré du polynôme contre degré du corps",
+  "lecture": [
+   "Pour x⁴ − 1, la rangée bleue a quatre cases (degré 4) et la rangée verte du corps ℚ(i) en a deux.",
+   "Pour x³ − 2, la rangée bleue a trois cases et la rangée verte du corps E en a six.",
+   "Le nombre de cases est écrit à droite de chaque rangée."
+  ],
+  "a_voir": "Le degré du corps peut être plus petit ou plus grand que celui du polynôme."
+ },
+ {
+  "code": "62-127",
+  "a_dire": "Les quatre racines 1, i, −1, −i sont les quatre quarts de tour sur un cercle.",
+  "legende_titre": "Quatre racines sur un cercle",
+  "lecture": [
+   "Les quatre disques bleus sont 1, i, −1 et −i, placés sur les axes.",
+   "Chaque flèche orange est un quart de tour, c’est-à-dire une multiplication par i.",
+   "Les axes gris croisent le cercle aux quatre points."
+  ],
+  "a_voir": "On passe d’une racine à la suivante en tournant d’un quart de tour."
+ },
+ {
+  "code": "62-128",
+  "a_dire": "Pour p premier, xᵖ − 1 = (x − 1)(xᵖ⁻¹ + … + x + 1), le second facteur est irréductible et le corps ℚ(z) est de degré p − 1.",
+  "legende_titre": "Le cas de l’exposant premier",
+  "lecture": [
+   "En haut, avec p = 5, la case grise x − 1 et la longue case bleue de degré 4 sont irréductibles ; la case verte donne le degré p − 1 = 4.",
+   "En bas, avec l’exposant 4 qui n’est pas premier, la case rouge x³ + x² + x + 1 se casse en x + 1 et x² + 1.",
+   "Les largeurs des cases suivent les degrés."
+  ],
+  "a_voir": "Pour un exposant non premier, le second facteur peut se casser."
+ },
+ {
+  "code": "62-129",
+  "a_dire": "Les racines de l’unité 1, z, z², …, zᵖ⁻¹ sont toutes des puissances d’un seul nombre z.",
+  "legende_titre": "Toutes les racines viennent de z",
+  "lecture": [
+   "Les cinq disques sont 1, z, z², z³, z⁴ pour p = 5 ; z est en orange.",
+   "Chaque flèche orange multiplie par z pour passer au disque suivant.",
+   "Au centre, × z rappelle ce pas ; le dernier pas ramène à 1."
+  ],
+  "a_voir": "Un seul nombre z, avec ses puissances, donne toutes les racines."
+ },
+ {
+  "code": "62-130",
+  "a_dire": "Sur ℤ/2ℤ, K = F[x]/(x³ + x + 1) a pour éléments c + d r₁ + e r₁² avec c, d, e valant 0 ou 1, soit huit éléments, et la règle r₁³ = r₁ + 1.",
+  "legende_titre": "Huit éléments à partir de deux",
+  "lecture": [
+   "La formule du haut donne la forme d’un élément avec trois coefficients valant 0 ou 1.",
+   "Les huit cases bleues sont les huit éléments : 0, 1, r₁, 1 + r₁, r₁², 1 + r₁², r₁ + r₁², 1 + r₁ + r₁².",
+   "La case orange donne la règle r₁³ = r₁ + 1 qui réduit toute puissance."
+  ],
+  "a_voir": "Trois choix de 0 ou 1 donnent 2 × 2 × 2 = 8 éléments."
+ },
+ {
+  "code": "62-131",
+  "a_dire": "r₁² est aussi une racine grâce à (a + b)² = a² + b² en caractéristique 2 ; la troisième racine est r₁⁴ = r₁² + r₁.",
+  "legende_titre": "Les trois racines par des carrés",
+  "lecture": [
+   "Le titre : trois racines de x³ + x + 1, en caractéristique 2.",
+   "La case bleue r₁ est la première racine ; la flèche orange « au carré » mène à la case orange r₁².",
+   "Une seconde flèche mène à la case violette r₁⁴, qui vaut r₁² + r₁.",
+   "La case orange du bas donne l'identité clé : (a + b)² = a² + b², donc le carré d'une racine est une racine.",
+   "La ligne du bas calcule r₁⁴ : r₁³ = r₁ + 1, donc r₁⁴ = r₁² + r₁."
+  ],
+  "a_voir": "Élever au carré une racine donne encore une racine : r₁, r₁², r₁⁴ sont les trois racines."
+ },
+ {
+  "code": "62-132",
+  "a_dire": "Le corps à 8 éléments est un corps fini qui n’est pas ℤ/pℤ, car 8 n’est pas premier.",
+  "legende_titre": "Un corps fini de taille non première",
+  "lecture": [
+   "La première rangée a 2 disques bleus : ℤ/2ℤ, 2 est premier (vert).",
+   "La deuxième rangée a 7 disques bleus : ℤ/7ℤ, 7 est premier (vert).",
+   "La rangée violette a 8 disques : le corps K fabriqué, et 8 n’est pas premier (rouge)."
+  ],
+  "a_voir": "Huit éléments : ce corps n’est pas un ℤ/pℤ."
+ }
+]

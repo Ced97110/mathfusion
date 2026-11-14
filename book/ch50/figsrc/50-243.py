@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(98)
+for i in range(6): disc(ax, 12 + 7 * i, 88, 2.2, 'sujet' if i < 3 else 'varie')
+text(ax, 54, 88, '6 symétries', 'encre', 's', ha='left')
+for i in range(3): disc(ax, 12 + 7 * i, 52, 2.2, 'sujet')
+text(ax, 54, 52, '3 rotations', 'sujet', 's', ha='left')
+disc(ax, 12, 16, 2.2, 'sujet'); text(ax, 54, 16, 'identité : 1', 'encre', 's', ha='left')
+arrow(ax, (5.5, 82), (5.5, 58), 'fixe'); arrow(ax, (5.5, 46), (5.5, 22), 'fixe')
+text(ax, 54, 70, 'quotient de 2 : abélien', 'resultat', 's', ha='left')
+text(ax, 54, 34, '3 rotations : abélien', 'resultat', 's', ha='left')
+text(ax, 44, 96, 'deux étapes abéliennes', 'resultat', 'm', weight='bold')
+save(fig, '50-243')

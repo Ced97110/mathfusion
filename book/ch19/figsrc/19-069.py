@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 3, 46, 47, 20, 'fixe')
+text(ax, 26.5, 59, 'le rapport de la montée', 'fixe', 'm')
+text(ax, 26.5, 52, "à l'avancée est 2", 'fixe', 'm')
+arrow(ax, (52, 56), (62, 56), 'varie')
+text(ax, 57, 60, 'noté', 'varie', 's')
+text(ax, 75, 56, r'$m=2$', 'sujet', 'xl')
+f = numberline(ax, 14, 70, 22, 0, 3, arrow_right=False)
+disc(ax, f(1), 22, 2.2, 'autre'); disc(ax, f(2), 22, 2.2, 'sujet')
+text(ax, f(1), 31, r'$m=1$', 'autre', 'm'); text(ax, f(2), 31, r'$m=2$', 'sujet', 'm')
+text(ax, 44, 6, 'deux nombres se comparent', 'fixe', 's')
+save(fig, '19-069')

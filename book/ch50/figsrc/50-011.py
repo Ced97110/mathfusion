@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 56, 'ordre 12 : tailles garanties', 'encre', 'm')
+box(ax, 2, 10, 26, 40, 'resultat'); text(ax, 15, 45, 'puissances de 2', 'resultat', 's')
+disc(ax, 9, 30, 4.5, 'resultat', label='2', size='m'); disc(ax, 21, 30, 4.5, 'resultat', label='4', size='m')
+text(ax, 15, 17, r'$4 = 2 \times 2$', 'resultat', 's')
+box(ax, 31, 10, 26, 40, 'resultat'); text(ax, 44, 45, 'puissance de 3', 'resultat', 's')
+disc(ax, 44, 30, 4.5, 'resultat', label='3', size='m')
+box(ax, 60, 10, 26, 40, 'fixe', dash=True); text(ax, 73, 45, 'deux premiers', 'fixe', 's')
+disc(ax, 73, 30, 4.5, 'fixe', label='6', size='m')
+text(ax, 73, 17, r'$6 = 2 \times 3$', 'fixe', 's')
+save(fig, '50-011')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 36, 32, 14, 'sujet', label=r'$\exists y,\ y^2=x$')
+box(ax, 54, 36, 32, 14, 'sujet', label=r'$\exists z,\ z^2=x$')
+arrow(ax, (35, 43), (53, 43), 'varie', lw=1.2)
+text(ax, 44, 48, 'renommer', 'varie', 's')
+text(ax, 18, 30, r'$y$ est liée', 'sujet', 's')
+text(ax, 70, 30, r'$z$ est liée', 'sujet', 's')
+text(ax, 44, 38, 'même sens', 'resultat', 's')
+box(ax, 29, 8, 30, 10, 'fixe', label=r'$x$ garde son nom')
+arrow(ax, (38, 19), (22, 35), 'fixe', lw=0.7)
+arrow(ax, (50, 19), (66, 35), 'fixe', lw=0.7)
+save(fig, '70-092')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 6, 56, 44, 14, 'sujet', label=r'$E$ : avec $\sqrt{2}$ et $\sqrt{3}$', size='s')
+box(ax, 6, 30, 44, 14, 'sujet', label=r'$K$ : avec $\sqrt{2}$', size='s')
+box(ax, 6, 4, 44, 14, 'fixe', label=r'$F$ : les fractions', size='s')
+arrow(ax, (28, 18), (28, 30), 'varie')
+arrow(ax, (28, 44), (28, 56), 'varie')
+text(ax, 32, 24, r'ajoute $\sqrt{2}$ : degré 2', 'varie', 's', ha='left')
+text(ax, 32, 50, r'ajoute $\sqrt{3}$ : degré 2', 'varie', 's', ha='left')
+save(fig, '61-098')

@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+k = 0.3
+v = (50, 86.6)
+tip = (k * v[0], k * v[1])
+def axes(o):
+    line(ax, [o, (o[0] + 22, o[1])], 'fixe', lw=0.5)
+    line(ax, [o, (o[0], o[1] + 30)], 'fixe', lw=0.5)
+o1, o2, o3 = (4, 24), (34, 24), (62, 24)
+for o in (o1, o2, o3): axes(o)
+arrow(ax, o1, (o1[0] + tip[0], o1[1] + tip[1]), 'sujet', lw=1.8)
+disc(ax, o2[0], o2[1], 1.3, 'fixe')
+arrow(ax, o3, (o3[0] + tip[0], o3[1] + tip[1]), 'resultat', lw=1.8)
+text(ax, 28, 40, '+', 'encre', 'xl')
+text(ax, 57, 40, '=', 'encre', 'xl')
+text(ax, 16, 56, r'$v$', 'sujet', 'm')
+text(ax, 44, 56, r'$0=\langle 0;\ 0\rangle$', 'fixe', 's')
+text(ax, 73, 56, r'$v+0$', 'resultat', 'm')
+text(ax, 22, 14, r'$50+0=50$', 'encre', 's')
+text(ax, 66, 14, r'$86{,}60+0=86{,}60$', 'encre', 's')
+text(ax, 44, 5, 'chaque composante reste la même', 'resultat', 's')
+save(fig, '41-062')

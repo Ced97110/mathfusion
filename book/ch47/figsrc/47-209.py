@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 22, 22, 16, 'sujet'); text(ax, 13, 33, r'$G$', 'sujet', 'l', weight='bold'); text(ax, 13, 27, '8 symétries', 'sujet', 's')
+box(ax, 33, 36, 24, 10, 'varie', label='rotations', size='s'); box(ax, 33, 14, 24, 10, 'varie', label='retournements', size='s')
+disc(ax, 76, 41, 6, 'resultat', label='0', size='l'); disc(ax, 76, 19, 6, 'resultat', label='1', size='l')
+arrow(ax, (24.5, 33), (32.5, 40), 'encre'); arrow(ax, (24.5, 27), (32.5, 20), 'encre')
+arrow(ax, (57.5, 41), (69.5, 41), 'resultat', both=True); arrow(ax, (57.5, 19), (69.5, 19), 'resultat', both=True)
+text(ax, 45, 54, r'$G/\ker f$ : 2 classes', 'varie', 's'); text(ax, 76, 31, r'image de $f$', 'resultat', 's')
+text(ax, 66, 6, 'mêmes 2 éléments, renommés', 'resultat', 's')
+save(fig, '47-209')

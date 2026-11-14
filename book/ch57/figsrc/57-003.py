@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+u = 14; ox, oy = 8, 8
+P = lambda x, y: (ox + x * u, oy + y * u)
+for i in range(0, 5): line(ax, [P(i, 0), P(i, 2.5)], 'fixe', lw=0.2)
+for j in range(0, 3): line(ax, [P(0, j), P(4.5, j)], 'fixe', lw=0.2)
+arrow(ax, P(0, 0), P(4.6, 0), 'fixe', lw=0.7); arrow(ax, P(0, 0), P(0, 2.9), 'fixe', lw=0.7)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.4)
+arrow(ax, P(2, 1), P(4, 2), 'varie', lw=1.4)
+disc(ax, *P(4, 2), 1.1, 'resultat')
+text(ax, *P(1.35, 0.15), '(2, 1)', 'sujet', 's')
+text(ax, *P(3.4, 0.95), '(2, 1) encore', 'varie', 's', ha='center')
+text(ax, *P(4.05, 2.3), '(4, 2)', 'resultat', 'm', ha='left')
+text(ax, 44, 46, '2 × (2, 1) = (4, 2)', 'resultat', 'm')
+text(ax, *P(0.15, 2.45), 'chaque nombre × 2', 'fixe', 's', ha='left')
+save(fig, '57-003')

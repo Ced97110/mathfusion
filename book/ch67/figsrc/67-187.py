@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'paquet de 2 éléments', 'encre', 'm')
+disc(ax, 28, 36, 6, 'sujet', label=r'$\alpha^{5}$')
+disc(ax, 60, 36, 6, 'sujet', label=r'$\alpha^{10}$')
+arrow(ax, (33, 39.5), (55, 39.5), 'varie', curve=-0.5)
+arrow(ax, (55, 32.5), (33, 32.5), 'resultat', curve=-0.5)
+text(ax, 44, 49.5, 'carré : 5 × 2 = 10', 'varie', 'm')
+text(ax, 44, 22.5, '10 × 2 = 20, 20 − 15 = 5', 'resultat', 'm')
+text(ax, 44, 10, r'racines de $x^{2}+x+1$', 'sujet', 'm')
+save(fig, '67-187')

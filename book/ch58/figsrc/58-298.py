@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 69, '(1, 0), (1, 1) : une base ?', 'fixe', 's')
+box(ax, 3, 50, 50, 10, 'sujet', label='nombre : 2 = dimension 2', size='s')
+box(ax, 3, 34, 50, 10, 'sujet', label='indépendants : oui ✓', size='s')
+box(ax, 3, 18, 50, 10, 'fixe', fill=False, dash=True, label='engendrent : pas besoin', size='s')
+box(ax, 62, 33, 24, 12, 'resultat', label='base du plan')
+arrow(ax, (54.5, 55), (63, 42), 'resultat', lw=1.2)
+arrow(ax, (54.5, 39), (60.5, 39), 'resultat', lw=1.2)
+text(ax, 44, 9, 'une seule condition suffit', 'resultat', 's')
+text(ax, 44, 4, 'si le nombre est le bon', 'resultat', 's')
+save(fig, '58-298')

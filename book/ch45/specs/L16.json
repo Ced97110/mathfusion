@@ -1,0 +1,241 @@
+[
+ {
+  "code": "45-241",
+  "a_dire": "L'ordre du couple (8, 56) est le premier pas où les multiples de 3 et de 15 se rejoignent : 15.",
+  "legende_titre": "Deux séries de pas qui se rejoignent",
+  "lecture": [
+   "Les disques bleus sont les pas 3, 6, 9, 12 et 15 : les multiples de 3, ordre de 8.",
+   "Le disque violet est le pas 15, premier multiple de 15 : ordre de 56.",
+   "La ligne verte relie les deux au pas 15."
+  ],
+  "a_voir": "Le premier pas commun aux deux séries est 15."
+ },
+ {
+  "code": "45-242",
+  "a_dire": "On vérifie l'ordre 15 par le calcul : au pas 15, les deux cases reviennent à 0.",
+  "legende_titre": "Les deux cases au pas 15",
+  "lecture": [
+   "La rangée bleue compte 10 cases de 12 : 15 × 8 = 120 fait 10 tours complets.",
+   "La rangée violette compte 14 cases de 60 : 15 × 56 = 840 fait 14 tours complets.",
+   "La ligne verte à droite montre que les deux rangées finissent au même endroit, à 0."
+  ],
+  "a_voir": "Les deux rangées se terminent pile à la fin d'un tour."
+ },
+ {
+  "code": "45-243",
+  "a_dire": "Dans U(8), les produits d'un reste de H par un reste de K donnent 1, 5, 3, 7 : tous les éléments.",
+  "legende_titre": "Le tableau des produits de H et K",
+  "lecture": [
+   "Les cases bleues à gauche sont les éléments de H : 1 et 3.",
+   "Les cases violettes en haut sont les éléments de K : 1 et 5.",
+   "Les cases vertes sont les produits modulo 8 : 1, 5, 3 et 7."
+  ],
+  "a_voir": "Les quatre produits sont les quatre éléments de U(8)."
+ },
+ {
+  "code": "45-244",
+  "a_dire": "Dans ℤ/6, les sommes d'un élément de H et d'un élément de K donnent les six heures.",
+  "legende_titre": "Le tableau des sommes de H et K",
+  "lecture": [
+   "Les cases bleues à gauche sont les éléments de H : 0, 2 et 4.",
+   "Les cases violettes en haut sont les éléments de K : 0 et 3.",
+   "Les cases vertes sont les six sommes modulo 6 : 0, 3, 2, 5, 4 et 1."
+  ],
+  "a_voir": "Les six sommes sont toutes différentes et couvrent 0 à 5."
+ },
+ {
+  "code": "45-245",
+  "a_dire": "Les 12 symétries de l'hexagone se découpent en demi-tour (2) et symétries du triangle (6) : 2 × 6.",
+  "legende_titre": "Hexagone découpé en deux morceaux",
+  "lecture": [
+   "L'hexagone gris est la figure dont on prend les douze symétries.",
+   "Le triangle bleu est formé d'un sommet sur deux : ses six symétries forment K.",
+   "La double flèche orange est le demi-tour, qui forme H avec l'identité."
+  ],
+  "a_voir": "Le produit 2 × 6 donne les 12 symétries."
+ },
+ {
+  "code": "45-246",
+  "a_dire": "Pour S₃, faire l'échange puis le décalage ne donne pas la même chose que le décalage puis l'échange : S₃ ne se découpe pas.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La rangée grise est le départ : 1, 2, 3.",
+   "La rangée bleue est le résultat de l'échange puis du décalage : 3, 2, 1.",
+   "La rangée violette est le résultat du décalage puis de l'échange : 1, 3, 2.",
+   "Le signe rouge dit que les deux résultats diffèrent."
+  ],
+  "a_voir": "Les deux rangées d'arrivée ne sont pas les mêmes."
+ },
+ {
+  "code": "45-247",
+  "a_dire": "Les puissances d'un quart de tour a sont a, a², a³ et le tour entier 1 ; le produit de deux puissances est encore une puissance.",
+  "legende_titre": "Les puissances d'un quart de tour",
+  "lecture": [
+   "Les disques bleus sont les puissances a, a² et a³.",
+   "Le disque vert est le tour entier, 1, qui ne change rien.",
+   "Les flèches orange multiplient par a et ferment le cercle.",
+   "Le texte vert montre a² · a³ = a⁵ = a : encore une puissance."
+  ],
+  "a_voir": "Les puissances se referment sur elles-mêmes."
+ },
+ {
+  "code": "45-248",
+  "a_dire": "La classe aH est l'image de H par l'application aL qui envoie x sur a + x.",
+  "legende_titre": "L'image d'un lot par un décalage",
+  "lecture": [
+   "Le cadre bleu est H : les heures 0 et 3.",
+   "Les flèches orange ajoutent 2 à chaque heure.",
+   "Le cadre vert est aH : les heures 2 et 5."
+  ],
+  "a_voir": "Chaque élément de H a son image dans aH."
+ },
+ {
+  "code": "45-249",
+  "a_dire": "Toutes les classes de H ont la même taille, car chaque décalage associe un à un les éléments.",
+  "legende_titre": "Trois classes de même taille",
+  "lecture": [
+   "Le cadre bleu est H : 0 et 3.",
+   "Les cadres vert et violet sont les classes 1 + H et 2 + H, aussi de deux éléments.",
+   "Les flèches orange ajoutent 1 et relient chaque élément à un seul élément de la classe suivante."
+  ],
+  "a_voir": "Trois classes de 2 éléments font les 6 éléments."
+ },
+ {
+  "code": "45-250",
+  "a_dire": "Un homomorphisme garde l'opération mais peut envoyer plusieurs éléments sur le même : ici ℤ/4 vers ℤ/2.",
+  "legende_titre": "Quatre éléments vers deux",
+  "lecture": [
+   "Les disques bleus sont les quatre heures de ℤ/4.",
+   "Les disques violets sont les deux heures de ℤ/2.",
+   "Les flèches orange envoient chaque heure sur son reste par 2 : deux flèches arrivent en 0 et deux en 1."
+  ],
+  "a_voir": "L'application n'est pas bijective : 4 départs, 2 arrivées."
+ },
+ {
+  "code": "45-251",
+  "a_dire": "Les théorèmes d'isomorphisme comparent un quotient, ici 4 paquets de ℤ/12, à un groupe connu, ℤ/4.",
+  "legende_titre": "Douze heures en quatre paquets",
+  "lecture": [
+   "Les cases bleues sont les quatre paquets d'heures qui ont le même reste par 4.",
+   "Les flèches orange envoient chaque paquet vers un disque.",
+   "Les disques violets sont les heures de ℤ/4."
+  ],
+  "a_voir": "Un paquet correspond à une heure de ℤ/4."
+ },
+ {
+  "code": "45-252",
+  "a_dire": "L'application qui envoie tout sur 0 garde l'addition et la multiplication, mais envoie 1 sur 0 : la condition sur 1 compte.",
+  "legende_titre": "Une application qui envoie tout sur 0",
+  "lecture": [
+   "Les disques à gauche sont les nombres 0, 1, 2 et 3.",
+   "Toutes les flèches arrivent au disque violet 0.",
+   "Le disque et la flèche rouges montrent que 1 va sur 0, pas sur 1.",
+   "Les textes verts disent que somme et produit sont gardés."
+  ],
+  "a_voir": "Somme et produit sont gardés, mais 1 ne va pas sur 1."
+ },
+ {
+  "code": "45-253",
+  "a_dire": "Un groupe de 5 éléments est formé des puissances d'un seul élément, donc c'est ℤ/5.",
+  "legende_titre": "Les puissances remplissent le groupe",
+  "lecture": [
+   "Les disques bleus sont e, a, a², a³ et a⁴.",
+   "Le grand cadre bleu regroupe les puissances de a.",
+   "L'accolade verte dit que leur nombre divise 5 et dépasse 1 : c'est 5, tout le groupe."
+  ],
+  "a_voir": "Les puissances de a sont déjà les 5 éléments."
+ },
+ {
+  "code": "45-254",
+  "a_dire": "ℤ/60 contient trois lots de 4, 3 et 5 éléments : des puissances de nombres premiers.",
+  "legende_titre": "Trois lots dans ℤ/60",
+  "lecture": [
+   "La rangée bleue montre les multiples de 15 : 4 disques.",
+   "La rangée violette montre les multiples de 20 : 3 disques.",
+   "La rangée orange montre les multiples de 12 : 5 disques.",
+   "La droite graduée va de 0 à 60."
+  ],
+  "a_voir": "4 × 3 × 5 donne 60."
+ },
+ {
+  "code": "45-255",
+  "a_dire": "Pour calculer modulo 15, on peut calculer modulo 3 et modulo 5, puis retrouver le résultat.",
+  "legende_titre": "Deux petites horloges au lieu d'une",
+  "lecture": [
+   "La case grise est le produit 7 × 8.",
+   "La case bleue est le calcul modulo 3 et la case violette le calcul modulo 5.",
+   "La case verte est le résultat 11, trouvé par les deux chemins.",
+   "La flèche grise droite donne le calcul direct : 56 de reste 11."
+  ],
+  "a_voir": "Les deux chemins arrivent au même nombre, 11."
+ },
+ {
+  "code": "45-256",
+  "a_dire": "La somme directe est le produit direct écrit avec le signe plus : on additionne case par case.",
+  "legende_titre": "Additionner des couples case par case",
+  "lecture": [
+   "La rangée bleue est le couple (1, 2).",
+   "La rangée violette est le couple (1, 1).",
+   "La rangée verte est la somme (0, 0), calculée colonne par colonne.",
+   "Les deux colonnes sont modulo 2 et modulo 3."
+  ],
+  "a_voir": "Chaque colonne s'additionne à part."
+ },
+ {
+  "code": "45-257",
+  "a_dire": "Un groupe abélien fini est un produit d'horloges dont la taille est une puissance d'un nombre premier.",
+  "legende_titre": "ℤ/12 en deux horloges",
+  "lecture": [
+   "La case grise est ℤ/12.",
+   "La case bleue ℤ/4 a une taille puissance de 2.",
+   "La case violette ℤ/3 a une taille puissance de 3.",
+   "Les flèches orange découpent ℤ/12 en ces deux morceaux."
+  ],
+  "a_voir": "ℤ/12 s'écrit comme ℤ/4 × ℤ/3."
+ },
+ {
+  "code": "45-258",
+  "a_dire": "Les codes correcteurs travaillent avec des mots de n chiffres 0 ou 1, additionnés case par case modulo 2.",
+  "legende_titre": "Additionner deux mots de 3 chiffres",
+  "lecture": [
+   "La rangée bleue est le mot 110.",
+   "La rangée violette est le mot 011.",
+   "La rangée verte est la somme 101, chiffre par chiffre.",
+   "Le texte du bas donne le nombre de mots pour n = 3 : 8."
+  ],
+  "a_voir": "Chaque colonne est additionnée modulo 2."
+ },
+ {
+  "code": "45-259",
+  "a_dire": "Représenter, c'est remplacer chaque heure par une permutation : l'heure 1 deux fois donne l'heure 2.",
+  "legende_titre": "Chaque heure devient un réordonnement",
+  "lecture": [
+   "Les disques bleus et les flèches orange sont la permutation de l'heure 1 : chaque x va sur x + 1.",
+   "Les disques verts et les doubles flèches vertes sont la permutation de l'heure 2 : 0 avec 2 et 1 avec 3.",
+   "La flèche orange du milieu relie les deux : on enchaîne deux fois l'heure 1."
+  ],
+  "a_voir": "Enchaîner la permutation de l'heure 1 deux fois donne celle de l'heure 2."
+ },
+ {
+  "code": "45-260",
+  "a_dire": "Le groupe de Galois d'un polynôme réordonne ses racines : pour x² − 2, il y a deux réordonnements.",
+  "legende_titre": "Réordonner les deux racines",
+  "lecture": [
+   "À gauche, les flèches grises ne changent rien.",
+   "À droite, les flèches orange croisées échangent √2 et −√2.",
+   "Les disques bleus sont les deux racines de x² − 2."
+  ],
+  "a_voir": "Deux racines donnent deux réordonnements : rien, ou échange."
+ },
+ {
+  "code": "45-261",
+  "a_dire": "Le théorème de Cayley place un groupe à n éléments dans n objets ; on se demande si moins d'objets suffisent.",
+  "legende_titre": "Moins d'objets que d'éléments ?",
+  "lecture": [
+   "La rangée bleue compte les 6 éléments de S₃.",
+   "La rangée grise compte les 6 objets que Cayley permute.",
+   "La rangée verte compte les 3 objets que S₃ permute vraiment."
+  ],
+  "a_voir": "S₃ a 6 éléments mais ne permute que 3 objets."
+ }
+]

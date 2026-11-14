@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+f = lambda v: 14 + v * 6
+def seg(y, p, role):
+    line(ax, [(f(0), y), (f(10), y)], 'fixe')
+    for e in (0, 10): line(ax, [(f(e), y - 1.5), (f(e), y + 1.5)], 'fixe')
+    disc(ax, f(p), y, 1.3, role)
+    text(ax, f(0), y + 6, '32,11', 'fixe', 's'); text(ax, f(10), y + 6, '32,12', 'fixe', 's')
+seg(66, 6, 'varie')
+text(ax, f(6), 72, '32,116', 'varie', 'm')
+arrow(ax, (f(0) + 1, 60), (f(6) - 1.5, 60), 'fixe', both=True); text(ax, (f(0) + f(6)) / 2, 56, '0,006', 'fixe', 's')
+arrow(ax, (f(6) + 1.5, 60), (f(10) - 1, 60), 'resultat', both=True); text(ax, (f(6) + f(10)) / 2, 56, '0,004', 'resultat', 's')
+text(ax, 44, 49, '32,12 est plus proche', 'resultat', 's')
+line(ax, [(6, 43), (82, 43)], 'fixe', dash=True)
+seg(30, 5, 'limite'); text(ax, f(5), 36, '32,115', 'limite', 'm')
+arrow(ax, (f(0) + 1, 24), (f(5) - 1.5, 24), 'limite', both=True)
+arrow(ax, (f(5) + 1.5, 24), (f(10) - 1, 24), 'limite', both=True)
+text(ax, (f(0) + f(5)) / 2, 20, '0,005', 'limite', 's'); text(ax, (f(5) + f(10)) / 2, 20, '0,005', 'limite', 's')
+text(ax, 44, 11, 'égalité : deux voisins', 'limite', 's')
+save(fig, '08-046')

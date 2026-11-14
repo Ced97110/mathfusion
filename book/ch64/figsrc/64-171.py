@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 75, r'à trouver : $f$ entière avec $G=S_5$', 'encre', 'm')
+box(ax, 2, 44, 38, 14, 'sujet', label=r'$G=S_5$ : 120 éléments', size='s')
+box(ax, 50, 44, 36, 14, 'resultat', label='pas de radicaux', size='s')
+arrow(ax, (41, 51), (49, 51), 'resultat')
+text(ax, 45, 56, 'Galois', 'resultat', 's')
+box(ax, 2, 8, 38, 14, 'fixe', label=r'$G\neq S_5$', size='s')
+box(ax, 50, 8, 36, 14, 'limite', label='résoluble ?', size='s')
+arrow(ax, (41, 15), (49, 15), 'limite')
+text(ax, 45, 20, 'non', 'limite', 's')
+save(fig, '64-171')

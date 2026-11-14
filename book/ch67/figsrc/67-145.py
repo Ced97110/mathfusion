@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+for k, x in enumerate([22, 44, 66]):
+    disc(ax, x, 60, 5.5, 'fixe', label=rf'$r_{k + 1}$')
+arrow(ax, (22, 66.5), (44, 66.5), 'varie', curve=-0.5, both=True)
+text(ax, 33, 75.5, 'on échange', 'varie', 's')
+brace(ax, 16, 72, 53, 'fixe')
+box(ax, 4, 24, 40, 14, 'sujet', label=r'$e_1=r_1+r_2+r_3$' + '\n' + 'la trace', size='s')
+box(ax, 48, 24, 36, 14, 'autre', label=r'$e_3=r_1r_2r_3$' + '\n' + 'la norme', size='s')
+arrow(ax, (44, 50), (24, 38.5), 'sujet')
+arrow(ax, (44, 50), (66, 38.5), 'autre')
+arrow(ax, (24, 23.5), (34, 16), 'resultat')
+arrow(ax, (66, 23.5), (54, 16), 'resultat')
+box(ax, 14, 4, 60, 11, 'resultat', label=r'symétriques, donc dans $F$')
+save(fig, '67-145')

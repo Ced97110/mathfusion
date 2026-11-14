@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 52, r'$\eta$ et $-\eta$ comptent pour un', 'encre', 'm')
+disc(ax, 12, 38, 5, 'sujet', label=r'$\eta$')
+disc(ax, 30, 38, 5.5, 'autre', label=r'$-\eta$')
+box(ax, 52, 32, 32, 12, 'resultat', label='une seule')
+brace(ax, 7, 36, 32, 'varie', depth=1.6)
+arrow(ax, (36, 38), (51, 38), 'varie')
+
+disc(ax, 12, 16, 5, 'sujet', label=r'$1$')
+disc(ax, 30, 16, 5.5, 'autre', label=r'$-1$')
+box(ax, 52, 10, 32, 12, 'resultat', label='neutre')
+brace(ax, 7, 36, 10, 'varie', depth=1.6)
+arrow(ax, (36, 16), (51, 16), 'varie')
+save(fig, '75-056')

@@ -1,0 +1,183 @@
+[
+ {
+  "code": "75-145",
+  "a_dire": "Un nombre complexe fois son conjugué donne a² + b², un réel positif, nul seulement si z = 0.",
+  "legende_titre": "Quatre nombres, un même calcul",
+  "lecture": [
+   "Les cases bleues sont les nombres z : 3 + 4i, 1 + i, i, puis 0.",
+   "Les cases orange sont les sommes de deux carrés : 9 + 16, 1 + 1, 0 + 1, 0 + 0.",
+   "Les cases vertes donnent 25, 2 et 1, tous positifs ; la case grise donne 0 pour z = 0."
+  ],
+  "a_voir": "Le résultat est positif pour les trois nombres non nuls et vaut 0 seulement pour 0."
+ },
+ {
+  "code": "75-146",
+  "a_dire": "Le module de z est la racine carrée du produit de z par son conjugué, un réel positif.",
+  "legende_titre": "Du produit au module",
+  "lecture": [
+   "Ligne du haut : le nombre bleu 3 + 4i est multiplié par son conjugué et donne 25.",
+   "Ligne du bas : le nombre violet −5 est multiplié par lui-même et donne 25.",
+   "Dans les deux lignes, la racine carrée de 25 donne la case verte 5."
+  ],
+  "a_voir": "Le conjugué sert à obtenir 25, et la racine carrée de 25 est le module 5."
+ },
+ {
+  "code": "75-147",
+  "a_dire": "La forme hermitienne prend deux vecteurs de C^n, multiplie chaque coordonnée de x par le conjugué de celle de y, et additionne.",
+  "legende_titre": "Deux coordonnées, un nombre",
+  "lecture": [
+   "Les cases bleues sont les coordonnées de x : 1 et i.",
+   "Les cases violettes sont les conjugués des coordonnées de y : 1 et −i.",
+   "Les cases orange sont les produits ligne par ligne : 1 et 1.",
+   "La case verte du bas additionne les produits : 2."
+  ],
+  "a_voir": "On multiplie coordonnée par coordonnée avec le conjugué, puis on additionne."
+ },
+ {
+  "code": "75-148",
+  "a_dire": "Additive en chaque variable : on peut couper un vecteur en deux morceaux, calculer chacun et additionner.",
+  "legende_titre": "Couper avant de calculer",
+  "lecture": [
+   "La case bleue en haut est x = (1, i) ; elle donne 1 + i en un seul calcul (case verte).",
+   "Les deux cases orange sont les morceaux (1, 0) et (0, i).",
+   "Les cases vertes du bas donnent 1 et i ; leur somme est 1 + i.",
+   "La flèche verte à droite relie les deux résultats égaux."
+  ],
+  "a_voir": "Calculer en un bloc ou morceau par morceau donne le même résultat."
+ },
+ {
+  "code": "75-149",
+  "a_dire": "À gauche, on sort un nombre tel quel ; à droite, on le sort conjugué.",
+  "legende_titre": "Sortir i à gauche ou à droite",
+  "lecture": [
+   "La ligne grise est le calcul de départ : il donne 1.",
+   "La ligne bleue met i devant la première flèche : i sort inchangé et le résultat est i.",
+   "La ligne orange met i devant la seconde flèche : i sort conjugué et le résultat est −i."
+  ],
+  "a_voir": "Le même nombre i sort tel quel à gauche et devient −i à droite."
+ },
+ {
+  "code": "75-150",
+  "a_dire": "Échanger les deux vecteurs donne le conjugué du résultat.",
+  "legende_titre": "Deux résultats en miroir",
+  "lecture": [
+   "La ligne grise est la droite des nombres réels.",
+   "Le cercle bleu, en bas, est H(x, y) = −i.",
+   "Le cercle violet, en haut, est H(y, x) = i, après échange de x et y.",
+   "La flèche orange relie ces deux nombres, placés en miroir de part et d’autre des réels."
+  ],
+  "a_voir": "Après l’échange, le résultat est le conjugué : i au lieu de −i."
+ },
+ {
+  "code": "75-151",
+  "a_dire": "Dans une matrice hermitienne, le nombre à la place (j, i) est le conjugué du nombre à la place (i, j).",
+  "legende_titre": "Un tableau et son miroir conjugué",
+  "lecture": [
+   "La case bleue (ligne 1, colonne 2) contient i.",
+   "La case violette (ligne 2, colonne 1) contient −i, son conjugué ; la flèche orange les relie.",
+   "Les deux cases vertes de la diagonale contiennent 1, un nombre réel."
+  ],
+  "a_voir": "Les deux cases symétriques sont conjuguées, et la diagonale est réelle."
+ },
+ {
+  "code": "75-152",
+  "a_dire": "H(x, y) se calcule en additionnant, pour chaque couple (i, j), le produit de h_ij, a_i et du conjugué de b_j.",
+  "legende_titre": "Quatre produits puis une somme",
+  "lecture": [
+   "En haut, les quatre cases bleues recopient le tableau h : 1 et i sur la première ligne, −i et 1 sur la seconde. Les flèches sont a = (1, 1) et b = (1, 0).",
+   "Chaque case grise est un couple de numéros (ligne, colonne).",
+   "Chaque case bleue de droite est le produit h_ij × a_i × conjugué de b_j, avec les nombres du cas : 1, 0, −i, 0.",
+   "La case verte additionne les quatre produits : 1 − i."
+  ],
+  "a_voir": "On calcule un produit par couple, puis on additionne les quatre."
+ },
+ {
+  "code": "75-153",
+  "a_dire": "Avec la matrice identité, H(x, x) est la somme des carrés des modules des coordonnées.",
+  "legende_titre": "Des carrés qui s’additionnent",
+  "lecture": [
+   "Le carré bleu a pour côté 3 et pour aire 9 : c’est |3|².",
+   "Le carré orange a pour côté 4 et pour aire 16 : c’est |4i|².",
+   "Le carré vert a pour côté 5 et pour aire 25 : c’est la somme."
+  ],
+  "a_voir": "Les deux aires 9 et 16 s’additionnent en 25."
+ },
+ {
+  "code": "75-154",
+  "a_dire": "Pour x = (1, i), H(x, x) vaut 2, alors que la somme des carrés des coordonnées vaut 0.",
+  "legende_titre": "Avec et sans conjugué",
+  "lecture": [
+   "La ligne grise calcule 1² + i² sans conjugué : on trouve 0.",
+   "La ligne bleue et verte multiplie chaque coordonnée par son conjugué : 1 + 1 = 2."
+  ],
+  "a_voir": "Avec le conjugué, la flèche (1, i) donne 2 et non 0."
+ },
+ {
+  "code": "75-155",
+  "a_dire": "H(x, x) est égal à son conjugué, donc c’est toujours un nombre réel.",
+  "legende_titre": "Un nombre qui est son propre conjugué",
+  "lecture": [
+   "La flèche grise est l’axe des nombres réels.",
+   "Les deux cercles rouges sont a + ib et son conjugué a − ib, hors de l’axe : ils ne sont pas égaux.",
+   "Le point vert est H(x, x), sur l’axe, égal à son conjugué."
+  ],
+  "a_voir": "Un nombre égal à son conjugué est sur l’axe des réels."
+ },
+ {
+  "code": "75-156",
+  "a_dire": "On peut ramener H(u, u) à 1 ou −1 en multipliant u par un réel c, sans changer son signe.",
+  "legende_titre": "Ramener la valeur à 1 ou −1",
+  "lecture": [
+   "Le point bleu, 4, devient le point vert 1 avec c = 1/2.",
+   "Le point violet, −9, devient le point vert −1 avec c = 1/3.",
+   "Les flèches orange multiplient la valeur par c² ; la ligne pointillée marque 0, qu’aucune flèche ne franchit."
+  ],
+  "a_voir": "Multiplier par c² garde le signe : 4 devient 1 et −9 devient −1."
+ },
+ {
+  "code": "75-157",
+  "a_dire": "Si H est alternée, H(u, u) vaut 0 pour toute flèche u, donc la preuve ne trouve aucun u avec H(u, u) différent de 0.",
+  "legende_titre": "Quand toute flèche donne 0",
+  "lecture": [
+   "La flèche bleue est u = (1, 0) dans le plan.",
+   "Les trois cases à droite calculent B(u, u) : 1 × 0 − 0 × 1, puis le résultat vert 0.",
+   "La case rouge en pointillés dit qu’un u avec H(u, u) différent de 0 est introuvable.",
+   "Le texte gris rappelle que 1 + 1 vaut 0 en caractéristique 2."
+  ],
+  "a_voir": "Pour une forme alternée, chaque flèche prise deux fois donne 0."
+ },
+ {
+  "code": "75-158",
+  "a_dire": "La preuve passe par trois étapes : développer, remplacer u par iu, puis conclure h = 0 ; la deuxième étape est décisive.",
+  "legende_titre": "Trois étapes, une décisive",
+  "lecture": [
+   "La case bleue développe H(u + v, u + v) et donne h + conjugué de h = 0.",
+   "La case orange, au bord épais, remplace u par iu et donne h = conjugué de h.",
+   "La case verte réunit les deux : 2h = 0, donc h = 0.",
+   "La case rouge en pointillés rappelle que sans l’étape 2, h = i resterait possible."
+  ],
+  "a_voir": "L’étape 2 est celle qui exclut h = i."
+ },
+ {
+  "code": "75-159",
+  "a_dire": "Le nombre de valeurs +1 est le même pour toutes les bases dont les valeurs sont ±1 ; sinon il peut changer.",
+  "legende_titre": "Deux bases, deux comptes",
+  "lecture": [
+   "À gauche, les bases (1, 0), (0, 1) et (0, 1), (1, 0) donnent des valeurs ±1 : deux cases vertes 1 chacune, donc le même nombre de 1.",
+   "À droite, la base (2, 0), (0, 1) donne 4 (case rouge) et 1 (case verte).",
+   "Le texte rouge rappelle que 4 n'est ni 1 ni −1 : le nombre de 1 change."
+  ],
+  "a_voir": "Quand les valeurs sont ±1, le nombre de valeurs 1 ne change pas ; sinon il change avec la base."
+ },
+ {
+  "code": "75-160",
+  "a_dire": "La construction ne demande qu’un ensemble de nombres et une involution, une opération qui redonne le départ appliquée deux fois ; elle vaut aussi pour les quaternions.",
+  "legende_titre": "Même schéma pour deux ensembles",
+  "lecture": [
+   "À gauche, les cases bleues : 3 + 4i et son conjugué 3 − 4i.",
+   "À droite, les cases violettes en pointillés : q et son conjugué pour les quaternions.",
+   "Les flèches orange montent et descendent : appliquer deux fois le conjugué ramène au départ."
+  ],
+  "a_voir": "Le conjugué appliqué deux fois redonne le nombre de départ, pour les complexes comme pour les quaternions."
+ }
+]

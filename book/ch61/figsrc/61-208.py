@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig,ax=canvas(66)
+u=22; x0=8; y0=20; th=math.radians(40); c,s=math.cos(th),math.sin(th)
+A=(x0,y0); P=lambda d:(x0+d*c,y0+d*s)
+B=P(u); D=P(1.8*u); C=(x0+1.5*u,y0); E=(x0+2.7*u,y0)
+poly(ax,[A,D,E],'autre'); poly(ax,[A,B,C],'sujet')
+numberline(ax,x0,x0+3*u,y0,0,3,0.5,every=2,arrow_right=False)
+disc(ax,C[0],C[1],1.3,'sujet'); disc(ax,E[0],E[1],1.3,'resultat')
+text(ax,C[0],y0-9,'$a$ = 1,5','sujet','m')
+text(ax,E[0],y0-9,'AE = 2,7','resultat','m')
+text(ax,D[0]-6,D[1]+3,'$b$ = 1,8','autre','m')
+m=P(u/2); text(ax,m[0]+3.2*s,m[1]-3.2*c,'1','sujet','m')
+text(ax,66,55,'1,5 × 1,8 = 2,7','resultat','l')
+text(ax,66,48,'mesure = produit','resultat','s')
+save(fig,'61-208')

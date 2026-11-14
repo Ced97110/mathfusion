@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 37, 60, r'$\mathbb{Z}$', 'sujet', 'xl')
+text(ax, 50, 60, r'$[\sqrt{-5}]$', 'varie', 'xl')
+box(ax, 2, 28, 40, 14, 'sujet', label='on part des entiers', size='s')
+box(ax, 46, 28, 40, 14, 'varie', label=r'on ajoute $\sqrt{-5}$ (carré −5)', size='s')
+arrow(ax, (24, 43), (36, 54), 'sujet')
+arrow(ax, (66, 43), (52, 54), 'varie')
+arrow(ax, (44, 27), (44, 20), 'resultat')
+box(ax, 6, 3, 76, 16, 'resultat', label=r'les nombres $a + b\sqrt{-5}$,  $a$ et $b$ entiers', size='s')
+save(fig, '56-048')

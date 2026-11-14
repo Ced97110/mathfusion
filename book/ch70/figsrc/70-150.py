@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 28, 66, 'dans le plan', 'encre', 's')
+line(ax, [(18, 12), (18, 58)], 'sujet', lw=1.5)
+arrow(ax, (18, 44), (25, 44), 'varie', lw=1.5)
+arrow(ax, (18, 26), (39, 26), 'autre', lw=1.5)
+text(ax, 27, 44, r'$(1,\ 0)$', 'varie', 's', ha='left')
+text(ax, 41, 26, r'$(3,\ 0)$', 'autre', 's', ha='left')
+text(ax, 28, 6, 'parallèles', 'resultat', 's')
+o, u = (68, 34), 14
+text(ax, 66, 66, "dans l'espace", 'encre', 's')
+line(ax, [iso(0, 0, -1.6, o, u), iso(0, 0, 1.8, o, u)], 'sujet', lw=1.5)
+arrow(ax, iso(0, 0, 0, o, u), iso(1, 0, 0, o, u), 'varie', lw=1.5)
+arrow(ax, iso(0, 0, 0, o, u), iso(0, 1, 0, o, u), 'autre', lw=1.5)
+text(ax, iso(1, 0, 0, o, u)[0], iso(1, 0, 0, o, u)[1] + 4, r'$(1,\ 0,\ 0)$', 'varie', 's')
+text(ax, iso(0, 1, 0, o, u)[0], iso(0, 1, 0, o, u)[1] + 4, r'$(0,\ 1,\ 0)$', 'autre', 's')
+text(ax, 66, 6, 'pas parallèles', 'limite', 's')
+save(fig, '70-150')

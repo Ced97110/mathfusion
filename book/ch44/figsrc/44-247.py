@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+text(ax,44,69,r'$(a\,b)^{-1} = b^{-1}a^{-1}$','sujet','l')
+for x,t in [(3,'départ'),(34,r'après $b$'),(65,'arrivée')]: box(ax,x,30,20,10,'fixe',label=t,size='s')
+arrow(ax,(23,38),(34,38),'varie'); arrow(ax,(54,38),(65,38),'varie')
+text(ax,28.5,44,r'$b$','varie'); text(ax,59.5,44,r'$a$','varie')
+arrow(ax,(65,32),(54,32),'resultat'); arrow(ax,(34,32),(23,32),'resultat')
+text(ax,59.5,26,r'$a^{-1}$','resultat'); text(ax,28.5,26,r'$b^{-1}$','resultat')
+text(ax,44,54,r'faire $a\,b$ : $b$ d’abord','varie','s')
+text(ax,44,16,r'défaire : $a^{-1}$ d’abord, puis $b^{-1}$','resultat','s')
+save(fig,'44-247')

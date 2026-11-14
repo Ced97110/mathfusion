@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+s = 24
+poly(ax, [(5, 22), (5+s, 22), (5+s, 22+s), (5, 22+s)], 'sujet')
+text(ax, 5 + s/2, 22 + s/2, 'aire 2', 'sujet', 'm')
+text(ax, 5 + s/2, 17.5, 'côté ?', 'varie', 'm')
+arrow(ax, (32, 34), (46, 34), 'varie')
+text(ax, 39, 38, 's\'écrit', 'varie', 's')
+text(ax, 66, 34, r'$\sqrt{2}$', 'resultat', 22)
+arrow(ax, (58, 22), (58, 28), 'sujet')
+arrow(ax, (68, 22), (68, 28), 'sujet')
+text(ax, 58, 17.5, '√ : le côté', 'sujet', 's')
+text(ax, 68, 12.5, '2 : l\'aire', 'sujet', 's')
+text(ax, 44, 53, 'le nom exact du côté', 'encre', 'm')
+save(fig, '22-007')

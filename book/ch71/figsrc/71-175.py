@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+c = (44, 40); u = 20; k = 1 / math.sqrt(2)
+ts = [i / 200 * 2 * math.pi for i in range(201)]
+arrow(ax, (c[0] - 38, c[1]), (c[0] + 38, c[1]), 'fixe', lw=0.7)
+arrow(ax, (c[0], c[1] - 34), (c[0], c[1] + 34), 'fixe', lw=0.7)
+line(ax, [(c[0] + (0.5 * math.cos(t) + math.sin(t)) * u, c[1] + (0.5 * math.cos(t) - math.sin(t)) * u) for t in ts], 'sujet', lw=1.2)
+arrow(ax, c, (c[0] + 0.5 * u, c[1] + 0.5 * u), 'varie', lw=1.3)
+arrow(ax, c, (c[0] + u, c[1] - u), 'resultat', lw=1.3)
+disc(ax, c[0] + 0.5 * u, c[1] + 0.5 * u, 1.4, 'varie'); disc(ax, c[0] + u, c[1] - u, 1.4, 'resultat')
+line(ax, [(c[0] + 8 * math.cos(math.radians(t)), c[1] + 8 * math.sin(math.radians(t))) for t in range(0, 46, 3)], 'varie', lw=0.8)
+text(ax, c[0] + 12, c[1] + 3.5, '45°', 'varie', 's')
+text(ax, c[0] + 9, c[1] + 15, r'$u_1$ : $\approx 0{,}71$', 'varie', 's', ha='left')
+text(ax, c[0] + u + 2, c[1] - u - 4, r'$u_2$ : $\approx 1{,}41$', 'resultat', 's', ha='right')
+text(ax, 4, 75, 'petit axe : $u_1$', 'varie', 's', ha='left')
+text(ax, 4, 69, 'grand axe : $u_2$', 'resultat', 's', ha='left')
+text(ax, c[0] + 36, c[1] + 3, '$x$', 'fixe', 's'); text(ax, c[0] + 3, c[1] + 34, '$y$', 'fixe', 's')
+save(fig, '71-175')

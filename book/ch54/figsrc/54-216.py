@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 14, 70, 60, 13, 'sujet', label=r'$\frac{1}{2}+\frac{2}{3}x$', size='l')
+arrow(ax, (44, 69.5), (44, 57.5), 'varie')
+text(ax, 47, 63.5, 'même dénominateur : 6', 'varie', 's', ha='left')
+box(ax, 14, 44, 60, 13, 'fixe', label=r'$\frac{3}{6}+\frac{4}{6}x$', size='l')
+arrow(ax, (44, 43.5), (44, 31.5), 'varie')
+text(ax, 47, 37.5, 'sortir un sixième', 'varie', 's', ha='left')
+box(ax, 14, 18, 60, 13, 'resultat', label=r'$\frac{1}{6}\,(3+4x)$', size='l')
+text(ax, 44, 8, 'numérateurs 3 et 4 : rien en commun', 'resultat', 's')
+save(fig, '54-216')

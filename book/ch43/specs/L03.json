@@ -1,0 +1,178 @@
+[
+ {
+  "code": "43-033",
+  "a_dire": "Le signe ∼ remplace la lettre E et se lit « est équivalent à ».",
+  "legende_titre": "Un signe à la place d'une lettre",
+  "lecture": [
+   "Dans le cadre gris, la lettre orange E est écrite entre x et y.",
+   "Dans le cadre bleu, le signe orange ∼ est à la place de E.",
+   "La flèche verte dit que les deux écritures ont le même sens."
+  ],
+  "a_voir": "Le signe ∼ prend la place de la lettre E entre x et y."
+ },
+ {
+  "code": "43-034",
+  "a_dire": "Quand la relation a son propre signe (=, ≡, ≅), on le garde, car il en dit plus que ∼.",
+  "legende_titre": "Le signe propre dit la nature de la relation",
+  "lecture": [
+   "Le cadre rouge montre 109 = 1 : c'est faux.",
+   "Le cadre vert montre 109 ≡ 1 (mod 12) : c'est vrai.",
+   "Le cadre gris montre le signe ≅, vu au chapitre 45."
+  ],
+  "a_voir": "Chaque signe précis dit autre chose : = n'est pas ≡."
+ },
+ {
+  "code": "43-035",
+  "a_dire": "Deux droites sont équivalentes quand elles ont la même pente ; ici 2.",
+  "legende_titre": "Deux droites, une même pente",
+  "lecture": [
+   "La droite bleue est y = 2x + 1, la droite violette est y = 2x + 5.",
+   "Sur chacune, l'escalier orange avance de 1 et monte de 2.",
+   "Les deux droites ne se coupent pas."
+  ],
+  "a_voir": "Les deux escaliers sont identiques : même pente 2."
+ },
+ {
+  "code": "43-036",
+  "a_dire": "Deux droites de même pente diffèrent d'un nombre fixe : leur écart ne change pas.",
+  "legende_titre": "Un écart qui ne bouge pas",
+  "lecture": [
+   "La droite bleue est y = 2x + 1, la violette y = 2x + 5.",
+   "Chaque flèche orange mesure l'écart vertical entre les deux droites.",
+   "Les trois flèches, à trois places différentes, valent toutes 4."
+  ],
+  "a_voir": "L'écart vaut 4 partout."
+ },
+ {
+  "code": "43-037",
+  "a_dire": "La preuve part de « la différence est fixe » et montre trois conditions ; l'addition des écarts porte la transitivité.",
+  "legende_titre": "Les écarts 4 et 8 donnent 12",
+  "lecture": [
+   "Les trois disques f, g, h sont les hauteurs 5, 1 et −7 sur l'axe vertical.",
+   "Les flèches orange donnent les écarts : 4 de f à g, 8 de g à h.",
+   "La flèche verte donne l'écart de f à h : 12, soit 4 + 8."
+  ],
+  "a_voir": "L'écart de f à h est la somme des deux écarts : 4 + 8 = 12."
+ },
+ {
+  "code": "43-038",
+  "a_dire": "Deux points sont équivalents quand x² + y² a la même valeur : ils sont à la même distance de l'origine.",
+  "legende_titre": "Deux points sur un même cercle",
+  "lecture": [
+   "Le point bleu est (3, 4) et le point violet est (5, 0).",
+   "Les deux segments orange partent de O et mesurent 5.",
+   "Le calcul sous chaque point donne 25 dans les deux cas."
+  ],
+  "a_voir": "Les deux points donnent 25 et sont sur le même cercle."
+ },
+ {
+  "code": "43-039",
+  "a_dire": "La relation « même image par f » est toujours une relation d'équivalence, car elle repose sur l'égalité.",
+  "legende_titre": "Même note, donc en relation",
+  "lecture": [
+   "Les trois cadres bleus sont des élèves qui ont la même note.",
+   "Les flèches orange (f) mènent les trois à la même case verte.",
+   "L'élève violet va vers une autre note : il n'est pas lié aux trois."
+  ],
+  "a_voir": "Les élèves envoyés sur la même note sont en relation."
+ },
+ {
+  "code": "43-040",
+  "a_dire": "Le produit AB est la matrice de l'enchaînement T_A ∘ T_B.",
+  "legende_titre": "Deux machines, une seule",
+  "lecture": [
+   "Le point (1, 2) devient (3, 2) par la première machine T_B, puis (6, 4) par T_A.",
+   "La flèche verte du bas va de (1, 2) à (6, 4) en une étape.",
+   "Cette flèche est T_AB, égale à T_A ∘ T_B."
+  ],
+  "a_voir": "La flèche verte remplace les deux flèches orange."
+ },
+ {
+  "code": "43-041",
+  "a_dire": "Le nombre en ligne i, colonne j de AB : on prend la ligne i de A et la colonne j de B, on multiplie un à un puis on additionne.",
+  "legende_titre": "Une case du produit, en un calcul",
+  "lecture": [
+   "Dans A, la première ligne orange est 2 et 0.",
+   "Dans B, la deuxième colonne orange est 1 et 1.",
+   "La case verte de AB, en haut à droite, vaut 2 × 1 + 0 × 1 = 2."
+  ],
+  "a_voir": "Ligne orange fois colonne orange donne la case verte."
+ },
+ {
+  "code": "43-042",
+  "a_dire": "La matrice identité I laisse chaque point à sa place, contrairement aux autres matrices.",
+  "legende_titre": "La matrice qui ne déplace rien",
+  "lecture": [
+   "Chaque ligne part du point (1, 2).",
+   "Les deux premières flèches orange le déplacent vers (2, 4) et (3, 2).",
+   "La flèche verte de I le laisse en (1, 2)."
+  ],
+  "a_voir": "Seule la matrice I rend le même point."
+ },
+ {
+  "code": "43-043",
+  "a_dire": "Une matrice P est inversible quand une seconde matrice P⁻¹ défait ce que fait T_P.",
+  "legende_titre": "Un aller et un retour",
+  "lecture": [
+   "La flèche orange T_P envoie (1, 2) sur (3, 2).",
+   "La flèche verte P⁻¹ ramène (3, 2) sur (1, 2).",
+   "L'existence de cette flèche verte est ce que dit « inversible »."
+  ],
+  "a_voir": "Il existe une flèche de retour."
+ },
+ {
+  "code": "43-044",
+  "a_dire": "P P⁻¹ et P⁻¹ P donnent la matrice identité I.",
+  "legende_titre": "P fois son inverse donne I",
+  "lecture": [
+   "P a pour lignes (2, 5) et (1, 3), P⁻¹ a pour lignes (3, −5) et (−1, 2).",
+   "La ligne orange de P et la colonne orange de P⁻¹ donnent 2 × 3 + 5 × (−1) = 1.",
+   "Le résultat vert est I : des 1 en diagonale, des 0 ailleurs."
+  ],
+  "a_voir": "Le produit des deux matrices est I."
+ },
+ {
+  "code": "43-045",
+  "a_dire": "A et B sont semblables s'il existe P inversible avec P A P⁻¹ = B ; c'est une relation d'équivalence.",
+  "legende_titre": "Semblables : une règle précise",
+  "lecture": [
+   "La flèche orange transforme A en B avec P A P⁻¹.",
+   "Avec P = I, la flèche verte ramène A sur A : l'égalité est un cas particulier.",
+   "En rouge, I et (1 0 ; 0 2) ont des nombres proches mais ne sont pas semblables."
+  ],
+  "a_voir": "Semblables veut dire P A P⁻¹ = B, pas « nombres proches »."
+ },
+ {
+  "code": "43-046",
+  "a_dire": "P A P⁻¹ se lit de droite à gauche : d'abord P⁻¹, puis A, puis P.",
+  "legende_titre": "L'ordre de lecture est inversé",
+  "lecture": [
+   "Les trois cadres sont P, A et P⁻¹, dans l'ordre d'écriture.",
+   "Les nombres orange 1er, 2e, 3e donnent l'ordre d'action.",
+   "La flèche orange va de la droite vers la gauche."
+  ],
+  "a_voir": "La matrice écrite à droite agit la première."
+ },
+ {
+  "code": "43-047",
+  "a_dire": "AB s'écrit pour dire : la matrice de l'application « B puis A ».",
+  "legende_titre": "Deux lettres pour une phrase",
+  "lecture": [
+   "Le point entre dans B (violet), puis dans A (bleu), puis sort comme image.",
+   "L'accolade verte regroupe B et A.",
+   "Elle porte le nom court AB."
+  ],
+  "a_voir": "AB désigne B puis A, en deux lettres."
+ },
+ {
+  "code": "43-048",
+  "a_dire": "La lettre I désigne la matrice identité, qui laisse chaque point où il est.",
+  "legende_titre": "I : la matrice qui ne change rien",
+  "lecture": [
+   "Le cadre de gauche est le point (3, 4).",
+   "Le cadre bleu I est la matrice identité.",
+   "Le cadre de droite est encore (3, 4) : l'accolade verte relie les deux."
+  ],
+  "a_voir": "Avant et après I, le point est le même."
+ }
+]

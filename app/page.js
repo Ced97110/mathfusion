@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { getToc, slugOf, labelOf, getFiche } from '../lib/book';
+import { getToc, slugOf, labelOf, getFiche, getBranches } from '../lib/book';
+import ChapterList from './components/ChapterList';
 
 // La fiche montrée en vitrine. Si elle disparaît, la première fiche du premier chapitre la remplace.
 const SHOWCASE = { file: 'ch06.html', id: 'f06-025' };
@@ -49,6 +50,7 @@ export default function Home() {
   const fiches = done.reduce((a, c) => a + c.n, 0);
   const shown = showcase(done);
   const first = done[0];
+  const byKey = new Map(toc.map((c) => [String(c.key), c]));
   return (
     <div id="home">
       <section className="hero">
@@ -108,18 +110,22 @@ export default function Home() {
       </section>
 
       <section className="chap" id="chapitres">
-        <h2>Chapitres publiés</h2>
-        <ul id="chl">
-          {done.map((c) => (
-            <li key={c.key}>
-              <Link href={`/chapitre/${slugOf(c)}/`}>
-                <span className="k">{c.key}</span>
-                <span className="ti">{c.title}</span>
-                <span className="c">{c.n} fiches</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <h2>Chapitres par branche</h2>
+        <ChapterList chapters={toc.filter((c) => c.key === 'AP')} />
+        {getBranches().map((b) => (
+          <section key={b.slug} className="bs">
+            <h3 className="bt">
+              <Link href={`/branche/${b.slug}/`}>{b.title}</Link>
+            </h3>
+            {b.sections.map((sec) => (
+              <div key={sec.title}>
+                {b.sections.length > 1 && <div className="ss">{sec.title}</div>}
+                <ChapterList chapters={sec.chapters.map((k) => byKey.get(k)).filter(Boolean)} />
+              </div>
+            ))}
+          </section>
+        ))}
+        <ChapterList chapters={toc.filter((c) => c.key === 'A')} />
         {todo.length > 0 && <p className="avt">{upcoming(todo)}</p>}
         {first && <Link className="btn" href={`/chapitre/${slugOf(first)}/`}>Commencer au chapitre&nbsp;{first.key}</Link>}
       </section>

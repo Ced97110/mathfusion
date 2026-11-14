@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, '55 = 5 × 11', 'encre', 'l')
+f = numberline(ax, 6, 80, 38, 0, 12, 1, labels=False, arrow_right=False)
+disc(ax, f(5), 38, 1.8, 'sujet'); text(ax, f(5), 43, '5', 'sujet', 'm')
+disc(ax, f(11), 38, 1.8, 'sujet'); text(ax, f(11), 43, '11', 'sujet', 'm')
+disc(ax, f(8), 38, 1.8, 'varie'); text(ax, f(8), 43, '8', 'varie', 'm', weight='bold')
+brace(ax, f(5) + 1, f(8) - 1, 34, 'varie', 'y = 3', size='s')
+brace(ax, f(8) + 1, f(11) - 1, 34, 'varie', 'y = 3', size='s')
+text(ax, 44, 17, 'x = (5 + 11) ÷ 2 = 8', 'varie', 'm')
+text(ax, 44, 10, 'y = (11 − 5) ÷ 2 = 3', 'varie', 'm')
+text(ax, 44, 3, '8² − 3² = 64 − 9 = 55', 'resultat', 'm')
+save(fig, '53-188')

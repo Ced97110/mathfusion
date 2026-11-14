@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+# in the field with 4 elements : u = alpha, v = alpha + 1 ; u + v = 1 and u v = 1 ; 1^4 = 1
+text(ax, 44, 79, r'racines de $x^4 - x$', 'sujet', 's')
+box(ax, 4, 62, 36, 12, 'sujet', label=r'$u = \alpha$')
+box(ax, 48, 62, 36, 12, 'sujet', label=r'$v = \alpha+1$')
+arrow(ax, (22, 61), (22, 52), 'varie')
+arrow(ax, (66, 61), (66, 52), 'varie')
+arrow(ax, (22, 61), (62, 52), 'varie')
+arrow(ax, (66, 61), (26, 52), 'varie')
+box(ax, 4, 38, 36, 13, 'varie', label=r'somme $u+v = 1$', size='s', lw=1.8)
+box(ax, 48, 38, 36, 13, 'autre', label=r'produit $uv = 1$', size='s')
+arrow(ax, (22, 37), (22, 28), 'resultat')
+arrow(ax, (66, 37), (66, 28), 'resultat')
+box(ax, 4, 16, 36, 11, 'resultat', label=r'$1^4 = 1$', size='s')
+box(ax, 48, 16, 36, 11, 'resultat', label=r'$1^4 = 1$', size='s')
+text(ax, 44, 7, 'la somme et le produit sont des racines', 'resultat', 's')
+save(fig, '67-071')

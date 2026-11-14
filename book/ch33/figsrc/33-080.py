@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 3, 46, 82, 22, 'fixe')
+text(ax, 44, 62, "l'angle de la moitié haute", 'encre', 'm'); text(ax, 44, 56.5, 'du cercle dont le cosinus', 'encre', 'm'); text(ax, 44, 51, 'vaut x', 'encre', 'm')
+arrow(ax, (44, 45), (44, 37), 'varie', lw=1.3); text(ax, 47, 41, 's’écrit', 'varie', 's', ha='left')
+box(ax, 3, 22, 36, 13, 'sujet'); box(ax, 49, 22, 36, 13, 'autre')
+text(ax, 21, 28.5, r'$\cos^{-1}x$', 'sujet', 'xl'); text(ax, 67, 28.5, r'$\arccos x$', 'autre', 'xl'); text(ax, 44, 28.5, '=', 'encre', 'xl')
+box(ax, 8, 3, 72, 10, 'resultat', label=r'touche $\cos^{-1}$ : $0{,}5\ \to\ 60°$', size='m')
+arrow(ax, (44, 21), (44, 14), 'resultat', lw=1.0)
+save(fig, '33-080')

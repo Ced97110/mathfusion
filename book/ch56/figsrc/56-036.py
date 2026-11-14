@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 58, 'a ∼ b se lit « a est associé à b »', 'encre', 'm')
+box(ax, 4, 20, 22, 16, 'sujet', label='a = 3', size='l')
+box(ax, 62, 20, 22, 16, 'autre', label='b = −3', size='l')
+text(ax, 44, 28, '∼', 'encre', 'xl')
+arrow(ax, (26.8, 33), (61.2, 33), 'varie', curve=-0.3)
+text(ax, 44, 46, '3 ∣ −3 : −3 = 3 × (−1)', 'varie', 's')
+arrow(ax, (61.2, 23), (26.8, 23), 'varie', curve=-0.3)
+text(ax, 44, 10, '−3 ∣ 3 : 3 = −3 × (−1)', 'varie', 's')
+save(fig, '56-036')

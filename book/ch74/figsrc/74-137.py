@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+R = 22; O = (30, 30)
+pt = lambda k: (O[0]+R*math.cos(math.radians(60*k)), O[1]+R*math.sin(math.radians(60*k)))
+poly(ax, [O, pt(0), pt(1)], 'resultat')
+for k in range(6):
+    line(ax, [pt(k), pt((k+1) % 6)], 'resultat', lw=1.2)
+    arrow(ax, O, pt(k), 'sujet', lw=0.8)
+for k in range(6):
+    disc(ax, pt(k)[0], pt(k)[1], 1.8, 'sujet')
+disc(ax, O[0], O[1], 1.0, 'encre')
+text(ax, pt(0)[0]+5, pt(0)[1]-1, r'$v$', 'sujet', 'l')
+text(ax, pt(1)[0]+6, pt(1)[1]+3, r'$\rho(v)$', 'varie', 'm')
+text(ax, O[0]-3.5, O[1]-3, r'$O$', 'encre', 's')
+text(ax, 71, 45, r'$|v-\rho(v)|$', 'resultat', 's')
+text(ax, 71, 39, r'$=|v|$', 'resultat', 's')
+text(ax, 71, 28, r'$2\sin 30^\circ=1$', 'resultat', 's')
+text(ax, 71, 14, '6 voisins', 'sujet', 's')
+text(ax, 71, 8, 'à même distance', 'sujet', 's')
+save(fig, '74-137')

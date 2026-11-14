@@ -1,0 +1,272 @@
+[
+ {
+  "code": "53-121",
+  "a_dire": "Un exposant de 300 chiffres décimaux a environ 1 000 bits, donc la méthode demande moins de 2 000 multiplications.",
+  "legende_titre": "De 300 chiffres à un millier de bits",
+  "lecture": [
+   "En haut, les trois cases bleues sont les chiffres de 999. Les dix cases orange sont ses bits.",
+   "Le nombre 999 est entre 512 et 1 023 : il faut 10 bits pour l'écrire, un peu plus de 3 bits par chiffre.",
+   "En bas, la même règle donne pour 300 chiffres (bleu) environ 1 000 bits (orange), puis moins de 2 000 multiplications (vert)."
+  ],
+  "a_voir": "Le nombre de multiplications reste de l'ordre du millier, alors que l'exposant a 300 chiffres."
+ },
+ {
+  "code": "53-122",
+  "a_dire": "Si m et n n'ont aucun diviseur commun, m puissance φ(n) a le reste 1 par n ; sans cette condition, le reste peut être différent de 1.",
+  "legende_titre": "Un reste égal à 1, sous une condition",
+  "lecture": [
+   "La ligne de cercles est l'horloge à 6 cases. Les cercles bleus, 1 et 5, sont les cases qui ont un inverse : φ(6) vaut 2.",
+   "À gauche, en vert : m = 5 n'a aucun diviseur commun avec 6. Son carré, 25, a pour reste 1.",
+   "À droite, en rouge : m = 2 partage le diviseur 2 avec 6. Son carré, 4, a pour reste 4, et non 1."
+  ],
+  "a_voir": "Le reste 1 apparaît avec 5, premier avec 6, et disparaît avec 2."
+ },
+ {
+  "code": "53-123",
+  "a_dire": "Les cases inversibles de ℤ/55ℤ restent entre elles quand on les multiplie : le produit de deux cases inversibles est inversible, et son inverse est le produit des inverses.",
+  "legende_titre": "Un ensemble stable par le produit",
+  "lecture": [
+   "Le cadre en pointillés gris contient les cases inversibles de l'horloge à 55 cases.",
+   "En haut, en bleu : 3, 4 et leur produit 12. Les flèches orange donnent l'inverse de chacun.",
+   "En bas, en violet : les inverses 37, 14 et 23. Le produit 37 × 14 vaut 518, de reste 23 par 55 : c'est l'inverse de 12."
+  ],
+  "a_voir": "Le produit de 3 par 4 reste dans le cadre, et son inverse est le produit de 37 par 14."
+ },
+ {
+  "code": "53-124",
+  "a_dire": "La preuve part d'un m premier avec n, utilise que l'ordre de m divise φ(n), et arrive à m puissance φ(n) de reste 1.",
+  "legende_titre": "Une preuve en trois temps",
+  "lecture": [
+   "Les trois cases du haut se lisent de gauche à droite : le départ en bleu, l'étape décisive en orange (bord épais), l'arrivée en vert.",
+   "L'étape décisive dit que l'ordre 20 de 2 divise 40, nombre de cases inversibles de l'horloge à 55 cases.",
+   "La barre du bas coupe l'exposant 40 en deux blocs de 20 facteurs. Chaque bloc a le reste 1, donc 2 puissance 40 a le reste 1."
+  ],
+  "a_voir": "C'est la division de 40 par l'ordre 20 qui permet d'arriver au reste 1."
+ },
+ {
+  "code": "53-125",
+  "a_dire": "Quand n est un nombre premier p, φ(p) vaut p − 1 et m puissance p − 1 a le reste 1 par p, tant que p ne divise pas m.",
+  "legende_titre": "Le cas où le nombre de cases est premier",
+  "lecture": [
+   "Sur l'horloge à 7 cases, les cercles bleus 1 à 6 sont tous inversibles : l'accolade compte p − 1 = 6 cases. Seul le cercle gris 0 ne l'est pas.",
+   "À gauche, en vert : 2 puissance 6 vaut 64, soit 9 fois 7 plus 1, donc le reste est 1.",
+   "À droite, en rouge : 7 est divisé par 7, et 7 puissance 6 est un multiple de 7, de reste 0."
+  ],
+  "a_voir": "Le reste 1 tient pour 2 et tombe en défaut pour 7, qui est multiple de 7."
+ },
+ {
+  "code": "53-126",
+  "a_dire": "Les six nombres de la recette se calculent les uns à partir des autres avec 5 et 11 ; 55 et 3 sont publics, 27 est gardé, et le message 8 devient 17 puis redevient 8.",
+  "legende_titre": "La recette RSA avec de petits nombres",
+  "lecture": [
+   "En haut, les cases violettes sont les nombres gardés secrets : 5, 11, φ = 40 et d = 27. Les cases bleues, 55 et 3, sont publiques.",
+   "Les flèches orange montrent d'où vient chaque nombre : 5 et 11 donnent 55 et 40, puis 40 et 3 donnent 27.",
+   "En bas, le message 8 (bleu) devient 17 (orange) par la puissance 3, puis redevient 8 (vert) par la puissance 27."
+  ],
+  "a_voir": "Le public (bleu) et le gardé (violet) sont séparés, et la boucle 8, 17, 8 se ferme."
+ },
+ {
+  "code": "53-127",
+  "a_dire": "La figure se lit de haut en bas : de 5 et 11 on tire deux clés ; chiffrer 8 en 17 n'utilise que 55 et 3, déchiffrer 17 en 8 demande 27, gardé par Alice.",
+  "legende_titre": "Quelle flèche a besoin du nombre gardé ?",
+  "lecture": [
+   "En haut : 5 et 11 (violet) donnent 55 et 40 (gris). Le cadre en pointillés contient les deux clés.",
+   "La clé publique 55 et 3 est en bleu ; la clé privée 27 est en violet.",
+   "Dans la colonne de gauche, la flèche bleue de 8 vers 17 est reliée à la clé publique. La flèche violette de 17 vers 8 est reliée à la clé privée."
+  ],
+  "a_voir": "Seule la flèche violette demande le nombre gardé 27."
+ },
+ {
+  "code": "53-128",
+  "a_dire": "Alice multiplie 5 par 11 pour obtenir 55, calcule 4 fois 10 pour obtenir 40, puis garde 3 parce que le plus grand diviseur commun de 3 et 40 est 1.",
+  "legende_titre": "Trois calculs pour fabriquer les clés",
+  "lecture": [
+   "Première ligne : 5 et 11 (violet) donnent 55 (bleu, public).",
+   "Deuxième ligne : 5 − 1 et 11 − 1, soit 4 et 10, donnent 40 (violet).",
+   "Troisième ligne : e = 3 et 40 ont un PGCD égal à 1 (vert), donc 3 est gardé."
+  ],
+  "a_voir": "Chaque ligne donne un nombre à partir des précédents, et le test final vaut 1."
+ },
+ {
+  "code": "53-129",
+  "a_dire": "On trouve d = 27 en divisant 40 par 3 : 40 = 13 × 3 + 1, donc 1 = 40 − 13 × 3, et −13 + 40 = 27 ; on vérifie 3 × 27 = 81 = 2 × 40 + 1.",
+  "legende_titre": "Retrouver d à partir de 40 et de 3",
+  "lecture": [
+   "La bande du haut compte 40 cases : 13 groupes bleus de 3 cases, et une case verte qui reste.",
+   "Dans la première case, on écrit que 1 est 40 moins 13 fois 3.",
+   "La case orange ajoute 40 au coefficient −13 : on obtient 27.",
+   "La case verte vérifie : 3 fois 27 vaut 81, soit 2 fois 40 plus 1."
+  ],
+  "a_voir": "Les 13 groupes de 3 laissent une case, d'où l'égalité qui donne 27."
+ },
+ {
+  "code": "53-130",
+  "a_dire": "Bob calcule 8 puissance 3, soit 512, puis ne garde que le reste par 55 : 512 = 9 × 55 + 17, et il envoie 17.",
+  "legende_titre": "De 512 à 17",
+  "lecture": [
+   "En haut, 8 × 8 × 8 vaut 512.",
+   "Les neuf cases grises sont neuf blocs de 55, soit 495.",
+   "La petite case verte à droite est ce qui reste après les neuf blocs : 17.",
+   "La case verte du bas est ce que Bob envoie : 17."
+  ],
+  "a_voir": "Bob garde seulement le reste de 512 par 55, et il envoie ce reste, 17."
+ },
+ {
+  "code": "53-131",
+  "a_dire": "Pour calculer 17 puissance 27 modulo 55, on n'écrit jamais le nombre de 34 chiffres : on fait 4 carrés et 3 produits en gardant à chaque pas le reste par 55.",
+  "legende_titre": "Un calcul sans écrire le nombre géant",
+  "lecture": [
+   "Le cadre en pointillés gris rappelle que 17 puissance 27 a 34 chiffres et n'est jamais écrit.",
+   "La rangée du milieu a cinq cases : 17, 14, 31, 26, 16. Chaque case est le carré de la précédente, réduit par 55. Les quatre cases vertes servent, la grise 31 reste de côté.",
+   "Les 3 produits des cases vertes donnent la case bleue, 8. Le plus grand nombre écrit en route est 961."
+  ],
+  "a_voir": "Tous les nombres écrits restent petits, et le résultat est 8."
+ },
+ {
+  "code": "53-132",
+  "a_dire": "Le tableau de 5 lignes donne les restes 17, 14, 31, 26, 16 et les bits 1, 1, 0, 1, 1 : seules les lignes dont le bit vaut 1 servent.",
+  "legende_titre": "Quelles lignes servent au produit",
+  "lecture": [
+   "La colonne de gauche donne le reste par 55 de chaque ligne ; les flèches orange vont d'une ligne à la suivante.",
+   "La colonne de droite donne le bit de chaque ligne : 1, 1, 0, 1, 1. Un trait relie chaque reste à son bit.",
+   "Les lignes dont le bit vaut 1 sont vertes. La ligne 31, de bit 0, est grise et marquée « non utilisée »."
+  ],
+  "a_voir": "Quatre lignes vertes servent ; la ligne 31, de bit 0, reste de côté."
+ },
+ {
+  "code": "53-133",
+  "a_dire": "Chaque ligne est le carré de la précédente, réduit par 55 : 17, 14, 31, 26, puis 16.",
+  "legende_titre": "Cinq lignes, chacune tirée de la précédente",
+  "lecture": [
+   "Les cinq cases bleues portent les puissances 17 puissance 1, 2, 4, 8 et 16, avec leur reste par 55.",
+   "Chaque flèche orange est un carré : le calcul est écrit à droite.",
+   "Par exemple, 17 au carré vaut 289, soit 5 fois 55 plus 14 : la case suivante porte 14."
+  ],
+  "a_voir": "Le reste d'une ligne sert de départ à la ligne suivante."
+ },
+ {
+  "code": "53-134",
+  "a_dire": "On multiplie les lignes vertes deux par deux : 16 × 26 donne 31, 31 × 14 donne 49, 49 × 17 donne 8, en réduisant par 55 après chaque produit.",
+  "legende_titre": "Trois produits, chacun réduit",
+  "lecture": [
+   "Les cases vertes sont les lignes qui servent : 16, 26, 14 et 17.",
+   "Les cases orange sont les résultats en cours : 31, puis 49. Ce résultat est repris à la ligne suivante.",
+   "Sous chaque ligne, le calcul est écrit avec son reste par 55. La case bleue 8 est le dernier résultat : le message de départ."
+  ],
+  "a_voir": "Aucun produit ne dépasse 833, et le dernier reste est 8."
+ },
+ {
+  "code": "53-135",
+  "a_dire": "Dans l'exemple de Judson, p = 23, q = 29, n = 667, φ = 616, e = 487 et d = 191 : l'exposant public n'a pas besoin d'être petit.",
+  "legende_titre": "Un exemple plus grand",
+  "lecture": [
+   "En haut, les cases violettes sont p, q et φ ; la case bleue est n = 667.",
+   "Sur la droite graduée de 0 à 616, le point bleu est e = 487 et le point violet est d = 191.",
+   "Le texte vert vérifie : 487 fois 191 vaut 1 plus 151 fois 616.",
+   "En bas, le message 25 devient 169, puis redevient 25."
+  ],
+  "a_voir": "Le nombre e vaut 487, bien plus grand que 3, et la recette marche."
+ },
+ {
+  "code": "53-136",
+  "a_dire": "Si e × d ne laisse pas le reste 1 par 40, le déchiffrement ne redonne pas le message : avec e = 3 et d = 5, 8 devient 17 puis 32, et non 8.",
+  "legende_titre": "Un mauvais d : que devient le message ?",
+  "lecture": [
+   "La case rouge du haut montre que 3 fois 5 vaut 15, de reste 15 par 40, et non 1.",
+   "La rangée du milieu part de 8 (bleu), passe à 17 (gris) par la puissance 3, puis à 32 (rouge) par la puissance 5.",
+   "En bas, la case en pointillés rappelle le résultat attendu, 8 : il est différent de 32."
+  ],
+  "a_voir": "Sans le reste 1, on arrive à 32 et non à 8."
+ },
+ {
+  "code": "53-137",
+  "a_dire": "Le produit e × d est 1 de plus qu'un nombre entier k de tours de φ(n) : pour 3 × 27 = 81, on retire 1, puis 80 ÷ 40 donne k = 2.",
+  "legende_titre": "Le produit de e et de d, découpé",
+  "lecture": [
+   "La barre entière a 81 unités : c'est le produit 3 × 27.",
+   "La petite partie orange à gauche est l'unité qu'on retire.",
+   "Le reste de la barre est coupé en 2 blocs bleus de 40 : leur nombre est k.",
+   "En bas, le même calcul pour 487 et 191 donne k = 151 avec φ = 616."
+  ],
+  "a_voir": "Après avoir retiré 1, la barre se coupe en blocs entiers de 40."
+ },
+ {
+  "code": "53-138",
+  "a_dire": "Quand m est premier avec n, m puissance ed s'écrit m fois (m puissance φ(n)) puissance k ; le théorème d'Euler remplace chaque bloc par 1 et il reste m.",
+  "legende_titre": "Premier cas : la preuve en un coup d'œil",
+  "lecture": [
+   "La rangée du haut écrit 8 puissance 81 comme 8 × 8 puissance 40 × 8 puissance 40, car 81 = 1 + 2 × 40.",
+   "Les flèches orange appliquent le théorème d'Euler : chaque bloc 8 puissance 40 a le reste 1 (cases vertes).",
+   "Il reste 8 × 1 × 1, donc 8 puissance 81 a le reste 8 (case verte du bas)."
+  ],
+  "a_voir": "L'étape qui porte la preuve est le passage de chaque bloc orange à 1."
+ },
+ {
+  "code": "53-194",
+  "a_dire": "Pour 17 puissance 27 modulo 55, la méthode demande 4 carrés et 3 produits, soit 7 multiplications au lieu de 26 : le coût suit le nombre de chiffres binaires de l'exposant.",
+  "legende_titre": "Sept multiplications contre vingt-six",
+  "lecture": [
+   "La rangée grise du haut a 26 cases : les 26 multiplications faites une à une.",
+   "Le texte bleu donne 27 en binaire : 11011, soit cinq chiffres binaires.",
+   "La rangée du bas a 7 cases : 4 carrés (orange) puis 3 produits (vert)."
+  ],
+  "a_voir": "La rangée du bas est bien plus courte que celle du haut."
+ },
+ {
+  "code": "53-139",
+  "a_dire": "Un message qui partage un facteur avec 55 est multiple de 5 ou de 11, mais pas des deux ; la preuve étudie séparément son reste par 5 et son reste par 11.",
+  "legende_titre": "Deux restes pour un message",
+  "lecture": [
+   "Chaque case de la grille est un nombre de 0 à 54, rangé selon son reste par 5 (lignes) et son reste par 11 (colonnes).",
+   "La ligne orange du haut contient les multiples de 5 ; la colonne violette de gauche contient les multiples de 11.",
+   "Le 10 est dans la ligne seulement ; le 22 est dans la colonne seulement.",
+   "Les deux ne se croisent qu'à la case 0."
+  ],
+  "a_voir": "On étudie un message dans sa ligne ou dans sa colonne ; aucun nombre de 1 à 54 n'est dans les deux."
+ },
+ {
+  "code": "53-140",
+  "a_dire": "Modulo p, un message multiple de p a le reste 0, et sa puissance ed est aussi un multiple de p : les deux ont le même reste, 0.",
+  "legende_titre": "Le reste par p quand m est multiple de p",
+  "lecture": [
+   "Les cinq cercles forment l'horloge à 5 cases. Le cercle vert 0 est la case du reste 0.",
+   "La case de gauche écrit 10 = 2 × 5 : c'est un multiple de 5, donc il tombe sur 0.",
+   "La case de droite dit que 10 puissance 81 est un multiple de 5 : il tombe aussi sur 0."
+  ],
+  "a_voir": "Les deux flèches arrivent sur la même case, 0."
+ },
+ {
+  "code": "53-141",
+  "a_dire": "Modulo q, quand m est premier avec q, le petit théorème de Fermat donne que chaque bloc m puissance q − 1 a le reste 1, et il reste m.",
+  "legende_titre": "Le reste par q quand m est premier avec q",
+  "lecture": [
+   "La rangée du haut écrit 10 puissance 81 comme 10 fois 8 blocs (orange) de 10 facteurs, car 81 = 1 + 8 × 10.",
+   "La flèche orange applique le petit théorème de Fermat : 10 puissance 10 a le reste 1 par 11.",
+   "Dans la rangée du bas, les 8 blocs deviennent verts : il reste 10 × 1, donc 10."
+  ],
+  "a_voir": "Les 8 blocs de 10 facteurs valent 1, et il reste le facteur 10."
+ },
+ {
+  "code": "53-142",
+  "a_dire": "Deux nombres qui ont le même reste par p et par q, deux nombres sans diviseur commun, ont le même reste par n ; ce n'est pas vrai si p et q ont un diviseur commun.",
+  "legende_titre": "Recoller deux restes en un seul",
+  "lecture": [
+   "Une case de grille est un couple : reste par p, reste par q.",
+   "En haut, avec 5 et 11 (vert), 10 et 10 puissance 81 sont dans la même case, qui ne contient qu'un seul nombre de 0 à 54.",
+   "En bas, avec 4 et 6 (rouge), les nombres 0 et 12 sont dans la même case, mais ils sont différents modulo 24."
+  ],
+  "a_voir": "Sans diviseur commun, une case désigne un seul nombre ; avec le diviseur 2, elle en désigne deux."
+ },
+ {
+  "code": "53-143",
+  "a_dire": "Le message 22, multiple de 11, devient 33 puis redevient 22 ; le chiffré 33 montre encore le facteur 11 de 55, ce qui permet à un espion de casser la clé.",
+  "legende_titre": "Un message qui partage un facteur avec 55",
+  "lecture": [
+   "La rangée du haut part de 22 (bleu), passe à 33 (orange) par la puissance 3, puis revient à 22 (vert) par la puissance 27.",
+   "Les barres violettes sont faites de blocs de 11 : 22 en a 2, 33 en a 3 et 55 en a 5.",
+   "Le premier bloc de 33 et de 55, entouré en noir, est le bloc de 11 qu'ils ont en commun.",
+   "Ce diviseur commun, 11, est un facteur de 55 : un espion peut le trouver."
+  ],
+  "a_voir": "33 et 55 ont le bloc de 11 en commun : le chiffré 33 livre un facteur de 55."
+ }
+]

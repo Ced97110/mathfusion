@@ -1,0 +1,178 @@
+[
+ {
+  "code": "20-049",
+  "a_dire": "Le premier temps échoue seulement quand a et b valent tous deux 0 : « 0 égale 5 » ne donne aucune droite.",
+  "legende_titre": "Quand le premier temps ne donne pas de droite",
+  "lecture": [
+   "À gauche, le cadre est vide : l’équation « 0 = 5 » est écrite en rouge, car elle est fausse.",
+   "À droite, la droite 2x + 3y = 12 est tracée en bleu.",
+   "Les deux points verts, (0, 4) et (6, 0), sont deux points de cette droite."
+  ],
+  "a_voir": "À gauche, aucun point ne vérifie l’équation, donc aucune droite ; à droite, la droite existe."
+ },
+ {
+  "code": "20-050",
+  "a_dire": "Pour savoir de quel côté sont les solutions, on teste un seul point hors de la frontière.",
+  "legende_titre": "Un seul calcul pour tout un côté",
+  "lecture": [
+   "La droite bleue est la frontière ; les petits points gris sont des points du plan que l’on ne peut pas tous tester.",
+   "Le point orange, (0, 0), est le point test : il est hors de la droite.",
+   "La boîte verte dit : phrase vraie, le côté du point. La boîte rouge dit : phrase fausse, l’autre côté."
+  ],
+  "a_voir": "Un seul point orange suffit pour décider du côté."
+ },
+ {
+  "code": "20-051",
+  "a_dire": "Le point test n’est ni sur la droite ni un point solution connu : on ne sait pas encore s’il est solution.",
+  "legende_titre": "Le point test et ses deux voisins",
+  "lecture": [
+   "Le point gris (1, 2) est sur la droite bleue.",
+   "Le point vert (−1, 2) est une solution connue.",
+   "Le point orange (0, 0) est hors de la droite et son résultat est inconnu."
+  ],
+  "a_voir": "Le point orange est le seul dont on ne connaît pas encore le résultat."
+ },
+ {
+  "code": "20-052",
+  "a_dire": "On évalue la phrase au point test : vraie, on hachure son côté ; fausse, on hachure l’autre.",
+  "legende_titre": "Hachurer selon le résultat du test",
+  "lecture": [
+   "La droite bleue en pointillés est la frontière.",
+   "Le point orange (0, 0) donne « 0 > 1 », écrit en rouge : c’est faux.",
+   "La flèche orange va vers l’autre côté, la zone verte hachurée au-dessus de la droite."
+  ],
+  "a_voir": "Le résultat faux envoie la zone hachurée du côté opposé au point."
+ },
+ {
+  "code": "20-053",
+  "a_dire": "On choisit l’origine comme point test parce que son calcul est le plus court.",
+  "legende_titre": "L’origine donne le calcul le plus court",
+  "lecture": [
+   "La droite bleue est la frontière de l’inéquation ; la zone verte est le côté de O.",
+   "La boîte verte montre le calcul du point (0, 0) : le résultat est 0, sans multiplication difficile.",
+   "La boîte violette montre le calcul du point (5, 1), hors de la zone verte : il faut multiplier et ajouter pour trouver 13."
+  ],
+  "a_voir": "Les deux points renseignent, mais celui de la boîte verte demande moins de travail."
+ },
+ {
+  "code": "20-054",
+  "a_dire": "Si la frontière passe par l’origine, l’origine est sur la droite et ne peut pas servir de point test.",
+  "legende_titre": "Quand la droite passe par l’origine",
+  "lecture": [
+   "La droite bleue en pointillés passe par le point rouge O = (0, 0).",
+   "Le test donne « 0 > 0 », faux : ce résultat ne dit rien d’un côté.",
+   "La zone verte hachurée, au-dessus de la droite, contient pourtant les solutions."
+  ],
+  "a_voir": "Le point rouge est sur la droite : son test donne faux alors que la zone au-dessus est la bonne."
+ },
+ {
+  "code": "20-055",
+  "a_dire": "Quand l’origine est sur la frontière, on prend un autre point simple, comme (0, 1).",
+  "legende_titre": "Un autre point quand l’origine ne convient pas",
+  "lecture": [
+   "Le cercle gris vide est l’origine, inutilisable car elle est sur la droite.",
+   "Le point orange (0, 1) est hors de la droite.",
+   "Il donne « 1 > 0 », vrai : on hachure le côté du point, au-dessus de la droite."
+  ],
+  "a_voir": "Le point (0, 1) est hors de la droite et donne vrai."
+ },
+ {
+  "code": "20-056",
+  "a_dire": "Plusieurs points du même côté donnent le même résultat, mais cela ne prouve pas encore pour tous : il faut une raison.",
+  "legende_titre": "Trois points ne prouvent pas pour tous",
+  "lecture": [
+   "La droite bleue en pointillés est la frontière ; la zone verte est le côté testé.",
+   "Les ronds verts (0, 3), (0, 5) et (7, 9) sont du même côté et donnent « vrai ».",
+   "Les petits cercles gris marqués d’un point d’interrogation orange sont les autres points de la zone : la question reste posée pour eux."
+  ],
+  "a_voir": "Il y a une infinité de points dans la zone et seulement trois ont été testés."
+ },
+ {
+  "code": "20-057",
+  "a_dire": "La quantité y − (x + 1) est un seul nombre qui dit où est un couple par rapport à la droite.",
+  "legende_titre": "Un nombre calculé en chaque point",
+  "lecture": [
+   "Le point vert (−1, 2) donne 2.",
+   "Le point bleu (1, 2), sur la droite, donne 0.",
+   "Le point violet (0, 0) donne −1."
+  ],
+  "a_voir": "Chaque point porte le nombre y − (x + 1) : 2, 0 ou −1."
+ },
+ {
+  "code": "20-058",
+  "a_dire": "La quantité vaut 0 exactement sur la droite frontière.",
+  "legende_titre": "Le nombre 0 marque la droite",
+  "lecture": [
+   "La droite bleue épaisse est la droite d’équation y = x + 1 ; le titre nomme la quantité y − (x + 1).",
+   "Les points bleus (1, 2) et (0, 1) sont sur la droite et donnent 0.",
+   "Le point violet (0, 0) n’est pas sur la droite et donne −1."
+  ],
+  "a_voir": "La quantité vaut 0 sur la droite ; le point hors de la droite donne −1."
+ },
+ {
+  "code": "20-059",
+  "a_dire": "La quantité est positive d’un côté de la droite et négative de l’autre.",
+  "legende_titre": "Un signe de chaque côté",
+  "lecture": [
+   "La droite bleue est la frontière.",
+   "Le point vert (0, 3), au-dessus, donne 2 : positive.",
+   "Le point violet (0, −1), en dessous, donne −2 : négative."
+  ],
+  "a_voir": "Le point du dessus donne un nombre positif, celui du dessous un nombre négatif."
+ },
+ {
+  "code": "20-060",
+  "a_dire": "Sans traverser la droite, la quantité ne passe pas par 0, donc son signe ne change pas.",
+  "legende_titre": "Aller de P à Q sans traverser la droite",
+  "lecture": [
+   "La droite bleue est la frontière.",
+   "La flèche orange va de P à Q, sans toucher la droite.",
+   "Les trois points verts, P, (1, 4) et Q, donnent tous la valeur 2."
+  ],
+  "a_voir": "Le chemin reste du même côté et la valeur reste 2."
+ },
+ {
+  "code": "20-061",
+  "a_dire": "La quantité change de façon continue : pour aller de 2 à −1, elle prend toutes les valeurs entre, donc 0.",
+  "legende_titre": "Pas de saut entre 2 et −1",
+  "lecture": [
+   "La droite graduée porte les valeurs de la quantité.",
+   "Le point vert est le départ, 2 ; le point violet est l’arrivée, −1.",
+   "Le trait orange épais couvre toutes les valeurs entre les deux, et le point bleu est 0."
+  ],
+  "a_voir": "Le trait orange continu passe par le point bleu 0."
+ },
+ {
+  "code": "20-062",
+  "a_dire": "Si le chemin traverse la droite, la quantité change de signe en passant par 0.",
+  "legende_titre": "Quand le chemin traverse la droite",
+  "lecture": [
+   "La droite bleue est la frontière.",
+   "La flèche orange va de (0, 3) à (0, −1) et traverse la droite en (0, 1).",
+   "Le départ donne 2 (vert), le passage 0 (bleu), l’arrivée −2 (violet)."
+  ],
+  "a_voir": "Les deux extrémités ont des signes différents et le milieu donne 0."
+ },
+ {
+  "code": "20-063",
+  "a_dire": "Le signe en un point, connu par le point test, vaut pour tout le demi-plan qui le contient.",
+  "legende_titre": "Un seul signe pour tout le demi-plan",
+  "lecture": [
+   "La droite bleue est la frontière ; la zone rouge est le demi-plan du point test.",
+   "Le point orange (0, 0) donne −1, négatif.",
+   "Les points rouges (0, −5) et (3, −1) donnent −6 et −5, négatifs aussi : la phrase est fausse dans les trois cas."
+  ],
+  "a_voir": "Les trois points de la zone rouge ont le même signe."
+ },
+ {
+  "code": "20-064",
+  "a_dire": "Même raisonnement qu’avec la droite des nombres : un point coupe la droite en deux demi-droites, une droite coupe le plan en deux demi-plans.",
+  "legende_titre": "Un point sur la droite, une droite dans le plan",
+  "lecture": [
+   "En haut, le point 2 coupe la droite graduée en deux demi-droites ; celle de 0 est fausse (rouge), l’autre est vraie (verte).",
+   "En bas, la droite en pointillés coupe le plan en deux demi-plans : vrai (vert) et faux (rouge).",
+   "Dans les deux dessins, un seul point test, en orange, renseigne sur tout un côté."
+  ],
+  "a_voir": "Le même découpage en deux côtés, sur une droite puis dans le plan."
+ }
+]

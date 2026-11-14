@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+f=numberline(ax,6,70,20,-7,7,arrow_right=False,labels=False)
+disc(ax,f(-6),20,2,'sujet'); disc(ax,f(6),20,2,'autre')
+text(ax,f(-6),14,'−6','sujet'); text(ax,f(6),14,'6','autre')
+brace(ax,f(-6),f(6),11,label='deux opposés')
+box(ax,28,44,20,10,'resultat',label='36')
+arrow(ax,(f(-6),23),(31,43),'varie'); arrow(ax,(f(6),23),(45,43),'varie')
+text(ax,14,49,r'$(-6)\times(-6)$','sujet','s'); text(ax,62,49,r'$6\times 6$','autre','s')
+text(ax,38,59,'même carré','resultat','s')
+save(fig,'22-113')

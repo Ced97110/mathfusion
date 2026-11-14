@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+o=(24,8); u=7.0
+P=lambda x,y:(o[0]+x*u,o[1]+y*u)
+arrow(ax,P(-3,0),P(6,0),'fixe',lw=0.6); arrow(ax,P(0,-0.5),P(0,5),'fixe',lw=0.6)
+A=P(3,2); Rr=P(-2,3); Tt=P(5,2); T0=P(2,0)
+arrow(ax,A,Rr,'sujet',lw=1.3,curve=-0.35)
+arrow(ax,A,Tt,'varie',lw=1.3)
+arrow(ax,P(0,0),T0,'varie',lw=1.3)
+for p,rl in ((A,'fixe'),(Rr,'sujet'),(Tt,'varie'),(P(0,0),'sujet'),(T0,'varie')): disc(ax,*p,1.0,rl)
+text(ax,A[0]-1,A[1]+4.5,r'$P=(3,2)$','fixe','s')
+text(ax,Rr[0]+1,Rr[1]+4,r'$r(P)=(-2,3)$','sujet','s')
+text(ax,Tt[0]+1,Tt[1]-4.5,r'$t(P)=(5,2)$','varie','s')
+text(ax,P(0,0)[0]-1.5,P(0,0)[1]-4,r'$O$','sujet','s',ha='right')
+text(ax,T0[0]+1,T0[1]-4,r'$t(O)=(2,0)$','varie','s',ha='left')
+text(ax,70,50,'r : quart de tour','sujet','s')
+text(ax,70,44,'t : décalage de 2','varie','s')
+save(fig,'73-237')

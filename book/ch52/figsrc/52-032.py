@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, 'le produit passe aux paquets', 'varie', 's')
+box(ax, 3, 56, 40, 17, 'sujet', label=r'$8\sim0$' + '\n' + 'équivalents (8 dans 4ℤ)', size='s')
+box(ax, 45, 56, 40, 17, 'fixe', label=r'$5\sim5$' + '\n' + 'équivalents (même nombre)', size='s')
+arrow(ax, (23, 55.5), (36, 42), 'varie'); arrow(ax, (65, 55.5), (52, 42), 'varie')
+box(ax, 14, 28, 60, 13, 'varie', label=r'$8\times5\sim0\times5$', size='m')
+arrow(ax, (44, 27.5), (44, 17), 'resultat')
+box(ax, 14, 3, 60, 13, 'resultat', label=r'$40\sim0$ : 40 est dans 4ℤ', size='m')
+save(fig, '52-032')

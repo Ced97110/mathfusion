@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+# relation nulle : 3(2,0) - 2(3,0) = (0,0)
+assert (3 * 2 - 2 * 3, 0) == (0, 0)
+text(ax, 44, 66, 'dans les couples d’entiers', 'fixe', 's')
+text(ax, 44, 59, 'une relation nulle existe', 'resultat', 's', weight='bold')
+box(ax, 8, 44, 72, 11, 'resultat', label=r'$3\,(2,0)-2\,(3,0)=(0,0)$', lw=1.3)
+text(ax, 44, 36, 'un multiple entier de l’autre : non', 'limite', 's', weight='bold')
+box(ax, 8, 22, 72, 10, 'limite', label=r'$(2,0)=k\,(3,0)$ : $k=2/3$, pas entier', size='s')
+box(ax, 8, 8, 72, 10, 'limite', label=r'$(3,0)=k\,(2,0)$ : $k=3/2$, pas entier', size='s')
+save(fig, '58-163')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+f = numberline(ax, 20, 70, 12, 0, 2, arrow_right=False)
+mid = f(0.5)
+text(ax, 44, 72, 'formule des carrés : total 0', 'limite', 's')
+arrow(ax, (f(0), 62), (f(1), 62), 'sujet'); text(ax, mid, 66, r'$1^2$ = 1', 'sujet', 's')
+arrow(ax, (f(1), 56), (f(0), 56), 'varie'); text(ax, mid, 51.5, r'$i^2$ = −1', 'varie', 's')
+text(ax, 44, 42, 'avec les conjugués : total 2', 'resultat', 's')
+arrow(ax, (f(0), 32), (f(1), 32), 'sujet'); text(ax, mid, 36, r'1 × 1 = 1', 'sujet', 's')
+arrow(ax, (f(1), 32), (f(2), 32), 'varie'); text(ax, f(1.5) + 4, 36, r'$i$ × (−$i$) = 1', 'varie', 's')
+line(ax, [(f(2), 32), (f(2), 14)], 'resultat', dash=True)
+disc(ax, f(2), 12, 2, 'resultat')
+save(fig, '75-011')

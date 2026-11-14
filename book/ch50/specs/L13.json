@@ -1,0 +1,182 @@
+[
+ {
+  "code": "50-193",
+  "a_dire": "Dans l’horloge à 12 heures, les 24 cases de la grille donnent 12 valeurs, chacune 2 fois, donc |H + K| = 24/2 = 12.",
+  "legende_titre": "La grille des sommes de H et de K",
+  "lecture": [
+   "Les nombres bleus à gauche sont les éléments de H, les nombres violets en haut sont ceux de K.",
+   "Chaque case est une somme h plus k sur l’horloge à 12 heures.",
+   "Les deux cases vertes ont la même valeur, 5 : 3 + 2 et 9 + 8."
+  ],
+  "a_voir": "La grille a 24 cases et la valeur 5 y apparaît deux fois."
+ },
+ {
+  "code": "50-194",
+  "a_dire": "La preuve part de deux écritures du même nombre, glisse a de H ∩ K d’un facteur à l’autre, et arrive à l’autre écriture.",
+  "legende_titre": "Glisser un élément commun d’un terme à l’autre",
+  "lecture": [
+   "La ligne du haut est la première écriture de 5 : 3 plus 2.",
+   "Les flèches orange montrent le glissement : on ajoute 6 au terme bleu, on retire 6 au terme violet.",
+   "La ligne du bas est la seconde écriture : 9 plus 8, qui vaut aussi 5."
+  ],
+  "a_voir": "Le même nombre 6 sert aux deux termes et la somme ne change pas."
+ },
+ {
+  "code": "50-195",
+  "a_dire": "Pour la valeur 5, ajouter 6 à 3 puis retirer 6 à 2 donne 9 + 8, qui vaut encore 5 sur l’horloge.",
+  "legende_titre": "Le glissement sur la valeur 5",
+  "lecture": [
+   "L’horloge bleue montre H : les points 0, 3, 6, 9 ; la flèche orange va de 3 à 9.",
+   "L’horloge violette montre K : les points pairs ; la flèche orange va de 2 à 8.",
+   "Les deux lignes vertes montrent que les deux sommes valent 5."
+  ],
+  "a_voir": "Chaque terme reste dans son horloge et la somme reste 5."
+ },
+ {
+  "code": "50-196",
+  "a_dire": "Si h1k1 = h2k2, l’élément a = h1⁻¹h2 est aussi égal à k1k2⁻¹, donc il est dans H ∩ K.",
+  "legende_titre": "Un même élément lu dans H et dans K",
+  "lecture": [
+   "En haut, l’égalité de départ, puis la flèche orange : on multiplie des deux côtés.",
+   "Le texte bleu est un élément de H, le texte violet est un élément de K ; les deux sont égaux.",
+   "Le point vert a est dans la partie commune des deux cercles."
+  ],
+  "a_voir": "Les deux écritures désignent le même point, dans la partie commune."
+ },
+ {
+  "code": "50-197",
+  "a_dire": "Il y a autant d’écritures d’une valeur que de choix de a dans H ∩ K.",
+  "legende_titre": "Un choix de a, une écriture",
+  "lecture": [
+   "Le cadre orange contient les éléments de H ∩ K : 0 et 6.",
+   "Chaque boîte verte est une écriture de 5.",
+   "Chaque flèche relie un choix de a à une écriture : 0 donne 3 + 2, 6 donne 9 + 8."
+  ],
+  "a_voir": "Deux choix de a donnent deux écritures."
+ },
+ {
+  "code": "50-198",
+  "a_dire": "Si H ∩ K = {0}, les 15 sommes sont toutes différentes, donc |HK| = |H| × |K| = 15.",
+  "legende_titre": "Quand l’intersection est réduite à 0",
+  "lecture": [
+   "La grille a 3 lignes bleues (H) et 5 colonnes violettes (K) : 15 cases vertes.",
+   "La droite graduée montre les 15 valeurs obtenues, de 0 à 14.",
+   "Chaque valeur est marquée une seule fois : aucune répétition."
+  ],
+  "a_voir": "15 cases donnent 15 valeurs différentes."
+ },
+ {
+  "code": "50-199",
+  "a_dire": "Le centre a p éléments ou p² éléments, car son nombre divise p² et n’est pas 1.",
+  "legende_titre": "Les tailles possibles du centre",
+  "lecture": [
+   "Chaque rangée a un nombre de cases égal à un diviseur de p² : 1, p, p².",
+   "La case rouge, 1, est exclue : le centre contient plus que l’identité.",
+   "Les rangées vertes, 3 et 9 pour p = 3, restent possibles."
+  ],
+  "a_voir": "Deux tailles restent possibles sur trois."
+ },
+ {
+  "code": "50-200",
+  "a_dire": "Si le centre avait p éléments, le centralisateur d’un x hors du centre serait tout le groupe, donc x serait dans le centre : contradiction.",
+  "legende_titre": "Une preuve par l’absurde sur le centralisateur",
+  "lecture": [
+   "La première rangée a 9 cases : 3 bleues pour le centre, 1 orange pour x, 5 grises.",
+   "L’accolade montre que C(x) contient au moins 4 éléments.",
+   "La flèche orange donne l’étape : son nombre divise 9 et dépasse 3, donc vaut 9.",
+   "La rangée verte est C(x) = G ; le texte rouge donne la contradiction."
+  ],
+  "a_voir": "C(x) remplit tout le groupe, donc x serait dans le centre."
+ },
+ {
+  "code": "50-201",
+  "a_dire": "Un groupe d’ordre p² est soit ℤ/p²ℤ, avec un élément d’ordre p², soit ℤ/pℤ × ℤ/pℤ, où tous les autres éléments sont d’ordre p.",
+  "legende_titre": "Les deux groupes de 9 éléments",
+  "lecture": [
+   "À gauche, 9 points bleus en cercle : les flèches d’un point au suivant les parcourent tous.",
+   "À droite, 9 couples violets en grille ; e est en gris.",
+   "La flèche orange part de e, avance de deux pas et revient à e : trois pas ramènent au départ."
+  ],
+  "a_voir": "À gauche un seul élément parcourt tout le groupe, à droite chaque élément revient après 3 pas."
+ },
+ {
+  "code": "50-202",
+  "a_dire": "Pour p = 2, il y a ℤ/4ℤ, les rotations du carré, et ℤ/2ℤ × ℤ/2ℤ, où les trois éléments autres que e sont d’ordre 2.",
+  "legende_titre": "Les deux groupes de 4 éléments",
+  "lecture": [
+   "Les quatre carrés bleus montrent les rotations ; le point orange suit le coin marqué après chaque quart de tour.",
+   "Quatre quarts de tour ramènent au départ.",
+   "À droite, le point gris est e et les trois points violets sont les autres éléments.",
+   "Chaque flèche à deux pointes relie un élément à e : répété deux fois, il revient à e."
+  ],
+  "a_voir": "À gauche l’ordre est 4, à droite tous les autres éléments sont d’ordre 2."
+ },
+ {
+  "code": "50-203",
+  "a_dire": "Pour un groupe de 99 éléments, on compte les sous-groupes de chaque facteur premier ; il n’en reste qu’un de chaque, donc G ≅ H × K.",
+  "legende_titre": "La méthode appliquée à l’ordre 99",
+  "lecture": [
+   "La grille a 9 colonnes et 11 lignes : 99 cases.",
+   "La rangée bleue du bas est H (9 éléments), la colonne violette de gauche est K (11 éléments).",
+   "Les deux phrases grises sont les deux conditions sur le nombre de sous-groupes.",
+   "Les lignes colorées donnent n3 = 1 et n11 = 1, puis le texte vert G ≅ H × K."
+  ],
+  "a_voir": "Chaque case de la grille est un couple d’un élément de H et d’un élément de K."
+ },
+ {
+  "code": "50-204",
+  "a_dire": "Pour p = 3, n3 vaut 1 ou 11 ; 11 laisse le reste 2 dans la division par 3, donc n3 = 1.",
+  "legende_titre": "Le test du reste pour n3",
+  "lecture": [
+   "À gauche, 11 points : trois groupes de 3 bleus et 2 points orange qui restent.",
+   "À droite, 1 point orange : il n’y a aucun groupe de 3, il reste 1.",
+   "Le reste 2 est exclu en rouge ; le reste 1 est retenu en vert."
+  ],
+  "a_voir": "Seul le cas qui laisse le reste 1 est gardé."
+ },
+ {
+  "code": "50-205",
+  "a_dire": "Pour p = 11, n11 vaut 1, 3 ou 9 ; seul 1 laisse le reste 1 dans la division par 11, donc n11 = 1.",
+  "legende_titre": "Le test du reste pour n11",
+  "lecture": [
+   "Chaque rangée a 11 cases, comme la division par 11.",
+   "Le nombre de cases coloriées est le reste : 1, 3 ou 9.",
+   "La rangée verte a une seule case coloriée ; les rangées rouges en ont 3 et 9."
+  ],
+  "a_voir": "Une seule rangée a exactement une case coloriée."
+ },
+ {
+  "code": "50-206",
+  "a_dire": "Comme |H ∩ K| divise 9 et 11, il vaut 1 ; donc |HK| = 9 × 11/1 = 99 et HK = G.",
+  "legende_titre": "Un seul diviseur commun à 9 et à 11",
+  "lecture": [
+   "La rangée du haut liste les diviseurs de 9, la rangée du bas ceux de 11.",
+   "Le trait vert relie le seul nombre commun, 1.",
+   "Le calcul donne 9 × 11/1 = 99, tous les éléments du groupe."
+  ],
+  "a_voir": "Les deux listes n’ont que 1 en commun."
+ },
+ {
+  "code": "50-207",
+  "a_dire": "Pour que G soit isomorphe à H × K, il faut trois conditions ; sans la commutation, les deux premières ne suffisent pas.",
+  "legende_titre": "Les trois conditions du produit direct",
+  "lecture": [
+   "Les deux lignes vertes sont les conditions vraies pour le triangle : intersection réduite à e, 3 × 2 = 6 éléments.",
+   "La ligne rouge est la condition qui échoue : hk = kh.",
+   "Le triangle de gauche porte un point orange ; après r puis s, le point est en bas à droite.",
+   "Après s puis r, le point est en bas à gauche : les résultats sont différents."
+  ],
+  "a_voir": "Une rotation et une réflexion ne commutent pas, donc le produit direct échoue."
+ },
+ {
+  "code": "50-208",
+  "a_dire": "Pour l’ordre 99 un seul choix reste donc le groupe est abélien ; pour l’ordre 12 deux choix restent et le groupe alterné n’est pas abélien.",
+  "legende_titre": "Ce qui est propre à l’ordre 99",
+  "lecture": [
+   "Dans la colonne de gauche, chaque rangée ne garde que la case verte 1 : un seul choix.",
+   "Dans la colonne de droite, deux cases oranges restent : 1 et 4 ; la case rouge 2 est exclue.",
+   "Le texte rouge donne le contre-exemple : le groupe alterné de 12 éléments."
+  ],
+  "a_voir": "À gauche une seule case reste, à droite deux cases restent."
+ }
+]

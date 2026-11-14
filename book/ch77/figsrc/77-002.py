@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 52, 26, 9, 'sujet', label=r'$1+3\sqrt{2}$')
+text(ax, 31, 56.5, r'$\times$', 'encre', 'l')
+box(ax, 34, 52, 26, 9, 'varie', label=r'$1-3\sqrt{2}$')
+text(ax, 64, 56.5, '=', 'encre', 'l')
+box(ax, 68, 52, 18, 9, 'fixe', label=r'$1-18=-17$', size='s')
+arrow(ax, (77, 51), (77, 38), 'varie')
+text(ax, 62, 44.5, r'diviser par $-17$', 'varie', 's', ha='right')
+box(ax, 8, 22, 72, 14, 'resultat', label=r'$-\frac{1}{17}+\frac{3}{17}\sqrt{2}$', size='l')
+text(ax, 44, 14, 'un inverse existe', 'resultat', 'm')
+text(ax, 44, 7, 'avec des fractions, pas des entiers', 'limite', 's')
+save(fig, '77-002')

@@ -1,0 +1,178 @@
+[
+ {
+  "code": "47-001",
+  "a_dire": "Le groupe D4 a 8 mouvements ; les 4 rotations <r> forment un sous-groupe, et il reste 4 retournements.",
+  "legende_titre": "Huit mouvements du carré, dont quatre rotations",
+  "lecture": [
+   "Les carrés bleus du cadre du haut sont les 4 rotations : rien, un quart de tour, un demi-tour, trois quarts de tour.",
+   "Les carrés gris du cadre du bas sont les 4 retournements.",
+   "Les points orange et violet suivent deux coins : dans le même sens pour les rotations, dans l'autre sens pour les retournements."
+  ],
+  "a_voir": "Voir 4 rotations (bleu) parmi 8 mouvements, et 4 retournements qui restent à part (gris)."
+ },
+ {
+  "code": "47-002",
+  "a_dire": "Pour le triangle, le carré et l'hexagone, les rotations sont la moitié des symétries.",
+  "legende_titre": "Trois figures, le même rapport un sur deux",
+  "lecture": [
+   "Chaque rangée de cases est un nombre de symétries : 6, 8 et 12.",
+   "Les cases bleues sont les rotations, les cases grises les retournements.",
+   "Le texte vert donne le nombre de rotations sur le total : 3 sur 6, 4 sur 8, 6 sur 12."
+  ],
+  "a_voir": "Voir que dans chaque rangée, la partie bleue fait exactement la moitié."
+ },
+ {
+  "code": "47-003",
+  "a_dire": "On cherche quelles tailles de 1 à 8 un sous-groupe d'un groupe de 8 éléments peut avoir.",
+  "legende_titre": "Huit tailles à tester pour un sous-groupe",
+  "lecture": [
+   "Les 8 disques bleus du haut sont les éléments du groupe.",
+   "Les 8 cases orange sont les tailles candidates, de 1 à 8.",
+   "Les flèches grises relient la question aux huit tailles."
+  ],
+  "a_voir": "Voir qu'on ne sait pas encore lesquelles des 8 tailles sont permises."
+ },
+ {
+  "code": "47-004",
+  "a_dire": "Un sous-groupe d'un groupe de 8 éléments a une taille qui divise 8 : 1, 2, 4 ou 8.",
+  "legende_titre": "Un seul test sur les nombres pour les huit tailles",
+  "lecture": [
+   "Les cases vertes 1, 2, 4 et 8 sont les tailles qui divisent 8.",
+   "Les cases rouges 3, 5, 6 et 7 sont les tailles qui ne divisent pas 8.",
+   "Le calcul vert montre 4 fois 2 égale 8 ; le calcul rouge montre que 3 fois 2 et 3 fois 3 évitent 8."
+  ],
+  "a_voir": "Voir que le test de division sépare les tailles en vertes et rouges."
+ },
+ {
+  "code": "47-005",
+  "a_dire": "Sur l'horloge à 12 heures, additionner les restes donne le même reste que additionner les nombres.",
+  "legende_titre": "Deux calculs, un même reste",
+  "lecture": [
+   "La rangée bleue du haut additionne 26 et 27 et donne 53.",
+   "Les flèches orange prennent le reste de chaque nombre : 2, 3 et 5.",
+   "La rangée du bas additionne les restes 2 et 3 et donne 5, le reste de 53."
+  ],
+  "a_voir": "Voir que les deux chemins arrivent au même reste 5."
+ },
+ {
+  "code": "47-006",
+  "a_dire": "Regrouper par nombre de chiffres ne permet pas d'additionner les paquets : 5 et 9 sont ensemble, mais 5+1 et 9+1 ne le sont plus.",
+  "legende_titre": "Le calcul sur les paquets ne marche pas toujours",
+  "lecture": [
+   "Le cadre bleu est le paquet des nombres à 1 chiffre : il contient 5 et 9.",
+   "La flèche verte mène de 5 à 6, reste dans le même paquet.",
+   "La flèche rouge mène de 9 à 10, dans le paquet violet à 2 chiffres."
+  ],
+  "a_voir": "Voir que deux nombres du même paquet arrivent dans deux paquets différents."
+ },
+ {
+  "code": "47-007",
+  "a_dire": "En regroupant les décimaux par partie avant la virgule, deux nombres du même paquet donnent des résultats dans deux paquets différents.",
+  "legende_titre": "Quand le calcul sur les paquets s'effondre",
+  "lecture": [
+   "Le cadre bleu est le paquet de 2 : il contient 2,4 et 2,6.",
+   "Les deux flèches orange ajoutent 1,5 à chaque nombre.",
+   "2,4 arrive en 3,9 dans le paquet de 3 (violet) ; 2,6 arrive en 4,1 dans le paquet de 4 (rouge)."
+  ],
+  "a_voir": "Voir que le même ajout envoie les deux nombres du même paquet vers deux paquets."
+ },
+ {
+  "code": "47-008",
+  "a_dire": "Découper le groupe en tranches de même taille répond à la fois au comptage et au calcul : 12 égale 3 fois 4.",
+  "legende_titre": "Un seul découpage en tranches égales",
+  "lecture": [
+   "Les 12 disques de l'horloge sont les heures de 0 à 11.",
+   "Chaque couleur (bleu, orange, violet) est une ligne de 4 heures.",
+   "À droite, les trois rangées de 4 disques montrent les trois lignes, et le calcul vert dit 12 égale 3 fois 4."
+  ],
+  "a_voir": "Voir 12 heures rangées en 3 lignes de même longueur, sans reste."
+ },
+ {
+  "code": "47-009",
+  "a_dire": "H = {0, 3, 6, 9} est un sous-groupe de Z/12Z : 0 y est, les sommes y restent, les opposés y sont.",
+  "legende_titre": "Quatre heures qui restent entre elles",
+  "lecture": [
+   "Les 4 disques bleus de l'horloge, 0, 3, 6 et 9, forment H.",
+   "Les petits disques gris sont les autres heures, qui ne sont pas dans H.",
+   "Les trois sommes vertes donnent toujours 9, 3 ou 0, des éléments de H."
+  ],
+  "a_voir": "Voir que additionner deux éléments de H donne un élément de H."
+ },
+ {
+  "code": "47-010",
+  "a_dire": "Les trois lignes H, 1 + H et 2 + H forment un rectangle de 3 lignes et 4 colonnes qui range les 12 nombres une seule fois.",
+  "legende_titre": "La grille des 12 heures en trois lignes",
+  "lecture": [
+   "La ligne bleue est H : 0, 3, 6, 9.",
+   "La ligne orange est 1 + H : 1, 4, 7, 10.",
+   "La ligne violette est 2 + H : 2, 5, 8, 11."
+  ],
+  "a_voir": "Voir 12 cases pleines, sans case vide ni case doublée."
+ },
+ {
+  "code": "47-011",
+  "a_dire": "Le signe 2 + H nomme la ligne obtenue en ajoutant 2 à chaque nombre de H.",
+  "legende_titre": "Un nom pour la ligne 2, 5, 8, 11",
+  "lecture": [
+   "La rangée bleue est H : 0, 3, 6, 9.",
+   "Chaque flèche orange ajoute 2 au nombre au-dessus d'elle.",
+   "La rangée violette est le résultat, nommée 2 + H."
+  ],
+  "a_voir": "Voir que 2 + H se lit comme H dont chaque nombre est avancé de 2."
+ },
+ {
+  "code": "47-012",
+  "a_dire": "Une ligne 1 + H a exactement 4 nombres, autant que H, car ajouter 1 se défait en retranchant 1.",
+  "legende_titre": "Autant de nombres dans la ligne que dans H",
+  "lecture": [
+   "La rangée bleue est H, avec 4 nombres.",
+   "La rangée orange est 1 + H, avec 4 nombres.",
+   "Chaque flèche à deux pointes relie un nombre de H à un seul nombre de la ligne, dans les deux sens."
+  ],
+  "a_voir": "Voir que chaque nombre de H a un seul partenaire dans la ligne, et inversement."
+ },
+ {
+  "code": "47-013",
+  "a_dire": "Aucun nombre n'est dans deux lignes : par exemple 4 est dans 1 + H mais pas dans 2 + H.",
+  "legende_titre": "Un nombre appartient à une seule ligne",
+  "lecture": [
+   "La rangée orange du bas est 1 + H ; la case verte est 4.",
+   "La rangée violette du haut est 2 + H : 2, 5, 8, 11.",
+   "La croix rouge dit que 4 n'est pas dans cette rangée."
+  ],
+  "a_voir": "Voir que 4 est dans une ligne et absent de l'autre."
+ },
+ {
+  "code": "47-014",
+  "a_dire": "Les 12 nombres de l'horloge se retrouvent tous dans les trois lignes : chaque heure a un reste 0, 1 ou 2.",
+  "legende_titre": "Aucune heure n'est oubliée",
+  "lecture": [
+   "Les 12 cases du haut sont les heures de 0 à 11, colorées selon leur ligne.",
+   "Les trois grandes cases du bas sont les lignes : reste 0, reste 1, reste 2.",
+   "Chaque trait relie une heure à la ligne de son reste ; il y a 12 traits."
+  ],
+  "a_voir": "Voir que chaque heure est reliée à une ligne, sans exception."
+ },
+ {
+  "code": "47-015",
+  "a_dire": "Ajouter 3 à H redonne H : les quatre nombres sont les mêmes, donc il n'y a que trois lignes distinctes.",
+  "legende_titre": "Ajouter 3 à H redonne H",
+  "lecture": [
+   "La rangée du haut est H : 0, 3, 6, 9.",
+   "Les flèches orange ajoutent 3 à chaque nombre.",
+   "La rangée du bas, 3, 6, 9, 0, a les mêmes quatre nombres : 12 est la même heure que 0."
+  ],
+  "a_voir": "Voir que les deux rangées contiennent les mêmes nombres, dans un autre ordre."
+ },
+ {
+  "code": "47-016",
+  "a_dire": "Savoir la ligne de x revient à savoir le reste de x dans la division par 3.",
+  "legende_titre": "La ligne d'un nombre se lit sur son reste",
+  "lecture": [
+   "La case grise 10 a pour reste 1 : la flèche orange la relie à la ligne 1, 4, 7, 10.",
+   "La case grise 8 a pour reste 2 : la flèche violette la relie à la ligne 2, 5, 8, 11.",
+   "Les cases au contour épais sont 10 et 8 dans leur ligne."
+  ],
+  "a_voir": "Voir que le reste suffit pour trouver la ligne."
+ }
+]

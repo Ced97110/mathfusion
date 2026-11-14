@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 3, 74, 82, 14, 'sujet', label=r'$Q(xy)1=(\bar y\,\bar x)(xy)$')
+arrow(ax, (44, 73), (44, 60), 'varie', lw=1.6)
+box(ax, 8, 36, 72, 23, 'varie', lw=1.6)
+text(ax, 44, 52, 'regroupement : identité de Moufang', 'varie', 's', weight='bold')
+text(ax, 44, 45, r'$\bar y\,(\bar x\,x)\,y$', 'varie', 'm')
+text(ax, 44, 39.5, 'remplace l’associativité', 'varie', 's')
+arrow(ax, (44, 35), (44, 22), 'varie', lw=1.6)
+text(ax, 50, 28.5, r'$\bar x\,x=Q(x)1$', 'fixe', 's', ha='left')
+box(ax, 3, 4, 82, 17, 'resultat', label=r'$\bar y\,Q(x)\,y=Q(x)Q(y)1$')
+save(fig, '78-088')

@@ -1,0 +1,180 @@
+[
+ {
+  "code": "45-129",
+  "a_dire": "Un monoïde commutatif a toutes ses paires qui commutent ; les entiers avec + oui, les mots non.",
+  "legende_titre": "Toutes les paires commutent",
+  "lecture": [
+   "Les cadres bleus montrent 2 + 3 et 3 + 2 : même résultat 5.",
+   "Les cadres violets montrent des mots mis bout à bout.",
+   "Le signe rouge ≠ montre que abba et baab sont différents."
+  ],
+  "a_voir": "Pour les entiers l'ordre ne change rien, pour les mots il change le résultat."
+ },
+ {
+  "code": "45-130",
+  "a_dire": "Un groupe abélien est un groupe dont tous les éléments commutent ; le mot sépare ces groupes des autres, même à taille égale.",
+  "legende_titre": "Un mot pour séparer deux sortes de groupes",
+  "lecture": [
+   "La colonne bleue réunit les groupes où tous les éléments commutent.",
+   "Le cadre rouge est le groupe des permutations de 3 objets, où deux éléments ne commutent pas.",
+   "La flèche orange relie deux groupes de 6 éléments."
+  ],
+  "a_voir": "Deux groupes de même taille peuvent différer par la commutativité."
+ },
+ {
+  "code": "45-131",
+  "a_dire": "Dans les tables de l'horloge et des rotations, la case (x, y) égale la case (y, x), donc ces groupes sont abéliens.",
+  "legende_titre": "Une table symétrique",
+  "lecture": [
+   "La grille a 4 lignes x et 4 colonnes y.",
+   "La ligne orange en pointillé est la diagonale.",
+   "Les cases vertes en miroir de part et d'autre portent le même nombre."
+  ],
+  "a_voir": "Chaque case a la même valeur que sa case symétrique par rapport à la diagonale."
+ },
+ {
+  "code": "45-132",
+  "a_dire": "Si des éléments commutent deux à deux, leur produit ne dépend pas de l'ordre.",
+  "legende_titre": "Changer l'ordre, garder le produit",
+  "lecture": [
+   "Chaque bloc a une largeur égale à son nombre de quarts de tour.",
+   "La première rangée met 2, 1, 3 quarts ; la seconde met 3, 2, 1.",
+   "Les deux accolades vertes donnent 6 quarts chacune."
+  ],
+  "a_voir": "Les deux rangées ont la même longueur totale."
+ },
+ {
+  "code": "45-133",
+  "a_dire": "La preuve prend un produit dans un ordre quelconque, fait glisser a_n vers la droite, et applique la récurrence au reste.",
+  "legende_titre": "Faire glisser le dernier élément",
+  "lecture": [
+   "La rangée du haut montre un ordre quelconque ; le bloc orange est a_n.",
+   "La flèche orange est un échange de voisins.",
+   "La rangée du bas a a_n à droite ; l'accolade bleue entoure les n − 1 autres éléments."
+  ],
+  "a_voir": "Le bloc orange est passé à droite et le reste forme un produit plus court."
+ },
+ {
+  "code": "45-134",
+  "a_dire": "Si ab = ba, alors (ab)^n est égal à a^n b^n : on peut ranger les a à gauche et les b à droite.",
+  "legende_titre": "Ranger les a et les b",
+  "lecture": [
+   "Les blocs bleus sont a (1 quart), les blocs orange sont b (2 quarts).",
+   "La rangée du haut alterne a et b trois fois.",
+   "La rangée du bas range les trois a puis les trois b.",
+   "L'accolade verte donne 9 quarts pour les deux rangées."
+  ],
+  "a_voir": "Les deux rangées contiennent les mêmes blocs et ont la même longueur."
+ },
+ {
+  "code": "45-135",
+  "a_dire": "Si ab ≠ ba, la formule (ab)^n = a^n b^n peut être fausse.",
+  "legende_titre": "Quand la formule casse",
+  "lecture": [
+   "Les cartes grises 1, 2, 3 sont le départ.",
+   "À gauche en vert, A A B B remet les cartes en place.",
+   "À droite en rouge, A B A B donne l'ordre 3, 1, 2."
+  ],
+  "a_voir": "Les deux suites ne donnent pas le même ordre de cartes."
+ },
+ {
+  "code": "45-136",
+  "a_dire": "Le centralisateur C(a) est l'ensemble des éléments b qui commutent avec a.",
+  "legende_titre": "Les éléments qui commutent avec a",
+  "lecture": [
+   "Le grand cadre gris est le groupe.",
+   "Le cadre bleu est C(a) ; il contient a et b, avec ab = ba.",
+   "Le disque rouge c est hors de C(a) : ac ≠ ca."
+  ],
+  "a_voir": "C(a) est la partie du groupe qui commute avec a."
+ },
+ {
+  "code": "45-137",
+  "a_dire": "Le signe C(a) se lit « C de a » ; C vient de centralisateur et a est l'élément fixé.",
+  "legende_titre": "Lire le signe C(a)",
+  "lecture": [
+   "La lettre bleue C renvoie à « centralisateur ».",
+   "La lettre grise a est l'élément fixé.",
+   "Les parenthèses ne sont pas un produit.",
+   "Le cadre vert dit quand b est dans C(a)."
+  ],
+  "a_voir": "Chaque morceau du signe a un sens et b est dans C(a) quand ab = ba."
+ },
+ {
+  "code": "45-138",
+  "a_dire": "Sans inverses, le centralisateur n'est pas un sous-groupe : avec l'identité, les quatre transformations commutent mais deux n'ont pas d'inverse.",
+  "legende_titre": "Sans inverse, ça tombe",
+  "lecture": [
+   "Le cadre vert en pointillé contient les 4 transformations.",
+   "Les cadres bleus, identité et échange, ont un inverse.",
+   "Les cadres rouges, tout → 1 et tout → 2, n'ont pas d'inverse."
+  ],
+  "a_voir": "Tout commute avec l'identité, mais deux éléments sans inverse empêchent d'avoir un groupe."
+ },
+ {
+  "code": "45-139",
+  "a_dire": "La preuve part de b1 et b2 qui commutent avec a, glisse a à travers b2 puis b1, et arrive à a(b1 b2).",
+  "legende_titre": "a glisse à travers b2 puis b1",
+  "lecture": [
+   "La ligne bleue du haut est le départ ; la ligne verte du bas est l'arrivée.",
+   "Chaque flèche orange utilise une commutation avec a.",
+   "Les flèches grises regroupent seulement les parenthèses."
+  ],
+  "a_voir": "Les deux flèches orange portent le poids de la preuve."
+ },
+ {
+  "code": "45-140",
+  "a_dire": "Le centre est formé des éléments qui sont dans tous les C(a) à la fois.",
+  "legende_titre": "Le centre, partie commune",
+  "lecture": [
+   "Les cadres bleu et violet sont C(a) et C(b).",
+   "Le cadre vert est leur partie commune : le centre.",
+   "Le disque e est le neutre, présent dans les deux."
+  ],
+  "a_voir": "Le centre est ce qui reste commun à tous les centralisateurs."
+ },
+ {
+  "code": "45-141",
+  "a_dire": "Dans un groupe abélien, chaque élément commute avec tous, donc le centre est le groupe entier.",
+  "legende_titre": "Tout le groupe est au centre",
+  "lecture": [
+   "Les quatre disques 0, 1, 2, 3 sont les éléments.",
+   "Les flèches orange relient 2 aux autres éléments : 2 + x = x + 2.",
+   "Le cadre vert en pointillé entoure tous les disques."
+  ],
+  "a_voir": "Chaque élément est dans le centre, donc le centre contient tout."
+ },
+ {
+  "code": "45-142",
+  "a_dire": "En notation additive d'un groupe abélien, on écrit +, 0, −a et n a à la place de ·, 1, a^(-1) et a^n.",
+  "legende_titre": "Deux écritures du même groupe",
+  "lecture": [
+   "La colonne grise est la notation multiplicative.",
+   "La colonne bleue est la notation additive.",
+   "Chaque flèche orange relie un signe à son équivalent."
+  ],
+  "a_voir": "Le groupe ne change pas, seuls les signes changent."
+ },
+ {
+  "code": "45-143",
+  "a_dire": "Le signe + sert à écrire l'opération de n'importe quel groupe abélien.",
+  "legende_titre": "Un seul signe pour l'opération",
+  "lecture": [
+   "Les trois cadres gris montrent l'opération écrite de trois façons.",
+   "Les flèches orange vont vers un seul cadre bleu.",
+   "Le cadre bleu montre a + b."
+  ],
+  "a_voir": "Les trois écritures deviennent a + b."
+ },
+ {
+  "code": "45-144",
+  "a_dire": "Le signe 0 désigne le neutre d'un groupe abélien noté additivement.",
+  "legende_titre": "Un seul nom pour le neutre",
+  "lecture": [
+   "Les trois cadres gris donnent le neutre de trois groupes.",
+   "Les flèches orange vont vers le cadre bleu 0.",
+   "La ligne a + 0 = a dit que le neutre ne change rien."
+  ],
+  "a_voir": "Le neutre s'écrit 0, quel que soit le groupe."
+ }
+]

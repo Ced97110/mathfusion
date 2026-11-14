@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 50, 24, 10, 'sujet', label='tan(60° + 45°)', size='s')
+arrow(ax, (27, 55), (30, 55), 'varie')
+box(ax, 31, 50, 32, 10, 'varie', label='2,732 ÷ (−0,732)', size='s')
+arrow(ax, (64, 55), (67, 55), 'varie')
+box(ax, 68, 50, 18, 10, 'resultat', label='−3,732', size='s')
+f = numberline(ax, 10, 78, 18, -4, 4, step=1, arrow_right=False, every=2)
+disc(ax, f(-3.732), 18, 1.3, 'resultat'); disc(ax, f(3.732), 18, 1.3, 'autre')
+text(ax, f(-3.732), 25, 'tan 105°', 'resultat', 's'); text(ax, f(3.732), 25, 'tan 75°', 'autre', 's')
+arrow(ax, (f(-3.732) + 3, 35), (f(3.732) - 3, 35), 'varie', both=True)
+text(ax, 44, 39.5, 'valeurs opposées', 'varie', 's')
+save(fig, '34-158')

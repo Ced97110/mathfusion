@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+ox, oy, u = 2, 6, 12
+m = lambda x, y: (ox + (x + 3) * u, oy + (y + 1) * u)
+poly(ax, [m(-3, -1), m(3, -1), m(3, 4), m(-3, 4)], 'fixe', fill=False)
+line(ax, [m(-3, 0), m(3, 0)], 'fixe'); line(ax, [m(0, -1), m(0, 4)], 'fixe')
+line(ax, [m(-2, -1), m(3, 4)], 'sujet', lw=1.5)
+c = m(0, 0); disc(ax, c[0], c[1], 1.4, 'varie')
+text(ax, c[0] + 2.5, c[1] + 6, r'$(0,\,0)$ : $0<1$', 'varie', 's', ha='left')
+c = m(0, 3); disc(ax, c[0], c[1], 1.4, 'autre')
+text(ax, c[0] - 2.5, c[1], r'$(0,\,3)$ : $3>1$', 'autre', 's', ha='right')
+c = m(0, 1); disc(ax, c[0], c[1], 1.0, 'sujet')
+text(ax, *m(1.8, -0.5), 'en dessous', 'varie', 's')
+text(ax, *m(-1.7, 1.9), 'au-dessus', 'autre', 's')
+text(ax, *m(2.4, 1.2), r'$y=x+1$', 'sujet', 's', ha='left')
+save(fig, '20-110')

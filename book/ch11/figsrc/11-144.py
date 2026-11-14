@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+s = 2.2; lx, ly = 9, 28
+box(ax, lx, ly, 12 * s, 8 * s, 'sujet', r=0.3)
+poly(ax, [(lx + 11 * s, ly + 7 * s), (lx + 12 * s, ly + 7 * s), (lx + 12 * s, ly + 8 * s), (lx + 11 * s, ly + 8 * s)], 'varie')
+for i in range(13): line(ax, [(lx + i * s, ly), (lx + i * s, ly + 8 * s)], 'sujet', lw=0.4)
+for j in range(9): line(ax, [(lx, ly + j * s), (lx + 12 * s, ly + j * s)], 'sujet', lw=0.4)
+text(ax, lx + 6 * s, 24.5, '12 m', 'sujet', 's'); text(ax, lx - 1, ly + 4 * s, '8 m', 'sujet', 's', ha='right')
+text(ax, lx + 6 * s, 19, '96 m²', 'sujet', 'm')
+box(ax, 54, 24, 22, 22, 'varie', label='1 m²')
+arrow(ax, (lx + 12 * s + 1, ly + 7.5 * s), (53, 42), 'varie', curve=-0.15)
+text(ax, 65, 49.5, '100 cm', 'varie', 's'); text(ax, 79.5, 35, '100 cm', 'varie', 's', rot=90)
+text(ax, 65, 19.5, '= 10 000 cm²', 'varie', 's')
+text(ax, 44, 8, '96 × 10 000 = 960 000 cm²', 'resultat', 's')
+save(fig, '11-144')

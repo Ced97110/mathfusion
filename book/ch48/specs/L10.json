@@ -1,0 +1,189 @@
+[
+ {
+  "code": "48-145",
+  "a_dire": "exp envoie les réels sur les réels strictement positifs, atteint chacun d'eux, et seul 0 va sur 1.",
+  "legende_titre": "Un à un, sans trou",
+  "lecture": [
+   "Sur la droite du haut, les points bleus −1 et 1 et le point vert 0 sont des valeurs de x.",
+   "Chaque flèche envoie x sur e puissance x, placé sur la droite du bas.",
+   "La flèche verte part de 0 et arrive en 1 : c'est le seul x qui donne 1, le noyau.",
+   "Les points d'arrivée sont 0,368, 1 et 2,718."
+  ],
+  "a_voir": "Vois que seule la flèche verte arrive en 1 : le noyau est réduit à 0."
+ },
+ {
+  "code": "48-146",
+  "a_dire": "Deux angles qui diffèrent de 2π donnent le même point du cercle, donc 2π est dans le noyau.",
+  "legende_titre": "Un tour de plus, même point",
+  "lecture": [
+   "Sur la droite grise, les deux points bleus sont les angles pi sur 2 et pi sur 2 plus 2 pi.",
+   "L'accolade orange mesure l'écart entre eux : un tour de 2 pi.",
+   "Les deux flèches bleues arrivent au même point vert du cercle, le nombre i."
+  ],
+  "a_voir": "Vois que deux angles distants d'un tour tombent sur le même point."
+ },
+ {
+  "code": "48-147",
+  "a_dire": "L'application φ envoie l'angle 0 sur 1, l'angle 90° sur i et l'angle 180° sur −1.",
+  "legende_titre": "Trois angles et leurs points",
+  "lecture": [
+   "Le cercle gris est le cercle unité.",
+   "Chaque segment orange est le rayon dans la direction d'un angle : 0°, 90°, 180°.",
+   "Le point bleu au bout de chaque rayon est la valeur de φ : 1, i et −1."
+  ],
+  "a_voir": "Vois qu'à chaque angle correspond le point du cercle dans cette direction."
+ },
+ {
+  "code": "48-148",
+  "a_dire": "φ(θ) a pour abscisse cos θ et pour ordonnée sin θ ; pour 60°, c'est 0,5 et 0,866.",
+  "legende_titre": "Cosinus et sinus d'un angle",
+  "lecture": [
+   "Le segment bleu est le rayon de longueur 1 qui fait 60° avec l'axe horizontal.",
+   "Le segment orange est le cosinus : l'abscisse du point, 0,5.",
+   "Le segment vert est le sinus : l'ordonnée du point, environ 0,866.",
+   "Le point bleu du cercle s'écrit 0,5 plus 0,866 i."
+  ],
+  "a_voir": "Vois que le point se lit avec un segment horizontal (cosinus) et un segment vertical (sinus)."
+ },
+ {
+  "code": "48-149",
+  "a_dire": "On développe le produit en une partie réelle et une partie imaginaire, puis les formules d'addition les reconnaissent comme cos(α+β) et sin(α+β).",
+  "legende_titre": "Du produit à la somme des angles",
+  "lecture": [
+   "La boîte bleue du haut est le départ : le produit φ(α)φ(β).",
+   "Les deux boîtes grises sont le résultat du développement : la partie réelle et la partie imaginaire.",
+   "Les grosses flèches orange sont l'étape qui conclut : les formules d'addition.",
+   "Les boîtes vertes donnent l'arrivée : φ(α+β)."
+  ],
+  "a_voir": "Vois que l'étape orange relie le développement au résultat."
+ },
+ {
+  "code": "48-150",
+  "a_dire": "L'égalité φ(α)φ(β) = φ(α+β) contient les deux formules d'addition, celle du cosinus et celle du sinus.",
+  "legende_titre": "Deux formules, une condition",
+  "lecture": [
+   "La boîte bleue est l'égalité entre nombres complexes, la condition d'homomorphisme.",
+   "La boîte grise de gauche est sa partie réelle : la formule du cosinus, calculée pour 180°.",
+   "La boîte grise de droite est sa partie imaginaire : la formule du sinus, calculée pour 180°.",
+   "La boîte verte donne le point obtenu : −1."
+  ],
+  "a_voir": "Vois que l'égalité unique se coupe en deux formules."
+ },
+ {
+  "code": "48-151",
+  "a_dire": "Quand l'angle augmente d'un tour, on retombe sur les mêmes points : plusieurs angles donnent un même point.",
+  "legende_titre": "La droite s'enroule sur le cercle",
+  "lecture": [
+   "Les six disques de la droite du bas sont les angles 0, pi sur 2, pi, 3 pi sur 2, 2 pi et 5 pi sur 2.",
+   "Chaque disque du cercle a la couleur des angles qu'il reçoit.",
+   "Bleu : 0 et 2 pi arrivent en 1. Orange : pi sur 2 et 5 pi sur 2 arrivent en i.",
+   "Gris et violet : pi et 3 pi sur 2 arrivent chacun seuls."
+  ],
+  "a_voir": "Vois que les angles de même couleur, espacés d'un tour, tombent sur le même point."
+ },
+ {
+  "code": "48-152",
+  "a_dire": "Le noyau de φ est l'ensemble des angles 2πn, c'est-à-dire des tours complets.",
+  "legende_titre": "Seuls les tours complets",
+  "lecture": [
+   "Les disques verts de la droite sont 0, 2 pi et 4 pi : leur point est 1.",
+   "Les flèches orange montrent qu'on passe de l'un au suivant en ajoutant 2 pi.",
+   "Le disque rouge est pi : son point est −1, donc il n'est pas dans le noyau.",
+   "La boîte verte écrit l'ensemble des angles qui conviennent."
+  ],
+  "a_voir": "Vois que les angles qui conviennent sont espacés de 2 pi."
+ },
+ {
+  "code": "48-153",
+  "a_dire": "L'application n ↦ 2πn associe à chaque entier un élément du noyau et respecte l'addition.",
+  "legende_titre": "Les entiers rangent les tours",
+  "lecture": [
+   "La droite du haut porte les entiers 0 à 5.",
+   "La droite du bas porte les tours complets correspondants : 2 est envoyé sur 4 pi, 3 sur 6 pi, 5 sur 10 pi.",
+   "Les flèches bleue, orange et verte suivent 2, 3 et leur somme 5.",
+   "La somme 2 plus 3 en haut devient la somme 4 pi plus 6 pi en bas."
+  ],
+  "a_voir": "Vois que l'addition en haut devient l'addition en bas."
+ },
+ {
+  "code": "48-154",
+  "a_dire": "En identifiant les angles qui diffèrent d'un tour, on obtient exactement le cercle : ℝ/2πℤ est isomorphe à 𝕋.",
+  "legende_titre": "Les angles au tour près",
+  "lecture": [
+   "La droite verticale de droite est un tour d'angles, de 0° à 360°.",
+   "Les deux points bleus aux extrémités, 0° et 360°, arrivent par les flèches au même point 1 du cercle.",
+   "Les points orange et violet, 120° et 240°, ont leur place sur le cercle."
+  ],
+  "a_voir": "Vois que les deux bouts de la droite se rejoignent pour former le cercle."
+ },
+ {
+  "code": "48-155",
+  "a_dire": "Les angles s'additionnent en 360° et les points se multiplient en 1, le point du tour complet.",
+  "legende_titre": "Somme d'angles, produit de points",
+  "lecture": [
+   "L'arc bleu va de 0 à 120° et l'arc orange de 0 à 240°.",
+   "Le disque bleu est le point de 120°, le disque orange celui de 240°.",
+   "La boîte grise additionne les angles : 360°, un tour complet.",
+   "Le disque vert et la boîte verte donnent le produit des deux points : 1."
+  ],
+  "a_voir": "Vois que la somme des angles tombe sur un tour complet et que le produit des points vaut 1."
+ },
+ {
+  "code": "48-156",
+  "a_dire": "Dans l'horloge à douze heures, H contient 0, 4 et 8, et N contient 0 et 6.",
+  "legende_titre": "Deux sous-groupes de l'horloge",
+  "lecture": [
+   "Les douze disques sont les heures de l'horloge, de 0 à 11.",
+   "Les disques bleus 0, 4 et 8 forment H, reliés par un triangle bleu.",
+   "Les disques violets 0 et 6 forment N, reliés par un segment violet.",
+   "Le disque 0 est dans les deux."
+  ],
+  "a_voir": "Vois que 0 est le seul disque commun aux deux sous-groupes."
+ },
+ {
+  "code": "48-157",
+  "a_dire": "Additionner chaque élément de H avec chaque élément de N donne six valeurs distinctes : les nombres pairs.",
+  "legende_titre": "Six sommes, six valeurs",
+  "lecture": [
+   "Les nombres bleus à gauche sont les éléments de H, les nombres violets en haut ceux de N.",
+   "Chaque case verte est la somme de sa ligne et de sa colonne, modulo 12.",
+   "Sur la droite du bas, les six disques verts sont les valeurs obtenues : 0, 2, 4, 6, 8, 10."
+  ],
+  "a_voir": "Vois que les six cases donnent six valeurs différentes."
+ },
+ {
+  "code": "48-158",
+  "a_dire": "H et N n'ont que 0 en commun.",
+  "legende_titre": "L'intersection de H et N",
+  "lecture": [
+   "Le grand cercle bleu contient les éléments de H : 0, 4 et 8.",
+   "Le cercle violet contient les éléments de N : 0 et 6.",
+   "Le disque vert 0 est dans les deux cercles à la fois.",
+   "4, 8 et 6 sont chacun dans un seul cercle."
+  ],
+  "a_voir": "Vois que seul 0 est dans les deux cercles."
+ },
+ {
+  "code": "48-159",
+  "a_dire": "Les deux quotients ont trois éléments, tous deux cycliques, donc ils sont isomorphes.",
+  "legende_titre": "Même nombre d'éléments, même groupe",
+  "lecture": [
+   "La rangée bleue du haut est le quotient de la somme par N : trois paquets.",
+   "La rangée violette du bas est le quotient de H par l'intersection : trois éléments.",
+   "Chaque flèche verte relie deux cases qui se correspondent."
+  ],
+  "a_voir": "Vois que chaque rangée a trois cases, reliées une à une."
+ },
+ {
+  "code": "48-160",
+  "a_dire": "Avec 3 éléments dans H, 2 dans N et 1 dans l'intersection, on trouve 3 × 2 ÷ 1 = 6 éléments dans la somme.",
+  "legende_titre": "3 fois 2 divisé par 1",
+  "lecture": [
+   "Les trois disques bleus sont les éléments de H.",
+   "Les deux disques violets sont ceux de N.",
+   "Le disque vert est l'unique élément commun.",
+   "Les six cases vertes sont les éléments de la somme."
+  ],
+  "a_voir": "Vois que le calcul 3 × 2 ÷ 1 donne le nombre de cases vertes, 6."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+u, L, D, Hh = 9, 5, 3, 3
+o = (36.2, 8)
+P = lambda x, y, z: iso(x, y, z, o, u)
+poly(ax, [P(0, D, 0), P(L, D, 0), P(L, D, Hh), P(0, D, Hh)], 'autre')
+poly(ax, [P(0, 0, 0), P(L, 0, 0), P(L, D, 0), P(0, D, 0)], 'fixe')
+line(ax, [P(0, D, 0), P(L, D, 0)], 'sujet', lw=2.6)
+text(ax, *P(0.6, D, 2.0), 'mur', 'autre', 'm')
+text(ax, *P(2.5, 1.0, 0), 'sol', 'fixe', 'm')
+a = P(L, D, 0)
+m = P(3.2, D, 0)
+text(ax, 62, 30, 'charnière', 'sujet', 'm', ha='left')
+arrow(ax, (61, 31.5), (m[0] + 1.2, m[1] - 0.6), 'sujet', lw=0.9)
+save(fig, '27-050')

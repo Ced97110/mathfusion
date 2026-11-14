@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 22, 68, 'dans R', 'sujet', 's'); text(ax, 66, 68, r'dans $R/P$', 'autre', 's')
+box(ax, 4, 40, 38, 20, 'sujet')
+text(ax, 23, 55, r'$P=(6)$', 'sujet'); text(ax, 23, 46, r'$6,\ 12,\ 18$', 'sujet', 's')
+disc(ax, 23, 20, 4.5, 'limite', label='5'); text(ax, 23, 10, 'hors de P', 'limite', 's')
+disc(ax, 66, 50, 5, 'resultat', label=r'$\bar0$'); disc(ax, 66, 20, 5, 'limite', label=r'$\bar5$')
+arrow(ax, (42.5, 50), (60.5, 50), 'varie'); arrow(ax, (28, 20), (60.5, 20), 'varie')
+text(ax, 51.5, 55, 'classe nulle', 'resultat', 's'); text(ax, 44, 25, 'classe non nulle', 'limite', 's')
+save(fig, '52-124')

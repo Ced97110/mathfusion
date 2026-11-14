@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 22, 70, 44, 12, 'resultat', label=r'$U + W = E$')
+box(ax, 2, 38, 38, 12, 'sujet', label=r'$U$ : (0, 0), (1, 0)', size='s')
+box(ax, 48, 38, 38, 12, 'autre', label=r'$W$ : (0, 0), (0, 1)', size='s')
+box(ax, 22, 6, 44, 12, 'resultat', label=r'$U \cap W = \{0\}$')
+line(ax, [(44, 18), (21, 38)], 'fixe'); line(ax, [(44, 18), (67, 38)], 'fixe')
+line(ax, [(21, 50), (44, 70)], 'fixe'); line(ax, [(67, 50), (44, 70)], 'fixe')
+text(ax, 12, 76, 'sup = somme', 'resultat', 's'); text(ax, 12, 12, 'inf = commun', 'resultat', 's')
+text(ax, 76, 76, '4 sommes', 'fixe', 's'); text(ax, 76, 60, '= le plan', 'fixe', 's')
+save(fig, '79-151')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 24, 48, 40, 14, 'sujet', label=r'$\exists y,\ y^2=x$')
+text(ax, 44, 43, r'$x$ libre : valeur à choisir', 'varie', 's')
+box(ax, 2, 12, 38, 18, 'resultat', label=r'$x=9$ : vraie, $y=3$')
+box(ax, 48, 12, 38, 18, 'limite', label=r'$x=-1$ : fausse')
+arrow(ax, (34, 40), (21, 31.5), 'varie', lw=1.1)
+arrow(ax, (54, 40), (67, 31.5), 'varie', lw=1.1)
+text(ax, 21, 6, r'$3^2=9$', 'resultat', 's')
+text(ax, 67, 6, 'aucun $y$ : carré $<0$', 'limite', 's')
+save(fig, '70-093')

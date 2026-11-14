@@ -1,0 +1,186 @@
+[
+ {
+  "code": "49-128",
+  "a_dire": "Un groupe peut agir sur un ensemble sans rapport avec lui : G est fait de matrices, S de points du plan.",
+  "legende_titre": "Un groupe et un ensemble sans lien",
+  "lecture": [
+   "Le bloc bleu est le groupe G : ses éléments sont des matrices, il ne contient aucun point.",
+   "Le bloc gris contient des points violets : c'est l'ensemble S, les points du plan.",
+   "La flèche orange montre que G agit sur S."
+  ],
+  "a_voir": "Tu vois que G et S sont deux objets séparés, reliés seulement par l'action."
+ },
+ {
+  "code": "49-129",
+  "a_dire": "L'orbite de x est l'ensemble des points que x atteint quand le groupe agit.",
+  "legende_titre": "Les points atteints depuis un point",
+  "lecture": [
+   "Le disque bleu 1 est le point de départ x.",
+   "Chaque flèche orange est un quart de tour, répété de sommet en sommet.",
+   "Les disques verts 2, 3, 4 sont atteints à partir de 1 ; le cadre vert pointillé les réunit avec 1 : c'est l'orbite."
+  ],
+  "a_voir": "Tu vois qu'en répétant le quart de tour, 1 atteint les quatre sommets."
+ },
+ {
+  "code": "49-130",
+  "a_dire": "Gx s'obtient en appliquant chaque g de G à x puis en réunissant les résultats sans les répéter.",
+  "legende_titre": "Calculer Gx sur quatre rotations",
+  "lecture": [
+   "Chaque flèche orange part d'une rotation (1, r, r², r³) et mène à une coloration.",
+   "Les carrés bleus donnent la coloration avec pions orange aux sommets 1 et 3.",
+   "Les carrés verts donnent celle aux sommets 2 et 4.",
+   "L'accolade verte réunit les résultats : 2 colorations différentes."
+  ],
+  "a_voir": "Tu vois quatre rotations, quatre résultats, mais seulement deux colorations distinctes."
+ },
+ {
+  "code": "49-131",
+  "a_dire": "Si l'ensemble qui agit n'est pas un groupe, la relation « atteindre » n'est plus symétrique.",
+  "legende_titre": "Atteindre 5 depuis 0, pas l'inverse",
+  "lecture": [
+   "La flèche verte au-dessus va de 0 à 5 : on ajoute 5.",
+   "La flèche rouge du dessous va de 5 vers 0 et porte une croix : il faudrait soustraire.",
+   "La droite graduée montre les nombres de 0 à 7."
+  ],
+  "a_voir": "Tu vois qu'on peut aller de 0 à 5 mais pas de 5 à 0."
+ },
+ {
+  "code": "49-132",
+  "a_dire": "Deux points sont dans la même orbite exactement quand l'un est l'image de l'autre par un g, et l'autre est l'image du premier par g⁻¹.",
+  "legende_titre": "y = gx dans les deux sens",
+  "lecture": [
+   "Le carré bleu est la coloration x, le carré vert est la coloration y.",
+   "La flèche du haut va de x à y par g.",
+   "La flèche du bas va de y à x par l'inverse de g.",
+   "L'accolade verte dit que les deux sont dans la même orbite."
+  ],
+  "a_voir": "Tu vois que g mène de x à y et que g⁻¹ ramène de y à x."
+ },
+ {
+  "code": "49-133",
+  "a_dire": "La preuve a trois étapes : réflexive, symétrique, transitive ; la dernière, par le produit, porte le poids.",
+  "legende_titre": "Trois étapes d'une preuve",
+  "lecture": [
+   "En haut, la boucle orange montre que x s'atteint lui-même par 1.",
+   "Au milieu, g va de x à y et g⁻¹ revient de y à x.",
+   "Dans le cadre orange, g puis h mènent de x à z ; la flèche verte hg va directement de x à z."
+  ],
+  "a_voir": "Tu vois que l'étape du bas, avec le produit hg, est celle qui est mise en valeur."
+ },
+ {
+  "code": "49-134",
+  "a_dire": "Si l'ensemble des gestes n'est pas un groupe, les ensembles de points atteints peuvent se chevaucher et ne forment plus une partition.",
+  "legende_titre": "Un point dans deux paquets",
+  "lecture": [
+   "Le cadre bleu pointillé réunit 1 et 2 : ce que 1 atteint.",
+   "Le cadre violet pointillé réunit 2 et 3 : ce que 2 atteint.",
+   "Le disque rouge 2 est dans les deux cadres.",
+   "Le disque 4 est hors des deux cadres."
+  ],
+  "a_voir": "Tu vois que le sommet 2 appartient à deux paquets différents."
+ },
+ {
+  "code": "49-135",
+  "a_dire": "Le signe S/G désigne l'ensemble des orbites de S sous l'action de G.",
+  "legende_titre": "Le signe S/G lu pièce par pièce",
+  "lecture": [
+   "Le bloc bleu S contient 16 points : les colorations.",
+   "Le bloc orange G contient 4 points : les rotations.",
+   "Le bloc vert S/G contient 6 points : les orbites."
+  ],
+  "a_voir": "Tu vois que S/G est un ensemble dont les éléments sont les 6 orbites."
+ },
+ {
+  "code": "49-136",
+  "a_dire": "L'ensemble des orbites a pour éléments les paquets de S, un élément par paquet.",
+  "legende_titre": "Des paquets qui deviennent des éléments",
+  "lecture": [
+   "Les cadres bleus rangent les 16 colorations en 6 paquets.",
+   "Chaque flèche orange part d'un paquet.",
+   "Chaque disque vert est un élément de S/G : il y en a 6."
+  ],
+  "a_voir": "Tu vois 6 paquets de points devenir 6 éléments."
+ },
+ {
+  "code": "49-137",
+  "a_dire": "Une action est transitive quand l'ensemble est une seule orbite : de tout point on atteint tout point.",
+  "legende_titre": "Une seule orbite contre plusieurs",
+  "lecture": [
+   "À gauche, les flèches orange partent du sommet 1 et atteignent les sommets 2, 3, 4 : une seule orbite.",
+   "À droite, les 16 colorations sont rangées en 6 paquets violets : plusieurs orbites.",
+   "Le paquet à un seul point est une coloration qui n'atteint qu'elle-même."
+  ],
+  "a_voir": "Tu vois d'un côté un seul paquet, de l'autre plusieurs."
+ },
+ {
+  "code": "49-138",
+  "a_dire": "Le stabilisateur de x est l'ensemble des éléments du groupe qui laissent x en place.",
+  "legende_titre": "Les rotations qui laissent en place",
+  "lecture": [
+   "Chaque ligne est une coloration : pions bleus, avec des pions orange sur certains sommets.",
+   "Chaque case en haut de colonne correspond à une rotation : 1, r, r², r³.",
+   "Une case verte pleine veut dire que la rotation laisse la coloration en place.",
+   "Le nombre à droite compte les cases vertes de la ligne."
+  ],
+  "a_voir": "Tu vois que le nombre de rotations qui laissent en place change selon la coloration."
+ },
+ {
+  "code": "49-139",
+  "a_dire": "Stab x contient les g tels que gx = x : on teste chaque rotation sur x.",
+  "legende_titre": "Tester chaque rotation sur une coloration",
+  "lecture": [
+   "Le carré bleu à gauche est la coloration x, avec des pions orange aux sommets 1 et 3.",
+   "Chaque ligne applique une rotation, flèche orange, et montre le résultat.",
+   "Les lignes vertes sont égales à x ; les lignes rouges sont différentes de x.",
+   "En bas, les rotations des lignes vertes forment Stab x."
+  ],
+  "a_voir": "Tu vois que seules 1 et r² laissent x en place."
+ },
+ {
+  "code": "49-140",
+  "a_dire": "Stab x se lit « Stab de x » : le stabilisateur du point x, c'est-à-dire les g qui laissent x en place.",
+  "legende_titre": "Lire le signe Stab x",
+  "lecture": [
+   "Le bloc bleu « Stab » est l'abréviation de stabilisateur.",
+   "Le bloc violet x est le point choisi, un point de S.",
+   "L'accolade verte donne le sens du tout : les g qui laissent x."
+  ],
+  "a_voir": "Tu vois le signe coupé en deux morceaux, chacun relié à son sens."
+ },
+ {
+  "code": "49-141",
+  "a_dire": "Le stabilisateur contient 1 et reste dans lui-même par produit et par inverse : c'est un sous-groupe.",
+  "legende_titre": "Trois propriétés du stabilisateur",
+  "lecture": [
+   "Le carré bleu à gauche est la coloration x.",
+   "Le grand cadre bleu est Stab x ; il contient les disques verts 1 et r².",
+   "La flèche « produit » mène de r² à 1 : r² enchaîné avec r² reste dans le cadre.",
+   "La flèche « inverse » part de r² et revient à r² ; le disque 1 est le neutre."
+  ],
+  "a_voir": "Tu vois que produit, inverse et neutre restent dans le cadre."
+ },
+ {
+  "code": "49-142",
+  "a_dire": "La preuve part de gx = x et hx = x, montre trois propriétés, dont le produit qui porte le poids, et conclut que Stab x est un sous-groupe.",
+  "legende_titre": "Départ, trois étapes, arrivée",
+  "lecture": [
+   "Le bloc gris du haut est le départ : g et h laissent x en place.",
+   "Les trois blocs du milieu sont les trois étapes : neutre, produit, inverse.",
+   "Le bloc orange du produit est l'étape clé : elle utilise la deuxième condition.",
+   "Le bloc vert du bas est l'arrivée."
+  ],
+  "a_voir": "Tu vois que l'étape du produit est celle qui est mise en valeur."
+ },
+ {
+  "code": "49-143",
+  "a_dire": "Le signe Gx désigne l'orbite de x, une partie de S, et non un produit.",
+  "legende_titre": "Gx est une partie de S",
+  "lecture": [
+   "Le grand cadre contient les 16 colorations de S.",
+   "Le bloc bleu Gx contient 2 colorations : l'orbite de x.",
+   "Les 14 disques gris sont les autres colorations de S.",
+   "Le texte rouge te prévient : Gx n'est pas un produit."
+  ],
+  "a_voir": "Tu vois que Gx est un petit paquet à l'intérieur de S."
+ }
+]

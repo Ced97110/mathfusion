@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+for x in (10,24,38): disc(ax,x,22,4,'resultat',label=str({10:2,24:3,38:5}[x]))
+disc(ax,24,52,5.5,'sujet',label='30')
+for x in (10,24,38): arrow(ax,(x+(24-x)*0.12,26.2),(24+(x-24)*0.2,47),'varie')
+text(ax,24,8,'PPCM(2, 3, 5) = 30','sujet','s')
+for x in (57,75): disc(ax,x,22,4,'resultat',label=str({57:2,75:3}[x]))
+disc(ax,66,52,5.5,'sujet',label='6')
+for x in (57,75): arrow(ax,(x+(66-x)*0.2,26.2),(66+(x-66)*0.2,47),'varie')
+text(ax,66,8,'PPCM(2, 3) = 6','sujet','s')
+save(fig,'80-243')

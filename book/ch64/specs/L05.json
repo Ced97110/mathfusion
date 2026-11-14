@@ -1,0 +1,386 @@
+[
+ {
+  "code": "64-128",
+  "a_dire": "En prenant un ρ qui ne touche que trois objets, le produit σ⁻¹ρσρ⁻¹ est dans N et ne bouge que peu d'objets.",
+  "legende_titre": "De cinq objets qui bougent à trois",
+  "lecture": [
+   "La rangée bleue du haut est σ : les 5 objets sont reliés en boucle par des flèches, tous bougent.",
+   "La rangée du bas est le produit σ⁻¹ρσρ⁻¹, qui est dans N ; ρ ne touche que les places 1, 2, 3.",
+   "Les trois disques verts 1, 3 et 5 sont reliés en boucle : 1 va en 3, 3 en 5, 5 en 1.",
+   "Les disques gris 2 et 4 n'ont pas de flèche : ils restent en place."
+  ],
+  "a_voir": "Le produit, dans N, ne bouge que 3 objets sur les 5 que σ bouge."
+ },
+ {
+  "code": "64-129",
+  "a_dire": "Si σ, un élément de N, est déjà un 3-cycle, il n'y a rien à calculer : N contient un 3-cycle.",
+  "legende_titre": "Un 3-cycle déjà présent dans N",
+  "lecture": [
+   "Le cadre bleu en pointillés est N.",
+   "Dans le cadre, les disques 1, 2, 3 reliés en boucle forment σ, le cycle des places 1, 2, 3.",
+   "La flèche orange marque le constat : σ est dans N et c'est un 3-cycle.",
+   "La case verte à droite donne l'arrivée : un 3-cycle est dans N."
+  ],
+  "a_voir": "L'élément de départ est déjà le 3-cycle cherché."
+ },
+ {
+  "code": "64-130",
+  "a_dire": "Si σ a un cycle de longueur r ≥ 4, avec ρ = (a₁ a₂ a₃) le produit est le 3-cycle (a₁ a₃ aᵣ), par exemple (135) pour (12345).",
+  "legende_titre": "D'un long cycle à un 3-cycle",
+  "lecture": [
+   "La rangée de disques représente le cycle de σ : a₁, a₂, a₃, puis des points, puis aᵣ.",
+   "Les trois disques verts a₁, a₃ et aᵣ sont ceux que le produit déplace ; le disque gris a₂ reste en place.",
+   "Les flèches vertes relient a₁ à a₃, a₃ à aᵣ, puis aᵣ à a₁.",
+   "Le texte orange rappelle le choix de ρ ; la dernière ligne donne l'exemple (12345) qui donne (135)."
+  ],
+  "a_voir": "Un seul cycle long donne un cycle de trois objets : a₁, a₃, aᵣ."
+ },
+ {
+  "code": "64-131",
+  "a_dire": "Si σ a deux 3-cycles, ρ = (a₁ a₂ a₄) les mêle et donne un cycle de 5 objets dans N, ce qui ramène au cas 2.",
+  "legende_titre": "Deux 3-cycles mêlés en un cycle de 5",
+  "lecture": [
+   "En haut, en bleu, σ a deux cycles : (1 2 3) et (4 5 6).",
+   "La flèche orange et le texte ρ = (1 2 4) montrent le choix qui mêle les deux cycles.",
+   "En bas, en vert, le produit est un seul cycle de 5 objets : 1, 4, 2, 6, 3.",
+   "L'objet 5 n'y figure pas : il reste en place."
+  ],
+  "a_voir": "Deux cycles séparés deviennent un cycle de 5 objets, traité par le cas 2."
+ },
+ {
+  "code": "64-132",
+  "a_dire": "Si σ a un seul 3-cycle et des échanges, σ² est dans N : les échanges s'annulent et il reste un 3-cycle.",
+  "legende_titre": "Le carré de σ efface les échanges",
+  "lecture": [
+   "La rangée du haut est σ = (12)(34)(567) : les disques orange 1 à 4 sont reliés par des échanges (flèches à double sens), les disques bleus 5, 6, 7 forment le 3-cycle.",
+   "La rangée du bas est σ², c'est-à-dire σ appliqué deux fois.",
+   "Les disques gris 1 à 4 n'ont plus de flèche : les échanges sont annulés.",
+   "Les disques verts 5, 6, 7 forment le cycle (5 7 6), le 3-cycle au carré."
+  ],
+  "a_voir": "En passant au carré, il ne reste que le 3-cycle."
+ },
+ {
+  "code": "64-133",
+  "a_dire": "Si σ n'a que des échanges, on passe à π = (13)(24), puis un cinquième objet b donne μ = (1 3 b) et le 3-cycle (1 3 b) dans N.",
+  "legende_titre": "Un cinquième objet donne le 3-cycle",
+  "lecture": [
+   "La première ligne est σ = (12)(34), en bleu : deux échanges sur les objets 1 à 4.",
+   "La deuxième ligne est π = (13)(24), en orange : deux autres échanges ; ce n'est pas encore un 3-cycle.",
+   "La troisième ligne est μ = (1 3 5) en vert, avec le cinquième objet en orange : 1 va en 3, 3 en 5, 5 en 1.",
+   "Le cercle en pointillés gris, à droite des deux premières lignes, est la place du cinquième objet, absent à ce stade."
+  ],
+  "a_voir": "Le 3-cycle n'apparaît que lorsque la place 5 est utilisée."
+ },
+ {
+  "code": "64-134",
+  "a_dire": "Les cinq cas sont un classement des permutations selon la longueur de leurs cycles : chaque permutation tombe dans une case et une seule.",
+  "legende_titre": "Quatre cases pour classer toutes les permutations",
+  "lecture": [
+   "Chaque bande grise est une case, de haut en bas, avec la condition testée à son centre.",
+   "À gauche de chaque bande, de petits dessins montrent la forme des cycles : un cycle de 4 objets, deux triangles, un triangle et un trait, deux traits.",
+   "Les flèches grises vont d'une case à la suivante : on passe à la suivante quand la condition précédente est fausse.",
+   "À droite, en bleu, le numéro du cas : cas 2, cas 3, cas 1 ou 4, cas 5."
+  ],
+  "a_voir": "Les cinq cas se répartissent en quatre cases qui couvrent toutes les permutations."
+ },
+ {
+  "code": "64-135",
+  "a_dire": "Seul le cas 5 demande un cinquième objet b : c'est là que sert n ≥ 5, et pour n = 4 le sous-groupe V sans 3-cycle le confirme.",
+  "legende_titre": "Où le cinquième objet est nécessaire",
+  "lecture": [
+   "Cinq cases grises représentent les cas 1 à 5 ; chacune montre les 4 objets de σ en bleu.",
+   "Les cas 1 à 4 restent dans ces objets, ce que montre l'accolade bleue.",
+   "Le cas 5 est le seul qui ajoute un disque orange, l'objet b, comme l'indique l'accolade orange ; le texte orange dit que lui seul exige n ≥ 5.",
+   "Le cadre rouge du bas rappelle que pour n = 4 il n'y a pas de cinquième objet, et que V est normal dans A₄ sans 3-cycle."
+  ],
+  "a_voir": "Un seul cas sort des quatre objets de σ, et c'est lui qui exige n ≥ 5."
+ },
+ {
+  "code": "64-136",
+  "a_dire": "Pour n ≥ 5, un sous-groupe normal N de A_n qui n'est pas l'identité contient un 3-cycle (lemme C), donc tous les 3-cycles, donc A_n tout entier (lemme B) : A_n est simple.",
+  "legende_titre": "De N ≠ {e} jusqu'au groupe entier",
+  "lecture": [
+   "Chaque petite case est un élément de A₅ : il y en a 60 par grille (6 colonnes, 10 rangées).",
+   "Dans la grille de gauche, la case bleue est un élément de N autre que l'identité ; la case au contour noir est l'identité.",
+   "Au milieu, après le lemme C, la case orange est un 3-cycle dans N.",
+   "À droite, après le lemme B, les 60 cases sont vertes : N est égal à A₅."
+  ],
+  "a_voir": "Un seul élément de plus que l'identité suffit à remplir les 60 cases."
+ },
+ {
+  "code": "64-137",
+  "a_dire": "Un seul élément non trivial, (12)(34), dans N suffit : la chaîne mène à (13)(24), à (135), à tous les 3-cycles, puis aux 60 éléments de A₅.",
+  "legende_titre": "La chaîne qui part de (12)(34)",
+  "lecture": [
+   "La première case bleue contient l'élément de départ (12)(34), supposé dans N.",
+   "Les flèches orange donnent l'étape qui fabrique la case suivante : le cas 5 deux fois, puis le lemme B, puis le lemme A.",
+   "Les cases bleues suivantes contiennent (13)(24), (135), puis tous les 3-cycles.",
+   "La case verte du bas est l'arrivée : N est égal à A₅, 60 éléments."
+  ],
+  "a_voir": "Chaque case produit la suivante, jusqu'au groupe entier."
+ },
+ {
+  "code": "64-138",
+  "a_dire": "S_n n'est pas résoluble pour n ≥ 5 : avec 4 objets S₄ se découpe en facteurs premiers, mais avec 5 objets il contient A₅, simple et non abélien, qui ne se découpe pas.",
+  "legende_titre": "Quatre objets contre cinq objets",
+  "lecture": [
+   "La colonne verte de gauche descend de S₄ (24 éléments) à 12, 4, 2, puis 1 : chaque pas est une flèche, le groupe est résoluble.",
+   "La colonne de droite part de S₅ (120 éléments, case bleue) et passe à A₅ (60 éléments, case violette).",
+   "Sous A₅, la flèche rouge pointillée barrée et les mots « aucun pas » disent qu'il n'y a pas de découpage vers 1 (case grise en pointillés).",
+   "Ce contraste est le contre-exemple de l'hypothèse n ≥ 5."
+  ],
+  "a_voir": "À gauche la descente va jusqu'à 1 ; à droite elle s'arrête à 60."
+ },
+ {
+  "code": "64-139",
+  "a_dire": "Si S_n était résoluble, A′_n, normal dans A_n simple, vaudrait {e} ou A_n ; dans les deux cas c'est impossible, donc S_n n'est pas résoluble.",
+  "legende_titre": "Le dilemme à deux valeurs de A′₅",
+  "lecture": [
+   "La case bleue du haut est A₅ (60 éléments) ; le texte dessous dit que A′₅ est normal et que A₅ est simple : A′₅ vaut {e} ou A₅.",
+   "La branche de gauche, en rouge : si A′₅ a 1 élément, A₅ serait abélien, ce qui est faux.",
+   "La branche de droite, en rouge : si A′₅ a 60 éléments, la suite reste à 60 et n'atteint jamais {e}.",
+   "Chaque branche finit par « impossible » ; le texte vert du bas conclut que S₅ n'est pas résoluble."
+  ],
+  "a_voir": "Les deux valeurs possibles sont toutes les deux écartées."
+ },
+ {
+  "code": "64-140",
+  "a_dire": "(123)(234) = (12)(34) est différent de (234)(123) = (13)(24) : A_n n'est pas abélien dès n ≥ 4, mais cela ne prouve pas qu'il n'est pas résoluble.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "À gauche, en bleu, on applique (234) puis (123) : les échanges relient 1 et 2, et 3 et 4.",
+   "À droite, en violet, on applique (123) puis (234) : les échanges relient 1 et 3, et 2 et 4.",
+   "Le signe « différent » entre les deux dit que les résultats ne sont pas les mêmes.",
+   "La ligne du bas conclut : A₄ n'est pas abélien."
+  ],
+  "a_voir": "Les mêmes deux cycles, dans l'autre ordre, donnent un autre résultat."
+ },
+ {
+  "code": "64-141",
+  "a_dire": "La suite S_n ⊃ A_n ⊃ {e} est une suite de composition ; par Jordan-Hölder tout autre suite a les mêmes facteurs, et A_n n'est pas d'ordre premier (60 pour 5 objets), donc S_n n'est pas résoluble.",
+  "legende_titre": "Une suite de composition à deux facteurs",
+  "lecture": [
+   "Les trois barres sont S₅ (120), A₅ (60) et {e} (1) ; leur longueur suit leur nombre d'éléments.",
+   "La première flèche, verte, est le facteur 2, qui est premier.",
+   "La seconde flèche, rouge, est le facteur 60, qui n'est pas premier.",
+   "La phrase du bas rappelle que toute autre suite a les mêmes facteurs."
+  ],
+  "a_voir": "Un des deux facteurs est 60, qui n'est pas premier."
+ },
+ {
+  "code": "64-142",
+  "a_dire": "S₄ a quatre facteurs de composition tous d'ordre premier (2, 3, 2, 2), alors que pour 5 objets un facteur a 60 éléments : la différence est de nature, pas de taille.",
+  "legende_titre": "Les facteurs de S₄ et de S₅",
+  "lecture": [
+   "Pour S₄, quatre rangées vertes de 2, 3, 2 et 2 cases : chaque nombre est premier.",
+   "Pour S₅, une rangée verte de 2 cases, puis un grand bloc rouge de 60 cases (10 colonnes, 6 rangées).",
+   "Toutes les cases ont la même taille : l'aire d'un groupe de cases est son nombre d'éléments.",
+   "Le texte rouge du bas dit que 60 n'est pas premier."
+  ],
+  "a_voir": "Le bloc de 60 n'a rien de commun avec les petits facteurs de S₄."
+ },
+ {
+  "code": "64-143",
+  "a_dire": "Les groupes se rangent en deux zones : résolubles (abélien, ordre p^n, S₃, S₄) et non résolubles (A₅, S₅, S_n pour n ≥ 5) ; tout groupe qui contient A₅ est dans la zone de droite.",
+  "legende_titre": "Deux zones : se découpe, ne se découpe pas",
+  "lecture": [
+   "La zone verte de gauche, « résolubles », contient quatre cases : abélien, ordre p^n, S₃ (6) et S₄ (24).",
+   "La zone violette de droite, « non résolubles », contient A₅ (60), S₅ (120) et S_n avec n ≥ 5.",
+   "Les flèches orange et le signe d'inclusion montrent que chaque case de droite contient la précédente.",
+   "Le texte du bas dit qu'un groupe qui contient A₅ n'est pas résoluble."
+  ],
+  "a_voir": "A₅ ouvre la zone de droite, et tout ce qui le contient y reste."
+ },
+ {
+  "code": "64-144",
+  "a_dire": "Les trois lemmes disent la même chose : un étage obtenu par une racine n-ième a un groupe de Galois abélien, et réciproquement.",
+  "legende_titre": "Racine d'un côté, groupe abélien de l'autre",
+  "lecture": [
+   "La colonne bleue de gauche liste des étages : racine carrée, racine cubique, racine p-ième.",
+   "La colonne violette de droite donne le groupe de Galois : 2 éléments, 3 éléments (abéliens), cyclique d'ordre p.",
+   "Les flèches orange, vers la droite, sont les lemmes 1 et 2 : du corps vers le groupe.",
+   "La flèche verte, vers la gauche, est le lemme 3 : du groupe vers le corps."
+  ],
+  "a_voir": "Les flèches vont dans les deux sens entre racine et groupe."
+ },
+ {
+  "code": "64-145",
+  "a_dire": "Les racines n-ièmes de l'unité sont les solutions de x^n = 1 ; seul le second membre (1 au lieu d'un nombre quelconque) les distingue des racines n-ièmes d'un autre nombre.",
+  "legende_titre": "Même exposant, second membre différent",
+  "lecture": [
+   "La droite violette du haut montre les solutions de x² = 4 : 2 et −2.",
+   "La droite bleue du bas montre les solutions de x² = 1 : 1 et −1.",
+   "Les deux droites sont graduées de la même façon.",
+   "La ligne du bas dit que seul le second membre change."
+  ],
+  "a_voir": "Les deux équations ne diffèrent que par le nombre à droite du signe égal."
+ },
+ {
+  "code": "64-146",
+  "a_dire": "Dans ℂ, les n racines n-ièmes de l'unité sont des points d'un cercle de rayon 1, à égale distance : l'écart est 360° divisé par n, soit 90° pour n = 4.",
+  "legende_titre": "Quatre points sur un cercle",
+  "lecture": [
+   "Le cercle gris est le cercle de rayon 1 ; les deux axes gris sont ceux du plan.",
+   "Les quatre points bleus sont les racines, aux angles 0°, 90°, 180° et 270°.",
+   "Les traits pointillés bleus relient chaque point au centre.",
+   "L'arc orange marque l'écart de 90° entre deux voisins."
+  ],
+  "a_voir": "Les points sont répartis régulièrement, avec le même écart partout."
+ },
+ {
+  "code": "64-147",
+  "a_dire": "Les cinq solutions de z⁵ = 1 sont sur un cercle aux angles 0°, 72°, 144°, 216°, 288° ; multiplier par z tourne de 72°, soit un cinquième de tour.",
+  "legende_titre": "Les cinq solutions sur le cercle",
+  "lecture": [
+   "Les cinq points bleus sont les solutions de z⁵ = 1, avec leur angle écrit à côté.",
+   "Chaque flèche orange va d'un point au suivant : c'est la multiplication par z, une rotation de 72°.",
+   "La ligne du bas compte : 5 fois 72° font 360°, un tour complet.",
+   "Au centre, on lit l'équation z⁵ = 1."
+  ],
+  "a_voir": "Cinq rotations de 72° ramènent au point de départ."
+ },
+ {
+  "code": "64-148",
+  "a_dire": "Une racine primitive est une racine n-ième de l'unité dont les puissances donnent toutes les racines : elle engendre le groupe U.",
+  "legende_titre": "Deux points, deux ensembles de puissances",
+  "lecture": [
+   "À gauche, pour n = 4, les quatre points sont bleus : les puissances du point à 90° passent par 90°, 180°, 270°, puis 0°.",
+   "Les flèches orange suivent ces puissances une à une.",
+   "À droite, le point à 180° n'a pour puissances que 180° et 0° : seuls deux points sont bleus, les deux autres sont gris.",
+   "Le texte vert nomme la racine primitive ; le texte rouge dit que l'autre ne l'est pas."
+  ],
+  "a_voir": "Le point à 90° atteint tout le cercle, celui à 180° n'en atteint que deux points."
+ },
+ {
+  "code": "64-149",
+  "a_dire": "Les racines cinquièmes de l'unité, pour la multiplication, se comportent comme ℤ/5, l'horloge à 5 heures : multiplier les points revient à additionner les angles, ou les exposants modulo 5.",
+  "legende_titre": "Racines de 1 et horloge à 5 heures",
+  "lecture": [
+   "À gauche, cinq points sur le cercle aux angles 0°, 72°, 144°, 216° et 288° ; à droite, cinq points d'horloge numérotés 0 à 4.",
+   "Les points de même couleur se correspondent : le point vert est à 72° d'un côté et au numéro 1 de l'autre.",
+   "Les points orange sont 144° et 288° à gauche, les numéros 2 et 4 à droite.",
+   "Le texte du bas calcule les deux sommes : 144° + 288° = 432°, soit 72°, et 2 + 4 = 6, soit 1 modulo 5."
+  ],
+  "a_voir": "Le produit des racines et la somme sur l'horloge donnent le même point."
+ },
+ {
+  "code": "64-150",
+  "a_dire": "Le groupe de Galois de F(z) est abélien : deux renommages envoient z sur z^k puis z^l, et le résultat ne dépend pas de l'ordre.",
+  "legende_titre": "Deux renommages dans l'un ou l'autre ordre",
+  "lecture": [
+   "La case bleue en haut à gauche est z, le point de départ.",
+   "En haut, la flèche orange est η : z devient z² (case orange) ; à gauche, la flèche violette est ζ : z devient z³ (case violette).",
+   "Le second renommage, appliqué à chaque case, mène à la même arrivée : la case verte z⁶ = z.",
+   "Le texte du bas explique cette égalité : z⁵ vaut 1."
+  ],
+  "a_voir": "Les deux chemins finissent dans la même case."
+ },
+ {
+  "code": "64-151",
+  "a_dire": "Un renommage η de F(z) envoie z sur une puissance z^k et est connu par k ; deux renommages de suite multiplient les exposants, dans l'un ou l'autre ordre, donc ils commutent.",
+  "legende_titre": "Un renommage se lit dans son exposant",
+  "lecture": [
+   "La case bleue du haut dit que η(z) = z^k : le renommage est connu par l'entier k.",
+   "Les deux cases du milieu appliquent deux renommages de suite : k = 2 puis l = 3 (orange), et l = 3 puis k = 2 (violet).",
+   "Dans les deux cas l'exposant est 6, produit de 2 et 3.",
+   "La case verte conclut : z⁶ vaut z car z⁵ vaut 1, le résultat est le même."
+  ],
+  "a_voir": "Le produit des exposants ne dépend pas de l'ordre."
+ },
+ {
+  "code": "64-152",
+  "a_dire": "Si F ne contient pas les n racines n-ièmes de l'unité, le groupe de Galois de x^n − a n'est plus cyclique : sur les fractions, x³ = 2 a un groupe à 6 éléments, non abélien.",
+  "legende_titre": "Le lemme 2 sans son hypothèse",
+  "lecture": [
+   "Les deux cercles montrent les trois racines cubiques de l'unité : 1, z et z².",
+   "À gauche, les points verts pleins sont dans F : l'hypothèse est remplie et le groupe est cyclique.",
+   "À droite, les points rouges vides ne sont pas dans F, ici les fractions.",
+   "La case rouge du bas donne le contre-exemple : x³ = 2 a 6 éléments et n'est pas abélien."
+  ],
+  "a_voir": "Quand les trois racines de l'unité manquent, le groupe n'est plus abélien."
+ },
+ {
+  "code": "64-153",
+  "a_dire": "Un renommage η envoie la racine r sur z^k r ; η ↦ z^k plonge le groupe de Galois dans U, et un sous-groupe d'un groupe cyclique est cyclique.",
+  "legende_titre": "Une racine tourne sur le cercle des racines",
+  "lecture": [
+   "Les cinq points sont les cinq solutions de x⁵ = 2 : r, zr, z²r, z³r et z⁴r, chacune se déduit de r en tournant.",
+   "Le point bleu est r ; la flèche orange l'envoie sur z²r (choisi comme exemple, k = 2).",
+   "Le texte orange donne la règle η(r) = z^k r, puis η ↦ z^k, qui plonge le groupe dans U.",
+   "Le texte gris dit que z est dans F : η le laisse fixe. Le texte vert dit que U est cyclique, donc un sous-groupe l'est aussi."
+  ],
+  "a_voir": "Le renommage ne fait que faire tourner r d'un point à un autre, ce qui donne un groupe cyclique."
+ },
+ {
+  "code": "64-154",
+  "a_dire": "Dans les deux cas du lemme, le groupe de Galois de x^n − a a une suite normale à facteurs abéliens : il est résoluble.",
+  "legende_titre": "Des facteurs abéliens dans les deux cas",
+  "lecture": [
+   "La colonne de gauche, pour les fractions, descend de 6 éléments à 3, puis à 1, avec les facteurs 2 et 3.",
+   "La colonne de droite, avec les racines de l'unité ajoutées, descend de 3 à 1, avec le facteur 3.",
+   "Toutes les cases et les flèches sont vertes : chaque facteur est abélien.",
+   "Le texte du bas le dit."
+  ],
+  "a_voir": "Dans les deux colonnes, chaque pas est un facteur abélien."
+ },
+ {
+  "code": "64-155",
+  "a_dire": "Si F contient z, σ(r) = z^i r et τ(r) = z^j r commutent : στ(r) et τσ(r) valent tous deux z^(i+j) r.",
+  "legende_titre": "Deux chemins, même arrivée",
+  "lecture": [
+   "La case bleue de gauche est r.",
+   "Le chemin du haut applique σ (multiplier par z², orange) puis τ (multiplier par z³, violet).",
+   "Le chemin du bas applique τ puis σ.",
+   "Les deux chemins arrivent à la case verte z⁵r = r, car z⁵ vaut 1 ; le texte vert du haut dit que z est dans F, donc fixé."
+  ],
+  "a_voir": "Les deux ordres donnent la même case d'arrivée."
+ },
+ {
+  "code": "64-156",
+  "a_dire": "Si F ne contient pas z, z = (zr)/r est dans E : on intercale F(z), et on obtient deux étages abéliens F ⊂ F(z) ⊂ E.",
+  "legende_titre": "On intercale F(z) entre F et E",
+  "lecture": [
+   "La case bleue de gauche rappelle que r et zr sont dans E, donc leur quotient z aussi.",
+   "La colonne de droite empile E (bleu), F(z) (orange) et F (gris).",
+   "La flèche verte du bas est le lemme 1 : étage abélien de F à F(z).",
+   "La flèche verte du haut est le premier cas : étage abélien de F(z) à E."
+  ],
+  "a_voir": "Deux étages abéliens remplacent un seul grand pas."
+ },
+ {
+  "code": "64-157",
+  "a_dire": "Un seul radical peut demander deux étages, quand les racines de l'unité manquent au corps de départ : x³ − 2 sur les fractions.",
+  "legende_titre": "Un radical écrit, deux étages dans la tour",
+  "lecture": [
+   "À gauche, la case bleue montre la racine cubique de 2, écrite une seule fois : 1 radical.",
+   "À droite, la tour part des fractions F (gris).",
+   "Le premier étage, orange, ajoute une racine de l'unité : F(z).",
+   "Le second étage, bleu, ajoute la racine cubique de 2 ; le texte du bas compte 2 étages."
+  ],
+  "a_voir": "Un radical dans la formule, mais deux marches dans la tour."
+ },
+ {
+  "code": "64-158",
+  "a_dire": "Si F contient les racines p-ièmes de l'unité et que E/F est de degré p avec groupe cyclique, alors E = F(d) avec d^p dans F : le facteur cyclique devient une racine p-ième.",
+  "legende_titre": "Un nombre d qui engendre l'étage",
+  "lecture": [
+   "Le grand cadre bleu est E = F(d), de degré 3, groupe cyclique à 3 éléments.",
+   "Le cadre gris à l'intérieur est F.",
+   "Le disque orange d est dans E mais hors de F.",
+   "La flèche orange, « puissance 3 », mène au disque vert d³, qui est dans F."
+  ],
+  "a_voir": "d est hors de F, mais son cube est dans F."
+ },
+ {
+  "code": "64-159",
+  "a_dire": "La résolvante de Lagrange combine c avec ses images par η, pondérées par les puissances de z, pour fabriquer un nombre dont la puissance p est dans F ; en degré 2, r₁ − r₂ change de signe mais son carré ne change pas.",
+  "legende_titre": "Un nombre qui change de signe, pas son carré",
+  "lecture": [
+   "Les disques r₁ (bleu) et r₂ (violet) sont les deux racines ; les flèches orange η les échangent.",
+   "La case bleue r₁ − r₂ est la combinaison avant l'échange.",
+   "La case orange r₂ − r₁ est la même combinaison après l'échange : le signe est changé.",
+   "La case verte montre que les carrés sont égaux."
+  ],
+  "a_voir": "Le carré ne bouge pas quand on échange les deux racines."
+ }
+]

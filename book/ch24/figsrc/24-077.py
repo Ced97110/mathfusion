@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+O=(14,8); s=6
+P=lambda x,y:(O[0]+s*x,O[1]+s*y)
+poly(ax,[P(0,0),P(4,0),P(3,2),P(0,5)],'resultat')
+arrow(ax,P(0,0),P(6,0),'fixe',lw=0.6); arrow(ax,P(0,0),P(0,8),'fixe',lw=0.6)
+line(ax,[P(0,5),P(5,0)],'sujet',lw=1.3); line(ax,[P(0,8),P(4,0)],'autre',lw=1.3)
+disc(ax,*P(1,1),1.2,'resultat'); disc(ax,*P(5,0),1.2,'fixe'); disc(ax,*P(0,6),1.2,'fixe')
+text(ax,P(1,1)[0]+2,P(1,1)[1]+2.5,'(1, 1)','resultat','s',ha='left')
+text(ax,P(5,0)[0],P(5,0)[1]+4,'(5, 0)','fixe','s')
+text(ax,P(0,6)[0]-1.5,P(0,6)[1]+3.5,'(0, 6)','fixe','s',ha='right')
+text(ax,69,52,'$x + y \\leq 5$','sujet','m')
+text(ax,69,44,'$2x + y \\leq 8$','autre','m')
+text(ax,69,36,'zone commune','resultat','s')
+text(ax,69,28,'(1, 1) : les deux','resultat','s')
+text(ax,69,22,'(5, 0) : 1re seule','fixe','s'); text(ax,69,16,'(0, 6) : 2e seule','fixe','s')
+save(fig,'24-077')

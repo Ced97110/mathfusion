@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 20, 66, 48, 9, 'fixe', label='$28=4\\times7$')
+arrow(ax, (32, 66), (23, 54), 'varie'); arrow(ax, (56, 66), (65, 54), 'varie')
+box(ax, 3, 41, 40, 13, 'sujet', label='$4$\n$1^2+1^2+1^2+1^2$', size='s')
+box(ax, 45, 41, 40, 13, 'sujet', label='$7$\n$2^2+1^2+1^2+1^2$', size='s')
+arrow(ax, (23, 41), (36, 33), 'varie'); arrow(ax, (65, 41), (52, 33), 'varie')
+box(ax, 10, 23, 68, 10, 'varie', label='identité des quatre carrés', size='s')
+arrow(ax, (44, 23), (44, 16), 'varie')
+box(ax, 10, 4, 68, 12, 'resultat', label='$28=1^2+3^2+3^2+3^2$', size='s')
+save(fig, '78-133')

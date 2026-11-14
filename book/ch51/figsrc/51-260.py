@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role, label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(84)
+text(ax, 44, 78, r'$\alpha=\frac{1}{2}-\frac{1}{2}i$   et   $\beta=1+i$', 'encre', 'm')
+text(ax, 44, 70, r'$\alpha\beta = 1$', 'resultat', 'l')
+f = numberline(ax, 12, 68, 46, 0, 2, 0.5, True, 'fixe', True)
+disc(ax, f(0.5), 46, 2.2, 'limite'); disc(ax, f(2), 46, 2.2, 'autre'); disc(ax, f(1), 46, 2.2, 'resultat')
+text(ax, f(0.5), 54, r'$N(\alpha)$', 'limite', 's')
+text(ax, f(2), 54, r'$N(\beta)$', 'autre', 's')
+text(ax, f(1), 54, 'entiers : 1', 'resultat', 's')
+text(ax, 44, 30, r'$\frac{1}{2}\times 2 = 1$', 'encre', 'm')
+box(ax, 14, 8, 60, 12, 'limite', r'mais $N(\alpha)=\frac{1}{2}\neq 1$', 'm')
+save(fig, '51-260')

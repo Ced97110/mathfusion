@@ -14,7 +14,10 @@ def plain(s):
     return re.sub(r'<[^>]+>','',s).strip()
 def setup(ch, pdf, root='.'):
     C=json.load(open(f'{KIT}/chapters.json')); keys=list(C); p1=C[ch]; p2=C[keys[keys.index(ch)+1]]
-    base=os.path.abspath(os.path.join(root, f'ch{int(ch):02d}' if ch.isdigit() else f'ch{ch}')); os.makedirs(base,exist_ok=True)
+    base=os.path.abspath(os.path.join(root, f'ch{int(ch):02d}' if ch.isdigit() else f'ch{ch}'))
+    # Atomic claim: os.mkdir fails if another session already created this chapter folder.
+    try: os.mkdir(base)
+    except FileExistsError: sys.exit(f'REFUS : {base} existe déjà, chapitre pris par une autre session. Passe au suivant.')
     for f in os.listdir(KIT):
         if f.endswith(('.py','.md','.css')): open(f'{base}/{f}','w').write(open(f'{KIT}/{f}').read().replace('__BASE__',base))
         elif f.endswith('.json'): shutil.copy(f'{KIT}/{f}',base)
@@ -23,7 +26,7 @@ def setup(ch, pdf, root='.'):
     subprocess.run(['pdftohtml','-xml','-i','-f',str(p1),'-l',str(p2),'-q',pdf,f'{base}/ch1'],check=True)
     subprocess.run([sys.executable,'parse.py'],cwd=base,stdout=subprocess.DEVNULL); print(subprocess.run([sys.executable,'fiches.py'],cwd=base,capture_output=True,text=True).stdout)
     F=json.load(open(f'{base}/fiches.json')); n=16; bs=[F[i:i+n] for i in range(0,len(F),n)]
-    if len(bs)>1 and len(bs[-1])<6: bs[-2]+=bs.pop()
+    if len(bs)>1 and len(bs[-1])<6: tail=bs.pop(); bs[-1]=bs[-1]+tail
     open(f'{base}/titles.txt','w').write('\n'.join(f"{f['code']} — {plain(f['title'])}" for f in F))
     for bi,b in enumerate(bs,1):
         out=[]

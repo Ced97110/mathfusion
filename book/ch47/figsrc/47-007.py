@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 68, 'Même paquet au départ, deux à l’arrivée', 'encre', 'm')
+box(ax, 3, 8, 30, 52, 'sujet', fill=False, dash=True); text(ax, 18, 55, 'même paquet : 2', 'sujet', 's')
+box(ax, 8, 36, 20, 9, 'sujet', label='2,4', size='l'); box(ax, 8, 14, 20, 9, 'sujet', label='2,6', size='l')
+box(ax, 54, 35, 31, 22, 'autre', fill=False, dash=True); text(ax, 69.5, 53, 'paquet de 3', 'autre', 's')
+box(ax, 59.5, 38, 20, 9, 'autre', label='3,9', size='l')
+box(ax, 54, 4, 31, 22, 'limite', fill=False, dash=True); text(ax, 69.5, 24, 'paquet de 4', 'limite', 's')
+box(ax, 59.5, 7, 20, 9, 'limite', label='4,1', size='l')
+arrow(ax, (30, 40.5), (52, 42.5), 'varie'); text(ax, 41, 47, '+ 1,5', 'varie', 's')
+arrow(ax, (30, 18.5), (52, 11.5), 'varie'); text(ax, 41, 11, '+ 1,5', 'varie', 's')
+text(ax, 69.5, 30.5, r'$\neq$ paquets différents', 'limite', 's')
+save(fig, '47-007')

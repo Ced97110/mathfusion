@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'$F(r)$ : $F$ plus $r$', 'encre', 'l')
+box(ax, 2, 20, 20, 16, 'fixe', label='fractions\nℚ', size='s')
+text(ax, 26, 28, '+', 'varie', 'xl')
+box(ax, 30, 20, 16, 16, 'varie', label=r'$\sqrt{2}$', size='l')
+arrow(ax, (47, 28), (52, 28), 'varie')
+box(ax, 53, 8, 33, 40, 'sujet')
+text(ax, 69.5, 42, 'ℚ(√2)', 'sujet', 'l')
+text(ax, 69.5, 31, r'$1+3\sqrt{2}$', 'sujet', 'm')
+text(ax, 69.5, 20, 'les 4 opérations', 'sujet', 's')
+text(ax, 24, 10, 'ce qu’on ajoute : √2', 'varie', 's')
+save(fig, '62-039')

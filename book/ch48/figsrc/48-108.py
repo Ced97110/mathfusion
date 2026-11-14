@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 2, 64, 84, 20, 'autre', label=None)
+text(ax, 44, 79, r'$H$ = nombres pairs', 'autre', 's', weight='bold')
+box(ax, 6, 66.5, 34, 8, 'fixe', label=r'$K$ = {0, 6}', size='s')
+text(ax, 64, 70, r'$H$ contient $K$', 'autre', 's')
+text(ax, 12, 56, r'élément $g$', 'sujet', 's'); text(ax, 45, 56, r'paquet $gK$', 'sujet', 's'); text(ax, 76, 56, 'classe', 'resultat', 's')
+box(ax, 2, 38, 20, 10, 'sujet', label=r'$g=1$', size='s'); box(ax, 2, 20, 20, 10, 'sujet', label=r'$g=3$', size='s')
+box(ax, 34, 38, 22, 10, 'sujet', label='{1, 7}', size='s'); box(ax, 34, 20, 22, 10, 'sujet', label='{3, 9}', size='s')
+box(ax, 66, 20, 20, 28, 'resultat', label='impairs', size='s')
+for y in (43, 25):
+    arrow(ax, (22.5, y), (33.5, y), 'varie'); arrow(ax, (56.5, y), (65.5, y), 'varie')
+text(ax, 76, 15, 'surjective', 'resultat', 's')
+box(ax, 2, 2, 60, 10, 'autre', label=r'noyau = pairs $=H$', size='s')
+save(fig, '48-108')

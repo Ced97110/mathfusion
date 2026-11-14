@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 4, 56, 20, 10, 'sujet', label=r'$a_1=2$', size='s')
+box(ax, 30, 56, 20, 10, 'sujet', label=r'$a_0=6$', size='s')
+box(ax, 4, 30, 20, 10, 'autre', label=r'$b_1=3$', size='s')
+box(ax, 30, 30, 20, 10, 'autre', label=r'$b_0=9$', size='s')
+for cx in (14, 40):
+    arrow(ax, (cx, 56), (cx, 41), 'varie', lw=1.1)
+    text(ax, cx + 2.5, 48.5, r'$\times 1{,}5$', 'varie', 's', ha='left')
+text(ax, 68, 61, r'$2y+6=0$', 'sujet', 'm')
+text(ax, 68, 35, r'$3y+9=0$', 'autre', 'm')
+f = numberline(ax, 16, 56, 14, -5, -1, step=1, role='fixe', arrow_right=False)
+disc(ax, f(-3), 14, 1.3, 'resultat')
+text(ax, 36, 4, 'même solution : $-3$', 'resultat', 's')
+save(fig, '70-025')

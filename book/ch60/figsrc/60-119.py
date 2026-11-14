@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 56, r'$p(ra)=r(pa)=0$ avec $p=3$, $r=2$', 'encre', 'm')
+f = numberline(ax, 6, 78, 20, 0, 12, 1, arrow_right=False, every=2)
+disc(ax, f(2), 20, 1.6, 'varie')
+disc(ax, f(6), 20, 1.8, 'sujet')
+disc(ax, f(12), 20, 1.8, 'resultat')
+arrow(ax, (f(2), 24), (f(6) - 1, 24), 'varie', curve=-0.5)
+text(ax, f(4), 38, r'× 3 : $pa=6\in H$', 'varie', 's')
+arrow(ax, (f(6) + 1, 24), (f(12), 24), 'varie', curve=-0.5)
+text(ax, f(9), 38, r'× 2 : $r\times6=12=0$', 'varie', 's')
+text(ax, 44, 5, r'dans $\mathbb{Z}/12$ : 12 = 0', 'resultat', 's')
+save(fig, '60-119')

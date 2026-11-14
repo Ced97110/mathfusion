@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+u, v = (2, 0, 0), (1, 2, 0)
+w = (u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0])
+assert w == (0, 0, 4)
+o = (30, 6); s = 8
+I = lambda p: iso(p[0], p[1], p[2], o, s)
+uv = (u[0] + v[0], u[1] + v[1], 0)
+fig, ax = canvas(56)
+poly(ax, [I((0, 0, 0)), I(u), I(uv), I(v)], 'sujet')
+arrow(ax, I((0, 0, 0)), I(u), 'sujet', lw=1.2)
+arrow(ax, I((0, 0, 0)), I(v), 'autre', lw=1.2)
+arrow(ax, I((0, 0, 0)), I(w), 'resultat', lw=1.8)
+text(ax, I(u)[0] + 3, I(u)[1] - 2, r'$u$', 'sujet')
+text(ax, I(v)[0] - 3, I(v)[1] + 1, r'$v$', 'autre')
+text(ax, I(w)[0], I(w)[1] + 4, r'$u\times v$', 'resultat')
+text(ax, 62, 30, 'parallélogramme', 'sujet', 's')
+text(ax, 62, 25, 'aire = 4', 'sujet', 's')
+text(ax, 62, 44, r'$u\times v=\langle 0, 0, 4\rangle$', 'resultat', 's')
+text(ax, 62, 39, 'longueur 4, vers le haut', 'resultat', 's')
+save(fig, '41-102')

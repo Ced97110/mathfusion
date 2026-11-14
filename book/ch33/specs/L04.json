@@ -1,0 +1,182 @@
+[
+ {
+  "code": "33-049",
+  "a_dire": "Un angle aigu d'un triangle rectangle est entre 0° et 90°.",
+  "legende_titre": "Les angles aigus restent dans le quart haut",
+  "lecture": [
+   "Le triangle bleu a un angle droit de 90°, un angle de 30° au centre du cercle et un angle de 60° en haut.",
+   "Leur somme fait 90°.",
+   "L’angle de 30° s’arrête sur l’arc vert, qui va de 0° à 90° ; le rayon en tirets montre de même 60°."
+  ],
+  "a_voir": "Les angles aigus du triangle tombent sur l’arc vert, entre 0° et 90°."
+ },
+ {
+  "code": "33-050",
+  "a_dire": "La moitié de 90° à 270° donne 150° pour la hauteur 0,5, un angle qu'aucun triangle rectangle n'a.",
+  "legende_titre": "Une autre moitié, un autre angle",
+  "lecture": [
+   "L'arc violet est la moitié gauche, de 90° à 270°.",
+   "Le trait orange en tirets est la hauteur 0,5.",
+   "Il coupe l'arc violet au point rouge, à 150°.",
+   "Le point gris à 30° est sur l'autre moitié."
+  ],
+  "a_voir": "Sur la moitié gauche, la hauteur 0,5 donne 150°, qui n'est pas un angle aigu."
+ },
+ {
+  "code": "33-051",
+  "a_dire": "La moitié haute du cercle coupe chaque ligne verticale en un seul point, donc elle convient pour le cosinus.",
+  "legende_titre": "La moitié haute pour le cosinus",
+  "lecture": [
+   "L'arc bleu est la moitié haute, de 0° à droite à 180° à gauche.",
+   "Le trait orange en tirets est la ligne verticale d'abscisse 0,5.",
+   "Elle coupe l'arc en un seul point vert, à 60°."
+  ],
+  "a_voir": "Une ligne verticale ne coupe l'arc bleu qu'une fois."
+ },
+ {
+  "code": "33-052",
+  "a_dire": "Sur la moitié droite, 90° et −90° ont la même abscisse 0, donc elle ne convient pas pour le cosinus.",
+  "legende_titre": "La moitié droite pose un problème",
+  "lecture": [
+   "L'arc violet est la moitié droite.",
+   "Le trait orange en tirets est la ligne d'abscisse 0.",
+   "Elle touche l'arc en deux points rouges, à 90° et à −90°.",
+   "Le cosinus de chacun vaut 0."
+  ],
+  "a_voir": "Deux angles différents ont le même cosinus 0 sur cette moitié."
+ },
+ {
+  "code": "33-053",
+  "a_dire": "L'arccosinus de x est le seul angle de 0° à 180° dont le cosinus est x.",
+  "legende_titre": "Le seul angle de la moitié haute",
+  "lecture": [
+   "L'arc bleu est la moitié haute, notée [0, π].",
+   "La ligne orange en tirets est l'abscisse 0,5.",
+   "Elle passe par le point vert à 60°, sur l'arc bleu, et par le point rouge à 300°, hors de l'arc."
+  ],
+  "a_voir": "Seul le point à 60° est sur l'arc bleu, donc l'arccosinus de 0,5 est 60°."
+ },
+ {
+  "code": "33-054",
+  "a_dire": "Le signe arccos x se lit « arccosinus de x » et désigne un angle.",
+  "legende_titre": "Lire arccos x",
+  "lecture": [
+   "Le mot arccos en bleu se lit « arccosinus de x ».",
+   "La boîte orange est le nombre reçu, un cosinus.",
+   "La boîte bleue de droite est ce que rend arccos : un angle.",
+   "Les trois boîtes vertes donnent des cas : 0,5 donne 60°, −0,5 donne 120°, 1 donne 0°."
+  ],
+  "a_voir": "Le nom arccos reçoit un cosinus et rend un angle."
+ },
+ {
+  "code": "33-055",
+  "a_dire": "Le signe [0, π] veut dire les angles de 0° à 180°, bouts compris.",
+  "legende_titre": "Écrire de 0° à 180°",
+  "lecture": [
+   "L'arc bleu est la moitié haute.",
+   "Le point de gauche est 0, soit 0°.",
+   "Le point de droite est π, soit 180°.",
+   "Les deux points pleins disent que les bouts sont compris."
+  ],
+  "a_voir": "[0, π] est la même chose que 0° à 180°, bouts compris."
+ },
+ {
+  "code": "33-056",
+  "a_dire": "Le signe x désigne un cosinus, c'est-à-dire l'abscisse d'un point du cercle.",
+  "legende_titre": "x est un cosinus",
+  "lecture": [
+   "Le point P bleu est sur le cercle.",
+   "Le trait orange épais va du centre au pied de P : sa longueur est x, ici 0,5.",
+   "Les repères −1 et 1 montrent les limites de x."
+  ],
+  "a_voir": "x est l'abscisse de P, toujours entre −1 et 1."
+ },
+ {
+  "code": "33-057",
+  "a_dire": "arccos(−0,5) vaut 2π/3, soit 120° : le point est en haut à gauche.",
+  "legende_titre": "Le cas où le cosinus est négatif",
+  "lecture": [
+   "Le point vert P est sur la moitié haute, à gauche.",
+   "Le trait en tirets descend vers l'abscisse −0,5, en orange.",
+   "L'arc orange mesure l'angle, 120°, qui vaut 2π/3."
+  ],
+  "a_voir": "Un cosinus négatif donne un angle entre 90° et 180°."
+ },
+ {
+  "code": "33-058",
+  "a_dire": "L'intervalle [0°, 180°] de l'arccosinus contient exactement les angles d'un triangle quelconque.",
+  "legende_titre": "Les angles d'un triangle",
+  "lecture": [
+   "Le triangle bleu a des angles de 30°, 30° et 120°, soit 180° en tout.",
+   "Sur la droite, le trait bleu épais va de 0° à 180°.",
+   "Les points verts à 30°, 90° et 120° sont dessus.",
+   "Le point rouge à 200° est dehors."
+  ],
+  "a_voir": "Les angles de 0° à 180° sont possibles dans un triangle, pas 200°."
+ },
+ {
+  "code": "33-059",
+  "a_dire": "Une pente donnée définit une droite qui coupe le cercle en deux points opposés ; on garde celui de droite.",
+  "legende_titre": "Une pente, deux points",
+  "lecture": [
+   "La droite orange passe par le centre O et a la pente 1.",
+   "Elle coupe le cercle au point vert à 45°, à droite, et au point gris à 225°, à gauche."
+  ],
+  "a_voir": "On garde le point vert de droite et on écarte le point gris."
+ },
+ {
+  "code": "33-060",
+  "a_dire": "Le haut et le bas du cercle sont exclus : l'abscisse y vaut 0 et la pente demanderait de diviser par 0.",
+  "legende_titre": "Haut et bas exclus",
+  "lecture": [
+   "L'arc bleu est la moitié droite.",
+   "Les deux ronds rouges vides sont le haut et le bas, à 90° et −90°.",
+   "La droite rouge en tirets est verticale, d'abscisse 0 : diviser 1 par 0 n'a pas de résultat."
+  ],
+  "a_voir": "Les deux points rouges ne sont pas sur l'arc : ils n'ont pas de pente."
+ },
+ {
+  "code": "33-061",
+  "a_dire": "L'arctangente de x est le seul angle strictement entre −90° et 90° dont la tangente est x.",
+  "legende_titre": "Le seul angle de l'arc ouvert",
+  "lecture": [
+   "L'arc bleu va de −90° à 90°, avec des ronds vides aux deux bouts.",
+   "La droite orange en tirets est de pente 1.",
+   "Elle touche l'arc au point vert à 45°, et le cercle au point rouge à 225°, hors de l'arc."
+  ],
+  "a_voir": "Seul le point à 45° est sur l'arc : l'arctangente de 1 est 45°."
+ },
+ {
+  "code": "33-062",
+  "a_dire": "Le signe x désigne une pente, c'est-à-dire hauteur divisée par abscisse d'une droite passant par le centre.",
+  "legende_titre": "x est une pente",
+  "lecture": [
+   "Trois droites orange passent par le centre.",
+   "Elles ont les pentes 0,08, 1 et 1 000.",
+   "Les points bleus sont leurs points sur le cercle, à droite."
+  ],
+  "a_voir": "x peut être petit, moyen ou très grand : une pente n'est pas limitée à −1 et 1."
+ },
+ {
+  "code": "33-063",
+  "a_dire": "Le signe arctan x se lit « arctangente de x » et désigne un angle.",
+  "legende_titre": "Lire arctan x",
+  "lecture": [
+   "En haut, arctan en bleu désigne l'angle et x en orange une pente.",
+   "Les deux droites orange ont la pente 1 et la pente −1.",
+   "Les points verts sont à 45° et −45°, sur l'arc bleu."
+  ],
+  "a_voir": "arctan 1 donne 45° et arctan (−1) donne −45°."
+ },
+ {
+  "code": "33-064",
+  "a_dire": "Le signe ]−π/2, π/2[ veut dire les angles de −90° à 90°, sans les bouts.",
+  "legende_titre": "Les crochets tournés vers l'extérieur",
+  "lecture": [
+   "Le trait bleu épais va de −90° à 90°.",
+   "Les deux ronds rouges vides aux bouts disent que −90° et 90° sont dehors.",
+   "Les angles entre eux sont dedans."
+  ],
+  "a_voir": "Les bouts sont exclus : −90° et 90° ne sont pas dans l'intervalle."
+ }
+]

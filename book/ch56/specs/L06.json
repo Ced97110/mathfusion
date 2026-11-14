@@ -1,0 +1,343 @@
+[
+ {
+  "code": "56-150",
+  "a_dire": "Pour le coefficient de x au cube, on prend les couples d'indices de somme 3, on multiplie les coefficients de chaque couple, puis on additionne : 15 + 2 = 17.",
+  "legende_titre": "Un coefficient du produit, couple par couple",
+  "lecture": [
+   "La rangée du haut, en bleu, donne les coefficients de f ; celle du bas, en violet, ceux de g. Les cases grises valent 0.",
+   "Chaque trait relie un indice de f à l'indice de g qui complète la somme à 3 ; les traits orange relient deux nombres non nuls.",
+   "Les deux produits 3 × 5 = 15 et 1 × 2 = 2 s'additionnent en vert : 17."
+  ],
+  "a_voir": "Les traits orange donnent les deux produits à additionner pour obtenir 17."
+ },
+ {
+  "code": "56-151",
+  "a_dire": "Avec p = 2, les coefficients 8, 16 et 20 du produit sont divisibles par 2, mais 17 ne l'est pas, car il vient de 3 × 5 impair plus 1 × 2 pair.",
+  "legende_titre": "Les cinq coefficients du produit, modulo 2",
+  "lecture": [
+   "Les cinq cases donnent les coefficients du produit de 1, x, x au carré, x au cube et x puissance 4.",
+   "Les trois cases grises, 8, 16 et 20, sont sous l'accolade : 2 les divise.",
+   "La case orange 17 est reliée par la flèche à l'explication : 3 × 5 impair plus 1 × 2 pair donne un nombre impair."
+  ],
+  "a_voir": "Le coefficient 17 est impair, donc 2 ne le divise pas."
+ },
+ {
+  "code": "56-152",
+  "a_dire": "Le contenu d'un produit est le produit des contenus : 2 fois 3 vaut 6, et le produit des parties primitives reste de contenu 1.",
+  "legende_titre": "Contenu de f, de g et de leur produit",
+  "lecture": [
+   "Les deux premières lignes, en bleu, donnent le contenu de f (2) et de g (3) ; à droite, en gris, leur partie primitive x + 2.",
+   "La dernière ligne, en vert, donne le contenu du produit : 2 × 3 = 6.",
+   "La partie primitive du produit, en gris, est (x + 2) au carré."
+  ],
+  "a_voir": "Le contenu vert du produit est le produit des deux contenus bleus."
+ },
+ {
+  "code": "56-153",
+  "a_dire": "Pour (2x + 4)(3x + 6) = 6x au carré + 24x + 24, le plus grand diviseur commun des coefficients est 6, soit 2 × 3.",
+  "legende_titre": "Le contenu du produit en 3 lignes de coefficients",
+  "lecture": [
+   "La ligne bleue donne les coefficients de f : 2 et 4, de contenu 2.",
+   "La ligne violette donne ceux de g : 3 et 6, de contenu 3.",
+   "La ligne verte donne ceux du produit : 6, 24 et 24, de contenu 6, égal à 2 × 3."
+  ],
+  "a_voir": "Le contenu 6 de la ligne verte est le produit des contenus 2 et 3."
+ },
+ {
+  "code": "56-154",
+  "a_dire": "Un irréductible de D[x] de degré au moins 1 reste irréductible dans F[x] ; sans cette condition de degré, le polynôme constant 2 cesse d'être irréductible dans Q[x].",
+  "legende_titre": "Le degré protège l'irréductibilité",
+  "lecture": [
+   "La colonne de gauche, en bleu, est Z[x] ; celle de droite est Q[x].",
+   "Pour 2, de degré 0, la case de droite est rouge : 2 devient une unité, car 2 × un demi vaut 1.",
+   "Pour x + 1, de degré 1, la case de droite est verte : il reste irréductible."
+  ],
+  "a_voir": "Seule la case rouge, de degré 0, perd l'irréductibilité."
+ },
+ {
+  "code": "56-155",
+  "a_dire": "Un polynôme à coefficients entiers qui se factorise avec des fractions se factorise déjà avec des entiers : on regroupe les fractions.",
+  "legende_titre": "Des fractions aux entiers",
+  "lecture": [
+   "Le polynôme x au carré moins 1, en bleu, est à coefficients entiers.",
+   "La case orange l'écrit avec des fractions : (2x − 2) fois (un demi x + un demi).",
+   "En regroupant 2 × un demi = 1, on obtient en vert (x − 1)(x + 1), à coefficients entiers."
+  ],
+  "a_voir": "La flèche orange montre que les fractions disparaissent quand on les regroupe."
+ },
+ {
+  "code": "56-156",
+  "a_dire": "Si D est factoriel, D[x] est factoriel ; sans cette hypothèse, avec Z[racine de -5], 6 garde deux factorisations dans D[x].",
+  "legende_titre": "Passer de D à D[x]",
+  "lecture": [
+   "En haut, en vert : si D est factoriel, D[x] l’est aussi.",
+   "En bas, en violet : on prend D = Z[racine de −5], qui n’est pas factoriel, et D[x] ne l’est pas non plus.",
+   "Le texte du bas donne les deux factorisations de 6, qui restent dans D[x]."
+  ],
+  "a_voir": "La ligne verte garde la propriété ; la ligne violette montre le cas où l’hypothèse manque."
+ },
+ {
+  "code": "56-157",
+  "a_dire": "Pour 4x au carré + 6x + 10, on écrit contenu fois partie primitive puis on casse ; l'unicité repose sur le fait que deux facteurs primitifs associés dans F[x] le sont dans D[x].",
+  "legende_titre": "Existence et unicité d'une factorisation",
+  "lecture": [
+   "En haut, le polynôme bleu s’écrit 2 fois 2x² + 3x + 5 : le contenu en orange, la partie primitive en gris.",
+   "En bas, les facteurs primitifs u et v sont associés : u = (a/b)v, avec une fraction réduite.",
+   "On multiplie par b, ce qui donne bu = av, puis on compare les contenus b et a.",
+   "La case verte conclut : a et b sont des unités, donc u et v sont associés dans D[x]."
+  ],
+  "a_voir": "La dernière case verte est l’étape qui rend la factorisation unique."
+ },
+ {
+  "code": "56-158",
+  "a_dire": "Z[x] et, en ajoutant une lettre à chaque étape, Z[x1, ..., xr] et F[x1, ..., xr] sont factoriels.",
+  "legende_titre": "Une lettre de plus, une étape de plus",
+  "lecture": [
+   "La colonne de gauche part de Z, en bleu ; celle de droite part du corps F, en bleu aussi.",
+   "Chaque flèche orange ajoute une lettre : x1, puis x2, puis xr.",
+   "Toutes les cases vertes, ensuite, sont factorielles."
+  ],
+  "a_voir": "Chaque flèche applique le même théorème et garde la case verte factorielle."
+ },
+ {
+  "code": "56-159",
+  "a_dire": "Le critère d'Eisenstein demande trois conditions sur p ; x au cube + 2x + 2 les remplit toutes et est irréductible, tandis que x au carré − 4 échoue à la troisième et se casse.",
+  "legende_titre": "Trois conditions, deux polynômes",
+  "lecture": [
+   "La colonne de gauche teste x au cube + 2x + 2 avec p = 2 ; celle de droite teste x au carré − 4.",
+   "Chaque ligne est une condition ; une case verte la remplit, une case rouge ne la remplit pas.",
+   "La troisième case de droite est rouge, et x au carré − 4 s'écrit (x − 2)(x + 2)."
+  ],
+  "a_voir": "Une seule case rouge suffit pour que le critère ne s'applique plus."
+ },
+ {
+  "code": "56-160",
+  "a_dire": "On réduit modulo p : f barre devient un monôme, donc les facteurs réduits sont des puissances de x, leurs termes constants sont divisibles par p et a0 serait divisible par p au carré, ce qui est faux.",
+  "legende_titre": "La preuve du critère, étape par étape",
+  "lecture": [
+   "La case bleue part de f = gh avec f = x au cube + 2x + 2.",
+   "La case orange réduit modulo 2 : il reste x au cube.",
+   "La case violette est l'étape décisive : les facteurs réduits sont des puissances de x, donc leurs termes constants sont pairs.",
+   "La case rouge conclut : 4 devrait diviser 2, d'où la contradiction."
+  ],
+  "a_voir": "La case violette fait apparaître le carré qui contredit la condition."
+ },
+ {
+  "code": "56-161",
+  "a_dire": "Un rng est un anneau auquel il manque seulement l'élément neutre 1 pour la multiplication.",
+  "legende_titre": "Ce qui manque à un rng",
+  "lecture": [
+   "Chaque ligne est un axiome ; la colonne violette est celle de l'anneau, la colonne bleue celle du rng.",
+   "Les trois premières lignes sont vertes dans les deux colonnes.",
+   "La dernière ligne, le neutre 1, est verte pour l'anneau et rouge pour le rng."
+  ],
+  "a_voir": "La seule case rouge est le neutre 1 de la multiplication."
+ },
+ {
+  "code": "56-162",
+  "a_dire": "Dans les entiers pairs, aucun nombre pair e ne vérifie e fois 2 égale 2, car il faudrait e = 1, qui n'est pas pair.",
+  "legende_titre": "Chercher un 1 parmi les entiers pairs",
+  "lecture": [
+   "La droite graduée va de 0 à 8 ; les disques bleus marquent les entiers pairs.",
+   "Le cercle rouge au-dessus de 1 montre le nombre qu'il faudrait : il n'est pas pair.",
+   "La phrase orange dit que e × 2 = 2 demande e = 1."
+  ],
+  "a_voir": "Le seul candidat, 1, n'est pas un disque bleu."
+ },
+ {
+  "code": "56-163",
+  "a_dire": "Tout rng se plonge dans un anneau : on place ses éléments en (0, a) dans Z × R, et le couple (1, 0) joue le rôle de 1.",
+  "legende_titre": "Plonger les entiers pairs dans un anneau",
+  "lecture": [
+   "À gauche, en bleu, le rng 2Z contient le nombre 4.",
+   "La flèche orange envoie chaque a vers le couple (0, a) de la grande case violette.",
+   "Dans la grande case, la copie de 2Z en bleu contient (0, 4) ; la case verte (1, 0) joue le rôle de 1."
+  ],
+  "a_voir": "Le couple vert (1, 0) est le 1 ajouté en dehors de la copie bleue."
+ },
+ {
+  "code": "56-164",
+  "a_dire": "Le signe Z × R désigne l'ensemble des couples (m, a) avec m entier et a dans R ; la croix n'est pas une multiplication.",
+  "legende_titre": "Lire Z × R",
+  "lecture": [
+   "La case bleue en haut à gauche est Z, les entiers ; la case violette à droite est R, ici les entiers pairs.",
+   "Le couple (m, a) prend m dans Z et a dans R : ici m = 3 en bleu et a = 4 en violet.",
+   "Chaque flèche relie la valeur à l'ensemble dont elle vient."
+  ],
+  "a_voir": "Chaque flèche dit d'où vient un nombre du couple."
+ },
+ {
+  "code": "56-165",
+  "a_dire": "On additionne deux couples coordonnée par coordonnée : (2, 4) + (3, 6) = (5, 10), sans mélanger les deux colonnes.",
+  "legende_titre": "Additionner deux couples",
+  "lecture": [
+   "La colonne bleue contient les premiers nombres, 2 et 3.",
+   "La colonne violette contient les seconds nombres, 4 et 6.",
+   "La ligne verte du bas donne les sommes : 5 pour la première colonne, 10 pour la seconde."
+  ],
+  "a_voir": "Chaque colonne s'additionne seule."
+ },
+ {
+  "code": "56-166",
+  "a_dire": "Le produit (m, a)(n, b) a pour premier nombre mn et pour second nombre la somme de trois termes : mb, na et ab.",
+  "legende_titre": "Multiplier deux couples",
+  "lecture": [
+   "La case bleue donne le premier nombre : 2 × 3 = 6.",
+   "Les deux cases orange sont des additions répétées : 6 + 6 = 12, puis 4 + 4 + 4 = 12.",
+   "La case violette est un produit dans R : 4 × 6 = 24.",
+   "En vert, 12 + 12 + 24 = 48, d'où le couple (6, 48)."
+  ],
+  "a_voir": "Les deux cases orange sont des additions, la violette seule est un produit."
+ },
+ {
+  "code": "56-167",
+  "a_dire": "Le couple (1, 0) est neutre pour la multiplication : (1, 0)(3, 6) = (3, 6), alors que (1, 2)(3, 6) = (3, 24) ne rend pas le couple identique.",
+  "legende_titre": "Tester (1, 0) et (1, 2) comme neutre",
+  "lecture": [
+   "La ligne du haut multiplie (1, 0) par (3, 6) ; le calcul gris donne 0 + 6 + 0.",
+   "Le résultat vert est (3, 6), le même couple.",
+   "La ligne du bas multiplie (1, 2) par (3, 6) ; le calcul gris donne 6 + 6 + 12.",
+   "Le résultat rouge est (3, 24), différent."
+  ],
+  "a_voir": "Seule la ligne du haut rend le couple identique."
+ },
+ {
+  "code": "56-168",
+  "a_dire": "Les couples (0, a) se comportent comme les éléments de R, et leur produit par n'importe quel couple de S reste de la forme (0, ...) : c'est un idéal.",
+  "legende_titre": "La copie de R dans S",
+  "lecture": [
+   "La grande case grise est S = Z × 2Z ; la case bleue est la copie des couples (0, a).",
+   "Dans la copie : (0, 4) + (0, 6) = (0, 10) et (0, 4)(0, 6) = (0, 24), comme dans 2Z.",
+   "Le couple violet (3, 6), pris hors de la copie, multiplié par (0, 4), donne (0, 12 + 24) = (0, 36), en vert.",
+   "La règle (m, c)(0, a) = (0, ma + ca) donne toujours un premier nombre égal à 0 : le produit reste dans la copie, qui est un idéal."
+  ],
+  "a_voir": "La flèche orange part de l’extérieur et retombe dans la case bleue, car le premier nombre du produit est 0."
+ },
+ {
+  "code": "56-169",
+  "a_dire": "L'adjonction d'une unité est une construction d'anneau : on part d'un rng et on ajoute le neutre 1, comme on ajoute x à Z ou i à Z.",
+  "legende_titre": "Ajouter un élément à un ensemble",
+  "lecture": [
+   "Les deux premières lignes grises rappellent les voisins : Z devient Z[x] en ajoutant x, et Z devient Z[i] en ajoutant i.",
+   "La ligne bleue part d'un rng R et ajoute un neutre 1.",
+   "À l'arrivée, on obtient un anneau dont le neutre est (1, 0)."
+  ],
+  "a_voir": "La ligne bleue suit le même schéma que les deux lignes grises."
+ },
+ {
+  "code": "56-170",
+  "a_dire": "Le signe (a, b) a deux sens, PGCD ou idéal engendré ; dans Z ils coïncident, dans Z[x] pour 2 et x ils diffèrent.",
+  "legende_titre": "Deux sens pour le même signe",
+  "lecture": [
+   "La colonne bleue donne le PGCD ; la colonne violette donne l'idéal engendré.",
+   "Pour 6 et 10 dans Z : PGCD 2, idéal des multiples de 2, reliés par le signe égal vert.",
+   "Pour 2 et x dans Z[x] : PGCD 1, mais l'idéal ne contient pas 1, d'où le signe différent rouge."
+  ],
+  "a_voir": "Le signe égal devient différent quand on passe de Z à Z[x]."
+ },
+ {
+  "code": "56-171",
+  "a_dire": "Les unités de Z[i] sont les quatre nombres de taille 1 : 1, −1, i et −i.",
+  "legende_titre": "Les nombres de taille 1",
+  "lecture": [
+   "Chaque point est un nombre m + ni, placé selon m (horizontal) et n (vertical).",
+   "Le cercle vert pointillé passe par les points de taille m au carré + n au carré égale 1.",
+   "Les quatre gros points verts sont 1, −1, i et −i ; les petits points gris ont une autre taille."
+  ],
+  "a_voir": "Il n'y a que quatre points sur le cercle vert."
+ },
+ {
+  "code": "56-172",
+  "a_dire": "Dans Z[i], 5 se casse : (2 + i)(2 − i) = 5, et chaque facteur est de taille 5, donc n'est pas une unité.",
+  "legende_titre": "5 devient un produit",
+  "lecture": [
+   "En haut, dans Z, le nombre 5 est premier.",
+   "La flèche orange passe à Z[i], où 5 se casse en deux cases vertes, 2 + i et 2 − i.",
+   "Chaque facteur a pour taille 4 + 1 = 5, différente de 1.",
+   "Le calcul du bas vérifie : 4 − i au carré = 4 + 1 = 5."
+  ],
+  "a_voir": "Les deux cases vertes multipliées redonnent 5."
+ },
+ {
+  "code": "56-173",
+  "a_dire": "Aucune somme de deux carrés ne vaut 3 : la case 3 est la seule vide parmi 0 à 5, donc 3 reste irréductible dans Z[i].",
+  "legende_titre": "Chercher 3 comme somme de deux carrés",
+  "lecture": [
+   "Les carrés possibles sont 0, 1 et 4.",
+   "Chaque case verte de 0 à 5 montre la somme qui la donne : 0 + 0, 0 + 1, 1 + 1, 0 + 4 et 1 + 4.",
+   "La case rouge 3 n'a aucune somme sous elle ; la flèche rouge le dit."
+  ],
+  "a_voir": "La case 3 est la seule sans somme."
+ },
+ {
+  "code": "56-174",
+  "a_dire": "La même méthode, chercher si une somme de carrés vaut un nombre, ne règle pas l'unicité dans Z[racine de -5], mais donne une réponse complète dans Z[i], qui est factoriel.",
+  "legende_titre": "Même calcul, deux anneaux",
+  "lecture": [
+   "La ligne du haut nomme les deux anneaux : Z[racine de −5] en violet, Z[i] en bleu.",
+   "La case grise du milieu dit que le calcul est le même dans les deux.",
+   "À gauche, le calcul donne 2 et 3 irréductibles, mais 6 a deux factorisations, en rouge.",
+   "À droite, il donne 3 irréductible et 5 qui se casse, et la réponse est complète, en vert."
+  ],
+  "a_voir": "La ligne du bas est rouge pour Z[racine de −5] et verte pour Z[i]."
+ },
+ {
+  "code": "56-175",
+  "a_dire": "Pour diviser 7 + 2i par 2 + i, on multiplie en haut et en bas par le conjugué 2 − i : le bas vaut 5 et le haut 16 − 3i.",
+  "legende_titre": "Chasser i du dénominateur",
+  "lecture": [
+   "La fraction bleue est a sur b, c'est-à-dire 7 + 2i sur 2 + i.",
+   "La fraction orange vaut 1 : c'est le conjugué de b en haut et en bas.",
+   "La fraction verte est le quotient exact : 16 − 3i sur 5.",
+   "Les deux lignes du bas détaillent le haut et le bas du calcul."
+  ],
+  "a_voir": "Le bas devient 5, un nombre entier."
+ },
+ {
+  "code": "56-176",
+  "a_dire": "La division de 7 + 2i par 2 + i donne q = 3 − i et r = i ; le reste est de taille 1, plus petite que la taille 5 de b.",
+  "legende_titre": "Une division avec reste dans Z[i]",
+  "lecture": [
+   "L'égalité du haut donne le résultat : 7 + 2i = (2 + i)(3 − i) + i.",
+   "Le point orange est le quotient exact 3,2 − 0,6i ; le point vert est le quotient arrondi 3 − i, sur un point de la grille.",
+   "Le trait orange est l'erreur d'arrondi : 0,2 et 0,4.",
+   "Le reste est de taille 1, plus petite que 5."
+  ],
+  "a_voir": "Le trait orange est court : l'arrondi reste proche du quotient exact."
+ },
+ {
+  "code": "56-177",
+  "a_dire": "On arrondit chaque partie à l'entier le plus proche : 3,2 devient 3 et −0,6 devient −1, d'où q = 3 − i.",
+  "legende_titre": "Arrondir 3,2 et −0,6",
+  "lecture": [
+   "La droite du haut va de 3 à 4 ; le point orange est 3,2, à 0,2 de 3 et à 0,8 de 4.",
+   "La droite du bas va de −1 à 0 ; le point orange est −0,6, à 0,4 de −1 et à 0,6 de 0.",
+   "À chaque fois, l'entier le plus proche est entouré en vert."
+  ],
+  "a_voir": "L'entier vert est toujours le plus proche du point orange."
+ },
+ {
+  "code": "56-178",
+  "a_dire": "Le reste se calcule sans diviser : on multiplie b par q, ce qui donne 7 + i, puis on soustrait de a pour trouver r = i.",
+  "legende_titre": "Calculer le reste par multiplication",
+  "lecture": [
+   "La première ligne multiplie b = 2 + i par q = 3 − i ; le calcul en dessous donne 7 + i.",
+   "La seconde ligne retire ce produit de a = 7 + 2i : (7 + 2i) − (7 + i) = i.",
+   "La case verte donne le reste r = i.",
+   "Sa taille est 1, celle de b est 5."
+  ],
+  "a_voir": "La case verte est le reste, obtenu par une multiplication et une soustraction, sans aucune division."
+ },
+ {
+  "code": "56-179",
+  "a_dire": "Pour 7 + 2i et 2 + i, le premier reste est i, une unité : le PGCD est une unité et Euclide s'arrête en une étape ; dans Z, pour 6 et 4, il faut deux étapes et le PGCD vaut 2.",
+  "legende_titre": "Euclide s'arrête dès le premier reste",
+  "lecture": [
+   "La ligne bleue, dans Z[i], divise 7 + 2i par 2 + i : reste i, et i fois −i vaut 1.",
+   "Le PGCD, en vert, est une unité.",
+   "La ligne violette, dans Z, divise 6 par 4 puis 4 par 2 : deux étapes.",
+   "Le PGCD gris est 2, qui n'est pas une unité."
+  ],
+  "a_voir": "La ligne du haut compte une étape et finit sur une unité."
+ }
+]

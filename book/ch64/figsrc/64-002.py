@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 3, 84, 58, 'sujet', fill=False, dash=True)
+text(ax, 44, 56, r'$\mathbb{Q}(\sqrt{5})$ : tous les $a+b\sqrt{5}$', 'sujet', 's')
+box(ax, 6, 32, 34, 16, 'fixe')
+text(ax, 23, 43, r'ℚ : $a$ et $b$ fractions', 'fixe', 's')
+text(ax, 23, 36.5, r'$a=3/2$, $b=1/2$', 'fixe', 's')
+box(ax, 52, 34, 20, 12, 'varie', label=r'$\sqrt{5}$', size='m')
+text(ax, 79, 40, 'ajouté', 'varie', 's')
+arrow(ax, (23, 31.5), (36, 21), 'resultat')
+arrow(ax, (62, 33.5), (54, 21), 'resultat')
+box(ax, 12, 8, 64, 12, 'resultat', label=r'$\frac{3}{2}+\frac{1}{2}\sqrt{5}=(3+\sqrt{5})/2$', size='s')
+save(fig, '64-002')

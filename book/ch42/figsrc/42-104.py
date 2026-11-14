@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 8, 50, 72, 12, 'sujet', label=r'théorème : angles $= 180°$', size='m')
+arrow(ax, (62, 49), (62, 38), 'varie'); text(ax, 65, 43.5, 'en 2 lignes', 'varie', 's', ha='left')
+poly(ax, [(6, 6), (34, 6), (6, 38)], 'sujet')
+line(ax, [(6, 9), (9, 9), (9, 6)], 'sujet')
+text(ax, 12, 11, '90°', 'sujet', 's'); text(ax, 27.5, 8.5, '?', 'varie', 'm'); text(ax, 8.5, 30.5, '?', 'varie', 'm')
+box(ax, 40, 26, 46, 10, 'fixe', label=r'$90° + ? + ? = 180°$', size='s')
+arrow(ax, (63, 25), (63, 18), 'varie')
+box(ax, 40, 8, 46, 10, 'resultat', label=r'$? + ? = 90°$', size='m')
+save(fig, '42-104')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 8, 78, 24, 0, 8, 1, arrow_right=True)
+disc(ax, f(7), 24, 2.0, 'resultat')
+text(ax, f(7), 33, r'$z=7$', 'sujet', 'l')
+arrow(ax, (f(7), 31), (f(7), 27), 'sujet', lw=0.9)
+text(ax, 44, 46, r'$n=1$ : $w^1=7$', 'varie')
+brace(ax, f(6.4), f(7.6), 17, 'resultat', label='un seul point', depth=1.6)
+text(ax, 20, 8, r'$w=z$ : aucun pas', 'fixe', 's')
+text(ax, 66, 8, r'$1\theta=\theta$', 'fixe', 's')
+save(fig, '39-131')

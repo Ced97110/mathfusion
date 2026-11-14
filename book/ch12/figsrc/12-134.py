@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ax.add_patch(Rectangle((14, 12), 62, 44, fc=FILL['fixe'], ec='none', zorder=0.5))
+text(ax, 62, 50, 'plan', 'fixe', 'm')
+numberline(ax, 14, 74, 12, 0, 6, labels=False)
+arrow(ax, (14, 12), (14, 57), 'fixe', lw=0.9)
+for i in range(1, 5): ax.plot([12.8, 15.2], [12 + i * 10, 12 + i * 10], color=COL['fixe'], lw=0.8)
+line(ax, [(14, 16), (18, 16), (18, 12)], 'fixe', lw=0.6)
+px, py = 14 + 5 * 10, 12 + 3 * 10
+line(ax, [(px, 12), (px, py)], 'varie', dash=True); line(ax, [(14, py), (px, py)], 'varie', dash=True)
+disc(ax, px, py, 1.6, 'sujet')
+text(ax, px, 8, 'siège 5', 'varie', 's'); text(ax, 14 - 2, py, 'rang 3', 'varie', 's', ha='right')
+text(ax, px - 3, py + 5, 'une place', 'sujet', 's', ha='right')
+text(ax, 62, 4, 'droite 1', 'fixe', 's'); text(ax, 24, 60, 'droite 2', 'fixe', 's')
+save(fig, '12-134')

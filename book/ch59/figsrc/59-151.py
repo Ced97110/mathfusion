@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 73, 'on remplace les entiers par des polynômes', 'varie', 's')
+arrow(ax, (41, 57), (47, 57), 'varie', both=True)
+box(ax, 2, 50, 38, 14, 'fixe', label=r'entiers $\mathbb{Z}$' + '\ndivision d’entiers', size='s')
+box(ax, 48, 50, 38, 14, 'sujet', label=r'polynômes $F[x]$' + '\ndivision de polynômes', size='s')
+arrow(ax, (21, 49.5), (38, 38), 'varie')
+arrow(ax, (67, 49.5), (50, 38), 'varie')
+box(ax, 14, 26, 60, 11, 'varie', label='même méthode : forme normale', size='s')
+arrow(ax, (44, 25.5), (44, 19), 'varie')
+box(ax, 4, 3, 80, 15, 'resultat', label='classification des matrices\ncarrées à similitude près', size='s')
+save(fig, '59-151')

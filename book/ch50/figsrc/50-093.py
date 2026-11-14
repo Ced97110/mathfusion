@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+dy = 8
+text(ax, 8, 74 + dy, r'$\Pi$', 'encre', 'l', weight='bold')
+text(ax, 63, 63 + dy, r'$\Pi$ : tous les 2-Sylow', 'fixe', 's')
+box(ax, 14, 66 + dy, 62, 16, 'fixe', fill=False, dash=True)
+for k, x in zip('ABC', (26, 45, 64)): disc(ax, x, 74 + dy, 4.2, 'sujet', label=r'$P_%s$' % k, size='s')
+arrow(ax, (45, 64 + dy), (45, 54 + dy), 'varie'); text(ax, 62, 56 + dy, r'$P_A$ agit', 'varie', 's')
+box(ax, 14, 28 + dy, 14, 20, 'sujet', fill=False)
+disc(ax, 21, 38 + dy, 4.2, 'sujet', label=r'$P_A$', size='s')
+box(ax, 40, 28 + dy, 40, 20, 'varie', fill=False)
+disc(ax, 52, 38 + dy, 4.2, 'sujet', label=r'$P_B$', size='s'); disc(ax, 68, 38 + dy, 4.2, 'sujet', label=r'$P_C$', size='s')
+text(ax, 21, 23 + dy, r'$2^0 = 1$', 'sujet', 'm'); text(ax, 60, 23 + dy, r'$2^1 = 2$', 'varie', 'm')
+text(ax, 21, 18 + dy, 'puissance de 2', 'sujet', 's'); text(ax, 60, 18 + dy, 'puissance de 2', 'varie', 's')
+arrow(ax, (45, 14 + dy), (45, 8 + dy), 'fixe'); text(ax, 62, 11 + dy, 'additionner', 'fixe', 's')
+text(ax, 45, 3 + dy, r'$n_2 = 1 + 2 = 3$', 'resultat', 'm', weight='bold')
+text(ax, 45, -4 + dy, r'$n_2 \equiv 1$ (mod 2) : un seul 1', 'resultat', 's')
+save(fig, '50-093')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+# haut : les quatre opérations relient deux nombres
+disc(ax, 8, 56, 4, 'fixe', label='3')
+disc(ax, 8, 40, 4, 'fixe', label='1')
+arrow(ax, (12.2, 55), (23.5, 50), 'autre')
+arrow(ax, (12.2, 41), (23.5, 46), 'autre')
+box(ax, 24, 42, 26, 12, 'autre', label=r'$+\ -\ \times\ \div$', size='s')
+arrow(ax, (50.5, 48), (58.5, 48), 'autre')
+box(ax, 59, 42, 26, 12, 'autre', label='3 + 1 = 4', size='s')
+text(ax, 44, 34, 'relie 2 nombres', 'autre', 's')
+# bas : le radical agit sur un seul nombre
+disc(ax, 8, 16, 4, 'fixe', label='5')
+arrow(ax, (12.5, 16), (23.5, 16), 'sujet')
+box(ax, 24, 10, 26, 12, 'sujet', label='√', size='xl')
+arrow(ax, (50.5, 16), (58.5, 16), 'sujet')
+box(ax, 59, 10, 26, 12, 'sujet', label='√5', size='m')
+text(ax, 30, 4, 'agit sur 1 nombre', 'sujet', 's')
+text(ax, 72, 4, 'sort de ℚ', 'varie', 's')
+save(fig, '64-007')

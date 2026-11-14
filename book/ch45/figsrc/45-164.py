@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+def row(y, cap, a, b, op, ra, rb):
+    text(ax, 3, y + 14, cap, 'encre', 'm', ha='left')
+    box(ax, 2, y, 27, 9, ra, label=a); arrow(ax, (29.5, y + 4.5), (41.5, y + 4.5), 'varie')
+    box(ax, 42, y, 16, 9, rb, label=b); arrow(ax, (58.5, y + 4.5), (69.5, y + 4.5), 'varie')
+    text(ax, 64, y + 8, op, 'varie', 's')
+    box(ax, 70, y, 16, 9, 'resultat', label='(0, 2)')
+row(54, 'on groupe les deux premiers', '(1, 1) + (1, 2)', '(0, 0)', '+ (0, 2)', 'sujet', 'fixe')
+row(30, 'on groupe les deux derniers', '(1, 2) + (0, 2)', '(1, 1)', '+ (1, 1)', 'autre', 'fixe')
+text(ax, 78, 49, '=', 'resultat', 'xl')
+text(ax, 44, 21, 'case par case, chaque somme est associative', 'encre', 's', weight='bold')
+text(ax, 44, 14, r'1re case : $(1+1)+0=1+(1+0)=0$', 'sujet', 's')
+text(ax, 44, 7, r'2e case : $(1+2)+2=1+(2+2)=2$', 'autre', 's')
+save(fig, '45-164')

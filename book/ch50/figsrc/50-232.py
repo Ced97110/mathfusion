@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,62,r'$n_2 = 3$ : deux 2-Sylow','encre','m')
+box(ax,6,46,30,9,'sujet',label=r'$H$ : 16')
+box(ax,52,46,30,9,'autre',label=r'$K$ : 16')
+text(ax,44,50.5,r'$H\neq K$','encre','s')
+arrow(ax,(21,46),(39,41.2),'fixe')
+arrow(ax,(67,46),(49,41.2),'fixe')
+box(ax,30,32,28,9,'varie',label=r'$H\cap K$ : ?')
+arrow(ax,(44,32),(44,27.5),'fixe')
+text(ax,44,24.5,r'$|H\cap K|$ divise 16, $<16$','encre','s')
+for i,v in enumerate([1,2,4,8,16]):
+    box(ax,6+16*i,8,12,9,'limite' if v==16 else 'varie',label=str(v))
+text(ax,86,3.5,r'16 exclu : $H\neq K$','limite','s',ha='right')
+save(fig,'50-232')

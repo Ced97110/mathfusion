@@ -1,0 +1,349 @@
+[
+ {
+  "code": "69-031",
+  "a_dire": "Dans un corps ordonné, le carré d’un nombre différent de 0 est positif ; 0 est le seul qui échappe.",
+  "legende_titre": "Trois carrés positifs, et le cas de 0",
+  "lecture": [
+   "Les cases bleues à gauche sont les nombres 3, moins 4 et un demi.",
+   "Les cases vertes à droite sont leurs carrés : 9, 16 et un quart, tous positifs.",
+   "Sous le trait pointillé, la case bleue 0 donne la case rouge 0 : ce carré n’est pas positif."
+  ],
+  "a_voir": "Chaque nombre non nul a un carré positif ; seul 0 donne un résultat qui n’est pas positif."
+ },
+ {
+  "code": "69-032",
+  "a_dire": "La preuve part de a différent de 0 ; si a est dans P, la règle 3 suffit ; si a est dans N, l’égalité a² = (−a)(−a) porte la preuve.",
+  "legende_titre": "Deux cas, une étape décisive",
+  "lecture": [
+   "La case grise du haut est le point de départ : a différent de 0.",
+   "À gauche, le cas a dans P avec a = 2 : la règle 3 donne a × a, soit 2 × 2 = 4 dans P.",
+   "À droite, le cas a dans N avec a = −2 : son opposé −a = 2 est dans P.",
+   "La flèche orange épaisse est l'étape décisive : a² = (−a)(−a) donne 2 × 2 = 4, qui est dans P."
+  ],
+  "a_voir": "Deux cas côte à côte : le cas négatif passe par l'opposé, puis on retrouve un produit de deux positifs."
+ },
+ {
+  "code": "69-033",
+  "a_dire": "Une somme de carrés non nuls est positive, donc elle n’est jamais nulle.",
+  "legende_titre": "Trois carrés mis bout à bout",
+  "lecture": [
+   "Les trois cases bleues ont pour longueurs 1, 4 et 9 : ce sont les carrés de 1, de moins 2 et de 3.",
+   "Le trait gris à gauche marque le point 0.",
+   "L’accolade verte mesure la somme : 1 + 4 + 9 = 14, qui part de 0 vers la droite."
+  ],
+  "a_voir": "Mises bout à bout, des longueurs positives donnent une longueur positive, jamais 0."
+ },
+ {
+  "code": "69-034",
+  "a_dire": "Dans un corps ordonné, moins 1 n’est jamais une somme de carrés ; dans ℂ, moins 1 est le carré de i, donc ℂ n’est pas ordonnable.",
+  "legende_titre": "Où tombe moins 1 ?",
+  "lecture": [
+   "Sur la droite du haut, la bande verte montre où tombent les sommes de carrés : à partir de 0, vers la droite.",
+   "La croix rouge est moins 1 : la bande ne l’atteint pas.",
+   "En bas, dans ℂ, la case violette i donne par la flèche orange la case verte moins 1 : moins 1 est un carré."
+  ],
+  "a_voir": "Les sommes de carrés restent à droite de 0, mais dans ℂ le carré de i vaut moins 1."
+ },
+ {
+  "code": "69-035",
+  "a_dire": "Dans un corps ordonné, additionner 1 à lui-même ne donne jamais 0 ; sur le cadran à 5 positions, cinq fois 1 donne 0.",
+  "legende_titre": "Additionner 1 : droite contre cadran",
+  "lecture": [
+   "À gauche, la droite bleue montre les sauts de 1 : on avance à chaque fois, sans revenir à 0.",
+   "À droite, les cinq cercles rouges sont les positions 0, 1, 2, 3 et 4 du cadran.",
+   "Les flèches orange sont les ajouts de 1 ; après 4, la dernière flèche revient à 0 : cinq fois 1 donne 0."
+  ],
+  "a_voir": "Sur le cadran, la chaîne d’ajouts de 1 boucle sur 0 ; sur la droite, elle ne boucle pas."
+ },
+ {
+  "code": "69-036",
+  "a_dire": "Dans ℤ/5ℤ, supposer que 3 est plus petit que 4 mène à 3 < 3, donc la question n’a pas de réponse cohérente.",
+  "legende_titre": "Une chaîne qui revient à son point de départ",
+  "lecture": [
+   "Les six cases sont 3, 4, 0, 1, 2, 3 : chaque signe < entre deux cases est une inégalité.",
+   "Les flèches orange du bas ajoutent 1 d’une case à la suivante.",
+   "Les deux cases rouges 3, aux extrémités, sont le même nombre ; la flèche rouge du haut donne 3 < 3, ce qui est impossible."
+  ],
+  "a_voir": "En enchaînant les inégalités, on retombe sur 3 < 3."
+ },
+ {
+  "code": "69-037",
+  "a_dire": "La valeur absolue de a est a si a est positif ou nul, et son opposé −a si a est négatif.",
+  "legende_titre": "Choisir entre a et son opposé",
+  "lecture": [
+   "Sur la droite, le cercle orange est moins 3 et le cercle bleu est 3.",
+   "L’arc orange va de moins 3 à son opposé 3.",
+   "La case orange donne la règle pour a plus petit que 0 : |a| = −a.",
+   "La case bleue donne la règle pour a positif ou nul : |a| = a."
+  ],
+  "a_voir": "Un nombre négatif est remplacé par son opposé ; un nombre positif ou nul reste le même."
+ },
+ {
+  "code": "69-038",
+  "a_dire": "La valeur absolue d’un produit est le produit des valeurs absolues : |ab| = |a| × |b|.",
+  "legende_titre": "Le produit et ses deux valeurs absolues",
+  "lecture": [
+   "La ligne du haut donne les nombres : a vaut moins 2, b vaut 3, ab vaut moins 6.",
+   "Le rectangle bleu a pour largeur 2 cases et pour hauteur 3 cases : |a| = 2 et |b| = 3.",
+   "Il contient 6 cases, comme le produit 2 × 3.",
+   "Les deux cases bleues de droite écrivent la même valeur 6, reliée par le signe égal vert."
+  ],
+  "a_voir": "|ab| et |a| × |b| donnent tous deux 6."
+ },
+ {
+  "code": "69-039",
+  "a_dire": "La valeur absolue d’une somme est au plus égale à la somme des valeurs absolues ; l’égalité a lieu si les signes sont les mêmes.",
+  "legende_titre": "Deux nombres de signes opposés",
+  "lecture": [
+   "La flèche bleue part de 0 et va jusqu’à 5 : c’est a.",
+   "La flèche orange repart de 5 et recule de 3 jusqu’à 2 : c’est b égal à moins 3.",
+   "La flèche verte de 0 à 2 est la somme a + b.",
+   "La barre du bas met 5 et 3 bout à bout : leur somme est 8, plus longue que 2."
+  ],
+  "a_voir": "Quand b recule, la somme (2) est plus courte que la somme des longueurs (8)."
+ },
+ {
+  "code": "69-040",
+  "a_dire": "ℚ est ordonné, mais 2 n’y a pas de racine carrée ; ℝ en a une.",
+  "legende_titre": "On s’approche de 2 sans l’atteindre",
+  "lecture": [
+   "La droite montre des carrés : le trait vert pointillé est la cible 2.",
+   "Le cercle bleu est le carré de 1,4, soit 1,96 : il est à gauche de la cible.",
+   "Le cercle violet est le carré de 1,5, soit 2,25 : il est à droite de la cible.",
+   "La case rouge dit qu’aucune fraction n’a pour carré 2 ; la case verte dit que dans ℝ il existe x d’environ 1,414."
+  ],
+  "a_voir": "Les essais encadrent 2 sans le toucher dans ℚ, alors que ℝ contient le nombre cherché."
+ },
+ {
+  "code": "69-041",
+  "a_dire": "La propriété (i) dit que tout positif a une racine carrée ; elle est vraie dans ℝ et fausse dans ℚ.",
+  "legende_titre": "Chercher x tel que x² = 2",
+  "lecture": [
+   "La case bleue est le nombre 2, qui est positif.",
+   "Les flèches orange cherchent un nombre x dont le carré vaut 2.",
+   "La case verte du haut montre que dans ℝ on en trouve un : environ 1,414.",
+   "La case rouge du bas montre que dans ℚ aucune fraction ne convient."
+  ],
+  "a_voir": "Le même nombre positif a une racine carrée dans ℝ et n’en a pas dans ℚ."
+ },
+ {
+  "code": "69-042",
+  "a_dire": "Un polynôme de degré impair a au moins une racine ; un polynôme de degré pair peut n’en avoir aucune, comme x² + 1.",
+  "legende_titre": "Degré 3 et degré 2 face à l’axe",
+  "lecture": [
+   "À gauche, la courbe bleue est celle de x³ − 3x + 1, de degré 3, impair : elle coupe l'axe gris.",
+   "Les cercles verts sont les points où elle le coupe.",
+   "À droite, la courbe violette est celle de x² + 1, de degré 2, pair : elle reste au-dessus de l'axe.",
+   "Le texte vert dit qu'un degré impair a au moins une racine ; le texte rouge dit qu'un degré pair peut n'en avoir aucune."
+  ],
+  "a_voir": "Le degré 3 coupe l'axe ; le degré 2 reste au-dessus."
+ },
+ {
+  "code": "69-043",
+  "a_dire": "Aux deux bouts, un polynôme de degré impair a des signes opposés, donc sa courbe coupe l’axe ; ce n’est pas le cas de x² + 1.",
+  "legende_titre": "Les deux bouts de la courbe",
+  "lecture": [
+   "À gauche, la courbe bleue est x³ − 3x + 1 : en moins 10 elle vaut moins 969, sous l’axe.",
+   "En 10 elle vaut 971, au-dessus de l’axe : les signes sont opposés.",
+   "Le cercle vert est l’endroit où la courbe traverse l’axe.",
+   "À droite, la courbe violette est x² + 1 : elle vaut 101 aux deux bouts, du même côté de l’axe."
+  ],
+  "a_voir": "Des signes opposés aux deux bouts obligent la courbe à traverser l’axe."
+ },
+ {
+  "code": "69-044",
+  "a_dire": "Un corps réel clos est un corps ordonné qui vérifie (i) et (ii) ; le mot réunit ces trois conditions.",
+  "legende_titre": "Trois conditions, un seul nom",
+  "lecture": [
+   "Les trois cases grises sont les conditions : ordonné, (i) racines carrées des positifs, (ii) racine pour tout polynôme de degré impair.",
+   "Les flèches orange les réunissent dans la grande case bleue : R réel clos.",
+   "En vert, ℝ a les trois conditions ; en rouge, ℚ n’a pas (i)."
+  ],
+  "a_voir": "Le nom « réel clos » remplace la liste des trois conditions."
+ },
+ {
+  "code": "69-045",
+  "a_dire": "ℝ vérifie (i) et (ii) sur des exemples ; cela ne prouve pas les propriétés pour tous les éléments et ne dit pas que ℝ est le seul.",
+  "legende_titre": "Deux exemples dans ℝ",
+  "lecture": [
+   "Ligne (i) : la case bleue 2 est positive ; la case verte donne un nombre x d’environ 1,414 dont le carré vaut 2.",
+   "Ligne (ii) : f(0) vaut 1 (case bleue), f(1) vaut moins 1 (case orange).",
+   "La case verte « racine » indique qu’il y a une racine entre 0 et 1.",
+   "Le texte gris rappelle que des exemples ne prouvent pas tout."
+  ],
+  "a_voir": "Chaque propriété est vérifiée sur un seul exemple, ce qui ne les prouve pas toutes."
+ },
+ {
+  "code": "69-046",
+  "a_dire": "Les réels algébriques forment un corps réel clos plus petit que ℝ : il ne contient ni π ni e.",
+  "legende_titre": "Un corps réel clos plus petit que ℝ",
+  "lecture": [
+   "Le grand disque bleu est ℝ, un corps réel clos.",
+   "Le disque vert à l'intérieur est celui des réels algébriques ; il contient racine de 2.",
+   "Les points π et e sont dans ℝ, mais hors du disque vert.",
+   "Le texte du bas dit que les algébriques forment un corps réel clos, plus petit que ℝ."
+  ],
+  "a_voir": "Le disque vert est un corps réel clos plus petit que ℝ, sans π ni e."
+ },
+ {
+  "code": "69-047",
+  "a_dire": "(i) et (ii) sont plus faibles que la complétude de ℝ : plus de corps les vérifient, et tout reste un calcul fini.",
+  "legende_titre": "Des axiomes plus faibles, plus de corps",
+  "lecture": [
+   "Le grand disque bleu regroupe les corps qui vérifient (i) et (ii) : ces propriétés sont plus faibles, donc plus de corps les vérifient.",
+   "Le petit disque violet est ℝ avec sa complétude : il est à l'intérieur, donc plus étroit.",
+   "Le point gris est le corps des réels algébriques : il est dans le grand disque, hors du petit.",
+   "La flèche orange mène à la case verte : avec (i) et (ii), le calcul est fini."
+  ],
+  "a_voir": "Demander moins que la complétude laisse entrer plus de corps, comme les réels algébriques."
+ },
+ {
+  "code": "69-048",
+  "a_dire": "Le signe (F, P) désigne un corps F avec sa partie P des positifs, c’est-à-dire un corps ordonné.",
+  "legende_titre": "Lire le signe (F, P)",
+  "lecture": [
+   "Le grand signe bleu est (F, P).",
+   "La droite grise entière, sous l’accolade grise, est F : ici le corps des nombres réels.",
+   "La partie épaisse bleue, sous l’accolade bleue du haut, est P : les nombres à droite de 0."
+  ],
+  "a_voir": "F est tout le corps ; P est la partie des positifs, à droite de 0."
+ },
+ {
+  "code": "69-049",
+  "a_dire": "Le nom P désigne la collection des positifs et permet d’écrire en une ligne que la somme et le produit de deux éléments de P sont dans P.",
+  "legende_titre": "Le nom P et la règle qu’il raccourcit",
+  "lecture": [
+   "Le grand disque bleu est P ; les cercles a et b sont deux de ses éléments.",
+   "Les flèches orange donnent a + b et ab, qui restent dans le disque : ils sont dans P.",
+   "Le cercle gris 0 est hors du disque : 0 n’est pas dans P.",
+   "La ligne du bas écrit toute la règle avec le nom P."
+  ],
+  "a_voir": "Somme et produit de deux éléments de P restent dans P ; 0 est dehors."
+ },
+ {
+  "code": "69-050",
+  "a_dire": "Dire que a est dans N, c’est dire que son opposé −a est dans P ; par exemple moins 2 est dans N parce que 2 est dans P.",
+  "legende_titre": "Lire « a est dans N »",
+  "lecture": [
+   "Sur la droite, le trait bleu à gauche de 0 est N et le trait gris à droite est P.",
+   "Le cercle bleu est a égal à moins 2.",
+   "L’arc orange va de moins 2 à son opposé 2, le cercle gris dans P.",
+   "La ligne du bas donne la lecture : moins 2 est dans N car 2 est dans P."
+  ],
+  "a_voir": "Pour savoir si un nombre est dans N, on regarde son opposé dans P."
+ },
+ {
+  "code": "69-051",
+  "a_dire": "Le signe a > b s’écrit pour dire que la différence a − b est dans P ; par exemple 7 > 4 car 3 est dans P.",
+  "legende_titre": "Écrire vite que 7 est plus grand que 4",
+  "lecture": [
+   "Le cercle violet est b égal à 4 et le cercle bleu est a égal à 7.",
+   "L’arc orange mesure l’écart de 4 à 7 : 7 − 4 = 3.",
+   "Le trait vert du haut a la même longueur 3 et part de 0 : 3 est dans P.",
+   "Le grand « 7 > 4 » est l’écriture courte de tout cela."
+  ],
+  "a_voir": "7 > 4 veut dire que l’écart 3 est un positif."
+ },
+ {
+  "code": "69-052",
+  "a_dire": "Le signe |a| se lit « valeur absolue de a » : les deux barres forment un seul signe autour du nombre a.",
+  "legende_titre": "Lire le signe |a|",
+  "lecture": [
+   "Les deux barres orange forment ensemble un seul signe.",
+   "La lettre bleue a est le nombre dont on prend la valeur absolue.",
+   "À gauche, |−3| = 3 ; à droite, |3| = 3 : le résultat est positif dans les deux cas."
+  ],
+  "a_voir": "Les barres entourent un nombre et le résultat n’est jamais négatif."
+ },
+ {
+  "code": "69-053",
+  "a_dire": "La lettre R désigne n’importe quel corps réel clos, ce qui évite de répéter les trois conditions ; elle est différente de ℝ.",
+  "legende_titre": "Une lettre pour trois conditions",
+  "lecture": [
+   "Les trois cases grises sont les conditions : ordonné, racines des positifs, racine pour un degré impair.",
+   "Les flèches orange les réunissent dans la case bleue R.",
+   "Les flèches bleues vont vers deux exemples verts de R : ℝ et les réels algébriques.",
+   "Le texte du bas dit que R est n'importe quel corps réel clos, pas seulement ℝ."
+  ],
+  "a_voir": "R représente tous les corps réels clos ; ℝ n'est qu'un exemple."
+ },
+ {
+  "code": "69-054",
+  "a_dire": "Le symbole R(i) désigne le corps des nombres a + bi, avec a et b dans R et i² = −1.",
+  "legende_titre": "Les nombres a + bi",
+  "lecture": [
+   "L’axe horizontal gris porte les valeurs de a, prises dans R.",
+   "L’axe vertical gris porte les valeurs de b, le nombre qui va devant i.",
+   "Le cercle bleu est le nombre 3 + 2i : a vaut 3 et b vaut 2, repérés par les pointillés.",
+   "La case orange rappelle la règle de i : i² = −1."
+  ],
+  "a_voir": "Chaque nombre de R(i) est repéré par un couple (a, b), ici (3, 2)."
+ },
+ {
+  "code": "69-055",
+  "a_dire": "Le symbole f′ désigne le polynôme obtenu à partir de f par une règle de calcul sur les coefficients.",
+  "legende_titre": "Passer de f à f′ terme par terme",
+  "lecture": [
+   "La ligne du haut écrit les trois termes de f : x³, moins 3x et plus 1.",
+   "Les flèches orange appliquent la règle sur les coefficients, terme par terme.",
+   "La ligne du bas donne les termes de f′ : 3x² et moins 3 ; le terme 1 donne 0."
+  ],
+  "a_voir": "f′ se calcule en transformant chaque terme de f par une règle."
+ },
+ {
+  "code": "69-056",
+  "a_dire": "Le signe [a, b] désigne les nombres compris entre a et b, a et b compris.",
+  "legende_titre": "Lire [1, 2]",
+  "lecture": [
+   "Le trait bleu épais est l’intervalle, de 1 à 2 sur la droite.",
+   "Les deux cercles bleus pleins sont les bornes a égal à 1 et b égal à 2.",
+   "Les petits traits verticaux sont les crochets fermés : ils disent que les bornes sont comprises."
+  ],
+  "a_voir": "Les bornes 1 et 2 font partie de l’intervalle."
+ },
+ {
+  "code": "69-057",
+  "a_dire": "Le signe (a, b) désigne les nombres entre a et b sans les bornes ; cela change le comptage par rapport à [a, b].",
+  "legende_titre": "Bornes comprises ou non",
+  "lecture": [
+   "Les cercles verts sur la droite sont les racines moins 1 et 1.",
+   "Le trait bleu du bas est [−1, 2] : ses cercles sont pleins, les bornes sont comprises, il contient 2 racines.",
+   "Le trait violet du haut est (−1, 2) : ses cercles sont vides, les bornes sont exclues, il contient 1 racine."
+  ],
+  "a_voir": "Le cercle vide en moins 1 laisse cette racine dehors."
+ },
+ {
+  "code": "69-058",
+  "a_dire": "Le signe f₀, …, f_s nomme les polynômes de la suite de Sturm ; le petit nombre est un numéro de position.",
+  "legende_titre": "Nommer les polynômes de la suite",
+  "lecture": [
+   "Les quatre cases bleues sont f₀, f₁, f₂ et f₃, dans l’ordre des flèches orange.",
+   "Sous chaque case, un mot dit sa place : départ, dérivée, puis deux divisions.",
+   "L’accolade du haut regroupe toute la liste : s vaut 3, le numéro du dernier."
+  ],
+  "a_voir": "Le numéro en bas est une position dans la liste, et s est le dernier numéro."
+ },
+ {
+  "code": "69-059",
+  "a_dire": "V(c) est le nombre de changements de signe de la liste en c ; la différence V(a) − V(b) l’écrit en un signe.",
+  "legende_titre": "Compter les changements de signe",
+  "lecture": [
+   "La ligne du haut est la liste des signes en moins 2 : moins, plus, moins, plus.",
+   "Chaque flèche orange double marque un changement de signe : il y en a 3, donc V = 3.",
+   "La ligne du bas est la liste en 2 : plus, plus, plus, plus. Il n’y a aucune flèche : V = 0.",
+   "La ligne verte écrit la différence : V(−2) − V(2) = 3 − 0 = 3."
+  ],
+  "a_voir": "V compte les flèches orange : 3 en moins 2, 0 en 2."
+ },
+ {
+  "code": "69-060",
+  "a_dire": "Le signe μ désigne une borne positive telle que toutes les racines sont dans l’intervalle (−μ, μ).",
+  "legende_titre": "Une borne qui enferme les racines",
+  "lecture": [
+   "Le trait bleu épais est l’intervalle (−μ, μ), de moins 5 à 5.",
+   "Les deux cercles vides aux bouts sont −μ et μ : les bornes sont exclues.",
+   "Les trois cercles verts sur la droite grise sont les trois racines du polynôme ; elles sont toutes à l’intérieur."
+  ],
+  "a_voir": "Les racines sont toutes entre moins μ et μ."
+ }
+]

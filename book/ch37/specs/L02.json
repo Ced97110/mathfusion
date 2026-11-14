@@ -1,0 +1,276 @@
+[
+ {
+  "code": "37-025",
+  "a_dire": "On peut prendre n'importe lequel des trois coins : l'aire est la même, environ 5 271.",
+  "legende_titre": "Un triangle, trois coins, une aire",
+  "lecture": [
+   "Les trois dessins montrent le même triangle.",
+   "Dans chaque dessin, les deux côtés en bleu épais forment le coin marqué par l'arc orange.",
+   "Sous chaque dessin, le calcul prend la moitié du produit de ces deux côtés fois le sinus du coin.",
+   "Les trois résultats en vert sont égaux : environ 5 271."
+  ],
+  "a_voir": "Chaque coin donne la même aire, avec ses deux côtés et son angle."
+ },
+ {
+  "code": "37-026",
+  "a_dire": "La règle : la moitié du produit de deux côtés, fois le sinus de l'angle compris entre eux.",
+  "legende_titre": "Une règle en quatre actions",
+  "lecture": [
+   "Le triangle montre deux côtés bleus, 110 et 120, et l'angle de 53° entre eux en orange.",
+   "Les quatre cases, de haut en bas, sont les quatre actions : choisir deux côtés, multiplier, multiplier par le sinus, prendre la moitié.",
+   "La dernière case, verte, donne environ 5 271.",
+   "La ligne verte du bas rappelle qu'une autre paire de côtés donne la même aire."
+  ],
+  "a_voir": "Les actions se suivent dans l'ordre et se font avec deux côtés et l'angle entre eux."
+ },
+ {
+  "code": "37-027",
+  "a_dire": "Avec un côté et ses deux angles, on trouve le troisième angle, puis l'aire : environ 5 271.",
+  "legende_titre": "Un côté et deux angles donnent l'aire",
+  "lecture": [
+   "Le côté du bas, en bleu, mesure 110.",
+   "Les deux arcs orange sont les angles à ses bouts : 68,48° et 53°.",
+   "L'arc vert en haut est l'angle en face, 58,52°, trouvé par 180 moins les deux autres.",
+   "Les lignes du bas posent le calcul de l'aire, qui donne environ 5 271."
+  ],
+  "a_voir": "Le troisième angle se déduit des deux autres avant de calculer l'aire."
+ },
+ {
+  "code": "37-028",
+  "a_dire": "Le cercle circonscrit passe par les trois coins ; son centre O est le puits, son rayon R vaut environ 30,24 m.",
+  "legende_titre": "Un cercle qui passe par les trois coins",
+  "lecture": [
+   "Le cercle bleu passe par les trois coins A, B et C du champ.",
+   "Le point bleu O au milieu est le centre : le puits.",
+   "Les trois segments orange vont de O à chaque coin et ont la même longueur R, environ 30,24 m."
+  ],
+  "a_voir": "Les trois coins sont sur le cercle, à la même distance R du centre O."
+ },
+ {
+  "code": "37-029",
+  "a_dire": "Si OB = OC, alors N est le milieu de BC ; l'étape clé compare BN² et CN².",
+  "legende_titre": "D'où part la preuve, où elle arrive",
+  "lecture": [
+   "Le triangle bleu et le triangle violet ont chacun un angle droit en N.",
+   "Les côtés OB et OC valent 5, et ON vaut 4.",
+   "La case orange donne BN² = 25 − 16 = 9, comme CN²; donc BN et CN valent 3.",
+   "La case verte conclut : N est le milieu de BC."
+  ],
+  "a_voir": "Les deux triangles donnent le même carré, donc deux parts égales de 3."
+ },
+ {
+  "code": "37-030",
+  "a_dire": "La médiatrice de BC est la perpendiculaire qui passe par le milieu de BC.",
+  "legende_titre": "La perpendiculaire au milieu du segment",
+  "lecture": [
+   "Le trait noir épais est le segment BC, de 6. Les accolades montrent deux moitiés de 3 de part et d’autre de N.",
+   "La droite bleue est perpendiculaire à BC (petit carré) et passe par le milieu N : c’est la médiatrice. Son point P est à 5 de B et à 5 de C (traits verts).",
+   "La droite grise est perpendiculaire à BC en B. Son point Q est à 4 de B et à 7,21 de C."
+  ],
+  "a_voir": "La médiatrice est la perpendiculaire qui passe par le milieu de BC."
+ },
+ {
+  "code": "37-031",
+  "a_dire": "Un point de la médiatrice est à la même distance de B et de C ; ici 3,61 des deux côtés.",
+  "legende_titre": "Même distance aux deux bouts",
+  "lecture": [
+   "Le triangle bleu et le triangle violet ont le côté ON commun, de 2.",
+   "Chaque triangle a un côté de 3 : BN et CN sont égaux.",
+   "Sous les triangles, les deux calculs donnent 9 + 4 = 13 : OB et OC valent environ 3,61."
+  ],
+  "a_voir": "Deux calculs identiques donnent deux distances égales."
+ },
+ {
+  "code": "37-032",
+  "a_dire": "Avec trois points alignés, les trois médiatrices sont parallèles et ne se coupent pas ; dans un triangle, elles se coupent en un point.",
+  "legende_titre": "Quand les trois droites se rencontrent",
+  "lecture": [
+   "En haut, les points 0, 2 et 6 sont sur une droite. Les trois droites orange tombent en 1, 3 et 4 et restent parallèles.",
+   "En bas, les trois droites orange partent des milieux d'un vrai triangle.",
+   "Elles se rejoignent en un point vert, O."
+  ],
+  "a_voir": "Alignés : pas de point commun ; triangle : un point commun."
+ },
+ {
+  "code": "37-033",
+  "a_dire": "Le sinus de A vaut a/2 divisé par R, lu dans le triangle rectangle BON ; l'angle A et l'angle BON sont égaux.",
+  "legende_titre": "Deux angles égaux, un triangle rectangle",
+  "lecture": [
+   "Le cercle passe par A, B et C, et O est son centre.",
+   "Les deux arcs orange marquent l'angle A au bord et l'angle BON au centre : ils sont égaux.",
+   "Le triangle bleu BON est rectangle en N : BN vaut 20, OB est le rayon.",
+   "La ligne du bas écrit sin A = 20 ÷ 30,24, environ 0,6614."
+  ],
+  "a_voir": "L'angle A du bord se retrouve dans le triangle rectangle du centre."
+ },
+ {
+  "code": "37-034",
+  "a_dire": "Un angle inscrit a son sommet sur le cercle ; un angle au centre a son sommet au centre.",
+  "legende_titre": "Où est le sommet de l'angle",
+  "lecture": [
+   "À gauche, l'angle bleu a son sommet A sur le cercle : 41,41°.",
+   "À droite, l'angle violet a son sommet au centre O : 82,82°.",
+   "L'arc gris épais BC est le même dans les deux cercles."
+  ],
+  "a_voir": "Le même arc BC, mais deux sommets à deux endroits, et deux angles différents."
+ },
+ {
+  "code": "37-035",
+  "a_dire": "Un angle au centre a son sommet au centre du cercle ; ici BOC vaut 82,82°.",
+  "legende_titre": "L'angle dont le sommet est le centre",
+  "lecture": [
+   "Le point violet O est le centre du cercle.",
+   "Les deux rayons violets OB et OC forment l'angle, marqué par l'arc orange : 82,82°.",
+   "L'arc violet épais BC est la partie du cercle entre B et C."
+  ],
+  "a_voir": "Le sommet de l'angle est au centre du cercle."
+ },
+ {
+  "code": "37-036",
+  "a_dire": "L'angle au centre vaut le double de l'angle inscrit : 82,82° = 2 × 41,41°.",
+  "legende_titre": "Un angle deux fois plus grand",
+  "lecture": [
+   "Dans le cercle, l'angle bleu en A est inscrit et l'angle violet en O est au centre.",
+   "La case bleue donne l'angle inscrit : 41,41°.",
+   "Les deux cases violettes, de même longueur que la bleue, forment l'angle au centre.",
+   "La flèche orange dit : fois deux."
+  ],
+  "a_voir": "L'angle au centre est fait de deux fois l'angle inscrit."
+ },
+ {
+  "code": "37-037",
+  "a_dire": "Deux côtés égaux donnent deux angles égaux à la base ; avec des côtés inégaux, les angles diffèrent.",
+  "legende_titre": "Côtés égaux, angles égaux",
+  "lecture": [
+   "À gauche, le triangle bleu a deux côtés de 5 (marqués par deux traits) et une base de 6.",
+   "Ses deux angles de base orange valent chacun 53,13°.",
+   "À droite, le triangle rouge a des côtés 3, 4 et 5 : ses angles de base valent 53,13° et 36,87°.",
+   "Le trait gris pointillé à gauche est l'axe de symétrie."
+  ],
+  "a_voir": "Les angles de base sont égaux seulement quand les deux côtés sont égaux."
+ },
+ {
+  "code": "37-038",
+  "a_dire": "La preuve va des deux rayons égaux à BOC = 2A en cinq étapes ; la troisième étape porte le poids.",
+  "legende_titre": "Cinq étapes pour BOC = 2A",
+  "lecture": [
+   "Le cercle montre le diamètre AD, les rayons OB et OC, l’angle x en bleu (en A et en B) et l’angle y en violet en A.",
+   "Au centre : AOB (gris), BOD (orange, 2x) et COD (violet, 2y). L’arc vert va de B à C : c’est BOC.",
+   "Les cinq cases donnent les étapes dans l’ordre, avec les mêmes couleurs que le dessin.",
+   "La case orange, la troisième, est l’étape clé : AOB et BOD font 180° sur la droite AD."
+  ],
+  "a_voir": "La troisième étape relie les angles AOB et BOD sur la droite AD."
+ },
+ {
+  "code": "37-039",
+  "a_dire": "La droite ON coupe l'angle BOC en deux moitiés égales de 41,41°, et cette moitié vaut l'angle A.",
+  "legende_titre": "L'axe de symétrie du triangle BOC",
+  "lecture": [
+   "Le triangle bleu BOC a deux côtés égaux OB et OC (deux petits traits).",
+   "La droite pointillée ON le coupe en deux angles BON et NOC (arcs orange), de 41,41° chacun.",
+   "À droite, l’angle violet A a le même arc orange et vaut aussi 41,41° : BON = A."
+  ],
+  "a_voir": "La moitié de l’angle au centre, BON, est égale à l’angle A."
+ },
+ {
+  "code": "37-040",
+  "a_dire": "En trois actions, sin A = (a/2)/R mène à a ÷ sin A = 2R ; ici 40 ÷ 0,6614 ≈ 60,47.",
+  "legende_titre": "De sin A à 2R sur le champ",
+  "lecture": [
+   "Le triangle bleu BON est rectangle en N : BN vaut 20, OB (orange) vaut 30,24.",
+   "La première case donne sin A = 20 ÷ 30,24, environ 0,6614.",
+   "La deuxième case écrit le même rapport avec a et 2R.",
+   "La case verte divise 40 par 0,6614 et trouve environ 60,47, soit 2R."
+  ],
+  "a_voir": "Les trois cases se suivent et finissent sur 2R."
+ },
+ {
+  "code": "37-041",
+  "a_dire": "Les trois côtés divisés par le sinus de l'angle en face donnent la même valeur, environ 60,47.",
+  "legende_titre": "Le même nombre pour les trois côtés",
+  "lecture": [
+   "Le triangle bleu est dans son cercle ; ses côtés sont a, b et c.",
+   "Les trois cases vertes ont la même longueur : une par côté, avec son calcul.",
+   "L'accolade verte dit que les trois valent environ 60,47, soit 2R."
+  ],
+  "a_voir": "Trois calculs différents, une seule longueur."
+ },
+ {
+  "code": "37-042",
+  "a_dire": "Les trois fractions sont égales, car chacune vaut le même nombre 2R, environ 60,47.",
+  "legende_titre": "Trois fractions, un même nombre",
+  "lecture": [
+   "La ligne du haut écrit la loi : trois fractions et 2R.",
+   "La ligne du milieu met les nombres du champ dans chaque fraction.",
+   "La ligne du bas donne le résultat de chaque colonne : environ 60,47, aussi pour 2R."
+  ],
+  "a_voir": "Chaque colonne arrive à 60,47."
+ },
+ {
+  "code": "37-043",
+  "a_dire": "Dans le triangle 3, 4, 5, les trois rapports valent 5, et 5 est le diamètre du cercle.",
+  "legende_titre": "Le cas 3, 4, 5",
+  "lecture": [
+   "Le triangle bleu a pour côtés 3, 4 et 5 ; son angle droit est en haut, sur le cercle.",
+   "Le côté de 5 (trait vert épais) passe par le centre : c'est le diamètre 2R.",
+   "Les trois cases vertes donnent chacune 5."
+  ],
+  "a_voir": "Le côté de 5 est le diamètre du cercle."
+ },
+ {
+  "code": "37-044",
+  "a_dire": "O est le point à la même distance, environ 30,24 m, des trois coins : le puits.",
+  "legende_titre": "Le puits à égale distance des coins",
+  "lecture": [
+   "Le triangle gris est le champ, avec ses coins A, B et C.",
+   "Le point bleu O est le puits.",
+   "Les trois tuyaux orange vont de O aux coins ; leurs deux petits traits disent qu'ils sont égaux : 30,24 m."
+  ],
+  "a_voir": "Les trois tuyaux ont la même longueur."
+ },
+ {
+  "code": "37-045",
+  "a_dire": "R est la longueur du rayon : du puits à un coin, environ 30,24 m.",
+  "legende_titre": "La longueur d'un tuyau",
+  "lecture": [
+   "Le cercle bleu en tirets passe par les trois coins du champ gris.",
+   "Le point O est le centre.",
+   "Le tuyau orange épais va de O à un coin : sa longueur est R, environ 30,24 m."
+  ],
+  "a_voir": "R est la longueur du segment du centre au cercle."
+ },
+ {
+  "code": "37-046",
+  "a_dire": "N est le milieu de BC : BN et NC valent chacun la moitié de a, soit 20.",
+  "legende_titre": "Le milieu du côté de 40",
+  "lecture": [
+   "Le trait bleu épais est le côté BC, de 40.",
+   "Le point orange N le coupe en deux parts de 20, montrées par les deux accolades.",
+   "Le trait gris vertical va de O à N et fait un angle droit avec BC."
+  ],
+  "a_voir": "N partage BC en deux parts égales."
+ },
+ {
+  "code": "37-047",
+  "a_dire": "2R est le diamètre : le double du rayon R, environ 60,47 m.",
+  "legende_titre": "Le diamètre est deux rayons",
+  "lecture": [
+   "Le trait vert épais passe par le centre O et touche le cercle aux deux bouts.",
+   "Chaque moitié est un rayon R, en orange.",
+   "L'accolade verte mesure le trait entier : 2R, environ 60,47 m."
+  ],
+  "a_voir": "Le diamètre fait deux rayons."
+ },
+ {
+  "code": "37-048",
+  "a_dire": "a/sin A est le côté divisé par le sinus de l'angle en face ; ici 40 ÷ 0,6614 ≈ 60,47, qui est 2R.",
+  "legende_titre": "Un côté divisé par le sinus en face",
+  "lecture": [
+   "Dans le triangle, le côté bleu a est en face de l'angle A (arc orange).",
+   "La case bleue donne a = 40.",
+   "La flèche orange dit : divisé par 0,6614, le sinus de A.",
+   "La case verte donne le résultat, 60,47, plus long que 40 : c'est 2R."
+  ],
+  "a_voir": "Diviser par un nombre plus petit que 1 donne une longueur plus grande."
+ }
+]

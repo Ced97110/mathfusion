@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 66, r'Bézout : $1\times3+(-1)\times2=1$', 'encre', 'm')
+text(ax, 44, 57, r'$a=1\times(pa)-1\times(ra)$ : $2=6-4$', 'sujet', 'm')
+f = numberline(ax, 8, 62, 34, 0, 6, 1, arrow_right=False)
+disc(ax, f(0), 34, 1.7, 'sujet')
+disc(ax, f(6), 34, 1.7, 'sujet')
+disc(ax, f(2), 34, 1.7, 'varie')
+disc(ax, f(4), 34, 1.7, 'fixe')
+for v, lab, r in [(0, 'H', 'sujet'), (2, 'a', 'varie'), (4, 'ra', 'fixe'), (6, 'H', 'sujet')]:
+    text(ax, f(v), 26, lab, r, 's')
+arrow(ax, (f(2), 38), (f(6) - 1, 38), 'limite', curve=-0.4)
+text(ax, f(4), 22, r'si $ra=4$ valait 0 : $a=6$', 'limite', 's')
+text(ax, 44, 11, '6 est dans H, 2 non : faux', 'limite', 's')
+save(fig, '60-120')

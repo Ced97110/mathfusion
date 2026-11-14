@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'quaternions : $ij=k$ et $ji=-k$', 'encre', 'm')
+text(ax, 44, 52, r'si $R$ n’est pas commutatif,', 'limite', 's')
+text(ax, 44, 47.5, r'$R[x]$ ne l’est pas non plus', 'limite', 's')
+def line3(y, a, b, c, ra, rb):
+    box(ax, 2, y, 24, 9, ra, label=a, size='s')
+    text(ax, 29, y + 4.5, '×', 'encre', 'l')
+    box(ax, 32, y, 24, 9, rb, label=b, size='s')
+    text(ax, 59, y + 4.5, '=', 'encre', 'l')
+    box(ax, 62, y, 24, 9, 'varie', label=c, size='s')
+line3(30, r'$(i,0,\ldots)$', r'$(j,0,\ldots)$', r'$(k,0,\ldots)$', 'sujet', 'autre')
+line3(12, r'$(j,0,\ldots)$', r'$(i,0,\ldots)$', r'$(-k,0,\ldots)$', 'autre', 'sujet')
+text(ax, 74, 25.5, '≠', 'limite', 'xl')
+save(fig, '54-095')

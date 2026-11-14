@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 52, 34, 14, 'sujet', label=r'$\mathbb{Z}$' + '\nentiers')
+text(ax, 44, 59, r'$\times$', 'fixe', 'xl')
+box(ax, 52, 52, 34, 14, 'autre', label=r'$R=2\mathbb{Z}$' + '\npairs')
+box(ax, 8, 26, 22, 12, 'sujet', label=r'$m=3$', size='m')
+box(ax, 58, 26, 22, 12, 'autre', label=r'$a=4$', size='m')
+text(ax, 44, 32, r'$(m,a)$', 'encre', 'm')
+arrow(ax, (19, 38.5), (19, 51.5), 'sujet')
+arrow(ax, (69, 38.5), (69, 51.5), 'autre')
+text(ax, 44, 12, 'la croix n’est pas\nune multiplication', 'fixe', 'm')
+save(fig, '56-164')

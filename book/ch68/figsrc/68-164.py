@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(52)
+box(ax, 2, 22, 20, 9, 'fixe', label='110')
+text(ax, 12, 36, r'reçu $r$', 'encre', 's')
+box(ax, 30, 16, 29, 20, 'fixe', fill=False, dash=True)
+text(ax, 44.5, 40, 'classe {110, 001}', 'encre', 's')
+box(ax, 32, 22, 11, 9, 'fixe', label='110', size='s')
+box(ax, 46, 22, 11, 9, 'sujet', label='001', size='s')
+text(ax, 51.5, 18.5, 'chef', 'sujet', 's')
+box(ax, 66, 22, 20, 9, 'resultat', label='111')
+text(ax, 76, 36, 'mot du code', 'resultat', 's')
+arrow(ax, (22.5, 26.5), (29.5, 26.5), 'fixe')
+arrow(ax, (59.5, 26.5), (65.5, 26.5), 'varie')
+text(ax, 44, 6, '110 + 001 = 111', 'resultat', 'm')
+save(fig, '68-164')

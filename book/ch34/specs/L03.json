@@ -1,0 +1,193 @@
+[
+ {
+  "code": "34-033",
+  "a_dire": "Une formule du sinus qui donne plus de 1 sort du cercle de rayon 1 : elle est rejetée.",
+  "legende_titre": "Une hauteur que le cercle ne contient pas",
+  "lecture": [
+   "Le grand disque bleu est le cercle de rayon 1 ; le trait pointillé gris marque la hauteur 1.",
+   "La barre orange empile 0,5 et 0,71 : elle monte jusqu'à 1,21.",
+   "La partie rouge de la barre est ce qui dépasse la hauteur 1.",
+   "La barre verte, 0,97, reste sous le trait."
+  ],
+  "a_voir": "La barre orange dépasse le trait de hauteur 1, la barre verte non."
+ },
+ {
+  "code": "34-034",
+  "a_dire": "Les sinus seuls ne suffisent pas : deux couples d'angles de mêmes sinus ont des sommes de sinus différents, il faut aussi les cosinus.",
+  "legende_titre": "Mêmes sinus, sommes différentes",
+  "lecture": [
+   "En haut, les angles 30° et 30° donnent une somme de 60°, de sinus 0,866.",
+   "En bas, les angles 150° et 30° donnent une somme de 180°, de sinus 0.",
+   "Dans les deux lignes, la ligne bleue dit que les sinus valent 0,5 et 0,5.",
+   "La ligne orange donne le cosinus : positif en haut, négatif en bas. La phrase du bas dit qu'il faut les cosinus."
+  ],
+  "a_voir": "Les deux lignes ont les mêmes sinus et pourtant des résultats différents."
+ },
+ {
+  "code": "34-035",
+  "a_dire": "La formule part de quatre nombres connus, sin A, cos A, sin B, cos B, et donne le nombre sin(A + B).",
+  "legende_titre": "Quatre nombres connus, un nombre cherché",
+  "lecture": [
+   "Les deux cases bleues sont le sinus et le cosinus du premier angle : 5 sur 13 et 12 sur 13.",
+   "Les deux cases orange sont le sinus et le cosinus du second angle : 3 sur 5 et 4 sur 5.",
+   "La case grise est la somme de deux produits faite avec ces quatre nombres.",
+   "La case verte est le résultat : 56 sur 65."
+  ],
+  "a_voir": "Quatre nombres entrent, une somme de deux produits en sort un seul."
+ },
+ {
+  "code": "34-036",
+  "a_dire": "On calcule l'aire du même grand triangle de deux façons : par deux morceaux, et par la base 13 avec la hauteur RH inconnue.",
+  "legende_titre": "Deux calculs pour une même aire",
+  "lecture": [
+   "À gauche, le triangle est coupé en un morceau bleu d'aire 30 et un morceau orange d'aire 54 ; leur somme est 84.",
+   "À droite, c'est le même triangle posé sur sa base QP de 13.",
+   "Le trait orange en pointillés est la hauteur RH, qu'on ne connaît pas.",
+   "L'aire s'écrit alors avec cette hauteur inconnue."
+  ],
+  "a_voir": "Le triangle de gauche et celui de droite ont la même aire, 84."
+ },
+ {
+  "code": "34-037",
+  "a_dire": "La preuve part de deux triangles accolés, passe par l'égalité des deux calculs d'aire, puis divise pour isoler sin(A + B).",
+  "legende_titre": "De la figure au sinus, en trois étapes",
+  "lecture": [
+   "En haut, deux triangles accolés : le bleu a les côtés x et r, l'orange a les côtés y et p, et h est commun.",
+   "La case orange est l'étape décisive : seule elle contient à la fois le sinus et les côtés.",
+   "La case verte est l'arrivée : on divise 168 par 195 et on trouve 56 sur 65."
+  ],
+  "a_voir": "L'égalité de la case orange est la seule étape qui contient le sinus cherché."
+ },
+ {
+  "code": "34-038",
+  "a_dire": "Première façon : le grand triangle est la réunion de deux triangles de même hauteur ; on additionne leurs aires.",
+  "legende_titre": "Deux aires qui s'additionnent",
+  "lecture": [
+   "Le triangle bleu a pour base x = 5 et pour hauteur h = 12 : son aire est 30.",
+   "Le triangle orange a pour base y = 9 et la même hauteur : son aire est 54.",
+   "À droite, les deux calculs d'aire sont écrits avec les mêmes couleurs.",
+   "Le texte vert donne la somme : 84."
+  ],
+  "a_voir": "Chaque morceau a sa base et sa hauteur connues, donc on n'a pas à découper davantage."
+ },
+ {
+  "code": "34-039",
+  "a_dire": "Seconde façon : avec la base QP = r, l'aire contient la hauteur RH = p sin(A + B), qui est le sinus cherché.",
+  "legende_titre": "Une aire qui contient l'inconnue",
+  "lecture": [
+   "Le trait bleu épais est la base QP de longueur 13.",
+   "Le pointillé orange est la hauteur RH, issue du sommet R.",
+   "Sous la figure, la hauteur s'écrit p fois le sinus de A + B.",
+   "L'aire s'écrit alors avec cette hauteur : elle ne donne pas de nombre seule."
+  ],
+  "a_voir": "La hauteur RH porte le sinus cherché, donc cette aire reste inconnue."
+ },
+ {
+  "code": "34-040",
+  "a_dire": "Les deux calculs mesurent la même surface, donc leurs résultats sont égaux ; en multipliant par 2 on obtient r p sin(A + B) = xh + yh.",
+  "legende_titre": "Une surface, une seule aire",
+  "lecture": [
+   "À gauche, le triangle en deux morceaux a pour aire 84 en additionnant les deux morceaux.",
+   "À droite, le même triangle posé sur sa base a pour aire à peu près 84.",
+   "Le signe égal vert relie ces deux écritures de la même aire.",
+   "La case verte donne l'égalité après multiplication par 2."
+  ],
+  "a_voir": "Les deux triangles sont le même ; leurs aires sont donc égales."
+ },
+ {
+  "code": "34-041",
+  "a_dire": "On divise les deux côtés de l'égalité par rp, ce qui est permis car rp est plus grand que 0 ; il reste sin(A + B) seul.",
+  "legende_titre": "Diviser les deux côtés par le même nombre",
+  "lecture": [
+   "La case orange en haut à gauche contient le sinus multiplié par 195.",
+   "La case bleue en haut à droite contient 168.",
+   "Les flèches orange divisent chaque côté par 195.",
+   "Les cases vertes montrent le sinus seul, égal à 168 sur 195, soit 56 sur 65."
+  ],
+  "a_voir": "Le diviseur 195 est plus grand que 0, donc la division est permise."
+ },
+ {
+  "code": "34-042",
+  "a_dire": "On écrit xh/(rp) comme x/r fois h/p : x va avec r dans le triangle bleu, h va avec p dans le triangle orange.",
+  "legende_titre": "Chaque côté avec son hypoténuse",
+  "lecture": [
+   "Le triangle bleu a ses côtés x et r en trait épais : leur fraction vaut 5 sur 13, un sinus.",
+   "Le triangle orange a ses côtés h et p en trait épais : leur fraction vaut 12 sur 15, un cosinus.",
+   "Le signe fois relie les deux fractions : c'est un seul terme, coupé en deux.",
+   "Le produit des deux est 4 sur 13."
+  ],
+  "a_voir": "Chaque fraction a son haut et son bas dans le même triangle."
+ },
+ {
+  "code": "34-043",
+  "a_dire": "Chaque fraction de côtés a un nom : x/r est sin A, h/r est cos A, y/p est sin B et h/p est cos B.",
+  "legende_titre": "Quatre fractions, quatre noms",
+  "lecture": [
+   "La figure à gauche porte les côtés x, y, h, r, p et les angles A et B.",
+   "Les deux cases bleues donnent le sinus et le cosinus de A.",
+   "Les deux cases orange donnent le sinus et le cosinus de B.",
+   "Chaque case écrit le nom, la fraction de lettres et la fraction de nombres."
+  ],
+  "a_voir": "Chaque fraction de côtés se remplace par un sinus ou un cosinus."
+ },
+ {
+  "code": "34-044",
+  "a_dire": "Chaque terme de la formule est l'aire d'un des triangles divisée par l'aire de référence ½ r p.",
+  "legende_titre": "Chaque terme est une part de la même aire",
+  "lecture": [
+   "La barre représente l'aire de référence 97,5 ; la partie bleue vaut 30, la partie orange 54, la partie grise 13,5.",
+   "Sous le bleu : 30 divisé par 97,5 donne 0,3077, c'est sin A cos B.",
+   "Sous l'orange : 54 divisé par 97,5 donne 0,5538, c'est cos A sin B.",
+   "La case verte additionne les deux parts : 0,8615, soit sin(A + B)."
+  ],
+  "a_voir": "Les deux termes sont deux parts de la même barre ; leur somme est sin(A + B)."
+ },
+ {
+  "code": "34-045",
+  "a_dire": "Le terme sin A cos B est l'aire du triangle bleu divisée par ½ r p : les deux calculs donnent 0,3077.",
+  "legende_titre": "Un terme, deux chemins, un même nombre",
+  "lecture": [
+   "Le triangle bleu de la figure a une aire de 30.",
+   "La case du haut divise cette aire par l'aire de référence : 0,3077.",
+   "La case du bas multiplie le sinus de A, 0,3846, par le cosinus de B, 0,8.",
+   "Le signe égal vert dit que les deux cases donnent le même nombre."
+  ],
+  "a_voir": "Le produit des deux cases du bas égale le rapport d'aires de la case du haut."
+ },
+ {
+  "code": "34-046",
+  "a_dire": "Le signe plus vient de ce que les deux triangles sont côte à côte, sans recouvrement : leurs aires s'ajoutent.",
+  "legende_titre": "Côte à côte, les aires s'ajoutent",
+  "lecture": [
+   "En haut, le triangle bleu d'aire 30 touche le triangle orange d'aire 54 sans le recouvrir : l'aire totale est 30 + 54 = 84.",
+   "En bas, les deux barres se recouvrent sur une zone grise de 10.",
+   "Avec ce recouvrement, il faudrait retrancher 10 : 74.",
+   "Ici il n'y a pas de recouvrement, donc le signe est +."
+  ],
+  "a_voir": "Sans zone commune, on ajoute les aires ; avec une zone commune, il faudrait retrancher."
+ },
+ {
+  "code": "34-047",
+  "a_dire": "Chaque produit mélange A et B parce que h est un côté commun, lu dans le triangle bleu ou dans le triangle orange.",
+  "legende_titre": "Le côté commun h relie les deux angles",
+  "lecture": [
+   "Le trait noir épais est h, le côté commun aux deux triangles.",
+   "La case bleue lit x sur r dans le triangle bleu : c'est sin A.",
+   "La case orange lit h sur p dans le triangle orange : c'est cos B.",
+   "La case verte montre le produit sin A cos B, qui mêle les deux angles."
+  ],
+  "a_voir": "Le produit prend une fraction dans chaque triangle grâce à h."
+ },
+ {
+  "code": "34-048",
+  "a_dire": "cos(A + B) vaut cos A cos B moins sin A sin B : avec 30° et 30°, le signe moins donne 0,5 et le signe plus donnerait 1.",
+  "legende_titre": "Le signe moins donne le bon cosinus",
+  "lecture": [
+   "La case bleue est le produit des cosinus : 0,75 sur la droite graduée.",
+   "La flèche orange retire le produit des sinus, 0,25, et arrive à 0,5.",
+   "Le point vert à 0,5 est le cosinus de 60°.",
+   "La flèche rouge ajouterait 0,25 et arriverait à 1 : c'est faux."
+  ],
+  "a_voir": "Le signe moins arrive à 0,5, le signe plus arrive à 1."
+ }
+]

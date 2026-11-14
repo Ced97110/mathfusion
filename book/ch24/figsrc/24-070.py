@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+text(ax,44,73,'un couple supposé exister','encre','s')
+box(ax,26,58,36,10,'fixe',label=r'total $x + y$')
+box(ax,4,38,34,10,'sujet',label='vaut 5')
+box(ax,50,38,34,10,'autre',label='vaut 8')
+arrow(ax,(34,58),(21,48),'sujet'); arrow(ax,(54,58),(67,48),'autre')
+arrow(ax,(38,43),(50,43),'fixe',both=True)
+box(ax,16,22,56,10,'limite',label='5 = 8 : faux')
+arrow(ax,(21,38),(34,32),'varie'); arrow(ax,(67,38),(54,32),'varie')
+arrow(ax,(44,22),(44,15),'varie')
+box(ax,10,4,68,11,'resultat',label='aucun couple : incompatible')
+save(fig,'24-070')

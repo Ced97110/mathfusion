@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 4, 6, 28, 12, 'fixe', label=r'$\mathbb{Q}$')
+box(ax, 4, 30, 28, 12, 'sujet', label=r'$\mathbb{Q}(r)$')
+box(ax, 4, 54, 28, 12, 'resultat', label=r'$E$')
+arrow(ax, (18, 18.5), (18, 29.5), 'varie')
+arrow(ax, (18, 42.5), (18, 53.5), 'varie')
+text(ax, 38, 24, r'$[\mathbb{Q}(r):\mathbb{Q}]=d=3$', 'sujet', 's', ha='left')
+text(ax, 38, 48, r'$[E:\mathbb{Q}(r)]=6/3=2$', 'resultat', 's', ha='left')
+text(ax, 38, 12, r'$[E:\mathbb{Q}]=6$', 'fixe', 's', ha='left')
+text(ax, 38, 62, r'chaque $\varphi_i$ : 2 prolongements', 'resultat', 's', ha='left')
+save(fig, '63-093')

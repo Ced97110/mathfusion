@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$\sigma$ : $\sqrt{2}\mapsto-\sqrt{2}$, $E=\mathbb{Q}(\sqrt{2})$', 'fixe', 's')
+box(ax, 2, 32, 28, 14, 'sujet', label=r'$G=\{1,\sigma\}$')
+box(ax, 54, 32, 32, 14, 'resultat', label=r'$\mathrm{Inv}\,G=\mathbb{Q}$')
+arrow(ax, (30.5, 39), (53.5, 39), 'varie')
+text(ax, 42, 43.5, 'fixes', 'varie', 's')
+box(ax, 2, 8, 28, 14, 'sujet', label=r'$G=\{1\}$')
+box(ax, 54, 8, 32, 14, 'resultat', label=r'$\mathrm{Inv}\,G=E$')
+arrow(ax, (30.5, 15), (53.5, 15), 'varie')
+text(ax, 42, 19.5, 'fixes', 'varie', 's')
+save(fig, '63-070')

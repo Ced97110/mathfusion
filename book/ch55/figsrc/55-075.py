@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 20, 72, 'chez Jacobson', 'autre', 's'); text(ax, 68, 72, 'dans ce livre', 'sujet', 's')
+box(ax, 4, 48, 32, 16, 'autre', label=r'$p_k$', size='xl')
+box(ax, 52, 48, 32, 16, 'sujet', label=r'$e_k$', size='xl')
+text(ax, 44, 56, '=', 'resultat', 'xl', weight='bold')
+box(ax, 4, 6, 80, 22, 'resultat')
+text(ax, 44, 21, 'un seul polynôme', 'resultat', 'm', weight='bold')
+text(ax, 44, 12, r'produits de $k$ variables', 'resultat', 's')
+arrow(ax, (20, 48), (30, 28), 'resultat'); arrow(ax, (68, 48), (58, 28), 'resultat')
+save(fig, '55-075')

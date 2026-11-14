@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 78, 'm entre 1 et 10', 'resultat', 'm')
+box(ax, 4, 60, 38, 11, 'sujet', label=r'$3{,}2\times10^{4}$', size='m')
+box(ax, 46, 60, 38, 11, 'sujet', label=r'$8{,}7\times10^{3}$', size='m')
+text(ax, 44, 53, r'exposants $4>3$ : juste', 'resultat', 'm')
+text(ax, 44, 40, 'm hors de 1 à 10', 'limite', 'm')
+box(ax, 4, 22, 38, 11, 'limite', label=r'$80\times10^{3}$', size='m')
+box(ax, 46, 22, 38, 11, 'limite', label=r'$2\times10^{4}$', size='m')
+text(ax, 44, 15, r'exposants $3<4$ : faux', 'limite', 'm')
+text(ax, 44, 6, 'en vrai : 80 000 > 20 000', 'limite', 's')
+save(fig, '14-075')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 3, 52, 36, 9, 'varie', label=r'$x=t+1$', size='m')
+box(ax, 3, 38, 36, 9, 'varie', label=r'$y=t^2$', size='m')
+text(ax, 21, 66, 'deux équations avec t', 'varie', 's')
+arrow(ax, (21, 38), (21, 29), 'varie')
+text(ax, 25, 33.5, r'$t=x-1$', 'varie', 's', ha='left')
+box(ax, 3, 18, 36, 10, 'resultat', label=r'$y=(x-1)^2$', size='m')
+text(ax, 21, 12, 't a disparu', 'resultat', 's')
+text(ax, 21, 5, 'méthode générale :\nle résultant (chap. 70)', 'encre', 's')
+ox, oy, u = 56, 14, 4.2
+P = lambda x, y: (ox + u * x, oy + u * y)
+arrow(ax, (ox - 3, oy), (ox + 21, oy), 'fixe', lw=0.6)
+arrow(ax, (ox, oy - 2), (ox, oy + 42), 'fixe', lw=0.6)
+pts = [P(1 + t / 10, (t / 10) ** 2) for t in range(-10, 31)]
+line(ax, [P(1 + s / 10, (s / 10) ** 2) for s in range(-10, 31)], 'sujet', lw=1.4)
+disc(ax, *P(3, 4), 1.3, 'resultat')
+text(ax, P(3, 4)[0] - 2, P(3, 4)[1] + 4, 't = 2 : (3 ; 4)', 'resultat', 's', ha='right')
+text(ax, 70, 62, 'la courbe sans t', 'sujet', 's')
+save(fig, '40-125')

@@ -1,0 +1,182 @@
+[
+ {
+  "code": "22-049",
+  "a_dire": "On écrit √x sans répéter la condition : on lit en même temps que x est positif ou nul.",
+  "legende_titre": "Écrire sans répéter",
+  "lecture": [
+   "La colonne grise répète « avec x ≥ 0 » à chaque ligne.",
+   "La colonne bleue écrit seulement √x à chaque ligne.",
+   "La case verte garde la condition une seule fois, comme accord de lecture."
+  ],
+  "a_voir": "Les trois lignes bleues sont plus courtes, et la condition reste supposée."
+ },
+ {
+  "code": "22-050",
+  "a_dire": "Face à √(x²), la réponse qui vient d'abord est x, parce que la racine semble défaire le carré.",
+  "legende_titre": "Une réponse tentante",
+  "lecture": [
+   "Les cases bleues montrent x, puis x au carré.",
+   "La case en pointillés est la réponse tentante x.",
+   "La case verte dit que pour x = 5 elle marche."
+  ],
+  "a_voir": "La réponse x paraît naturelle ; un seul cas qui marche ne suffit pas."
+ },
+ {
+  "code": "22-051",
+  "a_dire": "Pour x = 5, on prend le carré 25, puis la racine 5 : on retrouve x.",
+  "legende_titre": "Un test qui réussit",
+  "lecture": [
+   "La case bleue de gauche est x = 5.",
+   "La case bleue du milieu est son carré, 25.",
+   "La case verte est la racine de 25 : c'est 5, donc x."
+  ],
+  "a_voir": "Pour 5, la chaîne ramène bien au point de départ."
+ },
+ {
+  "code": "22-052",
+  "a_dire": "Pour x = −5, le carré est 25 et la racine est 5, pas −5 : un seul cas suffit pour rejeter x.",
+  "legende_titre": "Un cas qui casse",
+  "lecture": [
+   "La case bleue de gauche est −5, puis son carré 25.",
+   "La case rouge est le résultat 5, qui n'est pas −5.",
+   "Sur la droite graduée, −5 est en bleu et 5 en rouge."
+  ],
+  "a_voir": "Le résultat tombe de l'autre côté de 0 : la réponse x est fausse ici."
+ },
+ {
+  "code": "22-053",
+  "a_dire": "La racine de x² est la distance de x à 0, notée |x| : positive ou nulle.",
+  "legende_titre": "La distance à zéro",
+  "lecture": [
+   "La formule verte du haut dit : la racine de x au carré est la distance de x à 0.",
+   "Les deux points bleus sont −5 et 5 sur la droite ; chaque flèche bleue relie un x à son point.",
+   "Chaque accolade orange compte 5 pas jusqu'à 0.",
+   "Le texte vert donne cette distance : 5 pour les deux."
+  ],
+  "a_voir": "−5 et 5 sont à la même distance de 0, donc la racine vaut 5 pour les deux."
+ },
+ {
+  "code": "22-054",
+  "a_dire": "√(x²) = |x| : on élève au carré, puis on prend la racine, et on obtient la valeur absolue de x.",
+  "legende_titre": "La formule en deux gestes",
+  "lecture": [
+   "La première ligne part de −5, la seconde de 5.",
+   "Les flèches orange sont le carré, puis la racine.",
+   "Les deux cases vertes donnent 5, la valeur absolue."
+  ],
+  "a_voir": "Les deux départs mènent au même résultat : le signe est perdu au carré."
+ },
+ {
+  "code": "22-055",
+  "a_dire": "√(x²) = x est vrai sous l'hypothèse x ≥ 0 ; sans elle, il faut écrire |x|.",
+  "legende_titre": "Une égalité sous hypothèse",
+  "lecture": [
+   "La case verte donne √(x²) = x, valable si x ≥ 0.",
+   "La case en pointillés gris donne √(x²) = ",
+   "x",
+   ", sans hypothèse.",
+   "La droite graduée place 0 entre les deux cas."
+  ],
+  "a_voir": "L'hypothèse x ≥ 0 dit dans quel domaine on écrit x au lieu de |x|."
+ },
+ {
+  "code": "22-056",
+  "a_dire": "Pour x positif ou nul, la racine de x⁶ est x³ : l'exposant 6 est divisé par 2.",
+  "legende_titre": "Exposant pair, exposant moitié",
+  "lecture": [
+   "Les six cases bleues sont les six facteurs x de x⁶.",
+   "Les deux accolades orange coupent ces facteurs en deux groupes égaux.",
+   "Chaque groupe est x³ : c'est la racine."
+  ],
+  "a_voir": "Six facteurs coupés en deux groupes de trois donnent x³."
+ },
+ {
+  "code": "22-057",
+  "a_dire": "Pour √(x⁶), √(x⁸), √(a¹⁰) et √(25m²n⁶), on divise chaque exposant par 2 et on traite le nombre à part.",
+  "legende_titre": "Quatre racines, une règle",
+  "lecture": [
+   "Chaque case bleue est une racine à calculer.",
+   "Chaque case verte est le résultat.",
+   "Dans la dernière ligne, 25 donne 5, m² donne m et n⁶ donne n³."
+  ],
+  "a_voir": "Chaque exposant pair est divisé par 2 dans le résultat."
+ },
+ {
+  "code": "22-058",
+  "a_dire": "√(9 × 4) et √9 × √4 donnent le même nombre, 6 : deux calculs différents, même résultat.",
+  "legende_titre": "Deux chemins, un même nombre",
+  "lecture": [
+   "La colonne bleue multiplie d'abord, 9 × 4 = 36, puis prend la racine.",
+   "La colonne violette prend les racines, 3 et 2, puis les multiplie.",
+   "Les deux cases vertes valent 6."
+  ],
+  "a_voir": "Les deux colonnes finissent sur 6."
+ },
+ {
+  "code": "22-059",
+  "a_dire": "√(xy) = √x √y quand x ≥ 0 et y ≥ 0 : les deux nombres ont pour carré xy.",
+  "legende_titre": "Racine d'un produit",
+  "lecture": [
+   "La case bleue est √(xy) ; la case violette est √x √y.",
+   "En dessous, le cas x = 9, y = 4 donne 6 des deux côtés.",
+   "Le texte vert dit que les deux ont le même carré, xy."
+  ],
+  "a_voir": "Deux nombres positifs qui ont le même carré sont égaux."
+ },
+ {
+  "code": "22-060",
+  "a_dire": "√(x/y) = √x/√y quand y ≠ 0 ; pour y = 0 les deux écritures n'ont pas de sens.",
+  "legende_titre": "Racine d'un quotient",
+  "lecture": [
+   "La case bleue est √(x/y) ; la case violette est √x/√y.",
+   "Avec x = 9 et y = 4, les deux cases vertes valent 1,5.",
+   "La case rouge montre y = 0 : 9/0 n'existe pas."
+  ],
+  "a_voir": "La condition y ≠ 0 est nécessaire pour écrire la propriété."
+ },
+ {
+  "code": "22-061",
+  "a_dire": "On prend le rectangle de côtés √x et √y ; son aire élevée au carré vaut xy, donc c'est √(xy).",
+  "legende_titre": "Preuve par le rectangle",
+  "lecture": [
+   "Le rectangle bleu a pour côtés 3 et 2 : six carreaux, aire 6.",
+   "La case verte donne cette aire, 6.",
+   "La case orange la met au carré : 36.",
+   "La case bleue du bas dit 36 = 9 × 4."
+  ],
+  "a_voir": "Le carré de l'aire est x fois y : l'aire est donc √(xy)."
+ },
+ {
+  "code": "22-062",
+  "a_dire": "La preuve du quotient suit celle du produit, en remplaçant la multiplication par la division.",
+  "legende_titre": "Même preuve avec une division",
+  "lecture": [
+   "La ligne violette est la preuve du produit : 6, son carré 36, puis 9 × 4.",
+   "La ligne bleue est celle du quotient : 1,5, son carré 2,25, puis 9/4.",
+   "Les deux lignes ont la même forme."
+  ],
+  "a_voir": "Les deux lignes suivent les mêmes trois étapes."
+ },
+ {
+  "code": "22-063",
+  "a_dire": "La racine d'une somme n'est pas la somme des racines : 5 n'est pas 7.",
+  "legende_titre": "Le piège de la somme",
+  "lecture": [
+   "La barre bleue mesure la racine de 16 + 9 : 5.",
+   "Les deux barres violettes mesurent 4, puis 3 : elles vont jusqu'à 7.",
+   "Le 5 rouge et le 7 montrent qu'ils sont différents."
+  ],
+  "a_voir": "Les barres s'arrêtent à 5 et à 7 sur la droite graduée."
+ },
+ {
+  "code": "22-064",
+  "a_dire": "√(16 + 9) = 5 mais √16 + √9 = 7 : l'ordre des calculs change le résultat.",
+  "legende_titre": "Additionner avant ou après",
+  "lecture": [
+   "La colonne bleue additionne 16 et 9, puis prend la racine : 5.",
+   "La colonne violette prend les racines, 4 et 3, puis additionne : 7.",
+   "Le signe rouge dit que les deux résultats sont différents."
+  ],
+  "a_voir": "L'addition faite avant ou après la racine donne 5 ou 7."
+ }
+]

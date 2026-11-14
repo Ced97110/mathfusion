@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 10, 84, 50, 'fixe', r=1.2)
+text(ax, 6, 55.5, 'entiers', 'fixe', 'm', ha='left')
+box(ax, 34, 14, 50, 36, 'sujet', r=1.2)
+text(ax, 59, 45, 'naturels', 'sujet', 'm')
+text(ax, 59, 30, '1, 2, 3, …', 'sujet', 'l')
+disc(ax, 17, 40, 5, 'varie', label='0', size='l')
+text(ax, 17, 29, '0 est un entier', 'resultat', 's')
+text(ax, 17, 24, '0 n’est pas naturel', 'limite', 's')
+save(fig, '12-071')

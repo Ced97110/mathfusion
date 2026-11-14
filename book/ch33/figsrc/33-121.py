@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(60)
+u = 5; A = (8, 16); B = (A[0]+6*u, A[1]); C = (B[0], A[1]+5*u)
+poly(ax, [A, B, C], 'sujet')
+line(ax, [(B[0]-2.5, B[1]), (B[0]-2.5, B[1]+2.5), (B[0], B[1]+2.5)], 'sujet')
+line(ax, [A, B], 'varie', lw=2.2); line(ax, [B, C], 'autre', lw=2.2)
+t = math.atan(5/6)
+line(ax, [(A[0]+9*math.cos(a), A[1]+9*math.sin(a)) for a in [i*t/20 for i in range(21)]], 'sujet', lw=1.0)
+text(ax, A[0]+13, A[1]+3.5, r'$\theta$', 'sujet', 'm')
+text(ax, (A[0]+B[0])/2, A[1]-4, r'adjacent $6\sqrt{61}$', 'varie', 's')
+text(ax, B[0]+2, (B[1]+C[1])/2, r'opposé' '\n' r'$5\sqrt{61}$', 'autre', 's', ha='left')
+text(ax, 15, 41, r'hypoténuse $61$', 'sujet', 's', rot=40)
+box(ax, 56, 44, 30, 12, 'resultat', label=r'$\cot\theta=\frac{6}{5}$')
+save(fig, '33-121')

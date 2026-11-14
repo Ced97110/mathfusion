@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 15, 41, 'dans $M_2$', 'autre', 's')
+box(ax, 4, 24, 22, 12, 'autre', label='(4, 7)')
+arrow(ax, (27, 30), (44, 30), 'varie')
+text(ax, 35.5, 34.5, r'$\iota_2$', 'varie', 'm')
+text(ax, 65, 41, 'liste de la somme $M_1\\oplus M_2$', 'encre', 's')
+box(ax, 45, 22, 41, 16, 'fixe', fill=False, dash=True, lw=0.7)
+box(ax, 48, 24, 12, 12, 'fixe', label='0')
+box(ax, 62, 24, 21, 12, 'autre', label='(4, 7)')
+text(ax, 54, 15, 'zéros ailleurs', 'fixe', 's')
+text(ax, 74, 15, 'en position 2', 'autre', 's')
+save(fig, '58-238')

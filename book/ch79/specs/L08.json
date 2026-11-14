@@ -1,0 +1,180 @@
+[
+ {
+  "code": "79-113",
+  "a_dire": "L'union de 2ℤ et de 3ℤ n'est pas un sous-groupe : le sup est le sous-groupe engendré, ici ℤ.",
+  "legende_titre": "Deux ensembles de multiples et leur somme manquante",
+  "lecture": [
+   "Les disques bleus sont des multiples de 2, les violets des multiples de 3 ; le 6 a les deux couleurs.",
+   "Le cercle rouge est 5 : c'est 2 + 3, et il n'est pas dans l'union.",
+   "Le cercle vert est 1, obtenu par 3 + (−2) : un sous-groupe qui contient 2 et 3 le contient."
+  ],
+  "a_voir": "Le 5 manque dans l'union, alors que le 1 apparaît dès qu'on ajoute des sommes et des opposés."
+ },
+ {
+  "code": "79-114",
+  "a_dire": "Un homomorphisme de treillis donne le même résultat en calculant le PPCM avant ou après l'application.",
+  "legende_titre": "Calculer avant ou après l'application",
+  "lecture": [
+   "Les cases bleues du haut sont 4, 6 et leur PPCM 12.",
+   "Les flèches orange envoient chaque nombre sur son PGCD avec 30 : 2, 6 et 6.",
+   "Les cases violettes du bas sont les images 2 et 6 ; leur PPCM est 6, comme l'image de 12."
+  ],
+  "a_voir": "Les deux chemins arrivent à la même case verte 6."
+ },
+ {
+  "code": "79-115",
+  "a_dire": "Un homomorphisme de treillis garde l'ordre ; une application quelconque peut le renverser, comme 60 ÷ x.",
+  "legende_titre": "Un ordre qui se renverse",
+  "lecture": [
+   "En haut, 4 divise 12 : la flèche verte dit que c'est vrai.",
+   "Les flèches orange envoient 4 sur 15 et 12 sur 5.",
+   "En bas, la flèche rouge dit que 15 ne divise pas 5 : l'ordre n'est pas gardé."
+  ],
+  "a_voir": "L'ordre vrai en haut devient faux en bas."
+ },
+ {
+  "code": "79-116",
+  "a_dire": "Un isomorphisme de treillis est une application bijective qui respecte PPCM et PGCD, comme de 1, 2, 4, 8 vers 0, 1, 2, 3.",
+  "legende_titre": "Deux chaînes qui sont le même treillis",
+  "lecture": [
+   "La colonne bleue est 1, 2, 4, 8 ; la violette est 0, 1, 2, 3.",
+   "Chaque flèche orange envoie un nombre sur un seul nombre, et chaque nombre de droite est atteint.",
+   "Les deux phrases orange disent que le PPCM devient le plus grand et le PGCD le plus petit."
+  ],
+  "a_voir": "Un nombre part vers un seul nombre, et tout nombre de droite est atteint."
+ },
+ {
+  "code": "79-117",
+  "a_dire": "Une bijection est un isomorphisme exactement quand elle et sa réciproque gardent l'ordre.",
+  "legende_titre": "Un ordre gardé dans les deux sens",
+  "lecture": [
+   "Les colonnes sont les mêmes que pour 1, 2, 4, 8 et 0, 1, 2, 3.",
+   "Chaque flèche orange a deux pointes : la bijection et sa réciproque.",
+   "Les cases vertes 4 et 2 montrent que le joint de 2 et 4 est envoyé sur le plus grand de 1 et 2."
+  ],
+  "a_voir": "Chaque flèche va dans les deux sens sans changer l'ordre."
+ },
+ {
+  "code": "79-118",
+  "a_dire": "Une bijection qui garde l'ordre dans un sens peut ne pas être un isomorphisme : il faut aussi la réciproque.",
+  "legende_titre": "Même noms, deux joints différents",
+  "lecture": [
+   "À gauche, le carré : p et q sont au même niveau, sans lien entre eux.",
+   "À droite, la chaîne : q est au-dessus de p.",
+   "Les deux textes rouges comparent p ∨ q : 1 dans le carré, q dans la chaîne."
+  ],
+  "a_voir": "Les noms sont les mêmes, mais p ∨ q n'a pas la même valeur."
+ },
+ {
+  "code": "79-119",
+  "a_dire": "Dans un treillis, ∨ peut jouer l'addition et ∧ la multiplication, ou l'inverse.",
+  "legende_titre": "Deux façons de lire ∨ et ∧",
+  "lecture": [
+   "Le cadre du haut rappelle la distributivité des nombres.",
+   "Dans la façon 1, le PPCM est associé à + et le PGCD à ×.",
+   "Dans la façon 2, c'est l'inverse : le PGCD est associé à + et le PPCM à ×."
+  ],
+  "a_voir": "Les flèches à deux pointes sont croisées d'une façon à l'autre."
+ },
+ {
+  "code": "79-120",
+  "a_dire": "La loi D dit que a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c) ; elle peut échouer dans un treillis comme M₃.",
+  "legende_titre": "Une loi qui échoue sur cinq éléments",
+  "lecture": [
+   "Le dessin de gauche a 0 en bas, 1 en haut et x, y, z au milieu.",
+   "La case verte calcule x ∧ (y ∨ z) et trouve x.",
+   "La case rouge calcule (x ∧ y) ∨ (x ∧ z) et trouve 0 : les deux côtés sont différents."
+  ],
+  "a_voir": "Les deux côtés valent x et 0, qui ne sont pas égaux."
+ },
+ {
+  "code": "79-121",
+  "a_dire": "La loi D' dit que a ∨ (b ∧ c) = (a ∨ b) ∧ (a ∨ c) ; avec 4, 6 et 10, les deux côtés valent 4.",
+  "legende_titre": "Deux calculs qui donnent 4",
+  "lecture": [
+   "La colonne de gauche calcule 4 ∨ (6 ∧ 10) étape par étape.",
+   "La colonne de droite calcule (4 ∨ 6) ∧ (4 ∨ 10) : 12, 20, puis 4.",
+   "Les deux cases vertes valent 4."
+  ],
+  "a_voir": "Les deux colonnes finissent sur la même case verte 4."
+ },
+ {
+  "code": "79-122",
+  "a_dire": "Dans les entiers, une loi de distributivité est vraie et l'autre est fausse ; dans un treillis elles vont ensemble.",
+  "legende_titre": "Une loi vraie et une loi fausse dans les entiers",
+  "lecture": [
+   "En haut, vous lisez les deux lois D et D′ avec a = 2, b = 3, c = 4.",
+   "La colonne verte vérifie D : 14 des deux côtés.",
+   "La colonne de droite essaie D′ : 14 d'un côté, 30 de l'autre, et le signe rouge ≠ montre l'échec.",
+   "La case verte du bas dit que, dans un treillis, D et D′ vont ensemble."
+  ],
+  "a_voir": "Dans les entiers, D est vraie et D′ est fausse ; dans un treillis, l'une entraîne l'autre."
+ },
+ {
+  "code": "79-123",
+  "a_dire": "Dans un anneau, a + bc n'est pas égal à (a + b)(a + c) en général ; avec 2, 3, 4, on trouve 14 et 30.",
+  "legende_titre": "14 contre 30 sur une droite",
+  "lecture": [
+   "La barre du haut est 2 + 3 × 4 : un morceau orange de 2 et un morceau bleu de 12.",
+   "La barre violette est (2 + 3) × (2 + 4) et va jusqu'à 30.",
+   "La droite graduée du bas permet de comparer les longueurs."
+  ],
+  "a_voir": "La barre violette est bien plus longue que la barre du haut."
+ },
+ {
+  "code": "79-124",
+  "a_dire": "Un treillis distributif est un treillis où la loi de distributivité est vraie ; le diamant n'en est pas un.",
+  "legende_titre": "Deux treillis qui vérifient la loi, un qui échoue",
+  "lecture": [
+   "Les deux premiers dessins, verts, sont les diviseurs de 60 et les parties de trois stylos.",
+   "Le dessin rouge est le diamant à cinq éléments.",
+   "L'accolade verte regroupe ceux qui sont distributifs."
+  ],
+  "a_voir": "Les deux dessins verts sont regroupés, le rouge est à part."
+ },
+ {
+  "code": "79-125",
+  "a_dire": "La loi modulaire M est la loi D quand b ≤ a ; avec 4 ≤ 12 et c = 30, les deux côtés valent 12.",
+  "legende_titre": "La loi de Dedekind sur 4, 12 et 30",
+  "lecture": [
+   "En haut, 4 est en dessous de 12 ; le nombre violet est c = 30.",
+   "La colonne de gauche calcule 12 ∧ (4 ∨ 30) : 60, puis 12.",
+   "La colonne de droite calcule 4 ∨ (12 ∧ 30) : 6, puis 12."
+  ],
+  "a_voir": "Les deux cases vertes valent 12."
+ },
+ {
+  "code": "79-126",
+  "a_dire": "Un treillis modulaire est un treillis qui vérifie la loi M ; le pentagone n'en est pas un.",
+  "legende_titre": "Qui vérifie la loi de Dedekind",
+  "lecture": [
+   "Les deux dessins verts sont les diviseurs de 60 et le diamant.",
+   "Le dessin rouge est le pentagone, où la loi échoue.",
+   "L'accolade verte regroupe les treillis modulaires."
+  ],
+  "a_voir": "Le diamant est vert ici, alors qu'il était rouge pour la loi D."
+ },
+ {
+  "code": "79-127",
+  "a_dire": "Tout treillis distributif est modulaire ; sans l'hypothèse, le pentagone montre que la loi M peut échouer.",
+  "legende_titre": "Le pentagone : une loi modulaire fausse",
+  "lecture": [
+   "En haut, la flèche verte va de « distributif » à « modulaire » : D donne M.",
+   "En dessous, sans l'hypothèse, le pentagone a 0 en bas, 1 en haut, b sous c à gauche et a seul à droite.",
+   "Le trait orange relie b à c, avec b ≤ c.",
+   "La case verte donne c, la case rouge donne b : les deux côtés sont différents."
+  ],
+  "a_voir": "Distributif donne modulaire ; sans cette hypothèse, le pentagone donne c d'un côté et b de l'autre."
+ },
+ {
+  "code": "79-128",
+  "a_dire": "La réciproque est fausse : le diamant est modulaire sans être distributif.",
+  "legende_titre": "Une partie plus petite à l'intérieur d'une plus grande",
+  "lecture": [
+   "Le grand cadre violet contient les treillis modulaires.",
+   "Le cadre bleu à l'intérieur contient les distributifs.",
+   "Le disque orange, le diamant, est dans le grand cadre mais hors du cadre bleu ; le pentagone est hors de tout."
+  ],
+  "a_voir": "Le diamant est dans le grand cadre mais pas dans le petit."
+ }
+]

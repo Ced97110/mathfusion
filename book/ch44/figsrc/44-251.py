@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+text(ax,44,68,r'$-(3+5) = (-3)+(-5)$','sujet','l')
+f=numberline(ax,8,78,40,-8,0,arrow_right=False,labels=False)
+for v in (-8,-6,-4,-2,0): text(ax,f(v),35.5,('−%d'%-v if v else '0'),'fixe','s')
+arrow(ax,(f(0),52),(f(-3),52),'sujet',lw=1.2); arrow(ax,(f(-3),52),(f(-8),52),'autre',lw=1.2)
+text(ax,(f(0)+f(-3))/2,57,'−3','sujet','s'); text(ax,(f(-3)+f(-8))/2,57,'−5','autre','s')
+arrow(ax,(f(0),22),(f(-5),22),'autre',lw=1.2); arrow(ax,(f(-5),22),(f(-8),22),'sujet',lw=1.2)
+text(ax,(f(0)+f(-5))/2,17,'−5','autre','s'); text(ax,(f(-5)+f(-8))/2,17,'−3','sujet','s')
+for v in (0,-8): line(ax,[(f(v),38),(f(v),52 if v==0 else 22)],'fixe',dash=True)
+disc(ax,f(-8),40,1.8,'resultat'); text(ax,44,6,'même arrivée : −8','resultat','s',ha='center')
+save(fig,'44-251')

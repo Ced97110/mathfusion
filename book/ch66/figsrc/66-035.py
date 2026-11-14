@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(55)
+f = numberline(ax, 10, 70, 14, 0, 6, 1, arrow_right=True)
+text(ax, 80, 14, r'$x$', 'encre', 'm')
+disc(ax, f(3), 14, 2.0, 'resultat')
+disc(ax, f(5), 14, 2.0, 'varie')
+brace(ax, f(3), f(5), 18, 'fixe', label='écart 2', down=False)
+box(ax, f(3) - 14, 38, 28, 9, 'resultat', label=r'$x=3$ : $x-3=0$')
+box(ax, f(5) - 8, 26, 24, 9, 'varie', label=r'$x=5$ : $x-3=2$')
+text(ax, 44, 51, r'facteur $x-3$ (ici $z=3$)', 'sujet', 'm')
+save(fig, '66-035')

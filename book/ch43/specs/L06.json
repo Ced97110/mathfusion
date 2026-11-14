@@ -1,0 +1,187 @@
+[
+ {
+  "code": "43-081",
+  "a_dire": "L'application canonique envoie chaque pion vers sa propre boîte ; une autre règle qui envoie tout vers A n'est pas canonique.",
+  "legende_titre": "Chaque pion va vers sa boîte",
+  "lecture": [
+   "À gauche, les 12 pions sont en trois groupes de 4, 5 et 3.",
+   "À droite, les trois boîtes A (bleue), B (orange) et C (verte).",
+   "En haut, les flèches bleues relient chaque groupe à sa propre boîte : c'est ν.",
+   "En bas, les flèches rouges vont toutes vers A : cette règle n'utilise pas les groupes."
+  ],
+  "a_voir": "Seule la règle du haut respecte le groupe de chaque pion."
+ },
+ {
+  "code": "43-082",
+  "a_dire": "La ligne ν : S → S/E, a ↦ ā contient le nom, le départ et l'arrivée, et la règle.",
+  "legende_titre": "Une ligne pour toute la règle",
+  "lecture": [
+   "Le cadre bleu est le nom de la règle : ν.",
+   "Le cadre gris dit de quel ensemble on part et dans lequel on arrive.",
+   "Le cadre orange dit ce qui arrive à un élément a : il va sur sa classe ā.",
+   "Sous chaque cadre, un petit dessin montre ce que le morceau veut dire."
+  ],
+  "a_voir": "La ligne se découpe en trois morceaux, chacun avec son sens."
+ },
+ {
+  "code": "43-083",
+  "a_dire": "ν atteint chaque classe, mais deux éléments d'une même classe ont la même image, donc elle n'est pas injective.",
+  "legende_titre": "Deux entiers, une même classe",
+  "lecture": [
+   "En haut, 3 et 15 (gris) ont chacun une flèche orange vers la même classe 3̄.",
+   "En bas, 1, 2 et 3 sont chacun seul dans sa classe, avec une flèche verte.",
+   "Chaque classe à droite reçoit au moins une flèche."
+  ],
+  "a_voir": "Quand une classe a deux éléments, deux flèches arrivent au même endroit."
+ },
+ {
+  "code": "43-084",
+  "a_dire": "On écrit a E_f b quand f(a) = f(b) : par exemple 1 E_f 4, car 1 et 4 ont le même reste.",
+  "legende_titre": "Même image, donc en relation",
+  "lecture": [
+   "À gauche, les nombres de 1 à 6 ; à droite, les restes 0, 1 et 2.",
+   "Chaque flèche donne le reste d'un nombre.",
+   "Les deux flèches bleues, issues de 1 et de 4, arrivent au même reste 1.",
+   "La ligne du bas écrit cette relation."
+  ],
+  "a_voir": "1 et 4 sont en relation parce que leurs flèches arrivent au même point."
+ },
+ {
+  "code": "43-085",
+  "a_dire": "Chaque condition sur S devient une égalité d'images dans T, et l'égalité a les trois propriétés.",
+  "legende_titre": "Trois conditions, trois égalités",
+  "lecture": [
+   "À gauche, en bleu, les trois conditions écrites avec la relation.",
+   "À droite, en vert, la même condition écrite avec les images de f.",
+   "La flèche orange remplace l'une par l'autre.",
+   "La ligne du bas conclut."
+  ],
+  "a_voir": "Chaque ligne de gauche se ramène à une égalité de la colonne de droite."
+ },
+ {
+  "code": "43-086",
+  "a_dire": "f⁻¹(c) est l'ensemble des éléments de départ dont l'image est c ; ici f⁻¹(1) = {1, 4}.",
+  "legende_titre": "Remonter d'un reste vers ses départs",
+  "lecture": [
+   "La rangée du haut contient les nombres de 1 à 6.",
+   "La rangée du bas contient les restes 0, 1 et 2 ; le reste 1 est en bleu.",
+   "Les deux flèches orange partent de 1 et de 4 et arrivent au reste 1.",
+   "L'ensemble écrit en haut est formé de ces deux nombres."
+  ],
+  "a_voir": "L'image réciproque de 1 est l'ensemble des nombres orange."
+ },
+ {
+  "code": "43-087",
+  "a_dire": "f⁻¹(c) est vide si c n'est pas atteint, et égal à la classe de a si c = f(a).",
+  "legende_titre": "Vide, ou une classe",
+  "lecture": [
+   "Les nombres de 1 à 6 sont en haut ; en bas, les restes 0, 1, 2 et 5.",
+   "Les flèches orange partent de 1 et de 4 vers le reste 1 : leur ensemble est la classe de 1.",
+   "Le reste 5 en rouge ne reçoit aucune flèche : son ensemble est vide."
+  ],
+  "a_voir": "Le reste 1 reçoit des flèches, le reste 5 n'en reçoit pas."
+ },
+ {
+  "code": "43-088",
+  "a_dire": "La fibre au-dessus de c est l'ensemble des départs de c ; elle peut être vide.",
+  "legende_titre": "Les départs au-dessus de chaque valeur",
+  "lecture": [
+   "Sur la ligne grise du bas, les valeurs 0, 1, 2 et 5.",
+   "Au-dessus de chaque valeur, un cadre bleu contient les nombres qui y arrivent.",
+   "Le cadre rouge en pointillés, au-dessus de 5, est vide."
+  ],
+  "a_voir": "Chaque valeur a au-dessus d'elle son ensemble de départs, parfois aucun."
+ },
+ {
+  "code": "43-089",
+  "a_dire": "Les fibres non vides sont exactement les blocs du quotient.",
+  "legende_titre": "Fibres et blocs : les mêmes ensembles",
+  "lecture": [
+   "Les trois cadres bleus contiennent chacun deux nombres.",
+   "Au-dessus de chaque cadre, son nom comme fibre.",
+   "Sous chaque cadre, son nom comme bloc, en violet.",
+   "Les noms sont différents, les ensembles sont les mêmes."
+  ],
+  "a_voir": "Chaque cadre porte deux noms : fibre et bloc."
+ },
+ {
+  "code": "43-090",
+  "a_dire": "Aller de S à T directement par f, ou en passant par S/E par ν puis g, donne le même résultat ; ν est surjective et g injective.",
+  "legende_titre": "Deux trajets de S vers T",
+  "lecture": [
+   "La flèche orange du bas va directement de S à T : c'est f.",
+   "Les deux flèches bleues passent par S/E : d'abord ν, puis g.",
+   "Sous chaque flèche bleue, son type : surjective ou injective.",
+   "Au centre, l'égalité des deux trajets."
+  ],
+  "a_voir": "Le trajet du bas et le trajet par le haut arrivent au même endroit."
+ },
+ {
+  "code": "43-091",
+  "a_dire": "g donne à la classe de a la valeur f(a).",
+  "legende_titre": "Une règle qui part des classes",
+  "lecture": [
+   "Chaque cadre bleu est une classe de deux nombres.",
+   "Chaque flèche bleue g va d'une classe vers un cercle vert.",
+   "Le cercle vert est le reste commun aux deux nombres de la classe."
+  ],
+  "a_voir": "Chaque classe reçoit un seul reste."
+ },
+ {
+  "code": "43-092",
+  "a_dire": "Une classe a plusieurs noms, mais tous donnent la même valeur : g est bien définie.",
+  "legende_titre": "Deux noms, une seule valeur",
+  "lecture": [
+   "Le grand cadre bleu est une classe avec deux noms, 1 et 4.",
+   "Les deux flèches orange partent de chaque nom.",
+   "Elles arrivent au même cercle vert : la valeur est 1."
+  ],
+  "a_voir": "Les deux flèches arrivent au même cercle."
+ },
+ {
+  "code": "43-093",
+  "a_dire": "Pour vérifier une application sur un quotient, on compare les valeurs données par les différents noms ; ici elles diffèrent.",
+  "legende_titre": "Deux noms, deux valeurs",
+  "lecture": [
+   "Le cadre bleu est la classe de 1 et 4.",
+   "Avec le nom 1, la règle donne 1 ; avec le nom 4, elle donne 4.",
+   "Les deux flèches rouges arrivent à deux cercles différents."
+  ],
+  "a_voir": "Les deux noms donnent deux valeurs différentes."
+ },
+ {
+  "code": "43-094",
+  "a_dire": "Avec les classes de E_f, g est injective ; avec la relation d'égalité, elle ne l'est pas.",
+  "legende_titre": "Le choix de la relation rend g injective",
+  "lecture": [
+   "Au centre, les restes 1, 2 et 0.",
+   "À gauche, les classes de E_f : chaque cadre bleu envoie une flèche verte vers un reste.",
+   "À droite, les nombres seuls dans leur classe : deux flèches rouges arrivent à chaque reste."
+  ],
+  "a_voir": "À gauche une flèche par reste, à droite deux."
+ },
+ {
+  "code": "43-095",
+  "a_dire": "Si h ∘ ν = f, la valeur de h sur une classe est imposée : c'est f(a).",
+  "legende_titre": "Une seule valeur est possible pour h",
+  "lecture": [
+   "Le cercle gris de gauche est le nombre 1.",
+   "La flèche orange ν l'envoie sur sa classe, dans le cadre bleu.",
+   "La flèche bleue h part de la classe vers le cercle vert.",
+   "L'arc gris au-dessus est f, qui va directement de 1 à sa valeur."
+  ],
+  "a_voir": "Le chemin par la classe doit arriver là où arrive l'arc f."
+ },
+ {
+  "code": "43-096",
+  "a_dire": "La preuve vérifie l'égalité, puis remonte de g(ā) = g(b̄) jusqu'à ā = b̄, puis conclut à l'unicité.",
+  "legende_titre": "Trois étapes de preuve",
+  "lecture": [
+   "En haut, l'égalité de départ en vert.",
+   "Au milieu, quatre cadres reliés par des flèches : de l'égalité des valeurs de g jusqu'à l'égalité des classes.",
+   "À droite des flèches, ce qui justifie chaque pas.",
+   "En bas, l'unicité : h et g ont les mêmes valeurs."
+  ],
+  "a_voir": "Les quatre cadres du milieu vont de l'égalité des valeurs à l'égalité des classes."
+ }
+]

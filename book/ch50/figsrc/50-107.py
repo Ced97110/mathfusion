@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+disc(ax, 24, 33, 20, 'sujet', fill=False, lw=1.2); text(ax, 24, 58, r'$P_A$ agit sur $\Sigma$', 'varie', 's')
+disc(ax, 24, 43, 4.6, 'sujet', label=r'$P_A$', size='s')
+disc(ax, 13, 25, 4.6, 'autre', label=r'$P_B$', size='s'); disc(ax, 35, 25, 4.6, 'autre', label=r'$P_C$', size='s')
+arrow(ax, (18.2, 25), (29.8, 25), 'varie', both=True); text(ax, 24, 20, r'$s_A$', 'varie', 's')
+text(ax, 50, 43, r'$P_A$ seul : taille 1', 'sujet', 's', ha='left')
+text(ax, 50, 25, r'$P_B,P_C$ : taille 2', 'autre', 's', ha='left')
+text(ax, 50, 12, r'$|\Sigma|=3$, reste 1', 'resultat', 's', ha='left')
+save(fig, '50-107')

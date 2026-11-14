@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 75, r'cadran à 6 heures, $r=4$', 'fixe', 'm')
+box(ax, 10, 62, 68, 9, 'sujet', label=r'départ : $6\cdot1=0$')
+arrow(ax, (44, 62), (44, 54), 'fixe')
+for i in range(6):
+    disc(ax, 6 + 5.5 * i, 47, 2, 'sujet')
+    disc(ax, 52 + 5.5 * i, 47, 2, 'autre')
+text(ax, 44, 47, '=', 'varie', 'l', weight='bold')
+text(ax, 44, 41, 'D2', 'varie', 'm', weight='bold')
+brace(ax, 4, 35.5, 44, 'sujet', label=r'$4+\cdots+4$ : 6 termes')
+brace(ax, 50, 81.5, 44, 'autre', label=r'$(1+\cdots+1)\cdot4$')
+arrow(ax, (44, 37), (44, 30.5), 'fixe')
+box(ax, 10, 21, 68, 9, 'fixe', label=r'$(6\cdot1)\cdot4=0\cdot4=0$')
+arrow(ax, (44, 21), (44, 15.5), 'fixe')
+box(ax, 10, 6, 68, 9, 'resultat', label=r'arrivée : $6\cdot4=24=0$')
+save(fig, '51-134')

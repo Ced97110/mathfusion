@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+o = (14, 14); P = (62, 40)
+arrow(ax, o, P, 'sujet', lw=1.6)
+disc(ax, o[0], o[1], 1.8, 'varie')
+text(ax, 8, 6, r'$\mathbf{0}$ : flèche nulle, (0, 0)', 'varie', 's', ha='left')
+text(ax, 34, 32, '$v$', 'sujet', 'm')
+disc(ax, P[0], P[1], 3.4, 'resultat', fill=False, lw=1.2)
+disc(ax, P[0], P[1], 1.2, 'varie')
+text(ax, 62, 50, r'$v+\mathbf{0}=v$', 'resultat', 'l')
+text(ax, 68, 28, r'ajouter $\mathbf{0}$ : on reste', 'varie', 's')
+save(fig, '58-090')

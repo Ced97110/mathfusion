@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 56, r'$B(u_1, u_1) = 2 \times 1 \times 1$', 'sujet', 's')
+box(ax, 4, 34, 36, 14, 'resultat', label='nombres usuels\n2 ≠ 0', size='s')
+box(ax, 48, 34, 36, 14, 'limite', label=r'$\mathbb{Z}/2$ : $1+1=0$' + '\n2 = 0', size='s')
+arrow(ax, (22, 34), (22, 26), 'resultat'); arrow(ax, (66, 34), (66, 26), 'limite')
+box(ax, 4, 12, 36, 14, 'resultat', label=r'$B(u_1, u_1) = 2$')
+box(ax, 48, 12, 36, 14, 'limite', label=r'$B(u_1, u_1) = 0$')
+text(ax, 22, 6, 'le carré existe', 'resultat', 's')
+text(ax, 66, 6, 'le terme 2 disparaît', 'limite', 's')
+save(fig, '71-166')

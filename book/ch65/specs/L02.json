@@ -1,0 +1,370 @@
+[
+ {
+  "code": "65-033",
+  "a_dire": "Pour calculer le groupe de Galois, on écrit les racines, on cherche les permutations qui viennent d'un automorphisme, puis on reconnaît le sous-groupe de S_n obtenu.",
+  "legende_titre": "Trois temps, du dessin des racines au groupe",
+  "lecture": [
+   "Le cadre bleu (1) montre les trois racines r1, r2, r3 du cas du triangle.",
+   "Le cadre orange (2) montre la flèche double qui échange deux racines ; les flèches violettes courbes montrent un circuit des trois racines.",
+   "Le cadre vert (3) donne le résultat : 6 permutations, toutes celles de 3 objets, donc S3."
+  ],
+  "a_voir": "Trois cadres numérotés de gauche à droite : les racines, les permutations, le sous-groupe reconnu."
+ },
+ {
+  "code": "65-034",
+  "a_dire": "Le signe ∏ dit de multiplier tous les facteurs indiqués : ici un facteur r_i − r_j par paire i < j.",
+  "legende_titre": "Un seul signe pour plusieurs parenthèses",
+  "lecture": [
+   "En haut, le signe ∏ en bleu avec le facteur écrit une seule fois.",
+   "Les trois cadres bleus sont les trois paires prises une fois, dans l'ordre : 1−2, 1−3, 2−3.",
+   "Les nombres orange sont les valeurs des facteurs : −1, −2, −1.",
+   "La ligne verte donne leur produit : −2."
+  ],
+  "a_voir": "Chaque paire donne un facteur, et le signe les multiplie tous."
+ },
+ {
+  "code": "65-035",
+  "a_dire": "Le produit D se calcule en trois actions : numéroter les racines, écrire la différence de chaque paire i < j, multiplier ces différences.",
+  "legende_titre": "Trois actions pour obtenir D",
+  "lecture": [
+   "Les disques bleus sont les racines r1, r2, r3 placées sur la droite aux valeurs 1, 2, 3.",
+   "Les arcs orange relient chaque paire et portent la différence : −1, −2, −1.",
+   "La ligne verte multiplie les trois nombres : D = −2."
+  ],
+  "a_voir": "Un arc par paire de racines, puis un produit."
+ },
+ {
+  "code": "65-036",
+  "a_dire": "Pour n = 3, D contient un facteur pour chacune des trois paires de racines, avec le plus petit numéro à gauche.",
+  "legende_titre": "Trois racines, trois paires, trois facteurs",
+  "lecture": [
+   "Les disques bleus sont les racines r1, r2, r3.",
+   "Chaque côté orange du triangle est une paire de racines.",
+   "L'étiquette sur chaque côté est le facteur de cette paire.",
+   "La formule en bleu en bas les multiplie."
+  ],
+  "a_voir": "Trois côtés du triangle, trois facteurs dans D."
+ },
+ {
+  "code": "65-037",
+  "a_dire": "Quand on échange r1 et r2, D change de signe : avec les racines 1, 2, 3, D passe de −2 à 2.",
+  "legende_titre": "Un échange de deux racines, un signe qui change",
+  "lecture": [
+   "La rangée du haut est l'état de départ : racines 1, 2, 3 et D = −2.",
+   "La flèche orange est l'échange de r1 et r2.",
+   "Dans la rangée du bas, les disques orange sont les deux valeurs échangées : 2, 1, 3.",
+   "Le produit vaut maintenant 2, l'opposé de −2."
+  ],
+  "a_voir": "Même produit, signe opposé après l'échange."
+ },
+ {
+  "code": "65-038",
+  "a_dire": "Toute transposition envoie D sur −D, même quand elle échange deux racines non voisines.",
+  "legende_titre": "Échanger deux racines, quelles qu'elles soient",
+  "lecture": [
+   "La rangée du haut montre quatre racines 1, 2, 3, 4 avec D = 12.",
+   "L'arc orange relie les racines r1 et r3 qu'on échange.",
+   "Dans la rangée du bas, les disques orange portent les valeurs échangées 3 et 1.",
+   "D vaut alors −12, l'opposé de 12."
+  ],
+  "a_voir": "On échange deux racines non voisines, et D devient son opposé."
+ },
+ {
+  "code": "65-039",
+  "a_dire": "Une permutation faite de k transpositions envoie D sur (−1)^k D : D reste D si k est pair, il change de signe si k est impair.",
+  "legende_titre": "Chaque échange change le signe, deux le rendent",
+  "lecture": [
+   "Les quatre cadres suivent k = 0, 1, 2, 3 échanges.",
+   "Les cadres bleus (k pair) gardent la valeur −2 de départ.",
+   "Les cadres orange (k impair) portent 2, l'opposé.",
+   "La ligne verte résume la règle."
+  ],
+  "a_voir": "Le signe alterne à chaque échange."
+ },
+ {
+  "code": "65-040",
+  "a_dire": "Quel que soit l'échange des racines, D² reste le même nombre, donc il est fixé par tout le groupe et appartient à F.",
+  "legende_titre": "Trois valeurs de D, un seul carré",
+  "lecture": [
+   "Les trois cadres orange sont trois états des racines : D vaut −2, puis 2, puis −2.",
+   "Chaque flèche grise élève D au carré.",
+   "Le cadre vert reçoit les trois flèches : le carré vaut toujours 4."
+  ],
+  "a_voir": "Les trois flèches arrivent dans la même case."
+ },
+ {
+  "code": "65-041",
+  "a_dire": "Le discriminant d est le carré D² du produit des différences : D n'est pas toujours dans F, mais d y est toujours.",
+  "legende_titre": "Un nom pour le carré du produit des différences",
+  "lecture": [
+   "Le haut rappelle d = D² = produit des carrés des différences.",
+   "Les cadres orange à gauche sont D : 9 pour la première équation, un nombre non rationnel pour la seconde.",
+   "Les cadres verts à droite sont d : 81 et −108, tous deux rationnels."
+  ],
+  "a_voir": "D peut sortir de F, son carré d reste dans F."
+ },
+ {
+  "code": "65-042",
+  "a_dire": "Le sous-corps qui correspond aux permutations paires de G_f est F(D) : les permutations paires fixent D.",
+  "legende_titre": "Les permutations paires et le corps F(D)",
+  "lecture": [
+   "Le cadre vert groupe les trois permutations qui laissent D en place : 1 et les deux circuits.",
+   "Le cadre orange groupe les trois échanges, qui changent D en −D.",
+   "La flèche verte mène du groupe des permutations paires au corps F(D) en bleu."
+  ],
+  "a_voir": "Trois permutations fixent D, trois le changent de signe."
+ },
+ {
+  "code": "65-043",
+  "a_dire": "G_f est contenu dans A_n exactement quand d est un carré dans F, à condition que 1 + 1 ≠ 0 ; sans cette condition l'équivalence est fausse.",
+  "legende_titre": "Une équivalence qui tient sous une condition",
+  "lecture": [
+   "Les deux cadres bleus du haut sont les deux côtés de l'équivalence.",
+   "Le cadre vert montre le cadre du chapitre : 1 + 1 ≠ 0, donc D est différent de −D.",
+   "Le cadre rouge montre l'ensemble {0, 1} : l'échange de ω et ω + 1 est impair alors que d = 1 est un carré.",
+   "Le texte rouge du bas dit que l'équivalence est fausse sans la condition."
+  ],
+  "a_voir": "La condition 1 + 1 ≠ 0 fait la différence entre vrai et faux."
+ },
+ {
+  "code": "65-044",
+  "a_dire": "La preuve part d'un automorphisme, s'appuie sur D ≠ −D et arrive à : il fixe D exactement quand sa permutation est paire.",
+  "legende_titre": "Départ, étape clé, arrivée",
+  "lecture": [
+   "Le cadre bleu est le départ : un automorphisme et sa permutation.",
+   "Le cadre orange épais est l'étape qui porte le poids : D est différent de −D.",
+   "Le cadre vert est l'arrivée : fixer D revient à être paire.",
+   "Les deux cadres du bas donnent le cas x³−2 : une réflexion change D, un circuit le laisse."
+  ],
+  "a_voir": "Une seule étape porte la preuve : D ≠ −D."
+ },
+ {
+  "code": "65-045",
+  "a_dire": "Pour un polynôme du second degré, le discriminant d de ce chapitre égale b² − 4ac du chapitre 23.",
+  "legende_titre": "Deux calculs, un même nombre",
+  "lecture": [
+   "Le cadre bleu du haut est le polynôme x²−5x+6 avec ses racines 2 et 3.",
+   "Le cadre bleu de gauche calcule d avec les racines : (2−3)² = 1.",
+   "Le cadre violet de droite calcule b²−4ac avec les coefficients : 25−24 = 1.",
+   "Le texte orange donne l'étape qui relie les deux : développer le carré."
+  ],
+  "a_voir": "Les deux calculs donnent 1."
+ },
+ {
+  "code": "65-046",
+  "a_dire": "Le symbole a1 désigne la somme des racines ; dans le polynôme, le coefficient de x est l'opposé de a1.",
+  "legende_titre": "Un nom pour la somme des racines",
+  "lecture": [
+   "Les disques bleus sont les racines 2 et 3, additionnées pour donner a1 = 5.",
+   "Les trois cadres du milieu sont le polynôme développé : x², −5x, +6.",
+   "Le cadre orange est le terme en x : son coefficient est −a1 = −5."
+  ],
+  "a_voir": "a1 vaut 5 sans signe, le moins est dans le polynôme."
+ },
+ {
+  "code": "65-047",
+  "a_dire": "Le symbole a2 désigne le produit des deux racines ; c'est le terme sans x du polynôme du second degré.",
+  "legende_titre": "Un nom pour le produit de deux racines",
+  "lecture": [
+   "Les cases bleues forment un rectangle de 3 sur 2 : 2 fois 3 fait 6 cases.",
+   "Le cadre bleu de droite donne a2 = 2 × 3 = 6.",
+   "Le texte orange rappelle que le terme sans x du polynôme est +6.",
+   "Le texte gris du bas rappelle que le 2 de a2 est un rang, pas une puissance."
+  ],
+  "a_voir": "Six cases : le produit des racines est le terme sans x."
+ },
+ {
+  "code": "65-048",
+  "a_dire": "En degré 2, d = a1² − 4a2 : la forme reste la même pour tout polynôme unitaire, seuls les nombres changent.",
+  "legende_titre": "Une même formule pour trois polynômes",
+  "lecture": [
+   "En haut, la formule d = a1² − 4a2, avec a1 la somme des racines et a2 leur produit.",
+   "Les cadres gris de gauche sont trois polynômes.",
+   "Le cadre en pointillés bleu est la formule, la même pour les trois ; le texte orange y met les nombres du polynôme.",
+   "Les cadres verts donnent d : 1, 8 et 16."
+  ],
+  "a_voir": "Trois polynômes passent par la même formule a1² − 4a2 et donnent d."
+ },
+ {
+  "code": "65-049",
+  "a_dire": "En degré 3, le polynôme s'écrit x³ − a1x² + a2x − a3 : les signes alternent dans le polynôme, et les nombres a_i n'ont pas de signe moins.",
+  "legende_titre": "Les signes alternent dans le polynôme",
+  "lecture": [
+   "La rangée du haut est le polynôme avec les symboles a1, a2, a3.",
+   "La rangée du bas remplace chaque symbole par son nombre pour les racines 2, 3 et 5 : 10, 31, 30.",
+   "Le texte orange dit comment chaque nombre vient des racines : somme, somme des produits deux à deux, produit."
+  ],
+  "a_voir": "Le signe moins est écrit dans le polynôme, pas dans a1, a2, a3."
+ },
+ {
+  "code": "65-050",
+  "a_dire": "Le symbole a3 se lit : le produit des trois racines ; le terme sans x du polynôme est −a3.",
+  "legende_titre": "Un nom pour le produit des trois racines",
+  "lecture": [
+   "Les disques bleus 2, 3 et 5 sont multipliés pour donner a3 = 30.",
+   "Le cadre orange est le terme sans x du polynôme développé : −a3 = −30.",
+   "Le texte gris du bas montre qu'une racine nulle donne a3 = 0."
+  ],
+  "a_voir": "a3 vaut 30, le terme sans x vaut −30."
+ },
+ {
+  "code": "65-051",
+  "a_dire": "Le nombre d ne change pas quand on échange des racines : il est symétrique, donc il s'écrit avec les a_i.",
+  "legende_titre": "Ce que l'échange ne change pas",
+  "lecture": [
+   "La colonne de gauche est l'état racines 1, 2, 3 ; celle de droite l'état racines 2, 1, 3.",
+   "Les cadres orange montrent D qui change : −2 puis 2.",
+   "Les cadres verts montrent d qui reste 4.",
+   "Les cadres gris montrent a1, a2, a3 qui restent 6, 11, 6."
+  ],
+  "a_voir": "D change de signe, d ne change pas."
+ },
+ {
+  "code": "65-052",
+  "a_dire": "Le symbole s_k se lit : la somme des puissances k-ièmes des trois racines.",
+  "legende_titre": "Une somme de puissances pour chaque k",
+  "lecture": [
+   "Le haut donne la formule de s_k.",
+   "Chaque rangée de cadres bleus montre les trois puissances d'un même exposant pour les racines 1, 2, 3.",
+   "Les cadres verts donnent les sommes : s1 = 6, s2 = 14, s3 = 36."
+  ],
+  "a_voir": "Chaque exposant donne un nombre unique."
+ },
+ {
+  "code": "65-053",
+  "a_dire": "La formule du discriminant en degré 3 demande de calculer cinq termes avec a1, a2, a3, puis de les additionner.",
+  "legende_titre": "Cinq termes, puis une somme",
+  "lecture": [
+   "Le titre donne les nombres a1 = 6, a2 = 11, a3 = 6 des racines 1, 2, 3.",
+   "Chaque cadre bleu est un terme de la formule de d.",
+   "Chaque cadre orange remplace les lettres par les nombres et donne la valeur du terme.",
+   "Le cadre vert donne la somme : 4, le carré de −2."
+  ],
+  "a_voir": "Chaque terme de la formule est calculé avec les nombres, puis les cinq valeurs s'additionnent en 4."
+ },
+ {
+  "code": "65-054",
+  "a_dire": "Pour x³ + px + q, d = −4p³ − 27q² : la forme reste la même quand p et q changent.",
+  "legende_titre": "Une formule pour trois polynômes sans terme en x²",
+  "lecture": [
+   "Les cadres gris sont trois polynômes.",
+   "Les cadres orange donnent p et q de chacun.",
+   "Le texte gris sous chaque rangée est le calcul de d.",
+   "Les cadres verts donnent d : 81, −108 et 0."
+  ],
+  "a_voir": "Trois couples (p, q), la même formule."
+ },
+ {
+  "code": "65-055",
+  "a_dire": "Le discriminant est nul exactement quand deux racines sont égales, car un seul facteur nul rend le produit nul.",
+  "legende_titre": "Un facteur nul suffit",
+  "lecture": [
+   "La première rangée prend les racines 1, 1, 2 : le cadre orange épais est un facteur nul.",
+   "Le résultat orange est d = 0.",
+   "La seconde rangée prend les racines 1, 2, 3 : aucun facteur n'est nul.",
+   "Le résultat vert est d = 4."
+  ],
+  "a_voir": "Un seul facteur nul fait tomber tout le produit à 0."
+ },
+ {
+  "code": "65-056",
+  "a_dire": "Pour x³ − 3x + 2, d vaut 0 parce que la racine 1 est double, ce qu'on voit sans factoriser.",
+  "legende_titre": "Un discriminant nul, une racine double",
+  "lecture": [
+   "La courbe bleue est celle de x³ − 3x + 2.",
+   "Le disque vert est la racine −2, où la courbe traverse l'axe.",
+   "Le disque orange est la racine 1, où la courbe touche l'axe sans le traverser.",
+   "Les lignes du bas donnent la factorisation et d = 108 − 108 = 0."
+  ],
+  "a_voir": "La courbe touche l'axe en 1 : racine double."
+ },
+ {
+  "code": "65-057",
+  "a_dire": "Un groupe de permutations est transitif si chaque objet peut être envoyé sur chaque autre par un élément du groupe.",
+  "legende_titre": "Chaque objet peut en atteindre un autre",
+  "lecture": [
+   "À gauche, toutes les permutations de 3 objets : les flèches orange partent de 1 vers 2 et vers 3.",
+   "À droite, le groupe d'identité et de l'échange de 1 et 2 : la flèche double relie 1 et 2.",
+   "Le disque rouge 3 ne bouge jamais."
+  ],
+  "a_voir": "À droite, un objet reste seul : le groupe n'est pas transitif."
+ },
+ {
+  "code": "65-058",
+  "a_dire": "Un groupe est transitif exactement quand il n'a qu'une seule orbite, qui contient tous les points.",
+  "legende_titre": "Compter les orbites",
+  "lecture": [
+   "En haut, le groupe d'identité et de l'échange de 1 et 2 : une orbite bleue {1, 2} et une orbite violette {3}.",
+   "Le texte rouge conclut : 2 orbites, pas transitif.",
+   "En bas, toutes les permutations : un seul cadre vert contient 1, 2 et 3."
+  ],
+  "a_voir": "Deux cadres séparés contre un cadre unique."
+ },
+ {
+  "code": "65-059",
+  "a_dire": "Pour f sans racine multiple, f est irréductible exactement quand son groupe de Galois est transitif.",
+  "legende_titre": "Irréductible et transitif vont ensemble",
+  "lecture": [
+   "En haut, x³−2 est irréductible : ses trois racines sont dans un seul cadre vert, une orbite.",
+   "En bas, x³−x se décompose : ses racines 0, 1 et −1 sont chacune dans un cadre violet séparé.",
+   "La double flèche relie chaque polynôme à ses orbites."
+  ],
+  "a_voir": "Un seul cadre pour l'irréductible, plusieurs pour le décomposable."
+ },
+ {
+  "code": "65-060",
+  "a_dire": "Si f est irréductible, l'isomorphisme de F(r_i) sur F(r_j) se prolonge à E en un automorphisme qui envoie r_i sur r_j.",
+  "legende_titre": "Prolonger l'isomorphisme à tout le corps E",
+  "lecture": [
+   "La rangée du haut montre F(r_i) en bleu et F(r_j) en violet, reliés par la flèche orange qui envoie r_i sur r_j.",
+   "La rangée du bas montre le corps E deux fois, relié par la flèche verte η.",
+   "Les flèches grises verticales disent que chaque petit corps est contenu dans E."
+  ],
+  "a_voir": "La flèche du bas prolonge celle du haut."
+ },
+ {
+  "code": "65-061",
+  "a_dire": "Si f est réductible, un automorphisme envoie une racine d'un facteur irréductible sur une racine du même facteur, donc le groupe n'est pas transitif.",
+  "legende_titre": "Les racines d'un facteur restent entre elles",
+  "lecture": [
+   "Les trois cadres du haut sont les facteurs x, x−1 et x+1.",
+   "Les disques dessous sont leurs racines : 0 en bleu, 1 et −1 en violet.",
+   "La flèche rouge de 0 vers 1 est impossible : 0 est la seule racine du facteur x."
+  ],
+  "a_voir": "La flèche rouge n'existe pas."
+ },
+ {
+  "code": "65-062",
+  "a_dire": "Pour x³ − x, les trois racines sont rationnelles : elles restent chacune en place, il y a trois orbites d'un point et le groupe se réduit à l'identité.",
+  "legende_titre": "Trois racines rationnelles, aucun déplacement",
+  "lecture": [
+   "Chaque cadre en pointillés violet est une orbite d'un seul point.",
+   "Les disques bleus sont les racines 0, 1 et −1.",
+   "Chaque flèche grise dit que la racine reste en place.",
+   "Le cadre vert donne le groupe : l'identité seule."
+  ],
+  "a_voir": "Trois cadres d'un point chacun, rien ne bouge."
+ },
+ {
+  "code": "65-063",
+  "a_dire": "En degré 2, le groupe vaut S2 si d n'est pas un carré dans F, et A2 = {1} si d en est un.",
+  "legende_titre": "Deux groupes possibles en degré 2",
+  "lecture": [
+   "Le cadre bleu du haut pose la question : d est-il un carré dans F ?",
+   "À gauche, la réponse non : la flèche orange échange r1 et r2, G = S2 a 2 éléments.",
+   "À droite, la réponse oui : aucun échange, G = A2 = {1} a 1 élément."
+  ],
+  "a_voir": "Une seule question décide entre les deux cas."
+ },
+ {
+  "code": "65-064",
+  "a_dire": "Pour x² − 2 sur Q, d = 8 n'est pas un carré rationnel et le groupe est S2 ; mais ce résultat dépend du corps de base.",
+  "legende_titre": "Même polynôme, deux corps, deux groupes",
+  "lecture": [
+   "Le titre donne d = 8 pour x² − 2.",
+   "La rangée du haut est le cas des rationnels : 8 n'est pas un carré, le groupe vert est S2.",
+   "La rangée du bas est le cas des réels : 8 = (2√2)², le groupe violet se réduit à l'identité."
+  ],
+  "a_voir": "Le groupe change quand le corps de base change."
+ }
+]

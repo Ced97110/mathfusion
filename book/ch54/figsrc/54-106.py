@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 40, 38, 18, 'autre')
+text(ax, 22, 52, r'$\eta$', 'autre', 'xl')
+text(ax, 22, 44, 'où vont les coefficients', 'autre', 's')
+box(ax, 47, 40, 38, 18, 'varie')
+text(ax, 66, 52, r'$u$', 'varie', 'xl')
+text(ax, 66, 44, r'où va $x$', 'varie', 's')
+arrow(ax, (22, 39), (36, 29), 'fixe')
+arrow(ax, (66, 39), (52, 29), 'fixe')
+box(ax, 24, 14, 40, 14, 'sujet', label=r'$\eta_u$', size='xl')
+text(ax, 44, 7, r'un seul homomorphisme $R[x]\to S$', 'sujet', 's')
+save(fig, '54-106')

@@ -1,0 +1,180 @@
+[
+ {
+  "code": "50-209",
+  "a_dire": "Le commutateur de a et b s'écrit a, b, a⁻¹, b⁻¹ : il compare les deux ordres ab et ba.",
+  "legende_titre": "Le commutateur : ab suivi de l'inverse de ba",
+  "lecture": [
+   "Les deux cases bleues sont a puis b : c'est le produit ab.",
+   "Les deux cases violettes sont a⁻¹ puis b⁻¹ : c'est l'inverse de ba.",
+   "En bas, a est un tiers de tour et b est une réflexion ; la case verte donne le résultat, deux tiers de tour."
+  ],
+  "a_voir": "Vous voyez que le commutateur est ab suivi de l'inverse de ba."
+ },
+ {
+  "code": "50-210",
+  "a_dire": "Le commutateur vaut e exactement quand ab = ba.",
+  "legende_titre": "Quand le commutateur vaut e",
+  "lecture": [
+   "Le cadre vert montre deux rotations : ab et ba sont égaux, le commutateur vaut e.",
+   "Le cadre rouge montre une rotation et une réflexion : ab et ba sont différents, le commutateur ne vaut pas e.",
+   "La case bleue est ab, la case violette est ba."
+  ],
+  "a_voir": "Vous voyez que e et l'égalité ab = ba vont ensemble."
+ },
+ {
+  "code": "50-211",
+  "a_dire": "Le groupe dérivé G′ rassemble tous les produits de commutateurs : dans le triangle, ce sont les 3 rotations.",
+  "legende_titre": "Le groupe dérivé : tous les produits de commutateurs",
+  "lecture": [
+   "Le rectangle bleu contient e, r et r² : ce sont les 3 rotations, c'est G′.",
+   "La flèche orange montre un seul commutateur, qui vaut r².",
+   "Les 3 disques gris, s, sr et sr², sont les réflexions : ils ne sont pas dans G′."
+  ],
+  "a_voir": "Vous voyez que G′ est un ensemble de plusieurs éléments, alors qu'un commutateur est un seul élément."
+ },
+ {
+  "code": "50-212",
+  "a_dire": "Conjuguer un élément de G′ donne encore un élément de G′ : G′ est normal.",
+  "legende_titre": "G′ reste le même quand on conjugue",
+  "lecture": [
+   "Le rectangle bleu est G′ : e, r et r².",
+   "La flèche orange conjugue r² par une réflexion et donne r.",
+   "La case verte dit que le résultat est encore dans G′."
+  ],
+  "a_voir": "Vous voyez que la conjugaison ne fait pas sortir de G′."
+ },
+ {
+  "code": "50-213",
+  "a_dire": "Si G/N est abélien, alors G′ est contenu dans N ; sans cette hypothèse, c'est faux.",
+  "legende_titre": "Quand G′ est contenu dans N",
+  "lecture": [
+   "À gauche, N est les 3 rotations (cadre vert) : G/N a 2 éléments, il est abélien, et G′ est dans N.",
+   "À droite, N est {e} (case rouge) : G/N a 6 éléments, il n'est pas abélien.",
+   "Le cadre bleu en pointillés est G′ : il dépasse N, donc G′ n'est pas dans N."
+  ],
+  "a_voir": "Vous voyez que l'hypothèse « G/N abélien » décide si G′ est dans N."
+ },
+ {
+  "code": "50-214",
+  "a_dire": "Dans un quotient abélien, l'image d'un commutateur est le neutre, donc le commutateur est dans N.",
+  "legende_titre": "La preuve : passer au quotient",
+  "lecture": [
+   "La chaîne du haut va de G/N abélien (bleu) à l'étape du quotient (orange), puis au résultat (vert).",
+   "En bas, le triangle modulo les 3 rotations a deux classes.",
+   "Le commutateur r² est dans la classe des rotations, qui est le neutre du quotient."
+  ],
+  "a_voir": "Vous voyez que l'étape décisive est le passage au quotient, où le commutateur devient le neutre."
+ },
+ {
+  "code": "50-215",
+  "a_dire": "G′ = {e} exactement quand G est abélien.",
+  "legende_titre": "G′ réduit à {e} : groupe abélien",
+  "lecture": [
+   "À gauche, l'horloge à 12 heures : 12 disques, G′ est le seul élément e (en vert).",
+   "À droite, le triangle : G′ a 3 éléments (rectangle bleu).",
+   "Le texte vert dit abélien, le texte rouge dit non abélien."
+  ],
+  "a_voir": "Vous voyez que G′ = {e} va avec un groupe où tous les couples commutent."
+ },
+ {
+  "code": "50-216",
+  "a_dire": "Il n'y a qu'un seul groupe d'ordre 1645, car 1645 = 5 × 7 × 47 avec trois premiers différents.",
+  "legende_titre": "Un seul groupe de 1 645 éléments",
+  "lecture": [
+   "La grille bleue a 5 colonnes et 7 lignes : 35 cases.",
+   "Chaque case représente 47 éléments, ce qui fait 35 × 47 = 1 645.",
+   "La case verte donne le seul groupe : ℤ/1645ℤ."
+  ],
+  "a_voir": "Vous voyez que 1645 se découpe en 5, 7 et 47 et qu'un seul groupe en résulte."
+ },
+ {
+  "code": "50-217",
+  "a_dire": "Le nombre de 47-Sylow divise 35 et vaut 1 modulo 47 : il ne peut être que 1.",
+  "legende_titre": "Les diviseurs de 35 et le reste 1 modulo 47",
+  "lecture": [
+   "Les ronds sur la droite sont les diviseurs de 35 : 1 (vert), 5, 7 et 35 (rouge).",
+   "Le rond gris est 48, le premier nombre après 1 qui laisse le reste 1.",
+   "5, 7 et 35 sont entre 1 et 47 : aucun ne laisse le reste 1."
+  ],
+  "a_voir": "Vous voyez que seul 1 convient comme nombre de 47-Sylow."
+ },
+ {
+  "code": "50-218",
+  "a_dire": "Le quotient de 35 éléments est cyclique car 7 laisse le reste 2 (et non 1) dans la division par 5, donc G′ est dans H₁.",
+  "legende_titre": "Le test du reste de 7 par 5",
+  "lecture": [
+   "La case bleue du haut est le quotient de 35 = 5 × 7 éléments.",
+   "Les 7 disques sont rangés en un groupe de 5 (bleu) et un reste de 2 (orange).",
+   "Les cases vertes disent : cyclique donc abélien, puis G′ est dans H₁."
+  ],
+  "a_voir": "Vous voyez que le reste 2, différent de 1, est l'étape qui donne le résultat."
+ },
+ {
+  "code": "50-219",
+  "a_dire": "Parmi les diviseurs de 329, seul 1 laisse le reste 1 modulo 5 : le 5-Sylow est unique et normal, donc G′ est dans H₂.",
+  "legende_titre": "Les restes des diviseurs de 329 par 5",
+  "lecture": [
+   "La rangée du haut donne les 4 diviseurs de 329 : 1, 7, 47, 329.",
+   "La rangée du dessous donne leurs restes dans la division par 5 : 1, 2, 2, 4.",
+   "Seule la case verte, reste 1, convient ; elle mène à la case verte du bas."
+  ],
+  "a_voir": "Vous voyez que seul le diviseur 1 laisse le reste 1."
+ },
+ {
+  "code": "50-220",
+  "a_dire": "Un nombre qui divise 47 et divise 5 vaut 1, donc G′ = {e} et G est abélien.",
+  "legende_titre": "Le seul diviseur commun de 47 et de 5",
+  "lecture": [
+   "Le cercle bleu contient les diviseurs de 47, le cercle violet ceux de 5.",
+   "La zone commune ne contient que 1, en vert.",
+   "La case verte conclut : |G′| = 1, donc G′ = {e}."
+  ],
+  "a_voir": "Vous voyez que les deux cercles n'ont que 1 en commun."
+ },
+ {
+  "code": "50-221",
+  "a_dire": "Pour montrer qu'un groupe n'est pas simple, on cherche un Sylow unique, donc normal ; pour 60 éléments le comptage laisse deux valeurs.",
+  "legende_titre": "Montrer qu'un groupe n'est pas simple, et la limite",
+  "lecture": [
+   "La chaîne du haut : n_p = 1, Sylow unique et normal, groupe non simple.",
+   "Les 6 cases donnent les diviseurs de 12 avec leur reste par 5 ; deux cases orange, 1 et 6, laissent le reste 1.",
+   "Le cadre rouge dit que la méthode ne conclut pas, le cas de A₅ est simple."
+  ],
+  "a_voir": "Vous voyez que deux valeurs, 1 et 6, restent possibles pour 60 éléments."
+ },
+ {
+  "code": "50-222",
+  "a_dire": "Pour 20 éléments, le 5-Sylow est unique, donc normal, et le groupe n'est pas simple.",
+  "legende_titre": "Ordre 20 : un 5-Sylow unique",
+  "lecture": [
+   "Les 20 disques forment 4 rangées de 5.",
+   "La rangée bleue de 5 éléments est le 5-Sylow unique et normal.",
+   "Le texte de droite liste n₅ : 1, 2 ou 4, restes 1, 2, 4 ; seul 1 convient.",
+   "La case verte dit : ni {e} ni G, donc pas simple."
+  ],
+  "a_voir": "Vous voyez qu'un sous-groupe normal de 5 éléments existe dans un groupe de 20 éléments."
+ },
+ {
+  "code": "50-223",
+  "a_dire": "Un groupe d'ordre pⁿ avec n > 1 n'est pas simple ; pour n = 1, un groupe de 3 éléments est simple.",
+  "legende_titre": "Ordre pⁿ : n > 1 est nécessaire",
+  "lecture": [
+   "À gauche, 9 disques : la rangée bleue de 3 est un sous-groupe normal, donc le groupe n'est pas simple.",
+   "À droite, 3 disques rouges : seuls {e} et G sont des sous-groupes.",
+   "Le texte rouge dit que n = 1 est le contre-exemple."
+  ],
+  "a_voir": "Vous voyez que pour 9 éléments un sous-groupe normal existe, pas pour 3."
+ },
+ {
+  "code": "50-224",
+  "a_dire": "Pour un ordre pⁿ avec n > 1, la preuve utilise trois faits : centre non réduit à {e}, centre normal, sous-groupe d'ordre p.",
+  "legende_titre": "Les trois faits de la preuve pour 27 éléments",
+  "lecture": [
+   "Le grand cadre gris est G, de 27 = 3 × 3 × 3 éléments.",
+   "Le cadre bleu est le centre Z(G) : 3, 9 ou 27 éléments.",
+   "Le cadre vert est un sous-groupe H d'ordre 3.",
+   "Les flèches de droite nomment les trois faits."
+  ],
+  "a_voir": "Vous voyez que trois faits suffisent, vrais pour tout p et tout n plus grand que 1."
+ }
+]

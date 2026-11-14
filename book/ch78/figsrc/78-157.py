@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+text(ax,44,68,r'même produit $e_3\,e_1\,e_2$, deux parenthèses','encre','s')
+box(ax,3,46,38,10,'sujet',label=r'$e_3(e_1e_2)$'); box(ax,47,46,38,10,'autre',label=r'$(e_3e_1)e_2$')
+arrow(ax,(22,46),(22,36),'fixe'); arrow(ax,(66,46),(66,36),'fixe')
+box(ax,3,24,38,11,'resultat',label=r'$e_3e_4=e_6$'); box(ax,47,24,38,11,'limite',label=r'$-e_6$')
+text(ax,44,29.5,r'$\neq$','limite','l')
+text(ax,44,14,'la chaîne casse dès la première égalité','limite','s')
+text(ax,44,6,r'$\mathbb{O}$ échappe à Frobenius','encre','m')
+save(fig,'78-157')

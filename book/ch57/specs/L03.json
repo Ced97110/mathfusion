@@ -1,0 +1,336 @@
+[
+ {
+  "code": "57-061",
+  "a_dire": "La preuve montre que deux éléments différents ont deux règles différentes, parce que la règle de a envoie 1 sur a.",
+  "legende_titre": "Retrouver a à partir de sa règle",
+  "lecture": [
+   "Chaque ligne part d'un élément en bleu, 3 puis 5.",
+   "La case orange est la règle associée à cet élément : tripler, puis multiplier par 5.",
+   "La case verte donne ce que la règle fait à 1 : 3 pour la première, 5 pour la seconde.",
+   "Le résultat est l'élément de départ, donc deux éléments différents ne peuvent pas avoir la même règle."
+  ],
+  "a_voir": "Le résultat sur 1 redonne l'élément de départ."
+ },
+ {
+  "code": "57-062",
+  "a_dire": "Dans un groupe comme dans un anneau, on remplace chaque élément par ce qu'il fait ; seul le type de ce qui agit change.",
+  "legende_titre": "Même idée pour les groupes et les anneaux",
+  "lecture": [
+   "En haut, l'horloge à 3 positions : l'élément 1 est remplacé par une flèche orange qui décale chaque position d'un cran.",
+   "L'élément 2 est remplacé par des flèches qui décalent de deux crans.",
+   "En bas, dans les entiers, l'élément 3 est remplacé par la règle orange « tripler », qui envoie 1 sur 3 et 2 sur 6."
+  ],
+  "a_voir": "Chaque élément bleu est remplacé par une règle orange, dans les deux cas."
+ },
+ {
+  "code": "57-063",
+  "a_dire": "Un module est un groupe abélien sur lequel un anneau de coefficients agit ; le groupe seul n'a pas de coefficients et l'anneau seul n'agit pas sur un autre ensemble.",
+  "legende_titre": "Un module et ses voisins",
+  "lecture": [
+   "Au milieu, le cadre bleu est le module : l'anneau R en orange agit sur le groupe M en bleu, ce que montre la flèche.",
+   "À gauche, en violet, le groupe abélien M seul : on additionne, sans coefficient.",
+   "À droite, en violet, l'anneau R seul : on multiplie ses éléments entre eux.",
+   "En bas, si R est un corps, on parle d'espace vectoriel."
+  ],
+  "a_voir": "Dans le module, R agit sur un autre ensemble, M."
+ },
+ {
+  "code": "57-064",
+  "a_dire": "Un module est un homomorphisme d'anneaux η de R vers End M : il envoie chaque coefficient sur un endomorphisme en respectant somme, produit et un.",
+  "legende_titre": "Un module est une application η entre anneaux",
+  "lecture": [
+   "À gauche, en orange, des éléments de R : 3, 1, 3 plus 2, 3 fois 2.",
+   "À droite, en bleu, les règles de End M qui leur correspondent, reliées par les flèches η.",
+   "La somme 3 plus 2 va sur la somme des règles, le produit 3 fois 2 sur leur composée, et 1 sur « ne rien changer."
+  ],
+  "a_voir": "Chaque flèche η garde la somme, le produit et le un."
+ },
+ {
+  "code": "57-065",
+  "a_dire": "On abrège η(a)(x) en ax : le résultat de la règle associée à a, appliquée à x.",
+  "legende_titre": "Écrire plus court l'action d'un coefficient",
+  "lecture": [
+   "À gauche, l'écriture complète : la case orange est la règle de a, la case bleue est l'objet x.",
+   "À droite, le même cas avec 3 et 4.",
+   "En bas, les deux cases se touchent : c'est l'écriture abrégée, 3 fois 4 donne 12 en vert."
+  ],
+  "a_voir": "La règle et l'objet se touchent dans l'écriture courte."
+ },
+ {
+  "code": "57-066",
+  "a_dire": "Un R-module à gauche est un groupe abélien M sur lequel l'anneau R agit par une application qui à (a, x) associe ax, le coefficient s'écrivant à gauche.",
+  "legende_titre": "Ce que nomme le mot « module à gauche »",
+  "lecture": [
+   "En haut, l'anneau R en orange, le groupe M en bleu, et l'application de R × M vers M en vert.",
+   "En bas, le cas concret : le coefficient 3 en orange, le couple 2 ; 1 en bleu, et le résultat 6 ; 3 en vert.",
+   "Le coefficient 3 est écrit à gauche du couple."
+  ],
+  "a_voir": "Le coefficient s'écrit avant l'objet sur lequel il agit."
+ },
+ {
+  "code": "57-067",
+  "a_dire": "La règle 1 dit qu'un coefficient agit sur une somme en agissant sur chaque terme : a(x + y) = ax + ay.",
+  "legende_titre": "Un coefficient et une somme d'objets",
+  "lecture": [
+   "En haut, on additionne d'abord les deux couples en bleu, puis on triple : 9 ; 15 en vert.",
+   "En dessous, on triple d'abord chaque couple, puis on additionne : 9 ; 15 en vert.",
+   "Les deux chemins donnent le même couple, ce que dit le signe égal."
+  ],
+  "a_voir": "Les deux chemins se terminent sur le même couple 9 ; 15."
+ },
+ {
+  "code": "57-068",
+  "a_dire": "La règle 2 dit que (a + b)x = ax + bx ; sans elle, une action peut donner deux résultats différents.",
+  "legende_titre": "Une action sur la somme de deux coefficients",
+  "lecture": [
+   "À gauche, l'action normale : (3 + 2)x et 3x + 2x donnent tous deux 10 ; 5, d'où le signe égal vert.",
+   "À droite, en violet, l'action « a fois a fois x » : (3 + 2)x donne 50 ; 25 et 3x + 2x donne 26 ; 13.",
+   "Le signe rouge dit que ces deux résultats sont différents."
+  ],
+  "a_voir": "Dans l'action de droite, les deux résultats diffèrent."
+ },
+ {
+  "code": "57-069",
+  "a_dire": "La règle 3 dit que (ab)x = a(bx) : agir avec le produit ab revient à agir d'abord avec b, puis avec a.",
+  "legende_titre": "Agir avec un produit de coefficients",
+  "lecture": [
+   "La case bleue de gauche est le couple 2 ; 1.",
+   "En orange, b = 2 agit d'abord et donne 4 ; 2, puis a = 3 agit et donne 12 ; 6 en vert.",
+   "La grande flèche bleue du dessous va d'un coup de 2 ; 1 à 12 ; 6 en multipliant par le produit ab = 6."
+  ],
+  "a_voir": "Les deux chemins arrivent sur le même couple 12 ; 6."
+ },
+ {
+  "code": "57-070",
+  "a_dire": "La règle 4 dit que 1x = x : le coefficient un laisse l'objet inchangé ; sans elle, une action peut détruire les objets.",
+  "legende_titre": "Le coefficient un sur un objet",
+  "lecture": [
+   "En haut, le coefficient 1 envoie le couple 2 ; 1 sur le même couple 2 ; 1, en vert.",
+   "En bas, l'action nulle envoie tout sur 0 : le coefficient 1 envoie 2 ; 1 sur 0 ; 0, en rouge.",
+   "Cette seconde action vérifie les règles 1 à 3 mais pas la règle 4."
+  ],
+  "a_voir": "Avec la règle 4, le coefficient 1 ne change pas l'objet."
+ },
+ {
+  "code": "57-071",
+  "a_dire": "Le signe R nomme l'anneau des coefficients, quel qu'il soit ; il n'est pas la lettre à double barre des réels.",
+  "legende_titre": "Une lettre pour l'anneau des coefficients",
+  "lecture": [
+   "En orange, les deux coefficients des deux situations : les réels pour les flèches du plan, les entiers pour les couples d'entiers.",
+   "Les flèches grises mènent à la case bleue R.",
+   "R est une seule lettre qui désigne l'un ou l'autre anneau."
+  ],
+  "a_voir": "Deux anneaux différents, une même lettre R."
+ },
+ {
+  "code": "57-072",
+  "a_dire": "Le signe M nomme le groupe abélien des objets, quels qu'ils soient : on peut les additionner.",
+  "legende_titre": "Une lettre pour les objets que l'on additionne",
+  "lecture": [
+   "En orange, trois situations : les flèches du plan, les couples d'entiers, les points du plan.",
+   "Les flèches grises mènent à la grande case bleue M.",
+   "Dans chaque situation, les objets s'additionnent."
+  ],
+  "a_voir": "Trois situations, une seule lettre M."
+ },
+ {
+  "code": "57-073",
+  "a_dire": "L'écriture a, b ∈ R dit que a et b tiennent la place de n'importe quels coefficients de R.",
+  "legende_titre": "Deux coefficients pris dans R",
+  "lecture": [
+   "La droite graduée représente les entiers, l'anneau R des coefficients.",
+   "Les deux ronds orange a et b sont posés sur deux de ses graduations, 3 et 2.",
+   "L'accolade grise rappelle que a et b viennent de tout l'ensemble R."
+  ],
+  "a_voir": "a et b sont deux points choisis parmi tous ceux de R."
+ },
+ {
+  "code": "57-074",
+  "a_dire": "L'écriture x, y ∈ M dit que x et y tiennent la place de n'importe quels objets de M.",
+  "legende_titre": "Deux objets pris dans M",
+  "lecture": [
+   "Le cadre en pointillés est M : chaque point gris est un couple d'entiers.",
+   "Les deux gros points bleus sont x = 2 ; 1 et y = 1 ; 4.",
+   "Les traits bleus relient chaque point à son nom."
+  ],
+  "a_voir": "x et y sont deux points choisis parmi tous ceux de M."
+ },
+ {
+  "code": "57-075",
+  "a_dire": "ax est le résultat de l'action du coefficient a sur l'objet x ; c'est un élément de M.",
+  "legende_titre": "Ce que désigne le signe ax",
+  "lecture": [
+   "La flèche bleue part de l'origine vers x, le couple 2 ; 1.",
+   "La flèche orange montre l'action du coefficient 3 : elle mène de x au point ax.",
+   "La flèche verte va de l'origine à ax = 6 ; 3, qui est encore un couple d'entiers."
+  ],
+  "a_voir": "Le résultat ax est un point de la même grille que x."
+ },
+ {
+  "code": "57-076",
+  "a_dire": "R × M est l'ensemble des paires (coefficient, objet) ; l'action associe à chaque paire un objet de M.",
+  "legende_titre": "Les paires sur lesquelles agit l'action",
+  "lecture": [
+   "Chaque cadre en pointillés est une paire : un coefficient en orange et un objet en bleu.",
+   "Les deux paires sont 3 avec 2 ; 1, et 2 avec 1 ; 4.",
+   "La flèche verte donne le résultat de chaque paire, un couple de M : 6 ; 3 et 2 ; 8."
+  ],
+  "a_voir": "Le signe × construit des paires, il ne multiplie pas des nombres."
+ },
+ {
+  "code": "57-077",
+  "a_dire": "Le signe 1 désigne l'élément un de l'anneau : multiplier par lui laisse tout inchangé.",
+  "legende_titre": "L'élément un de l'anneau",
+  "lecture": [
+   "À gauche, dans les entiers : 5 devient 5 et 12 devient 12 quand on multiplie par 1.",
+   "À droite, dans l'anneau des règles, c'est la règle orange « ne rien changer » qui joue le rôle de 1."
+  ],
+  "a_voir": "Le un ne change aucun élément, dans chaque anneau."
+ },
+ {
+  "code": "57-078",
+  "a_dire": "Le signe η nomme la correspondance qui associe à chaque coefficient de R l'endomorphisme par lequel il agit.",
+  "legende_titre": "Un nom pour la correspondance",
+  "lecture": [
+   "Le cadre orange contient les coefficients 3 et 2 de R.",
+   "Le cadre gris contient les règles correspondantes de End M : tripler et doubler.",
+   "Chaque flèche bleue est une valeur de la correspondance, et η est son nom."
+  ],
+  "a_voir": "η est le nom de l'ensemble des flèches bleues."
+ },
+ {
+  "code": "57-079",
+  "a_dire": "La règle 1 dit que, pour a fixé, x ↦ ax est un endomorphisme : une règle entière qui respecte l'addition de M.",
+  "legende_titre": "Un coefficient fixé agit comme une règle entière",
+  "lecture": [
+   "Les cases bleues sont les objets x = 2 ; 1, y = 1 ; 4 et leur somme 3 ; 5.",
+   "Les flèches orange sont la même règle, tripler, appliquée aux trois lignes.",
+   "Les cases vertes sont les images : 6 ; 3, 3 ; 12, et 9 ; 15.",
+   "L'image de la somme est la somme des images."
+  ],
+  "a_voir": "La règle envoie la somme sur la somme des images."
+ },
+ {
+  "code": "57-080",
+  "a_dire": "Les règles 2 à 4 disent que a ↦ a_L respecte la somme, le produit et le un : c'est un homomorphisme d'anneaux.",
+  "legende_titre": "Trois règles, une seule propriété",
+  "lecture": [
+   "Chaque ligne a un coefficient en orange à gauche, relié à sa règle en bleu à droite.",
+   "La règle 2 envoie la somme 5 sur la somme des règles tripler et doubler.",
+   "La règle 3 envoie le produit 6 sur leur composée.",
+   "La règle 4 envoie 1 sur « ne rien changer »."
+  ],
+  "a_voir": "Trois égalités séparées forment une seule propriété de la flèche."
+ },
+ {
+  "code": "57-081",
+  "a_dire": "La définition par quatre règles et celle par un homomorphisme R → End M sont la même chose : leurs quatre exigences se correspondent une à une.",
+  "legende_titre": "Deux définitions pour le même objet",
+  "lecture": [
+   "La colonne bleue de gauche liste les quatre règles du module, numérotées de 1 à 4.",
+   "La colonne violette de droite liste les quatre exigences sur η.",
+   "Chaque disque vert porte un numéro et relie la règle de même numéro à son exigence."
+  ],
+  "a_voir": "Chaque règle numérotée a, en face d'elle, une seule exigence sur η."
+ },
+ {
+  "code": "57-082",
+  "a_dire": "On lit d'abord la règle 1, qui parle d'un seul coefficient, puis les règles 2 à 4, qui parlent de deux coefficients.",
+  "legende_titre": "Dans quel ordre lire les règles",
+  "lecture": [
+   "En haut, un seul coefficient, 3 en orange, agit sur les couples 2 ; 1, 1 ; 4, et sur leur somme 3 ; 5.",
+   "La flèche grise mène au deuxième groupe.",
+   "En bas, deux coefficients, 3 et 2, se combinent : leur somme donne 5 et leur produit donne 6."
+  ],
+  "a_voir": "Un coefficient d'abord, puis deux coefficients."
+ },
+ {
+  "code": "57-083",
+  "a_dire": "Pour tout coefficient a, on a a0 = 0 : l'action de a envoie l'objet nul sur l'objet nul ; une action quelconque ne le garantit pas.",
+  "legende_titre": "L'objet nul reste nul",
+  "lecture": [
+   "En haut, dans le module, le coefficient 3 envoie 0 ; 0 sur 0 ; 0, en vert.",
+   "Au milieu, l'action qui envoie x sur x plus a envoie 0 sur 3, en rouge : ce n'est pas un module.",
+   "En bas, la preuve : a0 vaut a0 plus a0, donc a0 est égal à 0."
+  ],
+  "a_voir": "La règle 1 force l'objet nul à rester nul."
+ },
+ {
+  "code": "57-084",
+  "a_dire": "On a a(−x) = −ax : agir sur l'opposé d'un objet donne l'opposé du résultat.",
+  "legende_titre": "Agir sur l'opposé d'un objet",
+  "lecture": [
+   "En haut, le couple 2 ; 1 est triplé et donne 6 ; 3.",
+   "En bas, l'opposé −2 ; −1 est triplé et donne −6 ; −3, en vert.",
+   "Les flèches violettes prennent l'opposé : de 2 ; 1 à −2 ; −1, et de 6 ; 3 à −6 ; −3."
+  ],
+  "a_voir": "Prendre l'opposé avant ou après donne le même résultat."
+ },
+ {
+  "code": "57-085",
+  "a_dire": "On a 0x = 0 : le coefficient zéro envoie tout objet sur l'objet nul ; sans la règle 2, ce serait faux.",
+  "legende_titre": "Le coefficient zéro",
+  "lecture": [
+   "En haut, la règle 2 : (a + b)x = ax + bx.",
+   "Premier cas, avec la règle 2 : le coefficient 0 envoie (2 ; 1) sur (0 ; 0). Dessous, 0x = (0 + 0)x = 0x + 0x.",
+   "Second cas, règle 2 retirée : l'action x ↦ x envoie (2 ; 1) sur (2 ; 1), en rouge. Ce n'est pas (0 ; 0)."
+  ],
+  "a_voir": "Avec la règle 2, 0x est l'objet nul ; sans elle, 0x peut valoir autre chose."
+ },
+ {
+  "code": "57-086",
+  "a_dire": "On a (−a)x = −ax : agir avec l'opposé d'un coefficient donne l'opposé du résultat.",
+  "legende_titre": "Agir avec l'opposé d'un coefficient",
+  "lecture": [
+   "La flèche bleue est 3x = 6 ; 3, partie de l'origine.",
+   "La flèche violette est (−3)x = −6 ; −3, dans le sens contraire.",
+   "Leur somme est 0 ; 0, point vert à l'origine : ce sont deux opposés."
+  ],
+  "a_voir": "Les deux flèches s'annulent quand on les additionne."
+ },
+ {
+  "code": "57-087",
+  "a_dire": "Un espace vectoriel est un module dont les coefficients forment un corps ; on peut y multiplier par un demi, ce qui est interdit dans les couples d'entiers.",
+  "legende_titre": "Un module sur un corps",
+  "lecture": [
+   "La case bleue de gauche est la flèche 2 ; 1.",
+   "En haut, les coefficients sont dans ℝ : ×2, ×(−1) et ×½ donnent les trois cases vertes.",
+   "En bas, les coefficients sont dans ℤ : la multiplication par un demi est interdite, en rouge."
+  ],
+  "a_voir": "La division par un demi n'existe que sur un corps."
+ },
+ {
+  "code": "57-088",
+  "a_dire": "Sur un corps, les quatre règles du module sont les règles de calcul habituelles sur les flèches.",
+  "legende_titre": "Les quatre règles vues sur des flèches",
+  "lecture": [
+   "En haut, les deux flèches : x = (2 ; 1) et y = (−1 ; 2).",
+   "Chaque cadre montre une règle sur des flèches, avec le résultat en vert.",
+   "Règle 1 : doubler la somme x + y donne (2 ; 6). Règle 2 : multiplier par 2 + 3 donne (10 ; 5).",
+   "Règle 3 : multiplier par 3 (orange) puis par 2 donne (12 ; 6). Règle 4 : multiplier par 1 ne change pas la flèche."
+  ],
+  "a_voir": "Chaque règle du module est un geste sur des flèches."
+ },
+ {
+  "code": "57-089",
+  "a_dire": "Le plan ℝ² est un espace vectoriel : ses flèches s'additionnent et se multiplient par un réel en respectant les quatre règles.",
+  "legende_titre": "Les flèches du plan forment un espace vectoriel",
+  "lecture": [
+   "Les deux flèches bleues sont x = 2 ; 1 et y = −1 ; 2.",
+   "La flèche verte est leur somme 1 ; 3, fermée par le parallélogramme en pointillés.",
+   "La flèche orange est 3x = 6 ; 3, la flèche x multipliée par 3."
+  ],
+  "a_voir": "Somme et multiple par un réel donnent encore des flèches du plan."
+ },
+ {
+  "code": "57-090",
+  "a_dire": "Un module sur ℤ est un groupe abélien : multiplier x par un entier n, c'est additionner n fois x.",
+  "legende_titre": "Multiplier par un entier, c'est répéter l'addition",
+  "lecture": [
+   "Les douze ronds sont les heures de l'horloge à 12 heures.",
+   "Les trois flèches orange ajoutent 5 heures chaque fois : de 12 à 5, de 5 à 10, de 10 à 3.",
+   "Le rond vert, 3 heures, est le résultat de 3 fois 5 heures : 5 plus 5 plus 5 vaut 15, soit 3 heures."
+  ],
+  "a_voir": "Trois fois 5 heures est trois additions de 5 heures."
+ }
+]

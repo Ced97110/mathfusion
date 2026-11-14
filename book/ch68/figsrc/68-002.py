@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+box(ax, 2, 12, 20, 18, 'fixe', label='Sonde\németteur')
+box(ax, 66, 12, 20, 18, 'fixe', label='Terre\nrécepteur')
+box(ax, 27, 8, 34, 25, 'sujet', label='antenne, puis espace', size='s')
+text(ax, 44, 29, 'canal', 'sujet', 'l', weight='bold')
+text(ax, 44, 12.5, 'le chemin du message', 'sujet', 's')
+arrow(ax, (22.5, 21), (26.5, 21), 'sujet')
+arrow(ax, (61.5, 21), (65.5, 21), 'sujet')
+box(ax, 36, 39, 16, 8, 'varie', label='bruit')
+arrow(ax, (44, 38.5), (44, 33.6), 'varie')
+save(fig, '68-002')

@@ -1,0 +1,183 @@
+[
+ {
+  "code": "52-145",
+  "a_dire": "Le noyau est l'ensemble des éléments envoyés sur 0′, pas ceux envoyés sur 1′.",
+  "legende_titre": "Ce que l'application efface",
+  "lecture": [
+   "Le cadre de gauche est l'anneau de départ, celui de droite l'anneau d'arrivée.",
+   "Le bloc bleu contient 0, 4, 8 et moins 4 : ils arrivent sur la classe 0, zéro d'arrivée.",
+   "Le bloc violet contient 1, 5 et 9 : ils arrivent sur la classe de 1, qui n'est pas le noyau."
+  ],
+  "a_voir": "Seul le bloc bleu est le noyau."
+ },
+ {
+  "code": "52-146",
+  "a_dire": "Le signe ker η se lit « noyau de êta » : ker est un mot, η est l'application.",
+  "legende_titre": "Un mot et une application",
+  "lecture": [
+   "Les trois lettres ker en bleu forment un mot, venu de kernel, le noyau.",
+   "La lettre η en orange est l'application dont on parle.",
+   "Le texte vert donne l'exemple : les multiples de 4."
+  ],
+  "a_voir": "Il faut voir deux morceaux : le mot ker et la lettre η."
+ },
+ {
+  "code": "52-147",
+  "a_dire": "Sans le respect du produit, le noyau n'absorbe plus la multiplication.",
+  "legende_titre": "Un noyau qui n'est pas un idéal",
+  "lecture": [
+   "Chaque rond est une paire de deux entiers.",
+   "Les ronds bleus sont les paires de deux nombres égaux : le noyau.",
+   "La flèche orange multiplie (3, 3) par (1, 0) et arrive sur le rond rouge (3, 0), hors du noyau."
+  ],
+  "a_voir": "Le produit sort du noyau : ce n'est pas un idéal."
+ },
+ {
+  "code": "52-148",
+  "a_dire": "Un élément du noyau multiplié par un autre reste dans le noyau.",
+  "legende_titre": "Le noyau absorbe",
+  "lecture": [
+   "Le cadre bleu est le noyau : les multiples de 6.",
+   "Le rond bleu est 30, dans le noyau.",
+   "La flèche orange multiplie par 7 et arrive au rond vert 210, qui est aussi dans le noyau."
+  ],
+  "a_voir": "30 et 210 sont tous deux envoyés sur 0′."
+ },
+ {
+  "code": "52-149",
+  "a_dire": "La preuve va de η(b) = 0′ à η(ab) = 0′, donc ab est dans le noyau.",
+  "legende_titre": "Les étapes de la preuve",
+  "lecture": [
+   "Le bloc bleu du haut donne le départ : b est dans le noyau.",
+   "Le bloc orange est l'étape qui compte : η(ab) égale η(a) fois η(b).",
+   "Le bloc gris remplace η(b) par 0′ et trouve 0′.",
+   "Le bloc vert conclut que ab est dans le noyau."
+  ],
+  "a_voir": "L'étape orange fait passer de η(ab) au produit des images."
+ },
+ {
+  "code": "52-150",
+  "a_dire": "Le noyau de ν est I, parce que la classe nulle est I lui-même.",
+  "legende_titre": "Ce que ν envoie sur zéro",
+  "lecture": [
+   "Le bloc bleu de gauche contient 8, élément de I.",
+   "Le bloc gris de gauche contient 5, qui n'est pas dans I.",
+   "La flèche orange est ν : 8 arrive sur la classe 0, qui est I, et 5 arrive sur la classe de 1."
+  ],
+  "a_voir": "Seuls les éléments de I arrivent sur la classe nulle."
+ },
+ {
+  "code": "52-151",
+  "a_dire": "L'image est l'ensemble des éléments atteints dans l'anneau d'arrivée.",
+  "legende_titre": "Les paires atteintes",
+  "lecture": [
+   "Chaque rond est une paire de restes par 6.",
+   "Les 6 ronds verts sont les paires atteintes : l'image.",
+   "Le rond rouge (1, 2) n'est pas atteint."
+  ],
+  "a_voir": "L'image contient 6 paires sur les 36."
+ },
+ {
+  "code": "52-152",
+  "a_dire": "Le signe im η se lit « image de êta » : im est le début du mot image.",
+  "legende_titre": "Un mot et une application",
+  "lecture": [
+   "Les deux lettres im en bleu forment le début du mot image.",
+   "La flèche orange η va de l'anneau de départ à l'anneau d'arrivée : η est l'application.",
+   "Les quatre cases vertes sont les quatre restes par 4, l'image dans l'exemple."
+  ],
+  "a_voir": "Il faut voir deux morceaux : im, début du mot image, et η, l'application."
+ },
+ {
+  "code": "52-153",
+  "a_dire": "Si l'application envoie tout sur 0, l'image ne contient pas 1 : ce n'est pas un sous-anneau.",
+  "legende_titre": "Une image sans l'unité",
+  "lecture": [
+   "Le cadre de gauche est l'anneau de départ avec 0, 1 et 2.",
+   "Les flèches orange envoient tous ces nombres sur le même rond bleu 0 à droite.",
+   "Le rond rouge 1 de droite n'est pas atteint."
+  ],
+  "a_voir": "L'image est réduite à 0 et ne contient pas 1."
+ },
+ {
+  "code": "52-154",
+  "a_dire": "η est injective exactement quand son noyau est réduit à 0.",
+  "legende_titre": "Même image et noyau",
+  "lecture": [
+   "Le titre bleu dit l'équivalence : η injective exactement quand ker η = {0}.",
+   "La colonne verte : si le noyau est {0}, deux éléments de même image ont une différence nulle, donc ils sont égaux.",
+   "La colonne violette : avec le reste par 4, 1 et 5 ont même image et 5 − 1 = 4 est dans le noyau, donc η n'est pas injective."
+  ],
+  "a_voir": "Noyau réduit à 0 : injective. Noyau avec autre chose que 0 : pas injective."
+ },
+ {
+  "code": "52-155",
+  "a_dire": "Descendre dans le quotient puis monter donne le même résultat que η directe.",
+  "legende_titre": "Deux chemins, une arrivée",
+  "lecture": [
+   "Le bloc bleu en haut à gauche est l'anneau de départ, avec 7 ; celui de droite est l'anneau d'arrivée, avec 1.",
+   "La flèche bleue η va directement de 7 à 1.",
+   "La flèche verte ν descend vers la classe de 3, dans le bloc violet.",
+   "La flèche orange η̄ monte de cette classe vers 1."
+  ],
+  "a_voir": "Les deux chemins arrivent au même point : η = η̄ ∘ ν."
+ },
+ {
+  "code": "52-156",
+  "a_dire": "L'application induite envoie une classe sur l'image de n'importe lequel de ses éléments.",
+  "legende_titre": "Une classe, une image",
+  "lecture": [
+   "Le grand bloc bleu est la classe de 3 par 4.",
+   "Les ronds 3 et 7 sont deux éléments de cette classe.",
+   "Les flèches grises montrent que 3 et 7 arrivent sur le même rond vert 1."
+  ],
+  "a_voir": "Tous les éléments de la classe ont la même image."
+ },
+ {
+  "code": "52-157",
+  "a_dire": "Le signe η barre nomme l'application sur les classes, définie à partir de η.",
+  "legende_titre": "Les deux morceaux du signe",
+  "lecture": [
+   "La lettre η en orange rappelle l'application d'origine.",
+   "La barre au-dessus dit que l'application agit sur des classes.",
+   "La ligne verte écrit η barre de a plus I égale η de a."
+  ],
+  "a_voir": "Il faut voir la lettre et la barre."
+ },
+ {
+  "code": "52-158",
+  "a_dire": "Deux éléments de la même classe ont la même image, parce que leur différence est dans le noyau.",
+  "legende_titre": "Les étapes de la preuve",
+  "lecture": [
+   "Le haut rappelle l'exemple : η donne le reste par 2 et I est l'ensemble des multiples de 4.",
+   "Le bloc bleu donne le départ : 3 et 7 sont dans la même classe.",
+   "Le bloc orange est l'étape qui compte : 7 moins 3 égale 4 est dans I, donc dans le noyau.",
+   "Le bloc gris dit que la différence des images est 0′.",
+   "Le bloc vert conclut que les images sont égales.",
+   "Le cadre rouge montre un autre cas, sans la condition : reste par 4 et I = 2ℤ, 1 et 3 ont des images différentes."
+  ],
+  "a_voir": "L'étape orange sert la condition I dans le noyau."
+ },
+ {
+  "code": "52-159",
+  "a_dire": "η est la composée : d'abord ν, puis η barre.",
+  "legende_titre": "Deux actions à la suite",
+  "lecture": [
+   "Les ronds bleus 7 et moins 5 sont des éléments de départ.",
+   "Les flèches vertes (ν) les envoient sur la même classe de 3, en violet.",
+   "La flèche orange (η barre) envoie cette classe sur 1, rond vert."
+  ],
+  "a_voir": "Les deux éléments arrivent à 1 par le même chemin."
+ },
+ {
+  "code": "52-160",
+  "a_dire": "Le quotient par le noyau a la même structure que l'image.",
+  "legende_titre": "Classes et image",
+  "lecture": [
+   "Chaque bloc du haut est une classe de 3 éléments ; le bleu est le noyau.",
+   "Chaque flèche orange associe une classe à un élément de l'image, un pour un.",
+   "Les cases vertes sont les 4 éléments de l'image."
+  ],
+  "a_voir": "12 éléments en classes de 3 donnent 4 classes, associées une à une aux 4 éléments de l'image : même structure."
+ }
+]

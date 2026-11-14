@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# un produit de Hamilton se sépare en deux morceaux (Gibbs et Heaviside)
+fig, ax = canvas(88)
+box(ax, 14, 72, 60, 12, 'autre', label='Hamilton : un seul produit', size='s')
+arrow(ax, (34, 72), (22, 62), 'autre')
+arrow(ax, (54, 72), (66, 62), 'autre')
+text(ax, 44, 66.5, 'Gibbs et Heaviside', 'fixe', 's')
+box(ax, 4, 50, 38, 12, 'sujet', label='un nombre', size='s')
+box(ax, 46, 50, 38, 12, 'varie', label='un vecteur', size='s')
+text(ax, 23, 44, 'produit scalaire', 'sujet', 's')
+text(ax, 65, 44, 'produit vectoriel', 'varie', 's')
+# deux cas chiffrés : chaque morceau pour la même paire
+box(ax, 4, 22, 38, 14, 'sujet', label=r'$i,\ j$ : nombre $0$', size='s')
+box(ax, 46, 22, 38, 14, 'varie', label=r'$i,\ j$ : vecteur $k$', size='s')
+box(ax, 4, 4, 38, 14, 'sujet', label=r'$i,\ i$ : nombre $1$', size='s')
+box(ax, 46, 4, 38, 14, 'varie', label=r'$i,\ i$ : vecteur nul', size='s')
+save(fig, '41-159')

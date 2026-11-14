@@ -1,0 +1,194 @@
+[
+ {
+  "code": "50-129",
+  "a_dire": "On dit : pour trouver un sous-groupe, on descend vers un groupe plus petit, on y trouve ce qu'il faut, puis on remonte ; la descente s'arrête quand on cherche 1 élément.",
+  "legende_titre": "Trois étages, une descente et une remontée",
+  "lecture": [
+   "Les trois cadres bleus et vert sont trois groupes de plus en plus petits : on cherche 4 éléments, puis 2, puis 1.",
+   "Les flèches orange vers le bas sont les descentes.",
+   "Les flèches vertes vers le haut sont les remontées.",
+   "Le texte vert du bas dit que, pour 1 élément, le sous-groupe réduit à l'identité suffit."
+  ],
+  "a_voir": "Chaque descente divise la taille cherchée, jusqu'à 1."
+ },
+ {
+  "code": "50-130",
+  "a_dire": "On dit : la preuve part d'un groupe dont 3 divise l'ordre, l'équation des classes porte le poids, et on arrive à un élément d'ordre 3.",
+  "legende_titre": "Départ, étape décisive, arrivée",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : le groupe a 6 éléments et 3 divise 6.",
+   "Les 6 cases se rangent en 1 case grise (le centre), puis une classe orange de 2 et une classe orange de 3.",
+   "Le cadre vert du milieu montre que le centralisateur de r a 6 divisé par 2, soit 3 éléments, et que 3 divise 3.",
+   "Le cadre vert du bas est l'arrivée : un élément d'ordre 3."
+  ],
+  "a_voir": "L'équation des classes 6 = 1 + 2 + 3 mène à un centralisateur de 3 éléments."
+ },
+ {
+  "code": "50-131",
+  "a_dire": "On dit : si le groupe a p éléments, tout élément autre que le neutre est d'ordre p.",
+  "legende_titre": "Deux éléments de l'horloge à 5 heures",
+  "lecture": [
+   "Chaque pentagone est l'horloge à 5 heures, avec ses 5 éléments de 0 à 4.",
+   "Les flèches orange suivent l'élément 1 : 0, 1, 2, 3, 4, puis retour à 0.",
+   "Les flèches violettes suivent l'élément 2 : 0, 2, 4, 1, 3, puis retour à 0.",
+   "Dans les deux cas il faut 5 pas pour revenir à 0."
+  ],
+  "a_voir": "Les deux éléments reviennent à 0 après 5 pas, comme le veut le nombre premier 5."
+ },
+ {
+  "code": "50-132",
+  "a_dire": "On dit : on suppose Cauchy vrai pour tous les groupes plus petits que G, et on peut s'en servir.",
+  "legende_titre": "Un petit groupe sert pour un plus grand",
+  "lecture": [
+   "La rangée verte de 3 cases est un groupe de 3 éléments, pour lequel Cauchy est déjà acquis.",
+   "La rangée bleue de 6 cases est le groupe G, avec n égal à 6.",
+   "La flèche orange dit qu'on peut utiliser le petit groupe pour G.",
+   "Le nombre 3 divise 3 et divise 6."
+  ],
+  "a_voir": "Seul le groupe plus petit est déjà réglé, pas G lui-même."
+ },
+ {
+  "code": "50-133",
+  "a_dire": "On dit : le nombre d'éléments du groupe est le nombre d'éléments du centre plus la taille de chaque classe à plusieurs éléments.",
+  "legende_titre": "Le carré : 2 + 2 + 2 + 2 = 8",
+  "lecture": [
+   "Les 2 cases grises sont le centre.",
+   "Chaque paire de cases orange est une classe de 2 éléments, avec son représentant x1, x2 ou x3.",
+   "Sous chaque groupe de cases, l'accolade donne sa taille.",
+   "Le total vert est la somme : 8."
+  ],
+  "a_voir": "On additionne le centre et les trois indices pour retrouver 8."
+ },
+ {
+  "code": "50-134",
+  "a_dire": "On dit : pour un élément hors du centre, le centralisateur est strictement plus petit que le groupe.",
+  "legende_titre": "Le centralisateur est plus petit que le groupe",
+  "lecture": [
+   "La rangée grise du haut est le groupe, avec 8 éléments.",
+   "Dans la rangée du bas, les 4 cases bleues sont le centralisateur de la réflexion.",
+   "Les 4 cases rouges en pointillé sont celles qui ne commutent pas avec elle.",
+   "Le texte vert compare 4 et 8."
+  ],
+  "a_voir": "Des éléments ne commutent pas avec la réflexion, donc le centralisateur n'est pas tout le groupe."
+ },
+ {
+  "code": "50-135",
+  "a_dire": "On dit : si p divise la taille d'un centralisateur, on cherche l'élément d'ordre p dans ce centralisateur, plus petit que G.",
+  "legende_titre": "On cherche dans le centralisateur",
+  "lecture": [
+   "La rangée de 6 cases est le groupe G ; les 3 cases bleues e, r et r au carré sont le centralisateur de r.",
+   "L'accolade bleue donne sa taille : 3 éléments.",
+   "Le cadre vert dit que 3 divise 3, donc Cauchy s'applique à ce centralisateur.",
+   "Le cadre vert à droite dit que r est d'ordre 3 ; cet élément est aussi dans G."
+  ],
+  "a_voir": "L'élément cherché se trouve dans le centralisateur, donc aussi dans G."
+ },
+ {
+  "code": "50-136",
+  "a_dire": "On dit : si p ne divise pas la taille du centralisateur, alors p divise l'indice, car p divise leur produit.",
+  "legende_titre": "12 = 4 fois 3",
+  "lecture": [
+   "Chaque bloc bleu de 4 cases est un ensemble de 4 éléments : 3 ne divise pas 4 (texte rouge).",
+   "Il y a 3 blocs, repérés par l'accolade verte : c'est l'indice.",
+   "Le total en haut est 12 = 4 × 3.",
+   "Le texte vert dit que 3 divise l'indice 3."
+  ],
+  "a_voir": "Le nombre 3 ne divise pas un facteur, donc il divise l'autre."
+ },
+ {
+  "code": "50-137",
+  "a_dire": "On dit : si p divise |G| et chaque taille de classe, alors p divise le nombre d'éléments du centre.",
+  "legende_titre": "Le centre par soustraction",
+  "lecture": [
+   "Les 6 cases vertes sont le centre.",
+   "Les deux groupes de 3 cases orange sont les deux classes de 3 éléments.",
+   "Le titre vert donne le calcul : 12 − 3 − 3 = 6.",
+   "Les textes du bas disent que 12, 3 et 3 sont des multiples de 3, donc 3 divise 6."
+  ],
+  "a_voir": "Le centre a 6 éléments, un multiple de 3, comme différence de multiples de 3."
+ },
+ {
+  "code": "50-138",
+  "a_dire": "On dit : dans un groupe abélien, on prend un élément a d'ordre t ; si p divise t, a puissance t/p convient, sinon on passe au quotient et on remonte.",
+  "legende_titre": "Deux cas pour trouver l'élément d'ordre p",
+  "lecture": [
+   "Le cadre bleu du haut est le groupe abélien A, dont l'ordre est divisible par p.",
+   "Le cadre orange pose la question qui sépare les deux cas : p divise-t-il t ?",
+   "À gauche, le cadre vert (oui) donne a puissance t/p, d'ordre p ; l'exemple est 12 / 3 = 4.",
+   "À droite, le cadre violet (non) passe au quotient puis remonte."
+  ],
+  "a_voir": "La question « p divise t ? » partage la preuve en deux chemins."
+ },
+ {
+  "code": "50-139",
+  "a_dire": "On dit : pour trouver un seul élément d'ordre p, il n'est pas nécessaire de classer tous les groupes abéliens ; l'argument direct suffit.",
+  "legende_titre": "Un long chemin et un chemin direct",
+  "lecture": [
+   "Le cadre bleu est la question : un élément d'ordre 3.",
+   "Le cadre vert est la réponse : l'élément 4.",
+   "Le chemin violet passe par le cadre qui classe tous les groupes abéliens : plus que nécessaire.",
+   "La flèche orange épaisse est l'argument direct : multiplier 1 par 4."
+  ],
+  "a_voir": "Une seule flèche suffit là où le chemin violet fait un grand détour."
+ },
+ {
+  "code": "50-140",
+  "a_dire": "On dit : si p divise l'ordre t de a, alors a puissance t/p est d'ordre p.",
+  "legende_titre": "12 pas coupés en 3 blocs de 4",
+  "lecture": [
+   "Les 12 cases représentent les t pas de a, jusqu'à e.",
+   "Elles sont coupées en 3 blocs, comme p égal 3 ; chaque bloc a t/p égal 4 pas.",
+   "Le bloc bleu est a puissance 4 répété une fois.",
+   "Le texte vert dit que répéter 3 fois a puissance 4 donne e : l'ordre est 3."
+  ],
+  "a_voir": "Répéter l'élément a puissance 4 trois fois fait un tour complet."
+ },
+ {
+  "code": "50-141",
+  "a_dire": "On dit : dans l'horloge à 12 heures, l'élément 4 est d'ordre 3.",
+  "legende_titre": "Trois pas de 4 sur l'horloge",
+  "lecture": [
+   "Les 12 points sont les heures ; seuls 0, 4 et 8 sont numérotés.",
+   "Les flèches orange sont les pas : de 0 à 4, de 4 à 8, de 8 à 0.",
+   "Chaque pas ajoute 4.",
+   "Le texte vert compte 3 pas pour revenir à 0."
+  ],
+  "a_voir": "Après 3 pas de 4, on est de retour à 0."
+ },
+ {
+  "code": "50-142",
+  "a_dire": "On dit : si p ne divise pas t, on passe au quotient A sur le sous-groupe de a, on y trouve une classe d'ordre p, puis on remonte pour obtenir un élément d'ordre p.",
+  "legende_titre": "Du quotient à l'élément d'ordre 2",
+  "lecture": [
+   "Les 4 cadres sont les 4 classes du quotient ; le cadre bleu {0, 4, 8} est le sous-groupe engendré par 4.",
+   "Le cadre vert {2, 6, 10} est la classe de b égal 2, d'ordre 2.",
+   "La flèche orange est la remontée vers A : 2 est d'ordre 6 et 2 divise 6.",
+   "Le cadre vert du bas : répété 3 fois, 2 donne 6, qui est d'ordre 2."
+  ],
+  "a_voir": "Le quotient a 12 / 3 = 4 éléments, et la remontée donne 6, d'ordre 2."
+ },
+ {
+  "code": "50-143",
+  "a_dire": "On dit : dans le carré, pour p égal 2, on est dans le premier cas : 2 divise la taille 4 d'un centralisateur.",
+  "legende_titre": "Le carré et le premier 2",
+  "lecture": [
+   "Les cases du haut sont les classes : deux grises de 1 élément et trois orange de 2 éléments.",
+   "La flèche orange part d'une classe de 2 : son centralisateur a 8 / 2 = 4 éléments.",
+   "La rangée du bas a 8 cases ; les 4 cases bleues sont ce centralisateur.",
+   "Le texte vert dit que 2 divise 4."
+  ],
+  "a_voir": "Un centralisateur de 4 éléments est divisible par 2."
+ },
+ {
+  "code": "50-144",
+  "a_dire": "On dit : dans un groupe abélien aucune classe n'a plus d'un élément, la somme est vide, et on est toujours dans le second cas.",
+  "legende_titre": "Un groupe abélien : le centre est tout le groupe",
+  "lecture": [
+   "Les 12 cases grises sont les 12 éléments de l'horloge ; toutes forment le centre.",
+   "L'accolade donne : le centre est le groupe, 12 éléments.",
+   "Le cadre orange en pointillé est vide : aucune classe de plus d'un élément.",
+   "Le titre vert donne la formule avec une somme égale à 0."
+  ],
+  "a_voir": "Le cadre vide montre que la somme n'a aucun terme."
+ }
+]

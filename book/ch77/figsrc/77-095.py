@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 22, 51, 'caractéristique', 'sujet', 'm')
+text(ax, 22, 46, r'degré $n=2$', 'sujet', 's')
+box(ax, 4, 30, 17, 9, 'sujet', label=r'$\lambda-3$')
+box(ax, 23, 30, 17, 9, 'sujet', label=r'$\lambda-3$')
+text(ax, 22, 24.5, r'$(\lambda-3)^2=\lambda^2-6\lambda+9$', 'sujet', 's')
+text(ax, 44, 34.5, r'$\neq$', 'limite', 'l')
+text(ax, 66, 51, 'minimal', 'resultat', 'm')
+text(ax, 66, 46, r'degré $1$', 'resultat', 's')
+box(ax, 57.5, 30, 17, 9, 'resultat', label=r'$\lambda-3$')
+box(ax, 14, 4, 60, 9, 'fixe', label=r'les deux valent 0 en 3 : $3-3=0$', size='s')
+save(fig, '77-095')

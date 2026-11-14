@@ -1,0 +1,196 @@
+[
+ {
+  "code": "79-097",
+  "a_dire": "La réflexivité a ≤ a se prouve en reconnaissant la loi L3 : a ∨ a = a.",
+  "legende_titre": "Une preuve en une seule reconnaissance",
+  "lecture": [
+   "La case bleue donne le départ : a ≤ a veut dire a ∨ a = a.",
+   "La case orange est l'étape qui compte : on reconnaît la loi L3.",
+   "La case verte est l'arrivée : a ≤ a pour tout a.",
+   "Les cases grises de droite donnent les nombres : PPCM(4, 4) = 4 et PPCM(12, 12) = 12."
+  ],
+  "a_voir": "Il n'y a pas d'autre calcul que la reconnaissance de L3."
+ },
+ {
+  "code": "79-098",
+  "a_dire": "L'antisymétrie se prouve en utilisant L1 pour relier a ∨ b et b ∨ a, ce qui donne a = b.",
+  "legende_titre": "Deux égalités reliées par un échange",
+  "lecture": [
+   "La case bleue donne le départ : a ≤ b et b ≤ a.",
+   "La case orange est l'étape qui compte : L1 permet d'échanger a ∨ b et b ∨ a.",
+   "La case verte est l'arrivée : a = b.",
+   "À droite, avec 4 et 12, on aboutit à 12 = 4, en rouge : c'est faux, donc les deux suppositions ne vont pas ensemble."
+  ],
+  "a_voir": "L1 relie les deux égalités de départ."
+ },
+ {
+  "code": "79-099",
+  "a_dire": "La transitivité se prouve en changeant les parenthèses avec L2 pour enchaîner les deux hypothèses.",
+  "legende_titre": "Une chaîne qui tient grâce aux parenthèses",
+  "lecture": [
+   "La case bleue donne le départ : a ∨ b = b et b ∨ c = c.",
+   "La case orange est l'étape qui compte : L2 change les parenthèses.",
+   "La case verte est l'arrivée : a ∨ c = c.",
+   "À droite, les nombres 4, 12 et 60 suivent les mêmes étapes."
+  ],
+  "a_voir": "L2 change les parenthèses au milieu de la chaîne."
+ },
+ {
+  "code": "79-100",
+  "a_dire": "Pour prouver que a ∨ b est le sup, on montre deux choses : c'est un majorant, puis c'est le plus petit.",
+  "legende_titre": "Deux temps pour un plus petit majorant",
+  "lecture": [
+   "La case bleue donne le départ : a ∨ b et les quatre lois.",
+   "La case grise est le premier temps : a ∨ b est un majorant.",
+   "La case orange est le second temps, celui qui compte : a ∨ b est sous tout autre majorant u.",
+   "La case verte est l'arrivée : a ∨ b est le sup.",
+   "À droite, 12 est le PPCM de 4 et 6, et 12 est sous le majorant 60."
+  ],
+  "a_voir": "Le second temps compare a ∨ b à tout autre majorant."
+ },
+ {
+  "code": "79-101",
+  "a_dire": "Pour montrer que a ∨ b est un majorant de a, on calcule a ∨ (a ∨ b) avec L2 puis L3.",
+  "legende_titre": "Le calcul qui retrouve a ∨ b",
+  "lecture": [
+   "La case bleue donne le départ : le calcul de a ∨ (a ∨ b).",
+   "La case orange est l'étape qui compte : L2 regroupe les deux a.",
+   "La case grise applique L3 : a ∨ a devient a.",
+   "La case verte est l'arrivée : a ≤ a ∨ b.",
+   "À droite, avec 4 et 6, on retrouve PPCM(4, 6) = 12."
+  ],
+  "a_voir": "On retrouve a ∨ b des deux côtés de l'égalité."
+ },
+ {
+  "code": "79-102",
+  "a_dire": "Pour montrer que a ∨ b est le plus petit majorant, on prend un majorant u et on utilise L2.",
+  "legende_titre": "La comparaison avec un autre majorant",
+  "lecture": [
+   "La case bleue donne le départ : un majorant u de a et de b.",
+   "La case orange est l'étape qui compte : L2 change les parenthèses de (a ∨ b) ∨ u.",
+   "La case grise remplace b ∨ u par u, puis a ∨ u par u.",
+   "La case verte est l'arrivée : a ∨ b ≤ u.",
+   "À droite, u = 60 et on trouve 12 ≤ 60."
+  ],
+  "a_voir": "Le changement de parenthèses permet d'utiliser que u est au-dessus de b puis de a."
+ },
+ {
+  "code": "79-103",
+  "a_dire": "Dans l'étape 3, a ∧ b est l'inf, et la loi d'absorption L4 est ce qui relie ∧ à l'ordre.",
+  "legende_titre": "L4 relie la rencontre à l'ordre",
+  "lecture": [
+   "La case bleue donne le départ : a ∧ b et les lois L1 à L3.",
+   "La case orange est l'étape qui compte : L4, l'absorption, relie ∧ à l'ordre fait avec ∨.",
+   "La case verte est l'arrivée : a ∧ b est l'inf.",
+   "À droite, avec 4 et 12, on trouve PGCD(4, 12) = 4."
+  ],
+  "a_voir": "L4 est la seule étape qui mélange ∧ et ∨."
+ },
+ {
+  "code": "79-104",
+  "a_dire": "L'absorption permet de lire l'ordre aussi avec ∧ : a ∨ b = b équivaut à a ∧ b = a.",
+  "legende_titre": "Une même phrase lue avec deux signes",
+  "lecture": [
+   "La case bleue donne le départ : a ∨ b = b.",
+   "La case orange est l'étape qui compte : L4 mène à a ∧ b = a.",
+   "La case verte est l'arrivée : a ∧ b = a.",
+   "À droite, sans L4, avec 0 et 1 et le maximum, 0 ∨ 1 = 1 mais 0 ∧ 1 = 1, qui est différent de 0, en rouge."
+  ],
+  "a_voir": "Sans L4, l'équivalence échoue."
+ },
+ {
+  "code": "79-105",
+  "a_dire": "Avec 4 et 12, PPCM(4, 12) = 12 et PGCD(4, 12) = 4 sont deux lectures de la même phrase : 4 divise 12.",
+  "legende_titre": "Deux égalités, une seule phrase",
+  "lecture": [
+   "La case bleue donne le PPCM de 4 et 12 : c'est 12, le plus petit majorant.",
+   "La case violette donne le PGCD de 4 et 12 : c'est 4, le plus grand minorant.",
+   "Les deux flèches vertes arrivent à la même case : 4 divise 12."
+  ],
+  "a_voir": "Les deux égalités disent la même chose."
+ },
+ {
+  "code": "79-106",
+  "a_dire": "On refait l'étape 2 en remplaçant ∨ par ∧ : a ∧ b est le plus grand minorant.",
+  "legende_titre": "La même preuve avec l'autre signe",
+  "lecture": [
+   "La case bleue donne le départ : un minorant l de a et de b.",
+   "La case orange est l'étape qui compte : L2 change les parenthèses de l ∧ (a ∧ b).",
+   "La case grise remplace l ∧ a par l, puis l ∧ b par l.",
+   "La case verte est l'arrivée : l ≤ a ∧ b.",
+   "À droite, avec 12, 20 et l = 2, on trouve 2 ≤ 4."
+  ],
+  "a_voir": "La preuve est celle de l'étape 2 avec ∧ à la place de ∨."
+ },
+ {
+  "code": "79-107",
+  "a_dire": "Sur {0, 1}, avec ∨ et ∧ égaux au max, L1, L2 et L3 sont vraies mais L4 échoue.",
+  "legende_titre": "Quand l'absorption manque",
+  "lecture": [
+   "La case bleue donne le départ : ∨ et ∧ valent tous deux le max sur {0, 1}.",
+   "La case grise dit que L1, L2 et L3 sont vraies.",
+   "La case orange teste L4 : (0 ∨ 1) ∧ 0 = 1 ∧ 0 = 1.",
+   "La case rouge est l'arrivée : 1 est différent de 0, L4 échoue."
+  ],
+  "a_voir": "Sans L4, le résultat est faux, alors que les trois autres lois sont vraies."
+ },
+ {
+  "code": "79-108",
+  "a_dire": "L'absorption L4 est la seule loi qui contient les deux opérations dans la même égalité.",
+  "legende_titre": "La seule loi qui mélange les deux signes",
+  "lecture": [
+   "La case bleue regroupe L1, L2, L3 pour le PPCM seul.",
+   "La case violette regroupe L1, L2, L3 pour le PGCD seul.",
+   "La case orange est L4 : elle contient les deux opérations.",
+   "Elle donne PGCD(4, PPCM(4, 6)) = 4."
+  ],
+  "a_voir": "Les deux flèches arrivent dans L4 : c'est elle qui relie les deux opérations."
+ },
+ {
+  "code": "79-109",
+  "a_dire": "Le principe de dualité : échanger ∨ et ∧, donc ≤ et ≥, donne un énoncé aussi démontré.",
+  "legende_titre": "Les mêmes lois, signes échangés",
+  "lecture": [
+   "La colonne bleue donne les lois avec ∨ et le PPCM.",
+   "La colonne violette donne les mêmes lois avec ∧ et le PGCD.",
+   "Les flèches orange montrent l'échange d'une colonne à l'autre.",
+   "La case du bas dit que ≤ devient ≥."
+  ],
+  "a_voir": "Chaque loi existe en deux versions qui se correspondent ligne par ligne."
+ },
+ {
+  "code": "79-110",
+  "a_dire": "Sur le dessin, la dualité retourne le diagramme de haut en bas.",
+  "legende_titre": "Le diagramme retourné",
+  "lecture": [
+   "À gauche, le diagramme du livre : 1 en bas, 60 en haut, 12 et 20 au milieu.",
+   "À droite, le même diagramme retourné : 1 en haut, 60 en bas.",
+   "Les disques bleus 12 et 20 restent côte à côte.",
+   "Le disque vert 60, PPCM de 12 et 20, passe de dessus à dessous."
+  ],
+  "a_voir": "Retourner le dessin échange le joint et la rencontre."
+ },
+ {
+  "code": "79-111",
+  "a_dire": "Un sous-treillis est une partie qui contient le ∨ et le ∧ de chacune de ses paires.",
+  "legende_titre": "Une partie stable, une partie qui ne l'est pas",
+  "lecture": [
+   "À gauche, la partie {2, 4, 6, 12} en vert : PGCD(4, 6) = 2 reste dans la partie.",
+   "À droite, la partie {4, 6, 12} en rouge : PGCD(4, 6) = 2 sort de la partie.",
+   "Le disque rouge vide marque le 2 qui manque."
+  ],
+  "a_voir": "La partie de gauche est stable, celle de droite ne l'est pas."
+ },
+ {
+  "code": "79-112",
+  "a_dire": "Les sous-groupes de ℤ forment un treillis pour l'inclusion, mais ce n'est pas un sous-treillis de 𝒫(ℤ), car leur sup n'est pas l'union.",
+  "legende_titre": "Même ordre, sup différent",
+  "lecture": [
+   "À gauche, dans 𝒫(ℤ), le sup de 2ℤ et 3ℤ est leur union.",
+   "Cette union contient 2 et 3 mais pas 5, en rouge : ce n'est pas un sous-groupe.",
+   "À droite, dans les sous-groupes, le sup de 2ℤ et 3ℤ est un autre ensemble.",
+   "Le signe rouge ≠ dit que les deux sups sont différents."
+  ],
+  "a_voir": "Pour être un sous-treillis, il faut les mêmes opérations, pas seulement le même ordre."
+ }
+]

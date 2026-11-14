@@ -1,0 +1,187 @@
+[
+ {
+  "code": "44-223",
+  "a_dire": "Dire que r est la rotation de 360°/n et s une réflexion.",
+  "legende_titre": "Deux lettres, deux mouvements",
+  "lecture": [
+   "À gauche, la flèche orange courbe est la rotation r : sur le carré, un quart de tour de 360°/4 = 90°, du sommet 1 vers le sommet 2.",
+   "À droite, la ligne orange en tirets est l’axe de la réflexion s.",
+   "La flèche à deux pointes échange les sommets 1 et 4 de part et d’autre de l’axe."
+  ],
+  "a_voir": "r fait tourner d’une part de tour, s retourne autour d’un axe."
+ },
+ {
+  "code": "44-224",
+  "a_dire": "Dire que n rotations de 360°/n font 360°, un tour complet, donc r^n = 1.",
+  "legende_titre": "Quatre quarts de tour",
+  "lecture": [
+   "Les quatre flèches orange autour du carré sont quatre fois la rotation r.",
+   "Chaque flèche va d’un sommet au suivant : 90 degrés.",
+   "À droite, 4 × 90° donne 360°, un tour complet, et la case verte donne r^4 = 1."
+  ],
+  "a_voir": "Quatre rotations de 90° ramènent chaque sommet à sa place."
+ },
+ {
+  "code": "44-225",
+  "a_dire": "Dire que deux retournements autour du même axe remettent le triangle à sa place : s² = 1.",
+  "legende_titre": "Retourner deux fois le même axe",
+  "lecture": [
+   "Le triangle bleu est le départ ; les sommets sont lus 1, 2, 3.",
+   "Après le premier s (flèche orange), le triangle orange a 2 et 3 échangés.",
+   "Après le second s, le triangle vert a de nouveau 1, 2, 3 : le départ est retrouvé.",
+   "La ligne en tirets est le même axe pour les deux retournements."
+  ],
+  "a_voir": "Le second retournement défait le premier."
+ },
+ {
+  "code": "44-226",
+  "a_dire": "Dire que, dans le carré, s r s envoie le sommet 1 au même endroit que r³, c’est-à-dire r^(−1).",
+  "legende_titre": "Un retournement change le sens",
+  "lecture": [
+   "Sur la ligne du haut, le disque suit le sommet 1 : s, puis r, puis s.",
+   "Le disque finit à la place 4 (en vert).",
+   "Sur la ligne du bas, trois quarts de tour r³ envoient aussi le disque à la place 4.",
+   "Les deux chemins arrivent au même endroit : srs = r³ = r^(−1)."
+  ],
+  "a_voir": "Les deux suites de mouvements finissent à la même place."
+ },
+ {
+  "code": "44-227",
+  "a_dire": "Dire que r^n = 1, s² = 1 et srs = r^(−1) suffisent pour calculer s r² s dans le carré.",
+  "legende_titre": "Trois égalités, un calcul",
+  "lecture": [
+   "Les trois cases bleues à gauche sont les trois égalités.",
+   "La colonne du milieu est le calcul de s r r s, ligne après ligne.",
+   "Chaque flèche orange porte l’égalité utilisée pour passer à la ligne suivante.",
+   "La case verte est le résultat : r²."
+  ],
+  "a_voir": "Chaque ligne du calcul vient d’une des trois égalités."
+ },
+ {
+  "code": "44-228",
+  "a_dire": "Dire que s retourne le sens de la rotation : s r s tourne dans le sens contraire de r.",
+  "legende_titre": "Le retournement inverse le sens",
+  "lecture": [
+   "Le carré de gauche a sa flèche orange vers la gauche : le sens direct de r.",
+   "La ligne en tirets est l’axe de s ; le carré de droite en est l’image.",
+   "Dans ce carré, les numéros sont placés à l’envers et la flèche part dans l’autre sens : s r s = r^(−1)."
+  ],
+  "a_voir": "Une image dans l’axe change le sens de la flèche."
+ },
+ {
+  "code": "44-229",
+  "a_dire": "Dire que D_n compte n rotations 1, r, …, r^(n−1) et n réflexions s, rs, …, r^(n−1)s.",
+  "legende_titre": "Deux rangées de quatre mouvements",
+  "lecture": [
+   "Le disque bleu suit le sommet 1 et le disque orange le sommet 2.",
+   "Sur la rangée du haut, les quatre rotations gardent l’ordre : 2 suit 1 dans le même sens.",
+   "Sur la rangée du bas, les quatre réflexions inversent l’ordre.",
+   "Huit mouvements en tout, pour n = 4."
+  ],
+  "a_voir": "Quatre mouvements qui gardent l’ordre, quatre qui l’inversent."
+ },
+ {
+  "code": "44-230",
+  "a_dire": "Dire que les axes de réflexion sont d’une seule sorte pour n = 5 et de deux sortes pour n = 6.",
+  "legende_titre": "Axes du pentagone et de l’hexagone",
+  "lecture": [
+   "À gauche, le pentagone a 5 axes bleus : chacun passe par un sommet et par le milieu du côté opposé.",
+   "À droite, l’hexagone a 3 axes orange qui passent par deux sommets opposés.",
+   "Il a aussi 3 axes verts qui passent par les milieux de deux côtés opposés."
+  ],
+  "a_voir": "5 côtés : une sorte d’axe ; 6 côtés : deux sortes."
+ },
+ {
+  "code": "44-231",
+  "a_dire": "Dire que, pour n impair, chaque réflexion fixe un sommet, et que pour n pair elle en fixe deux ou aucun.",
+  "legende_titre": "Sommets fixes selon la parité",
+  "lecture": [
+   "Le pentagone bleu a un axe ; le disque marque le seul sommet sur l’axe.",
+   "Le premier hexagone a un axe orange par deux sommets : deux disques.",
+   "Le second hexagone a un axe vert par les milieux de deux côtés : aucun disque."
+  ],
+  "a_voir": "Le nombre de disques sur l’axe change avec n pair ou impair."
+ },
+ {
+  "code": "44-232",
+  "a_dire": "Dire que D_3 = S_3 (6 et 6) mais que D_4 est plus petit que S_4 (8 sur 24).",
+  "legende_titre": "Mouvements et permutations",
+  "lecture": [
+   "Les cases bleues comptent les mouvements : 6 pour le triangle, 8 pour le carré.",
+   "Les cases violettes comptent les permutations : 6 pour 3 nombres, 24 pour 4 nombres.",
+   "Pour 3 côtés, les deux lignes ont la même longueur : D_3 = S_3.",
+   "Pour 4 côtés, 16 cases rouges sont des permutations qui ne sont pas des mouvements."
+  ],
+  "a_voir": "À 3 côtés tout rangement est un mouvement, à 4 côtés non."
+ },
+ {
+  "code": "44-233",
+  "a_dire": "Dire que le cube a 6 × 4 = 24 rotations, et que ce groupe est S_4.",
+  "legende_titre": "Compter les rotations du cube",
+  "lecture": [
+   "Le cube a sa face du dessus en orange : 6 faces peuvent être au-dessus.",
+   "Chaque colonne de la grille est un choix de face ; les 6 colonnes sont les 6 faces.",
+   "Chaque ligne est une façon de tourner autour de la verticale : 4 lignes.",
+   "La case verte donne le total : 6 × 4 = 24, comme 4!."
+  ],
+  "a_voir": "6 colonnes de 4 cases font 24 rotations."
+ },
+ {
+  "code": "44-234",
+  "a_dire": "Dire que composer τ_3 ∘ τ_1, c’est mettre les flèches bout à bout et lire l’arrivée.",
+  "legende_titre": "Flèches mises bout à bout",
+  "lecture": [
+   "Les trois colonnes de disques portent les sommets 1, 2, 3.",
+   "Les flèches bleues, de la première à la deuxième colonne, sont τ_1.",
+   "Les flèches orange, de la deuxième à la troisième colonne, sont τ_3.",
+   "La case verte donne le résultat : 1→2, 2→3, 3→1, c’est σ."
+  ],
+  "a_voir": "Suivre un point de flèche en flèche donne le produit."
+ },
+ {
+  "code": "44-235",
+  "a_dire": "Dire qu’on compose deux mouvements en suivant chaque sommet à travers les deux, un par un.",
+  "legende_titre": "Suivre chaque sommet",
+  "lecture": [
+   "Chaque ligne suit un sommet : le disque bleu marque où il est.",
+   "La flèche bleue applique τ_1, la flèche orange applique ensuite τ_3.",
+   "Le disque vert est l’arrivée du sommet.",
+   "Les nombres à droite notent le départ et l’arrivée : 1→2, 2→3, 3→1."
+  ],
+  "a_voir": "Trois sommets suivis donnent le produit sans table."
+ },
+ {
+  "code": "44-236",
+  "a_dire": "Dire que deux retournements enchaînés donnent une rotation, et que l’ordre change son sens.",
+  "legende_titre": "L’ordre change le sens",
+  "lecture": [
+   "En haut, τ_3 ∘ τ_1 : la flèche bleue va de 1 vers 2, c’est σ, sens direct.",
+   "En bas, τ_1 ∘ τ_3 : la flèche orange va de 1 vers 3, c’est σ², sens inverse.",
+   "Les deux triangles sont les mêmes ; seul l’ordre des retournements change."
+  ],
+  "a_voir": "Les deux ordres donnent des rotations de sens contraires."
+ },
+ {
+  "code": "44-237",
+  "a_dire": "Dire qu’on résout ax = b en composant à gauche par a^(−1), ce qui donne x = a^(−1)b.",
+  "legende_titre": "Défaire a des deux côtés",
+  "lecture": [
+   "La colonne bleue est le calcul dans un groupe, la colonne violette le même calcul avec des nombres.",
+   "La flèche orange du haut applique l’inverse de a à gauche des deux côtés.",
+   "La flèche orange du bas utilise a^(−1)a = 1 pour isoler x.",
+   "Les cases vertes donnent x = a^(−1)b et, avec des nombres, x = 4."
+  ],
+  "a_voir": "On multiplie les deux côtés par l’inverse, puis x reste seul."
+ },
+ {
+  "code": "44-238",
+  "a_dire": "Dire que σ ∘ x = τ_2 a pour solution x = τ_3, que l’on vérifie en suivant les flèches.",
+  "legende_titre": "Vérifier x = τ_3",
+  "lecture": [
+   "Les flèches bleues, de la première à la deuxième colonne, sont x = τ_3.",
+   "Les flèches orange, de la deuxième à la troisième colonne, sont σ.",
+   "Bout à bout, elles donnent 1→3, 2→2, 3→1, c’est-à-dire τ_2."
+  ],
+  "a_voir": "Faire τ_3 puis σ donne bien τ_2."
+ }
+]

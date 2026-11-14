@@ -1,0 +1,178 @@
+[
+ {
+  "code": "52-065",
+  "a_dire": "On écrit a + I pour la classe de a : les nombres a + b avec b dans I.",
+  "legende_titre": "Un décalage de 3",
+  "lecture": [
+   "Les disques gris sont les multiples de 4 : −4, 0, 4, 8, 12.",
+   "Chaque flèche orange ajoute 3 à un multiple de 4.",
+   "Les disques bleus sont les nombres obtenus : −1, 3, 7, 11, la classe de 3."
+  ],
+  "a_voir": "Chaque nombre bleu est un nombre gris plus 3."
+ },
+ {
+  "code": "52-066",
+  "a_dire": "La barre sur 3 est une écriture courte de la classe 3 + I, sans écrire I.",
+  "legende_titre": "Une écriture plus courte",
+  "lecture": [
+   "Le grand rectangle du haut est la classe de 3 : −1, 3, 7, 11.",
+   "À gauche, 3 + I écrit la partie I.",
+   "À droite, 3 barre ne l'écrit plus : le contexte la donne."
+  ],
+  "a_voir": "Les deux écritures désignent la même classe."
+ },
+ {
+  "code": "52-067",
+  "a_dire": "R/I se lit « R modulo I » et désigne l'ensemble de toutes les classes.",
+  "legende_titre": "Un signe pour toutes les classes",
+  "lecture": [
+   "Le cadre en pointillés bleus est R/I.",
+   "Chaque rectangle bleu est une classe : 0 barre à 3 barre.",
+   "Les nombres gris dedans sont des entiers de cette classe."
+  ],
+  "a_voir": "Le cadre contient les quatre classes."
+ },
+ {
+  "code": "52-068",
+  "a_dire": "L'ensemble quotient est un nouvel ensemble dont chaque élément est une classe.",
+  "legende_titre": "Des classes devenues éléments",
+  "lecture": [
+   "Le cadre vert du haut est le nouvel ensemble de 4 éléments.",
+   "Chaque rectangle bleu y est une classe.",
+   "La flèche orange ouvre 3 barre : en dessous, ses entiers −1, 3, 7, 11."
+  ],
+  "a_voir": "Un seul élément du quotient contient une infinité d'entiers."
+ },
+ {
+  "code": "52-069",
+  "a_dire": "Additionner deux classes revient à prendre la classe de la somme de deux représentants, quels qu'ils soient.",
+  "legende_titre": "Deux choix, un résultat",
+  "lecture": [
+   "Les rectangles orange sont deux choix de représentants.",
+   "Les rectangles gris sont leurs sommes dans les entiers : 5 et 13.",
+   "Le grand rectangle vert est la classe de 1, atteinte dans les deux cas."
+  ],
+  "a_voir": "Les deux lignes arrivent dans la même classe."
+ },
+ {
+  "code": "52-070",
+  "a_dire": "Le zéro de R/I est la classe de 0, égale à I ; l'unité est la classe de 1.",
+  "legende_titre": "Zéro et unité des classes",
+  "lecture": [
+   "La première ligne ajoute 0 barre à 3 barre et donne 3 barre.",
+   "La seconde ligne multiplie 1 barre par 3 barre et donne 3 barre.",
+   "Les rectangles bleus sont le zéro et l'unité ; le gris est la classe de 3."
+  ],
+  "a_voir": "Le résultat vert est toujours 3 barre."
+ },
+ {
+  "code": "52-071",
+  "a_dire": "Pour multiplier deux classes, on prend un élément dans chacune, on multiplie, puis on prend la classe du produit.",
+  "legende_titre": "Trois actions en ordre",
+  "lecture": [
+   "Le rectangle orange est le choix : 3 dans la classe de 3, 2 dans la classe de 2.",
+   "Le rectangle gris est le produit dans les entiers : 3 × 2 = 6.",
+   "Le rectangle vert est la classe de 6 : 6 = 1 × 4 + 2, donc 2 barre."
+  ],
+  "a_voir": "Les trois rectangles se lisent de haut en bas."
+ },
+ {
+  "code": "52-072",
+  "a_dire": "Pour vérifier une règle dans R/I, on remonte aux entiers, on calcule, puis on redescend à la classe.",
+  "legende_titre": "Remonter puis redescendre",
+  "lecture": [
+   "Le rectangle bleu du bas est la règle écrite avec des classes.",
+   "La flèche orange vers le haut mène au calcul dans les entiers : 9 = 9.",
+   "La flèche vers le bas ramène au reste : 9 = 2 × 4 + 1, donc 1 barre des deux côtés."
+  ],
+  "a_voir": "Le calcul vrai en haut donne l'égalité en bas."
+ },
+ {
+  "code": "52-073",
+  "a_dire": "Si I n'est pas un idéal, le produit des classes dépend du représentant : R/I n'est pas un anneau.",
+  "legende_titre": "Quand le produit casse",
+  "lecture": [
+   "Les rectangles bleus du haut sont deux paires de la même classe : leur différence est dans I.",
+   "Les flèches orange multiplient chacune par (1, 0).",
+   "Les rectangles rouges sont les produits (1, 0) et (2, 0) : leur différence n'est pas dans I."
+  ],
+  "a_voir": "Deux représentants de la même classe donnent deux classes différentes."
+ },
+ {
+  "code": "52-074",
+  "a_dire": "L'anneau quotient est obtenu en réunissant les éléments de R en classes, et non en gardant une partie.",
+  "legende_titre": "Quotient ou sous-anneau",
+  "lecture": [
+   "Le rectangle gris du haut est l'anneau de départ, les entiers.",
+   "À gauche (violet), le sous-anneau 4ℤ garde une partie : 0, 4, 8.",
+   "À droite (bleu), le quotient réunit les entiers en 4 classes, où l'on additionne et multiplie."
+  ],
+  "a_voir": "Garder une partie et réunir en classes sont deux gestes différents."
+ },
+ {
+  "code": "52-075",
+  "a_dire": "Le signe = entre deux classes veut dire que les deux ensembles ont les mêmes éléments.",
+  "legende_titre": "Deux noms, un ensemble",
+  "lecture": [
+   "Chaque droite montre les éléments d'une classe : −1, 3, 7, 11.",
+   "Le disque orange est le nombre choisi pour nommer la classe : 7 en haut, 3 en bas.",
+   "Le signe = vert dit que les deux droites portent les mêmes disques."
+  ],
+  "a_voir": "Les disques bleus sont aux mêmes places sur les deux droites."
+ },
+ {
+  "code": "52-076",
+  "a_dire": "La formule du produit se lit en quatre temps : deux classes, des représentants, un produit dans R, une classe.",
+  "legende_titre": "Lire la formule du produit",
+  "lecture": [
+   "Le rectangle bleu à gauche est le produit de deux classes.",
+   "Les rectangles orange sont trois choix : 3 et 2, 7 et 6, −1 et 10.",
+   "Les nombres gris sont leurs produits : 6, 42, −10 ; ils arrivent tous dans le rectangle vert, la classe de 2."
+  ],
+  "a_voir": "Les trois chemins finissent dans la même classe."
+ },
+ {
+  "code": "52-077",
+  "a_dire": "Sans la preuve que le résultat ne dépend pas des représentants, la formule pourrait donner deux résultats pour un même produit.",
+  "legende_titre": "La preuve donne un sens",
+  "lecture": [
+   "Le cadre vert du haut montre trois choix de représentants : 6, 14, 42, tous dans la classe de 2.",
+   "Le cadre rouge du bas montre le cas à éviter : un produit, deux classes c et c prime.",
+   "Le signe ≠ rouge dit que ce ne serait plus un produit."
+  ],
+  "a_voir": "En haut un seul résultat, en bas deux résultats."
+ },
+ {
+  "code": "52-078",
+  "a_dire": "Z/kZ a exactement k éléments, les restes 0 à k − 1, et on calcule dans les entiers puis on garde le reste.",
+  "legende_titre": "L'horloge à 5 heures",
+  "lecture": [
+   "Le cercle porte les 5 restes : 0, 1, 2, 3, 4.",
+   "Les rectangles gris sont les calculs faits dans les entiers : 3 + 4 = 7 et 3 × 4 = 12.",
+   "Les flèches orange ramènent chaque résultat au reste 2, en vert."
+  ],
+  "a_voir": "Les deux calculs se terminent sur le même reste."
+ },
+ {
+  "code": "52-079",
+  "a_dire": "Z/kZ est l'horloge à k heures : le même calcul donne un résultat qui dépend de k.",
+  "legende_titre": "Deux horloges, deux résultats",
+  "lecture": [
+   "Chaque cercle est une horloge : 12 points à gauche, 7 points à droite.",
+   "Le disque bleu est le départ 5.",
+   "Les disques orange sont les 4 pas ; le disque vert est l'arrivée."
+  ],
+  "a_voir": "Quatre pas depuis 5 arrivent à 9 sur 12 points et à 2 sur 7 points."
+ },
+ {
+  "code": "52-080",
+  "a_dire": "L'anneau des résidus modulo 4 est un second nom de l'anneau quotient par les multiples de 4.",
+  "legende_titre": "Un objet, deux noms",
+  "lecture": [
+   "Le rectangle bleu est le nom en quotient : Z/4Z.",
+   "Le rectangle violet est le second nom : résidus modulo 4.",
+   "Les deux flèches arrivent aux mêmes 4 classes en vert."
+  ],
+  "a_voir": "Deux noms pointent vers les mêmes quatre classes."
+ }
+]

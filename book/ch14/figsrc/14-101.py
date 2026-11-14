@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'taille d’un nombre = exposant de 10', 'sujet', 'm')
+f = numberline(ax, 8, 78, 30, -20, 20, step=10, arrow_right=False)
+text(ax, 20, 43, 'exposant négatif', 'fixe', 's'); text(ax, 20, 38, 'nombre petit', 'fixe', 's')
+text(ax, 64, 43, 'exposant positif', 'varie', 's'); text(ax, 64, 38, 'nombre grand', 'varie', 's')
+disc(ax, f(19), 30, 1.8, 'resultat')
+arrow(ax, (f(19) - 8, 17), (f(19) - 0.5, 27.5), 'resultat')
+box(ax, 16, 6, 52, 11, 'resultat', label=r'Rubik : $4{,}3 \times 10^{19}$ : 20 chiffres', size='s')
+save(fig, '14-101')

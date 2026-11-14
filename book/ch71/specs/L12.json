@@ -1,0 +1,179 @@
+[
+ {
+  "code": "71-177",
+  "a_dire": "Deux diagonalisations donnent des listes de nombres différentes, mais les signes sont les mêmes.",
+  "legende_titre": "Deux listes, mêmes signes",
+  "lecture": [
+   "Les deux rectangles du haut (bleu) sont la liste de la méthode de Lagrange : 5 et 16/5.",
+   "Les deux rectangles du bas (violet) sont la liste de la matrice de passage : 16 et 4.",
+   "Le grand rectangle vert montre les signes communs : plus et plus."
+  ],
+  "a_voir": "Les nombres changent d'une liste à l'autre, les signes restent les mêmes."
+ },
+ {
+  "code": "71-178",
+  "a_dire": "Pour la seconde courbe, PᵀCP vaut diag(6, −2), l'équation est 6s² − 2t² = 4 et les sommets de l'hyperbole sont sur l'axe de u₁.",
+  "legende_titre": "La seconde courbe après changement de base",
+  "lecture": [
+   "La matrice bleue est la matrice C de la seconde courbe.",
+   "La flèche orange est le calcul PᵀCP.",
+   "La matrice verte est diag(6, −2).",
+   "La courbe bleue est l'hyperbole 6s² − 2t² = 4 ; les deux points verts sont ses 2 sommets, sur l'axe de u₁."
+  ],
+  "a_voir": "PᵀCP vaut diag(6, −2) ; les deux branches s'ouvrent de part et d'autre, avec les sommets sur l'axe de u₁."
+ },
+ {
+  "code": "71-179",
+  "a_dire": "La matrice symétrique de Q met a et c sur la diagonale et b/2 de chaque côté.",
+  "legende_titre": "Où vont a, b et c dans la matrice",
+  "lecture": [
+   "Les cases bleues sont les places de la diagonale : a en haut à gauche, c en bas à droite.",
+   "Les cases orange portent b/2, de chaque côté de la diagonale.",
+   "Chaque petit rectangle avec une flèche montre le coefficient qui va dans sa case."
+  ],
+  "a_voir": "b est coupé en deux et placé deux fois, hors de la diagonale."
+ },
+ {
+  "code": "71-180",
+  "a_dire": "Le déterminant est l'opposé du discriminant divisé par 4.",
+  "legende_titre": "Du discriminant au déterminant",
+  "lecture": [
+   "Les rectangles violets sont les discriminants : −64 et 12.",
+   "Les rectangles bleus sont les déterminants : 16 et −3.",
+   "La flèche orange dit comment passer de l'un à l'autre : opposé, divisé par 4."
+  ],
+  "a_voir": "Dans chaque ligne, le déterminant a le signe contraire du discriminant."
+ },
+ {
+  "code": "71-181",
+  "a_dire": "Un discriminant négatif donne une ellipse, un discriminant positif une courbe ouverte.",
+  "legende_titre": "Le signe du discriminant et la courbe",
+  "lecture": [
+   "Les rectangles violets sont les calculs du discriminant : −64 et 12.",
+   "Chaque flèche orange mène au signe, puis à la courbe de la même colonne.",
+   "À gauche, la forme fermée est l'ellipse ; à droite, les deux branches sont la courbe ouverte."
+  ],
+  "a_voir": "Négatif va avec la courbe fermée, positif avec la courbe ouverte."
+ },
+ {
+  "code": "71-182",
+  "a_dire": "Fixer y = 1 ramène à une équation du second degré : discriminant négatif, pas de solution ; positif, deux solutions.",
+  "legende_titre": "Fixer y = 1 et chercher les solutions",
+  "lecture": [
+   "La ligne grise est l'axe où la forme vaut 0.",
+   "À gauche, la courbe bleue reste au-dessus de la ligne : pas de solution, le discriminant est −64.",
+   "À droite, la courbe violette coupe la ligne en deux points verts : deux solutions, le discriminant est 12."
+  ],
+  "a_voir": "Une courbe qui ne touche pas la ligne, et une qui la touche deux fois."
+ },
+ {
+  "code": "71-183",
+  "a_dire": "Remplacer u₁ par 2u₁ multiplie b₁ par 4 : 16 devient 64.",
+  "legende_titre": "Doubler le vecteur change le nombre",
+  "lecture": [
+   "La flèche bleue est le vecteur u₁ ; le petit rectangle bleu est son coefficient, 16.",
+   "La flèche orange est le vecteur doublé, 2u₁ ; le grand rectangle orange est son coefficient, 64.",
+   "La flèche courbe orange montre le passage de 16 à 64, soit 4 fois plus."
+  ],
+  "a_voir": "Le vecteur est deux fois plus long, mais le nombre est quatre fois plus grand."
+ },
+ {
+  "code": "71-184",
+  "a_dire": "En multipliant chaque vecteur par c = 1/√|bᵢ|, chaque bᵢ devient +1 ou −1.",
+  "legende_titre": "Ramener la diagonale à 1 et −1",
+  "lecture": [
+   "Les rectangles bleus du haut sont les nombres de départ : 16, 4 et −9.",
+   "Chaque flèche orange porte le nombre c qui multiplie le vecteur : 1/4, 1/2, 1/3.",
+   "Les rectangles verts du bas sont les nombres obtenus : 1, 1 et −1."
+  ],
+  "a_voir": "Les signes sont gardés, les valeurs deviennent 1 en valeur absolue."
+ },
+ {
+  "code": "71-185",
+  "a_dire": "Le nombre p de coefficients positifs ne dépend pas de la base.",
+  "legende_titre": "p est le même dans toute base",
+  "lecture": [
+   "Les lignes bleue et violette sont deux bases de la première courbe : deux nombres positifs chacune.",
+   "Le rectangle vert dit que p vaut 2 dans les deux.",
+   "La ligne rouge en pointillés est une troisième base avec un seul positif : elle est impossible."
+  ],
+  "a_voir": "Toutes les bases donnent le même nombre de positifs."
+ },
+ {
+  "code": "71-186",
+  "a_dire": "La signature de Q est le couple (p, q), ou la différence p − q.",
+  "legende_titre": "Compter les signes de la diagonale",
+  "lecture": [
+   "Les rectangles bleus sont les coefficients positifs ; le rectangle orange est le coefficient négatif.",
+   "Les rectangles verts sont les couples (p, q) : (2, 0) puis (1, 1).",
+   "Les nombres verts à droite sont les différences p − q : 2 puis 0."
+  ],
+  "a_voir": "On compte les positifs et les négatifs de chaque ligne."
+ },
+ {
+  "code": "71-187",
+  "a_dire": "La preuve : E et G ne se coupent qu'en 0, donc leurs dimensions s'additionnent sans dépasser n ; ici 2 + 2 dépasse 3.",
+  "legende_titre": "Pourquoi p et p′ ne peuvent pas différer",
+  "lecture": [
+   "Les trois cases grises sont les n = 3 dimensions de l'espace.",
+   "Le bloc bleu E fait 2 cases, le bloc violet G fait 2 cases.",
+   "La ligne rouge en pointillés est la limite n : les deux blocs la dépassent, 4 est plus grand que 3."
+  ],
+  "a_voir": "Les deux blocs mis bout à bout ne tiennent pas dans les 3 cases."
+ },
+ {
+  "code": "71-188",
+  "a_dire": "Sur ℝ, deux formes sont congruentes si et seulement si elles ont même rang et même signature.",
+  "legende_titre": "Même rang ne suffit pas",
+  "lecture": [
+   "Le bloc bleu est la somme de deux carrés, le bloc violet leur différence.",
+   "Le signe vert égal dit que les rangs sont égaux : 2 et 2.",
+   "Le signe rouge dit que les signatures sont différentes : (2, 0) et (1, 1)."
+  ],
+  "a_voir": "Même rang, signatures différentes : les formes ne sont pas congruentes sur ℝ."
+ },
+ {
+  "code": "71-189",
+  "a_dire": "Dans le plan, le couple (p, q) avec p + q ≤ 2 ne laisse que six types de courbes.",
+  "legende_titre": "Six couples possibles",
+  "lecture": [
+   "Les six disques bleus sont les couples (p, q) permis.",
+   "Les cercles rouges vides sont les couples où p + q dépasse 2 : ils sont hors liste.",
+   "La ligne orange en pointillés est la limite p + q = 2."
+  ],
+  "a_voir": "Il y a six points permis, donc une liste courte."
+ },
+ {
+  "code": "71-190",
+  "a_dire": "Le couple de signes prédit la forme de la courbe Q = 1.",
+  "legende_titre": "Quatre couples, quatre formes",
+  "lecture": [
+   "Chaque cadre porte son couple de signes au-dessus.",
+   "(+, +) donne la courbe fermée, (+, −) deux branches, (+, 0) deux droites.",
+   "Les droites orange en pointillés sont les directions où Q = 0 ; (−, −) donne un cadre vide."
+  ],
+  "a_voir": "Le couple de signes au-dessus décide du dessin dans le cadre."
+ },
+ {
+  "code": "71-191",
+  "a_dire": "Le type (+, +) : l'ellipse 16s² + 4t² = 1 se ramène au cercle x² + y² = 1.",
+  "legende_titre": "De l'ellipse au cercle",
+  "lecture": [
+   "La forme bleue est l'ellipse d'équation 16s² + 4t² = 1.",
+   "La flèche orange multiplie les vecteurs par 1/4 et par 1/2.",
+   "Le disque vert est le cercle x² + y² = 1."
+  ],
+  "a_voir": "Les deux coefficients positifs permettent de passer de l'ellipse au cercle."
+ },
+ {
+  "code": "71-192",
+  "a_dire": "Le type (+, −) : x² − y² = 1 est une hyperbole ; Q vaut 0 sur les droites y = x et y = −x.",
+  "legende_titre": "L'hyperbole et ses deux directions",
+  "lecture": [
+   "Les deux courbes bleues sont l'hyperbole x² − y² = 1.",
+   "Les droites orange en pointillés sont y = x et y = −x, où Q vaut 0.",
+   "Les flèches vertes sont les vecteurs (1, 1) et (1, −1), sur ces droites."
+  ],
+  "a_voir": "Les branches s'approchent des pointillés sans les toucher."
+ }
+]

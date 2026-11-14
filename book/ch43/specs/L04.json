@@ -1,0 +1,185 @@
+[
+ {
+  "code": "43-049",
+  "a_dire": "Le signe P⁻¹ est la matrice qui ramène chaque point à son départ.",
+  "legende_titre": "Écrire l’inverse en deux caractères",
+  "lecture": [
+   "Le disque bleu est un point au départ.",
+   "La flèche orange du haut, notée P, le déplace vers le disque orange.",
+   "La flèche verte du bas, notée P⁻¹, le ramène au départ."
+  ],
+  "a_voir": "La flèche verte défait la flèche orange : c’est P⁻¹."
+ },
+ {
+  "code": "43-050",
+  "a_dire": "A ∼ B se lit « A est semblable à B » et veut dire : il existe un P inversible tel que P A P⁻¹ = B.",
+  "legende_titre": "Un petit signe courbe entre deux tableaux",
+  "lecture": [
+   "Le rectangle bleu est la matrice A, le violet est la matrice B.",
+   "La flèche orange va de A vers B ; au-dessus, la formule qu’elle représente.",
+   "En vert, le signe ∼ remplace toute la formule."
+  ],
+  "a_voir": "Le signe ∼ cache une formule avec un P qui existe."
+ },
+ {
+  "code": "43-051",
+  "a_dire": "Pour P, A et P⁻¹ donnés, le produit P A P⁻¹ donne B : A et B sont semblables.",
+  "legende_titre": "Un couple de matrices semblables, en chiffres",
+  "lecture": [
+   "Les deux matrices orange sont P et son inverse P⁻¹.",
+   "La matrice bleue au milieu est A.",
+   "À droite du signe égal, la matrice violette est B.",
+   "Les tableaux A et B n’ont aucun nombre en commun."
+  ],
+  "a_voir": "Le produit des trois matrices de gauche donne B."
+ },
+ {
+  "code": "43-052",
+  "a_dire": "Deux matrices semblables ont la même somme a + d et le même nombre ad − bc ; I n’a pas le même second nombre.",
+  "legende_titre": "Deux nombres qui ne bougent pas dans une classe",
+  "lecture": [
+   "Les deux matrices bleues sont A et B, réunies par l’accolade « même classe ».",
+   "Sous elles, en vert, les deux nombres sont 2 et 3 pour les deux.",
+   "La matrice violette est I.",
+   "Pour I, la somme vaut 2 comme avant, mais ad − bc vaut 1, en rouge."
+  ],
+  "a_voir": "A et B donnent 2 et 3 ; I donne 2 et 1."
+ },
+ {
+  "code": "43-053",
+  "a_dire": "Le déterminant d’une matrice de quatre nombres est ad − bc ; ici il vaut 3.",
+  "legende_titre": "Un mot pour le nombre ad − bc",
+  "lecture": [
+   "Dans la matrice, la flèche bleue relie 1 et 1 : leur produit est 1.",
+   "La flèche orange relie 2 et −1 : leur produit est −2.",
+   "En vert, on retire le second produit du premier et on obtient 3."
+  ],
+  "a_voir": "Produit de la diagonale bleue moins produit de la diagonale orange."
+ },
+ {
+  "code": "43-054",
+  "a_dire": "Si deux matrices ont un nombre différent, elles ne sont pas semblables.",
+  "legende_titre": "Comparer deux nombres plutôt qu’essayer tous les P",
+  "lecture": [
+   "La matrice violette est I, la bleue est A.",
+   "La ligne a + d donne 2 des deux côtés, en gris.",
+   "La ligne ad − bc donne 1 et 3, en rouge, séparés par le signe ≠.",
+   "La phrase rouge en bas tire la conclusion."
+  ],
+  "a_voir": "Un nombre différent suffit pour dire « pas semblables »."
+ },
+ {
+  "code": "43-055",
+  "a_dire": "La similitude est une relation d’équivalence : chaque condition vient d’un fait sur les produits de matrices.",
+  "legende_titre": "Trois conditions, trois faits",
+  "lecture": [
+   "En haut, la flèche orange part de A et revient sur A : l’identité I.",
+   "Au milieu, une flèche va de A à B et une flèche verte revient : P puis P⁻¹.",
+   "En bas, P puis Q mènent de A à C ; la flèche verte QP va directement de A à C."
+  ],
+  "a_voir": "Réflexivité, symétrie, transitivité ont chacune leur flèche."
+ },
+ {
+  "code": "43-056",
+  "a_dire": "Pour montrer que A est semblable à A, on choisit P = I : I A I⁻¹ vaut A.",
+  "legende_titre": "Choisir P égale à I",
+  "lecture": [
+   "Les deux matrices orange sont P = I et son inverse, qui est aussi I.",
+   "La matrice bleue au milieu est A.",
+   "À droite du signe égal, la matrice verte est encore A."
+  ],
+  "a_voir": "Entourée de I, la matrice A ne change pas."
+ },
+ {
+  "code": "43-057",
+  "a_dire": "De P A P⁻¹ = B on arrive à A = P⁻¹ B P en composant des deux côtés, car P⁻¹ P vaut I.",
+  "legende_titre": "De B vers A en quatre lignes",
+  "lecture": [
+   "La ligne bleue du haut est le départ : P A P⁻¹ = B.",
+   "Les flèches orange disent ce qu’on fait entre deux lignes.",
+   "La ligne du milieu montre P⁻¹ P, qui devient I.",
+   "La ligne verte du bas est l’arrivée : A = P⁻¹ B P."
+  ],
+  "a_voir": "L’étape qui porte le poids est P⁻¹ P = I, des deux côtés de A."
+ },
+ {
+  "code": "43-058",
+  "a_dire": "Si B = P A P⁻¹ et C = Q B Q⁻¹, alors C = (QP) A (QP)⁻¹ grâce à (QP)⁻¹ = P⁻¹ Q⁻¹.",
+  "legende_titre": "Enchaîner deux changements en un seul",
+  "lecture": [
+   "En haut, la ligne bleue et la ligne violette sont les deux données.",
+   "La ligne grise du dessus remplace B dans C.",
+   "La ligne orange donne la règle : le dernier appliqué est défait en premier.",
+   "La ligne verte du bas est l’arrivée : QP joue le rôle de P."
+  ],
+  "a_voir": "La règle sur l’inverse de QP permet d’écrire C avec QP."
+ },
+ {
+  "code": "43-059",
+  "a_dire": "Deux matrices semblables sont la même transformation vue dans deux repères.",
+  "legende_titre": "Même flèche, deux jeux d’axes",
+  "lecture": [
+   "La flèche bleue est la même dans les deux dessins.",
+   "À gauche, les axes gris sont le repère 1, décrit par la matrice A.",
+   "À droite, les axes violets inclinés sont le repère 2, décrit par la matrice B."
+  ],
+  "a_voir": "La flèche ne change pas ; seuls les axes changent."
+ },
+ {
+  "code": "43-060",
+  "a_dire": "P doit être inversible : une matrice qui envoie deux points sur un même point ne peut pas être défaite.",
+  "legende_titre": "Deux points, une seule arrivée",
+  "lecture": [
+   "Les deux points bleus sont (1, 2) et (2, 1).",
+   "Les flèches orange les envoient tous deux sur le point vert (3, 3).",
+   "Le texte rouge pose la question du retour depuis (3, 3)."
+  ],
+  "a_voir": "Depuis (3, 3), on ne sait pas quel point retrouver."
+ },
+ {
+  "code": "43-061",
+  "a_dire": "La classe de I ne contient que I : P I P⁻¹ vaut toujours I.",
+  "legende_titre": "I reste I quel que soit P",
+  "lecture": [
+   "La matrice bleue à gauche est I.",
+   "La flèche orange est le changement de repère P puis le retour.",
+   "La matrice verte à droite est encore I.",
+   "La ligne du bas montre le calcul P I P⁻¹ = P P⁻¹ = I."
+  ],
+  "a_voir": "Après n’importe quel P, on retrouve I."
+ },
+ {
+  "code": "43-062",
+  "a_dire": "La classe de 3 est l’ensemble des nombres dont la différence avec 3 est un multiple de 12.",
+  "legende_titre": "Un paquet défini seulement par une règle",
+  "lecture": [
+   "Les points bleus sont les nombres −21, −9, 3, 15, 27 et 39, tous dans la classe de 3.",
+   "Le point rouge, 9, est hors classe.",
+   "L’accolade bleue regroupe la classe de 3.",
+   "Le texte du bas donne la règle."
+  ],
+  "a_voir": "La règle choisit les nombres du paquet de 3."
+ },
+ {
+  "code": "43-063",
+  "a_dire": "La notation 3 barre (ā) remplace la phrase « l’ensemble des nombres en relation avec 3 » : la barre veut dire « classe de ».",
+  "legende_titre": "Une barre au lieu d’une phrase",
+  "lecture": [
+   "Le rectangle gris contient la phrase longue.",
+   "La flèche orange dit qu’on la note autrement.",
+   "À droite, le nombre 3 est en bleu et la barre orange est au-dessus."
+  ],
+  "a_voir": "La barre au-dessus du 3 dit « classe de 3 »."
+ },
+ {
+  "code": "43-064",
+  "a_dire": "La formule ā = {b ∈ S ∣ b E a} se lit morceau par morceau : classe de a, ensemble des, b dans S, tels que, b en relation avec a.",
+  "legende_titre": "Lire la formule symbole par symbole",
+  "lecture": [
+   "La formule du haut est celle à lire.",
+   "Chaque boîte colorée contient un morceau de la formule.",
+   "La flèche de même couleur mène à sa lecture en français."
+  ],
+  "a_voir": "Chaque symbole correspond à un morceau de phrase."
+ }
+]

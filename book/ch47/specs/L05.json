@@ -1,0 +1,185 @@
+[
+ {
+  "code": "47-065",
+  "a_dire": "Les classes à gauche et les classes à droite de K forment deux découpages différents de S_3.",
+  "legende_titre": "Deux découpages, pas un seul",
+  "lecture": [
+   "À gauche, chaque colonne de la figure montre trois paires en orange et bleu ; à droite, trois paires en violet et bleu.",
+   "La paire bleue, 1 et (1 2), est la même des deux côtés : le signe = la relie.",
+   "Les deux autres paires sont différentes d'un côté à l'autre : le signe ≠ le montre."
+  ],
+  "a_voir": "Il y a trois paires de chaque côté, mais seule la paire bleue est commune."
+ },
+ {
+  "code": "47-066",
+  "a_dire": "Chaque élément g est dans sa propre classe gH, car g = g·1 et 1 est dans H.",
+  "legende_titre": "Où est l'élément dans sa ligne ?",
+  "lecture": [
+   "La rangée grise du haut est H : 0, 3, 6, 9. Le 0 orange est l'élément neutre.",
+   "La rangée bleue du bas est la ligne de 4 : on ajoute 4 à chaque nombre de H.",
+   "La flèche orange va de 0 à 4 : 0 plus 4 donne 4, et le 4 vert est dans sa ligne."
+  ],
+  "a_voir": "La flèche partie du neutre 0 retombe sur 4 lui-même."
+ },
+ {
+  "code": "47-067",
+  "a_dire": "La preuve écrit g sous la forme g·1, puis utilise que 1 est dans H pour conclure que g est dans gH.",
+  "legende_titre": "Une preuve en trois temps",
+  "lecture": [
+   "Les trois cases du haut se lisent de gauche à droite : départ g en bleu, étape clé g·1 en orange, arrivée g dans gH en vert.",
+   "Sous l'étape clé, 1 est dans H ; avec l'horloge, 4 = 4 + 0.",
+   "En rouge, sans le 0 dans H, la ligne de 4 est 7, 10, 1 : 4 est absent."
+  ],
+  "a_voir": "L'étape orange g·1 repose sur le fait que 1 est dans H."
+ },
+ {
+  "code": "47-068",
+  "a_dire": "Deux classes peuvent partager un élément sans être égales si H n'est pas un sous-groupe : le fait 2 demande un sous-groupe.",
+  "legende_titre": "Le cas qui casse le fait 2",
+  "lecture": [
+   "Le rectangle bleu du haut contient 0 et 1 : c'est H plus 0.",
+   "Le rectangle violet du bas contient 1 et 2 : c'est H plus 1.",
+   "Le trait rouge relie le 1 présent dans les deux : les deux lignes ne sont ni égales ni séparées."
+  ],
+  "a_voir": "Le 1 apparaît dans les deux lignes, qui pourtant ne sont pas égales."
+ },
+ {
+  "code": "47-069",
+  "a_dire": "Si un élément x est dans aH et dans bH, alors aH = bH.",
+  "legende_titre": "Un élément commun, deux classes égales",
+  "lecture": [
+   "En haut, le rectangle bleu est aH, le rectangle violet est bH, et le x orange est dans leur partie commune.",
+   "La case bleue écrit x de deux façons : ah_1 et bh_2.",
+   "La case orange écrit a avec b et h_2h_1^(−1), qui est dans H : c'est l'étape clé.",
+   "La case verte donne la conclusion : aH = bH."
+  ],
+  "a_voir": "La flèche descend du x commun à l'égalité des deux classes."
+ },
+ {
+  "code": "47-070",
+  "a_dire": "La règle h → gh envoie chaque élément de H sur un élément différent de gH, donc gH a autant d'éléments que H.",
+  "legende_titre": "Autant d'éléments dans les deux lignes",
+  "lecture": [
+   "La rangée bleue du haut est H : 0, 3, 6, 9, avec 4 éléments.",
+   "La rangée verte du bas est gH, pour g égal 7 : 7, 10, 1, 4.",
+   "Chaque flèche orange est « plus 7 » : une flèche par élément, jamais deux vers la même case.",
+   "Les deux accolades montrent 4 des deux côtés."
+  ],
+  "a_voir": "Chaque élément du haut a une flèche et une seule case en bas."
+ },
+ {
+  "code": "47-071",
+  "a_dire": "La règle h → gh est une bijection de H sur gH : elle a pour inverse y → g^(−1)y, qui permet de revenir.",
+  "legende_titre": "Une règle que l'on peut défaire",
+  "lecture": [
+   "Les cases bleues sont H, les cases vertes sont gH, pour g égal 7.",
+   "Les flèches orange descendent de H vers gH : h devient gh.",
+   "Les flèches vertes remontent : y devient g^(−1)y, ce qui ramène à h.",
+   "En rouge, trois cases 0, 4 et 8 arrivent sur un même point : on ne peut pas revenir."
+  ],
+  "a_voir": "Chaque flèche orange a sa flèche verte de retour, ce que le cas rouge n'a pas."
+ },
+ {
+  "code": "47-072",
+  "a_dire": "Les classes sont séparées, couvrent G et ont |H| éléments : leur total est |G| = |H| × r.",
+  "legende_titre": "Compter les cases ligne par ligne",
+  "lecture": [
+   "Chaque ligne bleue est une classe g_iH ; elles ne se touchent pas.",
+   "Chaque ligne a 4 cases, ce que l'accolade grise indique.",
+   "Il y a 3 lignes de 4 cases : le total vert est 3 × 4 = 12.",
+   "En rouge, avec {0, 1}, on trouverait 24 : des éléments seraient comptés deux fois."
+  ],
+  "a_voir": "Trois lignes de même longueur, sans case en double, donnent le total."
+ },
+ {
+  "code": "47-073",
+  "a_dire": "Le produit |H| × r donne |G| : si |H| change, r change et le produit reste |G|.",
+  "legende_titre": "Deux nombres qui changent, un produit",
+  "lecture": [
+   "Chaque rectangle a |H| colonnes et r lignes ; ses cases sont les éléments de G.",
+   "Les deux rectangles bleus ont 12 cases : 2 × 6 et 4 × 3.",
+   "Le rectangle violet est le carré : 4 × 2 = 8."
+  ],
+  "a_voir": "Quand une longueur de ligne augmente, le nombre de lignes diminue, et le total reste le même."
+ },
+ {
+  "code": "47-074",
+  "a_dire": "L'indice [G : H] est le nombre de classes distinctes ; |G| et |H| comptent des éléments, l'indice compte des lignes.",
+  "legende_titre": "Compter des lignes, pas des éléments",
+  "lecture": [
+   "Chaque rectangle est une classe ; celui du haut, en bleu, est H, avec 4 éléments.",
+   "Les nombres orange 1, 2, 3 comptent les lignes : c'est l'indice, égal à 3.",
+   "Au total, 12 cercles : c'est |G|."
+  ],
+  "a_voir": "L'indice compte les rectangles ; les ordres comptent les cercles."
+ },
+ {
+  "code": "47-075",
+  "a_dire": "Le signe [G : H] se lit « indice de H dans G » : G en premier, H en second, et il donne le nombre de lignes.",
+  "legende_titre": "Découper le signe",
+  "lecture": [
+   "En haut, le signe est coupé en morceaux : G en gris, H en bleu, les crochets en orange.",
+   "Sous chaque morceau, son rôle : grand groupe, sous-groupe ; le signe entier est le nombre de lignes.",
+   "En bas, trois tableaux orange : une ligne par classe. Avec 4 éléments, 3 lignes ; avec 2, 6 lignes ; avec 12, 1 ligne."
+  ],
+  "a_voir": "Le signe entier donne le nombre de lignes du tableau."
+ },
+ {
+  "code": "47-076",
+  "a_dire": "Sans sous-groupe, la formule tombe : une partie de 5 éléments ne remplit pas des lignes entières dans un groupe de 12.",
+  "legende_titre": "Quand les lignes ne tombent pas juste",
+  "lecture": [
+   "En haut, la partie {0, 1, 2, 3, 4} a 5 éléments.",
+   "Les deux lignes bleues ont 5 cases chacune.",
+   "La troisième ligne, en rouge, n'a que 2 cases : les cases en pointillés manquent.",
+   "Le texte rouge dit que 5 ne divise pas 12."
+  ],
+  "a_voir": "La dernière ligne reste incomplète : 12 n'est pas un multiple de 5."
+ },
+ {
+  "code": "47-077",
+  "a_dire": "La formule relie trois nombres : |G| = |H| · [G : H] ; dans S_3, 6 = 2 · 3.",
+  "legende_titre": "Trois nombres, un produit",
+  "lecture": [
+   "Les trois rectangles sont les 3 classes ; chacun a 2 cercles.",
+   "L'accolade bleue sous le premier rectangle donne |H| = 2.",
+   "L'accolade grise au-dessus de tout donne |G| = 6.",
+   "Le nombre orange est l'indice, 3 ; le texte vert vérifie 2 × 3 = 6."
+  ],
+  "a_voir": "Le nombre de cercles par rectangle fois le nombre de rectangles donne le total."
+ },
+ {
+  "code": "47-078",
+  "a_dire": "L'ordre d'un sous-groupe divise celui du groupe, car le nombre de classes est un nombre entier.",
+  "legende_titre": "Une classe et demie, impossible",
+  "lecture": [
+   "À gauche, en vert, |H| = 3 : deux lignes de 3 cases remplissent les 6 éléments.",
+   "À droite, en rouge, |H| = 4 : une ligne pleine, puis seulement 2 cases sur 4.",
+   "Cela fait une classe et demie, ce qui n'a pas de sens : 4 est exclu."
+  ],
+  "a_voir": "Avec 3 cases par ligne, les lignes sont pleines ; avec 4, la deuxième ligne reste à moitié vide."
+ },
+ {
+  "code": "47-079",
+  "a_dire": "On lit la formule comme un rectangle : [G : H] lignes de longueur |H| donnent |G| cases.",
+  "legende_titre": "La formule est un rectangle",
+  "lecture": [
+   "La ligne bleue du haut est une classe : elle a |H| = 4 cases, ce que l'accolade indique.",
+   "Le trait orange à gauche marque les 3 lignes : c'est [G : H].",
+   "Toutes les cases, bleues et vertes, sont les éléments de G : il y en a 12."
+  ],
+  "a_voir": "Lignes fois cases par ligne donne le nombre total de cases."
+ },
+ {
+  "code": "47-080",
+  "a_dire": "Dans le carré, le triangle et l'hexagone, les symétries sont les rotations fois 2 : les rotations et les retournements forment deux classes de même taille.",
+  "legende_titre": "Deux lignes égales dans chaque polygone",
+  "lecture": [
+   "Chaque polygone est dessiné à gauche, avec son nom.",
+   "La ligne de cases bleues est celle des rotations : 4, 3 et 6 cases.",
+   "La ligne de cases violettes est celle des retournements, de même longueur.",
+   "À droite, en vert, le total : 8 = 4 × 2, 6 = 3 × 2, 12 = 6 × 2."
+  ],
+  "a_voir": "Dans chaque polygone, les deux lignes ont la même longueur."
+ }
+]

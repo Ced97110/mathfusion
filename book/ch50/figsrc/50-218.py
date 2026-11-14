@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 54, 80, 10, 'sujet', label=r'$G/H_1$ : 35 = 5 × 7 éléments', size='m')
+text(ax, 44, 48, 'reste de 7 dans la division par 5 ?', 'encre', 's')
+for i in range(7):
+    disc(ax, 16 + 8 * i, 40, 3, 'sujet' if i < 5 else 'varie')
+brace(ax, 12, 52, 35, 'sujet', label='1 groupe de 5')
+brace(ax, 53, 67, 35, 'varie', label='reste 2')
+text(ax, 44, 21, r'$7 = 1 \times 5 + 2$', 'encre', 'l')
+box(ax, 3, 3, 24, 11, 'varie', label='reste 2,\npas 1', size='s')
+arrow(ax, (27, 8.5), (32, 8.5), 'fixe')
+box(ax, 32, 3, 24, 11, 'resultat', label='cyclique,\ndonc abélien', size='s')
+arrow(ax, (56, 8.5), (61, 8.5), 'fixe')
+box(ax, 61, 3, 24, 11, 'resultat', label=r"$G'\subseteq H_1$", size='m')
+save(fig, '50-218')

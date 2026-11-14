@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_box = box
+def box(ax, x, y, w, h, role="fixe", label=None, size="m", **k): return _box(ax, x, y, w, h, role, True, label, size, **k)
+fig, ax = canvas(60)
+box(ax, 3, 18, 40, 28, 'sujet')
+text(ax, 23, 50, 'preuve écrite', 'sujet', 's')
+text(ax, 23, 36, 'on transforme', 'sujet', 's')
+text(ax, 23, 28, 'seulement ce membre', 'sujet', 's')
+box(ax, 51, 18, 34, 28, 'fixe', dash=True)
+text(ax, 68, 50, 'brouillon', 'fixe', 's')
+text(ax, 68, 36, 'autre membre', 'fixe', 's')
+text(ax, 68, 28, r'but : $1+\sin x$', 'resultat', 's')
+arrow(ax, (50, 32), (44, 32), 'varie')
+text(ax, 24, 12, 'repérer le but', 'varie', 's')
+text(ax, 66, 12, 'jamais dans la preuve', 'limite', 's')
+save(fig, '31-116')

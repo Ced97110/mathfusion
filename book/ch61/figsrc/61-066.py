@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 4, 58, 80, 12, 'sujet', label=r"$f(x)=x^4-4$ s'annule en $\sqrt{2}$", size='m')
+arrow(ax, (22, 58), (22, 50), 'fixe'); arrow(ax, (66, 58), (66, 50), 'fixe')
+box(ax, 4, 36, 36, 14, 'autre', label=r'$m = x^2-2$', size='m')
+text(ax, 44, 43, r'$\times$', 'encre', 'l')
+box(ax, 48, 36, 36, 14, 'limite', label=r'$x^2+2$', size='m')
+box(ax, 4, 14, 36, 16, 'resultat', label=r'en $\sqrt{2}$ : $2-2=0$', size='m')
+box(ax, 48, 14, 36, 16, 'limite', label=r'en $\sqrt{2}$ : $2+2=4$', size='m')
+arrow(ax, (22, 36), (22, 30), 'fixe'); arrow(ax, (66, 36), (66, 30), 'fixe')
+text(ax, 22, 8.5, "s'annule", 'resultat', 's')
+text(ax, 66, 8.5, "ne s'annule pas", 'limite', 's')
+save(fig, '61-066')

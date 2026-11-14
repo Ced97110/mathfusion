@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, R = 26, 30, 22
+disc(ax, ox, oy, R, 'fixe', fill=False)
+line(ax, [(2, oy), (50, oy)], 'fixe')
+t = math.radians(35); Pg = (ox + R * math.cos(t), oy + R * math.sin(t)); Hg = (Pg[0], oy)
+line(ax, [(ox, oy), Pg, Hg, (ox, oy)], 'fixe', dash=True)
+text(ax, Pg[0] + 1, Pg[1] + 3.2, 'à 35°', 'fixe', 's')
+arc = [(ox + R * math.cos(math.radians(a)), oy + R * math.sin(math.radians(a))) for a in range(33, 3, -1)]
+line(ax, arc, 'varie', lw=1.4)
+arrow(ax, (arc[-2][0], arc[-2][1]), (ox + R * math.cos(math.radians(1)), oy + R * math.sin(math.radians(1))), 'varie', lw=1.4)
+line(ax, [(ox, oy), (ox + R, oy)], 'sujet', lw=2.0)
+disc(ax, ox + R, oy, 1.1, 'sujet')
+text(ax, ox - 2.5, oy - 3, '$O$', 'encre', 's')
+text(ax, ox + R + 1, oy - 3.5, '$A=P=H$', 'sujet', 's')
+text(ax, 71, 46, r'$\theta=0^\circ$', 'varie', 'l')
+text(ax, 71, 38, r'$\cos 0^\circ=1$', 'autre', 'm')
+text(ax, 71, 31, r'$\sin 0^\circ=0$', 'varie', 'm')
+text(ax, 71, 20, r'$1^2+0^2=1$', 'resultat', 'm', weight='bold')
+text(ax, 71, 53, 'triangle aplati', 'sujet', 's')
+save(fig, '31-071')

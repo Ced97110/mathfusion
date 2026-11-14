@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 52, r'$\partial f/\partial y$', 'sujet', 'xl')
+text(ax, 44, 44, r'lettre en bas : $y$ varie', 'varie', 's')
+box(ax, 2, 16, 20, 11, 'fixe', label=r'$x^2y$', size='l')
+box(ax, 34, 16, 20, 11, 'fixe', label=r'$9\,y$', size='l')
+box(ax, 66, 16, 20, 11, 'sujet', label=r'$9=3^2$', size='l')
+arrow(ax, (22.5, 21.5), (33.5, 21.5), 'varie')
+arrow(ax, (54.5, 21.5), (65.5, 21.5), 'varie')
+text(ax, 28, 30, r'$x=3$', 'varie', 's')
+text(ax, 60, 30, 'dérive', 'varie', 's')
+text(ax, 44, 7, r'$x$ est fixé à 3', 'fixe', 's')
+save(fig, '70-075')

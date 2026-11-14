@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 57, 'règle terme à terme', 'sujet', 's')
+text(ax, 66, 57, 'coefficient de $h$', 'autre', 's')
+box(ax, 2, 28, 40, 22, 'sujet', label='$1\\cdot x^1\\to 1\\cdot 1\\cdot x^0$\n$=1$', size='s')
+box(ax, 46, 28, 40, 22, 'autre', label='$x+h$ :\ncoefficient de $h$ = 1', size='s')
+arrow(ax, (22, 27), (38, 16), 'resultat')
+arrow(ax, (66, 27), (50, 16), 'resultat')
+box(ax, 24, 4, 40, 11, 'resultat', label=r"$x^\prime=1$")
+save(fig, '62-098')

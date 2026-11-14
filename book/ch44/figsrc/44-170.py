@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 6, 70, 32, 12, 'sujet', label=r'$2\times b$')
+box(ax, 50, 70, 32, 12, 'fixe', label=r'$8\times m$')
+text(ax, 14, 63.5, '2 le divise', 'sujet', 's')
+text(ax, 74, 63.5, '2 le divise', 'fixe', 's')
+arrow(ax, (30, 69), (36, 50), 'varie')
+arrow(ax, (58, 69), (52, 50), 'varie')
+box(ax, 22, 38, 44, 12, 'varie', label=r'$2b-8m=1$')
+arrow(ax, (44, 38), (44, 25), 'limite')
+box(ax, 14, 8, 60, 16, 'limite', label='2 divise 1 ? Faux\nun diviseur de 1 est 1', size='s')
+save(fig, '44-170')

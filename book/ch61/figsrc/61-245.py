@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 52, 36, 11, 'sujet', label=r'$p=2$ premier')
+box(ax, 48, 52, 36, 11, 'autre', label=r'$m$ de degré $2$')
+box(ax, 14, 30, 60, 11, 'fixe', label=r'$\mathbb{Z}/(p)[x]/(m)$')
+arrow(ax, (22, 52), (34, 41.8), 'varie'); arrow(ax, (66, 52), (54, 41.8), 'varie')
+for i in range(4): disc(ax, 28 + i * 11, 15, 3.4, 'resultat')
+brace(ax, 23, 66, 21, 'resultat', label=r'$2^2=4$ éléments', down=False)
+text(ax, 44, 4, r'$p^{\deg m}$ éléments', 'resultat', 's')
+save(fig, '61-245')

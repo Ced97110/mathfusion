@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+f = lambda v: 8 + (v - 360000) / 20000 * 68
+line(ax, [(8, 30), (80, 30)], 'fixe')
+disc(ax, 8, 30, 1.5, 'varie')
+line(ax, [(f(365000), 26), (f(365000), 34)], 'limite', lw=1.4)
+disc(ax, f(375492), 30, 1.5, 'resultat')
+brace(ax, 8, f(365000), 33, 'resultat', label='marge 5 000', down=False)
+text(ax, 8, 25, '360 000', 'varie', 's')
+text(ax, f(365000), 25, 'limite 365 000', 'limite', 's')
+text(ax, f(375492), 25, 'vrai 375 492', 'resultat', 's')
+line(ax, [(8, 22), (8, 16.5)], 'fixe', dash=True); line(ax, [(f(375492), 22), (f(375492), 16.5)], 'fixe', dash=True)
+arrow(ax, (8, 16), (f(375492), 16), 'varie')
+text(ax, 34, 19.8, 'erreur 15 492', 'varie', 's')
+text(ax, 44, 8, '15 492 > 5 000 : calculer', 'limite', 'm')
+save(fig, '10-077')

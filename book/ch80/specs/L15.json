@@ -1,0 +1,294 @@
+[
+ {
+  "code": "80-337",
+  "a_dire": "Un idéal propre est maximal quand, pour chaque élément a, il contient a ou son complément a′.",
+  "legende_titre": "Chaque partie ou son complément",
+  "lecture": [
+   "Les quatre cases bleues du haut sont les parties qui ne contiennent pas c : elles forment K.",
+   "Les quatre cases grises du bas sont les compléments de la case bleue placée au-dessus.",
+   "Chaque flèche orange relie une partie et son complément.",
+   "Dans chaque paire, une seule case est dans K."
+  ],
+  "a_voir": "Dans chaque paire reliée, une seule case est bleue : K contient a ou a′."
+ },
+ {
+  "code": "80-338",
+  "a_dire": "Un filtre est la notion renversée d'un idéal : il contient tout ce qui est plus grand que ses éléments.",
+  "legende_titre": "Un idéal renversé",
+  "lecture": [
+   "Les trois cases bleues sont des compléments de parties finies de ℕ : ℕ, ℕ sans 2, ℕ sans 2 et 5.",
+   "Les flèches orange montent vers l'ensemble plus grand.",
+   "La case rouge en pointillés est {7}, qui est sous ℕ sans 2.",
+   "{7} n'est pas dans la collection, car son complément est infini."
+  ],
+  "a_voir": "On monte dans la collection, mais {7} est en dessous et n'y est pas."
+ },
+ {
+  "code": "80-339",
+  "a_dire": "Les diviseurs de 30 sont 8 : pour chacun des trois premiers 2, 3, 5, on le prend ou non, donc 2 × 2 × 2.",
+  "legende_titre": "Trois choix, huit diviseurs",
+  "lecture": [
+   "Chaque étage de l'arbre pose une question : 2 ?, puis 3 ?, puis 5 ?.",
+   "Un trait orange veut dire que le nombre premier est pris ; un trait gris, qu'il n'est pas pris.",
+   "Chaque case bleue du bas est un diviseur de 30, au bout d'un chemin.",
+   "Le calcul vert compte les chemins : 2 × 2 × 2 = 8."
+  ],
+  "a_voir": "Les trois choix à deux issues donnent huit chemins, donc huit diviseurs."
+ },
+ {
+  "code": "80-340",
+  "a_dire": "Chaque diviseur de 30 correspond à l'ensemble de ses facteurs premiers.",
+  "legende_titre": "Un diviseur, un ensemble",
+  "lecture": [
+   "Chaque case bleue est un diviseur de 30.",
+   "Chaque case violette est l'ensemble de ses facteurs premiers.",
+   "La flèche orange à double sens montre que l'on passe de l'un à l'autre dans les deux sens.",
+   "Le 1 n'a aucun facteur premier : son ensemble est vide."
+  ],
+  "a_voir": "Chaque diviseur a son ensemble, et deux diviseurs n'ont jamais le même."
+ },
+ {
+  "code": "80-341",
+  "a_dire": "Pour la divisibilité, le sup de deux diviseurs est leur PPCM et l'inf est leur PGCD.",
+  "legende_titre": "Sup et inf avec des nombres connus",
+  "lecture": [
+   "Les huit cases sont les diviseurs de 30, rangés du plus bas (1) au plus haut (30).",
+   "Les cases bleues 6 et 10 sont les deux nombres comparés.",
+   "La case verte 30, tout en haut, est le sup : le PPCM de 6 et 10.",
+   "La case verte 2, plus bas, est l'inf : le PGCD de 6 et 10."
+  ],
+  "a_voir": "Les traits verts relient 6 et 10 à 30 vers le haut et à 2 vers le bas."
+ },
+ {
+  "code": "80-342",
+  "a_dire": "Le complément d'un diviseur d de 30 est 30 ÷ d.",
+  "legende_titre": "Le complément se calcule par une division",
+  "lecture": [
+   "Le rectangle bleu a 6 cases en largeur et 5 en hauteur : 30 cases en tout.",
+   "La flèche bleue du haut mesure 6 ; la flèche verte à droite mesure 5, le quotient.",
+   "La première case verte dit que 6 et 5 n'ont que 1 comme diviseur commun.",
+   "La seconde case verte dit que leur plus petit multiple commun est 30."
+  ],
+  "a_voir": "Diviser 30 par 6 donne 5, et 6 et 5 remplissent les deux conditions."
+ },
+ {
+  "code": "80-343",
+  "a_dire": "Les atomes des diviseurs de 30 sont les nombres premiers 2, 3 et 5.",
+  "legende_titre": "Les atomes sont juste au-dessus de 1",
+  "lecture": [
+   "Les huit cases sont les diviseurs de 30, du plus petit (1, en bas) au plus grand (30, en haut).",
+   "Les trois cases bleues 2, 3 et 5 sont reliées directement à 1 par un trait bleu épais.",
+   "Rien n'est placé entre 1 et chacune de ces trois cases.",
+   "Les cases grises 6, 10 et 15 ont d'autres diviseurs sous elles."
+  ],
+  "a_voir": "Seules 2, 3 et 5 touchent 1 sans case entre elles et lui."
+ },
+ {
+  "code": "80-344",
+  "a_dire": "Un diviseur de 30 est déterminé par l'ensemble de ses facteurs premiers.",
+  "legende_titre": "Les premiers présents donnent le diviseur",
+  "lecture": [
+   "Chaque colonne correspond à un nombre premier : 2, 3 ou 5.",
+   "Un rond plein bleu veut dire que le premier est dans le diviseur ; un rond vide, qu'il n'y est pas.",
+   "La flèche orange mène au diviseur vert qui correspond à cette ligne.",
+   "Trois ronds vides donnent le diviseur 1."
+  ],
+  "a_voir": "Chaque ligne de ronds donne un seul diviseur."
+ },
+ {
+  "code": "80-345",
+  "a_dire": "Les diviseurs de 12 sont au nombre de 6, alors que ceux de 30 sont 8.",
+  "legende_titre": "Six diviseurs, pas huit",
+  "lecture": [
+   "La rangée grise du haut a huit cases : les diviseurs de 30.",
+   "La rangée bleue du bas a six cases : 1, 2, 3, 4, 6 et 12.",
+   "Les deux cases rouges en pointillés montrent ce qui manque par rapport à huit.",
+   "Le nombre 6 est ce qu'il faut retenir."
+  ],
+  "a_voir": "Sous les huit cases du haut, la rangée du bas n'en remplit que six."
+ },
+ {
+  "code": "80-346",
+  "a_dire": "Une algèbre de Boole finie a un nombre d'éléments qui est une puissance de 2, donc pas 6.",
+  "legende_titre": "Aucun ensemble n'a 6 parties",
+  "lecture": [
+   "Chaque rangée bleue donne le nombre de parties d'un ensemble à n éléments : 2, 4 et 8.",
+   "Une case est une partie.",
+   "La rangée rouge en pointillés a six cases.",
+   "Aucune rangée bleue n'a six cases : aucun n ne donne 6."
+  ],
+  "a_voir": "Les rangées sautent de 4 à 8 : 6 n'apparaît jamais."
+ },
+ {
+  "code": "80-347",
+  "a_dire": "Dans les diviseurs de 12, le nombre 2 n'a pas de complément.",
+  "legende_titre": "Les deux candidats échouent",
+  "lecture": [
+   "La case verte du haut dit ce qu'il faut : un PPCM égal à 12.",
+   "Les deux cases bleues sont les seuls candidats x : 1 et 3.",
+   "Les flèches orange mènent au PPCM calculé avec 2.",
+   "Les cases rouges montrent 2 et 6 : aucun n'est 12."
+  ],
+  "a_voir": "Pour 1 comme pour 3, le résultat est différent de 12."
+ },
+ {
+  "code": "80-348",
+  "a_dire": "Le facteur carré 4 = 2² de 12 empêche 2 d'avoir un complément.",
+  "legende_titre": "Le 2 qui revient",
+  "lecture": [
+   "Chaque rangée écrit un nombre comme produit de premiers : 12 = 2, 2, 3 et 30 = 2, 3, 5.",
+   "La première case bleue est le 2 dont on cherche le complément.",
+   "Dans 12, le reste est 6 (cases du bas à droite) et il contient encore un 2 : la case rouge.",
+   "Dans 30, le reste est 15 et il ne contient pas de 2."
+  ],
+  "a_voir": "Dans 12 le 2 apparaît deux fois, dans 30 une seule."
+ },
+ {
+  "code": "80-349",
+  "a_dire": "Chaque zone de trois ensembles est comptée une fois au total : 1, 2 − 1 ou 3 − 3 + 1.",
+  "legende_titre": "Chaque zone vaut 1",
+  "lecture": [
+   "Les trois cercles A (bleu), B (orange) et C (violet) se chevauchent.",
+   "Dans une zone d'un seul cercle, le total est 1.",
+   "Dans une zone de deux cercles, on compte 2 puis on retire 1.",
+   "Au centre, on compte 3, on retire 3, puis on remet 1 : le total reste 1."
+  ],
+  "a_voir": "Chaque nombre vert vaut 1, au centre comme ailleurs."
+ },
+ {
+  "code": "80-350",
+  "a_dire": "Le signe |A| se lit « le nombre d'éléments de A ».",
+  "legende_titre": "Les barres donnent un nombre",
+  "lecture": [
+   "La case bleue est l'ensemble A : les multiples de 2 de 1 à 30.",
+   "Les 15 ronds gris sont ses éléments.",
+   "La flèche orange mène au signe ",
+   "A",
+   ".",
+   "En vert, ",
+   "A",
+   " = 15 est le nombre d'éléments."
+  ],
+  "a_voir": "Les barres autour de A donnent le nombre de ronds : 15."
+ },
+ {
+  "code": "80-351",
+  "a_dire": "Trois ensembles peuvent se recouvrir : un élève peut être dans un, deux ou trois clubs.",
+  "legende_titre": "Trois clubs qui se recouvrent",
+  "lecture": [
+   "Le cercle bleu est le club A (10 élèves), l'orange le club B (8) et le violet le club C (6).",
+   "Le rond gris, dans A seul, est un élève d'un seul club.",
+   "Le rond orange, dans A et B, est Léa : comptée 2 fois, puis 1 fois après avoir retiré l’intersection.",
+   "Le rond vert, dans les trois cercles, est Paul : 3 fois, moins 3, plus 1 pour A ∩ B ∩ C, donc 1 fois."
+  ],
+  "a_voir": "Léa et Paul sont dans plusieurs cercles ; le terme A ∩ B ∩ C les compte une fois."
+ },
+ {
+  "code": "80-352",
+  "a_dire": "La somme |A| + |B| + |C| compte trop : un élève de plusieurs clubs est compté plusieurs fois.",
+  "legende_titre": "Une somme qui compte trop",
+  "lecture": [
+   "Les trois rangées sont les clubs A, B et C : 10, 8 et 6 cases.",
+   "La case violette en première colonne est Paul : il est dans les trois rangées.",
+   "La case orange en deuxième colonne est Léa : elle est dans A et B.",
+   "Les traits en pointillés relient les cases du même élève."
+  ],
+  "a_voir": "Léa est comptée deux fois et Paul trois fois dans 10 + 8 + 6."
+ },
+ {
+  "code": "80-353",
+  "a_dire": "On retire une fois chaque intersection de deux ensembles pour corriger le surplus.",
+  "legende_titre": "Retirer le surplus de comptage",
+  "lecture": [
+   "Les ronds bleus à gauche sont les fois où l'élève est compté dans la somme.",
+   "Les ronds rouges au milieu sont les intersections deux à deux que l'on retire.",
+   "À droite, le rond vert de Léa : elle est comptée une fois.",
+   "Le rond vide rouge de Paul : il est retiré trois fois, donc trop."
+  ],
+  "a_voir": "Pour Léa le retrait est juste ; pour Paul il est trop fort."
+ },
+ {
+  "code": "80-354",
+  "a_dire": "Paul est compté 3 − 3 = 0 fois ; on remet l'intersection triple pour qu'il soit compté une fois.",
+  "legende_titre": "On remet la zone centrale",
+  "lecture": [
+   "Les trois ronds bleus sont les trois fois où Paul est compté dans la somme.",
+   "Les trois ronds rouges sont les trois paires où on le retire.",
+   "Le rond vert est l'intersection triple que l'on remet.",
+   "Sous chaque groupe, le compte de Paul passe de 3 à 0 puis à 1."
+  ],
+  "a_voir": "Le rond vert ramène Paul de 0 à 1."
+ },
+ {
+  "code": "80-355",
+  "a_dire": "Pour trois ensembles : on ajoute les ensembles, on retire les paires, on ajoute le triple.",
+  "legende_titre": "Signes de la formule pour trois ensembles",
+  "lecture": [
+   "Les trois barres bleues ajoutent 10, 8 et 6 : on monte jusqu'à 24.",
+   "Les trois barres rouges retirent 3, 2 et 1 : on redescend.",
+   "La barre orange ajoute 1.",
+   "La barre verte de droite est le total : 19."
+  ],
+  "a_voir": "La colonne monte, descend, remonte un peu, et finit à 19."
+ },
+ {
+  "code": "80-356",
+  "a_dire": "Entre 1 et 30, 22 entiers ont un facteur commun avec 30, et il en reste 8.",
+  "legende_titre": "22 entiers comptés, 8 restants",
+  "lecture": [
+   "Les 30 cases sont les entiers de 1 à 30, par lignes de 10.",
+   "Les cases bleues sont les entiers qui ont un facteur commun avec 30 : 22 en tout.",
+   "Les cases vertes sont les 8 restants.",
+   "Le calcul 15 + 10 + 6 − 5 − 3 − 2 + 1 donne 22, puis 30 − 22 = 8."
+  ],
+  "a_voir": "Vingt-deux cases bleues et huit cases vertes font 30."
+ },
+ {
+  "code": "80-357",
+  "a_dire": "Les signes + et − alternent selon le nombre de premiers choisis : le signe est (−1)^k.",
+  "legende_titre": "Les signes viennent du nombre de premiers",
+  "lecture": [
+   "Chaque colonne correspond au nombre de premiers choisis : 0, 1, 2 ou 3.",
+   "La case du milieu donne le signe : bleu pour +, orange pour −.",
+   "Sous chaque signe, les nombres qui portent ce signe.",
+   "La formule verte résume : le signe est (−1) puissance k."
+  ],
+  "a_voir": "Les signes alternent + − + − quand k monte de 0 à 3."
+ },
+ {
+  "code": "80-358",
+  "a_dire": "La formule (−1)^(|V|−|U|) n'est valable que si U est contenue dans V ; sinon la valeur est 0.",
+  "legende_titre": "La formule a une condition",
+  "lecture": [
+   "La case bleue est U, avec son seul élément 1.",
+   "La case violette est V, avec les éléments 2 et 3.",
+   "Le 1 n'est pas dans V : U n'est pas contenue dans V.",
+   "En rouge, la formule donnerait −1 ici, ce qui est faux ; en vert, la bonne valeur est 0."
+  ],
+  "a_voir": "Comme 1 n'est pas dans V, la valeur est 0 et non −1."
+ },
+ {
+  "code": "80-359",
+  "a_dire": "Une partie de S s'écrit comme une liste de n chiffres 0 ou 1, un par élément.",
+  "legende_titre": "Une partie devient une liste de chiffres",
+  "lecture": [
+   "Chaque ligne est une partie de {1, 2, 3}, écrite à gauche.",
+   "Chaque colonne est un élément : 1, 2 ou 3.",
+   "Un rond plein bleu veut dire que l'élément est dedans (1) ; un rond vide, qu'il est dehors (0).",
+   "La liste verte à droite lit les ronds de gauche à droite."
+  ],
+  "a_voir": "Les ronds pleins et vides de chaque ligne donnent la liste 101, 000 ou 111."
+ },
+ {
+  "code": "80-360",
+  "a_dire": "Les listes de trois chiffres 0 ou 1 étiquettent à la fois les parties de {1, 2, 3} et les points du plan de Fano.",
+  "legende_titre": "Mêmes listes, deux objets",
+  "lecture": [
+   "Les sept cases bleues sont les points du plan de Fano, avec leur étiquette de trois chiffres.",
+   "Les traits relient les points : côtés, trois médianes et un cercle.",
+   "La case grise en pointillés porte 000 : c'est la partie vide.",
+   "Les sept étiquettes plus 000 font les huit listes de trois chiffres."
+  ],
+  "a_voir": "Les huit listes sont les huit parties ; sept d'entre elles sont les points."
+ }
+]

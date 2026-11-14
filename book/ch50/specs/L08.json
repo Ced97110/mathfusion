@@ -1,0 +1,191 @@
+[
+ {
+  "code": "50-113",
+  "a_dire": "Le nombre de conjugués de K par H est l'indice de N(K) ∩ H dans H.",
+  "legende_titre": "Deux éléments de H, deux conjugués de K",
+  "lecture": [
+   "Les deux cases bleues sont les éléments de H : e et s_B.",
+   "Les flèches orange conjuguent K = P_A : e donne P_A, s_B donne P_C.",
+   "Les deux cases vertes sont les conjugués obtenus.",
+   "En bas, la case grise est le stabilisateur {e} ; son indice dans H est 2, comme le nombre de conjugués."
+  ],
+  "a_voir": "Chaque élément de H envoie K sur un conjugué, et le nombre de conjugués est l'indice de N(K) ∩ H."
+ },
+ {
+  "code": "50-114",
+  "a_dire": "La preuve part de l'action de H, passe par le stabilisateur N(K) ∩ H, et arrive au nombre [H : N(K) ∩ H].",
+  "legende_titre": "Départ, étape clé et arrivée de la preuve",
+  "lecture": [
+   "La case bleue du haut est le départ : H agit sur les conjugués de K.",
+   "La case orange du milieu est l'étape qui porte le poids : le stabilisateur de K est N(K) ∩ H.",
+   "La case verte du bas est l'arrivée : le nombre cherché.",
+   "Les flèches grises relient les trois temps ; la formule du chapitre 49 fait le dernier pas."
+  ],
+  "a_voir": "Sans la case orange, la formule du chapitre 49 n'a pas de stabilisateur à diviser."
+ },
+ {
+  "code": "50-115",
+  "a_dire": "Le signe 𝒮 désigne l'ensemble des conjugués de P, et k leur nombre.",
+  "legende_titre": "Un seul signe pour trois sous-groupes",
+  "lecture": [
+   "Chaque triangle montre un sous-groupe : l'axe bleu est la réflexion qui le forme.",
+   "P_A, P_B et P_C sont les trois conjugués de P = P_A.",
+   "L'accolade du bas regroupe les trois : c'est 𝒮, et k = 3."
+  ],
+  "a_voir": "L'accolade regroupe les trois triangles sous le seul nom 𝒮."
+ },
+ {
+  "code": "50-116",
+  "a_dire": "p ne divise pas k, car |N(P)| contient déjà toute la part de p de |G|.",
+  "legende_titre": "Le facteur p reste dans N(P)",
+  "lecture": [
+   "Les trois cases bleues sont trois blocs de 2 éléments ; ensemble ils font |G| = 6.",
+   "Un bloc est |N(P)| = 2, qui contient la part de p.",
+   "Dessous, les mêmes blocs : deux forment une paire grise, le troisième reste seul, en rouge.",
+   "Donc 2 ne divise pas k = 3."
+  ],
+  "a_voir": "Il y a 3 blocs et on ne peut pas les ranger tous par paires : p ne divise pas k."
+ },
+ {
+  "code": "50-117",
+  "a_dire": "Un p-Sylow Q agit par conjugaison sur 𝒮 et partage 𝒮 en orbites.",
+  "legende_titre": "Q agit sur les conjugués",
+  "lecture": [
+   "Les trois cases sont les éléments de 𝒮.",
+   "La flèche orange courbe montre que s_B échange P_A et P_C (cases orange).",
+   "La case verte P_B reste en place.",
+   "En bas : une orbite de taille 1, une orbite de taille 2."
+  ],
+  "a_voir": "Q = {e, s_B} range les trois conjugués en deux orbites."
+ },
+ {
+  "code": "50-118",
+  "a_dire": "Chaque orbite sous Q a une taille qui est une puissance de p.",
+  "legende_titre": "Les tailles d'orbite sont des puissances de p",
+  "lecture": [
+   "Les cases bleues sont les éléments de Q ; la case grise n'est pas dans le stabilisateur.",
+   "Ligne du haut : le stabilisateur est Q entier, l'orbite de P_B a la taille 1 = p^0.",
+   "Ligne du bas : le stabilisateur est {e}, l'orbite de P_A a la taille 2 = p^1.",
+   "La ligne du bas de la figure donne les tailles possibles."
+  ],
+  "a_voir": "Les tailles 1 et 2 sont des puissances de p = 2."
+ },
+ {
+  "code": "50-119",
+  "a_dire": "Comme k n'est pas multiple de p, une orbite a la taille 1.",
+  "legende_titre": "Sauter 3 avec des pas pairs est impossible",
+  "lecture": [
+   "La droite graduée compte les éléments de 𝒮 jusqu'à k = 3 (disque bleu).",
+   "Les arcs orange sont des pas de 2 : ils tombent sur 0, 2, 4 et sautent 3.",
+   "La flèche verte est un pas de 1, taille p^0 : il atteint 3."
+  ],
+  "a_voir": "Avec des pas pairs seulement, on n'arrive jamais à 3."
+ },
+ {
+  "code": "50-120",
+  "a_dire": "Le premier lemme donne Q ⊆ P_j, et l'égalité des tailles donne Q = P_j.",
+  "legende_titre": "De l'inclusion à l'égalité",
+  "lecture": [
+   "La ligne bleue est Q, la ligne violette est P_j.",
+   "Les flèches orange montrent que chaque x de Q est dans P_j (premier lemme).",
+   "À droite, les deux lignes ont p^m = 2 éléments.",
+   "La case verte conclut : Q = P_j."
+  ],
+  "a_voir": "Q est dans P_j et les deux ont autant d'éléments, donc ils sont égaux."
+ },
+ {
+  "code": "50-121",
+  "a_dire": "Sur le triangle, la preuve de Judson se suit pas à pas avec Q = P_B.",
+  "legende_titre": "La preuve de Judson sur le triangle",
+  "lecture": [
+   "La rangée du haut est 𝒮, avec k = 3.",
+   "La flèche orange : Q = P_B agit.",
+   "En bas, la case verte {P_B} est l'orbite de taille 1 ; la case orange {P_A, P_C} est celle de taille 2.",
+   "La ligne finale résume : 1 + 2 = 3, et 2 ne divise pas 3."
+  ],
+  "a_voir": "Les orbites ont les tailles 1 et 2, et l'orbite de taille 1 est P_B."
+ },
+ {
+  "code": "50-122",
+  "a_dire": "La preuve de Sylow I fait une récurrence avec l'équation des classes et sépare deux cas.",
+  "legende_titre": "Équation des classes et deux cas",
+  "lecture": [
+   "La barre du haut est |G| = 6 coupée en 1 (centre, gris), 2 (orange) et 3 (vert).",
+   "Chaque morceau est une taille de classe ; 3 est un indice non divisible par 2.",
+   "La case verte est le cas 1 : un indice échappe à p.",
+   "La case grise en pointillés est le cas 2 : tous les indices sont divisibles par p."
+  ],
+  "a_voir": "Dans le triangle, l'indice 3 mène au cas 1."
+ },
+ {
+  "code": "50-123",
+  "a_dire": "Si un indice n'est pas divisible par p, p^k divise |C(y)| et on applique la récurrence dans C(y).",
+  "legende_titre": "Chercher dans un groupe plus petit",
+  "lecture": [
+   "La rangée du haut est G : 6 éléments en 3 blocs de 2, donc l'indice est 3.",
+   "Le bloc bleu est C(y) = {e, s_A}.",
+   "La flèche orange mène à ce groupe plus petit.",
+   "La case du bas dit que p^k = 2 divise |C(y)| = 2 : on cherche là."
+  ],
+  "a_voir": "Le sous-groupe cherché est dans C(y), pas dans G entier."
+ },
+ {
+  "code": "50-124",
+  "a_dire": "Si tous les indices sont divisibles par p, alors p divise |C|.",
+  "legende_titre": "Le centre est une différence de multiples de p",
+  "lecture": [
+   "La barre du haut est |G| = 8 en 4 paires.",
+   "La paire verte est le centre : |C| = 2.",
+   "Les trois paires orange sont les indices 2 + 2 + 2 = 6.",
+   "La case du bas : 8 − 6 = 2, un multiple de 2."
+  ],
+  "a_voir": "Un multiple de 2 moins un multiple de 2 est un multiple de 2."
+ },
+ {
+  "code": "50-125",
+  "a_dire": "Le centre est abélien : deux éléments du centre commutent.",
+  "legende_titre": "Dans le centre tout commute, hors du centre non",
+  "lecture": [
+   "Le cadre bleu est le centre C ; z et w y sont, et zw = wz (flèche verte).",
+   "Le cadre gris est hors du centre : s_A et s_B sont deux réflexions.",
+   "La flèche rouge et le signe ≠ montrent que s_A s_B n'est pas s_B s_A."
+  ],
+  "a_voir": "Les éléments du centre commutent, pas les réflexions du triangle."
+ },
+ {
+  "code": "50-126",
+  "a_dire": "Dans un groupe abélien, si p premier divise l'ordre, il y a un élément d'ordre p.",
+  "legende_titre": "Il faut que p soit premier",
+  "lecture": [
+   "Les quatre disques sont les éléments du groupe ℤ/2ℤ × ℤ/2ℤ ; le gris est l'identité e.",
+   "Chaque texte sous un disque donne son ordre : 1, puis 2, 2, 2.",
+   "La case verte : avec p = 2 premier, il y a un élément d'ordre 2.",
+   "La case rouge : 4 divise 4, mais aucun élément n'est d'ordre 4."
+  ],
+  "a_voir": "Pour p premier le lemme marche, pour 4 il échoue."
+ },
+ {
+  "code": "50-127",
+  "a_dire": "On passe au quotient G/⟨c⟩, on y trouve un sous-groupe, puis on le remonte dans G.",
+  "legende_titre": "Quotient puis remontée sur l'horloge",
+  "lecture": [
+   "Les douze disques sont les heures de 0 à 11.",
+   "Chaque trait relie deux heures opposées : c'est un paquet ; il y en a 6.",
+   "Les deux traits orange sont les 2 paquets choisis.",
+   "Les disques verts 0, 3, 6, 9 sont les 4 éléments remontés."
+  ],
+  "a_voir": "Deux paquets choisis donnent quatre heures : 0, 3, 6, 9."
+ },
+ {
+  "code": "50-128",
+  "a_dire": "Le théorème de correspondance remonte un sous-groupe du quotient par réunion de paquets de p éléments.",
+  "legende_titre": "Réunir les paquets pour remonter",
+  "lecture": [
+   "Les deux cases violettes du haut sont les 2 éléments du sous-groupe du quotient.",
+   "Les flèches orange les remontent.",
+   "Chaque paquet donne deux cases vertes : p = 2 éléments (0 et 6, 3 et 9).",
+   "La case du bas compte : 2 × 2 = 4 éléments."
+  ],
+  "a_voir": "Le sous-groupe remonté a 2 × 2 = 4 éléments."
+ }
+]

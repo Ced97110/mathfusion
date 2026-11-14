@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 21, 60, 'chapitre 43', 'autre', 'm', weight='bold')
+box(ax, 7, 36, 28, 11, 'autre', fill=False, dash=True)
+box(ax, 7, 20, 28, 11, 'autre', fill=False, dash=True)
+for (x, y) in ((15, 41.5), (27, 41.5), (15, 25.5), (27, 25.5)):
+    disc(ax, x, y, 3.5, 'autre')
+text(ax, 21, 11, 'ensemble coupé en blocs', 'autre', 's')
+line(ax, [(44, 6), (44, 62)], 'fixe', dash=True)
+text(ax, 66, 60, 'ici', 'sujet', 'm', weight='bold')
+box(ax, 48, 38, 36, 10, 'sujet', label='4')
+box(ax, 48, 20, 17, 10, 'sujet', label='2')
+box(ax, 67, 20, 17, 10, 'sujet', label='2')
+arrow(ax, (56.5, 37), (56.5, 31), 'varie')
+arrow(ax, (75.5, 37), (75.5, 31), 'varie')
+text(ax, 66, 11, 'nombre coupé en parts', 'sujet', 's')
+save(fig, '60-222')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+ox, oy, u = 24, 31, 17
+poly(ax, [(ox-u, oy-u), (ox+u, oy-u), (ox+u, oy+u), (ox-u, oy+u)], 'sujet')
+line(ax, [(ox-u, oy), (ox+u, oy)], 'fixe'); line(ax, [(ox, oy-u), (ox, oy+u)], 'fixe')
+line(ax, [(ox-u+1, oy-u+1), (ox+u-1, oy+u-1)], 'limite', lw=1.6)
+arrow(ax, (ox, oy), (ox+10, oy+10), 'limite', lw=1.2)
+text(ax, ox+13, oy+7, '(1, 1)', 'limite', 's', ha='left')
+text(ax, ox, oy+u+4, 'tout le plan', 'sujet', 'm')
+text(ax, ox, oy-u-4, 'droite isotrope', 'limite', 's')
+text(ax, 67, 57, r'$\nu = 1$', 'sujet', 'l')
+text(ax, 67, 50, 'droite : dimension 1', 'limite', 's')
+box(ax, 50, 29, 34, 11, 'sujet', label=r'$H_1$ = tout le plan', size='s')
+text(ax, 67, 17, r'$X = 0$', 'resultat', 'l')
+disc(ax, 56, 8, 1.2, 'resultat')
+text(ax, 60, 8, 'rien ne reste', 'resultat', 's', ha='left')
+save(fig, '72-130')

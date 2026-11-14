@@ -1,0 +1,183 @@
+[
+ {
+  "code": "76-033",
+  "a_dire": "La formule décrit : choisir deux éléments de la base, les multiplier, écrire le produit dans la base, lire les nombres devant chaque élément.",
+  "legende_titre": "Quatre gestes sur un cas chiffré",
+  "lecture": [
+   "Les quatre rangées sont les quatre gestes, de haut en bas.",
+   "Le bleu donne les éléments de la base : u2 = i deux fois, puis le produit écrit avec u1 et u2.",
+   "L’orange est le produit i fois i, qui vaut −1.",
+   "Le vert donne les nombres lus : γ221 = −1 et γ222 = 0."
+  ],
+  "a_voir": "Tu vois la suite des quatre gestes qui mène de u2 et u2 aux deux nombres γ."
+ },
+ {
+  "code": "76-034",
+  "a_dire": "Les constantes de structure sont les nombres de la table de multiplication de la base : ils fixent le produit.",
+  "legende_titre": "La table de la base et ses huit nombres",
+  "lecture": [
+   "Les quatre cases bleues sont les quatre produits de 1 et de i.",
+   "Chaque case contient deux nombres : celui devant 1 et celui devant i.",
+   "L’accolade rassemble les huit nombres : ce sont les γ."
+  ],
+  "a_voir": "Tu vois que toute la multiplication tient dans huit nombres."
+ },
+ {
+  "code": "76-035",
+  "a_dire": "Pour multiplier x par y, il suffit de sortir les nombres de chaque terme et de lire les produits dans la table.",
+  "legende_titre": "Les nombres sortent, la table reste",
+  "lecture": [
+   "Les en-têtes orange sont les nombres des deux éléments x et y, avec leur élément de base.",
+   "Les quatre cases grises sont les produits de la table : u1u1, u1u2, u2u1, u2u2.",
+   "Le rectangle vert est le résultat, −10 + 11i."
+  ],
+  "a_voir": "Tu vois que le produit se réduit à des nombres multipliés et à des cases de la table."
+ },
+ {
+  "code": "76-036",
+  "a_dire": "Pour multiplier deux nombres complexes, on lit quatre cases (1×1, 1×i, i×1, i×i) puis on additionne.",
+  "legende_titre": "Quatre cases pour tout produit complexe",
+  "lecture": [
+   "Le tableau de gauche est la table : trois cases bleues et la case orange i × i = −1.",
+   "La colonne de droite suit le calcul de (1 + 2i)(3 + i).",
+   "Le terme −2 vient de la case orange.",
+   "Le vert est le résultat, 1 + 7i."
+  ],
+  "a_voir": "Tu vois que le calcul se réduit à quatre lectures de la table et une somme."
+ },
+ {
+  "code": "76-037",
+  "a_dire": "Une unité matricielle est un tableau avec un seul 1 et des zéros partout ailleurs.",
+  "legende_titre": "Un seul 1, tout le reste est nul",
+  "lecture": [
+   "Les deux tableaux bleus ont un seul 1 : ce sont e12 et e11.",
+   "Le tableau violet a deux 1 : c’est l’unité, pas une unité matricielle.",
+   "Le tableau gris a des nombres a, b, c, d dans toutes les cases."
+  ],
+  "a_voir": "Tu vois qu’une unité matricielle se reconnaît à son unique 1."
+ },
+ {
+  "code": "76-038",
+  "a_dire": "Le produit de deux unités matricielles vaut une unité si les indices du milieu sont égaux, sinon le tableau de zéros.",
+  "legende_titre": "Un produit qui donne une unité ou zéro",
+  "lecture": [
+   "La première ligne multiplie e12 (bleu) par e21 (violet) : le résultat vert est e11.",
+   "La seconde ligne multiplie e12 par e12 : le résultat rouge est le tableau de zéros.",
+   "Sous chaque ligne, les indices du milieu sont comparés."
+  ],
+  "a_voir": "Tu vois deux produits : l’un donne e11, l’autre donne zéro."
+ },
+ {
+  "code": "76-039",
+  "a_dire": "Le delta de Kronecker vaut 1 si les deux numéros sont égaux et 0 s’ils sont différents.",
+  "legende_titre": "Un nombre qui vaut 1 ou 0",
+  "lecture": [
+   "Les lignes sont les valeurs de j, les colonnes les valeurs de k.",
+   "Les cases vertes sont sur la diagonale : j = k, la valeur est 1.",
+   "Les cases rouges sont hors de la diagonale : j ≠ k, la valeur est 0."
+  ],
+  "a_voir": "Tu vois que le 1 est sur la diagonale et le 0 partout ailleurs."
+ },
+ {
+  "code": "76-040",
+  "a_dire": "On lit la formule en mots : si les indices du milieu sont égaux, le produit garde l’indice de gauche et celui de droite ; sinon il est nul.",
+  "legende_titre": "Indices du milieu, puis gauche et droite",
+  "lecture": [
+   "Les 1 orange sont ceux dont le numéro est au milieu : colonne du premier tableau, ligne du second.",
+   "Première ligne : milieux 3 et 3, le produit vert e12 garde 1 à gauche et 2 à droite.",
+   "Seconde ligne : milieux 3 et 2, le produit rouge est nul."
+  ],
+  "a_voir": "Tu vois que les indices du milieu décident si le produit est nul."
+ },
+ {
+  "code": "76-041",
+  "a_dire": "Avec e12 e21 = e11 et e21 e12 = e22, deux résultats différents, M2(F) n’est pas commutative.",
+  "legende_titre": "Changer l’ordre change le résultat",
+  "lecture": [
+   "La première ligne multiplie e12 par e21 : le 1 vert est en haut à gauche.",
+   "La seconde ligne multiplie e21 par e12 : le 1 vert est en bas à droite.",
+   "Le signe rouge ≠ sépare les deux résultats."
+  ],
+  "a_voir": "Tu vois que les deux ordres donnent deux tableaux différents."
+ },
+ {
+  "code": "76-042",
+  "a_dire": "L’unité est la somme des unités de la diagonale : e11 + e22 + … + enn.",
+  "legende_titre": "L’unité comme somme de la diagonale",
+  "lecture": [
+   "Le premier tableau bleu a un 1 en haut à gauche : e11.",
+   "Le second tableau bleu a un 1 en bas à droite : e22.",
+   "Le tableau vert est leur somme : l’unité."
+  ],
+  "a_voir": "Tu vois que les deux 1 de la diagonale s’additionnent pour donner l’unité."
+ },
+ {
+  "code": "76-043",
+  "a_dire": "Une sous-algèbre est une partie stable par la somme, par les multiples et par le produit.",
+  "legende_titre": "Trois stabilités, deux voisins qui en manquent une",
+  "lecture": [
+   "Chaque colonne est une opération : somme, multiples, produit.",
+   "Le sous-anneau a une croix rouge aux multiples : les entiers, multipliés par ½, sortent.",
+   "Le sous-espace a une croix rouge au produit : le produit sort.",
+   "La rangée bleue, la sous-algèbre, a trois coches vertes."
+  ],
+  "a_voir": "Tu vois que seule la sous-algèbre est stable pour les trois opérations."
+ },
+ {
+  "code": "76-044",
+  "a_dire": "Les matrices diagonales restent diagonales pour la somme, le produit et les multiples.",
+  "legende_titre": "Les opérations gardent des zéros hors diagonale",
+  "lecture": [
+   "En haut : deux matrices diagonales, bleue (2 et 3) et violette (5 et −1).",
+   "Les flèches orange mènent à la somme (7 et 2), au produit (10 et −3) et à 4 fois la première (8 et 12).",
+   "Les cases grises hors diagonale restent vides, donc nulles."
+  ],
+  "a_voir": "Tu vois que chaque résultat reste diagonal."
+ },
+ {
+  "code": "76-045",
+  "a_dire": "La sous-algèbre engendrée par S est la plus petite sous-algèbre qui contient S.",
+  "legende_titre": "De e12 à tous les a·1 + b·e12",
+  "lecture": [
+   "Le tableau orange est e12, le seul élément de S.",
+   "Le tableau violet est l’unité, qu’il faut ajouter.",
+   "Le grand cadre bleu est la sous-algèbre engendrée par S : le tableau vert a, b, 0, a est son résultat.",
+   "Le produit e12 e12 vaut 0, donc la liste s’arrête."
+  ],
+  "a_voir": "S est dans le cadre, qui est la plus petite sous-algèbre contenant S."
+ },
+ {
+  "code": "76-046",
+  "a_dire": "Un idéal est stable quand on le multiplie par un élément quelconque de l’algèbre.",
+  "legende_titre": "Un produit qui reste dedans, un produit qui sort",
+  "lecture": [
+   "Le tableau bleu, de diagonale 4 et 0, est dans l’idéal : sa seconde case est nulle.",
+   "Le tableau violet, de diagonale 3 et 7, est un facteur quelconque de l’algèbre.",
+   "Le tableau vert, de diagonale 12 et 0, est le produit : il est encore dans l’idéal."
+  ],
+  "a_voir": "Le produit d’un élément de l’idéal par un élément quelconque reste dans l’idéal."
+ },
+ {
+  "code": "76-047",
+  "a_dire": "Dans l’algèbre quotient, deux éléments qui ont la même seconde case forment la même classe.",
+  "legende_titre": "Une classe se lit par la seconde case",
+  "lecture": [
+   "Trois tableaux : la seconde case est en orange.",
+   "Les deux premiers ont la seconde case 5 : l’accolade les met dans la même classe.",
+   "Le troisième a la seconde case 3 : il va dans une autre classe.",
+   "Les cercles verts sont les classes, 5 et 3."
+  ],
+  "a_voir": "Tu vois que les tableaux de même seconde case tombent dans le même cercle."
+ },
+ {
+  "code": "76-048",
+  "a_dire": "Un homomorphisme d’algèbres respecte la somme, le produit et les multiples.",
+  "legende_titre": "La seconde case respecte les trois opérations",
+  "lecture": [
+   "En haut : A a pour diagonale 2 et 5, B a pour diagonale 7 et −1.",
+   "Chaque rangée montre un résultat (somme, produit, 3A) avec sa seconde case en orange.",
+   "À droite, le nombre lu est égal à l’opération faite sur les nombres de A et de B : 4 = 5 + (−1), −5 = 5 × (−1), 15 = 3 × 5."
+  ],
+  "a_voir": "Tu vois que lire la seconde case avant ou après l’opération donne le même nombre."
+ }
+]

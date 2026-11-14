@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 14, 66, 60, 11, 'autre', label=r'$t$ : une réflexion quelconque')
+arrow(ax, (44, 65), (44, 56), 'fixe'); text(ax, 46, 60.5, r'on enchaîne $s$ puis $t$', 'fixe', 's', ha='left')
+box(ax, 8, 44, 72, 11, 'varie', label=r'$s\,t = r^i$ : une rotation', weight='bold', lw=1.6)
+text(ax, 44, 40, 'deux retournements : pas de retournement', 'varie', 's')
+arrow(ax, (44, 36), (44, 27), 'fixe'); text(ax, 46, 31.5, r'$s$ annule $s$ : $s^2 = 1$', 'fixe', 's', ha='left')
+box(ax, 14, 15, 60, 11, 'resultat', label=r'$t = s\,r^i$')
+text(ax, 44, 8, r'$i = 0, 1, \ldots, n-1$ : $n$ réflexions', 'resultat', 's')
+text(ax, 2, 80.5, 'départ', 'autre', 's', ha='left'); text(ax, 2, 58, 'étape clé', 'varie', 's', ha='left'); text(ax, 2, 12, 'arrivée', 'resultat', 's', ha='left')
+save(fig, '44-136')

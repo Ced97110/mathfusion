@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+for i in range(5): box(ax,6+11*i,56,9,8,'fixe' if i<2 else 'resultat',label='$a$')
+text(ax,76,60,'$a^5$','sujet','l')
+brace(ax,28,59,64,'resultat',label='3 restent',down=False)
+line(ax,[(4,51),(62,51)],'encre',lw=1.0)
+for i in range(2): box(ax,6+11*i,38,9,8,'fixe',label='$a$')
+text(ax,76,42,'$a^2$','autre','l')
+text(ax,30,42,'$a/a = 1$ pour chaque paire','fixe','s',ha='left')
+arrow(ax,(44,34),(44,20),'resultat')
+box(ax,20,8,48,11,'resultat',label=r'$5 - 2 = 3$ : $a^3$')
+save(fig,'14-031')

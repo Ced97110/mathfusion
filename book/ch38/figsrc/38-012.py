@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+gy = 14
+line(ax, [(2, gy), (86, gy)], 'fixe')
+poly(ax, [(40, gy), (62, 50), (84, gy)], 'fixe')
+S, H = (62, 50), (62, gy)
+arrow(ax, (S[0] - 6, gy), (S[0] - 6, S[1]), 'sujet', lw=1.2, both=True)
+line(ax, [S, H], 'resultat', lw=1.6, dash=True)
+disc(ax, S[0], S[1], 1.3, 'sujet')
+disc(ax, H[0], H[1], 1.3, 'sujet')
+text(ax, S[0], S[1] + 4.5, '$S$', 'sujet', 'm')
+text(ax, H[0], 8, '$H$', 'sujet', 'm')
+text(ax, S[0] - 9, 32, '$h$', 'sujet', 'xl')
+text(ax, 21, 46, '$h$ = longueur de $SH$', 'sujet', 's')
+text(ax, 21, 38, 'un nombre pas encore connu', 'fixe', 's')
+save(fig, '38-012')

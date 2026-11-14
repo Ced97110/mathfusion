@@ -1,0 +1,188 @@
+[
+ {
+  "code": "77-065",
+  "a_dire": "Si N(u) est différent de 0, alors u a un inverse ; sans cette condition, epsilon n'en a pas.",
+  "legende_titre": "Sans N(u) ≠ 0, pas d'inverse",
+  "lecture": [
+   "La chaîne verte part de N(u) ≠ 0 et arrive à uv = 1 : u est inversible.",
+   "La colonne rouge prend epsilon, dont la norme est 0.",
+   "Le tableau rouge de epsilon a pour lignes 0, 0 et 1, 0.",
+   "La dernière boîte rouge dit que epsilon n'a aucun inverse."
+  ],
+  "a_voir": "La chaîne verte marche avec N(u) ≠ 0 ; la colonne rouge montre le cas où la condition manque."
+ },
+ {
+  "code": "77-066",
+  "a_dire": "Le nombre u a un inverse exactement quand N(u) n'est pas nul ; on le vérifie en calculant le déterminant du tableau.",
+  "legende_titre": "Un seul calcul décide de l'inverse",
+  "lecture": [
+   "Le tableau de 1 + 3√2 a les cases 1 et 1 en bleu, 6 et 3 en orange.",
+   "La boîte grise donne le calcul 1 × 1 − 6 × 3.",
+   "La boîte verte donne −17, qui n'est pas nul : l'inverse existe."
+  ],
+  "a_voir": "Le déterminant −17 n'est pas nul, donc le nombre a un inverse."
+ },
+ {
+  "code": "77-067",
+  "a_dire": "La matrice de a + bi a pour première colonne (a, b) et pour seconde colonne (−b, a) ; ici 3 et 4.",
+  "legende_titre": "Les colonnes de la matrice de z",
+  "lecture": [
+   "La boîte bleue donne z × 1 = 3 + 4i : ses coordonnées 3 et 4 forment la colonne bleue.",
+   "La boîte orange donne z × i = −4 + 3i : ses coordonnées −4 et 3 forment la colonne orange.",
+   "Les deux colonnes ensemble donnent le tableau de lignes 3, −4 et 4, 3."
+  ],
+  "a_voir": "Chaque produit donne une colonne : bleue pour z × 1, orange pour z × i."
+ },
+ {
+  "code": "77-068",
+  "a_dire": "La trace de a + bi est la somme des deux cases de la diagonale, 2a ; elle ne dépend pas de b.",
+  "legende_titre": "La trace lit seulement la diagonale",
+  "lecture": [
+   "Dans chaque tableau, les cases vertes sont la diagonale.",
+   "Les cases grises, hors diagonale, ne comptent pas.",
+   "Les deux tableaux, 3 + 4i et 3 + i, donnent la même somme 3 + 3 = 6."
+  ],
+  "a_voir": "Seule la diagonale compte : 3 et 3 donnent 6, quelle que soit l'autre case."
+ },
+ {
+  "code": "77-069",
+  "a_dire": "La norme de z = 3 + 4i est 25 : c'est le carré de la longueur 5 de la flèche, 9 + 16.",
+  "legende_titre": "La norme est une somme de deux carrés",
+  "lecture": [
+   "Le triangle blanc a pour côtés 3 et 4.",
+   "Les carrés bleus sont construits sur ces deux côtés : aires 9 et 16.",
+   "Le carré vert est construit sur le grand côté de longueur 5 : aire 25."
+  ],
+  "a_voir": "Les deux carrés bleus, 9 et 16, ont ensemble l'aire du carré vert, 25."
+ },
+ {
+  "code": "77-070",
+  "a_dire": "Multiplier le carré unité par 2 + i donne un carré de côté √5, donc d'aire 5 = 2² + 1².",
+  "legende_titre": "Le carré unité devient un carré d'aire 5",
+  "lecture": [
+   "Le petit carré bleu est le carré unité, d'aire 1.",
+   "Le carré orange est son image par la multiplication par 2 + i.",
+   "Le cercle en pointillé a pour rayon √5 et passe par le sommet 2 + i.",
+   "À droite, 5 = 2² + 1² est la norme de 2 + i."
+  ],
+  "a_voir": "Le côté du carré orange est le rayon du cercle, donc son aire est le carré de ce rayon : 5."
+ },
+ {
+  "code": "77-071",
+  "a_dire": "Le déterminant en valeur absolue est l'aire du parallélogramme des colonnes ; ici les colonnes sont à angle droit et de même longueur, donc l'aire est r² = 5.",
+  "legende_titre": "Les colonnes forment un carré d'aire 5",
+  "lecture": [
+   "La flèche bleue est la première colonne (2 ; 1), la flèche orange est la seconde (−1 ; 2).",
+   "Le petit angle droit gris montre que les deux flèches sont perpendiculaires.",
+   "Le quadrilatère vert est un carré de côté r : son aire est r² = 5.",
+   "Le tableau à droite reprend les deux colonnes, avec les mêmes couleurs."
+  ],
+  "a_voir": "Deux colonnes à angle droit et de même longueur r font un carré d'aire r²."
+ },
+ {
+  "code": "77-072",
+  "a_dire": "Le polynôme caractéristique de 3 + 4i est le déterminant de λ moins le tableau de z : λ² − 6λ + 25.",
+  "legende_titre": "Du tableau au polynôme",
+  "lecture": [
+   "Le tableau a pour cases λ − 3 en bleu sur la diagonale, 4 et −4 en orange.",
+   "Le produit des deux cases bleues donne (λ − 3)².",
+   "Le produit des deux cases orange donne + 16.",
+   "La somme des deux donne le polynôme vert λ² − 6λ + 25."
+  ],
+  "a_voir": "Diagonale bleue et cases orange donnent chacune un terme du polynôme."
+ },
+ {
+  "code": "77-073",
+  "a_dire": "Le polynôme caractéristique s'écrit λ² − Tλ + N, avec T la trace et N la norme ; pour 3 + 4i : λ² − 6λ + 25.",
+  "legende_titre": "Trois termes : λ², trace et norme",
+  "lecture": [
+   "La colonne grise garde le terme λ².",
+   "La colonne bleue calcule T = 2 × 3 = 6 et le met dans le terme −Tλ.",
+   "La colonne orange calcule N = 9 + 16 = 25 et le met dans le terme + N.",
+   "La ligne du bas donne le polynôme avec les nombres."
+  ],
+  "a_voir": "Chaque couleur suit son nombre : 6 en bleu, 25 en orange."
+ },
+ {
+  "code": "77-074",
+  "a_dire": "Les racines du polynôme sont a + bi et a − bi, un nombre et son conjugué ; ici 3 + 4i et 3 − 4i.",
+  "legende_titre": "Deux racines, symétriques",
+  "lecture": [
+   "Le point bleu est la racine 3 + 4i.",
+   "Le point violet est la racine 3 − 4i.",
+   "Ils sont symétriques par rapport à l'axe réel, à la même abscisse 3.",
+   "À droite, la formule donne (6 ± 8i) / 2 = a ± bi."
+  ],
+  "a_voir": "Les deux racines ont la même partie réelle 3 et des parties opposées 4 et −4."
+ },
+ {
+  "code": "77-075",
+  "a_dire": "Quand b n'est pas nul, le polynôme n'a pas de racine réelle, donc il est le polynôme minimal de degré 2 ; quand b = 0, il y a une racine et le degré tombe à 1.",
+  "legende_titre": "Avec b ≠ 0, le degré 2 reste",
+  "lecture": [
+   "Le graphe vert est celui de λ² − 6λ + 25, pour z = 3 + 4i : il reste au-dessus de l'axe, à 16 en λ = 3.",
+   "Le graphe orange est celui de (λ − 3)², pour z = 3 et b = 0 : il touche l'axe en 3.",
+   "Sous chaque graphe, le degré du polynôme minimal : 2 à gauche, 1 à droite."
+  ],
+  "a_voir": "Le graphe vert ne touche pas l'axe : pas de racine réelle, donc degré 2."
+ },
+ {
+  "code": "77-076",
+  "a_dire": "Pour z = 2 + i, la norme de z au carré est 25 = 5² ; cela fait le triangle de côtés 3, 4 et 5.",
+  "legende_titre": "La norme du carré donne un triangle 3, 4, 5",
+  "lecture": [
+   "La boîte bleue est z = 2 + i, de norme 5.",
+   "La boîte orange est z² = 3 + 4i, de norme 25 = 5².",
+   "Le triangle vert a pour côtés 3, 4 et 5.",
+   "La ligne verte écrit 3² + 4² = 5²."
+  ],
+  "a_voir": "Le carré de 2 + i donne 3 et 4, et leurs carrés s'ajoutent en 5²."
+ },
+ {
+  "code": "77-077",
+  "a_dire": "Le produit (a² + b²)(c² + d²) est égal à (ac − bd)² + (ad + bc)² ; avec 1 + 2i et 3 + 4i, les deux côtés valent 125.",
+  "legende_titre": "Deux chemins vers 125",
+  "lecture": [
+   "La colonne de gauche multiplie les normes 5 et 25 : 125.",
+   "La colonne de droite multiplie les nombres : −5 + 10i.",
+   "La norme de −5 + 10i est 25 + 100 = 125.",
+   "Les deux boîtes vertes sont égales."
+  ],
+  "a_voir": "Multiplier les normes ou prendre la norme du produit donne le même nombre."
+ },
+ {
+  "code": "77-078",
+  "a_dire": "Le produit de deux sommes de deux carrés est encore une somme de deux carrés : 5, 25 et 125.",
+  "legende_titre": "Deux carrés, encore deux carrés",
+  "lecture": [
+   "Chaque ligne montre un nombre comme somme de l'aire d'un carré bleu et de l'aire d'un carré orange.",
+   "5 = 1 + 4 et 25 = 9 + 16.",
+   "En bas, 125 = 25 + 100 : les côtés sont 5 et 10.",
+   "Les signes × et = relient 5 × 25 à 125."
+  ],
+  "a_voir": "Les trois nombres 5, 25 et 125 sont chacun faits de deux carrés."
+ },
+ {
+  "code": "77-079",
+  "a_dire": "La matrice de √2 dans la base (1, √2) a pour colonnes (0, 1) et (2, 0).",
+  "legende_titre": "Les deux colonnes de la matrice de √2",
+  "lecture": [
+   "La boîte bleue donne √2 × 1 = √2, de coordonnées 0 et 1 : colonne 1.",
+   "La boîte orange donne √2 × √2 = 2, de coordonnées 2 et 0 : colonne 2.",
+   "Les deux colonnes forment le tableau de lignes 0, 2 et 1, 0."
+  ],
+  "a_voir": "Chaque produit remplit une colonne du tableau."
+ },
+ {
+  "code": "77-080",
+  "a_dire": "Multiplier par √2 envoie le carré unité sur un rectangle de largeur 2 et de hauteur 1, d'aire 2, avec det = −2.",
+  "legende_titre": "Le carré unité devient un rectangle d'aire 2",
+  "lecture": [
+   "Le carré bleu est le carré unité, d'aire 1 ; ses sommets sont 0, 1, √2 et 1 + √2.",
+   "Le rectangle orange est son image par × √2, d'aire 2 ; ses sommets sont 0, √2, 2 et 2 + √2.",
+   "Les flèches orange envoient 1 sur √2, √2 sur 2 et 1 + √2 sur 2 + √2.",
+   "L'axe horizontal compte les 1, l'axe vertical compte les √2."
+  ],
+  "a_voir": "Les deux axes sont échangés, d'où le signe moins dans det = −2."
+ }
+]

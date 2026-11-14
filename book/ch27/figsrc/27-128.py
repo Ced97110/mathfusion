@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+o = (36, 12); u = 8.0
+def P(x, y, z): return iso(x, y, z, o, u)
+C, B, D, A, G = P(0,0,0), P(3,0,0), P(0,4,0), P(3,4,0), P(0,0,3)
+poly(ax, [C, B, A, D], 'fixe')
+arrow(ax, C, B, 'sujet', lw=1.8); arrow(ax, C, D, 'autre', lw=1.8)
+arrow(ax, C, G, 'resultat', lw=1.8)
+text(ax, B[0]+4, B[1]-3, 'CB', 'sujet', 's'); text(ax, D[0]-4, D[1]-2, 'CD', 'autre', 's')
+text(ax, G[0]+4, G[1], 'CG', 'resultat', 's')
+text(ax, 62, 6, 'plan du sol', 'fixe', 's')
+box(ax, 50, 46, 36, 9, 'varie', label='produit vectoriel')
+text(ax, 68, 62, r'$CB \times CD$', 'varie', 's')
+arrow(ax, (50, 50), (G[0]+8, G[1]+4), 'varie', lw=0.9)
+save(fig, '27-128')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,3,52,38,9,'sujet',label='un nombre moins 4',size='s'); box(ax,47,52,38,9,'sujet',label='un nombre diminué de 4',size='s')
+arrow(ax,(22,51),(40,43),'varie'); arrow(ax,(66,51),(48,43),'varie')
+box(ax,32,34,24,9,'varie',label='$x-4$',size='l')
+f=numberline(ax,8,70,17,4,10,arrow_right=True)
+disc(ax,f(10),17,2,'sujet'); disc(ax,f(6),17,2,'resultat')
+arrow(ax,(f(10),21),(f(6),21),'varie',curve=0.4)
+text(ax,f(8),31,'retirer 4','varie','s')
+text(ax,f(10)+1,24.5,'$x=10$','sujet','s'); text(ax,f(6),10,'$6$','resultat','m')
+save(fig,'16-091')

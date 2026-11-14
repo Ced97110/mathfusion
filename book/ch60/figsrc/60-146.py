@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, u = 8, 14, 10
+P = lambda a, b: (ox + a * u, oy + b * u)
+arrow(ax, (ox - 3, oy), (ox + 5 * u, oy), 'fixe', lw=0.7)
+arrow(ax, (ox, oy - 3), (ox, oy + 3.5 * u), 'fixe', lw=0.7)
+arrow(ax, P(0, 0), P(3, 0), 'varie', lw=1.3)
+arrow(ax, P(3, 0), P(3, 2), 'varie', lw=1.3)
+arrow(ax, P(3, 2), P(4, 2), 'varie', lw=1.3)
+arrow(ax, P(0, 0), P(4, 2), 'resultat', lw=1.5)
+text(ax, P(1.5, 0)[0], oy - 4.5, r'$3x$', 'varie', 's')
+text(ax, P(3, 1)[0] + 5.5, P(3, 1)[1], r'$2Tx$', 'varie', 's')
+text(ax, P(3.5, 2)[0], P(3, 2)[1] + 4, r'$T^2x$', 'varie', 's')
+text(ax, P(1.2, 1.2)[0] - 3, P(1.2, 1.2)[1] + 4, 'somme', 'resultat', 's', weight='bold')
+tx = 58
+text(ax, tx, 50, r'$3x = (3, 0)$', 'varie', 's', ha='left')
+text(ax, tx, 43, r'$2Tx = (0, 2)$', 'varie', 's', ha='left')
+text(ax, tx, 36, r'$T^2x = (1, 0)$', 'varie', 's', ha='left')
+text(ax, tx, 26, 'somme : (4, 2)', 'resultat', 's', ha='left', weight='bold')
+text(ax, tx, 10, r'$x = (1, 0)$', 'fixe', 's', ha='left')
+save(fig, '60-146')

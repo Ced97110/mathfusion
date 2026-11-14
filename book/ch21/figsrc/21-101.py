@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+text(ax,44,72,r'$\frac{a+b}{c}=\frac{a}{c}+\frac{b}{c}$','encre','l')
+box(ax,4,36,80,24,'fixe'); box(ax,4,4,80,24,'sujet')
+text(ax,44,52,'diviser le total','fixe','s')
+text(ax,44,45,r'$\frac{12+8}{4}=\frac{20}{4}=5$','fixe','l')
+text(ax,44,20,'diviser chaque terme','sujet','s')
+text(ax,44,12,r'$\frac{12}{4}+\frac{8}{4}=3+2=5$','sujet','l')
+text(ax,44,32,r'$=$','resultat','xl')
+save(fig,'21-101')

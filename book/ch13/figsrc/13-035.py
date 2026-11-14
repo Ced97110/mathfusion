@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(55)
+text(ax, 44, 50, r'$-a$ n’est pas forcément négatif', 'sujet', 'm')
+f = numberline(ax, 8, 80, 26, -5, 5, labels=False, arrow_right=False)
+text(ax, f(0), 21, '0', 'fixe')
+disc(ax, f(-4), 26, 2.2, 'sujet'); disc(ax, f(4), 26, 2.2, 'resultat')
+text(ax, f(-4), 21, '−4', 'sujet'); text(ax, f(4), 21, '4', 'resultat')
+text(ax, f(-4), 31, r'$a=-4$', 'sujet'); text(ax, f(4), 31, r'$-a=4$', 'resultat')
+arrow(ax, (f(-4) + 1, 33.5), (f(4) - 1, 33.5), 'varie', curve=-0.3)
+text(ax, f(0), 44, 'le trait change de côté', 'varie')
+text(ax, f(-2.5), 12, 'côté négatif', 'fixe', 's'); text(ax, f(2.5), 12, 'côté positif', 'fixe', 's')
+save(fig, '13-035')

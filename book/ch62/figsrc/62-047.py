@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 80, r'racine $r$ : le facteur $x-r$ casse $f$', 'encre', 'm')
+# colonne gauche : le cas qui casse
+box(ax, 2, 6, 40, 66, 'limite')
+text(ax, 22, 66, r'$x^2-1$ sur ℚ', 'limite', 'm')
+box(ax, 6, 48, 32, 11, 'encre', label=r'$1-1=0$', size='s')
+text(ax, 22, 43, 'racine 1', 'limite', 's')
+arrow(ax, (22, 40), (22, 35), 'limite')
+box(ax, 6, 22, 32, 12, 'encre', label=r'$(x-1)(x+1)$', size='s')
+text(ax, 22, 13, 'se casse : pas irréductible', 'limite', 's')
+# colonne droite : irréductible
+box(ax, 46, 6, 40, 66, 'resultat')
+text(ax, 66, 66, r'$x^2-2$ sur ℚ', 'resultat', 'm')
+text(ax, 66, 54, 'irréductible', 'resultat', 'm')
+box(ax, 50, 36, 32, 11, 'encre', label=r'aucun $x-r$', size='s')
+arrow(ax, (66, 35), (66, 29), 'resultat')
+box(ax, 50, 17, 32, 11, 'encre', label='aucune racine', size='s')
+text(ax, 66, 10.5, 'dans ℚ', 'resultat', 's')
+save(fig, '62-047')

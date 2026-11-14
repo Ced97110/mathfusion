@@ -1,0 +1,291 @@
+[
+ {
+  "code": "38-073",
+  "a_dire": "Si β = α, les deux visées sont parallèles : le sinus de 0° vaut 0, la formule divise par 0 et il n'y a pas de sommet à calculer.",
+  "legende_titre": "Deux angles de 18° : les visées ne se rejoignent pas",
+  "lecture": [
+   "Les deux traits bleus sont les visées faites depuis A et depuis B ; chacune monte à 18°.",
+   "Les arcs orange marquent l'angle de 18° de chaque visée.",
+   "Les deux cases rouges donnent le calcul qui échoue : le sinus de 0° vaut 0, puis la division par 0 est impossible."
+  ],
+  "a_voir": "Les deux traits bleus gardent le même écart, ils ne se coupent jamais : il n'y a pas de sommet."
+ },
+ {
+  "code": "38-074",
+  "a_dire": "Pour une étoile très loin, deux visées faites à 1 km l'une de l'autre donnent le même angle : β = α.",
+  "legende_titre": "Une étoile vue de deux points distants de 1 km",
+  "lecture": [
+   "Les deux traits bleus partent de A et de B, deux points du sol séparés de 1 km.",
+   "Les arcs orange marquent les angles α et β : ils sont égaux.",
+   "Les flèches bleues continuent vers l'étoile, en violet, qui est très loin."
+  ],
+  "a_voir": "Les deux visées restent parallèles : se déplacer de 1 km ne change pas l'angle."
+ },
+ {
+  "code": "38-075",
+  "a_dire": "Quand β = 90°, la formule générale redonne h = d tan α : avec 1000 m et 18°, h vaut environ 324,9 m.",
+  "legende_titre": "Le second point est juste sous le sommet",
+  "lecture": [
+   "Le triangle bleu a pour base d = 1000 m, de A à B, et l'arc orange est l'angle α = 18° en A.",
+   "Le petit carré gris en B marque l'angle de 90°.",
+   "Le trait vert est la hauteur h ; la case verte donne le calcul 1000 × 0,32492, soit environ 324,9 m."
+  ],
+  "a_voir": "Au point B, sous le sommet, il reste h = d tan α, la formule du cas facile."
+ },
+ {
+  "code": "38-076",
+  "a_dire": "Si α + β = 180°, il n'y a plus d'angle au poteau : les deux visées de A et de B sont parallèles et la formule de la largeur divise par 0.",
+  "legende_titre": "Deux lectures de 100° et de 80° : la somme fait 180°",
+  "lecture": [
+   "Le trait gris est la rive, de A à B.",
+   "Les deux traits bleus sont les visées depuis A et depuis B ; ils ont la même direction.",
+   "Les arcs orange marquent 100° en A et 80° en B.",
+   "Le texte rouge dit que sans croisement des visées, il n'y a pas de poteau à calculer."
+  ],
+  "a_voir": "Les deux traits bleus sont parallèles, donc ils ne se coupent pas."
+ },
+ {
+  "code": "38-077",
+  "a_dire": "Une erreur de 0,1° sur β change la hauteur d'environ 51 m, soit 2,5 %.",
+  "legende_titre": "Un dixième de degré de plus sur l'angle lu",
+  "lecture": [
+   "La colonne bleue est la hauteur pour β = 21,25° : environ 1976 m.",
+   "La colonne orange est la hauteur pour β = 21,35° : environ 1925 m.",
+   "La flèche orange marque l'ajout de 0,1° ; le petit trait en haut à droite marque l'écart d'environ 51 m, soit 2,5 %."
+  ],
+  "a_voir": "Un si petit changement d'angle fait perdre à la hauteur environ 51 m."
+ },
+ {
+  "code": "38-078",
+  "a_dire": "L'amplification de l'erreur vient du dénominateur sin(β − α) : c'est un petit nombre, donc la division le rend très sensible.",
+  "legende_titre": "Le petit nombre par lequel on divise",
+  "lecture": [
+   "La case orange est le dénominateur sin(β − α) de la formule de h.",
+   "Les deux traits bleus forment l'angle au sommet de 3,25°, dessiné à l'échelle ; son sinus vaut 0,05669, un petit nombre.",
+   "Les deux cases grises divisent 10 par 0,05669 puis par 0,05844 : on trouve environ 176,4 puis 171,1, un écart de 5,3."
+  ],
+  "a_voir": "Quand le sinus change à peine, le résultat de la division change beaucoup."
+ },
+ {
+  "code": "38-079",
+  "a_dire": "Le même ajout de 0,1° augmente le sinus de 3 % près de 3°, mais de 0,1 % près de 60°.",
+  "legende_titre": "Quatre sinus : le même ajout, deux effets",
+  "lecture": [
+   "Les deux cases bleues donnent le sinus de 3,25° et de 3,35°.",
+   "Les deux cases violettes donnent le sinus de 60° et de 60,1°.",
+   "Chaque barre orange mesure la part de l'écart dans le sinus, avec 1 % pour 8 mm : environ 3 % en haut, 0,1 % en bas."
+  ],
+  "a_voir": "La barre du haut est trente fois plus longue que celle du bas."
+ },
+ {
+  "code": "38-080",
+  "a_dire": "Près de 0°, le sinus monte à sa vitesse maximale : son augmentation est presque égale à l'ajout d'angle exprimé en radians.",
+  "legende_titre": "Le sinus près de 0°, à côté de la droite y = x",
+  "lecture": [
+   "En haut, la courbe bleue est le sinus et la droite grise en tirets est y = x ; elles sont presque confondues près de 0.",
+   "En bas, la barre bleue est l'augmentation du sinus, 0,00175.",
+   "La barre violette est 0,1° en radians, 0,1 × π/180, environ 0,00175 ; les deux barres ont la même longueur, à une échelle agrandie."
+  ],
+  "a_voir": "Près de 0, la courbe bleue colle à la droite grise ; plus loin, elle s'en écarte."
+ },
+ {
+  "code": "38-081",
+  "a_dire": "Diviser par un petit nombre mal connu, c'est diviser par un nombre dont l'erreur relative est grande.",
+  "legende_titre": "Le même écart comparé à chaque nombre",
+  "lecture": [
+   "Chaque barre représente le nombre entier, 100 % : en bleu le sinus de 3,25°, en violet le sinus de 60°.",
+   "La partie orange collée à droite est l'écart ajouté, tracé selon sa part du nombre.",
+   "Dessous, les écarts : 0,00175 fait 3 % du petit nombre, 0,00087 fait 0,1 % du grand."
+  ],
+  "a_voir": "Sur le petit nombre, la partie orange se voit ; sur le grand, c'est à peine un trait."
+ },
+ {
+  "code": "38-082",
+  "a_dire": "Avec la même base et la même erreur de 3° en B, le sommet bouge peu dans le triangle presque équilatéral et beaucoup dans le triangle aplati.",
+  "legende_titre": "La même erreur de 3° dans deux triangles",
+  "lecture": [
+   "Le triangle vert est presque équilatéral : ses deux visées font 60° entre elles. S est son sommet, S' le sommet après l'erreur.",
+   "Le triangle violet est aplati : ses visées font 6° entre elles. T est son sommet, T' le sommet après l'erreur.",
+   "Le trait orange en tirets est la visée de B faussée de 3°."
+  ],
+  "a_voir": "S' est tout près de S, alors que T' est très loin de T."
+ },
+ {
+  "code": "38-083",
+  "a_dire": "Quand les visées sont presque parallèles, leur point de rencontre glisse loin : 67 % de la base pour 6°, contre 6 % pour 60°.",
+  "legende_titre": "Le point de rencontre glisse plus ou moins loin",
+  "lecture": [
+   "La barre grise est la base AB, 100 %.",
+   "Les deux traits verts à 60° et la barre verte donnent le déplacement du point de rencontre : 6 % de la base.",
+   "Les deux traits violets à 6° et la barre violette donnent un déplacement de 67 % de la base."
+  ],
+  "a_voir": "Plus l'angle entre les visées est petit, plus la barre est longue."
+ },
+ {
+  "code": "38-084",
+  "a_dire": "Reculer le premier point agrandit l'angle au sommet de 3,25° à 10,16° et ramène l'erreur de 2,5 % à 0,5 %.",
+  "legende_titre": "Une base plus longue donne un angle plus grand",
+  "lecture": [
+   "En haut, en bleu : base de 1000 m, angle au sommet de 3,25° dessiné à l'échelle, erreur de 2,5 %.",
+   "En bas, en vert : base de 5000 m, angle de 10,16°, erreur de 0,5 %.",
+   "La flèche orange montre le geste : on recule le premier point A."
+  ],
+  "a_voir": "L'angle du bas est plus ouvert, et l'erreur est plus petite."
+ },
+ {
+  "code": "38-085",
+  "a_dire": "Il faut éviter les angles très petits ou proches de 180°, car leur sinus est petit, et préférer des angles voisins de 60°.",
+  "legende_titre": "Le sinus de 0° à 180°",
+  "lecture": [
+   "La courbe grise est le sinus d'un angle de 0° à 180°.",
+   "Les deux points orange, à 3,25° et à 176,75°, ont le même sinus 0,05669, un petit nombre.",
+   "Le point vert à 60° a pour sinus 0,86603, un grand nombre."
+  ],
+  "a_voir": "La courbe est basse aux deux bouts et haute au milieu."
+ },
+ {
+  "code": "38-086",
+  "a_dire": "Une erreur de 1 % sur la base devient une erreur de 1 % sur chaque côté du réseau : elle se transmet sans s'amplifier.",
+  "legende_titre": "Une base trop grande de 1 % : tout grandit de 1 %",
+  "lecture": [
+   "Chaque barre bleue est une longueur du réseau : la base de 12 km, un côté de 50 km, un côté de 8 km.",
+   "Le petit bout orange à droite est l'ajout de 1 % ; il donne 12,12 km, 50,5 km et 8,08 km.",
+   "Le texte orange à droite rappelle que chaque longueur est multipliée par 1,01."
+  ],
+  "a_voir": "Les trois barres grandissent de la même part, 1 %."
+ },
+ {
+  "code": "38-087",
+  "a_dire": "La somme des trois angles mesurés d'un triangle doit valoir 180° ; ici elle vaut 181°, donc une lecture est fausse.",
+  "legende_titre": "Trois angles mesurés posés sur une droite",
+  "lecture": [
+   "Les trois secteurs sont les angles mesurés : 62° en bleu, 58° en violet, 61° en orange.",
+   "La droite noire en bas fait 180°.",
+   "Le secteur orange dépasse la droite de 1° : c'est le degré de trop."
+  ],
+  "a_voir": "Les trois angles ne tiennent pas dans la droite : il manque de la place pour 1°."
+ },
+ {
+  "code": "38-088",
+  "a_dire": "Pour contrôler un réseau, on calcule une longueur tout au bout de la chaîne de triangles, on la mesure au sol et on compare.",
+  "legende_titre": "Calculer au bout du réseau, puis mesurer",
+  "lecture": [
+   "La chaîne de triangles gris part de la base mesurée, en bleu, et finit au segment de contrôle, en vert.",
+   "La barre orange est la longueur du segment de contrôle calculée par la chaîne.",
+   "La barre verte est la longueur du même segment mesurée au sol ; les deux barres sont égales aux erreurs de mesure près."
+  ],
+  "a_voir": "Le segment du bout est mesuré, pas seulement calculé, puis comparé."
+ },
+ {
+  "code": "38-089",
+  "a_dire": "Delambre et Méchain ont mesuré une base près de Paris, calculé par la chaîne de triangles une base près de Perpignan, puis mesuré celle-ci : l'écart est d'une trentaine de centimètres sur 12 km.",
+  "legende_titre": "Une chaîne de triangles de Paris à Perpignan",
+  "lecture": [
+   "En haut, le trait bleu est la base mesurée près de Paris, environ 12 km.",
+   "En bas, le trait vert est la base de contrôle près de Perpignan, calculée puis mesurée.",
+   "Entre les deux, les triangles gris forment la chaîne ; le texte noir donne l'écart, une trentaine de centimètres, soit 0,0025 % de 12 km."
+  ],
+  "a_voir": "Deux bases aux deux bouts de la chaîne : l'une mesurée, l'autre sert de contrôle."
+ },
+ {
+  "code": "38-090",
+  "a_dire": "Sur de grandes distances, la Terre n'est pas plate : un triangle tracé sur la sphère a des angles dont la somme dépasse 180°.",
+  "legende_titre": "Un petit triangle plat et un grand triangle sur la Terre",
+  "lecture": [
+   "À gauche, le triangle bleu est un terrain de quelques kilomètres : ses angles font 180°.",
+   "À droite, le disque gris est la Terre vue de face ; le triangle violet est tracé dessus.",
+   "Ses côtés sont courbes et la somme de ses angles dépasse 180°."
+  ],
+  "a_voir": "Les côtés du triangle sur la Terre sont courbés, ceux du triangle plat sont droits."
+ },
+ {
+  "code": "38-091",
+  "a_dire": "Il faut ramener toutes les mesures au niveau de la mer : une base du plateau et une base du bord de mer sont ramenées sur la même ligne.",
+  "legende_titre": "Deux bases à deux altitudes, ramenées à la mer",
+  "lecture": [
+   "La forme grise est le relief : un plateau haut à gauche, un bord de mer plus bas à droite.",
+   "Les deux traits orange sont deux bases mesurées au sol, à deux altitudes.",
+   "Les tirets orange les descendent jusqu'à la ligne bleue en tirets, le niveau de la mer, où les traits verts sont les bases ramenées."
+  ],
+  "a_voir": "Les deux bases finissent sur la même ligne, le niveau de la mer."
+ },
+ {
+  "code": "38-092",
+  "a_dire": "Une distance et un angle autour d'une origine suffisent à placer un point : ce sont les coordonnées polaires.",
+  "legende_titre": "Le poteau repéré par une distance et un angle",
+  "lecture": [
+   "Le point A est l'origine ; le trait gris va de A au second repère B.",
+   "La flèche bleue va de A au poteau P : sa longueur est 162,8 m.",
+   "L'arc orange est l'angle de 51,33° entre AB et la flèche ; le couple (162,8 m ; 51,33°) en vert place le poteau."
+  ],
+  "a_voir": "Deux nombres, une longueur et un angle, suffisent pour placer P."
+ },
+ {
+  "code": "38-093",
+  "a_dire": "Un déplacement a une longueur et une direction ; une chaîne de triangulation est une suite de déplacements, dont la somme va du début à la fin.",
+  "legende_titre": "Des déplacements mis bout à bout",
+  "lecture": [
+   "Chaque flèche bleue est un déplacement d'un point au suivant ; elle a une longueur et une direction.",
+   "Les flèches sont posées l'une après l'autre : le début de chacune est la fin de la précédente.",
+   "La flèche verte va du début à la fin de la chaîne : c'est la somme des déplacements."
+  ],
+  "a_voir": "La flèche verte remplace les trois flèches bleues."
+ },
+ {
+  "code": "38-094",
+  "a_dire": "Le terme AP · AQ cos PAQ de la loi des cosinus est le produit scalaire des deux déplacements AP et AQ.",
+  "legende_titre": "La loi des cosinus et son terme du milieu",
+  "lecture": [
+   "Le triangle gris est dessiné à l'échelle : AP = 269,5 m (flèche bleue), AQ = 347,4 m (flèche violette), angle de 30° en A.",
+   "Le trait vert PQ, d'environ 176,5 m, est le côté que donne la formule du haut.",
+   "Dans la formule, la case orange contient AP · AQ cos 30° : c'est le produit scalaire de AP et AQ, pris deux fois.",
+   "Le trait orange sous la base est AP cos 30°, de A au pied de la perpendiculaire menée de P."
+  ],
+  "a_voir": "Le terme de la formule qui contient l'angle est le produit scalaire de AP et AQ."
+ },
+ {
+  "code": "38-095",
+  "a_dire": "Un réseau dont on connaît tous les côtés est déterminé à un déplacement près : on peut le tourner ou le retourner sans changer longueurs ni angles.",
+  "legende_titre": "Le même réseau, tourné puis retourné",
+  "lecture": [
+   "À gauche, en bleu, le réseau formé de deux triangles qui partagent un côté.",
+   "Au milieu, en violet, le même réseau tourné ; à droite, en violet, le réseau retourné comme dans un miroir.",
+   "La flèche orange montre le geste de tourner : les longueurs et les angles sont les mêmes."
+  ],
+  "a_voir": "Les trois dessins ont la même forme ; seule leur position change."
+ },
+ {
+  "code": "38-096",
+  "a_dire": "Avec les coordonnées des sommets, l'aire d'un terrain se calcule autrement : ici le terrain est la moitié du rectangle de 4 sur 3 que mesure le déterminant.",
+  "legende_titre": "Un terrain donné par ses trois sommets",
+  "lecture": [
+   "Le triangle bleu est le terrain, de sommets (0, 0), (4, 0) et (0, 3).",
+   "Les deux flèches orange sont les deux côtés qui partent de (0, 0) ; avec eux, le rectangle violet a une aire de 12, qui est le déterminant.",
+   "Le terrain est la moitié du rectangle : son aire est 12 ÷ 2 = 6."
+  ],
+  "a_voir": "Le déterminant 12 est l'aire du rectangle ; le triangle bleu en remplit la moitié, soit 6."
+ },
+ {
+  "code": "38-097",
+  "a_dire": "Diviser par une quantité proche de 0 amplifie les erreurs : cela vaut pour les fractions, les systèmes de droites presque parallèles et les matrices de déterminant presque nul.",
+  "legende_titre": "Une division par un petit nombre, sur la courbe 10 ÷ x",
+  "lecture": [
+   "La courbe bleue donne le résultat de 10 ÷ x pour chaque x.",
+   "À gauche, deux points orange : 10 ÷ 0,05669 ≈ 176,4 et 10 ÷ 0,05844 ≈ 171,1, un écart de 5,3.",
+   "À droite, deux points verts presque confondus : 11,547 et 11,535, un écart de 0,012.",
+   "Les trois cases orange en bas nomment les trois cas où ce même danger apparaît."
+  ],
+  "a_voir": "La courbe est très raide près de 0 et presque plate loin de 0 ; le même danger se retrouve dans les trois cas du bas."
+ },
+ {
+  "code": "38-098",
+  "a_dire": "Avec tous les angles mais sans la base, on connaît la forme du réseau et non sa taille : deux triangles de mêmes angles ont la même forme mais pas forcément la même taille.",
+  "legende_titre": "Trois angles de 60° : quelle taille ?",
+  "lecture": [
+   "Les trois triangles bleus ont chacun trois angles de 60°.",
+   "Ils ont la même forme, mais une taille différente.",
+   "Le texte orange rappelle que sans la base, la taille reste inconnue."
+  ],
+  "a_voir": "Les trois triangles ont les mêmes angles et des tailles différentes."
+ }
+]

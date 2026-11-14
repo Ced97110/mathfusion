@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+o=(6,10)
+arrow(ax,o,(o[0]+21,o[1]+7),'sujet',lw=1.4); arrow(ax,o,(o[0]+7,o[1]+14),'varie',lw=1.4)
+text(ax,o[0]+23,o[1]+4,r'$x$','sujet','m'); text(ax,o[0]+6,o[1]+17,r'$y$','varie','m')
+box(ax,34,32,52,18,'sujet'); box(ax,34,8,52,18,'varie')
+text(ax,60,44,r'$B(x,y)=3\times1+1\times2=5$','sujet','s'); text(ax,60,38,'dans l’ordre','sujet','s')
+text(ax,60,20,r'$B(y,x)=1\times3+2\times1=5$','varie','s'); text(ax,60,14,'ordre échangé','varie','s')
+arrow(ax,(30,40),(30,18),'fixe',curve=0.0,both=True)
+box(ax,2,52,84,8,'resultat',label=r'$5=5$ : l’ordre ne change rien',size='s')
+save(fig,'71-086')

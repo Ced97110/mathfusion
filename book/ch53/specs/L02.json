@@ -1,0 +1,275 @@
+[
+ {
+  "code": "53-025",
+  "a_dire": "Le chiffrement est la règle entière (ici ajouter 3), pas un mot transformé : la même règle sert à tous les mots.",
+  "legende_titre": "Une règle, plusieurs mots",
+  "lecture": [
+   "Le grand rectangle bleu au centre est la règle : ajouter 3 à chaque numéro.",
+   "Les rectangles gris à gauche sont deux mots clairs : ALGEBRE le premier jour, un autre mot le lendemain.",
+   "Les rectangles verts à droite sont leurs deux chiffrés : DOJHEUH et le chiffré de l’autre mot.",
+   "Les flèches orange montrent que les deux mots passent par la même règle."
+  ],
+  "a_voir": "Il y a une seule règle au milieu, et plusieurs mots qui passent par elle."
+ },
+ {
+  "code": "53-026",
+  "a_dire": "Le signe 𝑓 remplace la phrase « le chiffré de … est … » : on écrit 𝑓(11) = 14 et 𝑓(0) = 3.",
+  "legende_titre": "Écrire plus court",
+  "lecture": [
+   "Les rectangles gris à gauche sont les phrases longues : chiffré de 11 : 14, chiffré de 0 : 3.",
+   "Les rectangles bleus à droite sont les mêmes informations écrites avec le signe 𝑓.",
+   "Les flèches orange relient chaque phrase à son écriture courte."
+  ],
+  "a_voir": "Chaque phrase longue devient une écriture courte avec 𝑓, sans perdre les nombres."
+ },
+ {
+  "code": "53-027",
+  "a_dire": "Le déchiffrement est la fonction réciproque du chiffrement : elle défait ce que le chiffrement a fait.",
+  "legende_titre": "Défaire une règle",
+  "lecture": [
+   "En haut, la flèche orange va de ALGEBRE à DOJHEUH : c’est le chiffrement, qui ajoute 3.",
+   "La flèche bleue revient de DOJHEUH à ALGEBRE : c’est le déchiffrement, qui retranche 3.",
+   "En bas, un autre couple : 5 devient 10 (doubler), puis 10 redevient 5 (moitié)."
+  ],
+  "a_voir": "Chaque règle a une règle de retour qui ramène au point de départ."
+ },
+ {
+  "code": "53-028",
+  "a_dire": "Le signe 𝑓⁻¹ se lit « f moins un » : c’est la règle qui défait 𝑓, et 𝑓⁻¹(14) = 11.",
+  "legende_titre": "Lire le signe du retour",
+  "lecture": [
+   "Le rectangle gris est le numéro clair 11, le rectangle bleu est le numéro chiffré 14.",
+   "La flèche grise du haut, notée 𝑓, va de 11 à 14.",
+   "La flèche bleue du bas, notée 𝑓⁻¹, revient de 14 à 11.",
+   "L’encadré bleu écrit ce retour : 𝑓⁻¹(14) = 11."
+  ],
+  "a_voir": "La flèche du retour porte le signe 𝑓⁻¹ et ramène de 14 à 11."
+ },
+ {
+  "code": "53-029",
+  "a_dire": "Le déchiffrement n’existe que si 𝑓 ne donne jamais le même chiffré à deux messages différents.",
+  "legende_titre": "Quand le retour est impossible",
+  "lecture": [
+   "Les deux rectangles gris à gauche sont deux messages différents : ALGEBRE et BONJOUR.",
+   "Les flèches orange vont toutes deux vers le même rectangle orange : AAAAAAA, car tout devient A.",
+   "Les flèches rouges montrent le retour : depuis AAAAAAA, on ne sait pas lequel choisir."
+  ],
+  "a_voir": "Deux messages arrivent au même chiffré, donc le retour n’a pas de réponse unique."
+ },
+ {
+  "code": "53-030",
+  "a_dire": "La clé est le nombre qui choisit une règle dans la famille « décaler de ? crans ».",
+  "legende_titre": "Le nombre qui choisit",
+  "lecture": [
+   "Le rectangle gris du haut est la famille de règles : décaler d’un nombre de crans.",
+   "Les rectangles orange sont les clés : 3 aujourd’hui, 5 demain.",
+   "Les rectangles bleus sont les règles choisies : décaler de 3, décaler de 5.",
+   "Seul le nombre change d’un jour à l’autre."
+  ],
+  "a_voir": "La famille reste la même ; la clé choisit une règle dedans."
+ },
+ {
+  "code": "53-031",
+  "a_dire": "Le cryptosystème contient les quatre éléments ensemble : la famille de règles, la clé, le chiffrement et le déchiffrement, mais pas les messages.",
+  "legende_titre": "Le tout et ses morceaux",
+  "lecture": [
+   "Le grand cadre bleu est le cryptosystème.",
+   "Dedans, quatre rectangles : la famille de règles (gris), la clé 3 (orange), le chiffrement ajouter 3 (bleu), le déchiffrement retrancher 3 (violet).",
+   "Le cadre en pointillés, en dessous et hors du grand cadre, contient les messages."
+  ],
+  "a_voir": "Les quatre éléments sont dans le cadre ; les messages sont dehors."
+ },
+ {
+  "code": "53-032",
+  "a_dire": "La cryptanalyse consiste à lire un message chiffré sans connaître la clé, comme l’espion.",
+  "legende_titre": "Lire sans la clé",
+  "lecture": [
+   "Le rectangle orange est le message intercepté : DOJHEUH.",
+   "La flèche verte du haut mène à ALGEBRE : Hugo le lit parce qu’il a la clé 3.",
+   "La flèche violette du bas mène à ALGEBRE ? en pointillés : l’espion essaie de le lire sans la clé."
+  ],
+  "a_voir": "Le même message part vers deux lecteurs : l’un a la clé, l’autre doit deviner."
+ },
+ {
+  "code": "53-033",
+  "a_dire": "Le chiffre de César de clé 𝑏 est une famille de 26 chiffres, un par valeur de 𝑏 de 0 à 25 ; la clé 0 laisse le mot tel quel.",
+  "legende_titre": "Vingt-six chiffres de décalage",
+  "lecture": [
+   "Chaque rectangle orange à gauche donne la clé 𝑏 : 0, 3 ou 5.",
+   "Le rectangle de droite donne le mot ALGEBRE chiffré avec cette clé.",
+   "Avec 𝑏 = 0, le mot reste ALGEBRE (gris) ; avec 3 et 5, il change (bleu).",
+   "Le texte du bas rappelle que 𝑏 va de 0 à 25."
+  ],
+  "a_voir": "Chaque valeur de 𝑏 donne un chiffre différent, et 𝑏 = 0 ne cache rien."
+ },
+ {
+  "code": "53-034",
+  "a_dire": "La formule 𝑓(𝑝) = 𝑝 + 𝑏 (mod 26) décrit trois actions : prendre le numéro, ajouter la clé, garder le reste par 26.",
+  "legende_titre": "Trois actions sur deux lettres",
+  "lecture": [
+   "Chaque ligne se lit de gauche à droite, avec une flèche entre les rectangles.",
+   "Le rectangle bleu est le numéro de la lettre claire : L a 11, Y a 24.",
+   "Les rectangles orange sont l’addition de la clé (3 ou 5), puis le reste par 26.",
+   "Le rectangle vert est la lettre obtenue : O, puis D."
+  ],
+  "a_voir": "Pour Y, l’addition donne 29 et le reste par 26 ramène à 3."
+ },
+ {
+  "code": "53-035",
+  "a_dire": "Le déchiffrement retranche exactement la clé que le chiffrement a ajoutée ; si le résultat est négatif, on ajoute 26.",
+  "legende_titre": "Retrancher ce qu’on a ajouté",
+  "lecture": [
+   "Dans chaque cas, la flèche grise du haut va du numéro clair au numéro chiffré en ajoutant la clé.",
+   "La flèche bleue du bas revient en retranchant la même clé.",
+   "La ligne verte écrit le calcul du retour : 16 − 5 = 11, puis 0 − 3 = −3 et −3 + 26 = 23."
+  ],
+  "a_voir": "Le retour retrouve toujours le numéro de départ, même avec un nombre négatif."
+ },
+ {
+  "code": "53-036",
+  "a_dire": "Le signe 𝑝 désigne le numéro de la lettre claire ; une seule écriture 𝑝 + 3 vaut pour toutes les lettres.",
+  "legende_titre": "Un signe pour tous les numéros",
+  "lecture": [
+   "Les rectangles gris sont trois lettres : L, E, R.",
+   "Les rectangles bleus donnent leur numéro 𝑝 : 11, 4, 17.",
+   "Les rectangles orange montrent 𝑝 + 3 : 14, 7, 20.",
+   "Le texte du bas dit que 𝑝 est un numéro, pas une lettre."
+  ],
+  "a_voir": "La même écriture 𝑝 + 3 donne un résultat différent selon la valeur de 𝑝."
+ },
+ {
+  "code": "53-037",
+  "a_dire": "Le signe 𝑏 dit de combien de crans on décale ; il prend 26 valeurs de 0 à 25, car 26 crans font un tour complet.",
+  "legende_titre": "Compter les crans",
+  "lecture": [
+   "Chaque rond est un numéro du cercle de 26 numéros ; le rond bleu est le 0.",
+   "Le rond orange est le 3, et la flèche orange compte trois crans depuis 0.",
+   "Le texte du centre lit 𝑏 = 3, et rappelle que 𝑏 = 26 revient à 0."
+  ],
+  "a_voir": "Après 26 crans, on est de retour au point de départ."
+ },
+ {
+  "code": "53-038",
+  "a_dire": "Le signe 𝑐 désigne le numéro de la lettre chiffrée, à ne pas confondre avec 𝑝 ; on écrit 𝑐 = 𝑓(𝑝) et 𝑝 = 𝑓⁻¹(𝑐).",
+  "legende_titre": "Deux numéros, deux signes",
+  "lecture": [
+   "Le rectangle gris est la lettre L, de numéro clair 𝑝 = 11.",
+   "Le rectangle bleu est la lettre O, de numéro chiffré 𝑐 = 14.",
+   "La flèche orange (𝑓) et la flèche bleue (𝑓⁻¹) vont dans les deux sens.",
+   "Les deux encadrés du bas écrivent ces deux sens : 𝑐 = 𝑓(𝑝) et 𝑝 = 𝑓⁻¹(𝑐)."
+  ],
+  "a_voir": "𝑝 est le numéro de départ, 𝑐 le numéro d’arrivée, et chaque écriture se lit dans un sens."
+ },
+ {
+  "code": "53-039",
+  "a_dire": "(mod 26) dit de garder seulement le reste de la division par 26 : 26 donne 0, 29 donne 3.",
+  "legende_titre": "Garder le reste",
+  "lecture": [
+   "Chaque droite est graduée de 0 à 29 ; la partie bleue va de 0 à 25, la partie rouge pâle dépasse 25.",
+   "La flèche orange est l’addition : 23 + 3 = 26 en haut, 24 + 5 = 29 en bas.",
+   "La grande flèche verte ramène dans la partie bleue : reste 0, puis reste 3."
+  ],
+  "a_voir": "Ce qui dépasse 25 est ramené au début, et le reste est le résultat."
+ },
+ {
+  "code": "53-040",
+  "a_dire": "Le −1 de 𝑓⁻¹ n’est pas un exposant : sur une fonction il veut dire « réciproque », sur un nombre il veut dire « inverse ».",
+  "legende_titre": "Deux lectures du petit −1",
+  "lecture": [
+   "À gauche, en violet, le −1 est placé sur le nombre 5 : il se lit « un divisé par 5 ».",
+   "À droite, en bleu, le −1 est placé sur la fonction 𝑓 : il se lit « réciproque de 𝑓 ».",
+   "Le rectangle vert donne 𝑓⁻¹(14) = 11, le numéro que Hugo retrouve.",
+   "Le texte rouge écarte 1 ÷ 17, qui n’est pas un numéro de lettre."
+  ],
+  "a_voir": "Le même signe se lit autrement selon qu’il suit un nombre ou une fonction."
+ },
+ {
+  "code": "53-041",
+  "a_dire": "Le chiffre de César est une translation : il ajoute la même clé à toutes les lettres, donc l’écart entre deux lettres ne change pas.",
+  "legende_titre": "Tout le monde avance pareil",
+  "lecture": [
+   "La rangée grise du haut montre A, B, C, de numéros 0, 1, 2.",
+   "Les flèches orange ajoutent 3 à chacune, et mènent à D, E, F (vert), de numéros 3, 4, 5.",
+   "Les accolades montrent un écart de 1 cran entre A et B, et le même entre D et E."
+  ],
+  "a_voir": "Les trois flèches sont identiques et l’écart d’un cran se retrouve en bas."
+ },
+ {
+  "code": "53-042",
+  "a_dire": "Retrancher 3 est toujours possible sur le cercle des 26 numéros, car retrancher 3 revient à ajouter 23 ; sur 0, 1, 2… sans négatifs, ce n’est pas toujours possible.",
+  "legende_titre": "Un retour qui existe ou non",
+  "lecture": [
+   "En haut, une droite graduée de 0 à 6 sans nombres négatifs : la flèche orange ajoute 3, de 1 à 4.",
+   "La flèche rouge essaie de revenir de 1 en retranchant 3 : elle tombe sur −2, qui est absent.",
+   "En bas, sur le cercle de 26 numéros, la flèche bleue ajoute 23 : 4 + 23 = 27, de reste 1, et on retrouve 1 (vert)."
+  ],
+  "a_voir": "Sur le cercle, le retour retombe sur un numéro qui existe."
+ },
+ {
+  "code": "53-043",
+  "a_dire": "Le chiffre affine multiplie, puis ajoute, puis garde le reste par 26 ; sa clé est le couple (𝑎, 𝑏), et il contient César (𝑎 = 1).",
+  "legende_titre": "Multiplier puis ajouter",
+  "lecture": [
+   "La rangée du haut suit la lettre L : 11, puis ×5 donne 55, puis +3 donne 58, puis le reste par 26 donne 6, soit G.",
+   "Le rectangle bleu du milieu donne la clé : le couple (5, 3).",
+   "En bas, deux voisins : César quand 𝑎 = 1 (gris), et le cas où l’on multiplie seulement quand 𝑏 = 0 (violet)."
+  ],
+  "a_voir": "La clé a deux nombres, et chaque voisin est un cas où l’un d’eux est neutre."
+ },
+ {
+  "code": "53-044",
+  "a_dire": "La formule 𝑓(𝑝) = 𝑎𝑝 + 𝑏 (mod 26) se fait en trois actions dans l’ordre : multiplier par 𝑎, ajouter 𝑏, garder le reste par 26.",
+  "legende_titre": "Trois actions, deux lettres",
+  "lecture": [
+   "Chaque ligne se lit de gauche à droite : le numéro (bleu), puis trois étapes (orange), puis la lettre (vert).",
+   "Première ligne : E a le numéro 4, le produit est 20, la somme 23, le reste 23, donc X.",
+   "Deuxième ligne : Y a le numéro 24, le produit 120, la somme 123, le reste 19, donc T."
+  ],
+  "a_voir": "Pour Y, la somme 123 est ramenée à 19 par le reste."
+ },
+ {
+  "code": "53-045",
+  "a_dire": "Le signe 𝑎 est le nombre par lequel on multiplie le numéro 𝑝 ; il vaut de 1 à 25, et 𝑎𝑝 veut dire 𝑎 fois 𝑝.",
+  "legende_titre": "Le nombre qui multiplie",
+  "lecture": [
+   "Les rectangles orange donnent la valeur de 𝑎 : 5 aujourd’hui, 7 demain.",
+   "Les rectangles bleus écrivent le produit : 5 fois 𝑝, puis 7 fois 𝑝.",
+   "La droite graduée de 1 à 25 montre toutes les valeurs possibles, avec 5 et 7 en orange."
+  ],
+  "a_voir": "Seul 𝑎 change ; on multiplie toujours 𝑝."
+ },
+ {
+  "code": "53-046",
+  "a_dire": "Le signe 𝑏 est le nombre ajouté après la multiplication : 𝑏 = 3 donne 58, 𝑏 = 0 n’ajoute rien et donne 55.",
+  "legende_titre": "Le décalage après le produit",
+  "lecture": [
+   "Le rectangle gris du haut est le produit : 5 × 11 = 55.",
+   "À gauche, 𝑏 = 3 donne 58 ; à droite, 𝑏 = 0 laisse 55 (orange).",
+   "Les flèches « mod 26 » mènent aux restes verts : 6 pour 58, 3 pour 55."
+  ],
+  "a_voir": "Le même produit donne deux résultats différents selon 𝑏."
+ },
+ {
+  "code": "53-047",
+  "a_dire": "Le groupe de signes 𝑎𝑝 + 𝑏 (mod 26) se lit de gauche à droite : multiplier 𝑝 par 𝑎, ajouter 𝑏, garder le reste par 26.",
+  "legende_titre": "Lire le groupe de signes",
+  "lecture": [
+   "Les trois rectangles du haut sont les morceaux du groupe : 𝑎𝑝 (bleu), + 𝑏 (orange), mod 26 (gris).",
+   "Les flèches horizontales donnent l’ordre de lecture.",
+   "Les rectangles du bas donnent ce que fait chaque morceau sur la lettre L : 5 × 11 = 55, puis 55 + 3 = 58, puis le reste 6."
+  ],
+  "a_voir": "Chaque morceau du groupe correspond à un calcul du cas de L."
+ },
+ {
+  "code": "53-048",
+  "a_dire": "La formule 𝑎𝑝 + 𝑏 a la forme d’une droite : quand 𝑝 augmente de 1, le résultat augmente de 𝑎, ici de 5.",
+  "legende_titre": "Une droite sur l’horloge",
+  "lecture": [
+   "Chaque rond bleu est un numéro 𝑝 (0 à 4, sous l’axe) et son résultat : 3, 8, 13, 18, 23.",
+   "Le trait bleu en pointillés passe par tous les ronds : c’est une droite.",
+   "L’escalier orange montre un pas : +1 sur 𝑝 donne +5 sur le résultat.",
+   "Le trait gris en pointillés marque 25, la fin de l’horloge."
+  ],
+  "a_voir": "Les points sont alignés, avec +5 à chaque pas."
+ }
+]

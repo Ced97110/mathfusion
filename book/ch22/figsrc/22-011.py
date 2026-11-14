@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+text(ax, 22, 48, 'avec le symbole', 'sujet', 'm')
+text(ax, 66, 48, 'avec une décimale', 'varie', 'm')
+box(ax, 4, 20, 36, 22, 'resultat', label='√2 × √2', size='l')
+box(ax, 48, 20, 36, 22, 'varie', label='1,414 × 1,414', size='m')
+text(ax, 22, 14, '= 2', 'resultat', 'l', weight='bold')
+text(ax, 22, 7.5, 'exact', 'resultat', 's')
+text(ax, 66, 14, '= 1,999396', 'limite', 'm')
+text(ax, 66, 7.5, 'pas 2', 'limite', 's')
+save(fig, '22-011')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+text(ax, 44, 76, 'toutes contiennent les règles', 'encre', 's')
+box(ax, 4, 22, 80, 50, 'autre', label=None)
+text(ax, 44, 67, 'tous les mots équivalents', 'autre', 's')
+box(ax, 12, 26, 64, 34, 'fixe')
+text(ax, 44, 55, 'autres congruences', 'fixe', 's')
+box(ax, 22, 29, 44, 20, 'sujet', label='la plus petite', size='m')
+box(ax, 4, 2, 80, 14, 'limite', dash=True, label='identifie rien : sans règles', size='s')
+text(ax, 44, 19, 'hors de la famille', 'limite', 's')
+save(fig, '49-045')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 22, 54, 'les 3 angles du cas', 'sujet', 's')
+poly(ax, [(6, 14), (40, 14), (40, 42)], 'sujet')
+line(ax, [(36, 14), (36, 18), (40, 18)], 'sujet')
+text(ax, 22, 8, 'angle droit', 'sujet', 's')
+text(ax, 27, 20, '67,38°', 'sujet', 's')
+text(ax, 66, 54, 'faces voisines', 'autre', 's')
+poly(ax, [(48, 14), (84, 20), (70, 44)], 'autre')
+text(ax, 62, 28, '?', 'autre', 'l')
+text(ax, 66, 8, 'ni angle droit, ni symétrie', 'autre', 's')
+save(fig, '27-121')

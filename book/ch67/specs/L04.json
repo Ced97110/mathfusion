@@ -1,0 +1,358 @@
+[
+ {
+  "code": "67-091",
+  "a_dire": "Le Frobenius, qui élève au carré, laisse en place 0 et 1, et déplace les autres éléments.",
+  "legende_titre": "Qui reste en place quand on élève au carré ?",
+  "lecture": [
+   "La rangée du haut montre les quatre éléments du corps à quatre éléments, la rangée du bas leur carré.",
+   "Les flèches vertes descendent tout droit : 0 et 1 restent en place.",
+   "Les deux flèches orange se croisent : alpha devient alpha plus un, et alpha plus un devient alpha.",
+   "L'accolade verte entoure 0 et 1, le corps premier."
+  ],
+  "a_voir": "Seules les flèches vertes sont droites : elles partent de 0 et de 1."
+ },
+ {
+  "code": "67-092",
+  "a_dire": "Les huit éléments de 𝔽₈ se rangent en un triangle bleu, un triangle orange et deux points verts fixes.",
+  "legende_titre": "La forme de x ↦ x² sur le corps à huit éléments",
+  "lecture": [
+   "Le triangle bleu relie alpha, alpha carré et alpha carré plus alpha, dans le sens des flèches.",
+   "Le triangle orange relie alpha plus un, alpha carré plus un et alpha carré plus alpha plus un.",
+   "Les deux disques verts, 0 et 1, n'ont aucune flèche : ils ne bougent pas.",
+   "Chaque flèche est une élévation au carré."
+  ],
+  "a_voir": "Suis une flèche trois fois dans un triangle : tu reviens au point de départ."
+ },
+ {
+  "code": "67-093",
+  "a_dire": "Chaque élément de 𝔽₈ s'écrit c + dα + eα² avec trois coefficients égaux à 0 ou 1, soit 2 × 2 × 2 = 8 éléments, avec la règle α³ = α + 1.",
+  "legende_titre": "Huit écritures à trois coefficients",
+  "lecture": [
+   "Les trois cases orange sont les coefficients c, d et e : chacun vaut 0 ou 1.",
+   "L'accolade donne le nombre de choix : 2 fois 2 fois 2, soit 8.",
+   "Les huit cases bleues sont les huit écritures obtenues.",
+   "En haut, en gris, la règle de calcul alpha cube égale alpha plus un."
+  ],
+  "a_voir": "Trois choix entre 0 et 1 donnent huit cases."
+ },
+ {
+  "code": "67-094",
+  "a_dire": "En élevant au carré trois fois de suite, alpha revient à alpha : les trois éléments forment un cycle de longueur 3.",
+  "legende_titre": "Trois pas depuis alpha",
+  "lecture": [
+   "Les trois cases bleues sont alpha, alpha carré et alpha carré plus alpha.",
+   "Les flèches 1 et 2 vont de case en case : chaque pas élève au carré.",
+   "La grande flèche verte, numéro 3, ramène à alpha.",
+   "Les trois lignes du milieu écrivent le calcul de chaque pas ; en bas, la règle du cube qu’elles utilisent."
+  ],
+  "a_voir": "La flèche verte numéro 3 revient à la première case : trois pas forment un cycle."
+ },
+ {
+  "code": "67-095",
+  "a_dire": "En élevant au carré trois fois de suite, alpha plus un revient à alpha plus un : c'est le triangle orange.",
+  "legende_titre": "Trois pas depuis alpha plus un",
+  "lecture": [
+   "Les trois cases orange sont alpha plus un, alpha carré plus un et alpha carré plus alpha plus un.",
+   "Les flèches grises 1 et 2 vont de case en case, la flèche 3 revient au départ.",
+   "Dans la ligne 1, le terme croisé 2 alpha vaut 0 en caractéristique 2.",
+   "Les lignes 2 et 3 donnent les calculs des deux autres pas."
+  ],
+  "a_voir": "Le terme croisé disparaît au premier pas, puis la flèche 3 ramène au départ."
+ },
+ {
+  "code": "67-096",
+  "a_dire": "Le carré de 0 est 0 et le carré de 1 est 1 : ces deux éléments restent en place.",
+  "legende_titre": "Deux éléments qui ne bougent pas",
+  "lecture": [
+   "Les disques verts du haut sont 0 et 1, ceux du bas sont leurs carrés.",
+   "Chaque flèche verte descend tout droit, du même élément à lui-même.",
+   "Sous chaque colonne, l'égalité écrit le calcul : 0² = 0 et 1² = 1."
+  ],
+  "a_voir": "Le disque du bas porte le même nombre que celui du haut."
+ },
+ {
+  "code": "67-097",
+  "a_dire": "Le Frobenius de 𝔽₈ est fait de deux cycles de longueur 3 et de deux points fixes ; son ordre est 3, comme le degré [𝔽₈ : 𝔽₂].",
+  "legende_titre": "Deux nombres 3 qui coïncident",
+  "lecture": [
+   "À gauche, un triangle bleu et un triangle orange : deux cycles de longueur 3 ; les deux disques verts sont les points fixes.",
+   "L'ordre du Frobenius est 3 : trois applications ramènent chaque élément à sa place.",
+   "À droite, les trois cases violettes 1, alpha et alpha carré forment une base.",
+   "La case verte en bas égale le nombre 3 de l'ordre et le nombre 3 de la base."
+  ],
+  "a_voir": "Trois flèches par triangle à gauche, trois cases à droite."
+ },
+ {
+  "code": "67-098",
+  "a_dire": "Sans l'hypothèse « le petit corps a q éléments », le théorème échoue : ℚ(∛2) est de degré 3 mais son groupe de Galois n'a qu'un élément.",
+  "legende_titre": "Une hypothèse retirée",
+  "lecture": [
+   "Le plan montre les trois solutions de x³ = 2 : une sur la droite des réels, bleue, dans le corps.",
+   "Les deux disques rouges sont les solutions non réelles, hors du corps.",
+   "Les flèches rouges barrées d’une croix : aucune transformation du corps n’envoie la racine réelle sur elles.",
+   "En bas, la case bleue donne le degré du corps, 3 ; la case violette donne le groupe de Galois, 1 élément : ce n’est pas 3."
+  ],
+  "a_voir": "Le degré du corps est 3, mais le groupe de Galois n’a qu’un élément."
+ },
+ {
+  "code": "67-099",
+  "a_dire": "La preuve part de b^q = b pour tout b de F, et l'étape décisive est que η laisse chaque b en place, donc η est dans le groupe de Galois.",
+  "legende_titre": "Départ, étape qui porte, arrivée",
+  "lecture": [
+   "La case grise du haut est le point de départ : b puissance q égale b.",
+   "La case orange, au trait épais, est l'étape décisive : η laisse chaque b en place.",
+   "La case verte est l'arrivée : η appartient au groupe de Galois.",
+   "La case bleue donne le cas : q = 2, avec 0² = 0 et 1² = 1."
+  ],
+  "a_voir": "Le trait épais marque l'étape qui porte tout le poids."
+ },
+ {
+  "code": "67-100",
+  "a_dire": "La preuve part de η^n(a) = a^(q^n), et l'étape décisive est que E a q^n éléments, donc a^(q^n) = a : η^n est l'identité.",
+  "legende_titre": "Pourquoi η appliqué n fois ne change rien",
+  "lecture": [
+   "La case grise du haut est le départ : η appliqué n fois élève a à la puissance q puissance n.",
+   "La case orange au trait épais est l'étape décisive : E a q^n éléments, donc cette puissance redonne a.",
+   "La case verte est l'arrivée : η^n est l'identité.",
+   "La case bleue donne le cas : q = 2, n = 3, huit éléments."
+  ],
+  "a_voir": "Le trait épais marque le nombre d'éléments de E."
+ },
+ {
+  "code": "67-101",
+  "a_dire": "Si une puissance plus petite de η était l'identité, les q^n éléments de E seraient racines d'un polynôme qui en a au plus q^k : c'est impossible.",
+  "legende_titre": "Compter les racines pour trouver la contradiction",
+  "lecture": [
+   "La case grise du haut est l'hypothèse à contredire : η^k est l'identité avec k plus petit que n.",
+   "La case orange au trait épais est l'étape décisive : tous les éléments de E seraient racines.",
+   "La case rouge est l'arrivée : contradiction, car q^n est plus grand que q^k.",
+   "Les huit disques sont les éléments de E : deux verts sous l'accolade « au plus 2 racines », six rouges de trop."
+  ],
+  "a_voir": "Six disques rouges n'ont pas de place parmi les deux racines permises."
+ },
+ {
+  "code": "67-102",
+  "a_dire": "Le groupe engendré par η a n éléments et le groupe de Galois en a au plus n, donc le groupe de Galois est exactement ⟨η⟩.",
+  "legende_titre": "Deux bornes qui se rejoignent",
+  "lecture": [
+   "Les trois cases bleues sont η, η deux fois et l'identité : trois éléments distincts.",
+   "L'accolade du bas, bleue, dit que ces trois éléments forment ⟨η⟩.",
+   "L'accolade du haut, grise, dit que le groupe de Galois a au plus n = 3 éléments.",
+   "Les deux accolades couvrent les mêmes trois cases : les deux groupes sont égaux."
+  ],
+  "a_voir": "Les deux accolades entourent exactement les mêmes cases."
+ },
+ {
+  "code": "67-103",
+  "a_dire": "Un groupe cyclique d'ordre 4 a un seul sous-groupe de chaque ordre 1, 2, 4, et la correspondance de Galois renverse les inclusions : le plus grand sous-groupe donne le plus petit corps.",
+  "legende_titre": "Sous-groupes et corps en miroir",
+  "lecture": [
+   "La colonne bleue montre les sous-groupes d'ordre 1, 2 et 4, un seul de chaque ordre.",
+   "La colonne violette montre trois corps, du plus petit au plus grand.",
+   "Les flèches orange à double pointe se croisent : l'ordre 4 va au petit corps, l'ordre 1 au grand corps.",
+   "Les flèches grises montent d'un sous-groupe à un plus grand, et d'un corps à un plus grand."
+  ],
+  "a_voir": "Les flèches orange se croisent : en haut à gauche correspond à en bas à droite."
+ },
+ {
+  "code": "67-104",
+  "a_dire": "Les sous-corps de 𝔽_(p^n) sont les 𝔽_(p^m) avec m qui divise n, un seul pour chaque diviseur ; pour 2^4, il y en a trois.",
+  "legende_titre": "Un sous-corps par diviseur",
+  "lecture": [
+   "Les trois disques orange du haut sont les diviseurs de 4 : 1, 2 et 4.",
+   "Chaque flèche orange descend vers le sous-corps correspondant, en bleu.",
+   "Sous chaque case, le nombre d'éléments : 2, 4 et 16.",
+   "Les flèches grises montrent chaque corps contenu dans le suivant."
+  ],
+  "a_voir": "Trois diviseurs en haut, trois sous-corps en bas."
+ },
+ {
+  "code": "67-105",
+  "a_dire": "Le diagramme range les six diviseurs de 12 par divisibilité : 4 et 6 sont au même niveau et ne sont reliés par aucun trait, tandis que 2 est sous les deux.",
+  "legende_titre": "Les sous-corps de 𝔽_(p^12) rangés",
+  "lecture": [
+   "Chaque disque est un diviseur de 12, donc un sous-corps ; 1 est en bas et 12 en haut, en bleu.",
+   "Les disques orange 2 et 3 sont au premier niveau, les disques verts 4 et 6 au second.",
+   "Un trait monte d'un disque vers un autre quand le premier divise le second.",
+   "Le tireté rouge entre 4 et 6 marque l'absence de trait."
+  ],
+  "a_voir": "Entre 4 et 6, il n'y a aucun trait ; 2 est sous les deux."
+ },
+ {
+  "code": "67-106",
+  "a_dire": "12 a six diviseurs, 1, 2, 3, 4, 6 et 12, donc 𝔽_(p^12) a six sous-corps.",
+  "legende_titre": "Chercher les diviseurs de 12",
+  "lecture": [
+   "Chaque case écrit une multiplication qui donne 12 sans reste : le premier nombre est un diviseur.",
+   "La première et la dernière case, en bleu, sont 1 et 12.",
+   "Les cases orange sont 2 et 3, les cases vertes sont 4 et 6.",
+   "L'accolade compte les six cases : six diviseurs, six sous-corps."
+  ],
+  "a_voir": "Six cases, donc six sous-corps."
+ },
+ {
+  "code": "67-107",
+  "a_dire": "𝔽_(p^4) n'est pas dans 𝔽_(p^6) car 4k = 6 n'a pas de solution entière ; ce qu'ils ont en commun est 𝔽_(p^2), avec 2 = PGCD(4, 6).",
+  "legende_titre": "Moins d'éléments ne suffit pas pour être dedans",
+  "lecture": [
+   "Sur la droite graduée, les arcs bleus font des sauts de 4 : 0, 4, 8, 12.",
+   "Le disque violet est 6 : il tombe entre 4 et 8, sur aucun saut.",
+   "La case rouge dit que 4k = 6 n’a aucun entier k, donc pas d’inclusion.",
+   "Dans le schéma du bas, les deux cercles se chevauchent : la zone verte commune est 𝔽_(p²), avec 2 = PGCD(4, 6)."
+  ],
+  "a_voir": "Le point 6 n’est atteint par aucun saut de 4 ; les deux corps ont en commun 𝔽_(p²)."
+ },
+ {
+  "code": "67-108",
+  "a_dire": "Sans l'hypothèse « corps fini », le treillis des sous-corps n'est plus celui des diviseurs : ℚ(√2, √3) a trois sous-corps de degré 2, les diviseurs de 4 n'en ont qu'un pour 2.",
+  "legende_titre": "Trois contre un au même niveau",
+  "lecture": [
+   "À gauche, ℚ est en bas et ℚ(√2, √3) en haut, en bleu.",
+   "Au milieu, trois cases rouges au même niveau : ℚ(√2), ℚ(√3) et ℚ(√6).",
+   "À droite, les diviseurs de 4 : 1 en bas, 4 en haut, et un seul disque vert au milieu, 2.",
+   "La différence se lit au niveau du milieu : trois cases contre un disque."
+  ],
+  "a_voir": "Au niveau du milieu : trois cases à gauche, un disque à droite."
+ },
+ {
+  "code": "67-109",
+  "a_dire": "Deux preuves démontrent le même énoncé avec des outils différents : la première demande le groupe de Galois, la seconde seulement des degrés et des polynômes.",
+  "legende_titre": "Deux chemins vers un même énoncé",
+  "lecture": [
+   "La colonne bleue est la première preuve, en trois outils : le groupe de Galois, ses sous-groupes, la correspondance.",
+   "La colonne violette est la seconde preuve, en deux outils : les degrés de corps emboîtés et la divisibilité de polynômes.",
+   "Les flèches grises arrivent toutes les deux à la case verte, le même énoncé démontré."
+  ],
+  "a_voir": "Les deux colonnes finissent dans la même case verte."
+ },
+ {
+  "code": "67-110",
+  "a_dire": "Si K ⊆ F ⊆ E, les degrés se multiplient : [E:K] = [E:F] × [F:K], donc m divise n.",
+  "legende_titre": "Les degrés se multiplient",
+  "lecture": [
+   "La rangée du haut est la suite de corps : 𝔽₂, 𝔽₄, 𝔽₁₆.",
+   "Le grand carré vert a quatre cases, deux en largeur et deux en hauteur.",
+   "La flèche bleue horizontale, deux cases, est [F:K] = m ; la flèche orange verticale, deux cases, est [E:F].",
+   "Le nombre total de cases, 4, est [E:K] = n : 4 égale 2 fois 2."
+  ],
+  "a_voir": "Largeur fois hauteur donne le nombre de cases."
+ },
+ {
+  "code": "67-111",
+  "a_dire": "Sur l'exemple 𝔽₁₆ ⊇ 𝔽₄, 3 divise 15, donc x³ − 1 divise x¹⁵ − 1, donc x⁴ − x divise x¹⁶ − x, et les 4 racines de x⁴ − x sont parmi les 16 de x¹⁶ − x.",
+  "legende_titre": "De 3 divise 15 à quatre racines parmi seize",
+  "lecture": [
+   "La case grise du haut part du calcul : 3 divise 15.",
+   "Les deux cases orange passent aux polynômes : la factorisation de y⁵ − 1, puis x³ − 1 divise x¹⁵ − 1.",
+   "La case verte multiplie par x : x⁴ − x divise x¹⁶ − x.",
+   "Les seize disques sont les racines de x¹⁶ − x ; les quatre verts sont celles de x⁴ − x."
+  ],
+  "a_voir": "Quatre disques verts parmi seize."
+ },
+ {
+  "code": "67-112",
+  "a_dire": "Si n = mk, la factorisation de y^k − 1 par y − 1 fait passer de la divisibilité des nombres à celle des polynômes : x^(p^m) − x divise x^(p^n) − x.",
+  "legende_titre": "La factorisation qui porte la preuve",
+  "lecture": [
+   "La case grise du haut est le départ : n égale m fois k.",
+   "La case orange au trait épais est l'étape décisive : la factorisation de y puissance k moins un.",
+   "La case verte est l'arrivée : x puissance p puissance m moins x divise x puissance p puissance n moins x.",
+   "La case bleue donne le cas : p = 2, m = 2, k = 3, n = 6, et 63 = 3 × 21."
+  ],
+  "a_voir": "Le trait épais marque la factorisation de y^k − 1."
+ },
+ {
+  "code": "67-113",
+  "a_dire": "24 a huit diviseurs, donc 𝔽_(p^24) a huit sous-corps, reliés comme ces huit nombres par la divisibilité ; 8 ne divise pas 12.",
+  "legende_titre": "Les huit sous-corps de 𝔽_(p^24)",
+  "lecture": [
+   "Chaque disque est un diviseur de 24, donc un sous-corps ; 1 est en bas et 24 en haut, en bleu.",
+   "Les couleurs vont par niveau : orange pour 2 et 3, vert pour 4 et 6, violet pour 8 et 12.",
+   "Un trait monte d'un disque vers un autre quand le premier divise le second.",
+   "Le tireté rouge entre 8 et 12 marque l'absence de trait."
+  ],
+  "a_voir": "Huit disques, donc huit sous-corps ; 8 et 12 ne sont pas reliés."
+ },
+ {
+  "code": "67-114",
+  "a_dire": "N(n, q) compte les polynômes unitaires irréductibles de degré n sur 𝔽_q ; il est distinct de q^n, le nombre de tous les polynômes unitaires : pour n = 2, q = 2, N = 1 sur 4.",
+  "legende_titre": "Un polynôme irréductible sur quatre",
+  "lecture": [
+   "Les quatre cases sont les polynômes unitaires de degré 2 sur 𝔽₂, leur nombre est q^n = 4.",
+   "Les trois cases grises se factorisent : leur facteurs sont écrits dessous.",
+   "La case verte, x² + x + 1, ne se factorise pas : irréductible.",
+   "La case du bas compte les cases vertes : N(2, 2) = 1."
+  ],
+  "a_voir": "Une seule case verte parmi quatre."
+ },
+ {
+  "code": "67-115",
+  "a_dire": "x^(q^n) − x est le produit des polynômes unitaires irréductibles dont le degré divise n, chacun une fois ; un irréductible de degré 3 n'est pas facteur de x⁴ − x.",
+  "legende_titre": "Qui est facteur de x⁴ − x ?",
+  "lecture": [
+   "La barre du haut est x⁴ − x, de degré 4, coupée en trois facteurs bleus : x, x + 1 et x² + x + 1.",
+   "La largeur de chaque case est son degré : 1, 1 et 2, qui font 4.",
+   "La case rouge x³ + x + 1 est de degré 3 : 3 ne divise pas 2, elle n'est pas facteur."
+  ],
+  "a_voir": "Les largeurs des facteurs bleus s'ajoutent jusqu'à 4 ; la case rouge de largeur 3 est à part."
+ },
+ {
+  "code": "67-116",
+  "a_dire": "Un irréductible g de degré m a une racine r, et 𝔽_q(r), à q^m éléments, est un sous-corps de 𝔽_(q^n) si et seulement si m divise n.",
+  "legende_titre": "Quand le corps d'une racine est-il dedans ?",
+  "lecture": [
+   "La case grise est le polynôme irréductible x² + x + 1, de degré 2, avec une racine r.",
+   "La case bleue est le corps engendré par r, à 2² éléments.",
+   "La flèche verte mène à 𝔽 à 2⁴ éléments : 2 divise 4, il est dedans.",
+   "La flèche rouge mène à 𝔽 à 2³ éléments : 2 ne divise pas 3, il n'est pas dedans."
+  ],
+  "a_voir": "Une flèche verte et une flèche rouge partent du même corps bleu."
+ },
+ {
+  "code": "67-117",
+  "a_dire": "Le degré q^n de x^(q^n) − x est la somme, sur les diviseurs d de n, de d fois N(d, q) ; pour q = 3 et n = 2, 3 + 2N(2, 3) = 9.",
+  "legende_titre": "Comparer les degrés des deux côtés",
+  "lecture": [
+   "La barre de neuf cases est le degré 3² = 9 du polynôme, indiqué par l'accolade du haut.",
+   "Les trois cases bleues de largeur 1 sont les irréductibles de degré 1 : ils apportent 3.",
+   "Les trois cases orange de largeur 2 sont les irréductibles de degré 2 : ils apportent 6.",
+   "En bas, l'égalité 3 + 2 N(2, 3) = 9 donne N(2, 3) = 3."
+  ],
+  "a_voir": "Trois cases de largeur 1 et trois de largeur 2 remplissent neuf cases."
+ },
+ {
+  "code": "67-118",
+  "a_dire": "La fonction de Möbius sert à inverser la somme sur les diviseurs : elle vaut 1 pour k = 1, (−1)^r pour r premiers distincts, 0 si un carré e² avec e > 1 divise k.",
+  "legende_titre": "Pourquoi une fonction aux trois valeurs",
+  "lecture": [
+   "En haut, la case grise est la relation des degrés, la case orange est μ, qui donne les signes +1, −1 et 0.",
+   "Le texte vert dit ce que cela apporte : isoler N(n, q) en une formule.",
+   "Les trois lignes du bas donnent les trois cas : k = 1 donne 1 ; un produit de r premiers distincts donne (−1)^r ; un carré qui divise k donne 0."
+  ],
+  "a_voir": "Trois cas à gauche, trois valeurs à droite."
+ },
+ {
+  "code": "67-119",
+  "a_dire": "Pour n = 2 et q = 3, la formule de Gauss se calcule ainsi : pour chaque diviseur d, μ(n/d) × q^d, puis on additionne et on divise par n.",
+  "legende_titre": "La formule de Gauss sur un cas chiffré",
+  "lecture": [
+   "La première ligne est le diviseur 1 : μ(2) × 3¹ = −3, en orange.",
+   "La deuxième ligne est le diviseur 2 : μ(1) × 3² = 9, en bleu.",
+   "La case violette additionne : 9 − 3 = 6.",
+   "La case verte divise par n = 2 et donne N(2, 3) = 3."
+  ],
+  "a_voir": "Les flèches vont de la gauche vers la droite, puis vers le bas."
+ },
+ {
+  "code": "67-120",
+  "a_dire": "La formule de Gauss se lit de l'intérieur vers l'extérieur : les diviseurs d de n, le terme q^d, le signe μ(n/d), la somme, la division par n.",
+  "legende_titre": "Les cinq étages de la formule",
+  "lecture": [
+   "La colonne de gauche liste les cinq étages de haut en bas, reliés par des flèches.",
+   "La colonne de droite les applique à n = 6 : diviseurs 1, 2, 3, 6, puis les puissances de q.",
+   "Le signe est en orange : plus un, moins un ou zéro.",
+   "Le dernier étage, en vert, divise par n ; la formule complète est écrite en bas."
+  ],
+  "a_voir": "On descend les étages dans l'ordre du calcul."
+ }
+]

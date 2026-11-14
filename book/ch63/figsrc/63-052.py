@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, r'$\eta(\sqrt{2})$ est racine de $x^2-2$', 'encre', 'm')
+box(ax, 46, 20, 38, 44, 'fixe', fill=False, dash=True)
+disc(ax, 12, 42, 5, 'sujet', label=r'$\sqrt{2}$')
+disc(ax, 65, 52, 5, 'resultat', label=r'$\sqrt{2}$')
+disc(ax, 65, 32, 5, 'resultat', label=r'$-\sqrt{2}$')
+arrow(ax, (17, 44), (59.5, 51), 'varie')
+arrow(ax, (17, 40), (59.5, 33), 'varie')
+text(ax, 36, 52, r'$\eta=1$', 'varie', 'm')
+text(ax, 36, 31, r'$\eta=\sigma$', 'varie', 'm')
+box(ax, 10, 4, 68, 11, 'resultat', label=r'$\mathrm{Gal}(E/\mathbb{Q})=\{1,\sigma\}$')
+save(fig, '63-052')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'$S_3$ : 6 permutations', 'encre', 'm')
+for i in range(6): box(ax, 4 + i * 13, 42, 11, 8, 'sujet' if i < 3 else 'autre')
+brace(ax, 4, 41, 41, 'sujet', r'$A_3$ : 3', down=True)
+brace(ax, 45, 80, 41, 'autre', '3 impaires', down=True)
+text(ax, 44, 26, 'moitié', 'resultat', 'l')
+text(ax, 4, 14, r'$n=1$ :', 'limite', 'm', ha='left')
+box(ax, 22, 10, 11, 8, 'sujet')
+text(ax, 38, 14, 'tout est pair, pas de moitié', 'limite', 's', ha='left')
+save(fig, '46-230')

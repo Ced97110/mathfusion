@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 52, 80, 11, 'sujet', label='monoïde : produit associatif + neutre', size='s')
+box(ax, 4, 6, 38, 40, 'autre', fill=False)
+text(ax, 23, 41, 'entiers, ×', 'autre', 's')
+text(ax, 23, 28, r'$2\times3=3\times2$', 'resultat', 's')
+text(ax, 23, 18, 'l’ordre ne compte pas', 'autre', 's')
+box(ax, 46, 6, 38, 40, 'sujet', fill=False)
+text(ax, 65, 41, 'mots (monoïde libre)', 'sujet', 's')
+def tiles(x, y, s):
+    for i, l in enumerate(s): box(ax, x + i * 8, y, 7.5, 8, {'x': 'sujet', 'y': 'autre'}[l], label=f'${l}$')
+tiles(49.5, 28, 'xyyx'); tiles(49.5, 15, 'yxxy')
+text(ax, 65, 25.5, r'$\neq$', 'limite', 'l')
+text(ax, 65, 9.5, 'l’ordre compte', 'sujet', 's')
+save(fig, '49-030')

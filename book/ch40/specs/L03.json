@@ -1,0 +1,313 @@
+[
+ {
+  "code": "40-055",
+  "a_dire": "La rosace r = a cos(nθ) ne sort jamais du cercle r = a, parce que |cos(nθ)| ≤ 1.",
+  "legende_titre": "Où s'arrête la rosace ?",
+  "lecture": [
+   "Le cercle gris en pointillés a pour rayon 2 ; la flèche orange mesure ce rayon.",
+   "La courbe bleue est r = 2 cos 3θ ; le bout de chaque pétale touche le cercle en un point vert.",
+   "À droite, le cosinus reste entre −1 et 1, donc r reste entre −2 et 2, donc |r| ≤ 2."
+  ],
+  "a_voir": "Aucun point de la courbe n'est au-delà du cercle."
+ },
+ {
+  "code": "40-056",
+  "a_dire": "Pour n = 3, les parties où r < 0 retombent sur les parties où r ≥ 0 ; pour n = 2, elles forment deux pétales nouveaux.",
+  "legende_titre": "Où tombent les parties négatives ?",
+  "lecture": [
+   "Le trait bleu fin montre les parties où r ≥ 0 ; le trait orange épais montre celles où r < 0.",
+   "À gauche, r = cos 3θ : l'orange est sous le bleu, chaque pétale est tracé deux fois.",
+   "À droite, r = cos 2θ : l'orange forme deux pétales, en haut et en bas, à des places où il n'y a pas de bleu."
+  ],
+  "a_voir": "À gauche l'orange recouvre le bleu ; à droite il ajoute deux pétales."
+ },
+ {
+  "code": "40-057",
+  "a_dire": "Si n est impair la rosace a n pétales, si n est pair elle en a 2n.",
+  "legende_titre": "Combien de pétales voit-on ?",
+  "lecture": [
+   "Chaque rosace est dessinée en bleu pour les pétales positifs et en orange pour les pétales négatifs.",
+   "Sous n = 3 : 3 carrés bleus et 3 carrés orange font 6 tracés, mais on voit 3 pétales parce que l'orange tombe sur le bleu.",
+   "Sous n = 2 : 2 carrés bleus et 2 carrés orange font 4 tracés, et on voit 4 pétales."
+  ],
+  "a_voir": "Le nombre de pétales visibles est n pour n = 3 et 2n pour n = 2."
+ },
+ {
+  "code": "40-058",
+  "a_dire": "Pour r = cos 3θ, suivie tous les 30°, les points où r est négatif retombent sur des pétales que la partie positive trace.",
+  "legende_titre": "Suivre r = cos 3θ de 30° en 30°",
+  "lecture": [
+   "La courbe grise est r = cos 3θ ; les rayons fins sont espacés de 30°.",
+   "Les points bleus sont ceux où r = 1 ; le point orange à 240° est tracé à 60° avec r = −1, donc en reculant.",
+   "À 180°, r = −1 : le point orange retombe sur le bout du premier pétale, en (1 ; 0).",
+   "À droite, la liste des angles de 0° à 180° avec la valeur de r."
+  ],
+  "a_voir": "Les points de r négatif tombent sur des pétales déjà tracés."
+ },
+ {
+  "code": "40-059",
+  "a_dire": "Un pétale correspond à un intervalle d'angle de largeur π/n, donc on trace 2n pétales sur un tour.",
+  "legende_titre": "Compter des intervalles d'angle",
+  "lecture": [
+   "La courbe montre r = cos 3θ en fonction de θ : elle monte, redescend, passe sous l'axe, et recommence.",
+   "Chaque bosse, numérotée de 1 à 6, est un pétale : r part de 0, atteint 1 ou −1, revient à 0.",
+   "L'accolade verte mesure une bosse : 60°, soit π/3.",
+   "L'accolade grise mesure le tour entier : 2π ÷ (π/3) = 6 = 2n."
+  ],
+  "a_voir": "Six bosses de même largeur remplissent un tour."
+ },
+ {
+  "code": "40-060",
+  "a_dire": "Pour n impair, le pétale négatif est tracé en (1 + n)π/n et tombe sur un pétale positif.",
+  "legende_titre": "Où va le pétale négatif, n = 3 ?",
+  "lecture": [
+   "Les trois pétales bleus sont centrés à 0°, 120° et 240°.",
+   "Le cercle orange vide, à 60°, marque où r vaut −1 ; la flèche orange traverse le pôle jusqu'à 240°.",
+   "Le pétale orange tombe sur le pétale bleu centré à 240° : 60° + π = 240°.",
+   "La case verte donne la raison : 1 + n = 4 est pair."
+  ],
+  "a_voir": "Le pétale négatif et le pétale bleu de 240° sont au même endroit."
+ },
+ {
+  "code": "40-061",
+  "a_dire": "Pour n pair, le pétale négatif est tracé en (1 + n)π/n, à une place libre entre les pétales positifs.",
+  "legende_titre": "Où va le pétale négatif, n = 2 ?",
+  "lecture": [
+   "Les deux pétales bleus sont centrés à 0° et à 180°.",
+   "Le cercle orange vide, à 90°, marque où r vaut −1 ; la flèche orange traverse le pôle jusqu'à 270°.",
+   "Le pétale orange est en 270°, où il n'y a pas de pétale bleu : 90° + π = 270°.",
+   "La case verte donne la raison : 1 + n = 3 est impair."
+  ],
+  "a_voir": "Le pétale orange est seul à sa place."
+ },
+ {
+  "code": "40-062",
+  "a_dire": "Pour n = 1, r = cos θ est une rosace à un pétale : le cercle, tracé deux fois quand θ va de 0° à 360°.",
+  "legende_titre": "Le cercle comme rosace",
+  "lecture": [
+   "Le cercle bleu est tracé quand θ va de 0° à 180° ; les flèches montrent le sens du tracé.",
+   "Le cercle orange est tracé quand θ va de 180° à 360° ; c'est le même cercle.",
+   "Sur chaque cercle, O est le pôle et 1 est le point d'angle 0°.",
+   "La case verte résume : un seul cercle, tracé 2 fois."
+  ],
+  "a_voir": "Les deux cercles sont identiques."
+ },
+ {
+  "code": "40-063",
+  "a_dire": "r = a cos(nθ) est symétrique par l'axe des x ; r = a sin(nθ) ne l'est pas, il l'est par l'axe des y.",
+  "legende_titre": "Cosinus ou sinus : quelle symétrie ?",
+  "lecture": [
+   "À gauche, r = cos 3θ : les points verts à 20° et −20° ont la même distance 0,5 et sont reflets par l'axe des x (trait noir).",
+   "À droite, r = sin 3θ, en violet : les points verts à 30° et 150° sont reflets par l'axe des y (trait noir).",
+   "Le reflet du pétale de 30° par l'axe des x tomberait à 330° (cercle rouge) : il n'y a pas de pétale là."
+  ],
+  "a_voir": "Avec le sinus, le reflet par l'axe des x tombe dans le vide."
+ },
+ {
+  "code": "40-064",
+  "a_dire": "Le limaçon r = a + b cos θ a deux nombres a et b ; sa forme dépend de leur comparaison, et ses voisins sont le cercle et la cardioïde.",
+  "legende_titre": "Le limaçon et ses voisins",
+  "lecture": [
+   "À gauche, en violet, le cercle r = 2 cos θ : pas de terme constant, a = 0.",
+   "Au milieu, en bleu, le limaçon r = 2 + cos θ, avec a = 2 et b = 1.",
+   "À droite, en violet, la cardioïde r = 1 + cos θ, avec a = b = 1 ; elle passe par le pôle O."
+  ],
+  "a_voir": "Le limaçon ne touche pas le pôle, la cardioïde le touche."
+ },
+ {
+  "code": "40-065",
+  "a_dire": "Si a < b, r = a + b cos θ devient négatif pour certains angles et le limaçon a une boucle intérieure.",
+  "legende_titre": "Une boucle à l'intérieur",
+  "lecture": [
+   "La courbe est r = 1 + 2 cos θ, avec a = 1 < b = 2.",
+   "La grande boucle bleue passe à 3 du pôle, à droite, pour θ = 0°.",
+   "La petite boucle orange vient des angles où r est négatif ; à 180°, r = −1 et le point est à 1 à droite de O.",
+   "Sous la figure : r < 0 quand cos θ < −1/2."
+  ],
+  "a_voir": "La petite boucle orange est à l'intérieur de la grande."
+ },
+ {
+  "code": "40-066",
+  "a_dire": "Si a = b, le limaçon est une cardioïde : r = 0 pour un seul angle, d'où une pointe au pôle ; si a ≠ b la pointe disparaît.",
+  "legende_titre": "Une pointe au pôle ?",
+  "lecture": [
+   "À gauche, en bleu, r = 1 + cos θ : à 180°, r = 0, la courbe arrive en O avec une pointe.",
+   "À droite, en violet, r = 2 + cos θ, avec a = 2 et b = 1 : r reste au moins égal à 1.",
+   "Cette courbe ne touche jamais O et n'a pas de pointe."
+  ],
+  "a_voir": "Seule la courbe de gauche touche le point O."
+ },
+ {
+  "code": "40-067",
+  "a_dire": "Pour b < a < 2b, le point d'angle 180° est en retrait par rapport à ses voisins : le limaçon a un creux.",
+  "legende_titre": "D'où vient le creux ?",
+  "lecture": [
+   "À gauche, le limaçon r = 1,5 + cos θ ; le point bleu est le point d’angle 180°, les deux points orange sont ses voisins, dans le cadre en tirets.",
+   "À droite, la même partie agrandie : le point bleu est à x = −0,5.",
+   "Le point orange, où cos θ = −0,9, est à x = −0,54 : plus à gauche que le point bleu.",
+   "Le trait en pointillés passe par le point bleu ; la courbe le dépasse à gauche au-dessus et au-dessous : le point bleu est en retrait."
+  ],
+  "a_voir": "Le point d’angle 180° est en retrait par rapport à ses voisins : la courbe a un creux."
+ },
+ {
+  "code": "40-068",
+  "a_dire": "Le limaçon n'est bombé que si a ≥ 2b : avec a = 3 et b = 2 (3 < 4), le point d'angle 180° est en retrait (−1 contre −1,08) et la courbe a un creux.",
+  "legende_titre": "Quand le creux disparaît",
+  "lecture": [
+   "À gauche, le limaçon r = 3 + 2 cos θ, avec a = 3 et b = 2 ; le point bleu est le point d’angle 180°, les points orange sont ses voisins, dans le cadre en tirets.",
+   "À droite, la même partie agrandie : le point bleu est à x = −1.",
+   "Le point orange, où cos θ = −0,9, est à x = −1,08 : plus à gauche que le point bleu.",
+   "Ici a = 3 est plus petit que 2b = 4 : c’est le cas avec creux. Sans l’hypothèse a ≥ 2b, la courbe peut avoir un creux."
+  ],
+  "a_voir": "Quand on retire a ≥ 2b, le point d’angle 180° est en retrait : la courbe a un creux."
+ },
+ {
+  "code": "40-069",
+  "a_dire": "On trouve la frontière a = 2b en comparant deux points à gauche : le point d'angle π et un point voisin, ici pour a = 3 et b = 2.",
+  "legende_titre": "Comparer deux points à gauche",
+  "lecture": [
+   "Le limaçon violet est r = 3 + 2 cos θ ; le point bleu est celui d'angle π, le point orange est un voisin.",
+   "Case bleue : r = 3 − 2 = 1, donc x = −1.",
+   "Case orange : cos θ = −0,9, r = 3 − 1,8 = 1,2, donc x = 1,2 × (−0,9) = −1,08.",
+   "Sur la droite graduée, le point orange est à gauche du point bleu."
+  ],
+  "a_voir": "Sur la droite, −1,08 est à gauche de −1."
+ },
+ {
+  "code": "40-070",
+  "a_dire": "Avec c = cos θ, x = ac + bc² ; quand c passe de −1 à −1 + h, x change de h(a − 2b + bh), du signe de a − 2b si h est petit.",
+  "legende_titre": "Le signe du changement de x",
+  "lecture": [
+   "La courbe bleue montre x = 3c + 2c² en fonction de c, avec a = 3 et b = 2.",
+   "Le point bleu est en c = −1, x = −1 ; le point orange est en c = −0,9, x = −1,08 : le changement est −0,08.",
+   "En bas : la formule générale h(a − 2b + bh), puis le calcul 0,1 × (3 − 4 + 0,2) = −0,08.",
+   "Le résultat : si a − 2b < 0, il y a un creux."
+  ],
+  "a_voir": "En partant de c = −1, la courbe descend sous la ligne en pointillés."
+ },
+ {
+  "code": "40-071",
+  "a_dire": "r = a + b sin θ est le même limaçon que r = a + b cos θ, tourné d'un quart de tour.",
+  "legende_titre": "Sinus au lieu de cosinus",
+  "lecture": [
+   "À gauche, en violet, r = 1 + cos θ : la plus grande distance, 2, est à 0° ; la pointe est à 180°.",
+   "À droite, en bleu, r = 1 + sin θ : la plus grande distance, 2, est à 90° ; la pointe est en bas, à 270°.",
+   "La flèche orange montre le quart de tour, π/2, qui passe de l'une à l'autre."
+  ],
+  "a_voir": "Les deux courbes ont la même forme, l'une tournée d'un quart de tour."
+ },
+ {
+  "code": "40-072",
+  "a_dire": "La lemniscate r² = a² cos 2θ est une courbe à deux boucles qui se croisent au pôle ; ce n'est pas la rosace r = cos 2θ.",
+  "legende_titre": "Une nouvelle courbe, un nouveau nom",
+  "lecture": [
+   "À gauche, en violet, r = cos 2θ : une rosace à quatre pétales.",
+   "À droite, en bleu, r² = cos 2θ : deux boucles qui se croisent en O.",
+   "La règle porte sur r² et non sur r ; la courbe de droite porte le nom de lemniscate de Bernoulli."
+  ],
+  "a_voir": "Quatre pétales à gauche, deux boucles à droite."
+ },
+ {
+  "code": "40-073",
+  "a_dire": "La lemniscate n'existe que pour les angles où cos 2θ ≥ 0, parce que r² ne peut pas être négatif.",
+  "legende_titre": "Quels angles donnent des points ?",
+  "lecture": [
+   "Les zones vertes sont les angles où cos 2θ ≥ 0 ; la lemniscate bleue y est dessinée.",
+   "Les zones rouges, entre 45° et 135° et entre 225° et 315°, n'ont aucun point.",
+   "À 30° : cos 60° = 0,5, donc r = ± 0,707 ; le point vert est sur la courbe.",
+   "À 60° : cos 120° = −0,5, donc r² serait négatif ; le rayon en pointillés rouges ne porte aucun point."
+  ],
+  "a_voir": "La courbe reste dans les zones vertes."
+ },
+ {
+  "code": "40-074",
+  "a_dire": "Pour chaque angle permis, r² = a² cos 2θ donne deux valeurs, r = a√(cos 2θ) et r = −a√(cos 2θ), une pour chaque boucle.",
+  "legende_titre": "Deux valeurs pour un angle",
+  "lecture": [
+   "La courbe grise est la lemniscate r² = cos 2θ ; le rayon en pointillés est à 30°.",
+   "À 30°, r² = 0,5 : le point bleu est à r = 0,707, sur la boucle de droite.",
+   "Le point orange est à r = −0,707 : le point recule de l'autre côté de O, à 210°, sur la boucle de gauche."
+  ],
+  "a_voir": "Les deux points sont de part et d'autre de O, à la même distance."
+ },
+ {
+  "code": "40-075",
+  "a_dire": "La lemniscate passe les trois tests de symétrie : par l'axe des x, par l'axe des y et par le pôle.",
+  "legende_titre": "Trois symétries d'une même courbe",
+  "lecture": [
+   "Le point bleu P est sur la lemniscate, à 30°.",
+   "Le point orange, reflet de P par l'axe des x (θ → −θ), est sur la courbe ; la raison : cos(−2θ) = cos 2θ.",
+   "Le point violet, reflet par l'axe des y (θ → π − θ), est sur la courbe ; la raison : cos(2π − 2θ) = cos 2θ.",
+   "Le point vert, reflet par le pôle (r → −r), est sur la courbe ; la raison : (−r)² = r²."
+  ],
+  "a_voir": "Les quatre points sont sur la même courbe."
+ },
+ {
+  "code": "40-076",
+  "a_dire": "La figure 40.4 montre la lemniscate r² = cos 2θ avec ses deux foyers, un dans chaque boucle, et la spirale r = θ/(2π) dont les tours sont séparés de 1.",
+  "legende_titre": "Lemniscate avec foyers, et spirale",
+  "lecture": [
+   "À gauche, la lemniscate bleue pour a = 1 ; O est le pôle.",
+   "Les points violets F₁ et F₂ sont les foyers, sur l'axe horizontal, à environ 0,707 de O ; chacun est dans une boucle.",
+   "À droite, la spirale orange r = θ/(2π) coupe l'axe horizontal à 1, puis à 2."
+  ],
+  "a_voir": "Chaque foyer est à l'intérieur d'une boucle."
+ },
+ {
+  "code": "40-077",
+  "a_dire": "La lemniscate passe par O pour θ = ±π/4, où cos 2θ = 0, et y arrive le long de ces deux rayons.",
+  "legende_titre": "L'arrivée au pôle",
+  "lecture": [
+   "Les deux droites grises en pointillés ont les angles 45° et −45°.",
+   "Le point orange à 40° est à r ≈ 0,42 ; le point orange à 44° est à r ≈ 0,19 : il est plus près de O.",
+   "À 45°, r = 0 : le point vert est en O.",
+   "Près de O, la courbe suit les deux droites."
+  ],
+  "a_voir": "En approchant de 45°, les points se rapprochent de O le long de la droite."
+ },
+ {
+  "code": "40-078",
+  "a_dire": "La spirale d'Archimède r = aθ grandit avec θ ; elle se distingue du cercle r = a (distance constante) et de la rosace (distance qui oscille entre −a et a).",
+  "legende_titre": "La spirale et ses voisins",
+  "lecture": [
+   "À gauche, la spirale bleue r = 0,5 θ ; les points orange sont à θ = 1, 2 et 4 radians, avec r = 0,5 ; 1 et 2.",
+   "En haut à droite, en violet, le cercle r = a : la distance reste égale à a.",
+   "En bas à droite, en violet, la rosace r = a cos nθ : la distance oscille."
+  ],
+  "a_voir": "La spirale s'éloigne de O ; les deux autres courbes restent à distance bornée."
+ },
+ {
+  "code": "40-079",
+  "a_dire": "Sur un rayon, deux passages successifs de la spirale r = aθ sont séparés de a × 2π.",
+  "legende_titre": "L'écart entre deux passages",
+  "lecture": [
+   "La spirale bleue est r = 0,5 θ ; le trait en pointillés est un rayon, à 90°.",
+   "Le point bleu est le premier passage : θ ≈ 1,571, r ≈ 0,785.",
+   "Le point orange est le passage suivant, un tour plus tard : θ ≈ 7,854, r ≈ 3,927.",
+   "La flèche verte mesure l'écart : environ 3,14, soit 0,5 × 2π."
+  ],
+  "a_voir": "La flèche verte relie les deux passages sur le même rayon."
+ },
+ {
+  "code": "40-080",
+  "a_dire": "Pour un rouleau de papier, l'écart entre deux tours, 0,1 mm, vaut a × 2π, donc a = 0,1 ÷ 2π ≈ 0,016 mm par radian.",
+  "legende_titre": "Trouver a pour un rouleau de papier",
+  "lecture": [
+   "La spirale bleue montre cinq tours d'un rouleau ; l'écart entre deux tours est de 0,1 mm (la figure n'est pas à l'échelle).",
+   "À droite, le calcul : 0,1 = a × 2π, donc a = 0,1 ÷ 6,28, soit environ 0,016 mm par radian (case verte).",
+   "Vérification en bas : 10 tours font 62,8 radians ; 0,016 × 62,8 ≈ 1 mm, soit 10 × 0,1 mm."
+  ],
+  "a_voir": "On retrouve 1 mm après 10 tours."
+ },
+ {
+  "code": "40-081",
+  "a_dire": "La spirale ne tient dans aucun cercle, parce que r grandit sans limite ; la rosace, elle, tient dans le cercle r = a.",
+  "legende_titre": "Tenir dans un cercle ou en sortir",
+  "lecture": [
+   "À gauche, la rosace violette reste dans le cercle gris en pointillés, car |r| ≤ a.",
+   "À droite, la spirale r = 0,5 θ et un cercle de rayon 10 ; la partie bleue est dans le cercle.",
+   "Le point orange, à θ = 20 et r = 10, est le moment où la spirale touche le cercle ; la partie orange est au-delà, hors du cercle."
+  ],
+  "a_voir": "La spirale dépasse le cercle ; la rosace ne le dépasse jamais."
+ }
+]

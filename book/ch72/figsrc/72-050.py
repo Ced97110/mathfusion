@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ox, oy, s = 20, 26, 11
+P = lambda x, y: (ox + x * s, oy + y * s)
+line(ax, [P(-0.3, 0), P(4.2, 0)], 'fixe', lw=0.6)
+line(ax, [P(0, -2), P(0, 2.4)], 'fixe', lw=0.6)
+A, Bv, S = P(2, 2), P(1.5, -1.5), P(3.5, 0.5)
+line(ax, [A, S], 'fixe', dash=True)
+line(ax, [Bv, S], 'fixe', dash=True)
+arrow(ax, P(0, 0), A, 'sujet', lw=1.6)
+arrow(ax, P(0, 0), Bv, 'autre', lw=1.6)
+arrow(ax, P(0, 0), S, 'resultat', lw=1.8)
+text(ax, A[0] - 2, A[1] + 3, r'$2u=(2\ ;\ 2)$', 'sujet', 'm', ha='right')
+text(ax, Bv[0] - 2, Bv[1] - 3, r'$3v=(1{,}5\ ;\ -1{,}5)$', 'autre', 'm', ha='right')
+text(ax, S[0] + 1, S[1] + 4, r'$2u+3v$', 'resultat', 'm', ha='left')
+text(ax, 3, 62, r'carré de $2u+3v$ = 12', 'resultat', 'l', ha='left')
+text(ax, 3, 56, r'$2\times a\times b=2\times 2\times 3$', 'resultat', 'm', ha='left')
+save(fig, '72-050')

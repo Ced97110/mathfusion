@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,22,58,'non contradictoires','sujet','m'); text(ax,66,58,'pas trop nombreuses','sujet','m')
+line(ax,[(44,4),(44,56)],'fixe',dash=True)
+box(ax,5,40,34,9,'sujet',label='3 est pair',size='s'); box(ax,5,24,34,9,'sujet',label='3 est impair',size='s')
+arrow(ax,(22,39.5),(22,33.5),'limite',both=True)
+box(ax,5,6,34,11,'limite',label='jamais vraies ensemble',size='s'); arrow(ax,(22,23.5),(22,17.5),'limite')
+box(ax,49,40,34,9,'sujet',label='multiple de 2, 3, 5, 7',size='s'); box(ax,49,24,34,9,'sujet',label='plus petit que 100',size='s')
+arrow(ax,(66,39.5),(66,33.5),'varie')
+box(ax,49,6,34,11,'resultat',label='un seul entier : 0',size='s'); arrow(ax,(66,23.5),(66,17.5),'varie')
+save(fig,'42-063')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+# left: in the reals (1+1)^2 = 4 but 1^2 + 1^2 = 2 ; right: in characteristic p, exponent p works
+text(ax, 22, 67, 'dans les réels', 'limite', 'm')
+box(ax, 3, 46, 38, 11, 'limite', label=r'$(1+1)^2 = 4$')
+text(ax, 22, 40, r'$\neq$', 'limite', 'l')
+box(ax, 3, 23, 38, 11, 'limite', label=r'$1^2 + 1^2 = 2$')
+text(ax, 22, 12, r'terme croisé $2ab$', 'varie', 's')
+line(ax, [(44, 6), (44, 68)], 'fixe', dash=True)
+text(ax, 66, 67, r'caractéristique $p$', 'resultat', 'm')
+box(ax, 49, 46, 34, 11, 'resultat', label=r'$(a+b)^p$')
+text(ax, 66, 40, '=', 'resultat', 'l')
+box(ax, 49, 23, 34, 11, 'resultat', label=r'$a^p + b^p$')
+text(ax, 66, 12, 'exposant $p$', 'resultat', 's')
+save(fig, '67-073')

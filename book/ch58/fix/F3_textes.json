@@ -1,0 +1,99 @@
+{
+ "58-226": {
+  "lecture": [
+   "Le cadre violet du haut dit : P a un inverse Q. Le cadre bleu du bas dit : les f_j forment une base. Le signe ⇔ au milieu dit que chacun entraîne l’autre.",
+   "La flèche qui descend a pour cause les colonnes de Q.",
+   "La flèche qui monte a pour cause l’unicité des écritures.",
+   "En bas, P de colonnes (2, 1) et (1, 1), multiplié par Q, donne le tableau 1 en vert."
+  ],
+  "a_voir": "Base et inverse s’entraînent dans les deux sens, chaque sens avec sa cause."
+ },
+ "58-228": {
+  "lecture": [
+   "Le texte bleu du haut donne la nouvelle base : f₁ = (2, 1) et f₂ = (1, 1).",
+   "À gauche, le sac e₁ = (1, 0) s’écrit f₁ − f₂ : la flèche orange f₁, puis la flèche violette −f₂, mènent au point vert.",
+   "À droite, le sac e₂ = (0, 1) s’écrit −f₁ + 2 f₂ : la flèche orange −f₁, puis deux flèches violettes f₂.",
+   "Ces deux écritures sont les colonnes de Q : (1, −1) et (−1, 2). Le texte du haut donne la raison : une seule écriture, donc QP = 1 et PQ = 1."
+  ],
+  "a_voir": "Chaque ancien sac a une seule écriture avec les nouveaux : ce sont les colonnes de Q."
+ },
+ "58-230": {
+  "lecture": [
+   "La boîte bleue calcule det P = 1, pour P de colonnes (2, 1) et (1, 1). La boîte violette calcule det Q = 1, pour Q de colonnes (1, −1) et (−1, 2).",
+   "Les deux flèches mènent à la boîte orange, l’étape clé : det P × det Q = det(PQ) = 1.",
+   "La boîte verte conclut : deux entiers de produit 1 sont (1, 1) ou (−1, −1), donc ils valent 1 ou −1."
+  ],
+  "a_voir": "Deux entiers dont le produit vaut 1 valent tous deux 1, ou tous deux −1."
+ },
+ "58-237": {
+  "lecture": [
+   "Le grand cadre pointillé est la somme directe M₁ ⊕ M₂.",
+   "Le cadre bleu est R^(n) : des listes dont toutes les cases viennent de R, comme 3 ⊕ 5.",
+   "À droite, dans la somme directe mais hors du cadre bleu : un entier (bleu, M₁) et un couple (violet, M₂), reliés par ⊕.",
+   "Le cadre bleu est donc contenu dans le grand cadre."
+  ],
+  "a_voir": "Les listes de même nature sont un cas de la somme directe, qui autorise des cases de natures diverses."
+ },
+ "58-250": {
+  "lecture": [
+   "Le cercle bleu contient les listes dont la seconde case est nulle, par exemple (4, (0, 0)).",
+   "Le cercle violet contient les listes dont la première case est nulle, par exemple (0, (1, 2)).",
+   "La zone commune, en vert, ne contient que la liste (0, (0, 0)).",
+   "La ligne du bas dit que la somme des deux images est tout le module."
+  ],
+  "a_voir": "Les deux cercles ne partagent que la liste nulle, et leur somme est tout le module."
+ },
+ "58-260": {
+  "lecture": [
+   "À gauche, deux droites à angle droit coupent (1, 3) en (1, 0) et (0, 3).",
+   "À droite, l’axe et la diagonale font un autre angle et coupent (1, 3) en (−2, 0) et (3, 3).",
+   "Dans les deux dessins, le point vert, marqué (1, 3), est le même couple, écrit sous chaque dessin comme une somme."
+  ],
+  "a_voir": "Deux directions distinctes suffisent : le même point se décompose aussi quand l’angle n’est pas droit."
+ },
+ "58-271": {
+  "lecture": [
+   "Le cadre bleu du bas, (1, 0), est l’élément de départ, en coordonnées nouvelles ; le cadre bleu du haut, (2, 1), est le même élément en coordonnées anciennes.",
+   "Étape 1, la flèche orange épaisse de gauche, « × P » : la première conversion, marquée « étape clé ».",
+   "Étape 2, la flèche du haut, applique A et donne (5, 5), en orange. Étape 3, la flèche de droite, « × P⁻¹ », redonne le cadre vert (0, 5) en coordonnées nouvelles : l’arrivée.",
+   "La flèche grise du bas, A′, relie directement (1, 0) à (0, 5)."
+  ],
+  "a_voir": "Les trois étapes 1, 2, 3 aboutissent au même résultat que la flèche grise du bas."
+ },
+ "58-277": {
+  "lecture": [
+   "Le cadre vert du haut énonce la règle quand chaque morceau est direct.",
+   "À gauche, avec l’axe horizontal et l’axe vertical seulement, le point (1, 1) a une seule écriture : (1, 0) + (0, 1).",
+   "À droite, on ajoute la diagonale en orange : le point rouge (1, 1) s’écrit (1, 0) + (0, 1) et aussi 1·(1, 1).",
+   "Il y a donc deux écritures : la somme n’est pas directe et la règle tombe."
+  ],
+  "a_voir": "La règle marche avec les deux axes ; elle tombe dès que la somme des axes et de la diagonale n’est pas directe."
+ },
+ "58-288": {
+  "lecture": [
+   "Les deux disques sont les deux éléments de l’horloge à deux heures : 0 en gris, 1 en bleu.",
+   "Les flèches orange « + 1 » passent de l’un à l’autre ; le disque 1 engendre tout.",
+   "Le cadre violet dit que la famille (1) est liée : 2·1 = 0 alors que 2 n’est pas nul.",
+   "Le cadre rouge répond à « retirer 1 ? » : 1 n’est combinaison d’aucun autre vecteur, donc le tri est bloqué."
+  ],
+  "a_voir": "La famille est liée, mais 1 n’est combinaison d’aucun autre vecteur : rien à retirer."
+ },
+ "58-312": {
+  "lecture": [
+   "À gauche, la base (k, v) du plan : la flèche bleue k = (2, −1) est la base du noyau et la flèche orange v = (1, 0) est le vecteur ajouté.",
+   "À droite, le disque bleu est l’image de k : (0, 0).",
+   "La flèche verte est l’image de v : (1, 2), seule base de l’image.",
+   "La case verte résume : η(v) seul est une base de l’image."
+  ],
+  "a_voir": "Le noyau part sur zéro, le vecteur ajouté donne la base de l’image."
+ },
+ "58-314": {
+  "lecture": [
+   "À gauche, trois étapes numérotées. Étape 1, la case bleue part de c·(1, 2) = (0, 0).",
+   "Étape 2, la case orange, est l’étape clé : c·(1, 0) est alors dans le noyau.",
+   "Étape 3, la case verte conclut : on écrit c·(1, 0) = a·(2, −1) et la base de ℝ² donne c = 0.",
+   "À droite, séparée par un trait, la droite orange des multiples de v et la droite bleue du noyau n’ont que O en commun."
+  ],
+  "a_voir": "Les deux droites ne se coupent qu’en O, donc c = 0."
+ }
+}

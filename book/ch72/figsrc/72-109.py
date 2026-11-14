@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,r'$a^2c=c\ \Rightarrow\ a^2=1$','encre','m')
+f=numberline(ax,14,74,32,-2,2,arrow_right=False)
+disc(ax,f(1),32,1.7,'resultat'); disc(ax,f(-1),32,1.7,'resultat'); disc(ax,f(2),32,1.7,'limite')
+text(ax,f(-1),40,r'$a=-1$','resultat','s'); text(ax,f(-1),46,r'$S_u$','resultat','s')
+text(ax,f(1),40,r'$a=1$','resultat','s'); text(ax,f(1),46,'identité','resultat','s')
+text(ax,f(2)-3,40,r'$a=2$','limite','s'); text(ax,f(2)-6,52,'carré 12 ≠ 3','limite','s')
+text(ax,44,12,r'$O(V,B)$ : 2 éléments','resultat','m')
+save(fig,'72-109')

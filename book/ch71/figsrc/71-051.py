@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 6, 62, 30, 9, 'sujet', label=r'$x = (3\,;\,1)$', size='s')
+box(ax, 52, 62, 30, 9, 'autre', label=r'$y = (1\,;\,2)$', size='s')
+arrow(ax, (21, 62), (38, 50), 'fixe'); arrow(ax, (67, 62), (50, 50), 'fixe')
+box(ax, 28, 40, 32, 10, 'resultat', label=r'$B(x,\,y) = 5$', size='m')
+arrow(ax, (36, 40), (21, 25), 'varie'); arrow(ax, (52, 40), (67, 25), 'varie')
+text(ax, 22, 34, r'$x$ doublé', 'varie', 's', ha='right'); text(ax, 66, 34, r'$y$ doublé', 'varie', 's', ha='left')
+box(ax, 4, 12, 34, 13, 'resultat', label=r'$B(2x,\,y) = 10$', size='s')
+box(ax, 50, 12, 34, 13, 'resultat', label=r'$B(x,\,2y) = 10$', size='s')
+text(ax, 44, 5, 'le résultat suit chaque flèche', 'fixe', 's')
+save(fig, '71-051')

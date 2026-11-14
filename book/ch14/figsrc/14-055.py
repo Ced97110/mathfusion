@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 2, 58, r'$2^2/2^5=\frac{1}{8}$ : le quotient', 'sujet', 'm', ha='left')
+f = numberline(ax, 8, 70, 38, -8, 1, step=1, arrow_right=False, every=2)
+disc(ax, f(0.125), 38, 1.8, 'resultat')
+text(ax, f(0.125) + 4, 47, r'$\frac{1}{8}$', 'resultat', 's')
+arrow(ax, (f(0.125) + 3, 45), (f(0.125) + 1, 40), 'resultat')
+disc(ax, f(-8), 38, 1.8, 'limite')
+text(ax, f(-8) + 5, 47, 'si $2^{-3}=-8$ : faux', 'limite', 's')
+arrow(ax, (f(-8) + 2, 45), (f(-8) + 0.5, 40.5), 'limite')
+box(ax, 14, 8, 60, 16, 'resultat', label=r'donc $a^{-3}=\frac{1}{a^3}$', size='m')
+save(fig, '14-055')

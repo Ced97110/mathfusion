@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 63, 'ce chapitre : sens direct', 'sujet', 's')
+box(ax, 3, 44, 34, 12, 'sujet', label=r'$x^5-4x+2$', size='s')
+box(ax, 51, 44, 34, 12, 'sujet', label=r'$S_5$ : 120', size='s')
+arrow(ax, (38, 50), (50, 50), 'sujet', lw=1.4)
+text(ax, 44, 38, 'équation vers groupe', 'sujet', 's')
+text(ax, 44, 28, 'problème inverse', 'autre', 's')
+box(ax, 3, 8, 34, 12, 'autre', label='groupe à 3 éléments', size='s')
+box(ax, 51, 8, 34, 12, 'autre', dash=True, fill=False, label='équation ' + r'$\mathbb{Q}$ ?', size='s')
+arrow(ax, (38, 14), (50, 14), 'autre', lw=1.4)
+save(fig, '65-145')

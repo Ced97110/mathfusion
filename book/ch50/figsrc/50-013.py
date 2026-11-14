@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$6 = 2 \times 3$', 'encre', 'xl')
+disc(ax, 34, 46, 4, 'sujet', label='2', size='m'); disc(ax, 54, 46, 4, 'autre', label='3', size='m')
+text(ax, 44, 46, r'$\times$', 'encre', 'm')
+text(ax, 44, 37, 'deux premiers différents', 'fixe', 's')
+arrow(ax, (32, 34), (22, 26), 'varie'); arrow(ax, (56, 34), (66, 26), 'varie')
+box(ax, 4, 10, 36, 15, 'resultat'); text(ax, 22, 20, 'horloge', 'sujet', 's'); text(ax, 22, 14.5, 'sous-groupe de 6 : oui', 'resultat', 's')
+box(ax, 48, 10, 36, 15, 'limite'); text(ax, 66, 20, r'$A_4$', 'autre', 's'); text(ax, 66, 14.5, 'sous-groupe de 6 : non', 'limite', 's')
+text(ax, 66, 4.5, 'contre-exemple', 'limite', 's')
+save(fig, '50-013')

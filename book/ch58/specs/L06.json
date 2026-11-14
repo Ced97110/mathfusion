@@ -1,0 +1,358 @@
+[
+ {
+  "code": "58-151",
+  "a_dire": "Pour tester une famille, on écrit la combinaison égale à 0, on la traduit en équations et on résout : seule solution 0, la famille est libre ; autre solution, elle est liée.",
+  "legende_titre": "De l’égalité aux équations, puis à la solution",
+  "lecture": [
+   "Le cadre bleu du haut est l’égalité posée avec les vecteurs (3, 1) et (1, 2).",
+   "Les deux cadres bleus du dessous sont ses deux équations, une par case.",
+   "Les flèches orange mènent à la résolution, qui a deux issues : le cadre vert (seule solution 0) et le cadre pointillé gris (une autre solution).",
+   "Chaque issue mène à son mot : libre en vert, liée en violet."
+  ],
+  "a_voir": "La résolution a deux issues, et chacune donne un mot : libre ou liée."
+ },
+ {
+  "code": "58-152",
+  "a_dire": "Pour (3, 1) et (1, 2), le système donne β = −3α puis −5α = 0 : la seule solution est 0, les vecteurs sont indépendants.",
+  "legende_titre": "Un exemple résolu pas à pas",
+  "lecture": [
+   "Le cadre bleu du haut est l’égalité à résoudre.",
+   "Les deux cadres gris sont les équations de la première et de la seconde case.",
+   "Les cadres orange donnent le calcul : β = −3α, puis α − 6α = −5α = 0.",
+   "Le cadre vert du bas donne la conclusion : α = 0 puis β = 0, seule la combinaison triviale convient."
+  ],
+  "a_voir": "Le calcul descend d’une équation à l’autre jusqu’à la solution nulle."
+ },
+ {
+  "code": "58-153",
+  "a_dire": "Avec (3, 1), (1, 2), (−1, 3) et les nombres −1, 2, −1, la somme donne (0, 0) : il existe une relation avec des nombres non tous nuls, la famille est liée.",
+  "legende_titre": "Trois vecteurs, trois nombres, une somme nulle",
+  "lecture": [
+   "Les trois colonnes sont les trois vecteurs : bleu (3, 1), orange (1, 2), violet (−1, 3).",
+   "Chaque flèche relie un vecteur à son produit par −1, 2 et −1.",
+   "Les deux lignes vertes vérifient les deux cases : −3 + 2 + 1 = 0 et −1 + 4 − 3 = 0.",
+   "Le cadre vert du bas montre la somme (0, 0)."
+  ],
+  "a_voir": "Les trois produits s’annulent exactement, alors que les nombres −1, 2, −1 ne sont pas nuls."
+ },
+ {
+  "code": "58-154",
+  "a_dire": "La pointe de w est à un croisement du quadrillage tracé avec u et v : w = −u + 2v.",
+  "legende_titre": "Le point w sur le quadrillage de u et de v",
+  "lecture": [
+   "Les lignes bleues sont parallèles à u, les lignes orange parallèles à v.",
+   "Les petits ronds sont les croisements du quadrillage.",
+   "Depuis l’origine, la flèche vers −u puis la flèche vers 2v mènent au point violet, w.",
+   "Le titre w = −u + 2v est écrit en haut."
+  ],
+  "a_voir": "Le point de w tombe sur un croisement du quadrillage."
+ },
+ {
+  "code": "58-155",
+  "a_dire": "Deux flèches non alignées atteignent tout le plan : la troisième s’écrit avec elles, trois vecteurs du plan sont donc toujours liés.",
+  "legende_titre": "Trois flèches dans le plan : une de trop",
+  "lecture": [
+   "Le plan vert à gauche est tout le plan, atteint par deux flèches.",
+   "La flèche bleue u et la flèche orange v sont les deux premières.",
+   "La flèche violette w est la troisième : elle s’écrit w = −u + 2v.",
+   "À droite, les cadres u et v mènent à w en pointillé, avec la mention « 3 flèches : une de trop »."
+  ],
+  "a_voir": "Une troisième flèche tombe toujours dans le plan déjà atteint par les deux premières."
+ },
+ {
+  "code": "58-156",
+  "a_dire": "Une famille est liée si et seulement si un des vecteurs s’écrit avec les autres : de la relation nulle on passe à l’écriture, et on revient.",
+  "legende_titre": "Relation nulle et écriture d’un vecteur : un aller-retour",
+  "lecture": [
+   "Le cadre bleu est la relation nulle −u + 2v − w = (0, 0).",
+   "Le cadre vert est un vecteur écrit avec les autres : w = −u + 2v.",
+   "La flèche du haut va de la relation à l’écriture : on isole w. La flèche du bas fait le chemin inverse : on remet tout à gauche.",
+   "La phrase du bas dit : liée si et seulement si l’un des vecteurs s’écrit avec les autres."
+  ],
+  "a_voir": "Les deux flèches vont dans les deux sens : relation nulle et écriture d’un vecteur se valent."
+ },
+ {
+  "code": "58-157",
+  "a_dire": "On part d’une relation nulle dont un nombre n’est pas nul, on divise tout par ce nombre, et le vecteur correspondant est isolé.",
+  "legende_titre": "Diviser pour isoler un vecteur",
+  "lecture": [
+   "Les trois cadres du haut sont la relation nulle : −1 devant u (bleu), 2 devant v (orange), −1 devant w (violet).",
+   "Le nombre devant w est −1, non nul.",
+   "Le cadre orange gras est l’étape qui porte le poids : on divise tout par −1.",
+   "Le cadre gris donne u − 2v + w = 0, le cadre vert donne w = −u + 2v."
+  ],
+  "a_voir": "La division par −1 transforme la relation nulle en une écriture de w."
+ },
+ {
+  "code": "58-158",
+  "a_dire": "On part de w écrit avec les autres, on passe w de l’autre côté, et le nombre devant w vaut −1 : non nul, la famille est liée.",
+  "legende_titre": "Passer un vecteur de l’autre côté",
+  "lecture": [
+   "Le cadre vert du haut est le départ : w = −u + 2v.",
+   "Le cadre orange est l’étape qui porte le poids : w passe de l’autre côté, avec −1 devant lui.",
+   "Les trois cadres du bas donnent les nombres devant u, v, w : −1, 2, −1.",
+   "Le dernier texte vert dit que −1 n’est pas nul, donc la famille est liée."
+  ],
+  "a_voir": "Après le passage de l’autre côté, w a un nombre devant lui, et ce nombre n’est pas nul."
+ },
+ {
+  "code": "58-159",
+  "a_dire": "Une famille qui contient le vecteur nul est liée : on met 1 devant le vecteur nul et 0 devant l’autre, et la somme est nulle.",
+  "legende_titre": "Le vecteur nul rend la famille liée",
+  "lecture": [
+   "Le point orange à l’origine est le vecteur nul (0, 0).",
+   "La flèche bleue est le vecteur (3, 1).",
+   "Le cadre orange donne 1 fois (0, 0), le cadre bleu donne 0 fois (3, 1).",
+   "Le cadre vert du bas donne la somme (0, 0), avec les nombres 1 et 0 qui ne sont pas tous nuls."
+  ],
+  "a_voir": "Les deux produits donnent (0, 0), et le nombre devant le vecteur nul est 1."
+ },
+ {
+  "code": "58-160",
+  "a_dire": "Une famille d’un seul vecteur non nul est libre : un nombre fois ce vecteur ne vaut (0, 0) que si le nombre est 0.",
+  "legende_titre": "Un seul vecteur non nul",
+  "lecture": [
+   "La flèche bleue est le vecteur (3, 1), les points orange sont ses multiples −1, 2 et 1 fois.",
+   "Le point vert à l’origine est 0 fois (3, 1), c’est-à-dire (0, 0).",
+   "Les autres multiples ne sont pas à l’origine.",
+   "Le texte vert du bas dit que seul le nombre 0 convient."
+  ],
+  "a_voir": "Seul le multiple par 0 retombe sur l’origine."
+ },
+ {
+  "code": "58-161",
+  "a_dire": "Deux vecteurs sont liés exactement quand l’un est un multiple de l’autre, donc quand ils sont sur la même droite.",
+  "legende_titre": "Liés ou non : sur la même droite ou pas",
+  "lecture": [
+   "À gauche, (2, 4) en bleu et (1, 2) en violet sont sur la même droite : 1 fois (2, 4) − 2 fois (1, 2) = 0, ils sont liés.",
+   "À droite, (1, 2) en violet et (2, 1) en bleu sont sur deux droites différentes.",
+   "Aucun n’est multiple de l’autre : ils ne sont pas liés."
+  ],
+  "a_voir": "Liés veut dire alignés : une seule droite à gauche, deux droites à droite."
+ },
+ {
+  "code": "58-162",
+  "a_dire": "Pour passer de « liée » à « un vecteur s’écrit avec les autres », il faut diviser par un nombre non nul : possible avec des fractions, pas avec des entiers.",
+  "legende_titre": "La division n’existe pas toujours",
+  "lecture": [
+   "Le cadre bleu du haut est la relation 3 fois (2, 0) − 2 fois (3, 0) = (0, 0).",
+   "Les flèches orange disent qu’il faut diviser par 3 pour isoler (2, 0).",
+   "Le cadre vert dit que la division est possible avec des fractions : (2, 0) = 2/3 de (3, 0).",
+   "Le cadre rouge dit que 2/3 n’est pas entier : sur la droite graduée, il tombe entre 0 et 1."
+  ],
+  "a_voir": "Le nombre 2/3 est entre deux entiers, il n’est pas un entier."
+ },
+ {
+  "code": "58-163",
+  "a_dire": "Dans les couples d’entiers, (2, 0) et (3, 0) sont liés par 3 et −2, mais aucun n’est un multiple entier de l’autre.",
+  "legende_titre": "Lié sans être multiple, avec des entiers",
+  "lecture": [
+   "Le cadre vert est la relation nulle : 3 fois (2, 0) moins 2 fois (3, 0) donne (0, 0). Elle existe.",
+   "Le premier cadre rouge cherche un entier k tel que (2, 0) = k (3, 0) : il faudrait k = 2/3, qui n’est pas entier.",
+   "Le second cadre rouge cherche un entier k tel que (3, 0) = k (2, 0) : il faudrait k = 3/2, qui n’est pas entier."
+  ],
+  "a_voir": "La relation nulle existe, mais aucun des deux vecteurs n’est un multiple entier de l’autre."
+ },
+ {
+  "code": "58-164",
+  "a_dire": "Sur les entiers, « liée » et « un vecteur s’écrit avec l’autre » se séparent : la première phrase est vraie pour (2, 0) et (3, 0), la seconde est fausse.",
+  "legende_titre": "Deux phrases qui se séparent",
+  "lecture": [
+   "Le cadre vert est la relation nulle de (2, 0) et (3, 0) : elle existe.",
+   "Le cadre rouge est le multiple entier : il n’existe pas.",
+   "Le texte vert dit « liée » : oui, le texte rouge dit « l’un s’écrit avec l’autre » : non.",
+   "La ligne du bas dit que les deux phrases se séparent."
+  ],
+  "a_voir": "La même famille répond oui à une phrase et non à l’autre."
+ },
+ {
+  "code": "58-165",
+  "a_dire": "Avec des vecteurs indépendants, un vecteur s’écrit d’une seule façon : deux écritures donnent les mêmes nombres un à un.",
+  "legende_titre": "Un seul chemin vers (7, 4)",
+  "lecture": [
+   "La flèche bleue est 2 fois (3, 1), la flèche orange est 1 fois (1, 2).",
+   "Le point vert est le vecteur (7, 4), atteint au bout des deux flèches.",
+   "À droite, α est la première écriture et β la seconde. Les deux cadres disent que leurs nombres sont égaux : α₁ = β₁ = 2 et α₂ = β₂ = 1."
+  ],
+  "a_voir": "Les deux écritures de (7, 4) ont les mêmes nombres : il n’y a qu’une écriture."
+ },
+ {
+  "code": "58-166",
+  "a_dire": "On soustrait deux écritures du même vecteur, le test d’indépendance annule chaque différence, donc les nombres de même numéro sont égaux.",
+  "legende_titre": "Soustraire deux écritures",
+  "lecture": [
+   "Le cadre gris du haut est l’hypothèse : (3, 1) et (1, 2) sont indépendants.",
+   "Les deux cadres du haut sont deux écritures de (7, 4) : bleu avec α₁ = 2 et α₂ = 1, violet avec β₁ et β₂.",
+   "La flèche « on soustrait » mène au cadre orange : une combinaison égale à (0, 0), dont les nombres sont des différences.",
+   "L’hypothèse d’indépendance dit que seule la combinaison triviale est nulle. Le cadre vert conclut : αᵢ − βᵢ = 0, donc αᵢ = βᵢ."
+  ],
+  "a_voir": "La soustraction fait apparaître une combinaison nulle, et l’indépendance force chaque différence à 0."
+ },
+ {
+  "code": "58-167",
+  "a_dire": "Une base d’un espace est une famille indépendante et qui engendre cet espace ; la même famille peut être une base d’un plan et pas de l’espace.",
+  "legende_titre": "Base d’un espace : deux conditions",
+  "lecture": [
+   "Le dessin à gauche montre le plan engendré par u (flèche bleue, (1, 2, 1)) et v (flèche orange, (0, 1, −1)).",
+   "Le cadre vert dit que les deux vecteurs sont indépendants et engendrent ce plan : ils en sont une base.",
+   "Le cadre rouge dit qu’ils sont indépendants mais n’engendrent pas l’espace : ils n’en sont pas une base.",
+   "Le texte du bas dit que la base se juge pour un espace donné."
+  ],
+  "a_voir": "La même famille passe la deuxième condition pour le plan et la rate pour l’espace."
+ },
+ {
+  "code": "58-168",
+  "a_dire": "La phrase « tout élément s’écrit d’une seule façon » se coupe en deux : « génératrice » donne « s’écrit », « indépendante » donne « d’une seule façon ».",
+  "legende_titre": "Deux moitiés d’une même définition",
+  "lecture": [
+   "Les deux cadres du haut sont les deux moitiés : génératrice en bleu, indépendante en orange.",
+   "Chaque ligne est une famille pour écrire le point (5, 4) : (1, 0) seul, puis (1, 0), (0, 1), (1, 1), puis (1, 0), (0, 1).",
+   "Les colonnes disent si le point s’écrit et si c’est d’une seule façon.",
+   "Seule la dernière ligne a deux ✓ en vert."
+  ],
+  "a_voir": "Il y a deux façons d’échouer, une par moitié, et une seule famille réussit les deux."
+ },
+ {
+  "code": "58-169",
+  "a_dire": "Dans l’espace, la liste e₁, e₂, e₃ et la liste (3, 2, 1), (3, 2, 0), (1, 1, 1) sont deux bases, avec trois vecteurs chacune.",
+  "legende_titre": "Deux bases de l’espace, trois vecteurs chacune",
+  "lecture": [
+   "À gauche, les trois flèches bleues sont e₁, e₂, e₃, dessinées en 3 dimensions.",
+   "À droite, les trois flèches violettes sont (3, 2, 1), (3, 2, 0), (1, 1, 1).",
+   "Sous chaque dessin, une légende compte 3 vecteurs."
+  ],
+  "a_voir": "Deux listes différentes, trois flèches dans chacune."
+ },
+ {
+  "code": "58-170",
+  "a_dire": "Le même nombre 3 + √2 a pour coordonnées 3 et 1 dans la base (1, √2), et 2 et 1 dans la base (1 + √2, 1 − √2).",
+  "legende_titre": "Un nombre, deux bases, deux couples de nombres",
+  "lecture": [
+   "Le cadre bleu du haut est le nombre 3 + √2, le même des deux côtés.",
+   "À gauche, les cadres orange 3 et 1 sont ses coordonnées dans la base 1, √2.",
+   "À droite, les cadres orange 2 et 1 sont ses coordonnées dans la base 1 + √2, 1 − √2.",
+   "Les textes gris sous chaque cadre nomment le vecteur de base associé."
+  ],
+  "a_voir": "Le nombre ne change pas, les coordonnées changent avec la base."
+ },
+ {
+  "code": "58-171",
+  "a_dire": "Un espace a plusieurs bases ; dans les exemples elles ont le même nombre de vecteurs, et la question est de savoir si c’est toujours le cas.",
+  "legende_titre": "Même nombre de vecteurs dans toutes les bases ?",
+  "lecture": [
+   "Chaque petit carré est un vecteur d’une base : bleu pour une base, violet pour une autre base.",
+   "La ligne du haut montre deux bases de ℝ³, trois carrés chacune.",
+   "La ligne du bas montre deux bases de ℚ(√2), deux carrés chacune.",
+   "La question orange du bas demande si c’est toujours le même nombre."
+  ],
+  "a_voir": "Les nombres sont égaux dans les deux exemples, mais ce n’est qu’une question."
+ },
+ {
+  "code": "58-172",
+  "a_dire": "Si n vecteurs engendrent l’espace, chaque vecteur indépendant prend la place d’un générateur : il ne peut donc pas y avoir plus de n vecteurs indépendants.",
+  "legende_titre": "Chaque indépendant prend une place de générateur",
+  "lecture": [
+   "Les deux cadres bleus du haut sont les deux générateurs (1, 0) et (0, 1) du plan.",
+   "Les cadres orange (3, 1) et (1, 2) prennent chacun une place, flèche vers le haut.",
+   "Le cadre rouge pointillé (−1, 3) n’a plus de place.",
+   "Le cadre vert du bas conclut m ≤ n."
+  ],
+  "a_voir": "Il y a deux places et le troisième vecteur reste dehors."
+ },
+ {
+  "code": "58-173",
+  "a_dire": "Avec plus d’inconnues que d’équations et des seconds membres nuls, un système a une solution non nulle ; c’est le lien avec trois vecteurs du plan.",
+  "legende_titre": "Deux équations, trois inconnues",
+  "lecture": [
+   "Les deux cadres bleus sont les deux équations, dont le second membre est 0.",
+   "Les lignes vertes sous chaque cadre vérifient la solution dans l’équation.",
+   "La flèche orange dit qu’il y a plus d’inconnues que d’équations.",
+   "Le cadre vert du bas donne la solution (−1, 2, −1), qui n’est pas nulle."
+  ],
+  "a_voir": "Trois inconnues pour deux équations : une solution non nulle apparaît et se vérifie."
+ },
+ {
+  "code": "58-174",
+  "a_dire": "Pour échanger w₁ contre u₁, on écrit u₁ avec les générateurs ; si le nombre devant w₁ n’est pas nul, on remplace w₁ par u₁.",
+  "legende_titre": "Premier échange",
+  "lecture": [
+   "Le cadre bleu est le générateur w₁ = (1, 0), le cadre gris est w₂ = (0, 1).",
+   "Le cadre orange écrit u₁ = (3, 1) = 3 w₁ + 1 w₂ : le nombre devant w₁ est 3, non nul (texte vert).",
+   "La flèche verte est l’échange.",
+   "Les deux cadres du bas sont la nouvelle famille : u₁ orange, w₂ gris."
+  ],
+  "a_voir": "w₁ disparaît de la liste, u₁ prend sa place, w₂ reste."
+ },
+ {
+  "code": "58-175",
+  "a_dire": "Après l’échange, la famille (u₁, w₂, …) engendre encore V, car w₁ s’écrit avec u₁ et les autres générateurs.",
+  "legende_titre": "Rien n’est perdu en échangeant",
+  "lecture": [
+   "Le cadre bleu du haut est la famille de départ, qui engendre V.",
+   "Le cadre orange du milieu est l’étape qui porte le poids : (1, 0) = 1/3 de (3, 1) − 1/3 de (0, 1).",
+   "Le cadre vert du bas est la nouvelle famille, qui engendre encore V.",
+   "Le texte gris du bas dit que u₁ prend la place de w₁."
+  ],
+  "a_voir": "Le vecteur retiré se retrouve avec ceux qui restent."
+ },
+ {
+  "code": "58-176",
+  "a_dire": "Quand les k premiers sont déjà des u, on écrit le vecteur suivant avec la famille actuelle et on échange le w dont le nombre n’est pas nul.",
+  "legende_titre": "Échange suivant",
+  "lecture": [
+   "Le cadre orange du haut est u₁ = (3, 1), déjà placé ; le cadre bleu est w₂ = (0, 1), pas encore remplacé.",
+   "Le cadre violet écrit u₂ = (1, 2) = 1/3 de u₁ + 5/3 de w₂.",
+   "Le texte vert dit que le nombre 5/3 devant w₂ n’est pas nul.",
+   "La flèche verte mène au dessin du bas : u₁ et u₂, w₂ est remplacé."
+  ],
+  "a_voir": "Le nombre devant w₂ n’est pas nul, donc w₂ cède sa place à u₂."
+ },
+ {
+  "code": "58-177",
+  "a_dire": "Si m dépasse n, après n échanges le vecteur suivant s’écrit avec les précédents : il n’est pas indépendant, ce qui contredit l’hypothèse.",
+  "legende_titre": "Le vecteur de trop s’écrit avec les autres",
+  "lecture": [
+   "Les deux cadres orange u₁ et u₂ sont les n = 2 vecteurs déjà échangés : ils engendrent V.",
+   "Le cadre rouge pointillé u₃ = (−1, 3) est le vecteur de trop.",
+   "La flèche orange et le texte vert montrent qu’il s’écrit : (−1, 3) = −1 fois (3, 1) + 2 fois (1, 2).",
+   "Le cadre rouge du bas conclut : contradiction."
+  ],
+  "a_voir": "Le troisième vecteur est écrit avec les deux premiers, il ne peut pas être indépendant."
+ },
+ {
+  "code": "58-178",
+  "a_dire": "Dans le plan, deux échanges remplacent (1, 0) puis (0, 1) par (3, 1) puis (1, 2), et le troisième vecteur (−1, 3) s’écrit avec les deux premiers.",
+  "legende_titre": "L’échange de bout en bout dans le plan",
+  "lecture": [
+   "La première ligne est la famille de départ : e₁ en pointillé orange, car il va être remplacé, et e₂ en bleu.",
+   "La première flèche dit que u₁ remplace e₁, avec le coefficient 3. La deuxième dit que u₂ remplace e₂, avec le coefficient 5/3.",
+   "Après les deux échanges, il ne reste plus de générateur de départ : u₁ et u₂ sont en orange.",
+   "Le cadre violet en pointillé u₃ s’écrit −u₁ + 2u₂, en vert."
+  ],
+  "a_voir": "Les générateurs de départ disparaissent un par un, puis u₃ s’écrit avec u₁ et u₂."
+ },
+ {
+  "code": "58-179",
+  "a_dire": "Deux bases d’un même espace ont le même nombre de vecteurs : on peut les apparier un pour un.",
+  "legende_titre": "Deux bases, autant de vecteurs",
+  "lecture": [
+   "Les deux cadres bleus du haut sont la base (1, 0), (0, 1).",
+   "Les deux cadres violets du bas sont la base (3, 1), (1, 2).",
+   "Les flèches vertes à double pointe relient les vecteurs un pour un.",
+   "Le texte du bas compte 2 vecteurs et 2 vecteurs."
+  ],
+  "a_voir": "Chaque vecteur d’une base a un partenaire dans l’autre, sans reste."
+ },
+ {
+  "code": "58-180",
+  "a_dire": "On applique le lemme deux fois en échangeant les rôles : n ≤ m puis m ≤ n, donc m = n.",
+  "legende_titre": "Le lemme appliqué dans les deux sens",
+  "lecture": [
+   "Le cadre bleu du haut est la première base : elle engendre, et elle est indépendante, avec m = 2 vecteurs.",
+   "Le cadre violet du milieu est la seconde base, avec n = 2 vecteurs.",
+   "La flèche orange qui descend donne n ≤ m, celle qui monte donne m ≤ n.",
+   "Le cadre vert du bas conclut m = n."
+  ],
+  "a_voir": "Deux flèches en sens contraire donnent deux inégalités, d’où l’égalité."
+ }
+]

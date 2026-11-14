@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+u = 6.5; ox, oy = 10, 10
+P = lambda x, y: (ox + u * x, oy + u * y)
+for i in range(1, 8): line(ax, [P(i, 0), P(i, 5.6)], 'fixe', lw=0.25)
+for j in range(1, 6): line(ax, [P(0, j), P(7.6, j)], 'fixe', lw=0.25)
+arrow(ax, P(0, 0), P(7.9, 0), 'fixe'); arrow(ax, P(0, 0), P(0, 6.2), 'fixe')
+A, B, C = P(1, 1), P(7, 1), P(6, 5)
+poly(ax, [A, B, C], 'sujet')
+line(ax, [C, P(6, 1)], 'varie', lw=1.6, dash=True)
+line(ax, [(P(6, 1)[0] - 2.2, P(6, 1)[1]), (P(6, 1)[0] - 2.2, P(6, 1)[1] + 2.2), (P(6, 1)[0], P(6, 1)[1] + 2.2)], 'varie', lw=0.8)
+brace(ax, A[0], B[0], A[1] - 1.5, 'sujet', label='base 6')
+text(ax, P(6, 3)[0] - 2, P(6, 3)[1], r'$5-1=4$', 'varie', 's', ha='right')
+text(ax, A[0] - 3, A[1] + 3, 'A', 'sujet', weight='bold'); text(ax, B[0] + 2.5, B[1] + 2.5, 'B', 'sujet', weight='bold'); text(ax, C[0] + 2.8, C[1] + 1.5, 'C', 'sujet', weight='bold')
+text(ax, 66, 47, r'$\frac{1}{2}\times6\times4=12$', 'resultat', 'm')
+save(fig, '37-118')

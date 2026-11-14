@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+f = numberline(ax, 24, 64, 48, 0, 1, step=0.5, arrow_right=False)
+disc(ax, f(0.5), 48, 1.6, 'sujet')
+box(ax, 4, 60, 16, 8, 'sujet', label=r'$1/2$'); box(ax, 68, 60, 16, 8, 'sujet', label=r'$2/4$')
+arrow(ax, (20.5, 63.5), (f(0.5) - 1.5, 50.2), 'sujet'); arrow(ax, (67.5, 63.5), (f(0.5) + 1.5, 50.2), 'sujet')
+text(ax, 44, 57, 'même nombre', 'resultat', 's')
+arrow(ax, (12, 59.5), (12, 28), 'varie'); arrow(ax, (76, 59.5), (76, 28), 'varie')
+text(ax, 44, 34, 'on garde le numérateur', 'varie', 's')
+box(ax, 4, 17, 16, 10, 'limite', label=r'$1$'); box(ax, 68, 17, 16, 10, 'limite', label=r'$2$')
+text(ax, 44, 22, r'$1 \neq 2$', 'limite', 'l'); text(ax, 44, 14, 'règle mal définie', 'limite', 's')
+save(fig, '42-309')

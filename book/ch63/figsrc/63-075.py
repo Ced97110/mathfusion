@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 20, 61, 'sous-groupe', 'sujet', 's')
+text(ax, 70, 61, 'corps intermédiaire', 'autre', 's')
+box(ax, 2, 22, 36, 32, 'sujet', label=r'$H=\{1,\sigma\}$')
+box(ax, 50, 22, 36, 32, 'autre', label=r'$K=\mathbb{Q}(\sqrt{3})$')
+arrow(ax, (38.5, 44), (49.5, 44), 'varie')
+text(ax, 44, 49, r'$\mathrm{Inv}$', 'varie', 's')
+arrow(ax, (49.5, 32), (38.5, 32), 'varie')
+text(ax, 44, 27, r'$\mathrm{Gal}$', 'varie', 's')
+text(ax, 44, 13, r'$\sigma$ : $\sqrt{2}\mapsto-\sqrt{2}$', 'fixe', 's')
+text(ax, 44, 6, r'$E=\mathbb{Q}(\sqrt{2},\sqrt{3})$', 'fixe', 's')
+save(fig, '63-075')

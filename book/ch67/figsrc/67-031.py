@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(75)
+box(ax, 26, 63, 36, 9, 'fixe', label='corps fini')
+box(ax, 3, 30, 38, 20, 'autre', label='Chemin 1\nconstruit à la main\nle petit corps')
+box(ax, 47, 42, 38, 8, 'sujet', label='Judson : Lagrange')
+box(ax, 47, 30, 38, 8, 'sujet', label='+ 1er th. d’isomorphisme', size='s')
+box(ax, 14, 4, 60, 10, 'resultat', label=r'ordre $=p^n$, $p$ premier')
+arrow(ax, (34, 63), (22, 50.5), 'fixe')
+arrow(ax, (54, 63), (66, 50.5), 'fixe')
+arrow(ax, (22, 30), (32, 14.5), 'autre')
+arrow(ax, (66, 30), (56, 14.5), 'sujet')
+arrow(ax, (66, 42), (66, 38.5), 'sujet')
+save(fig, '67-031')

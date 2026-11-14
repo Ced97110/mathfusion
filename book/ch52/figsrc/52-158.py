@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(108)
+text(ax, 44, 104, r'$\eta$ = reste par 2, $I$ = 4ℤ', 'fixe', 's')
+box(ax, 6, 88, 76, 11, 'sujet', label='3 et 7 : même classe de 4', size='s')
+box(ax, 6, 70, 76, 11, 'varie', label=r'$7 - 3 = 4 \in I \subseteq \ker\,\eta$', size='s', weight='bold')
+box(ax, 6, 52, 76, 11, 'fixe', label=r"$\eta(7) - \eta(3) = 0'$", size='s')
+box(ax, 6, 34, 76, 11, 'resultat', label=r'$\eta(7) = \eta(3)$ : 1 = 1', size='s')
+for y in (88, 70, 52): arrow(ax, (44, y), (44, y - 7), 'fixe')
+box(ax, 6, 3, 76, 24, 'limite', fill=False, label="sans I ⊆ ker η (autre cas) :\nη = reste par 4, I = 2ℤ\n1 et 3 : même classe,\nimages 1 et 3", size='s')
+save(fig, '52-158')

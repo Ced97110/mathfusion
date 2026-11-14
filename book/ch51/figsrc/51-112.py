@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 56, 38, 16, 'sujet'); text(ax, 23, 66, r'$1 \neq 0$', 'sujet', 'm'); text(ax, 23, 60.5, 'pas un seul élément', 'sujet', 's')
+box(ax, 46, 56, 38, 16, 'sujet'); text(ax, 65, 66, 'tout non nul', 'sujet', 'm'); text(ax, 65, 60.5, 'a un inverse', 'sujet', 's')
+arrow(ax, (23, 55), (38, 44), 'sujet'); arrow(ax, (65, 55), (50, 44), 'sujet')
+box(ax, 24, 32, 40, 12, 'sujet', label='corps gauche', size='l')
+text(ax, 44, 27, 'ab et ba peuvent différer', 'sujet', 's')
+line(ax, [(6, 21), (82, 21)], 'fixe', lw=0.5)
+box(ax, 4, 3, 38, 14, 'varie', dash=True); text(ax, 23, 12.5, 'on ajoute la', 'varie', 's'); text(ax, 23, 7, 'commutativité', 'varie', 's')
+arrow(ax, (43, 10), (50, 10), 'varie')
+box(ax, 51, 3, 33, 14, 'autre', label='corps', size='m')
+save(fig, '51-112')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 36, 75, r'$\mathbb{Z}$', 'sujet', 'xl')
+text(ax, 52, 75, r'$[\sqrt{3}\,i]$', 'varie', 'xl')
+box(ax, 2, 46, 40, 14, 'sujet', label='on part des entiers', size='s')
+box(ax, 46, 46, 40, 14, 'varie', label=r'on ajoute $\sqrt{3}\times i$', size='s')
+arrow(ax, (24, 61), (35, 69), 'sujet')
+arrow(ax, (66, 61), (54, 69), 'varie')
+text(ax, 44, 36, 'attention à la lecture de √3 i', 'encre', 's')
+box(ax, 2, 6, 40, 20, 'resultat', label=r'$\sqrt{3}\times i$' + '\ncarré : −3', size='s')
+box(ax, 46, 6, 40, 20, 'limite', label=r'pas $\sqrt{3i}$', size='s')
+save(fig, '56-051')

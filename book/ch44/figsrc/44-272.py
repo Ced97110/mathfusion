@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 72, r'$\mathbb{Z}$ : deux opérations', 'sujet', 'l', weight='bold')
+text(ax, 44, 64, r'addition : groupe abélien', 'resultat', 'm')
+f = numberline(ax, 12, 76, 46, -4, 4, 1, role='fixe', arrow_right=False)
+disc(ax, f(3), 46, 2.0, 'sujet'); disc(ax, f(-3), 46, 2.0, 'varie')
+arrow(ax, (f(3), 49), (f(-3), 49), 'resultat', curve=0.5, both=True)
+text(ax, 44, 57, 'opposé', 'resultat', 's')
+text(ax, 44, 33, r'multiplication : monoïde', 'limite', 'm')
+box(ax, 14, 8, 26, 12, 'sujet', label=r'$3 \times ? = 1$', size='m')
+text(ax, 61, 14, 'aucun entier\nne convient', 'limite', 's')
+save(fig, '44-272')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 86, 'Frobenius, Wedderburn :', 'encre', 's')
+text(ax, 44, 81, 'classer les algèbres à division', 'encre', 's')
+box(ax, 4, 62, 80, 14, 'sujet', label=r'$\mathbb{H}$ : tout non nul a un inverse', size='m')
+arrow(ax, (20, 61), (20, 49), 'varie'); text(ax, 24, 55, r'étendre les scalaires : $\mathbb{C}\otimes$', 'varie', 's', ha='left')
+box(ax, 4, 32, 80, 16, 'autre', label=r'$\mathbb{C}\otimes\mathbb{H}$ : mêmes base et table', size='m')
+arrow(ax, (20, 31), (20, 19), 'resultat'); text(ax, 24, 25, 'on trouve', 'resultat', 's', ha='left')
+box(ax, 4, 2, 80, 16, 'resultat', label=r'$M_2(\mathbb{C})$ : des matrices', size='m')
+save(fig, '77-145')

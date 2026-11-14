@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(108)
+box(ax, 2, 94, 84, 11, 'sujet', label=r'$\cos(A+B)=\cos A\cos B-\sin A\sin B$', size='s')
+arrow(ax, (44, 93), (44, 84), 'varie')
+text(ax, 48, 88.5, 'B = −A', 'varie', 'm', ha='left')
+box(ax, 2, 73, 84, 11, 'fixe', label=r'$\cos 0°=\cos^2A+\sin^2A$', size='s')
+arrow(ax, (44, 72), (44, 63), 'varie')
+text(ax, 48, 67.5, r'$\cos 0°=1$', 'varie', 'm', ha='left')
+box(ax, 2, 52, 84, 11, 'resultat', label=r'$\cos^2A+\sin^2A=1$', size='s')
+poly(ax, [(30, 30), (54, 30), (30, 48)], 'sujet')
+text(ax, 42, 26.5, '0,8', 'sujet', 's'); text(ax, 26.5, 39, '0,6', 'sujet', 's')
+text(ax, 45.5, 41, '1', 'sujet', 's')
+w = 84.0; x0 = 2
+box(ax, x0, 5, 0.64 * w, 9, 'sujet', label='0,8² = 0,64', size='s')
+box(ax, x0 + 0.64 * w, 5, 0.36 * w, 9, 'autre', label='0,6² = 0,36', size='s')
+brace(ax, x0, x0 + w, 15, 'resultat', label='somme = 1', down=False)
+save(fig, '34-151')

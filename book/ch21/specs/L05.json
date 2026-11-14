@@ -1,0 +1,181 @@
+[
+ {
+  "code": "21-065",
+  "a_dire": "Diviser par R/S, c'est multiplier par S/R : on multiplie les deux côtés par l'inverse, ce qui isole le nombre cherché.",
+  "legende_titre": "Isoler le nombre cherché",
+  "lecture": [
+   "Le cadre bleu est la question : par quel nombre multiplier 5 sur 7 pour obtenir 2 sur 3.",
+   "Les flèches orange sont l'étape : multiplier les deux côtés par 7 sur 5.",
+   "Le cadre gris à gauche vaut 1 : le nombre cherché reste seul.",
+   "Le cadre vert à droite est l'arrivée."
+  ],
+  "a_voir": "Le produit des deux inverses vaut 1, donc le nombre cherché reste seul."
+ },
+ {
+  "code": "21-066",
+  "a_dire": "Un facteur irréductible est un facteur qu'on ne peut plus décomposer, pour les nombres comme pour les polynômes.",
+  "legende_titre": "Des facteurs qui s'arrêtent là",
+  "lecture": [
+   "À gauche, 12 est écrit 2 fois 2 fois 3 : trois cadres bleus.",
+   "À droite, x au carré moins 1 est écrit (x plus 1) fois (x moins 1).",
+   "Chaque accolade désigne des facteurs qui ne se décomposent plus."
+  ],
+  "a_voir": "Dans les deux cas, l'objet est un produit de facteurs qui s'arrêtent là."
+ },
+ {
+  "code": "21-067",
+  "a_dire": "Le PPCM se trouve en trois étapes : factoriser, garder chaque facteur avec son plus grand nombre de fois, multiplier.",
+  "legende_titre": "Trois étapes pour 6 et 4",
+  "lecture": [
+   "La première colonne factorise 6 en 2 et 3, et 4 en 2 et 2.",
+   "La deuxième colonne garde deux fois 2 et une fois 3.",
+   "La troisième colonne multiplie : 2 fois 2 fois 3 vaut 12, en vert."
+  ],
+  "a_voir": "Les facteurs gardés se multiplient pour donner 12."
+ },
+ {
+  "code": "21-068",
+  "a_dire": "Chaque dénominateur doit diviser le PPCM, et le PPCM est le produit des facteurs pris avec leur plus grand exposant.",
+  "legende_titre": "Chaque nombre entre dans 12",
+  "lecture": [
+   "La rangée du haut montre 12 : les deux cadres bleus et un cadre orange.",
+   "Les cadres bleus de gauche sont 6, le cadre orange est le facteur 2 en plus : 12 vaut 6 fois 2.",
+   "La rangée du bas montre 4 en violet et le facteur 3 en orange : 12 vaut 4 fois 3."
+  ],
+  "a_voir": "6 et 4 entrent tous les deux dans 12, avec un facteur en plus."
+ },
+ {
+  "code": "21-069",
+  "a_dire": "Pour le PPCM, on compte chaque facteur dans chaque dénominateur et on garde le plus grand nombre de fois.",
+  "legende_titre": "D'où viennent les facteurs du PPCM",
+  "lecture": [
+   "La première rangée est D1 : deux fois x moins 1.",
+   "La deuxième rangée est D2 : une fois x moins 1 et une fois x plus 3.",
+   "La rangée du PPCM garde deux x moins 1, pris dans D1, et x plus 3, pris dans D2."
+  ],
+  "a_voir": "Chaque facteur du PPCM vient du dénominateur qui en a le plus."
+ },
+ {
+  "code": "21-070",
+  "a_dire": "D1 contient deux fois x moins 1 ; D2 contient une fois x moins 1 et une fois x plus 3.",
+  "legende_titre": "Deux dénominateurs à comparer",
+  "lecture": [
+   "À gauche, D1 est fait de deux cadres bleus x moins 1.",
+   "À droite, D2 est fait d'un cadre bleu x moins 1 et d'un cadre violet x plus 3.",
+   "Les accolades donnent le nombre de fois de chaque facteur."
+  ],
+  "a_voir": "Le facteur x moins 1 a l'exposant 2 dans D1 et l'exposant 1 dans D2."
+ },
+ {
+  "code": "21-071",
+  "a_dire": "Le PPCM de D1 et D2 est (x moins 1) au carré fois (x plus 3).",
+  "legende_titre": "Le PPCM de ces deux dénominateurs",
+  "lecture": [
+   "Le cadre vert du haut est le PPCM écrit en entier.",
+   "Les deux cadres bleus sont x moins 1 gardé deux fois, comme dans D1.",
+   "Le cadre violet est x plus 3, présent seulement dans D2.",
+   "Les flèches orange montent vers le PPCM."
+  ],
+  "a_voir": "Chaque facteur est pris autant de fois que le dénominateur qui en a le plus."
+ },
+ {
+  "code": "21-072",
+  "a_dire": "On vérifie que D1 et D2 divisent le PPCM : les quotients sont x plus 3 et x moins 1.",
+  "legende_titre": "Diviser le PPCM par chaque dénominateur",
+  "lecture": [
+   "La rangée du haut retire D1, en bleu : il reste x plus 3, en vert.",
+   "La rangée du bas retire D2, en violet : il reste x moins 1, en vert.",
+   "Les deux restes sont des polynômes."
+  ],
+  "a_voir": "D1 et D2 divisent le PPCM, car il reste un polynôme dans les deux cas."
+ },
+ {
+  "code": "21-073",
+  "a_dire": "(x moins 1)(x plus 3) est trop petit : D1 demande deux x moins 1 et il n'y en a qu'un.",
+  "legende_titre": "Un candidat qui manque un facteur",
+  "lecture": [
+   "La rangée du haut est D1 : un cadre bleu et un cadre rouge en pointillés.",
+   "Le cadre en pointillés est le second x moins 1 qui manque dans le candidat.",
+   "La rangée du bas est le candidat : x moins 1 et x plus 3."
+  ],
+  "a_voir": "Le candidat n'a qu'un x moins 1, donc D1 ne le divise pas."
+ },
+ {
+  "code": "21-074",
+  "a_dire": "(x moins 1) au cube fois (x plus 3) marche, mais il contient un facteur en trop.",
+  "legende_titre": "Marcher n'est pas être le plus petit",
+  "lecture": [
+   "La rangée du haut est le PPCM, avec une place vide.",
+   "La rangée du bas ajoute un cadre orange x moins 1 à cette place.",
+   "L'accolade nomme ce facteur en trop."
+  ],
+  "a_voir": "Le second choix marche, mais il est plus long à calculer."
+ },
+ {
+  "code": "21-075",
+  "a_dire": "Le PPCM est le plus petit des nombres communs qui marchent.",
+  "legende_titre": "Le plus petit qui marche",
+  "lecture": [
+   "Sur la droite graduée, les ronds verts 12, 24 et 36 marchent pour 4 et 6.",
+   "Le rond rouge 6 ne marche pas.",
+   "La flèche orange désigne 12, le plus petit des ronds verts."
+  ],
+  "a_voir": "Parmi ceux qui marchent, 12 est le plus petit."
+ },
+ {
+  "code": "21-076",
+  "a_dire": "On remplace chaque fraction par une fraction égale de dénominateur 12.",
+  "legende_titre": "Mêmes parts, dénominateur 12",
+  "lecture": [
+   "En haut, la barre de 1 sur 6 est égale à la barre de 2 sur 12.",
+   "En bas, la barre de 1 sur 4 est égale à la barre de 3 sur 12.",
+   "Les deux barres de droite ont 12 cases : le même dénominateur."
+  ],
+  "a_voir": "Les fractions changent d'écriture, pas de valeur."
+ },
+ {
+  "code": "21-077",
+  "a_dire": "Le facteur est le PPCM divisé par le dénominateur : 12 divisé par 6 donne 2.",
+  "legende_titre": "Combien de groupes de 6 dans 12",
+  "lecture": [
+   "Les douze cases sont deux groupes de 6, un bleu et un orange.",
+   "Le nombre de groupes, 2, est le facteur trouvé.",
+   "La ligne verte multiplie le haut et le bas par 2 et donne 2 sur 12."
+  ],
+  "a_voir": "12 contient 2 groupes de 6, donc on multiplie par 2."
+ },
+ {
+  "code": "21-078",
+  "a_dire": "On peut multiplier le haut et le bas par le même nombre b non nul sans changer la fraction.",
+  "legende_titre": "Haut et bas multipliés par le même nombre",
+  "lecture": [
+   "Le cadre bleu est 1 sur 6.",
+   "La flèche orange multiplie le haut et le bas par 2.",
+   "Le cadre vert est 2 sur 12, de même valeur.",
+   "La ligne du bas donne la formule avec P, Q et b."
+  ],
+  "a_voir": "La valeur reste la même quand haut et bas sont multipliés par b."
+ },
+ {
+  "code": "21-079",
+  "a_dire": "Additionner les hauts et les bas donne un résultat faux : la règle demande des dénominateurs identiques.",
+  "legende_titre": "Une règle qui échoue sans son hypothèse",
+  "lecture": [
+   "Sur la droite, le rond bleu est 1 sur 2.",
+   "Le rond rouge est 2 sur 5, placé avant 1 sur 2 : c'est faux.",
+   "Le rond vert est 5 sur 6, la vraie somme."
+  ],
+  "a_voir": "2 sur 5 est plus petit que 1 sur 2, alors qu'on a ajouté un nombre positif."
+ },
+ {
+  "code": "21-080",
+  "a_dire": "La méthode échoue si on change le dénominateur sans changer le numérateur.",
+  "legende_titre": "Changer le bas sans changer le haut",
+  "lecture": [
+   "La barre bleue du haut est 1 sur 6.",
+   "La barre verte du milieu est 2 sur 12 : le haut et le bas sont multipliés par 2, la valeur est la même.",
+   "La barre rouge du bas est 1 sur 12 : le bas est multiplié par 2 mais pas le haut, la valeur est deux fois plus petite."
+  ],
+  "a_voir": "Il faut écrire 2 sur 12, pas 1 sur 12."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 68, 'M non nul : égalité conservée', 'resultat', 's')
+box(ax, 4, 46, 22, 10, 'sujet', True, r'$A=B$')
+arrow(ax, (27, 51), (42, 51), 'varie')
+text(ax, 34.5, 56.5, r'$\times M$', 'varie', 's')
+box(ax, 44, 46, 40, 10, 'resultat', True, r'$A\times M=B\times M$', 's')
+text(ax, 44, 34, 'M nul : le faux devient vrai', 'limite', 's')
+box(ax, 4, 12, 22, 10, 'limite', True, r'$6=7$')
+arrow(ax, (27, 17), (42, 17), 'varie')
+text(ax, 34.5, 22.5, r'$\times 0$', 'varie', 's')
+box(ax, 44, 12, 22, 10, 'fixe', True, r'$0=0$')
+save(fig, '21-092')

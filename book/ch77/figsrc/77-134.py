@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 52, 28, 14, 'sujet', label=r'$e=\frac{1+ij}{2}$', size='m'); text(ax, 16, 47, r'$e\neq 0$', 'sujet', 's')
+text(ax, 36, 59, '×', 'encre', 'l')
+box(ax, 42, 52, 28, 14, 'autre', label=r"$e'=\frac{1-ij}{2}$", size='m'); text(ax, 56, 47, r"$e'\neq 0$", 'autre', 's')
+text(ax, 74, 59, '=', 'encre', 'l')
+box(ax, 78, 52, 8, 14, 'resultat', label='0', size='l')
+box(ax, 2, 18, 40, 11, 'sujet', label=r'$e^2=e$', size='m')
+box(ax, 46, 18, 40, 11, 'limite', label=r'$N(e)=0$ : pas d’inverse', size='s')
+save(fig, '77-134')

@@ -1,0 +1,249 @@
+[
+ {
+  "code": "77-129",
+  "a_dire": "Le signe ⊗ garde la base et la table ; seuls les coefficients passent des réels aux complexes.",
+  "legende_titre": "Ce qui change et ce qui reste",
+  "lecture": [
+   "Les cases grises sont la base, la table et la dimension : elles sont les mêmes à gauche et à droite.",
+   "La case orange est le seul écart : les coefficients sont réels à gauche, complexes à droite.",
+   "À droite, j joue le rôle de i, avec j·j = −1."
+  ],
+  "a_voir": "Une seule case orange diffère."
+ },
+ {
+  "code": "77-130",
+  "a_dire": "Pour 2 + i, la matrice, la trace 4 et la norme 5 sont les mêmes avec des coefficients réels ou complexes.",
+  "legende_titre": "Mêmes nombres des deux côtés",
+  "lecture": [
+   "Les cases orange donnent les coefficients 2 et 1, identiques à gauche et à droite.",
+   "La case grise montre la matrice, la même des deux côtés.",
+   "Les cases vertes donnent la trace 4 et la norme 5, aussi égales."
+  ],
+  "a_voir": "Chaque ligne porte un signe égal."
+ },
+ {
+  "code": "77-131",
+  "a_dire": "Un élément s'écrit z + wj : z et w sont des coefficients complexes, j est l'élément de base, distinct de i.",
+  "legende_titre": "Écrire un élément avec j",
+  "lecture": [
+   "Les deux cases orange sont les coefficients z = 1 + 2i et w = 3 − i.",
+   "La case bleue est l'élément de base j.",
+   "Seul w est multiplié par j."
+  ],
+  "a_voir": "j n'est pas le nombre i."
+ },
+ {
+  "code": "77-132",
+  "a_dire": "La norme z² + w² se calcule en additionnant les deux carrés, même avec des complexes.",
+  "legende_titre": "Additionner deux carrés",
+  "lecture": [
+   "Dans chaque colonne, la case bleue est z au carré et la case violette est w au carré.",
+   "La case verte est leur somme.",
+   "À gauche, z = 1 + i est complexe : (1 + i)² = 2i, et la somme est le complexe 1 + 2i.",
+   "À droite, z = 3 et w = 4 : la somme est 25."
+  ],
+  "a_voir": "La même formule z² + w² donne la norme, même quand z et w sont complexes."
+ },
+ {
+  "code": "77-133",
+  "a_dire": "Sur ℂ, z² + w² se factorise en (z + iw)(z − iw), donc la somme peut être nulle sans que z et w le soient.",
+  "legende_titre": "Une somme de carrés qui s'annule",
+  "lecture": [
+   "La case bleue est la somme de deux carrés ; les deux cases violettes sont ses facteurs.",
+   "Pour z = 1 et w = i, le premier facteur (orange) vaut 0.",
+   "La case verte montre que la somme est alors 0."
+  ],
+  "a_voir": "Un facteur nul rend tout le produit nul."
+ },
+ {
+  "code": "77-134",
+  "a_dire": "Les éléments e et e' ne sont pas nuls, mais leur produit vaut 0 ; e² = e et la norme de e est 0.",
+  "legende_titre": "Deux éléments non nuls, produit nul",
+  "lecture": [
+   "La case bleue est e et la case violette est e', chacun non nul.",
+   "La case verte à droite est leur produit : 0.",
+   "Les cases du bas donnent e² = e et la norme nulle de e, donc pas d'inverse."
+  ],
+  "a_voir": "Deux éléments non nuls ont un produit nul."
+ },
+ {
+  "code": "77-135",
+  "a_dire": "L'algèbre n'est pas un corps : elle se coupe en deux morceaux, les multiples de e et ceux de e', chacun comme ℂ.",
+  "legende_titre": "Une algèbre en deux morceaux",
+  "lecture": [
+   "La case bleue du haut est l'algèbre ; la mention rouge dit qu'elle n'est pas un corps.",
+   "Les deux flèches orange mènent aux multiples de e (bleu) et aux multiples de e' (violet), dont le produit ee' vaut 0.",
+   "Chaque case verte dit que le morceau se comporte comme ℂ : ze correspond à z, we' correspond à w.",
+   "Tout élément s'écrit ze + we'."
+  ],
+  "a_voir": "Deux morceaux séparés par ee' = 0, chacun comme ℂ."
+ },
+ {
+  "code": "77-136",
+  "a_dire": "Le polynôme λ² + 1 se factorise sur ℂ ; en remplaçant λ par j, on obtient deux facteurs non nuls de produit nul.",
+  "legende_titre": "Du polynôme au produit nul",
+  "lecture": [
+   "La case bleue est λ² + 1, sans facteur sur ℝ.",
+   "La case violette est la factorisation sur ℂ.",
+   "La case verte remplace λ par j : le produit vaut 0."
+  ],
+  "a_voir": "Trois étapes de gauche à droite."
+ },
+ {
+  "code": "77-137",
+  "a_dire": "Sur ℂ, le polynôme λ² + 1 a deux racines i et −i ; sur ℝ il n'en a aucune.",
+  "legende_titre": "Racines qui apparaissent",
+  "lecture": [
+   "À gauche, la courbe bleue reste au-dessus de la droite : elle ne la coupe jamais.",
+   "À droite, les deux points verts sont les racines i et −i.",
+   "La matrice est la même des deux côtés."
+  ],
+  "a_voir": "La courbe ne touche pas l'axe sur ℝ."
+ },
+ {
+  "code": "77-138",
+  "a_dire": "Chaque élément de l'algèbre devient une matrice, et somme et produit deviennent somme et produit de matrices.",
+  "legende_titre": "Des éléments aux matrices",
+  "lecture": [
+   "Les cases bleues sont les éléments a + bi et a + b√2.",
+   "Les flèches orange ρ mènent aux cases vertes, qui sont leurs matrices.",
+   "Les deux lignes orange du bas disent que somme et produit sont conservés."
+  ],
+  "a_voir": "Chaque élément a sa matrice."
+ },
+ {
+  "code": "77-139",
+  "a_dire": "Pour 1 + i, les définitions par conjugué et par matrice donnent la même trace 2 et la même norme 2.",
+  "legende_titre": "Deux chemins, mêmes nombres",
+  "lecture": [
+   "La case bleue du haut est 1 + i.",
+   "À gauche, le conjugué donne somme 2 et produit 2 ; à droite, la matrice donne trace 2 et déterminant 2.",
+   "La case verte du bas réunit les deux résultats."
+  ],
+  "a_voir": "Les deux chemins arrivent aux mêmes nombres."
+ },
+ {
+  "code": "77-140",
+  "a_dire": "La forme trace prend deux éléments x et y et donne le nombre T(xy).",
+  "legende_titre": "Deux entrées, un nombre",
+  "lecture": [
+   "La case bleue est x et la case violette est y.",
+   "La case orange est leur produit xy.",
+   "La case verte est la trace de ce produit : 2."
+  ],
+  "a_voir": "Deux éléments entrent, un nombre sort."
+ },
+ {
+  "code": "77-141",
+  "a_dire": "La forme trace donne un tableau de nombres, dont le déterminant 8 mesure le discriminant.",
+  "legende_titre": "Le tableau de la trace",
+  "lecture": [
+   "Les lignes et colonnes sont repérées par 1 et √2.",
+   "Chaque case donne T(xy) : 2, 0, 0 et 4.",
+   "La case orange en bas donne le déterminant du tableau : 8."
+  ],
+  "a_voir": "Le tableau 2, 0, 0, 4 a pour déterminant 8."
+ },
+ {
+  "code": "77-142",
+  "a_dire": "La norme z·z̄ est le modèle d'une forme hermitienne : on multiplie par le conjugué.",
+  "legende_titre": "La norme comme forme hermitienne",
+  "lecture": [
+   "Le rectangle bleu du haut nomme la forme hermitienne x · ȳ ; avec x = y = z, elle donne le rectangle vert z z̄ = N(z).",
+   "La flèche bleue est z = 3 + 4i ; la flèche violette est son conjugué 3 − 4i.",
+   "Le produit z z̄ vaut 25 pour 3 + 4i, et 5 pour 1 + 2i.",
+   "La règle utilise le conjugué du second élément."
+  ],
+  "a_voir": "La norme z z̄ est la forme hermitienne la plus simple ; z et son conjugué sont symétriques par rapport à l'axe réel."
+ },
+ {
+  "code": "77-143",
+  "a_dire": "Le problème de Hurwitz demande pour quels nombres de carrés l'identité N(xy) = N(x)N(y) existe.",
+  "legende_titre": "Combien de carrés ?",
+  "lecture": [
+   "Le rectangle orange du haut pose la question : pour combien de carrés existe l'identité N(xy) = N(x)N(y) ?",
+   "Les carrés bleus comptent les carrés : 1 carré avec 2² · 3² = 6², 2 carrés avec 5 · 25 = 5² + 10², en vert.",
+   "Les trois carrés orange en pointillés, avec un point d'interrogation, sont les nombres de carrés 3, 4 et la suite : on ne sait pas encore."
+  ],
+  "a_voir": "Pour 1 et 2 carrés, l'identité existe ; pour la suite, on demande."
+ },
+ {
+  "code": "77-144",
+  "a_dire": "Avec 3 carrés, l'identité est impossible ; seuls 1, 2, 4 et 8 conviennent.",
+  "legende_titre": "Trois carrés pour 55",
+  "lecture": [
+   "En haut, 5 et 11 sont écrits comme sommes de trois carrés ; leur produit est 55.",
+   "Le rectangle gris donne les carrés disponibles.",
+   "Le rectangle rouge dit qu'aucune somme de trois ne donne 55.",
+   "En bas, les nombres de carrés possibles : 1, 2, 4 et 8 en vert ; 3 en rouge."
+  ],
+  "a_voir": "55 n'est pas une somme de trois de ces carrés : 3 est exclu, 1, 2, 4 et 8 restent."
+ },
+ {
+  "code": "77-145",
+  "a_dire": "Frobenius et Wedderburn classent les algèbres à division en étendant les scalaires ; ℂ ⊗ ℍ devient M₂(ℂ).",
+  "legende_titre": "Étendre pour classer",
+  "lecture": [
+   "La case bleue est ℍ, où tout élément non nul a un inverse : une algèbre à division.",
+   "La flèche orange étend les scalaires : on passe à ℂ ⊗ ℍ, en gardant base et table.",
+   "La case violette est ℂ ⊗ ℍ.",
+   "La flèche verte mène à la case verte, M₂(ℂ), des matrices."
+  ],
+  "a_voir": "Frobenius et Wedderburn classent les algèbres à division en étendant les scalaires : trois étapes de haut en bas."
+ },
+ {
+  "code": "77-146",
+  "a_dire": "ℂ ⊗ ℍ et M₂(ℂ) ont la dimension 4 et l'application ne donne la matrice nulle que si a = b = c = d = 0.",
+  "legende_titre": "Dimension 4 des deux côtés",
+  "lecture": [
+   "À gauche, les quatre cases bleues sont les quatre termes a·1, b·i, c·j, d·k : dimension 4.",
+   "À droite, le tableau violet est la matrice 2 × 2 qui leur correspond, à quatre cases : dimension 4.",
+   "La case verte du bas donne la condition de la matrice nulle."
+  ],
+  "a_voir": "Quatre coefficients, quatre cases ; la matrice n'est nulle que si a = b = c = d = 0."
+ },
+ {
+  "code": "77-147",
+  "a_dire": "La norme d'un entier du corps vaut ±1 quand son inverse est entier ; sinon l'inverse a des fractions.",
+  "legende_titre": "Norme et inverse entier",
+  "lecture": [
+   "La carte verte est 3 + 2√2 : norme 1, inverse entier.",
+   "La carte rouge est 1 + 3√2 : norme −17, inverse avec des fractions.",
+   "Les deux cartes comparent la norme."
+  ],
+  "a_voir": "Norme 1 : inverse entier ; norme −17 : fractions."
+ },
+ {
+  "code": "77-148",
+  "a_dire": "Le chapitre est une chaîne : groupe vers permutations, algèbre vers matrices, matrice vers trace et norme, de tour en tour.",
+  "legende_titre": "Une chaîne de trois liens",
+  "lecture": [
+   "Chaque ligne bleue est un lien : de gauche à droite, un objet devient un autre.",
+   "La ligne du bas suit la norme dans la tour : u, puis 2√2, puis −8.",
+   "Les flèches orange passent d'un étage au suivant."
+  ],
+  "a_voir": "Trois liens puis la norme qui descend."
+ },
+ {
+  "code": "77-149",
+  "a_dire": "Les coefficients du milieu, −4 et 16, existent aussi : ils viennent de produits deux à deux et trois à trois.",
+  "legende_titre": "Les coefficients du milieu",
+  "lecture": [
+   "La ligne montre les termes du polynôme.",
+   "Les cases vertes sont la trace et la norme ; les cases orange sont −4 et 16.",
+   "Les lignes du bas disent d'où viennent −4 et 16."
+  ],
+  "a_voir": "Deux coefficients ne sont ni la trace ni la norme."
+ },
+ {
+  "code": "77-150",
+  "a_dire": "Une valeur propre est un nombre λ tel que la matrice multiplie une paire non nulle par λ.",
+  "legende_titre": "Chercher le nombre λ",
+  "lecture": [
+   "La flèche bleue v subit un quart de tour (flèche orange) : elle n'est pas sur sa droite.",
+   "La case bleue écrit la condition (−y, x) = λ(x, y), qui donne λ² = −1 (orange).",
+   "La case rouge dit aucune valeur réelle ; la case verte donne λ = i sur ℂ."
+  ],
+  "a_voir": "Sur ℝ aucun nombre ne convient ; sur ℂ, i convient."
+ }
+]

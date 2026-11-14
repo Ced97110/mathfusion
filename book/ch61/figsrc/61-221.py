@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(56)
+box(ax,2,8,38,40,'sujet'); text(ax,21,42,r'$\mathbb{Q}(u,\ v)$','sujet','l')
+box(ax,7,18,12,12,'sujet',label=r'$u$'); box(ax,23,18,12,12,'varie',label=r'$v$')
+text(ax,21,12,'2 générateurs','encre','s')
+box(ax,56,8,30,40,'resultat'); text(ax,71,42,r'$\mathbb{Q}(w)$','resultat','l')
+box(ax,62,18,18,12,'resultat',label=r'$w$')
+text(ax,71,12,'1 générateur','encre','s')
+text(ax,48,32,'=','encre','xl'); text(ax,48,24,'souvent','varie','s')
+save(fig,'61-221')

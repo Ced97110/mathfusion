@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 4, 46, 16, 11, 'sujet', label=r'$10$'); text(ax, 28, 51.5, r'$-$', 'varie', 'l'); box(ax, 36, 46, 16, 11, 'sujet', label=r'$3$')
+text(ax, 70, 51.5, r'$= 7$', 'resultat', 'l')
+text(ax, 44, 63, 'une soustraction', 'fixe', 's')
+box(ax, 4, 14, 16, 11, 'sujet', label=r'$10$'); text(ax, 28, 19.5, '+', 'varie', 'l'); box(ax, 36, 14, 24, 11, 'varie', label=r'$-3$')
+text(ax, 74, 19.5, r'$= 7$', 'resultat', 'l')
+line(ax, [(28, 10), (28, 16)], 'varie', dash=True); line(ax, [(28, 23), (28, 28)], 'varie', dash=True)
+text(ax, 44, 33, 'deux termes : 10 et $-3$', 'varie', 's')
+arrow(ax, (44, 41), (44, 37), 'fixe')
+save(fig, '15-025')

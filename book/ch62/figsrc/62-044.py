@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 54, r'$(x-1)(x-1)(x+2)$', 'encre', 'l')
+box(ax, 2, 26, 24, 12, 'sujet', label=r'$x-1$')
+box(ax, 30, 26, 24, 12, 'sujet', label=r'$x-1$')
+box(ax, 60, 26, 24, 12, 'autre', label=r'$x+2$')
+text(ax, 28, 44, r'racine $1$', 'sujet', 's')
+text(ax, 72, 44, r'racine $-2$', 'autre', 's')
+brace(ax, 2, 54, 24, 'sujet', label=r'$k_1=2$', down=True)
+brace(ax, 60, 84, 24, 'autre', label=r'$k_2=1$', down=True)
+save(fig, '62-044')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def B(ax, x, y, w, h, role, label, size='m', weight='normal'): return box(ax, x, y, w, h, role, label=label, size=size, weight=weight)
+fig, ax = canvas(58)
+B(ax, 4, 42, 24, 12, 'sujet', r'$\frac{4}{5}$', 'l'); B(ax, 60, 42, 24, 12, 'autre', r'$\frac{5}{4}$', 'l')
+arrow(ax, (28, 48), (60, 48), 'varie', both=True); text(ax, 44, 51.5, 'inverse', 'varie', 's')
+text(ax, 44, 36, r'$\frac{4}{5}\times\frac{5}{4}=1$', 'resultat', 'm')
+line(ax, [(4, 29), (84, 29)], 'fixe', dash=True)
+B(ax, 4, 14, 24, 12, 'sujet', 'cos 0,8192', 's'); B(ax, 60, 14, 24, 12, 'autre', 'sec 1,2208', 's')
+arrow(ax, (28, 20), (60, 20), 'varie', both=True); text(ax, 44, 23.5, 'inverse', 'varie', 's')
+text(ax, 44, 8, '0,8192 × 1,2208 ≈ 1', 'resultat', 'm')
+save(fig, '31-041')

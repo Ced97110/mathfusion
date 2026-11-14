@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+u = 8.0; X, Y = 6, 8
+R = lambda x, y, w, h, r, lab=None, d=False, sz='m': box(ax, X + x * u, Y + y * u, w * u, h * u, r, label=lab, r=0.3, dash=d, fill=not d, size=sz)
+R(0, 0, 5, 2, 'sujet', 'P')
+R(0, 2, 2, 3, 'varie', 'Q')
+R(2, 2, 3, 3, 'fixe', r'$b^2$', d=True)
+text(ax, X - 1.2, Y + 2.5 * u, r'$a$', 'encre', 'm', ha='right')
+text(ax, X + 2.5 * u, Y - 3, r'$a$ = 5', 'encre', 's')
+text(ax, 66, 50, 'carré de côté 5', 'fixe', 's')
+text(ax, 66, 42, 'aire 25 − 9 = 16', 'resultat', 'm', weight='bold')
+text(ax, 66, 32, 'P : 5 × 2 = 10', 'sujet', 'm')
+text(ax, 66, 24, 'Q : 2 × 3 = 6', 'varie', 'm')
+text(ax, 66, 14, '10 + 6 = 16', 'resultat', 'm')
+save(fig, '18-052')

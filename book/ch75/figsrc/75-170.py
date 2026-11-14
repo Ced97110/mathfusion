@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+ox, oy, u = 8, 8, 7
+P = lambda x, y: (ox + x*u, oy + y*u)
+poly(ax, [P(0, 0), P(1, 2), P(4, 3), P(3, 1)], 'varie')
+arrow(ax, P(0, 0), P(1, 2), 'sujet', lw=1.3); arrow(ax, P(0, 0), P(3, 1), 'autre', lw=1.3)
+text(ax, P(1, 2)[0]-2, P(1, 2)[1]+2, '$x$', 'sujet', 'm')
+text(ax, P(3, 1)[0]+3, P(3, 1)[1]-3, '$y$', 'autre', 'm')
+text(ax, P(2, 1.7)[0]+1, P(2, 1.7)[1], 'aire −5', 'varie', 's')
+box(ax, 48, 32, 38, 20, 'sujet')
+text(ax, 67, 47, 'partie réelle', 'sujet', 's', weight='bold')
+text(ax, 67, 41, 'produit scalaire', 'sujet', 's')
+text(ax, 67, 35, r'$1\times3+2\times1=5$', 'sujet', 's')
+box(ax, 48, 6, 38, 20, 'varie')
+text(ax, 67, 21, 'partie imaginaire', 'varie', 's', weight='bold')
+text(ax, 67, 15, 'aire orientée', 'varie', 's')
+text(ax, 67, 9, '5 = −(−5)', 'varie', 's')
+save(fig, '75-170')

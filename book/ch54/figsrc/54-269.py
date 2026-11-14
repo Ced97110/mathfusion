@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 70, 'Chaque corps repose sur le précédent', 'fixe', 's')
+box(ax, 4, 14, 18, 14, 'fixe', label='ℤ', size='l')
+box(ax, 33, 26, 18, 14, 'sujet', label='ℚ', size='l')
+box(ax, 62, 38, 22, 14, 'autre', label=r'ℚ[$\sqrt{2}$]', size='m')
+arrow(ax, (22, 24), (33, 31), 'varie')
+arrow(ax, (51, 36), (62, 43), 'varie')
+text(ax, 21, 36, 'fractions', 'varie', 's')
+text(ax, 59, 54, r'$a+b\sqrt{2}$', 'varie', 's')
+text(ax, 42, 20, '1re brique', 'sujet', 's', weight='bold')
+text(ax, 73, 32, '2e brique', 'autre', 's')
+save(fig, '54-269')

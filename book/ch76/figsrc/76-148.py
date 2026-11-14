@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,3,40,18,16,'sujet',label='2  1\n1  3',size='m')
+text(ax,26,48,r'$\times$','encre','l')
+text(ax,33,48,r'$\frac{1}{5}$','encre','l')
+box(ax,38,40,20,16,'sujet',label='3  −1\n−1  2',size='m')
+text(ax,63,48,'=','encre','l')
+box(ax,68,40,17,16,'resultat',label='1  0\n0  1',size='m')
+text(ax,12,60,r'$\det=5$','resultat','m'); text(ax,60,60,'matrice unité','resultat','s')
+box(ax,3,8,18,16,'limite',label='2  4\n1  2',size='m')
+text(ax,12,28,r'$\det=0$','limite','m')
+arrow(ax,(23,16),(40,16),'limite'); box(ax,41,9,44,14,'limite',label='aucun inverse',size='m')
+save(fig,'76-148')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 60, 'le neutre ne change rien', 'fixe', 'm')
+def paire(x, g, d):
+    box(ax, x, 36, 10, 10, 'fixe' if g == '1' else 'sujet', label=f'${g}$', size='l')
+    box(ax, x + 11, 36, 10, 10, 'fixe' if d == '1' else 'sujet', label=f'${d}$', size='l')
+paire(3, '1', 'a')
+box(ax, 37, 36, 10, 10, 'sujet', label=r'$a$', size='l')
+paire(60, 'a', '1')
+text(ax, 31, 41, '$=$', 'encre', 'l')
+text(ax, 54, 41, '$=$', 'encre', 'l')
+text(ax, 13.5, 30, '$1a$', 'fixe', 's')
+text(ax, 42, 30, '$a$', 'sujet', 's')
+text(ax, 70.5, 30, '$a1$', 'fixe', 's')
+text(ax, 44, 18, r'$b$ défait $a$ : $ab = 1$', 'resultat', 'm')
+text(ax, 44, 8, 'il faut donc le neutre avant', 'varie', 's')
+save(fig, '44-102')

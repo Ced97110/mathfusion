@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+# left: N(4, 2) = 3, an integer ; right: N_{E/F}(1+i) = 2, an element of the small field F
+text(ax, 21, 68, 'deux nombres', 'sujet', 's')
+box(ax, 4, 46, 34, 14, 'sujet', label=r'$N(4,\,2)$')
+arrow(ax, (21, 46), (21, 36), 'varie')
+box(ax, 11, 22, 20, 12, 'resultat', label='3')
+text(ax, 21, 14, 'un entier', 'resultat', 's')
+line(ax, [(44, 8), (44, 70)], 'fixe', dash=True)
+text(ax, 66, 68, r'indices $E$ et $F$', 'autre', 's')
+box(ax, 49, 46, 34, 14, 'autre', label=r'$N_{E/F}(1+i)$')
+arrow(ax, (66, 46), (66, 36), 'varie')
+box(ax, 56, 22, 20, 12, 'resultat', label='2')
+text(ax, 66, 14, 'un élément de $F$', 'resultat', 's')
+save(fig, '67-064')

@@ -1,0 +1,183 @@
+[
+ {
+  "code": "75-017",
+  "a_dire": "Quand on tourne de la première flèche vers la seconde dans le sens inverse des aiguilles, ad − bc est positif ; dans l'autre sens, il est négatif.",
+  "legende_titre": "Le sens de rotation fixe le signe",
+  "lecture": [
+   "À gauche, la flèche bleue (a, b) est la première et la flèche violette (c, d) est la seconde. La flèche orange tourne de la bleue vers la violette, dans le sens inverse des aiguilles.",
+   "À droite, les mêmes flèches sont prises dans l'autre ordre : la flèche orange tourne dans le sens des aiguilles.",
+   "Sous chaque dessin, le nombre à calculer et son signe sont écrits."
+  ],
+  "a_voir": "Le parallélogramme est le même, mais le sens de rotation orange change et le signe change avec lui."
+ },
+ {
+  "code": "75-018",
+  "a_dire": "Échanger e et f ne change pas le carré, mais fait passer l'aire orientée de +1 à −1.",
+  "legende_titre": "Même carré, ordre inversé",
+  "lecture": [
+   "Le carré gris est le même à gauche et à droite.",
+   "À gauche, la flèche bleue e est prise en premier : la flèche orange tourne de e vers f et l'aire orientée vaut +1.",
+   "À droite, la flèche violette f est prise en premier : la flèche orange tourne dans l'autre sens et l'aire orientée vaut −1."
+  ],
+  "a_voir": "Seul l'ordre des deux flèches change, et c'est lui qui change le signe."
+ },
+ {
+  "code": "75-019",
+  "a_dire": "Une transformation qui garde l'aire orientée est celle où ad − bc = 1 ; échanger e et f garde l'aire ordinaire mais pas l'aire orientée.",
+  "legende_titre": "Garder l'aire ordinaire ne suffit pas",
+  "lecture": [
+   "À gauche, le carré de départ avec la flèche bleue e et la flèche violette f, tournées dans le sens inverse des aiguilles.",
+   "À droite, l'image : la flèche bleue e′ va vers le haut et la violette f′ vers la droite, tournées dans l'autre sens.",
+   "En vert, l'aire ordinaire reste 1. En rouge, l'aire orientée passe de 1 à −1 et ad − bc vaut 0 − 1, pas 1."
+  ],
+  "a_voir": "Le carré est identique, mais le sens de rotation est inversé : l'aire orientée n'est pas gardée."
+ },
+ {
+  "code": "75-020",
+  "a_dire": "L'aire orientée B(x, y) = x₁y₂ − x₂y₁ est une règle qui, à deux flèches, associe un nombre ; doubler une flèche double le résultat.",
+  "legende_titre": "Une règle qui rend un nombre",
+  "lecture": [
+   "En haut à gauche, la flèche bleue x et la flèche violette y forment un parallélogramme : le calcul donne 5.",
+   "En haut à droite, la flèche x est doublée : le calcul donne 10, le double de 5.",
+   "En bas, x et y forment un rectangle de côtés 2 et 3 : le calcul donne 6."
+  ],
+  "a_voir": "Chaque résultat vert est calculé avec la même règle : première coordonnée de x fois seconde de y, moins seconde de x fois première de y."
+ },
+ {
+  "code": "75-021",
+  "a_dire": "Le produit scalaire d'une flèche avec elle-même n'est pas nul, mais son aire orientée avec elle-même est toujours 0 : c'est être alternée.",
+  "legende_titre": "Deux règles, la même flèche deux fois",
+  "lecture": [
+   "À gauche, la règle du produit scalaire prend la flèche x deux fois et donne 10.",
+   "À droite, l'aire orientée prend la même flèche x deux fois et donne 0, en vert.",
+   "Les deux calculs écrits sous les flèches utilisent les mêmes coordonnées."
+  ],
+  "a_voir": "Avec la même flèche deux fois, le produit scalaire donne 10 et l'aire orientée donne 0."
+ },
+ {
+  "code": "75-022",
+  "a_dire": "Si les deux côtés sont la même flèche, le parallélogramme est aplati et son aire est nulle.",
+  "legende_titre": "Le parallélogramme s'aplatit",
+  "lecture": [
+   "La flèche bleue ne bouge pas. La flèche orange se rapproche d'elle de gauche à droite.",
+   "À gauche, le parallélogramme bleu clair est grand.",
+   "Au milieu, il est plus petit.",
+   "À droite, la flèche orange est sur la bleue : il n'y a plus qu'un segment, d'aire 0."
+  ],
+  "a_voir": "Plus la flèche orange se rapproche de la bleue, plus l'aire diminue, jusqu'à 0."
+ },
+ {
+  "code": "75-023",
+  "a_dire": "Échanger les deux flèches change le signe de l'aire orientée : B(y, x) = −B(x, y).",
+  "legende_titre": "Échanger les flèches, changer le signe",
+  "lecture": [
+   "À gauche, la flèche bleue x est prise avant la violette y : la flèche orange tourne dans le sens inverse des aiguilles et le résultat vaut 5.",
+   "À droite, y est prise avant x : la flèche orange tourne dans l'autre sens et le résultat vaut −5.",
+   "La double flèche orange au milieu relie les deux ordres."
+  ],
+  "a_voir": "Les deux résultats, 5 et −5, sont opposés."
+ },
+ {
+  "code": "75-024",
+  "a_dire": "Une forme non dégénérée donne, pour toute flèche non nulle, au moins une autre flèche avec laquelle l'aire n'est pas nulle.",
+  "legende_titre": "Chaque flèche a une partenaire",
+  "lecture": [
+   "À gauche, l'aire orientée : la flèche bleue x et la flèche violette y forment un carré vert, et le résultat vaut −1, pas 0.",
+   "À droite, une règle voisine avec la même flèche bleue x : chaque flèche violette essayée donne 0, en rouge.",
+   "Sous chaque côté, une ligne dit si une partenaire existe."
+  ],
+  "a_voir": "À gauche on trouve une flèche qui donne un nombre non nul ; à droite aucune ne le fait."
+ },
+ {
+  "code": "75-025",
+  "a_dire": "Un espace symplectique est un espace de flèches V sur un corps F, muni d'une règle B qui rend un nombre de F et qui est alternée et non dégénérée.",
+  "legende_titre": "Les trois éléments de la définition",
+  "lecture": [
+   "À gauche, le cadre gris est l'espace V : il contient des flèches, ici x en bleu et y en violet. Les nombres viennent d'un corps F.",
+   "Au milieu, le carré bleu est la règle B : les deux flèches y entrent.",
+   "À droite, le cadre vert est le nombre de F que la règle rend.",
+   "En bas, les deux cadres bleus écrivent les propriétés de B : alternée et non dégénérée."
+  ],
+  "a_voir": "Deux flèches de V entrent dans la règle B, un nombre de F sort, et B est alternée et non dégénérée."
+ },
+ {
+  "code": "75-026",
+  "a_dire": "Une paire hyperbolique est un couple de flèches (e₁, f₁) dont l'aire orientée vaut 1.",
+  "legende_titre": "Deux flèches d'aire orientée 1",
+  "lecture": [
+   "La flèche bleue est e₁, la flèche violette est f₁.",
+   "Le carré vert est le parallélogramme qu'elles forment : son aire orientée vaut 1.",
+   "La flèche orange montre l'ordre : de e₁ vers f₁.",
+   "À droite, le nom, le couple et l'égalité B(e₁, f₁) = 1."
+  ],
+  "a_voir": "La paire est faite de deux flèches dont l'aire orientée est exactement 1."
+ },
+ {
+  "code": "75-027",
+  "a_dire": "Pour construire f₁, on prend une flèche y dont l'aire avec e₁ est un nombre k non nul, puis on divise y par k.",
+  "legende_titre": "Diviser l'essai par son aire",
+  "lecture": [
+   "À gauche, la flèche bleue e₁ et la flèche orange y, d'aire 3 avec e₁.",
+   "La flèche orange du milieu indique la division par 3.",
+   "À droite, la flèche verte f₁ est y divisée par 3 : son aire avec e₁ vaut 1."
+  ],
+  "a_voir": "La flèche est trois fois plus courte et l'aire est trois fois plus petite : elle passe de 3 à 1."
+ },
+ {
+  "code": "75-028",
+  "a_dire": "Le plan P₁ est formé de toutes les combinaisons de e₁ et de f₁ ; pour quatre coordonnées, ce sont les flèches dont les deux dernières coordonnées valent 0.",
+  "legende_titre": "Le plan fabriqué par une paire",
+  "lecture": [
+   "Le grand rectangle bleu est le plan P₁.",
+   "La flèche bleue est e₁, la flèche violette est f₁.",
+   "Le chemin orange pointillé fait 3 fois e₁ puis 2 fois f₁ ; la flèche verte est la combinaison obtenue.",
+   "À droite, ses coordonnées (3, 2, 0, 0) : les deux dernières valent 0."
+  ],
+  "a_voir": "Chaque combinaison de e₁ et f₁ reste dans le plan P₁."
+ },
+ {
+  "code": "75-029",
+  "a_dire": "P₁⟂ est l'ensemble des flèches dont l'aire avec e₁ et avec f₁ est nulle ; c'est un morceau de l'espace défini par un test.",
+  "legende_titre": "Le morceau défini par un test",
+  "lecture": [
+   "Le cadre bleu est le plan P₁, construit à partir de e₁ (bleue) et f₁ (violette).",
+   "Le cadre violet est P₁⟂ : il contient la flèche orange z, de coordonnées (0, 0, 5, 2).",
+   "En vert, le test réussi : l'aire de z avec e₁ vaut 0 et avec f₁ vaut 0."
+  ],
+  "a_voir": "P₁ vient d'une construction, P₁⟂ vient d'un test réussi par z."
+ },
+ {
+  "code": "75-030",
+  "a_dire": "Toute flèche de V s'écrit comme un morceau de P₁ plus un morceau de P₁⟂, et B reste non dégénérée sur P₁⟂.",
+  "legende_titre": "Couper une flèche en deux morceaux",
+  "lecture": [
+   "Le rectangle bleu du haut est la flèche z, de coordonnées (3, 2, 5, 2).",
+   "Les deux flèches orange la coupent : un morceau (3, 2, 0, 0) dans le cadre bleu P₁ et un morceau (0, 0, 5, 2) dans le cadre violet P₁⟂.",
+   "Le signe + les additionne ; le cadre vert en bas dit que z est la somme des deux morceaux.",
+   "Le cadre violet en bas, relié à P₁⟂, dit que B reste non dégénérée sur P₁⟂."
+  ],
+  "a_voir": "Les deux morceaux additionnés redonnent z, et B reste non dégénérée sur le second."
+ },
+ {
+  "code": "75-031",
+  "a_dire": "Chaque étape retire un plan, donc deux dimensions : on recommence jusqu'à épuiser l'espace, qui a donc un nombre pair de dimensions.",
+  "legende_titre": "Trois étapes de deux dimensions",
+  "lecture": [
+   "Chaque ligne montre six cases : les cases bleues sont les dimensions qui restent, les cases en pointillé sont celles déjà retirées.",
+   "Le cadre orange entoure les deux cases retirées à chaque étape, et la flèche orange y mène.",
+   "Les nombres à gauche donnent ce qui reste : 6, 4, 2 puis 0."
+  ],
+  "a_voir": "Trois paires de deux dimensions suffisent à vider six dimensions."
+ },
+ {
+  "code": "75-032",
+  "a_dire": "La dimension d'un espace symplectique est un nombre pair, noté 2n.",
+  "legende_titre": "Seules les dimensions paires existent",
+  "lecture": [
+   "La ligne montre les dimensions de 1 à 8.",
+   "Les disques verts 2, 4, 6 et 8 sont les dimensions paires, possibles.",
+   "Les disques rouges barrés 1, 3, 5 et 7 sont les dimensions impaires, impossibles."
+  ],
+  "a_voir": "Seuls les nombres pairs sont verts."
+ }
+]

@@ -1,0 +1,189 @@
+[
+ {
+  "code": "77-017",
+  "a_dire": "Connaître les deux images suffit pour multiplier n'importe quel nombre.",
+  "legende_titre": "Deux images, tout le produit",
+  "lecture": [
+   "Les deux cadres orange sont les images de 1 et de i : 2 + i et −1 + 2i.",
+   "Les flèches orange multiplient la première image par 3 et la seconde par 4.",
+   "Les cadres bleus donnent 6 + 3i et −4 + 8i.",
+   "Le cadre vert est leur somme : 2 + 11i."
+  ],
+  "a_voir": "Le produit de 3 + 4i se calcule avec les seules deux images."
+ },
+ {
+  "code": "77-018",
+  "a_dire": "Les colonnes de la matrice sont les coordonnées des images de 1 et de i.",
+  "legende_titre": "Une matrice faite de deux colonnes",
+  "lecture": [
+   "La première colonne orange contient 2 et 1 : l'image de 1.",
+   "La seconde colonne orange contient −1 et 2 : l'image de i.",
+   "Les crochets bleus et ρ(2 + i) nomment la matrice obtenue."
+  ],
+  "a_voir": "Chaque colonne est l'image d'un des deux nombres de base."
+ },
+ {
+  "code": "77-019",
+  "a_dire": "Multiplier par 2 + i revient à appliquer la matrice à la colonne des coordonnées.",
+  "legende_titre": "Un produit devenu tableau",
+  "lecture": [
+   "La matrice bleue est ρ(2 + i).",
+   "La colonne grise est le nombre 3 + 4i : 3 et 4.",
+   "La colonne verte, 2 et 11, est le résultat 2 + 11i.",
+   "La ligne du bas rappelle le produit direct, même résultat."
+  ],
+  "a_voir": "Le calcul sur les nombres complexes se fait sur des tableaux."
+ },
+ {
+  "code": "77-020",
+  "a_dire": "Dans ce chapitre, une base a un nombre fini n d'éléments.",
+  "legende_titre": "Compter les éléments d'une base",
+  "lecture": [
+   "Chaque ligne est un exemple, avec son nombre n en orange à gauche.",
+   "Les cases grises à droite sont les éléments de la base : 2, 2 puis 4.",
+   "Le nombre de cases est le nombre n."
+  ],
+  "a_voir": "Dans chaque cas, on peut compter les cases de la base."
+ },
+ {
+  "code": "77-021",
+  "a_dire": "La règle a_L envoie chaque x sur le produit ax, avec a fixé.",
+  "legende_titre": "Multiplier à gauche par a",
+  "lecture": [
+   "Le cadre bleu du haut est le nombre fixé a = 2 + i.",
+   "Les cadres gris sont les nombres de départ : 1 et i.",
+   "Les flèches orange sont la règle a_L.",
+   "Les cadres verts sont les images : 2 + i et −1 + 2i."
+  ],
+  "a_voir": "La même règle, multiplier par a, s'applique à chaque nombre."
+ },
+ {
+  "code": "77-022",
+  "a_dire": "La représentation régulière associe à chaque a l'opération « multiplier par a ».",
+  "legende_titre": "Un nombre, une opération",
+  "lecture": [
+   "Chaque cadre bleu est un nombre : 3, i, 2 + i.",
+   "Chaque flèche orange associe l'opération de son nombre.",
+   "Chaque cadre orange de droite est l'opération « multiplier par » ce nombre."
+  ],
+  "a_voir": "À chaque nombre correspond une opération."
+ },
+ {
+  "code": "77-023",
+  "a_dire": "a_L respecte la somme et sort le scalaire : deux règles, deux calculs qui donnent le même résultat.",
+  "legende_titre": "Deux règles, deux résultats égaux",
+  "lecture": [
+   "La ligne du haut compare a(x + y) en bleu et ax + ay en violet, avec x = 1 et y = i.",
+   "La ligne du bas compare a(cx) en bleu et c(ax) en violet, avec c = 3 et x = i.",
+   "Chaque cadre vert est le résultat commun."
+  ],
+  "a_voir": "Les deux manières de calculer donnent toujours le même nombre."
+ },
+ {
+  "code": "77-024",
+  "a_dire": "La colonne j de ρ(a) contient les coordonnées de a u_j.",
+  "legende_titre": "Remplir la matrice colonne par colonne",
+  "lecture": [
+   "Les cadres gris du haut sont les éléments de la base : 1 et i.",
+   "Les cadres orange du milieu sont leurs produits par a.",
+   "Les flèches bleues prennent les coordonnées de chaque produit.",
+   "Chaque colonne de la matrice reçoit ces coordonnées."
+  ],
+  "a_voir": "Chaque colonne vient du produit de a par un élément de base."
+ },
+ {
+  "code": "77-025",
+  "a_dire": "a ↦ a_L donne deux opérations différentes pour deux nombres différents et respecte somme et produit.",
+  "legende_titre": "Une règle injective qui respecte les calculs",
+  "lecture": [
+   "Les deux premières lignes montrent que 2 et 3 ont des opérations différentes.",
+   "La troisième ligne montre que 2 + 3 donne « multiplier par 5 ».",
+   "La quatrième ligne montre que 2 × 3 donne « multiplier par 6 ».",
+   "Les cadres bleus sont les nombres, les cadres orange les opérations."
+  ],
+  "a_voir": "Les opérations distinguent les nombres et suivent leur somme et leur produit."
+ },
+ {
+  "code": "77-026",
+  "a_dire": "Chaque élément devient une matrice, et les produits se retrouvent entre matrices.",
+  "legende_titre": "Les nombres renommés en matrices",
+  "lecture": [
+   "La ligne du haut est i × i = −1.",
+   "Les flèches orange ρ envoient chaque nombre sur sa matrice.",
+   "La ligne violette du bas est le produit des matrices de i, égal à la matrice de −1."
+  ],
+  "a_voir": "Le produit i × i = −1 se retrouve entre les matrices."
+ },
+ {
+  "code": "77-027",
+  "a_dire": "a_L(1) = a : on lit a dans l'image de 1, donc deux nombres différents ont deux opérations différentes.",
+  "legende_titre": "Lire a dans l'image de 1",
+  "lecture": [
+   "Chaque ligne part de 1 (cadre gris).",
+   "La flèche orange est l'opération « multiplier par » le nombre.",
+   "Le cadre bleu donne 2 + i ; le cadre violet donne 3.",
+   "Le signe ≠ dit que ces deux images sont différentes."
+  ],
+  "a_voir": "L'image de 1 est le nombre lui-même."
+ },
+ {
+  "code": "77-028",
+  "a_dire": "Faire b_L puis a_L donne la même chose que (ab)_L.",
+  "legende_titre": "Deux chemins, même arrivée",
+  "lecture": [
+   "La ligne du haut applique d'abord b_L à 1, on obtient i, puis a_L, on obtient −1 + 2i.",
+   "La ligne du bas applique (ab)_L directement à 1.",
+   "Les deux cadres verts sont égaux.",
+   "La formule du bas, (ab)x = a(bx), est ce qui permet le regroupement."
+  ],
+  "a_voir": "Le produit ab correspond à la composition de b_L puis a_L."
+ },
+ {
+  "code": "77-029",
+  "a_dire": "La matrice d'une somme est la somme des matrices.",
+  "legende_titre": "Additionner les matrices",
+  "lecture": [
+   "La matrice bleue est celle de 2 + i.",
+   "La matrice violette est celle de 3.",
+   "La matrice verte est leur somme, celle de 5 + i.",
+   "La ligne du haut rappelle la somme des nombres."
+  ],
+  "a_voir": "Additionner les nombres revient à additionner leurs matrices."
+ },
+ {
+  "code": "77-030",
+  "a_dire": "Une représentation envoie chaque élément de A sur une transformation d'un espace V.",
+  "legende_titre": "Un élément qui agit sur un espace",
+  "lecture": [
+   "Le cadre bleu à gauche est A, avec deux éléments : 2 + i et i.",
+   "Chaque flèche orange, notée ρ, envoie un élément de A vers une transformation du plan V.",
+   "Dans chaque plan, les points gris sont 1 et i ; les flèches orange les envoient sur leurs images.",
+   "Pour 2 + i, 1 va en 2 + i et i va en −1 + 2i. Pour i, 1 va en i et i va en −1."
+  ],
+  "a_voir": "Chaque élément de A devient une transformation du plan V."
+ },
+ {
+  "code": "77-031",
+  "a_dire": "La même opération donne des matrices différentes selon la base choisie.",
+  "legende_titre": "Même opération, deux matrices",
+  "lecture": [
+   "Le cadre orange du haut est l'opération « multiplier par i », la même des deux côtés.",
+   "À gauche, la base 1, i (bleu) donne la matrice bleue.",
+   "À droite, la base i, 1 (violet) donne la matrice violette.",
+   "Le signe ≠ montre que les cases ne sont pas les mêmes."
+  ],
+  "a_voir": "La matrice décrit l'opération dans une base, elle n'est pas l'opération."
+ },
+ {
+  "code": "77-032",
+  "a_dire": "On passe d'une base à l'autre en multipliant par Δ à droite puis par son inverse à gauche.",
+  "legende_titre": "Changer de base en deux étapes",
+  "lecture": [
+   "Les matrices orange, à gauche et au centre-droit, sont Δ⁻¹ et Δ : Δ⁻¹ échange les lignes, Δ échange les colonnes.",
+   "La matrice bleue est celle de i dans la base 1, i.",
+   "On calcule d'abord ρ(i) multiplié par Δ, à droite, puis Δ⁻¹ multiplié à gauche.",
+   "La matrice violette, après le signe égal, est celle de i dans la base i, 1."
+  ],
+  "a_voir": "Le produit Δ⁻¹ ρ(i) Δ échange d'abord les colonnes, puis les lignes."
+ }
+]

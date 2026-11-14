@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+box(ax,2,24,84,56,'sujet')
+text(ax,6,74,'corps gauche : tout non nul\na un inverse','sujet','s',ha='left')
+box(ax,50,28,32,36,'resultat')
+text(ax,66,46,'corps :\n$ab=ba$ exigé','resultat','s')
+disc(ax,22,46,6,'autre',label=r'$\mathbb{H}$',size='xl')
+arrow(ax,(28.5,46),(49,46),'limite'); text(ax,39,50.5,r'$ij\neq ji$','limite','s')
+text(ax,22,12,'$ij=k$','autre','l'); text(ax,66,12,'$ji=-k$','autre','l'); text(ax,44,12,r'$\neq$','limite','xl')
+save(fig,'51-192')

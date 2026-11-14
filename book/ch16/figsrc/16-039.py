@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,2,4,84,54,'fixe',fill=False,dash=True)
+text(ax,44,53,'valeurs essayées','fixe','s')
+text(ax,44,45,r'$x+3=7$','sujet','m')
+disc(ax,24,31,6,'limite',label='5',size='l'); disc(ax,64,31,6,'resultat',label='4',size='l')
+disc(ax,64,31,8.5,'resultat',fill=False,lw=1.6)
+text(ax,24,19,r'$8=7$','limite','m'); text(ax,64,19,r'$7=7$','resultat','m')
+text(ax,24,12,'faux','limite','s'); text(ax,64,12,'solution','resultat','s',weight='bold')
+save(fig,'16-039')

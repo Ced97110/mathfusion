@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# 41-035 : écrire le vent en une ligne ⟨50 ; 86,60⟩ : 1er nombre = est (x), 2e nombre = nord (y)
+fig, ax = canvas(76)
+yw = 68
+text(ax, 25, yw, r'$\langle$', 'encre', 'xl')
+text(ax, 33, yw, '50', 'sujet', 'xl', weight='bold')
+text(ax, 41, yw, ';', 'encre', 'xl')
+text(ax, 54, yw, '86,60', 'resultat', 'xl', weight='bold')
+text(ax, 67, yw, r'$\rangle$', 'encre', 'xl')
+text(ax, 33, yw - 8, 'est ($x$)', 'sujet', 's')
+text(ax, 54, yw - 8, 'nord ($y$)', 'resultat', 's')
+# le vent dessiné : échelle 0,35 mm par unité
+s = 0.5
+O = (14, 8)
+V = (O[0] + 50 * s, O[1] + 86.6 * s)
+P = (V[0], O[1])
+arrow(ax, O, P, 'sujet', lw=1.8)
+arrow(ax, P, V, 'resultat', lw=1.8)
+arrow(ax, O, V, 'varie', lw=1.0)
+text(ax, (O[0] + P[0]) / 2, O[1] + 3.8, '50', 'sujet', 'm')
+text(ax, P[0] + 2.5, (P[1] + V[1]) / 2, '86,60', 'resultat', 'm', ha='left')
+text(ax, 58, 26, 'l’ordre compte :', 'fixe', 's')
+text(ax, 58, 20, 'est d’abord,', 'fixe', 's')
+text(ax, 58, 14.5, 'puis nord', 'fixe', 's')
+save(fig, '41-035')

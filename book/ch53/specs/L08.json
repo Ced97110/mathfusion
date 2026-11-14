@@ -1,0 +1,308 @@
+[
+ {
+  "code": "53-168",
+  "a_dire": "Ce qui compte est l'écart entre le coût pour Alice et Bob (quelques millisecondes) et le coût pour l'attaquant (des milliers d'années).",
+  "legende_titre": "Deux durées côte à côte",
+  "lecture": [
+   "La petite barre bleue est le temps d'Alice et de Bob : quelques millisecondes.",
+   "La longue barre orange est le temps de l'attaquant : des milliers d'années. Elle est coupée car elle est beaucoup trop longue pour tenir.",
+   "Les lignes grises donnent le calcul : une année fait 31 536 000 secondes, donc mille ans font plus de 31 000 milliards de millisecondes."
+  ],
+  "a_voir": "Une barre minuscule face à une barre immense : toute la sécurité tient dans cet écart."
+ },
+ {
+  "code": "53-169",
+  "a_dire": "Avec e = 1, le déchiffrement existe, mais le chiffré est le message lui-même : l'espion le lit.",
+  "legende_titre": "Un exposant qui ne cache rien",
+  "lecture": [
+   "La case bleue est le message 8.",
+   "La case violette est le chiffré : 8 puissance 1 vaut 8, donc il est identique au message.",
+   "La case grise est l'espion : il lit 8.",
+   "L'accolade orange rappelle que le chiffré est le message."
+  ],
+  "a_voir": "Le chiffré et le message sont le même nombre, donc rien n'est caché."
+ },
+ {
+  "code": "53-170",
+  "a_dire": "Avec e = 2 et n = 55, la condition échoue : 2 et φ(55) = 40 ont le diviseur commun 2, car les deux nombres premiers sont impairs.",
+  "legende_titre": "Pourquoi l'exposant 2 est exclu",
+  "lecture": [
+   "Les deux cases grises du haut donnent 5 − 1 = 4 et 11 − 1 = 10 : deux nombres pairs.",
+   "La case bleue est leur produit, 40, qui est pair aussi.",
+   "La case orange est l'exposant 2.",
+   "La case rouge montre que 2 et 40 ont le diviseur commun 2, donc le PGCD n'est pas 1."
+  ],
+  "a_voir": "Deux nombres pairs multipliés donnent un nombre pair, qui partage le diviseur 2 avec l'exposant."
+ },
+ {
+  "code": "53-171",
+  "a_dire": "Avec l'exposant 2 et n = 55, un message et son complément à 55 ont le même chiffré : 4 et 51 donnent tous deux 16.",
+  "legende_titre": "Deux messages, un seul chiffré",
+  "lecture": [
+   "La droite du haut porte les messages : le point bleu est 4, le point violet est 51.",
+   "La droite du bas porte les chiffrés : le point vert est 16.",
+   "Les deux flèches arrivent sur le même point 16 : 4² = 16 et 51² = 47 × 55 + 16.",
+   "Le texte du bas rappelle qu'il y a 18 chiffrés pour 55 messages."
+  ],
+  "a_voir": "Deux flèches partent de deux messages différents et arrivent sur le même chiffré."
+ },
+ {
+  "code": "53-172",
+  "a_dire": "Si le message partage un facteur avec n, l'algorithme d'Euclide donne ce facteur en deux divisions : l'espion obtient 11, un des deux nombres premiers.",
+  "legende_titre": "Euclide révèle un facteur",
+  "lecture": [
+   "La première case bleue est la division de 55 par 22 : reste 11.",
+   "La deuxième case bleue divise 22 par 11 : reste 0, donc on s'arrête.",
+   "La case verte donne le dernier reste non nul, 11.",
+   "La case verte de droite donne 55 = 5 × 11 : 11 est un des deux premiers."
+  ],
+  "a_voir": "Deux divisions suffisent pour trouver un facteur de 55."
+ },
+ {
+  "code": "53-173",
+  "a_dire": "Il y a n − φ(n) = p + q − 1 messages dangereux parmi n ; pour 55, ce sont 15 messages sur 55.",
+  "legende_titre": "Compter les messages dangereux",
+  "lecture": [
+   "Chaque petite case est un message de 0 à 54.",
+   "Les cases orange sont les 15 messages qui ont un facteur commun avec 55 : multiples de 5 ou de 11.",
+   "Les cases grises sont les 40 messages sans facteur commun.",
+   "Les deux égalités du bas donnent le même nombre : 55 − 40 = 15 et 5 + 11 − 1 = 15."
+  ],
+  "a_voir": "Le nombre de cases orange vaut 15, que l'on compte par 55 − 40 ou par 5 + 11 − 1."
+ },
+ {
+  "code": "53-174",
+  "a_dire": "Les messages 0 et 1 ne bougent jamais : 0 puissance e vaut 0 et 1 puissance e vaut 1, donc l'espion les lit.",
+  "legende_titre": "Deux messages qui ne bougent pas",
+  "lecture": [
+   "La ligne du haut montre trois messages : 0, 1 et 2.",
+   "La ligne du bas montre leurs cubes (exposant 3).",
+   "Les flèches grises relient 0 à 0 et 1 à 1 : ils ne changent pas.",
+   "La flèche orange relie 2 à 8 : ce message change."
+  ],
+  "a_voir": "Pour 0 et 1, le chiffré est le même nombre que le message."
+ },
+ {
+  "code": "53-175",
+  "a_dire": "Ajouter des chiffres au hasard avant de chiffrer donne deux chiffrés différents pour le même message, donc l'espion ne voit plus la répétition.",
+  "legende_titre": "Le même message, deux chiffrés",
+  "lecture": [
+   "En haut, sans ajout : le message 8 envoyé deux jours donne 17 les deux jours.",
+   "Le texte gris à droite note que l'espion voit la répétition.",
+   "En bas, avec ajout : le même 8 suivi de chiffres au hasard donne un chiffré A, puis un chiffré B.",
+   "Les deux chiffrés sont différents, donc l'espion ne voit rien."
+  ],
+  "a_voir": "Le haut montre deux chiffrés égaux, le bas montre deux chiffrés différents."
+ },
+ {
+  "code": "53-176",
+  "a_dire": "Un message au moins égal à n tombe sur la même case qu'un message plus petit : 5 et 60 donnent le même reste 15, donc Alice ne peut pas les distinguer.",
+  "legende_titre": "Un message trop grand se confond",
+  "lecture": [
+   "La droite graduée va de 0 à 60 ; le trait pointillé marque n = 55.",
+   "L'accolade bleue couvre les messages plus petits que n, de 0 à 54, dont le point bleu 5.",
+   "Le point rouge 60 est au-delà de n : 60 = 5 + 55.",
+   "Les deux flèches arrivent à la même case verte : le reste 15."
+  ],
+  "a_voir": "Deux messages différents, un avant n et un après, arrivent sur le même reste."
+ },
+ {
+  "code": "53-177",
+  "a_dire": "Pour un message plus grand que n, on le coupe en blocs plus petits que n et on chiffre chaque bloc.",
+  "legende_titre": "Couper pour chiffrer",
+  "lecture": [
+   "La case bleue du haut est le message 3 412, trop grand pour n = 55.",
+   "Les flèches orange le coupent en deux blocs bleus : 34 et 12.",
+   "Les deux blocs sont plus petits que 55, ce que montrent les textes verts.",
+   "Chaque bloc a son propre chiffré, en violet ; on envoie les deux."
+  ],
+  "a_voir": "Un grand nombre devient deux blocs, chacun chiffré à part."
+ },
+ {
+  "code": "53-178",
+  "a_dire": "Chaque pas de RSA s'appuie sur un chapitre précédent : Euclide pour la clé privée, la base 2 pour calculer vite, Lagrange pour prouver que cela marche.",
+  "legende_titre": "Un chapitre pour chaque pas",
+  "lecture": [
+   "Les cases violettes de gauche sont trois outils, avec leur chapitre : Euclide, la base 2, Lagrange.",
+   "Les cases bleues de droite sont les pas de RSA qui les utilisent.",
+   "Chaque flèche orange relie un outil au pas qu'il sert."
+  ],
+  "a_voir": "Trois outils venus de trois chapitres, chacun relié à un pas de RSA."
+ },
+ {
+  "code": "53-179",
+  "a_dire": "Le test de Fermat calcule le reste de 2 puissance n − 1 par n : un reste différent de 1 prouve que n n'est pas premier, un reste 1 dit seulement « peut-être premier ».",
+  "legende_titre": "Le test, sur 7 puis sur 15",
+  "lecture": [
+   "La colonne de gauche prend n = 7 : 2⁶ = 64 = 9 × 7 + 1, reste 1 (case verte), donc « peut-être premier ».",
+   "La colonne de droite prend n = 15 : 2¹⁴ = 16 384, reste 4, qui n'est pas 1 (case rouge).",
+   "Le verdict rouge dit que 15 n'est pas premier."
+  ],
+  "a_voir": "Un reste 1 à gauche, un reste différent de 1 à droite, et deux verdicts différents."
+ },
+ {
+  "code": "53-180",
+  "a_dire": "Pour 15, 2¹⁴ = 16 384 = 1 092 × 15 + 4 : le reste est 4, donc 15 n'est pas premier, sans avoir trouvé ses facteurs.",
+  "legende_titre": "Le test appliqué à 15",
+  "lecture": [
+   "La case bleue est 2¹⁴ = 16 384.",
+   "La case grise est la division par 15 : 1 092 fois 15 plus 4.",
+   "La case rouge garde le reste, 4, qui n'est pas 1.",
+   "La case verte conclut que 15 n'est pas premier.",
+   "La case pointillée « 3 × 5 ? » rappelle que les facteurs n'ont pas été cherchés."
+  ],
+  "a_voir": "On conclut avec le seul reste 4, sans connaître les facteurs."
+ },
+ {
+  "code": "53-181",
+  "a_dire": "Un pseudo-premier est un nombre composé qui passe le test de Fermat, comme 341 = 11 × 31.",
+  "legende_titre": "Un composé qui passe le test",
+  "lecture": [
+   "Le tableau croise deux choix : premier ou composé, passe le test ou échoue.",
+   "7 est premier et passe ; 15 est composé et échoue (cases grises).",
+   "La case bleue 341 = 11 × 31 est composée et passe le test : c'est un pseudo-premier.",
+   "La case pointillée est vide : aucun nombre premier impair n'échoue."
+  ],
+  "a_voir": "La case bleue est la seule qui mélange composé et réussite au test."
+ },
+ {
+  "code": "53-182",
+  "a_dire": "Le test se trompe dans un seul sens : un premier impair donne toujours le reste 1, mais le reste 1 ne prouve pas que n est premier, car 341 = 11 × 31 donne le reste 1.",
+  "legende_titre": "Un sens sûr, un sens faux",
+  "lecture": [
+   "La ligne du haut : de « n premier impair » vers « reste 1 », la flèche verte dit « toujours ».",
+   "La ligne du milieu : de « reste 1 » vers « n premier », la flèche rouge dit « pas toujours ».",
+   "La case rouge du bas donne le contre-exemple : 341 = 11 × 31 avec le reste 1."
+  ],
+  "a_voir": "La flèche du haut est toujours vraie, celle du milieu est cassée par 341."
+ },
+ {
+  "code": "53-183",
+  "a_dire": "Un nombre de Carmichael est un composé qui passe le test pour toutes les bases premières avec lui, alors qu'un pseudo-premier comme 341 échoue pour une autre base.",
+  "legende_titre": "Deux composés qui trompent le test",
+  "lecture": [
+   "La colonne de gauche est 341 = 11 × 31 : il passe avec la base 2 (vert) mais échoue avec la base 3 (rouge), donc on le démasque.",
+   "La colonne de droite est 561 = 3 × 11 × 17 : il passe avec les bases 2, 5 et 7 (vert).",
+   "Le texte du bas dit que 561 n'est jamais démasqué par une base première avec lui."
+  ],
+  "a_voir": "Une case rouge à gauche, uniquement des cases vertes à droite."
+ },
+ {
+  "code": "53-184",
+  "a_dire": "Les tests modernes gardent l'idée de Fermat et ajoutent une vérification qui attrape les pièges 341 et 561.",
+  "legende_titre": "Fermat, amélioré",
+  "lecture": [
+   "En haut : le test de Fermat (gris) plus une vérification de plus (orange) donnent le test moderne (vert).",
+   "En bas : 341 et 561 sont des pièges qui passent Fermat.",
+   "La flèche orange les mène à la vérification de plus, que ces nombres échouent."
+  ],
+  "a_voir": "La case orange ajoutée est ce qui rejette les pièges."
+ },
+ {
+  "code": "53-185",
+  "a_dire": "561 = 3 × 11 × 17 et, pour les bases 2 et 5, le reste de la puissance 560 par 561 est 1 ; on n'a vérifié que ces deux bases.",
+  "legende_titre": "561 et deux bases vérifiées",
+  "lecture": [
+   "Les deux cases du haut calculent 3 × 11 = 33 puis 33 × 17 = 561.",
+   "La première case verte dit que 2 puissance 560 a le reste 1 modulo 561.",
+   "La seconde case verte dit la même chose pour 5.",
+   "Le texte gris du bas rappelle que seules ces deux bases sont vérifiées."
+  ],
+  "a_voir": "Deux bases donnent le reste 1, mais seules ces deux bases sont montrées."
+ },
+ {
+  "code": "53-186",
+  "a_dire": "Il y a une infinité de nombres de Carmichael : une liste finie ne suffit jamais, il y en a toujours un de plus.",
+  "legende_titre": "Une liste qui ne finit pas",
+  "lecture": [
+   "La droite est une flèche qui continue vers la droite.",
+   "Chaque point violet est un nombre de Carmichael ; le premier est 561, le plus petit.",
+   "L'accolade rouge couvre une liste finie.",
+   "Les flèches orange montrent des nombres qui sont encore en dehors de la liste."
+  ],
+  "a_voir": "Quelle que soit la liste choisie, il reste des points à droite."
+ },
+ {
+  "code": "53-187",
+  "a_dire": "Fermat écrit n comme une différence de deux carrés : x² − y² = (x − y)(x + y), ce qui donne les facteurs ; pour 55 : 8² − 3² = 5 × 11.",
+  "legende_titre": "Un carré moins un carré",
+  "lecture": [
+   "Le grand carré bleu a 8 cases de côté, soit x = 8.",
+   "Le petit carré orange en pointillé a 3 cases de côté, soit y = 3 : on l'enlève.",
+   "Il reste 55 cases. Le rectangle vert en a autant : 11 cases de long (x + y) et 5 de large (x − y).",
+   "Les facteurs de 55 sont donc 5 et 11."
+  ],
+  "a_voir": "La forme bleue sans le coin orange a autant de cases que le rectangle vert 5 × 11."
+ },
+ {
+  "code": "53-188",
+  "a_dire": "Pour 55 = 5 × 11, x est la moitié de la somme des facteurs, 8, et y est la moitié de leur écart, 3.",
+  "legende_titre": "Lire x et y sur les facteurs",
+  "lecture": [
+   "Les points bleus sont les facteurs 5 et 11.",
+   "Le point orange est 8, au milieu de 5 et de 11.",
+   "Chaque accolade orange mesure la moitié de l'écart : y = 3.",
+   "Les trois lignes du bas donnent les calculs de x, de y et la vérification 8² − 3² = 55."
+  ],
+  "a_voir": "Le point 8 est au milieu des deux facteurs, à la distance 3 de chacun."
+ },
+ {
+  "code": "53-189",
+  "a_dire": "La méthode de Fermat est rapide quand p et q sont proches : un essai pour 13 × 17, trente-cinq pour 3 × 101 ; Alice doit donc choisir p et q éloignés.",
+  "legende_titre": "Facteurs proches ou éloignés",
+  "lecture": [
+   "En haut, 221 = 13 × 17 : les facteurs sont proches, une seule case verte, x = 15, un essai.",
+   "En bas, 303 = 3 × 101 : les facteurs sont éloignés, 35 cases d'essais, de x = 18 à x = 52.",
+   "La dernière case verte est celle qui réussit."
+  ],
+  "a_voir": "Une case seule contre une longue rangée de 35 cases."
+ },
+ {
+  "code": "53-190",
+  "a_dire": "55 s'écrit d'une seule manière comme produit de nombres premiers, 5 × 11 ; la question « quels sont les facteurs ? » a une seule réponse.",
+  "legende_titre": "Une seule factorisation",
+  "lecture": [
+   "La case du haut est n = 55.",
+   "Les deux flèches mènent aux cases bleues 5 et 11 : ses facteurs.",
+   "La case pointillée « autre couple ? » est marquée « aucun ».",
+   "Le texte vert dit qu'il y a une seule réponse."
+  ],
+  "a_voir": "Un seul couple de facteurs sort de 55."
+ },
+ {
+  "code": "53-191",
+  "a_dire": "L'horloge à 7 cases est un corps (on peut diviser par tout nombre non nul) et l'horloge à 26 cases n'en est pas un ; AES calcule dans un corps à 256 éléments.",
+  "legende_titre": "Deux horloges, deux cas",
+  "lecture": [
+   "Les points verts forment l'horloge à 7 cases ; les points rouges forment l'horloge à 26 cases.",
+   "Sous l'horloge à 7 cases : 2 × 4 = 8 = 7 + 1, donc 2 a un inverse.",
+   "Sous l'horloge à 26 cases : PGCD(2 ; 26) = 2, donc 2 n'a pas d'inverse.",
+   "Le texte bleu du bas rappelle qu'AES calcule dans un corps de 256 éléments."
+  ],
+  "a_voir": "Le vert permet de diviser par 2, le rouge ne le permet pas."
+ },
+ {
+  "code": "53-192",
+  "a_dire": "Un canal a un autre danger que l'espion : le bruit, qui change une lettre sans que personne n'ait lu le message ; les codes correcteurs traitent ce danger.",
+  "legende_titre": "Le message change tout seul",
+  "lecture": [
+   "Le mot du haut, DOJHEUH, est ce que Léa envoie.",
+   "Le mot du bas, DOJHFUH, est ce que Hugo reçoit.",
+   "Le cadre orange marque la lettre qui a changé, de E à F ; la flèche porte le mot « bruit ».",
+   "Aucun espion n'a lu le message, et Hugo ne sait pas quelle lettre est fausse."
+  ],
+  "a_voir": "Une seule lettre diffère entre les deux mots, sans espion."
+ },
+ {
+  "code": "53-193",
+  "a_dire": "Deux clés qui partagent le premier 5 se cassent avec le plus grand diviseur commun d'Euclide : 55 et 65 donnent 5, puis 11 et 13.",
+  "legende_titre": "Un facteur commun trahit deux clés",
+  "lecture": [
+   "En haut à gauche, 55 = 5 × 11 et 65 = 5 × 13 : le 5 orange est commun aux deux clés.",
+   "En haut à droite, les trois divisions d'Euclide sur 55 et 65.",
+   "La case verte donne le dernier reste non nul, 5.",
+   "La ligne du bas divise chaque clé par 5 et donne 11 et 13."
+  ],
+  "a_voir": "Le 5 orange se trouve dans les deux clés, et Euclide le trouve en trois divisions."
+ }
+]

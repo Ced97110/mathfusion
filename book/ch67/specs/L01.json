@@ -1,0 +1,361 @@
+[
+ {
+  "code": "67-001",
+  "a_dire": "Les codes et le chiffrement exigent que l’ensemble des mots soit un corps, c’est-à-dire qu’on puisse diviser par tout mot non nul.",
+  "legende_titre": "Diviser par tout mot non nul",
+  "lecture": [
+   "Les quatre cases du haut sont les mots de 2 bits : 00, 01, 10, 11.",
+   "Le mot 00, en gris, est le mot nul : on ne divise pas par lui. Les trois autres, en bleu, sont non nuls.",
+   "Les trois cases orange sont les divisions que le programme de correction doit faire : par 01, par 10, par 11.",
+   "La case verte donne l’exigence : la division doit être toujours possible, donc l’ensemble doit être un corps."
+  ],
+  "a_voir": "Le programme de correction divise par chaque mot non nul : l’ensemble des mots doit être un corps."
+ },
+ {
+  "code": "67-002",
+  "a_dire": "Dans l’horloge à 4 heures, 2 × 2 = 0 : si 2 avait un inverse b, on obtiendrait 0 = 2, donc 2 n’a pas d’inverse.",
+  "legende_titre": "Ce que donne 2 fois 2 sur l’horloge",
+  "lecture": [
+   "Les quatre cercles sont les heures 0, 1, 2, 3 de l’horloge à 4 heures ; le 2 est en orange.",
+   "La flèche orange va de 2 vers 0 : 2 × 2 = 4, et 4 heures est 0 heure.",
+   "Si un nombre b vérifiait 2 × b = 1, la case rouge dit qu’on obtiendrait 0 = 2.",
+   "Cette égalité est fausse : 2 n’a pas d’inverse."
+  ],
+  "a_voir": "Un seul élément non nul sans inverse suffit : ici 2 × 2 = 0 empêche l’inverse de 2."
+ },
+ {
+  "code": "67-003",
+  "a_dire": "On sépare le problème d’un corps à q éléments en trois questions : existe-t-il, est-il unique, comment est-il fait à l’intérieur.",
+  "legende_titre": "Trois questions sur un corps à q éléments",
+  "lecture": [
+   "La case bleue du haut est le corps cherché, à q éléments (q = 4, 6 ou 256).",
+   "Les trois cases orange sont les trois questions : existence, unicité, structure.",
+   "Les flèches entre elles donnent l’ordre : on répond à l’existence avant l’unicité, puis à la structure.",
+   "Sous chaque question, un dessin : une case pour l’existence, deux cases pour l’unicité, quatre points reliés pour l’intérieur."
+  ],
+  "a_voir": "Trois questions de nature différente, à traiter dans cet ordre."
+ },
+ {
+  "code": "67-004",
+  "a_dire": "Un corps à q éléments existe quand q est une puissance d’un premier : chaque élément est donné par n coefficients, avec p choix pour chacun.",
+  "legende_titre": "D’où vient la forme d’un nombre d’éléments",
+  "lecture": [
+   "Les cases bleues sont les coefficients : chacun a p choix, p étant premier.",
+   "La case grise « ⋯ » remplace les coefficients qu’on ne dessine pas ; l’accolade orange dit qu’il y en a n.",
+   "La case verte donne le total : p × p × ⋯ × p = p^n éléments.",
+   "Le nombre q est donc une puissance d’un premier."
+  ],
+  "a_voir": "n coefficients, p choix chacun : le nombre d’éléments est p^n."
+ },
+ {
+  "code": "67-005",
+  "a_dire": "4 = 2² et 256 = 2⁸ sont des puissances de 2 : ces corps existent ; 6 = 2 × 3 n’est pas une puissance d’un seul premier : aucun corps.",
+  "legende_titre": "Trois nombres, trois verdicts",
+  "lecture": [
+   "Première ligne : 4 s’écrit avec deux cases vertes « 2 », donc 2².",
+   "Deuxième ligne : 256 s’écrit avec huit cases vertes « 2 », donc 2⁸.",
+   "Troisième ligne : 6 s’écrit avec un 2 gris et un 3 violet, deux premiers différents ; le texte rouge dit qu’aucun corps n’existe.",
+   "Ces trois exemples illustrent le critère, sans le démontrer."
+  ],
+  "a_voir": "Un seul premier répété donne un corps ; deux premiers différents n’en donnent pas."
+ },
+ {
+  "code": "67-006",
+  "a_dire": "Pour montrer que le groupe de Galois d’une équation de degré 6 est S₆, on réduit les coefficients modulo un premier puis on factorise dans un corps fini.",
+  "legende_titre": "Une méthode pour le degré 6",
+  "lecture": [
+   "En haut, l’équation de degré 6 et ses six solutions (six cercles).",
+   "La première flèche orange change les coefficients : on prend leurs restes modulo p.",
+   "La deuxième flèche orange factorise le polynôme obtenu, dans un corps fini.",
+   "Les cases vertes disent ce que cela donne : les cycles des échanges, donc S₆ tout entier."
+  ],
+  "a_voir": "Les corps finis servent d’outil : la factorisation modulo p renseigne sur les échanges des solutions."
+ },
+ {
+  "code": "67-007",
+  "a_dire": "Le livre annonce deux outils généraux sur une extension E de F : les bases spéciales, et la trace et la norme qui envoient E vers F.",
+  "legende_titre": "Deux outils pour décrire un grand corps",
+  "lecture": [
+   "Le grand rectangle bleu est le grand corps E ; le rectangle violet est le petit corps F.",
+   "Dans E, deux cases orange et une case grise forment la base spéciale : c’est l’outil 1, une base choisie avec une propriété.",
+   "Les deux flèches orange vont de E vers F : la trace et la norme, c’est l’outil 2."
+  ],
+  "a_voir": "Outil 1 : une base spéciale dans E. Outil 2 : la trace et la norme, qui envoient E vers F."
+ },
+ {
+  "code": "67-008",
+  "a_dire": "On garde 0 et 1 de l’horloge à 4 heures et on ajoute deux éléments nouveaux, α et α + 1 : cela forme un corps à quatre éléments.",
+  "legende_titre": "Quatre éléments qui ne sont pas l’horloge",
+  "lecture": [
+   "La ligne du haut est l’horloge à 4 heures ; 2 et 3 sont en pointillé car on ne les garde pas.",
+   "Les flèches grises gardent 0 et 1 dans la ligne du bas.",
+   "Les deux cases orange sont les éléments nouveaux : α, puis α + 1.",
+   "La ligne du bas est le corps à quatre éléments."
+  ],
+  "a_voir": "Un corps peut avoir quatre éléments sans être l’horloge à 4 heures."
+ },
+ {
+  "code": "67-009",
+  "a_dire": "Le signe 𝔽₄ désigne en entier le corps à quatre éléments ; on écrit α ∈ 𝔽₄ pour dire que α est l’un de ses éléments.",
+  "legende_titre": "Un nom court pour un corps",
+  "lecture": [
+   "Le grand signe se lit en deux parties : la lettre à double barre dit « un corps », l’indice 4 dit « 4 éléments ».",
+   "La flèche bleue relie le signe à l’ensemble entier, entouré en pointillé.",
+   "Dans le cadre, les quatre cases sont 0, 1, α et α + 1.",
+   "Dessous, α ∈ 𝔽₄ dit que α est un élément de ce corps."
+  ],
+  "a_voir": "Le signe nomme tout le corps, pas un seul élément."
+ },
+ {
+  "code": "67-010",
+  "a_dire": "Le signe α désigne un élément du corps différent de 0 et de 1, défini par la règle α² = α + 1.",
+  "legende_titre": "Lire α : un élément défini par une règle",
+  "lecture": [
+   "Les cases grises 0 et 1 sont les éléments déjà connus ; l’accolade le rappelle.",
+   "La case bleue α est l’élément nouveau.",
+   "La flèche orange montre α × α : le résultat est la case verte α + 1.",
+   "La case du bas écrit la règle : α² = α + 1."
+  ],
+  "a_voir": "α est un élément à part, fixé par sa règle α² = α + 1."
+ },
+ {
+  "code": "67-011",
+  "a_dire": "Les deux tables de 𝔽₄ montrent d’un regard que chaque élément ajouté à lui-même donne 0, et que chaque ligne non nulle de la multiplication contient un seul 1.",
+  "legende_titre": "Les deux tables du corps à quatre éléments",
+  "lecture": [
+   "Le tableau de gauche est l’addition ; les cases vertes sont les 0, ils forment la diagonale.",
+   "Le tableau de droite est la multiplication ; les cases vertes sont les 1.",
+   "Chaque ligne non nulle de la multiplication a une case verte, et une seule.",
+   "Les en-têtes bleus donnent les éléments : 0, 1, α, α + 1."
+  ],
+  "a_voir": "Diagonale de 0 en haut ; un 1 par ligne non nulle en bas : chaque élément non nul a un inverse."
+ },
+ {
+  "code": "67-012",
+  "a_dire": "On lit a + b ou a × b au croisement de la ligne a et de la colonne b ; par exemple α × (α + 1) = 1.",
+  "legende_titre": "Lire une case dans la table",
+  "lecture": [
+   "La ligne orange est celle de a = α ; la colonne orange est celle de b = α + 1.",
+   "La case verte, au croisement des deux, contient le résultat : 1.",
+   "On lit donc α × (α + 1) = 1 sans refaire le calcul.",
+   "La méthode est la même pour la table d’addition."
+  ],
+  "a_voir": "Ligne de a, colonne de b : le résultat est au croisement."
+ },
+ {
+  "code": "67-013",
+  "a_dire": "La règle 1 + 1 = 0 vaut dans le corps à 4 éléments (caractéristique 2) ; avec trois éléments, il faut trois termes pour atteindre 0.",
+  "legende_titre": "Combien de 1 pour atteindre 0",
+  "lecture": [
+   "En haut, corps à 4 éléments : deux cases bleues « 1 » ont une somme égale à 0 (en vert).",
+   "En bas, entiers modulo 3 : trois cases violettes « 1 ».",
+   "Avec deux termes, la somme est 2, pas 0 : le texte rouge dit que la règle 1 + 1 = 0 est fausse ici.",
+   "Avec trois termes, la somme est 0."
+  ],
+  "a_voir": "Le nombre de 1 à additionner pour obtenir 0 dépend du corps : 2 ici, 3 en bas."
+ },
+ {
+  "code": "67-014",
+  "a_dire": "α² ne peut être ni 0, ni α, ni 1 sans qu’un produit de deux éléments non nuls soit nul ; il reste α² = α + 1.",
+  "legende_titre": "Pourquoi α² vaut α + 1",
+  "lecture": [
+   "Les quatre cases sont les valeurs possibles de α² : 0, α, 1, α + 1.",
+   "Sous chacune des trois cases rouges, un produit nul de deux éléments non nuls : c’est impossible dans un corps.",
+   "La case verte α + 1 est la seule qui reste.",
+   "La phrase du bas donne le résultat : α² = α + 1."
+  ],
+  "a_voir": "Trois cas mènent à un produit nul interdit ; le quatrième est le seul possible."
+ },
+ {
+  "code": "67-015",
+  "a_dire": "On calcule α + (α + 1) en regroupant les α : (1 + 1)α + 1 = 0 + 1 = 1.",
+  "legende_titre": "Une case de la table d’addition",
+  "lecture": [
+   "La première case bleue est la somme à calculer : α + (α + 1).",
+   "La deuxième case orange regroupe les deux α : (1 + 1)α + 1.",
+   "La troisième case remplace 1 + 1 par 0 : c’est la règle 1.",
+   "La case verte donne le résultat : 1."
+  ],
+  "a_voir": "Deux outils suffisent : regrouper, puis appliquer 1 + 1 = 0."
+ },
+ {
+  "code": "67-016",
+  "a_dire": "α × α est le carré α², et la règle donne α + 1 : la case de la ligne α et de la colonne α est α + 1.",
+  "legende_titre": "La case α fois α",
+  "lecture": [
+   "À gauche, trois cases : α × α (bleu), α² (orange), α + 1 (vert).",
+   "La première flèche dit : α × α est, par définition, le carré α².",
+   "La deuxième flèche applique la règle 2 : α² = α + 1.",
+   "À droite, la case verte de la table est celle de la ligne α et de la colonne α ; elle contient α + 1."
+  ],
+  "a_voir": "Une seule case se calcule avec la seule règle 2."
+ },
+ {
+  "code": "67-017",
+  "a_dire": "α(α + 1) = α² + α = (α + 1) + α = 1 : α et α + 1 sont inverses l’un de l’autre.",
+  "legende_titre": "Le produit de α par α + 1",
+  "lecture": [
+   "Les quatre cases du haut sont les étapes du calcul de α(α + 1).",
+   "On développe d’abord, puis on remplace α² par α + 1, puis α + α vaut 0 et il reste 1.",
+   "En bas, α (bleu) et α + 1 (violet) sont reliés par une flèche à deux pointes : leur produit est 1.",
+   "Deux éléments de produit 1 sont inverses l’un de l’autre."
+  ],
+  "a_voir": "Le produit vaut 1 : α et α + 1 sont inverses."
+ },
+ {
+  "code": "67-018",
+  "a_dire": "Dans 𝔽₄ sans le 0, chaque ligne de la multiplication contient 1 ; dans la ligne du 2 de ℤ/4ℤ, 1 manque : le test échoue.",
+  "legende_titre": "Chercher le 1 dans chaque ligne",
+  "lecture": [
+   "À gauche, le carré 3 × 3 de 𝔽₄ sans le 0 : chaque ligne a une case verte « 1 ».",
+   "À droite, la ligne du 2 de ℤ/4ℤ : 2 × 0, 2 × 1, 2 × 2, 2 × 3 donnent 0, 2, 0, 2.",
+   "Aucune case n’est verte à droite : le texte rouge dit que 1 est absent.",
+   "Un élément a un inverse exactement quand 1 est dans sa ligne."
+  ],
+  "a_voir": "Chercher un 1 dans la ligne suffit pour savoir si l’élément a un inverse."
+ },
+ {
+  "code": "67-019",
+  "a_dire": "x² + x + 1 n’a pas de racine dans ℤ/2ℤ, donc la construction de Kronecker ajoute une racine α, qui vérifie α² = α + 1.",
+  "legende_titre": "D’où vient la règle sur α",
+  "lecture": [
+   "En haut, le polynôme x² + x + 1 sur ℤ/2ℤ ; on l’essaie en 0 puis en 1.",
+   "Les deux cases grises donnent 1 chaque fois : aucune racine, donc le polynôme est irréductible.",
+   "La case orange est le geste de Kronecker : on ajoute une racine α. La case bleue dit alors α² + α + 1 = 0.",
+   "On ajoute α + 1 de chaque côté : la case verte donne α² = α + 1."
+  ],
+  "a_voir": "Comme le polynôme n’a pas de racine dans ℤ/2ℤ, on en ajoute une, α, et elle vérifie α² = α + 1."
+ },
+ {
+  "code": "67-020",
+  "a_dire": "Un corps fini est un corps qui a un nombre fini d’éléments, contrairement aux rationnels.",
+  "legende_titre": "Corps fini et corps infini",
+  "lecture": [
+   "La ligne violette est ℚ, les rationnels : la case en pointillé dit que la liste ne s’arrête pas.",
+   "La ligne du milieu est ℤ/5ℤ : cinq éléments, 0 à 4.",
+   "La ligne du bas est 𝔽₄ : quatre éléments, 0, 1, α, α + 1.",
+   "Les deux lignes bleues sont des corps finis."
+  ],
+  "a_voir": "Seule différence avec ℚ : on peut compter les éléments."
+ },
+ {
+  "code": "67-021",
+  "a_dire": "L’ordre d’un corps fini est son nombre d’éléments : « corps d’ordre 4 » veut dire « corps à 4 éléments ».",
+  "legende_titre": "Un mot pour le nombre d’éléments",
+  "lecture": [
+   "Le cadre en pointillé contient les quatre éléments de 𝔽₄.",
+   "L’accolade compte : 4 éléments.",
+   "La flèche mène à la case orange : ordre du corps = 4.",
+   "En bas, les deux expressions sont égales : « corps d’ordre 4 » et « corps à 4 éléments »."
+  ],
+  "a_voir": "L’ordre est le nombre d’éléments du corps entier."
+ },
+ {
+  "code": "67-022",
+  "a_dire": "L’ordre d’un corps fini est une puissance d’un premier ; ℤ/6ℤ a 6 éléments mais n’est pas un corps.",
+  "legende_titre": "Ordre d’un corps et puissance d’un premier",
+  "lecture": [
+   "En haut, 𝔽₄ en vert : son ordre est 4 = 2², une puissance d’un nombre premier.",
+   "Au milieu, ℤ/6ℤ en rouge : son ordre est 6 = 2 × 3, pas une puissance d’un nombre premier.",
+   "Les cases orange 2 et 3 sont deux éléments non nuls dont le produit est 0.",
+   "La case rouge du bas dit que ce n’est pas un corps."
+  ],
+  "a_voir": "L’ordre d’un corps est une puissance d’un premier ; ℤ/6ℤ a 6 éléments mais n’est pas un corps."
+ },
+ {
+  "code": "67-023",
+  "a_dire": "Le plus petit nombre p de termes égaux à 1 de somme nulle est premier : sinon deux sommes non nulles auraient un produit nul.",
+  "legende_titre": "Pourquoi la caractéristique est première",
+  "lecture": [
+   "La grille bleue a 2 lignes et 3 colonnes de « 1 » : 6 termes en tout.",
+   "Une ligne est une somme de 3 termes ; les deux lignes comptent 2 fois cette somme : le produit des sommes de 2 et de 3 termes a 6 termes.",
+   "Si 6 était le plus petit nombre donnant 0, ce produit vaudrait 0.",
+   "La case rouge dit que c’est faux : deux éléments non nuls n’ont pas un produit nul dans un corps."
+  ],
+  "a_voir": "Un nombre composé donnerait un produit nul de deux éléments non nuls."
+ },
+ {
+  "code": "67-024",
+  "a_dire": "Le corps premier est le petit corps des sommes de 1 à l’intérieur de F ; dans le corps à quatre éléments, il ne contient que 0 et 1.",
+  "legende_titre": "Un petit corps dans le grand",
+  "lecture": [
+   "Le grand cadre gris est le corps F, à 4 éléments.",
+   "Le cadre bleu contient 0 et 1 : le corps premier ; l’arc bleu dit 1 + 1 = 0.",
+   "Les cases orange α et α + 1 sont dans F mais hors du cadre bleu : elles ne sont pas des sommes de 1.",
+   "Le corps premier ne contient que les sommes de 1."
+  ],
+  "a_voir": "Le corps premier est contenu dans F et ne contient que les sommes de 1."
+ },
+ {
+  "code": "67-025",
+  "a_dire": "Le signe 𝔽_p désigne le corps premier : p est le nombre de termes égaux à 1 dont la somme vaut 0, et aussi son nombre d’éléments.",
+  "legende_titre": "Lire le signe du corps premier",
+  "lecture": [
+   "Le grand signe se lit en deux parties : la lettre à double barre dit « un corps », l’indice p dit « p éléments ».",
+   "Première ligne bleue : p = 2, les éléments sont 0 et 1.",
+   "Deuxième ligne bleue : p = 3, les éléments sont 0, 1 et 1 + 1.",
+   "À droite de chaque ligne, le nombre d’éléments est écrit en orange."
+  ],
+  "a_voir": "L’indice p est à la fois le nombre de 1 pour obtenir 0 et le nombre d’éléments."
+ },
+ {
+  "code": "67-026",
+  "a_dire": "Le corps F est un espace vectoriel sur 𝔽_p : chaque élément s’écrit d’une seule façon a₁u₁ + ⋯ + aₙuₙ avec les aᵢ dans 𝔽_p.",
+  "legende_titre": "Chaque élément avec des coefficients",
+  "lecture": [
+   "La ligne bleue du bas est la base de F : u₁, u₂, ⋯, uₙ.",
+   "La ligne orange du haut contient les coefficients a₁, a₂, ⋯, aₙ, pris dans 𝔽_p ; chaque signe × relie un coefficient à son élément de base.",
+   "Les flèches vertes rassemblent les produits dans la case verte : x = a₁u₁ + ⋯ + aₙuₙ.",
+   "Pour chaque x, il y a une seule écriture."
+  ],
+  "a_voir": "Un élément de F est une somme de coefficients fois éléments de la base, écrite d’une seule façon."
+ },
+ {
+  "code": "67-027",
+  "a_dire": "Avec p = 2 et deux coefficients, chaque coefficient a 2 choix : 2 × 2 = 4 listes, donc 4 éléments, soit p^n.",
+  "legende_titre": "Compter les listes de coefficients",
+  "lecture": [
+   "Les quatre cases bleues sont les listes de deux coefficients : 00, 01, 10, 11.",
+   "L’accolade du haut dit 2 choix pour le second coefficient ; le texte vertical dit 2 choix pour le premier.",
+   "La flèche verte mène au calcul 2 × 2 = 4.",
+   "Une liste correspond à un seul élément : il y a donc 4 éléments."
+  ],
+  "a_voir": "On compte les listes : p choix par coefficient, n coefficients."
+ },
+ {
+  "code": "67-028",
+  "a_dire": "Les éléments 0, 1, α, α + 1 s’écrivent a·1 + b·α, et leurs coefficients forment les quatre mots de deux bits 00, 10, 01, 11.",
+  "legende_titre": "Les quatre éléments comme mots de bits",
+  "lecture": [
+   "La colonne bleue de gauche donne les quatre éléments.",
+   "La colonne grise du milieu les écrit sous la forme a·1 + b·α avec a et b égaux à 0 ou 1.",
+   "La colonne verte de droite garde seulement les coefficients, a puis b.",
+   "Les quatre mots obtenus sont 00, 10, 01, 11."
+  ],
+  "a_voir": "Chaque élément de 𝔽₄ est un mot de deux bits."
+ },
+ {
+  "code": "67-029",
+  "a_dire": "Si F a 4 éléments et si E a une base de 2 éléments sur F, chaque élément de E s’écrit avec 2 coefficients de F, donc E a 4 × 4 = 16 éléments.",
+  "legende_titre": "Le grand corps compté par coefficients",
+  "lecture": [
+   "Les seize points bleus sont les éléments de E, en 4 lignes et 4 colonnes.",
+   "Les lignes correspondent aux 4 valeurs du premier coefficient ; les colonnes, aux 4 valeurs du second.",
+   "La flèche verte mène au calcul 4 × 4 = 16.",
+   "En général, E a q^n éléments ; ici 4² = 16."
+  ],
+  "a_voir": "Chaque coefficient a q valeurs, et il y a n coefficients."
+ },
+ {
+  "code": "67-030",
+  "a_dire": "6 = 2 × 3 n’apparaît ni parmi les puissances de 2 ni parmi les puissances de 3 : aucun corps n’a 6 éléments.",
+  "legende_titre": "Où est 6 parmi les puissances",
+  "lecture": [
+   "Sur la droite graduée, les points bleus au-dessus sont les puissances de 2 : 2, 4, 8, 16.",
+   "Les points violets sous la droite sont les puissances de 3 : 3, 9, 27.",
+   "Le point rouge est 6 : il n’est dans aucune des deux listes.",
+   "Le texte rouge rappelle que 6 = 2 × 3."
+  ],
+  "a_voir": "6 est absent des deux listes, donc aucun corps n’a 6 éléments."
+ }
+]

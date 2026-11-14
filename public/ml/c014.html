@@ -1,0 +1,310 @@
+<div class="pk">Chapitre 14</div>
+<h1>La tendance centrale et la moyenne</h1>
+<p class="h1en">Central tendency and the mean</p>
+<p><b>Sources</b> — Vol. 3, §2.1 « Middle Ground Madness : Exploring Measures of Central Tendency » et §2.1.1 « In The Mean Time, What’s the Typical Outcome ? » (p. 13–15.</p>
+<h2>1. Le problème concret</h2>
+<p class="h2en">1. The concrete problem</p>
+<p>Le week-end du 15 au 16 février 2003, une équipe de voleurs vide plus de cent coffres dans la salle forte du centre du diamant d’Anvers, en Belgique. Leur chef, Leonardo Notarbartolo, avait loué un bureau dans le bâtiment pour observer les lieux pendant longtemps. Le bâtiment avait des capteurs sismiques, des détecteurs infrarouges et une porte de coffre à 100 millions de combinaisons. La préparation a donc compté autant que l’exécution.</p>
+<p class="en">On the weekend of 15–16 February 2003, a team of thieves emptied more than a hundred safe deposit boxes in the vault of the Antwerp Diamond Centre, in Belgium. Their leader, Leonardo Notarbartolo, had rented an office in the building to observe the place for a long time. The building had seismic sensors, infrared detectors and a vault door with 100 million combinations. So the preparation mattered as much as the execution.</p>
+<p>Dans ce livre, nous préparons ce casse sur le papier, avec des statistiques (et seulement sur le papier). Une question vient tout de suite : en quittant le centre, combien de caméras de surveillance allons-nous croiser dans une rue ? L’auteur de notre livre source a relevé les caméras rue par rue autour du centre. Ses chiffres servent d’exemple : il précise lui-même qu’ils sont inventés pour l’apprentissage.</p>
+<p class="en">In this book we plan that heist on paper, with statistics (and only on paper). A question comes at once: when we leave the center, how many surveillance cameras will we meet in a street? The author of our source book recorded the cameras street by street around the center. His numbers are an example: he states himself that they were made up for teaching.</p>
+<img class="vf" src="/ml/img/c014/p0579_1.svg" alt="combien de caméras dans chaque rue ? caméras xᵢ 1. Rijfstraat 5 2. Hoveniersstraat 5 3. Schupstraat 3 4. Pelikaanstraat 3 5. Appelmansstraat 4 6. Vestingstraat 2 7. Herentalsestraat 3 8. Lange Herentalsestraat 6 9. De Keyserlei 4 neuf nombres → il nous faut UN seul nombre" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.1 :</b> La situation. Chaque bande grise est une rue ; chaque petit carré rouge est une caméra. Compte les carrés de la rue 8 : il y en a 6. Le nombre à droite, <span class="m">𝑥</span><sub class="m">𝑖</sub>, est ce compte. Neuf rues, neuf nombres.</p>
+<p class="cap en">The situation. Each gray band is a street; each small red square is a camera. Count the squares of street 8 there are 6. The number on the right, <span class="m">𝑥</span><sub class="m">𝑖</sub>, is that count. Nine streets, nine numbers.</p>
+<p>Le tableau imprimé du livre source donne 4 caméras à Lange Herentalsestraat, mais sa liste détaillée en contient 6. Nous avons recompté cette liste caméra par caméra (chapitre 3) et gardons 6. Voici les comptes de la figure 14.1, en tableau.</p>
+<p class="en">The printed table of the source book gives 4 cameras for Lange Herentalsestraat, but its detailed list contains 6. We recounted that list camera by camera (chapter 3) and keep 6. Here are the counts of figure 14.1, as a table.</p>
+<img class="vm" src="/ml/img/c014/p0580_2.svg" alt="𝑖 rue caméras 𝑥𝑖 1 Rijfstraat 5 2 Hoveniersstraat 5 3 Schupstraat 3 4 Pelikaanstraat 3 5 Appelmansstraat 4 6 Vestingstraat 2 7 Herentalsestraat 3 8 Lange Herentalsestraat 6 9 De Keyserlei 4" style="--w:24.31" loading="lazy">
+<p class="en">The table lists the nine streets, numbered <span class="m">𝑖 = 1</span> to <span class="m">9</span>, with the number of cameras <span class="m">𝑥</span><sub class="m">𝑖</sub> in each street.</p>
+<p><b>Avant d’aller plus loin : lire</b> <span class="m">𝑥</span><sub class="m">8</sub></p>
+<p>Le tableau est un tableau entrée → sortie (chapitre 10). L’entrée est le numéro de la rue ; la sortie est son nombre de caméras. Pour écrire « les caméras de la rue 8 », on place le numéro en petit, en bas de la lettre : <span class="m">𝑥</span><sub class="m">8</sub>. On lit « <span class="m">𝑥</span> indice 8 ». Ce petit 8 n’est pas multiplié : c’est une étiquette, le numéro écrit devant la rue sur la figure 14.1. Ainsi <span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 6</span> et <span class="m">𝑥</span><sub class="m">6</sub> <span class="m">= 2</span>.</p>
+<p class="en"><b>Before going further: reading</b> <span class="m">𝑥</span><sub class="m">8</sub><b>.</b> The table is an input → output table (chapter 10). The input is the number of the street; the output is its number of cameras. To write “the cameras of street 8”, we put the number in small type, at the bottom of the letter: <span class="m">𝑥</span><sub class="m">8</sub>. It reads “<span class="m">𝑥</span> sub 8”. This small 8 is not multiplied: it is a label, the number written in front of the street in figure 14.1. So <span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 6</span> and <span class="m">𝑥</span><sub class="m">6</sub> <span class="m">= 2</span>.</p>
+<p>Pour parler d’une rue sans dire laquelle, on remplace le numéro par une lettre : <span class="m">𝑥</span><sub class="m">𝑖</sub> est le nombre de caméras de la rue numéro <span class="m">𝑖</span>. Avec <span class="m">𝑖 = 1</span>, on lit <span class="m">𝑥</span><sub class="m">1</sub> <span class="m">= 5</span> ; avec <span class="m">𝑖 = 9</span>, <span class="m">𝑥</span><sub class="m">9</sub> <span class="m">= 4</span>.</p>
+<p class="en">To talk about a street without saying which one, we replace the number by a letter: <span class="m">𝑥</span><sub class="m">𝑖</sub> is the number of cameras of street number <span class="m">𝑖</span>. With <span class="m">𝑖 = 1</span> we read <span class="m">𝑥</span><sub class="m">1</sub> <span class="m">= 5</span>; with <span class="m">𝑖 = 9</span>, <span class="m">𝑥</span><sub class="m">9</sub> <span class="m">= 4</span>.</p>
+<p>Neuf nombres, c’est encore lisible. Mais imagine une ville entière : 5 000 rues. Personne ne peut garder 5 000 nombres en tête. Il nous faut <i>un seul</i> nombre qui dise : « dans une rue d’ici, attends-toi à environ tant de caméras ». Un nombre de ce genre s’appelle une <b>mesure de tendance centrale</b>. La plus connue est la <b>moyenne</b>.</p>
+<p class="en">Nine numbers are still readable. But imagine a whole city: 5,000 streets. Nobody can hold 5,000 numbers in mind. We need <i>one single</i> number that says: “in a street around here, expect about so many cameras”. A number of this kind is called a <b>measure of central tendency</b>. The best known one is the <b>mean</b>.</p>
+<h2>2. La figure</h2>
+<p class="h2en">2. The figure</p>
+<p>Voici une idée simple. Rassemble toutes les caméras des neuf rues en un seul tas : <span class="m">5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4 = 35</span> caméras. Puis répartis ce tas à parts égales entre les neuf rues. Chaque rue reçoit <span class="m">35 ÷ 9 ≈ 3,89</span> caméras.</p>
+<p class="en">Here is a simple idea. Gather all the cameras of the nine streets into one pile: <span class="m">5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4 = 35</span> cameras. Then share this pile out equally among the nine streets. Each street gets <span class="m">35 ÷ 9 ≈ 3.89</span> cameras.</p>
+<p><b>Avant d’aller plus loin : partager 35 en 9 parts égales</b></p>
+<p>Diviser 35 par 9, c’est faire 9 tas égaux avec 35 caméras et regarder un seul tas. Donne d’abord 3 caméras entières à chaque rue : <span class="m">9 × 3 = 27</span>. Il reste <span class="m">35 − 27 = 8</span> caméras. Pour les partager aussi, coupe chacune en 9 morceaux égaux. Un morceau vaut</p>
+<img class="vm" src="/ml/img/c014/p0582_3.svg" alt="1 ≈ 0,111, et 9 morceaux refont une caméra 9 entière : 9 × 1 = 1 (figure 14.2, en haut). 9 Before going further: sharing 35 into 9 equal" style="--w:24.31" loading="lazy">
+<p class="en"><b>parts.</b> Dividing 35 by 9 means making 9 equal piles out of 35 cameras and looking at one pile. First give 3 whole cameras to each street: <span class="m">9 × 3 = 27</span>. There are <span class="m">35 − 27 = 8</span> cameras left. To share them too, cut each one into 9 equal pieces.</p>
+<img class="vm" src="/ml/img/c014/p0583_4.svg" alt="One piece is worth 1 ≈ 0.111, and 9 pieces make a 9 whole camera again: 9 × 1 = 1 (figure 14.2, top). 9" style="--w:24.31" loading="lazy">
+<p>Chaque rue reçoit un morceau de chacune des 8</p>
+<img class="vm" src="/ml/img/c014/p0583_5.svg" alt="caméras, soit 8 ≈ 0,89. Sa part est 3 + 8, que l’on 9 9 écrit 35 (figure 14.2, en bas). Pourquoi la virgule ne 9" style="--w:24.31" loading="lazy">
+<p>s’arrête-t-elle pas ? Écris 8 comme 80 dixièmes : <span class="m">80 ÷ 9</span> donne 8 dixièmes, et il reste 8 dixièmes. Ces 8 dixièmes font 80 centièmes : on retrouve <span class="m">80 ÷ 9</span>, avec le même reste 8. Le chiffre 8 revient sans fin :</p>
+<img class="vm" src="/ml/img/c014/p0583_6.svg" alt="3,888 … On écrit 3,89, et la fraction 35 garde la 9" style="--w:24.31" loading="lazy">
+<p>valeur exacte.</p>
+<p class="en">Each street receives one piece of each of the 8</p>
+<img class="vm" src="/ml/img/c014/p0583_7.svg" alt="cameras, that is 8 ≈ 0.89. Its share is 3 + 8, written 9 9 35 (figure 14.2, bottom). Why do the decimals 9" style="--w:24.31" loading="lazy">
+<p class="en">never stop? Write 8 as 80 tenths: <span class="m">80 ÷ 9</span> gives 8 tenths, and 8 tenths remain. These 8 tenths are 80 hundredths: we are back to <span class="m">80 ÷ 9</span>, with the same remainder 8. The digit 8 comes back forever:</p>
+<img class="vm" src="/ml/img/c014/p0583_8.svg" alt="3.888 … We write 3.89, and the fraction 35 keeps 9" style="--w:24.31" loading="lazy">
+<p class="en">the exact value.</p>
+<img class="vf" src="/ml/img/c014/p0584_9.svg" alt="longueur 1 9 morceaux 9 × 1/9 = 1 1/9 ≈ 0,111" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0584_10.svg" alt="les 8 caméras qui restent, chacune coupée en 9 : chaque rue reçoit 8 morceaux de 1/9 3 + 8/9 ≈ 3,89" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0584_11.svg" alt="27 caméras : 3 par rue" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0584_12.svg" alt="rue 1 2 3 4 5 6 7 8 9" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.2 :</b> Le partage, construit. En haut : une longueur 1</p>
+<img class="vm" src="/ml/img/c014/p0584_13.svg" alt="coupée en 9 morceaux de 1 ≈ 0,111; 9 morceaux refont 9" style="--w:24.31" loading="lazy">
+<p>1. En bas : chaque rue reçoit 3 caméras entières (bleu, 27 en tout), puis un morceau de chacune des 8 caméras</p>
+<img class="vm" src="/ml/img/c014/p0584_14.svg" alt="restantes (orange). Sa part est 3 + 8 ≈ 3,89, la ligne 9" style="--w:24.31" loading="lazy">
+<p>violette.</p>
+<p class="en">The sharing, built. Top: a length 1 cut into 9 pieces of</p>
+<img class="vm" src="/ml/img/c014/p0584_15.svg" alt="1 ≈ 0.111; 9 pieces make 1 again. Bottom: each street 9 receives 3 whole cameras (blue, 27 in all), then one" style="--w:24.31" loading="lazy">
+<p class="en">piece of each of the 8 remaining cameras (orange). Its</p>
+<img class="vm" src="/ml/img/c014/p0584_16.svg" alt="share is 3 + 8 ≈ 3.89, the purple line. 9" style="--w:24.31" loading="lazy">
+<p><b>Tu vas peut-être objecter… — You may object…</b> « <span class="m">35 ÷ 9</span>, c’est 3 reste 8. J’écris donc 3,8. » Vérifie en refaisant les tas : <span class="m">9 × 3,8 = 34,2</span>. Il manque <span class="m">0,8</span> caméra. Le reste 8 compte 8 caméras entières, pas 8 dixièmes. Sur la figure 14.2, ce sont les 8 caméras orange, chacune coupée en 9. Chaque rue en reçoit</p>
+<img class="vm" src="/ml/img/c014/p0585_17.svg" alt="8 ≈ 0,89, pas 0,8 : la part est 3,89, et 9 × 35 = 35. 9 9 “35 ÷ 9 is 3 remainder 8. So I write 3.8.” Check" style="--w:24.31" loading="lazy">
+<p class="en">by remaking the piles: <span class="m">9 × 3.8 = 34.2</span>. There is <span class="m">0.8</span> of a camera missing. The remainder 8 counts 8 whole cameras, not 8 tenths. In figure 14.2, these are the 8 orange cameras, each</p>
+<img class="vm" src="/ml/img/c014/p0585_18.svg" alt="cut into 9. Each street receives 8 ≈ 0.89 of 9 them, not 0.8: the share is 3.89, and 9 × 35 = 35. 9" style="--w:24.31" loading="lazy">
+<p><b>Le niveau du partage égal</b></p>
+<img class="vf" src="/ml/img/c014/p0586_19.svg" alt="8 vert : surplus au-dessus de la ligne (total 41/9 ≈ 4,56) hachures rouges : manque sous la ligne (total 41/9) 7 ligne violette : la moyenne x̄x̄ = 35/9 ≈ 3,89 i  e 6 u 6  r la 5 5 s  5 n a 4 4  d i 4 x s  ra 3 é 3 3 3 m 2 ca 2 1 0 x1 x2 x3 x4 x5 x6 x7 x8 x9 rue numéro i" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.3 :</b> La figure principale. Chaque barre est une rue, sa hauteur est <span class="m">𝑥</span><sub class="m">𝑖</sub>. La ligne violette en tirets est le niveau</p>
+<img class="vm" src="/ml/img/c014/p0586_20.svg" alt="du partage égal, 𝑥 = 35/9 ≈ 3,89̄ . Les morceaux verts" style="--w:24.31" loading="lazy">
+<p>dépassent la ligne ; les cases hachurées rouges sont ce qui manque pour l’atteindre. Le vert total (<span class="m">41/9</span>) vaut exactement le rouge total (<span class="m">41/9</span>) : si tu déplaces le vert dans le rouge, toutes les barres arrivent à la même hauteur.</p>
+<p class="en">The main figure. Each bar is a street, its height is <span class="m">𝑥</span><sub class="m">𝑖</sub>. The purple dashed line is the level of equal sharing,</p>
+<img class="vm" src="/ml/img/c014/p0586_21.svg" alt="𝑥 = 35/9 ≈ 3.89̄ . The green pieces stick out above the" style="--w:24.31" loading="lazy">
+<p class="en">line; the red hatched boxes are what is missing to reach it. The total green (<span class="m">41/9</span>) equals exactly the total red (<span class="m">41/9</span>): if you move the green into the red, every bar reaches the same height.</p>
+<p>Regarde la figure 14.3. Au-dessus de la ligne, il y a une rue à 6, deux rues à 5 et deux rues à 4. En</p>
+<img class="vm" src="/ml/img/c014/p0587_22.svg" alt="fractions exactes (𝑥 =̄ 35 ), le surplus vaut 9 19 + 2 × 10 + 2 × 1 = 41 ≈ 4,56. En dessous, il y a 9 9 9 9" style="--w:24.31" loading="lazy">
+<p>trois rues à 3 et une rue à 2. Le manque vaut</p>
+<img class="vm" src="/ml/img/c014/p0587_23.svg" alt="3 × 8 + 17 = 41 . Compte en morceaux de 1 de la 9 9 9 9" style="--w:24.31" loading="lazy">
+<p>figure 14.2 : <span class="m">19 + 10 + 10 + 1 + 1 = 41</span> morceaux au-dessus, <span class="m">8 + 8 + 8 + 17 = 41</span> en dessous.</p>
+<p class="en">Look at figure 14.3. Above the line there are one street with 6, two with 5 and two with 4. In exact</p>
+<img class="vm" src="/ml/img/c014/p0587_24.svg" alt="fractions (𝑥 =̄ 35 ), the surplus is 9 19 + 2 × 10 + 2 × 1 = 41 ≈ 4.56. Below, there are 9 9 9 9" style="--w:24.31" loading="lazy">
+<p class="en">three streets with 3 and one with 2. The shortfall is</p>
+<img class="vm" src="/ml/img/c014/p0587_25.svg" alt="3 × 8 + 17 = 41 . Count in pieces of 1 from 9 9 9 9" style="--w:24.31" loading="lazy">
+<p class="en">figure 14.2: <span class="m">19 + 10 + 10 + 1 + 1 = 41</span> pieces above, <span class="m">8 + 8 + 8 + 17 = 41</span> below.</p>
+<p>Le surplus remplit exactement le manque. C’est pour cela que la ligne est à <span class="m">3,89</span> et pas ailleurs : plus haut, le manque dépasserait le surplus ; plus bas, ce serait l’inverse. Ce niveau de partage égal porte un nom : la <b>moyenne</b>. On la note <span class="m">𝑥</span>, «<span class="m">̄</span> <span class="m">𝑥</span> barre ».</p>
+<p class="en">The surplus fills the shortfall exactly. That is why the line sits at <span class="m">3.89</span> and nowhere else: higher up, the shortfall would exceed the surplus; lower down, the reverse. This level of equal sharing has a name: the <b>mean</b>. We write it <span class="m">𝑥</span>, “<span class="m">̄</span> <span class="m">𝑥</span> bar”.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « La moyenne, c’est le milieu du tableau : la rue 5, puisque <span class="m">(1 + 2 + ⋯ + 9) ÷ 9 = 45 ÷ 9 = 5</span>. » Ce calcul fait la moyenne des <i>numéros</i> <span class="m">𝑖</span>, les entrées. Sur la figure 14.3, il donne le milieu de l’axe horizontal. Or la question porte sur les caméras <span class="m">𝑥</span><sub class="m">𝑖</sub>, les sorties, lues sur l’axe vertical. Renumérote les rues de 11 à 19 : la moyenne des numéros devient 15, alors que les caméras n’ont pas changé. La moyenne cherchée reste <span class="m">35 ÷ 9 ≈ 3,89</span>.</p>
+<p class="en">“The mean is the middle of the table: street 5, since <span class="m">(1+2+⋯+9)÷9 = 45÷9 = 5</span>.” This computation averages the <i>numbers</i> <span class="m">𝑖</span>, the inputs. In figure 14.3, it gives the middle of the horizontal axis. But the question is about the cameras <span class="m">𝑥</span><sub class="m">𝑖</sub>, the outputs, read on the vertical axis. Renumber the streets from 11 to 19 the mean of the numbers becomes 15, while the cameras have not changed. The mean we want is still <span class="m">35 ÷ 9 ≈ 3.89</span>.</p>
+<h2>3. La définition, symbole par symbole</h2>
+<p class="h2en">3. The definition, symbol by symbol</p>
+<img class="vm" src="/ml/img/c014/p0588_26.svg" alt="Les mots de ce chapitre — The words of this chapter" style="--w:24.31" loading="lazy">
+<p><b>observation</b> : un nombre mesuré sur un élément ; les 6 caméras de la rue 8 sont une observation.</p>
+<p class="en">observation: a number measured on one element; the 6 cameras of street 8 are an observation.</p>
+<p><b>échantillon</b> : la liste de toutes les observations</p>
+<p class="en">que l’on a ; nos neuf nombres <span class="m">5, 5, 3, 3, 4, 2, 3, 6, 4</span>. sample: the list of all the observations we have; our nine numbers.</p>
+<p class="en"><b>indice</b> : le petit numéro en bas d’une lettre, qui dit de quel élément on parle ; dans <span class="m">𝑥</span><sub class="m">8</sub>, l’indice 8 désigne la rue 8. index: the small number at the bottom of a letter, saying which element we mean; in <span class="m">𝑥</span><sub class="m">8</sub>, the index 8 names street 8.</p>
+<p class="en"><b>somme</b> : le résultat d’une addition ; la somme de nos neuf nombres est 35. sum: the result of an addition; the sum of our nine numbers is 35.</p>
+<p class="en"><b>tendance centrale</b> : un seul nombre choisi pour représenter toute une liste ; 3,89 pour nos neuf rues. central tendency: one number chosen to stand for a whole list; 3.89 for our nine streets.</p>
+<p class="en"><b>moyenne (arithmétique)</b> : le total partagé à parts égales ; <span class="m">35 ÷ 9 ≈ 3,89</span>. (arithmetic) mean: the total shared out equally; <span class="m">35 ÷ 9 ≈ 3.89</span>.</p>
+<p class="en"><b>écart à la moyenne</b> : la différence <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span> ; pour la rue 8, <span class="m">6 − 3,89 = +2,11</span>. deviation from the mean: the difference <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span>; for street 8, <span class="m">6 − 3.89 = +2.11</span>.</p>
+<p><b>valeur aberrante</b> : une observation très loin de toutes les autres ; une rue à 40 caméras parmi des rues à 2 ou 6.</p>
+<p class="en">outlier: an observation very far from all the others; a street with 40 cameras among streets with 2 to 6.</p>
+<p><b>arrondir</b> : remplacer un nombre à virgule par l’entier voisin ; 3,89 arrondi vers le haut donne 4.</p>
+<p class="en">rounding: replacing a decimal number by a neighboring whole number; 3.89 rounded up gives 4.</p>
+<img class="vm" src="/ml/img/c014/p0590_27.svg" alt="Définition — moyenne arithmétique" style="--w:24.31" loading="lazy">
+<p>Soit <span class="m">𝑛</span> valeurs numériques <span class="m">𝑥</span><sub class="m">1</sub><span class="m">, 𝑥</span><sub class="m">2</sub><span class="m">, … , 𝑥</span><sub class="m">𝑛</sub>. Leur <b>moyenne</b> est</p>
+<img class="vm" src="/ml/img/c014/p0590_28.svg" alt="𝑛 1 𝑥1 + 𝑥2 + ⋯ + 𝑥𝑛 𝑥̄ = ∑𝑥𝑖 = . 𝑛 𝑛 𝑖=1" style="--w:24.31" loading="lazy">
+<p>C’est la valeur que recevrait chaque élément si l’on partageait le total à parts égales. La moyenne est une <b>mesure de tendance centrale</b> : un seul nombre qui représente la valeur typique d’une liste.</p>
+<p class="en">Let <span class="m">𝑛</span> numerical values <span class="m">𝑥</span><sub class="m">1</sub><span class="m">, 𝑥</span><sub class="m">2</sub><span class="m">, … , 𝑥</span><sub class="m">𝑛</sub> be given.</p>
+<img class="vm" src="/ml/img/c014/p0590_29.svg" alt="1 𝑛 Their mean is 𝑥 =̄ ∑ 𝑥𝑖. It is the value 𝑛 𝑖=1 each element would receive if the total were" style="--w:24.31" loading="lazy">
+<p class="en">shared out equally. The mean is a <b>measure of central tendency</b>: one number that stands for the typical value of a list.</p>
+<img class="vf" src="/ml/img/c014/p0590_30.svg" alt="" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0591_31.svg" alt="n x̄x̄ = 1/n Σ x i Σ xᵢ = 35 i = 1 on partage en 9 on empile les 9 barres n = 9 observations x₁ … x₉ (vert) ÷ n = 9 parts égales (bleu) le compteur i va de 1 à n (rouge) 6 5 5 4 4 3 3 3 x̄x̄ ≈ 3,89 2 i=1 i=2 i=3 i=4 i=5 i=6 i=7 i=8 i=9" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.4 :</b> La formule décodée en couleurs. En vert, les <span class="m">𝑛</span> <span class="m">= 9</span> observations <span class="m">𝑥</span><sub class="m">𝑖</sub>, une barre chacune ; en rouge, le compteur <span class="m">𝑖</span> écrit sous chaque barre. En orange, la somme <span class="m">∑</span> : les neuf barres empilées en une seule, de hauteur 35. En bleu, la division par <span class="m">𝑛</span> : le tas découpé en 9 parts égales. En violet, le résultat <span class="m">𝑥</span><span class="m">̄</span> : la hauteur d’une part, <span class="m">3,89</span>.</p>
+<p class="cap en">The formula decoded in colors. In green, the <span class="m">𝑛 = 9</span> observations <span class="m">𝑥</span><sub class="m">𝑖</sub>, one bar each; in red, the counter <span class="m">𝑖</span> written under each bar. In orange, the sum <span class="m">∑</span>: the nine bars stacked into one, of height 35. In blue, the division by <span class="m">𝑛</span>: the pile cut into 9 equal parts. In purple, the result <span class="m">𝑥</span><span class="m">̄</span>: the height of one part, <span class="m">3.89</span>.</p>
+<p>Lisons chaque symbole sur la figure 14.4.</p>
+<p class="en">Let us read each symbol on figure 14.4.</p>
+<img class="vm" src="/ml/img/c014/p0592_32.svg" alt="𝑛 Le nombre de valeurs. C’est le nombre de" style="--w:24.31" loading="lazy">
+<p>barres vertes et le nombre de parts bleues de la figure 14.4. Ici, le nombre de rues : <span class="m">𝑛 = 9</span>.</p>
+<p class="en">The number of values. It is the number of green bars and the number of blue parts in figure 14.4. Here, the number of streets: <span class="m">𝑛 = 9</span>.</p>
+<img class="vm" src="/ml/img/c014/p0592_33.svg" alt="𝑖 Un compteur. Il prend les valeurs 1, 2, … , 𝑛" style="--w:24.31" loading="lazy">
+<p>l’une après l’autre. Ce sont les étiquettes rouges sous les barres. Il sert à désigner « la rue numéro <span class="m">𝑖</span>».</p>
+<p class="en">A counter. It takes the values <span class="m">1, 2, … , 𝑛</span> one after another. These are the red labels under the bars. It is used to say “street number <span class="m">𝑖</span>”.</p>
+<img class="vm" src="/ml/img/c014/p0592_34.svg" alt="𝑥𝑖 La valeur observée pour l’élément numéro 𝑖 :" style="--w:24.31" loading="lazy">
+<p>la hauteur de la barre verte numéro <span class="m">𝑖</span>. Dans le tableau, <span class="m">𝑥</span><sub class="m">1</sub> <span class="m">= 5</span> Rijfstraat) et <span class="m">𝑥</span><sub class="m">6</sub> <span class="m">= 2</span> Vestingstraat).</p>
+<p class="en">The value observed for element number <span class="m">𝑖</span>: the height of green bar number <span class="m">𝑖</span>. In the table, <span class="m">𝑥</span><sub class="m">1</sub> <span class="m">= 5</span> Rijfstraat) and <span class="m">𝑥</span><sub class="m">6</sub> <span class="m">= 2</span> Vestingstraat).</p>
+<img class="vm" src="/ml/img/c014/p0592_35.svg" alt="∑ La lettre grecque sigma majuscule. Elle" style="--w:24.31" loading="lazy">
+<p>ordonne : « additionne ». Ce qui est écrit à sa droite (<span class="m">𝑥</span><sub class="m">𝑖</sub>) est ce que l’on additionne. Sur la figure, c’est la barre orange : les neuf barres vertes empilées, hauteur 35.</p>
+<p class="en">The Greek capital letter sigma. It commands: “add up”. What is written on its right (<span class="m">𝑥</span><sub class="m">𝑖</sub>) is what gets added. On the figure, it is the orange bar: the nine green bars stacked, height 35.</p>
+<p><sub class="m">𝑖=1</sub>, <sub class="m">𝑛</sub> Les bornes de la somme. En bas : le</p>
+<p>compteur <span class="m">𝑖</span> commence à 1. En haut : il s’arrête à <span class="m">𝑛</span>. Donc</p>
+<img class="vm" src="/ml/img/c014/p0593_36.svg" alt="9 ∑ 𝑥𝑖 = 𝑥1 + 𝑥2 + ⋯ + 𝑥9 = 35. 𝑖=1" style="--w:24.31" loading="lazy">
+<p class="en">The bounds of the sum. Below: the counter <span class="m">𝑖</span> starts at 1. Above: it stops at <span class="m">𝑛</span>. So</p>
+<img class="vm" src="/ml/img/c014/p0593_37.svg" alt="9 ∑ 𝑥𝑖 = 𝑥1 + ⋯ + 𝑥9 = 35. 𝑖=1 1 Multiplier par 1 , c’est diviser par 𝑛 : le 𝑛 𝑛" style="--w:24.31" loading="lazy">
+<p>partage à parts égales entre les <span class="m">𝑛</span> éléments. Sur la figure, ce sont les 9 petites parts bleues, chacune de hauteur <span class="m">35/9</span>. Et</p>
+<img class="vm" src="/ml/img/c014/p0593_38.svg" alt="1 × 9 = 1 parce que 9 morceaux de 1 refont 9 9" style="--w:24.31" loading="lazy">
+<p>l’unité (figure 14.2).</p>
+<img class="vm" src="/ml/img/c014/p0593_39.svg" alt="Multiplying by 1 means dividing by 𝑛: the 𝑛" style="--w:24.31" loading="lazy">
+<p class="en">equal sharing among the <span class="m">𝑛</span> elements. On the figure, these are the 9 small blue parts, each</p>
+<img class="vm" src="/ml/img/c014/p0593_40.svg" alt="of height 35/9. And 1 × 9 = 1 because 9 9 pieces of 1 make the unit again (figure 14.2). 9 𝑥̄ Le résultat, la moyenne. La barre au-dessus" style="--w:24.31" loading="lazy">
+<p>du <span class="m">𝑥</span> se lit « moyenne des <span class="m">𝑥</span> ». Sur la figure, c’est la ligne violette, à la hauteur <span class="m">3,89</span>.</p>
+<p class="en">The result, the mean. The bar above the <span class="m">𝑥</span> reads “mean of the <span class="m">𝑥</span>”. On the figure, it is the purple line, at height <span class="m">3.89</span>.</p>
+<p>Nous allons calculer la moyenne de nos neuf rues : additionner les neuf nombres, puis diviser par 9.</p>
+<img class="vm" src="/ml/img/c014/p0594_41.svg" alt="1 35 𝑥 =̄ (5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4) = ≈ 3,89. 9 9" style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4 = 35</span> ; <span class="m">35 ÷ 9 = 3,888 … ≈ 3,89</span> caméras par rue. 3,89 caméras : une rue d’ici en a un peu moins de 4. La figure 14.5 refait ce calcul étape par étape.</p>
+<p class="en">We compute the mean of our nine streets: add the nine numbers, then divide by 9.</p>
+<img class="vm" src="/ml/img/c014/p0594_42.svg" alt="𝑥 =̄ 1 (5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4) = 35 ≈ 3.89. 9 9" style="--w:24.31" loading="lazy">
+<p class="en">With our numbers: the sum is 35; <span class="m">35 ÷ 9 = 3.888 … ≈ 3.89</span> cameras per street. A street around here has a little under 4. Figure 14.5 redoes this computation step by step.</p>
+<img class="vf" src="/ml/img/c014/p0595_43.svg" alt="Étape 1 — les données : neuf nombres" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0595_44.svg" alt="5 5 3 3 4 2 3 6 4 x₁ x₂ x₃ x₄ x₅ x₆ x₇ x₈ x₉ n = 9 rues, une valeur xᵢ par rue Étape 2 — la somme : tout en un tas" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0595_45.svg" alt="5 + 5 + 3 + 3 + 4 + 2 + 3 + 6 + 4 = 10 + 6 + 6 + 5 + 8 = 35 caméras le tas commun : le total Étape 3 — le partage : 35 ÷ 9 = 3,89" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c014/p0595_46.svg" alt="35 ÷ 9 = 3,888…  ≈ 3,89 x̄x̄ ≈ 3,89 caméras par rue chaque rue reçoit la même part du tas" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.5 :</b> Le calcul pas à pas. Étape 1 : les neuf observations, avec leur indice. Étape 2 : la somme, groupée pour aller plus vite (<span class="m">5 + 5 = 10</span>, <span class="m">3 + 3 = 6</span>, …), total 35. Étape 3 : la division par <span class="m">𝑛 = 9</span>, résultat <span class="m">3,89</span>.</p>
+<p class="cap en">The computation step by step. Step 1 the nine observations, with their index. Step 2 the sum, grouped to go faster (<span class="m">5 + 5 = 10</span>, <span class="m">3 + 3 = 6</span>, …), total 35. Step 3 the division by <span class="m">𝑛 = 9</span>, result <span class="m">3.89</span>.</p>
+<img class="vm" src="/ml/img/c014/p0595_47.svg" alt="Regarde le rôle de 1 dans ce calcul. Chaque rue 𝑛" style="--w:24.31" loading="lazy">
+<p>entre dans la somme une seule fois, puis le tout est</p>
+<img class="vm" src="/ml/img/c014/p0596_48.svg" alt="divisé par 9. Chaque rue pèse donc exactement 1 9" style="--w:24.31" loading="lazy">
+<p>du résultat. Aucune rue ne compte plus qu’une autre : la rue 8, avec ses 6 caméras, apporte <span class="m">6/9 ≈ 0,67</span> à la moyenne ; la rue 6, avec 2 caméras, apporte <span class="m">2/9 ≈ 0,22</span>.</p>
+<img class="vm" src="/ml/img/c014/p0596_49.svg" alt="Look at the role of 1 in this calculation. Each street 𝑛" style="--w:24.31" loading="lazy">
+<p class="en">enters the sum once, then the whole is divided by</p>
+<img class="vm" src="/ml/img/c014/p0596_50.svg" alt="9. So each street weighs exactly 1 of the result. 9" style="--w:24.31" loading="lazy">
+<p class="en">No street counts more than another: street 8, with its 6 cameras, contributes <span class="m">6/9 ≈ 0.67</span> to the mean; street 6, with 2 cameras, contributes <span class="m">2/9 ≈ 0.22</span>.</p>
+<img class="vm" src="/ml/img/c014/p0596_51.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Lis sur la figure 14.1 les caméras des rues 1 à 4 seulement : <span class="m">5, 5, 3, 3</span>. Calcule leur moyenne avec <span class="m">𝑛 = 4</span>. Tu dois trouver <span class="m">16 ÷ 4 = 4</span> caméras.</p>
+<p class="en">Read on figure 14.1 the cameras of streets 1 to 4 only: <span class="m">5, 5, 3, 3</span>. Compute their mean with <span class="m">𝑛 = 4</span>. You must find <span class="m">16 ÷ 4 = 4</span> cameras.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « 3,89 caméras, cela n’existe pas. Une caméra ne se coupe pas en morceaux. » C’est vrai : regarde la figure 14.3, aucune barre n’a la hauteur de la ligne violette. La moyenne n’a pas besoin d’être une valeur possible : c’est un niveau de partage, pas une rue réelle. Pour agir, on l’arrondit, et le sens de l’arrondi dépend du but. Nous voulons fuir sans être vus. Si nous prévoyons 4 caméras par rue et qu’il y en a 3, nous avons pris une précaution de trop. Si nous prévoyons 3 et qu’il y en a 4, une caméra nous filme. L’erreur la plus grave décide : nous arrondissons vers le haut, à 4. Dans un autre contexte, où sous-estimer ne coûte rien,</p>
+<img class="vm" src="/ml/img/c014/p0597_52.svg" alt="arrondir à 3 serait aussi défendable. “3.89 cameras do not exist. A camera cannot" style="--w:24.31" loading="lazy">
+<p class="en">be cut into pieces.” True: look at figure 14.3, no bar has the height of the purple line. The mean does not need to be a possible value: it is a sharing level, not a real street. To act, we round it, and the direction of rounding depends on the goal. We want to escape unseen. If we plan for 4 cameras per street and there are 3, we have taken one precaution too many. If we plan for 3 and there are 4, a camera films us. The more serious error decides: we round up, to 4. In another context, where underestimating costs nothing, rounding to 3 would also be defensible.</p>
+<img class="vm" src="/ml/img/c014/p0597_53.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">La moyenne est le niveau du partage égal : on met les 35 caméras en un tas et on donne la même part, <span class="m">35/9</span>, à chacune des 9 rues ; c’est la</p>
+<img class="vm" src="/ml/img/c014/p0597_54.svg" alt="cause de la formule 1 ∑ 𝑥 . 𝑛 𝑖" style="--w:24.31" loading="lazy">
+<p class="en">The mean is the level of equal sharing: put the 35 cameras in one pile and give the same share, <span class="m">35/9</span>, to each of the 9 streets; that is the cause</p>
+<img class="vm" src="/ml/img/c014/p0598_55.svg" alt="of the formula 1 ∑ 𝑥 . 𝑛 𝑖" style="--w:24.31" loading="lazy">
+<h2>4. Les effets</h2>
+<p class="h2en">4. The effects</p>
+<p><b>Premier effet : un seul nombre remplace la liste, et il rend le total</b></p>
+<img class="vm" src="/ml/img/c014/p0598_56.svg" alt="Avec 𝑥 ≈ 3,89̄ , tu peux dire en une phrase ce que" style="--w:24.31" loading="lazy">
+<p>contient le tableau : « une rue d’ici a en général 3 ou 4 caméras ». Ce nombre garde aussi une information exacte : le total. Nous allons retrouver le total à partir de la moyenne et de <span class="m">𝑛</span> :</p>
+<p>total <span class="m">= 𝑛 × ̄</span><span class="m">𝑥.</span></p>
+<img class="vm" src="/ml/img/c014/p0598_57.svg" alt="Avec nos nombres : 9 × 35 = 35 caméras, le total de la 9" style="--w:24.31" loading="lazy">
+<p>figure 14.4. Si l’on te donne la moyenne et le nombre de rues, tu retrouves le nombre total de caméras sans voir la liste.</p>
+<p class="en"><b>First effect: one number replaces the list, and it</b></p>
+<img class="vm" src="/ml/img/c014/p0598_58.svg" alt="gives back the total. With 𝑥 ≈ 3.89̄ you can say in" style="--w:24.31" loading="lazy">
+<p class="en">one sentence what the table contains: “a street around here usually has 3 or 4 cameras”. This number also keeps one exact piece of information: the total. We recover the total from the mean and</p>
+<img class="vm" src="/ml/img/c014/p0598_59.svg" alt="𝑛: total = 𝑛 × ̄𝑥. With our numbers: 9 × 35 = 35 9" style="--w:24.31" loading="lazy">
+<p class="en">cameras, the total of figure 14.4. Given the mean and the number of streets, you get back the total number of cameras without seeing the list.</p>
+<p><b>Deuxième effet : les écarts à la moyenne s’annulent</b></p>
+<p>Calcule pour chaque rue l’écart <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span>. La rue à 6 donne <span class="m">6 − 3,89 = +2,11</span>. Les deux rues à 5 donnent <span class="m">+1,11</span> chacune. Les deux rues à 4 donnent <span class="m">+0,11</span>. Les trois rues à 3 donnent <span class="m">−0,89</span>. La rue à 2 donne <span class="m">−1,89</span>.</p>
+<p class="en"><b>Second effect: the deviations from the mean cancel out.</b> Compute for each street the deviation <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span>. The street with 6 gives <span class="m">6 − 3.89 = +2.11</span>. The two streets with 5 give <span class="m">+1.11</span> each. The two streets with 4 give <span class="m">+0.11</span>. The three streets with 3 give <span class="m">−0.89</span>. The street with 2 gives <span class="m">−1.89</span>.</p>
+<img class="vf" src="/ml/img/c014/p0600_60.svg" alt="vers le haut : 2,11 + 1,11 + 1,11 + 0,11 + 0,11 = 4,56 8 vers le bas : 0,89 + 0,89 + 0,89 + 1,89 = 4,56 somme des neuf écarts : 4,56 − 4,56 = 0 7 +2,11 6 i +1,11+1,11 x s  5 ra +0,11 +0,11 é x̄x̄ ≈ 3,89 m 4 ca 3 −0,89−0,89 −0,89 2 −1,89 1 0 x1 x2 x3 x4 x5 x6 x7 x8 x9" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.6 :</b> Les neuf écarts à la moyenne, dessinés comme des flèches depuis la ligne violette. Vers le haut (vert) : <span class="m">2,11 + 1,11 + 1,11 + 0,11 + 0,11 = 4,56</span>. Vers le bas (rouge) : <span class="m">0,89 + 0,89 + 0,89 + 1,89 = 4,56</span>. Les flèches vertes et les flèches rouges ont la même longueur totale : la somme des neuf écarts est 0.</p>
+<p class="cap en">The nine deviations from the mean, drawn as arrows from the purple line. Upwards (green): <span class="m">2.11 + 1.11 + 1.11 + 0.11 + 0.11 = 4.56</span>. Downwards (red): <span class="m">0.89 + 0.89 + 0.89 + 1.89 = 4.56</span>. The green arrows and the red arrows have the same total length: the sum of the nine deviations is 0.</p>
+<p>La somme de ces neuf écarts est zéro. Ce n’est pas un hasard propre à nos rues. Nous allons additionner les écarts pour n’importe quelle liste :</p>
+<img class="vm" src="/ml/img/c014/p0601_61.svg" alt="𝑛 𝑛 ∑(𝑥𝑖 − ̄𝑥) = ∑ 𝑥𝑖 − 𝑛 ̄𝑥 = total − total = 0. 𝑖=1 𝑖=1 Avec nos nombres : 35 − 9 × 35 = 35 − 35 = 0. 9" style="--w:24.31" loading="lazy">
+<p>C’est l’égalité « surplus vert = manque rouge » de la figure 14.3, écrite en symboles : la moyenne est le seul niveau où les deux s’équilibrent.</p>
+<p class="en">The sum of these nine deviations is zero. This is not a coincidence of our streets. For any list, <span class="m">∑(𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥) = ∑ 𝑥</span><sub class="m">𝑖</sub> <span class="m">− 𝑛 ̄</span><span class="m">𝑥 =</span> total <span class="m">−</span> total <span class="m">= 0</span>. With</p>
+<img class="vm" src="/ml/img/c014/p0601_62.svg" alt="our numbers: 35 − 9 × 35 = 0. It is the equality 9" style="--w:24.31" loading="lazy">
+<p class="en">“green surplus = red shortfall” of figure 14.3, written in symbols: the mean is the only level where the two balance.</p>
+<p><b>Troisième effet : une seule valeur extrême déplace la moyenne</b></p>
+<p>Ajoute une dixième rue, surveillée par 40 caméras. Les neuf autres en ont entre 2 et 6. Une valeur aussi éloignée des autres s’appelle une <b>valeur aberrante</b>, parce qu’elle s’écarte de toutes les autres observations : 40 est à plus de 30 caméras de la rue la plus surveillée. Nous allons recalculer la moyenne avec dix rues :</p>
+<img class="vm" src="/ml/img/c014/p0601_63.svg" alt="35 + 40 75 𝑥 =̄ = = 7,5. 10 10" style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> total <span class="m">35 + 40 = 75</span> ; <span class="m">𝑛 = 10</span> ; <span class="m">75 ÷ 10 = 7,5</span> caméras par rue, presque le double de <span class="m">3,89</span>.</p>
+<p class="en"><b>Third effect: one single extreme value moves the mean.</b> Add a tenth street, watched by 40 cameras. The nine others have between 2 and 6. A value this far from the others is called an <b>outlier</b>, because it stands apart from every other observation: 40 is more than 30 cameras away from the most watched street. We recompute the</p>
+<img class="vm" src="/ml/img/c014/p0602_64.svg" alt="mean with ten streets: 𝑥 =̄ 35+40 = 7.5. With our 10" style="--w:24.31" loading="lazy">
+<p class="en">numbers: total <span class="m">75</span>, <span class="m">𝑛 = 10</span>, <span class="m">7.5</span> cameras per street, almost double <span class="m">3.89</span>.</p>
+<img class="vf" src="/ml/img/c014/p0603_65.svg" alt="nouvelle moyenne 75/10 = 7,5 40 ancienne moyenne 35/9 ≈ 3,89 35 30 i x rue aberrante : s  25 40 caméras ra é m 20 ca 15 10 9 points sur 10 sont sous la ligne rouge 5 0 1 2 3 4 5 6 7 8 9 10 numéro de la rue i" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.7 :</b> Les points bleus sont les neuf rues du tableau ; le point rouge est la rue à 40 caméras. La moyenne passe de <span class="m">3,89</span> (pointillé bleu) à <span class="m">7,5</span> (tirets rouges). Compte les points sous la ligne rouge : neuf sur dix. La nouvelle moyenne ne décrit presque aucune rue.</p>
+<p class="cap en">The blue dots are the nine streets of the table; the red dot is the street with 40 cameras. The mean goes from <span class="m">3.89</span> (blue dotted line) to <span class="m">7.5</span> (red dashes). Count the dots below the red line: nine out of ten. The new mean describes almost no street.</p>
+<p>La moyenne a presque doublé, alors qu’une seule rue a changé. Pourquoi ? Parce que la moyenne additionne toutes les valeurs. La rue à 40 apporte 40 caméras au tas commun, et ce tas est repartagé entre toutes les rues. Si tu choisis une rue au hasard en comptant sur 7 ou 8 caméras, tu te trompes neuf</p>
+<img class="vm" src="/ml/img/c014/p0604_66.svg" alt="fois sur dix. The mean nearly doubled, although a single street" style="--w:24.31" loading="lazy">
+<p class="en">changed. Why? Because the mean adds up every value. The street with 40 brings 40 cameras to the common pile, and that pile is shared out again among all the streets. If you pick a street at random expecting 7 or 8 cameras, you are wrong nine times out of ten.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Je connais déjà la moyenne des neuf rues, 3,89. Pour ajouter la dixième, je fais la moyenne de 3,89 et de 40 : <span class="m">(3,89 + 40) ÷ 2 ≈ 21,9</span>. » La figure 14.8, en haut, dessine ce calcul : deux barres seulement. Les neuf rues, tassées en une</p>
+<img class="vm" src="/ml/img/c014/p0604_67.svg" alt="barre, pèsent 1 ; la rue à 40, seule, pèse aussi 1. 2 2 Or chaque rue doit peser 1 (figure 14.8, en 10 bas). Repars du total : 9 × 35 = 35, puis 9" style="--w:24.31" loading="lazy">
+<p><span class="m">35 + 40 = 75</span>, puis <span class="m">75 ÷ 10 = 7,5</span>.</p>
+<p class="en">“I already know the mean of the nine streets, 3.89. To add the tenth, I average 3.89 and 40 <span class="m">(3.89 + 40) ÷ 2 ≈ 21.9</span>.” Figure 14.8, top, draws this computation: only two bars. The</p>
+<img class="vm" src="/ml/img/c014/p0604_68.svg" alt="nine streets, squeezed into one bar, weigh 1; 2 the 40-camera street, alone, also weighs 1. But 2 each street must weigh 1 (figure 14.8, bottom). 10 Start again from the total: 9 × 35 = 35, then 9" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">35 + 40 = 75</span>, then <span class="m">75 ÷ 10 = 7.5</span>.</p>
+<img class="vf" src="/ml/img/c014/p0605_69.svg" alt="deux barres : chacune pèse 1/2 40 s 30 ra faux : (3,89 + 40) ÷ 2 ≈ 21,9 é m 20 les 9 rues comptent pour 1/2, ca la rue 10 seule pour 1/2 10 3,89 0 9 rues rue 10 tassées dix barres : chacune pèse 1/10 40 s 30 ra é m 20 chaque rue pèse 1/10 ca 10 juste : 75 ÷ 10 = 7,5 0 1 2 3 4 5 6 7 8 9 10 rue numéro i" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.8 :</b> L’erreur de la « moyenne des moyennes », dessinée. En haut, faux : deux barres, 3,89 pour les neuf</p>
+<img class="vm" src="/ml/img/c014/p0605_70.svg" alt="rues tassées et 40 pour la dixième ; chacune pèse 1 , la 2" style="--w:24.31" loading="lazy">
+<p>ligne rouge est à 21,9, au-dessus de toutes les rues ordinaires. En bas, juste : dix barres qui pèsent chacune</p>
+<img class="vm" src="/ml/img/c014/p0605_71.svg" alt="1 ; la ligne violette est à 75 ÷ 10 = 7,5. 10" style="--w:24.31" loading="lazy">
+<p class="en">The “mean of means” mistake, drawn. Top, wrong: two bars, 3.89 for the nine squeezed streets and 40 for the</p>
+<img class="vm" src="/ml/img/c014/p0605_72.svg" alt="tenth; each weighs 1 , the red line is at 21.9, above every 2 ordinary street. Bottom, right: ten bars that each weigh 1 ; the purple line is at 75 ÷ 10 = 7.5. 10" style="--w:24.31" loading="lazy">
+<p>Appelons <span class="m">𝑣</span> le nombre de caméras de la dixième rue et faisons-le varier. La figure 14.9 montre trois valeurs : <span class="m">𝑣 = 4</span>, <span class="m">𝑣 = 20</span>, <span class="m">𝑣 = 40</span>.</p>
+<p class="en">Call <span class="m">𝑣</span> the number of cameras in the tenth street and let it vary. Figure 14.9 shows three values: <span class="m">𝑣 = 4</span>, <span class="m">𝑣 = 20</span>, <span class="m">𝑣 = 40</span>.</p>
+<img class="vf" src="/ml/img/c014/p0607_73.svg" alt="v = 4 : moyenne (35 + 4) / 10 = 3,9 40 30 20 10 x̄x̄ = 3,9 0 v = 20 : moyenne (35 + 20) / 10 = 5,5 40 x i s  30 ra é 20 m ca 10 x̄x̄ = 5,5 0 v = 40 : moyenne (35 + 40) / 10 = 7,5 40 30 20 10 x̄x̄ = 7,5 0 1 2 3 4 5 6 7 8 9 10 numéro de la rue i" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.9 :</b> Trois valeurs pour la dixième rue, même échelle. Avec <span class="m">𝑣 = 4</span>, la moyenne reste à <span class="m">3,9</span> : une rue ordinaire ne change presque rien. Avec <span class="m">𝑣 = 20</span>, elle monte à <span class="m">5,5</span>. Avec <span class="m">𝑣 = 40</span>, à <span class="m">7,5</span>. À chaque fois, la ligne violette monte, et les neuf points bleus ne bougent pas.</p>
+<p class="cap en">Three values for the tenth street, same scale. With <span class="m">𝑣 = 4</span>, the mean stays at <span class="m">3.9</span>: an ordinary street changes almost nothing. With <span class="m">𝑣 = 20</span>, it rises to <span class="m">5.5</span>. With <span class="m">𝑣 = 40</span>, to <span class="m">7.5</span>. Each time, the purple line rises, and the nine blue dots do not move.</p>
+<img class="vm" src="/ml/img/c014/p0608_74.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Sur la figure 14.9, panneau du milieu, lis <span class="m">𝑣 = 20</span>. Calcule <span class="m">(35 + 20) ÷ 10</span>. Tu dois trouver <span class="m">5,5</span>, la hauteur de la ligne violette.</p>
+<p class="en">On figure 14.9, middle panel, read <span class="m">𝑣 = 20</span>. Compute <span class="m">(35+20)÷10</span>. You must find <span class="m">5.5</span>, the height of the purple line.</p>
+<p><b>Le cas limite : la moyenne n’a pas de frein</b></p>
+<img class="vm" src="/ml/img/c014/p0608_75.svg" alt="La moyenne des dix rues vaut 35+𝑣 : c’est une droite 10 de pente 1 (la pente a été construite au chapitre 2). 10" style="--w:24.31" loading="lazy">
+<p>Chaque caméra de plus dans cette seule rue monte la moyenne de <span class="m">0,1</span>. La figure 14.10 trace cette droite.</p>
+<p class="en"><b>The limiting case: the mean has no brake.</b> The</p>
+<img class="vm" src="/ml/img/c014/p0608_76.svg" alt="mean of the ten streets is 35+𝑣 : a straight line with 10 slope 1 (the slope was built in chapter 2). Each 10" style="--w:24.31" loading="lazy">
+<p class="en">extra camera in that single street raises the mean by <span class="m">0.1</span>. Figure 14.10 draws this line.</p>
+<img class="vf" src="/ml/img/c014/p0609_77.svg" alt="9 moyenne des 10 rues : (35 + v) / 10 8 médiane (chapitre 15) 7 v = 20 : 5,5 le v = 4 : 3,9 a 6 tr n 5 ce v = 40 : 7,5 r  4 u le a 3 pente 1/10 : +0,1 par caméra, v sans plafond → 2 1 0 0 10 20 30 40 caméras v dans la 10e rue" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.10 :</b> Le cas limite. La droite rouge donne la moyenne des dix rues quand la dixième rue a <span class="m">𝑣</span> caméras : <span class="m">3,9</span> pour <span class="m">𝑣 = 4</span>, <span class="m">5,5</span> pour <span class="m">𝑣 = 20</span>, <span class="m">7,5</span> pour <span class="m">𝑣 = 40</span>. Elle monte de <span class="m">0,1</span> par caméra, sans plafond : rien ne l’arrête. La courbe grise, presque plate, est la médiane du chapitre 15 : passé <span class="m">𝑣 = 4</span>, elle ne bouge plus.</p>
+<p class="cap en">The limiting case. The red line gives the mean of the ten streets when the tenth street has <span class="m">𝑣</span> cameras: <span class="m">3.9</span> for <span class="m">𝑣 = 4</span>, <span class="m">5.5</span> for <span class="m">𝑣 = 20</span>, <span class="m">7.5</span> for <span class="m">𝑣 = 40</span>. It rises by <span class="m">0.1</span> per camera, with no ceiling: nothing stops it. The gray, almost flat curve is the median of chapter 15: beyond <span class="m">𝑣 = 4</span> it no longer moves.</p>
+<img class="vm" src="/ml/img/c014/p0609_78.svg" alt="Pousse 𝑣 vers l’infini. La moyenne 35+𝑣 part vers 10" style="--w:24.31" loading="lazy">
+<p>l’infini avec lui. Une seule valeur suffit donc à emmener la moyenne aussi loin que l’on veut. À l’autre extrémité, prends <span class="m">𝑛 = 1</span> : la moyenne d’une</p>
+<img class="vm" src="/ml/img/c014/p0610_79.svg" alt="seule rue est cette rue, 𝑥 = 𝑥̄ 1. Et avec 𝑛 = 0," style="--w:24.31" loading="lazy">
+<p>aucune rue ? La formule demande de diviser par 0. Elle casse, et c’est logique : sans observation, il n’y a rien à partager.</p>
+<img class="vm" src="/ml/img/c014/p0610_80.svg" alt="Push 𝑣 towards infinity. The mean 35+𝑣 goes off to 10" style="--w:24.31" loading="lazy">
+<p class="en">infinity with it. A single value is therefore enough to drag the mean as far as we like. At the other end, take <span class="m">𝑛 = 1</span>: the mean of one street is that</p>
+<img class="vm" src="/ml/img/c014/p0610_81.svg" alt="street, 𝑥 = 𝑥̄ 1. And with 𝑛 = 0, no street at all?" style="--w:24.31" loading="lazy">
+<p class="en">The formula asks to divide by 0. It breaks, and that makes sense: without observations there is nothing to share.</p>
+<p><b>Ce que la formule cache : une erreur de comptage se voit</b></p>
+<p>Reviens au tableau imprimé du livre source, qui donne 4 caméras à Lange Herentalsestraat au lieu de 6. Avec 4, le total tombe à 33. Nous allons recalculer la moyenne avec ce total :</p>
+<img class="vm" src="/ml/img/c014/p0610_82.svg" alt="33 𝑥 =̄ ≈ 3,67. 9" style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">35 − 2 = 33</span> ; <span class="m">33 ÷ 9 = 3,666 … ≈ 3,67</span> (la source écrit même <span class="m">3,6</span>, en coupant les décimales).</p>
+<p class="en"><b>What the formula hides: a counting error shows up.</b> Go back to the source book’s printed table, which gives 4 cameras for Lange Herentalsestraat instead of 6. With 4, the total drops to 33. We</p>
+<img class="vm" src="/ml/img/c014/p0610_83.svg" alt="recompute the mean with this total: 𝑥 =̄ 33 ≈ 3.67. 9" style="--w:24.31" loading="lazy">
+<p class="en">With our numbers: <span class="m">35 − 2 = 33</span>; <span class="m">33 ÷ 9 ≈ 3.67</span> (the source even prints <span class="m">3.6</span>, cutting off the decimals).</p>
+<img class="vf" src="/ml/img/c014/p0611_84.svg" alt="recompté : x₈ = 6 imprimé : x₈ = 4 écart : 2/9 ≈ 0,22 7 x̄x̄ = 35/9 ≈ 3,89 x̄x̄ = 33/9 ≈ 3,67 6 6 i x 5 s  4 ra 4 é m 3 ca 2 1 0 1 5 8 9 1 5 8 9" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 14.11 :</b> Côte à côte : à gauche la liste recomptée (<span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 6</span>, moyenne <span class="m">3,89</span>) ; à droite le tableau imprimé (<span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 4</span>, moyenne <span class="m">3,67</span>). Une seule barre change, de 2 caméras, et la ligne violette descend de <span class="m">2/9 ≈ 0,22</span>.</p>
+<p class="cap en">Side by side: left, the recounted list (<span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 6</span>, mean <span class="m">3.89</span>); right, the printed table (<span class="m">𝑥</span><sub class="m">8</sub> <span class="m">= 4</span>, mean <span class="m">3.67</span>). A single bar changes, by 2 cameras, and the purple line drops by <span class="m">2/9 ≈ 0.22</span>.</p>
+<p>Une erreur de 2 caméras sur une seule rue déplace</p>
+<img class="vm" src="/ml/img/c014/p0611_85.svg" alt="la moyenne de 2 ≈ 0,22. Ce chiffre se prévoit sans 9 refaire le calcul : chaque rue pèse 1, donc 2 9 caméras de moins valent 2 × 1 . Une moyenne ne 9" style="--w:24.31" loading="lazy">
+<p>vaut que ce que valent les comptes qui la</p>
+<img class="vm" src="/ml/img/c014/p0611_86.svg" alt="nourrissent. An error of 2 cameras in one street moves the mean by 2 ≈ 0.22. You can predict this without 9 redoing the calculation: each street weighs 1, so 2 9" style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c014/p0612_87.svg" alt="fewer cameras are worth 2 × 1. A mean is only as 9" style="--w:24.31" loading="lazy">
+<p class="en">good as the counts that feed it.</p>
+<p><b>Pourquoi les valeurs aberrantes gênent aussi les machines</b></p>
+<p>En apprentissage automatique, un modèle apprend à partir de moyennes : moyenne des erreurs, moyenne des mesures. Une valeur aberrante, souvent une erreur de saisie ou un cas très rare, tire ces moyennes comme la rue à 40 caméras tire la nôtre sur la figure 14.7. Le modèle s’ajuste alors à ce cas isolé, au détriment des autres. Il faut donc savoir repérer ces valeurs. Ce chapitre ne donne pas encore de seuil précis ; le chapitre 17 en donnera un.</p>
+<p class="en"><b>Why outliers also bother machines.</b> In machine learning, a model learns from means: the mean of the errors, the mean of the measurements. An outlier, often a typing error or a very rare case, pulls these means just as the 40-camera street pulls ours in figure 14.7. The model then adjusts to that isolated case, at the expense of the others. So we must be able to spot such values. This chapter gives no precise threshold yet; chapter 17 will give one.</p>
+<p><b>D’autres moyennes existent</b></p>
+<p>La moyenne de ce chapitre s’appelle <i>arithmétique</i> : on additionne, puis on divise. Il existe d’autres moyennes. La moyenne <i>géométrique</i> multiplie les <span class="m">𝑛</span> valeurs, puis prend la racine <span class="m">𝑛</span>-ième ; pour 2 et 8,</p>
+<img class="vm" src="/ml/img/c014/p0613_88.svg" alt="√ √ elle vaut 2 × 8 = 16 = 4 (chapitre 11). Elle sert" style="--w:24.31" loading="lazy">
+<p>pour des taux qui se multiplient. La moyenne</p>
+<img class="vm" src="/ml/img/c014/p0613_89.svg" alt="harmonique fait la moyenne des inverses 1 , puis 𝑥𝑖 reprend l’inverse ; elle sert pour des vitesses" style="--w:24.31" loading="lazy">
+<p>moyennes. Dans tout ce livre, « moyenne » veut dire moyenne arithmétique.</p>
+<p class="en"><b>Other means exist.</b> The mean of this chapter is called <i>arithmetic</i>: add, then divide. Other means exist. The <i>geometric</i> mean multiplies the <span class="m">𝑛</span> values,</p>
+<img class="vm" src="/ml/img/c014/p0613_90.svg" alt="then takes the 𝑛-th root; for 2 and 8 it is √ √ 2 × 8 = 16 = 4 (chapter 11). It is used for rates" style="--w:24.31" loading="lazy">
+<p class="en">that multiply. The <i>harmonic</i> mean averages the</p>
+<img class="vm" src="/ml/img/c014/p0613_91.svg" alt="reciprocals 1 , then takes the reciprocal again; it is 𝑥𝑖 used for average speeds. Throughout this book," style="--w:24.31" loading="lazy">
+<p class="en">“mean” means the arithmetic mean.</p>
+<img class="vm" src="/ml/img/c014/p0613_92.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">La moyenne écoute toutes les valeurs avec le</p>
+<img class="vm" src="/ml/img/c014/p0613_93.svg" alt="même poids 1 : c’est sa force (elle rend le total, 𝑛" style="--w:24.31" loading="lazy">
+<p class="en">ses écarts s’annulent) et sa faiblesse (une rue à 40 caméras la fait passer de <span class="m">3,89</span> à <span class="m">7,5</span>). The mean listens to every value with the same</p>
+<img class="vm" src="/ml/img/c014/p0613_94.svg" alt="weight 1 : that is its strength (it gives back the 𝑛" style="--w:24.31" loading="lazy">
+<p class="en">total, its deviations cancel) and its weakness (a 40-camera street moves it from <span class="m">3.89</span> to <span class="m">7.5</span>).</p>
+<h2>5. La finalité</h2>
+<p class="h2en">5. Where it leads</p>
+<p>La rue à 40 caméras pose une question : existe-t-il un nombre central qu’une valeur extrême ne peut pas tirer ? Oui. Range les neuf rues de la plus calme à la plus surveillée : <span class="m">2, 3, 3, 3, 4, 4, 5, 5, 6</span>. La rue du</p>
+<img class="vm" src="/ml/img/c014/p0614_95.svg" alt="milieu est la cinquième, à la position 9+1 = 5. Elle a 2" style="--w:24.31" loading="lazy">
+<p>4 caméras, et elle ne bouge pas si la dernière rue passe de 6 à 40. C’est la courbe grise de la figure 14.10. Ce nombre est la <b>médiane</b>, l’objet du chapitre 15.</p>
+<p class="en">The 40-camera street raises a question: is there a central number that an extreme value cannot pull? Yes. Sort the nine streets from the quietest to the most watched: <span class="m">2, 3, 3, 3, 4, 4, 5, 5, 6</span>. The middle</p>
+<img class="vm" src="/ml/img/c014/p0614_96.svg" alt="street is the fifth, at position 9+1 = 5. It has 4 2" style="--w:24.31" loading="lazy">
+<p class="en">cameras, and it does not move if the last street goes from 6 to 40. That is the gray curve of figure 14.10. This number is the <b>median</b>, the subject of chapter 15.</p>
+<p>• Au chapitre 10, tu as vu qu’une fonction associe à chaque entrée une seule sortie. La moyenne est une fonction de ce genre : elle prend la liste <span class="m">(5, 5, 3, 3, 4, 2, 3, 6, 4)</span> et rend le seul nombre <span class="m">3,89</span>.</p>
+<p>• Aux chapitre 16 et chapitre 17, tu couperas la liste triée en quatre morceaux égaux, et tu recevras enfin un seuil pour dire si la rue à 40 caméras est aberrante.</p>
+<p>• Au chapitre 18, le mode donnera une valeur centrale pour des données sans nombres, comme des marques de caméras. • Aux chapitre 21 et chapitre 22, les écarts <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span> de la figure 14.6 deviendront l’outil principal pour mesurer à quelle distance de la moyenne se trouvent les valeurs.</p>
+<p>• Au chapitre 54, la fonction de coût d’un modèle sera une moyenne des erreurs, calculée avec la</p>
+<img class="vm" src="/ml/img/c014/p0615_97.svg" alt="même formule 1 ∑ ; au chapitre 73, l’espérance 𝑛" style="--w:24.31" loading="lazy">
+<p>sera la moyenne d’une loi de probabilité.</p>
+<p class="en">• In chapter 10 you saw that a function assigns one single output to each input. The mean is a function of this kind: it takes the list <span class="m">(5, 5, 3, 3, 4, 2, 3, 6, 4)</span> and returns the single number <span class="m">3.89</span>.</p>
+<p class="en">• In chapter 16 and chapter 17 you will cut the sorted list into four equal pieces, and you will finally get a threshold to say whether the 40-camera street is an outlier.</p>
+<p class="en">• In chapter 18 the mode will give a central value for data without numbers, such as camera brands.</p>
+<p class="en">• In chapter 21 and chapter 22 the deviations <span class="m">𝑥</span><sub class="m">𝑖</sub> <span class="m">− ̄</span><span class="m">𝑥</span> of figure 14.6 will become the main tool to measure how far from the mean the values lie.</p>
+<p class="en">• In chapter 54 the cost function of a model will be a mean of errors, computed with the same</p>
+<img class="vm" src="/ml/img/c014/p0615_98.svg" alt="formula 1 ∑; in chapter 73 the expectation will 𝑛" style="--w:24.31" loading="lazy">
+<p>be the mean of a probability distribution.</p>
+<h2>6. Une question pour toi</h2>
+<p class="h2en">6. A question for you</p>
+<p>Peux-tu inventer neuf rues dont la moyenne vaut exactement 4 caméras, mais où aucune rue n’a 4 caméras ? Si oui, que t’apprend cette liste sur la phrase « la moyenne est la valeur typique » ? Que faudrait-il savoir en plus de la moyenne pour décider si une rue prise au hasard ressemble à elle ?</p>
+<p class="en">Can you invent nine streets whose mean is exactly 4 cameras, but where no street has 4 cameras? If so, what does this list teach you about the sentence “the mean is the typical value”? What would you need to know besides the mean to decide whether a street picked at random looks like it?</p>
+<p><b>Trois questions pour vérifier que tu as compris</b></p>
+<img class="vm" src="/ml/img/c014/p0616_99.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>1. Quatre ruches donnent 7, 2, 5 et 3 kg de miel. Calcule la moyenne. D’où vient la partie après la virgule ? Multiplie la moyenne par 4 : retrouves-tu le total ? 2. Dessine six barres de hauteurs 1, 4, 4, 6, 2 et 1. Trace la ligne de la moyenne. Mesure sur ton dessin le surplus au-dessus de la ligne et le manque en dessous. 3. En une phrase, avec tes propres nombres, explique pourquoi une seule valeur très grande peut faire monter la moyenne au-dessus de presque toutes les valeurs.</p>
+<p class="en"><b>Three questions to check that you have un- derstood.</b> 1. Four hives give 7, 2, 5 and 3 kg of honey. Compute the mean. Where does the part after the decimal point come from? Multiply the mean by 4 do you get the total back?</p>
+<p class="en">2. Draw six bars of heights 1, 4, 4, 6, 2 and 1. Draw the line of the mean. Measure on your drawing the surplus above the line and the shortfall below it.</p>
+<p class="en">3. In one sentence, with your own numbers, explain why a single very large value can push the mean above almost all the values.</p>

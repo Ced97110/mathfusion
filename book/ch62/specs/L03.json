@@ -1,0 +1,383 @@
+[
+ {
+  "code": "62-067",
+  "a_dire": "On craint que deux manières de construire le corps de décomposition donnent deux corps différents ; alors « le corps de décomposition » n’aurait pas de sens.",
+  "legende_titre": "Trois chemins, un seul corps ?",
+  "lecture": [
+   "Le carré gris à gauche est le corps de départ, les fractions.",
+   "Les trois rectangles orange sont les trois chemins : ajouter la racine cubique de 2 puis 𝑗, ajouter 𝑗 puis la racine cubique de 2, ou ajouter d’abord 𝑗 fois la racine cubique de 2.",
+   "Chaque flèche orange mène à un carré bleu : le corps obtenu par ce chemin."
+  ],
+  "a_voir": "Trois chemins partent du même corps et aboutissent à trois corps dont on ignore s’ils sont les mêmes."
+ },
+ {
+  "code": "62-068",
+  "a_dire": "Deux corps de décomposition de 𝑓 sont isomorphes, par un isomorphisme qui laisse chaque élément de 𝐹 fixe.",
+  "legende_titre": "Deux corps de décomposition, même structure",
+  "lecture": [
+   "Le rectangle bleu est le corps E, obtenu par le premier chemin ; il est de degré 6.",
+   "Le rectangle violet est le corps E′, obtenu par le second chemin ; il est aussi de degré 6.",
+   "La flèche orange à deux pointes est l'isomorphisme entre les deux.",
+   "Le rectangle gris du bas est ℚ : chaque élément de ℚ reste fixe, des deux côtés."
+  ],
+  "a_voir": "Les deux corps de degré 6 sont reliés par un isomorphisme qui ne bouge pas les fractions."
+ },
+ {
+  "code": "62-069",
+  "a_dire": "Le nombre d’isomorphismes est au plus [𝐸 : 𝐹] ; il peut être plus petit quand le polynôme a une racine répétée.",
+  "legende_titre": "Un compte qui peut rester en dessous du degré",
+  "lecture": [
+   "Le titre vert dit : le nombre d'isomorphismes est au plus [E : F].",
+   "Le polynôme x² + t s'écrit (x + s)² : il n'a qu'une seule racine, s, comptée deux fois.",
+   "Les deux carrés bleus comptent le degré [E : F], qui vaut 2.",
+   "Le seul carré vert compte les isomorphismes : il y en a 1. Le carré en pointillés est celui qui manque.",
+   "Le texte du bas dit : 1 < 2, la borne reste vraie."
+  ],
+  "a_voir": "La rangée verte a un carré de moins que la rangée bleue : le compte reste sous le degré."
+ },
+ {
+  "code": "62-070",
+  "a_dire": "La preuve envoie une racine 𝑟 sur une racine du polynôme minimal 𝑔 dans 𝐸′, puis recommence à l’étage suivant ; le nombre de choix se multiplie.",
+  "legende_titre": "Compter les choix étage par étage",
+  "lecture": [
+   "Le disque bleu est la racine réelle de 𝑥³ − 2 dans 𝐸.",
+   "Les trois disques violets sont les trois racines de 𝑥³ − 2 dans 𝐸′.",
+   "Chaque flèche orange est un choix possible pour l’image de la racine : 3 choix.",
+   "Le second étage laisse 2 choix ; le cadre vert multiplie : 3 fois 2 égale 6."
+  ],
+  "a_voir": "Trois flèches au premier étage, puis deux au second : 6 isomorphismes."
+ },
+ {
+  "code": "62-071",
+  "a_dire": "S’il y a une racine répétée, il y a moins de racines distinctes que le degré, donc moins de choix ; c’est pourquoi on étudie les racines multiples.",
+  "legende_titre": "Racines distinctes ou répétée : combien de choix ?",
+  "lecture": [
+   "À gauche, 𝑥³ − 2 a trois disques bleus distincts : 3 choix, cadre vert.",
+   "À droite, (𝑥 − 1)²(𝑥 + 2) a un disque violet double, la racine 1, et un disque pour −2.",
+   "Les deux disques violets superposés sont un seul choix : le cadre orange compte 2 choix."
+  ],
+  "a_voir": "Trois disques séparés à gauche, deux emplacements seulement à droite."
+ },
+ {
+  "code": "62-072",
+  "a_dire": "Le compte des isomorphismes est exact quand les racines sont distinctes ; une racine répétée n’offre qu’un seul choix, donc le produit est plus petit.",
+  "legende_titre": "Le produit des choix selon les racines",
+  "lecture": [
+   "La rangée du haut multiplie 3 choix bleus par 2 choix gris : le produit vert est 6.",
+   "La rangée du bas remplace les 3 choix par 1 seul, car la racine est répétée.",
+   "Le produit orange, 2, est plus petit que 6 ; le second étage est repris tel quel de la rangée du haut."
+  ],
+  "a_voir": "Un seul choix au premier étage fait baisser tout le produit."
+ },
+ {
+  "code": "62-073",
+  "a_dire": "Après le premier étage, l’isomorphisme n’est plus l’identité ; la récurrence doit donc traiter un isomorphisme quelconque.",
+  "legende_titre": "Pourquoi un énoncé plus fort",
+  "lecture": [
+   "En bas, la flèche grise est l’identité du corps de départ 𝐾 : c’est le premier étage.",
+   "En haut, la flèche orange envoie 𝐾(𝑟) sur 𝐾(𝑟′) en envoyant 𝑟 sur 𝑟′ : ce n’est pas l’identité.",
+   "Les traits pointillés relient chaque corps de départ au corps agrandi."
+  ],
+  "a_voir": "La flèche du haut n’est plus l’identité : l’énoncé doit valoir pour elle aussi."
+ },
+ {
+  "code": "62-074",
+  "a_dire": "𝜑 : 𝐾 → 𝐾′ se lit « phi, de 𝐾 vers 𝐾 prime » : une correspondance bijective qui respecte l’addition et la multiplication.",
+  "legende_titre": "Lire 𝜑 : 𝐾 → 𝐾′ sur un exemple",
+  "lecture": [
+   "Les carrés bleus sont des nombres de 𝐾, les carrés violets sont leurs images dans 𝐾′.",
+   "Les flèches orange horizontales sont 𝜑, la conjugaison : 1 + √2 devient 1 − √2.",
+   "Les flèches grises verticales élèvent au carré : 3 + 2√2 devient 3 − 2√2 des deux côtés.",
+   "Les deux chemins donnent le même résultat : 𝜑 respecte les produits."
+  ],
+  "a_voir": "Élever au carré puis appliquer 𝜑, ou appliquer 𝜑 puis élever au carré, donne le même nombre."
+ },
+ {
+  "code": "62-075",
+  "a_dire": "𝜑(𝑝) est le polynôme obtenu en appliquant 𝜑 à chaque coefficient de 𝑝 ; l’inconnue 𝑥 ne change pas.",
+  "legende_titre": "Transporter un polynôme",
+  "lecture": [
+   "La rangée du haut est 𝑝 : coefficient 1, puis 𝑥², puis coefficient −√2, en bleu.",
+   "La rangée du bas est 𝜑(𝑝), en violet : le coefficient 1 reste 1, le coefficient −√2 devient +√2.",
+   "Les flèches orange sont 𝜑 appliquée à chaque coefficient.",
+   "Le 𝑥² gris est identique dans les deux rangées."
+  ],
+  "a_voir": "Seuls les carrés des coefficients changent, le 𝑥² reste le même."
+ },
+ {
+  "code": "62-076",
+  "a_dire": "Le signe 𝜑̃ se lit « phi tilde » : il désigne un prolongement de 𝜑 à un corps plus grand, qui fait la même chose que 𝜑 sur le petit corps.",
+  "legende_titre": "Le tilde : 𝜑 prolongé",
+  "lecture": [
+   "Le grand cadre bleu est le corps plus grand de départ ; le petit carré bleu dedans est le petit corps ℚ(√2).",
+   "Le grand cadre violet et son petit carré sont le corps d’arrivée.",
+   "La flèche orange du bas est 𝜑, définie sur le petit corps.",
+   "La flèche orange du haut est 𝜑̃, définie sur le grand corps ; sur le petit corps elle donne les mêmes résultats que 𝜑."
+  ],
+  "a_voir": "Le petit corps est à l’intérieur du grand : 𝜑̃ agit sur le grand et recopie 𝜑 sur le petit."
+ },
+ {
+  "code": "62-077",
+  "a_dire": "Le lemme : 𝜑 se prolonge en 𝜑̃ de 𝐾(𝑢) vers 𝐾′(𝑣), qui envoie 𝑢 sur 𝑣, où 𝑣 est une racine du polynôme transporté 𝑞 = 𝜑(𝑝).",
+  "legende_titre": "Prolonger 𝜑 en envoyant 𝑢 sur 𝑣",
+  "lecture": [
+   "En haut, le rectangle bleu est K(u), le violet est K′(v) ; la flèche orange est φ̃.",
+   "Au milieu, φ̃ envoie u sur v, et v est une racine de q.",
+   "En bas, p est bleu, q est violet ; la flèche φ transporte p en q : q = φ(p).",
+   "La ligne du bas donne un exemple : u = √2, v = √2 ou −√2, φ = identité."
+  ],
+  "a_voir": "v est choisi parmi les racines de q, le polynôme transporté."
+ },
+ {
+  "code": "62-078",
+  "a_dire": "La formule écrit l’image d’un élément : on garde la forme 𝑎₀ + 𝑎₁𝑢 + ⋯, on transporte chaque coefficient par 𝜑, on remplace 𝑢 par 𝑣.",
+  "legende_titre": "Trois gestes sur un élément chiffré",
+  "lecture": [
+   "La rangée bleue du haut est l’élément : le coefficient 1 + √2, le coefficient 3, puis 𝑢.",
+   "La rangée violette du bas est son image : 1 − √2, 3, puis 𝑣.",
+   "La flèche orange 𝜑 change le premier coefficient ; la flèche grise laisse le 3 inchangé ; la flèche orange de droite remplace 𝑢 par 𝑣."
+  ],
+  "a_voir": "Chaque morceau du haut a son image juste en dessous."
+ },
+ {
+  "code": "62-079",
+  "a_dire": "On lit la formule en deux gestes indépendants : 𝜑 sur chaque coefficient, puis 𝑢 remplacé par 𝑣.",
+  "legende_titre": "Deux gestes pour lire la formule",
+  "lecture": [
+   "Le haut montre l’élément 2 + √2 · 𝑢, en bleu ; le bas montre son image, en violet.",
+   "L’accolade orange du haut regroupe le geste 1 : chaque coefficient est traité à part. Le 2 reste 2, le √2 devient −√2.",
+   "L’accolade violette du bas montre le geste 2 : 𝑢 devient 𝑣."
+  ],
+  "a_voir": "Les deux gestes touchent des morceaux différents de l’élément."
+ },
+ {
+  "code": "62-080",
+  "a_dire": "Le lemme se prouve en composant trois isomorphismes ; l’étape décisive est de transporter les coefficients, qui envoie 𝑝 sur 𝑞.",
+  "legende_titre": "Composer trois isomorphismes",
+  "lecture": [
+   "Le rectangle bleu en haut à gauche est K(u) ; le violet en bas à gauche est K′(v).",
+   "Les deux rectangles gris sont les restes modulo p et modulo q.",
+   "La flèche orange épaisse numérotée 2 transporte p en q : c'est l'étape décisive, qui transporte les coefficients.",
+   "Les flèches orange fines 1 et 3 envoient u sur x, puis x sur v. La flèche verte à gauche est le composé φ̃."
+  ],
+  "a_voir": "Trois flèches orange numérotées 1, 2, 3 mises bout à bout donnent la flèche verte."
+ },
+ {
+  "code": "62-081",
+  "a_dire": "Cas concret : 𝑢 est la racine quatrième de 2, de polynôme minimal 𝑝 = 𝑥² − √2 ; la conjugaison transporte 𝑝 en 𝑞 = 𝑥² + √2, et 𝑢 va sur 𝑣, racine de 𝑞.",
+  "legende_titre": "Le lemme dans un exemple complet",
+  "lecture": [
+   "Le titre orange est la conjugaison 𝜑 : 𝑎 + 𝑏√2 devient 𝑎 − 𝑏√2.",
+   "Le rectangle bleu est 𝑝, le violet est 𝑞 : la flèche 𝜑 change le signe devant √2.",
+   "À gauche, 𝑢² vaut √2 ; à droite, 𝑣² vaut −√2, donc 𝑣 est une racine de 𝑞.",
+   "La flèche orange du milieu envoie 𝑢 sur 𝑣."
+  ],
+  "a_voir": "𝑣 a pour carré −√2 : c’est une racine de 𝑞, pas de 𝑝."
+ },
+ {
+  "code": "62-082",
+  "a_dire": "Deux ensembles de nombres différents, l’un réel et l’autre non, peuvent avoir la même structure.",
+  "legende_titre": "Différents par les nombres, pareils par les règles",
+  "lecture": [
+   "Le disque bleu, la racine quatrième de 2, est sur l’axe réel : il appartient au premier corps, qui est réel.",
+   "Le disque violet, la racine quatrième de 2 fois 𝑖, est sur l’axe imaginaire : il appartient au second corps, qui n’est pas réel.",
+   "La flèche orange à deux pointes dit que les deux corps ont les mêmes règles de calcul."
+  ],
+  "a_voir": "Les deux points ne sont pas au même endroit, pourtant leurs corps se calculent de la même façon."
+ },
+ {
+  "code": "62-083",
+  "a_dire": "On ne peut pas envoyer 𝑢 sur une racine de 𝑝 : un isomorphisme respecte les carrés, donc seules les racines de 𝑞 = 𝜑(𝑝) conviennent.",
+  "legende_titre": "Pourquoi pas une racine de 𝑝 ?",
+  "lecture": [
+   "Le rectangle bleu dit que le carré de 𝑢 est √2 ; la flèche orange 𝜑 envoie √2 sur −√2.",
+   "Le rectangle violet dit que l’image 𝑣 doit avoir pour carré −√2.",
+   "Le cadre rouge : une racine de 𝑝 a pour carré √2, elle ne convient pas.",
+   "Le cadre vert : une racine de 𝑞 a pour carré −√2, elle convient."
+  ],
+  "a_voir": "Seul le cadre vert a le bon carré, −√2."
+ },
+ {
+  "code": "62-084",
+  "a_dire": "Le théorème de Judson : si 𝜑 est un isomorphisme de 𝐾 sur 𝐾′, il se prolonge en un isomorphisme de 𝐸 sur 𝐸′ ; sans cette hypothèse, ce n’est plus vrai.",
+  "legende_titre": "Prolonger 𝜑 jusqu’aux corps de décomposition",
+  "lecture": [
+   "En haut, la flèche orange est 𝜑, un isomorphisme ; la flèche verte du dessous est son prolongement 𝜑̃ de 𝐸 vers 𝐸′.",
+   "En bas, en rouge, 𝜑 est seulement l’inclusion des fractions dans les réels.",
+   "Alors 𝐸′ est l’ensemble des réels, qui contient 𝜋, et 𝐸 = ℚ(√2) n’atteint pas 𝜋 : il n’y a pas d’isomorphisme."
+  ],
+  "a_voir": "Avec l’inclusion de ℚ dans ℝ, le nombre 𝜋 n’est atteint par aucune image."
+ },
+ {
+  "code": "62-085",
+  "a_dire": "La preuve se fait par récurrence sur le degré de 𝑓 : on ajoute une racine, on écrit 𝑓 = (𝑥 − 𝑢)𝑔, et on applique l’hypothèse à 𝑔 de degré plus petit.",
+  "legende_titre": "Récurrence sur le degré",
+  "lecture": [
+   "Les trois rectangles bleus, de gauche à droite et de haut en bas, sont de degré 3, 2 puis 1.",
+   "Chaque flèche orange est un étage : on ajoute une racine et on écrit 𝑓 = (𝑥 − 𝑢)𝑔.",
+   "Le degré 1 est déjà scindé : la récurrence s’arrête là."
+  ],
+  "a_voir": "Le degré baisse d’un à chaque étage, jusqu’à 1."
+ },
+ {
+  "code": "62-086",
+  "a_dire": "Prendre 𝜑 égale à l’identité de 𝐹 dans le théorème précédent donne : deux corps de décomposition de 𝑓 sont isomorphes, par un isomorphisme qui laisse 𝐹 fixe.",
+  "legende_titre": "Le cas où 𝜑 est l’identité",
+  "lecture": [
+   "En bas, les deux carrés gris sont le même corps 𝐹, relié par l’identité.",
+   "En haut, le carré bleu est 𝐸 et le carré violet est 𝐸′, deux corps de décomposition de 𝑓.",
+   "La flèche verte est le prolongement : un isomorphisme de 𝐸 sur 𝐸′ qui laisse 𝐹 fixe."
+  ],
+  "a_voir": "L’identité du bas se prolonge en l’isomorphisme du haut."
+ },
+ {
+  "code": "62-087",
+  "a_dire": "La multiplicité 𝑘ᵢ d’une racine est le nombre de fois où son facteur apparaît dans l’écriture en facteurs de degré 1.",
+  "legende_titre": "Compter les facteurs égaux",
+  "lecture": [
+   "Les deux rectangles bleus sont le facteur 𝑥 − 1, qui apparaît 2 fois : la racine 1 a 𝑘₁ égal à 2.",
+   "Le rectangle violet est le facteur 𝑥 + 2, qui apparaît 1 fois : 𝑘₂ égal à 1.",
+   "Le degré 3 est la somme des multiplicités : 2 plus 1."
+  ],
+  "a_voir": "Chaque accolade compte les facteurs égaux d’une même racine."
+ },
+ {
+  "code": "62-088",
+  "a_dire": "Une racine est simple si 𝑘ᵢ = 1, multiple si 𝑘ᵢ > 1 ; double pour 𝑘ᵢ = 2, triple pour 𝑘ᵢ = 3.",
+  "legende_titre": "Simple, multiple, double, triple",
+  "lecture": [
+   "Le rectangle violet seul est le facteur 𝑥 + 2 : 𝑘 égal à 1, racine simple.",
+   "Les deux rectangles bleus 𝑥 − 1 forment une racine double.",
+   "Les trois rectangles bleus 𝑥 − 1 forment une racine triple.",
+   "L’accolade regroupe les deux derniers cas : ce sont des racines multiples."
+  ],
+  "a_voir": "Le nombre de rectangles égaux est la valeur de 𝑘."
+ },
+ {
+  "code": "62-089",
+  "a_dire": "Les multiplicités ne dépendent pas du corps de décomposition choisi, car un isomorphisme qui fixe 𝐹 envoie chaque facteur sur un facteur et conserve le nombre de fois où il apparaît.",
+  "legende_titre": "Mêmes multiplicités dans 𝐸 et 𝐸′",
+  "lecture": [
+   "La rangée bleue est 𝑥³ − 2 écrit en facteurs dans 𝐸 ; la rangée violette est le même polynôme dans 𝐸′.",
+   "Chaque flèche orange envoie un facteur sur son image.",
+   "Dans les deux rangées, chaque racine apparaît une seule fois."
+  ],
+  "a_voir": "Les deux rangées ont les mêmes multiplicités, trois fois 1."
+ },
+ {
+  "code": "62-090",
+  "a_dire": "La dérivée formelle est un polynôme calculé par une règle sur les coefficients, qui se calcule dans tout corps ; elle n’est pas la dérivée par la pente.",
+  "legende_titre": "Deux dérivées à ne pas confondre",
+  "lecture": [
+   "À gauche, en violet, une courbe et sa tangente : la pente demande une limite et des nombres réels.",
+   "À droite, en bleu, la dérivée formelle : le terme 𝑎₂𝑥² devient 2𝑎₂𝑥, le terme 𝑎₃𝑥³ devient 3𝑎₃𝑥².",
+   "Cette règle porte sur les coefficients et s’applique dans tout corps."
+  ],
+  "a_voir": "À droite, il n’y a ni courbe ni limite, seulement une règle sur les termes."
+ },
+ {
+  "code": "62-091",
+  "a_dire": "La dérivée formelle est une règle de calcul, sans limite ni pente, valable dans tout corps, même le corps à deux éléments.",
+  "legende_titre": "Dériver sans courbe",
+  "lecture": [
+   "Le titre gris rappelle que, dans le corps à deux éléments, 1 plus 1 vaut 0.",
+   "Chaque rectangle bleu est un terme de 𝑥³ + 𝑥 + 1 ; la flèche orange applique la règle ; le rectangle vert est le résultat.",
+   "Le terme 𝑥³ donne 3𝑥², qui vaut 𝑥² ici ; 𝑥 donne 1 ; le terme constant 1 donne 0.",
+   "Le cadre vert du bas additionne les résultats : 𝑥² + 1."
+  ],
+  "a_voir": "Le calcul se fait terme par terme, sans aucune courbe."
+ },
+ {
+  "code": "62-092",
+  "a_dire": "Chaque terme 𝑎ₖ𝑥ᵏ devient 𝑘𝑎ₖ𝑥ᵏ⁻¹ : l’exposant passe devant comme facteur puis diminue de 1 ; le terme constant disparaît.",
+  "legende_titre": "La règle sur un terme",
+  "lecture": [
+   "Chaque rectangle bleu est un terme ; le rectangle vert à droite est sa dérivée.",
+   "5𝑥³ devient 15𝑥² : le 3 passe devant, et l’exposant devient 2.",
+   "7𝑥 devient 7 : le 1 passe devant, et l’exposant devient 0.",
+   "Le terme constant 9 devient 0 : son exposant est 0, donc son facteur est 0."
+  ],
+  "a_voir": "L’exposant d’entrée est le facteur de sortie."
+ },
+ {
+  "code": "62-093",
+  "a_dire": "La règle vient du développement de 𝑓(𝑥 + ℎ) : la dérivée est le coefficient de ℎ.",
+  "legende_titre": "D’où vient la règle",
+  "lecture": [
+   "Les quatre rectangles sont les quatre termes de (𝑥 + ℎ)³ développé.",
+   "Le rectangle orange, 3𝑥²ℎ, est le seul terme où ℎ est à la puissance 1.",
+   "La flèche orange en tire le coefficient de ℎ : 3𝑥².",
+   "Le rectangle vert dit que c’est la dérivée de 𝑥³."
+  ],
+  "a_voir": "Le coefficient de ℎ dans le développement est la dérivée."
+ },
+ {
+  "code": "62-094",
+  "a_dire": "On vérifie sur 𝑥² et sur 𝑥³ que le coefficient de ℎ est 2𝑥 puis 3𝑥² ; cela ne montre pas la règle pour un exposant quelconque.",
+  "legende_titre": "Deux vérifications, pas une preuve",
+  "lecture": [
+   "La première rangée développe (𝑥 + ℎ)² ; le terme orange 2𝑥ℎ donne le coefficient 2𝑥, en vert.",
+   "La deuxième rangée développe (𝑥 + ℎ)³ ; le terme orange 3𝑥²ℎ donne le coefficient 3𝑥², en vert.",
+   "La troisième rangée, en pointillés, est le cas d’un exposant 𝑘 quelconque : il n’est pas montré."
+  ],
+  "a_voir": "Deux cas sont vérifiés ; le cas général reste pointillé."
+ },
+ {
+  "code": "62-095",
+  "a_dire": "« L’exposant descend » est un décompte : dans (𝑥 + ℎ)ᵏ, on choisit ℎ dans un seul des 𝑘 facteurs, ce qui fait 𝑘 choix ; le coefficient « 1 parmi 𝑘 » vaut 𝑘.",
+  "legende_titre": "Pourquoi l’exposant descend",
+  "lecture": [
+   "Chaque rangée de disques représente les 4 facteurs 𝑥 + ℎ de (𝑥 + ℎ)⁴.",
+   "Le disque orange est le facteur où l’on prend ℎ ; les disques bleus sont ceux où l’on prend 𝑥.",
+   "Il y a une rangée par choix possible : 4 choix.",
+   "Chaque choix donne le terme 𝑥³ fois ℎ : au total 4𝑥³ℎ."
+  ],
+  "a_voir": "Le orange change de place d’une rangée à l’autre : 4 rangées pour 4 facteurs."
+ },
+ {
+  "code": "62-096",
+  "a_dire": "La dérivée formelle est linéaire : (𝑓 + 𝑔)′ = 𝑓′ + 𝑔′ et (𝑎𝑓)′ = 𝑎𝑓′, mais la seconde égalité demande que 𝑎 soit un nombre de 𝐹.",
+  "legende_titre": "Sortir un facteur : à quelle condition ?",
+  "lecture": [
+   "Le titre gris donne 𝑓 = 𝑥², de dérivée 2𝑥.",
+   "En haut, avec 𝑎 = 5, un nombre de 𝐹, les deux rectangles bleus valent 10𝑥 : le signe égal est vert.",
+   "En bas, avec 𝑎 = 𝑥, qui n’est pas un nombre de 𝐹, les rectangles rouges donnent 3𝑥² et 2𝑥² : le signe est différent."
+  ],
+  "a_voir": "Le facteur 𝑥 ne sort pas de la dérivée : les deux résultats diffèrent."
+ },
+ {
+  "code": "62-097",
+  "a_dire": "Règle du produit : (𝑓𝑔)′ = 𝑓′𝑔 + 𝑓𝑔′.",
+  "legende_titre": "Dériver un produit",
+  "lecture": [
+   "Le titre gris donne 𝑓 = 𝑥 + 1 et 𝑔 = 𝑥 + 2.",
+   "Le grand rectangle bleu dérive directement le produit : le résultat est 2𝑥 + 3.",
+   "La rangée du bas calcule 𝑓′𝑔 égal à 𝑥 + 2 (bleu) et 𝑓𝑔′ égal à 𝑥 + 1 (violet) ; leur somme est 2𝑥 + 3, en vert.",
+   "La flèche verte dit que les deux chemins donnent le même résultat."
+  ],
+  "a_voir": "Les deux termes de la règle s’additionnent pour donner la dérivée du produit."
+ },
+ {
+  "code": "62-098",
+  "a_dire": "La dérivée de 𝑥 est 1 : la règle terme par terme et le coefficient de ℎ donnent le même résultat.",
+  "legende_titre": "Dériver l’inconnue",
+  "lecture": [
+   "Le rectangle bleu applique la règle : 1 fois 𝑥 puissance 1 devient 1 fois 1 fois 𝑥 puissance 0, c’est-à-dire 1.",
+   "Le rectangle violet développe 𝑥 + ℎ : le coefficient de ℎ est 1.",
+   "Les deux flèches vertes mènent au même résultat : 𝑥′ = 1."
+  ],
+  "a_voir": "Deux définitions différentes arrivent au même nombre, 1."
+ },
+ {
+  "code": "62-099",
+  "a_dire": "On prouve la règle du produit en multipliant (𝑓 + 𝑓′ℎ)(𝑔 + 𝑔′ℎ) et en lisant le coefficient de ℎ : 𝑓′𝑔 + 𝑓𝑔′.",
+  "legende_titre": "Multiplier deux développements",
+  "lecture": [
+   "Les lignes sont les deux termes de 𝑓 + 𝑓′ℎ ; les colonnes sont ceux de 𝑔 + 𝑔′ℎ ; chaque rectangle est un produit.",
+   "Les deux rectangles orange contiennent ℎ une seule fois : 𝑓𝑔′ℎ et 𝑓′𝑔ℎ.",
+   "Les flèches orange les rassemblent dans le cadre vert : le coefficient de ℎ est 𝑓′𝑔 + 𝑓𝑔′.",
+   "Le rectangle gris contient ℎ² : il n’intervient pas."
+  ],
+  "a_voir": "Seuls les deux rectangles orange donnent le coefficient de ℎ."
+ }
+]

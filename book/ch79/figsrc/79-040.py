@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig,ax=canvas(100)
+box(ax,2,80,36,12,'sujet',label=r"$u \leq u'$",size='l')
+text(ax,20,76,'u est le plus petit','sujet','s')
+box(ax,2,54,36,12,'autre',label=r"$u' \leq u$",size='l')
+text(ax,20,50,"u' est le plus petit",'autre','s')
+box(ax,56,64,30,12,'resultat',label=r"$u = u'$",size='l')
+arrow(ax,(38,86),(56,72),'varie'); arrow(ax,(38,60),(56,68),'varie')
+text(ax,71,82,'antisymétrie','varie')
+box(ax,2,2,84,42,'limite')
+text(ax,44,38,'règle : autant de facteurs','limite')
+text(ax,24,29,'4 = 2 × 2','limite'); text(ax,64,29,'6 = 2 × 3','limite')
+text(ax,44,20,'4 ≤ 6 et 6 ≤ 4','limite')
+text(ax,44,10,'mais 4 ≠ 6','limite','l')
+save(fig,'79-040')

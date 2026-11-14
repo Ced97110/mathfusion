@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 4, 38, 36, 12, 'sujet', label='$(x+2)(x+3)$')
+box(ax, 48, 38, 36, 12, 'autre', label='$x^2+5x+6$')
+text(ax, 44, 44, '=', 'resultat', 'l')
+arrow(ax, (22, 37), (22, 25), 'varie'); arrow(ax, (66, 37), (66, 25), 'varie')
+text(ax, 44, 31, '$x = -1$', 'varie', 'm')
+box(ax, 4, 10, 36, 14, 'resultat', label=r'$1 \times 2 = 2$')
+box(ax, 48, 10, 36, 14, 'resultat', label=r'$1 - 5 + 6 = 2$')
+text(ax, 44, 17, '=', 'resultat', 'l')
+save(fig, '15-094')

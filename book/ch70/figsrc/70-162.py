@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 44, 34, 12, 'sujet', label='la courbe a un point réel', size='s')
+box(ax, 52, 44, 34, 12, 'autre', label='h a une racine réelle', size='s')
+arrow(ax, (37.5, 50), (50.5, 50), 'varie', both=True)
+text(ax, 44, 56, 'ssi', 'varie', 's', weight='bold')
+box(ax, 2, 27, 34, 10, 'limite', label='f = y² + 1 : aucun point', size='s')
+box(ax, 52, 27, 34, 10, 'limite', label='aucune racine réelle', size='s')
+arrow(ax, (19, 44), (19, 38), 'fixe'); arrow(ax, (69, 44), (69, 38), 'fixe')
+text(ax, 44, 32, 'exemple', 'fixe', 's')
+box(ax, 14, 7, 60, 10, 'resultat', label='Sturm décide cette question', size='s')
+arrow(ax, (69, 27), (62, 18), 'fixe')
+save(fig, '70-162')

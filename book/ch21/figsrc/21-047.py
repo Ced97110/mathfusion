@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 62, r'avec $x=2$', 'encre', 'm')
+text(ax, 22, 54, r'$\frac{x^2-4}{x-2}$', 'sujet', 'm'); text(ax, 66, 54, r'$x+2$', 'autre', 's')
+box(ax, 4, 34, 36, 9, 'sujet', label=r'haut : $4-4=0$', size='s'); box(ax, 4, 22, 36, 9, 'sujet', label=r'bas : $2-2=0$', size='s')
+box(ax, 4, 8, 36, 10, 'limite', label=r'$0\div0$ : rien', size='s')
+box(ax, 52, 26, 28, 12, 'autre', label=r'$2+2=4$', size='s')
+arrow(ax, (22, 22), (22, 18.5), 'limite')
+text(ax, 66, 18, r'a une valeur', 'autre', 's')
+save(fig, '21-047')

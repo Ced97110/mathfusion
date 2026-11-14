@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+o = (20, 10); s = 8
+arrow(ax, (o[0]-8, o[1]), (o[0]+62, o[1]), 'sujet', lw=1.2)
+arrow(ax, (o[0], o[1]-0), (o[0], o[1]+52), 'autre', lw=1.2)
+x = (o[0]+3*s, o[1]+5*s)
+line(ax, [(x[0], o[1]), x, (o[0], x[1])], 'fixe', dash=True)
+arrow(ax, o, (o[0]+3*s, o[1]), 'sujet', lw=2.0)
+arrow(ax, o, (o[0], o[1]+5*s), 'autre', lw=2.0)
+arrow(ax, o, x, 'resultat', lw=1.6)
+text(ax, o[0]+3*s, o[1]-3.2, r'$u=(3\ ;\ 0)$', 'sujet', 'm')
+text(ax, o[0]-2, o[1]+5*s, r'$w=(0\ ;\ 5)$', 'autre', 'm', ha='right')
+text(ax, x[0]+3, x[1]+3, r'$x=(3\ ;\ 5)$', 'resultat', 'm', ha='left')
+text(ax, o[0]+58, o[1]+4, r'$U$', 'sujet', 'l')
+text(ax, o[0]+5, o[1]+50, r'$W$', 'autre', 'l')
+text(ax, 60, 36, r'$x=u+w$', 'resultat', 'l')
+save(fig, '72-084')

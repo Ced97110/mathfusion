@@ -1,0 +1,178 @@
+[
+ {
+  "code": "72-065",
+  "a_dire": "Le point (1, 0) va en (5/4, 3/4), sur l'hyperbole des points de carré 1 : c'est une rotation sans cercle.",
+  "legende_titre": "Une rotation qui sort du cercle",
+  "lecture": [
+   "Le cercle gris en pointillés est l'ensemble des points à distance 1 de l'origine au sens habituel.",
+   "La courbe verte est l'hyperbole : les points dont le carré pour la seconde mesure vaut 1.",
+   "Le point bleu (1, 0) est envoyé sur le point vert (5/4, 3/4), par la flèche orange."
+  ],
+  "a_voir": "Le point d'arrivée est hors du cercle, mais sur l'hyperbole."
+ },
+ {
+  "code": "72-066",
+  "a_dire": "Les rotations du plan hyperbolique sont u -> au et v -> v/a ; l'échange de u et v n'en est pas une.",
+  "legende_titre": "Les rotations du plan hyperbolique",
+  "lecture": [
+   "En haut, les barres bleues sont u et v. Les barres vertes montrent 2u et v/2 : u est multiplié par 2, v est divisé par 2.",
+   "En bas, les flèches rouges croisées échangent u et v.",
+   "Le déterminant de cet échange est −1, et v n'est pas un multiple de u."
+  ],
+  "a_voir": "Une rotation garde chaque vecteur sur sa direction ; l'échange non."
+ },
+ {
+  "code": "72-067",
+  "a_dire": "La réflexion S_u retire 2 fois la part de x le long de u, ce qui envoie (2, 1) sur (2, −1).",
+  "legende_titre": "La réflexion le long d'un axe",
+  "lecture": [
+   "La droite grise est l'axe H, et la flèche bleue est u = (0, 1).",
+   "Le point orange est x = (2, 1).",
+   "Le point vert est son image (2, −1), de l'autre côté de l'axe, sur la même verticale."
+  ],
+  "a_voir": "L'image est x moins 2 fois u."
+ },
+ {
+  "code": "72-068",
+  "a_dire": "Avec Q(u), la moitié du carré de u, la formule retire aussi 2 fois u : c'est la même réflexion.",
+  "legende_titre": "Deux écritures de la même réflexion",
+  "lecture": [
+   "La boîte bleue calcule avec B : 2 fois 1, divisé par 1, donne 2.",
+   "La boîte violette calcule avec Q(u) = 1/2 : 1 divisé par 1/2 donne 2.",
+   "Les flèches vertes mènent au même résultat : retirer 2 fois u."
+  ],
+  "a_voir": "Les deux calculs donnent le même nombre, 2."
+ },
+ {
+  "code": "72-069",
+  "a_dire": "La réflexion envoie P = (1, 2, 3) sur (1, 2, −3), de l'autre côté du plan H, en passant par M = (1, 2, 0).",
+  "legende_titre": "La réflexion dans l'espace",
+  "lecture": [
+   "Le losange bleu est le plan H, et la flèche violette est u = (0, 0, 1).",
+   "Le point orange est P, le point bleu M est sur le plan.",
+   "Le point vert est l'image de P, sur la même droite verticale, à égale distance de M."
+  ],
+  "a_voir": "P, M et l'image sont alignés, M est sur H, et seul le troisième nombre change de signe."
+ },
+ {
+  "code": "72-070",
+  "a_dire": "Un hyperplan est un sous-espace de dimension n − 1 : il a une case de moins que l'espace.",
+  "legende_titre": "Un hyperplan a une dimension de moins",
+  "lecture": [
+   "Chaque ligne montre n cases : 2, 3 puis 4.",
+   "Les cases bleues forment H ; la case orange est u.",
+   "À côté de chaque ligne, la dimension de H est écrite : 1, 2 puis 3."
+  ],
+  "a_voir": "H a toujours une case de moins que l'espace."
+ },
+ {
+  "code": "72-071",
+  "a_dire": "Le nombre B(x, u) est nul sur H et change de signe de l'autre côté de H.",
+  "legende_titre": "Le signe dit de quel côté de H on est",
+  "lecture": [
+   "La droite graduée porte les nombres B(x, u) : −3, 0 et 3.",
+   "Le trait bleu en pointillés marque H, à 0.",
+   "Les trois points sont (1, 2, −3), (1, 2, 0) et (1, 2, 3)."
+  ],
+  "a_voir": "Le point dans H donne 0 ; de l'autre côté, le signe est opposé."
+ },
+ {
+  "code": "72-072",
+  "a_dire": "La part de x le long de u vient d'une division par B(u, u) ; elle est impossible quand B(u, u) = 0.",
+  "legende_titre": "Quand la part n'existe pas",
+  "lecture": [
+   "La flèche bleue est u = (1, 1), la flèche orange est x = (1, 0).",
+   "Le nombre B(x, u) vaut 1.",
+   "Le carré de u vaut 1 − 1 = 0, donc la division de la boîte rouge est impossible."
+  ],
+  "a_voir": "Un vecteur de carré nul ne donne pas de part."
+ },
+ {
+  "code": "72-073",
+  "a_dire": "Retirer la part une fois amène x sur H en M ; la retirer deux fois l'envoie de l'autre côté.",
+  "legende_titre": "Retirer la part une fois, puis deux fois",
+  "lecture": [
+   "La barre bleue est l'hyperplan H.",
+   "Le point orange (1, 2, 3) est le point de départ.",
+   "Après un retrait de (0, 0, 3), on est en M sur H ; après un second, on est au point vert (1, 2, −3)."
+  ],
+  "a_voir": "Un retrait amène sur H, deux retraits passent de l'autre côté."
+ },
+ {
+  "code": "72-074",
+  "a_dire": "La réflexion S_u envoie u sur −u : le vecteur est retourné.",
+  "legende_titre": "Le vecteur u est retourné",
+  "lecture": [
+   "La flèche bleue est u = (0, 1).",
+   "La flèche verte est S_u(u) = (0, −1).",
+   "Les deux flèches sont sur la même droite, de sens contraires."
+  ],
+  "a_voir": "L'image de u est −u."
+ },
+ {
+  "code": "72-075",
+  "a_dire": "Si v est orthogonal à u, S_u(v) = v : H ne bouge pas ; sinon le vecteur bouge.",
+  "legende_titre": "Les vecteurs de H restent en place",
+  "lecture": [
+   "La flèche bleue est u = (0, 1).",
+   "La flèche grise (3, 0) est orthogonale à u : elle reste en place.",
+   "La flèche orange (1, 1) n'est pas orthogonale à u : son image verte est (1, −1)."
+  ],
+  "a_voir": "Seul un vecteur orthogonal à u reste en place."
+ },
+ {
+  "code": "72-076",
+  "a_dire": "Deux fois la même réflexion ramène x à sa place : S_u S_u = 1.",
+  "legende_titre": "Deux plis reviennent au départ",
+  "lecture": [
+   "Le point orange est (2, 1) au départ et à l'arrivée.",
+   "La première flèche descend vers le point vert (2, −1).",
+   "La seconde flèche remonte au point de départ."
+  ],
+  "a_voir": "Après deux plis, on est revenu au même point."
+ },
+ {
+  "code": "72-077",
+  "a_dire": "La matrice de S_u est diag(−1, 1, 1) : son déterminant vaut −1, la réflexion est impropre.",
+  "legende_titre": "La matrice d'une réflexion",
+  "lecture": [
+   "La case orange −1 correspond à u.",
+   "Les cases bleues 1 de la diagonale correspondent à H.",
+   "Les cases grises 0 sont hors de la diagonale ; le produit de la diagonale donne −1."
+  ],
+  "a_voir": "Une seule case de la diagonale vaut −1, donc le déterminant est −1."
+ },
+ {
+  "code": "72-078",
+  "a_dire": "(V, B) réunit l'ensemble des vecteurs V et la règle de mesure B.",
+  "legende_titre": "Les vecteurs et leur règle de mesure",
+  "lecture": [
+   "La boîte bleue V est l'ensemble des vecteurs : des listes de 2 nombres.",
+   "La boîte violette B est la règle de mesure.",
+   "La boîte verte (V, B) réunit les deux."
+  ],
+  "a_voir": "Le couple porte les vecteurs et la mesure ensemble."
+ },
+ {
+  "code": "72-079",
+  "a_dire": "B(x, y) est le nombre que la règle B associe à x et y : ici 11.",
+  "legende_titre": "Le nombre associé à deux vecteurs",
+  "lecture": [
+   "La flèche bleue est x = (1, 2).",
+   "La flèche violette est y = (3, 4).",
+   "La boîte verte est le nombre B(x, y) = 1 fois 3 plus 2 fois 4, soit 11."
+  ],
+  "a_voir": "B(x, y) est un nombre, pas un vecteur."
+ },
+ {
+  "code": "72-080",
+  "a_dire": "B(x, x) est le nombre de x avec lui-même, appelé le carré de x ; il dépend de la règle.",
+  "legende_titre": "Le carré d'un vecteur selon la règle",
+  "lecture": [
+   "La flèche bleue est x = (2, 1).",
+   "La boîte bleue donne 5 avec la mesure habituelle : 2 fois 2 plus 1 fois 1.",
+   "La boîte violette donne 3 avec la seconde mesure : 2 fois 2 moins 1 fois 1."
+  ],
+  "a_voir": "Le même signe B(x, x) donne 5 ou 3 selon la règle."
+ }
+]

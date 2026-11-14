@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+u = 24; O = (14, 10)
+for i in range(0, 3):
+    for j in range(0, 3):
+        if (i, j) not in ((0, 0),): disc(ax, O[0]+i*u, O[1]+j*u, 1.0, 'fixe')
+s60 = (O[0]+0.5*u, O[1]+math.sqrt(3)/2*u)
+arrow(ax, O, (O[0]+u-1.5, O[1]), 'sujet', lw=1.3)
+arrow(ax, O, (O[0], O[1]+u-1.5), 'resultat', lw=1.3)
+arrow(ax, O, (s60[0]-0.5, s60[1]-0.5), 'limite', lw=1.0)
+disc(ax, O[0], O[1]+u, 1.5, 'resultat')
+disc(ax, s60[0], s60[1], 1.6, 'limite', fill=False)
+disc(ax, O[0]+u, O[1], 1.5, 'sujet')
+disc(ax, O[0], O[1], 1.1, 'encre')
+text(ax, O[0]+u-3, O[1]-3.5, r'$x$', 'sujet', 'm')
+text(ax, O[0]-4, O[1]+u, r'$y$', 'resultat', 'm')
+text(ax, s60[0]+13, s60[1]-3, 'hors réseau', 'limite', 's')
+text(ax, O[0]-3.5, O[1]-3.5, r'$O$', 'encre', 's')
+text(ax, 74, 46, 'quart de tour : oui', 'resultat', 's')
+text(ax, 74, 40, 'sixième : non', 'limite', 's')
+text(ax, 74, 22, 'ordres 1, 2, 4', 'sujet', 's')
+save(fig, '74-139')

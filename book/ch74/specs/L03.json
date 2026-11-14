@@ -1,0 +1,178 @@
+[
+ {
+  "code": "74-033",
+  "a_dire": "Une isométrie déplace une figure sans changer ses mesures : le triangle garde 3, 4, 5 et le disque garde son rayon 2.",
+  "legende_titre": "Les mesures restent égales",
+  "lecture": [
+   "Le triangle bleu a des côtés de 4, 3 et 5.",
+   "Les triangles orange sont le même triangle tourné, puis retourné : les côtés restent 4, 3 et 5.",
+   "Le disque bleu a un rayon de 2 ; le disque orange, déplacé, a encore un rayon de 2."
+  ],
+  "a_voir": "Les nombres des côtés et du rayon ne changent pas quand la figure est déplacée."
+ },
+ {
+  "code": "74-034",
+  "a_dire": "Garder les distances sépare les affiches agrandies, qu'on distingue, d'un papier tourné ou retourné, qui reste le même.",
+  "legende_titre": "Ce que l'œil distingue",
+  "lecture": [
+   "En haut, l'affiche bleue fait 50 cm et l'affiche violette 100 cm : le signe rouge dit qu'elles ne sont pas les mêmes.",
+   "En bas, l'affiche bleue est de 50 cm.",
+   "Les deux affiches orange sont la même affiche tournée, puis retournée : elle fait toujours 50 cm."
+  ],
+  "a_voir": "Agrandie, une affiche change ; tournée ou retournée, elle reste la même."
+ },
+ {
+  "code": "74-035",
+  "a_dire": "La matrice de rotation de 90° envoie le point (2 ; 1) sur (−1 ; 2) par deux calculs de ligne.",
+  "legende_titre": "Une matrice qui tourne",
+  "lecture": [
+   "Le point bleu (2 ; 1) est le point de départ.",
+   "La flèche orange est le quart de tour autour de l'origine.",
+   "Le point vert (−1 ; 2) est le résultat des deux calculs écrits en orange, ligne par ligne, avec la matrice."
+  ],
+  "a_voir": "La matrice remplie avec 0, −1, 1, 0 donne le point tourné."
+ },
+ {
+  "code": "74-036",
+  "a_dire": "La matrice de réflexion d'angle φ a pour axe la droite d'angle φ/2 et son déterminant vaut −1, pour 90° comme pour 180°.",
+  "legende_titre": "Axe et déterminant",
+  "lecture": [
+   "À gauche, φ = 90° : la droite orange est l'axe à 45° et le point bleu (3 ; 1) devient le point vert (1 ; 3).",
+   "À droite, φ = 180° : l'axe orange est vertical et (3 ; 1) devient (−3 ; 1).",
+   "Sous chaque dessin, la matrice bleue correspond ; le déterminant gris vaut −1 dans les deux cas."
+  ],
+  "a_voir": "L'axe fait un angle moitié de φ, et le déterminant ne change pas."
+ },
+ {
+  "code": "74-037",
+  "a_dire": "Une matrice dont les colonnes sont de longueur 1 et perpendiculaires a deux formes seulement, la rotation ou la réflexion.",
+  "legende_titre": "Deux colonnes, deux choix",
+  "lecture": [
+   "Le cercle gris est le cercle de rayon 1.",
+   "La flèche bleue, de coordonnées (0,6 ; 0,8), est la première colonne : elle touche le cercle.",
+   "Les deux flèches vertes sont les seules perpendiculaires à la bleue sur le cercle : l'une donne la rotation, l'autre la réflexion."
+  ],
+  "a_voir": "Une fois la première colonne choisie, la seconde n'a que deux places possibles."
+ },
+ {
+  "code": "74-038",
+  "a_dire": "Toute isométrie du plan s'écrit f(x) = Ax + b : une partie A qui tourne ou retourne, puis un glissement b.",
+  "legende_titre": "Un tour puis un glissement",
+  "lecture": [
+   "Le triangle bleu est le départ.",
+   "Le triangle orange est le triangle après le quart de tour A autour de l'origine.",
+   "Le triangle vert est celui d'après, glissé de b = (3 ; 1) : la flèche grise montre ce glissement."
+  ],
+  "a_voir": "Tout déplacement sans déformation est une partie A suivie d'un glissement b."
+ },
+ {
+  "code": "74-039",
+  "a_dire": "Avec b = f(0), la fonction g(x) = f(x) − b est une isométrie qui laisse l'origine en place.",
+  "legende_titre": "Retirer le glissement b",
+  "lecture": [
+   "Le triangle bleu T est le départ, avec un sommet à l'origine.",
+   "Le triangle orange f(T) est son image ; la flèche orange va de 0 à f(0) = b.",
+   "La flèche grise retire b : le triangle vert g(T) a son sommet de nouveau à l'origine."
+  ],
+  "a_voir": "On retire b, et l'origine revient à sa place sans changer les distances."
+ },
+ {
+  "code": "74-040",
+  "a_dire": "Une isométrie qui fixe l'origine garde les longueurs : |g(x)| = |x|, ici √10 pour le point (3 ; 1) et son image (−1 ; 3).",
+  "legende_titre": "Même longueur après g",
+  "lecture": [
+   "La flèche bleue va de l'origine au point (3 ; 1).",
+   "La flèche verte va de l'origine à son image (−1 ; 3), après le quart de tour orange.",
+   "Le cercle gris passe par les deux pointes : les deux flèches ont la même longueur."
+  ],
+  "a_voir": "Comme g(0) = 0, les deux flèches ont la même longueur."
+ },
+ {
+  "code": "74-041",
+  "a_dire": "Le produit scalaire se calcule avec trois longueurs au carré : ½ (|x|² + |y|² − |x − y|²) = 5.",
+  "legende_titre": "Trois longueurs, un produit",
+  "lecture": [
+   "La flèche bleue x va vers (3 ; 1) et la flèche violette y vers (1 ; 2).",
+   "La flèche orange x − y relie la pointe de y à la pointe de x.",
+   "Les trois nombres 10, 5 et 5 sont mis dans la formule verte, qui donne 5 comme le calcul avec les coordonnées."
+  ],
+  "a_voir": "Avec seulement les trois longueurs, on retrouve le même 5."
+ },
+ {
+  "code": "74-042",
+  "a_dire": "Les images u₁ et u₂ de (1, 0) et (0, 1) sont de longueur 1 et perpendiculaires, et g(x) = x₁u₁ + x₂u₂.",
+  "legende_titre": "Deux flèches qui suffisent",
+  "lecture": [
+   "La flèche bleue u₁ est l'image de (1 ; 0) et la flèche orange u₂ celle de (0 ; 1).",
+   "Les pointillés montrent 2u₁ et 3u₂ pour le point (2 ; 3).",
+   "La flèche verte est leur somme : g(2 ; 3) = (−3 ; 2)."
+  ],
+  "a_voir": "Les deux images u₁ et u₂ donnent l'image de n'importe quel point."
+ },
+ {
+  "code": "74-043",
+  "a_dire": "Dans f(x) = Ax + b, A est la partie linéaire qui fixe l'origine et b la partie translation qui glisse tout de la même façon.",
+  "legende_titre": "Deux parties, deux noms",
+  "lecture": [
+   "À gauche, le triangle bleu est tourné par A : le point de l'origine ne bouge pas.",
+   "À droite, le triangle orange est glissé par b : tous ses points avancent de la même flèche.",
+   "Les triangles gris sont les triangles de départ."
+  ],
+  "a_voir": "Une partie tourne en gardant l'origine, l'autre glisse tout."
+ },
+ {
+  "code": "74-044",
+  "a_dire": "Pour (1 ; 0), appliquer g puis f donne (−3 ; 2), et la formule A(Bx + c) + b = ABx + Ac + b regroupe ces étapes.",
+  "legende_titre": "Deux isométries enchaînées",
+  "lecture": [
+   "Le point bleu (1 ; 0) est tourné par B, puis glissé de c, ce qui donne le point orange (2 ; 4).",
+   "Ce point est tourné par A, ce qui donne (−4 ; 2).",
+   "Il est glissé de b : le point vert (−3 ; 2) est le résultat."
+  ],
+  "a_voir": "Chaque étape est une flèche orange ; la dernière donne le point vert."
+ },
+ {
+  "code": "74-045",
+  "a_dire": "La partie linéaire de la composée est AB : deux quarts de tour font un demi-tour, quels que soient b et c.",
+  "legende_titre": "Deux quarts de tour",
+  "lecture": [
+   "La flèche bleue x est la direction de départ.",
+   "L'arc orange est le quart de tour B ; il donne la flèche orange Bx.",
+   "L'arc vert est le quart de tour A ; il donne la flèche verte ABx, et l'arc gris est le demi-tour AB."
+  ],
+  "a_voir": "Deux quarts de tour mis bout à bout font un demi-tour."
+ },
+ {
+  "code": "74-046",
+  "a_dire": "Les isométries du plan forment un groupe E(2) : enchaîner deux d'entre elles, prendre le contraire et ne rien bouger restent dans E(2).",
+  "legende_titre": "Trois choses qui restent dedans",
+  "lecture": [
+   "Le grand rectangle bleu est E(2), qui contient toutes les isométries.",
+   "À gauche, f et g enchaînés donnent un élément vert, dans le rectangle.",
+   "Au milieu, h et son contraire sont tous deux dedans ; à droite, id, qui ne bouge rien, y est aussi."
+  ],
+  "a_voir": "Chaque opération donne un résultat qui reste dans E(2)."
+ },
+ {
+  "code": "74-047",
+  "a_dire": "Si A = I, f(x) = x + b est la translation de vecteur b : tous les points avancent du même vecteur, et b = 0 donne l'identité.",
+  "legende_titre": "Tous avancent pareil",
+  "lecture": [
+   "Les points bleus sont les points de départ, les points verts leurs images.",
+   "Chaque flèche orange est le même vecteur b = (3 ; 1), du point (2 ; 5) au point (5 ; 6) par exemple.",
+   "À droite, avec b = 0, le point reste en place."
+  ],
+  "a_voir": "Tous les points avancent du même vecteur ; avec le vecteur nul, rien ne bouge."
+ },
+ {
+  "code": "74-048",
+  "a_dire": "Quand A est une rotation d'angle θ non nul, f est une rotation autour d'un point c qui ne bouge pas.",
+  "legende_titre": "Un centre qui ne bouge pas",
+  "lecture": [
+   "Le point gris c = (1 ; 2) est le point qui ne bouge pas.",
+   "Le point bleu 0 est le point de départ ; le point vert (3 ; 1) est son image.",
+   "Les deux segments partent de c, ont la même longueur, et l'arc orange de 90° les relie."
+  ],
+  "a_voir": "L'image de 0 est 0 tourné autour de c."
+ }
+]

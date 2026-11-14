@@ -1,0 +1,185 @@
+[
+ {
+  "code": "42-209",
+  "a_dire": "Dire que f envoie chaque entier sur n/1, sans jamais envoyer deux entiers sur la même fraction, et que 1/2 n'est atteinte par aucun entier.",
+  "legende_titre": "Une application qui ne se répète pas, sans tout atteindre",
+  "lecture": [
+   "Les disques bleus à gauche sont des entiers de ℤ.",
+   "Chaque flèche orange mène à la fraction « sur 1 » du même entier.",
+   "Les disques verts reçoivent chacun une seule flèche.",
+   "Le disque rouge 1/2 ne reçoit aucune flèche."
+  ],
+  "a_voir": "Chaque arrivée verte a une seule flèche, et 1/2 n'en a pas."
+ },
+ {
+  "code": "42-210",
+  "a_dire": "Dire que g envoie p/q sur p, atteint tous les entiers, mais envoie 1/2 et 1/3 sur le même entier 1.",
+  "legende_titre": "Une application qui atteint tout, avec une répétition",
+  "lecture": [
+   "Les disques bleus à gauche sont des fractions de ℚ.",
+   "Les flèches oranges mènent à l'entier p de chaque fraction.",
+   "Les deux flèches rouges arrivent sur le même entier 1.",
+   "Chaque disque vert à droite reçoit au moins une flèche."
+  ],
+  "a_voir": "Deux flèches rouges se rejoignent sur 1, et aucun entier n'est laissé sans flèche."
+ },
+ {
+  "code": "42-211",
+  "a_dire": "Dire que « au plus autant » et « au moins autant » ne se lisent que pour des ensembles finis, pas pour ℤ et ℚ.",
+  "legende_titre": "Où la comparaison des tailles s'arrête",
+  "lecture": [
+   "En haut, deux petits ensembles : deux flèches oranges, et la comparaison est vraie (vert).",
+   "En bas, les grands rectangles bleu et violet sont ℤ et ℚ, avec des points de suite.",
+   "Une flèche va de ℤ vers ℚ (injective), l'autre de ℚ vers ℤ (surjective).",
+   "Le rouge dit que cela ne permet pas de savoir lequel est le plus grand."
+  ],
+  "a_voir": "En haut la conclusion est possible ; en bas elle est impossible."
+ },
+ {
+  "code": "42-212",
+  "a_dire": "Dire que si chaque élément de S a une image différente dans T, alors S n'a pas plus d'éléments que T.",
+  "legende_titre": "Pourquoi une injection ne peut pas agrandir",
+  "lecture": [
+   "À gauche, le rectangle bleu S a 3 éléments ; à droite, le violet T en a 2.",
+   "Les deux flèches rouges arrivent sur le même élément t₂.",
+   "Il y a donc deux départs pour une arrivée : l'application n'est pas injective."
+  ],
+  "a_voir": "Trois départs ne tiennent pas dans deux arrivées sans répétition."
+ },
+ {
+  "code": "42-213",
+  "a_dire": "Dire que si chaque élément de T reçoit une flèche, alors S a au moins autant d'éléments que T.",
+  "legende_titre": "Pourquoi une surjection ne peut pas rétrécir",
+  "lecture": [
+   "À gauche, S a 2 éléments ; à droite, T en a 3.",
+   "Les deux flèches oranges atteignent t₁ et t₂.",
+   "Le disque rouge t₃ ne reçoit aucune flèche : l'application n'est pas surjective."
+  ],
+  "a_voir": "Deux départs ne suffisent pas à atteindre trois arrivées."
+ },
+ {
+  "code": "42-214",
+  "a_dire": "Dire qu'une bijection entre ensembles finis donne m ≤ n et m ≥ n, donc m = n.",
+  "legende_titre": "Deux inégalités qui donnent l'égalité",
+  "lecture": [
+   "Chaque élément bleu de S envoie une flèche vers un élément violet de T.",
+   "Chaque élément de T reçoit exactement une flèche.",
+   "Les deux lignes sous le dessin donnent les deux inégalités.",
+   "La boîte verte donne le résultat : m = n = 3."
+  ],
+  "a_voir": "Trois flèches, trois départs, trois arrivées : les nombres sont égaux."
+ },
+ {
+  "code": "42-215",
+  "a_dire": "Dire que compter, c'est associer chaque élément à un seul nombre de {1, …, n}, et chaque nombre à un seul élément.",
+  "legende_titre": "Compter, c'est apparier",
+  "lecture": [
+   "Le rectangle bleu contient les trois élèves.",
+   "Le rectangle vert contient les nombres 1, 2, 3.",
+   "Chaque flèche orange associe un élève à un nombre, sans partage."
+  ],
+  "a_voir": "Chaque élève a un nombre, et chaque nombre a un élève."
+ },
+ {
+  "code": "42-216",
+  "a_dire": "Dire que le chemin 3, b, x par f puis g est remplacé par une seule flèche de 3 vers x pour g ∘ f.",
+  "legende_titre": "Deux flèches remplacées par une seule",
+  "lecture": [
+   "Les trois rectangles sont S (bleu), T (gris) et U (violet).",
+   "Les flèches grises sont les autres images ; les flèches oranges forment le chemin de 3 à x en passant par b.",
+   "La grande flèche verte du bas va de 3 directement à x."
+  ],
+  "a_voir": "Le chemin orange en deux flèches et la flèche verte en une seule ont les mêmes extrémités."
+ },
+ {
+  "code": "42-217",
+  "a_dire": "Dire que g ∘ f va de S vers U, et qu'elle n'existe que si l'arrivée de f est le départ de g.",
+  "legende_titre": "La composée : deux étapes en une",
+  "lecture": [
+   "Trois rectangles : S (bleu) avec 3, T (gris) avec b, U (violet) avec x.",
+   "Les deux flèches oranges sont f puis g, qui s'enchaînent en T.",
+   "La flèche verte du bas est g ∘ f, de S vers U, sans passer par b.",
+   "La ligne grise rappelle la condition d'enchaînement."
+  ],
+  "a_voir": "La flèche verte relie directement S à U."
+ },
+ {
+  "code": "42-218",
+  "a_dire": "Dire que (g ∘ f)(s) se calcule en deux temps : f(s), puis g de ce résultat ; avec s = 4, on trouve 18.",
+  "legende_titre": "Le calcul en deux temps, sur un cas chiffré",
+  "lecture": [
+   "La boîte bleue est le départ s = 4.",
+   "La première flèche orange ajoute 2 et donne la boîte grise 6, c'est f(s).",
+   "La seconde flèche orange triple et donne la boîte verte 18, c'est g(f(s))."
+  ],
+  "a_voir": "Le départ 4, l'étape 6 et l'arrivée 18 sont dans l'ordre f, puis g."
+ },
+ {
+  "code": "42-219",
+  "a_dire": "Dire que le signe ∘ se lit « rond » et relie deux noms d'applications, f agissant en premier.",
+  "legende_titre": "Lire le signe entre deux lettres",
+  "lecture": [
+   "Le rectangle bleu est g, qui agit en second.",
+   "Le rectangle orange est le signe ∘, qui se lit « rond ».",
+   "Le rectangle violet est f, qui agit en premier.",
+   "La boîte verte traduit l'écriture en phrase."
+  ],
+  "a_voir": "Chaque morceau de g ∘ f est relié à son sens."
+ },
+ {
+  "code": "42-220",
+  "a_dire": "Dire que g ∘ f se lit de droite à gauche : f d'abord, puis g, et que l'ordre change le résultat.",
+  "legende_titre": "Le sens de lecture compte",
+  "lecture": [
+   "En haut, la flèche orange va de la droite vers la gauche de l'écriture.",
+   "La première ligne fait +2 puis ×3 et donne 18 (vert).",
+   "La seconde ligne fait ×3 puis +2 et donne 14 (rouge)."
+  ],
+  "a_voir": "Avec 4 au départ, les deux ordres donnent 18 et 14."
+ },
+ {
+  "code": "42-221",
+  "a_dire": "Dire que pour f(x) = x² et g(x) = 2x + 5, avec x = 1, f ∘ g donne 49 et g ∘ f donne 7 : ils sont différents.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La première ligne applique g puis f à 1 : 7, puis 49.",
+   "La seconde ligne applique f puis g à 1 : 1, puis 7.",
+   "La ligne rouge du bas compare 49 et 7."
+  ],
+  "a_voir": "Le même départ 1 arrive à 49 dans une ligne et à 7 dans l'autre."
+ },
+ {
+  "code": "42-222",
+  "a_dire": "Dire que f ∘ g et g ∘ f ne sont pas toujours égales, car l'une peut même ne pas exister.",
+  "legende_titre": "Une composée peut ne pas exister",
+  "lecture": [
+   "Les rectangles S, T, U ont 3, 2 et 3 éléments.",
+   "Les flèches oranges sont f (de S vers T) puis g (de T vers U).",
+   "g ∘ f existe (vert) : les flèches s'enchaînent.",
+   "Le trait rouge pointillé dit que f ∘ g n'existe pas : U n'est pas le départ de f."
+  ],
+  "a_voir": "Les flèches s'enchaînent dans un sens et pas dans l'autre."
+ },
+ {
+  "code": "42-223",
+  "a_dire": "Dire que x³ et la racine cubique se défont l'une l'autre : les deux composées rendent le nombre de départ.",
+  "legende_titre": "Deux ordres, même nombre de retour",
+  "lecture": [
+   "La première ligne part de 2, passe par 8 avec x³, revient à 2 avec la racine cubique.",
+   "La seconde ligne part de 8, passe par 2, revient à 8.",
+   "Les cases vertes d'arrivée sont égales aux cases bleues de départ."
+  ],
+  "a_voir": "Dans les deux lignes, la case verte égale la case bleue."
+ },
+ {
+  "code": "42-224",
+  "a_dire": "Dire que si f et g sont injectives, la composée g ∘ f envoie deux éléments différents sur deux éléments différents.",
+  "legende_titre": "Deux injections de suite",
+  "lecture": [
+   "Les flèches oranges de S vers T, puis de T vers U, ne se rejoignent jamais.",
+   "Chaque arrivée reçoit une seule flèche.",
+   "La flèche verte du bas va de S vers U : c’est g ∘ f."
+  ],
+  "a_voir": "Les deux chemins 1, a, x et 2, b, y restent séparés jusqu'au bout."
+ }
+]

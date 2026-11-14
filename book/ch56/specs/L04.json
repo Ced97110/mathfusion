@@ -1,0 +1,361 @@
+[
+ {
+  "code": "56-213",
+  "a_dire": "Le signe ⊂ dit que tout élément de l'ensemble de gauche est dans celui de droite et que celui de droite a au moins un élément de plus.",
+  "legende_titre": "Ce que dit le signe ⊂ entre deux idéaux",
+  "lecture": [
+   "La rangée violette montre les multiples de 6, de 0 à 36.",
+   "La rangée bleue montre les multiples de 12 : ce sont 0, 12, 24 et 36.",
+   "Les traits en pointillés relient chaque point bleu au même nombre de la rangée violette.",
+   "Les points orange (6, 18, 30) sont dans (6) et leur place est vide dans (12)."
+  ],
+  "a_voir": "Tous les points du bas sont aussi en haut, et il en manque au moins un en bas."
+ },
+ {
+  "code": "56-091",
+  "a_dire": "Si a divise b, les multiples de b sont tous des multiples de a, et pas l'inverse : (b) est contenu dans (a).",
+  "legende_titre": "Diviser, c'est avoir moins de multiples",
+  "lecture": [
+   "La rangée violette montre les multiples de 5, de 0 à 30.",
+   "La rangée bleue montre les multiples de 15 : 0, 15 et 30.",
+   "Les pointillés relient chaque multiple de 15 au même nombre en haut.",
+   "Le cercle rouge vide marque 5 : il est dans (5) et il n'est pas dans (15)."
+  ],
+  "a_voir": "La rangée du diviseur 5 contient celle de 15, et non l'inverse."
+ },
+ {
+  "code": "56-092",
+  "a_dire": "Deux éléments associés ont le même idéal : a ∼ b équivaut à (a) = (b).",
+  "legende_titre": "Associés : mêmes multiples",
+  "lecture": [
+   "La rangée du haut montre les multiples de 3, celle du milieu les multiples de −3.",
+   "Les traits verts relient des points aux mêmes places : les deux rangées sont identiques.",
+   "La rangée grise du bas montre les multiples de 6 : 0, 6 et −6.",
+   "Les cercles rouges vides, en 3 et −3, montrent que 3 n'est pas dans (6)."
+  ],
+  "a_voir": "(3) et (−3) ont exactement les mêmes points ; (6) en a moins."
+ },
+ {
+  "code": "56-093",
+  "a_dire": "Un élément u est une unité exactement quand ses multiples sont tous les éléments de l'anneau : (u) = ℤ.",
+  "legende_titre": "Unité : l'idéal est l'anneau entier",
+  "lecture": [
+   "La rangée verte du haut montre les multiples de −1 : tous les entiers de −4 à 4.",
+   "La rangée du bas montre les multiples de 2 : les points bleus pleins sont pairs.",
+   "Les cercles gris vides sont des entiers absents de (2).",
+   "Le cercle rouge vide est le nombre 1 : il n'est pas dans (2)."
+  ],
+  "a_voir": "(−1) ne manque d'aucun entier ; (2) manque de 1."
+ },
+ {
+  "code": "56-094",
+  "a_dire": "Dans ℤ, diviser devient être contenu, être associé devient être égal, être une unité devient être l'anneau entier.",
+  "legende_titre": "Les trois lignes vérifiées dans ℤ",
+  "lecture": [
+   "Le premier bloc montre 3 ∣ 12 : les multiples de 12 (bleu) sont parmi ceux de 3 (violet).",
+   "Le deuxième bloc montre 3 ∼ −3 : les deux rangées sont identiques, reliées par des traits verts.",
+   "Le troisième bloc montre les multiples de −1 : tous les entiers de −12 à 12."
+  ],
+  "a_voir": "Chaque notion sur les nombres a son équivalent sur les ensembles de multiples."
+ },
+ {
+  "code": "56-095",
+  "a_dire": "De (a) = (b) avec a non nul, on obtient xy = 1 en barrant a : la simplification porte la preuve.",
+  "legende_titre": "Preuve : de (a) = (b) à xy = 1",
+  "lecture": [
+   "La colonne de gauche écrit la preuve avec des lettres, celle de droite avec 3 et −3.",
+   "Les boîtes grises donnent les écritures a = bx, b = ay, puis a = ayx.",
+   "La boîte orange est l'étape qui porte la preuve : on barre a, qui n'est pas nul.",
+   "La boîte verte donne l'arrivée : xy = 1, soit (−1) × (−1) = 1."
+  ],
+  "a_voir": "Sans l'étape orange, on ne peut pas passer de a = ayx à xy = 1."
+ },
+ {
+  "code": "56-096",
+  "a_dire": "L'idéal (3) est le même que (−3) : l'ensemble ne dit pas si le générateur choisi était 3 ou −3.",
+  "legende_titre": "L'idéal ne garde pas le signe",
+  "lecture": [
+   "Le cercle bleu est le générateur 3, le cercle violet est le générateur −3.",
+   "Les deux flèches orange mènent au même cadre vert.",
+   "Les points verts du cadre sont les multiples de 3 : −9, −6, −3, 0, 3, 6, 9.",
+   "Le mot « lequel ? » rappelle qu'on ne retrouve pas le générateur."
+  ],
+  "a_voir": "Deux générateurs différents donnent un seul ensemble."
+ },
+ {
+  "code": "56-097",
+  "a_dire": "Dans ℤ la valeur absolue diminue à chaque pas ; dans un anneau principal, la suite d'idéaux qui grandit joue ce rôle.",
+  "legende_titre": "Ce qui remplace la valeur absolue",
+  "lecture": [
+   "Les barres orange du haut montrent la valeur absolue : 48, 24, 12, 6, 3. Elle diminue.",
+   "Les barres bleues du bas montrent les idéaux (48), (24), (12), (6), (3).",
+   "La hauteur d'une barre bleue est le nombre de multiples entre 0 et 48 : 2, 3, 5, 9, 17.",
+   "Les barres du haut baissent, celles du bas montent."
+  ],
+  "a_voir": "Un nombre qui diminue est remplacé par un ensemble qui grandit."
+ },
+ {
+  "code": "56-098",
+  "a_dire": "Dans la chaîne (48) ⊂ (24) ⊂ (12) ⊂ (6) ⊂ (3), chaque ligne garde les points de la précédente et en ajoute.",
+  "legende_titre": "Les idéaux de 48 à 3, ligne par ligne",
+  "lecture": [
+   "Chaque ligne montre les multiples d'un nombre entre 0 et 48.",
+   "Les points bleus sont ceux déjà présents sur la ligne du dessus ; les traits les relient.",
+   "Les points orange sont les nouveaux points de la ligne.",
+   "Le nombre de points à droite est 2, 3, 5, 9, 17."
+  ],
+  "a_voir": "Aucun point ne disparaît d'une ligne à la suivante, il en apparaît de nouveaux."
+ },
+ {
+  "code": "56-099",
+  "a_dire": "En partant de 48, la chaîne s'arrête sur 3, qui est irréductible ; il reste 16 à décomposer.",
+  "legende_titre": "La chaîne de 48 s'arrête en 3",
+  "lecture": [
+   "La colonne bleue va de 48 à 3 ; chaque flèche « × 2 » détache un facteur 2.",
+   "La boîte verte est le nombre 3 : il est irréductible et la chaîne s'arrête là.",
+   "La boîte orange en pointillés est le reste 16, qui demande une nouvelle chaîne.",
+   "L'écriture en haut à droite rappelle 48 = 3 × 16."
+  ],
+  "a_voir": "Cette chaîne donne un irréductible, 3, et laisse un reste, 16, à décomposer."
+ },
+ {
+  "code": "56-100",
+  "a_dire": "Une deuxième chaîne sur le reste 16 détache des facteurs 2 ; au total 48 = 3 × 2 × 2 × 2 × 2.",
+  "legende_titre": "Assembler les facteurs des deux chaînes",
+  "lecture": [
+   "La case bleue est le facteur 3, donné par la première chaîne.",
+   "Les quatre cases violettes sont les facteurs 2, donnés par la deuxième chaîne (16, 8, 4, 2).",
+   "Les signes × relient les cinq cases.",
+   "La ligne du haut écrit le produit : 48 = 3 × 2 × 2 × 2 × 2."
+  ],
+  "a_voir": "Deux chaînes, mises bout à bout, donnent tous les facteurs irréductibles de 48."
+ },
+ {
+  "code": "56-101",
+  "a_dire": "Un anneau vérifie la condition de chaîne ascendante si toute suite croissante d'idéaux devient constante.",
+  "legende_titre": "Une suite d'idéaux qui finit par ne plus changer",
+  "lecture": [
+   "Les barres orange montrent les idéaux (48), (24), (12), (6) : chacun est plus grand que le précédent.",
+   "Les barres vertes montrent (3), (3), (3) : l'idéal ne change plus.",
+   "La lettre N marque le rang où la suite devient constante.",
+   "La ligne du haut écrit la condition avec I₁, I₂, I₃."
+  ],
+  "a_voir": "La suite grandit d'abord, puis reste égale à elle-même."
+ },
+ {
+  "code": "56-102",
+  "a_dire": "ACC est un sigle anglais de trois lettres qui abrège « condition de chaîne ascendante ».",
+  "legende_titre": "Les trois lettres ACC",
+  "lecture": [
+   "Les trois cases bleues sont les lettres A, C et C.",
+   "Les cases grises donnent les mots anglais dont elles sont les initiales.",
+   "Les cases vertes donnent le mot français correspondant.",
+   "Le texte du bas dit ce que la condition exige."
+  ],
+  "a_voir": "Chaque lettre est l'initiale d'un mot de l'expression anglaise."
+ },
+ {
+  "code": "56-103",
+  "a_dire": "Un anneau noethérien est un anneau où toute suite croissante d'idéaux s'arrête ; le mot vient d'Emmy Noether.",
+  "legende_titre": "Un mot pour la condition de chaîne",
+  "lecture": [
+   "Les deux boîtes grises du haut donnent la propriété : I₁ ⊆ I₂ ⊆ I₃ ⊆ ⋯ et la suite s'arrête.",
+   "La flèche mène à la grande boîte bleue, le nom de la propriété : anneau noethérien.",
+   "Les deux boîtes vertes du bas donnent des exemples : ℤ et ℚ[x].",
+   "Le texte gris rappelle d'où vient le nom."
+  ],
+  "a_voir": "Un seul mot remplace la longue phrase sur les suites d'idéaux."
+ },
+ {
+  "code": "56-104",
+  "a_dire": "Les petits nombres de I₁, I₂, … sont des numéros de place dans la suite ; Iₙ est l'idéal de rang n.",
+  "legende_titre": "Lire I₁, I₂, … et Iₙ",
+  "lecture": [
+   "Chaque case bleue est un idéal de la chaîne : I₁ à I₅.",
+   "Sous chaque case, le nombre entre parenthèses est l'idéal : (48), (24), (12), (6), (3).",
+   "La flèche orange va dans le sens de l'écriture.",
+   "La case violette en pointillés est Iₙ, un rang quelconque."
+  ],
+  "a_voir": "Le petit nombre en bas donne la place, pas une opération."
+ },
+ {
+  "code": "56-105",
+  "a_dire": "Le signe ⊆ veut dire « est contenu dans » et permet l'égalité ; le signe ⊂ l'interdit.",
+  "legende_titre": "⊆ permet l'égalité, ⊂ non",
+  "lecture": [
+   "À gauche, le disque bleu (6) est dans le grand disque violet (3) : ⊆ et ⊂ sont vrais.",
+   "À droite, un seul disque bleu : (3) et (3) sont le même ensemble.",
+   "Les mots verts disent « oui » : le signe convient.",
+   "Le mot rouge « non » dit que ⊂ ne convient pas quand les ensembles sont égaux."
+  ],
+  "a_voir": "Quand les deux ensembles sont égaux, ⊆ est vrai et ⊂ est faux."
+ },
+ {
+  "code": "56-106",
+  "a_dire": "La lettre N est un rang de la suite à partir duquel tous les idéaux sont égaux ; ici N = 5.",
+  "legende_titre": "Le rang N dans la chaîne de 48 à 3",
+  "lecture": [
+   "Les quatre cases orange sont I₁ à I₄ : l'idéal change.",
+   "Les quatre cases vertes sont I₅ à I₈ : l'idéal (3) ne change plus.",
+   "La flèche bleue montre le rang N = 5.",
+   "L'accolade verte regroupe les rangs n ≥ N."
+  ],
+  "a_voir": "À partir de la case désignée par N, toutes les cases sont les mêmes."
+ },
+ {
+  "code": "56-107",
+  "a_dire": "La condition ne fixe pas une longueur : les suites sont de longueurs différentes, aucune n'est infinie.",
+  "legende_titre": "Deux chaînes, deux longueurs",
+  "lecture": [
+   "La rangée du haut est la chaîne des idéaux de 48 : 5 cases, de (48) à (3).",
+   "Les deux rangées du bas se lisent l'une après l'autre : la chaîne des idéaux de 1 024 compte 10 cases, de (1024) à (2).",
+   "Chaque chaîne finit par une case verte : elle s'arrête.",
+   "Les deux chaînes n'ont pas la même longueur."
+  ],
+  "a_voir": "Chaque chaîne s'arrête, mais pas au même rang."
+ },
+ {
+  "code": "56-108",
+  "a_dire": "Tout anneau principal est noethérien : les anneaux principaux sont une partie des anneaux noethériens.",
+  "legende_titre": "Principal entraîne noethérien",
+  "lecture": [
+   "La grande ellipse violette contient les anneaux noethériens.",
+   "L'ellipse bleue, à l'intérieur, contient les anneaux principaux.",
+   "Le disque vert est ℤ, qui est un anneau principal.",
+   "Le texte du bas donne la raison : un seul générateur."
+  ],
+  "a_voir": "L'ellipse des principaux est entièrement dans celle des noethériens."
+ },
+ {
+  "code": "56-109",
+  "a_dire": "La réunion I = (d) de la suite contient d ; d apparaît à un rang N, puis chaque Iₙ vaut I.",
+  "legende_titre": "Où la suite devient constante",
+  "lecture": [
+   "La boîte verte du haut est la réunion I, engendrée par d : ici (3).",
+   "Les cases orange sont I₁ à I₄ : elles ne contiennent pas 3.",
+   "La flèche bleue montre où d apparaît : à partir du rang N, ici I₅.",
+   "L'accolade verte dit qu'à partir de N chaque Iₙ est égal à I."
+  ],
+  "a_voir": "Dès que d est dans un idéal, cet idéal est égal à la réunion."
+ },
+ {
+  "code": "56-110",
+  "a_dire": "Dans ℤ[√3 i], la chaîne donne l'existence de la décomposition de 4, mais pas son unicité : 4 s'écrit de deux façons.",
+  "legende_titre": "Existence sans unicité dans ℤ[√3 i]",
+  "lecture": [
+   "La case bleue du haut est 4, de norme 16.",
+   "À gauche, 4 = 2 × 2 ; à droite, 4 = (1 + √3 i) × (1 − √3 i).",
+   "Dans les deux cas les facteurs ont pour norme 4, plus petite que 16.",
+   "Le texte rouge dit que 2 n'est pas associé à 1 + √3 i : les deux écritures sont différentes."
+  ],
+  "a_voir": "Une même valeur, 4, a deux décompositions qui ne sont pas équivalentes."
+ },
+ {
+  "code": "56-111",
+  "a_dire": "Un idéal maximal M différent de D est un idéal entre lequel et D il n'y a aucun idéal ; (3) l'est dans ℤ, (6) ne l'est pas.",
+  "legende_titre": "Rien entre M et D",
+  "lecture": [
+   "À gauche, (3) touche directement ℤ : aucun idéal entre les deux.",
+   "À droite, (6) est séparé de ℤ par une case orange, (3).",
+   "Le trait vert dit « rien entre » ; les traits rouges disent « il y a quelque chose entre ».",
+   "Les titres donnent le résultat : (3) maximal, (6) pas maximal."
+  ],
+  "a_voir": "Un idéal est maximal quand on ne peut rien glisser entre lui et l'anneau."
+ },
+ {
+  "code": "56-112",
+  "a_dire": "Dans un anneau principal, (p) est maximal si et seulement si p est irréductible ; dans ℤ[x], qui n'est pas principal, ce n'est plus vrai.",
+  "legende_titre": "Le théorème vaut dans un anneau principal",
+  "lecture": [
+   "La colonne de gauche est ℤ : (3) touche ℤ, 3 est irréductible et (3) est maximal.",
+   "La colonne de droite est ℤ[x] : la case orange (2, x) est entre (x) et ℤ[x].",
+   "Le texte vert dit que x est irréductible ; le texte rouge dit que (x) n'est pas maximal.",
+   "Les titres rappellent : ℤ est principal, ℤ[x] ne l'est pas."
+  ],
+  "a_voir": "À droite, un irréductible donne un idéal qui n'est pas maximal."
+ },
+ {
+  "code": "56-113",
+  "a_dire": "Un idéal contenant (3) est (a), et le dictionnaire traduit (3) ⊆ (a) par a ∣ 3 ; donc (a) est ℤ ou (3).",
+  "legende_titre": "Pourquoi aucun idéal ne s'intercale",
+  "lecture": [
+   "La boîte bleue est le départ : un idéal (a) qui contient (3).",
+   "La boîte orange est l'étape qui porte la preuve : le dictionnaire donne a ∣ 3.",
+   "La boîte grise liste les diviseurs de 3 : a = ±1 ou a = ±3.",
+   "La boîte verte est l'arrivée : (a) = ℤ ou (a) = (3)."
+  ],
+  "a_voir": "Il n'y a que deux cas, donc rien ne s'intercale entre (3) et ℤ."
+ },
+ {
+  "code": "56-114",
+  "a_dire": "Dans ℤ, (6) ⊂ (3) ⊂ ℤ avec deux inclusions strictes, donc (6) n'est pas maximal ; et 6 = 2 × 3 n'est pas irréductible.",
+  "legende_titre": "(6) n'est pas maximal dans ℤ",
+  "lecture": [
+   "Le grand disque gris est ℤ, le disque violet est (3), le disque bleu est (6).",
+   "Le petit cercle bleu 6 est dans (6).",
+   "Le petit cercle violet 3 est dans (3) et hors de (6).",
+   "Le petit cercle gris 1 est dans ℤ et hors de (3)."
+  ],
+  "a_voir": "Il y a un idéal, (3), entre (6) et ℤ, donc (6) n'est pas maximal."
+ },
+ {
+  "code": "56-115",
+  "a_dire": "Dans un anneau principal, un irréductible p est premier : si p divise ab, alors p divise a ou p divise b.",
+  "legende_titre": "Irréductible donne premier, cas p = 5",
+  "lecture": [
+   "La rangée du haut enchaîne : 5 irréductible, (5) maximal, (5) premier.",
+   "L'écriture du milieu donne 5 ∣ 30, avec 30 = a × b.",
+   "La case violette est a = 3 : 5 ne le divise pas (texte rouge).",
+   "La case bleue est b = 10 : 5 le divise (texte vert)."
+  ],
+  "a_voir": "5 divise le produit 30, et il divise l'un des deux facteurs, 10."
+ },
+ {
+  "code": "56-116",
+  "a_dire": "Comme (p) est maximal, il est premier d'après le chapitre 52 ; cela donne : ab ∈ (p) entraîne a ∈ (p) ou b ∈ (p).",
+  "legende_titre": "Maximal entraîne premier, cas p = 5",
+  "lecture": [
+   "La boîte bleue est le départ : p = 5 est irréductible, donc (5) est maximal.",
+   "La boîte orange est l'étape qui porte la preuve : un idéal maximal est premier.",
+   "La boîte verte écrit la propriété des idéaux premiers.",
+   "Sur la rangée de points, le point orange est ab = 30, le point vert b = 10, le cercle rouge a = 3 hors de (5)."
+  ],
+  "a_voir": "30 est dans (5) ; l'un de ses deux facteurs, 10, y est aussi."
+ },
+ {
+  "code": "56-117",
+  "a_dire": "Dans ℤ[x], (x) ⊂ (2, x) ⊂ ℤ[x] avec deux inclusions strictes, donc (x) n'est pas maximal.",
+  "legende_titre": "Un idéal entre (x) et ℤ[x]",
+  "lecture": [
+   "La case grise du haut est ℤ[x], la case violette est (2, x), la case bleue est (x).",
+   "Le premier texte donne un nombre qui sépare (2, x) de ℤ[x] : 1.",
+   "Le second texte donne un nombre qui sépare (x) de (2, x) : 2.",
+   "Le texte rouge en bas tire la conclusion."
+  ],
+  "a_voir": "Deux nombres, 1 et 2, suffisent pour fabriquer deux inclusions strictes."
+ },
+ {
+  "code": "56-118",
+  "a_dire": "ℤ[x]/(x) est une copie de ℤ : intègre, donc (x) est premier ; mais ℤ n'est pas un corps, donc (x) n'est pas maximal.",
+  "legende_titre": "Quotient par (x) : une copie de ℤ",
+  "lecture": [
+   "La boîte bleue est un polynôme ; la flèche orange remplace x par 0.",
+   "La boîte verte est le résultat : 7, un entier de ℤ.",
+   "Le texte orange dit ce qui disparaît : le multiple de x.",
+   "La boîte verte du bas donne le premier effet ; la boîte rouge donne le second : 2 sans inverse."
+  ],
+  "a_voir": "Chaque polynôme devient son terme constant : on obtient ℤ, qui est intègre mais pas un corps."
+ },
+ {
+  "code": "56-119",
+  "a_dire": "Un anneau euclidien a une division avec reste dont la taille est plus petite que celle du diviseur.",
+  "legende_titre": "Division avec un reste plus petit",
+  "lecture": [
+   "La barre de 17 cases est a = 17.",
+   "Les trois groupes bleus de 5 cases sont b = 5 pris q = 3 fois.",
+   "Les deux cases vertes sont le reste r = 2.",
+   "Les deux barres du bas comparent les tailles : celle de r (2) est plus courte que celle de b (5)."
+  ],
+  "a_voir": "Le reste est toujours plus petit que le diviseur."
+ }
+]

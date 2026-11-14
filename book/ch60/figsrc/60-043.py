@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 8, 58, 72, 10, 'sujet', label=r'$y = b_1 z_1 + b_2 z_2$')
+box(ax, 8, 41, 72, 10, 'fixe', label=r'a $y$ = 0, avec a ≠ 0')
+box(ax, 8, 24, 72, 10, 'fixe', label=r'a × $b_2$ = 0 sur le morceau libre')
+box(ax, 8, 4, 72, 12, 'resultat', label=r'$b_2$ = 0 : rien ne se cache dans L')
+arrow(ax, (44, 58), (44, 51.5), 'fixe')
+arrow(ax, (44, 41), (44, 34.5), 'fixe')
+arrow(ax, (44, 24), (44, 16.5), 'varie')
+text(ax, 48, 20, 'D intègre, a ≠ 0', 'varie', 's', ha='left')
+save(fig, '60-043')

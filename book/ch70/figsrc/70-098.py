@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 22, 62, 44, 13, 'sujet', label=r'$\exists y,\ y^2=9$')
+text(ax, 10, 68.5, r'sur $\mathbb{R}$', 'sujet', 's')
+arrow(ax, (44, 61.5), (44, 49), 'varie', lw=1.2)
+text(ax, 62, 55, 'éliminer $\\exists y$', 'varie', 's')
+box(ax, 22, 36, 44, 13, 'fixe', label=r'$9\geq0$')
+text(ax, 10, 42.5, 'sans variable', 'fixe', 's', ha='center')
+arrow(ax, (44, 35.5), (44, 23), 'varie', lw=1.2)
+text(ax, 62, 29, 'calculer', 'varie', 's')
+box(ax, 22, 10, 44, 13, 'resultat', label='vrai')
+save(fig, '70-098')

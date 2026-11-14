@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'conjuguer $(1\ 2\ 3)$ par $(1\ 2)$', 'encre', 'm')
+text(ax, 4, 56, '3 permutations, 2 produits', 'fixe', 's', ha='left')
+for i, l in enumerate([r'$\sigma$', r'$\tau$', r'$\sigma^{-1}$']):
+    box(ax, 4 + i * 20, 42, 14, 10, 'fixe', label=l, size='m')
+text(ax, 18.8 + 2.6, 47, r'$\times$', 'fixe', 'm'); text(ax, 40.4 + 0, 47, r'$\times$', 'fixe', 'm')
+text(ax, 4, 31, '1 renommage', 'varie', 's', ha='left')
+box(ax, 4, 14, 24, 10, 'sujet', label='1 2 3', size='m')
+box(ax, 40, 14, 24, 10, 'varie', label='2 1 3', size='m')
+arrow(ax, (28.8, 19), (39.2, 19), 'varie')
+box(ax, 68, 42, 17, 10, 'resultat', label='(1 3 2)', size='s')
+box(ax, 68, 14, 17, 10, 'resultat', label='(1 3 2)', size='s')
+arrow(ax, (63.6, 47), (67.4, 47), 'fixe'); arrow(ax, (64.6, 19), (67.4, 19), 'varie')
+text(ax, 44, 5, 'même résultat, calcul plus court', 'resultat', 's')
+save(fig, '47-169')

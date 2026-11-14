@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,5,38,30,12,'sujet',label='Desargues vrai',size='s')
+box(ax,53,38,30,12,'autre',label='corps gauche fini',size='s')
+box(ax,53,10,30,12,'varie',label='corps commutatif',size='s')
+box(ax,5,10,30,12,'resultat',label='Pappus vrai',size='s')
+arrow(ax,(36,44),(52,44),'sujet')
+text(ax,44,48,'coordonnées','sujet','s')
+arrow(ax,(68,37),(68,23),'varie')
+text(ax,70,30,'Wedderburn','varie','s',ha='left')
+arrow(ax,(52,16),(36,16),'resultat')
+text(ax,44,12,'équivaut','resultat','s')
+save(fig,'78-179')

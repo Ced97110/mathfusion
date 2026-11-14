@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,34,48,24,10,'sujet',label='divise 6',size='s')
+box(ax,62,48,24,10,'autre',label='divise 10',size='s')
+box(ax,2,31,30,11,'fixe',label='atome 2',size='s')
+box(ax,34,31,24,11,'resultat',label='oui',size='s')
+box(ax,62,31,24,11,'resultat',label='oui',size='s')
+box(ax,2,14,30,11,'sujet',label='atome 3 : témoin',size='s')
+box(ax,34,14,24,11,'resultat',label='oui',size='s')
+box(ax,62,14,24,11,'limite',label='non',size='s')
+text(ax,44,4.5,'6 ne divise pas 10','limite','m')
+save(fig,'80-241')

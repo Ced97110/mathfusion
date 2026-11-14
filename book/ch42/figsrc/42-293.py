@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(52)
+box(ax,4,14,22,26,'sujet'); disc(ax,15,27,1.8,'sujet'); text(ax,15,31.5,'1','sujet','s')
+text(ax,15,8,'départ non vide','sujet','s')
+box(ax,56,14,26,26,'fixe',dash=True); text(ax,69,27,r'$T=\varnothing$','fixe','m')
+text(ax,69,8,'arrivée vide','fixe','s')
+arrow(ax,(18,27),(46,27),'varie',lw=1.2)
+line(ax,[(48,22),(48,32)],'limite',lw=1.6)
+text(ax,35,32,'1 va où ?','varie','s')
+text(ax,44,46,'aucune application','limite','m',weight='bold')
+save(fig,'42-293')

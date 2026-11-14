@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 22, 56, 44, 16, 'sujet', label=r'$\mathbb{C}$', size='xl')
+text(ax, 44, 51, 'corps algébriquement clos', 'sujet', 's')
+text(ax, 44, 44, r'$x^2+1$ a la racine $i$', 'resultat', 's')
+arrow(ax, (44, 39), (44, 29), 'varie', lw=1.6)
+text(ax, 49, 36.5, 'seule algèbre à division', 'varie', 's', ha='left')
+text(ax, 49, 31.5, 'associative', 'varie', 's', ha='left')
+box(ax, 22, 8, 44, 16, 'resultat', label=r'$A=\mathbb{C}$', size='xl')
+text(ax, 44, 3, r'dimension 1 sur $\mathbb{C}$', 'resultat', 's')
+save(fig, '78-112')

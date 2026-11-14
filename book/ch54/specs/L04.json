@@ -1,0 +1,338 @@
+[
+ {
+  "code": "54-088",
+  "a_dire": "Le signe ∑ remplace la liste de tous les produits à additionner : il dit seulement lesquels on garde.",
+  "legende_titre": "Une ligne au lieu d’une liste de produits",
+  "lecture": [
+   "Le grand ∑ bleu est le signe étudié.",
+   "Les trois cases orange sont les produits a0b2, a1b1 et a2b0 : ce sont les termes à additionner pour le rang 2.",
+   "L’accolade orange dit lequel on garde : ceux dont les rangs j et k s’ajoutent en 2.",
+   "En bas, la même écriture vaut pour tout rang i."
+  ],
+  "a_voir": "Le signe ∑ regroupe les trois produits dont les rangs s’additionnent en 2."
+ },
+ {
+  "code": "54-089",
+  "a_dire": "La lettre p donne un nom aux coefficients du produit, pour ne pas les confondre avec ceux des deux facteurs.",
+  "legende_titre": "Trois lettres pour trois suites",
+  "lecture": [
+   "La ligne grise est le premier facteur : ses coefficients se nomment a.",
+   "La ligne violette est le second facteur : ses coefficients se nomment b.",
+   "La ligne bleue est le produit : ses coefficients se nomment p. La case verte est le rang 2, qui vaut −3."
+  ],
+  "a_voir": "Chaque ligne a sa propre lettre ; p2 est le coefficient de rang 2 du produit."
+ },
+ {
+  "code": "54-090",
+  "a_dire": "Pour additionner deux polynômes, on additionne les deux termes de chaque position, sans regarder les autres positions.",
+  "legende_titre": "Additionner position par position",
+  "lecture": [
+   "La ligne bleue est la suite (2, −1, 0, 3, 0) du premier polynôme.",
+   "La ligne violette est la suite (1, 1, 0, 0, 4) du second.",
+   "Chaque flèche orange descend d’une position : on additionne les deux termes qui sont l’un au-dessus de l’autre.",
+   "La ligne verte est la suite somme (3, 0, 0, 3, 4)."
+  ],
+  "a_voir": "Chaque case verte vient seulement des deux cases au-dessus d’elle."
+ },
+ {
+  "code": "54-091",
+  "a_dire": "Pour chaque rang i, on additionne les produits a_j fois b_k dont les rangs j et k s’ajoutent en i ; la règle ne change pas quand les nombres changent.",
+  "legende_titre": "La règle du produit sur un cas chiffré",
+  "lecture": [
+   "Chaque ligne est un rang du produit de (2, 3) par (4, 5).",
+   "En bleu, la formule avec les lettres ; en orange, la même formule avec les nombres.",
+   "Les cases vertes donnent le résultat de chaque rang : 8, 22 et 15.",
+   "Le rang 1 a deux produits, les rangs 0 et 2 en ont un seul."
+  ],
+  "a_voir": "La formule bleue garde la même forme à chaque rang ; seul le nombre de produits change."
+ },
+ {
+  "code": "54-092",
+  "a_dire": "La règle du produit vient de x puissance j fois x puissance k, qui donne x puissance j + k : les rangs s’additionnent.",
+  "legende_titre": "D’où vient la règle des rangs",
+  "lecture": [
+   "Le tableau multiplie 1 + 2x par 3 + 4x : les en-têtes violets sont les termes du second facteur, les bleus ceux du premier.",
+   "Chaque case donne un produit et son rang.",
+   "Les deux cases orange sont de rang 1 : 4x et 6x s’additionnent en 10x.",
+   "La dernière ligne donne le résultat 3 + 10x + 8x²."
+  ],
+  "a_voir": "Le rang d’un produit est la somme des rangs de ses deux termes."
+ },
+ {
+  "code": "54-093",
+  "a_dire": "Le produit se calcule rang par rang : on cherche les couples de rangs non nuls dont la somme est ce rang.",
+  "legende_titre": "Un produit calculé rang par rang",
+  "lecture": [
+   "La ligne bleue est la suite (3, 0, 0, 2), la violette est (2, 0, −1, 0, 4) ; les cases en pointillé sont des zéros.",
+   "Les cases orange sont les termes qui comptent : 3 et −1 pour le rang 2, 2 et 4 pour le rang 7.",
+   "La ligne verte est le produit : le rang 2 vaut −3 et le rang 7 vaut 8.",
+   "Les autres rangs se calculent de la même façon."
+  ],
+  "a_voir": "À chaque rang, seuls les couples de termes non nuls dont les rangs s’additionnent comptent."
+ },
+ {
+  "code": "54-094",
+  "a_dire": "La suite nulle ne change rien à une addition et la suite (1, 0, 0, …) ne change rien à une multiplication : ce sont les deux neutres.",
+  "legende_titre": "Deux suites qui ne changent rien",
+  "lecture": [
+   "La suite grise (3, 5, 0) est la suite de départ.",
+   "Les cases bleues sont la suite nulle en haut et la suite (1, 0, 0) en bas.",
+   "Dans les deux cas, la suite verte obtenue est la même que celle de départ."
+  ],
+  "a_voir": "Après l’addition de la suite nulle ou la multiplication par (1, 0, 0, …), la suite n’a pas bougé."
+ },
+ {
+  "code": "54-095",
+  "a_dire": "Si les coefficients ne commutent pas, comme dans les quaternions, alors les polynômes constants ne commutent pas non plus.",
+  "legende_titre": "Sans commutativité des coefficients",
+  "lecture": [
+   "En haut, on multiplie la suite (i, 0, …) par (j, 0, …) : le résultat orange est (k, 0, …).",
+   "En dessous, on les multiplie dans l’autre ordre : le résultat orange est (−k, 0, …).",
+   "Le signe rouge ≠ marque que les deux résultats sont différents."
+  ],
+  "a_voir": "Changer l’ordre des deux facteurs change le résultat : le produit n’est plus commutatif."
+ },
+ {
+  "code": "54-096",
+  "a_dire": "Les deux façons de grouper trois produits donnent le même coefficient : la somme des produits a_j b_k c_l sur les triplets dont les rangs s’additionnent en i.",
+  "legende_titre": "Deux groupements, un même résultat",
+  "lecture": [
+   "La ligne bleue multiplie d’abord les deux premières suites, puis la troisième : on obtient (1, 3, 3, 1).",
+   "La ligne violette multiplie d’abord les deux dernières, puis la première : on obtient aussi (1, 3, 3, 1).",
+   "Les trois cases orange sont les triplets de rangs dont la somme est 2.",
+   "Chacun donne 1, et 1 + 1 + 1 = 3 est le coefficient de rang 2."
+  ],
+  "a_voir": "Les deux lignes arrivent à la même suite verte, car les deux comptent les mêmes triplets."
+ },
+ {
+  "code": "54-097",
+  "a_dire": "La suite x est celle qui a un seul 1, en position 1 ; ses voisines ont leur 1 en position 0 et en position 2.",
+  "legende_titre": "Un seul 1, à la position 1",
+  "lecture": [
+   "Chaque ligne est une suite dont tous les termes sont nuls sauf un.",
+   "La ligne bleue est x : son 1 est en position 1.",
+   "La première ligne violette est le un de l’anneau : son 1 est en position 0.",
+   "La seconde ligne violette est le carré de x : son 1 est en position 2."
+  ],
+  "a_voir": "Ce qui distingue ces trois suites est la position du 1."
+ },
+ {
+  "code": "54-098",
+  "a_dire": "Chaque multiplication par x décale le 1 d’une position, donc x puissance k a son 1 en position k.",
+  "legende_titre": "Chaque multiplication décale le 1",
+  "lecture": [
+   "Chaque ligne est une suite ; les cases en pointillé sont des zéros.",
+   "La case bleue contient le 1 : il est en position 0 pour 1, 1 pour x, 2 pour x², 3 pour x³.",
+   "Chaque flèche orange est une multiplication par x : le 1 avance d’une position."
+  ],
+  "a_voir": "Après k multiplications par x, le 1 est en position k."
+ },
+ {
+  "code": "54-099",
+  "a_dire": "Un élément a de R s’identifie à la suite (a, 0, 0, …), et multiplier un polynôme par a revient à multiplier chaque terme par a.",
+  "legende_titre": "Un nombre vu comme une suite",
+  "lecture": [
+   "En haut, le nombre 5 est mis en relation avec la suite (5, 0, 0, …).",
+   "La ligne violette est la suite (1, 2, 3).",
+   "Les flèches orange multiplient chaque case par 5.",
+   "La ligne verte est la suite obtenue : (5, 10, 15)."
+  ],
+  "a_voir": "Multiplier par 5 multiplie chaque case de la suite par 5."
+ },
+ {
+  "code": "54-100",
+  "a_dire": "Le terme de rang k de la suite devient le terme a_k x puissance k du polynôme ; les zéros ne s’écrivent pas.",
+  "legende_titre": "De la suite à l’écriture avec x",
+  "lecture": [
+   "La ligne violette est la suite (2, −1, 0, 3, 0).",
+   "Chaque flèche orange envoie un terme vers le terme du polynôme qui est en dessous.",
+   "Les cases bleues sont les termes écrits : 2, −x et 3x³ ; les cases en pointillé sont les zéros, qu’on n’écrit pas.",
+   "La ligne verte est le polynôme 2 − x + 3x³."
+  ],
+  "a_voir": "Chaque case non nulle de la suite devient un terme du polynôme."
+ },
+ {
+  "code": "54-101",
+  "a_dire": "L’indéterminée n’est ni une inconnue qu’on cherche ni une variable qui change : c’est un élément fixé, la suite (0, 1, 0, …).",
+  "legende_titre": "Trois sortes de lettres",
+  "lecture": [
+   "La première colonne violette est l’inconnue : dans 3y = 2, on cherche sa valeur.",
+   "La deuxième colonne violette est la variable : dans x ↦ x², elle prend plusieurs valeurs.",
+   "La colonne bleue est l’indéterminée : un objet fixé, la suite (0, 1, 0, …)."
+  ],
+  "a_voir": "L’indéterminée est la seule des trois qui est un objet précis, qu’on ne cherche pas et qu’on ne fait pas varier."
+ },
+ {
+  "code": "54-102",
+  "a_dire": "Si x était un nombre comme 1, un polynôme non nul pourrait donner 0 ; pour l’indéterminée, aucun polynôme non nul ne donne 0.",
+  "legende_titre": "Pourquoi x ne doit lier aucune relation",
+  "lecture": [
+   "La colonne rouge suppose que x est le nombre 1 : 1 + x − 2x² donne 1 + 1 − 2 = 0.",
+   "Les coefficients ne sont pas tous nuls, et pourtant le résultat est 0.",
+   "La colonne verte garde l’indéterminée : la suite (1, 1, −2, 0, …) est différente de la suite nulle."
+  ],
+  "a_voir": "Avec un nombre, une relation apparaît ; avec l’indéterminée, il n’y en a aucune."
+ },
+ {
+  "code": "54-103",
+  "a_dire": "Quand on connaît l’homomorphisme sur R et l’image choisie pour x, il existe un seul homomorphisme sur les polynômes, qui impose chaque image.",
+  "legende_titre": "Un seul homomorphisme possible",
+  "lecture": [
+   "Les deux cases du haut sont les deux données : l’identité de ℝ (gris, η) et le choix de x envoyé sur 3 (orange, u).",
+   "Les flèches orange du haut mènent à la grande flèche η_u, qui va des polynômes ℝ[x] vers ℝ.",
+   "La case bleue est un polynôme, 2 − x + 3x³.",
+   "La case verte est son image, imposée par les données : 2 − 3 + 3 × 27 = 80."
+  ],
+  "a_voir": "Les deux données imposent la flèche η_u et l’image 80 ; aucun autre résultat n’est possible."
+ },
+ {
+  "code": "54-104",
+  "a_dire": "La lettre η donne un nom à un homomorphisme, pour écrire η(a) au lieu de décrire l’application à chaque fois.",
+  "legende_titre": "Un nom pour une application",
+  "lecture": [
+   "Les cases bleues sont deux entiers, 7 et 3, dans l’anneau ℤ.",
+   "Les cases vertes sont leurs images dans l’horloge à 5 heures : 2 et 3.",
+   "Chaque flèche orange est η : elle garde le reste modulo 5."
+  ],
+  "a_voir": "On écrit η(7) = 2 et η(3) = 3 avec la seule lettre η."
+ },
+ {
+  "code": "54-105",
+  "a_dire": "La lettre u désigne l’élément de l’anneau d’arrivée S sur lequel on envoie x.",
+  "legende_titre": "La valeur choisie pour x",
+  "lecture": [
+   "La droite graduée du haut représente les réels : le point orange u vaut 3.",
+   "Les cases du bas représentent l’horloge à 5 heures : la case orange u vaut 2.",
+   "Dans les deux cas, u est un élément de l’anneau d’arrivée S."
+  ],
+  "a_voir": "u est choisi dans S, et non parmi les coefficients."
+ },
+ {
+  "code": "54-106",
+  "a_dire": "Le signe η_u nomme l’homomorphisme qui dépend de deux données : η pour les coefficients et u pour x.",
+  "legende_titre": "Un nom pour deux données",
+  "lecture": [
+   "La case violette est la première donnée : η, qui dit où vont les coefficients.",
+   "La case orange est la seconde donnée : u, qui dit où va x.",
+   "Les deux flèches arrivent dans la case bleue η_u : l’unique homomorphisme qui en résulte."
+  ],
+  "a_voir": "Changer η ou changer u donne un autre η_u."
+ },
+ {
+  "code": "54-107",
+  "a_dire": "La formule se calcule en trois actions : remplacer chaque coefficient par son image, remplacer x par u, puis calculer dans S.",
+  "legende_titre": "Trois actions sur un cas chiffré",
+  "lecture": [
+   "La case bleue du haut est le polynôme 7 + 3x + 1x².",
+   "Première flèche : η garde le reste modulo 5, donc 7 devient 2.",
+   "Deuxième flèche : x devient u = 2 dans chaque terme, on obtient 2 + 3 × 2 + 1 × 4.",
+   "Troisième flèche : le calcul donne 12, qui vaut 2 dans l’horloge à 5 heures (case verte)."
+  ],
+  "a_voir": "Le résultat est un élément de l’horloge à 5 heures, et non un polynôme."
+ },
+ {
+  "code": "54-108",
+  "a_dire": "A(u) se lit « A de u » : c’est ce que devient le polynôme A quand on remplace x par u.",
+  "legende_titre": "Lire A de u",
+  "lecture": [
+   "Dans le grand signe, la lettre bleue A est le polynôme et la lettre orange u est la valeur de x.",
+   "La case bleue écrit A(x) = 2 − x + 3x³.",
+   "La case verte remplace x par 2 : 2 − 2 + 3 × 8.",
+   "Le résultat est A(2) = 24."
+  ],
+  "a_voir": "A(2) est le polynôme A où x est remplacé par 2."
+ },
+ {
+  "code": "54-109",
+  "a_dire": "La preuve part de la formule de η_u et arrive à η_u(AB) = η_u(A) η_u(B) ; l’étape qui compte est u^j fois u^k égale u^(j+k).",
+  "legende_titre": "Départ, étape clé, arrivée",
+  "lecture": [
+   "La case grise est le départ : la formule de η_u.",
+   "La case orange est l’étape qui porte le poids : les puissances de u s’additionnent comme les positions de x.",
+   "La case verte est l’arrivée : l’image du produit est le produit des images.",
+   "En bas, l’exemple avec A = B = 1 + x et u = 3 : 1 + 6 + 9 = 16 = 4 × 4."
+  ],
+  "a_voir": "Sans l’étape orange, rien ne garantirait l’égalité de la case verte."
+ },
+ {
+  "code": "54-110",
+  "a_dire": "Le mot évaluation nomme ce qu’on fait vraiment quand on remplace x par u : il distingue le polynôme A de la valeur A(u).",
+  "legende_titre": "Un mot pour l’opération réelle",
+  "lecture": [
+   "Les cases bleues sont le polynôme A, vu comme la suite (2, −1, 0, 3).",
+   "La flèche orange est l’évaluation, qui envoie x sur 2.",
+   "La case verte est la valeur A(2) = 24, un nombre.",
+   "Le polynôme et la valeur sont deux objets de nature différente."
+  ],
+  "a_voir": "À gauche une suite, à droite un nombre : le mot évaluation désigne le passage de l’un à l’autre."
+ },
+ {
+  "code": "54-111",
+  "a_dire": "Remplacer x par u respecte la somme : additionner avant ou après le remplacement donne le même résultat.",
+  "legende_titre": "Remplacer x respecte la somme",
+  "lecture": [
+   "La ligne du haut additionne deux polynômes : 2 − x + 3x³ (bleu) et 1 + x (violet) donnent 3 + 3x³ (vert).",
+   "Les flèches orange remplacent x par 2 dans chacun.",
+   "La ligne du bas donne 24, 3 et 27.",
+   "On retrouve 24 + 3 = 27."
+  ],
+  "a_voir": "Les deux chemins, additionner puis remplacer, ou remplacer puis additionner, arrivent à 27."
+ },
+ {
+  "code": "54-112",
+  "a_dire": "R[u] est l’ensemble des valeurs A(u) : le plus petit sous-anneau qui contient R et u, entre R seul et S tout entier.",
+  "legende_titre": "Le sous-anneau engendré par R et u",
+  "lecture": [
+   "Le grand cadre gris est S, les réels.",
+   "Le cadre bleu est R[u] = ℤ[√2], les valeurs des polynômes en √2 à coefficients entiers : on y trouve 3 + 2√2.",
+   "Le cadre violet est R = ℤ seul, avec le nombre 2.",
+   "Le nombre 1/2, en rouge, est dans S mais pas dans R[u]."
+  ],
+  "a_voir": "R[u] contient R et u mais pas tout S."
+ },
+ {
+  "code": "54-113",
+  "a_dire": "R[x] quotienté par le noyau est isomorphe à l’image R[u], mais pas à l’anneau d’arrivée entier.",
+  "legende_titre": "Isomorphe à l’image, pas à tout S",
+  "lecture": [
+   "La case bleue de gauche est le quotient ℤ[x]/I, avec u = 3 dans les réels.",
+   "La flèche orange marque l’isomorphisme vers la case verte, ℤ[3] = ℤ, qui est l’image.",
+   "Le grand cadre gris est ℝ : le nombre 1/2, en rouge, n’est atteint par aucun polynôme."
+  ],
+  "a_voir": "L’isomorphisme va jusqu’à l’image verte, pas jusqu’au cadre gris entier."
+ },
+ {
+  "code": "54-114",
+  "a_dire": "Un élément u est transcendant sur R quand I = 0, c’est-à-dire quand aucun polynôme non nul ne s’annule en u, comme pour l’indéterminée x.",
+  "legende_titre": "Aucun polynôme non nul ne s’annule",
+  "lecture": [
+   "La colonne bleue est le transcendant : I vaut 0, aucun polynôme non nul ne s’annule en u, comme pour l’indéterminée x.",
+   "La colonne violette est son voisin, l’algébrique : I est différent de 0.",
+   "Pour √2, le polynôme x² − 2 s’annule."
+  ],
+  "a_voir": "Ce qui sépare les deux colonnes est l’existence ou non d’un polynôme non nul qui s’annule en u."
+ },
+ {
+  "code": "54-115",
+  "a_dire": "Un élément est algébrique quand une équation le lie à R : ses puissances se simplifient, alors que celles de π ne se simplifient jamais.",
+  "legende_titre": "Des puissances qui se simplifient",
+  "lecture": [
+   "La colonne bleue montre les puissances de √2 : (√2)² = 2, (√2)³ = 2√2, (√2)⁴ = 4.",
+   "Chaque puissance se réécrit avec des entiers.",
+   "La colonne grise montre π², π³, π⁴ : elles restent toutes différentes, sans simplification."
+  ],
+  "a_voir": "Le mot algébrique sépare les puissances qui se simplifient de celles qui restent différentes."
+ },
+ {
+  "code": "54-116",
+  "a_dire": "Le nombre √2 est annulé par x² − 2, mais aussi par x⁴ − 4 : il est algébrique, et le polynôme n’est pas unique.",
+  "legende_titre": "√2 est annulé par un polynôme",
+  "lecture": [
+   "Le point bleu sur la droite graduée est u = √2, un peu plus de 1.",
+   "La case verte de gauche est le polynôme x² − 2 : en √2, il vaut 0.",
+   "La case verte de droite est le polynôme x⁴ − 4 : il vaut aussi 0 en √2.",
+   "Les flèches orange relient chaque polynôme au nombre où il s’annule."
+  ],
+  "a_voir": "Deux polynômes différents s’annulent au même nombre √2."
+ }
+]

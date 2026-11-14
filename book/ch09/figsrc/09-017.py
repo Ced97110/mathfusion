@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+ox, oy, u = 8, 10, 6
+R = lambda a, b: (ox + a * u, oy + b * u)
+poly(ax, [R(0,0), R(8,0), R(8,6), R(0,6)], 'varie')
+poly(ax, [R(0,0), R(4,0), R(4,3), R(0,3)], 'sujet')
+line(ax, [R(0,0), R(8,6)], 'fixe', dash=True)
+disc(ax, *R(0,0), 1.3, 'fixe'); disc(ax, *R(4,3), 1.3, 'sujet'); disc(ax, *R(8,6), 1.8, 'varie')
+text(ax, R(0,0)[0] - 3, R(0,0)[1] - 1, r'$O$', 'fixe', 'l')
+text(ax, R(4,3)[0] - 3, R(4,3)[1] + 3, r'$P$', 'sujet', 'l')
+text(ax, R(8,6)[0] + 4, R(8,6)[1] + 1, r'$Q$', 'varie', 'l', weight='bold')
+text(ax, R(4,0)[0], R(0,0)[1] - 4, '8 de large', 'varie', 's')
+text(ax, R(8,0)[0] + 3, R(0,3)[1], '6 de haut', 'varie', 's', ha='left')
+text(ax, 44, 59, r'$Q$ : coin opposé de $O$', 'varie', 's')
+arrow(ax, (R(8,6)[0], 56.5), (R(8,6)[0], R(8,6)[1] + 3), 'varie')
+save(fig, '09-017')

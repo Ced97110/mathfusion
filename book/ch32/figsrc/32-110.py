@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(98)
+box(ax,12,84,64,9,'sujet',label='2s² + s − 1 = 0')
+arrow(ax,(44,84),(44,76),'varie')
+box(ax,6,67,76,9,'autre',label='Δ = 1² − 4×2×(−1) = 9',size='s')
+arrow(ax,(44,67),(44,59),'varie')
+box(ax,12,50,64,9,'autre',label='s = (−1 ± 3) / 4',size='s')
+arrow(ax,(30,50),(22,42),'varie'); arrow(ax,(58,50),(66,42),'varie')
+text(ax,18,46.5,'+','varie','s'); text(ax,70,46.5,'−','varie','s')
+box(ax,6,31,32,10,'resultat',label='s = 1/2'); box(ax,50,31,32,10,'resultat',label='s = −1')
+f=numberline(ax,14,74,15,-1,1,step=0.5,every=2,arrow_right=False)
+disc(ax,f(-1),15,1.5,'resultat'); disc(ax,f(0.5),15,1.5,'resultat')
+save(fig,'32-110')

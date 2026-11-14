@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+O=(10,8); s=7
+P=lambda x,y:(O[0]+s*x,O[1]+s*y)
+arrow(ax,P(0,0),P(6,0),'fixe',lw=0.6); arrow(ax,P(0,0),P(0,5.8),'fixe',lw=0.6)
+text(ax,P(6,0)[0]+2.5,P(6,0)[1],'$x$','fixe','s'); text(ax,P(0,5.8)[0],P(0,5.8)[1]+2.5,'$y$','fixe','s')
+line(ax,[P(0,5),P(5,0)],'sujet',lw=1.6); line(ax,[P(0,5),P(5,0)],'autre',lw=0.8,dash=True)
+line(ax,[P(1,0),P(5,4)],'varie',lw=1.3)
+disc(ax,*P(3,2),1.4,'resultat')
+text(ax,P(3,2)[0],P(3,2)[1]+7,'(3, 2)','resultat','s')
+text(ax,69,48,'$x + y = 5$','sujet','m')
+text(ax,69,41,'$2x + 2y = 10$','autre','m')
+text(ax,69,34,'$x - y = 1$','varie','m')
+box(ax,52,12,34,12,'resultat',label='3 équations :\nune solution',size='s')
+save(fig,'24-074')

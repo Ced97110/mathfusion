@@ -1,0 +1,327 @@
+<div class="pk">Chapitre 18</div>
+<h1>Le mode</h1>
+<p class="h1en">The mode</p>
+<p><b>Sources</b> — Vol. 3, §2.1.4 « The Mode : Math’s Ultimate Popularity Contest » (p. 24–29, avec la fin du §2.1.3.1 (p. 23.</p>
+<h2>1. Le problème concret</h2>
+<p class="h2en">1. The concrete problem</p>
+<p>Le casse du centre du diamant d’Anvers a eu lieu le week-end des 15 et 16 février 2003. Ce choix n’était pas un hasard. Le centre était fermé. Beaucoup de travailleurs du quartier observaient le sabbat, et un grand tournoi de tennis se tenait à Anvers. Il y avait</p>
+<img class="vm" src="/ml/img/c018/p0726_1.svg" alt="donc moins de monde dans les rues. The Antwerp Diamond Centre heist took place on" style="--w:24.31" loading="lazy">
+<p class="en">the weekend of 15 and 16 February 2003. This choice was no accident. The center was closed. Many workers of the district were observing the Sabbath, and a major tennis tournament was being held in Antwerp. So there were fewer people in the streets.</p>
+<p>Notarbartolo aurait aussi observé la circulation dans les rues clés. Il cherchait des régularités utiles à la fuite : ce qui revient souvent, et donc ce sur quoi on peut compter.</p>
+<p class="en">Notarbartolo is also believed to have watched the traffic in the key streets. He was looking for regularities useful for the escape: what comes back often, and so what one can rely on.</p>
+<p>Nous avons notre itinéraire de fuite (chapitre 17). Il faut maintenant recruter. La liste détaillée des 35 caméras du quartier (chapitre 3) donne, pour chaque caméra, une lettre : sa marque, de A à E. La figure 18.1 redessine cette liste, rue par rue.</p>
+<p class="en">We have our escape route (chapter 17). Now we must recruit. The detailed list of the district’s 35 cameras (chapter 3) gives, for each camera, a letter: its brand, from A to E. Figure 18.1 redraws that list, street by street.</p>
+<img class="vf" src="/ml/img/c018/p0728_2.svg" alt="35 caméras ; une lettre = une marque Rijfstraat A B C D E moyenne ? Hoveniersstraat A D C B E « A + D » = ? impossible Schupstraat B E A Pelikaanstraat D D D médiane ? D plus grand Appelmansstraat C B A D que B ? non Vestingstraat D D il reste : Herentalsestraat compter D D D les lettres Lange Herentalsestr. D D D D D D laquelle revient De Keyserlei D D D D le plus ?" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0728_3.svg" alt="marque D autre marque (A, B, C, E)" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.1 :</b> La situation. Chaque petit carré est une caméra, avec la lettre de sa marque ; les carrés jaunes sont de marque D. À droite, les deux outils des chapitres précédents échouent sur des lettres. Regarde la couleur jaune : elle domine dès le premier coup d’œil, et c’est ce qu’il faut mesurer.</p>
+<p class="cap en">The situation. Each small square is a camera, with the letter of its brand; the yellow squares are brand D. On the right, the two tools of the previous chapters fail on letters. Look at the yellow color: it dominates at first glance, and that is what we must measure.</p>
+<p>La question est simple : quelle marque rencontre-t-on le plus souvent ? Si une marque domine, un spécialiste de cette marque nous sera plus utile que tout autre. En 2003, on aurait cherché un électricien. Aujourd’hui, les caméras sont reliées à des réseaux : un pirate informatique ferait mieux</p>
+<img class="vm" src="/ml/img/c018/p0729_4.svg" alt="l’affaire. The question is simple: which brand do we meet" style="--w:24.31" loading="lazy">
+<p class="en">most often? If one brand dominates, a specialist in that brand will be more useful to us than anyone else. In 2003 one would have looked for an electrician. Today cameras are connected to networks: a hacker would do the job better.</p>
+<p>Essaie d’abord nos outils. La moyenne des marques ? Il faudrait additionner « A + D », ce qui n’a aucun sens. La médiane des marques ? Il faudrait ranger les lettres de la plus petite à la plus grande, mais D n’est pas « plus grande » que B. Les marques sont des <i>catégories</i>, pas des nombres : il nous faut une valeur centrale qui se contente de compter.</p>
+<p class="en">First try our tools. The mean of the brands? We would have to add “A + D”, which makes no sense. The median of the brands? We would have to sort the letters from smallest to largest, but D is not “larger” than B. Brands are <i>categories</i>, not numbers: we need a central value that only counts.</p>
+<h2>2. La figure</h2>
+<p class="h2en">2. The figure</p>
+<p>Parcours la figure 18.1 ligne par ligne. Fais une marque sous la lettre de chaque caméra, puis compte les marques sous chaque lettre. Tu obtiens A : 4, B : 4, C : 3, D : 21, E : 3. La figure 18.2 dessine ces cinq nombres comme des barres.</p>
+<p class="en">Go through figure 18.1 row by row. Make a tick under the letter of each camera, then count the ticks under each letter. You get A 4, B 4, C 3, D 21, E 3. Figure 18.2 draws these five numbers as bars.</p>
+<img class="vf" src="/ml/img/c018/p0731_5.svg" alt="25 fmax  = 21 : la plus haute barre f(D) = 21 20 ) (v  f Mo = {D} 15 ce D : 21 caméras sur 35 n e les 4 autres réunies : 14 u q 10 é fr 5 f(A) = 4 f(B) = 4 f(C) = 3 f(E) = 3 0 A B C D E v : la marque de la caméra" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.2 :</b> La figure principale. Sous chaque barre, une marque <span class="m">𝑣</span> ; au-dessus, son nombre de caméras <span class="m">𝑓(𝑣)</span>. La ligne verte en tirets passe au sommet de la plus haute</p>
+<img class="vm" src="/ml/img/c018/p0731_6.svg" alt="barre : 𝑓max = 21. Une seule barre la touche, celle de D :" style="--w:24.31" loading="lazy">
+<p>le mode est <span class="m">{</span>D<span class="m">}</span>.</p>
+<p class="en">The main figure. Under each bar, a brand <span class="m">𝑣</span>; above it, its number of cameras <span class="m">𝑓(𝑣)</span>. The green dashed line passes</p>
+<img class="vm" src="/ml/img/c018/p0731_7.svg" alt="through the top of the tallest bar: 𝑓max = 21. Only one bar" style="--w:24.31" loading="lazy">
+<p class="en">touches it, D’s: the mode is <span class="m">{</span>D<span class="m">}</span>.</p>
+<p>Sur la figure, la barre de D monte à 21. Les quatre autres barres réunies font <span class="m">4 + 4 + 3 + 3 = 14</span>. Plus</p>
+<img class="vm" src="/ml/img/c018/p0731_8.svg" alt="d’une caméra sur deux est de marque D : 21 = 0,6, 35 soit 60 %. On the figure, D’s bar rises to 21. The four other" style="--w:24.31" loading="lazy">
+<p class="en">bars together make <span class="m">4 + 4 + 3 + 3 = 14</span>. More than</p>
+<img class="vm" src="/ml/img/c018/p0731_9.svg" alt="one camera in two is brand D 21 = 0.6, that is 35" style="--w:24.31" loading="lazy">
+<p class="en">60%.</p>
+<p>Le livre source imprime un tableau un peu différent : C : 4, D : 19, et pas de marque E. Le recomptage de la liste, ligne par ligne, donne les nombres ci-dessus ; leur total vaut bien 35. Dans les deux cas, la conclusion est la même : D écrase les autres.</p>
+<p class="en">The source book prints a slightly different table: C 4, D 19, and no brand E. Recounting the list row by row gives the numbers above; their total is indeed 35. Either way the conclusion is the same: D crushes the others.</p>
+<p>La valeur dont la barre est la plus haute s’appelle le <b>mode</b>. On lui donne ce nom parce qu’elle est la valeur « à la mode » de la liste : ici, D revient 21 fois sur 35, alors que la deuxième marque, A ou B, ne revient que 4 fois.</p>
+<p class="en">The value whose bar is the tallest is called the <b>mode</b>. It gets this name because it is the value “in fashion” in the list: here D comes back 21 times out of 35, while the second brand, A or B, comes back only 4 times.</p>
+<h2>3. La définition, symbole par symbole</h2>
+<p class="h2en">3. The definition, symbol by symbol</p>
+<img class="vm" src="/ml/img/c018/p0733_10.svg" alt="Les mots de ce chapitre — The words of this chapter" style="--w:24.31" loading="lazy">
+<p><b>catégorie</b> : une valeur qui est un nom, pas un nombre ; les marques A, B, C, D, E sont des catégories.</p>
+<p class="en">category: a value that is a name, not a number; brands A, B, C, D, E are categories.</p>
+<p><b>fréquence (effectif)</b> : le nombre de fois où une valeur apparaît dans la liste ; la marque D apparaît 21 fois.</p>
+<p class="en">frequency (count): the number of times a value appears in the list; brand D appears 21 times.</p>
+<p><b>mode</b> : la valeur, ou les valeurs, de plus grande fréquence ; D pour nos caméras.</p>
+<p class="en">mode: the value, or values, with the largest frequency; D for our cameras.</p>
+<p><b>ensemble</b> : une collection d’objets écrite entre accolades (chapitre 4) ; <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span> contient trois lettres.</p>
+<p class="en">set: a collection of objects written between braces; <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span> holds three letters.</p>
+<p><b>«tel que»</b> : le deux-points dans un ensemble ; <span class="m">{𝑣 ∶ 𝑓(𝑣) = 21}</span> se lit « les <span class="m">𝑣</span> tels que <span class="m">𝑓(𝑣) = 21</span>».</p>
+<p class="en">“such that”: the colon inside a set; <span class="m">{𝑣 ∶ 𝑓(𝑣) = 21}</span> reads “the <span class="m">𝑣</span> such that <span class="m">𝑓(𝑣) = 21</span>”.</p>
+<p class="en"><b>population</b> : tout ce que l’on voudrait connaître ; toutes les pannes d’enregistrement des caméras depuis leur installation. population: everything we would like to know; all the recording gaps of the cameras since they were installed.</p>
+<p class="en"><b>échantillon</b> : la partie de la population que l’on a vraiment relevée ; nos 30 durées sur 15 week-ends. sample: the part of the population we actually recorded; our 30 durations over 15 weekends.</p>
+<p class="en"><b>erreur d’échantillonnage</b> : l’écart entre ce que montre l’échantillon et la vérité de la population ; il existe même sans aucune faute. sampling error: the gap between what the sample shows and the truth of the population; it exists even without any mistake.</p>
+<p class="en"><b>classe (tranche)</b> : un intervalle de valeurs que l’on traite comme une seule catégorie ; « de 20 à 30 minutes ». class (bin): an interval of values treated as a single category; “from 20 to 30 minutes”.</p>
+<p class="en"><b>classe modale</b> : la classe qui contient le plus de valeurs ; 20 à 30 minutes, avec 9 week-ends sur 15. modal class: the class that holds the most values; 20</p>
+<p>to 30 minutes, with 9 weekends out of 15.</p>
+<img class="vm" src="/ml/img/c018/p0735_11.svg" alt="Définition — mode" style="--w:24.31" loading="lazy">
+<p>Soit une liste d’observations, nombres ou catégories. Pour chaque valeur <span class="m">𝑣</span> présente, on</p>
+<img class="vm" src="/ml/img/c018/p0735_12.svg" alt="note 𝑓(𝑣) sa fréquence, et 𝑓max la plus grande" style="--w:24.31" loading="lazy">
+<p>de ces fréquences. Le <b>mode</b> est l’ensemble des valeurs dont la fréquence est la plus grande :</p>
+<img class="vm" src="/ml/img/c018/p0735_13.svg" alt="Mo = { 𝑣 ∶ 𝑓(𝑣) = 𝑓max }." style="--w:24.31" loading="lazy">
+<p>Si toutes les valeurs n’apparaissent qu’une fois</p>
+<img class="vm" src="/ml/img/c018/p0735_14.svg" alt="(𝑓max = 1), on dit que la liste n’a pas de mode. Take a list of observations, numbers or cate-" style="--w:24.31" loading="lazy">
+<p class="en">gories. For each value <span class="m">𝑣</span> present, write <span class="m">𝑓(𝑣)</span> for</p>
+<img class="vm" src="/ml/img/c018/p0735_15.svg" alt="its frequency, and 𝑓max for the largest of these" style="--w:24.31" loading="lazy">
+<p class="en">frequencies. The <b>mode</b> is the set of values with</p>
+<img class="vm" src="/ml/img/c018/p0735_16.svg" alt="the largest frequency: Mo = {𝑣 ∶ 𝑓(𝑣) = 𝑓max }. If every value appears only once (𝑓max = 1), we" style="--w:24.31" loading="lazy">
+<p class="en">say the list has <b>no mode</b>.</p>
+<img class="vf" src="/ml/img/c018/p0735_17.svg" alt="" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0736_18.svg" alt="Mo  =  {  v  :  f(v)  =  fmax   }" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0736_19.svg" alt="21 fmax  = 21 20 résultat : Mo = {D} 15 cadre orange : les v 10 dont la barre touche la ligne verte 5 4 4 3 3 0 A B C D E v (bleu) : les marques ; nombres rouges : f(v)" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.3 :</b> La formule décodée en couleurs. En bleu, les valeurs <span class="m">𝑣</span> (les lettres sous les barres) ; en rouge, les fréquences <span class="m">𝑓(𝑣)</span> (les nombres au-dessus) ; en vert,</p>
+<img class="vm" src="/ml/img/c018/p0736_20.svg" alt="𝑓max = 21 (la ligne en tirets) ; en orange, l’ensemble { ∶ }" style="--w:24.31" loading="lazy">
+<p>(le cadre qui garde les barres touchant la ligne) ; en violet, le résultat Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<p class="en">The formula decoded in colors. In blue, the values <span class="m">𝑣</span> (the letters under the bars); in red, the frequencies <span class="m">𝑓(𝑣)</span> (the</p>
+<img class="vm" src="/ml/img/c018/p0736_21.svg" alt="numbers above); in green, 𝑓max = 21 (the dashed line); in" style="--w:24.31" loading="lazy">
+<p class="en">orange, the set <span class="m">{ ∶ }</span> (the frame that keeps the bars touching the line); in violet, the result Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<p>Lisons chaque symbole sur la figure 18.3.</p>
+<p class="en">Let us read each symbol on figure 18.3.</p>
+<img class="vm" src="/ml/img/c018/p0736_22.svg" alt="𝑣 Une valeur possible de la liste : ici une" style="--w:24.31" loading="lazy">
+<p>marque. Sur la figure 18.3, ce sont les lettres bleues sous les barres. Dans notre exemple, <span class="m">𝑣</span> prend les cinq valeurs A, B, C, D, E.</p>
+<p class="en">A possible value of the list: here a brand. On figure 18.3, these are the blue letters under the bars. In our example, <span class="m">𝑣</span> takes the five values A, B, C, D, E.</p>
+<img class="vm" src="/ml/img/c018/p0737_23.svg" alt="𝑓(𝑣) La fréquence de 𝑣 : combien de fois 𝑣" style="--w:24.31" loading="lazy">
+<p>apparaît. C’est une fonction (chapitre 10) parce qu’elle associe à chaque lettre un seul nombre : à D, elle associe 21. Sur la figure, ce sont les nombres rouges, la hauteur des barres. Ici <span class="m">𝑓(</span>D<span class="m">) = 21</span> et <span class="m">𝑓(</span>E<span class="m">) = 3</span>.</p>
+<p class="en">The frequency of <span class="m">𝑣</span>: how many times <span class="m">𝑣</span> appears. It is a function (chapter 10) because it assigns a single number to each letter: to D it assigns 21. On the figure, these are the red numbers, the height of the bars. Here <span class="m">𝑓(</span>D<span class="m">) = 21</span> and <span class="m">𝑓(</span>E<span class="m">) = 3</span>.</p>
+<img class="vm" src="/ml/img/c018/p0737_24.svg" alt="𝑓max La plus grande des cinq fréquences. Le petit" style="--w:24.31" loading="lazy">
+<p>« max » en bas est une étiquette, comme le 8 de <span class="m">𝑥</span><sub class="m">8</sub> au chapitre 14 : il n’est multiplié par rien. Sur la figure, c’est la ligne verte en tirets, posée au sommet de la plus haute</p>
+<img class="vm" src="/ml/img/c018/p0737_25.svg" alt="barre. Ici 𝑓max = 21, car 21 est plus grand" style="--w:24.31" loading="lazy">
+<p>que <span class="m">4</span>, <span class="m">4</span>, <span class="m">3</span> et <span class="m">3</span>.</p>
+<p class="en">The largest of the five frequencies. The small “max” at the bottom is a label, like the 8 of <span class="m">𝑥</span><sub class="m">8</sub> in chapter 14: nothing multiplies it.</p>
+<p class="en">On the figure, it is the green dashed line, resting on top of the tallest bar. Here</p>
+<img class="vm" src="/ml/img/c018/p0738_26.svg" alt="𝑓max = 21, because 21 is larger than 4, 4, 3" style="--w:24.31" loading="lazy">
+<p class="en">and <span class="m">3</span>.</p>
+<img class="vm" src="/ml/img/c018/p0738_27.svg" alt="{ ∶ } Les accolades décrivent un ensemble" style="--w:24.31" loading="lazy">
+<p>(chapitre 4), et le deux-points se lit « tels que ». Sur la figure, c’est le cadre orange : il garde toutes les barres qui touchent la ligne verte. Ici il ne garde que D. Le mode est un ensemble parce que plusieurs barres peuvent toucher la ligne ; la partie 4 en montre trois.</p>
+<p class="en">The braces describe a set (chapter 4), and the colon reads “such that”. On the figure, it is the orange frame: it keeps every bar that touches the green line. Here it keeps only D. The mode is a set because several bars can touch the line; part 4 shows three of them.</p>
+<img class="vm" src="/ml/img/c018/p0738_28.svg" alt="Mo Le résultat, en violet sur la figure. Pour les" style="--w:24.31" loading="lazy">
+<p>marques : Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<p class="en">The result, in violet on the figure. For the brands: Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<p>Nous allons appliquer la définition aux 35 caméras, avec les cinq fréquences comptées en partie 2 :</p>
+<img class="vm" src="/ml/img/c018/p0738_29.svg" alt="𝑓max = max(4, 4, 3, 21, 3) = 21," style="--w:24.31" loading="lazy">
+<p>Mo <span class="m">= {𝑣 ∶ 𝑓(𝑣) = 21} = {</span>D<span class="m">}.</span></p>
+<p><b>Avec nos nombres :</b> max<span class="m">(4, 4, 3, 21, 3)</span> se lit « le plus grand des nombres entre parenthèses » : 21. Une seule lettre a 21 caméras, D ; les quatre autres ont 4 ou moins.</p>
+<p>Le mode est donc la marque D : c’est elle qu’un spécialiste doit savoir neutraliser. La figure 18.4 refait ce calcul en quatre étapes.</p>
+<p class="en">We apply the definition to the 35 cameras, with the five frequencies counted in part 2</p>
+<img class="vm" src="/ml/img/c018/p0739_30.svg" alt="𝑓max = max(4, 4, 3, 21, 3) = 21 and" style="--w:24.31" loading="lazy">
+<p class="en">Mo <span class="m">= {𝑣 ∶ 𝑓(𝑣) = 21} = {</span>D<span class="m">}</span>. With our numbers: max<span class="m">(4, 4, 3, 21, 3)</span> reads “the largest of the numbers in brackets”: 21. A single letter has 21 cameras, D; the four others have 4 or fewer. So the mode is brand D that is the one a specialist must know how to neutralise. Figure 18.4 redoes this computation in four steps.</p>
+<img class="vf" src="/ml/img/c018/p0740_31.svg" alt="Étape 1 — les 35 lettres de la liste A B C D E A D C B E B E A D D D C B A D D D D D D D D D D D D D D D D Étape 2 — compter chaque lettre : f(v) f(A) = 4 f(B) = 4 f(C) = 3 f(D) = 21 f(E) = 3 Étape 3 — la plus grande : fmax  = 21 f(A) = 4 f(B) = 4 f(C) = 3 f(D) = 21 f(E) = 3 4 + 4 + 3 + 21 + 3 = 35 : rien n&#x27;est oublié Étape 4 — garder les v tels que f(v) = 21 f(D) = 21 Mo = {D} A, B, C, E : f &amp;lt; 21, écartées" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.4 :</b> Le calcul pas à pas. Étape 1 : les 35 lettres. Étape 2 : les cinq fréquences. Étape 3 : la plus grande, 21 (cadre vert) ; le total 35 prouve qu’aucune caméra n’est oubliée. Étape 4 : Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<p class="cap en">The computation step by step. Step 1 the 35 letters. Step 2 the five frequencies. Step 3 the largest, 21 (green frame); the total 35 proves no camera is forgotten. Step 4 Mo <span class="m">= {</span>D<span class="m">}</span>.</p>
+<img class="vm" src="/ml/img/c018/p0741_32.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Sur la figure 18.1, compte les carrés jaunes rue par rue. Tu dois trouver <span class="m">1 + 1 + 0 + 3 + 1 + 2 + 3 + 6 + 4</span>, de Rijfstraat à De Keyserlei. La somme vaut 21 : c’est bien <span class="m">𝑓(</span>D<span class="m">)</span>.</p>
+<p class="en">On figure 18.1, count the yellow squares street by street. You must find <span class="m">1 + 1 + 0 + 3 + 1 + 2 +</span> <span class="m">3 + 6 + 4</span>, from Rijfstraat to De Keyserlei. The sum is 21 that is indeed <span class="m">𝑓(</span>D<span class="m">)</span>.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « La barre la plus haute monte à 21 : le mode vaut 21. » Non : 21 est la <i>sortie</i> de <span class="m">𝑓</span> , la hauteur de la barre. Le mode est l’<i>entrée</i> qui donne cette sortie, la lettre écrite sous la barre : D (figure 18.2). Preuve avec les 13 caméras du cœur du quartier : la plus grande fréquence y vaut 3. Ta lecture dirait « le mode vaut 3 », mais 3 n’est pas une marque. Le mode est <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span>,</p>
+<img class="vm" src="/ml/img/c018/p0741_33.svg" alt="les trois lettres dont la barre atteint 3. “The tallest bar reaches 21 the mode is 21.” No:" style="--w:24.31" loading="lazy">
+<p class="en">21 is the <i>output</i> of <span class="m">𝑓</span> , the height of the bar. The mode is the <i>input</i> that gives this output, the letter written under the bar: D (figure 18.2). Proof with the 13 cameras at the heart of the district: the largest frequency there is 3. Your reading would say “the mode is 3”, but 3 is not a brand. The mode is <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span>, the three letters whose bar reaches 3.</p>
+<p>Remarque une différence avec la moyenne et la médiane. Le mode n’additionne rien et ne trie rien : il compte. C’est pour cela qu’il fonctionne avec des lettres, où « A + D » et « D plus grand que B » n’ont pas de sens. Et c’est pour cela aussi que son résultat est toujours une valeur réellement observée, jamais un « 3,89 caméras ».</p>
+<p class="en">Notice a difference with the mean and the median. The mode adds nothing and sorts nothing: it counts. That is why it works with letters, where “A + D” and “D larger than B” make no sense. And that is also why its result is always an actually observed value, never a “3.89 cameras”.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Le mode, c’est la barre la plus haute, d’accord. Mais si deux barres ont la même hauteur, laquelle choisir ? » Aucune des deux en particulier : on garde les deux. Dans les trois rues Rijfstraat, Hoveniersstraat et Schupstraat, A, B et E ont chacune 3 caméras, et C et D n’en ont que 2. La ligne verte passe à 3, trois barres la touchent, et le mode est <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span> (figure 18.5).</p>
+<p class="en">“The mode is the tallest bar, fine. But if two bars have the same height, which one do I choose?” Neither in particular: we keep both. In the three streets Rijfstraat, Hoveniersstraat and Schupstraat, A, B and E each have 3 cameras, and C and D have only 2. The green line sits at 3, three bars touch it, and the mode is <span class="m">{</span>A<span class="m">,</span> B<span class="m">,</span> E<span class="m">}</span> (figure 18.5).</p>
+<img class="vm" src="/ml/img/c018/p0743_34.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">Le mode compte au lieu d’additionner ou de trier : c’est pour cela qu’il trouve D, 21 caméras sur 35, là où la moyenne et la médiane ne peuvent rien calculer. The mode counts instead of adding or sorting: that is why it finds D, 21 cameras out of 35, where the mean and the median cannot compute anything.</p>
+<img class="vf" src="/ml/img/c018/p0743_35.svg" alt="" style="--w:24.31" loading="lazy">
+<h2>4. Les effets</h2>
+<p class="h2en">4. The effects</p>
+<p><b>Premier effet : un seul mode, plusieurs modes, aucun mode</b></p>
+<p>Les marques de toute la liste ont un seul mode, D. Regarde maintenant seulement les 13 caméras des trois rues au cœur du casse : Rijfstraat, Hoveniersstraat et Schupstraat. Puis seulement les 5 caméras de Rijfstraat.</p>
+<p class="en"><b>First effect: one mode, several modes, no mode.</b> The brands of the whole list have a single mode, D. Now look only at the 13 cameras of the three streets at the heart of the heist: Rijfstraat, Hoveniersstraat and Schupstraat. Then only at the 5 cameras of Rijfstraat.</p>
+<img class="vf" src="/ml/img/c018/p0744_36.svg" alt="35 caméras un mode : Mo = {D} 21 20 v) f( 4 4 3 3 0 A B C D E 13 caméras du cœur trois modes : {A, B, E} 4 3 3 3 v) 2 2 f( 2 0 A B C D E Rijfstraat (5 caméras) fmax  = 1 : aucun mode 4 v) f( 2 1 1 1 1 1 0 A B C D E" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.5 :</b> Trois listes, trois cas. En haut, 35 caméras : une barre touche la ligne verte, un mode. Au milieu, 13 caméras du cœur : trois barres la touchent, trois modes.</p>
+<img class="vm" src="/ml/img/c018/p0744_37.svg" alt="En bas, Rijfstraat : 𝑓max = 1, pas de mode." style="--w:24.31" loading="lazy">
+<p class="en">Three lists, three cases. Top, 35 cameras: one bar touches the green line, one mode. Middle, 13 core cameras: three bars touch it, three modes. Bottom,</p>
+<img class="vm" src="/ml/img/c018/p0744_38.svg" alt="Rijfstraat: 𝑓max = 1, no mode." style="--w:24.31" loading="lazy">
+<p>Les trois cas de la définition sont là, dans nos propres données. Et ils changent la décision. Si nous ne passions que par le cœur du quartier, aucune marque ne justifierait de recruter un spécialiste : trois marques à égalité, 3 caméras chacune sur 13. C’est la liste entière, et surtout notre itinéraire, qui rend D intéressante.</p>
+<p class="en">The three cases of the definition are there, in our own data. And they change the decision. If we only went through the heart of the district, no brand would justify recruiting a specialist: three brands tied, 3 cameras each out of 13. It is the whole list, and above all our route, that makes D interesting.</p>
+<p><b>Deuxième effet : le mode justifie le recrutement</b></p>
+<p>Vérifions sur l’itinéraire choisi au chapitre 17 :</p>
+<img class="vm" src="/ml/img/c018/p0745_39.svg" alt="rue caméras dont D Appelmansstraat 4 1 Vestingstraat 2 2 Pelikaanstraat 3 3 total 9 6" style="--w:24.31" loading="lazy">
+<p class="en">Let us check on the route chosen in chapter 17: Appelmansstraat has 4 cameras, 1 of them brand D; Vestingstraat 2, both D; Pelikaanstraat 3, all D. In total, 6 of the 9 cameras are brand D.</p>
+<img class="vf" src="/ml/img/c018/p0746_40.svg" alt="1) Appelmansstraat C B A D 1 D sur 4 2) Vestingstraat D D 2 D sur 2 3) Pelikaanstraat D D D 3 D sur 3 total : 1 + 2 + 3 = 6 D sur 9 si le pirate neutralise D : 9 − 6 = 3 caméras à éviter" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.6 :</b> Les trois rues de l’itinéraire, dans l’ordre du trajet, avec leurs caméras. Les carrés jaunes D sont 1, puis 2, puis 3 : 6 sur 9. Si le pirate sait neutraliser la marque D, il ne reste que les 3 carrés blancs d’Appelmansstraat à éviter.</p>
+<p class="cap en">The three route streets, in the order of the journey, with their cameras. The yellow squares D are 1, then 2, then 3 6 out of 9. If the hacker can neutralise brand D, only the 3 white squares of Appelmansstraat remain to avoid.</p>
+<p>Nous allons calculer la part des caméras D sur notre route :</p>
+<img class="vm" src="/ml/img/c018/p0746_41.svg" alt="caméras D 1 + 2 + 3 = . caméras de la route 4 + 2 + 3 Avec nos nombres : 6 = 2 ≈ 0,67, contre 21 = 0,6 dans 9 3 35" style="--w:24.31" loading="lazy">
+<p>tout le quartier.</p>
+<img class="vm" src="/ml/img/c018/p0746_42.svg" alt="Pourquoi 6 = 2 ? Range les 9 caméras de la route 9 3" style="--w:24.31" loading="lazy">
+<p>en 3 groupes de 3. Les 6 caméras D remplissent exactement 2 groupes : 2 groupes sur 3 (figure 18.7, en bas). Sur notre route, deux caméras sur trois sont de marque D : plus encore que dans le quartier entier. Le mode nous a dit qui recruter.</p>
+<p class="en">We compute the share of brand-D cameras on our</p>
+<img class="vm" src="/ml/img/c018/p0747_43.svg" alt="route: 1+2+3 . With our numbers: 6 = 2 ≈ 0.67, 4+2+3 9 3 against 21 = 0.6 in the whole district. Why is 35 6 = 2? Arrange the 9 route cameras into 3 groups 9 3" style="--w:24.31" loading="lazy">
+<p class="en">of 3. The 6 brand-D cameras fill exactly 2 groups: 2 groups out of 3 (figure 18.7, bottom). On our route, two cameras out of three are brand D even more than in the whole district. The mode told us whom to recruit.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Il y a 21 caméras D dans le quartier et seulement 6 sur la route. La route a donc moins de D. » Tu compares deux comptes faits sur des totaux différents : 35 caméras d’un côté, 9 de l’autre. Pour comparer, ramène chaque total à la même longueur 1, comme au chapitre 14. La figure 18.7 coupe une longueur 1 en 35 morceaux, puis une autre en 9. La part jaune du</p>
+<img class="vm" src="/ml/img/c018/p0747_44.svg" alt="quartier s’arrête à 21 = 0,6 ; celle de la route va 35 jusqu’à 6 ≈ 0,67, plus loin. Sur 100 caméras 9" style="--w:24.31" loading="lazy">
+<p>croisées, cela ferait environ 60 caméras D dans le quartier et 67 sur la route.</p>
+<p class="en">“There are 21 brand-D cameras in the district and only 6 on the route. So the route has fewer D.” You compare two counts made on different totals: 35 cameras on one side, 9 on the other. To compare, bring each total back to the same length 1, as in chapter 14. Figure 18.7 cuts one length 1 into 35 pieces, then another into 9. The</p>
+<img class="vm" src="/ml/img/c018/p0748_45.svg" alt="yellow share of the district stops at 21 = 0.6; 35 that of the route reaches 6 ≈ 0.67, further. Out 9" style="--w:24.31" loading="lazy">
+<p class="en">of 100 cameras met, that would be about 60 brand-D cameras in the district and 67 on the route.</p>
+<img class="vf" src="/ml/img/c018/p0749_46.svg" alt="quartier : 21 caméras D sur 35 longueur 1 21/35 = 0,6" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0749_47.svg" alt="route : 6 caméras D sur 9 longueur 1 3 groupes de 3 (vert) 6/9 = 2/3 ≈ 0,67" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.7 :</b> Comparer des parts, pas des comptes. En haut, le quartier : une longueur 1 coupée en 35, dont 21 morceaux jaunes D ; la part s’arrête à 0,6. En bas, la route : une longueur 1 coupée en 9, dont 6 jaunes ; les 3</p>
+<img class="vm" src="/ml/img/c018/p0749_48.svg" alt="groupes de 3 (traits verts) montrent 6 = 2 ≈ 0,67. La 9 3" style="--w:24.31" loading="lazy">
+<p>route a moins de caméras D en nombre, mais une plus grande part.</p>
+<p class="en">Compare shares, not counts. Top, the district: a length 1 cut into 35, with 21 yellow pieces D; the share stops at 0.6. Bottom, the route: a length 1 cut into 9, with 6 yellow; the 3 groups of 3 (green lines) show</p>
+<img class="vm" src="/ml/img/c018/p0749_49.svg" alt="6 = 2 ≈ 0.67. The route has fewer brand-D cameras in 9 3 number, but a larger share." style="--w:24.31" loading="lazy">
+<p><b>Troisième effet : trois mesures, trois réponses</b></p>
+<p>Le mode marche aussi avec des nombres. Reprends les caméras par rue : <span class="m">2, 3, 3, 3, 4, 4, 5, 5, 6</span>. La valeur 3 apparaît trois fois ; 4 et 5 deux fois ; 2 et 6 une fois.</p>
+<img class="vm" src="/ml/img/c018/p0750_50.svg" alt="Donc 𝑓max = 3 et le mode vaut 3. Third effect: three measures, three answers." style="--w:24.31" loading="lazy">
+<p class="en">The mode also works with numbers. Take the cameras per street again: <span class="m">2, 3, 3, 3, 4, 4, 5, 5, 6</span>. The value 3 appears three times; 4 and 5 twice; 2 and</p>
+<img class="vm" src="/ml/img/c018/p0750_51.svg" alt="6 once. So 𝑓max = 3 and the mode is 3." style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0750_52.svg" alt="moyenne médiane = 4 35/9 ≈ 3,89 (5ᵉ case sur 9) mode = 3 (3 rues : la pile la plus haute) 2 3 4 5 6 caméras dans la rue" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.8 :</b> Les neuf rues, une pile de points par nombre de caméras. La pile la plus haute est à 3 (violet) : c’est le mode. La médiane, 4, est la cinquième rue sur neuf</p>
+<img class="vm" src="/ml/img/c018/p0750_53.svg" alt="(tirets verts). La moyenne, 35 ≈ 3,89, est le pointillé noir. 9" style="--w:24.31" loading="lazy">
+<p>Trois mesures, trois endroits différents sur le même axe.</p>
+<p class="en">The nine streets, one stack of dots per number of cameras. The tallest stack is at 3 (violet): that is the mode. The median, 4, is the fifth street out of nine (green</p>
+<img class="vm" src="/ml/img/c018/p0750_54.svg" alt="dashes). The mean, 35 ≈ 3.89, is the black dotted line. 9 Three measures, three different places on the same axis." style="--w:24.31" loading="lazy">
+<p>Or la médiane vaut 4 (chapitre 15) et la moyenne <span class="m">3,89</span> (chapitre 14). Sur les mêmes neuf rues, trois mesures donnent trois réponses. Aucune n’est fausse, parce que chacune répond à une autre question. Le mode répond à « quel nombre de caméras rencontre-t-on le plus souvent ? » : 3, dans trois rues. La médiane répond à « quel nombre coupe les rues en deux moitiés ? » : 4. La moyenne répond à « combien chaque rue aurait-elle si on répartissait les 35 caméras également ? » : <span class="m">3,89</span>.</p>
+<p class="en">Yet the median is 4 (chapter 15) and the mean <span class="m">3.89</span> (chapter 14). On the same nine streets, three measures give three answers. None is wrong, because each answers a different question. The mode answers “which number of cameras do we meet most often?”: 3, in three streets. The median answers “which number cuts the streets into two halves?”: 4. The mean answers “how many would each street have if the 35 cameras were shared out equally?”: <span class="m">3.89</span>.</p>
+<img class="vm" src="/ml/img/c018/p0751_55.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Sur la figure 18.8, compte les points de chaque pile : 1 à 2, 3 à 3, 2 à 4, 2 à 5, 1 à 6. Additionne : tu dois trouver 9 rues. La plus haute pile, 3 points, est à la valeur 3 : le mode est <span class="m">{3}</span>.</p>
+<p class="en">On figure 18.8, count the dots in each stack: 1 at 2, 3 at 3, 2 at 4, 2 at 5, 1 at 6. Add them: you must find 9 streets. The tallest stack, 3 dots, is at value 3 the mode is <span class="m">{3}</span>.</p>
+<img class="vm" src="/ml/img/c018/p0752_56.svg" alt="mesure quand l’utiliser" style="--w:24.31" loading="lazy">
+<p>moyenne données à peu près symétriques, sans</p>
+<p>valeur aberrante ; facile à calculer, riche en propriétés mathématiques médiane données asymétriques ou avec des</p>
+<p>valeurs aberrantes</p>
+<img class="vm" src="/ml/img/c018/p0752_57.svg" alt="mode catégories, ou quand on cherche la" style="--w:24.31" loading="lazy">
+<p>valeur la plus courante</p>
+<p class="en">When to use each measure: the <i>mean</i> for roughly symmetric data without outliers (easy to compute, rich in mathematical properties); the <i>median</i> for skewed data or data with outliers; the <i>mode</i> for categories, or when we want the most common value.</p>
+<p>Chaque mesure a son défaut. La moyenne est sensible aux valeurs aberrantes : la rue à 40 caméras la fait passer de <span class="m">3,89</span> à <span class="m">7,5</span> (chapitre 14). La médiane ne voit pas la taille des valeurs, seulement leur rang. Le mode ne voit que les valeurs qui se répètent, et il dit peu de choses sur des nombres mesurés finement (cas limite plus bas).</p>
+<p class="en">Each measure has its weakness. The mean is sensitive to outliers: the 40-camera street moves it from <span class="m">3.89</span> to <span class="m">7.5</span> (chapter 14). The median does not see the size of the values, only their rank. The mode only sees the values that repeat, and it says little about finely measured numbers (limiting case below).</p>
+<p>Les trois mesures ensemble en disent plus qu’une seule. Quand elles s’écartent, l’écart lui-même est une information. Ici le mode 3 est à gauche de la médiane 4 : les rues à peu de caméras sont plus nombreuses, et quelques rues à 5 ou 6 caméras tirent la liste vers la droite. Les données ne sont pas symétriques.</p>
+<p class="en">The three measures together say more than any one of them. When they drift apart, the gap itself is information. Here the mode 3 is to the left of the median 4 the streets with few cameras are more numerous, and a few streets with 5 or 6 cameras pull the list to the right. The data are not symmetric.</p>
+<p><b>Quatrième effet : les durées d’inactivité, un échantillon</b></p>
+<p>En observant les caméras D, nous remarquons un détail : leur voyant rouge, qui signale l’enregistrement, s’éteint par moments. Pendant ces moments, la caméra ne filme pas. Rester dans la rue à surveiller ce voyant nous ferait repérer. Notre pirate récupère donc les durées d’inactivité à</p>
+<img class="vm" src="/ml/img/c018/p0753_58.svg" alt="distance. Fourth effect: the inactivity times, a sample." style="--w:24.31" loading="lazy">
+<p class="en">While watching the brand-D cameras we notice a detail: their red light, which signals recording, switches off at times. During these moments the camera does not film. Standing in the street to watch that light would get us spotted. So our hacker retrieves the inactivity times remotely.</p>
+<p>Il les relève pendant 15 week-ends, sur deux créneaux, 00h–02h et 02h–04h, sans séparer samedis et dimanches. Voici les durées, en minutes, dans l’ordre des week-ends :</p>
+<p class="en">He records them over 15 weekends, in two time slots, 0000–0200 and 0200–0400, without separating Saturdays and Sundays. Here are the durations, in minutes, in weekend order:</p>
+<p>week-end 00h– 02h– week-end 00h– 02h–</p>
+<img class="vm" src="/ml/img/c018/p0754_59.svg" alt="02h 04h 02h 04h 1 22,88 28,88 9 32,13 33,95 2 27,53 20,44 10 33,38 34,49 3 27,29 26,86 11 26,81 36,16 4 32,08 32,41 12 28,01 37,58 5 24,22 30,50 13 29,34 38,32 6 33,91 32,62 14 28,51 11,69 7 37,47 32,41 15 28,45 11,67 8 19,65 34,47" style="--w:24.31" loading="lazy">
+<p class="en">The table gives, for each of the 15 weekends, the inactivity time in the 0000–0200 slot and in the 0200–0400 slot.</p>
+<p>Ces 30 nombres ne sont pas <i>toutes</i> les inactivités possibles. Toutes les inactivités de ces caméras depuis leur installation formeraient la <b>population</b>. Elle est impossible à obtenir, parce que personne n’a noté les pannes des années passées. Nos 30 nombres en sont une partie : un <b>échantillon</b>.</p>
+<p class="en">These 30 numbers are not <i>all</i> possible inactivity periods. All inactivity periods of these cameras since they were installed would form the <b>population</b>. It is impossible to obtain, because nobody wrote down the gaps of past years. Our 30 numbers are a part of it: a <b>sample</b>.</p>
+<p>Il existe plusieurs façons de choisir un échantillon. La figure 18.9 les dessine sur une petite population</p>
+<img class="vm" src="/ml/img/c018/p0755_60.svg" alt="de 20 inactivités. There are several ways to choose a sample." style="--w:24.31" loading="lazy">
+<p class="en">Figure 18.9 draws them on a small population of 20 inactivity periods.</p>
+<p>1. <b>aléatoire</b> : chaque membre de la population a la même chance d’être choisi. C’est la méthode supposée ici : des périodes d’inactivité tirées sans préférence dans les deux créneaux ;</p>
+<p>2. <b>stratifié</b> : on découpe la population en groupes semblables, par exemple caméras d’intérieur et d’extérieur, et on tire dans chaque groupe ;</p>
+<p>3. <b>par grappes</b> : on découpe la population en groupes, par exemple une rue, on tire un groupe au hasard et on garde tous ses membres ;</p>
+<p>4. <b>de commodité</b> : on prend ce qui est facile d’accès, par exemple seulement les caméras les plus simples à observer ;</p>
+<p>5. <b>systématique</b> : on prend un membre sur <span class="m">𝑘</span>, par exemple une inactivité enregistrée sur cinq.</p>
+<p class="en">1. <b>random</b>: every member of the population has the same chance of being chosen. This is the method assumed here: inactivity periods drawn without preference in both slots;</p>
+<p class="en">2. <b>stratified</b>: the population is split into similar groups, for example indoor and outdoor cameras, and we draw within each group; 3. <b>cluster</b>: the population is split into groups, for example a street, one group is drawn at random and all its members are kept;</p>
+<p class="en">4. <b>convenience</b>: we take what is easy to reach, for example only the cameras that are easiest to watch; 5. <b>systematic</b>: we take one member out of <span class="m">𝑘</span>, for example one recorded inactivity out of five.</p>
+<img class="vf" src="/ml/img/c018/p0757_61.svg" alt="20 inactivités ; en orange : celles qu&#x27;on garde aléatoire au hasard, chacune a la même chance stratifié intérieur (bleu) et extérieur : on tire dans chacun par grappes 5 rues de 4 caméras : on garde une rue entière commodité les 5 plus faciles à observer systématique une sur cinq : 5ᵉ, 10ᵉ, 15ᵉ, 20ᵉ" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.9 :</b> Cinq façons de tirer un échantillon dans la même population de 20 inactivités. Les carrés orange sont gardés. Aléatoire : éparpillés sans règle. Stratifié : deux dans le groupe bleu (intérieur), deux dans le blanc (extérieur). Par grappes : une rue entière de 4. De commodité : les 5 premiers, les plus faciles. Systématique : un sur cinq, <span class="m">𝑘 = 5</span>.</p>
+<p class="cap en">Five ways to draw a sample from the same population of 20 inactivity periods. The orange squares are kept. Random: scattered without a rule. Stratified: two in the blue group (indoor), two in the white one (outdoor). Cluster: a whole street of 4. Convenience: the first 5, the easiest. Systematic: one in five, <span class="m">𝑘 = 5</span>.</p>
+<p>Un échantillon ne ressemble jamais exactement à la population. L’écart entre ce que montre l’échantillon et ce qui est vrai pour la population s’appelle l’<b>erreur d’échantillonnage</b>. Ce n’est pas une faute de calcul : elle vient du simple fait de ne regarder qu’une partie. Par exemple, si l’échantillon de commodité de la figure 18.9 ne garde que des caméras faciles à observer, il peut manquer toutes les pannes des caméras cachées.</p>
+<p class="en">A sample never looks exactly like the population. The gap between what the sample shows and what is true of the population is called the <b>sampling error</b>. It is not a calculation mistake: it comes from the mere fact of looking at only a part. For example, if the convenience sample of figure 18.9 keeps only easy-to-watch cameras, it may miss every gap of the hidden cameras.</p>
+<p>La taille de l’échantillon compte aussi. Plus il est petit, plus l’erreur risque d’être grande, et plus on risque de manquer un comportement rare. Avec 15 week-ends par créneau, notre échantillon est petit : garde cette réserve en tête pour la suite.</p>
+<p class="en">The size of the sample matters too. The smaller it is, the larger the error is likely to be, and the more likely we are to miss a rare behavior. With 15 weekends per slot, our sample is small: keep this caveat in mind for what follows.</p>
+<p><b>Cinquième effet : quel créneau choisir?</b></p>
+<p>Nous allons calculer la moyenne du créneau 00h–02h (chapitre 14) avec ses 15 durées :</p>
+<img class="vm" src="/ml/img/c018/p0758_62.svg" alt="22,88 + 27,53 + ⋯ + 28,45 431,66 𝑥 =̄ = . 15 15 Avec nos nombres : 431,66 ≈ 28,78 minutes : en 15" style="--w:24.31" loading="lazy">
+<p>moyenne, la caméra se tait un peu moins d’une demi-heure.</p>
+<p class="en"><b>Fifth effect: which time slot to choose?</b> We compute the mean of the 0000–0200 slot (chapter 14) with its 15 durations:</p>
+<img class="vm" src="/ml/img/c018/p0759_63.svg" alt="𝑥 =̄ 22.88+27.53+⋯+28.45 = 431.66 . With our numbers: 15 15" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">≈ 28.78</span> minutes: on average the camera is silent for a little less than half an hour.</p>
+<p>Pour la médiane (chapitre 15), <span class="m">𝑛 = 15</span> est impair. Nous allons calculer la position de la valeur du</p>
+<img class="vm" src="/ml/img/c018/p0759_64.svg" alt="milieu : 𝑛 + 1 15 + 1 𝑃 = = . 2 2" style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">𝑃 = 8</span> : la médiane est la huitième valeur de la liste triée. La liste triée est 19,65 ; 22,88 ; 24,22 ; 26,81 ; 27,29 ; 27,53 ; 28,01 ; <b>28,45</b> ; 28,51 ; 29,34 ; 32,08 ; 32,13 ; 33,38 ; 33,91 ; 37,47. La huitième valeur est 28,45 minutes : c’est la médiane.</p>
+<p class="en">For the median (chapter 15), <span class="m">𝑛 = 15</span> is odd. We compute the position of the middle value:</p>
+<img class="vm" src="/ml/img/c018/p0759_65.svg" alt="𝑃 = 𝑛+1 = 15+1 . With our numbers: 𝑃 = 8: the 2 2" style="--w:24.31" loading="lazy">
+<p class="en">median is the eighth value of the sorted list. The sorted list is 19.65, 22.88, 24.22, 26.81, 27.29, 27.53, 28.01, <b>28.45</b>, 28.51, 29.34, 32.08, 32.13, 33.38, 33.91, 37.47. The eighth value is 28.45 minutes: that is the median.</p>
+<p>Pour 02h–04h, le même travail donne une somme</p>
+<img class="vm" src="/ml/img/c018/p0759_66.svg" alt="de 442,45, une moyenne de 442,45 ≈ 29,50 minutes 15" style="--w:24.31" loading="lazy">
+<p>et une médiane de 32,41 minutes. À première vue, le créneau 02h–04h gagne sur les deux mesures : moyenne <span class="m">29,50</span> contre <span class="m">28,78</span>, médiane <span class="m">32,41</span> contre <span class="m">28,45</span>. Mais regarde la figure.</p>
+<p class="en">For 0200–0400, the same work gives a sum of</p>
+<img class="vm" src="/ml/img/c018/p0760_67.svg" alt="442.45, a mean of 442.45 ≈ 29.50 minutes and a 15" style="--w:24.31" loading="lazy">
+<p class="en">median of 32.41 minutes. At first sight the 0200–0400 slot wins on both measures: mean <span class="m">29.50</span> against <span class="m">28.78</span>, median <span class="m">32.41</span> against <span class="m">28.45</span>. But look at the figure.</p>
+<img class="vf" src="/ml/img/c018/p0761_68.svg" alt="moins de moyenne médiane 20 min" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0761_69.svg" alt="00h–02h 28,78 28,45 seuil bas 15,4 02h–04h 29,50 11,67 et 11,69 32,41 10 15 20 25 30 35 40 durée d&#x27;inactivité (minutes)" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.10 :</b> Chaque point est un week-end : en haut le créneau 00h–02h (bleu), en bas 02h–04h (rouge). Triangles : moyennes ; losanges : médianes, avec leurs valeurs. Dans le créneau 02h–04h, deux week-ends ont donné moins de 12 minutes (zone rouge, à gauche), sous le seuil bas de Tukey, 15,4 (pointillé). La valeur 32,41 apparaît deux fois (points empilés).</p>
+<p class="cap en">Each dot is a weekend: top, the 0000–0200 slot (blue); bottom, 0200–0400 (red). Triangles: means; diamonds: medians, with their values. In the 0200–0400 slot, two weekends gave less than 12 minutes (red zone, on the left), below Tukey’s lower threshold, 15.4 (dotted line). The value 32.41 appears twice (stacked dots).</p>
+<p>Deux durées du créneau 02h–04h sont très courtes : 11,69 et 11,67 minutes. Si notre fuite demande 20 minutes et que la caméra se rallume au bout de 12, nous sommes filmés. La moyenne et la médiane ne montrent pas ce risque, parce qu’elles résument le centre de la liste, pas ses bords.</p>
+<p class="en">Two durations of the 0200–0400 slot are very short: 11.69 and 11.67 minutes. If our escape needs 20 minutes and the camera comes back on after 12, we are filmed. The mean and the median do not show this risk, because they summarize the center of the list, not its edges.</p>
+<p>La règle de Tukey du chapitre 17 le confirme. Pour 02h–04h, les positions des quartiles sont 4 et 12, donc <span class="m">𝑄</span><sub class="m">1</sub> <span class="m">= 26,86</span> et <span class="m">𝑄</span><sub class="m">3</sub> <span class="m">= 34,49</span>. Nous allons calculer le seuil bas :</p>
+<img class="vm" src="/ml/img/c018/p0762_70.svg" alt="𝑄1 − 1,5 (𝑄3 − 𝑄1) = 26,86 − 1,5 × 7,63." style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">26,86 − 11,445 ≈ 15,4</span> minutes ; 11,67 et 11,69 sont en dessous, donc signalées comme aberrantes. Pour 00h–02h, le même calcul donne <span class="m">26,81 − 1,5 × 5,32 ≈ 18,8</span>, et la plus courte durée, 19,65, reste au-dessus.</p>
+<p class="en">Tukey’s rule from chapter 17 confirms it. For 0200–0400 the quartile positions are 4 and 12, so <span class="m">𝑄</span><sub class="m">1</sub> <span class="m">= 26.86</span> and <span class="m">𝑄</span><sub class="m">3</sub> <span class="m">= 34.49</span>. We compute the lower threshold: <span class="m">𝑄</span><sub class="m">1</sub> <span class="m">− 1.5 (𝑄</span><sub class="m">3</sub> <span class="m">− 𝑄</span><sub class="m">1</sub><span class="m">) = 26.86 − 1.5 × 7.63</span>. With our numbers: <span class="m">26.86 − 11.445 ≈ 15.4</span> minutes; 11.67 and 11.69 lie below it, so they are flagged as outliers. For 0000–0200 the same computation gives <span class="m">26.81 − 1.5 × 5.32 ≈ 18.8</span>, and the shortest duration, 19.65, stays above it.</p>
+<p><b>Le cas limite : des nombres qui ne se répètent pas</b></p>
+<p>Cherchons le mode des durées. Dans le créneau 00h–02h, les 15 durées sont toutes différentes :</p>
+<img class="vm" src="/ml/img/c018/p0763_71.svg" alt="chaque valeur a une fréquence 1, donc 𝑓max = 1 et il" style="--w:24.31" loading="lazy">
+<p>n’y a pas de mode. Dans le créneau 02h–04h, la</p>
+<img class="vm" src="/ml/img/c018/p0763_72.svg" alt="valeur 32,41 apparaît deux fois, donc 𝑓max = 2 et le" style="--w:24.31" loading="lazy">
+<p>mode vaut 32,41.</p>
+<p class="en"><b>The limiting case: numbers that do not repeat.</b> Let us look for the mode of the durations. In the 0000–0200 slot the 15 durations are all different:</p>
+<img class="vm" src="/ml/img/c018/p0763_73.svg" alt="each value has frequency 1, so 𝑓max = 1 and there" style="--w:24.31" loading="lazy">
+<p class="en">is no mode. In the 0200–0400 slot the value</p>
+<img class="vm" src="/ml/img/c018/p0763_74.svg" alt="32.41 appears twice, so 𝑓max = 2 and the mode is" style="--w:24.31" loading="lazy">
+<p class="en">32.41.</p>
+<img class="vf" src="/ml/img/c018/p0764_75.svg" alt="mesures réelles : 32,41 apparaît deux fois fmax  = 2 : Mo = {32,41}" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0764_76.svg" alt="32,41 32,62" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0764_77.svg" alt="une mesure changée de 0,01 min (0,6 s) fmax  = 1 : plus de mode la médiane, elle, passe seulement de 32,41 à 32,42" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0764_78.svg" alt="" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0764_79.svg" alt="32,41 32,42 32,62" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.11 :</b> Le cas limite, vu de très près autour de 32,5 minutes. En haut, les mesures réelles : deux points</p>
+<img class="vm" src="/ml/img/c018/p0764_80.svg" alt="empilés à 32,41, donc 𝑓max = 2 et un mode. En bas, une" style="--w:24.31" loading="lazy">
+<p>seule mesure vaut 32,42 au lieu de 32,41 : les deux points se séparent, toutes les fréquences valent 1, le mode disparaît. La médiane, elle, ne bouge que de 0,01.</p>
+<p class="en">The limiting case, seen very closely around 32.5 minutes. Top, the real measurements: two dots stacked</p>
+<img class="vm" src="/ml/img/c018/p0764_81.svg" alt="at 32.41, so 𝑓max = 2 and a mode. Bottom, a single" style="--w:24.31" loading="lazy">
+<p class="en">measurement is 32.42 instead of 32.41 the two dots separate, every frequency is 1, the mode vanishes. The median moves by only 0.01.</p>
+<p>Mais ce mode est fragile. Le nombre qui le fait basculer est <span class="m">0,01</span> minute, soit <span class="m">0,6</span> seconde (une minute fait 60 secondes, donc <span class="m">0,01 × 60 = 0,6</span>). Si l’une des deux mesures valait 32,42, le mode disparaîtrait, alors que la médiane passerait seulement de 32,41 à 32,42 (figure 18.11). Avec des mesures au centième de minute, deux valeurs égales sont une coïncidence, pas une tendance. Le mode, si utile pour les marques, ne dit presque rien sur des nombres qui varient en continu.</p>
+<p class="en">But this mode is fragile. The number that tips it over is <span class="m">0.01</span> minute, that is <span class="m">0.6</span> second (a minute is 60 seconds, so <span class="m">0.01 × 60 = 0.6</span>). If one of the two measurements were 32.42, the mode would vanish, while the median would only move from 32.41 to 32.42 (figure 18.11). With measurements to the hundredth of a minute, two equal values are a coincidence, not a trend. The mode, so useful for brands, says almost nothing about numbers that vary continuously.</p>
+<p>La réparation consiste à compter par intervalles. Découpe les durées en tranches de 10 minutes, de 10 à 40, et compte combien de week-ends tombent dans chaque tranche. Chaque tranche devient une catégorie, comme une marque.</p>
+<p class="en">The fix is to count by intervals. Cut the durations into 10-minute slices, from 10 to 40, and count how many weekends fall into each slice. Each slice becomes a category, like a brand.</p>
+<img class="vf" src="/ml/img/c018/p0766_82.svg" alt="00h–02h : classe modale 20 à 30 min" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c018/p0766_83.svg" alt="10 9 week-ends ds -en 5 week-ends eek 5 w 1 week-end 0 10 20 30 40 02h–04h : classe modale 30 à 40 min 10 week-ends 10 ds -en eek 5 w 3 week-ends 2 week-ends 0 10 20 30 40 durée d&#x27;inactivité (minutes), tranches de 10" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 18.12 :</b> Nombre de week-ends dont la durée d’inactivité tombe dans chaque tranche de 10 minutes. En haut, 00h–02h : 1, 9 et 5 ; la tranche encadrée d’orange, 20 à 30 minutes, est la classe modale. En bas, 02h–04h : 2, 3 et 10 ; la classe modale est 30 à 40 minutes, mais la tranche 10 à 20 n’est pas vide.</p>
+<p class="cap en">Number of weekends whose inactivity time falls into each 10-minute slice. Top, 0000–0200 1, 9 and 5; the orange-framed slice, 20 to 30 minutes, is the modal class. Bottom, 0200–0400 2, 3 and 10; the modal class is 30 to 40 minutes, but the 10 to 20 slice is not empty.</p>
+<p>Le mode retrouve un sens : on parle de <b>classe modale</b>, parce que c’est la tranche dont la barre est la plus haute. Pour 00h–02h, c’est la tranche de 20 à 30 minutes, avec 9 week-ends sur 15. Pour 02h–04h, c’est celle de 30 à 40 minutes, avec 10</p>
+<img class="vm" src="/ml/img/c018/p0767_84.svg" alt="sur 15. The mode makes sense again: we speak of the" style="--w:24.31" loading="lazy">
+<p class="en"><b>modal class</b>, because it is the slice whose bar is the tallest. For 0000–0200 it is the 20 to 30 minutes slice, with 9 weekends out of 15. For 0200–0400 it is the 30 to 40 minutes slice, with 10 out of 15.</p>
+<img class="vm" src="/ml/img/c018/p0767_85.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Dans le tableau des durées, colonne 02h–04h, compte les valeurs entre 10 et 20 11,69 et 11,67, puis entre 20 et 30 28,88 ; 20,44 ; 26,86. Tu dois trouver 2 et 3. Les 10 autres sont entre 30 et 40 : <span class="m">2 + 3 + 10 = 15</span> week-ends.</p>
+<p class="en">In the table of durations, 0200–0400 column, count the values between 10 and 20 11.69 and 11.67, then between 20 and 30 28.88, 20.44, 26.86. You must find 2 and 3. The other 10 lie between 30 and 40 <span class="m">2 + 3 + 10 = 15</span> weekends.</p>
+<p>Le créneau 02h–04h offre plus souvent de longues fenêtres, mais il a aussi plus de fenêtres très courtes. Pour une fuite, une seule fenêtre trop courte suffit à échouer. Le choix dépend donc du risque que l’on accepte, pas seulement de la valeur centrale. Les barres de la figure 18.12 montrent ce que trois nombres centraux cachaient : les deux week-ends sous 20 minutes.</p>
+<p class="en">The 0200–0400 slot more often offers long windows, but it also has more very short windows. For an escape, a single window that is too short is enough to fail. So the choice depends on the risk we accept, not only on the central value. The bars of figure 18.12 show what three central numbers were hiding: the two weekends under 20 minutes.</p>
+<img class="vm" src="/ml/img/c018/p0768_86.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">Le mode est la seule des trois mesures qui marche pour des catégories, mais sur des nombres mesurés finement il bascule pour un écart de 0,01 : il faut alors compter par tranches</p>
+<img class="vm" src="/ml/img/c018/p0768_87.svg" alt="et chercher la classe modale. The mode is the only one of the three measures" style="--w:24.31" loading="lazy">
+<p class="en">that works for categories, but on finely measured numbers it tips over for a gap of 0.01 we must then count by slices and look for the modal class.</p>
+<img class="vf" src="/ml/img/c018/p0768_88.svg" alt="" style="--w:24.31" loading="lazy">
+<h2>5. La finalité</h2>
+<p class="h2en">5. Where it leads</p>
+<p>Les barres de la figure 18.12 portent un nom : ce sont les barres d’un <b>histogramme</b>. Au chapitre 19, les tranches de 10 minutes de ce chapitre seront recoupées en tranches de 5 minutes, et tu verras la forme du dessin changer.</p>
+<p class="en">The bars of figure 18.12 have a name: they are the bars of a <b>histogram</b>. In chapter 19, the 10-minute slices of this chapter will be cut again into 5-minute slices, and you will see the shape of the drawing change.</p>
+<p>• Aux chapitre 20 à chapitre 23, tu mesureras l’étalement des durées. Les deux fenêtres de 11 minutes, que la moyenne et la médiane ne voyaient pas, feront grimper ces mesures pour le créneau 02h–04h.</p>
+<p>• Au chapitre 67, la fréquence <span class="m">𝑓(𝑣)</span> divisée par le nombre total d’observations deviendra une</p>
+<img class="vm" src="/ml/img/c018/p0769_89.svg" alt="probabilité : 21 = 0,6 pour la marque D, si chaque 35" style="--w:24.31" loading="lazy">
+<p>caméra a la même chance d’être croisée.</p>
+<p>• Au chapitre 69, la classe modale de la figure 18.12 deviendra le sommet d’une courbe de densité.</p>
+<p>• Aux chapitre 94 et chapitre 104, l’erreur d’échantillonnage de nos 15 week-ends sera mesurée, et l’on saura combien de week-ends il faut observer pour s’y fier.</p>
+<p>• Au chapitre 111, le classifieur bayésien naïf comptera des fréquences de catégories, comme nous avons compté les 21 caméras D.</p>
+<p class="en">• In chapter 20 to chapter 23 you will measure the spread of the durations. The two 11-minute windows, which the mean and the median did not see, will push these measures up for the 0200–0400 slot.</p>
+<p class="en">• In chapter 67 the frequency <span class="m">𝑓(𝑣)</span> divided by the total number of observations will become a</p>
+<img class="vm" src="/ml/img/c018/p0769_90.svg" alt="probability: 21 = 0.6 for brand D, if every 35" style="--w:24.31" loading="lazy">
+<p>camera has the same chance of being met.</p>
+<p>• In chapter 69 the modal class of figure 18.12 will become the peak of a density curve.</p>
+<p>• In chapter 94 and chapter 104 the sampling error of our 15 weekends will be measured, and we will know how many weekends must be observed to trust it.</p>
+<p>• In chapter 111 the naive Bayes classifier will count category frequencies, just as we counted the 21 brand-D cameras.</p>
+<h2>6. Une question pour toi</h2>
+<p class="h2en">6. A question for you</p>
+<p>Notre pirate a relevé 15 week-ends par créneau. Supposons qu’il puisse en relever 15 de plus, mais pour un seul créneau. Lequel choisirais-tu de mieux connaître, et pourquoi ? Que cherches-tu vraiment à savoir sur ce créneau : sa valeur centrale, ou autre</p>
+<img class="vm" src="/ml/img/c018/p0770_91.svg" alt="chose ? Our hacker recorded 15 weekends per slot." style="--w:24.31" loading="lazy">
+<p class="en">Suppose he could record 15 more, but for one slot only. Which slot would you choose to know better, and why? What are you really trying to learn about that slot: its central value, or something else?</p>
+<p><b>Trois questions pour vérifier que tu as compris</b></p>
+<img class="vm" src="/ml/img/c018/p0771_92.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>1. Douze voitures passent : rouge, bleue, bleue, grise, rouge, bleue, blanche, bleue, grise, rouge, bleue, blanche. Compte les fréquences, donne le mode, puis la part de voitures qui ont la couleur du mode.</p>
+<p>2. Dix familles ont 2, 1, 3, 2, 0, 2, 1, 4, 1 et 2 enfants. Fais le tableau valeur → fréquence, puis dessine les barres. Lis le mode sur ton dessin, puis calcule la médiane et la moyenne.</p>
+<p>3. En une phrase, avec tes propres exemples, explique pourquoi on peut chercher le mode d’une liste de couleurs, mais pas sa moyenne.</p>
+<p class="en"><b>Three questions to check that you have un- derstood.</b> 1. Twelve cars go by: red, blue, blue, gray, red, blue, white, blue, gray, red, blue, white. Count the frequencies, give the mode, then the share of cars that have the mode’s color.</p>
+<p class="en">2. Ten families have 2, 1, 3, 2, 0, 2, 1, 4, 1 and 2 children. Make the value → frequency table, then draw the bars. Read the mode on your drawing, then compute the median and the mean.</p>
+<p class="en">3. In one sentence, with your own examples, explain why you can look for the mode of a list of colors, but not for its mean.</p>

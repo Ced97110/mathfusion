@@ -1,0 +1,342 @@
+[
+ {
+  "code": "66-061",
+  "a_dire": "Le corps ℚ(ζₙ) contient toutes les racines de xⁿ − 1 : c’est son corps de décomposition.",
+  "legende_titre": "Un corps qui contient toutes les racines",
+  "lecture": [
+   "Le grand cadre bleu est le corps ℚ(i), le cas de 4 côtés.",
+   "Les quatre points verts sur le cercle sont les racines de x⁴ − 1 : 1, i, −1 et −i.",
+   "Les quatre cases vertes à droite disent que chaque racine est dans ce corps, avec i² = −1."
+  ],
+  "a_voir": "Les quatre racines sont toutes à l’intérieur du cadre bleu."
+ },
+ {
+  "code": "66-062",
+  "a_dire": "Le n-gone se construit exactement quand φ(n) est une puissance de 2.",
+  "legende_titre": "Ce que doit valoir φ(n)",
+  "lecture": [
+   "Chaque ligne montre un nombre de côtés n et autant de cases que φ(n).",
+   "Pour n = 5 et n = 17, les cases vertes sont au nombre de 4 et de 16 : des puissances de 2.",
+   "Pour n = 7, les 6 cases rouges ne forment pas une puissance de 2."
+  ],
+  "a_voir": "Seul le nombre de cases décide : 4 et 16 conviennent, 6 ne convient pas."
+ },
+ {
+  "code": "66-063",
+  "a_dire": "On écrit n comme une puissance de 2 fois des nombres premiers impairs distincts.",
+  "legende_titre": "Découper n en facteurs",
+  "lecture": [
+   "Le rectangle bleu du haut est n = 60.",
+   "Les flèches orange l’envoient vers ses trois facteurs.",
+   "Le facteur bleu 2² est la puissance de 2, avec e = 2.",
+   "Les deux facteurs violets 3 et 5 sont les premiers impairs distincts p₂ et p₃."
+  ],
+  "a_voir": "60 s’écrit 2² × 3 × 5 : une puissance de 2, puis deux premiers impairs différents."
+ },
+ {
+  "code": "66-064",
+  "a_dire": "Pour calculer φ(n), on traite chaque facteur premier à part, puis on multiplie les résultats.",
+  "legende_titre": "Calculer φ(60) en trois actions",
+  "lecture": [
+   "La rangée du haut donne les facteurs de 60 : 2², 3 et 5.",
+   "Les flèches orange et leurs calculs donnent un nombre par facteur : 2, 2 et 4.",
+   "La rangée orange du milieu est multipliée : 2 × 2 × 4.",
+   "La case verte du bas donne φ(60) = 16."
+  ],
+  "a_voir": "Chaque facteur donne son propre résultat, puis tout se multiplie."
+ },
+ {
+  "code": "66-065",
+  "a_dire": "Dans le produit, chaque facteur doit être une puissance de 2 : un facteur impair plus grand que 1 l’empêche.",
+  "legende_titre": "Chaque facteur compte",
+  "lecture": [
+   "À gauche, n = 9 donne 3 × 2 = 6 : une grille rouge de 3 colonnes et 2 lignes.",
+   "Le facteur 3 est impair et plus grand que 1, donc 6 n’est pas une puissance de 2.",
+   "À droite, n = 15 donne 2 × 4 = 8 : une grille verte de 4 colonnes et 2 lignes.",
+   "Les deux facteurs 2 et 4 sont des puissances de 2."
+  ],
+  "a_voir": "Un seul facteur impair plus grand que 1 suffit à casser le produit."
+ },
+ {
+  "code": "66-066",
+  "a_dire": "Un nombre premier de Fermat est à la fois premier et de la forme 2ᵐ + 1.",
+  "legende_titre": "Deux conditions à la fois",
+  "lecture": [
+   "Le cercle bleu rassemble les nombres premiers, le cercle violet les nombres de la forme 2ᵐ + 1.",
+   "Les nombres verts 3 et 5 sont dans les deux cercles.",
+   "Le 7 est seulement dans le cercle bleu : 6 n’est pas une puissance de 2.",
+   "Le 9 est seulement dans le cercle violet : il vaut 2³ + 1 mais n’est pas premier."
+  ],
+  "a_voir": "Seuls les nombres dans les deux cercles portent le nom de Fermat."
+ },
+ {
+  "code": "66-067",
+  "a_dire": "Si 2ᵐ + 1 est premier, alors m est une puissance de 2.",
+  "legende_titre": "Un diviseur impair de m fait échouer",
+  "lecture": [
+   "La première ligne part de m = 6, qui s’écrit 3 × 2.",
+   "Le rectangle rouge 2⁶ + 1 = 65 se découpe en 5 × 13 ; la case orange 5 vaut 2² + 1.",
+   "La deuxième ligne part de m = 3 : 2³ + 1 = 9 = 3 × 3, avec 3 = 2¹ + 1."
+  ],
+  "a_voir": "Quand m a un diviseur impair, 2ᵐ + 1 a un diviseur de la forme 2ʳ + 1."
+ },
+ {
+  "code": "66-068",
+  "a_dire": "Fₖ désigne le nombre 2 puissance 2ᵏ, plus 1.",
+  "legende_titre": "Lire le symbole Fₖ",
+  "lecture": [
+   "La rangée du haut calcule F₃ pas à pas : k = 3 en bleu, puis 2³ = 8 et 2⁸ = 256 en orange.",
+   "La dernière case verte ajoute 1 : F₃ = 257.",
+   "Les trois cases grises du bas donnent F₀ = 3, F₁ = 5 et F₂ = 17."
+  ],
+  "a_voir": "On calcule 2ᵏ, puis 2 à cette puissance, puis on ajoute 1."
+ },
+ {
+  "code": "66-069",
+  "a_dire": "Le n-gone se construit si n est une puissance de 2 fois des premiers de Fermat tous distincts.",
+  "legende_titre": "Le test de Gauss-Wantzel sur trois cas",
+  "lecture": [
+   "Pour n = 15, les deux cases vertes 3 et 5 sont des premiers de Fermat distincts.",
+   "Pour n = 9, les deux cases rouges sont le même facteur 3 répété.",
+   "Pour n = 7, la case rouge est un premier qui n’est pas de Fermat."
+  ],
+  "a_voir": "Les deux conditions, « de Fermat » et « distincts », sont toutes les deux nécessaires."
+ },
+ {
+  "code": "66-070",
+  "a_dire": "On ne connaît que cinq premiers de Fermat : 3, 5, 17, 257 et 65 537.",
+  "legende_titre": "La liste connue",
+  "lecture": [
+   "Les cinq cases bleues du haut sont F₀ à F₄ avec leurs valeurs ; l'accolade dit que ce sont les seuls connus.",
+   "Les cases vertes du bas sont des produits de 3, 5 et 17, chaque nombre pris une fois.",
+   "Ces produits donnent 15, 51, 85 et 255."
+  ],
+  "a_voir": "On ne connaît que ces cinq premiers de Fermat ; les produits n'utilisent que 3, 5 et 17."
+ },
+ {
+  "code": "66-071",
+  "a_dire": "Euler a montré que F₅ n’est pas premier, ce qui contredit l’idée de Fermat.",
+  "legende_titre": "Un seul contre-exemple",
+  "lecture": [
+   "Les cinq cases vertes du haut sont les nombres de Fermat premiers F₀ à F₄.",
+   "Le rectangle rouge est F₅ = 4 294 967 297.",
+   "Les deux flèches orange l’écrivent comme 641 × 6 700 417, deux cases grises."
+  ],
+  "a_voir": "Le produit 641 × 6 700 417 redonne F₅, qui n’est donc pas premier."
+ },
+ {
+  "code": "66-072",
+  "a_dire": "On ne sait pas s’il existe un sixième nombre premier de Fermat.",
+  "legende_titre": "Ce que l’on sait et ce que l’on ignore",
+  "lecture": [
+   "Les cinq cases vertes sont les premiers de Fermat connus : 3, 5, 17, 257, 65 537.",
+   "La case rouge F₅ est le nombre suivant : il n’est pas premier.",
+   "Les deux cases grises en pointillés avec un point d’interrogation sont les suivants : on ignore la réponse."
+  ],
+  "a_voir": "Après les cinq cases vertes, la suite est inconnue."
+ },
+ {
+  "code": "66-073",
+  "a_dire": "Un nombre est algébrique s’il annule un polynôme non nul à coefficients rationnels.",
+  "legende_titre": "Un nombre qui annule un polynôme",
+  "lecture": [
+   "Les courbes orange sont deux polynômes : 2x − 1 à gauche, x² − 2 à droite.",
+   "Le point bleu u = ½ est l’endroit où la droite touche l’axe gris.",
+   "Les points de la parabole sur l’axe sont √2 en bleu et −√2 en gris.",
+   "À chaque point bleu, le polynôme vaut 0."
+  ],
+  "a_voir": "Le point bleu est un endroit où la courbe d’un polynôme coupe l’axe."
+ },
+ {
+  "code": "66-074",
+  "a_dire": "Un nombre transcendant est un nombre qui n’est pas algébrique : aucun polynôme non nul à coefficients rationnels ne l’annule.",
+  "legende_titre": "Deux familles de nombres",
+  "lecture": [
+   "Le cadre violet à gauche contient les nombres algébriques, comme ½ et √2.",
+   "√2 est irrationnel mais reste algébrique.",
+   "Le cadre bleu à droite contient les nombres transcendants π et e.",
+   "Le critère est l’existence d’un polynôme, pas d’être une fraction."
+  ],
+  "a_voir": "π et e sont du côté où aucun polynôme ne les annule."
+ },
+ {
+  "code": "66-075",
+  "a_dire": "Un entier algébrique annule un polynôme dont le coefficient de la plus haute puissance vaut 1 et dont les coefficients sont entiers.",
+  "legende_titre": "Le coefficient de tête décide",
+  "lecture": [
+   "Sur la première ligne, √2 annule x² − 2 ; la case verte montre le coefficient de tête, 1.",
+   "Sur la deuxième ligne, ½ annule 2x − 1 ; la case rouge montre le coefficient de tête, 2.",
+   "Avec 1 en tête, le nombre est un entier algébrique ; avec 2, il est algébrique seulement."
+  ],
+  "a_voir": "Regarde la case qui est devant la lettre x : 1 convient, 2 ne convient pas."
+ },
+ {
+  "code": "66-076",
+  "a_dire": "f(u) = 0 se lit « f de u égale zéro » : u annule f, c’est une racine de f.",
+  "legende_titre": "Lire f(u) = 0",
+  "lecture": [
+   "La case bleue est le nombre u = √2.",
+   "La case grise est le polynôme f(x) = x² − 2 ; la flèche orange remplace x par u.",
+   "La case verte calcule (√2)² − 2 = 0 : la valeur est zéro."
+  ],
+  "a_voir": "On met le nombre à la place de x, et le résultat vaut zéro."
+ },
+ {
+  "code": "66-077",
+  "a_dire": "eᵘ est la somme sans fin 1 + u + u²/2 ! + … ; pour u = 1, on s’approche de e.",
+  "legende_titre": "La somme qui définit eᵘ",
+  "lecture": [
+   "Chaque barre est la somme des premiers termes pour u = 1 : 1, puis 2, puis 2,5, puis environ 2,667, puis environ 2,708.",
+   "La part bleue est la somme déjà obtenue, la part orange est le terme ajouté.",
+   "La ligne verte en pointillés marque e, environ 2,718."
+  ],
+  "a_voir": "Les termes ajoutés deviennent très petits et la somme s’approche de la ligne verte."
+ },
+ {
+  "code": "66-078",
+  "a_dire": "k ! se lit « k factorielle » : le produit des entiers de 1 à k.",
+  "legende_titre": "Lire k !",
+  "lecture": [
+   "Les cases orange du haut sont les facteurs 1, ×2, ×3, ×4, ×5.",
+   "Chaque flèche grise mène au produit obtenu jusque-là : 1, 2, 6, 24.",
+   "La dernière case verte donne 5 ! = 120."
+  ],
+  "a_voir": "À chaque pas, on multiplie par l’entier suivant."
+ },
+ {
+  "code": "66-079",
+  "a_dire": "√2 et ζₙ sont algébriques : on montre un polynôme que chacun annule.",
+  "legende_titre": "Deux nombres, deux polynômes",
+  "lecture": [
+   "À gauche, le point bleu sur la droite graduée est √2, qui annule x² − 2.",
+   "À droite, le point bleu du cercle est le sommet ζ du pentagone.",
+   "ζ annule le polynôme Φ₅ de degré 4, écrit en bleu sous le cercle."
+  ],
+  "a_voir": "Pour montrer qu’un nombre est algébrique, on écrit un polynôme qu’il annule."
+ },
+ {
+  "code": "66-080",
+  "a_dire": "La somme, le produit et le quotient de deux nombres algébriques sont algébriques : ils forment un corps A.",
+  "legende_titre": "Les algébriques restent entre eux",
+  "lecture": [
+   "Le grand cadre gris est l'ensemble A des nombres algébriques.",
+   "Les deux cases bleues √2 et √3 sont dans A.",
+   "Les flèches orange partent des deux nombres vers trois cases vertes : somme, produit et quotient.",
+   "La somme vaut environ 3,146 et annule x⁴ − 10x² + 1."
+  ],
+  "a_voir": "Somme, produit et quotient restent dans le cadre."
+ },
+ {
+  "code": "66-081",
+  "a_dire": "A désigne l’ensemble de tous les nombres algébriques ; u ∈ A veut dire que u est algébrique.",
+  "legende_titre": "Lire le symbole A",
+  "lecture": [
+   "Le rectangle gris du haut est la phrase longue ; la case bleue A la remplace.",
+   "Les deux cases bleues du bas disent que u et v sont dans A.",
+   "La case verte dit que la somme u + v est aussi dans A."
+  ],
+  "a_voir": "Le signe ∈ se lit « appartient à »."
+ },
+ {
+  "code": "66-082",
+  "a_dire": "La preuve utilise une famille finie de nombres et un déterminant qui donne un polynôme annulé par u + v.",
+  "legende_titre": "Idée de la preuve",
+  "lecture": [
+   "La colonne bleue de gauche est la famille 1, √2, √3, √6.",
+   "Chaque flèche orange multiplie un élément par √2 + √3.",
+   "Les résultats de droite sont des combinaisons des quatre mêmes nombres.",
+   "Le déterminant, en orange, mène au polynôme annulé par u + v, en vert."
+  ],
+  "a_voir": "Comme on reste dans une famille finie, un déterminant fabrique le polynôme."
+ },
+ {
+  "code": "66-083",
+  "a_dire": "L’exponentielle de u est définie par une série, une somme sans fin qui s’approche d’un nombre précis.",
+  "legende_titre": "Une somme sans fin qui converge",
+  "lecture": [
+   "Chaque barre orange est un terme de la série pour u = 2 : 1, 2, 2, 4/3, 2/3, 4/15, 4/45, 8/315.",
+   "Les barres deviennent de plus en plus petites.",
+   "La somme de ces huit termes vaut environ 7,381, et on s’approche de 7,389, environ e²."
+  ],
+  "a_voir": "Les termes diminuent vite, donc la somme se rapproche d’une valeur fixe."
+ },
+ {
+  "code": "66-084",
+  "a_dire": "eᵘ eᵛ = eᵘ⁺ᵛ : en regroupant les termes de même degré, on retrouve la série de eᵘ⁺ᵛ.",
+  "legende_titre": "Pourquoi eᵘ eᵛ = eᵘ⁺ᵛ",
+  "lecture": [
+   "Le grand carré a pour côté u + v ; il se découpe en u² (bleu), v² (violet) et deux rectangles uv (orange).",
+   "À droite, les termes de degré 2 du produit sont u²/2, uv et v²/2, avec les mêmes couleurs.",
+   "Leur somme vaut (u + v)²/2, le terme de degré 2 de eᵘ⁺ᵛ."
+  ],
+  "a_voir": "Les morceaux du carré redonnent (u + v)² : les termes se retrouvent un par un."
+ },
+ {
+  "code": "66-085",
+  "a_dire": "Pour u = iπ, l’exponentielle vaut cos π + i sin π, c’est-à-dire −1.",
+  "legende_titre": "e à la puissance iπ",
+  "lecture": [
+   "Le cercle gris a les axes en gris ; le point 1 est à droite.",
+   "L’arc orange est le demi-tour d’angle π.",
+   "Le point vert, à gauche, est −1 : cos π = −1 et sin π = 0."
+  ],
+  "a_voir": "Après un demi-tour, on arrive en −1."
+ },
+ {
+  "code": "66-086",
+  "a_dire": "Avec des coefficients algébriques, une combinaison des eᵘⁱ ne vaut 0 que si tous les coefficients sont nuls.",
+  "legende_titre": "Indépendance sur les algébriques",
+  "lecture": [
+   "Les deux lignes utilisent u₁ = 0 et u₂ = 1, donc les nombres 1 et e.",
+   "Première ligne : les cases bleues v₁ et v₂ sont algébriques ; la somme ne vaut 0 que si v₁ = v₂ = 0.",
+   "Deuxième ligne : la case rouge e n’est pas algébrique ; avec −1, on obtient 0 sans coefficient nul."
+  ],
+  "a_voir": "Le théorème ne tient plus si un coefficient sort de A."
+ },
+ {
+  "code": "66-087",
+  "a_dire": "Si u est algébrique non nul, eᵘ n’est pas algébrique.",
+  "legende_titre": "Pourquoi eᵘ n’est pas dans A",
+  "lecture": [
+   "On part de u algébrique non nul, case bleue du haut.",
+   "On suppose que eᵘ = w est algébrique, case violette.",
+   "Les cases orange forment w·e⁰ − 1·eᵘ = 0, avec des coefficients algébriques non nuls.",
+   "Cela contredit le théorème, case rouge, donc eᵘ n’est pas dans A, case verte."
+  ],
+  "a_voir": "La supposition mène à une contradiction : elle est fausse."
+ },
+ {
+  "code": "66-088",
+  "a_dire": "e est transcendant : c’est eᵘ pour u = 1, qui est algébrique et non nul.",
+  "legende_titre": "e est transcendant",
+  "lecture": [
+   "En haut, la case bleue u = 1 mène par eᵘ à e, environ 2,718, hors du cadre violet A.",
+   "En bas, la case grise u = 0 mène à e⁰ = 1, dans le cadre violet A : aucune conclusion.",
+   "C’est le fait que u soit non nul qui permet de conclure."
+  ],
+  "a_voir": "Seul u = 1 sort du cadre A ; avec u = 0 on reste dedans."
+ },
+ {
+  "code": "66-089",
+  "a_dire": "π est transcendant : s’il était algébrique, e^(iπ) = −1 serait à la fois hors de A et rationnel.",
+  "legende_titre": "Pourquoi π est transcendant",
+  "lecture": [
+   "La case violette du haut est la supposition : π est dans A.",
+   "La case orange en dessous en tire iπ dans A, parce que A est un corps.",
+   "Les deux cases bleues se contredisent : le théorème dit e^(iπ) hors de A, mais e^(iπ) = −1 est rationnel.",
+   "La contradiction rouge mène à la case verte : π est transcendant."
+  ],
+  "a_voir": "Les deux cases bleues disent le contraire l’une de l’autre."
+ },
+ {
+  "code": "66-090",
+  "a_dire": "En divisant par ζ² et en posant y = ζ + ζ⁻¹, l’équation de degré 4 devient une équation de degré 2 en y.",
+  "legende_titre": "Passer du degré 4 au degré 2",
+  "lecture": [
+   "Les deux points bleus du cercle sont ζ et son inverse ζ⁻¹, à 72 degrés de chaque côté de l’axe.",
+   "Le point orange sur l’axe est y = ζ + ζ⁻¹, environ 0,618.",
+   "À droite, la colonne dit : degré 4 en ζ, division par ζ², nouvelle inconnue y, degré 2 en y."
+  ],
+  "a_voir": "La nouvelle inconnue y regroupe ζ et son inverse."
+ }
+]

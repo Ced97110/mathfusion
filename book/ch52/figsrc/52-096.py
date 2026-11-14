@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+text(ax,22,73,'multiples de 3','resultat','m'); text(ax,66,73,'multiples de 6','limite','m')
+line(ax,[(44,8),(44,70)],'fixe',dash=True)
+box(ax,2,52,40,12,'sujet',label=r'$12=2\times6\in(3)$',size='s')
+arrow(ax,(22,51),(22,43),'varie')
+box(ax,2,30,40,12,'resultat',label=r'$6\in(3)$ : un facteur dedans',size='s')
+box(ax,46,52,40,12,'autre',label=r'$6=2\times3\in(6)$',size='s')
+arrow(ax,(66,51),(66,43),'varie')
+box(ax,46,30,40,12,'limite',label=r'$2\notin(6)$, $3\notin(6)$',size='s')
+text(ax,22,18,'idéal premier','resultat','m'); text(ax,66,18,'pas premier','limite','m')
+save(fig,'52-096')

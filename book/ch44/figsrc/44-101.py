@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 86, 'les parenthèses sont sans effet', 'resultat', 'm')
+for i, (n, x) in enumerate([('a', 22), ('b', 44), ('c', 66)]):
+    disc(ax, x, 68, 5, 'sujet', label=f'${n}$', size='l')
+line(ax, [(16, 60), (16, 58), (50, 58), (50, 60)], 'varie')
+line(ax, [(38, 55), (38, 53), (72, 53), (72, 55)], 'autre')
+text(ax, 8, 58, '', 'encre', 's')
+text(ax, 33, 63, r'$ab$ d’abord', 'varie', 's')
+text(ax, 55, 48, r'$bc$ d’abord', 'autre', 's')
+text(ax, 44, 40, r'$(ab)c = a(bc)$', 'resultat', 'l')
+text(ax, 44, 30, 'soustraction dans $\mathbb{Z}$ : pas le cas', 'limite', 's')
+text(ax, 24, 20, r'$(5-3)-2 = 0$', 'varie', 'm')
+text(ax, 64, 20, r'$5-(3-2) = 4$', 'autre', 'm')
+text(ax, 44, 8, r'$0 \neq 4$ : écriture ambiguë', 'limite', 'm')
+save(fig, '44-101')

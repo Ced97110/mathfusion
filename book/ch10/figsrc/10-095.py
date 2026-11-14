@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 4, 56, 12, 10, 'sujet', label='9', size='l'); text(ax, 21, 61, r'$\times$', 'sujet', 'l'); box(ax, 26, 56, 12, 10, 'sujet', label='4', size='l')
+box(ax, 50, 56, 14, 10, 'varie', label=r'$10^1$', size='l'); text(ax, 69, 61, r'$\times$', 'varie', 'l'); box(ax, 74, 56, 12, 10, 'varie', label=r'$10^3$', size='l')
+arrow(ax, (21, 55), (21, 44), 'sujet'); text(ax, 24, 49.5, r'$9\times4$', 'sujet', 's', ha='left')
+arrow(ax, (68, 55), (68, 44), 'varie'); text(ax, 71, 49.5, r'$1+3$', 'varie', 's', ha='left')
+box(ax, 10, 33, 22, 10, 'sujet', label='36', size='l'); box(ax, 57, 33, 22, 10, 'varie', label=r'$10^4$', size='l')
+arrow(ax, (25, 32), (38, 22), 'resultat'); arrow(ax, (64, 32), (50, 22), 'resultat')
+box(ax, 12, 8, 64, 13, 'resultat', label=r'$36\times10^4=360\,000$', size='l')
+save(fig, '10-095')

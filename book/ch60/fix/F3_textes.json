@@ -1,0 +1,78 @@
+{
+ "60-177": {
+  "lecture": [
+   "La boîte verte du haut est Cayley-Hamilton : f(A) égale 0, une preuve en une ligne.",
+   "La boîte bleue du bas est la forme normale du chapitre 59 : P(λ1 − A)Q égale diag(1, (λ − 2) au carré), avec sa chaîne de facteurs.",
+   "La boîte orange du milieu est l'étape qui porte le poids : le produit des facteurs de la forme normale est f.",
+   "Les flèches orange montent de la forme normale vers le produit, puis vers la ligne verte."
+  ],
+  "a_voir": "La preuve courte repose sur la forme normale, qui donne la chaîne de facteurs."
+ },
+ "60-203": {
+  "lecture": [
+   "Le tableau bleu est la matrice A, 3 × 3, avec ses neuf nombres, à coefficients dans ℚ.",
+   "En bas, les étapes du chapitre : former λ1 − A (orange), la réduire (orange), lire les facteurs invariants (vert).",
+   "Sous la case verte, les trois facteurs invariants obtenus : 1, λ − 1 et (λ − 1) au carré."
+  ],
+  "a_voir": "On part d’une matrice A précise sur ℚ et l'on arrive à ses facteurs invariants."
+ },
+ "60-206": {
+  "lecture": [
+   "Le tableau a trois cases bleues sur la diagonale : 1, λ − 1 et (λ − 1)². Les six autres cases, grises, valent 0.",
+   "En haut, P et Q sont des matrices inversibles ; P(λ1 − A)Q est égal à ce tableau.",
+   "En bas, les trois cases de la diagonale sont recopiées en ligne. Chaque flèche orange va d'une case à la suivante et lit « divise »."
+  ],
+  "a_voir": "Une matrice diagonale dont chaque case divise la suivante."
+ },
+ "60-207": {
+  "lecture": [
+   "En haut, les trois facteurs invariants bleus : 1 (zéro facteur λ − 1), λ − 1 (un facteur) et (λ − 1)² (deux facteurs).",
+   "En bas, le produit f en vert : trois cadres λ − 1, donc f égale (λ − 1) au cube.",
+   "L’accolade verte compte : 0 + 1 + 2 = 3 facteurs."
+  ],
+  "a_voir": "Le polynôme caractéristique f est le produit des cases : (λ − 1)³."
+ },
+ "60-237": {
+  "lecture": [
+   "La case bleue de gauche nomme le premier : p = 2, p = 3 ou p = 5.",
+   "Chaque case orange est une partition de l'exposant de ce premier.",
+   "À droite de chaque partition, la case grise donne le groupe qui lui correspond."
+  ],
+  "a_voir": "Chaque partition donne un groupe : à chaque ligne orange correspond une case grise."
+ },
+ "60-240": {
+  "lecture": [
+   "À gauche, chaque rangée de cases est une liste de diviseurs élémentaires ; les cases orange sont celles que l'on prend, les cases bleues celles qui restent.",
+   "Première rangée : on prend 2, 3 et 5, et le produit 2 × 3 × 5 donne 30.",
+   "La deuxième rangée contient ce qui reste, 2, 3, 3 : on prend 2 et 3, le produit est 6.",
+   "La dernière case, 3, est ce qui reste : c'est 3. Les nombres verts à droite, 30, 6 et 3, sont les facteurs invariants."
+  ],
+  "a_voir": "Les diviseurs élémentaires donnent, rangée après rangée, les facteurs invariants en vert."
+ },
+ "60-245": {
+  "lecture": [
+   "Les points forment le groupe des couples d'entiers.",
+   "Le gros point orange est (0, 0) : c'est le seul couple tué par un entier non nul, donc la torsion est 0.",
+   "Tous les autres points bleus ne sont tués par aucun entier non nul.",
+   "À droite, M = tor M ⊕ L ; avec tor M = 0, la case verte conclut : M = L, M est libre."
+  ],
+  "a_voir": "Sans autre point que 0 dans la torsion, il ne reste que le module libre."
+ },
+ "60-259": {
+  "lecture": [
+   "En haut, K est le complément cherché : il aurait 4 éléments.",
+   "La rangée du haut est ⟨g⟩ : les deux éléments (0, 0) et (2, 0).",
+   "La rangée du milieu est un K de type ℤ/4 ; la rangée du bas est un K de type ℤ/2 ⊕ ℤ/2.",
+   "Dans les trois rangées, la case rouge est (2, 0) : le trait rouge pointillé les relie. K touche ⟨g⟩ ailleurs qu'en (0, 0) : aucun complément."
+  ],
+  "a_voir": "Dans chaque cas possible, K contient (2, 0), le même élément que ⟨g⟩ : il n'y a pas de complément."
+ },
+ "60-263": {
+  "lecture": [
+   "Le polygone bleu a tous ses côtés égaux, marqués par un trait : c'est un polygone régulier.",
+   "La question orange est de savoir s'il est constructible à la règle et au compas ; la flèche « ch. 66 » mène au groupe violet (ℤ/n)^×, que l'on étudie.",
+   "Ce groupe est abélien fini : le théorème de structure l'écrit comme une somme de groupes cycliques, case verte."
+  ],
+  "a_voir": "Une question de géométrie, le polygone, se ramène à l'étude d'un groupe de l'algèbre."
+ }
+}

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,3,4,82,50,'sujet')
+text(ax,66,48,'ℝ : les réels','sujet','m')
+box(ax,8,9,40,34,'fixe')
+text(ax,28,38,'ℚ : les fractions','fixe','m')
+disc(ax,28,27,2,'resultat')
+text(ax,28,16,'½ : réel et fraction','resultat','s')
+disc(ax,66,27,2,'varie')
+text(ax,66,16,'√2 : réel,\npas une fraction','varie','s')
+save(fig,'61-036')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 2, 68, 40, 10, 'fixe', label='ℤ/2 : cyclique, abélien', size='s')
+box(ax, 46, 68, 40, 10, 'fixe', label='ℤ/3 : cyclique, abélien', size='s')
+text(ax, 44, 59, r'$V$ : on calcule dans les deux ordres', 'varie', 's')
+box(ax, 2, 44, 40, 10, 'varie', label='(13)(24) puis (12)(34)', size='s')
+box(ax, 46, 44, 40, 10, 'varie', label='(12)(34) puis (13)(24)', size='s')
+arrow(ax, (22, 43.5), (36, 35.5), 'resultat')
+arrow(ax, (66, 43.5), (52, 35.5), 'resultat')
+box(ax, 29, 26, 30, 9, 'resultat', label='(14)(23) : le même', size='s')
+arrow(ax, (44, 25.5), (44, 19.5), 'resultat')
+box(ax, 10, 8, 68, 11, 'resultat', label=r'ℤ/2, ℤ/3 et $V$ : abéliens', size='s')
+save(fig, '64-022')

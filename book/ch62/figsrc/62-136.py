@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+# deux étapes sur le polynôme donné, puis la réponse
+box(ax, 22, 76, 44, 10, 'sujet', label=r'$f=x^3-3x+2$')
+arrow(ax, (44, 76), (44, 66), 'varie', lw=1.2)
+text(ax, 49, 71, 'étape 1 : dériver', 'varie', 's', ha='left')
+box(ax, 22, 56, 44, 10, 'varie', label=r"$f\,'=3x^2-3$")
+arrow(ax, (44, 56), (44, 46), 'varie', lw=1.2)
+text(ax, 49, 51, 'étape 2 : Euclide', 'varie', 's', ha='left')
+box(ax, 22, 36, 44, 10, 'fixe', label=r"PGCD de $f$ et $f\,'$")
+arrow(ax, (34, 36), (22, 24), 'fixe', lw=1.0)
+arrow(ax, (54, 36), (66, 24), 'fixe', lw=1.0)
+box(ax, 2, 6, 40, 18, 'resultat', label='égal à 1 :\ntoutes les racines\nsont simples', size='s')
+box(ax, 46, 6, 40, 18, 'varie', label='différent de 1 :\nil y a une\nracine multiple', size='s')
+save(fig, '62-136')

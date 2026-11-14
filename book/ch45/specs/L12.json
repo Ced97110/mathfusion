@@ -1,0 +1,194 @@
+[
+ {
+  "code": "45-177",
+  "a_dire": "Le couple revient à (0, 0) au plus petit appui où les deux cases sont à 0, c’est le PPCM des deux ordres.",
+  "legende_titre": "Quand le couple revient-il à zéro ?",
+  "lecture": [
+   "Chaque ligne est un appui, de 1 à 6.",
+   "La colonne bleue est la case d’ordre 2 ; la colonne violette est la case d’ordre 3.",
+   "Une case verte est à 0 ; une case grise n’y est pas.",
+   "Seule la ligne 6, entourée, a les deux cases vertes : c’est le PPCM de 2 et 3."
+  ],
+  "a_voir": "Les deux cases ne sont à 0 ensemble qu’au sixième appui."
+ },
+ {
+  "code": "45-178",
+  "a_dire": "La preuve part de l’égalité du couple, la sépare en deux, et l’équivalence « multiple de l’ordre » mène au PPCM.",
+  "legende_titre": "Les trois temps de la preuve",
+  "lecture": [
+   "La case bleue du haut est le point de départ : le couple élevé à la puissance k donne les deux neutres.",
+   "Les deux cases du milieu séparent l’égalité : une pour g, une pour h.",
+   "Les flèches orange sont l’étape qui porte le poids : retour au neutre veut dire k multiple de l’ordre.",
+   "La case verte du bas est l’arrivée : le plus petit k commun est le PPCM."
+  ],
+  "a_voir": "Une seule étape, la flèche orange, fait passer de l’égalité aux multiples."
+ },
+ {
+  "code": "45-179",
+  "a_dire": "g puissance k donne le neutre exactement quand k est un multiple de l’ordre r.",
+  "legende_titre": "Quels k ramènent au neutre ?",
+  "lecture": [
+   "La droite va de 0 à 12 ; chaque point est une valeur de k.",
+   "Les flèches orange avancent de 4 en 4, qui est l’ordre r.",
+   "Les points verts, 0, 4, 8 et 12, donnent 0.",
+   "Les points rouges, 6 et 10, donnent 2 : ils ne sont pas des multiples de 4."
+  ],
+  "a_voir": "Seuls les multiples de 4 ramènent à 0."
+ },
+ {
+  "code": "45-180",
+  "a_dire": "On divise k par r : k = qr + t ; les q blocs de r disparaissent, et il faut t = 0 pour revenir au neutre.",
+  "legende_titre": "Diviser k par l’ordre r",
+  "lecture": [
+   "Chaque petite case grise est une répétition de g.",
+   "Un bloc de quatre cases grises est r répétitions : il revient au neutre et disparaît.",
+   "Les cases orange sont le reste t : pour k égal à 10, il en reste 2, donc on n’est pas au neutre.",
+   "Pour k égal à 12, il n’y a aucune case orange : le reste est 0 et on est au neutre."
+  ],
+  "a_voir": "Seul un reste nul laisse le neutre."
+ },
+ {
+  "code": "45-181",
+  "a_dire": "Le couple (1, 1) de ℤ/2 × ℤ/3 passe par six couples avant de revenir à (0, 0) : son ordre est 6.",
+  "legende_titre": "Six appuis pour revenir",
+  "lecture": [
+   "Chaque case est un couple, dans l’ordre des appuis.",
+   "Le nombre orange à côté de chaque case est le nombre d’appuis.",
+   "Les flèches orange sont un appui : on ajoute (1, 1).",
+   "La case bleue du haut est le départ ; on y revient au sixième appui."
+  ],
+  "a_voir": "Le cercle se referme après 6 appuis."
+ },
+ {
+  "code": "45-182",
+  "a_dire": "Pour plusieurs cases, la liste revient au neutre au plus petit appui multiple de tous les ordres : le PPCM.",
+  "legende_titre": "Trois horloges ensemble",
+  "lecture": [
+   "Chaque ligne est une horloge ; les points sont les appuis où elle est à 0.",
+   "La ligne du haut a un point tous les 2 appuis, celle du milieu tous les 3, celle du bas tous les 4.",
+   "La droite graduée du bas compte les appuis de 0 à 12.",
+   "La ligne verte en pointillés est le premier appui où les trois lignes ont un point : 12."
+  ],
+  "a_voir": "Le premier appui avec un point sur les trois lignes est 12."
+ },
+ {
+  "code": "45-183",
+  "a_dire": "Les six cases de la grille portent chacune un nombre de pas différent, de 0 à 5.",
+  "legende_titre": "Le nombre de pas dans chaque case",
+  "lecture": [
+   "La grille a 2 lignes, a égale 0 ou 1, et 3 colonnes, b égale 0, 1 ou 2.",
+   "Chaque case porte le nombre de pas de (1, 1) qui y mènent.",
+   "La case bleue est le départ, avec 0 pas.",
+   "Les cases vertes portent 1, 2, 3, 4 et 5."
+  ],
+  "a_voir": "Les six nombres, de 0 à 5, sont tous différents."
+ },
+ {
+  "code": "45-184",
+  "a_dire": "On part de (0, 0), on ajoute (1, 1) à chaque pas et on s’arrête au retour en (0, 0).",
+  "legende_titre": "Ajouter (1, 1) jusqu’au retour",
+  "lecture": [
+   "La case bleue en haut est le départ, (0, 0).",
+   "Chaque flèche orange ajoute (1, 1) et mène à la case suivante.",
+   "Les cases grises sont les couples traversés.",
+   "La case verte en bas est le retour en (0, 0) : on s’arrête, après 6 pas."
+  ],
+  "a_voir": "Le nombre de flèches avant l’arrêt est l’ordre du couple."
+ },
+ {
+  "code": "45-185",
+  "a_dire": "k mod n est le reste de la division de k par n, écrit en abrégé.",
+  "legende_titre": "Le reste, écrit court",
+  "lecture": [
+   "Chaque ligne de ronds est le nombre 5, découpé en blocs.",
+   "Sur la ligne du haut, les blocs sont de 2 ronds ; le rond orange est le reste, 1.",
+   "Sur la ligne du bas, les blocs sont de 3 ronds ; les deux ronds orange sont le reste, 2.",
+   "Le résultat vert est le couple des deux restes."
+  ],
+  "a_voir": "Les ronds orange qui restent sont k mod n."
+ },
+ {
+  "code": "45-186",
+  "a_dire": "Après 5 pas, on connaît la case (1, 2) en calculant deux restes, sans faire les pas.",
+  "legende_titre": "Où arrive le pas 5 ?",
+  "lecture": [
+   "La case bleue du haut divise 5 par 2 : le reste 1 donne la ligne.",
+   "La case violette divise 5 par 3 : le reste 2 donne la colonne.",
+   "Dans la petite grille, la ligne 1 est en bleu et la colonne 2 en violet.",
+   "La case verte, à leur croisement, est l’arrivée du pas 5."
+  ],
+  "a_voir": "Deux restes suffisent pour trouver la case."
+ },
+ {
+  "code": "45-187",
+  "a_dire": "ℤ/2 × ℤ/3 a six éléments, tous atteints par (1, 1) : il correspond un à un à ℤ/6.",
+  "legende_titre": "Une machine et une horloge",
+  "lecture": [
+   "La colonne bleue de gauche liste les six couples, dans l’ordre des pas de (1, 1).",
+   "La colonne violette de droite liste les six heures de l’horloge, de 0 à 5.",
+   "Chaque flèche verte relie un couple à l’heure qui a le même numéro de pas.",
+   "Aucun couple et aucune heure ne sont oubliés ou répétés."
+  ],
+  "a_voir": "Chaque couple a exactement une heure, et inversement."
+ },
+ {
+  "code": "45-188",
+  "a_dire": "Dans ℤ/2 × ℤ/2, le chemin de (1, 1) ne visite que deux cases sur quatre.",
+  "legende_titre": "Les cases jamais atteintes",
+  "lecture": [
+   "La grille a 2 lignes et 2 colonnes.",
+   "Les deux cases vertes portent 0 et 1, les nombres de pas.",
+   "La flèche orange montre le retour en (0, 0) au deuxième pas.",
+   "Les deux cases grises en pointillés ne sont jamais atteintes."
+  ],
+  "a_voir": "Deux cases restent grises."
+ },
+ {
+  "code": "45-189",
+  "a_dire": "Dans ℤ/2 × ℤ/2, aucun couple n’atteint les quatre cases : le groupe n’est pas cyclique.",
+  "legende_titre": "Chaque couple revient en 2 appuis",
+  "lecture": [
+   "La case grise du centre est (0, 0), le départ.",
+   "Les trois cases bleues sont les autres couples.",
+   "Chaque flèche orange va de (0, 0) à un couple et revient : 2 appuis.",
+   "Aucune flèche ne continue vers un autre couple."
+  ],
+  "a_voir": "Chaque couple fait un aller-retour de 2 appuis avec (0, 0)."
+ },
+ {
+  "code": "45-190",
+  "a_dire": "Dans ℤ/2 × ℤ/2, ajouter un couple à lui-même donne (0, 0) : tout élément est d’ordre 1 ou 2.",
+  "legende_titre": "Un couple plus lui-même",
+  "lecture": [
+   "Chaque ligne est un des quatre couples, dans la colonne de gauche.",
+   "La flèche orange est « plus lui-même ».",
+   "La case verte de droite est le résultat : toujours (0, 0).",
+   "Le mot à droite donne l’ordre : 1 pour (0, 0), 2 pour les trois autres."
+  ],
+  "a_voir": "Les quatre flèches arrivent toutes sur (0, 0)."
+ },
+ {
+  "code": "45-191",
+  "a_dire": "ℤ/2 × ℤ/2 et ℤ/4 ont quatre éléments, mais seul ℤ/4 a un élément d’ordre 4 : ils ne sont pas isomorphes.",
+  "legende_titre": "Mêmes quatre éléments, ordres différents",
+  "lecture": [
+   "Chaque barre est un élément ; sa hauteur est son ordre.",
+   "Les barres violettes sont celles de ℤ/4 : deux d’entre elles atteignent l’ordre 4.",
+   "Les barres bleues sont celles de ℤ/2 × ℤ/2 : aucune ne dépasse l’ordre 2.",
+   "La ligne rouge en pointillés marque l’ordre 4, jamais atteint à droite."
+  ],
+  "a_voir": "Aucune barre bleue n’atteint la ligne rouge."
+ },
+ {
+  "code": "45-192",
+  "a_dire": "Le produit de deux horloges est une horloge exactement quand le PGCD de m et n vaut 1.",
+  "legende_titre": "Quand le produit est une horloge",
+  "lecture": [
+   "Chaque rangée de cases est une longueur : la rangée bleue est mn, la rangée colorée du dessous est le PPCM.",
+   "Avec 2 et 3, les deux rangées ont 6 cases : le PGCD est 1 et le produit est une horloge à 6 heures.",
+   "Avec 2 et 2, la rangée bleue a 4 cases et la rangée rouge seulement 2.",
+   "Les 2 cases en pointillés manquent : le PGCD est 2 et le produit n’est pas une horloge à 4 heures."
+  ],
+  "a_voir": "Les deux rangées ont la même longueur seulement pour 2 et 3."
+ }
+]

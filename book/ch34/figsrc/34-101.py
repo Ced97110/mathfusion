@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+O = (8, 20)
+def arc(r, a0, a1, role):
+    pts = [(O[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / 30)), O[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / 30))) for i in range(31)]
+    line(ax, pts, role, lw=1.1)
+ray = lambda d, L: (O[0] + L * math.cos(math.radians(d)), O[1] + L * math.sin(math.radians(d)))
+poly(ax, [O] + [ray(60 * i / 30, 30) for i in range(31)], 'fixe')
+line(ax, [O, ray(0, 30)], 'fixe', lw=1.2); line(ax, [O, ray(60, 30)], 'fixe', lw=1.2)
+line(ax, [O, ray(30, 30)], 'sujet', lw=1.2, dash=True)
+arc(30, 0, 60, 'varie'); arc(9, 0, 30, 'sujet')
+text(ax, *ray(47, 21), '$\\theta = 2A$', 'varie', 's')
+text(ax, *ray(13, 20), '$A = \\theta/2$', 'sujet', 's')
+box(ax, 44, 61, 42, 10, 'sujet', label='$\\cos 2A = 2\\cos^2 A - 1$', size='s')
+arrow(ax, (58, 61), (58, 47), 'varie')
+text(ax, 61, 56, '$2A \\to \\theta$', 'varie', 's', ha='left')
+text(ax, 61, 52, '$A \\to \\theta/2$', 'varie', 's', ha='left')
+box(ax, 44, 34, 42, 12, 'resultat', label='$\\cos\\theta = 2\\cos^2(\\theta/2) - 1$', size='s')
+text(ax, 65, 24, '$\\theta = 60°$ :', 'encre', 's')
+text(ax, 65, 19.5, '0,5 = 2 × 0,75 − 1', 'encre', 's')
+save(fig, '34-101')

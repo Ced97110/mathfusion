@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 76, 'mêmes radicaux essayés', 'encre', 's')
+box(ax, 3, 56, 38, 12, 'sujet', label=r'$x^5-4x+2=0$', size='s')
+box(ax, 47, 56, 38, 12, 'autre', label=r'$x^5-2=0$', size='s')
+arrow(ax, (22, 56), (22, 46), 'fixe'); arrow(ax, (66, 56), (66, 46), 'fixe')
+box(ax, 3, 34, 38, 11, 'sujet', label=r'groupe $S_5$', size='s')
+box(ax, 47, 34, 38, 11, 'autre', label='groupe plus petit', size='s')
+arrow(ax, (22, 34), (22, 24), 'fixe'); arrow(ax, (66, 34), (66, 24), 'fixe')
+box(ax, 3, 11, 38, 12, 'limite', label='aucune réussite', size='s')
+box(ax, 47, 11, 38, 12, 'resultat', label='un radical suffit', size='s')
+text(ax, 44, 4, 'la cause est dans l\'équation', 'encre', 's')
+save(fig, '65-140')

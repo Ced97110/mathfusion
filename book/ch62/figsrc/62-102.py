@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+# f = (x-1)^2 (x+2) ; f' = 2(x-1)(x+2) + (x-1)^2
+text(ax, 6, 52, r'$f$', 'encre', 'l')
+for x in (12, 26): box(ax, x, 47, 12, 10, 'sujet', label=r'$x-1$')
+box(ax, 40, 47, 12, 10, 'fixe', label=r'$x+2$')
+text(ax, 6, 31, r'$f^{\prime}$', 'encre', 'l')
+box(ax, 12, 26, 7, 10, 'fixe', label=r'$2$')
+box(ax, 21, 26, 12, 10, 'sujet', label=r'$x-1$')
+box(ax, 35, 26, 12, 10, 'fixe', label=r'$x+2$')
+text(ax, 52, 31, '+', 'encre', 'l')
+box(ax, 58, 26, 12, 10, 'sujet', label=r'$x-1$')
+box(ax, 72, 26, 12, 10, 'sujet', label=r'$x-1$')
+arrow(ax, (44, 46), (44, 38), 'varie')
+text(ax, 62, 42, 'dériver', 'varie', 's')
+arrow(ax, (44, 25), (44, 17), 'resultat')
+box(ax, 14, 4, 60, 12, 'resultat', label=r'$x-1$ divise $f$ et $f^{\prime}$')
+save(fig, '62-102')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+text(ax, 44, 85, r'$(5 \times 10^{17}) \times (8{,}1 \times 10^{-22})$', 'encre', 'm')
+text(ax, 22, 76, 'on multiplie', 'sujet', 's'); text(ax, 66, 76, 'on additionne', 'fixe', 's')
+box(ax, 5, 62, 34, 11, 'sujet', label=r'$5 \times 8{,}1 = 40{,}5$', size='m')
+box(ax, 49, 62, 34, 11, 'fixe', label=r'$17 + (-22) = -5$', size='m')
+arrow(ax, (22, 62), (36, 52), 'varie'); arrow(ax, (66, 62), (52, 52), 'varie')
+box(ax, 22, 40, 44, 12, 'varie', label=r'$40{,}5 \times 10^{-5}$', size='l')
+text(ax, 41, 34, '40,5 dépasse 10', 'limite', 's', ha='right')
+arrow(ax, (44, 40), (44, 24), 'varie')
+text(ax, 47, 29, r'$40{,}5 = 4{,}05 \times 10$', 'varie', 's', ha='left')
+box(ax, 22, 8, 44, 14, 'resultat', label=r'$4{,}05 \times 10^{-4}$', size='l')
+save(fig, '14-089')

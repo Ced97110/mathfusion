@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+def row(y, role, a, b, c, crole):
+    box(ax, 4, y, 26, 9, role, label=a)
+    arrow(ax, (30, y + 4.5), (37, y + 4.5), 'varie')
+    box(ax, 37, y, 16, 9, role, label=b)
+    arrow(ax, (53, y + 4.5), (60, y + 4.5), 'varie')
+    box(ax, 60, y, 12, 9, crole, label=c)
+row(72, 'sujet', r'$(i \times i) \times j$', r'$0 \times j$', '0', 'fixe')
+row(58, 'autre', r'$i \times (i \times j)$', r'$i \times k$', r'$-j$', 'resultat')
+text(ax, 80, 68.5, '≠', 'limite', 'xl', weight='bold')
+O = (44, 28); U = 14
+P = lambda x, y, z: iso(x, y, z, O, U)
+arrow(ax, P(0,0,0), P(1,0,0), 'sujet', lw=1.6)
+arrow(ax, P(0,0,0), P(0,1,0), 'varie', lw=1.6)
+arrow(ax, P(0,0,0), P(0,0,1), 'resultat', lw=1.6)
+arrow(ax, P(0,0,0), P(0,-1,0), 'autre', lw=1.6)
+text(ax, 59, 37, r'$i$', 'sujet', 'l')
+text(ax, 29, 37, r'$j$', 'varie', 'l')
+text(ax, 44, 46, r'$k$', 'resultat', 'l')
+text(ax, 59, 20, r'$-j$', 'autre', 'l')
+save(fig, '78-022')

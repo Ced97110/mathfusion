@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 2, 28, 84, 58, 'sujet')
+text(ax, 6, 81, r'$K=\mathbb{Q}[x]/(x^2-2)$', 'sujet', 'm', ha='left')
+text(ax, 83, 81, 'est un corps', 'resultat', 'm', ha='right')
+box(ax, 6, 44, 34, 28, 'fixe', label='ℚ ⊂ $K$\nles constantes $a$', size='s')
+box(ax, 46, 44, 36, 28, 'resultat', label=r'$r$ = classe de $x$' + '\n' + r'$r^2=2$ : $r$ est racine', size='s')
+text(ax, 44, 36, r'$K=\mathbb{Q}(r)$', 'sujet', 'm')
+box(ax, 8, 10, 30, 11, 'sujet', label=r'$a$')
+text(ax, 43, 15.5, '+', 'sujet', 'l')
+box(ax, 48, 10, 30, 11, 'sujet', label=r'$b\,r$')
+brace(ax, 8, 78, 9, 'sujet', label=r'$[K:\mathbb{Q}]=2=\deg f$', down=True)
+save(fig, '62-055')

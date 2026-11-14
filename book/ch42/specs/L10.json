@@ -1,0 +1,186 @@
+[
+ {
+  "code": "42-145",
+  "a_dire": "L'intersection de A avec l'ensemble vide est vide : aucun nombre de A n'est dans l'ensemble vide.",
+  "legende_titre": "A et l'ensemble vide : que reste-t-il en commun ?",
+  "lecture": [
+   "Le rectangle bleu est le groupe A avec les nombres 2 et 5.",
+   "Le rectangle en pointillés gris est l'ensemble vide : il n'a rien dedans.",
+   "Chaque flèche rouge part d'un nombre de A et s'arrête avant l'ensemble vide : ce nombre n'y est pas.",
+   "Le rectangle vert donne le résultat : A ∩ ∅ = ∅."
+  ],
+  "a_voir": "Les deux flèches rouges n'arrivent nulle part : rien n'est commun."
+ },
+ {
+  "code": "42-146",
+  "a_dire": "Réunir A, B et C donne le même ensemble {1, 2, 3}, que l'on regroupe A et B d'abord ou B et C d'abord.",
+  "legende_titre": "Deux façons de regrouper trois groupes",
+  "lecture": [
+   "Les trois disques de chaque ligne sont les nombres 1, 2 et 3 des groupes A, B et C.",
+   "Le cadre orange en pointillés montre les deux groupes réunis en premier.",
+   "Sur la première ligne, A et B sont regroupés ; sur la seconde, B et C.",
+   "Les deux flèches vertes arrivent au même rectangle vert : {1, 2, 3}."
+  ],
+  "a_voir": "Le cadre orange change de place, le résultat vert reste le même."
+ },
+ {
+  "code": "42-147",
+  "a_dire": "L'intersection de trois ensembles ne dépend pas du regroupement : ici le seul nombre commun est 2.",
+  "legende_titre": "Les nombres communs à A, B et C",
+  "lecture": [
+   "Les trois rectangles sont les groupes A (bleu), B (violet) et C (gris).",
+   "Le disque vert est le nombre 2, présent dans chacun des trois groupes.",
+   "Les deux rectangles verts du bas donnent le même résultat, {2}, pour les deux regroupements."
+  ],
+  "a_voir": "Le 2 vert est le seul nombre qui se trouve dans les trois groupes."
+ },
+ {
+  "code": "42-148",
+  "a_dire": "Réunir A puis B, ou B puis A, donne le même ensemble {1, 2, 3}.",
+  "legende_titre": "Réunir dans un ordre, puis dans l'autre",
+  "lecture": [
+   "Le rectangle bleu est le groupe A avec 1 et 2.",
+   "Le rectangle violet est le groupe B avec 2 et 3.",
+   "La première ligne réunit A puis B, la seconde B puis A.",
+   "Les deux rectangles verts à droite sont identiques : {1, 2, 3}."
+  ],
+  "a_voir": "Les deux lignes se terminent sur le même rectangle vert."
+ },
+ {
+  "code": "42-149",
+  "a_dire": "L'ordre ne compte pas pour ∩, alors qu'il compte pour la différence ∖.",
+  "legende_titre": "Changer l'ordre : ∩ contre ∖",
+  "lecture": [
+   "À gauche, les deux lignes bleues sont A ∩ B et B ∩ A : toutes deux donnent {2}, en vert.",
+   "À droite, les deux lignes orange sont A ∖ B et B ∖ A : elles donnent {1} et {3}, en rouge.",
+   "Le signe = vert dit que les résultats sont égaux ; le signe ≠ rouge dit qu'ils sont différents."
+  ],
+  "a_voir": "Seule la colonne de gauche garde le même résultat quand on échange A et B."
+ },
+ {
+  "code": "42-150",
+  "a_dire": "Avec des nombres 3 + 3 = 6, mais avec un ensemble A ∪ A = A : l'ensemble ne compte pas les répétitions.",
+  "legende_titre": "Additionner deux fois 3, réunir deux fois {3}",
+  "lecture": [
+   "À gauche, les disques bleus et orange sont deux fois 3 objets : on en compte 6.",
+   "À droite, les deux rectangles bleus sont deux fois le même ensemble A qui contient 3.",
+   "Le rectangle vert du bas est leur réunion : le 3 n'y est qu'une fois."
+  ],
+  "a_voir": "Six objets à gauche, un seul 3 à droite."
+ },
+ {
+  "code": "42-151",
+  "a_dire": "Pour A ∪ A, « x dans A ou x dans A » dit la même chose que « x dans A » : on obtient A.",
+  "legende_titre": "Pourquoi réunir A avec A ne change rien",
+  "lecture": [
+   "Le rectangle bleu du haut est le départ : x est dans A ∪ A.",
+   "Le rectangle orange, au centre, écrit la définition : x dans A ou x dans A. La phrase est répétée deux fois.",
+   "Le rectangle vert du bas est l'arrivée : x est dans A.",
+   "Le rectangle gris à droite est le groupe A avec 2 et 4."
+  ],
+  "a_voir": "L'étape orange est celle qui porte la preuve : deux phrases identiques n'en font qu'une."
+ },
+ {
+  "code": "42-152",
+  "a_dire": "L'ensemble vide est neutre pour ∪ comme 0 pour +, et absorbant pour ∩ comme 0 pour ×.",
+  "legende_titre": "L'ensemble vide joue le rôle de 0",
+  "lecture": [
+   "En haut, le rectangle bleu montre 5 + 0 = 5, le rectangle orange 5 × 0 = 0.",
+   "En bas à gauche, A réuni avec le vide (pointillés) donne A.",
+   "En bas à droite, A coupé avec le vide donne le vide.",
+   "Les pointillés représentent l'ensemble vide."
+  ],
+  "a_voir": "À gauche le résultat reste A ; à droite il devient un cadre vide."
+ },
+ {
+  "code": "42-153",
+  "a_dire": "Le complémentaire de A ∪ B est le même ensemble que A′ ∩ B′ : ici {5, 6}.",
+  "legende_titre": "Hors de A ou de B, c'est hors de A et hors de B",
+  "lecture": [
+   "La ligne du haut montre A′ : les disques bleus pleins sont 4, 5 et 6.",
+   "La deuxième ligne montre B′ : les disques orange pleins sont 1, 2, 5 et 6.",
+   "Sur la ligne A′ ∩ B′, les disques verts sont les nombres pleins dans les deux lignes du haut : 5 et 6.",
+   "La dernière ligne, (A ∪ B)′, a les mêmes disques verts, 5 et 6."
+  ],
+  "a_voir": "Les deux lignes vertes sont identiques."
+ },
+ {
+  "code": "42-154",
+  "a_dire": "Le complémentaire de A ∩ B est le même ensemble que A′ ∪ B′ : ici {1, 2, 4, 5, 6}.",
+  "legende_titre": "Hors de A et de B, c'est hors de A ou hors de B",
+  "lecture": [
+   "La ligne du haut montre A′ : les disques bleus pleins sont 4, 5 et 6.",
+   "La deuxième ligne montre B′ : les disques orange pleins sont 1, 2, 5 et 6.",
+   "Sur la ligne A′ ∪ B′, les disques verts sont les nombres pleins dans l'une des deux lignes du haut ou dans les deux.",
+   "La dernière ligne, (A ∩ B)′, a les mêmes disques verts."
+  ],
+  "a_voir": "Les deux lignes vertes ont les cinq mêmes disques pleins."
+ },
+ {
+  "code": "42-155",
+  "a_dire": "Le complémentaire échange ∪ et ∩ : « ou » devient « et », « et » devient « ou ».",
+  "legende_titre": "Le mot qui change quand on prend le contraire",
+  "lecture": [
+   "Les rectangles bleus de gauche sont les deux écritures avec complémentaire : (A ∪ B)′ et (A ∩ B)′.",
+   "Les rectangles gris disent en français « pas dans A » et « pas dans B ».",
+   "Le petit rectangle orange entre les deux est le mot de liaison : « et » pour la première ligne, « ou » pour la seconde."
+  ],
+  "a_voir": "Le mot orange est l'inverse du signe de la ligne."
+ },
+ {
+  "code": "42-156",
+  "a_dire": "Les deux dessins colorient la même zone : (A ∪ B)′ à gauche, A′ ∩ B′ à droite.",
+  "legende_titre": "La même zone, coloriée de deux façons",
+  "lecture": [
+   "Dans chaque dessin, le grand rectangle est l'ensemble U et les deux cercles sont A (bleu) et B (orange).",
+   "À gauche, la zone verte est tout ce qui est hors des deux cercles.",
+   "À droite, le bleu est hors de A et l'orange est hors de B ; là où ils se superposent, c'est la même zone qu'à gauche."
+  ],
+  "a_voir": "La zone verte de gauche et la zone superposée de droite sont à la même place."
+ },
+ {
+  "code": "42-157",
+  "a_dire": "Sur U = {1, …, 6}, chaque loi de De Morgan donne les mêmes disques pleins des deux côtés.",
+  "legende_titre": "Vérifier les deux lois sur six nombres",
+  "lecture": [
+   "Les deux lignes du haut montrent A (disques bleus : 1, 2, 3) et B (disques violets : 3, 4).",
+   "Dans le premier bloc, (A ∪ B)′ et A′ ∩ B′ ont les mêmes disques verts : 5 et 6.",
+   "Dans le second bloc, (A ∩ B)′ et A′ ∪ B′ ont les mêmes disques verts : 1, 2, 4, 5 et 6.",
+   "Les traits verts doubles relient les deux côtés de chaque loi."
+  ],
+  "a_voir": "Dans chaque bloc, les deux lignes sont identiques."
+ },
+ {
+  "code": "42-158",
+  "a_dire": "Un exemple qui réussit ne prouve pas une loi : n² + n + 41 réussit 40 fois puis échoue à n = 40.",
+  "legende_titre": "40 réussites, puis un échec",
+  "lecture": [
+   "Les 40 petits disques verts sont les entiers de 0 à 39, pour lesquels le résultat est premier.",
+   "Le grand disque rouge est n = 40.",
+   "Le calcul en rouge donne 1 681, qui vaut 41 × 41 : ce n'est pas un nombre premier."
+  ],
+  "a_voir": "Le disque rouge casse la règle que les 40 disques verts semblaient montrer."
+ },
+ {
+  "code": "42-159",
+  "a_dire": "Un couple (s, t) garde l'ordre : (2, 5) et (5, 2) sont différents, alors que {2, 5} et {5, 2} sont le même ensemble.",
+  "legende_titre": "Couple ou ensemble : l'ordre compte-t-il ?",
+  "lecture": [
+   "En haut, les deux rectangles gris sont {2, 5} et {5, 2} ; le double trait vert dit qu'ils sont égaux.",
+   "En bas, les rectangles bleus sont les couples (2, 5) et (5, 2), avec une case pour la première place et une pour la seconde.",
+   "Le signe rouge ≠ dit que ces deux couples sont différents."
+  ],
+  "a_voir": "Les mêmes nombres échangés donnent le même ensemble, mais un autre couple."
+ },
+ {
+  "code": "42-160",
+  "a_dire": "Deux couples sont égaux quand leurs premiers éléments sont égaux et leurs seconds éléments sont égaux, place par place.",
+  "legende_titre": "Comparer deux couples place par place",
+  "lecture": [
+   "À gauche, les rectangles bleus sont le couple (s, t) et les rectangles violets le couple (s′, t′).",
+   "Chaque flèche relie deux éléments de la même place et demande s'ils sont égaux.",
+   "À droite, le cas (2, 5) et (5, 2) : à chaque place les nombres sont différents, les flèches rouges portent ≠."
+  ],
+  "a_voir": "Chaque flèche compare une place avec la même place de l'autre couple."
+ }
+]

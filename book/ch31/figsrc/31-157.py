@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, c, r, a0, a1, role="fixe", lw=0.9, n=60):
+    line(ax, [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)), c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)], role, lw)
+fig, ax = canvas(52)
+u = 34.0; O = (8, 6)
+t = math.tan(math.radians(35))
+A_ = (O[0] + u, O[1]); T = (A_[0], O[1] + u * t); B = (O[0], O[1] + u); S = (O[0] + u / t, B[1])
+poly(ax, [O, A_, T], 'sujet'); poly(ax, [O, B, S], 'autre')
+arc(ax, O, u, 0, 90, 'fixe', 0.7)
+arc(ax, O, 8, 0, 35, 'varie', 1.1)
+text(ax, O[0] + 12, O[1] + 2.2, '35°', 'varie', 's')
+arc(ax, S, 8, 180, 180 + 35 + 0 + 0, 'varie', 1.1) if False else arc(ax, S, 8, 180, 215, 'varie', 1.1)
+text(ax, S[0] - 12.5, S[1] - 3.4, '35°', 'varie', 's')
+text(ax, A_[0] + 8.5, (A_[1] + T[1]) / 2, 'AT 0,7002', 'sujet', 's')
+text(ax, (B[0] + S[0]) / 2 + 3, B[1] + 3, 'BS 1,4281', 'autre', 's')
+for p, l, dx, dy in ((O, 'O', -2.5, -2.5), (A_, 'A', 0, -3), (B, 'B', -2.5, 1), (T, 'T', 2.5, 1.5), (S, 'S', 2.5, 0)):
+    text(ax, p[0] + dx, p[1] + dy, l, 'fixe', 's')
+text(ax, 72, 28, 'AT × BS = 1', 'resultat', 'm')
+text(ax, 72, 16, 'OA = OB = 1', 'fixe', 's')
+save(fig, '31-157')

@@ -1,0 +1,187 @@
+[
+ {
+  "code": "30-081",
+  "a_dire": "La sécante n'a pas de valeur là où cos x = 0, car elle divise 1 par 0.",
+  "legende_titre": "Une courbe qui monte sans toucher une droite",
+  "lecture": [
+   "La courbe bleue est la sécante : elle monte de plus en plus près de la droite en pointillés.",
+   "La droite en pointillés est en x = π/2, là où le cosinus vaut 0.",
+   "Le texte du bas donne le cas : à 89,9 degrés, le cosinus vaut environ 0,0017453 et la sécante environ 573."
+  ],
+  "a_voir": "Le numérateur 1 n'est pas 0 et le dénominateur vaut 0 : la courbe s'approche de la droite sans la toucher."
+ },
+ {
+  "code": "30-082",
+  "a_dire": "La sécante a le signe du cosinus, car son numérateur 1 est positif.",
+  "legende_titre": "Où tombent les trois résultats sur la droite",
+  "lecture": [
+   "Le point bleu est le cosinus de 120 degrés : −0,5, du côté négatif.",
+   "Le point vert est la sécante, 1 divisé par −0,5 : −2, du même côté négatif.",
+   "Le point rouge est −1 divisé par le cosinus : 2, de l'autre côté, donc le signe a changé."
+  ],
+  "a_voir": "Avec le numérateur 1, le cosinus et la sécante sont du même côté de 0 ; avec −1, ce n'est plus vrai."
+ },
+ {
+  "code": "30-083",
+  "a_dire": "Une courbe en morceaux séparés par des droites",
+  "legende_titre": "Les morceaux de la sécante en forme de U",
+  "lecture": [
+   "Les droites en pointillés sont les asymptotes, en −π/2, π/2 et 3π/2.",
+   "Le morceau bleu est ouvert vers le haut et son sommet est à la hauteur 1.",
+   "Le morceau violet est ouvert vers le bas et son sommet est à la hauteur −1."
+  ],
+  "a_voir": "Chaque morceau a la forme d'un U, et les morceaux alternent entre le haut et le bas."
+ },
+ {
+  "code": "30-084",
+  "a_dire": "La sécante ne peut pas valoir 0,5 ni aucune valeur entre −1 et 1.",
+  "legende_titre": "Deux droites : ce qui sort et ce qui est possible",
+  "lecture": [
+   "La droite du haut montre les valeurs de la sécante : le trait vert est atteint, le cadre rouge entre −1 et 1 ne l'est jamais.",
+   "La droite du bas montre les valeurs du cosinus : le cadre vert entre −1 et 1 est tout ce qu'il peut prendre.",
+   "La flèche rouge va de 0,5 à 2 : pour que la sécante vaille 0,5, il faudrait que le cosinus vaille 2, hors du cadre vert."
+  ],
+  "a_voir": "Le cosinus reste entre −1 et 1, donc 2 est impossible et 0,5 aussi pour la sécante."
+ },
+ {
+  "code": "30-085",
+  "a_dire": "Si |cos x| ≤ 1, alors |sec x| ≥ 1 : trois étapes",
+  "legende_titre": "Départ, passage à l'inverse, arrivée",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : |cos x| est au plus 1.",
+   "Le cadre orange du milieu est le passage à l'inverse : |sec x| = 1 / |cos x|.",
+   "Le cadre vert du bas est l'arrivée : |sec x| est au moins 1.",
+   "À droite, la ligne en pointillés marque 1 : la barre bleue (0,5) reste à gauche et la barre verte (2) dépasse."
+  ],
+  "a_voir": "Un nombre au plus égal à 1 a un inverse au moins égal à 1, comme 0,5 et 2 à 60 degrés."
+ },
+ {
+  "code": "30-086",
+  "a_dire": "La sécante revient à la même valeur après 2π",
+  "legende_titre": "Après un tour complet, on retrouve la valeur",
+  "lecture": [
+   "La courbe bleue est la sécante, avec deux droites en pointillés en π/2 et 3π/2.",
+   "Les deux points verts, en x = 0 et en x = 2π, sont à la même hauteur 1.",
+   "Le point rouge, en x = π, est à la hauteur −1 : un demi-tour ne ramène pas à 1.",
+   "L'accolade orange mesure 2π, la période."
+  ],
+  "a_voir": "Il faut un tour complet de 2π pour retrouver la même valeur de la sécante."
+ },
+ {
+  "code": "30-087",
+  "a_dire": "La cosécante grandit quand l'angle s'approche de 0",
+  "legende_titre": "Des droites verticales aux multiples de π",
+  "lecture": [
+   "La courbe grise est le sinus, qui vaut 0 en 0, en π et en 2π.",
+   "La courbe bleue est la cosécante : elle monte ou descend sans fin près de ces points.",
+   "Les droites en pointillés marquent ces points.",
+   "Les deux cadres orange donnent le cas : à 1 degré, environ 57,30 ; à 0,5 degré, environ 114,6."
+  ],
+  "a_voir": "Là où le sinus vaut 0, la cosécante n'a pas de valeur, et plus l'angle est petit, plus elle est grande."
+ },
+ {
+  "code": "30-088",
+  "a_dire": "Décaler la sécante pour obtenir la cosécante",
+  "legende_titre": "Le sommet de la sécante glisse de π/2",
+  "lecture": [
+   "La courbe grise est la sécante : son sommet est en 0, à la hauteur 1.",
+   "La courbe bleue est la cosécante : son sommet est en π/2, à la hauteur 1.",
+   "La flèche orange va du premier sommet au second : un décalage de π/2 vers la droite."
+  ],
+  "a_voir": "Décaler la sécante de π/2 vers la droite donne la cosécante : cosec x = sec(x − π/2)."
+ },
+ {
+  "code": "30-089",
+  "a_dire": "Où la cosécante a des asymptotes et où elle n'en a pas",
+  "legende_titre": "Des droites en kπ, pas en π/2",
+  "lecture": [
+   "Les droites en pointillés sont en 0, π et 2π : là, le sinus vaut 0.",
+   "La courbe bleue est la cosécante, séparée en morceaux par ces droites.",
+   "Le point vert est en π/2 : le sinus vaut 1 et la cosécante vaut 1, il n'y a pas de droite ici.",
+   "Le texte du bas rappelle qu'en π le sinus vaut 0 : pas de valeur."
+  ],
+  "a_voir": "Les asymptotes sont exactement aux nombres kπ, et pas en π/2."
+ },
+ {
+  "code": "30-090",
+  "a_dire": "L'inverse d'une fonction a une asymptote là où la fonction vaut 0",
+  "legende_titre": "Le zéro de f et l'asymptote de 1/f",
+  "lecture": [
+   "La courbe grise est f, ici le cosinus.",
+   "La courbe bleue est 1/f, ici la sécante.",
+   "Le point vert est le zéro de f, en π/2.",
+   "La droite en pointillés passe par ce point : c'est l'asymptote de 1/f."
+  ],
+  "a_voir": "La courbe de 1/f a une droite verticale à chaque point où f vaut 0."
+ },
+ {
+  "code": "30-091",
+  "a_dire": "Les périodes des six fonctions, côte à côte",
+  "legende_titre": "Deux longueurs seulement : 2π et π",
+  "lecture": [
+   "Chaque barre a la longueur de la période de la fonction écrite à gauche.",
+   "Les barres bleues sont longues : sin, cos, sec et cosec ont 2π.",
+   "Les barres orange sont courtes : tan et cot ont π.",
+   "Les deux lignes en pointillés marquent π et 2π."
+  ],
+  "a_voir": "Sur les six fonctions, quatre ont la période 2π et deux ont la période π."
+ },
+ {
+  "code": "30-092",
+  "a_dire": "Où sont les asymptotes verticales des six fonctions",
+  "legende_titre": "Des repères sur une même échelle de 0 à 2π",
+  "lecture": [
+   "Chaque ligne est l'axe d'une fonction, de 0 à 2π.",
+   "Pour sin et cos, rien n'est marqué : aucune asymptote.",
+   "Les traits bleus de tan et sec sont en π/2 et 3π/2.",
+   "Les traits violets de cot et cosec sont en 0, π et 2π."
+  ],
+  "a_voir": "Le tableau donne les positions des asymptotes, sans dire pourquoi elles sont là."
+ },
+ {
+  "code": "30-093",
+  "a_dire": "Un demi-tour ne change pas la tangente ni la cotangente",
+  "legende_titre": "Deux points opposés, mêmes valeurs",
+  "lecture": [
+   "Le point bleu P est à 30 degrés ; le point orange P' est à 210 degrés, de l'autre côté du centre.",
+   "La droite en pointillés relie P à P' en passant par le centre : un demi-tour.",
+   "Dans le cadre bleu, le cosinus et le sinus sont positifs ; dans le cadre orange, les deux sont négatifs.",
+   "Dans les deux cadres, la tangente vaut 0,577 et la cotangente 1,732."
+  ],
+  "a_voir": "Le demi-tour change le signe du sinus et du cosinus à la fois, donc le quotient reste le même : la période est π."
+ },
+ {
+  "code": "30-094",
+  "a_dire": "Quatre fonctions, deux dénominateurs",
+  "legende_titre": "Même dénominateur, mêmes asymptotes",
+  "lecture": [
+   "Dans les deux lignes du haut, tan et sec ont le même dénominateur, cos x, dans un cadre bleu.",
+   "Dans les deux lignes du bas, cot et cosec ont le même dénominateur, sin x, dans un cadre violet.",
+   "Les flèches mènent chaque dénominateur vers le moment où il vaut 0 : 90 degrés pour le cosinus, 0 degré pour le sinus."
+  ],
+  "a_voir": "Il suffit de regarder le dénominateur : le même dénominateur donne les mêmes asymptotes."
+ },
+ {
+  "code": "30-185",
+  "a_dire": "Les U de la cosécante touchent le sinus en deux points",
+  "legende_titre": "Où la cosécante rejoint le sinus",
+  "lecture": [
+   "La courbe bleue est le sinus et la courbe violette est la cosécante.",
+   "Les droites en pointillés sont les asymptotes, là où le sinus vaut 0.",
+   "Les deux points verts sont les seuls contacts : (π/2 ; 1) et (3π/2 ; −1)."
+  ],
+  "a_voir": "La cosécante touche le sinus seulement là où le sinus vaut 1 ou −1."
+ },
+ {
+  "code": "30-095",
+  "a_dire": "Les cinq actions de y = A sin(B(x − C)) + D",
+  "legende_titre": "Du nombre x au résultat y, pas à pas",
+  "lecture": [
+   "La formule est écrite en haut ; les cadres se lisent de haut en bas.",
+   "Le cadre bleu est le départ : x = π/2.",
+   "Chaque flèche orange est une action : retirer C, multiplier par B, prendre le sinus, multiplier par A, ajouter D.",
+   "Le cadre vert est l'arrivée : y = 3, avec A = 2, B = 2, C = π/4 et D = 1."
+  ],
+  "a_voir": "Pour obtenir y, on retire C, on multiplie par B, on prend le sinus, on multiplie par A et on ajoute D."
+ }
+]

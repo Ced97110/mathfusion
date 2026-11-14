@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 6, 84, 52, 'sujet', fill=False, dash=True)
+text(ax, 44, 63, r'$\mathrm{Hom}(M,\,N)$ : de ℤ² vers ℤ', 'sujet', 'm', weight='bold')
+box(ax, 8, 38, 72, 11, 'sujet', label=r'$\eta : (x\,;\,y) \mapsto x - 2y$', size='s')
+box(ax, 8, 22, 72, 11, 'autre', label=r'$\zeta : (x\,;\,y) \mapsto x$', size='s')
+text(ax, 44, 35.5, '+', 'varie', 'l')
+arrow(ax, (44, 21.5), (44, 17.5), 'varie', lw=1.2)
+box(ax, 8, 8, 72, 9.5, 'resultat', label=r'$\eta+\zeta : (x\,;\,y) \mapsto 2x - 2y$', size='s')
+save(fig, '57-173')

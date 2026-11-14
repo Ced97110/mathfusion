@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+text(ax,44,54,'Que peut faire une division ?','encre','s')
+box(ax,4,36,80,12,'resultat',label='',size='s')
+text(ax,8,44,"s'arrête",'resultat','s',ha='left'); text(ax,8,39.5,r'$3 \div 4 = 0{,}75$','resultat','s',ha='left')
+box(ax,4,20,80,12,'sujet',label='')
+text(ax,8,28,'boucle','sujet','s',ha='left'); text(ax,8,23.5,r'$1 \div 7 = 0{,}142857\ldots$','sujet','s',ha='left')
+box(ax,4,4,80,12,'limite',fill=False,dash=True)
+text(ax,44,10,"ni l'un ni l'autre ?",'limite','m')
+save(fig,'08-078')

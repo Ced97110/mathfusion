@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role="fixe", label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$x$ · $x$ = 9', 'sujet', 'l')
+box(ax, 2, 38, 40, 12, 'resultat', '(−3) × (−3) = 9', 'm'); box(ax, 46, 38, 40, 12, 'resultat', '3 × 3 = 9', 'm')
+f = numberline(ax, 12, 70, 12, -4, 4, 1, arrow_right=False)
+disc(ax, f(-3), 12, 1.8, 'resultat'); disc(ax, f(3), 12, 1.8, 'resultat')
+arrow(ax, (22, 37), (f(-3), 16), 'resultat'); arrow(ax, (66, 37), (f(3), 16), 'resultat')
+text(ax, 41, 27, 'deux solutions', 'resultat', 's')
+save(fig, '16-143')

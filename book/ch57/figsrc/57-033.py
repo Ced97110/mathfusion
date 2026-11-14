@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+ox, oy, u = 26, 6, 9.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+arrow(ax, P(-2.6, 0), P(5.2, 0), 'fixe', lw=0.5)
+arrow(ax, P(0, -0.4), P(0, 6.9), 'fixe', lw=0.5)
+# doubles (orange) and double of the diagonal (vert), dashed sides
+line(ax, [P(4, 2), P(2, 6)], 'fixe', dash=True, lw=0.6)
+line(ax, [P(-2, 4), P(2, 6)], 'fixe', dash=True, lw=0.6)
+arrow(ax, P(0, 0), P(4, 2), 'varie', lw=1.2)
+arrow(ax, P(0, 0), P(-2, 4), 'varie', lw=1.2)
+arrow(ax, P(0, 0), P(2, 6), 'resultat', lw=1.2)
+# originals on top
+line(ax, [P(2, 1), P(1, 3)], 'fixe', dash=True, lw=0.5)
+line(ax, [P(-1, 2), P(1, 3)], 'fixe', dash=True, lw=0.5)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.2)
+arrow(ax, P(0, 0), P(-1, 2), 'autre', lw=1.2)
+text(ax, P(2, 1)[0] + 1, P(2, 1)[1] - 2.8, r'$v$', 'sujet', 'm')
+text(ax, P(-1, 2)[0] - 3.2, P(-1, 2)[1] - 1.5, r'$w$', 'autre', 'm')
+text(ax, P(4, 2)[0] + 4.5, P(4, 2)[1], r'$2v$', 'varie', 'm')
+text(ax, P(-2, 4)[0] - 4, P(-2, 4)[1] + 1.5, r'$2w$', 'varie', 'm')
+text(ax, P(2, 6)[0] + 8, P(2, 6)[1] + 0.5, r'$2(v+w)$', 'resultat', 'm')
+text(ax, 74, 42, 'arrive en 2 ; 6', 'resultat', 's')
+text(ax, 74, 37, 'par les deux voies', 'resultat', 's')
+save(fig, '57-033')

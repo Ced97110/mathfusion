@@ -1,0 +1,178 @@
+[
+ {
+  "code": "77-097",
+  "a_dire": "La trace de la matrice de 1 vaut n, la dimension : 2 pour les complexes, 4 pour les quaternions.",
+  "legende_titre": "Autant de 1 que de colonnes",
+  "lecture": [
+   "Les deux grilles sont les matrices de 1 : 2 sur 2 à gauche, 4 sur 4 à droite.",
+   "Les cases bleues sont les 1 de la diagonale ; les cases grises sont des 0.",
+   "Le nombre de cases bleues est la trace : 2, puis 4."
+  ],
+  "a_voir": "Il y a autant de 1 sur la diagonale que de colonnes."
+ },
+ {
+  "code": "77-098",
+  "a_dire": "Pour a = 0, la matrice est nulle, la trace et la norme valent 0, et le polynôme minimal est λ.",
+  "legende_titre": "Le cas de l'élément 0",
+  "lecture": [
+   "La case bleue est l'élément a égal à 0.",
+   "La grille grise est sa matrice : quatre 0.",
+   "Les trois cases vertes donnent la trace, la norme et le polynôme minimal de 0."
+  ],
+  "a_voir": "Une matrice nulle donne trace 0 et norme 0."
+ },
+ {
+  "code": "77-099",
+  "a_dire": "Dans un corps seul 0 a une norme nulle ; dans l'algèbre de base (1, ε), ε n'est pas nul et sa norme est 0.",
+  "legende_titre": "Où se trouve la norme 0 ?",
+  "lecture": [
+   "La droite grise porte les valeurs de la norme, de 0 à 5.",
+   "En haut, dans un corps : le point vert 0 est au niveau 0, le point bleu 2 + i est au niveau 5.",
+   "En bas, en rouge : ε, qui n'est pas nul, est aussi au niveau 0."
+  ],
+  "a_voir": "Dans l'algèbre (1, ε), un élément non nul tombe sur la norme 0."
+ },
+ {
+  "code": "77-100",
+  "a_dire": "Dans l'algèbre de base (1, ε), ε fois ε vaut 0 alors que ε n'est pas nul.",
+  "legende_titre": "Un carré nul sans élément nul",
+  "lecture": [
+   "Le tableau gris donne les produits des éléments de la base 1 et ε.",
+   "La case orange montre ε fois ε égal à 0.",
+   "La ligne du bas montre que 2ε fois 3ε vaut 0."
+  ],
+  "a_voir": "Deux éléments non nuls peuvent avoir un produit nul."
+ },
+ {
+  "code": "77-101",
+  "a_dire": "La matrice de ε a pour lignes 0, 0 et 1, 0, et la norme de ε vaut 0 alors que ε n'est pas nul.",
+  "legende_titre": "La matrice d'un élément non nul de norme 0",
+  "lecture": [
+   "La première colonne bleue vient de ε fois 1, qui vaut ε : coordonnées 0 et 1.",
+   "La seconde colonne violette vient de ε fois ε, qui vaut 0 : coordonnées 0 et 0.",
+   "Le texte rouge dit que ε n'est pas nul et que sa norme est 0."
+  ],
+  "a_voir": "La colonne de zéros donne un déterminant nul."
+ },
+ {
+  "code": "77-102",
+  "a_dire": "La norme est nulle exactement quand il n'y a pas d'inverse : ε n'en a pas, 1 + ε en a un.",
+  "legende_titre": "Norme nulle, pas d'inverse",
+  "lecture": [
+   "À gauche, en rouge : la matrice de ε, norme 0, pas d'inverse.",
+   "À droite, en vert : la matrice de 1 + ε, norme 1, inverse 1 − ε.",
+   "Les flèches relient chaque matrice à la conclusion."
+  ],
+  "a_voir": "La valeur de la norme dit si l'inverse existe."
+ },
+ {
+  "code": "77-103",
+  "a_dire": "Dans la tour K, E, L, les degrés se multiplient : 4 égale 2 fois 2.",
+  "legende_titre": "Les degrés d'une tour se multiplient",
+  "lecture": [
+   "Les trois cases bleues sont les trois corps, K en bas, L en haut.",
+   "Chaque flèche orange porte le degré d'un étage : 2 et 2.",
+   "La grande flèche verte à droite va de K à L : degré 4, soit 2 fois 2."
+  ],
+  "a_voir": "Le degré total est le produit des degrés des étages."
+ },
+ {
+  "code": "77-104",
+  "a_dire": "Un même élément u de L a deux normes : une dans E avec une matrice 2 sur 2, une dans K avec une matrice 4 sur 4.",
+  "legende_titre": "Deux normes pour un même u",
+  "lecture": [
+   "La case grise du haut est l'élément u de L.",
+   "À gauche, en bleu : la norme avec coefficients dans E, tableau 2 sur 2, résultat 2√2 dans E.",
+   "À droite, en violet : la norme avec coefficients dans K, tableau 4 sur 4, résultat −8 dans K."
+  ],
+  "a_voir": "Le corps des coefficients change la taille du tableau et le résultat."
+ },
+ {
+  "code": "77-105",
+  "a_dire": "La trace sur K se calcule en deux étages et donne le même résultat : 2 plus 2 égale 4.",
+  "legende_titre": "La trace faite de deux blocs",
+  "lecture": [
+   "La grille est la matrice 4 sur 4, découpée en quatre blocs 2 sur 2.",
+   "Les deux blocs bleus de la diagonale ont chacun une trace de 2.",
+   "Le résultat vert : 2 plus 2 égale 4, la trace sur K."
+  ],
+  "a_voir": "La trace de la grande matrice est la somme des traces des blocs de la diagonale."
+ },
+ {
+  "code": "77-106",
+  "a_dire": "La norme sur K de u est égale à la norme sur K de la norme de u sur E : les deux valent −8.",
+  "legende_titre": "Une norme dans une norme",
+  "lecture": [
+   "La case violette à gauche est la norme directe de L sur K : −8.",
+   "La grande case bleue à droite est la norme de E sur K.",
+   "La case orange à l'intérieur est la norme de L sur E, égale à 2√2 : elle entre dans la norme de E sur K."
+  ],
+  "a_voir": "Les deux côtés du signe égal valent −8."
+ },
+ {
+  "code": "77-107",
+  "a_dire": "On peut calculer la norme en une fois ou étage par étage et obtenir le même nombre, −8.",
+  "legende_titre": "Deux chemins, un seul résultat",
+  "lecture": [
+   "En haut, en violet : un seul calcul avec un tableau 4 sur 4.",
+   "En bas, en bleu : deux calculs avec des tableaux 2 sur 2.",
+   "Les deux chemins arrivent à la même case verte : −8."
+  ],
+  "a_voir": "Les deux chemins finissent au même nombre, et le chemin du bas utilise de plus petits tableaux."
+ },
+ {
+  "code": "77-108",
+  "a_dire": "La tour ℚ, ℚ(√2), ℚ(√2, √3) et l'élément u qui descend à 2√2 puis à −8.",
+  "legende_titre": "La tour et la descente de u",
+  "lecture": [
+   "À gauche, les trois cases bleues sont la tour, chaque étage de degré 2.",
+   "À droite, u est en haut ; la flèche orange l'envoie sur 2√2, la flèche verte sur −8.",
+   "La flèche rouge va de u à −8 d'un seul coup."
+  ],
+  "a_voir": "Les deux chemins, par étages et direct, arrivent à −8."
+ },
+ {
+  "code": "77-109",
+  "a_dire": "Sur E, l'élément u s'écrit p fois 1 plus 1 fois √3, avec p égal à 1 plus √2.",
+  "legende_titre": "Les coefficients de u sur E",
+  "lecture": [
+   "Les cases grises sont les éléments de la base : 1 et √3.",
+   "Les cases bleues sont les coefficients : p, puis 1.",
+   "Le coefficient p est un nombre de E, égal à 1 plus √2."
+  ],
+  "a_voir": "u s'écrit avec deux coefficients pris dans E."
+ },
+ {
+  "code": "77-110",
+  "a_dire": "La matrice de u sur E a pour colonnes (p, 1) et (3, p), cases dans E.",
+  "legende_titre": "Les deux colonnes de la matrice",
+  "lecture": [
+   "La colonne bleue vient de u fois 1 : coordonnées p et 1.",
+   "La colonne violette vient de u fois √3 : coordonnées 3 et p.",
+   "Les nombres à gauche rappellent la base : 1, puis √3."
+  ],
+  "a_voir": "Chaque colonne donne le résultat de u multiplié par un élément de la base."
+ },
+ {
+  "code": "77-111",
+  "a_dire": "Sur L/E, la norme est p² − 3 = 2√2 et la trace est 2p = 2 + 2√2.",
+  "legende_titre": "Norme et trace lues dans la matrice",
+  "lecture": [
+   "La matrice a pour diagonale p et p en bleu, et 3 et 1 en gris.",
+   "La première case orange donne la norme p² − 3, qui vaut 2√2.",
+   "La seconde case orange donne la trace p + p, qui vaut 2 + 2√2."
+  ],
+  "a_voir": "La norme et la trace sont des nombres de E, non des rationnels."
+ },
+ {
+  "code": "77-112",
+  "a_dire": "Sur K, la norme de 2√2 vaut −8 et la trace de 2 + 2√2 vaut 4.",
+  "legende_titre": "Les deux calculs de l'étage du bas",
+  "lecture": [
+   "Première ligne : on part de 2√2 (a égal 0, b égal 2) et on calcule a² − 2b², soit −8.",
+   "Seconde ligne : on part de 2 + 2√2 (a égal 2) et on calcule 2a, soit 4.",
+   "Les cases vertes sont les deux nombres rationnels obtenus."
+  ],
+  "a_voir": "Les résultats −8 et 4 sont des nombres rationnels."
+ }
+]

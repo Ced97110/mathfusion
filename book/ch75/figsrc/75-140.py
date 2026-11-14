@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 42, 22, 12, 'sujet', label=r'$x^2-y^2$'); box(ax, 36, 42, 16, 12, 'sujet', label=r'$uv$')
+arrow(ax, (27, 48), (35, 48), 'varie', both=True); text(ax, 31, 58, 'équivalentes', 'varie', 's')
+arrow(ax, (53, 48), (62, 48), 'resultat'); box(ax, 63, 42, 22, 12, 'resultat', label='4 éléments', size='s')
+text(ax, 74, 38, 'un groupe', 'resultat', 's')
+text(ax, 31, 31, r'pas équivalente à $uv$', 'limite', 's')
+box(ax, 4, 8, 22, 12, 'autre', label=r'$x^2+y^2$')
+arrow(ax, (27, 14), (62, 14), 'autre'); box(ax, 63, 8, 22, 12, 'autre', label='8 éléments', size='s')
+text(ax, 74, 4, 'un autre groupe', 'autre', 's')
+save(fig, '75-140')

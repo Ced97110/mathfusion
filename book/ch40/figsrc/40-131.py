@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import numpy as np
+fig, ax = canvas(82)
+cx, cy, u = 44, 50, 30
+pos = lambda t: (cx + u * math.cos(t / 2) * math.cos(t), cy + u * math.cos(t / 2) * math.sin(t))
+t1 = np.linspace(0, 2 * math.pi, 400)
+t2 = np.linspace(2 * math.pi, 4 * math.pi, 400)
+arrow(ax, (cx - 34, cy), (cx + 38, cy), 'fixe', lw=0.5)
+line(ax, [pos(t) for t in t1], 'sujet', lw=1.5)
+line(ax, [pos(t) for t in t2], 'varie', lw=1.5, dash=True)
+disc(ax, cx + u, cy, 1.4, 'resultat')
+disc(ax, cx - u, cy, 1.4, 'sujet')
+text(ax, 77, cy + 6, 'départ\nθ = 0', 'resultat', 's', ha='left')
+text(ax, 12, cy + 6, 'θ = 2π\nr = −1', 'sujet', 's', ha='right')
+text(ax, 77, cy - 6, 'retour\nθ = 4π', 'resultat', 's', ha='left')
+text(ax, 44, 78, r'$r=\cos(\theta/2)$ : deux tours', 'sujet', 'm')
+text(ax, 44, 19, 'un tour (trait plein)', 'sujet', 's')
+text(ax, 44, 14, 'deuxième tour (pointillés)', 'varie', 's')
+text(ax, 44, 7, r'$\cos(5\theta/2)$ : $-1$ à $2\pi$, $1$ à $4\pi$', 'encre', 's')
+save(fig, '40-131')

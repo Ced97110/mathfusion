@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 40, 16, 10, 'sujet', label=r'$\alpha$')
+box(ax, 25, 40, 16, 10, 'sujet', label=r'$\alpha^2$')
+box(ax, 46, 40, 24, 10, 'sujet', label=r'$\alpha^2+\alpha$')
+text(ax, 22.5, 45, '+', 'encre', 'l')
+text(ax, 43.5, 45, '+', 'encre', 'l')
+brace(ax, 4, 70, 51, 'resultat', label='3 conjugués de $\\alpha$ : distincts', down=False)
+arrow(ax, (37, 39.5), (37, 32), 'limite')
+box(ax, 4, 21, 80, 10, 'limite', label=r'$\alpha+\alpha^2+(\alpha^2+\alpha)=0$')
+arrow(ax, (44, 20.5), (44, 15), 'limite')
+box(ax, 14, 4, 60, 10, 'limite', label='liés : pas une base')
+save(fig, '67-129')

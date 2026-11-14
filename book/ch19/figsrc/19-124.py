@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def plane(ax, ox, oy, ux, uy, x0, x1, y0, y1):
+    arrow(ax, (ox + x0 * ux, oy), (ox + x1 * ux + 3, oy), "fixe", lw=0.8)
+    arrow(ax, (ox, oy + y0 * uy), (ox, oy + y1 * uy + 3), "fixe", lw=0.8)
+    return lambda x, y: (ox + x * ux, oy + y * uy)
+fig, ax = canvas(72); P = plane(ax, 34, 20, 8, 8, -3, 4, -2.5, 5.5)
+ax.add_patch(Polygon([P(-1.75, -2.5), P(2.25, 5.5), P(3, 5.5), P(3, -2.5)], closed=True, fc=FILL['resultat'], ec='none', zorder=1))
+ax.add_patch(Polygon([P(-3, -2.5), P(-1.75, -2.5), P(2.25, 5.5), P(-3, 5.5)], closed=True, fc=FILL['limite'], ec='none', zorder=1))
+line(ax, [P(-1.75, -2.5), P(2.25, 5.5)], 'sujet', lw=1.8, dash=True)
+disc(ax, *P(0, 0), 1.4, 'resultat'); disc(ax, *P(0, 3), 1.4, 'limite')
+text(ax, P(0, 0)[0] + 2.5, P(0, 0)[1] - 1.5, '(0, 0) : oui', 'resultat', 's', ha='left', weight='bold')
+text(ax, P(0, 3)[0] - 2.5, P(0, 3)[1] + 1.5, '(0, 3) : non', 'limite', 's', ha='right', weight='bold')
+text(ax, P(2.2, 1.0)[0], P(2.2, 1.0)[1], r'$y<2x+1$', 'resultat', 's')
+text(ax, P(-1.9, 4.2)[0], P(-1.9, 4.2)[1], r'$y=2x+1$', 'sujet', 's', weight='bold')
+text(ax, *P(-2.2, 1.6), r'$y>2x+1$', 'limite', 's')
+text(ax, *P(0.3, -2.0), 'pointillés : droite exclue', 'sujet', 's', ha='left')
+save(fig, '19-124')

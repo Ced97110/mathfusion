@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+disc(ax, 30, 72, 4, 'sujet', label='7', size='m'); disc(ax, 58, 72, 4, 'sujet', label='7', size='m')
+text(ax, 44, 72, r'$=\,?$', 'fixe', 'l')
+text(ax, 44, 64, 'même nombre', 'fixe', 's')
+arrow(ax, (44, 60), (44, 52), 'varie'); text(ax, 62, 56, 'différence', 'varie', 's')
+disc(ax, 44, 46, 5, 'fixe', label='0', size='l')
+arrow(ax, (40, 41), (24, 30), 'fixe'); arrow(ax, (48, 41), (64, 30), 'fixe')
+box(ax, 4, 6, 40, 24, 'limite', label='impairs : 0 absent\n7 n’est pas\néquivalent à 7', size='s')
+box(ax, 44, 6, 40, 24, 'resultat', label='multiples de 4 :\n0 présent\n7 est équivalent à 7', size='s')
+save(fig, '52-029')

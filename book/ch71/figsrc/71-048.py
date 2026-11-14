@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+arrow(ax, (3, 8), (42, 8), 'fixe'); arrow(ax, (8, 3), (8, 46), 'fixe')
+arrow(ax, (8, 8), (29, 15), 'sujet', lw=1.4); arrow(ax, (8, 8), (15, 22), 'autre', lw=1.4)
+text(ax, 35, 19, '(3 ; 1)', 'sujet', 's'); text(ax, 15, 27, '(1 ; 2)', 'autre', 's')
+box(ax, 46, 38, 40, 10, 'varie', label=r'horizontal : $3\times 1 = 3$', size='s')
+box(ax, 46, 24, 40, 10, 'varie', label=r'vertical : $1\times 2 = 2$', size='s')
+box(ax, 46, 6, 40, 10, 'resultat', label=r'somme : $3 + 2 = 5$', size='s')
+arrow(ax, (66, 23), (66, 17), 'fixe')
+save(fig, '71-048')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 2, 66, 40, 10, 'resultat', label=r'$M$ abélien', size='m')
+box(ax, 46, 66, 40, 10, 'limite', label=r'$M$ non abélien', size='m')
+box(ax, 2, 44, 40, 14, 'fixe', label=r'$a+b=b+a$', size='s')
+box(ax, 46, 44, 40, 14, 'fixe', label='x puis y : C A B\ny puis x : B C A', size='s')
+box(ax, 2, 26, 40, 10, 'resultat', label=r'$\eta+\zeta$ : un endomorphisme', size='s')
+box(ax, 46, 26, 40, 10, 'limite', label=r'$\eta+\zeta$ : plus un endo', size='s')
+box(ax, 2, 8, 40, 10, 'resultat', label=r'$\mathrm{End}\ M$ : un anneau', size='s')
+box(ax, 46, 8, 40, 10, 'limite', label=r'$\mathrm{End}\ M$ : pas un anneau', size='s')
+for x in (22, 66):
+    arrow(ax, (x, 65.5), (x, 58.5), 'fixe')
+    arrow(ax, (x, 43.5), (x, 36.5), 'fixe')
+    arrow(ax, (x, 25.5), (x, 18.5), 'fixe')
+save(fig, '57-048')

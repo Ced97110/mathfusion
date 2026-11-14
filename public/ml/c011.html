@@ -1,0 +1,317 @@
+<div class="pk">Chapitre 11</div>
+<h1>La fonction réciproque</h1>
+<p class="h1en">The inverse function</p>
+<p><b>Sources</b> — Vol. 2, §3.1.2.1 « Boomerang Bonanza : The Inverse Function’s Return Trip » (p. 58–60.</p>
+<h2>1. Le problème concret</h2>
+<p class="h2en">1. The concrete problem</p>
+<p>Dans une ruche, une seule abeille pond : la reine. Elle ne pond pas toujours au même rythme. Elle adapte sa ponte à l’occupation de la ruche. Quand la ruche est presque vide, beaucoup de jeunes abeilles naissent, et l’espace occupé grandit vite. Quand la ruche approche de sa capacité, les naissances ralentissent, et l’espace occupé grandit lentement. La figure 11.1 montre quatre instants de ce remplissage.</p>
+<p class="en">In a hive only one bee lays eggs: the queen. She does not always lay at the same pace. She adapts her laying to how full the hive is. When the hive is almost empty, many young bees are born, and the occupied space grows fast. When the hive approaches its capacity, births slow down, and the occupied space grows slowly. Figure 11.1 shows four instants of this filling.</p>
+<img class="vf" src="/ml/img/c011/p0456_1.svg" alt="La ruche se remplit de moins en moins vite" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0456_2.svg" alt="4 m³ 3 m³ 2 m³ 0 m³ temps 0 temps 4 temps 9 temps 16 « Je mesure 3 m³ : depuis quand se remplit-elle ? »" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.1 :</b> La même ruche à quatre instants. Au temps 0</p>
+<img class="vm" src="/ml/img/c011/p0456_3.svg" alt="elle est vide ; au temps 4 elle contient 2 m3 2 cubes de 1 m de côté) ; au temps 9, 3 m3 ; au temps 16, 4 m3. Regarde les gains : 2 m3 pendant les 4 premières unités de temps, puis seulement 1 m3 pendant les 5 suivantes, puis 1 m3 pendant les 7 dernières. La question de" style="--w:24.31" loading="lazy">
+<p>l’apiculteur part d’un volume et cherche un temps.</p>
+<p class="en">The same hive at four instants. At time 0 it is empty; at</p>
+<img class="vm" src="/ml/img/c011/p0456_4.svg" alt="time 4 it holds 2 m3 2 cubes with 1 m sides); at time 9, 3 m3; at time 16, 4 m3. Look at the gains: 2 m3 during the first 4 time units, then only 1 m3 during the next 5, then 1 m3 during the last 7. The beekeeper’s question starts" style="--w:24.31" loading="lazy">
+<p class="en">from a volume and looks for a time.</p>
+<p>Un apiculteur veut décrire le volume occupé au fil du temps. Il lui faut une fonction (chapitre 10) qui monte toujours, mais de moins en moins vite. Le</p>
+<img class="vm" src="/ml/img/c011/p0456_5.svg" alt="volume se compte en m3, « mètres cubes » : le petit" style="--w:24.31" loading="lazy">
+<p>3 compte trois longueurs multipliées, <span class="m">1</span> m <span class="m">× 1</span> m <span class="m">× 1</span> m, comme <span class="m">3</span><sup class="m">2</sup> <span class="m">= 3 × 3</span> au chapitre 1. Une droite ne va pas : elle monte toujours au même rythme. La fonction <span class="m">𝑥</span><sup class="m">2</sup> ne va pas non plus : elle monte de plus en plus vite. Regarde les nombres de la figure : <span class="m">0 → 0</span>, <span class="m">4 → 2</span>, <span class="m">9 → 3</span>, <span class="m">16 → 4</span>. Chaque volume est le nombre qui, multiplié par lui-même,</p>
+<img class="vm" src="/ml/img/c011/p0457_6.svg" alt="donne le temps : 2 × 2 = 4, 3 × 3 = 9, 4 × 4 = 16. Le √ bon candidat est donc la racine carrée, 𝑓(𝑥) = 𝑥. A beekeeper wants to describe the occupied" style="--w:24.31" loading="lazy">
+<p class="en">volume over time. He needs a function (chapter 10) that always goes up, but more and</p>
+<img class="vm" src="/ml/img/c011/p0457_7.svg" alt="more slowly. Volume is counted in m3, “cubic" style="--w:24.31" loading="lazy">
+<p class="en">meters”: the small 3 counts three lengths multiplied, <span class="m">1</span> m <span class="m">× 1</span> m <span class="m">× 1</span> m, as <span class="m">3</span><sup class="m">2</sup> <span class="m">= 3 × 3</span> in chapter 1. A line will not do: it always goes up at the same pace. The function <span class="m">𝑥</span><sup class="m">2</sup> will not do either: it goes up faster and faster. Look at the numbers of the figure: <span class="m">0 → 0</span>, <span class="m">4 → 2</span>, <span class="m">9 → 3</span>, <span class="m">16 → 4</span>. Each volume is the number which, multiplied by itself,</p>
+<img class="vm" src="/ml/img/c011/p0457_8.svg" alt="gives the time: 2 × 2 = 4, 3 × 3 = 9, 4 × 4 = 16. So √ the right candidate is the square root, 𝑓(𝑥) = 𝑥." style="--w:24.31" loading="lazy">
+<p>Mais d’où vient cette racine carrée ? Et l’apiculteur a souvent la question inverse. Il ne connaît pas l’instant ; il mesure le volume. « La ruche occupe</p>
+<img class="vm" src="/ml/img/c011/p0457_9.svg" alt="3 m3. Depuis combien de temps se remplit-elle ? »" style="--w:24.31" loading="lazy">
+<p>Sur la figure, la réponse se lit : 9. Il veut une règle qui part de la sortie, 3, et retrouve l’entrée, 9. Les deux questions ont la même réponse : une fonction qui <i>défait</i> une autre fonction.</p>
+<p class="en">But where does this square root come from? And the beekeeper often has the reverse question. He does not know the instant; he measures the</p>
+<img class="vm" src="/ml/img/c011/p0458_10.svg" alt="volume. “The hive occupies 3 m3. How long has it" style="--w:24.31" loading="lazy">
+<p class="en">been filling?” In the figure, the answer can be read: 9. He wants a rule that starts from the output, 3, and recovers the input, 9. Both questions have the same answer: a function that <i>undoes</i> another function.</p>
+<h2>2. La figure</h2>
+<p class="h2en">2. The figure</p>
+<p>Pars de l’égalité <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup>. Elle dit : « je prends <span class="m">𝑥</span> et je le multiplie par lui-même ». Pose maintenant la question à l’envers : « je connais <span class="m">𝑦</span> ; quel nombre <span class="m">𝑥</span>,</p>
+<img class="vm" src="/ml/img/c011/p0458_11.svg" alt="multiplié par lui-même, donne 𝑦 ? » Ce nombre √ √ s’écrit 𝑦. Par exemple, 4 = 2, car 2 × 2 = 4. La" style="--w:24.31" loading="lazy">
+<p>racine carrée n’est donc pas une opération nouvelle. C’est la mise au carré parcourue en sens inverse.</p>
+<p class="en">Start from the equality <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup>. It says: “I take <span class="m">𝑥</span> and multiply it by itself”. Now ask the question the other way round: “I know <span class="m">𝑦</span>; which number <span class="m">𝑥</span>,</p>
+<img class="vm" src="/ml/img/c011/p0458_12.svg" alt="multiplied by itself, gives 𝑦?” This number is √ √ written 𝑦. For example, 4 = 2, because" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">2 × 2 = 4</span>. So the square root is not a new operation. It is squaring traveled backwards.</p>
+<p>Dessine les deux fonctions sur le même repère, avec la droite <span class="m">𝑦 = 𝑥</span>.</p>
+<p class="en">Draw both functions on the same axes, with the line <span class="m">𝑦 = 𝑥</span>.</p>
+<img class="vf" src="/ml/img/c011/p0459_13.svg" alt="f(x) = √x f−1(x) = x2, x ≥ 0 miroir y = x y f−1 : de y vers x 5 A&#x27; = (2, 4) : 2² = 4 4 3 M = (3, 3) 2 A = (4, 2) : √4 = 2 f : de x vers y 1 x 1 2 3 4 5" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.2 :</b> La racine carrée <span class="m">𝑓</span> (bleu) et la mise au carré <span class="m">𝑓</span> <sup class="m">−1</sup> (rouge, seulement pour <span class="m">𝑥 ≥ 0</span>). Le point <span class="m">𝐴 = (4, 2)</span> de la courbe bleue et le point <span class="m">𝐴</span><sup class="m">′</sup> <span class="m">= (2, 4)</span> de la courbe rouge ont leurs deux nombres échangés. Le segment pointillé qui les relie coupe la droite orange <span class="m">𝑦 = 𝑥</span> en son milieu <span class="m">𝑀 = (3, 3)</span>, à angle droit. Chaque courbe est le reflet de l’autre dans cette droite.</p>
+<p class="cap en">The square root <span class="m">𝑓</span> (blue) and squaring <span class="m">𝑓</span><sup class="m">−1</sup> (red, only for <span class="m">𝑥 ≥ 0</span>). The point <span class="m">𝐴 = (4, 2)</span> on the blue curve and the point <span class="m">𝐴</span><sup class="m">′</sup> <span class="m">= (2, 4)</span> on the red curve have their two numbers swapped. The dotted segment joining them cuts the orange line <span class="m">𝑦 = 𝑥</span> at its midpoint <span class="m">𝑀 = (3, 3)</span>, at a right angle. Each curve is the mirror image of the other in that line.</p>
+<img class="vm" src="/ml/img/c011/p0459_14.svg" alt="Regarde le point 𝐴 = (4, 2). Il est sur la courbe √ bleue parce que 4 = 2. Regarde le point" style="--w:24.31" loading="lazy">
+<p><span class="m">𝐴</span><sup class="m">′</sup> <span class="m">= (2, 4)</span>. Il est sur la courbe rouge parce que <span class="m">2</span><sup class="m">2</sup> <span class="m">= 4</span>. C’est la même information, « 2 et 4 vont ensemble », lue dans les deux sens. Sur le dessin, échanger les deux nombres d’un point revient à le refléter dans la droite <span class="m">𝑦 = 𝑥</span>. Le reste de la courbe suit la même règle, point par point.</p>
+<img class="vm" src="/ml/img/c011/p0460_15.svg" alt="Look at the point 𝐴 = (4, 2). It is on the blue curve √ because 4 = 2. Look at the point 𝐴′ = (2, 4). It is" style="--w:24.31" loading="lazy">
+<p class="en">on the red curve because <span class="m">2</span><sup class="m">2</sup> <span class="m">= 4</span>. It is the same piece of information, “2 and 4 go together”, read in both directions. In the drawing, swapping the two numbers of a point amounts to reflecting it in the line <span class="m">𝑦 = 𝑥</span>. The rest of the curve follows the same rule, point by point.</p>
+<h2>3. La définition, symbole par symbole</h2>
+<p class="h2en">3. The definition, symbol by symbol</p>
+<img class="vm" src="/ml/img/c011/p0460_16.svg" alt="Les mots de ce chapitre — The words of this chapter" style="--w:24.31" loading="lazy">
+<p><b>racine carrée</b> : le nombre positif qui, multiplié</p>
+<img class="vm" src="/ml/img/c011/p0460_17.svg" alt="par lui-même, donne le nombre de départ ; √ 9 = 3 car 3 × 3 = 9. square root: the positive number which, multiplied √ by itself, gives the starting number; 9 = 3 because" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">3 × 3 = 9</span>.</p>
+<p><b>réciproque</b> : la fonction qui fait le chemin inverse d’une autre : elle reçoit la sortie et rend l’entrée ; la réciproque de « mettre au carré » est « prendre la racine carrée ».</p>
+<p class="en">inverse: the function that travels the reverse way of another: it receives the output and gives back the input; the inverse of “square” is “take the square root”.</p>
+<img class="vm" src="/ml/img/c011/p0461_18.svg" alt="image : la sortie d’une entrée (chapitre 10) ; √ l’image de 9 par 𝑥 est 3." style="--w:24.31" loading="lazy">
+<p class="en">image: the output of an input (chapter 10); the image</p>
+<img class="vm" src="/ml/img/c011/p0461_19.svg" alt="√ of 9 under 𝑥 is 3. ensemble des images : toutes les sorties √ qu’une fonction produit vraiment ; pour 𝑥, tous" style="--w:24.31" loading="lazy">
+<p class="en">les nombres positifs ou nuls.</p>
+<img class="vm" src="/ml/img/c011/p0461_20.svg" alt="set of images: all the outputs a function really √ produces; for 𝑥, all non-negative numbers." style="--w:24.31" loading="lazy">
+<p class="en"><b>injective</b> : se dit d’une fonction où deux entrées</p>
+<img class="vm" src="/ml/img/c011/p0461_21.svg" alt="différentes ont toujours deux sorties différentes ; √ 𝑥 l’est, 𝑥2 sur tous les réels ne l’est pas car 2" style="--w:24.31" loading="lazy">
+<p class="en">et <span class="m">−2</span> donnent 4. injective (one-to-one): said of a function where two different inputs always have two different outputs;</p>
+<img class="vm" src="/ml/img/c011/p0461_22.svg" alt="√ 𝑥 is, 𝑥2 on all real numbers is not because 2 and −2" style="--w:24.31" loading="lazy">
+<p class="en">both give 4.</p>
+<img class="vm" src="/ml/img/c011/p0461_23.svg" alt="isoler : réécrire une égalité pour qu’une lettre √ soit seule d’un côté ; dans 𝑦 = 𝑥, isoler 𝑥" style="--w:24.31" loading="lazy">
+<p class="en">donne <span class="m">𝑥 = 𝑦</span><sup class="m">2</sup>. isolate: rewrite an equality so that one letter stands</p>
+<img class="vm" src="/ml/img/c011/p0461_24.svg" alt="√ alone on one side; in 𝑦 = 𝑥, isolating 𝑥 gives" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">𝑥 = 𝑦</span><sup class="m">2</sup>.</p>
+<p><b>reflet</b> : l’image d’un dessin dans un miroir placé le long d’une droite ; le reflet du point <span class="m">(4, 2)</span> dans la droite <span class="m">𝑦 = 𝑥</span> est <span class="m">(2, 4)</span>.</p>
+<p class="en">reflection: the image of a drawing in a mirror placed along a line; the reflection of the point <span class="m">(4, 2)</span> in the line <span class="m">𝑦 = 𝑥</span> is <span class="m">(2, 4)</span>.</p>
+<p><b>pente</b> : le rapport « montée sur course » d’une droite (chapitre 2) ; une droite qui monte de 2 pour une course de 1 a une pente 2.</p>
+<p class="en">slope: the “rise over run” ratio of a line (chapter 2); a line that rises 2 for a run of 1 has slope 2.</p>
+<p><b>palier</b> : une partie de courbe horizontale, où la sortie ne change plus ; après le temps 12, le volume reste à 2,5.</p>
+<p class="en">plateau: a horizontal part of a curve, where the output no longer changes; after time 12, the volume stays at 2.5.</p>
+<img class="vm" src="/ml/img/c011/p0462_25.svg" alt="Définition — fonction réciproque" style="--w:24.31" loading="lazy">
+<p>Soit <span class="m">𝑓</span> <span class="m">∶ 𝐷 → 𝐼</span> une fonction telle que chaque <span class="m">𝑦</span> de <span class="m">𝐼</span> est l’image d’<i>un seul</i> <span class="m">𝑥</span> de <span class="m">𝐷</span>. La <b>fonction réciproque</b> de <span class="m">𝑓</span> est la fonction</p>
+<p><span class="m">𝑓</span> <sup class="m">−1</sup> <span class="m">∶ 𝐼 → 𝐷</span></p>
+<p><span class="m">𝑦</span> <span class="m">↦</span> le seul <span class="m">𝑥</span> tel que <span class="m">𝑓</span> <span class="m">(</span><span class="m">𝑥</span><span class="m">) =</span> <span class="m">𝑦</span><span class="m">.</span></p>
+<p>Elle défait <span class="m">𝑓</span> dans les deux sens :</p>
+<p><span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(</span><span class="m">𝑓</span> <span class="m">(</span><span class="m">𝑥</span><span class="m">)) =</span> <span class="m">𝑥</span> et <span class="m">𝑓</span><span class="m">(</span><span class="m">𝑓</span><sup class="m">−1</sup> <span class="m">(</span><span class="m">𝑦</span><span class="m">)) =</span> <span class="m">𝑦</span><span class="m">.</span></p>
+<p class="en">Let <span class="m">𝑓 ∶ 𝐷 → 𝐼</span> be a function such that each <span class="m">𝑦</span> in <span class="m">𝐼</span> is the image of <i>exactly one</i> <span class="m">𝑥</span> in <span class="m">𝐷</span>. The <b>inverse function</b> of <span class="m">𝑓</span> is the function <span class="m">𝑓</span> <sup class="m">−1</sup> <span class="m">∶ 𝐼 → 𝐷</span> that sends <span class="m">𝑦</span> to the only <span class="m">𝑥</span> such that <span class="m">𝑓(</span><span class="m">𝑥</span><span class="m">) =</span> <span class="m">𝑦</span>. It undoes <span class="m">𝑓</span> in both directions: <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(𝑓(</span><span class="m">𝑥</span><span class="m">)) =</span> <span class="m">𝑥</span> and <span class="m">𝑓(</span><span class="m">𝑓</span><sup class="m">−1</sup> <span class="m">(</span><span class="m">𝑦</span><span class="m">)) =</span> <span class="m">𝑦</span>.</p>
+<img class="vf" src="/ml/img/c011/p0463_26.svg" alt="" style="--w:24.31" loading="lazy">
+<p>La figure 11.3 dessine cette définition avec les nombres de la ruche. Chaque couleur de la formule</p>
+<img class="vm" src="/ml/img/c011/p0463_27.svg" alt="est un élément du dessin. Figure 11.3 draws this definition with the numbers" style="--w:24.31" loading="lazy">
+<p class="en">of the hive. Each color of the formula is one element of the drawing.</p>
+<img class="vf" src="/ml/img/c011/p0464_28.svg" alt="f:D → I,   f−1:I → D D : les temps x I : les volumes y f(x) = √x  : aller 4 2 9 3 16 4 f−1(y) = y2 : retour f−1(f(x)) = x : 9 → 3 → 9" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.3 :</b> La définition, couleur par couleur. L’ovale vert est <span class="m">𝐷</span>, les temps <span class="m">𝑥</span> : 4, 9, 16. L’ovale orange est <span class="m">𝐼</span>, les</p>
+<img class="vm" src="/ml/img/c011/p0464_29.svg" alt="volumes 𝑦 : 2, 3, 4. Les flèches bleues sont 𝑓 , l’aller : √ 9 ↦ 9 = 3. Les flèches rouges sont 𝑓 −1, le retour :" style="--w:24.31" loading="lazy">
+<p><span class="m">3 ↦ 3</span><sup class="m">2</sup> <span class="m">= 9</span>. Chaque volume reçoit une seule flèche bleue, donc une seule flèche rouge peut en repartir. Aller puis retour ramène au départ : <span class="m">9 → 3 → 9</span>.</p>
+<p class="en">The definition, color by color. The green oval is <span class="m">𝐷</span>, the times <span class="m">𝑥</span>: 4, 9, 16. The orange oval is <span class="m">𝐼</span>, the volumes <span class="m">𝑦</span>: 2,</p>
+<img class="vm" src="/ml/img/c011/p0464_30.svg" alt="3, 4. The blue arrows are 𝑓 , the outbound way: √ 9 ↦ 9 = 3. The red arrows are 𝑓 −1, the way back:" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">3 ↦ 3</span><sup class="m">2</sup> <span class="m">= 9</span>. Each volume receives a single blue arrow, so a single red arrow can leave from it. Out and back returns to the start: <span class="m">9 → 3 → 9</span>.</p>
+<p>Lisons chaque symbole.</p>
+<p class="en">Let us read each symbol.</p>
+<img class="vm" src="/ml/img/c011/p0465_31.svg" alt="𝑓 La fonction de départ, les flèches bleues de √ la figure 11.3 : 𝑓(𝑥) = 𝑥 reçoit un temps et" style="--w:24.31" loading="lazy">
+<p>rend un volume. <span class="m">𝑓(9) = 3</span>.</p>
+<img class="vm" src="/ml/img/c011/p0465_32.svg" alt="The starting function, the blue arrows of √ figure 11.3: 𝑓(𝑥) = 𝑥 receives a time and" style="--w:24.31" loading="lazy">
+<p class="en">gives back a volume. <span class="m">𝑓(9) = 3</span>.</p>
+<img class="vm" src="/ml/img/c011/p0465_33.svg" alt="𝐷 Le domaine de 𝑓 : les entrées de départ," style="--w:24.31" loading="lazy">
+<p>l’ovale vert. Pour la racine carrée, <span class="m">𝐷 = [0, +∞[</span>, les nombres positifs ou nuls ; le signe <span class="m">+∞</span> dit que l’intervalle ne s’arrête pas à droite.</p>
+<p class="en">The domain of <span class="m">𝑓</span> : the starting inputs, the green oval. For the square root, <span class="m">𝐷 = [0, +∞[</span>, the non-negative numbers; the sign <span class="m">+∞</span> says the interval never stops on the right.</p>
+<img class="vm" src="/ml/img/c011/p0465_34.svg" alt="𝐼 L’ensemble des images de 𝑓 : toutes les" style="--w:24.31" loading="lazy">
+<p>sorties que <span class="m">𝑓</span> produit vraiment, l’ovale orange. Ce sont elles qui deviennent les entrées de <span class="m">𝑓</span> <sup class="m">−1</sup>.</p>
+<p class="en">The set of images of <span class="m">𝑓</span>: all the outputs that <span class="m">𝑓</span> really produces, the orange oval. These become the inputs of <span class="m">𝑓</span> <sup class="m">−1</sup>.</p>
+<img class="vm" src="/ml/img/c011/p0465_35.svg" alt="𝑓 −1 Le nom de la réciproque, les flèches rouges." style="--w:24.31" loading="lazy">
+<p>Le petit <span class="m">−1</span> en haut n’est pas une puissance. Il ne veut pas dire « 1 divisé par <span class="m">𝑓</span> ». Il veut dire « <span class="m">𝑓</span> parcourue à l’envers ». <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(3) = 9</span>.</p>
+<p class="en">The name of the inverse, the red arrows. The small <span class="m">−1</span> at the top is not a power. It does not mean “1 divided by <span class="m">𝑓</span> ”. It means “<span class="m">𝑓</span> traveled backwards”. <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(3) = 9</span>.</p>
+<img class="vm" src="/ml/img/c011/p0466_36.svg" alt="𝑦 Une sortie de 𝑓, devenue entrée de 𝑓 −1. Pour l’apiculteur : un volume mesuré, 3 m3." style="--w:24.31" loading="lazy">
+<p class="en">An output of <span class="m">𝑓</span> , which becomes an input of <span class="m">𝑓</span><sup class="m">−1</sup>. For the beekeeper: a measured</p>
+<img class="vm" src="/ml/img/c011/p0466_37.svg" alt="volume, 3 m3. 𝑥 L’entrée de 𝑓 que la réciproque retrouve : le" style="--w:24.31" loading="lazy">
+<p>temps, 9.</p>
+<p class="en">The input of <span class="m">𝑓</span> that the inverse recovers: the time, 9.</p>
+<p>un seul</p>
+<p>La condition centrale. Sur la figure, chaque point orange reçoit une seule flèche bleue. Si deux temps différents donnaient le même volume, la réciproque ne saurait pas lequel rendre. Une fonction qui respecte cette condition est dite <i>injective</i> (en anglais <i>one-to-one</i>).</p>
+<p class="en">The central condition. In the figure, each orange dot receives a single blue arrow. If two different times gave the same volume, the inverse would not know which one to return. A function that meets this condition is called <i>injective</i> (<i>one-to-one</i>).</p>
+<p><span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(</span><span class="m">𝑓</span> <span class="m">(</span><span class="m">𝑥</span><span class="m">))</span></p>
+<p>Se lit de l’intérieur vers l’extérieur : on applique <span class="m">𝑓</span> à <span class="m">𝑥</span>, puis <span class="m">𝑓</span><sup class="m">−1</sup> au résultat. On retombe sur <span class="m">𝑥</span>. Avec <span class="m">𝑥 = 9</span> : <span class="m">𝑓(9) = 3</span>, puis <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(3) = 9</span> ; avec <span class="m">𝑥 = 16</span> : <span class="m">𝑓(16) = 4</span>, puis <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(4) = 16</span>.</p>
+<p class="en">Read from the inside out: apply <span class="m">𝑓</span> to <span class="m">𝑥</span>, then <span class="m">𝑓</span><sup class="m">−1</sup> to the result. You land back on <span class="m">𝑥</span>. With <span class="m">𝑥 = 9</span>: <span class="m">𝑓(9) = 3</span>, then <span class="m">𝑓</span><sup class="m">−1</sup> <span class="m">(3) = 9</span>; with <span class="m">𝑥 = 16</span>: <span class="m">𝑓(16) = 4</span>, then <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(4) = 16</span>.</p>
+<img class="vm" src="/ml/img/c011/p0467_38.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Sur la figure 11.3, pars du temps 4 et suis la flèche bleue : tu arrives sur le volume 2. Repars</p>
+<img class="vm" src="/ml/img/c011/p0467_39.svg" alt="de 2 par la flèche rouge : tu dois revenir sur 4. √ Calcule : 4 = 2, puis 22 = 4. In figure 11.3, start from time 4 and follow the" style="--w:24.31" loading="lazy">
+<p class="en">blue arrow: you arrive at volume 2. Leave from</p>
+<img class="vm" src="/ml/img/c011/p0467_40.svg" alt="2 along the red arrow: you must come back to √ 4. Compute: 4 = 2, then 22 = 4." style="--w:24.31" loading="lazy">
+<p><b>Tu vas peut-être objecter… — You may object…</b></p>
+<img class="vm" src="/ml/img/c011/p0467_41.svg" alt="√ « 𝑓 −1(3), c’est 𝑓 appliquée à 3 : 3 ≈ 1,73. » Ce" style="--w:24.31" loading="lazy">
+<p>calcul est faux : il fait l’aller au lieu du retour. Sur la figure 11.3, 3 est un volume, dans l’ovale orange. La réciproque part de là et remonte la</p>
+<img class="vm" src="/ml/img/c011/p0467_42.svg" alt="flèche rouge jusqu’au temps qui a produit ce √ volume : 9. Le nombre 3 serait le volume au temps 3, une autre question. Le juste : √ 𝑓 −1(3) = 9, car 𝑓(9) = 9 = 3." style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c011/p0468_43.svg" alt="√ “𝑓−1 (3) is 𝑓 applied to 3 3 ≈ 1.73.” This com-" style="--w:24.31" loading="lazy">
+<p class="en">putation is wrong: it makes the outbound trip instead of the way back. In figure 11.3, 3 is a volume, in the orange oval. The inverse starts there and goes back along the red arrow to the</p>
+<img class="vm" src="/ml/img/c011/p0468_44.svg" alt="time that produced this volume: 9. The num- √ ber 3 would be the volume at time 3, another question. The right answer: 𝑓−1(3) = 9, since √ 𝑓(9) = 9 = 3." style="--w:24.31" loading="lazy">
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Le petit <span class="m">−1</span> en haut veut dire « 1 divisé par » :</p>
+<img class="vm" src="/ml/img/c011/p0468_45.svg" alt="𝑓 −1(4) = 1 = 1 = 0,5. » Ce calcul est faux. Sur 𝑓(4) 2 un nombre, le −1 veut bien dire cela : 2−1 = 1, la 2" style="--w:24.31" loading="lazy">
+<p>part de l’unité coupée en 2 (chapitre 1), et</p>
+<img class="vm" src="/ml/img/c011/p0468_46.svg" alt="2 × 1 = 1. Il défait la multiplication par 2. Sur une 2" style="--w:24.31" loading="lazy">
+<p><i>fonction</i>, le <span class="m">−1</span> défait l’application de <span class="m">𝑓</span>. Sur la figure 11.2, la courbe rouge au-dessus de 4 est à la hauteur 16, pas 0,5. Le juste : <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(4) = 4</span><sup class="m">2</sup> <span class="m">= 16</span>, et l’on vérifie <span class="m">𝑓(16) = 4</span>.</p>
+<p class="en">“The small <span class="m">−1</span> at the top means “1 divided by”:</p>
+<img class="vm" src="/ml/img/c011/p0468_47.svg" alt="𝑓 −1(4) = 1 = 1 = 0.5.” This computation is 𝑓(4) 2" style="--w:24.31" loading="lazy">
+<p class="en">wrong. On a <i>number</i>, the <span class="m">−1</span> does mean that:</p>
+<img class="vm" src="/ml/img/c011/p0468_48.svg" alt="2−1 = 1, the part of the unit cut into 2 (chap- 2 ter 1), and 2 × 1 = 1. It undoes multiplication 2" style="--w:24.31" loading="lazy">
+<p class="en">by 2. On a <i>function</i>, the <span class="m">−1</span> undoes the application of <span class="m">𝑓</span> . In figure 11.2, the red curve above 4 is at height 16, not 0.5. The right answer: <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(4) = 4</span><sup class="m">2</sup> <span class="m">= 16</span>, and we check <span class="m">𝑓(16) = 4</span>.</p>
+<img class="vm" src="/ml/img/c011/p0469_49.svg" alt="À retenir — Key point" style="--w:24.31" loading="lazy">
+<p class="en">La réciproque existe parce que chaque volume vient d’un seul temps : une seule flèche bleue arrive sur 3, donc une seule flèche rouge peut repartir de 3 vers 9. The inverse exists because each volume comes from a single time: a single blue arrow lands on 3, so a single red arrow can leave from 3 back</p>
+<img class="vm" src="/ml/img/c011/p0469_50.svg" alt="to 9." style="--w:24.31" loading="lazy">
+<h2>4. Les effets</h2>
+<p class="h2en">4. The effects</p>
+<p><b>Avant d’aller plus loin : isoler une lettre, d’abord avec des nombres</b></p>
+<img class="vm" src="/ml/img/c011/p0469_51.svg" alt="Une égalité reste vraie si l’on fait la même chose de √ ses deux côtés. Essaie avec 3 = 9, qui est vrai. Mets les deux côtés au carré : à gauche 3 × 3 = 9, à √ √ droite 9 × 9 = 9. Tu obtiens 9 = 9, encore vrai. La" style="--w:24.31" loading="lazy">
+<p>mise au carré a défait la racine : le 9 est sorti seul.</p>
+<p class="en"><b>Before going further: isolating a letter, with</b></p>
+<img class="vm" src="/ml/img/c011/p0469_52.svg" alt="numbers first. An equality stays true if the same √ thing is done to both sides. Try it with 3 = 9, which is true. Square both sides: on the left √ √ 3 × 3 = 9, on the right 9 × 9 = 9. You get 9 = 9," style="--w:24.31" loading="lazy">
+<p class="en">still true. Squaring has undone the root: the 9 has come out alone.</p>
+<p>Quand une règle fait plusieurs opérations, on les défait dans l’ordre inverse. La mise à l’échelle du quatrième effet fait deux opérations sur 170 : retirer 150, ce qui donne 20, puis diviser par 40, ce qui donne 0,5. Pour revenir, on défait la dernière d’abord : <span class="m">0,5 × 40 = 20</span>, puis <span class="m">20 + 150 = 170</span> (figure 11.4).</p>
+<p class="en">When a rule makes several operations, they are undone in reverse order. The scaling of the fourth effect makes two operations on 170 subtract 150, which gives 20, then divide by 40, which gives 0.5. To go back, undo the last one first: <span class="m">0.5 × 40 = 20</span>, then <span class="m">20 + 150 = 170</span> (figure 11.4).</p>
+<img class="vf" src="/ml/img/c011/p0471_53.svg" alt="Aller f : retirer 150, puis diviser par 40 − 150 ÷ 40 170 20 0,5 Retour f⁻¹ : multiplier par 40, puis ajouter 150 × 40 + 150 0,5 20 170 Faux : défaire dans le même ordre + 150 × 40 0,5 150,5 6 020" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.4 :</b> En haut, l’aller : <span class="m">170 − 150 = 20</span>, puis <span class="m">20 ÷ 40 = 0,5</span>. Au milieu, le retour défait les étapes de la dernière à la première : <span class="m">0,5 × 40 = 20</span>, puis <span class="m">20 + 150 = 170</span>. En bas, l’erreur : défaire dans le même ordre donne <span class="m">0,5 + 150 = 150,5</span>, puis <span class="m">150,5 × 40 = 6 020</span>, pas 170.</p>
+<p class="cap en">Top, the outbound trip: <span class="m">170 − 150 = 20</span>, then <span class="m">20 ÷ 40 = 0.5</span>. Middle, the way back undoes the steps from last to first: <span class="m">0.5 × 40 = 20</span>, then <span class="m">20 + 150 = 170</span>. Bottom, the mistake: undoing in the same order gives <span class="m">0.5 + 150 = 150.5</span>, then <span class="m">150.5 × 40 = 6,020</span>, not 170.</p>
+<p><b>Tu vas peut-être objecter… — You may object…</b> « Pour défaire « retirer 150, puis diviser par 40 », j’ajoute 150, puis je multiplie par 40. » Ce calcul est faux. Avec 0,5, il donne <span class="m">0,5 + 150 = 150,5</span>, puis <span class="m">150,5 × 40 = 6 020</span> : une taille de 60 m. La ligne du bas de la figure 11.4 le montre. L’ajout de 150 arrive trop tôt : il faut d’abord défaire la division, qui a été faite en dernier. Le juste : <span class="m">0,5 × 40 = 20</span>, puis <span class="m">20 + 150 = 170</span>.</p>
+<p class="en">“To undo “subtract 150, then divide by 40”, I add 150, then multiply by 40.” This computation is wrong. With 0.5, it gives <span class="m">0.5 + 150 = 150.5</span>, then <span class="m">150.5×40 = 6,020</span>: a height of 60 m. The bottom row of figure 11.4 shows it. Adding 150 comes too early: the division, done last, must be undone first. The right computation: <span class="m">0.5×40 = 20</span>, then <span class="m">20 + 150 = 170</span>.</p>
+<p><b>Premier effet : on calcule la réciproque en isolant l’entrée</b></p>
+<p>Pour trouver <span class="m">𝑓</span><sup class="m">−1</sup> , écris <span class="m">𝑦 = 𝑓(𝑥)</span>, puis isole <span class="m">𝑥</span>. La figure 11.5 fait le calcul pour la racine carrée, puis le</p>
+<img class="vm" src="/ml/img/c011/p0472_54.svg" alt="vérifie. First effect: you compute the inverse by" style="--w:24.31" loading="lazy">
+<p class="en"><b>isolating the input.</b> To find <span class="m">𝑓</span> <sup class="m">−1</sup>, write <span class="m">𝑦 = 𝑓(𝑥)</span>, then isolate <span class="m">𝑥</span>. Figure 11.5 does the computation for the square root, then checks it.</p>
+<img class="vf" src="/ml/img/c011/p0473_55.svg" alt="Étape 1 — on écrit y = f(x)" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0473_56.svg" alt="y = √ x x : le temps, y : le volume" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0473_57.svg" alt="Étape 2 — on isole x : on élève au carré (·)² y = √ x y2 = x" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0473_58.svg" alt="Étape 3 — on renomme la lettre y → x x = y2 f−1(x) = x2 valable pour x ≥ 0 Étape 4 — on vérifie avec x = 9 √ (·)² 9 3 9 f(9) = 3, puis f−1(3) = 9 : on retrouve le départ FIɢ. 11.5 : Le calcul de la réciproque en quatre étapes. √ Étape 1 : on écrit 𝑦 = 𝑥. Étape 2 : on élève les deux" style="--w:24.31" loading="lazy">
+<p>côtés au carré, <span class="m">𝑦</span><sup class="m">2</sup> <span class="m">= 𝑥</span> ; l’entrée <span class="m">𝑥</span> est isolée. Étape 3 : on renomme la lettre, <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(𝑥) = 𝑥</span><sup class="m">2</sup>, valable pour <span class="m">𝑥 ≥ 0</span>. Étape 4 : on vérifie avec 9 : la racine donne 3, le carré redonne 9.</p>
+<img class="vm" src="/ml/img/c011/p0473_59.svg" alt="The computation of the inverse in four steps. Step 1 √ write 𝑦 = 𝑥. Step 2 square both sides, 𝑦2 = 𝑥; the" style="--w:24.31" loading="lazy">
+<p class="en">input <span class="m">𝑥</span> is isolated. Step 3 rename the letter, <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(𝑥) = 𝑥</span><sup class="m">2</sup>, valid for <span class="m">𝑥 ≥ 0</span>. Step 4 check with 9 the root gives 3, the square gives 9 back.</p>
+<img class="vm" src="/ml/img/c011/p0473_60.svg" alt="√ Avec 𝑦 = 𝑥 : élève les deux côtés au carré, tu" style="--w:24.31" loading="lazy">
+<p>obtiens <span class="m">𝑦</span><sup class="m">2</sup> <span class="m">= 𝑥</span>. Donc <span class="m">𝑥 = 𝑦</span><sup class="m">2</sup>. Ce calcul ne marche que pour <span class="m">𝑦 ≥ 0</span>, car une racine carrée n’est jamais négative. Il reste à renommer la lettre, puisque l’entrée d’une fonction s’appelle d’habitude <span class="m">𝑥</span>. Nous allons écrire la réciproque et l’appliquer au volume mesuré, 3 :</p>
+<img class="vm" src="/ml/img/c011/p0474_61.svg" alt="𝑓−1(𝑥) = 𝑥2, 𝑥 ≥ 0." style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(3) = 3</span><sup class="m">2</sup> <span class="m">= 9</span>. La ruche se remplit</p>
+<img class="vm" src="/ml/img/c011/p0474_62.svg" alt="depuis 9 unités de temps. Vérifie dans l’autre sens : √ 𝑓(9) = 9 = 3. √ With 𝑦 = 𝑥: square both sides, you get 𝑦2 = 𝑥." style="--w:24.31" loading="lazy">
+<p class="en">So <span class="m">𝑥 = 𝑦</span><sup class="m">2</sup>. This computation only works for <span class="m">𝑦 ≥ 0</span>, because a square root is never negative. It remains to rename the letter, since the input of a function is usually called <span class="m">𝑥</span>: <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(𝑥) = 𝑥</span><sup class="m">2</sup>, <span class="m">𝑥 ≥ 0</span>. For the measured volume 3 <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(3) = 3</span><sup class="m">2</sup> <span class="m">= 9</span>. The</p>
+<img class="vm" src="/ml/img/c011/p0474_63.svg" alt="hive has been filling for 9 time units. Check the √ other way: 𝑓(9) = 9 = 3." style="--w:24.31" loading="lazy">
+<p><b>Deuxième effet : le graphe se reflète dans la droite</b> <span class="m">𝑦 = 𝑥</span></p>
+<p>Pourquoi le reflet ? Le point <span class="m">(𝑎, 𝑏)</span> est sur le graphe de <span class="m">𝑓</span> quand <span class="m">𝑓(𝑎) = 𝑏</span>. Par définition de la réciproque, cela veut dire <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(𝑏) = 𝑎</span>. Donc le point <span class="m">(𝑏, 𝑎)</span> est sur le graphe de <span class="m">𝑓</span><sup class="m">−1</sup>. Il reste à voir pourquoi échanger deux nombres est un reflet. Prends <span class="m">𝐴 = (4, 2)</span> et <span class="m">𝐴</span><sup class="m">′</sup> <span class="m">= (2, 4)</span> sur la figure 11.2. Nous allons calculer leur milieu ; chaque nombre est la moyenne de deux nombres, comme au chapitre 1 :</p>
+<img class="vm" src="/ml/img/c011/p0475_64.svg" alt="4 + 2 2 + 4 𝑀 = ( , ). 2 2" style="--w:24.31" loading="lazy">
+<p><b>Avec nos nombres :</b> <span class="m">𝑀 = (3, 3)</span> : ses deux nombres sont égaux, donc <span class="m">𝑀</span> est sur la droite <span class="m">𝑦 = 𝑥</span>.</p>
+<p class="en"><b>Second effect: the graph is reflected in the line</b> <span class="m">𝑦 = 𝑥</span><b>.</b> Why the reflection? The point <span class="m">(𝑎, 𝑏)</span> is on the graph of <span class="m">𝑓</span> when <span class="m">𝑓(𝑎) = 𝑏</span>. By the definition of the inverse, this means <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(𝑏) = 𝑎</span>. So the point <span class="m">(𝑏, 𝑎)</span> is on the graph of <span class="m">𝑓</span><sup class="m">−1</sup> . It remains to see why swapping two numbers is a reflection. Take <span class="m">𝐴 = (4, 2)</span> and <span class="m">𝐴</span><sup class="m">′</sup> <span class="m">= (2, 4)</span> in figure 11.2. Each number of their midpoint is the mean of two</p>
+<img class="vm" src="/ml/img/c011/p0475_65.svg" alt="numbers, as in chapter 1: 𝑀 = (4+2 , 2+4 ) = (3, 3): 2 2" style="--w:24.31" loading="lazy">
+<p class="en">its two numbers are equal, so <span class="m">𝑀</span> is on the line <span class="m">𝑦 = 𝑥</span>.</p>
+<p>Pour aller de <span class="m">𝐴</span> à <span class="m">𝐴</span><sup class="m">′</sup>, on fait 2 pas vers la gauche et 2 pas vers le haut. La droite <span class="m">𝑦 = 𝑥</span>, elle, avance d’un pas vers la droite pour un pas vers le haut. Chacun de ces deux déplacements a ses deux pas de même taille ; il fait donc la moitié d’un angle droit avec la verticale, l’un à gauche, l’autre à droite. Ensemble, ils font un angle droit. Le segment <span class="m">𝐴𝐴</span><sup class="m">′</sup> coupe donc la droite à angle droit, en son milieu. C’est exactement ce que fait un reflet dans une droite. Le calcul marche pour n’importe quels <span class="m">𝑎</span> et <span class="m">𝑏</span>.</p>
+<p class="en">To go from <span class="m">𝐴</span> to <span class="m">𝐴</span><sup class="m">′</sup> you take 2 steps left and 2 steps up. The line <span class="m">𝑦 = 𝑥</span> moves one step right for one step up. Each of these two moves has its two steps of equal size; so each makes half a right angle with the vertical, one to the left, the other to the right. Together they make a right angle. So the segment <span class="m">𝐴𝐴</span><sup class="m">′</sup> cuts the line at a right angle, at its midpoint. That is exactly what a reflection in a line does. The computation works for any <span class="m">𝑎</span> and <span class="m">𝑏</span>.</p>
+<p><b>Ce que le reflet cache : la pente se retourne</b></p>
+<p>Le reflet échange l’horizontal et le vertical. Que devient alors la pente, qui est le rapport « montée sur course » (chapitre 2) ? Prends la droite</p>
+<img class="vm" src="/ml/img/c011/p0476_66.svg" alt=". Isole dans : 𝑦+1 . 𝑓(𝑥) = 2𝑥 − 1 𝑥 𝑦 = 2𝑥 − 1 𝑥 = 2 Donc 𝑓−1 (𝑥) = 𝑥+1 . 2 What the reflection hides: the slope turns over." style="--w:24.31" loading="lazy">
+<p class="en">The reflection swaps horizontal and vertical. What then happens to the slope, which is the ratio “rise over run” (chapter 2? Take the line <span class="m">𝑓(𝑥) = 2𝑥 − 1</span>.</p>
+<img class="vm" src="/ml/img/c011/p0476_67.svg" alt="Isolate in : 𝑦+1 . So −1 𝑥+1 . 𝑥 𝑦 = 2𝑥 − 1 𝑥 = 𝑓 (𝑥) = 2 2" style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0477_68.svg" alt="f(x) = 2x − 1 f−1(x) = x+ 1 y = x 2 y 4 pente 2 3 pente 1/2 montée 2 2 montée 1 1 course 1 course 2 x −1 1 2 3 4 −1" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.6 :</b> La droite <span class="m">𝑓(𝑥) = 2𝑥 − 1</span> (bleu) et sa réciproque (rouge). Sur la droite bleue, une course de 1 donne une montée de 2 : pente 2. Après le reflet, la course devient 2</p>
+<img class="vm" src="/ml/img/c011/p0477_69.svg" alt="et la montée devient 1 : pente 1 . Le reflet a échangé les 2" style="--w:24.31" loading="lazy">
+<p>deux côtés du triangle.</p>
+<p class="en">The line <span class="m">𝑓(𝑥) = 2𝑥 − 1</span> (blue) and its inverse (red). On the blue line, a run of 1 gives a rise of 2 slope 2. After the reflection the run becomes 2 and the rise becomes 1</p>
+<img class="vm" src="/ml/img/c011/p0477_70.svg" alt="slope 1 . The reflection has swapped the two sides of the 2" style="--w:24.31" loading="lazy">
+<p class="en">triangle.</p>
+<img class="vm" src="/ml/img/c011/p0477_71.svg" alt="La pente 2 devient 1 : la droite rouge monte de 1 2" style="--w:24.31" loading="lazy">
+<p>pour une course de 2, donc de <span class="m">1 ÷ 2 = 0,5</span> pour une</p>
+<img class="vm" src="/ml/img/c011/p0477_72.svg" alt="course de 1. En général, une pente 𝑚 devient 1 . 𝑚" style="--w:24.31" loading="lazy">
+<p>Cela explique la forme des courbes de la figure 11.2.</p>
+<p>Là où la racine carrée monte lentement, presque à plat, sa réciproque monte vite, presque à la verticale. La lenteur de l’une est la rapidité de l’autre.</p>
+<img class="vm" src="/ml/img/c011/p0478_73.svg" alt="The slope 2 becomes 1 : the red line rises by 1 for 2" style="--w:24.31" loading="lazy">
+<p class="en">a run of 2, so by <span class="m">1 ÷ 2 = 0.5</span> for a run of 1. In</p>
+<img class="vm" src="/ml/img/c011/p0478_74.svg" alt="general, a slope 𝑚 becomes 1 . This explains the 𝑚" style="--w:24.31" loading="lazy">
+<p class="en">shape of the curves in figure 11.2. Where the square root rises slowly, almost flat, its inverse rises fast, almost vertically. The slowness of one is the speed of the other.</p>
+<p><b>Troisième effet : lire le remplissage de la ruche</b></p>
+<img class="vm" src="/ml/img/c011/p0478_75.svg" alt="Revenons au modèle de l’apiculteur : 𝑥 est le temps, √ 𝑓(𝑥) = 𝑥 le volume occupé en m3. La figure 11.7 trace cette fonction de 0 à 16. Third effect: reading how the hive fills. Back to √ the beekeeper’s model: 𝑥 is time, 𝑓(𝑥) = 𝑥 the occupied volume in m3. Figure 11.7 draws this" style="--w:24.31" loading="lazy">
+<p class="en">function from 0 to 16.</p>
+<img class="vf" src="/ml/img/c011/p0479_76.svg" alt="volume occupé (m³) 4 +0,54 (9, 3) +0,64 3 +0,83 2 1 +2,00 temps x 4 8 9 12 16 √ FIɢ. 11.7 : Le volume occupé 𝑓(𝑥) = 𝑥 sur [0, 16]." style="--w:24.31" loading="lazy">
+<p>Chaque palier pointillé dure 4 unités de temps. Regarde</p>
+<img class="vm" src="/ml/img/c011/p0479_77.svg" alt="les traits verticaux : le volume gagne 2 m3, puis 0,83," style="--w:24.31" loading="lazy">
+<p>puis 0,64, puis 0,54. Les gains baissent : la ponte ralentit quand la ruche se remplit. Le point <span class="m">(9, 3)</span> est la mesure de</p>
+<img class="vm" src="/ml/img/c011/p0479_78.svg" alt="l’apiculteur. La courbe ne fait aucun saut. √ The occupied volume 𝑓(𝑥) = 𝑥 on [0, 16]. Each dotted" style="--w:24.31" loading="lazy">
+<p class="en">step lasts 4 time units. Look at the vertical segments: the</p>
+<img class="vm" src="/ml/img/c011/p0479_79.svg" alt="volume gains 2 m3, then 0.83, then 0.64, then 0.54. The" style="--w:24.31" loading="lazy">
+<p class="en">gains decrease: laying slows down as the hive fills. The point <span class="m">(9, 3)</span> is the beekeeper’s measurement. The curve makes no jump.</p>
+<p>Nous allons calculer le gain de volume sur chaque durée de 4 unités :</p>
+<img class="vm" src="/ml/img/c011/p0479_80.svg" alt="√ √ gain = 𝑏 − 𝑎." style="--w:24.31" loading="lazy">
+<img class="vm" src="/ml/img/c011/p0480_81.svg" alt="√ √ √ √ Avec nos nombres : 4 − 0 = 2 ; 8 − 4 ≈ 0,83 ; √ √ √ √ 12 − 8 ≈ 0,64 ; 16 − 12 ≈ 0,54. Pour des durées" style="--w:24.31" loading="lazy">
+<p>égales, les gains baissent.</p>
+<img class="vm" src="/ml/img/c011/p0480_82.svg" alt="We compute the volume gain over each 4-unit √ √ √ √ duration: 4 − 0 = 2, 8 − 4 ≈ 0.83, √ √ √ √ 12 − 8 ≈ 0.64, 16 − 12 ≈ 0.54. For equal" style="--w:24.31" loading="lazy">
+<p class="en">durations, the gains decrease.</p>
+<p>C’est le comportement voulu. Remarque aussi que la courbe ne fait aucun saut : un petit changement du temps donne un petit changement du volume. Cette propriété porte un nom, la <i>continuité</i>. Elle sera définie avec précision au chapitre 45.</p>
+<p class="en">This is the wanted behavior. Notice also that the curve makes no jump: a small change in time gives a small change in volume. This property has a name, <i>continuity</i>. It will be defined precisely in chapter 45.</p>
+<img class="vm" src="/ml/img/c011/p0480_83.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>Sur la figure 11.7, lis le volume au temps 16 : 4. Applique la réciproque : <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(4) = 4</span><sup class="m">2</sup>. Tu dois</p>
+<img class="vm" src="/ml/img/c011/p0480_84.svg" alt="retrouver 16. Puis lis le gain entre 4 et 8, +0,83, √ et vérifie-le : 8 ≈ 2,83, car 2,83 × 2,83 ≈ 8,01 ;" style="--w:24.31" loading="lazy">
+<p>et <span class="m">2,83 − 2 = 0,83</span>.</p>
+<p class="en">In figure 11.7, read the volume at time 16 4. Apply the inverse: <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(4) = 4</span><sup class="m">2</sup>. You must</p>
+<img class="vm" src="/ml/img/c011/p0480_85.svg" alt="get 16 back. Then read the gain between 4 √ and 8, +0.83, and check it: 8 ≈ 2.83, since" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">2.83 × 2.83 ≈ 8.01</span>; and <span class="m">2.83 − 2 = 0.83</span>.</p>
+<p><b>Quatrième effet : revenir en arrière après avoir transformé des données</b></p>
+<p>En apprentissage automatique, on transforme souvent les données avant de les donner à un modèle. Un exemple courant est la mise à l’échelle : on ramène des tailles comprises entre 150 et 190 cm à des nombres entre 0 et 1, avec</p>
+<img class="vm" src="/ml/img/c011/p0481_86.svg" alt="𝑓(𝑥) = 𝑥−150. Le modèle travaille sur ces nombres 40" style="--w:24.31" loading="lazy">
+<p>réduits. Mais sa réponse finale doit être lue en centimètres. Il faut donc la réciproque. On note <span class="m">𝑥</span><sup class="m">′</sup> (lu « <span class="m">𝑥</span> prime ») la valeur réduite. Isole <span class="m">𝑥</span> dans</p>
+<img class="vm" src="/ml/img/c011/p0481_87.svg" alt="𝑥′ = 𝑥−150, en défaisant les étapes dans l’ordre 40" style="--w:24.31" loading="lazy">
+<p>inverse (figure 11.4) : multiplie par 40, <span class="m">40𝑥</span><sup class="m">′</sup> <span class="m">= 𝑥 − 150</span>, puis ajoute 150 : <span class="m">𝑥 = 150 + 40 𝑥</span><sup class="m">′</sup>.</p>
+<p class="en"><b>Fourth effect: going back after transforming data.</b> In machine learning, data are often transformed before being given to a model. A common example is scaling: heights between 150 and 190 cm are brought to numbers between 0</p>
+<img class="vm" src="/ml/img/c011/p0481_88.svg" alt="and 1, with 𝑓(𝑥) = 𝑥−150 . The model works on 40" style="--w:24.31" loading="lazy">
+<p class="en">these reduced numbers. But its final answer must be read in centimeters. So the inverse is needed. We write <span class="m">𝑥</span><sup class="m">′</sup> (read “<span class="m">𝑥</span> prime”) for the reduced value.</p>
+<img class="vm" src="/ml/img/c011/p0481_89.svg" alt="Isolate 𝑥 in 𝑥′ = 𝑥−150, undoing the steps in 40" style="--w:24.31" loading="lazy">
+<p class="en">reverse order (figure 11.4): multiply by 40, <span class="m">40𝑥</span><sup class="m">′</sup> <span class="m">= 𝑥 − 150</span>, then add 150 <span class="m">𝑥 = 150 + 40 𝑥</span><sup class="m">′</sup>.</p>
+<img class="vf" src="/ml/img/c011/p0482_90.svg" alt="taille x (cm) 150 170 190 x − 150 −1 f(x) = f (x0) = 150 + 40 x0 40 0 0,5 1 valeur réduite x&#x27;" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.8 :</b> Aller et retour. La flèche bleue envoie la taille 170 cm sur la valeur réduite 0,5 ; la flèche rouge ramène 0,5 sur 170 cm. Le trajet aller–retour ne perd rien, car chaque taille a sa propre valeur réduite.</p>
+<p class="cap en">There and back. The blue arrow sends the height 170 cm to the reduced value 0.5; the red arrow brings 0.5 back to 170 cm. The round trip loses nothing, because each height has its own reduced value.</p>
+<p>Nous allons faire l’aller-retour avec la taille 170 cm :</p>
+<img class="vm" src="/ml/img/c011/p0482_91.svg" alt="170 − 150 𝑓 −1(𝑓(170)) = 150 + 40 × . 40 Avec nos nombres : 𝑓(170) = 20 = 0,5, puis 40" style="--w:24.31" loading="lazy">
+<p><span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(0,5) = 150 + 40 × 0,5 = 150 + 20 = 170</span>. On retrouve la taille de départ.</p>
+<p class="en">We make the round trip with the height 170 cm:</p>
+<img class="vm" src="/ml/img/c011/p0482_92.svg" alt="𝑓(170) = 20 = 0.5, then 40" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(0.5) = 150 + 40 × 0.5 = 170</span>. We get back the starting height.</p>
+<p><b>Le cas limite : deux entrées pour une même sortie, puis une infinité</b></p>
+<p>Reprends <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup>, mais cette fois pour tous les réels. Quel <span class="m">𝑥</span> donne <span class="m">𝑦 = 4</span> ? Il y en a deux : <span class="m">𝑥 = 2</span> et <span class="m">𝑥 = −2</span>, car <span class="m">(−2) × (−2) = 4</span> aussi. La réciproque devrait rendre deux nombres pour une seule entrée.</p>
+<img class="vm" src="/ml/img/c011/p0483_93.svg" alt="Ce n’est plus une fonction. C’est pourquoi isoler 𝑥 2 √ dans 𝑦 = 𝑥 donne 𝑥 = 𝑦 seulement si 𝑥 ≥ 0 ; si √ 𝑥 &amp;lt; 0, la bonne réponse est 𝑥 = − 𝑦. The limiting case: two inputs for one output," style="--w:24.31" loading="lazy">
+<p class="en"><b>then infinitely many.</b> Take <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup> again, but this time for all real numbers. Which <span class="m">𝑥</span> gives <span class="m">𝑦 = 4</span>? There are two: <span class="m">𝑥 = 2</span> and <span class="m">𝑥 = −2</span>, because <span class="m">(−2) × (−2) = 4</span> too. The inverse would have to return two numbers for a single input. It is no</p>
+<img class="vm" src="/ml/img/c011/p0483_94.svg" alt="longer a function. That is why isolating 𝑥 in 𝑦 = 𝑥2 √ gives 𝑥 = 𝑦 only if 𝑥 ≥ 0; if 𝑥 &amp;lt; 0, the right √ answer is 𝑥 = − 𝑦." style="--w:24.31" loading="lazy">
+<img class="vf" src="/ml/img/c011/p0484_95.svg" alt="Une hauteur, deux entrées : x² sur tous les réels partie écartée y partie gardée (x &amp;lt; 0) 8 (x ≥ 0) 6 hauteur 44 x = −2 x = 2 2 x −3 −2 −1 1 2 3 Un palier : une hauteur, une infinité d&#x27;entrées volume (m³) supersédure : 4 la population chute 3 hauteur 2,5 13 ? 14 ? 20 ? 2 1 temps x 4 8 12 16 20" style="--w:24.31" loading="lazy">
+<p class="cap"><b>FIɢ. 11.9 :</b> Deux façons de perdre la réciproque. En haut : la droite horizontale à hauteur 4 coupe la courbe <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup> en deux points, <span class="m">𝑥 = −2</span> et <span class="m">𝑥 = 2</span>. Pour une sortie, deux entrées. On écarte la moitié gauche (pointillés gris) et on garde <span class="m">𝑥 ≥ 0</span> (rouge) : il ne reste qu’un point de coupe. En bas : après la supersédure, le volume reste à 2,5 à partir du temps 12. La droite à hauteur 2,5 coupe le palier en une infinité de points : 13, 14, 20… Le palier efface le temps.</p>
+<p class="cap en">Two ways to lose the inverse. Top: the horizontal line at height 4 cuts the curve <span class="m">𝑦 = 𝑥</span><sup class="m">2</sup> at two points, <span class="m">𝑥 = −2</span> and <span class="m">𝑥 = 2</span>. One output, two inputs. We drop the left half (gray dashes) and keep <span class="m">𝑥 ≥ 0</span> (red): only one crossing point is left. Bottom: after the supersedure, the volume stays at 2.5 from time 12 on. The line at height 2.5 cuts the plateau at infinitely many points: 13, 14, 20… The plateau erases time.</p>
+<p>La solution est de <i>restreindre le domaine</i> : on ne garde que la partie où chaque hauteur est atteinte une seule fois. La règle pratique se lit sur le graphe : une fonction a une réciproque quand toute droite horizontale coupe son graphe au plus une fois. Le vol de l’abeille du chapitre 10 en donne un exemple. La distance <span class="m">(𝑥 − 3)</span><sup class="m">2</sup> vaut 4 aux instants 1 et 5 : pas de réciproque sur <span class="m">[0, 6]</span>. Mais si l’on ne garde que</p>
+<img class="vm" src="/ml/img/c011/p0485_96.svg" alt="l’aller, [0, 3], chaque distance n’est atteinte qu’une √ fois, et 𝑥 = 3 − 𝑦 rend l’instant. Pour 𝑦 = 4 : 3 − 2 = 1. Pour 𝑦 = 9 : 3 − 3 = 0, le départ." style="--w:24.31" loading="lazy">
+<p class="en">The way out is to <i>restrict the domain</i>: keep only the part where each height is reached once. The practical rule reads off the graph: a function has an inverse when every horizontal line cuts its graph at most once. The bee’s flight from chapter 10 gives an example. The distance <span class="m">(𝑥 − 3)</span><sup class="m">2</sup> equals 4 at instants 1 and 5 no inverse on <span class="m">[0, 6]</span>. But if we keep only the outbound trip, <span class="m">[0, 3]</span>,</p>
+<img class="vm" src="/ml/img/c011/p0485_97.svg" alt="each distance is reached only once, and √ 𝑥 = 3 − 𝑦 gives back the instant. For 𝑦 = 4:" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">3 − 2 = 1</span>. For <span class="m">𝑦 = 9</span>: <span class="m">3 − 3 = 0</span>, the departure.</p>
+<p>Il existe un cas encore plus extrême : la fonction qui ne bouge plus. Une droite horizontale a une pente nulle. Son reflet dans <span class="m">𝑦 = 𝑥</span> serait une droite verticale, qui associe une infinité de sorties à une</p>
+<img class="vm" src="/ml/img/c011/p0485_98.svg" alt="seule entrée. Tu le vois aussi avec la règle 𝑚 ↦ 1 : 𝑚" style="--w:24.31" loading="lazy">
+<p>pour <span class="m">𝑚 = 0</span>, la division est impossible. Une ruche en donne un exemple réel. Quand elle devient trop pleine, ou quand la reine produit moins de phéromones, les ouvrières élèvent une nouvelle reine à partir de larves choisies. Ce remplacement s’appelle la <i>supersédure</i>. Une fois adulte, la nouvelle reine prend la tête de la colonie, ou part avec un essaim fonder une nouvelle ruche. La population chute, puis reste stable un temps. Le</p>
+<img class="vm" src="/ml/img/c011/p0486_99.svg" alt="modèle devient, avec une accolade qui se lit « si √ 𝑥 ≤ 12, prends 𝑥 ; si 𝑥 &amp;gt; 12, prends 2,5 » : √ ⎧ 𝑥 si 𝑥 ≤ 12, { 𝑓(𝑥) = ⎨{ ⎩2,5 si 𝑥 &amp;gt; 12. √ Avec nos nombres : 𝑓(12) = 12 ≈ 3,46, puis" style="--w:24.31" loading="lazy">
+<p><span class="m">𝑓(13) = 𝑓(14) = 𝑓(20) = 2,5</span> : trois temps différents, un seul volume.</p>
+<p class="en">There is an even more extreme case: the function that stops moving. A horizontal line has zero slope. Its reflection in <span class="m">𝑦 = 𝑥</span> would be a vertical line, which links infinitely many outputs to a single</p>
+<img class="vm" src="/ml/img/c011/p0486_100.svg" alt="input. You also see it with the rule 𝑚 ↦ 1 : for 𝑚" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">𝑚 = 0</span>, the division is impossible. A hive gives a real example. When it becomes too crowded, or when the queen produces fewer pheromones, the workers rear a new queen from selected larvae. This replacement is called <i>supersedure</i>. Once mature, the new queen takes over the colony, or leaves with a swarm to found a new hive. The population drops, then stays stable for a while.</p>
+<img class="vm" src="/ml/img/c011/p0486_101.svg" alt="The model becomes, with a brace that reads “if √ √ 𝑥 ≤ 12, take 𝑥; if 𝑥 &amp;gt; 12, take 2.5”: 𝑓(𝑥) = 𝑥 if 𝑥 ≤ 12, and 2.5 if 𝑥 &amp;gt; 12. Then √ 𝑓(12) = 12 ≈ 3.46, and" style="--w:24.31" loading="lazy">
+<p class="en"><span class="m">𝑓(13) = 𝑓(14) = 𝑓(20) = 2.5</span>: three different times, one single volume.</p>
+<p>Après l’instant 12, le volume vaut toujours 2,5 (bas</p>
+<img class="vm" src="/ml/img/c011/p0487_102.svg" alt="de la figure 11.9). Si l’apiculteur mesure 2,5 m3, il ne" style="--w:24.31" loading="lazy">
+<p>peut pas dire si l’on est à l’instant 13, 14 ou 20. Le palier efface le temps. Cette fonction faite de deux morceaux est étudiée au chapitre 12.</p>
+<p class="en">After instant 12 the volume is always 2.5 (bottom</p>
+<img class="vm" src="/ml/img/c011/p0487_103.svg" alt="of figure 11.9). If the beekeeper measures 2.5 m3," style="--w:24.31" loading="lazy">
+<p class="en">he cannot tell whether it is instant 13, 14 or 20. The plateau erases time. This function made of two pieces is studied in chapter 12.</p>
+<img class="vm" src="/ml/img/c011/p0487_104.svg" alt="À retenir — Key point Pour calculer la réciproque, isole l’entrée : √ 𝑦 = 𝑥 donne 𝑥 = 𝑦2, donc 𝑓 −1(3) = 9 ; et elle" style="--w:24.31" loading="lazy">
+<p class="en">n’existe que si chaque droite horizontale coupe le graphe au plus une fois.</p>
+<img class="vm" src="/ml/img/c011/p0487_105.svg" alt="To compute the inverse, isolate the input: 𝑦 = √ 𝑥 gives 𝑥 = 𝑦2, so 𝑓 −1(3) = 9; and it exists" style="--w:24.31" loading="lazy">
+<p class="en">only if every horizontal line cuts the graph at</p>
+<img class="vm" src="/ml/img/c011/p0487_106.svg" alt="most once." style="--w:24.31" loading="lazy">
+<h2>5. La finalité</h2>
+<p class="h2en">5. Where it leads</p>
+<p>La réciproque est l’outil du retour. Elle reviendra chaque fois qu’il faudra défaire une transformation.</p>
+<p class="en">The inverse is the tool for going back. It returns every time a transformation has to be undone.</p>
+<p>• Au chapitre 12, la ruche qui se divise donnera une fonction en morceaux, et le palier de la figure 11.9 montrera une fonction sans réciproque.</p>
+<p>• Au chapitre 13, l’égalité <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(𝑓(𝑥)) = 𝑥</span> de ce chapitre, <span class="m">9 → 3 → 9</span>, sera lue comme un enchaînement de deux fonctions qui ne fait rien.</p>
+<p>• Au chapitre 33, l’inverse d’une matrice défera une transformation du plan, exactement comme <span class="m">𝑓</span><sup class="m">−1</sup> défait <span class="m">𝑓</span> . Une matrice qui écrase le plan sur une droite n’aura pas d’inverse, pour la même raison que le palier.</p>
+<p>• Au chapitre 58, des données seront mises à l’échelle avec le logarithme, puis ramenées à leur échelle d’origine par sa réciproque, l’exponentielle.</p>
+<p>• Au chapitre 72, la fonction quantile sera la réciproque de la fonction de répartition du chapitre 71 : on partira d’une probabilité pour retrouver une valeur, comme on est parti de 3 pour retrouver 9.</p>
+<p>• Au chapitre 84, la mise à l’échelle min–max de la figure 11.8 sera étudiée en détail, avec son chemin de retour <span class="m">150 + 40 𝑥</span><sup class="m">′</sup>.</p>
+<p class="en">• In chapter 12 the splitting hive will give a piecewise function, and the plateau of figure 11.9 will show a function without an inverse.</p>
+<p class="en">• In chapter 13 this chapter’s equality <span class="m">𝑓</span><sup class="m">−1</sup><span class="m">(𝑓(𝑥)) = 𝑥</span>, <span class="m">9 → 3 → 9</span>, will be read as a chain of two functions that does nothing.</p>
+<p class="en">• In chapter 33 the inverse of a matrix will undo a transformation of the plane, exactly as <span class="m">𝑓</span><sup class="m">−1</sup> undoes <span class="m">𝑓</span>. A matrix that squashes the plane onto a line will have no inverse, for the same reason as the plateau.</p>
+<p class="en">• In chapter 58 data will be scaled with the logarithm, then brought back to their original scale by its inverse, the exponential.</p>
+<p class="en">• In chapter 72 the quantile function will be the inverse of the cumulative distribution function of chapter 71: we will start from a probability to recover a value, as we started from 3 to recover 9.</p>
+<p class="en">• In chapter 84 the min–max scaling of figure 11.8 will be studied in detail, with its way back <span class="m">150 + 40 𝑥</span><sup class="m">′</sup>.</p>
+<h2>6. Une question pour toi</h2>
+<p class="h2en">6. A question for you</p>
+<p>La fonction <span class="m">𝑥</span><sup class="m">2</sup> n’a pas de réciproque sur tous les réels, parce que <span class="m">2</span> et <span class="m">−2</span> ont la même image. Regarde maintenant <span class="m">𝑥</span><sup class="m">3</sup> <span class="m">= 𝑥 × 𝑥 × 𝑥</span>. Calcule <span class="m">2</span><sup class="m">3</sup> et <span class="m">(−2)</span><sup class="m">3</sup>. Ont-ils la même image ? Trace l’allure de la courbe de <span class="m">𝑥</span><sup class="m">3</sup>, puis fais passer des droites horizontales. Que te dit ce test sur l’existence d’une réciproque de <span class="m">𝑥</span><sup class="m">3</sup> sur tous les réels ? Et quelle différence entre les puissances 2 et 3 explique ce changement ?</p>
+<p class="en">The function <span class="m">𝑥</span><sup class="m">2</sup> has no inverse on all real numbers, because <span class="m">2</span> and <span class="m">−2</span> have the same image. Now look at <span class="m">𝑥</span><sup class="m">3</sup> <span class="m">= 𝑥 × 𝑥 × 𝑥</span>. Compute <span class="m">2</span><sup class="m">3</sup> and <span class="m">(−2)</span><sup class="m">3</sup>. Do they have the same image? Sketch the curve of <span class="m">𝑥</span><sup class="m">3</sup>, then pass horizontal lines through it. What does this test tell you about the existence of an inverse of <span class="m">𝑥</span><sup class="m">3</sup> on all real numbers? And what difference between the powers 2 and 3 explains this change?</p>
+<p><b>Trois questions pour vérifier que tu as compris</b></p>
+<img class="vm" src="/ml/img/c011/p0490_107.svg" alt="Vérifie toi-même — Check it yourself" style="--w:24.31" loading="lazy">
+<p>1. La règle <span class="m">𝑓(𝑥) = 2𝑥 + 4</span> multiplie par 2, puis ajoute 4. Calcule <span class="m">𝑓(5)</span>. Puis trouve <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(14)</span> en défaisant les deux étapes dans l’ordre inverse.</p>
+<p>2. Fais le tableau de <span class="m">𝑔(𝑥) = 𝑥</span><sup class="m">2</sup> pour <span class="m">𝑥 = 0</span>, 1, 2, 3. Fais ensuite le tableau de <span class="m">𝑔</span><sup class="m">−1</sup> en échangeant les deux lignes. Place les points des deux tableaux avec la droite <span class="m">𝑦 = 𝑥</span>. Le point <span class="m">(9, 3)</span> est-il sur le graphe de <span class="m">𝑔</span> ou sur celui de <span class="m">𝑔</span><sup class="m">−1</sup> ?</p>
+<p>3. Explique en une phrase ce que veut dire <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(10) = 4</span>, avec une fonction <span class="m">𝑓</span> à toi, et</p>
+<img class="vm" src="/ml/img/c011/p0491_108.svg" alt="pourquoi ce n’est pas 1 . 𝑓(10)" style="--w:24.31" loading="lazy">
+<p class="en">1. The rule <span class="m">𝑓(𝑥) = 2𝑥 + 4</span> multiplies by 2, then adds 4. Compute <span class="m">𝑓(5)</span>. Then find <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(14)</span> by undoing the two steps in reverse order.</p>
+<p class="en">2. Make the table of <span class="m">𝑔(𝑥) = 𝑥</span><sup class="m">2</sup> for <span class="m">𝑥 = 0</span>, 1, 2, 3. Then make the table of <span class="m">𝑔</span><sup class="m">−1</sup> by swapping the two rows. Plot the points of both tables with the line <span class="m">𝑦 = 𝑥</span>. Is the point <span class="m">(9, 3)</span> on the graph of <span class="m">𝑔</span> or on that of <span class="m">𝑔</span><sup class="m">−1</sup>?</p>
+<p class="en">3. Explain in one sentence what <span class="m">𝑓</span> <sup class="m">−1</sup><span class="m">(10) = 4</span> means, with a function <span class="m">𝑓</span> of your own, and</p>
+<img class="vm" src="/ml/img/c011/p0491_109.svg" alt="why it is not 1 . 𝑓(10)" style="--w:24.31" loading="lazy">

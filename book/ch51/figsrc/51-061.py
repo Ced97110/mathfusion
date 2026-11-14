@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'cadran à 4 heures : $1 = 5 = 9$', 'sujet', 'm')
+f = numberline(ax, 8, 72, 24, 1, 9, role='fixe')
+for v in (1, 5, 9): disc(ax, f(v), 24, 2.0, 'sujet')
+arrow(ax, (f(1), 27), (f(5), 27), 'varie', curve=-0.3)
+arrow(ax, (f(1), 27), (f(9), 27), 'varie', curve=-0.3)
+text(ax, f(3), 36.5, 'écart 4', 'varie', 's')
+text(ax, f(5), 41, 'écart 8', 'varie', 's')
+text(ax, 44, 9, r'écarts dans $4\mathbb{Z}$, les multiples de 4', 'varie', 'm')
+save(fig, '51-061')

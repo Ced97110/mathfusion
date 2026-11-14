@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+xc = 50
+sp = lambda w: '  '.join(w)
+text(ax, 44, 51, 'un mot ajouté à lui-même donne 0000', 'encre', 'm')
+text(ax, xc, 40, sp('0110'), 'sujet', 'xl')
+text(ax, xc, 29, sp('0110'), 'sujet', 'xl')
+line(ax, [(34, 23), (66, 23)], 'fixe')
+text(ax, xc, 16, sp('0000'), 'resultat', 'xl')
+text(ax, 6, 40, r'$x$', 'sujet', 'l', ha='left')
+text(ax, 6, 29, r'$+\ x$', 'sujet', 'l', ha='left')
+text(ax, 6, 16, r'$x+x$', 'resultat', 'l', ha='left')
+text(ax, 70, 16, 'mot nul', 'resultat', 's', ha='left')
+text(ax, 44, 5, r'$r+e=c+e+e=c$', 'encre', 'm')
+save(fig, '68-029')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 60, 'énoncé élémentaire', 'sujet', 'm')
+text(ax, 66, 60, 'formule voisine', 'autre', 'm')
+box(ax, 2, 38, 40, 14, 'sujet', label=r'$\exists y,\ y^2=9$')
+box(ax, 46, 38, 40, 14, 'autre', label=r'$\exists y,\ y^2=x$')
+text(ax, 22, 30, 'aucune variable libre', 'sujet', 's')
+text(ax, 66, 30, r'variable libre $x$', 'autre', 's')
+box(ax, 2, 8, 40, 14, 'resultat', label=r'vraie ($y=3$), tout de suite')
+box(ax, 46, 8, 40, 14, 'varie', label=r'dépend de $x$')
+arrow(ax, (22, 27), (22, 23.5), 'fixe', lw=0.7)
+arrow(ax, (66, 27), (66, 23.5), 'fixe', lw=0.7)
+save(fig, '70-094')

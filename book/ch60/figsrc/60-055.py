@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+text(ax, 15, 44, 'départ', 'fixe', 's')
+text(ax, 47, 44, 'étape clé', 'varie', 's')
+text(ax, 76, 44, 'arrivée', 'fixe', 's')
+box(ax, 2, 20, 26, 20, 'sujet', label='y dans' + '\n' + r'$M_2$ et $M_3$' + '\n' + 'tué par 4, par 3', size='s')
+box(ax, 34, 20, 28, 20, 'varie', label=r'$-3 + 4 = 1$' + '\n' + '4 et 3 premiers' + '\n' + 'entre eux', size='s')
+box(ax, 66, 20, 20, 20, 'resultat', label='1 × y = 0' + '\n' + 'donc y = 0', size='s')
+arrow(ax, (28.5, 30), (33.5, 30), 'fixe')
+arrow(ax, (62.5, 30), (65.5, 30), 'varie')
+text(ax, 44, 8, 'avec 2 et 6 : jamais 1', 'limite', 'm')
+save(fig, '60-055')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 62, 60, 12, 'fixe', label='30 miles pour 2 gallons')
+box(ax, 3, 32, 40, 14, 'sujet', label='15 miles par gallon')
+box(ax, 45, 32, 40, 14, 'autre', label=r'$\frac{1}{15}$ gallon par mile', size='s')
+arrow(ax, (30, 61), (23, 47), 'varie')
+arrow(ax, (58, 61), (65, 47), 'varie')
+text(ax, 23, 27, 'miles comptés', 'sujet', 's')
+text(ax, 65, 27, 'gallons comptés', 'autre', 's')
+box(ax, 22, 3, 44, 12, 'limite', label='15 seul : quoi ?', dash=True)
+save(fig, '09-040')

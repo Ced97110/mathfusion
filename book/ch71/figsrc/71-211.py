@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+o = (60, 32); u = 8
+arrow(ax, (o[0]-3.2*u, o[1]), (o[0]+3.2*u, o[1]), 'fixe', lw=0.7); arrow(ax, (o[0], o[1]-3.5*u), (o[0], o[1]+3.5*u), 'fixe', lw=0.7)
+line(ax, [(o[0]-2.5*u, o[1]+1.25*u), (o[0]+2.5*u, o[1]-1.25*u)], 'resultat', lw=1.6)
+arrow(ax, o, (o[0]-2*u, o[1]+u), 'sujet', lw=1.4)
+disc(ax, o[0], o[1], 1.0, 'varie')
+text(ax, 43, o[1]+u+6, r'$z=(-2,\ 1)$', 'sujet', 's', ha='left')
+text(ax, o[0]+2.4*u, o[1]-1.25*u*0.96-4.5, 'radical', 'resultat', 's')
+box(ax, 3, 36, 38, 22, 'sujet')
+text(ax, 22, 52, r'$A$ = (1, 2 ; 2, 4)', 'sujet', 's')
+text(ax, 22, 46, r'$\det A=4-4=0$', 'sujet', 's')
+text(ax, 22, 40, 'dégénérée', 'limite', 's')
+text(ax, 22, 22, r'$Az=0$ pour tout', 'resultat', 's'); text(ax, 22, 17.5, 'vecteur du radical', 'resultat', 's')
+save(fig, '71-211')

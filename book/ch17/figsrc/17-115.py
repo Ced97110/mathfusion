@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+text(ax, 44, 92, r'$x > x + 1$', 'sujet', 'l')
+text(ax, 2, 80, 'gauche', 'fixe', 's', ha='left'); box(ax, 24, 77, 36, 6, 'varie', label=r'$x$')
+text(ax, 2, 69, 'droite', 'fixe', 's', ha='left'); box(ax, 24, 66, 36, 6, 'varie'); box(ax, 60, 66, 8, 6, 'sujet', label='1')
+text(ax, 72, 69, r'$x+1$', 'sujet', 's', ha='left')
+arrow(ax, (44, 62), (44, 50), 'varie')
+text(ax, 48, 56, r'on retire $x$', 'varie', 's', ha='left')
+text(ax, 2, 42, 'gauche', 'fixe', 's', ha='left'); box(ax, 24, 39, 8, 6, 'fixe', fill=False, dash=True, label='0')
+text(ax, 2, 31, 'droite', 'fixe', 's', ha='left'); box(ax, 24, 28, 8, 6, 'sujet', label='1')
+box(ax, 14, 6, 60, 10, 'limite', label=r'$0 > 1$ : faux pour tout $x$')
+arrow(ax, (44, 26), (44, 17.5), 'limite')
+save(fig, '17-115')

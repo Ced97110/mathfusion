@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 60, 'naturels', 'sujet', 'm'); text(ax, 22, 52, '3 + 2 = 5', 'sujet', 'l')
+text(ax, 66, 60, 'couples (u, 0)', 'resultat', 'm'); text(ax, 66, 52, r'$(3,0)+(2,0)=(5,0)$', 'resultat', 's')
+arrow(ax, (36, 52), (46, 52), 'varie', both=True)
+box(ax, 2, 4, 84, 36, 'fixe', fill=True)
+text(ax, 12, 35, 'ℤ', 'fixe', 'xl')
+box(ax, 26, 8, 56, 22, 'resultat', label='ℕ : les (u, 0)', size='m')
+text(ax, 54, 36, 'ℕ est une partie de ℤ', 'fixe', 's')
+save(fig, '13-117')

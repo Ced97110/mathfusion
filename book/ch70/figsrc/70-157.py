@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+line(ax, [(3, 27), (41, 27)], 'fixe', lw=1.2)
+text(ax, 38, 23, 'les réels', 'fixe', 's')
+disc(ax, 22, 42, 1.6, 'sujet'); text(ax, 27, 42, r'$b$', 'sujet', 'm')
+disc(ax, 22, 12, 1.6, 'autre'); text(ax, 31, 12, r'$\bar{b}=-b$', 'autre', 'm')
+arrow(ax, (22, 39.5), (22, 14.5), 'varie', both=True)
+text(ax, 31, 35, 'conjugué', 'varie', 's')
+box(ax, 46, 48, 40, 10, 'fixe', label=r'$f=y^2+1$ : coefficients réels', size='s')
+box(ax, 46, 31, 40, 10, 'sujet', label=r'$b^2=-1$ donc $f(b)=0$', size='s')
+box(ax, 46, 14, 40, 10, 'autre', label=r'$\bar{b}^2=-1$ donc $f(\bar{b})=0$', size='s')
+save(fig, '70-157')

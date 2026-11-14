@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 49, r'un nombre de $E=\mathbb{Q}(\sqrt{5})$', 'encre', 'm')
+box(ax, 4, 28, 14, 11, 'sujet', label=r'$a$', size='l')
+text(ax, 25, 33.5, r'$\times\,1$', 'encre', 'm')
+text(ax, 39, 33.5, '+', 'encre', 'l')
+box(ax, 47, 28, 14, 11, 'sujet', label=r'$b$', size='l')
+text(ax, 72, 33.5, r'$\times\,\sqrt{5}$', 'encre', 'm')
+brace(ax, 4, 61, 26, 'sujet', label=r'2 coordonnées dans $F$', down=True)
+text(ax, 44, 8, r'$[E:F]=2$', 'resultat', 'xl', weight='bold')
+save(fig, '64-057')

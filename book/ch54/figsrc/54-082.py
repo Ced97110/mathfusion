@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 3, 82, 52, 'fixe')
+text(ax, 44, 50, r'suites d’éléments de $R$', 'fixe', 's')
+box(ax, 7, 7, 38, 38, 'sujet')
+text(ax, 26, 40, r'$R$[x]', 'sujet', 'm', weight='bold')
+text(ax, 26, 33.5, 'suites qui s’arrêtent', 'sujet', 's')
+box(ax, 9.5, 14, 33, 12, 'resultat', label='(3, 0, 0, 2, 0, …)', size='s')
+box(ax, 51, 18, 31, 12, 'limite', label='(1, 1, 1, …)', size='s')
+text(ax, 66.5, 36, r'hors $R$[x]', 'limite', 's')
+text(ax, 66.5, 12, 'ne s’arrête jamais', 'limite', 's')
+save(fig, '54-082')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 34, 58, 20, 11, role='sujet', fill=True, label=r'$y=4$', size='l')
+arrow(ax, (38, 58), (22, 51), 'fixe'); arrow(ax, (50, 58), (66, 51), 'varie')
+box(ax, 2, 38, 42, 12, role='fixe', fill=True, label=r'$\sqrt{y^5}=\sqrt{1024}$', size='s')
+box(ax, 46, 38, 40, 12, role='varie', fill=True, label=r'$y^2\sqrt{y}=16\times2$', size='s')
+arrow(ax, (22, 38), (22, 24), 'fixe'); arrow(ax, (66, 38), (66, 24), 'varie')
+text(ax, 25, 31, 'calcul direct', 'fixe', 's', ha='left'); text(ax, 69, 31, 'méthode', 'varie', 's', ha='left')
+box(ax, 12, 12, 20, 12, role='resultat', fill=True, label='32', size='l')
+box(ax, 56, 12, 20, 12, role='resultat', fill=True, label='32', size='l')
+text(ax, 44, 18, '=', 'resultat', 'l')
+save(fig, '22-080')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# 3 + 2i, puis + (1 + 4i) : le point est décalé de 1 vers la droite et de 4 vers le haut
+fig, ax = canvas(68)
+ox, oy, u = 12, 8, 8
+arrow(ax, (ox - 4, oy), (ox + 46, oy), 'fixe', lw=0.9)
+arrow(ax, (ox, oy - 3), (ox, oy + 54), 'fixe', lw=0.9)
+Z = (ox + 3 * u, oy + 2 * u)
+R = (ox + 4 * u, oy + 6 * u)
+line(ax, [Z, (R[0], Z[1])], 'varie', lw=1.2, dash=True)
+line(ax, [(R[0], Z[1]), R], 'varie', lw=1.2, dash=True)
+arrow(ax, Z, (R[0] - 0.3, R[1] - 1.5), 'varie', lw=1.4)
+disc(ax, Z[0], Z[1], 1.6, 'sujet')
+disc(ax, R[0], R[1], 1.6, 'resultat')
+text(ax, Z[0] - 3, Z[1] - 1, '3 + 2i', 'sujet', 'm', ha='right', weight='bold')
+text(ax, R[0], R[1] + 4.5, '4 + 6i', 'resultat', 'm', weight='bold')
+text(ax, (Z[0] + R[0]) / 2, Z[1] - 3.5, '+1', 'varie', 'm')
+text(ax, R[0] + 3, (Z[1] + R[1]) / 2, '+4', 'varie', 'm', ha='left')
+text(ax, 70, 60, 'addition :\nun décalage', 'varie', 'm')
+box(ax, 54, 14, 32, 13, 'fixe', dash=True, label='multiplication :\npas encore lue', size='s')
+save(fig, '39-052')

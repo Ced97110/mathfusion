@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+text(ax, 44, 40, r'$3/5 + 5/12 \approx 1/2 + 1/2 = 1$', 'varie', 'l')
+line(ax, [(6, 22), (82, 22)], 'fixe')
+disc(ax, 30, 22, 1.6, 'varie'); disc(ax, 46, 22, 1.6, 'resultat')
+text(ax, 30, 28, 'estimation : 1', 'varie', 'm')
+brace(ax, 30, 46, 19, 'fixe', label='écart 1/60', down=True)
+text(ax, 46, 9, 'exact : 61/60', 'resultat', 'm')
+text(ax, 82, 28, 'vue agrandie', 'fixe', 's', ha='right')
+save(fig, '10-068')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 48, 36, 9, 'sujet', label=r'$x=(1,1,1,1)$')
+text(ax, 44, 52.5, r'$\times$', size='l')
+box(ax, 49, 48, 36, 9, 'autre', label=r'$\bar{x}=(1,-1,-1,-1)$')
+arrow(ax, (44, 46), (44, 40), 'varie')
+box(ax, 3, 27, 38, 10, 'resultat', label=r'$1^2+1^2+1^2+1^2$')
+box(ax, 47, 27, 38, 10, 'varie', label=r'$ij-ij=0$')
+text(ax, 22, 23, 'les carrés restent', 'resultat', 's')
+text(ax, 66, 23, 'les mêlés se détruisent', 'varie', 's')
+arrow(ax, (22, 20), (30, 14), 'resultat'); arrow(ax, (66, 20), (58, 14), 'varie')
+box(ax, 10, 3, 68, 10, 'fixe', label=r'$\bar{x}\,x=4\cdot1=Q(x)\,1$')
+save(fig, '78-083')

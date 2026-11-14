@@ -1,0 +1,186 @@
+[
+ {
+  "code": "33-065",
+  "a_dire": "L'arctangente accepte n'importe quel nombre, car la tangente prend toutes les valeurs, alors que sinus et cosinus restent entre −1 et 1.",
+  "legende_titre": "Tous les nombres, pas seulement −1 à 1",
+  "lecture": [
+   "Le trait bleu épais sur la première droite couvre de −1 à 1 : c'est la place du sinus et du cosinus.",
+   "La flèche verte de la seconde droite va dans les deux sens sans fin : c'est la tangente.",
+   "Les trois points verts sont les pentes 0,08, 1 et 1 000."
+  ],
+  "a_voir": "Le bleu s'arrête à −1 et 1, le vert ne s'arrête jamais."
+ },
+ {
+  "code": "33-066",
+  "a_dire": "arctan 1 = π/4 (45°) et arctan(−1) = −π/4 (−45°) : les deux points retenus sont sur la moitié droite du cercle.",
+  "legende_titre": "Deux pentes, deux angles",
+  "lecture": [
+   "Le cercle gris a pour rayon 1 ; son arc bleu épais est la moitié droite.",
+   "Les deux droites orange ont pour pente 1 et −1.",
+   "Les points verts sont là où chaque droite coupe l'arc bleu ; l'arc vert en donne l'angle, 45° et −45°."
+  ],
+  "a_voir": "Chaque pente donne un point sur l'arc bleu, donc un angle."
+ },
+ {
+  "code": "33-067",
+  "a_dire": "arctan(−1) = −π/4, soit −45° : on garde le point de la moitié droite, pas celui de 135°.",
+  "legende_titre": "Deux points sur la droite, un seul retenu",
+  "lecture": [
+   "La droite orange de pente −1 coupe le cercle en deux points opposés.",
+   "Le point vert est à −45°, sur l'arc bleu de la moitié droite : c'est lui qu'on garde.",
+   "Le point rouge est à 135°, à gauche : il n'est pas retenu."
+  ],
+  "a_voir": "Seul le point de l'arc bleu donne la réponse."
+ },
+ {
+  "code": "33-068",
+  "a_dire": "La réciproque échange les coordonnées : si (a, b) est sur le sinus, alors (b, a) est sur l'arcsinus.",
+  "legende_titre": "Le point (a, b) devient (b, a)",
+  "lecture": [
+   "À gauche, la courbe bleue est le sinus restreint avec son point (a, b).",
+   "À droite, la courbe orange est l'arcsinus avec son point (b, a).",
+   "La flèche verte « échange » relie les deux : sin a = b devient arcsin b = a."
+  ],
+  "a_voir": "Les deux nombres du point changent de place."
+ },
+ {
+  "code": "33-069",
+  "a_dire": "Les courbes du sinus et de l'arcsinus sont symétriques par rapport à la droite y = x ; A et A′ ont les coordonnées échangées.",
+  "legende_titre": "Deux courbes qui se reflètent",
+  "lecture": [
+   "La courbe bleue est le sinus, large.",
+   "La courbe orange est l'arcsinus, haute.",
+   "La droite grise en tirets est y = x, entre les deux.",
+   "Le trait vert relie A, sur le bleu, à A′, sur l'orange : ils sont de part et d'autre de la droite."
+  ],
+  "a_voir": "L'orange est le reflet du bleu dans la droite grise."
+ },
+ {
+  "code": "33-070",
+  "a_dire": "(b, a) est le symétrique de (a, b) par rapport à y = x, car les points de cette droite sont à égale distance des deux.",
+  "legende_titre": "Même distance aux deux points",
+  "lecture": [
+   "Le point bleu est (1, 3) et le point orange est (3, 1).",
+   "La droite grise en tirets est y = x ; le point vert, le milieu des deux, est dessus, avec deux traits à une marque de même longueur.",
+   "Le point (0, 0) est aussi sur la droite : ses deux traits à deux marques ont la même longueur, de distance au carré 10."
+  ],
+  "a_voir": "Un point de la droite est à la même distance des deux points."
+ },
+ {
+  "code": "33-071",
+  "a_dire": "Un point (t, t) de y = x est à la même distance de (a, b) et de (b, a), car les deux sommes de carrés sont les mêmes carrés dans un autre ordre.",
+  "legende_titre": "Deux sommes, mêmes carrés",
+  "lecture": [
+   "Le triangle bleu relie le point (0, 0) de la droite à (1, 3) : ses côtés valent 1 et 3.",
+   "Le triangle orange relie le même point à (3, 1) : ses côtés valent 3 et 1.",
+   "Les sommes 1² + 3² et 3² + 1² sont écrites près de chaque triangle : mêmes carrés, ordre différent.",
+   "Le point vert (t, t) est un autre point de la droite : ses deux traits ont la même marque, donc la même longueur."
+  ],
+  "a_voir": "Tout point de la droite est à la même distance des deux points : ils sont symétriques par rapport à y = x."
+ },
+ {
+  "code": "33-072",
+  "a_dire": "La courbe de la réciproque est la symétrique de la courbe de départ par rapport à y = x, point par point.",
+  "legende_titre": "Chaque point a son symétrique",
+  "lecture": [
+   "La courbe bleue est le sinus restreint ; la courbe orange est l'arcsinus.",
+   "Chaque flèche verte joint un point bleu à son symétrique orange, de l'autre côté de la droite grise y = x.",
+   "Le point (π/6 ; 0,5) du bleu a pour symétrique (0,5 ; π/6) sur l'orange."
+  ],
+  "a_voir": "Chaque point bleu a un point orange, de l'autre côté de y = x."
+ },
+ {
+  "code": "33-073",
+  "a_dire": "Le point A = (π/2, 1) du sinus devient A′ = (1, π/2) de l'arcsinus.",
+  "legende_titre": "A devient A′",
+  "lecture": [
+   "La courbe bleue est le sinus ; A en est le point le plus haut, à l'abscisse π/2 et à la hauteur 1.",
+   "La courbe orange est l'arcsinus ; A′ en est le point le plus à droite, à l'abscisse 1 et à la hauteur π/2.",
+   "La flèche verte va de A à A′ ; les tirets montrent les nombres 1 et π/2 sur chaque axe."
+  ],
+  "a_voir": "Les nombres 1 et π/2 changent de place entre A et A′."
+ },
+ {
+  "code": "33-074",
+  "a_dire": "Le sinus restreint prend des angles et rend des nombres ; l'arcsinus prend ces nombres et rend ces angles.",
+  "legende_titre": "Entrées et sorties permutées",
+  "lecture": [
+   "Les cases bleues sont les angles de −π/2 à π/2.",
+   "Les cases orange sont les nombres de −1 à 1.",
+   "Dans la ligne du sinus restreint, le bleu est à l'entrée et l'orange à la sortie ; dans la ligne de l'arcsinus, c'est l'inverse."
+  ],
+  "a_voir": "Les deux ensembles sont les mêmes, mais échangent leur place."
+ },
+ {
+  "code": "33-075",
+  "a_dire": "L'arcsinus et l'arccosinus s'arrêtent à −1 et 1 ; l'arctangente s'étend sur toute la largeur, entre −π/2 et π/2.",
+  "legende_titre": "Où s'arrête chaque courbe",
+  "lecture": [
+   "La courbe bleue est l'arcsinus ; elle va de −1 à 1.",
+   "La courbe orange est l'arccosinus ; elle va aussi de −1 à 1.",
+   "La courbe verte est l'arctangente ; elle continue de chaque côté.",
+   "Les deux tirets gris sont à π/2 et −π/2 ; la verte reste entre eux."
+  ],
+  "a_voir": "Bleu et orange ont des bouts, le vert n'en a pas."
+ },
+ {
+  "code": "33-076",
+  "a_dire": "L'arcsinus monte de −π/2 à π/2 quand x va de −1 à 1.",
+  "legende_titre": "L'arcsinus monte",
+  "lecture": [
+   "La courbe bleue est l'arcsinus.",
+   "La flèche orange du bas montre x qui va de −1 à 1.",
+   "La flèche orange de droite montre l'angle qui va de −π/2 à π/2.",
+   "Les trois points bleus sont (−1 ; −π/2), (0 ; 0) et (1 ; π/2)."
+  ],
+  "a_voir": "Quand x augmente, l'angle augmente aussi."
+ },
+ {
+  "code": "33-077",
+  "a_dire": "L'arccosinus descend de π à 0 quand x va de −1 à 1, parce que sur la moitié haute du cercle l'abscisse baisse quand l'angle augmente.",
+  "legende_titre": "L'arccosinus descend",
+  "lecture": [
+   "L’arc bleu épais est la moitié haute du cercle, celle qu’on choisit.",
+   "La flèche orange à l’intérieur montre l’angle qui va de 0° à 180°.",
+   "La flèche verte montre l’abscisse qui va de 1 à −1.",
+   "Dessous, la courbe orange descend de π à 0 quand x va de −1 à 1 ; le point vert du cercle et celui de la courbe se correspondent."
+  ],
+  "a_voir": "L’angle augmente, l’abscisse baisse, et la courbe de l’arccosinus descend."
+ },
+ {
+  "code": "33-078",
+  "a_dire": "L'arctangente monte sur tous les nombres et s'approche de π/2 et −π/2 sans jamais les atteindre.",
+  "legende_titre": "Elle s'approche sans toucher",
+  "lecture": [
+   "La courbe verte est l'arctangente ; elle monte de gauche à droite.",
+   "Le point vert est la pente 1, d'angle 45°.",
+   "Les deux tirets gris sont à π/2 (90°) et −π/2 (−90°).",
+   "La petite flèche orange montre l'écart qui reste entre la courbe et le tiret."
+  ],
+  "a_voir": "La verte se rapproche des tirets sans les toucher."
+ },
+ {
+  "code": "33-079",
+  "a_dire": "La notation sin⁻¹ x est une autre écriture de arcsin x : elle désigne la règle qui défait le sinus.",
+  "legende_titre": "Deux écritures, une règle",
+  "lecture": [
+   "La case bleue est l'écriture anglaise sin⁻¹ x ; la case violette est arcsin x.",
+   "Le signe = dit que les deux désignent la même règle.",
+   "Le texte sous la case bleue dit ce que veut dire le petit −1 : défaire le sinus.",
+   "La case verte montre la touche de la calculatrice : 0,5 donne 30°."
+  ],
+  "a_voir": "Les deux écritures donnent le même résultat : 30°."
+ },
+ {
+  "code": "33-080",
+  "a_dire": "La notation cos⁻¹ x est une autre écriture de arccos x : elle remplace la phrase « l'angle de la moitié haute du cercle dont le cosinus vaut x ».",
+  "legende_titre": "Une écriture courte pour une phrase",
+  "lecture": [
+   "La case grise du haut est la phrase en mots.",
+   "La flèche orange « s'écrit » mène aux deux écritures : cos⁻¹ x en bleu et arccos x en violet.",
+   "Le signe = dit qu'elles désignent la même règle.",
+   "La case verte montre la touche de la calculatrice : 0,5 donne 60°."
+  ],
+  "a_voir": "Le petit signe remplace toute la phrase du haut."
+ }
+]

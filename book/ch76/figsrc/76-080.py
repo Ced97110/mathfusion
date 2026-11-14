@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+text(ax, 44, 48, 'le nombre agit en dernier', 'varie', 's')
+for x, lab, r in [(4, '$x$', 'sujet'), (34, '$xy$', 'sujet'), (64, '$a(xy)$', 'resultat')]: box(ax, x, 33, 20, 9, r, label=lab)
+arrow(ax, (25, 37.5), (33, 37.5), 'encre'); text(ax, 29, 44, r'$\times y$', 'encre', 's')
+arrow(ax, (55, 37.5), (63, 37.5), 'varie'); text(ax, 59, 44, r'$\times a$', 'varie', 's')
+text(ax, 44, 22, 'le nombre agit en premier', 'varie', 's')
+for x, lab, r in [(4, '$x$', 'sujet'), (34, '$ax$', 'varie'), (64, '$(ax)y$', 'autre')]: box(ax, x, 6, 20, 9, r, label=lab)
+arrow(ax, (25, 10.5), (33, 10.5), 'varie'); text(ax, 29, 17.5, r'$\times a$', 'varie', 's')
+arrow(ax, (55, 10.5), (63, 10.5), 'encre'); text(ax, 59, 17.5, r'$\times y$', 'encre', 's')
+save(fig, '76-080')

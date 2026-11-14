@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+for k, s in enumerate([r'$\mathbb{Z}$', r'$\mathbb{Z}[i]$', r'$F[x]$']):
+    box(ax, 3 + k * 29, 52, 24, 9, 'fixe', label=s, size='m')
+    arrow(ax, (15 + k * 29, 52), (44 + (k - 1) * 3, 42), 'fixe')
+text(ax, 44, 37, 'mêmes divisions avec reste', 'varie', 's')
+box(ax, 2, 20, 20, 10, 'sujet', label=r'$x^2-1$')
+text(ax, 25.5, 25, '=', 'encre', 'm')
+box(ax, 29, 20, 18, 10, 'autre', label=r'$x-1$')
+text(ax, 51, 25, r'$\times$', 'encre', 'm')
+box(ax, 55, 20, 18, 10, 'varie', label=r'$x+1$')
+text(ax, 77, 25, '+', 'encre', 'm')
+box(ax, 80, 20, 7, 10, 'resultat', label='0')
+text(ax, 44, 8, r'pgcd $=x-1$ (dernier diviseur)', 'resultat', 's')
+save(fig, '56-208')

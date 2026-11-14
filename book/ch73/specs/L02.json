@@ -1,0 +1,195 @@
+[
+ {
+  "code": "73-017",
+  "a_dire": "Quatre transformations du même carré donnent quatre images, et le déterminant de chacune (1, 2, −1, 1) est écrit sous elle ; le point A est l'image de (1, 0).",
+  "legende_titre": "Le même carré après quatre transformations",
+  "lecture": [
+   "Le contour gris est le carré de départ, le même dans les quatre cases.",
+   "La surface colorée est son image : bleue pour la rotation, orange pour la dilatation, rouge pour la réflexion, verte pour le cisaillement.",
+   "Le point noir A est l'image du point (1, 0) dans chaque case.",
+   "Sous chaque case, le nombre det est le déterminant : 1, 2, −1 et 1."
+  ],
+  "a_voir": "Rotation et cisaillement ont le même déterminant 1 mais des images de formes différentes."
+ },
+ {
+  "code": "73-018",
+  "a_dire": "Une rotation de 30° donne un carré tourné qui reste un carré de côté 1 et d'aire 1 ; le point (1, 0) va environ en (0,87 ; 0,5).",
+  "legende_titre": "Un carré tourné de 30° autour de l'origine",
+  "lecture": [
+   "Le contour gris est le carré de départ.",
+   "Le grand carré bleu est son image après la rotation.",
+   "L'arc orange mesure l'angle de 30° au pied du carré.",
+   "Le point gris est (1, 0) ; le point noir A est son image."
+  ],
+  "a_voir": "Le carré tourné reste un carré de même taille, donc d'aire 1."
+ },
+ {
+  "code": "73-019",
+  "a_dire": "La dilatation (x, y) ↦ (2x, y) double la largeur, garde la hauteur 1, et l'aire passe de 1 à 2.",
+  "legende_titre": "Le carré devient un rectangle deux fois plus large",
+  "lecture": [
+   "La case grise de gauche est le carré : largeur 1, hauteur 1, aire 1.",
+   "Les deux cases orange de droite forment le rectangle : largeur 2, hauteur 1, aire 2.",
+   "La flèche orange ×2 relie le carré au rectangle.",
+   "Le trait gris à droite montre que la hauteur reste 1."
+  ],
+  "a_voir": "Deux cases au lieu d'une : le facteur 2 sur la largeur est le facteur 2 sur l'aire."
+ },
+ {
+  "code": "73-020",
+  "a_dire": "Le cisaillement (x, y) ↦ (x + y, y) envoie le carré sur un parallélogramme de base 1 et de hauteur 1, donc d'aire 1.",
+  "legende_titre": "Le carré penché en parallélogramme",
+  "lecture": [
+   "Le contour gris est le carré de départ.",
+   "Le parallélogramme vert est son image ; ses sommets du haut sont (1, 1) et (2, 1).",
+   "L'accolade verte donne la base 1 ; le trait pointillé gris donne la hauteur 1.",
+   "Le nombre au centre dit que l'aire reste 1."
+  ],
+  "a_voir": "Le côté du haut a glissé vers la droite, mais base et hauteur valent toujours 1."
+ },
+ {
+  "code": "73-021",
+  "a_dire": "La réflexion (x, y) ↦ (−x, y) envoie le point (3, 2) en (−3, 2), de l'autre côté de l'axe vertical, à la même distance ; un point de l'axe ne bouge pas.",
+  "legende_titre": "Le miroir de l'axe vertical",
+  "lecture": [
+   "Le trait pointillé gris est l'axe vertical.",
+   "Le point bleu (3, 2) est envoyé sur le point rouge (−3, 2) par la flèche orange.",
+   "Le point gris (0, 2) est sur l'axe : il reste en place.",
+   "Le carré bleu à droite a pour image le carré rouge à gauche."
+  ],
+  "a_voir": "Seule la première coordonnée change de signe ; la hauteur 2 est gardée."
+ },
+ {
+  "code": "73-022",
+  "a_dire": "La valeur absolue du déterminant est l'aire de l'image du carré ; le signe dit si le carré est retourné (−1 : retourné).",
+  "legende_titre": "Aire et signe du déterminant",
+  "lecture": [
+   "La flèche orange est la première colonne, l'image de (1, 0) ; la flèche violette est la seconde, l'image de (0, 1).",
+   "À gauche, le cisaillement vert a pour déterminant 1 et une aire de 1 : il n'est pas retourné.",
+   "À droite, la réflexion rouge a pour déterminant −1 et une aire de 1 : elle est retournée.",
+   "La flèche orange pointe à gauche dans la réflexion, vers (−1, 0)."
+  ],
+  "a_voir": "Les deux aires valent 1 ; seul le signe distingue la figure retournée."
+ },
+ {
+  "code": "73-023",
+  "a_dire": "On écrit 𝔽_p = ℤ/pℤ pour l'ensemble des restes de la division par p premier ; avec p = 5 : restes 0 à 4, 3 + 4 donne 2, 2 × 3 donne 1.",
+  "legende_titre": "Un nom pour les restes de la division par 5",
+  "lecture": [
+   "Les cinq ronds 0, 1, 2, 3, 4 sont les restes possibles, placés en cercle.",
+   "Les flèches orange partent de 3 et font 4 pas : on arrive sur 2, comme 3 + 4 = 7 a pour reste 2.",
+   "Les ronds verts 2 et 3 sont ceux de l'exemple 2 × 3 = 6, de reste 1.",
+   "Le texte en haut à gauche donne l'écriture avec p = 5."
+  ],
+  "a_voir": "Après 4 pas depuis 3, on retombe sur 2 : on calcule avec les restes."
+ },
+ {
+  "code": "73-024",
+  "a_dire": "F* est F sans le 0 ; c'est un groupe pour la multiplication (neutre 1, chaque élément a un inverse), alors que F avec la multiplication n'en est pas un.",
+  "legende_titre": "Retirer le 0 pour obtenir un groupe",
+  "lecture": [
+   "Les cinq ronds 0 à 4 sont le corps des restes de la division par 5.",
+   "Le rond rouge 0 n'a pas d'inverse ; l'accolade bleue F* regroupe seulement 1, 2, 3, 4.",
+   "Le 1 est le neutre ; la flèche verte relie 2 et 3, dont le produit est 1.",
+   "Le 4 est son propre inverse : 4 fois 4 donne 1."
+  ],
+  "a_voir": "L'accolade bleue commence après le 0 : sans lui, chaque élément a un inverse."
+ },
+ {
+  "code": "73-025",
+  "a_dire": "Une transformation réversible se défait : chaque arrivée vient d'un seul départ ; l'écrasement envoie deux points sur le même et ne se défait pas.",
+  "legende_titre": "Se défaire ou non d'une transformation",
+  "lecture": [
+   "À gauche, le point bleu (2, 2) va en (4, 2) par la flèche orange du cisaillement.",
+   "La flèche verte ramène de (4, 2) à (2, 2) : on revient au départ.",
+   "À droite, les deux points bleus (3, 2) et (3, 1) vont tous deux sur le point rouge (3, 0).",
+   "Comme deux départs donnent la même arrivée, on ne sait pas d'où l'on vient."
+  ],
+  "a_voir": "Deux flèches qui arrivent au même point empêchent de revenir en arrière."
+ },
+ {
+  "code": "73-026",
+  "a_dire": "GL_n(F) est l'ensemble des matrices n × n inversibles à coefficients dans F ; avec 0 et 1 et n = 2, il y a 16 matrices dont 6 inversibles.",
+  "legende_titre": "Nommer les matrices que l'on peut défaire",
+  "lecture": [
+   "Chaque case est une matrice 2 sur 2 ; un carré plein est un 1, un carré vide est un 0.",
+   "Les 6 cases bleues sont les matrices que l'on peut défaire.",
+   "Les 10 cases rouges sont celles qui écrasent le plan.",
+   "Le nom en bas désigne seulement les 6 cases bleues."
+  ],
+  "a_voir": "Sur 16 matrices, seules 6 sont inversibles."
+ },
+ {
+  "code": "73-027",
+  "a_dire": "GL_n(F) est un groupe : le produit de deux inversibles est inversible, la matrice identité est neutre, chaque matrice a un inverse ; sans l'hypothèse « inversible », l'écrasement n'a pas d'inverse.",
+  "legende_titre": "Pourquoi il faut garder seulement les inversibles",
+  "lecture": [
+   "Dans la case rouge, les points (3, 1) et (3, 2) vont tous deux sur (3, 0) : cette matrice n'a pas d'inverse.",
+   "Avec toutes les matrices, ce n'est donc pas un groupe.",
+   "Dans la case verte, trois cases donnent les conditions du groupe : produit, neutre, inverse.",
+   "Chaque case a son petit dessin : des flèches qui se suivent, une flèche qui revient sur son point, une flèche aller et une flèche retour."
+  ],
+  "a_voir": "Seules les matrices inversibles donnent un groupe : produit, neutre et inverse."
+ },
+ {
+  "code": "73-028",
+  "a_dire": "Les lettres GL viennent de general linear (linéaire général) ; special ajoute une condition, le déterminant 1.",
+  "legende_titre": "Ce que veulent dire les lettres GL",
+  "lecture": [
+   "Le G bleu renvoie au mot anglais general, « général » : une seule condition, être inversible.",
+   "Le L bleu renvoie à linear, « linéaire » : les matrices des transformations linéaires.",
+   "Le S violet renvoie à special, « spécial » : une condition en plus, le déterminant 1.",
+   "Chaque flèche relie une lettre à son mot."
+  ],
+  "a_voir": "Chaque lettre est le début d'un mot, ce n'est pas un code au hasard."
+ },
+ {
+  "code": "73-029",
+  "a_dire": "GL_2(ℝ) contient les transformations réversibles du plan qui fixent l'origine et envoient les droites sur des droites ; le cisaillement en est un exemple.",
+  "legende_titre": "Une matrice inversible est un mouvement du plan",
+  "lecture": [
+   "Les quatre cases montrent quatre transformations : rotation, dilatation, réflexion, cisaillement.",
+   "Dans chaque case, le point noir O reste à sa place.",
+   "La droite bleue verticale devient la droite verte : c'est toujours une droite.",
+   "Les déterminants 1, 2, −1 et 1 ne sont pas nuls : les transformations sont réversibles."
+  ],
+  "a_voir": "Chaque transformation garde O fixe et envoie une droite sur une droite."
+ },
+ {
+  "code": "73-030",
+  "a_dire": "Le déterminant d'un produit est le produit des déterminants : doubler les largeurs (2) puis tripler les hauteurs (3) multiplie l'aire par 6, pas par 5.",
+  "legende_titre": "Les facteurs d'aire se multiplient",
+  "lecture": [
+   "La case bleue est le carré d'aire 1.",
+   "Après B, la colonne orange de 3 cases a une aire de 3.",
+   "Après A, le rectangle vert de 6 cases a une aire de 6.",
+   "Le texte du bas écrit 2 fois 3 égale 6, pas 5."
+  ],
+  "a_voir": "Compte les cases : 1, puis 3, puis 6, soit 2 fois 3."
+ },
+ {
+  "code": "73-031",
+  "a_dire": "Le déterminant va de GL_n(F) vers F* et transforme un produit en produit : 2 et 3 donnent 6 ; l'écrasement de déterminant 0 sort de F*.",
+  "legende_titre": "Le déterminant envoie un produit sur un produit",
+  "lecture": [
+   "L'ovale bleu contient les matrices inversibles A, B et AB.",
+   "L'ovale vert contient les nombres non nuls 2, 3 et 6.",
+   "Les flèches orange envoient chaque matrice sur son déterminant ; AB va sur 6, produit de 2 et 3.",
+   "La flèche rouge envoie l'écrasement sur 0, qui est hors de l'ovale vert."
+  ],
+  "a_voir": "Le produit AB va sur 6 : le produit des matrices donne le produit des nombres."
+ },
+ {
+  "code": "73-032",
+  "a_dire": "La flèche → relie deux ensembles et se lit « va de … dans … » ; la flèche ↦ relie deux éléments, comme D et son déterminant 2.",
+  "legende_titre": "Lire la flèche entre deux ensembles",
+  "lecture": [
+   "La case bleue de gauche est l'ensemble de départ, celle de droite en vert est l'ensemble d'arrivée.",
+   "La grosse flèche orange det va d'une case à l'autre : elle relie deux ensembles.",
+   "Le point D est dans l'ensemble de départ, le point 2 dans celui d'arrivée.",
+   "La fine flèche noire à barre relie ces deux éléments : D est envoyée sur 2.",
+   "En bas, les deux flèches sont rappelées avec ce qu'elles relient."
+  ],
+  "a_voir": "La grosse flèche relie des ensembles, la fine flèche relie des éléments."
+ }
+]

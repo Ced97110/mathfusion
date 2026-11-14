@@ -1,0 +1,178 @@
+[
+ {
+  "code": "47-129",
+  "a_dire": "Dire que gN = Ng pour tout g : les deux classes ont les mêmes éléments, on le teste pour chaque g.",
+  "legende_titre": "Deux côtés, mêmes éléments",
+  "lecture": [
+   "Les huit cases du haut sont les éléments de gN, celles du bas sont ceux de Ng.",
+   "Les quatre cases grises sont les rotations, les quatre cases colorées sont les retournements.",
+   "Les flèches vertes relient chaque case colorée du haut à la même case du bas."
+  ],
+  "a_voir": "Les cases colorées sont les mêmes en haut et en bas."
+ },
+ {
+  "code": "47-130",
+  "a_dire": "Conjuguer les éléments de N par g ne les fait jamais sortir de N.",
+  "legende_titre": "Conjuguer sans sortir",
+  "lecture": [
+   "Le grand cadre bleu est N et ses quatre cercles sont 1, r, r² et r³.",
+   "La flèche orange échange r et r³ pour g = s ; 1 et r² restent en place.",
+   "Le cadre rouge en pointillés est hors de N : aucune flèche n'y arrive."
+  ],
+  "a_voir": "Tous les conjugués restent dans le cadre N."
+ },
+ {
+  "code": "47-131",
+  "a_dire": "Conjuguer N par g donne exactement N : les éléments sont échangés, aucun n'est perdu ni répété.",
+  "legende_titre": "Même ensemble, autre ordre",
+  "lecture": [
+   "La ligne orange du haut est le résultat de la conjugaison de chaque élément par s.",
+   "La ligne bleue du bas est N.",
+   "Chaque flèche verte relie un résultat au même élément de N ; chaque case du bas reçoit une seule flèche."
+  ],
+  "a_voir": "Chaque case du bas reçoit exactement une flèche."
+ },
+ {
+  "code": "47-132",
+  "a_dire": "La preuve part de g⁻¹ng ∈ N pour tout g, et remplace g par g⁻¹ pour obtenir la deuxième inclusion et l'égalité gN = Ng.",
+  "legende_titre": "Deux inclusions, une égalité",
+  "lecture": [
+   "Le premier couple montre Ng dans gN, obtenu avec g.",
+   "Le deuxième couple montre gN dans Ng, obtenu en remplaçant g par g⁻¹ (en orange, l'étape qui porte).",
+   "En bas, les deux inclusions donnent l'égalité en vert."
+  ],
+  "a_voir": "Il faut les deux inclusions pour avoir l'égalité."
+ },
+ {
+  "code": "47-133",
+  "a_dire": "Pour montrer que n est atteint, on applique l'hypothèse avec g⁻¹ : n' = g⁻¹ng est dans N et g n' g⁻¹ redonne n.",
+  "legende_titre": "n est bien atteint",
+  "lecture": [
+   "Le grand cadre bleu est N, avec deux éléments n et n'.",
+   "La flèche orange du haut va de n à n' : c'est g⁻¹ng, qui reste dans N.",
+   "La flèche orange du bas ramène de n' à n : c'est gn'g⁻¹."
+  ],
+  "a_voir": "En revenant par g, on retombe sur n."
+ },
+ {
+  "code": "47-134",
+  "a_dire": "Dans D₄, conjuguer par s échange r et r³ et laisse 1 et r² en place.",
+  "legende_titre": "Conjugués par s dans D₄",
+  "lecture": [
+   "La rangée du haut donne les quatre rotations 1, r, r², r³.",
+   "La rangée du bas donne leurs conjugués par s, aux mêmes cases.",
+   "Les flèches grises gardent 1 et r² en place ; les flèches orange croisées échangent r et r³."
+  ],
+  "a_voir": "Deux éléments restent, deux sont échangés."
+ },
+ {
+  "code": "47-135",
+  "a_dire": "Pour tester la normalité, on conjugue : si un conjugué sort de N on s'arrête (non), si aucun ne sort après tous les essais, c'est oui.",
+  "legende_titre": "Tester en conjuguant",
+  "lecture": [
+   "Le cadre bleu est N ; la flèche verte relie r et r³ qui restent dedans.",
+   "Le cadre rouge en pointillés est hors de N ; la flèche rouge montre un conjugué qui en sort.",
+   "En vert : tous restent dedans, donc normal. En rouge : un seul suffit pour dire non."
+  ],
+  "a_voir": "Une sortie arrête le test, aucune sortie donne oui."
+ },
+ {
+  "code": "47-136",
+  "a_dire": "Si N n'est pas normal, la relation a⁻¹b ∈ N n'est plus compatible avec le produit : des éléments liés ne le sont plus après multiplication.",
+  "legende_titre": "Sans normalité, plus de calcul",
+  "lecture": [
+   "Les deux cases bleues du haut, a = r et b = rs, sont liées (flèche verte).",
+   "Les flèches orange multiplient chacune par r à droite.",
+   "Les cases violettes du bas, r² et s, ne sont plus liées (pointillés rouges)."
+  ],
+  "a_voir": "Deux éléments liés ne le sont plus après le produit."
+ },
+ {
+  "code": "47-137",
+  "a_dire": "La relation « b est dans aN » est une relation d'équivalence : elle va dans les deux sens et de proche en proche, comme « même ligne ».",
+  "legende_titre": "Même ligne, liés",
+  "lecture": [
+   "Chaque cadre gris est une ligne de l'horloge à 12.",
+   "Les cercles bleus 1, 4 et 7 sont dans la même ligne.",
+   "Les flèches vertes vont dans les deux sens et relient les voisins de proche en proche."
+  ],
+  "a_voir": "Les nombres d'une même ligne sont tous liés entre eux."
+ },
+ {
+  "code": "47-138",
+  "a_dire": "La normalité permet de passer n₁ de l'autre côté de h, ce qui range le produit dans la classe de gh.",
+  "legende_titre": "n₁ passe de l'autre côté",
+  "lecture": [
+   "La rangée du haut est le produit g, n₁, h, n₂.",
+   "La flèche orange fait passer n₁ au-dessus de h.",
+   "La rangée du bas est g, h, n₃, n₂ : n₃ et n₂ sont dans N, donc le produit est dans la classe de gh."
+  ],
+  "a_voir": "Après le passage, il reste gh suivi d'éléments de N."
+ },
+ {
+  "code": "47-139",
+  "a_dire": "Dans un sous-groupe normal, n₁h = hn₃ avec n₃ un autre élément du même N : on échange l'ordre en changeant n₁ en n₃.",
+  "legende_titre": "Échanger l'ordre, rester dans N",
+  "lecture": [
+   "Les cases orange du haut sont n₁h et hn₃, reliées par un signe égal vert.",
+   "Le cadre bleu du bas est N, avec n₁ et n₃.",
+   "La flèche orange va de n₁ à n₃ : un autre élément de N."
+  ],
+  "a_voir": "n₃ est dans le même sous-groupe que n₁."
+ },
+ {
+  "code": "47-140",
+  "a_dire": "Chaque sous-groupe normal donne une congruence et chaque congruence donne un sous-groupe normal ; deux congruences différentes ont des sous-groupes différents.",
+  "legende_titre": "Congruences et sous-groupes",
+  "lecture": [
+   "Les cases orange de gauche sont les congruences « même reste modulo 3 » et « modulo 5 ».",
+   "Les points colorés sont les multiples de 3 (bleu) et de 5 (violet).",
+   "La double flèche verte relie chaque congruence à son sous-groupe."
+  ],
+  "a_voir": "Chaque congruence a son sous-groupe, et inversement."
+ },
+ {
+  "code": "47-141",
+  "a_dire": "Le groupe quotient G/N est le groupe des lignes ; il a 12 ÷ 4 = 3 éléments et se comporte comme l'horloge à 3 heures.",
+  "legende_titre": "Les lignes forment un groupe",
+  "lecture": [
+   "Les trois cases bleues sont les trois lignes de l'horloge à 12.",
+   "La flèche orange est la division par N.",
+   "Les trois cercles verts sont les éléments de G/N."
+  ],
+  "a_voir": "Les 3 lignes forment un nouveau groupe."
+ },
+ {
+  "code": "47-142",
+  "a_dire": "Le signe G/N écrit en peu de signes le groupe des classes de G modulo N, avec |G/N| = |G| ÷ |N|.",
+  "legende_titre": "Un signe pour les classes",
+  "lecture": [
+   "Le grand signe montre G en bleu, N en orange.",
+   "Chaque rangée de cases vertes donne les classes d'un exemple : 5, 2 et 3.",
+   "La formule du bas donne le nombre d'éléments du quotient."
+  ],
+  "a_voir": "Une seule écriture couvre tous les quotients."
+ },
+ {
+  "code": "47-143",
+  "a_dire": "Le produit de deux classes est la classe du produit de représentants : (gN)(hN) = ghN, et le résultat ne dépend pas des représentants.",
+  "legende_titre": "Produit de deux lignes",
+  "lecture": [
+   "La case bleue est la ligne de 1 et la case violette la ligne de 2.",
+   "Les flèches orange vont de 1 et 2 vers leur somme 3 ; les flèches grises de 4 et 5 vers 9.",
+   "La case verte est la ligne de 0 : 3 et 9 y sont tous deux."
+  ],
+  "a_voir": "Les deux choix tombent dans la même ligne."
+ },
+ {
+  "code": "47-144",
+  "a_dire": "La classe du neutre est N lui-même, et l'ajouter à une classe la laisse inchangée : 1N = N.",
+  "legende_titre": "Le neutre du quotient",
+  "lecture": [
+   "La case bleue est la ligne de 2.",
+   "La case grise est la ligne des multiples de 3, le neutre.",
+   "La case verte, à droite du signe égal, est la ligne de 2 inchangée."
+  ],
+  "a_voir": "Ajouter le neutre ne change pas la ligne."
+ }
+]

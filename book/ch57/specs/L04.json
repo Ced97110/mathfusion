@@ -1,0 +1,361 @@
+[
+ {
+  "code": "57-091",
+  "a_dire": "Les quatre règles d’un module sont les règles des multiples dans un groupe, que l’on connaît déjà.",
+  "legende_titre": "Quatre règles, quatre calculs sur 5 et 7",
+  "lecture": [
+   "En haut, vous lisez x = 5 et y = 7 dans ℤ.",
+   "Chaque ligne a sa règle écrite en bleu, avec des lettres.",
+   "Dans la boîte verte, la règle est vérifiée avec des nombres : les deux côtés donnent la même valeur.",
+   "La dernière ligne montre que 1 fois 5 donne 5."
+  ],
+  "a_voir": "Chaque règle du module est un calcul sur les multiples que vous savez déjà faire."
+ },
+ {
+  "code": "57-092",
+  "a_dire": "Sur l’horloge, 3 fois 5 heures se calcule par addition répétée et donne 3 heures : le ℤ-module est imposé, il n’y en a qu’un.",
+  "legende_titre": "3 fois 5 heures sur l’horloge",
+  "lecture": [
+   "Le cercle gris est l’horloge à 12 heures ; le disque bleu marque 0.",
+   "Les trois flèches orange ajoutent 5 heures chacune : on passe de 0 à 5, à 10, puis à 3 (disque vert).",
+   "À droite, 3·5 s’écrit 5 + 5 + 5, soit 15, c’est-à-dire 3 heures.",
+   "Le cadre vert dit que cette valeur est la seule possible."
+  ],
+  "a_voir": "Le résultat 3 heures est imposé par l’addition répétée."
+ },
+ {
+  "code": "57-093",
+  "a_dire": "La théorie des groupes abéliens est un cas particulier de celle des modules : un théorème sur les modules vaut sans nouvelle preuve pour un groupe abélien.",
+  "legende_titre": "Un théorème des modules sert à l’horloge",
+  "lecture": [
+   "Le cadre orange en haut est un théorème prouvé pour les modules.",
+   "Le grand cadre gris est la théorie des modules ; le cadre bleu à l’intérieur est celui de l’anneau ℤ, c’est-à-dire des groupes abéliens.",
+   "Le cadre vert est l’horloge à 12 heures, un groupe abélien.",
+   "La flèche orange va du théorème à l’horloge : il s’applique sans nouvelle preuve."
+  ],
+  "a_voir": "Les groupes abéliens sont un morceau de la théorie des modules."
+ },
+ {
+  "code": "57-094",
+  "a_dire": "Un module sur F[x] est un espace vectoriel muni d’une transformation linéaire T, qui joue le rôle de la lettre x.",
+  "legende_titre": "Un module sur F[x] : deux ingrédients",
+  "lecture": [
+   "Le cadre bleu nomme le premier ingrédient : l’espace V, des flèches.",
+   "Le cadre orange nomme le second : T, un quart de tour.",
+   "Dans le plan, la flèche bleue est v = (2 ; 1) et la petite flèche orange est Tv = (−1 ; 2).",
+   "Le polynôme 2x + 3 donne 3 fois v (tirets bleus), puis 2 fois Tv (flèche orange) : la flèche verte est (4 ; 7)."
+  ],
+  "a_voir": "Le polynôme agit avec deux ingrédients : les flèches et le quart de tour."
+ },
+ {
+  "code": "57-095",
+  "a_dire": "Une transformation linéaire respecte l’addition et la multiplication par un coefficient : le quart de tour et « doubler » le font, décaler non.",
+  "legende_titre": "Trois règles du plan comparées",
+  "lecture": [
+   "Chaque colonne est une règle : le quart de tour, décaler de 1, doubler. Le départ est (2 ; 1).",
+   "La ligne du haut multiplie par 2, puis applique la règle.",
+   "La ligne du bas applique la règle, puis multiplie par 2.",
+   "En vert, les deux résultats sont égaux ; en rouge, ils diffèrent : décaler de 1 donne (5 ; 2) et (6 ; 2)."
+  ],
+  "a_voir": "Seule la colonne du décalage a deux résultats différents."
+ },
+ {
+  "code": "57-096",
+  "a_dire": "T(v + w) = Tv + Tw et T(av) = a(Tv) disent que l’on peut additionner ou multiplier avant ou après T, avec le même résultat.",
+  "legende_titre": "Deux chemins vers la même case",
+  "lecture": [
+   "Le premier carré suit T(v + w) = Tv + Tw, avec v = (2 ; 1) et w = (−1 ; 2).",
+   "Un chemin additionne (flèche orange du haut) puis applique T (flèche bleue de droite). L’autre applique T (flèche bleue de gauche) puis additionne (flèche orange du bas).",
+   "Le second carré suit T(av) = a(Tv) avec a = 3 : multiplier par 3 puis tourner, ou tourner puis multiplier par 3.",
+   "Dans chaque carré, les deux chemins arrivent à la même case verte : (−3 ; 1), puis (−3 ; 6)."
+  ],
+  "a_voir": "Les deux chemins de chaque carré arrivent à la même case verte."
+ },
+ {
+  "code": "57-097",
+  "a_dire": "Le polynôme f agit sur v en remplaçant chaque puissance de x par la même puissance de T, en multipliant par les coefficients, puis en additionnant.",
+  "legende_titre": "Un polynôme agit sur la flèche v",
+  "lecture": [
+   "La première ligne est f = 2x + 3, la seconde f = 5x² + 1. Le départ est v = (2 ; 1) et T est le quart de tour.",
+   "Cases bleues : un terme du polynôme. Cases orange : l’action de ce terme sur v ; x devient T, x² devient T², le coefficient multiplie.",
+   "Les flèches vertes additionnent les deux actions.",
+   "Les résultats sont (4 ; 7) pour la première ligne et (−8 ; −4) pour la seconde."
+  ],
+  "a_voir": "Dans les deux lignes, la suite d’actions est la même : tourner, multiplier, additionner."
+ },
+ {
+  "code": "57-098",
+  "a_dire": "On remplace la lettre x du polynôme par la transformation T : le polynôme donne alors une transformation, qu’on applique à une flèche.",
+  "legende_titre": "La place de x reçoit autre chose qu’un nombre",
+  "lecture": [
+   "En haut, le polynôme 3x + 1 ; la place de x est en orange.",
+   "À gauche, on met le nombre 2 : 3·2 + 1 donne le nombre 7.",
+   "À droite, on met T, le quart de tour : 3·Tv + v donne la flèche (−1 ; 7), avec v = (2 ; 1).",
+   "Les deux flèches orange partent de la même place et mènent à deux sortes de résultats."
+  ],
+  "a_voir": "Le même polynôme donne un nombre ou une flèche selon ce qu’on met à la place de x."
+ },
+ {
+  "code": "57-099",
+  "a_dire": "La preuve part de V avec T, s’appuie sur le fait que T commute avec les nombres de F, et arrive aux quatre règles pour l’action des polynômes.",
+  "legende_titre": "Pourquoi les quatre règles tiennent",
+  "lecture": [
+   "Le cadre bleu est le départ : l'espace V avec la transformation T, et v = (2 ; 1).",
+   "Le cadre orange épais est l'étape clé : T commute avec les nombres de F. Ici T(3v) et 3(Tv) valent tous deux (−3 ; 6).",
+   "La flèche grise dit que l'on remplace x par T.",
+   "Les deux cadres verts sont l'arrivée : agir avec (x + 2) puis (x + 1), ou avec x² + 3x + 2 d'un coup, donne (−1 ; 7)."
+  ],
+  "a_voir": "La flèche orange nomme l'étape qui permet à un produit de polynômes d'être deux actions de suite."
+ },
+ {
+  "code": "57-100",
+  "a_dire": "V muni de T est un F[x]-module : l’action des polynômes respecte les sommes, comme le montre la règle 2 sur un cas.",
+  "legende_titre": "Le plan muni de T agit comme un module",
+  "lecture": [
+   "La flèche bleue est (x + 1)·v = (1 ; 3). La flèche violette est (x + 2)·v = (3 ; 4).",
+   "La flèche verte est (2x + 3)·v = (4 ; 7), pour la somme des deux polynômes.",
+   "Les tirets complètent le parallélogramme : (4 ; 7) est la somme de (1 ; 3) et de (3 ; 4).",
+   "Le texte à droite rappelle la règle vérifiée : (f + g)·v = f·v + g·v."
+  ],
+  "a_voir": "La flèche verte est la somme des deux autres, comme la règle 2 le demande."
+ },
+ {
+  "code": "57-101",
+  "a_dire": "Quatre quarts de tour ramènent la flèche au départ ; deux quarts de tour donnent l’opposée de v.",
+  "legende_titre": "Quatre quarts de tour de la flèche v",
+  "lecture": [
+   "La flèche bleue est v = (2 ; 0,8). Chaque flèche suivante est le quart de tour de la précédente.",
+   "La flèche orange est Tv, la violette est T²v, la grise est T³v.",
+   "Les arcs orange montrent chaque quart de tour, de 90°.",
+   "La flèche violette est opposée à v. Les quatre flèches ont la même longueur et finissent sur le cercle en tirets."
+  ],
+  "a_voir": "T²v est la flèche opposée à v, et Tv n’est pas sur la droite de v."
+ },
+ {
+  "code": "57-102",
+  "a_dire": "Le polynôme x² + 1 agit sur v en donnant T²v + v = −v + v = 0 : il annule v.",
+  "legende_titre": "Deux quarts de tour, puis on ajoute v",
+  "lecture": [
+   "La flèche bleue est v = (2 ; 0,8).",
+   "La flèche violette est T²v = (−2 ; −0,8), opposée à v.",
+   "Le disque vert, à l’origine, est le résultat de T²v + v : (0 ; 0).",
+   "Le cadre vert fait le calcul nombre par nombre : −2 + 2 = 0 et −0,8 + 0,8 = 0."
+  ],
+  "a_voir": "La somme de deux flèches opposées est la flèche nulle."
+ },
+ {
+  "code": "57-103",
+  "a_dire": "Le polynôme x agit en donnant Tv ; le polynôme 2x + 3 agit en donnant 2Tv + 3v.",
+  "legende_titre": "Du polynôme à une suite d’actions",
+  "lecture": [
+   "La flèche bleue est v = (2 ; 0,8). Les tirets bleus la prolongent jusqu’à 3v.",
+   "La petite flèche orange est Tv : c’est ce que fait le polynôme x.",
+   "Pour 2x + 3, on part de 3v, puis on ajoute 2Tv (flèche orange du haut).",
+   "La flèche verte est le résultat : (4,4 ; 6,4)."
+  ],
+  "a_voir": "Le nombre devant x multiplie la flèche tournée ; le terme constant multiplie la flèche de départ."
+ },
+ {
+  "code": "57-104",
+  "a_dire": "La lettre x ne désigne plus un nombre inconnu à trouver, mais la place où l’on met la transformation T.",
+  "legende_titre": "Un nombre inconnu ou une transformation",
+  "lecture": [
+   "À gauche, l’égalité x + 1 = 5 se résout : le point bleu sur la droite graduée est x = 4.",
+   "À droite, la lettre x est remplacée par T, le quart de tour. La flèche bleue est v = (2 ; 0,8).",
+   "La flèche orange est Tv = (−0,8 ; 2).",
+   "La flèche verte est (T + 1)v = Tv + v = (1,2 ; 2,8) : aucune valeur n’a été cherchée."
+  ],
+  "a_voir": "À droite, on ne cherche rien : on calcule une flèche."
+ },
+ {
+  "code": "57-105",
+  "a_dire": "Le signe xa désigne le résultat de l’action du coefficient a sur l’objet x, avec le coefficient écrit à droite.",
+  "legende_titre": "Le coefficient écrit avant ou après l’objet",
+  "lecture": [
+   "En orange, le coefficient a = 3. En bleu, l’objet x = 5.",
+   "La ligne du haut met le coefficient à gauche : ax, soit 3·5 = 15.",
+   "La ligne du bas met le coefficient à droite : xa, soit 5·3 = 15.",
+   "Le cadre vert donne le résultat, ici le même dans les deux lignes."
+  ],
+  "a_voir": "xa se lit « l’objet, puis le coefficient »."
+ },
+ {
+  "code": "57-106",
+  "a_dire": "Un module à droite est un module où le coefficient s’écrit après l’objet ; la règle x(ab) = (xa)b fait agir a d’abord.",
+  "legende_titre": "Module à droite et module à gauche",
+  "lecture": [
+   "En haut, la famille : les modules.",
+   "À gauche (violet), le coefficient est écrit avant l’objet ; la règle (ab)x = a(bx) fait agir b d’abord.",
+   "À droite (bleu), le coefficient est écrit après l’objet ; la règle x(ab) = (xa)b fait agir a d’abord.",
+   "Le cadre vert donne un cas à droite : (2 ; 1) fois 3 donne (6 ; 3)."
+  ],
+  "a_voir": "Les deux modules se distinguent par la place du coefficient et l’ordre d’action."
+ },
+ {
+  "code": "57-107",
+  "a_dire": "Dans un module à droite, (x + y)a = xa + ya : le coefficient agit sur une somme en agissant sur chaque terme.",
+  "legende_titre": "Une règle de somme, avec et sans elle",
+  "lecture": [
+   "En haut, avec (2 ; 1), (1 ; 4) et le coefficient 3 : somme puis × 3, ou × 3 puis somme, donnent (9 ; 15). Les deux cadres verts sont égaux.",
+   "En bas, l’action x + a ne respecte pas la règle (en rouge).",
+   "Somme puis + 3 donne (2 + 1) + 3 = 6. Chaque + 3 puis somme donne (2 + 3) + (1 + 3) = 9.",
+   "Le signe ≠ rouge montre que 6 et 9 diffèrent."
+  ],
+  "a_voir": "Quand la règle tient, les deux chemins sont égaux ; sans elle, ils diffèrent."
+ },
+ {
+  "code": "57-108",
+  "a_dire": "Dans un module à droite, x(a + b) = xa + xb : agir avec une somme de coefficients revient à additionner les actions de chacun.",
+  "legende_titre": "Une somme de coefficients agit par morceaux",
+  "lecture": [
+   "La flèche bleue est (2 ; 1)·3 = (6 ; 3).",
+   "La flèche violette, mise au bout, est (2 ; 1)·2 = (4 ; 2).",
+   "La flèche verte, en dessous, est (2 ; 1)·5 = (10 ; 5), avec 5 = 3 + 2.",
+   "Les deux morceaux bout à bout arrivent au même point que la flèche verte."
+  ],
+  "a_voir": "Agir avec 3 + 2 donne le même point que agir avec 3, puis avec 2."
+ },
+ {
+  "code": "57-109",
+  "a_dire": "Dans un module à droite, x(ab) = (xa)b : agir avec le produit ab revient à agir d’abord avec a, puis avec b.",
+  "legende_titre": "Agir avec ab ou avec a puis b",
+  "lecture": [
+   "Le départ est x = (2 ; 1), avec a = 3 et b = 2.",
+   "La ligne du haut est l’action normale : (6 ; 3) après a, (12 ; 6) après b, et (12 ; 6) avec ab = 6 d’un coup. Les deux derniers sont égaux (vert).",
+   "La ligne du bas est l’action 2·a·x : (12 ; 6), puis (48 ; 24), mais (24 ; 12) avec ab. Ils diffèrent (rouge).",
+   "Les signes = et ≠ comparent les deux dernières colonnes."
+  ],
+  "a_voir": "La règle tient pour l’action normale et casse pour l’action 2·a·x."
+ },
+ {
+  "code": "57-110",
+  "a_dire": "Dans un module à droite, x1 = x : le coefficient un laisse l’objet inchangé.",
+  "legende_titre": "Le coefficient un ne change rien",
+  "lecture": [
+   "À gauche, la flèche bleue est x = (2 ; 1) ; la flèche verte dessous est x1.",
+   "Les deux se superposent : x1 est la même flèche.",
+   "À droite, (2 ; 1) fois 1 donne (2 ; 1).",
+   "Le texte rappelle : le un ne change rien."
+  ],
+  "a_voir": "La flèche verte recouvre exactement la flèche bleue."
+ },
+ {
+  "code": "57-111",
+  "a_dire": "L’objection « c’est la même chose » est fausse en général : à gauche et à droite, l’ordre d’application des coefficients est inversé.",
+  "legende_titre": "Gauche, droite : deux ordres d’action",
+  "lecture": [
+   "En haut, les règles A et B sur un couple (p ; q). Pour la ligne du haut, a = A et b = B.",
+   "À gauche, (ab)x = a(bx) : B agit en premier, puis A. De (1 ; 0) on passe à (1 ; 1), puis à (2 ; 1).",
+   "À droite, x(ab) = (xa)b : A agit en premier, puis B. De (1 ; 0) on passe à (1 ; 0), puis à (1 ; 1).",
+   "Le signe rouge ≠ dit que les deux arrivées sont différentes."
+  ],
+  "a_voir": "Les flèches portent 1er et 2e : à gauche et à droite, l'ordre des coefficients est inversé."
+ },
+ {
+  "code": "57-112",
+  "a_dire": "Le signe a_R nomme la multiplication à droite par a : x ↦ xa, à ne pas confondre avec a_L : x ↦ ax.",
+  "legende_titre": "Deux règles aux noms voisins",
+  "lecture": [
+   "Le cadre violet est a_L : x ↦ ax, le coefficient écrit à gauche ; 3·5 donne 15.",
+   "Le cadre bleu est a_R : x ↦ xa, le coefficient écrit à droite ; 5·3 donne 15.",
+   "Les cases vertes donnent le résultat, ici le même.",
+   "Ce sont pourtant deux règles, nommées par l’indice L ou R."
+  ],
+  "a_voir": "L’indice R dit que le coefficient est à droite."
+ },
+ {
+  "code": "57-113",
+  "a_dire": "L’application a ↦ a_R renverse les produits : le produit ab est envoyé sur « b_R après a_R ».",
+  "legende_titre": "Le produit ab, vu par les règles à droite",
+  "lecture": [
+   "En haut, les coefficients a (orange) puis b (violet) du produit ab.",
+   "En dessous, leurs règles : b_R (violet) à gauche, a_R (orange) à droite. Les flèches se croisent : l’ordre est renversé.",
+   "En bas : A puis B depuis (1 ; 0) donne (1 ; 1), puis (2 ; 1). B puis A donne (1 ; 0), puis (1 ; 1).",
+   "Le signe ≠ rouge dit que l’ordre des règles change le résultat."
+  ],
+  "a_voir": "Les deux flèches qui se croisent montrent l’ordre renversé."
+ },
+ {
+  "code": "57-114",
+  "a_dire": "Si l’anneau est commutatif, ab = ba et la différence entre gauche et droite disparaît.",
+  "legende_titre": "Quand l’ordre ne change rien",
+  "lecture": [
+   "À gauche, dans ℤ : 3·2 et 2·3 mènent au même nombre, 6 (vert).",
+   "À droite, avec les règles A et B depuis (1 ; 0) : A après B donne (2 ; 1) et B après A donne (1 ; 1) (orange).",
+   "Le signe ≠ dit que ces deux résultats diffèrent.",
+   "La différence entre gauche et droite tient à l’anneau : dans ℤ elle disparaît."
+  ],
+  "a_voir": "À gauche les deux chemins se rejoignent ; à droite ils ne se rejoignent pas."
+ },
+ {
+  "code": "57-115",
+  "a_dire": "Sur un anneau commutatif, un module à gauche est aussi un module à droite en posant xa = ax ; sans commutativité, cela échoue.",
+  "legende_titre": "Définir l’action à droite par celle de gauche",
+  "lecture": [
+   "Le cadre bleu en haut pose xa = ax.",
+   "Les deux colonnes comparent x(ab) et (xa)b.",
+   "Dans ℤ (vert), 5·(3·2) et (5·3)·2 valent tous deux 30.",
+   "Avec les règles A et B (rouge), A après B donne (2 ; 1) et B après A donne (1 ; 1) : la règle tombe."
+  ],
+  "a_voir": "Dans ℤ les deux colonnes sont égales ; avec A et B, elles diffèrent."
+ },
+ {
+  "code": "57-116",
+  "a_dire": "La distinction gauche-droite ne compte que pour les anneaux non commutatifs, pas pour ℤ, ℝ ou F[x].",
+  "legende_titre": "Quatre anneaux, deux verdicts",
+  "lecture": [
+   "Chaque ligne a un anneau en bleu et un test à droite.",
+   "Pour ℤ, ℝ et F[x] (vert), le produit ne dépend pas de l’ordre, par exemple 3·2 = 2·3 : il n’y a qu’une sorte de module.",
+   "Pour M₂(ℤ) (rouge), A après B et B après A diffèrent : gauche et droite diffèrent."
+  ],
+  "a_voir": "Seule la dernière ligne est en rouge."
+ },
+ {
+  "code": "57-117",
+  "a_dire": "Un module à droite sur R est un module à gauche sur l’anneau opposé R°, où le produit est pris dans l’autre sens.",
+  "legende_titre": "L’anneau opposé",
+  "lecture": [
+   "À gauche, l’anneau R : le produit de A par B est A après B, qui envoie (1 ; 0) sur (2 ; 1).",
+   "À droite, l’anneau R° : mêmes éléments et mêmes sommes, mais le produit de A par B est B après A, qui envoie (1 ; 0) sur (1 ; 1).",
+   "La flèche orange relie les deux : l’ordre du produit est échangé.",
+   "Le cadre vert conclut : un module à droite sur R est un module à gauche sur R°."
+  ],
+  "a_voir": "Seul le produit change entre R et R°."
+ },
+ {
+  "code": "57-118",
+  "a_dire": "Le signe R_L désigne l’ensemble de toutes les multiplications à gauche, alors que a_L en désigne une seule.",
+  "legende_titre": "Un nom pour toutes les multiplications à gauche",
+  "lecture": [
+   "Le grand cadre gris est End(R, +), l’anneau des endomorphismes du groupe additif de R.",
+   "Le cadre bleu est R_L : toutes les multiplications à gauche.",
+   "Chaque case bleue est une règle : doubler, tripler, × 5, et ainsi de suite.",
+   "La flèche orange montre une seule règle, a_L ; R_L est la collection."
+  ],
+  "a_voir": "R_L est le cadre entier ; a_L est une seule case."
+ },
+ {
+  "code": "57-119",
+  "a_dire": "Le signe R_R désigne l’ensemble de toutes les multiplications à droite, à mettre à côté de R_L.",
+  "legende_titre": "Deux collections dans End(R, +)",
+  "lecture": [
+   "Le grand cadre gris est End(R, +).",
+   "Le cadre violet est R_L, les multiplications à gauche : x ↦ 3x, x ↦ 2x, et ainsi de suite.",
+   "Le cadre bleu est R_R, les multiplications à droite : x ↦ x3, x ↦ x2, et ainsi de suite.",
+   "Ce sont deux collections de règles, nommées par deux signes voisins."
+  ],
+  "a_voir": "R_L et R_R sont deux cadres côte à côte dans le même grand cadre."
+ },
+ {
+  "code": "57-120",
+  "a_dire": "R_L et R_R sont les centralisateurs l’un de l’autre : un endomorphisme qui commute avec toutes les multiplications à gauche est une multiplication à droite.",
+  "legende_titre": "Deux collections qui se commandent",
+  "lecture": [
+   "En haut, R_L (bleu) et R_R (violet) : chaque flèche orange dit que l’un est le centralisateur de l’autre.",
+   "Le cadre gris est le départ : η commute avec toutes les multiplications de R_L.",
+   "Le cadre orange épais est l’étape clé : η(x) = η(x·1) = x·η(1).",
+   "Le cadre vert est l’arrivée : η est la multiplication à droite par η(1), donc η est dans R_R."
+  ],
+  "a_voir": "Un η qui commute avec R_L est forcément dans R_R."
+ }
+]

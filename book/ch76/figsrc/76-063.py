@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 22, 51, 'écriture longue', 'sujet', 's'); text(ax, 73, 51, 'abrégé', 'resultat', 's')
+box(ax, 2, 31, 40, 12, 'sujet', label=r'$e_1\wedge e_2$')
+arrow(ax, (44, 37), (60, 37), 'varie')
+box(ax, 62, 31, 24, 12, 'resultat', label=r'$e_{12}$')
+box(ax, 2, 12, 40, 12, 'sujet', label=r'$e_1\wedge e_2\wedge e_3$', size='s')
+arrow(ax, (44, 18), (60, 18), 'varie')
+box(ax, 62, 12, 24, 12, 'resultat', label=r'$e_{123}$')
+text(ax, 52, 40.5, r'sans $\wedge$', 'varie', 's')
+text(ax, 44, 4, '$e_{12}$ se lit « e un deux »', 'encre', 's')
+save(fig, '76-063')

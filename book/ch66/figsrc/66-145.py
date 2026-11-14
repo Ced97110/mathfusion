@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 21, 71, 'algorithme du chapitre', 'fixe', 's')
+text(ax, 66, 71, 'chapitre 80 : Möbius', 'varie', 's')
+line(ax, [(44, 6), (44, 70)], 'fixe', dash=True)
+box(ax, 12, 54, 18, 9, 'fixe', label=r'$\Phi_1$')
+box(ax, 2, 36, 17, 9, 'fixe', label=r'$\Phi_2$')
+box(ax, 23, 36, 17, 9, 'fixe', label=r'$\Phi_3$')
+box(ax, 12, 16, 18, 9, 'sujet', label=r'$\Phi_6$')
+arrow(ax, (18, 54), (11, 45), 'varie'); arrow(ax, (24, 54), (31, 45), 'varie')
+arrow(ax, (11, 36), (17, 25), 'varie'); arrow(ax, (31, 36), (25, 25), 'varie')
+text(ax, 21, 8, 'divisions successives', 'fixe', 's')
+for i, s in enumerate([r'$x-1$', r'$x^{2}-1$', r'$x^{3}-1$', r'$x^{6}-1$']):
+    box(ax, 48 + 20 * (i % 2), 54 - 14 * (i // 2), 18, 9, 'fixe', label=s)
+arrow(ax, (66, 40), (66, 25), 'varie')
+box(ax, 57, 16, 18, 9, 'sujet', label=r'$\Phi_6$')
+text(ax, 66, 8, 'une formule directe', 'varie', 's')
+save(fig, '66-145')

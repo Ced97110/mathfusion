@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+u = 11
+A, B, C = (8, 12), (8 + 4 * u, 12), (8 + 4 * u, 12 + 3 * u)
+poly(ax, [A, B, C], 'fixe', lw=1.0)
+line(ax, [A, B], 'sujet', lw=2.4); line(ax, [B, C], 'varie', lw=2.4)
+line(ax, [(B[0] - 3, B[1]), (B[0] - 3, B[1] + 3), (B[0], B[1] + 3)], 'fixe', lw=0.7)
+th = math.atan2(3, 4)
+line(ax, [(A[0] + 9 * math.cos(a * th / 30), A[1] + 9 * math.sin(a * th / 30)) for a in range(31)], 'resultat', lw=1.2)
+text(ax, A[0] + 14, A[1] + 3, r'$\theta$', 'resultat', 'm')
+text(ax, A[0] - 3, A[1] - 3, r'$A$', 'encre', 'm'); text(ax, B[0] + 3, B[1] - 3, r'$B$', 'encre', 'm'); text(ax, C[0] + 3, C[1] + 3, r'$C$', 'encre', 'm')
+text(ax, (A[0] + B[0]) / 2, B[1] - 4.5, '4', 'sujet', 'm'); text(ax, B[0] + 4, (B[1] + C[1]) / 2, '3', 'varie', 'm')
+text(ax, (A[0] + B[0]) / 2 - 5, (A[1] + C[1]) / 2 + 4.5, '5', 'fixe', 'm')
+text(ax, 65, 62, r'$\tan\theta = 3/4$', 'varie', 's')
+text(ax, 65, 54, r'$\theta = \arctan(3/4)$', 'resultat', 's')
+text(ax, 65, 43, r'$\cos\theta = 4/5$', 'sujet', 's')
+save(fig, '33-112')

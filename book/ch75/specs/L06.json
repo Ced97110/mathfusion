@@ -1,0 +1,194 @@
+[
+ {
+  "code": "75-081",
+  "a_dire": "Pour envoyer u sur u′ avec une aire non nulle, une seule transvection suffit, de direction w = u − u′ et de paramètre c = 1/B(u, u′).",
+  "legende_titre": "Une transvection suffit quand l’aire n’est pas nulle",
+  "lecture": [
+   "La flèche bleue est u, la flèche verte est u′.",
+   "La flèche orange vers le bas est w = u − u′.",
+   "La petite flèche orange vers le haut est −w : elle ajoute u′ − u à u.",
+   "Le texte donne l’aire 1 et le paramètre c = 1/1 = 1."
+  ],
+  "a_voir": "La flèche orange −w mène de la pointe de u à la pointe de u′."
+ },
+ {
+  "code": "75-082",
+  "a_dire": "La transvection envoie u sur u′ pour tout choix de flèches d’aire non nulle, car elle ajoute toujours u′ − u à u.",
+  "legende_titre": "Le calcul vérifié sur deux autres essais",
+  "lecture": [
+   "Dans chaque essai, la flèche bleue est u et la flèche verte est u′.",
+   "La flèche orange va de la pointe de u à la pointe de u′ : elle vaut u′ − u, c'est ce que la transvection ajoute.",
+   "Sous chaque essai, tu lis B(u, u′) et le paramètre c, puis c B(u, w), qui vaut −1.",
+   "La ligne du bas donne la direction w = u − u′ : dans les deux essais, on arrive en u′."
+  ],
+  "a_voir": "Dans les deux essais, la direction est w = u − u′ et l'arrivée est u′."
+ },
+ {
+  "code": "75-083",
+  "a_dire": "Si B(u, u′) = 0, on choisit u″ d’aire non nulle avec u et u′, puis deux transvections envoient u sur u″, puis u″ sur u′.",
+  "legende_titre": "Aire nulle : on passe par une flèche intermédiaire",
+  "lecture": [
+   "Les flèches bleue et verte sont u et u′ : elles sont sur la même droite.",
+   "La flèche orange verticale est la flèche intermédiaire u″.",
+   "Les deux arcs orange, numérotés 1 et 2, sont les deux transvections.",
+   "Les lignes du bas donnent les aires : nulle entre u et u′, non nulles avec u″."
+  ],
+  "a_voir": "On passe de u à u″, puis de u″ à u′."
+ },
+ {
+  "code": "75-084",
+  "a_dire": "Chaque transvection a un déterminant égal à 1, donc toute transformation symplectique a un déterminant égal à 1.",
+  "legende_titre": "Une transvection glisse sans changer l’aire",
+  "lecture": [
+   "En haut, le carré bleu a une aire 1.",
+   "Le parallélogramme vert est son image : le haut a glissé de 2 (flèche orange) ; le calcul donne le déterminant 1.",
+   "Au milieu, chaque transvection τ a un déterminant 1.",
+   "En bas, le produit de ces 1 vaut 1 : toute transformation symplectique a un déterminant 1."
+  ],
+  "a_voir": "Chaque transvection a un déterminant 1, donc un produit de transvections aussi."
+ },
+ {
+  "code": "75-085",
+  "a_dire": "Sp est contenu dans SL, et sur le corps à 2 éléments il est 28 fois plus petit en dimension 4.",
+  "legende_titre": "Un petit morceau du groupe des déterminants 1",
+  "lecture": [
+   "En haut, la barre bleue recouvre toute la barre violette : en dimension 2, 6 et 6.",
+   "En bas, la barre bleue est une toute petite part de la barre violette.",
+   "La barre bleue du bas représente 720 ; la barre violette représente 20 160.",
+   "Le texte dit que SL est 28 fois plus grand."
+  ],
+  "a_voir": "La part bleue est contenue dans la violette et devient minuscule."
+ },
+ {
+  "code": "75-086",
+  "a_dire": "Les seules transformations symplectiques qui commutent avec toutes les autres sont 1 et −1.",
+  "legende_titre": "Le centre ne garde que deux multiplications",
+  "lecture": [
+   "Chaque carré est construit sur les deux flèches de base multipliées par le nombre indiqué.",
+   "Les carrés verts de ×1 et de ×(−1) ont une aire 1.",
+   "Le carré rouge de ×2 a une aire 4 : il est exclu, il n'est pas symplectique.",
+   "L'accolade verte dit que seuls c = 1 et c = −1 forment le centre, et qu'ils commutent avec toutes les autres."
+  ],
+  "a_voir": "Multiplier par 2 change l'aire ; multiplier par 1 ou −1 la garde."
+ },
+ {
+  "code": "75-087",
+  "a_dire": "Une transformation qui commute avec tout garde chaque droite, donc multiplie par un nombre a, puis a² = 1 et a = ±1.",
+  "legende_titre": "Garder toutes les droites mène à a² = 1",
+  "lecture": [
+   "Les trois droites grises sont des droites du plan.",
+   "Chaque flèche bleue u est prolongée par une flèche orange sur la même droite : γu.",
+   "Sur la droite des nombres, −1 et 1 sont verts : leur carré vaut 1.",
+   "2 est rouge : son carré vaut 4."
+  ],
+  "a_voir": "Les seules valeurs de a possibles sont 1 et −1."
+ },
+ {
+  "code": "75-088",
+  "a_dire": "Dans le quotient, η et −η ne forment qu’un seul élément, donc il y a deux fois moins d’éléments.",
+  "legende_titre": "Deux transformations opposées comptent pour une",
+  "lecture": [
+   "Les disques bleus sont les éléments de Sp, rangés par paires η et −η.",
+   "Chaque cadre orange entoure une paire.",
+   "Chaque flèche mène à un disque vert : un élément de PSp.",
+   "Les nombres 51 840 et 25 920 donnent la division par 2."
+  ],
+  "a_voir": "Le nombre d’éléments est divisé par 2."
+ },
+ {
+  "code": "75-089",
+  "a_dire": "PSp est simple, sauf pour 2n = 2 avec 2 ou 3 éléments dans F, et 2n = 4 avec 2 éléments.",
+  "legende_titre": "Simple, sauf trois cases",
+  "lecture": [
+   "Chaque colonne donne le nombre d’éléments de F ; chaque ligne donne 2n.",
+   "Une case verte est un cas simple.",
+   "Les trois cases rouges sont les exceptions : (2 ; 2), (2 ; 3) et (4 ; 2).",
+   "La légende en bas relie les couleurs aux mots."
+  ],
+  "a_voir": "Il y a exactement trois cases rouges."
+ },
+ {
+  "code": "75-090",
+  "a_dire": "Le critère d’Iwasawa remplace la question « est-il simple ? » par trois vérifications, qui doivent toutes réussir.",
+  "legende_titre": "Trois vérifications pour conclure",
+  "lecture": [
+   "La première case montre trois points qui se permutent : l’action sur les droites.",
+   "La deuxième case montre deux cercles : le groupe est égal à son groupe dérivé.",
+   "La troisième case montre une rangée de transvections d’une même direction.",
+   "Les trois flèches vertes mènent à la conclusion : le groupe est simple."
+  ],
+  "a_voir": "Les trois flèches mènent à une seule conclusion."
+ },
+ {
+  "code": "75-091",
+  "a_dire": "Le groupe est primitif sur les droites : on ne peut les ranger en paquets de même taille que toutes seules ou toutes ensemble.",
+  "legende_titre": "Pas d’autre rangement que les deux évidents",
+  "lecture": [
+   "Les trois disques bleus sont les trois droites.",
+   "À gauche, chaque droite est seule dans son cercle vert.",
+   "Au milieu, les trois droites sont dans un seul cadre vert.",
+   "À droite, 2 et 1 en rouge : les paquets n’ont pas la même taille."
+  ],
+  "a_voir": "Des paquets de même taille ne peuvent avoir que 1 ou 3 droites."
+ },
+ {
+  "code": "75-092",
+  "a_dire": "Dans les trois cas exclus, le groupe n’est pas égal à son groupe dérivé : ici les commutateurs ne donnent que 3 éléments sur 6.",
+  "legende_titre": "Les commutateurs ne couvrent pas tout le groupe",
+  "lecture": [
+   "Les trois disques bleus dans le cadre en pointillés sont le neutre et les deux rotations.",
+   "Ce sont les seuls éléments que donnent les commutateurs.",
+   "Les trois disques rouges sont les échanges.",
+   "Les échanges ne sont jamais obtenus."
+  ],
+  "a_voir": "Le groupe a 6 éléments mais le groupe dérivé n’en a que 3."
+ },
+ {
+  "code": "75-093",
+  "a_dire": "Deux transvections de même direction se composent en ajoutant les paramètres, donc l’ordre ne compte pas ; conjuguer change la direction.",
+  "legende_titre": "Même ordre ou non, 5 secondes",
+  "lecture": [
+   "Sur chaque droite graduée, les arcs sont les deux mouvements : 2 puis 3, ou 3 puis 2.",
+   "Le disque vert en 5 est le résultat, le même dans les deux cas.",
+   "En bas, la flèche bleue vers la droite et la flèche bleue vers le haut sont deux directions.",
+   "L’arc orange est le quart de tour qui passe de l’une à l’autre."
+  ],
+  "a_voir": "Les deux ordres arrivent en 5, et le quart de tour change la direction."
+ },
+ {
+  "code": "75-094",
+  "a_dire": "Sur le corps à 2 éléments, Sp₂ = SL₂ a 6 éléments qui permutent les trois vecteurs non nuls ; il contient un sous-groupe de 3 rotations, donc il n’est pas simple.",
+  "legende_titre": "Six permutations de trois vecteurs",
+  "lecture": [
+   "Les trois disques bleus sont les trois vecteurs non nuls.",
+   "Les flèches orange montrent qu’on les échange entre eux.",
+   "À droite, 3 choix, puis 2, puis 1 donnent 6.",
+   "Le texte du bas dit que 3 rotations forment un sous-groupe."
+  ],
+  "a_voir": "Le calcul 3 × 2 × 1 donne les 6 éléments."
+ },
+ {
+  "code": "75-095",
+  "a_dire": "Sur le corps à 2 éléments, −1 = 1 : le centre n’a qu’un élément et PSp = Sp.",
+  "legende_titre": "Sur F₂, −1 et 1 sont le même point",
+  "lecture": [
+   "En haut, sur les nombres réels, −1 (orange) et 1 (bleu) sont deux points différents.",
+   "En bas, sur le corps à 2 éléments, il n’y a que 0 et 1.",
+   "Le disque vert en 1 est à la fois 1 et −1.",
+   "Le texte du bas donne la raison : 1 + 1 = 0."
+  ],
+  "a_voir": "Sur F₂, l’ensemble {1, −1} n’a qu’un élément."
+ },
+ {
+  "code": "75-096",
+  "a_dire": "Sur F₂, B(y, x) = −B(x, y) = B(x, y) : alternée entraîne symétrique.",
+  "legende_titre": "Échanger les flèches : le signe change ou non",
+  "lecture": [
+   "Chaque carré est construit sur deux flèches : la bleue est x, l’orange est y.",
+   "À gauche, sur ℝ, B(x, y) vaut 1 et B(y, x) vaut −1 : le signe ≠ est rouge.",
+   "À droite, sur F₂, les deux valent 1 : le signe = est vert.",
+   "La ligne du bas rappelle les couleurs des flèches."
+  ],
+  "a_voir": "Sur F₂, échanger les flèches ne change pas la valeur."
+ }
+]

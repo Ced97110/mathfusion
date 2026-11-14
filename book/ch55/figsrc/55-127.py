@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+e1, e2 = 5, 6      # sum and product of the roots of x^2 - 5x + 6 (coefficients -5 and 6)
+assert e1 ** 3 - 3 * e1 * e2 == 35 and 5 ** 3 == 125 and 3 * e1 * e2 == 90 and 2 ** 3 + 3 ** 3 == 35
+box(ax, 24, 66, 40, 9, 'sujet', label=r'$x^2-5x+6$', size='m')
+arrow(ax, (36, 66), (24, 59.5), 'varie')
+arrow(ax, (52, 66), (64, 59.5), 'varie')
+box(ax, 4, 50, 38, 9, 'varie', label=r'$e_1=5$ : somme', size='s')
+box(ax, 46, 50, 38, 9, 'varie', label=r'$e_2=6$ : produit', size='s')
+arrow(ax, (23, 50), (36, 43.5), 'varie')
+arrow(ax, (65, 50), (52, 43.5), 'varie')
+box(ax, 4, 34, 80, 9, 'resultat', label=r'$e_1^3-3e_1e_2=125-90=35$', size='m')
+text(ax, 60, 27, 'même nombre', 'fixe', 's')
+arrow(ax, (44, 33.5), (44, 20.5), 'resultat', both=True)
+box(ax, 4, 11, 80, 9, 'fixe', label=r'contrôle : $2^3+3^3=8+27=35$', size='m')
+save(fig, '55-127')

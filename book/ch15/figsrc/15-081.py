@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 44, 12, 12, 'sujet', label='4', size='l')
+text(ax, 22, 50, r'$\times$', 'encre', 'l')
+text(ax, 28, 50, '(', 'encre', 'l')
+box(ax, 32, 44, 18, 12, 'varie', label=r'$3x$', size='l')
+text(ax, 56, 50, '+', 'encre', 'l')
+box(ax, 62, 44, 14, 12, 'varie', label='$2$', size='l')
+text(ax, 82, 50, ')', 'encre', 'l')
+box(ax, 4, 14, 38, 14, 'resultat', label=r'$4 \times 3x = 12x$')
+box(ax, 46, 14, 38, 14, 'resultat', label=r'$4 \times 2 = 8$')
+for cx in (41, 69):
+    arrow(ax, (cx, 43), (cx, 29), 'varie')
+    text(ax, cx + 2, 36, r'$\times 4$', 'varie', 's', ha='left')
+text(ax, 44, 6, r'on additionne : $12x + 8$', 'resultat', 'm')
+save(fig, '15-081')

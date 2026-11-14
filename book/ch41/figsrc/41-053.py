@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+k = 8.0
+O = (8, 50)
+v = (2, -1)
+T = lambda q, off=0: (O[0] + k * q[0], O[1] + k * q[1] + off)
+assert (3 * v[0], 3 * v[1]) == (6, -3)
+arrow(ax, T((0, 0), 5.0), T((6, -3), 5.0), 'resultat', lw=1.6)
+arrow(ax, T((0, 0)), T(v), 'sujet', lw=1.8)
+arrow(ax, T((0, 0), -5.0), T((1, -0.5), -5.0), 'varie', lw=1.8)
+text(ax, 58, 31, r'$3v=\langle 6;\ -3\rangle$', 'resultat', 's', ha='left')
+text(ax, 33, 36, r'$v=\langle 2;\ -1\rangle$', 'sujet', 's', ha='left')
+text(ax, 8, 39, r'$\frac{1}{2}v=\langle 1;\ -\frac{1}{2}\rangle$', 'varie', 's', ha='left')
+text(ax, 44, 62, 'trois flèches parallèles, même départ', 'fixe', 's')
+box(ax, 2, 4, 84, 9, 'fixe', label=r'$3\times 2=6$   et   $3\times(-1)=-3$', size='s')
+box(ax, 2, 15, 84, 9, 'fixe', label=r'$\frac{1}{2}\times 2=1$   et   $\frac{1}{2}\times(-1)=-\frac{1}{2}$', size='s')
+save(fig, '41-053')

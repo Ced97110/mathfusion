@@ -1,0 +1,179 @@
+[
+ {
+  "code": "74-113",
+  "a_dire": "Deux miroirs donnent une rotation du double de leur angle : 45° donne 90° (quart de tour), 36° donnerait 72° (ordre 5).",
+  "legende_titre": "Des miroirs, une rotation double",
+  "lecture": [
+   "Les deux droites bleues sont les deux miroirs ; l'arc orange donne leur angle, 45° à gauche, 36° à droite.",
+   "L'arc vert est la rotation obtenue : 90° à gauche, 72° à droite.",
+   "Les points verts sur le cercle pointillé gris sont les tours successifs : 4 à gauche, 5 à droite, jusqu'à 360°."
+  ],
+  "a_voir": "Une paire de miroirs impose une rotation de l'angle double, et donc son ordre."
+ },
+ {
+  "code": "74-114",
+  "a_dire": "Si deux axes de miroir faisaient 36°, il y aurait une rotation de 72° d'ordre 5, ce que le papier peint interdit.",
+  "legende_titre": "Un angle jamais trouvé",
+  "lecture": [
+   "Les trois paires vertes montrent les angles trouvés : 90°, 45° et 30°.",
+   "La paire rouge en pointillés est 36° : on ne la trouve jamais.",
+   "Les quatre cases violettes et rouge enchaînent : 36°, rotation de 72°, ordre 5, interdit."
+  ],
+  "a_voir": "Un angle de 36° conduirait à l'ordre 5, donc il est exclu."
+ },
+ {
+  "code": "74-115",
+  "a_dire": "Une isométrie A x + b se lit en deux temps : A change le signe de la seconde coordonnée, b glisse de (3, 4).",
+  "legende_titre": "Lire A puis b",
+  "lecture": [
+   "Les disques bleus sont les points de départ (1, 1) et (0, 2).",
+   "La flèche orange fait agir A : le point passe de l'autre côté de l'axe horizontal (disque gris).",
+   "La flèche verte ajoute b = (3, 4) et mène aux disques verts (4, 3) et (3, 2)."
+  ],
+  "a_voir": "A retourne le point, b le déplace."
+ },
+ {
+  "code": "74-116",
+  "a_dire": "On coupe b en une partie le long de l'axe et une partie en travers ; l'axe D est à la moitié de la partie en travers.",
+  "legende_titre": "Trouver l'axe et le glissement",
+  "lecture": [
+   "La flèche grise est b, la flèche verte b₁ = (3, 0) le long de l'axe, la flèche orange b₂ = (0, 4) en travers.",
+   "Le pointillé bleu est l'axe D, à la hauteur 2, la moitié de 4.",
+   "Les trois cases donnent l'ordre des étapes."
+  ],
+  "a_voir": "L'axe est à la moitié de b₂ et le glissement vaut b₁."
+ },
+ {
+  "code": "74-117",
+  "a_dire": "La symétrie glissée n'a aucun point fixe : l'équation x₁ + 3 = x₁ est impossible.",
+  "legende_titre": "Aucun point ne reste en place",
+  "lecture": [
+   "Les disques bleus sont trois points de départ : 0, 1 et 2.",
+   "Chaque flèche orange ajoute 3 et mène à un disque vert, toujours ailleurs.",
+   "La case rouge rappelle l'équation impossible."
+  ],
+  "a_voir": "Départ et arrivée sont toujours différents."
+ },
+ {
+  "code": "74-118",
+  "a_dire": "Appliquer deux fois la symétrie glissée donne la translation (6, 0), comme la frise b p b p glisse de deux lettres.",
+  "legende_titre": "Deux glissées font une translation",
+  "lecture": [
+   "Les deux flèches orange mènent de (1, 1) à (4, 3) puis à (7, 1), de part et d'autre de l'axe gris.",
+   "La flèche verte horizontale est le résultat : un glissement de 6.",
+   "Dans la frise, la flèche verte va d'un b au b suivant, par-dessus un p."
+  ],
+  "a_voir": "Deux symétries glissées donnent un glissement de deux lettres."
+ },
+ {
+  "code": "74-119",
+  "a_dire": "La trace d'une matrice carrée est la somme des nombres de sa diagonale : 2 + 4 = 6.",
+  "legende_titre": "Additionner la diagonale",
+  "lecture": [
+   "Les deux cases bleues, 2 et 4, forment la diagonale ; le pointillé orange la relie.",
+   "Les cases grises, 5 et 7, ne servent pas.",
+   "La case verte donne la somme : 6."
+  ],
+  "a_voir": "La trace additionne seulement les deux nombres de la diagonale."
+ },
+ {
+  "code": "74-120",
+  "a_dire": "La trace d'une rotation vaut 2 cos θ ; ce n'est pas vrai pour un miroir, dont la trace vaut 0.",
+  "legende_titre": "Rotation contre miroir",
+  "lecture": [
+   "La matrice bleue est la rotation de 60° : sa diagonale vaut 1/2 et 1/2, trace 1 = 2 cos 60°.",
+   "La matrice rouge est le miroir : sa diagonale vaut 1/2 et −1/2, trace 0, différente de 2 cos 60°.",
+   "Les cases grises marquées ∗ ne servent pas au calcul de la trace."
+  ],
+  "a_voir": "La formule 2 cos θ vaut pour les rotations seulement."
+ },
+ {
+  "code": "74-121",
+  "a_dire": "La trace ne change pas avec P⁻¹ A P, mais elle peut changer si on met P des deux côtés : de 2 à 8.",
+  "legende_titre": "Quand la trace reste la même",
+  "lecture": [
+   "Les cases bleues sont les matrices de départ avec leur trace.",
+   "Les flèches vertes portent P⁻¹ A P : la trace reste 0, puis 2.",
+   "La flèche rouge porte P A P : la trace passe de 2 à 8."
+  ],
+  "a_voir": "Avec P⁻¹ d'un côté et P de l'autre, la trace reste la même."
+ },
+ {
+  "code": "74-122",
+  "a_dire": "L'étape qui porte la preuve est tr(MN) = tr(NM) ; elle permet de déplacer P⁻¹ à la fin.",
+  "legende_titre": "L'étape qui échange M et N",
+  "lecture": [
+   "Les cases du haut montrent tr(MN) = 5 en bleu et tr(NM) = 5 en orange : égalité.",
+   "La case bleue du bas est tr(P⁻¹ A P), la case orange tr(A P P⁻¹) après échange.",
+   "La case verte est le résultat : tr(A)."
+  ],
+  "a_voir": "On échange M = P⁻¹ et N = AP, puis P P⁻¹ disparaît."
+ },
+ {
+  "code": "74-123",
+  "a_dire": "Une rotation envoie le réseau sur lui-même : l'image de x et de y s'écrit avec des coefficients entiers.",
+  "legende_titre": "La rotation reste dans le réseau",
+  "lecture": [
+   "Les points gris sont le réseau ; la flèche bleue est x, la flèche violette y.",
+   "Les flèches orange sont le quart de tour : x arrive sur y, y arrive en −x (point vert).",
+   "Les deux cases donnent les coefficients : 0, 1, −1 et 0, tous entiers."
+  ],
+  "a_voir": "L'image de chaque flèche est un point du réseau, donc a des coefficients entiers."
+ },
+ {
+  "code": "74-124",
+  "a_dire": "Dans la base x, y la matrice est à coefficients entiers, donc sa trace a + d est un entier.",
+  "legende_titre": "Une matrice entière a une trace entière",
+  "lecture": [
+   "La première colonne, repérée en bleu, est l'image de x ; la seconde, en violet, est l'image de y.",
+   "Les entiers a, b, c, d sont les coefficients de la matrice dans la base x, y.",
+   "Les deux cases vertes sont la diagonale : a et d, leur somme est la trace.",
+   "Pour le quart de tour, a = 0 et d = 0 : la trace vaut 0 + 0 = 0."
+  ],
+  "a_voir": "La trace est la somme de deux entiers, donc un entier."
+ },
+ {
+  "code": "74-125",
+  "a_dire": "La matrice M s'écrit P⁻¹ R P : c'est la même rotation dans deux bases, donc la même trace.",
+  "legende_titre": "Même rotation, même trace",
+  "lecture": [
+   "La matrice bleue est la rotation dans la base habituelle ; sa diagonale vaut 1/2 et 1/2.",
+   "La matrice violette est la même rotation dans la base du réseau : 0, −1, 1, 1.",
+   "La flèche orange passe de l'une à l'autre ; les deux traces valent 1."
+  ],
+  "a_voir": "Changer de base ne change pas la trace."
+ },
+ {
+  "code": "74-126",
+  "a_dire": "2 cos θ est un entier entre −2 et 2 : il ne reste que cinq valeurs.",
+  "legende_titre": "Il ne reste que cinq entiers",
+  "lecture": [
+   "Les cinq disques verts, de −2 à 2, sont les entiers permis.",
+   "Les disques rouges, au-delà de −2 et de 2, sont impossibles.",
+   "L'accolade du haut est l'encadrement de 2 cos θ."
+  ],
+  "a_voir": "L'encadrement limite les entiers possibles à cinq."
+ },
+ {
+  "code": "74-127",
+  "a_dire": "Les cinq valeurs de 2 cos θ donnent les angles 0°, 60°, 90°, 120°, 180° d'ordres 1, 6, 4, 3, 2.",
+  "legende_titre": "Cinq valeurs, cinq angles",
+  "lecture": [
+   "Chaque petit cercle montre l'angle : le secteur orange est l'angle θ.",
+   "Le texte bleu donne la valeur de 2 cos θ.",
+   "Le texte vert donne l'angle et l'ordre de la rotation."
+  ],
+  "a_voir": "À chaque entier correspond un seul angle et un seul ordre."
+ },
+ {
+  "code": "74-128",
+  "a_dire": "Pour 72°, 2 cos 72° ≈ 0,618 n'est pas entier ; le cinquième de tour est exclu.",
+  "legende_titre": "Le test du double du cosinus",
+  "lecture": [
+   "Les disques verts sont les cinq entiers permis, de −2 à 2.",
+   "Le disque rouge à 0,618 est le résultat pour 72°, entre 0 et 1 : pas entier.",
+   "L'autre disque rouge, 1,247, est celui du septième de tour : pas entier non plus."
+  ],
+  "a_voir": "Un angle est permis seulement si son double du cosinus est un de ces cinq entiers."
+ }
+]

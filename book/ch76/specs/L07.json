@@ -1,0 +1,189 @@
+[
+ {
+  "code": "76-097",
+  "a_dire": "Lire la formule en trois temps : le produit de n nombres, le signe du rangement, la somme sur tous les rangements.",
+  "legende_titre": "Lire la formule en trois temps",
+  "lecture": [
+   "Les trois cases bleues du tableau sont les nombres choisis, un par colonne et un par ligne : 1, 1 et 1.",
+   "Le cadre bleu donne leur produit.",
+   "Le cadre orange donne le signe : le rangement 2, 3, 1 demande deux échanges, donc plus.",
+   "Le cadre vert dit qu'on additionne sur tous les rangements."
+  ],
+  "a_voir": "Une lecture en trois temps : produit, signe, somme."
+ },
+ {
+  "code": "76-098",
+  "a_dire": "Le nombre de termes est 2 pour n = 2, 6 pour n = 3 et n ! en général.",
+  "legende_titre": "Compter les termes du déterminant",
+  "lecture": [
+   "Les cadres bleus de gauche listent les 2 rangements de 1 et 2.",
+   "Les cadres bleus de droite listent les 6 rangements de 1, 2 et 3.",
+   "Le cadre vert écrit le compte général : n fois n moins 1, et ainsi de suite jusqu'à 1."
+  ],
+  "a_voir": "Chaque rangement est un terme : 2, puis 6, puis n !."
+ },
+ {
+  "code": "76-099",
+  "a_dire": "La formule du déterminant est le développement de L e1 ∧ … ∧ L en, pas une règle choisie.",
+  "legende_titre": "D'où vient la formule",
+  "lecture": [
+   "Le cadre bleu est le terme 3 fois 4 fois e un-deux.",
+   "Le cadre orange est le terme 2 fois 1 fois e deux-un, qui devient moins 2 fois e un-deux.",
+   "Les deux cadres verts donnent 10 : le développement et la formule sont d'accord.",
+   "Le cadre rouge montre qu'avec un plus, on trouverait 14, ce qui est faux."
+  ],
+  "a_voir": "Le développement impose le signe moins de la formule."
+ },
+ {
+  "code": "76-100",
+  "a_dire": "Le produit (2 + 3i)(1 + 4i) se calcule avec la table : quatre produits, puis la somme, avec i × i = −1.",
+  "legende_titre": "Le produit de deux nombres complexes par la table",
+  "lecture": [
+   "Les chiffres en haut (1 et 4i) et à gauche (2 et 3i) sont les termes des deux facteurs.",
+   "Chaque case grise est le produit de sa ligne et de sa colonne.",
+   "La case orange est la non évidente : 3i fois 4i donne moins 12, car i fois i vaut moins 1.",
+   "Le cadre vert additionne les quatre cases."
+  ],
+  "a_voir": "Quatre cases, puis une somme : moins 10 plus 11 i."
+ },
+ {
+  "code": "76-101",
+  "a_dire": "Dans F[G], les deux éléments non nuls 1 + s et 1 − s ont un produit nul.",
+  "legende_titre": "Deux éléments non nuls, produit nul",
+  "lecture": [
+   "Le cadre bleu est 1 plus s, non nul.",
+   "Le cadre violet est 1 moins s, non nul.",
+   "Le cadre vert de droite est leur produit : 0.",
+   "Les deux bandeaux verts donnent les deux nombres du produit : 1 moins 1, puis moins 1 plus 1."
+  ],
+  "a_voir": "Un produit peut être nul sans qu'aucun facteur le soit."
+ },
+ {
+  "code": "76-102",
+  "a_dire": "Dans F[G], deux éléments non nuls ont un produit nul : une algèbre n'est pas forcément un corps.",
+  "legende_titre": "Une algèbre sans division possible",
+  "lecture": [
+   "En haut : le groupe G a deux éléments, 1 et s, avec s² = 1.",
+   "Les deux cases du haut, 1 + s et 1 − s, ne sont pas nulles.",
+   "La case grise développe leur produit : 1 − s².",
+   "La case verte donne 1 − 1 = 0 : le produit est nul."
+  ],
+  "a_voir": "Deux éléments non nuls, un produit nul : on ne peut pas diviser."
+ },
+ {
+  "code": "76-103",
+  "a_dire": "La matrice de T a pour colonnes Te1 et Te2, et det T = 2 × 3 − 1 × 1 = 5.",
+  "legende_titre": "La matrice du logo et son déterminant",
+  "lecture": [
+   "Le carré gris est le carré unité ; le côté bleu devient T e1 = (2, 1), le côté orange T e2 = (1, 3).",
+   "La forme verte est l’image du carré.",
+   "À droite, le tableau a pour colonnes T e1 en bleu et T e2 en orange.",
+   "Le cadre gris est le calcul 2 fois 3 moins 1 fois 1 ; le cadre vert donne 5."
+  ],
+  "a_voir": "Les colonnes sont les images de e1 et e2, et le calcul donne 5."
+ },
+ {
+  "code": "76-104",
+  "a_dire": "Le carré d'aire 1 est envoyé sur un parallélogramme dont les côtés sont Te1 et Te2 et dont l'aire est 5.",
+  "legende_titre": "Un carreau devient cinq carreaux",
+  "lecture": [
+   "À gauche, le carré bleu est construit sur e un (flèche bleue) et e deux (flèche orange) : 1 carreau.",
+   "À droite, le parallélogramme vert est construit sur Te un (bleu) et Te deux (orange).",
+   "Les carreaux gris servent à compter : le parallélogramme en vaut 5, comme det T."
+  ],
+  "a_voir": "Les côtés du parallélogramme sont les images des côtés du carré."
+ },
+ {
+  "code": "76-105",
+  "a_dire": "Chaque petit carré de côté h devient une figure d'aire 5h² : toute forme est multipliée par 5.",
+  "legende_titre": "Le facteur 5 vaut pour toute forme",
+  "lecture": [
+   "À gauche, le logo de 12 cm² est découpé en petits carrés de côté 0,1 ; celui en bleu a pour aire 0,01.",
+   "À droite, T envoie chaque carré sur un parallélogramme ; celui en vert a pour aire 0,05, soit 5h².",
+   "En bas : 1 200 carrés, chacun multiplié par 5, donnent 12 puis 60."
+  ],
+  "a_voir": "Le même facteur 5 sur tous les carrés donne 5 sur toute la forme."
+ },
+ {
+  "code": "76-106",
+  "a_dire": "Pour n = 3, la formule a six termes : trois avec le signe plus (24, 0, 1) et trois avec le signe moins (0, 0, 0), donc 25.",
+  "legende_titre": "Les six termes du déterminant 3 sur 3",
+  "lecture": [
+   "Les trois cadres bleus sont les produits de signe plus : 24, 0 et 1.",
+   "Les trois cadres violets sont les produits de signe moins : 0, 0 et 0.",
+   "Le cadre vert additionne : 24 plus 1 égale 25."
+  ],
+  "a_voir": "Six termes à calculer, même si plusieurs sont nuls."
+ },
+ {
+  "code": "76-107",
+  "a_dire": "Le développement selon la première ligne ramène le déterminant 3 sur 3 à des déterminants 2 sur 2.",
+  "legende_titre": "Développer selon la première ligne",
+  "lecture": [
+   "La première ligne du tableau est en orange.",
+   "Les quatre cases bleues sont celles qui restent quand on retire la ligne et la colonne du nombre 2.",
+   "Chaque cadre à droite est un terme : 2 fois 12, moins 0 fois quelque chose, plus 1 fois 1.",
+   "Le cadre vert donne la somme : 25."
+  ],
+  "a_voir": "Chaque nombre de la première ligne multiplie un déterminant plus petit."
+ },
+ {
+  "code": "76-108",
+  "a_dire": "Un seul des trois vecteurs peut fournir e1, sinon e1 ∧ e1 = 0 ; les deux autres donnent un déterminant plus petit.",
+  "legende_titre": "Pourquoi un seul vecteur fournit e un",
+  "lecture": [
+   "Chaque ligne de trois cases représente les trois colonnes, avec le vecteur choisi dans chacune.",
+   "La case orange est la colonne qui donne e un ; les cases bleues donnent e deux ou e trois.",
+   "À droite, chaque choix donne un terme : 24 ou 1.",
+   "La dernière ligne, avec deux cases rouges, donne e un ∧ e un = 0."
+  ],
+  "a_voir": "Un seul e un par terme : sinon le terme est nul."
+ },
+ {
+  "code": "76-109",
+  "a_dire": "La preuve part de AB, utilise η(AB) = η(A)η(B), et arrive à det(AB) = det A × det B.",
+  "legende_titre": "Pourquoi les facteurs se multiplient",
+  "lecture": [
+   "La barre bleue est l'aire de départ : 1.",
+   "Après B, la barre orange est multipliée par 2.",
+   "Après A, la barre verte est multipliée par 3 : aire 6.",
+   "Le grand cadre orange est l'étape qui porte la preuve : η de AB égale η de A fois η de B."
+  ],
+  "a_voir": "Composer deux déformations multiplie leurs facteurs."
+ },
+ {
+  "code": "76-110",
+  "a_dire": "Le déterminant d'une composée est le produit des déterminants, pas leur somme.",
+  "legende_titre": "Produit et non somme",
+  "lecture": [
+   "Sur la droite graduée, la flèche orange multiplie par 2 (B), de 1 à 2.",
+   "La flèche violette multiplie par 3 (A), de 2 à 6.",
+   "Le point rouge, en 5, est la somme 2 plus 3 : c'est faux.",
+   "Le point vert, en 6, est le produit : c'est le déterminant de AB."
+  ],
+  "a_voir": "Deux facteurs qui se suivent se multiplient : 6, pas 5."
+ },
+ {
+  "code": "76-111",
+  "a_dire": "La preuve sans coefficients remplace une comparaison de très longues sommes par une phrase.",
+  "legende_titre": "Sans coefficients, une phrase suffit",
+  "lecture": [
+   "À gauche (orange), chaque case du produit est une somme de 3 produits ; le déterminant a 6 termes de 3 cases.",
+   "À droite (vert), on ne regarde que le niveau du haut.",
+   "Composer revient alors à multiplier det A par det B."
+  ],
+  "a_voir": "Le calcul par les coefficients est long ; la preuve par la structure est courte."
+ },
+ {
+  "code": "76-112",
+  "a_dire": "Pour A et B donnés, det B = 2, det A = 3 et det AB = 6 = 3 × 2.",
+  "legende_titre": "Vérifier sur des nombres",
+  "lecture": [
+   "La matrice bleue est A, de déterminant 3.",
+   "La matrice violette est B, de déterminant 2.",
+   "La matrice verte est le produit AB, de déterminant 6.",
+   "Le bas de la figure dit que 3 fois 2 égale 6."
+  ],
+  "a_voir": "Les trois déterminants s'accordent : 6 est 3 fois 2."
+ }
+]

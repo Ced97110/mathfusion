@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 22, 54, 44, 16, 'sujet', label='(4, 6)\n(6, 4)')
+box(ax, 2, 30, 42, 12, 'sujet', label=r'$\Delta_1=\gcd(4,6,6,4)=2$', size='s')
+box(ax, 46, 30, 40, 12, 'sujet', label=r'$\Delta_2=4\times4-6\times6$', size='s')
+arrow(ax, (34, 53.5), (23, 43), 'varie')
+arrow(ax, (54, 53.5), (66, 43), 'varie')
+arrow(ax, (44, 29.5), (44, 20), 'varie')
+box(ax, 4, 3, 80, 16, 'autre', label='ces pgcd reviennent au chapitre 76 :\nalgèbres extérieures', size='s')
+save(fig, '59-152')

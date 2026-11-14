@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 29, 64, 30, 11, 'sujet', label=r'$2^3\ /\ 2^3$')
+box(ax, 4, 36, 30, 11, 'fixe', label=r'$8\ /\ 8 = 1$')
+box(ax, 54, 36, 30, 11, 'varie', label=r'$2^{3-3} = 2^0$')
+box(ax, 24, 6, 40, 12, 'resultat', label=r'$2^0 = 1$', size='l')
+arrow(ax, (36, 63), (19, 48.5), 'fixe'); arrow(ax, (52, 63), (69, 48.5), 'varie')
+text(ax, 10, 55, 'division', 'fixe', 's'); text(ax, 76, 55, 'règle du quotient', 'varie', 's')
+arrow(ax, (19, 35), (32, 19.5), 'fixe'); arrow(ax, (69, 35), (56, 19.5), 'varie')
+text(ax, 44, 28, 'même nombre', 'resultat', 's', weight='bold')
+save(fig, '14-037')

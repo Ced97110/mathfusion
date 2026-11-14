@@ -1,0 +1,180 @@
+[
+ {
+  "code": "17-049",
+  "a_dire": "Le signe < se lit « strictement inférieur » : point vide et flèche vers la gauche.",
+  "legende_titre": "Les deux mots du signe, lus sur la droite",
+  "lecture": [
+   "Le point bleu vide est en 1 : le 1 est refusé.",
+   "La flèche bleue part de ce point vers la gauche.",
+   "Le point vert en 0 convient.",
+   "Le point rouge en 2 est refusé, il est du mauvais côté."
+  ],
+  "a_voir": "Le point vide refuse le 1 et la flèche va vers la gauche."
+ },
+ {
+  "code": "17-050",
+  "a_dire": "Le signe ≤ se lit « inférieur ou égal » : point plein en −1 et flèche vers la gauche.",
+  "legende_titre": "Un signe, tout le dessin",
+  "lecture": [
+   "Le point bleu plein est en −1 : le −1 est accepté.",
+   "La flèche bleue va vers la gauche.",
+   "Le point vert en −2 est accepté.",
+   "Le point rouge en 0 est refusé."
+  ],
+  "a_voir": "Le point plein accepte −1 et la flèche couvre −2 mais pas 0."
+ },
+ {
+  "code": "17-051",
+  "a_dire": "Le point plein dit que le nombre du bord est accepté.",
+  "legende_titre": "Deux dessins, une seule différence",
+  "lecture": [
+   "En haut, en gris, le point est vide : le 2 est refusé.",
+   "En bas, en bleu, le point est plein : le 2 est accepté.",
+   "La flèche va à droite dans les deux cas."
+  ],
+  "a_voir": "Seul le remplissage du point change entre les deux lignes."
+ },
+ {
+  "code": "17-052",
+  "a_dire": "Le point vide dit que le nombre du bord est refusé.",
+  "legende_titre": "Le remplissage du point",
+  "lecture": [
+   "Le point bleu vide, en 2, est le remplissage : il dit que le bord est exclu.",
+   "La flèche grise dit le côté.",
+   "Le texte en gris sous le 2 rappelle que la place du point dit où est le bord."
+  ],
+  "a_voir": "Un point vide en 2 : le 2 n'est pas une solution."
+ },
+ {
+  "code": "17-053",
+  "a_dire": "La flèche dit si les solutions sont à droite ou à gauche du point.",
+  "legende_titre": "Même point, flèche différente",
+  "lecture": [
+   "Le point gris vide est en 2 sur les deux lignes.",
+   "La flèche orange va à droite en haut et à gauche en bas.",
+   "Le trait pointillé relie les deux points identiques."
+  ],
+  "a_voir": "Le point ne bouge pas, seule la flèche change de côté."
+ },
+ {
+  "code": "17-054",
+  "a_dire": "Pour une inéquation, on fait les mêmes gestes que pour une équation.",
+  "legende_titre": "Équation et inéquation côte à côte",
+  "lecture": [
+   "La colonne bleue montre l'équation et la colonne violette l'inéquation.",
+   "Les flèches orange sont les gestes : retirer 1, puis diviser par 3.",
+   "Les gestes sont les mêmes dans les deux colonnes."
+  ],
+  "a_voir": "Seul le signe change entre les deux colonnes."
+ },
+ {
+  "code": "17-055",
+  "a_dire": "Les lettres a, b et c sont des nombres réels, et a est à gauche de b.",
+  "legende_titre": "Ce que la phrase fixe et ce qu'elle laisse libre",
+  "lecture": [
+   "Les deux points bleus a et b sont placés : a est à gauche de b.",
+   "Le point violet en pointillés c n'a pas de place fixée, la flèche violette le montre.",
+   "La droite grise porte les nombres."
+  ],
+  "a_voir": "a est à gauche de b ; c peut être n'importe où."
+ },
+ {
+  "code": "17-056",
+  "a_dire": "Si a < b, ajouter le même nombre c aux deux garde le sens de l'inégalité.",
+  "legende_titre": "Même nombre ajouté, ou pas",
+  "lecture": [
+   "En haut, 3 et 7 deviennent 11 et 15 avec + 8 des deux côtés : le sens est gardé, en vert.",
+   "En bas, 3 reçoit 8 et 7 reçoit 2 : les flèches rouges se croisent et on obtient 11 > 9."
+  ],
+  "a_voir": "Le sens est gardé seulement si le même nombre est ajouté aux deux."
+ },
+ {
+  "code": "17-057",
+  "a_dire": "Ajouter c déplace a et b de la même longueur, donc l'écart ne change pas et a reste à gauche.",
+  "legende_titre": "Départ, déplacement, arrivée",
+  "lecture": [
+   "En haut, les points bleus a et b sont séparés par un écart.",
+   "Les flèches orange les déplacent de la même longueur.",
+   "En bas, les points verts a + c et b + c ont le même écart."
+  ],
+  "a_voir": "Les deux flèches sont parallèles, donc l'ordre reste le même."
+ },
+ {
+  "code": "17-058",
+  "a_dire": "Avec 3 < 7 et c = 8, l'écart reste 4 et 11 < 15.",
+  "legende_titre": "Un cas chiffré avec l'écart",
+  "lecture": [
+   "Les points bleus 3 et 7 ont un écart de 4.",
+   "La flèche orange ajoute 8 aux deux.",
+   "Les points verts 11 et 15 ont aussi un écart de 4."
+  ],
+  "a_voir": "L'écart vaut 4 avant et après l'ajout."
+ },
+ {
+  "code": "17-059",
+  "a_dire": "Avec c = −8, 3 et 7 deviennent −5 et −1, et −5 reste à gauche de −1.",
+  "legende_titre": "Ajouter un nombre négatif",
+  "lecture": [
+   "Les points bleus 3 et 7 sont déplacés par les flèches orange de 8 vers la gauche.",
+   "Ils arrivent en −5 et −1, en vert.",
+   "Le point −5 est à gauche du point −1."
+  ],
+  "a_voir": "L'ordre est gardé quand on ajoute −8."
+ },
+ {
+  "code": "17-060",
+  "a_dire": "Multiplier par un nombre positif garde le sens : 8 fois 3 est plus petit que 8 fois 7.",
+  "legende_titre": "Huit fois 3 contre huit fois 7",
+  "lecture": [
+   "La rangée bleue a 8 cases de longueur 3.",
+   "La rangée violette a 8 cases de longueur 7.",
+   "Les traits pointillés montrent les fins : 24 est avant 56."
+  ],
+  "a_voir": "Chaque case de 3 est plus courte que celle de 7, donc 24 < 56."
+ },
+ {
+  "code": "17-061",
+  "a_dire": "Multiplier par un nombre positif éloigne ou rapproche les points de 0 sans les retourner.",
+  "legende_titre": "Étirer ou contracter à partir de 0",
+  "lecture": [
+   "Le trait pointillé est le 0.",
+   "En haut, les points 3 et 7 vont en 24 et 56 : ils s'éloignent.",
+   "En bas, ils vont en 1,5 et 3,5 : ils se rapprochent.",
+   "Les flèches ne se croisent pas."
+  ],
+  "a_voir": "Le point de gauche reste à gauche dans les deux cas."
+ },
+ {
+  "code": "17-062",
+  "a_dire": "Avec 3 < 7 et c = 8, l'écart passe de 4 à 32 et 24 < 56.",
+  "legende_titre": "Un cas chiffré pour la multiplication",
+  "lecture": [
+   "Les points bleus 3 et 7 ont un écart de 4.",
+   "La flèche orange multiplie les deux par 8.",
+   "Les points verts 24 et 56 ont un écart de 32, vers la droite."
+  ],
+  "a_voir": "L'écart change, mais 24 reste à gauche de 56."
+ },
+ {
+  "code": "17-063",
+  "a_dire": "Multiplier par un nombre négatif renverse le sens : 3 < 7 donne −24 > −56.",
+  "legende_titre": "Multiplier par −8",
+  "lecture": [
+   "En haut, les points bleus 3 et 7.",
+   "Les flèches orange les envoient en −24 et −56, en vert.",
+   "Les flèches se croisent : 3 passe à droite de ce que devient 7."
+  ],
+  "a_voir": "Le sens se renverse : −24 est à droite de −56."
+ },
+ {
+  "code": "17-064",
+  "a_dire": "Presque toutes les erreurs viennent d'un oubli : garder le signe en divisant par un nombre négatif.",
+  "legende_titre": "Deux façons de diviser par −2",
+  "lecture": [
+   "Le cadre bleu est l'inéquation de départ.",
+   "À gauche, en rouge, on garde le signe et le test avec 0 est faux.",
+   "À droite, en vert, on renverse le signe et le test avec 0 est vrai."
+  ],
+  "a_voir": "Garder le signe donne une réponse fausse quand on divise par −2."
+ }
+]

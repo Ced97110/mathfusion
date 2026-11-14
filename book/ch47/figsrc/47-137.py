@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, 'même ligne = liés', 'encre', 'm')
+box(ax, 5, 44, 78, 18, 'fixe', fill=False)
+disc(ax, 28, 54, 4.2, 'sujet', label='1'); disc(ax, 60, 54, 4.2, 'sujet', label='4')
+arrow(ax, (32.7, 54), (55.3, 54), 'resultat', both=True)
+text(ax, 44, 47.5, 'dans les deux sens', 'resultat', 's')
+box(ax, 5, 3, 78, 38, 'fixe', fill=False)
+xs = [20, 44, 68]
+for x, v in zip(xs, [1, 4, 7]): disc(ax, x, 15, 4.2, 'sujet', label=str(v))
+arrow(ax, (24.7, 15), (39.3, 15), 'fixe'); arrow(ax, (48.7, 15), (63.3, 15), 'fixe')
+arrow(ax, (20, 20), (68, 20), 'resultat', curve=-0.4)
+text(ax, 44, 23.5, '1 et 7 sont liés', 'resultat', 's')
+text(ax, 44, 7, 'de proche en proche', 'fixe', 's')
+save(fig, '47-137')

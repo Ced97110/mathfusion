@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 28, 54, '3', 'sujet', 20)
+text(ax, 37, 54, '∣', 'fixe', 20)
+text(ax, 47, 54, '12', 'autre', 20)
+text(ax, 22, 40, 'diviseur b', 'sujet', 's')
+arrow(ax, (25, 43), (28, 49), 'sujet')
+text(ax, 62, 40, 'nombre divisé a', 'autre', 's')
+arrow(ax, (58, 43), (50, 49), 'autre')
+box(ax, 6, 22, 76, 10, 'resultat', label='il existe c : 12 = 3 × 4')
+text(ax, 22, 9, '12 ∣ 3', 'limite', 14)
+text(ax, 62, 9, 'faux : 3 = 12 × c\nn’a pas de c entier', 'limite', 's')
+save(fig, '56-026')

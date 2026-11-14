@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 46, 28, 12, 'sujet', label=r'$A=\mathbb{R}$')
+arrow(ax, (32, 52), (42, 52), 'varie')
+text(ax, 37, 56, 'couples', 'varie', 's')
+box(ax, 44, 46, 18, 12, 'sujet', label=r'$u=1$'); box(ax, 64, 46, 18, 12, 'sujet', label=r'$v=2$')
+text(ax, 63, 62, r'un élément de $D$ : $(u,v)$', 'sujet', 's')
+box(ax, 3, 24, 28, 10, 'varie', label=r'$c=-1$')
+text(ax, 17, 38, 'nombre fixé, non nul', 'varie', 's')
+arrow(ax, (31, 29), (40, 18), 'varie'); arrow(ax, (63, 45), (54, 19), 'sujet')
+box(ax, 34, 5, 40, 12, 'resultat', label=r'$D=\mathbb{C}$')
+text(ax, 62, 30, 'produit qui mêle', 'autre', 's'); text(ax, 62, 26.5, 'les deux coordonnées', 'autre', 's')
+save(fig, '78-090')

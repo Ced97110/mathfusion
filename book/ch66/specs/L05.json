@@ -1,0 +1,361 @@
+[
+ {
+  "code": "66-121",
+  "a_dire": "On multiplie la relation par ses images sous G : les coefficients algébriques deviennent rationnels, puis entiers, comme (3 + racine de 2) fois (3 − racine de 2) vaut 7.",
+  "legende_titre": "Multiplier par les images",
+  "lecture": [
+   "En haut, la boîte bleue est le nombre 3 + racine de 2 et la boîte orange est son image, 3 − racine de 2.",
+   "La flèche orange montre l'échange de racine de 2 en son opposé.",
+   "La boîte verte donne le produit : 9 − 2 = 7, un entier.",
+   "En bas, les coefficients passent de algébriques (bleu) à entiers (vert) grâce à la multiplication par les images (orange)."
+  ],
+  "a_voir": "Le produit d'un nombre et de son image est un entier, alors que chaque facteur n'en est pas un."
+ },
+ {
+  "code": "66-122",
+  "a_dire": "La trace T′ additionne un nombre et ses images : 3 + racine de 2 et 3 − racine de 2 donnent 6.",
+  "legende_titre": "La trace : une somme d'images",
+  "lecture": [
+   "La boîte bleue est le nombre 3 + racine de 2.",
+   "La boîte orange est son image quand on échange racine de 2 et son opposé.",
+   "Les deux flèches grises vont vers la somme, le signe plus entre elles.",
+   "La boîte verte contient la somme, 6, que la trace T′ fait."
+  ],
+  "a_voir": "La trace ajoute le nombre à son image et donne un entier."
+ },
+ {
+  "code": "66-123",
+  "a_dire": "La relation (63) se lit en quatre actions : prendre les images de u, calculer leurs exponentielles, les additionner, multiplier par v.",
+  "legende_titre": "Les actions de la relation (63)",
+  "lecture": [
+   "Colonne de gauche (1) : la boîte bleue est u = racine de 2, la boîte orange est son image, moins racine de 2.",
+   "Colonne du milieu (2) : les exponentielles valent environ 4,113 et 0,243.",
+   "La boîte verte à droite (3) est leur somme, environ 4,356.",
+   "La boîte orange (4) multiplie cette somme par l'entier v₁ ; le texte du bas écrit la relation (63) : le total vaut 0."
+  ],
+  "a_voir": "Quatre actions : images, exponentielles, somme, multiplication par v₁."
+ },
+ {
+  "code": "66-124",
+  "a_dire": "La première moitié de la preuve est de l'algèbre exacte, sans inégalité ; elle prépare la relation (63) que la seconde moitié, qui compare des tailles, doit réfuter.",
+  "legende_titre": "Ce qui précède est de l'algèbre",
+  "lecture": [
+   "Le grand cadre bleu contient les trois outils de l'algèbre : groupes de Galois, traces, modules.",
+   "Sous le cadre, il est écrit qu'aucun signe « plus petit que » n'y apparaît.",
+   "La flèche mène à la boîte bleue (63), où s'arrête la première moitié.",
+   "La boîte violette en pointillés est la seconde moitié, qui compare des tailles."
+  ],
+  "a_voir": "L'algèbre aboutit à (63) mais ne la réfute pas ; il faut une autre idée."
+ },
+ {
+  "code": "66-125",
+  "a_dire": "La seconde moitié choisit un nombre premier p grand pour qu'une même somme soit à la fois un entier non nul (au moins 1) et un nombre plus petit que 1.",
+  "legende_titre": "Un entier non nul contre un petit reste",
+  "lecture": [
+   "Sur la droite graduée, la zone orange va de 0 à 1 : les nombres plus petits que 1.",
+   "La zone bleue commence à 1 : un entier non nul vaut au moins 1.",
+   "La boîte rouge dit qu'un nombre ne peut pas être dans les deux zones.",
+   "En bas, la relation (63) supposée mène à la contradiction ; l'étape orange, p grand, décide."
+  ],
+  "a_voir": "Avec p grand, la même somme devrait être dans deux zones qui ne se touchent pas."
+ },
+ {
+  "code": "66-126",
+  "a_dire": "Le polynôme auxiliaire h(x) = x^(p−1) f(x)^p répète p fois la racine de f : avec f(x) = x − 2 et p = 5, la racine 2 est répétée 5 fois et le degré est 9.",
+  "legende_titre": "Le polynôme auxiliaire h",
+  "lecture": [
+   "La boîte grise est x puissance 4 : p − 1 vaut 4.",
+   "La boîte bleue est (x − 2) puissance 5 : le polynôme f à la puissance p.",
+   "Les cinq disques orange sont les cinq répétitions de la racine 2.",
+   "Le texte vert donne le degré : 4 + 5 = 9."
+  ],
+  "a_voir": "La puissance 5 sur (x − 2) répète cinq fois la racine 2."
+ },
+ {
+  "code": "66-127",
+  "a_dire": "L'identité centrale relie un entier multiplié par (p − 1)! et e^x à p! fois un polynôme entier plus un reste ; pour p = 3, les deux factorielles valent 2 et 6.",
+  "legende_titre": "L'identité centrale pour p = 3",
+  "lecture": [
+   "Les deux textes gris du haut calculent les factorielles : (p − 1)! = 2 et p! = 6.",
+   "Les flèches grises les envoient dans les deux premiers termes de l'égalité.",
+   "La boîte bleue est le premier membre : 2 fois un entier fois e^x.",
+   "La boîte grise est 6 fois un polynôme entier, la boîte orange est le reste R(x)."
+  ],
+  "a_voir": "Les facteurs 2 et 6 viennent des factorielles de p − 1 et de p."
+ },
+ {
+  "code": "66-128",
+  "a_dire": "Le reste R(x) se lit comme une aire sous la courbe de h multipliée par e^(−t) ; si la courbe reste sous 0,001 sur une longueur 1, l'aire est inférieure à 0,001.",
+  "legende_titre": "Le reste vu comme une aire",
+  "lecture": [
+   "La zone bleue est l'aire sous la courbe de h fois e^(−t) : c'est le reste R.",
+   "Les graduations 0 et 1 et l'accolade donnent la longueur 1 du segment.",
+   "La ligne grise en pointillés est le plafond 0,001.",
+   "La courbe reste sous ce plafond, donc l'aire est petite."
+  ],
+  "a_voir": "Une courbe basse donne une aire petite, donc un reste petit."
+ },
+ {
+  "code": "66-129",
+  "a_dire": "Pour a0 = 2 et p = 5, 2^5 = 32 laisse le reste 2 dans la division par 5, donc 32 n'est pas divisible par 5 ; N_p a le même reste.",
+  "legende_titre": "Un reste non nul dans la division par 5",
+  "lecture": [
+   "La grille contient 32 cases : 6 lignes bleues de 5 cases, soit 6 groupes de 5.",
+   "Les 2 cases orange en bas sont le reste.",
+   "À droite, le calcul écrit 2 puissance 5 = 32 et 32 = 6 fois 5 + 2.",
+   "Le dernier texte dit que N_p a aussi le reste 2."
+  ],
+  "a_voir": "Il reste 2 cases après les groupes de 5 : 32 n'est pas divisible par 5."
+ },
+ {
+  "code": "66-130",
+  "a_dire": "Comme h contient f^p en facteur, h et ses p − 1 premières dérivées s'annulent en u ; pour p = 3 et u = 2, cela fait trois valeurs nulles de suite.",
+  "legende_titre": "Trois valeurs nulles en u = 2",
+  "lecture": [
+   "La courbe bleue est celle de h = x² (x − 2)³ ; elle s'aplatit sur l'axe au point orange u = 2.",
+   "Les trois boîtes vertes écrivent h(2), h′(2) et h″(2), toutes égales à 0.",
+   "Le texte vert dit qu'il y a trois valeurs nulles de suite.",
+   "Le nombre trois est le p du cas concret."
+  ],
+  "a_voir": "La courbe touche l'axe en 2 de façon très plate : h et ses deux premières dérivées y valent 0."
+ },
+ {
+  "code": "66-131",
+  "a_dire": "Le rapport 2M^p/(p − 1)! diminue très vite quand p grandit : pour M = 2, il vaut environ 2,67 pour p = 5 et environ 0,0011 pour p = 11.",
+  "legende_titre": "Le rapport devient minuscule",
+  "lecture": [
+   "Sur la droite graduée, le point orange est le rapport pour p = 5, environ 2,67.",
+   "Le point bleu, presque sur 0, est le rapport pour p = 11, environ 0,0011.",
+   "La flèche orange va du premier point vers le second quand p grandit.",
+   "Les deux lignes grises du bas donnent les calculs : 64 sur 24, puis 4 096 sur 3 628 800."
+  ],
+  "a_voir": "Quand p grandit, le rapport se rapproche de 0."
+ },
+ {
+  "code": "66-132",
+  "a_dire": "Un entier divisible par p plus un entier qui ne l'est pas donnent un entier non divisible, donc non nul et au moins 1 ; or il est égal à des restes plus petits que 1 : contradiction.",
+  "legende_titre": "La contradiction finale",
+  "lecture": [
+   "En haut, avec p = 5 : l'entier vert 10 est divisible par 5, l'entier orange 3 ne l'est pas.",
+   "Leur somme, la boîte bleue 13, n'est pas divisible par 5 : elle est non nulle, donc au moins 1.",
+   "Sur la droite graduée, le trait orange à gauche de 1 est la somme des restes, plus petite que 1 ; la flèche bleue à droite de 1 est l'entier, au moins 1.",
+   "Les deux sont égaux : la boîte rouge nomme la contradiction."
+  ],
+  "a_voir": "La même somme serait à la fois au moins 1 et plus petite que 1."
+ },
+ {
+  "code": "66-133",
+  "a_dire": "Si u1 = u2 = 1, la relation 1·e¹ − 1·e¹ = 0 est vraie avec des coefficients non nuls : les nombres doivent donc être distincts.",
+  "legende_titre": "Deux nombres égaux se compensent",
+  "lecture": [
+   "La barre bleue au-dessus de la ligne est 1 fois e puissance 1, soit 2,718.",
+   "La barre violette en dessous est moins 1 fois e puissance 1, de même longueur.",
+   "Les deux barres ont la même taille et se compensent.",
+   "Le texte vert écrit le résultat : 2,718 − 2,718 = 0."
+  ],
+  "a_voir": "Deux exponentielles égales se retranchent l'une de l'autre et donnent 0."
+ },
+ {
+  "code": "66-134",
+  "a_dire": "Avec u1 = 0 et u2 = log 2, qui n'est pas algébrique, on a 2e^0 − e^(log 2) = 0 : la condition « algébriques » est nécessaire.",
+  "legende_titre": "Un nombre non algébrique casse la relation",
+  "lecture": [
+   "Sur la droite graduée, le point bleu est u1 = 0 et le point violet est u2 = log 2, environ 0,693, non algébrique.",
+   "La boîte bleue vaut 2 fois e puissance 0, soit 2.",
+   "La boîte violette vaut e puissance log 2, soit 2.",
+   "La boîte verte montre la différence, 0 : la relation nulle existe bien que log 2 ne soit pas algébrique, donc la condition « algébriques » est nécessaire."
+  ],
+  "a_voir": "Les deux boîtes valent 2 : leur différence est nulle bien que log 2 ne soit pas algébrique."
+ },
+ {
+  "code": "66-135",
+  "a_dire": "Si racine de pi était constructible, il serait algébrique, donc son carré pi aussi puisque les algébriques forment un corps ; or pi est transcendant.",
+  "legende_titre": "Pourquoi racine de pi n'est pas constructible",
+  "lecture": [
+   "La première boîte bleue est l'hypothèse : racine de pi est constructible, environ 1,7725.",
+   "La deuxième boîte grise dit qu'il est alors algébrique (chapitre 61).",
+   "La boîte orange est l'étape qui décide : le carré, pi (environ 3,1416), est algébrique car A est un corps.",
+   "La boîte rouge est le faux : pi est transcendant (Lindemann)."
+  ],
+  "a_voir": "Chaque flèche est un pas de la preuve, et le dernier pas contredit un fait connu."
+ },
+ {
+  "code": "66-150",
+  "a_dire": "Un nombre rationnel comme un demi ne peut pas être racine d'un polynôme à coefficient dominant 1 et à coefficients entiers, car on obtient 1 plus un nombre pair, qui est impair.",
+  "legende_titre": "Un demi n'est pas entier algébrique",
+  "lecture": [
+   "La première boîte bleue écrit le polynôme x² + c1·x + c0 évalué en un demi : un quart + c1 sur 2 + c0 = 0.",
+   "La flèche orange multiplie par 4.",
+   "La boîte grise donne 1 + 2·c1 + 4·c0 = 0.",
+   "En bas, 1 (bleu) plus un nombre pair (violet) donne un impair, qui n'est pas 0 : c'est la boîte rouge."
+  ],
+  "a_voir": "1 plus un nombre pair est impair, donc ne peut pas valoir 0."
+ },
+ {
+  "code": "66-136",
+  "a_dire": "Le carré de même aire que le cercle de rayon 1 a pour côté racine de pi, et ce nombre n'est pas constructible : la quadrature du cercle est impossible.",
+  "legende_titre": "Le carré de même aire",
+  "lecture": [
+   "Le disque bleu est le cercle de rayon 1, d'aire pi.",
+   "Le carré violet a la même aire pi ; son côté vaut racine de pi, environ 1,7725.",
+   "Le signe égal relie les deux aires, environ 3,1416.",
+   "Le texte rouge dit que ce côté n'est pas constructible."
+  ],
+  "a_voir": "Le côté du carré est imposé par l'aire : un seul nombre convient, et il n'est pas constructible."
+ },
+ {
+  "code": "66-137",
+  "a_dire": "Un nombre constructible passe deux épreuves : être algébrique, puis avoir un degré puissance de 2 ; racine cubique de 2 réussit la première et échoue à la seconde, pi échoue dès la première.",
+  "legende_titre": "Deux épreuves, deux échecs différents",
+  "lecture": [
+   "La première ligne est racine cubique de 2 : épreuve 1 réussie en vert, épreuve 2 ratée en rouge car son degré est 3.",
+   "La seconde ligne est pi : épreuve 1 ratée en rouge.",
+   "La boîte en pointillés dit que pi n'atteint pas la seconde épreuve.",
+   "Les colonnes sont les deux épreuves, dans l'ordre."
+  ],
+  "a_voir": "pi échoue plus tôt que racine cubique de 2."
+ },
+ {
+  "code": "66-138",
+  "a_dire": "Un segment de longueur 2 pi, le périmètre du cercle de rayon 1, serait constructible seulement si pi l'était, puisqu'on peut le diviser en deux ; c'est donc impossible, comme la quadrature.",
+  "legende_titre": "Rectifier le cercle",
+  "lecture": [
+   "Le disque bleu est le cercle de rayon 1.",
+   "La flèche orange le déroule en un segment bleu de longueur 2 pi, environ 6,283.",
+   "Le trait au milieu coupe le segment en deux morceaux, chacun de longueur pi, environ 3,1416.",
+   "Le texte rouge dit que 2 pi n'est pas constructible."
+  ],
+  "a_voir": "Un segment 2 pi constructible donnerait un segment pi constructible, ce qui est impossible."
+ },
+ {
+  "code": "66-139",
+  "a_dire": "Avant le chapitre, les questions de l'Antiquité étaient ouvertes ; après, elles sont fermées par des preuves, dont Gauss-Wantzel pour les polygones et Lindemann pour la quadrature.",
+  "legende_titre": "Trois questions fermées",
+  "lecture": [
+   "La colonne grise de gauche liste les questions ouvertes : polygones réguliers, quadrature du cercle, une troisième.",
+   "La colonne verte de droite liste ce qui les ferme : Gauss-Wantzel, Lindemann.",
+   "Chaque flèche relie une question à sa réponse.",
+   "Les boîtes en pointillés sont la troisième question, que le livre ne nomme pas ici."
+  ],
+  "a_voir": "Chaque question ouverte à gauche a une réponse prouvée à droite."
+ },
+ {
+  "code": "66-140",
+  "a_dire": "Le petit calcul (a + b)^p = a^p + b^p de la preuve de Gauss, pour p = 2, devient au chapitre 67 une opération sur tout un corps à 2² = 4 éléments : l'automorphisme de Frobenius.",
+  "legende_titre": "Le petit calcul devient Frobenius",
+  "lecture": [
+   "Les quatre disques bleus en haut sont les 4 éléments du corps, 2 puissance 2.",
+   "La boîte bleue (a + b)² est développée dans la boîte grise : a² + 2ab + b².",
+   "La boîte orange dit que 2 vaut 0, donc 2ab vaut 0.",
+   "La boîte verte donne (a + b)² = a² + b², et le texte du bas nomme cette opération Frobenius."
+  ],
+  "a_voir": "Dans ce corps, le terme du milieu disparaît."
+ },
+ {
+  "code": "66-141",
+  "a_dire": "Le groupe de Galois du corps cyclotomique est isomorphe à U_n, formé des restes sans diviseur commun avec n, dont le nombre est phi(n) : 4 pour n = 5, 2 pour n = 6.",
+  "legende_titre": "Les unités de Z/nZ",
+  "lecture": [
+   "La boîte violette du haut relie le groupe de Galois au groupe U_n des unités.",
+   "Chaque ligne montre les restes de 0 à n − 1.",
+   "Les cases bleues sont les unités : sans diviseur commun avec n, sauf 1.",
+   "Pour n = 5, quatre cases sont bleues : 1, 2, 3, 4. Pour n = 6, deux cases sont bleues : 1 et 5."
+  ],
+  "a_voir": "Le groupe de Galois a autant d'éléments que U_n a de cases bleues : phi(n)."
+ },
+ {
+  "code": "66-142",
+  "a_dire": "Les propriétés écrites avec plus, fois, plus petit que et des polynômes se décident par un algorithme (Tarski) ; pi et e, transcendants, sortent de ce langage.",
+  "legende_titre": "Ce que le langage décide, et ce qu'il laisse",
+  "lecture": [
+   "À gauche de la ligne en pointillés, le langage : plus, fois, plus petit que, et les polynômes.",
+   "La boîte verte donne un exemple : il existe un nombre positif dont le carré vaut 2 ; on le décide par un calcul.",
+   "À droite, les boîtes rouges pi et e sont transcendants.",
+   "Ils ne s'écrivent pas dans ce langage."
+  ],
+  "a_voir": "La ligne sépare ce qu'un algorithme décide de pi et e, qui restent dehors."
+ },
+ {
+  "code": "66-143",
+  "a_dire": "Le déterminant transforme un tableau de nombres en un seul nombre : pour 2, 1 / 1, 2, on fait 2 fois 2 moins 1 fois 1, soit 3.",
+  "legende_titre": "Le déterminant d'un tableau 2 × 2",
+  "lecture": [
+   "Le tableau a quatre cases : 2 et 1 sur la première ligne, 1 et 2 sur la seconde.",
+   "Les cases bleues sont la diagonale, dont le produit est 2 × 2 = 4.",
+   "Les cases orange sont l'autre diagonale, dont le produit est 1 × 1 = 1.",
+   "Le résultat vert est 4 − 1 = 3, le déterminant."
+  ],
+  "a_voir": "Le déterminant est le produit d'une diagonale moins le produit de l'autre."
+ },
+ {
+  "code": "66-144",
+  "a_dire": "La trace T′ de la preuve, qui additionne un nombre et son image, est un cas particulier de la trace d'une algèbre définie au chapitre 77.",
+  "legende_titre": "T′ est un cas particulier",
+  "lecture": [
+   "Le grand cadre violet en pointillés est la notion générale : la trace d'une algèbre, chapitre 77.",
+   "Le cadre bleu à l'intérieur est T′, le cas particulier de la preuve.",
+   "Le calcul vert montre T′ sur l'exemple : (3 + racine de 2) + (3 − racine de 2) = 6."
+  ],
+  "a_voir": "Le cadre bleu est entièrement dans le cadre violet."
+ },
+ {
+  "code": "66-145",
+  "a_dire": "Pour Phi_6, l'algorithme du chapitre calcule d'abord Phi_1, Phi_2 et Phi_3 par divisions successives ; la fonction de Möbius donnera au chapitre 80 une formule directe à partir des x^d − 1.",
+  "legende_titre": "Divisions successives ou formule directe",
+  "lecture": [
+   "À gauche, Phi_1 mène à Phi_2 et Phi_3, qui mènent à Phi_6 : chaque flèche est une étape.",
+   "À droite, les quatre boîtes x − 1, x² − 1, x³ − 1 et x⁶ − 1 correspondent aux diviseurs 1, 2, 3 et 6 de 6.",
+   "Une seule flèche relie ces quatre boîtes à Phi_6.",
+   "La formule elle-même n'est pas écrite ici."
+  ],
+  "a_voir": "À gauche quatre polynômes en chaîne, à droite un seul pas depuis les x^d − 1."
+ },
+ {
+  "code": "66-146",
+  "a_dire": "Les racines de l'unité, points régulièrement espacés d'un cercle, sont la base de la transformée de Fourier discrète, qui sert à compresser le son et les images.",
+  "legende_titre": "Les racines de l'unité hors du livre",
+  "lecture": [
+   "Le cercle de gauche porte des points bleus régulièrement espacés : les racines de l'unité.",
+   "La flèche orange les relie à la transformée de Fourier discrète, en violet.",
+   "Deux flèches vertes partent de cette transformée vers le son et les images.",
+   "Le mot compresser dit à quoi elle sert."
+  ],
+  "a_voir": "Le même objet, des points espacés d'un cercle, sert à compresser le son et les images."
+ },
+ {
+  "code": "66-147",
+  "a_dire": "Personne ne sait si e + pi, environ 5,85987, est algébrique ou transcendant, alors que e et pi sont chacun transcendants.",
+  "legende_titre": "La somme e + pi est une question ouverte",
+  "lecture": [
+   "Sur la droite graduée, le point bleu est e, environ 2,71828, et le point orange est pi, environ 3,14159.",
+   "Le point violet est leur somme, environ 5,85987.",
+   "Les trois lignes de gauche donnent ces valeurs.",
+   "La boîte violette en pointillés dit : on ne sait pas."
+  ],
+  "a_voir": "La somme de deux transcendants connus reste sans réponse."
+ },
+ {
+  "code": "66-148",
+  "a_dire": "Si e + pi et e × pi étaient tous deux algébriques, le polynôme x² − (e + pi)x + e·pi aurait des coefficients algébriques et pour racines e et pi, donc e serait algébrique : c'est faux.",
+  "legende_titre": "Somme et produit ne sont pas tous deux algébriques",
+  "lecture": [
+   "La courbe grise est le polynôme x² − 5,860 x + 8,540, avec somme environ 5,860 et produit environ 8,540.",
+   "Elle coupe l'axe en deux points : e en bleu, pi en violet.",
+   "La boîte orange est l'hypothèse : somme et produit algébriques.",
+   "La chaîne descend jusqu'à la boîte rouge : e algébrique, ce qui est faux."
+  ],
+  "a_voir": "Les deux racines du polynôme sont e et pi ; si les coefficients étaient algébriques, e le serait."
+ },
+ {
+  "code": "66-149",
+  "a_dire": "On peut lire la preuve comme une liste d'ingrédients : un polynôme f à choisir et une identité du type (65) ; pour e + pi, le livre ne dit pas lequel manque.",
+  "legende_titre": "Les ingrédients de la preuve face à e + pi",
+  "lecture": [
+   "Les deux boîtes bleues sont les deux ingrédients : un polynôme f à choisir, une identité du type (65).",
+   "La boîte violette en pointillés est le nombre e + pi.",
+   "Les deux flèches orange portent un point d'interrogation : on ne sait pas si l'ingrédient existe pour ce nombre.",
+   "Le texte du bas dit que le livre ne tranche pas."
+  ],
+  "a_voir": "Chaque ingrédient a un point d'interrogation en face de e + pi."
+ }
+]

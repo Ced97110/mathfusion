@@ -1,0 +1,181 @@
+[
+ {
+  "code": "43-065",
+  "a_dire": "La classe de 3 sur l'horloge est un ensemble infini des deux côtés, et chacun de ses éléments, comme 15, peut la nommer.",
+  "legende_titre": "Une classe qui n'a pas de bord",
+  "lecture": [
+   "Les points bleus sont des éléments de la classe de 3 : −21, −9, 3, 15 et 27.",
+   "Chaque flèche orange ajoute 12 pour passer au point suivant.",
+   "Les points de suspension aux deux bouts disent que la liste continue.",
+   "La case verte dit que 15 donne le même paquet que 3."
+  ],
+  "a_voir": "Les entiers de la classe se suivent de 12 en 12, sans fin des deux côtés."
+ },
+ {
+  "code": "43-066",
+  "a_dire": "Les notations barre et crochets désignent le même ensemble : la classe de x.",
+  "legende_titre": "Deux écritures, un seul objet",
+  "lecture": [
+   "La case bleue est l'écriture du livre, avec la barre.",
+   "La case violette est l'écriture de Judson, avec les crochets.",
+   "Le signe égal vert relie les deux écritures.",
+   "La case grise est l'ensemble que les deux écritures désignent."
+  ],
+  "a_voir": "Les deux flèches arrivent au même ensemble."
+ },
+ {
+  "code": "43-067",
+  "a_dire": "Les crochets autour d'un élément ne disent pas la classe : elle dépend de la relation choisie.",
+  "legende_titre": "Même point, deux classes",
+  "lecture": [
+   "À gauche, le cercle bleu est la classe du point (3, 4) pour la relation « même distance à l'origine ».",
+   "À droite, la droite violette est la classe du même point pour « même abscisse ».",
+   "Le point orange est (3, 4) dans les deux dessins."
+  ],
+  "a_voir": "Le point ne change pas, mais la classe change avec la relation."
+ },
+ {
+  "code": "43-068",
+  "a_dire": "Une partition est une famille de blocs sans chevauchement qui couvre tous les points.",
+  "legende_titre": "Les deux conditions d'une partition",
+  "lecture": [
+   "À gauche, les trois boîtes sont séparées et contiennent tous les points : c'est une partition.",
+   "Au milieu, deux boîtes ont un point commun en rouge : elles se chevauchent.",
+   "À droite, trois points rouges vides sont hors des boîtes : l'ensemble n'est pas couvert."
+  ],
+  "a_voir": "Il faut les deux conditions à la fois : pas de point commun et aucun oubli."
+ },
+ {
+  "code": "43-069",
+  "a_dire": "Les classes d'une relation d'équivalence forment une partition, et toute partition vient d'une relation.",
+  "legende_titre": "De la relation à la partition et retour",
+  "lecture": [
+   "À gauche, les traits relient les éléments qui sont en relation.",
+   "À droite, les mêmes éléments sont rangés dans trois boîtes.",
+   "La flèche bleue va de la relation aux classes.",
+   "La flèche orange revient : deux éléments d'une même boîte sont en relation."
+  ],
+  "a_voir": "Les groupes reliés à gauche sont exactement les boîtes à droite."
+ },
+ {
+  "code": "43-070",
+  "a_dire": "Aucune classe n'est vide, car a est toujours dans sa propre classe grâce à a E a.",
+  "legende_titre": "Une classe contient au moins a",
+  "lecture": [
+   "À gauche, tu lis la définition de la classe de a.",
+   "La boucle orange est l'étape décisive : a est en relation avec lui-même.",
+   "À droite, la boîte verte est la classe de a : elle contient le point a."
+  ],
+  "a_voir": "La boucle sur a place a dans sa classe, qui n'est donc pas vide."
+ },
+ {
+  "code": "43-071",
+  "a_dire": "Chaque élément de S est dans au moins une classe, car a E a le place dans sa propre classe, donc les classes couvrent S.",
+  "legende_titre": "Chaque élément a sa classe",
+  "lecture": [
+   "Le cadre en pointillés est l'ensemble S.",
+   "Les trois boîtes sont les classes ; tous les points sont dans une boîte.",
+   "Le point orange est un élément a quelconque ; la boîte bleue est sa classe."
+  ],
+  "a_voir": "Le point a choisi est dans une boîte : aucun point n'est laissé dehors."
+ },
+ {
+  "code": "43-072",
+  "a_dire": "Deux classes qui ont un point commun sont égales.",
+  "legende_titre": "Un point commun suffit",
+  "lecture": [
+   "La boîte bleue est la classe de 3 et la boîte violette est la classe de 27.",
+   "Le point orange, 15, est dans les deux boîtes.",
+   "La case verte calcule la différence 27 − 3 = 24, un multiple de 12."
+  ],
+  "a_voir": "Le 15 commun montre que 3 et 27 sont dans le même paquet."
+ },
+ {
+  "code": "43-073",
+  "a_dire": "Chacune des trois conditions est utilisée une fois dans la preuve, et la preuve échoue si on en retire une.",
+  "legende_titre": "Sans une condition, la preuve casse",
+  "lecture": [
+   "Première ligne : sans réflexivité, le point rouge 3 reste hors de toute classe.",
+   "Deuxième ligne : sans transitivité, les classes de 0 et de 1 se chevauchent.",
+   "Troisième ligne : sans symétrie, la flèche de 1 vers 2 n'a pas de retour, marqué d'une croix rouge."
+  ],
+  "a_voir": "Chaque ligne montre ce qui casse quand une condition manque."
+ },
+ {
+  "code": "43-074",
+  "a_dire": "La classe de a est égale à la classe de b si et seulement si a E b.",
+  "legende_titre": "Égalité des classes et relation",
+  "lecture": [
+   "À gauche, les points bleus a et b sont en relation, avec une flèche dans les deux sens.",
+   "À droite, la boîte verte contient a et b : ils sont dans la même classe.",
+   "Les flèches orange vont dans les deux sens : chaque côté donne l'autre."
+  ],
+  "a_voir": "Être en relation et avoir la même classe, c'est la même chose."
+ },
+ {
+  "code": "43-075",
+  "a_dire": "L'ensemble quotient est la collection des 12 positions, dont chaque élément est un paquet d'entiers.",
+  "legende_titre": "Douze paquets, un ensemble",
+  "lecture": [
+   "Chaque colonne bleue est un paquet d'entiers : une position de l'horloge.",
+   "Les points orange sont des entiers du paquet ; les petits points gris montrent qu'il en reste.",
+   "L'accolade verte rassemble les 12 colonnes en un seul ensemble."
+  ],
+  "a_voir": "Il y a 12 colonnes : l'ensemble quotient a 12 éléments."
+ },
+ {
+  "code": "43-076",
+  "a_dire": "S/E s'écrit pour dire « l'ensemble des classes des éléments de S pour la relation E ».",
+  "legende_titre": "Trois morceaux, une phrase",
+  "lecture": [
+   "La case bleue S est l'ensemble de départ.",
+   "La case orange E est la relation utilisée.",
+   "La case verte à droite est ce que S/E désigne : l'ensemble des classes."
+  ],
+  "a_voir": "S/E nomme à la fois l'ensemble de départ et la relation."
+ },
+ {
+  "code": "43-077",
+  "a_dire": "S/E n'est pas une partie de S : ses éléments sont des boîtes, alors que ceux de S sont des pions.",
+  "legende_titre": "Des pions d'un côté, des boîtes de l'autre",
+  "lecture": [
+   "À gauche, le cadre bleu est S : ses éléments sont des pions, on écrit x ∈ S.",
+   "À droite, le cadre violet est S/E : ses éléments sont les boîtes A, B et C.",
+   "Chaque boîte contient des pions, mais elle n'est pas un pion de S."
+  ],
+  "a_voir": "Les éléments de S/E sont des boîtes, pas des pions."
+ },
+ {
+  "code": "43-078",
+  "a_dire": "Le quotient compte les paquets, pas les points : S a 12 éléments, S/E en a 3.",
+  "legende_titre": "Douze points, trois paquets",
+  "lecture": [
+   "À gauche, les 12 points sont rangés par couleur : 4 bleus, 5 orange, 3 verts.",
+   "À droite, chaque case est un paquet : A, B et C.",
+   "Les tailles 4, 5 et 3 sont écrites dans les cases."
+  ],
+  "a_voir": "Le quotient a 3 éléments, même si les paquets ont des tailles différentes."
+ },
+ {
+  "code": "43-079",
+  "a_dire": "ℤ/12ℤ est l'ensemble des 12 classes d'entiers modulo 12, c'est-à-dire les 12 positions de l'horloge.",
+  "legende_titre": "Le signe ℤ/12ℤ et l'horloge",
+  "lecture": [
+   "La case bleue ℤ dit d'où l'on part : tous les entiers.",
+   "La case orange 12ℤ dit quelle horloge on utilise.",
+   "Les 12 disques verts sont les 12 classes, placées comme sur une horloge."
+  ],
+  "a_voir": "Le signe désigne les 12 positions de l'horloge."
+ },
+ {
+  "code": "43-080",
+  "a_dire": "Une fraction est un paquet de toutes les écritures qui valent la même quantité, et ℚ est l'ensemble de ces paquets.",
+  "legende_titre": "Une fraction est un paquet d'écritures",
+  "lecture": [
+   "Le cadre en pointillés est ℚ.",
+   "La case bleue est un paquet : 3/4, 6/8 et 9/12 valent la même quantité.",
+   "La case violette est un autre paquet, celui de 5/6."
+  ],
+  "a_voir": "Chaque case est un seul nombre, écrit de plusieurs façons."
+ }
+]

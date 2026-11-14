@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def lbox(ax, x, y, w, h, role, label=None, **k): return box(ax, x, y, w, h, role, label=label, **k)
+fig, ax = canvas(60)
+f = numberline(ax, 10, 78, 40, 0, 360, 90, arrow_right=False); g = numberline(ax, 10, 78, 14, 0, 360, 90, labels=False, arrow_right=False)
+text(ax, 2, 52, 'avant : 4 solutions', 'sujet', 's', ha='left'); text(ax, 2, 28, 'après : 1 solution', 'varie', 's', ha='left')
+for v in (0, 90, 180, 360): disc(ax, f(v), 45, 1.8, 'resultat')
+arrow(ax, (44, 34), (44, 29), 'varie'); text(ax, 62, 31.5, r'$\div\sin x$', 'varie', 's')
+disc(ax, f(90), 19, 1.8, 'resultat')
+for v in (0, 180, 360): disc(ax, f(v), 19, 1.8, 'limite', fill=False)
+text(ax, 44, 5, 'cercles rouges : perdues', 'limite', 's')
+save(fig, '31-141')

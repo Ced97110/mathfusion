@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(56)
+s = 4; A = (6, 30); B = (A[0]+4*s, A[1]); C = (B[0], A[1]+3*s)
+poly(ax, [A, B, C], 'sujet')
+text(ax, (A[0]+B[0])/2, A[1]-3, '4', 'sujet', 's'); text(ax, B[0]+2.5, (B[1]+C[1])/2, '3', 'sujet', 's')
+text(ax, 11, A[1]+8.5, '5', 'sujet', 's')
+text(ax, 38, 36, r'$\cos\theta=\frac{4}{5}$', 'resultat', 'l', ha='left')
+box(ax, 38, 21, 42, 8, 'fixe', label='calculatrice : 0,8000', size='s')
+f = numberline(ax, 8, 72, 10, 0, 1, step=0.2, labels=False, arrow_right=False)
+for v in (0, 0.2, 0.4, 0.6, 0.8, 1): text(ax, f(v), 5.2, f'{v:g}'.replace('.', ','), 'fixe', 's')
+line(ax, [(f(0), 10), (f(0.8), 10)], 'resultat', lw=2.4)
+disc(ax, f(0.8), 10, 1.5, 'resultat')
+arrow(ax, (f(0.8), 21), (f(0.8), 12.5), 'resultat')
+save(fig, '33-118')

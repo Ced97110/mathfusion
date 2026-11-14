@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(84)
+for y,s in [(70,'départ'),(43,'étape clé'),(16,'arrivée')]: text(ax,10,y,s,'encre','s')
+box(ax,20,58,66,22,'sujet',fill=False)
+text(ax,53,75,r'groupe d’ordre $\varphi(12)=4$','sujet','s')
+for x,v in zip([32,46,60,74],[1,5,7,11]): disc(ax,x,66,4.5,'sujet',label=str(v),size='s')
+box(ax,20,34,66,15,'varie',label='\n'.join(['Lagrange : l’ordre de $\\bar5$','(2) divise 4']),size='s')
+box(ax,20,6,66,16,'resultat',label=r'$5^4=(5^2)^2\equiv1$',size='l')
+arrow(ax,(53,57),(53,50),'varie'); arrow(ax,(53,33),(53,23),'varie')
+save(fig,'52-093')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 28, 24, 22, 'autre'); text(ax, 14, 46, 'autre orbite', 'autre', 's')
+disc(ax, 14, 36, 4.6, 'autre', label=r"$P''$", size='s')
+disc(ax, 62, 40, 16, 'sujet', fill=False, lw=1.2); text(ax, 62, 51, r'$\Sigma$', 'sujet', 'l')
+disc(ax, 62, 36, 4.6, 'sujet', label=r'$P$', size='s')
+arrow(ax, (27, 36), (45.5, 36), 'varie'); text(ax, 36, 41, r'agit sur $\Sigma$', 'varie', 's')
+box(ax, 2, 10, 40, 11, 'varie', label=r"$P''$ : $|\Sigma|\equiv 0$", size='s')
+box(ax, 46, 10, 40, 11, 'sujet', label=r'$P$ : $|\Sigma|\equiv 1$', size='s')
+text(ax, 44, 25, r'modulo $p$', 'fixe', 's')
+text(ax, 44, 4, r'contradiction : $0\neq 1$', 'limite', 'm')
+save(fig, '50-105')

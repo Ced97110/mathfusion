@@ -1,0 +1,354 @@
+[
+ {
+  "code": "56-120",
+  "a_dire": "Le signe δ suivi d'un élément entre parenthèses donne la taille de cet élément, un entier naturel.",
+  "legende_titre": "Un même signe pour deux tailles",
+  "lecture": [
+   "Chaque ligne montre un élément dans la case grise : −5 dans les entiers, x³ + 1 dans les polynômes.",
+   "Le cercle bleu est le signe δ : il agit sur l'élément, comme le montre la flèche orange.",
+   "La case verte donne la taille : 5 pour −5, car |−5| = 5 ; 8 pour x³ + 1, car 2³ = 8."
+  ],
+  "a_voir": "La même lettre δ donne un entier naturel dans les deux anneaux, par deux règles différentes."
+ },
+ {
+  "code": "56-121",
+  "a_dire": "Dans a = bq + r, b est le diviseur non nul, q le quotient, r le reste ; l'inégalité sur les tailles dit que le reste est plus petit que le diviseur.",
+  "legende_titre": "Lire la formule lettre par lettre sur 17 et 5",
+  "lecture": [
+   "Les quatre cases donnent 17 = 5 × 3 + 2 : la case grise est a, la bleue le diviseur b, l'orange le quotient q, la verte le reste r.",
+   "La barre verte courte est la taille du reste, 2 ; la barre bleue longue est la taille du diviseur, 5.",
+   "Les deux barres côte à côte montrent que 2 est plus petit que 5."
+  ],
+  "a_voir": "La partie qui compte est la comparaison des deux barres : le reste est plus petit que le diviseur."
+ },
+ {
+  "code": "56-122",
+  "a_dire": "Sans l'inégalité sur les tailles, le choix q = 0 et r = a vérifie toujours l'égalité, donc la définition ne dirait rien.",
+  "legende_titre": "Sans l'inégalité, un choix trivial convient toujours",
+  "lecture": [
+   "La ligne du haut est 17 = 5 × 0 + 17 : le quotient 0 et le reste 17 sont en orange.",
+   "Cette égalité est vraie pour tout a et tout b, comme le dit le texte vert.",
+   "La barre orange est la taille du reste, 17 ; la barre bleue est celle du diviseur, 5.",
+   "Le texte rouge dit que 17 < 5 est faux : l'inégalité écarte ce couple."
+  ],
+  "a_voir": "La seule chose qui écarte q = 0 est l'inégalité des tailles."
+ },
+ {
+  "code": "56-123",
+  "a_dire": "Dans ℤ, avec la valeur absolue pour taille, la division de 17 par 5 a deux couples quotient-reste qui conviennent : (3, 2) et (4, −3).",
+  "legende_titre": "Deux restes possibles dans les entiers",
+  "lecture": [
+   "Sur la droite graduée, les points bleus sont les multiples de 5 : 15 et 20 ; le point violet est 17.",
+   "La flèche verte du haut va de 15 à 17 : q = 3 et r = 2.",
+   "La flèche verte du bas va de 20 à 17 : q = 4 et r = −3.",
+   "Les deux restes ont une taille plus petite que 5."
+  ],
+  "a_voir": "Deux couples conviennent : la définition demande qu'il en existe un, pas qu'il soit seul."
+ },
+ {
+  "code": "56-124",
+  "a_dire": "Dans les polynômes à coefficients rationnels, la taille 2 puissance le degré rend le reste plus petit que le diviseur : divisez x² + 3x + 1 par x + 1, le reste −1 a la taille 1, le diviseur la taille 2.",
+  "legende_titre": "La division de x² + 3x + 1 par x + 1",
+  "lecture": [
+   "Les quatre cases donnent x² + 3x + 1 = (x + 1)(x + 2) + (−1) : grise pour a, bleue pour le diviseur, orange pour le quotient, verte pour le reste.",
+   "La barre verte courte est la taille du reste, 2⁰ = 1.",
+   "La barre bleue plus longue est la taille du diviseur, 2¹ = 2."
+  ],
+  "a_voir": "Le reste est de degré 0 et le diviseur de degré 1, donc 1 est plus petit que 2."
+ },
+ {
+  "code": "56-125",
+  "a_dire": "Les entiers de Gauss ℤ[i] sont les nombres m + ni avec m et n entiers : des points d'une grille de carrés de côté 1.",
+  "legende_titre": "Les nombres m + ni forment une grille",
+  "lecture": [
+   "Chaque petit cercle gris est un nombre m + ni dont m et n sont entiers ; les colonnes comptent m, les lignes comptent n.",
+   "Le cercle bleu est 3 + 2i : trois colonnes à droite de 0 et deux lignes au-dessus.",
+   "Les pointillés orange marquent m = 3 et n = 2.",
+   "Le cadre violet rappelle que i² = −1."
+  ],
+  "a_voir": "Les points sont tous espacés de 1, en colonnes et en lignes."
+ },
+ {
+  "code": "56-126",
+  "a_dire": "Le signe ℤ[i] se lit « grand Z crochet i » : on part des entiers, on ajoute le nombre i, et on obtient les nombres m + ni.",
+  "legende_titre": "Lire le signe ℤ[i] morceau par morceau",
+  "lecture": [
+   "La case bleue ℤ dit qu'on part des entiers.",
+   "La case orange avec les crochets dit qu'on ajoute un nombre.",
+   "La case violette i est ce nombre, dont le carré vaut −1.",
+   "La case verte du bas donne le résultat : les nombres m + ni avec m et n entiers."
+  ],
+  "a_voir": "Les crochets ne sont pas un intervalle : ils disent qu'on ajoute i aux entiers."
+ },
+ {
+  "code": "56-127",
+  "a_dire": "La taille de m + ni est m² + n² : on met m au carré, n au carré, puis on additionne ; c'est le carré de la distance à 0.",
+  "legende_titre": "Calculer la taille de 7 + 2i",
+  "lecture": [
+   "Le triangle gris a pour pointe 7 + 2i : le côté orange du bas vaut m = 7, le côté orange vertical vaut n = 2.",
+   "Le côté bleu oblique relie 0 au point : sa longueur est la distance à 0.",
+   "Les trois cases du bas donnent les trois actions : 7² = 49, puis 2² = 4, puis 49 + 4 = 53.",
+   "Le nombre 53 est le carré de la distance."
+  ],
+  "a_voir": "Le calcul donne le carré de la distance, pas la distance."
+ },
+ {
+  "code": "56-128",
+  "a_dire": "Les multiples de b = 2 + i forment un second réseau carré, tourné et plus grand ; le point a = 7 + 2i est dans un cercle centré sur le multiple bq le plus proche, et la flèche de bq vers a est le reste r.",
+  "legende_titre": "Le réseau des multiples de 2 + i et le reste",
+  "lecture": [
+   "Les petits points gris sont les nombres entiers de Gauss ; les points orange liés par des traits sont les multiples de b.",
+   "Le cercle gris en pointillés est centré sur le disque orange bq = 7 + i ; son rayon est la distance de b à 0.",
+   "Le point bleu est a = 7 + 2i : il est dans le cercle.",
+   "La flèche verte de bq vers a est le reste r = i. En haut, la taille δ de r vaut 1 et celle de b vaut 5."
+  ],
+  "a_voir": "Le point a est dans le cercle centré sur bq, et le reste est plus petit que b."
+ },
+ {
+  "code": "56-129",
+  "a_dire": "Pour diviser dans ℤ[i], on calcule le quotient exact μ + νi, puis on arrondit μ et ν aux entiers les plus proches : un seul arrondi donne q.",
+  "legende_titre": "Arrondir le quotient exact de 7 + 2i par 2 + i",
+  "lecture": [
+   "Le point bleu est le quotient exact 3,2 − 0,6i, placé à l'intérieur d'un carreau de la grille.",
+   "Les cercles gris sont les nombres entiers de Gauss aux coins du carreau.",
+   "La flèche orange va du point bleu au coin le plus proche, le cercle vert : q = 3 − i.",
+   "Le texte orange à droite donne les deux arrondis : 3,2 devient 3 et −0,6 devient −1."
+  ],
+  "a_voir": "Un seul arrondi suffit : on prend le coin le plus proche."
+ },
+ {
+  "code": "56-130",
+  "a_dire": "La preuve part du quotient exact arrondi, factorise le reste r = b fois les erreurs, et arrive à δ(r) ≤ δ(b)/2 < δ(b) ; ici 1 < 5.",
+  "legende_titre": "De l'arrondi à δ(r) plus petit que δ(b)",
+  "lecture": [
+   "La case bleue du haut est le départ : les erreurs d'arrondi du quotient exact sont 0,2 et 0,4.",
+   "La case orange du milieu est l'étape qui porte le poids : on factorise r = b × les erreurs, donc δ(r) = 5 × (0,2² + 0,4²).",
+   "La case verte du bas est l'arrivée : δ(r) = 5 × 0,2 = 1, plus petit que 5 = δ(b)."
+  ],
+  "a_voir": "L'étape orange est celle qui relie le reste à la taille du diviseur."
+ },
+ {
+  "code": "56-131",
+  "a_dire": "Tout point du plan est à une distance au plus √2/2, plus petite que 1, d'un point de la grille ; le pire cas est le centre d'un carreau.",
+  "legende_titre": "Le point le plus éloigné des coins d'un carreau",
+  "lecture": [
+   "Le carré gris est un carreau de côté 1 ; ses coins sont des points de la grille.",
+   "Le point violet est le centre ; les pointillés orange vont du centre aux quatre coins.",
+   "La barre orange est cette distance, √2/2, environ 0,71 ; la barre grise est la distance 1.",
+   "La barre orange est plus courte que la grise."
+  ],
+  "a_voir": "Même au centre du carreau, un point est à moins de 1 d'un coin."
+ },
+ {
+  "code": "56-132",
+  "a_dire": "Tout anneau euclidien est principal : un seul élément engendre tout idéal ; dans les entiers, l'idéal de 6 et 10 est engendré par 2.",
+  "legende_titre": "Euclidien entraîne principal, sur l'idéal de 6 et 10",
+  "lecture": [
+   "En haut, la flèche orange va de la case bleue « euclidien » à la case verte « principal ».",
+   "Sur la droite graduée, les points bleus sont 6 et 10, qui engendrent l'idéal.",
+   "Les points verts sont les nombres pairs, tous multiples de 2 ; 2 = 6 × 2 − 10 est dans l'idéal.",
+   "Un seul générateur, 2, suffit."
+  ],
+  "a_voir": "Deux nombres, 6 et 10, engendrent le même idéal qu'un seul, 2."
+ },
+ {
+  "code": "56-133",
+  "a_dire": "La preuve choisit dans l'idéal un élément non nul b de taille minimale, divise un élément a par b, et montre que le reste est nul : l'idéal est engendré par b.",
+  "legende_titre": "Un élément de taille minimale engendre l'idéal",
+  "lecture": [
+   "La case bleue du haut est le départ : l'idéal (6, 10) et le choix de b = 2, de taille minimale.",
+   "La case orange du milieu est l'étape qui porte le poids : 10 = 2 × 5 + 0 et 6 = 2 × 3 + 0 ; le reste est dans l'idéal et plus petit que b.",
+   "La case verte du bas est l'arrivée : le reste est nul, donc l'idéal est (2)."
+  ],
+  "a_voir": "Le reste doit être nul, car b a la plus petite taille."
+ },
+ {
+  "code": "56-134",
+  "a_dire": "La définition de Judson a trois parties : la taille ν n'existe que sur D privé de 0, ν(a) ≤ ν(ab), et la division avec reste donne r = 0 ou ν(r) < ν(b).",
+  "legende_titre": "Les trois conditions de la définition de Judson",
+  "lecture": [
+   "La case bleue du haut dit où ν est définie : sur D privé de 0, donc le polynôme nul n’a pas de taille ; ν est le degré.",
+   "La case orange du milieu donne la condition de multiplication : ν(x) = 1 est plus petit que ν(x · x) = 2.",
+   "La case verte du bas donne la division avec reste : x² + 1 = x · x + 1, avec un reste nul ou plus petit que b ; ici 0 < 1.",
+   "Les flèches grises montrent que la même taille ν sert dans les trois cases."
+  ],
+  "a_voir": "Il y a trois conditions, une par case : domaine, multiplication, division ; la même taille ν les relie."
+ },
+ {
+  "code": "56-135",
+  "a_dire": "Le signe D ∖ {0} se lit « D privé de 0 » : tous les éléments de D sauf 0 ; il désigne le même ensemble que D*.",
+  "legende_titre": "Lire D ∖ {0} morceau par morceau",
+  "lecture": [
+   "La case bleue D est l'anneau entier.",
+   "La case orange avec la barre inclinée dit « privé de ».",
+   "La case grise {0} est le seul élément retiré.",
+   "Dans les entiers, les cercles bleus sont −2, −1, 1, 2 ; le cercle gris vide est 0, retiré."
+  ],
+  "a_voir": "Le signe dit lui-même ce qu'on retire."
+ },
+ {
+  "code": "56-136",
+  "a_dire": "Chez Jacobson, la taille doit exister en 0 ; avec le degré comme taille, il faudrait un entier plus petit que 0, d'où le choix 2 puissance le degré, avec δ(0) = 0.",
+  "legende_titre": "Pourquoi 2 puissance le degré et δ(0) = 0",
+  "lecture": [
+   "Le texte du haut pose la division de 5 par 2 : le reste est 0 et il faut δ(0) < δ(2).",
+   "À gauche, avec le degré, δ(2) = 0 : la flèche rouge part vers la gauche et ne trouve aucun entier naturel.",
+   "À droite, avec 2 puissance le degré, δ(2) = 2⁰ = 1 et δ(0) = 0.",
+   "Le point vert 0 est à gauche du point bleu 1 : 0 < 1."
+  ],
+  "a_voir": "À droite, il y a de la place à gauche de δ(2) pour δ(0) ; à gauche, il n'y en a pas."
+ },
+ {
+  "code": "56-137",
+  "a_dire": "Une taille de Judson ν donne une taille de Jacobson δ en ajoutant 1 et en posant δ(0) = 0 ; les deux définitions décrivent les mêmes anneaux.",
+  "legende_titre": "De la taille de Judson à celle de Jacobson",
+  "lecture": [
+   "La ligne bleue donne ν pour chaque élément : 0 pour une constante, 1 pour le degré 1, 2 pour le degré 2 ; la case en pointillés, pour le polynôme nul, n'a pas de taille.",
+   "Les flèches orange envoient chaque taille vers la ligne verte.",
+   "La ligne verte donne δ : 1, 2, 3 pour les trois éléments, et 0 pour le polynôme nul."
+  ],
+  "a_voir": "Chaque taille monte de 1 et le polynôme nul reçoit 0, plus petit que tout le reste."
+ },
+ {
+  "code": "56-138",
+  "a_dire": "Les unités ont la plus petite taille : dans ℤ, 1 et −1 ont la taille 1, et tout autre élément non nul a une taille au moins égale à 1.",
+  "legende_titre": "Les unités ont la taille minimale",
+  "lecture": [
+   "Chaque barre est la taille |n| d'un entier n écrit sous la barre.",
+   "Les deux barres bleues, pour −1 et 1, sont les unités : leur taille est 1.",
+   "Les barres grises, pour −3, −2, 2 et 3, sont plus hautes.",
+   "La ligne orange en pointillés marque la taille minimale, 1."
+  ],
+  "a_voir": "Aucune barre n'est plus basse que celles de 1 et de −1."
+ },
+ {
+  "code": "56-139",
+  "a_dire": "La chaîne euclidien ⇒ principal ⇒ factoriel ⇒ intègre ne se lit pas à l'envers : ℤ[x] est factoriel sans être principal, ℤ[√−5] est intègre sans être factoriel.",
+  "legende_titre": "Les quatre notions emboîtées",
+  "lecture": [
+   "Les quatre cadres emboîtés sont, du plus grand au plus petit : intègre (gris), factoriel (violet), principal (vert), euclidien (bleu).",
+   "Au centre, ℤ est euclidien, donc dans tous les cadres.",
+   "Le texte rouge du cadre violet dit que ℤ[x] est factoriel, pas principal.",
+   "Le texte rouge du cadre gris dit que ℤ[√−5] est intègre, pas factoriel."
+  ],
+  "a_voir": "Chaque cadre est strictement plus grand que celui qu'il contient."
+ },
+ {
+  "code": "56-140",
+  "a_dire": "Le signe D[x] se lit « D crochet x » : les polynômes en x dont les coefficients sont dans D ; avec D = ℤ, ce sont les coefficients entiers.",
+  "legende_titre": "Lire D[x] : d'où viennent les coefficients",
+  "lecture": [
+   "La case bleue D dit d'où viennent les coefficients.",
+   "La case orange [x] dit qu'on ajoute la lettre x.",
+   "En bas, le polynôme 3x² + 5x + 7 : les cases bleues 3, 5 et 7 sont des entiers de ℤ ; les cases orange sont les parties en x."
+  ],
+  "a_voir": "La lettre avant les crochets donne les coefficients, la lettre dans les crochets est x."
+ },
+ {
+  "code": "56-141",
+  "a_dire": "Le contenu d'un polynôme est le plus grand diviseur commun de ses coefficients : pour 4x² + 6x + 10, c'est 2.",
+  "legende_titre": "Le contenu de 4x² + 6x + 10",
+  "lecture": [
+   "Chaque ligne est un coefficient : 4, 6 et 10, écrits à gauche.",
+   "Chaque ligne est faite de blocs bleus de même taille : un bloc vaut 2.",
+   "La première ligne a 2 blocs, la deuxième 3, la troisième 5 : 4 = 2 × 2, 6 = 2 × 3, 10 = 2 × 5.",
+   "L'accolade bleue entoure le bloc commun : c'est le contenu, 2."
+  ],
+  "a_voir": "Le même bloc de taille 2 se retrouve dans les trois coefficients."
+ },
+ {
+  "code": "56-142",
+  "a_dire": "Le signe c(f) note le contenu de f ; il permet d'écrire c(fg) = c(f)c(g), à une unité près.",
+  "legende_titre": "Le signe c(f) sur un produit",
+  "lecture": [
+   "La case bleue est f = 2x + 4 : son contenu est c(f) = 2.",
+   "La case violette est g = 3x + 6 : son contenu est c(g) = 3.",
+   "La case verte est le produit fg = 6x² + 24x + 24 : son contenu est c(fg) = 6.",
+   "Le texte du bas relie les trois : 2 × 3 = 6."
+  ],
+  "a_voir": "Le contenu du produit est le produit des contenus."
+ },
+ {
+  "code": "56-143",
+  "a_dire": "Un polynôme f s'écrit f = c(f) f₁ : on divise chaque coefficient par le contenu pour obtenir f₁, qui a pour contenu 1.",
+  "legende_titre": "Séparer le contenu : 6x + 9 = 3(2x + 3)",
+  "lecture": [
+   "La case grise est f = 6x + 9.",
+   "La flèche orange du dessus dit : on divise chaque coefficient par 3.",
+   "La case verte est f₁ = 2x + 3, de contenu 1.",
+   "La case bleue est le contenu c(f) = 3, remis devant : 6x + 9 = 3 × (2x + 3)."
+  ],
+  "a_voir": "On retire le contenu, puis on le remet devant en facteur."
+ },
+ {
+  "code": "56-144",
+  "a_dire": "Un polynôme primitif a un contenu égal à 1 ; ce n'est pas la même chose qu'être unitaire, ni qu'être irréductible.",
+  "legende_titre": "Primitif, unitaire, irréductible : trois idées",
+  "lecture": [
+   "À gauche, 2x² + 3x + 5 et x² + 2x + 4 ont tous deux le contenu 1 ; leur coefficient de tête est 2 pour le premier et 1 pour le second.",
+   "À droite, x² − 1 a le contenu 1.",
+   "La flèche violette montre que x² − 1 se casse en (x − 1)(x + 1)."
+  ],
+  "a_voir": "Contenu 1 ne dit rien du coefficient de tête, ni de la cassure."
+ },
+ {
+  "code": "56-145",
+  "a_dire": "4x² + 6x + 10 = 2(2x² + 3x + 5) : le contenu est 2 et la partie primitive est 2x² + 3x + 5.",
+  "legende_titre": "Contenu et partie primitive de 4x² + 6x + 10",
+  "lecture": [
+   "La ligne grise du haut donne les trois termes de 4x² + 6x + 10 : 4x², 6x et 10.",
+   "Les flèches orange divisent chaque terme par 2.",
+   "La ligne verte du bas donne 2x², 3x et 5 : leurs coefficients 2, 3 et 5 n'ont aucun diviseur commun.",
+   "Le texte bleu donne le contenu 2 ; le texte vert dit que la partie primitive a le contenu 1."
+  ],
+  "a_voir": "Après la division par 2, il ne reste plus de facteur commun."
+ },
+ {
+  "code": "56-146",
+  "a_dire": "Le produit de deux polynômes primitifs est primitif : (2x + 3)(3x + 5) = 6x² + 19x + 15 a pour contenu 1.",
+  "legende_titre": "Le produit de deux polynômes de contenu 1",
+  "lecture": [
+   "La case bleue 2x + 3 et la case violette 3x + 5 ont chacune le contenu 1.",
+   "La flèche orange mène à leur produit : les trois cases 6x², 19x et 15.",
+   "Les diviseurs de 6 sont 2 et 3, ceux de 15 sont 3 et 5 ; aucun ne divise 19, case verte.",
+   "Les trois coefficients n'ont donc aucun diviseur commun."
+  ],
+  "a_voir": "Le coefficient 19 empêche tout diviseur commun."
+ },
+ {
+  "code": "56-147",
+  "a_dire": "Première preuve : on réduit modulo p ; comme l'anneau réduit est intègre, le produit des polynômes réduits ne peut pas être nul, donc p ne divise pas tous les coefficients du produit.",
+  "legende_titre": "Réduire modulo 2 le produit (2x + 3)(3x + 5)",
+  "lecture": [
+   "La ligne du haut est le produit dans ℤ[x] : 2x + 3 fois 3x + 5 égale 6x² + 19x + 15.",
+   "Les flèches orange réduisent chaque polynôme modulo 2.",
+   "La ligne du bas donne 1 fois x + 1 égale x + 1, case verte.",
+   "Le texte vert dit que x + 1 est différent de 0 ; le texte gris dit qu'un produit nul est impossible dans l'anneau réduit."
+  ],
+  "a_voir": "Le produit réduit n'est pas nul : 2 ne divise pas tout le produit."
+ },
+ {
+  "code": "56-148",
+  "a_dire": "Le signe D̄ = D/(p) désigne l'anneau où l'on compte pour 0 tout multiple de p ; pour ℤ et p = 2, il reste deux classes, 0 et 1.",
+  "legende_titre": "Lire D barre : ℤ modulo 2",
+  "lecture": [
+   "Les cercles bleus 0, 2 et 4 sont des nombres pairs ; les cercles violets 1, 3 et 5 sont des nombres impairs.",
+   "La flèche bleue envoie les pairs vers la case bleue 0.",
+   "La flèche violette envoie les impairs vers la case violette 1.",
+   "Le texte vert donne la règle de cet anneau : 1 + 1 = 0."
+  ],
+  "a_voir": "Tous les nombres sont regroupés en deux classes seulement."
+ },
+ {
+  "code": "56-149",
+  "a_dire": "Seconde preuve : on prend les plus petits indices r et s tels que p ne divise pas a_r ni b_s ; dans le coefficient c_{r+s}, tous les autres termes sont divisibles par p, sauf a_r b_s.",
+  "legende_titre": "Les plus petits coefficients non divisibles par 2",
+  "lecture": [
+   "La ligne du haut donne les coefficients de f = 2 + 3x + x², celle du bas ceux de g = 4 + 2x + 5x², rangés à l’envers.",
+   "Les cases orange a₁ = 3 et b₂ = 5 sont les premiers coefficients que 2 ne divise pas : r = 1 et s = 2.",
+   "Les traits relient les paires dont les indices font 3 : le terme orange 3 × 5 = 15 est impair, le terme gris 1 × 2 = 2 est pair.",
+   "En vert, c₃ = a₁b₂ + a₂b₁ = 15 + 2 = 17 est impair."
+  ],
+  "a_voir": "Un seul terme est impair, a₁b₂ ; l’autre est divisible par 2, donc la somme est impaire."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 14, 72, 60, 11, 'sujet', label=r'$2\times3=0$', size='l')
+text(ax, 44, 60, r'on suppose $u\times2=1$', 'autre', 's')
+arrow(ax, (30, 72), (22, 49), 'varie')
+arrow(ax, (58, 72), (66, 49), 'varie')
+box(ax, 2, 36, 40, 12, 'varie', label=r'$u\times(2\times3)=u\times0=0$', size='s')
+box(ax, 46, 36, 40, 12, 'autre', label=r'$(u\times2)\times3=1\times3=3$', size='s')
+arrow(ax, (22, 36), (36, 24), 'varie')
+arrow(ax, (66, 36), (52, 24), 'varie')
+box(ax, 22, 13, 44, 11, 'limite', label=r'$3=0$ : impossible', size='m')
+text(ax, 44, 5, 'donc 2 n’a pas d’inverse', 'resultat', 'm')
+save(fig, '54-029')

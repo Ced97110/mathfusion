@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 40, 18, 10, 'fixe', label='1,5')
+box(ax, 22, 40, 12, 10, 'sujet', label=r'$L$')
+text(ax, 28, 36, 'majuscule', 'sujet', 's')
+arrow(ax, (37, 45), (47, 45), 'varie')
+box(ax, 49, 40, 37, 10, 'resultat', label='un litre et demi')
+box(ax, 2, 10, 14, 10, 'varie', label=r'$m$')
+box(ax, 18, 10, 14, 10, 'sujet', label=r'$L$')
+text(ax, 37, 15, '=', 'encre', 'l')
+box(ax, 42, 10, 16, 10, 'resultat', label=r'$mL$')
+text(ax, 62, 15, 'un millième\nde litre', 'encre', 's', ha='left')
+save(fig, '11-034')

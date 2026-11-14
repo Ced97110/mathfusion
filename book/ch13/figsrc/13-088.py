@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 56, 'couple : deux nombres ordonnés', 'encre', 'm')
+text(ax, 12, 35, '(', 'encre', 24); text(ax, 76, 35, ')', 'encre', 24)
+box(ax, 20, 28, 20, 14, 'sujet', label='3', size='xl')
+text(ax, 44, 33, ',', 'encre', 'xl')
+box(ax, 48, 28, 20, 14, 'varie', label='5', size='xl')
+text(ax, 30, 48, 'j’ai', 'sujet', 'm')
+text(ax, 58, 48, 'je dois', 'varie', 'm')
+text(ax, 30, 22, '1re place', 'sujet', 's')
+text(ax, 58, 22, '2e place', 'varie', 's')
+text(ax, 44, 8, r'$(a,\ b)$ : j’ai $a$, je dois $b$', 'encre', 'm')
+save(fig, '13-088')

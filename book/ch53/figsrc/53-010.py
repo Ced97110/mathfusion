@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 2, 27, 24, 12, 'fixe', label='ALGEBRE')
+box(ax, 46, 44, 40, 11, 'sujet', label='César : DOJHEUH')
+box(ax, 46, 12, 40, 11, 'autre', label='clé 1 : BMHFCSF')
+arrow(ax, (26.5, 37), (45.5, 48), 'varie')
+arrow(ax, (26.5, 29), (45.5, 19), 'varie')
+text(ax, 27, 49, 'clé 3', 'varie', 's')
+text(ax, 27, 17, 'clé 1', 'varie', 's')
+text(ax, 44, 63, 'chiffres par décalage', 'encre', 'l')
+text(ax, 44, 4, 'clé = nombre de places', 'encre', 'm')
+save(fig, '53-010')

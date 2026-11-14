@@ -1,0 +1,222 @@
+[
+ {
+  "code": "50-241",
+  "a_dire": "Quand n_p = 1, le Sylow est unique et normal ; quand n_p > 1, les Sylow sont conjugués et aucun n’est normal.",
+  "legende_titre": "Un seul Sylow, ou plusieurs",
+  "lecture": [
+   "À gauche, les deux cadres bleus sont le 3-Sylow et le 5-Sylow du groupe de 15 éléments : chacun est seul.",
+   "À droite, le triangle gris est le groupe des 6 symétries ; les trois traits orange sont ses trois 2-Sylow.",
+   "Le texte vert dit que le Sylow seul est normal ; le texte rouge dit qu’aucun des trois n’est normal."
+  ],
+  "a_voir": "Une valeur 1 donne un Sylow normal, une valeur plus grande donne plusieurs Sylow dont aucun n’est normal."
+ },
+ {
+  "code": "50-242",
+  "a_dire": "À partir du seul nombre 15, Sylow dit quels sous-groupes existent et conclut que le groupe est cyclique.",
+  "legende_titre": "Du nombre 15 à la structure",
+  "lecture": [
+   "Le cadre bleu à gauche contient l’unique donnée : le nombre d’éléments, 15.",
+   "Le cercle de droite place les 15 éléments ; le triangle bleu relie les 3 éléments du seul sous-groupe de 3 éléments.",
+   "Le pentagone violet relie les 5 éléments du seul sous-groupe de 5 éléments ; les deux se rejoignent en un seul point."
+  ],
+  "a_voir": "Le nombre 15 seul suffit pour trouver un sous-groupe de 3 éléments et un de 5 éléments, tous deux uniques."
+ },
+ {
+  "code": "50-243",
+  "a_dire": "Un groupe est résoluble quand il se découpe en étapes dont les quotients sont abéliens, comme les 6 symétries du triangle en deux étapes.",
+  "legende_titre": "Découper en étapes abéliennes",
+  "lecture": [
+   "La première ligne montre les 6 symétries : 3 rotations en bleu et 3 réflexions en orange.",
+   "La deuxième ligne garde les 3 rotations, qui forment un sous-groupe normal ; la troisième ligne garde l’identité seule.",
+   "Chaque flèche est une étape, et le texte vert dit que cette étape est abélienne."
+  ],
+  "a_voir": "Il y a deux étapes, et chacune est abélienne."
+ },
+ {
+  "code": "50-244",
+  "a_dire": "Une équation est résoluble par radicaux exactement quand son groupe de Galois est résoluble.",
+  "legende_titre": "Formule ou groupe, même question",
+  "lecture": [
+   "Le cadre bleu est l’équation et sa question : existe-t-il une formule avec des radicaux ?",
+   "Le cadre violet est son groupe de Galois et sa question : est-il découpable en quotients abéliens ?",
+   "La flèche verte à double sens relie les deux questions par « ssi »."
+  ],
+  "a_voir": "Chercher une formule revient à examiner un groupe fini."
+ },
+ {
+  "code": "50-245",
+  "a_dire": "Les groupes d’ordre 12 et d’ordre 30 sont résolubles, alors que l’ordre 60 (groupe A_5) ne l’est pas.",
+  "legende_titre": "Ordres 12 et 30 contre l’ordre 60",
+  "lecture": [
+   "Les deux premiers cadres bleus sont les ordres 12 et 30 ; chacun contient un cadre vert, le sous-groupe normal trouvé.",
+   "Le cadre rouge est l’ordre 60 : son cadre intérieur en pointillés est vide, il n’y a aucun sous-groupe normal.",
+   "Le texte sous chaque cadre dit si le groupe est résoluble."
+  ],
+  "a_voir": "Pour 12 et 30 le comptage donne un sous-groupe normal ; pour 60 il n’en donne pas."
+ },
+ {
+  "code": "50-246",
+  "a_dire": "Un groupe d’ordre pq a un q-Sylow normal cyclique et un quotient de p éléments cyclique : deux étapes abéliennes, donc résoluble.",
+  "legende_titre": "Ordre pq : deux pièces cycliques",
+  "lecture": [
+   "Les 6 cases forment le groupe d’ordre pq = 6 ; la rangée bleue de 3 cases est le q-Sylow normal.",
+   "La rangée orange contient les autres éléments.",
+   "En bas, les deux cases (une bleue, une orange) sont le quotient de p = 2 éléments, cyclique."
+  ],
+  "a_voir": "Les deux pièces ont un ordre premier, donc elles sont cycliques, donc abéliennes."
+ },
+ {
+  "code": "50-247",
+  "a_dire": "Un p-groupe est résoluble : on le découpe par son centre, et le quotient plus petit est encore résoluble ; pour 8 éléments, il est abélien.",
+  "legende_titre": "Le centre, puis un quotient plus petit",
+  "lecture": [
+   "Les 4 cadres du haut regroupent les 8 éléments des symétries du carré, deux par deux ; le cadre bleu est le centre.",
+   "Chaque flèche orange envoie un cadre vers une case verte du bas.",
+   "Les 4 cases vertes sont le quotient par le centre ; le texte dit qu’il est abélien."
+  ],
+  "a_voir": "En retirant le centre, il reste un quotient de 4 éléments qui est abélien."
+ },
+ {
+  "code": "50-248",
+  "a_dire": "A_5 a 60 éléments et n’a pour sous-groupes normaux que l’identité et lui-même : il est simple et non résoluble.",
+  "legende_titre": "A_5 : aucun palier intermédiaire",
+  "lecture": [
+   "La grille bleue compte 60 petites cases, une par élément de A_5.",
+   "Le cadre rouge en pointillés est l’étape intermédiaire qui manque : aucun sous-groupe normal entre les deux.",
+   "La case grise du bas est l’identité seule."
+  ],
+  "a_voir": "Il n’y a aucun échelon entre les 60 éléments et l’identité, donc pas de suite de quotients abéliens."
+ },
+ {
+  "code": "50-249",
+  "a_dire": "Un groupe abélien fini est le produit direct de ses Sylow ; l’horloge à 12 heures est le produit de son 2-Sylow à 4 éléments et de son 3-Sylow à 3 éléments.",
+  "legende_titre": "L’horloge à 12 heures en deux Sylow",
+  "lecture": [
+   "Le cercle de gauche montre les 12 éléments ; le carré bleu relie les 4 éléments du 2-Sylow, le triangle violet les 3 éléments du 3-Sylow.",
+   "La grille de droite a 4 colonnes et 3 lignes : une case par élément.",
+   "La ligne bleue du bas est le 2-Sylow, la colonne violette de gauche est le 3-Sylow ; la case blanche est l’élément commun."
+  ],
+  "a_voir": "Chaque élément correspond à une case de la grille 4 sur 3 : le groupe est le produit des deux Sylow."
+ },
+ {
+  "code": "50-250",
+  "a_dire": "Les p-Sylow apparaissent aussi dans les corps finis et dans les matrices : le groupe additif de l’horloge à 5 heures est un 5-groupe, et les matrices avec des 1 sur la diagonale et des 0 dessous sont un p-Sylow.",
+  "legende_titre": "Les Sylow dans d’autres objets",
+  "lecture": [
+   "À gauche, les 5 points bleus sont les 5 éléments de l’horloge à 5 heures, un groupe dont le nombre d’éléments est premier.",
+   "À droite, le tableau de nombres a des 1 sur la diagonale et des 0 en dessous.",
+   "Les cases bleues au-dessus de la diagonale sont libres."
+  ],
+  "a_voir": "Le même objet, un p-Sylow, se retrouve dans des nombres et dans des tableaux de nombres."
+ },
+ {
+  "code": "50-251",
+  "a_dire": "Les exemples 20, 48 et 56 sont des étapes d’un programme : barrer de la liste les ordres où un groupe simple peut exister.",
+  "legende_titre": "Barrer la liste des ordres",
+  "lecture": [
+   "Les trois cadres gris barrés de rouge sont les ordres 20, 48 et 56, écartés.",
+   "Sous chacun, le texte gris donne la méthode utilisée.",
+   "Le cadre orange en pointillés représente les autres ordres, qui restent à barrer."
+  ],
+  "a_voir": "Chaque cas est une étape de la même tâche, avec une méthode différente."
+ },
+ {
+  "code": "50-252",
+  "a_dire": "Un ordre que le comptage ne tranche pas signale qu’un groupe simple peut exister ; pour 60, il existe : c’est A_5.",
+  "legende_titre": "L’ordre 60 résiste au comptage",
+  "lecture": [
+   "Le cadre bleu est l’ordre 60.",
+   "Les deux cadres gris sont les deux valeurs possibles de n_5, 1 et 6 ; le comptage ne choisit pas entre elles.",
+   "Le cadre vert dit qu’un groupe simple de cet ordre existe : A_5."
+  ],
+  "a_voir": "Un échec du comptage indique qu’il vaut la peine d’étudier cet ordre de plus près."
+ },
+ {
+  "code": "50-253",
+  "a_dire": "Tout groupe fini simple dont l’ordre n’est pas premier a un ordre pair ; les ordres impairs 15, 21, 99 et 1645 n’en sont que des cas.",
+  "legende_titre": "Les ordres impairs n’ont pas de groupe simple",
+  "lecture": [
+   "Les quatre cadres gris barrés de rouge sont les ordres impairs 15, 21, 99 et 1645 : aucun groupe simple.",
+   "Le cadre vert donne la règle générale qui les contient.",
+   "Le texte du bas dit que la preuve occupe plus de 250 pages."
+  ],
+  "a_voir": "Un groupe simple d’ordre non premier a toujours un ordre pair."
+ },
+ {
+  "code": "50-254",
+  "a_dire": "Dans la classification des groupes finis simples, chaque étape commence par le calcul des nombres n_p, comme pour l’ordre 20.",
+  "legende_titre": "Chaque étape commence par les n_p",
+  "lecture": [
+   "En haut, les deux cases orange sont les nombres n_2 et n_5 de l’ordre 20.",
+   "Chaque ligne du milieu est une étape : une case orange n_p vient en premier, les cases grises suivent.",
+   "La barre bleue sur la droite graduée couvre les années 1960 à 2000."
+  ],
+  "a_voir": "Le calcul des n_p est le premier geste de chaque étape d’un travail qui a duré de 1960 à 2000."
+ },
+ {
+  "code": "50-255",
+  "a_dire": "Pour les ordres 99 et 1645, Sylow donne des Sylow normaux : les groupes sont des produits directs et on peut écrire la liste complète.",
+  "legende_titre": "Sylow sert à classer, pas seulement à éliminer",
+  "lecture": [
+   "Pour 99, les deux lignes sont les deux groupes : ℤ/9 × ℤ/11 et ℤ/3 × ℤ/3 × ℤ/11.",
+   "Pour 1645, la seule ligne est ℤ/5 × ℤ/7 × ℤ/47.",
+   "Chaque case bleue est un Sylow ; les croix grises indiquent le produit."
+  ],
+  "a_voir": "Les Sylow normaux donnent un produit direct, donc la liste complète des groupes de cet ordre."
+ },
+ {
+  "code": "50-256",
+  "a_dire": "G′ est la première marche de la suite de sous-groupes qui définit les groupes résolubles.",
+  "legende_titre": "G′, première marche d’une suite",
+  "lecture": [
+   "Le grand cadre gris est le groupe G à 6 éléments.",
+   "Le cadre bleu plus bas est G′, les 3 rotations ; la flèche orange le désigne comme première marche.",
+   "Le cadre en pointillés à droite est la suite, expliquée au chapitre 64 ; les textes verts disent que G/G′ et G′ sont abéliens."
+  ],
+  "a_voir": "G′, déjà utilisé pour compter, devient le premier terme d’une suite qui définit « résoluble »."
+ },
+ {
+  "code": "50-257",
+  "a_dire": "Lagrange interdit les tailles qui ne divisent pas l’ordre ; Sylow garantit les tailles qui sont des puissances d’un premier, et laisse les autres diviseurs ouverts.",
+  "legende_titre": "Lagrange dit non, Sylow dit oui",
+  "lecture": [
+   "Les cases rouges 5, 7, 8, 9, 10 et 11 ne divisent pas 12 : Lagrange les interdit.",
+   "Les cases vertes 1, 2, 3 et 4 sont garanties par Sylow.",
+   "La case grise 6 divise 12 mais Sylow ne garantit rien."
+  ],
+  "a_voir": "Les deux théorèmes se complètent : un diviseur comme 6 reste ouvert."
+ },
+ {
+  "code": "50-258",
+  "a_dire": "Le test des n_p écarte des valeurs mais ne construit rien : n_3 = 7 passe le test pour l’ordre 21, sans prouver qu’un tel groupe existe.",
+  "legende_titre": "Passer le test n’est pas exister",
+  "lecture": [
+   "À gauche, l’ordre 6 : n_2 = 3 passe le test, et le groupe du triangle existe.",
+   "À droite, l’ordre 21 : n_3 = 7 passe aussi le test.",
+   "Le cadre orange en pointillés dit que l’existence reste une question."
+  ],
+  "a_voir": "Passer le test ne prouve pas l’existence : pour 21, la question reste ouverte."
+ },
+ {
+  "code": "50-259",
+  "a_dire": "Pour l’ordre 21, n_7 vaut 1 et n_3 vaut 1 ou 7, car 7 laisse le reste 1 dans la division par 3.",
+  "legende_titre": "n_7 = 1 et n_3 = 1 ou 7",
+  "lecture": [
+   "La première ligne teste les valeurs de n_7 : 1 convient (vert), 3 est écarté (rouge).",
+   "La deuxième ligne teste les valeurs de n_3 : 1 et 7 conviennent, tous deux en vert.",
+   "À droite, le résultat : n_7 = 1 est sûr, n_3 reste en orange car deux valeurs sont possibles."
+  ],
+  "a_voir": "Le plus grand premier a un Sylow unique ; le plus petit garde deux valeurs possibles."
+ },
+ {
+  "code": "50-260",
+  "a_dire": "Pour construire un groupe, on part d’un morceau normal et on ajoute un élément qui agit dessus : une règle dont les applications répétées ramènent tout au départ.",
+  "legende_titre": "Un morceau normal et un élément qui agit",
+  "lecture": [
+   "À gauche, l’ordre 6 : le point bleu et les deux points orange sont l’horloge à 3 heures ; la flèche double échange les deux points orange (règle : inverse).",
+   "À droite, l’ordre 21 : les 7 points sont l’horloge à 7 heures ; les flèches orange et violettes suivent la règle ×2, donnée en exemple.",
+   "Après 2 applications à gauche, ou 3 applications à droite, chaque point est revenu à sa place."
+  ],
+  "a_voir": "Il faut une règle qui déplace les éléments de l’horloge et qui revient au départ après le nombre d’applications voulu."
+ }
+]

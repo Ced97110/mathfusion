@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(64)
+box(ax,9,44,70,10,'fixe')
+box(ax,9,44,59.5,10,'sujet',label='20,40 $ (85 %)',size='m')
+brace(ax,9,79,54,'fixe','prix d\'origine : 24 $',down=False)
+box(ax,9,29,70,9,'resultat',label=r'$20{,}40 \div 0{,}85 = 24$',size='m')
+box(ax,9,4,70,19,'limite',fill=True)
+text(ax,44,17,r'$20{,}40 \times 1{,}15 = 23{,}46$','limite','m')
+text(ax,44,9.5,'faux : la base est 24','limite','s')
+arrow(ax,(44,43),(44,39),'resultat')
+save(fig,'09-103')

@@ -1,0 +1,266 @@
+[
+ {
+  "code": "80-121",
+  "a_dire": "Une algèbre de Boole est un treillis avec 0 et 1, distributif et complémenté.",
+  "legende_titre": "Quatre conditions sur les parties de {1, 2}",
+  "lecture": [
+   "Le cadre en tirets range les quatre parties de {1, 2} : la partie vide en bas, l’ensemble entier en haut.",
+   "La flèche orange relie {1} et {2}, qui sont compléments l’un de l’autre.",
+   "Chaque case de droite nomme une condition et sa flèche montre où elle se lit : 1 en haut, 0 en bas, le complément de {1}, et le cadre pour le treillis et la distributivité."
+  ],
+  "a_voir": "Les parties de {1, 2} remplissent les cinq lignes de droite."
+ },
+ {
+  "code": "80-122",
+  "a_dire": "Distributif : la loi a ∧ (b ∨ c) = (a ∧ b) ∨ (a ∧ c), de même forme que 2 × (3 + 4).",
+  "legende_titre": "Distribuer, comme pour une multiplication",
+  "lecture": [
+   "Les cases bleues du haut montrent 2 × (3 + 4) et 2 × 3 + 2 × 4.",
+   "Les cases vertes donnent le même résultat des deux côtés.",
+   "Les cases violettes écrivent la même loi avec ∧ et ∨ : ∧ joue le rôle de × et ∨ celui de +."
+  ],
+  "a_voir": "La loi des treillis a la même forme que la distributivité des nombres."
+ },
+ {
+  "code": "80-123",
+  "a_dire": "Le complément a′ d'un élément a donne 1 avec ∨ et 0 avec ∧.",
+  "legende_titre": "Un complément, deux opérations",
+  "lecture": [
+   "La case bleue est a = {1}, la case orange est son complément {2, 3}.",
+   "Les deux cases vertes donnent le sup (1) et l'inf (0) de a et a′.",
+   "Les cases grises du bas montrent l'opposé et l'inverse, qui n'ont qu'une opération chacun."
+  ],
+  "a_voir": "Le complément fait les deux à la fois : 1 avec ∨, 0 avec ∧."
+ },
+ {
+  "code": "80-124",
+  "a_dire": "Les parties d'un ensemble de trois éléments sont au nombre de huit, rangées par inclusion.",
+  "legende_titre": "Les huit parties de {1, 2, 3}",
+  "lecture": [
+   "Chaque case est une partie de {1, 2, 3}.",
+   "Les traits relient une partie à celles qui la contiennent d'un élément de plus.",
+   "La partie vide est tout en bas, l'ensemble entier tout en haut."
+  ],
+  "a_voir": "Huit parties, de la plus petite à la plus grande."
+ },
+ {
+  "code": "80-125",
+  "a_dire": "Chaque signe abstrait a un sens pour les parties : ≤ est ⊆, ∧ est ∩, ∨ est ∪, 0 est ∅, 1 est S, a′ est le reste de S.",
+  "legende_titre": "Le dictionnaire des signes",
+  "lecture": [
+   "Les cases bleues de gauche portent les signes abstraits.",
+   "Les cases violettes de droite donnent leur sens pour les parties de {1, 2, 3}.",
+   "Les flèches relient chaque signe à son sens."
+  ],
+  "a_voir": "Chaque ligne traduit un signe en phrase sur les ensembles."
+ },
+ {
+  "code": "80-126",
+  "a_dire": "L'ensemble {0, 1} avec « et », « ou », « non » est l'ensemble des parties d'un ensemble à un seul élément.",
+  "legende_titre": "La logique de l'alarme avec 0 et 1",
+  "lecture": [
+   "La table donne le résultat de « et » (bleu) et de « ou » (violet) pour chaque couple de valeurs.",
+   "Les deux disques 0 et 1 sont échangés par « non » (flèches orange).",
+   "En bas, 0 est la partie vide et 1 est l’ensemble S, qui a un seul élément."
+  ],
+  "a_voir": "{0, 1} est le cas des parties d’un ensemble à un seul élément."
+ },
+ {
+  "code": "80-127",
+  "a_dire": "Le signe a ∧ b se lit « et » en logique et ∩ pour les parties.",
+  "legende_titre": "Un seul signe pour deux « et »",
+  "lecture": [
+   "À gauche, les cases porte ouverte et mode nuit mènent à la sonnerie seulement si les deux sont vraies.",
+   "À droite, la zone verte est la partie commune des deux disques.",
+   "Les deux cas sont lus avec le même signe ∧."
+  ],
+  "a_voir": "Le signe ∧ veut dire « les deux », en logique comme en ensembles."
+ },
+ {
+  "code": "80-128",
+  "a_dire": "Le signe a ∨ b se lit « ou » en logique et ∪ pour les parties.",
+  "legende_titre": "Un seul signe pour deux « ou »",
+  "lecture": [
+   "À gauche, une seule des deux cases suffit pour que l'alarme sonne.",
+   "À droite, la zone verte réunit les deux disques.",
+   "Les deux cas sont lus avec le même signe ∨."
+  ],
+  "a_voir": "Le signe ∨ veut dire « l'une ou l'autre » dans les deux cas."
+ },
+ {
+  "code": "80-129",
+  "a_dire": "Le signe a′ se lit « non » en logique et complémentaire pour les parties.",
+  "legende_titre": "Un signe pour le contraire",
+  "lecture": [
+   "À gauche, la flèche orange échange « mode nuit activé » et « non activé ».",
+   "À droite, le disque bleu est a, la zone verte autour est ce qui reste de S : a′.",
+   "Dans les deux cas le signe est a′."
+  ],
+  "a_voir": "a′ est le contraire de a, dans l'alarme comme dans les ensembles."
+ },
+ {
+  "code": "80-130",
+  "a_dire": "Le signe 𝒫(S) remplace la phrase « l'ensemble de toutes les parties de S ».",
+  "legende_titre": "Un signe pour huit parties",
+  "lecture": [
+   "La case bleue est S = {1, 2, 3}.",
+   "La grande case violette contient les huit parties de S.",
+   "Le signe 𝒫(S) désigne cette grande case."
+  ],
+  "a_voir": "𝒫(S) est un ensemble dont les éléments sont des parties de S."
+ },
+ {
+  "code": "80-131",
+  "a_dire": "Le plan a un axe horizontal avec deux compléments, donc il est complémenté mais pas distributif.",
+  "legende_titre": "Deux compléments pour un axe",
+  "lecture": [
+   "La droite bleue est l’axe horizontal.",
+   "La droite orange (verticale) et la droite violette (oblique) sont deux compléments de cet axe.",
+   "La case verte dit que le plan est complémenté ; la case grise rappelle qu’un treillis distributif n’a qu’un complément ; la case rouge conclut."
+  ],
+  "a_voir": "Un même axe a deux compléments : le plan n’est pas distributif."
+ },
+ {
+  "code": "80-132",
+  "a_dire": "Avec trois droites distinctes du plan, les deux côtés de la loi de distributivité diffèrent.",
+  "legende_titre": "Un calcul qui réfute la loi",
+  "lecture": [
+   "Les droites bleue U, orange W et violette X passent par l'origine.",
+   "Le côté bleu donne U, parce que W ∨ X est le plan.",
+   "Le côté rouge donne 0, parce que deux droites distinctes n'ont que 0 en commun."
+  ],
+  "a_voir": "U et 0 sont différents : la loi est fausse."
+ },
+ {
+  "code": "80-133",
+  "a_dire": "Dans une algèbre de Boole le complément est unique ; sans distributivité il peut ne pas l'être.",
+  "legende_titre": "Un complément ou plusieurs",
+  "lecture": [
+   "À gauche, {1} n'a que {2, 3} pour complément.",
+   "À droite, l'axe horizontal a deux compléments : la droite verticale et la diagonale.",
+   "Ce qui sépare les deux cas est la distributivité."
+  ],
+  "a_voir": "La distributivité rend le complément unique."
+ },
+ {
+  "code": "80-134",
+  "a_dire": "Le complément du complément de a est a.",
+  "legende_titre": "On revient au départ",
+  "lecture": [
+   "La case bleue est la partie de départ {1}.",
+   "La case orange est son complémentaire {2, 3}.",
+   "La case verte, après un second complément, redonne {1}."
+  ],
+  "a_voir": "Deux compléments successifs redonnent a."
+ },
+ {
+  "code": "80-135",
+  "a_dire": "Le complément d'une réunion est l'intersection des compléments.",
+  "legende_titre": "De Morgan avec une réunion",
+  "lecture": [
+   "Le chemin du haut réunit {1} et {2}, puis prend le complément : {3}.",
+   "Le chemin du bas prend les compléments {2, 3} et {1, 3}, puis garde le commun : {3}.",
+   "Les deux cases vertes sont égales."
+  ],
+  "a_voir": "Les deux chemins mènent à la même partie."
+ },
+ {
+  "code": "80-136",
+  "a_dire": "Le complément d'une intersection est la réunion des compléments.",
+  "legende_titre": "De Morgan avec une intersection",
+  "lecture": [
+   "Le chemin du haut prend la partie commune {2} de {1, 2} et {2, 3}, puis son complément : {1, 3}.",
+   "Le chemin du bas prend les compléments {3} et {1}, puis les réunit : {1, 3}.",
+   "Les deux cases vertes sont égales."
+  ],
+  "a_voir": "Le complément échange ∧ et ∨."
+ },
+ {
+  "code": "80-137",
+  "a_dire": "La preuve de l'unicité passe par la distributivité : a₁ = a₁ ∧ (a ∨ a′) puis on distribue.",
+  "legende_titre": "La chaîne de la preuve",
+  "lecture": [
+   "Le haut donne le départ : a₁ et a′ sont deux compléments de a, et on veut a₁ = a′.",
+   "La case orange, encadrée en gras, est l’étape qui distribue.",
+   "Chaque flèche dit pourquoi on passe à la case suivante ; la case verte conclut a₁ = a′."
+  ],
+  "a_voir": "L’étape orange porte la preuve : sans elle, la chaîne s’arrête."
+ },
+ {
+  "code": "80-138",
+  "a_dire": "Le défaut d'unicité du complément et le défaut de distributivité sont le même défaut.",
+  "legende_titre": "Deux défauts, trois droites",
+  "lecture": [
+   "Les deux cases rouges nomment les deux défauts.",
+   "Le plan montre les trois mêmes droites : a (bleu), a′ (orange) et a₁ (violet).",
+   "Les deux flèches rouges partent de chaque défaut vers ces mêmes droites."
+  ],
+  "a_voir": "Les deux échecs portent sur les mêmes trois droites."
+ },
+ {
+  "code": "80-139",
+  "a_dire": "La définition de Judson part de règles de calcul seules, sans ordre.",
+  "legende_titre": "Deux entrées pour le même objet",
+  "lecture": [
+   "La colonne violette part d'un ordre, puis ajoute des conditions.",
+   "La colonne bleue part de et, ou, non et de règles de calcul.",
+   "Les deux flèches arrivent sur la même case verte."
+  ],
+  "a_voir": "Seule l'entrée change, pas l'objet."
+ },
+ {
+  "code": "80-140",
+  "a_dire": "Judson définit l'algèbre de Boole par un ensemble B, deux opérations ∨ et ∧ et cinq axiomes.",
+  "legende_titre": "Cinq axiomes pour B, ∨ et ∧",
+  "lecture": [
+   "La case du haut donne B muni de ∨ et ∧.",
+   "Les cinq cases bleues sont les axiomes A1 à A5.",
+   "La case grise pointillée liste ce qui se déduit : idempotence et absorption."
+  ],
+  "a_voir": "Cinq axiomes suffisent, sans ordre au départ."
+ },
+ {
+  "code": "80-141",
+  "a_dire": "A1 : l'ordre des deux parties ne change ni la réunion ni la partie commune.",
+  "legende_titre": "Changer l'ordre ne change rien",
+  "lecture": [
+   "La colonne de gauche calcule la réunion de {1, 2} et {2, 3}, dans les deux ordres.",
+   "La colonne de droite calcule leur partie commune dans les deux ordres.",
+   "Chaque case verte est le résultat des deux ordres."
+  ],
+  "a_voir": "Les deux ordres donnent {1, 2, 3} d'une part, {2} d'autre part."
+ },
+ {
+  "code": "80-142",
+  "a_dire": "Sans A2, la place des parenthèses change le résultat, comme pour la soustraction.",
+  "legende_titre": "Une opération qui n'est pas associative",
+  "lecture": [
+   "La ligne du haut groupe 5 − 3 : le résultat est 1.",
+   "La ligne du bas groupe 3 − 1 : le résultat est 3.",
+   "La case verte rappelle que A2 impose le même résultat pour ∨."
+  ],
+  "a_voir": "Pour la soustraction, 1 et 3 diffèrent ; A2 interdit cela."
+ },
+ {
+  "code": "80-143",
+  "a_dire": "A3 : on peut distribuer ∧ sur ∨ et ∨ sur ∧, avec les mêmes parties des deux côtés.",
+  "legende_titre": "Distribuer dans les deux sens",
+  "lecture": [
+   "Les trois cases du haut sont les parties a, b et c.",
+   "Chaque colonne compare un côté bleu et un côté violet.",
+   "Les cases vertes donnent le même résultat des deux côtés : {2} et {1, 2, 3}."
+  ],
+  "a_voir": "Les deux côtés ont les mêmes éléments."
+ },
+ {
+  "code": "80-144",
+  "a_dire": "A4 demande deux éléments neutres ; les parties finies de ℕ n'en ont qu'un.",
+  "legende_titre": "Un neutre manque",
+  "lecture": [
+   "Le cadre pointillé contient les parties finies : ∅ (vert) et une partie A (bleu).",
+   "Le disque rouge ℕ est dehors, car ℕ n'est pas fini.",
+   "Le neutre de ∪ est donc dedans, celui de ∩ dehors."
+  ],
+  "a_voir": "Sans neutre pour ∩, la structure n'est pas une algèbre de Boole."
+ }
+]

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,44,54,r'$x=-5$','sujet','l')
+box(ax,2,30,18,12,role='sujet',label=r'$-5$'); arrow(ax,(22,36),(34,36),'varie'); text(ax,28,40,'carré','varie','s')
+box(ax,36,30,16,12,role='sujet',label='25'); arrow(ax,(54,36),(68,36),'varie'); text(ax,61,40,'racine','varie','s')
+box(ax,70,30,16,12,role='limite',label='5')
+text(ax,78,25,r'$5\neq -5$','limite','m')
+f=numberline(ax,14,74,12,-5,5,step=5,arrow_right=False)
+disc(ax,f(-5),12,1.8,'sujet'); disc(ax,f(5),12,1.8,'limite')
+save(fig,'22-052')

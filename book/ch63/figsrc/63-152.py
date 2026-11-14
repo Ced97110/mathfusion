@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 21, 61, 'sous-groupe d’ordre 3', 'sujet', 's')
+text(ax, 66, 61, 'sous-groupe d’ordre 2', 'sujet', 's')
+box(ax, 2, 42, 38, 12, role='sujet', label='⟨σ⟩ : 3 sur 6\nindice 2')
+arrow(ax, (21, 41.2), (21, 33.8), 'resultat')
+box(ax, 2, 22, 38, 11, role='resultat', label='⟨σ⟩ est normal')
+box(ax, 46, 42, 40, 11, role='fixe', label='τ : r ↦ r')
+box(ax, 46, 26, 40, 11, role='varie', label='στσ⁻¹ : r ↦ j²r')
+text(ax, 66, 39.5, '≠', 'limite', 'l', weight='bold')
+arrow(ax, (66, 25.2), (66, 18.8), 'limite')
+box(ax, 46, 8, 40, 10, role='limite', label='⟨τ⟩ n’est pas normal')
+save(fig, '63-152')

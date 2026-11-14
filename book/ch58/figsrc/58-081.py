@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 21, 70, r'$(\alpha+\beta)\,v$', 'sujet', 'm')
+text(ax, 67, 70, r'$\alpha v+\beta v$', 'autre', 'm')
+text(ax, 44, 61, 'produit usuel : α = β = 1, v = (1, 0)', 'resultat', 's')
+box(ax, 2, 44, 38, 12, 'sujet', label='(1+1)(1, 0) = (2, 0)', size='s')
+box(ax, 48, 44, 38, 12, 'autre', label='(1, 0) + (1, 0) = (2, 0)', size='s')
+text(ax, 44, 50, '=', 'resultat', 'l')
+text(ax, 44, 29, r'produit inventé : $\alpha\circledast v=\alpha^{2}v$', 'limite', 's')
+box(ax, 2, 12, 38, 12, 'sujet', label=r'(1+1) ⊛ (1, 0) = (4, 0)', size='s')
+box(ax, 48, 12, 38, 12, 'autre', label=r'(1, 0) + (1, 0) = (2, 0)', size='s')
+text(ax, 44, 18, '≠', 'limite', 'xl')
+save(fig, '58-081')

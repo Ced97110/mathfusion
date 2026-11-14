@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 44, 83, r'$4 + 2 \times 3$', 'encre', 'l')
+text(ax, 4, 70, '1. le $+$ coupe', 'varie', 's', ha='left')
+box(ax, 14, 52, 16, 10, 'sujet', label=r'$4$'); box(ax, 50, 52, 26, 10, 'sujet', label=r'$2 \times 3$')
+arrow(ax, (36, 78), (22, 63), 'varie'); arrow(ax, (52, 78), (63, 63), 'varie')
+text(ax, 44, 57, 'termes', 'sujet', 'm')
+text(ax, 4, 38, '2. le $\\times$ coupe', 'autre', 's', ha='left')
+box(ax, 44, 16, 14, 10, 'autre', label=r'$2$'); box(ax, 68, 16, 14, 10, 'autre', label=r'$3$')
+arrow(ax, (58, 50), (51, 27.5), 'autre'); arrow(ax, (68, 50), (75, 27.5), 'autre')
+text(ax, 22, 47, 'aucun $\\times$ : on s\'arrête', 'fixe', 's')
+text(ax, 63, 10, 'facteurs', 'autre', 'm')
+save(fig, '15-028')

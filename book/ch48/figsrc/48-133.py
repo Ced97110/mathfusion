@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 12, 44, 46, 'sujet', fill=True); text(ax, 24, 53, 'GL₂(ℝ)', 'sujet', 'l')
+box(ax, 5, 14, 38, 16, 'resultat'); text(ax, 24, 26.5, 'SL₂(ℝ)', 'resultat', 's')
+text(ax, 24, 18.5, '2   1\n1   1', 'resultat', 'm')
+text(ax, 24, 41, '3   1\n2   2', 'sujet', 'm')
+box(ax, 62, 12, 24, 46, 'autre'); text(ax, 74, 53, 'ℝ*', 'autre', 'l')
+disc(ax, 74, 41, 4, 'varie', label='4', size='m'); disc(ax, 74, 20, 4, 'resultat', label='1', size='m')
+arrow(ax, (35, 41), (69.5, 41), 'varie'); text(ax, 52, 44, 'det', 'varie', 'm')
+arrow(ax, (43, 20), (69.5, 20), 'resultat')
+text(ax, 44, 5, 'GL₂(ℝ)/SL₂(ℝ) ≅ ℝ*', 'resultat', 'l')
+save(fig, '48-133')

@@ -1,0 +1,191 @@
+[
+ {
+  "code": "73-081",
+  "a_dire": "Chaque colonne a pour longueur 1 et les deux colonnes forment un angle droit.",
+  "legende_titre": "Deux flèches de longueur 1",
+  "lecture": [
+   "Le cercle gris en pointillés a pour rayon 1.",
+   "La flèche bleue est la colonne (0, 1) et la flèche violette est la colonne (−1, 0).",
+   "Les deux flèches partent de l’origine et finissent sur le cercle.",
+   "Le petit carré vert marque l’angle droit entre elles."
+  ],
+  "a_voir": "Deux flèches sur le cercle de rayon 1, à angle droit."
+ },
+ {
+  "code": "73-082",
+  "a_dire": "Une famille orthonormée a des vecteurs perpendiculaires et de longueur 1, les deux conditions à la fois.",
+  "legende_titre": "Trois paires de vecteurs",
+  "lecture": [
+   "Trois paires sont dessinées côte à côte.",
+   "À gauche, l’angle est droit et les longueurs valent 1 : c’est la famille orthonormée.",
+   "Au milieu, l’angle est droit mais les longueurs valent 2, écrit en rouge.",
+   "À droite, les longueurs valent 1 mais le produit scalaire vaut 0,6, écrit en rouge."
+  ],
+  "a_voir": "Seule la paire de gauche remplit les deux conditions."
+ },
+ {
+  "code": "73-083",
+  "a_dire": "Les cinq propriétés ne sont équivalentes que pour une matrice carrée n × n.",
+  "legende_titre": "Une matrice qui n’est pas carrée",
+  "lecture": [
+   "Le tableau bleu est la matrice : 3 lignes et 2 colonnes.",
+   "Ses colonnes (1, 0, 0) et (0, 1, 0) sont de longueur 1 et perpendiculaires, en vert.",
+   "Le point (3, 4) est envoyé sur (3, 4, 0).",
+   "Le texte rouge dit que la matrice n’est pas carrée et n’a pas d’inverse."
+  ],
+  "a_voir": "Les colonnes sont orthonormées, mais 3 lignes et 2 colonnes ne font pas une matrice carrée."
+ },
+ {
+  "code": "73-084",
+  "a_dire": "La propriété 1 dit que les colonnes de A, images des vecteurs de base, forment une famille orthonormée.",
+  "legende_titre": "Les images des vecteurs de base",
+  "lecture": [
+   "À gauche, les flèches grises sont les vecteurs de base e₁ et e₂.",
+   "La flèche orange A les envoie à droite.",
+   "L’image de e₁ est la flèche bleue (0, 1).",
+   "L’image de e₂ est la flèche violette (−1, 0). Ces deux images sont les colonnes de A, de longueur 1, avec un angle droit marqué en vert."
+  ],
+  "a_voir": "Les colonnes de A sont les images de e₁ et de e₂, et elles forment un angle droit."
+ },
+ {
+  "code": "73-085",
+  "a_dire": "La propriété 2 demande que l’inverse soit égal à la transposée ; pour ce cisaillement, elle est fausse.",
+  "legende_titre": "Inverse et transposée comparées",
+  "lecture": [
+   "Le tableau bleu est l’inverse du cisaillement.",
+   "Le tableau violet est sa transposée.",
+   "Les cases rouges sont celles où les deux nombres diffèrent : −1 contre 0, et 0 contre 1.",
+   "Le signe rouge ≠ dit que les deux matrices ne sont pas égales. En dessous, (0, 1) devient (1, 1), de longueur plus grande que 1."
+  ],
+  "a_voir": "Les deux matrices diffèrent, et les longueurs ne sont pas gardées."
+ },
+ {
+  "code": "73-086",
+  "a_dire": "La propriété 3 dit que A garde le produit scalaire : ⟨Ax, Ay⟩ = ⟨x, y⟩.",
+  "legende_titre": "Le produit scalaire avant et après",
+  "lecture": [
+   "À gauche, la flèche bleue est x = (3, 4) et la flèche violette est y = (5, 0).",
+   "Leur produit scalaire est 15.",
+   "La flèche orange A les envoie à droite sur Ax = (−4, 3) et Ay = (0, 5).",
+   "Le produit scalaire des images, en vert, vaut aussi 15."
+  ],
+  "a_voir": "Le produit scalaire vaut 15 avant et après."
+ },
+ {
+  "code": "73-087",
+  "a_dire": "La propriété 4 dit que A garde la distance entre deux points ; sans linéarité, cela ne garde pas la longueur.",
+  "legende_titre": "Distance gardée, longueur changée",
+  "lecture": [
+   "Les points bleus (3, 4) et (5, 0) sont envoyés par la translation, flèches orange, sur les points orange (5, 4) et (7, 0).",
+   "Les deux segments, bleu et orange, ont la même distance √20.",
+   "Les pointillés partent de l’origine : le gris vers (3, 4) a pour longueur 5, le rouge vers (5, 4) a pour longueur √41."
+  ],
+  "a_voir": "La distance entre les deux points reste la même, mais la longueur depuis l’origine change."
+ },
+ {
+  "code": "73-088",
+  "a_dire": "La propriété 5 dit que A garde la longueur : ‖Ax‖ = ‖x‖.",
+  "legende_titre": "Une flèche tournée garde sa longueur",
+  "lecture": [
+   "Le cercle gris en pointillés a pour rayon 5.",
+   "La flèche bleue est x = (3, 4).",
+   "La flèche orange est son image Ax = (−1,4 ; 4,8).",
+   "Les deux flèches finissent sur le cercle. À droite, les deux longueurs valent 5 et le calcul 1,96 + 23,04 = 25 est en vert."
+  ],
+  "a_voir": "x et Ax finissent sur le même cercle : leurs longueurs sont égales."
+ },
+ {
+  "code": "73-089",
+  "a_dire": "La propriété 2 est un calcul sur les nombres, la propriété 5 est un fait géométrique, et le théorème dit que c’est la même chose.",
+  "legende_titre": "Un calcul et une mesure, même réponse",
+  "lecture": [
+   "La boîte bleue montre le calcul sur les nombres : AᵗA donne la matrice avec des 1 et des 0.",
+   "La boîte violette montre la mesure : ‖x‖ et ‖Ax‖ valent 5.",
+   "Le signe vert = entre les deux boîtes dit que les deux tests donnent la même réponse."
+  ],
+  "a_voir": "Le calcul et la mesure disent la même chose."
+ },
+ {
+  "code": "73-090",
+  "a_dire": "La formule pivot calcule le produit scalaire avec des longueurs seulement.",
+  "legende_titre": "Retirer deux carrés, garder la moitié",
+  "lecture": [
+   "La barre entière représente ‖x + y‖², qui vaut 80.",
+   "Elle est coupée en trois cases : 25 en bleu pour ‖x‖², 30 en vert pour 2⟨x, y⟩ et 25 en violet pour ‖y‖².",
+   "En retirant les deux cases de 25, il reste 30, et la moitié est 15."
+  ],
+  "a_voir": "La case verte du milieu vaut deux fois le produit scalaire."
+ },
+ {
+  "code": "73-091",
+  "a_dire": "La preuve développe ‖x + y‖² ; l’étape décisive regroupe les deux termes croisés en 2⟨x, y⟩.",
+  "legende_titre": "Développer, puis regrouper",
+  "lecture": [
+   "En haut, ⟨x + y, x + y⟩ vaut 80.",
+   "La flèche orange développe ce carré en quatre cases : 25 en bleu, deux fois 15 en orange, 25 en violet.",
+   "L’accolade orange regroupe les deux cases égales de 15 en 2 × 15 = 30.",
+   "En bas, 25 + 30 + 25 fait 80."
+  ],
+  "a_voir": "Les deux cases orange sont égales, donc elles se regroupent en une seule de 30."
+ },
+ {
+  "code": "73-092",
+  "a_dire": "Une matrice orthogonale garde les angles, car elle garde le produit scalaire et les longueurs.",
+  "legende_titre": "Le même angle avant et après",
+  "lecture": [
+   "À gauche, x en bleu et y en violet forment un angle vert de 53,13°.",
+   "La flèche orange A les envoie à droite sur Ax et Ay.",
+   "L’angle vert vaut encore 53,13°.",
+   "Sous chaque dessin, le cosinus de l’angle vaut 0,6."
+  ],
+  "a_voir": "L’angle et son cosinus sont les mêmes avant et après."
+ },
+ {
+  "code": "73-093",
+  "a_dire": "Pour une première colonne (1, 0), il n’y a que deux secondes colonnes possibles ; le cisaillement n’en fait pas partie.",
+  "legende_titre": "Une seule colonne ne suffit pas",
+  "lecture": [
+   "Le cercle gris a pour rayon 1.",
+   "La flèche bleue est la première colonne (1, 0).",
+   "Les deux flèches vertes (0, 1) et (0, −1) sont de longueur 1 et perpendiculaires : ce sont les deux seuls choix.",
+   "La flèche rouge (1, 1) sort du cercle : sa longueur est √2, plus grande que 1."
+  ],
+  "a_voir": "Seules les deux flèches vertes conviennent comme seconde colonne."
+ },
+ {
+  "code": "73-094",
+  "a_dire": "Au premier temps, Ae₁ = (a, b) est de longueur 1, donc sur le cercle unité, avec a = cos θ et b = sin θ.",
+  "legende_titre": "Le point sur le cercle unité",
+  "lecture": [
+   "Le cercle gris a pour rayon 1.",
+   "La flèche bleue part de l’origine et finit sur le cercle : c’est Ae₁ = (0,6 ; 0,8).",
+   "Le pointillé vert horizontal donne b = 0,8 et le pointillé vert vertical donne a = 0,6.",
+   "L’angle orange vaut environ 53,13°."
+  ],
+  "a_voir": "Un point du cercle unité a pour coordonnées a = cos θ et b = sin θ."
+ },
+ {
+  "code": "73-095",
+  "a_dire": "Au second temps, la seconde colonne est sur la droite perpendiculaire à la première, avec une longueur de 1 : il reste deux vecteurs.",
+  "legende_titre": "Deux points sur la droite perpendiculaire",
+  "lecture": [
+   "La flèche bleue est la première colonne (0,6 ; 0,8).",
+   "La droite grise en pointillés est perpendiculaire à elle.",
+   "Le cercle gris a pour rayon 1.",
+   "Les deux points verts, k = 1 et k = −1, sont sur le cercle : leur longueur est 1. Les points rouges, k = 2 et k = 0,5, ne sont pas sur le cercle."
+  ],
+  "a_voir": "Seuls les points verts de la droite sont de longueur 1."
+ },
+ {
+  "code": "73-096",
+  "a_dire": "La matrice de réflexion B(θ) garde toujours deux colonnes orthonormées et un déterminant égal à −1 ; seul le miroir change.",
+  "legende_titre": "Deux miroirs, un même déterminant",
+  "lecture": [
+   "Deux dessins montrent θ = 0 et θ = 90°.",
+   "Dans chacun, la flèche bleue est la première colonne, sur le cercle, et la flèche orange est la seconde, perpendiculaire.",
+   "La droite grise en pointillés est le miroir : elle change de place d’un dessin à l’autre.",
+   "Le texte vert dit que le déterminant vaut −1 dans les deux cas."
+  ],
+  "a_voir": "Les colonnes restent orthonormées et le déterminant reste −1 ; seul le miroir change de place."
+ }
+]

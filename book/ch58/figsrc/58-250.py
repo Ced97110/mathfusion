@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+cy, r = 54, 21
+disc(ax, 33, cy, r, 'sujet', fill=False, lw=1.3)
+disc(ax, 55, cy, r, 'autre', fill=False, lw=1.3)
+text(ax, 22, cy + r + 4, r'$\iota_1(M_1)$', 'sujet', 'm', weight='bold')
+text(ax, 66, cy + r + 4, r'$\iota_2(M_2)$', 'autre', 'm', weight='bold')
+text(ax, 22, cy, '(4, (0, 0))', 'sujet', 's')
+text(ax, 66, cy, '(0, (1, 2))', 'autre', 's')
+text(ax, 44, cy, '(0, (0, 0))', 'resultat', 's', weight='bold')
+arrow(ax, (44, 27), (44, cy - 4), 'resultat', lw=1.1)
+text(ax, 44, 22, 'seule liste commune', 'resultat', 's', weight='bold')
+line(ax, [(8, 15), (80, 15)], 'fixe', lw=0.6)
+text(ax, 44, 9, r'$\iota_1(M_1)+\iota_2(M_2)$ = tout le module', 'encre', 's')
+save(fig, '58-250')

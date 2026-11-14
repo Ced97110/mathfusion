@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 2, 70, 38, 12, 'sujet', label=r'$f=(y-1)^2$', size='s')
+box(ax, 48, 70, 38, 12, 'autre', label=r'$g=(y-1)(y+1)$', size='s')
+arrow(ax, (21, 69), (38, 57), 'varie', lw=1.0)
+arrow(ax, (67, 69), (50, 57), 'varie', lw=1.0)
+box(ax, 20, 44, 48, 12, 'varie', label=r'$\mathrm{Res}=0$ : alerte')
+text(ax, 44, 38, 'une racine commune existe', 'varie', 's')
+text(ax, 44, 33, 'pas laquelle, pas sa multiplicité', 'fixe', 's')
+arrow(ax, (44, 29), (44, 22.5), 'varie', lw=1.1)
+text(ax, 62, 26, 'PGCD', 'varie', 's')
+box(ax, 14, 9, 60, 12, 'resultat', label=r'$\mathrm{PGCD}=y-1$ : racine $1$', size='s')
+save(fig, '70-118')

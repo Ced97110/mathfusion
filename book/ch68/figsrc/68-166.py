@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(82)
+text(ax, 2, 77, r'départ : $x$ et $y$ de même classe', 'encre', 's', ha='left')
+box(ax, 2, 56, 42, 9, 'sujet', label=r'$x + y \in C$')
+box(ax, 2, 32, 42, 9, 'sujet', label=r'$H(x+y) = 0$')
+box(ax, 2, 8, 42, 9, 'resultat', label=r'$Hx = Hy$')
+text(ax, 47, 60.5, r'100 + 011 = 111 ($\in C$)', 'fixe', 's', ha='left')
+text(ax, 47, 36.5, r'$H$ · 111 = 00', 'fixe', 's', ha='left')
+text(ax, 47, 12.5, r'$Hx$ = 10 et $Hy$ = 10', 'fixe', 's', ha='left')
+arrow(ax, (23, 55), (23, 42), 'fixe', both=True)
+arrow(ax, (23, 31), (23, 18), 'varie', both=True)
+text(ax, 27, 48.5, r'$C$ = noyau de $H$', 'fixe', 's', ha='left')
+text(ax, 27, 24.5, r'$H(x+y) = Hx + Hy$', 'varie', 's', ha='left', weight='bold')
+text(ax, 2, 2, 'arrivée : même syndrome', 'resultat', 's', ha='left')
+save(fig, '68-166')

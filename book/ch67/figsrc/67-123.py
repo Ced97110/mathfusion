@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 4, 56, 18, 9, 'fixe', label=r'$F=\mathbb{Q}$')
+box(ax, 32, 56, 24, 9, 'fixe', label=r'$\mathbb{Q}(\sqrt{2})$')
+box(ax, 64, 56, 20, 9, 'sujet', label=r'$E=F(z)$')
+arrow(ax, (22.5, 60.5), (31.5, 60.5), 'fixe')
+arrow(ax, (56.5, 60.5), (63.5, 60.5), 'fixe')
+text(ax, 27, 67.5, r'$+\sqrt{2}$', 'fixe', 's')
+text(ax, 60, 67.5, r'$+\sqrt{3}$', 'fixe', 's')
+line(ax, [(13, 55.5), (13, 46), (74, 46)], 'sujet', lw=1.2)
+arrow(ax, (74, 46), (74, 55.5), 'sujet', lw=1.2)
+text(ax, 43.5, 42, r'un seul pas : $+z$, $z=\sqrt{2}+\sqrt{3}$', 'sujet', 's')
+text(ax, 44, 33, r'les puissances de $z$ :', 'encre', 's')
+for k, lab in enumerate([r'$1$', r'$z$', r'$z^2$', r'$z^3$']):
+    box(ax, 10 + 18 * k, 18, 16, 10, 'resultat', label=lab)
+brace(ax, 10, 80, 16, 'resultat', label=r'base de $E$ sur $F$ ($n=4$)')
+save(fig, '67-123')

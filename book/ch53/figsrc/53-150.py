@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+# Alice : n (autre) ; Bob : n' (sujet)
+text(ax, 22, 52, 'Alice', 'autre', 'm', weight='bold')
+text(ax, 66, 52, 'Bob', 'sujet', 'm', weight='bold')
+box(ax, 2, 28, 40, 19, 'autre', label=r'$n$', size='xl')
+box(ax, 46, 28, 40, 19, 'sujet', label=r"$n'$", size='xl')
+text(ax, 22, 21, r'$5 \times 11 = 55$', 'autre', 'm')
+text(ax, 66, 21, r'$7 \times 13 = 91$', 'sujet', 'm')
+text(ax, 44, 8, r"le trait $'$ distingue Bob d’Alice", 'fixe', 's')
+save(fig, '53-150')

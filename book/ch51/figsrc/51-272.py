@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 14, 62, 60, 12, 'sujet', label='Anneau nul $\\{0\\}$ : un seul élément', size='m')
+box(ax, 3, 42, 70, 12, 'resultat', label='aucun produit non nul = 0', size='m')
+disc(ax, 81, 48, 4.5, 'resultat', label='✓', size='l')
+box(ax, 3, 24, 70, 12, 'limite', label='exigé : $1 \\neq 0$, mais ici $1 = 0$', size='m')
+disc(ax, 81, 30, 4.5, 'limite', label='✗', size='l')
+arrow(ax, (44, 24), (44, 14), 'limite')
+box(ax, 8, 2, 72, 12, 'limite', label='ni intègre, ni corps', size='l')
+save(fig, '51-272')

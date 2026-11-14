@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 4, 40, 66, 'resultat', fill=False, lw=0.6, dash=True)
+box(ax, 46, 4, 40, 66, 'limite', fill=False, lw=0.6, dash=True)
+text(ax, 22, 64, r'$a_1\neq 0$ et $b_1\neq 0$', 'resultat', 's')
+text(ax, 66, 64, r'$a_1=0$ et $b_1=0$', 'limite', 's')
+# left : equal roots -> determinant 0
+f = numberline(ax, 8, 36, 40, -5, -1, step=1, role='fixe', arrow_right=False)
+line(ax, [(f(-3), 40), (f(-3), 54)], 'resultat', lw=0.8, dash=True)
+disc(ax, f(-3), 46, 1.3, 'sujet')
+disc(ax, f(-3), 54, 1.3, 'autre')
+text(ax, f(-3) + 3, 46, r'$-6/2$', 'sujet', 's', ha='left')
+text(ax, f(-3) + 3, 54, r'$-9/3$', 'autre', 's', ha='left')
+box(ax, 6, 16, 32, 9, 'resultat', label=r'$6\times3=9\times2$', size='s')
+text(ax, 22, 9.5, 'déterminant : 0', 'resultat', 's')
+# right : polynomials 6 and 5, no y at all -> determinant 0 but no root
+box(ax, 52, 48, 12, 9, 'sujet', label='6', size='m')
+box(ax, 68, 48, 12, 9, 'autre', label='5', size='m')
+text(ax, 66, 40, 'aucune racine', 'limite', 's')
+box(ax, 49, 16, 34, 9, 'limite', label=r'$0\times5-6\times0=0$', size='s')
+text(ax, 66, 9.5, 'déterminant : 0', 'limite', 's')
+text(ax, 66, 30, 'pourtant :', 'limite', 's')
+save(fig, '70-022')

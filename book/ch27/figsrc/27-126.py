@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+o = (40, 12); u = 7.5
+def P(x, y, z): return iso(x, y, z, o, u)
+C, B, D, A, G = P(0,0,0), P(3,0,0), P(0,4,0), P(3,4,0), P(0,0,2)
+poly(ax, [C, B, A, D], 'fixe')
+arrow(ax, C, G, 'sujet', lw=1.8)
+arrow(ax, C, B, 'varie', lw=1.4); arrow(ax, C, D, 'varie', lw=1.4)
+line(ax, [C, A], 'resultat', lw=1.4, dash=True)
+text(ax, C[0], C[1]-3.5, 'C', 'encre', 's'); text(ax, B[0]+3, B[1]-2, 'B', 'encre', 's')
+text(ax, D[0]-3, D[1]-1, 'D', 'encre', 's'); text(ax, A[0], A[1]+3, 'A', 'encre', 's')
+text(ax, G[0]+3, G[1]+2, 'G', 'encre', 's')
+text(ax, 20, 62, r'$CG \perp CB$ et $CG \perp CD$', 'sujet', 's', ha='left')
+text(ax, 20, 55, r'donc $CG \perp CA$', 'resultat', 's', ha='left')
+text(ax, 72, 24, 'CA = CB + CD', 'resultat', 's')
+save(fig, '27-126')

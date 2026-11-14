@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+k = 2.5; xc = 30; yM = 45.85
+A = (xc, yM + 8.66 * k); B = (xc - 5 * k, yM); C = (xc + 5 * k, yM)
+Oc = (xc, yM - 8.66 * k)
+ax.add_patch(Circle(Oc, 8.66 * k, ec=COL['varie'], fc=FILL['varie'], lw=1.0, zorder=1, alpha=0.6))
+for P in (B, C):
+    d = ((P[0] - A[0]) / 10 / k, (P[1] - A[1]) / 10 / k)
+    line(ax, [P, (P[0] + d[0] * 5 * k, P[1] + d[1] * 5 * k)], 'fixe', dash=True)
+poly(ax, [A, B, C], 'sujet')
+Ic = (xc, yM + 2.887 * k)
+ax.add_patch(Circle(Ic, 2.887 * k, ec=COL['autre'], fc='none', lw=1.0, zorder=3))
+line(ax, [Ic, (Ic[0] - 2.887 * k, Ic[1])], 'autre', lw=1.4)
+line(ax, [A, (xc, yM)], 'resultat', lw=1.6); line(ax, [(xc, yM), Oc], 'varie', lw=1.6)
+text(ax, Ic[0] - 3.6, Ic[1] + 2.2, '$r$', 'autre', 's')
+text(ax, 38, 61, 'hauteur ≈ 8,66', 'resultat', 's', ha='left')
+text(ax, 33, 31, '$r_a$ ≈ 8,66', 'varie', 's', ha='left')
+text(ax, 62, 14, '$r_a$ = 3$r$', 'resultat', 'l', ha='left')
+text(ax, 62, 7, '$r$ ≈ 2,89', 'autre', 's', ha='left')
+save(fig, '37-132')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(75)
+box(ax,8,22,44,44,'fixe')
+line(ax,[(8,22),(52,66)],'limite',lw=1.8); line(ax,[(8,22),(52,66)],'autre',lw=0.7,dash=True)
+disc(ax,46,44,2.2,'sujet'); text(ax,46,49,r'$(1,0)$','sujet','s')
+text(ax,28,69,r'$U=U^{\perp}$','limite','m')
+text(ax,30,17,'V : le plan entier','fixe','s')
+text(ax,69,56,'une seule droite','limite','s'); text(ax,69,46,r'$U+U^{\perp}=U$','limite','m')
+text(ax,69,36,r'$U+U^{\perp}\neq V$','limite','m'); text(ax,69,26,r'$(1,0)$ hors de $U$','sujet','s')
+save(fig,'72-106')

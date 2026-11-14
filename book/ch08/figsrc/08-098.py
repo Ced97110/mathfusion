@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,74,r'au plus $q-1$ restes différents','encre','m',weight='bold')
+text(ax,2,63,'1/7 : 6 restes sur 6 possibles','resultat','s',ha='left')
+for k,v in enumerate((1,3,2,6,4,5)): box(ax,3+k*8.2,51,7.4,8,'resultat',label=str(v))
+text(ax,2,43,'1/11 : 2 restes sur 10 possibles','limite','s',ha='left')
+for k in range(10):
+    if k==0: box(ax,3,31,7.4,8,'limite',label='1')
+    elif k==9: box(ax,3+k*8.2,31,7.4,8,'limite',label='10')
+    else: box(ax,3+k*8.2,31,7.4,8,'fixe',fill=False,dash=True)
+arrow(ax,(80,30),(6.7,30),'limite',curve=-0.35)
+text(ax,44,14,'après 10, on revient à 1','limite','s')
+text(ax,44,8,'cases vides : restes jamais vus','fixe','s')
+text(ax,44,2.5,r'période $\leq q-1$ chiffres','encre','s')
+save(fig,'08-098')

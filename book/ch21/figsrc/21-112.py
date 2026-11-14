@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(74)
+box(ax,3,28,26,16,'sujet'); text(ax,16,36,r'$x^2+5x+6$','sujet','m')
+box(ax,59,28,26,16,'resultat'); text(ax,72,36,r'$(x+2)(x+3)$','resultat','m')
+arrow(ax,(30,40),(58,40),'autre',curve=-0.45)
+arrow(ax,(30,32),(58,32),'varie',curve=0.45)
+text(ax,44,63,'chapitre 18','autre','s'); text(ax,44,57,'produit 6, somme 5','autre','s'); text(ax,44,51,'donc 2 et 3','autre','s')
+text(ax,44,19,r'diviser par $x+2$','varie','s'); text(ax,44,12,r'on obtient $x+3$','varie','s')
+text(ax,44,4,'même résultat','resultat','s')
+save(fig,'21-112')

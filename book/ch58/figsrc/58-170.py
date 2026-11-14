@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 26, 62, 36, 11, 'sujet', label=r'$3+\sqrt{2}$', size='l', weight='bold')
+text(ax, 44, 76, 'un seul nombre', 'fixe', 's')
+arrow(ax, (34, 61), (21, 52), 'fixe')
+arrow(ax, (54, 61), (67, 52), 'fixe')
+# base 1
+text(ax, 21, 48, r'base $(1,\ \sqrt{2})$', 'fixe', 's')
+box(ax, 8, 28, 12, 11, 'varie', label='3', size='l', weight='bold')
+box(ax, 22, 28, 12, 11, 'varie', label='1', size='l', weight='bold')
+text(ax, 14, 22, '1', 'fixe', 's')
+text(ax, 28, 22, r'$\sqrt{2}$', 'fixe', 's')
+# base 2
+text(ax, 67, 48, r'base $(1+\sqrt{2},\ 1-\sqrt{2})$', 'fixe', 's')
+box(ax, 54, 28, 12, 11, 'varie', label='2', size='l', weight='bold')
+box(ax, 68, 28, 12, 11, 'varie', label='1', size='l', weight='bold')
+text(ax, 60, 22, r'$1+\sqrt{2}$', 'fixe', 's')
+text(ax, 74, 22, r'$1-\sqrt{2}$', 'fixe', 's')
+text(ax, 44, 5, 'même nombre, coordonnées différentes', 'varie', 's')
+save(fig, '58-170')

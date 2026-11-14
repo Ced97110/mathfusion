@@ -1,0 +1,362 @@
+[
+ {
+  "code": "58-181",
+  "a_dire": "La dimension de V est le nombre de vecteurs d’une base de V : pour le plan, c’est 2, et non le nombre de points ni le nombre de vecteurs d’une famille quelconque.",
+  "legende_titre": "Ce que la dimension compte, et ce qu’elle ne compte pas",
+  "lecture": [
+   "La ligne grise donne le nombre de points du plan : il est infini.",
+   "La ligne violette est une famille de trois vecteurs : elle en a 3, mais ce n’est pas une base.",
+   "Les deux lignes bleues sont deux bases du plan : chacune a 2 vecteurs, et le 2 est en vert.",
+   "Le 2 vert est la dimension : il ne change pas d’une base à l’autre."
+  ],
+  "a_voir": "Seul le nombre de vecteurs d’une base reste le même quand on change de base."
+ },
+ {
+  "code": "58-182",
+  "a_dire": "Le rang et la dimension sont le même nombre : on dit « rang » pour un module, « dimension » pour un espace vectoriel.",
+  "legende_titre": "Un nombre, deux noms",
+  "lecture": [
+   "Le cadre bleu est le module des couples d’entiers : sa base a deux éléments, (1, 0) et (0, 1).",
+   "Le cadre violet est le plan réel : sa base a deux vecteurs, (1, 0) et (0, 1).",
+   "Les deux cadres orange portent les noms : « rang » à gauche, « dimension » à droite.",
+   "La case verte au milieu est le nombre commun : 2."
+  ],
+  "a_voir": "Les deux flèches vertes arrivent sur le même nombre, 2 ; seul le nom change."
+ },
+ {
+  "code": "58-183",
+  "a_dire": "L’article « la » dit que toutes les bases du plan ont le même nombre de vecteurs : un seul nombre, 2.",
+  "legende_titre": "Deux bases, un seul nombre",
+  "lecture": [
+   "Le premier cadre montre la base (1, 0), (0, 1) : deux flèches bleues.",
+   "Le second cadre montre la base (3, 1), (1, 2) : deux flèches bleues aussi.",
+   "Sous chaque cadre, on lit « 2 vecteurs ».",
+   "La case verte du bas réunit les deux : le plan a un seul nombre, 2."
+  ],
+  "a_voir": "Deux bases très différentes ont le même nombre de vecteurs."
+ },
+ {
+  "code": "58-184",
+  "a_dire": "La dimension de ℝⁿ est n : la base standard a un sac par case.",
+  "legende_titre": "Un sac par case",
+  "lecture": [
+   "La première ligne a deux cases : ses sacs de base sont (1, 0) et (0, 1).",
+   "La deuxième ligne a trois cases : ses sacs de base sont (1, 0, 0), (0, 1, 0) et (0, 0, 1).",
+   "La dernière ligne a n cases : ses sacs sont e₁, puis des points de suspension, puis eₙ.",
+   "Chaque case verte donne le nombre de sacs : 2, 3, puis n."
+  ],
+  "a_voir": "Le nombre de sacs de la base est toujours le nombre de cases."
+ },
+ {
+  "code": "58-185",
+  "a_dire": "La dimension de l’espace des polynômes de degré au plus n est n + 1 : il y a une brique pour chaque puissance de x, y compris la brique 1.",
+  "legende_titre": "Les briques des polynômes",
+  "lecture": [
+   "Chaque case bleue est une brique : 1, x, x au carré, puis x au cube.",
+   "Les cases orange du haut sont les coefficients 3, 4 et 5 du polynôme 3 + 4x + 5x au carré, un par brique.",
+   "L’accolade du haut compte 3 briques pour le degré 2.",
+   "L’accolade du bas compte 4 briques pour le degré 3, soit n + 1."
+  ],
+  "a_voir": "Il y a une brique de plus que le degré, parce que la brique 1 compte."
+ },
+ {
+  "code": "58-186",
+  "a_dire": "Un polynôme de degré au plus 1 demande deux nombres, la partie constante et le coefficient de x : la dimension est n + 1 = 2, et non n = 1.",
+  "legende_titre": "Deux nombres pour chaque polynôme",
+  "lecture": [
+   "Chaque ligne est un polynôme : 3 + 5x, 2 − x et 7.",
+   "La colonne orange donne le terme constant : 3, 2 et 7.",
+   "La colonne bleue donne le coefficient de x : 5, −1 et 0.",
+   "L’accolade verte compte les deux colonnes : 2 nombres."
+  ],
+  "a_voir": "Même le polynôme 7 a deux nombres, car le terme constant est un coefficient à part."
+ },
+ {
+  "code": "58-187",
+  "a_dire": "Sur les fractions, chaque nombre a + b√2 se décrit par deux fractions : la dimension de ℚ(√2) est 2 sur ℚ, avec la base (1, √2).",
+  "legende_titre": "Deux fractions pour chaque nombre",
+  "lecture": [
+   "L’axe bleu horizontal donne la fraction a, la part sur 1.",
+   "L’axe violet vertical donne la fraction b, la part sur √2.",
+   "Le point en bas à droite est 3 + √2 : a vaut 3 et b vaut 1.",
+   "Le point en haut à gauche est 1/2 + 5√2 : a vaut 1/2 et b vaut 5."
+  ],
+  "a_voir": "Chaque nombre de l’ensemble est un point à deux coordonnées, donc la dimension est 2."
+ },
+ {
+  "code": "58-188",
+  "a_dire": "Le plan W a pour dimension 2 : les deux flèches a = (1, 2, 1) et b = (0, 1, −1) non alignées en forment une base, alors que l’espace a trois directions.",
+  "legende_titre": "Un plan dans l’espace",
+  "lecture": [
+   "Les trois flèches grises sont les trois axes de l’espace.",
+   "Le parallélogramme bleu est le plan W.",
+   "Les deux flèches bleues partent de l’origine : a vers (1, 2, 1) et b vers (0, 1, −1).",
+   "Elles ne sont pas alignées, et elles suffisent pour décrire W."
+  ],
+  "a_voir": "Le plan W a deux directions seulement, alors que l’espace en a trois."
+ },
+ {
+  "code": "58-189",
+  "a_dire": "La lettre λ est un scalaire : l’égalité a = λb se teste case par case, et la première case donne 1 = λ × 0, ce qui est faux.",
+  "legende_titre": "Tester l’alignement avec une lettre",
+  "lecture": [
+   "La colonne bleue est la flèche a : 1, 2, 1.",
+   "La colonne violette est la flèche b : 0, 1, −1.",
+   "Le signe orange « = λ × » demande si a est un multiple de b.",
+   "Le cadre rouge entoure la première case des deux colonnes : 1 devrait valoir λ fois 0, donc 0, ce qui est faux."
+  ],
+  "a_voir": "Une seule case suffit pour montrer que a n’est pas un multiple de b."
+ },
+ {
+  "code": "58-190",
+  "a_dire": "L’espace réduit au vecteur nul a pour dimension 0 : sa base est la famille vide, qui n’a aucun vecteur et dont la combinaison vide vaut le vecteur nul.",
+  "legende_titre": "Une base sans aucun vecteur",
+  "lecture": [
+   "Le cadre bleu en pointillés est la famille vide : il ne contient aucun vecteur.",
+   "La flèche orange est la combinaison vide de cette famille.",
+   "Le cadre vert est l’espace {0} : il ne contient que le vecteur nul.",
+   "La flèche arrive sur le 0 : la famille vide suffit pour atteindre cet espace."
+  ],
+  "a_voir": "Zéro vecteur dans la base donne la dimension 0."
+ },
+ {
+  "code": "58-191",
+  "a_dire": "Les fonctions continues sur [a, b] n’ont pas de dimension finie : pour tout n, on trouve n + 1 fonctions indépendantes, 1, x, jusqu’à x puissance n.",
+  "legende_titre": "Toujours une fonction indépendante de plus",
+  "lecture": [
+   "Chaque petit cadre montre le graphe d’une fonction sur l’intervalle : 1, x, x au carré, x au cube, puis x puissance n.",
+   "La courbe devient plus penchée à mesure que la puissance monte.",
+   "L’accolade verte compte les n + 1 fonctions indépendantes, pour un n quelconque.",
+   "Le texte du bas dit que cela vaut pour tout n."
+  ],
+  "a_voir": "Quel que soit n, il existe n + 1 fonctions indépendantes dans l’espace."
+ },
+ {
+  "code": "58-192",
+  "a_dire": "La preuve par le déterminant vaut pour tout anneau commutatif, la preuve par échange seulement pour un corps : choisir la preuve, c’est choisir la généralité.",
+  "legende_titre": "Deux preuves, deux domaines",
+  "lecture": [
+   "Le grand cadre gris est celui des anneaux commutatifs : la preuve par le déterminant y vaut.",
+   "Le cadre bleu du haut y place les couples d’entiers, de rang 2.",
+   "Le cadre violet est celui des corps : la preuve par échange n’y vaut que là.",
+   "Le plan réel, de dimension 2, est dans le cadre violet."
+  ],
+  "a_voir": "Le domaine de la preuve par échange est contenu dans celui de la preuve par le déterminant."
+ },
+ {
+  "code": "58-193",
+  "a_dire": "Sur les entiers, l’échange échoue : (1, 0) exigerait un demi de (2, 0), et un demi n’est pas un entier.",
+  "legende_titre": "Un point qu’on n’atteint pas",
+  "lecture": [
+   "Chaque cercle est un couple d’entiers.",
+   "Les cercles bleus pleins sont ceux que la famille (2, 0), (0, 1) atteint.",
+   "Les cercles rouges vides ne sont pas atteints, dont (1, 0), juste après l’origine sur la ligne du bas.",
+   "Le texte rouge du bas dit pourquoi : il faudrait un demi de (2, 0)."
+  ],
+  "a_voir": "Avec (2, 0) à la place de (1, 0), on saute tous les couples dont la première case est impaire."
+ },
+ {
+  "code": "58-194",
+  "a_dire": "L’échange compare toute famille indépendante à toute famille génératrice : la famille indépendante a au plus autant de vecteurs.",
+  "legende_titre": "Indépendante contre génératrice",
+  "lecture": [
+   "La ligne bleue est la famille indépendante (1, 0), (1, 1) : 2 vecteurs.",
+   "La ligne violette est la famille génératrice (1, 0), (0, 1), (1, 1) : 3 vecteurs.",
+   "Le signe vert « ≤ » relie le 2 au 3.",
+   "La case verte du bas écrit la règle en mots."
+  ],
+  "a_voir": "Deux vecteurs indépendants font face à trois vecteurs qui engendrent : 2 est au plus 3."
+ },
+ {
+  "code": "58-195",
+  "a_dire": "η est un homomorphisme de R^m vers R^n : il envoie les vecteurs de base de départ sur des vecteurs de l’arrivée, et les deux modules peuvent différer.",
+  "legende_titre": "Une application entre deux modules de listes",
+  "lecture": [
+   "Le grand cadre bleu est le départ, les listes à m cases ; il contient les sacs e₁ et e₂.",
+   "Le grand cadre violet est l’arrivée, les listes à n cases ; il contient (2, 1) et (1, 3).",
+   "Chaque flèche orange, notée η, envoie un sac de départ sur son image.",
+   "Ici e₁ va sur (2, 1) et e₂ va sur (1, 3)."
+  ],
+  "a_voir": "Le départ et l’arrivée sont deux modules distincts, reliés par η."
+ },
+ {
+  "code": "58-196",
+  "a_dire": "L’image de chaque sac de départ s’écrit avec les lots d’arrivée f : η(eᵢ) = a₁ᵢ f₁ + a₂ᵢ f₂ ; les nombres changent, la forme reste.",
+  "legende_titre": "Écrire une image avec les lots d’arrivée",
+  "lecture": [
+   "La case bleue de gauche est l’image d’un sac de départ, η(e₁) en haut, η(e₂) en bas.",
+   "Les cases orange sont les nombres de lots : 2 et 1 pour le premier sac, 1 et 3 pour le second.",
+   "Les cases violettes sont les lots d’arrivée f₁ et f₂.",
+   "Les deux lignes ont la même forme avec des nombres différents."
+  ],
+  "a_voir": "Chaque image est une somme de lots f₁ et f₂ avec un nombre devant chacun."
+ },
+ {
+  "code": "58-197",
+  "a_dire": "La matrice est le tableau où l’on range les nombres des images des sacs de base : une colonne par image.",
+  "legende_titre": "Ranger les images en tableau",
+  "lecture": [
+   "À gauche, la colonne bleue est l’image du premier sac, 2 puis 1, et la colonne orange est l’image du second sac, 1 puis 3.",
+   "La flèche verte les range dans un tableau.",
+   "Dans le tableau, la colonne bleue est sous e₁ et la colonne orange est sous e₂.",
+   "Les lignes sont repérées par f₁ et f₂."
+  ],
+  "a_voir": "Les mêmes quatre nombres, rangés en tableau, forment la matrice."
+ },
+ {
+  "code": "58-198",
+  "a_dire": "Le signe a_{ji} est une case du tableau : le premier indice j donne la ligne, le second indice i donne la colonne ; ici a₁₂ = 1.",
+  "legende_titre": "Lire les deux indices d’une case",
+  "lecture": [
+   "La case verte est a₁₂, qui vaut 1.",
+   "La ligne orange est la ligne 1 : elle compte les lots de type f₁.",
+   "La colonne bleue est la colonne 2 : c’est l’image du sac e₂.",
+   "La case verte est à l’intersection de cette ligne et de cette colonne."
+  ],
+  "a_voir": "La ligne dit quel lot on regarde, la colonne dit de quel sac on prend l’image."
+ },
+ {
+  "code": "58-199",
+  "a_dire": "Le livre écrit les coordonnées en colonne, Jacobson les écrit en ligne : ce sont les mêmes nombres, rangés autrement.",
+  "legende_titre": "Deux façons d’écrire les mêmes nombres",
+  "lecture": [
+   "Le bloc de gauche suit le livre : les nombres sont en colonne.",
+   "Le bloc de droite suit Jacobson : les nombres sont en ligne.",
+   "Le haut montre le sac (5, 4) en bleu, le bas montre l’image de e₁, (2, 1), en violet.",
+   "La case verte rappelle que les nombres sont les mêmes."
+  ],
+  "a_voir": "Seule l’orientation change : colonne d’un côté, ligne de l’autre."
+ },
+ {
+  "code": "58-200",
+  "a_dire": "Le tableau du livre est le transposé de celui de Jacobson : on échange les lignes et les colonnes, et le contenu reste le même.",
+  "legende_titre": "Passer d’un tableau à l’autre",
+  "lecture": [
+   "À gauche, le tableau du livre : (2, 1) en bleu et (4, 3) en orange sont en colonnes.",
+   "À droite, le tableau de Jacobson : les mêmes nombres sont en lignes.",
+   "La flèche orange nomme le passage : le transposé, qui échange lignes et colonnes.",
+   "Le texte du bas rappelle quel nombre vient de quel sac."
+  ],
+  "a_voir": "Chaque colonne de gauche devient la ligne de même couleur à droite."
+ },
+ {
+  "code": "58-201",
+  "a_dire": "La colonne i du tableau est l’image du i-ème sac de base : pour le sac e₂, on lit la colonne 2.",
+  "legende_titre": "Retrouver l’image d’un sac",
+  "lecture": [
+   "La case orange du haut est le sac e₂.",
+   "La flèche orange descend sur la colonne 2, en orange, qui contient 1 puis 3.",
+   "La colonne 1, en gris, n’est pas lue.",
+   "La flèche verte donne le résultat : η(e₂) = (1, 3)."
+  ],
+  "a_voir": "Le numéro du sac est le numéro de la colonne à lire."
+ },
+ {
+  "code": "58-202",
+  "a_dire": "La matrice se lit colonne par colonne : le carré construit sur (1, 0) et (0, 1) devient le parallélogramme construit sur les deux colonnes (2, 1) et (1, 3).",
+  "legende_titre": "Le carré devient un parallélogramme",
+  "lecture": [
+   "Le carré gris est bâti sur la flèche bleue (1, 0) et la flèche orange (0, 1).",
+   "Leurs images sont la flèche bleue (2, 1) et la flèche orange (1, 3).",
+   "Le parallélogramme vert est bâti sur ces deux images.",
+   "Le sommet (1, 1) du carré arrive en (3, 4), au coin du parallélogramme."
+  ],
+  "a_voir": "Deux colonnes suffisent à placer toute la forme."
+ },
+ {
+  "code": "58-203",
+  "a_dire": "A = (2 1 ; 1 3) a pour colonnes η(e₁) = (2, 1) et η(e₂) = (1, 3) : deux lignes et deux colonnes.",
+  "legende_titre": "Un tableau et ses deux colonnes",
+  "lecture": [
+   "Le tableau est entre deux crochets, précédé de « A = ».",
+   "La colonne bleue porte 2 puis 1 : c’est η(e₁), écrit (2, 1) sous le tableau.",
+   "La colonne orange porte 1 puis 3 : c’est η(e₂), écrit (1, 3) sous le tableau.",
+   "Le texte gris rappelle la forme : 2 lignes et 2 colonnes."
+  ],
+  "a_voir": "Chaque colonne du tableau est l’image d’un sac de départ."
+ },
+ {
+  "code": "58-204",
+  "a_dire": "Une matrice a une colonne par vecteur de base de départ et une ligne par coordonnée d’arrivée : de trois cases à deux cases, on a 3 colonnes et 2 lignes.",
+  "legende_titre": "La forme du tableau est fixée",
+  "lecture": [
+   "Les trois titres bleus e₁, e₂ et e₃ sont les trois sacs de départ : une colonne chacun.",
+   "Les deux titres violets f₁ et f₂ sont les deux cases d’arrivée : une ligne chacune.",
+   "Chaque case grise porte une lettre a avec deux indices : ligne puis colonne.",
+   "L’accolade et le trait à gauche comptent 3 colonnes et 2 lignes."
+  ],
+  "a_voir": "Le nombre de colonnes vient du départ, le nombre de lignes vient de l’arrivée."
+ },
+ {
+  "code": "58-205",
+  "a_dire": "Pour calculer η(x), on sépare le stock en sacs types, on remplace chaque sac type par son image multipliée par le nombre de sacs, puis on additionne : pour (3, 1), on obtient (7, 6).",
+  "legende_titre": "Le calcul de l’image d’un stock",
+  "lecture": [
+   "Première ligne : le stock est séparé en 3 sacs type 1 (bleu) et 1 sac type 2 (orange).",
+   "Deuxième ligne : 3 fois (2, 1) donne (6, 3), et 1 fois (1, 3) donne (1, 3).",
+   "Les flèches grises mènent à la dernière ligne, en vert.",
+   "Dernière ligne : (6, 3) plus (1, 3) donne (7, 6)."
+  ],
+  "a_voir": "Les trois mots orange à gauche donnent l’ordre des trois actions."
+ },
+ {
+  "code": "58-206",
+  "a_dire": "L’image du stock (5, 4) se calcule colonne par colonne : 5 fois (2, 1) plus 4 fois (1, 3) donne (14, 17).",
+  "legende_titre": "Cinq fois une colonne, quatre fois l’autre",
+  "lecture": [
+   "La flèche bleue part de l’origine vers (10, 5) : c’est 5 fois (2, 1).",
+   "La flèche orange part de ce point vers (14, 17) : c’est 4 fois (1, 3), soit (4, 12).",
+   "La flèche verte va directement de l’origine à (14, 17) : c’est la somme.",
+   "Les trois lignes à droite écrivent le même calcul avec des nombres."
+  ],
+  "a_voir": "Mis bout à bout, les deux multiples de colonnes arrivent en (14, 17)."
+ },
+ {
+  "code": "58-207",
+  "a_dire": "Chaque case d’arrivée est une combinaison des cases de départ, avec les coefficients d’une ligne de A : c’est la forme d’un système d’équations.",
+  "legende_titre": "Une ligne de A, une équation",
+  "lecture": [
+   "À gauche, le tableau A : sa première ligne, 2 et 1, est en bleu, sa seconde ligne, 1 et 3, est en violet.",
+   "Chaque flèche mène de la ligne à l’équation de même couleur.",
+   "La première équation est y₁ = 2x₁ + 1x₂, la seconde est y₂ = 1x₁ + 3x₂.",
+   "Les coefficients de chaque équation sont ceux de la ligne."
+  ],
+  "a_voir": "Le calcul de l’image a la forme d’un système d’équations."
+ },
+ {
+  "code": "58-208",
+  "a_dire": "Le théorème dit que η ↦ A est une bijection entre les applications et les tableaux, et que la somme de deux applications additionne les colonnes.",
+  "legende_titre": "Application et tableau se correspondent",
+  "lecture": [
+   "Le cadre bleu est une application η, le cadre violet est son tableau A.",
+   "La flèche verte à double pointe dit : chaque application a un tableau, et chaque tableau vient d’une application.",
+   "En bas, deux tableaux sont écrits par leurs colonnes : (2, 1) et (1, 3), puis (1, 0) et (0, 1).",
+   "Leur somme, en vert, a pour colonnes (3, 1) et (1, 4), colonne par colonne."
+  ],
+  "a_voir": "Additionner les applications revient à additionner leurs colonnes."
+ },
+ {
+  "code": "58-209",
+  "a_dire": "M_{n,m}(R) est l’ensemble des tableaux à n lignes et m colonnes dont les cases sont dans R : un seul signe pour toute la phrase.",
+  "legende_titre": "Un signe pour un ensemble de tableaux",
+  "lecture": [
+   "Chaque grille est la forme d’un tableau : ici 2 lignes et 3 colonnes en bleu, 3 lignes et 2 colonnes en violet, 2 lignes et 2 colonnes en orange.",
+   "Sous chaque grille, le signe M avec deux indices nomme l’ensemble de ces tableaux à cases entières.",
+   "Le premier indice est le nombre de lignes n, le second est le nombre de colonnes m.",
+   "La ligne du haut donne le signe général."
+  ],
+  "a_voir": "Les deux indices se lisent dans l’ordre : lignes, puis colonnes."
+ },
+ {
+  "code": "58-210",
+  "a_dire": "La preuve part du fait que les images de la base fixent une application ; elle arrive à une bijection compatible avec l’addition, et l’étape qui porte le poids est la surjectivité.",
+  "legende_titre": "Les trois points de la preuve",
+  "lecture": [
+   "Le cadre gris du haut est le départ : l’application est fixée par les images de la base.",
+   "Les trois cadres du milieu sont les trois points : injective, surjective (en orange, bord épais) et additive.",
+   "Dans le cadre surjectif, les colonnes (4, 0) et (1, 1) sont choisies : une application les réalise. C’est l’étape qui porte le poids.",
+   "Le cadre vert du bas est l’arrivée : une bijection compatible avec l’addition. En bas, 2 sacs de type 1 et 3 sacs de type 2 donnent (11, 3)."
+  ],
+  "a_voir": "Le cadre épais de la surjectivité est l’étape qui porte l’argument."
+ }
+]

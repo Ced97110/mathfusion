@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, a): return (c[0] + r * math.cos(math.radians(a)), c[1] + r * math.sin(math.radians(a)))
+def arc(ax, c, r, a0, a1, role='varie', lw=0.9, n=30):
+    line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw)
+def sq(ax, p, d1, d2, s=2.2, role='fixe'):
+    a = (p[0] + d1[0] * s, p[1] + d1[1] * s); b = (a[0] + d2[0] * s, a[1] + d2[1] * s); c = (p[0] + d2[0] * s, p[1] + d2[1] * s)
+    line(ax, [a, b, c], role, lw=0.7)
+fig, ax = canvas(58)
+A = (6, 14); B = (46, 14); C = (46, 40)
+poly(ax, [A, B, C], 'fixe')
+line(ax, [A, B], 'autre', lw=1.5); line(ax, [B, C], 'sujet', lw=1.5); line(ax, [A, C], 'encre', lw=1.5)
+sq(ax, B, (-1, 0), (0, 1))
+arc(ax, A, 9, 0, math.degrees(math.atan2(26, 40)), 'varie')
+text(ax, 20, 17.5, r'$\theta$', 'varie', 'm')
+text(ax, 26, 8, 'adjacent', 'autre', 's')
+text(ax, 48, 27, 'opposé', 'sujet', 's', ha='left')
+text(ax, 22, 33, 'hypoténuse', 'encre', 's', rot=33)
+text(ax, 71, 51, r'$\sin\theta=\frac{\mathrm{opposé}}{\mathrm{hypoténuse}}$', 'sujet', 's')
+text(ax, 71, 40, r'$\cos\theta=\frac{\mathrm{adjacent}}{\mathrm{hypoténuse}}$', 'autre', 's')
+text(ax, 71, 12, r'$\tan\theta=\frac{\sin\theta}{\cos\theta}$', 'resultat', 's')
+save(fig, '26-114')

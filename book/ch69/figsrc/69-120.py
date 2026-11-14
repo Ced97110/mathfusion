@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 2, 58, 40, 10, 'sujet', label=r'$F=x^3+px+q$', size='m')
+box(ax, 46, 58, 40, 10, 'autre', label=r'$G=3x^2+p$', size='m')
+text(ax, 68, 54, 'coefficient dominant : 3', 'autre', 's')
+arrow(ax, (22, 57.5), (22, 47.5), 'fixe')
+arrow(ax, (30, 57.5), (60, 47.5), 'varie')
+text(ax, 38, 49.5, r'$\times\,9$', 'varie', 'm')
+box(ax, 2, 32, 40, 15, 'limite', label=r'$F:G$' + '\n' + r'$Q=x/3$ : fraction', size='s')
+box(ax, 46, 32, 40, 15, 'resultat', label=r'$9F:G$' + '\n' + r'$Q=3x$ : sans fraction', size='s')
+box(ax, 4, 8, 80, 12, 'resultat', label=r'$9F=QG-R$, avec $9=3^2$', size='m')
+save(fig, '69-120')

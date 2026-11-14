@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 52, 39, 10, 'resultat', label=r'$P$ et $Q$ normaux', size='s')
+box(ax, 46, 52, 39, 10, 'limite', label=r'$P$ non normal', size='s')
+for x in (3, 46): box(ax, x, 36, 39, 10, 'fixe', label=r'$P\cap Q=\{e\}$')
+arrow(ax, (22.5, 51.5), (22.5, 46.5), 'fixe'); arrow(ax, (65.5, 51.5), (65.5, 46.5), 'fixe')
+arrow(ax, (22.5, 35.5), (22.5, 30.5), 'resultat'); arrow(ax, (65.5, 35.5), (65.5, 30.5), 'limite')
+box(ax, 3, 20, 39, 10, 'resultat', label=r'$xy=yx$', size='l')
+box(ax, 46, 20, 39, 10, 'limite', label=r'$xy\neq yx$', size='l')
+text(ax, 65.5, 12.5, r'$Q$ : les rotations (normal)', 'limite', 's')
+text(ax, 65.5, 6.5, r'$P$ : $e$ et une réflexion', 'limite', 's')
+text(ax, 22.5, 9.5, 'tous commutent', 'resultat', 's')
+save(fig, '50-169')

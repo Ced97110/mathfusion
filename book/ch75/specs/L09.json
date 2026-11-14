@@ -1,0 +1,190 @@
+[
+ {
+  "code": "75-129",
+  "a_dire": "Sur le corps à 3 éléments, on divise 51 840 par 2, taille du centre {1, −1}, et on obtient 25 920, nombre d'un groupe simple.",
+  "legende_titre": "De 51 840 à 25 920",
+  "lecture": [
+   "La boîte bleue porte le nombre 51 840, celui de Sp_4 sur le corps à 3 éléments.",
+   "La flèche orange est la division par 2.",
+   "La boîte verte porte le résultat, 25 920, celui de PSp_4.",
+   "Les deux disques gris sont 1 et −1 : −1 vaut 2, ce sont deux éléments différents, donc le centre a une taille de 2."
+  ],
+  "a_voir": "On divise le nombre d'éléments par la taille du centre."
+ },
+ {
+  "code": "75-130",
+  "a_dire": "Pour compter le groupe orthogonal, on choisit un vecteur x avec Q(x) = 1 ; il ne peut aller que sur un vecteur y avec Q(y) = 1.",
+  "legende_titre": "Où peut aller le vecteur x",
+  "lecture": [
+   "Les points forment le plan sur le corps à 3 éléments, avec Q égal à x² + y².",
+   "Les points bleus sont ceux où Q vaut 1 ; le point orange est x.",
+   "La flèche verte va de x vers un point bleu : c'est permis.",
+   "La flèche rouge va de x vers un point gris, où Q ne vaut pas 1 : c'est impossible."
+  ],
+  "a_voir": "Le vecteur x reste parmi les points où Q vaut 1."
+ },
+ {
+  "code": "75-131",
+  "a_dire": "La « sphère » est la famille des flèches y telles que Q(y) = 1 ; sur le corps à 3 éléments du plan, elle contient 4 flèches.",
+  "legende_titre": "Les flèches de niveau 1",
+  "lecture": [
+   "Chaque flèche bleue part du centre gris, qui est 0, 0.",
+   "Le bout de chaque flèche est un point bleu où Q vaut 1.",
+   "Les quatre flèches sont 1, 0 ; 0, 1 ; 2, 0 et 0, 2."
+  ],
+  "a_voir": "La sphère est ici un ensemble de 4 flèches."
+ },
+ {
+  "code": "75-132",
+  "a_dire": "Avec u = x − y et v = x + y, l'équation x² − y² = b devient uv = b, que l'on sait compter.",
+  "legende_titre": "Du plan x, y au plan u, v",
+  "lecture": [
+   "La grille de gauche est le plan des x, y ; les deux points bleus sont ceux où x² − y² vaut 1.",
+   "La flèche orange donne le changement : u égale x − y, v égale x + y.",
+   "La grille de droite est le plan des u, v ; les deux points verts sont ceux où uv vaut 1.",
+   "Il y a 2 points de chaque côté."
+  ],
+  "a_voir": "Le même nombre de solutions, écrit avec un produit uv."
+ },
+ {
+  "code": "75-133",
+  "a_dire": "Si b est différent de 0, chaque u non nul donne un seul v, donc q − 1 solutions ; ici 2.",
+  "legende_titre": "Un seul v pour chaque u non nul",
+  "lecture": [
+   "La colonne bleue de gauche liste les valeurs de u, celle verte de droite les valeurs de v.",
+   "Les deux flèches orange relient u = 1 à v = 2 et u = 2 à v = 1.",
+   "Le 0 gris de gauche n'a pas de flèche : 0 fois v vaut 0, pas 2.",
+   "Le bas dit : 2 couples, soit q − 1."
+  ],
+  "a_voir": "Chaque u non nul a exactement un v."
+ },
+ {
+  "code": "75-134",
+  "a_dire": "Si b vaut 0, un produit est nul quand u ou v est nul : 3 + 3 − 1 = 5 solutions pour q = 3.",
+  "legende_titre": "Compter les couples de produit 0",
+  "lecture": [
+   "La grille a 3 colonnes pour u et 3 lignes pour v.",
+   "La colonne bleue est u = 0 : 3 couples.",
+   "La ligne orange est v = 0 : 3 couples.",
+   "La case verte, 0 ; 0, est dans les deux : on la compte une fois de moins, d'où 3 + 3 − 1 = 5."
+  ],
+  "a_voir": "Le couple 0, 0 est dans les deux groupes."
+ },
+ {
+  "code": "75-135",
+  "a_dire": "Une récurrence a besoin d'un point de départ, ici le plan, et d'un lien d'une dimension à la suivante.",
+  "legende_titre": "Ce qu'il faut pour continuer",
+  "lecture": [
+   "La boîte verte est le plan, point de départ, avec les valeurs 2 et 5.",
+   "Les boîtes grises en pointillés sont les dimensions 3 et 4, encore inconnues.",
+   "Les flèches orange sont le lien d'une dimension à la suivante, donné par le lemme de Jacobson.",
+   "Sans lien, on s'arrête au plan."
+  ],
+  "a_voir": "Le point de départ est connu ; il manque le lien pour avancer."
+ },
+ {
+  "code": "75-136",
+  "a_dire": "La formule de |O_(2n+1)(q)| se lit en facteurs : 2, puis q puissance n², puis les parenthèses q² − 1 jusqu'à q^(2n) − 1 ; pour n = 1 et q = 3, 2 × 3 × 8 = 48.",
+  "legende_titre": "La formule sur un cas chiffré",
+  "lecture": [
+   "La boîte violette est le facteur 2.",
+   "La boîte bleue est la puissance de q : 3.",
+   "La boîte orange est la parenthèse q² − 1 : 9 moins 1, soit 8.",
+   "La boîte verte est le produit 2 fois 3 fois 8 : 48."
+  ],
+  "a_voir": "On lit les facteurs de gauche à droite, puis on multiplie."
+ },
+ {
+  "code": "75-137",
+  "a_dire": "Le cas donne le nombre 48, produit de 2, 3 et 8 ; il ne donne ni la liste des transformations ni leur composition.",
+  "legende_titre": "48 : un nombre, pas une liste",
+  "lecture": [
+   "Les 48 cases bleues sont rangées en 2 blocs de 3 lignes de 8 colonnes.",
+   "Le nombre 48 est écrit à droite avec son produit 2 × 3 × 8.",
+   "Le texte rouge rappelle que les cases ne montrent pas les transformations elles-mêmes."
+  ],
+  "a_voir": "On compte 48 éléments sans voir lesquels sont."
+ },
+ {
+  "code": "75-138",
+  "a_dire": "Le nombre d'éléments de O_(2n+1)(q) est le double de celui de Sp_(2n)(q) ; pour q = 3 et n = 1, 48 est le double de 24.",
+  "legende_titre": "48 est le double de 24",
+  "lecture": [
+   "Les deux boîtes violettes de 24 forment la barre du groupe orthogonal, soit 48.",
+   "La boîte bleue de 24 est le groupe symplectique, 3 fois 8.",
+   "Les deux barres ont la même échelle : la violette fait deux fois la bleue."
+  ],
+  "a_voir": "La barre de 48 est faite de deux fois 24."
+ },
+ {
+  "code": "75-139",
+  "a_dire": "Deux groupes qui ont le même nombre d'éléments ne sont pas forcément le même groupe.",
+  "legende_titre": "6 éléments, deux groupes",
+  "lecture": [
+   "Les 6 disques bleus sont les permutations de 3 objets ; l'ordre y change le résultat.",
+   "Les 6 disques violets sont les entiers modulo 6 ; l'ordre ne change pas le résultat.",
+   "Le cadre rouge dit ab différent de ba ; le cadre vert dit a + b égale b + a."
+  ],
+  "a_voir": "Même nombre d'éléments, mais un groupe est commutatif et l'autre non."
+ },
+ {
+  "code": "75-140",
+  "a_dire": "En dimension paire, deux formes non équivalentes donnent deux groupes ; deux formes équivalentes donnent le même groupe.",
+  "legende_titre": "Formes équivalentes ou non",
+  "lecture": [
+   "En haut, x² − y² et uv sont bleus et reliés par une flèche double : elles sont équivalentes.",
+   "Elles donnent un seul groupe, vert, de 4 éléments.",
+   "En bas, x² + y², violette, n'est pas équivalente à uv.",
+   "Elle donne un autre groupe, de 8 éléments."
+  ],
+  "a_voir": "Deux formes équivalentes, un groupe ; une forme non équivalente, un autre groupe."
+ },
+ {
+  "code": "75-141",
+  "a_dire": "Les transformations qui gardent uv sont : multiplier u par a et v par a^(−1), avec ou sans échange ; pour q = 3, 2(q − 1) = 4.",
+  "legende_titre": "Les 4 transformations de uv",
+  "lecture": [
+   "Les deux colonnes sont a = 1 et a = 2, les deux valeurs non nulles.",
+   "La ligne bleue est sans échange de u et v.",
+   "La ligne violette est avec échange.",
+   "Les 4 cases sont les 4 transformations ; le bas écrit 2(q − 1) = 4."
+  ],
+  "a_voir": "2 choix de a fois 2 choix d'échange font 4."
+ },
+ {
+  "code": "75-142",
+  "a_dire": "Pour x² + y² sur le corps à 3 éléments, le cercle a 4 points, placés comme les sommets d'un carré, et 8 transformations le conservent.",
+  "legende_titre": "Le cercle à 4 points",
+  "lecture": [
+   "Le carré bleu a pour sommets les 4 flèches 1, 0 ; 0, 1 ; 2, 0 et 0, 2.",
+   "La flèche orange courbe est un quart de tour.",
+   "La flèche orange droite est la symétrie qui échange 0, 1 et 0, 2 ; la ligne grise en pointillés garde 1, 0 et 2, 0 en place.",
+   "Le bas dit : 8 transformations en tout."
+  ],
+  "a_voir": "Les 4 points forment un carré, et le groupe est celui du carré."
+ },
+ {
+  "code": "75-143",
+  "a_dire": "Sur les réels, une somme de carrés est positive ; sur les complexes, i² = −1 peut l'annuler sans que la flèche soit nulle.",
+  "legende_titre": "Les carrés sur R et sur C",
+  "lecture": [
+   "À gauche, sur les réels, les barres bleues x₁² et x₂² montent : la somme est positive.",
+   "À droite, sur les complexes, la barre bleue 1² monte de 1.",
+   "La barre rouge i² descend de 1.",
+   "Les deux barres se compensent : somme égale à 0 pour la flèche 1, i, qui n'est pas nulle."
+  ],
+  "a_voir": "Une barre qui descend annule la somme."
+ },
+ {
+  "code": "75-144",
+  "a_dire": "Le conjugué de z = a + ib est a − ib : on change le signe de la partie en i, et le produit z fois z̄ est un réel.",
+  "legende_titre": "Le conjugué de 1 + i",
+  "lecture": [
+   "La flèche bleue est z égale 1 + i, au-dessus de l'axe Re.",
+   "La flèche violette est z barre, égale 1 − i, au-dessous.",
+   "La flèche orange double montre que seul le signe de i change.",
+   "Le cadre vert dit que le produit de z par z barre vaut 2, un réel positif."
+  ],
+  "a_voir": "Le conjugué est le même nombre avec le signe de i changé."
+ }
+]

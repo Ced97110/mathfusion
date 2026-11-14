@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 14, 38, 60, 14, 'sujet', label=r'$E=F(r_1,r_2)$', size='l')
+box(ax, 24, 6, 40, 10, 'fixe', label=r'$F=\mathbb{Q}$')
+arrow(ax, (44, 16), (44, 38), 'varie', both=True)
+text(ax, 2, 27, r'racines $r_1,r_2$', 'sujet', 's', ha='left')
+text(ax, 2, 22, r'de $f$ dans $E$', 'sujet', 's', ha='left')
+text(ax, 50, 29, r'$G=\mathrm{Gal}(E/F)$', 'resultat', 'm', ha='left', weight='bold')
+text(ax, 50, 22, '2 renommages de $E$', 'resultat', 's', ha='left')
+save(fig, '64-090')

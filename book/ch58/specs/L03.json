@@ -1,0 +1,361 @@
+[
+ {
+  "code": "58-061",
+  "a_dire": "La preuve part d'une base et de la règle μ, veut arriver à un isomorphisme, et l'étape 3 (seul le zéro va sur zéro) porte le poids.",
+  "legende_titre": "Trois étapes vers un isomorphisme",
+  "lecture": [
+   "Le cadre bleu de gauche est le départ : une base de M et la règle μ.",
+   "Les deux cadres bleus du milieu sont les étapes 1 et 2 : μ respecte l'addition et la multiplication, et tout élément est atteint.",
+   "Le cadre orange est l'étape 3 : seul le zéro va sur zéro.",
+   "Le cadre vert de droite est l'arrivée : un isomorphisme."
+  ],
+  "a_voir": "Les trois étapes mènent à l'arrivée, et l'étape 3 en orange est celle qui porte tout le poids."
+ },
+ {
+  "code": "58-062",
+  "a_dire": "Un module libre à base de n éléments est R^(n) : on renomme ses éléments par des listes, et l'addition se garde.",
+  "legende_titre": "Renommer les stocks en listes",
+  "lecture": [
+   "La rangée bleue du haut montre les stocks (5, 4), (2, 1) et leur somme (7, 5).",
+   "Les flèches orange renomment chaque stock.",
+   "La rangée violette du bas donne les nouveaux noms : « 1, 3 », « 1, 0 » et « 2, 3 ».",
+   "Le signe plus et le signe égal se retrouvent dans les deux rangées."
+  ],
+  "a_voir": "Additionner les stocks revient à additionner leurs nouveaux noms."
+ },
+ {
+  "code": "58-063",
+  "a_dire": "Imposer les images des éléments de la base suffit à fixer l'homomorphisme, sans autre choix possible.",
+  "legende_titre": "Deux images imposées, le reste est forcé",
+  "lecture": [
+   "La colonne bleue de gauche montre les sacs (1, 0), (0, 1) et le stock (5, 4) dans M.",
+   "La colonne violette de droite montre leurs images dans N.",
+   "Les flèches orange sont les deux images imposées.",
+   "La flèche verte est le résultat forcé : 5 (2, 1) + 4 (1, 3)."
+  ],
+  "a_voir": "Deux images imposées donnent l'image du stock (5, 4), et aucun autre choix n'existe."
+ },
+ {
+  "code": "58-064",
+  "a_dire": "La formule se lit en trois actions : écrire avec la base, remplacer chaque sac par son image, garder les coefficients et additionner.",
+  "legende_titre": "La formule sur un cas chiffré",
+  "lecture": [
+   "La formule est écrite en haut, en noir.",
+   "Le cadre bleu écrit l'élément avec la base : 5 riz + 4 lentilles.",
+   "Les deux cadres orange remplacent chaque sac par son image, puis multiplient.",
+   "Le cadre vert donne le résultat (14, 17) ; les flèches orange nomment chaque action."
+  ],
+  "a_voir": "Les coefficients 5 et 4 restent les mêmes d'un bout à l'autre."
+ },
+ {
+  "code": "58-065",
+  "a_dire": "Une seule taille de base convient : avec 1 ou 3 éléments on n'a pas de base, avec 2 on en a une, donc m = n.",
+  "legende_titre": "Une seule taille convient",
+  "lecture": [
+   "Le cadre rouge de gauche montre un seul élément (3, 1), qui ne suffit pas.",
+   "Le cadre vert du milieu montre la base (1, 0), (0, 1).",
+   "Le cadre rouge de droite montre trois éléments dont la combinaison donne (0, 0) : ce n'est pas une base.",
+   "L'accolade bleue en bas dit : même nombre, m = n."
+  ],
+  "a_voir": "Seul le cadre vert, à 2 éléments, est une base."
+ },
+ {
+  "code": "58-066",
+  "a_dire": "Toutes les bases du module des couples d'entiers ont le même nombre d'éléments : deux.",
+  "legende_titre": "Trois bases, un seul nombre",
+  "lecture": [
+   "Chaque repère montre une base : deux flèches.",
+   "Le premier repère montre (1, 0) et (0, 1), le deuxième (2, 1) et (1, 1), le troisième (1, 0) et (1, 1).",
+   "Les flèches bleues et violettes sont les deux éléments de chaque base.",
+   "Sous chaque repère, en vert : 2 éléments."
+  ],
+  "a_voir": "Les bases sont différentes, mais chacune a deux éléments."
+ },
+ {
+  "code": "58-067",
+  "a_dire": "Le rang est le nombre d'éléments d'une base, le même pour toutes ; il ne se confond pas avec le nombre d'éléments du module, qui est infini.",
+  "legende_titre": "Le rang, à côté de ses voisins",
+  "lecture": [
+   "Les points gris à gauche figurent les éléments du module : une infinité.",
+   "Le cadre bleu montre une base à 2 éléments.",
+   "Le signe ≠ sépare ces deux nombres.",
+   "Le cadre vert donne le rang : 2, le même pour toutes les bases."
+  ],
+  "a_voir": "Le rang vaut 2, alors que le module a une infinité d'éléments."
+ },
+ {
+  "code": "58-068",
+  "a_dire": "Dans ℤ², la base des sacs types et la base des lots ont chacune deux éléments, donc le rang est 2.",
+  "legende_titre": "Deux bases, deux éléments chacune",
+  "lecture": [
+   "Le cadre gris du haut est ℤ² : les couples à deux cases.",
+   "La ligne bleue montre les sacs types (1, 0) et (0, 1).",
+   "La ligne violette montre les lots (2, 1) et (1, 1).",
+   "Les deux flèches vertes mènent au cadre vert : rang 2."
+  ],
+  "a_voir": "Les deux bases ont chacune deux éléments."
+ },
+ {
+  "code": "58-069",
+  "a_dire": "La preuve écrit chaque base avec l'autre, puis substitue ; sur le cas, le lot (3, 1) ne redonne pas le sac (1, 0).",
+  "legende_titre": "Écrire chaque base avec l'autre",
+  "lecture": [
+   "Les deux cadres du haut sont les deux écritures : f avec les e (bleu), e avec les f (violet).",
+   "Le texte orange dit l'étape qui porte le poids : substituer.",
+   "Le cadre bleu pose la question sur le cas : un entier fois (3, 1) donne-t-il (1, 0) ?",
+   "Le cadre orange donne la 2e case, qui impose 0, et le cadre rouge montre que la 1re case donne 0 et non 1."
+  ],
+  "a_voir": "Le lot (3, 1) ne permet pas d'obtenir le sac (1, 0)."
+ },
+ {
+  "code": "58-070",
+  "a_dire": "On complète A par une ligne de zéros pour avoir un tableau carré ; BA = 1 est l'étape décisive, et elle contredit det(A) = 0.",
+  "legende_titre": "Compléter par des zéros",
+  "lecture": [
+   "Le tableau de gauche, en bleu, est le lot (3, 1).",
+   "La flèche orange ajoute une ligne de zéros et donne un tableau carré, avec det(A) = 0.",
+   "Le tableau vert du bas est BA = 1, de déterminant 1.",
+   "Le cadre rouge dit : impossible, 0 = 1."
+  ],
+  "a_voir": "Le tableau complété a un déterminant nul, alors que BA = 1 a un déterminant 1."
+ },
+ {
+  "code": "58-071",
+  "a_dire": "Le déterminant d'un produit est le produit des déterminants : sur le cas, 5 = 1 × 5.",
+  "legende_titre": "Déterminant d'un produit",
+  "lecture": [
+   "Le tableau bleu est B, de déterminant 1.",
+   "Le tableau violet est A, de déterminant 5.",
+   "Le tableau vert est BA, de déterminant 5.",
+   "La ligne verte du bas écrit 5 = 1 × 5."
+  ],
+  "a_voir": "Le déterminant de BA est égal au produit des déterminants de B et de A."
+ },
+ {
+  "code": "58-072",
+  "a_dire": "Une ligne de zéros donne un déterminant nul, ce qui contredit det(1) = 1 pour le tableau neutre.",
+  "legende_titre": "Une ligne de zéros contre le tableau neutre",
+  "lecture": [
+   "Le cadre bleu de gauche est BA, qui est le tableau neutre : déterminant 1.",
+   "Le cadre bleu de droite est A, qui a une ligne de zéros en orange : déterminant 0.",
+   "Le texte orange dit que det(BA) = det(B) × 0 = 0.",
+   "Le cadre rouge dit : impossible, 1 = 0."
+  ],
+  "a_voir": "La ligne de zéros de A rend det(BA) nul, ce qui est incompatible avec det(BA) = 1."
+ },
+ {
+  "code": "58-073",
+  "a_dire": "Pour certains anneaux non commutatifs, R^(1) ≅ R^(2) : le rang n'est plus fixé, alors qu'il l'est pour un anneau commutatif.",
+  "legende_titre": "Le rang n'est plus fixé",
+  "lecture": [
+   "À gauche, en bleu, l'anneau commutatif : une case et deux cases, avec ≠.",
+   "À droite, en violet, certains anneaux non commutatifs : une case et deux cases, avec ≅.",
+   "Le trait pointillé sépare les deux cas.",
+   "Les textes du bas disent : le rang est fixé, le rang n'est plus fixé."
+  ],
+  "a_voir": "Une case et deux cases peuvent se correspondre seulement dans le cas non commutatif."
+ },
+ {
+  "code": "58-074",
+  "a_dire": "Sans commutativité, la règle det(BA) = det B det A tombe : la commutativité n'est pas décorative.",
+  "legende_titre": "Avec et sans commutativité",
+  "lecture": [
+   "À gauche, en vert, les entiers : 3 × 5 = 5 × 3, donc les deux déterminants sont égaux.",
+   "À droite, en rouge, p s ≠ s p, donc les deux déterminants sont différents.",
+   "Les cadres gris du milieu et du bas comparent det(BA) et det B det A.",
+   "Les mots du bas disent : la règle tient, la règle tombe."
+  ],
+  "a_voir": "Le signe = à gauche devient ≠ à droite."
+ },
+ {
+  "code": "58-075",
+  "a_dire": "Judson définit l'espace vectoriel directement, alors que le chapitre 57 y arrive en prenant un module dont l'anneau est un corps ; les deux chemins mènent au même objet.",
+  "legende_titre": "Deux chemins vers le même objet",
+  "lecture": [
+   "À gauche, en bleu, le chemin du chapitre 57 : un module sur un anneau, puis un module sur un corps quand l’anneau est un corps.",
+   "À droite, en violet, le chemin de Judson : une définition directe, avec une liste de règles, sans parler d’anneau.",
+   "Les deux flèches vertes arrivent au même cadre vert : l’espace vectoriel."
+  ],
+  "a_voir": "Les deux chemins mènent au même objet."
+ },
+ {
+  "code": "58-076",
+  "a_dire": "Un corps est un ensemble où tout nombre non nul a un inverse ; ℚ, ℝ, ℂ et ℤ/pℤ en sont des exemples.",
+  "legende_titre": "Un corps et ses exemples",
+  "lecture": [
+   "Le cadre pointillé est le corps F.",
+   "Les quatre cadres bleus à l'intérieur sont ℚ, ℝ, ℂ et ℤ/pℤ.",
+   "Le texte noir dit que tout nombre non nul a un inverse.",
+   "Les deux cadres verts montrent 2 × ½ = 1 et 3 × ⅓ = 1."
+  ],
+  "a_voir": "Chaque exemple de corps permet de diviser par un nombre non nul."
+ },
+ {
+  "code": "58-077",
+  "a_dire": "ℤ n'est pas un corps : aucun entier multiplié par 2 ne donne 1.",
+  "legende_titre": "Chercher un inverse de 2 dans ℤ",
+  "lecture": [
+   "La droite grise est graduée de −2 à 2.",
+   "Les trois points rouges sont −1 × 2, 0 × 2 et 1 × 2, c'est-à-dire −2, 0 et 2.",
+   "Le cercle vert marque la cible : 1.",
+   "Le texte rouge dit qu'aucun entier fois 2 ne donne 1."
+  ],
+  "a_voir": "Aucun point rouge ne tombe sur la cible verte."
+ },
+ {
+  "code": "58-078",
+  "a_dire": "Un espace vectoriel est un module dont l'anneau est un corps : il a une addition de flèches et un produit par un scalaire du corps F.",
+  "legende_titre": "Deux opérations sur les flèches",
+  "lecture": [
+   "À gauche, les flèches u et v (bleu) s'additionnent en u + v (vert).",
+   "À droite, le nombre ½ de F multiplie la flèche v (bleu).",
+   "La flèche orange est ½ v, le résultat.",
+   "Le trait pointillé sépare l'addition du produit par un scalaire."
+  ],
+  "a_voir": "Le résultat est une flèche dans les deux cas."
+ },
+ {
+  "code": "58-079",
+  "a_dire": "Le produit αv combine un scalaire et un vecteur et donne un vecteur ; ce n'est ni le produit de deux scalaires, ni le produit de deux vecteurs.",
+  "legende_titre": "Un nombre multiplie une flèche",
+  "lecture": [
+   "La flèche bleue est v = (2, 1).",
+   "L'arc orange est la multiplication par 3.",
+   "La flèche verte est 3v = (6, 3), une flèche de V.",
+   "Le cadre orange rappelle que le scalaire 3 est un nombre de F."
+  ],
+  "a_voir": "Le scalaire est un nombre et le résultat est une flèche."
+ },
+ {
+  "code": "58-080",
+  "a_dire": "Multiplier par β puis par α revient à multiplier d'un coup par αβ : sur le cas, × 3 puis × 2 donne comme × 6.",
+  "legende_titre": "Deux multiplications, ou une seule",
+  "lecture": [
+   "Le cadre bleu est le vecteur de départ (1, 2).",
+   "Le cadre gris du haut est (3, 6), après × 3.",
+   "La flèche du bas est × 6 d'un coup.",
+   "Le cadre vert est (6, 12), atteint par les deux chemins."
+  ],
+  "a_voir": "Les deux chemins arrivent au même vecteur (6, 12)."
+ },
+ {
+  "code": "58-081",
+  "a_dire": "La règle (α + β)v = αv + βv se vérifie avec le produit usuel, mais un produit inventé peut la violer.",
+  "legende_titre": "Une règle qu'un produit peut violer",
+  "lecture": [
+   "Les titres du haut sont (α + β)v en bleu et αv + βv en violet.",
+   "La rangée du haut, avec le produit usuel, donne (2, 0) des deux côtés : signe vert =.",
+   "La rangée du bas, avec le produit inventé α⊛v = α²v, donne (4, 0) à gauche et (2, 0) à droite.",
+   "Le signe rouge ≠ marque l'échec de la règle."
+  ],
+  "a_voir": "Avec le produit inventé, les deux côtés donnent (4, 0) et (2, 0)."
+ },
+ {
+  "code": "58-082",
+  "a_dire": "La règle α(u + v) = αu + αv se vérifie case par case : additionner puis multiplier, ou multiplier puis additionner, donne le même vecteur.",
+  "legende_titre": "Additionner d'abord, ou multiplier d'abord",
+  "lecture": [
+   "Le cadre bleu contient u = (1, 2) et v = (3, 1).",
+   "Le chemin du haut additionne (4, 3), puis multiplie par 2.",
+   "Le chemin du bas multiplie chacun par 2, ce qui donne (2, 4) et (6, 2), puis additionne.",
+   "Le cadre vert est (8, 6), atteint par les deux chemins."
+  ],
+  "a_voir": "Les deux chemins arrivent à (8, 6)."
+ },
+ {
+  "code": "58-083",
+  "a_dire": "La règle 1v = v dit que le scalaire 1 ne change rien ; un produit inventé qui donne toujours 0 la viole.",
+  "legende_titre": "Seul le scalaire 1 ne change rien",
+  "lecture": [
+   "Le cadre bleu est le vecteur v = (4, 7).",
+   "La flèche verte mène à × 1 : (4, 7), inchangé.",
+   "La flèche grise mène à × 2 : (8, 14).",
+   "La flèche rouge mène au produit inventé : 1 ⊛ v = (0, 0)."
+  ],
+  "a_voir": "Seul × 1 laisse (4, 7) inchangé, et le produit inventé en rouge l'écrase sur zéro."
+ },
+ {
+  "code": "58-084",
+  "a_dire": "Les quatre règles de l'espace vectoriel sont celles du module avec R = F ; ce qui s'ajoute vient du corps : on y divise.",
+  "legende_titre": "Mêmes quatre règles, anneau devenu corps",
+  "lecture": [
+   "Le cadre bleu est un module sur l'anneau R, et le cadre violet un espace vectoriel sur le corps F.",
+   "Le texte orange R = F relie les deux.",
+   "Le grand cadre gris contient les quatre règles communes.",
+   "Le cadre vert dit ce qui s'ajoute : on divise par un scalaire non nul."
+  ],
+  "a_voir": "Les quatre règles sont les mêmes ; seule la division s'ajoute."
+ },
+ {
+  "code": "58-085",
+  "a_dire": "Les vecteurs sont les éléments de V, qu'on multiplie ; les scalaires sont les éléments de F, par lesquels on multiplie.",
+  "legende_titre": "Ce qu'on multiplie et ce qui multiplie",
+  "lecture": [
+   "À gauche, la flèche bleue (2, 1) est un vecteur, élément de V.",
+   "Le cercle orange 3 est un scalaire, élément de F.",
+   "Le signe × les relie.",
+   "Le texte du bas dit : 3 multiplie la flèche (2, 1)."
+  ],
+  "a_voir": "La flèche est ce qu'on multiplie, le nombre est ce qui multiplie."
+ },
+ {
+  "code": "58-086",
+  "a_dire": "Une lettre grecque désigne un scalaire et une lettre latine désigne un vecteur, ce qui montre la nature de l'objet avant la formule.",
+  "legende_titre": "L'alphabet dit la nature de l'objet",
+  "lecture": [
+   "Les quatre cadres orange portent α, β, γ, δ : des scalaires.",
+   "Les trois cadres bleus portent u, v, w : des vecteurs.",
+   "La ligne αu se lit scalaire × vecteur.",
+   "La ligne αβ se lit deux scalaires."
+  ],
+  "a_voir": "La couleur et l'alphabet distinguent les scalaires des vecteurs."
+ },
+ {
+  "code": "58-087",
+  "a_dire": "Il y a deux zéros : le 0 scalaire (un nombre, une case) et le 0 en gras vecteur nul (une liste de cases) ; 0v = 0 en gras.",
+  "legende_titre": "Un zéro nombre, un zéro vecteur",
+  "lecture": [
+   "Le cadre orange est le scalaire nul : 1 case.",
+   "Les deux cadres bleus sont le vecteur (4, 7) : 2 cases.",
+   "Les deux cadres verts sont le vecteur nul : 2 cases.",
+   "La formule du haut est 0v = 0 en gras."
+  ],
+  "a_voir": "Le zéro de gauche a une case, le zéro de droite en a deux."
+ },
+ {
+  "code": "58-088",
+  "a_dire": "Le signe F désigne un corps quelconque, qui peut être remplacé par les fractions, les réels ou les complexes, et où l'on divise par un nombre non nul.",
+  "legende_titre": "Une lettre pour plusieurs corps",
+  "lecture": [
+   "Les trois cadres bleus sont ℚ, ℝ et ℂ.",
+   "Les flèches bleues les relient au cadre vert F.",
+   "Le cadre vert dit que F est un corps.",
+   "Le texte vert dit que la division par un nombre non nul est toujours possible."
+  ],
+  "a_voir": "Trois ensembles différents sont désignés par la même lettre F."
+ },
+ {
+  "code": "58-089",
+  "a_dire": "Les lettres α et β permettent d'énoncer une règle pour deux scalaires quelconques, égaux ou non, au lieu d'un seul cas comme 2 et 3.",
+  "legende_titre": "Deux lettres au lieu d'un cas",
+  "lecture": [
+   "Les cadres gris du haut sont le cas précis : 2 et 3.",
+   "Les flèches orange les remplacent par les cadres orange α et β.",
+   "À droite, (2 × 3) v en gris est un cas, et (αβ) v en orange remplace une infinité de cas.",
+   "Le texte du bas dit : α et β égaux ou non."
+  ],
+  "a_voir": "Deux lettres remplacent une infinité de cas."
+ },
+ {
+  "code": "58-090",
+  "a_dire": "Le vecteur nul est l'élément qui ne change rien quand on l'ajoute : v + 0 = v.",
+  "legende_titre": "Le vecteur qui ne change rien",
+  "lecture": [
+   "Le point orange du bas est l'origine : le vecteur nul, la flèche nulle (0, 0).",
+   "La flèche bleue est v.",
+   "Le petit disque orange au bout de v marque l'ajout du vecteur nul.",
+   "Le cercle vert autour de ce disque montre qu'on reste au même endroit : v + 0 = v."
+  ],
+  "a_voir": "Ajouter le vecteur nul laisse la flèche v inchangée."
+ }
+]

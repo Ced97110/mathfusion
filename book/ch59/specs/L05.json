@@ -1,0 +1,374 @@
+[
+ {
+  "code": "59-129",
+  "a_dire": "Le théorème de structure contient le chapitre 58 : un module libre est le cas où il n'y a aucune torsion.",
+  "legende_titre": "Le chapitre 58 comme cas du théorème",
+  "lecture": [
+   "Les trois cases bleues sont les trois vecteurs de la base : (1, 0, 0), (0, 1, 0) et (0, 0, 1).",
+   "Au-dessus de chaque case, tu lis « copie de ℤ » : chaque vecteur donne une copie des entiers.",
+   "La ligne bleue du bas écrit la somme des trois copies.",
+   "Le cadre violet en pointillés est le théorème de structure : le module libre est le cas où il n'y a aucune torsion."
+  ],
+  "a_voir": "Le module libre est une somme de copies de ℤ, et c'est le cas du théorème sans torsion."
+ },
+ {
+  "code": "59-130",
+  "a_dire": "Si A est carrée et inversible, tous les d_i valent 1 et le module M ne contient que 0.",
+  "legende_titre": "Une matrice inversible ne laisse rien",
+  "lecture": [
+   "Le tableau bleu de gauche est A, de lignes (2, 1) et (1, 1) ; son déterminant est 2×1 − 1×1 = 1.",
+   "La flèche orange mène à l'identité verte, de lignes (1, 0) et (0, 1).",
+   "Dans l'identité, d₁ = d₂ = 1 ; chaque relation 1 × yᵢ = 0 donne yᵢ = 0.",
+   "Le cadre vert du bas dit le résultat : M = {0}."
+  ],
+  "a_voir": "Des d_i égaux à 1 rendent chaque générateur nul, donc M est réduit à 0."
+ },
+ {
+  "code": "59-131",
+  "a_dire": "Trois lectures du même fait : les générateurs engendrent tout le quadrillage, le parallélogramme a une aire de 1 et le quotient n'a qu'un élément.",
+  "legende_titre": "Trois lectures d'un même résultat",
+  "lecture": [
+   "Les deux flèches bleues partent de l'origine vers (2, 1) et (1, 1).",
+   "Le parallélogramme bleu clair est formé par ces deux points ; son aire est 2×1 − 1×1 = 1.",
+   "Les points du quadrillage sont en gris ; le parallélogramme ne contient aucun autre point que ses quatre coins.",
+   "Les textes verts disent l'aire 1 et le quotient à un seul élément."
+  ],
+  "a_voir": "Un parallélogramme d'aire 1 correspond à un quotient d'un seul élément."
+ },
+ {
+  "code": "59-132",
+  "a_dire": "Si le déterminant est nul, le quotient n'a pas |δ| éléments : il est infini.",
+  "legende_titre": "Que devient la formule si δ vaut 0 ?",
+  "lecture": [
+   "Les points bleus sont (0, 0), (1, 2) et (2, 4), des multiples entiers de (1, 2) : ils forment le sous-module.",
+   "Les points violets (0, 1) et (0, 2) sont d'autres points du quadrillage ; la flèche violette montre que la colonne continue.",
+   "Le calcul à droite indique le déterminant 2×2 − 4×1 = 0.",
+   "Les points (0, 0), (0, 1), (0, 2), et les suivants, sont dans des classes toutes différentes : avec un déterminant 0, le quotient est infini."
+  ],
+  "a_voir": "Avec un déterminant nul, il y a une infinité de classes."
+ },
+ {
+  "code": "59-133",
+  "a_dire": "Pour diag(2, 1), les facteurs invariants sont 1 et 2, et le quotient a 2 classes : M ≅ ℤ/2.",
+  "legende_titre": "Le quotient de diag(2, 1)",
+  "lecture": [
+   "Chaque rond est un point du quadrillage ; les nombres sous les colonnes sont les premières coordonnées.",
+   "Les ronds bleus ont une première coordonnée paire : ils forment la classe 0.",
+   "Les ronds orange ont une première coordonnée impaire : ils forment la classe 1.",
+   "Le texte noir donne Δ₁ = 1 et Δ₂ = 2 ; le texte vert donne M ≅ ℤ/2, soit 2 classes."
+  ],
+  "a_voir": "Deux points sont dans la même classe quand leurs premières coordonnées ont la même parité."
+ },
+ {
+  "code": "59-134",
+  "a_dire": "diag(6, 4) n'est pas en forme normale ; la formule des mineurs donne d₁ = 2 et d₂ = 12, donc M ≅ ℤ/2 ⊕ ℤ/12.",
+  "legende_titre": "Le calcul pour diag(6, 4)",
+  "lecture": [
+   "La case grise du haut est le tableau diag(6, 4) ; la chaîne ne tient pas, car 6 ne divise pas 4.",
+   "Les deux cases bleues donnent Δ₁ = pgcd(6, 0, 0, 4) = 2 et Δ₂ = 6×4 = 24.",
+   "Les deux cases vertes en dessous donnent d₁ = 2 et d₂ = 24 ÷ 2 = 12.",
+   "La case verte du bas écrit le module ℤ/2 ⊕ ℤ/12 et vérifie que 2 × 12 = 24."
+  ],
+  "a_voir": "On passe de Δ₁ et Δ₂ à d₁ et d₂, et le produit 2 × 12 vaut 24."
+ },
+ {
+  "code": "59-135",
+  "a_dire": "ℤ/6 ⊕ ℤ/4 et ℤ/2 ⊕ ℤ/12 sont le même module ; le théorème choisit la seconde écriture, où chaque facteur divise le suivant.",
+  "legende_titre": "Deux écritures du même module",
+  "lecture": [
+   "Les deux horloges violettes, à 6 et à 4 repères, forment la première écriture.",
+   "Les deux horloges bleues, à 2 et à 12 repères, forment la seconde écriture.",
+   "Le signe ≅ au milieu dit que les deux écritures décrivent le même module : 24 éléments de chaque côté.",
+   "Le texte rouge dit que 6 ne divise pas 4 ; le texte vert dit que 2 divise 12, c'est l'écriture choisie."
+  ],
+  "a_voir": "Le théorème choisit l'écriture où chaque nombre divise le suivant."
+ },
+ {
+  "code": "59-136",
+  "a_dire": "Un générateur peut être superflu : f₃ = f₁ + f₂ n'atteint rien de plus que f₁ et f₂.",
+  "legende_titre": "Trois générateurs dont un est superflu",
+  "lecture": [
+   "Les deux flèches bleues partent de l'origine vers f₁ = (2, 4) et f₂ = (4, 2).",
+   "Le parallélogramme bleu clair est construit sur ces deux flèches.",
+   "La flèche verte va vers f₃ = (6, 6), le quatrième coin du parallélogramme.",
+   "Le texte vert du haut écrit la relation f₃ = f₁ + f₂."
+  ],
+  "a_voir": "Le troisième point est la somme des deux premiers."
+ },
+ {
+  "code": "59-137",
+  "a_dire": "On annule la ligne superflue, puis on réduit le tableau pas à pas jusqu'à diag(2, 6) avec une ligne nulle.",
+  "legende_titre": "Réduire le tableau 3 × 2",
+  "lecture": [
+   "Chaque case est le tableau à une étape, écrit ligne par ligne ; la première est (2, 4), (4, 2), (6, 6).",
+   "La flèche orange et le texte orange à droite disent l'opération faite entre deux étapes.",
+   "La première opération rend la troisième ligne nulle ; les trois suivantes amènent (2, 0), (0, 6).",
+   "La case verte est le résultat : diag(2, 6) et une ligne nulle."
+  ],
+  "a_voir": "Quatre opérations amènent le tableau à diag(2, 6) avec une ligne nulle."
+ },
+ {
+  "code": "59-138",
+  "a_dire": "On part de 3 générateurs mais K a une base de 2 éléments, et ℤ²/K ≅ ℤ/2 ⊕ ℤ/6.",
+  "legende_titre": "Trois générateurs, une base de deux",
+  "lecture": [
+   "Les trois cases du haut sont f₁ = (2, 4), f₂ = (4, 2) et f₃ = (6, 6) ; l'accolade grise les compte : 3 générateurs.",
+   "L'accolade verte entoure f₁ et f₂ : c'est la base, de 2 éléments ; f₃ en gris est superflu.",
+   "La case bleue calcule le déterminant de f₁ et f₂ : 2×2 − 4×4 = −12.",
+   "La case verte donne le quotient ℤ²/K ≅ ℤ/2 ⊕ ℤ/6, de 12 éléments."
+  ],
+  "a_voir": "Le nombre de générateurs de départ n'est pas le nombre d'éléments de la base."
+ },
+ {
+  "code": "59-139",
+  "a_dire": "Que l'on parte de 3, de 4 ou de 100 points du quadrillage, la base du sous-module a au plus 2 éléments : m ≤ n.",
+  "legende_titre": "La borne m ≤ n",
+  "lecture": [
+   "Chaque ligne orange donne un nombre de points de départ : 3, 4 puis 100.",
+   "La flèche mène à la base du sous-module : les deux cases bleues b₁ et b₂.",
+   "Le texte vert de droite répète sur chaque ligne : m = 2 est plus petit ou égal à n = 2.",
+   "Le texte gris du bas rappelle que le quadrillage ℤ² a n = 2 coordonnées."
+  ],
+  "a_voir": "Le nombre de points de départ change, la base garde deux éléments."
+ },
+ {
+  "code": "59-140",
+  "a_dire": "Pour décider si deux matrices sont équivalentes, on compare leurs listes de facteurs invariants.",
+  "legende_titre": "Comparer les facteurs invariants",
+  "lecture": [
+   "La case bleue est le tableau de lignes (4, 6) et (6, 4) ; ses facteurs invariants sont 2 et 10.",
+   "La case violette est le tableau de lignes (1, 0) et (0, 20) ; ses facteurs invariants sont 1 et 20.",
+   "Le signe rouge ≠ dit que les deux listes sont différentes, donc les tableaux ne sont pas équivalents.",
+   "Le texte noir du bas rappelle que les deux déterminants valent 20 en valeur absolue."
+  ],
+  "a_voir": "Deux tableaux de même déterminant peuvent avoir des listes différentes."
+ },
+ {
+  "code": "59-141",
+  "a_dire": "Pour trouver une base, on met les générateurs en lignes, on prend la forme normale et on garde les lignes non nulles.",
+  "legende_titre": "Trouver une base à partir des générateurs",
+  "lecture": [
+   "La colonne bleue contient les trois générateurs, écrits en lignes : (2, 4), (4, 2) et (6, 6).",
+   "La colonne orange est la forme normale : les lignes (2, 0) et (0, 6), puis une ligne nulle (0, 0) en gris.",
+   "Le cadre vert entoure les lignes non nulles : elles forment la base de 2 éléments.",
+   "La ligne nulle est superflue ; la raison est : (6, 6) = (2, 4) + (4, 2)."
+  ],
+  "a_voir": "Les lignes non nulles de la forme normale forment la base ; la ligne nulle est un générateur superflu."
+ },
+ {
+  "code": "59-142",
+  "a_dire": "Chaque facteur invariant se lit : 1 ne donne rien, un nombre plus grand que 1 donne une horloge, 0 donne une copie de ℤ.",
+  "legende_titre": "Lire le quotient facteur par facteur",
+  "lecture": [
+   "Chaque case bleue de gauche est un facteur invariant : d₁ = 1, d₂ = 3, d₃ = 6 et d₄ = 0.",
+   "La flèche orange mène à ce que ce facteur donne.",
+   "Le facteur 1 donne la case grise : aucune trace. Les facteurs 3 et 6 donnent les cases vertes : une horloge à 3 heures et une à 6 heures.",
+   "Le facteur 0 donne la case violette : une copie de ℤ. Le texte vert du bas additionne les morceaux."
+  ],
+  "a_voir": "Il y a autant de lectures que de facteurs, donc la description est finie."
+ },
+ {
+  "code": "59-143",
+  "a_dire": "Deux quotients sont isomorphes quand ils ont les mêmes facteurs invariants.",
+  "legende_titre": "Reconnaître deux quotients isomorphes",
+  "lecture": [
+   "Les deux cases violettes du haut sont deux écritures : ℤ/6 ⊕ ℤ/4 à gauche, ℤ/2 ⊕ ℤ/12 à droite.",
+   "Chaque flèche orange mène à la liste des facteurs invariants de l'écriture.",
+   "Les deux cases bleues portent la même liste : 2, 12 ; le signe vert = les relie.",
+   "La case verte du bas conclut : mêmes listes, donc quotients isomorphes."
+  ],
+  "a_voir": "On compare les listes, sans chercher de correspondance point par point."
+ },
+ {
+  "code": "59-144",
+  "a_dire": "Au chapitre 60, le théorème de structure est appliqué à deux sortes d'objets : les groupes abéliens finis et les transformations linéaires.",
+  "legende_titre": "Le théorème appliqué deux fois",
+  "lecture": [
+   "La case bleue du haut est le théorème de structure ; deux flèches orange en partent.",
+   "À gauche, en violet, l'horloge à 20 repères représente un groupe abélien fini.",
+   "À droite, le repère montre un vecteur bleu et son image orange après un quart de tour : une transformation linéaire.",
+   "Les deux objets sont très différents, mais le même théorème s'applique."
+  ],
+  "a_voir": "Un seul théorème sert pour deux sortes d'objets."
+ },
+ {
+  "code": "59-145",
+  "a_dire": "Un groupe abélien de type fini est une somme d'horloges ℤ/dᵢ et de t copies de ℤ.",
+  "legende_titre": "La forme d'un groupe abélien de type fini",
+  "lecture": [
+   "Les cases bleues sont les horloges ℤ/d₁ et ℤ/dₛ ; les points ⋯ remplacent celles du milieu.",
+   "La case violette ℤᵗ est formée de t copies de ℤ.",
+   "L'accolade bleue réunit les horloges : c'est la torsion ; l'accolade violette compte les t copies.",
+   "Le texte gris du bas donne un exemple : ℤ/12 est engendré par 1."
+  ],
+  "a_voir": "Le groupe s'écrit comme une somme d'horloges et de copies de ℤ."
+ },
+ {
+  "code": "59-146",
+  "a_dire": "Les groupes abéliens à 20 éléments sont ℤ/20 et ℤ/2 ⊕ ℤ/10, et rien d'autre.",
+  "legende_titre": "Les groupes à 20 éléments",
+  "lecture": [
+   "Chaque ligne est une liste de deux nombres de produit 20.",
+   "Les lignes vertes (1 et 20, puis 2 et 10) conviennent, car le premier divise le second ; la flèche orange donne le groupe.",
+   "Les lignes rouges (4 et 5, 5 et 4, 10 et 2) ne conviennent pas : le premier ne divise pas le second.",
+   "Le texte vert du bas dit qu'il reste deux candidats."
+  ],
+  "a_voir": "Seules deux listes respectent la chaîne de divisibilité."
+ },
+ {
+  "code": "59-147",
+  "a_dire": "Un module se sépare en torsion et partie libre, puis la torsion se coupe selon les puissances de nombres premiers.",
+  "legende_titre": "Torsion, partie libre et nombres premiers",
+  "lecture": [
+   "La case grise du haut est le module ℤ/12 ⊕ ℤ ; deux flèches orange en partent.",
+   "La case bleue est la torsion, ℤ/12 ; la case violette est la partie libre, ℤ.",
+   "Deux flèches coupent la torsion en deux cases vertes : ℤ/4 et ℤ/3.",
+   "Le texte vert écrit 12 = 4 × 3 ; le texte gris ajoute que 4 et 3 n'ont aucun diviseur commun."
+  ],
+  "a_voir": "L'horloge à 12 heures se coupe en horloges à 4 et à 3 heures."
+ },
+ {
+  "code": "59-148",
+  "a_dire": "Un espace V muni d'une transformation T devient un module sur les polynômes, en faisant agir x comme T.",
+  "legende_titre": "Le plan et le quart de tour",
+  "lecture": [
+   "La flèche bleue est un vecteur v du plan ; la flèche orange est T v, son image par le quart de tour.",
+   "La flèche violette est T² v : un second quart de tour donne un demi-tour, donc −v.",
+   "Les arcs orange montrent chaque quart de tour.",
+   "Le texte vert du bas calcule (x² + 1) v = T²v + v = 0 : ce polynôme envoie v sur zéro."
+  ],
+  "a_voir": "Le polynôme x² + 1 agit comme T² + 1 et envoie chaque vecteur sur 0."
+ },
+ {
+  "code": "59-149",
+  "a_dire": "Les facteurs invariants deviennent des polynômes qui se divisent à la suite : d₁(x) divise d₂(x).",
+  "legende_titre": "Des chaînes de nombres aux chaînes de polynômes",
+  "lecture": [
+   "En haut, les cases grises montrent la chaîne des entiers : 2 divise 10, car 10 = 2 × 5.",
+   "En bas, la case bleue de gauche est le polynôme x − 1.",
+   "La flèche orange multiplie par (x + 2) et mène à la case de droite, (x − 1)(x + 2).",
+   "Le premier polynôme divise le second, comme 2 divise 10."
+  ],
+  "a_voir": "La divisibilité garde la même idée avec des polynômes."
+ },
+ {
+  "code": "59-150",
+  "a_dire": "Les diviseurs élémentaires sont les puissances d'irréductibles qui composent un facteur invariant, comme 4 et 3 composent 12.",
+  "legende_titre": "Couper un facteur invariant",
+  "lecture": [
+   "En haut, la case grise est le facteur invariant 12 ; deux flèches orange mènent à 4 = 2² et à 3.",
+   "Ces deux cases bleues sont des puissances de nombres premiers.",
+   "En bas, la case grise est le facteur invariant (x − 1)(x + 2) ; deux flèches mènent à x − 1 et à x + 2.",
+   "Ces deux cases violettes sont des puissances de polynômes irréductibles : ce sont les diviseurs élémentaires."
+  ],
+  "a_voir": "Le polynôme irréductible joue le rôle du nombre premier."
+ },
+ {
+  "code": "59-151",
+  "a_dire": "Classer les matrices carrées à similitude près est le même calcul que dans ce chapitre, avec des polynômes à la place des entiers.",
+  "legende_titre": "Même méthode avec d'autres nombres",
+  "lecture": [
+   "La case grise de gauche est le cas des entiers ℤ, avec la division d'entiers.",
+   "La case bleue de droite est le cas des polynômes F[x], avec la division de polynômes.",
+   "Les deux flèches orange mènent à la même case : la méthode de la forme normale.",
+   "La case verte du bas est ce qu'on en tire : la classification des matrices carrées à similitude près."
+  ],
+  "a_voir": "Seul l'anneau change ; la méthode reste la même."
+ },
+ {
+  "code": "59-152",
+  "a_dire": "La formule des mineurs, ici un calcul de pgcd, réapparaît au chapitre 76 où le déterminant est reconstruit avec les algèbres extérieures.",
+  "legende_titre": "Un calcul qui revient plus loin",
+  "lecture": [
+   "La case bleue du haut est le tableau de lignes (4, 6) et (6, 4).",
+   "La case bleue de gauche prend le pgcd des coefficients : Δ₁ = pgcd(4, 6, 6, 4) = 2.",
+   "La case bleue de droite prend le déterminant : Δ₂ = 4×4 − 6×6.",
+   "La case violette du bas dit que ces pgcd reviennent au chapitre 76, avec les algèbres extérieures."
+  ],
+  "a_voir": "La formule n'est pas un simple contrôle : elle revient dans une construction plus large."
+ },
+ {
+  "code": "59-153",
+  "a_dire": "Les matrices inversibles à coefficients dans un anneau forment une famille étudiée pour elle-même au chapitre 73, engendrée par les opérations élémentaires.",
+  "legende_titre": "Les matrices inversibles comme famille",
+  "lecture": [
+   "Le grand cadre bleu en pointillés est la famille des matrices inversibles, étudiée au chapitre 73.",
+   "Les trois cases orange sont les trois types d'opérations élémentaires : ajouter, multiplier, échanger.",
+   "Les flèches orange mènent à la case verte : le tableau de lignes (2, 1) et (1, 1), de déterminant 1.",
+   "Ce tableau inversible se construit à partir des opérations élémentaires."
+  ],
+  "a_voir": "Les opérations élémentaires sont les éléments de départ de cette famille."
+ },
+ {
+  "code": "59-154",
+  "a_dire": "La division avec reste sert trois fois : au chapitre 5 pour un PGCD, au chapitre 56 pour définir les anneaux euclidiens, ici pour la forme normale.",
+  "legende_titre": "Une même division, trois usages",
+  "lecture": [
+   "La case grise à gauche contient les deux divisions : 18 = 1 × 12 + 6 et 12 = 2 × 6 + 0.",
+   "Le dernier reste non nul est 6 : c'est le PGCD de 18 et 12.",
+   "Trois flèches orange partent de cette case vers trois cases bleues.",
+   "Ces cases sont les chapitres 5 (PGCD = 6), 56 (anneaux euclidiens) et 59 (forme normale)."
+  ],
+  "a_voir": "Une seule opération revient dans trois endroits du livre."
+ },
+ {
+  "code": "59-155",
+  "a_dire": "Sans anneau principal, la preuve s'arrête : dans ℤ[x], aucun élément seul n'engendre l'ensemble engendré par 2 et x.",
+  "legende_titre": "Pourquoi il faut un anneau principal",
+  "lecture": [
+   "À gauche, en vert, ℤ ou F[x] est un anneau principal : un seul générateur suffit et la preuve marche.",
+   "À droite, ℤ[x] n'est pas principal : les cases violettes sont les deux éléments 2 et x.",
+   "Les flèches orange mènent à la case rouge : aucun élément seul ne les engendre.",
+   "Le chapitre s'effondre à ce point, car la preuve a besoin d'un seul générateur."
+  ],
+  "a_voir": "L'hypothèse « principal » est le point d'appui de la preuve."
+ },
+ {
+  "code": "59-156",
+  "a_dire": "Deux matrices de même déterminant 20 peuvent avoir des facteurs invariants (1, 20) ou (2, 10), donc des quotients différents.",
+  "legende_titre": "Même déterminant, quotients différents",
+  "lecture": [
+   "La colonne bleue suit le tableau diag(1, 20) : son déterminant, ses facteurs invariants (1, 20), puis le quotient ℤ/20.",
+   "La colonne violette suit le tableau diag(2, 10) : son déterminant, ses facteurs (2, 10), puis le quotient ℤ/2 ⊕ ℤ/10.",
+   "Le signe vert = relie les deux déterminants, égaux à 20.",
+   "Le signe rouge ≠ relie les deux quotients, qui ne sont pas isomorphes."
+  ],
+  "a_voir": "Le déterminant est le même, mais les listes et les quotients diffèrent."
+ },
+ {
+  "code": "59-157",
+  "a_dire": "Le déterminant donne la taille du quotient mais pas sa structure ; il faut toute la liste des facteurs invariants.",
+  "legende_titre": "Un nombre ne résume pas un tableau",
+  "lecture": [
+   "La case grise du haut est le déterminant 20 : le quotient a 20 éléments.",
+   "Deux flèches orange partent vers deux structures possibles, ℤ/20 en bleu et ℤ/2 ⊕ ℤ/10 en violet.",
+   "Sous chaque case, la liste des facteurs invariants : (1, 20) à gauche, (2, 10) à droite.",
+   "Le signe rouge ≠ dit que ces deux structures sont différentes malgré la même taille."
+  ],
+  "a_voir": "Un invariant complet est une liste de nombres, pas un seul nombre."
+ },
+ {
+  "code": "59-158",
+  "a_dire": "Sur un corps comme les réels, un pivot non nul se ramène à 1 ; les facteurs invariants valent 1 ou 0 et deux matrices de même rang sont équivalentes.",
+  "legende_titre": "Sur les réels, tout pivot non nul devient 1",
+  "lecture": [
+   "La case bleue est le tableau de lignes (2, 0) et (0, 1).",
+   "La flèche orange multiplie la ligne 1 par ½ et mène à la case verte : l'identité.",
+   "La case verte dit que cette multiplication est permise sur ℝ ; la case rouge dit que ½ est interdit sur ℤ.",
+   "Le cadre du bas conclut : les facteurs invariants valent 1 ou 0, seul le rang compte, et deux matrices de même rang sont équivalentes."
+  ],
+  "a_voir": "Sur un corps, la multiplication par ½ est permise : tout pivot non nul devient 1, et seul le rang reste."
+ },
+ {
+  "code": "59-159",
+  "a_dire": "Sur un corps, les facteurs invariants valent 1 ou 0 : il ne reste qu'un invariant, le rang, c'est-à-dire le nombre de 1.",
+  "legende_titre": "Le seul invariant sur un corps",
+  "lecture": [
+   "Les cases bleues sont deux tableaux : diag(5, 3) en haut, diag(5, 0) en bas.",
+   "Chaque flèche orange mène à la forme obtenue sur ℝ : diag(1, 1) et diag(1, 0), en vert.",
+   "Les deux listes ne diffèrent que par le nombre de 1 : rang 2 pour la première, rang 1 pour la seconde.",
+   "Le texte vert du bas nomme l'invariant qui reste : le rang."
+  ],
+  "a_voir": "Le nombre de 1 sur la diagonale, c'est le rang."
+ }
+]

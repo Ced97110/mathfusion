@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+x0, x1 = 10, 70
+f1 = lambda v: x0 + v / 360 * (x1 - x0)
+f2 = lambda v: x0 + v / 180 * (x1 - x0)
+ax.add_patch(Rectangle((f1(270), 24), f1(360) - f1(270), 31, fc=FILL['varie'], ec='none', zorder=0.5))
+numberline(ax, x0, x1, 46, 0, 360, step=90)
+numberline(ax, x0, x1, 32, 0, 180, step=45, every=2)
+line(ax, [(f1(270), 46), (f1(360), 46)], 'varie', lw=3)
+line(ax, [(f2(135), 32), (f2(180), 32)], 'varie', lw=3)
+ax.add_patch(Circle((f1(300), 46), 1.2, fc=COL['sujet'], ec='none', zorder=4))
+ax.add_patch(Circle((f2(150), 32), 1.2, fc=COL['sujet'], ec='none', zorder=4))
+text(ax, f1(315), 51.5, '$\\theta$ = 300°', 'sujet', 's')
+text(ax, f1(315), 37.5, '$\\theta/2$ = 150°', 'sujet', 's')
+text(ax, f1(315), 60, '270° à 360°', 'varie', 's')
+box(ax, 6, 4, 36, 9, 'sujet', label='$\\cos(\\theta/2)$ < 0', size='s')
+box(ax, 46, 4, 36, 9, 'sujet', label='$\\sin(\\theta/2)$ > 0', size='s')
+save(fig, '34-105')

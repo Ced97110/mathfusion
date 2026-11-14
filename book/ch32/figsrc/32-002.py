@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+f = numberline(ax, 6, 76, 22, 0, 24, step=3, arrow_right=True)
+disc(ax, f(0), 22, 1.8, 'fixe')
+disc(ax, f(3), 22, 1.8, 'varie')
+disc(ax, f(15), 22, 1.8, 'varie')
+text(ax, f(0) + 3, 30, r'$t=0$ minuit', 'fixe', 's')
+text(ax, f(3) + 1, 36, r'$t=3$', 'varie', 's')
+text(ax, f(15), 30, r'$t=15$', 'varie', 's')
+arrow(ax, (f(3) + 1, 33), (f(3), 25), 'varie')
+arrow(ax, (f(15), 27.5), (f(15), 25), 'varie')
+text(ax, 44, 8, 'heures écoulées depuis minuit', 'encre', 's')
+save(fig, '32-002')

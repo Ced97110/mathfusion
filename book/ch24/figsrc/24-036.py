@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+y = 52
+f = numberline(ax, 12, 72, y, 0.4, 0.6, step=0.05, every=2)
+fp = f(9 / 17)
+box(ax, fp - (fp - f(0.5)) / 2, y - 1.2, fp - f(0.5), 7, 'fixe')
+disc(ax, fp, y, 1.2, 'sujet')
+text(ax, fp, y + 11, r'$9/17\ \approx\ 0{,}53$', 'sujet', 's')
+text(ax, fp - 6, y + 6, 'trait du crayon', 'fixe', 's', ha='right')
+brace(ax, f(0.5), fp, y - 7, 'varie', label='écart ≈ 0,3 mm')
+text(ax, 44, 78, r'$(9/17,\ -5/17)$', 'sujet', 'l')
+box(ax, 4, 6, 34, 10, 'fixe', label='dessin : approché')
+box(ax, 50, 6, 34, 10, 'resultat', label='calcul : exact')
+arrow(ax, (38, 11), (50, 11), 'varie')
+save(fig, '24-036')

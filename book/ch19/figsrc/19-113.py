@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def plane(ax, ox, oy, ux, uy, x0, x1, y0, y1):
+    arrow(ax, (ox + x0 * ux, oy), (ox + x1 * ux + 3, oy), "fixe", lw=0.8)
+    arrow(ax, (ox, oy + y0 * uy), (ox, oy + y1 * uy + 3), "fixe", lw=0.8)
+    return lambda x, y: (ox + x * ux, oy + y * uy)
+fig, ax = canvas(68); P = plane(ax, 44, 34, 8, 8, -5, 4.4, -3.6, 3.6)
+line(ax, [P(-2.1, -3.2), P(1.1, 3.2)], 'sujet', lw=1.6)
+line(ax, [P(-3, 1.5), P(3, 1.5)], 'resultat', lw=1.6)
+line(ax, [P(-1.7, 0.2), P(1.7, -3.2)], 'varie', lw=1.6)
+line(ax, [P(2.6, -3.2), P(2.6, 3.2)], 'limite', lw=1.6)
+text(ax, P(1.0, 3.3)[0], P(1, 3.3)[1], r'$m=2$', 'sujet', 'm', ha='right', weight='bold')
+text(ax, P(3.2, 1.5)[0], P(3.2, 1.5)[1], r'$m=0$', 'resultat', 'm', ha='left', weight='bold')
+text(ax, P(-1.9, 0.2)[0], P(-1.9, 0.2)[1], r'$m=-1$', 'varie', 'm', ha='right', weight='bold')
+text(ax, P(2.6, 3.2)[0], P(2.6, 3.2)[1] + 3.5, 'verticale', 'limite', 'm', weight='bold')
+text(ax, P(2.6, -3.2)[0], 3.2, 'pente non définie', 'limite', 's')
+save(fig, '19-113')

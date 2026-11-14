@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 61, r'équation générale ($n=2$ ici)', 'sujet', 's')
+box(ax, 14, 44, 60, 13, 'sujet', label=r'$x^2-t_1x+t_2=0$', size='l')
+arrow(ax, (30, 44), (22, 18), 'varie')
+arrow(ax, (58, 44), (66, 18), 'varie')
+text(ax, 23.5, 31, r'$t_1=5,\ t_2=6$', 'varie', 's', ha='right')
+text(ax, 64, 31, r'$t_1=0,\ t_2=-2$', 'varie', 's', ha='left')
+box(ax, 3, 4, 38, 14, 'resultat', label=r'$x^2-5x+6=0$')
+box(ax, 47, 4, 38, 14, 'resultat', label=r'$x^2-2=0$')
+save(fig, '65-097')

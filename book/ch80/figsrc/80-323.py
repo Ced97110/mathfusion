@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 14, 72, 60, 12, 'fixe', label=r'$ab + ba = 0$')
+box(ax, 4, 46, 40, 14, 'varie', label=r'$ab = -ba$')
+box(ax, 48, 46, 38, 14, 'autre', label=r'$-ba = ba$')
+text(ax, 67, 40, r'$x = -x$ pour tout $x$', 'autre', 's')
+arrow(ax, (30, 72), (24, 60), 'varie'); arrow(ax, (60, 72), (66, 60), 'autre')
+box(ax, 24, 12, 40, 14, 'resultat', label=r'$ab = ba$', size='l')
+arrow(ax, (24, 46), (34, 26), 'resultat'); arrow(ax, (50, 46), (54, 26), 'resultat')
+save(fig, '80-323')

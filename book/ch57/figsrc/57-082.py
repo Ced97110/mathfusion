@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 2, 56, "d'abord\nrègle 1\nun coefficient", 'sujet', 's', ha='left')
+disc(ax, 36, 56, 4.5, 'varie', label='3')
+text(ax, 43, 56, '×', 'fixe', 'm')
+for x, s, r in [(48, '(2;1)', 'sujet'), (60.5, '(1;4)', 'sujet'), (73, '(3;5)', 'resultat')]:
+    box(ax, x, 51, 12, 10, r, label=s, size='s')
+arrow(ax, (12, 46), (12, 32), 'fixe')
+text(ax, 2, 22, "ensuite\nrègles 2 à 4\ndeux coefficients", 'sujet', 's', ha='left')
+disc(ax, 36, 27, 4, 'varie', label='3')
+disc(ax, 36, 15, 4, 'varie', label='2')
+arrow(ax, (41, 21), (49, 27), 'fixe')
+arrow(ax, (41, 21), (49, 15), 'fixe')
+box(ax, 51, 23, 35, 8, 'resultat', label='somme : 5', size='s')
+box(ax, 51, 11, 35, 8, 'resultat', label='produit : 6', size='s')
+save(fig, '57-082')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,6,4,46,20,'sujet')
+text(ax,29,19.5,'axiome : admis sans preuve','sujet','s')
+text(ax,29,10.5,'2 + 3 = 3 + 2','sujet','m')
+box(ax,6,44,46,14,'resultat',label='ce qu’on démontre',size='m')
+arrow(ax,(29,25),(29,43),'varie')
+text(ax,32,34,'raisonnement','varie','s',ha='left')
+box(ax,60,8,26,16,'fixe',label='bille lâchée')
+arrow(ax,(60,16),(53,16),'fixe'); line(ax,[(56.5,12.5),(56.5,19.5)],'limite',lw=1.6)
+text(ax,73,29,'ne prouve pas','limite','s')
+save(fig,'42-061')

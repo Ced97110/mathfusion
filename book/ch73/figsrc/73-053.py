@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$\det(d \cdot 1) = d^n$, ici $n = 2$', 'sujet', 'm')
+box(ax, 3, 8, 40, 40, 'resultat', fill=False, dash=True)
+text(ax, 23, 43, r'dans $SL_2$', 'resultat', 's')
+box(ax, 8, 20, 30, 16, 'resultat', label='−1  0\n0  −1', size='l')
+text(ax, 23, 14, '(−1)(−1) = 1', 'resultat', 's')
+box(ax, 45, 8, 40, 40, 'limite', fill=False, dash=True)
+text(ax, 65, 43, r'hors de $SL_2$', 'limite', 's')
+box(ax, 50, 20, 30, 16, 'limite', label='2  0\n0  2', size='l')
+text(ax, 65, 14, '2 × 2 = 4', 'limite', 's')
+save(fig, '73-053')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(66)
+O=(32,31); R=28; th=math.radians(35)
+P=(O[0]+R*math.cos(th),O[1]+R*math.sin(th)); Hh=(P[0],O[1])
+disc(ax,*O,R,'fixe',fill=False,lw=0.7)
+line(ax,[(O[0]-R-3,O[1]),(O[0]+R+9,O[1])],'fixe',lw=0.5)
+poly(ax,[O,Hh,P],'fixe')
+line(ax,[O,Hh],'resultat',lw=1.8); line(ax,[Hh,P],'varie',lw=1.8,dash=True); line(ax,[O,P],'fixe',lw=0.8)
+line(ax,[(Hh[0]-3,O[1]),(Hh[0]-3,O[1]+3),(Hh[0],O[1]+3)],'encre',lw=0.7)
+disc(ax,*Hh,1.5,'sujet'); disc(ax,*P,0.9,'encre'); disc(ax,*O,0.9,'encre')
+text(ax,Hh[0]+2.8,Hh[1]-3.2,'H','sujet','l',weight='bold')
+text(ax,P[0]+2.5,P[1]+2.5,'P','encre','m')
+text(ax,O[0]-2.5,O[1]-3,'O','encre','s')
+text(ax,(O[0]+Hh[0])/2,O[1]-4,'OH = 0,8192','resultat','s')
+text(ax,Hh[0]+3,(O[1]+P[1])/2+2,'HP','varie','s',ha='left'); text(ax,Hh[0]+3,(O[1]+P[1])/2-1.8,'= 0,5736','varie','s',ha='left')
+text(ax,Hh[0]-8,O[1]+6.5,'angle droit','encre','s',ha='right')
+save(fig,'31-014')

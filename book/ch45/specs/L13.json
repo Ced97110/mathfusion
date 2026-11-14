@@ -1,0 +1,177 @@
+[
+ {
+  "code": "45-193",
+  "a_dire": "Le signe ℤ/m se lit « ℤ sur m » : l'horloge à m heures, dont les éléments sont 0, 1, jusqu'à m moins 1.",
+  "legende_titre": "Un signe, plusieurs horloges",
+  "lecture": [
+   "Le signe de gauche, en bleu, nomme les horloges de droite.",
+   "L'orange désigne le nombre d'heures m.",
+   "Chaque horloge a ses éléments 0, 1, … posés sur le cercle : deux pour 2 heures, trois pour 3 heures."
+  ],
+  "a_voir": "Le nombre d'heures m donne le nombre d'éléments de l'horloge."
+ },
+ {
+  "code": "45-194",
+  "a_dire": "Écrits côte à côte, m et n signifient m fois n : le produit.",
+  "legende_titre": "Deux lettres, un produit",
+  "lecture": [
+   "Le bleu indique le nombre de lignes m.",
+   "L'orange indique le nombre de colonnes n.",
+   "Les cases vertes sont toutes les cases du tableau : leur nombre est mn."
+  ],
+  "a_voir": "Le nombre de cases du tableau est m fois n, ici 2 fois 3."
+ },
+ {
+  "code": "45-195",
+  "a_dire": "PGCD(m, n) désigne le plus grand nombre qui divise à la fois m et n.",
+  "legende_titre": "Lire PGCD de deux nombres",
+  "lecture": [
+   "La ligne bleue donne les diviseurs de 4.",
+   "La ligne violette donne les diviseurs de 6.",
+   "Le cadre vert entoure les diviseurs présents dans les deux lignes.",
+   "Le cadre du bas donne le plus grand d'entre eux."
+  ],
+  "a_voir": "Les diviseurs communs de 4 et de 6 sont 1 et 2 ; le plus grand est 2."
+ },
+ {
+  "code": "45-196",
+  "a_dire": "Si PGCD(m, n) = 1, alors le couple (1, 1) a pour ordre mn : il atteint toutes les cases, donc le produit est cyclique.",
+  "legende_titre": "Du PGCD à l'horloge unique",
+  "lecture": [
+   "Le cadre bleu est le départ.",
+   "Le cadre orange est l'étape qui porte la preuve.",
+   "Le cadre vert est l'arrivée.",
+   "Le tableau vert montre les 12 états, tous atteints."
+  ],
+  "a_voir": "Avec un PGCD égal à 1, le PPCM vaut mn, donc le couple (1, 1) parcourt les 12 états."
+ },
+ {
+  "code": "45-197",
+  "a_dire": "Si PGCD(m, n) = d > 1, tout couple revient au départ en mn/d pas au plus, donc moins de mn : aucun couple n'atteint toutes les cases.",
+  "legende_titre": "Pourquoi le produit n'est pas cyclique",
+  "lecture": [
+   "Le tableau a 4 lignes et 6 colonnes, soit 24 cases.",
+   "Les cases vertes sont les 12 cases atteintes par le couple (1, 1).",
+   "Les cases rouges ne sont jamais atteintes."
+  ],
+  "a_voir": "Un couple s'arrête à 12 cases sur 24 : il manque la moitié du tableau."
+ },
+ {
+  "code": "45-198",
+  "a_dire": "Le nombre k est repéré par ses deux restes (k mod m, k mod n) : c'est la grille des pas de (1, 1).",
+  "legende_titre": "Un nombre, deux restes",
+  "lecture": [
+   "Chaque case contient un nombre de 0 à 5.",
+   "Sa ligne donne son reste par 2, sa colonne son reste par 3.",
+   "La case orange est le nombre 5, en ligne 1 et colonne 2."
+  ],
+  "a_voir": "Le nombre 5 se place en (1, 2), comme le pas 5 du couple (1, 1)."
+ },
+ {
+  "code": "45-199",
+  "a_dire": "Pour que le produit de k horloges soit une horloge, les nombres doivent être premiers entre eux deux à deux ; un PGCD égal à 1 pour l'ensemble ne suffit pas.",
+  "legende_titre": "Retirer « deux à deux »",
+  "lecture": [
+   "Les trois disques bleus sont les nombres 6, 10 et 15.",
+   "Chaque trait rouge relie deux nombres et porte leur PGCD, qui n'est pas 1.",
+   "Le texte vert rappelle que le PGCD des trois est 1."
+  ],
+  "a_voir": "Chaque paire de 6, 10, 15 partage un diviseur, donc le produit n'est pas cyclique."
+ },
+ {
+  "code": "45-200",
+  "a_dire": "Premiers entre eux deux à deux veut dire que chaque paire de la liste a un PGCD égal à 1, ce qui est plus fort qu'un PGCD égal à 1 pour toute la liste.",
+  "legende_titre": "Chaque paire compte",
+  "lecture": [
+   "À gauche, 4, 3 et 5 : chaque trait vert porte 1.",
+   "À droite, 6, 10 et 15 : chaque trait rouge porte un PGCD plus grand que 1."
+  ],
+  "a_voir": "Il faut un PGCD de 1 sur chacun des trois traits."
+ },
+ {
+  "code": "45-201",
+  "a_dire": "Décomposez m en facteurs premiers, regroupez les facteurs égaux : les groupes sont premiers entre eux deux à deux, donc ℤ/m est le produit des horloges correspondantes.",
+  "legende_titre": "60 en trois horloges",
+  "lecture": [
+   "Les disques gris sont les facteurs premiers de 60 : 2, 2, 3, 5.",
+   "Les trois cadres en dessous regroupent les facteurs égaux : 4, 3 et 5.",
+   "La dernière ligne écrit ℤ/60 comme produit de ℤ/4, ℤ/3 et ℤ/5."
+  ],
+  "a_voir": "Les deux facteurs 2 se regroupent en 4 ; les nombres 4, 3 et 5 donnent le produit des trois horloges."
+ },
+ {
+  "code": "45-202",
+  "a_dire": "L'horloge à 60 heures se lit comme trois horloges, à 4, 3 et 5 heures : l'état 37 devient le triplet (1, 1, 2).",
+  "legende_titre": "L'état 37 en trois restes",
+  "lecture": [
+   "Le cadre bleu à gauche est l'état 37 de ℤ/60.",
+   "Chaque flèche mène à une petite horloge.",
+   "La case colorée de chaque rangée est le reste de 37 pour cette horloge."
+  ],
+  "a_voir": "37 a pour restes 1 par 4, 1 par 3 et 2 par 5."
+ },
+ {
+  "code": "45-203",
+  "a_dire": "On peut partir d'un groupe donné et y reconnaître deux sous-groupes dont les sommes reconstituent tout le groupe.",
+  "legende_titre": "Reconstituer l'horloge à six heures",
+  "lecture": [
+   "La colonne bleue est le lot H : 0, 2, 4.",
+   "La ligne violette est le lot K : 0, 3.",
+   "Les cases vertes sont les sommes d'une heure de H et d'une heure de K."
+  ],
+  "a_voir": "Les six sommes sont les six heures de l'horloge."
+ },
+ {
+  "code": "45-204",
+  "a_dire": "Dans un produit direct interne, les deux facteurs sont déjà des sous-groupes de G, et non des couples fabriqués.",
+  "legende_titre": "Couple fabriqué ou facteurs déjà là",
+  "lecture": [
+   "À gauche, deux horloges séparées servent à fabriquer le couple (1, 2).",
+   "À droite, le grand cadre est G ; les cadres bleu H et violet K sont à l'intérieur.",
+   "Le nombre 5 s'écrit 2 plus 3."
+  ],
+  "a_voir": "Interne : 2 est dans H, 3 est dans K, tous deux dans G."
+ },
+ {
+  "code": "45-205",
+  "a_dire": "La condition G = HK demande que chaque élément de G soit un produit hk, avec h dans H et k dans K.",
+  "legende_titre": "Vérifier que tout G apparaît",
+  "lecture": [
+   "La rangée grise du haut liste les six éléments de G.",
+   "Dans chaque rangée du dessous, une case verte est un élément obtenu par une somme h plus k, une case rouge un élément manquant."
+  ],
+  "a_voir": "Avec H = {0, 2, 4} et K = {0, 3}, les six cases sont vertes."
+ },
+ {
+  "code": "45-206",
+  "a_dire": "Le signe HK désigne la collection de tous les produits hk.",
+  "legende_titre": "Un signe pour une collection",
+  "lecture": [
+   "Le cadre bleu est H et le cadre violet est K.",
+   "Les flèches orange montrent la somme h plus k.",
+   "Le cadre vert est la collection HK, avec ses six éléments."
+  ],
+  "a_voir": "HK est une collection de six éléments, pas un nombre."
+ },
+ {
+  "code": "45-207",
+  "a_dire": "La condition H ∩ K = {e} dit que le seul élément commun à H et à K est le neutre.",
+  "legende_titre": "Une seule heure en commun",
+  "lecture": [
+   "À gauche, le bleu est H, le violet est K et la zone verte commune ne contient que 0.",
+   "À droite, H est inclus dans K : la zone rouge contient 0 et 3, donc la condition échoue."
+  ],
+  "a_voir": "La condition est vraie quand la partie commune se réduit à 0."
+ },
+ {
+  "code": "45-208",
+  "a_dire": "Le signe H ∩ K se lit « H inter K » : la collection des éléments qui sont à la fois dans H et dans K.",
+  "legende_titre": "Lire H inter K",
+  "lecture": [
+   "Le H bleu et le K violet sont les deux lots.",
+   "Le signe orange est celui qui garde les éléments présents dans les deux.",
+   "La zone orange des cercles est la partie commune : l'heure 0."
+  ],
+  "a_voir": "Le signe désigne une collection, ici formée de l'heure 0."
+ }
+]

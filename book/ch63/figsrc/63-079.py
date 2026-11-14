@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 66, r'$\mathrm{Inv}\,H=\mathbb{Q}(\sqrt{3})$, $\sigma$ : $\sqrt{2}\mapsto-\sqrt{2}$', 'fixe', 's')
+box(ax, 2, 24, 84, 36, 'resultat')
+text(ax, 44, 54, r'$\mathrm{Gal}(E/\mathrm{Inv}\,H)$', 'resultat', 's')
+box(ax, 18, 28, 52, 18, 'sujet', label=r'$H=\{1,\sigma\}$')
+box(ax, 2, 2, 40, 14, 'resultat', label=r'$1(\sqrt{3})=\sqrt{3}$', size='s')
+box(ax, 46, 2, 40, 14, 'resultat', label=r'$\sigma(\sqrt{3})=\sqrt{3}$', size='s')
+arrow(ax, (30, 27.5), (22, 16.5), 'varie')
+arrow(ax, (58, 27.5), (66, 16.5), 'varie')
+save(fig, '63-079')

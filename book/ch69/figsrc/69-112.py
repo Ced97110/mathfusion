@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 12, 72, 26, -2, 2, 1)
+line(ax, [(f(-2), 31), (f(1), 31)], 'resultat', lw=2.0)
+disc(ax, f(-2), 31, 1.2, 'resultat')
+disc(ax, f(1), 31, 1.2, 'resultat')
+for v, n in ((-2, 2), (1, 0)):
+    line(ax, [(f(v), 31), (f(v), 35.5)], 'fixe', dash=True, lw=0.6)
+    box(ax, f(v) - 11, 36, 22, 8, 'sujet', label=rf'$V({v})={n}$', size='s')
+disc(ax, f(-1), 26, 1.6, 'autre')
+disc(ax, f(1), 26, 1.6, 'autre')
+text(ax, f(-1), 15, r'racine $-1$', 'autre', 's')
+text(ax, f(1), 15, 'racine 1 (borne)', 'autre', 's')
+box(ax, 6, 3, 76, 8, 'resultat', label=r'$2-0=2$ : $-1$ et $1$ comptées', size='m')
+save(fig, '69-112')

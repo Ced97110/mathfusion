@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# r = cos 3θ : trois boucles (0°, 120°, 240°). r -> -r envoie le point (1 ; 0°) en (-1 ; 0°) : pas sur la courbe.
+fig, ax = canvas(88)
+o = (44, 52); u = 24
+def pt(r, deg): return (o[0] + u * r * math.cos(math.radians(deg)), o[1] + u * r * math.sin(math.radians(deg)))
+arrow(ax, (o[0] - 30, o[1]), (o[0] + 32, o[1]), 'fixe', lw=0.9)
+text(ax, o[0] + 34, o[1] - 3, r'$x$', 'fixe', 's')
+line(ax, [pt(math.cos(3 * math.radians(a)), a) for a in range(0, 361, 2)], 'sujet', lw=1.4)
+A = pt(1, 0); B = pt(-1, 0)
+disc(ax, A[0], A[1], 1.5, 'sujet')
+disc(ax, B[0], B[1], 1.6, 'limite', fill=False, lw=1.1)
+disc(ax, o[0], o[1], 0.9, 'encre')
+arrow(ax, (A[0] - 2, A[1] + 3), (B[0] + 2, B[1] + 3), 'varie', lw=1.2, curve=0.5)
+text(ax, o[0], o[1] + 22, 'demi-tour autour de $O$', 'varie', 's')
+text(ax, A[0] + 3, A[1] - 6, r'$r$ = 1', 'sujet', 's')
+text(ax, B[0] - 2, B[1] - 6, r'$r$ = $-1$', 'limite', 's')
+text(ax, o[0] + 3, o[1] - 3.5, 'O', 'encre', 's')
+text(ax, 44, 84, r'$r = \cos 3\theta$ : trois boucles', 'sujet', 'm')
+text(ax, 44, 18, r'$\theta$ = 0 : $r = \cos 0$ = 1', 'sujet', 's')
+text(ax, 44, 12, r'$-r = \cos 3\theta$ donne $r$ = $-1$ : hors courbe', 'limite', 's')
+text(ax, 44, 6, 'boucles aux angles 0°, 120°, 240°', 'sujet', 's')
+save(fig, '40-042')

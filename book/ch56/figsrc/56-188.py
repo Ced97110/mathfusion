@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'les idéaux du corps $\mathbb{Q}$', 'fixe', 's')
+disc(ax, 28, 30, 22, 'sujet')
+text(ax, 28, 46, r'$(3)=\mathbb{Q}$', 'sujet', 'l')
+text(ax, 28, 33, r'$3\times\frac{1}{3}=1$', 'sujet', 'm')
+text(ax, 28, 22, r'donc $1\in(3)$', 'sujet', 's')
+disc(ax, 70, 38, 6, 'fixe', label=r'$(0)$')
+text(ax, 70, 26, r'$(0)=\{0\}$', 'fixe', 's')
+text(ax, 70, 18, 'deux idéaux seulement', 'resultat', 's')
+save(fig, '56-188')

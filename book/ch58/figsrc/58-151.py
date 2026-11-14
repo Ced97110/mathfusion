@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+# 1. poser l'égalité
+box(ax, 6, 82, 76, 9, 'sujet', label=r'$\alpha\,(3,\,1)+\beta\,(1,\,2)=(0,\,0)$')
+text(ax, 44, 78, 'une case = une équation', 'fixe', 's')
+arrow(ax, (44, 76), (44, 71), 'varie')
+box(ax, 6, 62, 36, 9, 'sujet', label=r'$3\alpha+\beta=0$')
+box(ax, 46, 62, 36, 9, 'sujet', label=r'$\alpha+2\beta=0$')
+arrow(ax, (24, 61), (24, 52), 'varie')
+text(ax, 44, 57, 'on résout', 'varie', 's')
+# 2. résoudre : la fin dépend de la solution
+box(ax, 6, 42, 36, 9, 'resultat', label=r'$\alpha=0,\ \beta=0$')
+box(ax, 46, 42, 36, 9, 'fixe', dash=True, label='une autre solution')
+text(ax, 24, 36, 'seule solution : 0', 'resultat', 's')
+text(ax, 64, 36, 'avec un nombre non nul', 'autre', 's')
+arrow(ax, (24, 32), (24, 25), 'resultat')
+arrow(ax, (64, 32), (64, 25), 'autre')
+box(ax, 6, 14, 36, 10, 'resultat', label='libre', weight='bold')
+box(ax, 46, 14, 36, 10, 'autre', label='liée', weight='bold')
+text(ax, 44, 6, r'ici : $\beta=-3\alpha$, puis $-5\alpha=0$', 'varie', 's')
+save(fig, '58-151')

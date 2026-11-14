@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def B(ax, x, y, w, h, role, label, size='m', weight='normal'): return box(ax, x, y, w, h, role, label=label, size=size, weight=weight)
+fig, ax = canvas(50)
+text(ax, 44, 47, 'à 35°', 'encre', 'm', weight='bold')
+B(ax, 4, 30, 30, 12, 'autre', 'sin  0,5736'); B(ax, 54, 30, 30, 12, 'sujet', 'cosec  1,7434', weight='bold')
+B(ax, 4, 8, 30, 12, 'fixe', 'cos  0,8192'); B(ax, 54, 8, 30, 12, 'fixe', 'sec  1,2208')
+arrow(ax, (34, 36), (54, 36), 'sujet', both=True); text(ax, 44, 39.5, 'inverse', 'sujet', 's')
+arrow(ax, (34, 14), (54, 14), 'fixe', both=True); text(ax, 44, 10.5, 'inverse', 'fixe', 's')
+line(ax, [(34, 21), (54, 29)], 'limite', dash=True, lw=1.0); text(ax, 44, 25, '×', 'limite', 'l')
+save(fig, '31-039')

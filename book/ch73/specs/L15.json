@@ -1,0 +1,186 @@
+[
+ {
+  "code": "73-225",
+  "a_dire": "Une ligne fois une colonne donne la somme des produits ; la transposée d’un produit renverse l’ordre.",
+  "legende_titre": "Deux règles : somme des produits, ordre renversé",
+  "lecture": [
+   "La ligne bleue (3, 4) et la colonne violette (5, 0) donnent la case verte 15 : 3 fois 5 plus 4 fois 0.",
+   "En bas, la case bleue est la transposée du produit AB : lignes (2, 4) et (1, 3).",
+   "La case verte, BᵗAᵗ (ordre renversé), a les mêmes lignes : l’égalité est vraie.",
+   "La case rouge, AᵗBᵗ (même ordre), a d’autres lignes, (3, 1) et (4, 2) : elle est différente."
+  ],
+  "a_voir": "Seul le produit dans l’ordre renversé redonne la transposée du produit."
+ },
+ {
+  "code": "73-226",
+  "a_dire": "Pour aller de AᵗA = I à la conservation du produit scalaire, on écrit le produit scalaire avec les transposées puis on remplace AᵗA par I.",
+  "legende_titre": "De la propriété 2 à la propriété 3",
+  "lecture": [
+   "Les deux cases grises du haut sont les deux premières écritures du produit scalaire de Ax et Ay.",
+   "La flèche grise est la règle de la transposée.",
+   "La case bleue AᵗA = I est le départ (propriété 2) ; elle remplace AᵗA : c'est l'étape clé, en orange.",
+   "La case verte du bas est l'arrivée (propriété 3) : le produit scalaire de x et y, par exemple 15 pour x = (3, 4) et y = (5, 0)."
+  ],
+  "a_voir": "L'étape orange, qui remplace AᵗA par I, porte toute la preuve."
+ },
+ {
+  "code": "73-227",
+  "a_dire": "La différence des images est l’image de la différence quand A est une matrice, donc la distance est gardée ; pas avec la transformation qui élève au carré.",
+  "legende_titre": "Distance gardée, ou pas",
+  "lecture": [
+   "En haut, les deux cases bleues Ax − Ay et A(x − y) donnent le même vecteur vert.",
+   "En bas, la transformation qui élève au carré la première coordonnée est en rouge.",
+   "Elle donne (8, 0) pour la différence des images et (4, 0) pour l’image de la différence : ils sont différents."
+  ],
+  "a_voir": "Avec une matrice, les deux écritures sont égales ; avec le carré, elles ne le sont pas."
+ },
+ {
+  "code": "73-228",
+  "a_dire": "En prenant y égal à 0, la distance entre les images devient la longueur de Ax, et la distance devient la longueur de x.",
+  "legende_titre": "Prendre y = 0 donne la longueur",
+  "lecture": [
+   "Le trait vert part de 0 et va au point bleu x = (3, 4) : sa longueur est 5.",
+   "Le trait rouge en pointillés va de x au point violet y = (5, 0) : son carré est 20, ce n’est pas la longueur de x.",
+   "La case verte dit que, pour y = 0, la longueur de Ax est celle de x."
+  ],
+  "a_voir": "Seul le choix y = 0 donne la longueur de x."
+ },
+ {
+  "code": "73-229",
+  "a_dire": "La formule pivot donne le produit scalaire à partir des longueurs de x, de y et de x + y ; garder les longueurs suffit donc à garder le produit scalaire.",
+  "legende_titre": "Du produit scalaire avec les longueurs",
+  "lecture": [
+   "La flèche bleue est x et la violette est y : leurs longueurs sont 5 et 5.",
+   "La flèche verte est la somme x + y : le carré de sa longueur est 80.",
+   "La case verte calcule la moitié de 80 moins 25 moins 25 : on trouve 15."
+  ],
+  "a_voir": "Les trois longueurs 5, 5 et 80 donnent le produit scalaire 15."
+ },
+ {
+  "code": "73-230",
+  "a_dire": "Si le produit scalaire de x avec v est nul pour tout x, on choisit x égal à v : alors v est de longueur nulle, donc nul.",
+  "legende_titre": "Choisir x égal à v",
+  "lecture": [
+   "À gauche, les vecteurs (1, 0) et (0, 1) ont un produit scalaire nul, mais le rouge (0, 1) n’est pas nul : un seul x ne suffit pas.",
+   "À droite, on prend x égal à v.",
+   "Les cases grises en descendant : le produit scalaire de v avec v est 0, donc la longueur de v est 0.",
+   "La case verte conclut : v est nul."
+  ],
+  "a_voir": "Le choix x = v transforme « produit nul » en « v est nul »."
+ },
+ {
+  "code": "73-231",
+  "a_dire": "La case (r, s) de AᵗA est le produit scalaire des colonnes r et s ; dire AᵗA = I revient à dire que les colonnes sont orthonormées.",
+  "legende_titre": "Chaque case de AᵗA est un produit de colonnes",
+  "lecture": [
+   "Chaque ligne du tableau est une colonne de A écrite en ligne ; chaque colonne du tableau est une colonne de A.",
+   "Les cases vertes de la diagonale valent 1 : une colonne avec elle-même.",
+   "Les cases grises hors de la diagonale valent 0 : deux colonnes différentes.",
+   "Ce tableau est la matrice identité."
+  ],
+  "a_voir": "Les 1 de la diagonale et les 0 ailleurs sont les produits des colonnes."
+ },
+ {
+  "code": "73-232",
+  "a_dire": "Les cinq propriétés sont reliées en une chaîne fermée : chacune mène à toutes les autres.",
+  "legende_titre": "Cinq propriétés, une seule",
+  "lecture": [
+   "Chaque rond bleu numéroté est une des cinq propriétés, avec son nom à côté.",
+   "Les flèches orange les relient en boucle : on suit la chaîne de 1 à 5 et on revient à 1.",
+   "Le texte vert au centre dit qu’elles forment une seule propriété."
+  ],
+  "a_voir": "La boucle fermée de flèches montre que partir de n’importe quel rond mène à tous les autres."
+ },
+ {
+  "code": "73-233",
+  "a_dire": "Deux réflexions de suite donnent une rotation d’angle α − β, parce qu’un miroir renverse le sens des rotations.",
+  "legende_titre": "Deux miroirs donnent α − β",
+  "lecture": [
+   "Les deux lignes en pointillés sont les axes des miroirs : gris à 0 degré, violet à 45 degrés.",
+   "Les flèches orange, numérotées 1 et 2, suivent le point (1, 0) : 1. miroir 90° (axe 45°), il va en (0, 1) ; 2. miroir 0° (axe 0°), il va en (0, −1).",
+   "L'arc vert va de (1, 0) à (0, −1) : c'est le quart de tour dans le sens des aiguilles d'une montre, R(−90°).",
+   "Avec β = 90° d'abord, puis α = 0, la règle donne R(α − β)."
+  ],
+  "a_voir": "Le point finit en (0, −1), donc l'angle est α − β et non α + β."
+ },
+ {
+  "code": "73-234",
+  "a_dire": "Deux miroirs dont les axes font 45 degrés donnent une rotation de 90 degrés : le double de l’angle des axes.",
+  "legende_titre": "La rotation fait le double de l’angle des axes",
+  "lecture": [
+   "La ligne grise est l’axe à 0 degré, la ligne violette est l’axe à 45 degrés.",
+   "L’arc violet marque l’angle de 45 degrés entre les axes.",
+   "Les flèches grises suivent le point (0, 1) : il va en (0, −1), puis en (−1, 0).",
+   "L’arc vert va de (0, 1) à (−1, 0) : un quart de tour, 90 degrés."
+  ],
+  "a_voir": "L’arc vert de 90 degrés est le double de l’arc violet de 45 degrés."
+ },
+ {
+  "code": "73-235",
+  "a_dire": "Une rotation suivie d’une réflexion donne une réflexion, car les déterminants se multiplient : 1 fois −1 donne −1.",
+  "legende_titre": "Rotation puis miroir : un miroir",
+  "lecture": [
+   "La case bleue est le quart de tour, de déterminant 1.",
+   "La case orange est le miroir horizontal, de déterminant −1.",
+   "La case verte est leur produit : un miroir de déterminant −1.",
+   "En bas, la double flèche verte échange (1, 0) et (0, 1) autour de l’axe en pointillés à 45 degrés."
+  ],
+  "a_voir": "Le produit échange (1, 0) et (0, 1) : c’est un miroir, pas une rotation."
+ },
+ {
+  "code": "73-236",
+  "a_dire": "En dimension 2, toute rotation est le produit de deux miroirs dont les axes font la moitié de l’angle.",
+  "legende_titre": "Une rotation est faite de deux miroirs",
+  "lecture": [
+   "À gauche, la rotation de 90 degrés (arc vert) est faite avec l’axe horizontal gris et l’axe violet à 45 degrés.",
+   "À droite, la rotation de 60 degrés est faite avec l’axe horizontal et l’axe violet à 30 degrés.",
+   "Dans chaque dessin, l’arc vert est le double de l’arc violet."
+  ],
+  "a_voir": "L’angle de la rotation est le double de l’angle entre les deux axes."
+ },
+ {
+  "code": "73-237",
+  "a_dire": "Dans E(2), la rotation r est le quart de tour autour de l’origine, et la translation t est le décalage de 2 vers la droite.",
+  "legende_titre": "Un quart de tour et un décalage",
+  "lecture": [
+   "Le point gris P = (3, 2) est le point de départ.",
+   "La flèche bleue courbe est le quart de tour : P va en (−2, 3).",
+   "Les flèches orange sont le décalage de 2 : P va en (5, 2) et l’origine va en (2, 0)."
+  ],
+  "a_voir": "r tourne autour de l’origine, t décale de 2 vers la droite."
+ },
+ {
+  "code": "73-238",
+  "a_dire": "Le produit rt décale d’abord, puis tourne : le décalage (2, 0) est lui aussi tourné et devient (0, 2).",
+  "legende_titre": "rt : décaler, puis tourner",
+  "lecture": [
+   "Le chemin bleu suit P = (1, 0) : le décalage l’envoie en (3, 0), puis le quart de tour en (0, 3).",
+   "Le chemin violet suit l’origine : elle va en (2, 0), puis en (0, 2).",
+   "Le rond vert (0, 2) est le décalage effectif de rt."
+  ],
+  "a_voir": "Le décalage (2, 0) a été tourné en (0, 2)."
+ },
+ {
+  "code": "73-239",
+  "a_dire": "Le produit tr tourne d’abord, puis décale : le décalage reste (2, 0).",
+  "legende_titre": "tr : tourner, puis décaler",
+  "lecture": [
+   "Le chemin bleu suit P = (1, 0) : le quart de tour l’envoie en (0, 1), puis le décalage en (2, 1).",
+   "Le chemin violet suit l’origine : elle reste en place, puis va en (2, 0).",
+   "Le rond vert (2, 0) est le décalage effectif de tr."
+  ],
+  "a_voir": "Le décalage (2, 0) n’a pas été tourné."
+ },
+ {
+  "code": "73-240",
+  "a_dire": "Le point P arrive en (0, 3) par rt et en (2, 1) par tr : l’ordre des déplacements change le résultat.",
+  "legende_titre": "Même départ, deux arrivées",
+  "lecture": [
+   "Le rond gris P = (1, 0) est le départ commun.",
+   "Le chemin bleu (rt) décale puis tourne : P va en (3, 0), puis en (0, 3).",
+   "Le chemin violet (tr) tourne puis décale : P va en (0, 1), puis en (2, 1).",
+   "Les deux arrivées sont différentes."
+  ],
+  "a_voir": "Deux arrivées différentes pour le même départ : rt n’est pas égal à tr."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 14, 61, 'corps', 'sujet', 's'); text(ax, 73, 61, 'groupes', 'autre', 's')
+for y, l in [(46, r'$E$'), (32, r'$K$'), (18, r'$F$')]: box(ax, 4, y, 20, 9, 'sujet', label=l)
+for y, l in [(46, r'$G$'), (32, r'$H$'), (18, r'$\{1\}$')]: box(ax, 62, y, 22, 9, 'autre', label=l)
+line(ax, [(27, 50.5), (29, 50.5), (29, 36.5), (27, 36.5)], 'varie'); text(ax, 36, 43.5, r'$[E:K]$', 'varie', 's')
+line(ax, [(27, 36.5), (29, 36.5), (29, 22.5), (27, 22.5)], 'fixe'); text(ax, 36, 29.5, r'$[K:F]$', 'fixe', 's')
+arrow(ax, (31, 33.5), (60, 33.5), 'resultat', both=True)
+text(ax, 45, 37, 'correspond', 'resultat', 's')
+text(ax, 45, 8, r'$[E:K]$ = ordre de $H$', 'resultat', 'm')
+save(fig, '61-243')

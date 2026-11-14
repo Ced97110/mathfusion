@@ -1,0 +1,269 @@
+[
+ {
+  "code": "80-217",
+  "a_dire": "2^n ne vaut que pour un ensemble fini : avec ℕ, les parties sont infinies.",
+  "legende_titre": "Fini : 2^n ; infini : pas de 2^n",
+  "lecture": [
+   "À gauche, trois éléments bleus donnent 2^3 = 8 parties, en vert.",
+   "À droite, les entiers 0, 1, 2, 3… sont en rouge, avec une partie à un seul élément pour chacun.",
+   "Le rouge dit que le nombre de parties est infini."
+  ],
+  "a_voir": "À gauche, trois éléments bleus donnent 2^3 = 8 parties, en vert."
+ },
+ {
+  "code": "80-218",
+  "a_dire": "Chaque diviseur de 30 est le sup des atomes sous lui, par exemple 6 est le sup de 2 et 3.",
+  "legende_titre": "Un diviseur construit avec ses atomes",
+  "lecture": [
+   "Les cases bleues 2, 3 et 5 sont les atomes.",
+   "Les deux traits orange relient 2 et 3 à 6, en vert.",
+   "6 est le PPCM de 2 et 3."
+  ],
+  "a_voir": "Les cases bleues 2, 3 et 5 sont les atomes."
+ },
+ {
+  "code": "80-219",
+  "a_dire": "La seconde preuve passe par l'algèbre linéaire : a + a = 0, puis n coordonnées 0 ou 1, donc 2^n éléments.",
+  "legende_titre": "Deuxième chemin vers le compte",
+  "lecture": [
+   "Les boîtes sont lues de haut en bas.",
+   "La boîte orange, au trait épais, est l'étape qui donne le compte.",
+   "La boîte verte donne le résultat, 8 pour n = 3."
+  ],
+  "a_voir": "Les boîtes sont lues de haut en bas."
+ },
+ {
+  "code": "80-220",
+  "a_dire": "Dans l'anneau de Boole, a + a = 0, donc chaque élément est son propre opposé.",
+  "legende_titre": "Ajouter un élément à lui-même",
+  "lecture": [
+   "La ligne bleue montre 1 + 1 = 0 dans ℤ/2.",
+   "La ligne violette montre la partie {1} ajoutée à elle-même, qui donne la partie vide.",
+   "Les cases vertes sont les résultats : zéro."
+  ],
+  "a_voir": "La ligne bleue montre 1 + 1 = 0 dans ℤ/2."
+ },
+ {
+  "code": "80-221",
+  "a_dire": "Un élément est une liste de n chiffres 0 ou 1, et il y a 2 choix par place, donc 2^n listes.",
+  "legende_titre": "Compter les listes de chiffres",
+  "lecture": [
+   "Du haut vers le bas, chaque rang du dessin est une place, avec deux branches 0 et 1.",
+   "Les cases vertes en bas sont les huit listes de trois chiffres.",
+   "Le calcul 2 × 2 × 2 = 8 se lit sur les trois niveaux."
+  ],
+  "a_voir": "Du haut vers le bas, chaque rang du dessin est une place, avec deux branches 0 et 1."
+ },
+ {
+  "code": "80-222",
+  "a_dire": "Les sept points du plan de Fano portent les listes de trois chiffres, sauf 000.",
+  "legende_titre": "Sept points et la liste 000",
+  "lecture": [
+   "Les sept disques bleus sont les points, avec leur étiquette.",
+   "La case violette en pointillés est 000, qui n'est pas un point.",
+   "Sept points plus 000 font huit listes."
+  ],
+  "a_voir": "Les sept disques bleus sont les points, avec leur étiquette."
+ },
+ {
+  "code": "80-223",
+  "a_dire": "La première cause se découpe en cinq étapes, la dernière donnant b = sup de ses atomes.",
+  "legende_titre": "Cinq étapes, une après l'autre",
+  "lecture": [
+   "Chaque boîte est une étape numérotée.",
+   "Les flèches donnent l'ordre.",
+   "La boîte verte est l'arrivée."
+  ],
+  "a_voir": "Chaque boîte est une étape numérotée."
+ },
+ {
+  "code": "80-224",
+  "a_dire": "Les diviseurs de 30 forment une algèbre de Boole : ordre = divise, O = 1, I = 30, complément de d = 30 ÷ d.",
+  "legende_titre": "Une algèbre de Boole faite de nombres",
+  "lecture": [
+   "Les cases bleues 1 et 30 sont O et I.",
+   "Chaque trait relie un diviseur à un multiple.",
+   "Les cases orange 6 et 5 sont compléments : 30 ÷ 6 = 5."
+  ],
+  "a_voir": "Les cases bleues 1 et 30 sont O et I."
+ },
+ {
+  "code": "80-225",
+  "a_dire": "Les atomes des diviseurs de 30 sont 2, 3 et 5 ; 6 n'en est pas un.",
+  "legende_titre": "Qui est juste au-dessus de 1",
+  "lecture": [
+   "Les cases bleues 2, 3 et 5 touchent 1 directement.",
+   "La case rouge 6 a 2 et 3 sous elle, traits orange.",
+   "Rien ne se trouve entre 1 et 2, 3 ou 5."
+  ],
+  "a_voir": "Les cases bleues 2, 3 et 5 touchent 1 directement."
+ },
+ {
+  "code": "80-226",
+  "a_dire": "a est un atome si a ∧ b = a pour tout b non nul sous a.",
+  "legende_titre": "Tester la définition sur 3 puis 6",
+  "lecture": [
+   "À gauche, sous 3 il n'y a que 3, et 3 ∧ 3 = 3 en vert.",
+   "À droite, sous 6 il y a 2, 3 et 6.",
+   "Le 2 orange donne PGCD(6, 2) = 2, pas 6, en rouge."
+  ],
+  "a_voir": "À gauche, sous 3 il n'y a que 3, et 3 ∧ 3 = 3 en vert."
+ },
+ {
+  "code": "80-227",
+  "a_dire": "Sous un atome a, le seul élément non nul est a lui-même.",
+  "legende_titre": "Ce qui reste sous un atome",
+  "lecture": [
+   "Chaque ligne montre les éléments sous a : d'abord pour 3, puis pour 6.",
+   "La case grise 1 = O est l'élément nul.",
+   "La case bleue est a lui-même.",
+   "Les cases orange sont d'autres éléments non nuls : il y en a pour 6, pas pour 3."
+  ],
+  "a_voir": "Sous 3, le seul non nul est 3 ; sous 6, il y a aussi 2 et 3."
+ },
+ {
+  "code": "80-228",
+  "a_dire": "Sous tout élément non nul se trouve un atome : on descend jusqu'à s'arrêter, car l'algèbre est finie.",
+  "legende_titre": "Descendre jusqu'à un atome",
+  "lecture": [
+   "La case bleue 30 est le départ.",
+   "Les traits orange descendent de 30 vers 15 puis 5.",
+   "La case verte 5 est un atome."
+  ],
+  "a_voir": "La case bleue 30 est le départ."
+ },
+ {
+  "code": "80-229",
+  "a_dire": "La preuve forme une descente b > b1 > b2 > …, qui s'arrête car B est fini.",
+  "legende_titre": "La descente qui s'arrête",
+  "lecture": [
+   "La ligne du haut est la descente, avec des flèches orange.",
+   "La case verte est l'atome où elle finit.",
+   "La ligne du bas donne l'exemple 30, 15, 5."
+  ],
+  "a_voir": "La ligne du haut est la descente, avec des flèches orange."
+ },
+ {
+  "code": "80-230",
+  "a_dire": "De 30 on peut descendre par deux chemins, et chacun finit sur un atome.",
+  "legende_titre": "Deux descentes depuis 30",
+  "lecture": [
+   "Le chemin orange passe par 15 et finit sur 5.",
+   "Le chemin violet passe par 10 et finit sur 2.",
+   "Les cases vertes 5 et 2 sont des atomes."
+  ],
+  "a_voir": "Le chemin orange passe par 15 et finit sur 5."
+ },
+ {
+  "code": "80-231",
+  "a_dire": "Deux atomes distincts ont pour inf O ; un atome pris deux fois donne lui-même.",
+  "legende_titre": "Distincts ou identiques",
+  "lecture": [
+   "À gauche, 2 et 3 donnent 1, qui est O, en vert.",
+   "À droite, 2 pris deux fois donne 2, en rouge.",
+   "Le mot « distincts » fait la différence."
+  ],
+  "a_voir": "À gauche, 2 et 3 donnent 1, qui est O, en vert."
+ },
+ {
+  "code": "80-232",
+  "a_dire": "a ∧ b est sous a, donc vaut O ou a ; le cas a est impossible, donc a ∧ b = O.",
+  "legende_titre": "Exclure un cas",
+  "lecture": [
+   "Les boîtes du haut posent 2 et 3 puis le PGCD.",
+   "La boîte rouge montre le cas exclu : 2 diviserait 3.",
+   "La boîte verte donne le cas restant, 1."
+  ],
+  "a_voir": "Les boîtes du haut posent 2 et 3 puis le PGCD."
+ },
+ {
+  "code": "80-233",
+  "a_dire": "Le PGCD de 2 et 3 est 1, l'élément le plus bas.",
+  "legende_titre": "Ce que 2 et 3 ont en commun",
+  "lecture": [
+   "Le cercle bleu contient les diviseurs de 2.",
+   "Le cercle violet contient les diviseurs de 3.",
+   "Seul le 1, vert, est dans les deux cercles."
+  ],
+  "a_voir": "Le cercle bleu contient les diviseurs de 2."
+ },
+ {
+  "code": "80-234",
+  "a_dire": "2 est sous 6 revient à : 2 n'a rien en commun avec le complément 5.",
+  "legende_titre": "Lire l'ordre avec le complément",
+  "lecture": [
+   "Chaque colonne est un facteur de 30.",
+   "6 prend les cases 2 et 3, le complément 5 prend la case 5.",
+   "Le diviseur 2 n'a aucune colonne en commun avec 5."
+  ],
+  "a_voir": "Chaque colonne est un facteur de 30."
+ },
+ {
+  "code": "80-235",
+  "a_dire": "Sans le complément, la phrase a ∧ b = O ne dit pas a ≤ b.",
+  "legende_titre": "Ce qui manque sans complément",
+  "lecture": [
+   "Les trois rangées montrent a = 2, b = 3 et b′ = 10.",
+   "En rouge, 2 et 3 n'ont rien en commun, et pourtant 2 ne divise pas 3.",
+   "En vert, 2 et 10 ont la colonne 2 en commun."
+  ],
+  "a_voir": "Les trois rangées montrent a = 2, b = 3 et b′ = 10."
+ },
+ {
+  "code": "80-236",
+  "a_dire": "Pour 2 et 6, les trois phrases a ≤ b, a ∧ b′ = O et a′ ∨ b = I sont vraies ensemble.",
+  "legende_titre": "Trois phrases vraies ensemble",
+  "lecture": [
+   "Les quatre cases du haut donnent a = 2, b = 6, b′ = 5 et a′ = 15.",
+   "Chaque case verte est une des trois phrases, avec son calcul.",
+   "Chaque phrase porte le mot « vrai »."
+  ],
+  "a_voir": "Pour 2 et 6, les trois phrases sont vraies ensemble."
+ },
+ {
+  "code": "80-237",
+  "a_dire": "De a ≤ b on arrive à a ∧ b′ = O, grâce à la règle de De Morgan.",
+  "legende_titre": "Premier sens de l'étape 3",
+  "lecture": [
+   "Le texte du haut dit ce que valent ∧ et ∨ pour les diviseurs de 30, avec a = 2 et b = 6.",
+   "Les boîtes se lisent de haut en bas ; chaque boîte donne la règle puis le calcul avec les nombres.",
+   "La boîte orange est l'étape décisive : De Morgan.",
+   "La boîte verte donne le résultat : a ∧ b′ = O, c'est-à-dire 1."
+  ],
+  "a_voir": "De Morgan permet de regrouper a et a′ : on arrive à O."
+ },
+ {
+  "code": "80-238",
+  "a_dire": "De a′ ∨ b = I on arrive à a ≤ b, grâce à la distributivité.",
+  "legende_titre": "Retour de l'étape 3",
+  "lecture": [
+   "Le texte du haut dit ce que valent ∧ et ∨ pour les diviseurs de 30, avec a = 2 et b = 6.",
+   "Les boîtes se lisent de haut en bas ; chaque boîte donne la règle puis le calcul avec les nombres.",
+   "La boîte orange est l'étape décisive : la distributivité.",
+   "La boîte verte dit que 2 divise 6."
+  ],
+  "a_voir": "La distributivité fait apparaître a ∧ b : on arrive à a ≤ b."
+ },
+ {
+  "code": "80-239",
+  "a_dire": "Si b n'est pas sous c, un atome est sous b mais pas sous c.",
+  "legende_titre": "Trouver l'atome qui sépare",
+  "lecture": [
+   "Les rangées montrent b = 6, c = 10 et c′ = 3.",
+   "La rangée du bas, b ∧ c′, a une seule case verte : 3.",
+   "Le 3 est dans 6 mais pas dans 10."
+  ],
+  "a_voir": "Les rangées montrent b = 6, c = 10 et c′ = 3."
+ },
+ {
+  "code": "80-240",
+  "a_dire": "La preuve de l'étape 4 : b ∧ c′ n'est pas O, un atome est dessous, et il n'est pas sous c.",
+  "legende_titre": "Cinq pas vers l'atome",
+  "lecture": [
+   "Les boîtes se lisent de haut en bas avec le cas 6 et 10.",
+   "La boîte orange est l'étape décisive.",
+   "La boîte verte donne l'atome 3 : sous 6, pas sous 10."
+  ],
+  "a_voir": "Les boîtes se lisent de haut en bas avec le cas 6 et 10."
+ }
+]

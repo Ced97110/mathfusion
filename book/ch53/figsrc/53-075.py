@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+y, h = 18, 12
+box(ax, 33, 44, 22, 12, 'sujet', label='clé : 3')
+box(ax, 3, y, 16, h, 'fixe', label='clair')
+box(ax, 36, y, 16, h, 'fixe', label='chiffré')
+box(ax, 69, y, 16, h, 'fixe', label='clair')
+arrow(ax, (19.5, y + h / 2), (35.5, y + h / 2), 'varie')
+arrow(ax, (52.5, y + h / 2), (68.5, y + h / 2), 'varie')
+text(ax, 27.5, y + h / 2 + 3.5, '+ 3', 'varie', 'm')
+text(ax, 60.5, y + h / 2 + 3.5, '− 3', 'varie', 'm')
+line(ax, [(40, 44), (28, 33)], 'sujet', dash=True)
+line(ax, [(48, 44), (60, 33)], 'sujet', dash=True)
+text(ax, 27.5, 10, 'Léa chiffre', 'fixe', 's')
+text(ax, 60.5, 10, 'Hugo déchiffre', 'fixe', 's')
+text(ax, 44, 3, 'même clé des deux côtés', 'sujet', 's')
+save(fig, '53-075')

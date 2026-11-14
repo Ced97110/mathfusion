@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 52, 32, 12, 'sujet', label=r'$4{,}32\div1{,}8$', size='m'); box(ax, 52, 52, 32, 12, 'autre', label=r'$43{,}2\div18$', size='m')
+arrow(ax, (37, 58), (51, 58), 'varie')
+text(ax, 44, 65, r'$\times10$ ; $\times10$', 'varie', 's')
+arrow(ax, (20, 51), (38, 36), 'resultat'); arrow(ax, (68, 51), (50, 36), 'resultat')
+box(ax, 28, 24, 32, 11, 'resultat', label='2,4', size='l')
+text(ax, 44, 17, 'même résultat', 'resultat', 's')
+text(ax, 44, 7, r'vérification : $18\times2{,}4=43{,}2$', 'fixe', 's')
+save(fig, '08-059')

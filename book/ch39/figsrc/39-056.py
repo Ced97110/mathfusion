@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# le module prolonge la valeur absolue : la droite devient un plan
+fig, ax = canvas(82)
+f = numberline(ax, 8, 80, 71, -4, 4, labels=False, arrow_right=False)
+disc(ax, f(-3), 71, 1.6, 'sujet')
+disc(ax, f(0), 71, 1.2, 'fixe')
+text(ax, f(-3), 66.5, '−3', 'sujet', 'm')
+text(ax, f(0), 66.5, '0', 'fixe', 'm')
+brace(ax, f(-3), f(0), 73.5, 'sujet', label='3', down=False)
+text(ax, 72, 63, '|−3| = 3', 'sujet', 'm')
+cx, cy, r = 44, 32, 27
+disc(ax, cx, cy, r, 'fixe', fill=False, lw=0.7)
+arrow(ax, (cx - 31, cy), (cx + 31, cy), 'fixe', lw=0.7)
+arrow(ax, (cx, cy - 29), (cx, cy + 29), 'fixe', lw=0.7)
+line(ax, [(cx, cy), (cx - r, cy)], 'sujet', lw=2.0)
+line(ax, [(cx, cy), (cx, cy + r)], 'autre', lw=2.0)
+disc(ax, cx - r, cy, 1.6, 'sujet')
+disc(ax, cx, cy + r, 1.6, 'autre')
+text(ax, cx - r - 1, cy - 4, '−3', 'sujet', 'm', ha='left')
+text(ax, cx + 3, cy + r - 3, '3i', 'autre', 'm', ha='left')
+text(ax, 75, 7, 'plan :\nmême distance', 'fixe', 's')
+text(ax, 15, 7, '|z| = √(a²) = |a|', 'fixe', 's')
+save(fig, '39-056')

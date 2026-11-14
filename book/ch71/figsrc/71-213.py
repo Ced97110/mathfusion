@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 50, 30, 11, 'autre', label='diag(16, 4)'); box(ax, 54, 50, 30, 11, 'resultat', label='diag(8, 2)')
+arrow(ax, (34, 55.5), (54, 55.5), 'varie'); text(ax, 44, 60, r'$u_i\div\sqrt{2}$', 'varie', 's')
+text(ax, 69, 45, 'valeurs propres de A', 'resultat', 's')
+arrow(ax, (8, 30), (13, 30), 'sujet', lw=1.5); text(ax, 6, 25.5, r'$u_1$', 'sujet', 's', ha='left')
+arrow(ax, (8, 16), (48, 16), 'resultat', lw=1.5); text(ax, 8, 11, r'$Au_1=8\,u_1$', 'resultat', 's', ha='left')
+brace(ax, 8, 48, 19.5, 'resultat', down=False, label='8 fois plus long', depth=1.6)
+text(ax, 70, 30, 'même direction', 'fixe', 's'); text(ax, 70, 24, 'que u₁', 'fixe', 's')
+save(fig, '71-213')

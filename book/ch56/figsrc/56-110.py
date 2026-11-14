@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+assert 1 + 3 == 4 and 2 * 2 == 4
+box(ax, 34, 54, 20, 10, 'sujet', label='4', size='l')
+text(ax, 56, 59, 'norme 16', 'fixe', 's', ha='left')
+line(ax, [(40, 54), (15.5, 35)], 'fixe')
+line(ax, [(48, 54), (60, 35)], 'fixe')
+box(ax, 3, 22, 10, 10, 'sujet', label='2', size='m')
+text(ax, 15.5, 27, '×', 'fixe', 'm')
+box(ax, 18, 22, 10, 10, 'sujet', label='2', size='m')
+box(ax, 34, 22, 24, 10, 'autre', label=r'$1+\sqrt{3}\,i$', size='s')
+text(ax, 61.5, 27, '×', 'fixe', 'm')
+box(ax, 65, 22, 21, 10, 'autre', label=r'$1-\sqrt{3}\,i$', size='s')
+text(ax, 15.5, 16.5, 'normes : 4 et 4', 'fixe', 's')
+text(ax, 60, 16.5, 'normes : 4 et 4', 'fixe', 's')
+text(ax, 44, 9.5, 'la norme baisse : existence', 'resultat', 's')
+text(ax, 44, 3.5, r'2 pas associé à $1+\sqrt{3}\,i$ : pas unique', 'limite', 's')
+save(fig, '56-110')

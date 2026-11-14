@@ -1,0 +1,283 @@
+[
+ {
+  "code": "36-097",
+  "a_dire": "L'écriture sin⁻¹ des sources anglaises se lit « l'angle dont le sinus vaut le nombre donné » ; ce n'est pas 1/sin.",
+  "legende_titre": "Une flèche du nombre vers l'angle",
+  "lecture": [
+   "La case grise est le nombre 0,5 ; la case verte est l'angle 30°.",
+   "La flèche orange va du nombre vers l'angle : c'est ce que fait sin⁻¹.",
+   "La case rouge barrée montre ce que sin⁻¹ ne veut pas dire : 1/sin 30° = 2.",
+   "La case bleue du bas donne le nom français du même angle : arcsin."
+  ],
+  "a_voir": "Que sin⁻¹ 0,5 donne l'angle 30°, et non l'inverse 2."
+ },
+ {
+  "code": "36-098",
+  "a_dire": "Avec deux angles et un côté : on trouve le troisième angle avec 180°, on divise le côté connu par le sinus de son angle, puis on multiplie par le sinus de chaque autre angle.",
+  "legende_titre": "Deux angles, un côté : les étapes chiffrées",
+  "lecture": [
+   "Le triangle bleu a ses angles 40° et 80° et son côté de 5 cm écrits en bleu.",
+   "L'angle de 60° et les côtés de 3,26 cm et 4,40 cm, en vert, sont ce que l'on trouve.",
+   "Les cases orange sont les deux premières étapes : 180° − 40° − 80°, puis 5 ÷ sin 80°.",
+   "Les cases vertes sont les deux dernières : 5,077 fois le sinus de chaque angle."
+  ],
+  "a_voir": "Les quatre étapes dans l'ordre, avec les nombres du triangle."
+ },
+ {
+  "code": "36-099",
+  "a_dire": "Le plus petit angle fait face au plus petit côté et le plus grand angle au plus grand côté.",
+  "legende_titre": "Les angles et les côtés dans le même ordre",
+  "lecture": [
+   "Le triangle a ses angles 40°, 60° et 80° en bleu et ses côtés 3,26, 4,40 et 5 en vert.",
+   "Les trois barres vertes ont pour hauteur les côtés, du plus petit au plus grand.",
+   "Sous chaque barre, l'angle en face de ce côté : 40°, 60°, 80°, lui aussi du plus petit au plus grand."
+  ],
+  "a_voir": "L'ordre des barres est le même que l'ordre des angles écrits dessous."
+ },
+ {
+  "code": "36-100",
+  "a_dire": "Avec les trois côtés 5, 4 et 8, la loi des cosinus donne le cosinus de l'angle en face de 8, puis l'angle par l'arc cosinus : environ 125,10°.",
+  "legende_titre": "Trois côtés connus, un angle cherché",
+  "lecture": [
+   "Le triangle bleu a ses trois côtés écrits : 8 en bas, 5 à gauche, 4 à droite.",
+   "L'arc orange marque l'angle thêta, en face du côté de 8.",
+   "Les deux points d'interrogation gris sont les deux autres angles, pas encore calculés.",
+   "Les deux lignes du haut donnent le calcul du cosinus puis la valeur de thêta, en vert."
+  ],
+  "a_voir": "Que thêta est l'angle en face du plus grand côté et qu'il est large."
+ },
+ {
+  "code": "36-101",
+  "a_dire": "Un cosinus négatif annonce un angle obtus : sur le cercle, le point est à gauche du centre.",
+  "legende_titre": "Le signe du cosinus avant la valeur de l'angle",
+  "lecture": [
+   "La demi-ronde grise est le cercle unité ; le cosinus est l'abscisse du point.",
+   "Le point bleu à 50° est à droite : cosinus positif, angle aigu.",
+   "Le point orange à 130° est à gauche : cosinus négatif, angle obtus.",
+   "Le point gris à 90° est sur la verticale : cosinus nul."
+  ],
+  "a_voir": "Les points à gauche du centre sont ceux des angles obtus."
+ },
+ {
+  "code": "36-102",
+  "a_dire": "Entre 0° et 180°, une valeur du cosinus est atteinte une seule fois ; une valeur du sinus entre 0 et 1 est atteinte deux fois.",
+  "legende_titre": "Une hauteur coupe deux fois, une abscisse une fois",
+  "lecture": [
+   "À gauche, le trait bleu horizontal est la hauteur 0,5 : il coupe le cercle en deux points, 30° et 150°.",
+   "À droite, le trait violet vertical est l'abscisse 0,5 : il coupe le cercle en un seul point, 60°.",
+   "Le trait gris à −0,5 coupe le cercle en 120° : c'est une autre valeur du cosinus."
+  ],
+  "a_voir": "Deux points à gauche, un seul point violet à droite."
+ },
+ {
+  "code": "36-103",
+  "a_dire": "Entre 0° et 180°, le cosinus donne un seul angle alors que le sinus peut en donner deux : c'est la cause du cas ambigu.",
+  "legende_titre": "Un angle d'un côté, deux angles de l'autre",
+  "lecture": [
+   "La droite du haut va de 0° à 180° : le cosinus −0,575 y marque un seul point vert, 125,10°.",
+   "La droite du bas va aussi de 0° à 180° : le sinus 0,7143 y marque deux points orange, 45,58° et 134,42°.",
+   "Les deux droites ont la même graduation, de 30° en 30°."
+  ],
+  "a_voir": "Un point sur la droite du haut, deux points sur celle du bas."
+ },
+ {
+  "code": "36-104",
+  "a_dire": "Quand l'angle donné est obtus (100°), le second angle candidat (128,02°) est exclu : il ne reste qu'un triangle, avec 51,98°.",
+  "legende_titre": "Un angle de 100° : un des deux candidats tombe",
+  "lecture": [
+   "À gauche, le triangle bleu a l'angle de 100°, les côtés 4 et 5 et l'angle de 51,98° en orange : il se ferme.",
+   "À droite, la base grise porte 100° et 128,02° : les deux traits rouges en tirets s'écartent et ne se rejoignent pas.",
+   "Le candidat 128,02° est donc exclu."
+  ],
+  "a_voir": "Les traits rouges de droite ne se rencontrent pas."
+ },
+ {
+  "code": "36-105",
+  "a_dire": "Un angle candidat B est retenu seulement si A + B reste plus petit que 180°.",
+  "legende_titre": "La somme des angles contre la barre de 180°",
+  "lecture": [
+   "Chaque ligne additionne l'angle connu A (case bleue) et un candidat B (case orange).",
+   "La ligne grise en tirets marque 180°.",
+   "Les trois premières sommes (75,58°, 164,42°, 151,98°) sont plus petites que 180° : candidats gardés, en vert.",
+   "La dernière somme, 228,02°, dépasse 180° : candidat refusé, en rouge."
+  ],
+  "a_voir": "Un candidat est gardé quand A + B reste plus petit que 180° ; seule la dernière ligne dépasse."
+ },
+ {
+  "code": "36-106",
+  "a_dire": "Le cas ambigu est donné par un angle (35°), le côté qui le touche (18,7) et le côté en face (16,1).",
+  "legende_titre": "Les trois données du cas ambigu",
+  "lecture": [
+   "L'angle bleu de 35° est formé par deux droites grises et bleues.",
+   "Le trait bleu épais est le côté de 18,7 qui touche cet angle.",
+   "La droite grise porte le troisième côté.",
+   "L'arc violet en tirets est le côté de 16,1 : sa mesure est donnée, sa place est à chercher."
+  ],
+  "a_voir": "Un angle, un côté qui le touche, un côté en face."
+ },
+ {
+  "code": "36-107",
+  "a_dire": "B₂ est le point le plus loin de A et donne l'angle aigu ; B₁ est le plus proche et donne l'angle obtus.",
+  "legende_titre": "Deux points sur la droite, deux angles",
+  "lecture": [
+   "Le sommet C est en haut ; le sommet A est à gauche de la droite grise.",
+   "B₂ (bleu) est à 27,33 de A : l'angle en B₂ est de 41,77°, aigu.",
+   "B₁ (violet) est à 3,31 de A : l'angle en B₁ est de 138,23°, obtus.",
+   "Les deux flèches sous la droite montrent ces deux distances."
+  ],
+  "a_voir": "Le point lointain va avec l'angle aigu, le point proche avec l'angle obtus."
+ },
+ {
+  "code": "36-108",
+  "a_dire": "Méthode 1 : on calcule la hauteur et on la compare aux deux côtés ; si h < a < b, il y a deux triangles.",
+  "legende_titre": "Comparer la hauteur aux deux côtés",
+  "lecture": [
+   "La case orange calcule la hauteur : 18,7 fois sin 35°, soit environ 10,73.",
+   "Sur la droite graduée, h (bleu), a (violet) et b (gris) sont rangés : h < a < b.",
+   "La case orange suivante donne sin B ≈ 0,6662.",
+   "La case verte donne les deux angles : 41,77° ou 138,23°."
+  ],
+  "a_voir": "Les trois nombres h, a, b rangés du plus petit au plus grand."
+ },
+ {
+  "code": "36-109",
+  "a_dire": "Méthode « papillon » : la loi des cosinus, rangée selon les puissances de c, devient une équation du second degré en c.",
+  "legende_titre": "De la loi des cosinus à une équation en c",
+  "lecture": [
+   "La ligne bleue du haut est la loi des cosinus ; la ligne grise en dessous remplace a, b et cos A par leurs nombres.",
+   "La flèche orange dit de tout passer du même côté.",
+   "Les trois cases donnent les trois morceaux : c² (bleu), −30,64 c (orange) et 90,48 sans c (gris), le tout égal à 0.",
+   "Le trait vert du bas nomme le résultat : une équation du second degré en c."
+  ],
+  "a_voir": "Les trois morceaux : avec c², avec c, sans c."
+ },
+ {
+  "code": "36-110",
+  "a_dire": "L'équation c² − p c + q = 0 se lit avec p = 2b cos A et q = b² − a² ; ici p ≈ 30,64 et q = 90,48.",
+  "legende_titre": "Lire p et q dans l'équation",
+  "lecture": [
+   "Le titre bleu est l'équation c² − p c + q = 0.",
+   "La case orange calcule p avec les nombres : 2 × 18,7 × 0,8192, soit environ 30,64.",
+   "La case violette calcule q : 18,7² − 16,1², soit 90,48.",
+   "La case verte du bas recopie l'équation avec ces deux nombres."
+  ],
+  "a_voir": "p et q sortent des données, l'équation ne garde que c."
+ },
+ {
+  "code": "36-111",
+  "a_dire": "L'équation donne deux racines positives, c ≈ 3,31 et c ≈ 27,33 : deux longueurs possibles, donc deux triangles.",
+  "legende_titre": "Deux racines de part et d'autre du milieu",
+  "lecture": [
+   "En haut, les nombres de l'équation sont 30,64 et 90,48 ; delta vaut environ 576,9 et sa racine carrée environ 24,02.",
+   "Le point gris est au milieu, 15,32, moitié de 30,64.",
+   "Les flèches orange partent du milieu de 12,01 vers la gauche et vers la droite.",
+   "Elles arrivent aux deux points verts de l'axe c : 3,31 et 27,33, deux longueurs possibles."
+  ],
+  "a_voir": "Les deux racines sont deux longueurs c positives, à la même distance du milieu."
+ },
+ {
+  "code": "36-112",
+  "a_dire": "La lettre grecque Δ (delta) note le discriminant p² − 4q, parce que la lettre D est déjà prise par le pied de la hauteur.",
+  "legende_titre": "Une nouvelle lettre pour le discriminant",
+  "lecture": [
+   "La case grise rappelle l'ancienne lettre D du chapitre 23.",
+   "La flèche orange la remplace par la case bleue Δ.",
+   "Dessous, Δ = p² − 4q vaut ici 938,8 − 361,9, soit environ 576,9, en vert.",
+   "Le petit triangle gris montre pourquoi : D y est le pied de la hauteur."
+  ],
+  "a_voir": "Δ remplace D, qui désigne déjà un point du triangle."
+ },
+ {
+  "code": "36-113",
+  "a_dire": "Δ = p² − 4q = 4(a² − h²) : les deux écritures donnent le même nombre, ici 96 pour 30°, 10 et 7.",
+  "legende_titre": "Deux écritures du même nombre",
+  "lecture": [
+   "La barre du haut a 300 de long (p²) : une partie grise de 204 (4q) et une partie verte de 96.",
+   "Dessous, quatre carrés verts valent 4 fois 24, avec 24 = 49 − 25.",
+   "La longueur verte est la même en haut et en bas : 96."
+  ],
+  "a_voir": "La partie verte du haut et les quatre carrés du bas ont la même longueur."
+ },
+ {
+  "code": "36-114",
+  "a_dire": "Le signe de Δ est le signe de a − h : Δ < 0 donne aucun triangle, Δ = 0 un seul, Δ > 0 deux, sauf si a est plus grand que b.",
+  "legende_titre": "La longueur a comparée à h et à b",
+  "lecture": [
+   "Les deux traits verticaux gris marquent h = 5 et b = 10 (angle de 30°, côté de 10).",
+   "Chaque barre bleue a pour longueur a : 4, 5, 7 puis 12.",
+   "À droite de chaque barre, la valeur de Δ et le nombre de triangles.",
+   "Pour a = 12, la barre dépasse b : Δ est positif mais il n'y a qu'un triangle, en orange."
+  ],
+  "a_voir": "Δ change de signe quand la barre passe le trait h."
+ },
+ {
+  "code": "36-115",
+  "a_dire": "Le produit des deux racines est q = b² − a², sans calculer les racines.",
+  "legende_titre": "Le produit des racines est le terme sans c",
+  "lecture": [
+   "En haut, l'équation c² − 7c + 12 = 0 a pour racines 3 et 4.",
+   "Le rectangle bleu a 3 carreaux de haut et 4 de large : ses 12 carreaux sont le produit 3 × 4, égal à q.",
+   "Le long rectangle vert a pour côtés 27,33 et 3,31 : son aire, environ 90,46, est proche de q = 90,48."
+  ],
+  "a_voir": "L'aire du rectangle des deux racines est le terme sans c."
+ },
+ {
+  "code": "36-116",
+  "a_dire": "Si a est plus grand que b, le produit des racines q = b² − a² est négatif : une racine est négative et est écartée.",
+  "legende_titre": "Un produit négatif : une racine de chaque côté de 0",
+  "lecture": [
+   "En haut (a = 12 > b = 10), q = −44 : un point rouge à gauche de 0 (−2,25) et un point vert à droite (19,57).",
+   "Le point rouge est refusé : une longueur n'est pas négative.",
+   "En bas (a = 7 < b = 10), q = 51 : les deux points verts, 3,76 et 13,56, sont à droite de 0."
+  ],
+  "a_voir": "En haut un point passe à gauche de 0, en bas aucun."
+ },
+ {
+  "code": "36-117",
+  "a_dire": "Le cercle de rayon a coupe la demi-droite en 0, 1 ou 2 points, comme l'équation a 0, 1 ou 2 racines.",
+  "legende_titre": "Points du cercle et racines : les mêmes nombres",
+  "lecture": [
+   "Dans chaque dessin, la flèche grise est la demi-droite et le cercle a pour centre le point gris, à la hauteur h.",
+   "Pour a = 16,1, le cercle vert coupe la demi-droite en deux points : Δ > 0, deux racines.",
+   "Pour a égal à h, le cercle bleu la touche en un point : une racine.",
+   "Pour a = 10, le cercle rouge ne la touche pas : aucune racine."
+  ],
+  "a_voir": "Le nombre de points communs est le nombre de racines."
+ },
+ {
+  "code": "36-118",
+  "a_dire": "Méthode 3 : on calcule sin B ; s'il dépasse 1 on s'arrête, s'il vaut 1 l'angle est de 90°, s'il est plus petit que 1 on cherche les candidats B.",
+  "legende_titre": "Où tombe sin B par rapport à 1",
+  "lecture": [
+   "La formule bleue du haut donne sin B.",
+   "La droite graduée va de 0 à 1,4 ; la partie verte, avant 1, est celle des valeurs possibles.",
+   "La partie rouge, après 1, est celle où aucun angle n'existe.",
+   "Le point vert (a = 16,1) vaut 0,6662 ; le point rouge (a = 10) vaut 1,073."
+  ],
+  "a_voir": "Un point est avant 1, l'autre après."
+ },
+ {
+  "code": "36-119",
+  "a_dire": "Le sinus est la hauteur d'un point du cercle : au-dessus de 1 aucun angle ; égal à 1, l'angle de 90° ; en dessous de 1, deux angles à vérifier avec A + B < 180°.",
+  "legende_titre": "Trois hauteurs sur le cercle",
+  "lecture": [
+   "Le cercle gris est le cercle unité ; le sinus est la hauteur du point.",
+   "Le trait rouge, à 1,073, passe au-dessus du cercle : aucun triangle.",
+   "Le trait bleu, à 1, touche le haut du cercle : l'angle de 90°.",
+   "Le trait vert, à 0,6662, coupe le cercle en deux points : 41,77° et 138,23°."
+  ],
+  "a_voir": "Seul le trait vert coupe le cercle deux fois."
+ },
+ {
+  "code": "36-120",
+  "a_dire": "sin B > 1 revient à h > a : la méthode 3 est la comparaison de la méthode 1 écrite autrement.",
+  "legende_titre": "Deux comparaisons qui disent la même chose",
+  "lecture": [
+   "En haut, la barre bleue h ≈ 10,73 dépasse la barre grise a = 10, de la partie rouge.",
+   "En bas, la barre bleue sin B ≈ 1,073 dépasse la barre grise 1, de la même partie rouge.",
+   "La double flèche orange relie les deux lignes : h > a et sin B > 1 disent aucun triangle.",
+   "Le bas rappelle la division : sin B = h / a."
+  ],
+  "a_voir": "Le dépassement rouge est le même en haut et en bas."
+ }
+]

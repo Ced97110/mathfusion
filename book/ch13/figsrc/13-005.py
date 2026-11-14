@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+f = numberline(ax, 8, 70, 30, -3, 3, labels=False)
+text(ax, f(0), 35, '0', 'encre', 's', weight='bold')
+line(ax, [(f(0), 28.5), (f(0), 30)], 'encre')
+disc(ax, f(3), 30, 2, 'sujet'); text(ax, f(3), 24.5, 'départ : 3', 'sujet', 'm')
+arrow(ax, (f(3) - 1, 33), (f(0) + 1, 33), 'varie', curve=0.4); text(ax, (f(3) + f(0)) / 2, 44, 'descendre de 3', 'varie', 'm')
+arrow(ax, (f(0) - 1, 33), (f(-2) + 1, 33), 'varie', curve=0.5); text(ax, (f(0) + f(-2)) / 2, 39.5, 'encore 2', 'varie', 'm')
+disc(ax, f(-2), 30, 2, 'resultat')
+# the two pieces of information carried by the result
+brace(ax, f(-2), f(0), 25, 'resultat', label='distance : 2 pas', down=True)
+line(ax, [(f(0), 8), (f(0), 28)], 'fixe', dash=True)
+text(ax, f(-1.5), 13, 'côté : autre côté de 0', 'resultat', 's')
+text(ax, f(1.9), 13, 'côté du départ', 'sujet', 's')
+save(fig, '13-005')

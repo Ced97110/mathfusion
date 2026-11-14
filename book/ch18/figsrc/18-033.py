@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_box = box
+def box(ax, x, y, w, h, role='fixe', label=None, size='m', **k): return _box(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(74)
+box(ax, 24, 63, 40, 9, 'sujet', r'$x^2 + x^5$')
+box(ax, 2, 48, 40, 8, 'resultat', r'facteur $x^2$ : le plus petit', 's')
+box(ax, 46, 48, 40, 8, 'limite', r'facteur $x^5$ : le plus grand', 's')
+arrow(ax, (36, 63), (22, 56.5), 'varie'); arrow(ax, (52, 63), (66, 56.5), 'varie')
+box(ax, 2, 35, 40, 8.5, 'resultat', r'$x^2 \div x^2 = 1$')
+box(ax, 2, 24, 40, 8.5, 'resultat', r'$x^5 \div x^2 = x^3$')
+box(ax, 46, 35, 40, 8.5, 'limite', r'$x^2 \div x^5 = 4 \div 32$')
+box(ax, 46, 24, 40, 8.5, 'limite', r'$x^5 \div x^5 = 1$')
+text(ax, 22, 14, r'$x^2(1 + x^3)$', 'resultat', 'l')
+text(ax, 22, 7, 'un polynôme', 'resultat', 's')
+text(ax, 66, 14, r'$x$ au dénominateur', 'limite', 's')
+text(ax, 66, 7, 'plus un polynôme', 'limite', 's')
+save(fig, '18-033')

@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+ox, oy, S = 12, 22, 17.0
+X = lambda x, y: (ox + x * S, oy + y * S)
+line(ax, [X(0, 0), X(3.5, 3.5)], 'fixe', lw=1.0, dash=True)
+line(ax, [X(0, 0), X(3, 0), X(3, 1), X(0, 0)], 'varie', lw=1.3)
+line(ax, [X(0, 0), X(1, 0), X(1, 3), X(0, 0)], 'sujet', lw=1.3)
+disc(ax, *X(1, 3), 1.3, 'sujet'); disc(ax, *X(3, 1), 1.3, 'varie'); disc(ax, *X(0, 0), 1.3, 'encre')
+text(ax, X(1, 3)[0] + 2.5, X(1, 3)[1] + 1, r'$(a,\ b)$', 'sujet', 'm', ha='left')
+text(ax, X(3, 1)[0] - 0.5, X(3, 1)[1] + 4, r'$(b,\ a)$', 'varie', 'm', ha='right')
+text(ax, X(3.5, 3.5)[0] - 1, X(3.5, 3.5)[1] - 1, r'$y=x$', 'fixe', 'm', ha='right')
+text(ax, X(0.5, 0)[0], oy - 3.2, '1', 'sujet', 's'); text(ax, X(0.88, 1.5)[0], X(0.88, 1.5)[1], '3', 'sujet', 's', ha='right')
+text(ax, X(2, 0)[0], oy - 3.2, '3', 'varie', 's'); text(ax, X(3, 0.5)[0] + 2, X(3, 0.5)[1], '1', 'varie', 's', ha='left')
+text(ax, X(0.2, 2.6)[0] - 1, X(0.2, 2.6)[1] + 2, r'$1^2+3^2$', 'sujet', 's', ha='right')
+text(ax, X(1.9, 1.0)[0], X(1.9, 1.0)[1], r'$3^2+1^2$', 'varie', 's')
+def tick(p, q, role):
+    mx, my = (p[0] + q[0]) / 2, (p[1] + q[1]) / 2; d = math.hypot(q[0] - p[0], q[1] - p[1]); ux, uy = (q[0] - p[0]) / d, (q[1] - p[1]) / d
+    line(ax, [(mx - uy * 1.6, my + ux * 1.6), (mx + uy * 1.6, my - ux * 1.6)], role, 1.0)
+T = X(2, 2)
+line(ax, [T, X(1, 3)], 'sujet', 1.0); line(ax, [T, X(3, 1)], 'varie', 1.0)
+tick(T, X(1, 3), 'sujet'); tick(T, X(3, 1), 'varie'); disc(ax, *T, 1.3, 'resultat')
+text(ax, T[0] + 3, T[1] + 3, r'$(t,\ t)$', 'resultat', 's', ha='left')
+text(ax, 44, 10, 'les deux sommes : mêmes carrés', 'resultat', 'm')
+text(ax, 44, 4, 'symétriques selon $y=x$', 'resultat', 'm')
+save(fig, '33-071')

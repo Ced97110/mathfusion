@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(102)
+box(ax, 24, 88, 40, 10, 'sujet', label=r'$a(1 + a)$')
+box(ax, 24, 72, 40, 10, 'varie', label=r'$= a + a^2$')
+box(ax, 24, 56, 40, 10, 'varie', label=r'$= a + a = 0$')
+arrow(ax, (44, 88), (44, 82), 'varie'); text(ax, 48, 85, 'distributivité', 'varie', 's', ha='left')
+arrow(ax, (44, 72), (44, 66), 'varie'); text(ax, 48, 69, r'$a^2 = a$', 'varie', 's', ha='left')
+box(ax, 6, 36, 76, 12, 'fixe', label='dans un corps : un facteur est nul', size='s')
+arrow(ax, (44, 56), (44, 48), 'fixe')
+box(ax, 6, 10, 34, 12, 'resultat', label=r'$a = 0$'); box(ax, 48, 10, 34, 12, 'resultat', label=r'$a = 1$')
+arrow(ax, (26, 36), (23, 22), 'resultat'); arrow(ax, (62, 36), (65, 22), 'resultat')
+text(ax, 12, 29, r'$a$ est nul', 'resultat', 's'); text(ax, 69, 29, r'$1 + a = 0$', 'resultat', 's', ha='left')
+save(fig, '80-332')

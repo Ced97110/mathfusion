@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, 'la partie de M tuée par une', 'encre', 's')
+text(ax, 44, 52.5, 'puissance du nombre premier p', 'encre', 's')
+box(ax, 30, 33, 28, 14, 'sujet', label=r'$M_p$', size='l')
+box(ax, 4, 6, 38, 18, 'sujet', label=r'$p = 2$ : $M_2$' + '\n' + r'tuée par $2^k$')
+box(ax, 46, 6, 38, 18, 'autre', label=r'$p = 3$ : $M_3$' + '\n' + r'tuée par $3^k$')
+arrow(ax, (38, 33), (23, 24.5), 'sujet')
+arrow(ax, (50, 33), (65, 24.5), 'autre')
+save(fig, '60-045')

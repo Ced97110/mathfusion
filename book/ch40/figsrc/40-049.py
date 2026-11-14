@@ -1,0 +1,27 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+# r = 2a cos θ : cercle de centre (a ; 0), de rayon a, passant par O. a = 1 (r = 2 à 0°) et a = 3 (r = 6 à 0°)
+fig, ax = canvas(74)
+u = 8.5; o = (8, 36)
+def circ(a, role, dash=False):
+    line(ax, [(o[0] + u * 2 * a * math.cos(math.radians(t)) * math.cos(math.radians(t)), o[1] + u * 2 * a * math.cos(math.radians(t)) * math.sin(math.radians(t))) for t in range(0, 361, 3)], role, lw=1.4, dash=dash)
+circ(3, 'autre', dash=True)
+circ(1, 'sujet')
+arrow(ax, (o[0] - 5, o[1]), (o[0] + 6 * u + 5, o[1]), 'fixe', lw=0.8)
+# points à 0° (r = 2a) et centres (a ; 0)
+for a, role in [(1, 'sujet'), (3, 'autre')]:
+    disc(ax, o[0] + 2 * a * u, o[1], 1.3, role)
+    disc(ax, o[0] + a * u, o[1], 0.8, role, fill=False)
+for a, role in [(1, 'sujet'), (3, 'autre')]:
+    line(ax, [(o[0] + a * u, o[1]), (o[0] + a * u, o[1] + a * u)], role, lw=1.0)
+text(ax, o[0] + u + 1.2, o[1] + 0.55 * u, '$a$', 'sujet', 's', ha='left')
+text(ax, o[0] + 3 * u + 1.5, o[1] + 1.5 * u, 'rayon $a$', 'autre', 's', ha='left')
+disc(ax, o[0], o[1], 1.0, 'encre')
+text(ax, o[0] + 2 * u, o[1] + 5, '2', 'sujet', 's')
+text(ax, o[0] + 6 * u - 2, o[1] + 5, '6', 'autre', 's')
+text(ax, o[0] + u, o[1] - 5, '(1 ; 0)', 'sujet', 's')
+text(ax, o[0] + 3 * u + 1, o[1] - 5, '(3 ; 0)', 'autre', 's')
+text(ax, o[0] + 14, o[1] - 14, '$O$ : $r$ = 0 à 90°', 'encre', 's')
+text(ax, 44, 70, r'$r = 2a\cos\theta$', 'sujet', 'm')
+text(ax, o[0] + 3 * u, o[1] + 3 * u + 4, r'$a = 3$ : $r = 6$ à 0°', 'autre', 's')
+text(ax, o[0] + 3 * u, o[1] - 3 * u - 4, r'$a = 1$ : $r = 2$ à 0°', 'sujet', 's')
+save(fig, '40-049')

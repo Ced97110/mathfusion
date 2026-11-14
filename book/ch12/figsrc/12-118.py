@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, r'$a=5$ et $b=2$ : un seul choix', 'encre', 'm')
+box(ax, 4, 38, 38, 20, 'sujet'); text(ax, 23, 52, r'$4\,(a+b)$', 'sujet', 'm'); text(ax, 23, 44, r'$4\times7=28$', 'sujet', 'm')
+box(ax, 46, 38, 38, 20, 'sujet'); text(ax, 65, 52, r'$4a+4b$', 'sujet', 'm'); text(ax, 65, 44, r'$20+8=28$', 'sujet', 'm')
+text(ax, 44, 48, r'$=$', 'resultat', 'xl')
+box(ax, 14, 6, 60, 20, 'limite')
+text(ax, 44, 20, r'$a+b+21$ vaut aussi 28', 'limite', 's')
+text(ax, 44, 12, r'mais $1$ et $1$ : $23\neq8$', 'limite', 's')
+text(ax, 44, 31, 'un essai ne démontre rien', 'varie', 's')
+save(fig, '12-118')

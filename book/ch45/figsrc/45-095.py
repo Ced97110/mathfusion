@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 19, 62, 'avant', 'encre', 'm'); text(ax, 68, 62, 'après', 'encre', 'm')
+box(ax, 2, 46, 34, 9, 'fixe', label='rotations du carré', size='s'); box(ax, 2, 32, 34, 9, 'fixe', label='permutations', size='s')
+box(ax, 2, 18, 34, 9, 'autre', label='horloge (nombres)', size='s')
+box(ax, 50, 8, 36, 49, 'sujet'); text(ax, 68, 52, 'groupes de permutations', 'sujet', 's')
+box(ax, 52, 36, 32, 9, 'fixe', label='rotations du carré', size='s')
+box(ax, 52, 22, 32, 9, 'autre', label='horloge (nombres)', size='s')
+arrow(ax, (37, 22.5), (51, 26.5), 'varie'); text(ax, 43.5, 32, 'Cayley', 'varie', 's')
+save(fig, '45-095')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 38, 36, 14, 'sujet'); box(ax, 49, 38, 36, 14, 'autre')
+text(ax, 21, 45, r'$\sin^{-1}x$', 'sujet', 'xl'); text(ax, 67, 45, r'$\arcsin x$', 'autre', 'xl')
+text(ax, 44, 45, '=', 'encre', 'xl')
+text(ax, 21, 58, 'notation anglaise', 'sujet', 's'); text(ax, 67, 58, 'notation française', 'autre', 's')
+arrow(ax, (21, 37), (21, 30), 'sujet', lw=1.0); arrow(ax, (67, 37), (67, 30), 'autre', lw=1.0)
+text(ax, 21, 24.5, 'la règle qui défait', 'sujet', 's'); text(ax, 21, 20, 'le sinus', 'sujet', 's')
+text(ax, 67, 24.5, 'la même règle', 'autre', 's')
+box(ax, 8, 3, 72, 10, 'resultat', label=r'touche $\sin^{-1}$ : $0{,}5\ \to\ 30°$', size='m')
+save(fig, '33-079')

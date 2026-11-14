@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(55)
+text(ax, 44, 50, r'$73 \times 46$', 'encre', 'l')
+f = numberline(ax, 8, 80, 28, 3300, 4000, 100, labels=False, arrow_right=False)
+line(ax, [(f(4000), 28), (f(4000), 40)], 'limite', dash=True); text(ax, 82, 42.5, 'limite : 4 000', 'limite', 's', ha='right')
+disc(ax, f(3375), 28, 1.3, 'autre'); line(ax, [(f(3375), 29.5), (f(3375), 37)], 'autre'); text(ax, 19, 40, 'Malik 3 375', 'autre', 's')
+disc(ax, f(3500), 28, 1.3, 'varie'); line(ax, [(f(3500), 29.5), (f(3500), 37)], 'varie'); text(ax, 37, 40, 'Léa 3 500', 'varie', 's')
+disc(ax, f(3358), 28, 1.3, 'resultat'); line(ax, [(f(3358), 26.5), (f(3358), 22)], 'resultat'); text(ax, 16, 19.5, 'vrai 3 358', 'resultat', 's')
+text(ax, 44, 8, 'les deux restent sous 4 000', 'resultat', 's')
+save(fig, '10-019')

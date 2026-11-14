@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 44, 82, r'on suppose $m>n$ : ici $m=3$, $n=2$', 'fixe', 's')
+box(ax, 6, 62, 30, 9, 'varie', label=r'$u_1=(3,1)$', size='s')
+box(ax, 38, 62, 30, 9, 'varie', label=r'$u_2=(1,2)$', size='s')
+brace(ax, 6, 68, 62, 'varie', label=r'$n=2$ échanges : ils engendrent $V$', down=True)
+box(ax, 6, 28, 30, 9, 'limite', dash=True, label=r'$u_3=(-1,3)$', size='s')
+arrow(ax, (37, 41), (21, 38), 'varie', curve=0.0)
+text(ax, 40, 44, 's’écrit avec eux', 'varie', 's', ha='left')
+text(ax, 44, 21, r'$(-1,3)=-1\,(3,1)+2\,(1,2)$', 'resultat', 's')
+box(ax, 6, 4, 76, 11, 'limite', label=r'$u_3$ non indépendant : contradiction', size='s', weight='bold')
+save(fig, '58-177')

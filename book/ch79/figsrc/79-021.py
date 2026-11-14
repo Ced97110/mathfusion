@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(94)
+text(ax, 44, 89, 'réels : toujours comparables', 'resultat', 's')
+f = numberline(ax, 8, 76, 72, 0, 8, arrow_right=False)
+disc(ax, f(3.5), 72, 1.8, 'sujet'); disc(ax, f(7), 72, 1.8, 'sujet')
+text(ax, f(3.5), 77, '3,5', 'sujet', 's'); text(ax, f(7), 77, '7', 'sujet', 's')
+arrow(ax, (f(3.5), 62), (f(7), 62), 'resultat'); text(ax, (f(3.5) + f(7)) / 2, 57, '3,5 ≤ 7', 'resultat', 's')
+line(ax, [(4, 45), (84, 45)], 'fixe', dash=True)
+text(ax, 44, 33, 'diviseurs : parfois incomparables', 'limite', 's')
+box(ax, 8, 12, 20, 9, 'sujet', label='12'); box(ax, 60, 12, 20, 9, 'sujet', label='20')
+arrow(ax, (29, 19.5), (59, 19.5), 'limite'); arrow(ax, (59, 14), (29, 14), 'limite')
+text(ax, 44, 24, '12 ne divise pas 20', 'limite', 's'); text(ax, 44, 9, '20 ne divise pas 12', 'limite', 's')
+save(fig, '79-021')

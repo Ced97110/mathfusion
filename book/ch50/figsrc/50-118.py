@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, r'$|Q|=2=p^1$', 'sujet', 'm')
+text(ax, 19, 57, 'stabilisateur dans $Q$', 'sujet', 's')
+text(ax, 69, 57, 'orbite sous $Q$', 'resultat', 's')
+box(ax, 8, 40, 11, 9, 'sujet', label='$e$'); box(ax, 19, 40, 11, 9, 'sujet', label=r'$s_B$')
+box(ax, 8, 18, 11, 9, 'sujet', label='$e$'); box(ax, 19, 18, 11, 9, 'fixe', label=r'$s_B$')
+arrow(ax, (32, 44.5), (50, 44.5), 'varie'); arrow(ax, (32, 22.5), (50, 22.5), 'varie')
+box(ax, 52, 40, 34, 9, 'resultat', label=r'$P_B$ : taille $1=p^0$', size='s')
+box(ax, 52, 18, 34, 9, 'resultat', label=r'$P_A$ : taille $2=p^1$', size='s')
+text(ax, 44, 7, r'tailles possibles : $1,\ p,\ p^2,\dots$', 'encre', 's')
+save(fig, '50-118')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 44, 74, r'$G$ : 4 éléments ; $H$ : 2 éléments', 'encre', 's')
+text(ax, 23, 66, 'paquet 1', 'sujet', 's')
+text(ax, 65, 66, 'paquet 2', 'autre', 's')
+box(ax, 4, 44, 38, 16, 'sujet', fill=False)
+box(ax, 46, 44, 38, 16, 'autre', fill=False)
+for k, (x, role) in enumerate([(14, 'sujet'), (32, 'sujet'), (56, 'autre'), (74, 'autre')]):
+    disc(ax, x, 52, 5, role, label=rf'$\eta_{k + 1}$')
+arrow(ax, (23, 43.5), (23, 36), 'sujet')
+arrow(ax, (65, 43.5), (65, 36), 'autre')
+box(ax, 4, 25, 38, 10, 'sujet', label='somme du paquet', size='s')
+box(ax, 46, 25, 38, 10, 'autre', label='somme du paquet', size='s')
+arrow(ax, (23, 24.5), (34, 16), 'resultat')
+arrow(ax, (65, 24.5), (54, 16), 'resultat')
+box(ax, 10, 4, 68, 11, 'resultat', label='les deux sommes = somme sur $G$', size='s')
+save(fig, '67-149')

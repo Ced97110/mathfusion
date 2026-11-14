@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,60,'se lit « phi de k »','encre','m')
+text(ax,38,45,r'$\varphi$','sujet','xl'); text(ax,50,45,r'$(k)$','varie','xl')
+box(ax,4,24,38,10,'sujet',label='nom de la fonction',size='s')
+box(ax,46,24,38,10,'varie',label='entier positif choisi',size='s')
+arrow(ax,(36,41),(23,35),'sujet'); arrow(ax,(52,41),(65,35),'varie')
+brace(ax,4,84,22,'resultat')
+box(ax,14,2,60,15,'resultat',label='\n'.join(['nombre de classes','inversibles']),size='m')
+save(fig,'52-088')

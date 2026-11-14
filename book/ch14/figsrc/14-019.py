@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,6,60,r'$8x^3$','sujet','l',ha='left'); text(ax,24,60,r'$x = 2$','fixe','m',ha='left')
+box(ax,6,44,12,9,'fixe',label='8')
+for i in range(3): box(ax,20+14*i,44,12,9,'sujet',label=r'$\times 2$' if True else '')
+box(ax,64,44,18,9,'resultat',label='= 64')
+text(ax,41,39.5,'seul $x$ porte l’exposant','sujet','s')
+text(ax,6,32,r'$(8x)^3$','autre','l',ha='left')
+for i in range(3): box(ax,6+18*i,14,14,9,'autre',label='16' if i==0 else r'$\times 16$')
+box(ax,62,14,20,9,'resultat',label='= 4 096')
+text(ax,44,9,'8x est répété 3 fois','autre','s')
+save(fig,'14-019')

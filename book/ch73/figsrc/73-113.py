@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 8, 30, 40, 'sujet', fill=False)
+box(ax, 56, 8, 30, 40, 'resultat', fill=False)
+text(ax, 17, 53, r'$E(n)$', 'sujet', 'l'); text(ax, 71, 53, r'$O(n)$', 'resultat', 'l')
+text(ax, 17, 40, r'$(A, x)$', 'sujet', 'l')
+box(ax, 5, 15, 24, 10, 'varie', label='translations')
+text(ax, 71, 40, r'$A$', 'resultat', 'l')
+disc(ax, 71, 20, 5, 'resultat', label=r'$I$')
+arrow(ax, (34, 40), (54, 40), 'varie', lw=1.4); text(ax, 44, 44.5, r'$(A,x)\mapsto A$', 'varie', 's'); text(ax, 44, 36, r'oublie $x$', 'varie', 's')
+arrow(ax, (30.5, 20), (65, 20), 'resultat', lw=1.4); text(ax, 44, 24.5, r'noyau : $A=I$', 'resultat', 's')
+text(ax, 44, 3.5, r'$(A,x)(B,y)\ \mapsto\ AB$', 'encre', 'm')
+save(fig, '73-113')

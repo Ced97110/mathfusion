@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 8, 54, 20, 16, 'sujet', label=r'$g$', size='xl')
+box(ax, 34, 54, 20, 16, 'varie', label=r'$\mid$', size='xl')
+box(ax, 60, 54, 20, 16, 'autre', label=r'$f$', size='xl')
+text(ax, 18, 48, 'diviseur', 'sujet', 's')
+text(ax, 44, 48, 'divise', 'varie', 's')
+text(ax, 70, 48, 'multiple', 'autre', 's')
+text(ax, 44, 76, r'« $g$ divise $f$ »', 'encre', 'm')
+text(ax, 44, 34, r'$12\mid156$', 'resultat', 'l')
+text(ax, 44, 22, r'$(x-1)\mid(x^2-1)$', 'resultat', 'l')
+text(ax, 44, 10, 'un trait vertical, pas une fraction', 'fixe', 's')
+save(fig, '54-162')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+gx = lambda x: 6 + (x - 2) * 7; gy = lambda y: 6 + (y - 1) * 7
+line(ax, [(gx(3), gy(1)), (gx(6), gy(7))], 'sujet', lw=1.3)
+P, Q, R = (gx(4), gy(3)), (gx(5.5), gy(6)), (gx(5.5), gy(3))
+arrow(ax, P, R, 'resultat', lw=1.2); arrow(ax, R, Q, 'varie', lw=1.2)
+disc(ax, *P, 1.1, 'sujet'); disc(ax, *Q, 1.1, 'autre')
+text(ax, P[0] - 2, P[1] + 3.5, r'$(4,\,3)$', 'sujet', 's', ha='right')
+text(ax, Q[0] - 2, Q[1] + 2, r'$(x,\,y)$', 'autre', 's', ha='right')
+text(ax, (P[0] + R[0]) / 2, P[1] - 3, r'$x-4$', 'resultat', 's')
+text(ax, R[0] + 2, (R[1] + Q[1]) / 2, r'$y-3$', 'varie', 's', ha='left')
+text(ax, 22, 56, 'pente 2 connue', 'sujet', 's')
+box(ax, 46, 44, 40, 12, 'fixe', label=r'$\frac{y-3}{x-4}=2$')
+box(ax, 46, 26, 40, 11, 'fixe', label=r'$y-3=2(x-4)$')
+box(ax, 46, 8, 40, 11, 'resultat', label=r'$y=2x-5$')
+arrow(ax, (66, 44), (66, 37.5), 'varie'); arrow(ax, (66, 26), (66, 19.5), 'varie')
+text(ax, 85, 40.7, '× (x − 4)', 'varie', 's', ha='right'); text(ax, 85, 22.7, 'on développe', 'varie', 's', ha='right')
+save(fig, '19-099')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 58, 'départ', 'sujet', 'm')
+text(ax, 66, 58, 'on barre les x', 'limite', 'm')
+box(ax, 6, 40, 32, 13, 'sujet', label=r'$\frac{x-2}{x-4}$', size='l')
+box(ax, 50, 40, 32, 13, 'limite', label=r'$\frac{-2}{-4}$', size='l')
+arrow(ax, (39, 46.5), (49, 46.5), 'varie')
+text(ax, 22, 27, r'$x=6$ : $\frac{4}{2}=2$', 'resultat', 'l')
+text(ax, 66, 27, r'$\frac{-2}{-4}=\frac{1}{2}$', 'limite', 'l')
+arrow(ax, (22, 39), (22, 33.5), 'varie')
+arrow(ax, (66, 39), (66, 33.5), 'varie')
+text(ax, 44, 10, r'$2\neq\frac{1}{2}$', 'encre', 'l')
+save(fig, '21-050')

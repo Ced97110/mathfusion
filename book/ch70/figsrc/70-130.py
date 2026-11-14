@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 38, 78, r'degré 2 en $x$', 'fixe', 's')
+text(ax, 66, 78, r'degré 0 en $x$', 'fixe', 's')
+c1, c2, w, h = 28, 56, 20, 11
+text(ax, 22, 62.5, r'$f$', 'sujet', 'm', ha='right')
+box(ax, c1, 57, w, h, 'sujet', label=r'$x^2$')
+box(ax, c2, 57, w, h, 'sujet', label=r'$-c$')
+text(ax, 22, 40.5, r'$-\,x\,g$', 'autre', 'm', ha='right')
+box(ax, c1, 35, w, h, 'autre', label=r'$x^2$')
+box(ax, c2, 35, w, h, 'fixe', fill=False, dash=True)
+line(ax, [(3, 29.5), (84, 29.5)], 'fixe', lw=0.8)
+text(ax, 22, 18.5, r'$f-xg$', 'encre', 'm', ha='right')
+box(ax, c1, 13, w, h, 'varie', label=r'$0$', dash=True)
+box(ax, c2, 13, w, h, 'resultat', label=r'$-c$')
+text(ax, 66, 5, r'plus de $x$ : reste $-c$', 'resultat', 's')
+save(fig, '70-130')

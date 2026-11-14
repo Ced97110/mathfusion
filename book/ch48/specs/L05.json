@@ -1,0 +1,188 @@
+[
+ {
+  "code": "48-065",
+  "a_dire": "Si H′ est normal dans G′, alors f⁻¹(H′) est normal dans G.",
+  "legende_titre": "Une règle qui se transmet",
+  "lecture": [
+   "À droite en bleu, les positions 0 et 2 forment H′, un sous-groupe normal de G′.",
+   "À gauche en bleu, les entiers pairs forment f⁻¹(H′), l'image réciproque de H′.",
+   "L'entier pair 6 conjugué par 3 donne 3 + 6 − 3 = 6, qui reste pair (vert)."
+  ],
+  "a_voir": "Le conjugué d'un élément de f⁻¹(H′) reste dans f⁻¹(H′)."
+ },
+ {
+  "code": "48-066",
+  "a_dire": "La preuve part de h dans f⁻¹(H′), utilise la normalité de H′ à la troisième étape et arrive à g⁻¹hg dans f⁻¹(H′).",
+  "legende_titre": "Les trois étapes de la preuve",
+  "lecture": [
+   "La case bleue du haut est le départ : h dans l'image réciproque et g dans G.",
+   "Les deux cases grises sont les étapes de calcul : f respecte le produit, puis f(h) est dans H′.",
+   "La case orange est l'étape qui porte le poids : H′ est normal, donc le conjugué reste dans H′.",
+   "La case verte du bas est l'arrivée : g⁻¹hg est dans f⁻¹(H′)."
+  ],
+  "a_voir": "Seule l'étape orange utilise la normalité de H′."
+ },
+ {
+  "code": "48-067",
+  "a_dire": "L'image réciproque de {0̄, 2̄} est 2ℤ, les entiers pairs, et elle contient le noyau 4ℤ.",
+  "legende_titre": "Les entiers envoyés sur 0 ou 2",
+  "lecture": [
+   "Les disques sont les entiers de 0 à 9.",
+   "Les disques bleus et verts sont les entiers pairs : ils forment l'image réciproque de {0̄, 2̄}.",
+   "Les disques verts, 0, 4 et 8, sont les multiples de 4, c'est-à-dire le noyau.",
+   "Les disques gris sont les entiers impairs."
+  ],
+  "a_voir": "Tous les disques verts sont aussi pairs : le noyau est dans l'image réciproque."
+ },
+ {
+  "code": "48-068",
+  "a_dire": "Le noyau est l'image réciproque du plus petit sous-groupe de l'arrivée, celui qui ne contient que le neutre.",
+  "legende_titre": "Le noyau parmi les images réciproques",
+  "lecture": [
+   "À droite, trois groupes emboîtés : tout ℤ/4ℤ en gris, {0̄, 2̄} en bleu, {1′} en vert.",
+   "À gauche, leurs images réciproques emboîtées : ℤ en gris, 2ℤ en bleu, 4ℤ en vert.",
+   "Chaque flèche orange mène du sous-groupe d'arrivée à son image réciproque.",
+   "La plus petite case verte donne le noyau."
+  ],
+  "a_voir": "Le noyau est la plus petite des trois images réciproques."
+ },
+ {
+  "code": "48-069",
+  "a_dire": "Pour un homomorphisme f de noyau K, K est normal et f̄(aK) = f(a) définit un homomorphisme injectif de G/K dans G′.",
+  "legende_titre": "Le théorème en une figure",
+  "lecture": [
+   "La flèche bleue f va de G à G′.",
+   "La flèche orange ν envoie chaque élément sur son paquet dans G/K ; le noyau K est normal.",
+   "La flèche verte f̄ va de G/K à G′ : c'est un homomorphisme injectif.",
+   "La formule du haut dit que f̄ donne à aK la valeur f(a)."
+  ],
+  "a_voir": "f se lit en passant par G/K : d'abord ν, puis f̄."
+ },
+ {
+  "code": "48-070",
+  "a_dire": "f̄ est l'application qui donne à tout le paquet aK la valeur f(a).",
+  "legende_titre": "L'application induite sur les paquets",
+  "lecture": [
+   "Le grand cadre bleu est le paquet 3K, avec les entiers 3, 7 et 11.",
+   "La flèche verte f̄ part du paquet entier.",
+   "Le disque vert est la position 3, la valeur commune de 3, 7 et 11.",
+   "La formule dit que f̄ du paquet 3K égale f(3)."
+  ],
+  "a_voir": "f̄ s'applique au paquet, pas à un seul élément."
+ },
+ {
+  "code": "48-071",
+  "a_dire": "Le quotient de G par le noyau est isomorphe à l'image : même nombre d'éléments, même addition.",
+  "legende_titre": "Autant de paquets que de positions",
+  "lecture": [
+   "En haut, le noyau 4ℤ donne quatre paquets bleus, reliés un à un aux positions 0, 1, 2, 3 en vert.",
+   "En bas, le noyau 2ℤ donne deux paquets, les pairs et les impairs, reliés aux positions 0 et 2.",
+   "Les doubles flèches grises sont les correspondances un à un."
+  ],
+  "a_voir": "Dans chaque cas, le nombre de paquets est égal au nombre de positions."
+ },
+ {
+  "code": "48-072",
+  "a_dire": "Le quotient par le noyau est isomorphe à l'image : on regroupe d'abord, puis on compare avec l'image.",
+  "legende_titre": "Regrouper puis comparer",
+  "lecture": [
+   "Le cadre gris de gauche contient les douze entiers du groupe de départ.",
+   "La flèche orange regroupe ces entiers en quatre paquets bleus.",
+   "Les doubles flèches vertes relient chaque paquet à un seul disque vert, une position de l'image."
+  ],
+  "a_voir": "Les paquets et les positions se correspondent un pour un."
+ },
+ {
+  "code": "48-073",
+  "a_dire": "La preuve reprend la factorisation du chapitre 43 en ajoutant l'opération : K donne les paquets et f̄ respecte le produit.",
+  "legende_titre": "La factorisation avec l'opération",
+  "lecture": [
+   "La ligne grise du haut est la factorisation des ensembles du chapitre 43 : on regroupe, puis une application injective.",
+   "La ligne bleue du bas est la même chose avec des groupes : ν, puis f̄.",
+   "La double flèche orange dit que les paquets de la relation sont les classes de K : c'est ici que l'opération intervient.",
+   "Le texte vert est la dernière vérification : f̄ respecte le produit."
+  ],
+  "a_voir": "Le regroupement ne demande pas d'opération ; elle n'apparaît qu'aux deux dernières vérifications."
+ },
+ {
+  "code": "48-074",
+  "a_dire": "f(a) = f(b) équivaut à aK = bK : deux éléments ont la même image exactement quand ils sont dans le même paquet.",
+  "legende_titre": "Même position et même paquet",
+  "lecture": [
+   "Le cadre bleu est le paquet 1K, avec 1, 5 et 9 ; le cadre violet est le paquet 2K, avec 2, 6 et 10.",
+   "Les flèches orange envoient chaque élément sur sa position.",
+   "Les trois éléments du paquet 1K arrivent sur la position 1, ceux du paquet 2K sur la position 2.",
+   "Le nombre 5 est dans le paquet 1K, pas dans le paquet 2K."
+  ],
+  "a_voir": "Même paquet : même position. Paquets différents : positions différentes."
+ },
+ {
+  "code": "48-075",
+  "a_dire": "Le produit de deux paquets ne dépend pas des représentants, parce que K est normal : cela fait de G/K un groupe.",
+  "legende_titre": "Le produit des paquets est bien défini",
+  "lecture": [
+   "Les trois cadres gris sont les paquets 1K, 2K et 3K.",
+   "Les disques bleus sont un premier choix de représentants : 1 + 2 = 3.",
+   "Les disques orange sont un second choix : 5 + 10 = 15.",
+   "Les deux sommes tombent dans le même paquet 3K."
+  ],
+  "a_voir": "Quels que soient les représentants, la somme est dans le paquet 3K."
+ },
+ {
+  "code": "48-076",
+  "a_dire": "Le théorème fondamental est la factorisation du chapitre 43 avec en plus l'opération.",
+  "legende_titre": "Les ensembles, puis l'opération en plus",
+  "lecture": [
+   "La ligne grise du haut montre le schéma pour des ensembles : entiers, quatre paquets, quatre positions.",
+   "La ligne bleue du bas montre le même schéma, avec l'addition sur chaque ensemble.",
+   "Les flèches orange du bas respectent la somme."
+  ],
+  "a_voir": "Le schéma ne change pas : seule la vérification de l'addition s'ajoute."
+ },
+ {
+  "code": "48-077",
+  "a_dire": "Appliquer f à a revient à appliquer ν, puis f̄ : f = f̄ ∘ ν.",
+  "legende_titre": "Deux actions qui valent une seule",
+  "lecture": [
+   "Le disque bleu est l'élément 7.",
+   "La flèche orange ν l'envoie sur son paquet {3, 7, 11}, en violet.",
+   "La flèche verte f̄ envoie ce paquet sur la position 3.",
+   "La flèche grise du haut est f : elle va de 7 à 3 directement."
+  ],
+  "a_voir": "Les deux chemins arrivent sur la même position, 3."
+ },
+ {
+  "code": "48-078",
+  "a_dire": "Le diagramme montre où se fait la perte d'information : sur la flèche ν, pas sur la flèche f̄.",
+  "legende_titre": "Où l'application confond",
+  "lecture": [
+   "Le cadre gris contient douze entiers, le cadre bleu quatre paquets, le cadre vert quatre positions.",
+   "La flèche orange ν est « sur » : elle regroupe, donc elle confond.",
+   "La flèche verte f̄ est injective : elle ne perd rien.",
+   "La flèche grise du bas est f, qui va directement des entiers aux positions."
+  ],
+  "a_voir": "Douze entiers deviennent quatre paquets, puis quatre paquets vont sur quatre positions."
+ },
+ {
+  "code": "48-079",
+  "a_dire": "ν est surjective : tout paquet est le paquet d'un de ses éléments, donc il est atteint.",
+  "legende_titre": "Aucun paquet n'est oublié",
+  "lecture": [
+   "Les disques gris sont des éléments : 0, 1, 2 et 3.",
+   "Chaque flèche orange est ν : elle envoie l'élément sur son paquet.",
+   "Les cadres bleus sont les paquets ; chacun reçoit au moins une flèche."
+  ],
+  "a_voir": "Aucun cadre bleu n'est sans flèche."
+ },
+ {
+  "code": "48-080",
+  "a_dire": "f̄ est injective parce que son noyau est réduit à la classe K ; avec un sous-groupe plus petit, elle ne l'est plus.",
+  "legende_titre": "Quand f̄ est injective",
+  "lecture": [
+   "En haut, avec K égal au noyau, les paquets 1K et 2K vont sur les positions 1 et 2, différentes (vert).",
+   "En bas, avec les multiples de 8, les paquets 1 + 8ℤ et 5 + 8ℤ vont tous deux sur la position 1 (rouge).",
+   "Dans le cas rouge, deux paquets différents ont la même image : f̄ n'est pas injective."
+  ],
+  "a_voir": "Seul le noyau donne des positions toutes différentes."
+ }
+]

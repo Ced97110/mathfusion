@@ -1,0 +1,192 @@
+[
+ {
+  "code": "15-113",
+  "a_dire": "Dire que le signe de 2n − 30 se lit avant de connaître n : négatif avant 15, nul à 15, positif après.",
+  "legende_titre": "Lire un calcul avant d'avoir n",
+  "lecture": [
+   "La droite graduée donne le nombre de personnes n.",
+   "Le trait violet à gauche de 15 est la partie où 2n − 30 est négatif.",
+   "Le trait bleu à droite de 15 est la partie où 2n − 30 est positif.",
+   "Le point vert est 15, où l'expression vaut 0."
+  ],
+  "a_voir": "Un seul raisonnement sur l'expression donne trois conclusions, sans choisir n."
+ },
+ {
+  "code": "15-114",
+  "a_dire": "Additionner deux polynômes : écrire la somme, enlever les parenthèses, regrouper.",
+  "legende_titre": "Les trois étapes d'une addition",
+  "lecture": [
+   "Le cadre bleu est la somme écrite avec ses parenthèses.",
+   "Le cadre orange est la même somme sans parenthèses, signes inchangés.",
+   "Le cadre vert est le polynôme après regroupement.",
+   "La ligne verte montre que pour x = 1 on trouve −16 des deux côtés."
+  ],
+  "a_voir": "Les trois cadres se lisent de haut en bas : somme, sans parenthèses, regroupé."
+ },
+ {
+  "code": "15-115",
+  "a_dire": "Quand un polynôme n'a pas de terme en x, on regroupe quand même colonne par colonne : (x² + 4) + (x² + 7x + 2) = 2x² + 7x + 6.",
+  "legende_titre": "Un terme en x qui manque",
+  "lecture": [
+   "Chaque colonne est un type de terme : x², x, constante.",
+   "La ligne bleue est x² + 4 ; la case orange en pointillés est son terme en x, égal à 0.",
+   "La ligne violette est x² + 7x + 2.",
+   "La ligne verte donne la somme de chaque colonne."
+  ],
+  "a_voir": "La case en pointillés vaut 0 et la colonne se regroupe comme les autres."
+ },
+ {
+  "code": "15-116",
+  "a_dire": "Soustraire deux polynômes : changer les signes de la seconde parenthèse, puis regrouper, jusqu'à n'avoir plus ni parenthèses ni termes semblables.",
+  "legende_titre": "Les étapes d'une soustraction",
+  "lecture": [
+   "Le cadre bleu est la différence écrite avec ses parenthèses.",
+   "Le cadre orange est l'écriture où les signes de la seconde parenthèse ont changé.",
+   "Le cadre vert est le résultat regroupé.",
+   "La ligne du bas donne la valeur −13 pour x = 1."
+  ],
+  "a_voir": "On s'arrête quand il n'y a plus de parenthèses ni de termes semblables."
+ },
+ {
+  "code": "15-117",
+  "a_dire": "Dans (3x² + x − 12) − (8x² − 5x + 2), chacun des trois termes de la seconde parenthèse change de signe, puis les coefficients se regroupent.",
+  "legende_titre": "Où vont les signes dans une différence",
+  "lecture": [
+   "La ligne bleue est le premier polynôme.",
+   "La ligne violette est le second, qu'on retire.",
+   "La ligne orange montre les trois termes du second avec leur signe changé.",
+   "La ligne verte regroupe colonne par colonne : −5, 6 et −14."
+  ],
+  "a_voir": "Chaque flèche orange est un signe qui change ; chaque flèche verte est un regroupement."
+ },
+ {
+  "code": "15-118",
+  "a_dire": "Les parenthèses disent que tout le second polynôme est retiré ; sans elles, on obtient −19 au lieu de −13 pour x = 1.",
+  "legende_titre": "Pourquoi garder les parenthèses",
+  "lecture": [
+   "En haut, le cadre orange est le second polynôme entier, retiré en entier : le résultat vaut −13.",
+   "En bas, seul 8x² est retiré (cadre orange).",
+   "En bas, le cadre rouge montre −5x + 2, qui sont ajoutés au lieu d'être retirés.",
+   "Le résultat rouge −19 est faux."
+  ],
+  "a_voir": "Les deux écritures donnent −13 et −19 : les parenthèses changent le résultat."
+ },
+ {
+  "code": "15-119",
+  "a_dire": "Pour développer (x² + 4)(x² + 7x + 2), on écrit les six produits, puis on regroupe les termes semblables : 2x² et 4x² donnent 6x².",
+  "legende_titre": "Développer un produit pas à pas",
+  "lecture": [
+   "Les lettres bleues à gauche sont les termes du premier facteur.",
+   "Les lettres violettes en haut sont les termes du second facteur.",
+   "Chaque case est le produit de sa ligne par sa colonne.",
+   "Les deux cases orange, 2x² et 4x², sont semblables ; le résultat vert les regroupe en 6x²."
+  ],
+  "a_voir": "Il reste cinq termes dans le résultat vert."
+ },
+ {
+  "code": "15-120",
+  "a_dire": "Le nombre de produits est le nombre de termes du premier facteur fois celui du second : 2 × 3 = 6.",
+  "legende_titre": "Compter les produits avant de les écrire",
+  "lecture": [
+   "Les deux lignes sont les 2 termes du premier facteur.",
+   "Les trois colonnes sont les 3 termes du second facteur.",
+   "Chaque case verte est un produit, numéroté de 1 à 6."
+  ],
+  "a_voir": "Le rectangle a 2 × 3 = 6 cases : il faut écrire 6 produits."
+ },
+ {
+  "code": "15-121",
+  "a_dire": "Avec x = 1, un résultat faux dont les coefficients 7 et 6 sont échangés donne la même valeur 50 que le juste : l'erreur passe. Avec x = 2, on trouve 160 et 156.",
+  "legende_titre": "Quand x = 1 ne voit pas l'erreur",
+  "lecture": [
+   "La ligne verte est le résultat juste ; la ligne rouge est le résultat faux.",
+   "Les colonnes sont les valeurs x = 1 et x = 2.",
+   "Pour x = 1, les deux lignes donnent 50 : l'erreur n'est pas vue.",
+   "Pour x = 2, on lit 160 et 156 : l'erreur apparaît."
+  ],
+  "a_voir": "Une valeur qui donne le même nombre aux deux écritures ne détecte pas l'erreur."
+ },
+ {
+  "code": "15-122",
+  "a_dire": "Un désaccord prouve une erreur ; un accord ne prouve pas que l'écriture est juste.",
+  "legende_titre": "Ce que prouve une vérification",
+  "lecture": [
+   "Les cases bleues sont les valeurs de (x + 2)(x + 3).",
+   "Les cases violettes sont les valeurs de x² + 6x + 5.",
+   "Pour x = 1, les deux valent 12 : accord, mais l'écriture est fausse.",
+   "Pour x = 2, on lit 20 et 21 : désaccord, donc erreur."
+  ],
+  "a_voir": "Le seul signe ≠ rouge prouve l'erreur."
+ },
+ {
+  "code": "15-123",
+  "a_dire": "31 × 29 se calcule en voyant 31 et 29 à la même distance 1 de 30 : (30 + 1)(30 − 1) = 30² − 1² = 899.",
+  "legende_titre": "Multiplier deux nombres autour de 30",
+  "lecture": [
+   "Le point bleu est 30 sur la droite.",
+   "Le point violet est 29, à une distance 1 de 30.",
+   "Le point orange est 31, à une distance 1 de 30.",
+   "Les lignes du bas donnent le calcul et le résultat vert 899."
+  ],
+  "a_voir": "Les deux flèches de longueur 1 montrent que 29 et 31 sont à égale distance de 30."
+ },
+ {
+  "code": "15-124",
+  "a_dire": "Les lettres a et b peuvent être remplacées par des nombres connus, ici 30 et 1, et la formule devient un calcul de tête.",
+  "legende_titre": "Des lettres qui valent des nombres connus",
+  "lecture": [
+   "La ligne du haut est la formule avec les lettres a et b.",
+   "Le cadre bleu donne la valeur de a : 30.",
+   "Le cadre orange donne la valeur de b : 1.",
+   "Les lignes du bas remplacent a et b et donnent 899 en vert."
+  ],
+  "a_voir": "Les nombres connus 30 et 1 rendent le calcul facile."
+ },
+ {
+  "code": "15-125",
+  "a_dire": "Un nombre seul comme 8 s'écrit 8x⁰ : c'est un monôme de degré 0, appelé constante.",
+  "legende_titre": "Le degré d'un nombre seul",
+  "lecture": [
+   "Chaque case est un monôme avec son degré, de 0 à 3.",
+   "La case bleue est le nombre seul 8, de degré 0.",
+   "La ligne verte écrit 8 = 8x⁰ car x⁰ = 1."
+  ],
+  "a_voir": "Le degré 0 s'ajoute aux degrés 1, 2 et 3."
+ },
+ {
+  "code": "15-126",
+  "a_dire": "8 s'écrit 8x⁰ car x⁰ = 1 : on retrouve 8 pour x = 5 et x = 2, mais pas de sens pour x = 0.",
+  "legende_titre": "8 écrit avec x puissance 0",
+  "lecture": [
+   "Chaque ligne choisit une valeur de x (case orange).",
+   "La case bleue donne la puissance 0 de cette valeur.",
+   "La case verte donne 8 × 1 = 8.",
+   "La case rouge montre que pour x = 0 l'écriture n'a pas de sens."
+  ],
+  "a_voir": "Pour x = 5 et x = 2, on retrouve 8."
+ },
+ {
+  "code": "15-127",
+  "a_dire": "Le polynôme nul s'écrit 0x⁵ ou 0x¹⁰⁰ : il ne peut pas avoir deux degrés, donc il n'en a aucun.",
+  "legende_titre": "Le polynôme nul n'a pas de degré",
+  "lecture": [
+   "La case verte du haut est le nombre 0.",
+   "La case bleue est 0x⁵, qui suggère le degré 5.",
+   "La case violette est 0x¹⁰⁰, qui suggère le degré 100.",
+   "Les deux degrés ne peuvent pas être vrais ensemble : le polynôme nul n'a aucun degré."
+  ],
+  "a_voir": "Deux écritures de 0 donnent deux degrés différents."
+ },
+ {
+  "code": "15-128",
+  "a_dire": "Le coefficient 0 est permis : il apparaît quand les coefficients de termes semblables se compensent, par exemple 1 + 3 − 4 = 0.",
+  "legende_titre": "Un terme dont le coefficient est 0",
+  "lecture": [
+   "Les trois cases du haut sont des termes semblables en r : 1r, 3r et −4r.",
+   "La ligne du milieu additionne leurs coefficients : 1 + 3 − 4 = 0.",
+   "La case verte est le terme obtenu, 0r.",
+   "En bas, 0r vaut 0 pour r = 3 et pour r = 100."
+  ],
+  "a_voir": "Le terme 0r est un cas permis qui vaut toujours 0."
+ }
+]

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 6, 38, 50, 'sujet', fill=False, dash=True)
+text(ax, 21, 51, r'$V$ : le plan', 'sujet', 's')
+o = (10, 14)
+arrow(ax, o, (34, 14), 'sujet'); arrow(ax, o, (10, 42), 'sujet')
+text(ax, 34, 9.5, r'$e_1$', 'sujet', 'm'); text(ax, 5.5, 42, r'$e_2$', 'sujet', 'm')
+box(ax, 46, 36, 40, 14, 'resultat', label=r'$v\wedge v=0$')
+text(ax, 66, 54, 'règle imposée', 'resultat', 's')
+box(ax, 46, 8, 40, 14, 'limite', label=r'$e_1\wedge e_2=0$', dash=True)
+line(ax, [(48, 10), (84, 20)], 'limite', lw=1.2); line(ax, [(48, 20), (84, 10)], 'limite', lw=1.2)
+text(ax, 66, 27, 'règle en trop : interdite', 'limite', 's')
+save(fig, '76-051')

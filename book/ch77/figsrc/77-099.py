@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+f=numberline(ax,20,70,34,0,5,step=5,arrow_right=False)
+text(ax,45,25,r'norme $N(u)$','fixe','s')
+text(ax,2,68,'dans un corps','sujet',ha='left')
+line(ax,[(20,34),(20,47.8)],'resultat',dash=True); line(ax,[(70,34),(70,47.8)],'sujet',dash=True)
+disc(ax,20,50,2.2,'resultat'); disc(ax,70,50,2.2,'sujet')
+text(ax,20,58,r'$0$','resultat'); text(ax,70,58,r'$2+i$','sujet')
+text(ax,2,19,r'dans $(1,\varepsilon)$','limite',ha='left')
+line(ax,[(20,34),(20,12)],'limite',dash=True); disc(ax,20,12,2.2,'limite')
+text(ax,26,12,r'$\varepsilon\neq0$','limite',ha='left')
+save(fig,'77-099')

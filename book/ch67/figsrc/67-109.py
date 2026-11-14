@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 2, 74, 40, 9, 'sujet', label='première preuve', size='s', weight='bold')
+box(ax, 46, 74, 40, 9, 'autre', label='seconde preuve', size='s', weight='bold')
+for i, s in enumerate(('groupe de Galois', 'ses sous-groupes', 'correspondance')): box(ax, 2, 58 - i * 14, 40, 10, 'sujet', label=s, size='s')
+for i, s in enumerate(('degrés de corps emboîtés', 'divisibilité de polynômes')): box(ax, 46, 58 - i * 14, 40, 10, 'autre', label=s, size='s')
+arrow(ax, (22, 73), (22, 69), 'fixe'); arrow(ax, (66, 73), (66, 69), 'fixe')
+arrow(ax, (22, 29.5), (40, 15.5), 'fixe'); arrow(ax, (66, 43.5), (48, 15.5), 'fixe')
+box(ax, 8, 3, 72, 11, 'resultat', label='même énoncé démontré', size='s')
+save(fig, '67-109')

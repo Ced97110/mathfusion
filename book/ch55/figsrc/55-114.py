@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 14, 80, 60, 10, 'sujet', label=r'$ax^2+bx+c$', size='l')
+arrow(ax, (44, 79.5), (44, 71.5), 'varie')
+box(ax, 4, 60, 80, 11, 'varie', label=r'divise par $a$ : $e_1=-b/a$,  $e_2=c/a$', size='s')
+arrow(ax, (44, 59.5), (44, 51.5), 'varie')
+box(ax, 4, 40, 80, 11, 'sujet', label=r'$e_1^2-4e_2=b^2/a^2-4c/a$', size='m')
+arrow(ax, (44, 39.5), (44, 31.5), 'varie')
+box(ax, 4, 20, 80, 11, 'resultat', label=r'$\Delta=(b^2-4ac)/a^2$', size='l', weight='bold')
+text(ax, 44, 12, r'$2x^2-10x+12$ : $(100-96)/4=1$', 'resultat', 's')
+text(ax, 44, 5, r'et $5^2-4\times 6=1$ : même nombre', 'resultat', 's')
+save(fig, '55-114')

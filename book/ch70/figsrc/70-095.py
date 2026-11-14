@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, 'il existe un nombre : premier ordre', 'sujet', 'm')
+f = numberline(ax, 8, 70, 62, 0, 3, 1, arrow_right=True, every=1)
+disc(ax, f(2 ** 0.5), 62, 1.5, 'sujet')
+text(ax, f(2 ** 0.5), 68, r'$\sqrt{2}$ : carré $=2$', 'sujet', 's')
+text(ax, 44, 46, 'il existe un ensemble de nombres', 'autre', 'm')
+g = numberline(ax, 8, 70, 28, 0, 3, 1, arrow_right=True, every=1)
+for v in (1.0, 1.6, 2.2, 2.8):
+    disc(ax, g(v), 28, 1.2, 'autre')
+x0, x1 = g(0.7), g(3.1)
+line(ax, [(x0, 24.5), (x1, 24.5), (x1, 31.5), (x0, 31.5), (x0, 24.5)], 'autre', lw=0.8, dash=True)
+text(ax, (x0 + x1) / 2, 35, 'un ensemble', 'autre', 's')
+text(ax, 44, 12, 'pas du premier ordre', 'autre', 's')
+save(fig, '70-095')

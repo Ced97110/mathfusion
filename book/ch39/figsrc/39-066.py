@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+# φ : le nom de l'angle du second nombre w (θ est celui de z)
+fig, ax = canvas(60)
+ox, oy, u = 10, 16, 20
+arrow(ax, (ox - 4, oy), (ox + 40, oy), 'fixe', lw=0.8)
+Z = (ox + 2 * u * math.cos(math.radians(30)), oy + 2 * u * math.sin(math.radians(30)))
+W2 = (ox + math.sqrt(2) * u * math.cos(math.radians(45)), oy + math.sqrt(2) * u * math.sin(math.radians(45)))
+line(ax, [(ox, oy), Z], 'sujet', lw=1.8)
+line(ax, [(ox, oy), W2], 'autre', lw=1.8)
+disc(ax, Z[0], Z[1], 1.5, 'sujet')
+disc(ax, W2[0], W2[1], 1.5, 'autre')
+ax.add_patch(Arc((ox, oy), 44, 44, theta1=0, theta2=30, ec=COL['sujet'], lw=1.1, zorder=3))
+ax.add_patch(Arc((ox, oy), 28, 28, theta1=0, theta2=45, ec=COL['autre'], lw=1.1, zorder=3))
+text(ax, ox + 27 * math.cos(math.radians(12)), oy + 27 * math.sin(math.radians(12)), 'θ', 'sujet', 'l', weight='bold')
+text(ax, ox + 18 * math.cos(math.radians(38)), oy + 18 * math.sin(math.radians(38)), 'φ', 'autre', 'l', weight='bold')
+text(ax, Z[0] + 3, Z[1] - 1, 'z', 'sujet', 'm', ha='left', weight='bold')
+text(ax, W2[0], W2[1] + 3.5, 'w', 'autre', 'm', weight='bold')
+box(ax, 52, 30, 34, 9, 'sujet', label='z = r cis θ', size='s')
+box(ax, 52, 18, 34, 9, 'autre', label='w = s cis φ', size='s')
+text(ax, 44, 6, 'deux angles : θ puis φ', 'fixe', 's')
+text(ax, ox - 2.5, oy - 3, 'O', 'fixe', 's')
+save(fig, '39-066')

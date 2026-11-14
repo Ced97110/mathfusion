@@ -1,0 +1,266 @@
+[
+ {
+  "code": "36-073",
+  "a_dire": "Avec 30°, 10 et 7, la loi des sinus donne un seul sinus, 0,7143, mais deux angles, 45,58° et 134,42° : les deux triangles existent et la méthode ne choisit pas.",
+  "legende_titre": "Un même sinus, deux triangles",
+  "lecture": [
+   "Le trait gris épais est la tige de 10 cm, qui part du point de gauche avec un angle de 30°.",
+   "Le fil de 7 cm, en bleu, touche la règle au point de droite : l’angle du triangle en ce point est 45,58°.",
+   "Le fil de 7 cm, en violet, touche la règle au point de gauche : l’angle du triangle en ce point est 134,42°."
+  ],
+  "a_voir": "Le même fil de 7 cm donne deux triangles, avec deux angles de même sinus."
+ },
+ {
+  "code": "36-074",
+  "a_dire": "Trois angles de 50°, 82,03° et 47,97° vont avec des triangles de tailles différentes : les côtés ne sont pas déterminés.",
+  "legende_titre": "Mêmes angles, côtés différents",
+  "lecture": [
+   "Le petit triangle bleu a les côtés 90, 120 et 92,82.",
+   "Le grand triangle violet a les côtés 180, 240 et 185,64.",
+   "Les trois angles, en gris, sont les mêmes dans les deux triangles."
+  ],
+  "a_voir": "Les angles ne changent pas quand la taille double."
+ },
+ {
+  "code": "36-075",
+  "a_dire": "La loi des sinus demande un côté avec l’angle en face ; avec deux côtés et l’angle entre eux, elle ne le donne pas, et des angles faux comme 70° et 44,81° vérifient quand même l’égalité.",
+  "legende_titre": "Pas de paire, pas de loi des sinus",
+  "lecture": [
+   "Le triangle bleu a deux côtés, 120 m et 90 m, et l'angle de 50° entre eux ; aucun côté n'a son angle en face connu, les deux autres angles sont marqués « ? ».",
+   "Le texte vert montre que l'égalité 120 ÷ sin 70° = 90 ÷ sin 44,81° est vraie avec 70° et 44,81°.",
+   "Pourtant, la barre du bas ajoute 50°, 70° et 44,81° : on arrive à 164,81°, il manque 15,19° pour atteindre 180°."
+  ],
+  "a_voir": "L'égalité est vraie avec 70° et 44,81°, mais ces angles ne forment pas un triangle avec 50°."
+ },
+ {
+  "code": "36-076",
+  "a_dire": "La loi des cosinus donne d’abord le côté 92,82, qui avec l’angle de 50° forme une paire complète ; la loi des sinus s’emploie ensuite.",
+  "legende_titre": "Cosinus d’abord, sinus ensuite",
+  "lecture": [
+   "Le triangle a deux côtés, 120 et 90, et l’angle de 50° entre eux.",
+   "Le côté vert de 92,82 est celui que donne la loi des cosinus ; il est en face de l’angle vert de 50°.",
+   "La flèche va de la loi des cosinus, en orange, à la paire en vert, puis à la loi des sinus, en bleu."
+  ],
+  "a_voir": "Le côté 92,82 et l’angle 50° forment la paire qu’il faut pour la loi des sinus."
+ },
+ {
+  "code": "36-077",
+  "a_dire": "Un sinus de 0,5 correspond à deux angles entre 0° et 180° : 30° et 150°, dont la somme est 180°.",
+  "legende_titre": "Deux angles pour un sinus",
+  "lecture": [
+   "La courbe grise donne le sinus de chaque angle de 0° à 180°.",
+   "La ligne orange en pointillés est la valeur 0,5 ; elle coupe la courbe en deux points.",
+   "Le point bleu est à 30° et le point violet à 150° ; l’accolade montre que 30° plus 150° font 180°."
+  ],
+  "a_voir": "La ligne à 0,5 coupe la courbe deux fois, à 30° et à 150°."
+ },
+ {
+  "code": "36-078",
+  "a_dire": "Le cas ambigu est l’un des six cas de trois mesures ; les cinq autres fixent le triangle ou laissent sa taille libre, et lui donne deux triangles possibles.",
+  "legende_titre": "Six façons de donner trois mesures",
+  "lecture": [
+   "Chaque petit triangle montre ce qui est donné : les côtés en trait épais bleu, les angles par un arc bleu.",
+   "Les côtés en pointillés gris sont ceux qu’on cherche.",
+   "Sous chaque triangle, le texte dit ce que les données permettent : un triangle, une taille inconnue ou deux possibilités."
+  ],
+  "a_voir": "Le cas CCA est le seul des six avec deux triangles possibles."
+ },
+ {
+  "code": "36-079",
+  "a_dire": "On trace la demi-droite et la tige de 10 à 30°, puis on cherche sur la demi-droite les points à 7 du bout de la tige : il y en a deux, à 3,76 et à 13,56.",
+  "legende_titre": "Placer le dernier sommet",
+  "lecture": [
+   "Le trait bleu épais est la tige de 10 ; le pointillé orange vertical, de 5, descend du bout de la tige vers la demi-droite.",
+   "L’arc orange est l’ensemble des points à 7 du bout de la tige.",
+   "Les deux points verts, à 3,76 et 13,56 du départ, sont les places possibles du dernier sommet."
+  ],
+  "a_voir": "L’arc orange coupe la demi-droite en deux points verts."
+ },
+ {
+  "code": "36-080",
+  "a_dire": "Le dernier sommet est un point commun au cercle de centre C et de rayon 7 et à la demi-droite ; compter les points communs revient à compter les triangles.",
+  "legende_titre": "Triangles et points communs",
+  "lecture": [
+   "Le cercle orange a pour centre le bout C de la tige et pour rayon 7.",
+   "La demi-droite grise part du bas de la tige.",
+   "Les deux points verts B1 et B2 sont les points communs au cercle et à la demi-droite."
+  ],
+  "a_voir": "Le cercle coupe la demi-droite en deux points verts."
+ },
+ {
+  "code": "36-081",
+  "a_dire": "Quand seul le rayon change, le cercle de centre C touche la demi-droite en 0 point (rayon 4), en 1 point (rayon 5) ou en 2 points (rayon 7).",
+  "legende_titre": "Un seul rayon change",
+  "lecture": [
+   "Les trois cercles orange ont le même centre, le bout de la tige, et les rayons 4 (pointillés), 5 et 7.",
+   "Le pointillé gris vertical de 5 va du centre à la demi-droite.",
+   "Les points verts sont les points communs : aucun pour le rayon 4, un pour le rayon 5, deux pour le rayon 7."
+  ],
+  "a_voir": "Le cercle de rayon 5 touche juste la demi-droite."
+ },
+ {
+  "code": "36-082",
+  "a_dire": "La distance du bout de la tige à la demi-droite est h = b sin A ; elle vaut 5, 7,66 et 10 dans les trois cas.",
+  "legende_titre": "La distance au sol d’une tige",
+  "lecture": [
+   "Chaque triangle bleu a une tige de longueur b qui fait l’angle A avec la demi-droite grise.",
+   "Le trait orange vertical est la distance h du bout de la tige à la demi-droite.",
+   "Sous chaque triangle, les valeurs de b, A et h sont écrites ; la formule du haut est la même pour les trois."
+  ],
+  "a_voir": "La même formule donne h dans les trois triangles."
+ },
+ {
+  "code": "36-083",
+  "a_dire": "On compare a à h puis à b : en dessous de h, aucun triangle ; égal à h, un ; entre h et b, deux ; à partir de b, un.",
+  "legende_titre": "Comparer a à h puis à b",
+  "lecture": [
+   "La droite graduée montre h = 5 en orange et b = 10 en bleu.",
+   "Les cases au-dessus donnent le nombre de triangles selon la place de a : 0, 1, 2 ou 1.",
+   "La flèche orange place a = 7, dans la case verte : deux triangles."
+  ],
+  "a_voir": "a = 7 est entre h = 5 et b = 10, donc deux triangles."
+ },
+ {
+  "code": "36-084",
+  "a_dire": "Si a est plus petit que h, le fil n’atteint pas la demi-droite : aucun triangle.",
+  "legende_titre": "Un fil trop court",
+  "lecture": [
+   "Le trait gris épais est la tige de 10 ; le pointillé orange vertical, de h = 5, est la plus courte distance du bout à la demi-droite.",
+   "Le cercle rouge a pour rayon a = 4, plus petit que 5.",
+   "Il reste un vide entre le cercle rouge et la demi-droite : ils n’ont aucun point commun."
+  ],
+  "a_voir": "Le cercle rouge ne touche pas la demi-droite."
+ },
+ {
+  "code": "36-085",
+  "a_dire": "Si a est égal à h, le cercle touche la demi-droite en un seul point, le pied de la perpendiculaire, et le triangle est rectangle en B.",
+  "legende_titre": "Le fil qui touche juste",
+  "lecture": [
+   "Le cercle orange, de rayon a = h = 5, touche la demi-droite en un seul point vert, B.",
+   "Le trait vert vertical est le fil : il tombe droit sur la demi-droite.",
+   "Le petit carré en B marque l’angle droit ; le triangle bleu est rectangle en B."
+  ],
+  "a_voir": "Le cercle touche la demi-droite en un seul point."
+ },
+ {
+  "code": "36-086",
+  "a_dire": "Quand h < a < b, le cercle coupe la demi-droite en deux points, B1 à 3,76 et B2 à 13,56, et donne deux triangles.",
+  "legende_titre": "Un fil entre h et b",
+  "lecture": [
+   "La tige grise mesure b = 10 ; le pointillé orange vertical mesure h = 5 ; le fil bleu mesure a = 7.",
+   "Le triangle violet va jusqu’à B1, à 3,76 du départ ; le triangle bleu va jusqu’à B2, à 13,56.",
+   "Les deux points sont du même côté du départ, sur la demi-droite."
+  ],
+  "a_voir": "Le fil de 7, entre 5 et 10, donne deux triangles."
+ },
+ {
+  "code": "36-087",
+  "a_dire": "Si a est au moins b, le cercle coupe la droite en deux points mais un seul est sur la demi-droite : un seul triangle.",
+  "legende_titre": "Un fil plus long que la tige",
+  "lecture": [
+   "L’arc orange est le cercle de rayon a = 12 autour du bout de la tige de 10.",
+   "Le point vert, à 19,57 du départ, est sur la demi-droite : c’est lui qui donne le triangle.",
+   "Le point rouge, à −2,25, est derrière le départ, sur le pointillé gris : il est hors de la demi-droite."
+  ],
+  "a_voir": "Un seul des deux points est sur la demi-droite."
+ },
+ {
+  "code": "36-088",
+  "a_dire": "La limite est b parce que le cercle de rayon b passe par le point de départ A ; au-delà, il coupe la droite derrière A.",
+  "legende_titre": "Pourquoi la limite est la tige",
+  "lecture": [
+   "L’arc orange, de rayon a = 10, passe par le point bleu A, le point de départ.",
+   "L’arc violet, de rayon a = 11, passe derrière A : son point rouge est à −1,14.",
+   "Les points verts à droite sont ceux qui donnent un triangle."
+  ],
+  "a_voir": "Avec a = 10, le cercle passe juste par A."
+ },
+ {
+  "code": "36-089",
+  "a_dire": "Deux angles qui font ensemble 180° sont supplémentaires : 45,58° et 134,42° se complètent sur une droite, et 134,42° = 180° − 45,58°.",
+  "legende_titre": "Deux angles qui se complètent",
+  "lecture": [
+   "La droite grise est un angle de 180° ; le trait noir la coupe.",
+   "L’arc bleu marque l’angle de 45,58° à droite du trait.",
+   "L’arc violet marque l’angle de 134,42° à gauche du trait ; l’accolade montre que les deux font 180°."
+  ],
+  "a_voir": "Les deux angles posés côte à côte remplissent la droite."
+ },
+ {
+  "code": "36-090",
+  "a_dire": "Les deux solutions vérifient B1 + B2 = 180° : le triangle B1 C B2 est isocèle car C est à la même distance 7 de B1 et de B2, donc les deux angles en B1 et B2 sont égaux.",
+  "legende_titre": "Pourquoi les deux angles font 180°",
+  "lecture": [
+   "Les deux traits de même longueur 7, marqués de deux petits traits noirs, vont de C vers B1 (violet) et vers B2 (bleu) : le triangle B1 C B2, en gris, a deux côtés égaux.",
+   "En B2, l'angle bleu vaut 45,58° ; en B1, l'angle bleu à droite vaut aussi 45,58° : les deux angles du triangle sont égaux.",
+   "En B1, l'angle violet de 134,42° et l'angle bleu de 45,58° sont côte à côte sur la droite : ils font 180°."
+  ],
+  "a_voir": "Les deux côtés de 7 sont égaux, donc les angles bleus sont égaux et 134,42° plus 45,58° font 180°."
+ },
+ {
+  "code": "36-091",
+  "a_dire": "Quand A est obtus, il y a un triangle si a > b et aucun sinon ; l’exemple 30° avec a = 7 < b = 10, qui donne deux triangles, montre que cela ne vaut que pour A obtus.",
+  "legende_titre": "Angle obtus : un triangle ou aucun",
+  "lecture": [
+   "La tige grise de 10 part vers le haut et la gauche avec un angle de 130° ; le pointillé gris à gauche du départ prolonge la droite.",
+   "L’arc vert, de rayon 12, coupe la demi-droite en un point vert, à 2,81 : un triangle.",
+   "L’arc rouge, de rayon 8, ne coupe la droite que par ses deux points rouges, derrière le départ : aucun triangle."
+  ],
+  "a_voir": "Avec a = 8, les deux points sont derrière le départ."
+ },
+ {
+  "code": "36-092",
+  "a_dire": "Dans un triangle, l’angle obtus est en face du plus grand côté : dans le triangle 3, 4, 6, l’angle de 117,28° est en face du côté 6.",
+  "legende_titre": "L’angle obtus et le grand côté",
+  "lecture": [
+   "Le triangle a les côtés 3, 4 et 6 ; le côté 6 est en vert.",
+   "L’arc bleu marque l’angle de 117,28° en face du côté 6.",
+   "La ligne du haut compare 6² = 36 à 3² + 4² = 25."
+  ],
+  "a_voir": "Le côté vert est en face de l’angle obtus."
+ },
+ {
+  "code": "36-093",
+  "a_dire": "Dans le champ, côté 120, côté 90 et angle 50° : on calcule 120² + 90², on retranche la correction 13 884,2, puis la racine donne a = 92,82, entre 30 et 210.",
+  "legende_titre": "Les calculs du champ, dans l’ordre",
+  "lecture": [
+   "Le triangle bleu a les côtés 120 et 90 et l’angle de 50° entre eux ; le côté vert est celui qu’on cherche, 92,82.",
+   "Les quatre cases suivent les calculs dans l’ordre : somme des carrés, correction en orange, carré du côté, racine en vert.",
+   "La droite du bas va de 30 à 210 et le point vert, 92,82, est entre les deux."
+  ],
+  "a_voir": "Le résultat 92,82 est entre 30 et 210."
+ },
+ {
+  "code": "36-094",
+  "a_dire": "La correction fait passer le côté de 150, valeur pour un angle droit, à 92,82, soit 57,18 de moins, parce que l’angle de 50° est plus fermé que l’angle droit.",
+  "legende_titre": "Ce que la correction retire",
+  "lecture": [
+   "Le triangle bleu a un angle de 50° ; le triangle violet en pointillés a le même côté de 120 avec un angle droit.",
+   "La case violette est le troisième côté pour l’angle droit : 150.",
+   "La case bleue est le côté pour 50° : 92,82 ; la case orange est la différence, 57,18."
+  ],
+  "a_voir": "Le côté est plus court de 57,18 avec l’angle de 50°."
+ },
+ {
+  "code": "36-095",
+  "a_dire": "On cherche d’abord l’angle en face du plus petit côté, car il est sûrement aigu : un seul candidat convient (47,97°), alors que le côté 120 laisse deux candidats.",
+  "legende_titre": "Commencer par le plus petit côté",
+  "lecture": [
+   "Chaque ligne est une échelle d'angles de 0° à 180°.",
+   "En haut, le côté 120 donne deux candidats orange, 82,03° et 97,97° : rien ne les départage.",
+   "En bas, le côté 90, le plus petit, donne un angle forcément aigu : 47,97° en vert ; l'autre candidat, 132,03° en rouge, tombe dans la zone rouge au-delà de 130°, impossible avec 50°."
+  ],
+  "a_voir": "Avec le plus petit côté, un seul candidat convient : 47,97°."
+ },
+ {
+  "code": "36-096",
+  "a_dire": "On résout le triangle : sin C = 90 × 0,7660 ÷ 92,82 ≈ 0,7428, donc C ≈ 47,97°, puis B = 180° − 50° − 47,97° = 82,03°.",
+  "legende_titre": "Le triangle du champ, résolu",
+  "lecture": [
+   "Le triangle bleu porte les trois côtés 90, 120 et 92,82 et les trois angles 50°, 82,03° et 47,97°.",
+   "Les trois premières cases calculent sin C puis l’angle C, en orange.",
+   "La dernière case, en vert, donne le troisième angle B sans nouveau sinus."
+  ],
+  "a_voir": "Le troisième angle vient d’une soustraction."
+ }
+]

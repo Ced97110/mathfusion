@@ -1,0 +1,354 @@
+[
+ {
+  "code": "68-119",
+  "a_dire": "Le code de Hamming (7, 4) est celui dont la matrice a pour colonne i le nombre i écrit en base 2, lu de haut en bas.",
+  "legende_titre": "Chaque colonne est son propre numéro",
+  "lecture": [
+   "Les chiffres gris du haut sont les numéros de colonne, de 1 à 7.",
+   "Le cadre bleu est la matrice H : trois lignes et sept colonnes de 0 et de 1.",
+   "La colonne 6, en orange, se lit de haut en bas : 1, 1, 0, soit 110.",
+   "Le titre rappelle les tailles : des mots de 7 bits, des blocs de message de 4 bits."
+  ],
+  "a_voir": "Chaque colonne de la matrice est son numéro écrit en base 2."
+ },
+ {
+  "code": "68-120",
+  "a_dire": "Chaque colonne de la matrice se lit de haut en bas comme un nombre en base 2 : la position est écrite dans sa propre colonne.",
+  "legende_titre": "Trois lignes, sept colonnes, trois valeurs",
+  "lecture": [
+   "Les chiffres gris du haut sont les numéros des colonnes, de 1 à 7.",
+   "Les lignes A (bleu), B (orange) et C (vert) ont un disque coloré sous chaque 1.",
+   "À droite, chaque ligne a sa valeur : 4 pour A, 2 pour B, 1 pour C.",
+   "Le cadre en pointillés entoure la colonne 6 : 4 + 2 + 0 = 6."
+  ],
+  "a_voir": "En additionnant les valeurs des 1 d'une colonne, on retrouve son numéro."
+ },
+ {
+  "code": "68-121",
+  "a_dire": "La ligne A demande de prendre les bits aux positions 4, 5, 6 et 7, de les additionner et de vérifier que la somme vaut 0.",
+  "legende_titre": "La ligne A et les positions 4 à 7",
+  "lecture": [
+   "La rangée de chiffres gris donne les positions ; la rangée de cases donne le mot 0011001.",
+   "Les quatre cases bleues sont les positions 4, 5, 6 et 7 ; l'accolade les réunit.",
+   "En vert, 1 + 0 + 0 + 1 = 0 : l'équation est vérifiée pour ce mot.",
+   "En rouge, le mot 0011011 donne 1 + 0 + 1 + 1 = 1 : l'équation n'est pas vérifiée."
+  ],
+  "a_voir": "La ligne A additionne seulement les bits des positions 4, 5, 6 et 7 et attend 0."
+ },
+ {
+  "code": "68-122",
+  "a_dire": "La ligne B regarde toujours les positions 2, 3, 6 et 7 : quand le mot change, seule la valeur de la somme change.",
+  "legende_titre": "Ce qui reste fixe quand le mot change",
+  "lecture": [
+   "Deux mots sont écrits l'un sous l'autre : 0011001 et 0011011.",
+   "Les colonnes orange sont les positions 2, 3, 6 et 7 : ce sont les mêmes pour les deux mots.",
+   "En vert, la somme du premier mot vaut 0. En rouge, celle du second vaut 1."
+  ],
+  "a_voir": "Les positions regardées sont fixes ; le mot donne le résultat."
+ },
+ {
+  "code": "68-123",
+  "a_dire": "La ligne C regarde les positions 1, 3, 5 et 7 ; si on inverse le premier bit, la somme passe de 0 à 1.",
+  "legende_titre": "La ligne C voit le premier bit",
+  "lecture": [
+   "Les colonnes vertes sont les positions 1, 3, 5 et 7.",
+   "Le mot du haut, 0011001, donne 0 + 1 + 0 + 1 = 0.",
+   "Dans le mot du bas, le premier bit est inversé : c'est la case rouge. La somme devient 1 + 1 + 0 + 1 = 1.",
+   "Les positions 2 et 4 ne sont pas dans les colonnes vertes : la ligne C ne les regarde pas."
+  ],
+  "a_voir": "Inverser un bit regardé par la ligne C change sa somme."
+ },
+ {
+  "code": "68-124",
+  "a_dire": "Les positions 1, 2 et 4 sont les bits de contrôle car chacune n'est que dans une équation ; les positions 3, 5, 6 et 7 portent le message.",
+  "legende_titre": "Qui contrôle, qui porte le message",
+  "lecture": [
+   "La rangée du haut donne les positions 1 à 7 ; chaque rangée A, B, C marque par un rond les positions qui sont dans cette équation.",
+   "Les ronds et cases verts (positions 1, 2, 4) sont seuls dans leur équation : ce sont les bits de contrôle.",
+   "Les ronds et cases bleus (positions 3, 5, 6, 7) sont dans deux ou trois équations : ils portent le message."
+  ],
+  "a_voir": "Une position qui n’est que dans une équation sert de bit de contrôle ; les autres portent le message."
+ },
+ {
+  "code": "68-125",
+  "a_dire": "Le bit de contrôle x1 est la somme des bits x3, x5 et x7 du message.",
+  "legende_titre": "Calculer le bit de contrôle 1",
+  "lecture": [
+   "Chaque ligne est un cas : le message 1001, puis le message 0110.",
+   "Les trois cases bleues donnent les bits aux positions 3, 5 et 7, reliés par des signes plus.",
+   "La flèche orange mène à la case verte : le bit x1 vaut 1 + 0 + 1 = 0 pour le premier cas, 0 + 1 + 0 = 1 pour le second.",
+   "Les nombres changent, la forme de la somme reste la même."
+  ],
+  "a_voir": "x1 est toujours la somme des bits 3, 5 et 7, quel que soit le message."
+ },
+ {
+  "code": "68-126",
+  "a_dire": "Pour trouver x2, on lit les bits aux positions 3, 6 et 7, on les additionne, puis on écrit le résultat à la position 2.",
+  "legende_titre": "Trois actions pour le bit de contrôle 2",
+  "lecture": [
+   "La rangée de cases montre le mot : le message 1001 est en place aux positions 3, 5, 6 et 7. Les positions 3, 6 et 7 sont en bleu ; la position 5 est en gris.",
+   "Les trois flèches orange partent des bits 3, 6 et 7 vers la case verte du bas : 1 + 0 + 1 = 0.",
+   "La flèche qui remonte écrit ce résultat à la position 2, en vert.",
+   "Les cases en pointillés, positions 1 et 4, ne sont pas encore calculées."
+  ],
+  "a_voir": "Lire trois bits, les additionner, écrire le résultat à la position 2."
+ },
+ {
+  "code": "68-127",
+  "a_dire": "Le bit de contrôle x4 est la somme des bits x5, x6 et x7 ; avec lui, la somme des quatre bits est nulle.",
+  "legende_titre": "Le bit 4 complète la somme à 0",
+  "lecture": [
+   "Chaque ligne de cases donne les positions 4, 5, 6 et 7 d'un message : 1001 en haut, 0110 en dessous.",
+   "Les trois cases bleues, positions 5, 6 et 7, sont additionnées : l'accolade les regroupe.",
+   "La case verte est le bit x4 : 1 pour le premier message, 0 pour le second.",
+   "Dans les deux lignes, la somme des quatre bits vaut 0."
+  ],
+  "a_voir": "x4 est choisi pour que la somme des quatre bits de la ligne A soit nulle."
+ },
+ {
+  "code": "68-128",
+  "a_dire": "Pour coder 1001, on place les 4 bits aux positions 3, 5, 6, 7, on calcule les bits des positions 1, 2, 4, puis on lit le mot 0011001.",
+  "legende_titre": "Coder 1001 en trois étapes",
+  "lecture": [
+   "La première ligne place le message 1001 aux positions 3, 5, 6 et 7, en bleu.",
+   "La deuxième ligne donne les bits de contrôle calculés aux positions 1, 2 et 4, en vert : 0, 0 et 1.",
+   "La troisième ligne réunit les sept cases : c'est le mot envoyé 0011001.",
+   "Les flèches orange vont d'une étape à la suivante."
+  ],
+  "a_voir": "Le message et les trois bits calculés forment ensemble le mot de 7 bits."
+ },
+ {
+  "code": "68-129",
+  "a_dire": "Le code a 16 mots : un de poids 0, sept de poids 3, sept de poids 4 et un de poids 7 ; le plus petit poids non nul est 3, donc d = 3.",
+  "legende_titre": "Seize mots rangés par poids",
+  "lecture": [
+   "La droite graduée donne le poids d'un mot, c'est-à-dire son nombre de 1 : 0, 3, 4 et 7 sont marqués.",
+   "Chaque rectangle empilé est un mot ; le nombre au-dessus compte la pile : 1, 7, 7 et 1.",
+   "La pile verte, au poids 3, est le plus petit poids non nul : c'est d = 3.",
+   "Le titre additionne les piles : 1 + 7 + 7 + 1 = 16 mots."
+  ],
+  "a_voir": "Les poids possibles sont 0, 3, 4 et 7, et le plus petit non nul est 3."
+ },
+ {
+  "code": "68-130",
+  "a_dire": "Pour 4 bits utiles, le code de Hamming ajoute 3 bits de contrôle, alors que la répétition triple en ajoute 8.",
+  "legende_titre": "Le prix en bits de contrôle",
+  "lecture": [
+   "La rangée du haut est la répétition triple : 12 cases, dont 4 bleues (utiles) et 8 orange (contrôle).",
+   "La rangée du bas est le code de Hamming : 7 cases, dont 4 bleues et 3 orange.",
+   "Les accolades comptent les cases de chaque couleur.",
+   "Le cadre vert rappelle que les deux codes corrigent une erreur."
+  ],
+  "a_voir": "Le code de Hamming protège autant avec 3 bits de contrôle au lieu de 8."
+ },
+ {
+  "code": "68-131",
+  "a_dire": "On code d'abord les quatre messages qui n'ont qu'un seul 1 ; le mot de tout autre message est la somme des mots de ces messages.",
+  "legende_titre": "Quatre mots calculés une fois pour toutes",
+  "lecture": [
+   "Chaque ligne relie un message à un seul 1, à gauche, à son mot de 7 bits, à droite.",
+   "Dans le message, le 1 est dans une case orange. Dans le mot, la case orange est la position où ce 1 a été placé : 3, 5, 6 ou 7.",
+   "Le texte du bas donne un exemple : 1001 est la somme de 1000 et de 0001, donc son mot est la somme de leurs deux mots."
+  ],
+  "a_voir": "Quatre mots suffisent pour obtenir le mot de n'importe quel message."
+ },
+ {
+  "code": "68-132",
+  "a_dire": "La matrice génératrice G range les quatre mots en colonnes : elle a 7 lignes et 4 colonnes.",
+  "legende_titre": "Les quatre mots rangés en colonnes",
+  "lecture": [
+   "Le grand tableau bleu est la matrice G, entre deux crochets.",
+   "Chaque colonne est l'un des quatre mots : 1110000, 1001100, 0101010 et 1101001, de gauche à droite.",
+   "L'accolade du haut compte les 4 colonnes ; le texte vertical compte les 7 lignes."
+  ],
+  "a_voir": "Les colonnes de G sont des mots du code."
+ },
+ {
+  "code": "68-133",
+  "a_dire": "Pour coder m, on repère les 1 de m, on prend les colonnes de G qui portent ces numéros, puis on les additionne.",
+  "legende_titre": "Le codage comme somme de colonnes",
+  "lecture": [
+   "La rangée du haut est le message m = 1001 ; ses deux 1 sont en orange.",
+   "Dans le tableau G, les colonnes 1 et 4, en orange, sont celles que ces 1 désignent. Les colonnes grises ne servent pas.",
+   "En dessous, les deux colonnes sont écrites en ligne : 1110000 et 1101001.",
+   "Leur somme, en vert, est le mot c = 0011001."
+  ],
+  "a_voir": "Les 1 du message désignent les colonnes de G à additionner."
+ },
+ {
+  "code": "68-134",
+  "a_dire": "Comme le code est linéaire, le mot de 1001 = 1000 + 0001 est la somme des mots de 1000 et de 0001.",
+  "legende_titre": "Le codage garde la somme",
+  "lecture": [
+   "La rangée du haut, en bleu, écrit 1001 = 1000 + 0001.",
+   "Les flèches orange « coder » mènent à la rangée verte : les mots 0011001, 1110000 et 1101001.",
+   "La rangée verte est elle aussi une somme : 0011001 = 1110000 + 1101001.",
+   "Le cadre orange nomme l'étape qui porte le poids de la preuve."
+  ],
+  "a_voir": "Coder une somme de messages donne la somme de leurs codages."
+ },
+ {
+  "code": "68-135",
+  "a_dire": "Coder, c'est additionner bit par bit les colonnes de G désignées par les 1 du message.",
+  "legende_titre": "Additionner deux colonnes bit par bit",
+  "lecture": [
+   "La case bleue du haut est le message m = 1001 : ses deux 1 désignent les colonnes 1 et 4 de G.",
+   "Les deux lignes grises sont ces colonnes : 1110000 et 1101001.",
+   "Le cadre orange marque les positions 1 et 2, où 1 + 1 donne 0.",
+   "La ligne verte du bas est la somme, 0011001 : le mot envoyé de m."
+  ],
+  "a_voir": "La somme des colonnes désignées par les 1 du message donne le mot 0011001."
+ },
+ {
+  "code": "68-136",
+  "a_dire": "H annule les colonnes de G, qui sont des mots du code ; un mot qui n'est pas du code, comme 1000000, donne un résultat non nul.",
+  "legende_titre": "H annule-t-elle tous les mots ?",
+  "lecture": [
+   "Le titre pose la règle : H annule les colonnes de G.",
+   "La rangée verte du haut est le mot 1110000, une colonne de G : H en donne 000, il est annulé.",
+   "La rangée rouge du bas est le mot 1000000, qui n’est pas une colonne de G ni un mot du code : H en donne 001, qui n’est pas nul.",
+   "La flèche violette marque le passage par la matrice H."
+  ],
+  "a_voir": "H annule les colonnes de G, qui sont des mots du code ; un mot qui n’est pas du code n’est pas annulé."
+ },
+ {
+  "code": "68-137",
+  "a_dire": "G part d'un message et fabrique un mot du code ; H part d'un mot et reconnaît s'il est du code.",
+  "legende_titre": "Deux matrices, deux rôles",
+  "lecture": [
+   "Le message m = 1001, en gris, passe par G (flèche bleue) et devient le mot c = 0011001.",
+   "Le mot c passe par H (flèche violette) : le résultat, en vert, est 0.",
+   "L'accolade bleue place G à l'émission, où il fabrique. L'accolade violette place H, qui reconnaît."
+  ],
+  "a_voir": "G fabrique un mot du code, H le reconnaît."
+ },
+ {
+  "code": "68-138",
+  "a_dire": "Dans la forme de Judson, les bits du message viennent d'abord et les bits de contrôle ensuite, ce qui donne H = (A | I_m).",
+  "legende_titre": "Message d'abord, contrôle ensuite",
+  "lecture": [
+   "La rangée du haut est l'ordre de Hamming : les positions 1, 2 et 4, en vert, sont les contrôles ; les autres, en bleu, portent le message.",
+   "La rangée du bas est l'ordre de Judson : on lit 3, 5, 6, 7, puis 1, 2, 4. Les flèches montrent où va chaque position.",
+   "Les accolades comptent 4 bits de message, puis 3 bits de contrôle. En bas, H s'écrit en deux blocs."
+  ],
+  "a_voir": "Seul l'ordre des positions change ; le message passe en tête."
+ },
+ {
+  "code": "68-139",
+  "a_dire": "Dans G = (I_k ; A), le bloc I_k recopie le message et le bloc A calcule les bits de contrôle.",
+  "legende_titre": "Un bloc qui recopie, un bloc qui calcule",
+  "lecture": [
+   "Le tableau G est fait de deux blocs empilés : I_k en bleu, A en orange.",
+   "Chaque ligne du bas montre un message de 2 bits (10, 01, 11) et son mot de 5 bits.",
+   "Dans le mot, les deux premiers bits, en bleu, recopient le message. Les trois derniers, en orange, sont calculés par le bloc A."
+  ],
+  "a_voir": "Pour chaque message, les premiers bits du mot sont le message lui-même."
+ },
+ {
+  "code": "68-140",
+  "a_dire": "Avec des bits, A + A = 0, car chaque bit additionné à lui-même donne 0 ; c'est pourquoi HG = 0.",
+  "legende_titre": "Pourquoi A + A est nul",
+  "lecture": [
+   "Le titre résume la preuve : HG = A + A = 0.",
+   "Les deux tableaux bleus sont la même matrice A : lignes 01, 10 et 11.",
+   "Le tableau vert est la matrice nulle : chaque terme de A additionné à lui-même donne 0.",
+   "Le texte du bas donne la règle qui porte la preuve : 0 + 0 = 0 et 1 + 1 = 0."
+  ],
+  "a_voir": "L'étape qui porte la preuve est 1 + 1 = 0, vraie pour chaque terme."
+ },
+ {
+  "code": "68-141",
+  "a_dire": "Le code de Hamming a la forme systématique, avec les positions rangées dans un autre ordre : les mêmes bits, lus dans l'ordre 3, 5, 6, 7, 1, 2, 4.",
+  "legende_titre": "Les mêmes bits dans un autre ordre",
+  "lecture": [
+   "La rangée du haut est le mot 0011001 dans l'ordre de Hamming, avec les numéros de position au-dessus.",
+   "Les flèches orange envoient chaque bit à sa nouvelle place.",
+   "La rangée du bas est le mot 1001001 : le message d'abord, en bleu, puis les contrôles, en vert. Ce sont les mêmes bits.",
+   "Les numéros sous cette rangée disent quelle position est lue : 3, 5, 6, 7, 1, 2, 4."
+  ],
+  "a_voir": "Changer l'ordre des positions ne change pas les bits, seulement leur place."
+ },
+ {
+  "code": "68-142",
+  "a_dire": "Chaque ligne de H devient un cercle autour de ses positions ; la règle du code est que chaque cercle contient un nombre pair de 1.",
+  "legende_titre": "Une ligne de H, un cercle",
+  "lecture": [
+   "Trois cercles se coupent : A en bleu, B en orange, C en vert.",
+   "Chaque numéro de 1 à 7 est placé dans les cercles qui le contiennent : 7 est dans les trois, 6 dans A et B seulement.",
+   "Sous chaque cercle, la liste de ses positions : A : 4, 5, 6, 7 ; B : 2, 3, 6, 7 ; C : 1, 3, 5, 7.",
+   "Le texte du bas donne la règle du code."
+  ],
+  "a_voir": "Chaque cercle entoure les positions d'une ligne de H."
+ },
+ {
+  "code": "68-143",
+  "a_dire": "On place les sept bits du mot reçu dans les régions des cercles et on compte les 1 de chaque cercle : 3, 3 et 2.",
+  "legende_titre": "Compter les 1 dans chaque cercle",
+  "lecture": [
+   "Chaque région porte un bit du mot reçu 0011011 ; les 1 sont dans des disques gris.",
+   "Sous chaque cercle, le nombre de 1 : A en a 3 (impair), B en a 3 (impair), C en a 2 (pair).",
+   "Le cercle rouge entoure la région qui est dans A et B, hors de C : celle du sixième bit."
+  ],
+  "a_voir": "Une seule région est dans A et B et hors de C."
+ },
+ {
+  "code": "68-144",
+  "a_dire": "La région d'une position est son numéro écrit en base 2 : A vaut 4, B vaut 2, C vaut 1.",
+  "legende_titre": "Les régions rangées par numéro",
+  "lecture": [
+   "Chaque région porte un numéro de position et, dessous, son écriture en base 2.",
+   "Les cercles ont chacun une valeur : A vaut 4, B vaut 2, C vaut 1.",
+   "La région 6, en orange, est dans A et B : 4 + 2 = 6, soit 110.",
+   "La région 7 est dans les trois cercles : 4 + 2 + 1 = 7, soit 111."
+  ],
+  "a_voir": "Les cercles qui contiennent une position donnent son numéro en base 2."
+ },
+ {
+  "code": "68-145",
+  "a_dire": "Avec le mot reçu 0011011, les cercles A et B sont impairs et C est pair : le bit faux est x6, dans A et B, hors de C.",
+  "legende_titre": "Trouver le bit faux du mot reçu",
+  "lecture": [
+   "La rangée du haut donne les positions 1 à 7 ; chacune des lignes A, B, C répète le mot reçu 0011011.",
+   "Les cases colorées sont les positions que chaque ligne regarde. À droite, le nombre de 1 trouvés : 3 pour A, 3 pour B, 2 pour C.",
+   "La colonne en pointillés rouges est la position 6 : dans A et B, hors de C.",
+   "Le cadre rouge du bas conclut : le bit 6 est faux."
+  ],
+  "a_voir": "Les deux lignes impaires et la ligne paire désignent la position 6."
+ },
+ {
+  "code": "68-146",
+  "a_dire": "Une seule région est dans A et B et hors de C : celle de x6, que l'on inverse.",
+  "legende_titre": "Une seule région possible",
+  "lecture": [
+   "Les cercles A et B sont épais : ce sont les cercles impairs. Le cercle C, fin, est pair.",
+   "Les trois cases du bas rappellent les trois conditions : dans A, dans B, hors de C.",
+   "Une seule région remplit les trois conditions : la région 6, en orange.",
+   "Les six autres numéros, en gris, ne remplissent pas les trois conditions."
+  ],
+  "a_voir": "Les trois conditions désignent une seule position, la 6."
+ },
+ {
+  "code": "68-147",
+  "a_dire": "La somme des valeurs 4, 2 et 1 des cercles impairs donne le numéro du bit faux.",
+  "legende_titre": "Additionner les valeurs des cercles impairs",
+  "lecture": [
+   "Les cercles A et B sont épais : ils sont impairs, avec les valeurs 4 et 2.",
+   "Le cercle C, fin, est pair : sa valeur n'est pas comptée.",
+   "En bas, la somme 4 + 2 = 6 donne le numéro du bit faux.",
+   "La région 6, en orange, est celle de ce bit."
+  ],
+  "a_voir": "La somme 4 + 2 est le numéro de la région du bit faux."
+ },
+ {
+  "code": "68-148",
+  "a_dire": "Si aucun cercle n'est impair, la somme vaut 0 : il n'y a pas d'erreur, ou il y en a assez pour former un autre mot du code.",
+  "legende_titre": "Aucun cercle impair ne prouve rien",
+  "lecture": [
+   "La première ligne, en bleu, est le mot envoyé 0011001.",
+   "La deuxième ligne est l'erreur, 1110000 : elle est elle-même un mot du code, avec trois 1 en rouge.",
+   "La troisième ligne est le mot reçu 1101001 : les trois bits changés sont en rouge.",
+   "Aucun cercle n'est impair, mais trois bits sont faux."
+  ],
+  "a_voir": "Un mot reçu qui vérifie les trois équations peut avoir trois bits faux."
+ }
+]

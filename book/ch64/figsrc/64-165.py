@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 3, 8, 38, 58, 'fixe', label=None)
+text(ax, 22, 60, r'$K$ : sommet de la tour', 'fixe', 's')
+box(ax, 8, 14, 28, 34, 'sujet', label=None)
+text(ax, 22, 42, r'$E$ : corps de', 'sujet', 's'); text(ax, 22, 37, 'décomposition', 'sujet', 's')
+box(ax, 50, 46, 36, 16, 'sujet', label=r'$H$ : 6 éléments')
+box(ax, 50, 12, 36, 16, 'resultat', label=r'$G$ : 6 éléments')
+arrow(ax, (68, 45), (68, 29), 'varie')
+text(ax, 65, 37, 'restreindre à $E$', 'varie', 's', ha='right')
+text(ax, 68, 5, r'$G$ est un quotient de $H$', 'encre', 'm')
+save(fig, '64-165')

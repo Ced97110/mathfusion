@@ -1,0 +1,366 @@
+[
+ {
+  "code": "59-033",
+  "a_dire": "2 et x sont liés par x·2 − 2·x = 0 sans que l'un soit multiple de l'autre, et aucun polynôme g seul n'engendre K.",
+  "legende_titre": "Un lien entre 2 et x, mais aucun générateur seul",
+  "lecture": [
+   "En haut, les deux cases bleues « x·2 » et « 2·x » donnent la même case verte « 2x » : leur différence est 0.",
+   "En bas, les quatre cases rouges sont les seuls choix pour g, car g doit diviser 2 : 1, −1, 2 et −2.",
+   "Les deux premières ne sont pas dans K ; les deux dernières ne divisent pas x.",
+   "La phrase rouge dit le résultat : aucun g seul n'engendre K."
+  ],
+  "a_voir": "Les quatre choix possibles pour g sont tous barrés."
+ },
+ {
+  "code": "59-034",
+  "a_dire": "Un module de type fini est engendré par une liste finie x₁, …, xₙ ; sur l'horloge à 12 heures, la liste 1 suffit.",
+  "legende_titre": "Un module engendré par une liste finie",
+  "lecture": [
+   "Les douze ronds vert clair sont les heures de l'horloge, de 0 à 11.",
+   "Le rond bleu « 1 » est le seul générateur x₁ : n vaut 1.",
+   "Les flèches orange sont les pas « +1 » : en les suivant, vous atteignez toutes les heures, puis 11 ramène à 0.",
+   "Le texte au centre rappelle que M a 12 éléments."
+  ],
+  "a_voir": "Un seul élément, 1, atteint les douze heures."
+ },
+ {
+  "code": "59-035",
+  "a_dire": "η envoie chaque entier sur son heure ; toutes les heures sont atteintes (surjectif), et 2 et 14 vont sur la même heure (pas injectif).",
+  "legende_titre": "Chaque entier est envoyé sur une heure",
+  "lecture": [
+   "Les cases bleues du haut sont des entiers : 14, 2 et 5.",
+   "La rangée verte du bas contient les 12 heures de M ; toutes sont colorées parce que toutes sont atteintes.",
+   "Les flèches orange sont η : 5 va sur l'heure 5 ; 2 et 14 arrivent sur la même case, l'heure 2."
+  ],
+  "a_voir": "Deux flèches arrivent sur l'heure 2 : η n'est pas injectif."
+ },
+ {
+  "code": "59-036",
+  "a_dire": "Le noyau K de η est l'ensemble des multiples de 12 ; il est libre, de base f₁ = 12.",
+  "legende_titre": "Le noyau : les entiers envoyés sur l'heure 0",
+  "lecture": [
+   "Chaque rond bleu sur la droite est un point du noyau K : −24, −12, 0, 12, 24, 36.",
+   "L'accolade orange couvre un pas de 12 : c'est le générateur f₁.",
+   "Tout point du noyau s'obtient en répétant ce pas un certain nombre de fois, toujours le même nombre : c'est une base."
+  ],
+  "a_voir": "Les points de K sont espacés de 12 et un seul pas les engendre."
+ },
+ {
+  "code": "59-037",
+  "a_dire": "M est en correspondance avec les paquets de listes de D(n)/K : deux listes sont dans le même paquet quand leur différence est dans K.",
+  "legende_titre": "Les entiers rangés en paquets, un par heure",
+  "lecture": [
+   "Chaque colonne en pointillé gris est un paquet d'entiers ; la rangée du haut va de 0 à 11, celle du dessous de 12 à 23.",
+   "La colonne bleue contient 2 et 14 : leur différence 14 − 2 = 12 est dans K.",
+   "Chaque flèche relie un paquet à une case verte, une heure de M ; la flèche orange est celle de l'heure 2."
+  ],
+  "a_voir": "Une colonne = un paquet = une heure : 12 paquets pour 12 éléments de M."
+ },
+ {
+  "code": "59-038",
+  "a_dire": "Chaque générateur fₖ s'écrit comme somme de coefficients fois les vecteurs de base : (4, 6) = 4e₁ + 6e₂.",
+  "legende_titre": "Un point écrit avec les vecteurs de base",
+  "lecture": [
+   "Les deux flèches grises sont les vecteurs de base e₁ (vers la droite) et e₂ (vers le haut).",
+   "Le chemin bleu fait 4 pas de e₁ puis 6 pas de e₂ et arrive au point f₁ = (4, 6).",
+   "Le chemin violet fait 4 pas de e₂ puis 6 pas de e₁ et arrive au point f₂ = (6, 4).",
+   "Les coefficients de chaque formule sont les coordonnées du point."
+  ],
+  "a_voir": "Les nombres devant e₁ et e₂ sont les coordonnées du point."
+ },
+ {
+  "code": "59-039",
+  "a_dire": "La matrice des relations A range les coefficients des relations en tableau : une ligne par relation, m lignes et n colonnes.",
+  "legende_titre": "Les relations rangées dans un tableau",
+  "lecture": [
+   "Les deux cases violettes à gauche sont les deux relations qui décrivent le module.",
+   "Chaque flèche orange envoie une relation vers une ligne du tableau bleu : ses coefficients 4 et 6, puis 6 et 4.",
+   "L'accolade sous le tableau compte les colonnes, n = 2 ; à droite, m = 2 compte les lignes."
+  ],
+  "a_voir": "Une relation devient une ligne de nombres."
+ },
+ {
+  "code": "59-040",
+  "a_dire": "Chaque ligne de A est une relation vraie dans M : comme (4, 6) est dans K, 4x₁ + 6x₂ = 0 dans M.",
+  "legende_titre": "Un point du noyau donne une égalité dans M",
+  "lecture": [
+   "Les ronds bleus sont les points du noyau K visibles sur le quadrillage : (0, 0), (4, 6) et (6, 4).",
+   "Le chemin orange en pointillé va de (0, 0) à (4, 6) : 4 fois x₁, puis 6 fois x₂.",
+   "Parce que (4, 6) est dans K, la case verte dit que cette combinaison vaut 0 dans M."
+  ],
+  "a_voir": "Un point de K veut dire : cette combinaison des générateurs vaut zéro."
+ },
+ {
+  "code": "59-041",
+  "a_dire": "Pour A = (4 6 ; 6 4), la ligne 1 donne f₁ = 4e₁ + 6e₂ et la ligne 2 donne f₂ = 6e₁ + 4e₂ ; cela ne dit pas encore la structure de M.",
+  "legende_titre": "Lire le tableau (4 6 ; 6 4) ligne par ligne",
+  "lecture": [
+   "La ligne bleue est la première ligne : 4 sous e₁ et 6 sous e₂.",
+   "La ligne violette est la seconde : 6 sous e₁ et 4 sous e₂.",
+   "La flèche de chaque ligne mène à la formule qu'elle donne, f₁ en bleu et f₂ en violet."
+  ],
+  "a_voir": "Un nombre du tableau est le coefficient du vecteur de base de sa colonne."
+ },
+ {
+  "code": "59-042",
+  "a_dire": "Un changement de base e′ᵢ = Σ pᵢⱼeⱼ par une matrice P inversible change la description, pas les points.",
+  "legende_titre": "Une nouvelle base écrite avec l'ancienne",
+  "lecture": [
+   "Le carré gris est construit sur l'ancienne base e₁, e₂.",
+   "Le parallélogramme orange est construit sur la nouvelle base : e′₁ = 2e₁ + 3e₂ et e′₂ = 1e₁ + 1e₂.",
+   "Les lignes de P sont (2, 3) et (1, 1) ; son déterminant vaut −1, donc P est inversible dans les entiers.",
+   "Les points du quadrillage ne bougent pas."
+  ],
+  "a_voir": "Les points restent en place ; seule la liste de vecteurs qui les décrit change."
+ },
+ {
+  "code": "59-043",
+  "a_dire": "De nouveaux générateurs f′ₖ = Σ qₖₗ fₗ par une matrice Q inversible engendrent le même K que les anciens.",
+  "legende_titre": "Remplacer un générateur par une combinaison",
+  "lecture": [
+   "La flèche bleue est f₁ = (4, 6), qu'on garde.",
+   "La flèche grise est l'ancien second générateur f₂ = (6, 4).",
+   "La flèche orange est le nouveau, f′₂ = f₁ + f₂ = (10, 10).",
+   "Le pointillé gris va de f₁ à f′₂ : c'est f₂ déplacé, donc f₂ = f′₂ − f₁ se retrouve avec la nouvelle liste."
+  ],
+  "a_voir": "L'ancien générateur se retrouve à partir du nouveau : K ne change pas."
+ },
+ {
+  "code": "59-044",
+  "a_dire": "La nouvelle matrice des relations est A′ = Q A P⁻¹ : Q agit à gauche sur les lignes de A, P⁻¹ à droite.",
+  "legende_titre": "De A à A′ avec Q et P",
+  "lecture": [
+   "Au milieu, le tableau A ; sa première ligne est grise et sa seconde bleue.",
+   "La boîte orange Q est à gauche de A : elle agit sur les lignes, ici en ajoutant la ligne 1 à la ligne 2.",
+   "La boîte violette P⁻¹ est à droite de A : elle agit sur les colonnes ; ici elle ne change aucun nombre.",
+   "À droite du signe égal, le tableau A′ garde la ligne (4, 6) en gris et a pour seconde ligne (10, 10) en orange."
+  ],
+  "a_voir": "Q est à gauche et change les lignes ; P⁻¹ est à droite et change les colonnes."
+ },
+ {
+  "code": "59-045",
+  "a_dire": "Changer de générateurs de K revient à multiplier A à gauche (les lignes) ; changer de base revient à multiplier A à droite (les colonnes).",
+  "legende_titre": "Gauche pour les lignes, droite pour les colonnes",
+  "lecture": [
+   "Au centre, le tableau A : ses lignes sont étiquetées f₁ et f₂, ses colonnes e₁ et e₂.",
+   "La case orange Q est à gauche de A : elle mélange les lignes, c'est-à-dire les générateurs.",
+   "La case violette P est à droite de A : elle mélange les colonnes, c'est-à-dire la base."
+  ],
+  "a_voir": "Le côté du produit dit si l'on agit sur les lignes ou sur les colonnes."
+ },
+ {
+  "code": "59-046",
+  "a_dire": "Deux matrices A et B sont équivalentes s'il existe P et Q inversibles avec B = PAQ ; elles décrivent le même module.",
+  "legende_titre": "Deux tableaux liés par B = PAQ",
+  "lecture": [
+   "À gauche, le tableau bleu A de lignes (4, 6) et (6, 4) ; à droite, le tableau violet B de lignes (2, 0) et (0, 10).",
+   "La double flèche orange dit que l'on passe de l'un à l'autre par B = PAQ, avec P et Q inversibles.",
+   "La case verte du bas dit que les deux tableaux décrivent le même module M."
+  ],
+  "a_voir": "Les nombres sont différents, le module est le même."
+ },
+ {
+  "code": "59-047",
+  "a_dire": "Sur D, « inversible » veut dire que l'inverse a lui aussi ses coefficients dans D ; sur les entiers, 2 n'est pas inversible.",
+  "legende_titre": "L'inverse doit rester dans les entiers",
+  "lecture": [
+   "Chaque ligne montre un nombre bleu, une flèche orange vers son inverse, puis un verdict.",
+   "Pour 1 et −1, l'inverse est 1 et −1 : cases vertes, entiers.",
+   "Pour 2, l'inverse est un demi : case rouge, ce n'est pas un entier."
+  ],
+  "a_voir": "Seuls 1 et −1 ont un inverse entier."
+ },
+ {
+  "code": "59-048",
+  "a_dire": "diag(2, 1) n'est pas inversible sur ℤ : son inverse contient un demi et son déterminant vaut 2, pas ±1.",
+  "legende_titre": "Un tableau qui n'a pas d'inverse entier",
+  "lecture": [
+   "À gauche, le tableau bleu diag(2, 1) : 2 et 1 sur la diagonale, 0 ailleurs.",
+   "À droite, son inverse : la case rouge porte un demi, qui n'est pas entier.",
+   "Sous le tableau de gauche, le déterminant 2 est différent de ±1."
+  ],
+  "a_voir": "La case rouge est la seule qui sort des entiers."
+ },
+ {
+  "code": "59-049",
+  "a_dire": "Sur ℤ, une matrice carrée est inversible exactement quand son déterminant vaut 1 ou −1.",
+  "legende_titre": "Déterminant 1, inverse entier",
+  "lecture": [
+   "À gauche, le tableau bleu de lignes (2, 1) et (1, 1) ; en dessous, son déterminant 2·1 − 1·1 = 1.",
+   "La flèche orange mène à son inverse, de lignes (1, −1) et (−1, 2), en vert : tous ses nombres sont entiers.",
+   "La boîte rouge du bas dit le cas contraire : si le déterminant n'est pas 1 ou −1, l'inverse divise par lui et sort des entiers."
+  ],
+  "a_voir": "Déterminant 1 ou −1 : l'inverse reste entier. Un autre déterminant : il ne reste pas entier."
+ },
+ {
+  "code": "59-050",
+  "a_dire": "L'équivalence de matrices est réflexive (P = Q = 1), symétrique (avec les inverses) et transitive (avec les produits).",
+  "legende_titre": "Les trois propriétés de l'équivalence",
+  "lecture": [
+   "Première ligne : A mène à A avec P = Q = 1.",
+   "Deuxième ligne : la flèche orange va de A à B avec P et Q ; la flèche verte revient avec P⁻¹ et Q⁻¹.",
+   "Troisième ligne : de A à B puis de B à C ; l'arc vert de A à C utilise les produits des matrices."
+  ],
+  "a_voir": "Chaque propriété est un chemin entre des matrices."
+ },
+ {
+  "code": "59-051",
+  "a_dire": "Deux matrices équivalentes sont deux descriptions du même module dans des coordonnées différentes, comme 30 cm et 300 mm pour un segment.",
+  "legende_titre": "Mêmes objets, nombres différents",
+  "lecture": [
+   "En haut, le segment bleu est mesuré deux fois : 30 cm (orange) et 300 mm (violet).",
+   "En bas, les deux tableaux A (orange) et B (violet) décrivent le même module M, en bleu.",
+   "Chaque trait relie une description à l'objet qu'elle décrit."
+  ],
+  "a_voir": "Deux nombres différents peuvent décrire le même objet."
+ },
+ {
+  "code": "59-052",
+  "a_dire": "Il y a trois sortes de matrices inversibles simples, les opérations élémentaires : ajouter une ligne à une autre, multiplier par ±1, échanger deux lignes.",
+  "legende_titre": "Les trois gestes sur les lignes",
+  "lecture": [
+   "Type I : la flèche orange ajoute la ligne 1 à la ligne 2.",
+   "Type II : la ligne 2 est multipliée par 1 ou −1 ; la case violette est le résultat.",
+   "Type III : la double flèche échange la ligne 1 et la ligne 2.",
+   "La phrase verte rappelle que chaque geste peut être défait."
+  ],
+  "a_voir": "Trois gestes seulement, tous réversibles."
+ },
+ {
+  "code": "59-053",
+  "a_dire": "Le type I, Tᵢⱼ(b), ajoute b fois la ligne j à la ligne i (à gauche) ; sur l'exemple, la ligne 2 devient (10, 10).",
+  "legende_titre": "Ajouter un multiple d'une ligne à une autre",
+  "lecture": [
+   "À gauche, le tableau de lignes (4, 6) et (6, 4) ; la ligne j = 1 est grise, la ligne i = 2 est bleue.",
+   "La flèche orange T₂₁(1) ajoute 1 fois la ligne 1 à la ligne 2.",
+   "À droite, la ligne 1 est inchangée et la ligne 2 orange devient (10, 10).",
+   "Le texte du bas dit ce que fait la même opération à droite : sur les colonnes."
+  ],
+  "a_voir": "Une seule ligne change : celle qui reçoit l'addition."
+ },
+ {
+  "code": "59-054",
+  "a_dire": "L'inverse de Tᵢⱼ(b) est Tᵢⱼ(−b) : on retranche ce qu'on avait ajouté.",
+  "legende_titre": "Défaire une addition de ligne",
+  "lecture": [
+   "La case bleue est la ligne 2 de départ, (6, 4).",
+   "La première flèche orange ajoute 3 fois la ligne 1 : la case orange est (18, 22).",
+   "La flèche violette retranche 3 fois la ligne 1 : la case verte est (6, 4), la ligne de départ.",
+   "La bande grise du bas rappelle que la ligne 1, (4, 6), n'a pas changé."
+  ],
+  "a_voir": "Ajouter 3 fois puis retrancher 3 fois redonne la ligne de départ."
+ },
+ {
+  "code": "59-055",
+  "a_dire": "Le type II, Dᵢ(u), multiplie une ligne par un u inversible : −1 se défait, 1/6 n'est pas permis sur les entiers.",
+  "legende_titre": "Multiplier une ligne, seulement par un inversible",
+  "lecture": [
+   "La case bleue est la ligne (0, −6).",
+   "La flèche orange la multiplie par −1 et mène à (0, 6) en vert ; on revient en multipliant de nouveau par −1.",
+   "La flèche rouge demande un sixième pour obtenir (0, −1) : un sixième n'est pas entier, la case est en pointillé rouge."
+  ],
+  "a_voir": "Seul le facteur qui se défait dans les entiers est permis."
+ },
+ {
+  "code": "59-056",
+  "a_dire": "Sur ℤ, le seul facteur permis au type II est ±1 : multiplier par 3 ne se défait pas, multiplier par −1 se défait.",
+  "legende_titre": "Sur les entiers, seulement le signe",
+  "lecture": [
+   "Première ligne : la ligne L multipliée par 3 donne 3L ; pour revenir, la flèche rouge demande un tiers, qui n'est pas entier.",
+   "Deuxième ligne : L multipliée par −1 donne −L ; la flèche verte revient avec −1, qui est entier.",
+   "Le seul réglage possible d'une ligne par multiplication est donc son signe."
+  ],
+  "a_voir": "La flèche rouge de retour est impossible sur les entiers."
+ },
+ {
+  "code": "59-057",
+  "a_dire": "Le type III, Pᵢⱼ, échange deux lignes et est son propre inverse : deux échanges ramènent au départ.",
+  "legende_titre": "Échanger deux lignes, deux fois",
+  "lecture": [
+   "À gauche, le tableau de départ : la ligne (4, 6) en bleu au-dessus de la ligne (6, 4) en violet.",
+   "Après un échange (flèche orange P₁₂), les deux lignes ont changé de place sans changer de nombres.",
+   "Après un second échange, le tableau de départ est retrouvé."
+  ],
+  "a_voir": "Appliquer P₁₂ deux fois ramène le tableau de départ."
+ },
+ {
+  "code": "59-058",
+  "a_dire": "Ce sont les trois opérations de l'élimination du chapitre 24 ; seule change la règle du type II : on ne multiplie que par un inversible.",
+  "legende_titre": "Les mêmes gestes, avec une restriction",
+  "lecture": [
+   "Les cases grises sont les gestes qui ne changent pas : ajouter un multiple (type I) et échanger deux lignes (type III).",
+   "À gauche, sur ℝ, le type II multiplie par n'importe quel u non nul.",
+   "À droite, sur ℤ, la case orange dit que le type II multiplie seulement par un u inversible."
+  ],
+  "a_voir": "Une seule case est orange : c'est la seule qui change."
+ },
+ {
+  "code": "59-059",
+  "a_dire": "Sur ℤ, seuls 1 et −1 sont permis : on ne peut pas diviser pour obtenir 1 comme au chapitre 24, on retranche à la place.",
+  "legende_titre": "Diviser sur ℝ, retrancher sur ℤ",
+  "lecture": [
+   "En haut, sur ℝ : 4 divisé par 4 donne 1, case verte.",
+   "Au milieu, sur ℤ : la flèche rouge dit qu'on ne divise pas par 4 ; 4 reste 4.",
+   "En bas, sur ℤ : on réduit 6 en retranchant 4 et on obtient 2."
+  ],
+  "a_voir": "Sur les entiers, le nombre 4 reste 4 ; on réduit en retranchant."
+ },
+ {
+  "code": "59-060",
+  "a_dire": "Une opération sur les lignes remplace les générateurs de K par d'autres générateurs du même K : les générateurs changent, pas K.",
+  "legende_titre": "Les générateurs changent, K reste le même",
+  "lecture": [
+   "Les ronds bleus sont les points de K ; ils sont placés aux mêmes endroits dans les deux cadres.",
+   "À gauche, avant : la flèche grise est f₁ et la flèche orange est f₂.",
+   "À droite, après : f₁ reste grise et la flèche orange est maintenant f₂ + f₁.",
+   "La phrase du bas dit que les points de K sont les mêmes."
+  ],
+  "a_voir": "Seule la flèche orange change ; les ronds bleus ne bougent pas."
+ },
+ {
+  "code": "59-061",
+  "a_dire": "Le parallélogramme sur f₁ et f₂ − f₁ n'a pas la même forme que celui sur f₁ et f₂, mais il a la même aire, 20, et les mêmes points de K.",
+  "legende_titre": "Deux parallélogrammes, une même aire",
+  "lecture": [
+   "La flèche bleue est f₁ = (4, 6), la flèche grise f₂ = (6, 4) et la flèche verte f₂ − f₁ = (2, −2).",
+   "Le parallélogramme gris en pointillé est construit sur f₁ et f₂ : son aire est 20.",
+   "Le parallélogramme vert est construit sur f₁ et f₂ − f₁ : son aire est aussi 20.",
+   "Les ronds bleus sont les points de K, communs aux deux."
+  ],
+  "a_voir": "Les deux formes diffèrent, l'aire et les points de K restent les mêmes."
+ },
+ {
+  "code": "59-062",
+  "a_dire": "T₂₁(−1) donne f₂ − f₁ = (2, −2), qui est dans K, et l'ancien générateur se retrouve : f₂ = (f₂ − f₁) + f₁.",
+  "legende_titre": "Retrouver f₂ avec le nouveau générateur",
+  "lecture": [
+   "Les flèches bleues partent de l'origine vers f₁ = (4, 6) et f₂ = (6, 4).",
+   "La flèche verte part de l'origine vers (2, −2) : c'est f₂ − f₁, un point de K.",
+   "La même flèche verte, déplacée au bout de f₁, arrive exactement en f₂ : f₂ = (f₂ − f₁) + f₁."
+  ],
+  "a_voir": "En posant la flèche verte au bout de f₁, vous arrivez en f₂."
+ },
+ {
+  "code": "59-063",
+  "a_dire": "La nouvelle matrice de lignes (4, 6) et (2, −2) a pour déterminant 4 × (−2) − 6 × 2 = −20.",
+  "legende_titre": "Calculer le déterminant du nouveau tableau",
+  "lecture": [
+   "Le tableau bleu a pour lignes (4, 6) et (2, −2).",
+   "Le trait bleu relie 4 et −2 : leur produit est −8.",
+   "Le trait orange relie 6 et 2 : leur produit est 12.",
+   "On retranche : −8 − 12 = −20, en vert."
+  ],
+  "a_voir": "Les deux diagonales donnent −8 et 12, et leur différence est −20."
+ },
+ {
+  "code": "59-064",
+  "a_dire": "Ajouter un multiple d'une autre ligne ne change pas le déterminant ; ajouter la ligne à elle-même le double.",
+  "legende_titre": "Ajouter une autre ligne garde le déterminant",
+  "lecture": [
+   "En haut, le tableau bleu de lignes (4, 6) et (6, 4) a pour déterminant −20.",
+   "À gauche, la flèche verte ajoute la ligne 1 à la ligne 2 : le tableau devient (4, 6) et (10, 10), de déterminant −20, gardé.",
+   "À droite, la flèche rouge ajoute la ligne 1 à elle-même : le tableau devient (8, 12) et (6, 4), de déterminant −40, doublé."
+  ],
+  "a_voir": "Il faut ajouter une autre ligne, pas la même, pour garder le déterminant."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(96)
+box(ax, 2, 80, 84, 12, 'sujet', label=r'1. somme : $55 - 40 + 1 = 16$')
+arrow(ax, (44, 79.5), (44, 71.5), 'varie')
+box(ax, 2, 59, 84, 12, 'sujet', label=r'2. équation : $x^{2} - 16x + 55 = 0$')
+arrow(ax, (44, 58.5), (44, 50.5), 'varie')
+box(ax, 2, 38, 84, 12, 'fixe', label=r'3. $16^{2} - 4 \times 55 = 36$, $\sqrt{36} = 6$')
+arrow(ax, (25, 37.5), (25, 28), 'varie')
+arrow(ax, (63, 37.5), (63, 28), 'varie')
+box(ax, 2, 6, 42, 21, 'resultat', label=r'$\dfrac{16 - 6}{2} = 5$')
+box(ax, 46, 6, 40, 21, 'resultat', label=r'$\dfrac{16 + 6}{2} = 11$')
+save(fig, '53-163')

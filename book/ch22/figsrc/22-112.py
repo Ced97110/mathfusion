@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+box(ax,26,44,36,10,'autre',label=r'$x^2 = 36$')
+arrow(ax,(36,43),(22,35),'varie'); arrow(ax,(52,43),(66,35),'varie')
+box(ax,6,22,30,12,'resultat',label=r'$-6$',size='l')
+box(ax,52,22,30,12,'limite',label=r'$6$',size='l')
+text(ax,21,17,'vérifie le départ','resultat','s')
+text(ax,67,17,'parasite','limite','s'); text(ax,67,12,r'$6 \neq -6$','limite','s')
+text(ax,44,4,r'départ : $x = -6$','encre','s')
+save(fig,'22-112')

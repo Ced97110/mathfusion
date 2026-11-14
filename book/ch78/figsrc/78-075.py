@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 18, 67, 52, 11, 'sujet', label='algèbre de composition', weight='bold')
+box(ax, 2, 38, 26, 20, 'fixe', label='produit\navec unité 1')
+box(ax, 31, 38, 26, 20, 'fixe', label='forme $Q$\nnon dégénérée')
+box(ax, 60, 38, 26, 20, 'varie', label=r'$Q(xy)=$' + '\n' + r'$Q(x)Q(y)$')
+arrow(ax, (15, 58.5), (30, 66.5), 'sujet'); arrow(ax, (44, 58.5), (44, 66.5), 'sujet'); arrow(ax, (73, 58.5), (58, 66.5), 'sujet')
+text(ax, 44, 30, 'exemples', 'fixe', 's')
+box(ax, 2, 6, 40, 18, 'resultat', label='nombres complexes\nsont un cas')
+box(ax, 46, 6, 40, 18, 'limite', label='matrices + crochet\nn’ont pas d’unité')
+save(fig, '78-075')

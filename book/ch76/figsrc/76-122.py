@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+for x,r,l in [(8,'sujet',r'$a$'),(20,'autre',r'$b$'),(52,'resultat',r'$c$'),(64,'autre',r'$b$')]: box(ax,x,52,10,10,r,label=l)
+arrow(ax,(32,57),(48,57),'varie'); text(ax,40,64,r'$a$ devient $c$','varie','m')
+text(ax,19,46,r'$a\wedge b=-1$','sujet','m'); text(ax,63,46,r'$c\wedge b=-3$','resultat','m')
+box(ax,8,26,10,10,'sujet'); text(ax,13,22,'1 case','sujet','m')
+for i in range(3): box(ax,52+i*10,26,10,10,'resultat')
+text(ax,67,22,'3 cases','resultat','m')
+text(ax,44,8,r'$x=\dfrac{-3}{-1}=3$','resultat','l')
+save(fig,'76-122')

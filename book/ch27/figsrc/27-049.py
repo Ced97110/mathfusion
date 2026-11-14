@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+mx, my = 44, 40
+box(ax, 6, 6, 76, 68, 'sujet', lw=0.8)
+text(ax, 14, 69, 'mur', 'sujet', 's', ha='left')
+line(ax, [(6, my), (82, my)], 'resultat', lw=2.0)
+text(ax, 8, my - 3.2, 'sol : droite commune', 'resultat', 's', ha='left')
+arrow(ax, (mx, my), (mx, my + 24), 'varie', lw=1.6)
+arrow(ax, (mx, my), (mx, my - 24), 'varie', lw=1.6)
+disc(ax, mx, my, 1.6, 'encre')
+text(ax, mx - 3, my + 4, r'$M$', 'encre', 'm')
+arrow(ax, (mx + 6, my + 26), (mx + 6, my - 26), 'varie', lw=0.9, curve=-0.55)
+text(ax, mx + 4, my + 28, 'au-dessus du sol', 'varie', 's', ha='left')
+text(ax, mx + 4, my - 28.5, 'au-dessous du sol', 'varie', 's', ha='left')
+text(ax, 66, my + 6, 'hauteur nulle :', 'resultat', 's')
+text(ax, 66, my + 9.5, 'dans le sol', 'resultat', 's')
+save(fig, '27-049')

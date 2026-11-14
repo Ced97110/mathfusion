@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 2, 70, 34, 9, 'sujet', label=r'départ : $\eta$', size='s')
+box(ax, 2, 50, 34, 12, 'varie', label='bien défini (clé)', size='m', lw=1.8, weight='bold')
+box(ax, 2, 32, 34, 9, 'fixe', label='respecte l’action', size='s')
+box(ax, 2, 16, 34, 9, 'fixe', label='injective', size='s')
+box(ax, 2, 1, 34, 9, 'resultat', label=r'$M/\ker\eta \cong \mathrm{im}\,\eta$', size='s')
+for y0, y1 in [(70, 62), (50, 41), (32, 25), (16, 10)]:
+    arrow(ax, (19, y0), (19, y1), 'fixe', lw=0.9)
+line(ax, [(36, 56), (39.5, 56)], 'varie', lw=1.5, dash=True)
+# concrete: two couples of the same class
+box(ax, 44, 44, 42, 24, 'sujet', fill=False, dash=True)
+text(ax, 65, 71, 'même classe', 'sujet', 's')
+disc(ax, 52, 56, 5.2, 'sujet', label=r'$(1\,;\,0)$', size='s')
+disc(ax, 77, 56, 5.2, 'sujet', label=r'$(3\,;\,1)$', size='s')
+text(ax, 65, 65, 'écart (2 ; 1) : noyau', 'sujet', 's')
+disc(ax, 65, 22, 4.5, 'resultat', label='1', size='m')
+arrow(ax, (53, 50.5), (62, 26.5), 'resultat', lw=1.0)
+arrow(ax, (77, 50.5), (68, 26.5), 'resultat', lw=1.0)
+line(ax, [(57.5, 56), (71.5, 56)], 'sujet', lw=0.8, dash=True)
+text(ax, 65, 12, 'même image', 'resultat', 's')
+save(fig, '57-157')

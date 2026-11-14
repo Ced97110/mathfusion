@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+k = 0.3
+O = (6, 30)
+u, v = (180, 0), (50, 86.6)
+s = (u[0] + v[0], u[1] + v[1])
+assert s[0] == 230
+T = lambda p, q: (p[0] + k * q[0], p[1] + k * q[1])
+U, S = T(O, u), T(O, s)
+line(ax, [O, (O[0] + 78, O[1])], 'fixe', lw=0.5)
+arrow(ax, O, U, 'sujet', lw=1.6)
+arrow(ax, U, S, 'autre', lw=1.6)
+arrow(ax, O, S, 'resultat', lw=1.8)
+line(ax, [S, (S[0], O[1])], 'fixe', lw=0.6, dash=True)
+text(ax, 30, 26, r'$u=\langle 180;\ 0\rangle$', 'sujet', 's')
+text(ax, 77, 44, r'$v=\langle 50;\ 86{,}60\rangle$', 'autre', 's', ha='right')
+text(ax, 36, 52, r'$u+v$', 'resultat', 'm')
+box(ax, 2, 4, 40, 10, 'resultat', label=r'$180+50=230$', size='s')
+box(ax, 46, 4, 40, 10, 'resultat', label=r'$0+86{,}60=86{,}60$', size='s')
+text(ax, 22, 18, '1res composantes', 'fixe', 's')
+text(ax, 66, 18, '2es composantes', 'fixe', 's')
+text(ax, 44, 63, r'$u+v=\langle 230;\ 86{,}60\rangle$', 'resultat', 'm')
+save(fig, '41-051')

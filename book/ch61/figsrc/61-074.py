@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+disc(ax, 14, 56, 7, 'autre', label=r'$\pi$', size='xl')
+text(ax, 31, 56, '+', 'encre', 'xl')
+disc(ax, 48, 56, 7, 'autre', label=r'$e$', size='xl')
+text(ax, 14, 44, 'transcendant', 'autre', 's'); text(ax, 48, 44, 'transcendant', 'autre', 's')
+text(ax, 62, 56, '=', 'encre', 'xl')
+box(ax, 68, 49, 16, 14, 'sujet', label=r'$\pi+e$', size='m')
+box(ax, 4, 6, 36, 14, 'fixe', label='algébrique ?', size='m', dash=True)
+box(ax, 48, 6, 36, 14, 'fixe', label='transcendant ?', size='m', dash=True)
+arrow(ax, (72, 49), (28, 21), 'fixe', lw=0.7); arrow(ax, (78, 49), (66, 21), 'fixe', lw=0.7)
+text(ax, 22, 32, 'personne ne sait', 'varie', 's', weight='bold')
+save(fig, '61-074')

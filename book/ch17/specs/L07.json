@@ -1,0 +1,182 @@
+[
+ {
+  "code": "17-097",
+  "a_dire": "Tu dis que le bord inclus ou exclu suit le nombre, pas sa place, quand les nombres changent de côté.",
+  "legende_titre": "Les bords changent de côté, pas d'état",
+  "lecture": [
+   "Sur la première droite, le point plein bleu est −3 : le bord est inclus. Le point vide est 6 : le bord est exclu.",
+   "Sur la seconde droite, le point plein est 1 et le point vide est −2.",
+   "Les deux flèches orange montrent chaque nombre qui change de côté quand on divise par −3."
+  ],
+  "a_voir": "Chaque point garde son état, plein ou vide, en changeant de côté."
+ },
+ {
+  "code": "17-098",
+  "a_dire": "Tu dis qu'on écrit le plus petit nombre à gauche pour que l'écriture suive la droite des nombres.",
+  "legende_titre": "Écrire dans l'ordre de la droite",
+  "lecture": [
+   "La ligne du haut lit 1, puis 𝑥, puis −2 : la flèche rouge va vers la gauche.",
+   "La ligne du milieu lit −2, puis 𝑥, puis 1 : la flèche verte va vers la droite, comme la droite en bas.",
+   "Sur la droite, le point vide est −2 et le point plein est 1 : ils sont dans le même ordre que l'écriture."
+  ],
+  "a_voir": "L'écriture avec le plus petit nombre à gauche a le même ordre que la droite."
+ },
+ {
+  "code": "17-099",
+  "a_dire": "Tu dis que le test au milieu ne suffit pas : on teste les bords pour savoir s'ils sont inclus ou exclus.",
+  "legende_titre": "Tester les bords du segment",
+  "lecture": [
+   "Le segment bleu va de −2 à 1.",
+   "Le point vert au milieu est 0 : il convient, mais il ne dit rien des bords.",
+   "Le point vide rouge est −2 : le calcul donne 7 < 7, c'est faux, le bord est exclu.",
+   "Le point plein vert est 1 : le calcul donne −2 ≤ −2, c'est vrai, le bord est inclus."
+  ],
+  "a_voir": "Seuls les calculs aux bords donnent le point vide à gauche et le point plein à droite."
+ },
+ {
+  "code": "17-100",
+  "a_dire": "Tu dis qu'une équation avec une seule lettre a pour solution un nombre, qui se place sur un seul axe.",
+  "legende_titre": "Une lettre, une ligne graduée",
+  "lecture": [
+   "L'équation 3𝑥 − 5 = 10 est écrite en bleu en haut.",
+   "La flèche orange mène à la solution 𝑥 = 5, en vert.",
+   "Le point vert est placé sur une seule ligne graduée, en 5."
+  ],
+  "a_voir": "Un seul point sur une seule ligne suffit."
+ },
+ {
+  "code": "17-101",
+  "a_dire": "Tu dis qu'un axe est une droite graduée qui sert à placer les valeurs d'une variable.",
+  "legende_titre": "Ce qu'est un axe",
+  "lecture": [
+   "La ligne bleue avec ses traits est la droite ; les traits sont les graduations.",
+   "Le point orange est une valeur de 𝑥, ici 4.",
+   "La lettre 𝑥 au bout de la ligne dit quelle variable on place."
+  ],
+  "a_voir": "Un axe est une ligne graduée où l'on place les valeurs de 𝑥."
+ },
+ {
+  "code": "17-102",
+  "a_dire": "Tu dis qu'il faut autant d'axes que de lettres : une lettre, un axe ; deux lettres, deux axes.",
+  "legende_titre": "Autant d'axes que de lettres",
+  "lecture": [
+   "En haut, la lettre 𝑑 a un seul axe, avec le point 𝑑 = 4.",
+   "En bas, en violet, 𝑥 a son axe avec le point 3.",
+   "En bas, 𝑦 a son propre axe avec le point 1."
+  ],
+  "a_voir": "Chaque lettre a sa propre ligne graduée."
+ },
+ {
+  "code": "17-103",
+  "a_dire": "Tu dis que l'équation donne un seul point et que l'inéquation donne toute une demi-droite, sur les mêmes graduations.",
+  "legende_titre": "Un point contre une demi-droite",
+  "lecture": [
+   "L'axe du haut montre le point bleu 𝑆, en 5, solution de 3𝑥 − 5 = 10.",
+   "L'axe du bas montre la flèche violette qui part du point 𝑇, en 3, vers la droite.",
+   "Les traits en pointillé relient les deux axes : ce sont les mêmes graduations."
+  ],
+  "a_voir": "𝑆 est un point unique ; la flèche partie de 𝑇 couvre toute la droite à sa droite."
+ },
+ {
+  "code": "17-104",
+  "a_dire": "Tu dis que la résolution de 3𝑥 − 5 = 10 finit par un seul nombre, 𝑥 = 5, donc un seul point.",
+  "legende_titre": "3𝑥 − 5 = 10 donne un point",
+  "lecture": [
+   "Les trois lignes de haut en bas sont les étapes : 3𝑥 − 5 = 10, puis 3𝑥 = 15, puis 𝑥 = 5.",
+   "Les flèches orange sont les opérations faites des deux côtés : ajouter 5, puis diviser par 3.",
+   "En vert, le contrôle 3 × 5 − 5 = 10 et le point 5 sur la droite."
+  ],
+  "a_voir": "Les opérations mènent à un nombre, donc à un point sur la droite."
+ },
+ {
+  "code": "17-105",
+  "a_dire": "Tu dis que 4𝑥 ≥ 12 donne 𝑥 ≥ 3 : une demi-droite qui part de 3, côté droit, 3 compris.",
+  "legende_titre": "Demi-droite à partir de 3",
+  "lecture": [
+   "En haut, 4𝑥 ≥ 12 devient 𝑥 ≥ 3 quand on divise par 4.",
+   "Sur la droite, le point plein vert est 3 : le bord est inclus.",
+   "La flèche verte épaisse part de 3 vers la droite.",
+   "Le point violet, en 10, est un nombre testé : il est dans la demi-droite."
+  ],
+  "a_voir": "La solution est un bord, 3, et tout le côté droit."
+ },
+ {
+  "code": "17-106",
+  "a_dire": "Tu dis qu'une équation donne un nombre alors qu'une inéquation donne une partie de la droite : un bord et un côté.",
+  "legende_titre": "Un nombre, ou un bord et un côté",
+  "lecture": [
+   "En gris, l'équation du chapitre 16 mène à un point vert : le nombre 5.",
+   "En bleu, l'inéquation de ce chapitre mène à une flèche verte : le bord 3 et le côté droit.",
+   "Les deux flèches de gauche à droite disent : voici le résultat de chaque résolution."
+  ],
+  "a_voir": "Le résultat change de nature : un point, puis un point de départ avec une direction."
+ },
+ {
+  "code": "17-107",
+  "a_dire": "Tu dis que multiplier 3 < 7 par 0 donne 0 < 0, qui est faux : les règles ont des conditions.",
+  "legende_titre": "Multiplier 3 < 7 par 0",
+  "lecture": [
+   "En haut, le point bleu est 3 et le point violet est 7 : 3 < 7 est vrai.",
+   "Les flèches orange sont la multiplication par 0.",
+   "En bas, les deux points arrivent en 0 et se superposent : 0 < 0 est faux, en rouge."
+  ],
+  "a_voir": "Après ×0, les deux nombres sont au même endroit et l'affirmation devient fausse."
+ },
+ {
+  "code": "17-108",
+  "a_dire": "Tu dis que 0 est exclu des règles 2 et 3 parce que chacune donne une affirmation fausse avec 0.",
+  "legende_titre": "Pourquoi 𝑐 = 0 est exclu",
+  "lecture": [
+   "La partie violette de la droite est 𝑐 < 0 : c'est la règle 3.",
+   "La partie bleue est 𝑐 > 0 : c'est la règle 2.",
+   "Le point vide rouge est 𝑐 = 0, entre les deux parties.",
+   "Les deux boîtes rouges disent que les deux règles donnent 0 > 0 et 0 < 0, faux."
+  ],
+  "a_voir": "Aucune des deux règles ne s'applique en 𝑐 = 0."
+ },
+ {
+  "code": "17-109",
+  "a_dire": "Tu dis que multiplier par 0 envoie tous les points sur 0 : on ne sait plus lequel était à gauche.",
+  "legende_titre": "Tout tombe sur 0",
+  "lecture": [
+   "En haut, trois points différents : −5 en violet, 3 en bleu, 7 en orange.",
+   "Les trois flèches orange sont la multiplication par 0 : elles finissent au même endroit.",
+   "En bas, les trois cercles de couleur sont superposés sur 0."
+  ],
+  "a_voir": "Les trois points se confondent : l'ordre entre eux est perdu."
+ },
+ {
+  "code": "17-110",
+  "a_dire": "Tu dis qu'on ne multiplie jamais par 0 une inéquation, parce que la solution 6 disparaît.",
+  "legende_titre": "Multiplier par 0 casse la solution",
+  "lecture": [
+   "En haut, la flèche bleue est 𝑥 > 5 : le point vide est 5 et le point vert est 6, qui convient.",
+   "La flèche orange est la multiplication par 0 des deux côtés.",
+   "La boîte rouge montre le résultat faux : 0 > 0."
+  ],
+  "a_voir": "Une solution vraie devient une affirmation fausse."
+ },
+ {
+  "code": "17-111",
+  "a_dire": "Tu dis qu'une inéquation peut être vraie pour tous les nombres, comme 𝑥 < 𝑥 + 6.",
+  "legende_titre": "Une inéquation toujours vraie",
+  "lecture": [
+   "La ligne verte épaisse couvre tous les nombres, dans les deux sens.",
+   "Les trois points sont des valeurs essayées : −10, 0 et 100.",
+   "Sous chaque point, le calcul vrai : −10 < −4, 0 < 6, 100 < 106."
+  ],
+  "a_voir": "Tous les nombres essayés conviennent, et la ligne entière est verte."
+ },
+ {
+  "code": "17-112",
+  "a_dire": "Tu dis qu'en retirant 𝑥 des deux côtés de 𝑥 < 𝑥 + 6, il reste 0 < 6, vrai pour tout 𝑥.",
+  "legende_titre": "Retirer 𝑥 des deux côtés",
+  "lecture": [
+   "Les barres bleues sont 𝑥, la même longueur à gauche et à droite.",
+   "La barre verte est 6 : elle n'existe qu'à droite.",
+   "La flèche orange retire 𝑥 : à gauche il reste 0, à droite il reste 6.",
+   "Il reste 0 < 6, vrai sans 𝑥."
+  ],
+  "a_voir": "Sans la lettre, l'affirmation qui reste est vraie pour toutes les valeurs."
+ }
+]

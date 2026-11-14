@@ -1,0 +1,177 @@
+[
+ {
+  "code": "27-001",
+  "a_dire": "Le câble va d'un coin du sol au coin opposé du plafond, il traverse la pièce et dépasse 5 m.",
+  "legende_titre": "Un câble à travers la pièce",
+  "lecture": [
+   "La boîte bleue est la pièce : 4 m, 3 m et 2 m.",
+   "Le trait gris en pointillés est la diagonale du sol, 5 m.",
+   "Le trait orange est le câble, dont la longueur est inconnue."
+  ],
+  "a_voir": "Le câble ne reste ni sur le sol ni sur un mur."
+ },
+ {
+  "code": "27-002",
+  "a_dire": "Le câble avance dans les trois directions à la fois, donc un seul triangle à plat avec Pythagore ne suffit pas.",
+  "legende_titre": "Pourquoi 5 m ne suffit pas",
+  "lecture": [
+   "Le trait orange en pointillés sur le sol mesure 5 m.",
+   "Le trait orange vertical monte de 2 m.",
+   "Le grand trait orange plein est le câble : il est plus long que 5 m."
+  ],
+  "a_voir": "Le triangle orange est debout dans la pièce, pas sur une face."
+ },
+ {
+  "code": "27-003",
+  "a_dire": "Pour la même montée de 146 m, la distance horizontale vers le milieu d'un côté et vers un coin n'est pas la même : il y a deux pentes à chercher.",
+  "legende_titre": "Deux distances, une montée",
+  "lecture": [
+   "Le triangle bleu monte de 146 m sur 115 m.",
+   "Le triangle violet monte de 146 m sur 162,6 m.",
+   "Les deux points d'interrogation disent que le cas ne calcule aucune pente."
+  ],
+  "a_voir": "La montée est commune, les distances sont différentes."
+ },
+ {
+  "code": "27-004",
+  "a_dire": "Une arête de la pyramide est une ligne qui monte d'un coin de la base au sommet, à ne pas confondre avec un côté de la base ou la hauteur.",
+  "legende_titre": "Quelles lignes sont des arêtes",
+  "lecture": [
+   "Les quatre traits orange montent des coins de la base au sommet.",
+   "Les côtés gris de la base sont horizontaux.",
+   "Le pointillé noir est la hauteur de 146 m, du sommet au centre."
+  ],
+  "a_voir": "Seuls les traits orange sont des arêtes montantes."
+ },
+ {
+  "code": "27-005",
+  "a_dire": "La pente d'une face et celle d'une arête sont deux nombres différents : il faut dire de quelle ligne on parle.",
+  "legende_titre": "Même montée, deux pentes",
+  "lecture": [
+   "Le triangle bleu est la face : 146 m de montée sur 115 m, pente environ 1,27.",
+   "Le triangle violet est l'arête : 146 m sur 162,6 m, pente environ 0,90.",
+   "Les deux triangles ont la même hauteur."
+  ],
+  "a_voir": "Plus la distance est longue, moins la pente est forte."
+ },
+ {
+  "code": "27-006",
+  "a_dire": "En montant en biais sur une colline, il faut plus de chemin horizontal pour la même montée, donc la pente change avec la direction.",
+  "legende_titre": "Monter droit ou en biais",
+  "lecture": [
+   "Le triangle bleu du bas est la montée tout droit : 10 m sur 20 m, pente 0,5.",
+   "Le triangle orange du haut est la montée en biais : 10 m sur 28,28 m, pente environ 0,35.",
+   "Les deux montent de 10 m."
+  ],
+  "a_voir": "Le triangle orange est plus long pour la même hauteur."
+ },
+ {
+  "code": "27-007",
+  "a_dire": "Un objet a trois directions, une page n'en a que deux : le dessin doit faire entrer trois directions dans deux.",
+  "legende_titre": "Trois directions, deux directions",
+  "lecture": [
+   "Le cube bleu a trois flèches orange : droite, arrière, haut.",
+   "Le rectangle gris est la page, avec deux flèches : droite et haut."
+  ],
+  "a_voir": "La page n'a pas de place pour la direction « arrière »."
+ },
+ {
+  "code": "27-008",
+  "a_dire": "Un angle droit de la pièce n'est pas mesuré à 90° sur le dessin : mesurer sur un dessin donne un résultat faux.",
+  "legende_titre": "Le rapporteur sur le dessin",
+  "lecture": [
+   "Le carré bleu est le coin du sol dans la pièce : 90°.",
+   "Le dessin violet montre le même coin avec 35° et 145° en rouge.",
+   "Les deux mesures rouges sont fausses."
+  ],
+  "a_voir": "Le même coin donne 90° dans la pièce et d'autres nombres sur le dessin."
+ },
+ {
+  "code": "27-009",
+  "a_dire": "Un dessin à plat ne peut pas garder les trois angles droits d'un coin : la troisième arête est forcément de travers.",
+  "legende_titre": "Trois angles droits sur une feuille",
+  "lecture": [
+   "À gauche, trois arêtes bleues d'un coin de la pièce, numérotées 1, 2, 3.",
+   "À droite, les arêtes 1 et 2 sont à 90°.",
+   "Le trait orange est l'arête 3 : elle ne fait pas 90° avec les deux autres."
+  ],
+  "a_voir": "Sur la feuille, aucune droite n'est à 90° des arêtes 1 et 2 à la fois."
+ },
+ {
+  "code": "27-010",
+  "a_dire": "Le travail du chapitre est de retrouver, dans la pièce, le triangle caché et de le redessiner à plat avec ses vraies longueurs.",
+  "legende_titre": "Le triangle caché, à plat",
+  "lecture": [
+   "Dans la pièce, le triangle bleu ACG est à l'intérieur, dans aucune face.",
+   "À droite, le même triangle est redessiné à plat : côtés 5 m et 2 m, angle droit en C.",
+   "L'angle α est celui du câble avec le sol."
+  ],
+  "a_voir": "Une fois à plat, c'est un triangle que tu connais."
+ },
+ {
+  "code": "27-011",
+  "a_dire": "Il n'y a pas de nouvelle trigonométrie dans l'espace : le calcul est connu, la nouveauté est de trouver le bon triangle.",
+  "legende_titre": "Rien de nouveau dans le calcul",
+  "lecture": [
+   "Le triangle gris et sa formule 2 ÷ 5 = 0,4 sont du calcul déjà connu.",
+   "Le triangle orange dans la pièce est ce qu'il faut trouver.",
+   "Les côtés 2 et 5 viennent de ce triangle."
+  ],
+  "a_voir": "Le travail neuf est de repérer le triangle."
+ },
+ {
+  "code": "27-012",
+  "a_dire": "Le triangle ACG est à l'intérieur de la boîte ; il contient le câble AG et l'angle α, et son angle droit en C paraît déformé.",
+  "legende_titre": "La boîte ABCDEFGH et le triangle ACG",
+  "lecture": [
+   "La boîte bleue contient le triangle orange ACG.",
+   "Le trait plein AG est le câble ; les traits en pointillés orange sont AC et CG.",
+   "Le petit carré en C marque l'angle droit, qui paraît plus ouvert sur le dessin.",
+   "L'angle α, en orange, est en A, entre AC et AG."
+  ],
+  "a_voir": "Le triangle ACG est à l'intérieur de la boîte, dans aucune face."
+ },
+ {
+  "code": "27-013",
+  "a_dire": "Un pavé est une boîte à six faces rectangulaires ; le cube a des faces carrées et la pyramide des faces triangulaires.",
+  "legende_titre": "Pavé, cube, pyramide",
+  "lecture": [
+   "Le solide bleu est le pavé : six faces rectangles.",
+   "Le solide violet est le cube : six faces carrées.",
+   "Le solide gris est la pyramide : des faces triangulaires."
+  ],
+  "a_voir": "Le pavé et le cube ont des angles droits, la pyramide non."
+ },
+ {
+  "code": "27-014",
+  "a_dire": "Chaque lettre du plafond (E, F, G, H) est juste au-dessus de la lettre du sol (A, B, C, D) : E sur A, F sur B, G sur C, H sur D.",
+  "legende_titre": "Les lettres du sol et du plafond",
+  "lecture": [
+   "Les lettres bleues A, B, C, D sont les coins du sol.",
+   "Les lettres violettes E, F, G, H sont les coins du plafond.",
+   "Chaque trait orange vertical relie une lettre du sol à celle au-dessus."
+  ],
+  "a_voir": "E est au-dessus de A, et ainsi de suite."
+ },
+ {
+  "code": "27-015",
+  "a_dire": "Les arêtes cachées d'une boîte se dessinent en pointillés, les arêtes visibles en trait plein.",
+  "legende_titre": "Traits pleins et pointillés",
+  "lecture": [
+   "Les traits pleins sont les arêtes que tu vois.",
+   "Les traits gris en pointillés sont les arêtes cachées qui partent du coin D, derrière la boîte."
+  ],
+  "a_voir": "Un seul dessin montre toutes les arêtes."
+ },
+ {
+  "code": "27-016",
+  "a_dire": "AB = 4, BC = 3 et CG = 2 donnent la longueur, la largeur et la hauteur de la pièce, chaque lettre nommant un coin.",
+  "legende_titre": "Lire AB = 4, BC = 3, CG = 2",
+  "lecture": [
+   "Le trait bleu épais de A à B est la longueur, 4.",
+   "Le trait en pointillés de B à C est la largeur, 3.",
+   "Le trait en pointillés de C à G est la hauteur, 2."
+  ],
+  "a_voir": "Chaque égalité donne la mesure d'un segment entre deux coins."
+ }
+]

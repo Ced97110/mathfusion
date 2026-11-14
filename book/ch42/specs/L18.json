@@ -1,0 +1,185 @@
+[
+ {
+  "code": "42-273",
+  "a_dire": "Pour vérifier deux applications composables, tu testes cinq étapes dans l'ordre : f est une application, f injective, f surjective, les mêmes tests pour g, puis le calcul de g ∘ f.",
+  "legende_titre": "Cinq étapes sur un cas chiffré",
+  "lecture": [
+   "Chaque case bleue est une étape, de haut en bas, reliée à la suivante par une flèche orange.",
+   "La case à droite de chaque étape donne la réponse sur le cas : vert quand c'est vrai, rouge quand c'est faux, gris pour g.",
+   "La dernière case verte donne la composée : 1 va sur z, 2 va sur z, 3 va sur x."
+  ],
+  "a_voir": "Les cinq étapes se suivent dans l'ordre et chacune a sa réponse sur le cas."
+ },
+ {
+  "code": "42-274",
+  "a_dire": "Une image réciproque peut contenir plusieurs éléments, ici f^(-1)({a}) = {1, 2}, ou aucun, ici (g ∘ f)^(-1)({y}) = ∅.",
+  "legende_titre": "Plusieurs éléments, ou aucun",
+  "lecture": [
+   "Les ronds bleus sont les départs 1, 2, 3, les ronds violets sont a et b, les ronds gris et rouge sont x, z et y.",
+   "Les deux flèches orange arrivent en a : le cadre orange entoure donc 1 et 2, et la case orange note {1, 2}.",
+   "Le rond rouge y n'a aucune flèche qui arrive : la case rouge note l'ensemble vide."
+  ],
+  "a_voir": "Un élément d'arrivée peut recevoir deux flèches, ou aucune."
+ },
+ {
+  "code": "42-275",
+  "a_dire": "g ∘ f n'est pas bijective, parce que deux défaillances s'ajoutent : 1 et 2 ont la même image z, et y n'est l'image de rien.",
+  "legende_titre": "Deux raisons de ne pas être bijective",
+  "lecture": [
+   "Les ronds bleus sont les départs, les ronds à droite sont les arrivées x, y, z.",
+   "Les deux flèches rouges partent de 1 et de 2 et arrivent toutes deux en z : la première case rouge le dit.",
+   "Le rond rouge y ne reçoit aucune flèche : la seconde case rouge le dit."
+  ],
+  "a_voir": "Les deux défaillances sont visibles : deux flèches sur z, aucune flèche sur y."
+ },
+ {
+  "code": "42-276",
+  "a_dire": "Si f envoie 1 et 2 sur la même valeur, alors g ∘ f envoie aussi 1 et 2 sur la même valeur, quelle que soit g.",
+  "legende_titre": "1 et 2 restent confondus",
+  "lecture": [
+   "Les deux ronds bleus sont deux départs différents, 1 et 2.",
+   "Les deux flèches orange notées f arrivent dans le même rond a.",
+   "La flèche notée g part de a vers le rond vert z : g ne reçoit qu'une valeur, donc elle ne peut pas séparer 1 et 2.",
+   "L'accolade du haut regroupe toute la chaîne g ∘ f."
+  ],
+  "a_voir": "Deux départs différents qui passent par le même a arrivent au même z."
+ },
+ {
+  "code": "42-277",
+  "a_dire": "Si g n'atteint pas y, alors g ∘ f n'atteint pas y non plus, car f ne fait qu'ajouter une étape devant.",
+  "legende_titre": "Une étape devant ne change pas l'arrivée",
+  "lecture": [
+   "Les flèches grises à gauche sont l'application f, une étape ajoutée devant g.",
+   "Les flèches orange sont l'application g : elles arrivent en x et en z.",
+   "Le rond rouge y n'a aucune flèche orange qui arrive : personne ne l'atteint, quelle que soit l'étape de départ."
+  ],
+  "a_voir": "Tout ce qui n'est pas atteint par g reste hors de portée de g ∘ f."
+ },
+ {
+  "code": "42-278",
+  "a_dire": "La première loi de De Morgan s'énonce pour deux sous-ensembles quelconques A et B d'un ensemble fixe U : (A ∪ B)′ = A′ ∩ B′.",
+  "legende_titre": "L'énoncé pour tous A et B",
+  "lecture": [
+   "Chaque grand rectangle est l'ensemble fixe U, avec deux cercles A (bleu) et B (violet).",
+   "À gauche, la zone verte, hors des deux cercles, est (A ∪ B)′.",
+   "À droite, les zones colorées sont A′ (hors de A) et B′ (hors de B) ; la zone qui porte les deux couleurs est hors de A et hors de B.",
+   "Le signe égale relie les deux dessins : le texte du bas rappelle que A et B sont quelconques."
+  ],
+  "a_voir": "On travaille dans un U fixé, avec deux parties A et B quelconques."
+ },
+ {
+  "code": "42-279",
+  "a_dire": "Pour prouver que deux ensembles sont égaux, on prouve deux inclusions : A ⊆ B, puis B ⊆ A.",
+  "legende_titre": "Deux preuves pour une égalité",
+  "lecture": [
+   "Le premier dessin montre A (bleu) dans B (violet) : c'est la preuve 1, A ⊆ B.",
+   "Le deuxième dessin montre B dans A : c'est la preuve 2, B ⊆ A.",
+   "Le dernier dessin, en vert, montre A et B confondus : les deux sens donnent A = B."
+  ],
+  "a_voir": "Il faut les deux inclusions : une seule ne donne pas l'égalité."
+ },
+ {
+  "code": "42-280",
+  "a_dire": "La preuve part d'un x de (A ∪ B)′, passe par x ∉ A ∪ B, et arrive à x ∈ A′ ∩ B′ ; l'étape du milieu porte le poids.",
+  "legende_titre": "Du complémentaire de l'union à l'intersection",
+  "lecture": [
+   "La case bleue du haut est le départ : x est dans (A ∪ B)′.",
+   "La case orange épaisse est l'étape qui porte le poids : x n'est pas dans l'union, donc pas dans A et pas dans B.",
+   "La case verte du bas est l'arrivée : x est dans A′ ∩ B′.",
+   "Dans le petit dessin, le point x est hors des deux cercles."
+  ],
+  "a_voir": "L'étape orange passe de « pas dans l'union » à « pas dans A et pas dans B »."
+ },
+ {
+  "code": "42-281",
+  "a_dire": "La preuve part d'un x de A′ ∩ B′, conclut que x n'est ni dans A ni dans B, donc pas dans A ∪ B, et arrive à x ∈ (A ∪ B)′.",
+  "legende_titre": "Retour vers le complémentaire de l'union",
+  "lecture": [
+   "La case bleue du haut est le départ : x est dans A′ ∩ B′.",
+   "La case orange épaisse est l'étape qui porte le poids : x n'est ni dans A ni dans B, donc pas dans A ∪ B.",
+   "La case verte du bas est l'arrivée : x est dans (A ∪ B)′.",
+   "Dans le petit dessin, le point x est hors des deux cercles."
+  ],
+  "a_voir": "Cette preuve va dans le sens inverse de celle de la fiche précédente."
+ },
+ {
+  "code": "42-282",
+  "a_dire": "Chaque pas d'une preuve remplace un symbole par sa définition, sans rien inventer.",
+  "legende_titre": "Un symbole remplacé à chaque pas",
+  "lecture": [
+   "Les deux cases bleues du haut sont des phrases écrites avec des symboles.",
+   "Chaque flèche orange est un pas : le texte à sa droite dit quelle définition on utilise.",
+   "La case verte du bas est la dernière phrase, écrite avec les définitions seules : x n'est pas dans A et x n'est pas dans B."
+  ],
+  "a_voir": "Chaque flèche est une simple relecture avec la définition d'un mot."
+ },
+ {
+  "code": "42-283",
+  "a_dire": "Le mot « quelconque » permet de conclure « pour tout x » : un seul cas, comme x = 3, ne prouve que ce cas.",
+  "legende_titre": "Un cas contre tous les cas",
+  "lecture": [
+   "En haut, les ronds numérotés sont les éléments de l'ensemble ; seul le rond orange 3 est choisi, et la case rouge dit que la preuve ne vaut que pour 3.",
+   "En bas, les six ronds verts sont tous les éléments : on n'a rien supposé de x, donc il peut être n'importe lequel.",
+   "L'accolade verte les regroupe tous : la case verte dit que la preuve vaut pour tous."
+  ],
+  "a_voir": "Un x choisi donne un cas ; un x quelconque donne tous les cas."
+ },
+ {
+  "code": "42-284",
+  "a_dire": "L'énoncé (A ∖ B) ∩ (B ∖ A) = ∅ se vérifie sur un cas, A = {1, 2, 3} et B = {3, 4}, mais ce cas ne le prouve pas pour tous les ensembles.",
+  "legende_titre": "L'énoncé et un cas qui le rend plausible",
+  "lecture": [
+   "Sur la ligne bleue, les ronds 1 et 2 forment A ∖ B.",
+   "Sur la ligne violette, le rond 4 forme B ∖ A.",
+   "Les traits pointillés sont les colonnes des nombres 1 à 6 : aucune colonne ne porte un rond sur les deux lignes.",
+   "La case verte écrit l'énoncé : l'intersection est vide."
+  ],
+  "a_voir": "Aucun nombre n'est dans A ∖ B et dans B ∖ A à la fois, mais ce n'est qu'un cas."
+ },
+ {
+  "code": "42-285",
+  "a_dire": "On peut prouver (A ∖ B) ∩ (B ∖ A) = ∅ en quatre pas de règles, sans regarder aucun élément.",
+  "legende_titre": "Quatre pas de calcul, sans éléments",
+  "lecture": [
+   "Chaque case est une écriture de l'ensemble, de haut en bas ; la première est le départ.",
+   "Le texte orange à gauche dit la règle utilisée à chaque pas : définition de la différence, rangement des termes, A ∩ A′ = ∅, puis le vide absorbe l'intersection.",
+   "La case verte du bas est le résultat : l'ensemble vide."
+  ],
+  "a_voir": "Chaque flèche applique une règle, comme pour réarranger un calcul."
+ },
+ {
+  "code": "42-286",
+  "a_dire": "A ∩ A′ = ∅ : aucun élément ne peut être à la fois dans A et hors de A.",
+  "legende_titre": "Un ensemble et son complémentaire",
+  "lecture": [
+   "Le grand rectangle bleu contient 1, 2, 3 : c'est A.",
+   "Le grand rectangle violet contient 4, 5, 6 : c'est A′.",
+   "Les deux rectangles se touchent sans se recouvrir : aucun nombre n'est dans les deux.",
+   "La case verte écrit le résultat : A ∩ A′ est vide."
+  ],
+  "a_voir": "Les deux parties ne partagent aucun élément."
+ },
+ {
+  "code": "42-287",
+  "a_dire": "Réarranger des ensembles avec ∩ et ∪ ressemble à réarranger les termes d'un polynôme : on change l'ordre et le regroupement sans changer le résultat.",
+  "legende_titre": "Même geste que pour les polynômes",
+  "lecture": [
+   "À gauche, le polynôme 2x + 3 + 4x : les termes orange 2x et 4x sont rapprochés, le 3 gris passe à la fin.",
+   "À droite, A ∩ B ∩ A′ : les morceaux orange A et A′ sont rapprochés, B gris passe à la fin.",
+   "La flèche grise de chaque colonne est le changement d'ordre et de regroupement."
+  ],
+  "a_voir": "Les deux colonnes font la même opération sur des morceaux différents."
+ },
+ {
+  "code": "42-288",
+  "a_dire": "L'ensemble des parties de l'ensemble vide a un seul élément, l'ensemble vide : 𝒫(∅) = {∅}.",
+  "legende_titre": "Un seul sous-ensemble du vide",
+  "lecture": [
+   "Le cadre gris en pointillés à gauche est l'ensemble vide : il n'a aucun élément.",
+   "La flèche orange mène à l'ensemble de ses parties, le grand cadre bleu.",
+   "Dans ce cadre bleu, il y a un seul cadre en pointillés : l'ensemble vide lui-même.",
+   "La formule verte 2^0 = 1 donne le même nombre."
+  ],
+  "a_voir": "Le vide a un seul sous-ensemble : lui-même."
+ }
+]

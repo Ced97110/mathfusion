@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(48)
+f = numberline(ax, 8, 80, 18, -6, 6, labels=False, arrow_right=False)
+text(ax, f(0), 12, '0', 'fixe', 's')
+text(ax, 44, 42, r'$R^2=25$', 'sujet', 'l')
+arrow(ax, (f(0), 24), (f(5) - 1, 24), 'resultat'); arrow(ax, (f(0), 24), (f(-5) + 1, 24), 'limite')
+disc(ax, f(5), 18, 1.6, 'resultat'); disc(ax, f(-5), 18, 1.6, 'limite')
+text(ax, f(5), 12, '5', 'resultat', 'm', weight='bold'); text(ax, f(-5), 12, '−5', 'limite', 'm', weight='bold')
+text(ax, f(5) - 4, 31, 'R = 5 : une distance', 'resultat', 's')
+text(ax, f(-5) + 4, 31, '−5 : refusé', 'limite', 's')
+save(fig, '35-037')

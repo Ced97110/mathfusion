@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 57, 'Plus petit majorant', 'sujet', 's', weight='bold')
+text(ax, 66, 57, 'Plus grand minorant', 'autre', 's', weight='bold')
+box(ax, 2, 38, 40, 14, 'sujet', label='PPCM(4, 12) = 12', size='s')
+box(ax, 46, 38, 40, 14, 'autre', label='PGCD(4, 12) = 4', size='s')
+box(ax, 14, 4, 60, 14, 'resultat', label='Les deux disent :\n4 divise 12', size='s')
+arrow(ax, (22, 37.5), (32, 18.5), 'resultat')
+arrow(ax, (66, 37.5), (56, 18.5), 'resultat')
+text(ax, 44, 28, '=', 'resultat', 'l', weight='bold')
+save(fig, '79-105')

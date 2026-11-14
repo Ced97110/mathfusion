@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(64)
+O=(44,32); R=28; th=math.radians(35)
+P=(O[0]+R*math.cos(th),O[1]+R*math.sin(th)); A=(O[0]+R,O[1])
+disc(ax,*O,R,'fixe',fill=False,lw=0.7)
+line(ax,[(O[0]-R-3,O[1]),(O[0]+R+10,O[1])],'fixe',lw=0.5)
+line(ax,[O,P],'fixe',lw=0.9)
+line(ax,[O,A],'sujet',lw=2.0)
+disc(ax,*A,1.6,'sujet'); disc(ax,*O,0.9,'encre'); disc(ax,*P,0.9,'fixe')
+disc(ax,O[0]-R,O[1],1.4,'fixe',fill=False)
+text(ax,O[0]-R-1,O[1]-4,'autre point','fixe','s',ha='left')
+text(ax,A[0]+4,A[1]-3,'A','sujet','l',weight='bold')
+text(ax,O[0]-2.5,O[1]-3,'O','encre','s')
+text(ax,P[0]+2.5,P[1]+2.5,'P','fixe','s')
+text(ax,(O[0]+A[0])/2,O[1]-4,r'$OA = 1$','sujet','m')
+r=9; line(ax,[(O[0]+r*math.cos(math.radians(a)),O[1]+r*math.sin(math.radians(a))) for a in range(0,36,3)],'varie',lw=1.0)
+text(ax,O[0]+12.5,O[1]+3,r'$\theta$','varie','s')
+text(ax,O[0]+R/2+4,O[1]+30+0,'à droite du centre','sujet','s') if False else None
+save(fig,'31-012')

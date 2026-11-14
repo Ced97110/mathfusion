@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 28, 22, 16, 'fixe', label='Sonde')
+box(ax, 64, 28, 22, 16, 'sujet', label='Terre\n2 bits faux')
+arrow(ax, (24.5, 40), (63.5, 40), 'sujet')
+text(ax, 44, 44.5, 'message', 'sujet', 's')
+arrow(ax, (63.5, 32), (24.5, 32), 'limite')
+line(ax, [(41.5, 29.8), (46.5, 34.2)], 'limite', lw=1.4)
+line(ax, [(41.5, 34.2), (46.5, 29.8)], 'limite', lw=1.4)
+text(ax, 44, 25.5, 'renvoi : des heures, impossible', 'limite', 's')
+box(ax, 60, 4, 28, 10, 'resultat', label='répare seul')
+arrow(ax, (75, 27.5), (75, 14.6), 'resultat')
+save(fig, '68-004')

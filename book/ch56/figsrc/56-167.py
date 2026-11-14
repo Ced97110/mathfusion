@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+def prod(m, a, n, b):
+    return (m * n, m * b + n * a + a * b)
+assert prod(1, 0, 3, 6) == (3, 6) and prod(1, 2, 3, 6) == (3, 24)
+text(ax, 2, 61, r'$(1,0)$ : le couple reste le même', 'resultat', 'm', ha='left', weight='bold')
+box(ax, 2, 40, 26, 14, 'sujet', label=r'$(1,0)(3,6)$', size='s')
+box(ax, 31, 40, 26, 14, 'fixe', label=r'$(3,\ 0+6+0)$', size='s')
+box(ax, 60, 40, 26, 14, 'resultat', label=r'$(3,6)$', size='m')
+arrow(ax, (28.3, 47), (30.7, 47), 'fixe'); arrow(ax, (57.3, 47), (59.7, 47), 'fixe')
+text(ax, 2, 28, r'$(1,2)$ : le couple change', 'limite', 'm', ha='left', weight='bold')
+box(ax, 2, 7, 26, 14, 'autre', label=r'$(1,2)(3,6)$', size='s')
+box(ax, 31, 7, 26, 14, 'fixe', label=r'$(3,\ 6+6+12)$', size='s')
+box(ax, 60, 7, 26, 14, 'limite', label=r'$(3,24)$', size='m')
+arrow(ax, (28.3, 14), (30.7, 14), 'fixe'); arrow(ax, (57.3, 14), (59.7, 14), 'fixe')
+save(fig, '56-167')

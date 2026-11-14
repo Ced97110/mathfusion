@@ -1,0 +1,181 @@
+[
+ {
+  "code": "44-048",
+  "a_dire": "Composer α et β dans un ordre ou dans l'autre peut donner deux résultats différents.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "Dans la première ligne, les flèches orange montrent β qui agit d'abord : les numéros 1 et 2 vont sur 1.",
+   "Les flèches bleues montrent α qui agit ensuite : 1 va sur 2. Tout aboutit à 2 : c'est γ.",
+   "Dans la seconde ligne, α agit d'abord (orange), puis β (bleu) : tout aboutit à 1, c'est β.",
+   "Le signe rouge ≠ sépare les deux lignes : les deux résultats ne sont pas les mêmes."
+  ],
+  "a_voir": "Il faut voir que tout aboutit à 2 dans la première ligne et à 1 dans la seconde."
+ },
+ {
+  "code": "44-049",
+  "a_dire": "Dans la case de la ligne ρ et de la colonne σ, on lit ρ ∘ σ : on prend la colonne d'abord.",
+  "legende_titre": "Par quel bord entre-t-on dans la table ?",
+  "lecture": [
+   "La colonne bleue est celle de β : c'est la transformation qui agit la première.",
+   "La ligne orange est celle de α : c'est celle qui agit ensuite.",
+   "La case verte, au croisement, contient γ, c'est-à-dire α ∘ β."
+  ],
+  "a_voir": "Il faut voir que la colonne se lit avant la ligne."
+ },
+ {
+  "code": "44-050",
+  "a_dire": "La case ligne α, colonne α se vérifie en échangeant deux fois : chaque numéro revient en place, on trouve 1_S.",
+  "legende_titre": "Vérifier une case, numéro par numéro",
+  "lecture": [
+   "Dans la colonne de gauche, en bleu, il y a les numéros 1 et 2 au départ.",
+   "Les flèches orange suivent le numéro 1, les flèches violettes suivent le numéro 2 : chaque flèche est un échange par α.",
+   "Dans la colonne de droite, en vert, chaque numéro est revenu à sa place."
+  ],
+  "a_voir": "Il faut voir que les deux échanges successifs ramènent chaque numéro à son point de départ."
+ },
+ {
+  "code": "44-051",
+  "a_dire": "L'ensemble des quatre transformations, avec la composition et l'identité, est le premier exemple de monoïde.",
+  "legende_titre": "Un ensemble, une composition, une identité",
+  "lecture": [
+   "Le grand cadre bleu en pointillés est l'ensemble M(S) avec ses quatre transformations.",
+   "La case grise 1_S est celle qui ne change rien.",
+   "En dessous, α ∘ β = γ : la flèche orange montre que le résultat est une des quatre cases, en vert."
+  ],
+  "a_voir": "Il faut voir que le résultat de la composition reste dans le cadre."
+ },
+ {
+  "code": "44-052",
+  "a_dire": "Un monoïde est la donnée d'un ensemble M, d'une opération p et d'un neutre 1 ; les nombres, les transformations et les mots en sont trois exemples.",
+  "legende_titre": "Trois données, trois exemples",
+  "lecture": [
+   "Chaque ligne est un exemple : les entiers naturels, les transformations, les mots.",
+   "La colonne bleue donne l'ensemble, la colonne orange donne l'opération, la colonne grise donne le neutre.",
+   "Les trois lignes ont les mêmes trois colonnes."
+  ],
+  "a_voir": "Il faut voir que chaque ligne remplit les mêmes trois colonnes."
+ },
+ {
+  "code": "44-053",
+  "a_dire": "Une composition binaire associative prend deux éléments et donne un résultat qui ne dépend pas des parenthèses ; l'addition l'est, la soustraction non.",
+  "legende_titre": "Les parenthèses changent-elles le résultat ?",
+  "lecture": [
+   "Les cadres orange en pointillés entourent les deux nombres calculés en premier.",
+   "En vert, l'addition donne 9 dans les deux lignes.",
+   "En rouge, la soustraction donne 0 dans la première ligne et 4 dans la seconde.",
+   "Dans chaque cadre, il y a toujours deux nombres."
+  ],
+  "a_voir": "Il faut voir que la place des parenthèses ne change rien à l'addition et change le résultat de la soustraction."
+ },
+ {
+  "code": "44-054",
+  "a_dire": "L'élément neutre ne change aucun élément quand on le compose avec lui ; ce n'est ni un inverse ni une transformation qui remplace tout.",
+  "legende_titre": "Neutre, inverse, ou autre chose ?",
+  "lecture": [
+   "Dans chaque ligne, la case bleue de gauche est α et la flèche orange dit ce qu'on compose avec elle.",
+   "Ligne du haut, en vert : composer avec 1_S laisse α telle quelle.",
+   "Ligne du milieu, en violet : composer α avec α donne 1_S, donc α se défait elle-même.",
+   "Ligne du bas, en rouge : composer β avec α donne β, donc β ne laisse pas α inchangée."
+  ],
+  "a_voir": "Il faut voir que seule la ligne verte laisse α inchangée."
+ },
+ {
+  "code": "44-055",
+  "a_dire": "La lettre M désigne l'ensemble dont on parle, quel que soit l'exemple.",
+  "legende_titre": "Une lettre pour plusieurs ensembles",
+  "lecture": [
+   "La grande case bleue est la lettre M.",
+   "Les trois flèches orange mènent vers trois ensembles en gris : les entiers naturels, les quatre transformations, les mots.",
+   "Dans chacun, M tient la place de cet ensemble."
+  ],
+  "a_voir": "Il faut voir qu'une seule lettre part vers trois ensembles différents."
+ },
+ {
+  "code": "44-056",
+  "a_dire": "La lettre p désigne l'opération qui combine deux éléments, quelle que soit cette opération.",
+  "legende_titre": "La même place, trois opérations",
+  "lecture": [
+   "En haut, le schéma montre a, p, b : p est la case orange entre les deux éléments.",
+   "Dans les trois lignes du dessous, les éléments sont en bleu et la case orange change.",
+   "Elle contient +, puis ∘, puis la mise bout à bout."
+  ],
+  "a_voir": "Il faut voir que la case orange change d'une ligne à l'autre à la même place."
+ },
+ {
+  "code": "44-057",
+  "a_dire": "Le signe p(a, b) note le résultat de l'opération sur a et b, et ce résultat est dans l'ensemble.",
+  "legende_titre": "Écrire le résultat d'un seul signe",
+  "lecture": [
+   "Dans le cadre en pointillés, les cases bleues a et b entrent dans l'opération p, flèche orange.",
+   "La case verte p(a, b) est le résultat, et elle reste dans le cadre M.",
+   "En dessous, deux exemples : 3 et 5 donnent 8 ; ab et ba donnent abba."
+  ],
+  "a_voir": "Il faut voir que a et b donnent une seule case, qui reste dans M."
+ },
+ {
+  "code": "44-058",
+  "a_dire": "Le signe 1 désigne l'élément neutre : le combiner avec un élément le laisse tel quel.",
+  "legende_titre": "Que désigne le signe 1 ?",
+  "lecture": [
+   "La colonne grise donne le neutre de chaque exemple : 0, 1_S, le mot vide.",
+   "La colonne bleue du milieu donne un élément quelconque.",
+   "La flèche orange mène au résultat : c'est le même élément, car le neutre n'a rien changé."
+  ],
+  "a_voir": "Il faut voir que, sur chaque ligne, l'élément de départ et le résultat sont identiques."
+ },
+ {
+  "code": "44-059",
+  "a_dire": "Le triplet (M, p, 1) donne d'un coup l'ensemble, l'opération et le neutre.",
+  "legende_titre": "Le triplet qui distingue deux monoïdes",
+  "lecture": [
+   "Chaque ligne est un triplet écrit à gauche et découpé en trois cases.",
+   "La première colonne donne l'ensemble : c'est ℕ dans les deux lignes.",
+   "Les cases violettes de la seconde ligne sont différentes de la première : × et 1 au lieu de + et 0."
+  ],
+  "a_voir": "Il faut voir que seules l'opération et le neutre changent entre les deux lignes."
+ },
+ {
+  "code": "44-060",
+  "a_dire": "Le signe ∈ se lit « est élément de » : il relie un objet à gauche à une collection à droite.",
+  "legende_titre": "Relier un objet à sa collection",
+  "lecture": [
+   "À gauche, le disque bleu est l'objet 3.",
+   "Au milieu, le signe orange ∈ relie l'objet à la collection.",
+   "À droite, le cadre en pointillés est ℕ ; le disque bleu 3 y est un des disques."
+  ],
+  "a_voir": "Il faut voir que l'objet est à gauche et la collection à droite."
+ },
+ {
+  "code": "44-061",
+  "a_dire": "On décide si un ensemble avec une opération est un monoïde en posant trois questions dans l'ordre : ensemble, opération, neutre.",
+  "legende_titre": "Trois questions, dans l'ordre",
+  "lecture": [
+   "La première case, en vert, vérifie l'ensemble : les entiers relatifs.",
+   "La deuxième case, en rouge, vérifie les parenthèses avec la soustraction : 0 et 4 ne sont pas égaux.",
+   "La troisième case, en pointillés gris, n'est pas examinée : on s'est arrêté avant."
+  ],
+  "a_voir": "Il faut voir que la deuxième question échoue et que la troisième n'est pas posée."
+ },
+ {
+  "code": "44-062",
+  "a_dire": "Le signe ab remplace p(a, b) : c'est plus court, et pour les transformations il veut dire a ∘ b.",
+  "legende_titre": "Six signes ramenés à deux lettres",
+  "lecture": [
+   "En haut, en gris, p(a, b) occupe six cases.",
+   "La flèche orange mène à ab, en bleu, qui n'occupe que deux cases.",
+   "En bas, la ligne orange rappelle que ab veut dire a ∘ b, avec b d'abord."
+  ],
+  "a_voir": "Il faut voir que six cases deviennent deux."
+ },
+ {
+  "code": "44-063",
+  "a_dire": "Une opération binaire prend deux éléments ; prendre l'opposé n'en prend qu'un seul.",
+  "legende_titre": "Deux éléments ou un seul ?",
+  "lecture": [
+   "En haut, en vert, deux cases bleues 3 et 5 entrent dans + et donnent 8.",
+   "En bas, en rouge, une seule case bleue 3 entre dans l'opposé et donne −3.",
+   "Les flèches orange montrent combien d'éléments entrent."
+  ],
+  "a_voir": "Il faut voir deux flèches qui entrent dans l'addition et une seule dans l'opposé."
+ }
+]

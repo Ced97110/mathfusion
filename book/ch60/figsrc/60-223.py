@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+y = 46
+text(ax, 26, y, 'P', 'sujet', 'xl', weight='bold')
+text(ax, 33, y, '(', 'encre', 'xl')
+text(ax, 39, y, '3', 'varie', 'xl', weight='bold')
+text(ax, 45, y, ')', 'encre', 'xl')
+text(ax, 53, y, '=', 'encre', 'xl')
+text(ax, 61, y, '3', 'resultat', 'xl', weight='bold')
+text(ax, 19, 26, 'nombre de partitions', 'sujet', 's')
+text(ax, 47, 26, 'entier qu’on découpe', 'varie', 's')
+text(ax, 74, 26, 'ses 3 partitions', 'resultat', 's')
+arrow(ax, (22, 30), (26, 41), 'sujet')
+arrow(ax, (42, 30), (39, 41), 'varie')
+arrow(ax, (69, 30), (61, 41), 'resultat')
+text(ax, 44, 9, 'liste : 3 ; 2 + 1 ; 1 + 1 + 1', 'fixe', 's')
+save(fig, '60-223')

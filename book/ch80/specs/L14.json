@@ -1,0 +1,277 @@
+[
+ {
+  "code": "80-313",
+  "a_dire": "A + B garde les éléments qui sont dans un seul des deux ensembles : ici a et c.",
+  "legende_titre": "Les éléments d’un seul côté",
+  "lecture": [
+   "Le cercle bleu est A, le cercle violet est B.",
+   "Les ronds verts a et c sont dans un seul cercle : ils restent.",
+   "Le rond gris b est dans les deux cercles : il disparaît."
+  ],
+  "a_voir": "Seuls les éléments d’un seul cercle forment A + B."
+ },
+ {
+  "code": "80-314",
+  "a_dire": "Le produit AB est la partie des éléments communs à A et à B : ici {b}.",
+  "legende_titre": "Ce qui est dans les deux",
+  "lecture": [
+   "Le cercle bleu est A, le cercle violet est B.",
+   "Le rond vert b est dans les deux cercles : il forme AB.",
+   "Les ronds gris a et c ne sont que dans un cercle."
+  ],
+  "a_voir": "AB est la zone commune aux deux cercles."
+ },
+ {
+  "code": "80-315",
+  "a_dire": "A + A est vide : aucun élément n’est dans A sans être dans A.",
+  "legende_titre": "Une partie ajoutée à elle-même",
+  "lecture": [
+   "Les deux cercles bleus sont la même partie A, avec a et b.",
+   "Chaque élément gris est dans les deux : aucun n’est dans un seul.",
+   "Le cercle vert à droite est vide."
+  ],
+  "a_voir": "Rien ne reste, donc le résultat est vide."
+ },
+ {
+  "code": "80-316",
+  "a_dire": "Multiplier une partie par elle-même la laisse inchangée : A fois A égale A.",
+  "legende_titre": "Une partie fois elle-même",
+  "lecture": [
+   "Les deux cercles bleus sont la même partie A, avec a et b.",
+   "Le cercle vert à droite est le résultat.",
+   "Il contient les mêmes éléments a et b."
+  ],
+  "a_voir": "Le résultat est identique à la partie de départ."
+ },
+ {
+  "code": "80-317",
+  "a_dire": "Dans l’anneau des parties, x + x = 0 et x² = x sont vraies ; pour le nombre 3, elles sont fausses.",
+  "legende_titre": "Deux règles qui changent selon l’anneau",
+  "lecture": [
+   "La colonne rouge à gauche montre x = 3 : 3 + 3 = 6 et 3 × 3 = 9.",
+   "La colonne verte à droite montre une partie A : A + A = ∅ et A × A = A.",
+   "Chaque ligne pose une des deux règles."
+  ],
+  "a_voir": "Les deux règles échouent pour 3 et réussissent pour A."
+ },
+ {
+  "code": "80-318",
+  "a_dire": "Développer le carré de 2 + 3 donne quatre morceaux dont la somme vaut le carré : 4 + 6 + 6 + 9 = 25.",
+  "legende_titre": "Un carré découpé en quatre morceaux",
+  "lecture": [
+   "Le grand carré a pour côté 2 + 3.",
+   "Le morceau bleu vaut 4, le violet vaut 9.",
+   "Les deux morceaux orange valent 6 chacun.",
+   "Les quatre morceaux font 25, comme le carré entier."
+  ],
+  "a_voir": "Les quatre morceaux remplissent le carré de 25."
+ },
+ {
+  "code": "80-319",
+  "a_dire": "On écrit (a + b)² de deux façons, par la règle du carré et par la distributivité, puis on compare.",
+  "legende_titre": "Deux chemins pour (a + b)²",
+  "lecture": [
+   "Le haut bleu est (a + b)².",
+   "À gauche, chemin 1 : la règle x² = x donne a + b.",
+   "À droite, chemin 2 : la distributivité donne quatre termes, puis a² devient a et b² devient b.",
+   "En bas, les deux résultats verts sont égaux, car ils viennent du même départ."
+  ],
+  "a_voir": "Deux chemins partent du même (a + b)² et aboutissent à la même égalité."
+ },
+ {
+  "code": "80-320",
+  "a_dire": "ab + ba = 0 : les deux produits sont la même partie, et leur somme est vide.",
+  "legende_titre": "Deux produits, une somme vide",
+  "lecture": [
+   "La case bleue est AB, la case violette est BA.",
+   "Les deux contiennent la même partie {b}.",
+   "Leur somme, dans la case verte, est vide."
+  ],
+  "a_voir": "Deux parties identiques s’annulent en somme."
+ },
+ {
+  "code": "80-321",
+  "a_dire": "En prenant b = a dans ab + ba = 0 puis en utilisant a² = a, on obtient a + a = 0.",
+  "legende_titre": "De ab + ba à a + a",
+  "lecture": [
+   "La case grise est la relation déjà connue : ab + ba = 0.",
+   "La flèche orange du haut dit : on prend b = a.",
+   "La flèche orange du bas remplace a² par a : la case verte donne a + a = 0.",
+   "La case rouge relie à cette flèche ce qui arrive sans a² = a : 3 + 3 vaut 6, pas 0."
+  ],
+  "a_voir": "La règle du carré est ce qui permet d'arriver à a + a = 0."
+ },
+ {
+  "code": "80-322",
+  "a_dire": "Dans l’anneau des parties, l’opposé de A est A lui-même, alors que l’opposé de 3 est −3.",
+  "legende_titre": "L’opposé d’un élément",
+  "lecture": [
+   "La ligne du haut montre les nombres : 3 + (−3) = 0, l’opposé est différent.",
+   "La ligne du bas montre les parties : A + A = ∅.",
+   "Dans la case orange du bas, l’opposé de A est A."
+  ],
+  "a_voir": "L’opposé de A est A."
+ },
+ {
+  "code": "80-323",
+  "a_dire": "De ab + ba = 0 et de x = −x, on déduit ab = ba : l’anneau est commutatif.",
+  "legende_titre": "Pourquoi l’ordre ne compte pas",
+  "lecture": [
+   "La case grise du haut est ab + ba = 0.",
+   "La case orange en découle : ab = −ba.",
+   "La case violette dit que chaque élément est son opposé : −ba = ba.",
+   "Ensemble, elles donnent la case verte ab = ba."
+  ],
+  "a_voir": "Deux égalités mises bout à bout donnent ab = ba."
+ },
+ {
+  "code": "80-324",
+  "a_dire": "La seule règle x² = x donne à la fois x + x = 0 et ab = ba.",
+  "legende_titre": "Une règle, deux conséquences",
+  "lecture": [
+   "La case bleue du haut est la règle x² = x.",
+   "Les deux flèches bleues mènent aux deux conséquences vertes.",
+   "La flèche orange montre que x + x = 0 sert à obtenir ab = ba.",
+   "L’accolade verte rappelle que tout vient d’une seule règle."
+  ],
+  "a_voir": "Une seule règle fournit deux propriétés."
+ },
+ {
+  "code": "80-325",
+  "a_dire": "Sur ℤ/2, la formule a + b + ab donne le bon « ou » pour les cas 1 ∨ 1, 1 ∨ 0 et 0 ∨ 0.",
+  "legende_titre": "Vérifier le « ou » cas par cas",
+  "lecture": [
+   "En haut, la formule du « ou » et la règle 1 + 1 = 0.",
+   "Chaque case verte calcule un cas et trouve le bon résultat.",
+   "La case en pointillés, 0 ∨ 1, se déduit des autres."
+  ],
+  "a_voir": "Chaque ligne calculée donne la valeur attendue."
+ },
+ {
+  "code": "80-326",
+  "a_dire": "1 ∨ 1 = 1 + 1 + 1 = 1 parce que 1 + 1 = 0 puis 0 + 1 = 1.",
+  "legende_titre": "Vrai ou vrai",
+  "lecture": [
+   "La case bleue du haut pose le calcul 1 + 1 + 1.",
+   "La case orange fait la première étape : 1 + 1 = 0.",
+   "La case verte fait la seconde : 0 + 1 = 1.",
+   "La case rouge montre que dans les entiers on trouverait 3."
+  ],
+  "a_voir": "La règle 1 + 1 = 0 garde le résultat à 1."
+ },
+ {
+  "code": "80-327",
+  "a_dire": "« non a » se calcule par 1 + a : non 1 donne 0 et non 0 donne 1.",
+  "legende_titre": "Le « non » par 1 + a",
+  "lecture": [
+   "La ligne du haut part de 1 (vert, vrai) et arrive à 0 (rouge, faux) par 1 + 1.",
+   "La ligne du bas part de 0 (rouge) et arrive à 1 (vert) par 1 + 0.",
+   "Les flèches orange sont le calcul 1 + a."
+  ],
+  "a_voir": "Le calcul échange 0 et 1."
+ },
+ {
+  "code": "80-328",
+  "a_dire": "La formule du « ou » sur 0 et 1 donne la bonne réponse de l’alarme : porte et nuit faux, fenêtre vrai, l’alarme sonne.",
+  "legende_titre": "Le « ou » de l’alarme",
+  "lecture": [
+   "La case rouge « porte et nuit » vaut 0, faux.",
+   "La case verte « fenêtre » vaut 1, vrai.",
+   "La case orange applique a + b + ab avec ces valeurs et trouve 1.",
+   "La case verte du bas dit que l’alarme sonne."
+  ],
+  "a_voir": "Le calcul donne 1, donc l’alarme sonne."
+ },
+ {
+  "code": "80-329",
+  "a_dire": "Avec seulement 0 et 1, on a déjà un « ou », un « et » et un « non » : c’est une algèbre de Boole complète.",
+  "legende_titre": "Deux états, trois opérations",
+  "lecture": [
+   "Le rond gris est 0, interrupteur ouvert ; le rond bleu est 1, interrupteur fermé.",
+   "La double flèche orange relie les deux états.",
+   "Les trois cases vertes donnent un exemple de « ou », de « et » et de « non »."
+  ],
+  "a_voir": "Deux valeurs suffisent pour les trois opérations."
+ },
+ {
+  "code": "80-330",
+  "a_dire": "Les parties d’un ensemble à un élément, ℤ/2 et le vrai et faux sont la même structure écrite avec trois jeux de noms.",
+  "legende_titre": "Une structure, trois écritures",
+  "lecture": [
+   "Les trois colonnes sont : les parties de {s}, ℤ/2 et la logique.",
+   "La ligne grise du haut : ∅, 0 et faux se correspondent.",
+   "La ligne bleue du bas : {s}, 1 et vrai se correspondent.",
+   "Les traits en pointillés relient les noms d’un même élément."
+  ],
+  "a_voir": "Chaque ligne est un même élément sous trois noms."
+ },
+ {
+  "code": "80-331",
+  "a_dire": "Parmi les anneaux de Boole, seul {0, 1} est un corps : l’anneau à 4 parties a un produit nul sans facteur nul.",
+  "legende_titre": "Un seul corps parmi les anneaux de Boole",
+  "lecture": [
+   "La case verte du haut est {0, 1}, qui est un corps.",
+   "La rangée du milieu montre les 4 parties de {a, b}.",
+   "Les flèches rouges des parties {a} et {b} mènent à leur produit, qui est vide.",
+   "Ces deux parties ne sont pas vides, mais leur produit l’est : ce n’est pas un corps."
+  ],
+  "a_voir": "Deux parties non vides ont un produit vide."
+ },
+ {
+  "code": "80-332",
+  "a_dire": "Dans un corps de Boole, a(1 + a) = 0 force a = 0 ou a = 1.",
+  "legende_titre": "Le produit a(1 + a)",
+  "lecture": [
+   "Les trois cases du haut calculent a(1 + a) : on obtient a + a, qui vaut 0.",
+   "La case grise rappelle qu’un produit nul, dans un corps, a un facteur nul.",
+   "À gauche, a est nul : a = 0.",
+   "À droite, 1 + a est nul : a = 1."
+  ],
+  "a_voir": "Le produit nul ne laisse que deux valeurs possibles."
+ },
+ {
+  "code": "80-333",
+  "a_dire": "Un ensemble sans élément a une seule partie, la partie vide : 2⁰ = 1 et dans ce cas 0 = 1.",
+  "legende_titre": "L’ensemble sans élément",
+  "lecture": [
+   "La ligne grise du haut montre un ensemble à un élément s : il a deux parties, ∅ qui vaut 0 et {s} qui vaut 1.",
+   "La ligne du bas montre l’ensemble vide : un rond sans élément.",
+   "Il n’a qu’une partie, ∅ : 2⁰ = 1, donc 0 et 1 sont la même chose."
+  ],
+  "a_voir": "Sans élément, il reste une seule partie : 0 = 1."
+ },
+ {
+  "code": "80-334",
+  "a_dire": "Les idéaux d’une algèbre de Boole sont les idéaux de son anneau associé ; un idéal garde sommes et produits comme les multiples de 6.",
+  "legende_titre": "Un mot repris pour les algèbres de Boole",
+  "lecture": [
+   "Sur la droite, les ronds bleus sont les multiples de 6, un idéal de ℤ.",
+   "La phrase orange donne la règle d’un idéal : la somme x + y et le produit k x par n’importe quel élément k restent dedans.",
+   "La case bleue et la case violette sont égales : mêmes idéaux."
+  ],
+  "a_voir": "Les idéaux de l’algèbre sont ceux de l’anneau."
+ },
+ {
+  "code": "80-335",
+  "a_dire": "Un idéal de l’algèbre des parties contient tout ce qui est sous un de ses éléments et reste stable par réunion ; ici, les parties sans c.",
+  "legende_titre": "Les parties qui ne contiennent pas c",
+  "lecture": [
+   "Les cases bleues sont les parties sans c : ∅, {a}, {b}, {a, b}.",
+   "Les cases en pointillés gris contiennent c.",
+   "Les flèches bleues vont vers le bas : tout ce qui est sous une case bleue est aussi dans l’idéal."
+  ],
+  "a_voir": "Les cases bleues forment un bloc fermé vers le bas."
+ },
+ {
+  "code": "80-336",
+  "a_dire": "Les parties finies de ℕ forment un idéal : une réunion de deux parties finies est finie, une sous-partie aussi.",
+  "legende_titre": "Les parties finies de ℕ",
+  "lecture": [
+   "La droite graduée donne la place de chaque nombre.",
+   "Les ronds bleus sont {2, 5}, le rond violet est {7}.",
+   "La ligne verte « réunion » est {2, 5, 7} : elle reste finie.",
+   "La ligne du bas, {5}, est sous {2, 5} et reste finie."
+  ],
+  "a_voir": "Réunion et sous-partie restent finies."
+ }
+]

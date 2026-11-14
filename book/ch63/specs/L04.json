@@ -1,0 +1,358 @@
+[
+ {
+  "code": "63-097",
+  "a_dire": "Si un sous-groupe H de G(E/F) a autant d'éléments que le degré [E : F], alors H est égal à G(E/F).",
+  "legende_titre": "Quand la taille suffit pour conclure",
+  "lecture": [
+   "En haut, la boîte bleue est le groupe G avec ses 4 éléments, et le cadre violet H en entoure 4 : tous.",
+   "En bas, le cadre violet H n'entoure que 1 et σ : il a 2 éléments et laisse τ et στ dehors.",
+   "Le texte vert du haut écrit |H| = [E : ℚ] = 4 ; le texte rouge du bas écrit |H| = 2 ≠ 4."
+  ],
+  "a_voir": "Quand H a 4 éléments comme G, le cadre violet contient tous les éléments de la boîte ; avec 2 éléments, il n'en contient que la moitié."
+ },
+ {
+  "code": "63-098",
+  "a_dire": "Les quatre automorphismes 1, σ, τ, στ forment un groupe de 4 éléments, autant que le degré [E : ℚ] = 4, donc il n'y en a pas d'autre.",
+  "legende_titre": "Quatre automorphismes, un degré de 4",
+  "lecture": [
+   "La boîte bleue contient les 4 automorphismes 1, σ, τ et στ.",
+   "Les 4 cases violettes sont 1, √2, √3 et √6 ; l'accolade dessous donne [E : ℚ] = 4.",
+   "Le signe vert « = » relie les deux nombres : 4 éléments d'un côté, 4 de l'autre."
+  ],
+  "a_voir": "Il y a autant d'automorphismes que le degré, donc aucun autre n'existe."
+ },
+ {
+  "code": "63-099",
+  "a_dire": "Une extension est séparable quand le polynôme minimal de chaque élément a ses racines distinctes.",
+  "legende_titre": "Des racines qui ne se répètent pas",
+  "lecture": [
+   "À gauche, les deux points verts sur la droite sont les racines −√2 et √2 de x² − 2.",
+   "À droite, les trois points verts sur le cercle sont les racines r, jr et j²r de x³ − 2.",
+   "Dans les deux cas, chaque racine est à un endroit différent des autres."
+  ],
+  "a_voir": "Chaque polynôme minimal montré a toutes ses racines à des places distinctes."
+ },
+ {
+  "code": "63-100",
+  "a_dire": "Une extension est normale si tout polynôme irréductible qui a une racine dans E a toutes ses racines dans E.",
+  "legende_titre": "Une racine dedans, et les autres ?",
+  "lecture": [
+   "Les trois points sont les racines r, jr et j²r de x³ − 2.",
+   "À gauche, l'ovale bleu est le corps ℚ(r) : il ne contient que r ; jr et j²r sont rouges, dehors.",
+   "À droite, l'ovale bleu est le corps ℚ(r, j) : il contient les trois points, tous verts."
+  ],
+  "a_voir": "À gauche il manque deux racines dans le corps, à droite il n'en manque aucune."
+ },
+ {
+  "code": "63-101",
+  "a_dire": "En caractéristique 0, toute extension finie est séparable : la seule condition à vérifier est la normalité.",
+  "legende_titre": "Une condition de moins à vérifier",
+  "lecture": [
+   "Le trait bleu épais est l'ensemble des nombres de ℚ(r), tous réels ; r est le point bleu posé dessus.",
+   "Les points rouges jr et j²r sont les racines qui ne sont pas sur ce trait.",
+   "La case verte dit que ℚ(r)/ℚ est séparable, sans calcul ; la case rouge dit qu'elle n'est pas normale."
+  ],
+  "a_voir": "La séparabilité est acquise d'avance sur ℚ ; c'est la normalité qui échoue ici."
+ },
+ {
+  "code": "63-102",
+  "a_dire": "Le théorème 4.7 dit que les trois conditions (1), (2), (3) sont équivalentes : chacune entraîne la suivante, en boucle.",
+  "legende_titre": "Trois conditions, une seule information",
+  "lecture": [
+   "Les trois boîtes bleues sont les conditions (1), (2) et (3), avec leur contenu pour ℚ(√2, √3).",
+   "Les flèches orange vont de (1) à (2), de (2) à (3), puis de (3) à (1).",
+   "Le texte vert du bas dit que les trois sont vraies pour ce corps."
+  ],
+  "a_voir": "Les flèches forment une boucle fermée : si une condition est vraie, les deux autres le sont."
+ },
+ {
+  "code": "63-103",
+  "a_dire": "Une extension est galoisienne quand le corps fixe de son groupe de Galois est exactement le corps de départ F.",
+  "legende_titre": "Un mot pour l'aller-retour qui revient",
+  "lecture": [
+   "Chaque ligne va du corps de départ F (bleu) au groupe de Galois (gris), puis au corps fixe (Inv).",
+   "En haut, pour ℚ(√2) : le groupe est {1, σ} et le corps fixe est ℚ, vert, égal à F.",
+   "En bas, pour ℚ(r) : le groupe est {1} et le corps fixe est ℚ(r), rouge, différent de F."
+  ],
+  "a_voir": "En haut on revient au point de départ, en bas on n'y revient pas."
+ },
+ {
+  "code": "63-104",
+  "a_dire": "Dans une extension galoisienne, F est égal à Inv(Gal(E/F)) ; sinon F est seulement contenu dedans, avec une différence.",
+  "legende_titre": "L'inclusion devient-elle une égalité ?",
+  "lecture": [
+   "À gauche, un seul ovale vert : F = ℚ et Inv(Gal) sont le même ensemble, pour ℚ(√2)/ℚ.",
+   "À droite, le petit ovale bleu est ℚ, le grand ovale rouge est ℚ(r) = Inv(Gal), pour ℚ(r)/ℚ.",
+   "Le texte du bas de chaque côté écrit = ou ≠."
+  ],
+  "a_voir": "À gauche les deux ensembles se confondent ; à droite le grand contient strictement le petit."
+ },
+ {
+  "code": "63-105",
+  "a_dire": "Le lemme 1 appliqué deux fois donne |G| = [E : F] et |G| = [E : F′], donc [F′ : F] = 1 et F′ = F.",
+  "legende_titre": "Départ, étape centrale, arrivée",
+  "lecture": [
+   "Les trois boîtes forment une tour : E en haut (bleu), F′ = Inv G au milieu (violet), F = ℚ en bas (bleu).",
+   "Le trait gris entre E et F′ porte le degré [E : F′] = |G| = 4.",
+   "Le trait vert entre F′ et F porte [F′ : F] = 4/4 = 1 ; le texte du bas conclut F′ = F."
+  ],
+  "a_voir": "Le trait vert vaut 1 : il n'y a aucun écart entre F′ et F."
+ },
+ {
+  "code": "63-106",
+  "a_dire": "Sans la séparabilité, le lemme 1 ne donne qu'une inégalité, et la conclusion [F′ : F] = 1 n'est plus démontrée.",
+  "legende_titre": "Ce que la séparabilité rend exact",
+  "lecture": [
+   "Les 4 cases bleues sont le degré [E : F] ; les 4 cases orange sont |G|.",
+   "En haut, avec la séparabilité, les deux rangées sont égales (signe vert =) et la conclusion [F′ : F] = 1 est démontrée.",
+   "En bas, sans elle, les cases de |G| sont en pointillés, le signe est ≤ et la conclusion, en rouge, n'est pas démontrée."
+  ],
+  "a_voir": "Avec « = » la conclusion tient ; avec « ≤ » elle ne tient plus."
+ },
+ {
+  "code": "63-107",
+  "a_dire": "Les images η(r) de la racine r par les éléments η de G forment l'orbite de r ; ce sont des racines de f dans E, et le lemme d'Artin donne un degré fini.",
+  "legende_titre": "Où le groupe envoie une racine",
+  "lecture": [
+   "Le grand disque bleu est la racine r = √2.",
+   "Les deux flèches orange sont η = 1 et η = σ ; elles arrivent sur √2 et −√2, points verts de la droite.",
+   "Ces deux points sont les racines de f = x² − 2 ; la ligne du bas rappelle le lemme d'Artin."
+  ],
+  "a_voir": "Chaque élément du groupe envoie r sur une racine de f, et on obtient 2 racines."
+ },
+ {
+  "code": "63-108",
+  "a_dire": "Le produit g des facteurs x − r_i sur l'orbite ne change pas quand un élément de G permute les racines, donc ses coefficients sont dans Inv G = F.",
+  "legende_titre": "Un produit que le groupe ne change pas",
+  "lecture": [
+   "Les deux cases bleues sont les facteurs x − √2 et x + √2 de l'orbite de √2.",
+   "La flèche orange courbe montre que σ échange les deux facteurs.",
+   "La case verte est leur produit g = x² − 2 ; ses coefficients 1, 0 et −2 sont dans ℚ."
+  ],
+  "a_voir": "Les facteurs changent de place, mais le produit reste x² − 2."
+ },
+ {
+  "code": "63-109",
+  "a_dire": "Si E/F est de degré fini, normale et séparable, le produit des polynômes minimaux des générateurs est séparable et se décompose dans E : E est un corps de décomposition.",
+  "legende_titre": "Du degré fini au corps de décomposition",
+  "lecture": [
+   "Les deux cases du haut sont les polynômes minimaux x² − 2 (de √2, bleu) et x² − 3 (de √3, violet).",
+   "Le cadre vert en pointillés est le corps E ; la droite dedans porte leurs quatre racines.",
+   "Les points bleus sont ±√2 et les points violets sont ±√3 : tous sont dans le cadre."
+  ],
+  "a_voir": "Les quatre racines du produit sont toutes dans E."
+ },
+ {
+  "code": "63-110",
+  "a_dire": "Judson énonce le même théorème que Jacobson (théorème 23.19 au lieu de 4.7), mais avec des définitions un peu différentes qu'il faut comparer.",
+  "legende_titre": "Un théorème, deux numéros, deux jeux de mots",
+  "lecture": [
+   "La boîte bleue est le théorème 4.7 de Jacobson ; la boîte violette est le théorème 23.19 de Judson.",
+   "Le signe vert « = » entre elles dit que le résultat est le même.",
+   "Sous chaque boîte, le texte rappelle que les définitions sont celles de son auteur ; la flèche orange double dit qu'il faut les comparer."
+  ],
+  "a_voir": "Le résultat est le même, mais les définitions de chaque côté sont à comparer."
+ },
+ {
+  "code": "63-111",
+  "a_dire": "Selon Judson, un polynôme de degré n est séparable s'il a n racines distinctes dans son corps de décomposition, ce qui revient à PGCD(f, f′) = 1.",
+  "legende_titre": "Compter les racines sans répétition",
+  "lecture": [
+   "À gauche, x² − 2 a deux points verts distincts sur la droite : −√2 et √2 ; le PGCD vaut 1.",
+   "À droite, (x − 1)² a un seul point rouge, entouré d'un second cercle : la racine 1 est comptée 2 fois.",
+   "Pour (x − 1)², le PGCD vaut x − 1 et non 1."
+  ],
+  "a_voir": "Deux points séparés pour le degré 2 à gauche ; un seul point double à droite."
+ },
+ {
+  "code": "63-112",
+  "a_dire": "f = (x − 1)² est séparable pour Jacobson mais pas pour Judson, et cette différence ne change pas le groupe de Galois.",
+  "legende_titre": "Un polynôme, deux verdicts",
+  "lecture": [
+   "Le texte bleu du haut écrit f = (x − 1)² = (x − 1)(x − 1).",
+   "À gauche, en vert, Jacobson regarde le facteur x − 1 : sa racine 1 est simple, donc séparable.",
+   "À droite, en rouge, Judson regarde f entier : la racine 1 est comptée 2 fois, donc pas séparable.",
+   "La boîte grise du bas dit que le corps de décomposition est le même, ℚ."
+  ],
+  "a_voir": "Les deux verdicts diffèrent, mais le corps de décomposition est ℚ dans les deux cas."
+ },
+ {
+  "code": "63-113",
+  "a_dire": "Pour un polynôme irréductible, les définitions de Jacobson et de Judson disent la même chose.",
+  "legende_titre": "Quand les deux définitions se rejoignent",
+  "lecture": [
+   "Le texte du haut rappelle que x² − 2 est irréductible.",
+   "La boîte bleue est la définition de Jacobson ; la boîte violette est celle de Judson ; chaque flèche arrive sur une racine.",
+   "Les deux points verts sont les racines −√2 et √2, que les deux définitions demandent distinctes."
+  ],
+  "a_voir": "Les deux boîtes pointent vers les mêmes deux racines distinctes."
+ },
+ {
+  "code": "63-114",
+  "a_dire": "Selon Judson, une extension E/F est séparable si chaque élément de E est racine d'un polynôme séparable de F[x].",
+  "legende_titre": "Tous les éléments à la fois",
+  "lecture": [
+   "Chaque case bleue de gauche est un élément de ℚ(√2) : a dans ℚ, √2, et a + b√2.",
+   "Chaque flèche orange mène à une case verte : un polynôme de ℚ[x] dont l'élément est racine.",
+   "Ces polynômes sont x − a (degré 1), x² − 2 (degré 2) et un polynôme de degré 2 ou 1."
+  ],
+  "a_voir": "Chaque élément de gauche a son polynôme séparable à droite."
+ },
+ {
+  "code": "63-115",
+  "a_dire": "Un polynôme irréductible est séparable en caractéristique 0 ; sans l'hypothèse « irréductible », la règle échoue : (x − 1)² a une racine répétée.",
+  "legende_titre": "Que devient la règle sans une hypothèse ?",
+  "lecture": [
+   "La boîte verte énonce la règle : irréductible et caractéristique 0 donne séparable.",
+   "La flèche orange retire l'hypothèse « irréductible » : la boîte rouge dit que f n'est plus irréductible.",
+   "La colonne de gauche calcule : f = (x − 1)², sa dérivée f′ = 2(x − 1), puis leur PGCD x − 1, différent de 1 (rouge).",
+   "La boîte rouge du bas conclut : la règle est fausse sans l'hypothèse, f a une racine répétée."
+  ],
+  "a_voir": "Sans l'hypothèse « irréductible », le PGCD n'est pas 1 : f a une racine répétée."
+ },
+ {
+  "code": "63-116",
+  "a_dire": "ℚ(r)/ℚ n'est pas normale : x³ − 2 a la racine r dans ℚ(r), mais pas jr.",
+  "legende_titre": "Une racine réelle, deux qui ne le sont pas",
+  "lecture": [
+   "Le trait bleu épais est ℚ(r), qui ne contient que des nombres réels.",
+   "Le point bleu r est sur ce trait ; les points rouges jr et j²r sont hors du trait.",
+   "Le texte rouge du bas dit que jr et j²r ne sont pas réels, donc absents du corps."
+  ],
+  "a_voir": "Seul r est sur le trait ; les deux autres racines sont dehors."
+ },
+ {
+  "code": "63-117",
+  "a_dire": "Un élément γ de E est primitif si E = F(γ) : un seul élément engendre tout le corps.",
+  "legende_titre": "Un seul élément pour tout engendrer",
+  "lecture": [
+   "Les boîtes sont les corps intermédiaires entre ℚ (en bas) et E (en haut).",
+   "La flèche orange part de γ = √2 et n'atteint que la boîte ℚ(√2).",
+   "La flèche verte part de γ = √2 + √3 et atteint E, la boîte du haut."
+  ],
+  "a_voir": "√2 s'arrête à ℚ(√2), alors que √2 + √3 va jusqu'à E."
+ },
+ {
+  "code": "63-118",
+  "a_dire": "Toute extension finie et séparable a un élément primitif : un élément choisi hors des corps intermédiaires plus petits engendre E.",
+  "legende_titre": "Pourquoi un tel élément existe",
+  "lecture": [
+   "Le cadre en pointillés rassemble les 4 corps plus petits que E : ℚ, ℚ(√3), ℚ(√5) et ℚ(√15).",
+   "La boîte orange est γ = √3 + √5 ; le texte rouge dit qu'il n'est dans aucun des 4.",
+   "La flèche verte mène de γ à la boîte verte E = ℚ(γ)."
+  ],
+  "a_voir": "γ est hors du cadre des petits corps, donc il engendre tout E."
+ },
+ {
+  "code": "63-119",
+  "a_dire": "Pour E = F(α, β) avec F infini, on cherche γ = α + aβ en écartant un nombre fini de valeurs de a ; alors h et g n'ont que β pour racine commune.",
+  "legende_titre": "Choisir a hors des valeurs mauvaises",
+  "lecture": [
+   "En haut, γ = α + aβ ; sur la droite des valeurs de a, les points rouges sont les valeurs à écarter (0 et −√(3/5)), et le point vert a = 1 est un bon choix.",
+   "Une valeur de a est à écarter si α_i + aβ_j = γ avec j ≠ 1 : il n'y en a qu'un nombre fini.",
+   "En bas, la droite du haut porte les racines de g (bleu), −√5 et √5.",
+   "La droite du bas porte les racines de h (orange), √5 et √5 + 2√3 ; le trait vert pointillé relie la racine commune β = √5."
+  ],
+  "a_voir": "Avec a hors des valeurs à écarter, seul β est racine à la fois de g et de h."
+ },
+ {
+  "code": "63-120",
+  "a_dire": "Si E/F est finie, normale et séparable avec E = F(γ), le polynôme minimal p de γ a toutes ses racines distinctes dans E, et E est son corps de décomposition.",
+  "legende_titre": "Un seul générateur, toutes les racines dedans",
+  "lecture": [
+   "Les quatre points sont les racines de p = x⁴ − 10x² + 1 : ±√2 ± √3.",
+   "Le point orange est γ = √2 + √3 ; les trois verts sont les autres racines.",
+   "L'accolade verte dit que toutes sont dans E = ℚ(γ), et elles sont à des places distinctes."
+  ],
+  "a_voir": "Les 4 racines sont distinctes et toutes sous l'accolade E."
+ },
+ {
+  "code": "63-121",
+  "a_dire": "Comme G est contenu dans Gal(E/F), la chaîne [E : F] ≤ |G| ≤ |Gal(E/F)| = [E : F] devient 4 ≤ 4 ≤ 4 = 4 pour ℚ(√2, √3).",
+  "legende_titre": "Une chaîne de trois nombres",
+  "lecture": [
+   "La rangée bleue du haut est le degré [E : ℚ] = 4, avec 4 cases.",
+   "La rangée orange est |G| = 4 ; la rangée bleue du bas est |Gal| = 4 ; chaque rangée a 4 cases.",
+   "Le premier signe ≤ vient du lemme d'Artin, le second de G ⊆ Gal.",
+   "Le trait vert à droite relie la dernière rangée à la première par un signe égal : c'est l'égalité de Judson."
+  ],
+  "a_voir": "Les trois rangées ont la même longueur, donc la chaîne ne laisse aucun écart."
+ },
+ {
+  "code": "63-122",
+  "a_dire": "Le début et la fin de la chaîne valent 4, donc |G| = |Gal(E/F)| ; avec G contenu dans Gal(E/F), on obtient G = Gal(E/F).",
+  "legende_titre": "Un nombre pris entre deux bornes",
+  "lecture": [
+   "La flèche bleue dit 4 ≤ |G| : elle vient de la gauche vers 4.",
+   "La flèche violette dit |G| ≤ 4 : elle vient de la droite vers 4.",
+   "Le point vert, à 4, est la seule place possible pour |G| ; le texte du bas conclut G = Gal."
+  ],
+  "a_voir": "Les deux flèches se rejoignent au point 4 : |G| ne peut être que 4."
+ },
+ {
+  "code": "63-123",
+  "a_dire": "Γ (gamma majuscule) est le nom de l'ensemble des sous-groupes de G.",
+  "legende_titre": "Un nom pour tous les sous-groupes",
+  "lecture": [
+   "L'ovale bleu, marqué Γ, est un ensemble.",
+   "Chaque case dedans est un sous-groupe de G : {1}, G, ⟨σ⟩, ⟨τ⟩ et ⟨στ⟩.",
+   "Le texte du bas donne le nombre d'éléments de Γ : 5."
+  ],
+  "a_voir": "Les éléments de Γ sont eux-mêmes des groupes, au nombre de 5."
+ },
+ {
+  "code": "63-124",
+  "a_dire": "Σ (sigma majuscule) est le nom de l'ensemble des corps intermédiaires K tels que F ⊆ K ⊆ E.",
+  "legende_titre": "Un nom pour tous les corps intermédiaires",
+  "lecture": [
+   "Le texte du haut écrit la condition F ⊆ K ⊆ E.",
+   "L'ovale violet, marqué Σ, contient les corps : F = ℚ, E, ℚ(√3), ℚ(√2) et ℚ(√6).",
+   "Le texte du bas donne le nombre d'éléments de Σ : 5."
+  ],
+  "a_voir": "Σ contient 5 corps, tous entre ℚ et E."
+ },
+ {
+  "code": "63-125",
+  "a_dire": "Pour une extension galoisienne, H ↦ Inv H et K ↦ Gal(E/K) sont deux bijections inverses entre Γ et Σ.",
+  "legende_titre": "Un sous-groupe pour chaque corps, et inversement",
+  "lecture": [
+   "En haut, pour ℚ(√2, √3)/ℚ, l'ovale bleu Γ et l'ovale violet Σ ont chacun 5 éléments, reliés un à un par les flèches vertes.",
+   "En bas, pour ℚ(r)/ℚ, Γ n'a qu'un élément {1} et Σ en a deux, ℚ et ℚ(r).",
+   "Les deux flèches rouges vont des deux corps vers le seul sous-groupe : la correspondance n'est pas une bijection."
+  ],
+  "a_voir": "En haut chaque élément a un seul partenaire ; en bas deux corps tombent sur le même sous-groupe."
+ },
+ {
+  "code": "63-126",
+  "a_dire": "La correspondance renverse l'ordre : H₁ ⊆ H₂ si et seulement si Inv H₂ ⊆ Inv H₁.",
+  "legende_titre": "Plus grand d'un côté, plus petit de l'autre",
+  "lecture": [
+   "À gauche, H₁ = {1, σ} (bleu, en bas) est contenu dans H₂ = G (bleu, en haut).",
+   "À droite, ℚ = Inv H₂ (violet, en bas) est contenu dans ℚ(√3) = Inv H₁ (violet, en haut).",
+   "Les deux flèches vertes se croisent : G en haut à gauche va vers ℚ en bas à droite."
+  ],
+  "a_voir": "Les flèches vertes se croisent : le plus grand groupe donne le plus petit corps."
+ },
+ {
+  "code": "63-127",
+  "a_dire": "|H| = [E : Inv H] et [G : H] = [Inv H : F] : la correspondance transporte les tailles.",
+  "legende_titre": "Les tailles se retrouvent de l'autre côté",
+  "lecture": [
+   "La colonne bleue de gauche est G (4 éléments), H (2 éléments) et {1} (1 élément) ; celle de droite, violette, est ℚ, ℚ(√3) et E, rangée par rangée.",
+   "Entre les deux étages du bas, |H| = 2 (orange) est égal à [E : Inv H] = 2.",
+   "Entre les deux étages du haut, [G : H] = 2 (vert) est égal à [Inv H : F] = 2."
+  ],
+  "a_voir": "Chaque nombre de gauche a un nombre égal en face, de la même couleur."
+ },
+ {
+  "code": "63-128",
+  "a_dire": "H est normal dans G si et seulement si Inv H est galoisienne sur F ; ici H n'est pas normal et Inv H = ℚ(r) n'est pas galoisienne.",
+  "legende_titre": "Deux propriétés qui vont ensemble",
+  "lecture": [
+   "À gauche, la boîte grise est le groupe G à 6 éléments ; le cadre orange entoure H = {1, τ}, qui fixe r.",
+   "À droite, le point vert est r, dans l'ovale bleu du corps ℚ(r) ; les points rouges jr et j²r sont hors de l'ovale.",
+   "Le signe ⇔ relie les deux côtés ; le texte rouge dit « non normal » à gauche et « non galoisienne » à droite."
+  ],
+  "a_voir": "Les deux côtés sont faux ensemble : ni H n'est normal, ni ℚ(r) n'est galoisienne."
+ }
+]

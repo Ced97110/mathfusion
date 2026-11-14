@@ -1,0 +1,276 @@
+[
+ {
+  "code": "53-097",
+  "a_dire": "Le signe p désigne l’un des deux nombres premiers secrets d’Alice, sans en donner la valeur.",
+  "legende_titre": "Une lettre pour un nombre secret",
+  "lecture": [
+   "Les deux cases de gauche sont les deux nombres premiers d’Alice : 5 en bleu, 11 en gris.",
+   "La flèche orange montre que le 5 reçoit un nom : la lettre p, en bleu à droite.",
+   "Sous la lettre, on lit que p vaut 5 dans cet exemple."
+  ],
+  "a_voir": "La lettre p prend la place du nombre 5 : elle dit son rôle, pas sa valeur."
+ },
+ {
+  "code": "53-098",
+  "a_dire": "Le signe q désigne l’autre nombre premier secret, ce qui permet d’écrire le produit n = pq.",
+  "legende_titre": "Deux lettres, un produit",
+  "lecture": [
+   "La case grise est p, égal à 5.",
+   "La case bleue est q, égal à 11 : c’est l’autre nombre premier.",
+   "La case verte est n, égal à 55 : le produit de p par q.",
+   "En bas, la formule n = pq s’écrit sans phrase."
+  ],
+  "a_voir": "Chaque nombre premier a sa lettre, et le produit s’écrit avec les deux lettres."
+ },
+ {
+  "code": "53-099",
+  "a_dire": "Le signe n désigne le produit public des deux nombres premiers, et il donne aussi le nombre de cases de l’horloge.",
+  "legende_titre": "Un nombre public, une horloge",
+  "lecture": [
+   "Le cercle de points bleus est l’horloge : 55 cases, de 0 à 54.",
+   "Le point orange en haut est la case 0.",
+   "La case verte à droite est n, égal à 55, avec le calcul 5 fois 11.",
+   "Le texte sous la case dit que tout le monde connaît ce nombre."
+  ],
+  "a_voir": "Le même nombre n est le produit publié et le nombre de cases de l’horloge."
+ },
+ {
+  "code": "53-100",
+  "a_dire": "Le signe φ(n) désigne le nombre de cases de l’horloge qui ont un inverse ; pour n = 55, c’est 40.",
+  "legende_titre": "Compter les cases qui ont un inverse",
+  "lecture": [
+   "Chaque point du cercle est une case de l’horloge à 55 cases.",
+   "Les 40 points verts sont les cases qui ont un inverse.",
+   "Les 15 points gris sont les cases retirées.",
+   "Au centre, φ(55) = 40 ; à droite, le compte 11 + 5 − 1 = 15 et 55 − 15 = 40."
+  ],
+  "a_voir": "Le signe φ(55) est le nombre de points verts du cercle."
+ },
+ {
+  "code": "53-101",
+  "a_dire": "Le signe e est l’exposant de chiffrement, publié : il dit combien de facteurs égaux au message Bob multiplie.",
+  "legende_titre": "Le nombre publié qui compte les facteurs",
+  "lecture": [
+   "En haut, la clé publiée : la case grise est n, égal à 55, la case bleue est e, égal à 3.",
+   "La flèche orange descend de e vers les trois cases oranges.",
+   "Chaque case orange contient le message 8 ; l’accolade bleue compte 3 facteurs égaux."
+  ],
+  "a_voir": "Le nombre e est le nombre de cases 8 que Bob multiplie."
+ },
+ {
+  "code": "53-102",
+  "a_dire": "Le signe d désigne l’exposant de déchiffrement, gardé privé par Alice ; il est écrit d au lieu de 27 dans la formule c puissance d.",
+  "legende_titre": "Le nom du nombre gardé par Alice",
+  "lecture": [
+   "La case bleue est la lettre d ; la case grise en pointillés est sa valeur cachée, 27.",
+   "À côté, le mot privé rappelle que 27 n’est pas publié.",
+   "La flèche orange mène à la formule c puissance d, en violet.",
+   "La case verte donne le cas chiffré : 17 puissance 27, quand c vaut 17."
+  ],
+  "a_voir": "La formule s’écrit avec d, sans révéler la valeur 27."
+ },
+ {
+  "code": "53-103",
+  "a_dire": "Le signe m désigne le message clair devenu un nombre, pris entre 0 et n − 1 ; ici m vaut 8.",
+  "legende_titre": "Le message est une case de l’horloge",
+  "lecture": [
+   "La droite graduée gris va de 0 à 54, c’est-à-dire les 55 cases.",
+   "Le disque bleu est le message : la case 8.",
+   "La flèche bleue relie la lettre m = 8 à cette case."
+  ],
+  "a_voir": "Le message est un seul nombre, situé entre 0 et 54."
+ },
+ {
+  "code": "53-104",
+  "a_dire": "Le signe c désigne le message chiffré, un nombre de la même horloge que le message ; ici c vaut 17 quand m vaut 8.",
+  "legende_titre": "Deux nombres sur la même horloge",
+  "lecture": [
+   "Le disque gris est le message m, égal à 8.",
+   "Le disque bleu est le chiffré c, égal à 17.",
+   "La flèche orange va de m vers c : c’est le chiffrement.",
+   "En bas, la formule c ≡ m puissance e, modulo n."
+  ],
+  "a_voir": "Le message et le chiffré sont deux cases différentes de la même droite de 0 à 54."
+ },
+ {
+  "code": "53-105",
+  "a_dire": "Le signe m puissance e désigne le produit de e facteurs égaux à m ; pour m = 8 et e = 3, c’est 8 fois 8 fois 8, soit 512.",
+  "legende_titre": "Compter les facteurs d’une puissance",
+  "lecture": [
+   "Les trois cases bleues sont les trois facteurs, tous égaux à 8.",
+   "Les signes × entre elles sont les multiplications : il y en a deux.",
+   "La case verte à droite donne le produit : 512.",
+   "L’accolade bleue compte les facteurs : e, égal à 3."
+  ],
+  "a_voir": "Le petit e compte les facteurs, pas les multiplications : 3 facteurs, 2 multiplications."
+ },
+ {
+  "code": "53-106",
+  "a_dire": "RSA se fait en deux temps : un travail fait une seule fois pour fabriquer les clés, puis un seul calcul léger par message.",
+  "legende_titre": "Deux temps, deux coûts",
+  "lecture": [
+   "Le grand cadre bleu est le premier temps, fait une seule fois : 5 et 11, puis 55 et 40, puis 3 et 27.",
+   "La flèche orange mène au second temps.",
+   "Le cadre vert est le second temps, répété à chaque message : 17 puissance 27, reste par 55, égal à 8."
+  ],
+  "a_voir": "Le travail long est fait une fois ; chaque message ne demande qu’un calcul."
+ },
+ {
+  "code": "53-107",
+  "a_dire": "Les nombres p et q servent seulement à fabriquer d ; ensuite, chiffrer et déchiffrer ne les utilisent plus.",
+  "legende_titre": "Où 5 et 11 servent, et où ils ne servent plus",
+  "lecture": [
+   "En haut, la fabrication : de 5 et 11 (gris) on passe à 55 et 40 (gris), puis à d, égal à 27 (bleu), par les flèches orange.",
+   "En bas, l’usage, en vert : chiffrer avec 55 et 3, déchiffrer avec 27 et 55.",
+   "Ni 5 ni 11 n’apparaissent dans les cases vertes."
+  ],
+  "a_voir": "Les nombres 5 et 11 apparaissent seulement dans la fabrication."
+ },
+ {
+  "code": "53-108",
+  "a_dire": "On compte φ(pq) en retirant les multiples de p et de q, en remettant une fois la case 0 comptée deux fois : pq − p − q + 1 = (p − 1)(q − 1).",
+  "legende_titre": "Compter les cases retirées sur l’horloge à 55",
+  "lecture": [
+   "La grille contient les 55 cases, de 0 à 54, rangées par lignes de 11.",
+   "Les cases bleues sont des multiples de 5 ; les oranges, des multiples de 11.",
+   "La case violette est la case 0 : elle est dans les deux listes, donc retirée deux fois.",
+   "Les 40 cases vertes sont celles qui restent."
+  ],
+  "a_voir": "Il y a 11 + 5 − 1 = 15 cases retirées, car la case 0 ne compte qu’une fois."
+ },
+ {
+  "code": "53-109",
+  "a_dire": "Une case de l’horloge à n cases correspond à un couple de restes ; elle a un inverse exactement quand ses deux restes en ont un, d’où (p − 1)(q − 1) cases.",
+  "legende_titre": "Une case, deux restes",
+  "lecture": [
+   "La case 8 donne les restes 3 par 5 et 8 par 11 : deux cases vertes, donc la case 8 a un inverse.",
+   "La case 10 donne 0 par 5 (case rouge) et 10 par 11 : le 0 n’a pas d’inverse, donc la case 10 non plus.",
+   "En bas, le compte : 4 choix pour la première coordonnée, 10 pour la seconde, soit 40."
+  ],
+  "a_voir": "Une seule coordonnée sans inverse suffit pour que la case n’en ait pas."
+ },
+ {
+  "code": "53-110",
+  "a_dire": "Multiplier un à un demande e − 1 multiplications : le coût suit la valeur de e, donc il est énorme pour un exposant de 300 chiffres.",
+  "legende_titre": "Le coût de la méthode naïve",
+  "lecture": [
+   "La petite barre bleue montre 2 multiplications, pour e égal à 3.",
+   "La barre bleue longue montre 26 multiplications, pour e égal à 27.",
+   "La barre rouge pleine largeur dit que, pour e de 300 chiffres, le nombre de multiplications a lui-même 300 chiffres."
+  ],
+  "a_voir": "La barre grandit avec la valeur de e, et celle de 300 chiffres ne peut pas être faite."
+ },
+ {
+  "code": "53-111",
+  "a_dire": "On peut remplacer un nombre par son reste par n avant de multiplier : le reste final est le même, et les nombres restent petits.",
+  "legende_titre": "Réduire avant de multiplier",
+  "lecture": [
+   "La ligne du haut garde 289 : son carré est 83 521, de reste 31 par 55.",
+   "La ligne du bas remplace 289 par son reste 14 : son carré est 196, de reste 31.",
+   "La flèche orange verticale est la réduction de 289 en 14.",
+   "Les deux cases vertes montrent le même reste, 31."
+  ],
+  "a_voir": "Les deux chemins donnent 31, mais celui du bas manipule de petits nombres."
+ },
+ {
+  "code": "53-112",
+  "a_dire": "Tout entier s’écrit comme une somme de puissances de 2 distinctes : chacune est présente une fois ou absente.",
+  "legende_titre": "Des puissances de 2 toutes différentes",
+  "lecture": [
+   "La première ligne écrit 27 avec 16, 8, 2 et 1, en vert : quatre puissances différentes.",
+   "La deuxième ligne écrit 6 avec 4 et 2, en vert.",
+   "La troisième ligne, en rouge, écrit aussi 6 avec trois fois la même puissance, 2 : ce n’est pas la forme du fait."
+  ],
+  "a_voir": "Dans l’écriture voulue, aucune puissance de 2 n’apparaît deux fois."
+ },
+ {
+  "code": "53-113",
+  "a_dire": "L’écriture en base 2 est une écriture de position où chaque case vaut deux fois la précédente et ne contient que 0 ou 1.",
+  "legende_titre": "Deux écritures de position",
+  "lecture": [
+   "En violet, l’écriture habituelle de 27 : deux cases, chacune valant dix fois la précédente.",
+   "En bleu, l’écriture de 27 en base 2 : 11011, cinq cases.",
+   "Sous chaque case bleue, sa valeur : 16, 8, 4, 2, 1, chacune le double de la suivante."
+  ],
+  "a_voir": "Même nombre 27, mais la base change la valeur de chaque case."
+ },
+ {
+  "code": "53-114",
+  "a_dire": "On écrit 27 en binaire en prenant les puissances de 2 utilisées : 16, 8, 2 et 1 donnent 1, la case 4 donne 0, d’où 11011.",
+  "legende_titre": "Lire 27 en binaire",
+  "lecture": [
+   "Au-dessus de chaque case, la valeur de la case : 16, 8, 4, 2, 1.",
+   "Les cases vertes contiennent 1 : la valeur est utilisée. La case grise en pointillés contient 0 : elle n’est pas utilisée.",
+   "En bas, la somme des cases utilisées : 16 + 8 + 2 + 1 = 27."
+  ],
+  "a_voir": "Les chiffres 1 désignent les puissances de 2 qui s’additionnent pour faire 27."
+ },
+ {
+  "code": "53-115",
+  "a_dire": "Un bit est un chiffre de l’écriture binaire : il a deux valeurs, 0 ou 1, et dit si une puissance de 2 est utilisée.",
+  "legende_titre": "Un chiffre à deux valeurs",
+  "lecture": [
+   "En haut, les cinq bits de 11011, en bleu.",
+   "Le premier bit, 1, dit que le 16 est utilisé.",
+   "En bas, trois cases comptent les valeurs possibles : une lettre en a 26, un chiffre habituel 10, un bit 2 (en bleu)."
+  ],
+  "a_voir": "Un bit se distingue de ses voisins par le nombre de valeurs : seulement deux."
+ },
+ {
+  "code": "53-116",
+  "a_dire": "La méthode des carrés successifs calcule un reste de puissance avec peu de multiplications : 7 au lieu de 26 pour 17 puissance 27.",
+  "legende_titre": "26 multiplications ou 7",
+  "lecture": [
+   "La ligne de 26 petites cases grises représente les 26 multiplications de la méthode naïve.",
+   "En dessous, 7 cases : 4 oranges pour les carrés et 3 vertes pour les produits.",
+   "Le titre rappelle le calcul : 17 puissance 27, modulo 55."
+  ],
+  "a_voir": "La rangée de 7 cases est beaucoup plus courte que celle de 26."
+ },
+ {
+  "code": "53-117",
+  "a_dire": "L’étape 1 retire la plus grande puissance de 2 possible, jusqu’à ce que le reste vaille 0 ; pour 27 on obtient 11011.",
+  "legende_titre": "Écrire 27 en binaire, pas à pas",
+  "lecture": [
+   "Les trois premières cases orange sont des soustractions : 27 − 16, 11 − 8, 3 − 2.",
+   "La case verte, 1 − 1 = 0, est la dernière : le reste vaut 0, on s’arrête.",
+   "À droite, les puissances retirées (16, 8, 2, 1), le 4 non retiré donc 0, et le résultat 11011 en bleu."
+  ],
+  "a_voir": "On s’arrête quand le reste est 0 ; les bits se lisent ensuite."
+ },
+ {
+  "code": "53-118",
+  "a_dire": "Chaque ligne est le carré de la précédente, avec reste par 55 : 17, 14, 31, 26, 16 ; l’exposant double à chaque ligne.",
+  "legende_titre": "De ligne en ligne : on met au carré",
+  "lecture": [
+   "Les cinq cases bleues sont les lignes : 17, 14, 31, 26 et 16.",
+   "Chaque flèche orange est une action : mettre au carré, puis garder le reste par 55.",
+   "Sous chaque case, la puissance de 17 qu’elle représente : exposants 1, 2, 4, 8, 16.",
+   "En bas, la formule : le carré de la ligne k est la ligne k + 1."
+  ],
+  "a_voir": "Chaque flèche double l’exposant."
+ },
+ {
+  "code": "53-119",
+  "a_dire": "On multiplie seulement les lignes dont le bit vaut 1, car leurs exposants s’ajoutent pour donner l’exposant voulu ; en prendre une autre donne un faux résultat.",
+  "legende_titre": "Choisir les lignes avec les bits",
+  "lecture": [
+   "Les cinq cases sont les lignes 17, 14, 31, 26 et 16, avec leur bit dessous.",
+   "Les cases vertes ont le bit 1 : on les multiplie. Leurs exposants font 1 + 2 + 8 + 16 = 27.",
+   "La case rouge en pointillés, 31, a le bit 0 : la multiplier donnerait l’exposant 31, donc un résultat faux.",
+   "En bas, le produit des lignes vertes donne 8."
+  ],
+  "a_voir": "Seules les lignes au bit 1 sont multipliées ; la ligne rouge ne l’est pas."
+ },
+ {
+  "code": "53-120",
+  "a_dire": "Pour un exposant de k bits, il faut k − 1 carrés et au plus k − 1 produits ; le coût dépend du nombre de bits.",
+  "legende_titre": "Compter carrés et produits",
+  "lecture": [
+   "Chaque ligne bleue écrit l’exposant en bits : 11011 pour 27 (k = 5) et 11 pour 3 (k = 2).",
+   "Les cases oranges sont les carrés : 4 pour k = 5, 1 pour k = 2, soit k − 1.",
+   "Les cases vertes sont les produits : 3 pour 27 (quatre bits à 1), 1 pour 3 (deux bits à 1), toujours au plus k − 1."
+  ],
+  "a_voir": "Le nombre de carrés est toujours le nombre de bits moins 1."
+ }
+]

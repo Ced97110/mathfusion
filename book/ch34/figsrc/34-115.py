@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+x0, u, hb = 6, 58, 9
+text(ax, 8, 61, 'addition (la tentative)', 'limite', 'm', ha='left')
+box(ax, x0, 46, 0.5 * u, hb, 'limite', label='0,5', size='s', r=0.5)
+box(ax, x0 + 0.5 * u, 46, 0.7071 * u, hb, 'limite', label='0,7071', size='s', r=0.5)
+text(ax, x0 + 1.2071 * u + 1, 50.5, '1,2071', 'limite', 'm', ha='left', weight='bold')
+text(ax, 8, 38, 'produits (la formule)', 'resultat', 'm', ha='left')
+# pieces d'origine en pointille, pieces raccourcies pleines
+box(ax, x0, 13.5, 0.5 * u, hb + 5, 'fixe', fill=False, dash=True, r=0.5)
+box(ax, x0 + 0.3536 * u, 14.5, 0.7071 * u, hb + 3, 'fixe', fill=False, dash=True, r=0.5)
+text(ax, x0 + 0.25 * u, 30, '0,5', 'fixe', 's')
+text(ax, x0 + 0.7071 * u, 30, '0,7071', 'fixe', 's')
+box(ax, x0, 16, 0.3536 * u, hb, 'sujet', label='0,3536', size='s', r=0.5)
+box(ax, x0 + 0.3536 * u, 16, 0.6124 * u, hb, 'autre', label='0,6124', size='s', r=0.5)
+text(ax, x0 + 0.3536 * u / 2, 11, r'$\times$ 0,7071', 'varie', 's')
+text(ax, x0 + 0.3536 * u + 0.6124 * u / 2, 11, r'$\times$ 0,866', 'varie', 's')
+text(ax, x0 + u + 2, 31, '0,9659', 'resultat', 'm', ha='left', weight='bold')
+line(ax, [(x0 + u, 7), (x0 + u, 57)], 'encre', lw=1.0, dash=True)
+text(ax, x0 + u, 3, 'trait du 1', 'encre', 's')
+save(fig, '34-115')

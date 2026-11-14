@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 6, 56, 76, 12, 'sujet', fill=True, label=r'deux inconnues : $x$ et $y$')
+arrow(ax, (44, 56), (44, 48), 'varie', lw=1.2)
+box(ax, 6, 34, 18, 12, 'varie', fill=True, label=r'$-y$', size='l')
+text(ax, 30, 40, '+', 'fixe', 'l')
+box(ax, 36, 34, 18, 12, 'varie', fill=True, label=r'$y$', size='l')
+text(ax, 60, 40, '=', 'fixe', 'l')
+box(ax, 66, 34, 16, 12, 'fixe', fill=True, label=r'$0$', size='l')
+text(ax, 44, 29, r'$y$ est éliminée', 'varie', 'm')
+arrow(ax, (44, 25), (44, 19), 'varie', lw=1.2)
+box(ax, 6, 6, 76, 12, 'resultat', fill=True, label=r'une seule inconnue : $x$')
+save(fig, '24-057')

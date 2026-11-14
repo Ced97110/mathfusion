@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+f=numberline(ax,6,78,26,0,24,arrow_right=False,labels=False)
+for v in (0,12,24):
+    disc(ax,f(v),26,1.5,'fixe'); text(ax,f(v),20.5,str(v),'fixe','s')
+text(ax,f(12),56,'multiples de 12 : 𝐼'.replace('𝐼','$I$'),'fixe','s')
+disc(ax,f(5),26,1.5,'sujet'); text(ax,f(5),31,'5','sujet','m')
+disc(ax,f(17),26,1.5,'resultat'); text(ax,f(16.5),31,'17','resultat','m')
+disc(ax,f(18),26,1.5,'limite')
+text(ax,f(19.6),31,'18','limite','m')
+arrow(ax,(f(5),33),(f(17),33),'resultat',curve=-0.35)
+text(ax,f(11),49,r'$17-5=12\in I$','resultat','m')
+text(ax,f(11.5),3,r'$18-5=13\notin I$','limite','m')
+arrow(ax,(f(5),15),(f(18),15),'limite',curve=0.35)
+save(fig,'52-006')

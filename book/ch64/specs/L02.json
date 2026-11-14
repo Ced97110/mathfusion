@@ -1,0 +1,356 @@
+[
+ {
+  "code": "64-033",
+  "a_dire": "Une suite normale au sens de Judson demande que chaque terme soit normal dans G tout entier, pas seulement dans le terme d’avant.",
+  "legende_titre": "Normal dans le précédent, ou dans G entier ?",
+  "lecture": [
+   "Les quatre cases bleue et grises sont les tailles 8, 4, 2, 1 de la suite ; la case bleue est le groupe G.",
+   "La première rangée de coches vertes dit que chaque terme est normal dans le terme juste avant lui.",
+   "La seconde rangée teste chaque terme dans G tout entier : deux coches vertes et une croix rouge sous le terme de taille 2."
+  ],
+  "a_voir": "La croix rouge montre que la condition forte échoue pour le terme de taille 2."
+ },
+ {
+  "code": "64-034",
+  "a_dire": "La longueur d’une suite est le nombre de ses inclusions strictes, donc de ses facteurs, et non le nombre de ses termes.",
+  "legende_titre": "Compter les passages, pas les groupes",
+  "lecture": [
+   "Les quatre cases bleues sont les termes de tailles 24, 12, 4, 1 ; l’accolade grise du haut les compte : 4 termes.",
+   "Chaque flèche orange est un passage d’un terme au suivant ; ils sont numérotés 1, 2, 3.",
+   "L’accolade verte du bas compte ces passages : la longueur est 3."
+  ],
+  "a_voir": "Il y a 4 cases mais seulement 3 flèches, et la longueur compte les flèches."
+ },
+ {
+  "code": "64-035",
+  "a_dire": "La suite D4 ⊃ V ⊃ W ⊃ {e} est sous-normale, mais elle n’est pas normale, car W n’est pas normal dans D4.",
+  "legende_titre": "Une suite qui passe le test faible, pas le fort",
+  "lecture": [
+   "Les quatre cases sont D4 (bleue, 8 éléments), V (4), W (2) et {e} (1), reliées par le signe « contient ».",
+   "L’accolade verte du bas couvre toute la suite : chaque terme est normal dans le précédent, donc elle est sous-normale.",
+   "L’accolade rouge du haut couvre D4 jusqu’à W : W n’est pas normal dans D4."
+  ],
+  "a_voir": "L’accolade verte et l’accolade rouge disent le contraire sur la même suite : seule la condition forte échoue."
+ },
+ {
+  "code": "64-036",
+  "a_dire": "Conjuguer (12)(34) par la rotation ρ donne (14)(23), qui n’est pas dans W ; donc W n’est pas normal dans D4.",
+  "legende_titre": "Une rotation fait sortir (12)(34) de W",
+  "lecture": [
+   "Le carré de gauche porte les sommets 1 à 4 ; les deux flèches bleues relient 1 à 2 et 3 à 4 : c’est (12)(34), qui est dans W.",
+   "La flèche orange du milieu est le renommage par la rotation ρ = (1234).",
+   "Dans le carré de droite, les deux flèches rouges relient 2 à 3 et 1 à 4 : c’est (14)(23), qui n’est pas dans W."
+  ],
+  "a_voir": "Les deux flèches passent des côtés du bas et du haut aux côtés de gauche et de droite : le résultat sort de W."
+ },
+ {
+  "code": "64-037",
+  "a_dire": "Dans un groupe abélien, ajouter puis retirer le même déplacement ne change rien, donc tout sous-groupe est normal.",
+  "legende_titre": "Pourquoi la différence disparaît ici",
+  "lecture": [
+   "La droite graduée de 0 à 24 représente l’horloge à 24 heures.",
+   "La flèche orange du haut avance de 5, la flèche bleue avance de 2 : on arrive à 7.",
+   "La flèche orange du bas retire 5 : on revient sur 2, le point vert, comme si on avait seulement ajouté 2.",
+   "La phrase verte du bas donne la conclusion : tout sous-groupe est normal."
+  ],
+  "a_voir": "Le point vert est sur 2 : le déplacement de 5 n’a rien changé, donc tout sous-groupe est normal."
+ },
+ {
+  "code": "64-038",
+  "a_dire": "Les deux suites de Judson sont dans des groupes abéliens ; elles ne montrent donc pas la différence entre suite sous-normale et suite normale.",
+  "legende_titre": "Deux suites qui ne montrent pas la différence",
+  "lecture": [
+   "La rangée bleue est la suite ℤ ⊃ 9ℤ ⊃ 45ℤ ⊃ 180ℤ ⊃ {0}.",
+   "La rangée violette est la suite ℤ/24 ⊃ ⟨2⟩ ⊃ ⟨6⟩ ⊃ ⟨12⟩ ⊃ {0} ; ⟨2⟩ est l'ensemble des multiples de 2.",
+   "Chaque rangée est dans un groupe abélien ; la case verte du bas dit que, dans un groupe abélien, tout terme est normal dans G."
+  ],
+  "a_voir": "Les deux rangées sont dans des groupes abéliens : tout terme y est normal, donc elles ne montrent pas la différence."
+ },
+ {
+  "code": "64-198",
+  "a_dire": "La suite de composition de S4 est sous-normale mais pas normale, car la rotation envoie (12)(34) sur (14)(23), hors de W.",
+  "legende_titre": "Le même W dans la suite de S4",
+  "lecture": [
+   "Les cinq cases sont S4 (bleue, 24 éléments), A4 (12), V (4), W (2) et {e} (1).",
+   "L’accolade verte du bas couvre toute la suite : chaque terme est normal dans le précédent.",
+   "L’accolade rouge du haut couvre S4 jusqu’à W : le texte rouge du bas montre que ρ envoie (12)(34) sur (14)(23), qui n’est pas dans W."
+  ],
+  "a_voir": "Le même W que dans D4 sort de lui-même quand on conjugue par ρ."
+ },
+ {
+  "code": "64-039",
+  "a_dire": "Une suite en raffine une autre quand elle garde tous ses termes et en intercale d’autres.",
+  "legende_titre": "Garder tous les termes et en ajouter",
+  "lecture": [
+   "La rangée du haut est la suite 24, 12, 4, 1 ; la case en pointillés orange est une place libre.",
+   "La rangée du bas reprend les quatre mêmes termes, reliés par des traits gris, et ajoute la case orange 2.",
+   "Les facteurs passent de 2, 3, 4 à 2, 3, 2, 2 : le facteur 4 est remplacé par deux facteurs 2."
+  ],
+  "a_voir": "Les quatre cases bleues sont encore là en bas ; seule la case orange est nouvelle."
+ },
+ {
+  "code": "64-040",
+  "a_dire": "Raffiner une suite revient à remplacer un facteur par plusieurs facteurs plus petits ; les autres facteurs ne changent pas.",
+  "legende_titre": "Intercaler 3ℤ et 90ℤ",
+  "lecture": [
+   "La rangée du haut est la suite ℤ ⊃ 9ℤ ⊃ 45ℤ ⊃ 180ℤ ⊃ {0}.",
+   "La rangée du bas ajoute 3ℤ et 90ℤ (cases orange) aux cinq termes d’avant, reliés par des traits gris.",
+   "Sous la rangée du bas, les accolades orange montrent que le facteur 9 devient 3 × 3 et le facteur 4 devient 2 × 2 ; le facteur 5 ne change pas."
+  ],
+  "a_voir": "Chaque case orange coupe un facteur en deux plus petits, les autres facteurs restent."
+ },
+ {
+  "code": "64-041",
+  "a_dire": "Deux suites sont isomorphes quand leurs facteurs s’apparient un à un, même si leurs termes sont différents.",
+  "legende_titre": "Termes différents, facteurs appariés",
+  "lecture": [
+   "La rangée bleue passe par les heures paires {0, 2, 4} ; la rangée violette passe par {0, 3}.",
+   "Les ronds au milieu sont les facteurs : 2 puis 3 en haut, 3 puis 2 en bas.",
+   "Chaque trait relie deux facteurs de même taille : le 2 orange au 2 orange, le 3 violet au 3 violet."
+  ],
+  "a_voir": "Les traits se croisent : l’ordre des facteurs ne compte pas."
+ },
+ {
+  "code": "64-042",
+  "a_dire": "Dans ℤ/60, les deux suites ont pour facteurs 3, 5, 4 et 4, 5, 3 : ce sont les mêmes tailles dans un autre ordre.",
+  "legende_titre": "Deux suites de ℤ/60 aux mêmes facteurs",
+  "lecture": [
+   "La grande case grise de gauche est ℤ/60 (taille 60), celle de droite est {0} (taille 1) : elles sont communes aux deux suites.",
+   "La rangée bleue passe par les tailles 20 puis 4 ; la rangée violette passe par les tailles 15 puis 3.",
+   "Les ronds sont les rapports : 3, 5, 4 en haut et 4, 5, 3 en bas.",
+   "Un trait de même couleur relie deux ronds de même nombre : orange pour 3, violet pour 4, vert pour 5."
+  ],
+  "a_voir": "Chaque nombre du haut a son égal en bas, dans un autre ordre : mêmes facteurs 3, 4, 5."
+ },
+ {
+  "code": "64-043",
+  "a_dire": "Les multiples de 3 sur l’horloge à 60 heures sont 20, car une place sur trois en est un : 60/3 = 20.",
+  "legende_titre": "Compter une place sur trois",
+  "lecture": [
+   "Les 60 cases sont les heures de 0 à 59, rangées en 4 rangées de 15.",
+   "Les cases bleues sont les multiples de 3 : 0, 3, 6, 9, 12 dans la première rangée, et ainsi de suite jusqu’à 57.",
+   "Chaque rangée a 5 cases bleues, donc 4 rangées donnent 20."
+  ],
+  "a_voir": "Une case sur trois est bleue, donc le nombre de cases bleues est 60/3 = 20."
+ },
+ {
+  "code": "64-044",
+  "a_dire": "Le signe S_n désigne le groupe des permutations de n objets ; il a n! éléments, par exemple 6 pour n = 3 et 24 pour n = 4.",
+  "legende_titre": "Toutes les files de n objets",
+  "lecture": [
+   "Les trois ronds orange sont les 3 choix possibles pour la première place.",
+   "Chaque case violette contient les 2 files possibles qui restent, soit 6 files en tout.",
+   "Le calcul en vert donne 3 × 2 × 1 = 6, puis 4 × 3 × 2 × 1 = 24 pour quatre objets."
+  ],
+  "a_voir": "On multiplie le nombre de choix à chaque place, et le résultat est n!."
+ },
+ {
+  "code": "64-045",
+  "a_dire": "A_n est le sous-groupe des permutations paires de S_n, et il a la moitié de ses éléments : n!/2.",
+  "legende_titre": "Les permutations paires, la moitié",
+  "lecture": [
+   "La rangée de 24 petites cases est S4 : 12 cases bleues (A4, paires) et 12 cases grises (impaires).",
+   "Les deux grandes cases du bas sont S5, soit 120 files : 60 bleues pour A5 et 60 grises.",
+   "Dans les deux cas, la case bleue prend exactement la moitié de la largeur."
+  ],
+  "a_voir": "La partie bleue est toujours la moitié : 12 sur 24, 60 sur 120."
+ },
+ {
+  "code": "64-046",
+  "a_dire": "Le signe (123) désigne le 3-cycle qui envoie 1 sur 2, 2 sur 3, 3 sur 1 ; il est pair car (123) = (13)(12), soit deux échanges.",
+  "legende_titre": "Le cycle (123) et deux échanges",
+  "lecture": [
+   "À gauche, trois ronds numérotés 1, 2, 3 et trois flèches orange : 1 va sur 2, 2 sur 3, 3 sur 1.",
+   "À droite, la rangée du haut échange les places 1 et 2 (flèche bleue).",
+   "La rangée du bas échange ensuite les places 1 et 3 (flèche violette courbe) ; ces deux échanges donnent le même résultat que le cycle."
+  ],
+  "a_voir": "Deux échanges suffisent à faire le cycle, donc il est pair."
+ },
+ {
+  "code": "64-047",
+  "a_dire": "Le signe G ⊃ H se lit « G contient H » ; il permet d’écrire toute une suite sur une ligne, et dans une suite normale H est en plus normal dans G.",
+  "legende_titre": "Un signe pour dire « contient »",
+  "lecture": [
+   "En haut, G (bleu) est le groupe de gauche, le signe orange ⊃ dit « contient », H (violet) est le groupe de droite.",
+   "Chaque flèche relie un morceau de l’écriture à son sens.",
+   "La ligne du milieu écrit toute la suite 24 ⊃ 12 ⊃ 4 ⊃ 1 ; le texte vert du bas rappelle la promesse d’une suite normale."
+  ],
+  "a_voir": "Le signe seul dit « contient » ; la normalité s’ajoute dans une suite normale."
+ },
+ {
+  "code": "64-048",
+  "a_dire": "G/H est le groupe dont les éléments sont les classes gH ; il a |G|/|H| éléments.",
+  "legende_titre": "Regrouper les éléments en classes",
+  "lecture": [
+   "La rangée bleue est H : les 12 heures paires, de 0 à 22.",
+   "La rangée orange est l’autre classe : les 12 heures impaires, de 1 à 23.",
+   "Chaque rangée devient une seule case à droite, 0 + H et 1 + H : cela fait 24/12 = 2 éléments."
+  ],
+  "a_voir": "Douze heures par classe donnent seulement deux cases à droite."
+ },
+ {
+  "code": "64-049",
+  "a_dire": "Le signe ≅ dit que deux groupes ont la même table à renommage près.",
+  "legende_titre": "Même table, autres noms",
+  "lecture": [
+   "Le tableau de gauche est la table d’addition de l’horloge à 3 heures ; celui de droite est la table des rotations.",
+   "Chaque couleur est un élément : gris pour 0, bleu pour 1, violet pour 2, et les deux tableaux ont les mêmes couleurs aux mêmes places.",
+   "La légende du bas donne le renommage : 0 devient ne rien faire, 1 un tiers de tour, 2 deux tiers de tour."
+  ],
+  "a_voir": "Les deux tableaux ont exactement le même dessin : seuls les noms changent."
+ },
+ {
+  "code": "64-050",
+  "a_dire": "Le signe ℤ/n désigne l’horloge à n heures : un groupe de n éléments, atteint en ajoutant 1, où l’ordre des additions ne compte pas.",
+  "legende_titre": "L’horloge à n heures",
+  "lecture": [
+   "Les 12 ronds sont les heures de l’horloge à 12 heures ; le rond bleu est 9 et le rond vert est 2.",
+   "Les cinq flèches orange avancent de 1 en 1 depuis 9 : cela fait 9 + 5 = 14, qui revient à 2.",
+   "Les textes de droite disent que 5 + 9 donne aussi 2, et que l’ordre est libre."
+  ],
+  "a_voir": "Après 11 on revient à 0 : 9 + 5 tombe sur 2 dans les deux ordres."
+ },
+ {
+  "code": "64-051",
+  "a_dire": "|G| est le nombre d’éléments de G, son ordre ; c’est un nombre qu’on peut diviser.",
+  "legende_titre": "Un nom court pour la taille d’un groupe",
+  "lecture": [
+   "Le cadre bleu est G : il contient 24 ronds, un par élément.",
+   "Le cadre violet est H : il contient 12 ronds.",
+   "Sous chaque cadre est écrit son ordre, |G| = 24 et |H| = 12, et le texte vert les divise : 24/12 = 2."
+  ],
+  "a_voir": "Compter les ronds donne l’ordre, et on peut ensuite diviser ces nombres."
+ },
+ {
+  "code": "64-052",
+  "a_dire": "Le signe nℤ désigne les multiples de n pris parmi tous les entiers, positifs ou négatifs ; 9ℤ est l’ensemble des multiples de 9.",
+  "legende_titre": "Tous les multiples de 9",
+  "lecture": [
+   "Les petits traits de la droite sont tous les entiers de ℤ, de −27 à 36.",
+   "Les ronds bleus sont les multiples de 9 : −27, −18, −9, 0, 9, 18, 27, 36.",
+   "Les arcs orange partent de 0 : 9 × 1 tombe sur 9, 9 × 2 sur 18, 9 × (−1) sur −9."
+  ],
+  "a_voir": "Un rond tous les 9 traits, des deux côtés de 0."
+ },
+ {
+  "code": "64-053",
+  "a_dire": "Le signe ⟨a⟩ désigne le sous-groupe engendré par a ; ⟨2⟩ sur l’horloge à 24 heures est l’ensemble des heures paires.",
+  "legende_titre": "Tout ce qu’on obtient en répétant 2",
+  "lecture": [
+   "Les 24 points du cercle sont les heures de l’horloge ; les grands ronds bleus sont les heures paires.",
+   "Les flèches orange vont de 2 en 2 : 0, 2, 4, 6, et ainsi de suite jusqu’à 22, puis retour à 0.",
+   "Le signe ⟨2⟩ au centre nomme cet ensemble."
+  ],
+  "a_voir": "En répétant +2 on ne visite que les heures paires."
+ },
+ {
+  "code": "64-054",
+  "a_dire": "D4 désigne les 8 symétries du carré ; chacune permute les 4 sommets, donc D4 est un sous-groupe de S4.",
+  "legende_titre": "Les 8 symétries du carré",
+  "lecture": [
+   "Le carré bleu a les sommets numérotés 1 à 4 ; la flèche orange courbe est la rotation : 4 rotations.",
+   "Les 4 traits violets en pointillés sont les axes : 2 diagonales et 2 médianes.",
+   "À droite, la case bleue D4 (8 éléments) est dans la grande case grise S4 (24 permutations)."
+  ],
+  "a_voir": "4 rotations et 4 axes font 8 symétries, qui sont des permutations des 4 sommets."
+ },
+ {
+  "code": "64-055",
+  "a_dire": "Le signe (a1 a2 … ar) est le cycle qui envoie chaque objet sur le suivant et le dernier sur le premier ; r est sa longueur.",
+  "legende_titre": "Un cycle écrit en une seule ligne",
+  "lecture": [
+   "Les cinq ronds bleus sont les places 1 à 5 ; les cinq flèches orange vont de chaque place à la suivante, et la dernière revient à 1.",
+   "En haut à droite, l’écriture générale (a1 a2 … ar) ; en dessous, le cas des cinq places, (1 2 3 4 5).",
+   "Le texte vert donne la longueur : r = 5 objets déplacés."
+  ],
+  "a_voir": "Cinq flèches se résument en une seule parenthèse."
+ },
+ {
+  "code": "64-056",
+  "a_dire": "F(d) est le plus petit corps qui contient F et d : on part de F, on ajoute d, puis seulement ce que les quatre opérations forcent.",
+  "legende_titre": "Ajouter d à F, et rien de plus",
+  "lecture": [
+   "À gauche, la case bleue est le corps F (les fractions) et le rond orange est le nombre d, ici la racine de 5.",
+   "La flèche orange « adjoindre » mène à la grande case verte.",
+   "Dans la case verte, F et d sont encore là, avec en pointillés ce que les opérations forcent en plus."
+  ],
+  "a_voir": "La case verte contient F, d, et seulement ce qu’il faut de plus."
+ },
+ {
+  "code": "64-057",
+  "a_dire": "[E : F] est le nombre de nombres de F nécessaires pour décrire un nombre de E ; ici il vaut 2.",
+  "legende_titre": "Combien de fractions pour décrire un nombre",
+  "lecture": [
+   "La ligne du haut écrit un nombre du corps E sous la forme a fois 1, plus b fois racine de 5.",
+   "Les deux cases bleues a et b sont les deux fractions, prises dans F ; l’accolade les compte.",
+   "Le résultat vert est [E : F] = 2."
+  ],
+  "a_voir": "Deux cases a et b suffisent pour décrire un nombre de E."
+ },
+ {
+  "code": "64-058",
+  "a_dire": "Gal(E/F) est le groupe des automorphismes de E qui fixent F ; pour les fractions et la racine de 5 il a 2 éléments.",
+  "legende_titre": "Les renommages qui laissent F en place",
+  "lecture": [
+   "La flèche du haut ne change rien : la racine de 5 reste la racine de 5.",
+   "La flèche du bas remplace la racine de 5 par son opposé.",
+   "La case grise rappelle que les fractions ne bougent pas, et la case verte réunit les deux renommages : 2 éléments."
+  ],
+  "a_voir": "Deux flèches donnent deux renommages, donc le groupe a 2 éléments."
+ },
+ {
+  "code": "64-059",
+  "a_dire": "Pour tester la résolubilité, on remplace le groupe par son groupe dérivé jusqu’à obtenir {e} ; si la suite ne change plus avant, le groupe n’est pas résoluble.",
+  "legende_titre": "Quand la suite des groupes dérivés s’arrête",
+  "lecture": [
+   "Les trois cases du haut sont les tailles 6, 3, 1 : G, puis son groupe dérivé, puis le groupe dérivé de celui-là.",
+   "Les flèches orange « dérivé » font passer d’une case à la suivante.",
+   "La case verte est {e} : on s’arrête et le groupe est résoluble ; la case rouge en pointillés montre le cas où la suite ne change plus."
+  ],
+  "a_voir": "On s’arrête dès qu’on atteint la case verte {e}."
+ },
+ {
+  "code": "64-060",
+  "a_dire": "Le commutateur (g, h) = g⁻¹ h⁻¹ g h est un élément du groupe qui vaut e exactement quand g et h commutent.",
+  "legende_titre": "Un nom pour l’écart entre gh et hg",
+  "lecture": [
+   "Les quatre cases en haut sont le produit de quatre éléments : g⁻¹ et g en bleu, h⁻¹ et h en orange.",
+   "L’accolade les réunit sous le nom de commutateur (g, h).",
+   "À gauche, si gh = hg, le commutateur vaut e (vert) ; à droite, si gh ≠ hg, il est différent de e (orange)."
+  ],
+  "a_voir": "Le commutateur est un élément qu’on peut manipuler et qui vaut e quand l’ordre ne compte pas."
+ },
+ {
+  "code": "64-061",
+  "a_dire": "Le produit à quatre éléments a cette forme car gh = hg·(g, h) : g g⁻¹ et h h⁻¹ se simplifient, et (g, h) = e exactement quand g et h commutent.",
+  "legende_titre": "Pourquoi gh = hg·(g, h)",
+  "lecture": [
+   "La rangée du haut écrit hg suivi du commutateur (g, h) = g⁻¹ h⁻¹ g h, deux accolades les séparent.",
+   "Les cases orange g et g⁻¹ se simplifient en e : il reste h, h⁻¹, g, h.",
+   "Les cases orange h et h⁻¹ se simplifient à leur tour : il reste g et h en vert."
+  ],
+  "a_voir": "Après deux simplifications il ne reste que gh."
+ },
+ {
+  "code": "64-062",
+  "a_dire": "Le commutateur mesure l’écart entre gh et hg : il vaut e quand il n’y a aucun écart, et un groupe est abélien quand tous ses commutateurs valent e.",
+  "legende_titre": "Mesurer l’écart entre deux ordres",
+  "lecture": [
+   "À gauche, sur l’horloge à 12 heures, 5 puis 9 et 9 puis 5 donnent 2 heures : le signe vert = dit qu’il n’y a pas d’écart.",
+   "À droite, avec les files de 3, échanger 1-3 puis 1-2 met l’élève en place 3, et dans l’autre ordre en place 2 : le signe rouge ≠.",
+   "En bas, l’écart est e à gauche et différent de e à droite."
+  ],
+  "a_voir": "Même résultat dans les deux ordres à gauche, résultats différents à droite."
+ },
+ {
+  "code": "64-063",
+  "a_dire": "Le groupe dérivé G′ est le sous-groupe engendré par tous les commutateurs ; il va de {e} (groupe abélien) jusqu’à G, et mesure à quel point G n’est pas abélien.",
+  "legende_titre": "Le groupe dérivé entre {e} et G",
+  "lecture": [
+   "Chaque grande barre représente tout le groupe G ; la partie bleue est G′.",
+   "Pour un groupe abélien, la partie bleue est presque vide : G′ = {e}.",
+   "Pour les files de 3 (6 éléments), la partie bleue est la moitié : G′ = A3, 3 éléments ; dans la dernière barre, elle est pleine : G′ = G."
+  ],
+  "a_voir": "Plus le groupe est loin d’être abélien, plus la partie bleue est grande."
+ }
+]

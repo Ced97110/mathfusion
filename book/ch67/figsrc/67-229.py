@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 2, 56, 38, 10, 'sujet', label='anneau fini', size='s')
+box(ax, 2, 42, 38, 10, 'sujet', label='tout non nul inversible', size='s')
+box(ax, 2, 28, 38, 10, 'fixe', label=r'$ab=ba$ non supposé', size='s', dash=True)
+arrow(ax, (41, 47), (57, 47), 'resultat', lw=1.3)
+text(ax, 49, 52, 'Wedderburn', 'resultat', 's')
+box(ax, 58, 28, 28, 38, 'resultat')
+text(ax, 72, 56, r'$ab=ba$', 'resultat', 'm')
+text(ax, 72, 46, 'toujours', 'resultat', 's')
+text(ax, 72, 36, r"c'est un $\mathbb{F}_q$", 'resultat', 's')
+text(ax, 44, 14, 'un corps gauche fini est un corps', 'encre', 's')
+save(fig, '67-229')

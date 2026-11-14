@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 51, r'algèbre $A$ sur $F$', 'sujet', 'l', weight='bold')
+disc(ax, 29, 31, 19, 'autre'); disc(ax, 59, 31, 19, 'varie')
+text(ax, 20, 36, 'anneau', 'autre', 'm')
+text(ax, 20, 27, r'$M \times M$', 'autre', 's')
+text(ax, 68, 36, 'espace', 'varie', 'm'); text(ax, 68, 31, 'vectoriel', 'varie', 'm')
+text(ax, 68, 25, r'$2 \times M$', 'varie', 's')
+text(ax, 44, 33, 'les deux', 'sujet', 's', weight='bold'); text(ax, 44, 29, 'à la fois', 'sujet', 's', weight='bold')
+text(ax, 29, 8, 'tableau × tableau', 'autre', 's'); text(ax, 59, 8, 'nombre × tableau', 'varie', 's')
+arrow(ax, (29, 11), (29, 13), 'autre'); arrow(ax, (59, 11), (59, 13), 'varie')
+save(fig, '76-017')

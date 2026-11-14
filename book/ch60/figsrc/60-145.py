@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+ox, oy, u = 20, 12, 28
+arrow(ax, (ox - 4, oy), (ox + u + 8, oy), 'fixe', lw=0.8)
+arrow(ax, (ox, oy - 4), (ox, oy + u + 8), 'fixe', lw=0.8)
+line(ax, [(ox, oy), (ox + u, oy + u)], 'fixe', dash=True, lw=0.6)
+p = (ox + u, oy)
+q = (ox, oy + u)
+disc(ax, p[0], p[1], 2.2, 'sujet')
+disc(ax, q[0], q[1], 2.2, 'varie')
+text(ax, p[0], p[1] - 6, '(1, 0)', 'sujet', 's')
+text(ax, q[0] - 9, q[1], '(0, 1)', 'varie', 's')
+arrow(ax, (p[0] - 2, p[1] + 2), (q[0] + 2, q[1] - 2), 'sujet', curve=0.3)
+arrow(ax, (q[0] + 2.4, q[1] - 1.2), (p[0] - 2.4, p[1] + 1.2), 'varie', curve=0.3)
+text(ax, ox + 20, oy + 20, 'T', 'encre', 'm', weight='bold')
+text(ax, ox + 6, oy + 6, 'T', 'encre', 'm', weight='bold')
+tx = 58
+text(ax, tx, 54, 'V : le plan', 'sujet', 's', ha='left', weight='bold')
+text(ax, tx, 48, 'dimension n = 2', 'sujet', 's', ha='left')
+text(ax, tx, 38, 'T échange', 'varie', 's', ha='left', weight='bold')
+text(ax, tx, 33, 'les coordonnées', 'varie', 's', ha='left')
+text(ax, tx, 25, r'$(a, b) \mapsto (b, a)$', 'encre', 's', ha='left')
+save(fig, '60-145')

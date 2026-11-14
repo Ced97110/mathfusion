@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+C = (30, 33)
+for r in (8, 16, 24):
+    disc(ax, C[0], C[1], r, 'fixe', fill=False, lw=0.5)
+line(ax, [(C[0], C[1]), (C[0] + 28, C[1])], 'fixe', lw=0.7)
+a = math.radians(30)
+P = (C[0] + 24 * math.cos(a), C[1] + 24 * math.sin(a))
+line(ax, [C, P], 'varie', lw=1.2)
+pts = [(C[0] + 7 * math.cos(math.radians(30 * k / 20)), C[1] + 7 * math.sin(math.radians(30 * k / 20))) for k in range(21)]
+line(ax, pts, 'varie', lw=0.9)
+disc(ax, *P, 1.4, 'fixe')
+disc(ax, *C, 1.8, 'sujet')
+text(ax, C[0], C[1] - 5, r'pôle $O$', 'sujet', 'm')
+text(ax, P[0] + 2.5, P[1] + 3, r'$P$', 'fixe', 'm')
+text(ax, 38.5, 43, r'$r$', 'varie', 'm')
+text(ax, 40.5, 36, r'$\theta$', 'varie', 's')
+text(ax, 58, 52, 'distance et angle', 'varie', 's', ha='left')
+text(ax, 58, 47, 'se comptent depuis', 'varie', 's', ha='left')
+text(ax, 58, 42, 'le pôle', 'sujet', 's', ha='left', weight='bold')
+save(fig, '39-026')

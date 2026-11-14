@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+c = (44, 60)
+u = 13
+a = math.radians(150)
+line(ax, [(6, c[1]), (82, c[1])], 'fixe', lw=0.6)
+line(ax, [(c[0], 32), (c[0], 90)], 'fixe', lw=0.6)
+disc(ax, c[0], c[1], u, 'fixe', fill=False, lw=0.8)
+C = (c[0] + u * math.cos(a), c[1] + u * math.sin(a))
+P = (c[0] + 2 * u * math.cos(a), c[1] + 2 * u * math.sin(a))
+line(ax, [c, P], 'varie', lw=1.2)
+pts = [(c[0] + 6 * math.cos(a * j / 30), c[1] + 6 * math.sin(a * j / 30)) for j in range(31)]
+line(ax, pts, 'varie', lw=0.9)
+disc(ax, *C, 1.3, 'sujet'); disc(ax, *P, 1.6, 'resultat')
+text(ax, 47, 69, '150°', 'varie', 's')
+text(ax, 36, 66, r'$C$', 'sujet', 'm')
+text(ax, 26, 78, r'$P$', 'resultat', 'm')
+text(ax, 62, 45, 'cercle de rayon 1', 'fixe', 's')
+text(ax, 44, 22, r'$x = 2 \times (-0{,}866) \approx -1{,}73$', 'resultat', 's')
+text(ax, 44, 14, r'$y = 2 \times 0{,}5 = 1$', 'resultat', 's')
+text(ax, 44, 6, r'$P$ est 2 fois plus loin que $C$', 'encre', 's')
+save(fig, '39-030')

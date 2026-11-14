@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 69, r'$N=\{1,\,s\}$ n\'est pas normal'.replace("\\'", "’"), 'limite', 'm')
+# linked pair
+box(ax, 8, 44, 24, 9, 'sujet', label=r'$a=r$')
+box(ax, 56, 44, 24, 9, 'sujet', label=r'$b=rs$')
+arrow(ax, (33, 48.5), (55, 48.5), 'resultat', both=True)
+text(ax, 44, 55, 'liés', 'resultat', 's')
+arrow(ax, (20, 43), (20, 29), 'varie')
+arrow(ax, (68, 43), (68, 29), 'varie')
+text(ax, 44, 36, r'$\times\,r$ à droite', 'varie', 's')
+box(ax, 8, 18, 24, 9, 'autre', label=r'$r^{2}$')
+box(ax, 56, 18, 24, 9, 'autre', label=r'$s$')
+line(ax, [(33, 22.5), (55, 22.5)], 'limite', dash=True)
+text(ax, 44, 22.5, '', 'limite', 's')
+text(ax, 44, 12, 'plus liés', 'limite', 'm')
+save(fig, '47-136')

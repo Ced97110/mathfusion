@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+o=(14,14)
+arrow(ax,o,(o[0]+22,o[1]),'sujet',lw=1.4); arrow(ax,o,(o[0],o[1]+30),'autre',lw=1.4)
+text(ax,o[0]+22,o[1]-4.5,r'$e_1=(1,0)$','sujet','s',ha='right'); text(ax,o[0]+2,o[1]+31,r'$e_2=(0,1)$','autre','s',ha='left')
+text(ax,44,60,r'$B(x,y)=x_1y_2$','encre','m',ha='left')
+box(ax,40,32,46,22,'limite')
+text(ax,63,48,r'$B(e_1,e_2)=1\times1=1$','limite','s'); text(ax,63,38,r'$e_1$ non $\perp$ à $e_2$','limite','s')
+box(ax,40,4,46,22,'resultat')
+text(ax,63,20,r'$B(e_2,e_1)=0\times0=0$','resultat','s'); text(ax,63,10,r'$e_2\perp e_1$','resultat','s')
+save(fig,'71-084')

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+o = (12, 12); s = 30
+arrow(ax, (o[0]-6, o[1]), (o[0]+70, o[1]), 'fixe', lw=0.6)
+line(ax, [(o[0], o[1]-4), (o[0], o[1]+50)], 'fixe', lw=0.6)
+u = (o[0]+s, o[1]+s); Q = (u[0]+s/4, u[1]-s/4)
+arrow(ax, o, u, 'sujet', lw=1.8)
+arrow(ax, u, Q, 'autre', lw=1.8)
+disc(ax, Q[0], Q[1], 1.6, 'resultat')
+line(ax, [(Q[0], o[1]), Q], 'fixe', dash=True, lw=0.6)
+text(ax, u[0]-2, u[1]+2, r'$u=(1\ ;\ 1)$', 'sujet', 'm', ha='right')
+text(ax, Q[0]+3, u[1]-1, r'$\frac{1}{2}v=(\frac{1}{4}\ ;\ -\frac{1}{4})$', 'autre', 'm', ha='left')
+text(ax, Q[0]+3, Q[1]-7, r'$(\frac{5}{4}\ ;\ \frac{3}{4})$', 'resultat', 'm', ha='left')
+text(ax, 44, 60, r'$(1;1)+(\frac{1}{4};-\frac{1}{4})=(\frac{5}{4};\frac{3}{4})$', 'resultat', 'm')
+save(fig, '72-095')

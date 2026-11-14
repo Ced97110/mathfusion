@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+s = 20; x0, y0 = 6, 38
+box(ax, x0, y0, s, s, 'sujet', label=None)
+line(ax, [(x0, y0), (x0 + s, y0 + s)], 'varie', lw=1.8)
+text(ax, x0 + s / 2 + 3, y0 + s / 2 - 3, r'$d$', 'varie', 'l')
+text(ax, x0 + s / 2, y0 - 3.5, 'côté = 1', 'sujet', 's')
+box(ax, 40, 52, 42, 9, 'fixe', label=r'combien vaut $d$ ?')
+box(ax, 40, 38, 42, 9, 'resultat', label=r'$d$ = ce segment')
+f = numberline(ax, x0, x0 + 2 * s, 14, 0, 2, 1, labels=True, arrow_right=False)
+arrow(ax, (f(0), 22), (f(2 ** 0.5), 22), 'varie', both=True)
+text(ax, f(2 ** 0.5 / 2), 26.5, r'$d$', 'varie', 'm')
+text(ax, 66, 24, r'nom exact : $d=\sqrt{2}$', 'resultat', 's')
+text(ax, 66, 19, 'pas de chiffres exacts', 'fixe', 's')
+save(fig, '22-019')

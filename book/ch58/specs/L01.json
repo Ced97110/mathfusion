@@ -1,0 +1,334 @@
+[
+ {
+  "code": "58-001",
+  "a_dire": "Une vente de riz et de lentilles est connue dès que l’on donne deux quantités, une de riz et une de lentilles.",
+  "legende_titre": "Deux clients, deux quantités chacun",
+  "lecture": [
+   "Chaque ligne bleue montre le riz d’une vente : un carré par kilo.",
+   "Chaque ligne violette montre les lentilles : un carré par kilo.",
+   "Le client 1 a 2 carrés bleus et 1 carré violet. Le client 2 a 5 carrés bleus et 4 carrés violets."
+  ],
+  "a_voir": "Chaque vente a la même forme : une quantité de riz et une quantité de lentilles."
+ },
+ {
+  "code": "58-002",
+  "a_dire": "Une vente s’écrit par deux nombres dans un ordre fixé, et (2, 1) et (1, 2) sont deux ventes différentes.",
+  "legende_titre": "Mêmes nombres, ordre inversé",
+  "lecture": [
+   "La case bleue donne la quantité de riz, la case violette la quantité de lentilles.",
+   "À gauche, les disques montrent 2 riz et 1 lentilles : la vente (2, 1).",
+   "À droite, les disques montrent 1 riz et 2 lentilles : la vente (1, 2)."
+  ],
+  "a_voir": "Les deux ventes ont les mêmes nombres mais pas le même ordre, donc ce ne sont pas les mêmes ventes."
+ },
+ {
+  "code": "58-003",
+  "a_dire": "Pour additionner deux ventes, on additionne le riz avec le riz et les lentilles avec les lentilles : (2, 1) + (5, 4) = (7, 5).",
+  "legende_titre": "Additionner deux ventes case par case",
+  "lecture": [
+   "Les cases bleues de la colonne « riz » sont 2, 5 puis 7.",
+   "Les cases violettes de la colonne « lentilles » sont 1, 4 puis 5.",
+   "La ligne verte du bas, « ensemble », est le résultat : (7, 5)."
+  ],
+  "a_voir": "On additionne chaque colonne séparément, et le résultat est encore un couple."
+ },
+ {
+  "code": "58-004",
+  "a_dire": "Multiplier une vente par un entier multiplie chaque case : 3(2, 1) = (6, 3).",
+  "legende_titre": "Trois fois la même vente",
+  "lecture": [
+   "Chaque cadre orange en pointillés est une copie de la vente (2, 1).",
+   "Dans chaque cadre, 2 carrés bleus pour le riz et 1 carré violet pour les lentilles.",
+   "Au total, 6 carrés bleus et 3 carrés violets : le couple (6, 3)."
+  ],
+  "a_voir": "Chaque case du couple est multipliée par 3."
+ },
+ {
+  "code": "58-005",
+  "a_dire": "Les couples d’entiers, avec l’addition et la multiplication par un entier, forment un module sur ℤ.",
+  "legende_titre": "Deux opérations qui restent dans l’ensemble",
+  "lecture": [
+   "Le grand cadre bleu contient tous les couples d’entiers.",
+   "Les cases bleues de gauche sont les départs : une addition et une multiplication par 3.",
+   "Les flèches orange sont les opérations. Les cases vertes sont les résultats, encore des couples d’entiers."
+  ],
+  "a_voir": "Additionner deux couples ou multiplier un couple par un entier donne encore un couple d’entiers."
+ },
+ {
+  "code": "58-006",
+  "a_dire": "Le signe ℤ avec un exposant (2) nomme la collection des couples d’entiers, et (5, 4) ∈ ℤ⁽²⁾ dit que (5, 4) en fait partie.",
+  "legende_titre": "Lire (5, 4) ∈ ℤ⁽²⁾ morceau par morceau",
+  "lecture": [
+   "Le couple (5, 4) en bleu est la vente, un couple.",
+   "Le signe noir ∈ veut dire « appartient à ». Le ℤ violet désigne les entiers.",
+   "Le (2) orange donne le nombre de cases. En bas, ℤ⁽²⁾ a 2 cases et ℤ⁽³⁾ en a 3."
+  ],
+  "a_voir": "Le nombre entre parenthèses est le nombre de cases de chaque liste."
+ },
+ {
+  "code": "58-007",
+  "a_dire": "Les deux sacs types sont e₁ = (1, 0), un kilo de riz seul, et e₂ = (0, 1), un kilo de lentilles seules.",
+  "legende_titre": "Deux sacs très simples",
+  "lecture": [
+   "Le cadre bleu est le sac e₁ : 1 kg de riz et 0 kg de lentilles.",
+   "Le cadre violet est le sac e₂ : 0 kg de riz et 1 kg de lentilles.",
+   "Un carré plein montre un kilo présent. Un carré en pointillés montre 0 kilo."
+  ],
+  "a_voir": "Chaque sac ne contient qu’un seul produit, en quantité 1."
+ },
+ {
+  "code": "58-008",
+  "a_dire": "La vente (5, 4) s’écrit 5e₁ + 4e₂, avec ces nombres de sacs et pas d’autres.",
+  "legende_titre": "Cinq sacs de riz et quatre de lentilles",
+  "lecture": [
+   "La ligne bleue montre 5 sacs e₁, un carré par sac.",
+   "La ligne violette montre 4 sacs e₂.",
+   "La ligne du bas, en rouge, essaie 6 sacs e₁ : elle donne (6, 4), pas (5, 4)."
+  ],
+  "a_voir": "Le seul choix est 5 sacs de riz et 4 sacs de lentilles."
+ },
+ {
+  "code": "58-009",
+  "a_dire": "Deux objets suffisent pour construire toutes les ventes, et chaque vente s’écrit d’une seule façon avec eux.",
+  "legende_titre": "De l’infinité de ventes à deux sacs",
+  "lecture": [
+   "À gauche, les disques gris sont des ventes, sans lien entre elles.",
+   "À droite, les deux cases du haut sont les deux sacs types : e₁ (bleu) et e₂ (violet).",
+   "Les flèches orange mènent aux deux nombres de sacs : 5 et 4 pour la vente (5, 4).",
+   "Le texte vert dit qu’il n’y a qu’une seule écriture possible."
+  ],
+  "a_voir": "Une vente devient deux nombres de sacs, et il n’y a pas d’autre choix de nombres."
+ },
+ {
+  "code": "58-010",
+  "a_dire": "Une base est une liste de sacs qui construit toutes les ventes, et d’une seule façon.",
+  "legende_titre": "Trois listes de sacs pour la vente (5, 4)",
+  "lecture": [
+   "Colonne de gauche : avec (1, 0) et (2, 0), la vente est impossible (case rouge).",
+   "Colonne du milieu : avec (1, 0), (2, 0) et (0, 1), il y a plusieurs façons (case rouge).",
+   "Colonne de droite : avec (1, 0) et (0, 1), il y a une seule façon (case verte) : c’est une base."
+  ],
+  "a_voir": "Seule la liste de droite construit la vente et d’une seule façon."
+ },
+ {
+  "code": "58-011",
+  "a_dire": "Un module libre est un module qui a une base ; les couples d’entiers le sont, l’horloge à deux heures ne l’est pas.",
+  "legende_titre": "Un module avec base, un module sans base",
+  "lecture": [
+   "À gauche, les flèches e₁ (bleue) et e₂ (violette) sont les deux sacs types des couples d’entiers.",
+   "À droite, le cercle est l’horloge à deux heures, avec les heures 0 et 1.",
+   "La case verte dit « libre » pour les couples. La case rouge dit « pas libre » pour l’horloge."
+  ],
+  "a_voir": "Avoir une base est une propriété que certains modules ont et d’autres non."
+ },
+ {
+  "code": "58-012",
+  "a_dire": "Tout module n’a pas de base : l’horloge à deux heures n’en a pas, alors que les couples d’entiers en ont une.",
+  "legende_titre": "Chercher des sacs types dans deux modules",
+  "lecture": [
+   "Ligne du haut : les couples d’entiers ont les sacs (1, 0) et (0, 1). La case verte dit : base.",
+   "Ligne du bas : l’horloge à deux heures a un seul candidat, l’heure 1.",
+   "La case rouge dit que cette liste ne donne pas d’écriture unique."
+  ],
+  "a_voir": "La réponse à la question du titre est non."
+ },
+ {
+  "code": "58-013",
+  "a_dire": "Sur l’horloge à deux heures, 2·1 = 0 et 0·1 = 0 : l’heure 0 s’écrit de deux façons à partir de 1, donc le module n’est pas libre.",
+  "legende_titre": "Deux chemins vers l’heure 0",
+  "lecture": [
+   "Chaque cercle est l’horloge, avec l’heure 0 en vert en haut et l’heure 1 en bas.",
+   "À gauche, les flèches orange font 1 + 1 : un tour complet, on retombe sur 0. Cela écrit 2·1 = 0.",
+   "À droite, aucun pas : on reste sur 0. Cela écrit 0·1 = 0."
+  ],
+  "a_voir": "Les deux écritures donnent la même heure 0, donc l’écriture n’est pas unique."
+ },
+ {
+  "code": "58-014",
+  "a_dire": "Le fournisseur vend deux lots, f₁ = (2, 1) et f₂ = (1, 1), et un lot f₁ plus trois lots f₂ font la vente (5, 4).",
+  "legende_titre": "Deux lots du fournisseur",
+  "lecture": [
+   "Le premier cadre orange est le lot f₁ : 2 carrés bleus (riz) et 1 carré violet (lentilles).",
+   "Les trois cadres suivants sont trois lots f₂ : 1 carré bleu et 1 carré violet chacun.",
+   "Le calcul du bas additionne : (2, 1) + (3, 3) = (5, 4)."
+  ],
+  "a_voir": "Cette vente précise se fait bien avec les deux lots."
+ },
+ {
+  "code": "58-015",
+  "a_dire": "Les deux sacs types se fabriquent avec les lots : e₁ = f₁ − f₂ et e₂ = 2f₂ − f₁.",
+  "legende_titre": "Fabriquer les sacs avec les lots",
+  "lecture": [
+   "Ligne du haut : on prend le lot f₁ (2 riz, 1 lentilles) et on retire le lot f₂ (1 riz, 1 lentilles).",
+   "Il reste le cadre vert e₁ : 1 kg de riz, soit (1, 0).",
+   "Ligne du bas : on prend deux lots f₂ et on retire f₁. Il reste le cadre vert e₂ : 1 kg de lentilles, soit (0, 1)."
+  ],
+  "a_voir": "Retirer des lots suffit pour retrouver les deux sacs types."
+ },
+ {
+  "code": "58-016",
+  "a_dire": "(f₁, f₂) est une autre base du même module : le même stock (5, 4) est décrit par 5 et 4 avec les sacs, et par 1 et 3 avec les lots.",
+  "legende_titre": "Deux chemins vers le même point",
+  "lecture": [
+   "Le chemin bleu puis violet suit les sacs : 5 pas à droite puis 4 pas en haut.",
+   "Le chemin orange suit les lots : un pas f₁, puis trois pas f₂.",
+   "Les deux chemins arrivent au point vert (5, 4)."
+  ],
+  "a_voir": "Le point est le même, seuls les nombres qui le décrivent changent avec la base."
+ },
+ {
+  "code": "58-017",
+  "a_dire": "Dans un changement de base, le stock reste le même et seuls les deux nombres qui le décrivent changent ; l’opération du transporteur, elle, change le stock.",
+  "legende_titre": "Le stock reste, les nombres changent",
+  "lecture": [
+   "À gauche, le cadre vert est un seul stock, (5, 4).",
+   "Il est décrit par 5 et 4 avec les sacs (cadre bleu) et par 1 et 3 avec les lots (cadre violet).",
+   "À droite, la flèche orange du transporteur mène à un autre stock, (14, 17)."
+  ],
+  "a_voir": "Un changement de base ne change pas le stock, contrairement à l’opération du transporteur."
+ },
+ {
+  "code": "58-018",
+  "a_dire": "Une matrice est un tableau de quatre nombres rangés en lignes et en colonnes, qui décrit comment les lots s’écrivent avec les sacs.",
+  "legende_titre": "Quatre nombres rangés dans un tableau",
+  "lecture": [
+   "La colonne bleue, 2 puis 1, donne les sacs du lot f₁.",
+   "La colonne violette, 1 puis 1, donne les sacs du lot f₂.",
+   "La ligne du haut compte les sacs e₁, la ligne du bas les sacs e₂. Les crochets montrent un seul objet."
+  ],
+  "a_voir": "La place de chaque nombre dans le tableau dit à quel lot et à quel sac il correspond."
+ },
+ {
+  "code": "58-019",
+  "a_dire": "Le transporteur remplace le sac e₁ par (2, 1) et le sac e₂ par (1, 3).",
+  "legende_titre": "Le transporteur remplace chaque sac",
+  "lecture": [
+   "Les cadres gris de gauche sont les sacs e₁ (1 kg de riz) et e₂ (1 kg de lentilles).",
+   "Chaque flèche orange porte son écriture : e₁ ↦ (2, 1) et e₂ ↦ (1, 3).",
+   "Les cadres orange de droite montrent les remplacements : 2 kg de riz et 1 kg de lentilles pour e₁, 1 kg de riz et 3 kg de lentilles pour e₂."
+  ],
+  "a_voir": "Le transporteur remplace e₁ par (2, 1) et e₂ par (1, 3)."
+ },
+ {
+  "code": "58-020",
+  "a_dire": "Il suffit de connaître les images des deux sacs de base, c’est-à-dire quatre nombres, pour connaître toute la transformation.",
+  "legende_titre": "Deux images suffisent",
+  "lecture": [
+   "La colonne bleue, 2 puis 1, est l’image de e₁.",
+   "La colonne violette, 1 puis 3, est l’image de e₂.",
+   "La flèche orange mène à un exemple vert : deux sacs de riz donnent 2(2, 1) = (4, 2)."
+  ],
+  "a_voir": "Les autres stocks se déduisent de ces quatre nombres."
+ },
+ {
+  "code": "58-021",
+  "a_dire": "Le stock (5, 4) se découpe en un stock de riz pur (5, 0) plus un stock de lentilles pur (0, 4), et cette découpe vaut pour tout stock (x, y).",
+  "legende_titre": "Séparer le riz et les lentilles",
+  "lecture": [
+   "La flèche bleue sur l’axe horizontal mène à (5, 0), le riz pur.",
+   "La flèche violette sur l’axe vertical mène à (0, 4), les lentilles pur.",
+   "Les pointillés rejoignent le point vert (5, 4), somme des deux.",
+   "La ligne verte du haut dit que la même découpe vaut pour tout stock (x, y)."
+  ],
+  "a_voir": "Les deux morceaux additionnés redonnent le stock (5, 4), et il en va de même pour tout stock."
+ },
+ {
+  "code": "58-022",
+  "a_dire": "Les stocks de riz pur forment un sous-module M₁ et les stocks de lentilles pur un sous-module M₂ : additionner ou multiplier ne fait pas sortir de la famille.",
+  "legende_titre": "Deux familles de stocks stables",
+  "lecture": [
+   "Les gros disques bleus sont les stocks de riz pur (x, 0) : ils forment M₁.",
+   "Les gros disques violets sont les stocks de lentilles pur (0, y) : ils forment M₂. Les petits disques gris sont les autres stocks.",
+   "La flèche orange fait (2, 0) + (3, 0) = (5, 0). La flèche verte fait 4(2, 0) = (8, 0). Les deux arrivent sur l’axe bleu."
+  ],
+  "a_voir": "Les résultats restent sur l’axe : la famille est stable."
+ },
+ {
+  "code": "58-023",
+  "a_dire": "M est somme directe de M₁ et M₂ quand chaque élément s’écrit d’une seule façon comme somme d’un élément de M₁ et d’un élément de M₂.",
+  "legende_titre": "Une écriture ou deux écritures",
+  "lecture": [
+   "À gauche, avec M₁ et M₂, (5, 4) = (5, 0) + (0, 4) : une seule façon (case verte).",
+   "À droite, avec M₁ et tous les stocks M, (5, 4) = (5, 0) + (0, 4) mais aussi (0, 0) + (5, 4) : deux façons (case rouge).",
+   "La somme directe est le cas de gauche."
+  ],
+  "a_voir": "Dans une somme directe, l’écriture est unique ; avec M₁ et M elle ne l’est pas."
+ },
+ {
+  "code": "58-024",
+  "a_dire": "Le signe ⊕ se lit « somme directe » : il dit que tout élément est une somme et que cette somme est unique.",
+  "legende_titre": "Un plus dans un cercle",
+  "lecture": [
+   "La ligne du haut est M = M₁ ⊕ M₂, avec M₁ en bleu et M₂ en violet.",
+   "La croix bleue du signe est le plus : tout élément de M est une somme. La case bleue le dit.",
+   "Le cercle vert ajoute l’unicité : une seule écriture. La case verte le dit."
+  ],
+  "a_voir": "Le cercle autour du plus ajoute l’unicité à la somme."
+ },
+ {
+  "code": "58-025",
+  "a_dire": "Le point w = (5, 4) s’obtient en marchant deux fois le long de u puis une fois le long de v, et une seule fois.",
+  "legende_titre": "Marcher le long de deux flèches",
+  "lecture": [
+   "Les deux flèches bleues épaisses sont u répétée deux fois, jusqu’à 2u.",
+   "La flèche violette épaisse est v, partant du bout de 2u. Elle arrive au point vert w.",
+   "La flèche violette fine est v depuis l’origine O. Le pointillé bleu, parallèle à u, rejoint w."
+  ],
+  "a_voir": "Les deux pointillés se rencontrent en un seul point, w."
+ },
+ {
+  "code": "58-026",
+  "a_dire": "Les flèches u = (2, 1) et v = (1, 2) et le point w = (5, 4) sont donnés par des couples, et u et v ne sont pas sur une même droite.",
+  "legende_titre": "Deux flèches et un point sur le quadrillage",
+  "lecture": [
+   "Le cercle noir est l’origine O, où les deux flèches commencent.",
+   "La flèche bleue u arrive au point (2, 1). La flèche violette v arrive au point (1, 2).",
+   "Le disque vert est le point w = (5, 4)."
+  ],
+  "a_voir": "Les flèches partent de O dans deux directions différentes."
+ },
+ {
+  "code": "58-027",
+  "a_dire": "Le quadrilatère O, 2u, w, v est un parallélogramme, donc w = 2u + v.",
+  "legende_titre": "Un parallélogramme qui donne w",
+  "lecture": [
+   "Le côté bleu de O à 2u et le côté bleu de v à w sont parallèles.",
+   "Le côté violet de O à v et le côté violet de 2u à w sont parallèles.",
+   "Le sommet vert w est donc le bout de 2u suivi de v."
+  ],
+  "a_voir": "Les côtés opposés de même couleur sont parallèles, donc w = 2u + v."
+ },
+ {
+  "code": "58-028",
+  "a_dire": "L’écriture est unique parce que u et v ne sont pas sur la même droite : une seule parallèle à v passe par w.",
+  "legende_titre": "Une seule parallèle mène à w",
+  "lecture": [
+   "La droite bleue est la direction de u. Les disques bleus sont u, 2u et 3u. La flèche violette est v.",
+   "De chaque disque part une ligne parallèle à v. Les lignes rouges en pointillés ratent w.",
+   "La ligne verte part de 2u et passe par w : c’est la seule."
+  ],
+  "a_voir": "Un seul nombre devant u donne une ligne parallèle à v qui passe par w."
+ },
+ {
+  "code": "58-029",
+  "a_dire": "Une base est formée de deux directions non alignées, et chaque point du plan reçoit alors un seul couple de nombres.",
+  "legende_titre": "Un couple de nombres par point",
+  "lecture": [
+   "Les flèches u (bleue) et v (violette) partent de l’origine.",
+   "Les petits disques gris sont les points obtenus avec des nombres entiers de u et de v.",
+   "Le disque vert (5, 4) reçoit « 2 et 1 ». Le disque vert (3, 3) reçoit « 1 et 1 »."
+  ],
+  "a_voir": "Chaque point reçoit deux nombres, et un seul couple."
+ },
+ {
+  "code": "58-030",
+  "a_dire": "Les axes du chapitre 19 correspondent à la base (e₁, e₂) : le point (5, 4) est 5 fois la flèche (1, 0) et 4 fois la flèche (0, 1).",
+  "legende_titre": "Lire (5, 4) sur les axes",
+  "lecture": [
+   "Les cinq flèches bleues sont 5 fois e₁ : 5 carreaux vers la droite.",
+   "Les quatre flèches violettes sont 4 fois e₂ : 4 carreaux vers le haut.",
+   "Elles arrivent au disque vert (5, 4). La petite flèche violette près de O est e₂."
+  ],
+  "a_voir": "Les coordonnées du chapitre 19 sont le choix de base e₁ et e₂."
+ }
+]

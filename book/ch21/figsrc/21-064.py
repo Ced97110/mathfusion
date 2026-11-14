@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+def frac(cx, yb, n, d, rn, rd, w=14, h=10):
+    box(ax, cx - w / 2, yb + 2, w, h, rn, label=n, size='l')
+    box(ax, cx - w / 2, yb - 2 - h, w, h, rd, label=d, size='l')
+    line(ax, [(cx - w / 2, yb), (cx + w / 2, yb)], 'encre', lw=1.0)
+frac(22, 56, '3', '5', 'sujet', 'varie')
+frac(66, 56, '5', '7', 'varie', 'sujet')
+text(ax, 44, 56, r'$\times$', 'encre', 'l')
+arrow(ax, (30, 46), (59, 62), 'varie', both=True)
+text(ax, 44, 70, 'même facteur : retiré', 'varie', 's')
+arrow(ax, (44, 40), (44, 32), 'varie')
+box(ax, 28, 16, 32, 15, 'resultat', label=r'$\frac{3}{7}$', size='l')
+text(ax, 44, 8, r'$\frac{15}{35}=\frac{3}{7}$ aussi', 'fixe', 's')
+save(fig, '21-064')

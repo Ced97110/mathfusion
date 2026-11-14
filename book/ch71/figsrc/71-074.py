@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+o = (36, 40); s = 8
+P = lambda a, b: (o[0] + a * s, o[1] + b * s)
+arrow(ax, P(-4, 0), P(4.6, 0), 'fixe', lw=0.5); arrow(ax, P(0, -4), P(0, 4.2), 'fixe', lw=0.5)
+line(ax, [P(0, -3.0), P(0, 3.6)], 'sujet', lw=2.2)
+arrow(ax, P(0, 0), P(0, 2), 'sujet', lw=1.3)
+arrow(ax, P(0, 0), P(2, 1), 'varie', lw=1.2); arrow(ax, P(0, 0), P(-2.5, 2), 'varie', lw=1.2)
+text(ax, P(0, 2)[0] + 8, P(0, 2)[1] + 2, r'$z=(0,\,1)$', 'sujet', 's')
+text(ax, P(2, 1)[0] + 4, P(2, 1)[1] + 2, r'$x$', 'varie', 'm')
+text(ax, P(-2.5, 2)[0] - 3, P(-2.5, 2)[1] + 2, r'$x$', 'varie', 'm')
+text(ax, 72, 56, 'radical de $B$ :', 'sujet', 's', ha='center'); text(ax, 72, 50, 'l’axe vertical', 'sujet', 's')
+text(ax, 72, 34, r'$B(x,z)=x_1\times0$', 'resultat', 's'); text(ax, 72, 28, r'$=0$ pour tout $x$', 'resultat', 's')
+text(ax, 44, 5, r'$B=x_1y_1$ : $z$ est dans le radical', 'encre', 's')
+save(fig, '71-074')

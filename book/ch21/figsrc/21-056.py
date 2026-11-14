@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 44, 36, 11, 'resultat', label=r'$a\neq b$', size='l')
+box(ax, 48, 44, 36, 11, 'limite', label=r'$a=b=5$', size='l')
+arrow(ax, (22, 43), (22, 33), 'varie')
+arrow(ax, (66, 43), (66, 33), 'varie')
+box(ax, 4, 18, 36, 14, 'resultat', label=r'$\frac{a-b}{b-a}=-1$', size='l')
+box(ax, 48, 18, 36, 14, 'limite', label=r'$\frac{0}{0}$', size='l')
+text(ax, 22, 11, 'haut et bas opposés', 'resultat', 's')
+text(ax, 66, 11, 'pas de résultat', 'limite', 's')
+save(fig, '21-056')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 14, 74, 28, -3, 3, arrow_right=False, every=3)
+disc(ax, f(-3), 28, 2.2, 'varie')
+disc(ax, f(3), 28, 2.2, 'sujet')
+arrow(ax, (f(-3), 31), (f(3), 31), 'varie', curve=-0.5)
+text(ax, 44, 49, r'$-a$ : l’opposé', 'varie', 's')
+box(ax, 3, 4, 38, 11, 'varie', label=r'$a<0$ : $|a|=-a$')
+box(ax, 47, 4, 38, 11, 'sujet', label=r'$a\geq 0$ : $|a|=a$')
+save(fig, '69-037')

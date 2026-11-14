@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 36, 36, 16, 'sujet', label=r'$\Phi_n$', size='xl')
+text(ax, 21, 32, 'phi majuscule n', 'sujet', 's')
+text(ax, 21, 56, 'la plus courante', 'sujet', 's')
+box(ax, 49, 36, 36, 16, 'autre', label=r'$\lambda_n$', size='xl')
+text(ax, 67, 32, 'lambda n (Jacobson)', 'autre', 's')
+arrow(ax, (21, 30), (35, 20), 'sujet')
+arrow(ax, (67, 30), (53, 20), 'autre')
+box(ax, 14, 4, 60, 15, 'resultat', )
+text(ax, 44, 14, 'même polynôme : celui des', 'resultat', 's')
+text(ax, 44, 8.5, 'racines primitives n-ièmes', 'resultat', 's')
+save(fig, '66-033')

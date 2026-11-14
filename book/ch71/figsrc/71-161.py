@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$y = 10$ : $(x+2y)^2 - 3y^2 = 4$', 'sujet', 'm')
+box(ax, 8, 38, 34, 9, 'sujet', label=r'$X^2 - 300 = 4$')
+box(ax, 46, 38, 34, 9, 'resultat', label=r'$X^2 = 304 > 0$')
+arrow(ax, (42, 42.5), (46, 42.5), 'varie')
+text(ax, 44, 33, r'$X = x + 20$', 'varie', 's')
+r = math.sqrt(304)
+f = numberline(ax, 8, 80, 18, -20, 20, step=10, arrow_right=False)
+for s in (-1, 1):
+    disc(ax, f(s * r), 18, 1.6, 'resultat')
+text(ax, f(-r) + 1, 26, r'$-\sqrt{304}$', 'resultat', 's')
+text(ax, f(r) - 1, 26, r'$\sqrt{304}$', 'resultat', 's')
+text(ax, 44, 7, 'deux solutions pour $X$', 'resultat', 's')
+save(fig, '71-161')

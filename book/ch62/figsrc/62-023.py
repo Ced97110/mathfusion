@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 40, 24, 11, 'sujet', label='∛2')
+box(ax, 2, 14, 24, 11, 'varie', label='$j$')
+arrow(ax, (27, 45.5), (36, 45.5), 'fixe')
+arrow(ax, (27, 19.5), (36, 19.5), 'fixe')
+box(ax, 36, 8, 50, 52, 'resultat', label=None, lw=1.4)
+text(ax, 61, 55, 'ℚ(∛2, $j$)', 'resultat', 'l')
+box(ax, 41, 38, 40, 9, 'sujet', label='$r_1$ = ∛2', size='s')
+box(ax, 41, 26, 40, 9, 'autre', label='$r_2$ = $j\\,r_1$', size='s')
+box(ax, 41, 14, 40, 9, 'autre', label='$r_3$ = $j^2 r_1$', size='s')
+text(ax, 44, 3, 'deux nombres de départ, trois racines', 'encre', 's')
+save(fig, '62-023')

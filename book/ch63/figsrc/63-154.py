@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 66, 'x³ − 2 : racines r, jr, j²r', 'encre', 's')
+cx, cy, R = 30, 34, 22
+ax.add_patch(Circle((cx, cy), R, ec=COL['fixe'], fc='none', lw=0.6, ls='--', zorder=1))
+line(ax, [(4, cy), (84, cy)], 'resultat', lw=1.2)
+text(ax, 70, cy - 5, 'axe réel : ℚ(r) ⊆ ℝ', 'resultat', 's')
+disc(ax, cx + R, cy, 5, role='resultat', label='r')
+disc(ax, cx - R / 2, cy + R * 0.866, 5, role='limite', label='jr')
+disc(ax, cx - R / 2, cy - R * 0.866, 5, role='limite', label='j²r')
+text(ax, 62, cy + 5, 'dans ℚ(r)', 'resultat', 's')
+text(ax, 25, cy + 19, 'pas réel', 'limite', 's', ha='left')
+text(ax, 25, cy - 19, 'pas réel', 'limite', 's', ha='left')
+text(ax, 44, 4, 'jr, j²r ∉ ℚ(r) : normalité manque', 'limite', 's')
+save(fig, '63-154')

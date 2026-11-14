@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 62, 'différence', 'resultat', 's'); text(ax, 66, 62, 'somme', 'limite', 's')
+box(ax, 6, 46, 32, 11, 'resultat', label=r'$x^2-4$')
+arrow(ax, (22, 46), (22, 34), 'resultat')
+box(ax, 4, 20, 36, 12, 'resultat', label=r'$(x+2)(x-2)$')
+box(ax, 50, 46, 32, 11, 'limite', label=r'$x^2+4$')
+arrow(ax, (66, 46), (66, 34), 'limite')
+line(ax, [(61, 34), (71, 28)], 'limite', lw=1.4); line(ax, [(61, 28), (71, 34)], 'limite', lw=1.4)
+text(ax, 66, 21, 'pas de facteurs', 'limite', 's')
+text(ax, 44, 8, 'avec les nombres réels', 'fixe', 's')
+save(fig, '18-093')

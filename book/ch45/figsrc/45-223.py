@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, 'deux écritures déjà lues', 'fixe', 's')
+box(ax, 4, 38, 38, 20, 'sujet')
+text(ax, 23, 51, r'$(0\ 1\ 2\ 3)$', 'sujet', 'l'); text(ax, 23, 43, 'ligne de 1', 'sujet', 's')
+box(ax, 46, 38, 38, 20, 'sujet')
+text(ax, 65, 51, r'$(0\ 3\ 2\ 1)$', 'sujet', 'l'); text(ax, 65, 43, 'ligne de 3', 'sujet', 's')
+arrow(ax, (23, 37), (38, 24), 'varie'); arrow(ax, (65, 37), (50, 24), 'varie')
+box(ax, 14, 6, 60, 17, 'autre', dash=True)
+text(ax, 44, 17, 'au chapitre 46 : un nom', 'autre', 's'); text(ax, 44, 11, 'les cycles', 'autre', 'l', weight='bold')
+save(fig, '45-223')

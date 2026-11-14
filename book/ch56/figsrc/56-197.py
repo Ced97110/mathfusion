@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 20, 69, r'$2\mathbb{Z}$', 'fixe', 'l')
+text(ax, 66, 69, r'$S=\mathbb{Z}\times2\mathbb{Z}$', 'sujet', 'l')
+box(ax, 3, 46, 34, 10, 'fixe', label='pas de neutre', size='s')
+box(ax, 3, 30, 34, 10, 'resultat', label='intègre', size='s')
+box(ax, 49, 46, 36, 10, 'resultat', label='neutre (1, 0)', size='s')
+box(ax, 49, 30, 36, 10, 'limite', label='pas intègre', size='s')
+arrow(ax, (20, 62), (66, 62), 'varie', curve=-0.15)
+text(ax, 44, 57, 'on ajoute 1', 'varie', 's')
+text(ax, 67, 22, r'$(2,-2)(0,2)=(0,0)$', 'limite', 's')
+box(ax, 14, 3, 60, 10, 'sujet', label='structure d\'anneau gardée', size='s')
+save(fig, '56-197')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,22,55,'algèbre de Boole','sujet','m'); text(ax,66,55,'nombres','autre','m')
+box(ax,3,36,38,12,'sujet',label=r'$a\vee O=a$'); box(ax,47,36,38,12,'autre',label=r'$5+0=5$')
+arrow(ax,(41,42),(47,42),'varie',both=True)
+text(ax,44,28.5,r'$O$ joue $0$ ; $\vee$ joue $+$','varie','s')
+box(ax,3,10,38,12,'sujet',label=r'$a\wedge I=a$'); box(ax,47,10,38,12,'autre',label=r'$5\times1=5$')
+arrow(ax,(41,16),(47,16),'varie',both=True)
+text(ax,44,3.5,r'$I$ joue $1$ ; $\wedge$ joue $\times$','varie','s')
+save(fig,'80-150')

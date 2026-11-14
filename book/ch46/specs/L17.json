@@ -1,0 +1,180 @@
+[
+ {
+  "code": "46-257",
+  "a_dire": "Un isomorphisme envoie un sous-groupe sur un sous-groupe, donc le nombre de sous-groupes est le même.",
+  "legende_titre": "Les sous-groupes se correspondent",
+  "lecture": [
+   "Les bulles bleues du haut sont les heures de l’horloge à 4 heures ; les bulles violettes du bas sont les rotations du carré, en tours.",
+   "Chaque flèche relie un élément à son image.",
+   "Les bulles orange sont le sous-groupe {0, 2} en haut et son image {0, ½} en bas."
+  ],
+  "a_voir": "Le sous-groupe {0, 2} du haut a pour image un sous-groupe du bas."
+ },
+ {
+  "code": "46-258",
+  "a_dire": "Un groupe avec 1 sous-groupe propre non trivial n’est pas isomorphe à un groupe qui en a 3.",
+  "legende_titre": "1 contre 3 : pas isomorphes",
+  "lecture": [
+   "À gauche, l’horloge à 4 heures a une seule case orange : {0, 2}.",
+   "À droite, l’autre groupe à quatre éléments a trois cases orange.",
+   "Le signe rouge ≠ sépare les deux nombres, 1 et 3."
+  ],
+  "a_voir": "Les nombres de sous-groupes diffèrent, donc les groupes sont différents."
+ },
+ {
+  "code": "46-259",
+  "a_dire": "Les quatre permutations ont un neutre et trois éléments d’ordre 2, comme le groupe des couples.",
+  "legende_titre": "Quatre permutations de cinq cartes",
+  "lecture": [
+   "La case grise du haut est la permutation qui ne bouge rien.",
+   "Les trois cases bleues sont les trois autres permutations.",
+   "Chaque flèche orange montre qu’en faisant deux fois l’une d’elles, on revient au neutre."
+  ],
+  "a_voir": "Chacune des trois permutations non neutres, faite deux fois, redonne le neutre."
+ },
+ {
+  "code": "46-260",
+  "a_dire": "3ℤ est un sous-groupe : la différence de deux multiples de 3 est un multiple de 3.",
+  "legende_titre": "Une seule vérification suffit",
+  "lecture": [
+   "Les points bleus sont des multiples de 3.",
+   "Les deux points orange, 12 et 21, sont les deux éléments pris.",
+   "L’arc orange est leur différence, et le point vert, 9, est le résultat : encore un multiple de 3."
+  ],
+  "a_voir": "La différence 21 − 12 = 9 reste dans l’ensemble."
+ },
+ {
+  "code": "46-261",
+  "a_dire": "Les entiers impairs ne forment pas un sous-groupe : 3 − 1 = 2 n’est pas impair.",
+  "legende_titre": "Un seul couple fait échouer le test",
+  "lecture": [
+   "Les points bleus sont les nombres impairs.",
+   "L’arc orange va de 3 à 1 et donne la différence 2.",
+   "Les cercles rouges, 0 et 2, sont pairs : ils ne sont pas dans l’ensemble."
+  ],
+  "a_voir": "Le résultat 2 sort de l’ensemble, donc ce n’est pas un sous-groupe."
+ },
+ {
+  "code": "46-262",
+  "a_dire": "Pour un groupe cyclique d’ordre 12, il y a un sous-groupe par diviseur ; pour les six mélanges de 3 cartes, cela ne marche plus.",
+  "legende_titre": "Compter par les diviseurs : quand ça marche",
+  "lecture": [
+   "Dans la première ligne, chaque case bleue est un diviseur de 12 et chaque case verte un sous-groupe, reliés un à un.",
+   "Dans la seconde ligne, il y a 4 diviseurs de 6 mais 6 sous-groupes.",
+   "Les deux cases rouges n’ont pas de diviseur."
+  ],
+  "a_voir": "Le décompte par les diviseurs échoue pour les six mélanges de 3 cartes."
+ },
+ {
+  "code": "46-263",
+  "a_dire": "Comme 7 est premier, ℤ/7ℤ n’a que deux sous-groupes : {0} et le groupe entier.",
+  "legende_titre": "L’horloge à 7 heures",
+  "lecture": [
+   "L’horloge montre les sept heures, de 0 à 6.",
+   "Les diviseurs de 7 sont 1 et 7.",
+   "Le diviseur 1 donne la case orange {0}.",
+   "Le diviseur 7 donne la case bleue, toutes les heures."
+  ],
+  "a_voir": "Deux diviseurs, donc deux sous-groupes seulement."
+ },
+ {
+  "code": "46-264",
+  "a_dire": "Tout élément non nul de ℤ/7ℤ engendre les sept heures.",
+  "legende_titre": "Avancer de 3 puis de 5",
+  "lecture": [
+   "Les flèches orange suivent les pas de 3 sur l’horloge : 0, 3, 6, 2, 5, 1, 4, puis retour à 0.",
+   "À droite, la liste orange donne ces multiples de 3 et la liste violette ceux de 5.",
+   "Les deux listes contiennent les sept heures."
+  ],
+  "a_voir": "Les deux éléments, 3 et 5, visitent toutes les heures."
+ },
+ {
+  "code": "46-265",
+  "a_dire": "Une partie vide est stable par produit mais n’est pas un sous-groupe : il lui manque le neutre.",
+  "legende_titre": "Pourquoi exiger une partie non vide",
+  "lecture": [
+   "La grande case grise est le groupe G, avec ses six mélanges ; le rond vert est le neutre.",
+   "La case rouge en pointillés est H vide.",
+   "La flèche rouge montre que le neutre n’y est pas."
+  ],
+  "a_voir": "H vide est stable par produit, mais ne contient pas le neutre."
+ },
+ {
+  "code": "46-266",
+  "a_dire": "Les puissances de a finissent par revenir au neutre, donc le neutre et l’inverse de a sont des puissances de a dans H.",
+  "legende_titre": "Les puissances de a dans H",
+  "lecture": [
+   "Les trois cases dans le cadre H sont a, a² et a³.",
+   "Les flèches orange multiplient par a.",
+   "La case verte, a³, est le neutre, avec r = 3.",
+   "La case violette, a², est l’inverse de a."
+  ],
+  "a_voir": "Le neutre et l’inverse sont des puissances de a, donc dans H."
+ },
+ {
+  "code": "46-267",
+  "a_dire": "Les entiers positifs sont stables par addition mais ne forment pas un sous-groupe : 1 n’a pas d’opposé dedans.",
+  "legende_titre": "Stable, mais sans opposés",
+  "lecture": [
+   "Les points bleus sont les entiers positifs 1, 2, 3, 4.",
+   "L’arc orange montre 1 + 2 = 3, qui reste dedans.",
+   "Le cercle rouge, −1, est l’opposé de 1 et il n’est pas dans l’ensemble."
+  ],
+  "a_voir": "Le résultat de l’addition reste dedans, mais l’opposé de 1 manque."
+ },
+ {
+  "code": "46-268",
+  "a_dire": "Le neutre engendre le plus petit sous-groupe, réduit à un élément, comme l’engendrement à partir de rien.",
+  "legende_titre": "Le plus petit sous-groupe",
+  "lecture": [
+   "Sur l’horloge à 12 heures, le rond bleu est 0.",
+   "La boucle orange montre que les multiples de 0 retombent toujours sur 0.",
+   "À droite, l’égalité donne le sous-groupe réduit à {0}."
+  ],
+  "a_voir": "Les multiples de 0 sont tous égaux à 0 : un seul élément."
+ },
+ {
+  "code": "46-269",
+  "a_dire": "Un élément d’ordre infini : ses multiples ne reviennent jamais au neutre, le sous-groupe est infini.",
+  "legende_titre": "Des pas qui ne reviennent jamais",
+  "lecture": [
+   "Le rond bleu est 1 et le cercle rouge est 0.",
+   "Les flèches orange sont les pas de 1 en 1 vers la droite, sans fin.",
+   "Aucune ne retombe sur 0."
+  ],
+  "a_voir": "Les multiples de 1 ne retombent jamais sur 0 : l’ordre est infini."
+ },
+ {
+  "code": "46-270",
+  "a_dire": "L’identité est paire : zéro échange ou deux échanges égaux, signature +1.",
+  "legende_titre": "L’identité est une permutation paire",
+  "lecture": [
+   "Sur la droite, chaque nombre est un nombre d’échanges.",
+   "Les points verts, 0 et 2, sont possibles : (1) sans échange, ou (1 2)(1 2).",
+   "Les cercles rouges, 1 et 3, sont impairs."
+  ],
+  "a_voir": "L’identité s’écrit avec un nombre pair d’échanges, donc sg = +1."
+ },
+ {
+  "code": "46-271",
+  "a_dire": "Un 1-cycle est le neutre, un 2-cycle est son propre inverse.",
+  "legende_titre": "Les deux cas extrêmes",
+  "lecture": [
+   "Dans la ligne du haut, la carte 4 bleue a une boucle orange : elle ne bouge pas.",
+   "Dans la ligne du bas, les deux flèches orange échangent les cartes 4 et 5.",
+   "Faire cet échange deux fois remet tout en place."
+  ],
+  "a_voir": "(4) ne change rien ; (4 5) se défait en le faisant une seconde fois."
+ },
+ {
+  "code": "46-272",
+  "a_dire": "Pour n = 1, la seule racine est 1, et φ(1) = 1.",
+  "legende_titre": "Le plus petit cas : n = 1",
+  "lecture": [
+   "Le cercle gris est celui des nombres de module 1.",
+   "Le seul point bleu, 1, est la solution de z¹ = 1.",
+   "En vert, le nombre de générateurs est 1."
+  ],
+  "a_voir": "Il n’y a qu’une racine, et elle engendre le groupe {1}."
+ }
+]

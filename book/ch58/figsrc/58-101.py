@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 10, 70, 12, 0, 3, 1, arrow_right=False)
+text(ax, 79, 12, 'degré', 'fixe', 's')
+box(ax, 4, 20, f(2) + 12 - 4, 36, 'sujet', fill=False, dash=True, lw=0.9)
+text(ax, 22, 52, r'$P_2$ : degré $\leq 2$', 'sujet', 's', weight='bold')
+disc(ax, f(1), 30, 2.2, 'sujet'); text(ax, f(1), 36, r'$x$', 'sujet', 's')
+disc(ax, f(2), 30, 2.2, 'sujet'); text(ax, f(2), 36, r'$x^2$', 'sujet', 's')
+disc(ax, f(2), 44, 2.2, 'resultat'); text(ax, f(2), 50, r'$x+x^2$', 'resultat', 's')
+disc(ax, f(3), 30, 2.2, 'limite'); text(ax, f(3), 36, r'$x^3$', 'limite', 's')
+text(ax, f(3), 24, 'hors de $P_2$', 'limite', 's')
+arrow(ax, (f(1) + 2.6, 32), (f(2) - 2.6, 42), 'resultat', lw=0.8)
+save(fig, '58-101')

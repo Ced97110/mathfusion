@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+u = 5.8; o = (8, 14)
+P = lambda a, b: (o[0] + a * u, o[1] + b * u)
+arrow(ax, P(0, 0), P(12, 4), 'varie', lw=1.2)
+for k in range(1, 4):
+    a, b = P(3 * k, k)
+    line(ax, [(a, b - 1.4), (a, b + 1.4)], 'varie', lw=0.9)
+arrow(ax, P(0, -0.8), P(3, 0.2), 'sujet', lw=1.6)
+text(ax, P(1.5, -0.8)[0], P(1.5, -0.8)[1] - 4, r'$x = (3\,;\,1)$', 'sujet', 's')
+text(ax, P(8, 3.3)[0], P(8, 3.3)[1] + 6, r'$4x = (12\,;\,4)$', 'varie', 's')
+text(ax, 20, 48, r'$B(x, y) = 5$', 'sujet', 'm')
+text(ax, 64, 48, r'$B(4x, y) = 20$', 'resultat', 'm')
+text(ax, 60, 9, r'$20 = 4 \times 5$', 'resultat', 'm')
+text(ax, 20, 41, r'$y$ fixé : $(1\,;\,2)$', 'fixe', 's')
+save(fig, '71-053')

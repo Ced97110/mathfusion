@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+ox,oy,s=24,34,22
+P=lambda a,b:(ox+a*s,oy+b*s)
+line(ax,[P(-0.5,0),P(2.0,0)],'sujet',lw=1.0); line(ax,[P(0,-0.5),P(0,1.8)],'autre',lw=1.0)
+v=(1.5,1.2)
+line(ax,[P(v[0],0),P(*v)],'fixe',dash=True); line(ax,[P(0,v[1]),P(*v)],'fixe',dash=True)
+arrow(ax,P(0,0),P(*v),'resultat',lw=1.8)
+arrow(ax,P(0,0),P(v[0],0),'sujet',lw=1.8); arrow(ax,P(0,0),P(0,v[1]),'autre',lw=1.8)
+text(ax,P(0.75,0)[0],P(0.75,0)[1]-4,r'$u\in U$','sujet','s'); text(ax,P(0,0.6)[0]-9,P(0,0.6)[1],r'$u^{\prime}\in U^{\prime}$','autre','s')
+text(ax,P(0.6,0.62)[0],P(0.6,0.62)[1]+7,r'$v$','resultat','m')
+text(ax,44,74,r'$V=U\oplus U^{\prime}$','encre','l')
+text(ax,44,10,r'$v=u+u^{\prime}$ : une seule écriture','resultat','s')
+text(ax,44,4,'somme = V, commun = 0','encre','s')
+save(fig,'80-065')

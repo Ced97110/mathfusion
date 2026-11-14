@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 22, 72, 'chemin 1', 'sujet', 's')
+box(ax, 2, 54, 40, 14, 'sujet', label='tableau 3 × 3 : déterminant')
+text(ax, 66, 72, 'chemin 2', 'autre', 's')
+box(ax, 46, 54, 40, 14, 'autre', label=r'$y$ remplacé par $s=x^2-2$', size='s')
+arrow(ax, (66, 53), (66, 44), 'varie', lw=1.0)
+box(ax, 46, 30, 40, 13, 'autre', label=r'$(x^2-2)^2+x^2-4$', size='s')
+arrow(ax, (22, 53), (36, 22), 'varie', lw=1.0)
+arrow(ax, (66, 29), (52, 22), 'varie', lw=1.0)
+text(ax, 77, 24.5, 'développer', 'varie', 's')
+box(ax, 20, 8, 48, 13, 'resultat', label=r'$x^4-3x^2$')
+save(fig, '70-108')

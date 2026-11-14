@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+yb, yt = 12, 54
+fn = numberline(ax, 10, 66, yb, -1, 1, step=0.5, labels=False, arrow_right=False)
+fa = numberline(ax, 10, 66, yt, -90, 90, step=30, labels=False, arrow_right=False)
+for v, s in ((-1, '−1'), (0, '0'), (1, '1')): text(ax, fn(v), yb - 3.6, s, 'fixe', 's')
+for v, s in ((-90, '−90°'), (0, '0°'), (90, '90°')): text(ax, fa(v), yt + 3.6, s, 'fixe', 's')
+text(ax, fn(0.5), yb - 3.6, '0,5', 'sujet', 's', weight='bold'); text(ax, fa(30), yt + 3.6, '30°', 'sujet', 's', weight='bold')
+for x, y, r in ((fn(0.5), yb, 'sujet'), (fa(30), yt, 'sujet'), (fn(-1), yb, 'sujet'), (fa(-90), yt, 'sujet')): disc(ax, x, y, 1.5, r)
+arrow(ax, (fn(0.5) - 1, yb + 3), (fa(30) - 1, yt - 3), 'varie', curve=-0.25)
+arrow(ax, (fa(30) + 1, yt - 3), (fn(0.5) + 1, yb + 3), 'resultat', curve=-0.25)
+text(ax, 36, 33, 'arcsin', 'varie', 's'); text(ax, 72, 33, 'sin', 'resultat', 's')
+arrow(ax, (fn(-1), yb + 3), (fa(-90), yt - 3), 'varie', both=True)
+text(ax, 80, yb, 'nombre', 'fixe', 's'); text(ax, 80, yt, 'angle', 'fixe', 's')
+save(fig, '33-101')

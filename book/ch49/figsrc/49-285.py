@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 56, 'centre d’un groupe de 9 éléments', 'sujet', 'm')
+box(ax, 3, 30, 24, 12, 'fixe', label=r'$|C|=1$')
+box(ax, 32, 30, 24, 12, 'limite', label=r'$|C|=3$')
+box(ax, 61, 30, 24, 12, 'resultat', label=r'$|C|=9$')
+text(ax, 15, 25, 'exclu', 'fixe', 's')
+text(ax, 44, 25, 'impossible', 'limite', 's')
+arrow(ax, (44, 43), (73, 43), 'varie', curve=-0.45)
+text(ax, 58, 52, 'si 3, tout commute', 'varie', 's')
+text(ax, 44, 12, 'alors le centre a 9 éléments, pas 3', 'limite', 'm')
+text(ax, 44, 4.5, 'contradiction : 3 est impossible', 'limite', 's')
+save(fig, '49-285')

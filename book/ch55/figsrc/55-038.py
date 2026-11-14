@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 17, 58, 'deux listes différentes', 'sujet', 's')
+text(ax, 44, 58, r'sur $\mathbb{Z}/3\mathbb{Z}$', 'encre', 's')
+text(ax, 71, 58, 'même fonction', 'limite', 's')
+box(ax, 2, 40, 30, 11, 'sujet', label='(0, −1, 0, 1)')
+box(ax, 2, 18, 30, 11, 'autre', label='(0, 0, 0, 0)')
+box(ax, 56, 27, 30, 14, 'limite', label='valeurs 0, 0, 0')
+arrow(ax, (33, 45), (55, 36), 'varie')
+arrow(ax, (33, 23), (55, 32), 'varie')
+box(ax, 4, 3, 80, 9, 'varie', label=r'sur $\mathbb{R}$ : cela arrive aussi ?')
+save(fig, '55-038')

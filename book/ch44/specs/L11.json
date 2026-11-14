@@ -1,0 +1,182 @@
+[
+ {
+  "code": "44-160",
+  "a_dire": "La preuve part des entiers, passe par l'indépendance du reste vis-à-vis du représentant, et arrive aux mêmes règles sur les classes.",
+  "legende_titre": "Trois étapes d'une preuve",
+  "lecture": [
+   "Le cadre gris est le départ : les règles vraies sur les entiers.",
+   "Le cadre orange au milieu est l'étape qui porte tout.",
+   "Le cadre vert est l'arrivée : les mêmes règles pour les classes.",
+   "Les deux lignes orange donnent 7 + 4 et 2 + 4, qui laissent le même reste modulo 5."
+  ],
+  "a_voir": "Tu vois que l'étape orange au milieu relie le départ à l'arrivée."
+ },
+ {
+  "code": "44-161",
+  "a_dire": "Pour 5 heures, l'addition est stable, a un neutre 0, des opposés, ne dépend pas de l'ordre, et compte 5 éléments : un groupe abélien d'ordre 5.",
+  "legende_titre": "L'horloge de 5 heures et ses propriétés",
+  "lecture": [
+   "Les cinq cercles sont les heures 0 à 4.",
+   "Le cercle vert est le 0, le neutre.",
+   "Les cercles orange 2 et 3 sont opposés.",
+   "Chaque cadre à droite dit une propriété, dans la couleur de ce qu'il désigne."
+  ],
+  "a_voir": "Tu vois cinq éléments et chaque propriété reliée à sa couleur."
+ },
+ {
+  "code": "44-162",
+  "a_dire": "Dans la table d'addition modulo 5, chaque ligne contient chaque nom une fois, et la colonne du 0 donne l'opposé.",
+  "legende_titre": "Lire la table d'addition modulo 5",
+  "lecture": [
+   "La grille a 5 lignes et 5 colonnes, numérotées de 0 à 4 en haut.",
+   "La ligne bleue est la ligne 2 : 2, 3, 4, 0, 1.",
+   "La case verte est le 0 de cette ligne.",
+   "Le numéro orange en haut est sa colonne, 3."
+  ],
+  "a_voir": "Tu vois que le 0 de la ligne 2 est dans la colonne 3 : l'opposé de 2 est 3."
+ },
+ {
+  "code": "44-163",
+  "a_dire": "Modulo 5, le 0 multiplié par n'importe quel nombre donne 0, jamais 1 : le 0 n'a pas d'inverse, donc ce n'est pas un groupe.",
+  "legende_titre": "Le 0 n'a pas d'inverse",
+  "lecture": [
+   "Les quatre cadres bleus sont les produits de 0 par 1, 2, 3, 4.",
+   "Les flèches vertes mènent toutes au cercle vert 0.",
+   "Le cadre rouge en pointillés est le 1, qui n'est jamais atteint."
+  ],
+  "a_voir": "Tu vois quatre flèches vers 0 et aucune vers 1."
+ },
+ {
+  "code": "44-164",
+  "a_dire": "Modulo 6, sans le 0, le produit de 2 par k ne donne jamais 1, et 2 fois 3 donne 0, qui sort de l'ensemble.",
+  "legende_titre": "Sans le 0, 2 reste sans inverse",
+  "lecture": [
+   "La ligne grise est k de 1 à 5.",
+   "La ligne du dessous donne 2 fois k modulo 6 : 2, 4, 0, 2, 4.",
+   "La case rouge est le 0, qui sort de l'ensemble.",
+   "Le 1 n'apparaît dans aucune case."
+  ],
+  "a_voir": "Tu vois que la ligne des produits ne contient jamais 1."
+ },
+ {
+  "code": "44-165",
+  "a_dire": "Dans la table de multiplication modulo 8, le 1 apparaît une fois dans chaque ligne 1, 3, 5, 7, sur la diagonale, et jamais dans les autres lignes.",
+  "legende_titre": "Où est le 1 dans la table modulo 8",
+  "lecture": [
+   "La grille a 8 lignes et 8 colonnes, de 0 à 7.",
+   "Les lignes bleues sont 1, 3, 5, 7.",
+   "Les cases vertes contiennent 1 : une par ligne bleue, sur la diagonale.",
+   "Les lignes grises n'ont aucune case verte."
+  ],
+  "a_voir": "Tu vois quatre cases vertes sur la diagonale et rien de vert dans les lignes grises."
+ },
+ {
+  "code": "44-166",
+  "a_dire": "Dans les lignes 2, 4, 6 modulo 8, tous les nombres sont pairs : le facteur 2 commun avec 8 empêche d'obtenir 1.",
+  "legende_titre": "Trois lignes, que des pairs",
+  "lecture": [
+   "Les trois bandes orange sont les lignes 2, 4, 6 de la table modulo 8.",
+   "La bande du haut montre ses nombres : 0, 2, 4, 6, 0, 2, 4, 6.",
+   "Le texte rouge dit que 1, impair, n'y est pas."
+  ],
+  "a_voir": "Tu vois que chaque nombre de ces lignes est pair."
+ },
+ {
+  "code": "44-167",
+  "a_dire": "k est inversible modulo n exactement quand son PGCD avec n vaut 1 : modulo 8, c'est vrai pour 1, 3, 5, 7 et faux pour 2, 4, 6.",
+  "legende_titre": "Inversible : PGCD égal à 1",
+  "lecture": [
+   "Les cadres verts 1, 3, 5, 7 ont un PGCD de 1 avec 8 : ils ont un inverse.",
+   "Les cadres rouges 2, 4, 6 ont un PGCD plus grand que 1 : ils n'en ont pas."
+  ],
+  "a_voir": "Tu vois deux groupes séparés par la valeur du PGCD avec 8."
+ },
+ {
+  "code": "44-168",
+  "a_dire": "Si PGCD(k, n) = 1, Bézout donne k u + n v = 1, donc k u est congru à 1 modulo n et u est un inverse de k.",
+  "legende_titre": "Du PGCD 1 à l'inverse",
+  "lecture": [
+   "Le cadre gris est le départ : PGCD de 3 et 8 égal à 1.",
+   "Le cadre orange est l'identité de Bézout.",
+   "Les neuf cases sont 3 fois 3 : huit cases grises forment un multiple de 8, la case verte est le reste 1."
+  ],
+  "a_voir": "Tu vois que 9 se découpe en 8 plus 1, donc l'inverse de 3 est 3."
+ },
+ {
+  "code": "44-169",
+  "a_dire": "Pour trouver l'inverse de 5 modulo 13, on écrit 5 × 8 + 13 × (−3) = 1 : le nombre qui multiplie 5, c'est-à-dire 8, est l'inverse.",
+  "legende_titre": "Trouver l'inverse de 5 modulo 13",
+  "lecture": [
+   "La bande a 40 cases : trois blocs gris de 13 et une case verte, le reste 1.",
+   "Le cadre orange donne la combinaison de 5 et de 13 qui vaut 1.",
+   "Le nombre qui multiplie 5 est 8."
+  ],
+  "a_voir": "Tu vois que 40 est trois fois 13 plus 1."
+ },
+ {
+  "code": "44-170",
+  "a_dire": "Si k b est congru à 1 modulo n, un diviseur commun de k et n divise leur différence, qui est 1 : il ne peut valoir que 1.",
+  "legende_titre": "Un diviseur commun divise 1",
+  "lecture": [
+   "Le cadre bleu est 2 fois b, le cadre gris est 8 fois m.",
+   "Le 2 divise les deux.",
+   "Le cadre orange est leur différence, qui vaut 1.",
+   "Le cadre rouge dit que 2 ne peut pas diviser 1."
+  ],
+  "a_voir": "Tu vois que la différence 1 devrait être divisée par 2 : c'est faux."
+ },
+ {
+  "code": "44-171",
+  "a_dire": "U(8) garde, parmi les 8 classes, seulement celles qui ont un inverse, avec la multiplication : 4 éléments, un groupe.",
+  "legende_titre": "U(8) face à ses deux voisins",
+  "lecture": [
+   "À gauche, l'addition modulo 8 : 8 cercles, un groupe.",
+   "Au milieu, la multiplication modulo 8 : 8 cercles, dont 4 rouges sans inverse, un monoïde.",
+   "À droite, U(8) : les 4 cercles bleus 1, 3, 5, 7."
+  ],
+  "a_voir": "Tu vois que U(8) est le milieu moins les cercles rouges."
+ },
+ {
+  "code": "44-172",
+  "a_dire": "U(n) est un signe court pour le groupe des classes de PGCD 1 avec n, avec la multiplication ; le module n reste dans l'écriture.",
+  "legende_titre": "Les deux morceaux de U(n)",
+  "lecture": [
+   "La lettre U en bleu renvoie au cadre bleu : les unités.",
+   "Le (n) en orange renvoie au cadre orange : le module gardé.",
+   "Le cadre vert donne le cas n = 8."
+  ],
+  "a_voir": "Tu vois chaque morceau du signe relié à son sens."
+ },
+ {
+  "code": "44-173",
+  "a_dire": "U(8) est le groupe {1, 3, 5, 7} : sa table complète a 4 lignes, chacune contient 1, 3, 5, 7 une fois.",
+  "legende_titre": "La table de U(8)",
+  "lecture": [
+   "La grille a 4 lignes et 4 colonnes : 1, 3, 5, 7.",
+   "La ligne bleue est la ligne 3 : 3, 1, 7, 5.",
+   "La case verte est le 1 de cette ligne."
+  ],
+  "a_voir": "Tu vois que la ligne 3 contient 1, 3, 5, 7 chacun une fois."
+ },
+ {
+  "code": "44-174",
+  "a_dire": "Dans U(8), chaque élément multiplié par lui-même donne 1 : chaque élément est son propre inverse.",
+  "legende_titre": "Chaque élément est son propre inverse",
+  "lecture": [
+   "Chaque cadre bleu est un élément multiplié par lui-même : 1 fois 1, 3 fois 3, 5 fois 5, 7 fois 7.",
+   "Les flèches vertes mènent au cercle vert 1, le neutre, qui est le reste modulo 8."
+  ],
+  "a_voir": "Tu vois quatre produits qui arrivent tous au même 1."
+ },
+ {
+  "code": "44-175",
+  "a_dire": "Deux groupes d'ordre 4 peuvent avoir des tables différentes : dans (Z4, +), 1 + 1 n'est pas le neutre ; dans U(8), chaque élément fois lui-même est le neutre, comme dans le rectangle.",
+  "legende_titre": "Deux groupes de 4 éléments, deux tables",
+  "lecture": [
+   "À gauche, les cercles gris 0, 1, 2, 3 de l'addition modulo 4 : 1 + 1 donne 2, pas 0.",
+   "À droite, les cercles bleus 1, 3, 5, 7 de U(8) : chacun fois lui-même donne 1.",
+   "Le rectangle violet a la même table que U(8)."
+  ],
+  "a_voir": "Tu vois que le même nombre d'éléments ne donne pas la même table."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+box(ax, 2, 24, 30, 22, 'autre', label='ℤ/2ℤ\n1 + 1 = 0', size='m')
+box(ax, 56, 24, 30, 22, 'sujet', label='ℂ\n1 + 1 = 2', size='m')
+arrow(ax, (34, 35), (54, 35), 'limite', lw=1.3)
+text(ax, 44, 40.5, 'contenu ?', 'limite', 's')
+line(ax, [(40.5, 31.5), (47.5, 38.5)], 'limite', lw=1.6)
+line(ax, [(40.5, 38.5), (47.5, 31.5)], 'limite', lw=1.6)
+text(ax, 44, 14, 'son 1 serait le 1 de ℂ : 1 + 1 = 0 serait vrai dans ℂ', 'encre', 's')
+text(ax, 44, 7, 'or dans ℂ, 1 + 1 = 2 : impossible', 'limite', 'm')
+save(fig, '62-007')

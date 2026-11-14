@@ -1,0 +1,193 @@
+[
+ {
+  "code": "61-175",
+  "a_dire": "La preuve part d'une droite et d'un cercle, remplace y par x + 1, obtient une équation du second degré et place les points communs dans F_i(√Δ).",
+  "legende_titre": "De la droite et du cercle à l'équation du second degré",
+  "lecture": [
+   "Le cercle bleu a pour équation x² + y² = 4.",
+   "La droite violette est y = x + 1 ; elle coupe le cercle en deux points verts.",
+   "La case orange est l'étape décisive : remplacer y par x + 1.",
+   "La case bleue est l'équation obtenue, la grise son discriminant 28, la verte l'endroit où sont les solutions."
+  ],
+  "a_voir": "Une seule substitution transforme deux équations en une équation du second degré."
+ },
+ {
+  "code": "61-176",
+  "a_dire": "L'équation d'un cercle garde la forme x² + y² + dx + ey + f = 0 ; seuls d, e et f changent.",
+  "legende_titre": "Ce qui change et ce qui reste dans l'équation d'un cercle",
+  "lecture": [
+   "La ligne bleue du haut est la forme de l'équation, la même pour tous les cercles.",
+   "Les cases orange d, e, f sont les trois nombres qui changent.",
+   "La première ligne grise donne 0, 0 et −4 pour le cercle de rayon 2 centré à l'origine.",
+   "La seconde donne −2, −4 et −20 pour le cercle de rayon 5 centré en (1 ; 2)."
+  ],
+  "a_voir": "La forme est fixe, seuls trois nombres varient d'un cercle à l'autre."
+ },
+ {
+  "code": "61-177",
+  "a_dire": "Le discriminant est calculé avec des éléments du corps ; sa racine est soit déjà dans le corps (degré 1), soit nouvelle (degré 2).",
+  "legende_titre": "Deux discriminants, deux hauteurs d'étage",
+  "lecture": [
+   "Le titre bleu rappelle comment on calcule Δ.",
+   "À gauche, Δ = 25 : la racine vaut 5, déjà dans les fractions, donc une seule case verte et le degré 1.",
+   "À droite, Δ = 28 : la racine n'est pas une fraction, donc une case orange s'ajoute au-dessus des fractions.",
+   "La flèche orange indique l'étage de degré 2."
+  ],
+  "a_voir": "L'étage ne dépend que de Δ : degré 1 si la racine est déjà dans le corps, degré 2 sinon."
+ },
+ {
+  "code": "61-178",
+  "a_dire": "L'exemple donne 2x² + 2x − 3 = 0, Δ = 28, x = (−1 ± √7)/2, donc une seule racine carrée : celle de 7.",
+  "legende_titre": "Le calcul de l'exemple, pas à pas",
+  "lecture": [
+   "Chaque case est une étape du calcul, de haut en bas.",
+   "La case bleue est le départ, les cases orange sont les équations obtenues.",
+   "La case grise donne Δ = 28.",
+   "La case verte dit que les solutions sont dans ℚ(√7)."
+  ],
+  "a_voir": "Une seule racine carrée apparaît dans ce cas précis."
+ },
+ {
+  "code": "61-179",
+  "a_dire": "Pour deux cercles, on soustrait les équations : les carrés disparaissent et il reste une droite.",
+  "legende_titre": "Soustraire deux cercles donne une droite",
+  "lecture": [
+   "Le grand cercle bleu est de rayon 2, le petit cercle violet de rayon 1.",
+   "Les deux cases du haut sont leurs équations ; on les soustrait.",
+   "La case orange 2x = 4 est ce qui reste : plus aucun carré.",
+   "La droite orange x = 2 est tracée à droite des cercles."
+  ],
+  "a_voir": "Après la soustraction, il reste l'équation d'une droite."
+ },
+ {
+  "code": "61-180",
+  "a_dire": "Quand Δ = 0, la droite touche le cercle en un seul point et √0 = 0 : aucun étage n'est ajouté.",
+  "legende_titre": "Droite tangente : rien n'est ajouté",
+  "lecture": [
+   "Le cercle est bleu, la droite orange y = 2 le touche.",
+   "Le point vert est l'unique point commun.",
+   "Les cases à droite donnent Δ = 0, puis √0 = 0.",
+   "La case verte dit qu'aucun étage n'est ajouté."
+  ],
+  "a_voir": "Un seul point commun : la racine est 0, déjà dans le corps."
+ },
+ {
+  "code": "61-181",
+  "a_dire": "Quand Δ < 0, la droite ne coupe pas le cercle : aucun point n'est produit, donc aucun étage n'est ajouté.",
+  "legende_titre": "Droite qui ne rencontre pas le cercle",
+  "lecture": [
+   "Le cercle est bleu, la droite rouge y = 3 passe au-dessus.",
+   "Entre les deux, aucun point commun.",
+   "Les cases à droite donnent x² = −5, puis aucun x réel.",
+   "La dernière case rouge dit qu'aucun point n'est produit."
+  ],
+  "a_voir": "Pas de point, donc pas de nombre nouveau."
+ },
+ {
+  "code": "61-182",
+  "a_dire": "Chaque tracé ajoute au plus une racine carrée, donc multiplie le degré par 2 au plus : le degré est une puissance de 2.",
+  "legende_titre": "Chaque tracé double le degré au plus",
+  "lecture": [
+   "Chaque case est le degré du corps après un tracé, de haut en bas : 1, 2, 4, 8.",
+   "La largeur de la case est proportionnelle au degré.",
+   "Chaque flèche est un tracé : multiplication par 2 au plus.",
+   "Après trois tracés, le degré est au plus 2 × 2 × 2 = 8."
+  ],
+  "a_voir": "Le degré ne peut que doubler à chaque tracé."
+ },
+ {
+  "code": "61-183",
+  "a_dire": "Les degrés 1, 2, 4, 8 sont des puissances de 2 (cases vertes) ; 3, 5, 6, 7 n'en sont pas (cases rouges).",
+  "legende_titre": "L'échelle des degrés de 1 à 8",
+  "lecture": [
+   "La colonne montre les degrés de 1 à 8, du bas vers le haut.",
+   "Les cases vertes sont 1, 2, 4 et 8.",
+   "Les cases rouges sont 3, 5, 6 et 7.",
+   "À droite : √2 est en 2, √2 + √3 en 4, ∛2 et cos 20° en 3."
+  ],
+  "a_voir": "Deux nombres de problèmes différents tombent dans la même case rouge, la 3."
+ },
+ {
+  "code": "61-184",
+  "a_dire": "Un nombre dont le degré n'est pas une puissance de 2 n'est jamais constructible ; √2, de degré 2, l'est.",
+  "legende_titre": "Degré 2 contre degré 3",
+  "lecture": [
+   "À gauche, le carré de côté 1 et sa diagonale verte √2, de degré 2.",
+   "À droite, la case rouge ∛2, de degré 3.",
+   "Le degré 2 est une puissance de 2 : constructible.",
+   "Le degré 3 n'en est pas une : jamais constructible."
+  ],
+  "a_voir": "Le degré décide : puissance de 2 ou non."
+ },
+ {
+  "code": "61-185",
+  "a_dire": "Le cube de volume 2 a pour arête ∛2, de degré 3 ; 3 n'est pas une puissance de 2, donc la duplication est impossible.",
+  "legende_titre": "Du cube de volume 2 au degré de son arête",
+  "lecture": [
+   "Le cube bleu a un volume de 1 et une arête de 1.",
+   "Le cube orange a un volume de 2 et une arête d'environ 1,26.",
+   "Les cases du haut : a³ = 2, puis a = ∛2, puis degré 3.",
+   "La case rouge conclut : duplication impossible."
+  ],
+  "a_voir": "L'impossibilité vient du degré 3 de l'arête."
+ },
+ {
+  "code": "61-186",
+  "a_dire": "Un polynôme de degré 3 qui se factorise a un facteur de degré 1, donc une racine rationnelle.",
+  "legende_titre": "Les façons de découper le degré 3",
+  "lecture": [
+   "La barre bleue est le polynôme de degré 3.",
+   "Au cas 1, il se découpe en degré 1 (vert) et degré 2 (gris).",
+   "Au cas 2, il se découpe en trois degrés 1 verts.",
+   "Dans les deux cas, il y a une case verte de degré 1."
+  ],
+  "a_voir": "Un facteur de degré 1 est toujours présent."
+ },
+ {
+  "code": "61-187",
+  "a_dire": "La preuve part de p/q irréductible avec p³ = 2q³, montre par les parités que p et q sont pairs, ce qui est contradictoire.",
+  "legende_titre": "Parités de p et de q",
+  "lecture": [
+   "La case bleue du haut est le départ.",
+   "Les trois cases orange, reliées par la barre, sont l'étape décisive : les parités.",
+   "La case rouge du bas est la contradiction : p et q pairs.",
+   "Les flèches donnent l'ordre des étapes."
+  ],
+  "a_voir": "Les deux nombres pairs contredisent le fait que la fraction est irréductible."
+ },
+ {
+  "code": "61-188",
+  "a_dire": "Le corps ℚ(∛2) a trois briques : 1, ∛2 et son carré ; le degré 3 n'est pas une puissance de 2, donc ∛2 n'est pas constructible.",
+  "legende_titre": "Trois briques, degré 3, case rouge",
+  "lecture": [
+   "Les trois cases bleues sont 1, ∛2 et (∛2)².",
+   "L'accolade donne leur nombre : degré 3.",
+   "La flèche orange mène à la case 3 de l'échelle, en rouge.",
+   "Le texte rouge conclut que ∛2 n'est pas constructible."
+  ],
+  "a_voir": "Le degré 3 tombe dans une case qui n'est pas une puissance de 2."
+ },
+ {
+  "code": "61-189",
+  "a_dire": "On sait partager 90° en trois angles de 30°, mais pas 60° en trois angles de 20°.",
+  "legende_titre": "Partager 90° et partager 60°",
+  "lecture": [
+   "À gauche, l'angle de 90° est coupé en trois angles de 30° (vert).",
+   "À droite, l'angle de 60° devrait être coupé en trois angles de 20° (rouge en pointillé).",
+   "Le vert indique constructible, le rouge impossible."
+  ],
+  "a_voir": "Le partage en trois est possible pour 90° et impossible pour 60°."
+ },
+ {
+  "code": "61-190",
+  "a_dire": "Construire l'angle de 20° revient à construire le nombre a = cos 20°, abscisse du point P du cercle de rayon 1.",
+  "legende_titre": "Un angle devient un nombre",
+  "lecture": [
+   "Le cercle gris a un rayon de 1.",
+   "Le segment bleu, à 20° de l'axe, mène au point P.",
+   "Le pointillé vert descend de P vers l'axe : son pied est le nombre a = cos 20°.",
+   "Ce nombre vaut environ 0,94."
+  ],
+  "a_voir": "Connaître le point P revient à connaître le nombre a."
+ }
+]

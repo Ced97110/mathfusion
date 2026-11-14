@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 38, 26, 12, 'sujet', label=r'$x^2-4$')
+box(ax, 63, 38, 22, 12, 'resultat', label='0')
+arrow(ax, (29, 44), (63, 44), 'varie', lw=1.8)
+text(ax, 46, 49, r'$\varphi_{2}$', 'varie', 'l')
+text(ax, 16, 55, 'polynôme', 'sujet', 's')
+text(ax, 74, 55, 'valeur', 'resultat', 's')
+box(ax, 36, 14, 20, 10, 'fixe', label=r'$\alpha=2$')
+arrow(ax, (46, 24), (46, 41), 'fixe')
+text(ax, 46, 6, 'valeur choisie', 'fixe', 's')
+text(ax, 46, 36, '$x$ remplacé', 'varie', 's')
+save(fig, '54-167')

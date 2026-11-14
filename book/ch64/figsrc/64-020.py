@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 22, 54, 44, 12, 'sujet', label=r'$S_4$ : 24 éléments', size='s')
+box(ax, 22, 8, 44, 12, 'sujet', label=r'$A_4$ : 12 éléments', size='s')
+arrow(ax, (44, 53.5), (44, 20.5), 'varie', lw=1.3)
+text(ax, 2, 43, 'sens 1', 'fixe', 's', ha='left', weight='bold')
+text(ax, 2, 36, r'$A_4$ normal dans $S_4$', 'fixe', 's', ha='left')
+text(ax, 48, 43, 'sens 2', 'resultat', 's', ha='left', weight='bold')
+text(ax, 48, 36, r'$S_4/A_4$ ≅ ℤ/2', 'resultat', 's', ha='left')
+text(ax, 48, 30, '24 ÷ 12 = 2', 'resultat', 's', ha='left')
+save(fig, '64-020')

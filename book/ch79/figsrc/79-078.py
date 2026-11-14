@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+text(ax, 44, 86, r'$\vee$ : PPCM', 'encre', 's')
+box(ax, 2, 66, 34, 10, 'sujet', label=r'$4\vee 6$'); box(ax, 2, 52, 34, 10, 'autre', label=r'$6\vee 4$')
+box(ax, 58, 56, 26, 14, 'resultat', label='12')
+arrow(ax, (36, 71), (58, 65), 'fixe'); arrow(ax, (36, 57), (58, 61), 'fixe')
+line(ax, [(2, 46), (86, 46)], 'fixe', dash=True)
+text(ax, 44, 40, r'$\wedge$ : PGCD', 'encre', 's')
+box(ax, 2, 20, 34, 10, 'sujet', label=r'$12\wedge 20$'); box(ax, 2, 6, 34, 10, 'autre', label=r'$20\wedge 12$')
+box(ax, 58, 10, 26, 14, 'resultat', label='4')
+arrow(ax, (36, 25), (58, 19), 'fixe'); arrow(ax, (36, 11), (58, 15), 'fixe')
+save(fig, '79-078')

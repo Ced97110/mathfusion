@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 54, 4, 32, 28, 'autre', fill=True)
+text(ax, 70, 27, r'$A$', 'autre', 'l')
+text(ax, 70, 11, r'$e^0=1$', 'autre', 'm')
+box(ax, 2, 44, 24, 12, 'sujet', label=r'$u=1$', size='m')
+arrow(ax, (26, 50), (54, 50), 'varie')
+text(ax, 40, 54, r'$e^u$', 'varie', 'm')
+box(ax, 54, 40, 32, 20, 'sujet', label=r'$e\approx 2{,}718$', size='m')
+text(ax, 70, 36, r'hors de $A$ : transcendant', 'sujet', 's') if False else None
+text(ax, 70, 64, r'hors de $A$', 'sujet', 's')
+box(ax, 2, 12, 24, 12, 'fixe', label=r'$u=0$', size='m')
+arrow(ax, (26, 18), (54, 18), 'varie')
+text(ax, 40, 22, r'$e^u$', 'varie', 'm')
+text(ax, 14, 6, 'aucune conclusion', 'fixe', 's')
+text(ax, 14, 62, 'non nul : on conclut', 'sujet', 's')
+save(fig, '66-088')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,6,61,r'$2^3 \times 5^4$ : 3 fois 2, 4 fois 5','sujet','m',ha='left')
+for i in range(7): box(ax,4+8*i,46,7,8,'sujet' if i<3 else 'autre',label='2' if i<3 else '5',r=0.6)
+text(ax,62,50,'= 5 000','encre','m',ha='left')
+text(ax,44,38,'≠','limite','xl')
+text(ax,6,31,r'$(2 \times 5)^7$ : 7 fois 10','fixe','m',ha='left')
+for i in range(7): box(ax,4+8*i,14,7,8,'fixe',label='10',r=0.6)
+brace(ax,4,59,14,'fixe',label='7 facteurs égaux à 10')
+text(ax,62,18,'= 10 000 000','encre','m',ha='left')
+save(fig,'14-029')

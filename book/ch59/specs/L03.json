@@ -1,0 +1,387 @@
+[
+ {
+  "code": "59-065",
+  "a_dire": "Toute matrice sur un anneau principal est équivalente à une matrice diagonale où chaque nombre divise le suivant.",
+  "legende_titre": "Un tableau quelconque devient diagonal",
+  "lecture": [
+   "Le tableau bleu à gauche est un tableau quelconque, de lignes (4, 6) et (6, 4).",
+   "La flèche orange indique que l’on agit sur les lignes et sur les colonnes.",
+   "Le tableau vert à droite a pour lignes (2, 0) et (0, 10) : seuls 2 et 10 sont non nuls ; les cases grises sont les zéros hors de la diagonale.",
+   "Le cadre du bas dit que chaque nombre de la diagonale divise le suivant : 2 divise 10."
+  ],
+  "a_voir": "Le tableau de départ mène à un tableau diagonal, dont les nombres 2 et 10 se divisent dans l’ordre."
+ },
+ {
+  "code": "59-066",
+  "a_dire": "Le signe diag(…) écrit un tableau dont tous les nombres hors de la diagonale sont nuls, en ne donnant que les nombres de la diagonale.",
+  "legende_titre": "Écrire un tableau diagonal en peu de signes",
+  "lecture": [
+   "Le rectangle bleu à gauche contient le signe diag(2, 10) : on n’y écrit que 2 et 10.",
+   "Le tableau à droite est celui que ce signe désigne, de lignes (2, 0) et (0, 10).",
+   "Les deux cases bleues du tableau portent 2 et 10, sur la diagonale.",
+   "Les deux cases grises sont les zéros, que le signe sous-entend."
+  ],
+  "a_voir": "Les deux nombres du signe sont les deux cases bleues de la diagonale ; les cases grises sont des zéros."
+ },
+ {
+  "code": "59-067",
+  "a_dire": "Le signe d_i désigne le i-ième nombre de la diagonale, ce qui permet de parler de tous ces nombres à la fois.",
+  "legende_titre": "Un nom pour chaque nombre de la diagonale",
+  "lecture": [
+   "Le tableau a pour lignes (2, 0) et (0, 10).",
+   "La flèche de gauche relie le nom d un à la case bleue 2, le premier nombre de la diagonale.",
+   "La flèche de droite relie le nom d deux à la case bleue 10, le deuxième nombre.",
+   "Le texte vert du bas écrit que chaque nombre divise le suivant, ici 2 divise 10."
+  ],
+  "a_voir": "Chaque case bleue de la diagonale reçoit son nom d avec son numéro."
+ },
+ {
+  "code": "59-068",
+  "a_dire": "Le signe r compte les nombres non nuls de la diagonale ; les suivants sont nuls.",
+  "legende_titre": "Combien de nombres non nuls sur la diagonale",
+  "lecture": [
+   "Le tableau a trois lignes : (2, 0, 0), (0, 6, 0) et (0, 0, 0).",
+   "Les deux cases bleues, 2 et 6, sont les nombres non nuls de la diagonale.",
+   "L’accolade verte au-dessus des deux premières colonnes dit que r vaut 2.",
+   "La troisième colonne est marquée « nul » : son nombre de la diagonale est 0."
+  ],
+  "a_voir": "Deux nombres non nuls sur la diagonale, donc r = 2, puis un zéro."
+ },
+ {
+  "code": "59-069",
+  "a_dire": "Le signe a | b dit que a divise b, c’est-à-dire que b s’écrit a fois un autre nombre.",
+  "legende_titre": "Diviser, c’est ranger en groupes égaux",
+  "lecture": [
+   "En haut, dix disques sont rangés en cinq groupes de deux : 10 = 2 × 5, donc 2 divise 10.",
+   "En bas, dix disques sont rangés en groupes de quatre.",
+   "Il y a deux groupes de quatre, et deux disques rouges restent seuls dans le cadre en pointillés.",
+   "Il reste un reste : 4 ne divise pas 10."
+  ],
+  "a_voir": "Avec 2, tous les groupes sont complets ; avec 4, il reste deux disques rouges."
+ },
+ {
+  "code": "59-070",
+  "a_dire": "Les zéros « 0, …, 0 » de la formule disent que tous les nombres de la diagonale après le dernier non nul sont nuls.",
+  "legende_titre": "Des zéros jusqu’au bout de la diagonale",
+  "lecture": [
+   "Le tableau est diagonal, de diagonale 2, 6, 0.",
+   "La colonne 1 est marquée d un égale 2, et la colonne 2 est marquée d r égale 6 : 6 est le dernier nombre non nul.",
+   "La colonne 3 est marquée « zéro ».",
+   "L’accolade grise sous la troisième colonne dit « puis des zéros »."
+  ],
+  "a_voir": "Le dernier nombre non nul est 6 ; après lui, la diagonale ne porte que des zéros."
+ },
+ {
+  "code": "59-071",
+  "a_dire": "Le signe PAQ désigne le tableau A après toutes les opérations sur les lignes (P) et sur les colonnes (Q).",
+  "legende_titre": "Trois lettres pour tout un enchaînement",
+  "lecture": [
+   "Le tableau bleu au milieu est A, de lignes (4, 6) et (6, 4).",
+   "Le rectangle orange P, à sa gauche, résume les opérations sur les lignes.",
+   "Le rectangle orange Q, à sa droite, résume les opérations sur les colonnes.",
+   "Le tableau vert après le signe égal est le résultat : lignes (2, 0) et (0, 10)."
+  ],
+  "a_voir": "P est écrit à gauche de A, Q à droite, et le produit donne le tableau vert."
+ },
+ {
+  "code": "59-072",
+  "a_dire": "a divise b veut dire qu’il existe un c dans l’anneau D avec b = ac, et cela dépend de l’anneau.",
+  "legende_titre": "La divisibilité dépend de l’anneau",
+  "lecture": [
+   "Le rectangle vert du haut dit : dans les entiers, 2 divise 10, car 10 = 2 × 5.",
+   "À gauche, dans les entiers, 3 ne divise pas 5 : le c nécessaire, 5/3, n’est pas entier (rouge).",
+   "À droite, dans les réels, 3 divise 5, car 5 = 3 × 5/3 (vert).",
+   "La même paire de nombres, 3 et 5, répond non à gauche et oui à droite."
+  ],
+  "a_voir": "La paire 3 et 5 : refus en rouge dans les entiers, accord en vert dans les réels."
+ },
+ {
+  "code": "59-073",
+  "a_dire": "La chaîne de divisibilité choisit un seul tableau diagonal parmi les tableaux diagonaux qui décrivent le même module.",
+  "legende_titre": "Une chaîne pour garder une seule forme",
+  "lecture": [
+   "Le tableau gris de gauche est diag(6, 4) : 6 ne divise pas 4 (rouge).",
+   "Le tableau vert de droite est diag(2, 12) : 2 divise 12.",
+   "La flèche orange à deux pointes dit que les deux tableaux décrivent le même module.",
+   "Seul celui qui a la chaîne est gardé."
+  ],
+  "a_voir": "Deux tableaux pour le même module : seul celui de droite a un nombre qui divise le suivant."
+ },
+ {
+  "code": "59-074",
+  "a_dire": "La forme normale est le tableau diagonal choisi comme représentant parmi tous les tableaux équivalents à A.",
+  "legende_titre": "Un représentant choisi parmi beaucoup",
+  "lecture": [
+   "Le tableau bleu de gauche est A, de lignes (4, 6) et (6, 4).",
+   "Le tableau gris du milieu, de lignes (4, 6) et (2, −2), lui est équivalent.",
+   "Le tableau vert de droite, de lignes (2, 0) et (0, 10), lui est aussi équivalent : c’est la forme normale.",
+   "Les flèches à deux pointes relient des tableaux équivalents."
+  ],
+  "a_voir": "Trois tableaux équivalents ; le tableau vert diagonal est celui qui porte le nom de forme normale."
+ },
+ {
+  "code": "59-075",
+  "a_dire": "Les facteurs invariants de A sont les nombres de la diagonale de sa forme normale : une liste, qui en dit plus que le seul déterminant.",
+  "legende_titre": "Une liste de nombres attachée à la matrice",
+  "lecture": [
+   "Le tableau de gauche est la forme normale, de diagonale 2 et 12.",
+   "La flèche grise mène au déterminant, un seul nombre : 2 fois 12 égale 24.",
+   "La flèche bleue mène aux facteurs invariants : d un égale 2 et d deux égale 12.",
+   "Le rectangle bleu donne la liste entière des nombres de la diagonale."
+  ],
+  "a_voir": "Un seul nombre en gris pour le déterminant, une liste de deux nombres en bleu pour les facteurs invariants."
+ },
+ {
+  "code": "59-076",
+  "a_dire": "On met un tableau d’entiers sous forme diagonale en répétant la division euclidienne, avec la valeur absolue comme taille.",
+  "legende_titre": "Répéter la division pour créer des zéros",
+  "lecture": [
+   "Le tableau de gauche a pour lignes (4, 6) et (6, 4) ; le pivot 4 est en bleu.",
+   "La flèche orange dit : 6 = 1 × 4 + 2, on retranche, et il reste 2.",
+   "Le tableau de droite a pour lignes (4, 2) et (2, −4) : les deux restes, en orange, valent 2.",
+   "Les restes 2 sont plus petits que le pivot 4."
+  ],
+  "a_voir": "Après la division, les cases orange portent des restes plus petits que le pivot."
+ },
+ {
+  "code": "59-077",
+  "a_dire": "Étape 1 : si le tableau est nul, on s’arrête, car il est déjà diagonal et r vaut 0.",
+  "legende_titre": "Un tableau nul n’a rien à faire",
+  "lecture": [
+   "Le tableau de quatre cases grises ne contient que des zéros : A = 0.",
+   "Le texte sous le tableau dit qu’il est déjà diagonal.",
+   "La flèche orange dit que l’on s’arrête.",
+   "Le rectangle vert donne le résultat : r = 0, aucun nombre non nul."
+  ],
+  "a_voir": "Quatre zéros, une flèche d’arrêt et r = 0."
+ },
+ {
+  "code": "59-078",
+  "a_dire": "Étape 2 : on amène en position (1, 1) un coefficient non nul de plus petite valeur absolue, par un échange de lignes ou de colonnes.",
+  "legende_titre": "Placer le plus petit pivot en haut à gauche",
+  "lecture": [
+   "Le tableau de gauche a pour lignes (6, 4) et (4, 6) ; le 4 du haut, en bleu, est le plus petit nombre non nul.",
+   "La flèche orange est l’échange des deux colonnes, une opération de type III.",
+   "Le tableau de droite a pour lignes (4, 6) et (6, 4).",
+   "Le 4 en bleu est maintenant en position (1, 1)."
+  ],
+  "a_voir": "Le 4 bleu passe de la case en haut à droite à la case en haut à gauche."
+ },
+ {
+  "code": "59-079",
+  "a_dire": "Étape 3 : on divise chaque coefficient de la première ligne par a_11 et on retranche le quotient fois la colonne 1 ; il reste le reste.",
+  "legende_titre": "Diviser la première ligne par le pivot",
+  "lecture": [
+   "La ligne du haut est la première ligne avant : le pivot 4, en bleu, et le nombre 6.",
+   "À droite de cette ligne, la division écrit 6 = 1 × 4 + 2.",
+   "La flèche orange dit : on retranche 1 fois la colonne 1 de la colonne 2.",
+   "La ligne du bas, après, porte 4 et le reste 2 en orange : le reste n’est pas nul."
+  ],
+  "a_voir": "Le 6 devient le reste 2, qui n’est pas encore 0."
+ },
+ {
+  "code": "59-080",
+  "a_dire": "Étape 4 : un reste non nul, plus petit que le pivot, devient le nouveau pivot, jusqu’à ce qu’un reste soit nul.",
+  "legende_titre": "Les pivots successifs diminuent",
+  "lecture": [
+   "La droite graduée va de 0 à 4.",
+   "Le disque bleu en 4 est le premier pivot ; la première division est 6 = 1 × 4 + 2, et le reste 2 donne le disque orange.",
+   "La deuxième division est 4 = 2 × 2 + 0 : le reste est 0, le disque vert en 0 marque l’arrêt.",
+   "Les arcs orange vont toujours vers la gauche : le pivot diminue."
+  ],
+  "a_voir": "Les flèches ne vont que vers la gauche : 4, puis 2, puis 0."
+ },
+ {
+  "code": "59-081",
+  "a_dire": "Une valeur absolue entière positive qui diminue strictement à chaque tour finit par s’arrêter, après au plus autant de tours que sa valeur de départ.",
+  "legende_titre": "Un nombre entier qui baisse finit à zéro",
+  "lecture": [
+   "Quatre barres bleues portent 4, 2, 1 puis 0.",
+   "Les flèches orange relient chaque barre à la suivante : la valeur baisse d’au moins 1 par tour.",
+   "La dernière valeur, 0, est une ligne verte plate.",
+   "L’accolade grise du haut dit qu’il y a au plus 4 tours."
+  ],
+  "a_voir": "Les barres ne font que baisser, donc le nombre de tours est borné par 4."
+ },
+ {
+  "code": "59-082",
+  "a_dire": "Étape 5 : si un coefficient restant n’est pas divisible par a_11, on ajoute sa ligne à la ligne 1 et on revient à l’étape 3, ce qui fait baisser le pivot.",
+  "legende_titre": "Faire entrer un nombre non divisible dans la ligne 1",
+  "lecture": [
+   "Le tableau de gauche a pour lignes (2, 0) et (0, 3) ; le 3 est en orange et 2 ne divise pas 3.",
+   "La première flèche orange dit : on ajoute la ligne 2 à la ligne 1. Le tableau de droite a pour lignes (2, 3) et (0, 3) : le 3 est dans la ligne 1.",
+   "La seconde flèche orange mène à la division qui suit : 3 = 1 × 2 + 1.",
+   "Le reste 1 est plus petit que 2 : le pivot baisse de 2 à 1."
+  ],
+  "a_voir": "Le 3 orange entre dans la ligne 1, puis la division donne un reste plus petit que le pivot."
+ },
+ {
+  "code": "59-083",
+  "a_dire": "Étape 6 : on pose d_1 égal à a_11, puis on recommence sur la sous-matrice sans la première ligne ni la première colonne.",
+  "legende_titre": "Fixer d un, puis recommencer plus petit",
+  "lecture": [
+   "Le tableau a pour lignes (2, 0) et (0, 10).",
+   "Le rectangle bleu de gauche pose d un égale 2, relié à la case bleue 2.",
+   "Le cadre orange en pointillés entoure la sous-matrice : il ne reste que le nombre 10.",
+   "Le rectangle violet de droite pose d deux égale 10."
+  ],
+  "a_voir": "Une fois la première ligne et la première colonne retirées, il ne reste que la case 10."
+ },
+ {
+  "code": "59-084",
+  "a_dire": "On lit la forme finale de gauche à droite : d_1 est le plus petit morceau isolé, puis d_2 est isolé dans ce qui reste.",
+  "legende_titre": "Dans quel ordre lire la diagonale",
+  "lecture": [
+   "Le tableau a pour diagonale 2 et 10.",
+   "Le texte bleu du haut dit que d un, la case 2, est isolé d’abord.",
+   "Le texte orange du bas dit que d deux, la case 10, est isolé ensuite.",
+   "Le texte vert à droite écrit d un divise d deux : 2 divise 10."
+  ],
+  "a_voir": "La case bleue est isolée avant la case orange, et 2 divise 10."
+ },
+ {
+  "code": "59-085",
+  "a_dire": "La condition d_1 | d_2 vient de l’étape 5 : les opérations suivantes ne combinent que des multiples de d_1, donc le reste reste un multiple de d_1.",
+  "legende_titre": "Pourquoi d un divise d deux",
+  "lecture": [
+   "Le tableau a pour lignes (2, 0) et (0, 6) ; le pivot 2 est en bleu et le 6 en violet.",
+   "La flèche violette mène à une rangée de trois cases de valeur 2 : l’accolade violette écrit 6 = 3 × 2.",
+   "On retranche 2 fois 2 : les deux cases grises en pointillés sont retirées.",
+   "Il reste une case 2 : 6 − 2 × 2 = 2, un multiple de d1 = 2, donc 2 divise 6."
+  ],
+  "a_voir": "En retranchant des multiples de 2, il reste un multiple de 2 : c’est pourquoi 2 divise 6."
+ },
+ {
+  "code": "59-086",
+  "a_dire": "Dans un anneau principal sans division avec reste, la taille d’un élément est sa longueur, le nombre de ses facteurs premiers, au lieu de la valeur absolue.",
+  "legende_titre": "Une autre façon de mesurer la taille",
+  "lecture": [
+   "En haut, dans les entiers, la taille de 12 est sa valeur absolue : |12| = 12.",
+   "En bas, dans un anneau sans division avec reste, on découpe 12 en facteurs premiers.",
+   "Les trois cases violettes portent 2, 2 et 3.",
+   "L’accolade verte dit que la longueur de 12 est 3."
+  ],
+  "a_voir": "Le même nombre 12 a une taille de 12 en haut et une longueur de 3 en bas."
+ },
+ {
+  "code": "59-087",
+  "a_dire": "Un mineur d’ordre i est le déterminant d’une sous-matrice carrée i × i prise dans A ; un tableau a plusieurs mineurs du même ordre.",
+  "legende_titre": "Choisir un petit carré, puis calculer son déterminant",
+  "lecture": [
+   "Le tableau bleu à gauche est A, de lignes (4, 6) et (6, 4).",
+   "La flèche bleue mène aux quatre mineurs d’ordre 1 : les quatre cases 4, 6, 6 et 4.",
+   "La flèche violette mène au seul mineur d’ordre 2 : 4 × 4 − 6 × 6 = −20.",
+   "Le tableau entier est la seule sous-matrice 2 × 2."
+  ],
+  "a_voir": "Quatre petits carrés d’une case en bleu, et un seul grand carré 2 × 2 en violet."
+ },
+ {
+  "code": "59-088",
+  "a_dire": "Δ_i est le nombre obtenu en prenant tous les mineurs d’ordre i, puis leur PGCD.",
+  "legende_titre": "Le PGCD des mineurs d’un même ordre",
+  "lecture": [
+   "En haut, les quatre mineurs d’ordre 1, 4, 6, 6 et 4, mènent par le PGCD au rectangle vert Δ un égale 2.",
+   "En bas, le seul mineur d’ordre 2, −20, mène par la valeur absolue au rectangle vert Δ deux égale 20.",
+   "Chaque flèche orange indique l’opération faite.",
+   "Les rectangles verts sont les résultats."
+  ],
+  "a_voir": "Une rangée de mineurs donne un nombre Δ : 2 pour l’ordre 1, 20 pour l’ordre 2."
+ },
+ {
+  "code": "59-089",
+  "a_dire": "Le théorème 3.9 donne les d_i à partir des Δ_i : d_1 = Δ_1 et d_i = Δ_i / Δ_(i−1), à un inversible près.",
+  "legende_titre": "Retrouver les d i grâce aux Δ i",
+  "lecture": [
+   "Le tableau bleu à gauche est diag(6, 4).",
+   "Les rectangles violets donnent Δ un égale 2 et Δ deux égale 24.",
+   "Les rectangles verts donnent d un égale Δ un égale 2, et d deux égale Δ deux divisé par Δ un, soit 24 divisé par 2, égale 12.",
+   "Le texte rouge dit que ce ne sont pas les nombres 6 et 4 du tableau de départ."
+  ],
+  "a_voir": "La formule donne 2 et 12, et non les nombres 6 et 4 de la diagonale d’origine."
+ },
+ {
+  "code": "59-090",
+  "a_dire": "Chaque mineur de PA est une combinaison de mineurs de A, donc un nombre qui divise les mineurs de A divise ceux de PA.",
+  "legende_titre": "Un mineur de PA se coupe en mineurs de A",
+  "lecture": [
+   "Le tableau bleu de gauche est A, de lignes (4, 6) et (6, 4).",
+   "Le tableau de droite est PA : la ligne 2 de A est remplacée par la ligne 2 plus la ligne 1, soit (10, 10), en orange.",
+   "Le mineur d’ordre 2 de PA, en vert, vaut −20.",
+   "Il se coupe en 0, mineur de lignes égales (gris), plus −20, le mineur de A (bleu).",
+   "Le cadre du bas conclut : un nombre qui divise les mineurs de A divise ceux de PA."
+  ],
+  "a_voir": "Le mineur vert −20 de PA est égal à 0 plus le mineur −20 de A : un diviseur des mineurs de A divise celui de PA."
+ },
+ {
+  "code": "59-091",
+  "a_dire": "Deux matrices équivalentes ont les mêmes Δ_i, et pour une matrice diagonale Δ_i est le produit d_1 d_2 … d_i.",
+  "legende_titre": "Mêmes Δ i, et le produit sur la diagonale",
+  "lecture": [
+   "En haut, les rectangles A et PA, reliés par une flèche à deux pointes, ont les mêmes Δ i.",
+   "En bas, le tableau diagonal a pour diagonale 2 et 10, en bleu.",
+   "Le premier rectangle vert écrit Δ un égale d un égale 2.",
+   "Le second écrit Δ deux égale d un fois d deux, soit 2 fois 10, égale 20."
+  ],
+  "a_voir": "Sur la diagonale, Δ deux est le produit 2 × 10 de ses deux nombres."
+ },
+ {
+  "code": "59-092",
+  "a_dire": "Deux matrices sont équivalentes si et seulement si elles ont les mêmes facteurs invariants.",
+  "legende_titre": "Même liste de facteurs, même classe",
+  "lecture": [
+   "Chaque rangée relie un tableau à ses facteurs invariants.",
+   "Les deux premiers tableaux, de lignes (4, 6), (6, 4) et (2, 0), (0, 10), ont les mêmes facteurs : 2 et 10.",
+   "L’accolade verte dit qu’ils sont équivalents.",
+   "Le troisième tableau, en violet, a les facteurs 1 et 20 : il n’est pas équivalent aux autres."
+  ],
+  "a_voir": "Les deux rangées vertes ont la même liste 2, 10 ; la rangée violette a une autre liste."
+ },
+ {
+  "code": "59-093",
+  "a_dire": "Comparer les facteurs invariants est un test complet : le déterminant seul ne distingue pas deux tableaux, les facteurs les distinguent.",
+  "legende_titre": "Un test qui répond oui ou non",
+  "lecture": [
+   "Les deux formes normales du haut sont diag(1, 20) en bleu et diag(2, 10) en violet.",
+   "Les deux rectangles gris du milieu donnent le même déterminant, 20 : il ne les distingue pas.",
+   "Les deux rectangles du bas donnent les facteurs : 1 et 20 d’un côté, 2 et 10 de l’autre.",
+   "Le signe vert montre que ces listes sont différentes."
+  ],
+  "a_voir": "Même déterminant 20 des deux côtés, mais des listes de facteurs différentes."
+ },
+ {
+  "code": "59-094",
+  "a_dire": "Dans la base adaptée e′, les générateurs de K sont des multiples d’un seul vecteur de base : f′_i = d_i e′_i.",
+  "legende_titre": "Une base où chaque générateur porte un vecteur",
+  "lecture": [
+   "Les points gris forment le quadrillage de 0 à 10.",
+   "Les flèches bleues sont les vecteurs de base e′ un égale (2, 3) et e′ deux égale (1, 1).",
+   "La flèche verte courte va jusqu’à (4, 6) : c’est 2 fois e′ un, le générateur f′ un.",
+   "La flèche verte longue va jusqu’à (10, 10) : c’est 10 fois e′ deux, le générateur f′ deux."
+  ],
+  "a_voir": "Chaque flèche verte est sur la même demi-droite qu’une seule flèche bleue."
+ },
+ {
+  "code": "59-095",
+  "a_dire": "Les y_i, images des e′_i, engendrent M, et leurs seules relations sont d_i y_i = 0.",
+  "legende_titre": "Les seules relations sont d i fois y i égale 0",
+  "lecture": [
+   "Le rectangle bleu du haut est y un, la classe de (2, 3).",
+   "Fois 2, on obtient (4, 6), qui est dans K (violet), donc 2 y un égale 0 (vert).",
+   "Le rectangle bleu du bas est y deux, la classe de (1, 1).",
+   "Fois 10, on obtient (10, 10), qui est dans K, donc 10 y deux égale 0."
+  ],
+  "a_voir": "Chaque rangée finit par une relation verte : 2 y un = 0 et 10 y deux = 0."
+ },
+ {
+  "code": "59-096",
+  "a_dire": "Une combinaison des y_i est nulle si et seulement si chaque coefficient b_i est un multiple de d_i.",
+  "legende_titre": "Nulle quand chaque coefficient est un multiple",
+  "lecture": [
+   "Le titre demande : chaque b i est-il un multiple de d i ?",
+   "Première rangée, combinaison 4 y un plus 30 y deux : 2 divise 4 et 10 divise 30 (verts), donc elle vaut 0.",
+   "Seconde rangée, combinaison 3 y un plus 10 y deux : 2 ne divise pas 3 (rouge), même si 10 divise 10.",
+   "La combinaison de la seconde rangée n’est donc pas nulle."
+  ],
+  "a_voir": "Un seul coefficient qui n’est pas un multiple, le 3 rouge, suffit à rendre la combinaison non nulle."
+ }
+]

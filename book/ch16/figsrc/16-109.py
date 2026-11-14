@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 44, 40, 8, 'fixe', label='manteau : +3 €, total 44 €', size='s')
+box(ax, 45, 44, 40, 8, 'fixe', label='sac : +3 kg, total 44 kg', size='s')
+arrow(ax, (23, 44), (36, 34), 'fixe')
+arrow(ax, (65, 44), (52, 34), 'fixe')
+box(ax, 24, 26, 40, 8, 'sujet', label=r'$x + 3 = 44$')
+arrow(ax, (44, 26), (44, 16), 'varie')
+text(ax, 48, 21, 'retirer 3 des deux côtés', 'varie', 's', ha='left')
+box(ax, 24, 8, 40, 8, 'resultat', label=r'$x = 41$')
+save(fig, '16-109')

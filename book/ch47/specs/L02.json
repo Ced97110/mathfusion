@@ -1,0 +1,188 @@
+[
+ {
+  "code": "47-017",
+  "a_dire": "Un tableau de 3 lignes de 4 cases a 12 cases, car 12 = 4 × 3.",
+  "legende_titre": "Compter les cases ligne par ligne",
+  "lecture": [
+   "Les cases bleues forment 3 lignes.",
+   "L'accolade du haut dit que chaque ligne a 4 cases.",
+   "Le crochet de droite dit qu'il y a 3 lignes.",
+   "En vert, le total : 12 = 4 × 3."
+  ],
+  "a_voir": "Le nombre total de cases est la longueur d'une ligne fois le nombre de lignes."
+ },
+ {
+  "code": "47-018",
+  "a_dire": "Tout le théorème tient dans une grille de lignes de même longueur, sans trou ni recouvrement.",
+  "legende_titre": "Une grille qui range tous les nombres",
+  "lecture": [
+   "Chaque case bleue contient un nombre de 0 à 11.",
+   "Chaque nombre apparaît dans une seule case.",
+   "Les trois lignes ont la même longueur : 4 cases."
+  ],
+  "a_voir": "Chaque nombre est dans une ligne, une seule, et les lignes ont toutes 4 cases."
+ },
+ {
+  "code": "47-019",
+  "a_dire": "L'orbite de P est l'ensemble des 4 points où P arrive en tournant le carré, et le centre O ne bouge pas.",
+  "legende_titre": "Où le point P peut aller",
+  "lecture": [
+   "Les quatre points bleus sont P et ses trois images par les rotations.",
+   "Les flèches orange passent d'un point au suivant, un quart de tour à chaque fois.",
+   "Le point orange O, au centre, reste seul à sa place.",
+   "Les quatre points bleus sont à égale distance de O, sur le cercle."
+  ],
+  "a_voir": "Il faut voir les 4 points bleus à égale distance du centre et O qui ne bouge pas."
+ },
+ {
+  "code": "47-020",
+  "a_dire": "Le carré ABCD a pour centre O ; la rotation r est un quart de tour autour de O ; P est un point du carré.",
+  "legende_titre": "Le carré, son centre et la rotation r",
+  "lecture": [
+   "Le carré bleu a pour sommets A, B, C et D.",
+   "Le point gris O est le centre du carré.",
+   "La flèche orange autour de O est la rotation r, un quart de tour.",
+   "Le point bleu P est un point du carré, près du sommet C."
+  ],
+  "a_voir": "Il faut voir les objets de la suite : le carré, O, r et P."
+ },
+ {
+  "code": "47-021",
+  "a_dire": "Pour obtenir l'orbite de P, on applique chaque rotation à P et on rassemble les résultats.",
+  "legende_titre": "Appliquer chaque rotation au point P",
+  "lecture": [
+   "Chaque ligne part du point P à gauche.",
+   "La flèche orange donne la rotation appliquée : aucune, un quart, un demi, trois quarts de tour.",
+   "Les points de droite sont les résultats ; ils sont réunis dans le cadre en pointillés.",
+   "Quatre rotations donnent quatre points."
+  ],
+  "a_voir": "Une rotation donne un seul point : l'orbite a au plus autant de points que de rotations."
+ },
+ {
+  "code": "47-022",
+  "a_dire": "L'orbite du centre O ne contient que O : chaque rotation le laisse à sa place.",
+  "legende_titre": "Un point que rien ne déplace",
+  "lecture": [
+   "Dans le carré gris, le point orange est le centre O.",
+   "Chaque flèche orange est une rotation : quart de tour, demi-tour, trois quarts.",
+   "Chaque rotation envoie O sur O.",
+   "En bas : l'orbite de O ne compte qu'un point."
+  ],
+  "a_voir": "Il faut voir que les trois rotations ramènent O sur O : l'orbite est {O}."
+ },
+ {
+  "code": "47-023",
+  "a_dire": "Les lignes de la grille sont des orbites : la ligne de 1 est l'ensemble des endroits où 1 peut aller par les additions de H.",
+  "legende_titre": "Une ligne de la grille est une orbite",
+  "lecture": [
+   "Le disque 1, en haut, est le point de départ.",
+   "Les flèches orange sont les additions de 0, 3, 6 et 9.",
+   "Les cases bleues du haut sont les résultats : 1, 4, 7 et 10.",
+   "La ligne bleue de la grille est la même ligne, 1 + H."
+  ],
+  "a_voir": "Il faut voir que les quatre résultats forment la ligne 1 + H."
+ },
+ {
+  "code": "47-024",
+  "a_dire": "Les rotations du carré et les additions de l'horloge ont la même structure : un groupe de 4 mouvements qui déplace un ensemble.",
+  "legende_titre": "Deux scènes, une même structure",
+  "lecture": [
+   "À gauche, en bleu, le carré : 4 rotations déplacent 4 points.",
+   "À droite, en violet, l'horloge : 4 additions déplacent les heures 1, 4, 7 et 10.",
+   "Les flèches orange disent que les mouvements déplacent l'ensemble."
+  ],
+  "a_voir": "Dans les deux scènes, on a 4 mouvements et un ensemble que ces mouvements déplacent."
+ },
+ {
+  "code": "47-025",
+  "a_dire": "La formule Gx = {α(x) | α ∈ G} se fait en trois actions : choisir x, appliquer chaque α de G, rassembler les résultats.",
+  "legende_titre": "Lire la formule de l'orbite",
+  "lecture": [
+   "La partie bleue α(x) est l'image de x.",
+   "Le trait vertical se lit « tels que ».",
+   "La partie orange dit que α prend chaque valeur dans G.",
+   "En bas, sur l'horloge : x = 1, les additions +0, +3, +6, +9, et l'ensemble 1, 4, 7, 10 en vert."
+  ],
+  "a_voir": "Il faut relier chaque morceau de la formule à son sens et aux trois étapes du cas chiffré."
+ },
+ {
+  "code": "47-026",
+  "a_dire": "Gx se lit « orbite de x sous G » : ce n'est pas un produit, c'est l'ensemble des images de x par G.",
+  "legende_titre": "Un nom court pour l'ensemble des images",
+  "lecture": [
+   "La lettre grise G est le groupe, ici les 4 rotations.",
+   "La lettre orange x est le point, ici P.",
+   "La flèche mène au carré, où les quatre points bleus forment l'ensemble.",
+   "L'encadré bleu nomme cet ensemble : GP, 4 points."
+  ],
+  "a_voir": "Les deux lettres nomment un groupe et un point ; le résultat est un ensemble de points."
+ },
+ {
+  "code": "47-027",
+  "a_dire": "Le mot orbite désigne l'ensemble des endroits où un point peut aller ; on peut le compter et comparer deux points.",
+  "legende_titre": "Le mot qui désigne tout l'ensemble",
+  "lecture": [
+   "Le cercle bleu en pointillés entoure les quatre points bleus : l'orbite de P, 4 points.",
+   "Le petit cercle orange en pointillés entoure O : son orbite a 1 point.",
+   "Les deux orbites n'ont pas la même taille."
+  ],
+  "a_voir": "Avec un seul mot, on compte une orbite et on voit que celle de P et celle de O diffèrent."
+ },
+ {
+  "code": "47-028",
+  "a_dire": "Deux points sont G-équivalents quand une transformation de G envoie l'un sur l'autre ; le centre O n'est lié à aucun autre point.",
+  "legende_titre": "Deux points liés par une rotation",
+  "lecture": [
+   "Les points bleus P et Q sont sur le même cercle.",
+   "La flèche orange est la rotation qui envoie P sur Q.",
+   "Le point gris O, au centre, n'est envoyé nulle part ailleurs."
+  ],
+  "a_voir": "P et Q sont liés par une rotation ; O ne l'est avec aucun autre point."
+ },
+ {
+  "code": "47-029",
+  "a_dire": "Si l'ensemble n'est pas un groupe, la relation n'est plus symétrique : avec seulement 1 et r, P va vers Q mais Q ne revient pas vers P.",
+  "legende_titre": "Le cas qui casse avec seulement 1 et r",
+  "lecture": [
+   "La flèche verte va de P à Q : c'est la rotation r, qui est dans l'ensemble.",
+   "La flèche rouge est le retour de Q à P.",
+   "Le retour demande trois quarts de tour, absents de l'ensemble.",
+   "Le texte du bas dit que {1, r} n'est pas un groupe."
+  ],
+  "a_voir": "Le retour de Q vers P est impossible sans les trois quarts de tour."
+ },
+ {
+  "code": "47-030",
+  "a_dire": "La réflexivité vient de l'identité : l'identité est dans G et envoie P sur P.",
+  "legende_titre": "Pourquoi P est lié à lui-même",
+  "lecture": [
+   "En haut, en vert : la flèche « ne rien faire » (1) envoie P sur P, et 1 est dans G.",
+   "En bas, en rouge : avec seulement r, P va sur Q.",
+   "Q n'est pas P : sans l'identité, P ne revient pas sur P."
+  ],
+  "a_voir": "Il faut voir que l'identité est l'étape qui ramène P sur P."
+ },
+ {
+  "code": "47-031",
+  "a_dire": "La symétrie vient de l'inverse : si r envoie P sur Q, l'inverse de r, trois quarts de tour, ramène Q sur P.",
+  "legende_titre": "Défaire un quart de tour",
+  "lecture": [
+   "La flèche orange va de P à Q : r, un quart de tour.",
+   "La flèche verte revient de Q à P : r⁻¹, trois quarts de tour.",
+   "L'encadré vert dit que r⁻¹ est dans G, donc Q est lié à P."
+  ],
+  "a_voir": "L'inverse de la rotation défait le quart de tour et ramène Q sur P."
+ },
+ {
+  "code": "47-032",
+  "a_dire": "La transitivité vient de la composée : un quart de tour de X à Y puis un demi-tour de Y à Z font trois quarts de tour de X à Z.",
+  "legende_titre": "Deux mouvements à la suite",
+  "lecture": [
+   "Les trois disques bleus sont X, Y et Z.",
+   "Les flèches orange du bas sont le quart de tour, puis le demi-tour.",
+   "La flèche verte du haut va directement de X à Z : trois quarts de tour.",
+   "Le texte du bas dit que cette composée est dans G."
+  ],
+  "a_voir": "Faire deux mouvements à la suite donne encore un mouvement de G, de X à Z."
+ }
+]

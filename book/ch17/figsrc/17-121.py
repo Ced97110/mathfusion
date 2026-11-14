@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+O = (44, 36); u = 9.0
+P = lambda x, y: (O[0] + x * u, O[1] + y * u)
+poly(ax, [P(-2.25, -3.5), P(1.75, 4.5), P(3, 4.5), P(3, -3.5)], 'resultat')
+arrow(ax, (17, O[1]), (73, O[1]), 'fixe', lw=0.8); arrow(ax, (O[0], 3), (O[0], 76), 'fixe', lw=0.8)
+text(ax, 77, O[1], r'$x$', 'fixe', 's'); text(ax, O[0] + 4, 77, r'$y$', 'fixe', 's')
+line(ax, [P(-2.25, -3.5), P(1.75, 4.5)], 'sujet', lw=1.4, dash=True)
+text(ax, 44, 87, r'$y < 2x + 1$', 'sujet', 'l')
+text(ax, 4, 78, 'trait pointillé :', 'sujet', 's', ha='left'); text(ax, 4, 74.5, 'bord non compris', 'sujet', 's', ha='left')
+ax.add_patch(Circle(P(0, 0), 1.4, ec=COL['resultat'], fc=COL['resultat'], zorder=4))
+text(ax, O[0] + 3, O[1] - 3.5, r'$(0\,;\,0)$ vrai', 'resultat', 's', ha='left')
+ax.add_patch(Circle(P(0, 3), 1.4, ec=COL['limite'], fc=COL['limite'], zorder=4))
+text(ax, P(0, 3)[0] - 3, P(0, 3)[1], r'$(0\,;\,3)$ faux', 'limite', 's', ha='right')
+text(ax, 62, 14, 'demi-plan', 'resultat', 's')
+save(fig, '17-121')

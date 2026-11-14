@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$\tan\,45^\circ = 1$', 'sujet', 'l')
+poly(ax, [(8, 20), (16, 20), (16, 28)], 'sujet')
+text(ax, 12, 16.5, '1', 'sujet', 's')
+text(ax, 18.5, 24, '1', 'sujet', 's')
+text(ax, 12, 11, r'$1/1 = 1$', 'resultat', 'm')
+poly(ax, [(36, 20), (76, 20), (76, 60)], 'sujet')
+th = [math.radians(i * 45 / 8) for i in range(9)]
+line(ax, [(36 + 8 * math.cos(t), 20 + 8 * math.sin(t)) for t in th], 'varie', lw=1.2)
+text(ax, 47, 23.5, '45°', 'varie', 's')
+text(ax, 56, 16, '5', 'sujet', 's')
+text(ax, 79.5, 40, '5', 'sujet', 's')
+text(ax, 56, 11, r'$5/5 = 1$', 'resultat', 'm')
+text(ax, 44, 3.5, 'opposé / adjacent', 'fixe', 's')
+save(fig, '25-086')

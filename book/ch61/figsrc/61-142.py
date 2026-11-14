@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+box(ax,2,70,60,14,'sujet',label=r'$f=x^2-3x+2$ : degré 2',size='s')
+box(ax,2,38,60,14,'varie',label=r'$f=(x-1)\,q$',size='s')
+box(ax,2,6,60,14,'resultat',label=r'$q=x-2$ : degré 1, stop',size='s')
+arrow(ax,(32,70),(32,52),'fixe'); arrow(ax,(32,38),(32,20),'fixe')
+text(ax,76,61,r'racine $a=1$','varie','s'); text(ax,76,56,r'on divise par','varie','s')
+text(ax,76,47,r'$x-1$','varie','s')
+text(ax,76,29,'degré : 2 → 1','resultat','s')
+save(fig,'61-142')

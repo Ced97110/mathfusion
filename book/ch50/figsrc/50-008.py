@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(65)
+box(ax, 24, 40, 40, 22, 'fixe')
+text(ax, 44, 56, 'groupe inconnu', 'fixe', 's')
+text(ax, 44, 47, r'$|G| = 12$', 'encre', 'l')
+arrow(ax, (34, 39), (22, 27), 'varie'); arrow(ax, (54, 39), (66, 27), 'varie')
+box(ax, 4, 12, 36, 14, 'resultat'); text(ax, 22, 21, 'horloge', 'sujet', 's'); text(ax, 22, 16, 'sous-groupe de 6 : oui', 'resultat', 's')
+box(ax, 48, 12, 36, 14, 'limite'); text(ax, 66, 21, r'$A_4$', 'autre', 's'); text(ax, 66, 16, 'sous-groupe de 6 : non', 'limite', 's')
+text(ax, 44, 5, 'le nombre 12 ne tranche pas', 'encre', 'm')
+save(fig, '50-008')

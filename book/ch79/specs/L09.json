@@ -1,0 +1,183 @@
+[
+ {
+  "code": "79-129",
+  "a_dire": "Le dessin de N₅ et de M₃ montre le nombre de marches de chaque branche : inégal dans N₅, égal dans M₃.",
+  "legende_titre": "Deux treillis, des branches à compter",
+  "lecture": [
+   "Le dessin bleu, à gauche, est N₅ : la branche de a a 2 marches, celle de b et c en a 3.",
+   "Le dessin orange, à droite, est M₃ : les branches de x, y et z ont chacune 2 marches.",
+   "Le point 0 est en bas et le point 1 en haut dans les deux dessins."
+  ],
+  "a_voir": "Une branche inégale à gauche, trois branches égales à droite."
+ },
+ {
+  "code": "79-130",
+  "a_dire": "N₅ a une branche à un élément a et une branche à deux éléments b < c ; la chaîne et le diamant n'ont pas cette forme.",
+  "legende_titre": "Trois treillis à cinq éléments",
+  "lecture": [
+   "En gris, la chaîne : tout élément se compare à tout autre.",
+   "En orange, le diamant : trois éléments au même étage.",
+   "En bleu, le pentagone : une branche avec a, une branche avec b sous c."
+  ],
+  "a_voir": "Seul le pentagone a deux branches de longueurs différentes."
+ },
+ {
+  "code": "79-131",
+  "a_dire": "Le même dessin M₃ apparaît pour des droites d'un plan et pour les sous-groupes d'ordre 2 de ℤ/2 × ℤ/2.",
+  "legende_titre": "Un seul dessin pour deux objets",
+  "lecture": [
+   "À gauche en bleu, 0 en bas, 1 en haut, et trois droites x, y, z au milieu.",
+   "À droite en violet, la même forme avec les trois sous-groupes d'ordre 2.",
+   "Le cadre gris au centre donne son nom à cette forme : M₃."
+  ],
+  "a_voir": "Les deux dessins sont identiques, seuls les objets changent."
+ },
+ {
+  "code": "79-132",
+  "a_dire": "Dans N₅, avec b ≤ c, les deux membres de la loi M valent c d'un côté et b de l'autre, donc la loi échoue.",
+  "legende_titre": "Un calcul qui fait échouer la loi M",
+  "lecture": [
+   "Le dessin gris montre N₅ ; b est en orange et c en bleu, avec b sous c.",
+   "Le cadre bleu calcule le premier membre et trouve c.",
+   "Le cadre orange calcule le second membre et trouve b.",
+   "Le cadre rouge dit que c et b sont différents."
+  ],
+  "a_voir": "Les deux côtés ne donnent pas le même élément."
+ },
+ {
+  "code": "79-133",
+  "a_dire": "N₅ est hors des treillis modulaires, donc aussi hors des treillis distributifs.",
+  "legende_titre": "Où se place le pentagone",
+  "lecture": [
+   "Le grand cadre gris contient les treillis modulaires.",
+   "Le cadre vert à l'intérieur contient les distributifs : tout distributif est modulaire.",
+   "Le disque rouge N₅ est en dehors des deux cadres."
+  ],
+  "a_voir": "N₅ n'est dans aucun des deux cadres."
+ },
+ {
+  "code": "79-134",
+  "a_dire": "Dans M₃, le calcul donne x d'un côté et 0 de l'autre : la loi D échoue.",
+  "legende_titre": "Un calcul dans le diamant",
+  "lecture": [
+   "Le dessin gris montre M₃ ; x est en bleu, y et z en orange.",
+   "Le cadre bleu calcule le premier membre de D et trouve x.",
+   "Le cadre orange calcule le second membre et trouve 0.",
+   "Le cadre rouge dit que x et 0 sont différents."
+  ],
+  "a_voir": "Le calcul montre l'échec de D, il ne parle pas de la loi M."
+ },
+ {
+  "code": "79-135",
+  "a_dire": "Un treillis est modulaire sans N₅ ; il est distributif sans N₅ ni M₃.",
+  "legende_titre": "Les dessins à éviter",
+  "lecture": [
+   "La première ligne dit que modulaire demande l'absence du pentagone N₅, en rouge.",
+   "La seconde ligne dit que distributif demande l'absence du pentagone N₅ et du diamant M₃.",
+   "Le rouge marque les dessins interdits."
+  ],
+  "a_voir": "Modulaire interdit un dessin, distributif en interdit deux."
+ },
+ {
+  "code": "79-136",
+  "a_dire": "Pour tester un treillis, on cherche un pentagone et un diamant au lieu de vérifier tous les triplets.",
+  "legende_titre": "Tester par les formes",
+  "lecture": [
+   "Le grand cube gris représente les 1 728 triplets de douze éléments.",
+   "La flèche orange mène aux deux formes à chercher.",
+   "À droite, le pentagone N₅ en bleu et le diamant M₃ en orange."
+  ],
+  "a_voir": "Deux formes à chercher remplacent 1 728 essais."
+ },
+ {
+  "code": "79-137",
+  "a_dire": "La preuve de D ⇒ D′ part de (a∨b)∧(a∨c), applique D avec a∨b à la place de a, puis arrive à a∨(b∧c).",
+  "legende_titre": "La preuve de D ⇒ D′",
+  "lecture": [
+   "En haut à droite, vous lisez a = 4, b = 6, c = 10 : a ∨ b = 12 et a ∨ c = 20.",
+   "Le cadre bleu est le départ : (a∨b)∧(a∨c), soit 12 ∧ 20 = 4.",
+   "Le cadre orange est l'étape qui porte la preuve : D avec a∨b à la place de a ; elle donne deux morceaux, 12 ∧ 4 = 4 et 12 ∧ 10 = 2.",
+   "Le cadre vert est l'arrivée, après l'absorption et une seconde application de D : a∨(b∧c), soit 4 ∨ 2 = 4."
+  ],
+  "a_voir": "Une seule étape, en orange, fait démarrer le calcul : D avec a∨b à la place de a."
+ },
+ {
+  "code": "79-138",
+  "a_dire": "D′ entraîne D en recopiant la preuve précédente avec ∨ et ∧ échangés.",
+  "legende_titre": "La preuve recopiée à l'envers",
+  "lecture": [
+   "En haut en bleu, la preuve de D ⇒ D′ : de (a∨b)∧(a∨c) à a∨(b∧c).",
+   "En bas en violet, la même preuve de D′ ⇒ D avec ∨ et ∧ échangés.",
+   "Les flèches orange relient chaque expression à son échangée."
+  ],
+  "a_voir": "Les deux lignes ont la même forme, aux signes échangés."
+ },
+ {
+  "code": "79-139",
+  "a_dire": "L'absorption est fausse pour + et ×, mais vraie dans les diviseurs de 60 avec PPCM et PGCD.",
+  "legende_titre": "Une loi qui manque aux nombres",
+  "lecture": [
+   "À gauche en rouge, (2 + 3) × 2 donne 10, pas 2.",
+   "À droite en vert, le PGCD de 6 et 2, où 6 est le PPCM de 2 et 3, donne 2.",
+   "Les deux colonnes suivent les mêmes étapes."
+  ],
+  "a_voir": "Le résultat revient à 2 seulement à droite."
+ },
+ {
+  "code": "79-140",
+  "a_dire": "Pour A, B, C parties de trois stylos, A ∩ (B ∪ C) et (A ∩ B) ∪ (A ∩ C) sont la même partie : rouge et bleu.",
+  "legende_titre": "Les parties de trois stylos",
+  "lecture": [
+   "Chaque rangée est une partie ; un disque plein marque un stylo présent, un disque vide un stylo absent.",
+   "Les trois premières rangées sont A, B et C.",
+   "La rangée verte du milieu est A ∩ (B ∪ C), celle du bas est (A ∩ B) ∪ (A ∩ C).",
+   "Le signe = relie les deux rangées vertes, identiques."
+  ],
+  "a_voir": "Les deux rangées vertes ont les mêmes disques pleins."
+ },
+ {
+  "code": "79-141",
+  "a_dire": "Dans la chaîne 3, 5, 7 avec a = 5, b = 3, c = 7, les deux membres de D valent 5.",
+  "legende_titre": "Distributivité sur 3, 5 et 7",
+  "lecture": [
+   "Sur la droite, b = 3 est en orange, a = 5 en bleu, c = 7 en violet.",
+   "Le cadre bleu calcule a ∧ (b ∨ c) et trouve 5.",
+   "Le cadre orange calcule (a ∧ b) ∨ (a ∧ c) et trouve 5.",
+   "Les flèches vertes montrent le même point, 5."
+  ],
+  "a_voir": "Les deux calculs arrivent au même point de la droite."
+ },
+ {
+  "code": "79-142",
+  "a_dire": "Dans une chaîne, a est soit au-dessus de b et c, soit sous l'un des deux, et dans les deux cas les deux membres de D sont égaux.",
+  "legende_titre": "Deux cas pour la place de a",
+  "lecture": [
+   "La rangée du haut place a = 9 au-dessus de b = 3 et c = 7 : les deux côtés valent 7.",
+   "La rangée du bas place a = 5 sous c = 7 : les deux côtés valent 5.",
+   "Le cadre bleu est toujours a."
+  ],
+  "a_voir": "Il n'y a que deux places possibles pour a, et les deux donnent l'égalité."
+ },
+ {
+  "code": "79-143",
+  "a_dire": "Les diviseurs d'un entier se comparent premier par premier : pour chaque premier, les exposants forment une chaîne.",
+  "legende_titre": "Un exposant par premier",
+  "lecture": [
+   "Chaque colonne est un premier : 2, 3 ou 5, avec une échelle d'exposants de 0 à 2.",
+   "Le disque bleu 12 marque l'exposant de 12 : 2, 1 et 0.",
+   "Le disque violet 20 marque l'exposant de 20 : 2, 0 et 1."
+  ],
+  "a_voir": "Dans chaque colonne, les exposants sont rangés sur une ligne."
+ },
+ {
+  "code": "79-144",
+  "a_dire": "Premier par premier, ∧ prend le plus petit exposant et ∨ le plus grand.",
+  "legende_titre": "Minimum et maximum des exposants",
+  "lecture": [
+   "La rangée bleue donne les exposants de 12 : 2, 1, 0 ; la rangée violette ceux de 20 : 2, 0, 1.",
+   "La première rangée verte prend le plus petit exposant par colonne : 2, 0, 0, soit le PGCD 4.",
+   "La seconde rangée verte prend le plus grand : 2, 1, 1, soit le PPCM 60."
+  ],
+  "a_voir": "Chaque colonne garde le plus petit puis le plus grand des deux exposants."
+ }
+]

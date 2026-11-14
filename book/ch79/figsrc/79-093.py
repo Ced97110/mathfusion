@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+def nd(x, y, n, role, w=12, h=7): box(ax, x - w/2, y - h/2, w, h, role, label=n)
+line(ax, [(48,18),(62,46)]); line(ax, [(26,54),(40,66)]); line(ax, [(62,54),(48,66)])
+nd(44,14,'4','sujet'); nd(24,50,'12','sujet'); nd(64,50,'20','autre'); nd(44,70,'60','varie')
+arrow(ax, (40,18), (26,46), 'resultat', lw=1.6)
+text(ax, 2, 28, r'$4\leq12$', 'resultat', 'm', ha='left', weight='bold'); text(ax, 2, 20, 'PPCM = 12', 'resultat', 's', ha='left')
+line(ax, [(31,50),(57,50)], 'limite', dash=True)
+text(ax, 44, 44, 'incomparables', 'limite', 's')
+text(ax, 54, 76, 'PPCM = 60', 'varie', 's', ha='left')
+save(fig, '79-093')

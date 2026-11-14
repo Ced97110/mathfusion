@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+s, ox, oy = 9.0, 28.0, 32.0
+P = lambda x, y: (ox + s * x, oy + s * y)
+arrow(ax, P(-2.7, 0), P(2.7, 0), 'fixe', lw=0.6)
+arrow(ax, P(0, -2.6), P(0, 3.0), 'fixe', lw=0.6)
+disc(ax, *P(0, 0), 2 * s, 'sujet', fill=False, lw=1.3)
+# on the circle : (0, 2) ; not on it : (1, 1)
+disc(ax, *P(0, 2), 1.2, 'resultat')
+disc(ax, *P(1, 1), 1.2, 'limite')
+text(ax, 58, 58, r'$f=x^2+y^2-4$', 'sujet', 'm', ha='left')
+text(ax, 58, 48, r'point $(0\,;\,2)$', 'resultat', 's', ha='left')
+text(ax, 58, 43, r'$0+4-4=0$', 'resultat', 'm', ha='left')
+text(ax, 58, 33, r'point $(1\,;\,1)$', 'limite', 's', ha='left')
+text(ax, 58, 28, r'$1+1-4=-2$', 'limite', 'm', ha='left')
+text(ax, 55, 18, r'$f=0$ : sur le cercle', 'resultat', 's', ha='left')
+save(fig, '70-011')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 30, 80, 30, 'sujet')
+text(ax, 44, 55, r'sommet : $\mathbb{Q}(\sqrt{5})$', 'sujet', 'm')
+box(ax, 8, 35, 34, 12, 'resultat', label=r'$\frac{3+\sqrt{5}}{2}$')
+box(ax, 46, 35, 34, 12, 'resultat', label=r'$\frac{3-\sqrt{5}}{2}$')
+box(ax, 24, 4, 40, 9, 'fixe', label=r'$\mathbb{Q}$ : 3, 2, 5', size='s')
+arrow(ax, (44, 13), (44, 30), 'varie')
+text(ax, 48, 21.5, '4 opérations + 1 racine', 'varie', 's', ha='left')
+save(fig, '64-088')

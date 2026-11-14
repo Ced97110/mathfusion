@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 30, 34, 10, 10, 'sujet', label='4')
+box(ax, 41, 34, 10, 10, 'fixe', label='6')
+box(ax, 30, 8, 10, 10, 'sujet', label='4')
+box(ax, 41, 8, 10, 10, 'varie', label='2')
+text(ax, 14, 39, 'avant', 'fixe', 's')
+text(ax, 14, 13, 'après', 'fixe', 's')
+arrow(ax, (46, 33), (46, 19.5), 'varie')
+text(ax, 68, 26, 'colonne 2 − 1 × colonne 1', 'varie', 's')
+text(ax, 71, 39, r'$6=1\times4+2$', 'fixe', 's')
+text(ax, 72, 13, r'reste $2\neq0$', 'varie', 's')
+save(fig, '59-079')

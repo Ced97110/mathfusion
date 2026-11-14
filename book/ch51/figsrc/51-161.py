@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 6, 73, 'départ', 'sujet', 's', ha='left')
+box(ax, 6, 58, 76, 12, 'sujet', label=r'$\sum_k a_{ik}(b_{kj}+c_{kj})$')
+arrow(ax, (44, 58), (44, 46.8), 'varie')
+box(ax, 6, 30, 76, 16, 'varie')
+text(ax, 44, 40, r'$a(b+c)=ab+ac$', 'varie', 'm')
+text(ax, 44, 34, r'distributivité de $R$', 'varie', 's')
+arrow(ax, (44, 30), (44, 18.8), 'varie')
+text(ax, 6, 22.5, 'arrivée', 'resultat', 's', ha='left')
+box(ax, 6, 6, 76, 12, 'resultat', label=r'$\sum_k a_{ik}b_{kj}+\sum_k a_{ik}c_{kj}$')
+save(fig, '51-161')

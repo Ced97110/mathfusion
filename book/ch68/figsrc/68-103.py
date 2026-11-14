@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 22, 76, r'$C = \{000, 111\}$', 'resultat', 's')
+text(ax, 66, 76, r'$E = \{000, 111, 010\}$', 'limite', 's')
+box(ax, 3, 52, 38, 18, 'resultat', fill=False, dash=True)
+box(ax, 47, 52, 38, 18, 'limite', fill=False, dash=True)
+for x, w in [(7, '000'), (25, '111')]:
+    box(ax, x, 57, 14, 9, 'sujet', label=w)
+for x, w in [(49, '000'), (61, '111'), (73, '010')]:
+    box(ax, x, 57, 11, 9, 'sujet', label=w)
+text(ax, 2, 45, 'par 0 et par 1', 'fixe', 's', ha='left')
+text(ax, 22, 39.5, 'stable : oui', 'resultat', 's')
+text(ax, 66, 39.5, 'stable : oui', 'resultat', 's')
+line(ax, [(2, 33), (86, 33)], 'fixe', lw=0.5, dash=True)
+text(ax, 2, 28, 'par la somme', 'fixe', 's', ha='left')
+text(ax, 22, 21, '000 + 111 = 111', 'resultat', 's')
+text(ax, 22, 14, 'dans $C$ : oui', 'resultat', 's')
+text(ax, 66, 21, '111 + 010 = 101', 'limite', 's')
+text(ax, 66, 14, 'dans $E$ : non', 'limite', 's')
+text(ax, 22, 5, '$C$ : sous-espace', 'resultat', 's', weight='bold')
+text(ax, 66, 5, '$E$ : pas un sous-espace', 'limite', 's', weight='bold')
+save(fig, '68-103')

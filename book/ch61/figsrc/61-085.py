@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 4, 50, 30, 12, 'sujet', label=r'$1+\sqrt{2}$', size='l')
+text(ax, 44, 56, r'$\times$', 'varie', 'xl')
+box(ax, 54, 50, 30, 12, 'autre', label=r'$\sqrt{2}-1$', size='l')
+arrow(ax, (44, 48.5), (44, 40), 'varie')
+box(ax, 20, 28, 48, 11, 'fixe', label=r'$=2-1$', size='l')
+arrow(ax, (44, 27.5), (44, 20), 'varie')
+box(ax, 30, 8, 28, 11, 'resultat', label=r'$=1$', size='l')
+text(ax, 44, 3.5, 'donc inverses', 'resultat', 's')
+save(fig, '61-085')

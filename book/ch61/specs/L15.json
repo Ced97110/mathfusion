@@ -1,0 +1,178 @@
+[
+ {
+  "code": "61-223",
+  "a_dire": "Partir de s, élever au carré, retrancher 5, élever au carré, développer : s⁴ − 10s² + 1 = 0.",
+  "legende_titre": "Quatre actions qui effacent les racines",
+  "lecture": [
+   "Chaque boîte bleue donne la valeur approchée ou l'écriture de s après une action.",
+   "Les flèches orange nomment l'action : au carré, retrancher 5, au carré, développer.",
+   "La boîte verte, en bas, est le polynôme qui annule s."
+  ],
+  "a_voir": "Chaque action supprime une racine carrée, jusqu'au polynôme final."
+ },
+ {
+  "code": "61-224",
+  "a_dire": "Le même calcul, refait avec √3 + √5, donne t⁴ − 16t² + 4 = 0.",
+  "legende_titre": "Le même calcul avec d'autres nombres",
+  "lecture": [
+   "La colonne grise rappelle le premier exemple, avec √2 + √3.",
+   "La colonne bleue refait les mêmes actions avec √3 + √5.",
+   "La boîte verte est le polynôme annulé par t."
+  ],
+  "a_voir": "Les actions sont identiques ; seuls les nombres 8, 60, 16 et 4 changent."
+ },
+ {
+  "code": "61-225",
+  "a_dire": "Pour montrer que √5 n'est pas dans ℚ(√3), on suppose √5 = a + b√3 : le carré mène à une contradiction, donc l'étage suivant est de degré 2.",
+  "legende_titre": "Pourquoi √5 n'est pas dans ℚ(√3)",
+  "lecture": [
+   "À gauche, trois boîtes montent de ℚ à ℚ(√3) puis à ℚ(√3, √5), chaque étage de degré 2.",
+   "À droite, la boîte orange est l'hypothèse ; la grise est son carré ; la bleue est l'étape qui porte le poids : 2ab = 0.",
+   "Les deux boîtes rouges sont les deux cas, tous deux faux."
+  ],
+  "a_voir": "Le carré force 2ab = 0, et chacun des deux cas est impossible."
+ },
+ {
+  "code": "61-226",
+  "a_dire": "√3 est dans ℚ(t) et son degré 2 divise le degré 4 de t.",
+  "legende_titre": "Un degré 2 dans un corps de degré 4",
+  "lecture": [
+   "La boîte verte donne √3 écrit avec t.",
+   "Les quatre cases forment le corps ℚ(t), de degré 4 ; les deux premières sont bleues, les deux dernières orange.",
+   "Chaque accolade du haut compte 2 cases ; celle du bas compte les 4."
+  ],
+  "a_voir": "Deux fois 2 cases remplissent exactement les 4 cases : 2 divise 4."
+ },
+ {
+  "code": "61-227",
+  "a_dire": "Un nombre de degré 3 ne peut pas être dans un corps de degré 4, car 3 ne divise pas 4.",
+  "legende_titre": "Les degrés permis dans un corps de degré 4",
+  "lecture": [
+   "La boîte bleue en haut est le corps de degré 4.",
+   "Sur la droite graduée, les disques verts 1, 2 et 4 divisent 4.",
+   "Le disque rouge 3 est le degré de la racine cubique de 2 : il ne divise pas 4."
+  ],
+  "a_voir": "Seuls 1, 2 et 4 sont permis ; 3 est interdit."
+ },
+ {
+  "code": "61-228",
+  "a_dire": "Le corps ℚ(∛5, √5 i) a un premier étage de degré 3, un second de degré 2, donc un degré total de 6.",
+  "legende_titre": "Trois fois deux : un corps de degré 6",
+  "lecture": [
+   "Les trois colonnes sont le premier étage ℚ(∛5), de degré 3.",
+   "Les deux rangées, bleue et orange, ajoutent le second étage, de degré 2.",
+   "Les 6 cases en tout donnent le degré 3 × 2 = 6 ; le critère d'Eisenstein avec p = 5 justifie le degré 3."
+  ],
+  "a_voir": "3 colonnes fois 2 rangées font 6 cases."
+ },
+ {
+  "code": "61-229",
+  "a_dire": "Le nombre w a pour polynôme x⁶ + 5 irréductible, donc il est de degré 6.",
+  "legende_titre": "De w à son polynôme de degré 6",
+  "lecture": [
+   "La boîte du haut est le nombre w.",
+   "Les trois boîtes bleues sont les trois facteurs i² = −1 qui forment i⁶ = −1.",
+   "Les boîtes suivantes donnent w⁶ = −5, puis le polynôme x⁶ + 5, en vert."
+  ],
+  "a_voir": "Le calcul donne w⁶ = −5 ; le polynôme x⁶ + 5 est irréductible, donc de degré 6."
+ },
+ {
+  "code": "61-230",
+  "a_dire": "Deux corps de même degré 6, l'un dans l'autre, ont un étage de degré 6 ÷ 6 = 1 : ils sont égaux.",
+  "legende_titre": "Un étage de degré 1 n'ajoute rien",
+  "lecture": [
+   "La barre bleue de 6 cases est le corps ℚ(w).",
+   "La barre violette de 6 cases est l'autre corps.",
+   "Le signe égal vert relie deux barres de même longueur."
+  ],
+  "a_voir": "Même nombre de cases : l'étage vaut 6 ÷ 6 = 1 et les deux corps sont égaux."
+ },
+ {
+  "code": "61-231",
+  "a_dire": "Les exemples où un seul générateur suffit sont annoncés comme une règle générale : en caractéristique 0, toute extension finie est simple.",
+  "legende_titre": "Des exemples à une règle annoncée",
+  "lecture": [
+   "Les trois boîtes grises sont les exemples déjà vus, chacun avec un seul générateur.",
+   "Les flèches orange mènent à la boîte violette en pointillés : la règle.",
+   "Les pointillés disent que la règle est annoncée, pas encore démontrée."
+  ],
+  "a_voir": "La démonstration est au chapitre 63."
+ },
+ {
+  "code": "61-232",
+  "a_dire": "Le corps de base ℤ/2ℤ et le polynôme x² + x + 1 donnent le corps ℤ/2ℤ[x]/(x² + x + 1).",
+  "legende_titre": "Du corps à 2 éléments à un nouveau corps",
+  "lecture": [
+   "Les deux disques bleus sont 0 et 1, les éléments du corps de base F ; 1 + 1 vaut 0.",
+   "La boîte violette est le polynôme choisi : il vaut 1 en 0 et en 1, donc il n'a aucune racine dans F.",
+   "La boîte verte, en bas, est le nouveau corps : les restes de la division par ce polynôme."
+  ],
+  "a_voir": "Le nouveau corps garde seulement les restes de la division par x² + x + 1."
+ },
+ {
+  "code": "61-233",
+  "a_dire": "u est le nom de la classe de x dans le nouveau corps.",
+  "legende_titre": "Une lettre pour la classe de x",
+  "lecture": [
+   "Le grand cadre bleu est la classe, nommée u.",
+   "Les deux boîtes bleues sont deux polynômes de cette classe : x, et x plus un multiple de x² + x + 1.",
+   "La flèche orange dit qu'ils diffèrent d'un multiple du polynôme choisi."
+  ],
+  "a_voir": "Des polynômes qui diffèrent d'un multiple de x² + x + 1 sont dans la même classe."
+ },
+ {
+  "code": "61-234",
+  "a_dire": "Dans ce corps, u² = u + 1 car −1 = 1 dans F.",
+  "legende_titre": "D'où vient u² = u + 1",
+  "lecture": [
+   "La première boîte bleue est u² + u + 1 = 0.",
+   "La flèche orange passe u et 1 de l'autre côté : u² = −u − 1.",
+   "La seconde flèche remplace −1 par 1, car 1 + 1 = 0 dans F ; la boîte verte donne u² = u + 1."
+  ],
+  "a_voir": "Comme −1 = 1, le carré de u se remplace par u + 1."
+ },
+ {
+  "code": "61-235",
+  "a_dire": "Les éléments sont c + d·u avec c et d dans {0, 1} : 2 × 2 = 4 éléments.",
+  "legende_titre": "Quatre éléments : 0, 1, u, 1 + u",
+  "lecture": [
+   "Le sens horizontal donne c, qui vaut 0 ou 1.",
+   "Le sens vertical donne d, qui vaut 0 ou 1.",
+   "Chaque case est un élément c + d·u : 0, 1, u et 1 + u."
+  ],
+  "a_voir": "Deux choix pour c, deux choix pour d : 4 cases, 4 éléments."
+ },
+ {
+  "code": "61-236",
+  "a_dire": "Les trois produits à retenir sont u × u = u + 1, u × (1 + u) = 1 et (1 + u) × (1 + u) = u.",
+  "legende_titre": "Les produits de u et de 1 + u",
+  "lecture": [
+   "Les en-têtes du haut et de gauche sont les deux facteurs.",
+   "La case bleue est u × u = u + 1 ; la case violette est (1 + u) × (1 + u) = u.",
+   "Les deux cases vertes sont u × (1 + u) et (1 + u) × u, égaux à 1."
+  ],
+  "a_voir": "Les produits par 0 et par 1 sont immédiats ; ces quatre cases complètent la table."
+ },
+ {
+  "code": "61-237",
+  "a_dire": "u et 1 + u sont inverses l'un de l'autre, et tout élément non nul a un inverse.",
+  "legende_titre": "Qui est l'inverse de qui",
+  "lecture": [
+   "Les quatre disques sont les éléments 0, 1, u et 1 + u.",
+   "L'arc vert relie u et 1 + u : leur produit vaut 1.",
+   "Sous le disque 1, on lit 1 × 1 = 1 ; le disque 0 est exclu."
+  ],
+  "a_voir": "Chaque élément non nul trouve un partenaire dont le produit vaut 1."
+ },
+ {
+  "code": "61-238",
+  "a_dire": "ℤ/4ℤ n'est pas ce corps : 2 × 2 = 0 avec 2 ≠ 0, donc 2 n'a pas d'inverse.",
+  "legende_titre": "Quatre éléments ne suffisent pas",
+  "lecture": [
+   "À gauche, ℤ/4ℤ a quatre disques ; le rouge, 2, vérifie 2 × 2 = 0.",
+   "À droite, le corps à 4 éléments a les disques 0, 1, u et 1 + u.",
+   "Les textes verts disent que chaque élément non nul y a un inverse ; les textes rouges disent que 2 n'en a pas."
+  ],
+  "a_voir": "Dans ℤ/4ℤ, 2 n'a pas d'inverse ; dans le corps à 4 éléments, tout élément non nul en a un."
+ }
+]

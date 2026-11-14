@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 8, 80, 22, -6, 6, arrow_right=False)
+disc(ax, f(5), 22, 2.2, 'sujet'); disc(ax, f(-5), 22, 2.2, 'autre'); disc(ax, f(0), 22, 1.2, 'fixe', fill=True)
+text(ax, f(5), 44, r'$u\wedge v$', 'sujet', 'm'); text(ax, f(-5), 44, r'$v\wedge u$', 'autre', 'm')
+text(ax, f(5), 38, '+5', 'sujet', 'm'); text(ax, f(-5), 38, '−5', 'autre', 'm')
+arrow(ax, (f(0) + 1, 29), (f(5) - 1, 29), 'resultat', lw=1.1); arrow(ax, (f(0) - 1, 29), (f(-5) + 1, 29), 'resultat', lw=1.1)
+text(ax, (f(0) + f(5)) / 2, 33, 'taille 5', 'resultat', 's'); text(ax, (f(0) + f(-5)) / 2, 33, 'taille 5', 'resultat', 's')
+text(ax, f(0), 10, 'même taille, signe opposé', 'encre', 's')
+save(fig, '76-015')

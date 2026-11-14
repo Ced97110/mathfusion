@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+f = numberline(ax, 8, 74, 24, -4, 4, labels=False)
+text(ax, f(0), 19.4, '0', 'fixe', 's'); text(ax, f(3), 19.4, '3', 'sujet', 's'); text(ax, f(-3), 19.4, '−3', 'varie', 's')
+line(ax, [(f(0), 24), (f(3) - 2.4, 24)], 'sujet', lw=3.5); line(ax, [(f(0), 24), (f(-3) + 2.4, 24)], 'varie', lw=3.5)
+disc(ax, f(3), 24, 2.4, 'sujet', label=r'$P$', size='s'); disc(ax, f(-3), 24, 2.4, 'varie', label=r'$Q$', size='s')
+text(ax, (f(0) + f(3)) / 2, 31, '3 pas', 'sujet', 'm'); text(ax, (f(0) + f(-3)) / 2, 31, '3 pas', 'varie', 'm')
+line(ax, [(f(0), 22), (f(0), 36)], 'fixe', dash=True, lw=0.6)
+box(ax, 4, 2, 36, 9, 'varie', label=r'$|-3|=3$'); box(ax, 48, 2, 36, 9, 'sujet', label=r'$|3|=3$')
+save(fig, '13-016')

@@ -1,0 +1,278 @@
+[
+ {
+  "code": "37-121",
+  "a_dire": "Avec trois angles et le rayon R du cercle, on obtient les trois côtés et l’aire sans qu’aucun côté soit donné.",
+  "legende_titre": "Des angles et un rayon suffisent",
+  "lecture": [
+   "Le grand cercle gris a le rayon R de 10 centimètres ; le trait orange pointillé va du centre à un coin.",
+   "Le triangle bleu a des coins de 50°, 60° et 70°, et ses côtés a, b, c sont en face de ces angles.",
+   "Les trois lignes à droite donnent chaque côté : 20 fois le sinus de l’angle en face.",
+   "La case verte donne l’aire : environ 124,7 centimètres carrés."
+  ],
+  "a_voir": "Les trois coins du triangle touchent le cercle et les côtés sortent des angles."
+ },
+ {
+  "code": "37-122",
+  "a_dire": "Quand deux côtés sont fixés, l’aire est la plus grande si l’angle entre eux est droit.",
+  "legende_titre": "Quel angle donne la plus grande aire ?",
+  "lecture": [
+   "Chaque triangle a deux côtés de 110 et 120, et seul l’angle entre eux change : 30°, 53°, 90°, 150°.",
+   "Le trait orange pointillé est la hauteur de chaque triangle.",
+   "Sous chaque triangle, l’aire : 3 300, 5 271, 6 600 et 3 300.",
+   "Le triangle vert, à 90°, a la plus grande aire : 6 600."
+  ],
+  "a_voir": "La hauteur est la plus longue à 90°, et l’aire est alors la plus grande."
+ },
+ {
+  "code": "37-123",
+  "a_dire": "Si le triangle a un angle droit, l’hypoténuse est un diamètre du cercle et le centre O est en son milieu.",
+  "legende_titre": "Un angle droit place le centre O",
+  "lecture": [
+   "Le triangle bleu a des côtés de 3 et 4 et un angle droit, marqué par le petit carré.",
+   "Le cercle gris passe par les trois coins.",
+   "Le trait vert épais est le côté de 5 ; il passe par le point orange O.",
+   "O coupe ce côté en deux parties de 2,5 : le côté de 5 est un diamètre."
+  ],
+  "a_voir": "Le côté de 5 passe par le centre O du cercle, juste au milieu."
+ },
+ {
+  "code": "37-124",
+  "a_dire": "Quand a = b + c, les trois points sont alignés, l’angle vaut 180° et l’aire vaut 0.",
+  "legende_titre": "Un triangle aplati a une aire nulle",
+  "lecture": [
+   "Les trois points B, A, C sont sur une même droite : 4 de B à A, 6 de A à C, 10 de B à C.",
+   "L’arc orange en A montre un angle de 180°.",
+   "Le texte orange donne sin 180° = 0.",
+   "Le texte vert met ce 0 dans la formule : l’aire vaut 0."
+  ],
+  "a_voir": "Le triangle est une droite : un angle de 180° et une aire de 0."
+ },
+ {
+  "code": "37-125",
+  "a_dire": "La formule de Héron donne 0 quand a = b + c, parce que le reste s − a vaut 0.",
+  "legende_titre": "Héron trouve le triangle aplati",
+  "lecture": [
+   "Les quatre cases bleues et orange sont les quatre facteurs du produit sous la racine : s, s − a, s − b, s − c.",
+   "Les valeurs sont 10, 0, 4 et 6, multipliées entre elles.",
+   "La case orange vaut 0, car 10 moins 10 donne 0.",
+   "La case verte : la racine de 0 est 0, l’aire est nulle."
+  ],
+  "a_voir": "Un seul facteur nul rend tout le produit nul."
+ },
+ {
+  "code": "37-126",
+  "a_dire": "Pour un triangle aplati, r = Δ ÷ s = 0 : le cercle inscrit se réduit à un point.",
+  "legende_titre": "Le cercle inscrit disparaît avec l’épaisseur",
+  "lecture": [
+   "À gauche, un triangle gris a un cercle bleu dedans : une mare.",
+   "La flèche orange dit d’aplatir le triangle.",
+   "À droite, les points B, A, C sont alignés et le cercle est réduit au point bleu en A.",
+   "Le calcul : r = 0 ÷ 10 = 0, un rayon nul."
+  ],
+  "a_voir": "Quand le triangle s’aplatit, le cercle bleu devient un point."
+ },
+ {
+  "code": "37-127",
+  "a_dire": "Pour un triangle aplati, 2R = 10 ÷ 0 n’a pas de résultat : R n’existe pas.",
+  "legende_titre": "Le cercle circonscrit n’existe pas",
+  "lecture": [
+   "En haut, les points B, A, C sont alignés et l’arc orange marque 180° en A.",
+   "La case orange : le sinus de 180° vaut 0.",
+   "La première case rouge : 2R = 10 ÷ 0, une division par zéro.",
+   "La dernière case rouge : R n’existe pas."
+  ],
+  "a_voir": "Un angle de 180° donne un sinus nul, donc une division impossible."
+ },
+ {
+  "code": "37-128",
+  "a_dire": "Trois points alignés ont des médiatrices parallèles, qui ne se croisent pas : aucun cercle ne passe par eux.",
+  "legende_titre": "Pas de cercle par trois points alignés",
+  "lecture": [
+   "Les trois points bleus sont à 0, 4 et 10 sur la règle.",
+   "Les points orange sont les milieux : 2, 7 et 5.",
+   "Chaque trait orange vertical passe par un milieu, à angle droit avec la règle.",
+   "Ces trois traits sont parallèles : ils n’ont aucun point commun."
+  ],
+  "a_voir": "Les trois droites orange ne se croisent nulle part, donc il n’y a pas de centre."
+ },
+ {
+  "code": "37-129",
+  "a_dire": "Si a est plus grand que b + c, un reste de Héron est négatif et la racine n’existe pas : Héron exprime l’inégalité triangulaire.",
+  "legende_titre": "Héron refuse un triangle impossible",
+  "lecture": [
+   "La barre bleue est le côté a = 8 ; en dessous, la barre orange b = 3 et la barre violette c = 4.",
+   "Bout à bout, 3 et 4 font 7, plus court que 8 : la case rouge pointillée montre ce qui manque, 1.",
+   "Le calcul rouge : s − a = 7,5 − 8 = −0,5.",
+   "Le produit sous la racine vaut environ −59,06 : pas de racine."
+  ],
+  "a_voir": "Les côtés 3 et 4 n’atteignent pas 8, et Héron donne un nombre négatif."
+ },
+ {
+  "code": "37-130",
+  "a_dire": "Dans le triangle équilatéral de côté 10, deux formules différentes donnent la même aire, environ 43,30.",
+  "legende_titre": "Deux formules, une même aire",
+  "lecture": [
+   "Le triangle bleu a trois côtés de 10 et des angles de 60°.",
+   "La case orange calcule par deux côtés et un angle : ½ × 10 × 10 × 0,8660.",
+   "La case violette calcule par Héron : la racine de 15 × 5 × 5 × 5.",
+   "Les deux cases vertes donnent environ 43,30."
+  ],
+  "a_voir": "Les deux chemins arrivent au même nombre."
+ },
+ {
+  "code": "37-131",
+  "a_dire": "Dans le triangle équilatéral, le rayon du cercle circonscrit R est le double du rayon du cercle inscrit r.",
+  "legende_titre": "R vaut le double de r",
+  "lecture": [
+   "Le grand cercle bleu passe par les coins ; le petit cercle violet touche les côtés.",
+   "Le trait bleu épais est R, du centre à un coin ; le trait violet est r, du centre à un côté.",
+   "Pour un côté de 10 : R ≈ 5,77 et r ≈ 2,89, et leur rapport vaut 2.",
+   "Pour un côté de 6 : 3,46 et 1,73, rapport 2 encore."
+  ],
+  "a_voir": "Le trait bleu est deux fois plus long que le trait violet."
+ },
+ {
+  "code": "37-132",
+  "a_dire": "Dans le triangle équilatéral, le rayon r_a du cercle extérieur vaut 3r et vaut aussi la hauteur.",
+  "legende_titre": "Le cercle extérieur a le rayon de la hauteur",
+  "lecture": [
+   "Le triangle bleu a un côté de 10 ; le petit cercle violet dedans a le rayon r ≈ 2,89.",
+   "Le trait vert est la hauteur du triangle, environ 8,66.",
+   "Le trait orange prolonge ce trait jusqu’au centre du grand cercle orange : r_a ≈ 8,66.",
+   "Les deux traits sont de même longueur, et r_a = 3r."
+  ],
+  "a_voir": "Le trait vert et le trait orange ont la même longueur."
+ },
+ {
+  "code": "37-133",
+  "a_dire": "Dans le triangle équilatéral, chaque médiatrice est aussi une bissectrice, donc O et I sont le même point.",
+  "legende_titre": "O et I sont confondus",
+  "lecture": [
+   "Les trois traits pointillés verts partent chacun d’un coin vers le milieu du côté opposé.",
+   "Le petit carré gris marque un angle droit, et les 5 et 5 sont les deux moitiés du côté.",
+   "Les deux arcs orange en haut montrent deux angles de 30°.",
+   "Les trois traits se croisent en un seul point orange : O = I."
+  ],
+  "a_voir": "Une même droite coupe le côté en deux moitiés égales et le coin en deux angles de 30°."
+ },
+ {
+  "code": "37-134",
+  "a_dire": "On mesure un terrain en le découpant en triangles, puis on additionne les aires.",
+  "legende_titre": "Mesurer un terrain par triangles",
+  "lecture": [
+   "Le triangle bleu a des côtés de 110 et 120 et un angle de 53° ; son aire est calculée par deux côtés et un angle : 5 271.",
+   "Le triangle violet a des côtés de 40, 50 et 60 ; son aire est calculée par Héron : 992,2.",
+   "Le signe + les additionne.",
+   "La case verte donne l’aire du terrain : environ 6 263 mètres carrés."
+  ],
+  "a_voir": "Deux aires calculées avec des côtés et des angles s’ajoutent."
+ },
+ {
+  "code": "37-135",
+  "a_dire": "Pour multiplier deux points écrits avec une longueur et un angle, on multiplie les longueurs et on additionne les angles.",
+  "legende_titre": "Multiplier : longueurs et angles",
+  "lecture": [
+   "Le point violet est à la longueur 6 et à l’angle 0°.",
+   "Le point bleu est à la longueur 6,40 et à l’angle 38,66° ; l’arc orange montre cet angle.",
+   "Le point vert est le produit : il est sur le même rayon, à la longueur 38,4.",
+   "Les deux lignes à droite : 6 × 6,40 = 38,4 et 0° + 38,66° = 38,66°."
+  ],
+  "a_voir": "Le produit garde l’angle du point bleu et sa longueur est 6 fois plus grande."
+ },
+ {
+  "code": "37-136",
+  "a_dire": "La longueur du produit vectoriel de deux flèches est a b sin C : le double de l’aire du triangle qu’elles forment.",
+  "legende_titre": "Le produit vectoriel est le double de l’aire",
+  "lecture": [
+   "Les deux flèches bleues de longueurs 110 et 120 forment un angle de 53°.",
+   "Le triangle bleu est celui qu’elles forment. Le triangle orange le complète en parallélogramme : il a la même aire.",
+   "La barre orange : 110 × 120 × sin 53° ≈ 10 542, soit le parallélogramme.",
+   "La barre bleue : l’aire du triangle ≈ 5 271, moitié de la barre orange."
+  ],
+  "a_voir": "La barre orange est deux fois plus longue que la barre bleue : le double de l’aire du triangle."
+ },
+ {
+  "code": "37-137",
+  "a_dire": "Les médiatrices et les bissectrices se tracent à la règle et au compas, donc O et I se construisent.",
+  "legende_titre": "O et I se construisent à la règle et au compas",
+  "lecture": [
+   "À gauche, deux arcs orange de même rayon, centrés en B et en C, se croisent en deux points ; le trait vert qui les joint est la médiatrice de BC.",
+   "À droite, un arc autour du coin A coupe les deux côtés ; deux petits arcs de même rayon se croisent sur le trait vert, la bissectrice.",
+   "Deux médiatrices se croisent en O.",
+   "Deux bissectrices se croisent en I."
+  ],
+  "a_voir": "Chaque trait vert vient d’arcs de compas de même rayon et d’une règle sans graduation."
+ },
+ {
+  "code": "37-138",
+  "a_dire": "L’expression X₂Y₃ − X₃Y₂ change de signe quand on échange les deux points, tandis que l’aire reste la même.",
+  "legende_titre": "Échanger les points change le signe",
+  "lecture": [
+   "À gauche, le triangle bleu avec les points numérotés 1 en (6 ; 0) et 2 en (5 ; 4) : le nombre vaut 24.",
+   "À droite, le triangle violet est le même, avec les numéros échangés : le nombre vaut −24.",
+   "La flèche orange est l’échange.",
+   "Sous les deux triangles, l’aire reste 12."
+  ],
+  "a_voir": "Le signe s’inverse, la valeur 24 et l’aire 12 restent."
+ },
+ {
+  "code": "37-139",
+  "a_dire": "Une rotation ou une réflexion garde les longueurs et les angles, donc l’aire du triangle.",
+  "legende_titre": "Un quart de tour garde l’aire",
+  "lecture": [
+   "Le triangle bleu a pour coins (0 ; 0), (6 ; 0) et (5 ; 4) : aire 12.",
+   "Le triangle violet est son image par un quart de tour : (0 ; 0), (0 ; 6) et (−4 ; 5).",
+   "La flèche orange est le quart de tour.",
+   "Le calcul vert 0 × 5 − (−4) × 6 = 24 donne la même aire 12."
+  ],
+  "a_voir": "Les deux triangles ont la même forme et la même aire de 12."
+ },
+ {
+  "code": "37-140",
+  "a_dire": "Le déterminant est une aire munie d’un signe ; il vaut 0 exactement quand les points sont alignés.",
+  "legende_titre": "Le déterminant vaut 0 si les points sont alignés",
+  "lecture": [
+   "À gauche, le triangle bleu avec les coins (0 ; 0), (6 ; 0), (5 ; 4) : le nombre vaut 24, l’aire 12.",
+   "À droite, les trois points bleus (0 ; 0), (2 ; 0), (6 ; 0) sont sur une droite grise.",
+   "Le calcul orange : 2 × 0 − 6 × 0 = 0.",
+   "Points alignés : le nombre est 0 et l’aire est 0."
+  ],
+  "a_voir": "Le triangle a une aire, la droite n’en a pas, et le nombre le dit."
+ },
+ {
+  "code": "37-141",
+  "a_dire": "La longueur ab sin C est l’aire d’un parallélogramme de côtés a et b.",
+  "legende_titre": "a b sin C est l’aire d’un parallélogramme",
+  "lecture": [
+   "Le parallélogramme bleu a une base de 120 et un côté de 110, avec un angle de 53°.",
+   "Le trait orange pointillé est la hauteur, environ 87,85.",
+   "Base × hauteur : 120 × 87,85 ≈ 10 542 mètres carrés.",
+   "Le triangle violet est la moitié : 5 271 mètres carrés."
+  ],
+  "a_voir": "Le parallélogramme est fait de deux triangles égaux."
+ },
+ {
+  "code": "37-142",
+  "a_dire": "L’aire est une base multipliée par une hauteur, et cette hauteur se lit par un sinus.",
+  "legende_titre": "Une idée commune : base et hauteur",
+  "lecture": [
+   "À gauche, un triangle de base 120 : la hauteur orange vaut 110 × 0,7986, soit 87,85 ; l’aire est environ 5 271.",
+   "À droite, le triangle de côtés 3, 4 et 5 a une base de 4 ; la hauteur vaut 3 × sin 90°, soit 3 ; l’aire est 6.",
+   "Dans les deux cas, la hauteur est un côté multiplié par un sinus.",
+   "Les lignes vertes donnent l’aire : la moitié de la base fois la hauteur."
+  ],
+  "a_voir": "Chaque hauteur orange est un côté fois un sinus."
+ },
+ {
+  "code": "37-143",
+  "a_dire": "Pour un périmètre de 150, l’aire dépend du produit de trois restes de somme 75, et le produit est plus grand quand les restes sont égaux.",
+  "legende_titre": "Trois restes de somme 75",
+  "lecture": [
+   "La première rangée a trois restes : 35, 25 et 15, de somme 75, pour les côtés 40, 50 et 60.",
+   "Leur produit vaut 13 125 et l’aire environ 992,2.",
+   "La deuxième rangée verte a trois restes de 25, aussi de somme 75, pour trois côtés de 50.",
+   "Leur produit vaut 15 625 et l’aire environ 1 082,5."
+  ],
+  "a_voir": "Les deux rangées ont la même somme 75, et la rangée aux restes égaux a le plus grand produit."
+ }
+]

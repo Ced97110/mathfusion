@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+u = 8.0; ox, oy = 12, 10
+P = lambda x, y: (ox + u * x, oy + u * y)
+for i in range(1, 8): line(ax, [P(i, 0), P(i, 5.7)], 'fixe', lw=0.25)
+for j in range(1, 6): line(ax, [P(0, j), P(7.7, j)], 'fixe', lw=0.25)
+arrow(ax, P(0, 0), P(7.9, 0), 'fixe'); arrow(ax, P(0, 0), P(0, 6.2), 'fixe')
+A, B, C = P(1, 1), P(7, 1), P(6, 5)
+poly(ax, [A, B, C], 'sujet')
+line(ax, [C, P(6, 0)], 'varie', dash=True, lw=1.1); line(ax, [C, P(0, 5)], 'varie', dash=True, lw=1.1)
+for q in (A, B): disc(ax, q[0], q[1], 0.9, 'sujet')
+disc(ax, C[0], C[1], 1.3, 'varie')
+text(ax, A[0] - 2.5, A[1] - 3, 'A', 'sujet', weight='bold'); text(ax, B[0] + 2.5, B[1] - 3, 'B', 'sujet', weight='bold')
+text(ax, C[0] + 3, C[1] + 1.5, 'C', 'varie', 'l', weight='bold')
+text(ax, P(6, 0)[0], oy - 4, r'$x_3 = 6$', 'varie')
+text(ax, ox - 2, P(0, 5)[1], r'$y_3 = 5$', 'varie', ha='right')
+text(ax, 44, 58, r'$(x_3\,;\,y_3) = (6\,;\,5)$', 'varie', 'l')
+save(fig, '37-097')

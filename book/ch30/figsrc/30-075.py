@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+fig, ax = canvas(70)
+O, A, T, P, Hh = (20, 10), (50, 10), (50, 61.96), (35, 35.98), (35, 10)
+ax.add_patch(Arc(O, 60, 60, theta1=0, theta2=90, color=COL['fixe'], lw=0.9))
+line(ax, [Hh, A], 'fixe'); line(ax, [A, T], 'fixe'); line(ax, [Hh, P], 'fixe', dash=True)
+line(ax, [O, Hh], 'autre', lw=2.2); line(ax, [O, T], 'sujet', lw=2.2)
+ax.add_patch(Arc(O, 14, 14, theta1=0, theta2=60, color=COL['varie'], lw=1.2))
+disc(ax, *P, 1.0, 'fixe')
+text(ax, 31, 13.5, '60°', 'varie', 's')
+text(ax, 16.5, 10, 'O', 'encre', 's'); text(ax, 35, 6, 'H', 'encre', 's'); text(ax, 50, 6, 'A', 'encre', 's')
+text(ax, 32.5, 38.5, 'P', 'encre', 's'); text(ax, 52.5, 63.5, 'T', 'encre', 's', ha='left')
+text(ax, 56, 50, 'OT = sécante = 2', 'sujet', 's', ha='left')
+text(ax, 56, 40, 'OA = 1 (rayon)', 'fixe', 's', ha='left')
+text(ax, 56, 30, 'OH = cos = 0,5', 'autre', 's', ha='left')
+save(fig, '30-075')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'indice 2 : seulement 2 classes', 'encre', 's')
+text(ax, 3, 52, r'classes à gauche $hL$', 'encre', 's', ha='left')
+box(ax, 6, 40, 35, 10, 'sujet', label=r'$L$ : 3 rotations', size='s')
+box(ax, 47, 40, 35, 10, 'varie', label='le reste : 3 réflexions', size='s')
+text(ax, 3, 32, r'classes à droite $Lh$', 'encre', 's', ha='left')
+box(ax, 6, 20, 35, 10, 'sujet', label=r'$L$ : 3 rotations', size='s')
+box(ax, 47, 20, 35, 10, 'varie', label='le reste : 3 réflexions', size='s')
+text(ax, 23.5, 35.5, '=', 'resultat', 'l', weight='bold'); text(ax, 64.5, 35.5, '=', 'resultat', 'l', weight='bold')
+text(ax, 44, 8, r'$hL = Lh$ pour tout $h$', 'resultat', 'm')
+save(fig, '50-234')

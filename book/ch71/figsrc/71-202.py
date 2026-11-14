@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, r'sur $\mathbb{R}$ : même rang 2', 'fixe', 's')
+box(ax, 4, 52, 32, 12, 'sujet', label=r'$x^2+y^2$'); box(ax, 52, 52, 32, 12, 'autre', label=r'$-x^2-y^2$')
+text(ax, 44, 58, r'$\neq$', 'limite', 'l')
+text(ax, 20, 46, 'signature (2, 0)', 'sujet', 's'); text(ax, 68, 46, 'signature (0, 2)', 'autre', 's')
+line(ax, [(4, 38), (84, 38)], 'fixe', lw=0.5, dash=True)
+text(ax, 44, 33, r'sur $\mathbb{C}$ : $x\to ix,\ y\to iy$', 'varie', 's')
+box(ax, 4, 10, 32, 12, 'autre', label=r'$-x^2-y^2$'); box(ax, 52, 10, 32, 12, 'resultat', label=r'$x^2+y^2$')
+arrow(ax, (37.5, 16), (50.5, 16), 'varie', lw=1.3); text(ax, 44, 22, 'devient', 'varie', 's')
+text(ax, 44, 4, 'même forme', 'resultat', 's')
+save(fig, '71-202')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 46, 40, 10, 'sujet', label='x² = 25')
+text(ax, 48, 51, 'le carré est seul', 'fixe', 's', ha='left')
+arrow(ax, (24, 45), (24, 35), 'varie')
+box(ax, 4, 24, 40, 10, 'sujet', label='x = ±√25')
+text(ax, 48, 29, 'on prend la racine', 'varie', 's', ha='left')
+arrow(ax, (24, 23), (24, 13), 'varie')
+box(ax, 4, 2, 40, 10, 'resultat', label='x = 5 ou x = −5', size='s')
+text(ax, 48, 7, '√25 vaut 5', 'resultat', 's', ha='left')
+save(fig, '23-038')

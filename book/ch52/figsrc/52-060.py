@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 28, 54, 32, 11, 'sujet', label='(4, 6) = (d)')
+box(ax, 4, 32, 30, 11, 'resultat', label='d = 2')
+box(ax, 54, 32, 30, 11, 'autre', label=r'$d = -2$')
+arrow(ax, (19, 43), (36, 54), 'resultat'); arrow(ax, (69, 43), (52, 54), 'autre')
+text(ax, 19, 26, 'est le PGCD', 'resultat', 's')
+text(ax, 69, 26, 'générateur aussi,', 'autre', 's'); text(ax, 69, 21, 'mais pas le PGCD', 'autre', 's')
+f = numberline(ax, 12, 76, 10, -8, 8, step=2, arrow_right=False, every=2)
+for v in range(-8, 9, 2): disc(ax, f(v), 10, 1.4, 'sujet')
+text(ax, 44, 17, 'mêmes multiples de 2', 'fixe', 's')
+save(fig, '52-060')

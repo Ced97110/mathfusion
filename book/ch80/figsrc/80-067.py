@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(78)
+o=(22,44); u=6.5
+P=lambda x,y,z: iso(x,y,z,o,u)
+def pl(pts,role): ax.add_patch(Polygon(pts,closed=True,ec=COL[role],fc=FILL[role],alpha=0.6,lw=0.9,zorder=2))
+pl([P(0,-1.5,0),P(3,-1.5,0),P(3,1.5,0),P(0,1.5,0)],'sujet')
+pl([P(0,0,-1.5),P(3,0,-1.5),P(3,0,1.5),P(0,0,1.5)],'autre')
+ax.plot(*zip(P(0,0,0),P(3,0,0)),color=COL['resultat'],lw=2.2,zorder=4,solid_capstyle='round')
+text(ax,P(0,-1.5,0)[0]+1,P(0,-1.5,0)[1]-4,r'$U$ : dim 2','sujet','s',ha='left')
+text(ax,P(0,0,1.5)[0]+1,P(0,0,1.5)[1]+4,r'$W$ : dim 2','autre','s',ha='left')
+text(ax,P(3,0,0)[0]+2,P(3,0,0)[1]-5,r'$U\cap W$ : dim 1','resultat','s',ha='left')
+text(ax,68,72,r'$\dim(U+W)+\dim(U\cap W)$','sujet','s')
+box(ax,52,55,32,10,'sujet',label='3 + 1 = 4')
+text(ax,68,48,'=','encre','l')
+text(ax,68,41,r'$\dim U+\dim W$','autre','s')
+box(ax,52,24,32,10,'autre',label='2 + 2 = 4')
+text(ax,68,15,'même total','resultat','s')
+save(fig,'80-067')

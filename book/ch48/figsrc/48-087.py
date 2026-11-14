@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 26, 14, 10, 'fixe', label='7')
+box(ax, 30, 26, 28, 10, 'autre', label=r'$\{3,\ 7,\ 11\}$', size='s')
+box(ax, 72, 26, 14, 10, 'resultat', label='3')
+box(ax, 72, 4, 14, 10, 'limite', label='0')
+arrow(ax, (16.5, 31), (29.5, 31), 'varie')
+arrow(ax, (58.5, 31), (71.5, 31), 'resultat', lw=1.3)
+arrow(ax, (9, 36.5), (79, 36.5), 'fixe', curve=-0.3)
+arrow(ax, (50, 25.5), (71.5, 11), 'limite')
+text(ax, 23, 22.5, r'$\nu$', 'varie', 'm')
+text(ax, 65, 22.5, r'$\bar f$', 'resultat', 'm')
+text(ax, 44, 52, r'$f$', 'fixe', 'm')
+text(ax, 40, 9, 'impossible', 'limite', 's')
+text(ax, 64, 42, r'$\bar f$ vaut 3 : valeur imposée', 'resultat', 's') if False else None
+save(fig, '48-087')

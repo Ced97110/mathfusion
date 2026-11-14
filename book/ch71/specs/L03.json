@@ -1,0 +1,179 @@
+[
+ {
+  "code": "71-033",
+  "a_dire": "Si on prend a fois un vecteur, la forme donne a fois sa valeur.",
+  "legende_titre": "Trois paniers coûtent trois fois le prix",
+  "lecture": [
+   "Un panier de 1 kg de pommes et 2 kg de poires coûte 4 €.",
+   "Les trois cases bleues sont trois paniers identiques ; la flèche orange ×3 relie un panier à trois paniers.",
+   "Les cases vertes sont les prix : 4 € et 12 €, soit 3 × 4."
+  ],
+  "a_voir": "Le prix de 3 paniers est 3 fois le prix d'un panier."
+ },
+ {
+  "code": "71-034",
+  "a_dire": "Une forme linéaire est une transformation linéaire dont l'arrivée est une droite, le corps F.",
+  "legende_titre": "Deux transformations, deux arrivées",
+  "lecture": [
+   "En haut, une flèche du plan est envoyée sur une flèche du plan (violet).",
+   "En bas, la même flèche bleue est envoyée sur un nombre : le point vert sur la droite graduée.",
+   "Le départ est le même ; seule l'arrivée change : plan ou droite."
+  ],
+  "a_voir": "L'arrivée d'une forme est une droite, donc un seul nombre."
+ },
+ {
+  "code": "71-035",
+  "a_dire": "Sur deux exemples chiffrés, le prix 2x + y respecte la somme et le triple.",
+  "legende_titre": "Deux règles vérifiées sur des paniers",
+  "lecture": [
+   "En haut, les paniers (1 ; 2) et (3 ; 1) donnent (4 ; 3) ; leurs prix vont de 4 € et 7 € à 11 €.",
+   "En bas, le panier (1 ; 2) devient (3 ; 6) par ×3 (orange) ; son prix passe de 4 € à 12 €.",
+   "Les cases vertes sont les prix."
+  ],
+  "a_voir": "11 = 4 + 7 et 12 = 3 × 4 : les deux règles sont vérifiées sur ces cas."
+ },
+ {
+  "code": "71-036",
+  "a_dire": "La somme de deux formes est la forme qui additionne leurs valeurs.",
+  "legende_titre": "Deux règles de prix donnent une troisième",
+  "lecture": [
+   "Le bleu est la règle f (2 € et 1 € le kilo), le violet est la règle g (1 € et 3 €).",
+   "Le vert est la règle somme f + g : 3 € et 4 € le kilo.",
+   "À droite, les prix du panier de 1 kg et 2 kg : 4 € + 7 € = 11 €."
+  ],
+  "a_voir": "Additionner deux règles donne une règle dont le prix est la somme des prix."
+ },
+ {
+  "code": "71-037",
+  "a_dire": "Multiplier une forme par un nombre multiplie toutes ses valeurs par ce nombre.",
+  "legende_titre": "Doubler la règle double les prix",
+  "lecture": [
+   "Le bleu est la règle f : 2 € et 1 € le kilo, prix du panier 4 €.",
+   "L'orange est la règle 2f : 4 € et 2 € le kilo, prix du panier 8 €.",
+   "Les flèches orange ×2 montrent le doublement, à gauche pour la règle, à droite pour le prix."
+  ],
+  "a_voir": "Pour doubler tous les prix, on écrit 2f sans refaire le calcul."
+ },
+ {
+  "code": "71-038",
+  "a_dire": "L'espace dual V* est l'ensemble des formes linéaires sur V : on peut les additionner et les multiplier.",
+  "legende_titre": "Un ensemble de règles qui reste fermé",
+  "lecture": [
+   "Le cadre en pointillés est V*, l'ensemble des règles de prix.",
+   "Les cases bleue et violette sont deux règles f et g.",
+   "Les cases vertes, f + g et 2f, sont obtenues par les flèches orange et restent dans le cadre."
+  ],
+  "a_voir": "Additionner ou multiplier des règles donne encore une règle de V*."
+ },
+ {
+  "code": "71-039",
+  "a_dire": "La base duale est la liste de formes qui valent 1 sur leur flèche de base et 0 sur l'autre.",
+  "legende_titre": "Un 1 sur la diagonale, des 0 ailleurs",
+  "lecture": [
+   "Chaque ligne est une forme (e1* ou e2*), chaque colonne une flèche de base (e1 ou e2).",
+   "Les cases vertes valent 1 : la forme lit sa propre flèche.",
+   "Les cases grises valent 0 : la forme ne lit pas l'autre flèche."
+  ],
+  "a_voir": "e1* donne 1 sur e1 et 0 sur e2 ; e2* fait l'inverse."
+ },
+ {
+  "code": "71-040",
+  "a_dire": "e*_i appliquée à un point donne sa i-ième coordonnée.",
+  "legende_titre": "Une forme qui lit une coordonnée",
+  "lecture": [
+   "En haut, le point est écrit 3 e1 (bleu) plus 5 e2 (violet).",
+   "La flèche orange applique e1* à chaque terme : 3 × 1 en bleu, 5 × 0 en gris.",
+   "Le résultat vert est 3, la première coordonnée."
+  ],
+  "a_voir": "Le terme multiplié par 0 disparaît ; il reste la coordonnée 3."
+ },
+ {
+  "code": "71-041",
+  "a_dire": "Dans le plan, le prix s'écrit 2 e1* + e2*, avec les coefficients 2 et 1.",
+  "legende_titre": "Le prix écrit avec les deux formes de lecture",
+  "lecture": [
+   "Le point bleu (3 ; 5) se lit par une avance horizontale de 3 (orange) puis verticale de 5 (violet).",
+   "La case bleue écrit le prix f = 2 e1* + e2*.",
+   "La case verte calcule le prix du point : 2 × 3 + 1 × 5 = 11."
+  ],
+  "a_voir": "Les deux formes de lecture suffisent à écrire le prix."
+ },
+ {
+  "code": "71-042",
+  "a_dire": "Si V a une base de n flèches, V* a une base de n formes, donc dim V* = n.",
+  "legende_titre": "Autant de formes que de flèches",
+  "lecture": [
+   "À gauche, deux flèches de base e1 et e2 (gris).",
+   "À droite, deux formes de la base duale e1* et e2* (bleu).",
+   "Les doubles flèches orange associent chaque flèche à sa forme ; en bas, les dimensions sont égales."
+  ],
+  "a_voir": "Une forme pour chaque flèche : dim V* = dim V."
+ },
+ {
+  "code": "71-043",
+  "a_dire": "Toute forme f est égale à la somme des f(e_i) e*_i, car elles ont les mêmes valeurs sur la base.",
+  "legende_titre": "Deux écritures qui prennent les mêmes valeurs",
+  "lecture": [
+   "La case bleue est la forme f ; la case violette est 2 e1* + 1 e2*.",
+   "Chaque ligne compare les deux côtés sur une flèche de base : 2 et 2 sur e1, 1 et 1 sur e2.",
+   "Les signes = verts montrent que les valeurs coïncident."
+  ],
+  "a_voir": "Les deux côtés valent pareil sur chaque flèche de base, donc ils sont égaux."
+ },
+ {
+  "code": "71-044",
+  "a_dire": "Si une combinaison des e*_i est nulle, on l'applique à e_j et on trouve que le coefficient c_j est 0.",
+  "legende_titre": "Appliquer à e1 isole un coefficient",
+  "lecture": [
+   "La case violette suppose 3 e1* + 2 e2* égal à 0 partout.",
+   "La case bleue applique cette égalité à e1 : 3 × 1 + 2 × 0 = 3.",
+   "La case rouge montre que 3 est différent de 0 : le coefficient 3 est impossible."
+  ],
+  "a_voir": "Appliquer à e1 isole le coefficient 3, qui doit être 0."
+ },
+ {
+  "code": "71-045",
+  "a_dire": "Changer de base change la base duale : la même forme de lecture ne lit plus la même valeur.",
+  "legende_titre": "Un point, deux lectures",
+  "lecture": [
+   "Le disque bleu est le point (3 ; 1), le même à gauche et à droite.",
+   "À gauche (gris), la base (e1, e2) : la forme de lecture e1* lit 3.",
+   "À droite (violet), la base (u1, u2) : la forme de lecture u1* lit 2.",
+   "Le signe rouge ≠ montre que les deux formes de lecture sont différentes."
+  ],
+  "a_voir": "Quand on change de base, la forme de lecture change : le même point est lu 3 ou 2."
+ },
+ {
+  "code": "71-046",
+  "a_dire": "Pour la base u1 = (1 ; 1), u2 = (1 ; −1), la base duale est s = (x + y)/2 et t = (x − y)/2.",
+  "legende_titre": "La base duale vérifiée sur un point",
+  "lecture": [
+   "Les flèches bleue et violette montrent 2 u1 puis 1 u2, qui mènent au point vert (3 ; 1).",
+   "La case bleue calcule s = (3 + 1)/2 = 2.",
+   "La case violette calcule t = (3 − 1)/2 = 1."
+  ],
+  "a_voir": "Les formes s et t donnent 2 et 1 pour le point (3 ; 1)."
+ },
+ {
+  "code": "71-047",
+  "a_dire": "s et t sont les coordonnées d'un point dans la nouvelle base : (x, y) = s u1 + t u2.",
+  "legende_titre": "Lire un point, puis le reconstruire",
+  "lecture": [
+   "Le point gris (3 ; 1) est lu par les flèches orange avec s et t.",
+   "La case bleue s = 2 est la coordonnée sur u1 ; la case violette t = 1 est celle sur u2.",
+   "La case verte reconstruit le point : 2 u1 + 1 u2 = (3 ; 1)."
+  ],
+  "a_voir": "Lire un point dans la base, c'est appliquer s et t."
+ },
+ {
+  "code": "71-048",
+  "a_dire": "Le produit scalaire du plan prend deux flèches et rend un nombre : x1 y1 + x2 y2.",
+  "legende_titre": "Deux flèches, un seul nombre",
+  "lecture": [
+   "La flèche bleue (3 ; 1) et la flèche violette (1 ; 2) partent de l'origine.",
+   "Les cases orange multiplient les avances horizontales (3 × 1) puis verticales (1 × 2).",
+   "La case verte les additionne : 3 + 2 = 5."
+  ],
+  "a_voir": "Deux flèches donnent un nombre : 5."
+ }
+]

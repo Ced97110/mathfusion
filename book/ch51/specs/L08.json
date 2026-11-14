@@ -1,0 +1,188 @@
+[
+ {
+  "code": "51-113",
+  "a_dire": "Un corps est un corps gauche dont la multiplication est commutative, et il est intègre.",
+  "legende_titre": "Le corps et ses deux voisins plus larges",
+  "lecture": [
+   "Le rectangle violet est le corps gauche : il a des inverses, mais l’ordre des facteurs est libre.",
+   "Le rectangle gris est l’anneau intègre : pas de diviseur de zéro, mais pas d’inverses exigés.",
+   "Le rectangle bleu du bas est le corps.",
+   "Chaque flèche orange dit ce qu’on ajoute à un voisin pour obtenir le corps."
+  ],
+  "a_voir": "Le corps se trouve en dessous de ses deux voisins, avec ce qu’il leur ajoute."
+ },
+ {
+  "code": "51-114",
+  "a_dire": "Dans ℚ, ℝ et ℂ le nombre 2 a un inverse, un demi ; dans ℤ il n’en a pas, donc ℤ n’est pas un corps.",
+  "legende_titre": "Cherchons l’inverse de 2 dans quatre mondes",
+  "lecture": [
+   "Les trois premières lignes, vertes, montrent que 2 fois un demi vaut 1 dans ℚ, ℝ et ℂ.",
+   "La ligne rouge du bas montre qu’aucun entier multiplié par 2 ne donne 1.",
+   "Le mot à droite de chaque ligne dit si le monde est un corps."
+  ],
+  "a_voir": "Trois lignes vertes avec un inverse, une ligne rouge sans inverse."
+ },
+ {
+  "code": "51-115",
+  "a_dire": "Dans un corps gauche, ax = b avec a non nul a une seule solution, x = a⁻¹b.",
+  "legende_titre": "Résoudre ax = b en multipliant par l’inverse",
+  "lecture": [
+   "À gauche, la case bleue est l’équation 3x = 12.",
+   "La flèche orange multiplie par un tiers, l’inverse de 3 ; la case verte donne x = 4 et la vérification 3 × 4 = 12.",
+   "À droite, la case rouge 2x = 3 n’a pas de solution entière.",
+   "En bas, la formule générale écrit la solution avec l’inverse de a."
+  ],
+  "a_voir": "La solution s’obtient en multipliant par l’inverse ; sans inverse, pas de solution."
+ },
+ {
+  "code": "51-116",
+  "a_dire": "Chaque type d’anneau est contenu dans le précédent : corps, intègre, commutatif, anneau.",
+  "legende_titre": "Des rectangles emboîtés, un exemple par bande",
+  "lecture": [
+   "Le rectangle gris extérieur contient tous les anneaux ; son exemple écrit en haut est M₂(ℝ).",
+   "Le rectangle bleu contient les anneaux commutatifs, le violet les intègres, le vert les corps.",
+   "Chaque exemple est écrit dans la bande de son dernier rectangle.",
+   "Le rectangle rouge, à part, contient les corps gauches non commutatifs, avec ℍ."
+  ],
+  "a_voir": "Plus on entre dans les rectangles, plus on demande de propriétés."
+ },
+ {
+  "code": "51-117",
+  "a_dire": "On lit la figure de l’extérieur vers l’intérieur : on entre tant que la propriété est vraie, on s’arrête quand elle échoue.",
+  "legende_titre": "Placer le cadran à 6 heures dans les rectangles",
+  "lecture": [
+   "Les deux cases vertes du haut sont les rectangles où ℤ/6 entre : anneau, puis commutatif.",
+   "La case rouge est celle où il s’arrête : 2 et 3 ne sont pas nuls et leur produit l’est.",
+   "La case grise en pointillé, le corps, n’est jamais atteinte.",
+   "Les flèches orange donnent le sens de lecture, vers l’intérieur."
+  ],
+  "a_voir": "Une suite de cases de plus en plus étroites, qui s’arrête à la case rouge."
+ },
+ {
+  "code": "51-118",
+  "a_dire": "M₂(ℝ) est un anneau non commutatif : A × B et B × A donnent deux tableaux différents.",
+  "legende_titre": "Deux produits dans deux ordres",
+  "lecture": [
+   "A, en bleu, et B, en violet, sont deux tableaux de 2 lignes et 2 colonnes.",
+   "La ligne du haut donne A fois B, la ligne du bas B fois A, en orange.",
+   "Le signe rouge ≠ dit que les deux résultats sont différents."
+  ],
+  "a_voir": "Le même couple de tableaux donne deux résultats différents selon l’ordre."
+ },
+ {
+  "code": "51-119",
+  "a_dire": "ℤ/6 est commutatif, car 2 × 3 et 3 × 2 donnent 0, mais non intègre, car 2 et 3 ne sont pas nuls.",
+  "legende_titre": "Deux produits nuls sur le cadran à 6 heures",
+  "lecture": [
+   "Chaque cadran a six points ; les flèches orange sont les sauts.",
+   "À gauche, trois sauts de 2 ramènent sur 0 ; à droite, deux sauts de 3 ramènent sur 0.",
+   "La case verte dit que l’ordre donne le même résultat.",
+   "La case rouge dit que les deux facteurs ne sont pas nuls alors que le produit l’est."
+  ],
+  "a_voir": "Deux chemins différents arrivent sur 0 avec des facteurs non nuls."
+ },
+ {
+  "code": "51-120",
+  "a_dire": "ℤ est intègre mais n’est pas un corps, car 2 n’a pas d’inverse entier.",
+  "legende_titre": "Les entiers : intègres, sans inverse de 2",
+  "lecture": [
+   "La case verte dit que ℤ est intègre ; la case rouge dit qu’il n’est pas un corps.",
+   "Sur la droite graduée, chaque flèche orange multiplie un entier par 2.",
+   "Le point rouge est un demi : le seul départ qui donnerait 1, mais ce n’est pas un entier."
+  ],
+  "a_voir": "Multiplier un entier par 2 n’atteint jamais le point 1."
+ },
+ {
+  "code": "51-121",
+  "a_dire": "ℤ/7 est un corps fini : chaque élément non nul a un inverse.",
+  "legende_titre": "Trois inverses calculés sur le cadran à 7 heures",
+  "lecture": [
+   "Chaque barre compte les cases du produit : 15, 8 et 36.",
+   "Les cases grises sont des groupes de 7 retirés.",
+   "La case verte restante vaut 1 : le produit est donc 1.",
+   "Les trois lignes donnent les inverses de 3, 2 et 6."
+  ],
+  "a_voir": "Après avoir retiré les groupes de 7, il reste toujours une case, qui vaut 1."
+ },
+ {
+  "code": "51-122",
+  "a_dire": "Dans les quaternions, i × j donne k mais j × i donne −k : la multiplication n’est pas commutative.",
+  "legende_titre": "Deux ordres, deux résultats dans ℍ",
+  "lecture": [
+   "Les cases i (bleue) et j (violette) sont les deux facteurs, écrits dans un ordre puis dans l’autre.",
+   "La case verte est le produit i fois j, égal à k.",
+   "La case orange est le produit j fois i, égal à moins k.",
+   "Le signe rouge dit que les deux résultats sont différents."
+  ],
+  "a_voir": "En changeant l’ordre des facteurs, le résultat change de signe."
+ },
+ {
+  "code": "51-123",
+  "a_dire": "Dans un corps, si ab = 0 et a est non nul, on multiplie par l’inverse de a et on obtient b = 0 ; sans inverse, ça échoue.",
+  "legende_titre": "Retirer l’inverse : le raisonnement tombe",
+  "lecture": [
+   "À gauche, dans les fractions, la case bleue 2 fois b égale 0 devient b égale 0 en multipliant par un demi.",
+   "À droite, sur le cadran à 6 heures, 2 fois 3 vaut 0.",
+   "La flèche rouge dit que 2 n’a pas d’inverse, donc b peut valoir 3 et non 0."
+  ],
+  "a_voir": "Avec l’inverse b vaut 0 ; sans inverse b peut ne pas valoir 0."
+ },
+ {
+  "code": "51-124",
+  "a_dire": "La preuve part de 5 × b = 0, multiplie à gauche par un cinquième, regroupe pour isoler b, et conclut b = 0.",
+  "legende_titre": "Preuve par multiplication à gauche",
+  "lecture": [
+   "La case bleue du haut est le départ : 5 fois b égale 0.",
+   "Deux flèches orange multiplient chaque côté à gauche par un cinquième.",
+   "La flèche épaisse est l’étape décisive : un cinquième fois 5 vaut 1, ce qui isole b.",
+   "Le côté droit devient 0 ; les flèches vertes arrivent à b égale 0."
+  ],
+  "a_voir": "L’étape épaisse, un cinquième fois 5 égale 1, porte toute la preuve."
+ },
+ {
+  "code": "51-125",
+  "a_dire": "Un corps est intègre, mais la réciproque est fausse dans ℤ, infini, et vraie dans ℤ/7, fini.",
+  "legende_titre": "Deux mondes intègres, un seul est un corps",
+  "lecture": [
+   "Les points de gauche sont les entiers, qui continuent à l’infini ; les sept points violets sont ℤ/7.",
+   "Les deux cases ‘intègre : oui’ sont vertes.",
+   "À gauche, la case rouge dit que ℤ n’est pas un corps, car 2 n’a pas d’inverse.",
+   "À droite, la case verte dit que ℤ/7 est un corps, car 2 fois 4 vaut 1."
+  ],
+  "a_voir": "Même propriété intègre, mais seul le monde fini donne un corps."
+ },
+ {
+  "code": "51-126",
+  "a_dire": "Dans un anneau intègre fini, multiplier par un élément non nul donne tous les résultats une fois chacun, donc 1 est atteint : c’est l’inverse.",
+  "legende_titre": "Multiplier par 3 sur le cadran à 7 heures",
+  "lecture": [
+   "La rangée bleue du haut a les six départs, de 1 à 6.",
+   "La rangée verte du bas a les six résultats possibles.",
+   "Chaque flèche orange part d’un départ et arrive sur son produit par 3.",
+   "La flèche verte épaisse arrive sur 1 : elle part de 5, et 3 fois 5 vaut 1."
+  ],
+  "a_voir": "Six flèches, six places différentes : la place 1 est atteinte."
+ },
+ {
+  "code": "51-127",
+  "a_dire": "Dans ℤ/7, après 7 additions de 1 on retombe sur 0 ; le nombre d’heures donne ce nombre de pas.",
+  "legende_titre": "Sept pas de +1 sur le cadran à 7 heures",
+  "lecture": [
+   "Les sept cercles sont les heures du cadran, de 0 à 6.",
+   "Chaque flèche orange est un pas de +1.",
+   "La flèche verte épaisse, du 6 vers le 0, est le septième pas : retour à 0."
+  ],
+  "a_voir": "Il faut sept pas pour faire un tour complet et retomber sur 0."
+ },
+ {
+  "code": "51-128",
+  "a_dire": "Dans ℤ, ajouter 1 encore et encore ne ramène jamais à 0.",
+  "legende_titre": "Les pas de +1 dans les entiers",
+  "lecture": [
+   "La droite graduée porte les entiers ; le point vert est 0, le départ.",
+   "Chaque arc orange est un pas de +1 vers la droite.",
+   "La flèche rouge du bas, vers 0, dit que le retour n’arrive jamais."
+  ],
+  "a_voir": "Les nombres ne font que grandir : on ne revient pas sur 0."
+ }
+]

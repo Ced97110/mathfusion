@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,4,4,80,44,'sujet')
+text(ax,44,42,'$E$ = ℝ : le grand corps','sujet','m')
+box(ax,12,10,34,22,'fixe')
+text(ax,29,21,'$F$ = ℚ\nle petit corps','fixe','m')
+arrow(ax,(46,21),(84,21),'varie')
+text(ax,65,26,'prolonge','varie','s')
+text(ax,44,55,'extension = un couple de corps','encre','s')
+save(fig,'61-034')

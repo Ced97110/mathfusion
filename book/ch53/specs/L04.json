@@ -1,0 +1,287 @@
+[
+ {
+  "code": "53-073",
+  "a_dire": "Un chiffre à plusieurs alphabets dont la clé revient plusieurs fois a été cassé par Kasiski.",
+  "legende_titre": "Une clé qui revient",
+  "lecture": [
+   "Les neuf cases bleues sont neuf lettres du message.",
+   "Les étiquettes k1, k2, k3 disent quel décalage sert à chaque lettre.",
+   "Les flèches orange relient un passage de la clé au passage suivant : la clé revient.",
+   "La case verte du bas dit ce que cette répétition permet : Kasiski casse le chiffre."
+  ],
+  "a_voir": "La clé qui revient est le défaut que Kasiski a utilisé pour casser le chiffre."
+ },
+ {
+  "code": "53-074",
+  "a_dire": "Une machine qui chiffre vite et sans erreur ne protège pas : l’équipe de Turing a cassé Enigma.",
+  "legende_titre": "La machine et l’équipe",
+  "lecture": [
+   "Le message clair passe dans la machine violette, vite et sans erreur.",
+   "Le message chiffré, en gris, part vers l’équipe de Turing, en bleu.",
+   "La flèche orange du bas montre l’équipe qui lit le message sans connaître la clé.",
+   "Le rectangle vert est le message lu."
+  ],
+  "a_voir": "Le chiffre sort de la machine, puis l’équipe le lit quand même sans la clé."
+ },
+ {
+  "code": "53-075",
+  "a_dire": "Dans un chiffre à clé privée, la même clé sert à chiffrer et à déchiffrer.",
+  "legende_titre": "Une seule clé pour les deux sens",
+  "lecture": [
+   "Le rectangle bleu du haut est la clé 3, partagée par Léa et Hugo.",
+   "La première flèche orange, + 3, est le chiffrement fait par Léa.",
+   "La seconde flèche orange, − 3, est le déchiffrement fait par Hugo.",
+   "Les traits pointillés bleus relient la même clé aux deux flèches."
+  ],
+  "a_voir": "La clé 3 sert au départ et au retour."
+ },
+ {
+  "code": "53-076",
+  "a_dire": "Avec une clé privée, celui qui peut chiffrer peut aussi déchiffrer, donc la clé doit être échangée en secret avant.",
+  "legende_titre": "Ce que fait l’espion qui sait 3",
+  "lecture": [
+   "Les deux rectangles bleus du haut sont Léa et Hugo ; la flèche orange est l’échange du 3 en secret avant.",
+   "Le rectangle violet est l’espion, qui apprend le 3.",
+   "Les deux flèches violettes partent de l’espion : écrire un faux message au nom de Léa, lire les messages de Hugo."
+  ],
+  "a_voir": "Le même nombre 3 donne à l’espion les deux pouvoirs."
+ },
+ {
+  "code": "53-077",
+  "a_dire": "Un cryptosystème est à clé publique si connaître f ne permet pas, en pratique, de calculer f moins un.",
+  "legende_titre": "Règle publiée, règle inverse cachée",
+  "lecture": [
+   "À gauche, en gris, César : de la règle « ajouter 3 » on tire « retrancher 3 » en une seconde.",
+   "À droite, en bleu, la règle f est publiée.",
+   "Le rectangle en pointillés est la règle inverse, qu’on ne trouve pas en pratique.",
+   "Le texte rouge dit que la règle de César ne peut pas être publiée ; le texte vert dit que l’autre peut l’être."
+  ],
+  "a_voir": "Seule la colonne de droite permet de publier f sans livrer f moins un."
+ },
+ {
+  "code": "53-078",
+  "a_dire": "f moins un est entièrement déterminée par f, mais peut être très longue à calculer.",
+  "legende_titre": "Déterminé mais long à trouver",
+  "lecture": [
+   "En haut, les rectangles bleus 13 et 17 donnent 221 par une seule multiplication.",
+   "En bas, le rectangle vert 221 part vers six essais de diviseurs : 2, 3, 5, 7, 11, puis 13.",
+   "Les cases grises sont les essais qui échouent ; la case verte 13 est celui qui réussit.",
+   "L’accolade orange compte les six essais."
+  ],
+  "a_voir": "Les facteurs sont uniques, mais il a fallu six essais pour les trouver."
+ },
+ {
+  "code": "53-079",
+  "a_dire": "La fonction cherchée est facile dans un sens, difficile dans l’autre, sauf pour qui possède une information supplémentaire.",
+  "legende_titre": "Trois sortes de fonctions",
+  "lecture": [
+   "Première ligne : flèches vertes épaisses dans les deux sens, tout est facile.",
+   "Deuxième ligne : flèches grises fines dans les deux sens, tout est difficile.",
+   "Troisième ligne, en bleu : l’aller est facile, le retour est difficile.",
+   "Le rectangle orange est l’information de Léa, qui rend le retour facile pour elle."
+  ],
+  "a_voir": "Seule la troisième ligne convient : aller facile, retour difficile sauf avec l’information de Léa."
+ },
+ {
+  "code": "53-080",
+  "a_dire": "La clé privée est un nombre connu d’une seule personne, à la différence de la clé publique et de la clé du chiffre ancien.",
+  "legende_titre": "Qui connaît quelle clé",
+  "lecture": [
+   "Chaque disque représente une personne qui connaît la clé.",
+   "Les dix disques violets sont ceux de la clé publique : tout le monde la connaît.",
+   "Le disque bleu seul est la clé privée : Léa seule.",
+   "Les deux disques gris sont la clé du chiffre ancien, connue de deux personnes."
+  ],
+  "a_voir": "La clé privée n’a qu’un seul disque."
+ },
+ {
+  "code": "53-081",
+  "a_dire": "On ne sait pas démontrer qu’une telle fonction existe : la sécurité est un constat, pas un théorème.",
+  "legende_titre": "Démontré ou constaté",
+  "lecture": [
+   "À gauche, toutes les cases vertes sont remplies : le théorème d’Euler est démontré pour tous.",
+   "À droite, les cases grises pleines sont des essais où rien n’a été trouvé.",
+   "Les cases en pointillés avec « ? » sont ce que personne ne peut affirmer."
+  ],
+  "a_voir": "La colonne de droite a des cases vides : rien n’est démontré, on a seulement un constat."
+ },
+ {
+  "code": "53-082",
+  "a_dire": "Le système de Merkle et Hellman, proposé en 1978, a été cassé ; RSA, proposé la même année, tient depuis.",
+  "legende_titre": "Deux systèmes proposés en 1978",
+  "lecture": [
+   "Le trait pointillé marque 1978, départ des deux systèmes.",
+   "La barre violette Merkle-Hellman s’arrête sur la case rouge « cassé ».",
+   "La barre bleue RSA continue et se prolonge par la flèche.",
+   "La flèche grise du bas est le temps."
+  ],
+  "a_voir": "Les deux barres partent ensemble ; une seule s’arrête."
+ },
+ {
+  "code": "53-083",
+  "a_dire": "La recette RSA se fait en six étapes, qui donnent une clé publique et une clé privée.",
+  "legende_titre": "Six étapes pour fabriquer les clés",
+  "lecture": [
+   "Les cercles orange numérotent les six étapes dans l’ordre.",
+   "Les trois rectangles bleus calculent p et q, n, puis le nombre de cases inversibles.",
+   "Les deux rectangles violets choisissent e puis calculent d.",
+   "En bas, le vert est ce qu’Alice publie ; le gris est ce qu’elle garde."
+  ],
+  "a_voir": "Alice publie 55 et 3, et garde 27."
+ },
+ {
+  "code": "53-084",
+  "a_dire": "Alice est le nom du rôle de la personne qui reçoit les messages et fabrique les clés.",
+  "legende_titre": "Un prénom pour un rôle",
+  "lecture": [
+   "Le rectangle gris du haut est la phrase longue.",
+   "La flèche orange montre qu’un prénom la remplace.",
+   "Le disque bleu est Alice.",
+   "Les trois rectangles verts sont ce qu’Alice fait : fabriquer les clés, garder la clé privée, publier la clé publique."
+  ],
+  "a_voir": "Le nom Alice remplace une phrase et regroupe trois actions."
+ },
+ {
+  "code": "53-085",
+  "a_dire": "L’étape échoue si p et q sont égaux : la formule donne 16 au lieu de 20 pour n égal à 25.",
+  "legende_titre": "Quand p et q sont égaux",
+  "lecture": [
+   "Les 24 cases sont les nombres de 1 à 24 ; les cases orange sont les 4 multiples de 5.",
+   "Les 20 cases bleues sont les nombres sans diviseur commun avec 25.",
+   "Le rectangle vert donne le vrai nombre, 20.",
+   "Le rectangle rouge donne la formule, 16, qui est fausse ici."
+  ],
+  "a_voir": "Le vert et le rouge ne sont pas égaux : la formule ne marche pas avec 5 et 5."
+ },
+ {
+  "code": "53-086",
+  "a_dire": "n égale p fois q : une seule multiplication, dont le résultat est publié et les deux facteurs restent secrets.",
+  "legende_titre": "Multiplier deux premiers",
+  "lecture": [
+   "Les cases en pointillés gris sont p et q, gardés secrets.",
+   "Le signe × et la flèche orange sont la multiplication.",
+   "La case verte est n, qui est publié.",
+   "La première ligne donne 55 ; la seconde donne 667."
+  ],
+  "a_voir": "Le produit est publié, les deux facteurs ne le sont pas."
+ },
+ {
+  "code": "53-087",
+  "a_dire": "On retire 1 à chacun des deux nombres premiers, puis on multiplie : c’est la forme du calcul, quels que soient les nombres.",
+  "legende_titre": "Le calcul de phi de n",
+  "lecture": [
+   "Les cases bleues du haut sont p et q.",
+   "Les flèches orange et le « −1 » mènent aux cases orange, p moins 1 et q moins 1.",
+   "Les flèches du bas et le signe × mènent au résultat.",
+   "Le rectangle vert donne 40 pour 55, et 616 pour 667."
+  ],
+  "a_voir": "Les deux colonnes suivent le même chemin : −1, puis ×."
+ },
+ {
+  "code": "53-088",
+  "a_dire": "Alice doit choisir e premier avec phi de n, sinon le reste 1 n’est jamais atteint et d n’existe pas.",
+  "legende_titre": "Pourquoi PGCD égal à 1",
+  "lecture": [
+   "Chaque petite case est un reste par 40, de 0 à 39 ; le « 1 » marque la case du reste 1.",
+   "En haut, avec e égal à 3, toutes les cases vertes sont atteintes, le reste 1 compris.",
+   "En bas, avec e égal à 4, seules les cases orange sont atteintes : les multiples de 4.",
+   "La case rouge est le reste 1, jamais atteint."
+  ],
+  "a_voir": "Avec 4, la case du reste 1 reste vide."
+ },
+ {
+  "code": "53-089",
+  "a_dire": "On trouve d en quatre actions : diviser, isoler 1, lire le coefficient et le ramener entre 0 et phi de n, puis vérifier.",
+  "legende_titre": "Quatre actions pour trouver d",
+  "lecture": [
+   "Le premier rectangle bleu divise 40 par 3.",
+   "Le deuxième écrit 1 comme 40 moins 13 fois 3.",
+   "Le rectangle orange ramène moins 13 à 27 en ajoutant 40.",
+   "Le rectangle vert vérifie : 3 fois 27 vaut 81, soit 2 fois 40 plus 1."
+  ],
+  "a_voir": "Les flèches suivent les quatre actions jusqu’à d égal 27."
+ },
+ {
+  "code": "53-090",
+  "a_dire": "La clé publique est le couple (n, e), publié, qui sert seulement à chiffrer.",
+  "legende_titre": "Ce qu’Alice publie",
+  "lecture": [
+   "Le cadre bleu contient les deux nombres de la clé publique : n égal 55 et e égal 3.",
+   "La flèche orange mène au rectangle « lue par tous ».",
+   "Le texte orange précise que cette clé sert à chiffrer seulement.",
+   "Le rectangle gris du bas montre ce qu’Alice garde : 40 et 27."
+  ],
+  "a_voir": "Le couple 55 et 3 est dans le cadre publié ; 40 et 27 restent à part."
+ },
+ {
+  "code": "53-091",
+  "a_dire": "La clé privée d est le nombre qu’Alice garde et qui sert à lire les messages.",
+  "legende_titre": "Le nombre gardé",
+  "lecture": [
+   "Le rectangle gris de gauche, 55 et 3, est ce qui est publié : il sert à écrire à Alice.",
+   "Le rectangle bleu de droite, 27, est gardé par Alice seule.",
+   "La flèche de gauche mène à « écrire à Alice » ; celle de droite mène à « lire le message »."
+  ],
+  "a_voir": "Écrire se fait avec les nombres publiés ; lire demande 27."
+ },
+ {
+  "code": "53-092",
+  "a_dire": "Les nombres qui permettent de recalculer la clé privée sont aussi secrets qu’elle.",
+  "legende_titre": "Ce qui doit rester secret",
+  "lecture": [
+   "Le cadre en pointillés gris contient les nombres à garder secrets.",
+   "Dans le cadre, 5 et 11 donnent 40, puis 40 donne 27 par l’inverse de 3.",
+   "Le rectangle violet est l’espion, qui apprend 40.",
+   "La flèche violette entre dans la chaîne : il peut refaire le calcul et trouver 27."
+  ],
+  "a_voir": "Celui qui connaît 40 retrouve 27."
+ },
+ {
+  "code": "53-093",
+  "a_dire": "Bob est le nom du rôle de celui qui écrit à Alice.",
+  "legende_titre": "Un prénom pour l’expéditeur",
+  "lecture": [
+   "Le rectangle gris du haut est la phrase longue.",
+   "La flèche orange du haut montre qu’un prénom la remplace : Bob, en violet.",
+   "Le rectangle bleu est Alice, le destinataire.",
+   "La flèche orange horizontale montre que Bob chiffre avec la clé publique d’Alice."
+  ],
+  "a_voir": "Bob envoie, Alice reçoit."
+ },
+ {
+  "code": "53-094",
+  "a_dire": "Le message doit être un nombre m entre 0 et n moins 1, sinon on le coupe en morceaux.",
+  "legende_titre": "Un message sur l’horloge",
+  "lecture": [
+   "La droite graduée va de 0 à 54, les cases de l’horloge à 55 cases ; l’accolade grise dit 0 ≤ m < 55.",
+   "Le point vert 8 est un message qui convient.",
+   "Le rectangle rouge 3 412 est trop grand.",
+   "Les flèches orange le coupent en 12 et 34, deux points verts sur la droite."
+  ],
+  "a_voir": "3 412 est hors de la droite ; 12 et 34 y tombent."
+ },
+ {
+  "code": "53-095",
+  "a_dire": "Pour chiffrer, on élève m à la puissance e, puis on garde le reste par n.",
+  "legende_titre": "Chiffrer le message 8",
+  "lecture": [
+   "Le rectangle bleu est le message 8.",
+   "La première flèche orange élève à la puissance 3 : 8 fois 8 fois 8 donne 512, en orange.",
+   "La seconde flèche garde le reste par 55.",
+   "Le rectangle gris du bas écrit 512 comme 9 fois 55 plus 17 ; le rectangle vert 17 est le message chiffré."
+  ],
+  "a_voir": "8 devient 512, puis 17."
+ },
+ {
+  "code": "53-096",
+  "a_dire": "Pour déchiffrer, on fait la même opération avec d : élever à la puissance d puis garder le reste par n.",
+  "legende_titre": "Retrouver le message",
+  "lecture": [
+   "Les cases bleues sont les messages 8 et 22.",
+   "Les cases grises sont leurs chiffrés, 17 et 33, obtenus par la flèche grise.",
+   "La flèche orange est le déchiffrement : puissance 27, puis reste par 55.",
+   "Les cases vertes sont les messages retrouvés."
+  ],
+  "a_voir": "La flèche orange est la même sur les deux lignes et redonne 8 et 22."
+ }
+]

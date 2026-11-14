@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+x0, x1 = 6, 80
+text(ax, 3, 65, 'messages', 'encre', 's', ha='left')
+f = numberline(ax, x0, x1, 56, 0, 55, 5, labels=False, arrow_right=False)
+text(ax, 82, 10.5, 'chiffrés', 'encre', 's', ha='right')
+g = numberline(ax, x0, x1, 16, 0, 55, 5, labels=False, arrow_right=False)
+disc(ax, f(4), 56, 1.7, 'sujet'); text(ax, f(4), 60.5, '4', 'sujet', 'm')
+disc(ax, f(51), 56, 1.7, 'autre'); text(ax, f(51), 60.5, '51', 'autre', 'm')
+disc(ax, g(16), 16, 1.7, 'resultat'); text(ax, g(16), 10.5, '16', 'resultat', 'm')
+arrow(ax, (f(4), 53.8), (g(16) - 0.8, 18.2), 'sujet')
+arrow(ax, (f(51), 53.8), (g(16) + 0.8, 18.2), 'autre')
+text(ax, 15, 38, '4² = 16', 'sujet', 's')
+text(ax, 57, 31, '51² = 47 × 55 + 16', 'autre', 's', ha='left')
+text(ax, 43, 65, '4 + 51 = 55', 'encre', 's')
+text(ax, 44, 3, '18 chiffrés pour 55 messages', 'encre', 's')
+save(fig, '53-171')

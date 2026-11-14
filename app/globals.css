@@ -233,3 +233,94 @@ figure svg{border:1px solid var(--filet);border-radius:8px}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+/* Fusion avec main : listes de chapitres par branche, menu des branches, autres livres */
+.chl{list-style:none;margin:0;padding:0;font-family:Inter,system-ui,sans-serif}
+.chl li{border-top:1px solid #d9dde3}
+.chl a,.chl span.na{display:flex;gap:12px;align-items:baseline;padding:13px 2px;text-decoration:none;color:#1c1c1c;font-size:15.5px;line-height:1.35}
+.chl .k{flex:none;width:2.6rem;font-weight:700;color:#1f4e79;font-variant-numeric:tabular-nums}
+.chl .c{flex:none;margin-left:auto;font-size:12.5px;color:#5f6773;white-space:nowrap}
+.chl span.na{color:#9aa1ab}.chl span.na .k{color:#9aa1ab}
+.chl a:hover{background:#f3f6fa}
+#br{position:sticky;top:56px;z-index:9;display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:#e8eef5;border-bottom:1px solid #d9dde3;font:600 13.5px Inter,system-ui,sans-serif;scrollbar-width:none}
+#br::-webkit-scrollbar{display:none}
+#br a{flex:none;color:#1f4e79;text-decoration:none;padding:7px 11px;border-radius:6px;background:#fff;white-space:nowrap}
+#br a:hover{background:#d6e4f2}
+#home .bs{margin-top:22px}
+#home .bt{font:700 17px Inter,system-ui,sans-serif;margin:0 0 4px}
+#home .bt a{color:#1f4e79;text-decoration:none}
+#home .ss{font:600 12.5px Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5f6773;margin:12px 0 2px}
+.crumb{padding:12px 18px 0;margin:0;font:600 13px Inter,system-ui,sans-serif}
+.crumb a{color:#5f6773;text-decoration:none}
+/* Mathématiques discrètes : texte du livre, et bandes SVG découpées du PDF (--w = largeur en em du corps du PDF) */
+.livre{padding:8px 18px 0}
+.livre .pk{font:600 13px Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#5f6773;margin-top:18px}
+.livre h1{font:700 28px/1.2 Inter,system-ui,sans-serif;color:#1f4e79;margin:6px 0 8px}
+.livre h2{margin:30px 0 10px}
+.livre h3{font:700 17px/1.3 Inter,system-ui,sans-serif;margin:22px 0 8px}
+.livre p{margin:0 0 12px}
+.livre p.li{padding-left:1.3em;text-indent:-.9em}
+.livre p.li::before{content:"•";display:inline-block;width:.9em}
+.livre .m{white-space:normal}
+.livre sup,.livre sub{font-size:.7em;line-height:0}
+.livre img{display:block;max-width:100%;height:auto}
+.livre img.vm{width:calc(var(--w) * 1em);margin:4px 0 12px}
+.livre img.vf{width:calc(var(--w) * 1.45em);margin:18px auto 6px}
+.livre .cap{font:14px/1.45 Inter,system-ui,sans-serif;color:#2b3138;margin-bottom:20px}
+/* Physique : ligne « Sources » sous le titre du chapitre (le reste du style vient de .livre) */
+.livre .src{font:500 14px Inter,system-ui,sans-serif;color:#5f6773;margin:0 0 18px}
+/* Mathématiques discrètes, au format du livre principal : texte du livre, et bandes SVG découpées du PDF (--w = largeur en em du corps du PDF) */
+.corps{padding:0 18px}
+.corps h2{margin:30px 0 10px}
+.corps h3{font:700 17px/1.3 Inter,system-ui,sans-serif;margin:22px 0 8px}
+.corps p{margin:0 0 12px}
+.corps p.li{padding-left:1.3em;text-indent:-.9em}
+.corps p.li::before{content:"•";display:inline-block;width:.9em}
+.corps .m{white-space:normal}
+.corps sup,.corps sub{font-size:.7em;line-height:0}
+.corps img{display:block;max-width:100%;height:auto}
+.corps img.vm{width:calc(var(--w) * 1em);margin:4px 0 12px}
+.corps img.vf{width:calc(var(--w) * 1.45em);margin:18px auto 6px}
+.corps .cap{font:14px/1.45 Inter,system-ui,sans-serif;color:#2b3138;margin-bottom:20px}
+/* Figures interactives : la figure du livre (img) reste en repli et pour l'impression */
+.livre img.fi-done{display:none}
+.livre .fi{margin:18px 0 6px}
+.livre .fi svg{max-width:calc(var(--fiw, 34) * 1em);margin:0 auto}
+.livre .fi svg:focus-visible{outline:3px solid #b8500a;outline-offset:2px}
+.fi-s{display:flex;align-items:center;gap:10px;margin:8px 0 0;font:500 14px Inter,system-ui,sans-serif;color:#2b3138}
+.fi-s span{flex:none;min-width:7em}
+.fi-s input{flex:1;min-width:0;accent-color:#b8500a;height:28px}
+.fi-s output{flex:none;min-width:5.5em;text-align:right;font-variant-numeric:tabular-nums}
+.fi-r{margin-top:8px;font:600 13px Inter,system-ui,sans-serif;color:#1f4e79;background:#eef2f7;border:1px solid #c9d3df;border-radius:6px;padding:8px 12px;min-height:40px;cursor:pointer}
+@media print{.livre img.fi-done{display:block}.livre .fi{display:none}}
+
+/* livre « Avant l'apprentissage automatique » (public/ml, tools/ml/build.py) */
+.ml #chap{padding:4px 18px 0}
+.ml .pk{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#b5462d;margin-top:12px}
+.ml h1{font:800 27px/1.2 Inter,system-ui,sans-serif;margin:6px 0 4px}
+.ml .h1en{font:400 18px/1.3 Inter,system-ui,sans-serif;color:#2c5f8a;margin-bottom:18px}
+.ml h2{font:800 20px/1.25 Inter,system-ui,sans-serif;color:#b5462d;margin:30px 0 2px}
+.ml .h2en{font:italic 800 16px/1.3 Inter,system-ui,sans-serif;color:#2c5f8a;margin-bottom:12px}
+.ml p{font-family:Inter,system-ui,sans-serif;font-size:16.5px;line-height:1.55;margin:0 0 10px}
+.ml p.en{color:#2c5f8a;border-left:2px solid #2c5f8a;padding-left:12px;margin-left:2px}
+.ml p.cap{font-size:14.5px;line-height:1.45;margin-bottom:6px}
+.ml p.cap.en{border-left:0;padding-left:0;margin-bottom:16px}
+.ml img.vm,.ml img.vf{display:block;width:min(100%,calc(var(--w) * 18px));height:auto;margin:4px 0 10px}
+.ml img.vf{margin:14px 0 10px}
+#home .mlen{font:500 14px Inter,system-ui,sans-serif;color:#2c5f8a;margin:-2px 0 4px}
+/* Avant l'apprentissage automatique : figures interactives (public/ml/fig), « prédis, puis vérifie » */
+.ml img.fi-done{display:none}
+.ml .fi{margin:14px 0 12px;font-family:Inter,system-ui,sans-serif}
+.ml .fi svg{max-width:560px}
+.fi-q{background:#f3f6fa;border-left:3px solid #2c5f8a;padding:10px 12px;margin:0 0 10px}
+.ml .fi-q p.fi-qt{font-size:15px;margin:0 0 8px}
+.fi-qc{display:flex;flex-wrap:wrap;gap:8px}
+.fi-qb{font:600 14px Inter,system-ui,sans-serif;color:#1c1c1c;background:#fff;border:1px solid #c9d3df;border-radius:6px;padding:8px 14px;min-height:40px;cursor:pointer}
+.fi-qb:disabled{cursor:default;opacity:.75}
+.fi-qb.ok{border-color:#4a7c3a;background:#e3efdd;color:#2d5a22;opacity:1}
+.fi-qb.ko{border-color:#b5462e;background:#f7e1dc;color:#8a2f1d;opacity:1}
+.fi-qs{color:#5f6773}
+.ml .fi-q p.fi-qr{font-size:14.5px;margin:8px 0 0}
+.ml .fi-q p.fi-qr:empty{display:none}
+.fi-s input:disabled{opacity:.4}
+@media print{.ml img.fi-done{display:block}.ml .fi{display:none}}

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 2, 62, '1 000 000 de pions : fini', 'autre', 's', ha='left')
+for x0, lab in ((5, '0'), (21, '1')): box(ax, x0, 45, 14, 9, 'autre', label=lab)
+text(ax, 42, 49.5, '…', 'autre', 'l')
+box(ax, 49, 45, 26, 9, 'autre', label='999 999')
+line(ax, [(79.5, 42), (79.5, 57)], 'fixe', lw=2.0)
+text(ax, 2, 32, 'les entiers : infini', 'sujet', 's', ha='left')
+for i in range(4): box(ax, 5 + 16 * i, 14, 14, 9, 'sujet', label=str(i))
+arrow(ax, (70, 18.5), (86, 18.5), 'varie')
+save(fig, '43-108')

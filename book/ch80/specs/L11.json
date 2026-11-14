@@ -1,0 +1,275 @@
+[
+ {
+  "code": "80-241",
+  "a_dire": "6 ne divise pas 10, et l’atome 3 le montre : il divise 6 sans diviser 10.",
+  "legende_titre": "Un atome qui sépare 6 et 10",
+  "lecture": [
+   "Chaque ligne est un atome, chaque colonne un nombre : 6 en bleu, 10 en violet.",
+   "La ligne grise est l’atome 2 : il divise 6 et 10, il ne montre rien.",
+   "La ligne bleue est l’atome 3 : « oui » pour 6 en vert, « non » pour 10 en rouge."
+  ],
+  "a_voir": "Seul l’atome 3 divise 6 sans diviser 10."
+ },
+ {
+  "code": "80-242",
+  "a_dire": "Tout 𝑏 est le sup des atomes situés sous lui, et de ceux-là seulement.",
+  "legende_titre": "Quels atomes reconstruisent 6 ?",
+  "lecture": [
+   "Chaque rond est un diviseur de 30 ; les atomes 2, 3 et 5 sont la rangée juste au-dessus de 1.",
+   "Le rond bleu est 6 ; les traits verts le relient aux atomes 2 et 3, qui sont sous lui.",
+   "Le rond orange est l'atome 5 : il n'est pas sous 6.",
+   "Les textes du bas donnent le PPCM : 6 avec 2 et 3, 30 si on ajoute 5."
+  ],
+  "a_voir": "Seuls les atomes sous 6 redonnent 6."
+ },
+ {
+  "code": "80-243",
+  "a_dire": "30 est le PPCM de 2, 3 et 5, et 6 est le PPCM de 2 et 3.",
+  "legende_titre": "Chaque nombre vient de ses atomes",
+  "lecture": [
+   "Les ronds verts du bas sont les atomes.",
+   "À gauche, les flèches orange vont de 2, 3 et 5 vers le rond bleu 30.",
+   "À droite, les flèches vont de 2 et 3 vers le rond bleu 6."
+  ],
+  "a_voir": "Les atomes sous un nombre redonnent ce nombre par le PPCM."
+ },
+ {
+  "code": "80-244",
+  "a_dire": "Le sup 𝑏₁ des atomes sous 𝑏 est égal à 𝑏.",
+  "legende_titre": "Deux inégalités qui donnent l’égalité",
+  "lecture": [
+   "Les ronds verts du bas sont les atomes sous 30 ; les flèches orange vont vers leur PPCM, 𝑏₁ en bleu.",
+   "La flèche verte monte de 𝑏₁ vers 𝑏 en violet : 𝑏₁ est sous 𝑏.",
+   "La flèche orange descend de 𝑏 vers 𝑏₁ : c’est l’étape décisive."
+  ],
+  "a_voir": "Les deux sens donnent 𝑏 = 𝑏₁."
+ },
+ {
+  "code": "80-245",
+  "a_dire": "Un atome sous le sup d’une liste d’atomes est l’un d’eux.",
+  "legende_titre": "Un atome sous 6 est 2 ou 3",
+  "lecture": [
+   "Le texte du haut dit le but : montrer que a est 2 ou 3.",
+   "Le texte orange écrit a comme un PPCM de deux PGCD, avec a = 3 sous 6 = PPCM(2, 3).",
+   "La case grise est le PGCD de 3 et 2 : il vaut 1, le plus bas.",
+   "La case verte est le PGCD de 3 et 3 : il reste 3.",
+   "La case du bas réunit les deux par le PPCM et retrouve 3."
+  ],
+  "a_voir": "Un seul terme garde 3 ; les autres tombent au plus bas."
+ },
+ {
+  "code": "80-246",
+  "a_dire": "Chaque diviseur de 30 correspond à une partie de {2, 3, 5}, et chaque partie vient d’un diviseur.",
+  "legende_titre": "Huit diviseurs, huit parties",
+  "lecture": [
+   "Chaque case bleue porte un diviseur de 30 en haut et l’ensemble de ses atomes en bas.",
+   "Les traits relient chaque diviseur à ceux qui le suivent.",
+   "Les huit cases donnent les huit parties de {2, 3, 5}, de { } à {2, 3, 5}."
+  ],
+  "a_voir": "Deux diviseurs différents ont deux ensembles différents."
+ },
+ {
+  "code": "80-247",
+  "a_dire": "L’application envoie le PPCM sur l’union et le PGCD sur l’intersection.",
+  "legende_titre": "Deux opérations, deux ensembles",
+  "lecture": [
+   "La colonne de gauche porte 6 en bleu, 10 en violet, puis leur PPCM et leur PGCD.",
+   "La colonne de droite porte les atomes sous chacun, par la flèche orange 𝜑.",
+   "Les deux cases vertes du bas : le PPCM donne l’union {2, 3, 5}, le PGCD donne l’intersection {2}."
+  ],
+  "a_voir": "Chaque ligne de gauche est envoyée sur la ligne de droite."
+ },
+ {
+  "code": "80-248",
+  "a_dire": "𝜑(6) = {2, 3}, 𝜑(10) = {2, 5}, et 𝜑(30) = {2, 3, 5} est l’union des deux.",
+  "legende_titre": "Les atomes de 6, de 10 et de 30",
+  "lecture": [
+   "Le cercle bleu contient les atomes sous 6 : 3 et 2.",
+   "Le cercle violet contient les atomes sous 10 : 2 et 5.",
+   "Le cadre vert pointillé regroupe les trois atomes : ce sont ceux de 30."
+  ],
+  "a_voir": "L’atome 2 est dans les deux cercles."
+ },
+ {
+  "code": "80-249",
+  "a_dire": "La somme partielle en 𝑥 additionne les valeurs de tous les éléments sous 𝑥, 𝑥 compris.",
+  "legende_titre": "Tout ce qui est sous 6 est compté",
+  "lecture": [
+   "Les quatre ronds sont les diviseurs de 6 ; chaque nombre donne sa propre valeur.",
+   "Le rond bleu est 𝑥 = 6.",
+   "Les ronds verts 1, 2 et 3 sont sous 6 ; le cadre vert pointillé les compte tous avec 6.",
+   "La ligne du haut donne la somme : 12."
+  ],
+  "a_voir": "La somme prend 𝑥 et tout ce qui est sous lui."
+ },
+ {
+  "code": "80-250",
+  "a_dire": "La formule garde la même forme quand on change 𝑓 : seuls les termes changent.",
+  "legende_titre": "Mêmes éléments, autres termes",
+  "lecture": [
+   "Les deux losanges ont les mêmes éléments : 1, 2, 3 et 6.",
+   "À gauche 𝑓(𝑦) = 𝑦 ; à droite 𝑓(𝑦) = 1.",
+   "En vert, la somme sur tous les éléments : 12 à gauche, 4 à droite."
+  ],
+  "a_voir": "Les éléments sous 6 ne changent pas, seules les valeurs changent."
+ },
+ {
+  "code": "80-251",
+  "a_dire": "On connaît seulement les totaux 𝑔 et on veut retrouver les points 𝑓 de chaque contrôle.",
+  "legende_titre": "Des totaux vers les points",
+  "lecture": [
+   "La rangée bleue donne les totaux connus : 12, 19 et 27.",
+   "La rangée verte donne les points à retrouver : 12, 7 et 8.",
+   "Chaque flèche orange descend d’un total vers ses points ; le texte dit la soustraction faite."
+  ],
+  "a_voir": "Chaque total moins le précédent donne les points du contrôle."
+ },
+ {
+  "code": "80-252",
+  "a_dire": "Compter les entiers « au moins divisibles par 2 » revient à additionner les comptages « exactement ».",
+  "legende_titre": "15 entiers pairs en quatre groupes",
+  "lecture": [
+   "La barre entière est le comptage 𝑔 = 15 : les entiers de 1 à 30 divisibles par 2.",
+   "Le bloc bleu est le groupe 𝑓 : 8 entiers divisibles par 2 seulement.",
+   "Les trois blocs violets sont 4, 2 et 1, les groupes qui ont aussi 3 ou 5.",
+   "La ligne du bas additionne les quatre blocs : 15."
+  ],
+  "a_voir": "Les quatre blocs mis bout à bout font la barre entière."
+ },
+ {
+  "code": "80-253",
+  "a_dire": "Dans un ensemble infini, la somme n’est pas un nombre : 𝑔 n’existe pas et l’inversion n’a pas de sens.",
+  "legende_titre": "Sans fin, pas de total",
+  "lecture": [
+   "La rangée du haut est un ensemble fini : trois contrôles à 1 point, total 3.",
+   "La rangée rouge est sans fin vers le passé : les points « … » ne s’arrêtent pas.",
+   "Le texte rouge dit que la somme 1 + 1 + 1 + … n’est aucun nombre."
+  ],
+  "a_voir": "Avec une liste finie, le total existe ; sans fin, il n’existe pas."
+ },
+ {
+  "code": "80-254",
+  "a_dire": "On retrouve 𝑓(𝑥) en multipliant chaque 𝑔(𝑦) par 𝜇(𝑦, 𝑥), puis en additionnant.",
+  "legende_titre": "Retrouver les points du contrôle 3",
+  "lecture": [
+   "La rangée bleue donne les totaux 𝑔(𝑦) : 12, 19 et 27.",
+   "La rangée orange donne les coefficients 𝜇(𝑦, 3) : 0, −1 et 1.",
+   "La ligne verte additionne les trois produits : 8, les points du contrôle 3."
+  ],
+  "a_voir": "Les coefficients 0, −1 et 1 mènent aux 8 points du contrôle 3."
+ },
+ {
+  "code": "80-255",
+  "a_dire": "La fonction de Möbius de 𝑆 est l’ensemble des coefficients, qui dépendent de l’ordre de 𝑆.",
+  "legende_titre": "Les coefficients changent avec l’ordre",
+  "lecture": [
+   "La rangée bleue est faite de trois contrôles rangés dans l’ordre : coefficients 0, −1 et 1.",
+   "La rangée violette est faite de trois élèves sans ordre : coefficients 0, 0 et 1.",
+   "Le texte du bas donne le nom de ces coefficients : 𝜇 de 𝑆."
+  ],
+  "a_voir": "Deux ensembles ordonnés différents donnent deux séries de coefficients."
+ },
+ {
+  "code": "80-256",
+  "a_dire": "On calcule les coefficients de proche en proche, en partant du plus bas et en réutilisant ceux déjà trouvés.",
+  "legende_titre": "Chaque coefficient vient des précédents",
+  "lecture": [
+   "Les trois cases sont 𝜇(0, 0), 𝜇(0, 1) et 𝜇(0, 2), de gauche à droite.",
+   "La première vaut 1 : c’est le départ.",
+   "Les flèches orange montrent que chaque case utilise celles qui sont à sa gauche.",
+   "Sous chaque case, le calcul fait : −𝜇(0, 0) puis −(1 + (−1))."
+  ],
+  "a_voir": "Chaque valeur n’utilise que des valeurs placées plus bas."
+ },
+ {
+  "code": "80-257",
+  "a_dire": "𝜇(𝑥, 𝑥) vaut 1 : le total contient 𝑓(𝑥) une seule fois, sans rien avant à retirer.",
+  "legende_titre": "Rien avant, donc le coefficient est 1",
+  "lecture": [
+   "La case pointillée est ce qui vient avant : 0.",
+   "La case bleue est 𝑓(𝑥) = 12.",
+   "L’accolade donne le total 𝑔(𝑥) = 12, égal à 𝑓(𝑥).",
+   "La case verte donne 𝜇(𝑥, 𝑥) = 1."
+  ],
+  "a_voir": "Le total égale 𝑓(𝑥), donc on ne retire rien."
+ },
+ {
+  "code": "80-258",
+  "a_dire": "𝜇(𝑥, 𝑧) est l’opposé de la somme des 𝜇(𝑥, 𝑦) pour 𝑥 ≤ 𝑦 < 𝑧.",
+  "legende_titre": "Un coefficient à partir des précédents",
+  "lecture": [
+   "Les trois cases bleues sont 𝜇(0, 0) = 1, 𝜇(0, 1) = −1 et 𝜇(0, 2) = 0.",
+   "L’accolade les additionne : la somme est 0.",
+   "La flèche orange mène à la case verte : l’opposé de 0 est 0, donc 𝜇(0, 3) = 0."
+  ],
+  "a_voir": "On additionne les coefficients avant z, puis on prend l’opposé."
+ },
+ {
+  "code": "80-259",
+  "a_dire": "𝜇(𝑥, 𝑧) vaut 0 quand 𝑥 n’est pas sous 𝑧.",
+  "legende_titre": "Deux diviseurs sans lien d’ordre",
+  "lecture": [
+   "Le losange montre l'ordre « divise » sur les diviseurs de 12 : 1, 2, 3, 4, 6 et 12.",
+   "Les ronds bleu et violet sont 2 et 3 ; le trait rouge pointillé dit qu'aucun n'est sous l'autre.",
+   "Les deux cases vertes donnent les coefficients 𝜇(2, 3) = 0 et 𝜇(3, 2) = 0."
+  ],
+  "a_voir": "Sans ordre entre les deux, le coefficient vaut 0."
+ },
+ {
+  "code": "80-260",
+  "a_dire": "Le signe 𝑓(𝑦) est le nombre que 𝑓 donne à l’élément 𝑦 : une inconnue pour chaque 𝑦.",
+  "legende_titre": "Lire 𝑓(𝑦)",
+  "lecture": [
+   "La lettre orange 𝑓 est la fonction : elle donne un nombre.",
+   "Le 𝑦 bleu entre parenthèses est un contrôle.",
+   "Les deux cases orange sont les cas 𝑦 = 2 et 𝑦 = 3 : 𝑓(2) et 𝑓(3) sont chacune une inconnue, marquée « ? »."
+  ],
+  "a_voir": "Il y a une inconnue 𝑓(𝑦) pour chaque contrôle 𝑦."
+ },
+ {
+  "code": "80-261",
+  "a_dire": "Le signe 𝑔(𝑥) est le nom court du total jusqu’à 𝑥.",
+  "legende_titre": "Un nom court pour un total",
+  "lecture": [
+   "Les trois cases grises donnent les points : 12, 7 et 8.",
+   "La petite accolade couvre les deux premiers contrôles : 𝑔(2) = 19.",
+   "La grande accolade couvre les trois : 𝑔(3) = 27."
+  ],
+  "a_voir": "Un seul signe remplace « la somme jusqu’au contrôle »."
+ },
+ {
+  "code": "80-262",
+  "a_dire": "Sous le signe Σ, la condition 𝑦 ≤ 𝑥 dit quels éléments on additionne.",
+  "legende_titre": "Qui entre dans la somme ?",
+  "lecture": [
+   "Le grand signe Σ porte en dessous la condition 𝑦 ≤ 𝑥.",
+   "Les trois cases vertes 𝑦 = 1, 2, 3 sont comptées : 𝑥 = 3 lui-même est compté.",
+   "La case rouge 𝑦 = 4 est exclue, car 4 > 3.",
+   "La ligne verte écrit les trois termes additionnés."
+  ],
+  "a_voir": "Les 𝑦 inférieurs ou égaux à 3 entrent, 4 reste dehors."
+ },
+ {
+  "code": "80-263",
+  "a_dire": "Le signe 𝜇(𝑦, 𝑥) est le nombre par lequel on multiplie le total 𝑔(𝑦) pour trouver 𝑓(𝑥).",
+  "legende_titre": "Un nombre par total",
+  "lecture": [
+   "Chaque case bleue est un total 𝑔(𝑦) : 12, 19 et 27.",
+   "Chaque flèche orange porte le coefficient 𝜇(𝑦, 3) de ce total : 0, −1 et 1.",
+   "Les flèches se rejoignent dans la case verte : 𝑓(3) = 8."
+  ],
+  "a_voir": "La première lettre désigne le total, la seconde le contrôle cherché."
+ },
+ {
+  "code": "80-264",
+  "a_dire": "Le signe 𝜁(𝑦, 𝑥) vaut 1 si 𝑦 ≤ 𝑥 et 0 sinon : il dit si 𝑦 compte dans la somme.",
+  "legende_titre": "Un 1 ou un 0 pour chaque contrôle",
+  "lecture": [
+   "La rangée grise du haut donne les contrôles 𝑦 = 1 à 4.",
+   "La deuxième rangée donne 𝜁(𝑦, 3) : 1 pour 𝑦 = 1, 2, 3 (cases vertes), 0 pour 𝑦 = 4 (case grise).",
+   "La troisième rangée donne les termes 𝜁(𝑦, 3) 𝑓(𝑦) : 𝑓(1), 𝑓(2), 𝑓(3), et 0 pour le contrôle 4.",
+   "La ligne du bas écrit 𝑔(3) comme la somme de ces termes."
+  ],
+  "a_voir": "Le 0 fait disparaître le contrôle 4 de la somme."
+ }
+]

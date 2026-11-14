@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 6, 64, 46, 12, 'sujet', label=r'$S_5$ : 120 permutations', size='s')
+arrow(ax, (29, 64), (29, 52), 'resultat')
+text(ax, 33, 58, 'marche permise\n(quotient abélien)', 'resultat', 's', ha='left')
+box(ax, 6, 40, 46, 12, 'sujet', label=r'$A_5$ : 60, simple', size='s')
+arrow(ax, (29, 40), (29, 28), 'limite')
+line(ax, [(26, 31), (32, 37)], 'limite', lw=1.4)
+line(ax, [(26, 37), (32, 31)], 'limite', lw=1.4)
+text(ax, 35, 34, "aucun sous-groupe normal\nentre 60 et 1", 'limite', 's', ha='left')
+box(ax, 6, 16, 46, 12, 'fixe', fill=False, dash=True, label=r'$1$ : identité', size='s')
+text(ax, 44, 6, r'donc $S_5$ n’est pas résoluble', 'encre', 's')
+save(fig, '65-105')

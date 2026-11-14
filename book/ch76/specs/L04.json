@@ -1,0 +1,188 @@
+[
+ {
+  "code": "76-049",
+  "a_dire": "Si x est dans le noyau et y est quelconque, le produit y x est dans le noyau, car η donne 0.",
+  "legende_titre": "Ce que devient le noyau quand on le multiplie",
+  "lecture": [
+   "Le rectangle bleu (4 ; 0) est un tableau du noyau : sa seconde case vaut 0.",
+   "Le rectangle orange (3 ; 7) est un tableau quelconque, de seconde case 7.",
+   "Le rectangle vert (12 ; 0) est leur produit.",
+   "Les flèches grises donnent la seconde case : 0, 7, puis 0 pour le produit."
+  ],
+  "a_voir": "Le produit d'un tableau du noyau par un tableau quelconque a encore la seconde case égale à 0."
+ },
+ {
+  "code": "76-050",
+  "a_dire": "Deux homomorphismes qui donnent les mêmes valeurs sur une partie S peuvent être différents si S n'engendre pas toute l'algèbre.",
+  "legende_titre": "Des valeurs communes qui ne suffisent pas",
+  "lecture": [
+   "Le rectangle gris du haut, (1 ; 1), est le tableau de la partie S.",
+   "Sur ce tableau, p donne 1 et q donne 1 : les valeurs sont les mêmes.",
+   "Le rectangle gris du bas, (1 ; 0), est un tableau hors de S.",
+   "Sur lui, p donne 1 mais q donne 0, en rouge : les deux applications diffèrent."
+  ],
+  "a_voir": "Les valeurs sur S sont égales, pourtant p et q ne sont pas égales sur tout le reste."
+ },
+ {
+  "code": "76-051",
+  "a_dire": "L'algèbre de Grassmann contient le plan V et n'obéit qu'à la règle v ∧ v = 0 ; ajouter e1 ∧ e2 = 0 est interdit.",
+  "legende_titre": "Ce qu'on impose et ce qu'on refuse",
+  "lecture": [
+   "Le cadre bleu en pointillés est le plan V, avec ses deux flèches de base e1 et e2.",
+   "Le rectangle vert est la seule règle imposée : v ∧ v = 0.",
+   "Le rectangle rouge barré est une règle de plus, e1 ∧ e2 = 0, que le cahier des charges refuse."
+  ],
+  "a_voir": "La seule règle imposée est en vert ; la règle de plus est barrée en rouge."
+ },
+ {
+  "code": "76-052",
+  "a_dire": "En appliquant la règle à u + v et en développant, on obtient u ∧ v + v ∧ u = 0, donc v ∧ u = −u ∧ v.",
+  "legende_titre": "La règle appliquée à une somme",
+  "lecture": [
+   "Le titre bleu est la règle appliquée à la somme u + v.",
+   "Le tableau donne les quatre termes du développement : u ∧ u et v ∧ v en gris valent 0.",
+   "Les deux termes orange valent 5 et −5, pour u = (3, 1) et v = (1, 2).",
+   "Leur somme vaut 0, ce qui donne le rectangle vert."
+  ],
+  "a_voir": "Les deux termes gris sont nuls ; il reste deux termes orange opposés."
+ },
+ {
+  "code": "76-053",
+  "a_dire": "Le changement de signe n'est pas une seconde hypothèse : il se déduit de la seule règle v ∧ v = 0.",
+  "legende_titre": "Deux règles ou une seule",
+  "lecture": [
+   "À gauche, en orange pointillé, les deux faits qu'on pourrait prendre pour deux règles.",
+   "À droite, le rectangle bleu est la seule règle : v ∧ v = 0.",
+   "La flèche verte mène au rectangle vert : le changement de signe, déduit de la règle."
+  ],
+  "a_voir": "Le signe en vert vient de la règle en bleu par la flèche."
+ },
+ {
+  "code": "76-054",
+  "a_dire": "Tout produit de vecteurs de base se remet dans l'ordre croissant, avec un signe moins par échange de voisins, et vaut 0 si un indice se répète.",
+  "legende_titre": "Remettre dans l'ordre, ou trouver zéro",
+  "lecture": [
+   "En haut, le produit bleu e2 e1 e3 devient, après un échange, −e1 e2 e3 en vert : l'ordre croissant.",
+   "En bas, le produit bleu e1 e2 e1 devient, après un échange, −e1 e1 e2 en orange.",
+   "Le rectangle rouge donne 0 : deux e1 sont voisins."
+  ],
+  "a_voir": "Un échange donne un signe moins ; deux mêmes vecteurs voisins donnent 0."
+ },
+ {
+  "code": "76-055",
+  "a_dire": "Deux échanges remettent e3 e1 e2 dans l'ordre avec le signe +, alors qu'un seul échange donne le signe −.",
+  "legende_titre": "Compter les échanges sur un exemple",
+  "lecture": [
+   "En haut, e3 e1 e2 passe par −e1 e3 e2 puis devient e1 e2 e3 : deux fois ×(−1).",
+   "Les flèches orange sont les échanges ; le rectangle vert a le signe +.",
+   "En bas, e2 e1 e3 devient −e1 e2 e3 en un seul échange : le signe est −."
+  ],
+  "a_voir": "Deux échanges donnent +, un échange donne − : le signe dépend du nombre d'échanges."
+ },
+ {
+  "code": "76-056",
+  "a_dire": "Le nombre d'échanges pour remettre en ordre peut changer, mais sa parité ne change pas : le signe est celui de la permutation.",
+  "legende_titre": "Deux chemins, un même signe",
+  "lecture": [
+   "Le rectangle bleu 3 1 2 est l'ordre de départ ; le vert 1 2 3 est l'ordre cherché.",
+   "Le chemin du haut prend 2 échanges de voisins (flèches orange).",
+   "Le chemin du bas passe par quatre échanges.",
+   "Le rectangle vert du bas dit que les deux nombres sont pairs : signe +1."
+  ],
+  "a_voir": "Les deux chemins ont un nombre d'échanges différent mais de même parité."
+ },
+ {
+  "code": "76-057",
+  "a_dire": "Un monôme standard a des numéros strictement croissants ; il se sépare du produit en désordre (égal à un signe près) et du produit à numéro répété (nul).",
+  "legende_titre": "Qui garder comme élément de base",
+  "lecture": [
+   "Le rectangle vert e1 ∧ e3 a ses numéros croissants : c'est un monôme standard.",
+   "Le rectangle orange e3 ∧ e1 est en désordre : il vaut −e1 ∧ e3.",
+   "Le rectangle rouge e2 ∧ e2 répète un numéro : il vaut 0."
+  ],
+  "a_voir": "Seul le rectangle vert n'est ni un autre produit au signe près, ni nul."
+ },
+ {
+  "code": "76-058",
+  "a_dire": "À chaque partie de {1, 2, 3} correspond un monôme standard, donc il y en a 2^n ; pour n = 3, il y en a 8.",
+  "legende_titre": "Un monôme pour chaque partie",
+  "lecture": [
+   "Chaque rectangle bleu montre une partie de {1, 2, 3} et son monôme dessous.",
+   "La première rangée contient la partie vide (monôme 1) et les trois parties à un élément.",
+   "La seconde rangée contient les trois parties à deux éléments et celle à trois éléments.",
+   "Le rectangle vert donne le compte : 8 parties, 8 monômes, 2³."
+  ],
+  "a_voir": "Huit rectangles : autant de monômes que de parties."
+ },
+ {
+  "code": "76-059",
+  "a_dire": "Jacobson construit une algèbre dont la base est l'ensemble des parties de N, où les 2^n monômes sont indépendants.",
+  "legende_titre": "Une algèbre où rien n'est égal par hasard",
+  "lecture": [
+   "La rangée bleue montre les quatre parties de N pour n = 2, qui forment la base.",
+   "La rangée verte montre les quatre monômes 1, e1, e2, e1 ∧ e2.",
+   "Chaque flèche orange relie une partie à son monôme.",
+   "Le rectangle vert dit : 4 monômes indépendants, 4 = 2²."
+  ],
+  "a_voir": "Chaque partie de la base a son propre monôme : aucune égalité imprévue."
+ },
+ {
+  "code": "76-060",
+  "a_dire": "Le produit de deux parties S et T est nul si elles ont un élément commun ; sinon c'est ±(S ∪ T), avec le signe (−1)^m.",
+  "legende_titre": "Multiplier deux parties, pas à pas",
+  "lecture": [
+   "La rangée bleue est S = {1, 3} ; la case violette est T = {2}.",
+   "Les deux parties n’ont aucune case commune : le produit n’est pas nul.",
+   "La flèche orange relie 3 de S à 2 de T : un couple où S dépasse T, donc m = 1.",
+   "La rangée verte est l’union {1, 2, 3} ; le signe est (−1)¹, donc −."
+  ],
+  "a_voir": "Un seul couple (3, 2) donne m = 1, donc le produit est −(S ∪ T)."
+ },
+ {
+  "code": "76-061",
+  "a_dire": "Dans Λ(V), un vecteur fois lui-même donne 0 et l'échange change le signe, donc la base s'arrête à 2^n éléments, contrairement aux polynômes.",
+  "legende_titre": "L'algèbre extérieure face aux polynômes",
+  "lecture": [
+   "Le cadre violet est celui des polynômes : x · x est un nouvel élément et xy = yx.",
+   "Sa liste de base, en pointillés, ne s'arrête pas.",
+   "Le cadre bleu est Λ(V) : e1 ∧ e1 = 0 et e2 ∧ e1 = −e1 ∧ e2.",
+   "Sa liste verte s'arrête à 4 éléments, soit 2²."
+  ],
+  "a_voir": "La liste de base est sans fin à gauche, finie à droite."
+ },
+ {
+  "code": "76-062",
+  "a_dire": "E(V) chez Jacobson, sans symbole, et Λ(V) avec ∧ ailleurs sont la même algèbre et le même produit.",
+  "legende_titre": "Deux écritures de la même algèbre",
+  "lecture": [
+   "Le rectangle violet est l'écriture de Jacobson : E(V) et e1 e2, sans symbole.",
+   "Le rectangle bleu est l'écriture de la plupart des livres : Λ(V) et e1 ∧ e2.",
+   "Le signe = vert dit que les deux écritures désignent la même chose.",
+   "La flèche orange montre le signe ∧, qui se lit « extérieur »."
+  ],
+  "a_voir": "Les deux rectangles disent la même chose avec des signes différents."
+ },
+ {
+  "code": "76-063",
+  "a_dire": "On abrège e1 ∧ e2 en e12 et e1 ∧ e2 ∧ e3 en e123 : on enlève les ∧ et on garde les numéros côte à côte.",
+  "legende_titre": "Écrire un produit en une seule lettre",
+  "lecture": [
+   "Les rectangles bleus montrent les écritures longues avec le signe ∧.",
+   "Les flèches orange enlèvent le signe ∧.",
+   "Les rectangles verts montrent les abréviations e12 et e123.",
+   "La ligne du bas dit comment lire e12 : « e un deux »."
+  ],
+  "a_voir": "Les numéros restent dans le même ordre, seul le signe ∧ disparaît."
+ },
+ {
+  "code": "76-064",
+  "a_dire": "Les monômes de Λ(R³) se rangent en quatre niveaux de 1, 3, 3 et 1 éléments, et chaque trait monte d'un vecteur de base de plus.",
+  "legende_titre": "Les quatre niveaux des monômes",
+  "lecture": [
+   "Chaque rectangle bleu est un monôme : 1 en bas, puis e1, e2, e3, puis e12, e13, e23, puis e123.",
+   "Les textes à gauche donnent le niveau et le nombre de monômes : 1, 3, 3, 1.",
+   "Un trait gris relie un monôme à ceux du niveau au-dessus, obtenus avec un vecteur de plus."
+  ],
+  "a_voir": "Les rangées ont 1, 3, 3 et 1 rectangles, reliés par des traits."
+ }
+]

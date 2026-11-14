@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 8, 48, 30, 12, 'sujet', label=r'$x-\sqrt{2}$', size='m')
+text(ax, 44, 54, r'$\times$', 'encre', 'l')
+box(ax, 50, 48, 30, 12, 'sujet', label=r'$x+\sqrt{2}$', size='m')
+arrow(ax, (23, 61), (65, 61), 'varie', curve=-0.35, both=True)
+text(ax, 44, 73, r'$\sigma$ échange les deux facteurs', 'varie', 's')
+arrow(ax, (44, 47), (44, 34), 'fixe')
+box(ax, 20, 20, 48, 13, 'resultat', label=r'$g=x^2-2$', size='m')
+text(ax, 44, 12, r'$g$ ne change pas', 'resultat', 's')
+text(ax, 44, 5, 'coefficients dans $\\mathbb{Q}$ : $1,\\ 0,\\ -2$', 'resultat', 's')
+save(fig, '63-108')

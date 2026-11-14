@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+
+fig, ax = canvas(88)
+box(ax, 4, 72, 46, 11, 'fixe', label=r'le nombre $\mathrm{cis}(360°/n)$', size='s')
+arrow(ax, (50, 77.5), (64, 77.5), 'varie', lw=1.1)
+text(ax, 57, 84.2, 'on le nomme', 'varie', 's')
+disc(ax, 74, 77.5, 6, 'sujet', label=r'$\omega$', size='l')
+cx, cy, r = 36, 36, 26
+arrow(ax, (4, cy), (70, cy), 'fixe', lw=0.6)
+arrow(ax, (cx, 8), (cx, 64), 'fixe', lw=0.6)
+disc(ax, cx, cy, r, 'fixe', fill=False, lw=0.7)
+w = (cx + r * math.cos(math.radians(60)), cy + r * math.sin(math.radians(60)))
+line(ax, [(cx, cy), w], 'sujet', lw=0.9, dash=True)
+disc(ax, cx + r, cy, 1.4, 'sujet')
+disc(ax, w[0], w[1], 1.4, 'sujet')
+ax.add_patch(Arc((cx, cy), 18, 18, theta1=0, theta2=60, ec=COL['varie'], lw=1.2, zorder=3))
+text(ax, cx + 13, cy + 4.5, '60°', 'varie', 's')
+text(ax, cx + r + 2.5, cy + 3, '1', 'sujet', 'm', ha='left')
+text(ax, w[0] + 2.5, w[1] + 2.5, r'$\omega$', 'sujet', 'm', ha='left')
+text(ax, 84, 30, r'$n=6$', 'encre', 'm', ha='right')
+text(ax, 84, 22, r'$\omega=\mathrm{cis}\,60°$', 'sujet', 's', ha='right')
+text(ax, 84, 14, r'$\omega^6=1$', 'resultat', 's', ha='right')
+text(ax, 84, 8, '6 pas de 60° : 1 tour', 'resultat', 's', ha='right')
+save(fig, '39-100')

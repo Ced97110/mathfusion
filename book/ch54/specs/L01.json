@@ -1,0 +1,329 @@
+[
+ {
+  "code": "54-001",
+  "a_dire": "L'équation 3y = 2 n'a pas de solution dans ℤ : les produits 3y avancent de 3 en 3 et sautent 2.",
+  "legende_titre": "Les produits par 3 sautent le nombre 2",
+  "lecture": [
+   "Les points bleus sont les produits 3 × y : −6, −3, 0, 3, 6, 9.",
+   "Chaque flèche orange avance de 3.",
+   "Le cercle rouge est le nombre 2 : aucun point bleu n'est là."
+  ],
+  "a_voir": "Entre 0 et 3, les produits par 3 ne passent pas par 2."
+ },
+ {
+  "code": "54-002",
+  "a_dire": "Inventer les fractions, c'est décider que deux couples différents, comme (2, 3) et (4, 6), sont le même nombre.",
+  "legende_titre": "Deux couples, un seul nombre",
+  "lecture": [
+   "Les deux cases bleue et violette sont les couples (2, 3) et (4, 6), écrits 2/3 et 4/6.",
+   "Les flèches orange représentent la décision de les regrouper.",
+   "La case verte est le nombre unique ; dessous, les deux produits valent 12."
+  ],
+  "a_voir": "Deux couples différents mènent à un seul nombre."
+ },
+ {
+  "code": "54-003",
+  "a_dire": "1 n'est pas divisible par x dans les polynômes : un produit x × P a un degré au moins 1, et 1 a le degré 0.",
+  "legende_titre": "Un produit par x n'a jamais le degré 0",
+  "lecture": [
+   "La droite graduée donne les degrés de 0 à 4.",
+   "Le rectangle bleu couvre les degrés de x × P : 1 et plus.",
+   "Le cercle rouge au degré 0 est le polynôme 1 : il est hors du rectangle.",
+   "Les deux lignes grises montrent P = 1 et P = x."
+  ],
+  "a_voir": "Le degré 0 est en dehors des degrés que x × P peut atteindre."
+ },
+ {
+  "code": "54-004",
+  "a_dire": "Plonger un anneau dans un plus grand, c'est retrouver ses éléments dedans, avec les mêmes calculs, et ajouter la division.",
+  "legende_titre": "Garder les entiers dans un anneau plus grand",
+  "lecture": [
+   "La case bleue contient les entiers 5, 2 et 10.",
+   "Les flèches orange les envoient sur 5/1, 2/1 et 10/1 dans la case violette.",
+   "La fraction verte 2/3 est un élément nouveau.",
+   "La ligne du bas donne le même calcul des deux côtés : 5 × 2 = 10 et 5/1 × 2/1 = 10/1."
+  ],
+  "a_voir": "Chaque entier a sa place dans le grand anneau, et le grand anneau a des éléments en plus."
+ },
+ {
+  "code": "54-005",
+  "a_dire": "La construction prend des couples (a, b) avec b ≠ 0 et dit que (a, b) vaut (c, d) si ad = bc, sans aucune division.",
+  "legende_titre": "Le test des produits en croix",
+  "lecture": [
+   "Les cases bleues sont le couple (3, 5) ; les cases violettes sont le couple (6, 10).",
+   "Les deux flèches vertes croisées relient 3 à 10 et 5 à 6.",
+   "À droite, les deux produits valent 30.",
+   "La case rouge (3, 0) est refusée : son second nombre est nul."
+  ],
+  "a_voir": "Deux produits égaux suffisent à dire que les couples valent le même nombre."
+ },
+ {
+  "code": "54-006",
+  "a_dire": "La deuxième question est : qu'est-ce que x ? Le polynôme reste le même objet quelle que soit la valeur essayée pour x.",
+  "legende_titre": "Un polynôme, plusieurs valeurs essayées",
+  "lecture": [
+   "La case bleue en haut est le polynôme 2 − x + 3x³.",
+   "Les deux flèches orange essaient x = 2 puis x = 0.",
+   "Les cases vertes donnent les résultats : 24 pour la valeur 2, 2 pour la valeur 0."
+  ],
+  "a_voir": "Les résultats changent avec la valeur, mais le polynôme ne change pas."
+ },
+ {
+  "code": "54-007",
+  "a_dire": "Si x était un nombre, x² − 1 et 0 pourraient être le même nombre (pour x = 1) ; pourtant ce sont deux polynômes différents.",
+  "legende_titre": "Égaux pour une valeur, différents comme polynômes",
+  "lecture": [
+   "La première colonne essaie x = 1, la seconde x = 2.",
+   "La ligne bleue donne x² − 1 : 0 puis 3. La ligne violette donne 0 puis 0.",
+   "Le signe vert « = » marque la même valeur pour x = 1 ; le signe rouge « ≠ » marque des valeurs différentes pour x = 2.",
+   "Les deux lignes du bas disent : comme polynômes, x² − 1 est différent de 0, donc x n’est pas un nombre."
+  ],
+  "a_voir": "Une seule valeur ne suffit pas pour dire que deux polynômes sont le même."
+ },
+ {
+  "code": "54-008",
+  "a_dire": "x doit être un objet sans propriété : a₀ + a₁x + a₂x² = 0 n'est vrai que si tous les aᵢ sont nuls.",
+  "legende_titre": "Un x qui n'a aucune propriété",
+  "lecture": [
+   "Les trois cases bleues sont les coefficients 1, 1 et −2.",
+   "La ligne orange calcule avec x = 1 : 1 + 1 − 2 = 0.",
+   "La case rouge (refusé) dit que x = 1 donne un calcul nul alors que les coefficients ne sont pas tous nuls.",
+   "La grande case verte (retenu) donne la règle pour x : le calcul est nul seulement si tous les a_i sont nuls."
+  ],
+  "a_voir": "La case verte est la conclusion : x n’a aucune propriété, donc la case rouge est exclue."
+ },
+ {
+  "code": "54-009",
+  "a_dire": "Un polynôme est la liste de ses coefficients, rangés par position ; un terme absent a le coefficient 0.",
+  "legende_titre": "Un polynôme est une liste de nombres",
+  "lecture": [
+   "En haut, le polynôme 2 − x + 3x³.",
+   "Chaque case bleue est un coefficient, sous le nom de sa position : x⁰, x¹, x², x³.",
+   "La case grise en pointillé est le terme absent en x², de coefficient 0.",
+   "La ligne verte dit que 3x³ − x + 2 donne la même liste."
+  ],
+  "a_voir": "La liste 2, −1, 0, 3 suffit pour décrire le polynôme."
+ },
+ {
+  "code": "54-010",
+  "a_dire": "La troisième question change « comment faire » en « pourquoi ça marche » pour la division, la factorisation et le nombre de racines.",
+  "legende_titre": "De « comment » à « pourquoi »",
+  "lecture": [
+   "La case grise « comment ? » rappelle ce que vous faisiez : diviser, factoriser.",
+   "La flèche orange mène à la case orange « pourquoi ? ».",
+   "Les deux cases violettes sont les deux faits à expliquer : le reste de la division et le nombre de racines d'un polynôme de degré 3."
+  ],
+  "a_voir": "La question demande des causes, pas des recettes."
+ },
+ {
+  "code": "54-011",
+  "a_dire": "L'anneau des polynômes sur un corps se comporte comme ℤ : division avec reste, PGCD et irréductibles.",
+  "legende_titre": "Les polynômes ont les mêmes outils que ℤ",
+  "lecture": [
+   "La colonne bleue donne trois outils de ℤ : 17 = 5 × 3 + 2, PGCD(12, 18) = 6, 7 est premier.",
+   "La colonne violette donne les trois mêmes outils pour F[x].",
+   "Les flèches vertes à double sens relient chaque outil à son pareil."
+  ],
+  "a_voir": "Chaque ligne bleue a sa ligne violette."
+ },
+ {
+  "code": "54-012",
+  "a_dire": "Les couples équivalents, comme (1, 2), (2, 4), (3, 6), sont alignés sur une droite par l'origine, et la ligne b = 0 reste vide.",
+  "legende_titre": "Le réseau des couples (a, b)",
+  "lecture": [
+   "Chaque petit rond gris est un couple (a, b) : a se lit à l'horizontale, b à la verticale.",
+   "Les gros points bleus sont (1, 2), (2, 4), (3, 6) et leurs opposés ; la droite bleue les relie et passe par l'origine.",
+   "La ligne rouge en pointillé est b = 0 : aucun point n'y est dessiné."
+  ],
+  "a_voir": "Les points bleus sont alignés avec l'origine ; la ligne rouge est vide."
+ },
+ {
+  "code": "54-013",
+  "a_dire": "Le point (a, b) représente le couple « numérateur a, dénominateur b » : on avance de a, puis on monte de b, et l'ordre compte.",
+  "legende_titre": "Lire un point comme un couple",
+  "lecture": [
+   "La flèche orange horizontale avance de 3 : c'est le numérateur.",
+   "La flèche orange verticale monte de 4 : c'est le dénominateur ; elle arrive au point bleu (3, 4).",
+   "Le point violet (4, 3) est un autre point, atteint par les pointillés."
+  ],
+  "a_voir": "(3, 4) et (4, 3) ne sont pas le même point."
+ },
+ {
+  "code": "54-014",
+  "a_dire": "Le réseau est le même qu'au chapitre 13, mais la règle de regroupement change : a − b égal au chapitre 13, produits en croix égaux ici.",
+  "legende_titre": "Même grille, deux façons de regrouper",
+  "lecture": [
+   "La droite violette regroupe (5, 2) et (6, 3) : pour les deux, a − b vaut 3.",
+   "La droite bleue regroupe (1, 2) et (2, 4) : elle passe par l'origine, avec b = 2a.",
+   "Les petits ronds gris sont la même grille pour les deux règles."
+  ],
+  "a_voir": "C'est la règle de regroupement qui décide quels points vont ensemble."
+ },
+ {
+  "code": "54-015",
+  "a_dire": "La ligne b = 0 est retirée volontairement : un dénominateur nul est interdit, mais un premier nombre égal à 0 reste permis.",
+  "legende_titre": "Une ligne entière est retirée",
+  "lecture": [
+   "Les ronds bleus sont les points permis, avec b différent de 0.",
+   "Les cercles rouges vides sur la ligne rouge en pointillé sont les points retirés : b = 0.",
+   "Le point vert (0, 2) a un premier nombre nul : il est permis."
+  ],
+  "a_voir": "Toute la rangée b = 0 manque, pas un seul point."
+ },
+ {
+  "code": "54-016",
+  "a_dire": "ℤ × (ℤ ∖ {0}) se lit : couples dont le premier terme est un entier et le second un entier différent de 0.",
+  "legende_titre": "Lire ℤ × (ℤ ∖ {0}) morceau par morceau",
+  "lecture": [
+   "Le ℤ bleu donne le premier terme : n'importe quel entier.",
+   "Le ℤ ∖ {0} violet donne le second terme : n'importe quel entier sauf 0.",
+   "Les cases vertes (3, 5), (0, 4), (7, 2) sont acceptées ; la case rouge (4, 0) est refusée."
+  ],
+  "a_voir": "Le zéro est retiré seulement du second terme."
+ },
+ {
+  "code": "54-017",
+  "a_dire": "(1, 2) et (2, 4) sont équivalents car 1 × 4 = 2 × 2 ; le même test peut aussi dire non, comme pour (1, 2) et (2, 5).",
+  "legende_titre": "Le test peut dire oui ou non",
+  "lecture": [
+   "À gauche, les couples (1, 2) et (2, 4) : les deux produits orange valent 4, la case verte dit « équivalents ».",
+   "À droite, les couples (1, 2) et (2, 5) : les produits valent 5 et 4, la case rouge dit « différents »."
+  ],
+  "a_voir": "Deux produits égaux donnent oui, deux produits différents donnent non."
+ },
+ {
+  "code": "54-018",
+  "a_dire": "Tous les points d'une même droite par l'origine représentent la même fraction : pour eux, b/a garde la même valeur.",
+  "legende_titre": "Une droite, un rapport b/a",
+  "lecture": [
+   "La droite bleue passe par l'origine et par (1, 2), (3, 6), (5, 10).",
+   "Chaque point bleu donne b/a = 2 : 2/1, 6/3, 10/5.",
+   "Le cercle rouge (3, 4) est hors de la droite : son rapport 4/3 n'est pas 2."
+  ],
+  "a_voir": "Un point hors de la droite a un autre rapport."
+ },
+ {
+  "code": "54-019",
+  "a_dire": "ad = bc avec (c, d) = (1, 2) s'écrit 2a = b : c'est une droite par l'origine de pente 2 ; l'étape clé est de remplacer c et d.",
+  "legende_titre": "Pourquoi une droite : trois étapes",
+  "lecture": [
+   "La case bleue du haut est le départ : ad = bc.",
+   "La case orange est l'étape clé : on remplace c par 1 et d par 2.",
+   "La case verte est l'arrivée : 2a = b, une droite par (0, 0) de pente 2.",
+   "En bas, (4, 8) vérifie l'égalité (vert), (4, 7) ne la vérifie pas (rouge)."
+  ],
+  "a_voir": "Le remplacement de c et d transforme l'égalité en équation de droite."
+ },
+ {
+  "code": "54-020",
+  "a_dire": "Deux exemples de droites : la droite par (3, 1), (6, 2), (9, 3) est la fraction 3/1 = 3, et l'axe vertical est 0/b = 0.",
+  "legende_titre": "Deux droites particulières",
+  "lecture": [
+   "Les points bleus (3, 1), (6, 2), (9, 3) sont sur une droite bleue par l'origine : fraction 3/1 = 3.",
+   "La droite violette verticale porte (0, 5) et (0, 8) : fraction 0/b = 0.",
+   "Le cercle rouge (0, 0) est exclu : son second nombre est nul."
+  ],
+  "a_voir": "Ces deux droites sont deux cas simples, pas toutes les fractions."
+ },
+ {
+  "code": "54-021",
+  "a_dire": "Une fraction n'est pas un point mais une droite entière de points, une classe ; 2/3 et 4/6 sont deux noms de la même droite.",
+  "legende_titre": "Une fraction est toute une droite",
+  "lecture": [
+   "La droite bleue passe par l'origine et porte (2, 3), (4, 6) et (6, 9).",
+   "Chaque nom orange (2/3, 4/6, 6/9) choisit un point de cette droite.",
+   "Les petits ronds gris sont les autres couples de la grille."
+  ],
+  "a_voir": "Trois noms différents, une seule droite."
+ },
+ {
+  "code": "54-022",
+  "a_dire": "Simplifier 4/6 en 2/3, c'est choisir un autre point sur la même droite, pas changer de fraction.",
+  "legende_titre": "Simplifier : glisser sur la même droite",
+  "lecture": [
+   "Le point bleu est (4, 6), le point vert est (2, 3), tous deux sur la droite bleue.",
+   "La flèche orange glisse de l'un à l'autre : chaque nombre est divisé par 2.",
+   "La droite garde le même rapport b/a = 1,5 ; en bas, 4 × 3 = 12 = 6 × 2."
+  ],
+  "a_voir": "La flèche reste sur la droite : la fraction ne change pas."
+ },
+ {
+  "code": "54-023",
+  "a_dire": "Une classe d'équivalence regroupe les objets qui vont ensemble, et on la nomme par n'importe lequel de ses membres.",
+  "legende_titre": "Regrouper, puis nommer par un membre",
+  "lecture": [
+   "Les trois cases rangent les nombres de 1 à 10 selon leur reste dans la division par 3.",
+   "La case bleue regroupe 1, 4, 7 et 10, qui ont le reste 1.",
+   "Les deux cases orange en dessous sont deux noms possibles de ce groupe : 1 ou 4."
+  ],
+  "a_voir": "Un même groupe peut porter plusieurs noms."
+ },
+ {
+  "code": "54-024",
+  "a_dire": "Dans ce chapitre, « anneau » veut dire anneau commutatif : ab = ba, comme 3 × 5 = 5 × 3 dans ℤ.",
+  "legende_titre": "Ici, l'ordre des facteurs ne compte pas",
+  "lecture": [
+   "La case bleue montre ℤ : 3 × 5 = 5 × 3.",
+   "La case rouge en pointillé montre les quaternions du chapitre 51, où l'ordre change le résultat : exclus ici.",
+   "La case verte donne la règle du chapitre : ab = ba toujours ; en dessous, si ad = bc alors cb = da."
+  ],
+  "a_voir": "La règle ab = ba est supposée vraie pour tout le chapitre."
+ },
+ {
+  "code": "54-025",
+  "a_dire": "Un anneau intègre est un anneau commutatif où deux éléments non nuls ont toujours un produit non nul ; ℤ l'est, ℤ/6 ne l'est pas.",
+  "legende_titre": "Deux sauts de 3 : où arrive-t-on ?",
+  "lecture": [
+   "À gauche, sur la droite de ℤ, deux flèches orange de 3 partent de 0 et arrivent à 6, qui n'est pas 0.",
+   "À droite, sur l'horloge à six positions, les deux mêmes sauts de 3 ramènent à 0.",
+   "Dans ℤ, 2 × 3 = 6 ≠ 0 (vert) ; dans ℤ/6, 2 × 3 = 0 (rouge)."
+  ],
+  "a_voir": "Deux nombres non nuls donnent 0 sur l'horloge, pas dans ℤ."
+ },
+ {
+  "code": "54-026",
+  "a_dire": "Un seul contre-exemple suffit : dans ℤ/6, 2 × 3 = 0 alors que ni 2 ni 3 ne sont nuls, donc ℤ/6 n'est pas intègre.",
+  "legende_titre": "Un seul cas casse la règle",
+  "lecture": [
+   "Dans la première ligne, les cases bleues 2 et 3 ne sont pas nulles, mais leur produit, en rouge, est 0.",
+   "La deuxième ligne donne un autre couple : 3 et 4, de produit 12 qui vaut 0.",
+   "Le texte du bas dit qu'un cas suffit, et que mille cas non nuls ne prouvent rien."
+  ],
+  "a_voir": "Le produit est nul avec deux facteurs non nuls."
+ },
+ {
+  "code": "54-027",
+  "a_dire": "Un corps est un anneau commutatif où tout élément non nul a un inverse ; ℤ n'en est pas un, car 3 n'y a pas d'inverse.",
+  "legende_titre": "Avoir un inverse pour tout non nul",
+  "lecture": [
+   "À gauche, dans ℚ, 3 × 1/3 = 1 : la case verte montre l'inverse de 3.",
+   "À droite, dans ℤ, 3 × 0 = 0 et 3 × 1 = 3 : la case rouge dit qu'il n'y a aucun inverse.",
+   "La case bleue du bas donne la définition d'un corps."
+  ],
+  "a_voir": "Un inverse existe dans ℚ et manque dans ℤ."
+ },
+ {
+  "code": "54-028",
+  "a_dire": "ℚ et ℝ sont des corps, ℤ n'en est pas un : 3 n'y a pas d'inverse, et 0 n'en a dans aucune de ces collections.",
+  "legende_titre": "Quels exemples sont des corps ?",
+  "lecture": [
+   "Les trois cadres sont emboîtés : ℤ dans ℚ dans ℝ.",
+   "ℝ et ℚ sont des corps ; dans ℚ, 5 a pour inverse 1/5 et 2/3 a pour inverse 3/2.",
+   "Le cadre rouge est ℤ : 3 n'y a pas d'inverse, alors que 1 et −1 sont leur propre inverse.",
+   "0 n'a d'inverse nulle part."
+  ],
+  "a_voir": "Un seul élément non nul sans inverse suffit pour que ℤ ne soit pas un corps."
+ },
+ {
+  "code": "54-029",
+  "a_dire": "Un corps est toujours intègre : si 2 × 3 = 0, un inverse de 2 donnerait 3 = 0, donc 2 n'a pas d'inverse.",
+  "legende_titre": "Pourquoi un inverse empêche un produit nul",
+  "lecture": [
+   "La case bleue du haut est le cas de départ : 2 × 3 = 0.",
+   "On suppose un inverse u de 2 : les deux cases du milieu calculent u × 2 × 3 de deux façons.",
+   "La case orange donne 0, la case violette donne 3 : la case rouge conclut 3 = 0, impossible.",
+   "Le texte vert dit donc que 2 n'a pas d'inverse."
+  ],
+  "a_voir": "Avec un inverse de 2, on arriverait à 3 = 0."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$x+5 = 1\times(x+2) + 3$', 'encre', 'm')
+text(ax, 10, 44, 'degré', 'fixe', 's')
+f = numberline(ax, 28, 60, 44, 0, 1, 1, arrow_right=False)
+box(ax, f(0) - 8, 50, 16, 8, 'resultat', label='reste $3$', size='s')
+box(ax, f(1) - 8, 50, 16, 8, 'sujet', label='$x+2$', size='s')
+text(ax, 44, 30, 'degré 0 $<$ degré 1', 'encre', 's')
+text(ax, 44, 24, 'on s\'arrête', 'resultat', 'm')
+box(ax, 14, 4, 60, 12, 'limite', label='continuer : $3/x$', size='s')
+save(fig, '21-115')

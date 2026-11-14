@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+# left: bad part
+text(ax, 22, 63, 'partie quelconque', 'limite', 's')
+box(ax, 3, 40, 22, 20, 'limite', fill=False, dash=True)
+disc(ax, 9, 52, 3.2, 'limite', label='2', size='s'); disc(ax, 19, 52, 3.2, 'limite', label='3', size='s')
+arrow(ax, (14, 44), (14, 31), 'varie')
+text(ax, 21, 36, r'$2\times3$', 'varie', 's')
+disc(ax, 14, 26, 3.2, 'limite', fill=False, label='6', size='s')
+text(ax, 14, 16, 'ni 1, ni 6 dedans', 'limite', 's')
+# right: sous-monoide
+text(ax, 65, 63, 'sous-monoïde', 'resultat', 's')
+box(ax, 34, 8, 51, 50, 'fixe', fill=True, label=None)
+text(ax, 60, 53, r'$M$', 'fixe', 'm')
+box(ax, 40, 14, 40, 32, 'resultat', fill=True)
+text(ax, 60, 41, r'$N$', 'resultat', 'm')
+disc(ax, 46, 22, 3.2, 'resultat', label='1', size='s')
+disc(ax, 54, 32, 3, 'sujet', label='a', size='s'); disc(ax, 66, 32, 3, 'sujet', label='b', size='s')
+disc(ax, 68, 21, 3.5, 'resultat', label='ab', size='s')
+arrow(ax, (56, 29.5), (66.5, 23.8), 'varie'); arrow(ax, (65, 29.5), (67.5, 24.8), 'varie')
+save(fig, '44-083')

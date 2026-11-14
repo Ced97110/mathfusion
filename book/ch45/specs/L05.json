@@ -1,0 +1,183 @@
+[
+ {
+  "code": "45-065",
+  "a_dire": "Un isomorphisme garde le nombre de pas pour revenir au départ.",
+  "legende_titre": "Même nombre de pas des deux côtés",
+  "lecture": [
+   "Les quatre cases bleues sont les nombres de l’horloge ; la flèche courbe grise montre le retour de 3 à 0.",
+   "Les quatre cases vertes sont les rotations associées par η (flèches orange).",
+   "Les deux rangées ont 4 pas avant le retour."
+  ],
+  "a_voir": "Le nombre de pas est le même en haut et en bas."
+ },
+ {
+  "code": "45-066",
+  "a_dire": "Les cases symétriques gardent leur couleur après renommage.",
+  "legende_titre": "La symétrie de la table reste",
+  "lecture": [
+   "Le tableau de gauche est la table de l’horloge, celui de droite la table des rotations ; chaque couleur est un élément (légende en bas).",
+   "La ligne noire en pointillés est l’axe de symétrie.",
+   "Les deux cases cerclées ont la même couleur, dans les deux tableaux."
+  ],
+  "a_voir": "Le renommage garde les couleurs aux mêmes places, donc la symétrie aussi."
+ },
+ {
+  "code": "45-067",
+  "a_dire": "Un élément qui engendre tout a pour image un élément qui engendre tout.",
+  "legende_titre": "Un générateur reste un générateur",
+  "lecture": [
+   "À gauche, les cases bleues sont les sommes de 1 : 1, puis 1+1, puis 1+1+1, puis 1+1+1+1.",
+   "À droite, les cases vertes sont les images de ces sommes.",
+   "Les flèches orange relient chaque case à son image ; les flèches grises vont à l’étape suivante."
+  ],
+  "a_voir": "Les quatre éléments sont atteints des deux côtés à partir d’un seul."
+ },
+ {
+  "code": "45-068",
+  "a_dire": "Un sous-groupe à 2 éléments a pour image un ensemble à 2 éléments qui est un sous-groupe.",
+  "legende_titre": "Le sous-groupe a une image de même taille",
+  "lecture": [
+   "Le cadre bleu en haut entoure le sous-groupe 0 et 2.",
+   "Le cadre vert en bas entoure leurs images : nulle et demi.",
+   "Les flèches orange partent de 0 et 2 ; les cases grises sont les autres éléments."
+  ],
+  "a_voir": "Deux éléments donnent deux images : l’ensemble garde sa taille."
+ },
+ {
+  "code": "45-069",
+  "a_dire": "Un isomorphisme change les noms, pas la table : tout ce qui se lit sur la table est conservé.",
+  "legende_titre": "Une seule table pour toutes les propriétés",
+  "lecture": [
+   "Le tableau coloré est la table sans les noms.",
+   "Le nombre de lignes donne la taille ; la diagonale en pointillés montre la symétrie.",
+   "Le cadre noir est la ligne de 1 : on y compte les pas jusqu’au neutre."
+  ],
+  "a_voir": "Taille, symétrie et ordre se lisent tous sur la même table."
+ },
+ {
+  "code": "45-070",
+  "a_dire": "Prendre la puissance puis renommer donne la même chose que renommer puis prendre la puissance.",
+  "legende_titre": "Deux routes, même résultat",
+  "lecture": [
+   "En haut, la flèche grise va de 1 à 3 en ajoutant trois fois 1.",
+   "En bas, la flèche grise va de quart à 3 quarts en répétant trois fois.",
+   "Les flèches orange sont η ; les cases vertes sont les images."
+  ],
+  "a_voir": "Les deux routes arrivent à 3 quarts."
+ },
+ {
+  "code": "45-071",
+  "a_dire": "On montre que les mêmes k ramènent au neutre des deux côtés, grâce à l’injectivité.",
+  "legende_titre": "L’ordre est gardé, étape par étape",
+  "lecture": [
+   "La rangée du haut va de a^k = 1 à η(a)^k = 1′.",
+   "La rangée du milieu revient de η(a)^k = 1′ à a^k = 1.",
+   "La flèche orange épaisse est l’étape qui porte le poids : l’injectivité.",
+   "La case verte du bas conclut."
+  ],
+  "a_voir": "Les deux sens donnent les mêmes k, donc le même ordre."
+ },
+ {
+  "code": "45-072",
+  "a_dire": "Pour deux éléments x′ et y′, on obtient x′y′ = y′x′ en passant par η, grâce à la surjectivité.",
+  "legende_titre": "De x′y′ à y′x′ en six cases",
+  "lecture": [
+   "La case bleue du haut est le départ, la verte du bas l’arrivée.",
+   "Les flèches orange épaisses sont la surjectivité, au début et à la fin.",
+   "La flèche du milieu utilise que G est commutatif.",
+   "Les autres flèches utilisent que η conserve le produit."
+  ],
+  "a_voir": "On échange x et y au milieu de la chaîne, dans le premier groupe."
+ },
+ {
+  "code": "45-073",
+  "a_dire": "Un invariant est une propriété qui reste vraie après tout isomorphisme, comme avoir 4 éléments.",
+  "legende_titre": "Ce qui reste et ce qui disparaît",
+  "lecture": [
+   "La rangée du haut est l’horloge, celle du bas les rotations.",
+   "L’accolade verte montre que les deux ont 4 éléments.",
+   "La case rouge est le nombre 3 : les rotations n’en ont pas."
+  ],
+  "a_voir": "Avoir 4 éléments est conservé ; contenir le nombre 3 ne l’est pas."
+ },
+ {
+  "code": "45-074",
+  "a_dire": "Pour prouver que deux groupes ne sont pas isomorphes, on cherche une propriété conservée que l’un a et pas l’autre.",
+  "legende_titre": "Une vérification remplace 720 essais",
+  "lecture": [
+   "La case rouge barrée est la liste des 720 renommages à essayer.",
+   "La case violette est S₃, où ab ≠ ba.",
+   "La case bleue est ℤ/6ℤ, où ab = ba.",
+   "La case verte est la conclusion."
+  ],
+  "a_voir": "Une seule propriété différente suffit pour conclure."
+ },
+ {
+  "code": "45-075",
+  "a_dire": "La ligne de 1 de la table envoie chaque élément sur un élément différent.",
+  "legende_titre": "Chaque case reçoit une flèche",
+  "lecture": [
+   "Les cases bleues du haut sont les départs 0, 1, 2, 3.",
+   "Les cases vertes du bas sont les arrivées.",
+   "Les flèches bleues ajoutent 1 ; la flèche orange envoie 3 sur 0."
+  ],
+  "a_voir": "Quatre flèches arrivent sur quatre cases différentes."
+ },
+ {
+  "code": "45-076",
+  "a_dire": "La translation à gauche envoie x sur a placé à gauche de x ; elle déplace tout sans rien perdre.",
+  "legende_titre": "a x : a se place à gauche",
+  "lecture": [
+   "En haut, la case orange a est placée à gauche de la case bleue x.",
+   "La case grise est la multiplication de l’école : 3 × 4 = 12.",
+   "Les quatre cases bleues du bas sont l’horloge avec a = 1."
+  ],
+  "a_voir": "Dans l’horloge, ajouter 1 déplace les quatre éléments."
+ },
+ {
+  "code": "45-077",
+  "a_dire": "La lettre L en indice transforme a en le nom d’une application.",
+  "legende_titre": "L change a en application",
+  "lecture": [
+   "La case bleue a est l’élément.",
+   "La case orange L veut dire left, à gauche.",
+   "La case verte a_L est l’application.",
+   "Le cadre du bas écrit ce qu’elle fait : x devient a x."
+  ],
+  "a_voir": "a est un élément ; a_L est une application."
+ },
+ {
+  "code": "45-078",
+  "a_dire": "Dans l’horloge, a = 1 envoie 0, 1, 2, 3 sur 1, 2, 3, 0.",
+  "legende_titre": "Quatre additions de 1",
+  "lecture": [
+   "Les cases bleues de gauche sont les valeurs de x.",
+   "Les flèches orange ajoutent 1.",
+   "Les cases vertes sont les résultats 1, 2, 3.",
+   "La case orange 4 donne 0 après le reste."
+  ],
+  "a_voir": "La ligne de 1 se lit : 1, 2, 3, 0."
+ },
+ {
+  "code": "45-079",
+  "a_dire": "Le signe a_L désigne en un seul nom la règle x ↦ a x.",
+  "legende_titre": "Quatre phrases, un seul signe",
+  "lecture": [
+   "Les quatre cases bleues sont les phrases : chaque nombre devient le suivant.",
+   "Le crochet gris les réunit, la flèche orange mène au signe.",
+   "La case verte a_L est l’application, pas un nombre."
+  ],
+  "a_voir": "Un seul signe remplace les quatre phrases."
+ },
+ {
+  "code": "45-080",
+  "a_dire": "Le signe G_L est l’ensemble des applications a_L, une pour chaque élément.",
+  "legende_titre": "Quatre applications dans un ensemble",
+  "lecture": [
+   "Le cadre vert en pointillés est G_L.",
+   "Chaque case bleue est une application : 0_L, 1_L, 2_L, 3_L.",
+   "Le texte à droite dit de combien elle avance."
+  ],
+  "a_voir": "G_L contient quatre applications, une par élément."
+ }
+]

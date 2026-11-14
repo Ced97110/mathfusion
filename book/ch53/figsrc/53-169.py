@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(50)
+box(ax, 3, 24, 22, 12, 'sujet', label=r'$m=8$')
+box(ax, 33, 24, 22, 12, 'autre', label=r'$c=8$')
+box(ax, 63, 24, 22, 12, 'fixe', label='espion : 8', size='s')
+arrow(ax, (25, 30), (33, 30), 'varie')
+arrow(ax, (55, 30), (63, 30), 'varie')
+text(ax, 29, 40, r'$8^{1}=8$', 'varie', 's')
+text(ax, 59, 40, 'lit', 'varie', 's')
+brace(ax, 3, 55, 21, 'varie', 'le chiffré est le message', size='s')
+text(ax, 44, 7, 'e = 1 : Alice retrouve 8', 'resultat', 'm')
+text(ax, 44, 2.5, 'mais rien n’est caché', 'encre', 'm')
+save(fig, '53-169')

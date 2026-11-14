@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 15, 50, 'nombre', 'sujet', 's'); text(ax, 47, 50, 'signe changé', 'varie', 's'); text(ax, 77, 50, 'produit', 'resultat', 's')
+box(ax, 2, 38, 26, 9, 'sujet', label=r'$a+b\sqrt{2}$')
+text(ax, 31, 42.5, r'$\times$', 'encre', 'l')
+box(ax, 34, 38, 26, 9, 'varie', label=r'$a-b\sqrt{2}$')
+text(ax, 64, 42.5, '=', 'encre', 'l')
+box(ax, 66, 38, 20, 9, 'resultat', label=r'$a^2-2b^2$', size='s')
+arrow(ax, (76, 24), (76, 37), 'fixe')
+box(ax, 44, 14, 42, 10, 'fixe', label=r'$\sqrt{2}\times\sqrt{2}=2$')
+text(ax, 22, 19, 'fait propre à ce nombre', 'fixe', 's')
+save(fig, '77-005')

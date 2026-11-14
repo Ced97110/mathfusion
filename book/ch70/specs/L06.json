@@ -1,0 +1,446 @@
+[
+ {
+  "code": "70-151",
+  "a_dire": "Le déterminant ad − bc de deux vecteurs est l’aire du parallélogramme qu’ils forment ; il vaut 0 quand le parallélogramme est aplati.",
+  "legende_titre": "Deux parallélogrammes, deux aires",
+  "lecture": [
+   "À gauche, la flèche bleue (2, 1) et la flèche violette (1, 2) forment un parallélogramme vert.",
+   "Son aire vaut 3.",
+   "À droite, la flèche violette (4, 2) et la flèche bleue (2, 1) ont la même direction : le parallélogramme est un segment gris.",
+   "Son aire vaut 0."
+  ],
+  "a_voir": "Des vecteurs alignés donnent un parallélogramme aplati, donc une aire nulle."
+ },
+ {
+  "code": "70-152",
+  "a_dire": "Dans les deux cas particuliers (P égale O, dérivées nulles en P), chaque terme de q contient un facteur 0, donc q vaut 0.",
+  "legende_titre": "Deux cas où q s’annule quand même",
+  "lecture": [
+   "À gauche, le point bleu est l’origine : sa position et sa hauteur valent 0, donc chaque terme de q a un facteur 0.",
+   "À droite, le point bleu est en position 3 et en hauteur 4 ; les deux dérivées y sont nulles.",
+   "Le calcul 3 fois 0 moins 4 fois 0 donne 0.",
+   "Dans les deux cas, le résultat vert est q = 0."
+  ],
+  "a_voir": "Un facteur nul dans chaque terme suffit pour que q vaille 0."
+ },
+ {
+  "code": "70-153",
+  "a_dire": "Dans ℝ, le plus petit rayon pour lequel le cercle touche la courbe existe ; dans un corps réel clos, on l’obtient en éliminant y avec le cercle.",
+  "legende_titre": "Le plus petit cercle qui touche la courbe",
+  "lecture": [
+   "La courbe bleue est hauteur égale position au carré plus 1.",
+   "Le cercle gris, de rayon 0,5, ne la touche pas.",
+   "Le cercle vert, de rayon 1, la touche au point (0 ; 1).",
+   "Le cercle orange, de rayon 2, la coupe."
+  ],
+  "a_voir": "Le rayon 1 est le plus petit qui touche la courbe."
+ },
+ {
+  "code": "70-154",
+  "a_dire": "Dans un corps réel clos, on remplace y dans l’équation du cercle par sa valeur sur la courbe ; il reste un polynôme en x seul.",
+  "legende_titre": "Éliminer y entre la courbe et le cercle",
+  "lecture": [
+   "La boîte bleue donne la courbe : y égale x au carré plus 1.",
+   "La boîte violette donne le cercle de rayon c.",
+   "La boîte orange remplace y par x au carré plus 1 dans le cercle.",
+   "La boîte verte montre le résultat : x puissance 4, plus 3 fois x au carré, plus 1 moins c au carré."
+  ],
+  "a_voir": "Il ne reste que x et c : y a disparu."
+ },
+ {
+  "code": "70-155",
+  "a_dire": "L’ensemble des rayons c est fait d’un nombre fini d’intervalles fermés, donc il a un plus petit élément.",
+  "legende_titre": "Les rayons qui conviennent forment un intervalle",
+  "lecture": [
+   "La droite graduée porte les rayons c.",
+   "Le trait rouge, de 0 à 1, est la zone où c au carré est plus petit que 1 : pas de rencontre.",
+   "Le trait vert, à partir de 1, est la zone où c au carré vaut au moins 1 : le cercle rencontre la courbe.",
+   "Le point vert en 1 est inclus ; c’est le plus petit rayon."
+  ],
+  "a_voir": "L’intervalle vert commence en 1 et contient ce 1."
+ },
+ {
+  "code": "70-156",
+  "a_dire": "Une racine réelle de h n’assure pas un point réel de la courbe : la hauteur peut ne pas être réelle.",
+  "legende_titre": "Racine réelle de h, mais pas de point",
+  "lecture": [
+   "À gauche, la parabole bleue h = 4x² touche l’axe en 0 : h a une racine réelle.",
+   "À droite, la position 0 est marquée en orange.",
+   "Au-dessus, la courbe y au carré plus 1 égale 0 n’a aucune hauteur réelle.",
+   "La racine réelle 0 ne donne donc pas de point réel."
+  ],
+  "a_voir": "La racine existe à gauche, mais rien n’existe au-dessus d’elle à droite."
+ },
+ {
+  "code": "70-157",
+  "a_dire": "Si le point (a, b) annule f et q, alors le point conjugué (a, b barre) les annule aussi, car leurs coefficients sont réels.",
+  "legende_titre": "Un point et son conjugué annulent f",
+  "lecture": [
+   "La droite grise représente les réels ; le point bleu est b, le point violet est son conjugué, b barre égale moins b.",
+   "La flèche orange relie les deux.",
+   "La boîte bleue montre que b au carré vaut moins 1, donc f s’annule en b.",
+   "La boîte violette montre la même chose pour b barre."
+  ],
+  "a_voir": "Les deux points donnent le même résultat 0 dans f."
+ },
+ {
+  "code": "70-158",
+  "a_dire": "Si b n’est pas réel, b barre est différent de b : on a deux points communs distincts de même position.",
+  "legende_titre": "Un point ou deux selon que b est réel",
+  "lecture": [
+   "À gauche, b est réel : b barre égale b, il n’y a qu’un point bleu sur la verticale.",
+   "À droite, b n’est pas réel : la verticale de position 0 porte le point bleu b et le point violet b barre.",
+   "Les deux points sont distincts.",
+   "Ils ont la même position 0."
+  ],
+  "a_voir": "Une seule position peut porter deux points quand b n’est pas réel."
+ },
+ {
+  "code": "70-159",
+  "a_dire": "Le changement x′ = x/m − y donne des nouvelles positions différentes à deux points, sauf pour une valeur interdite de m.",
+  "legende_titre": "Nouvelle position selon le choix de m",
+  "lecture": [
+   "Les deux points sont (1 ; 1) en bleu et (3 ; 2) en violet.",
+   "Avec m égal à 1, leurs nouvelles positions sont 0 et 1 : elles sont différentes.",
+   "Avec m égal à 2, les deux points tombent sur la même valeur, moins 0,5.",
+   "Le choix 2 est donc mauvais."
+  ],
+  "a_voir": "Pour m égal à 2, les deux points se superposent sur la droite."
+ },
+ {
+  "code": "70-160",
+  "a_dire": "Après le changement de coordonnées, le coefficient de tête de f en y est la constante m, qui n’est pas nulle.",
+  "legende_titre": "Le coefficient de tête devient constant",
+  "lecture": [
+   "En haut, la boîte orange est le coefficient de y dans x fois y moins 1 : c’est x, qui vaut 0 quand x vaut 0.",
+   "La flèche orange remplace x par 2 fois (x′ plus y).",
+   "En bas, la boîte verte est le coefficient de y au carré : c’est 2.",
+   "Ce coefficient est une constante, jamais 0."
+  ],
+  "a_voir": "Le coefficient de tête passe de x, qui peut être nul, à 2, qui ne l’est jamais."
+ },
+ {
+  "code": "70-161",
+  "a_dire": "Après le changement, si m évite les valeurs interdites, deux points communs distincts n’ont jamais la même nouvelle position x′.",
+  "legende_titre": "Les droites de x′ constant passent par un ou deux points",
+  "lecture": [
+   "Les points sont P (2 ; 1) en bleu et Q (5 ; 2) en violet.",
+   "À gauche, avec m égal à 1, deux droites parallèles portent x′ égal 1 et x′ égal 3 : les valeurs sont différentes.",
+   "À droite, avec m égal à 3, une seule droite rouge passe par P et Q : x′ vaut moins un tiers pour les deux.",
+   "La valeur 3 est donc interdite pour ces deux points."
+  ],
+  "a_voir": "Avec m égal à 3, une seule droite relie les deux points."
+ },
+ {
+  "code": "70-162",
+  "a_dire": "La courbe a un point réel si et seulement si h a une racine réelle, et le théorème de Sturm décide cette question.",
+  "legende_titre": "Point réel de la courbe et racine réelle de h",
+  "lecture": [
+   "La boîte bleue dit que la courbe a un point réel ; la boîte violette dit que h a une racine réelle.",
+   "La double flèche orange relie les deux et se lit « si et seulement si ».",
+   "Dans l’exemple, f égale y au carré plus 1 n’a aucun point, et aucune racine réelle n’apparaît.",
+   "La boîte verte dit que Sturm décide cette question."
+  ],
+  "a_voir": "Les deux boîtes du haut sont vraies ensemble ou fausses ensemble."
+ },
+ {
+  "code": "70-163",
+  "a_dire": "On retire d’abord de f les facteurs qui ne contiennent que x, car un tel facteur donne une droite verticale entière.",
+  "legende_titre": "Retirer le facteur qui ne contient que x",
+  "lecture": [
+   "Le polynôme est le produit de la boîte orange, x moins 1, et de la boîte bleue, y au carré plus 1.",
+   "La boîte orange ne contient que x : elle donne la droite verticale entière x égale 1, tracée en orange.",
+   "On la retire.",
+   "La boîte verte montre ce qui reste : y au carré plus 1."
+  ],
+  "a_voir": "La flèche orange à double pointe est toute la droite de position 1."
+ },
+ {
+  "code": "70-164",
+  "a_dire": "On retire les facteurs répétés en divisant f par son PGCD avec la dérivée en y ; la courbe reste la même.",
+  "legende_titre": "Diviser par le PGCD pour retirer la répétition",
+  "lecture": [
+   "La première ligne montre f : deux fois le facteur y moins 1.",
+   "La deuxième ligne montre la dérivée en y : 2 fois y moins 1.",
+   "Le facteur commun, y moins 1, est le PGCD ; la division de f par lui laisse un seul facteur y moins 1 (boîte verte).",
+   "À droite, la droite y égale 1 est la même avant et après."
+  ],
+  "a_voir": "Le facteur écrit deux fois n’est plus écrit qu’une fois, sans changer la droite."
+ },
+ {
+  "code": "70-165",
+  "a_dire": "La figure répond d’un coup pour toutes les positions : la verticale en x coupe la courbe y² = x exactement pour x ≥ 0, ce qui donne une demi-droite.",
+  "legende_titre": "Quelles verticales coupent la courbe y² = x",
+  "lecture": [
+   "La courbe bleue est y au carré égale x.",
+   "La verticale en position 4 la coupe en deux points, celle en 0 en un seul point, celle en moins 1 ne la coupe pas.",
+   "La droite du bas garde la position et oublie la hauteur.",
+   "Sa partie verte, à partir de 0, regroupe les positions où un y existe ; la partie rouge, celles où il n’en existe pas."
+  ],
+  "a_voir": "La zone verte s’arrête exactement en 0, là où la verticale touche la courbe en un seul point."
+ },
+ {
+  "code": "70-166",
+  "a_dire": "« Il existe y tel que y² = x » équivaut à x ≥ 0 : vrai pour x égal 9, faux pour x égal moins 4.",
+  "legende_titre": "Existence de y selon la position x",
+  "lecture": [
+   "La droite graduée porte les valeurs de x ; le trait rouge est la zone x < 0, le trait vert la zone x ≥ 0.",
+   "Au point vert 9, la boîte verte dit que 3 au carré vaut 9 : un y existe.",
+   "Au point rouge moins 4, la boîte rouge dit qu’aucun y ne convient.",
+   "La phrase avec « il existe » et la condition x ≥ 0 disent la même chose."
+  ],
+  "a_voir": "Le vert correspond aux x pour lesquels un y existe."
+ },
+ {
+  "code": "70-167",
+  "a_dire": "L’élimination remplace la recherche d’un y parmi une infinité de nombres par un test de signe sur x.",
+  "legende_titre": "Chercher un y, ou regarder le signe de x",
+  "lecture": [
+   "La première ligne teste des y pour x égal 25 : la case verte 5 au carré égale 25 trouve le y.",
+   "La deuxième ligne teste des y pour x égal moins 3 : les cases grises n’aboutissent jamais.",
+   "La boîte orange regarde le signe de moins 3 : négatif.",
+   "La boîte rouge conclut qu’aucun y ne convient."
+  ],
+  "a_voir": "Un test de signe remplace une recherche qui ne finit pas."
+ },
+ {
+  "code": "70-168",
+  "a_dire": "« Il existe x tel que x² + bx + c = 0 » équivaut à b² − 4c ≥ 0 : vrai pour b = 2 et c = −3, faux pour b = 2 et c = 5.",
+  "legende_titre": "Racines de la parabole et signe de b² − 4c",
+  "lecture": [
+   "La parabole bleue est x au carré plus 2x moins 3 : elle coupe l’axe en moins 3 et en 1 ; b² − 4c vaut 16.",
+   "La parabole violette est x au carré plus 2x plus 5 : elle ne touche pas l’axe ; b² − 4c vaut moins 16.",
+   "Les points verts sont les racines.",
+   "Pas de racine réelle quand le nombre b² − 4c est négatif."
+  ],
+  "a_voir": "Seule la parabole bleue coupe l’axe, et c’est celle dont le nombre est positif."
+ },
+ {
+  "code": "70-169",
+  "a_dire": "« Pour tout x, x² + bx + c > 0 » équivaut à b² − 4c < 0 : la parabole reste au-dessus de l’axe, sinon une valeur est négative.",
+  "legende_titre": "Parabole toujours positive ou non",
+  "lecture": [
+   "La parabole verte, pour b égal 0 et c égal 1, reste au-dessus de l’axe : toutes ses valeurs sont positives ; b² − 4c vaut moins 4.",
+   "La parabole rouge, pour b égal 2 et c égal moins 3, passe sous l’axe ; b² − 4c vaut 16.",
+   "Le point rouge, en x égal 0, a pour valeur moins 3.",
+   "On le voit sans chercher x : le signe de b² − 4c suffit."
+  ],
+  "a_voir": "La courbe verte ne descend jamais sous l’axe, la rouge y descend."
+ },
+ {
+  "code": "70-170",
+  "a_dire": "La condition b² − 4c ≥ 0 est la région du plan des couples (b, c) située sous la parabole c = b²/4, bord compris.",
+  "legende_titre": "La condition dessinée comme une région du plan",
+  "lecture": [
+   "Chaque point du plan est un couple (b, c) ; la courbe bleue est c égale b au carré divisé par 4.",
+   "La zone verte, sous la courbe, est la région b² − 4c ≥ 0.",
+   "Le point vert (2 ; 0) est dans cette zone, le point orange (2 ; 1) est sur la courbe.",
+   "Le point rouge (2 ; 5) est dans la zone rouge, au-dessus."
+  ],
+  "a_voir": "Les trois points de position 2 sont dans trois endroits différents du plan."
+ },
+ {
+  "code": "70-171",
+  "a_dire": "Un système mêlant équations, conditions « différent de 0 » et inégalités se ramène à une seule équation par trois réductions.",
+  "legende_titre": "Trois réductions vers une seule équation",
+  "lecture": [
+   "Chaque ligne a, à gauche en bleu, un type de condition et, à droite en vert, son remplacement.",
+   "Deux équations deviennent une somme de deux carrés égale à 0.",
+   "Deux conditions « différent de 0 » deviennent un produit différent de 0.",
+   "Une inégalité x > 0 devient « il existe z tel que x z au carré moins 1 égale 0 »."
+  ],
+  "a_voir": "À droite, il ne reste que des équations ou des conditions simples."
+ },
+ {
+  "code": "70-172",
+  "a_dire": "Plusieurs équations F = 0 équivalent à une seule : la somme de leurs carrés égale 0, car une somme de carrés réels n’est nulle que si chaque carré l’est.",
+  "legende_titre": "Somme de carrés égale à 0",
+  "lecture": [
+   "La droite bleue est x moins 1 égale 0 ; la droite violette est y moins 2 égale 0.",
+   "Le point vert (1 ; 2) est sur les deux : la somme des carrés vaut 0 plus 0.",
+   "Le point rouge (1 ; 3) est sur la bleue seulement : la somme vaut 0 plus 1, soit 1.",
+   "La somme ne s’annule qu’à l’intersection."
+  ],
+  "a_voir": "Seul le point commun aux deux droites donne une somme nulle."
+ },
+ {
+  "code": "70-173",
+  "a_dire": "Plusieurs conditions « Gi différent de 0 », toutes exigées, équivalent à : le produit des Gi est non nul.",
+  "legende_titre": "Le produit est nul sur les axes",
+  "lecture": [
+   "Les deux traits rouges sont les axes : le produit x fois y y vaut 0.",
+   "Les zones vertes sont les endroits où x et y sont tous deux différents de 0 : le produit n’est pas nul.",
+   "Le point bleu (2 ; 3) donne 6.",
+   "Le point rouge (2 ; 0), sur un axe, donne 0."
+  ],
+  "a_voir": "Le produit est nul dès qu’un des deux nombres est nul."
+ },
+ {
+  "code": "70-174",
+  "a_dire": "H > 0 équivaut à « il existe un réel z tel que H z² − 1 = 0 » : l’équation a des solutions réelles seulement quand H est positif.",
+  "legende_titre": "Une solution réelle z seulement si H est positif",
+  "lecture": [
+   "À gauche, pour H égal 4, la courbe bleue de 4 z au carré moins 1 coupe l’axe en z égal 1/2 et z égal moins 1/2 (points verts).",
+   "À droite, pour H égal moins 4, la courbe violette de moins 4 z au carré moins 1 reste sous l’axe.",
+   "Elle n’est jamais égale à 0.",
+   "Donc aucun z réel pour H négatif."
+  ],
+  "a_voir": "La courbe de gauche coupe l’axe, celle de droite ne le coupe pas."
+ },
+ {
+  "code": "70-175",
+  "a_dire": "Pour une seule inconnue, le théorème de Sturm donne, par des conditions de signe sur les coefficients, quand un polynôme a une racine réelle.",
+  "legende_titre": "Sturm : des conditions de signe sur les coefficients",
+  "lecture": [
+   "La colonne de gauche suit les étapes : les coefficients b et c, la suite de Sturm, les signes, puis la condition b² − 4c ≥ 0.",
+   "La colonne de droite applique la condition à deux cas.",
+   "Pour b égal 2 et c égal moins 3, le nombre vaut 16 : la condition est vraie.",
+   "Pour b égal 2 et c égal 5, il vaut moins 16 : elle est fausse."
+  ],
+  "a_voir": "La condition porte sur b et c, pas sur x."
+ },
+ {
+  "code": "70-176",
+  "a_dire": "Avec deux inconnues, Seidenberg ramène à une seule inconnue x ; Sturm répond alors sur cette inconnue.",
+  "legende_titre": "De deux inconnues à une seule",
+  "lecture": [
+   "La boîte bleue contient deux inconnues ; la flèche « Seidenberg : élimine y » mène à la boîte orange, où il ne reste que x.",
+   "La flèche « Sturm : décide sur x » mène à la réponse verte, oui ou non.",
+   "Sur la droite graduée, les points verts 1, 2 et 3 sont les racines réelles de h ; la flèche verte les mène à la réponse.",
+   "Il ne reste qu’une inconnue."
+  ],
+  "a_voir": "Après Seidenberg, tout se lit sur la droite de x, où Sturm répond."
+ },
+ {
+  "code": "70-177",
+  "a_dire": "Pour n inconnues, on traite x1 à x(n−2) comme des paramètres et on élimine les deux dernières, puis on recommence jusqu’à une seule inconnue.",
+  "legende_titre": "Éliminer deux inconnues à chaque tour",
+  "lecture": [
+   "La première ligne montre quatre inconnues : les deux grises sont des paramètres, les deux orange sont éliminées.",
+   "La deuxième ligne garde une condition sur x1 et x2 ; x1 reste grise, x2 est éliminée.",
+   "La troisième ligne ne garde que x1, en bleu.",
+   "Il y a deux tours pour quatre inconnues."
+  ],
+  "a_voir": "À chaque ligne, il y a moins d’inconnues."
+ },
+ {
+  "code": "70-178",
+  "a_dire": "Dans ℝ, si une courbe a une solution, elle a un point le plus proche de l’origine ; avec des fractions seulement, on s’approche de la distance minimale sans l’atteindre.",
+  "legende_titre": "Le minimum n’est pas atteint avec des fractions",
+  "lecture": [
+   "La courbe bleue donne le carré de la distance en fonction de la position x.",
+   "Le trait pointillé est 1,75, la valeur du minimum.",
+   "Les points bleus, de positions 6/5 et 1,22, donnent 1,7536 et 1,7501 : ils restent au-dessus.",
+   "Le cercle rouge est le minimum, en x au carré égale 3/2, qui n’est pas une fraction."
+  ],
+  "a_voir": "Les points à positions fractionnaires s’approchent du trait pointillé sans le toucher."
+ },
+ {
+  "code": "70-179",
+  "a_dire": "Pour la courbe x fois y égale 1, il existe un point le plus proche de l’origine : (1 ; 1), à distance au carré 2.",
+  "legende_titre": "Le point le plus proche de l’origine sur x·y = 1",
+  "lecture": [
+   "La courbe bleue est x fois y égale 1.",
+   "L’arc vert, centré à l’origine, passe par (1 ; 1) : le carré de la distance vaut 2.",
+   "L’arc orange passe par (2 ; 1/2) : le carré de la distance vaut 4,25.",
+   "Aucun point de la courbe n’est à l’intérieur de l’arc vert."
+  ],
+  "a_voir": "L’arc vert touche la courbe et reste en dessous d’elle."
+ },
+ {
+  "code": "70-180",
+  "a_dire": "Le théorème de Tarski vaut pour les nombres réels ; avec « il existe un entier », aucun calcul général ne décide (Matiyasevich, 1970).",
+  "legende_titre": "Nombres réels contre nombres entiers",
+  "lecture": [
+   "À gauche, x est réel : la racine carrée de 2 existe, point vert entre 1 et 2, et un calcul décide.",
+   "À droite, n est entier : les carrés 0, 1, 4, 9 sautent le 2, donc n au carré égale 2 n’a pas de solution.",
+   "Aucun calcul ne décide en général pour les entiers.",
+   "Matiyasevich l’a démontré en 1970."
+  ],
+  "a_voir": "La même équation x au carré égale 2 a une solution à gauche et aucune à droite."
+ },
+ {
+  "code": "70-181",
+  "a_dire": "Aucun calcul ne décide, pour toutes les équations polynomiales à coefficients entiers, si elles ont une solution entière ; pour des solutions réelles, un calcul existe.",
+  "legende_titre": "Équations en nombres entiers : pas de calcul général",
+  "lecture": [
+   "La droite porte les carrés des entiers : 0, 1 et 4 sont des points bleus.",
+   "Le cercle rouge est la cible 2 : elle tombe entre 1 et 4, aucun carré ne l’atteint.",
+   "La boîte violette dit qu’aucun calcul général ne décide pour les entiers.",
+   "La boîte verte dit qu’un calcul décide pour les réels."
+  ],
+  "a_voir": "Pour les entiers, aucun calcul général ne décide ; pour les réels, un calcul décide."
+ },
+ {
+  "code": "70-182",
+  "a_dire": "Sur ℝ, un ensemble défini par des polynômes coupe chaque droite en un nombre fini d’intervalles ; sur ℤ, on définit des ensembles bien plus compliqués.",
+  "legende_titre": "Intervalles sur ℝ, trous sur ℤ",
+  "lecture": [
+   "La zone bleue est l’ensemble des points où y au carré est plus petit que p de x.",
+   "La verticale de position 1,5 la coupe en un seul intervalle vert ; celle de 2,5 ne la coupe pas.",
+   "En bas, les points violets sont les nombres premiers 2, 3, 5, 7, 11, 13.",
+   "Ils laissent des trous, et la liste ne s’arrête jamais."
+  ],
+  "a_voir": "Chaque verticale ne montre que des blocs sans trou, alors que les nombres premiers en ont."
+ },
+ {
+  "code": "70-183",
+  "a_dire": "Une forme x² + bxy + cy² est positive quand elle vaut strictement plus que 0 en tout point autre que l’origine ; pour b égal 2 et c égal 1, ce n’est pas le cas.",
+  "legende_titre": "Forme positive ou non",
+  "lecture": [
+   "À gauche, pour b égal 0 et c égal 1, la forme vaut 0 seulement à l’origine ; elle vaut 1 en (1 ; 0) et 2 en (1 ; 1).",
+   "À droite, pour b égal 2 et c égal 1, la forme s’annule sur toute la droite rouge.",
+   "Le point rouge (1 ; −1) est sur cette droite.",
+   "Cette forme n’est donc pas positive."
+  ],
+  "a_voir": "Un seul point nul à gauche, toute une droite de points nuls à droite."
+ },
+ {
+  "code": "70-184",
+  "a_dire": "Le dix-septième problème de Hilbert demande si un polynôme qui n’est jamais négatif est une somme de carrés de fractions de polynômes.",
+  "legende_titre": "Jamais négatif : somme de carrés ?",
+  "lecture": [
+   "La courbe bleue, x² + 2x + 2, reste au-dessus de l’axe ; son plus bas point est 1, en x égal moins 1.",
+   "La courbe violette, (x − 1)², touche l’axe en 1.",
+   "En bas, la courbe bleue s’écrit comme deux carrés bleus : (x + 1)² plus 1².",
+   "La courbe violette est un seul carré violet."
+  ],
+  "a_voir": "Des polynômes jamais négatifs se trouvent écrits comme des sommes de carrés."
+ },
+ {
+  "code": "70-185",
+  "a_dire": "La décomposition cylindrique de Collins découpe l’axe des positions aux racines de résultants, puis empile des cellules au-dessus de chaque intervalle.",
+  "legende_titre": "Découper l’axe, empiler des cellules",
+  "lecture": [
+   "Les points orange 1, 2 et 3 sont les racines de p ; elles coupent l’axe en quatre intervalles.",
+   "Au-dessus du premier et du troisième, aucun point de la courbe : une cellule unique grise.",
+   "Au-dessus du deuxième et du quatrième, deux points bleus.",
+   "Ils séparent trois cellules : au-dessus, dedans en vert, au-dessous."
+  ],
+  "a_voir": "Chaque intervalle porte un empilement différent de cellules."
+ },
+ {
+  "code": "70-186",
+  "a_dire": "Le chapitre a deux faces : le résultant transforme « les courbes se coupent-elles ? » en un calcul, et le théorème de Tarski garantit une réponse calculable à toute question bien posée.",
+  "legende_titre": "Deux faces de la finalité du chapitre",
+  "lecture": [
+   "À gauche, la parabole bleue y égale x au carré et la droite violette y égale 1 se coupent en deux points verts, de positions moins 1 et 1.",
+   "Ces positions sont les racines du résultant x au carré moins 1 (boîte verte).",
+   "À droite, le théorème de Tarski donne pour x² + bx + c = 0 la condition b² − 4c ≥ 0.",
+   "Une question géométrique devient un calcul."
+  ],
+  "a_voir": "Deux faces : le résultant donne les croisements, Tarski garantit une réponse calculable."
+ },
+ {
+  "code": "70-187",
+  "a_dire": "Avec la condition « la racine est strictement positive », la condition b² − 4c ≥ 0 ne suffit plus : b = −3, c = 2 et b = 3, c = 2 donnent le même nombre 1 mais des résultats différents.",
+  "legende_titre": "Même nombre, racines de signes opposés",
+  "lecture": [
+   "À gauche, b égal moins 3 et c égal 2 : la parabole bleue coupe l’axe en 1 et en 2, à droite de la ligne verticale.",
+   "À droite, b égal 3 et c égal 2 : la parabole violette coupe l’axe en moins 2 et en moins 1, à gauche de la ligne verticale.",
+   "Dans les deux cas, b² − 4c vaut 1.",
+   "Il faut donc regarder aussi le signe des coefficients."
+  ],
+  "a_voir": "Les deux paraboles sont le miroir l’une de l’autre ; leurs racines changent de côté."
+ }
+]

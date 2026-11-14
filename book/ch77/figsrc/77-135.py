@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 16, 74, 56, 11, 'sujet', label=r'$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$', size='xl')
+text(ax, 44, 68, 'pas un corps', 'limite', 's')
+arrow(ax, (34, 65), (20, 55), 'varie'); arrow(ax, (54, 65), (68, 55), 'varie')
+box(ax, 2, 40, 36, 14, 'sujet', label=r'multiples de $e$', size='s')
+box(ax, 50, 40, 36, 14, 'autre', label=r"multiples de $e'$", size='s')
+text(ax, 44, 47, r"$ee'=0$", 'fixe', 's')
+arrow(ax, (20, 39), (20, 30), 'resultat'); arrow(ax, (68, 39), (68, 30), 'resultat')
+box(ax, 2, 16, 36, 13, 'resultat', label=r'$ze\ \leftrightarrow\ z\in\mathbb{C}$', size='s')
+box(ax, 50, 16, 36, 13, 'resultat', label=r"$we'\ \leftrightarrow\ w\in\mathbb{C}$", size='s')
+text(ax, 44, 8, r"tout élément : $ze+we'$", 'encre', 's')
+save(fig, '77-135')

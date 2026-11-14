@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 2, 6, 40, 40, 'sujet')
+text(ax, 8, 40, r'$\mathbb{C}$', 'sujet', 'l')
+disc(ax, 20, 24, 1.6, 'varie'); text(ax, 20, 29.5, r'$z$', 'varie', 'l')
+text(ax, 29, 24, r'$\in$', 'encre', 'l')
+text(ax, 46, 40, r'$z$ : un complexe quelconque', 'varie', 's', ha='left')
+text(ax, 46, 24, r'$\in$ : appartient à', 'encre', 's', ha='left')
+text(ax, 46, 8, r'$\mathbb{C}$ : tous les complexes', 'sujet', 's', ha='left')
+save(fig, '46-141')

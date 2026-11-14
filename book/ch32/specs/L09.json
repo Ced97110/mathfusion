@@ -1,0 +1,180 @@
+[
+ {
+  "code": "32-129",
+  "a_dire": "Le sinus vaut 1 au point le plus haut du cercle, à 90°.",
+  "legende_titre": "Le sinus égale 1 : un seul point",
+  "lecture": [
+   "La droite bleue est à la hauteur 1, tout en haut du cercle.",
+   "Le point vert P est le point du cercle sur cette droite : son angle est 90°.",
+   "Le trait bleu pointillé est la hauteur 1, du centre jusqu'à P."
+  ],
+  "a_voir": "La droite de hauteur 1 touche le cercle en haut, à 90°."
+ },
+ {
+  "code": "32-130",
+  "a_dire": "À 90°, la tangente n'existe pas, car il faudrait diviser 1 par 0.",
+  "legende_titre": "Un angle où la tangente n'a pas de valeur",
+  "lecture": [
+   "Le trait bleu va du centre au point P, en haut du cercle : il est vertical.",
+   "Sa montée vaut 1 et son avancée vaut 0.",
+   "En orange : 1 divisé par 0 n'existe pas."
+  ],
+  "a_voir": "Le trait vertical n'a pas de pente, donc la tangente de 90° n'existe pas."
+ },
+ {
+  "code": "32-131",
+  "a_dire": "Une solution interdite est un angle trouvé par le calcul pour lequel l'équation de départ n'a pas de sens.",
+  "legende_titre": "Trouvé par le calcul, puis refusé",
+  "lecture": [
+   "Les trois cases grises du haut sont les angles trouvés : 0°, 90° et 180°.",
+   "À 0° et à 180°, en vert, les deux côtés valent 0 : c'est vrai.",
+   "À 90°, en orange, la tangente n'existe pas : ce n'est ni vrai ni faux."
+  ],
+  "a_voir": "90° n'est ni vrai ni faux : on le rejette."
+ },
+ {
+  "code": "32-132",
+  "a_dire": "Les droites x + y = 1 et x + y = −1 coupent le cercle en quatre points : A et B sont les vrais, C et D sont en trop.",
+  "legende_titre": "Deux droites, quatre points sur le cercle",
+  "lecture": [
+   "La droite bleue en trait plein x + y = 1 coupe le cercle en A (90°) et B (0°), en vert : ce sont les vraies solutions.",
+   "La droite rouge en tirets x + y = −1 coupe le cercle en C (180°) et D (270°), en rouge : ces points sont en trop.",
+   "Après le carré, on obtient x + y = 1 ou x + y = −1 : la droite rouge est ajoutée.",
+   "Le cercle est en gris, avec ses deux axes."
+  ],
+  "a_voir": "La droite rouge ajoute deux points en trop, qui ne conviennent pas à x + y = 1."
+ },
+ {
+  "code": "32-133",
+  "a_dire": "Après le carré, quatre angles sont candidats : 0°, 90°, 180°, 270° ; seuls deux donnent une somme égale à 1.",
+  "legende_titre": "Quatre candidats, deux solutions",
+  "lecture": [
+   "La rangée grise donne les quatre angles candidats.",
+   "Dessous, chaque case donne sinus plus cosinus pour cet angle.",
+   "Les cases vertes valent 1 : vrai. Les cases rouges valent −1 : faux."
+  ],
+  "a_voir": "La somme vaut 1 pour 0° et 90°, et −1 pour 180° et 270°."
+ },
+ {
+  "code": "32-134",
+  "a_dire": "Élever au carré une égalité peut ajouter une solution : x = 1 devient x² = 1, qui accepte aussi −1.",
+  "legende_titre": "Au carré, un nombre de plus",
+  "lecture": [
+   "La droite du haut est x = 1 : un seul point vert, en 1.",
+   "La flèche orange est l'opération « au carré ».",
+   "La droite du bas est x² = 1 : le point vert en 1 et le point orange en −1, ajouté."
+  ],
+  "a_voir": "Le carré garde 1 et ajoute −1."
+ },
+ {
+  "code": "32-135",
+  "a_dire": "Le carré de (sinus + cosinus) vaut sinus² + cosinus² + 2 fois sinus fois cosinus, c'est-à-dire 1 + 2 sin cos.",
+  "legende_titre": "Le carré d'une somme en quatre morceaux",
+  "lecture": [
+   "Le grand carré a pour côté sinus plus cosinus.",
+   "Le carré bleu est sin² et le carré violet est cos² ; ensemble ils valent 1.",
+   "Les deux rectangles verts valent chacun sinus fois cosinus."
+  ],
+  "a_voir": "Le grand carré se découpe en sin², cos² et deux fois sin fois cos."
+ },
+ {
+  "code": "32-136",
+  "a_dire": "Vérifier, c'est remplacer chaque candidat dans l'équation de départ, puis garder les vrais et rejeter les faux.",
+  "legende_titre": "Chaque candidat est testé",
+  "lecture": [
+   "Les quatre cases grises à gauche sont les candidats.",
+   "La zone en pointillés est le test dans l'équation de départ.",
+   "Les flèches vertes vont vers les angles gardés, 0° et 90°. Les flèches rouges vont vers les rejetés, 180° et 270°."
+  ],
+  "a_voir": "Tous les candidats passent le test, puis on trie."
+ },
+ {
+  "code": "32-137",
+  "a_dire": "Une solution parasite est un angle faux produit par le calcul.",
+  "legende_titre": "Faux, mais produit par le calcul",
+  "lecture": [
+   "Le grand cadre en pointillés contient les angles produits par le calcul.",
+   "Dans la case verte, 0° et 90° sont des solutions.",
+   "Dans la case rouge, 180° et 270° sont des parasites.",
+   "La case grise du bas, 45°, est faux mais ne vient pas du calcul."
+  ],
+  "a_voir": "Seuls les angles faux qui sortent du calcul sont parasites."
+ },
+ {
+  "code": "32-138",
+  "a_dire": "Le carré efface le signe : (x + y)² = 1 accepte x + y = 1 et aussi x + y = −1.",
+  "legende_titre": "D'où viennent les angles en trop",
+  "lecture": [
+   "La case orange du haut est l'équation au carré.",
+   "À gauche, en bleu, x + y = 1 : son carré vaut 1 ; elle donne les points A et B.",
+   "À droite, en rouge, x + y = −1 : son carré vaut aussi 1 ; elle donne les points C et D."
+  ],
+  "a_voir": "Une équation au carré donne deux cas, dont un ajouté."
+ },
+ {
+  "code": "32-139",
+  "a_dire": "Diviser par une expression perd les solutions où elle vaut 0.",
+  "legende_titre": "Une division qui fait perdre une solution",
+  "lecture": [
+   "La droite du haut est x² = x : deux points verts, en 0 et en 1.",
+   "La flèche orange est la division par x.",
+   "La droite du bas est x = 1 : il reste le point en 1 ; en 0, le cercle orange en pointillés est la solution perdue."
+  ],
+  "a_voir": "La division par x fait disparaître la solution x = 0."
+ },
+ {
+  "code": "32-140",
+  "a_dire": "Élever au carré peut ajouter des solutions : il faut donc vérifier chaque angle dans l'équation de départ.",
+  "legende_titre": "Après le carré, on vérifie",
+  "lecture": [
+   "La case bleue est l'équation de départ x = 1, la case orange est x² = 1.",
+   "Les deux cases grises sont les candidats 1 et −1.",
+   "Le test dans x = 1 donne vrai (vert) pour 1 et faux (rouge) pour −1."
+  ],
+  "a_voir": "Le candidat −1 passe le carré mais pas l'équation de départ."
+ },
+ {
+  "code": "32-141",
+  "a_dire": "Si k est plus grand que 1 ou plus petit que −1, la droite y = k ne touche pas le cercle : aucune solution.",
+  "legende_titre": "La droite passe à côté du cercle",
+  "lecture": [
+   "Le cercle gris a pour hauteurs de −1 à 1.",
+   "La droite bleue du haut est à la hauteur 2 et celle du bas à la hauteur −3.",
+   "Aucune des deux droites ne touche le cercle."
+  ],
+  "a_voir": "Hors de −1 à 1, la droite ne rencontre pas le cercle."
+ },
+ {
+  "code": "32-142",
+  "a_dire": "sin x − 2 = 0 donne sin x = 2, ce qui est impossible car le sinus ne dépasse pas 1.",
+  "legende_titre": "Isoler sans erreur, mais sans solution",
+  "lecture": [
+   "En haut, la case bleue est l'équation du Handbook ; on ajoute 2 et on obtient la case orange.",
+   "Sur la droite graduée, la barre verte va de −1 à 1 : ce sont les valeurs du sinus.",
+   "Le point rouge, en 2, est hors de la barre."
+  ],
+  "a_voir": "Le nombre 2 est en dehors des valeurs du sinus."
+ },
+ {
+  "code": "32-143",
+  "a_dire": "Avant de toucher à la calculatrice, on compare k à −1 et à 1.",
+  "legende_titre": "Regarder k avant la calculatrice",
+  "lecture": [
+   "La case bleue du haut est la première étape : vérifier k.",
+   "La case orange est la question : k est-il entre −1 et 1 ?",
+   "Si oui (vert), on utilise la calculatrice. Si non (gris), il n'y a pas de solution et on s'arrête."
+  ],
+  "a_voir": "Une comparaison rapide évite une erreur de la calculatrice."
+ },
+ {
+  "code": "32-144",
+  "a_dire": "Quand k = 1, les deux solutions par tour se rejoignent : la droite touche le cercle en un seul point, à 90°.",
+  "legende_titre": "Deux points qui n'en font plus qu'un",
+  "lecture": [
+   "À gauche, k est entre −1 et 1 : la droite bleue coupe le cercle en deux points verts, P et P'.",
+   "À droite, k = 1 : la droite touche le cercle en un seul point vert, en haut, à 90°.",
+   "Ce point est à la fois P et P'."
+  ],
+  "a_voir": "Pour k = 1, P et P' sont le même point."
+ }
+]

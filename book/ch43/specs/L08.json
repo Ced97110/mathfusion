@@ -1,0 +1,187 @@
+[
+ {
+  "code": "43-113",
+  "a_dire": "Un ensemble fini ne peut pas être en bijection avec une de ses parties strictes, un ensemble infini le peut.",
+  "legende_titre": "Trois nombres, deux places",
+  "lecture": [
+   "Le grand cadre bleu contient les trois nombres 1, 2 et 3.",
+   "Le cadre violet en pointillés contient la partie stricte : 1 et 2.",
+   "Les deux flèches vertes envoient 1 sur 1 et 2 sur 2.",
+   "La flèche rouge envoie 3 sur 2, qui a déjà un partenaire."
+  ],
+  "a_voir": "Trois nombres ne tiennent pas dans deux places : pour un ensemble fini, la bijection avec une partie stricte est impossible."
+ },
+ {
+  "code": "43-114",
+  "a_dire": "L'application n ↦ 2n associe un à un chaque entier à un pair, alors que les impairs ne sont pas atteints.",
+  "legende_titre": "Chaque entier a son double",
+  "lecture": [
+   "Les ronds bleus du haut sont les entiers 0, 1, 2, 3.",
+   "Les flèches orange envoient chaque entier sur son double dans la rangée du bas.",
+   "Les ronds verts sont les pairs, tous atteints.",
+   "Les ronds gris sont les impairs, non atteints."
+  ],
+  "a_voir": "Chaque entier a un double, chaque pair a un seul entier, et pourtant les impairs restent hors de la partie."
+ },
+ {
+  "code": "43-115",
+  "a_dire": "Un ensemble est dénombrable si ses éléments se mettent en liste numérotée 0, 1, 2, 3, … sans oubli ni répétition.",
+  "legende_titre": "Une liste numérotée",
+  "lecture": [
+   "Chaque case bleue est un élément de l'ensemble.",
+   "Le numéro orange au-dessus donne sa place dans la liste.",
+   "Les points de suspension disent que la liste continue.",
+   "Le cadre rouge montre un ensemble qui n'a pas de liste."
+  ],
+  "a_voir": "Chaque élément reçoit un numéro de ℕ : c'est cela qu'on appelle dénombrable."
+ },
+ {
+  "code": "43-116",
+  "a_dire": "ℤ et ℚ se mettent en liste complète, comme ℕ : ils ont le même cardinal.",
+  "legende_titre": "Deux listes complètes",
+  "lecture": [
+   "En haut, les cases bleues rangent ℤ en alternant : 0, 1, −1, 2, −2.",
+   "Le numéro orange est la place dans la liste.",
+   "En bas, le chemin violet parcourt les couples de la grille par diagonales.",
+   "Les points de suspension disent que la liste continue."
+  ],
+  "a_voir": "Dans chaque cas, on sait écrire la liste, donc ℤ et ℚ sont dénombrables."
+ },
+ {
+  "code": "43-117",
+  "a_dire": "Pour toute liste de nombres, on construit un nombre qui diffère de chacun, donc la liste des réels n'est jamais complète.",
+  "legende_titre": "Un nombre absent de la liste",
+  "lecture": [
+   "Les trois lignes sont des nombres de la liste : 0,5 puis 0,25 puis 0,125.",
+   "Les ronds orange marquent la première décimale de la première ligne, la deuxième de la deuxième, la troisième de la troisième.",
+   "Les cases vertes forment le nombre construit, dont chaque décimale est changée."
+  ],
+  "a_voir": "Le nombre construit diffère de chaque ligne de la liste, il n'en fait donc pas partie."
+ },
+ {
+  "code": "43-118",
+  "a_dire": "Le chemin parcourt les diagonales de la grille ; chaque couple (m, n) reçoit un seul numéro.",
+  "legende_titre": "Le chemin en diagonale",
+  "lecture": [
+   "Chaque rond est un point (m, n) de la grille ; m est l'abscisse, n l'ordonnée.",
+   "Le chemin bleu passe d'une diagonale à la suivante.",
+   "Le numéro orange dans un rond est l'ordre de passage : 0 sur (0, 0), 1 sur (1, 0), 2 sur (0, 1).",
+   "Les petits points gris sont les points qui reçoivent leur numéro plus loin."
+  ],
+  "a_voir": "Le chemin change de sens à chaque diagonale et chaque point reçoit un numéro et un seul."
+ },
+ {
+  "code": "43-119",
+  "a_dire": "Une diagonale rassemble les points où m + n vaut la même somme d ; on parcourt une diagonale entière avant la suivante.",
+  "legende_titre": "Les diagonales de somme d",
+  "lecture": [
+   "Chaque ligne bleue relie les points d'une même somme, écrite à gauche.",
+   "La somme 0 donne un point, la somme 1 deux points, la somme 2 trois points, la somme 3 quatre points.",
+   "Les petits points gris sont les diagonales suivantes."
+  ],
+  "a_voir": "À chaque somme m + n = d correspond une diagonale, que l'on parcourt avant de passer à la suivante."
+ },
+ {
+  "code": "43-120",
+  "a_dire": "Chaque diagonale m + n = d a d + 1 points : elle est finie, donc on la parcourt entièrement et aucun point n'est oublié.",
+  "legende_titre": "Chaque diagonale est finie",
+  "lecture": [
+   "La ligne bleue relie les 4 points de la diagonale d = 3, avec leurs coordonnées.",
+   "La ligne grise en pointillés relie les 5 points de la diagonale d = 4, qui vient après.",
+   "Les petits points gris sont les autres points de la grille."
+  ],
+  "a_voir": "Une diagonale a un nombre fini de points, d + 1, donc on arrive toujours à la suivante."
+ },
+ {
+  "code": "43-121",
+  "a_dire": "Le point (m, n) est atteint au plus tard après (m + n + 1)(m + n + 2)/2 numéros : c'est le total des points des diagonales jusqu'à la sienne.",
+  "legende_titre": "Compter les points des diagonales",
+  "lecture": [
+   "Chaque rond est un point d'une diagonale de somme 0, 1, 2 ou 3.",
+   "Le nombre à gauche est le nombre de points de la diagonale.",
+   "Le rond orange est le point (2, 1).",
+   "Les nombres verts donnent le total 10, et le calcul 4 × 5 / 2."
+  ],
+  "a_voir": "Le total des points des diagonales jusqu'à celle du point vaut le produit divisé par 2."
+ },
+ {
+  "code": "43-122",
+  "a_dire": "Il faut parcourir en diagonale, car une première ligne infinie empêche de passer à la suivante.",
+  "legende_titre": "Le parcours par lignes échoue",
+  "lecture": [
+   "La ligne bleue n = 0 reçoit les numéros 0, 1, 2, 3 et ne finit jamais.",
+   "Les ronds rouges de la ligne n = 1 n'ont aucun numéro, car on n'y arrive jamais."
+  ],
+  "a_voir": "Si on numérote ligne par ligne, la première ligne est infinie et la deuxième reste sans numéro."
+ },
+ {
+  "code": "43-123",
+  "a_dire": "Pour additionner deux classes, on additionne un nom de chacune, puis on prend la classe du résultat.",
+  "legende_titre": "Additionner deux positions",
+  "lecture": [
+   "L'horloge a 12 positions.",
+   "Le rond bleu est la position 9.",
+   "L'arc orange avance de 7 pas à partir de 9.",
+   "Le rond vert est la position où l'on arrive : 4. À droite, le calcul 9 + 7 = 16 donne le nom de cette position."
+  ],
+  "a_voir": "9 + 7 = 16, et 16 est sur la position 4 : la somme des classes 9 et 7 est la classe 4."
+ },
+ {
+  "code": "43-124",
+  "a_dire": "Changer les noms choisis dans les classes ne change pas la classe de la somme.",
+  "legende_titre": "Autres noms, même somme",
+  "lecture": [
+   "La colonne bleue donne deux noms de la classe 9 : 9 et 21.",
+   "La colonne violette donne deux noms de la classe 7 : 7 et −5.",
+   "Les cases vertes sont les sommes : 16 dans les deux lignes."
+  ],
+  "a_voir": "Avec 9 et 7 ou avec 21 et −5, la somme est 16 : le résultat ne dépend pas des noms."
+ },
+ {
+  "code": "43-125",
+  "a_dire": "On remplace 100 par 4, on additionne 9 et 4, puis on remplace 13 par 1.",
+  "legende_titre": "Le calcul du bateau en trois étapes",
+  "lecture": [
+   "La case grise est le calcul de départ.",
+   "La case bleue montre 100 remplacé par 4.",
+   "La case orange montre la somme 13. La case verte donne la position 1.",
+   "Chaque flèche porte le calcul fait à cette étape."
+  ],
+  "a_voir": "9 + 100 est dans la même position que 9 + 4, puis que 13, puis que 1."
+ },
+ {
+  "code": "43-126",
+  "a_dire": "On retire 12 autant de fois que possible : le reste, entre 0 et 11, remplace le grand nombre.",
+  "legende_titre": "100 devient 4",
+  "lecture": [
+   "La barre est faite de 8 cases bleues de 12, puis d'une case orange de 4.",
+   "L'accolade du haut montre le total 100.",
+   "L'accolade du bas montre les 8 retraits de 12.",
+   "La flèche orange désigne le reste 4."
+  ],
+  "a_voir": "Après 8 retraits de 12, il reste 4 : c'est le petit nombre de la même position que 100."
+ },
+ {
+  "code": "43-127",
+  "a_dire": "Les points à la même distance de O sont sur un même cercle de centre O, et chaque cercle est une classe.",
+  "legende_titre": "Des cercles emboîtés autour de O",
+  "lecture": [
+   "Les cercles gris ont pour rayons 1, 2, 3 et 4.",
+   "Le grand cercle bleu a pour rayon 5.",
+   "Les points P(3, 4) et Q(5, 0) sont sur ce cercle bleu.",
+   "Le point O est au centre."
+  ],
+  "a_voir": "Le plan est découpé en cercles de centre O ; P et Q sont sur le même."
+ },
+ {
+  "code": "43-128",
+  "a_dire": "À chaque cercle de centre O correspond un seul nombre, le x² + y² de ses points, et chaque nombre t ≥ 0 est atteint.",
+  "legende_titre": "Un cercle, un nombre",
+  "lecture": [
+   "Le cercle bleu de rayon 5 envoie un de ses points vers 25 sur la droite des nombres.",
+   "Le cercle violet de rayon 3 envoie un de ses points vers 9.",
+   "La droite à droite porte les nombres t."
+  ],
+  "a_voir": "Chaque cercle reçoit un seul nombre, et des cercles différents reçoivent des nombres différents."
+ }
+]

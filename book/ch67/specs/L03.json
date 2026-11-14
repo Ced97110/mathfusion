@@ -1,0 +1,352 @@
+[
+ {
+  "code": "67-061",
+  "a_dire": "φ(n) est une écriture courte pour la somme de n termes égaux à 1.",
+  "legende_titre": "Trois sommes de 1, une seule notation",
+  "lecture": [
+   "Chaque disque bleu vaut 1.",
+   "Chaque ligne aligne n disques : 3, 4, puis 5.",
+   "La flèche orange mène à la case verte, qui donne le nom court φ(n) et sa valeur dans le corps à 4 éléments."
+  ],
+  "a_voir": "Voir que φ(n) remplace la phrase longue « somme de n termes égaux à 1 »."
+ },
+ {
+  "code": "67-062",
+  "a_dire": "GF(2^4) et le symbole du chapitre sont deux noms du même corps à 16 éléments.",
+  "legende_titre": "Deux notations, un seul corps",
+  "lecture": [
+   "La case bleue en haut à gauche est la notation du logiciel.",
+   "La case violette en haut à droite est la notation de ce chapitre.",
+   "Les 16 disques bleus du milieu sont les 16 éléments : les deux flèches grises arrivent sur le même ensemble."
+  ],
+  "a_voir": "Voir que les deux flèches désignent le même ensemble de 16 éléments."
+ },
+ {
+  "code": "67-063",
+  "a_dire": "[E : F] est une dimension, donc on applique les bases ; F* est un groupe à q − 1 éléments, donc on applique les groupes.",
+  "legende_titre": "Deux signes qui ouvrent des théorèmes connus",
+  "lecture": [
+   "À gauche, la grande case bleue est E à 16 éléments ; la case violette dedans est F à 4 éléments.",
+   "Les deux disques orange sont la base de 2 éléments : la dimension vaut 2.",
+   "À droite, les trois disques bleus sont les éléments non nuls du corps à 4 éléments.",
+   "Ils forment un groupe pour la multiplication, à q − 1 = 3 éléments."
+  ],
+  "a_voir": "Voir un cas où chaque signe se lit comme un objet déjà connu : une dimension, un groupe."
+ },
+ {
+  "code": "67-064",
+  "a_dire": "La lettre N a deux sens : avec deux nombres entre parenthèses c'est un entier, avec les indices E et F et un élément u c'est un élément d'un corps.",
+  "legende_titre": "Une lettre, deux écritures, deux sens",
+  "lecture": [
+   "À gauche, la case bleue N(4, 2) porte deux nombres : elle donne l'entier 3.",
+   "À droite, la case violette porte les indices E et F et l'élément 1 + i : elle donne l'élément 2 du corps F.",
+   "Le trait en pointillés sépare les deux sens."
+  ],
+  "a_voir": "Voir que la forme de l'écriture, deux nombres ou des indices avec un élément, décide du sens."
+ },
+ {
+  "code": "67-065",
+  "a_dire": "Pour q = p^m, un corps à q éléments existe ; pour 6 = 2 × 3, aucun.",
+  "legende_titre": "Quels nombres d'éléments sont possibles",
+  "lecture": [
+   "Chaque ligne part d'un nombre d'éléments cherché, dans la case de gauche.",
+   "Le milieu écrit ce nombre : 3 au carré, 2 puissance 4, 2 fois 3.",
+   "Les cases vertes de 9 et 16 disent qu'un corps existe.",
+   "La case rouge de 6 dit qu'aucun corps n'existe."
+  ],
+  "a_voir": "Voir que 9 et 16 sont des puissances d'un premier et donnent un corps, pas 6."
+ },
+ {
+  "code": "67-066",
+  "a_dire": "Deux corps à 4 éléments se correspondent un à un ; seuls les noms des éléments changent.",
+  "legende_titre": "Même corps, noms différents",
+  "lecture": [
+   "La colonne bleue est un corps à 4 éléments : 0, 1, α, α + 1.",
+   "La colonne violette est un autre corps à 4 éléments : 0, 1, β, β + 1.",
+   "Chaque flèche orange associe un élément à son correspondant."
+  ],
+  "a_voir": "Voir que la correspondance envoie chaque élément sur un seul élément et que seuls α et β portent des noms différents."
+ },
+ {
+  "code": "67-067",
+  "a_dire": "Dans un corps à q éléments, élever u à la puissance q redonne u ; dans les entiers modulo 6 l'égalité est fausse.",
+  "legende_titre": "Quand u puissance q redonne u",
+  "lecture": [
+   "En haut, les cases bleues sont les 4 éléments du corps ; la flèche orange est l’élévation à la puissance 4.",
+   "Les cases vertes en dessous redonnent exactement les mêmes éléments : u⁴ = u.",
+   "En bas, dans les entiers modulo 6, la même opération sur 2 donne 2⁶ = 64, de reste 4.",
+   "La case rouge dit que ce reste 4 est différent de 2 : l’égalité est fausse."
+  ],
+  "a_voir": "Dans le corps, u puissance q redonne u ; dans les entiers modulo 6, 2 puissance 6 ne redonne pas 2."
+ },
+ {
+  "code": "67-068",
+  "a_dire": "Les 4 éléments du corps sont les 4 racines de x^4 − x, et ce polynôme n'a pas plus de 4 racines : les racines sont exactement les éléments.",
+  "legende_titre": "Autant de racines que d'éléments",
+  "lecture": [
+   "La case bleue du haut est le polynôme x^4 − x, de degré 4.",
+   "Les quatre flèches orange partent vers ses racines.",
+   "Les quatre cases vertes sont les éléments 0, 1, α et α + 1, chacun dans une des 4 places en pointillés.",
+   "Il y a au plus 4 places, et les 4 sont remplies."
+  ],
+  "a_voir": "Voir que les 4 places sont toutes occupées par les éléments du corps."
+ },
+ {
+  "code": "67-069",
+  "a_dire": "La preuve part d'un corps où x^4 − x a ses racines, fait deux vérifications, et arrive à un corps de 4 éléments ; la seconde vérification porte le poids.",
+  "legende_titre": "Existence : départ, deux vérifications, arrivée",
+  "lecture": [
+   "La case grise du haut est le départ : un corps E où le polynôme a toutes ses racines.",
+   "La case bleue est la première vérification : il y a 4 racines distinctes.",
+   "La case orange, au bord épais, est la seconde vérification : l’ensemble R des racines est un corps. Sans elle, R serait une simple liste.",
+   "La case verte du bas est l’arrivée : un corps à 4 éléments."
+  ],
+  "a_voir": "Deux vérifications côte à côte mènent à l’arrivée ; la seconde, au bord épais, est l’étape décisive."
+ },
+ {
+  "code": "67-070",
+  "a_dire": "La dérivée de x^4 − x vaut −1 parce que 4 vaut 0 dans ce corps ; elle ne s'annule jamais, donc pas de racine double.",
+  "legende_titre": "La dérivée qui ne s'annule jamais",
+  "lecture": [
+   "La case bleue du haut est le polynôme x^4 − x.",
+   "La flèche orange « dérivée » mène à 4x^3 − 1.",
+   "Le texte orange « 4 = 0 » est l'étape qui compte : le terme avec 4 disparaît.",
+   "La case verte du bas donne −1, qui n'est jamais nul."
+  ],
+  "a_voir": "Voir que 4 = 0 supprime le premier terme et laisse seulement −1."
+ },
+ {
+  "code": "67-071",
+  "a_dire": "Si u et v sont des racines de x^4 − x, leur somme et leur produit en sont aussi ; la somme est l'étape décisive.",
+  "legende_titre": "Somme et produit de deux racines",
+  "lecture": [
+   "Les deux cases bleues du haut sont deux racines : α et α + 1.",
+   "La case orange, au bord épais, est leur somme, qui vaut 1.",
+   "La case violette est leur produit, qui vaut 1.",
+   "Les cases vertes montrent que 1 puissance 4 redonne 1 : la somme et le produit sont des racines."
+  ],
+  "a_voir": "Voir que la somme et le produit de deux racines retombent sur une racine."
+ },
+ {
+  "code": "67-072",
+  "a_dire": "En caractéristique p, les termes du milieu de (a + b)^p ont un coefficient multiple de p, donc nul : il reste a^p + b^p.",
+  "legende_titre": "Les termes du milieu disparaissent",
+  "lecture": [
+   "Les quatre cases sont les quatre termes de (a + b) au cube, en caractéristique 3.",
+   "Les deux cases orange, en pointillés, sont les termes du milieu : leur coefficient est 3.",
+   "L'accolade orange dit que 3 = 0 : ils disparaissent.",
+   "La case verte du bas est ce qui reste : a au cube plus b au cube."
+  ],
+  "a_voir": "Voir que seuls les deux termes des bords survivent."
+ },
+ {
+  "code": "67-073",
+  "a_dire": "Dans les réels (a + b)^2 = a^2 + b^2 est faux ; en caractéristique p, c'est avec l'exposant p que l'égalité est vraie.",
+  "legende_titre": "Où l'égalité du débutant est fausse, où elle est vraie",
+  "lecture": [
+   "À gauche, en rouge, les réels : (1 + 1)^2 vaut 4 et 1^2 + 1^2 vaut 2, donc ils sont différents.",
+   "Le texte orange rappelle le terme croisé 2ab, que l'égalité oublie.",
+   "À droite, en vert, en caractéristique p : (a + b)^p est égal à a^p + b^p."
+  ],
+  "a_voir": "Voir que l'égalité est fausse pour l'exposant 2 dans les réels et vraie pour l'exposant p en caractéristique p."
+ },
+ {
+  "code": "67-074",
+  "a_dire": "On passe de l'exposant p à p^m en appliquant la règle une fois de plus à chaque pas, de m à m + 1.",
+  "legende_titre": "De p à p^m, pas après pas",
+  "lecture": [
+   "La case verte est le cas m = 1, déjà connu.",
+   "Les cases bleues sont m = 2 et m = 3 ; les points de suspension continuent la suite.",
+   "Chaque flèche orange est un pas : on élève à la puissance p."
+  ],
+  "a_voir": "Voir que chaque case se déduit de la précédente par le même pas."
+ },
+ {
+  "code": "67-075",
+  "a_dire": "En caractéristique 2, deux applications de la règle du carré donnent (a + b)^4 = a^4 + b^4 ; cela ne prouve pas que l'exposant 3 convient.",
+  "legende_titre": "La puissance 4 en deux carrés, et ce qui reste faux",
+  "lecture": [
+   "À gauche, quatre cases : (a + b)^4, puis le carré du carré, puis (a² + b²)², puis a^4 + b^4 en vert.",
+   "Chaque flèche orange applique une fois la règle du carré.",
+   "À droite, dans le corps à 4 éléments, (1 + α)^3 vaut 1 mais 1^3 + α^3 vaut 0.",
+   "Le signe rouge ≠ dit que l'exposant 3 ne convient pas, car 3 n'est pas une puissance de 2."
+  ],
+  "a_voir": "Voir que la chaîne de gauche marche pour l'exposant 4 et que l'exemple de droite échoue pour l'exposant 3."
+ },
+ {
+  "code": "67-076",
+  "a_dire": "L'opposé et l'inverse d'une racine sont encore des racines : sur le corps à 3 éléments, 2 est racine et vérifie 2^3 = 2.",
+  "legende_titre": "Opposé et inverse d'une racine",
+  "lecture": [
+   "En haut, on rappelle que u est une racine de x³ − x, c’est-à-dire u³ = u, dans le corps à 3 éléments.",
+   "Ligne du haut : u = 1, son opposé vaut 2 (case violette), et 2³ = 8 = 2 : c’est encore une racine.",
+   "Ligne du bas : u = 2, son inverse vaut 2 (case violette), et 2³ = 2 : c’est encore une racine."
+  ],
+  "a_voir": "L’opposé et l’inverse d’une racine de x³ − x sont encore des racines."
+ },
+ {
+  "code": "67-077",
+  "a_dire": "Le corps à q éléments est l'ensemble des u tels que u^q = u : on teste, on garde ou on rejette.",
+  "legende_titre": "Tester chaque élément, garder les égaux",
+  "lecture": [
+   "Les cases bleues du haut sont les éléments testés : 0, 1, 2 et i.",
+   "Les cases du milieu sont leurs cubes : 0, 1, 2 en vert, et 2i en rouge, qui n'est pas i.",
+   "Les flèches vertes rassemblent les éléments gardés dans la case du bas.",
+   "En bas : l'ensemble gardé est {0, 1, 2}, avec 3 éléments."
+  ],
+  "a_voir": "Voir que i est rejeté parce que son cube ne redonne pas i."
+ },
+ {
+  "code": "67-078",
+  "a_dire": "Dans un corps, x^d = 1 a au plus d solutions : les 4 éléments non nuls du corps à 5 éléments sont donc les puissances d'un seul élément.",
+  "legende_titre": "Un groupe d'éléments non nuls qui tourne en rond",
+  "lecture": [
+   "Les quatre disques sont les éléments non nuls du corps à 5 éléments : 2, 4, 3, 1.",
+   "Les flèches grises suivent les puissances de 2 : 2, 4, 3, 1, puis retour à 2.",
+   "Les deux disques orange, 1 et 4, sont les seules solutions de x^2 = 1."
+  ],
+  "a_voir": "Voir que x au carré égale 1 n'a que 2 solutions et que les puissances de 2 parcourent les 4 éléments."
+ },
+ {
+  "code": "67-079",
+  "a_dire": "Dans le corps à 5 éléments, z = 2 a pour puissances z, z^2, z^3, z^4 les 4 éléments non nuls, chacun une fois.",
+  "legende_titre": "Les puissances de z remplissent les éléments non nuls",
+  "lecture": [
+   "Les quatre cases bleues du haut sont les puissances de z : z, z^2, z^3, z^4.",
+   "Chaque flèche orange donne la valeur de la puissance, avec z = 2.",
+   "Les cases vertes sont 2, 4, 3, 1 : les quatre éléments non nuls, q − 1 = 4."
+  ],
+  "a_voir": "Voir que les quatre valeurs sont différentes et épuisent tous les éléments non nuls."
+ },
+ {
+  "code": "67-080",
+  "a_dire": "Dans le corps à 4 éléments, α, α + 1 et 1 sont les puissances successives de α : α engendre les 3 éléments non nuls.",
+  "legende_titre": "Multiplier par α jusqu'à retrouver 1",
+  "lecture": [
+   "Les cases bleues du haut sont les puissances 1, 2 et 3 de α.",
+   "Les cases vertes du bas sont leurs valeurs : α, α + 1, puis 1.",
+   "Chaque flèche orange « fois α » passe à la puissance suivante.",
+   "L'accolade verte compte q − 1 = 3 éléments non nuls."
+  ],
+  "a_voir": "Voir qu'en multipliant par α à chaque pas, on parcourt les 3 éléments non nuls puis on retombe sur 1."
+ },
+ {
+  "code": "67-081",
+  "a_dire": "Le groupe G est commutatif parce que la multiplication d'un corps l'est ; on peut donc le décrire comme produit de groupes cycliques.",
+  "legende_titre": "Pas 1 : la commutativité ouvre la structure",
+  "lecture": [
+   "La case bleue du haut est G, ici les éléments non nuls 1, 2, 3, 4 du corps à 5 éléments.",
+   "La case orange, au bord épais, est l'étape décisive : 2 fois 3 égale 3 fois 2.",
+   "La case violette est la conséquence : un produit de groupes cycliques.",
+   "La case verte écrit le nombre d'éléments n comme produit de puissances de premiers."
+  ],
+  "a_voir": "Voir que la commutativité est ce qui permet la structure en groupes cycliques."
+ },
+ {
+  "code": "67-082",
+  "a_dire": "Si m est le PPCM des ordres, tous les éléments du groupe vérifient x^m = 1.",
+  "legende_titre": "Pas 2 : le PPCM fait de tout élément une racine",
+  "lecture": [
+   "Les deux lignes viennent du groupe d'ordre 2 ; les quatre colonnes, du groupe d'ordre 4.",
+   "Les 8 disques verts sont les 8 éléments du produit.",
+   "Le PPCM de 2 et 4 vaut 4 : l'accolade dit que les 8 éléments vérifient x^4 = 1."
+  ],
+  "a_voir": "Voir que les 8 éléments, venus d'ordres 2 et 4, vérifient tous la même égalité avec l'exposant 4."
+ },
+ {
+  "code": "67-083",
+  "a_dire": "Un polynôme de degré m a au plus m racines dans un corps, donc un groupe dont tous les éléments sont racines a au plus m éléments : n ≤ m.",
+  "legende_titre": "Pas 3 : au plus m éléments",
+  "lecture": [
+   "La case bleue du haut rappelle que x^4 − 1 a au plus 4 racines.",
+   "La droite graduée porte les valeurs possibles de n ; la flèche orange marque m = 4.",
+   "Le trait vert, de 0 à 4, montre les valeurs possibles de n.",
+   "Le trait rouge, au-delà de 4, montre les valeurs impossibles."
+  ],
+  "a_voir": "Voir que n ne peut pas dépasser m = 4."
+ },
+ {
+  "code": "67-084",
+  "a_dire": "Un élément d'ordre m existe, son ordre divise n donc m ≤ n ; avec n ≤ m on obtient m = n, et le groupe est cyclique.",
+  "legende_titre": "Pas 4 : deux inégalités qui donnent l'égalité",
+  "lecture": [
+   "La case grise de gauche est le résultat du pas 3 : n ≤ m.",
+   "La case orange, au bord épais, est l’étape décisive : un élément d’ordre m existe. Par Lagrange, m divise n.",
+   "La case bleue en dessous en déduit m ≤ n.",
+   "La case verte réunit les deux inégalités : m = n.",
+   "Les quatre disques verts sont les 4 puissances d’un élément d’ordre 4."
+  ],
+  "a_voir": "Les deux inégalités n ≤ m et m ≤ n donnent m = n ; l’élément d’ordre m remplit le groupe."
+ },
+ {
+  "code": "67-085",
+  "a_dire": "Le groupe de Klein a 4 éléments qui vérifient tous x^2 = 1 ; un corps n'en admet que 2, donc ce groupe n'est pas dans un corps.",
+  "legende_titre": "Quatre solutions là où deux seulement sont permises",
+  "lecture": [
+   "Les quatre disques sont les 4 éléments du groupe de Klein, qui vérifient tous x au carré égale 1.",
+   "Les deux cases en pointillés sont les seules places permises : au plus 2 solutions.",
+   "Les deux cases rouges sont les éléments en trop.",
+   "L'accolade rouge conclut : 4 solutions, c'est plus que 2."
+  ],
+  "a_voir": "Voir que deux éléments ne trouvent pas de place."
+ },
+ {
+  "code": "67-086",
+  "a_dire": "Modulo 8, qui n'est pas un corps, les quatre nombres 1, 3, 5, 7 vérifient tous x^2 = 1.",
+  "legende_titre": "Quatre solutions modulo 8",
+  "lecture": [
+   "Les cases bleues du haut sont les nombres 1, 3, 5 et 7.",
+   "Les cases grises du milieu sont leurs carrés : 1, 9, 25, 49.",
+   "Les cases vertes du bas sont leurs restes modulo 8 : 1 à chaque fois.",
+   "Le texte orange montre un produit de deux nombres non nuls égal à 0 modulo 8."
+  ],
+  "a_voir": "Voir que les quatre nombres donnent le même reste 1, alors que l'équation est de degré 2."
+ },
+ {
+  "code": "67-087",
+  "a_dire": "Si z engendre les éléments non nuls de E, le plus petit corps qui contient F et z est E tout entier.",
+  "legende_titre": "Ajouter z au petit corps donne le grand",
+  "lecture": [
+   "La case violette est F, avec ses deux éléments 0 et 1.",
+   "La case orange est l’ajout de z = α.",
+   "La grande case bleue est F(z), qui est E : elle contient 0 et les puissances de α en orange.",
+   "Les trois puissances orange sont les trois éléments non nuls : plus aucun élément de E ne manque."
+  ],
+  "a_voir": "Les puissances de z remplissent tous les éléments non nuls ; avec 0, F(z) est E tout entier."
+ },
+ {
+  "code": "67-088",
+  "a_dire": "Un élément primitif engendre le corps, mais pas forcément le groupe des non nuls : α^3 a 5 puissances et engendre quand même les 16 éléments.",
+  "legende_titre": "Engendrer le corps, sans engendrer le groupe",
+  "lecture": [
+   "Les 15 disques du cercle sont les éléments non nuls du corps à 16 éléments, rangés par les puissances de α.",
+   "La case bleue : α atteint les 15.",
+   "Les 5 disques orange et la case orange : α^3 en atteint seulement 5.",
+   "La case verte : avec α^3 on engendre pourtant le corps à 16 éléments."
+  ],
+  "a_voir": "Voir que 5 disques orange sur 15 suffisent à engendrer le corps, mais pas le groupe."
+ },
+ {
+  "code": "67-089",
+  "a_dire": "Sur un ensemble fini, une application injective atteint tous les éléments ; sur les entiers naturels, doubler n'atteint pas 1.",
+  "legende_titre": "Injective et surjective : ce que le fini apporte",
+  "lecture": [
+   "En haut, 4 disques bleus partent vers 4 disques verts : deux à deux différents, ils remplissent toutes les places.",
+   "En bas, les entiers naturels : 0, 1, 2 sont doublés en 0, 2, 4.",
+   "Les cases rouges 1 et 3 ne reçoivent rien."
+  ],
+  "a_voir": "Voir que dans le fini toutes les places sont atteintes, et qu'une place reste vide dans les entiers naturels."
+ },
+ {
+  "code": "67-090",
+  "a_dire": "Le Frobenius est l'élévation au carré sur le corps à 4 éléments : il laisse 0 et 1 en place et échange α et α + 1.",
+  "legende_titre": "Un nom pour l'élévation au carré",
+  "lecture": [
+   "La colonne bleue est le départ : 0, 1, α, α + 1.",
+   "La colonne verte est l'arrivée, après élévation au carré.",
+   "Les deux flèches grises laissent 0 et 1 en place.",
+   "Les deux flèches orange croisées échangent α et α + 1."
+  ],
+  "a_voir": "Voir que l'application est une bijection qui échange α et α + 1."
+ }
+]

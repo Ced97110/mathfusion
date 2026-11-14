@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+cy, r = 33, 19
+ax.add_patch(Circle((31, cy), r, ec='none', fc=FILL['sujet'], zorder=1))
+ax.add_patch(Circle((57, cy), r, ec='none', fc=FILL['fixe'], zorder=1.5))
+ax.add_patch(Circle((31, cy), r, ec=COL['sujet'], fc='none', lw=1.0, zorder=3))
+ax.add_patch(Circle((57, cy), r, ec=COL['autre'], fc='none', lw=1.0, zorder=3))
+text(ax, 31, 57, r'$A$ : judo', 'sujet', 'm')
+text(ax, 57, 57, r'$B$ : guitare', 'autre', 'm')
+text(ax, 21, cy, 'Sara', 'sujet', 'm', weight='bold')
+text(ax, 44, cy + 5, 'Lina', 'fixe', 's')
+text(ax, 44, cy - 5, 'Tom', 'fixe', 's')
+text(ax, 67, cy, 'Max', 'fixe', 'm')
+text(ax, 44, 8, r'$A \setminus B$ = Sara', 'sujet', 'l')
+save(fig, '42-132')

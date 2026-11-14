@@ -1,0 +1,186 @@
+[
+ {
+  "code": "73-209",
+  "a_dire": "Chaque étage de la tour est normal dans le précédent ; un seul quotient est non commutatif et il est simple.",
+  "legende_titre": "Une tour de groupes et ses quotients",
+  "lecture": [
+   "Les cases bleues, de bas en haut, sont les étages, de {1} jusqu'à G.",
+   "Chaque flèche grise va d'un étage au suivant : le quotient correspondant est commutatif.",
+   "La flèche orange marque l'unique quotient non commutatif, qui est simple."
+  ],
+  "a_voir": "Il y a une seule flèche orange dans toute la tour."
+ },
+ {
+  "code": "73-210",
+  "a_dire": "Dans l'exemple, les quotients ont 4, 60 et 2 éléments : seul celui de 60 est non commutatif et simple.",
+  "legende_titre": "Les trois quotients du cas",
+  "lecture": [
+   "Sur la ligne du haut, les cases grises de 4 et de 2 éléments sont commutatives.",
+   "La case bleue de 60 éléments est simple et non commutative.",
+   "La case rouge du bas montre le corps à trois éléments : le quotient a 12 éléments et n'est pas simple."
+  ],
+  "a_voir": "Un seul quotient sur trois est non commutatif."
+ },
+ {
+  "code": "73-211",
+  "a_dire": "Deux écritures de la même rotation donnent −1 et −4 ; ils diffèrent par 2², donc même classe à un carré près.",
+  "legende_titre": "Deux valeurs pour une même rotation",
+  "lecture": [
+   "Chaque ligne bleue donne le produit des deux valeurs pour une écriture de la rotation.",
+   "Les cases vertes donnent les résultats : −1 et −4.",
+   "La flèche orange relie les deux résultats : on passe de −1 à −4 en multipliant par 2²."
+  ],
+  "a_voir": "Les deux résultats diffèrent d'un carré."
+ },
+ {
+  "code": "73-212",
+  "a_dire": "Le vecteur (1, 0, 0, 1) donne 0, il est isotrope ; sur les réels, à un carré près, il reste deux classes.",
+  "legende_titre": "L'espace-temps et ses deux classes",
+  "lecture": [
+   "La ligne du haut calcule la forme sur (1, 0, 0, 1) : le résultat vert est 0, le vecteur est isotrope.",
+   "Sur la droite graduée, la partie verte est celle des nombres positifs, qui sont des carrés (4 = 2²).",
+   "La partie violette est celle des nombres négatifs, qui ne sont pas des carrés.",
+   "Chaque partie est une classe : sur les réels, à un carré près, il reste deux classes."
+  ],
+  "a_voir": "La droite se coupe en deux classes : les carrés et les nombres qui n'en sont pas."
+ },
+ {
+  "code": "73-213",
+  "a_dire": "La rotation envoie (1, 2, 3, 4) sur (−1, 2, 3, −4) : elle change le signe du temps, donc n'est pas dans Ω.",
+  "legende_titre": "Une rotation qui inverse le temps",
+  "lecture": [
+   "La ligne du haut est le point de départ ; la ligne du bas est son image.",
+   "Les cases oranges sont les coordonnées x et t : elles changent de signe.",
+   "Les cases grises, y et z, ne changent pas.",
+   "La case rouge dit le résultat : le temps est inversé."
+  ],
+  "a_voir": "Seuls x et t changent de signe."
+ },
+ {
+  "code": "73-214",
+  "a_dire": "Ω garde le sens du temps ; la rotation du cas envoie t = 4 sur t = −4, donc elle n'en fait pas partie.",
+  "legende_titre": "Garder ou inverser le sens du temps",
+  "lecture": [
+   "L'axe vertical est le temps t ; le point bleu est à t = 4.",
+   "Le point rouge est à t = −4 : la flèche orange y mène depuis le point bleu en passant sous zéro.",
+   "La case verte dit ce que fait Ω ; la case rouge dit ce que fait cette rotation."
+  ],
+  "a_voir": "La flèche orange traverse le zéro."
+ },
+ {
+  "code": "73-215",
+  "a_dire": "Pour x² + y² + z², toutes les valeurs sont positives, donc le produit est toujours un carré et la norme ne distingue rien.",
+  "legende_titre": "Quand tout est positif",
+  "lecture": [
+   "Chaque case bleue est un vecteur ; la case verte à sa droite est la valeur de la forme.",
+   "Les trois valeurs, 1, 2 et 9, sont positives.",
+   "La grande case verte dit le résultat : des valeurs positives sont des carrés dans les réels.",
+   "Le calcul du bas montre 2 × 1 = 2, qui est le carré de la racine de 2."
+  ],
+  "a_voir": "Toutes les valeurs sont positives, donc ce sont des carrés réels et la norme ne distingue rien."
+ },
+ {
+  "code": "73-216",
+  "a_dire": "Multiplier M à gauche par P et à droite par R⁻¹ garde le déterminant : −2 avant et après.",
+  "legende_titre": "Un déplacement qui garde le déterminant",
+  "lecture": [
+   "La matrice bleue est M, de déterminant −2.",
+   "Les matrices oranges sont P, à gauche, et R⁻¹, à droite.",
+   "La matrice verte est le résultat P M R⁻¹ : son déterminant est encore −2."
+  ],
+  "a_voir": "Le déterminant est le même des deux côtés."
+ },
+ {
+  "code": "73-217",
+  "a_dire": "Ω est, au signe près, deux copies de SL₂ ; la copie de gauche est normale et non triviale, donc Ω n'est pas simple.",
+  "legende_titre": "Deux copies dans Ω",
+  "lecture": [
+   "Le cadre en pointillés est Ω.",
+   "La case bleue est la copie de gauche : elle agit par M ↦ PM.",
+   "La case violette est la copie de droite : elle agit par M ↦ M R⁻¹.",
+   "La case rouge dit la conséquence pour la copie de gauche."
+  ],
+  "a_voir": "La copie de gauche est un morceau de Ω qui n'est pas Ω entier."
+ },
+ {
+  "code": "73-218",
+  "a_dire": "Pour 3 éléments, le groupe a 12 éléments (A₄) et n'est pas simple ; pour 5 éléments, il a 60 éléments (A₅) et est simple.",
+  "legende_titre": "Deux corps, deux groupes",
+  "lecture": [
+   "Chaque point est un élément du groupe : 12 points rouges à gauche, 60 points verts à droite.",
+   "Le groupe de gauche, A₄, n'est pas simple.",
+   "Le groupe de droite, A₅, est simple."
+  ],
+  "a_voir": "Il y a beaucoup plus de points à droite qu'à gauche."
+ },
+ {
+  "code": "73-219",
+  "a_dire": "La matrice A est la rotation d'angle θ avec cos θ = 3/5 et sin θ = 4/5, soit environ 53,13°.",
+  "legende_titre": "Un point du cercle de rayon 1",
+  "lecture": [
+   "Le cercle gris est le cercle de rayon 1.",
+   "Le triangle bleu a pour côtés 3/5 en bas et 4/5 à la verticale ; son côté oblique vaut 1.",
+   "L'arc orange est l'angle θ, environ 53,13 degrés."
+  ],
+  "a_voir": "Le sommet du triangle est sur le cercle."
+ },
+ {
+  "code": "73-220",
+  "a_dire": "Les deux colonnes ont une longueur 1 et leur produit scalaire est nul.",
+  "legende_titre": "Deux colonnes de longueur 1",
+  "lecture": [
+   "La flèche bleue est la colonne 1 ; la somme de ses carrés vaut 1.",
+   "La flèche violette est la colonne 2 ; la somme de ses carrés vaut aussi 1.",
+   "Le petit carré gris marque l'angle droit entre elles.",
+   "La formule verte donne leur produit scalaire : 0."
+  ],
+  "a_voir": "Les deux flèches vont jusqu'au cercle et forment un angle droit."
+ },
+ {
+  "code": "73-221",
+  "a_dire": "Le vecteur (3, 4) et son image (−7/5, 24/5) ont la même longueur, 5.",
+  "legende_titre": "Même longueur avant et après",
+  "lecture": [
+   "La flèche bleue est x = (3, 4).",
+   "La flèche verte est son image Ax.",
+   "Le demi-cercle en pointillés a pour rayon 5 : les deux flèches y arrivent.",
+   "La flèche orange va de x vers Ax."
+  ],
+  "a_voir": "Les deux pointes sont sur le même cercle."
+ },
+ {
+  "code": "73-222",
+  "a_dire": "Le produit scalaire de x et y vaut 15, et celui de leurs images aussi.",
+  "legende_titre": "Le produit scalaire garde sa valeur",
+  "lecture": [
+   "À gauche, la flèche bleue est x et la violette est y : leur produit scalaire vaut 15.",
+   "À droite, les flèches Ax et Ay sont leurs images après A.",
+   "Le résultat vert vaut 15 des deux côtés."
+  ],
+  "a_voir": "Les deux résultats verts sont égaux."
+ },
+ {
+  "code": "73-223",
+  "a_dire": "La distance au carré entre x et y vaut 20, et entre leurs images aussi.",
+  "legende_titre": "La distance garde sa valeur",
+  "lecture": [
+   "À gauche, le trait bleu relie les points x et y.",
+   "À droite, le trait vert relie leurs images Ax et Ay.",
+   "Les pointillés montrent les écarts horizontal et vertical de chaque trait.",
+   "Les deux distances au carré valent 20."
+  ],
+  "a_voir": "Les deux traits ont le même résultat, 20."
+ },
+ {
+  "code": "73-224",
+  "a_dire": "Avec trois longueurs au carré, 80, 25 et 25, la moitié de 80 − 25 − 25 redonne le produit scalaire 15.",
+  "legende_titre": "Le produit scalaire par trois longueurs",
+  "lecture": [
+   "La flèche bleue est x et la violette est y ; chacune a pour longueur au carré 25.",
+   "La flèche orange est la somme x + y ; sa longueur au carré est 80.",
+   "Les pointillés complètent le parallélogramme.",
+   "La formule verte donne ½ (80 − 25 − 25) = 15."
+  ],
+  "a_voir": "Seules trois longueurs servent au calcul."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 32, 66, 'U', 'sujet', 'xl', weight='bold')
+text(ax, 52, 66, r'$(n)$', 'varie', 'xl', weight='bold')
+box(ax, 4, 34, 38, 16, 'sujet', label='unités : classes\nde PGCD 1 avec n', size='s')
+box(ax, 46, 34, 38, 16, 'varie', label='module gardé\ndans l’écriture', size='s')
+arrow(ax, (32, 61), (24, 50), 'sujet')
+arrow(ax, (52, 61), (65, 50), 'varie')
+arrow(ax, (44, 34), (44, 22), 'resultat')
+box(ax, 14, 8, 60, 14, 'resultat', label=r'$U(8)=\{1,3,5,7\}$', weight='bold')
+save(fig, '44-172')

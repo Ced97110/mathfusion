@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+# gauche : horloge, tout commute, Z(G) = G
+text(ax, 22, 66, 'Horloge à 12 heures', 'encre', 's')
+box(ax, 3, 22, 38, 36, 'fixe', fill=False, lw=1.0)
+box(ax, 5, 24, 34, 32, 'sujet', label=r'$Z(G) = G$', size='m')
+text(ax, 22, 15, '$3 + 5 = 5 + 3$', 'resultat', 's')
+text(ax, 22, 8, 'tous commutent', 'resultat', 's')
+# droite : triangle, rotation et réflexion hors de Z(G)
+text(ax, 66, 66, 'Symétries du triangle', 'encre', 's')
+box(ax, 47, 22, 38, 36, 'fixe', fill=False, lw=1.0)
+box(ax, 50, 44, 32, 11, 'sujet', fill=False, dash=True, label=r'$Z(G)$', size='s')
+box(ax, 50, 33, 32, 8, 'varie', label='rotation', size='s')
+box(ax, 50, 24, 32, 7, 'autre', label='réflexion', size='s')
+text(ax, 66, 15, "l'ordre change le résultat", 'limite', 's')
+line(ax, [(44, 8), (44, 62)], 'fixe', lw=0.6, dash=True)
+save(fig, '50-061')

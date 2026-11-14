@@ -1,0 +1,186 @@
+[
+ {
+  "code": "61-079",
+  "a_dire": "Les puissances 1, u, ..., u^(n-1) forment une base de F(u) sur F : pour la racine de 2, les deux briques 1 et racine de 2.",
+  "legende_titre": "Les briques de la racine de 2",
+  "lecture": [
+   "Les deux cases bleues sont les briques : 1 et la racine de 2.",
+   "La case grise en tirets est le carré de la racine de 2 : il vaut 2 fois 1, il n'ajoute rien.",
+   "La case verte montre que chaque élément s'écrit avec ces deux briques et deux coefficients a et b."
+  ],
+  "a_voir": "Deux briques suffisent, et le carré de la racine de 2 se ramène à elles."
+ },
+ {
+  "code": "61-080",
+  "a_dire": "Le degré de F(u) sur F est le nombre de briques n, et c'est aussi le degré du polynôme minimal m.",
+  "legende_titre": "Le degré se lit sur le polynôme",
+  "lecture": [
+   "La case violette est le polynôme minimal x au carré moins 2, de degré 2.",
+   "Les deux cases bleues sont les briques 1 et la racine de 2 : il y en a 2.",
+   "Le signe égal vert relie le degré du polynôme au nombre de briques.",
+   "La case verte du bas écrit la formule générale."
+  ],
+  "a_voir": "Le nombre de briques est égal au degré du polynôme minimal."
+ },
+ {
+  "code": "61-081",
+  "a_dire": "On part de g(u), on divise g par m, et le reste r ne demande que n briques.",
+  "legende_titre": "Pourquoi les briques suffisent",
+  "lecture": [
+   "La case bleue du haut est le point de départ : l’élément u au cube.",
+   "La case orange est l’étape qui porte le poids : la division par m, qui laisse un reste.",
+   "La case verte est l’arrivée : le reste r est plus court que m.",
+   "Les deux petites cases vertes, 1 et u, sont les 2 briques qui suffisent à écrire le reste."
+  ],
+  "a_voir": "La division laisse un reste plus court que m, écrit avec seulement 2 briques."
+ },
+ {
+  "code": "61-082",
+  "a_dire": "Une somme nulle de briques avec des coefficients non tous nuls contredirait la minimalité de m, donc les briques sont indépendantes.",
+  "legende_titre": "Pourquoi les briques sont indépendantes",
+  "lecture": [
+   "La case bleue est le départ : une somme de briques égale à 0.",
+   "La case orange est l'étape clé : si b n'est pas nul, la racine de 2 serait une fraction.",
+   "La case rouge est la contradiction : c'est faux.",
+   "La case verte est l'arrivée : a et b sont nuls."
+  ],
+  "a_voir": "Le départ mène à une contradiction, donc la seule somme nulle est celle de coefficients nuls."
+ },
+ {
+  "code": "61-083",
+  "a_dire": "Les restes de la division par m calculent comme les valeurs en u, et comme m est irréductible, ce quotient est un corps.",
+  "legende_titre": "Restes et valeurs : même ensemble",
+  "lecture": [
+   "La case bleue montre les restes de la division par m, de forme a plus b x.",
+   "La case violette montre les valeurs en u, de forme a plus b racine de 2.",
+   "Le signe orange dit que les deux ensembles sont identiques.",
+   "Les trois cases du bas enchaînent : m irréductible, idéal maximal, un corps."
+  ],
+  "a_voir": "L'irréductibilité de m est l'étape qui donne un corps."
+ },
+ {
+  "code": "61-084",
+  "a_dire": "Inverser un élément ne demande aucune nouvelle brique : il reste écrit avec 1 et la racine de 2.",
+  "legende_titre": "Diviser sans brique de plus",
+  "lecture": [
+   "La case bleue est 1 plus la racine de 2, la case verte son inverse.",
+   "La flèche orange est l'inversion.",
+   "Sous chaque case, les deux briques grises sont les mêmes : 1 et la racine de 2."
+  ],
+  "a_voir": "Avant et après l'inversion, il y a les mêmes deux briques."
+ },
+ {
+  "code": "61-085",
+  "a_dire": "Le produit de 1 plus racine de 2 par racine de 2 moins 1 vaut 1 : ce sont deux inverses.",
+  "legende_titre": "Un produit qui vaut 1",
+  "lecture": [
+   "La case bleue et la case violette sont les deux facteurs.",
+   "La case grise est le produit développé : 2 moins 1.",
+   "La case verte est le résultat : 1."
+  ],
+  "a_voir": "Le produit vaut 1, donc chaque facteur est l'inverse de l'autre."
+ },
+ {
+  "code": "61-086",
+  "a_dire": "On multiplie en haut et en bas par racine de 2 moins 1 : le bas devient 1 et le résultat s'écrit avec les briques, sans racine en bas.",
+  "legende_titre": "Enlever la racine du dénominateur",
+  "lecture": [
+   "La case bleue est la fraction de départ, avec une racine en bas (texte rouge).",
+   "Le texte orange est la multiplication en haut et en bas.",
+   "La case grise montre le bas devenu 2 moins 1.",
+   "La case verte est le résultat : racine de 2 moins 1."
+  ],
+  "a_voir": "Le bas devient 1, donc il n'y a plus de racine au dénominateur."
+ },
+ {
+  "code": "61-087",
+  "a_dire": "Pour pi, les puissances 1, pi, pi au carré, ... sont toutes indépendantes : il faut une infinité de briques, et 1 divisé par pi n'est pas une valeur de polynôme.",
+  "legende_titre": "Le cas de pi",
+  "lecture": [
+   "Les cases violettes sont les puissances de pi ; les points de suspension montrent qu'elles continuent.",
+   "L'accolade dit que ces briques sont sans fin et indépendantes.",
+   "La case rouge en tirets est 1 divisé par pi : elle n'est pas une valeur de polynôme en pi."
+  ],
+  "a_voir": "Aucune liste finie de briques ne suffit pour pi."
+ },
+ {
+  "code": "61-088",
+  "a_dire": "Algébrique : degré fini et division sans brique nouvelle. Transcendant : degré infini et division qui demande des briques sans fin.",
+  "legende_titre": "La frontière entre deux types de nombres",
+  "lecture": [
+   "La colonne bleue est la racine de 2 : 2 briques.",
+   "La colonne violette est pi : des briques sans fin.",
+   "Sous chaque colonne, la case dit ce que devient la division : aucune brique en plus pour la racine de 2, des briques sans fin pour pi."
+  ],
+  "a_voir": "Les deux propriétés vont ensemble : fini sans division, infini avec division."
+ },
+ {
+  "code": "61-089",
+  "a_dire": "u est algébrique sur F si et seulement si le degré de F(u) sur F est fini.",
+  "legende_titre": "L'énoncé de Jacobson",
+  "lecture": [
+   "En haut, les deux cases bleues sont reliées par la flèche orange : l'énoncé dit que l'une est vraie exactement quand l'autre l'est.",
+   "Ligne verte : la racine de 2 est algébrique et son degré 2 est fini.",
+   "Ligne rouge : pi n'est pas algébrique et son degré est infini."
+  ],
+  "a_voir": "Les deux côtés sont vrais ensemble pour la racine de 2, faux ensemble pour pi."
+ },
+ {
+  "code": "61-090",
+  "a_dire": "Les restes a plus b x de la division par x au carré plus 1 calculent comme les nombres a plus b i : ce sont les nombres complexes.",
+  "legende_titre": "Les complexes comme restes",
+  "lecture": [
+   "La case bleue montre les restes de la division par x au carré plus 1.",
+   "La case violette montre les nombres complexes a plus b i.",
+   "Le signe orange dit que les deux ensembles sont identiques.",
+   "Sous chaque case, la règle du carré : x au carré vaut moins 1, i au carré vaut moins 1."
+  ],
+  "a_voir": "Même calcul des deux côtés, avec x à la place de i."
+ },
+ {
+  "code": "61-091",
+  "a_dire": "Un polynôme de degré 2 sans racine est irréductible, car un facteur de degré 1 donnerait une racine.",
+  "legende_titre": "Sans racine, pas de facteur",
+  "lecture": [
+   "La courbe bleue est x au carré plus 1 sur les réels : elle ne coupe pas l'axe.",
+   "La case orange est un facteur de degré 1 supposé.",
+   "La case rouge en tirets dit que ce facteur donnerait une racine, ce qui est faux ici.",
+   "La case verte est la conclusion : irréductible."
+  ],
+  "a_voir": "Pas de racine veut dire pas de facteur de degré 1."
+ },
+ {
+  "code": "61-092",
+  "a_dire": "On construit un nombre qui joue le rôle de i avec les restes de la division par x au carré plus 1 et la règle x au carré égale moins 1, sans supposer que i existe.",
+  "legende_titre": "Fabriquer i avec des restes",
+  "lecture": [
+   "La case bleue montre les restes a plus b x.",
+   "La case orange montre le calcul clé : x fois x vaut moins 1.",
+   "La case verte dit que x joue le rôle de i, sans rien supposer."
+  ],
+  "a_voir": "Le carré de x vaut moins 1 dans l'ensemble des restes."
+ },
+ {
+  "code": "61-093",
+  "a_dire": "Le geste fait avec x au carré plus 1 sur les réels se refait pour tout polynôme irréductible : c'est la construction de Kronecker du chapitre 62.",
+  "legende_titre": "Refaire le même geste",
+  "lecture": [
+   "La case bleue est le cas déjà fait : x au carré plus 1 sur les réels.",
+   "La case orange en tirets est le cas à refaire : x au cube moins 2 sur les fractions.",
+   "La case violette annonce le chapitre 62 : tout polynôme irréductible donne un corps avec une racine."
+  ],
+  "a_voir": "Un cas déjà fait et un cas à refaire mènent à la même règle générale."
+ },
+ {
+  "code": "61-094",
+  "a_dire": "Le nombre u, racine carrée de 2 plus racine de 3, est algébrique : en élevant deux fois au carré, on obtient un polynôme à coefficients fractionnaires qui s'annule en u.",
+  "legende_titre": "Une racine dans une racine",
+  "lecture": [
+   "La case bleue est le nombre u, avec une racine à l'intérieur d'une racine.",
+   "La première flèche orange est une élévation au carré : u au carré vaut 2 plus racine de 3, environ 3,73.",
+   "La seconde élévation au carré donne la case grise, sans racine.",
+   "La case verte est le polynôme qui s'annule en u."
+  ],
+  "a_voir": "Deux élévations au carré enlèvent les deux racines."
+ }
+]

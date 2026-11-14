@@ -1,0 +1,33 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, c, r, a0, a1, role, lw=0.9):
+    pts = [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / 24)), c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / 24))) for i in range(25)]
+    line(ax, pts, role, lw)
+def rmark(ax, p, dx, dy, s=2.2, role='fixe'):
+    line(ax, [(p[0] + dx * s, p[1]), (p[0] + dx * s, p[1] + dy * s), (p[0], p[1] + dy * s)], role, lw=0.7)
+def pyr(ax, o, u, role='sujet', a=5, h=6):
+    P = lambda x, y, z: iso(x, y, z, o, u)
+    B, C, D, A = P(0, 0, 0), P(a, 0, 0), P(a, a, 0), P(0, a, 0)
+    O, V, M = P(a / 2, a / 2, 0), P(a / 2, a / 2, h), P(a / 2, 0, 0)
+    poly(ax, [B, C, D, A], 'fixe')
+    poly(ax, [A, B, V], role); poly(ax, [B, C, V], role)
+    for p, q in [(C, D), (D, A), (V, D)]: line(ax, [p, q], 'fixe', lw=0.6, dash=True)
+    line(ax, [O, V], 'fixe', lw=0.6, dash=True)
+    return dict(A=A, B=B, C=C, D=D, O=O, V=V, M=M)
+fig, ax = canvas(66)
+o = (36, 8); u = 5; P = lambda x, y, z: iso(x, y, z, o, u)
+poly(ax, [P(0, 0, 0), P(5, 0, 0), P(5, 3.5, 0), P(0, 3.5, 0)], 'fixe')
+poly(ax, [P(0, 0, 0), P(5, 0, 0), P(5, 2.5, 6), P(0, 2.5, 6)], 'sujet', fill=False)
+M, Oo, V = P(2.5, 0, 0), P(2.5, 2.5, 0), P(2.5, 2.5, 6)
+poly(ax, [M, Oo, V], 'varie')
+line(ax, [P(0, 0, 0), P(5, 0, 0)], 'sujet', lw=2.0)
+disc(ax, M[0], M[1], 0.9, 'sujet')
+ang = lambda q: math.degrees(math.atan2(q[1] - M[1], q[0] - M[0]))
+a0, a1 = ang(Oo), ang(V)
+arc(ax, M, 6, a0, a1, 'resultat', lw=1.1)
+text(ax, M[0] + 8, M[1] + 8, r'$\beta$', 'resultat')
+text(ax, M[0] + 6, M[1] - 4, 'M', 'sujet', 's'); text(ax, Oo[0] - 3, Oo[1] - 2, 'O', 'encre', 's'); text(ax, V[0], V[1] + 3.5, 'V', 'encre', 's')
+text(ax, 60, 4, 'charnière BC', 'sujet', 's')
+text(ax, 14, 14, 'base', 'fixe', 's'); text(ax, 12, 40, 'face', 'sujet', 's')
+text(ax, 70, 21, r'$\mathrm{OM}\perp\mathrm{BC}$', 'varie', 's'); text(ax, 70, 47, r'$\mathrm{VM}\perp\mathrm{BC}$', 'varie', 's')
+text(ax, 74, 34, r'$\beta\approx67{,}38^\circ$', 'resultat', 's')
+save(fig, '27-091')

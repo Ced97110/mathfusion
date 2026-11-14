@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+text(ax,44,87,'opération associative : on regroupe','fixe','s')
+for x in (8,20,48,60): box(ax,x,70,10,9,'sujet',label=r'$g$')
+brace(ax,8,30,68,'sujet',label=r'$g^{2}$'); brace(ax,48,70,68,'sujet',label=r'$g^{2}$')
+box(ax,24,46,40,10,'resultat',label=r'$g^{2}g^{2} = g^{4}$')
+line(ax,[(3,40),(85,40)],'fixe',dash=True)
+text(ax,44,35,'division : non associative','limite','s')
+text(ax,44,26,r'$g=2$ : $g^{2}=2\div2=1$','fixe','s'); text(ax,44,18,r'$g^{4}=\frac{1}{2}\div2=\frac{1}{4}$','fixe','s')
+box(ax,6,3,76,10,'limite',label=r'$g^{2}g^{2}=1\div1=1\neq\frac{1}{4}$')
+save(fig,'44-254')

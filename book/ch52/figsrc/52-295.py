@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 22, 66, 'dans ℤ', 'sujet', 'l')
+box(ax, 4, 42, 80, 11, 'resultat', label=r'$17 = 3\times5+2$', size='l')
+text(ax, 44, 36, 'reste 2, plus petit que 5 : ça marche', 'resultat', 's')
+text(ax, 30, 27, 'dans ℤ[x]', 'autre', 'l')
+box(ax, 4, 9, 38, 11, 'fixe', label=r'$x$ divisé par 2', size='m')
+arrow(ax, (43, 14.5), (49, 14.5), 'varie')
+box(ax, 50, 9, 34, 11, 'limite', label=r'$\frac{1}{2}\,x$', size='l')
+text(ax, 44, 3.5, 'coefficient ½ : pas entier', 'limite', 's')
+save(fig, '52-295')

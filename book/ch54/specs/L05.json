@@ -1,0 +1,339 @@
+[
+ {
+  "code": "54-117",
+  "a_dire": "Pour construire un anneau à deux indéterminées, on prend des polynômes en x2 dont les coefficients sont des polynômes en x1.",
+  "legende_titre": "Des polynômes dont les coefficients sont des polynômes",
+  "lecture": [
+   "Les deux grandes cases bleues sont les deux termes d’un polynôme en y : celui sans y et celui en y.",
+   "Dans chaque case bleue, la case orange est le coefficient de ce terme.",
+   "Ces coefficients, 1 + x et 2x, sont eux-mêmes des polynômes en x."
+  ],
+  "a_voir": "Chaque coefficient du polynôme en y est lui-même un polynôme en x."
+ },
+ {
+  "code": "54-118",
+  "a_dire": "La récurrence donne un départ (une indéterminée) et une règle (ajouter une lettre), et ces deux données couvrent tous les nombres d’indéterminées.",
+  "legende_titre": "Un départ, une règle, tous les cas",
+  "lecture": [
+   "La case du haut est le départ : l’anneau à une seule indéterminée.",
+   "Chaque flèche orange applique la même règle : ajouter une nouvelle lettre.",
+   "Les trois points disent que la suite continue jusqu’à r indéterminées, dans la case du bas."
+  ],
+  "a_voir": "Une seule règle, répétée de flèche en flèche, construit chaque case à partir de la précédente."
+ },
+ {
+  "code": "54-119",
+  "a_dire": "On choisit librement la valeur envoyée pour chaque indéterminée, et il existe alors un seul homomorphisme qui respecte ces choix.",
+  "legende_titre": "Un choix libre par lettre, un seul résultat",
+  "lecture": [
+   "Les deux cases orange sont deux choix libres : x devient 2 et y devient 3.",
+   "La case bleue est le polynôme x + xy, pris dans les entiers à deux lettres.",
+   "La flèche orange mène à la case verte : 2 + 2 × 3 = 8, sans autre valeur possible."
+  ],
+  "a_voir": "Les deux choix suffisent à fixer l’image du polynôme : 8."
+ },
+ {
+  "code": "54-120",
+  "a_dire": "Échanger x et y renvoie chaque terme sur le terme symétrique, et le produit échangé est le produit des termes échangés.",
+  "legende_titre": "Échanger x et y garde les produits",
+  "lecture": [
+   "Chaque point est un terme, placé selon l’exposant de x (vers la droite) et l’exposant de y (vers le haut).",
+   "La ligne orange en pointillés est l’échange de x et y : les flèches orange envoient un point sur son symétrique.",
+   "Les points bleus sont x²y et x³y² ; les points violets sont leurs images xy² et x²y³ ; le point gris xy ne bouge pas.",
+   "En bas, les deux produits écrits se correspondent par l’échange."
+  ],
+  "a_voir": "Le point du produit x³y² a pour image le point x²y³, qui est le produit des images."
+ },
+ {
+  "code": "54-121",
+  "a_dire": "Dans R[x, y], une somme de monômes distincts n’est nulle que si tous ses coefficients sont nuls ; si on impose y = x², cela cesse d’être vrai.",
+  "legende_titre": "Des monômes qui ne se mélangent pas",
+  "lecture": [
+   "En haut, les cases bleues y et x² sont deux monômes distincts, avec les coefficients 1 et −1 en orange.",
+   "À droite, la phrase verte dit que y − x² n’est pas nul.",
+   "En bas, on impose y = x² : la case violette réunit les deux monômes en un seul.",
+   "Les coefficients 1 et −1 se compensent : le résultat rouge est 0, alors que les coefficients ne sont pas nuls."
+  ],
+  "a_voir": "Quand les monômes sont distincts, rien ne s’annule ; quand on les confond, 1 − 1 donne 0."
+ },
+ {
+  "code": "54-122",
+  "a_dire": "Le degré d’un polynôme est la position de sa dernière barre non nulle.",
+  "legende_titre": "Où s’arrête la suite de coefficients ?",
+  "lecture": [
+   "Chaque barre est un coefficient du polynôme 2 − x + 5x³, placé à sa position 0, 1, 2, 3…",
+   "La barre bleue, à la position 3, est la dernière barre non nulle : elle vaut 5.",
+   "Les traits plats des positions 2, 4 et 5 sont des coefficients nuls.",
+   "La flèche bleue relie cette position au mot « degré = 3 »."
+  ],
+  "a_voir": "Le degré est le numéro de la position de la dernière barre non nulle, ici 3."
+ },
+ {
+  "code": "54-123",
+  "a_dire": "deg f se lit « degré de f » et donne la position de la dernière barre non nulle du polynôme f.",
+  "legende_titre": "Lire l’écriture deg f = 3",
+  "lecture": [
+   "La case bleue « deg » se lit « degré de ».",
+   "La case grise f désigne le polynôme 2 − x + 3x³, dessiné en barres plus bas.",
+   "La case verte « = 3 » est la position de la dernière barre non nulle.",
+   "La flèche verte mène à la barre verte, à la position 3."
+  ],
+  "a_voir": "Chaque morceau de l’écriture correspond à une partie du dessin : le résultat 3 est la position de la dernière barre."
+ },
+ {
+  "code": "54-124",
+  "a_dire": "Le coefficient dominant est la hauteur de la dernière barre non nulle ; il se distingue du coefficient constant (la première barre) et du degré (une position).",
+  "legende_titre": "La hauteur de la dernière barre",
+  "lecture": [
+   "La barre violette, à la position 0, est le coefficient constant : 2.",
+   "La barre bleue, à la position 3, est le coefficient dominant : 5.",
+   "Le degré, en bas, n’est pas une hauteur mais une position : 3."
+  ],
+  "a_voir": "Le coefficient dominant se lit sur la hauteur de la barre bleue, pas sur sa position."
+ },
+ {
+  "code": "54-125",
+  "a_dire": "Un polynôme est unitaire quand son coefficient dominant vaut 1 ; avec un diviseur unitaire, la division ne demande pas de diviser par un entier.",
+  "legende_titre": "Pourquoi un coefficient dominant égal à 1 ?",
+  "lecture": [
+   "En haut, la dernière barre bleue de x − 1 vaut 1 : le diviseur est unitaire.",
+   "La flèche orange mène au multiplicateur x, et la phrase verte dit que le reste est entier.",
+   "En bas, la dernière barre violette de 2x − 1 vaut 2 : le diviseur n’est pas unitaire.",
+   "Il faudrait multiplier par 1/2 x, et la phrase rouge dit que ce n’est pas entier."
+  ],
+  "a_voir": "Dominant égal à 1 : le multiplicateur est entier ; dominant égal à 2 : il ne l’est plus."
+ },
+ {
+  "code": "54-126",
+  "a_dire": "Le polynôme nul n’a aucune barre non nulle, donc pas de dernière barre ; le livre lui donne le degré −∞, à part des degrés 0, 1, 2…",
+  "legende_titre": "Un polynôme sans dernière barre",
+  "lecture": [
+   "En haut, la barre grise est le polynôme constant 5 : sa dernière barre est à la position 0, son degré est 0.",
+   "En bas, le polynôme nul n’a que des traits plats : aucune barre non nulle.",
+   "Son degré, écrit en bleu, est −∞."
+  ],
+  "a_voir": "Sans barre non nulle, il n’y a pas de position de dernière barre : le degré est le symbole −∞."
+ },
+ {
+  "code": "54-127",
+  "a_dire": "Le symbole −∞ est un signe, placé plus bas que tous les entiers, qui sert de degré au polynôme nul.",
+  "legende_titre": "Un signe à gauche de tous les entiers",
+  "lecture": [
+   "La droite graduée porte les degrés 0, 1, 2, 3, 4 des polynômes non nuls.",
+   "Le rond bleu, à gauche, est le symbole −∞ : le degré du polynôme nul.",
+   "Les pointillés bleus le séparent de la droite : il n’est pas un entier."
+  ],
+  "a_voir": "Le symbole −∞ est à gauche de toute la droite des entiers."
+ },
+ {
+  "code": "54-128",
+  "a_dire": "Deux conventions règlent −∞ : il est plus petit que tout entier, et lui ajouter un entier ne le change pas.",
+  "legende_titre": "Deux règles pour le symbole −∞",
+  "lecture": [
+   "En haut, le rond bleu −∞ est à gauche de la droite graduée, donc plus petit que 3.",
+   "En bas, la case bleue −∞ plus la case grise 3 donne encore une case bleue −∞.",
+   "Les deux titres orange nomment les deux règles : comparer, additionner."
+  ],
+  "a_voir": "Comparer place −∞ à gauche de 3 ; additionner 3 laisse −∞ inchangé."
+ },
+ {
+  "code": "54-129",
+  "a_dire": "On choisit −∞ pour le degré du polynôme nul parce que 0 et −1 contredisent la règle du produit des degrés, alors que −∞ la respecte.",
+  "legende_titre": "Essayer trois choix pour le degré de 0",
+  "lecture": [
+   "Chaque ligne essaie un choix : 0, −1, puis −∞.",
+   "La colonne bleue donne le degré du produit de 0 par x, qui est le polynôme nul lui-même.",
+   "La colonne violette donne la somme des degrés prévue par la règle.",
+   "Pour 0 et −1, les deux colonnes diffèrent (signe rouge). Pour −∞, elles sont égales (signe vert)."
+  ],
+  "a_voir": "Seul le choix −∞ donne deux colonnes égales."
+ },
+ {
+  "code": "54-130",
+  "a_dire": "Le degré d’une somme est au plus le plus grand des deux degrés, et il lui est égal quand les deux degrés sont différents.",
+  "legende_titre": "Le degré d’une somme",
+  "lecture": [
+   "La ligne bleue est f = x² + x : sa dernière barre est à la position 2.",
+   "La ligne violette est g = x³ : sa dernière barre est à la position 3.",
+   "La ligne verte est la somme : barres ajoutées position par position, dernière barre à la position 3.",
+   "En bas, le plus grand des deux degrés, 3, est le degré de la somme."
+  ],
+  "a_voir": "Après la dernière barre du plus grand degré, la somme n’a que des zéros."
+ },
+ {
+  "code": "54-131",
+  "a_dire": "Quand deux polynômes ont le même degré, leurs dernières barres peuvent se compenser et le degré de la somme baisse.",
+  "legende_titre": "Quand les dernières barres se compensent",
+  "lecture": [
+   "La ligne bleue est x² + x : deux barres de hauteur 1, aux positions 1 et 2.",
+   "La ligne violette est −x² : une barre vers le bas à la position 2.",
+   "Le cadre orange en pointillés entoure la position 2, où les deux barres s’annulent.",
+   "La ligne verte, la somme, n’a plus que la barre de la position 1 : son degré est 1."
+  ],
+  "a_voir": "Les deux polynômes sont de degré 2, mais leur somme est de degré 1."
+ },
+ {
+  "code": "54-132",
+  "a_dire": "La règle du produit des degrés peut tomber si l’anneau n’est pas intègre : dans ℤ/4, le carré de 2x est nul alors que la règle prévoit le degré 2.",
+  "legende_titre": "Quand la règle du produit tombe",
+  "lecture": [
+   "La barre bleue du haut est 2x : une barre de hauteur 2 à la position 1, de degré 1.",
+   "La barre rouge en pointillés, à la position 2, est ce que la règle prévoit : 1 + 1 = 2.",
+   "Mais dans ℤ/4, 4 vaut 0 (texte orange) : la barre disparaît.",
+   "Le produit est le polynôme nul, de degré −∞."
+  ],
+  "a_voir": "La barre prévue à la position 2 n’existe pas, parce que 4 = 0."
+ },
+ {
+  "code": "54-133",
+  "a_dire": "Le rang n + m du produit n’a qu’un seul couple de rangs qui s’ajoutent, et son coefficient est le produit des deux coefficients dominants.",
+  "legende_titre": "Un seul couple fait le rang le plus haut",
+  "lecture": [
+   "La ligne bleue est 2 + 3x, de degré 1 : sa dernière barre vaut 3.",
+   "La ligne violette est 1 + 4x², de degré 2 : sa dernière barre vaut 4.",
+   "La ligne du bas est le produit : les barres grises sont les rangs 0, 1, 2, la barre verte est le rang 3.",
+   "La flèche verte part des rangs 1 + 2 = 3 : seul couple possible, et la barre verte vaut 3 × 4 = 12."
+  ],
+  "a_voir": "La plus haute barre du produit est le produit des deux dernières barres, au rang 1 + 2 = 3."
+ },
+ {
+  "code": "54-134",
+  "a_dire": "Dans ℤ/6, un seul couple suffit à faire échouer la règle : (2x)(3x) = 0, alors que (2x)(x) = 2x² respecte la règle.",
+  "legende_titre": "Deux produits dans ℤ/6",
+  "lecture": [
+   "En haut, 2x fois x donne 2x² : la barre verte, à la position 2, est de hauteur 2, et le degré est bien 2.",
+   "En bas, 2x fois 3x donne 6x², et 6 vaut 0 : il ne reste aucune barre.",
+   "Le titre orange rappelle la cause : 2 × 3 = 6 = 0 dans ℤ/6.",
+   "La phrase rouge dit que le degré est −∞ et non 2."
+  ],
+  "a_voir": "Le premier produit garde sa barre, le second n’en a plus."
+ },
+ {
+  "code": "54-135",
+  "a_dire": "Dans ℤ/12, deux polynômes non nuls, de degrés 3 et 4, ont un produit nul, parce que chaque coefficient du produit vaut 3 × 4 = 12 = 0.",
+  "legende_titre": "Deux polynômes non nuls, un produit nul",
+  "lecture": [
+   "La ligne bleue est p = 3 + 3x³ : deux barres, aux positions 0 et 3.",
+   "La ligne violette est q = 4 + 4x² + 4x⁴ : trois barres, aux positions 0, 2 et 4.",
+   "La ligne verte est le produit : chaque rang n’a qu’un seul terme 3 × 4 = 12, qui vaut 0.",
+   "Il ne reste que des traits plats : tous les coefficients sont nuls."
+  ],
+  "a_voir": "Chaque rang du produit vaut 12, donc 0 dans ℤ/12."
+ },
+ {
+  "code": "54-136",
+  "a_dire": "Si l’anneau des coefficients a deux éléments non nuls de produit nul, les polynômes constants correspondants sont non nuls et leur produit est nul.",
+  "legende_titre": "Les constantes gardent le défaut de l’anneau",
+  "lecture": [
+   "La barre bleue est le polynôme constant 2 : une seule barre, à la position 0.",
+   "La barre violette est le polynôme constant 3, au même endroit.",
+   "La ligne verte est leur produit : aucune barre, le polynôme nul.",
+   "Le titre orange donne la raison : dans ℤ/6, 2 × 3 = 0."
+  ],
+  "a_voir": "Deux polynômes non nuls, une barre chacun, donnent un produit sans barre."
+ },
+ {
+  "code": "54-137",
+  "a_dire": "Sans l’hypothèse « D intègre », D[x] n’est plus intègre : dans ℤ/10, 2 + 4x et la constante 5 sont non nuls mais leur produit est nul.",
+  "legende_titre": "Retirer l’hypothèse d’intégrité",
+  "lecture": [
+   "La ligne bleue est 2 + 4x : deux barres, de hauteurs 2 et 4.",
+   "La ligne violette est la constante 5 : une barre à la position 0.",
+   "Les cadres gris en pointillés sont les coefficients du produit : 10 et 20.",
+   "Ils valent tous deux 0 dans ℤ/10 (texte orange) : il ne reste que des traits plats."
+  ],
+  "a_voir": "Les deux barres prévues du produit, 10 et 20, valent 0 dans ℤ/10."
+ },
+ {
+  "code": "54-138",
+  "a_dire": "Un polynôme de degré 1 ou plus n’est pas inversible dans D[x] : il faudrait un polynôme de degré −1, qui n’existe pas.",
+  "legende_titre": "Pourquoi x + 1 n’a pas d’inverse",
+  "lecture": [
+   "Le rond bleu, à la position 1, est le degré de f = x + 1.",
+   "Pour que le produit soit 1, la somme des degrés doit valoir 0 : la flèche orange recule de 1.",
+   "Le rond rouge, à −1, est le degré qu’il faudrait pour g : aucun polynôme n’a ce degré.",
+   "Les ronds verts sont les degrés possibles : 0, 1, 2, 3…"
+  ],
+  "a_voir": "La flèche mène sur −1, qui n’est pas un degré possible."
+ },
+ {
+  "code": "54-139",
+  "a_dire": "La règle du produit des degrés fait toute la preuve : si fg = 0, l’un des deux polynômes est nul ; si fg = 1, les deux sont des constantes.",
+  "legende_titre": "Le produit 0 et le produit 1 selon les degrés",
+  "lecture": [
+   "La case grise du haut est le cas concret : f = 2x, g = 3, fg = 6x. Les degrés 1 et 0 s’additionnent en 1.",
+   "La case bleue du milieu est fg = 0 : la somme des degrés vaut −∞ (le degré de 0), donc l’un des deux est nul.",
+   "La case bleue du bas est fg = 1 : la somme vaut 0, donc les deux degrés valent 0 : les deux sont constants."
+  ],
+  "a_voir": "Dans chaque ligne, la flèche mène de ce que vaut le produit à ce que valent les degrés."
+ },
+ {
+  "code": "54-140",
+  "a_dire": "Le polynôme x est de degré 1, donc ce n’est pas une constante : il n’est jamais inversible dans D[x].",
+  "legende_titre": "Une barre à la position 1 n’est pas une constante",
+  "lecture": [
+   "À gauche, le polynôme x a sa seule barre bleue à la position 1 : degré 1.",
+   "À droite, une constante a sa barre à la position 0 : degré 0.",
+   "Le texte rouge dit que x n’est jamais inversible ; le texte vert dit qu’une constante peut l’être."
+  ],
+  "a_voir": "Pour être inversible, la barre doit être à la position 0."
+ },
+ {
+  "code": "54-141",
+  "a_dire": "Les deux divisions ont la même forme : à chaque ligne on retire un multiple du diviseur, et la taille du reste baisse ; pour un polynôme, la taille est le degré.",
+  "legende_titre": "Deux divisions côte à côte",
+  "lecture": [
+   "La colonne bleue montre les restes de 156 divisé par 12 : 156, puis 36, puis 0.",
+   "La colonne violette montre les restes de x³ − 2x² + 4 divisé par x − 1, avec leur degré : 3, 2, 1, 0.",
+   "Chaque flèche orange retire un multiple du diviseur."
+  ],
+  "a_voir": "Dans les deux colonnes, chaque flèche mène à un reste plus petit."
+ },
+ {
+  "code": "54-142",
+  "a_dire": "La division écrit f comme un multiple de g plus un reste ; on retire des multiples du diviseur jusqu’à ce que le reste soit plus petit que lui.",
+  "legende_titre": "Retirer des multiples jusqu’à un petit reste",
+  "lecture": [
+   "La barre bleue du haut est le nombre 157, avec toute sa longueur.",
+   "Sous elle, 13 blocs orange de longueur 12 : 10 blocs font 12 × 10 = 120, puis 3 blocs font 12 × 3 = 36.",
+   "Il reste un tout petit morceau vert : le reste 1, plus court qu’un bloc de 12 (le diviseur, case violette).",
+   "La phrase du bas résume : 157 = 12 × 13 + 1, et 1 < 12."
+  ],
+  "a_voir": "On retire des blocs de 12 jusqu’à ce qu’il reste 1, plus petit que 12."
+ },
+ {
+  "code": "54-143",
+  "a_dire": "156 divisé par 12 donne le quotient 13 et le reste 0, car 156 = 12 × 13 + 0.",
+  "legende_titre": "156 en blocs de 12",
+  "lecture": [
+   "Les 13 carrés sont les 13 blocs de 12 qui forment 156.",
+   "Les 10 carrés bleus font 10 × 12 = 120 ; les 3 carrés orange font 3 × 12 = 36.",
+   "Aucun carré ne reste : le reste est 0."
+  ],
+  "a_voir": "Les 13 blocs remplissent 156 sans rien laisser."
+ },
+ {
+  "code": "54-144",
+  "a_dire": "Chaque ligne de la division produit un terme du quotient : trois lignes donnent x², −x et −1, et il reste la constante 3.",
+  "legende_titre": "La division de x³ − 2x² + 4 par x − 1",
+  "lecture": [
+   "Chaque rangée de barres est le polynôme qui reste, écrit position par position de x³ à 1. Le terme en x est écrit avec le coefficient 0, un trait plat.",
+   "Le texte orange, au-dessus de chaque rangée de reste, donne le terme du quotient trouvé et le multiple du diviseur que tu retires : x², puis −x, puis −1.",
+   "Les degrés des restes baissent : 3, 2, 1, puis 0.",
+   "La barre verte finale, de hauteur 3, est le reste 3. Les trois termes trouvés forment le quotient écrit en bas."
+  ],
+  "a_voir": "Trois lignes donnent les trois termes x², −x et −1 du quotient, et le reste 3."
+ },
+ {
+  "code": "54-145",
+  "a_dire": "À chaque ligne, le degré du reste baisse d’au moins 1 ; la division s’arrête quand il devient plus petit que le degré du diviseur.",
+  "legende_titre": "Pourquoi la division s’arrête",
+  "lecture": [
+   "Chaque barre est le degré du reste : 3 au départ, puis 2, 1 et 0.",
+   "Les flèches orange montrent la baisse à chaque ligne.",
+   "La ligne violette en pointillés est le degré du diviseur : 1.",
+   "La dernière barre, verte, est sous la ligne : 0 est plus petit que 1, on s’arrête."
+  ],
+  "a_voir": "La suite des degrés descend jusqu’à passer sous la ligne violette."
+ }
+]

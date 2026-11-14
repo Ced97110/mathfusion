@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+c = (44, 54)
+u = 14
+ax.add_patch(Rectangle((44, 28), 42, 54, fc=FILL['fixe'], ec='none', zorder=0.5))
+line(ax, [(4, 54), (84, 54)], 'fixe', lw=0.6)
+line(ax, [(44, 28), (44, 82)], 'fixe', lw=0.6)
+P1 = (c[0] + u, c[1] + u)
+P2 = (c[0] - u, c[1] - u)
+line(ax, [P2, P1], 'fixe', lw=0.8, dash=True)
+def arc(r, a1, role):
+    pts = [(c[0] + r * math.cos(math.radians(a1 * j / 40)), c[1] + r * math.sin(math.radians(a1 * j / 40))) for j in range(41)]
+    line(ax, pts, role, lw=1.1)
+arc(9, 45, 'resultat')
+arc(6, 225, 'autre')
+disc(ax, *P1, 1.5, 'sujet'); disc(ax, *P2, 1.5, 'autre')
+text(ax, 57, 61, '45°', 'resultat', 's')
+text(ax, 30, 64, '225°', 'autre', 's')
+text(ax, 52, 73, r'$(1,\ 1)$', 'sujet', 's')
+text(ax, 22, 35, r'$(-1,\ -1)$', 'autre', 's')
+text(ax, 66, 78, '−90° < arctan < 90°', 'fixe', 's')
+text(ax, 44, 20, r'même quotient : $y / x = 1$', 'encre', 's')
+text(ax, 44, 12, 'arctan 1 = 45° pour les deux', 'limite', 's')
+text(ax, 44, 4, r'mais $(-1,\ -1)$ est à 225°', 'resultat', 's')
+save(fig, '39-034')

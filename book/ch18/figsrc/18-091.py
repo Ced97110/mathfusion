@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 26, 70, 36, 10, 'sujet', label=r'$x^4-16$')
+arrow(ax, (38, 70), (22, 56), 'varie'); arrow(ax, (50, 70), (66, 56), 'varie')
+text(ax, 44, 63, '1re fois', 'varie', 's')
+box(ax, 4, 46, 36, 10, 'fixe', label=r'$x^2+4$')
+box(ax, 48, 46, 36, 10, 'sujet', label=r'$x^2-4$')
+text(ax, 22, 40, 'on s’arrête', 'fixe', 's')
+arrow(ax, (58, 46), (46, 32), 'varie'); arrow(ax, (74, 46), (78, 32), 'varie')
+box(ax, 32, 22, 22, 10, 'resultat', label=r'$x+2$'); box(ax, 62, 22, 22, 10, 'resultat', label=r'$x-2$')
+text(ax, 44, 10, 'on continue tant que c’est possible', 'varie', 's')
+save(fig, '18-091')

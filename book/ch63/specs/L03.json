@@ -1,0 +1,385 @@
+[
+ {
+  "code": "63-065",
+  "a_dire": "Un automorphisme de E/F envoie un élément sur un conjugué de cet élément.",
+  "legende_titre": "Où va √2 quand on applique σ ?",
+  "lecture": [
+   "La boîte bleue est α = √2, racine de f = x² − 2.",
+   "Les flèches orange sont σ : elles partent de α.",
+   "Les deux boîtes vertes sont les seules images possibles : √2 et −√2.",
+   "Ces deux nombres sont les racines de f : ce sont les conjugués de √2."
+  ],
+  "a_voir": "σ(√2) ne peut être que √2 ou −√2, les deux racines de f."
+ },
+ {
+  "code": "63-066",
+  "a_dire": "Si α et β sont conjugués, il existe un isomorphisme qui fixe F et envoie α sur β ; sans cette condition, il n'existe pas.",
+  "legende_titre": "Quand le remplacement φ existe-t-il ?",
+  "lecture": [
+   "En haut, √2 et −√2 sont conjugués : la flèche φ va de la boîte bleue à la boîte violette et garde 2 en 2 (boîte verte).",
+   "En bas, √2 et √3 ne sont pas conjugués : φ enverrait 2, carré de √2, sur 3, carré de √3.",
+   "La boîte rouge montre la contradiction : φ doit laisser 2 en place, et 3 ≠ 2."
+  ],
+  "a_voir": "Le remplacement marche pour des conjugués et échoue pour √2 et √3."
+ },
+ {
+  "code": "63-067",
+  "a_dire": "F(α) et F(β) sont deux copies du même ensemble F[x]/(p), où p est le polynôme minimal commun ; on passe de l'une à l'autre.",
+  "legende_titre": "Deux corps, une même source",
+  "lecture": [
+   "La boîte grise du haut est F[x]/(x² − 2) : les polynômes a + bx.",
+   "La flèche de gauche met √2 à la place de x : on obtient la boîte bleue a + b√2.",
+   "La flèche de droite met −√2 à la place de x : on obtient la boîte violette a − b√2.",
+   "La flèche orange φ du bas relie les deux copies."
+  ],
+  "a_voir": "Les deux corps viennent du même ensemble ; φ enchaîne une copie avec l'inverse de l'autre."
+ },
+ {
+  "code": "63-068",
+  "a_dire": "φ remplace r par jr dans les nombres de ℚ(r) ; elle part de ℚ(r) et arrive dans ℚ(jr), donc elle n'est pas encore un automorphisme de E.",
+  "legende_titre": "φ est définie sur un seul des deux corps",
+  "lecture": [
+   "Le cadre en pointillés gris est E = ℚ(r, j).",
+   "La boîte bleue est ℚ(r) avec le nombre 1 + 2r.",
+   "La boîte violette est ℚ(jr) avec le nombre 1 + 2(jr).",
+   "La flèche orange φ remplace r par jr ; elle va d'un corps à l'autre, pas de E vers E."
+  ],
+  "a_voir": "φ est définie sur ℚ(r) seulement, et son image est un autre corps."
+ },
+ {
+  "code": "63-069",
+  "a_dire": "On remplace chaque α par β sans toucher aux coefficients ; la recette s'applique à tous les nombres du corps.",
+  "legende_titre": "La recette de remplacement, sur deux nombres",
+  "lecture": [
+   "Les boîtes bleues sont des nombres de ℚ(r) : 3 + 4r + 5r² et 1 + r.",
+   "Les flèches orange remplacent r par jr.",
+   "Les boîtes violettes sont les résultats : 3 + 4(jr) + 5(jr)² et 1 + jr.",
+   "Les coefficients 3, 4, 5 et 1 ne changent pas."
+  ],
+  "a_voir": "Seul r change ; les coefficients restent ; ici α = r et β = jr."
+ },
+ {
+  "code": "63-070",
+  "a_dire": "Le corps fixe Inv G est l'ensemble des éléments que chaque élément de G laisse en place ; c'est un corps.",
+  "legende_titre": "Ce que le mot « corps fixe » nomme",
+  "lecture": [
+   "Les boîtes bleues sont deux groupes : {1, σ} et {1}.",
+   "Les flèches orange vont d'un groupe à ce qu'il laisse en place.",
+   "La boîte verte du haut est ℚ : σ bouge √2, donc seules les fractions restent fixes.",
+   "La boîte verte du bas est E tout entier : l'identité ne bouge rien."
+  ],
+  "a_voir": "Un groupe plus petit laisse en place un corps plus grand."
+ },
+ {
+  "code": "63-071",
+  "a_dire": "On garde un élément a de E si chaque η de G le rend lui-même ; sinon on le rejette.",
+  "legende_titre": "Le test de la formule sur deux nombres",
+  "lecture": [
+   "Les boîtes bleues sont les nombres testés : 5 et 3 + √2.",
+   "Les flèches orange sont σ, qui change √2 en −√2.",
+   "La boîte grise donne l'image : 5 reste 5, 3 + √2 devient 3 − √2.",
+   "Le vert « gardé » est pour 5 ; le rouge « rejeté » est pour 3 + √2."
+  ],
+  "a_voir": "5 est dans Inv G ; 3 + √2 n'y est pas."
+ },
+ {
+  "code": "63-072",
+  "a_dire": "Un élément est fixe si personne dans G ne le bouge ; un seul automorphisme qui le bouge suffit à l'exclure.",
+  "legende_titre": "Tester un nombre contre chaque élément du groupe",
+  "lecture": [
+   "Les lignes sont les deux éléments du groupe : η = 1 et η = σ.",
+   "La colonne de gauche est le nombre 4 : les deux cases vertes montrent 4.",
+   "La colonne de droite est 4 + √2 : η = 1 le laisse, mais η = σ donne 4 − √2.",
+   "La case rouge est celle qui suffit à rejeter 4 + √2."
+  ],
+  "a_voir": "Une seule case qui change suffit pour sortir du corps fixe."
+ },
+ {
+  "code": "63-073",
+  "a_dire": "Si a et b sont fixes, alors a + b, ab et l'inverse de a sont fixes, parce que η respecte les opérations.",
+  "legende_titre": "Somme, produit, inverse de nombres fixes",
+  "lecture": [
+   "Les boîtes bleues écrivent la somme 3 + 1/2 = 3,5, le produit 3 × 1/2 = 1,5 et l'inverse 3⁻¹ = 1/3.",
+   "Les flèches orange sont σ appliquée au résultat.",
+   "Les boîtes vertes montrent que σ rend chaque résultat inchangé.",
+   "En haut, 3 et 1/2 sont les deux nombres fixes de départ."
+  ],
+  "a_voir": "Chaque opération sur des nombres fixes redonne un nombre fixe."
+ },
+ {
+  "code": "63-074",
+  "a_dire": "Le corps fixe de {1, σ} est l'axe horizontal : les points de cet axe sont les fractions.",
+  "legende_titre": "Les points que σ laisse en place dans le plan",
+  "lecture": [
+   "Chaque nombre a + b√2 est le point (a, b) du plan.",
+   "σ change (a, b) en (a, −b) : le point bleu 3 + 2√2 va sur le point violet 3 − 2√2 (flèche orange).",
+   "La droite verte horizontale est l'axe b = 0 : ses points ne bougent pas.",
+   "Cet axe est ℚ, le corps fixe."
+  ],
+  "a_voir": "Seuls les points de l'axe horizontal restent en place."
+ },
+ {
+  "code": "63-075",
+  "a_dire": "On a deux applications en sens inverse : H ↦ Inv H (du sous-groupe vers le corps) et K ↦ Gal(E/K) (du corps vers le groupe).",
+  "legende_titre": "Deux applications qui vont dans des sens opposés",
+  "lecture": [
+   "La boîte bleue est un sous-groupe : H = {1, σ}.",
+   "La boîte violette est un corps intermédiaire : K = ℚ(√3).",
+   "La flèche du haut, Inv, va du groupe vers son corps fixe.",
+   "La flèche du bas, Gal, va du corps vers le groupe des remplacements qui le fixent."
+  ],
+  "a_voir": "Une flèche dans chaque sens relie les groupes et les corps."
+ },
+ {
+  "code": "63-076",
+  "a_dire": "Si H₁ est contenu dans H₂, alors Inv H₂ est contenu dans Inv H₁ : l'ordre se renverse.",
+  "legende_titre": "Plus de remplacements, moins de points fixes",
+  "lecture": [
+   "À gauche, la boîte bleue H₁ = {1} est dans la boîte H₂ = {1, σ}.",
+   "À droite, la boîte violette ℚ = Inv H₂ est dans la boîte Inv H₁ = ℚ(√2).",
+   "La flèche orange Inv relie la gauche à la droite.",
+   "Le plus gros groupe est à gauche ; le plus petit corps est à droite."
+  ],
+  "a_voir": "L'emboîtement est inversé entre les groupes et les corps fixes."
+ },
+ {
+  "code": "63-077",
+  "a_dire": "La règle K₁ ⊆ K₂ donne Gal(E/K₂) ⊆ Gal(E/K₁) ; sans l'inclusion des corps, les groupes ne sont pas comparables.",
+  "legende_titre": "Sans inclusion des corps, pas d'inclusion des groupes",
+  "lecture": [
+   "En haut, ℚ est dans ℚ(√2) (signe ⊆ vert) : les groupes {1, σ, τ, στ} et {1, τ} sont emboîtés dans l’autre sens (signe ⊇ vert).",
+   "En bas, K₁ = ℚ(√2) (bleu) et K₂ = ℚ(√3) (violet) : aucun ne contient l’autre.",
+   "Les signes rouges ⊄ disent qu’aucun cadre n’est dans l’autre, ni pour les corps ni pour les groupes {1, τ} et {1, σ}.",
+   "σ change √2 en −√2 ; τ change √3 en −√3."
+  ],
+  "a_voir": "Avec l’inclusion des corps, les groupes s’emboîtent en sens inverse ; sans elle, ils ne s’emboîtent pas."
+ },
+ {
+  "code": "63-078",
+  "a_dire": "F est contenu dans Inv(Gal(E/F)) parce que les automorphismes de E/F fixent F par définition ; avec tous les automorphismes de E, ce n'est plus vrai.",
+  "legende_titre": "Fixer F est nécessaire pour que F reste fixe",
+  "lecture": [
+   "En haut, τ est dans Gal(E/F) : il laisse √2 en place (boîte verte « fixé »).",
+   "En bas, σ est dans Aut(E) : il change √2 en −√2.",
+   "La boîte rouge « bougé » montre que √2 n'est plus fixe.",
+   "F = ℚ(√2) et E = ℚ(√2, √3)."
+  ],
+  "a_voir": "Seuls les automorphismes de E/F laissent √2 en place."
+ },
+ {
+  "code": "63-079",
+  "a_dire": "H est contenu dans Gal(E/Inv H) : chaque élément de H fixe le corps fixe de H.",
+  "legende_titre": "Chaque élément de H fixe le corps fixe de H",
+  "lecture": [
+   "La grande boîte verte est Gal(E/Inv H), les automorphismes qui fixent Inv H.",
+   "La boîte bleue H = {1, σ} est dedans.",
+   "Ici Inv H = ℚ(√3) : les deux boîtes vertes du bas montrent que 1 et σ laissent √3 en place.",
+   "Les flèches orange relient chaque élément de H à ce qu'il fait à √3."
+  ],
+  "a_voir": "Les éléments de H laissent √3 en place : H est dans le grand groupe."
+ },
+ {
+  "code": "63-080",
+  "a_dire": "On demande si, en appliquant Gal puis Inv, on retombe sur le corps de départ ; pas toujours.",
+  "legende_titre": "Retombe-t-on sur le corps de départ ?",
+  "lecture": [
+   "Chaque ligne part du corps bleu ℚ, passe par Gal (boîte grise) puis par Inv.",
+   "Ligne du haut, E = ℚ(√2) : on obtient {1, σ}, puis ℚ : on retombe sur ℚ (boîte verte).",
+   "Ligne du bas, E = ℚ(r) : Gal donne {1}, puis Inv donne ℚ(r), pas ℚ (boîte rouge).",
+   "r est la racine cubique de 2."
+  ],
+  "a_voir": "Dans le premier cas on revient au départ ; dans le second, non."
+ },
+ {
+  "code": "63-081",
+  "a_dire": "Le nombre d'automorphismes de E/F ne dépasse pas le degré [E : F].",
+  "legende_titre": "Compter les images possibles des racines",
+  "lecture": [
+   "Les titres bleus en haut sont les deux choix pour √3 ; ceux en violet à gauche sont les deux choix pour √2.",
+   "Chaque case grise est une paire d'images (image de √2, image de √3).",
+   "Il y a 2 × 2 = 4 cases, donc au plus 4 automorphismes.",
+   "Le degré [E : F] vaut 4 : le nombre de cases ne le dépasse pas."
+  ],
+  "a_voir": "Les cases comptent au plus autant d'automorphismes que le degré."
+ },
+ {
+  "code": "63-082",
+  "a_dire": "Un automorphisme est déterminé par les images des racines : en les connaissant, on connaît l'image de tout élément.",
+  "legende_titre": "Deux images suffisent pour tout connaître",
+  "lecture": [
+   "La boîte bleue est un élément de E : x = 5 + 2√2 + √2·√3.",
+   "La flèche orange η l'envoie sur la boîte verte, où seuls η(√2) et η(√3) restent à connaître.",
+   "Les deux boîtes orange du bas sont ces deux images.",
+   "5 et 2 sont des fractions : η les laisse en place."
+  ],
+  "a_voir": "Connaître η(√2) et η(√3) donne η(x)."
+ },
+ {
+  "code": "63-083",
+  "a_dire": "Si f est séparable et E son corps de décomposition, le nombre d'automorphismes est égal au degré ; sans corps de décomposition, l'égalité tombe.",
+  "legende_titre": "L'égalité demande le corps de décomposition",
+  "lecture": [
+   "La ligne bleue compte les automorphismes ; la ligne violette compte la base de E sur ℚ.",
+   "À gauche, ℚ(√2) contient les deux racines de x² − 2 : 2 boîtes et 2 boîtes, 2 = 2 (vert).",
+   "À droite, ℚ(r) ne contient que r parmi les racines de x³ − 2 : 1 boîte et 3 boîtes, 1 ≠ 3 (rouge).",
+   "r est la racine cubique de 2."
+  ],
+  "a_voir": "Avec toutes les racines dans E, les deux lignes ont le même nombre de boîtes."
+ },
+ {
+  "code": "63-084",
+  "a_dire": "Si G est un groupe fini d'automorphismes et F = Inv G, alors [E : F] ≤ |G|.",
+  "legende_titre": "Le degré ne dépasse pas le nombre d'éléments de G",
+  "lecture": [
+   "Les boîtes violettes à gauche sont une base de E sur F : leur nombre est le degré [E : F] ; les boîtes bleues à droite sont les éléments de G.",
+   "Pour G = {1, σ}, F = Inv G = ℚ : 2 boîtes (1 et √2) contre 2 boîtes (1 et σ).",
+   "Pour G = {1}, F = Inv G = E : 1 boîte contre 1 boîte.",
+   "Le signe vert ≤ relie le degré à la taille du groupe."
+  ],
+  "a_voir": "À gauche, il n’y a jamais plus de boîtes qu’à droite."
+ },
+ {
+  "code": "63-085",
+  "a_dire": "Avec m éléments de E et un groupe de n éléments, avec m > n, le système de n équations à m inconnues a une solution non nulle.",
+  "legende_titre": "Plus d'inconnues que d'équations",
+  "lecture": [
+   "Le titre dit : 3 inconnues x₁, x₂, x₃ et 2 équations ; 3 est plus grand que 2.",
+   "Chaque ligne bleue est une équation, une par élément du groupe (η₁ = 1 et η₂ = σ) ; ses cadres sont les nombres 1, √2, 1 + √2 changés par η.",
+   "Chaque équation vaut 0 (en orange à droite).",
+   "La boîte verte donne la solution non nulle (1, 1, −1)."
+  ],
+  "a_voir": "Deux équations et trois inconnues laissent une solution non nulle."
+ },
+ {
+  "code": "63-086",
+  "a_dire": "Si b₂ n'était pas dans F, un η_k donnerait une solution plus courte ; c'est une contradiction avec le choix minimal.",
+  "legende_titre": "Une coordonnée hors de F donne une solution plus courte",
+  "lecture": [
+   "La ligne bleue est la solution minimale b : sa coordonnée 1 vaut 1, sa coordonnée 2 est b₂, supposé hors de F.",
+   "La ligne violette est η_k appliqué à b : 1 reste 1, b₂ devient η_k(b₂).",
+   "La ligne orange est la différence : la coordonnée 1 vaut 0 et la coordonnée 2 n'est pas nulle.",
+   "Le texte orange dit que la différence est plus courte que b ; le texte rouge dit que cela contredit le minimum."
+  ],
+  "a_voir": "La différence est une solution plus courte que b, ce qui contredit le choix minimal."
+ },
+ {
+  "code": "63-087",
+  "a_dire": "Des automorphismes distincts sont indépendants : n automorphismes forcent [E : Inv G] ≤ n.",
+  "legende_titre": "Trois éléments dans un plan sont liés",
+  "lecture": [
+   "Chaque nombre a + b√2 est un point du plan : 1 est la flèche bleue horizontale, √2 la flèche bleue verticale.",
+   "1 + √2 est la flèche orange : la diagonale, qui arrive au même point que les deux flèches bleues mises bout à bout.",
+   "La boîte verte écrit la relation 1·1 + 1·√2 − 1·(1 + √2) = 0, avec les fractions 1, 1 et −1 pour coefficients.",
+   "Avec n = 2 automorphismes, trois éléments sont toujours liés : [E : Inv G] ≤ 2."
+  ],
+  "a_voir": "Trois flèches dans un plan sont liées par une relation à coefficients fractions : il y en a au plus 2 d'indépendantes."
+ },
+ {
+  "code": "63-088",
+  "a_dire": "Si f n'a pas de racine répétée dans E, le nombre d'éléments de G(E/F) est égal au degré [E : F].",
+  "legende_titre": "Deux barres de même longueur",
+  "lecture": [
+   "La rangée bleue compte les automorphismes ; la rangée violette compte le degré.",
+   "Pour x³ − 2 : 6 cases et 6 cases, 6 = 6.",
+   "Pour (x² − 2)(x² − 3) : 4 cases et 4 cases, 4 = 4.",
+   "Dans chaque cas, les deux rangées ont la même longueur."
+  ],
+  "a_voir": "Les deux rangées sont égales, pour les deux polynômes."
+ },
+ {
+  "code": "63-089",
+  "a_dire": "Un isomorphisme qui fixe F se prolonge à E d'autant de façons que le degré de E au-dessus de son corps de départ.",
+  "legende_titre": "Prolonger φ à E : combien de façons ?",
+  "lecture": [
+   "Le grand cadre est E = ℚ(r, j).",
+   "La boîte bleue ℚ(r) et la boîte violette ℚ(jr) sont reliées par φ (flèche orange en haut).",
+   "Les deux flèches du bas mènent aux deux prolongements verts : j reste j, ou j devient j².",
+   "Il y en a 2, égal à [E : ℚ(r)]."
+  ],
+  "a_voir": "φ a exactement 2 prolongements à E, autant que le degré."
+ },
+ {
+  "code": "63-090",
+  "a_dire": "Si [E : F] = 1, alors E = F et le seul automorphisme qui fixe F est 1 : on a 1 = 1.",
+  "legende_titre": "Le cas de départ : degré 1",
+  "lecture": [
+   "La boîte grise du haut est E = F = ℚ.",
+   "La boîte violette de gauche donne le degré : 1.",
+   "La boîte bleue de droite donne le nombre d'automorphismes : 1, l'identité.",
+   "Le signe vert = relie les deux ; en bas, chaque fraction q reste q."
+  ],
+  "a_voir": "Un automorphisme qui fixe chaque fraction est l'identité : il n'y en a qu'un."
+ },
+ {
+  "code": "63-091",
+  "a_dire": "Un facteur irréductible p de degré d a exactement d racines distinctes, les conjugués de α.",
+  "legende_titre": "Les trois racines de x³ − 2",
+  "lecture": [
+   "Les trois disques sont les racines de p = x³ − 2, posées sur un cercle gris.",
+   "Le disque bleu est r, la racine réelle.",
+   "Les deux disques violets sont jr et j²r.",
+   "Les racines sont toutes distinctes : d = 3 racines, conjuguées de r."
+  ],
+  "a_voir": "Le polynôme de degré 3 a trois racines distinctes, pas une de moins."
+ },
+ {
+  "code": "63-092",
+  "a_dire": "Au premier étage il y a exactement d choix : σ envoie α sur un βᵢ, et chaque βᵢ reçoit un seul isomorphisme φᵢ.",
+  "legende_titre": "Trois choix pour r, un φ pour chacun",
+  "lecture": [
+   "La boîte bleue à gauche est ℚ(r).",
+   "Les trois flèches orange sont les trois images possibles de r.",
+   "Les trois boîtes violettes sont φ₁, φ₂ et φ₃ : r va sur r, sur jr ou sur j²r.",
+   "Chaque choix donne un seul φᵢ."
+  ],
+  "a_voir": "Il y a trois flèches : d = 3 choix."
+ },
+ {
+  "code": "63-093",
+  "a_dire": "Chaque φᵢ se prolonge de [E : F]/d façons, par hypothèse de récurrence.",
+  "legende_titre": "Le degré qui reste au-dessus de ℚ(r)",
+  "lecture": [
+   "La pile montre trois corps : ℚ en gris, ℚ(r) en bleu, E en vert.",
+   "La flèche du bas coûte d = 3 ; la flèche du haut coûte 6/3 = 2.",
+   "Au total, [E : ℚ] = 6.",
+   "Chaque φᵢ se prolonge donc de 2 façons, un nombre plus petit que 6."
+  ],
+  "a_voir": "Au-dessus de ℚ(r), il reste le degré 2, plus petit que 6."
+ },
+ {
+  "code": "63-094",
+  "a_dire": "Le total est d × [E : F]/d = [E : F], et tout automorphisme est compté une fois.",
+  "legende_titre": "3 choix, puis 2 prolongements chacun",
+  "lecture": [
+   "La boîte bleue du haut représente tous les automorphismes de E/ℚ.",
+   "Les trois boîtes violettes sont les choix pour r.",
+   "Sous chacune, les deux boîtes vertes sont les choix pour j : j reste j ou devient j².",
+   "Il y a 6 boîtes vertes : 3 × 2 = 6 = [E : ℚ]."
+  ],
+  "a_voir": "Les six feuilles donnent exactement le degré 6."
+ },
+ {
+  "code": "63-095",
+  "a_dire": "Sur l'exemple, r a 3 choix et j a 2 choix : 3 × 2 = 6 paires, comme le degré.",
+  "legende_titre": "Six paires de choix sur l'exemple",
+  "lecture": [
+   "Les trois lignes sont les 3 choix pour r (en violet).",
+   "Les deux colonnes sont les 2 choix pour j (en bleu).",
+   "Les six cases grises sont numérotées de 1 à 6 : une par paire.",
+   "En bas, 3 × 2 = 6 et [E : ℚ(r)] = 6/3 = 2 : deux choix pour j."
+  ],
+  "a_voir": "Trois lignes fois deux colonnes donnent six cases."
+ },
+ {
+  "code": "63-096",
+  "a_dire": "L'hypothèse « pas de racine répétée » sert à l'étape 1 : une racine double donne moins de d choix.",
+  "legende_titre": "Où une racine répétée fait perdre des choix",
+  "lecture": [
+   "À gauche, x³ − 2 a d = 3 : trois boîtes vertes r, jr, j²r, donc 3 choix.",
+   "À droite, (x − 1)² a d = 2 : deux boîtes grises x − 1, identiques.",
+   "Les flèches orange les mènent à une seule boîte rouge : la racine 1.",
+   "Il reste 1 choix, plus petit que d."
+  ],
+  "a_voir": "Deux facteurs identiques ne donnent qu'une seule racine, donc moins de choix."
+ }
+]

@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+c = (10, 8); s = 1.0
+def P(r, d): return (c[0] + r * math.cos(math.radians(d)), c[1] + r * math.sin(math.radians(d)))
+arrow(ax, (c[0] - 3, c[1]), (c[0] + 74, c[1]), 'fixe', lw=0.6)
+arrow(ax, (c[0], c[1] - 3), (c[0], c[1] + 56), 'fixe', lw=0.6)
+# given number z : modulus r (long), unknown w : modulus rho (short)
+arrow(ax, c, P(50, 60), 'autre', lw=1.2)
+arrow(ax, c, P(30, 25), 'sujet', lw=1.5)
+def dim(ang, L, off, role, lab):
+    nx, ny = -math.sin(math.radians(ang)), math.cos(math.radians(ang))
+    a = (P(0, 0)[0] + off * nx, P(0, 0)[1] + off * ny); b = (P(L, ang)[0] + off * nx, P(L, ang)[1] + off * ny)
+    arrow(ax, a, b, role, lw=0.7, both=True)
+    text(ax, (a[0] + b[0]) / 2 + math.copysign(3.5, off) * nx, (a[1] + b[1]) / 2 + math.copysign(3.5, off) * ny, lab, role, 'l', weight='bold')
+dim(25, 30, -4, 'sujet', 'ρ')
+dim(60, 50, 4, 'autre', 'r')
+text(ax, P(30, 25)[0] + 2, P(30, 25)[1] + 1, 'w = ρ cis α', 'sujet', 's', ha='left')
+text(ax, P(50, 60)[0] + 2, P(50, 60)[1] + 1, 'z = r cis θ', 'autre', 's', ha='left')
+text(ax, 62, 56, 'ρ : module de w', 'sujet', 's', ha='left')
+text(ax, 62, 51, 'r : module de z', 'autre', 's', ha='left')
+text(ax, 62, 43, 'ρ ≠ r', 'encre', 'l', ha='left', weight='bold')
+save(fig, '39-084')

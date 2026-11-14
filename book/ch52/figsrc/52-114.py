@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 4, 46, 10, 12, 'resultat', label='1'); text(ax, 17, 52, '=')
+box(ax, 21, 46, 26, 12, 'sujet', label=r'$5\times3$'); text(ax, 51, 52, '+')
+box(ax, 55, 46, 26, 12, 'fixe', label=r'$-14$')
+box(ax, 4, 20, 10, 10, 'resultat', label=r'$\bar1$'); text(ax, 17, 25, '=')
+box(ax, 21, 20, 26, 10, 'sujet', label=r'$\bar5\times\bar3$'); text(ax, 51, 25, '+')
+box(ax, 55, 20, 26, 10, 'fixe', label=r'$\bar0$')
+arrow(ax, (34, 46), (34, 30.5), 'varie'); arrow(ax, (68, 46), (68, 30.5), 'varie')
+text(ax, 40, 38, r'$ba$', 'sujet', 's', ha='left'); text(ax, 74, 38, r'$m\in M$', 'fixe', 's', ha='left')
+text(ax, 44, 10, r'$b+M$ est l’inverse de $a+M$', 'resultat')
+save(fig, '52-114')

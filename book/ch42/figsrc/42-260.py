@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 20, 51, 'départ', 'sujet', 's'); text(ax, 66, 51, 'arrivée', 'resultat', 's')
+line(ax, [(4, 25), (36, 25)], 'fixe'); line(ax, [(20, 8), (20, 44)], 'fixe')
+line(ax, [(66, 8), (66, 44)], 'fixe'); ax.plot([48, 86], [25, 25], color=COL['resultat'], lw=2.2, zorder=3)
+disc(ax, 20, 25, 1.3, 'sujet'); disc(ax, 20, 41, 1.3, 'sujet')
+disc(ax, 66, 25, 1.3, 'resultat'); disc(ax, 66, 28.2, 1.2, 'limite')
+arrow(ax, (21.5, 41), (64.5, 25.8), 'varie', curve=-0.2); arrow(ax, (21.5, 25), (64.5, 24.5), 'varie', curve=0.3)
+text(ax, 43, 50, r'$T_B$', 'varie')
+text(ax, 17.5, 41, '(0, 5)', 'sujet', 's', ha='right'); text(ax, 17.5, 21, '(0, 0)', 'sujet', 's', ha='right')
+text(ax, 69, 21, '(0, 0)', 'resultat', 's', ha='left'); text(ax, 69, 32.5, '(0, 1)', 'limite', 's', ha='left')
+text(ax, 69, 29, 'non atteint', 'limite', 's', ha='left'); text(ax, 76, 15, 'points atteints', 'resultat', 's')
+save(fig, '42-260')

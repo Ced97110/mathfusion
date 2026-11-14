@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+R = 20; c = (30, 30)
+g = lambda x, y: (c[0] + R * x, c[1] + R * y)
+ax.add_patch(Circle(c, R, ec=COL['fixe'], fc='none', lw=0.8, zorder=1))
+line(ax, [g(-1.1, 0), g(1.1, 0)], 'fixe', lw=0.6); line(ax, [g(0, -1.1), g(0, 1.1)], 'fixe', lw=0.6)
+Q = g(-0.866, 0.5)
+line(ax, [c, Q], 'sujet', lw=1.6)
+line(ax, [Q, g(-0.866, 0)], 'varie', lw=1.0, dash=True); line(ax, [Q, g(0, 0.5)], 'resultat', lw=1.0, dash=True)
+for (sx, sy), lab in [((1, 1), '(+, +)'), ((-1, 1), '(−, +)'), ((-1, -1), '(−, −)'), ((1, -1), '(+, −)')]:
+    text(ax, c[0] + sx * 9.5, c[1] + sy * 12, lab, 'fixe', 's')
+text(ax, Q[0] + 1, Q[1] + 7.5, '$\\theta/2$ = 150°', 'sujet', 's')
+text(ax, 55, 52, '$\\theta$ = 300°', 'encre', 's', ha='left')
+text(ax, 55, 40, '$\\cos(\\theta/2)$ = −0,866', 'varie', 's', ha='left')
+text(ax, 55, 36.5, 'à gauche : moins', 'varie', 's', ha='left')
+text(ax, 55, 26, '$\\sin(\\theta/2)$ = +0,5', 'resultat', 's', ha='left')
+text(ax, 55, 22.5, 'en haut : plus', 'resultat', 's', ha='left')
+save(fig, '34-104')

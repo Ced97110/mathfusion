@@ -1,0 +1,183 @@
+[
+ {
+  "code": "52-272",
+  "a_dire": "Par l'idéal {0}, le quotient redonne l'anneau : une classe par élément.",
+  "legende_titre": "Un quotient qui ne change rien",
+  "lecture": [
+   "Les six cases bleues du haut sont les restes par 6.",
+   "Chaque flèche orange mène à une case verte : la classe de ce reste.",
+   "Chaque classe verte ne contient qu'un seul reste."
+  ],
+  "a_voir": "Il y a 6 restes et 6 classes, une par reste."
+ },
+ {
+  "code": "52-273",
+  "a_dire": "Par l'idéal total, tout est dans une seule classe : 0 = 1, anneau nul.",
+  "legende_titre": "Un quotient où tout est regroupé",
+  "lecture": [
+   "Les six disques bleus sont les restes par 6.",
+   "Le grand cadre vert les réunit tous dans une seule classe.",
+   "Dans cette classe, 0 et 1 sont égaux : c'est l'anneau nul."
+  ],
+  "a_voir": "Les six restes sont dans un seul cadre."
+ },
+ {
+  "code": "52-274",
+  "a_dire": "Dans les restes par 5, l'idéal engendré par 2 est tout ; par 6, il ne l'est pas.",
+  "legende_titre": "Un seul idéal, deux anneaux",
+  "lecture": [
+   "La rangée verte montre les restes par 5 : tous sont dans l'idéal engendré par 2.",
+   "La rangée du bas montre les restes par 6 : seuls 0, 2 et 4, en bleu, y sont.",
+   "Les disques gris, 1, 3 et 5, ne sont pas dans l'idéal."
+  ],
+  "a_voir": "Par 5 tout est atteint, par 6 non : seul le premier est un corps."
+ },
+ {
+  "code": "52-275",
+  "a_dire": "Si un idéal contient a et a est inversible, il contient 1, donc tout.",
+  "legende_titre": "De 2 à tout l'anneau",
+  "lecture": [
+   "La case bleue de gauche est le départ : 2 est dans l'idéal.",
+   "La première flèche orange multiplie par 3, l'inverse de 2, et donne 1.",
+   "La seconde flèche multiplie 1 par x et donne x : tout reste est dans l'idéal."
+  ],
+  "a_voir": "Multiplier par l'inverse donne 1, puis 1 donne tout."
+ },
+ {
+  "code": "52-276",
+  "a_dire": "(a) désigne l'ensemble des produits xa quand x parcourt l'anneau.",
+  "legende_titre": "Le signe (a) pas à pas",
+  "lecture": [
+   "La formule du haut définit (a).",
+   "Chaque case bleue est une valeur de x, de 0 à 5.",
+   "Chaque case orange est le produit de x par 2, reste par 6.",
+   "La case verte du bas est l'ensemble obtenu, 0, 2 et 4."
+  ],
+  "a_voir": "Les produits x fois 2 forment l'ensemble (2)."
+ },
+ {
+  "code": "52-277",
+  "a_dire": "Si l'idéal engendré par un élément non nul est tout, il contient 1 et l'élément est inversible.",
+  "legende_titre": "Les multiples de 3 mènent à 1",
+  "lecture": [
+   "Les cases bleues sont les multiples de 3 dans les restes par 7.",
+   "La case verte est le reste 1, qui est bien parmi eux.",
+   "Le calcul 5 fois 3 donne 15, reste 1 : l'inverse de 3 est 5."
+  ],
+  "a_voir": "Tous les restes sont atteints, dont 1."
+ },
+ {
+  "code": "52-278",
+  "a_dire": "Un corps n'a que deux quotients : lui-même ou une seule classe.",
+  "legende_titre": "Deux idéaux, deux quotients",
+  "lecture": [
+   "La case bleue du haut est le corps des restes par 5.",
+   "Les deux cases grises sont ses seuls idéaux, {0} et tout.",
+   "Les cases vertes sont les quotients : 5 classes ou 1 classe.",
+   "Le texte rouge dit qu'aucun autre idéal n'existe."
+  ],
+  "a_voir": "Aucun quotient ne donne un anneau plus petit et intéressant."
+ },
+ {
+  "code": "52-279",
+  "a_dire": "Les matrices 2 sur 2 n'ont que deux idéaux sans être un corps : commutatif est nécessaire.",
+  "legende_titre": "Une matrice non nulle sans inverse",
+  "lecture": [
+   "En haut, M₂(ℝ) n'a que deux idéaux : {0} et M₂(ℝ).",
+   "La matrice bleue A n'est pas nulle ; la case violette est une matrice B quelconque.",
+   "Le produit, en orange et gris, a sa deuxième ligne nulle.",
+   "Ce produit n'est jamais l'unité : A n'a pas d'inverse, donc M₂(ℝ) n'est pas un corps. « Commutatif » est nécessaire."
+  ],
+  "a_voir": "Deux idéaux seulement, mais une matrice non nulle sans inverse : ce n'est pas un corps."
+ },
+ {
+  "code": "52-280",
+  "a_dire": "Un anneau simple n'a que deux idéaux et n'est pas commutatif ; s'il est commutatif, c'est un corps.",
+  "legende_titre": "Deux idéaux, deux familles",
+  "lecture": [
+   "Le cadre bleu rassemble les anneaux dont les seuls idéaux sont {0} et tout.",
+   "La case verte est le cas commutatif : un corps, par exemple les restes par 5.",
+   "La case violette est le cas non commutatif : un anneau simple, par exemple les matrices 2 sur 2."
+  ],
+  "a_voir": "Même condition sur les idéaux, produits différents."
+ },
+ {
+  "code": "52-281",
+  "a_dire": "Le passage de 5 premier à 6 composé fait passer d'un corps à un anneau avec diviseurs de zéro.",
+  "legende_titre": "Premier ou composé",
+  "lecture": [
+   "La colonne verte est le cas 5 : 2 fois 3 laisse le reste 1, tout reste non nul a un inverse.",
+   "La colonne rouge est le cas 6 : 2 fois 3 laisse le reste 0.",
+   "Ni 2 ni 3 n'est nul, pourtant leur produit l'est."
+  ],
+  "a_voir": "Reste 1 d'un côté, reste 0 de l'autre."
+ },
+ {
+  "code": "52-282",
+  "a_dire": "L'idéal (p) est maximal exactement quand p est premier : aucun idéal entre lui et l'anneau.",
+  "legende_titre": "Rien entre (3) et l'anneau",
+  "lecture": [
+   "Les trois cases bleues sont les idéaux Z, (3) et (6), du plus grand au plus petit.",
+   "La flèche verte entre (3) et Z n'a aucun idéal au milieu.",
+   "La flèche rouge montre que (3) est entre (6) et Z."
+  ],
+  "a_voir": "Pour 3 rien entre les deux, pour 6 il y a (3)."
+ },
+ {
+  "code": "52-283",
+  "a_dire": "Le chapitre donne des outils pour fabriquer des anneaux à partir d'autres et les comparer.",
+  "legende_titre": "Le chapitre comme passage",
+  "lecture": [
+   "La rangée du haut place le chapitre 52 en orange entre le chapitre 51 et la suite.",
+   "La rangée du bas part des entiers, fabrique les restes par 12, puis les restes par 4.",
+   "La dernière flèche garde la somme et le produit."
+  ],
+  "a_voir": "Le chapitre relie ce qui précède à ce qui suit."
+ },
+ {
+  "code": "52-284",
+  "a_dire": "La cryptographie RSA s'appuie sur deux outils du chapitre : inverses modulo p et restes chinois.",
+  "legende_titre": "Du chapitre vers RSA",
+  "lecture": [
+   "La case violette est la cryptographie RSA du chapitre 53.",
+   "Les deux cases bleues sont les outils qu'elle utilise.",
+   "Sous la première, 2 fois 3 donne 1 par 5, donc 3 est l'inverse de 2.",
+   "En rouge : par 6, le reste 2 n'a pas d'inverse."
+  ],
+  "a_voir": "Deux outils du chapitre servent à RSA."
+ },
+ {
+  "code": "52-285",
+  "a_dire": "Évaluer remplace la lettre par un nombre ; le noyau est formé des polynômes qui valent 0 en ce nombre.",
+  "legende_titre": "Remplacer la lettre par 2",
+  "lecture": [
+   "La case bleue de gauche est un polynôme.",
+   "La flèche orange remplace x par 2.",
+   "La case verte est la valeur obtenue : 11 pour le premier, 0 pour le second.",
+   "Le second est dans le noyau : les polynômes modulo x moins 2 correspondent à l'anneau de départ."
+  ],
+  "a_voir": "Le polynôme x au carré moins 4 vaut 0 en 2."
+ },
+ {
+  "code": "52-286",
+  "a_dire": "Modulo 5, le polynôme x puissance 5 moins x vaut 0 pour chaque reste sans être nul.",
+  "legende_titre": "Un polynôme non nul qui donne 0",
+  "lecture": [
+   "La rangée bleue donne les restes par 5, de 0 à 4.",
+   "La rangée orange donne la valeur de x puissance 5 moins x pour chacun.",
+   "La case verte dit que toutes ces valeurs sont des multiples de 5."
+  ],
+  "a_voir": "Chaque valeur est un multiple de 5, donc de reste 0."
+ },
+ {
+  "code": "52-287",
+  "a_dire": "Un anneau principal est un anneau où tout idéal est engendré par un seul élément.",
+  "legende_titre": "Deux générateurs, un seul suffit",
+  "lecture": [
+   "Les deux cases bleues sont les générateurs 6 et 10.",
+   "La case orange calcule 2 fois 6 moins 10, soit 2.",
+   "La case verte dit que l'idéal est celui des multiples de 2."
+  ],
+  "a_voir": "L'idéal engendré par 6 et 10 est engendré par 2 seul."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 74, '−2', 'sujet', 'xl')
+for yy, n, q in [(56, '1', 'où le placer ?'), (36, '2', 'sa taille, sans le côté ?'), (16, '3', 'comment calculer ?')]:
+    text(ax, 5, yy, n, 'sujet', 'l'); text(ax, 9, yy, q, 'encre', 'm', ha='left')
+    line(ax, [(4, yy - 8), (84, yy - 8)], 'fixe', lw=0.4)
+line(ax, [(50, 56), (80, 56)], 'fixe')
+for x in (70,): line(ax, [(x, 54.8), (x, 57.2)], 'fixe')
+text(ax, 70, 51.5, '0', 'fixe', 's')
+disc(ax, 56, 56, 2.2, 'varie', label='?', size='s')
+line(ax, [(52, 36), (74, 36)], 'sujet', lw=2.5)
+text(ax, 50, 36, '0', 'fixe', 's')
+brace(ax, 52, 74, 38, 'sujet', label='?', down=False)
+text(ax, 66, 16, r'$-2+5=\ ?$', 'sujet', 'l')
+save(fig, '13-009')

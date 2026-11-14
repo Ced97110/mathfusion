@@ -1,0 +1,178 @@
+[
+ {
+  "code": "46-065",
+  "a_dire": "Lire ⟨X⟩ : « le sous-groupe engendré par X », où X est la partie de départ.",
+  "legende_titre": "Un signe pour « engendré par »",
+  "lecture": [
+   "Les deux crochets orange disent « engendré par ».",
+   "La lettre bleue X est la partie de départ.",
+   "Sur l’horloge, avec X = {4}, les points verts 0 et 8 s’ajoutent au point bleu 4."
+  ],
+  "a_voir": "Les crochets entourent la partie de départ et désignent ce qu’elle engendre."
+ },
+ {
+  "code": "46-066",
+  "a_dire": "La lettre e désigne le neutre de n’importe quel groupe.",
+  "legende_titre": "Une lettre pour trois valeurs",
+  "lecture": [
+   "Chaque rectangle orange donne le neutre d’un groupe : 0, 1, ou la rotation de 0 tour.",
+   "Les flèches grises vont toutes vers le même rectangle bleu.",
+   "Ce rectangle bleu est la lettre e."
+  ],
+  "a_voir": "Trois neutres différents sont écrits avec une seule lettre."
+ },
+ {
+  "code": "46-067",
+  "a_dire": "Quand la partie de départ est vide, le sous-groupe engendré est réduit au neutre : ⟨∅⟩ = {e}.",
+  "legende_titre": "Engendré par rien",
+  "lecture": [
+   "Le rectangle bleu en pointillé est la partie vide : il ne contient aucun nombre.",
+   "La flèche orange va vers l’horloge.",
+   "Sur l’horloge, seul le point vert 0, le neutre, est obtenu."
+  ],
+  "a_voir": "Aucun facteur n’est disponible : il reste seulement le neutre."
+ },
+ {
+  "code": "46-068",
+  "a_dire": "Lire s1 s2 ⋯ sr : un produit de r facteurs, avec au moins un facteur.",
+  "legende_titre": "Un produit écrit avec des indices",
+  "lecture": [
+   "La rangée du haut montre les facteurs s1, s2, puis des points, puis sr.",
+   "L’accolade compte les r facteurs.",
+   "La rangée du bas montre 4 + 4 + 4 : r vaut 3 et les facteurs sont égaux."
+  ],
+  "a_voir": "Les indices numérotent les facteurs, et un même nombre peut les remplir tous."
+ },
+ {
+  "code": "46-069",
+  "a_dire": "Le signe ∈ se lit « appartient à » : l’objet de gauche est un élément de l’ensemble de droite.",
+  "legende_titre": "Un signe pour « est un élément de »",
+  "lecture": [
+   "Le grand rectangle bleu est la partie X, avec 0, 4 et 8.",
+   "Le disque vert 4 est dans la partie : 4 ∈ X.",
+   "Le disque rouge 5 n’y est pas : 5 ∉ X."
+  ],
+  "a_voir": "∈ relie un objet à un ensemble qui le contient."
+ },
+ {
+  "code": "46-070",
+  "a_dire": "Le signe s⁻¹ ∈ X dit que l’inverse du facteur s est dans X, même si s n’y est pas.",
+  "legende_titre": "Un facteur dont l’inverse est dans X",
+  "lecture": [
+   "Le rectangle bleu est la partie X = {4}.",
+   "Le disque violet 8 est le facteur s, hors de X.",
+   "La flèche orange donne son inverse, 4, qui est dans X."
+  ],
+  "a_voir": "8 est permis comme facteur parce que son inverse est dans X."
+ },
+ {
+  "code": "46-071",
+  "a_dire": "Les facteurs d’un produit peuvent se répéter, ce qui permet d’atteindre plus d’éléments.",
+  "legende_titre": "Pourquoi répéter un facteur",
+  "lecture": [
+   "Les disques bleus 0, 5 et 7 sont obtenus sans répétition.",
+   "Le disque orange 10 est obtenu en utilisant 5 deux fois.",
+   "L’arc orange va de 5 à 10 : on ajoute 5."
+  ],
+  "a_voir": "Sans répétition, 10 manque ; avec 5 + 5, il apparaît."
+ },
+ {
+  "code": "46-072",
+  "a_dire": "On écrit ⟨a, b⟩ au lieu de ⟨{a, b}⟩ : mêmes éléments, sans accolades.",
+  "legende_titre": "Enlever les accolades",
+  "lecture": [
+   "À gauche en violet, l’écriture avec accolades.",
+   "La flèche orange enlève les accolades.",
+   "À droite en bleu, l’écriture courte ; en dessous, ⟨4, 6⟩ donne les nombres pairs en vert."
+  ],
+  "a_voir": "Les deux écritures désignent le même sous-groupe."
+ },
+ {
+  "code": "46-073",
+  "a_dire": "Une partie X engendre G quand ⟨X⟩ = G : on dit que X est une partie génératrice.",
+  "legende_titre": "Une partie qui atteint tout le groupe",
+  "lecture": [
+   "Le disque bleu 1 est la partie X = {1}.",
+   "La flèche orange dit qu’elle engendre.",
+   "Les douze disques verts sont toutes les heures : ⟨X⟩ = G."
+  ],
+  "a_voir": "Une seule heure suffit à atteindre tout le groupe."
+ },
+ {
+  "code": "46-074",
+  "a_dire": "Sur l’horloge, {5} engendre ℤ/12ℤ et {4} ne l’engendre pas.",
+  "legende_titre": "Deux parties comparées sur l’horloge",
+  "lecture": [
+   "À gauche, le disque bleu 5 et les onze disques verts : les 12 heures sont atteintes.",
+   "À droite, le disque bleu 4 donne seulement 0, 4 et 8 en vert.",
+   "Les disques gris de droite ne sont pas atteints."
+  ],
+  "a_voir": "Une partie engendre tout le groupe, l’autre seulement trois heures."
+ },
+ {
+  "code": "46-075",
+  "a_dire": "Avec une seule lettre, chaque élément se décrit par un nombre de facteurs.",
+  "legende_titre": "Un seul élément de départ",
+  "lecture": [
+   "Les rectangles orange donnent le nombre de facteurs k.",
+   "Les flèches orange vont vers l’élément obtenu.",
+   "Les rectangles verts donnent 8, 0 et 4 pour k = −1, 0 et 1."
+  ],
+  "a_voir": "Le seul choix qui reste est le nombre de facteurs."
+ },
+ {
+  "code": "46-076",
+  "a_dire": "⟨a⟩ est l’ensemble des puissances de a, pour k entier relatif.",
+  "legende_titre": "La formule de ⟨a⟩ sur un cas chiffré",
+  "lecture": [
+   "Dans la formule, a^k en bleu est la forme des éléments.",
+   "La barre et k ∈ ℤ en orange sont la condition.",
+   "Les rectangles verts donnent 7, 0, 5 et 10 pour k = −1, 0, 1 et 2, avec a = 5."
+  ],
+  "a_voir": "Chaque valeur de k donne un élément de ⟨a⟩."
+ },
+ {
+  "code": "46-077",
+  "a_dire": "a^k se lit « k facteurs égaux à a, multipliés ».",
+  "legende_titre": "Ce que compte le petit nombre",
+  "lecture": [
+   "La lettre bleue a est l’élément.",
+   "La lettre orange k en haut compte les facteurs.",
+   "Les trois rectangles bleus 2 multipliés donnent 8 en vert : k vaut 3."
+  ],
+  "a_voir": "Le petit nombre compte les facteurs."
+ },
+ {
+  "code": "46-078",
+  "a_dire": "Le trait ∣ se lit « tel que » : à gauche la forme, à droite la condition.",
+  "legende_titre": "Un trait qui sépare deux parties",
+  "lecture": [
+   "La partie bleue 2k est la forme des éléments.",
+   "Le trait orange se lit « tel que ».",
+   "La partie grise k ∈ ℤ est la condition ; les points verts sont les nombres pairs."
+  ],
+  "a_voir": "Une règle écrite remplace la liste infinie."
+ },
+ {
+  "code": "46-079",
+  "a_dire": "k ∈ ℤ se lit « k est un entier relatif » : k prend aussi des valeurs négatives.",
+  "legende_titre": "Les valeurs que prend k",
+  "lecture": [
+   "La droite graduée montre k de −3 à 3.",
+   "L’accolade orange regroupe les négatifs, la bleue les positifs.",
+   "Les rectangles verts donnent 7, 0 et 5 pour k = −1, 0 et 1."
+  ],
+  "a_voir": "Les valeurs négatives de k donnent des éléments utiles, comme 7."
+ },
+ {
+  "code": "46-080",
+  "a_dire": "Quand l’opération est une addition, « puissance » devient « multiple ».",
+  "legende_titre": "De puissance à multiple",
+  "lecture": [
+   "Le rectangle violet est l’écriture en puissance.",
+   "La flèche orange passe à l’addition.",
+   "Le rectangle bleu est l’écriture en multiple ; la rangée donne 0, 4, 8 en vert."
+  ],
+  "a_voir": "Pour ⟨4⟩, les multiples de 4 donnent 0, 4 et 8."
+ }
+]

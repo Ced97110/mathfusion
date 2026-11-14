@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+text(ax,22,56,r'Centre $Z(G)$','sujet','m')
+text(ax,66,56,'Autre sous-groupe normal','autre','s')
+disc(ax,22,44,4,'sujet',label=r'$z$')
+disc(ax,22,18,4,'sujet',label=r'$z$')
+arrow(ax,(22,39.5),(22,22.5),'fixe')
+text(ax,24.5,31,r'conjugué par $g$','fixe','s',ha='left')
+text(ax,22,8,r'$gzg^{-1}=z$','resultat','m')
+for x,l in ((56,r'$r$'),(76,r'$r^2$')):
+    disc(ax,x,44,4,'autre',label=l)
+    disc(ax,x,18,4,'autre',label=l)
+arrow(ax,(56,39.5),(76,22.5),'varie')
+arrow(ax,(76,39.5),(56,22.5),'varie')
+text(ax,66,8,r'échangés par $g$','varie','s')
+save(fig,'50-225')

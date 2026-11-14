@@ -1,0 +1,179 @@
+[
+ {
+  "code": "75-161",
+  "a_dire": "Un corps K de degré 2 sur F a un automorphisme d’ordre 2 qui laisse F fixe ; pour ℝ et ℂ, c’est le conjugué.",
+  "legende_titre": "Deux corps et un échange",
+  "lecture": [
+   "Le grand cadre bleu est K = ℂ, avec les nombres a + ib : deux coordonnées a et b.",
+   "Le cadre gris à l’intérieur est F = ℝ : ces nombres ne changent pas.",
+   "Les deux cadres orange sont 3 + 4i et 3 − 4i : la flèche double les échange, et deux échanges ramènent au départ."
+  ],
+  "a_voir": "Un petit corps dans un grand corps de degré 2, et un échange qui fixe le petit corps."
+ },
+ {
+  "code": "75-162",
+  "a_dire": "Sur le corps à q² éléments, a ↦ a^q remplace chaque élément par le produit de q facteurs égaux à lui ; c’est l’automorphisme d’ordre 2.",
+  "legende_titre": "Un signe pour toute une opération",
+  "lecture": [
+   "En haut en bleu, le signe est découpé : a est un élément, a^q est le produit de q facteurs égaux à a.",
+   "À gauche, le cadre bleu est 1 + i ; la flèche orange l’élève au cube, avec q = 3.",
+   "À droite, le cadre vert est le résultat 1 − i, le même que le conjugué."
+  ],
+  "a_voir": "Le signe a ↦ a^q donne ici 1 + i ↦ 1 − i."
+ },
+ {
+  "code": "75-163",
+  "a_dire": "U(n) est le nom de l’ensemble des transformations qui gardent H.",
+  "legende_titre": "Le nom de la troisième famille",
+  "lecture": [
+   "Les deux cadres gris du haut sont les familles déjà nommées : l’une garde le produit scalaire, l’autre l’aire orientée.",
+   "Les flèches orange mènent au cadre bleu U(n), la famille qui garde H.",
+   "En bas, la ligne dit que H a le même nombre avant et après la transformation."
+  ],
+  "a_voir": "U(n) est la famille des transformations η telles que H(ηx, ηy) = H(x, y)."
+ },
+ {
+  "code": "75-164",
+  "a_dire": "En dimension 1, multiplier x et y par λ multiplie x ȳ par |λ|², donc la condition est |λ|² = 1.",
+  "legende_titre": "La condition se lit sur λ seul",
+  "lecture": [
+   "En haut, x et y deviennent λx et λy ; le nombre orange |λ|² est le facteur du produit x ȳ.",
+   "Le cadre vert est λ = i : |λ|² = 1, le résultat est inchangé.",
+   "Le cadre rouge est λ = 2 : |λ|² = 4, le résultat est multiplié par 4."
+  ],
+  "a_voir": "Le résultat reste le même seulement si |λ|² = 1."
+ },
+ {
+  "code": "75-165",
+  "a_dire": "Les points z et z̄ d’angles θ et −θ sont tous deux sur le cercle U(1), symétriques par rapport à l’axe réel.",
+  "legende_titre": "Le cercle et deux points symétriques",
+  "lecture": [
+   "Le disque bleu est entouré du cercle U(1) : les points tels que z z̄ = 1.",
+   "Le point orange z est à l’angle θ ; le point violet z̄ est à l’angle −θ.",
+   "Le trait pointillé gris relie les deux points : ils sont de part et d’autre de l’axe réel."
+  ],
+  "a_voir": "z̄ est le symétrique de z par rapport à l’axe horizontal, sur le même cercle."
+ },
+ {
+  "code": "75-166",
+  "a_dire": "La condition λ λ̄ = 1 s’écrit a² + b² = 1 : le point (a, b) est à la distance 1 de l’origine, donc U(1) est le cercle unité.",
+  "legende_titre": "Pourquoi un cercle",
+  "lecture": [
+   "Le triangle bleu a pour côtés a = 0,6 et b = 0,8.",
+   "Le trait orange est la distance du point à l’origine : 1.",
+   "L’arc pointillé bleu est le cercle unité ; en vert, 0,36 + 0,64 = 1."
+  ],
+  "a_voir": "a² + b² = 1 place le point sur le cercle de rayon 1."
+ },
+ {
+  "code": "75-167",
+  "a_dire": "Multiplier par un nombre de module 1 ajoute son angle et garde la distance : c’est une rotation ; le module 1 est nécessaire.",
+  "legende_titre": "Quand multiplier tourne",
+  "lecture": [
+   "Le point gris 1 est le départ ; la flèche orange montre le quart de tour vers i.",
+   "Le point vert i reste sur le cercle pointillé bleu : la distance est gardée.",
+   "Le point rouge 2i a le même angle, mais il est deux fois plus loin : ce n’est pas une rotation."
+  ],
+  "a_voir": "Seul le module 1 donne une rotation."
+ },
+ {
+  "code": "75-168",
+  "a_dire": "La conjugaison est la symétrie par rapport à l’axe réel ; elle renverse l’aire orientée, donc elle n’est pas dans U(1).",
+  "legende_titre": "Un miroir qui n’est pas une rotation",
+  "lecture": [
+   "La flèche bleue 1 est sur l’axe réel gris, qui sert de miroir.",
+   "La flèche verte i et la flèche rouge −i sont reliées par la flèche orange : la symétrie les échange.",
+   "La paire (1 ; i) a l’aire +1, la paire (1 ; −i) a l’aire −1."
+  ],
+  "a_voir": "L’aire orientée change de signe : le conjugué n’est pas dans U(1)."
+ },
+ {
+  "code": "75-169",
+  "a_dire": "Le produit x ȳ a pour partie réelle x₁y₁ + x₂y₂ et pour partie imaginaire −(x₁y₂ − x₂y₁).",
+  "legende_titre": "Les deux parties de x ȳ",
+  "lecture": [
+   "Le cadre bleu donne la partie réelle : la formule, puis le calcul 1 × 3 + 2 × 1 = 5.",
+   "Le cadre orange donne la partie imaginaire : la formule, puis −(1 × 1 − 2 × 3) = 5.",
+   "Le cadre vert réunit les deux : x ȳ = 5 + 5i."
+  ],
+  "a_voir": "La formule garde la même forme avec ces nombres."
+ },
+ {
+  "code": "75-170",
+  "a_dire": "La partie réelle de x ȳ est le produit scalaire ; la partie imaginaire est l’aire orientée au signe près.",
+  "legende_titre": "Le produit scalaire et l’aire dans un seul produit",
+  "lecture": [
+   "La flèche bleue est x = (1, 2) et la flèche violette est y = (3, 1).",
+   "Le parallélogramme orange est l’aire orientée, qui vaut −5.",
+   "Le cadre bleu : la partie réelle 5 est le produit scalaire. Le cadre orange : la partie imaginaire 5 est l’opposé de l’aire −5."
+  ],
+  "a_voir": "Réel = produit scalaire, imaginaire = aire au signe près."
+ },
+ {
+  "code": "75-171",
+  "a_dire": "Une transformation conserve H exactement quand elle conserve à la fois le produit scalaire et l’aire.",
+  "legende_titre": "Il faut garder les deux",
+  "lecture": [
+   "Chaque colonne compare avant et après la symétrie par rapport à l’axe réel.",
+   "La colonne verte : le produit scalaire vaut 0 avant et après.",
+   "Les colonnes rouges : l’aire passe de 1 à −1 et H passe de −i à i."
+  ],
+  "a_voir": "Une symétrie garde le produit scalaire mais pas l’aire, donc pas H."
+ },
+ {
+  "code": "75-172",
+  "a_dire": "U(1) est l’ensemble des transformations du plan à la fois orthogonales et symplectiques, c’est-à-dire SO(2).",
+  "legende_titre": "Deux conditions, une seule famille",
+  "lecture": [
+   "Le grand cercle gris est l’ensemble des transformations orthogonales ; le cercle violet, celui des symplectiques.",
+   "La partie bleue commune est U(1) = SO(2).",
+   "En vert, le quart de tour garde le produit scalaire (0) et l’aire (1)."
+  ],
+  "a_voir": "Garder les deux, c’est être une rotation."
+ },
+ {
+  "code": "75-173",
+  "a_dire": "U(n) est formé des transformations qui sont à la fois orthogonales et symplectiques ; la condition symplectique ne peut pas être retirée.",
+  "legende_titre": "Orthogonal ne suffit pas",
+  "lecture": [
+   "Le cadre de gauche montre les flèches 1 (bleue) et i (verte) de la première coordonnée : H = −i.",
+   "Après avoir conjugué cette coordonnée, la flèche i devient −i (rouge) : H = i.",
+   "Les distances sont gardées, mais H change : la transformation n’est pas dans U(2)."
+  ],
+  "a_voir": "Garder les distances ne suffit pas pour rester dans U(n)."
+ },
+ {
+  "code": "75-174",
+  "a_dire": "Sur un corps fini, les éléments tels que a · a^q = 1 sont au nombre de q + 1 : c’est l’analogue du cercle.",
+  "legende_titre": "Un cercle de 4 points",
+  "lecture": [
+   "Les 9 points sont les nombres a + ib du corps à 9 éléments.",
+   "Les 4 grands points bleus sont 1, −1, i et −i : ceux tels que a · a^q = 1, avec q = 3.",
+   "Le texte vert donne leur nombre : q + 1 = 4."
+  ],
+  "a_voir": "L’analogue du cercle a q + 1 éléments."
+ },
+ {
+  "code": "75-175",
+  "a_dire": "Au chapitre 76, B sera une 2-forme, règle à deux flèches qui rend un nombre, et le déterminant sera un volume orienté.",
+  "legende_titre": "L’aire et le déterminant donnent le même nombre",
+  "lecture": [
+   "Le carré orange est l'aire orientée des flèches (1, 0) bleue et (0, 1) violette : 1.",
+   "La règle B reçoit ces deux flèches et rend le nombre 1.",
+   "Le cadre orange du bas est le tableau dont ces flèches sont les colonnes : son déterminant vaut aussi 1.",
+   "Le cube est le volume orienté, en dimension 3."
+  ],
+  "a_voir": "B prend deux flèches et rend un nombre ; le déterminant sera le volume orienté."
+ },
+ {
+  "code": "75-176",
+  "a_dire": "Une transformation symplectique conserve un volume orienté, donc son déterminant vaut 1.",
+  "legende_titre": "Un volume gardé, un déterminant égal à 1",
+  "lecture": [
+   "Le carré bleu est le carré de départ, d’aire 1.",
+   "Le carré vert est son image par le quart de tour η (flèche orange), d’aire 1.",
+   "En bas, le déterminant du quart de tour vaut 1 : le volume est conservé."
+  ],
+  "a_voir": "Le quart de tour garde l’aire, donc son déterminant vaut 1."
+ }
+]

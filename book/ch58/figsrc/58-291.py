@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+ox, oy, u = 26, 8, 10.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(-0.3, -0.6), P(2.0, 4.0)], 'sujet', lw=0.9, dash=True)
+arrow(ax, P(0, 0), P(1, 2), 'sujet', lw=1.6)
+arrow(ax, P(0, 0), P(0, 1), 'autre', lw=1.6)
+disc(ax, P(0, 1)[0], P(0, 1)[1], 2.2, 'autre', fill=False)
+text(ax, P(1, 2)[0] + 2, P(1, 2)[1] - 2, '(1, 2)', 'sujet', 's', ha='left')
+text(ax, P(0, 1)[0] - 4, P(0, 1)[1], '(0, 1)', 'autre', 's', ha='right')
+text(ax, P(2.0, 4.0)[0] + 1, P(2.0, 4.0)[1] + 1, 'multiples', 'sujet', 's', ha='left')
+text(ax, P(2.0, 4.0)[0] + 1, P(2.0, 4.0)[1] - 3, 'de (1, 2)', 'sujet', 's', ha='left')
+text(ax, 66, 22, '(0, 1) hors de la droite', 'autre', 's')
+text(ax, 66, 18, ': non atteint', 'autre', 's')
+text(ax, 66, 8, '1 vecteur < 2 : pas le plan', 'fixe', 's')
+save(fig, '58-291')

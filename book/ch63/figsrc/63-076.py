@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 10, 34, 42, 'sujet')
+box(ax, 8, 14, 22, 14, 'sujet', fill=False, label=r'$H_1=\{1\}$', size='s')
+text(ax, 19, 44, r'$H_2=\{1,\sigma\}$', 'sujet', 's')
+box(ax, 52, 10, 34, 42, 'autre')
+box(ax, 58, 14, 22, 14, 'autre', fill=False, label=r'$\mathbb{Q}=\mathrm{Inv}\,H_2$', size='s')
+text(ax, 69, 44, r'$\mathrm{Inv}\,H_1=\mathbb{Q}(\sqrt{2})$', 'autre', 's')
+arrow(ax, (36.5, 31), (51.5, 31), 'varie')
+text(ax, 44, 35.5, r'$\mathrm{Inv}$', 'varie', 's')
+text(ax, 44, 59, r"$H_1\subseteq H_2$ : l'ordre se renverse", 'fixe', 's')
+save(fig, '63-076')

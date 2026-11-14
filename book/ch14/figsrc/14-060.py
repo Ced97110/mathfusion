@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 29, 56, 30, 14, 'sujet', label=r'$3^{-2}$', size='l')
+box(ax, 2, 12, 38, 34, 'limite', fill=False, dash=True)
+box(ax, 48, 12, 38, 34, 'resultat', fill=False)
+arrow(ax, (34, 55), (21, 47), 'limite'); arrow(ax, (54, 55), (67, 47), 'resultat')
+text(ax, 21, 41, 'opposé de 9', 'limite', 's'); text(ax, 67, 41, 'inverse de 9', 'resultat', 's')
+text(ax, 21, 32, r'$9+(-9)=0$', 'limite', 's'); text(ax, 67, 32, r'$9\times\frac{1}{9}=1$', 'resultat', 's')
+text(ax, 21, 21, '−9 : faux', 'limite', 'm', weight='bold'); text(ax, 67, 21, r'$\frac{1}{9}$ : positif', 'resultat', 'm', weight='bold')
+save(fig, '14-060')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+O = (40, 22); u = 7
+P = lambda x, y, z: iso(x, y, z, O, u)
+poly(ax, [P(-2.5,-2.5,0), P(2.5,-2.5,0), P(2.5,2.5,0), P(-2.5,2.5,0)], 'fixe')
+text(ax, 70, 10, 'plan horizontal', 'fixe', 's')
+arrow(ax, P(0,0,0), P(1,2,3), 'varie')
+line(ax, [P(1,2,3), P(1,2,0)], 'varie', dash=True)
+arrow(ax, P(0,0,0), P(1,2,0), 'varie', lw=0.7)
+text(ax, P(1,2,3)[0] - 2, P(1,2,3)[1] + 4, r'$(1,\,2,\,3)$', 'varie', 'm', ha='right')
+text(ax, 31, 27, 'ombre du vecteur', 'varie', 's', ha='right')
+arrow(ax, P(0,0,0), P(0,0,1), 'sujet', lw=1.4)
+text(ax, 44, 28, r'$(0,\,0,\,1)$', 'sujet', 'm', ha='left')
+disc(ax, O[0], O[1], 1.2, 'sujet')
+text(ax, 44, 17, 'ombre : un point', 'sujet', 's', ha='left')
+box(ax, 8, 61, 72, 8, 'resultat', label=r'$0\times 2-0\times 1=0$ : aire nulle', size='s')
+save(fig, '75-097')

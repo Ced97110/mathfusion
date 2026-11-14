@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+box(ax, 3, 24, 24, 14, 'sujet', label=r'$(a, b)$', size='l')
+box(ax, 62, 24, 22, 14, 'resultat', label=r'$ab$', size='l')
+arrow(ax, (27, 31), (62, 31), 'varie', lw=1.4)
+text(ax, 44.5, 36, r'$\mapsto$', 'varie', 'xl')
+text(ax, 44.5, 25, 'est envoyé sur', 'varie', 's')
+text(ax, 15, 17, 'un couple', 'sujet', 's')
+text(ax, 73, 17, 'un produit', 'resultat', 's')
+text(ax, 44, 7, 'de gauche vers droite : deux éléments', 'fixe', 's')
+save(fig, '44-105')

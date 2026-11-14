@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+disc(ax, 31, 50, 20, 'sujet', fill=False, lw=1.2)
+disc(ax, 57, 50, 20, 'autre', fill=False, lw=1.2)
+text(ax, 22, 75, r'$P$', 'sujet', 'l'); text(ax, 66, 75, r'$Q$', 'autre', 'l')
+text(ax, 22, 26, '3 éléments', 'sujet', 's'); text(ax, 66, 26, '5 éléments', 'autre', 's')
+for p in [(22, 56), (24, 44)]: disc(ax, *p, 2.2, 'sujet')
+for p in [(62, 60), (66, 50), (62, 40), (70, 56)]: disc(ax, *p, 2.2, 'autre')
+disc(ax, 44, 50, 2.4, 'resultat', label=r'$e$', size='s')
+text(ax, 44, 17, r'taille de $P\cap Q$ : divise 3 et 5', 'encre', 's')
+text(ax, 44, 9, r'seul choix : 1, donc $\{e\}$', 'resultat', 'm')
+save(fig, '50-166')

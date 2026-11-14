@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+# deux regroupements du même produit i x i x j
+text(ax, 22, 78, 'on regroupe à gauche', 'sujet', 's')
+text(ax, 66, 78, 'on regroupe à droite', 'autre', 's')
+box(ax, 4, 60, 36, 11, 'sujet', label=r'$(i\times i)\times j$')
+box(ax, 48, 60, 36, 11, 'autre', label=r'$i\times(i\times j)$')
+arrow(ax, (22, 60), (22, 52), 'sujet')
+arrow(ax, (66, 60), (66, 52), 'autre')
+box(ax, 4, 41, 36, 11, 'sujet', label=r'$\mathbf{0}\times j$')
+box(ax, 48, 41, 36, 11, 'autre', label=r'$i\times k$')
+arrow(ax, (22, 41), (22, 33), 'sujet')
+arrow(ax, (66, 41), (66, 33), 'autre')
+box(ax, 4, 22, 36, 11, 'sujet', label=r'$\mathbf{0}$')
+box(ax, 48, 22, 36, 11, 'autre', label=r'$-j$')
+box(ax, 20, 4, 48, 11, 'resultat', label=r'$\mathbf{0}\neq -j$')
+save(fig, '41-157')

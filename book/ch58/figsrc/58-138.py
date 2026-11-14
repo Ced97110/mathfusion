@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+u, O = 9.0, (30, 20)
+P = lambda x, y: (O[0] + x * u, O[1] + y * u)
+v = (1, 2)
+# la droite : tous les multiples t*(1, 2), t de -0.8 à 3.3
+line(ax, [P(-0.8 * v[0], -0.8 * v[1]), P(3.3 * v[0], 3.3 * v[1])], 'sujet', lw=1.6)
+arrow(ax, P(-1.6, 0), P(5, 0), 'fixe', lw=0.6)
+arrow(ax, P(0, -2.2), P(0, 7.4), 'fixe', lw=0.6)
+for t in (0, 1, 2, 3):
+    disc(ax, *P(t * v[0], t * v[1]), 1.1, 'sujet' if t else 'encre', fill=True)
+arrow(ax, P(0, 0), P(*v), 'varie', lw=1.3)
+text(ax, P(1, 2)[0] + 4, P(1, 2)[1] - 1, r'$(1,2)$', 'varie', 's', ha='left')
+text(ax, P(2, 4)[0] + 4, P(2, 4)[1] - 1, r'$(2,4)$', 'sujet', 's', ha='left')
+text(ax, P(3, 6)[0] + 4, P(3, 6)[1] - 1, r'$(3,6)$', 'sujet', 's', ha='left')
+text(ax, P(0, 0)[0] - 3, P(0, 0)[1] - 3, r'$O$', 'encre', 's')
+text(ax, 66, 40, 'droite : tous les', 'sujet', 's')
+text(ax, 66, 36, 'multiples de (1, 2)', 'sujet', 's')
+text(ax, 66, 30, 'passe par l’origine', 'sujet', 's')
+save(fig, '58-138')

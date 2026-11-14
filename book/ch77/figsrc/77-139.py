@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 30, 76, 28, 10, 'sujet', label=r'$1+i$', size='m')
+arrow(ax, (38, 75), (22, 66), 'varie'); arrow(ax, (50, 75), (66, 66), 'varie')
+box(ax, 2, 52, 40, 13, 'sujet', label=r'conjugué $1-i$', size='s')
+box(ax, 46, 52, 40, 13, 'autre'); text(ax, 66, 61, r'$\rho$ : $1\ \ -1$', 'encre', 's'); text(ax, 66, 55.5, r'$1\ \ \ \ \ \ \ 1$', 'encre', 's')
+arrow(ax, (22, 51), (22, 42), 'varie'); arrow(ax, (66, 51), (66, 42), 'varie')
+box(ax, 2, 28, 40, 13, 'fixe', label=r'$z+\bar z=2,\ z\bar z=2$', size='s')
+box(ax, 46, 28, 40, 13, 'fixe', label=r'tr $=2$, det $=2$', size='s')
+arrow(ax, (22, 27), (36, 17), 'resultat'); arrow(ax, (66, 27), (52, 17), 'resultat')
+box(ax, 22, 6, 44, 10, 'resultat', label='mêmes nombres', size='m')
+save(fig, '77-139')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 50, 'un 1 suivi de sept zéros', 'fixe', 's')
+box(ax, 4, 26, 24, 12, 'sujet', label='2,9', size='l')
+box(ax, 54, 26, 30, 12, 'resultat', label='29 000 000', size='m')
+arrow(ax, (28, 32), (54, 32), 'varie')
+text(ax, 41, 40, r'$\times$ 10 000 000', 'varie', 's')
+line(ax, [(41, 32), (41, 18)], 'varie', dash=True)
+box(ax, 19, 6, 44, 12, 'varie', label=r'$10^{7}$ : facteur d’échelle', size='m')
+save(fig, '14-074')

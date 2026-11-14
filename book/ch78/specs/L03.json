@@ -1,0 +1,180 @@
+[
+ {
+  "code": "78-033",
+  "a_dire": "Le produit d'une somme se calcule morceau par morceau : (x1 + x2)y = x1y + x2y.",
+  "legende_titre": "Somme d'abord, ou morceau par morceau",
+  "lecture": [
+   "En vert, avec le produit ordinaire, (2 + 3) × 4 et 2 × 4 + 3 × 4 donnent tous deux 20.",
+   "En rouge, avec le produit étrange (multiplier, puis ajouter 1), (1 + 1) * 1 donne 3.",
+   "Toujours en rouge, 1 * 1 + 1 * 1 donne 4 : les deux côtés ne sont plus égaux."
+  ],
+  "a_voir": "Le calcul par morceaux n'est possible que si la règle est vraie : en vert elle l'est, en rouge elle ne l'est pas."
+ },
+ {
+  "code": "78-034",
+  "a_dire": "Un nombre a peut se placer devant, entre ou après les facteurs sans changer le résultat : a(xy) = (ax)y = x(ay).",
+  "legende_titre": "Où placer le nombre 3 ?",
+  "lecture": [
+   "Les trois cases bleues du haut sont les trois écritures, avec x = E, y = G et a = 3.",
+   "Les trois flèches grises pointent vers le même tableau.",
+   "Le tableau vert a un 3 en haut à gauche et des 0 ailleurs."
+  ],
+  "a_voir": "Les trois écritures donnent le même tableau."
+ },
+ {
+  "code": "78-035",
+  "a_dire": "« Non associative » veut dire que l'on n'exige pas l'associativité : les cas associatifs restent permis.",
+  "legende_titre": "Ce que le mot « non » ne retire pas",
+  "lecture": [
+   "Le grand cadre bleu regroupe toutes les algèbres non associatives, c’est-à-dire pas forcément associatives.",
+   "Le cadre vert, dedans, contient les cas associatifs : les nombres ordinaires donnent 24 dans les deux groupements.",
+   "Le cadre violet contient les cas non associatifs : les matrices avec le crochet."
+  ],
+  "a_voir": "Les nombres ordinaires sont associatifs et sont aussi dans le cadre bleu : on ajoute des cas, on n’en retire aucun."
+ },
+ {
+  "code": "78-036",
+  "a_dire": "La définition n'exige pas d'élément unité : avec le crochet, la matrice I ne joue pas ce rôle.",
+  "legende_titre": "Une unité n'est pas exigée",
+  "lecture": [
+   "En vert, avec le produit ordinaire, I · E donne E : I joue le rôle de 1.",
+   "En rouge, avec le crochet, [I, E] donne 0 et non E.",
+   "La matrice I ne convient donc pas pour le crochet."
+  ],
+  "a_voir": "Avec le crochet, aucune unité n'apparaît ici, et la définition accepte quand même ce cas."
+ },
+ {
+  "code": "78-037",
+  "a_dire": "L'associateur [x, y, z] = (xy)z − x(yz) mesure de combien le groupement change le résultat.",
+  "legende_titre": "Un seul objet pour le défaut de groupement",
+  "lecture": [
+   "En haut, la définition : [𝑥, 𝑦, 𝑧] = (𝑥𝑦)𝑧 − 𝑥(𝑦𝑧).",
+   "Les trois éléments : 𝑥 = 𝐸 et 𝑦 = 𝐸 en bleu, 𝑧 = 𝐺 en violet.",
+   "À gauche, le groupement à gauche donne 0 ; à droite, le groupement à droite donne −2𝐸 ; le signe orange − les soustrait.",
+   "En bas, en vert, la différence 0 − (−2𝐸) donne 2𝐸."
+  ],
+  "a_voir": "Deux groupements, une soustraction, un résultat : l’associateur."
+ },
+ {
+  "code": "78-038",
+  "a_dire": "L'algèbre est associative exactement quand l'associateur est nul pour tous les triplets.",
+  "legende_titre": "Associateur nul ou non",
+  "lecture": [
+   "Le cadre bleu du haut donne l'équivalence : associateur nul si et seulement si les deux groupements sont égaux.",
+   "À gauche, en vert, 2, 3 et 4 : 24 − 24 = 0, donc groupements égaux.",
+   "À droite, en rouge, E, E et G : la différence est 2E, donc groupements différents."
+  ],
+  "a_voir": "Différence nulle : groupements égaux. Différence non nulle : groupements différents."
+ },
+ {
+  "code": "78-039",
+  "a_dire": "Le crochet et l'associateur sont deux mesures de même forme : deux calculs du même objet, puis une différence.",
+  "legende_titre": "Deux mesures de même forme",
+  "lecture": [
+   "À gauche, en bleu, xy et yx : deux lettres, deux ordres.",
+   "À droite, en violet, (xy)z et x(yz) : trois lettres, deux groupements.",
+   "Dans chaque colonne, le signe moins mène à une différence, en vert."
+  ],
+  "a_voir": "Dans les deux colonnes, on fait deux calculs et on les soustrait."
+ },
+ {
+  "code": "78-040",
+  "a_dire": "Une algèbre de Lie est une algèbre dont le produit [x, y] suit deux règles : [x, x] = 0 et la règle de Jacobi.",
+  "legende_titre": "Ce qui distingue l'algèbre de Lie",
+  "lecture": [
+   "Le grand cadre gris dit ce que toutes ont en commun : un espace vectoriel avec un produit.",
+   "Le cadre violet à gauche est l'algèbre associative, avec (xy)z = x(yz).",
+   "Le cadre bleu à droite est l'algèbre de Lie, avec deux règles et sans associativité."
+  ],
+  "a_voir": "L'algèbre de Lie ajoute deux règles au produit, et ne reprend pas l'associativité."
+ },
+ {
+  "code": "78-041",
+  "a_dire": "La règle 1 dit que le crochet d'un élément avec lui-même est nul : [x, x] = 0.",
+  "legende_titre": "Un élément avec lui-même",
+  "lecture": [
+   "À gauche, en rouge, le produit ordinaire de A par A : 7, 10, 15 et 22.",
+   "À droite, en vert, le crochet de A avec A : quatre 0.",
+   "Le signe sous chaque tableau dit s'il est nul ou non."
+  ],
+  "a_voir": "Le crochet de A avec A est nul, le produit ordinaire ne l'est pas."
+ },
+ {
+  "code": "78-042",
+  "a_dire": "L'identité de Jacobi dit que la somme des trois termes [[x, y], z] + [[y, z], x] + [[z, x], y] est nulle.",
+  "legende_titre": "Trois termes, une somme nulle",
+  "lecture": [
+   "Les trois cadres du haut sont les trois termes calculés avec i et j : 0, j et −j.",
+   "Les signes + les relient.",
+   "Le cadre vert du bas montre leur somme : 0."
+  ],
+  "a_voir": "Le terme j et le terme −j s'annulent, le premier terme est déjà nul."
+ },
+ {
+  "code": "78-043",
+  "a_dire": "La règle de Jacobi se lit comme un seul terme recopié en tournant les trois lettres, puis additionné.",
+  "legende_titre": "Tourner les lettres, puis additionner",
+  "lecture": [
+   "Les trois colonnes sont les places x (bleu), y (orange) et z (violet).",
+   "Chaque ligne est le même terme avec les lettres tournées d'un cran, comme le montrent les flèches.",
+   "À droite de chaque ligne, la valeur : 0, j et −j."
+  ],
+  "a_voir": "Les trois lignes sont le même terme tourné, et leur somme vaut 0."
+ },
+ {
+  "code": "78-044",
+  "a_dire": "L'antisymétrie dit que changer l'ordre dans le crochet change le signe : [x, y] = −[y, x].",
+  "legende_titre": "Les deux ordres du crochet",
+  "lecture": [
+   "À gauche, en bleu, le crochet [E, G] : diagonale 1 et −1.",
+   "À droite, en violet, le crochet [G, E] : diagonale −1 et 1.",
+   "La flèche orange relie les deux tableaux, qui sont opposés."
+  ],
+  "a_voir": "Chaque case de [G, E] est l'opposée de la case de [E, G]."
+ },
+ {
+  "code": "78-045",
+  "a_dire": "On obtient l'antisymétrie en développant [x + y, x + y] = 0 en quatre crochets.",
+  "legende_titre": "De [x + y, x + y] = 0 à l'antisymétrie",
+  "lecture": [
+   "Le cadre bleu du haut est le point de départ : le crochet de la somme avec elle-même vaut 0.",
+   "La flèche orange est l'étape qui compte : le développement en quatre crochets.",
+   "Les cadres gris [x, x] et [y, y] valent 0 et tombent ; il reste [x, y] + [y, x] = 0, puis la conclusion en vert."
+  ],
+  "a_voir": "Après le développement, il ne reste que [x, y] + [y, x] = 0."
+ },
+ {
+  "code": "78-046",
+  "a_dire": "Pour des matrices, la somme de Jacobi est nulle : deux termes sont opposés.",
+  "legende_titre": "Les trois termes sur une droite",
+  "lecture": [
+   "Sur la droite, les nombres sont des multiples de E.",
+   "La flèche orange va de 0 à +2E.",
+   "La flèche violette revient de +2E à 0, ce qui donne −2E : la somme est nulle (point vert)."
+  ],
+  "a_voir": "On part de 0, on avance de 2E, on recule de 2E : on revient à 0."
+ },
+ {
+  "code": "78-047",
+  "a_dire": "Dans la somme de Jacobi développée, chacun des six produits apparaît une fois avec + et une fois avec −.",
+  "legende_titre": "Les produits se détruisent deux à deux",
+  "lecture": [
+   "Chaque colonne est un des six produits de trois lettres.",
+   "La case verte du haut le porte avec le signe +.",
+   "La case rouge du bas le porte avec le signe − : les deux se détruisent."
+  ],
+  "a_voir": "Six colonnes, chacune avec un + et un −."
+ },
+ {
+  "code": "78-048",
+  "a_dire": "L'identité de Jacobi vient de l'associativité du produit ordinaire qui a construit le crochet, même si le crochet n'est plus associatif.",
+  "legende_titre": "D'où vient la règle de Jacobi",
+  "lecture": [
+   "Le cadre bleu du haut est le produit ordinaire, qui est associatif.",
+   "Le cadre orange en dessous est le crochet construit à partir de lui.",
+   "À gauche, en rouge, le crochet n’est pas associatif : l’associateur de 𝐸, 𝐸, 𝐺 vaut 2𝐸.",
+   "À droite, en vert, la somme de Jacobi des trois termes vaut 0 ; la flèche verte la relie à l’associativité du produit ordinaire."
+  ],
+  "a_voir": "Le crochet perd l’associativité, mais Jacobi reste vrai parce que le produit ordinaire est associatif."
+ }
+]

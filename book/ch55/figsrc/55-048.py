@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 2, 56, 38, 13, 'fixe', label=r'nombres de $F$', size='s')
+box(ax, 48, 56, 38, 13, 'sujet', label='projections\n' + r'$s_1, \ldots, s_r$', size='s')
+arrow(ax, (21, 55), (34, 42), 'varie'); arrow(ax, (67, 55), (54, 42), 'varie')
+text(ax, 44, 50, r'$+$ et $\times$', 'varie', 'm')
+box(ax, 8, 26, 72, 15, 'resultat', label=r'$F[s_1, \ldots, s_r]$', size='l')
+text(ax, 44, 20, r'fonctions à $r$ entrées', 'resultat', 's')
+text(ax, 44, 9, r'$r = 1$ : on retrouve $F[s]$', 'encre', 's')
+save(fig, '55-048')

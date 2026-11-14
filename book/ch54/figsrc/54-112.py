@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 2, 3, 84, 69, 'fixe')
+text(ax, 8, 67, r'$S=$ ℝ', 'fixe', 's', ha='left')
+box(ax, 6, 8, 76, 48, 'sujet')
+text(ax, 12, 51, r'$R[u]=$ ℤ$[\sqrt{2}]$', 'sujet', 's', ha='left')
+box(ax, 10, 12, 28, 26, 'autre')
+text(ax, 15, 33, r'$R=$ ℤ', 'autre', 's', ha='left')
+text(ax, 24, 21, '2', 'autre', 'm')
+text(ax, 62, 28, r'$3+2\sqrt{2}$', 'sujet', 'm')
+text(ax, 62, 62, r'$\frac{1}{2}\notin R[u]$', 'limite', 'm')
+text(ax, 62, 17, 'valeurs A(√2)', 'sujet', 's')
+save(fig, '54-112')

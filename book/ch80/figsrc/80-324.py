@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 27, 52, 34, 12, 'sujet', label=r'$x^2 = x$', size='l')
+box(ax, 2, 26, 36, 12, 'resultat', label=r'$x + x = 0$')
+box(ax, 50, 26, 36, 12, 'resultat', label=r'$ab = ba$')
+arrow(ax, (36, 52), (20, 38), 'sujet'); arrow(ax, (52, 52), (68, 38), 'sujet')
+text(ax, 12, 47, 'addition', 'sujet', 's'); text(ax, 76, 47, 'ordre', 'sujet', 's')
+arrow(ax, (38, 32), (50, 32), 'varie')
+brace(ax, 2, 86, 24, 'resultat', label='une seule règle suffit')
+save(fig, '80-324')

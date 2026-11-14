@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def plane(ax, ox, oy, ux, uy, x0, x1, y0, y1):
+    arrow(ax, (ox + x0 * ux, oy), (ox + x1 * ux + 3, oy), "fixe", lw=0.8)
+    arrow(ax, (ox, oy + y0 * uy), (ox, oy + y1 * uy + 3), "fixe", lw=0.8)
+    return lambda x, y: (ox + x * ux, oy + y * uy)
+fig, ax = canvas(54)
+cs = (12, 31, 50, 74)
+line(ax, [(cs[0] - 7, 22), (cs[0] + 7, 38)], 'sujet', lw=1.5)
+line(ax, [(cs[1] - 7, 38), (cs[1] + 7, 22)], 'sujet', lw=1.5)
+line(ax, [(cs[2] - 8, 30), (cs[2] + 8, 30)], 'sujet', lw=1.5)
+line(ax, [(cs[3], 20), (cs[3], 42)], 'limite', lw=1.7)
+brace(ax, cs[0] - 8, cs[2] + 8, 18, 'sujet', label='ont une pente')
+text(ax, 31, 6, r'$y = m x + b$', 'sujet', 'm', weight='bold')
+text(ax, cs[3], 47, 'verticale', 'limite', 'm', weight='bold')
+text(ax, cs[3], 18, r'$x=4$', 'limite', 'm', weight='bold')
+text(ax, cs[3], 10, 'pas de pente', 'limite', 's')
+save(fig, '19-122')

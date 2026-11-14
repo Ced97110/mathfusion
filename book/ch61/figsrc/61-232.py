@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 4, 78, r'corps de base $F=\mathbb{Z}/2\mathbb{Z}$', 'sujet', 'm', ha='left', weight='bold')
+disc(ax, 12, 66, 4.5, 'sujet', label='0'); disc(ax, 26, 66, 4.5, 'sujet', label='1')
+text(ax, 40, 66, r'$1+1=0$', 'varie', 'm', ha='left')
+arrow(ax, (19, 60), (19, 54), 'varie')
+box(ax, 5, 44, 30, 10, 'autre', label=r'$x^2+x+1$')
+text(ax, 40, 51, 'en 0 : vaut 1', 'autre', 's', ha='left'); text(ax, 40, 47, 'en 1 : vaut 1', 'autre', 's', ha='left')
+text(ax, 40, 40.5, 'aucune racine dans $F$', 'autre', 's', ha='left')
+arrow(ax, (20, 44), (20, 25), 'varie'); text(ax, 24, 33, 'on garde les restes', 'varie', 's', ha='left')
+box(ax, 5, 12, 78, 12, 'resultat', label=r'$\mathbb{Z}/2\mathbb{Z}[x]\,/\,(x^2+x+1)$')
+text(ax, 44, 5, 'un nouveau corps', 'resultat', 'm', weight='bold')
+save(fig, '61-232')

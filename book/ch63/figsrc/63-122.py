@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+f = numberline(ax, 8, 80, 36, 0, 8, step=1, labels=True, every=4, arrow_right=False)
+arrow(ax, (f(1), 46), (f(4) - 2.5, 46), 'sujet')
+arrow(ax, (f(7), 46), (f(4) + 2.5, 46), 'autre')
+text(ax, f(2.2), 52, r'$4\leq|G|$', 'sujet', 's')
+text(ax, f(5.8), 52, r'$|G|\leq4$', 'autre', 's')
+disc(ax, f(4), 36, 2.4, 'resultat')
+text(ax, f(4), 25, r'$|G|=4$', 'resultat', 's')
+text(ax, 44, 14, r'$G\subseteq\mathrm{Gal}$ et $|G|=|\mathrm{Gal}|$', 'encre', 's')
+text(ax, 44, 6, r'donc $G=\mathrm{Gal}$', 'resultat', 'm')
+save(fig, '63-122')

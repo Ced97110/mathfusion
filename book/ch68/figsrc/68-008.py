@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 9, 60, 70, 12, 'sujet', label='objectif : détecter ou corriger\nun nombre donné d’erreurs', size='s')
+arrow(ax, (24, 59.5), (24, 53), 'varie')
+arrow(ax, (64, 59.5), (64, 53), 'varie')
+box(ax, 4, 40, 40, 12, 'varie', label='prix : combien de\nbits ajoutés ?', size='s')
+box(ax, 48, 40, 38, 12, 'autre', label='méthode : calculés\ncomment ?', size='s')
+f = numberline(ax, 8, 72, 22, 0, 8, step=1, every=2)
+for v, s in [(1, '+1\nen tout 5'), (3, '+3\nen tout 7'), (8, '+8\nen tout 12')]:
+    disc(ax, f(v), 22, 2.2, 'varie')
+    text(ax, min(max(f(v), 13), 71), 30.5, s, 'varie', 's')
+arrow(ax, (f(3) - 3, 8.5), (f(1), 8.5), 'resultat', lw=1.2)
+text(ax, 44, 3, 'on cherche le plus petit prix', 'resultat', 's')
+text(ax, 80, 17, 'bits', 'fixe', 's')
+save(fig, '68-008')

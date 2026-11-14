@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(60)
+box(ax,2,20,32,24,'sujet'); box(ax,54,20,32,24,'autre')
+text(ax,18,36,r'$B$','sujet','xl'); text(ax,18,27,'forme\nbilinéaire','sujet','s')
+text(ax,70,36,r'$Q$','autre','xl'); text(ax,70,27,'forme\nquadratique','autre','s')
+arrow(ax,(35,36),(53,36),'varie'); arrow(ax,(53,28),(35,28),'varie')
+text(ax,44,52,r'aller : $Q(x)=B(x,x)$','varie','m')
+text(ax,44,14,'retour : polarisation','varie','m')
+box(ax,12,1,64,7,'resultat',label=r'un seul $Q$ pour chaque $B$',size='s')
+save(fig,'71-120')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+box(ax,6,72,76,13,'sujet',label=r"$x_i\mapsto a_i,\ \ x'_i\mapsto a_i^{-1}$")
+box(ax,6,44,76,13,'varie',lw=1.8,label=r"$x_i\,x'_i\mapsto a_ia_i^{-1}=1$")
+box(ax,6,16,76,13,'resultat',label=r'$\eta : FG \rightarrow G$')
+text(ax,6,88,'1. on choisit les images','sujet','s',ha='left')
+text(ax,6,60,'2. étape décisive','varie','s',ha='left',weight='bold')
+text(ax,82,60,'ex. : 3 + (−3) = 0','varie','s',ha='right')
+text(ax,6,32,'3. passage au quotient','resultat','s',ha='left')
+arrow(ax,(50,71.5),(50,57.5),'fixe'); arrow(ax,(50,43.5),(50,29.5),'fixe')
+save(fig,'49-055')

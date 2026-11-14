@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 20, 64, 'avant : une règle', 'fixe', 's'); text(ax, 65, 64, 'après : un produit', 'sujet', 's')
+box(ax, 4, 42, 30, 12, 'fixe', label=r'$B(u,v)$', size='m')
+arrow(ax, (19, 42), (19, 31), 'fixe'); box(ax, 9, 19, 20, 11, 'fixe', label='5', size='l')
+text(ax, 19, 13, 'un nombre, fin', 'fixe', 's')
+box(ax, 50, 46, 30, 12, 'sujet', label=r'$u\wedge v$', size='m')
+arrow(ax, (58, 46), (50, 34), 'varie'); arrow(ax, (72, 46), (76, 34), 'varie')
+box(ax, 39, 22, 22, 12, 'sujet', label='somme', size='s'); box(ax, 65, 22, 22, 12, 'sujet', label='produit', size='s')
+text(ax, 50, 16, 'on l’additionne', 'varie', 's'); text(ax, 76, 15, 'on le multiplie\nencore', 'varie', 's')
+save(fig, '76-014')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 2, 2, 84, 70, 'autre', lw=1.0, r=3)
+text(ax, 44, 66, r'$\mathbb{R}$ : d’autres nombres en plus', 'autre', 's')
+box(ax, 8, 8, 72, 50, 'sujet', lw=1.0, r=3)
+text(ax, 44, 52, r'$\mathbb{Q}$ : corps des fractions de $\mathbb{Z}$', 'sujet', 's')
+box(ax, 16, 14, 40, 30, 'fixe', lw=1.0, r=3)
+text(ax, 36, 38, r'$\mathbb{Z}$ : on ne divise pas', 'fixe', 's')
+text(ax, 36, 24, r'$\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$', 'encre', 'm')
+text(ax, 68, 34, 'que des', 'sujet', 's')
+text(ax, 68, 28, 'quotients', 'sujet', 's')
+text(ax, 68, 22, 'd’entiers', 'sujet', 's')
+save(fig, '54-045')

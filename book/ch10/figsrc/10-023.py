@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 56, r'$E = \tilde{V} - V$', 'sujet', 'xl')
+f = numberline(ax, 10, 78, 32, 8460, 8500, 10, labels=False, arrow_right=False)
+disc(ax, f(8463), 32, 1.5, 'sujet'); disc(ax, f(8500), 32, 1.5, 'varie')
+arrow(ax, (f(8463) + 1, 34), (f(8500) - 1, 34), 'varie', curve=-0.3); text(ax, 47, 43, r'$+37$', 'varie', 'l')
+text(ax, f(8463) + 3, 24, r'$V$ = 8 463', 'sujet', 's'); text(ax, f(8500) - 3, 24, r'$\tilde{V}$ = 8 500', 'varie', 's')
+text(ax, 44, 48, r'$8\,500 - 8\,463 = +37$', 'encre', 'm')
+text(ax, 44, 11, r'autre ordre : $V - \tilde{V} = -37$', 'autre', 's')
+save(fig, '10-023')

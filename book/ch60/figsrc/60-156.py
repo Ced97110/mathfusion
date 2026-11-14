@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, r'entiers $\mathbb{Z}$ à la place du corps $F$', 'encre', 'm')
+box(ax, 6, 34, 76, 24, 'sujet', fill=False, dash=True)
+text(ax, 44, 53, r'l’ensemble des $2p+\lambda q$', 'sujet', 'm')
+box(ax, 18, 38, 20, 9, 'sujet', label='2', size='l')
+box(ax, 50, 38, 20, 9, 'sujet', label=r'$\lambda$', size='l')
+box(ax, 4, 14, 38, 12, 'limite', label=r'$g=2$ : pas $\lambda$', size='s')
+box(ax, 46, 14, 38, 12, 'limite', label=r'$g=\lambda$ : pas $2$', size='s')
+arrow(ax, (28, 38), (23, 26), 'limite')
+arrow(ax, (60, 38), (65, 26), 'limite')
+text(ax, 44, 5, r'aucun polynôme $g$ seul ne suffit', 'limite', 's')
+save(fig, '60-156')

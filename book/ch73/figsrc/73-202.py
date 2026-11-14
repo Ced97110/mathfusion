@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+def P(c, r, a): return (c[0] + r * math.cos(math.radians(a)), c[1] + r * math.sin(math.radians(a)))
+def dot(ax, p, role, r=1.5): ax.add_patch(Circle(p, r, ec=COL[role], fc=COL[role], zorder=4))
+
+fig, ax = canvas(100)
+o = (30, 60); k = 22
+A = (o[0] + k, o[1]); B = (o[0], o[1] + k); C = (o[0], o[1] - k)
+line(ax, [(5, o[1]), (82, o[1])], 'sujet', lw=1.0)
+line(ax, [(o[0] - 24, o[1] - 24), (o[0] + 24, o[1] + 24)], 'autre', lw=1.0, dash=True)
+text(ax, 70, o[1] + 4, 'miroir τ', 'sujet', 's')
+text(ax, 68, o[1] + 29, 'miroir σ', 'autre', 's')
+arrow(ax, (A[0] - 2, A[1] + 2), (B[0] + 2, B[1] - 2), 'varie', curve=0.3)
+arrow(ax, (B[0] - 1.5, B[1] - 3), (C[0] - 1.5, C[1] + 3), 'varie')
+text(ax, 47, o[1] + 20, 'σ', 'varie', 's')
+text(ax, 25, o[1] + 14, 'τ', 'varie', 's')
+dot(ax, A, 'sujet', 1.8); dot(ax, B, 'resultat', 1.8); dot(ax, C, 'varie', 1.8)
+text(ax, A[0] + 2, A[1] - 5, '(1, 0)', 'sujet', 's')
+text(ax, B[0], B[1] + 5, '(0, 1)', 'resultat', 's')
+text(ax, C[0], C[1] - 5, '(0, −1)', 'varie', 's')
+text(ax, 44, 13, 'τ puis σ : (0, 1)', 'resultat', 's')
+text(ax, 44, 5, 'σ puis τ : (0, −1)', 'varie', 's')
+text(ax, 44, 21, 'les deux résultats diffèrent', 'encre', 's')
+text(ax, 44, 94, 'commuter avec tous les miroirs\nne laisse que 1 et −1', 'resultat', 's', weight='bold')
+save(fig, '73-202')

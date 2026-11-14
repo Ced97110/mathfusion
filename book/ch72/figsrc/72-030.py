@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ox, oy, u = 10, 14, 14
+P = lambda x, y: (ox + x*u, oy + y*u)
+arrow(ax, P(-0.3, 0), P(2.5, 0), 'fixe', lw=0.6); arrow(ax, P(0, -0.3), P(0, 2.0), 'fixe', lw=0.6)
+line(ax, [P(2, 0), P(2, 1)], 'fixe', lw=0.8, dash=True)
+arrow(ax, P(0, 0), P(2, 1), 'sujet', lw=1.8)
+text(ax, *P(1, -0.3), '2', 'fixe', 's'); text(ax, *P(2.25, 0.5), '1', 'fixe', 's')
+text(ax, *P(0.8, 0.95), r'$x=(2,1)$', 'sujet', 's')
+text(ax, 68, 52, r'$B(x,x)$', 'sujet', 'l')
+text(ax, 68, 42, r'$2\times2+1\times1$', 'encre', 's')
+text(ax, 68, 33, r'$4+1$', 'encre', 's')
+box(ax, 58, 15, 20, 11, 'resultat', label=r'$5$', size='l')
+text(ax, 68, 8, 'le carré de $x$', 'resultat', 's')
+arrow(ax, (68, 30), (68, 27), 'varie', lw=0.8)
+save(fig, '72-030')

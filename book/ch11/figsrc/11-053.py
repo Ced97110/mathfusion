@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 55, r'$6\times\frac{3}{3}=6$', 'sujet', 'xl')
+f = numberline(ax, 8, 66, 30, 0, 18, step=6, arrow_right=True)
+arrow(ax, (f(6), 33), (f(18), 33), 'varie', curve=-0.45)
+text(ax, f(12), 43, r'$\times 3$', 'varie', 'm')
+arrow(ax, (f(18), 20), (f(6), 20), 'varie', curve=-0.45)
+text(ax, f(12), 8, r'$\div 3$', 'varie', 'm')
+disc(ax, f(6), 30, 1.8, 'resultat')
+save(fig, '11-053')

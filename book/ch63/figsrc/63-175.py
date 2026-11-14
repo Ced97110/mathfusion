@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+# plan des coefficients : abscisse = coefficient de racine de 3, ordonnée = coefficient de racine de 5
+ox, oy, u = 40, 34, 15
+P = lambda a, b: (ox + u * a, oy + u * b)
+arrow(ax, (ox - 26, oy), (ox + 40, oy), 'fixe', lw=0.6)
+arrow(ax, (ox, oy - 12), (ox, oy + 36), 'fixe', lw=0.6)
+text(ax, ox + 40, oy - 4, r'$\sqrt{3}$', 'fixe', 's', ha='right')
+text(ax, ox + 3.5, oy + 35, r'$\sqrt{5}$', 'fixe', 's', ha='left')
+# gamma = (1, 1) ; 2/gamma = (-1, 1) ; somme (0, 2) ; différence (2, 0)
+line(ax, [P(1, 1), P(0, 2)], 'fixe', dash=True, lw=0.7)
+line(ax, [P(-1, 1), P(0, 2)], 'fixe', dash=True, lw=0.7)
+arrow(ax, P(0, 0), (P(1, 1)[0] - 0.4, P(1, 1)[1] - 0.4), 'sujet', lw=1.3)
+arrow(ax, P(0, 0), (P(-1, 1)[0] + 0.4, P(-1, 1)[1] - 0.4), 'varie', lw=1.3)
+arrow(ax, P(0, 0), (P(0, 2)[0], P(0, 2)[1] - 0.6), 'resultat', lw=1.3)
+arrow(ax, P(0, 0), (P(2, 0)[0] - 0.6, P(2, 0)[1]), 'resultat', lw=1.3)
+text(ax, P(1, 1)[0] + 2.5, P(1, 1)[1] + 2.5, r'$\gamma = \sqrt{3} + \sqrt{5}$', 'sujet', 's', ha='left')
+text(ax, P(-1, 1)[0] - 1, P(-1, 1)[1] - 3.5, r'$2/\gamma = \sqrt{5} - \sqrt{3}$', 'varie', 's', ha='right')
+text(ax, P(0, 2)[0] - 2.5, P(0, 2)[1] + 2.5, r'$\gamma + 2/\gamma = 2\sqrt{5}$', 'resultat', 's', ha='right')
+text(ax, P(2, 0)[0] - 1, P(2, 0)[1] - 4, r'$\gamma - 2/\gamma = 2\sqrt{3}$', 'resultat', 's', ha='right')
+text(ax, 44, 79, r'$\gamma(\sqrt{5} - \sqrt{3})/2 = (5 - 3)/2 = 1$', 'encre', 's')
+text(ax, 44, 5, r'$\sqrt{3}$ et $\sqrt{5}$ sont dans $\mathbb{Q}(\gamma)$', 'resultat', 'm')
+save(fig, '63-175')

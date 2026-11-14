@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(100)
+box(ax,6,76,76,20,'sujet')
+text(ax,44,90,'Départ','sujet','m',weight='bold')
+text(ax,44,82,r'$2^m=2^n$ avec $m>n$','sujet','m')
+arrow(ax,(44,75),(44,67),'fixe')
+box(ax,6,46,76,20,'varie')
+text(ax,44,60,r'Étape : diviser par $2^n$','varie','m',weight='bold')
+text(ax,44,52,r'$2^{m-n}=1$','varie','l')
+arrow(ax,(44,45),(44,39),'fixe')
+box(ax,6,28,76,10,'limite',label='Impossible : jamais égal à 1',size='m')
+for x,v in [(22,'2'),(44,'4'),(66,'8')]:
+    box(ax,x-8,4,16,12,'fixe',label=v,size='m')
+text(ax,44,20,'puissances de 2 :','fixe','s')
+save(fig,'45-044')

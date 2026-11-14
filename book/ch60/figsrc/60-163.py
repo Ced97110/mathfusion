@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 54, 'base du plan, avec l’échange $T$', 'encre', 's')
+box(ax, 6, 30, 26, 12, 'sujet', label=r'$z=(1,0)$', size='m')
+box(ax, 56, 30, 26, 12, 'varie', label=r'$\lambda z=(0,1)$', size='m')
+arrow(ax, (32, 39), (56, 39), 'varie', curve=-0.3)
+arrow(ax, (56, 33), (32, 33), 'resultat', curve=-0.3)
+text(ax, 44, 49, r'$T$ envoie $z$ sur $\lambda z$', 'varie', 's')
+text(ax, 44, 23, r'$T(\lambda z)=1\cdot z+0\cdot\lambda z$', 'resultat', 's')
+text(ax, 44, 12, 'les deux échanges se compensent', 'encre', 's')
+save(fig, '60-163')

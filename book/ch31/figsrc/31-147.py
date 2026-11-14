@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def arc(ax, c, r, a0, a1, role="fixe", lw=0.9, n=60):
+    line(ax, [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)), c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)], role, lw)
+fig, ax = canvas(56)
+text(ax, 22, 50, 'cosécante', 'autre', 'm', weight='bold'); text(ax, 66, 50, 'arc sinus', 'sujet', 'm', weight='bold')
+text(ax, 22, 45, 'inverse pour ×', 'autre', 's'); text(ax, 66, 45, "inverse pour l'enchaînement", 'sujet', 's')
+line(ax, [(44, 8), (44, 52)], 'fixe', dash=True)
+box(ax, 3, 24, 12, 8, 'sujet', label='0,5'); box(ax, 29, 24, 12, 8, 'resultat', label='1')
+arrow(ax, (15, 28), (29, 28), 'varie'); text(ax, 22, 33.5, '× 2', 'varie', 's')
+text(ax, 22, 19, r'$\sin 30° \times \mathrm{cosec}\,30° = 1$', 'autre', 's') if False else text(ax, 22, 19, '0,5 × 2 = 1', 'autre', 's')
+box(ax, 47, 24, 10, 8, 'sujet', label='0,5'); box(ax, 61, 24, 10, 8, 'resultat', label='30°'); box(ax, 75, 24, 10, 8, 'sujet', label='0,5')
+arrow(ax, (57, 28), (61, 28), 'varie'); arrow(ax, (71, 28), (75, 28), 'varie')
+text(ax, 59, 35, 'arcsin', 'varie', 's'); text(ax, 73, 20, 'sin', 'varie', 's')
+text(ax, 66, 12, 'on revient à 0,5', 'sujet', 's')
+save(fig, '31-147')

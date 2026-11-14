@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 3, 56, 22, 12, 'sujet', label='ℤ', size='l')
+box(ax, 56, 56, 29, 12, 'resultat', label='12 positions')
+box(ax, 30, 22, 28, 12, 'autre', label='12 classes')
+text(ax, 3, 78, 'noyau : multiples de 12', 'sujet', 's', ha='left')
+text(ax, 3, 73, r'$G=\mathbb{Z}$ ; le noyau est envoyé sur 0', 'fixe', 's', ha='left') if False else None
+arrow(ax, (25.5, 62), (55.5, 62), 'fixe')
+text(ax, 40.5, 65.5, r'$f$', 'fixe', 'm')
+arrow(ax, (14, 55.5), (31, 34.5), 'varie')
+text(ax, 17, 41, r'$\nu$', 'varie', 'm')
+arrow(ax, (57.5, 34.5), (70, 55.5), 'resultat', both=True)
+text(ax, 71, 41, r'$g$ : une à une', 'resultat', 's', ha='left')
+text(ax, 44, 8, r'$G/\ker f\ \cong\ \mathrm{im}\,f$', 'encre', 'l')
+save(fig, '43-147')

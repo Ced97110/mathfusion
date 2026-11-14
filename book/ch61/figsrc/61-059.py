@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 22, 56, 44, 11, 'sujet', label=r'$m=g\,h$', size='l')
+arrow(ax, (44, 55.5), (44, 49), 'varie'); text(ax, 70, 52, r'$x\to u$', 'varie', 's')
+box(ax, 18, 38, 52, 10, 'varie', label=r'$g(u)\,h(u)=0$', size='m')
+arrow(ax, (34, 37.5), (22, 30)); arrow(ax, (54, 37.5), (66, 30))
+box(ax, 4, 20, 36, 10, 'resultat', label=r'$g(u)=0$', size='m'); box(ax, 48, 20, 36, 10, 'resultat', label=r'$h(u)=0$', size='m')
+text(ax, 44, 33, 'ou', 'fixe', 's')
+text(ax, 44, 11, 'un facteur est nul,', 'limite', 's'); text(ax, 44, 5, 'de degré < $m$ : absurde', 'limite', 's')
+save(fig, '61-059')

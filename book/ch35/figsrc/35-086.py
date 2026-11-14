@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+R=13**0.5;k=6;y0=41;x0=6;x1=70
+f=lambda t:x0+t/360*(x1-x0)
+line(ax,[(x0,y0),(x1,y0)],'fixe',lw=0.6)
+line(ax,[(f(t),y0+k*R*math.sin(math.radians(t+56.31))) for t in range(0,361,3)],'sujet',lw=1.4)
+line(ax,[(x0,y0+k*R),(x1,y0+k*R)],'sujet',dash=True,lw=0.8)
+text(ax,79,y0+k*R-2.6,r'$R\approx3{,}606$','sujet','s')
+line(ax,[(x0,y0+4*k),(x1,y0+4*k)],'limite',lw=1.3)
+text(ax,79,y0+4*k+2.6,'$c=4$','limite','s')
+text(ax,44,76,r'$2\sin x+3\cos x=4$','encre','m')
+box(ax,4,6,34,10,'limite',label='$c^2=16$')
+text(ax,42,11,'>','encre','l')
+box(ax,46,6,38,10,'sujet',label='$a^2+b^2=13$')
+save(fig,'35-086')

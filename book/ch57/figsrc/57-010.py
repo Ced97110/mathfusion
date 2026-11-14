@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+u = 14; ox, oy = 30, 10
+P = lambda x, y: (ox + x * u, oy + y * u)
+arrow(ax, P(-1.6, 0), P(2.9, 0), 'fixe', lw=0.7); arrow(ax, P(0, 0), P(0, 2.9), 'fixe', lw=0.7)
+# legs of the two triangles: orange pair (0,8 -> -0,8), violet pair (2 -> 2)
+line(ax, [P(0, 0), P(2, 0)], 'autre', lw=1.4, dash=True); line(ax, [P(2, 0), P(2, 0.8)], 'varie', lw=1.4, dash=True)
+line(ax, [P(0, 0), P(0, 2)], 'autre', lw=1.4, dash=True); line(ax, [P(0, 2), P(-0.8, 2)], 'varie', lw=1.4, dash=True)
+arrow(ax, P(0, 0), P(2, 0.8), 'sujet', lw=1.3); arrow(ax, P(0, 0), P(-0.8, 2), 'resultat', lw=1.3)
+text(ax, *P(1, -0.28), '2', 'autre', 's')
+text(ax, *P(2.1, 0.4), '0,8', 'varie', 's', ha='left')
+text(ax, *P(0.12, 1.0), '2', 'autre', 's', ha='left')
+text(ax, *P(-0.4, 2.3), '−0,8', 'varie', 's')
+text(ax, *P(2.1, 1.15), 'v = (2 ; 0,8)', 'sujet', 'm', ha='left')
+text(ax, *P(0.25, 2.5), 'T v = (−0,8 ; 2)', 'resultat', 'm', ha='left')
+text(ax, 86, 50, '0,8 → −0,8', 'varie', 's', ha='right')
+text(ax, 86, 45, '2 → 2', 'autre', 's', ha='right')
+save(fig, '57-010')

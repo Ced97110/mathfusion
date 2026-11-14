@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 2, 2, 84, 76, 'fixe', dash=True); text(ax, 8, 73, r'$S_n$', 'fixe', 'm')
+box(ax, 6, 8, 76, 54, 'sujet'); text(ax, 14, 57, r'$A_n$ : permutations paires', 'sujet', 'm', ha='left')
+box(ax, 9, 32, 14, 8, 'encre', label='id', size='s')
+box(ax, 33, 32, 22, 8, 'encre', label='(1 2 3)', size='s')
+box(ax, 62, 32, 22, 8, 'encre', label='(1 3 2)', size='s')
+arrow(ax, (50, 40), (68, 40), 'varie', curve=-0.5); text(ax, 59, 49, 'carré', 'varie', 's')
+arrow(ax, (50, 32), (68, 32), 'varie', curve=0.5); text(ax, 59, 22, 'inverse', 'varie', 's')
+text(ax, 14, 14, 'tout reste dans $A_n$', 'resultat', 'm', ha='left')
+save(fig, '46-228')

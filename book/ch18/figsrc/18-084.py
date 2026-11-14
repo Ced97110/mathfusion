@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 6, 78, 76, 10, 'sujet', label=r'$18x^2-56x+6$')
+arrow(ax, (20, 78), (20, 28), 'resultat'); text(ax, 23, 54, '1 étape', 'resultat', 's', ha='left')
+text(ax, 23, 47, 'si on retire le 2', 'resultat', 's', ha='left')
+arrow(ax, (66, 78), (66, 68), 'varie')
+box(ax, 44, 58, 40, 10, 'varie', label=r'$(9x-1)(2x-6)$')
+arrow(ax, (66, 58), (66, 50), 'varie')
+box(ax, 44, 40, 40, 10, 'varie', label=r'$(9x-1)\cdot2(x-3)$')
+arrow(ax, (66, 40), (66, 28), 'varie')
+text(ax, 62, 33, '2 étapes de plus', 'varie', 's', ha='right')
+box(ax, 6, 16, 76, 12, 'resultat', label=r'$2(9x-1)(x-3)$')
+save(fig, '18-084')

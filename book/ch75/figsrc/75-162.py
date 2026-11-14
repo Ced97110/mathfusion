@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 58, r'$a\ \mapsto\ a^{q}$', 'sujet', 'xl', weight='bold')
+text(ax, 22, 49, 'un élément', 'sujet', 's')
+text(ax, 64, 49, '$q$ facteurs égaux à $a$', 'sujet', 's')
+text(ax, 44, 40, 'cas : $q$ = 3, corps à 9 éléments', 'fixe', 's')
+box(ax, 4, 14, 24, 14, 'sujet', label=r'$1+i$', size='l')
+box(ax, 60, 14, 24, 14, 'resultat', label=r'$1-i$', size='l')
+arrow(ax, (29, 21), (59, 21), 'varie')
+text(ax, 44, 26, 'au cube', 'varie', 's')
+text(ax, 44, 16, '$(1+i)^3$', 'varie', 's')
+text(ax, 44, 5, 'comme le conjugué', 'resultat', 's')
+save(fig, '75-162')

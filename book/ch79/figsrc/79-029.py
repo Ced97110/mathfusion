@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 3, 72, 'réflexivité : 4 présents', 'fixe', 's', ha='left')
+for i, s in enumerate(['(1, 1)', '(2, 2)', '(3, 3)', '(6, 6)']): box(ax, 3 + 17 * i, 58, 14, 8, 'resultat', label=s, size='s')
+text(ax, 3, 50, 'antisymétrie : (2, 1) absent', 'fixe', 's', ha='left')
+box(ax, 3, 36, 15, 8, 'resultat', label='(1, 2)', size='s')
+arrow(ax, (20, 40), (33, 40), 'varie'); box(ax, 35, 36, 15, 8, 'limite', label='(2, 1)', size='s', dash=True)
+text(ax, 3, 28, 'transitivité : (1, 6) aussi', 'fixe', 's', ha='left')
+box(ax, 3, 14, 15, 8, 'resultat', label='(1, 2)', size='s'); text(ax, 23, 18, '+', 'fixe', 'l')
+box(ax, 28, 14, 15, 8, 'resultat', label='(2, 6)', size='s')
+arrow(ax, (46, 18), (60, 18), 'varie'); box(ax, 63, 14, 15, 8, 'resultat', label='(1, 6)', size='s')
+save(fig, '79-029')

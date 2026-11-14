@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 72, r'cas $2+2$ : $p$ = produit de deux degrés 2', 'sujet', 's')
+box(ax, 3, 52, 38, 11, 'sujet', label=r'$x^2+ax+b$')
+text(ax, 44, 57.5, r'$\times$', 'encre', 'm')
+box(ax, 47, 52, 38, 11, 'autre', label=r'$x^2+cx+d$')
+arrow(ax, (44, 50), (44, 42), 'varie')
+text(ax, 62, 46, 'on développe', 'varie', 's')
+box(ax, 4, 30, 80, 11, 'fixe', label=r'comparer avec $x^4-2x^3+x+1$')
+text(ax, 44, 22, r'lemme de Gauss : $a,b,c,d$ entiers', 'resultat', 's')
+box(ax, 14, 4, 60, 11, 'resultat', label=r'4 équations sur des entiers')
+save(fig, '54-254')

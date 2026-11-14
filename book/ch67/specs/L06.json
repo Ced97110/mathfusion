@@ -1,0 +1,359 @@
+[
+ {
+  "code": "67-151",
+  "a_dire": "Comme v et η(v) ont les mêmes conjugués, ils ont la même norme, donc le quotient v/η(v) a pour norme 1.",
+  "legende_titre": "Le sens facile : deux normes égales",
+  "lecture": [
+   "En bleu, l’élément v ; en violet, son image η(v), reliés par la flèche orange η.",
+   "Sous chacun, la liste de ses conjugués : les mêmes deux éléments, dans l’autre ordre, comme le montrent les deux traits qui se croisent.",
+   "En vert, les deux normes sont égales, donc le quotient de v par η(v) a pour norme 1."
+  ],
+  "a_voir": "Les deux listes de conjugués contiennent les mêmes éléments, d’où des normes égales."
+ },
+ {
+  "code": "67-152",
+  "a_dire": "Dans l’exemple à quatre transformations, la trace de la racine de 2 est nulle, mais cet élément n’est pas de la forme c − η(c) : l’équivalence est fausse sans l’hypothèse cyclique.",
+  "legende_titre": "L’équivalence additive sans groupe cyclique",
+  "lecture": [
+   "En haut, la double flèche entre T(d) = 0 et d = c − η(c) est barrée en rouge.",
+   "À gauche, les quatre conjugués de la racine de 2 sont plus et moins la racine de 2, deux fois chacun : leur somme vaut 0.",
+   "À droite, si la racine de 2 était c − η(c), on aurait η(racine de 2) = −racine de 2.",
+   "Le rouge montre que η fixe la racine de 2 : on n’a pas η(racine de 2) = −racine de 2."
+  ],
+  "a_voir": "La trace est nulle, et pourtant la forme c − η(c) est impossible."
+ },
+ {
+  "code": "67-153",
+  "a_dire": "Quand le petit corps contient les n racines n-ièmes de 1, une extension cyclique de degré n s’écrit F(u) avec u à la puissance n dans F.",
+  "legende_titre": "Une extension cyclique écrite avec une puissance",
+  "lecture": [
+   "La boîte grise du haut donne l'hypothèse : l'extension est cyclique de degré n et F contient les n racines n-ièmes de 1.",
+   "La boîte verte donne la conclusion : E s'écrit F(u) avec u à la puissance n dans F.",
+   "En bas, l'exemple : E = Q(racine de 2) en bleu, F = Q en gris, de degré 2 ; 1 et −1 sont dans F.",
+   "La flèche orange élève u au carré ; en vert, u au carré vaut 2, et 2 est dans F."
+  ],
+  "a_voir": "Le carré de u retombe dans le petit corps."
+ },
+ {
+  "code": "67-154",
+  "a_dire": "En caractéristique p, une extension cyclique de degré p admet un c avec η(c) = c + 1 ; sans la caractéristique p, cela mène à 2 = 0, qui est faux.",
+  "legende_titre": "Le rôle de la caractéristique",
+  "lecture": [
+   "La colonne bleue traite le corps à 4 éléments sur celui à 2 éléments, la colonne violette traite les rationnels avec la racine de 2.",
+   "Chaque colonne suit les mêmes étapes : η(c) = c + 1, puis η²(c) = c + 2, puis η² égale l’identité, ce qui donne 2 = 0.",
+   "En bas, la case verte dit que 2 = 0 est vrai dans le corps à 2 éléments.",
+   "La case rouge dit que 2 = 0 est faux dans les rationnels."
+  ],
+  "a_voir": "Les étapes sont les mêmes, seul le dernier résultat change : 2 = 0 est vrai ou faux."
+ },
+ {
+  "code": "67-155",
+  "a_dire": "Le polynôme réduit f_p a les mêmes coefficients que f, remplacés par leurs restes modulo p ; sa factorisation peut changer d’un premier à l’autre.",
+  "legende_titre": "Un polynôme et ses trois réductions",
+  "lecture": [
+   "En violet à gauche, le polynôme f = x² + 1 à coefficients entiers, irréductible sur les rationnels.",
+   "Les trois flèches orange mènent aux réductions en bleu, pour les premiers 2, 3 et 5.",
+   "Modulo 2, deux facteurs égaux ; modulo 3, aucun facteur ; modulo 5, deux facteurs différents.",
+   "Chaque case bleue a ses coefficients dans 𝔽_p."
+  ],
+  "a_voir": "Le même polynôme se factorise de trois façons selon le premier choisi."
+ },
+ {
+  "code": "67-156",
+  "a_dire": "Si f_p se factorise en facteurs de degrés n₁, …, n_r, le groupe de Galois contient une permutation à cycles disjoints de ces longueurs.",
+  "legende_titre": "Facteurs de f_p et cycles",
+  "lecture": [
+   "En bleu à gauche, le polynôme réduit f₃, irréductible de degré 2.",
+   "La flèche orange mène aux deux racines i et −i.",
+   "Les deux flèches courbes échangent i et −i : c’est un cycle de longueur 2, écrit en vert.",
+   "En bas, la règle générale : un facteur de degré n_i donne un cycle de longueur n_i."
+  ],
+  "a_voir": "Un facteur de degré 2 donne un échange de deux racines."
+ },
+ {
+  "code": "67-157",
+  "a_dire": "La preuve part de l’anneau D et passe au quotient par un idéal maximal contenant p, ce qui donne un homomorphisme ψ vers un corps où p vaut 0.",
+  "legende_titre": "Premier pas de la preuve de Tate",
+  "lecture": [
+   "En bleu à gauche, l'anneau D, ici les entiers de Gauss ; dedans, en gris, un idéal maximal M qui contient 3.",
+   "En vert à droite, le corps à neuf éléments.",
+   "La flèche orange ψ est le passage au quotient par M.",
+   "Le texte gris dit que ψ respecte l'addition et la multiplication ; le texte vert dit que, dans le quotient, 3 vaut 0."
+  ],
+  "a_voir": "Le quotient par un idéal maximal donne un corps, et ψ respecte les deux opérations."
+ },
+ {
+  "code": "67-158",
+  "a_dire": "ψ envoie les racines de f sur les racines de f_p, une à une, parce que ψ réduit les coefficients.",
+  "legende_titre": "Les racines passent par ψ",
+  "lecture": [
+   "À gauche, en bleu, les deux racines i et −i de f.",
+   "À droite, en vert, leurs images ψ(i) et ψ(−i), les deux racines de f₃.",
+   "Les deux flèches orange sont parallèles : chaque racine a une image, et les deux images sont différentes.",
+   "En bas, ψ transforme le produit des (x − r_i) en le produit des (x − ψ(r_i))."
+  ],
+  "a_voir": "Deux racines de départ, deux racines d’arrivée, une flèche pour chaque."
+ },
+ {
+  "code": "67-159",
+  "a_dire": "Le Frobenius composé avec ψ égale ψ composé avec une transformation σ du groupe de Galois : π ψ = ψ σ.",
+  "legende_titre": "Le carré qui relie Frobenius et Galois",
+  "lecture": [
+   "En bleu en haut, l’anneau D deux fois, relié par la flèche orange σ.",
+   "En violet en bas, le corps E_p deux fois, relié par la flèche violette π, le Frobenius.",
+   "Les deux flèches grises ψ descendent de D vers E_p.",
+   "Au centre en vert, les deux chemins donnent le même résultat : π ψ = ψ σ ; en bas, le cas où σ(i) = −i."
+  ],
+  "a_voir": "Aller à droite puis en bas, ou en bas puis à droite, donne la même application."
+ },
+ {
+  "code": "67-160",
+  "a_dire": "σ = ψ⁻¹ π ψ fait sur les racines ce que le Frobenius fait sur leurs images, avec un cycle par facteur irréductible.",
+  "legende_titre": "σ copie le Frobenius sur les racines",
+  "lecture": [
+   "En haut, en bleu, les racines i et −i ; en bas, en violet, leurs images par ψ.",
+   "Les flèches grises ψ relient chaque racine à son image.",
+   "Les flèches orange σ échangent les racines, les flèches violettes π échangent les images.",
+   "En vert, un facteur de degré 2 donne un cycle de longueur 2."
+  ],
+  "a_voir": "L’échange en haut et l’échange en bas sont le même geste."
+ },
+ {
+  "code": "67-161",
+  "a_dire": "x² + 1 n’a pas de racine dans le corps à trois éléments, donc il est irréductible : on teste les trois éléments.",
+  "legende_titre": "Tester x² + 1 dans le corps à trois éléments",
+  "lecture": [
+   "Les trois disques bleus sont les trois éléments 0, 1 et 2.",
+   "Les flèches orange calculent x² + 1 pour chacun.",
+   "Les trois cases grises donnent 1, 2 et 5, soit 2 : aucune n’est nulle.",
+   "La case verte conclut qu’il n’y a aucune valeur nulle."
+  ],
+  "a_voir": "Les trois valeurs sont différentes de 0."
+ },
+ {
+  "code": "67-162",
+  "a_dire": "Le corps à neuf éléments s’écrit a + bi avec a et b dans {0, 1, 2} et i² = 2 : trois fois trois éléments.",
+  "legende_titre": "Les neuf éléments a + bi",
+  "lecture": [
+   "Chaque case est un élément a + bi ; a est donné par la colonne, b par la ligne.",
+   "Il y a trois colonnes et trois lignes, donc neuf cases.",
+   "La case orange est 2 + i, la case verte est i.",
+   "Le calcul en bas montre que le carré de 2 + i est i, un élément du même tableau."
+  ],
+  "a_voir": "Le carré d’un élément reste une case du tableau."
+ },
+ {
+  "code": "67-163",
+  "a_dire": "Pour montrer que z = 1 + i engendre le groupe de 8 éléments, il suffit de vérifier que z⁴ n’est pas 1.",
+  "legende_titre": "Un test pour un générateur",
+  "lecture": [
+   "La rangée du haut donne z, z², z⁴ et z⁸ ; chaque flèche élève au carré.",
+   "Le dernier élève vaut 1 : z⁸ = 1.",
+   "La flèche verte part de z⁴ = 2 : cette valeur n’est pas 1.",
+   "En bas, l’ordre de z est donc 8, ce qui est le nombre d’éléments non nuls."
+  ],
+  "a_voir": "Une seule puissance, z⁴, différente de 1 suffit ici."
+ },
+ {
+  "code": "67-164",
+  "a_dire": "Le Frobenius de 𝔽₉ envoie a + bi sur a − bi : il fixe 0, 1 et 2 et échange i avec 2i.",
+  "legende_titre": "Le Frobenius vu comme une conjugaison",
+  "lecture": [
+   "Les neuf cases sont les éléments a + bi ; la ligne du bas, en vert, contient 0, 1 et 2.",
+   "Chaque double flèche orange relie une case de la deuxième ligne à la case de la troisième ligne, qui est son échangé.",
+   "Les cases orange sont 1 + i et 1 + 2i, qui est 1 − i.",
+   "En bas, le cube de 1 + i est 1 − i."
+  ],
+  "a_voir": "La ligne du bas ne bouge pas ; les deux autres lignes s’échangent."
+ },
+ {
+  "code": "67-165",
+  "a_dire": "La trace de a + bi vaut 2a et la norme vaut a² + b², comme pour les nombres complexes, en écrivant les deux conjugués.",
+  "legende_titre": "Trace et norme par les deux conjugués",
+  "lecture": [
+   "En bleu en haut, les deux conjugués de 1 + i : 1 + i et 1 − i. Le carré de i vaut −1, soit 2 dans le petit corps.",
+   "La flèche de gauche fait leur somme, la trace : 2a, soit 2, dans le petit corps à trois éléments.",
+   "La flèche de droite fait leur produit, la norme : a² + b², soit 2.",
+   "La boîte grise du bas rappelle que c'est la formule des complexes sur les réels."
+  ],
+  "a_voir": "Deux conjugués suffisent, sans matrice."
+ },
+ {
+  "code": "67-166",
+  "a_dire": "La norme de 𝔽₉ sur 𝔽₃ atteint les deux éléments non nuls de 𝔽₃ : elle est surjective.",
+  "legende_titre": "La norme atteint chaque valeur non nulle",
+  "lecture": [
+   "À gauche, en bleu, deux éléments de 𝔽₉ : 1 et 1 + i.",
+   "Les flèches orange donnent leur norme : 1 pour le premier, 2 pour le second.",
+   "À droite, les deux disques verts sont les deux éléments non nuls de 𝔽₃.",
+   "Chaque disque reçoit une flèche."
+  ],
+  "a_voir": "Aucun des deux disques verts n’est oublié."
+ },
+ {
+  "code": "67-167",
+  "a_dire": "Dans la base (1, i), la matrice de la multiplication par u a pour colonnes (a, b) et (−b, a) ; sa trace est 2a et son déterminant a² + b².",
+  "legende_titre": "La matrice de la multiplication par u",
+  "lecture": [
+   "À gauche, la matrice générale : la colonne bleue est l'image de 1, la colonne orange est l'image de i.",
+   "À droite, la même matrice pour a = b = 1, avec −1 = 2 : colonnes (1, 1) et (2, 1).",
+   "Le trait vert pointillé relie les deux termes de la diagonale ; en vert, la trace est leur somme : 2.",
+   "En vert, le déterminant vaut 2, comme a² + b²."
+  ],
+  "a_voir": "Chaque colonne donne l'image d'un vecteur de la base."
+ },
+ {
+  "code": "67-168",
+  "a_dire": "Pour un polynôme de degré 4 sur le corps à deux éléments, il faut deux tests : pas de racine, puis pas de facteur de degré 2.",
+  "legende_titre": "Deux tests pour le degré 4",
+  "lecture": [
+   "En haut, le polynôme x⁴ + x + 1.",
+   "À gauche, le test du facteur de degré 1 : les valeurs en 0 et en 1 valent toutes les deux 1.",
+   "À droite, le test du facteur de degré 2 : la division par x² + x + 1 laisse le reste 1.",
+   "En bas, les deux cases vertes mènent à la conclusion : le polynôme est irréductible."
+  ],
+  "a_voir": "Les deux cartes éliminent chacune un type de facteur."
+ },
+ {
+  "code": "67-169",
+  "a_dire": "En ajoutant une racine α de x⁴ + x + 1, on remplace α⁴ par α + 1 ; chaque élément s’écrit avec quatre bits, ce qui donne seize mots.",
+  "legende_titre": "Le corps à seize éléments en quatre bits",
+  "lecture": [
+   "En haut, α⁴ + α + 1 = 0 devient α⁴ = α + 1, car −1 = 1.",
+   "Les quatre colonnes sont 1, α, α² et α³ ; une case bleue est un bit 1, une case grise un bit 0.",
+   "La ligne montre α⁴ : bits 1, 1, 0, 0.",
+   "En bas, quatre bits à deux valeurs donnent seize mots."
+  ],
+  "a_voir": "Un élément est un mot de quatre bits."
+ },
+ {
+  "code": "67-170",
+  "a_dire": "La table se fabrique en partant de 1 et en multipliant par α à chaque ligne, avec α⁴ remplacé par α + 1.",
+  "legende_titre": "Fabriquer la table des puissances",
+  "lecture": [
+   "La case orange du haut rappelle la règle du corps : α⁴ = α + 1.",
+   "Chaque case bleue est une ligne de la table, de α⁰ à α³ ; chaque flèche orange multiplie par α.",
+   "La case orange α⁴ est celle où l'on applique la règle.",
+   "La case verte, α⁵, s'obtient ensuite par une seule multiplication."
+  ],
+  "a_voir": "Une seule multiplication par α par ligne, et un seul remplacement."
+ },
+ {
+  "code": "67-171",
+  "a_dire": "Les quinze lignes de la table de α sont toutes différentes et non nulles ; trois d’entre elles forment le sous-corps à quatre éléments.",
+  "legende_titre": "La table des quinze puissances de α",
+  "lecture": [
+   "Chaque ligne est une puissance de α ; chaque case bleue est un 1, chaque case grise un 0.",
+   "Les quatre colonnes sont 1, α, α² et α³.",
+   "Les lignes vertes sont α⁰, α⁵ et α¹⁰, celles du sous-corps à quatre éléments.",
+   "Aucune ligne n’est entièrement grise, et aucune n’est répétée."
+  ],
+  "a_voir": "Quinze lignes différentes, dont trois vertes."
+ },
+ {
+  "code": "67-172",
+  "a_dire": "Les puissances α⁰ à α¹⁴ sont quinze éléments distincts : tous les éléments non nuls, donc le groupe est cyclique, comme les entiers modulo 15.",
+  "legende_titre": "Le groupe des quinze éléments non nuls",
+  "lecture": [
+   "Les quinze disques sont les quinze puissances de α, de α⁰ en vert à α¹⁴.",
+   "Chaque flèche orange multiplie par α et passe au disque suivant.",
+   "Après α¹⁴, une flèche revient à α⁰, car α¹⁵ = 1 : le numéro k compte modulo 15.",
+   "Le groupe n’a pas d’autre élément."
+  ],
+  "a_voir": "Tourner d’un cran, c’est multiplier par α ; après quinze crans on revient au départ."
+ },
+ {
+  "code": "67-173",
+  "a_dire": "Une somme se fait sur les bits, colonne par colonne ; un produit se fait en additionnant les exposants, en retirant 15 si on dépasse 14.",
+  "legende_titre": "Deux écritures, deux opérations faciles",
+  "lecture": [
+   "À gauche, les bits de α⁸ (1010) et de α⁹ (0101) sont additionnés colonne par colonne : on obtient 1111.",
+   "À droite, le produit additionne les exposants : 8 + 9 = 17.",
+   "On retire 15 : 17 − 15 = 2.",
+   "Le produit est α²."
+  ],
+  "a_voir": "La somme s’écrit en bits, le produit en exposants."
+ },
+ {
+  "code": "67-174",
+  "a_dire": "Pour un produit, on lit les exposants dans la table, on les additionne, puis on relit la ligne du résultat.",
+  "legende_titre": "Un produit en trois gestes",
+  "lecture": [
+   "En haut, les deux facteurs : 1 + α en bleu, α² + α³ en violet.",
+   "Une première lecture de la table donne α⁴ et α⁶.",
+   "La case orange additionne les exposants : 4 + 6 = 10.",
+   "Une seconde lecture de la table donne α¹⁰ = 1 + α + α²."
+  ],
+  "a_voir": "Lire, additionner, relire."
+ },
+ {
+  "code": "67-175",
+  "a_dire": "Une somme passe par les bits puis par la table ; ajouter les exposants ne donne pas le bon résultat.",
+  "legende_titre": "Une somme ne se lit pas sur les exposants",
+  "lecture": [
+   "Les deux premières lignes sont les bits de α⁴ (1100) et de α⁹ (0101).",
+   "La ligne verte est leur somme colonne par colonne : 1001, car 1 + 1 = 0.",
+   "La table lit 1001 comme α¹⁴.",
+   "En rouge, additionner les exposants donnerait 13, ce qui est faux."
+  ],
+  "a_voir": "Les exposants 4 et 9 ne donnent pas 14 par addition."
+ },
+ {
+  "code": "67-176",
+  "a_dire": "L’inverse de α^k est α^(15−k) : les deux exposants se complètent à 15, donc leur produit vaut 1.",
+  "legende_titre": "L’inverse par complément à 15",
+  "lecture": [
+   "La droite graduée va de 0 à 15.",
+   "Le trait bleu mesure 7, l’exposant de α⁷ ; le trait violet mesure 8, soit 15 − 7.",
+   "Au-dessus, les deux éléments sont écrits en bits : α⁷ = 1 + α + α³ et α⁸ = 1 + α².",
+   "En bas, les deux traits mis bout à bout font 15 : α⁷ × α⁸ = α¹⁵ = 1."
+  ],
+  "a_voir": "Les deux traits remplissent exactement la droite de 0 à 15."
+ },
+ {
+  "code": "67-177",
+  "a_dire": "Diviser deux éléments non nuls revient à soustraire les exposants.",
+  "legende_titre": "La division devient une soustraction",
+  "lecture": [
+   "Sur la droite graduée, le disque bleu est α¹⁰ et le disque vert est α⁶.",
+   "La flèche orange part de 10 et recule de 4 : c’est la division par α⁴.",
+   "En bas, on vérifie : 6 + 4 = 10.",
+   "En haut, la règle : diviser, c’est soustraire."
+  ],
+  "a_voir": "Une division est un pas en arrière sur la droite."
+ },
+ {
+  "code": "67-178",
+  "a_dire": "Les circuits calculent en lisant une table puis en additionnant : la table a 15 lignes pour 16 éléments et 255 lignes pour un octet.",
+  "legende_titre": "Une table puis des additions",
+  "lecture": [
+   "La ligne violette est le corps à 16 éléments : table de 15 lignes, produit par addition des exposants moins 15 si la somme dépasse 14.",
+   "La ligne bleue est le corps à 256 éléments, celui des octets : table de 255 lignes, moins 255 si la somme dépasse 254.",
+   "Les deux lignes ont la même forme, seule la taille change."
+  ],
+  "a_voir": "La même méthode vaut pour 16 et pour 256 éléments."
+ },
+ {
+  "code": "67-179",
+  "a_dire": "Les sous-corps de 𝔽₁₆ correspondent aux diviseurs 1, 2 et 4 de 4 : ils ont 2, 4 et 16 éléments.",
+  "legende_titre": "Trois sous-corps pour trois diviseurs",
+  "lecture": [
+   "Trois cases, du bas vers le haut : 𝔽₂, 𝔽₄ et 𝔽₁₆, reliées par des traits.",
+   "À gauche, le diviseur de 4 qui leur correspond : 1, 2 et 4.",
+   "À droite, autant de disques que d’éléments : 2, 4 et 16."
+  ],
+  "a_voir": "Trois diviseurs, trois sous-corps, de plus en plus grands."
+ },
+ {
+  "code": "67-180",
+  "a_dire": "Dans 𝔽₁₆, le sous-corps à quatre éléments est {0, 1, α⁵, α¹⁰}, trouvé en cherchant les exposants k pour lesquels 15 divise 3k.",
+  "legende_titre": "Retrouver 𝔽₄ dans la table",
+  "lecture": [
+   "Les quinze disques sont les puissances de α autour du cercle ; ceux dont le cube vaut 1 sont en vert.",
+   "Les trois disques verts sont α⁰, α⁵ et α¹⁰ : ils sont à égale distance.",
+   "Au centre, la condition : 15 divise 3k.",
+   "En bas, le sous-corps et la relation β² = β + 1 pour β = α⁵."
+  ],
+  "a_voir": "Trois disques verts également espacés sur les quinze."
+ }
+]

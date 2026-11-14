@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+s = 2.3; ox = 2 + 12.92 * s; oy = 2 + 5.38 * s + 6
+Hh = (ox, oy); P = (ox + 5.38 * s, oy); R = (ox, oy + 12.92 * s)
+poly(ax, [Hh, P, R], 'fixe')
+poly(ax, [(ox - 12.92 * s, oy), Hh, R, (ox - 12.92 * s, R[1])], 'sujet')
+poly(ax, [Hh, P, (P[0], oy - 5.38 * s), (ox, oy - 5.38 * s)], 'sujet')
+n = (12.92 * s, 5.38 * s)
+poly(ax, [P, R, (R[0] + n[0], R[1] + n[1]), (P[0] + n[0], P[1] + n[1])], 'resultat')
+text(ax, ox - 6.5 * s, oy + 6.5 * s, '$RH^2$' + '\n' + '167,0', 'sujet', 's')
+text(ax, ox + 2.7 * s, oy - 2.7 * s, '29,0', 'sujet', 's')
+text(ax, (P[0] + R[0]) / 2 + n[0] / 2, (P[1] + R[1]) / 2 + n[1] / 2, '$(x+y)^2$' + '\n' + '196', 'resultat', 's')
+text(ax, ox + 1.8, oy + 2, 'H', 'encre', 's'); text(ax, P[0] + 2, oy + 2, 'P', 'encre', 's'); text(ax, ox - 2, R[1] + 2, 'R', 'encre', 's')
+text(ax, 44, 3, '167,0 + 29,0 = 196', 'resultat', 's')
+save(fig, '34-052')

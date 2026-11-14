@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 53, r'rotations : $G$ commutatif', 'encre', 's')
+box(ax, 8, 36, 22, 9, 'varie', label='20°'); box(ax, 30, 36, 33, 9, 'autre', label='30°')
+box(ax, 8, 22, 33, 9, 'autre', label='30°'); box(ax, 41, 22, 22, 9, 'varie', label='20°')
+box(ax, 68, 29, 18, 10, 'resultat', label='50°')
+arrow(ax, (64.5, 40.5), (67.5, 37), 'resultat'); arrow(ax, (64.5, 26.5), (67.5, 31), 'resultat')
+text(ax, 44, 13, 'tous les commutateurs = identité', 'fixe', 's')
+text(ax, 44, 5.5, r"$G'$ = identité seule", 'resultat', 'm')
+save(fig, '73-128')

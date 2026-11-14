@@ -1,0 +1,333 @@
+[
+ {
+  "code": "70-001",
+  "a_dire": "Le bord de la zone mouillée et le bord de l'allée ont chacun une équation en x et y ; chercher leurs points de contact, c'est chercher les points qui vérifient les deux équations.",
+  "legende_titre": "Un jardin, deux bords, deux équations",
+  "lecture": [
+   "Le cercle bleu est le bord de la zone mouillée, de rayon 2 m autour de l'arroseur ; son équation est écrite en bleu.",
+   "La courbe orange est le bord de l'allée ; son équation est écrite en orange.",
+   "Les trois points verts sont les endroits où les deux bords se touchent : leurs nombres x et y vérifient les deux équations."
+  ],
+  "a_voir": "Chaque bord a son équation ; les points de contact sont sur les deux bords à la fois."
+ },
+ {
+  "code": "70-002",
+  "a_dire": "Le système du jardin est non linéaire : il contient x au carré et y au carré, alors que le système de deux droites s'écrit avec x et y sans exposant.",
+  "legende_titre": "Deux droites ou le jardin : ce qui change",
+  "lecture": [
+   "À gauche, en gris, deux droites : x et y s'écrivent sans exposant, le système est linéaire.",
+   "À droite, le cercle bleu et la courbe orange du jardin : x et y y sont au carré, le système est non linéaire.",
+   "Les points verts sont les points communs : un seul pour les deux droites, trois pour le jardin."
+  ],
+  "a_voir": "Ce qui sépare les deux systèmes, c'est un exposant 2 sur x et sur y."
+ },
+ {
+  "code": "70-003",
+  "a_dire": "La méthode retire y en égalant les deux hauteurs, résout l'équation en x seul (x = 3), puis remonte à y (y = 6).",
+  "legende_titre": "Retirer une inconnue pour résoudre",
+  "lecture": [
+   "En haut, les deux droites y = 2x (bleu) et y = x + 3 (violet) ; les flèches orange sont les étapes de la méthode.",
+   "Égaler les deux hauteurs donne 2x = x + 3, sans y ; on résout et on trouve x = 3, puis on remonte pour obtenir y = 6 (vert).",
+   "À droite, les deux droites se coupent au point vert d'abscisse 3 et de hauteur 6."
+  ],
+  "a_voir": "On passe de deux inconnues à une seule, puis on remonte pour avoir l'autre."
+ },
+ {
+  "code": "70-004",
+  "a_dire": "Le remplacement marche quand une équation donne y directement (parabole) ; il ne marche plus pour deux cercles, où y est au carré dans les deux équations.",
+  "legende_titre": "Quand le remplacement ne suffit plus",
+  "lecture": [
+   "À gauche, le cercle bleu et la parabole orange : l'équation y = x² − 2 donne y, le cadre vert dit qu'on peut remplacer.",
+   "À droite, deux cercles de centres différents, un bleu et un violet : chacun a un y² dans son équation.",
+   "Le cadre rouge dit qu'aucune équation ne commence par « y = » : on ne peut pas remplacer."
+  ],
+  "a_voir": "Le remplacement demande une équation qui donne y ; les deux cercles n'en ont pas."
+ },
+ {
+  "code": "70-005",
+  "a_dire": "Le résultant est un polynôme en x seul, sans y, fabriqué à partir de deux équations, et il vaut 0 aux abscisses des points communs.",
+  "legende_titre": "Un polynôme en x seul, à partir de deux équations",
+  "lecture": [
+   "En haut, les deux équations f (bleu) et g (orange), qui contiennent x et y.",
+   "La flèche « sans y » mène au cadre vert : le résultant, qui ne contient que x.",
+   "En bas, la courbe verte est le résultant du jardin ; les points verts sont les endroits où elle vaut 0, sur l'axe des x."
+  ],
+  "a_voir": "Le résultant ne contient que x, et ses racines sont les abscisses des points communs."
+ },
+ {
+  "code": "70-006",
+  "a_dire": "La deuxième question ne demande pas la liste des points d'une courbe f(x, y) = 0, seulement si elle a au moins un point réel : oui ou non.",
+  "legende_titre": "Une courbe a-t-elle un point ?",
+  "lecture": [
+   "Le titre donne l'équation de la courbe, f(x, y) = 0, et la question.",
+   "À gauche, cadre vert : une courbe bleue passe par le plan et porte un point vert, la réponse est « oui ».",
+   "À droite, cadre rouge : le plan ne contient aucun point de la courbe, la réponse est « non »."
+  ],
+  "a_voir": "La question attend seulement « oui » ou « non », pas les points."
+ },
+ {
+  "code": "70-007",
+  "a_dire": "Les équations x² + y² = 4, x² + y² = 0 et x² + y² = −1 ont la même forme mais donnent plusieurs points, un seul point, aucun point.",
+  "legende_titre": "Même forme, trois réponses",
+  "lecture": [
+   "À gauche, x² + y² = 4 : un cercle bleu, donc plusieurs points.",
+   "Au milieu, x² + y² = 0 : un seul point vert, l'origine.",
+   "À droite, x² + y² = −1 : le plan reste vide, aucun point."
+  ],
+  "a_voir": "Les trois équations se ressemblent, mais le nombre de points passe de plusieurs à un, puis à aucun."
+ },
+ {
+  "code": "70-008",
+  "a_dire": "La troisième question porte sur une phrase entière, avec « pour tout », « il existe », « et », « ou », « non » ; elle demande une règle de calcul qui répond oui ou non.",
+  "legende_titre": "Décider si une phrase est vraie par un calcul",
+  "lecture": [
+   "En haut, une phrase courte (bleu) : « il existe x tel que x² = 9 » ; on la vérifie en trouvant x = 3 (vert).",
+   "Au milieu, une phrase longue (violet) avec « pour tout », « il existe », « et », « ou », « non » : on ne voit plus comment la vérifier (gris, « vrai ? »).",
+   "En bas, la règle de calcul (orange) doit répondre « oui ou non » (vert) ; Tarski a répondu oui vers 1930."
+  ],
+  "a_voir": "On demande une règle de calcul pour toute phrase de ce genre, pas seulement pour la phrase courte."
+ },
+ {
+  "code": "70-009",
+  "a_dire": "La phrase a deux parties : la condition b² > 4c, contrôlée ici pour b = 5 et c = 4 (25 > 16), et la conclusion, un x qui convient (x = −1).",
+  "legende_titre": "Une phrase en deux parties, vérifiée pour un couple",
+  "lecture": [
+   "Les deux barres montrent la condition : la barre bleue b² = 25 est plus longue que la barre violette 4c = 16.",
+   "La flèche orange mène de la condition à la conclusion.",
+   "Le cadre vert donne le x qui convient : x = −1, car 1 − 5 + 4 = 0, avec (−1)² = 1 et 5 × (−1) = −5."
+  ],
+  "a_voir": "Il faut contrôler la condition, puis donner un x qui convient ; un seul couple ne prouve pas tous les autres."
+ },
+ {
+  "code": "70-010",
+  "a_dire": "Les trois points communs A, B, C, projetés sur l'axe des x, donnent les nombres −√3, 0 et √3, qui sont les racines de x²(x² − 3).",
+  "legende_titre": "Trois points, trois nombres sur l'axe",
+  "lecture": [
+   "Le cercle bleu (f = 0) et la parabole orange (g = 0) se coupent en trois points verts : A à gauche, B à droite, C en bas.",
+   "Chaque trait vert pointillé descend (ou monte) du point jusqu'à l'axe horizontal, où un petit carré vert marque le nombre lu.",
+   "Les nombres lus sont −√3, 0 et √3 ; ce sont les racines de x²(x² − 3)."
+  ],
+  "a_voir": "A et B sont de chaque côté de l'axe vertical, donc leurs nombres sont opposés ; C donne 0."
+ },
+ {
+  "code": "70-011",
+  "a_dire": "La courbe f = 0 est le cercle : un point est dessus quand x² + y² − 4 vaut 0, et dehors quand le résultat est différent de 0.",
+  "legende_titre": "Le cercle comme courbe f = 0",
+  "lecture": [
+   "Le cercle bleu est la courbe f = 0, avec f = x² + y² − 4.",
+   "Le point vert (0 ; 2) donne 0 + 4 − 4 = 0 : il est sur le cercle.",
+   "Le point rouge (1 ; 1) donne 1 + 1 − 4 = −2 : il n'est pas sur le cercle."
+  ],
+  "a_voir": "On calcule f pour un point : s'il vaut 0, le point est sur le cercle."
+ },
+ {
+  "code": "70-012",
+  "a_dire": "Le signe g = 0 se lit « g égale 0 » : un point est sur la parabole quand y − x² + 2 vaut 0, et il n'y est pas quand le résultat est différent de 0.",
+  "legende_titre": "La parabole comme courbe g = 0",
+  "lecture": [
+   "La courbe orange est la parabole g = 0, avec g = y − x² + 2.",
+   "Le point vert (2 ; 2) donne 2 − 4 + 2 = 0 : il est sur la parabole.",
+   "Le point rouge (1 ; 0) donne 0 − 1 + 2 = 1 : il n'est pas sur la parabole."
+  ],
+  "a_voir": "g = 0 est le critère : on garde les points pour lesquels le nombre g vaut 0."
+ },
+ {
+  "code": "70-013",
+  "a_dire": "Un point commun vérifie f = 0 et g = 0 en même temps ; un point du cercle seul vérifie seulement f = 0, un point de la parabole seule seulement g = 0.",
+  "legende_titre": "Un point sur les deux courbes à la fois",
+  "lecture": [
+   "Le point bleu, sur le cercle seulement, vérifie f = 0 mais pas g = 0.",
+   "Le point orange, sur la parabole seulement, vérifie g = 0 mais pas f = 0.",
+   "Les trois points verts A, B et C sont sur les deux courbes : ce sont les solutions du système f = 0 et g = 0."
+  ],
+  "a_voir": "Un point commun est sur les deux courbes en même temps ; les deux voisins ne sont que sur une."
+ },
+ {
+  "code": "70-014",
+  "a_dire": "Projeter un point (x, y) sur l'axe des x, c'est garder son abscisse x et oublier son ordonnée y.",
+  "legende_titre": "Garder un nombre, oublier l'autre",
+  "lecture": [
+   "Le point bleu est le point (3 ; 5).",
+   "La flèche orange le fait tomber tout droit sur l'axe horizontal.",
+   "Le carré vert sur l'axe marque x = 3, le nombre gardé ; la hauteur y = 5 n'apparaît plus sur l'axe."
+  ],
+  "a_voir": "Sur l'axe, on lit 3 ; le nombre 5 est oublié."
+ },
+ {
+  "code": "70-015",
+  "a_dire": "Une expression sans y ne peut pas distinguer deux points de même x : elle ne retient d'un point que son abscisse, ce qui est une projection sur l'axe des x.",
+  "legende_titre": "Sans y, deux points deviennent un seul",
+  "lecture": [
+   "Le point bleu (0 ; −2) et le point violet (0 ; 5) ont le même x mais des hauteurs différentes.",
+   "Les deux flèches orange les amènent au même carré vert sur l'axe horizontal.",
+   "Le cadre vert dit qu'une expression sans y prend la même valeur pour les deux points."
+  ],
+  "a_voir": "Deux points de même x ne se distinguent plus quand y a disparu."
+ },
+ {
+  "code": "70-016",
+  "a_dire": "Les racines du résultat de l'élimination sont les abscisses des points communs : il vaut 0 pour x = √3, où les équations ont une hauteur commune, et pas pour x = 1.",
+  "legende_titre": "Pour quel x les deux courbes ont-elles une hauteur commune ?",
+  "lecture": [
+   "Sur la ligne rouge x = 1, le cercle donne les points bleus, d'ordonnées √3 et −√3, la parabole le point orange de hauteur −1 : pas de hauteur commune, et x²(x² − 3) vaut −2.",
+   "Sur la ligne verte x = √3, les deux courbes passent par le même point vert, de hauteur 1 : x²(x² − 3) vaut 0.",
+   "Les textes à droite reprennent les deux cas avec les mêmes couleurs."
+  ],
+  "a_voir": "Le résultat vaut 0 exactement là où les deux courbes ont un point commun."
+ },
+ {
+  "code": "70-017",
+  "a_dire": "L'élimination fait perdre l'ordonnée y et fait gagner une équation à une seule inconnue x.",
+  "legende_titre": "Ce qu'on perd, ce qu'on gagne",
+  "lecture": [
+   "À gauche, trois points bleus du plan, chacun avec ses deux nombres ; les traits orange pointillés les font tomber sur l'axe.",
+   "À droite, les trois carrés verts sont les trois nombres x seuls sur une droite ; la flèche orange est l'élimination.",
+   "Le cadre gris dit ce qui est perdu : la hauteur y ; le cadre vert dit ce qui est gagné : une équation en x."
+  ],
+  "a_voir": "On échange la hauteur contre une équation à une seule inconnue."
+ },
+ {
+  "code": "70-018",
+  "a_dire": "En C la parabole touche le cercle sans le traverser, avec la même tangente horizontale, alors qu'en A et en B elle le traverse.",
+  "legende_titre": "Traverser ou toucher",
+  "lecture": [
+   "Le cercle est bleu, la parabole orange ; A, B et C sont les trois points communs verts.",
+   "En A et en B, la parabole passe d'un côté à l'autre du cercle : elle le traverse.",
+   "En C, les deux courbes touchent la droite horizontale grise en pointillés sans la traverser : elles ont la même tangente."
+  ],
+  "a_voir": "La droite horizontale en C touche les deux courbes au même point."
+ },
+ {
+  "code": "70-019",
+  "a_dire": "Deux polynômes de degré 1, f = a₁y + a₀ et g = b₁y + b₀, ont chacun une racine ; ici 2y + 6 et 3y + 9 s'annulent tous deux en −3.",
+  "legende_titre": "Deux polynômes de degré 1 et leur racine",
+  "lecture": [
+   "La droite bleue montre f = 2y + 6, avec a₁ = 2 et a₀ = 6.",
+   "La droite violette montre g = 3y + 9, avec b₁ = 3 et b₀ = 9.",
+   "Les deux droites coupent l'axe horizontal au même point vert, y = −3 : c'est la racine de f et de g."
+  ],
+  "a_voir": "La racine se lit sur les deux nombres d'un polynôme : −6/2 et −9/3 valent −3."
+ },
+ {
+  "code": "70-020",
+  "a_dire": "Une racine commune de deux polynômes est un nombre qui figure dans les deux listes de racines ; ici 1 pour f = y² − 1 et g = y − 1.",
+  "legende_titre": "Un nombre dans les deux listes de racines",
+  "lecture": [
+   "Les deux points bleus au-dessus de la droite graduée sont les racines de f : −1 et 1.",
+   "Le point violet en dessous est la racine de g : 1.",
+   "Le trait vert pointillé relie les deux points placés sur 1 : c'est la racine commune ; −1 reste une racine de f seule."
+  ],
+  "a_voir": "Le seul nombre qui annule les deux polynômes est 1."
+ },
+ {
+  "code": "70-021",
+  "a_dire": "Pour deux polynômes de degré 1, on calcule a₁b₀ − a₀b₁ : ici 2 × 9 − 6 × 3 = 18 − 18 = 0, donc ils ont une racine commune.",
+  "legende_titre": "Le calcul croisé des quatre nombres",
+  "lecture": [
+   "Le tableau range les nombres de f (a₁ = 2, a₀ = 6) en haut et de g (b₁ = 3, b₀ = 9) en bas.",
+   "La flèche bleue relie a₁ à b₀ : produit 2 × 9 = 18 ; la flèche orange relie a₀ à b₁ : produit 6 × 3 = 18.",
+   "Le cadre vert donne la différence 18 − 18 = 0 : les deux polynômes ont la racine commune −3."
+  ],
+  "a_voir": "On multiplie en croix, puis on soustrait : un résultat nul annonce une racine commune."
+ },
+ {
+  "code": "70-022",
+  "a_dire": "Un déterminant a₁b₀ − a₀b₁ nul signale une racine commune quand a₁ et b₁ sont différents de 0 ; si a₁ = b₁ = 0, il peut être nul sans aucune racine.",
+  "legende_titre": "Quand un déterminant nul dit-il vrai ?",
+  "lecture": [
+   "Le cadre vert à gauche : a₁ et b₁ sont différents de 0 ; les racines −6/2 et −9/3 se superposent en −3, et 6 × 3 = 9 × 2, donc le déterminant est 0.",
+   "Le cadre rouge à droite : les polynômes 6 et 5 n'ont pas de y, donc a₁ = b₁ = 0 ; ils n'ont aucune racine.",
+   "Pourtant 0 × 5 − 6 × 0 = 0 : le déterminant est nul sans racine commune."
+  ],
+  "a_voir": "La condition a₁ et b₁ différents de 0 est nécessaire."
+ },
+ {
+  "code": "70-023",
+  "a_dire": "Le déterminant 2 × 2 n'est pas un objet nouveau : pour deux droites écrites comme polynômes en y, il donne la même équation qu'au chapitre 24, au signe près.",
+  "legende_titre": "Le déterminant, déjà vu au chapitre 24",
+  "lecture": [
+   "À gauche, en bleu, les deux droites y = 2x + 1 et y = 3x + 4 : en les soustrayant, on obtient x + 3 = 0 (orange).",
+   "À droite, en violet, les mêmes droites écrites y − 2x − 1 et y − 3x − 4 : le calcul a₁b₀ − a₀b₁ donne −x − 3 = 0.",
+   "Les deux flèches vertes arrivent au même nombre, x = −3, sur la droite graduée."
+  ],
+  "a_voir": "Les deux équations ne diffèrent que par le signe et ont la même solution."
+ },
+ {
+  "code": "70-024",
+  "a_dire": "Un déterminant nul décrit deux droites de même pente (aucune solution unique) et, vu comme comparaison de polynômes en y, il signale une racine commune : c'est le même calcul.",
+  "legende_titre": "Deux droites de même pente",
+  "lecture": [
+   "À gauche, les droites bleue y = 2x + 1 et violette y = 2x + 4 ont la même pente 2 : elles restent écartées de 3 (trait orange) et ne se coupent pas.",
+   "Le cadre rouge dit qu'en soustrayant les équations il reste 3 = 0 : aucune solution.",
+   "À droite, le cadre vert dit que, pour deux polynômes en y, le déterminant nul signale une racine commune.",
+   "Le cadre bleu du bas montre que les deux lectures utilisent le même calcul."
+  ],
+  "a_voir": "Le même déterminant nul décrit deux droites de même pente, puis une racine commune de deux polynômes."
+ },
+ {
+  "code": "70-025",
+  "a_dire": "Quand le déterminant est nul, la seconde ligne du tableau est la première multipliée par un même nombre (ici 1,5), donc les deux équations ont les mêmes solutions.",
+  "legende_titre": "Une ligne multipliée par 1,5",
+  "lecture": [
+   "La première ligne, en bleu, contient 2 et 6 : c'est l'équation 2y + 6 = 0.",
+   "Les flèches orange multiplient chaque nombre par 1,5 : on obtient 3 et 9, la seconde ligne en violet, c'est-à-dire 3y + 9 = 0.",
+   "Sur la droite graduée, le point vert marque la solution commune, −3."
+  ],
+  "a_voir": "Les deux lignes décrivent la même condition sur y, donc la même solution."
+ },
+ {
+  "code": "70-026",
+  "a_dire": "Le cas donne un polynôme de degré 2 et un de degré 1 qui ont la racine commune 1 ; ici on l'a trouvée en factorisant, mais il faudrait une règle qui la lise sur les nombres.",
+  "legende_titre": "Un polynôme de degré 2 et un de degré 1",
+  "lecture": [
+   "La courbe bleue est f = y² − 3y + 2, de degré 2 ; elle coupe l'axe horizontal en 1 et en 2.",
+   "La droite violette est g = y − 1, de degré 1 ; elle coupe l'axe en 1.",
+   "Le point vert, en 1, est la racine commune ; le point gris, en 2, est une racine de f seule."
+  ],
+  "a_voir": "Les deux polynômes s'annulent ensemble en 1 seulement."
+ },
+ {
+  "code": "70-027",
+  "a_dire": "On compte y², y et 1 comme trois inconnues séparées Y₂, Y₁, Y₀ : le polynôme devient du premier degré.",
+  "legende_titre": "Trois morceaux, trois inconnues",
+  "lecture": [
+   "En haut, les trois morceaux bleus de f = y² − 3y + 2 : y², y et 1, avec leurs nombres 1, −3 et 2.",
+   "Chaque flèche orange donne à un morceau son nom d'inconnue : Y₂, Y₁, Y₀ (vert).",
+   "Le cadre du bas écrit f avec ces trois inconnues : 1 Y₂ − 3 Y₁ + 2 Y₀, du premier degré."
+  ],
+  "a_voir": "Chaque morceau devient une inconnue, et l'expression est du premier degré."
+ },
+ {
+  "code": "70-028",
+  "a_dire": "Le signe Y₂ = y², Y₁ = y, Y₀ = 1 donne un nom court à chaque morceau : a₂y² + a₁y + a₀ s'écrit a₂Y₂ + a₁Y₁ + a₀Y₀.",
+  "legende_titre": "Un nom court pour chaque morceau",
+  "lecture": [
+   "La rangée bleue du haut est le polynôme avant : a₂y², a₁y, a₀.",
+   "Chaque flèche orange porte la règle de nommage de son morceau : Y₂ = y², Y₁ = y, Y₀ = 1.",
+   "La rangée verte du bas est le même polynôme après : a₂Y₂, a₁Y₁, a₀Y₀, avec trois termes de même forme."
+  ],
+  "a_voir": "Le numéro de chaque Y rappelle la puissance de y qu'il remplace."
+ },
+ {
+  "code": "70-029",
+  "a_dire": "On multiplie g par y pour obtenir une deuxième équation yg : tout nombre qui annule g annule aussi yg, donc 1 annule f, yg et g.",
+  "legende_titre": "Fabriquer une deuxième équation avec g",
+  "lecture": [
+   "La ligne bleue est f, la ligne violette est g = y − 1 ; la flèche orange « × y » mène de g à la ligne orange yg = y² − y.",
+   "À droite, chaque cadre vert calcule la ligne pour y = 1 : 1 − 3 + 2 = 0, 1 − 1 = 0 et 1 − 1 = 0.",
+   "Le texte vert du bas dit que 1 annule g, donc annule aussi yg."
+  ],
+  "a_voir": "Tout nombre qui annule g annule aussi yg : 1 annule f, yg et g."
+ },
+ {
+  "code": "70-030",
+  "a_dire": "Les trois lignes f, yg, g forment un système de trois équations en Y₂, Y₁, Y₀ avec 0 à droite ; les nombres de yg sont ceux de g décalés d'une case, et (1, 1, 1) convient.",
+  "legende_titre": "Trois lignes de nombres rangées en tableau",
+  "lecture": [
+   "Chaque colonne correspond à une inconnue : Y₂, Y₁, Y₀.",
+   "La ligne bleue donne les nombres de f : 1, −3, 2 ; la ligne orange, ceux de yg : 1, −1, 0 ; la ligne violette, ceux de g : 0, 1, −1.",
+   "Le cadre vert dit que (1, 1, 1) vérifie les trois lignes, car 1 est la racine commune."
+  ],
+  "a_voir": "Le tableau range les coefficients de f, de yg et de g, ligne par ligne."
+ }
+]

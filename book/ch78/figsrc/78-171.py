@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(62)
+text(ax,44,58,r'$\mathbb{H}$ : corps gauche infini','sujet','m')
+box(ax,4,36,26,11,'sujet',label=r'$ij$')
+text(ax,38,41.5,r'$\neq$','limite','xl')
+box(ax,46,36,38,11,'varie',label=r'$ji=-ij$')
+text(ax,44,30,'ne commutent pas','limite','s')
+for k in range(3): disc(ax,12+k*13,15,4.5,'sujet',label=f'${k+1}$')
+text(ax,54,15,r'$\cdots$','sujet','l')
+arrow(ax,(60,15),(84,15),'varie')
+text(ax,44,6,'une infinité de multiples de 1','fixe','s')
+save(fig,'78-171')

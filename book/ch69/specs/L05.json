@@ -1,0 +1,241 @@
+[
+ {
+  "code": "69-121",
+  "a_dire": "On multiplie F par 9 pour diviser sans fraction : 9F = QG − R, avec Q = 3x et R = 18x − 9.",
+  "legende_titre": "Diviser sans fraction",
+  "lecture": [
+   "La ligne bleue est 9F, le polynôme de départ multiplié par 9.",
+   "La ligne grise est QG, le quotient 3x multiplié par le diviseur, avec un signe moins devant.",
+   "La ligne verte est −R, ce qui reste : −18x + 9.",
+   "Tous les coefficients écrits sont des nombres entiers."
+  ],
+  "a_voir": "Après la multiplication par 9, la soustraction donne un reste sans aucune fraction."
+ },
+ {
+  "code": "69-122",
+  "a_dire": "Avec un exposant e pair, v puissance e est positif : la multiplication ne change aucun signe.",
+  "legende_titre": "Exposant pair et signes",
+  "lecture": [
+   "Les trois ronds gris du haut sont les signes des termes de F : plus, moins, plus.",
+   "La flèche de gauche multiplie par moins 3 : les ronds rouges montrent tous les signes retournés.",
+   "La flèche de droite multiplie par 9 : les ronds verts gardent plus, moins, plus."
+  ],
+  "a_voir": "Avec e égal à 2, les signes restent les mêmes ; avec e égal à 1, ils sont tous retournés."
+ },
+ {
+  "code": "69-123",
+  "a_dire": "Pour x³ + px + q, on divise 9F par la dérivée et le terme suivant est −(6px + 9q) ; la suite se sépare en deux cas, p différent de 0 et p égal à 0.",
+  "legende_titre": "Le terme suivant et ses deux cas",
+  "lecture": [
+   "La rangée du haut écrit 9F comme la dérivée fois 3x, plus 6px + 9q (en orange).",
+   "La boîte verte est le terme suivant, avec le signe renversé.",
+   "La boîte bleue est le cas p différent de 0 : pour p égal à moins 3, le coefficient 18 n'est pas nul.",
+   "La boîte violette est le cas p égal à 0 : il reste une constante."
+  ],
+  "a_voir": "Le coefficient de x dans le terme suivant est −6p : il décide des deux cas."
+ },
+ {
+  "code": "69-124",
+  "a_dire": "Au cas I, quand p et 27q² + 4p³ ne sont pas nuls, la suite a quatre termes ; pour p = 1 et q = 1, le dernier est −279.",
+  "legende_titre": "Cas I : une suite de quatre termes",
+  "lecture": [
+   "Les trois boîtes bleues sont les trois premiers termes : x³ + x + 1, 3x² + 1 et −6x − 9.",
+   "La boîte verte est le dernier terme, −279, égal à −9 fois 31.",
+   "Sous chaque boîte, le degré baisse de 3 à 0.",
+   "Le texte du bas donne 31 et le produit p fois 31, qui n'est pas nul."
+  ],
+  "a_voir": "Les quatre boîtes se suivent, du degré 3 au degré 0."
+ },
+ {
+  "code": "69-125",
+  "a_dire": "Au cas II, quand 27q² + 4p³ est nul, le dernier terme disparaît et la suite s'arrête à un polynôme de degré 1 qui s'annule en 1, comme le polynôme de départ.",
+  "legende_titre": "Cas II : le dernier terme disparaît",
+  "lecture": [
+   "Les trois boîtes bleues sont les trois termes de la suite : x³ − 3x + 2, 3x² − 3 et 18x − 18.",
+   "La boîte en pointillés est le quatrième terme, qui est nul : il est absent.",
+   "En dessous, F(1) vaut 0 et 18x − 18 vaut 0 en x égal à 1 : la valeur 1 est une racine commune."
+  ],
+  "a_voir": "La suite s'arrête au terme de degré 1, qui s'annule au même endroit que F."
+ },
+ {
+  "code": "69-126",
+  "a_dire": "Au cas III, avec p = 0 et q différent de 0, la suite n'a que trois termes : x³ + q, 3x² et −9q.",
+  "legende_titre": "Cas III : trois termes",
+  "lecture": [
+   "La boîte du haut est x³ + 2, de degré 3.",
+   "La boîte du milieu est 3x², sa dérivée, de degré 2.",
+   "La boîte verte est le dernier terme, −9 fois 2, soit −18, de degré 0.",
+   "Aucune boîte de degré 1 : la suite saute ce degré."
+  ],
+  "a_voir": "Il y a trois boîtes, et le degré passe de 2 directement à 0."
+ },
+ {
+  "code": "69-127",
+  "a_dire": "Au cas IV, avec p = q = 0, la division tombe juste : la suite n'a que deux termes et les deux ont la racine 0 en commun.",
+  "legende_titre": "Cas IV : la division tombe juste",
+  "lecture": [
+   "La rangée du haut écrit x³ comme x/3 fois 3x², plus 0.",
+   "La boîte verte contient le reste 0 : la suite s'arrête.",
+   "Sur la droite graduée, le rond vert est en 0, où x³ et 3x² sont tous les deux nuls."
+  ],
+  "a_voir": "Le reste est 0 et les deux polynômes s'annulent au même point, 0."
+ },
+ {
+  "code": "69-128",
+  "a_dire": "Pour p = −3 et q = 1, chaque terme de la formule du cas I est celui de la partie précédente multiplié par un nombre positif.",
+  "legende_titre": "Vérification du cas I",
+  "lecture": [
+   "La rangée grise du haut est la suite de la partie précédente.",
+   "La rangée bleue du bas est la suite donnée par la formule du cas I.",
+   "Chaque flèche orange donne le nombre positif qui multiplie le terme : 1, 1, 9 et 324."
+  ],
+  "a_voir": "Les deux premiers termes sont identiques, et les deux derniers sont multipliés par un nombre positif."
+ },
+ {
+  "code": "69-129",
+  "a_dire": "Le dernier terme du cas I contient le discriminant d = −4p³ − 27q² ; pour p = −3 et q = 1, d = 108 − 27 = 81, positif, donc trois racines réelles.",
+  "legende_titre": "Le discriminant dans le dernier terme",
+  "lecture": [
+   "La barre bleue a pour longueur −4p³, soit 108.",
+   "La petite barre orange, collée à la fin de la barre bleue, retire 27 : c'est −27q².",
+   "La barre verte a pour longueur ce qui reste, d égal à 81.",
+   "Le dernier terme est 9 fois d, soit 729."
+  ],
+  "a_voir": "La barre verte est la barre bleue moins la barre orange."
+ },
+ {
+  "code": "69-130",
+  "a_dire": "Pour un polynôme avec un paramètre, le théorème donne une liste finie de systèmes de conditions qui disent exactement quand une racine existe.",
+  "legende_titre": "Des conditions sur le paramètre",
+  "lecture": [
+   "Les deux boîtes sont les deux systèmes : t égale 0 en violet, moins t positif en bleu.",
+   "Sur la droite des valeurs de t, le trait vert est la zone où moins t est positif ; le rond violet est t égal à 0.",
+   "Le trait gris à droite est la zone sans racine."
+  ],
+  "a_voir": "Il y a une racine exactement quand t tombe dans le trait vert ou sur le rond."
+ },
+ {
+  "code": "69-131",
+  "a_dire": "La preuve traduit V(−μ) > V(μ), calculé sur une suite écrite en lettres, en conditions de signe sur des polynômes en p et q.",
+  "legende_titre": "De la suite aux conditions de signe",
+  "lecture": [
+   "La première rangée de ronds est la suite écrite en p et q, évaluée en −μ = −5 : les signes sont −, +, −, +, avec trois changements de signe.",
+   "La seconde rangée est la même suite en μ = 5 : quatre signes +, aucun changement.",
+   "Chaque signe est −, 0 ou +.",
+   "La boîte grise écrit l'inégalité entre ces deux comptes ; la boîte verte est ce qu'elle devient : des conditions de signe en p et q."
+  ],
+  "a_voir": "Trois changements contre zéro : l'inégalité est vraie."
+ },
+ {
+  "code": "69-132",
+  "a_dire": "L'ordre vient d'un ensemble P stable par somme et produit ; dans Z/5Z, cinq fois 1 donne 0, qui ne peut pas être positif, donc l'ordre est impossible.",
+  "legende_titre": "Un ordre impossible",
+  "lecture": [
+   "Les cinq ronds sont les cinq nombres du cadran : 0, 1, 2, 3, 4.",
+   "Chaque flèche orange ajoute 1 : le tour revient à 0.",
+   "Les ronds bleus 1 à 4 sont positifs si 1 est positif ; le rond rouge 0 ne peut pas l'être."
+  ],
+  "a_voir": "Cinq additions de 1 reviennent à 0 : 0 devrait être positif, ce qui est interdit."
+ },
+ {
+  "code": "69-133",
+  "a_dire": "La même suite de divisions donne un PGCD et, en renversant le signe de chaque reste, sert aussi à compter les racines par des changements de signe.",
+  "legende_titre": "Une suite, deux usages",
+  "lecture": [
+   "Les quatre boîtes bleues sont la suite de divisions ; les flèches orange renversent le signe de chaque reste.",
+   "La boîte verte de gauche lit le dernier terme : une constante, donc un PGCD constant.",
+   "La boîte verte de droite compte : 3 changements de signe en −2, 0 en 2, donc 3 moins 0 égale 3 racines."
+  ],
+  "a_voir": "Les mêmes quatre termes donnent le PGCD et le nombre de racines."
+ },
+ {
+  "code": "69-134",
+  "a_dire": "Le discriminant du second degré réapparaît dans la condition a² < 4b des polynômes irréductibles et dans le dernier terme de la suite de Sturm du troisième degré.",
+  "legende_titre": "Le discriminant revient deux fois",
+  "lecture": [
+   "Sur la droite graduée, le rond bleu est a² égal à 0 et le rond violet est 4b égal à 4 : a² est plus petit.",
+   "Sous la ligne en pointillés, la boîte bleue est le polynôme du troisième degré et la boîte verte son dernier terme, 9 fois 81.",
+   "Le nombre 81 est le discriminant d."
+  ],
+  "a_voir": "Le même discriminant sert en haut au second degré et en bas au troisième degré."
+ },
+ {
+  "code": "69-135",
+  "a_dire": "Le dernier terme de la suite de Sturm est le PGCD de f et f′ : s'il est constant non nul, il n'y a pas de racine multiple ; sinon il y en a une.",
+  "legende_titre": "Lire le dernier terme",
+  "lecture": [
+   "À gauche, en bleu, le dernier terme 9/4 est une droite horizontale au-dessus de l'axe : jamais nul.",
+   "À droite, en violet, le dernier terme 2x − 2 traverse l'axe en x égal à 1.",
+   "Sous chaque dessin, la conclusion : pas de racine multiple à gauche, racine multiple à droite."
+  ],
+  "a_voir": "Une droite qui ne touche pas l'axe, contre une droite qui le coupe."
+ },
+ {
+  "code": "69-136",
+  "a_dire": "Quelques valeurs du polynôme x⁵ − 4x + 2 ne prouvent pas le nombre de racines ; le théorème de Sturm donne ce nombre exact par une soustraction entre deux bornes.",
+  "legende_titre": "Un comptage devenu certain",
+  "lecture": [
+   "Sur la droite graduée, les ronds bleus sont les quatre points −2, 0, 1 et 2 ; au-dessus, la valeur du polynôme : −22, 2, −1 et 26.",
+   "Le texte orange compte 3 changements de signe entre ces valeurs.",
+   "La boîte verte dit que la soustraction V(−2) − V(2) donne le nombre exact de racines."
+  ],
+  "a_voir": "Quatre valeurs ne suffisent pas, alors que la soustraction de Sturm donne le nombre exact."
+ },
+ {
+  "code": "69-137",
+  "a_dire": "Le théorème de Tarski traite des systèmes à plusieurs inconnues, en éliminant les inconnues une à une, alors que Sturm avec paramètres traite une seule équation.",
+  "legende_titre": "De une équation à un système",
+  "lecture": [
+   "En haut, la boîte grise est Sturm avec paramètres : une équation ; la flèche orange l'étend à un système.",
+   "Dans le grand cadre bleu, Tarski traite plusieurs inconnues ; les deux boîtes bleues sont les deux équations de l'exemple.",
+   "Les flèches orange remplacent y par x ; la boîte verte montre une équation avec la seule inconnue x.",
+   "Le texte du bas dit qu'on élimine les inconnues une à une."
+  ],
+  "a_voir": "Remplacer y par x enlève une inconnue."
+ },
+ {
+  "code": "69-138",
+  "a_dire": "Le théorème de Tarski décide par un calcul fini si un système a une solution réelle, en n'utilisant que des opérations sur les coefficients.",
+  "legende_titre": "Décider sans construire la racine",
+  "lecture": [
+   "Les trois boîtes bleues sont les coefficients de x² − 2 : 1, 0 et −2.",
+   "La boîte orange est un calcul fini : on évalue seulement des signes.",
+   "La boîte verte est la réponse : oui ou non, sans construire la racine."
+  ],
+  "a_voir": "Du début à la fin, on n'utilise que les coefficients, en un nombre fini d'étapes."
+ },
+ {
+  "code": "69-139",
+  "a_dire": "Une forme quadratique réelle écrite en carrés se classe en comptant les carrés de coefficient positif et ceux de coefficient négatif, grâce à l'ordre.",
+  "legende_titre": "Compter les carrés positifs et négatifs",
+  "lecture": [
+   "Chaque barre est un terme de la forme : x², 4y² et −z².",
+   "Les deux barres bleues, vers le haut, ont un coefficient positif ; la barre violette, vers le bas, un coefficient négatif.",
+   "La hauteur de chaque barre est son coefficient : 1, 4 et −1.",
+   "La boîte verte donne la classe : 2 positifs, 1 négatif."
+  ],
+  "a_voir": "Deux barres montent et une descend."
+ },
+ {
+  "code": "69-140",
+  "a_dire": "Pour un polynôme à deux variables comme x² + y² − 1, les racines forment un cercle entier, et non des points isolés que l'on peut compter.",
+  "legende_titre": "Une courbe entière de racines",
+  "lecture": [
+   "En haut, sur la droite entre a et b, les ronds bleus sont des racines isolées qu'on peut compter.",
+   "En bas, le cercle bleu est l'ensemble des racines de x² + y² − 1.",
+   "Les ronds verts sont trois de ses points : (1, 0), (0, 1) et (−1, 0)."
+  ],
+  "a_voir": "En haut des points séparés, en bas une courbe continue de racines."
+ },
+ {
+  "code": "69-141",
+  "a_dire": "On demande quelle grandeur jouerait le rôle du nombre de racines pour une courbe, sans calculer un seul point : ici on ne regarde que le signe de x² + y² − 1 au centre.",
+  "legende_titre": "Un signe sans point de la courbe",
+  "lecture": [
+   "Le cercle en pointillés gris est la courbe, dont aucun point n'est calculé.",
+   "Le rond bleu est le centre (0, 0).",
+   "Au centre, l'expression vaut 0 + 0 − 1, soit −1 : on connaît son signe sans aucun point du cercle."
+  ],
+  "a_voir": "Le signe au centre est connu sans calculer un point du cercle."
+ }
+]

@@ -1,0 +1,348 @@
+[
+ {
+  "code": "68-001",
+  "a_dire": "Le bruit est la cause physique (ici un parasite) qui inverse un bit ; ici il agit sur le deuxième bit et les autres restent justes.",
+  "legende_titre": "Un parasite change un bit de 0110",
+  "lecture": [
+   "La rangée bleue du haut est le message envoyé par la sonde : 0110.",
+   "La rangée du bas est le message reçu par la Terre : 0010.",
+   "La flèche orange est le parasite, le bruit : il agit sur le deuxième bit seulement.",
+   "Les cases grises sont les bits restés justes."
+  ],
+  "a_voir": "Le bruit est la cause, et un seul bit du message est changé."
+ },
+ {
+  "code": "68-002",
+  "a_dire": "Le canal est le chemin que suit le message entre l’émetteur et le récepteur ; il est distinct de l’émetteur, du récepteur et du bruit.",
+  "legende_titre": "Quatre notions d’un même envoi",
+  "lecture": [
+   "La case grise de gauche est la sonde, l’émetteur ; celle de droite est la Terre, le récepteur.",
+   "La grande case bleue au milieu est le canal : l’antenne, puis l’espace.",
+   "La case orange en haut est le bruit : il agit dans le canal mais n’est pas le canal."
+  ],
+  "a_voir": "Le canal est le chemin entre les deux bouts, pas le message ni le bruit."
+ },
+ {
+  "code": "68-003",
+  "a_dire": "Chaque bit est presque sûr (0,999), mais pour 10 000 bits le produit de 10 000 facteurs 0,999 est très petit, environ 0,00005.",
+  "legende_titre": "Chance qu’un message arrive intact",
+  "lecture": [
+   "Chaque barre verte montre la probabilité que tous les bits arrivent justes, sur une échelle de 0 à 1.",
+   "Pour 1 bit, la barre est presque pleine : 0,999.",
+   "Pour 2 bits, elle est à peine plus courte : 0,999 fois 0,999, soit environ 0,998.",
+   "Pour 10 000 bits, il reste à peine un trait : environ 0,00005."
+  ],
+  "a_voir": "La barre presque pleine devient un simple trait quand on multiplie 10 000 facteurs 0,999."
+ },
+ {
+  "code": "68-004",
+  "a_dire": "Quand le renvoi est impossible, le récepteur est seul avec le mot reçu et doit réparer le message lui-même.",
+  "legende_titre": "Renvoyer l’image : impossible ici",
+  "lecture": [
+   "La flèche bleue du haut est le message qui va de la sonde à la Terre.",
+   "La flèche rouge barrée est la demande de renvoi : elle met des heures, donc elle est impossible.",
+   "La case verte du bas est ce qui reste à faire : réparer seul."
+  ],
+  "a_voir": "La flèche de retour est barrée : seule la réparation sur place est possible."
+ },
+ {
+  "code": "68-005",
+  "a_dire": "Détecter, c’est savoir qu’une erreur s’est produite, sans savoir quel bit est faux.",
+  "legende_titre": "Savoir qu’il y a une erreur, sans savoir où",
+  "lecture": [
+   "La rangée du haut est le message reçu de huit bits ; chaque point d’interrogation est un bit dont on ne connaît pas la valeur.",
+   "La case orange dit que le nombre de 1 est impair alors que la règle demande pair.",
+   "La case verte en dit la conséquence : la règle est violée, donc une erreur existe.",
+   "La case grise en pointillés dit ce que l’on ne sait pas : quel bit est faux."
+  ],
+  "a_voir": "On sait qu’une erreur existe, mais la place de l’erreur reste inconnue."
+ },
+ {
+  "code": "68-006",
+  "a_dire": "Corriger, c’est trouver quel bit est faux et le remettre à sa valeur : de 0010 on retrouve 0110.",
+  "legende_titre": "Du mot reçu au mot corrigé",
+  "lecture": [
+   "La rangée du haut est le mot reçu, 0010 ; la case orange est le deuxième bit, reconnu faux.",
+   "La flèche orange remet ce bit à 1.",
+   "La rangée verte du bas est le mot corrigé, 0110, le seul mot permis qui diffère de 0010 par un seul bit."
+  ],
+  "a_voir": "Un seul bit change entre le mot reçu et le mot corrigé."
+ },
+ {
+  "code": "68-007",
+  "a_dire": "Les bits de contrôle sont des bits ajoutés au message, calculés à partir de lui, qui ne portent aucune information nouvelle.",
+  "legende_titre": "Message et bits ajoutés",
+  "lecture": [
+   "Les quatre cases violettes sont les bits utiles : le message 0110.",
+   "La case bleue est l’ensemble des bits de contrôle, ajoutés après le message.",
+   "La flèche orange dit qu’ils sont calculés à partir du message.",
+   "L’accolade du bas entoure tout le mot envoyé y : bits utiles et bits de contrôle."
+  ],
+  "a_voir": "Les bits de contrôle viennent du message et s’ajoutent à lui."
+ },
+ {
+  "code": "68-008",
+  "a_dire": "La question du chapitre : pour un objectif donné (détecter ou corriger un nombre d’erreurs), quel est le plus petit nombre de bits ajoutés, et comment les calculer ?",
+  "legende_titre": "Le prix d’un objectif de protection",
+  "lecture": [
+   "La case bleue du haut est l’objectif : détecter ou corriger un nombre donné d’erreurs.",
+   "Deux questions en partent : le prix (case orange, combien de bits ajoutés) et la méthode (case violette, calculés comment).",
+   "Sur la droite graduée, les trois points orange sont les choix de la fiche : 1, 3 ou 8 bits ajoutés, soit 5, 7 ou 12 bits en tout.",
+   "La flèche verte va vers le plus petit prix : c’est lui qu’on cherche."
+  ],
+  "a_voir": "L’objectif donne deux questions : le plus petit nombre de bits ajoutés, et comment les calculer."
+ },
+ {
+  "code": "68-009",
+  "a_dire": "En répétant le message trois fois, un vote à chaque position corrige une erreur, mais on ajoute 8 bits de contrôle pour 4 bits utiles.",
+  "legende_titre": "Trois copies et un vote",
+  "lecture": [
+   "Les trois rangées sont les trois copies reçues : 0110, 1110, 0110.",
+   "La case orange est le cinquième bit du mot reçu : le premier bit de la deuxième copie, inversé.",
+   "À chaque position, on garde le bit qui apparaît au moins deux fois sur trois.",
+   "La case verte est le résultat du vote : 0110."
+  ],
+  "a_voir": "Dans la première colonne, deux copies sur trois disent 0 : le vote garde 0."
+ },
+ {
+  "code": "68-010",
+  "a_dire": "On compte les 1 du message et on ajoute un seul bit pour que le nombre total de 1 soit pair.",
+  "legende_titre": "Un bit ajouté pour rendre le total pair",
+  "lecture": [
+   "Les cases violettes sont le message ; la case orange est le bit ajouté.",
+   "Pour 0110, il y a deux 1 : on ajoute 0, le total reste 2, pair.",
+   "Pour 0111, il y a trois 1 : on ajoute 1, le total devient 4, pair."
+  ],
+  "a_voir": "Un seul bit ajouté suffit pour rendre le total de 1 pair."
+ },
+ {
+  "code": "68-011",
+  "a_dire": "Hamming a trouvé 3 bits de contrôle pour 4 bits utiles qui corrigent toute erreur isolée, mieux que la répétition (8 bits) et que la parité (1 bit, sans correction).",
+  "legende_titre": "Trois façons de protéger 4 bits",
+  "lecture": [
+   "Chaque rangée montre 4 bits utiles en gris et les bits de contrôle ajoutés en orange.",
+   "La répétition ajoute 8 bits et corrige une erreur : oui.",
+   "La parité ajoute 1 bit et ne corrige rien : non, en rouge.",
+   "Hamming ajoute 3 bits et corrige toute erreur isolée : oui, en vert."
+  ],
+  "a_voir": "Hamming corrige avec seulement 3 bits ajoutés."
+ },
+ {
+  "code": "68-012",
+  "a_dire": "La cryptographie transforme un message contre un espion pour l’empêcher de lire ; le codage le transforme contre le bruit pour pouvoir le lire malgré les erreurs ; l’outil est le même, l’arithmétique modulaire.",
+  "legende_titre": "Deux buts opposés, un même outil",
+  "lecture": [
+   "La colonne violette de gauche est la cryptographie : on transforme le message contre un espion.",
+   "La colonne bleue de droite est le codage : on transforme le message contre le bruit.",
+   "La case verte du bas, vers laquelle pointent les deux flèches, est l’outil commun : l’arithmétique modulaire."
+  ],
+  "a_voir": "Deux buts contraires partent du même outil."
+ },
+ {
+  "code": "68-013",
+  "a_dire": "Un bit est répété trois fois : 0 devient 000 et 1 devient 111 ; le récepteur peut recevoir 8 mots de trois bits, alors que 2 seulement sont envoyés.",
+  "legende_titre": "Deux mots envoyés, huit mots possibles",
+  "lecture": [
+   "En haut, 0 devient 000 en bleu et 1 devient 111 en orange : ce sont les deux mots envoyés.",
+   "Les huit cases du bas sont tous les mots de trois bits que le récepteur peut recevoir.",
+   "Les cases grises sont les six mots qui ne sont jamais envoyés."
+  ],
+  "a_voir": "Sur huit mots possibles, deux seulement sont envoyés."
+ },
+ {
+  "code": "68-014",
+  "a_dire": "Les huit mots de trois bits sont placés aux sommets d’un cube ; seuls 000 et 111 sont envoyés, et chaque sommet est soit bleu (près de 000), soit orange (près de 111).",
+  "legende_titre": "Le cube des huit mots de trois bits",
+  "lecture": [
+   "Chaque point est un sommet du cube et porte un mot de trois bits.",
+   "Les deux points cerclés de noir sont les seuls mots envoyés : 000 en bleu et 111 en orange.",
+   "Les sommets bleus sont à un pas au plus de 000, les sommets orange à un pas au plus de 111.",
+   "Chaque sommet a une seule couleur."
+  ],
+  "a_voir": "Aucun sommet n’est à la fois bleu et orange."
+ },
+ {
+  "code": "68-015",
+  "a_dire": "Deux sommets sont reliés par une arête quand leurs mots diffèrent en un seul bit ; suivre une arête, c’est subir une erreur sur un bit.",
+  "legende_titre": "Une arête, une erreur",
+  "lecture": [
+   "Les trois cercles bleus sont les mots 000, 100 et 110.",
+   "Chaque flèche orange est une arête : un seul bit change, d’abord le bit 1, puis le bit 2.",
+   "La flèche rouge en arc relie 000 à 110 : ils diffèrent par deux bits, donc il n’y a pas d’arête entre eux."
+  ],
+  "a_voir": "Une arête change un seul bit ; 000 et 110 demandent deux arêtes."
+ },
+ {
+  "code": "68-016",
+  "a_dire": "La boule de rayon 1 autour d’un mot envoyé contient ce mot et les mots qui diffèrent de lui par un seul bit : 000, 100, 010, 001 autour de 000 ; 111, 011, 101, 110 autour de 111.",
+  "legende_titre": "Deux boules de quatre mots",
+  "lecture": [
+   "Le grand cercle bleu est la boule autour de 000 : le centre cerclé de noir et ses trois voisins 100, 010, 001.",
+   "Le grand cercle orange est la boule autour de 111 : le centre et ses trois voisins 011, 101, 110.",
+   "Chaque trait relie un mot à un mot qui diffère en un seul bit."
+  ],
+  "a_voir": "Chaque boule contient le mot envoyé et les trois mots à une erreur de lui."
+ },
+ {
+  "code": "68-017",
+  "a_dire": "Les deux boules n’ont aucun mot en commun et à elles deux elles recouvrent le cube : chaque mot reçu est dans une seule boule, comme 011 qui est dans celle de 111.",
+  "legende_titre": "Chaque mot reçu a une seule couleur",
+  "lecture": [
+   "Les cercles bleus 000 et 001 sont dans la boule de 000 ; les cercles orange 011 et 111 sont dans la boule de 111.",
+   "L’accolade bleue montre que 011 est à 2 arêtes de 000.",
+   "L’accolade orange montre que 011 est à 1 arête de 111.",
+   "Le trait en pointillés sépare les deux boules : aucun mot n’est des deux côtés."
+  ],
+  "a_voir": "011 est à une arête de 111 : il est orange, jamais bleu."
+ },
+ {
+  "code": "68-018",
+  "a_dire": "Si l’on reçoit 101, qui est orange, le récepteur conclut que 111 a été envoyé avec le deuxième bit inversé, à condition qu’il n’y ait eu qu’une erreur.",
+  "legende_titre": "Réception de 101",
+  "lecture": [
+   "La rangée orange du haut est le mot reçu, 101 ; il est à un pas de 111 et à deux pas de 000.",
+   "La rangée verte du bas est le mot que le récepteur conclut avoir été envoyé : 111.",
+   "La flèche orange dit quel bit a été inversé : le deuxième.",
+   "Le texte du bas rappelle la condition : une seule erreur."
+  ],
+  "a_voir": "101 ne diffère de 111 que par le deuxième bit."
+ },
+ {
+  "code": "68-019",
+  "a_dire": "Avec deux erreurs, 000 envoyé donne par exemple 110, qui est orange : le récepteur corrige à tort vers 111 sans le savoir.",
+  "legende_titre": "Deux erreurs trompent le récepteur",
+  "lecture": [
+   "Le cercle bleu de gauche est 000, le mot envoyé ; deux flèches grises sont les deux erreurs.",
+   "Le cercle orange 110 est le mot reçu : il est dans la boule de 111.",
+   "La flèche rouge est la correction vers 111, qui est fausse.",
+   "Le récepteur voit seulement un mot qui a l’air d’avoir une seule erreur."
+  ],
+  "a_voir": "Deux erreurs sortent le mot de sa boule et l’amènent dans l’autre."
+ },
+ {
+  "code": "68-020",
+  "a_dire": "Corriger, c’est choisir des mots envoyés assez loin les uns des autres pour que leurs boules ne se touchent pas : 000 et 111 conviennent, 000 et 011 ne conviennent pas.",
+  "legende_titre": "Des mots loin, des boules séparées",
+  "lecture": [
+   "En haut, 000 et 111 sont à 3 arêtes : la boule bleue et la boule orange sont séparées.",
+   "En bas, 000 et 011 sont à 2 arêtes : les deux boules se recouvrent.",
+   "Le cercle rouge 001 est le mot qui est dans les deux boules."
+  ],
+  "a_voir": "Quand les mots envoyés sont trop proches, une boule déborde sur l’autre."
+ },
+ {
+  "code": "68-021",
+  "a_dire": "Un mot binaire de longueur n est une suite de n bits, numérotés de gauche à droite : x = (x1, x2, …, xn).",
+  "legende_titre": "Un mot de 7 bits, numéroté",
+  "lecture": [
+   "Les sept cases sont les bits du mot 0011001.",
+   "Sous chaque case figure son numéro : x1, x2, x3, jusqu’à xn.",
+   "La case orange est le troisième bit : x3 vaut 1.",
+   "L’accolade du haut dit que la longueur n vaut 7."
+  ],
+  "a_voir": "Chaque bit a un numéro, et n est le nombre de cases."
+ },
+ {
+  "code": "68-022",
+  "a_dire": "Le signe F2 = Z/2Z = {0, 1} désigne l’ensemble des restes de la division par 2 : seulement 0 et 1.",
+  "legende_titre": "Les restes de la division par 2",
+  "lecture": [
+   "Les trois cercles gris sont les nombres 6, 100 et 7.",
+   "Chaque flèche orange mène au reste de la division du nombre par 2.",
+   "6 et 100 ont le reste 0 ; 7 a le reste 1.",
+   "L’encadré bleu en pointillés est l’ensemble des restes : {0, 1}."
+  ],
+  "a_voir": "Tous les nombres aboutissent à 0 ou à 1, jamais à autre chose."
+ },
+ {
+  "code": "68-023",
+  "a_dire": "Les quatre règles d’addition viennent des restes : pair plus pair donne pair, pair plus impair donne impair, impair plus impair donne pair.",
+  "legende_titre": "Les quatre sommes de deux bits",
+  "lecture": [
+   "Les cases grises de la ligne du haut et de la colonne de gauche sont les deux bits à additionner : 0 pair, 1 impair.",
+   "Chaque case bleue donne une somme : 0 + 0 = 0, 0 + 1 = 1, 1 + 0 = 1.",
+   "La case orange est 1 + 1 = 0 : impair plus impair donne pair."
+  ],
+  "a_voir": "Il n’y a que quatre sommes, et la seule qui surprend est 1 + 1 = 0."
+ },
+ {
+  "code": "68-024",
+  "a_dire": "1 + 1 = 0 veut dire : deux nombres impairs ont une somme paire, comme 3 + 5 = 8 et 7 + 9 = 16.",
+  "legende_titre": "Deux impairs font un pair",
+  "lecture": [
+   "Les cases orange sont des nombres impairs : 3 et 5, puis 7 et 9.",
+   "Les cases bleues sont les sommes, paires : 8 et 16.",
+   "La case verte du bas écrit la règle avec des bits : 1 pour impair, 0 pour pair."
+  ],
+  "a_voir": "Dans chaque ligne, deux impairs donnent un pair."
+ },
+ {
+  "code": "68-025",
+  "a_dire": "Le signe F2^n désigne l’ensemble des mots de n bits ; il a 2^n éléments : 8 mots de 3 bits, 16 mots de 4 bits.",
+  "legende_titre": "Combien de mots de n bits",
+  "lecture": [
+   "Chaque petit carré est un mot ; la première ligne en montre 8, pour n = 3.",
+   "La deuxième ligne en montre 16, pour n = 4 : les 8 carrés bleus, et 8 carrés orange en plus.",
+   "Un bit de plus double le nombre de mots : 2 × 2 × 2 devient 2 × 2 × 2 × 2."
+  ],
+  "a_voir": "Chaque bit ajouté multiplie le nombre de mots par 2."
+ },
+ {
+  "code": "68-026",
+  "a_dire": "Pour additionner deux mots, on additionne les bits position par position ; par exemple 0011001 + 0000100 = 0011101.",
+  "legende_titre": "Addition de deux mots",
+  "lecture": [
+   "La rangée bleue est le mot x, la rangée violette est le mot y, la rangée verte est x + y.",
+   "La bande orange est la position 5 : 0 + 1 = 1.",
+   "Toutes les autres positions ajoutent 0 + 0 ou 1 + 0 et ne changent pas."
+  ],
+  "a_voir": "Chaque position est additionnée seule, et le résultat a la même longueur."
+ },
+ {
+  "code": "68-027",
+  "a_dire": "Ajouter un mot inverse les bits où il vaut 1 : l’erreur est une addition, le mot reçu r vaut c + e.",
+  "legende_titre": "Une erreur écrite comme une addition",
+  "lecture": [
+   "La rangée bleue est le mot envoyé c : 0011001.",
+   "La rangée orange est le mot e : il a un 1 seulement en position 5.",
+   "La rangée violette est le mot reçu r : 0011101.",
+   "La bande orange montre le bit 5 : il passe de 0 à 1, les autres ne changent pas."
+  ],
+  "a_voir": "Le seul 1 de e inverse le seul bit qui change."
+ },
+ {
+  "code": "68-028",
+  "a_dire": "Le mot d’erreur e n’est ni le mot envoyé c ni le mot reçu r : il note les positions inversées par le bruit, avec r = c + e.",
+  "legende_titre": "Trois mots : envoyé, erreur, reçu",
+  "lecture": [
+   "La case bleue est le mot envoyé c, choisi par l’émetteur : 0011001.",
+   "La case orange est le mot d’erreur e, avec un 1 aux bits inversés : 0000100.",
+   "La case violette est le mot reçu r : 0011101, la somme de c et de e.",
+   "Le récepteur ne lit que r."
+  ],
+  "a_voir": "Le mot d’erreur relie le mot envoyé au mot reçu."
+ },
+ {
+  "code": "68-029",
+  "a_dire": "Pour tout mot, x + x = 0 : chaque mot est son propre opposé ; ajouter deux fois le mot d’erreur retrouve le mot envoyé.",
+  "legende_titre": "Un mot ajouté à lui-même",
+  "lecture": [
+   "Les deux rangées bleues sont le même mot 0110.",
+   "La rangée verte est leur somme : 0000, le mot nul.",
+   "La ligne du bas écrit la conséquence : r + e = c + e + e = c."
+  ],
+  "a_voir": "Chaque position donne 0 + 0 ou 1 + 1, donc toujours 0."
+ },
+ {
+  "code": "68-030",
+  "a_dire": "Un code en blocs (n, k) découpe le message en blocs de k bits et transforme chacun en un mot de n bits, avec n plus grand que k ; ici k = 4 et n = 7.",
+  "legende_titre": "Blocs de 4 bits, mots de 7 bits",
+  "lecture": [
+   "La rangée du haut est le message coupé en blocs de 4 carrés violets.",
+   "Chaque flèche orange transforme un bloc en un mot de 7 carrés.",
+   "Dans chaque mot, les 4 carrés violets sont le bloc et les 3 carrés bleus sont les bits ajoutés.",
+   "L’accolade indique le nombre de bits ajoutés : n − k = 3."
+  ],
+  "a_voir": "Chaque bloc de 4 bits devient un mot de 7 bits, avec 3 bits de plus."
+ }
+]

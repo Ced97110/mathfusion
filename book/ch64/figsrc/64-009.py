@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = lambda y: 6 + (y - 1798) * 74 / 28
+line(ax, [(3, 30), (85, 30)], 'fixe', lw=1.0)
+for yr, role in ((1798, 'fixe'), (1824, 'resultat'), (1826, 'resultat')):
+    disc(ax, f(yr), 30, 1.6, role)
+box(ax, 2, 40, 38, 14, 'fixe', dash=True)
+text(ax, 21, 49, '1798 · Ruffini', 'fixe', 'm', weight='bold')
+text(ax, 21, 43.5, 'preuve incomplète', 'fixe', 's')
+line(ax, [(f(1798), 31.8), (f(1798), 40)], 'fixe')
+box(ax, 46, 40, 40, 14, 'resultat')
+text(ax, 66, 49, '1824 · Abel', 'resultat', 'm', weight='bold')
+text(ax, 66, 43.5, '1re preuve correcte', 'resultat', 's')
+line(ax, [(f(1824), 31.8), (f(1824), 40)], 'resultat')
+box(ax, 50, 4, 36, 14, 'resultat')
+text(ax, 68, 13, '1826 · Abel', 'resultat', 'm', weight='bold')
+text(ax, 68, 7.5, 'version complète', 'resultat', 's')
+line(ax, [(f(1826), 28.2), (f(1826), 18)], 'resultat')
+brace(ax, f(1798), f(1824), 27, 'varie', label='26 ans')
+save(fig, '64-009')

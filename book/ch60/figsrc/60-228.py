@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+cx = 53
+box(ax, 22, 78, 62, 9, 'sujet', label=r'ordre $n=12$')
+arrow(ax, (cx, 77.5), (cx, 71.5), 'varie')
+text(ax, 11, 65, 'étape 1', 'fixe', 's')
+box(ax, 22, 60, 62, 9, 'sujet', label=r'$12=2^2\times3$')
+arrow(ax, (cx, 59.5), (cx, 53.5), 'varie')
+text(ax, 11, 47, 'étape 2', 'fixe', 's')
+box(ax, 22, 42, 34, 9, 'autre', label=r'$p=2$ : 2 ; 1 + 1')
+box(ax, 58, 42, 26, 9, 'autre', label=r'$p=3$ : 1')
+arrow(ax, (cx, 41.5), (cx, 35.5), 'varie')
+text(ax, 11, 29, 'étape 3', 'fixe', 's')
+box(ax, 22, 24, 29, 9, 'resultat', label=r'$\mathbb{Z}/4\oplus\mathbb{Z}/3$', size='s')
+box(ax, 55, 24, 29, 9, 'resultat', label=r'$\mathbb{Z}/2\oplus\mathbb{Z}/2\oplus\mathbb{Z}/3$', size='s')
+text(ax, cx, 14, '2 groupes, sans oubli', 'resultat', 'm', weight='bold')
+save(fig, '60-228')

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+text(ax,44,53,r'$Q=x^2-y^2$','encre','l')
+box(ax,6,34,34,12,'sujet',label=r'$+1$ devant $x^2$')
+box(ax,48,34,34,12,'autre',label=r'$-1$ devant $y^2$')
+arrow(ax,(23,34),(23,28),'varie'); arrow(ax,(65,34),(65,28),'varie')
+box(ax,6,17,34,11,'sujet',label=r'$p=1$ : positif')
+box(ax,48,17,34,11,'autre',label=r'$q=1$ : négatif')
+arrow(ax,(23,17),(34,12),'varie'); arrow(ax,(65,17),(54,12),'varie')
+box(ax,22,2,44,10,'resultat',label=r'$(p,\,q)=(1,\,1)$',size='l',weight='bold')
+save(fig,'71-145')

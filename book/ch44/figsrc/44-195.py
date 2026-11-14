@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 67, '« grand C étoile »', 'fixe', 's')
+text(ax, 36, 54, 'ℂ', 'sujet', 22)
+text(ax, 54, 52, '∗', 'varie', 22)
+box(ax, 3, 28, 40, 11, 'sujet', label='tous les complexes')
+box(ax, 47, 28, 38, 11, 'varie', label='sauf le zéro')
+arrow(ax, (30, 45), (23, 40), 'sujet')
+arrow(ax, (54, 45), (64, 40), 'varie')
+arrow(ax, (23, 27.5), (36, 15), 'fixe')
+arrow(ax, (66, 27.5), (52, 15), 'fixe')
+box(ax, 10, 3, 68, 11, 'resultat', label='ℂ∗ = tous sauf 0')
+save(fig, '44-195')

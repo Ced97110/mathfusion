@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 4, 68, 80, 13, 'fixe', label=r'$\cos 175°\cos 55°+\sin 175°\sin 55°$', size='s')
+arrow(ax, (44, 68), (44, 57), 'varie')
+text(ax, 47, 62.5, 'même forme que', 'varie', 's', ha='left')
+box(ax, 4, 44, 80, 13, 'sujet', label=r'$\cos(A-B)=\cos A\cos B+\sin A\sin B$', size='s')
+arrow(ax, (44, 44), (44, 33), 'varie')
+text(ax, 47, 38.5, r'$A=175°$, $B=55°$', 'varie', 's', ha='left')
+box(ax, 4, 20, 80, 13, 'resultat', label=r'$\cos(175°-55°)=\cos 120°$', size='m')
+text(ax, 44, 12, 'la formule est lue à l’envers', 'encre', 's')
+save(fig, '34-120')

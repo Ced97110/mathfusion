@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+X, T = 26.0, 12.0; x0, y0 = 8.0, 6.0
+poly(ax, [(x0, y0), (x0 + X, y0), (x0 + X, y0 + X), (x0, y0 + X)], 'sujet')
+poly(ax, [(x0 + X, y0), (x0 + X + T, y0), (x0 + X + T, y0 + X), (x0 + X, y0 + X)], 'sujet')
+poly(ax, [(x0, y0 + X), (x0 + X, y0 + X), (x0 + X, y0 + X + T), (x0, y0 + X + T)], 'sujet')
+poly(ax, [(x0 + X, y0 + X), (x0 + X + T, y0 + X), (x0 + X + T, y0 + X + T), (x0 + X, y0 + X + T)], 'varie', lw=1.0)
+text(ax, x0 + X / 2, y0 + X / 2, r'$x^2$', 'sujet', 'l')
+text(ax, x0 + X + T / 2, y0 + X / 2, r'$3x$', 'sujet', 's')
+text(ax, x0 + X / 2, y0 + X + T / 2, r'$3x$', 'sujet', 's')
+text(ax, x0 + X + T / 2, y0 + X + T / 2, '9', 'varie', 'm', weight='bold')
+text(ax, x0 + X / 2, y0 - 2.5, r'$x$', 'sujet', 's'); text(ax, x0 + X + T / 2, y0 - 2.5, '3', 'sujet', 's')
+text(ax, x0 - 3.5, y0 + X / 2, r'$x$', 'sujet', 's'); text(ax, x0 - 3.5, y0 + X + T / 2, '3', 'sujet', 's')
+text(ax, 68, 40, 'il manque\nle coin 3 × 3', 'varie', 's')
+text(ax, 68, 28, r'$x^2+6x+9$', 'resultat', 's')
+text(ax, 68, 21, r'$= (x+3)^2$', 'resultat', 's')
+save(fig, '15-139')

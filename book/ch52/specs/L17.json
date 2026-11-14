@@ -1,0 +1,184 @@
+[
+ {
+  "code": "52-256",
+  "a_dire": "Le recollage s'arrête quand il ne reste qu'un module : quatre modules, trois fusions.",
+  "legende_titre": "Quatre modules, trois fusions",
+  "lecture": [
+   "Les quatre boîtes bleues du haut sont les modules 95, 97, 98 et 99.",
+   "Chaque boîte verte est le résultat d'une fusion : 9215, puis 903 070, puis 89 403 930.",
+   "Chaque flèche orange amène deux modules dans une fusion."
+  ],
+  "a_voir": "Il y a trois fusions pour quatre modules, et la dernière boîte est seule."
+ },
+ {
+  "code": "52-257",
+  "a_dire": "La première fusion cherche un entier de reste 9 par 95 et de reste 0 par 97 : 5044.",
+  "legende_titre": "Première fusion : 95 et 97",
+  "lecture": [
+   "La boîte bleue du haut est l'entier 5044, de restes 9 par 95 et 0 par 97.",
+   "La boîte de gauche écrit 5044 comme 53 fois 95 plus 9, avec 53 × 95 = 5 035 : le reste par 95 est 9.",
+   "La boîte de droite écrit 5044 comme 52 fois 97 plus 0, avec 52 × 97 = 5 044 : le reste par 97 est 0."
+  ],
+  "a_voir": "Un seul entier, 5044, a à la fois le reste 9 par 95 et le reste 0 par 97."
+ },
+ {
+  "code": "52-258",
+  "a_dire": "Dans la fusion de 9215 et 98, on ne garde que des restes par 98, sauf le résultat 557 944.",
+  "legende_titre": "Seconde fusion : des restes petits",
+  "lecture": [
+   "La première boîte remplace 9215 par son reste 3 par 98.",
+   "La boîte orange suivante donne l'inverse 33, car 3 fois 33 vaut 98 plus 1.",
+   "Les deux boîtes orange d'après donnent l'écart 82 puis le coefficient 60, tous deux plus petits que 98.",
+   "La boîte verte du bas est le résultat : 557 944."
+  ],
+  "a_voir": "Tous les nombres des étapes sont petits ; seul le résultat est grand."
+ },
+ {
+  "code": "52-259",
+  "a_dire": "Dans la fusion de 903 070 et 99, chaque ajout de 903 070 retire 8 au reste par 99, et il en faut 3 pour passer de 79 à 55.",
+  "legende_titre": "Trois ajouts font passer de 79 à 55",
+  "lecture": [
+   "La phrase du haut dit que 903 070 vaut 9 122 fois 99 moins 8 ; la phrase orange en tire que chaque ajout retire 8.",
+   "Les quatre boîtes sont les restes par 99 après 0, 1, 2 et 3 ajouts : 79, 71, 63 et 55.",
+   "Chaque flèche orange est un ajout de 903 070, qui retire 8.",
+   "La boîte verte est le reste voulu, 55."
+  ],
+  "a_voir": "Après 3 ajouts, le reste est 55, le reste voulu."
+ },
+ {
+  "code": "52-260",
+  "a_dire": "La vérification part du nombre recollé 3 267 154, compare à 89 403 930 et conclut que c'est le produit 2134 fois 1531.",
+  "legende_titre": "Vérification : d'où l'on part, où l'on arrive",
+  "lecture": [
+   "La boîte bleue du haut est le point de départ : le nombre recollé 3 267 154.",
+   "La boîte orange du milieu est l'étape qui porte le poids : la comparaison avec 89 403 930.",
+   "La boîte verte du bas est l'arrivée : le produit 2134 × 1531. Le texte vert dit que les deux nombres, plus petits que 89 403 930 et de mêmes restes, sont égaux.",
+   "La boîte rouge à droite, 92 671 084, a les mêmes restes mais n'est pas le produit."
+  ],
+  "a_voir": "Sans la comparaison avec 89 403 930, un autre nombre aurait les mêmes restes."
+ },
+ {
+  "code": "52-261",
+  "a_dire": "Pour une seule multiplication la méthode est plus longue, mais pour 1000 multiplications le découpage et le recollage ne se font qu'une fois.",
+  "legende_titre": "Le coût de départ et d'arrivée est partagé",
+  "lecture": [
+   "La rangée du haut montre une multiplication : 8 divisions, 4 produits, 3 fusions.",
+   "La rangée du bas montre 1000 multiplications : les boîtes bleue et verte restent les mêmes.",
+   "Seule la boîte orange du milieu grandit : 4000 petits produits."
+  ],
+  "a_voir": "Les divisions et les fusions se font une fois, quel que soit le nombre de produits."
+ },
+ {
+  "code": "52-262",
+  "a_dire": "Entre deux opérations on garde la liste des restes ; on ne recolle qu'à la fin, ce qui donne 59.",
+  "legende_titre": "On recolle une seule fois, à la fin",
+  "lecture": [
+   "La rangée bleue est la liste de 7 fois 8 : 2, 0, 1.",
+   "La rangée violette est la liste de 3 : 0, 3, 3.",
+   "La rangée orange est la somme case par case : 2, 3, 4.",
+   "La boîte verte du bas est le seul recollage : 59."
+  ],
+  "a_voir": "La liste reste une liste entre les deux opérations ; l'entier n'apparaît qu'à la fin."
+ },
+ {
+  "code": "52-263",
+  "a_dire": "La méthode a deux limites : le résultat ne doit pas dépasser le produit des modules, et les modules doivent être premiers entre eux.",
+  "legende_titre": "Deux conditions, deux échecs",
+  "lecture": [
+   "À gauche, les modules 3, 4 et 5 : les entiers 72 et 12 ont les mêmes restes (0, 0, 2).",
+   "À droite, les modules 4 et 6 : les entiers 0 et 12 ont les mêmes restes (0, 0).",
+   "Dans les deux cas, la boîte rouge montre une même liste pour deux entiers différents."
+  ],
+  "a_voir": "Dans chaque cas, deux entiers différents donnent la même liste de restes."
+ },
+ {
+  "code": "52-264",
+  "a_dire": "La liste de restes (0, 0, 2) dit 72 à 60 près : le recollage donne 12, mais le vrai produit est 72.",
+  "legende_titre": "Les restes ne voient que le reste par 60",
+  "lecture": [
+   "Les trois textes du haut sont les listes de restes de 8, de 9 et de leur produit.",
+   "Le disque rouge sur la droite graduée est 12, le nombre que rend le recollage.",
+   "Le disque vert est 72, le vrai produit.",
+   "L'accolade montre l'écart de 60, produit des modules 3, 4 et 5."
+  ],
+  "a_voir": "12 et 72 sont à 60 l'un de l'autre et ont la même liste de restes."
+ },
+ {
+  "code": "52-265",
+  "a_dire": "Avec les modules 4 et 6, qui ont un facteur commun 2, seules 12 listes de restes sur 24 sont atteintes.",
+  "legende_titre": "Un facteur commun fait perdre des listes",
+  "lecture": [
+   "Chaque case est une liste : le reste par 4 en bas, le reste par 6 à gauche.",
+   "Les cases vertes sont les 12 listes atteintes, celles dont les deux restes ont la même parité.",
+   "Les cases rouges sont les 12 listes que aucun entier n'atteint, par exemple (0, 1)."
+  ],
+  "a_voir": "La moitié des cases est rouge : aucune ne correspond à un entier."
+ },
+ {
+  "code": "52-266",
+  "a_dire": "Quand l'application envoie chaque entier sur son reste par 4, le théorème redonne ℤ/4ℤ ≅ ℤ/4ℤ : c'est vrai mais vide.",
+  "legende_titre": "L'application « reste par 4 »",
+  "lecture": [
+   "Les boîtes de gauche sont des entiers ; les boîtes vertes de droite sont les restes 0, 1, 2 et 3.",
+   "Les boîtes orange 0, 4 et 8 sont des multiples de 4 : le noyau, envoyé sur 0.",
+   "Les entiers 9 et 13 sont envoyés tous deux sur 1.",
+   "Chaque reste reçoit une flèche : tous sont atteints. Le bas conclut : ℤ/4ℤ ≅ ℤ/4ℤ, vrai mais vide."
+  ],
+  "a_voir": "Chaque reste est atteint, le noyau est l'ensemble des multiples de 4, et la conclusion ne dit rien de neuf."
+ },
+ {
+  "code": "52-267",
+  "a_dire": "L'application « reste par 4 » sur les restes par 12 envoie 5 et 9 sur 1, et elle est bien définie parce que 4 divise 12.",
+  "legende_titre": "Des restes par 12 vers les restes par 4",
+  "lecture": [
+   "La boîte grise 17 est un entier ; sa flèche « par 12 » mène à son reste 5.",
+   "La flèche « par 4 » mène de 5 au reste 1, dans la boîte verte.",
+   "La boîte bleue 9, plus bas, est envoyée elle aussi sur 1."
+  ],
+  "a_voir": "Les restes 5 et 9 par 12 ont le même reste 1 par 4."
+ },
+ {
+  "code": "52-268",
+  "a_dire": "Dans les restes par 12, le noyau 0, 4, 8 et les trois autres groupes donnent 4 classes qui correspondent aux restes 0, 1, 2 et 3 par 4.",
+  "legende_titre": "Quatre groupes pour quatre restes",
+  "lecture": [
+   "La boîte orange du haut est le noyau : les classes 0, 4 et 8.",
+   "Les trois boîtes bleues sont les autres groupes de trois classes.",
+   "Chaque flèche relie un groupe à son reste par 4, dans la boîte verte."
+  ],
+  "a_voir": "12 classes en 4 groupes de 3 : un groupe pour chaque reste 0, 1, 2 et 3."
+ },
+ {
+  "code": "52-269",
+  "a_dire": "Prendre le reste par 12 puis le reste par 4 donne le même résultat que le reste direct par 4.",
+  "legende_titre": "Deux chemins, un même résultat",
+  "lecture": [
+   "La rangée du haut part de 17 : le reste par 12 est 5, puis le reste par 4 est 1.",
+   "La rangée du bas part de 26 : le reste par 12 est 2, puis le reste par 4 est 2.",
+   "L'arc vert sous chaque rangée est le reste direct par 4 : il arrive au même nombre."
+  ],
+  "a_voir": "Les deux chemins finissent dans la même boîte verte."
+ },
+ {
+  "code": "52-270",
+  "a_dire": "L'idéal nul est l'ensemble qui contient seulement 0 ; il est stable par addition et absorbe les produits.",
+  "legende_titre": "L'ensemble qui ne contient que 0",
+  "lecture": [
+   "La boîte bleue 0 est le seul élément de l'idéal nul.",
+   "Les boîtes en pointillés 1 à 5 sont les autres restes par 6, hors de cet ensemble.",
+   "Les deux lignes vertes disent que 0 plus 0 et 0 fois un reste donnent 0, donc restent dans l'ensemble."
+  ],
+  "a_voir": "Un seul reste est dans l'ensemble, et les calculs n'en sortent pas."
+ },
+ {
+  "code": "52-271",
+  "a_dire": "L'idéal total est l'anneau entier, donc il contient 1 ; l'idéal nul est l'autre extrême, il ne contient que 0.",
+  "legende_titre": "Les deux extrêmes des idéaux",
+  "lecture": [
+   "La rangée du haut est l'idéal nul : seule la case violette 0 est dedans, les cases en pointillés sont dehors.",
+   "La rangée du bas est l'idéal total : les six restes 0 à 5 sont tous dedans.",
+   "La case orange 1 est celle que l'idéal nul n'a pas et que l'idéal total contient."
+  ],
+  "a_voir": "Dans la rangée du bas, les six cases sont pleines, dont 1."
+ }
+]

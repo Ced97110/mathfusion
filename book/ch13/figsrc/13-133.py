@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(75)
+box(ax, 14, 58, 60, 10, 'sujet', label=r'$(0,1)\times(0,1)$', size='l')
+text(ax, 44, 72, r'$-1 \times -1$ en couples', 'sujet', 's')
+arrow(ax, (44, 57), (44, 46), 'varie')
+text(ax, 47, 51.5, r'$a=0,\ b=1,\ c=0,\ d=1$', 'varie', 's', ha='left')
+box(ax, 4, 34, 80, 11, 'varie', label=r'$(0\times0+1\times1,\ 0\times1+1\times0)$', size='s')
+arrow(ax, (44, 33), (44, 22), 'resultat')
+text(ax, 47, 27.5, 'produits et sommes', 'resultat', 's', ha='left')
+box(ax, 24, 9, 40, 12, 'resultat', label=r'$(1,0)$ = 1', size='l')
+save(fig, '13-133')

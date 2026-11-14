@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_box = box
+def box(ax, x, y, w, h, role="fixe", label=None, size="m", **k): return _box(ax, x, y, w, h, role, True, label, size, **k)
+fig, ax = canvas(52)
+box(ax, 4, 28, 28, 14, 'limite', r'$-1 = 1$', 'l')
+text(ax, 18, 22, 'égalité fausse', 'limite', 's')
+box(ax, 56, 28, 28, 14, 'resultat', r'$1 = 1$', 'l')
+text(ax, 70, 22, 'égalité vraie', 'resultat', 's')
+arrow(ax, (33, 35), (55, 35), 'varie')
+text(ax, 44, 40, 'au carré', 'varie', 's')
+text(ax, 44, 30.5, 'des deux côtés', 'varie', 's')
+box(ax, 4, 4, 28, 10, 'fixe', r'$(-1)^2 = 1$', 'm')
+box(ax, 56, 4, 28, 10, 'fixe', r'$1^2 = 1$', 'm')
+text(ax, 44, 9, 'les deux carrés', 'fixe', 's')
+save(fig, '31-113')

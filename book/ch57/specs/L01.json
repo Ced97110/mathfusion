@@ -1,0 +1,356 @@
+[
+ {
+  "code": "57-001",
+  "a_dire": "Un point du plan se décrit par deux nombres, écrits dans l'ordre : un couple (x, y).",
+  "legende_titre": "Deux points, chacun repéré par deux nombres",
+  "lecture": [
+   "Les deux points bleus sont placés sur le quadrillage : l'un à (2, 1), l'autre à (−1, 2).",
+   "Le trait orange couché compte les carreaux vers la droite ou vers la gauche.",
+   "Le trait orange dressé compte les carreaux vers le haut.",
+   "Le premier nombre du couple vient du trait couché, le second du trait dressé."
+  ],
+  "a_voir": "Chaque point se lit avec deux nombres, le premier pour le côté, le second pour la hauteur."
+ },
+ {
+  "code": "57-002",
+  "a_dire": "On additionne deux couples en additionnant les premiers nombres entre eux, puis les seconds entre eux.",
+  "legende_titre": "Deux déplacements mis bout à bout",
+  "lecture": [
+   "La flèche bleue va de l'origine au point (2, 1).",
+   "La flèche violette part du bout de la bleue et ajoute (−1, 2).",
+   "La flèche verte va de l'origine au point d'arrivée (1, 3).",
+   "À droite, les deux calculs : 2 + (−1) = 1 pour le premier nombre, 1 + 2 = 3 pour le second."
+  ],
+  "a_voir": "Le premier nombre de l'arrivée est la somme des premiers nombres, le second celle des seconds."
+ },
+ {
+  "code": "57-003",
+  "a_dire": "Multiplier un couple par un nombre, c'est multiplier chacun de ses deux nombres par ce nombre.",
+  "legende_titre": "Un déplacement répété deux fois",
+  "lecture": [
+   "La flèche bleue est le déplacement (2, 1).",
+   "La flèche orange est le même déplacement, refait à la suite.",
+   "Le point vert marque l'arrivée, (4, 2).",
+   "Chaque nombre de (2, 1) a été multiplié par 2."
+  ],
+  "a_voir": "Les deux nombres du couple de départ sont doublés pour donner (4, 2)."
+ },
+ {
+  "code": "57-004",
+  "a_dire": "Les lignes d'un système se combinent avec deux opérations : les additionner, et les multiplier par un nombre.",
+  "legende_titre": "Combiner deux lignes pour trouver les nombres",
+  "lecture": [
+   "La boîte bleue est la ligne L1, la boîte violette est la ligne L2.",
+   "La première flèche orange est l'addition de deux lignes : L1 + L2 donne la boîte grise, 2x = 4.",
+   "La seconde flèche orange est la multiplication d'une ligne par un nombre : multiplier par un demi donne x = 2.",
+   "Dans L1, 2 + y = 3 : la boîte verte du bas donne y = 1."
+  ],
+  "a_voir": "Deux flèches orange, deux opérations : additionner des lignes, multiplier une ligne par un nombre."
+ },
+ {
+  "code": "57-005",
+  "a_dire": "Des cartes à deux entiers s'additionnent en additionnant les premiers entiers, puis les seconds, et le résultat est encore une carte à deux entiers.",
+  "legende_titre": "Des cartes à deux entiers dans une boîte",
+  "lecture": [
+   "Le cadre en pointillés gris est la boîte ℤ² : toutes les cartes à deux entiers.",
+   "Les deux cartes bleues, (2, 1) et (6, 3), sont additionnées.",
+   "La carte verte, (8, 4), est le résultat : elle reste dans la boîte.",
+   "La ligne du bas donne les deux additions : 2 + 6 = 8 et 1 + 3 = 4."
+  ],
+  "a_voir": "La somme de deux cartes d'entiers est une carte d'entiers, encore dans la boîte."
+ },
+ {
+  "code": "57-006",
+  "a_dire": "Multiplier un couple d'entiers par un entier, c'est additionner plusieurs fois la même carte, et le résultat reste un couple d'entiers.",
+  "legende_titre": "Trois cartes identiques posées à la suite",
+  "lecture": [
+   "Les trois cartes bleues portent chacune (2, 1).",
+   "Les signes + orange les additionnent.",
+   "La carte verte (6, 3) est la somme des trois cartes.",
+   "Sous la figure : 2 + 2 + 2 = 6 pour le premier entier, 1 + 1 + 1 = 3 pour le second."
+  ],
+  "a_voir": "Trois fois la carte (2, 1) est la somme de trois cartes (2, 1)."
+ },
+ {
+  "code": "57-007",
+  "a_dire": "Multiplier le couple (2, 1) par un demi donne (1 ; ½), qui n'est plus un couple d'entiers : ce calcul sort de ℤ².",
+  "legende_titre": "Un calcul qui ne retombe pas sur un couple d'entiers",
+  "lecture": [
+   "Les petits cercles gris sont les points dont les deux nombres sont entiers.",
+   "Le point bleu est (2, 1), l'un de ces points.",
+   "La flèche orange le multiplie par un demi.",
+   "Le point rouge (1 ; ½) tombe entre les cercles gris : son second nombre n'est pas entier."
+  ],
+  "a_voir": "Le point d'arrivée n'est sur aucun cercle gris : il n'est pas dans ℤ²."
+ },
+ {
+  "code": "57-008",
+  "a_dire": "Dans ℤ², on ne peut multiplier que par des entiers : un entier laisse la carte dans la boîte, un demi la fait sortir.",
+  "legende_titre": "Quels nombres peut-on utiliser dans la boîte ?",
+  "lecture": [
+   "La carte bleue (2, 1) part à gauche.",
+   "Les deux flèches orange du haut sont les multiplications par 3 et par −2.",
+   "Leurs cartes vertes, (6, 3) et (−4, −2), sont dans le cadre en pointillés ℤ².",
+   "La flèche du bas multiplie par un demi : la carte rouge (1 ; ½) est hors du cadre."
+  ],
+  "a_voir": "Les entiers gardent la carte dans la boîte ; le demi la fait sortir."
+ },
+ {
+  "code": "57-009",
+  "a_dire": "La transformation T tourne chaque point d'un quart de tour autour de l'origine : (x, y) devient (−y, x).",
+  "legende_titre": "Le quart de tour qui déplace un point",
+  "lecture": [
+   "Le point bleu (2, 1) est le point de départ.",
+   "L'arc orange T est le quart de tour autour de l'origine.",
+   "Le point vert (−1, 2) est l'arrivée.",
+   "Les deux pointillés gris, de même longueur, joignent l'origine aux deux points ; la ligne du bas donne la règle."
+  ],
+  "a_voir": "Le point garde sa distance à l'origine et ses deux nombres sont échangés, avec un signe changé."
+ },
+ {
+  "code": "57-010",
+  "a_dire": "Le quart de tour envoie le point (2 ; 0,8) sur (−0,8 ; 2) : le premier nombre d'arrivée est l'opposé du second de départ.",
+  "legende_titre": "Le quart de tour sur un point à nombres décimaux",
+  "lecture": [
+   "La flèche bleue va à v = (2 ; 0,8).",
+   "La flèche verte va à T v = (−0,8 ; 2).",
+   "Les pointillés orange portent 0,8 au départ et −0,8 à l'arrivée.",
+   "Les pointillés violets portent le nombre 2, au départ sur l'axe couché, à l'arrivée sur l'axe dressé."
+  ],
+  "a_voir": "Le 0,8 devient −0,8 et le 2 change de place, comme dans la légende en haut à droite."
+ },
+ {
+  "code": "57-011",
+  "a_dire": "Deux quarts de tour envoient un point sur son opposé : T²v = −v.",
+  "legende_titre": "Deux quarts de tour de suite",
+  "lecture": [
+   "La flèche bleue va à v (2 ; 0,8), la flèche orange à T v (−0,8 ; 2).",
+   "Le premier arc orange est un quart de tour, le second en est un autre.",
+   "La flèche verte va à T²v (−2 ; −0,8), de l'autre côté de l'origine.",
+   "Les pointillés gris montrent que v, l'origine et T²v sont alignés."
+  ],
+  "a_voir": "Après deux quarts de tour, le point est de l'autre côté de l'origine, à la même distance."
+ },
+ {
+  "code": "57-012",
+  "a_dire": "Deux quarts de tour de suite ont le même effet que multiplier le point par −1 : les deux chemins arrivent au même point.",
+  "legende_titre": "Deux chemins, une seule arrivée",
+  "lecture": [
+   "À gauche, la flèche orange envoie v sur −v directement : c'est la multiplication par −1.",
+   "À droite, les deux arcs orange passent par T v puis arrivent à −v.",
+   "Le point bleu est le départ v, le point vert l'arrivée −v dans les deux dessins.",
+   "Le signe = vert relie les deux chemins."
+  ],
+  "a_voir": "Les deux points verts sont au même endroit : les deux chemins donnent le même résultat."
+ },
+ {
+  "code": "57-013",
+  "a_dire": "T² = −1, ou T² + 1 = 0, se lit sur un point : on applique T deux fois, puis on ajoute le point de départ, et on obtient l'origine.",
+  "legende_titre": "Trois étapes qui ramènent à l'origine",
+  "lecture": [
+   "La boîte bleue est le point de départ v = (2 ; 0,8).",
+   "Les deux boîtes orange sont les résultats de chaque application de T.",
+   "La flèche du bas ajoute le point de départ v.",
+   "La boîte verte donne l'origine, (0 ; 0)."
+  ],
+  "a_voir": "Appliquer T deux fois puis ajouter v donne (0 ; 0)."
+ },
+ {
+  "code": "57-014",
+  "a_dire": "Un polynôme en T s'annule quand il envoie chaque point sur l'origine : T² + 1 le fait, T + 1 ne le fait pas.",
+  "legende_titre": "Deux expressions en T appliquées au même point",
+  "lecture": [
+   "Le point bleu v est le départ, (2 ; 0,8).",
+   "La flèche verte, avec T² + 1, arrive à l'origine O.",
+   "La flèche rouge, avec T + 1, arrive à (1,2 ; 2,8), loin de l'origine.",
+   "À droite, chaque flèche de couleur est rappelée avec son résultat."
+  ],
+  "a_voir": "Seule la flèche verte arrive à l'origine : T² + 1 s'annule, T + 1 non."
+ },
+ {
+  "code": "57-015",
+  "a_dire": "x² + 1 = 0 est un problème sans solution réelle, alors que T² + 1 = 0 est une règle que la transformation T suit.",
+  "legende_titre": "Une équation à résoudre ou une règle suivie",
+  "lecture": [
+   "À gauche, la courbe violette montre x² + 1 pour des nombres réels x.",
+   "Elle reste au-dessus de l'axe gris, qui marque 0 : aucun réel x ne donne 0.",
+   "À droite, la boîte bleue T est la transformation.",
+   "L'égalité T² + 1 = 0, en vert, est vraie pour T."
+  ],
+  "a_voir": "À gauche, on cherche un nombre et on n'en trouve pas ; à droite, T suit l'égalité."
+ },
+ {
+  "code": "57-016",
+  "a_dire": "Les trois situations ont la même forme : des objets qu'on additionne, et des coefficients qui agissent par multiplication ; seuls les coefficients changent.",
+  "legende_titre": "Trois situations, un même schéma",
+  "lecture": [
+   "Les trois boîtes bleues du milieu sont les objets qu'on additionne : des couples ou des points.",
+   "Elles ont la même couleur car l'addition est de même forme partout.",
+   "Les boîtes orange sont les coefficients : ℝ, puis ℤ, puis des expressions en T.",
+   "Seule la colonne orange change d'une ligne à l'autre."
+  ],
+  "a_voir": "La colonne bleue est la même sur chaque ligne ; la colonne orange change."
+ },
+ {
+  "code": "57-017",
+  "a_dire": "Les coefficients forment un anneau : on peut les additionner et les multiplier entre eux, que ce soient des réels, des entiers ou des expressions en T.",
+  "legende_titre": "Additionner et multiplier des coefficients",
+  "lecture": [
+   "Chaque ligne bleue nomme une sorte de coefficients : réels, entiers, expressions en T.",
+   "La colonne de gauche, en vert, donne leur somme.",
+   "La colonne de droite, en vert, donne leur produit.",
+   "Les expressions en T, comme (T + 1) et 2T, se calculent aussi."
+  ],
+  "a_voir": "Dans les trois lignes, on sait faire une somme et un produit."
+ },
+ {
+  "code": "57-018",
+  "a_dire": "Sans idée commune, il faut trois preuves pour trois situations ; avec une propriété commune, une seule preuve sert aux trois.",
+  "legende_titre": "Trois preuves ou une seule",
+  "lecture": [
+   "En haut, chaque situation bleue a sa propre preuve orange : trois preuves.",
+   "En bas, une seule boîte verte, la preuve, sert d'un coup.",
+   "Les trois flèches vertes mènent de cette preuve aux trois situations bleues.",
+   "Ce sont les mêmes trois situations en haut et en bas."
+  ],
+  "a_voir": "En haut, trois flèches vers trois preuves ; en bas, une preuve vers trois situations."
+ },
+ {
+  "code": "57-019",
+  "a_dire": "Le mot « module » nomme la forme commune aux trois situations : un seul mot pour trois noms.",
+  "legende_titre": "Un mot pour une forme commune",
+  "lecture": [
+   "Les trois boîtes bleues sont les trois situations, avec leurs trois noms.",
+   "Les flèches orange les rassemblent.",
+   "La boîte verte porte le mot qui les désigne toutes : module."
+  ],
+  "a_voir": "Trois noms différents arrivent au même mot."
+ },
+ {
+  "code": "57-020",
+  "a_dire": "La somme v + w est la diagonale du parallélogramme de côtés v et w, alors que 2v et −v restent sur la droite de v.",
+  "legende_titre": "Quatre flèches construites à partir de v et w",
+  "lecture": [
+   "La flèche bleue v va à (2, 1) et la flèche violette w va à (−1, 2).",
+   "Les flèches orange 2v et −v sont sur la même droite que v : l'une plus longue, l'autre retournée.",
+   "La flèche verte v + w va à (1, 3).",
+   "Les pointillés, parallèles à v et à w, la relient au parallélogramme."
+  ],
+  "a_voir": "La flèche verte est la diagonale du parallélogramme ; les flèches orange ne quittent pas la droite de v."
+ },
+ {
+  "code": "57-021",
+  "a_dire": "L'origine O est le point où les deux axes se croisent ; tout point se repère par ses pas depuis O sur l'horizontale, puis sur la verticale.",
+  "legende_titre": "Le croisement des deux axes",
+  "lecture": [
+   "Les deux axes gris se croisent au disque bleu : c'est l'origine O, de nombres (0 ; 0).",
+   "Les petits traits sur les axes sont les graduations.",
+   "Le trait orange compte 2 pas sur l'axe horizontal puis 1 pas sur l'axe vertical.",
+   "Il arrive au point orange (2, 1)."
+  ],
+  "a_voir": "O est le point de départ de tous les pas comptés sur les deux axes."
+ },
+ {
+  "code": "57-022",
+  "a_dire": "Un vecteur est une flèche qui part de l'origine O et se termine en un point ; il est déterminé par ce point d'arrivée.",
+  "legende_titre": "Une flèche qui part de l'origine",
+  "lecture": [
+   "Le disque bleu est l'origine O, le départ.",
+   "La flèche bleue va de O à la pointe (2, 1) : c'est un vecteur.",
+   "La flèche rouge, en haut à gauche, ne part pas de O : elle n'est pas un vecteur au sens de la figure."
+  ],
+  "a_voir": "La flèche bleue part de O ; la rouge part ailleurs."
+ },
+ {
+  "code": "57-023",
+  "a_dire": "Le vecteur v = (2, 1) est la flèche qui va de l'origine au point situé à 2 carreaux à droite et 1 carreau en haut.",
+  "legende_titre": "Une flèche construite pas à pas",
+  "lecture": [
+   "Le trait orange en pointillés couché fait 2 carreaux vers la droite.",
+   "Le trait orange dressé fait 1 carreau vers le haut.",
+   "La flèche bleue relie l'origine au point d'arrivée : c'est v = (2, 1)."
+  ],
+  "a_voir": "Les deux nombres de v sont les deux pas, vers la droite puis vers le haut."
+ },
+ {
+  "code": "57-024",
+  "a_dire": "Le signe de chaque nombre donne le sens : négatif vers la gauche ou le bas, positif vers la droite ou le haut.",
+  "legende_titre": "Un nombre négatif change le sens du pas",
+  "lecture": [
+   "La flèche violette est w = (−1, 2).",
+   "Le pointillé orange couché fait 1 carreau vers la gauche : le premier nombre est négatif.",
+   "Le pointillé orange dressé fait 2 carreaux vers le haut : le second nombre est positif."
+  ],
+  "a_voir": "Le premier nombre est négatif et la flèche part vers la gauche."
+ },
+ {
+  "code": "57-025",
+  "a_dire": "2v s'obtient en multipliant chaque coordonnée de v par 2 : la flèche est deux fois plus longue, dans la même direction.",
+  "legende_titre": "Chaque nombre de la flèche est doublé",
+  "lecture": [
+   "La flèche bleue v arrive en (2, 1).",
+   "La flèche orange 2v est sur la même droite et arrive en (4, 2).",
+   "Les pointillés gris relient chaque pointe à ses nombres sur les axes : 2 et 1 pour v, 4 et 2 pour 2v.",
+   "Le texte du haut résume le calcul."
+  ],
+  "a_voir": "Les deux nombres de la pointe orange sont le double de ceux de la pointe bleue."
+ },
+ {
+  "code": "57-026",
+  "a_dire": "En changeant le signe de chaque nombre de v, on obtient −v : la flèche se retourne, de même longueur, et sa somme avec v est l'origine.",
+  "legende_titre": "Changer le signe des deux nombres",
+  "lecture": [
+   "La flèche bleue v va en (2, 1).",
+   "La flèche orange −v va en (−2, −1), de l'autre côté de l'origine.",
+   "Les deux flèches sont sur la même droite et ont la même longueur.",
+   "Le texte vert en bas : leur somme est (0, 0), l'origine."
+  ],
+  "a_voir": "−v pointe à l'opposé de v ; ajoutées, elles redonnent l'origine."
+ },
+ {
+  "code": "57-027",
+  "a_dire": "La somme v + w se calcule coordonnée par coordonnée : on additionne les premiers nombres, puis les seconds.",
+  "legende_titre": "Additionner colonne par colonne",
+  "lecture": [
+   "Dans le tableau, la ligne bleue est v = (2, 1) et la ligne violette est w = (−1, 2).",
+   "La ligne verte est la somme ; chaque colonne est additionnée à part.",
+   "Sous le tableau : 2 + (−1) = 1 pour la première colonne, 1 + 2 = 3 pour la seconde.",
+   "À droite, les flèches de mêmes couleurs : la verte arrive en (1, 3)."
+  ],
+  "a_voir": "La première colonne donne le 1, la seconde donne le 3 de la flèche verte."
+ },
+ {
+  "code": "57-028",
+  "a_dire": "La flèche v + w est la diagonale du parallélogramme de côtés v et w ; v puis w, ou w puis v, arrivent au même sommet.",
+  "legende_titre": "Deux chemins vers le même sommet",
+  "lecture": [
+   "La flèche bleue v et la flèche violette w partent de l'origine.",
+   "Le pointillé violet est w recopiée au bout de v ; le pointillé bleu est v recopiée au bout de w.",
+   "Les deux chemins se rejoignent au sommet d'arrivée.",
+   "La flèche verte v + w va de l'origine à ce sommet."
+  ],
+  "a_voir": "Les deux chemins finissent au même point : l'ordre des deux flèches ne change pas la somme."
+ },
+ {
+  "code": "57-029",
+  "a_dire": "Un module a deux opérations : additionner deux flèches, et multiplier une flèche par un nombre ; chacune donne une flèche.",
+  "legende_titre": "Deux opérations, un résultat de même nature",
+  "lecture": [
+   "À gauche, les flèches bleue v et violette w s'additionnent : la verte v + w est une flèche.",
+   "À droite, le nombre 2 multiplie la flèche bleue v : l'orange 2 × v est une flèche.",
+   "Le texte vert sous chaque dessin rappelle ce qui entre et ce qui sort."
+  ],
+  "a_voir": "Dans les deux dessins, le résultat est une flèche."
+ },
+ {
+  "code": "57-030",
+  "a_dire": "Les nombres qui multiplient les flèches viennent d'un ensemble fixé à l'avance, appelé ensemble de coefficients ; ici, les réels ℝ.",
+  "legende_titre": "D'où viennent les nombres qui multiplient",
+  "lecture": [
+   "La droite graduée représente les nombres réels ℝ.",
+   "Les quatre disques orange sont des coefficients possibles : −1, ½, 1,5 et 2.",
+   "Le texte du bas dit que le nombre k qui multiplie une flèche v vient de ℝ."
+  ],
+  "a_voir": "Tous les disques orange sont sur la droite des réels : ce sont des coefficients permis."
+ }
+]

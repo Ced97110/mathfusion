@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 6, 56, 30, 12, 'fixe', label=r'$7y$', size='l')
+box(ax, 46, 56, 36, 12, 'sujet', label=r'$-10y^{4}$', size='l')
+text(ax, 21, 51, 'écrit en premier', 'fixe', 's'); text(ax, 64, 51, 'plus haut degré : 4', 'sujet', 's')
+text(ax, 21, 46, 'degré 1', 'fixe', 's')
+arrow(ax, (44, 40), (44, 31), 'varie')
+box(ax, 6, 14, 36, 12, 'sujet', label=r'$-10y^{4}$', size='l')
+box(ax, 52, 14, 30, 12, 'fixe', label=r'$+\,7y$', size='l')
+text(ax, 44, 6, 'même polynôme : degré 4', 'resultat', 'm')
+save(fig, '15-070')

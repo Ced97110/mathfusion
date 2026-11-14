@@ -1,0 +1,183 @@
+[
+ {
+  "code": "77-049",
+  "a_dire": "Lire le signe T(a) : « la trace de a ».",
+  "legende_titre": "Le signe T(a) pour 2 + i",
+  "lecture": [
+   "Le T bleu est le nom de la règle, le (a) orange est l'élément.",
+   "Le rectangle orange de gauche est le nombre 2 + i.",
+   "Le tableau a deux cases bleues sur la diagonale : 2 et 2.",
+   "Le rectangle vert donne T(a) = 4."
+  ],
+  "a_voir": "Le signe T(a) désigne la somme de la diagonale, ici 2 + 2 = 4."
+ },
+ {
+  "code": "77-050",
+  "a_dire": "Lire le signe N(a) : « le déterminant de la matrice de a ».",
+  "legende_titre": "Le signe N(a) pour trois nombres",
+  "lecture": [
+   "Chaque rectangle bleu est la norme d'un élément : 2 + i, 3 et i.",
+   "Chaque rectangle vert est le nombre obtenu : 5, 9 et 1.",
+   "Le signe sert à écrire chaque cas en quelques caractères."
+  ],
+  "a_voir": "Un même signe N donne un nombre pour chaque élément."
+ },
+ {
+  "code": "77-051",
+  "a_dire": "Lire le signe f_a(λ) : « le polynôme caractéristique de a, de variable λ ».",
+  "legende_titre": "Les trois morceaux du signe f_a(λ)",
+  "lecture": [
+   "Le carré gris est la règle f.",
+   "Le carré bleu est l'élément a.",
+   "Le carré orange est la variable λ.",
+   "Chaque rectangle orange à droite est le polynôme de l'élément bleu qui le précède."
+  ],
+  "a_voir": "Le polynôme change quand l'élément change : un polynôme par nombre."
+ },
+ {
+  "code": "77-052",
+  "a_dire": "Lire le signe m_a(λ) : le polynôme minimal de a, avec m_a(a) = 0.",
+  "legende_titre": "Le signe m_a(λ) et sa propriété",
+  "lecture": [
+   "Le rectangle bleu du haut est le nom du polynôme.",
+   "Le rectangle vert est sa propriété : il s'annule en a.",
+   "En bas, le polynôme λ − 3 (bleu, degré 1) et le polynôme gris de degré 2 s'annulent tous deux en 3.",
+   "Le bleu est le minimal."
+  ],
+  "a_voir": "Parmi les polynômes qui s'annulent en 3, le minimal est celui de plus petit degré."
+ },
+ {
+  "code": "77-053",
+  "a_dire": "Lire le signe Δ : « la matrice de passage d'une base à l'autre ».",
+  "legende_titre": "Le signe Δ : passer d'une base à l'autre",
+  "lecture": [
+   "Le rectangle gris est l'ancienne base 1, i.",
+   "Le rectangle orange est la nouvelle base i, 1.",
+   "La flèche bleue porte le signe Δ.",
+   "Le tableau bleu a pour colonnes les coordonnées de i puis de 1, dans l'ancienne base."
+  ],
+  "a_voir": "Δ range en colonnes les éléments de la nouvelle base, écrits dans l'ancienne."
+ },
+ {
+  "code": "77-054",
+  "a_dire": "Lire le signe N_{L/E} : la norme calculée avec des coefficients dans E.",
+  "legende_titre": "Deux normes du même élément u",
+  "lecture": [
+   "Les trois rectangles de gauche sont les corps L (gris), E (bleu) et K (violet), du plus grand au plus petit.",
+   "La flèche bleue mène à la norme sur E, qui vaut 2√2.",
+   "La flèche violette mène à la norme sur K, qui vaut −8."
+  ],
+  "a_voir": "Les indices disent le corps des coefficients : le même u a deux normes."
+ },
+ {
+  "code": "77-055",
+  "a_dire": "Lire le signe ⊗ : mêmes éléments de base, même table, coefficients dans un corps plus grand.",
+  "legende_titre": "Le signe ⊗ : on change les coefficients",
+  "lecture": [
+   "À gauche, a et b (bleu) sont des coefficients réels.",
+   "À droite, z et w (orange) sont des coefficients complexes.",
+   "Les éléments 1 et j (gris) ne changent pas.",
+   "Le rectangle gris du bas rappelle que base et table sont gardées."
+  ],
+  "a_voir": "Seuls les coefficients grandissent : la base et la table restent les mêmes."
+ },
+ {
+  "code": "77-056",
+  "a_dire": "Lire N(a) = det ρ(a) en trois temps : multiplier, ranger en colonnes, calculer le déterminant.",
+  "legende_titre": "Les trois temps pour 2 + i",
+  "lecture": [
+   "Les deux rectangles bleus sont a·1 et a·i : 2 + i et −1 + 2i.",
+   "Le tableau bleu range leurs coordonnées en colonnes.",
+   "Le rectangle vert est le déterminant, 5.",
+   "Les flèches orange donnent l'ordre des temps."
+  ],
+  "a_voir": "La lecture finit au troisième temps, quand on obtient un nombre : 5."
+ },
+ {
+  "code": "77-057",
+  "a_dire": "La trace suit le même chemin que la norme, mais l'étape 3 additionne la diagonale.",
+  "legende_titre": "Un seul tableau, deux nombres",
+  "lecture": [
+   "Le tableau de gauche est celui des étapes 1 et 2.",
+   "Ses cases bleues sont la diagonale, que la flèche bleue additionne : 2 + 2 = 4, la trace.",
+   "La flèche violette prend le déterminant : 5, la norme."
+  ],
+  "a_voir": "Les deux nombres viennent du même tableau, seule l'étape 3 change."
+ },
+ {
+  "code": "77-058",
+  "a_dire": "La norme et la trace envoient un élément de A vers un scalaire de F.",
+  "legende_titre": "D'un élément de A vers F",
+  "lecture": [
+   "Le grand rectangle bleu est l'algèbre A et son disque est le nombre 2 + i.",
+   "Le grand rectangle vert est le corps F, avec les disques 5 et 4.",
+   "La flèche N mène à 5, la flèche T mène à 4."
+  ],
+  "a_voir": "Le point de départ est dans A, les deux résultats sont dans F."
+ },
+ {
+  "code": "77-059",
+  "a_dire": "La trace d'une somme est la somme des traces : T(u + v) = T(u) + T(v).",
+  "legende_titre": "La trace d'une somme",
+  "lecture": [
+   "Le tableau bleu est celui de u, le violet celui de v, le vert celui de u + v.",
+   "Seules les diagonales sont écrites.",
+   "Dessous, les traces : 4, 6 et 10.",
+   "La somme des diagonales 2 + 3 et 2 + 3 donne 5 et 5."
+  ],
+  "a_voir": "Ajouter les tableaux puis prendre la trace donne 4 + 6 = 10."
+ },
+ {
+  "code": "77-060",
+  "a_dire": "Un scalaire c de F sort de la trace : T(cu) = cT(u) ; ce n'est vrai que pour c dans F.",
+  "legende_titre": "Un scalaire sort de la trace",
+  "lecture": [
+   "En haut, c = 3 est réel : T(u) = 4 devient T(3u) = 12, soit 3 fois 4 (vert).",
+   "En bas, c = i n'est pas réel : T(i) = 0 (rouge), alors que i fois 2 vaut 2i, qui est différent de 0."
+  ],
+  "a_voir": "La règle tient pour c = 3 et casse pour c = i, qui n'est pas dans F."
+ },
+ {
+  "code": "77-061",
+  "a_dire": "La norme d'un produit est le produit des normes : N(uv) = N(u)N(v).",
+  "legende_titre": "La norme d'un produit",
+  "lecture": [
+   "La ligne du haut montre u = 2 + i (bleu), v = 3 (violet) et leur produit 6 + 3i (vert).",
+   "La ligne du bas donne les normes : 5, 9 et 45.",
+   "Les flèches orange relient chaque élément à sa norme."
+  ],
+  "a_voir": "Multiplier les éléments puis prendre la norme donne 5 × 9 = 45."
+ },
+ {
+  "code": "77-062",
+  "a_dire": "La norme d'un scalaire c multiplié par u vaut c puissance n fois la norme de u.",
+  "legende_titre": "N(cu) : un facteur c^n, pas c",
+  "lecture": [
+   "La rangée rouge de 3 cases vaut 3 × 5 = 15 : c'est faux.",
+   "Le carré vert de 3 × 3 cases vaut 3² × 5 = 45 : c'est vrai.",
+   "Chaque case vaut 5."
+  ],
+  "a_voir": "Il faut 3² = 9 cases de 5, pas 3 : le facteur est c^n avec n = 2."
+ },
+ {
+  "code": "77-063",
+  "a_dire": "Le facteur c^n vient de ce que n colonnes sont chacune multipliées par c.",
+  "legende_titre": "Un facteur c par colonne",
+  "lecture": [
+   "Les deux rectangles de chaque état sont les deux colonnes de la matrice.",
+   "Quand une colonne devient orange, elle est multipliée par 3 et le déterminant est multiplié par 3 : 5, 15, puis 45."
+  ],
+  "a_voir": "Chaque colonne apporte un facteur 3 : avec 2 colonnes, on obtient 3² = 9."
+ },
+ {
+  "code": "77-064",
+  "a_dire": "Si u a un inverse, alors N(u) n'est pas nul.",
+  "legende_titre": "Un inverse empêche une norme nulle",
+  "lecture": [
+   "La ligne du haut montre u = 2 + i (bleu), son inverse v (violet) et leur produit 1 (vert).",
+   "La ligne du bas donne les normes : 5, un cinquième, et 1.",
+   "Le texte rouge dit qu'une norme nulle donnerait un produit nul."
+  ],
+  "a_voir": "Le produit des normes vaut 1, donc aucune des deux n'est nulle."
+ }
+]

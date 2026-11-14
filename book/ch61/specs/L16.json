@@ -1,0 +1,187 @@
+[
+ {
+  "code": "61-239",
+  "a_dire": "Le polynôme se factorise sur ℤ/2ℤ sans avoir de racine.",
+  "legende_titre": "Deux facteurs, aucune racine",
+  "lecture": [
+   "Le cadre bleu est le polynôme x⁵ + x⁴ + 1 sur ℤ/2ℤ.",
+   "Les deux cadres verts sont ses deux facteurs, obtenus par les flèches orange.",
+   "Les deux cadres rouges essaient x = 0 et x = 1 : le polynôme vaut 1 dans les deux cas."
+  ],
+  "a_voir": "Il se factorise en deux facteurs, et pourtant 0 et 1 ne l'annulent pas."
+ },
+ {
+  "code": "61-240",
+  "a_dire": "Dans un corps plus grand (quatre ou huit éléments), le polynôme a une racine.",
+  "legende_titre": "Une racine dans un corps plus grand",
+  "lecture": [
+   "Le cadre gris est le corps à deux éléments : le polynôme n'y a aucune racine.",
+   "Le cadre bleu est le corps à quatre éléments, où u annule le premier facteur.",
+   "Le cadre violet est le corps à huit éléments, où une racine du second facteur annule le polynôme.",
+   "Dans les deux corps, le texte vert dit que le polynôme a une racine."
+  ],
+  "a_voir": "Chacun des deux corps agrandis donne une racine au polynôme."
+ },
+ {
+  "code": "61-241",
+  "a_dire": "La question du dessin devient : 3 divise-t-il une puissance de 2 ?",
+  "legende_titre": "Du dessin à la divisibilité",
+  "lecture": [
+   "Le cadre gris est la question de tracé à la règle.",
+   "La flèche orange mène au cadre bleu : 3 divise-t-il une puissance de 2 ?",
+   "Les cadres violets sont les puissances de 2 : 2, 4, 8, 16, 32.",
+   "Le texte rouge dit qu'aucune n'est un multiple de 3."
+  ],
+  "a_voir": "Une question de dessin devient une question sur les nombres entiers."
+ },
+ {
+  "code": "61-242",
+  "a_dire": "Le corps de décomposition contient toutes les racines, pas seulement une.",
+  "legende_titre": "Toutes les racines dans un seul corps",
+  "lecture": [
+   "Le point bleu est la racine cubique de 2, sur la droite des réels.",
+   "Les deux points rouges sont les autres racines : elles ne sont pas réelles.",
+   "La bande pointillée bleue est le corps de la racine cubique de 2 : il ne contient que des réels.",
+   "Le grand cercle vert est le corps de décomposition : il contient les trois points."
+  ],
+  "a_voir": "Le cercle vert contient les trois racines, la bande bleue n'en contient qu'une."
+ },
+ {
+  "code": "61-243",
+  "a_dire": "Le degré [E : K] devient l'ordre d'un sous-groupe H.",
+  "legende_titre": "Corps et sous-groupes se correspondent",
+  "lecture": [
+   "La colonne bleue est la tour de corps F, K, E.",
+   "Les accolades donnent les deux degrés [E : K] (orange) et [K : F] (gris).",
+   "La colonne violette est un groupe G, un sous-groupe H et {1}.",
+   "La flèche verte relie K à H : [E : K] égale l'ordre de H."
+  ],
+  "a_voir": "Le corps K correspond au sous-groupe H, et le degré devient un ordre."
+ },
+ {
+  "code": "61-244",
+  "a_dire": "Un automorphisme envoie u sur une autre racine de son polynôme minimal.",
+  "legende_titre": "Où u peut aller",
+  "lecture": [
+   "Le cadre bleu est u = √2.",
+   "Les deux points verts sont les racines de x² − 2 sur la droite graduée.",
+   "Les flèches orange vont de u vers ces deux racines.",
+   "Le trait rouge pointillé vers 0 est une image impossible."
+  ],
+  "a_voir": "u ne peut aller que sur √2 ou −√2."
+ },
+ {
+  "code": "61-245",
+  "a_dire": "Un corps fini ℤ/(p)[x]/(m) a p puissance deg m éléments.",
+  "legende_titre": "Taille d'un corps fini",
+  "lecture": [
+   "Le cadre bleu donne le nombre premier p = 2.",
+   "Le cadre violet donne le polynôme m de degré 2.",
+   "Le cadre gris est le corps construit à partir de p et de m.",
+   "Les quatre disques verts sont ses éléments : 2² = 4."
+  ],
+  "a_voir": "Le nombre d'éléments est p élevé au degré de m."
+ },
+ {
+  "code": "61-246",
+  "a_dire": "La tour de radicaux accepte des racines de tout ordre, la tour quadratique seulement des racines carrées.",
+  "legende_titre": "Deux tours côte à côte",
+  "lecture": [
+   "La colonne bleue est la tour quadratique : chaque étage ajoute u avec u² dans l'étage précédent.",
+   "La colonne violette est la tour de radicaux : chaque étage ajoute u avec uⁿ dans l'étage précédent.",
+   "Le texte rouge dit que la racine cubique de 2 n'entre jamais dans la tour quadratique.",
+   "Le texte vert dit qu'elle est acceptée dans la tour de radicaux."
+  ],
+  "a_voir": "Seule la tour de radicaux contient des racines d'ordre quelconque."
+ },
+ {
+  "code": "61-247",
+  "a_dire": "Résoudre par radicaux : les racines vivent dans une tour de radicaux.",
+  "legende_titre": "Les racines dans la tour",
+  "lecture": [
+   "Le cadre gris en bas est ℚ, les fractions.",
+   "La flèche orange ajoute la racine de 2 : on monte au cadre bleu ℚ(√2).",
+   "Les deux disques verts, √2 et −√2, sont les racines de x² = 2.",
+   "Elles sont toutes deux dans le cadre bleu."
+  ],
+  "a_voir": "Les racines de x² = 2 sont dans une tour à un étage."
+ },
+ {
+  "code": "61-248",
+  "a_dire": "Le critère de Galois dira quand on résout par radicaux ; le degré 5 général ne le permet pas.",
+  "legende_titre": "Degré 2 et degré 5",
+  "lecture": [
+   "Le cadre bleu du haut est le critère de Galois.",
+   "Le cadre vert à gauche est le degré 2 : résoluble par radicaux.",
+   "Le cadre rouge à droite est le degré 5 général : non résoluble par radicaux."
+  ],
+  "a_voir": "Le degré 2 se résout par radicaux, le degré 5 général non."
+ },
+ {
+  "code": "61-249",
+  "a_dire": "Le corps engendré par √2 + √3 est celui engendré par √2 et √3, et cela devient un théorème.",
+  "legende_titre": "Un exemple devient un théorème",
+  "lecture": [
+   "Le cadre bleu est le corps engendré par un seul nombre, √2 + √3.",
+   "Le cadre violet est le corps engendré par √2 et √3.",
+   "Le signe vert dit qu'ils sont égaux.",
+   "La flèche orange mène du fait isolé au cadre vert, l'élément primitif, au chapitre 63."
+  ],
+  "a_voir": "Un fait vérifié sur un exemple devient le théorème de l'élément primitif."
+ },
+ {
+  "code": "61-250",
+  "a_dire": "Il existe un corps fini à p puissance n éléments pour chaque p premier et chaque n, et un seul.",
+  "legende_titre": "Un corps pour chaque p et n",
+  "lecture": [
+   "Le cadre bleu est p, un nombre premier ; le cadre violet est n, un entier.",
+   "Les flèches orange mènent au cadre vert : un corps à pⁿ éléments, et un seul.",
+   "Les quatre disques verts montrent le cas p = 2, n = 2 : 2² = 4 éléments."
+  ],
+  "a_voir": "À chaque couple p, n correspond exactement un corps à pⁿ éléments."
+ },
+ {
+  "code": "61-251",
+  "a_dire": "Le corps de décomposition est un petit morceau de la clôture algébrique.",
+  "legende_titre": "Un petit morceau du grand corps",
+  "lecture": [
+   "Le grand disque violet est la clôture algébrique : elle contient les racines de tous les polynômes.",
+   "Le petit disque bleu est le corps de décomposition : il contient les racines d'un seul polynôme.",
+   "Le petit disque est entièrement dans le grand."
+  ],
+  "a_voir": "Le corps de décomposition est contenu dans la clôture algébrique."
+ },
+ {
+  "code": "61-252",
+  "a_dire": "Le chapitre 66 règle deux questions : les polygones à n côtés et la quadrature du cercle (π).",
+  "legende_titre": "Deux portes à fermer",
+  "lecture": [
+   "À gauche, le bloc des polygones à n côtés : le polygone rouge à 7 côtés est impossible, le vert à 17 côtés est réussi.",
+   "À droite, le bloc de la quadrature du cercle : le cercle et le carré violets ont la même aire, ce qui est lié à π.",
+   "Les deux blocs ont la même place et la même flèche orange vers le chapitre 66, qui règle les deux."
+  ],
+  "a_voir": "Deux questions ouvertes, les n côtés et le nombre π, sont réglées au chapitre 66."
+ },
+ {
+  "code": "61-253",
+  "a_dire": "On se demande si le corps de cos 20° contient aussi cos 140° et cos 260°.",
+  "legende_titre": "Les trois racines sont-elles dans le corps ?",
+  "lecture": [
+   "Le disque bleu est cos 20° ≈ 0,94 sur la droite graduée.",
+   "Les disques orange sont cos 140° ≈ −0,77 et cos 260° ≈ −0,17.",
+   "Les flèches orange avec « ? » demandent si le corps de cos 20° contient ces deux nombres."
+  ],
+  "a_voir": "Les trois racines sont réelles, et la question reste ouverte."
+ },
+ {
+  "code": "61-254",
+  "a_dire": "Pour la racine cubique de 2, les deux autres racines ne sont pas réelles ; pour cos 20°, les trois sont réelles.",
+  "legende_titre": "Racines réelles ou non",
+  "lecture": [
+   "À gauche, les trois disques verts de cos 20° sont sur la droite des réels.",
+   "À droite, un disque vert est la racine réelle de la racine cubique de 2.",
+   "Les deux disques rouges, hors de la droite, sont des racines non réelles."
+  ],
+  "a_voir": "Une seule racine de la racine cubique de 2 est réelle, contre trois pour cos 20°."
+ }
+]

@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+ox, oy, s = 18, 14, 4.2
+P = lambda x, y: (ox + s * x, oy + s * y)
+O, A, B = (0, 0), (3, 0), (3, 4)
+# carrés construits sur les trois côtés du triangle rectangle
+poly(ax, [P(0, 0), P(3, 0), P(3, -3), P(0, -3)], 'sujet')
+poly(ax, [P(3, 0), P(7, 0), P(7, 4), P(3, 4)], 'sujet')
+poly(ax, [P(0, 0), P(3, 4), P(-1, 7), P(-4, 3)], 'resultat')
+poly(ax, [P(*O), P(*A), P(*B)], 'fixe')
+arrow(ax, P(0, 0), P(3, 4), 'sujet', lw=1.8)
+text(ax, *P(1.5, -1.5), '9', 'sujet', 'l')
+text(ax, *P(5, 2), '16', 'sujet', 'l')
+text(ax, *P(-0.5, 3.5), '25', 'resultat', 'l')
+text(ax, *P(1.0, 2.9), r'$u$', 'sujet', 'm')
+text(ax, 66, 50, r'$u\cdot u$', 'encre', 'm')
+text(ax, 66, 42, r'$3\times3+4\times4$', 'sujet', 's')
+text(ax, 66, 35, r'$=9+16=25$', 'resultat', 's')
+text(ax, 66, 24, r'$\|u\|^2=5^2=25$', 'resultat', 's')
+text(ax, 66, 17, r'$\cos0^\circ=1$ : $5\times5$', 'fixe', 's')
+save(fig, '41-092')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+k = 3.2
+O = (27, 36)
+v = (3, 4)
+w = (-2 * v[0], -2 * v[1])
+assert math.hypot(*v) == 5 and math.hypot(*w) == 10
+T = lambda q: (O[0] + k * q[0], O[1] + k * q[1])
+arrow(ax, O, T(w), 'resultat', lw=1.6)
+arrow(ax, O, T(v), 'sujet', lw=1.8)
+text(ax, T(v)[0] + 2, T(v)[1] + 3, r'$v$  norme 5', 'sujet', 's', ha='left')
+text(ax, T(w)[0] + 1, T(w)[1] - 3, r'$-2v=\langle -6;\ -8\rangle$', 'resultat', 's', ha='left')
+text(ax, T(w)[0] - 1, T(w)[1] + 4, 'norme 10', 'resultat', 's', ha='left')
+box(ax, 52, 40, 34, 9, 'sujet', label=r'‖$v$‖ = 5', size='s')
+box(ax, 52, 26, 34, 9, 'varie', label=r'|$-2$| = 2', size='s')
+box(ax, 52, 12, 34, 9, 'resultat', label=r'2 × 5 = 10', size='s')
+arrow(ax, (69, 40), (69, 35), 'fixe', lw=0.8)
+arrow(ax, (69, 26), (69, 21), 'fixe', lw=0.8)
+text(ax, 69, 56, r'norme de $-2v$', 'encre', 's')
+save(fig, '41-054')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 14, 78, 60, 10, 'fixe', label='on cherche w tel que $w^{3}$ = 8 cis 0°', size='s')
+arrow(ax, (44, 78), (44, 70), 'varie')
+box(ax, 8, 58, 72, 11, 'varie', label='de Moivre : $\\rho^{3}$ cis 3α = 8 cis 0°', size='s', weight='bold')
+text(ax, 44, 51.5, 'égaler module et angle', 'varie', 's')
+arrow(ax, (28, 56), (22, 42), 'varie'); arrow(ax, (60, 56), (66, 42), 'varie')
+box(ax, 4, 30, 38, 11, 'resultat', label='$\\rho^{3}$ = 8', size='m')
+box(ax, 46, 30, 38, 11, 'resultat', label='3α = k × 360°', size='m')
+text(ax, 23, 24, 'module cubé : 8', 'resultat', 's')
+text(ax, 65, 24, 'angle : k tours entiers', 'resultat', 's')
+text(ax, 44, 12, 'k est un nombre entier', 'encre', 's')
+save(fig, '39-085')

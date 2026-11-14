@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+box(ax, 2, 62, 38, 14, 'sujet', label=r'$x+y=5$')
+box(ax, 48, 62, 38, 14, 'autre', label=r'$y=\frac{6}{x}$')
+arrow(ax, (21, 61), (36, 49), 'varie'); arrow(ax, (67, 61), (52, 49), 'varie')
+text(ax, 44, 56, 'y devient 6/x', 'varie', 's')
+box(ax, 14, 32, 60, 16, 'sujet', label=r'$x+\frac{6}{x}=5$')
+text(ax, 44, 26, r'$x$ est au bas de la fraction', 'encre', 's')
+arrow(ax, (44, 22), (44, 17), 'limite')
+box(ax, 14, 2, 60, 14, 'limite', label=r'$x=0$ interdit : à noter')
+save(fig, '21-142')

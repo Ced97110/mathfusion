@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 3, 52, 18, 12, 'sujet', label=r'$a/b$', size='l')
+box(ax, 36, 57, 50, 9, 'fixe', label='« a pour b »', size='m')
+box(ax, 36, 46, 50, 9, 'fixe', label='« a est à b »', size='m')
+arrow(ax, (21, 60), (35.5, 61.5), 'varie'); arrow(ax, (21, 56), (35.5, 50.5), 'varie')
+text(ax, 44, 37, 'l\'ordre compte', 'encre', 's')
+box(ax, 3, 16, 16, 10, 'sujet', label=r'$36/4$')
+text(ax, 11, 10, '36 pour 4', 'sujet', 's')
+text(ax, 44, 21, r'$\neq$', 'limite', 'xl')
+box(ax, 69, 16, 16, 10, 'autre', label=r'$4/36$')
+text(ax, 77, 10, '4 pour 36', 'autre', 's')
+save(fig, '09-029')

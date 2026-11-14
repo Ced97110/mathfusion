@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(46)
+O = (10, 8); u = 10
+line(ax, [(4, 8), (36, 8)], 'fixe', lw=0.4)
+line(ax, [(10, 4), (10, 30)], 'fixe', lw=0.4)
+arrow(ax, O, (O[0] + 2 * u, O[1] + u), 'resultat', lw=3.2)
+arrow(ax, O, (O[0] + 2 * u, O[1] + u), 'sujet', lw=1.2)
+text(ax, 28, 24, '$x$ = (2 ; 1)', 'sujet', 's')
+text(ax, 24, 3.5, '$x1$ : même flèche', 'resultat', 's')
+box(ax, 42, 31, 15, 10, 'sujet', label='(2 ; 1)', size='s')
+arrow(ax, (58, 36), (68, 36), 'varie')
+text(ax, 63, 40, '× 1', 'varie', 's')
+box(ax, 70, 31, 16, 10, 'resultat', label='(2 ; 1)', size='s')
+text(ax, 64, 25, 'le un ne change rien', 'fixe', 's')
+text(ax, 64, 17, '$x1=x$', 'resultat', 'l')
+text(ax, 64, 9, 'la flèche reste la même', 'fixe', 's')
+save(fig, '57-110')

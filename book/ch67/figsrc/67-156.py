@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 38, 30, 11, 'sujet', label=r'$f_3$')
+text(ax, 18, 33, 'irréductible, degré 2', 'sujet', 's')
+arrow(ax, (33, 43.5), (55, 43.5), 'varie')
+text(ax, 44, 47.5, r'$G_f$ contient', 'varie', 's')
+disc(ax, 60, 44, 5, 'sujet', label=r'$i$')
+disc(ax, 79, 44, 5, 'sujet', label=r'$-i$')
+arrow(ax, (63.5, 47.5), (75.5, 47.5), 'varie', curve=-0.6)
+arrow(ax, (75.5, 40.5), (63.5, 40.5), 'varie', curve=-0.6)
+text(ax, 69.5, 28, 'un cycle de longueur 2', 'resultat', 's')
+box(ax, 3, 6, 82, 11, 'fixe', label=r'degré $n_i$ : cycle de longueur $n_i$')
+save(fig, '67-156')

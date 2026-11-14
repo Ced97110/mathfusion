@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+f = numberline(ax, 12, 76, 36, -4, 4, labels=False, arrow_right=False)
+text(ax, f(0), 31.5, '0', 'fixe')
+disc(ax, f(3), 36, 3, 'sujet', label='3', size='s'); disc(ax, f(-3), 36, 3, 'varie', label='−3', size='s')
+arrow(ax, (f(3) - 1, 39), (f(-3) + 1, 39), 'varie', curve=0.4)
+text(ax, f(0), 50, '1er retournement autour de 0', 'varie', 's')
+arrow(ax, (f(-3) + 1, 33), (f(3) - 1, 33), 'resultat', curve=0.4)
+text(ax, f(0), 17, '2e retournement autour de 0', 'resultat', 's')
+text(ax, f(0), 8, r'retour au départ : $-(-a)=a$', 'resultat', 'm')
+text(ax, f(3), 44, r'$a$', 'sujet'); text(ax, f(-3), 44, r'$-a$', 'varie')
+save(fig, '13-036')

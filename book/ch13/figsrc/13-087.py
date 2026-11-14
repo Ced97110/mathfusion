@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 18, 38, 'ℕ', 'sujet', 24)
+text(ax, 18, 22, '« grand N »', 'sujet', 'm')
+box(ax, 36, 30, 48, 18, 'sujet', dash=True)
+text(ax, 60, 39, '0  1  2  3  …', 'sujet', 'l')
+arrow(ax, (27, 39), (35, 39), 'varie')
+text(ax, 60, 53, 'toute la collection', 'sujet', 's')
+text(ax, 60, 22, r'$7 \in$ ℕ : 7 est un entier naturel', 'encre', 's')
+save(fig, '13-087')

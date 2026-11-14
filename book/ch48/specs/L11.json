@@ -1,0 +1,183 @@
+[
+ {
+  "code": "48-161",
+  "a_dire": "Pour compter les éléments de HN, on multiplie |H| par |N| puis on divise par |H ∩ N|.",
+  "legende_titre": "Trois actions sur un cas chiffré",
+  "lecture": [
+   "En haut, le bleu montre H avec 3 éléments, le violet montre N avec 2 éléments et le gris montre l'intersection avec 1 élément.",
+   "La case orange multiplie 3 par 2 et donne 6.",
+   "La case verte divise 6 par 1 : HN a 6 éléments."
+  ],
+  "a_voir": "Comptez d'abord, multipliez ensuite, divisez enfin par l'intersection."
+ },
+ {
+  "code": "48-162",
+  "a_dire": "Sur l'horloge à douze heures, les quotients ont des nombres d'éléments qui se correspondent (6, 3, 2 et 2), mais ce décompte ne donne pas à lui seul l'isomorphisme.",
+  "legende_titre": "Premier théorème : un seul cas compté",
+  "lecture": [
+   "La rangée du haut a 6 cases : ce sont les éléments du quotient de G par K.",
+   "Les 3 cases violettes sont celles du sous-groupe H/K.",
+   "En bas, le quotient du quotient a 2 cases, et G/H a aussi 2 cases.",
+   "Le signe égal compare seulement les nombres 2 et 2."
+  ],
+  "a_voir": "Seuls les nombres d'éléments sont comparés, aucune flèche entre éléments n'est tracée."
+ },
+ {
+  "code": "48-163",
+  "a_dire": "Un groupe à deux éléments a toujours la même table : deux groupes d'ordre 2 sont isomorphes.",
+  "legende_titre": "Deux groupes à deux éléments, une même table",
+  "lecture": [
+   "Le tableau du haut est l'addition sur {0, 1}, celui du bas est la multiplication sur {1, −1}.",
+   "Dans chaque tableau, les cases vertes contiennent le neutre et les cases orange l'autre élément.",
+   "Les flèches violettes relient 0 à 1 et 1 à −1 : les deux tableaux ont le même motif de couleurs."
+  ],
+  "a_voir": "Les deux tableaux sont identiques à un changement de noms près."
+ },
+ {
+  "code": "48-164",
+  "a_dire": "Pour trouver tous les homomorphismes, on ne les essaie pas un à un : on trie par le noyau, puis on garde ou on écarte chaque quotient.",
+  "legende_titre": "Trier par le noyau au lieu d'essayer",
+  "lecture": [
+   "La case grise rappelle les 12 puissance 7 applications à essayer, trop nombreuses.",
+   "La case orange liste les deux noyaux possibles : {0} ou tout ℤ/7ℤ.",
+   "La case bleue donne le quotient correspondant : 7 éléments ou 1 élément.",
+   "La case rouge écarte le quotient à 7 éléments, la case verte garde celui à 1 élément."
+  ],
+  "a_voir": "La méthode remplace une liste immense par deux noyaux à examiner."
+ },
+ {
+  "code": "48-165",
+  "a_dire": "Un homomorphisme de ℤ/7ℤ vers ℤ/12ℤ est fixé par l'image a de 1, et le calcul force a = 0.",
+  "legende_titre": "Pourquoi f(1) vaut 0",
+  "lecture": [
+   "La case bleue pose a comme image de 1.",
+   "Les deux cases orange disent que 7 fois 1 vaut 0, donc que 7a vaut 0 dans l'autre horloge.",
+   "La case violette rappelle que 7 fois 7 font 49, qui vaut 1.",
+   "La case verte conclut : a vaut 0, donc f est triviale."
+  ],
+  "a_voir": "Chaque case se déduit de la précédente, jusqu'à a = 0."
+ },
+ {
+  "code": "48-166",
+  "a_dire": "Le noyau divise 7 par Lagrange ; comme 7 est premier, il a 1 élément ou 7 éléments.",
+  "legende_titre": "Les deux noyaux possibles",
+  "lecture": [
+   "La case bleue du haut est le point de départ : le noyau est un sous-groupe de ℤ/7ℤ.",
+   "La case orange, encadrée en gras, porte la preuve : le nombre d'éléments du noyau divise 7.",
+   "Le texte gris dit que 7 est premier : ses diviseurs sont 1 et 7.",
+   "Les deux cases vertes montrent 7 petits cercles : un seul est plein pour {0}, tous le sont pour ℤ/7ℤ."
+  ],
+  "a_voir": "L'étape de Lagrange réduit les noyaux à deux cas."
+ },
+ {
+  "code": "48-167",
+  "a_dire": "Si le noyau est {0}, l'image aurait 7 éléments, mais 7 ne divise pas 12 : ce cas est impossible.",
+  "legende_titre": "Le noyau {0} est exclu",
+  "lecture": [
+   "Chaque cercle est un nombre d'éléments possible, de 1 à 12.",
+   "Les cercles verts sont les nombres qui divisent 12 : ce sont les tailles possibles d'un sous-groupe de ℤ/12ℤ.",
+   "Le cercle rouge est 7, la taille de l'image de f : il n'est pas vert."
+  ],
+  "a_voir": "Le 7 rouge n'est pas parmi les nombres verts."
+ },
+ {
+  "code": "48-168",
+  "a_dire": "L'homomorphisme trivial envoie tous les éléments de ℤ/7ℤ sur le seul élément 0 de ℤ/12ℤ.",
+  "legende_titre": "Tout va sur 0",
+  "lecture": [
+   "À gauche, les 7 cercles bleus sont les éléments de ℤ/7ℤ.",
+   "À droite, la colonne de 12 cercles est ℤ/12ℤ ; seul le cercle vert 0 est rempli.",
+   "Les 7 flèches orange arrivent toutes sur ce 0."
+  ],
+  "a_voir": "Les sept flèches se rejoignent sur un même point."
+ },
+ {
+  "code": "48-169",
+  "a_dire": "Le nombre d'éléments de l'image est |G| divisé par |ker f|, donc il divise |G|.",
+  "legende_titre": "Image = G divisé par le noyau",
+  "lecture": [
+   "En haut, G a 7 éléments.",
+   "Dans la première rangée, le noyau a 1 élément : 7 paquets de 1 case bleue, donc 7 cercles verts d'image.",
+   "Dans la seconde rangée, le noyau a 7 éléments : un seul paquet de 7 cases, donc 1 cercle vert d'image.",
+   "Dans les deux cas, le nombre de paquets (7 ou 1) divise 7."
+  ],
+  "a_voir": "L'image compte les paquets que le noyau fait dans G."
+ },
+ {
+  "code": "48-170",
+  "a_dire": "Si 5 et 8 n'ont que 1 comme diviseur commun, l'image a un seul élément : l'homomorphisme est trivial.",
+  "legende_titre": "Un seul diviseur commun",
+  "lecture": [
+   "Le cercle bleu contient le diviseur 5 de 5.",
+   "Le cercle violet contient les diviseurs 2, 4 et 8 de 8.",
+   "Le cercle vert, au croisement, contient 1, le seul nombre commun aux deux listes."
+  ],
+  "a_voir": "Le croisement des deux cercles ne contient que 1."
+ },
+ {
+  "code": "48-171",
+  "a_dire": "Le sous-groupe des multiples de m dans l'horloge à mn positions a n éléments, et le quotient en a m, donc il ressemble à l'horloge à m positions.",
+  "legende_titre": "Deux essais, même structure",
+  "lecture": [
+   "Chaque rangée est une horloge à mn positions, avec 12 cases pour 3 et 4, puis 10 cases pour 2 et 5.",
+   "Les cases bleues sont les multiples de m : il y en a n.",
+   "Les couleurs différentes reviennent dans le même ordre : il y en a m."
+  ],
+  "a_voir": "Quand m et n changent, il reste n cases bleues et m couleurs."
+ },
+ {
+  "code": "48-172",
+  "a_dire": "Pour m = 3 et n = 4, on compte de 3 en 3 dans l'horloge à douze positions et on obtient 0, 3, 6, 9.",
+  "legende_titre": "Compter de 3 en 3 sur l'horloge",
+  "lecture": [
+   "Les 12 cercles forment l'horloge à douze positions.",
+   "Les cercles bleus 0, 3, 6 et 9 sont les multiples de 3.",
+   "Les flèches orange vont de 3 en 3 et reviennent à 0 après 4 pas."
+  ],
+  "a_voir": "Quatre pas de 3 ramènent à 0."
+ },
+ {
+  "code": "48-173",
+  "a_dire": "Le sous-groupe des multiples de m dans l'horloge à mn positions a n éléments.",
+  "legende_titre": "Combien d'éléments : n ou m + 1 ?",
+  "lecture": [
+   "Dans la première rangée, avec m = 3 et n = 4, il y a 4 éléments : n et m + 1 valent tous deux 4.",
+   "Dans la seconde, avec m = 2 et n = 5, il y a 5 éléments.",
+   "Le texte vert dit que n vaut 5, le texte rouge dit que m + 1 vaut 3 : seul n convient."
+  ],
+  "a_voir": "Seul le second exemple départage n et m + 1."
+ },
+ {
+  "code": "48-174",
+  "a_dire": "Sur le cercle des douze heures, la suite bleu, orange, vert se répète quatre fois, et chaque couleur devient un élément du quotient.",
+  "legende_titre": "Douze heures, trois couleurs",
+  "lecture": [
+   "Le cercle de gauche montre les heures 0 à 11, coloriées selon leur reste dans la division par 3.",
+   "Les heures 0, 3, 6, 9 sont bleues, 1, 4, 7, 10 sont orange, 2, 5, 8, 11 sont vertes.",
+   "À droite, les trois grands cercles de mêmes couleurs sont les trois éléments du quotient."
+  ],
+  "a_voir": "Les trois couleurs du cercle donnent les trois éléments de droite."
+ },
+ {
+  "code": "48-175",
+  "a_dire": "Orange plus vert donne bleu, quelles que soient les heures choisies : les couleurs s'additionnent comme dans ℤ/3ℤ.",
+  "legende_titre": "Additionner des couleurs",
+  "lecture": [
+   "La première rangée additionne les heures 4 (orange) et 5 (vert) et donne 9 (bleu).",
+   "La deuxième additionne 7 (orange) et 11 (vert) : la somme 18 revient à 6, qui est bleu.",
+   "La troisième rangée fait 1 plus 2 égale 0 dans ℤ/3ℤ avec les mêmes couleurs."
+  ],
+  "a_voir": "Les trois rangées ont les mêmes couleurs : orange, vert, bleu."
+ },
+ {
+  "code": "48-176",
+  "a_dire": "Le résultat d'une addition de paquets ne dépend pas de l'heure choisie dans chaque paquet.",
+  "legende_titre": "Autres heures, même couleur",
+  "lecture": [
+   "La première rangée additionne les heures vertes 5 et 8 : la somme 13 revient à 1, qui est orange.",
+   "La seconde additionne les heures vertes 2 et 8 : la somme est 10, qui est orange.",
+   "Les deux résultats sont des nombres différents, mais de la même couleur orange."
+  ],
+  "a_voir": "Deux choix d'heures vertes donnent la même couleur orange."
+ }
+]

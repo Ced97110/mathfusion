@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 2, 84, 66, 'fixe', r=1.5)
+text(ax, 44, 63, r'anneaux : $M_2(\mathbb{R})$', 'fixe', 'm', weight='bold')
+box(ax, 4, 4, 54, 54, 'sujet', r=1.5)
+text(ax, 31, 53, r'commutatifs : $\mathbb{Z}/6$', 'sujet', 'm', weight='bold')
+box(ax, 6, 6, 50, 42, 'autre', r=1.5)
+text(ax, 31, 43, r'intègres : $\mathbb{Z}$', 'autre', 'm', weight='bold')
+box(ax, 8, 8, 46, 30, 'resultat', r=1.5)
+text(ax, 31, 33, r'corps : $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{Z}/7$', 'resultat', 'm', weight='bold')
+box(ax, 61, 8, 23, 38, 'limite', r=1.5)
+text(ax, 72.5, 38, 'corps gauche', 'limite', 's', weight='bold'); text(ax, 72.5, 32, 'non commutatif', 'limite', 's'); text(ax, 72.5, 20, r'$\mathbb{H}$', 'limite', 'l', weight='bold')
+save(fig, '51-116')

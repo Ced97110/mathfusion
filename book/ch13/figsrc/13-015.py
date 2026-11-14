@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 6, 76, 20, -6, 6, labels=False)
+for v in (-5, -3, 0, 3, 5): text(ax, f(v), 15.4, str(v).replace('-', '−'), 'fixe', 's')
+disc(ax, f(3), 20, 2.4, 'sujet', label=r'$P$', size='s')
+disc(ax, f(5), 20, 2.4, 'limite'); disc(ax, f(-5), 20, 2.4, 'limite'); disc(ax, f(-3), 20, 2.4, 'resultat')
+text(ax, f(5) - 1, 30, 'même côté', 'limite', 's')
+line(ax, [(f(5), 22.4), (f(5), 27)], 'limite', lw=0.5, dash=True)
+text(ax, 2, 40, 'distance 5, pas 3', 'limite', 's', ha='left')
+line(ax, [(f(-5), 22.4), (f(-5), 38)], 'limite', lw=0.5, dash=True)
+text(ax, f(-3), 30, 'convient', 'resultat', 'm', weight='bold')
+line(ax, [(f(-3), 22.4), (f(-3), 27.5)], 'resultat', lw=0.5, dash=True)
+save(fig, '13-015')

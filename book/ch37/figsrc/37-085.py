@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+k, ox1, oy1, ox2, oy2 = 10, 6, 24, 46, 24
+fig, ax = canvas(62)
+# carré de côté 3 privé du carré de côté 1 (coin haut droit)
+poly(ax, [(ox1, oy1), (ox1 + 3*k, oy1), (ox1 + 3*k, oy1 + 2*k), (ox1, oy1 + 2*k)], 'sujet')
+poly(ax, [(ox1, oy1 + 2*k), (ox1 + 2*k, oy1 + 2*k), (ox1 + 2*k, oy1 + 3*k), (ox1, oy1 + 3*k)], 'varie')
+box(ax, ox1 + 2*k, oy1 + 2*k, k, k, 'fixe', fill=False, dash=True, label='1', size='s', r=0.3)
+brace(ax, ox1, ox1 + 3*k, oy1, 'sujet', label='3 = a', down=True)
+# rectangle 4 × 2
+poly(ax, [(ox2, oy2), (ox2 + 3*k, oy2), (ox2 + 3*k, oy2 + 2*k), (ox2, oy2 + 2*k)], 'sujet')
+poly(ax, [(ox2 + 3*k, oy2), (ox2 + 4*k, oy2), (ox2 + 4*k, oy2 + 2*k), (ox2 + 3*k, oy2 + 2*k)], 'varie')
+brace(ax, ox2, ox2 + 4*k, oy2, 'sujet', label='4 = a − b + c', down=True)
+arrow(ax, (ox1 + 3*k + 2, oy1 + 25), (ox2 - 2, oy1 + 14), 'varie', curve=-0.2)
+text(ax, ox2 + 2*k, oy2 + 2*k + 4, '2 = a + b − c', 'sujet', 'm')
+text(ax, 44, 57, 'a = 3, b = 4, c = 5', 'fixe', 'm')
+text(ax, 21, 10, r'$a^2-(b-c)^2$ = 9 − 1 = 8', 'sujet', 's')
+text(ax, 66, 10, '(a − b + c)(a + b − c) = 4 × 2', 'sujet', 's')
+text(ax, 44.5, 50.5, 'on déplace', 'varie', 's')
+text(ax, 44, 3, '8 ÷ 40 = 0,2 = 1 − 0,8', 'resultat', 'm', weight='bold')
+save(fig, '37-085')

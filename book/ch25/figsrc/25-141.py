@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 8, 76, 24, 0, 1, step=0.5, arrow_right=False)
+box(ax, f(0), 33, f(0.364) - f(0), 7, 'sujet', label='0,3640', r=0.5)
+box(ax, f(0.364), 33, f(0.8303) - f(0.364), 7, 'autre', label='0,4663', r=0.5)
+text(ax, (f(0) + f(0.364)) / 2, 44, r'$\tan 20°$', 'sujet', 's'); text(ax, (f(0.364) + f(0.8303)) / 2, 44, r'$\tan 25°$', 'autre', 's')
+disc(ax, f(0.8303), 24, 1.6, 'limite'); line(ax, [(f(0.8303), 25.5), (f(0.8303), 33)], 'limite', dash=True)
+disc(ax, f(1), 24, 1.6, 'resultat')
+text(ax, f(0.8303) - 6, 11, 'somme : 0,8303', 'limite', 's'); text(ax, f(1) - 2, 5, r'$\tan 45° = 1$', 'resultat', 's')
+line(ax, [(f(1), 18.5), (f(1), 8.5)], 'resultat', dash=True); line(ax, [(f(0.8303), 22.5), (f(0.8303), 13.5)], 'limite', dash=True)
+text(ax, 22, 50.5, '20° + 25° = 45°', 'encre', 's')
+save(fig, '25-141')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, 'deux écritures, un seul produit', 'encre', 'm')
+text(ax, 44, 53.5, r'$u=\langle1,3\rangle$ et $v=\langle4,2\rangle$', 'fixe', 's')
+box(ax, 6, 30, 30, 17, 'sujet', label=r'$u\cdot v$', size='xl')
+box(ax, 52, 30, 30, 17, 'autre', label=r'$u\circ v$', size='xl')
+text(ax, 44, 38.5, '=', 'encre', 'xl')
+text(ax, 21, 26, '« u point v » : ce livre', 'sujet', 's')
+text(ax, 67, 26, '« u rond v » : manuel', 'autre', 's')
+box(ax, 14, 2, 60, 11, 'resultat', label=r'$1\times4+3\times2=10$')
+arrow(ax, (21, 22.5), (32, 13.5), 'fixe')
+arrow(ax, (67, 22.5), (56, 13.5), 'fixe')
+save(fig, '41-073')

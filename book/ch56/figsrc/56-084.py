@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 6, 41, 52, 'resultat', fill=False, dash=True)
+box(ax, 45, 6, 41, 52, 'limite', fill=False, dash=True)
+text(ax, 22.5, 52, 'ℤ : principal', 'resultat', 'm', weight='bold')
+text(ax, 65.5, 52, 'ℤ[x] : non principal', 'limite', 'm', weight='bold')
+for i, l in enumerate(['(2)', '(3)', '(12)']):
+    box(ax, 5 + i * 12, 32, 10, 9, 'sujet', label=l, size='s')
+text(ax, 22.5, 20, '1 seul nombre chacun', 'resultat', 's')
+box(ax, 50, 32, 10, 9, 'sujet', label='$2$')
+text(ax, 66, 36.5, 'et', 'encre', 's')
+box(ax, 72, 32, 10, 9, 'sujet', label='$x$')
+text(ax, 65.5, 22, 'terme constant pair :', 'limite', 's')
+text(ax, 65.5, 14, 'il faut 2 et $x$', 'limite', 's')
+save(fig, '56-084')

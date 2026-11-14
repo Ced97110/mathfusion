@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 64, r'$x^2 = -1$', 'limite', 'l')
+f = numberline(ax, 12, 76, 52, -2, 2, 1, arrow_right=False)
+text(ax, 44, 42, 'aucun réel ne convient', 'limite', 's')
+arrow(ax, (44, 38), (44, 27), 'varie')
+text(ax, 62, 33, 'on lui donne un nom', 'varie', 's')
+box(ax, 14, 6, 16, 20, 'sujet', label=r'$i$', size='xl')
+text(ax, 58, 19, r'$i^2 = -1$', 'sujet', 'l')
+text(ax, 58, 11, 'hors de la droite', 'fixe', 's')
+save(fig, '39-038')

@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+def nl(y):
+    return numberline(ax, 6, 76, y, 0, 11, 1, labels=False, arrow_right=False)
+f = nl(44); g = nl(14)
+text(ax, 44, 60, r'$10 - (3 + 4) = 3$', 'resultat', 'm')
+arrow(ax, (f(10), 44), (f(7), 44), 'resultat', curve=0.5)
+arrow(ax, (f(7), 44), (f(3), 44), 'resultat', curve=0.5)
+text(ax, (f(10) + f(7)) / 2, 52, '$-3$', 'resultat', 's')
+text(ax, (f(7) + f(3)) / 2, 54, '$-4$', 'resultat', 's')
+for v, r in ((10, 'encre'), (7, 'encre'), (3, 'resultat')): text(ax, f(v), 40.4, f'${v}$', r, 's')
+text(ax, 44, 31, r'$10 - 3 + 4 = 11$', 'limite', 'm')
+arrow(ax, (g(10), 14), (g(7), 14), 'limite', curve=0.5)
+arrow(ax, (g(7), 14), (g(11), 14), 'limite', curve=-0.5)
+text(ax, (g(10) + g(7)) / 2, 22, '$-3$', 'limite', 's')
+text(ax, (g(7) + g(11)) / 2 + 4, 25.5, '$+4$', 'limite', 's')
+for v, r in ((10, 'encre'), (7, 'encre'), (11, 'limite')): text(ax, g(v), 10.4, f'${v}$', r, 's')
+save(fig, '15-085')

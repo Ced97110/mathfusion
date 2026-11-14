@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, r'dans $\mathbb{Z}[\sqrt{3}\,i]$', 'sujet', 'm')
+box(ax, 38, 62, 12, 10, 'sujet', label='4', size='l')
+box(ax, 3, 42, 36, 10, 'autre', label=r'$2\times2$')
+box(ax, 47, 42, 38, 10, 'varie', label=r'$(1-\sqrt{3}\,i)(1+\sqrt{3}\,i)$', size='s')
+arrow(ax, (41, 62), (24, 52), 'autre')
+arrow(ax, (47, 62), (62, 52), 'varie')
+text(ax, 44, 34, 'facteurs non associés', 'limite', 's')
+box(ax, 8, 18, 72, 9, 'limite', label='deux factorisations : pas factoriel', size='s')
+arrow(ax, (44, 18), (44, 13), 'limite')
+box(ax, 8, 2, 72, 9, 'limite', label='aucune taille euclidienne', size='s')
+save(fig, '56-202')

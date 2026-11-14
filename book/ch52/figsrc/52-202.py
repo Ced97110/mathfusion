@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+box(ax,3,6,28,62,'sujet'); text(ax,17,62,'ℤ','sujet','xl')
+box(ax,7,34,20,10,'varie',label=r'$k\mathbb{Z}$',size='m'); text(ax,17,48,'noyau','varie','s')
+box(ax,7,12,20,10,'sujet',fill=False,label='autres entiers',size='s')
+box(ax,46,6,40,62,'fixe'); text(ax,66,62,r'$R$','fixe','l')
+box(ax,50,10,32,44,'resultat'); text(ax,66,49,'anneau premier','resultat','s')
+text(ax,66,44,'= image de ℤ','resultat','s')
+box(ax,56,31,20,8,'fixe',fill=False,label=r'$0$',size='m')
+box(ax,54,13,24,8,'fixe',fill=False,label=r'$n\cdot1$',size='m')
+arrow(ax,(27,39),(56,35),'varie'); arrow(ax,(27,17),(54,17),'varie')
+text(ax,38,70,r'$n\mapsto n\cdot1$','varie','s')
+save(fig,'52-202')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+text(ax, 4, 72, 'Direct : bloqué', 'limite', 'm', ha='left', weight='bold')
+box(ax, 4, 52, 28, 14, 'sujet', label='n² = 36', size='m')
+box(ax, 56, 52, 28, 14, 'limite', label='n = ?', size='m', dash=True)
+arrow(ax, (32, 59), (56, 59), 'limite'); text(ax, 44, 63, 'comment ?', 'limite', 's')
+text(ax, 4, 40, 'Contraposée : on calcule', 'resultat', 'm', ha='left', weight='bold')
+box(ax, 4, 10, 24, 22, 'sujet'); text(ax, 16, 26, 'n impair', 'sujet', 's'); text(ax, 16, 17, 'n = 2k + 1', 'sujet', 's')
+box(ax, 32, 10, 24, 22, 'varie'); text(ax, 44, 26, 'on calcule', 'varie', 's'); text(ax, 44, 17, 'n²', 'varie', 'm')
+box(ax, 60, 10, 24, 22, 'resultat'); text(ax, 72, 26, 'n² impair', 'resultat', 's'); text(ax, 72, 17, '7² = 49', 'resultat', 's')
+arrow(ax, (28, 21), (32, 21), 'varie'); arrow(ax, (56, 21), (60, 21), 'varie')
+save(fig, '42-083')

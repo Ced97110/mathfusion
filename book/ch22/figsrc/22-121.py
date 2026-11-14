@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def G(sc,ox,oy): return lambda x,y:(ox+sc*x,oy+sc*y)
+def curve(ax,g,fn,a,b,role,n=80,lw=1.2):
+    pts=[g(a+(b-a)*i/n,fn(a+(b-a)*i/n)) for i in range(n+1)]; line(ax,pts,role,lw=lw)
+def axes(ax,g,x0,x1,y0,y1):
+    arrow(ax,g(x0,0),g(x1,0),'fixe',lw=0.8); arrow(ax,g(0,y0),g(0,y1),'fixe',lw=0.8)
+def dot(ax,g,x,y,role,r=1.3): disc(ax,*g(x,y),r,role)
+def lab(ax,g,x,y,s,role='encre',size='s',ha='center'): text(ax,*g(x,y),s,role,size,ha=ha)
+fig,ax=canvas(66)
+g=G(11,31,8)
+axes(ax,g,-2.6,4.8,-0.5,4.8)
+line(ax,[g(0,0),g(4.5,4.5)],'fixe',dash=True)
+curve(ax,g,lambda x:x**0.5,0,4.5,'autre'); curve(ax,g,lambda x:x*x,-2,2,'sujet')
+for x in (-2,-1,0,1,2): dot(ax,g,x,x*x,'sujet')
+lab(ax,g,-2,4.4,r'$(-2,\ 4)$','sujet'); lab(ax,g,2.15,4,r'$(2,\ 4)$','sujet',ha='left')
+lab(ax,g,-1.15,0.8,r'$(-1,\ 1)$','sujet',ha='right'); lab(ax,g,0,-0.45,r'$(0,\ 0)$','sujet')
+lab(ax,g,1.2,-0.1,r'$(1,\ 1)$','sujet',ha='left')
+lab(ax,g,0,4.35,r'$y = x^2$','sujet','m'); lab(ax,g,3.4,4.15,r'$y = x$','fixe')
+lab(ax,g,3.0,1.2,r'$y=\sqrt{x}$','autre')
+save(fig,'22-121')

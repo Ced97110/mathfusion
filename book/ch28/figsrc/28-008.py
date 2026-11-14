@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def pol(c, r, d): return (c[0] + r * math.cos(math.radians(d)), c[1] + r * math.sin(math.radians(d)))
+def arc(ax, c, r, a0, a1, role, lw=0.9, dash=False, n=48): line(ax, [pol(c, r, a0 + (a1 - a0) * i / n) for i in range(n + 1)], role, lw, dash)
+def dot(ax, p, role, r=1.0): ax.add_patch(Circle(p, r, ec=COL[role], fc=COL[role], lw=0.5, zorder=4))
+def sq(ax, p, ux, uy, s=2.2, role='fixe'): line(ax, [(p[0] + ux * s, p[1]), (p[0] + ux * s, p[1] + uy * s), (p[0], p[1] + uy * s)], role, lw=0.7)
+
+fig, ax = canvas(52)
+box(ax, 4, 6, 32, 40, 'fixe')
+box(ax, 8, 24, 24, 17, 'resultat')
+text(ax, 20, 36.5, 'sin 120°', 'resultat', 's')
+text(ax, 20, 29, r'$\approx 0{,}866$', 'resultat', 'm', weight='bold')
+text(ax, 20, 14, 'calculatrice', 'fixe')
+box(ax, 46, 28, 38, 14, 'resultat', label='pas d’erreur')
+box(ax, 46, 8, 38, 14, 'autre', label='d’où vient 0,866 ?', size='s', dash=True)
+arrow(ax, (36, 36), (46, 35), 'resultat')
+arrow(ax, (36, 20), (46, 15), 'autre')
+save(fig, '28-008')

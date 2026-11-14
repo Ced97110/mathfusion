@@ -1,0 +1,344 @@
+[
+ {
+  "code": "58-301",
+  "a_dire": "Ajouter à une famille indépendante un vecteur hors de son espace engendré garde la famille indépendante ; un vecteur dans cet espace la rend liée.",
+  "legende_titre": "Deux ajouts à la famille (1, 0)",
+  "lecture": [
+   "La flèche bleue est (1, 0), la famille de départ. Le trait gris en pointillés est la droite de ses multiples.",
+   "À gauche, la flèche orange (0, 1) sort de cette droite : la famille reste indépendante (case verte).",
+   "À droite, la flèche orange (2, 0) reste sur la droite : la famille est liée, car 2·(1, 0) − (2, 0) = 0 (case rouge)."
+  ],
+  "a_voir": "Un vecteur ajouté hors de la droite garde l’indépendance ; un vecteur sur la droite la casse."
+ },
+ {
+  "code": "58-302",
+  "a_dire": "La preuve part d’une relation nulle, divise par le coefficient du nouveau vecteur (étape qui porte tout), et arrive à des coefficients tous nuls.",
+  "legende_titre": "Départ, étape clé, arrivée de la preuve",
+  "lecture": [
+   "La case bleue est le départ : une relation nulle entre le nouveau vecteur v = (0, 1) et l’ancien u = (1, 0).",
+   "La case orange est l’étape qui porte tout : diviser par α.",
+   "La case rouge à droite dit ce qui arrive si α n’est pas nul : v s’écrit avec u, ce qui est exclu.",
+   "La case verte est l’arrivée : α = 0, puis β = 0."
+  ],
+  "a_voir": "Diviser par α est le pas qui force α = 0."
+ },
+ {
+  "code": "58-303",
+  "a_dire": "On construit une base de W en ajoutant, un par un, des vecteurs de W hors de l’espace engendré, jusqu’à ce qu’il n’en reste plus.",
+  "legende_titre": "Construire une base du plan W par ajouts",
+  "lecture": [
+   "Le parallélogramme gris est le plan W, qui passe par le point O.",
+   "La flèche bleue a = (1, 2, 1) est le premier ajout, la flèche orange b = (0, 1, −1) le second.",
+   "Les pointillés verts montrent que tout point du plan se forme avec a et b.",
+   "Le texte à droite donne les étapes dans l’ordre, jusqu’à l’arrêt."
+  ],
+  "a_voir": "Deux ajouts suffisent ici : (a, b) est une base de W."
+ },
+ {
+  "code": "58-304",
+  "a_dire": "La dimension d’un sous-espace W de l’espace ne peut être que 0, 1, 2 ou 3, car c’est le nombre de vecteurs de sa base.",
+  "legende_titre": "Les quatre sous-espaces possibles et leur base",
+  "lecture": [
+   "De gauche à droite : un point O, une droite, un plan, puis l’espace entier.",
+   "Les flèches bleues sont les vecteurs de la base de chaque sous-espace.",
+   "Sous chaque dessin, on lit le nombre de vecteurs : 0, 1, 2, 3."
+  ],
+  "a_voir": "Le nombre de flèches bleues est la dimension, et il n’y en a pas plus de 3."
+ },
+ {
+  "code": "58-305",
+  "a_dire": "Dimension 0 : W est réduit au seul point O, sa base est vide et la méthode ne fait aucun ajout.",
+  "legende_titre": "Le plus petit sous-espace : un seul point",
+  "lecture": [
+   "Les trois flèches grises sont l’espace de départ.",
+   "Le disque bleu est le point O, le seul point de W.",
+   "La case grise donne la base : la famille vide.",
+   "La case verte donne la dimension : 0."
+  ],
+  "a_voir": "Rien n’est ajouté : W n’a que le point O."
+ },
+ {
+  "code": "58-306",
+  "a_dire": "Dimension 1 : W est une droite qui passe par O, formée des multiples d’un vecteur non nul.",
+  "legende_titre": "Une droite par l’origine",
+  "lecture": [
+   "La droite bleue contient les multiples de a = (1, 2, 1).",
+   "La flèche orange est a, la base de la droite.",
+   "Les points marqués 2a et −a sont deux autres multiples.",
+   "Le point O est 0·a : la droite passe donc par O."
+  ],
+  "a_voir": "Un seul vecteur engendre toute la droite, qui passe par O."
+ },
+ {
+  "code": "58-307",
+  "a_dire": "Dimension 2 : W est un plan qui passe par O, formé des points s·a + t·b avec deux vecteurs indépendants ; on peut le décrire par une équation.",
+  "legende_titre": "Un plan par l’origine et son équation",
+  "lecture": [
+   "Le plan bleu est formé des points s·a + t·b, avec a = (1, 2, 1) en bleu et b = (0, 1, −1) en orange.",
+   "Le disque vert est le point a + b = (1, 3, 0), au coin du parallélogramme en pointillés.",
+   "La case donne l’équation −3x + y + z = 0 ; le calcul −3·1 + 3 + 0 = 0 la vérifie pour a + b.",
+   "Avec s = t = 0, on obtient O : le plan passe par O."
+  ],
+  "a_voir": "Deux nombres libres s et t décrivent le plan ; O en fait partie."
+ },
+ {
+  "code": "58-308",
+  "a_dire": "Dimension 3 : trois vecteurs indépendants de W forment une base de ℝ³, donc W est l’espace entier.",
+  "legende_titre": "Trois vecteurs indépendants dans W",
+  "lecture": [
+   "Les trois flèches u₁ (bleue), u₂ (orange) et u₃ (violette) partent de O dans trois directions différentes.",
+   "Les cubes gris représentent l’espace entier.",
+   "La chaîne à droite va des trois vecteurs indépendants à une base de ℝ³, puis à W = ℝ³."
+  ],
+  "a_voir": "Trois vecteurs indépendants dans ℝ³ remplissent tout l’espace."
+ },
+ {
+  "code": "58-309",
+  "a_dire": "Un plan qui ne passe pas par O n’est pas un sous-espace : il n’a aucune des dimensions 0, 1, 2, 3.",
+  "legende_titre": "Deux plans, un seul contient O",
+  "lecture": [
+   "À gauche, le plan bleu d’équation −3x + y + z = 0 contient O : 0 = 0.",
+   "À droite, le plan rouge d’équation −3x + y + z = 1 ne contient pas O : 0 ≠ 1.",
+   "La flèche orange montre l’écart entre O et le plan rouge."
+  ],
+  "a_voir": "Seul le plan qui contient O est un sous-espace."
+ },
+ {
+  "code": "58-310",
+  "a_dire": "Si l’application n’est pas un homomorphisme, le noyau peut ne pas être un sous-espace et la formule du rang ne s’écrit plus.",
+  "legende_titre": "Une application qui n’est pas linéaire",
+  "lecture": [
+   "L’application envoie (x, y) sur x·y. Les couples envoyés sur 0 sont les deux axes bleus.",
+   "Les disques bleus (1, 0) et (0, 1) sont sur les axes : ils sont envoyés sur 0.",
+   "Le disque rouge (1, 1), leur somme, est envoyé sur 1, pas sur 0 + 0.",
+   "La case rouge dit que les deux axes ne forment pas un sous-espace."
+  ],
+  "a_voir": "La somme de deux points des axes sort des axes."
+ },
+ {
+  "code": "58-311",
+  "a_dire": "Un homomorphisme d’espaces vectoriels, ou application linéaire, respecte la somme : l’image d’une somme est la somme des images.",
+  "legende_titre": "Une application qui respecte la somme",
+  "lecture": [
+   "À gauche, trois vecteurs de départ : (1, 0) en bleu, (0, 1) en orange, leur somme (1, 1) en vert.",
+   "À droite, leurs images (2, 0), (0, 3) et (2, 3), avec les mêmes couleurs.",
+   "L’image verte (2, 3) est la somme des deux images, ce que montre le rectangle en pointillés."
+  ],
+  "a_voir": "L’image de la somme est la somme des images."
+ },
+ {
+  "code": "58-312",
+  "a_dire": "On part d’une base du noyau, on la complète en base de V ; les images des vecteurs ajoutés forment une base de l’image, car le noyau part sur zéro.",
+  "legende_titre": "Noyau, complément, base de l’image",
+  "lecture": [
+   "À gauche, la base (k, v) du plan : la flèche bleue k = (2, −1) est la base du noyau et la flèche orange v = (1, 0) est le vecteur ajouté.",
+   "À droite, le disque bleu est l’image de k : (0, 0).",
+   "La flèche verte est l’image de v : (1, 2), seule base de l’image.",
+   "La case verte résume : η(v) seul est une base de l’image."
+  ],
+  "a_voir": "Le noyau part sur zéro, le vecteur ajouté donne la base de l’image."
+ },
+ {
+  "code": "58-313",
+  "a_dire": "Les images des vecteurs ajoutés engendrent l’image, parce que la partie du vecteur qui est dans le noyau est envoyée sur zéro.",
+  "legende_titre": "Le morceau du noyau disparaît",
+  "lecture": [
+   "À gauche, (3, 4) s’écrit −4·(2, −1) + 11·(1, 0) : le trajet bleu puis orange arrive à (3, 4).",
+   "Le morceau bleu est dans le noyau ; à droite, son image est le disque bleu, zéro.",
+   "Le morceau orange donne la flèche orange : 11·η(v).",
+   "L’image de (3, 4) est donc (11, 22)."
+  ],
+  "a_voir": "Seul le morceau orange compte dans l’image."
+ },
+ {
+  "code": "58-314",
+  "a_dire": "Les images des vecteurs ajoutés sont indépendantes : une relation nulle entre elles met un vecteur dans le noyau, puis la base force les coefficients à zéro.",
+  "legende_titre": "Pourquoi les images sont indépendantes",
+  "lecture": [
+   "À gauche, trois étapes numérotées. Étape 1, la case bleue part de c·(1, 2) = (0, 0).",
+   "Étape 2, la case orange, est l’étape clé : c·(1, 0) est alors dans le noyau.",
+   "Étape 3, la case verte conclut : on écrit c·(1, 0) = a·(2, −1) et la base de ℝ² donne c = 0.",
+   "À droite, séparée par un trait, la droite orange des multiples de v et la droite bleue du noyau n’ont que O en commun."
+  ],
+  "a_voir": "Les deux droites ne se coupent qu’en O, donc c = 0."
+ },
+ {
+  "code": "58-315",
+  "a_dire": "Pour A, le noyau et l’image sont deux droites de dimension 1, et 1 + 1 = 2, la dimension du plan.",
+  "legende_titre": "Le noyau et l’image se partagent le plan",
+  "lecture": [
+   "Le cadre de gauche est le plan de départ ; la droite bleue est le noyau, multiples de (2, −1).",
+   "Le cadre de droite est le plan d’arrivée ; la droite verte est l’image, multiples de (1, 2).",
+   "En bas, la case bleue (noyau : 1) et la case verte (image : 1) forment ensemble dim V = 2."
+  ],
+  "a_voir": "Les deux cases font à elles deux la dimension 2."
+ },
+ {
+  "code": "58-316",
+  "a_dire": "Un déterminant nul va avec un noyau non nul ; avec un déterminant 5, le noyau est {0} et l’image est tout le plan : 0 + 2 = 2.",
+  "legende_titre": "Déterminant et noyau, deux matrices",
+  "lecture": [
+   "À gauche, colonnes (1, 2) et (2, 4), déterminant 0 : l’image est une droite verte et le noyau a la dimension 1.",
+   "À droite, colonnes (2, 1) et (1, 3), déterminant 5 : l’image est tout le plan vert et le noyau est le seul point O.",
+   "Les cases du bas comptent les dimensions : 1 + 1 = 2, puis 0 + 2 = 2."
+  ],
+  "a_voir": "Déterminant nul : noyau non nul ; déterminant 5 : noyau réduit à O."
+ },
+ {
+  "code": "58-317",
+  "a_dire": "ℤ/2ℤ n’a aucune base : aucune famille, de zéro, un ou plusieurs éléments, n’est à la fois génératrice et indépendante.",
+  "legende_titre": "Toutes les familles de l’horloge à deux heures",
+  "lecture": [
+   "Les deux disques sont les éléments 0 et 1 ; un disque bleu est engendré par la famille de la ligne.",
+   "Ligne 1 : la famille vide n’engendre que 0, le disque 1 reste gris.",
+   "Lignes 2 et 3 : la famille (1), ou une famille plus grande, engendre tout mais est liée, car 2 fois un élément vaut 0."
+  ],
+  "a_voir": "Chaque ligne échoue sur une des deux qualités."
+ },
+ {
+  "code": "58-318",
+  "a_dire": "La torsion, c’est un élément non nul et un scalaire non nul dont le produit est zéro ; elle se distingue d’un produit non nul et de la multiplication par 0.",
+  "legende_titre": "La torsion et ses voisins",
+  "lecture": [
+   "Case bleue : dans ℤ/2ℤ, la flèche orange « × 2 » envoie 1 sur 0, avec 2 non nul et 1 non nul : c’est de la torsion.",
+   "Case violette : dans ℤ², 2 × (3, 5) = (6, 10) n’est pas nul : pas de torsion.",
+   "Case grise : multiplier par 0 donne toujours 0, ce qui ne compte pas."
+  ],
+  "a_voir": "Il faut un scalaire non nul et un élément non nul qui donnent 0."
+ },
+ {
+  "code": "58-319",
+  "a_dire": "Dans ℤ², un scalaire non nul ne peut pas annuler un couple non nul : chaque case multipliée par 3 donne 0 seulement si elle vaut 0.",
+  "legende_titre": "Pas de torsion dans les couples d’entiers",
+  "lecture": [
+   "Les cases bleues x₁ et x₂ sont les deux cases du couple.",
+   "Les flèches orange « × 3 » mènent aux cases 3x₁ = 0 et 3x₂ = 0.",
+   "Comme 3 n’est pas nul, les cases vertes donnent x₁ = 0 et x₂ = 0 : le couple est (0, 0)."
+  ],
+  "a_voir": "Chaque case est traitée seule, et chacune est nulle."
+ },
+ {
+  "code": "58-320",
+  "a_dire": "La torsion est un obstacle dans ce chapitre et devient le sujet d’étude au chapitre 60.",
+  "legende_titre": "Même fait, deux rôles",
+  "lecture": [
+   "La droite graduée en bas place les chapitres 58, 59 et 60.",
+   "La case orange, reliée au 58, montre 2 × 1 = 0 dans ℤ/2ℤ comme obstacle : pas de base.",
+   "La case bleue, reliée au 60, montre le même calcul comme sujet étudié."
+  ],
+  "a_voir": "Le calcul est le même ; son rôle change du chapitre 58 au chapitre 60."
+ },
+ {
+  "code": "58-321",
+  "a_dire": "Un quotient d’un module libre n’est pas forcément libre : ℤ est libre de base (1), mais son quotient ℤ/2ℤ n’a pas de base.",
+  "legende_titre": "Regrouper les entiers en deux classes",
+  "lecture": [
+   "La rangée du haut montre des entiers : en bleu les pairs, en orange les impairs.",
+   "Les flèches les regroupent dans deux classes : « pairs » et « impairs ».",
+   "Ces deux classes forment ℤ/2ℤ, marqué en rouge : aucune base."
+  ],
+  "a_voir": "ℤ est libre mais son quotient ne l’est pas."
+ },
+ {
+  "code": "58-322",
+  "a_dire": "Un sous-module d’un module libre n’est pas forcément libre : dans ℤ/4ℤ, le sous-module {0, 2} n’est pas libre.",
+  "legende_titre": "Un sous-module de ℤ/4ℤ",
+  "lecture": [
+   "Les quatre disques sont les éléments 0, 1, 2, 3 de ℤ/4ℤ, libre de base (1) (accolade verte du haut).",
+   "Les disques bleus 0 et 2, sous l’accolade bleue, forment le sous-module {0, 2}.",
+   "En rouge : 2 × 2 = 4 = 0 alors que 2 n’est pas nul, donc la famille (2) est liée."
+  ],
+  "a_voir": "Le sous-module {0, 2} est lié par 2 × 2 = 0."
+ },
+ {
+  "code": "58-323",
+  "a_dire": "L’énoncé « tout sous-module de ℤ^(n) est libre » tombe si on change d’anneau : sur ℤ/4ℤ, le sous-module {0, 2} n’est pas libre.",
+  "legende_titre": "Même idée sur deux anneaux",
+  "lecture": [
+   "En haut, sur ℤ : les multiples de 4 (disques bleus) forment un sous-module libre de base (4).",
+   "La flèche « autre anneau » mène à la ligne du bas.",
+   "En bas, sur ℤ/4ℤ : les disques rouges 0 et 2 forment {0, 2}, où 2 × 2 = 0 : pas libre."
+  ],
+  "a_voir": "Même forme de sous-module, résultat différent selon l’anneau."
+ },
+ {
+  "code": "58-324",
+  "a_dire": "Les sous-groupes de ℤ sont les multiples d’un nombre d ; leur base est (d), ou vide si d = 0.",
+  "legende_titre": "Les sous-groupes de ℤ",
+  "lecture": [
+   "En haut, la droite graduée porte les entiers ; les gros disques bleus sont les multiples de 6 : −12, −6, 0, 6, 12.",
+   "La flèche orange va de 0 à 6 : la base (6).",
+   "En bas, les multiples de 0 se réduisent au seul disque 0 : la base est vide."
+  ],
+  "a_voir": "Un seul nombre engendre le sous-groupe, ou aucun si c’est 0."
+ },
+ {
+  "code": "58-325",
+  "a_dire": "Le cas général repose sur la division euclidienne : un quotient et un reste plus petit que le diviseur.",
+  "legende_titre": "La division de 14 par 6",
+  "lecture": [
+   "Les 14 cases alignées sont les 14 unités.",
+   "Les deux groupes bleus de 6 cases sont le quotient : 2 fois 6.",
+   "Les deux cases orange à droite sont le reste : 2.",
+   "La case verte écrit 14 = 2 × 6 + 2, avec 2 plus petit que 6."
+  ],
+  "a_voir": "14 se décompose en deux fois 6 plus un reste de 2."
+ },
+ {
+  "code": "58-326",
+  "a_dire": "ℤ n’est pas somme directe de deux sous-modules non nuls : deux tels sous-modules ont un nombre non nul en commun.",
+  "legende_titre": "Deux sous-modules de ℤ qui se coupent",
+  "lecture": [
+   "La rangée bleue donne des multiples de 2, la rangée violette des multiples de 3.",
+   "Les pointillés rouges relient les nombres présents dans les deux rangées : 6 et 12.",
+   "La case rouge conclut : l’intersection n’est pas réduite à {0}."
+  ],
+  "a_voir": "Les deux rangées ont des nombres non nuls en commun."
+ },
+ {
+  "code": "58-327",
+  "a_dire": "La condition (ii) échoue car ab est multiple de a et de b, et n’est pas nul.",
+  "legende_titre": "Pourquoi 4ℤ et 6ℤ se rencontrent",
+  "lecture": [
+   "La rangée bleue donne les multiples de 4, la rangée violette ceux de 6.",
+   "Le nombre 24 = 4 × 6 est dans les deux rangées : le pointillé rouge épais le relie.",
+   "Le pointillé fin relie 12, qui est aussi dans les deux rangées.",
+   "La case rouge dit que 24 n’est pas nul : l’intersection n’est pas {0}."
+  ],
+  "a_voir": "Le produit 4 × 6 est dans les deux sous-modules."
+ },
+ {
+  "code": "58-328",
+  "a_dire": "Être libre et être décomposable sont deux choses différentes : ℤ est libre sans se couper en deux morceaux, ℤ² est libre et se coupe en deux axes.",
+  "legende_titre": "Libre ou décomposable ?",
+  "lecture": [
+   "À gauche, la rangée bleue représente ℤ, de base (1) (flèche orange) : un seul morceau.",
+   "À droite, la grille représente ℤ², de base (1, 0) et (0, 1).",
+   "La ligne bleue et la colonne violette sont les deux morceaux qui découpent ℤ²."
+  ],
+  "a_voir": "ℤ n’a qu’un morceau, ℤ² en a deux."
+ },
+ {
+  "code": "58-329",
+  "a_dire": "Le chapitre 59 cherche des bases de départ et d’arrivée qui rendent la matrice d’un homomorphisme diagonale, sur un anneau principal.",
+  "legende_titre": "Le but du chapitre 59",
+  "lecture": [
+   "À gauche, la matrice du transporteur : des nombres partout, les deux cases orange hors de la diagonale.",
+   "La flèche indique le changement des bases de départ et d’arrivée.",
+   "À droite, la matrice diagonale : d₁ et d₂ sur la diagonale, des 0 ailleurs.",
+   "La case du bas rappelle le cadre : ℤ ou K[x]."
+  ],
+  "a_voir": "Après le changement de base, il ne reste que la diagonale."
+ },
+ {
+  "code": "58-330",
+  "a_dire": "Le chapitre 59 annonce que tout module de type fini sur un anneau principal est une somme directe de modules cycliques, un module cyclique étant engendré par un seul élément.",
+  "legende_titre": "Modules cycliques et théorème de structure",
+  "lecture": [
+   "À gauche, les 12 disques sont ℤ/12ℤ ; le disque 1 engendre tout en ajoutant 1 à chaque pas (flèche orange).",
+   "À droite, le module M est découpé en pièces C₁, C₂, C₃ de couleurs différentes.",
+   "L’accolade lit M comme somme directe de ces pièces, chacune cyclique."
+  ],
+  "a_voir": "Un seul élément engendre chaque pièce, et M est leur somme directe."
+ }
+]

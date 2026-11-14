@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 2, 77, r'avec $x=2$ et $y=3$', 'sujet', 'm', ha='left')
+box(ax, 2, 56, 20, 12, 'varie', label=r'$x^{-2}$', size='m')
+box(ax, 24, 56, 20, 12, 'fixe', label=r'$y^5$', size='m')
+arrow(ax, (46, 62), (58, 56), 'varie')
+text(ax, 23, 49, r'$y^5$', 'fixe', 'm'); line(ax, [(8, 43), (38, 43)], 'encre', lw=1.0); text(ax, 23, 37, r'$x^{2}$', 'varie', 'm')
+arrow(ax, (46, 43), (58, 50), 'varie')
+box(ax, 60, 44, 26, 24, 'resultat', label='60,75', size='l')
+text(ax, 23, 22, r'$a^4b^2$', 'fixe', 'm'); line(ax, [(8, 16), (38, 16)], 'encre', lw=1.0); text(ax, 23, 10, r'$c^{-6}$', 'varie', 'm')
+arrow(ax, (46, 16), (56, 16), 'varie')
+text(ax, 72, 16, r'$a^4b^2c^6$', 'resultat', 'm')
+save(fig, '14-064')

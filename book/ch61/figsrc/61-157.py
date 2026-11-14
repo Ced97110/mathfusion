@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+poly(ax, [(6, 14), (24, 14), (24, 32), (6, 32)], 'sujet')
+line(ax, [(6, 14), (24, 32)], 'varie', lw=1.4)
+text(ax, 15, 10.5, '1', 'sujet', 's'); text(ax, 11.5, 28, '√2', 'varie', 's')
+text(ax, 15, 4, 'constructible', 'sujet', 's')
+arrow(ax, (28, 24), (54, 24), 'resultat', both=True)
+text(ax, 41, 28, 'si et seulement si', 'resultat', 's')
+text(ax, 70, 50, 'tour quadratique', 'autre', 's')
+box(ax, 57, 31, 26, 11, 'autre', label='ℚ(√2)', size='m'); box(ax, 57, 10, 26, 11, 'fixe', label='ℚ', size='m')
+arrow(ax, (70, 21), (70, 31), 'varie')
+save(fig, '61-157')

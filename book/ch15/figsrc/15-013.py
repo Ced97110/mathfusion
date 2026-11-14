@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+for i in range(3): box(ax, 10 + 8 * i, 34, 8, 6, 'sujet', label=r'$x$', size='s')
+for i in range(2): box(ax, 34 + 20 * i, 34, 20, 6, 'varie', label=r'$y$', size='s')
+brace(ax, 10, 34, 33, 'sujet', r'$3x$'); brace(ax, 34, 74, 33, 'varie', r'$2y$')
+text(ax, 80, 37, '16', 'encre', 's')
+for i in range(5): box(ax, 10 + 8 * i, 12, 8, 6, 'sujet')
+text(ax, 58, 15, r'$5x$ : 10', 'limite', 's')
+line(ax, [(74, 8), (74, 44)], 'limite', dash=True)
+text(ax, 44, 4, 'les fins ne coïncident pas', 'limite', 's')
+save(fig, '15-013')

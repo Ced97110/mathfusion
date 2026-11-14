@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 38, 40, 12, 'fixe', label='9 × (5 + 1)', size='l')
+line(ax, [(1.5, 35), (44.5, 35)], 'sujet', lw=2.2)
+text(ax, 23, 31.5, 'trait de fraction', 'sujet', 's')
+box(ax, 3, 16, 40, 12, 'fixe', label='24 + 3', size='l')
+arrow(ax, (44.5, 44), (58, 44), 'varie'); box(ax, 59, 38, 24, 12, 'resultat', label='54', size='l')
+arrow(ax, (44.5, 22), (58, 22), 'varie'); box(ax, 59, 16, 24, 12, 'resultat', label='27', size='l')
+text(ax, 44, 6, r'$54 \div 27 = 2$', 'resultat', 'l')
+save(fig, '12-050')

@@ -1,0 +1,186 @@
+[
+ {
+  "code": "48-001",
+  "a_dire": "Un bouton à quatre positions : 1, 5, 9, 13 quarts de tour donnent tous la position 1.",
+  "legende_titre": "Le bouton et ses quarts de tour",
+  "lecture": [
+   "Le grand disque gris est le bouton, avec ses quatre positions 0, 1, 2, 3.",
+   "La flèche orange du centre montre la position atteinte : la position 1, en vert.",
+   "Les cases orange à droite sont des nombres de quarts de tour : 1, 5, 9 et 13.",
+   "Les flèches vertes les envoient tous sur la position 1."
+  ],
+  "a_voir": "Plusieurs nombres de quarts de tour mènent à la même position."
+ },
+ {
+  "code": "48-002",
+  "a_dire": "Tourner de 7 puis de 6 quarts de tour amène le bouton en position 1, comme 13 quarts de tour.",
+  "legende_titre": "Deux tours successifs du bouton",
+  "lecture": [
+   "Trois boutons se suivent de gauche à droite : le départ (bleu), la position 3 (orange), la position 1 (vert).",
+   "Chaque flèche orange est un tour : 7 quarts, puis 6 quarts.",
+   "Dans chaque bouton, la case colorée est la position où il se trouve."
+  ],
+  "a_voir": "Après 7 puis 6 quarts de tour, le bouton est en position 1."
+ },
+ {
+  "code": "48-003",
+  "a_dire": "Tourner d'un seul coup de 13 quarts de tour donne la même position 1 que 7 puis 6.",
+  "legende_titre": "Vérifier avec 13 quarts de tour",
+  "lecture": [
+   "La droite graduée va de 0 à 13.",
+   "L'arc orange est le tour de 7 quarts, l'arc violet celui de 6 quarts.",
+   "L'accolade bleue couvre 12 quarts : 3 tours complets, retour à 0.",
+   "L'accolade verte couvre le dernier quart : il reste 1."
+  ],
+  "a_voir": "7 + 6 = 13 donne la position 1, trois tours complets plus un quart."
+ },
+ {
+  "code": "48-004",
+  "a_dire": "𝑓 envoie un nombre de quarts de tour sur une position : 𝑓(7) = 3̄.",
+  "legende_titre": "Le nom 𝑓 de l'opération",
+  "lecture": [
+   "Les cases grises à gauche sont des nombres de quarts de tour : 7, 6, 13.",
+   "Les cases vertes à droite sont les positions : 3̄, 2̄, 1̄.",
+   "Chaque flèche bleue porte le nom 𝑓 et relie un nombre à sa position."
+  ],
+  "a_voir": "Chaque nombre de quarts de tour reçoit une seule position par 𝑓."
+ },
+ {
+  "code": "48-005",
+  "a_dire": "Additionner puis chercher la position, ou chercher les positions puis les additionner, donne la même position.",
+  "legende_titre": "Deux chemins, une même position",
+  "lecture": [
+   "La case grise du haut donne les deux nombres de départ : 7 et 6.",
+   "Le chemin orange à gauche additionne d'abord : 13, puis la position 1̄.",
+   "Le chemin violet à droite cherche d'abord les positions 3̄ et 2̄, puis les additionne : 5, donc position 1.",
+   "La case verte du bas montre que les deux chemins arrivent au même endroit."
+  ],
+  "a_voir": "Les deux chemins finissent sur la même position."
+ },
+ {
+  "code": "48-006",
+  "a_dire": "𝑓 respecte l'addition : additionner avant ou après donne le même résultat ; le carré ne le fait pas.",
+  "legende_titre": "Respecter l'addition, ou non",
+  "lecture": [
+   "En haut, les deux cases sont reliées par le signe égal vert : pour 5 et 9, les deux calculs donnent la position 2.",
+   "En bas, les deux cases sont séparées par le signe différent rouge : pour le carré, les deux calculs donnent 25 et 13.",
+   "La case orange additionne d'abord, la case violette applique d'abord l'opération."
+  ],
+  "a_voir": "Pour 𝑓 les deux ordres sont égaux ; pour le carré ils ne le sont pas."
+ },
+ {
+  "code": "48-007",
+  "a_dire": "Une infinité d'entiers ne peut pas avoir chacun sa case parmi quatre cases.",
+  "legende_titre": "Quatre cases pour tous les entiers",
+  "lecture": [
+   "Les quatre cases bleues du milieu sont les cases 0, 1, 2, 3.",
+   "Les entiers 0, 1, 2, 3 du haut ont chacun leur case : flèches vertes.",
+   "Les entiers 4, 5, 6, 7 du bas arrivent sur des cases déjà prises : flèches rouges.",
+   "Les trois points montrent que les entiers continuent."
+  ],
+  "a_voir": "Dès l'entier 4, il n'y a plus de case libre."
+ },
+ {
+  "code": "48-008",
+  "a_dire": "Un homomorphisme garde « respecter l'opération » et abandonne « un pour un ».",
+  "legende_titre": "Ce que l'homomorphisme garde et perd",
+  "lecture": [
+   "La colonne grise est l'isomorphisme : il a les deux exigences, en vert.",
+   "La colonne bleue est l'homomorphisme.",
+   "Il garde la case verte « respecte l'opération », avec 𝑓(7 + 6) = 𝑓(7) + 𝑓(6).",
+   "Il abandonne « un pour un » (case rouge en pointillés) : 𝑓(1) = 𝑓(5)."
+  ],
+  "a_voir": "La seule différence est la case rouge : un pour un est abandonné."
+ },
+ {
+  "code": "48-009",
+  "a_dire": "Plusieurs nombres (1, 5, 9) tombent sur la même position ; les écarts entre eux forment le noyau.",
+  "legende_titre": "Ce qui est perdu : le noyau",
+  "lecture": [
+   "Les disques orange 1, 5, 9 sont trois nombres de quarts de tour.",
+   "Les arcs bleus montrent les écarts : +4 et +4.",
+   "Les flèches vertes les envoient sur la même case : position 1.",
+   "La case bleue du bas dit que ces écarts, multiples de 4, forment le noyau."
+  ],
+  "a_voir": "On ne peut plus retrouver quel nombre a été tourné ; ce qui est perdu, ce sont les écarts de 4, 8…"
+ },
+ {
+  "code": "48-010",
+  "a_dire": "Le noyau est la partie du groupe de départ qui représente ce qui est perdu.",
+  "legende_titre": "Où se trouve le noyau",
+  "lecture": [
+   "La grande case grise est le groupe de départ : tous les entiers.",
+   "La case bleue à l'intérieur est le noyau, une partie du départ.",
+   "La case violette est l'image : les positions atteintes 0, 1, 2, 3.",
+   "La flèche orange 𝑓 va du départ vers l'image."
+  ],
+  "a_voir": "Le noyau est dans le départ, l'image est à l'arrivée."
+ },
+ {
+  "code": "48-011",
+  "a_dire": "Les entiers de même couleur tombent sur la même case ; le noyau est 4ℤ.",
+  "legende_titre": "Quatre paquets d'entiers",
+  "lecture": [
+   "La colonne de gauche montre les entiers de −1 à 5 ; les points disent qu'elle continue.",
+   "La colonne de droite montre les cases 0, 1, 2, 3.",
+   "Chaque flèche a la couleur de la case où elle arrive.",
+   "Le paquet bleu, envoyé sur la case 0, est le noyau 4ℤ."
+  ],
+  "a_voir": "Les entiers de même couleur arrivent sur la même case, et la couleur revient tous les quatre entiers."
+ },
+ {
+  "code": "48-012",
+  "a_dire": "La fibre d'une case est l'ensemble des entiers qui arrivent sur cette case.",
+  "legende_titre": "Une fibre par case",
+  "lecture": [
+   "Le cadre orange en pointillés entoure 1, 5, 9, 13 et les suivants : la fibre de la case 1.",
+   "Le cadre violet en pointillés entoure 3, 7, 11 et les suivants : la fibre de la case 3.",
+   "Chaque flèche relie une fibre à sa case, à droite."
+  ],
+  "a_voir": "Chaque case reçoit son propre paquet d'entiers."
+ },
+ {
+  "code": "48-013",
+  "a_dire": "La fibre de la position 0 est formée des multiples de 4 : 4ℤ.",
+  "legende_titre": "La fibre de la position 0",
+  "lecture": [
+   "La droite graduée va de −8 à 16.",
+   "Les disques bleus sont les multiples de 4, étiquetés en dessous.",
+   "Les flèches bleues les envoient tous sur la case « position 0 »."
+  ],
+  "a_voir": "Tous les multiples de 4, dans les deux sens, arrivent sur la position 0."
+ },
+ {
+  "code": "48-014",
+  "a_dire": "Les fibres de 𝑓 sont les mêmes paquets que les classes modulo 4.",
+  "legende_titre": "Deux critères, les mêmes paquets",
+  "lecture": [
+   "La case bleue du haut donne le critère « même reste » : 2.",
+   "La case violette du bas donne le critère « même position » : 2.",
+   "Le cadre vert en pointillés contient le paquet obtenu : 2, 6, 10 et les suivants."
+  ],
+  "a_voir": "Les deux critères donnent exactement le même paquet."
+ },
+ {
+  "code": "48-015",
+  "a_dire": "Chaque fibre est le noyau décalé : on ajoute le même nombre à tous ses éléments.",
+  "legende_titre": "Le noyau décalé",
+  "lecture": [
+   "Les disques bleus 0, 4, 8 sont des éléments du noyau.",
+   "Les flèches orange ajoutent 1 et donnent les disques orange 1, 5, 9.",
+   "Les flèches vertes ajoutent 2 et donnent les disques verts 2, 6, 10."
+  ],
+  "a_voir": "Les autres fibres se déduisent du noyau par un décalage."
+ },
+ {
+  "code": "48-016",
+  "a_dire": "La fibre de la position 1 a la même forme que celle de la position 0 parce que chaque nombre est décalé de 1.",
+  "legende_titre": "Pourquoi la même forme ?",
+  "lecture": [
+   "La rangée bleue est la liste de la position 0 : 0, 4, 8, 12.",
+   "La rangée violette est la liste de la position 1 : 1, 5, 9, 13.",
+   "Chaque flèche orange ajoute 1 au nombre du dessus."
+  ],
+  "a_voir": "Chaque nombre du bas est celui du haut plus 1."
+ }
+]

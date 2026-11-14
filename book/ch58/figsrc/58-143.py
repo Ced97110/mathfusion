@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+n = lambda v: str(v).replace('-', '−')
+a, b = (1, 2, 1), (0, 1, -1)
+comb = lambda s, t: tuple(s * p + t * q for p, q in zip(a, b))
+assert comb(2, 3) == (2, 7, -1) and comb(1, 1) == (1, 3, 0)
+box(ax, 2, 56, 36, 10, 'sujet', label=r'$a=(1,2,1)$')
+box(ax, 50, 56, 36, 10, 'autre', label=r'$b=(0,1,-1)$')
+text(ax, 44, 70, r'la famille $(a,\,b)$', 'fixe', 'm')
+text(ax, 22, 49, 'triplets de W écrits avec a et b', 'fixe', 's')
+for (s, t), y in zip([(2, 3), (1, 1)], [33, 17]):
+    c = comb(s, t)
+    box(ax, 2, y, 44, 10, 'varie', label=rf'${s}\,a+{t}\,b$')
+    arrow(ax, (48, y + 5), (56, y + 5), 'resultat')
+    box(ax, 58, y, 28, 10, 'resultat', label='(' + ', '.join(n(v) for v in c) + ')')
+text(ax, 44, 8, r'$W=\langle a,\,b\rangle$', 'resultat', 'm')
+save(fig, '58-143')

@@ -1,0 +1,337 @@
+[
+ {
+  "code": "57-151",
+  "a_dire": "Sur un espace vectoriel, un homomorphisme de modules est exactement une transformation linéaire : la somme est envoyée sur la somme.",
+  "legende_titre": "Le quart de tour, vu comme homomorphisme",
+  "lecture": [
+   "À gauche, la flèche bleue est (2 ; 1) et la flèche violette est (−1 ; 2) ; la flèche verte est leur somme (1 ; 3).",
+   "À droite, le quart de tour envoie (2 ; 1) sur (−1 ; 2), (−1 ; 2) sur (−2 ; −1), et (1 ; 3) sur (−3 ; 1).",
+   "Les couleurs sont les mêmes des deux côtés : la flèche verte d’arrivée est la somme des deux autres."
+  ],
+  "a_voir": "La somme du départ est envoyée sur la somme de l’arrivée."
+ },
+ {
+  "code": "57-152",
+  "a_dire": "Le noyau de η est l’ensemble des éléments du départ que η envoie sur 0.",
+  "legende_titre": "Qui est envoyé sur zéro ?",
+  "lecture": [
+   "À gauche, les points sont des couples d’entiers ; les points bleus (0 ; 0), (2 ; 1) et (4 ; 2) sont alignés sur la droite pointillée.",
+   "Ces points bleus sont envoyés sur la case verte 0 : c’est le noyau.",
+   "Le point orange (1 ; 0) est envoyé sur la case grise 1 : il n’est pas dans le noyau."
+  ],
+  "a_voir": "Le noyau est dans le départ : ce sont les points envoyés sur la case 0."
+ },
+ {
+  "code": "57-153",
+  "a_dire": "Le noyau est stable par somme et par multiplication par un coefficient : c’est un sous-module du départ.",
+  "legende_titre": "Le noyau reste dans le noyau",
+  "lecture": [
+   "Les points bleus alignés sont les couples du noyau : (2 ; 1), (4 ; 2), (6 ; 3).",
+   "La flèche orange montre que trois fois (2 ; 1) donne (6 ; 3), entouré en vert.",
+   "Le même point (6 ; 3) est aussi la somme de (2 ; 1) et de (4 ; 2).",
+   "La case verte du bas calcule η(6 ; 3) = 6 − 6 = 0 : le point est bien dans le noyau."
+  ],
+  "a_voir": "Un multiple et une somme d’éléments du noyau retombent dans le noyau."
+ },
+ {
+  "code": "57-154",
+  "a_dire": "L’image de η est l’ensemble des valeurs que η prend dans l’arrivée ; elle peut être plus petite que l’arrivée.",
+  "legende_titre": "Les valeurs atteintes",
+  "lecture": [
+   "En haut, les disques bleus 1, 2 et 3 sont des éléments du départ.",
+   "Les flèches orange (tripler) les envoient sur 3, 6 et 9 en bas, disques verts.",
+   "Les disques gris 1, 2, 4, 5, 7 et 8 sont dans l’arrivée mais jamais atteints."
+  ],
+  "a_voir": "L’image est la partie verte de l’arrivée, pas toute la rangée."
+ },
+ {
+  "code": "57-155",
+  "a_dire": "L’image de η est stable par somme et par multiplication : c’est un sous-module de l’arrivée.",
+  "legende_titre": "L’image reste dans l’image",
+  "lecture": [
+   "Les disques bleus du haut sont 2, 3, 4 et 5 ; les flèches orange (× 3) les envoient sur 6, 9, 12 et 15.",
+   "Les disques verts sont dans le cadre pointillé vert, qui est l’arrivée.",
+   "Les deux lignes vertes du bas montrent que 6 + 9 = 15 et 2 × 6 = 12 restent dans l’image."
+  ],
+  "a_voir": "Somme et multiple de valeurs atteintes sont encore des valeurs atteintes."
+ },
+ {
+  "code": "57-156",
+  "a_dire": "Le quotient du départ par le noyau est identifié à l’image : chaque classe correspond à une valeur.",
+  "legende_titre": "Une classe par valeur",
+  "lecture": [
+   "Chaque droite grise est l’ensemble des couples envoyés sur une même valeur ; la droite bleue épaisse est le noyau.",
+   "Chaque flèche orange relie une droite à la valeur qu’elle prend sur la droite verte du haut.",
+   "La droite verte porte les entiers de −2 à 5 : l’image est l’ensemble de tous les entiers."
+  ],
+  "a_voir": "Une droite (une classe) pour chaque entier : le quotient et l’image se correspondent."
+ },
+ {
+  "code": "57-157",
+  "a_dire": "La preuve part de η, contrôle que la règle sur les classes est bien définie (étape qui compte), qu’elle respecte l’action et qu’elle est injective.",
+  "legende_titre": "Les trois contrôles de la preuve",
+  "lecture": [
+   "La colonne de gauche va de η (bleu) à l’énoncé final (vert) ; la boîte orange épaisse est l’étape qui porte le poids.",
+   "À droite, (1 ; 0) et (3 ; 1) sont dans la même classe : leur écart (2 ; 1) est dans le noyau.",
+   "Les flèches vertes montrent qu’ils ont la même image, 1 : l’image ne dépend pas du représentant."
+  ],
+  "a_voir": "Deux éléments de la même classe ont la même image : c’est ce qui rend la règle bien définie."
+ },
+ {
+  "code": "57-158",
+  "a_dire": "Les théorèmes d’isomorphisme du chapitre 48 passent aux modules : il suffit d’ajouter la vérification que l’action est respectée.",
+  "legende_titre": "Un seul contrôle de plus",
+  "lecture": [
+   "La même règle η envoie (x ; y) sur x − 2y des deux côtés.",
+   "Les deux boîtes du haut (bleue pour les groupes, violette pour les modules) vérifient la somme : 0 + 1 = η(3 ; 1).",
+   "La boîte orange est le seul ajout pour les modules : η(6 ; 3) = 0 = 3 × 0.",
+   "Le texte bleu de gauche dit que la preuve du chapitre 48 ne change pas."
+  ],
+  "a_voir": "Pour passer des groupes aux modules, on ajoute seulement la vérification avec l’action."
+ },
+ {
+  "code": "57-159",
+  "a_dire": "Un module cyclique est formé de tous les multiples d’un seul élément, le générateur.",
+  "legende_titre": "Un seul élément engendre tout",
+  "lecture": [
+   "En haut, sur les entiers, le disque bleu 1 engendre tout : −3 × 1 et 5 × 1 sont en vert.",
+   "En bas, dans les couples d’entiers, la flèche orange est le générateur (2 ; 1) ; ses multiples sont les disques bleus de la droite pointillée.",
+   "Les disques rouges (1 ; 0) et (0 ; 1) sont hors de la droite : (2 ; 1) seul ne les atteint pas."
+  ],
+  "a_voir": "Un seul générateur suffit pour les entiers, pas pour tous les couples."
+ },
+ {
+  "code": "57-160",
+  "a_dire": "Rx désigne l’ensemble de tous les ax quand a décrit R ; c’est un ensemble, pas un produit de deux éléments.",
+  "legende_titre": "Lire le signe Rx",
+  "lecture": [
+   "En haut, le signe Rx se découpe : R est l’ensemble des entiers a (gris), x est le couple (2 ; 1) (bleu).",
+   "Au milieu, le texte orange dit que Rx est l’ensemble de tous les ax.",
+   "Les quatre boîtes bleues donnent les ax pour a = −1, 0, 1 et 2."
+  ],
+  "a_voir": "Rx est la liste de tous les ax, quand a parcourt R."
+ },
+ {
+  "code": "57-161",
+  "a_dire": "Comme ℤ est engendré par 1, l’anneau R est engendré par 1 comme module sur lui-même : tout élément s’écrit a × 1.",
+  "legende_titre": "1 engendre aussi l’anneau",
+  "lecture": [
+   "À gauche, le disque bleu 1 engendre les entiers : 7 = 7 × 1 et −3 = −3 × 1.",
+   "À droite, le disque violet 1 engendre l’anneau R : a = a × 1 et 2x + 3 = (2x + 3) × 1.",
+   "Les trois points entre les boîtes indiquent que cela continue pour tous les éléments."
+  ],
+  "a_voir": "Dans les deux colonnes, chaque élément est lui-même multiplié par 1."
+ },
+ {
+  "code": "57-162",
+  "a_dire": "μ_x envoie chaque coefficient a de R sur ax, un élément du module.",
+  "legende_titre": "La règle a ↦ a x",
+  "lecture": [
+   "Sur la rangée du haut, les disques sont des coefficients de −2 à 3 ; les disques orange −2 et 3 sont ceux que l’on suit.",
+   "Chaque flèche descend vers le point bleu a × (2 ; 1) de la droite pointillée.",
+   "Le coefficient 3 est envoyé sur (6 ; 3) et le coefficient −2 sur (−4 ; −2)."
+  ],
+  "a_voir": "Chaque coefficient est envoyé sur un multiple de (2 ; 1)."
+ },
+ {
+  "code": "57-163",
+  "a_dire": "μ_x respecte la somme et l’action, et atteint tous les éléments de Rx : c’est un homomorphisme surjectif.",
+  "legende_titre": "μ_x respecte la somme et atteint tout",
+  "lecture": [
+   "À gauche, les coefficients ; à droite, leurs images par μ_x pour x = (2 ; 1) : 3 donne (6 ; 3), 2 donne (4 ; 2).",
+   "La boîte verte du milieu montre que la somme 3 + 2 = 5 est envoyée sur la somme (6 ; 3) + (4 ; 2) = (10 ; 5).",
+   "Sous la ligne pointillée, le coefficient 7 donne (14 ; 7) : un multiple de x est atteint."
+  ],
+  "a_voir": "La somme des coefficients est envoyée sur la somme des images, et tout multiple est atteint."
+ },
+ {
+  "code": "57-164",
+  "a_dire": "L’annulateur de x est l’ensemble des coefficients d tels que dx donne 0.",
+  "legende_titre": "Les coefficients qui tuent x",
+  "lecture": [
+   "Sur l’horloge, x = 4 h est un disque bleu ; 8 h est bleu aussi, et 0 est vert.",
+   "Les boîtes vertes montrent que 3 × 4 = 12 = 0 et 6 × 4 = 24 = 0 : 3 et 6 tuent x.",
+   "La boîte rouge montre que 5 × 4 = 20 = 8, qui n’est pas 0 : 5 ne tue pas x.",
+   "Sur la droite du bas, les disques verts 0, 3, 6, 9 et 12 sont les coefficients qui tuent x."
+  ],
+  "a_voir": "L’annulateur contient les multiples de 3, pas le 5."
+ },
+ {
+  "code": "57-165",
+  "a_dire": "ann x = { d ∈ R | d x = 0 } se lit : l’ensemble des d de R tels que d x vaut 0.",
+  "legende_titre": "Lire l’écriture de l’annulateur",
+  "lecture": [
+   "L’écriture est découpée en quatre morceaux, chacun relié par une flèche à son sens en français.",
+   "La barre verticale orange se lit « tels que ».",
+   "En bas, sur l’horloge avec x = 4 h, les boîtes vertes donnent des valeurs de d : 3, 6, 9 et 12."
+  ],
+  "a_voir": "Chaque morceau de l’écriture a une traduction en mots."
+ },
+ {
+  "code": "57-166",
+  "a_dire": "L’annulateur est stable par somme et par multiplication : c’est un idéal à gauche.",
+  "legende_titre": "Somme et multiple tuent encore x",
+  "lecture": [
+   "Les disques verts sont les coefficients qui tuent x sur l’horloge : 0, 3, 6, 9, 12 et 15.",
+   "Les deux flèches orange montrent que 3 et 6 donnent leur somme 9, qui est un disque vert.",
+   "La grande flèche bleue du bas montre que 3 × 5 = 15 est aussi un disque vert."
+  ],
+  "a_voir": "Une somme ou un multiple de coefficients qui tuent x retombe sur un coefficient qui tue x."
+ },
+ {
+  "code": "57-167",
+  "a_dire": "Le module Rx est identifié au quotient de R par l’annulateur de x : les classes et les éléments se correspondent.",
+  "legende_titre": "Trois classes, trois éléments",
+  "lecture": [
+   "À gauche, les boîtes violettes sont les trois classes d’entiers modulo 3.",
+   "À droite, les boîtes bleues sont les trois éléments de Rx pour x = 4 h : 0, 4 h et 8 h.",
+   "Les flèches vertes relient chaque classe à l’élément a × 4 h qui lui correspond."
+  ],
+  "a_voir": "Il y a trois classes et trois éléments, reliés un à un."
+ },
+ {
+  "code": "57-168",
+  "a_dire": "Un module cyclique est toujours un quotient de l’anneau par l’annulateur de son générateur.",
+  "legende_titre": "Anneau divisé par l’annulateur",
+  "lecture": [
+   "Chaque ligne part de l’anneau R = ℤ (gris), passe par l’annulateur (orange) et arrive au module (bleu).",
+   "Première ligne : x = (2 ; 1), l’annulateur est 0 et le module ressemble aux entiers, avec des points de suite de chaque côté.",
+   "Seconde ligne : x = 4 h, l’annulateur est 3ℤ et le module a trois éléments : 0, 4 h et 8 h."
+  ],
+  "a_voir": "Connaître l’annulateur suffit à connaître le module."
+ },
+ {
+  "code": "57-169",
+  "a_dire": "Pour un groupe engendré par x : si ann x = 0, il est comme ℤ ; si ann x = nℤ, il a n éléments, comme une horloge à n heures.",
+  "legende_titre": "Deux sorties possibles",
+  "lecture": [
+   "À gauche, x = (2 ; 1) : (0 ; 0), (2 ; 1), (4 ; 2)… ne reviennent jamais à (0 ; 0). L’annulateur est 0 et le groupe est infini, comme ℤ.",
+   "À droite, x = 4 h : les flèches orange font le tour 0, 4 h, 8 h, puis reviennent à 0.",
+   "Le plus petit entier positif qui donne 0 est n = 3 : le groupe a 3 éléments, comme ℤ/3ℤ.",
+   "La flèche du bas relie chaque cas à sa conséquence (cadre vert)."
+  ],
+  "a_voir": "Ou bien la suite ne revient jamais à 0 et le groupe est comme ℤ, ou bien elle revient après n pas et le groupe a n éléments."
+ },
+ {
+  "code": "57-170",
+  "a_dire": "L’annulateur généralise l’ordre : l’ordre est le plus petit entier positif de l’annulateur, et l’annulateur est l’ensemble de tous ses multiples.",
+  "legende_titre": "De l’ordre à l’annulateur",
+  "lecture": [
+   "En haut, les flèches orange ajoutent 4 h à chaque pas : 4 h, 8 h, puis 0 ; l’ordre est le nombre de pas, n = 3.",
+   "En bas, la droite verte porte l’annulateur : 0, 3, 6, 9 et 12.",
+   "Le disque bleu 3 est le plus petit entier positif : c’est l’ordre ; les autres sont ses multiples."
+  ],
+  "a_voir": "L’ordre est un nombre, l’annulateur est l’ensemble de ses multiples."
+ },
+ {
+  "code": "57-171",
+  "a_dire": "Un module de type fini est engendré par un nombre fini d’éléments, plusieurs si besoin.",
+  "legende_titre": "Engendré par une liste finie",
+  "lecture": [
+   "À gauche, deux flèches engendrent les couples : la bleue (1 ; 0) et la violette (0 ; 1).",
+   "Un couple (m ; n) est m fois la flèche bleue plus n fois la flèche violette, le point vert.",
+   "À droite, les polynômes sur les entiers : une liste finie n’engendre que les degrés jusqu’à un degré maximal (boîtes bleues) ; les degrés au-dessus (boîtes rouges) manquent."
+  ],
+  "a_voir": "Avec un nombre fini de générateurs, on atteint tout pour les couples, mais pas pour les polynômes."
+ },
+ {
+  "code": "57-172",
+  "a_dire": "Le type fini est la condition sous laquelle le livre travaille dans les chapitres 58 et 59.",
+  "legende_titre": "Une hypothèse qu’on retrouvera",
+  "lecture": [
+   "La grande boîte bleue est un module de type fini : les couples, avec leurs deux générateurs.",
+   "Les flèches orange partent de cette hypothèse vers les boîtes vertes des chapitres 58 et 59.",
+   "En bas, une phrase dit que l’on retrouve cette condition dans les énoncés."
+  ],
+  "a_voir": "Le type fini est le point de départ des deux chapitres suivants."
+ },
+ {
+  "code": "57-173",
+  "a_dire": "Hom(M, N) est l’ensemble de tous les homomorphismes de M dans N ; on peut en ajouter deux et obtenir un troisième.",
+  "legende_titre": "L’ensemble de toutes les règles",
+  "lecture": [
+   "Le cadre pointillé bleu est l’ensemble Hom(M, N), ici de ℤ² vers ℤ.",
+   "La boîte bleue est la règle η : (x ; y) ↦ x − 2y, la boîte violette est ζ : (x ; y) ↦ x.",
+   "La flèche orange mène à la somme η + ζ, en vert : (x ; y) ↦ 2x − 2y, qui est encore dans le cadre."
+  ],
+  "a_voir": "La somme de deux règles du cadre est encore une règle du cadre."
+ },
+ {
+  "code": "57-174",
+  "a_dire": "La somme η + ζ respecte l’action : appliquer η + ζ puis multiplier, ou multiplier puis appliquer η + ζ, donne le même résultat.",
+  "legende_titre": "La somme respecte le coefficient",
+  "lecture": [
+   "En haut, la flèche orange multiplie le couple (2 ; 1) par 3 et donne (6 ; 3).",
+   "À gauche et à droite, les flèches bleues appliquent η + ζ : (2 ; 1) donne 2, et (6 ; 3) donne 6.",
+   "En bas, la flèche orange multiplie 2 par 3 et donne 6 : les deux chemins arrivent au même nombre, en vert."
+  ],
+  "a_voir": "Les deux chemins du carré donnent le même résultat, 6."
+ },
+ {
+  "code": "57-175",
+  "a_dire": "La composée de deux homomorphismes de modules en est un : multiplier avant ou après donne le même résultat.",
+  "legende_titre": "Deux règles à la suite",
+  "lecture": [
+   "La ligne du haut applique la règle 1 (x − 2y) puis la règle 2 (tripler) à (1 ; 4) : −7, puis −21.",
+   "La ligne du bas fait la même chose à (3 ; 12) : −21, puis −63.",
+   "Les flèches orange verticales multiplient par 3 : de (1 ; 4) à (3 ; 12), de −7 à −21, de −21 à −63."
+  ],
+  "a_voir": "Multiplier par 3 au départ ou à la fin donne le même résultat, −63."
+ },
+ {
+  "code": "57-176",
+  "a_dire": "End_R M est l’anneau des endomorphismes de M qui respectent l’addition et l’action de R ; il se distingue de End M et de Hom(M, N).",
+  "legende_titre": "Un anneau, deux voisins",
+  "lecture": [
+   "La grande boîte grise est End M : les règles qui respectent seulement l’addition.",
+   "La boîte bleue dedans est End_R M : elles respectent en plus l’action de R ; doubler et le quart de tour y sont.",
+   "La boîte violette à droite est Hom(M, N) : le départ et l’arrivée y sont deux modules différents."
+  ],
+  "a_voir": "End_R M est contenu dans End M ; Hom(M, N) est un autre ensemble, avec départ et arrivée différents."
+ },
+ {
+  "code": "57-177",
+  "a_dire": "L’indice R dit quel anneau les endomorphismes doivent respecter : changer d’anneau change l’ensemble.",
+  "legende_titre": "Le même P, deux anneaux",
+  "lecture": [
+   "Le bleu P envoie (p ; q) sur (p ; 0) ; le texte vert dit qu’avec les entiers seuls P est admise.",
+   "En haut, on applique d’abord le quart de tour T (orange) puis P : on arrive à (−1 ; 0).",
+   "En bas, on applique d’abord P puis T : on arrive à (0 ; 0).",
+   "Le signe rouge ≠ montre que les deux résultats diffèrent : avec le quart de tour, P est refusée."
+  ],
+  "a_voir": "Les deux ordres donnent deux résultats différents : P ne commute pas avec le quart de tour."
+ },
+ {
+  "code": "57-178",
+  "a_dire": "End_R M est un sous-anneau de End M : seuls les endomorphismes qui commutent avec l’action y sont ; il peut être plus petit.",
+  "legende_titre": "Qui commute avec l’échange ?",
+  "lecture": [
+   "Chaque ligne part de (1 ; 0) et suit deux chemins : la flèche orange est l’échange, la flèche bleue est la règle X.",
+   "Pour X = doubler, les deux chemins arrivent au même couple (0 ; 2), en vert : doubler est dans End_R M.",
+   "Pour X = cisaillement, ils arrivent à (1 ; 1) et à (0 ; 1), en rouge : le cisaillement n’y est pas."
+  ],
+  "a_voir": "Doubler commute avec l’échange, le cisaillement non."
+ },
+ {
+  "code": "57-179",
+  "a_dire": "Un résultat démontré pour les modules vaut sans autre preuve pour les groupes abéliens, les espaces vectoriels et les transformations linéaires.",
+  "legende_titre": "Une preuve, trois situations",
+  "lecture": [
+   "La boîte du haut est le théorème sur les modules : le quotient par le noyau est isomorphe à l’image.",
+   "Les trois flèches vertes mènent à trois boîtes : les groupes abéliens (R = ℤ), les espaces vectoriels (R = corps), les transformations linéaires (R = polynômes).",
+   "Chaque boîte donne son exemple : x − 2y sur les couples d’entiers, la première coordonnée sur le plan, le quart de tour pour la lettre x."
+  ],
+  "a_voir": "Une seule preuve sert aux trois situations."
+ },
+ {
+  "code": "57-180",
+  "a_dire": "Le théorème fondamental pour un groupe abélien est le théorème du chapitre 48 : c’est le cas des modules avec R = ℤ.",
+  "legende_titre": "Le chapitre 48 est un cas particulier",
+  "lecture": [
+   "Le cadre pointillé violet est le théorème des modules sur un anneau R quelconque.",
+   "Le cadre bleu dedans est le cas R = ℤ : les groupes abéliens. C’est le théorème du chapitre 48.",
+   "Le cadre vert donne le cas des couples : η envoie (x ; y) sur x − 2y, le noyau est formé des multiples de (2 ; 1) et l’image est formée de tous les entiers."
+  ],
+  "a_voir": "Le théorème du chapitre 48 est le théorème des modules pris avec R = ℤ."
+ }
+]

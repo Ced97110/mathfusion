@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+eye = (10, 22); P = (56, 32)
+box(ax, 54, 6, 6, 44, 'sujet')
+text(ax, 57, 54, 'image', 'sujet', 's')
+disc(ax, eye[0], eye[1], 2, 'fixe'); text(ax, 10, 14, 'œil', 'encre', 's')
+arrow(ax, (eye[0] + 2, eye[1] + 0.5), (P[0] - 2, P[1] - 0.4), 'varie', lw=1.2)
+line(ax, [(P[0] + 2, P[1] + 0.4), (84, 34.2)], 'varie', dash=True)
+disc(ax, P[0], P[1], 2, 'limite'); text(ax, 69, 26, r'$P_\infty$', 'limite', 'm')
+text(ax, 30, 33, 'rayon limite', 'varie', 's')
+text(ax, 44, 3, 'un rayon, un seul point', 'encre', 's')
+save(fig, '80-283')

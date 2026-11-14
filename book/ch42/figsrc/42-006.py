@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+
+fig, ax = canvas(62)
+box(ax, 2, 6, 41, 50, 'sujet', dash=True)
+box(ax, 45, 6, 41, 50, 'autre', dash=True)
+text(ax, 22.5, 51, 'chapitres 1 à 41', 'sujet', 'm', weight='bold')
+text(ax, 22.5, 45, 'nombres et figures', 'sujet', 's')
+f = numberline(ax, 8, 36, 28, 0, 7, every=7, arrow_right=False)
+disc(ax, f(7), 28, 1.5, 'resultat')
+text(ax, 22.5, 12, 'que vaut un nombre ?', 'sujet', 's')
+text(ax, 65.5, 51, 'chapitres 42 à 80', 'autre', 'm', weight='bold')
+text(ax, 65.5, 45, 'structures', 'autre', 's')
+disc(ax, 55, 34, 4, 'autre', label='3'); disc(ax, 72, 34, 4, 'autre', label='4')
+disc(ax, 63.5, 18, 4, 'resultat', label='7')
+arrow(ax, (56, 29.5), (61, 22), 'varie'); arrow(ax, (71, 29.5), (66, 22), 'varie')
+text(ax, 80, 25, 'opération', 'varie', 's', ha='right')
+text(ax, 65.5, 10.5, 'comment se combinent ?', 'autre', 's')
+save(fig, '42-006')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 22, 78, 'prix total ÷ 3 planches', 'sujet', 's'); text(ax, 66, 78, 'longueur × prix du m', 'autre', 's')
+box(ax, 4, 60, 36, 12, 'sujet', label=r'$29{,}61\div3$', size='m'); box(ax, 48, 60, 36, 12, 'autre', label=r'$2{,}35\times4{,}20$', size='m')
+arrow(ax, (22, 59), (22, 47), 'resultat'); arrow(ax, (66, 59), (66, 47), 'resultat')
+box(ax, 4, 34, 36, 12, 'resultat', label='9,87 euros', size='m'); box(ax, 48, 34, 36, 12, 'resultat', label='9,87 euros', size='m')
+text(ax, 44, 40, '=', 'resultat', 'xl', weight='bold')
+brace(ax, 4, 84, 32, 'resultat', label="deux chemins : prix d'une planche", depth=2)
+text(ax, 44, 12, r'vérification : $3\times9{,}87=29{,}61$', 'fixe', 's')
+save(fig, '08-064')

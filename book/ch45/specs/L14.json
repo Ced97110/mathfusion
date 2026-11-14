@@ -1,0 +1,192 @@
+[
+ {
+  "code": "45-209",
+  "a_dire": "Le signe {e} désigne la collection qui contient le neutre seul ; ce n'est pas le neutre lui-même.",
+  "legende_titre": "Un élément et sa collection",
+  "lecture": [
+   "Le disque bleu à gauche est le neutre e : un élément, l'heure 0.",
+   "Le cadre vert en pointillés à droite est une collection, écrite avec des accolades.",
+   "Dans ce cadre, il y a le même disque e et rien d'autre.",
+   "Le signe rouge entre les deux dit qu'ils sont différents."
+  ],
+  "a_voir": "Voir que e est un élément et que {e} est la collection qui le contient seul."
+ },
+ {
+  "code": "45-210",
+  "a_dire": "La condition demande hk = kh pour chaque h de H et chaque k de K : on teste un couple, puis les six.",
+  "legende_titre": "Le même résultat dans les deux ordres",
+  "lecture": [
+   "En haut, la case bleue calcule 2 plus 3 et la case violette calcule 3 plus 2.",
+   "Les deux donnent 5, ce que montre le signe égal vert.",
+   "Le tableau vert donne la somme pour chacun des six couples : h en haut, k à gauche.",
+   "Chaque case vaut la même chose dans les deux ordres."
+  ],
+  "a_voir": "Voir qu'on compare les deux ordres pour chaque couple du tableau."
+ },
+ {
+  "code": "45-211",
+  "a_dire": "Si G = HK, si H et K n'ont que le neutre en commun et si hk = kh, alors G est isomorphe à H × K par hk devient (h, k).",
+  "legende_titre": "Trois conditions, une structure",
+  "lecture": [
+   "Les trois cases bleues à gauche sont les trois conditions.",
+   "La flèche orange est l'application qui envoie hk sur le couple (h, k).",
+   "La case verte est le résultat : G a la structure de H × K.",
+   "Le cadre rouge rappelle que sans la troisième condition, le résultat est faux, comme avec les six réordonnements de trois objets."
+  ],
+  "a_voir": "Voir que les trois conditions mènent à G isomorphe à H × K, et que la troisième ne peut pas manquer."
+ },
+ {
+  "code": "45-212",
+  "a_dire": "La preuve part de h1k1 = h2k2, multiplie par des inverses, et l'élément commun à H et K vaut e : l'écriture est unique.",
+  "legende_titre": "L'écriture hk n'a qu'une seule forme",
+  "lecture": [
+   "La case bleue du haut est le départ : un élément écrit de deux façons.",
+   "La flèche orange est l'étape qui porte le poids : multiplier par deux inverses.",
+   "La case grise a un côté dans H (trait bleu) et un côté dans K (trait violet).",
+   "Cet élément est commun aux deux, donc égal à e ; la case verte donne h1 = h2 et k1 = k2."
+  ],
+  "a_voir": "Voir l'étape orange qui fait passer de deux écritures à une seule."
+ },
+ {
+  "code": "45-213",
+  "a_dire": "La preuve échange k1 et h2 grâce à hk = kh, ce qui permet de regrouper les h puis les k.",
+  "legende_titre": "Échanger pour regrouper",
+  "lecture": [
+   "La case bleue du haut est le produit de deux éléments écrits.",
+   "Les deux cases grises sont les étapes : on remet les parenthèses, puis on échange k1 et h2.",
+   "La case orange à droite nomme l'étape clé : k1h2 = h2k1.",
+   "La case verte du bas regroupe les h ensemble et les k ensemble."
+  ],
+  "a_voir": "Voir que l'échange de k1 et h2 est l'étape qui permet le regroupement."
+ },
+ {
+  "code": "45-214",
+  "a_dire": "Dans un groupe abélien, la condition d'échange est toujours vraie : il reste deux conditions et HK s'écrit H + K.",
+  "legende_titre": "Un groupe abélien, une condition de moins",
+  "lecture": [
+   "En haut, la case bleue HK devient la case verte H + K avec la notation additive.",
+   "Les deux cases bleues du milieu sont les conditions qu'il reste à vérifier.",
+   "La case verte du bas est la condition d'échange : elle est vraie d'avance.",
+   "À droite, un exemple de l'horloge : 2 plus 3 égale 3 plus 2, soit 5."
+  ],
+  "a_voir": "Voir que l'une des trois conditions disparaît quand le groupe est abélien."
+ },
+ {
+  "code": "45-215",
+  "a_dire": "Avec plus de deux sous-groupes, chacun est comparé à ce que les autres produisent ensemble, et ils ne se rencontrent qu'en e.",
+  "legende_titre": "Un lot contre tous les autres",
+  "lecture": [
+   "La rangée du haut est l'horloge à trente heures ; les deux cases bleues sont les heures 0 et 15.",
+   "La rangée du milieu est la même horloge ; les cases violettes sont tous les nombres pairs, produits par les deux autres lots.",
+   "La case verte à gauche est la seule case coupée par les deux : 0, le neutre.",
+   "Le même contrôle se refait pour les deux autres lots."
+  ],
+  "a_voir": "Voir qu'un lot est comparé à tout ce que les autres produisent ensemble."
+ },
+ {
+  "code": "45-216",
+  "a_dire": "Trois sous-groupes peuvent se rencontrer deux à deux seulement en e, et pourtant ne pas être un produit : le groupe n'a que 4 éléments au lieu de 8.",
+  "legende_titre": "Deux à deux ne suffit pas",
+  "lecture": [
+   "Les trois traits partent du neutre : bleu vers (1, 0), orange vers (0, 1), violet vers (1, 1).",
+   "Deux à deux, ils ne se rencontrent qu'en e.",
+   "Un produit de trois groupes à deux éléments en aurait 8, mais ce groupe en a 4, en rouge.",
+   "La ligne du bas dit pourquoi : (1, 1) est la somme de (1, 0) et de (0, 1)."
+  ],
+  "a_voir": "Voir que le trait violet est déjà produit par les deux autres."
+ },
+ {
+  "code": "45-217",
+  "a_dire": "Les quatre nombres 1, i, -1, -i, les quatre heures et les quatre rotations du carré se correspondent un à un.",
+  "legende_titre": "Trois groupes, quatre cases",
+  "lecture": [
+   "Les cases bleues sont les heures 0, 1, 2, 3.",
+   "Les cases violettes dessous sont les nombres 1, i, -1, -i, reliés à chaque heure.",
+   "Les carrés orange sont les rotations ; le disque bleu montre un coin qui tourne d'un quart de tour à chaque colonne."
+  ],
+  "a_voir": "Voir que chaque heure a un nombre et une rotation qui lui correspondent."
+ },
+ {
+  "code": "45-218",
+  "a_dire": "Un cas où l'égalité est fausse réfute la règle ; un cas où elle est vraie ne prouve rien.",
+  "legende_titre": "Un cas peut réfuter, pas prouver",
+  "lecture": [
+   "La première rangée verte teste la règle fausse avec 3 et 2 : les deux côtés valent i.",
+   "Cette égalité vraie ne prouve rien, car la règle est fausse.",
+   "La deuxième rangée rouge teste 1 et 1 : un côté vaut moins i, l'autre moins 1.",
+   "Les deux côtés sont différents : un seul cas faux suffit."
+  ],
+  "a_voir": "Voir que le test réussi n'empêche pas la règle d'être fausse."
+ },
+ {
+  "code": "45-219",
+  "a_dire": "Trois groupes aux éléments différents ont la même structure : leurs éléments se correspondent et se combinent de la même façon.",
+  "legende_titre": "Même structure, autres noms",
+  "lecture": [
+   "Chaque colonne est un groupe : rotations en orange, heures en bleu, nombres en violet.",
+   "En haut : un quart de tour, l'heure 1, le nombre i se correspondent.",
+   "Les flèches orange font la même action deux fois.",
+   "En bas : un demi-tour, l'heure 2, le nombre -1 se correspondent aussi."
+  ],
+  "a_voir": "Voir que faire deux fois la même action donne des résultats qui se correspondent."
+ },
+ {
+  "code": "45-220",
+  "a_dire": "Dans l'horloge à quatre heures, chaque ligne de la table est une permutation des quatre heures, et ces quatre lignes se combinent comme les heures.",
+  "legende_titre": "Quatre lignes, quatre permutations",
+  "lecture": [
+   "Chaque dessin relie les quatre heures du haut aux quatre heures du bas.",
+   "La ligne de 0 en gris laisse chaque heure à sa place.",
+   "Les lignes de 1, 2 et 3 (orange, bleu, violet) déplacent toutes les heures.",
+   "Dans chaque dessin, chaque heure du bas est atteinte une seule fois."
+  ],
+  "a_voir": "Voir que chaque ligne de la table est un réordonnement des quatre heures."
+ },
+ {
+  "code": "45-221",
+  "a_dire": "Le signe ↦ se lit « est envoyé sur » ; une permutation s'écrit en listant l'image de chaque élément.",
+  "legende_titre": "Le signe qui envoie un élément sur un autre",
+  "lecture": [
+   "En haut, la case bleue est le départ et la case verte est l'image.",
+   "Le signe orange entre les deux se lit « est envoyé sur ».",
+   "En bas, les quatre lignes sont la ligne de 1 : une ligne par élément.",
+   "Chaque heure apparaît une fois à gauche et une fois à droite."
+  ],
+  "a_voir": "Voir qu'à gauche du signe se trouve le départ et à droite l'image."
+ },
+ {
+  "code": "45-222",
+  "a_dire": "L'écriture (0 1 2 3) donne la même permutation que quatre lignes : chaque élément va sur le suivant et le dernier revient au premier.",
+  "legende_titre": "Quatre lignes en une parenthèse",
+  "lecture": [
+   "À gauche, l'écriture complète demande quatre lignes.",
+   "À droite, les disques bleus sont les quatre éléments.",
+   "Les flèches orange envoient chaque élément sur le suivant.",
+   "La flèche verte ramène le dernier au premier."
+  ],
+  "a_voir": "Voir que la parenthèse suit les flèches autour du cercle."
+ },
+ {
+  "code": "45-223",
+  "a_dire": "Les écritures (0 1 2 3) et (0 3 2 1) recevront un nom au chapitre 46 : les cycles.",
+  "legende_titre": "Une écriture qui va recevoir un nom",
+  "lecture": [
+   "Les deux cases bleues sont les écritures déjà lues : ligne de 1 et ligne de 3.",
+   "Les flèches orange les mènent vers la case violette en pointillés.",
+   "La case violette annonce le nom : les cycles, défini au chapitre 46."
+  ],
+  "a_voir": "Voir que le nom vient plus tard et que l'écriture est déjà connue."
+ },
+ {
+  "code": "45-224",
+  "a_dire": "Le calcul de r1, r3, r2, r3 se fait en comptant les quarts de tour : 9 quarts de tour font deux tours et un quart.",
+  "legende_titre": "Compter les quarts de tour",
+  "lecture": [
+   "Les quatre arcs orange sont les rotations mises bout à bout, de 0 à 9.",
+   "Les traits gris en pointillés marquent 4 et 8 : un tour et deux tours.",
+   "La ligne du dessus écrit le comptage : 9 égale 2 fois 4 plus 1.",
+   "La case verte donne le résultat : il reste un quart de tour."
+  ],
+  "a_voir": "Voir que le résultat est ce qui reste après les tours complets."
+ }
+]

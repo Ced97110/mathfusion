@@ -1,0 +1,192 @@
+[
+ {
+  "code": "47-145",
+  "a_dire": "Pour trouver l'inverse d'une classe, tu prends l'inverse d'un représentant : la classe de 1 a pour inverse la classe de 11, qui est la ligne de 2.",
+  "legende_titre": "Trois actions pour inverser une ligne",
+  "lecture": [
+   "Le cadre bleu est la ligne de 1, avec les nombres 1, 4, 7, 10.",
+   "La flèche orange est l'inverse du représentant 1, qui est 11.",
+   "Le cadre violet est la ligne de 11, qui est la ligne de 2 : 2, 5, 8, 11.",
+   "Le cadre vert en bas est la somme des deux lignes : la ligne de 3, c'est-à-dire N."
+  ],
+  "a_voir": "Tu vois que les deux lignes, ajoutées, donnent N : elles sont inverses l'une de l'autre."
+ },
+ {
+  "code": "47-146",
+  "a_dire": "Le nombre d'éléments du quotient est l'ordre de G divisé par l'ordre de N, quels que soient les nombres.",
+  "legende_titre": "Trois groupes, une même division",
+  "lecture": [
+   "Chaque petit carré est un élément du groupe ; chaque couleur est une classe.",
+   "La première ligne montre 12 carrés en 3 classes de 4.",
+   "La deuxième ligne montre 8 carrés en 2 classes de 4.",
+   "La troisième ligne montre 6 carrés en 2 classes de 3."
+  ],
+  "a_voir": "Tu vois que le nombre de couleurs est toujours le nombre de carrés divisé par la taille d'une classe."
+ },
+ {
+  "code": "47-147",
+  "a_dire": "Un élément de G/N est une classe entière, donc un ensemble d'éléments de G, et non un seul élément de G.",
+  "legende_titre": "Une classe n'est pas une heure",
+  "lecture": [
+   "Les cercles sont les 12 heures de G ; les quatre cercles bleus sont 1, 4, 7 et 10.",
+   "Le contour bleu en pointillés réunit ces quatre heures en un seul objet.",
+   "Le cadre bleu à droite dit que cet objet est un seul élément de G/N.",
+   "Le cadre gris dit qu'un cercle seul est une heure de G."
+  ],
+  "a_voir": "Tu vois qu'un seul élément du quotient contient quatre heures."
+ },
+ {
+  "code": "47-148",
+  "a_dire": "Dans G/N, le N sous la barre est ce qu'on traite comme le neutre : ses éléments comptent comme 0, et il reste moins d'éléments.",
+  "legende_titre": "G sur N, comme une fraction",
+  "lecture": [
+   "En haut de la fraction, le G bleu est le groupe : 12 heures.",
+   "En bas, le N orange est ce qui compte comme 0 : 3, 6 et 9.",
+   "Les trois cadres du bas sont les classes qui restent.",
+   "L'accolade verte donne le résultat : 3 éléments."
+  ],
+  "a_voir": "Tu vois que ce qui est sous la barre disparaît dans le zéro, et qu'il reste 3 classes."
+ },
+ {
+  "code": "47-149",
+  "a_dire": "Le quotient des entiers par les multiples de n est ℤ/nℤ, avec n classes ; ici n = 5.",
+  "legende_titre": "Les entiers rangés par reste",
+  "lecture": [
+   "Chaque colonne est une classe : les nombres d'une même colonne ont le même reste modulo 5.",
+   "La colonne bleue contient les multiples de 5 : 0 et 5.",
+   "Les quatre autres colonnes sont les autres classes, en gris.",
+   "L'accolade verte compte les colonnes : 5 classes."
+  ],
+  "a_voir": "Tu vois 5 colonnes, donc 5 éléments dans le quotient."
+ },
+ {
+  "code": "47-150",
+  "a_dire": "L'addition modulo n marche parce que nℤ est normal : changer un nombre par un nombre de sa classe ne change pas la classe de la somme.",
+  "legende_titre": "Pourquoi on peut remplacer 14 par 2",
+  "lecture": [
+   "La ligne bleue du haut est le calcul 14 + 15 = 29.",
+   "La ligne violette du bas est le calcul 2 + 3 = 5.",
+   "Chaque flèche orange remplace un nombre par son représentant et dit ce qu'on enlève : 12, 12 et 24.",
+   "Le cadre vert dit que 29 et 5 diffèrent de 24, un multiple de 12."
+  ],
+  "a_voir": "Tu vois que 29 et 5 sont dans la même classe, comme les deux sommes le demandent."
+ },
+ {
+  "code": "47-151",
+  "a_dire": "En quotientant ℤ/6ℤ par les heures paires, tu gardes seulement pair ou impair, et la table d'addition est celle de ℤ/2ℤ.",
+  "legende_titre": "Pair et impair sur l'horloge à 6 heures",
+  "lecture": [
+   "La ligne bleue est N : les heures paires 0, 2, 4.",
+   "La ligne orange est 1 + N : les heures impaires 1, 3, 5.",
+   "Les flèches grises ajoutent 1 à chaque heure paire.",
+   "Dans le tableau, chaque case a la couleur du résultat : bleu pour pair, orange pour impair."
+  ],
+  "a_voir": "Tu vois que la table n'a que deux couleurs : c'est la table de ℤ/2ℤ."
+ },
+ {
+  "code": "47-152",
+  "a_dire": "Le sous-groupe des rotations est normal dans D4 : conjuguer une rotation par un retournement donne encore une rotation.",
+  "legende_titre": "Les rotations restent des rotations",
+  "lecture": [
+   "La rangée du haut est les 4 rotations : 1, r, r², r³.",
+   "La rangée du bas est ces mêmes rotations après conjugaison par s.",
+   "Les flèches orange envoient chaque rotation sur son résultat : r sur r³ et r³ sur r, les deux autres ne bougent pas.",
+   "Le cadre vert écrit la règle : s r s⁻¹ = r⁻¹."
+  ],
+  "a_voir": "Tu vois que toutes les flèches arrivent sur une rotation de la rangée du bas."
+ },
+ {
+  "code": "47-153",
+  "a_dire": "D4 a 8 éléments, les rotations en forment une classe R et les retournements une classe S : 8 ÷ 4 = 2 classes.",
+  "legende_titre": "Deux classes pour huit symétries",
+  "lecture": [
+   "Le cadre bleu est la classe R : les 4 rotations 1, r, r², r³.",
+   "Le cadre orange est la classe S : les 4 retournements s, rs, r²s, r³s.",
+   "Le texte vert donne le nombre de classes : 8 divisé par 4, soit 2."
+  ],
+  "a_voir": "Tu vois deux classes de quatre éléments, nommées R et S."
+ },
+ {
+  "code": "47-154",
+  "a_dire": "Une rotation suivie d'une rotation est une rotation : R · R = R.",
+  "legende_titre": "Rotation après rotation",
+  "lecture": [
+   "Les trois cadres du haut écrivent R · R = R, le résultat en vert.",
+   "Sur la droite graduée, chaque graduation est un quart de tour.",
+   "L'arc orange r va de 0 à 1 ; l'arc orange r² va de 1 à 3.",
+   "L'accolade verte montre l'arrivée : 3 quarts de tour, r³, encore une rotation."
+  ],
+  "a_voir": "Tu vois que deux rotations de suite arrivent sur une rotation."
+ },
+ {
+  "code": "47-155",
+  "a_dire": "Une rotation et un retournement, dans un ordre ou dans l'autre, donnent un retournement : R joue le rôle du neutre.",
+  "legende_titre": "R ne change pas S",
+  "lecture": [
+   "Sur la première ligne, le cadre bleu R, puis le cadre orange S, donnent S.",
+   "Sur la deuxième ligne, l'ordre est inversé et le résultat est le même : S.",
+   "Le cadre vert dit que R se comporte comme le neutre."
+  ],
+  "a_voir": "Tu vois que le résultat est toujours orange, dans les deux ordres."
+ },
+ {
+  "code": "47-156",
+  "a_dire": "Deux retournements de suite donnent une rotation : S · S = R.",
+  "legende_titre": "Retournement après retournement",
+  "lecture": [
+   "La ligne du haut écrit S · S = R : deux cadres orange, un résultat vert.",
+   "Le cadre de gauche montre le même retournement deux fois : on revient à 1.",
+   "Le cadre de droite montre deux retournements différents : on obtient r³.",
+   "Les flèches vertes envoient les deux exemples vers R."
+  ],
+  "a_voir": "Tu vois que, dans les deux exemples, le résultat est une rotation."
+ },
+ {
+  "code": "47-157",
+  "a_dire": "La grande table de D4 se range en quatre blocs de 16 cases, d'une seule couleur chacun, et la petite table du quotient donne ces couleurs.",
+  "legende_titre": "La grande table lue par blocs",
+  "lecture": [
+   "La grande grille a 8 lignes et 8 colonnes, rotations R d'abord, retournements S ensuite.",
+   "Une case est bleue si le produit est une rotation, orange si c'est un retournement.",
+   "Les traits noirs séparent les quatre blocs, chacun d'une seule couleur.",
+   "La petite table à droite a une case par bloc, de la même couleur."
+  ],
+  "a_voir": "Tu vois que chaque bloc de la grande table n'a qu'une couleur, celle de la case du quotient."
+ },
+ {
+  "code": "47-158",
+  "a_dire": "Le quotient de D4 par les rotations a deux éléments : sa table est celle de ℤ/2ℤ avec R pour 0 et S pour 1 ; il oublie quelle rotation.",
+  "legende_titre": "Deux éléments, la table de ℤ/2ℤ",
+  "lecture": [
+   "En haut à gauche, les cadres bleus sont R et S, les deux classes de D4 divisé par les rotations.",
+   "En haut à droite, les cadres violets sont 0 et 1 de ℤ/2ℤ.",
+   "Les flèches vertes relient R à 0 et S à 1.",
+   "Le cadre rouge montre le contre-exemple : le quotient par {1, r²} a 4 éléments, donc pas la table de ℤ/2ℤ."
+  ],
+  "a_voir": "Tu vois que deux classes donnent la table de ℤ/2ℤ, alors que quatre classes ne la donnent pas."
+ },
+ {
+  "code": "47-159",
+  "a_dire": "Le produit sur les classes est bien défini exactement quand chaque bloc de la table est d'une seule couleur.",
+  "legende_titre": "Un bloc, une seule couleur",
+  "lecture": [
+   "Chaque grille est la table des produits de D4 ; bleu veut dire rotation, orange veut dire retournement.",
+   "À gauche, avec les rotations, les quatre grands blocs ont chacun une seule couleur.",
+   "À droite, avec 1 et s, chaque petit bloc de 4 cases mélange le bleu et l'orange.",
+   "Le texte vert dit que le produit est bien défini à gauche ; le texte rouge, qu'il ne l'est pas à droite."
+  ],
+  "a_voir": "Tu vois la grille de gauche en quatre blocs unis, et celle de droite avec des blocs mêlés."
+ },
+ {
+  "code": "47-160",
+  "a_dire": "Dans D_n, les n rotations forment un sous-groupe normal d'indice 2 : deux classes, rotations et retournements.",
+  "legende_titre": "Rotations et retournements d'un polygone",
+  "lecture": [
+   "Le cadre bleu contient les rotations du triangle : 1, r, r².",
+   "La flèche orange à double pointe montre que conjuguer par s échange r et r².",
+   "Le cadre orange contient les retournements : s, rs, r²s.",
+   "Le texte vert donne l'indice : 6 symétries divisées par 3 rotations, soit 2 classes."
+  ],
+  "a_voir": "Tu vois que les rotations restent entre elles et que le tout se partage en deux classes."
+ }
+]

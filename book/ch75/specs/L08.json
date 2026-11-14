@@ -1,0 +1,181 @@
+[
+ {
+  "code": "75-113",
+  "a_dire": "Le produit 7 × 6 × 4 des restes donne 168 : chaque colonne retire 1, 2 puis 4 vecteurs sur 8.",
+  "legende_titre": "Trois colonnes, trois restes",
+  "lecture": [
+   "Chaque ligne montre les 8 vecteurs de l'espace. Les ronds gris sont retirés, les ronds bleus restent possibles.",
+   "Le nombre de ronds gris passe de 1 à 2 puis à 4.",
+   "Le cadre vert multiplie les trois nombres de choix."
+  ],
+  "a_voir": "Les ronds gris grandissent à chaque colonne, donc les choix restants diminuent."
+ },
+ {
+  "code": "75-114",
+  "a_dire": "Le déterminant envoie un tableau inversible sur un nombre non nul, atteint les deux valeurs 1 et 2, et le noyau est l'ensemble des tableaux de déterminant 1.",
+  "legende_titre": "Du tableau au nombre",
+  "lecture": [
+   "À gauche, deux tableaux à 2 lignes : le vert a 1 sur la diagonale, le bleu a 2 et 1.",
+   "Les flèches orange envoient chaque tableau sur son déterminant.",
+   "À droite, les deux nombres non nuls du corps sont atteints : 1 en vert, 2 en bleu."
+  ],
+  "a_voir": "Le tableau vert, de déterminant 1, forme le noyau ; les deux nombres reçoivent chacun un tableau."
+ },
+ {
+  "code": "75-115",
+  "a_dire": "On divise le nombre de tableaux inversibles par q − 1 pour obtenir ceux de déterminant 1.",
+  "legende_titre": "Trois divisions, une règle",
+  "lecture": [
+   "Chaque ligne donne un cas : q et n.",
+   "La case bleue est le nombre de tableaux inversibles.",
+   "La flèche orange porte la division par q − 1.",
+   "La case verte est le nombre de tableaux de déterminant 1."
+  ],
+  "a_voir": "La division est par 2, 4 puis 1, et donne 24, 120 puis 168."
+ },
+ {
+  "code": "75-116",
+  "a_dire": "48 tableaux inversibles, divisés en deux parts égales par le déterminant, donnent 24 tableaux de déterminant 1.",
+  "legende_titre": "48 tableaux en deux parts",
+  "lecture": [
+   "Les 48 cases sont les tableaux inversibles.",
+   "Les 24 cases vertes ont un déterminant 1.",
+   "Les 24 cases grises ont un déterminant 2."
+  ],
+  "a_voir": "La moitié des cases est verte : 48 divisé par 2 donne 24."
+ },
+ {
+  "code": "75-117",
+  "a_dire": "Pour q = 2, tout tableau inversible a un déterminant 1, donc SL et GL sont le même ensemble.",
+  "legende_titre": "Quand la condition ne retire rien",
+  "lecture": [
+   "Le bloc du haut montre 48 tableaux : la moitié verte (déterminant 1), la moitié grise (déterminant 2).",
+   "La ligne du bas montre 6 tableaux, tous verts, avec le déterminant 1.",
+   "Le cadre bleu écrit l'égalité des deux groupes."
+  ],
+  "a_voir": "Sur le corps à 2 éléments, aucune case grise : la condition ne retire rien."
+ },
+ {
+  "code": "75-118",
+  "a_dire": "Pour compter les transformations symplectiques, on compte les bases symplectiques : chaque base d'arrivée donne une seule transformation.",
+  "legende_titre": "Une base d'arrivée, une transformation",
+  "lecture": [
+   "En haut, la base de départ en bleu et la base d'arrivée en violet.",
+   "La flèche orange est la transformation qui envoie l'une sur l'autre.",
+   "Les 6 cases violettes sont les bases ; les 6 cases bleues sont les transformations, reliées une à une."
+  ],
+  "a_voir": "Chaque case violette est reliée à une seule case bleue, donc on compte les bases."
+ },
+ {
+  "code": "75-119",
+  "a_dire": "Dans l'espace à 4 coordonnées sur 2 éléments, il y a 16 vecteurs ; on retire le vecteur nul, il reste 15 choix pour e.",
+  "legende_titre": "Seize vecteurs, un exclu",
+  "lecture": [
+   "Les 16 cases sont les vecteurs de l'espace.",
+   "La case rouge est le vecteur nul, qui est exclu.",
+   "Les 15 cases vertes sont les choix possibles pour la première flèche."
+  ],
+  "a_voir": "Une seule case rouge sur 16 : il reste 15 choix."
+ },
+ {
+  "code": "75-120",
+  "a_dire": "Une fois e choisi, la condition B(e, f) = 1 est une équation linéaire qui fixe une coordonnée : il reste q puissance 2n − 1 choix pour f.",
+  "legende_titre": "Une condition, une coordonnée fixée",
+  "lecture": [
+   "La flèche bleue est e = (1, 0).",
+   "Les quatre points sont les flèches candidates (a, b).",
+   "Les points verts ont b = 1 : ils vérifient la condition.",
+   "Les points rouges ont b = 0 : ils ne la vérifient pas."
+  ],
+  "a_voir": "Deux points verts sur quatre : 2 choix pour f, soit 2 puissance 1."
+ },
+ {
+  "code": "75-121",
+  "a_dire": "Une transformation symplectique envoie une paire d'aire 1 sur une autre paire d'aire 1, jamais sur une paire d'aire 0.",
+  "legende_titre": "Quelle paire peut être atteinte",
+  "lecture": [
+   "À gauche, la paire de départ bleue d'aire 1.",
+   "La flèche verte mène à une autre paire d'aire 1 : c'est possible.",
+   "La flèche rouge barrée mène à la paire d'aire 0 : c'est impossible."
+  ],
+  "a_voir": "L'aire 1 se conserve : la paire d'aire 0 ne peut pas être atteinte."
+ },
+ {
+  "code": "75-122",
+  "a_dire": "Le stabilisateur de e et f agit sur le plan P1 orthogonal comme le groupe Sp de dimension 2n − 2.",
+  "legende_titre": "Ce qui bouge et ce qui reste",
+  "lecture": [
+   "Le cadre en pointillés est l'espace de dimension 4.",
+   "La case grise contient e et f : ils ne bougent pas.",
+   "La case bleue est le plan P1 orthogonal, où agit un groupe Sp de dimension 2."
+  ],
+  "a_voir": "Seule la case bleue est touchée, et elle est de même nature, en plus petit."
+ },
+ {
+  "code": "75-123",
+  "a_dire": "Le nombre de transformations est le nombre de paires hyperboliques (15 × 8 = 120) multiplié par le nombre de transformations qui fixent une paire (6) : 720.",
+  "legende_titre": "Quatre étapes de calcul",
+  "lecture": [
+   "La ligne du haut multiplie 15 choix de e par 8 choix de f : 120 paires.",
+   "La flèche orange reporte ces 120 paires sur la ligne du bas.",
+   "La ligne du bas multiplie 120 par 6 transformations qui fixent une paire.",
+   "La case verte finale est 720."
+  ],
+  "a_voir": "Deux multiplications à la suite : 15 × 8 puis 120 × 6."
+ },
+ {
+  "code": "75-124",
+  "a_dire": "La formule est un produit de n facteurs, chacun de la forme q puissance impaire fois une parenthèse de puissance paire ; seul q change.",
+  "legende_titre": "Même forme, q différent",
+  "lecture": [
+   "Les titres en haut donnent la forme des deux facteurs.",
+   "La ligne q = 2 donne 8 × 15 et 2 × 3, soit 720.",
+   "La ligne q = 3 donne 27 × 80 et 3 × 8, soit 51 840."
+  ],
+  "a_voir": "Les deux lignes ont le même motif : seuls les nombres changent avec q."
+ },
+ {
+  "code": "75-125",
+  "a_dire": "En dimension 2, la formule donne le même nombre que le comptage déjà fait : 6 pour q = 2 et 24 pour q = 3.",
+  "legende_titre": "Deux méthodes, un même nombre",
+  "lecture": [
+   "La case bleue est le calcul par la formule.",
+   "La case violette est le groupe déjà compté.",
+   "La case verte au centre est le nombre commun, atteint par les deux flèches."
+  ],
+  "a_voir": "Les deux flèches arrivent sur la même case : 6, puis 24."
+ },
+ {
+  "code": "75-126",
+  "a_dire": "Sur le corps à 2 éléments, les 6 bases du plan sont exactement les 6 paires hyperboliques, car le déterminant et B(e, f) valent tous deux 1.",
+  "legende_titre": "Six paires de flèches",
+  "lecture": [
+   "Chaque petit repère montre une paire : la flèche e est bleue, la flèche f est orange.",
+   "Il y a 6 paires, avec les 3 vecteurs non nuls pris dans tous les ordres.",
+   "Chaque paire est entourée de vert : pour les six, le déterminant et B(e, f) valent 1."
+  ],
+  "a_voir": "Les 6 repères sont à la fois les 6 bases et les 6 paires d'aire 1."
+ },
+ {
+  "code": "75-127",
+  "a_dire": "Le nombre 720 est le produit 120 × 6 ; il donne l'ordre du groupe, pas la façon dont les transformations s'organisent.",
+  "legende_titre": "720 comme produit",
+  "lecture": [
+   "La grille bleue a 120 cases : les 120 paires.",
+   "La case orange, agrandie à droite, montre les 6 transformations qui fixent une paire.",
+   "Le produit 120 × 6 donne 720 sans montrer chaque transformation."
+  ],
+  "a_voir": "Un seul nombre, 720, sans le détail des transformations."
+ },
+ {
+  "code": "75-128",
+  "a_dire": "Conserver la forme B laisse 28 fois moins de transformations que conserver le volume : 720 contre 20 160.",
+  "legende_titre": "Une condition plus forte",
+  "lecture": [
+   "La longue barre violette a 28 cases : 20 160 transformations qui gardent le volume.",
+   "La case bleue seule est 720 transformations qui gardent la forme B.",
+   "Elle a la taille d'une case de la barre du haut."
+  ],
+  "a_voir": "La case bleue tient 28 fois dans la barre : la condition forte laisse 28 fois moins."
+ }
+]

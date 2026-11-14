@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 2, 18, 26, 30, 'sujet')
+text(ax, 15, 43, r'$x^2-2$', 'sujet', 'm', weight='bold')
+disc(ax, 9, 29, 5, 'sujet', label=r'$\sqrt{2}$', size='s')
+disc(ax, 21, 29, 5, 'sujet', label=r'$-\sqrt{2}$', size='s')
+box(ax, 33, 18, 18, 30, 'autre')
+text(ax, 42, 43, r'$x^2-3$', 'autre', 'm', weight='bold')
+disc(ax, 42, 29, 5, 'autre', label=r'$\sqrt{3}$', size='s')
+text(ax, 30.5, 33, r'$\neq$', 'limite', 'm', weight='bold')
+box(ax, 56, 18, 30, 30, 'sujet')
+text(ax, 71, 43, r'$x^3-2$', 'sujet', 'm', weight='bold')
+for x, l in zip([63, 71, 79], [r'$r$', r'$jr$', r'$j^2r$']):
+    disc(ax, x, 29, 3.9, 'sujet', label=l, size='s')
+text(ax, 15, 12, 'conjugués', 'resultat', 's')
+text(ax, 71, 12, 'conjugués', 'resultat', 's')
+text(ax, 42, 12, 'pas conjugué', 'limite', 's')
+save(fig, '63-064')

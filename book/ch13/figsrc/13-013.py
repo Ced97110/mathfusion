@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 8, 74, 20, -4, 4, labels=False)
+text(ax, f(3), 15.4, '3', 'fixe', 's'); text(ax, f(-3), 15.4, '−3', 'fixe', 's')
+line(ax, [(f(0), 13), (f(0), 34)], 'varie', dash=True, lw=1.2)
+text(ax, f(0), 8, 'trait du pli par 0', 'varie', 'm')
+disc(ax, f(3), 20, 2.4, 'sujet', label=r'$P$', size='s'); disc(ax, f(-3), 20, 2.4, 'varie', label=r'$Q$', size='s')
+arrow(ax, (f(3), 24), (f(-3), 24), 'varie', curve=0.4)
+text(ax, f(0), 46, 'P tombe sur Q', 'varie', 'm')
+save(fig, '13-013')

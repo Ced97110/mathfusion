@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(70)
+text(ax,22,64,r'$p=5$ premier','sujet','m'); text(ax,66,64,r'$p=4$ non premier','limite','m')
+line(ax,[(44,6),(44,60)],'fixe',dash=True)
+box(ax,4,42,36,12,'sujet',label=r'$2^4=16$',size='m')
+arrow(ax,(22,41),(22,33),'varie')
+box(ax,4,18,36,14,'resultat',label='\n'.join([r'$3\times5+1$','reste 1']),size='m')
+box(ax,48,42,36,12,'sujet',label=r'$3^3=27$',size='m')
+arrow(ax,(66,41),(66,33),'varie')
+box(ax,48,18,36,14,'limite',label='\n'.join([r'$6\times4+3$','reste 3']),size='m')
+text(ax,22,9,r'$a^{p-1}\equiv1$','resultat','m'); text(ax,66,9,r'$a^{3}\not\equiv1$','limite','m')
+save(fig,'52-094')

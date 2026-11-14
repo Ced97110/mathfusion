@@ -1,0 +1,194 @@
+[
+ {
+  "code": "52-225",
+  "a_dire": "Si l'anneau est commutatif, l'anneau opposé est le même anneau et un anti-isomorphisme est un isomorphisme ordinaire.",
+  "legende_titre": "Quand l'ordre du produit ne compte pas",
+  "lecture": [
+   "La colonne bleue montre les entiers : 3 fois 4 et 4 fois 3 donnent tous deux 12.",
+   "La colonne violette montre les matrices A et B écrites en haut : AB et BA ont des lignes différentes.",
+   "Le cadre vert dit que pour les entiers l'anneau opposé est le même anneau ; le cadre rouge dit que pour les matrices il est différent.",
+   "Les deux lignes vertes du bas concluent : si l'anneau est commutatif, un anti-isomorphisme est un isomorphisme."
+  ],
+  "a_voir": "Avec les entiers l'ordre ne change rien, avec les matrices il change le produit."
+ },
+ {
+  "code": "52-296",
+  "a_dire": "L'identité est un anti-isomorphisme de R sur R^(0) : l'ordre inversé vient de l'anneau d'arrivée, pas de l'application.",
+  "legende_titre": "L'identité qui inverse l'ordre sans rien changer",
+  "lecture": [
+   "Le cadre bleu est l'anneau de départ R, où le produit est A puis B.",
+   "Le cadre violet est l'anneau d'arrivée R⁽⁰⁾ : mêmes matrices, produit à l'envers, lu B puis A.",
+   "La flèche orange est l'identité : AB reste AB.",
+   "Le cadre vert dit que l'image de AB est AB, égale à B fois A dans R⁽⁰⁾."
+  ],
+  "a_voir": "L'ordre inversé vient de l'anneau d'arrivée."
+ },
+ {
+  "code": "52-226",
+  "a_dire": "Pour calculer le reste de 7^100 par 12, on évite le nombre à 85 chiffres en utilisant le PGCD, 𝜑(12) et le regroupement de l'exposant.",
+  "legende_titre": "Un reste sans écrire le grand nombre",
+  "lecture": [
+   "Le cadre bleu du haut est la question : le reste de 7^100 par 12.",
+   "Le cadre rouge en pointillés est le chemin refusé : écrire 85 chiffres.",
+   "Les cadres bleus de droite sont les étapes : PGCD égal à 1, 𝜑(12) égal à 4, 100 égal 4 fois 25.",
+   "Le cadre vert est le reste obtenu : 1."
+  ],
+  "a_voir": "Quatre petites étapes remplacent un nombre de 85 chiffres."
+ },
+ {
+  "code": "52-227",
+  "a_dire": "Comme le PGCD de 7 et 12 vaut 1, 7 est inversible et le théorème d'Euler donne 7^4 ≡ 1 modulo 12 ; pour 8 cela échoue.",
+  "legende_titre": "D'où vient le reste 1 pour 7",
+  "lecture": [
+   "La colonne de gauche part du PGCD de 7 et 12, qui vaut 1.",
+   "Le cadre orange est l'étape qui porte le poids : 7 est inversible.",
+   "Le cadre vert donne 7^4 égal 2 401, soit 200 fois 12 plus 1.",
+   "La colonne rouge montre 8 : PGCD égal à 4, pas inversible, reste 4."
+  ],
+  "a_voir": "Sans inverse, le reste 1 n'arrive pas."
+ },
+ {
+  "code": "52-228",
+  "a_dire": "7^100 s'écrit comme 25 facteurs 7^4, chacun congru à 1, donc le produit est congru à 1.",
+  "legende_titre": "Vingt-cinq facteurs qui valent 1",
+  "lecture": [
+   "La grille bleue compte les 25 facteurs 7^4.",
+   "La flèche orange remplace chaque facteur par son reste, car 7^4 ≡ 1.",
+   "La grille verte compte les 25 facteurs égaux à 1.",
+   "La ligne du bas écrit le calcul en entier."
+  ],
+  "a_voir": "Vingt-cinq facteurs égaux à 1 donnent 1."
+ },
+ {
+  "code": "52-229",
+  "a_dire": "Modulo 12, 5 a pour inverse 5 car 25 laisse le reste 1 ; 8 n'a pas d'inverse, car son produit avec 3 laisse le reste 0.",
+  "legende_titre": "Deux nombres, deux restes",
+  "lecture": [
+   "La colonne bleue calcule 5 fois 5 égal 25, puis 25 égal 2 fois 12 plus 1.",
+   "Le cadre vert dit que le reste est 1 : 5 a un inverse.",
+   "La colonne violette calcule 8 fois 3 égal 24, puis 24 égal 2 fois 12 plus 0.",
+   "Le cadre rouge dit que le reste est 0, pas 1."
+  ],
+  "a_voir": "Le reste 1 est atteint pour 5, pas pour 8."
+ },
+ {
+  "code": "52-230",
+  "a_dire": "8 n'a pas d'inverse modulo 12 parce qu'il partage le facteur 4 avec 12 : 3 fois 8 est un multiple de 12.",
+  "legende_titre": "Le facteur commun qui bloque",
+  "lecture": [
+   "La rangée de 24 cases est la même longueur pour deux découpages.",
+   "Les accolades bleues du haut découpent en 3 groupes de 8.",
+   "Les accolades orange du bas découpent en 2 groupes de 12.",
+   "Les deux découpages tombent juste au bout : le reste est 0, jamais 1."
+  ],
+  "a_voir": "3 groupes de 8 remplissent exactement 2 groupes de 12."
+ },
+ {
+  "code": "52-231",
+  "a_dire": "Si 8 avait un inverse u, en multipliant 8 fois 3 égal 0 par u on trouverait 3 égal 0, ce qui est faux modulo 12.",
+  "legende_titre": "Une preuve qui mène à une contradiction",
+  "lecture": [
+   "Le cadre bleu du haut est le point de départ : 8 fois 3 vaut 0.",
+   "Le cadre orange est la supposition : un nombre u vérifie u fois 8 égal 1.",
+   "Les deux cadres bleus du milieu multiplient par u chaque côté : on obtient 3 d'un côté, 0 de l'autre.",
+   "Le cadre rouge est le résultat faux : 3 égal 0."
+  ],
+  "a_voir": "La supposition mène à 3 égal 0, donc elle est fausse."
+ },
+ {
+  "code": "52-232",
+  "a_dire": "Les nombres impairs de reste 2 par 3 sont 5, 11 et tous les 5 + 6q.",
+  "legende_titre": "Deux conditions sur la droite des nombres",
+  "lecture": [
+   "La rangée bleue marque les nombres de reste 1 par 2.",
+   "La rangée orange marque les nombres de reste 2 par 3.",
+   "Les disques verts avec pointillés sont dans les deux rangées : 5 et 11.",
+   "La flèche orange montre l'écart de 6 entre deux solutions."
+  ],
+  "a_voir": "Les solutions se répètent tous les 6."
+ },
+ {
+  "code": "52-233",
+  "a_dire": "Dans la grille, la ligne du reste par 2 et la colonne du reste par 3 se croisent sur le reste par 6 : ici 5.",
+  "legende_titre": "Lire un reste à l'intersection",
+  "lecture": [
+   "Les chiffres bleus à gauche sont les restes par 2, un par ligne.",
+   "Les chiffres orange en haut sont les restes par 3, un par colonne.",
+   "La ligne 1 est bleue et la colonne 2 est orange.",
+   "La case verte où elles se croisent contient 5."
+  ],
+  "a_voir": "Une ligne et une colonne désignent une seule case."
+ },
+ {
+  "code": "52-234",
+  "a_dire": "On écrit les nombres de reste 2 par 3 et on s'arrête au premier impair : 5, en au plus deux essais.",
+  "legende_titre": "Une liste qui s'arrête vite",
+  "lecture": [
+   "Chaque cadre est le nombre précédent plus 3, en commençant par 2.",
+   "Le cadre rouge, 2, est pair : il ne convient pas.",
+   "Le cadre vert, 5, est impair : la recherche s'arrête.",
+   "Les cadres gris en pointillés ne servent plus."
+  ],
+  "a_voir": "Ajouter 3 change la parité, donc on s'arrête au deuxième nombre."
+ },
+ {
+  "code": "52-235",
+  "a_dire": "Un nombre peut être trop grand pour sa case : 1000 ne tient pas dans un compteur à 3 chiffres.",
+  "legende_titre": "Un compteur à trois chiffres",
+  "lecture": [
+   "Le cadre en pointillés est la case de 3 chiffres.",
+   "La rangée du haut montre 999, le plus grand nombre de la case.",
+   "La flèche orange ajoute 1.",
+   "La rangée du bas montre 1000 : le chiffre rouge 1 reste hors de la case."
+  ],
+  "a_voir": "Le quatrième chiffre n'a pas de place."
+ },
+ {
+  "code": "52-236",
+  "a_dire": "Un bit est un chiffre qui ne prend que deux valeurs, 0 ou 1.",
+  "legende_titre": "Un chiffre à deux valeurs",
+  "lecture": [
+   "Les trois cadres bleus du haut forment 101, avec les poids 4, 2 et 1.",
+   "La ligne verte calcule 4 + 0 + 1, soit 5.",
+   "Le cadre violet montre un chiffre décimal : dix valeurs, de 0 à 9.",
+   "Le cadre bleu du bas montre un bit : deux valeurs."
+  ],
+  "a_voir": "Un bit n'a que deux valeurs possibles."
+ },
+ {
+  "code": "52-237",
+  "a_dire": "On retire le bit de signe, puis le plus grand entier est 2 puissance le nombre de bits restants, moins 1.",
+  "legende_titre": "Le plus grand entier pour chaque taille",
+  "lecture": [
+   "La case grise de chaque rangée est le bit de signe.",
+   "Les cases bleues sont les bits du nombre : 3, 7, puis 63.",
+   "Les résultats verts donnent 2^3 − 1 égal 7, 2^7 − 1 égal 127 et 2^63 − 1.",
+   "La ligne du bas écrit 2^63 − 1 en chiffres."
+  ],
+  "a_voir": "Le schéma est le même pour 4, 8 et 64 bits."
+ },
+ {
+  "code": "52-238",
+  "a_dire": "Un entier de 200 chiffres demande au moins 11 cases de 19 chiffres.",
+  "legende_titre": "Des nombres qui dépassent les cases",
+  "lecture": [
+   "Chaque cadre bleu est une case de 19 chiffres.",
+   "L'accolade rouge montre que 10 cases font 190 chiffres : trop peu.",
+   "Le cadre orange est le onzième : il reçoit les 10 chiffres restants.",
+   "La ligne verte conclut : au moins 11 cases."
+  ],
+  "a_voir": "Dix cases ne suffisent pas pour 200 chiffres."
+ },
+ {
+  "code": "52-239",
+  "a_dire": "Le théorème des restes chinois remplace un grand produit par plusieurs petits produits indépendants, un par module.",
+  "legende_titre": "Trois petits calculs au lieu d'un",
+  "lecture": [
+   "Le cadre bleu du haut est le produit 7 fois 8.",
+   "Les trois cadres violets sont les produits par 3, par 4 et par 5.",
+   "L'accolade dit que ces calculs se font en même temps.",
+   "Le cadre vert garde les restes 2, 0 et 1."
+  ],
+  "a_voir": "Chaque module donne son petit calcul."
+ }
+]

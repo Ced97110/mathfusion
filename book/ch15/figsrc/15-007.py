@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, 'produit : 3 × (10 + 2) = 36', 'sujet', 'm')
+arrow(ax, (44, 51), (44, 43), 'varie'); text(ax, 48, 47, 'développer', 'varie', 's', ha='left')
+box(ax, 14, 18, 50, 14, 'sujet', label='30', size='l'); box(ax, 64, 18, 10, 14, 'varie', label='6', size='l')
+for y in (22.67, 27.33): line(ax, [(14, y), (74, y)], 'fixe', lw=0.4)
+brace(ax, 14, 64, 33, 'sujet', '10', down=False); brace(ax, 64, 74, 33, 'varie', '2', down=False)
+text(ax, 9, 25, '3', 'fixe', 'l')
+text(ax, 44, 8, 'somme : 30 + 6 = 36', 'resultat', 'm')
+save(fig, '15-007')

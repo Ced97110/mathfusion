@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+box(ax,2,2,84,62,'sujet'); text(ax,44,59,'constructibles','sujet','l')
+box(ax,6,6,50,44,'autre'); text(ax,31,45,'ℚ : les fractions','autre','m')
+for x,n in [(14,'1'),(28,'2'),(42,'3')]: disc(ax,x,32,4.5,'autre',label=n)
+arrow(ax,(18.8,32),(23.2,32),'varie'); arrow(ax,(32.8,32),(37.2,32),'varie')
+text(ax,21,37.5,'+1','varie','s'); text(ax,35,37.5,'+1','varie','s')
+disc(ax,28,12,4.5,'autre',label='2/3',size='s')
+arrow(ax,(28,27.5),(28,16.7),'varie'); arrow(ax,(41,28),(31.5,15.8),'varie')
+disc(ax,72,32,5,'resultat',label=r'$\sqrt{3}$')
+arrow(ax,(46.8,32),(66.8,32),'varie'); text(ax,61,37,'racine','varie','s')
+text(ax,72,16,'constructible aussi','resultat','s')
+save(fig,'61-215')

@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 23, 54, 42, 16, 'sujet', label='(1) finie :\n4 briques', size='m')
+box(ax, 2, 6, 40, 16, 'sujet', label='(3) tour de\n2 étages algébriques', size='s')
+box(ax, 46, 6, 40, 16, 'sujet', label='(2) engendrée par\n$\\sqrt{2}$ et $\\sqrt{3}$ algébriques', size='s')
+arrow(ax, (60, 53), (72, 23), 'resultat', lw=1.3)
+arrow(ax, (45, 14), (43, 14), 'resultat', lw=1.3) if False else arrow(ax, (46, 10), (42.5, 10), 'resultat', lw=1.3)
+arrow(ax, (14, 23), (28, 53), 'resultat', lw=1.3)
+text(ax, 44, 38, 'même phrase', 'resultat', 'm')
+save(fig, '61-120')

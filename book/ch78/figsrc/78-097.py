@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+o = (12, 12); u = 5.0
+p = (o[0] + 3*u, o[1] + 4*u); c = (o[0] + 3*u, o[1])
+poly(ax, [o, c, p], 'fixe', fill=True)
+line(ax, [o, p], 'sujet', lw=2.0)
+line(ax, [c, p], 'fixe'); line(ax, [o, c], 'fixe')
+line(ax, [(c[0]-2.5, c[1]), (c[0]-2.5, c[1]+2.5), (c[0], c[1]+2.5)], 'fixe')
+disc(ax, o[0], o[1], 1.2, 'encre'); disc(ax, p[0], p[1], 1.2, 'sujet')
+text(ax, o[0] - 2, o[1] - 2, 'origine', 'fixe', 's', ha='right')
+text(ax, (o[0]+c[0])/2, o[1] - 3, '3', 'fixe', 'm')
+text(ax, c[0] + 3, (c[1]+p[1])/2, '4', 'fixe', 'm')
+text(ax, p[0] + 2, p[1] + 3, r'$x$', 'sujet', 'l')
+text(ax, o[0] + 3, (o[1]+p[1])/2 + 2, r'$|x|=5$', 'sujet', 'm', ha='right')
+box(ax, 44, 38, 40, 10, 'sujet', label=r'$|x|=\sqrt{Q(x)}$', size='l')
+box(ax, 44, 22, 40, 10, 'resultat', label=r'$\sqrt{9+16}=5$', size='l')
+arrow(ax, (64, 38), (64, 32), 'varie')
+save(fig, '78-097')

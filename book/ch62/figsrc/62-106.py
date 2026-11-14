@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 44, 76, 'séparable : chaque facteur irréductible\na toutes ses racines distinctes', 'encre', 's')
+line(ax, [(44, 2), (44, 66)], 'fixe', dash=True)
+d = 10
+text(ax, 22, 62 + d - 4, r'$f=(x-1)^2$', 'sujet', 'm')
+for x in (4, 23): box(ax, x, 44 + d - 6, 17, 10, 'sujet', label=r'$x-1$')
+arrow(ax, (22, 47), (22, 38), 'sujet')
+disc(ax, 22, 35, 1.8, 'sujet'); text(ax, 22, 29, 'une racine', 'sujet', 's')
+box(ax, 4, 6, 36, 11, 'resultat', label='séparable')
+text(ax, 66, 62 + d - 4, r'$f=x^2+t$', 'autre', 'm')
+box(ax, 48, 44 + d - 6, 36, 10, 'autre', label='irréductible')
+arrow(ax, (66, 47), (66, 38), 'autre')
+disc(ax, 65.2, 35, 1.8, 'autre'); disc(ax, 66.8, 35, 1.8, 'autre'); text(ax, 66, 29, 'racine double', 'autre', 's')
+box(ax, 48, 6, 36, 11, 'limite', label='non séparable')
+save(fig, '62-106')

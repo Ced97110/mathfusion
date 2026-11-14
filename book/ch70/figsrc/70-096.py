@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 32, 34, 14, 'sujet', label=r'$\exists y,\ y^2=x$')
+text(ax, 19, 26, r'paramètre $x$', 'fixe', 's')
+text(ax, 19, 21, r'inconnue $y$', 'fixe', 's')
+arrow(ax, (37, 39), (52, 39), 'varie', lw=1.2)
+text(ax, 44.5, 44, r'sans $y$', 'varie', 's')
+box(ax, 54, 50, 32, 12, 'resultat', label=r'$x>0$')
+text(ax, 70, 44, 'ou', 'encre', 'm')
+box(ax, 54, 26, 32, 12, 'resultat', label=r'$x=0$')
+text(ax, 70, 20, 'liste finie de systèmes', 'resultat', 's')
+text(ax, 70, 8, r'inégalité $H>0$, équation $F=0$', 'fixe', 's')
+save(fig, '70-096')

@@ -1,0 +1,185 @@
+[
+ {
+  "code": "51-272",
+  "a_dire": "L'anneau nul remplit la condition sur les produits, mais pas 1 ≠ 0, donc il n'est ni intègre ni un corps.",
+  "legende_titre": "Une condition vraie, une condition fausse",
+  "lecture": [
+   "Le cadre bleu est l'anneau nul : il n'a qu'un élément, 0.",
+   "Le cadre vert dit qu'aucun produit de deux éléments non nuls ne donne 0 : c'est vrai, faute d'élément non nul.",
+   "Le cadre rouge dit que 1 ≠ 0 est exigé, mais qu'ici 1 = 0.",
+   "La flèche rouge mène à la conclusion : ni intègre, ni corps."
+  ],
+  "a_voir": "Il faut voir que la condition 1 ≠ 0 est celle qui exclut l'anneau nul."
+ },
+ {
+  "code": "51-273",
+  "a_dire": "On exige 1 ≠ 0 parce que dans l'anneau nul, 0 est son propre inverse, cas qu'on veut exclure.",
+  "legende_titre": "D'où vient l'exigence 1 ≠ 0",
+  "lecture": [
+   "Les cadres du haut montrent 0 × 0 = 0 = 1 : le 0 est aussi le 1.",
+   "Le cadre vert en tire que le 0 est son propre inverse.",
+   "Le cadre rouge dit que ce cas est absurde et qu'on l'exclut."
+  ],
+  "a_voir": "Il faut voir que 0 × 0 = 1 fait de 0 son propre inverse."
+ },
+ {
+  "code": "51-274",
+  "a_dire": "Sans la condition 1 ≠ 0, l'ensemble {0} serait un corps ; la condition est donc nécessaire.",
+  "legende_titre": "Avec et sans la condition",
+  "lecture": [
+   "En haut, sans la condition, le cadre bleu {0} mène au cadre rouge : il serait un corps.",
+   "En bas, avec la condition, le même cadre bleu {0} mène au cadre vert : il est refusé."
+  ],
+  "a_voir": "Il faut voir que retirer la condition fait entrer {0} dans les corps."
+ },
+ {
+  "code": "51-275",
+  "a_dire": "Rendre nuls les multiples de 6 dans les entiers donne le cadran à 6 heures, modèle des anneaux quotients.",
+  "legende_titre": "Des entiers au cadran à 6 heures",
+  "lecture": [
+   "La droite grise est celle des entiers, de 0 à 18.",
+   "Les points orange sont les multiples de 6 : 0, 6, 12 et 18.",
+   "Les flèches orange les envoient sur le 0 du cadran bleu à 6 heures.",
+   "Le cadran a les nombres de 0 à 5."
+  ],
+  "a_voir": "Il faut voir que tous les multiples de 6 deviennent le 0 du cadran."
+ },
+ {
+  "code": "51-276",
+  "a_dire": "Un anneau intègre se complète en un corps de fractions, comme les entiers donnent 1/2.",
+  "legende_titre": "Des entiers aux fractions",
+  "lecture": [
+   "Les points bleus sont les entiers 0, 1 et 2 sur la droite.",
+   "Le point vert est la fraction un demi, entre 0 et 1.",
+   "Le texte rouge dit que 1 ÷ 2 n'est pas dans les entiers.",
+   "Le cadre vert dit que cela vaut pour tout anneau intègre."
+  ],
+  "a_voir": "Il faut voir que la fraction un demi sort des entiers et que la construction est générale."
+ },
+ {
+  "code": "51-277",
+  "a_dire": "Les coefficients d'un polynôme peuvent être pris dans un anneau R quelconque, et les polynômes forment un anneau R[x].",
+  "legende_titre": "Des coefficients dans un anneau",
+  "lecture": [
+   "Le cadre bleu est le polynôme 2x + 3.",
+   "Les cadres orange sont ses coefficients, 2 et 3.",
+   "Le cadre violet est un anneau R quelconque dans lequel on les prend.",
+   "Le cadre vert dit que l'ensemble des polynômes est l'anneau R[x]."
+  ],
+  "a_voir": "Il faut voir que les coefficients viennent d'un anneau R et que l'ensemble forme R[x]."
+ },
+ {
+  "code": "51-278",
+  "a_dire": "Dans les entiers, 12 s'écrit d'une seule façon comme produit de premiers ; on demande quels anneaux intègres l'ont.",
+  "legende_titre": "Une seule liste de facteurs",
+  "lecture": [
+   "Le cadre bleu est le nombre 12.",
+   "Les trois cadres verts sont ses facteurs premiers : 2, 2 et 3.",
+   "Le cadre vert du bas dit que les entiers ont cette propriété.",
+   "Le cadre violet en pointillés dit que, pour les entiers de Gauss, la question reste à voir."
+  ],
+  "a_voir": "Il faut voir que 12 a une seule décomposition en premiers et que la question se pose pour d'autres anneaux."
+ },
+ {
+  "code": "51-279",
+  "a_dire": "Les coefficients d'un système peuvent venir d'un anneau quelconque, pas seulement des réels.",
+  "legende_titre": "D'où viennent les coefficients",
+  "lecture": [
+   "Les cadres bleus 2 et 3 sont les coefficients de l'équation.",
+   "Les trois cadres orange montrent d'où ils peuvent venir : les réels, les entiers, un cadran."
+  ],
+  "a_voir": "Il faut voir que les coefficients ne sont pas obligés d'être des réels."
+ },
+ {
+  "code": "51-280",
+  "a_dire": "Un corps fini a pour taille une puissance de sa caractéristique : 7 = 7^1 et 4 = 2^2.",
+  "legende_titre": "Deux corps finis, deux tailles",
+  "lecture": [
+   "À gauche, 7 points bleus sont les éléments du cadran à 7 heures, de caractéristique 7.",
+   "À droite, 4 points violets sont les éléments du corps de quatre tableaux, de caractéristique 2.",
+   "Sous chaque groupe, on lit 7 = 7^1 et 4 = 2^2.",
+   "Le cadre vert dit la règle."
+  ],
+  "a_voir": "Il faut voir que chaque taille est une puissance de la caractéristique."
+ },
+ {
+  "code": "51-281",
+  "a_dire": "Pour coder, il faut savoir quels nombres ont un inverse : 3 en a un sur 7, 2 n'en a pas sur 6.",
+  "legende_titre": "Qui a un inverse ?",
+  "lecture": [
+   "À gauche, les cases donnent 3 × k sur le cadran à 7 heures, pour k de 1 à 6.",
+   "La case verte est le 1 : 3 × 5 donne 1, donc 5 est l'inverse de 3.",
+   "À droite, les cases donnent 2 × k sur le cadran à 6 heures, pour k de 1 à 5.",
+   "Aucune case n'est un 1 : 2 n'a pas d'inverse."
+  ],
+  "a_voir": "Il faut voir que le 1 apparaît dans la première rangée et pas dans la seconde."
+ },
+ {
+  "code": "51-282",
+  "a_dire": "Les nombres réels sont dans le centre des quaternions : ils commutent avec tout quaternion.",
+  "legende_titre": "Les réels commutent avec les quaternions",
+  "lecture": [
+   "Le grand disque bleu est l'ensemble ℍ des quaternions.",
+   "Le petit disque vert est l'ensemble ℝ des réels, qui est dans ℍ.",
+   "Les deux cadres bleus donnent 3 × (2 + i) et (2 + i) × 3 : tous deux valent 6 + 3i.",
+   "Le signe égal vert relie ces deux résultats."
+  ],
+  "a_voir": "Il faut voir que changer l'ordre du produit avec 3 ne change pas le résultat."
+ },
+ {
+  "code": "51-283",
+  "a_dire": "Les tailles 1, 2 et 4 existent pour ℝ, ℂ et ℍ ; la taille 3 n'existe pas.",
+  "legende_titre": "Combien de réels décrivent un élément",
+  "lecture": [
+   "Chaque pile de cadres bleus montre combien de nombres réels décrivent un élément.",
+   "ℝ en a 1, ℂ en a 2, ℍ en a 4.",
+   "La pile en pointillés rouges est la taille 3 : aucun ensemble ne la remplit."
+  ],
+  "a_voir": "Il faut voir que seules les tailles 1, 2 et 4 apparaissent."
+ },
+ {
+  "code": "51-284",
+  "a_dire": "Un corps gauche fini est commutatif : les quaternions, non commutatifs, sont infinis.",
+  "legende_titre": "Fini et commutatif",
+  "lecture": [
+   "Chaque ligne est un exemple ; les deux colonnes disent s'il est fini et s'il est commutatif.",
+   "Le cadran à 7 heures et le corps de quatre tableaux sont finis et commutatifs : cases vertes.",
+   "Les quaternions ne sont ni finis ni commutatifs : cases rouges.",
+   "Le cadre vert du bas donne la règle."
+  ],
+  "a_voir": "Il faut voir que les cas finis sont tous commutatifs."
+ },
+ {
+  "code": "51-285",
+  "a_dire": "Le chapitre rassemble en une structure, l'anneau, les règles vues aux chapitres 12, 13, 15 et 44.",
+  "legende_titre": "Quatre chapitres, une structure",
+  "lecture": [
+   "Les quatre cadres orange rappellent ce que chaque chapitre apportait.",
+   "Les flèches les mènent au cadre bleu, l'anneau, qui a huit règles."
+  ],
+  "a_voir": "Il faut voir que quatre résultats séparés deviennent des cas d'une seule structure."
+ },
+ {
+  "code": "51-286",
+  "a_dire": "Pour compter les tableaux inversibles et les diviseurs de zéro, il faut examiner les 16 tableaux un à un.",
+  "legende_titre": "Un cas, puis 16 tableaux à trier",
+  "lecture": [
+   "En haut, une case pleine vaut 1 et une case vide vaut 0.",
+   "Le tableau bleu fois le tableau violet donne le tableau rouge, tout vide : un produit nul.",
+   "Les 16 cases grises sont les 16 tableaux ; l'orange est le premier tableau, un diviseur de zéro."
+  ],
+  "a_voir": "Il faut voir qu'un cas ne suffit pas : il reste 16 tableaux à trier."
+ },
+ {
+  "code": "51-287",
+  "a_dire": "Ne pas avoir d'inverse et être diviseur de zéro sont deux listes à comparer.",
+  "legende_titre": "Deux listes qui se recouvrent",
+  "lecture": [
+   "Le disque bleu est la liste des éléments sans inverse, le disque violet celle des diviseurs de zéro.",
+   "Le nombre 2 des entiers est seulement dans le disque bleu.",
+   "Le tableau à une case pleine est dans les deux disques.",
+   "Le texte du bas pose la question : parmi les sans inverse, lesquels sont aussi diviseurs de zéro ?"
+  ],
+  "a_voir": "Il faut voir que le 2 est sans inverse sans être diviseur de zéro, et que le tableau est les deux."
+ }
+]

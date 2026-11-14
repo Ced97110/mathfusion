@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, 'supposé : 1 vecteur engendre', 'limite', 's')
+box(ax, 31, 64, 26, 10, 'limite', fill=False, dash=True, label='un vecteur ?')
+brace(ax, 31, 57, 64, 'limite', label='1 vecteur')
+text(ax, 44, 47, 'indépendante ≤ génératrice', 'fixe', 's')
+text(ax, 44, 41, 'base : indépendants', 'sujet', 's')
+box(ax, 16, 27, 26, 10, 'sujet', label='(1, 0)')
+box(ax, 46, 27, 26, 10, 'sujet', label='(0, 1)')
+brace(ax, 16, 72, 27, 'sujet', label='2 vecteurs')
+box(ax, 8, 3, 72, 10, 'limite', label='2 > 1 : le lemme l’interdit')
+save(fig, '58-295')

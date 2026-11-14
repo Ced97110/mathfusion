@@ -1,0 +1,185 @@
+[
+ {
+  "code": "32-081",
+  "a_dire": "À l'étape 3, la calculatrice affiche un seul angle α, dans la moitié droite du cercle, et l'étape s'arrête là.",
+  "legende_titre": "Un seul angle affiché",
+  "lecture": [
+   "Le trait bleu épais est la moitié droite du cercle, de −90° à 90°.",
+   "Chaque point vert est l'angle α affiché : 30° pour le sinus 0,5, −11,54° pour le sinus −0,2.",
+   "La moitié gauche, en gris, est hors de la touche."
+  ],
+  "a_voir": "Il y a un seul point par calcul, dans la moitié droite."
+ },
+ {
+  "code": "32-082",
+  "a_dire": "L'angle partenaire se lit sur le cercle : pour le sinus, on retourne le point par rapport à l'axe vertical, ce qui donne 180° − α, soit 150° pour α = 30°.",
+  "legende_titre": "Le second angle, lu sur le cercle",
+  "lecture": [
+   "Le point bleu est l'angle α = 30°.",
+   "Le point vert est son retourné par rapport à l'axe vertical orange : 180° − α = 150°.",
+   "Le trait gris pointillé montre que les deux points sont à la même hauteur.",
+   "En bas, tu lis les formules du cosinus et de la tangente."
+  ],
+  "a_voir": "Les deux points sont à la même hauteur, de chaque côté de l'axe vertical."
+ },
+ {
+  "code": "32-083",
+  "a_dire": "L'angle partenaire est le second angle de base ; son nom est le même pour le sinus, le cosinus et la tangente, mais la formule change.",
+  "legende_titre": "Un même rôle, trois formules",
+  "lecture": [
+   "Dans chaque cercle, le point bleu est l'angle principal et le point vert est l'angle partenaire.",
+   "Le trait pointillé relie les deux points : horizontal pour le sinus, vertical pour le cosinus, en diagonale pour la tangente.",
+   "Sous chaque cercle, tu lis les deux angles puis la formule."
+  ],
+  "a_voir": "Le rôle est le même trois fois, seule la formule change."
+ },
+ {
+  "code": "32-084",
+  "a_dire": "À l'étape 5, on ajoute le bon pas : 360°n pour le sinus, qui redonne le même point, et pas 180°n, qui donne une valeur fausse.",
+  "legende_titre": "Ajouter le bon pas",
+  "lecture": [
+   "Le point bleu est l'angle de départ, 30°.",
+   "L'arc vert fait un tour complet : on arrive à 390°, au même point, et le sinus vaut toujours 0,5.",
+   "L'arc rouge fait un demi-tour : on arrive à 210°, point rouge, et le sinus vaut −0,5, ce qui est faux."
+  ],
+  "a_voir": "Un tour ramène au même point ; un demi-tour tombe sur un point faux pour le sinus."
+ },
+ {
+  "code": "32-085",
+  "a_dire": "À l'étape 6, on garde seulement les angles qui sont dans l'intervalle demandé, de 0° à 720°, et on s'arrête quand le suivant en sort.",
+  "legende_titre": "Garder ceux de l'intervalle",
+  "lecture": [
+   "La bande bleue est l'intervalle de 0° à 720°.",
+   "Les quatre points verts, 30°, 150°, 390° et 510°, sont dedans : on les garde.",
+   "Le point rouge, 750°, est à droite de la bande : on l'écarte."
+  ],
+  "a_voir": "Quatre points sont dans la bande ; le suivant en sort."
+ },
+ {
+  "code": "32-086",
+  "a_dire": "Pour sin(30t) = 0,5 sur 24 heures, les solutions sont t = 1, 5, 13 et 17 : deux par tour, et il y a deux tours.",
+  "legende_titre": "Les quatre heures solutions",
+  "lecture": [
+   "La droite graduée va de 0 à 24 heures.",
+   "Les points bleus, 1 et 13, viennent de 30° ; les points violets, 5 et 17, viennent de 150°.",
+   "Chaque accolade grise couvre un tour de 12 heures et contient deux solutions."
+  ],
+  "a_voir": "Deux solutions par tour de 12 heures, donc quatre sur 24 heures."
+ },
+ {
+  "code": "32-087",
+  "a_dire": "En divisant par 30, les 360° d'un tour deviennent 12 heures : la période de la marée apparaît dans la solution t = 1 + 12n.",
+  "legende_titre": "360 divisé par 30, c'est 12",
+  "lecture": [
+   "La ligne du haut est 30t = 30° + 360°n.",
+   "La ligne du bas est le résultat en vert : t = 1 + 12n.",
+   "Les flèches orange montrent la division par 30 appliquée à chaque terme.",
+   "Le 12 en bas, en vert, vient de 360 divisé par 30."
+  ],
+  "a_voir": "Le 12 vient du 360 divisé par 30 : c'est la période."
+ },
+ {
+  "code": "32-088",
+  "a_dire": "Entre deux solutions qui se suivent, 1 et 5, la courbe est au-dessus de la droite à 3 m : l'eau dépasse 3 m pendant 4 heures, puis de nouveau de 13 à 17 heures.",
+  "legende_titre": "Les fenêtres au-dessus de 3 m",
+  "lecture": [
+   "La courbe bleue est la hauteur de l'eau sur 24 heures.",
+   "La droite pointillée grise est la hauteur 3 m.",
+   "Les points verts sont les heures 1, 5, 13 et 17.",
+   "Les zones vertes sont les parties de la courbe au-dessus de la droite : deux fenêtres de 4 heures."
+  ],
+  "a_voir": "Chaque zone verte est une durée, entre deux heures qui se suivent."
+ },
+ {
+  "code": "32-089",
+  "a_dire": "Pour sin θ = −0,2 entre −180° et 180°, le partenaire 191,54° dépasse 180° ; on retire un tour et on obtient −168,46°.",
+  "legende_titre": "Retirer un tour dans l'exemple",
+  "lecture": [
+   "Le point bleu est l'angle principal, −11,54°, sous l'axe horizontal à droite.",
+   "Le point vert est le partenaire : 191,54° en orange, ou −168,46° après avoir retiré 360°.",
+   "L'arc orange pointillé fait presque un demi-tour."
+  ],
+  "a_voir": "Le partenaire 191,54° et −168,46° sont au même point, en bas à gauche."
+ },
+ {
+  "code": "32-090",
+  "a_dire": "L'angle principal peut être négatif : un sinus négatif désigne un point sous l'axe horizontal, donc −11,54° pour le sinus −0,2.",
+  "legende_titre": "Un angle principal sous zéro",
+  "lecture": [
+   "Le point violet est pour le sinus 0,2 : il est au-dessus de l'axe, à 11,54°.",
+   "Le point bleu est pour le sinus −0,2 : il est sous l'axe, à −11,54°.",
+   "Les deux points sont dans la moitié droite du cercle."
+  ],
+  "a_voir": "Le point est sous l'axe, donc l'angle porte le signe moins."
+ },
+ {
+  "code": "32-091",
+  "a_dire": "Retirer un tour ne change pas le point du cercle : 191,54° et −168,46° désignent le même point, mais seul −168,46° est dans l'intervalle.",
+  "legende_titre": "Même point, autre nom",
+  "lecture": [
+   "Sur la droite, la bande bleue est l'intervalle de −180° à 180°.",
+   "Le point orange, 191,54°, est hors de la bande.",
+   "La flèche orange retire 360° et arrive au point vert, −168,46°, dans la bande.",
+   "Dans le petit cercle, les deux arcs finissent au même point vert."
+  ],
+  "a_voir": "Les deux angles finissent au même point du cercle."
+ },
+ {
+  "code": "32-092",
+  "a_dire": "Pour cos θ = −0,1, la droite verticale est à gauche du centre ; elle coupe le cercle en deux points : 95,74° en haut et −95,74° en bas.",
+  "legende_titre": "Le cosinus −0,1 : deux angles",
+  "lecture": [
+   "La droite orange pointillée est la verticale du cosinus −0,1, juste à gauche du centre.",
+   "Le point bleu en haut est 95,74°.",
+   "Le point violet en bas est −95,74°.",
+   "Les deux angles sont opposés."
+  ],
+  "a_voir": "Un point en haut et un en bas, sur la même verticale à gauche du centre."
+ },
+ {
+  "code": "32-093",
+  "a_dire": "Pour tan θ = −0,6, la droite de pente −0,6 passe par le centre ; elle coupe le cercle en deux points opposés : −30,96° et 149,04°.",
+  "legende_titre": "La tangente −0,6 : deux angles",
+  "lecture": [
+   "La droite orange passe par le centre et descend vers la droite : sa pente est −0,6.",
+   "Le point bleu est −30,96°.",
+   "Le point violet est 149,04°.",
+   "Ils sont aux deux bouts de la droite, à 180° l'un de l'autre."
+  ],
+  "a_voir": "Les deux angles sont aux deux bouts de la même droite."
+ },
+ {
+  "code": "32-094",
+  "a_dire": "La courbe sin 2θ répète son dessin deux fois entre 0° et 360° ; la droite y = 0,5 la coupe quatre fois, donc quatre angles.",
+  "legende_titre": "Quatre croisements",
+  "lecture": [
+   "La courbe bleue est sin 2θ : elle fait deux dessins.",
+   "La courbe grise en pointillés est sin θ : elle en fait un seul.",
+   "La droite orange est y = 0,5.",
+   "Les points verts sont les quatre croisements, aux angles 15°, 75°, 195° et 255°."
+  ],
+  "a_voir": "Compte les points verts : la droite coupe la courbe bleue quatre fois."
+ },
+ {
+  "code": "32-095",
+  "a_dire": "On résout sin y = 0,5 pour y = 2θ entre 0° et 720°, ce qui donne 30°, 150°, 390°, 510°, puis on divise par 2 pour obtenir 15°, 75°, 195°, 255°.",
+  "legende_titre": "Résoudre pour 2θ, puis diviser",
+  "lecture": [
+   "La droite bleue du haut est y, de 0° à 720°, avec ses quatre solutions.",
+   "La droite verte du bas est θ, de 0° à 360°.",
+   "Les flèches orange divisent par 2 : chaque solution de y donne une solution de θ."
+  ],
+  "a_voir": "Les quatre points du haut, divisés par 2, donnent les quatre points du bas."
+ },
+ {
+  "code": "32-096",
+  "a_dire": "L'angle dans le sinus est 2θ ; on lui donne le nom y, ce qui donne sin y = 0,5, et l'intervalle de y est deux fois plus long que celui de θ.",
+  "legende_titre": "Donner un nom à 2θ",
+  "lecture": [
+   "En haut, la boîte orange est 2θ dans le sinus.",
+   "La flèche orange donne le nom y : la boîte bleue du dessous.",
+   "Les deux barres comparent les intervalles : celle de θ, orange, va de 0° à 360° ; celle de y, bleue, est deux fois plus longue, de 0° à 720°."
+  ],
+  "a_voir": "La barre de y est deux fois plus longue que celle de θ."
+ }
+]

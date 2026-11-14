@@ -1,0 +1,260 @@
+[
+ {
+  "code": "14-081",
+  "a_dire": "Sur une droite logarithmique, d’un cran au suivant on multiplie par 10.",
+  "legende_titre": "Deux droites, deux façons d’avancer",
+  "lecture": [
+   "En haut, en gris, la droite des nombres : de 1 à 2, puis 3, puis 4, chaque flèche orange ajoute 1.",
+   "En bas, en bleu, la droite logarithmique : les crans sont à la même distance.",
+   "Les flèches oranges multiplient par 10 : 1, 10, 100, 1 000."
+  ],
+  "a_voir": "Les crans sont réguliers dans les deux cas ; en haut on ajoute 1, en bas on multiplie par 10."
+ },
+ {
+  "code": "14-082",
+  "a_dire": "Deux nombres de même exposant ont la même taille, à un facteur inférieur à 10 près.",
+  "legende_titre": "Même exposant, même taille ?",
+  "lecture": [
+   "Les deux rangées de 7 cases (bleue et violette) représentent 1,5 × 10^6 et 9,5 × 10^6 : ils ont le même nombre de chiffres.",
+   "La droite du bas place les mantisses 1,5 et 9,5 entre 1 et 10.",
+   "La flèche orange relie les deux : leur rapport est environ 6,3, donc moins de 10."
+  ],
+  "a_voir": "Même nombre de chiffres, mais un nombre peut être jusqu’à presque 10 fois l’autre."
+ },
+ {
+  "code": "14-083",
+  "a_dire": "Avec les puissances, une addition d’exposants remplace sept multiplications.",
+  "legende_titre": "Huit facteurs 2 et une seule addition",
+  "lecture": [
+   "Les 8 disques sont les 8 facteurs 2 : 5 en bleu, 3 en violet.",
+   "Les 7 croix orange entre eux sont les 7 multiplications.",
+   "Les deux boîtes vertes montrent 5 + 3 = 8 puis 2^8 = 256."
+  ],
+  "a_voir": "Il suffit d’ajouter les exposants 5 et 3 au lieu de faire 7 multiplications."
+ },
+ {
+  "code": "14-084",
+  "a_dire": "Pour multiplier des monômes, on multiplie les nombres et on additionne les exposants de chaque lettre.",
+  "legende_titre": "Un produit lu lettre par lettre",
+  "lecture": [
+   "La colonne grise contient les nombres 9, 8 et 2.",
+   "La colonne bleue contient les exposants de a : 2 et 1 ; la case en pointillé dit qu’il n’y a pas de a.",
+   "La colonne violette contient les exposants de b : 6, 4 et 3.",
+   "Les cases vertes donnent le résultat : 144, a³ et b¹³, écrit en grand en bas."
+  ],
+  "a_voir": "Chaque colonne se calcule à part : nombres multipliés, exposants additionnés."
+ },
+ {
+  "code": "14-085",
+  "a_dire": "Pour simplifier le quotient, on traite à part le nombre, la lettre a et la lettre b.",
+  "legende_titre": "Un quotient, trois colonnes",
+  "lecture": [
+   "La colonne grise divise 24 par 2^3, qui vaut 8.",
+   "La colonne bleue compare les exposants de a : 7 en haut, 4 en bas.",
+   "La colonne violette compare ceux de b : 9 en haut, −6 en bas.",
+   "Les cases vertes donnent 3, a^3 et b^15."
+  ],
+  "a_voir": "Le haut et le bas se comparent colonne par colonne ; les exposants se soustraient."
+ },
+ {
+  "code": "14-086",
+  "a_dire": "La méthode en cinq étapes échoue quand une base vaut 0.",
+  "legende_titre": "Cinq étapes, une condition",
+  "lecture": [
+   "Les cinq boîtes de gauche sont les cinq étapes, dans l’ordre.",
+   "Les boîtes bleue et violette (étapes 3 et 4) divisent des puissances de a et de b.",
+   "La boîte rouge dit ce qui arrive si a ou b vaut 0 : on divise par 0.",
+   "La dernière boîte, verte, est le résultat 3a^3b^15."
+  ],
+  "a_voir": "Les étapes 3 et 4 n’ont de sens que si les bases ne valent pas 0."
+ },
+ {
+  "code": "14-087",
+  "a_dire": "Un second chemin, qui passe b^(−6) au numérateur, donne le même résultat et vérifie le premier.",
+  "legende_titre": "Deux chemins, un même résultat",
+  "lecture": [
+   "La boîte bleue du haut est le quotient de départ.",
+   "Le chemin 1 (gris) soustrait : 9 − (−6) = 15.",
+   "Le chemin 2 (orange) passe b^(−6) en haut, où il devient b^6, puis additionne 9 + 6.",
+   "La boîte verte montre que les deux donnent b^15 ; pour b = 2, c’est 32 768."
+  ],
+  "a_voir": "Deux chemins différents qui donnent le même résultat vérifient le calcul."
+ },
+ {
+  "code": "14-088",
+  "a_dire": "Pour multiplier en notation scientifique, on regroupe mantisses et puissances de 10, puis on renormalise.",
+  "legende_titre": "Multiplier, puis remettre en forme",
+  "lecture": [
+   "La boîte bleue multiplie les mantisses : 4 × 5 = 20.",
+   "La boîte grise multiplie les puissances de 10 : 10^5.",
+   "La boîte orange est le regroupement 20 × 10^5 ; 20 dépasse 10.",
+   "On écrit 20 = 2 × 10, ce qui donne la boîte verte 2 × 10^6."
+  ],
+  "a_voir": "Le regroupement donne 20 × 10^5 ; on le réécrit pour que la mantisse soit entre 1 et 10."
+ },
+ {
+  "code": "14-089",
+  "a_dire": "On multiplie les mantisses, on additionne les exposants, puis on renormalise le résultat.",
+  "legende_titre": "Un produit en deux temps",
+  "lecture": [
+   "La boîte bleue multiplie les mantisses : 5 × 8,1 = 40,5.",
+   "La boîte grise additionne les exposants : 17 + (−22) = −5.",
+   "La boîte orange 40,5 × 10^(−5) n’est pas encore en forme scientifique : 40,5 dépasse 10.",
+   "La boîte verte donne 4,05 × 10^(−4)."
+  ],
+  "a_voir": "Le produit brut doit encore être renormalisé pour que la mantisse soit entre 1 et 10."
+ },
+ {
+  "code": "14-090",
+  "a_dire": "40,5 se réécrit 4,05 × 10, puis la règle du produit donne l’exposant final.",
+  "legende_titre": "Renormaliser avec la même règle",
+  "lecture": [
+   "La première boîte orange, 40,5 × 10^(−5), est juste mais mal écrite.",
+   "La deuxième remplace 40,5 par 4,05 × 10.",
+   "La flèche du bas applique la règle du produit : 1 + (−5) = −4.",
+   "La boîte verte, 4,05 × 10^(−4), a une mantisse entre 1 et 10."
+  ],
+  "a_voir": "Le nombre ne change pas : seule l’écriture change, avec la règle déjà connue."
+ },
+ {
+  "code": "14-091",
+  "a_dire": "Écrit en notation scientifique, 2^72 se lit d’un coup d’œil : un nombre à 22 chiffres.",
+  "legende_titre": "Lire la taille d’un nombre",
+  "lecture": [
+   "Le titre donne 2^72 ≈ 4,72 × 10^21.",
+   "La case bleue est le chiffre avant la virgule de 4,72.",
+   "Les 21 cases orange derrière sont données par l’exposant 21.",
+   "L’accolade grise compte 22 chiffres en tout."
+  ],
+  "a_voir": "L’exposant 21 annonce 22 chiffres ; le signe ≈ dit que la valeur est approchée."
+ },
+ {
+  "code": "14-092",
+  "a_dire": "Avec la base 1, toutes les marches valent 1 : les règles ne disent plus rien.",
+  "legende_titre": "Un escalier sans marche",
+  "lecture": [
+   "Chaque boîte bleue est une marche 1^n, de n = 0 à n = 5.",
+   "Chaque marche vaut 1.",
+   "La ligne en pointillé montre qu’elles sont toutes à la même hauteur."
+  ],
+  "a_voir": "Quel que soit n, 1^n vaut 1 : l’escalier est plat."
+ },
+ {
+  "code": "14-093",
+  "a_dire": "Avec la base 0, 0^n vaut 0 pour n ≥ 1 ; 0^0 n’est pas défini ; 0^(−n) n’existe pas.",
+  "legende_titre": "Les marches de la base 0",
+  "lecture": [
+   "Les boîtes bleues (n = 1, 2, 3) valent toutes 0.",
+   "La boîte rouge n = 0 porte « ? » : 0^0 n’est pas défini.",
+   "Les deux boîtes rouges en pointillé (n = −2 et −1) n’existent pas.",
+   "En bas, 0^(−2) demande de diviser 1 par 0."
+  ],
+  "a_voir": "Les marches de base 0 existent seulement à partir de n = 1 ; d’où la mention a ≠ 0."
+ },
+ {
+  "code": "14-094",
+  "a_dire": "Chaque règle porte la mention a ≠ 0 dès qu’un quotient, un exposant nul ou négatif apparaît.",
+  "legende_titre": "Où la division par 0 apparaît",
+  "lecture": [
+   "Les trois boîtes rouges de gauche sont un quotient, un exposant nul et un exposant négatif, avec la base 0.",
+   "Les flèches rouges mènent à la même boîte : ÷ 0, impossible.",
+   "La boîte verte du bas dit : avec a ≠ 0, aucune division par 0."
+  ],
+  "a_voir": "Dans ces trois situations la base 0 mène à une division par 0."
+ },
+ {
+  "code": "14-095",
+  "a_dire": "Un monôme est un produit d’un nombre et de lettres avec des exposants ; une somme n’en est pas un.",
+  "legende_titre": "Produit ou somme ?",
+  "lecture": [
+   "En haut : 7, x^3 et y^2 sont reliés par des croix orange, donc c’est un produit : un monôme.",
+   "Les couleurs distinguent le nombre (gris) et les deux lettres (bleu, violet).",
+   "En bas, le signe + rouge relie 7x^3 et y^2 : c’est une somme, pas un monôme."
+  ],
+  "a_voir": "Un monôme n’a que des croix entre ses parties, jamais de signe plus."
+ },
+ {
+  "code": "14-096",
+  "a_dire": "Factoriser x^5 + x^3 par x^3 revient à lire la règle du produit à l’envers.",
+  "legende_titre": "Écrire x^3 une seule fois",
+  "lecture": [
+   "La première ligne est la somme x^5 + x^3.",
+   "La deuxième coupe 5 en 3 + 2 et écrit x^3 = x^3 × 1 : le facteur bleu x^3 apparaît deux fois.",
+   "La troisième écrit x^3 une seule fois devant la parenthèse verte (x^2 + 1).",
+   "En bas, pour x = 2, les deux écritures valent 40."
+  ],
+  "a_voir": "Le facteur commun x^3 sort de la somme et se place devant la parenthèse."
+ },
+ {
+  "code": "14-097",
+  "a_dire": "Une expression rationnelle suit la règle du quotient et la définition de l’exposant négatif.",
+  "legende_titre": "Mêmes règles, lettres en plus",
+  "lecture": [
+   "En haut, le bloc (x + 1) joue le rôle de la base : (x + 1)^5 divisé par (x + 1)^2 donne (x + 1)^3.",
+   "La boîte verte vérifie pour x = 1 : 32 ÷ 4 = 8.",
+   "En bas, 1 divisé par x^(−2) donne x^2.",
+   "La boîte verte vérifie pour x = 2 : 1 ÷ 1/4 = 4."
+  ],
+  "a_voir": "Aucune règle nouvelle : la règle du quotient et l’exposant négatif suffisent."
+ },
+ {
+  "code": "14-098",
+  "a_dire": "√a suit les mêmes règles que a^(1/2), donc √(ab) = √a × √b.",
+  "legende_titre": "Deux chemins pour une racine",
+  "lecture": [
+   "La boîte bleue du haut est √(4 × 9).",
+   "Le chemin gris calcule d’abord 4 × 9 = 36, puis √36 = 6.",
+   "Le chemin orange sépare √4 × √9, puis calcule 2 × 3 = 6.",
+   "La boîte verte montre que les deux donnent 6."
+  ],
+  "a_voir": "Séparer la racine d’un produit en deux racines donne le même résultat."
+ },
+ {
+  "code": "14-099",
+  "a_dire": "La notation scientifique permet d’estimer un produit de tête : on multiplie les mantisses et on additionne les exposants.",
+  "legende_titre": "Estimer de tête",
+  "lecture": [
+   "Les boîtes du haut arrondissent 48 000 en 5 × 10^4 et écrivent 0,0002 = 2 × 10^(−4).",
+   "La boîte bleue multiplie les mantisses : 5 × 2 = 10.",
+   "La boîte grise additionne les exposants : 4 + (−4) = 0.",
+   "La boîte verte donne 10 ; le calcul exact est 9,6."
+  ],
+  "a_voir": "Deux opérations faciles donnent la bonne taille : 10 contre 9,6."
+ },
+ {
+  "code": "14-100",
+  "a_dire": "La règle (2a)^2 = 4a^2 sert au discriminant b^2 − 4ac.",
+  "legende_titre": "Le carré de 2a",
+  "lecture": [
+   "Le grand carré a pour côté 2a, soit 6 pour a = 3 ; l’accolade orange le montre.",
+   "Il est fait de 4 petits carrés bleus a^2.",
+   "À droite : (2a)^2 = 36 et 4 × 9 = 36.",
+   "En bas, la règle sert dans b^2 − 4ac."
+  ],
+  "a_voir": "Un carré de côté 2a contient 4 carrés de côté a."
+ },
+ {
+  "code": "14-101",
+  "a_dire": "La notation scientifique écrit la taille d’un nombre par son exposant : 4,3 × 10^19 a 20 chiffres.",
+  "legende_titre": "Une écriture pour tous les nombres",
+  "lecture": [
+   "La droite grise place les exposants de −20 à 20.",
+   "À gauche, un exposant négatif désigne un nombre petit ; à droite, un exposant positif désigne un nombre grand.",
+   "Le disque vert marque l’exposant 19.",
+   "La boîte verte relie 4,3 × 10^19 à 20 chiffres."
+  ],
+  "a_voir": "L’exposant dit la taille : 19 donne un nombre à 20 chiffres."
+ },
+ {
+  "code": "14-102",
+  "a_dire": "On cherche un nombre dont le carré vaut 2 : 2^(1/2) est-il une fraction ? Deux essais s’en approchent sans l’atteindre.",
+  "legende_titre": "Un carré qui vaut 2, est-ce une fraction ?",
+  "lecture": [
+   "Le disque vert au centre est la cible : le carré doit valoir 2.",
+   "Le disque violet de gauche est (7/5)^2 = 1,96.",
+   "Le disque violet de droite est (10/7)^2, environ 2,04.",
+   "Ni l’un ni l’autre n’atteint 2."
+  ],
+  "a_voir": "Les deux fractions essayées encadrent 2 sans le donner."
+ }
+]

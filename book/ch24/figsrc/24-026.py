@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+U = 9.0; O = (44, 4)
+I = lambda x, y, z: iso(x, y, z, O, U)
+poly(ax, [I(0,0,0), I(4,0,0), I(4,4,0), I(0,4,0)], 'fixe')
+poly(ax, [I(0,4,0), I(4,4,0), I(4,4,3), I(0,4,3)], 'fixe')
+poly(ax, [I(4,0,0), I(4,4,0), I(4,4,3), I(4,0,3)], 'fixe')
+line(ax, [I(0,4,0), I(4,4,0)], 'sujet', lw=2.2)
+line(ax, [I(4,0,3), I(4,4,3)], 'autre', lw=2.2)
+x, y = I(2.0, 1.6, 0); text(ax, x, y, 'bord du sol\nest-ouest', 'sujet', 's')
+x, y = I(4, 1.2, 3); text(ax, x + 9, y + 4, 'bord du plafond\nnord-sud', 'autre', 's')
+text(ax, 44, 70, 'jamais en contact', 'encre', 's')
+save(fig, '24-026')

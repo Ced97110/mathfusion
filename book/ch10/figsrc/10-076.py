@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = lambda v: 10 + (v - 360000) / 40000 * 62
+line(ax, [(10, 28), (72, 28)], 'fixe')
+disc(ax, 10, 28, 1.5, 'varie')
+line(ax, [(72, 24), (72, 32)], 'limite', lw=1.4)
+brace(ax, 10, 72, 31, 'resultat', label='marge 40 000', down=False)
+text(ax, 10, 23.5, '360 000', 'varie', 's')
+text(ax, 72, 23.5, 'limite 400 000', 'limite', 's')
+line(ax, [(10, 21), (10, 14.5)], 'fixe', dash=True); line(ax, [(72, 21), (72, 14.5)], 'fixe', dash=True)
+a, b = f(372000), f(399492)
+arrow(ax, (10, 14), (a, 14), 'varie'); arrow(ax, (a, 14), (b, 14), 'varie')
+text(ax, (10 + a) / 2, 9.5, '12 000', 'varie', 's'); text(ax, (a + b) / 2, 9.5, '27 492', 'varie', 's')
+text(ax, 41, 3.5, '39 492 < 40 000', 'resultat', 'm')
+save(fig, '10-076')

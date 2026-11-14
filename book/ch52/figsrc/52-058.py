@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+f = numberline(ax, 8, 76, 10, 0, 12, step=1, arrow_right=False, every=2)
+text(ax, 2, 66, 'réunion : 10 absent', 'fixe', 's', ha='left')
+for v in (0, 4, 6, 8, 12): disc(ax, f(v), 60, 1.6, 'fixe')
+disc(ax, f(10), 60, 1.6, 'limite', fill=False)
+text(ax, 2, 48, 'idéal (4, 6) : les sommes', 'sujet', 's', ha='left')
+for v in range(0, 13, 2): disc(ax, f(v), 42, 1.6, 'resultat' if v in (2, 10) else 'sujet')
+text(ax, f(10), 36, r'$10 = 4 + 6$', 'resultat', 's')
+text(ax, f(2), 36, r'$2 = -4 + 6$', 'resultat', 's')
+text(ax, 2, 26, 'intersection : 0 et 12', 'autre', 's', ha='left')
+for v in (0, 12): disc(ax, f(v), 20, 1.6, 'autre')
+save(fig, '52-058')

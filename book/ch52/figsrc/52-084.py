@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,44,61,r'relation de Bézout : $p=7$, $a=3$','encre','m')
+box(ax,4,40,24,11,'sujet',label=r'$3\times5$',size='m'); text(ax,31,45.5,'+','encre','l')
+box(ax,34,40,28,11,'fixe',label=r'$7\times(-2)$',size='m'); text(ax,65,45.5,'=','encre','l')
+box(ax,68,40,16,11,'resultat',label='1',size='m')
+text(ax,48,35.5,r'multiple de 7 : $\bar0$','fixe','s')
+arrow(ax,(16,39),(30,21),'varie')
+box(ax,10,5,68,16,'resultat',label='\n'.join([r'$\bar3\times\bar5=\bar1$',r'$\bar5$ est l’inverse de $\bar3$']),size='m')
+save(fig,'52-084')

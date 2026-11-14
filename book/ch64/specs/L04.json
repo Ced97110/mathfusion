@@ -1,0 +1,376 @@
+[
+ {
+  "code": "64-096",
+  "a_dire": "Chaque corps F_i est le corps fixe du groupe en face : plus le groupe est grand, plus le corps est petit.",
+  "legende_titre": "Les groupes qui descendent, les corps qui montent",
+  "lecture": [
+   "La colonne violette à gauche donne le nombre d’éléments de chaque groupe : 24, 12, 4, 1.",
+   "La colonne bleue à droite montre les corps F₁, F₂, F₃, K en face de S₄, A₄, V, {e} ; leur largeur grandit quand celle du groupe diminue.",
+   "Entre les deux colonnes, chaque ligne orange donne le rapport entre deux groupes voisins : 2, 3, 4."
+  ],
+  "a_voir": "Quand la barre violette raccourcit, la barre bleue en face s’allonge."
+ },
+ {
+  "code": "64-097",
+  "a_dire": "La liste des racines de la formule de Ferrari se lit sur le groupe : ℤ/2 une racine carrée, ℤ/3 une racine cubique, V deux racines carrées.",
+  "legende_titre": "Lire la formule de Ferrari sur les groupes",
+  "lecture": [
+   "Chaque case bleue à gauche est un groupe, dessiné avec ses éléments : 2 points pour ℤ/2, 3 pour ℤ/3, 4 pour V.",
+   "Les 4 points de V sont coupés en deux paires par les cadres orange : 4 = 2 × 2.",
+   "Chaque flèche orange mène à la case verte qui dit quelles racines il faut."
+  ],
+  "a_voir": "V a deux cadres orange, donc deux racines carrées."
+ },
+ {
+  "code": "64-098",
+  "a_dire": "Les deux suites de composition de ℤ/60 ont les mêmes facteurs 2, 2, 3, 5, rangés dans un autre ordre.",
+  "legende_titre": "Deux colonnes, les mêmes couleurs",
+  "lecture": [
+   "Chaque colonne est une suite : 60, puis les tailles descendantes, jusqu’à 1.",
+   "La flèche d’une étape a la couleur de son facteur : bleu pour 2, orange pour 3, vert pour 5.",
+   "Chaque colonne a quatre flèches ; on y trouve deux bleues, une orange et une verte, dans un ordre différent."
+  ],
+  "a_voir": "Les deux colonnes ont les mêmes couleurs de flèches, pas dans le même ordre."
+ },
+ {
+  "code": "64-099",
+  "a_dire": "Un facteur dont la taille est un nombre premier est simple ; l’inverse est faux, car A₅ est simple avec 60 éléments.",
+  "legende_titre": "Rapports premiers, mais pas l’inverse",
+  "lecture": [
+   "La colonne de cases bleues à gauche donne les tailles de la suite 1 : 60, 20, 4, 2, 1.",
+   "Chaque flèche verte divise une taille par la suivante : 3, 5, 2, 2, tous premiers. Le titre vert dit que ces rapports premiers donnent des facteurs simples.",
+   "À droite, 60 points violets représentent A₅ ; le mot vert dit qu’il est simple.",
+   "Le texte rouge dit que 60 n’est pas premier : la réciproque est fausse."
+  ],
+  "a_voir": "A₅ est simple alors que 60 n’est pas un nombre premier."
+ },
+ {
+  "code": "64-100",
+  "a_dire": "Les deux suites montrent un exemple chiffré : quatre facteurs de produit 60 dans chacune, mais cela ne prouve pas le théorème pour toutes les suites.",
+  "legende_titre": "Deux suites, un exemple seulement",
+  "lecture": [
+   "La ligne du haut est la suite 1 : cases 3, 5, 2, 2 ; celle du bas est la suite 2 : cases 2, 2, 5, 3.",
+   "Les couleurs sont celles des facteurs : bleu 2, orange 3, vert 5.",
+   "Sous chaque ligne, une accolade grise donne le produit : 60.",
+   "Le texte gris du bas rappelle qu’il n’y a que deux suites."
+  ],
+  "a_voir": "Quatre cases et un produit égal à 60 dans chaque ligne."
+ },
+ {
+  "code": "64-101",
+  "a_dire": "Un groupe à p éléments n’a que des sous-groupes de 1 ou p éléments, car la taille d’un sous-groupe divise celle du groupe.",
+  "legende_titre": "Quelles tailles de sous-groupe sont possibles ?",
+  "lecture": [
+   "La ligne du haut est un groupe de 5 éléments : on essaie les tailles de 1 à 5.",
+   "Seules les cases vertes 1 et 5 sont possibles ; les cases rouges en pointillés 2, 3, 4 ne divisent pas 5.",
+   "La ligne du bas est un groupe de 6 éléments : 1, 2, 3 et 6 sont possibles (vert)."
+  ],
+  "a_voir": "Pour 5 il n’y a que deux cases vertes ; pour 6 il y en a quatre."
+ },
+ {
+  "code": "64-102",
+  "a_dire": "Pour ℤ/60, les facteurs d’une suite de composition forment la factorisation de 60 en nombres premiers, unique à l’ordre près.",
+  "legende_titre": "Les facteurs multiplient en 60",
+  "lecture": [
+   "La ligne du haut montre les facteurs de la suite 1 : 3, 5, 2, 2 ; celle du dessous, ceux de la suite 2 : 2, 2, 5, 3.",
+   "Les disques ont la couleur de leur facteur : bleu 2, orange 3, vert 5.",
+   "Les deux lignes grises arrivent à la case verte : 2 × 2 × 3 × 5 = 60."
+  ],
+  "a_voir": "Les deux listes mènent à la même écriture de 60."
+ },
+ {
+  "code": "64-103",
+  "a_dire": "Si K et G/K sont résolubles, alors G l’est ; si K ne l’est pas, savoir que G/K l’est ne suffit pas.",
+  "legende_titre": "Retirer l’hypothèse sur K",
+  "lecture": [
+   "À gauche, les trois cases sont vertes : K et G/K résolubles donnent G résoluble.",
+   "À droite, K = A₅ (60 éléments) est en rouge : non résoluble.",
+   "Le quotient S₅/A₅ (2 éléments) est vert, mais G = S₅ (120 éléments) est rouge.",
+   "Les flèches grises vont de K et de G/K vers G."
+  ],
+  "a_voir": "À droite, une case verte en bas ne suffit pas : K rouge donne G rouge."
+ },
+ {
+  "code": "64-104",
+  "a_dire": "Si H est un sous-groupe de G, alors H′ est contenu dans G′ ; on répète pour arriver à H^(k) contenu dans G^(k).",
+  "legende_titre": "Le dérivé d’un sous-groupe reste dans le dérivé",
+  "lecture": [
+   "La ligne du haut montre H (3 éléments, violet) dans G (6 éléments, bleu).",
+   "Chaque flèche orange passe au groupe dérivé.",
+   "La ligne du bas montre H′ (1 élément) dans G′ (3 éléments).",
+   "Le signe vert ⊆ entre les cases dit que la case de gauche est contenue dans celle de droite."
+  ],
+  "a_voir": "Les deux lignes ont le même signe ⊆ : l’inclusion reste après le passage au dérivé."
+ },
+ {
+  "code": "64-105",
+  "a_dire": "Le théorème sur sous-groupes et quotients sert dans les deux sens du critère : le groupe de l’équation est un quotient dans un sens, un sous-groupe dans l’autre.",
+  "legende_titre": "Quotient d’un côté, sous-groupe de l’autre",
+  "lecture": [
+   "La ligne du haut est le sens direct : un grand groupe résoluble (bleu) donne son quotient, le groupe de l’équation (vert).",
+   "La ligne du bas est le sens réciproque : le groupe de l’équation résoluble (bleu) donne un sous-groupe (vert), celui de l’extension plus grande.",
+   "Chaque flèche orange porte le mot de l’opération : quotient ou sous-groupe."
+  ],
+  "a_voir": "Même théorème, deux flèches différentes : quotient en haut, sous-groupe en bas."
+ },
+ {
+  "code": "64-106",
+  "a_dire": "Un groupe d’ordre p^n a un centre non trivial ; on l’ôte, il reste un groupe d’ordre une puissance de p plus petite, et on recommence jusqu’à 1 élément.",
+  "legende_titre": "Ôter le centre, puis recommencer",
+  "lecture": [
+   "La rangée du haut a 8 cases : le groupe G, avec 8 = 2³ éléments.",
+   "Les 2 cases orange à gauche forment le centre C, qui n’est pas réduit à 1 élément.",
+   "La flèche grise « ôter C » mène à la rangée de 4 cases : G/C, avec 4 = 2².",
+   "La case en pointillés du bas dit qu’on recommence avec G/C jusqu’à 1."
+  ],
+  "a_voir": "Le centre est non trivial, on l’ôte, et on recommence : 8, puis 4, jusqu’à 1."
+ },
+ {
+  "code": "64-107",
+  "a_dire": "Le centre C n’est pas réduit à l’identité : il est abélien et normal, donc on peut l’ôter et recommencer sur G/C.",
+  "legende_titre": "Pourquoi le centre permet d’avancer",
+  "lecture": [
+   "Les 8 points sont les éléments de G, rangés en 4 classes de 2 cadrées en pointillés.",
+   "La classe orange de gauche est le centre C, de 2 éléments.",
+   "Chaque flèche grise envoie une classe vers un point de G/C : 4 points en tout.",
+   "La case verte du bas dit que C est différent de {e}, abélien et normal."
+  ],
+  "a_voir": "Le centre est une classe de 2 éléments : sans lui, il n’y aurait rien à ôter."
+ },
+ {
+  "code": "64-108",
+  "a_dire": "A_n est simple pour n ≥ 5 ; l’hypothèse est nécessaire, car A₄ n’est pas simple.",
+  "legende_titre": "A₄ se découpe, A₅ non",
+  "lecture": [
+   "À gauche, A₄ a 12 points ; les 4 points violets cadrés en pointillés forment V, normal dans A₄.",
+   "Le texte rouge dit que A₄ n’est pas simple.",
+   "À droite, A₅ a 60 points bleus, sans sous-groupe normal sauf {e} et lui-même.",
+   "Le texte vert dit que A₅ est simple."
+  ],
+  "a_voir": "A₄ contient un groupe normal violet ; A₅ n’en contient aucun."
+ },
+ {
+  "code": "64-109",
+  "a_dire": "Si K contient un 3-cycle, il les contient tous : on conjugue par une permutation paire, qu’on obtient grâce à deux objets libres quand n ≥ 5.",
+  "legende_titre": "Du cycle (1 2 3) au cycle (2 4 5)",
+  "lecture": [
+   "La ligne du haut montre 5 objets ; les trois disques bleus 1, 2, 3 sont ceux du cycle (1 2 3).",
+   "La ligne du bas montre les mêmes objets ; les disques verts 2, 4, 5 sont ceux du cycle (2 4 5).",
+   "Les flèches orange envoient 1 sur 2, 2 sur 4 et 3 sur 5.",
+   "Le texte rouge dit que cette permutation est impaire ; le texte vert dit qu’avec l’échange (1 3) elle devient paire."
+  ],
+  "a_voir": "Le dernier échange touche seulement les objets libres 1 et 3 et change la parité."
+ },
+ {
+  "code": "64-110",
+  "a_dire": "On part de α dans K qui fixe le plus d’objets possible ; α₂ = α₁α⁻¹ est dans K et fixe plus d’objets, ce qui force α à être un 3-cycle.",
+  "legende_titre": "Fabriquer un élément qui bouge moins d’objets",
+  "lecture": [
+   "À gauche, α (bleu) envoie 1 sur 2, 2 sur 3, 3 sur 4, 4 sur 5, 5 sur 1 : 5 objets bougent.",
+   "Au milieu, α₁ = βαβ⁻¹ (orange) est le même cycle renommé par β : 5 objets bougent.",
+   "À droite, α₂ = α₁α⁻¹ (vert) n’a que trois flèches : 1 vers 3, 3 vers 4, 4 vers 1.",
+   "Le texte vert dit que c’est un 3-cycle : 3 objets bougent."
+  ],
+  "a_voir": "Il y a cinq flèches à gauche et au milieu, trois seulement à droite."
+ },
+ {
+  "code": "64-111",
+  "a_dire": "Pour n = 4, un échange double ne touche pas de cinquième objet et V est normal dans A₄ ; le cinquième objet est ce qui sépare le degré 4 du degré 5.",
+  "legende_titre": "Le cinquième objet qui manque",
+  "lecture": [
+   "En haut, 4 objets bleus et un cinquième en pointillés rouges ; les deux flèches orange sont les échanges de 1 et 2, de 3 et 4.",
+   "Le texte dit que (1 2)(3 4) ne touche pas 5.",
+   "En bas, avec 5 objets, le disque vert 5 existe ; les flèches vertes forment le cycle β = (3 4 5).",
+   "Ce cycle fait tourner 3, 4 et 5."
+  ],
+  "a_voir": "Les échanges laissent le 5 de côté ; seul le cycle vert l’utilise."
+ },
+ {
+  "code": "64-112",
+  "a_dire": "Conjuguer un cycle par γ le renomme : γ(a₁ a₂ a₃)γ⁻¹ = (γ(a₁) γ(a₂) γ(a₃)).",
+  "legende_titre": "Renommer les places d’un cycle",
+  "lecture": [
+   "Le triangle bleu en haut est le cycle (1 2 3).",
+   "Le triangle vert en bas est le cycle (2 3 4).",
+   "Les trois flèches orange sont γ : 1 vers 2, 2 vers 3, 3 vers 4.",
+   "Chaque sommet du triangle vert est l’image du sommet en face."
+  ],
+  "a_voir": "Le triangle vert est le triangle bleu avec les noms changés."
+ },
+ {
+  "code": "64-113",
+  "a_dire": "A_n est engendré par les 3-cycles : un élément est un produit d’un nombre pair d’échanges, groupés deux par deux, chaque paire s’écrivant avec des 3-cycles.",
+  "legende_titre": "Quatre échanges, deux paires",
+  "lecture": [
+   "Les quatre cases orange sont les échanges d’un élément de A_n.",
+   "Les accolades les groupent en paire 1 et paire 2.",
+   "La première case verte écrit (1 2)(3 4) = (1 3 2)(1 3 4).",
+   "La seconde case verte dit que le résultat est un produit de 3-cycles."
+  ],
+  "a_voir": "Chaque paire d’échanges devient des 3-cycles."
+ },
+ {
+  "code": "64-114",
+  "a_dire": "Deux échanges ont 2, 0 ou 1 objet en commun, et chaque cas s’écrit avec des 3-cycles ou donne l’identité.",
+  "legende_titre": "Trois façons de choisir deux échanges",
+  "lecture": [
+   "Dans chaque colonne, la flèche orange est un échange et la flèche bleue en est un autre.",
+   "À gauche, les deux échanges portent sur 1 et 2 : 2 objets en commun, le produit vaut l’identité.",
+   "Au milieu, 1 et 2 d’un côté, 3 et 4 de l’autre : aucun objet en commun, le produit s’écrit avec 2 cycles de 3.",
+   "À droite, 1 et 2, puis 1 et 3 : un objet en commun, le produit s’écrit avec 1 cycle de 3."
+  ],
+  "a_voir": "Les trois colonnes couvrent les trois cas, sans autre possibilité."
+ },
+ {
+  "code": "64-115",
+  "a_dire": "Échanger deux places puis les échanger encore ramène tout à sa place : (ab)(ab) = e.",
+  "legende_titre": "Deux fois le même échange",
+  "lecture": [
+   "Les deux disques de la ligne du haut sont les élèves 1 (bleu) et 2 (violet) au départ.",
+   "Les traits montrent leurs places après l’échange de 1 et 2, puis après le même échange encore.",
+   "La ligne du bas est identique à celle du haut : le texte vert dit identité."
+  ],
+  "a_voir": "Les traits se croisent deux fois et ramènent chaque élève à sa place."
+ },
+ {
+  "code": "64-116",
+  "a_dire": "Deux échanges sans objet commun valent deux 3-cycles : (ab)(cd) = (acb)(acd).",
+  "legende_titre": "Deux échanges devenus deux 3-cycles",
+  "lecture": [
+   "Les quatre colonnes sont les places 1, 2, 3, 4 ; le trait bleu épais suit l’élève 1.",
+   "La flèche grise à gauche est (1 2)(3 4), le résultat à obtenir.",
+   "Le premier passage est le cycle (1 3 4) ; le second est le cycle (1 3 2).",
+   "Après les deux, 1 est en 2, 2 en 1, 3 en 4 et 4 en 3 : c’est (1 2)(3 4)."
+  ],
+  "a_voir": "Le trait bleu va de 1 à 3, puis à 2."
+ },
+ {
+  "code": "64-117",
+  "a_dire": "Deux échanges qui ont un objet commun valent un seul 3-cycle : (ab)(ac) = (acb).",
+  "legende_titre": "Deux échanges qui partagent la place 1",
+  "lecture": [
+   "Les trois colonnes sont les places 1, 2, 3 ; le trait orange épais suit l’élève 1.",
+   "D’abord l’échange de 1 et 3, puis celui de 1 et 2.",
+   "L’élève 1 finit en 3 ou en 2 selon le trait, et le texte vert dit qu’on obtient un seul cycle : (1 3 2)."
+  ],
+  "a_voir": "Le trait orange passe par la place 3 puis finit à la place 2."
+ },
+ {
+  "code": "64-118",
+  "a_dire": "Pour n = 2, A₂ = {e} : il n’existe aucun 3-cycle, car il faut trois objets.",
+  "legende_titre": "Avec deux objets, pas de 3-cycle",
+  "lecture": [
+   "La case verte de gauche est le rangement de départ 1, 2 : pair.",
+   "La case grise de droite est le rangement 2, 1, obtenu par un échange : impair.",
+   "L’accolade verte dit qu’il ne reste que l’identité : A₂ = {e}.",
+   "La case rouge en pointillés dit qu’un 3-cycle demande 3 objets et qu’il y en a 2."
+  ],
+  "a_voir": "Un seul rangement est pair, donc A₂ ne contient que l’identité."
+ },
+ {
+  "code": "64-119",
+  "a_dire": "Un sous-groupe qui contient un 3-cycle n’est pas forcément A_n : il faut qu’il soit normal.",
+  "legende_titre": "Un 3-cycle ne suffit pas sans la normalité",
+  "lecture": [
+   "Chaque grille a 60 points : les éléments de A₅.",
+   "À gauche, N est normal et tous les points sont verts : N = A₅, 60 sur 60.",
+   "À droite, N est engendré par (1 2 3) : seuls 3 points rouges sur 60 en font partie, les autres sont gris.",
+   "Le texte rouge dit que ce sous-groupe n’est pas normal."
+  ],
+  "a_voir": "À droite, 3 points seulement sur 60 appartiennent au sous-groupe."
+ },
+ {
+  "code": "64-120",
+  "a_dire": "Tout 3-cycle est un produit de 3-cycles de la forme (i j a) : on classe selon que le 3-cycle contient i et j, un seul des deux, ou aucun.",
+  "legende_titre": "Quatre cas, quatre formules",
+  "lecture": [
+   "Chaque ligne a une case bleue à gauche qui décrit le 3-cycle : avec i et j, avec i sans j, avec j sans i, sans i ni j.",
+   "La flèche orange mène à la case verte qui donne la formule.",
+   "Dans toutes les formules vertes, les deux premiers objets sont toujours i et j : seul le troisième change."
+  ],
+  "a_voir": "Les quatre formules vertes ne contiennent que des cycles (i j …)."
+ },
+ {
+  "code": "64-121",
+  "a_dire": "Appliquer deux fois le cycle (i j a) donne le cycle (i a j).",
+  "legende_titre": "Le cycle (1 2 3) appliqué deux fois",
+  "lecture": [
+   "Le triangle bleu à gauche est le cycle (1 2 3) ; les deux flèches orange de 1 à 2 et de 2 à 3 montrent 1 qui va en 2, puis en 3.",
+   "Le triangle vert à droite est le cycle (1 3 2) : 1 va en 3.",
+   "Le signe égal les relie."
+  ],
+  "a_voir": "Deux pas orange à gauche font le même trajet qu’une flèche verte à droite."
+ },
+ {
+  "code": "64-122",
+  "a_dire": "(i a b) = (i j b)(i j a)² : on applique (i j a) deux fois puis (i j b), et j revient à sa place.",
+  "legende_titre": "Fabriquer un 3-cycle sans j",
+  "lecture": [
+   "Les quatre colonnes sont les places 1, 2, 3, 4 ; le trait bleu suit 1, l’orange suit 3, le vert suit 4.",
+   "D’abord (1 2 3) deux fois, puis (1 2 4).",
+   "Le texte du haut dit que 2 revient à sa place.",
+   "Le texte vert du bas lit le résultat : 1 en 3, 3 en 4, 4 en 1, soit (1 3 4)."
+  ],
+  "a_voir": "Le trait gris de 2 revient à sa colonne de départ ; les trois autres tournent."
+ },
+ {
+  "code": "64-123",
+  "a_dire": "(j a b) = (i j b)²(i j a) : on applique (i j a) puis (i j b) deux fois, et i revient à sa place.",
+  "legende_titre": "Fabriquer un 3-cycle sans i",
+  "lecture": [
+   "Les quatre colonnes sont les places 1, 2, 3, 4 ; le trait bleu suit 2, l’orange suit 3, le vert suit 4.",
+   "Lis de haut en bas : 1. (1 2 3), 2. (1 2 4), 3. encore (1 2 4).",
+   "Le trait gris de 1 revient à sa colonne.",
+   "Le texte vert du bas écrit le résultat : (2 3 4) = (1 2 4)²(1 2 3)."
+  ],
+  "a_voir": "Seul le trait gris de 1 retrouve sa place."
+ },
+ {
+  "code": "64-124",
+  "a_dire": "(a b c) s’écrit avec quatre cycles de la forme (i j …) : i et j reviennent à leur place et a, b, c tournent.",
+  "legende_titre": "Un 3-cycle sans i ni j en quatre actions",
+  "lecture": [
+   "Les cinq colonnes sont les places 1 à 5 ; les traits gris suivent 1 et 2, le bleu suit 3, l’orange 4, le violet 5.",
+   "Lis de haut en bas les quatre actions numérotées : 1. (1 2 3), 2. (1 2 4) deux fois, 3. (1 2 5), 4. (1 2 3) deux fois.",
+   "En bas, 1 et 2 sont revenus à leur place ; 3 est en 4, 4 est en 5, 5 est en 3.",
+   "Le texte vert donne le résultat : (3 4 5)."
+  ],
+  "a_voir": "Les traits gris reviennent à leur place ; bleu, orange et violet tournent."
+ },
+ {
+  "code": "64-125",
+  "a_dire": "Si N contient (i j a), la conjugaison par γ = (i j)(a k), paire, donne (i j k) dans N ; N contient tous les 3-cycles, donc A_n.",
+  "legende_titre": "Conjuguer par une permutation paire",
+  "lecture": [
+   "Le triangle bleu du haut est le carré du cycle (1 2 3), c’est-à-dire (1 3 2), dans N.",
+   "Les flèches orange sont γ = (1 2)(3 4) : 1 vers 2, 3 vers 4, 2 vers 1.",
+   "Le triangle vert est (2 4 1), qui est le cycle (1 2 4) ; il est dans N.",
+   "Le texte gris dit que γ fait deux échanges et qu’elle est paire.",
+   "Les deux cases du bas concluent : N contient tous les 3-cycles, donc A_n."
+  ],
+  "a_voir": "Le triangle vert est le triangle bleu renommé par une permutation paire, ce qui mène à A_n dans N."
+ },
+ {
+  "code": "64-126",
+  "a_dire": "γ = (i j)(a k) est paire d’elle-même : le lemme B marche dès n ≥ 3 et n ≥ 5 ne sert que dans le lemme suivant.",
+  "legende_titre": "Où a-t-on besoin d’un cinquième objet ?",
+  "lecture": [
+   "Les quatre disques bleus 1 à 4 sont reliés par deux flèches orange : les échanges (1 2) et (3 4).",
+   "L’accolade verte dit que ce produit de deux échanges est pair.",
+   "Le disque 5 en gris pointillé n’est pas utilisé.",
+   "La case verte du bas dit que le lemme B marche dès n ≥ 3 ; la case en pointillés dit que n ≥ 5 sert au lemme suivant."
+  ],
+  "a_voir": "Aucune flèche ne touche le disque 5."
+ },
+ {
+  "code": "64-127",
+  "a_dire": "Tout sous-groupe normal N ≠ {e} de A_n, pour n ≥ 5, contient un 3-cycle : un de ses éléments prend l’une de cinq formes, et dans chacune on fabrique un élément qui ne bouge que trois objets.",
+  "legende_titre": "Cinq formes, un même but",
+  "lecture": [
+   "Les cinq cases bleues sont les cinq formes possibles d’un élément de N : un 3-cycle, un cycle long, deux 3-cycles, un 3-cycle avec des échanges, seulement des échanges.",
+   "Les cinq flèches orange arrivent à la même case verte : un élément de N qui bouge 3 objets, donc un 3-cycle.",
+   "La dernière case, entourée en pointillés orange, est la seule qui demande un cinquième objet."
+  ],
+  "a_voir": "Les cinq formes mènent à la même case verte."
+ }
+]

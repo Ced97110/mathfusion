@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 4, 84, 60, 'fixe')
+text(ax, 12, 58, r'$\mathbb{Z}$', 'fixe', 'l')
+box(ax, 8, 8, 72, 44, 'resultat')
+text(ax, 18, 46, r'$\mathbb{N}$', 'resultat', 'l')
+text(ax, 22, 33, '1. le neutre', 'sujet', 's'); disc(ax, 22, 22, 3.4, 'sujet', label='1', size='s')
+text(ax, 62, 47, '2. le produit', 'sujet', 's')
+disc(ax, 50, 36, 3.2, 'varie', label='3', size='s'); disc(ax, 74, 36, 3.2, 'varie', label='4', size='s')
+disc(ax, 62, 20, 4.2, 'sujet', label='12', size='s')
+arrow(ax, (52, 33.5), (60, 23.5), 'varie'); arrow(ax, (72, 33.5), (64, 23.5), 'varie')
+text(ax, 62, 12, 'reste dans ℕ', 'resultat', 's')
+save(fig, '44-085')

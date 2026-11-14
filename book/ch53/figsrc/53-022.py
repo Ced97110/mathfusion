@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 72, 'ALGEBRE devient des nombres', 'encre', 'm')
+box(ax, 14, 56, 60, 10, 'sujet', label='0, 11, 6, 4, 1, 17, 4')
+box(ax, 14, 8, 60, 10, 'resultat', label='3, 14, 9, 7, 4, 20, 7')
+arrow(ax, (10, 55), (10, 19), 'varie', lw=1.4)
+arrow(ax, (78, 19), (78, 55), 'autre', lw=1.4)
+text(ax, 14, 42, 'chiffrer = fonction : + 3', 'varie', 's', ha='left')
+text(ax, 74, 32, 'déchiffrer = réciproque : − 3', 'autre', 's', ha='right')
+save(fig, '53-022')

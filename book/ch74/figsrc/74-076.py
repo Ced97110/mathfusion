@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+for i in range(6): text(ax, 24 + 8*i, 60, 'bp'[i % 2], 'sujet', 'l')
+text(ax, 44, 51, 'chaque mouvement de la frise', 'fixe', 's')
+box(ax, 3, 32, 34, 9, 'sujet', label='glissement (pair)', size='s')
+box(ax, 3, 15, 34, 9, 'varie', label='glissée (impair)', size='s')
+box(ax, 51, 32, 34, 9, 'resultat', label='ne rien changer', size='s')
+box(ax, 51, 15, 34, 9, 'resultat', label='retourner (horizontal)', size='s')
+arrow(ax, (38, 36.5), (50, 36.5), 'varie'); arrow(ax, (38, 19.5), (50, 19.5), 'varie')
+text(ax, 44, 40.5, '$A$', 'varie', 'm')
+text(ax, 68, 7, r'$G_0$ : 2 éléments', 'resultat', 'm')
+save(fig, '74-076')

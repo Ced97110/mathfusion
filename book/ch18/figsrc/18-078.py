@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, r'essai $(5x+2)(4x+3)$', 'sujet', 'm')
+box(ax, 12, 24, 26, 40, 'fixe', fill=False, dash=True)
+box(ax, 50, 24, 26, 40, 'fixe', fill=False, dash=True)
+box(ax, 16, 50, 18, 11, 'sujet', label=r'$5x$'); box(ax, 54, 50, 18, 11, 'autre', label=r'$4x$')
+box(ax, 16, 26, 18, 11, 'sujet', label=r'$2$'); box(ax, 54, 26, 18, 11, 'autre', label=r'$3$')
+arrow(ax, (30, 50), (58, 37.3), 'varie')
+arrow(ax, (58, 50), (30, 37.3), 'varie')
+text(ax, 82, 31.5, r'$15x$', 'varie', 's'); text(ax, 6, 31.5, r'$8x$', 'varie', 's')
+box(ax, 14, 11, 60, 10, 'resultat', label=r'$15x+8x=23x$')
+text(ax, 44, 5, r'milieu $=23x$ : réussi', 'resultat', 's')
+save(fig, '18-078')

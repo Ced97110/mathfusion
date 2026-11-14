@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 2, 56, 40, 10, 'resultat', label='addition', weight='bold')
+box(ax, 46, 56, 40, 10, 'limite', label='soustraction', weight='bold')
+box(ax, 2, 38, 40, 10, 'resultat', label=r'$(1+2)+(3+4)=10$', size='s')
+box(ax, 2, 18, 40, 10, 'resultat', label=r'$((1+2)+3)+4=10$', size='s')
+text(ax, 22, 33, r'$=$', 'resultat', 'xl')
+box(ax, 46, 38, 40, 10, 'limite', label=r'$10-(5-2)=7$', size='s')
+box(ax, 46, 18, 40, 10, 'limite', label=r'$(10-5)-2=3$', size='s')
+text(ax, 66, 33, r'$\neq$', 'limite', 'xl')
+text(ax, 22, 11, 'on peut recoller', 'resultat', 's'); text(ax, 66, 11, 'on ne peut pas', 'limite', 's')
+text(ax, 66, 5, 'sans associativité', 'limite', 's')
+save(fig, '45-108')

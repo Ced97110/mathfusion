@@ -1,0 +1,194 @@
+[
+ {
+  "code": "74-081",
+  "a_dire": "Le réseau est envoyé sur lui-même par les rotations du papier : un quart de tour oui, 45° non.",
+  "legende_titre": "La grille et les tours",
+  "lecture": [
+   "Les points gris forment la grille des glissements du papier.",
+   "La flèche bleue part de l’origine vers le point (1 ; 0).",
+   "La flèche verte est son image par le quart de tour : elle arrive sur un point de la grille.",
+   "La flèche rouge est son image par un tour de 45° : elle arrive hors de la grille, sur le cercle en pointillés."
+  ],
+  "a_voir": "Le quart de tour garde la grille, le tour de 45° la fait sortir."
+ },
+ {
+  "code": "74-082",
+  "a_dire": "La preuve part de f et v, passe par trois mouvements à la suite, et arrive à une translation de vecteur Av.",
+  "legende_titre": "Trois mouvements, une flèche",
+  "lecture": [
+   "Le point bleu (2 ; 3) est le départ.",
+   "Les trois flèches orange sont les trois mouvements à la suite : f moins un, puis le glissement de v, puis f.",
+   "Le point vert (2 ; 4) est l’arrivée.",
+   "La petite flèche verte va du départ à l’arrivée : c’est la flèche Av, qui vaut (0 ; 1)."
+  ],
+  "a_voir": "Les trois mouvements ensemble font glisser le point de la flèche Av."
+ },
+ {
+  "code": "74-083",
+  "a_dire": "Si le papier glisse de v et tourne de θ, il glisse aussi de v tourné de θ.",
+  "legende_titre": "Un glissement qui tourne",
+  "lecture": [
+   "La flèche bleue est le glissement de 1 vers la droite.",
+   "L’arc orange est le quart de tour qui tourne cette flèche.",
+   "La flèche verte est la flèche tournée : 1 vers le haut.",
+   "Le papier glisse donc aussi de cette flèche verte."
+  ],
+  "a_voir": "La flèche tournée est encore un glissement du papier."
+ },
+ {
+  "code": "74-084",
+  "a_dire": "Le groupe ponctuel est fini, car il n’y a qu’un nombre fini de points du réseau à une distance donnée.",
+  "legende_titre": "Peu de choix possibles",
+  "lecture": [
+   "Les points gris sont les points de la grille.",
+   "Les 4 points orange sont ceux qui sont à la distance 1 de l’origine, sur le cercle en pointillés.",
+   "La flèche bleue x et la flèche violette y peuvent chacune arriver sur l’un des 4 points orange.",
+   "La case verte donne le total : au plus 16 choix."
+  ],
+  "a_voir": "Il y a 4 choix pour x et 4 choix pour y, donc un nombre fini de matrices."
+ },
+ {
+  "code": "74-085",
+  "a_dire": "Le groupe ponctuel d’un papier peint est C ou D avec n égal à 1, 2, 3, 4 ou 6 : le 5 est exclu.",
+  "legende_titre": "Les ordres permis",
+  "lecture": [
+   "Sur la droite, les cercles verts 1, 2, 3, 4 et 6 sont les valeurs de n permises.",
+   "Le cercle rouge 5 n’est pas permis.",
+   "Le pentagone violet a pour groupe D₅ : la valeur 5 existe, mais pour une figure seule.",
+   "Le trait rouge en pointillés relie le pentagone au 5 refusé."
+  ],
+  "a_voir": "Sur un papier qui se répète, n vaut 1, 2, 3, 4 ou 6, jamais 5."
+ },
+ {
+  "code": "74-086",
+  "a_dire": "Un dessin qui se répète n’a que des rotations d’ordre 1, 2, 3, 4 ou 6, jamais 5 ni 7.",
+  "legende_titre": "Une limite qui pèse sur les rotations",
+  "lecture": [
+   "L’étoile violette à 5 bras est seule : elle a une rotation d’ordre 5.",
+   "La grille bleue de carrés se répète : elle a une rotation d’ordre 4.",
+   "La case verte en bas donne la liste des ordres permis pour un dessin qui se répète.",
+   "Le texte rouge en haut dit ce qui est exclu : 5 et 7."
+  ],
+  "a_voir": "Dès qu’un dessin se répète, les ordres 5 et 7 disparaissent."
+ },
+ {
+  "code": "74-087",
+  "a_dire": "d(P, Q) est le nombre qui donne la distance entre les deux points P et Q.",
+  "legende_titre": "Lire d de P Q",
+  "lecture": [
+   "Les deux points sont P (1 ; 2) en gris et Q (4 ; 6) en violet.",
+   "Le trait bleu qui les relie est la distance, notée 5.",
+   "À droite, d(P, Q) = 5 s’écrit en bleu comme le trait.",
+   "La lettre d est la règle, P et Q sont les deux points, 5 est le nombre obtenu."
+  ],
+  "a_voir": "Le signe d(P, Q) dit un nombre : la distance entre P et Q."
+ },
+ {
+  "code": "74-088",
+  "a_dire": "|v| est la longueur de la flèche v, de l’origine à sa pointe.",
+  "legende_titre": "Longueur d’une flèche",
+  "lecture": [
+   "Le point noir est l’origine.",
+   "La flèche bleue v part de l’origine et arrive en (3 ; 4).",
+   "Sa longueur est écrite |v| = 5 à droite, en bleu.",
+   "Le signe |v| remplace la phrase sur la distance entre l’origine et la pointe."
+  ],
+  "a_voir": "La longueur |v| est celle de la flèche tracée depuis l’origine."
+ },
+ {
+  "code": "74-089",
+  "a_dire": "La lettre f nomme une règle, ici le quart de tour, qui envoie chaque point P sur un point f(P).",
+  "legende_titre": "f est un quart de tour",
+  "lecture": [
+   "Les points bleus sont des points de départ : (1 ; 0) et (2 ; 3).",
+   "Les flèches orange sont l’action de f, le quart de tour autour de l’origine.",
+   "Les points verts sont les images : (0 ; 1) et (−3 ; 2).",
+   "Le point noir est l’origine, qui sert de centre."
+  ],
+  "a_voir": "f est le nom d’une règle qui agit sur les points."
+ },
+ {
+  "code": "74-090",
+  "a_dire": "A est la partie qui tourne dans f(x) = Ax + b ; b est la partie qui glisse.",
+  "legende_titre": "Séparer tourner et glisser",
+  "lecture": [
+   "Le point gris x est le point de départ.",
+   "L’arc bleu est la partie A : le quart de tour, qui envoie x sur Ax.",
+   "La flèche orange est le glissement b de 3 vers la droite.",
+   "Le point vert est l’arrivée, Ax + b."
+  ],
+  "a_voir": "A tourne d’abord, puis b glisse."
+ },
+ {
+  "code": "74-091",
+  "a_dire": "b est la flèche du glissement ; elle donne aussi l’endroit où arrive l’origine : f(0) = b.",
+  "legende_titre": "Où arrive l’origine",
+  "lecture": [
+   "Le point bleu est l’origine.",
+   "Les traits gris en pointillés montrent 3 vers la droite puis 1 vers le haut.",
+   "La flèche orange va de l’origine au point vert : c’est b.",
+   "Le point vert est f(0), qui est égal à b."
+  ],
+  "a_voir": "La flèche b va de l’origine à f(0)."
+ },
+ {
+  "code": "74-092",
+  "a_dire": "Aᵗ s’obtient en échangeant les lignes et les colonnes de A.",
+  "legende_titre": "Lignes et colonnes échangées",
+  "lecture": [
+   "La matrice A est à gauche, la matrice Aᵗ à droite.",
+   "La ligne 1 de A (0 ; −1) est en orange ; elle devient la colonne 1 de Aᵗ, aussi en orange.",
+   "La ligne 2 de A (1 ; 0) est en bleu ; elle devient la colonne 2 de Aᵗ, aussi en bleu.",
+   "La flèche orange va de A vers Aᵗ."
+  ],
+  "a_voir": "Chaque ligne de A devient une colonne de Aᵗ."
+ },
+ {
+  "code": "74-093",
+  "a_dire": "O(2) est l’ensemble des matrices à deux lignes et deux colonnes qui gardent les longueurs.",
+  "legende_titre": "Qui est dans O(2)",
+  "lecture": [
+   "Le cercle gris en pointillés a pour rayon la longueur 1.",
+   "À gauche, les deux flèches vertes sont les colonnes du quart de tour : longueur 1, perpendiculaires.",
+   "À droite, les deux flèches rouges sont les colonnes d’une matrice qui double les longueurs : longueur 2.",
+   "La première matrice est dans O(2), la seconde non."
+  ],
+  "a_voir": "Une matrice est dans O(2) quand ses colonnes ont la longueur 1 et sont perpendiculaires."
+ },
+ {
+  "code": "74-094",
+  "a_dire": "SO(2) contient les matrices de O(2) dont le déterminant vaut 1, c’est-à-dire les rotations.",
+  "legende_titre": "Rotation ou miroir",
+  "lecture": [
+   "La forme grise est le départ.",
+   "La forme verte est son image par le quart de tour : déterminant 1, dans SO(2).",
+   "La forme rouge est son image par le miroir horizontal : déterminant −1, pas dans SO(2).",
+   "Le point noir est l’origine."
+  ],
+  "a_voir": "Le quart de tour reste dans SO(2), le miroir en sort."
+ },
+ {
+  "code": "74-095",
+  "a_dire": "R indice θ est le nom de la rotation d’angle θ autour de l’origine ; ici θ vaut 180°.",
+  "legende_titre": "Nommer une rotation",
+  "lecture": [
+   "Le point bleu P est en (2 ; 1).",
+   "La flèche orange est la rotation R indice θ, un demi-tour.",
+   "Le point vert est l’image de P : (−2 ; −1).",
+   "Le point noir est l’origine, au milieu entre les deux."
+  ],
+  "a_voir": "Le signe R indice θ désigne le demi-tour quand θ vaut 180°."
+ },
+ {
+  "code": "74-096",
+  "a_dire": "S indice φ est le nom d’une réflexion dont l’axe fait l’angle φ/2 avec l’horizontale.",
+  "legende_titre": "Un miroir, un seul angle",
+  "lecture": [
+   "La droite grise en pointillés est l’axe, à 45° de l’horizontale.",
+   "L’arc orange marque 45°, qui est φ/2.",
+   "L’arc violet marque 90°, qui est φ.",
+   "La flèche orange envoie le point bleu (3 ; 1) sur le point vert (1 ; 3)."
+  ],
+  "a_voir": "L’axe fait la moitié de φ, pas φ."
+ }
+]

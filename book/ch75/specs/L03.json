@@ -1,0 +1,164 @@
+[
+ {
+  "code": "75-033",
+  "a_dire": "Deux plans orthogonaux, un carré d'aire orientée 1 dans chacun, aire nulle entre eux.",
+  "legende_titre": "Deux plans séparés",
+  "lecture": [
+   "Deux cadres en pointillés contiennent chacun deux flèches bleues et un carré vert marqué 1.",
+   "Le signe rouge entre les cadres dit que les aires entre les flèches des deux plans sont nulles."
+  ],
+  "a_voir": "Deux blocs, un carré dans chacun, et rien entre eux."
+ },
+ {
+  "code": "75-034",
+  "a_dire": "Une base symplectique est une base dont les aires B valent 1 sur chaque paire.",
+  "legende_titre": "Deux listes de flèches",
+  "lecture": [
+   "À gauche, les flèches (1, 0) et (0, 2) construisent un rectangle rouge d'aire 2.",
+   "À droite, les flèches (1, 0) et (0, 1) construisent un carré vert d'aire 1."
+  ],
+  "a_voir": "Seule la liste dont l'aire vaut 1 est symplectique."
+ },
+ {
+  "code": "75-035",
+  "a_dire": "B(e_i, f_i) vaut 1 parce qu'on divise la flèche d'essai par son aire.",
+  "legende_titre": "Pourquoi l'aire vaut 1",
+  "lecture": [
+   "À gauche, la flèche orange y avec e_i construit un rectangle d'aire 3.",
+   "La flèche du milieu dit qu'on divise par 3."
+  ],
+  "a_voir": "À droite, f_i et e_i construisent un carré vert d'aire 1."
+ },
+ {
+  "code": "75-036",
+  "a_dire": "Les autres valeurs de B sont nulles parce que chaque nouvelle paire est prise dans l'orthogonal.",
+  "legende_titre": "Les autres valeurs sont nulles",
+  "lecture": [
+   "La première ligne est e_1 : un 1 dans le plan P_1.",
+   "La ligne verte a son 1 dans la partie du plan orthogonal : B vaut 0."
+  ],
+  "a_voir": "La ligne rouge a un 1 dans P_1 : B vaut 1, la base n'est plus symplectique."
+ },
+ {
+  "code": "75-037",
+  "a_dire": "Dans une base symplectique, B est la somme des aires de chaque plan.",
+  "legende_titre": "B comme somme d'aires de plans",
+  "lecture": [
+   "Les deux lignes donnent les coordonnées de x et de y ; le bleu est le premier plan, le violet le second.",
+   "Sous le plan bleu, le nombre 10 est l'aire du premier plan."
+  ],
+  "a_voir": "Sous le plan violet, le nombre 1 est l'aire du second ; la somme vaut 11."
+ },
+ {
+  "code": "75-038",
+  "a_dire": "x_i et x'_i sont les nombres par lesquels on multiplie e_i et f_i.",
+  "legende_titre": "Lire les coordonnées de x",
+  "lecture": [
+   "La ligne du milieu donne les nombres 3, 2, 5, 2 de la flèche x.",
+   "Chaque flèche vers le bas relie un nombre à la flèche de base qu'il multiplie."
+  ],
+  "a_voir": "Les deux cases bleues sont le plan 1, les deux violettes le plan 2."
+ },
+ {
+  "code": "75-039",
+  "a_dire": "On projette sur chaque plan, on mesure l'aire de l'ombre, on additionne.",
+  "legende_titre": "Trois gestes pour lire la formule",
+  "lecture": [
+   "Dans chaque cadre, les flèches x et y gardent seulement leurs deux nombres de ce plan.",
+   "Le parallélogramme bleu a pour aire 10 dans le plan 1."
+  ],
+  "a_voir": "Le violet, presque plat, a pour aire 1 dans le plan 2 ; on additionne : 11."
+ },
+ {
+  "code": "75-040",
+  "a_dire": "e_i porte la position d'une particule et f_i sa vitesse multipliée par sa masse.",
+  "legende_titre": "Le plan des phases d'une bille",
+  "lecture": [
+   "Chaque cadre est le plan d'une bille ; l'axe horizontal est la position.",
+   "L'axe vertical est la vitesse multipliée par la masse."
+  ],
+  "a_voir": "Le point de la bille 1 est en 3 ; 2 et celui de la bille 2 en 5 ; 2."
+ },
+ {
+  "code": "75-041",
+  "a_dire": "Deux espaces de même dimension sont identiques à un changement de base près.",
+  "legende_titre": "Deux bases, même aire",
+  "lecture": [
+   "Les deux cadres gris sont deux espaces V et V′, de même dimension 2n.",
+   "Dans V, le carré bleu est construit sur la base (1, 0), (0, 1) et vaut 1.",
+   "Dans V′, le parallélogramme violet est construit sur la base (1, 0), (1, 1) et vaut aussi 1.",
+   "La flèche verte passe de l'une à l'autre : c'est un changement de base."
+  ],
+  "a_voir": "Deux espaces de même dimension se ramènent l'un à l'autre par un changement de base."
+ },
+ {
+  "code": "75-042",
+  "a_dire": "Pour les formes symplectiques il y a une seule famille, contre plusieurs pour les orthogonales.",
+  "legende_titre": "Un seul classement, pas deux",
+  "lecture": [
+   "À gauche, deux groupes de cases comptent 4 et 8 éléments : deux familles.",
+   "À droite, un seul groupe de 24 cases vert : une famille."
+  ],
+  "a_voir": "Du côté symplectique, rien à comparer."
+ },
+ {
+  "code": "75-043",
+  "a_dire": "Une transformation est symplectique quand elle garde l'aire B de deux flèches.",
+  "legende_titre": "Garder l'aire",
+  "lecture": [
+   "Le carré gris de départ a une aire de 1.",
+   "Le rectangle rouge, obtenu en doublant, a une aire de 2 : refusé."
+  ],
+  "a_voir": "Le parallélogramme vert, mouvement libre, garde l'aire 1 : accepté."
+ },
+ {
+  "code": "75-044",
+  "a_dire": "Enchaîner deux transformations symplectiques donne une transformation symplectique.",
+  "legende_titre": "Enchaîner garde l'aire",
+  "lecture": [
+   "Le carré gris part avec une aire de 1.",
+   "Après 1 seconde, puis 4 secondes, les formes vertes ont toujours l'aire 1."
+  ],
+  "a_voir": "Les flèches orange sont les deux mouvements enchaînés."
+ },
+ {
+  "code": "75-045",
+  "a_dire": "Une transformation symplectique envoie une base symplectique sur une base symplectique.",
+  "legende_titre": "Où va la base",
+  "lecture": [
+   "À gauche, la base e, f a pour aire B = 1.",
+   "En haut à droite, la transformation verte donne ηe, ηf et B vaut encore 1."
+  ],
+  "a_voir": "En bas à droite, doubler e donne B = 2 : la base n'est plus symplectique."
+ },
+ {
+  "code": "75-046",
+  "a_dire": "La transformation qui envoie une base symplectique sur une autre garde l'aire.",
+  "legende_titre": "Réciproque",
+  "lecture": [
+   "À gauche, les flèches x et y construisent un parallélogramme d'aire 5.",
+   "À droite, leurs images ηx et ηy construisent un parallélogramme d'aire 5."
+  ],
+  "a_voir": "La flèche orange est η : l'aire ne change pas."
+ },
+ {
+  "code": "75-047",
+  "a_dire": "Le signe V désigne l'ensemble de toutes les flèches, que l'on peut additionner et multiplier par un nombre.",
+  "legende_titre": "Le signe V",
+  "lecture": [
+   "Le cadre bleu contient des flèches dans toutes les directions : c'est V.",
+   "En haut à droite, x et y s'additionnent en x + y."
+  ],
+  "a_voir": "En bas à droite, x devient 2x."
+ },
+ {
+  "code": "75-048",
+  "a_dire": "Le signe F garde la place du corps : réels, complexes ou corps à q éléments.",
+  "legende_titre": "Le signe F",
+  "lecture": [
+   "Le grand F bleu est la définition écrite une seule fois.",
+   "Chaque flèche orange mène à un choix de corps."
+  ],
+  "a_voir": "Les trois cases violettes sont ℝ, ℂ et un corps à q éléments."
+ }
+]

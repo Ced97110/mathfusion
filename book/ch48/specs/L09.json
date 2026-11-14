@@ -1,0 +1,188 @@
+[
+ {
+  "code": "48-129",
+  "a_dire": "Pour reconnaître G/K, on trouve un homomorphisme surjectif f de G sur un groupe connu et on vérifie que son noyau est K ; alors G/K est isomorphe à ce groupe.",
+  "legende_titre": "Reconnaître un quotient sans calculer dessus",
+  "lecture": [
+   "Le cadre bleu est le groupe G, ici les entiers ℤ ; le cadre gris dedans est K, les multiples de 12.",
+   "La flèche orange est f, qui envoie chaque entier sur son reste dans la division par 12 ; elle est surjective.",
+   "Le cadre violet est le groupe connu, l'horloge à douze heures ; le rond vert est son 0.",
+   "La flèche verte montre que K est envoyé sur le 0 : K est le noyau de f."
+  ],
+  "a_voir": "Surjectif plus noyau K donnent G/K isomorphe au groupe connu."
+ },
+ {
+  "code": "48-130",
+  "a_dire": "L'application qui envoie un entier sur sa classe modulo n est surjective et son noyau est nℤ.",
+  "legende_titre": "Entiers envoyés sur leurs classes modulo 5",
+  "lecture": [
+   "Chaque case bleue ou verte est un entier ; la colonne de la case du haut donne sa classe, en violet.",
+   "Les cases vertes, de la colonne 0 (0, 5, 10, 15), sont les multiples de 5 : c'est le noyau 5ℤ.",
+   "La case orange est 17, qui tombe dans la colonne de la classe 2.",
+   "Chaque classe contient des entiers, donc chaque classe est atteinte."
+  ],
+  "a_voir": "Les multiples de 5 sont tous envoyés sur la classe 0."
+ },
+ {
+  "code": "48-131",
+  "a_dire": "Les sous-groupes de ℤ/nℤ sont les kℤ/nℤ, avec k diviseur de n ; ici il y a un sous-groupe par diviseur de 12.",
+  "legende_titre": "Un sous-groupe par diviseur de 12",
+  "lecture": [
+   "Chaque ligne a douze cases, les positions 0 à 11 de l'horloge.",
+   "Les cases bleues sont les multiples de k : ce sont les éléments du sous-groupe.",
+   "Les valeurs de k sont 1, 2, 3, 4, 6 et 12, les diviseurs de 12.",
+   "Plus k est grand, moins il y a de cases bleues."
+  ],
+  "a_voir": "Chaque diviseur de 12 donne une ligne différente."
+ },
+ {
+  "code": "48-132",
+  "a_dire": "Pour lister les sous-groupes d'une horloge, on liste les diviseurs de son nombre de positions.",
+  "legende_titre": "Compter les diviseurs donne les sous-groupes",
+  "lecture": [
+   "Chaque ligne est une horloge : ℤ/7ℤ, ℤ/10ℤ, ℤ/12ℤ.",
+   "Chaque colonne est un nombre k.",
+   "Une case bleue veut dire que k divise le nombre de positions ; elle correspond à un sous-groupe.",
+   "Les lignes ont 2, 4 et 6 cases bleues."
+  ],
+  "a_voir": "Le nombre de cases bleues d'une ligne est le nombre de sous-groupes."
+ },
+ {
+  "code": "48-133",
+  "a_dire": "Le déterminant envoie GL₂(ℝ) sur ℝ*, SL₂(ℝ) est ce qui part sur 1, et le quotient est isomorphe à ℝ*.",
+  "legende_titre": "Le déterminant de GL₂(ℝ) vers ℝ*",
+  "lecture": [
+   "Le grand cadre bleu est GL₂(ℝ) ; il contient la matrice 3, 1, 2, 2.",
+   "Le cadre vert dedans est SL₂(ℝ) ; il contient la matrice 2, 1, 1, 1 de déterminant 1.",
+   "Le cadre violet est ℝ*, avec les nombres 4 et 1.",
+   "Les flèches sont le déterminant."
+  ],
+  "a_voir": "Les matrices de déterminant 1 forment le cadre vert, et le quotient est ℝ*."
+ },
+ {
+  "code": "48-134",
+  "a_dire": "Le déterminant est ad moins bc : on multiplie une diagonale, on multiplie l'autre, on retire le second produit du premier.",
+  "legende_titre": "Les trois actions du déterminant",
+  "lecture": [
+   "Les cases bleues a et d forment la première diagonale ; les cases orange b et c, l'autre.",
+   "Le haut du texte à droite donne 3 fois 2 : le produit ad.",
+   "Le texte orange donne 1 fois 2 : le produit bc.",
+   "Le texte vert donne 6 moins 2, soit 4."
+  ],
+  "a_voir": "On retire le produit bc du produit ad."
+ },
+ {
+  "code": "48-135",
+  "a_dire": "Le déterminant d'un produit de matrices est le produit des déterminants.",
+  "legende_titre": "Le déterminant d'un produit",
+  "lecture": [
+   "Le haut montre les matrices A (bleu), B (violet) et leur produit AB (vert).",
+   "Les flèches orange donnent le déterminant de chacune.",
+   "En bas, 1 fois 6 donne 6, comme le déterminant de AB."
+  ],
+  "a_voir": "La ligne du bas multiplie, comme la ligne du haut."
+ },
+ {
+  "code": "48-136",
+  "a_dire": "Le déterminant est surjectif, car tout réel t non nul est le déterminant de la matrice t, 0, 0, 1, et son noyau est l'ensemble des matrices de déterminant 1.",
+  "legende_titre": "Tout réel non nul est un déterminant",
+  "lecture": [
+   "Le cadre bleu est la matrice avec t en haut à gauche, 1 en bas à droite et des 0.",
+   "Les flèches orange vont vers −3 et 5 de la droite : chaque t non nul est atteint.",
+   "La flèche verte va vers 1 : ces matrices forment le noyau SL₂(ℝ).",
+   "Le rond rouge vide est 0, jamais atteint."
+  ],
+  "a_voir": "Tous les réels sont atteints sauf 0, et 1 est la valeur du noyau."
+ },
+ {
+  "code": "48-137",
+  "a_dire": "SL₂(ℝ) est normal dans GL₂(ℝ), car c'est le noyau du déterminant, et le quotient est isomorphe à ℝ*.",
+  "legende_titre": "Un paquet de matrices par valeur du déterminant",
+  "lecture": [
+   "Chaque bande de gauche est un paquet de matrices de même déterminant.",
+   "La bande verte, de déterminant 1, est SL₂(ℝ).",
+   "Chaque rond de droite est un élément de ℝ*.",
+   "Chaque flèche relie un paquet à un seul nombre."
+  ],
+  "a_voir": "Un paquet correspond à un nombre de ℝ*, donc le quotient ressemble à ℝ*."
+ },
+ {
+  "code": "48-138",
+  "a_dire": "Avec le théorème, trois vérifications suffisent à la place d'un long calcul sur les classes.",
+  "legende_titre": "Trois vérifications au lieu d'un long calcul",
+  "lecture": [
+   "La colonne rouge montre les trois étapes longues du calcul à la main.",
+   "La colonne verte montre les trois vérifications du théorème.",
+   "Les boîtes de la colonne verte sont plus courtes que celles de la colonne rouge."
+  ],
+  "a_voir": "La preuve par le théorème est plus courte."
+ },
+ {
+  "code": "48-139",
+  "a_dire": "La signature envoie S₃ sur {1, −1} ; son noyau est A₃ et les échanges partent sur −1.",
+  "legende_titre": "La signature de S₃ vers {1, −1}",
+  "lecture": [
+   "Le grand cadre bleu est S₃, les six permutations.",
+   "Le cadre vert est le noyau A₃ : l'identité et les deux permutations circulaires, envoyées sur 1.",
+   "Le cadre orange contient les trois échanges, envoyés sur −1.",
+   "Le cadre violet est {1, −1}."
+  ],
+  "a_voir": "Deux paquets de trois permutations, deux valeurs."
+ },
+ {
+  "code": "48-140",
+  "a_dire": "La signature d'un produit est le produit des signatures : sg est un homomorphisme vers {1, −1}.",
+  "legende_titre": "La signature respecte le produit",
+  "lecture": [
+   "Le haut montre deux échanges (bleu) et leur produit, une permutation circulaire (vert).",
+   "Les flèches orange donnent la signature de chacune.",
+   "En bas, −1 fois −1 donne 1, la signature de la circulaire."
+  ],
+  "a_voir": "Le produit en haut devient le produit en bas."
+ },
+ {
+  "code": "48-141",
+  "a_dire": "La table de composition pair/impair est celle de ℤ/2ℤ, avec pair comme 0 et impair comme 1.",
+  "legende_titre": "Pair/impair se compose comme 0 et 1",
+  "lecture": [
+   "Les entêtes bleus sont « pair = 0 » ; les entêtes orange sont « impair = 1 ».",
+   "Chaque case est le résultat de la combinaison de sa ligne et de sa colonne.",
+   "Pair avec pair et impair avec impair donnent pair ; pair avec impair donne impair."
+  ],
+  "a_voir": "Une seule table se lit comme pair/impair et comme 0 et 1."
+ },
+ {
+  "code": "48-142",
+  "a_dire": "Les permutations paires sont la moitié de S_n : A_n a n!/2 éléments.",
+  "legende_titre": "Les paires sont la moitié des permutations",
+  "lecture": [
+   "Chaque case est une permutation.",
+   "Les cases vertes sont les paires ; les grises, les impaires.",
+   "Pour n = 3, 3 cases vertes et 3 grises sur 6 ; pour n = 4, 12 et 12 sur 24."
+  ],
+  "a_voir": "Il y a autant de cases vertes que de cases grises."
+ },
+ {
+  "code": "48-143",
+  "a_dire": "L'exponentielle envoie une somme sur un produit : exp de 2 plus 3 est exp de 2 fois exp de 3.",
+  "legende_titre": "L'exponentielle transforme + en ×",
+  "lecture": [
+   "La ligne du haut additionne 2 et 3 pour faire 5, dans (ℝ, +).",
+   "Les flèches orange sont exp.",
+   "La ligne du bas multiplie 7,389 et 20,086 et obtient 148,41, dans (ℝ>0, ×).",
+   "Le résultat vert est l'image de 5."
+  ],
+  "a_voir": "Additionner en haut revient à multiplier en bas."
+ },
+ {
+  "code": "48-144",
+  "a_dire": "ℝ>0 désigne les réels strictement plus grands que 0.",
+  "legende_titre": "Le signe ℝ>0 sur la droite",
+  "lecture": [
+   "La droite graduée est ℝ, tous les réels.",
+   "La partie verte, à droite de 0, est ℝ>0 ; 0,5 et 3 y sont.",
+   "La partie rouge à gauche et le rond rouge vide en 0 ne sont pas dans ℝ>0 ; −2 non plus."
+  ],
+  "a_voir": "Le signe > 0 écarte 0 et les nombres négatifs."
+ }
+]

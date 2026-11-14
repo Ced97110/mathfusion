@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 8, 76, 'exact', 'fixe', 's', weight='bold')
+text(ax, 14, 76, "seule source d'erreur", 'varie', 's', ha='left', weight='bold')
+text(ax, 72, 76, 'écart', 'varie', 's')
+for y, a, b, c, e in [(62, '5', '3/8', '1/4', '−1/8'), (50, '4', '9/10', '1', '+1/10'), (38, '11', '1/5', '1/4', '+1/20')]:
+    box(ax, 3, y, 10, 9, 'fixe', label=a)
+    box(ax, 14, y, 14, 9, 'varie', label=b)
+    arrow(ax, (29, y + 4.5), (43, y + 4.5), 'varie')
+    box(ax, 44, y, 13, 9, 'sujet', label=c)
+    text(ax, 72, y + 4.5, e, 'varie', 'm')
+text(ax, 44, 30, 'entiers : 5 + 4 + 11 = 20', 'fixe', 's')
+text(ax, 44, 24, r'fractions : 1/4 + 1 + 1/4 = 1 1/2', 'sujet', 's')
+box(ax, 14, 6, 56, 10, 'resultat', label='20 + 1 1/2 = 21 1/2')
+arrow(ax, (44, 21), (44, 17), 'resultat')
+save(fig, '10-071')

@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 44, 84, r'dans $\mathbb{Z}[\sqrt{3}\,i]$ :  $4=(1-\sqrt{3}\,i)(1+\sqrt{3}\,i)$', 'encre', 's')
+# 2 divise 4
+text(ax, 44, 74, '2 divise 4', 'resultat', 'm')
+box(ax, 6, 54, 18, 13, 'fixe', label='4', size='m')
+text(ax, 29, 60.5, '÷', 'encre', 'm')
+box(ax, 34, 54, 18, 13, 'sujet', label='2', size='m')
+text(ax, 57, 60.5, '=', 'encre', 'm')
+box(ax, 62, 54, 18, 13, 'resultat', label='2', size='m')
+# 2 ne divise pas un facteur
+text(ax, 44, 44, '2 divise-t-il un facteur ?', 'limite', 'm')
+box(ax, 2, 22, 30, 13, 'fixe', label=r'$1+\sqrt{3}\,i$', size='s')
+text(ax, 36, 28.5, '÷', 'encre', 'm')
+box(ax, 40, 22, 14, 13, 'sujet', label='2', size='m')
+text(ax, 58, 28.5, '=', 'encre', 'm')
+box(ax, 62, 22, 24, 13, 'limite', label=r'$\frac{1}{2}+\frac{1}{2}\sqrt{3}\,i$', size='s')
+text(ax, 74, 15, 'pas entiers', 'limite', 's')
+text(ax, 44, 5, 'donc 2 n’est pas premier', 'limite', 'm')
+save(fig, '56-060')

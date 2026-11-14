@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+y1, y2, h = 44, 12, 12
+box(ax, 2, y1, 24, h, 'fixe', label='message clair')
+box(ax, 32, y1, 26, h, 'autre', label='machine Enigma')
+box(ax, 64, y1, 22, h, 'fixe', label='chiffré')
+arrow(ax, (26.5, y1 + h / 2), (31.5, y1 + h / 2), 'varie')
+arrow(ax, (58.5, y1 + h / 2), (63.5, y1 + h / 2), 'varie')
+text(ax, 45, y1 - 4, 'vite, sans erreur', 'autre', 's')
+box(ax, 58, y2, 28, h, 'sujet', label='équipe de Turing')
+box(ax, 2, y2, 24, h, 'resultat', label='message lu')
+arrow(ax, (75, y1 - 0.5), (75, y2 + h + 0.5), 'varie')
+arrow(ax, (57.5, y2 + h / 2), (26.5, y2 + h / 2), 'varie')
+text(ax, 42, y2 + h / 2 + 3.5, 'sans la clé', 'varie', 's')
+save(fig, '53-074')

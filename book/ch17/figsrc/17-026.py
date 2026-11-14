@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 22, 46, 44, 12, 'sujet', label=r'$x + 7 > 4$', size='l', lw=1.4)
+text(ax, 44, 40, 'ni vrai ni faux seule', 'sujet', 's')
+arrow(ax, (33, 46), (22, 24), 'varie'); arrow(ax, (55, 46), (66, 24), 'varie')
+text(ax, 15, 35, r'$x = 0$', 'varie', 'm'); text(ax, 73, 35, r'$x = -5$', 'varie', 'm')
+box(ax, 2, 4, 40, 20, 'resultat'); box(ax, 46, 4, 40, 20, 'limite')
+text(ax, 22, 18, r'$0 + 7 = 7$', 'resultat', 'm'); text(ax, 22, 10, r'$7 > 4$ : vrai', 'resultat', 'm', weight='bold')
+text(ax, 66, 18, r'$-5 + 7 = 2$', 'limite', 'm'); text(ax, 66, 10, r'$2 > 4$ : faux', 'limite', 'm', weight='bold')
+save(fig, '17-026')

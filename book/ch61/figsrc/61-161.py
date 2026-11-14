@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+A = (33, 31); B = (55, 31); r = 22; h = math.sqrt(r * r - 121)
+for c in (A, B): ax.add_patch(Circle(c, r, ec=COL['fixe'], fc='none', lw=0.8, zorder=2))
+line(ax, [A, (44, 31)], 'sujet', lw=1.6); line(ax, [(44, 31), B], 'autre', lw=1.6)
+line(ax, [(44, 31 - h), (44, 31 + h)], 'resultat', lw=1.0, dash=True)
+for c in (A, B): disc(ax, c[0], c[1], 0.9, 'fixe')
+disc(ax, 44, 31, 1.1, 'resultat')
+text(ax, 30.5, 27.5, '$A$'); text(ax, 57.5, 27.5, '$B$'); text(ax, 46.5, 27.5, '$M$', 'resultat')
+text(ax, 38.5, 35, '0,5 cm', 'sujet', 's'); text(ax, 49.5, 35, '0,5 cm', 'autre', 's')
+save(fig, '61-161')

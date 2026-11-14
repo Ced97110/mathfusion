@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 44, 65, r'$p=3$ divise 3 et divise 6', 'fixe', 's')
+for i in range(3): box(ax, 8 + i * 9, 42, 8, 8, 'resultat')
+text(ax, 54, 46, 'Cauchy déjà acquis', 'resultat', 's')
+text(ax, 54, 55, 'groupe de 3 éléments', 'resultat', 's')
+for i in range(6): box(ax, 8 + i * 9, 10, 8, 8, 'sujet')
+text(ax, 34, 4, r'$G$ : $n=6$ éléments', 'sujet', 's')
+arrow(ax, (22, 40), (22, 21), 'varie')
+text(ax, 25, 31, 'on peut utiliser', 'varie', 's', ha='left')
+save(fig, '50-132')

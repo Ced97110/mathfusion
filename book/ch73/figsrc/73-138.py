@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 6, 82, 50, 'sujet', fill=False)
+text(ax, 44, 51, r'$O(3)$', 'sujet', 'm')
+box(ax, 7, 10, 40, 34, 'resultat')
+text(ax, 11, 38, r'$SO(3)$', 'resultat', 'm', ha='left')
+text(ax, 27, 29, 'décalage', 'resultat', 's'); text(ax, 27, 17, r'$\det = 1$', 'resultat', 'm')
+box(ax, 53, 10, 28, 34, 'limite')
+text(ax, 67, 33, 'échange de', 'limite', 's'); text(ax, 67, 28, '2 coordonnées', 'limite', 's')
+text(ax, 67, 17, r'$\det = -1$', 'limite', 'm')
+save(fig, '73-138')

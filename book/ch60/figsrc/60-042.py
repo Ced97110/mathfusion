@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 52, 80, 10, 'fixe', label=r'$M = Dz_1 \oplus Dz_2$')
+box(ax, 4, 28, 38, 15, 'sujet', label=r'$z_1 = (0, 1)$' + '\n' + r'ann $z_1$ = (4) ≠ 0')
+box(ax, 46, 28, 38, 15, 'autre', label=r'$z_2 = (1, 0)$' + '\n' + r'ann $z_2$ = (0)')
+arrow(ax, (23, 52), (23, 43.5), 'fixe')
+arrow(ax, (65, 52), (65, 43.5), 'fixe')
+box(ax, 4, 4, 38, 14, 'sujet', label=r'$z_1$ de torsion' + '\n' + 'dans tor M', size='s')
+box(ax, 46, 4, 38, 14, 'autre', label='copie de D' + '\n' + 'dans L, libre', size='s')
+arrow(ax, (23, 28), (23, 18.5), 'sujet')
+arrow(ax, (65, 28), (65, 18.5), 'autre')
+save(fig, '60-042')

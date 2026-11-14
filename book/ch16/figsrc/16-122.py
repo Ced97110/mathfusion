@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 44, 83, r'tour : 2 846 m', 'sujet', 'm', weight='bold')
+box(ax, 14, 64, 44, 10, 'sujet', label=r'4$w$ + 8 = 2 846', size='m')
+arrow(ax, (36, 64), (36, 57), 'varie'); text(ax, 40, 60.5, '−8', 'varie', 's', ha='left')
+box(ax, 14, 46, 44, 10, 'sujet', label=r'4$w$ = 2 838', size='m')
+arrow(ax, (36, 46), (36, 39), 'varie'); text(ax, 40, 42.5, '÷ 4', 'varie', 's', ha='left')
+box(ax, 14, 28, 44, 10, 'resultat', label=r'$w$ = 709,5', size='m')
+text(ax, 62, 33, 'longueur 713,5', 'resultat', 's', ha='left')
+f = numberline(ax, 10, 70, 14, 709, 710, 0.5, arrow_right=False)
+disc(ax, f(709.5), 14, 1.6, 'resultat')
+text(ax, 44, 3, 'entre deux entiers : pas deviné', 'limite', 's')
+save(fig, '16-122')

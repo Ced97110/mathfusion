@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 28, 36, 18, 'sujet', label='(4, 6)\n(6, 4)')
+box(ax, 50, 28, 36, 18, 'autre', label='(1, 0)\n(0, 20)')
+text(ax, 44, 37, r'$\neq$', 'limite', 'xl', weight='bold')
+text(ax, 20, 21, 'facteurs : 2, 10', 'sujet', 's')
+text(ax, 68, 21, 'facteurs : 1, 20', 'autre', 's')
+text(ax, 44, 9, r'les deux : $|\det|=20$', 'encre', 's')
+text(ax, 44, 55, 'listes différentes', 'limite', 'm', weight='bold')
+save(fig, '59-140')

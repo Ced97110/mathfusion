@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(66)
+text(ax,52,62,'case de 3 chiffres','fixe','s')
+box(ax,30,37,44,18,'fixe',fill=False,dash=True)
+for i in range(3): box(ax,32+i*14,40,12,12,'sujet',label='9')
+arrow(ax,(52,36),(52,29.5),'varie'); text(ax,62,32.5,'+ 1','varie','s')
+box(ax,30,10,44,18,'fixe',fill=False,dash=True)
+box(ax,16,13,12,12,'limite',label='1')
+for i in range(3): box(ax,32+i*14,13,12,12,'sujet',label='0')
+text(ax,22,6,'ne tient pas','limite','s')
+save(fig,'52-235')

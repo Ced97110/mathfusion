@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+arrow(ax, (10, 8), (62, 8), 'fixe', lw=0.8); arrow(ax, (10, 8), (10, 58), 'fixe', lw=0.8)
+p1, p2, p3 = (23, 34), (36, 21), (49, 47)
+for p in (p1, p2): disc(ax, p[0], p[1], 1.5, 'sujet')
+disc(ax, p3[0], p3[1], 1.5, 'resultat')
+arrow(ax, (p1[0] + 1.3, p1[1] + 0.9), (p3[0] - 1.4, p3[1] - 0.8), 'varie')
+arrow(ax, (p2[0] + 0.9, p2[1] + 1.3), (p3[0] - 0.4, p3[1] - 1.8), 'varie')
+text(ax, 17, 38, '(1, 2)', 'sujet', 's'); text(ax, 42, 17, '(2, 1)', 'sujet', 's')
+text(ax, 49, 52, '(3, 3)', 'resultat', 's')
+text(ax, 31, 47, 'envoie', 'varie', 's')
+text(ax, 44, 68, 'depuis (3, 3), quel point\nretrouver ?', 'limite', 'm')
+save(fig, '43-060')

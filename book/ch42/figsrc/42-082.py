@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+disc(ax, 36, 50, 30, 'autre'); disc(ax, 28, 50, 14, 'sujet')
+text(ax, 28, 60, 'P', 'sujet', 'l', weight='bold'); text(ax, 52, 70, 'Q', 'autre', 'l', weight='bold')
+disc(ax, 28, 48, 3.5, 'sujet', label='8', size='s')
+disc(ax, 54, 48, 3.5, 'autre', label='6', size='s')
+disc(ax, 80, 50, 3.5, 'limite', label='7', size='s')
+text(ax, 80, 58, 'hors de Q', 'limite', 's')
+text(ax, 4, 12, 'P : multiples de 4', 'sujet', 's', ha='left'); text(ax, 62, 12, 'Q : pairs', 'autre', 's', ha='left')
+text(ax, 44, 4, 'hors de Q ⇒ hors de P', 'resultat', 'm', weight='bold')
+save(fig, '42-082')

@@ -1,0 +1,193 @@
+[
+ {
+  "code": "49-192",
+  "a_dire": "Pour montrer que le conjugué du cycle est celui qu'on dit, on suit le point 4 en trois temps : la permutation inverse le ramène sur un objet du cycle, le cycle l'envoie sur le suivant, la permutation le renomme ; la première étape décide.",
+  "legende_titre": "Suivre un point pas à pas",
+  "lecture": [
+   "Le disque violet de gauche est le point de départ, 4.",
+   "Les disques bleus sont les objets du cycle (1 2 3) : 1, puis 2.",
+   "Les flèches orange portent les deux échanges, la flèche bleue porte le cycle.",
+   "Le disque vert de droite est l'arrivée : le point 4 arrive en 2."
+  ],
+  "a_voir": "Le trait épais, première étape, ramène 4 sur 1 : sans elle le cycle ne peut pas agir."
+ },
+ {
+  "code": "49-193",
+  "a_dire": "Conjuguer revient à renommer les objets d'un cycle, sans en créer ni en supprimer : la longueur reste la même.",
+  "legende_titre": "Renommer garde le nombre d'objets",
+  "lecture": [
+   "À gauche, le cycle (1 2 3) en bleu a 3 objets.",
+   "La flèche orange est le renommage : 1 devient 4.",
+   "À droite, le cycle (4 2 3) en violet a aussi 3 objets.",
+   "Le signe égal vert relie les deux nombres d'objets."
+  ],
+  "a_voir": "Les noms changent, le nombre d'objets reste 3."
+ },
+ {
+  "code": "49-194",
+  "a_dire": "Deux permutations qui déplacent le même nombre d'objets ne sont pas forcément conjuguées : il faut les mêmes longueurs de cycles.",
+  "legende_titre": "Même nombre d'objets, cycles différents",
+  "lecture": [
+   "À gauche, en bleu, un seul cycle passe par 1, 2, 3 et 4.",
+   "À droite, en violet, deux cycles de 2 : l'un entre 1 et 2, l'autre entre 3 et 4.",
+   "Les deux déplacent 4 objets.",
+   "Le signe rouge dit qu'elles ne sont pas conjuguées."
+  ],
+  "a_voir": "Un cycle de 4 et deux cycles de 2 ne se déduisent pas l'un de l'autre."
+ },
+ {
+  "code": "49-195",
+  "a_dire": "La forme d'une permutation est la liste des longueurs de ses cycles, points fixes compris ; plusieurs permutations peuvent avoir la même forme.",
+  "legende_titre": "Forme et permutation",
+  "lecture": [
+   "Les deux boîtes grises du haut sont deux permutations différentes.",
+   "Les flèches orange mènent toutes les deux à la même boîte bleue, 2 + 2.",
+   "La boîte du bas, (1 2 3), donne la forme 3 + 1.",
+   "Le 1 de 3 + 1 est le point 4, laissé en place."
+  ],
+  "a_voir": "La forme garde les longueurs des cycles et oublie lesquels des objets les forment."
+ },
+ {
+  "code": "49-196",
+  "a_dire": "Une classe de conjugaison de S_n regroupe exactement les permutations qui ont la même forme.",
+  "legende_titre": "Une classe : une forme",
+  "lecture": [
+   "Chaque petit triangle montre un échange parmi les trois objets 1, 2, 3.",
+   "Les deux disques bleus reliés par la double flèche sont échangés.",
+   "Le disque gris est laissé en place.",
+   "L'accolade dit que les trois échanges ont la même forme, donc la même classe."
+  ],
+  "a_voir": "Les trois échanges (1 2), (1 3), (2 3) ont la même forme 2 + 1 et sont dans la même classe."
+ },
+ {
+  "code": "49-197",
+  "a_dire": "Le signe τστ⁻¹ se lit « conjugué de σ par τ » : trois permutations côte à côte, qui agissent de droite à gauche.",
+  "legende_titre": "Lire le signe du conjugué",
+  "lecture": [
+   "La boîte bleue du milieu est σ, qui agit en deuxième.",
+   "La boîte orange de droite est τ⁻¹, qui agit en premier.",
+   "La boîte orange de gauche est τ, qui agit en troisième.",
+   "Les flèches grises montrent le sens de lecture, de droite à gauche."
+  ],
+  "a_voir": "Le signe remplace trois étapes par quatre signes écrits dans l'ordre."
+ },
+ {
+  "code": "49-198",
+  "a_dire": "Une forme de n est une façon d'écrire n comme somme d'entiers positifs, sans tenir compte de l'ordre.",
+  "legende_titre": "Les écritures de 4 en somme",
+  "lecture": [
+   "Chaque ligne bleue est une somme dont le total est 4 ; la longueur des cases est la valeur de chaque terme.",
+   "Il y a cinq lignes, donc cinq formes.",
+   "En bas, les deux barres violettes 1 + 3 et 3 + 1 ont la même longueur.",
+   "Le signe égal vert dit que l'ordre ne compte pas."
+  ],
+  "a_voir": "Cinq formes pour 4 objets, et 1 + 3 est la même forme que 3 + 1."
+ },
+ {
+  "code": "49-199",
+  "a_dire": "Pour trois objets il y a trois formes, de 1, 3 et 2 permutations, et leur somme est 6.",
+  "legende_titre": "Les trois formes de trois objets",
+  "lecture": [
+   "Chaque cadre pointillé est une forme : 1+1+1, 2+1 et 3.",
+   "Le nombre de disques dans un cadre est le nombre de permutations de cette forme.",
+   "Le chiffre sous chaque cadre le répète : 1, 3, 2.",
+   "L'accolade et l'égalité verte donnent le total : 6 = 1 + 3 + 2."
+  ],
+  "a_voir": "Les trois classes contiennent 1, 3 et 2 permutations, soit 6 en tout."
+ },
+ {
+  "code": "49-200",
+  "a_dire": "L'équation des classes de S_4 est 24 = 1 + 6 + 3 + 8 + 6 : cinq formes, cinq tailles de classes dont la somme est 24.",
+  "legende_titre": "Les cinq classes de quatre objets",
+  "lecture": [
+   "Chaque ligne est une forme, écrite à gauche en bleu.",
+   "Chaque petite case bleue est un élément de la classe ; leur nombre est écrit à droite.",
+   "Une seule classe n'a qu'une case : celle de la forme 1+1+1+1.",
+   "L'égalité verte additionne les cinq nombres et donne 24."
+  ],
+  "a_voir": "Les cinq tailles 1, 6, 3, 8, 6 s'additionnent en 24."
+ },
+ {
+  "code": "49-201",
+  "a_dire": "La formule orbite-stabilisateur donne la taille d'une orbite à la fois : pour compter les orbites, il faut les trouver chacune.",
+  "legende_titre": "Les orbites, une par une",
+  "lecture": [
+   "À gauche, les 16 disques gris sont les colorations.",
+   "À droite, six boîtes bleues sont les six orbites à trouver.",
+   "Chaque flèche orange mène à l'orbite suivante : on les prend l'une après l'autre.",
+   "Le texte orange rappelle qu'on travaille une orbite à la fois."
+  ],
+  "a_voir": "Pour obtenir le nombre d'orbites par cette formule, il faut parcourir les 6 orbites."
+ },
+ {
+  "code": "49-202",
+  "a_dire": "Quand il y a trop de colorations pour lister les orbites, on veut une formule qui donne leur nombre sans les lister.",
+  "legende_titre": "Compter sans lister",
+  "lecture": [
+   "La grille grise est faite de 256 cases : les colorations.",
+   "La boîte violette est le groupe de 8 symétries du carré.",
+   "La flèche orange est le calcul qu'on veut, sans lister.",
+   "La boîte verte est le résultat : 55 orbites."
+  ],
+  "a_voir": "On veut passer de 256 colorations à 55 orbites sans écrire la liste."
+ },
+ {
+  "code": "49-203",
+  "a_dire": "Le lemme de Burnside suppose un groupe : sans cela, la formule peut donner un nombre qui n'est pas entier.",
+  "legende_titre": "Burnside sans groupe",
+  "lecture": [
+   "À gauche, e envoie P sur P et Q sur Q : 2 points fixes, flèches vertes.",
+   "À droite, a envoie P sur P (flèche verte) et Q sur P (flèche orange).",
+   "Le calcul rouge additionne 2 et 1, puis divise par 2.",
+   "Le résultat 1,5 n'est pas un nombre d'orbites."
+  ],
+  "a_voir": "Avec deux éléments qui ne forment pas un groupe, la formule donne 1,5."
+ },
+ {
+  "code": "49-204",
+  "a_dire": "La formule k = (1/|G|) ∑ |Fix g| s'applique ainsi : compter les points fixes de chaque élément, additionner, diviser par le nombre d'éléments.",
+  "legende_titre": "Calculer k sur un cas",
+  "lecture": [
+   "Les quatre boîtes bleues sont les quatre éléments du groupe.",
+   "Chaque disque orange dessous est le nombre de points fixes : 5, 3, 1, 3.",
+   "L'accolade orange donne la somme : 12.",
+   "La boîte verte divise par 4 et donne k = 3."
+  ],
+  "a_voir": "On compte 5, 3, 1, 3 points fixes, on additionne, on divise par 4 : 3 orbites."
+ },
+ {
+  "code": "49-205",
+  "a_dire": "Le symbole k est le nombre d'éléments de l'ensemble des orbites S/G ; c'est un entier.",
+  "legende_titre": "Que désigne k",
+  "lecture": [
+   "Le cadre pointillé est l'ensemble des orbites, S/G.",
+   "Chaque disque bleu est une orbite.",
+   "L'accolade orange compte les disques : 6.",
+   "La boîte verte dit que k est ce nombre, 6."
+  ],
+  "a_voir": "k n'est pas l'ensemble des orbites, c'est le nombre de ses éléments."
+ },
+ {
+  "code": "49-206",
+  "a_dire": "Le nombre d'orbites est la moyenne, sur les éléments du groupe, du nombre de points fixes.",
+  "legende_titre": "Une moyenne de points fixes",
+  "lecture": [
+   "Chaque barre bleue est un élément du groupe ; sa hauteur est son nombre de points fixes : 5, 3, 1, 3.",
+   "Le trait vert en pointillés est la moyenne : 3.",
+   "Le texte vert dit que cette moyenne est k, le nombre d'orbites."
+  ],
+  "a_voir": "La barre la plus haute est celle du neutre, et la moyenne des quatre barres vaut 3."
+ },
+ {
+  "code": "49-207",
+  "a_dire": "Le signe ∑ sur g dans G veut dire : un terme par élément du groupe, quel que soit le nombre d'éléments.",
+  "legende_titre": "Un terme par élément",
+  "lecture": [
+   "Le grand signe bleu en haut est la somme sur g dans G.",
+   "La première rangée a 4 cases : le groupe de 4 éléments, avec les nombres 5, 3, 1, 3.",
+   "La deuxième rangée a 8 cases : le groupe de 8 éléments.",
+   "Le texte vert dit que l'écriture ne change pas."
+  ],
+  "a_voir": "Le même signe donne 4 termes pour un groupe de 4 éléments et 8 termes pour un groupe de 8."
+ }
+]

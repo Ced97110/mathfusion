@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+line(ax, [(44, 6), (44, 52)], 'fixe', dash=True)
+text(ax, 22, 56, 'bijection', 'resultat', 's', weight='bold')
+text(ax, 66, 56, 'pas une bijection', 'limite', 's', weight='bold')
+for y, a, b in ((44, '0', '0'), (30, '2', '4'), (16, '3', '9')):
+    disc(ax, 8, y, 4.5, 'sujet', label=a)
+    disc(ax, 34, y, 4.5, 'resultat', label=b)
+    arrow(ax, (12.9, y), (29.1, y), 'resultat')
+disc(ax, 54, 40, 4.5, 'sujet', label='−3')
+disc(ax, 54, 18, 4.5, 'sujet', label='3')
+disc(ax, 80, 29, 4.5, 'limite', label='9')
+arrow(ax, (58.6, 38), (75.6, 30.5), 'limite')
+arrow(ax, (58.6, 20), (75.6, 27.5), 'limite')
+text(ax, 22, 5, 'carré : positifs ou nuls', 'resultat', 's')
+text(ax, 66, 5, 'carré : tous les nombres', 'limite', 's')
+save(fig, '33-027')

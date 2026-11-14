@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,76,'taux × nombre, pour chaque sorte','encre','m')
+for i in range(3): box(ax,4+i*13,56,11,9,'sujet',label='5 €')
+text(ax,66,60.5,'3 × 5 € = 15 €','sujet')
+text(ax,4,51,'taux : 5 € pour 1 billet','sujet','s',ha='left')
+for i in range(2): box(ax,4+i*13,36,11,9,'autre',label='10 €')
+text(ax,66,40.5,'2 × 10 € = 20 €','autre')
+text(ax,4,31,'taux : 10 € pour 1 billet','autre','s',ha='left')
+arrow(ax,(44,28),(44,23),'varie')
+box(ax,14,12,60,10,'resultat',label='15 € + 20 € = 35 €')
+box(ax,14,0.5,60,8,'fixe',label='pièce : 10 centimes pour 1 pièce',size='s')
+save(fig,'24-064')

@@ -1,0 +1,337 @@
+[
+ {
+  "code": "58-031",
+  "a_dire": "Un même point w reçoit deux couples de nombres : (5, 4) avec les axes, (2, 1) avec les flèches u et v.",
+  "legende_titre": "Un point, deux couples de nombres",
+  "lecture": [
+   "Le point bleu est w. Le trait gris en tirets va de 5 pas vers la droite puis de 4 pas vers le haut : c’est (5, 4).",
+   "Le chemin violet fait 2 fois la flèche u, puis 1 fois la flèche v : c’est (2, 1).",
+   "Les deux chemins partent du même endroit et finissent sur le même point."
+  ],
+  "a_voir": "Les deux chemins, gris et violet, arrivent au même point w."
+ },
+ {
+  "code": "58-032",
+  "a_dire": "Quand on change de base, le point reste au même endroit ; seuls les nombres qui le décrivent changent.",
+  "legende_titre": "Ce qui bouge, c’est la description",
+  "lecture": [
+   "À gauche, en gris, on décrit le point w avec les axes : 5 puis 4.",
+   "À droite, en violet, on décrit le même point w avec deux flèches : 2 puis 1.",
+   "Le point bleu est à la même place dans les deux dessins."
+  ],
+  "a_voir": "Le point w ne bouge pas ; les nombres, eux, ne sont pas les mêmes."
+ },
+ {
+  "code": "58-033",
+  "a_dire": "R^(n) est la collection de toutes les listes de n éléments de R ; le lien entre ses listes est le nombre de cases.",
+  "legende_titre": "Des collections de listes à n cases",
+  "lecture": [
+   "La première ligne montre la liste (2, 1) à deux cases, dans la collection des listes de deux entiers.",
+   "La deuxième ligne montre la liste (2, 1, 4) à trois cases, dans la collection des listes de trois entiers.",
+   "La ligne violette montre la forme générale : n cases, de la case x₁ à la case xₙ."
+  ],
+  "a_voir": "Chaque collection est fixée par son nombre de cases."
+ },
+ {
+  "code": "58-034",
+  "a_dire": "On additionne deux listes case contre case : chaque colonne donne un nombre, et les résultats restent dans le même ordre.",
+  "legende_titre": "Additionner colonne par colonne",
+  "lecture": [
+   "La ligne bleue est la première vente : 2, 1 et 4. La ligne violette est la seconde : 1, 5 et 3.",
+   "Chaque flèche orange additionne les deux nombres de sa colonne.",
+   "La ligne verte donne le résultat : 3, 6 et 7, dans le même ordre."
+  ],
+  "a_voir": "Les cases s’additionnent une colonne à la fois, sans se mélanger."
+ },
+ {
+  "code": "58-035",
+  "a_dire": "La liste de zéros ne change aucune liste quand on l’ajoute : 0 + x = x.",
+  "legende_titre": "Ajouter la liste de zéros",
+  "lecture": [
+   "La case grise à gauche est la liste de zéros.",
+   "La case bleue est une liste, (2, 1, 4) en haut et (7, 3, 9) en bas.",
+   "La case verte est le résultat : c’est la même liste que la case bleue."
+  ],
+  "a_voir": "Dans les deux lignes, le résultat est identique à la liste de départ."
+ },
+ {
+  "code": "58-036",
+  "a_dire": "Multiplier une liste par a, c’est multiplier chaque case par a, dans le même ordre.",
+  "legende_titre": "Multiplier chaque case par le même nombre",
+  "lecture": [
+   "La ligne bleue du haut est la liste (2, 1, 4).",
+   "Chaque flèche orange multiplie une case par 3.",
+   "La ligne verte du bas donne 6, 3 et 12."
+  ],
+  "a_voir": "Le même nombre 3 agit sur chacune des trois cases."
+ },
+ {
+  "code": "58-037",
+  "a_dire": "Une condition de module sur les listes se vérifie case par case, car chaque case est un nombre de l’anneau.",
+  "legende_titre": "Une condition de module, avec des nombres",
+  "lecture": [
+   "En haut, la condition : multiplier (5, 4) par la somme 2 + 3 revient à multiplier par 2, multiplier par 3, puis additionner.",
+   "Les deux cases bleues sont les cases de la liste (5, 4) : 5 à gauche, 4 à droite.",
+   "Dans chaque colonne, la condition se vérifie avec le seul nombre de la case : 25 = 10 + 15, puis 20 = 8 + 12."
+  ],
+  "a_voir": "La condition sur la liste est vraie dans chaque case, parce que chaque case est un nombre."
+ },
+ {
+  "code": "58-038",
+  "a_dire": "Pour n = 1, une liste d’une seule case se calcule comme un nombre de R : R est vu comme module sur lui-même.",
+  "legende_titre": "Listes d’une case et nombres",
+  "lecture": [
+   "Les cases bleues de gauche sont des listes d’une case : (7) + (2) = (9) et 3 × (7) = (21).",
+   "Les cases violettes de droite sont les mêmes calculs avec des nombres : 7 + 2 = 9 et 3 × 7 = 21.",
+   "La flèche orange relie chaque calcul de gauche à son calcul de droite."
+  ],
+  "a_voir": "Les deux colonnes donnent les mêmes calculs."
+ },
+ {
+  "code": "58-039",
+  "a_dire": "Pour n = 0, il n’existe qu’une seule liste, la liste vide : R^(0) est le module nul {0}.",
+  "legende_titre": "Une liste sans case",
+  "lecture": [
+   "Les lignes n = 2 et n = 1 montrent des listes à deux cases et à une case, en bleu.",
+   "À la ligne n = 0, la case en tirets est vide : c’est la liste vide.",
+   "La case verte dit qu’il n’y a qu’une seule liste, donc R^(0) = {0}."
+  ],
+  "a_voir": "Quand n descend jusqu’à 0, il reste une seule liste, sans case."
+ },
+ {
+  "code": "58-040",
+  "a_dire": "e_i est la liste de n cases avec un 1 en position i et des zéros ailleurs ; pour trois cases, e₁, e₂ et e₃ sont les trois sacs types.",
+  "legende_titre": "Le 1 se déplace d’une position à l’autre",
+  "lecture": [
+   "Chaque ligne est une liste de trois cases : e₁, e₂ ou e₃.",
+   "La case bleue porte le 1 ; les cases grises portent des zéros.",
+   "Le 1 est en position 1, puis 2, puis 3 : c’est le riz, les lentilles, le sel."
+  ],
+  "a_voir": "Une seule case par ligne vaut 1 ; sa position est le numéro i."
+ },
+ {
+  "code": "58-041",
+  "a_dire": "Une liste x est la somme de ses cases multipliées chacune par le sac type de même position : x = ∑ xᵢ eᵢ.",
+  "legende_titre": "Une liste découpée en trois morceaux",
+  "lecture": [
+   "Les cases orange sont les produits : 2 × e₁, 1 × e₂ et 4 × e₃.",
+   "Les cases bleues sont les trois morceaux obtenus : (2, 0, 0), (0, 1, 0) et (0, 0, 4).",
+   "Les flèches vertes additionnent les morceaux : on retrouve la liste x = (2, 1, 4)."
+  ],
+  "a_voir": "Les coefficients 2, 1 et 4 sont exactement les cases de la liste."
+ },
+ {
+  "code": "58-042",
+  "a_dire": "Le signe ∑ se lit « additionnez les termes pour i allant de 1 à n » ; pour n = 3, il remplace trois termes.",
+  "legende_titre": "Le signe sigma, lu pas à pas",
+  "lecture": [
+   "Le signe bleu ∑ est entouré de deux repères orange : i = 1 en bas, n en haut.",
+   "À droite du signe se trouve le terme à additionner, xᵢ eᵢ.",
+   "En bas, pour n = 3, i prend les valeurs 1, 2, 3 et donne trois termes reliés par +."
+  ],
+  "a_voir": "i prend toutes les valeurs de 1 à n, et on additionne tous les termes."
+ },
+ {
+  "code": "58-043",
+  "a_dire": "Des sacs engendrent le module si chaque liste s’écrit avec eux ; (1, 0) tout seul n’engendre pas (5, 4).",
+  "legende_titre": "Quels sacs atteignent le point (5, 4) ?",
+  "lecture": [
+   "À gauche, les flèches bleues (1, 0) et (0, 1) atteignent (5, 4) : le point est vert.",
+   "Au milieu, trois sacs atteignent aussi (5, 4) : le point est vert.",
+   "À droite, (1, 0) seul n’atteint que la droite épaisse du bas : (5, 4) est rouge, hors d’atteinte."
+  ],
+  "a_voir": "Engendrer, c’est pouvoir atteindre n’importe quelle liste."
+ },
+ {
+  "code": "58-044",
+  "a_dire": "Les sacs sont indépendants si la liste de zéros ne s’obtient qu’avec tous les coefficients nuls.",
+  "legende_titre": "Quand obtient-on la liste de zéros ?",
+  "lecture": [
+   "À gauche, (1, 0) et (2, 0) sont sur la même droite : 2 × (1, 0) − (2, 0) donne (0, 0) avec des coefficients non nuls.",
+   "À droite, (1, 0) et (0, 1) vont dans deux directions : 0 × (1, 0) + 0 × (0, 1) est la seule façon d’avoir (0, 0).",
+   "Le rouge marque le cas où ce n’est pas indépendant, le vert celui où ça l’est."
+  ],
+  "a_voir": "Avec deux flèches sur la même droite, un coefficient non nul suffit pour retomber sur zéro."
+ },
+ {
+  "code": "58-045",
+  "a_dire": "Avec les sacs types, une liste a une seule écriture : changer un coefficient change le point.",
+  "legende_titre": "Deux écritures, deux points",
+  "lecture": [
+   "Le chemin vert fait 3 sacs de riz puis 2 sacs de lentilles : il arrive au point (3, 2).",
+   "Le chemin rouge en tirets fait 4 sacs de riz puis 2 sacs de lentilles : il arrive en (4, 2), un autre point.",
+   "Les deux écritures ne désignent donc pas la même liste."
+  ],
+  "a_voir": "Changer un coefficient déplace le point d’arrivée."
+ },
+ {
+  "code": "58-046",
+  "a_dire": "Une liste est une base de M si tout élément s’écrit avec elle d’une seule façon.",
+  "legende_titre": "Combien d’écritures pour (5, 4) ?",
+  "lecture": [
+   "Chaque case bleue est une liste d’éléments de M ; à droite, ses écritures de (5, 4).",
+   "(1, 0), (0, 1) donne une seule écriture, en vert : c’est une base.",
+   "(1, 0) seul n’en donne aucune ; la liste de trois éléments en donne deux : ces deux cas, en rouge, ne sont pas des bases."
+  ],
+  "a_voir": "Une base donne exactement une écriture pour chaque élément."
+ },
+ {
+  "code": "58-047",
+  "a_dire": "Un module libre est un module qui possède une base : les couples d’entiers sont libres, l’horloge à deux heures ne l’est pas.",
+  "legende_titre": "Avec base ou sans base",
+  "lecture": [
+   "À gauche, les flèches bleues (1, 0) et (0, 1) forment une base : (5, 4) n’a qu’une écriture. C’est un module libre.",
+   "À droite, l’horloge a deux heures, 0 et 1, en violet.",
+   "Les flèches orange partent de 1 : 0 × 1 et 2 × 1 donnent toutes deux 0, donc deux écritures. Ce n’est pas libre."
+  ],
+  "a_voir": "Libre veut dire : une seule écriture ; l’horloge en donne deux pour 0."
+ },
+ {
+  "code": "58-048",
+  "a_dire": "Les coordonnées d’un élément sont les coefficients de son écriture dans une base ; elles changent avec la base.",
+  "legende_titre": "Les coefficients d’une écriture",
+  "lecture": [
+   "Les cases orange sont les coefficients ; les cases bleues sont les éléments de la base.",
+   "Ligne du haut : base des sacs, (5, 4) = 5 × (1, 0) + 4 × (0, 1), coordonnées (5, 4).",
+   "Ligne du bas : base des flèches, (5, 4) = 2 × (2, 1) + 1 × (1, 2), coordonnées (2, 1)."
+  ],
+  "a_voir": "Le même stock a des coordonnées différentes dans deux bases."
+ },
+ {
+  "code": "58-049",
+  "a_dire": "Le signe R^(n) décrit d’un coup la nature des cases (R) et leur nombre (n) : on remplace n par 2 ou par 4.",
+  "legende_titre": "Un seul signe pour toutes les boutiques",
+  "lecture": [
+   "Le grand signe bleu est R^(n).",
+   "La flèche de gauche donne n = 2 : une liste de deux cases, x₁ et x₂.",
+   "La flèche de droite donne n = 4 : une liste de quatre cases, de x₁ à x₄.",
+   "En bas, R dit de quoi sont faites les cases, n dit combien il y en a."
+  ],
+  "a_voir": "Changer n change le nombre de cases, avec le même signe."
+ },
+ {
+  "code": "58-050",
+  "a_dire": "Le signe eᵢ se lit « e i » : c’est le sac type numéro i ; la base standard est la liste e₁, e₂, … dans cet ordre.",
+  "legende_titre": "Lire le signe e i",
+  "lecture": [
+   "Le grand signe bleu est eᵢ ; i est le numéro, en orange.",
+   "Les trois cases bleues sont e₁, e₂ et e₃, avec leurs listes en gris : (1, 0, 0), (0, 1, 0), (0, 0, 1).",
+   "Les flèches orange donnent l’ordre : premier, deuxième, troisième."
+  ],
+  "a_voir": "Un seul signe eᵢ désigne tous les sacs, selon la valeur de i."
+ },
+ {
+  "code": "58-051",
+  "a_dire": "Le signe ∑ xᵢ eᵢ garde lisibles la liste des coefficients et la liste des sacs.",
+  "legende_titre": "Coefficients et sacs, dans le même signe",
+  "lecture": [
+   "Les cases orange du haut sont les coefficients x₁, x₂, x₃ : 2, 1 et 4.",
+   "Les cases bleues du bas sont les sacs e₁, e₂, e₃ : riz, lentilles, sel.",
+   "Chaque trait relie un coefficient à son sac, et les + additionnent les produits.",
+   "La case verte lit la somme : 2 riz, 1 lentilles, 4 sel."
+  ],
+  "a_voir": "Deux listes se lisent dans le signe : les coefficients et les sacs."
+ },
+ {
+  "code": "58-052",
+  "a_dire": "Le signe (u₁, …, uₙ) désigne seulement une liste d’éléments de M ; pour dire que c’est une base, il faut le vérifier en plus.",
+  "legende_titre": "Même signe, une base ou pas",
+  "lecture": [
+   "Le titre donne le signe : une liste d’éléments de M.",
+   "À gauche, la liste u₁ = (2, 1), u₂ = (1, 1) est une base, en vert.",
+   "À droite, la liste formée du seul u₁ = (2, 1) s’écrit avec le même signe, mais n’est pas une base, en rouge."
+  ],
+  "a_voir": "Le signe ne dit pas à lui seul que la liste est une base."
+ },
+ {
+  "code": "58-053",
+  "a_dire": "M ≅ N veut dire qu’une correspondance un à un, qui respecte l’addition et la multiplication, relie M et N.",
+  "legende_titre": "Deux modules qui se correspondent",
+  "lecture": [
+   "À gauche, bleu, les ventes de la boutique M : le riz d’abord. À droite, violet, celles de N : les lentilles d’abord.",
+   "La flèche orange échange les deux cases : (2, 1) devient (1, 2).",
+   "La ligne du bas montre l’addition : (2, 1) + (2, 1) = (4, 2) devient (1, 2) + (1, 2) = (2, 4)."
+  ],
+  "a_voir": "Un calcul fait dans M se retrouve dans N avec les cases échangées."
+ },
+ {
+  "code": "58-054",
+  "a_dire": "Hom(M, N) est la collection de toutes les applications de M vers N qui respectent l’addition et la multiplication.",
+  "legende_titre": "Toutes les règles de M vers N",
+  "lecture": [
+   "La case bleue M est le départ, la case violette N est l’arrivée.",
+   "Chaque flèche orange est une règle de M vers N.",
+   "La flèche épaisse est le transporteur, qui envoie (1, 0) sur (2, 1).",
+   "Le texte vert donne ce que chaque règle f respecte : l’addition et la multiplication.",
+   "La case en tirets dit que Hom(M, N) est l’ensemble de toutes ces règles."
+  ],
+  "a_voir": "Hom(M, N) est une collection de règles qui respectent l’addition et la multiplication."
+ },
+ {
+  "code": "58-055",
+  "a_dire": "A = (aᵢⱼ) est un tableau de nombres ; aᵢⱼ est le nombre de la ligne i et de la colonne j.",
+  "legende_titre": "Lire un tableau avec deux numéros",
+  "lecture": [
+   "Le tableau A a deux lignes et deux colonnes : 2 et 1 en haut, 1 et 3 en bas.",
+   "Chaque ligne et chaque colonne porte son numéro, en gris.",
+   "La case orange est a₂₂ : ligne 2, colonne 2, qui vaut 3."
+  ],
+  "a_voir": "Deux numéros, i et j, désignent une case du tableau."
+ },
+ {
+  "code": "58-056",
+  "a_dire": "GLₙ(R) est la collection des matrices carrées dont l’inverse a ses nombres dans R.",
+  "legende_titre": "Un inverse avec des entiers, ou pas",
+  "lecture": [
+   "En haut, le tableau 2 1 / 1 1 multiplié par 1 −1 / −1 2 donne le tableau qui ne change rien, en vert : l’inverse est en entiers.",
+   "En bas, le tableau 2 1 / 1 3 a pour inverse un tableau avec des fractions, en rouge.",
+   "Le second tableau n’est donc pas dans GL₂ des entiers."
+  ],
+  "a_voir": "Il faut que l’inverse ait ses nombres dans R."
+ },
+ {
+  "code": "58-057",
+  "a_dire": "Le signe ⊕ répété relie trois familles M₁, M₂, M₃ : chaque stock s’écrit d’une seule façon avec un morceau de chacune.",
+  "legende_titre": "Trois familles, une seule écriture",
+  "lecture": [
+   "Les trois cases bleues du haut sont les familles M₁, M₂, M₃ : riz pur, lentilles pur, sel pur, reliées par ⊕.",
+   "Sous chaque famille, on lit le morceau du stock : (2, 0, 0), (0, 1, 0), (0, 0, 4).",
+   "Les flèches vertes rassemblent les trois morceaux dans le stock (2, 1, 4)."
+  ],
+  "a_voir": "Chaque famille donne un seul morceau, et la somme des morceaux est le stock."
+ },
+ {
+  "code": "58-058",
+  "a_dire": "M₁ ∩ M₂ est l’ensemble des stocks qui sont dans les deux familles ; pour riz pur et lentilles pur, il n’y a que (0, 0).",
+  "legende_titre": "Ce que deux familles ont en commun",
+  "lecture": [
+   "La droite bleue horizontale est M₁ : les stocks (x, 0).",
+   "La droite violette verticale est M₂ : les stocks (0, y).",
+   "Le seul point sur les deux droites est le disque vert (0, 0), donc M₁ ∩ M₂ = {0}."
+  ],
+  "a_voir": "Les deux droites ne se rencontrent qu’en un point."
+ },
+ {
+  "code": "58-059",
+  "a_dire": "Si M a une base de n éléments, ses éléments se correspondent un à un avec les listes de coordonnées, en gardant addition et multiplication.",
+  "legende_titre": "Un module libre se lit comme des listes",
+  "lecture": [
+   "À gauche, bleu, des éléments de M avec la base (2, 1), (1, 1). À droite, violet, leurs coordonnées.",
+   "La première flèche relie (5, 4) à (1, 3).",
+   "La ligne du milieu : (5, 4) + (2, 1) = (7, 5) donne (1, 3) + (1, 0) = (2, 3).",
+   "La ligne du bas : 3 × (2, 1) = (6, 3) donne 3 × (1, 0) = (3, 0)."
+  ],
+  "a_voir": "Additionner dans M revient à additionner les coordonnées."
+ },
+ {
+  "code": "58-060",
+  "a_dire": "μ est la règle qui envoie des coordonnées, dans R^(n), sur l’élément de M qu’elles décrivent.",
+  "legende_titre": "De coordonnées vers un élément",
+  "lecture": [
+   "La case violette est la liste de coordonnées (1, 3), dans R^(n).",
+   "La flèche orange μ va vers la case verte : l’élément (5, 4) de M.",
+   "Dessous, le calcul : 1 × (2, 1) = (2, 1) et 3 × (1, 1) = (3, 3), dont la somme est (5, 4)."
+  ],
+  "a_voir": "La flèche μ part des coordonnées et arrive à l’élément."
+ }
+]

@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 2, 84, 60, 'fixe', r=2)
+text(ax, 16, 57, r'$GL_n(F)$', 'fixe', 'l')
+box(ax, 6, 12, 36, 34, 'resultat', label=None)
+text(ax, 24, 38, r'centre : $a \cdot 1$', 'resultat', 'm')
+text(ax, 24, 29, 'commute avec', 'resultat', 's'); text(ax, 24, 24, 'toute matrice', 'resultat', 's')
+box(ax, 48, 12, 34, 34, 'limite')
+text(ax, 65, 38, 'dilatation ×2', 'limite', 'm'); text(ax, 65, 31, 'des largeurs', 'limite', 's')
+text(ax, 65, 22, '(3, 1) ≠ (4, 1)', 'limite', 's'); text(ax, 65, 16, 'hors du centre', 'limite', 's')
+save(fig, '73-052')

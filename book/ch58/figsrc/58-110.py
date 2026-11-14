@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+ox, oy, k = 28, 33, 7
+P = lambda a, b: (ox + a * k, oy + b * k)
+arrow(ax, P(-3, 0), P(3, 0), 'fixe', lw=0.5)
+arrow(ax, P(0, -4.2), P(0, 4.2), 'fixe', lw=0.5)
+arrow(ax, P(0, 0), P(2, 3), 'sujet', lw=1.6)
+arrow(ax, P(0, 0), P(-2, -3), 'varie', lw=1.6)
+disc(ax, *P(0, 0), 1.3, 'resultat')
+text(ax, P(2, 3)[0] + 2, P(2, 3)[1] + 1, r'$v$', 'sujet', 's', ha='left')
+text(ax, P(-2, -3)[0] - 2, P(-2, -3)[1] - 1, r'$(-1)\,v$', 'varie', 's', ha='right')
+box(ax, 52, 48, 34, 9, 'sujet', label=r'$v=(2,\,3)$', size='s')
+box(ax, 52, 33, 34, 9, 'varie', label=r'$(-1)\,v=(-2,-3)$', size='s')
+box(ax, 52, 15, 34, 12, 'resultat', label=r'$v+(-1)\,v=(0,0)$', size='s')
+save(fig, '58-110')

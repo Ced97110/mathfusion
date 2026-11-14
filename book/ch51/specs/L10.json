@@ -1,0 +1,185 @@
+[
+ {
+  "code": "51-145",
+  "a_dire": "L’opposé d’un tableau est le tableau dont chaque case est changée en son opposé ; la somme des deux donne 0 partout.",
+  "legende_titre": "Chaque case change de signe",
+  "lecture": [
+   "Le tableau bleu est le tableau de départ, de lignes (1, 2) et (3, 4).",
+   "La flèche orange montre que chaque case change de signe : on obtient le tableau orange.",
+   "En bas, les deux tableaux sont additionnés : le résultat vert a 0 dans chaque case."
+  ],
+  "a_voir": "Voir que l’opposé d’un tableau est fait des opposés de ses cases, et que la somme donne 0."
+ },
+ {
+  "code": "51-146",
+  "a_dire": "Les tableaux s’additionnent case par case, donc ils suivent les mêmes règles que les nombres de leurs cases : l’addition est commutative.",
+  "legende_titre": "Additionner deux tableaux case par case",
+  "lecture": [
+   "Le tableau bleu et le tableau violet s’additionnent dans les deux ordres.",
+   "Dans la case entourée en orange, on lit 2 plus 6 dans la première ligne, et 6 plus 2 dans la seconde.",
+   "Les deux sommes vertes sont les mêmes : 6, 8, 10 et 12."
+  ],
+  "a_voir": "Voir que changer l’ordre des deux tableaux ne change aucune case de la somme."
+ },
+ {
+  "code": "51-147",
+  "a_dire": "La case de la ligne i et de la colonne j du produit est la somme des produits des cases de la ligne i par celles de la colonne j.",
+  "legende_titre": "Une case du produit",
+  "lecture": [
+   "Le cadre orange de gauche entoure la ligne 1 du tableau bleu.",
+   "Le cadre orange du milieu entoure la colonne 1 du tableau violet.",
+   "Le cadre orange de droite entoure la case du produit vert qu’on calcule.",
+   "Dessous, on multiplie 1 par 5 et 2 par 7, puis on additionne : 19."
+  ],
+  "a_voir": "Voir que la case (1, 1) se calcule avec une ligne et une colonne : 1 fois 5 plus 2 fois 7."
+ },
+ {
+  "code": "51-148",
+  "a_dire": "Pour chaque case du produit, on prend une ligne du premier tableau et une colonne du second ; on fait deux produits et une somme, jusqu’à remplir les quatre cases.",
+  "legende_titre": "Remplir le produit case par case",
+  "lecture": [
+   "Chaque cadre bleu est une case du produit, à la même place que dans le tableau final.",
+   "Dans un cadre, on lit la ligne et la colonne choisies, puis les deux produits et leur somme.",
+   "Le nombre vert est la valeur de la case : 19, 22, 43 et 50."
+  ],
+  "a_voir": "Voir que la règle se répète pour chaque case, avec la ligne et la colonne qui lui correspondent."
+ },
+ {
+  "code": "51-149",
+  "a_dire": "Le produit case par case de deux quarts de tour ne donne pas un demi-tour, alors que la règle ligne-colonne le donne.",
+  "legende_titre": "Deux quarts de tour, deux produits possibles",
+  "lecture": [
+   "En haut, le tableau vert est le produit ligne-colonne, le tableau rouge est le produit case par case.",
+   "À gauche, le point (1 ; 0) va en (−1 ; 0) : c’est un demi-tour, en vert.",
+   "À droite, la flèche rouge envoie (1 ; 0) en (0 ; 1) : les coordonnées s’échangent.",
+   "Le cercle vert vide marque où le point devrait arriver."
+  ],
+  "a_voir": "Voir que seul le produit ligne-colonne amène le point là où deux quarts de tour l’amènent."
+ },
+ {
+  "code": "51-150",
+  "a_dire": "Une matrice 2 × 2 transforme un point du plan, et le produit de deux matrices est la matrice des deux transformations faites l’une après l’autre.",
+  "legende_titre": "Deux transformations en une matrice",
+  "lecture": [
+   "Les trois cadres montrent le point au départ, après S, puis après R (le cadre vert).",
+   "Les flèches bleue et violette sont les transformations S et R.",
+   "L’arc vert va du départ à l’arrivée en un seul pas : c’est le produit RS.",
+   "En bas, les tableaux de S, de R et de RS, dont les lignes de RS sont (0, −1) et (2, 0)."
+  ],
+  "a_voir": "Voir que le produit RS fait en un seul pas ce que S puis R font en deux."
+ },
+ {
+  "code": "51-151",
+  "a_dire": "La règle ligne-colonne donne la matrice de « d’abord le second facteur, puis le premier », et pas l’inverse.",
+  "legende_titre": "Dans quel ordre agit le produit",
+  "lecture": [
+   "Le point gris est u = (1,5 ; 0,5).",
+   "Le chemin rouge applique S puis R : il arrive en (−0,5 ; 3).",
+   "Le chemin vert applique R puis S : il arrive en (−1 ; 1,5), le résultat de SR.",
+   "Les deux points d’arrivée sont différents."
+  ],
+  "a_voir": "Voir que SR donne le point du chemin vert, pas celui du chemin rouge."
+ },
+ {
+  "code": "51-152",
+  "a_dire": "Dans AB, la matrice B agit d’abord sur le point, puis A agit sur le résultat : on lit de gauche à droite, on applique de droite à gauche.",
+  "legende_titre": "Lire un produit de droite à gauche",
+  "lecture": [
+   "Les trois cadres sont, de gauche à droite, S (bleu), R (violet) et le point u (gris).",
+   "La flèche « d’abord » va de u vers R ; la flèche « ensuite » va de R vers S.",
+   "Sous chaque cadre, on lit le point obtenu : (1,5 ; 0,5), puis (−0,5 ; 1,5), puis (−1 ; 1,5) en vert."
+  ],
+  "a_voir": "Voir que R, le plus proche de u, agit avant S."
+ },
+ {
+  "code": "51-153",
+  "a_dire": "Les trois flèches montrent le point de départ, le point après la rotation R et le point après l’étirement S ; la rotation garde la longueur, l’étirement la change.",
+  "legende_titre": "Trois flèches issues de l’origine",
+  "lecture": [
+   "La flèche bleue est le point de départ u.",
+   "La flèche orange est le point après la rotation R : elle touche l’arc en pointillés, donc sa longueur est la même.",
+   "La flèche verte est le point après l’étirement S : elle sort de l’arc, donc elle est plus longue.",
+   "À droite, les carrés des longueurs : 2,5 ; 2,5 ; 3,25."
+  ],
+  "a_voir": "Voir que R garde la longueur de la flèche et que S l’allonge."
+ },
+ {
+  "code": "51-154",
+  "a_dire": "Les colonnes de la matrice R du quart de tour sont les images des points (1 ; 0) et (0 ; 1).",
+  "legende_titre": "Lire les colonnes de la matrice du quart de tour",
+  "lecture": [
+   "À gauche, la flèche bleue va vers (1 ; 0) et la flèche violette vers (0 ; 1).",
+   "À droite, après le quart de tour, la flèche bleue va vers (0 ; 1) et la flèche violette vers (−1 ; 0).",
+   "Dans le tableau du bas, la première colonne (bleu) est l’arrivée de la flèche bleue, la seconde (violet) celle de la violette."
+  ],
+  "a_voir": "Voir que chaque colonne du tableau est l’endroit où arrive une des deux flèches de départ."
+ },
+ {
+  "code": "51-155",
+  "a_dire": "La matrice S de lignes (2, 0) et (0, 1) double les abscisses et laisse les ordonnées.",
+  "legende_titre": "Doubler les abscisses",
+  "lecture": [
+   "Le carré gris est la forme de départ, de largeur 1 et de hauteur 1.",
+   "Le rectangle bleu a une largeur 2 et la même hauteur ; la flèche orange montre que la largeur double.",
+   "Dans le tableau, la première colonne (orange) contient le 2 qui double x ; la seconde (gris) laisse y inchangé."
+  ],
+  "a_voir": "Voir que la largeur double alors que la hauteur ne change pas."
+ },
+ {
+  "code": "51-156",
+  "a_dire": "Pour calculer SR, on remplit chaque case avec une ligne de S et une colonne de R, puis on vérifie sur le point u.",
+  "legende_titre": "Calculer SR et le vérifier",
+  "lecture": [
+   "Les cadres orange entourent la ligne de S et la colonne de R qui donnent la case en haut à gauche de SR.",
+   "Cette case vaut 2 fois 0 plus 0 fois 1, soit 0 ; les quatre cases valent 0, −2, 1 et 0.",
+   "En bas, SR appliqué au point u donne (−1 ; 1,5), le même point qu’avec R puis S."
+  ],
+  "a_voir": "Voir que SR a pour lignes (0, −2) et (1, 0) et qu’il envoie u sur (−1 ; 1,5)."
+ },
+ {
+  "code": "51-157",
+  "a_dire": "Le produit SR envoie le point u = (1,5 ; 0,5) sur (−1 ; 1,5), qui est la flèche verte.",
+  "legende_titre": "SR appliqué au point u",
+  "lecture": [
+   "Le tableau bleu est SR ; le vecteur gris est u ; le vecteur vert est le résultat.",
+   "Les deux lignes de calcul donnent −1 pour la première coordonnée et 1,5 pour la seconde.",
+   "En bas, la flèche grise est u et la flèche verte est le point d’arrivée."
+  ],
+  "a_voir": "Voir que le calcul avec SR donne le même point que la flèche verte."
+ },
+ {
+  "code": "51-158",
+  "a_dire": "Une règle de produit est bonne si, appliquée une fois, elle donne le même point que les deux transformations faites l’une après l’autre.",
+  "legende_titre": "Deux chemins vers le même point",
+  "lecture": [
+   "Le cadre gris est le point de départ u.",
+   "Le chemin du haut (violet puis bleu) applique R, puis S, en passant par le cadre violet.",
+   "La flèche verte du bas applique le produit SR en une seule fois.",
+   "Les deux chemins finissent dans le même cadre vert : (−1 ; 1,5)."
+  ],
+  "a_voir": "Voir que le produit SR et le passage par R puis S arrivent au même point."
+ },
+ {
+  "code": "51-159",
+  "a_dire": "La matrice unité, avec des 1 sur la diagonale et des 0 ailleurs, est le neutre de la multiplication : la multiplier ne change rien.",
+  "legende_titre": "La matrice unité parmi ses voisines",
+  "lecture": [
+   "Le tableau gris de 0 est la matrice nulle, neutre de l’addition.",
+   "Le tableau bleu encadré est la matrice unité : des 1 sur la diagonale, des 0 ailleurs.",
+   "Le tableau violet est une matrice diagonale quelconque, de diagonale a et b.",
+   "En bas, le tableau de lignes (3, 4) et (5, 6) multiplié par la matrice unité reste le même."
+  ],
+  "a_voir": "Voir que seule la matrice unité laisse un tableau inchangé par le produit."
+ },
+ {
+  "code": "51-160",
+  "a_dire": "L’associativité du produit de matrices vient du fait que les deux regroupements décrivent la même suite de gestes : S, puis R, puis R.",
+  "legende_titre": "Deux regroupements, une même suite",
+  "lecture": [
+   "Les quatre cadres montrent le point au départ, après S, après R, puis après R encore (vert).",
+   "L’accolade du haut groupe S et R ; celle du bas groupe R et R.",
+   "Quel que soit le groupement, les gestes restent S, R, R dans le même ordre et le point final est le même."
+  ],
+  "a_voir": "Voir que grouper les gestes autrement ne change ni leur ordre ni le point d’arrivée."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 4, 34, 32, 18, 'autre')
+text(ax, 20, 46.5, 'polynôme minimal', 'autre', 's')
+text(ax, 20, 40, r'$m=x^2-2$', 'autre', 'm')
+text(ax, 44, 43, '=', 'resultat', 'xl')
+box(ax, 52, 34, 15, 18, 'sujet', label='1', size='l')
+box(ax, 69, 34, 15, 18, 'sujet', label=r'$\sqrt{2}$', size='l')
+text(ax, 20, 29.5, r'$\deg m=2$', 'autre', 'm')
+brace(ax, 52, 84, 33, 'sujet', label='2 briques = degré')
+box(ax, 8, 4, 72, 11, 'resultat', label=r'$[F(u):F]=n=\deg m$')
+save(fig, '61-080')

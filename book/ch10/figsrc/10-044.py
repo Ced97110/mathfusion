@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(72)
+box(ax,3,58,14,9,'sujet',label='0,21'); arrow(ax,(18,62.5),(28,62.5)); box(ax,29,58,13,9,'varie',label='0,2'); text(ax,23,66.5,'baisse','varie','s')
+box(ax,47,58,16,9,'sujet',label='5,42'); arrow(ax,(64,62.5),(74,62.5)); box(ax,75,58,10,9,'varie',label='5'); text(ax,69,66.5,'baisse','varie','s')
+text(ax,36,49,'0,2 × 5 = 1','varie','m')
+f=numberline(ax,8,70,30,0,1.2,0.2,labels=False,arrow_right=False)
+disc(ax,f(1),30,1.5,'varie'); disc(ax,f(1.1382),30,1.5,'sujet')
+text(ax,f(1)-1,37,'estimé 1','varie','s',ha='right'); text(ax,f(1.1382)+0.5,37,'exact 1,1382','sujet','s',ha='left')
+text(ax,8,26,'0','fixe','s')
+brace(ax,f(1),f(1.1382),27,'limite',label='0,1382 en moins')
+save(fig,'10-044')

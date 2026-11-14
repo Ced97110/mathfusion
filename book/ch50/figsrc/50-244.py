@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 4, 54, 80, 22, 'sujet')
+text(ax, 44, 70, 'équation', 'sujet', 'm', weight='bold')
+text(ax, 44, 62, 'a-t-elle une formule avec des radicaux ?', 'sujet', 's')
+arrow(ax, (20, 52), (20, 30), 'resultat', both=True, lw=1.6)
+text(ax, 26, 41, 'si et seulement si', 'resultat', 'l', weight='bold', ha='left')
+box(ax, 4, 4, 80, 24, 'autre')
+text(ax, 62, 22, 'groupe de Galois', 'autre', 's', weight='bold')
+text(ax, 62, 15, r'résoluble ? (quotients abéliens)', 'autre', 's')
+for i in range(3): box(ax, 8 + 8.5 * i, 7, 8, 16 - 5 * i, 'autre', lw=0.6, r=0.3)
+save(fig, '50-244')

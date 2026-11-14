@@ -1,0 +1,184 @@
+[
+ {
+  "code": "48-081",
+  "a_dire": "Un diagramme est commutatif quand toutes les suites de flèches qui vont du même départ à la même arrivée donnent le même résultat.",
+  "legende_titre": "Deux chemins, une seule arrivée",
+  "lecture": [
+   "Le cadre bleu à gauche contient les entiers, le cadre vert à droite les positions, le cadre violet en bas les paquets.",
+   "La flèche du haut envoie 7 directement sur 3.",
+   "Les deux flèches du bas envoient 7 sur son paquet, puis le paquet sur 3.",
+   "Le texte vert rappelle que les deux chemins finissent au même endroit."
+  ],
+  "a_voir": "Les deux chemins partent de 7 et arrivent tous deux sur 3."
+ },
+ {
+  "code": "48-082",
+  "a_dire": "Sur le bouton, chaque paquet est envoyé sur la position de même nom : f barre ne change rien.",
+  "legende_titre": "Chaque paquet va sur sa position",
+  "lecture": [
+   "La colonne bleue contient les quatre paquets.",
+   "La colonne verte contient les quatre positions 0, 1, 2 et 3.",
+   "Chaque flèche orange relie un paquet à la position de même numéro."
+  ],
+  "a_voir": "Les quatre flèches sont horizontales : le paquet et la position portent le même nom."
+ },
+ {
+  "code": "48-083",
+  "a_dire": "Le théorème est utile quand le départ et l'arrivée n'ont pas la même nature, ici des nombres et des rotations.",
+  "legende_titre": "Des nombres qui donnent des rotations",
+  "lecture": [
+   "Les deux cadres bleus à gauche sont les entiers 1 et 5.",
+   "Les quatre carrés violets à droite sont les quatre rotations, de 0° à 270°.",
+   "Les deux flèches orange arrivent sur le carré de 90°."
+  ],
+  "a_voir": "Deux entiers différents donnent la même rotation de 90°."
+ },
+ {
+  "code": "48-084",
+  "a_dire": "Le mot canonique dit que ν envoie un entier sur son paquet sans aucun choix.",
+  "legende_titre": "ν envoie 7 sur son paquet",
+  "lecture": [
+   "Le disque gris à gauche est l'entier 7.",
+   "La flèche orange est ν.",
+   "Le grand cadre bleu est le paquet de 7 ; il contient 3, 7 et 11."
+  ],
+  "a_voir": "Le paquet entier est atteint depuis 7, sans choisir de représentant."
+ },
+ {
+  "code": "48-085",
+  "a_dire": "La preuve va de ν(ab) à ν(a)ν(b), et l'étape du produit des classes porte tout le poids.",
+  "legende_titre": "Quatre lignes, une étape clé",
+  "lecture": [
+   "Le cadre bleu en haut est le départ, ν(ab).",
+   "Le cadre vert en bas est l'arrivée, ν(a)ν(b).",
+   "La flèche orange et le cadre orange marquent l'étape qui utilise le produit des classes.",
+   "Les flèches grises sont de simples lectures de la définition de ν."
+  ],
+  "a_voir": "Seule la flèche orange demande autre chose que la définition de ν."
+ },
+ {
+  "code": "48-086",
+  "a_dire": "Le noyau de ν est le paquet de 0, c'est-à-dire K.",
+  "legende_titre": "Le noyau est le paquet de 0",
+  "lecture": [
+   "Les trois disques verts 0, 4 et 8 sont des entiers du paquet de 0.",
+   "Le cadre vert est ce paquet, égal à K.",
+   "Le disque rouge 5 va dans un autre paquet, en rouge."
+  ],
+  "a_voir": "Seuls les entiers qui arrivent dans le cadre vert forment le noyau."
+ },
+ {
+  "code": "48-087",
+  "a_dire": "Une seule valeur est possible pour f barre : celle que f donne sur n'importe quel élément du paquet.",
+  "legende_titre": "La valeur de f barre est imposée",
+  "lecture": [
+   "Le cadre gris est l'entier 7, le cadre violet son paquet, le cadre vert la position 3.",
+   "La flèche orange est ν, la flèche verte est f barre.",
+   "L'arc gris est f, qui envoie 7 sur 3.",
+   "La flèche rouge vers 0 montre une valeur impossible."
+  ],
+  "a_voir": "Le paquet doit aller sur 3, puisque 7 est dedans et que f(7) vaut 3."
+ },
+ {
+  "code": "48-088",
+  "a_dire": "Si L est dans le noyau, chaque paquet a une seule image ; sinon un paquet a deux images.",
+  "legende_titre": "Une ou deux valeurs par paquet",
+  "lecture": [
+   "En haut, le cadre bleu est un paquet modulo le noyau ; sa flèche verte mène à une seule position, 3.",
+   "En bas, le cadre bleu est un paquet modulo 3, qui contient 0 et 3.",
+   "Les deux flèches rouges mènent à deux positions différentes, 0 et 3."
+  ],
+  "a_voir": "En haut une flèche, en bas deux : c'est la différence entre les deux cas."
+ },
+ {
+  "code": "48-089",
+  "a_dire": "On cherche à décrire les sous-groupes du quotient G/K à partir de G.",
+  "legende_titre": "Que sont les sous-groupes du quotient ?",
+  "lecture": [
+   "À gauche, les douze points sont les éléments de l'horloge ; le trait bleu relie 0 et 6.",
+   "Les traits gris pointillés relient les autres paires du même paquet.",
+   "À droite, les six points violets sont les six paquets.",
+   "La flèche orange est ν."
+  ],
+  "a_voir": "Douze points se regroupent en six paquets, et la question porte sur les sous-groupes de ces six paquets."
+ },
+ {
+  "code": "48-090",
+  "a_dire": "H ↦ H/K associe un à un les sous-groupes de G qui contiennent K et les sous-groupes de G/K.",
+  "legende_titre": "Quatre sous-groupes de chaque côté",
+  "lecture": [
+   "La colonne bleue liste les quatre sous-groupes de l'horloge qui contiennent K.",
+   "La colonne violette donne le nombre de paquets de chacun.",
+   "Chaque flèche orange relie un sous-groupe à son image."
+  ],
+  "a_voir": "Quatre flèches, une par ligne : chaque sous-groupe a exactement une image."
+ },
+ {
+  "code": "48-091",
+  "a_dire": "Si un sous-groupe est contenu dans un autre, son image est contenue dans l'image de l'autre, et inversement.",
+  "legende_titre": "Les boîtes s'emboîtent de la même façon",
+  "lecture": [
+   "À gauche, les trois cadres bleus emboîtés sont K, ⟨2⟩ et G, avec leur nombre d'éléments.",
+   "À droite, les trois cadres violets emboîtés sont leurs images.",
+   "La flèche orange est H ↦ H/K."
+  ],
+  "a_voir": "L'ordre d'emboîtement est le même des deux côtés."
+ },
+ {
+  "code": "48-092",
+  "a_dire": "Pour H qui ne contient pas K, H/K peut être normal sans que H le soit.",
+  "legende_titre": "Normal en quotient, pas en haut",
+  "lecture": [
+   "Le cadre bleu contient K : e, c et c au carré.",
+   "Le cadre gris contient les trois échanges.",
+   "Le pointillé rouge entoure H : e et t1.",
+   "Le texte vert dit que H/K est tout G/K ; le texte rouge dit que H n'est pas normal."
+  ],
+  "a_voir": "H contient e et un échange, mais pas tout le paquet K : l'équivalence ne s'applique pas."
+ },
+ {
+  "code": "48-093",
+  "a_dire": "H/K est l'ensemble des paquets hK où h parcourt H.",
+  "legende_titre": "H/K : les paquets de H",
+  "lecture": [
+   "Les six disques sont les éléments de H.",
+   "Chaque cadre regroupe un paquet : K en bleu, 2K et 4K en violet.",
+   "L'accolade du haut compte les 6 éléments ; celle du bas compte les 3 paquets."
+  ],
+  "a_voir": "Six éléments se regroupent en trois paquets de deux."
+ },
+ {
+  "code": "48-094",
+  "a_dire": "Les sous-groupes de G qui contiennent K se placent sur ceux de G/K, avec les mêmes lignes d'inclusion.",
+  "legende_titre": "Deux figures qui se superposent",
+  "lecture": [
+   "À gauche, les six cadres sont les sous-groupes de l'horloge ; une ligne signifie « est contenu dans ».",
+   "Les deux cadres gris ne contiennent pas K.",
+   "À droite, les quatre cadres violets sont les sous-groupes de G/K.",
+   "Les flèches orange partent des quatre cadres bleus."
+  ],
+  "a_voir": "Le losange bleu et le losange violet ont la même forme."
+ },
+ {
+  "code": "48-095",
+  "a_dire": "Quatre sous-groupes contiennent K et le quotient en a aussi quatre, un par diviseur de 6.",
+  "legende_titre": "Quatre diviseurs, quatre sous-groupes",
+  "lecture": [
+   "Chaque ligne correspond à un diviseur de 6.",
+   "Les cases bleues sont les positions de 0 à 5 multiples de ce diviseur.",
+   "Le texte vert compte : 4 diviseurs, 4 sous-groupes."
+  ],
+  "a_voir": "Le nombre de lignes est quatre."
+ },
+ {
+  "code": "48-096",
+  "a_dire": "L'horloge à douze heures a six sous-groupes, un par diviseur de 12.",
+  "legende_titre": "Les six sous-groupes de l'horloge",
+  "lecture": [
+   "Chaque ligne est un sous-groupe ; les douze cases sont les positions de 0 à 11.",
+   "Les cases colorées sont les éléments du sous-groupe.",
+   "La ligne violette est K, formée de 0 et 6."
+  ],
+  "a_voir": "Six lignes, de {0} jusqu'à l'horloge entière."
+ }
+]

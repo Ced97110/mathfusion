@@ -1,0 +1,178 @@
+[
+ {
+  "code": "33-017",
+  "a_dire": "Une courbe qui monte tout le temps ne repasse pas à la même hauteur : elle ne revient pas à 0,5 après 30°.",
+  "legende_titre": "Elle monte, elle ne revient pas",
+  "lecture": [
+   "La courbe bleue monte quand l’angle augmente.",
+   "Le point orange est à 30°, à la hauteur 0,5 de la ligne grise en tirets.",
+   "Les points verts, à 40° et à 100°, sont au-dessus de cette ligne."
+  ],
+  "a_voir": "Après 30°, la courbe reste au-dessus de la ligne de hauteur 0,5."
+ },
+ {
+  "code": "33-018",
+  "a_dire": "Toute hauteur de −1 à 1 est atteinte une seule fois par la partie bleue de la courbe.",
+  "legende_titre": "Une hauteur, un seul angle",
+  "lecture": [
+   "La courbe bleue est la bande, de −90° à 90°.",
+   "Chaque ligne orange en tirets est une hauteur : −0,5, 0 et 0,9.",
+   "Chaque point vert est le seul croisement, et le trait vert donne l’angle : −30°, 0°, 64,16°."
+  ],
+  "a_voir": "Chaque ligne horizontale coupe la courbe bleue en un seul point."
+ },
+ {
+  "code": "33-019",
+  "a_dire": "Une fonction donne une seule sortie pour chaque entrée ; une règle qui en donne deux n’en est pas une.",
+  "legende_titre": "Une entrée, une seule sortie",
+  "lecture": [
+   "À gauche, le disque bleu 30° donne une seule flèche, vers le disque vert 0,5.",
+   "À droite, le disque bleu 9 donne deux flèches rouges, vers 3 et vers −3.",
+   "La règle de droite donne deux sorties : ce n’est pas une fonction."
+  ],
+  "a_voir": "À gauche une seule sortie par entrée, à droite deux sorties pour une entrée."
+ },
+ {
+  "code": "33-020",
+  "a_dire": "La réciproque est la règle qui, à la sortie, rend l’entrée de départ.",
+  "legende_titre": "Le chemin inverse d’une fonction",
+  "lecture": [
+   "La flèche bleue du haut va de l’entrée à la sortie : 30° vers 0,5, puis 4 vers 16.",
+   "La flèche orange du bas fait le chemin inverse, de 0,5 vers 30° et de 16 vers 4.",
+   "Les disques verts sont les sorties, les disques bleus les entrées."
+  ],
+  "a_voir": "La flèche orange reprend la sortie et rend l’entrée."
+ },
+ {
+  "code": "33-021",
+  "a_dire": "La réciproque est une fonction seulement si chaque sortie vient d’une seule entrée.",
+  "legende_titre": "Une sortie, une seule entrée",
+  "lecture": [
+   "À gauche, les disques bleus 30° et 150° donnent tous deux la sortie verte 0,5.",
+   "À droite, la règle inverse reçoit 0,5.",
+   "Elle doit rendre 30° et 150° : deux flèches rouges, donc ce n’est pas une fonction."
+  ],
+  "a_voir": "Deux entrées pour une même sortie empêchent la règle inverse d’être une fonction."
+ },
+ {
+  "code": "33-022",
+  "a_dire": "Le sinus sur tous les angles n’a pas de réciproque : 0,5 vient d’une infinité d’angles.",
+  "legende_titre": "Une sortie, une infinité d’angles",
+  "lecture": [
+   "La courbe bleue est le sinus sur tous les angles.",
+   "La ligne orange en tirets est la hauteur 0,5.",
+   "Chaque point orange est un angle qui donne 0,5 : −210°, 30°, 150°, 390°. La courbe continue et en donne d’autres."
+  ],
+  "a_voir": "La ligne de hauteur 0,5 coupe la courbe en beaucoup de points."
+ },
+ {
+  "code": "33-023",
+  "a_dire": "Le carré a le même défaut que le sinus, mais la racine carrée existe : on choisit l’entrée positive.",
+  "legende_titre": "Même défaut, choix du positif",
+  "lecture": [
+   "À gauche, les entrées 3 et −3 donnent la même sortie 9.",
+   "À droite, la racine carrée de 9 rend 3, le nombre positif, en vert.",
+   "Le trait en tirets vers −3 montre le nombre qui n’est pas choisi."
+  ],
+  "a_voir": "Deux entrées donnent 9, et la racine carrée en garde une seule, le positif."
+ },
+ {
+  "code": "33-024",
+  "a_dire": "Un nombre et son opposé ont le même carré : 3² = 9 et (−3)² = 9.",
+  "legende_titre": "Le carré donne la même sortie à 3 et −3",
+  "lecture": [
+   "Les disques bleus du bas sont un nombre et son opposé : −3 et 3, puis −5 et 5.",
+   "Les flèches orange représentent « au carré ».",
+   "Chaque paire arrive au même disque vert : 9, puis 25."
+  ],
+  "a_voir": "Deux entrées opposées arrivent à la même sortie."
+ },
+ {
+  "code": "33-025",
+  "a_dire": "Sur les nombres positifs ou nuls, 9 vient de 3 seulement : la racine carrée défait le carré.",
+  "legende_titre": "Garder les positifs, un seul choix",
+  "lecture": [
+   "Le rectangle bleu couvre les nombres positifs ou nuls, de 0 vers la droite.",
+   "Le point bleu 3 est regardé ; le cercle gris −3 est hors du rectangle et n’est pas regardé.",
+   "La flèche orange donne 9 pour 3, la flèche verte revient de 9 à 3."
+  ],
+  "a_voir": "Avec les positifs seuls, 9 ne vient que de 3."
+ },
+ {
+  "code": "33-026",
+  "a_dire": "On restreint le carré en retirant des entrées jusqu’à ce que chaque sortie ne vienne que d’une entrée.",
+  "legende_titre": "Retirer des entrées jusqu’à une seule",
+  "lecture": [
+   "Chaque ligne grise est la droite des nombres ; le trait bleu épais est la partie gardée.",
+   "En haut, de −2 à 3, les deux points orange −2 et 2 donnent 4 : il faut retirer encore.",
+   "En bas, de 0 à 3, seul le point orange 2 donne 4."
+  ],
+  "a_voir": "En haut deux entrées donnent 4, en bas une seule."
+ },
+ {
+  "code": "33-027",
+  "a_dire": "Une bijection est une fonction où chaque sortie est atteinte exactement une fois.",
+  "legende_titre": "Chaque sortie exactement une fois",
+  "lecture": [
+   "À gauche, chaque disque bleu a sa flèche verte vers un disque vert différent : 0, 2 et 3 donnent 0, 4 et 9.",
+   "À droite, −3 et 3 arrivent au même disque rouge 9.",
+   "Seul le côté gauche atteint chaque sortie une seule fois."
+  ],
+  "a_voir": "À gauche chaque sortie vient d’une entrée, à droite 9 vient de deux."
+ },
+ {
+  "code": "33-028",
+  "a_dire": "La racine carrée, l’arcsinus, l’arccosinus et l’arctangente sont des réciproques obtenues par restriction.",
+  "legende_titre": "Quatre fois la même méthode",
+  "lecture": [
+   "Chaque boîte bleue est une fonction : carré, sinus, cosinus, tangente.",
+   "Chaque flèche orange veut dire : on garde une partie des entrées, puis on prend la réciproque.",
+   "Chaque boîte verte est la réciproque obtenue."
+  ],
+  "a_voir": "Quatre fonctions, une même méthode, quatre réciproques."
+ },
+ {
+  "code": "33-029",
+  "a_dire": "[a, b] désigne tous les nombres de a à b, les deux bouts compris.",
+  "legende_titre": "[0, 1] : bouts compris",
+  "lecture": [
+   "Le trait bleu épais est l’ensemble, de 0 à 1.",
+   "Les disques pleins aux deux bouts, avec les crochets qui se referment sur le trait, montrent que 0 et 1 sont dedans.",
+   "Le point du milieu, 0,5, est dedans aussi."
+  ],
+  "a_voir": "Les crochets se referment sur l’ensemble, les deux bouts sont dedans."
+ },
+ {
+  "code": "33-030",
+  "a_dire": "]a, b[ désigne tous les nombres entre a et b, sans a ni b.",
+  "legende_titre": "]−90°, 90°[ : bouts exclus",
+  "lecture": [
+   "Le trait bleu épais va de −90° à 90°.",
+   "Les disques vides aux deux bouts disent que −90° et 90° ne sont pas dans l’ensemble.",
+   "Les crochets sont tournés vers l’extérieur."
+  ],
+  "a_voir": "Les crochets tournés vers l’extérieur et les disques vides marquent les bouts exclus."
+ },
+ {
+  "code": "33-031",
+  "a_dire": "Des crochets qui se referment gardent les bouts ; des crochets tournés vers l’extérieur les excluent.",
+  "legende_titre": "Crochets fermés, crochets ouverts",
+  "lecture": [
+   "La ligne du haut est [0, 1] : crochets qui se referment sur le trait bleu, disques pleins.",
+   "La ligne du bas est ]0, 1[ : crochets tournés vers l’extérieur, disques vides.",
+   "Le nombre 1 est dedans en haut, dehors en bas."
+  ],
+  "a_voir": "La forme des crochets dit si 1 est dans l’ensemble."
+ },
+ {
+  "code": "33-032",
+  "a_dire": "[−π/2, π/2] contient π/2, mais ]−π/2, π/2[ ne le contient pas.",
+  "legende_titre": "Le bout π/2, dedans ou dehors",
+  "lecture": [
+   "Sur chaque ligne, le trait bleu épais arrive à π/2, soit 90°.",
+   "En haut, le disque plein et le crochet fermé gardent π/2.",
+   "En bas, le disque vide et le crochet tourné vers l’extérieur laissent π/2 dehors."
+  ],
+  "a_voir": "Seul le premier ensemble contient π/2."
+ }
+]

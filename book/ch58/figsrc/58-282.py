@@ -1,0 +1,23 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+# ligne du haut : x = pi(x) + (x - pi(x))
+box(ax, 2, 56, 24, 10, 'sujet', label='(1, 3)')
+text(ax, 29.5, 61, '=', 'encre', 'l')
+box(ax, 33, 56, 24, 10, 'resultat', label='(−2, 0)')
+text(ax, 60.5, 61, '+', 'encre', 'l')
+box(ax, 64, 56, 22, 10, 'autre', label='(3, 3)')
+text(ax, 14, 52, r'$x$', 'sujet', 's')
+text(ax, 45, 52, r'$\pi(x)$ dans l’image', 'resultat', 's')
+text(ax, 75, 52, 'dans le noyau', 'autre', 's')
+text(ax, 75, 48.5, r'$\pi(3,3)=0$', 'autre', 's')
+# plan : image et noyau ne se coupent qu'en O
+ox, oy, u = 44, 24, 8.0
+P = lambda x, y: (ox + x * u, oy + y * u)
+line(ax, [P(-4.2, 0), P(4.2, 0)], 'resultat', lw=1.4)
+line(ax, [P(-2.6, -2.6), P(2.6, 2.6)], 'autre', lw=1.4)
+text(ax, P(4.2, 0)[0], P(4.2, 0)[1] + 3, 'image', 'resultat', 's', ha='right')
+text(ax, P(2.6, 2.6)[0] + 2, P(2.6, 2.6)[1] - 1, 'noyau', 'autre', 's', ha='left')
+disc(ax, ox, oy, 1.3, 'encre')
+text(ax, ox + 3, oy - 4, 'O', 'encre', 's', ha='left')
+text(ax, 44, 3, 'image ∩ noyau = {0}', 'encre', 'm')
+save(fig, '58-282')

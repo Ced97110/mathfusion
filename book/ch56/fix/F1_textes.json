@@ -1,0 +1,119 @@
+{
+  "56-010": {
+    "lecture": [
+      "Les petits points gris forment la grille des nombres a + b√−5, sur trois lignes.",
+      "Les points 2 et 3 sont en bleu, 6 en vert, 1 + √−5 et 1 − √−5 en violet. Chaque trait part de 0 : le bleu va à 2, le violet à 1 + √−5.",
+      "Chaque nom porte sa norme : 4 pour 2, 9 pour 3, 6 pour 1 + √−5 et 1 − √−5.",
+      "Les deux cercles rouges sont centrés en 0 : le petit est celui de la norme 2, le grand celui de la norme 3. Aucun point ne se trouve dessus."
+    ],
+    "a_voir": "Les deux traits n'ont pas la même longueur, et les cercles passent dans les vides de la grille sans toucher de point."
+  },
+  "56-013": {
+    "lecture": [
+      "En haut, la formule dit que la norme est égale à a² + 5b² et au carré de d, la distance du point à 0.",
+      "Chaque trait part de 0 vers un point : bleu pour 2, orange pour 1 + √−5, violet pour 3.",
+      "Pour 1 + √−5, le trait pointillé gris donne a = 1 et la hauteur √5.",
+      "À droite, chaque calcul reprend la couleur du point : la norme de 2 vaut 4, celle de 1 + √−5 vaut 6, celle de 3 vaut 9."
+    ],
+    "a_voir": "La formule de la norme donne le carré de la longueur du trait, et c'est un entier."
+  },
+  "56-027": {
+    "lecture": [
+      "Premier rang : la flèche verte part de a et revient sur a, car a = a × 1.",
+      "Deuxième rang : les flèches orange vont de c à b puis de b à a ; la grande flèche verte va directement de c à a.",
+      "Troisième rang : la flèche verte va de b vers a ; la flèche rouge de retour est fausse.",
+      "Le cadre rouge du bas donne ce qui casse la première propriété : dans les entiers pairs, sans 1, 2 ne divise pas 2."
+    ],
+    "a_voir": "Chaque rang montre une propriété avec sa flèche ; le cadre rouge montre seulement ce qui casse la première."
+  },
+  "56-038": {
+    "lecture": [
+      "La colonne de gauche écrit la preuve avec des lettres, ligne 1 à ligne 5 ; la colonne de droite refait chaque ligne avec 3 et −3.",
+      "Les deux cases bleues sont le départ : b = a u et a = b v.",
+      "Les deux cases orange viennent du remplacement de a par b v, puis de la simplification : on barre b, qui n'est pas nul.",
+      "La case verte v u = 1 est l'arrivée : u est une unité et v est son inverse."
+    ],
+    "a_voir": "L'étape qui porte tout le poids est la ligne 4 vers la ligne 5 : on barre b."
+  },
+  "56-049": {
+    "lecture": [
+      "En haut, 6 = 2 × 3 : la case bleue 2 est un facteur, donc 2 divise 6.",
+      "Au milieu, 6 = (1 + √−5)(1 − √−5) : les deux cases grises ne contiennent pas 2.",
+      "Les deux cases rouges demandent si 2 divise chaque facteur : la réponse est non. Le quotient de 1 + √−5 par 2 est ½ + ½√−5, dont les coefficients ne sont pas entiers.",
+      "La case verte du bas conclut : 2 divise 6 sans diviser un facteur, donc 2 n'est pas premier."
+    ],
+    "a_voir": "2 divise 6, mais il ne divise aucun des deux facteurs de la seconde écriture."
+  },
+  "56-050": {
+    "lecture": [
+      "Chaque disque est un nombre a + b√3 i, avec a et b entiers : a se lit sur l'axe horizontal, b√3 sur l'axe vertical.",
+      "Les disques bleus sont des points de l'ensemble ; la ligne horizontale du milieu porte les entiers (b = 0).",
+      "Les deux disques orange sont 1 + √3 i et 1 − √3 i ; le trait pointillé marque a = 1.",
+      "Le disque vert du haut est √3 i. La flèche verte va de ce point au disque vert −3 : le carré de √3 i vaut −3."
+    ],
+    "a_voir": "Un nombre de cet ensemble est un point dont l'abscisse est un entier et l'ordonnée un multiple entier de √3 ; le carré de √3 i est −3."
+  },
+  "56-057": {
+    "lecture": [
+      "Les quatre cases du haut se lisent de haut en bas, dans ℤ[√3 i] : on suppose une cassure de 2 ; les normes se multiplient pour donner 4 ; chaque morceau aurait la norme 2 ; il faudrait donc a² + 3b² = 2.",
+      "Les deux cases rouges montrent pourquoi c'est impossible : si b n'est pas nul, 3b² vaut au moins 3 ; si b est nul, a² = 2 n'a pas de solution entière.",
+      "Sur la droite graduée, les disques bleus sont les valeurs de a² + 3b² atteintes : 0, 1, 3 et 4.",
+      "Le cercle rouge sur 2 montre que cette valeur n'est jamais atteinte."
+    ],
+    "a_voir": "La valeur 2 manque sur la droite : c'est ce qui rend la cassure impossible."
+  },
+  "56-066": {
+    "lecture": [
+      "Dans le grand cadre, qui est R, les cases violettes sont x² et y² ; les cases bleues sont xy et xy.",
+      "Sous chaque case, les briques en pointillés gris donnent ses facteurs : x et x, y et y, puis x et y deux fois.",
+      "Les huit briques sont hors de R : leur degré total est 1.",
+      "Les deux écritures de x²y² ne se rejoignent qu'avec ces briques x et y."
+    ],
+    "a_voir": "Les deux écritures se réduisent aux mêmes briques x et y, qui n'appartiennent pas à R."
+  },
+  "56-075": {
+    "lecture": [
+      "En haut, les barres bleues sont les normes de 6, 3 et 2 : 36, 9 et 4.",
+      "Les flèches orange vont de 6 vers ses diviseurs 3 et 2 : la norme baisse. Le texte vert dit que la chaîne est vraie.",
+      "À droite, 36 = 4 × 9.",
+      "En bas, le texte rouge dit que la primalité est fausse pour 2 : 2 divise 6, mais 2 ne divise aucun des deux facteurs (1 + √−5) et (1 − √−5)."
+    ],
+    "a_voir": "La norme baisse à chaque cassure, donc la chaîne s'arrête ; le défaut est la primalité de 2."
+  },
+  "56-088": {
+    "lecture": [
+      "Les cases bleues sont les idéaux (48), (24), (12) et (6) : chacun est contenu dans le suivant.",
+      "La case verte (3) est au rang N = 5. Les deux cases vertes en pointillés après elle sont identiques : la suite ne change plus.",
+      "Le grand cadre orange est la réunion I de tous les idéaux : c'est un idéal, qui s'écrit (d).",
+      "La flèche verte montre que d = 3 est déjà dans l'idéal (3) du rang 5 : donc I = (d) = (3)."
+    ],
+    "a_voir": "La réunion est un idéal (d) ; dès le rang où d apparaît, tous les idéaux suivants sont égaux à cette réunion."
+  },
+  "56-099": {
+    "lecture": [
+      "La colonne bleue va de 48 à 3 ; chaque flèche « × 2 » détache un facteur 2.",
+      "La boîte verte est le nombre 3 : il est irréductible et la chaîne s'arrête là.",
+      "La boîte orange en pointillés est le reste 16, qui demande une nouvelle chaîne.",
+      "L'écriture en haut à droite rappelle 48 = 3 × 16."
+    ],
+    "a_voir": "Cette chaîne donne un irréductible, 3, et laisse un reste, 16, à décomposer."
+  },
+  "56-107": {
+    "lecture": [
+      "La rangée du haut est la chaîne des idéaux de 48 : 5 cases, de (48) à (3).",
+      "Les deux rangées du bas se lisent l'une après l'autre : la chaîne des idéaux de 1 024 compte 10 cases, de (1024) à (2).",
+      "Chaque chaîne finit par une case verte : elle s'arrête.",
+      "Les deux chaînes n'ont pas la même longueur."
+    ],
+    "a_voir": "Chaque chaîne s'arrête, mais pas au même rang."
+  },
+  "56-128": {
+    "lecture": [
+      "Les petits points gris sont les nombres entiers de Gauss ; les points orange liés par des traits sont les multiples de b.",
+      "Le cercle gris en pointillés est centré sur le disque orange bq = 7 + i ; son rayon est la distance de b à 0.",
+      "Le point bleu est a = 7 + 2i : il est dans le cercle.",
+      "La flèche verte de bq vers a est le reste r = i. En haut, la taille δ de r vaut 1 et celle de b vaut 5."
+    ],
+    "a_voir": "Le point a est dans le cercle centré sur bq, et le reste est plus petit que b."
+  }
+}

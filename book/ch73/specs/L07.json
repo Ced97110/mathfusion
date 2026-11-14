@@ -1,0 +1,185 @@
+[
+ {
+  "code": "73-097",
+  "a_dire": "Quand l'image de e1 est le vecteur noir, l'image de e2 n'a que deux places possibles sur le cercle : une pour la rotation, une pour la réflexion.",
+  "legende_titre": "Deux places seulement pour l'image de e2",
+  "lecture": [
+   "Le vecteur noir est l'image de e1 pour l'angle de 50° : (0,64 ; 0,77). Il est le même pour R(θ) et pour B(θ).",
+   "Le vecteur bleu est l'image de e2 par la rotation : (−0,77 ; 0,64).",
+   "Le vecteur orange est l'image de e2 par la réflexion : (0,77 ; −0,64).",
+   "Les deux points sont sur le cercle, à angle droit du noir."
+  ],
+  "a_voir": "Il y a exactement deux points du cercle à angle droit du noir : un pour la rotation, un pour la réflexion."
+ },
+ {
+  "code": "73-098",
+  "a_dire": "L'image de e2 un quart de tour en avant du noir donne la rotation, de déterminant 1 ; un quart de tour en arrière donne la réflexion, de déterminant −1.",
+  "legende_titre": "Avant ou arrière : le signe du déterminant",
+  "lecture": [
+   "À gauche, la rotation : le vecteur bleu est un quart de tour en avant du noir, le carré bleu tourne d'un bloc, déterminant 1.",
+   "À droite, la réflexion : le vecteur orange est un quart de tour en arrière du noir, le carré orange est retourné, déterminant −1.",
+   "Dans les deux carrés, le côté noir est le même."
+  ],
+  "a_voir": "Le sens du quart de tour entre le noir et l'autre côté donne le signe du déterminant."
+ },
+ {
+  "code": "73-099",
+  "a_dire": "Le miroir de B(θ) est à l'angle θ/2, à mi-chemin entre e1 et son image ; le vecteur d sur ce miroir ne bouge pas.",
+  "legende_titre": "Où est le miroir ?",
+  "lecture": [
+   "La flèche grise est e1, à l'angle 0. La flèche noire est son image, à l'angle θ = 90°.",
+   "La droite bleue est le miroir : elle coupe l'angle en deux parties égales, chacune de θ/2.",
+   "Le point vert sur le miroir est d : il ne bouge pas."
+  ],
+  "a_voir": "Le miroir est à mi-chemin entre e1 et son image, à l'angle θ/2."
+ },
+ {
+  "code": "73-100",
+  "a_dire": "Faire deux fois le même miroir ramène au départ ; deux miroirs différents ne ramènent pas au départ.",
+  "legende_titre": "Deux fois le même miroir",
+  "lecture": [
+   "À gauche, la droite bleue est un seul miroir. Le point (3 ; 2) va en (2 ; 3), puis revient en (3 ; 2).",
+   "À droite, la droite bleue et la droite violette sont deux miroirs différents.",
+   "Le point (3 ; 2) va en (3 ; −2), puis en (−2 ; 3), en rouge : il ne revient pas."
+  ],
+  "a_voir": "Avec le même miroir deux fois, on revient au point de départ ; avec deux miroirs, non."
+ },
+ {
+  "code": "73-101",
+  "a_dire": "Le signe τ est le nom de la matrice de lignes (1, 0) et (0, −1) : le miroir dont l'axe est l'axe horizontal.",
+  "legende_titre": "Le signe τ : un miroir",
+  "lecture": [
+   "La droite bleue épaisse est l'axe horizontal, l'axe du miroir.",
+   "Le point (3 ; 2) arrive en (3 ; −2) : la flèche orange change le signe de la seconde coordonnée.",
+   "Dans la matrice, la case bleue 1 garde la première coordonnée et la case orange −1 change la seconde."
+  ],
+  "a_voir": "Le miroir τ garde la première coordonnée et change le signe de la seconde."
+ },
+ {
+  "code": "73-102",
+  "a_dire": "Multiplier R(θ) à droite par τ change le signe de la seconde colonne et donne B(θ).",
+  "legende_titre": "Multiplier à droite par τ",
+  "lecture": [
+   "À gauche, la matrice R(90°) : ses cases sont 0, −1, 1, 0.",
+   "La flèche orange est la multiplication à droite par τ.",
+   "À droite, la matrice B(90°) : seule la colonne 2, en orange, a changé de signe. La colonne 1 en gris est la même."
+  ],
+  "a_voir": "Seule la colonne 2 change de signe quand on multiplie à droite par τ."
+ },
+ {
+  "code": "73-103",
+  "a_dire": "Toute réflexion est le miroir horizontal suivi d'une rotation.",
+  "legende_titre": "Un miroir, puis un quart de tour",
+  "lecture": [
+   "Le premier plan montre le point de départ (3 ; 2), en noir.",
+   "Le deuxième plan montre le point après le miroir horizontal : (3 ; −2), en orange.",
+   "Le troisième plan montre le point après le quart de tour : (2 ; 3), en vert. C'est le point donné par la réflexion qui échange les coordonnées."
+  ],
+  "a_voir": "Le miroir horizontal puis le quart de tour mènent au même point que la réflexion."
+ },
+ {
+  "code": "73-104",
+  "a_dire": "O(2) est fait de deux cercles : les rotations, de déterminant 1, et les réflexions, de déterminant −1.",
+  "legende_titre": "Deux cercles dans O(2)",
+  "lecture": [
+   "L'accolade grise réunit les deux cercles : ils forment O(2).",
+   "Le cercle bleu est celui des rotations R(θ), de déterminant 1.",
+   "Le cercle orange est celui des réflexions B(θ), de déterminant −1.",
+   "Sur chaque cercle, le petit rond marque l'angle de 30° mesuré depuis le pointillé."
+  ],
+  "a_voir": "Chaque matrice de O(2) est sur l'un des deux cercles, selon son déterminant."
+ },
+ {
+  "code": "73-105",
+  "a_dire": "Les matrices de O(n) laissent l'origine en place : pour amener un sommet en (4 ; 5), il faut un autre mouvement, la translation.",
+  "legende_titre": "Les matrices laissent l'origine en place",
+  "lecture": [
+   "Le triangle bleu a un sommet à l'origine.",
+   "Le contour violet est le triangle après un miroir : son sommet est resté en (0 ; 0).",
+   "Le rond rouge est le point (4 ; 5), où l'on veut amener le sommet.",
+   "La flèche orange est le déplacement qui manque."
+  ],
+  "a_voir": "Un miroir ou une rotation ne peut pas amener le sommet en (4 ; 5)."
+ },
+ {
+  "code": "73-106",
+  "a_dire": "Une translation ajoute le même vecteur à tous les points, origine comprise ; un cisaillement ne les déplace pas tous de la même quantité.",
+  "legende_titre": "Une translation, face au cisaillement",
+  "lecture": [
+   "À gauche, les deux points bleus (0 ; 0) et (1 ; 1) avancent de la même flèche orange (2 ; 0) vers les points verts.",
+   "À droite, le cisaillement : le point (0 ; 0) ne bouge pas, le point (1 ; 1) avance de 1 seulement.",
+   "Les flèches du cisaillement n'ont donc pas toutes la même longueur."
+  ],
+  "a_voir": "La translation déplace tous les points de la même flèche, même l'origine."
+ },
+ {
+  "code": "73-107",
+  "a_dire": "Un élément de E(n) est un couple (A, x) : une matrice A de O(n) puis une translation x ; ici le quart de tour puis (2 ; 0).",
+  "legende_titre": "Un mouvement = un couple (A, x)",
+  "lecture": [
+   "La case bleue A est la matrice : ici le quart de tour.",
+   "La case orange x est le vecteur de translation : ici (2 ; 0).",
+   "Le point (3 ; 2) arrive en (−2 ; 3) par la flèche bleue, puis en (0 ; 3) par la flèche orange."
+  ],
+  "a_voir": "Deux données, A et x, décrivent le mouvement entier."
+ },
+ {
+  "code": "73-108",
+  "a_dire": "Pour (A, x)(B, y) : on multiplie les matrices AB, on applique A à y, puis on ajoute x.",
+  "legende_titre": "Le produit en trois actions",
+  "lecture": [
+   "La flèche grise est y = (1 ; 0).",
+   "L'arc bleu est A appliqué à y : il donne (0 ; 1).",
+   "La flèche orange ajoute x = (2 ; 0) : on arrive au point vert (2 ; 1).",
+   "Les trois cases à droite donnent les trois actions dans l'ordre."
+  ],
+  "a_voir": "Le vecteur du produit est Ay + x, ici (2 ; 1)."
+ },
+ {
+  "code": "73-109",
+  "a_dire": "En faisant (B, y) puis (A, x) et en développant A(Bv + y) + x, on obtient ABv + (Ay + x), donc le couple (AB, Ay + x).",
+  "legende_titre": "D'où vient la formule du produit",
+  "lecture": [
+   "La case du haut est le point de départ v.",
+   "Les deux cases bleues sont les images après (B, y), puis après (A, x).",
+   "La case orange est l'étape clé : on développe A(Bv + y), car A est linéaire.",
+   "La case verte est l'arrivée : le couple (AB, Ay + x)."
+  ],
+  "a_voir": "L'étape orange, le développement, donne la forme d'un couple."
+ },
+ {
+  "code": "73-110",
+  "a_dire": "L'élément neutre est (I, 0) : multiplié par un couple, il le laisse tel quel ; (I, x) avec x non nul le modifie.",
+  "legende_titre": "Le neutre doit tout laisser tel quel",
+  "lecture": [
+   "La ligne du haut multiplie (A, 0) par (I, 0) : le résultat est (A, 0), inchangé, en vert.",
+   "La ligne du bas multiplie (A, 0) par (I, x), avec x = (2 ; 0) : le résultat est (A, x), modifié, en rouge.",
+   "Seul le vecteur nul ne change pas le couple."
+  ],
+  "a_voir": "Avec (I, 0) le couple reste le même ; avec (I, x) il change."
+ },
+ {
+  "code": "73-111",
+  "a_dire": "Pour défaire (A, x), on applique A⁻¹ puis on ajoute −A⁻¹x ; dans le cas, la translation de retour est (0 ; 1), pas (−1 ; 0).",
+  "legende_titre": "Revenir au point de départ",
+  "lecture": [
+   "La flèche bleue va de (0 ; 0) à (1 ; 0) : c'est le mouvement aller.",
+   "L'arc orange est le quart de tour inverse A⁻¹ : il envoie (1 ; 0) sur (0 ; −1).",
+   "La flèche verte ajoute (0 ; 1) et ramène en (0 ; 0).",
+   "À droite, l'inverse de (A, x) est (A⁻¹, −A⁻¹x) ; ici la translation de retour est (0 ; 1), et non (−1 ; 0).",
+   "En bas, le produit (A, x)(A⁻¹, y) donne le neutre (I, 0)."
+  ],
+  "a_voir": "Le retour passe par (0 ; −1) : la translation de retour n'est pas l'opposé direct de x."
+ },
+ {
+  "code": "73-112",
+  "a_dire": "Les éléments de E(n) gardent les distances parce que A est orthogonale ; avec un cisaillement la distance change.",
+  "legende_titre": "Les distances sont gardées, si A est orthogonale",
+  "lecture": [
+   "À gauche, le segment bleu de longueur 1 est envoyé par A orthogonale et une translation sur le segment vert, de longueur 1.",
+   "À droite, le même segment bleu est envoyé par un cisaillement et une translation sur le segment rouge.",
+   "Le segment rouge a pour longueur √2 : la distance a changé."
+  ],
+  "a_voir": "Seule une matrice orthogonale garde la longueur du segment."
+ }
+]

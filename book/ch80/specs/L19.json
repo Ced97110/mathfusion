@@ -1,0 +1,287 @@
+[
+ {
+  "code": "80-433",
+  "a_dire": "Si a ∨ b = a ∨ c et a ∧ b = a ∧ c, alors b = c : avec a, la réunion et l’intersection ne laissent qu’un seul b.",
+  "legende_titre": "Un seul b possible pour a, une réunion et une intersection",
+  "lecture": [
+   "Le rectangle bleu donne a = {1}.",
+   "Les deux rectangles orange donnent les deux conditions : a ∨ b = {1, 2} et a ∧ b vide.",
+   "Le rectangle vert donne le seul b qui convient : {2}.",
+   "Les deux ronds montrent le nombre 1 dans a (bleu) et le nombre 2 dans b (vert)."
+  ],
+  "a_voir": "Les deux conditions ensemble donnent un seul b."
+ },
+ {
+  "code": "80-434",
+  "a_dire": "La preuve part de b, arrive à c en sept égalités, et l’étape A3 est celle qui porte le poids.",
+  "legende_titre": "De b à c en sept égalités",
+  "lecture": [
+   "Le rectangle bleu du haut est le départ : b. Le rectangle vert du bas est l’arrivée : c.",
+   "Chaque flèche est une égalité ; sa couleur dit la raison : gris pour l’absorption, orange pour l’hypothèse, bleu pour A3.",
+   "Les deux flèches bleues sont A3 ; la troisième flèche, plus épaisse, est l’étape décisive."
+  ],
+  "a_voir": "La flèche épaisse bleue : sans elle, l’hypothèse ne trouve rien à remplacer."
+ },
+ {
+  "code": "80-435",
+  "a_dire": "Dans le diamant, y et z sont différents mais donnent les mêmes réunion et intersection avec x : la loi y est fausse, la distributivité manque.",
+  "legende_titre": "Un cas où la loi ne marche pas",
+  "lecture": [
+   "Le diamant a 0 en bas, 1 en haut et trois éléments au même étage : x (bleu), y (orange), z (violet).",
+   "Les deux rectangles verts donnent les mêmes résultats avec x pour y et pour z.",
+   "Le rectangle rouge dit que y et z sont pourtant différents."
+  ],
+  "a_voir": "Mêmes résultats avec x, mais y et z ne sont pas égaux."
+ },
+ {
+  "code": "80-436",
+  "a_dire": "Dans le diamant, a = x, b = y et c = z vérifient les deux hypothèses, mais b et c sont différents.",
+  "legende_titre": "Le diamant comme contre-exemple",
+  "lecture": [
+   "Les lettres a, b, c sont posées à côté de x, y, z dans le diamant.",
+   "Les deux rectangles du haut disent que les réunions avec x valent 1.",
+   "Les deux rectangles du milieu disent que les intersections avec x valent 0.",
+   "Le rectangle rouge dit que y est différent de z, donc b est différent de c."
+  ],
+  "a_voir": "Les quatre égalités sont vraies, la conclusion b = c est fausse."
+ },
+ {
+  "code": "80-437",
+  "a_dire": "Dans le diamant, x ∧ (y ∨ z) vaut x et (x ∧ y) ∨ (x ∧ z) vaut 0 : les deux côtés de A3 sont différents.",
+  "legende_titre": "Les deux côtés de A3 ne s’égalent pas",
+  "lecture": [
+   "La colonne bleue calcule x ∧ (y ∨ z) : on remplace y ∨ z par 1, puis on obtient x.",
+   "La colonne violette calcule (x ∧ y) ∨ (x ∧ z) : on obtient 0 ∨ 0, puis 0.",
+   "Le signe rouge entre les résultats dit qu’ils sont différents."
+  ],
+  "a_voir": "Les deux colonnes finissent par x et par 0, qui sont différents."
+ },
+ {
+  "code": "80-438",
+  "a_dire": "Dans le diamant, x a deux compléments, y et z : le complément n’y est pas unique.",
+  "legende_titre": "Deux compléments pour le même x",
+  "lecture": [
+   "Le rond bleu est x ; le rond orange est y ; le rond violet est z.",
+   "Le rectangle orange dit que y est un complément de x : réunion 1, intersection 0.",
+   "Le rectangle violet dit la même chose pour z.",
+   "Le texte rouge conclut : deux compléments."
+  ],
+  "a_voir": "y et z répondent tous deux aux deux conditions de x."
+ },
+ {
+  "code": "80-439",
+  "a_dire": "b et a′ donnent les mêmes a ∨ _ et a ∧ _ (I et O), donc la loi de simplification donne b = a′.",
+  "legende_titre": "Pourquoi le complément est unique",
+  "lecture": [
+   "Les rectangles bleus portent b : a ∨ b et a ∧ b.",
+   "Les rectangles violets portent a′ : a ∨ a′ et a ∧ a′, donnés par A5.",
+   "Les rectangles verts du milieu montrent le résultat commun : I pour la réunion, O pour l’intersection.",
+   "La flèche orange mène au rectangle vert du bas : b = a′."
+  ],
+  "a_voir": "Les deux côtés donnent les mêmes I et O, donc b = a′."
+ },
+ {
+  "code": "80-440",
+  "a_dire": "Dans le circuit du haut, il faut a fermé, puis une des deux branches b ou c fermée.",
+  "legende_titre": "Le circuit : a, puis b ou c",
+  "lecture": [
+   "A gauche, le contact a fermé (bleu) est seul sur le fil.",
+   "Ensuite, les contacts b et c sont sur deux branches séparées.",
+   "Le trait orange montre le chemin du courant : par a, puis par c, qui est fermé.",
+   "Le contact b, en pointillés, est ouvert."
+  ],
+  "a_voir": "Le courant passe par c alors que b est ouvert."
+ },
+ {
+  "code": "80-441",
+  "a_dire": "Dans le circuit du bas, il y a deux branches : a puis b, ou a puis c ; une branche passe si ses deux contacts sont fermés.",
+  "legende_titre": "Le circuit : deux branches a-b et a-c",
+  "lecture": [
+   "La branche du haut a deux contacts à la suite : a et b.",
+   "La branche du bas a deux contacts à la suite : a et c.",
+   "Le trait orange montre le chemin du courant : la branche du bas, car a et c sont fermés.",
+   "Le contact b, en pointillés, est ouvert : la branche du haut est coupée."
+  ],
+  "a_voir": "Le courant passe par la branche où les deux contacts sont fermés."
+ },
+ {
+  "code": "80-442",
+  "a_dire": "Sur les huit positions de a, b, c, les deux circuits laissent passer le courant dans les mêmes trois positions.",
+  "legende_titre": "Les deux circuits sur les huit positions",
+  "lecture": [
+   "Chaque colonne est une position ; les carrés bleus sont fermés, les carrés vides sont ouverts.",
+   "Les deux rangées de ronds donnent le résultat du circuit du haut et du circuit du bas.",
+   "Un rond vert veut dire que le courant passe : il y en a trois sur huit, aux mêmes colonnes pour les deux circuits."
+  ],
+  "a_voir": "Les deux rangées de ronds sont identiques."
+ },
+ {
+  "code": "80-443",
+  "a_dire": "Un seul bouton a commande deux contacts à la fois : ils sont toujours dans la même position.",
+  "legende_titre": "Un bouton, deux contacts",
+  "lecture": [
+   "Le rectangle orange est le bouton a.",
+   "Les deux flèches vont du bouton vers les deux contacts a.",
+   "A gauche, le bouton est appuyé : les deux contacts sont fermés (bleu).",
+   "A droite, le bouton est relâché : les deux contacts sont ouverts (pointillés)."
+  ],
+  "a_voir": "Les deux contacts changent ensemble, jamais l’un sans l’autre."
+ },
+ {
+  "code": "80-444",
+  "a_dire": "On part du circuit de six interrupteurs et on cherche un circuit plus petit qui allume la lampe dans les mêmes positions.",
+  "legende_titre": "Six interrupteurs : peut-on faire plus petit ?",
+  "lecture": [
+   "Le circuit du haut a trois blocs à la suite ; chaque bloc a deux interrupteurs côte à côte.",
+   "Les interrupteurs bleus sont a, les orange sont b, le violet est b′, le contraire de b.",
+   "L’accolade compte six interrupteurs.",
+   "Le rectangle en pointillés est le circuit plus petit qu’on cherche : la question reste posée."
+  ],
+  "a_voir": "Le circuit de départ, avec ses six interrupteurs, et la question posée."
+ },
+ {
+  "code": "80-445",
+  "a_dire": "Trois blocs à la suite se lisent « et » (∧) ; dans chaque bloc, deux interrupteurs côte à côte se lisent « ou » (∨).",
+  "legende_titre": "Lire le circuit comme une phrase",
+  "lecture": [
+   "Chaque bloc a deux interrupteurs l’un sous l’autre : le texte au-dessus donne sa phrase, comme a ∨ b ; le violet est b′, le contraire de b.",
+   "Les signes ∧ entre les blocs disent « et ».",
+   "L’accolade orange sous le premier bloc dit « ou » : ∨.",
+   "L’accolade bleue sous tout le circuit dit « et » entre les trois blocs : ∧."
+  ],
+  "a_voir": "Côte à côte se lit ∨, à la suite se lit ∧."
+ },
+ {
+  "code": "80-446",
+  "a_dire": "A3 : le circuit du haut a un seul a avant le bloc b, c ; celui du bas répète a dans chaque branche ; les deux vont de A à B.",
+  "legende_titre": "A3 sur deux circuits",
+  "lecture": [
+   "Le circuit du haut a trois contacts : a (bleu), puis b (orange) et c (vert) en deux branches.",
+   "Le circuit du bas a quatre contacts : a et b sur une branche, a et c sur l’autre.",
+   "Les deux circuits partent du même point A et arrivent au même point B.",
+   "Le bleu a est seul en haut et répété deux fois en bas."
+  ],
+  "a_voir": "Un seul a en haut, deux a en bas, même départ et même arrivée."
+ },
+ {
+  "code": "80-447",
+  "a_dire": "Chaque bloc s’écrit entre parenthèses et les blocs se relient par ∧ : C = (a ∨ b) ∧ (a ∨ b′) ∧ (a ∨ b).",
+  "legende_titre": "Du circuit à l’expression",
+  "lecture": [
+   "Le circuit a trois blocs : a et b, puis a et b′, puis a et b.",
+   "Chaque flèche relie un bloc à sa parenthèse en dessous.",
+   "Les signes ∧ entre les parenthèses viennent des blocs à la suite.",
+   "Six contacts en haut, six lettres en bas."
+  ],
+  "a_voir": "Chaque bloc du dessin est une parenthèse de l’expression."
+ },
+ {
+  "code": "80-448",
+  "a_dire": "Le calcul remplace un circuit de six interrupteurs par un seul interrupteur a.",
+  "legende_titre": "Avant : six interrupteurs, après : un seul",
+  "lecture": [
+   "En haut, le circuit de départ : trois blocs avec a (bleu), b (orange) et b′ (violet, le contraire de b).",
+   "La flèche grise va vers le circuit du bas.",
+   "En bas, un seul contact a (bleu) entre A et B.",
+   "Les contacts orange et violet ont disparu."
+  ],
+  "a_voir": "Six contacts en haut, un seul en bas, entre les mêmes points A et B."
+ },
+ {
+  "code": "80-449",
+  "a_dire": "On échange les blocs 2 et 3 pour mettre côte à côte les deux blocs a ∨ b.",
+  "legende_titre": "Échanger deux blocs",
+  "lecture": [
+   "La rangée du haut est l’ordre de départ : a ∨ b, a ∨ b′ (rouge), a ∨ b.",
+   "La rangée du bas est l’ordre après échange : a ∨ b, a ∨ b, a ∨ b′.",
+   "Les deux flèches orange qui se croisent montrent l’échange des blocs 2 et 3.",
+   "La flèche grise montre que le bloc 1 ne bouge pas."
+  ],
+  "a_voir": "Les deux blocs bleus se retrouvent côte à côte."
+ },
+ {
+  "code": "80-450",
+  "a_dire": "Deux blocs identiques a ∨ b en série se remplacent par un seul : x ∧ x = x ; le bloc a ∨ b′ reste.",
+  "legende_titre": "Deux blocs identiques en un seul",
+  "lecture": [
+   "En haut, trois blocs à la suite ; l’accolade montre les deux blocs identiques (bleus).",
+   "Les deux flèches orange vont vers un seul bloc bleu en bas.",
+   "Le bloc violet a ∨ b′ est différent : il descend sans changer.",
+   "La règle x ∧ x = x est écrite entre les flèches."
+  ],
+  "a_voir": "Deux blocs bleus identiques deviennent un seul ; le violet est différent et reste."
+ },
+ {
+  "code": "80-451",
+  "a_dire": "On met a en facteur : deux blocs a ∨ b et a ∨ b′ deviennent a ∨ (b ∧ b′), avec un contact de moins.",
+  "legende_titre": "Mettre a en facteur",
+  "lecture": [
+   "En haut, deux blocs à la suite, chacun avec a : quatre contacts.",
+   "La flèche orange A3 mène au circuit du bas.",
+   "En bas, a est seul sur une branche ; b et b′ se suivent sur l’autre branche.",
+   "Le circuit du bas a trois contacts."
+  ],
+  "a_voir": "Le contact a n’est écrit qu’une fois en bas."
+ },
+ {
+  "code": "80-452",
+  "a_dire": "b et b′ à la suite ne laissent jamais passer le courant : b ∧ b′ = O.",
+  "legende_titre": "Le courant ne passe jamais par b puis b′",
+  "lecture": [
+   "La première rangée montre b fermé (bleu) et b′ ouvert (pointillés).",
+   "La deuxième rangée montre b ouvert (pointillés) et b′ fermé (bleu).",
+   "Dans les deux rangées, un contact ouvert coupe le fil : le texte rouge dit « coupé ».",
+   "Le rectangle vert donne la règle : b ∧ b′ = O, par A5."
+  ],
+  "a_voir": "Dans chaque position, un des deux contacts est ouvert."
+ },
+ {
+  "code": "80-453",
+  "a_dire": "a en parallèle avec une branche coupée O revient à a seul : a ∨ O = a.",
+  "legende_titre": "Une branche coupée ne change rien",
+  "lecture": [
+   "A gauche, a (bleu) est sur une branche ; l’autre branche contient O, en pointillés, et le fil y est coupé.",
+   "Le signe = relie ce circuit à celui de droite.",
+   "A droite, il n’y a que a (bleu).",
+   "Le texte vert du haut donne la règle : a ∨ O = a, par A4."
+  ],
+  "a_voir": "Le circuit avec la branche coupée et le circuit sans elle sont le même."
+ },
+ {
+  "code": "80-454",
+  "a_dire": "Le circuit de six interrupteurs a le même comportement que le seul interrupteur a : C = a.",
+  "legende_titre": "Six interrupteurs, un seul reste",
+  "lecture": [
+   "La rangée du haut montre les six interrupteurs de départ : a (bleu), b (orange), a, b′ (rouge), a, b.",
+   "L’accolade les compte : six.",
+   "La flèche orange mène au rectangle vert du bas : C = a.",
+   "Un seul interrupteur reste."
+  ],
+  "a_voir": "Six interrupteurs en haut, un seul en bas : le résultat est a."
+ },
+ {
+  "code": "80-455",
+  "a_dire": "Le tableau essaie les quatre positions de a et b ; la lampe est allumée seulement quand les trois blocs laissent passer.",
+  "legende_titre": "Toutes les positions, l’état de la lampe",
+  "lecture": [
+   "Les trois premières colonnes sont les interrupteurs a, b et b′ ; b′ est à l’inverse de b.",
+   "Les trois colonnes suivantes sont le bloc 1, le bloc 2 et le bloc 3 : 1 s’ils laissent passer, 0 sinon.",
+   "La dernière colonne, encadrée en gras, est la lampe : 1 allumée, 0 éteinte.",
+   "Les cases vertes sont des 1, les cases grises sont des 0."
+  ],
+  "a_voir": "La lampe vaut 1 exactement dans les deux lignes où a vaut 1."
+ },
+ {
+  "code": "80-456",
+  "a_dire": "Quand a est fermé, les trois blocs laissent passer et la lampe s’allume, que b soit ouvert ou fermé.",
+  "legende_titre": "a fermé : la lampe est allumée",
+  "lecture": [
+   "Les deux lignes montrées sont les lignes 3 et 4 du tableau.",
+   "La colonne bleue montre a = 1 dans les deux lignes.",
+   "La colonne orange montre b : 0 puis 1.",
+   "Les cases vertes montrent que les trois blocs et la lampe valent 1 dans les deux lignes.",
+   "L’accolade sous b dit qu’il est sans effet."
+  ],
+  "a_voir": "b change de 0 à 1 et la lampe reste à 1."
+ }
+]

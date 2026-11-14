@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+text(ax,44,77,'même $m$ : ça marche','resultat','m')
+box(ax,2,60,38,11,'sujet',label=r"$a\equiv a'$ et $b\equiv b'$"); arrow(ax,(41,65.5),(49,65.5),'varie')
+box(ax,50,60,36,11,'resultat',label=r"$ab\equiv a'b'$",size='l')
+text(ax,44,48,'$m$ différents : ça casse','limite','m')
+box(ax,2,30,38,10,'sujet',label='2 ≡ 5 (mod 3)'); box(ax,2,14,38,10,'autre',label='1 ≡ 6 (mod 5)')
+arrow(ax,(41,35),(49,29),'varie'); arrow(ax,(41,19),(49,25),'varie')
+box(ax,50,20,36,14,'limite',label='2 et 30 : écart 28')
+text(ax,68,13,'ni 3 ni 5','limite','m')
+save(fig,'47-099')

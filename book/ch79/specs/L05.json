@@ -1,0 +1,180 @@
+[
+ {
+  "code": "79-065",
+  "a_dire": "Le signe M_3 nomme le treillis à cinq éléments formé de 0, 1 et trois éléments x, y, z incomparables : le diamant.",
+  "legende_titre": "Un nom pour ce dessin à cinq points",
+  "lecture": [
+   "Les deux ronds gris sont 0 en bas, le plus petit élément, et 1 en haut, le plus grand.",
+   "Les trois ronds bleus x, y et z sont au même étage : aucun n'est sous un autre.",
+   "Chaque trait bleu relie un rond du milieu à 0 et à 1."
+  ],
+  "a_voir": "Un seul signe, M_3, désigne tout ce dessin de cinq points."
+ },
+ {
+  "code": "79-066",
+  "a_dire": "Le signe d(a) est un nombre : l'étage de a dans le diagramme ; ici d(1) = 0, d(5) = 1, d(4) = 2, d(60) = 4.",
+  "legende_titre": "Lire un nombre sur l'axe des étages",
+  "lecture": [
+   "L'axe gris à gauche porte les étages 0, 1, 2, 3 et 4.",
+   "Chaque rond bleu est un nombre placé à la hauteur de son étage.",
+   "Le texte orange à côté de chaque rond écrit l'étage avec le signe d."
+  ],
+  "a_voir": "d(a) est l'étage du nombre a : 4 est à l'étage 2, donc d(4) = 2."
+ },
+ {
+  "code": "79-067",
+  "a_dire": "Le sup de 4, 6 et 10 se calcule en ajoutant un élément à la fois : (4 ∨ 6) ∨ 10 = 60.",
+  "legende_titre": "Ajouter les éléments un par un",
+  "lecture": [
+   "Les cases bleues 4 et 6 donnent d'abord la case orange 4 ∨ 6 = 12.",
+   "La case violette 10 est ajoutée ensuite à 12.",
+   "La case verte donne le résultat : 12 ∨ 10 = 60."
+  ],
+  "a_voir": "Le sup de trois éléments se trouve en deux étapes de deux éléments."
+ },
+ {
+  "code": "79-068",
+  "a_dire": "Un treillis complet donne un sup à toute partie, même infinie ; les diviseurs de 60 le font, les entiers positifs par divisibilité non.",
+  "legende_titre": "Complet ou non : toute partie a-t-elle un sup ?",
+  "lecture": [
+   "À gauche, les cases bleues 4, 6 et 10 pointent vers la case verte 60 : leur sup existe.",
+   "À droite, les cases bleues 2, 4, 8, 16 et la suite qui continue pointent vers une case rouge.",
+   "La case rouge « ? » dit qu'aucun nombre n'est au-dessus de toute la liste."
+  ],
+  "a_voir": "À gauche chaque partie a un sup ; à droite la liste infinie n'en a pas."
+ },
+ {
+  "code": "79-069",
+  "a_dire": "Dans les fractions, les x tels que x² < 2 ont des majorants mais aucun plus petit majorant, car √2 n'est pas une fraction.",
+  "legende_titre": "Des majorants sans plus petit majorant",
+  "lecture": [
+   "Le trait bleu épais est la partie des fractions dont le carré est plus petit que 2 ; 1,41 en fait partie.",
+   "Les ronds violets 1,415 et 1,5 sont des majorants : leur carré dépasse 2.",
+   "Le cercle rouge en pointillé est √2 : il serait le plus petit majorant, mais ce n'est pas une fraction."
+  ],
+  "a_voir": "Le plus petit majorant manque : √2 n'est pas dans les fractions."
+ },
+ {
+  "code": "79-070",
+  "a_dire": "Dans [0, 1], la partie 0,9 ; 0,99 ; 0,999 ; … a un plus petit majorant : le nombre 1.",
+  "legende_titre": "Une partie de [0, 1] qui a son sup",
+  "lecture": [
+   "Les ronds violets sont les nombres 0,9, 0,99, 0,999, qui se rapprochent de 1.",
+   "Le trait bleu épais est l'intervalle [0, 1] ; il s'arrête à 1.",
+   "Le rond vert à l'extrémité est 1, le seul majorant dans l'intervalle."
+  ],
+  "a_voir": "Dans [0, 1], le seul majorant de cette partie est 1, donc le plus petit existe."
+ },
+ {
+  "code": "79-071",
+  "a_dire": "Les entiers positifs par divisibilité forment un treillis non complet : la liste 2, 4, 8, 16, … n'a aucun multiple commun.",
+  "legende_titre": "Une liste qui monte sans fin",
+  "lecture": [
+   "Les cases bleues 2, 4, 8, 16 montent d'un cran à chaque flèche, puis la suite continue.",
+   "La flèche rouge mène à la case « ? » : aucun nombre n'est multiple de toute la liste.",
+   "À droite, les cases vertes montrent qu'une paire a toujours un PPCM et un PGCD."
+  ],
+  "a_voir": "Chaque paire a un sup, mais la liste infinie n'en a pas."
+ },
+ {
+  "code": "79-072",
+  "a_dire": "Un plus grand élément et un inf pour toute partie non vide donnent un treillis complet ; sans plus grand élément, ça peut échouer.",
+  "legende_titre": "Que se passe-t-il sans plus grand élément ?",
+  "lecture": [
+   "En haut, les deux cases bleues sont les deux conditions ; elles mènent à la case verte « treillis complet ».",
+   "En bas, pour les entiers positifs, la case verte dit que le PGCD de toute partie existe.",
+   "La case rouge dit qu'il n'y a pas de plus grand élément ; elle mène à « pas de sup pour 2, 4, 8… »."
+  ],
+  "a_voir": "Quand on retire le plus grand élément, des parties comme 2, 4, 8, … n'ont plus de sup."
+ },
+ {
+  "code": "79-073",
+  "a_dire": "La preuve part de A, regarde ses majorants B, et montre que le plus grand minorant b de B est le sup de A.",
+  "legende_titre": "Du plus grand minorant au sup",
+  "lecture": [
+   "Les ronds bleus 4 et 6, dans le cadre pointillé bleu, forment la partie A.",
+   "Le cadre orange B contient 12 et 60, les majorants de A ; le rond vert 12 est b, le plus grand minorant de B.",
+   "Les cases à droite se lisent de bas en haut : A, puis B, puis b.",
+   "La case verte donne l'arrivée : b = 12 est le sup de A."
+  ],
+  "a_voir": "Le plus grand minorant b de l'ensemble B des majorants de A est le sup de A."
+ },
+ {
+  "code": "79-074",
+  "a_dire": "Dans les sous-groupes de G, l'inf de deux sous-groupes est leur intersection, qui est encore un sous-groupe.",
+  "legende_titre": "L'inf de deux sous-groupes",
+  "lecture": [
+   "Le grand cercle bleu contient les multiples de 3 : 3, 9 et, au centre, 0 et 6.",
+   "Le grand cercle violet contient les nombres pairs : 2, 4, 8, 10 et, au centre, 0 et 6.",
+   "La zone commune et ses nombres verts 0 et 6 forment l'intersection, l'inf."
+  ],
+  "a_voir": "Ce qui est commun aux deux sous-groupes, 0 et 6, est encore un sous-groupe."
+ },
+ {
+  "code": "79-075",
+  "a_dire": "Le sup de sous-groupes est le plus petit sous-groupe qui les contient : le sous-groupe engendré, ici tout le groupe modulo 12.",
+  "legende_titre": "Le plus petit sous-groupe qui contient les deux",
+  "lecture": [
+   "Les ronds bleus sont des multiples de 3 ; les ronds violets sont des nombres pairs ; 0 et 6 sont dans les deux.",
+   "Les ronds orange 1, 5, 7 et 11 sont les nombres obtenus en additionnant ou soustrayant, comme 3 − 2 = 1.",
+   "Le texte vert au centre dit que le sup est tout le groupe : les douze nombres y sont."
+  ],
+  "a_voir": "Le sous-groupe engendré par les deux contient aussi 1, donc les douze nombres."
+ },
+ {
+  "code": "79-076",
+  "a_dire": "Le raisonnement ne dépend pas de la nature des objets : l'inf est l'intersection et le sup est le plus petit objet qui contient les autres.",
+  "legende_titre": "Un même raisonnement pour des objets variés",
+  "lecture": [
+   "Les trois cases du haut nomment des objets du même genre ; la case bleue « sous-espaces » est le cas dessiné.",
+   "La case du milieu donne la même règle pour les trois : inf = intersection, sup = le plus petit objet qui contient les deux.",
+   "La droite bleue et la droite violette passent par le point O.",
+   "Le point O est leur intersection ; le plan vert est le plus petit sous-espace qui contient les deux droites."
+  ],
+  "a_voir": "La règle écrite dans la case vaut pour les trois genres d'objets ; ici, deux droites ont pour inf le point O et pour sup le plan entier."
+ },
+ {
+  "code": "79-077",
+  "a_dire": "Le sup de deux idéaux est l'ensemble des sommes b1 + b2 d'un élément de l'un et d'un élément de l'autre.",
+  "legende_titre": "Le sup de deux idéaux : des sommes",
+  "lecture": [
+   "Les ronds bleus sont les multiples de 4 ; les ronds violets sont les multiples de 6.",
+   "La ligne verte du haut montre des sommes b1 + b2 : ce sont les nombres pairs de 0 à 16.",
+   "Les tirets verts relient 4 + 6 = 10, 8 + 6 = 14 et 4 + 12 = 16 à leur place sur la droite graduée."
+  ],
+  "a_voir": "Le sup des deux idéaux est l'ensemble des sommes b1 + b2 : ici, les nombres pairs."
+ },
+ {
+  "code": "79-078",
+  "a_dire": "La loi L1 dit que l'ordre d'écriture ne change pas le résultat : a ∨ b = b ∨ a et a ∧ b = b ∧ a.",
+  "legende_titre": "L'ordre d'écriture ne compte pas",
+  "lecture": [
+   "Dans chaque bloc, la case bleue et la case violette contiennent les mêmes nombres dans un ordre différent.",
+   "Les deux flèches mènent à la même case verte.",
+   "En haut, ∨ donne 12 ; en bas, ∧ donne 4."
+  ],
+  "a_voir": "Les deux ordres mènent au même résultat : 12 pour ∨, 4 pour ∧."
+ },
+ {
+  "code": "79-079",
+  "a_dire": "La loi L2 dit que le regroupement ne change pas le résultat : (a ∨ b) ∨ c = a ∨ (b ∨ c).",
+  "legende_titre": "Deux regroupements, un même résultat",
+  "lecture": [
+   "À gauche, en bleu, on regroupe d'abord 4 et 6 : la case orange 12, puis 12 avec 10.",
+   "À droite, en violet, on regroupe d'abord 6 et 10 : la case orange 30, puis 4 avec 30.",
+   "Les deux cases vertes valent 60, et le signe = les relie."
+  ],
+  "a_voir": "Les deux regroupements donnent 60."
+ },
+ {
+  "code": "79-080",
+  "a_dire": "La loi L3 dit qu'un élément combiné avec lui-même donne lui-même : a ∨ a = a et a ∧ a = a.",
+  "legende_titre": "Un nombre combiné avec lui-même",
+  "lecture": [
+   "Dans chaque ligne, les deux cases bleues sont le même nombre, 4.",
+   "Pour le PPCM et le PGCD, la case verte donne encore 4.",
+   "Pour l'addition, la case rouge donne 8 : l'addition n'a pas cette propriété."
+  ],
+  "a_voir": "Le PPCM et le PGCD de 4 avec 4 donnent 4 ; l'addition donne 8."
+ }
+]

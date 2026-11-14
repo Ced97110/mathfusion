@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 22, 58, 44, 9, 'sujet', label=r'$\zeta$ : le demi-tour')
+box(ax, 2, 40, 40, 9, 'autre', label='(0, 1) et (1, 0)'); box(ax, 46, 40, 40, 9, 'varie', label='(0, 2) et (3, 0)')
+arrow(ax, (32, 58), (24, 49.5), 'fixe'); arrow(ax, (56, 58), (64, 49.5), 'fixe')
+text(ax, 22, 34, r'$-1\times 1=-1$', 'autre', 's'); text(ax, 66, 34, r'$-4\times 9=-36$', 'varie', 's')
+box(ax, 14, 14, 60, 9, 'resultat', label=r'$-36=-1\times 6^2$ : même classe')
+arrow(ax, (24, 31), (34, 23.5), 'resultat'); arrow(ax, (64, 31), (54, 23.5), 'resultat')
+box(ax, 2, 2, 84, 8, 'limite', fill=False, dash=True, label='autres écritures : admis', size='s')
+save(fig, '73-117')

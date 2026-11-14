@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+s = 15.0
+r3 = math.sqrt(3)
+ox, oy = 44.0, 40.0
+P = lambda a, b: (ox + a * s, oy + b * r3 * s)
+arrow(ax, (ox - 40, oy), (ox + 42, oy), 'fixe', lw=0.6)
+arrow(ax, (ox, oy - 8), (ox, oy + 36), 'fixe', lw=0.6)
+x2, y2 = P(2, 0)
+xm, ym = P(-2, 0)
+xa, ya = P(1, 1)
+disc(ax, x2, y2, 2.0, 'sujet'); disc(ax, xm, ym, 2.0, 'sujet')
+disc(ax, xa, ya, 2.0, 'autre')
+arrow(ax, (x2 - 2, y2 + 3), (xm + 2, ym + 3), 'varie', curve=0.3)
+text(ax, ox, oy + 16, '× (−1)', 'varie', 's')
+text(ax, x2, y2 - 5, '2', 'sujet', 'm')
+text(ax, xm, ym - 5, '−2', 'sujet', 'm')
+text(ax, xa + 2.5, ya + 3.5, r'$1+\sqrt{3}\,i$', 'autre', 's', ha='left')
+text(ax, 44, 12, 'associés de 2 : 2 et −2', 'sujet', 'm')
+text(ax, 44, 5, '1 + √3 i n’est ni 2 ni −2', 'autre', 's')
+save(fig, '56-059')

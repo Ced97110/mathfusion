@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+text(ax, 44, 49, 'ℕ = {x ∈ ℤ ∣ x ≥ 0}', 'sujet', 'xl')
+f = numberline(ax, 6, 70, 24, -2, 5, step=1)
+for v in range(-2, 6): disc(ax, f(v), 24, 2.2, 'limite' if v < 0 else 'resultat')
+line(ax, [(f(-0.5), 17), (f(-0.5), 30)], 'varie', dash=True)
+brace(ax, f(0) - 3, f(5) + 3, 31, 'resultat', label='ℕ : les x ≥ 0', down=False)
+brace(ax, f(-2) - 3, f(-1) + 3, 31, 'limite', label='écartés', down=False)
+brace(ax, f(-2) - 3, f(5) + 3, 17, 'fixe', label='ℤ : tous les entiers')
+save(fig, '42-032')

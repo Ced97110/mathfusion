@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 4, 70, 'modules proches de 100', 'sujet', 's', ha='left')
+box(ax, 4, 52, 60, 12, 'fixe', fill=False, dash=True)
+box(ax, 7, 54, 11, 8, 'resultat', label='9 604', size='s')
+text(ax, 42, 58, r'case : $9{,}2\times10^{18}$', 'fixe', 's')
+text(ax, 4, 40, 'modules de 10 milliards', 'sujet', 's', ha='left')
+box(ax, 4, 22, 60, 12, 'fixe', fill=False, dash=True)
+box(ax, 8, 24, 76, 8, 'limite', label=r'environ $10^{20}$', size='s')
+text(ax, 72, 17, 'dépasse la case', 'limite', 's')
+save(fig, '52-255')

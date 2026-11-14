@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 4, 87, 'division 1 : reste de degré 1', 'fixe', 's', ha='left')
+box(ax, 2, 70, 84, 13, 'varie', label=r'$x^2-1=1\cdot(x^2+x)+(-x-1)$')
+arrow(ax, (14, 70), (14, 58), 'fixe')
+text(ax, 20, 64, 'le reste devient le diviseur', 'fixe', 's', ha='left')
+text(ax, 4, 54, 'division 2 : reste 0', 'fixe', 's', ha='left')
+box(ax, 2, 37, 84, 13, 'varie', label=r'$x^2+x=(-x)\cdot(-x-1)+0$')
+arrow(ax, (44, 37), (44, 28), 'resultat')
+box(ax, 2, 14, 84, 13, 'resultat', label=r'dernier reste non nul : $-x-1$')
+text(ax, 44, 8, r'rendu unitaire : $x+1$', 'resultat', 's')
+save(fig, '54-184')

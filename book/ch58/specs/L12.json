@@ -1,0 +1,148 @@
+[
+ {
+  "code": "58-331",
+  "a_dire": "Sans base il n'y a pas de coordonnées donc pas de matrice, et sans somme directe il n'y a pas de découpage en morceaux ; ce sont deux conditions nécessaires.",
+  "legende_titre": "Deux conditions pour parler de tableau et de morceaux",
+  "lecture": [
+   "À gauche, les deux flèches bleues courtes sont les sacs types e₁ et e₂ ; le point orange (5, 4) se lit par les nombres 5 et 4 sur les axes.",
+   "À droite, le point (5, 4) est coupé en deux : la flèche bleue (5, 0) pour le riz et la flèche violette (0, 4) pour les lentilles.",
+   "Les phrases du bas disent ce qui manque sans chacune des deux notions."
+  ],
+  "a_voir": "La base donne les coordonnées du point, la somme directe le coupe en deux morceaux."
+ },
+ {
+  "code": "58-332",
+  "a_dire": "Le chapitre 60 reprend la torsion, qui devient l'objet central, et la formule A′ = P⁻¹AP, qui mène aux formes normales.",
+  "legende_titre": "Ce que le chapitre 60 reprendra",
+  "lecture": [
+   "À gauche, l'horloge à deux heures a deux éléments, 0 et 1 ; la flèche orange ×2 mène de 1 à 0.",
+   "Le résultat vert 2 × 1 = 0 est la torsion : un élément non nul et un nombre non nul de produit 0.",
+   "À droite, la formule est lue morceau par morceau : A′ en vert, A en bleu, P et son inverse en orange."
+  ],
+  "a_voir": "Deux usages annoncés : la torsion de l'horloge et la formule du changement de base."
+ },
+ {
+  "code": "58-333",
+  "a_dire": "Une forme bilinéaire sur un module libre est elle aussi un tableau de nombres, avec une case par paire de vecteurs de base.",
+  "legende_titre": "Un autre rôle pour un tableau",
+  "lecture": [
+   "En haut, la phrase dit que deux vecteurs donnent un nombre.",
+   "Les noms orange e₁ et e₂ sont ceux des vecteurs de base ; ceux de gauche sont le premier vecteur, ceux du haut le second.",
+   "Chaque case bleue porte le nombre b(eᵢ, eⱼ) : 2, 1, 1 et 3."
+  ],
+  "a_voir": "Quatre cases pour quatre paires de vecteurs de base."
+ },
+ {
+  "code": "58-334",
+  "a_dire": "Un même tableau change de base par deux règles différentes : P⁻¹BP pour un homomorphisme, PᵗBP pour une forme bilinéaire.",
+  "legende_titre": "Un tableau, deux règles de changement de base",
+  "lecture": [
+   "En haut, le tableau bleu B et le tableau gris P, la matrice de passage.",
+   "La flèche orange mène à P⁻¹BP : on utilise l'inverse de P.",
+   "La flèche violette mène à PᵗBP : on utilise la transposée de P.",
+   "Les deux tableaux du bas sont différents alors que le départ est le même."
+  ],
+  "a_voir": "Du même tableau B partent deux résultats différents."
+ },
+ {
+  "code": "58-335",
+  "a_dire": "Le déterminant d'un produit est le produit des déterminants ; l'argument d'invariance du rang utilise ce fait, dont la preuve complète viendra au chapitre 76.",
+  "legende_titre": "Un déterminant de produit vérifié sur un cas",
+  "lecture": [
+   "Le tableau violet B a pour déterminant 1, le tableau bleu A a pour déterminant 5.",
+   "Le tableau vert est leur produit BA, de déterminant 5.",
+   "La ligne du bas écrit le calcul : 5 est égal à 1 fois 5."
+  ],
+  "a_voir": "Le déterminant du produit est égal au produit des déterminants."
+ },
+ {
+  "code": "58-336",
+  "a_dire": "Un corps qui en contient un autre est un espace vectoriel sur lui, et sa dimension sert à mesurer ce corps ; ℚ(√2) est de dimension 2 sur ℚ.",
+  "legende_titre": "La dimension comme mesure d'un corps",
+  "lecture": [
+   "À gauche, le grand rectangle bleu est ℚ(√2) et le rectangle gris à l'intérieur est ℚ, les fractions.",
+   "À droite, un nombre a + b√2 s'écrit avec deux cases : a, multiplié par 1, en gris, et b, multiplié par √2, en orange.",
+   "L'accolade verte compte les deux cases : la dimension est 2."
+  ],
+  "a_voir": "Deux cases suffisent pour écrire chaque nombre du grand corps."
+ },
+ {
+  "code": "58-337",
+  "a_dire": "Le signe [L : K] se lit « dimension de L sur K » : L est le corps qui en contient un autre, K sont les scalaires, et le signe donne le nombre de vecteurs d'une base.",
+  "legende_titre": "Lire le signe [L : K]",
+  "lecture": [
+   "Le L bleu est le corps qui contient l'autre ; dans le cas, c'est ℚ(√2).",
+   "Le K orange est le corps contenu, celui des scalaires ; dans le cas, c'est ℚ.",
+   "Le résultat vert 2 est la dimension : deux vecteurs de base."
+  ],
+  "a_voir": "Chaque morceau du signe est relié à son sens dans le cas."
+ },
+ {
+  "code": "58-338",
+  "a_dire": "Un corps fini de dimension n sur une horloge à p valeurs a p^n éléments : chaque coordonnée prend p valeurs.",
+  "legende_titre": "Compter les éléments d'un espace sur une horloge",
+  "lecture": [
+   "Chaque case verte est une liste de 2 valeurs prises parmi 0, 1 et 2, comme sur l'horloge à trois heures.",
+   "Les lignes sont les 3 valeurs de la première case, en bleu ; les colonnes sont les 3 valeurs de la seconde case, en orange.",
+   "Le total est 3 fois 3, soit 9 listes."
+  ],
+  "a_voir": "Trois lignes de trois listes : 9 éléments."
+ },
+ {
+  "code": "58-339",
+  "a_dire": "Un code linéaire est un sous-espace de listes de bits, et sa dimension compte les bits d'information : ici 2 pour 4 listes.",
+  "legende_titre": "Un code linéaire et ses bits d'information",
+  "lecture": [
+   "En haut, en gris pointillé, les 4 listes de 3 bits qui ne sont pas dans le code.",
+   "En bas, les 4 listes du code : 000, 110, 011 et 101.",
+   "Les flèches vertes montrent que 110 plus 011 donne 101, qui est encore dans le code.",
+   "110 en orange et 011 en violet forment la base : deux vecteurs, donc dimension 2."
+  ],
+  "a_voir": "Huit listes possibles, quatre dans le code, deux vecteurs de base."
+ },
+ {
+  "code": "58-340",
+  "a_dire": "Le chapitre donne un sens à trois outils : les coordonnées sont des coefficients dans une base, un système est une équation Ax = y, le produit de tableaux est la composition.",
+  "legende_titre": "Trois outils, trois sens",
+  "lecture": [
+   "La colonne de gauche nomme chaque outil, la colonne de droite dit son sens.",
+   "En bleu, le point (14, 17) s'écrit 14 e₁ + 17 e₂.",
+   "En orange, un système est l'équation du tableau A appliqué à un stock x, égal au résultat y.",
+   "En violet, multiplier des tableaux, c'est composer des applications."
+  ],
+  "a_voir": "Chaque outil a une flèche de même couleur vers son sens."
+ },
+ {
+  "code": "58-341",
+  "a_dire": "Le sous-module des stocks de poids total pair contient (1, 1) et (3, 5) mais pas (1, 2) ; le cas fixe ce qu'est un stock du sous-module sans donner de base.",
+  "legende_titre": "Quels stocks ont un poids total pair ?",
+  "lecture": [
+   "Chaque point est un stock (x, y) ; les gros disques bleus ont un poids total pair, les petits points gris un poids impair.",
+   "Les disques verts (1, 1) et (3, 5) sont dans le sous-module, de poids 2 et 8.",
+   "Le disque rouge (1, 2), de poids 3, n'y est pas."
+  ],
+  "a_voir": "Les stocks du sous-module sont un point sur deux ; aucune base n'est donnée."
+ },
+ {
+  "code": "58-342",
+  "a_dire": "Dans le quotient, deux stocks sont dans la même classe quand leur différence est dans le sous-module : il y a deux classes, poids pair et poids impair.",
+  "legende_titre": "Les classes du quotient",
+  "lecture": [
+   "Les points bleus ont un poids pair, les points orange un poids impair.",
+   "Les deux gros points orange sont (1, 0) et (0, 1), tous deux de poids impair.",
+   "La flèche verte est leur différence (1, −1), de poids 0 : ils sont dans la même classe."
+  ],
+  "a_voir": "Les stocks se rangent en deux classes selon la parité du poids."
+ },
+ {
+  "code": "58-343",
+  "a_dire": "L'aire du parallélogramme bordé par une famille se compare à des repères : aire 1 pour une base de tout le réseau, aire 2 pour une famille qui n'engendre qu'une partie.",
+  "legende_titre": "Que mesure l'aire bordée par une famille ?",
+  "lecture": [
+   "Les points gris sont les stocks entiers du réseau.",
+   "Les deux figures bleues sont d'aire 1 : chacune est bordée par une base de tout le réseau.",
+   "La figure violette est d'aire 2 : sa famille (2, 0), (0, 1) n'engendre qu'une partie du réseau."
+  ],
+  "a_voir": "L'aire 1 va avec une base ; l'aire 2 avec une famille qui n'engendre pas tout."
+ }
+]

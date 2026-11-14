@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(54)
+box(ax,15,30,10,10,'autre',label=r'$a$',size='l'); box(ax,27,30,10,10,'sujet',label=r'$b$',size='l')
+text(ax,43.5,35,'+','encre','l')
+box(ax,50,30,10,10,'autre',label=r'$a$',size='l'); box(ax,62,30,10,10,'sujet',label=r'$c$',size='l')
+brace(ax,15,37,28,'fixe','terme 1'); brace(ax,50,72,28,'fixe','terme 2')
+text(ax,43.5,48,'a est écrit deux fois','autre','s')
+arrow(ax,(38,46.5),(21,41.5),'autre'); arrow(ax,(49,46.5),(54,41.5),'autre')
+text(ax,43.5,15,'lu : a fois b, plus a fois c','encre','s')
+text(ax,43.5,8,r'$6\times4+6\times7$','fixe','s')
+save(fig,'18-026')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+k = 6.0
+O = (24, 14)
+v = (3, 4)
+tip = (O[0] + k * v[0], O[1] + k * v[1])
+arrow(ax, O, tip, 'sujet', lw=1.9)
+arrow(ax, tip, O, 'autre', lw=1.9, curve=-0.3)
+disc(ax, O[0], O[1], 1.0, 'resultat')
+text(ax, tip[0] + 2, tip[1] + 1, r'$v=\langle 3;\ 4\rangle$', 'sujet', 's', ha='left')
+text(ax, 40, 24, r'$-v$', 'autre', 'm', ha='left')
+text(ax, 2, 4, r'$-v=\langle -3;\ -4\rangle$ : retour au départ', 'resultat', 's', ha='left')
+box(ax, 54, 38, 32, 9, 'sujet', label=r'$3+(-3)=0$', size='s')
+box(ax, 54, 24, 32, 9, 'sujet', label=r'$4+(-4)=0$', size='s')
+box(ax, 54, 8, 32, 11, 'resultat', label=r'$\langle 0;\ 0\rangle$', size='m')
+arrow(ax, (70, 24), (70, 19), 'fixe', lw=0.8)
+save(fig, '41-063')

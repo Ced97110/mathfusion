@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 14, 30, 16, 16, 'sujet', label='2', size='xl')
+box(ax, 36, 30, 16, 16, 'varie', label='3', size='xl')
+box(ax, 54, 30, 16, 16, 'varie', label='5', size='xl')
+line(ax, [(33, 27), (33, 52)], 'varie', dash=True, lw=1.0)
+text(ax, 33, 33, ',', 'varie', 'xl')
+text(ax, 33, 56, 'frontière', 'varie', 's')
+brace(ax, 14, 30, 28, 'sujet', label='unités entières')
+brace(ax, 36, 70, 28, 'varie', label="parts d'une unité")
+save(fig, '08-007')

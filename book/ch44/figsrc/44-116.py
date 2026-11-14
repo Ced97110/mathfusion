@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 2, 4, 84, 56, 'fixe', label=None)
+text(ax, 44, 54, r'toutes les transformations : $4^4=256$', 'fixe', 's')
+box(ax, 14, 10, 60, 35, 'sujet')
+text(ax, 44, 38, r'$\mathrm{Sym}\,S$ : 24 éléments', 'sujet', 'l', weight='bold')
+text(ax, 44, 29, 'celles qui se défont', 'sujet', 's')
+text(ax, 44, 22, '(bijectives)', 'sujet', 's')
+text(ax, 44, 15, 'neutre, produit, inverse', 'sujet', 's')
+save(fig, '44-116')

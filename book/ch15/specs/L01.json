@@ -1,0 +1,190 @@
+[
+ {
+  "code": "15-001",
+  "a_dire": "La lettre n garde la place du nombre de personnes : une seule ligne 6 × n + 40 remplace les calculs 6 × 10 + 40, 6 × 25 + 40 et 6 × 12 + 40.",
+  "legende_titre": "Une lettre pour le nombre de personnes",
+  "lecture": [
+   "Les trois cases grises sont trois calculs : le 6 et le 40 restent, le nombre orange change (10, 25, 12).",
+   "La case bleue est la ligne unique : la lettre n prend la place du nombre orange.",
+   "Les flèches orange vont des trois calculs vers cette ligne."
+  ],
+  "a_voir": "Tu vois que n tient la place du nombre qui change d'un calcul à l'autre."
+ },
+ {
+  "code": "15-002",
+  "a_dire": "Pour chaque nombre de personnes, on fait deux gestes dans le même ordre : multiplier par 6, puis ajouter 40 ; la règle s'écrit 6n + 40.",
+  "legende_titre": "Les deux gestes du prix",
+  "lecture": [
+   "Chaque ligne part d'un nombre de personnes (case bleue), 10 puis 25.",
+   "Les flèches orange sont les mêmes gestes dans les deux lignes : × 6, puis + 40.",
+   "La case verte est le prix obtenu : 100 puis 190."
+  ],
+  "a_voir": "Tu vois que les gestes restent les mêmes et que seuls les résultats changent."
+ },
+ {
+  "code": "15-003",
+  "a_dire": "Attendre de connaître n donne un prix pour un seul nombre à la fois et ne dit pas à partir de quel nombre l'ordre des deux salles change.",
+  "legende_titre": "Un calcul par nombre ne suffit pas",
+  "lecture": [
+   "La case bleue est votre salle, 6n + 40 ; la case violette est celle de votre ami, 4n + 70.",
+   "Pour n = 10, la barre bleue (100 €) est plus courte que la violette (110 €) : signe <.",
+   "Pour n = 25, c'est l'inverse : bleue 190 €, violette 170 € : signe >.",
+   "La flèche orange et la question orange : à quel n l'ordre change-t-il ?"
+  ],
+  "a_voir": "Tu vois que l'ordre est inversé entre les deux nombres, sans savoir où."
+ },
+ {
+  "code": "15-004",
+  "a_dire": "Un cas isolé, comme 10 personnes, ne dit pas laquelle des deux offres est la moins chère pour un autre nombre : il faut comparer 6n + 40 et 4n + 70.",
+  "legende_titre": "Deux offres, trois nombres de personnes",
+  "lecture": [
+   "Chaque paire de barres donne les deux prix pour un nombre de personnes : bleu pour 6n + 40, violet pour 4n + 70.",
+   "À 10 personnes, la barre bleue est la plus basse : 100 et 110. Le texte vert dit laquelle coûte le moins.",
+   "À 15 personnes, les deux barres ont la même hauteur : 130.",
+   "À 20 personnes, la barre bleue est la plus haute : 160 et 150."
+  ],
+  "a_voir": "Tu vois que l'offre la moins chère change d'un nombre à l'autre."
+ },
+ {
+  "code": "15-005",
+  "a_dire": "Trois cahiers puis deux cahiers font cinq cahiers, quel que soit le prix x : 3x + 2x = 5x.",
+  "legende_titre": "Trois cahiers, deux cahiers, cinq cahiers",
+  "lecture": [
+   "Les trois carrés bleus sont les 3 cahiers, les deux carrés orange sont les 2 cahiers de plus ; chacun porte le prix x.",
+   "Les accolades bleue et orange disent 3x et 2x.",
+   "La grande accolade verte regroupe les cinq carrés : 5x.",
+   "Les trois lignes vertes donnent le prix total pour x = 2, 3 et 5."
+  ],
+  "a_voir": "Tu vois que 3 carrés et 2 carrés font 5 carrés, quel que soit le prix."
+ },
+ {
+  "code": "15-006",
+  "a_dire": "Le cas chiffré donne la surface totale 144, mais pas ses morceaux : le jardin de départ (100) et le petit carré (4) ne font que 104, il manque 40.",
+  "legende_titre": "Un jardin agrandi : que manque-t-il ?",
+  "lecture": [
+   "Le grand carré bleu est le jardin de départ, de côté a = 10 : 100.",
+   "Le petit carré orange est le carré de côté b = 2 : 4.",
+   "Les deux rectangles rouges en pointillés sont ce qui manque ; leur contenu est marqué « ? ».",
+   "À droite, 100 + 4 = 104, alors que la surface est 144 : il manque 40."
+  ],
+  "a_voir": "Tu vois que deux carrés ne remplissent pas le grand carré : il reste deux morceaux inconnus."
+ },
+ {
+  "code": "15-007",
+  "a_dire": "Développer, c'est passer d'une écriture en produit, 3 × (10 + 2), à une écriture en somme, 30 + 6, qui montre les morceaux ; la valeur reste 36.",
+  "legende_titre": "Du produit à la somme",
+  "lecture": [
+   "Le texte du haut est le produit : 3 × (10 + 2) = 36.",
+   "Le rectangle a 3 lignes ; sa partie bleue contient 30 (3 × 10) et sa partie orange contient 6 (3 × 2).",
+   "La flèche orange est le passage appelé développer.",
+   "Le texte vert du bas est la somme : 30 + 6 = 36."
+  ],
+  "a_voir": "Tu vois que le produit et la somme décrivent le même rectangle, avec 36 au total."
+ },
+ {
+  "code": "15-008",
+  "a_dire": "Trois barres suivies de deux barres finissent au même endroit que cinq barres : 3x + 2x = 5x se voit sans mesurer.",
+  "legende_titre": "Cinq barres, deux lignes, même fin",
+  "lecture": [
+   "Chaque rectangle bleu est une barre de longueur x ; toutes ont la même longueur.",
+   "La ligne du haut est coupée en 3x (trois barres) et 2x (deux barres).",
+   "La ligne du bas est une seule suite de cinq barres : 5x.",
+   "Le trait vert en pointillés montre que les deux lignes finissent au même endroit."
+  ],
+  "a_voir": "Tu vois que les deux extrémités tombent au même endroit."
+ },
+ {
+  "code": "15-009",
+  "a_dire": "La lettre x est le nom de la longueur d'une barre : les cinq barres portent la même lettre, donc la même longueur ; une autre lettre, y, peut désigner une autre longueur.",
+  "legende_titre": "Une lettre pour la longueur d'une barre",
+  "lecture": [
+   "Les cinq barres bleues portent toutes la lettre x et finissent au trait en pointillés : même longueur.",
+   "La barre violette porte la lettre y.",
+   "Elle est plus courte ici : une autre lettre peut avoir une autre valeur."
+  ],
+  "a_voir": "Tu vois que la même lettre désigne la même longueur et qu'une autre lettre peut en désigner une autre."
+ },
+ {
+  "code": "15-010",
+  "a_dire": "Dans 3x, le nombre 3 compte les barres et la lettre x donne la longueur de chacune ; 3x remplace x + x + x.",
+  "legende_titre": "Ce que dit chaque morceau de 3x",
+  "lecture": [
+   "En haut, trois barres bleues de longueur x, écrites x + x + x.",
+   "L'accolade orange compte les barres : 3.",
+   "En bas, 3x est coupé en deux : le 3 orange dit combien de barres, le x bleu dit quelle longueur.",
+   "À droite, 100x s'écrit pour cent barres."
+  ],
+  "a_voir": "Tu vois que 3x garde le compte des barres et la longueur de chacune."
+ },
+ {
+  "code": "15-011",
+  "a_dire": "L'égalité 3x + 2x = 5x reste vraie quelle que soit la valeur de x : les deux lignes contiennent toujours cinq barres identiques.",
+  "legende_titre": "Vrai pour toute longueur de barre",
+  "lecture": [
+   "Le premier groupe de lignes a des barres de 2 cm : 10 cm en haut et 10 cm en bas.",
+   "Le second groupe a des barres de 7 cm : 35 cm en haut et 35 cm en bas.",
+   "Dans chaque ligne du haut, 3 barres bleues puis 2 barres orange ; la ligne du bas a 5 barres bleues.",
+   "Le trait vert en pointillés montre que les fins coïncident dans les deux cas."
+  ],
+  "a_voir": "Tu vois que les barres changent de longueur, mais que les deux lignes finissent ensemble."
+ },
+ {
+  "code": "15-012",
+  "a_dire": "Sans objets identiques, le nombre devant la lettre ne s'additionne plus : 3x + 2y avec x = 2 et y = 5 vaut 16, pas 5x = 10 ni 5y = 25.",
+  "legende_titre": "Quand les objets ne sont pas identiques",
+  "lecture": [
+   "Les trois carrés bleus valent 2 chacun (x) : 3 × 2 = 6.",
+   "Les deux carrés violets valent 5 chacun (y) : 2 × 5 = 10.",
+   "Le texte vert donne le total : 6 + 10 = 16.",
+   "Les deux textes rouges montrent que 5x = 10 et 5y = 25 ne donnent pas 16."
+  ],
+  "a_voir": "Tu vois que 16 n'est ni 10 ni 25 : il ne faut pas regrouper des objets différents."
+ },
+ {
+  "code": "15-013",
+  "a_dire": "Avec des barres de longueurs différentes, 3x + 2y est déjà terminée : elle ne se regroupe ni en 5x ni en 5y.",
+  "legende_titre": "Deux sortes de barres, pas de regroupement",
+  "lecture": [
+   "En haut, trois barres bleues de longueur x (2 cm) puis deux barres orange de longueur y (5 cm) : 16 cm.",
+   "Les accolades disent 3x et 2y : deux groupes.",
+   "En bas, cinq barres bleues, 5x, font 10 cm.",
+   "Le trait rouge en pointillés montre que les deux lignes ne finissent pas au même endroit."
+  ],
+  "a_voir": "Tu vois que 5x ne rejoint pas la fin de 3x + 2y."
+ },
+ {
+  "code": "15-014",
+  "a_dire": "Une expression numérique est un calcul de nombres connus, comme 8 + 5 ou 9 ÷ 7 ; elle n'affirme rien, contrairement à la phrase 8 + 5 = 13, et n'a pas de lettre.",
+  "legende_titre": "Expression numérique et ses voisines",
+  "lecture": [
+   "La case bleue est l'expression numérique : 8 + 5 et 9 ÷ 7.",
+   "La case violette est la phrase 8 + 5 = 13 : elle affirme, donc elle peut être vraie ou fausse.",
+   "La case grise est un calcul avec une lettre, x + 8 : il n'est pas numérique."
+  ],
+  "a_voir": "Tu vois qu'une expression numérique est un calcul de nombres connus qui n'affirme rien."
+ },
+ {
+  "code": "15-015",
+  "a_dire": "Une expression algébrique est un calcul qui contient au moins une lettre ; on le sait sans le calculer.",
+  "legende_titre": "Avec une lettre, le calcul est algébrique",
+  "lecture": [
+   "La case grise est 6 × 10 + 40 : que des nombres connus.",
+   "La flèche orange remplace 10 par n.",
+   "La case bleue est 6 × n + 40 : elle contient une lettre.",
+   "La case bleue du bas, 5 ÷ n, contient aussi une lettre."
+  ],
+  "a_voir": "Tu vois qu'il suffit de repérer une lettre pour savoir que le calcul est algébrique."
+ },
+ {
+  "code": "15-016",
+  "a_dire": "Un nombre seul, comme 8, est une expression : on peut l'écrire 8 + 0, qui garde la même valeur.",
+  "legende_titre": "Un nombre seul écrit comme un calcul",
+  "lecture": [
+   "La case grise est le nombre 8, seul, sans signe d'opération.",
+   "La flèche orange ajoute 0.",
+   "La case bleue est 8 + 0 : un calcul.",
+   "Le disque vert est la valeur 8, que les deux écritures donnent."
+  ],
+  "a_voir": "Tu vois que 8 et 8 + 0 sont deux écritures de la même valeur."
+ }
+]

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+gy = 14
+line(ax, [(2, gy), (86, gy)], 'fixe')
+poly(ax, [(46, gy), (66, 56), (86, gy)], 'fixe')
+line(ax, [(66, 56), (66, gy)], 'sujet', lw=1.2, dash=True)
+disc(ax, 66, 56, 1.3, 'sujet')
+disc(ax, 66, gy, 1.3, 'sujet')
+text(ax, 66, 60.5, r'$S$ : trop haut', 'sujet', 's')
+text(ax, 66, 8, r'$H$ : dans la roche', 'sujet', 's')
+text(ax, 62, 34, 'hauteur ?', 'sujet', 's', ha='right')
+disc(ax, 12, gy + 1.6, 1.6, 'varie')
+text(ax, 12, gy + 6.5, 'vous', 'varie', 's')
+line(ax, [(14, gy + 0.6), (30, gy + 0.6)], 'varie', lw=1.6)
+text(ax, 22, 8, 'ruban', 'varie', 's')
+text(ax, 30, 22, 'plaine', 'fixe', 's')
+save(fig, '38-001')

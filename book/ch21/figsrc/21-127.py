@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+f = numberline(ax, 8, 78, 10, 0, 10, 2, arrow_right=False)
+box(ax, f(0), 15, f(2.4) - f(0), 8, 'resultat')
+text(ax, f(2.4) + 2, 19, 'calcul : 2,4 h', 'resultat', 's', ha='left')
+box(ax, f(0), 27, f(4) - f(0), 8, 'fixe', label='un ouvrier : 4 h', size='s')
+box(ax, f(0), 39, f(6) - f(0), 8, 'fixe', label='un ouvrier : 6 h', size='s')
+box(ax, f(0), 51, f(10) - f(0), 8, 'limite', label='intuition : 6 + 4 = 10 h', size='s')
+text(ax, 44, 65, r'$\frac{1}{6}+\frac{1}{4}=\frac{1}{x}$', 'resultat', 's')
+save(fig, '21-127')

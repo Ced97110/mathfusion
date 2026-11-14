@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+text(ax, 44, 52, 'deux relations entre $u_1$ et $u_2$', 'encre', 'm')
+box(ax, 6, 30, 18, 10, 'sujet', label=r'$u_1$', size='l')
+box(ax, 64, 30, 18, 10, 'sujet', label=r'$u_2$', size='l')
+arrow(ax, (24, 37), (64, 37), 'varie', curve=-0.3)
+arrow(ax, (64, 33), (24, 33), 'varie', curve=-0.3)
+text(ax, 44, 46, r'$\lambda u_1 = u_2$', 'varie', 'm')
+text(ax, 44, 23, r'$\lambda u_2 = u_1$', 'varie', 'm')
+text(ax, 44, 14, 'on en déduit', 'encre', 's')
+box(ax, 20, 2, 48, 9, 'resultat', label=r'$\lambda^2 u_1 = \lambda u_2 = u_1$')
+save(fig, '60-151')

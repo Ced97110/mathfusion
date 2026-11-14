@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+box(ax, 3, 3, 82, 62, 'fixe', label=None)
+text(ax, 44, 59, 'anneaux intègres', 'fixe', 'm', weight='bold')
+box(ax, 7, 8, 42, 42, 'resultat')
+text(ax, 28, 44, r'$D^*$ factoriel', 'resultat', 'm', weight='bold')
+disc(ax, 28, 28, 7, 'sujet', label='ℤ', size='l')
+disc(ax, 67, 28, 7.5, 'autre', fill=True)
+text(ax, 67, 28, 'ℤ[√−5]', 'autre', 's')
+text(ax, 67, 17, 'non factoriel', 'autre', 's')
+save(fig, '56-070')

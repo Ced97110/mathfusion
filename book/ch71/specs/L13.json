@@ -1,0 +1,179 @@
+[
+ {
+  "code": "71-193",
+  "a_dire": "Un vecteur isotrope est non nul et donne Q = 0.",
+  "legende_titre": "Un vecteur non nul où la forme vaut 0",
+  "lecture": [
+   "La flèche bleue est le vecteur u de coordonnées 1 et 1 ; la droite verte pointillée est l'ensemble où Q vaut 0.",
+   "La flèche violette est le vecteur v de coordonnées 1 et 0.",
+   "Le cadre vert calcule Q(u) = 0 avec u non nul ; le cadre rouge montre que B(u, v) vaut 1, donc u n'est pas dans le radical."
+  ],
+  "a_voir": "Un vecteur peut être non nul, annuler la forme, et ne pas être orthogonal à tout."
+ },
+ {
+  "code": "71-194",
+  "a_dire": "Pour x² = 1, la courbe est faite de deux droites entières, et l'axe vertical est le radical.",
+  "legende_titre": "Deux droites là où la forme vaut 1",
+  "lecture": [
+   "Les deux droites bleues sont x = 1 et x = −1.",
+   "Les trois points bleus sont (1, 5), (1, 0) et (1, −3) : tous sont sur la droite x = 1.",
+   "La flèche orange est l'axe vertical, le radical : monter ou descendre ne change pas la valeur."
+  ],
+  "a_voir": "La seconde coordonnée ne compte pas, donc la courbe est une droite entière."
+ },
+ {
+  "code": "71-195",
+  "a_dire": "Pour −x² − y² = 1, il n'y a aucun point réel, et la forme n'est pourtant pas dégénérée.",
+  "legende_titre": "Une courbe vide à cause des signes",
+  "lecture": [
+   "Les points bleus sur la droite graduée sont les valeurs −13, −1 et 0 prises aux points (2, 3), (1, 0) et (0, 0).",
+   "Le point rouge est la valeur 1 : aucun point ne l'atteint.",
+   "Le texte gris rappelle que le rang est 2 : la forme n'est pas dégénérée."
+  ],
+  "a_voir": "La forme reste en dessous de 0 ou égale à 0, elle ne vaut jamais 1."
+ },
+ {
+  "code": "71-196",
+  "a_dire": "La forme nulle rend tout vecteur orthogonal à tout, et toute base la garde nulle.",
+  "legende_titre": "La forme nulle ne dépend d'aucune base",
+  "lecture": [
+   "Le carré bleu est la matrice A : quatre zéros.",
+   "La flèche orange est le changement de base par une matrice P quelconque.",
+   "Le carré vert est le résultat : toujours quatre zéros.",
+   "Les deux cadres gris donnent le radical (tout V) et le rang (0)."
+  ],
+  "a_voir": "Quelle que soit la base, la matrice reste nulle."
+ },
+ {
+  "code": "71-197",
+  "a_dire": "Pour une forme dégénérée, la courbe Q = 1 contient des droites entières dans la direction du radical.",
+  "legende_titre": "La courbe s'étire dans la direction du radical",
+  "lecture": [
+   "Les deux droites bleues sont la courbe Q = 1.",
+   "Le point bleu est (1, 0) ; la flèche orange est le vecteur z de coordonnées −2 et 1, du radical.",
+   "Le point vert (−1, 1) est le point obtenu : il est sur la même courbe."
+  ],
+  "a_voir": "Ajouter un vecteur du radical déplace le point le long de la courbe."
+ },
+ {
+  "code": "71-198",
+  "a_dire": "Ajouter un vecteur z qui n'est pas dans le radical peut changer Q.",
+  "legende_titre": "Hors du radical, Q change",
+  "lecture": [
+   "Le point bleu est x de coordonnées 1 et 0, où Q vaut 0.",
+   "La flèche orange est z de coordonnées 0 et 1.",
+   "Le point rouge est x + z de coordonnées 1 et 1, où Q vaut 1 : l'égalité est fausse."
+  ],
+  "a_voir": "Le terme 2B(x, z) vaut 1 et non 0 : Q change."
+ },
+ {
+  "code": "71-199",
+  "a_dire": "Pour une forme alternée, un vecteur est orthogonal à lui-même et U⊥ peut égaler U.",
+  "legende_titre": "Orthogonaux, et pourtant sur la même droite",
+  "lecture": [
+   "À gauche, la droite grise est U ; les flèches bleue (1, 0) et violette (2, 0) sont sur elle : l'aire est 0.",
+   "Un vecteur avec lui-même donne B(x, x) = 0 : il est orthogonal à lui-même, donc U⊥ = U.",
+   "À droite, les flèches (1, 0) puis (0, 1) forment un carré orange d'aire 1 : ils ne sont pas orthogonaux."
+  ],
+  "a_voir": "Pour cette forme, la droite U est son propre orthogonal : ce n'est pas la perpendiculaire du dessin."
+ },
+ {
+  "code": "71-200",
+  "a_dire": "Une forme alternée sur un espace de dimension impaire est dégénérée.",
+  "legende_titre": "Taille 3 : le déterminant est nul",
+  "lecture": [
+   "Les cases grises sont la diagonale : des zéros.",
+   "Les cases bleues sont au-dessus de la diagonale ; les cases orange, en dessous, sont leurs opposées.",
+   "Le cadre rouge calcule le déterminant : −6 + 6 = 0."
+  ],
+  "a_voir": "Une matrice alternée de taille 3 a un déterminant nul."
+ },
+ {
+  "code": "71-201",
+  "a_dire": "La classification des formes congruentes dépend du corps choisi.",
+  "legende_titre": "La même question, trois réponses",
+  "lecture": [
+   "Les deux cadres du haut sont les formes x² + y² et x² − y².",
+   "Chaque ligne grise est un ensemble de nombres : ℝ, ℂ, ℤ/5.",
+   "Le cadre rouge, vert ou orange dit si elles sont congruentes ou quelle règle s'applique."
+  ],
+  "a_voir": "Selon l'ensemble de nombres, la réponse change."
+ },
+ {
+  "code": "71-202",
+  "a_dire": "Sur ℂ, deux formes de même rang sont congruentes : chaque coefficient non nul se ramène à 1.",
+  "legende_titre": "Sur ℂ, le signe disparaît",
+  "lecture": [
+   "En haut, sur ℝ, x² + y² et −x² − y² ont des signatures (2, 0) et (0, 2) : elles diffèrent.",
+   "En bas, la flèche orange remplace x par ix et y par iy.",
+   "Le cadre vert est le résultat : la forme x² + y²."
+  ],
+  "a_voir": "Sur ℂ, les deux formes deviennent la même."
+ },
+ {
+  "code": "71-203",
+  "a_dire": "Sur ℂ, x² + y² et x² − y² sont la même forme grâce à y ↦ iy.",
+  "legende_titre": "Le signe moins ne distingue plus rien",
+  "lecture": [
+   "Le cadre bleu calcule x² + y² au point (3, 2i) : 9 − 4 = 5.",
+   "Le cadre violet calcule x² − y² au point (3, 2) : 9 − 4 = 5.",
+   "La flèche orange est le remplacement de y par iy."
+  ],
+  "a_voir": "Les deux formes donnent la même valeur 5."
+ },
+ {
+  "code": "71-204",
+  "a_dire": "Sur ℂ, x² + y² a un vecteur isotrope (1, i).",
+  "legende_titre": "Un vecteur isotrope existe sur ℂ",
+  "lecture": [
+   "Le cadre bleu est le vecteur u de coordonnées 1 et i.",
+   "Le cadre gris donne 1², le cadre orange donne i² = −1.",
+   "Le cadre vert fait la somme : 1 + (−1) = 0."
+  ],
+  "a_voir": "Grâce à i, la somme 1 + i² vaut 0."
+ },
+ {
+  "code": "71-205",
+  "a_dire": "Sur un corps fini, deux formes non dégénérées sont congruentes si et seulement si elles ont le même discriminant.",
+  "legende_titre": "Le discriminant sépare les deux formes",
+  "lecture": [
+   "Les ronds bleus 1 et 4 sont les carrés non nuls de ℤ/5 ; les ronds rouges 2 et 3 ne sont pas des carrés.",
+   "Le cadre bleu est diag(1, 1), de discriminant 1 ; le cadre rouge est diag(1, 2), de discriminant 2.",
+   "Le signe rouge ≠ dit que les deux formes ne sont pas congruentes."
+  ],
+  "a_voir": "Un discriminant différent veut dire : pas congruentes."
+ },
+ {
+  "code": "71-206",
+  "a_dire": "Dans ℤ/5, les carrés non nuls sont 1 et 4 : deux classes.",
+  "legende_titre": "Quatre restes, deux carrés",
+  "lecture": [
+   "La rangée bleue du haut donne les restes 1, 2, 3, 4.",
+   "Les flèches orange donnent leur carré : 1 donne 1, 2 donne 4, 3 donne 4, 4 donne 1.",
+   "En bas, les cases vertes 1 et 4 sont obtenues ; les cases rouges en pointillés 2 et 3 ne le sont jamais."
+  ],
+  "a_voir": "Seuls 1 et 4 sont des carrés."
+ },
+ {
+  "code": "71-207",
+  "a_dire": "Sur ℚ, le rang et la signature ne suffisent pas : x² et 2x² ne sont pas congruentes.",
+  "legende_titre": "Congruentes sur ℝ, pas sur ℚ",
+  "lecture": [
+   "Le cadre bleu est x² et le cadre violet est 2x².",
+   "Sur ℝ, le cadre vert donne P = √2 : elles sont congruentes.",
+   "Sur ℚ, le cadre rouge dit qu'aucun P ne convient."
+  ],
+  "a_voir": "Le corps change la réponse."
+ },
+ {
+  "code": "71-208",
+  "a_dire": "Une droite ax + by = c est une droite de niveau de la forme ax + by, et le vecteur (a, b) lui est perpendiculaire.",
+  "legende_titre": "La droite de niveau et son vecteur",
+  "lecture": [
+   "La droite bleue est 2x + 3y = 6, par les points (3, 0) et (0, 2).",
+   "La flèche orange est le vecteur (2, 3).",
+   "Le texte vert calcule 2×3 + 3×(−2) = 0 : le vecteur (2, 3) est perpendiculaire à la direction (3, −2)."
+  ],
+  "a_voir": "Le vecteur (2, 3) est perpendiculaire à la droite."
+ }
+]

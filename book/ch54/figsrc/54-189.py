@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 17, 75, r'annule $\sqrt{2}$', 'fixe', 's')
+text(ax, 59, 75, 'polynôme minimal', 'sujet', 's')
+box(ax, 2, 58, 30, 13, 'fixe', label=r'$x^4-4$')
+text(ax, 38, 64.5, r'$\div$', 'encre', 'l')
+box(ax, 44, 58, 30, 13, 'sujet', label=r'$x^2-2$')
+arrow(ax, (38, 56), (22, 45), 'fixe')
+arrow(ax, (38, 56), (67, 45), 'fixe')
+box(ax, 2, 31, 40, 13, 'varie', label=r'quotient $x^2+2$')
+box(ax, 48, 31, 38, 13, 'resultat', label='reste 0')
+text(ax, 44, 18, r'donc $x^4-4$ est multiple de $x^2-2$', 'resultat', 's')
+save(fig, '54-189')

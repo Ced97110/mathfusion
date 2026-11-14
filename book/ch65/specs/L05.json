@@ -1,0 +1,311 @@
+[
+ {
+  "code": "65-127",
+  "a_dire": "Le corps obtenu avec la racine cubique réelle de 2 ne contient que des nombres réels : il contient une racine, et il manque w pour les deux autres.",
+  "legende_titre": "Une racine dans le corps, deux dehors",
+  "lecture": [
+   "Le trait bleu épais est le corps réel : tous les nombres réels.",
+   "Le disque bleu à droite est la racine réelle 1,26, dans le corps.",
+   "Les deux disques orange sont 1,26 w et 1,26 w², hors de l'axe réel donc hors du corps."
+  ],
+  "a_voir": "Une seule racine est sur l'axe réel ; les deux autres en sont éloignées."
+ },
+ {
+  "code": "65-128",
+  "a_dire": "Au second degré on pouvait dire pas de solution ; au troisième degré les racines sont réelles mais la formule passe par √−1, donc on ne pouvait plus l'ignorer.",
+  "legende_titre": "Deux équations, deux situations",
+  "lecture": [
+   "La courbe de gauche (x² + 1) ne touche pas l'axe : aucune racine réelle, on dit pas de solution.",
+   "La courbe de droite (x³ − 3x + 1) coupe l'axe en trois disques verts : trois racines réelles.",
+   "Le texte orange dit que la formule de droite passe par √−1."
+  ],
+  "a_voir": "À droite les solutions existent sur l'axe, pourtant la formule traverse un nombre non réel."
+ },
+ {
+  "code": "65-129",
+  "a_dire": "La question est de savoir si une équation à coefficients rationnels peut avoir le groupe S5 entier, alors que l'équation à lettres l'a déjà.",
+  "legende_titre": "Le groupe d'une équation rationnelle",
+  "lecture": [
+   "La colonne bleue est l'équation à lettres t1 à t5, dont le groupe S5 a 120 éléments.",
+   "La colonne violette est une équation à coefficients rationnels.",
+   "Son cadre en pointillés pose la question : S5 ou moins ?"
+  ],
+  "a_voir": "Le cadre en pointillés est la question encore sans réponse."
+ },
+ {
+  "code": "65-130",
+  "a_dire": "x⁵ − 2 = 0 a pour solution réelle la racine cinquième de 2, environ 1,15, écrite avec un seul radical ; l'équation est résoluble.",
+  "legende_titre": "Une équation de degré 5 résoluble",
+  "lecture": [
+   "La courbe bleue est y = x⁵.",
+   "La ligne grise en pointillés est y = 2.",
+   "Le disque vert est l'endroit où la courbe atteint 2, sur l'axe en 1,15."
+  ],
+  "a_voir": "La courbe atteint la hauteur 2 en un point proche de 1,15."
+ },
+ {
+  "code": "65-131",
+  "a_dire": "Un cycle d'ordre 5 et un échange (1 2) fabriquent les quatre échanges de voisins, donc tous les échanges et tout S5.",
+  "legende_titre": "Du cycle et d'un échange à tout le groupe",
+  "lecture": [
+   "Les flèches bleues forment le cycle 1, 2, 3, 4, 5, puis retour à 1.",
+   "Les quatre cadres orange sont les échanges (1 2), (2 3), (3 4) et (4 5).",
+   "Le cadre vert dit que le groupe est S5."
+  ],
+  "a_voir": "Chaque flèche orange passe d'un échange au suivant en décalant d'un cran."
+ },
+ {
+  "code": "65-132",
+  "a_dire": "La preuve part d'un 5-cycle σ et de (1 2), calcule σ(1 2)σ⁻¹ = (2 3), répète, et obtient tous les échanges de voisins donc S5.",
+  "legende_titre": "Départ, étape décisive, arrivée",
+  "lecture": [
+   "Le cadre bleu est le départ : σ = (1 2 3 4 5) et (1 2).",
+   "Le cadre orange est l'étape qui porte la preuve : σ(1 2)σ⁻¹ = (2 3).",
+   "Les cinq disques verts reliés sont l'arrivée : les échanges (1 2), (2 3), (3 4), (4 5)."
+  ],
+  "a_voir": "Le calcul orange produit un nouvel échange de voisins à chaque répétition."
+ },
+ {
+  "code": "65-133",
+  "a_dire": "Avec 4 objets, le 4-cycle et l'échange (1 3) donnent seulement les 8 symétries du carré, pas les 24 permutations.",
+  "legende_titre": "Quand le nombre d'objets n'est pas premier",
+  "lecture": [
+   "Le carré bleu a ses sommets numérotés de 1 à 4 ; la flèche orange est le quart de tour.",
+   "La ligne orange en pointillés est l'axe par 2 et 4, celui de l'échange (1 3).",
+   "Dans la grille de 24 cases, 8 cases bleues forment D ; les 16 grises restent dehors."
+  ],
+  "a_voir": "Seules 8 cases sur 24 sont atteintes."
+ },
+ {
+  "code": "65-134",
+  "a_dire": "Si le degré n'est pas premier, le théorème tombe : x⁴ − 2 a deux racines non réelles et est irréductible, mais son groupe a 8 éléments, pas 24.",
+  "legende_titre": "On retire l'hypothèse du degré premier",
+  "lecture": [
+   "Les deux disques bleus sur l'axe horizontal sont les racines réelles.",
+   "Les deux disques orange hors de l'axe sont les racines non réelles.",
+   "Le cadre rouge S4 : 24 est le groupe attendu, faux ; le cadre vert 8 est le groupe réel."
+  ],
+  "a_voir": "Les hypothèses sont satisfaites sauf le degré, et le groupe est trop petit."
+ },
+ {
+  "code": "65-135",
+  "a_dire": "Comme Q(r1) est de degré 5 sur Q et que E le contient, le degré de E sur Q est un multiple de 5, donc 5 divise l'ordre du groupe.",
+  "legende_titre": "Le degré 5 se multiplie",
+  "lecture": [
+   "Les cadres du haut en bas sont Q, Q(r1) et E ; les flèches portent les degrés 5 puis 2.",
+   "Les cinq petits cadres bleus sont les nombres de base 1, r1, r1², r1³, r1⁴.",
+   "Le cadre vert multiplie : 5 × 2 = 10, multiple de 5."
+  ],
+  "a_voir": "Le facteur 5 est présent dans le degré total."
+ },
+ {
+  "code": "65-136",
+  "a_dire": "La conjugaison complexe laisse en place les racines réelles et échange les deux racines non réelles : c'est une transposition.",
+  "legende_titre": "La conjugaison échange deux racines",
+  "lecture": [
+   "Les trois disques gris sur l'axe horizontal sont les racines réelles, qui ne bougent pas.",
+   "Les deux disques orange, r1 en haut et r2 en bas, sont les racines non réelles.",
+   "La flèche orange à deux pointes montre qu'elles s'échangent."
+  ],
+  "a_voir": "Trois racines restent, deux se croisent."
+ },
+ {
+  "code": "65-137",
+  "a_dire": "Pour x⁵ − 4x + 2, le critère d'Eisenstein avec 2 s'applique : 2 divise tous les coefficients sauf le premier, et 4 ne divise pas le terme constant.",
+  "legende_titre": "Le critère d'Eisenstein avec le premier 2",
+  "lecture": [
+   "Le cadre gris est le coefficient 1 de x⁵ : 2 ne le divise pas.",
+   "Les cinq cadres verts sont les autres coefficients : 0, 0, 0, −4 et 2, tous divisibles par 2.",
+   "Le texte du bas rappelle que 4 ne divise pas le terme constant 2."
+  ],
+  "a_voir": "Un seul coefficient échappe à 2, le premier."
+ },
+ {
+  "code": "65-138",
+  "a_dire": "Les valeurs −22, 5, 2, −1, 26 changent de signe trois fois, donc au moins trois racines réelles ; la dérivée montre qu'il n'y en a pas plus.",
+  "legende_titre": "Compter les passages par zéro",
+  "lecture": [
+   "Le tableau du bas donne x de −2 à 2 et la valeur de f ; orange pour les valeurs négatives, bleu pour les positives.",
+   "La courbe bleue est x⁵ − 4x + 2.",
+   "Les trois disques verts sont les points où elle coupe l'axe.",
+   "Les deux traits orange en pointillés sont les deux points où la dérivée 5x⁴ − 4 s'annule : la courbe change deux fois de direction."
+  ],
+  "a_voir": "La courbe passe trois fois d'un côté à l'autre de l'axe, et la dérivée empêche d'en avoir plus."
+ },
+ {
+  "code": "65-139",
+  "a_dire": "Irréductible, deux racines non réelles, degré 5 premier : ces trois conditions donnent le groupe S5 pour x⁵ − 4x + 2, qui n'est pas résoluble.",
+  "legende_titre": "Trois conditions, un groupe",
+  "lecture": [
+   "Les trois cadres bleus sont les trois conditions, chacune cochée.",
+   "Le cadre vert est le groupe obtenu : S5.",
+   "Le texte rouge dit qu'il n'est pas résoluble, donc pas de formule par radicaux."
+  ],
+  "a_voir": "Les trois conditions réunies conduisent à S5."
+ },
+ {
+  "code": "65-140",
+  "a_dire": "L'impossibilité ne vient pas de nos méthodes mais de l'équation : x⁵ − 4x + 2 a pour groupe S5 et échoue, x⁵ − 2 a un groupe plus petit et un radical suffit.",
+  "legende_titre": "Même essai, deux équations",
+  "lecture": [
+   "Le texte du haut dit que les mêmes radicaux sont essayés dans les deux colonnes.",
+   "La colonne bleue, x⁵ − 4x + 2, a le groupe S5 et le cadre rouge aucune réussite.",
+   "La colonne violette, x⁵ − 2, a un groupe plus petit et le cadre vert un radical suffit."
+  ],
+  "a_voir": "La différence est dans l'équation, pas dans l'essai."
+ },
+ {
+  "code": "65-141",
+  "a_dire": "La recette multiplie x² + m par des facteurs x − n pour obtenir un produit de degré 5, puis retire 2 : on obtient un polynôme de degré premier à deux racines non réelles.",
+  "legende_titre": "La recette pour p = 5",
+  "lecture": [
+   "Le cadre orange x² + 60 est le facteur sans racine réelle, de degré 2.",
+   "Les trois cadres bleus x − 2, x − 4, x − 6 sont de degré 1.",
+   "L'accolade verte additionne les degrés : 5 ; le cadre vert est f = g − 2."
+  ],
+  "a_voir": "Les degrés 2 + 1 + 1 + 1 font 5."
+ },
+ {
+  "code": "65-142",
+  "a_dire": "La somme des carrés des racines vaut 56 − 120 = −64, négative ; des réels au carré ne peuvent pas la donner, donc des racines sont non réelles.",
+  "legende_titre": "Une somme de carrés négative",
+  "lecture": [
+   "La ligne du haut calcule 4 + 16 + 36 = 56 ; le disque bleu est 56 sur la droite graduée.",
+   "La flèche orange retire 2 × 60 = 120.",
+   "Le disque vert est le résultat, −64, négatif."
+  ],
+  "a_voir": "La flèche franchit zéro et arrive à gauche."
+ },
+ {
+  "code": "65-143",
+  "a_dire": "Les coefficients de la recette sont pairs et le terme constant n'est pas divisible par 4 : Eisenstein avec 2 s'applique.",
+  "legende_titre": "Pourquoi des nombres pairs",
+  "lecture": [
+   "Le cadre gris est le coefficient 1 de x⁵.",
+   "Les cadres verts sont −12, 104, −768 et 2 640, pairs.",
+   "Le cadre orange est −2 882, pair mais non divisible par 4 : 2 882 ÷ 4 = 720,5."
+  ],
+  "a_voir": "Tous les coefficients sont pairs, sauf le premier, et le dernier n'est pas multiple de 4."
+ },
+ {
+  "code": "65-144",
+  "a_dire": "On remplace les coefficients par leurs restes modulo un premier ; si le polynôme reste irréductible, le groupe contient un 5-cycle, sans passer par Sylow.",
+  "legende_titre": "Une autre voie vers le 5-cycle",
+  "lecture": [
+   "Le cadre bleu est x⁵ − 4x + 2 ; la flèche orange le réduit modulo 3.",
+   "Le cadre violet est x⁵ + 2x + 2 : −4 devient 2 et 2 reste 2.",
+   "Le cadre en pointillés pose la condition : si le résultat reste irréductible, le cadre vert donne un 5-cycle."
+  ],
+  "a_voir": "La condition en pointillés mène au 5-cycle."
+ },
+ {
+  "code": "65-145",
+  "a_dire": "Le chapitre va de l'équation vers le groupe ; le problème inverse va du groupe vers une équation à coefficients rationnels.",
+  "legende_titre": "Deux sens de la question",
+  "lecture": [
+   "La ligne bleue du haut va de x⁵ − 4x + 2 vers son groupe S5 de 120 éléments.",
+   "La ligne violette du bas part d'un groupe à 3 éléments.",
+   "Le cadre en pointillés demande s'il existe une équation rationnelle qui l'a pour groupe."
+  ],
+  "a_voir": "Les deux flèches vont en sens contraire."
+ },
+ {
+  "code": "65-146",
+  "a_dire": "La réponse est oui pour Sn, An et les groupes résolubles (Šafarevič, 1954), mais le cas général des groupes finis reste ouvert.",
+  "legende_titre": "Ce qu'on sait du problème inverse",
+  "lecture": [
+   "Le grand cadre gris est l'ensemble des groupes finis.",
+   "Les deux cadres verts dedans sont les cas résolus : Sn et An, et les groupes résolubles.",
+   "Le cadre en pointillés est le cas général : ouvert."
+  ],
+  "a_voir": "Les cas résolus ne couvrent pas tout le cadre."
+ },
+ {
+  "code": "65-147",
+  "a_dire": "Des formules par radicaux existent pour les degrés 2, 3 et 4, aucune pour le degré 5 et au-delà.",
+  "legende_titre": "Formules selon le degré",
+  "lecture": [
+   "La droite graduée porte les degrés 2 à 6.",
+   "Les trois disques verts, degrés 2, 3 et 4, ont une formule.",
+   "Les deux disques rouges, degrés 5 et 6, n'en ont aucune."
+  ],
+  "a_voir": "La frontière est entre 4 et 5."
+ },
+ {
+  "code": "65-148",
+  "a_dire": "Pour p = 5, le groupe de x^p − 1 est cyclique d'ordre 4 et ses sous-groupes ont 1, 2 ou 4 éléments.",
+  "legende_titre": "Un groupe cyclique d'ordre 4",
+  "lecture": [
+   "Les quatre disques reliés par des flèches bleues sont 1, g, g² et g³ : on tourne en rond.",
+   "Les disques orange 1 et g² forment le sous-groupe de 2 éléments.",
+   "Les trois cadres à droite listent les sous-groupes : {1}, {1, g²} et les quatre éléments."
+  ],
+  "a_voir": "Les sous-groupes ont des tailles 1, 2 et 4."
+ },
+ {
+  "code": "65-149",
+  "a_dire": "Si f se factorise modulo ℓ en degrés 2 et 3, un élément du groupe a un cycle de longueur 2 et un cycle de longueur 3.",
+  "legende_titre": "Des degrés aux cycles",
+  "lecture": [
+   "Les cadres orange (2) et bleu (3) à gauche sont les degrés des facteurs, de somme 5.",
+   "Les deux disques orange reliés sont un cycle de longueur 2.",
+   "Les trois disques bleus reliés sont un cycle de longueur 3."
+  ],
+  "a_voir": "Les couleurs relient chaque facteur au cycle de même taille."
+ },
+ {
+  "code": "65-150",
+  "a_dire": "Le comptage à la main, par changements de signe puis dérivée, sera remplacé par le théorème de Sturm, qui compte exactement les racines réelles.",
+  "legende_titre": "Compter à la main, puis par Sturm",
+  "lecture": [
+   "Le grand cadre gris du haut est la méthode à la main : les cinq cadres donnent le signe de f en −2, −1, 0, 1, 2 ; les traits verts marquent trois changements.",
+   "Le texte dit que la dérivée donne deux changements de direction.",
+   "La flèche orange mène au cadre en pointillés violet du bas : Sturm, annoncé pour le chapitre 69, compte exactement les racines réelles."
+  ],
+  "a_voir": "La flèche orange mène de la méthode à la main à Sturm."
+ },
+ {
+  "code": "65-151",
+  "a_dire": "Le discriminant n'est pas une formule isolée : ce sera un nombre calculé à partir d'un tableau de nombres, le résultant de f et de f′, pour tout degré.",
+  "legende_titre": "Du discriminant au tableau",
+  "lecture": [
+   "Les cases grises du haut sont les termes du degré 2 (2 termes) et du degré 3 (5 termes) ; le cadre en pointillés dit que le degré 4 est plus long.",
+   "Le tableau bleu est un tableau de nombres : les coefficients de f et de f′ (ici en degré 2).",
+   "La flèche orange mène au cadre vert d, un seul nombre : le résultant de f et f′."
+  ],
+  "a_voir": "Une seule méthode, un tableau de nombres, remplace des formules de plus en plus longues."
+ },
+ {
+  "code": "65-152",
+  "a_dire": "Trois chapitres anciens prennent un sens nouveau : les symétriques expliquent Sn, la parité décide si le discriminant est un carré, Sylow donne le 5-cycle.",
+  "legende_titre": "Trois anciens chapitres, un sens nouveau",
+  "lecture": [
+   "Les cadres gris de gauche sont les chapitres 55, 46 et 50.",
+   "Les cadres verts de droite sont leur rôle dans ce chapitre.",
+   "Chaque flèche orange relie un chapitre à son rôle."
+  ],
+  "a_voir": "Chaque ancien chapitre a une flèche vers son usage."
+ },
+ {
+  "code": "65-153",
+  "a_dire": "Le groupe dépend du corps de base : x³ − 3x + 1 a pour groupe A3 sur Q, mais sur R ses trois racines sont déjà dans le corps et le groupe est réduit à l'identité.",
+  "legende_titre": "Même polynôme, autre corps de base",
+  "lecture": [
+   "La droite bleue du haut montre les racines −1,88, 0,35 et 1,53 ; les flèches orange les échangent en cercle (sur Q).",
+   "La droite verte du bas montre les mêmes racines, sans flèche : sur R elles restent en place.",
+   "Le texte du bas dit que le groupe est réduit à l'identité."
+  ],
+  "a_voir": "Les flèches orange existent en haut et disparaissent en bas."
+ },
+ {
+  "code": "65-154",
+  "a_dire": "Sur R, x³ − 2 garde la racine réelle en place et peut échanger les deux racines conjuguées : le sous-groupe a 2 éléments.",
+  "legende_titre": "Ce qui reste du groupe sur R",
+  "lecture": [
+   "Le disque bleu sur l'axe horizontal est la racine réelle r1, qui reste en place.",
+   "Les deux disques orange r2 et r3 sont les racines conjuguées.",
+   "La flèche orange à deux pointes les échange ; le groupe est rien faire ou cet échange."
+  ],
+  "a_voir": "Une seule flèche d'échange subsiste."
+ }
+]

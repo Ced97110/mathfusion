@@ -1,0 +1,18 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+def P(cx, cy, r, a): return (cx + r * math.cos(math.radians(a)), cy + r * math.sin(math.radians(a)))
+fig, ax = canvas(74)
+cx, cy, r = 44, 44, 22
+disc(ax, cx, cy, r, 'fixe', fill=False)
+line(ax, [(12, cy), (78, cy)], 'fixe')
+z = P(cx, cy, r, 72); c = (z[0], cy)
+line(ax, [z, c], 'varie', dash=True)
+line(ax, [(cx, cy), c], 'varie', lw=2.2)
+disc(ax, z[0], z[1], 1.8, 'sujet'); disc(ax, c[0], c[1], 1.5, 'varie'); disc(ax, cx + r, cy, 1.2, 'fixe')
+text(ax, z[0] + 3, z[1] + 3, r'$\zeta$', 'sujet')
+text(ax, cx + r + 3.5, cy + 3, '1', 'fixe')
+text(ax, c[0] + 2.5, cy + 4.5, r'$c$', 'varie')
+brace(ax, cx, c[0], cy - 2.5, 'varie', label=r'$\approx0{,}309$')
+box(ax, 2, 6, 38, 11, 'sujet', label='position horizontale\n' + r'du sommet $\zeta$', size='s')
+text(ax, 44, 11.5, '=', 'fixe', 'l')
+box(ax, 48, 6, 38, 11, 'varie', label=r'$c=\cos(2\pi/5)$', size='m')
+save(fig, '66-014')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 4, 52, 34, 12, 'sujet', label=r'$f(u)=0$', size='l')
+arrow(ax, (38, 58), (50, 58), 'varie')
+box(ax, 50, 52, 34, 12, 'resultat', label=r'$m$ divise $f$', size='l')
+text(ax, 44, 44, 'sur un cas concret', 'fixe', 's')
+y = 24
+box(ax, 4, y - 7, 26, 14, 'sujet', label=r'$x^3-2x$', size='m')
+text(ax, 34, y, '=', 'encre', 'l')
+box(ax, 38, y - 7, 26, 14, 'autre', label=r'$x^2-2$', size='m')
+text(ax, 68, y, r'$\times$', 'encre', 'l')
+box(ax, 72, y - 7, 12, 14, 'resultat', label=r'$x$', size='l')
+text(ax, 17, y - 11, r'$f$', 'sujet', 's')
+text(ax, 51, y - 11, r'$m$', 'autre', 's')
+text(ax, 78, y - 11, r'$q$', 'resultat', 's')
+text(ax, 44, 4.5, r'reste $r=0$ : la division tombe juste', 'resultat', 's')
+save(fig, '61-064')

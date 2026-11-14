@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+text(ax, 44, 49, 'Deux premiers secrets', 'encre', 'm')
+box(ax, 6, 26, 22, 13, 'sujet', label='5', size='l')
+box(ax, 6, 8, 22, 13, 'fixe', label='11', size='l')
+box(ax, 58, 26, 24, 13, 'sujet', label=r'$p$', size='xl')
+arrow(ax, (29.5, 32.5), (56.5, 32.5), 'varie')
+text(ax, 43, 36.5, 'une lettre', 'varie', 's')
+text(ax, 43, 28.5, 'à sa place', 'varie', 's')
+text(ax, 70, 20, r'$p$ vaut 5 ici', 'sujet', 's')
+text(ax, 43, 14.5, 'l’autre nombre', 'fixe', 's', ha='left')
+text(ax, 44, 3, 'secret : connu d’Alice seule', 'encre', 's')
+save(fig, '53-097')

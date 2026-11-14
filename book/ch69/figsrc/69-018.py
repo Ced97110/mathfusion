@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(44)
+text(ax, 6, 28, '(', 'encre', 44)
+text(ax, 82, 28, ')', 'encre', 44)
+box(ax, 12, 20, 26, 16, 'sujet', label='F', size='xl')
+box(ax, 50, 20, 26, 16, 'resultat', label='P', size='xl')
+text(ax, 44, 26, ',', 'encre', 'xl')
+text(ax, 25, 16, 'le corps', 'sujet', 's')
+text(ax, 63, 16, 'ses positifs', 'resultat', 's')
+brace(ax, 12, 76, 11, 'encre', label='(F, P) : un seul objet')
+save(fig, '69-018')

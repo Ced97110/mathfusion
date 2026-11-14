@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(80)
+box(ax,4,60,32,14,'sujet',label='$x$ ml\n10 %')
+box(ax,52,60,32,14,'autre',label='$y$ ml\n20 %')
+arrow(ax,(20,60),(34,49),'fixe'); arrow(ax,(68,60),(54,49),'fixe')
+box(ax,24,36,40,12,'resultat',label='40 ml à 14 %')
+text(ax,44,31.5,'acide pur : 5,6 ml','resultat','s')
+box(ax,4,18,80,9,'fixe',label=r'$0{,}10\,x + 0{,}20\,y = 5{,}6$')
+arrow(ax,(44,17),(44,12),'varie'); text(ax,56,14.5,'× 10','varie','s')
+box(ax,4,2,80,9,'resultat',label=r'$x + 2y = 56$')
+save(fig,'24-065')

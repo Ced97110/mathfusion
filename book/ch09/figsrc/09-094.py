@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(76)
+text(ax,42,73,r'$Q$ manque','varie','s')
+box(ax,4,56,16,12,'resultat',label='15'); text(ax,28,62,'=','encre','l')
+box(ax,34,56,16,12,'varie',label='?',dash=True); text(ax,58,62,'×','encre','l'); box(ax,64,56,16,12,'sujet',label='50')
+arrow(ax,(18,55.5),(18,42.5),'varie')
+box(ax,4,30,28,12,'fixe',label='15 ÷ 50'); arrow(ax,(32.5,36),(39.5,36),'varie')
+box(ax,40,30,16,12,'varie',label='0,3'); arrow(ax,(56.5,36),(67.5,36),'varie'); text(ax,62,41,'2 rangs','varie','s')
+box(ax,68,30,16,12,'resultat',label='30 %')
+save(fig,'09-094')

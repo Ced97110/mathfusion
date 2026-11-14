@@ -1,0 +1,190 @@
+[
+ {
+  "code": "45-001",
+  "a_dire": "Sur l'horloge à quatre heures, 3 + 2 donne la position 1, car il n'y a pas de position 5.",
+  "legende_titre": "L'horloge à quatre heures",
+  "lecture": [
+   "Les quatre cercles sont les positions 0, 1, 2 et 3 de l'horloge.",
+   "Le cercle bleu est le départ, la position 3.",
+   "La flèche orange avance de 2 positions.",
+   "Le cercle vert est l'arrivée, la position 1."
+  ],
+  "a_voir": "L'aiguille repart à 0 après 3 : 3 + 2 arrive sur 1."
+ },
+ {
+  "code": "45-002",
+  "a_dire": "Le signe ℤ/4ℤ range tous les entiers en quatre positions 0, 1, 2, 3 : deux entiers qui diffèrent d'un multiple de 4 sont la même position.",
+  "legende_titre": "Un nom court pour l'horloge",
+  "lecture": [
+   "Chaque case est un entier, écrit ligne par ligne, quatre par ligne.",
+   "La première ligne donne les quatre positions : 0, 1, 2, 3.",
+   "La colonne orange contient 1, 5 et 9."
+  ],
+  "a_voir": "Les entiers d'une même colonne sont la même position."
+ },
+ {
+  "code": "45-003",
+  "a_dire": "Un demi-tour après trois quarts de tour fait cinq quarts de tour, soit un quart de tour.",
+  "legende_titre": "Deux rotations de suite",
+  "lecture": [
+   "Le carré de gauche est au départ ; le rond orange marque un coin.",
+   "Le carré bleu a tourné de trois quarts de tour.",
+   "Le carré vert a tourné d'un demi-tour de plus : cinq quarts de tour.",
+   "Son rond est à la même place qu'après un quart de tour."
+  ],
+  "a_voir": "Cinq quarts de tour donnent la même position qu'un quart de tour."
+ },
+ {
+  "code": "45-004",
+  "a_dire": "Le petit nombre de r_k compte les quarts de tour, et 4 quarts ramènent au départ.",
+  "legende_titre": "Un nom pour chaque rotation",
+  "lecture": [
+   "Chaque carré montre une rotation ; le rond orange marque un coin.",
+   "Le nom bleu au-dessus de chaque carré est r_0, r_1, r_2 ou r_3.",
+   "Le texte gris en dessous donne le nombre de quarts de tour.",
+   "Les deux lignes du bas calculent r_3 puis r_2 : 3 + 2 = 5, soit 1 quart, donc r_1."
+  ],
+  "a_voir": "Le petit nombre de chaque nom est le nombre de quarts de tour."
+ },
+ {
+  "code": "45-005",
+  "a_dire": "L'horloge et les rotations du carré donnent les mêmes calculs, avec les mêmes nombres, dans les seize cases.",
+  "legende_titre": "Deux calculs identiques",
+  "lecture": [
+   "À gauche en bleu, l'horloge montre le résultat de 1 + 2 puis de 3 + 2.",
+   "À droite en violet, le carré montre la rotation obtenue avec les mêmes nombres.",
+   "La flèche verte relie les deux côtés qui donnent le même résultat."
+  ],
+  "a_voir": "Chaque ligne a les mêmes nombres et le même résultat des deux côtés."
+ },
+ {
+  "code": "45-006",
+  "a_dire": "Un nombre et un mouvement sont des objets différents, mais ils se combinent de la même manière : 2 + 2 = 0 et deux demi-tours ramènent au départ.",
+  "legende_titre": "Objets différents, même combinaison",
+  "lecture": [
+   "En bleu, le nombre 2 de l'horloge ; en violet, le demi-tour du carré.",
+   "La ligne du milieu donne le calcul de chaque côté.",
+   "L'horloge revient à la position 0 ; le carré revient au départ.",
+   "La flèche verte relie les deux retours."
+  ],
+  "a_voir": "Les deux côtés reviennent au départ de la même façon."
+ },
+ {
+  "code": "45-007",
+  "a_dire": "Isomorphisme dit que deux groupes ont la même table de calcul avec des noms différents.",
+  "legende_titre": "Même table, noms différents",
+  "lecture": [
+   "La colonne bleue contient les éléments 0, 1, 2, 3 de l'horloge.",
+   "La colonne violette contient les rotations r_0, r_1, r_2, r_3.",
+   "Chaque flèche orange donne le nouveau nom d'un élément.",
+   "Le cadre vert dit que les calculs restent les mêmes."
+  ],
+  "a_voir": "Seuls les noms changent d'une colonne à l'autre."
+ },
+ {
+  "code": "45-008",
+  "a_dire": "Une ligne de la table range les quatre éléments dans un autre ordre : chacun une seule fois, c'est une permutation.",
+  "legende_titre": "Une ligne de la table",
+  "lecture": [
+   "La rangée bleue du haut contient 0, 1, 2, 3 au départ.",
+   "La rangée verte du bas donne les quatre places d'arrivée.",
+   "Chaque flèche orange envoie un élément vers sa nouvelle place : 0 va en 1, 3 va en 0.",
+   "Chaque place du bas reçoit exactement une flèche."
+  ],
+  "a_voir": "Les quatre éléments sont réarrangés, chacun avec une seule flèche."
+ },
+ {
+  "code": "45-009",
+  "a_dire": "Pour une somme de quatre nombres, on se demande ce qui permet d'écrire 2 + 3 + 4 + 5 sans parenthèses.",
+  "legende_titre": "Peut-on enlever les parenthèses ?",
+  "lecture": [
+   "Les trois lignes bleues sont trois façons de placer les parenthèses.",
+   "Chacune donne 14.",
+   "La flèche orange mène à la somme écrite sans parenthèses.",
+   "Le mot orange « permis ? » pose la question."
+  ],
+  "a_voir": "Trois essais donnent 14, et la question reste : est-ce permis ?"
+ },
+ {
+  "code": "45-010",
+  "a_dire": "La règle des exposants revient à compter des facteurs, que les éléments soient des nombres ou des quarts de tour.",
+  "legende_titre": "Compter des facteurs",
+  "lecture": [
+   "La ligne du haut montre cinq cases 2 : trois bleues, deux orange.",
+   "La ligne du bas montre cinq quarts de tour : trois bleus, deux orange.",
+   "Les accolades vertes comptent cinq au total, dans les deux lignes."
+  ],
+  "a_voir": "Dans les deux lignes, on compte 3 puis 2, soit 5."
+ },
+ {
+  "code": "45-011",
+  "a_dire": "Une machine avec un interrupteur de taille 2 et un cadran de taille 3 passe par six états différents, puis revient à (0, 0) au sixième appui.",
+  "legende_titre": "Les états de la machine",
+  "lecture": [
+   "Chaque case est un état : la ligne donne l'interrupteur, la colonne donne le cadran.",
+   "Le chiffre dans la case est le nombre d'appuis pour y arriver.",
+   "Les flèches orange suivent les appuis dans l'ordre.",
+   "La case verte est le départ, et on y revient au sixième appui."
+  ],
+  "a_voir": "Les six cases sont toutes visitées avant le retour au départ."
+ },
+ {
+  "code": "45-012",
+  "a_dire": "Avec deux interrupteurs de taille 2, la machine a 4 états possibles mais n'en visite que 2.",
+  "legende_titre": "Quatre états, deux visités",
+  "lecture": [
+   "Les quatre cases sont les états possibles de la machine.",
+   "Les deux cases vertes sont visitées : (0, 0) au départ et au deuxième appui, (1, 1) au premier.",
+   "Les deux flèches orange vont et reviennent entre elles.",
+   "Les deux cases grises en pointillés ne sont jamais visitées."
+  ],
+  "a_voir": "Seules deux cases sur quatre sont visitées."
+ },
+ {
+  "code": "45-013",
+  "a_dire": "Le produit direct fabrique un nouveau groupe dont les éléments sont des paires, à partir de deux groupes.",
+  "legende_titre": "Deux groupes en font un",
+  "lecture": [
+   "Les cercles bleus sont les positions de l'interrupteur.",
+   "Les cercles violets sont les positions du cadran.",
+   "Les flèches orange mènent vers la machine.",
+   "Les six cases vertes sont les paires de positions : 2 × 3 = 6."
+  ],
+  "a_voir": "Chaque case verte est une paire formée d'une position de chaque groupe."
+ },
+ {
+  "code": "45-014",
+  "a_dire": "Les deux tables ont les mêmes couleurs aux mêmes places : la forme est la même, seul le nom des éléments change avec η.",
+  "legende_titre": "Deux tables, mêmes couleurs",
+  "lecture": [
+   "Chaque couleur est un élément ; la légende du bas donne son nom dans les deux tables.",
+   "La table de gauche est celle de l'horloge, celle de droite est celle des rotations.",
+   "La flèche η renomme chaque nombre en rotation.",
+   "La case entourée est la ligne 3, colonne 2 : orange des deux côtés."
+  ],
+  "a_voir": "Chaque case a la même couleur à gauche et à droite."
+ },
+ {
+  "code": "45-015",
+  "a_dire": "Une table de Cayley donne, dans la case de la ligne x et de la colonne y, le résultat de x combiné avec y, pour n'importe quelle opération.",
+  "legende_titre": "Une table pour toute opération",
+  "lecture": [
+   "À gauche, la table de multiplication de l'école : ligne 3, colonne 4, la case contient 12.",
+   "À droite, la table de l'horloge : ligne 3, colonne 2, la case contient 1.",
+   "Les cases orange sont la ligne et la colonne choisies ; la case verte est leur croisement."
+  ],
+  "a_voir": "Le résultat se lit au croisement d'une ligne et d'une colonne."
+ },
+ {
+  "code": "45-016",
+  "a_dire": "Le signe ∘ se lit « rond » et veut dire faire un mouvement après l'autre : r_1 ∘ r_2 = r_3.",
+  "legende_titre": "Le signe « rond »",
+  "lecture": [
+   "En haut, l'écriture est découpée : r_1 (un quart), le rond (puis), r_2 (un demi-tour), r_3 (trois quarts).",
+   "En bas, le carré gris est au départ.",
+   "La première flèche orange fait r_1, la seconde fait r_2.",
+   "Le carré vert est le résultat : r_3."
+  ],
+  "a_voir": "Le rond relie deux gestes faits l'un après l'autre."
+ }
+]

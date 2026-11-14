@@ -1,0 +1,180 @@
+[
+ {
+  "code": "52-193",
+  "a_dire": "Deux solutions du système diffèrent par un multiple de 4 et de 5, donc par un multiple de 20.",
+  "legende_titre": "Ce que deux solutions ont en commun",
+  "lecture": [
+   "La ligne bleue découpe l'écart de 20 en pas de 4 : elle tombe juste sur 20.",
+   "La ligne violette découpe le même écart en pas de 5 : elle tombe aussi juste sur 20.",
+   "La barre verte du bas dit que 20 est un multiple de 4 et de 5.",
+   "L'accolade orange donne l'écart entre les deux solutions 19 et 39."
+  ],
+  "a_voir": "L'écart 39 − 19 = 20 est atteint par des pas de 4 et par des pas de 5."
+ },
+ {
+  "code": "52-194",
+  "a_dire": "Le nombre 19 est le seul de 0 à 20 qui a le reste 3 par 4 et le reste 4 par 5.",
+  "legende_titre": "Deux listes de restes, un nombre commun",
+  "lecture": [
+   "Les points bleus sont les nombres de reste 3 par 4 : 3, 7, 11, 15, 19.",
+   "Les points violets sont les nombres de reste 4 par 5 : 4, 9, 14, 19.",
+   "Le seul point vert, 19, est dans les deux listes."
+  ],
+  "a_voir": "Les deux listes se rencontrent en un seul nombre, 19."
+ },
+ {
+  "code": "52-195",
+  "a_dire": "Avec les modules 2 et 4, qui ont un diviseur commun, aucun nombre n'a le reste 1 par 2 et le reste 0 par 4.",
+  "legende_titre": "Quand deux modules ont un diviseur commun",
+  "lecture": [
+   "La rangée du haut marque en bleu les nombres impairs, de reste 1 par 2.",
+   "La rangée du milieu marque en violet 0 et 4, les multiples de 4.",
+   "Aucune colonne n'est colorée dans les deux rangées : la case rouge le dit."
+  ],
+  "a_voir": "Les nombres impairs et les multiples de 4 ne se rencontrent jamais."
+ },
+ {
+  "code": "52-196",
+  "a_dire": "Des entiers sont premiers entre eux deux à deux quand chaque paire a un PGCD égal à 1.",
+  "legende_titre": "Chaque paire compte, pas seulement l'ensemble",
+  "lecture": [
+   "À gauche, les nombres 6, 10 et 15 : chaque côté rouge porte un PGCD différent de 1.",
+   "À droite, les nombres 4, 9 et 5 : chaque côté vert porte un PGCD égal à 1.",
+   "Chaque côté du triangle est une paire de nombres."
+  ],
+  "a_voir": "Les trois côtés ont un PGCD de 1 à droite, et aucun à gauche."
+ },
+ {
+  "code": "52-197",
+  "a_dire": "On fusionne les congruences deux par deux, en vérifiant à chaque fois que le module obtenu est premier avec le suivant.",
+  "legende_titre": "Fusionner deux par deux",
+  "lecture": [
+   "Les trois cases bleues du haut sont les congruences de départ, modulo 3, 4 et 5.",
+   "La case orange est la fusion des deux premières : x ≡ 8 modulo 12.",
+   "La case verte est la fusion avec la troisième : x ≡ 56 modulo 60.",
+   "Le texte du bas dit pourquoi la deuxième fusion marche : 12 et 5 sont premiers entre eux."
+  ],
+  "a_voir": "Trois congruences deviennent une seule, en deux fusions."
+ },
+ {
+  "code": "52-198",
+  "a_dire": "Le nombre 19 vérifie les quatre congruences, donc les solutions sont 19 modulo 1260.",
+  "legende_titre": "Quatre congruences, un seul reste",
+  "lecture": [
+   "Chaque case bleue est une des quatre congruences.",
+   "Chaque case verte à droite montre que 19 s'écrit avec le reste demandé.",
+   "La case du bas donne la solution, modulo le produit 1260 des quatre modules."
+  ],
+  "a_voir": "Le même nombre 19 convient pour les quatre modules."
+ },
+ {
+  "code": "52-199",
+  "a_dire": "Les modules n'ont pas besoin d'être premiers : 4 et 9 ne le sont pas, mais n'ont aucun facteur commun.",
+  "legende_titre": "Premiers entre eux, sans être premiers",
+  "lecture": [
+   "La case bleue est 4, découpé en deux facteurs 2.",
+   "La case violette est 9, découpé en deux facteurs 3.",
+   "La case verte dit qu'ils n'ont aucun facteur commun : leur PGCD est 1."
+  ],
+  "a_voir": "Les facteurs 2 et les facteurs 3 sont différents, donc le PGCD vaut 1."
+ },
+ {
+  "code": "52-200",
+  "a_dire": "Tout anneau reçoit un homomorphisme depuis les entiers, qui envoie n sur 1 additionné n fois.",
+  "legende_titre": "Des entiers vers un anneau quelconque",
+  "lecture": [
+   "La colonne bleue de gauche contient les entiers 3, 2, 1, 0 et −1.",
+   "La colonne verte de droite contient leurs images dans l'anneau R.",
+   "Chaque flèche orange envoie n sur la somme de n fois l'unité, ou sur son opposé."
+  ],
+  "a_voir": "Chaque entier a une image imposée : 1 additionné autant de fois."
+ },
+ {
+  "code": "52-201",
+  "a_dire": "Les multiples de 1 forment le plus petit sous-anneau : ils sont dans tout sous-anneau.",
+  "legende_titre": "Le plus petit sous-anneau",
+  "lecture": [
+   "Le grand cadre gris est l'anneau R.",
+   "Le cadre violet est un sous-anneau quelconque, qui contient 1.",
+   "Le cadre bleu, à l'intérieur, contient les multiples de 1 : 0, 1, 1 + 1, 1 + 1 + 1."
+  ],
+  "a_voir": "Le cadre bleu est dans le cadre violet, quel que soit le sous-anneau."
+ },
+ {
+  "code": "52-202",
+  "a_dire": "L'anneau premier de R est l'image des entiers, et son noyau est kℤ.",
+  "legende_titre": "Le petit anneau que R contient toujours",
+  "lecture": [
+   "La grande case bleue est ℤ ; sa case orange est le noyau kℤ.",
+   "La flèche du noyau arrive sur 0 dans R.",
+   "La flèche des autres entiers arrive sur n · 1 dans R.",
+   "La grande case verte, qui contient 0 et n · 1, est l'image de ℤ : l'anneau premier."
+  ],
+  "a_voir": "Le noyau va sur 0 ; l'image de ℤ est l'anneau premier."
+ },
+ {
+  "code": "52-203",
+  "a_dire": "L'anneau premier est ℤ si k vaut 0, et ℤ/kℤ si k est positif.",
+  "legende_titre": "Deux seules possibilités",
+  "lecture": [
+   "À gauche, k = 0 : chaque entier bleu a une image verte différente.",
+   "À droite, k = 6 : les entiers 6, 7 et 8, en orange, retombent sur les images de 0, 1 et 2.",
+   "Il y a alors 6 valeurs seulement."
+  ],
+  "a_voir": "Sans noyau, toutes les images sont distinctes ; avec k = 6, elles bouclent."
+ },
+ {
+  "code": "52-204",
+  "a_dire": "La caractéristique est le nombre k de fois qu'il faut additionner l'unité pour retrouver 0.",
+  "legende_titre": "Compter les additions de l'unité",
+  "lecture": [
+   "À gauche, le cercle montre les restes par 6 : chaque flèche orange ajoute 1, et la case verte est 0.",
+   "Après 6 flèches on revient à 0, donc k = 6.",
+   "À droite, les paires de restes par 2 ont 4 éléments, mais ajouter l'unité (1, 1) deux fois donne (0, 0)."
+  ],
+  "a_voir": "Le nombre de flèches avant de revenir à 0 donne k, pas le nombre d'éléments."
+ },
+ {
+  "code": "52-205",
+  "a_dire": "Dans ℤ, ℚ et ℝ la somme de 1 ne retombe jamais sur 0 ; dans ℤ/6ℤ elle retombe sur 0 à la sixième addition.",
+  "legende_titre": "Deux comportements de la somme de 1",
+  "lecture": [
+   "La rangée bleue montre 1, 2, 3, 4 et la flèche continue : 0 n'apparaît jamais.",
+   "La rangée violette montre 1 à 5, puis la case verte 0 à la sixième place."
+  ],
+  "a_voir": "La rangée du haut ne s'arrête pas sur 0 ; celle du bas y arrive."
+ },
+ {
+  "code": "52-206",
+  "a_dire": "Dans un domaine, la caractéristique ne peut pas être composée : sinon on aurait deux diviseurs de zéro.",
+  "legende_titre": "Pourquoi k ne peut pas être composé",
+  "lecture": [
+   "Les deux cases bleues sont 2·1, qui n'est pas nul.",
+   "La case rouge de droite est leur produit, 4·1, qui vaut 0.",
+   "La grande case rouge dit que ce serait deux diviseurs de zéro."
+  ],
+  "a_voir": "Deux éléments non nuls dont le produit vaut 0 : impossible dans un domaine."
+ },
+ {
+  "code": "52-207",
+  "a_dire": "En caractéristique 2, a + a = 0, donc chaque élément est son propre opposé.",
+  "legende_titre": "Chaque élément est son propre opposé",
+  "lecture": [
+   "La rangée bleue contient les quatre paires de restes par 2.",
+   "La rangée verte contient leurs opposés.",
+   "Chaque flèche orange tombe sur la même paire."
+  ],
+  "a_voir": "L'opposé de chaque paire est cette même paire."
+ },
+ {
+  "code": "52-208",
+  "a_dire": "Un homomorphisme garde l'ordre du produit ; la transposition le renverse.",
+  "legende_titre": "Même ordre ou ordre inversé",
+  "lecture": [
+   "À gauche, a (bleu) et b (orange) sont envoyés dans le même ordre.",
+   "À droite, les flèches se croisent : b arrive avant a.",
+   "Le bleu suit a et l'orange suit b dans les deux cas."
+  ],
+  "a_voir": "Les flèches de droite se croisent, celles de gauche non."
+ }
+]

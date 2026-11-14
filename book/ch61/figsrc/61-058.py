@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 22, 46, 44, 12, 'limite', label=r'$x^4-4$', size='l')
+text(ax, 44, 62, 'nul en $\\sqrt{2}$, unitaire', 'fixe', 's')
+arrow(ax, (34, 45.5), (22, 32), 'varie'); arrow(ax, (54, 45.5), (66, 32), 'varie')
+box(ax, 4, 20, 34, 12, 'resultat', label=r'$x^2-2$', size='l'); box(ax, 50, 20, 34, 12, 'fixe', label=r'$x^2+2$', size='l')
+text(ax, 44, 26, r'$\times$', 'varie', 'xl')
+text(ax, 21, 14, 'déjà nul en $\\sqrt{2}$', 'resultat', 's'); text(ax, 67, 14, 'degré 2', 'fixe', 's')
+text(ax, 44, 5, 'factorisable : pas minimal', 'limite', 's')
+save(fig, '61-058')

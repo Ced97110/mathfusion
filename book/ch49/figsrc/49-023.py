@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 4, 58, r'$x$', 'encre', 's', ha='left') if False else None
+box(ax, 4, 46, 8.5, 9, 'sujet', label=r'$x$')
+text(ax, 20, 50.5, '1 lettre', 'encre', 's', ha='left')
+box(ax, 4, 33, 8.5, 9, 'sujet', label=r'$x$'); box(ax, 13, 33, 8.5, 9, 'autre', label=r'$y$')
+text(ax, 29, 37.5, '2 lettres', 'encre', 's', ha='left')
+box(ax, 4, 20, 8.5, 9, 'varie', fill=False, dash=True)
+text(ax, 20, 24.5, 'aucune lettre : le mot vide', 'varie', 's', ha='left')
+text(ax, 44, 12.5, 'collé à un mot, il ne change rien', 'resultat', 's')
+box(ax, 4, 0.5, 8.5, 9, 'sujet', label=r'$x$'); box(ax, 13, 0.5, 8.5, 9, 'autre', label=r'$y$')
+box(ax, 26, 0.5, 8.5, 9, 'varie', fill=False, dash=True)
+arrow(ax, (40, 5), (48, 5), 'resultat')
+box(ax, 53, 0.5, 8.5, 9, 'sujet', label=r'$x$'); box(ax, 62, 0.5, 8.5, 9, 'autre', label=r'$y$')
+save(fig, '49-023')

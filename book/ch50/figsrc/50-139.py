@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 2, 24, 22, 18, 'sujet'); text(ax, 13, 36, 'élément', 'sujet', 's'); text(ax, 13, 30, "d'ordre 3 ?", 'sujet', 's')
+box(ax, 64, 24, 22, 18, 'resultat'); text(ax, 75, 36, 'élément', 'resultat', 's'); text(ax, 75, 30, '4 trouvé', 'resultat', 's')
+box(ax, 30, 44, 28, 16, 'autre'); text(ax, 44, 55, 'classer tous les', 'autre', 's'); text(ax, 44, 49, 'groupes abéliens', 'autre', 's')
+arrow(ax, (20, 42), (32, 47), 'autre', curve=-0.0); arrow(ax, (58, 50), (68, 42), 'autre')
+text(ax, 44, 64, 'chapitre 60 : trop long', 'autre', 's')
+arrow(ax, (24, 33), (64, 33), 'varie', lw=1.6)
+text(ax, 44, 38, r'multiplier 1 par 4', 'varie', 's')
+text(ax, 44, 28, "argument direct", 'varie', 's')
+text(ax, 44, 14, "dans l'horloge à 12 heures", 'fixe', 's')
+save(fig, '50-139')

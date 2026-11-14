@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+line(ax, [(44, 6), (44, 62)], 'fixe', lw=0.6, dash=True)
+text(ax, 22, 60, r'$\mathbb{Z}/4\mathbb{Z}$', 'limite', 'l')
+text(ax, 66, 60, r'$\mathbb{F}_4$', 'sujet', 'l')
+for i in range(4):
+    disc(ax, 10 + 8 * i, 50, 2.8, 'limite')
+    disc(ax, 54 + 8 * i, 50, 2.8, 'sujet')
+text(ax, 22, 43, '4 éléments', 'limite', 's')
+text(ax, 66, 43, '4 éléments', 'sujet', 's')
+text(ax, 22, 33, r'$1+1=2\neq0$', 'limite', 'm')
+text(ax, 22, 24, r'$2\times2=0$', 'limite', 'm')
+text(ax, 66, 33, r'$1+1=0$', 'sujet', 'm')
+text(ax, 66, 24, r'$\alpha(\alpha+1)=1$', 'sujet', 'm')
+text(ax, 22, 12, "2 n'a pas d'inverse", 'limite', 's')
+text(ax, 66, 12, 'tout non nul a un inverse', 'resultat', 's')
+save(fig, '67-225')

@@ -1,0 +1,118 @@
+{
+  "60-002": {
+    "lecture": [
+      "À gauche, les flèches orange suivent « ajouter 5 » en partant de 0 : elles passent par les 12 disques verts.",
+      "À droite, les flèches orange suivent « ajouter 3 » : elles ne passent que par 4 disques bleus.",
+      "Les 8 disques gris de droite ne sont jamais atteints.",
+      "Un seul nombre, 5, produit toute l’horloge : le groupe est cyclique."
+    ],
+    "a_voir": "Le nombre 5 atteint les 12 heures : il engendre tout le groupe. Le nombre 3 s’arrête à 4 heures."
+  },
+  "60-006": {
+    "lecture": [
+      "La rangée bleue de gauche montre les éléments de ℤ/4, la rangée violette de droite ceux de ℤ/3.",
+      "Les deux cases orange sont les éléments choisis : 3 dans ℤ/4 (1re place) et 1 dans ℤ/3 (2e place).",
+      "Les flèches orange les réunissent dans la case verte (3, 1)."
+    ],
+    "a_voir": "Un élément du groupe obtenu est un couple : un élément de chaque rangée."
+  },
+  "60-008": {
+    "lecture": [
+      "La grille a 2 lignes et 6 colonnes, numérotées sur les bords.",
+      "Les flèches orange sont numérotées de 1 à 6 : chacune ajoute (1, 1) et mène à une nouvelle case bleue.",
+      "La flèche 6 ramène de la dernière case bleue à la case verte (0, 0), la case de départ."
+    ],
+    "a_voir": "Après 6 additions seulement, on est déjà revenu à (0, 0)."
+  },
+  "60-018": {
+    "lecture": [
+      "Les 12 cases de la grille 4 × 3 sont vertes : aucune n’est vide.",
+      "Les lignes sont numérotées par le reste dans la division par 4, les colonnes par le reste dans la division par 3.",
+      "Le 2 (bleu) est en ligne 2, colonne 2 ; le 10 (violet) est en ligne 2, colonne 1.",
+      "Leur différence 8 = 2 × 4 les met dans la même ligne ; 8 n’est pas multiple de 3, donc leurs colonnes sont différentes."
+    ],
+    "a_voir": "2 et 10 sont dans des cases différentes : deux nombres ne partagent pas une case, et les 12 cases sont remplies."
+  },
+  "60-020": {
+    "lecture": [
+      "À gauche (vert), avec 4 et 3, premiers entre eux, la case (2, 1) ne reçoit que le nombre 10.",
+      "À droite (rouge), avec 2 et 6, qui ont le facteur commun 2, la case (0, 0) reçoit les deux nombres 0 et 6.",
+      "Les flèches vont des nombres vers la case qu’ils ont pour restes."
+    ],
+    "a_voir": "Avec 4 et 3, un nombre par case ; avec 2 et 6, deux nombres tombent dans la même case."
+  },
+  "60-024": {
+    "lecture": [
+      "La grille a 2 lignes et 6 colonnes ; les lignes sont numérotées par le reste dans la division par 2, les colonnes par le reste dans la division par 6.",
+      "Chaque case bleue reçoit deux nombres : par exemple 2 et 8, ou 3 et 9.",
+      "La case rouge (0, 0) reçoit 0 et 6 : c’est le défaut du placement.",
+      "Les six cases grises ne reçoivent aucun nombre."
+    ],
+    "a_voir": "Six cases reçoivent chacune deux nombres, et six restent vides."
+  },
+  "60-031": {
+    "lecture": [
+      "En haut, D est un anneau : on y additionne, on y multiplie, et un produit de deux éléments non nuls n’est pas nul.",
+      "Ensuite, les disques bleus sur la droite sont tous les multiples de 6 : −18, −12, −6, 0, 6, 12, 18. Les flèches orange partent de 6 : × 2 donne 12, × (−3) donne −18.",
+      "En bas, les trois cases bleues sont des multiples du seul polynôme λ − 1 : × 1, × λ, × (λ + 2)."
+    ],
+    "a_voir": "Dans ℤ comme dans F[λ], un idéal se réduit aux multiples d’un seul élément."
+  },
+  "60-032": {
+    "lecture": [
+      "Les douze disques forment l’horloge de 12 heures, de 0 à 11 : c’est le groupe M.",
+      "Le disque violet, l’heure 1, est le seul générateur : D = ℤ agit en multipliant, et n × 1 donne toutes les heures.",
+      "Le disque orange est l’heure 3 : la flèche « × 3 » y mène depuis 1."
+    ],
+    "a_voir": "Un seul élément, 1, produit toute l’horloge : le module est de type fini."
+  },
+  "60-038": {
+    "lecture": [
+      "En haut, les deux cases bleues sont le départ : y1 tué par 4, y2 tué par 6.",
+      "La case orange du milieu est l’étape qui porte la preuve : 24 = 4 × 6, et 24 n’est pas nul parce que D est intègre.",
+      "La case verte du bas est l’arrivée : 24 multiplié par la somme y1 + y2 donne 0."
+    ],
+    "a_voir": "Le produit 4 × 6 est non nul, et c’est lui qui tue la somme."
+  },
+  "60-048": {
+    "lecture": [
+      "La rangée est l’horloge de 12 heures ; les deux cases bleues 0 et 6 forment Dy = {0, 6}.",
+      "Les cases violettes et bleues, toutes les heures paires, forment Dz ; les heures impaires sont en pointillés.",
+      "La case rouge 1, hors de ces deux morceaux, montre que la somme Dy + Dz n’atteint pas l’heure 1."
+    ],
+    "a_voir": "Dy et Dz ont en commun 0 et 6, et l’heure 1 n’est atteinte par aucun."
+  },
+  "60-049": {
+    "lecture": [
+      "En haut, g = 4, h = 3, a = −1, b = 1. En bas, y = h x et z = g x.",
+      "La flèche orange part de 0 et recule de 3 : a h = (−1) × 3 = −3.",
+      "La flèche violette part de −3 et avance de 4 : b g = 1 × 4 = 4, et le disque vert arrive en 1 : −3 + 4 = 1.",
+      "En multipliant cette somme 1 par x, on obtient la ligne verte du bas : x = a y + b z."
+    ],
+    "a_voir": "Les deux pas −3 et +4 se rejoignent exactement en 1."
+  },
+  "60-051": {
+    "lecture": [
+      "Chaque case porte une des 12 heures ; la colonne bleue 0, 9, 6, 3 est Dy.",
+      "La ligne violette 0, 4, 8 est Dz ; la case verte 0 est leur seule case commune.",
+      "La case orange 7 est somme de 3 de la colonne et de 4 de la ligne : 7 = 3 + 4."
+    ],
+    "a_voir": "Toutes les cases de la grille sont des sommes colonne plus ligne, avec 0 seul en commun."
+  },
+  "60-060": {
+    "lecture": [
+      "En haut, les cases bleues d1 = 2 et d2 = 6 sont les facteurs invariants ; la flèche dit que d1 divise d2.",
+      "En bas, les cases violettes 2, 2 et 3 sont les diviseurs élémentaires.",
+      "Les flèches bleues les relient : d1 donne un 2, et 6 = 2 × 3 donne un 2 et un 3."
+    ],
+    "a_voir": "Deux listes distinctes pour le même module : 2 et 6, ou 2, 2 et 3."
+  },
+  "60-065": {
+    "lecture": [
+      "La rangée du haut est l’horloge de 12 heures en un seul morceau ; les quatre cases bleues sont les heures 0, 3, 6 et 9, tuées par une puissance de 2.",
+      "Le bloc du bas est la même horloge écrite en deux morceaux : 4 colonnes et 3 lignes, chaque case porte une des 12 heures.",
+      "La ligne bleue du bas porte 0, 9, 6 et 3 : ce sont les mêmes quatre éléments."
+    ],
+    "a_voir": "Dans les deux écritures, les éléments tués par une puissance de 2 sont les mêmes quatre éléments."
+  }
+}

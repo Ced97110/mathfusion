@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(58)
+box(ax,4,40,16,9,'sujet',label=r"$\nu'$"); text(ax,12,33,'restriction de ν','sujet','s')
+box(ax,27,40,14,9,'fixe',label=r'$H$'); text(ax,34,33,'départ','fixe','s')
+arrow(ax,(41,44.5),(52,44.5),'varie')
+box(ax,52,40,20,9,'resultat',label=r'$G/N$'); text(ax,62,33,'arrivée','resultat','s')
+text(ax,12,15,'règle :','encre','s')
+box(ax,27,10,14,9,'fixe',label=r'$h$'); text(ax,34,3,'élément de H','fixe','s')
+arrow(ax,(41,14.5),(52,14.5),'varie')
+box(ax,52,10,20,9,'resultat',label=r'$hN$'); text(ax,64,3,'son paquet','resultat','s')
+save(fig,'48-117')

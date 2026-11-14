@@ -1,0 +1,170 @@
+[
+ {
+  "code": "44-080",
+  "a_dire": "Les exposants s'additionnent : 2 répétitions puis 3 répétitions font 5.",
+  "legende_titre": "On additionne les répétitions",
+  "lecture": [
+   "Deux blocs de α côte à côte : k = 2 et l = 3.",
+   "Une accolade verte les réunit : 5 facteurs.",
+   "La formule en bas écrit la règle avec k et l."
+  ],
+  "a_voir": "Le nombre de facteurs α du total est k plus l."
+ },
+ {
+  "code": "44-081",
+  "a_dire": "Le signe ⟨α⟩ désigne l'ensemble de toutes les puissances de α.",
+  "legende_titre": "Un signe pour toutes les puissances",
+  "lecture": [
+   "Le carré bleu à gauche est la transformation α.",
+   "La flèche orange dit de la répéter.",
+   "Le cadre en pointillés contient 1, α, α², α³ et la suite : c'est ⟨α⟩."
+  ],
+  "a_voir": "Le signe ⟨α⟩ entoure toutes les répétitions de α seule."
+ },
+ {
+  "code": "44-082",
+  "a_dire": "⟨r⟩ a quatre éléments : 1, r, r², r³, car r⁴ revient à 1.",
+  "legende_titre": "Quatre mouvements, puis retour",
+  "lecture": [
+   "Chaque carré montre le carreau après 0, 1, 2, 3 quarts de tour ; le rond orange suit un coin.",
+   "La flèche verte du dernier carré au premier dit que r⁴ = 1."
+  ],
+  "a_voir": "Après trois quarts de tour, un de plus ramène au départ : la liste s'arrête."
+ },
+ {
+  "code": "44-083",
+  "a_dire": "Un sous-monoïde est une partie qui contient le neutre et les produits de ses éléments.",
+  "legende_titre": "Une partie qui garde l'opération",
+  "lecture": [
+   "À gauche en rouge, la partie 2 et 3 : le produit 6 est dehors et 1 manque.",
+   "À droite, dans le grand monoïde M, la partie N verte contient 1 et le produit ab de a et b."
+  ],
+  "a_voir": "À droite, le neutre et les produits restent dans la partie ; à gauche non."
+ },
+ {
+  "code": "44-084",
+  "a_dire": "Une partie est stable si l'opération sur deux de ses éléments reste dans la partie.",
+  "legende_titre": "Quand la somme reste dedans",
+  "lecture": [
+   "À gauche, 4 et 6 ont pour somme 10, qui reste dans le cadre vert des nombres pairs.",
+   "À droite, 3 et 5 ont pour somme 8, qui sort du cadre rouge des nombres impairs."
+  ],
+  "a_voir": "La somme de deux pairs reste dedans ; celle de deux impairs sort."
+ },
+ {
+  "code": "44-085",
+  "a_dire": "Pour ℕ dans ℤ, il suffit de vérifier que 1 est dans ℕ et que le produit reste dans ℕ.",
+  "legende_titre": "Deux vérifications suffisent",
+  "lecture": [
+   "Le grand cadre gris est ℤ, le cadre vert est ℕ.",
+   "L'étape 1 montre le neutre 1 dans ℕ.",
+   "L'étape 2 montre 3 fois 4 égal 12, qui reste dans ℕ."
+  ],
+  "a_voir": "Les deux conditions sont vraies dans ℕ, donc ℕ est un sous-monoïde de ℤ."
+ },
+ {
+  "code": "44-086",
+  "a_dire": "{0} est stable (0 × 0 = 0) mais n'est pas un sous-monoïde : il manque le neutre 1.",
+  "legende_titre": "Stable, mais sans le neutre",
+  "lecture": [
+   "Le cadre bleu est la partie {0} dans ℕ.",
+   "La flèche verte dit que 0 × 0 reste dans la partie.",
+   "Le rond rouge 1 est hors de la partie : le neutre manque."
+  ],
+  "a_voir": "La stabilité est vraie, mais le neutre 1 est absent."
+ },
+ {
+  "code": "44-087",
+  "a_dire": "Un monoïde de transformations est un sous-monoïde de M(S) fait de transformations.",
+  "legende_titre": "Une famille de transformations stable",
+  "lecture": [
+   "Le grand cadre gris est M(S), toutes les transformations.",
+   "Le cadre bleu contient quatre carrés : 1, r, r², r³.",
+   "Le rond orange suit un coin du carreau."
+  ],
+  "a_voir": "La liste bleue est une partie de M(S) qui contient 1 et reste stable."
+ },
+ {
+  "code": "44-088",
+  "a_dire": "Un monoïde fini a un nombre d'éléments que l'on peut compter jusqu'au bout.",
+  "legende_titre": "On peut finir de compter",
+  "lecture": [
+   "En haut, quatre cases bleues numérotées 1 à 4 : tout se compte, l'accolade dit 4 éléments.",
+   "En bas, en violet, la droite des entiers continue sans s'arrêter."
+  ],
+  "a_voir": "En haut on arrive à 4 ; en bas, on n'arrive jamais à la fin."
+ },
+ {
+  "code": "44-089",
+  "a_dire": "L'ordre |M| est le nombre d'éléments : 6 pour le triangle, 8 pour le carreau.",
+  "legende_titre": "Un nombre pour comparer",
+  "lecture": [
+   "Chaque case représente un mouvement.",
+   "Six cases bleues pour le triangle, huit cases violettes pour le carreau.",
+   "Les accolades donnent |M|."
+  ],
+  "a_voir": "Compter les cases donne l'ordre, et 6 est plus petit que 8."
+ },
+ {
+  "code": "44-090",
+  "a_dire": "Pour deux numéros, il y a 4 transformations, et 4 = 2 × 2.",
+  "legende_titre": "Compter les transformations",
+  "lecture": [
+   "Chaque cadre bleu envoie 1 et 2 vers 1 et 2 : ne rien faire, échange, tout sur 1, tout sur 2.",
+   "Les flèches orange montrent où va chaque numéro."
+  ],
+  "a_voir": "Il y a quatre cadres, donc l'ordre vaut 4, comme 2 fois 2."
+ },
+ {
+  "code": "44-091",
+  "a_dire": "Un monoïde infini a des éléments qu'on ne finit jamais de compter : après chacun, il y en a un autre.",
+  "legende_titre": "Toujours un suivant",
+  "lecture": [
+   "Les cases bleues sont 0, 1, 2, 3.",
+   "Chaque flèche orange ajoute 1 et mène à la case suivante.",
+   "La flèche grise et les points montrent que la suite continue."
+  ],
+  "a_voir": "Chaque case a une suivante, donc on ne s'arrête jamais."
+ },
+ {
+  "code": "44-092",
+  "a_dire": "Le signe ∞ se met à la place d'un nombre dans |ℤ| = ∞ : aucun entier ne compte les éléments.",
+  "legende_titre": "Un signe à la place du nombre",
+  "lecture": [
+   "La formule bleue est l'ordre de ℤ.",
+   "La droite grise a une flèche à chaque bout : pas de premier ni de dernier.",
+   "Le texte rouge rappelle que ∞ n'est pas un entier."
+  ],
+  "a_voir": "On écrit ∞ après le signe égal parce qu'aucun entier ne convient."
+ },
+ {
+  "code": "44-093",
+  "a_dire": "La table de Cayley a une ligne et une colonne par élément ; chaque case donne leur composée.",
+  "legende_titre": "Une case pour chaque paire",
+  "lecture": [
+   "À gauche, en gris, la table des nombres : ligne 3, colonne 4, la case vaut 12.",
+   "À droite, en bleu, la table du monoïde : ligne r, colonne r², la case vaut r³."
+  ],
+  "a_voir": "Les lignes et colonnes sont des éléments, et la case verte est leur composée."
+ },
+ {
+  "code": "44-094",
+  "a_dire": "u est inversible s'il existe v avec uv = 1 = vu : on peut le défaire.",
+  "legende_titre": "Défaire un élément",
+  "lecture": [
+   "En haut, le quart de tour u puis trois quarts de tour v ramènent le carreau au départ.",
+   "En bas, en rouge, défaire un ajout de 2 demande d'aller vers −2, hors de ℕ."
+  ],
+  "a_voir": "Le quart de tour se défait ; l'ajout de 2 dans ℕ ne se défait pas."
+ },
+ {
+  "code": "44-095",
+  "a_dire": "Pour défaire, il faut vérifier les deux ordres, car l'ordre peut changer le résultat.",
+  "legende_titre": "Les deux ordres comptent",
+  "lecture": [
+   "En haut, ajouter 1 puis retirer 1 ramène à 0.",
+   "En bas, retirer 1 laisse 0 sur 0, puis ajouter 1 donne 1 : le résultat est différent."
+  ],
+  "a_voir": "Les deux ordres ne donnent pas le même résultat : un seul ne suffit pas."
+ }
+]

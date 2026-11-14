@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+ox, oy, u = 23, 33, 6
+P = lambda a, b: (ox + a * u, oy + b * u)
+arrow(ax, P(-3, 0), P(3, 0), 'sujet', lw=1.2)
+arrow(ax, P(-3, -3), P(3, 3), 'varie', lw=1.2)
+text(ax, P(3, 0)[0] - 1, P(3, 0)[1] - 3.5, 'X', 'sujet', 's', weight='bold')
+text(ax, P(3, 3)[0] - 3, P(3, 3)[1] + 1.5, 'Z', 'varie', 's', weight='bold')
+disc(ax, ox, oy, 1.7, 'resultat')
+text(ax, ox - 4, oy + 4, 'O', 'resultat', 's', weight='bold')
+text(ax, 23, 8, 'non parallèles : (i) vraie', 'resultat', 's')
+box(ax, 48, 44, 38, 10, 'sujet', label='sur X : 2e case = 0', size='s')
+box(ax, 48, 29, 38, 10, 'varie', label='sur Z : cases égales', size='s')
+text(ax, 67, 41.5, 'et', 'encre', 's')
+arrow(ax, (67, 28), (67, 24), 'resultat', lw=1.2)
+box(ax, 48, 10, 38, 13, 'resultat', label=r'$X\cap Z=\{O\}$', size='m', weight='bold')
+save(fig, '58-259')

@@ -1,0 +1,182 @@
+[
+ {
+  "code": "48-177",
+  "a_dire": "Dire d'où part la preuve, où elle arrive, et que l'étape clé est 12ℤ ⊆ 3ℤ pour G = ℤ, N = 12ℤ, H = 3ℤ.",
+  "legende_titre": "Les trois choix et l'étape qui porte le poids",
+  "lecture": [
+   "La droite du haut montre les entiers de 0 à 24 : les points bleus sont les multiples de 12, les points violets les autres multiples de 3.",
+   "Les trois cadres du bas sont les trois temps de la preuve : départ en gris, étape clé en orange, arrivée en vert.",
+   "Le texte orange sous les cadres donne la raison de l'étape clé : 24 est 3 fois 8."
+  ],
+  "a_voir": "Chaque multiple de 12 est aussi un multiple de 3, et c'est ce qui permet d'appliquer le théorème."
+ },
+ {
+  "code": "48-178",
+  "a_dire": "Dire que le nombre d'éléments du sous-groupe est le nombre total divisé par le nombre de classes : 12 ÷ 3 = 4 et 10 ÷ 2 = 5.",
+  "legende_titre": "Compter les éléments, puis diviser",
+  "lecture": [
+   "Chaque rangée de ronds est une horloge : 12 ronds en haut, 10 ronds en bas.",
+   "Les ronds bleus sont les multiples du pas : de 3 en 3 en haut, de 2 en 2 en bas.",
+   "Le texte vert donne la division et le nombre de ronds bleus obtenu."
+  ],
+  "a_voir": "Le nombre de ronds bleus est le nombre de ronds divisé par le pas."
+ },
+ {
+  "code": "48-179",
+  "a_dire": "Dire que si le noyau est réduit à 0, les entiers correspondent un pour un à leur image, les multiples de 3.",
+  "legende_titre": "Noyau réduit à 0 : une copie exacte",
+  "lecture": [
+   "La droite du haut porte des ronds bleus : les entiers 0, 1, 2 et leurs voisins.",
+   "La droite du bas porte des ronds verts : les multiples de 3, placés juste sous chaque entier.",
+   "Chaque flèche orange envoie un entier sur son triple ; la flèche rouge est celle de 0, qui va sur 0."
+  ],
+  "a_voir": "Une flèche par entier et une image par flèche : rien n'est perdu."
+ },
+ {
+  "code": "48-180",
+  "a_dire": "Dire que les trois éléments 0, 1, 2 se représentent par trois permutations de trois objets, qui forment une copie du groupe.",
+  "legende_titre": "Un groupe copié par des permutations",
+  "lecture": [
+   "Les ronds bleus à gauche sont les éléments 0, 1 et 2 du groupe.",
+   "Chaque schéma violet à droite relie trois points du haut à trois points du bas : c'est une permutation.",
+   "La première laisse chaque point en place, la deuxième décale d'un cran, la troisième décale de deux crans."
+  ],
+  "a_voir": "Chaque élément du groupe a sa permutation, et les trois permutations sont distinctes."
+ },
+ {
+  "code": "48-181",
+  "a_dire": "Dire qu'un homomorphisme injectif met le groupe de départ en correspondance un pour un avec son image ; le bouton n'est pas dans ce cas.",
+  "legende_titre": "Injectif : une copie ; le bouton : non",
+  "lecture": [
+   "En haut, les ronds bleus 1, 2, 3, 4 vont sur les ronds verts 3, 6, 9, 12 : une flèche verte par entier.",
+   "En bas, six ronds bleus représentent une infinité d'entiers.",
+   "Les flèches rouges les envoient sur seulement quatre ronds rouges : plusieurs entiers arrivent au même endroit."
+  ],
+  "a_voir": "En haut chaque image vient d'un seul entier ; en bas plusieurs entiers arrivent sur le même rond."
+ },
+ {
+  "code": "48-182",
+  "a_dire": "Dire que l'homomorphisme trivial envoie tout élément du groupe de départ sur le neutre du groupe d'arrivée, donc que son noyau est tout le groupe.",
+  "legende_titre": "Tout va sur le neutre",
+  "lecture": [
+   "La colonne bleue représente les éléments de l'horloge à 7.",
+   "Les ronds violets forment l'horloge à 12 ; le rond vert est son 0.",
+   "Toutes les flèches orange partent d'un rond bleu et arrivent au même rond vert."
+  ],
+  "a_voir": "Les sept flèches se rejoignent sur le 0 : le noyau est le groupe de départ entier."
+ },
+ {
+  "code": "48-183",
+  "a_dire": "Dire que l'homomorphisme trivial existe toujours, mais qu'il ne retient rien : tous les entiers vont sur la rotation de 0°.",
+  "legende_titre": "Il existe toujours, mais ne dit rien",
+  "lecture": [
+   "Les ronds bleus sont des entiers : -2, -1, 0, 1, 2.",
+   "Le grand rond vert est la rotation de 0°, avec son trait qui ne bouge pas.",
+   "Les flèches orange de tous les entiers arrivent au même rond."
+  ],
+  "a_voir": "Cinq entiers différents ont la même image : la comparaison ne retient aucune différence."
+ },
+ {
+  "code": "48-184",
+  "a_dire": "Dire que les noyaux vont du plus petit, {0}, au plus grand, tous les entiers, et que le bouton est entre les deux.",
+  "legende_titre": "Une échelle de noyaux",
+  "lecture": [
+   "Chaque rangée montre douze entiers ; les ronds colorés sont ceux du noyau.",
+   "Première rangée, en vert : seul 0 est dans le noyau, rien n'est perdu.",
+   "Deuxième rangée, en orange : 0, 4 et 8 sont dans le noyau, une partie est perdue.",
+   "Troisième rangée, en rouge : tous les ronds sont dans le noyau, tout est perdu."
+  ],
+  "a_voir": "Plus il y a de ronds colorés, plus l'application perd d'information."
+ },
+ {
+  "code": "48-185",
+  "a_dire": "Dire que la valeur de l'homomorphisme sur 1 décide sa valeur sur 5, sans autre choix possible.",
+  "legende_titre": "La valeur sur 1 décide tout",
+  "lecture": [
+   "La rangée bleue montre 5 comme cinq fois le nombre 1.",
+   "Chaque flèche orange est l'application f : elle envoie chaque 1 sur 3.",
+   "La rangée violette est donc cinq fois 3, soit 15.",
+   "Le cadre vert donne le résultat sur l'horloge : la position 3."
+  ],
+  "a_voir": "Une seule valeur de départ, f(1) = 3, donne f(5) sans rien choisir de plus."
+ },
+ {
+  "code": "48-186",
+  "a_dire": "Dire que l'ensemble E où f et g coïncident contient 1, les sommes et les inverses, donc qu'il est un sous-groupe égal à G.",
+  "legende_titre": "E contient tout à partir de 1",
+  "lecture": [
+   "Le rond bleu 1 est le départ : f et g y ont la même valeur.",
+   "Les ronds orange 2 et 3 sont obtenus par des sommes, montrées par les flèches orange.",
+   "Les ronds violets -1, -2, -3 sont les inverses, montrés par les flèches violettes ; le rond gris est le neutre.",
+   "Le cadre vert en pointillés contient tous les ronds : E est le groupe entier."
+  ],
+  "a_voir": "À partir de 1, les sommes, les inverses et le neutre remplissent le cadre entier."
+ },
+ {
+  "code": "48-187",
+  "a_dire": "Dire que l'application n ↦ n × 3 dans l'horloge à 12 a pour noyau les multiples de 4 et pour image quatre éléments.",
+  "legende_titre": "Noyau et image de n ↦ n × 3",
+  "lecture": [
+   "La droite du haut montre les entiers ; les ronds orange sont ceux qui vont sur 0 : 0, 4, 8, 12.",
+   "La flèche bleue est l'application n ↦ n × 3.",
+   "Dans l'horloge du bas, les ronds verts 0, 3, 6, 9 sont l'image : quatre éléments."
+  ],
+  "a_voir": "Les entiers orange forment le noyau ; les ronds verts de l'horloge forment l'image."
+ },
+ {
+  "code": "48-188",
+  "a_dire": "Dire qu'en ajoutant 3 dans l'horloge à 12 on revient à 0 après 4 pas, et que les entiers qui vont sur 0 sont les multiples de 4.",
+  "legende_titre": "Ajouter 3 jusqu'au retour à 0",
+  "lecture": [
+   "Les ronds bleus 0, 3, 6, 9 de l'horloge sont les valeurs obtenues en ajoutant 3.",
+   "Les flèches orange vont de l'un au suivant, et la dernière revient à 0.",
+   "Les cadres orange à droite donnent les entiers n qui reviennent à 0 : 4, 8, 12, et les suivants."
+  ],
+  "a_voir": "Quatre pas ramènent à 0 : l'ordre est 4 et le noyau est formé des multiples de 4."
+ },
+ {
+  "code": "48-189",
+  "a_dire": "Dire que le sous-groupe engendré par 3 dans l'horloge à 12 correspond à l'horloge à 4, en gardant les additions.",
+  "legende_titre": "Deux groupes de même forme",
+  "lecture": [
+   "La rangée bleue du haut est le sous-groupe engendré par 3 : 0, 3, 6, 9.",
+   "La rangée violette du bas est l'horloge à 4 : 0, 1, 2, 3.",
+   "Chaque flèche verte relie n en bas à 3 fois n en haut.",
+   "Les deux additions écrites, 3 + 6 = 9 et 1 + 2 = 3, se correspondent."
+  ],
+  "a_voir": "Chaque case du haut a sa case du bas, et les additions se correspondent."
+ },
+ {
+  "code": "48-190",
+  "a_dire": "Dire que si a est d'ordre infini, comme 2 dans les entiers, le noyau est {0} et le sous-groupe est comme ℤ ; ce n'est plus vrai quand a revient à 0.",
+  "legende_titre": "Ordre infini : on ne revient jamais à 0",
+  "lecture": [
+   "En haut, les flèches orange montrent 2 ajouté plusieurs fois : 0, 2, 4, 6, 8, et la droite continue sans revenir à 0.",
+   "En bas, dans l'horloge à 12, les ronds rouges 0, 3, 6, 9 montrent que 3 revient à 0 en 4 pas.",
+   "Ce retour à 0 est ce qui empêche le sous-groupe d'être comme ℤ."
+  ],
+  "a_voir": "Le haut ne revient jamais à 0 ; le bas revient à 0, donc il n'est pas comme ℤ."
+ },
+ {
+  "code": "48-191",
+  "a_dire": "Dire qu'un groupe cyclique est de l'un des deux types : ordre fini m, comme ℤ/mℤ, ou ordre infini, comme ℤ.",
+  "legende_titre": "Deux types de groupes cycliques",
+  "lecture": [
+   "Le cadre bleu du haut est un groupe cyclique ; deux flèches grises mènent aux deux cas.",
+   "À gauche, en violet, l'élément 5 de l'horloge à 15 donne 0, 5, 10 et revient à 0 : c'est comme ℤ/3ℤ.",
+   "À droite, en orange, l'élément 2 des entiers donne 0, 2, 4, 6… sans jamais revenir à 0 : c'est comme ℤ."
+  ],
+  "a_voir": "Un groupe cyclique revient à 0 au bout de m pas, ou ne revient jamais."
+ },
+ {
+  "code": "48-192",
+  "a_dire": "Dire que deux groupes cycliques de même ordre sont isomorphes : ici ⟨2⟩ de l'horloge à 12 et l'horloge à 6 ont six éléments qui se correspondent.",
+  "legende_titre": "Même nombre d'éléments, même groupe",
+  "lecture": [
+   "La rangée bleue est le sous-groupe engendré par 2 : 0, 2, 4, 6, 8, 10.",
+   "La rangée violette est l'horloge à 6 : 0, 1, 2, 3, 4, 5.",
+   "Chaque flèche verte relie n en bas à 2 fois n en haut : six éléments contre six."
+  ],
+  "a_voir": "Les deux rangées ont six cases et chaque case du bas a sa case du haut."
+ }
+]

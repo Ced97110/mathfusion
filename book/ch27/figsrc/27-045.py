@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+k = 9.0; hx, y0 = 14, 28
+Hp = (hx, y0); Kp = (hx + 3 * k, y0); Gp = (hx, y0 + 2 * k)
+poly(ax, [Hp, Kp, Gp], 'fixe')
+line(ax, [Hp, Gp], 'sujet', 1.8); line(ax, [Gp, Kp], 'varie', 1.8); line(ax, [Hp, Kp], 'fixe', 1.0)
+line(ax, [(hx, y0 + 1.8), (hx + 1.8, y0 + 1.8), (hx + 1.8, y0)], 'encre', 0.8)
+text(ax, hx - 3.5, y0 - 3, 'H', 'fixe'); text(ax, Kp[0] + 2, y0 - 3, 'K', 'fixe'); text(ax, hx - 3.5, Gp[1] + 2, 'G', 'sujet')
+text(ax, hx - 6, y0 + 9, '2', 'sujet', 's')
+text(ax, 38, y0 + 12, '3,606', 'varie', 's', ha='left')
+text(ax, 38, y0 + 7, 'hypoténuse', 'varie', 's', ha='left')
+text(ax, 64, 55, 'GK est le plus long côté', 'fixe', 's')
+text(ax, 44, 12, r'$GK \geq GH$', 'encre', 'xl')
+text(ax, 44, 4, r'donc $GK/AG \geq GH/AG$', 'resultat', 's')
+save(fig, '27-045')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+box(ax, 4, 66, 80, 14, 'sujet', label=r'$(x^2+5x+6)\div(x+2)$')
+arrow(ax, (44, 65), (44, 55), 'varie')
+box(ax, 24, 42, 40, 12, 'resultat', label='reste 0')
+arrow(ax, (44, 41), (44, 31), 'varie')
+text(ax, 47, 36, 'donc', 'fixe', 's', ha='left')
+f = numberline(ax, 12, 76, 22, -4, 0, step=1, arrow_right=False, labels=False)
+disc(ax, f(-2), 22, 1.8, 'resultat')
+text(ax, f(-2), 29, r'$x=-2$', 'resultat', 'm')
+box(ax, 4, 4, 80, 10, 'resultat', label=r'$4-10+6=0$ : racine')
+save(fig, '21-135')

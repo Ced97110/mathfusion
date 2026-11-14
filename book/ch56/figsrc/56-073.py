@@ -1,0 +1,22 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 2, 3, 41, 64, 'resultat', fill=False, dash=True)
+box(ax, 45, 3, 41, 64, 'limite', fill=False, dash=True)
+text(ax, 22.5, 61, 'dans ℤ', 'resultat', 'm', weight='bold')
+text(ax, 65.5, 61, 'dans ℤ[√−5]', 'limite', 'm', weight='bold')
+# left
+box(ax, 6, 44, 11, 9, 'sujet', label='$7$')
+text(ax, 20, 48.5, 'irréductible', 'sujet', 's', ha='left')
+box(ax, 5, 28, 9, 9, 'sujet', label='$3$')
+text(ax, 16, 32.5, r'$\times$', 'encre')
+box(ax, 19, 28, 11, 9, 'resultat', label='$14$')
+text(ax, 32, 32.5, '$=42$', 'encre', 's', ha='left')
+text(ax, 22.5, 14, '7 divise 14', 'resultat', 'm')
+# right
+box(ax, 48, 44, 11, 9, 'sujet', label='$2$')
+text(ax, 62, 48.5, 'divise 6', 'sujet', 's', ha='left')
+text(ax, 47, 32.5, '$6=$', 'encre', 's', ha='left')
+box(ax, 54, 28, 15, 9, 'limite', label=r'$1+\sqrt{-5}$', size='s')
+box(ax, 70, 28, 15, 9, 'limite', label=r'$1-\sqrt{-5}$', size='s')
+text(ax, 65.5, 14, '2 ne divise aucun facteur', 'limite', 's')
+save(fig, '56-073')

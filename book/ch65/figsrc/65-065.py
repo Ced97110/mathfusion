@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+box(ax, 22, 58, 44, 10, 'sujet', label=r'$x^2 - 4$', size='l')
+text(ax, 44, 50, r'$d = 16 = 4^2$ : un carré', 'resultat', 'm')
+f = numberline(ax, 10, 70, 34, -4, 4, 1, arrow_right=True, every=2)
+disc(ax, f(-2), 34, 2.2, 'resultat')
+disc(ax, f(2), 34, 2.2, 'resultat')
+text(ax, 4, 40, 'ℚ', 'sujet', 'm')
+text(ax, 44, 21, r'racines $-2$ et $2$ : déjà dans ℚ', 'resultat', 's')
+arrow(ax, (44, 18.5), (44, 13), 'resultat')
+text(ax, 46, 15.8, 'rien à échanger', 'fixe', 's', ha='left')
+box(ax, 22, 2, 44, 10, 'fixe', label=r'groupe $= \{1\}$', size='l', weight='bold')
+save(fig, '65-065')

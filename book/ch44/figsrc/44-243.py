@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(92)
+box(ax,3,72,48,10,'sujet',label=r'$3x \equiv 5 \ (\mathrm{mod}\ 8)$')
+box(ax,3,48,48,10,'fixe',label=r'$3\times3x \equiv 3\times5$')
+box(ax,3,24,48,10,'resultat',label=r'$x \equiv 15 \equiv 7$')
+box(ax,3,4,48,10,'resultat',label=r'$3\times7=21=2\times8+5$',size='s')
+arrow(ax,(27,72),(27,58),'varie'); text(ax,56,65,r'$\times 3$ des deux côtés','varie','s',ha='left')
+arrow(ax,(27,48),(27,34),'varie'); text(ax,56,41,r'$3\times3=9\equiv1$','varie','s',ha='left')
+text(ax,56,29,r'$15 \equiv 7$','varie','s',ha='left')
+text(ax,27,19,'vérification','resultat','s')
+save(fig,'44-243')

@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+O, u = (8, 6), 11
+X = lambda a, b: (O[0] + a * u, O[1] + b * u)
+line(ax, [X(0, 0), X(3.8, 0)], 'fixe', lw=0.6); line(ax, [X(0, 0), X(0, 4.5)], 'fixe', lw=0.6)
+line(ax, [X(1, 0), X(1, 4.5)], 'sujet', lw=1.5)
+line(ax, [X(0, 2), X(3.3, 2)], 'autre', lw=1.5)
+text(ax, X(1, 4.4)[0] + 2, X(1, 4.4)[1], 'x − 1 = 0', 'sujet', 's', ha='left')
+text(ax, X(2.4, 2)[0], X(2.4, 2)[1] + 3, 'y − 2 = 0', 'autre', 's')
+disc(ax, *X(1, 2), 1.5, 'resultat'); disc(ax, *X(1, 3), 1.5, 'limite')
+text(ax, 69, 52, r'$(x-1)^2+(y-2)^2$', 'encre', 's')
+box(ax, 52, 31, 34, 10, 'limite', label='carrés : 0 + 1 = 1', size='s')
+arrow(ax, (X(1, 3)[0] + 2, X(1, 3)[1]), (52, 36), 'limite')
+box(ax, 52, 10, 34, 10, 'resultat', label='carrés : 0 + 0 = 0', size='s')
+arrow(ax, (X(1, 2)[0] + 2, X(1, 2)[1] - 1), (52, 15), 'resultat')
+save(fig, '70-172')

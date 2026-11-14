@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 3, 24, 82, 40, 'sujet', fill=False, lw=1.2)
+text(ax, 44, 59, 'F = ℝ : un corps', 'sujet', 'm')
+f = numberline(ax, 10, 80, 38, -3, 3, labels=False, arrow_right=False)
+box(ax, f(0) + 0.5, 42, f(3) - f(0) - 0.5, 9, 'resultat', label='P ⊆ F : les positifs')
+text(ax, f(0), 33, '0', 'fixe', 's')
+text(ax, 44, 14, '(F, P) : corps ordonné', 'resultat', 'm', weight='bold')
+text(ax, 44, 5, 'ℂ : aucun P possible', 'limite', 's')
+save(fig, '69-017')

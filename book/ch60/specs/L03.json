@@ -1,0 +1,356 @@
+[
+ {
+  "code": "60-061",
+  "a_dire": "Dans la chaîne des facteurs invariants, chaque facteur divise le suivant : ici 2 divise 6.",
+  "legende_titre": "Chaque facteur entre dans le suivant",
+  "lecture": [
+   "La droite graduée va de 0 à 12.",
+   "Les ronds violets du haut sont les multiples de 6 : 0, 6 et 12.",
+   "Les ronds bleus du milieu sont les multiples de 2 : 0, 2, 4, 6, 8, 10 et 12.",
+   "Les traits en pointillés montrent que chaque rond violet est aussi un rond bleu."
+  ],
+  "a_voir": "Tout multiple de 6 est aussi un multiple de 2, donc 2 divise 6."
+ },
+ {
+  "code": "60-062",
+  "a_dire": "Les diviseurs élémentaires sont les puissances de nombres premiers qui séparent les facteurs invariants : pour 2 et 6, la liste est 2, 2, 3.",
+  "legende_titre": "Séparer les nombres premiers mélangés",
+  "lecture": [
+   "Les deux cases bleues du haut sont les facteurs invariants 2 et 6.",
+   "La flèche orange de droite coupe 6 en 2 et 3.",
+   "Les trois cases vertes du bas sont les pièces : 2, 2 et 3.",
+   "L'accolade verte réunit ces pièces en une seule liste."
+  ],
+  "a_voir": "Le facteur 6 mélange 2 et 3 ; les pièces séparées forment la liste 2, 2, 3."
+ },
+ {
+  "code": "60-063",
+  "a_dire": "La preuve part de deux décompositions et arrive aux mêmes annulateurs en trois réductions ; la troisième porte la preuve.",
+  "legende_titre": "Trois réductions, une qui porte tout",
+  "lecture": [
+   "La case bleue du haut est le départ : deux décompositions du même module.",
+   "Les deux cases grises sont les réductions 1 et 2.",
+   "La case orange, plus large et à bord épais, est la réduction 3, qui compare des dimensions.",
+   "La case verte du bas est l'arrivée : les mêmes annulateurs."
+  ],
+  "a_voir": "La réduction 3, en orange, est celle qui fait tout le travail."
+ },
+ {
+  "code": "60-064",
+  "a_dire": "La première réduction sépare la torsion : le nombre de morceaux libres est le rang de M / tor M, qui ne dépend d'aucune décomposition.",
+  "legende_titre": "Retirer la torsion, compter ce qui reste",
+  "lecture": [
+   "En haut, les deux cases bleues ℤ sont les morceaux libres et la case grise ℤ/6 est la torsion.",
+   "L'accolade grise nomme cette case : tor M.",
+   "La flèche orange descend vers M / tor M : la torsion devient 0, la case pointillée est vide.",
+   "En bas, il reste deux cases ℤ : l'accolade verte indique le rang 2."
+  ],
+  "a_voir": "Une fois la torsion retirée, il reste autant de cases ℤ que le rang, ici 2."
+ },
+ {
+  "code": "60-065",
+  "a_dire": "La deuxième réduction sépare les premiers : M_p est défini par les éléments, donc le même ensemble pour toute décomposition.",
+  "legende_titre": "Les mêmes éléments dans deux écritures",
+  "lecture": [
+   "La rangée du haut est l’horloge de 12 heures en un seul morceau ; les quatre cases bleues sont les heures 0, 3, 6 et 9, tuées par une puissance de 2.",
+   "Le bloc du bas est la même horloge écrite en deux morceaux : 4 colonnes et 3 lignes, chaque case porte une des 12 heures.",
+   "La ligne bleue du bas porte 0, 9, 6 et 3 : ce sont les mêmes quatre éléments."
+  ],
+  "a_voir": "Dans les deux écritures, les éléments tués par une puissance de 2 sont les mêmes quatre éléments."
+ },
+ {
+  "code": "60-066",
+  "a_dire": "M(k) est formé des multiples de p puissance k, pris modulo les multiples de p puissance k plus 1 ; il est tué par p.",
+  "legende_titre": "Niveaux : multiples de pᵏ regroupés en classes",
+  "lecture": [
+   "Chaque rangée montre les éléments de M, puis de 2M, puis de 4M : 8, 2 et 1 petits rectangles bleus.",
+   "Chaque cadre vert est une classe : des éléments qui deviennent égaux dans le quotient.",
+   "À droite, M(k) est le quotient de deux rangées voisines : il a 4, 2 et 1 classes.",
+   "Doubler une classe donne la classe de 0 : M(k) est tué par p."
+  ],
+  "a_voir": "M(k) est formé des classes de la rangée k, et p fois une classe donne 0."
+ },
+ {
+  "code": "60-067",
+  "a_dire": "M(k) est un espace vectoriel sur ℤ/p parce que p est premier : tout scalaire non nul y a un inverse, ce qui échoue pour 4.",
+  "legende_titre": "Pourquoi p doit être premier",
+  "lecture": [
+   "À gauche, dans ℤ/2, la flèche part de 0 et de 1 et atteint 0 et 1 : le 1 est atteint (case verte).",
+   "À droite, dans ℤ/4, chaque flèche multiplie par 2 : 0 et 2 donnent 0, 1 et 3 donnent 2.",
+   "La case rouge 1 n'est atteinte par aucune flèche : 2 n'a pas d'inverse.",
+   "La case grise 3 n'est pas atteinte non plus."
+  ],
+  "a_voir": "Avec 2 dans ℤ/4, aucune flèche n'arrive sur 1 : ce n'est pas un corps."
+ },
+ {
+  "code": "60-068",
+  "a_dire": "La dimension de M(k) est le nombre de morceaux dont l'exposant est plus grand que k, pour les deux décompositions.",
+  "legende_titre": "Compter les morceaux assez longs",
+  "lecture": [
+   "Chaque colonne est un morceau, de hauteur son exposant e : 2 pour le premier, 1 pour le second.",
+   "À gauche, la décomposition z est en bleu ; à droite, la décomposition w est en violet.",
+   "Une case pleine en rangée k signifie que e est plus grand que k ; une case en pointillés est vide.",
+   "Au centre, le nombre de cases pleines de chaque rangée est la dimension : 2, 1 et 0."
+  ],
+  "a_voir": "La dimension de M(k) compte les morceaux d'exposant plus grand que k, pour z comme pour w."
+ },
+ {
+  "code": "60-069",
+  "a_dire": "Les dimensions de tous les niveaux retrouvent la liste des exposants, donc les listes e et f sont les mêmes.",
+  "legende_titre": "Des dimensions à la liste des exposants",
+  "lecture": [
+   "Chaque rangée donne la dimension d'un niveau : 2 au niveau 0, 1 au niveau 1, 0 au niveau 2.",
+   "Les cases bleues sont les morceaux qui dépassent ce niveau ; la case pointillée est vide.",
+   "Les cases orange soustraient deux niveaux voisins : 2 − 1 = 1 morceau d'exposant 1, et 1 − 0 = 1 morceau d'exposant 2.",
+   "La case verte conclut : e et f donnent la même liste, 1 et 2."
+  ],
+  "a_voir": "Les dimensions suffisent à retrouver toute la liste des exposants."
+ },
+ {
+  "code": "60-070",
+  "a_dire": "Le théorème d'invariance est la version arithmétique de « deux bases ont le même nombre d'éléments ».",
+  "legende_titre": "Deux bases, deux décompositions",
+  "lecture": [
+   "À gauche, dans un plan, deux bases ont chacune 2 vecteurs : e₁ et e₂ en bleu, f₁ et f₂ en violet.",
+   "À droite, le groupe ℤ/4 ⊕ ℤ/2 est écrit par deux décompositions, en bleu et en violet.",
+   "Chaque décomposition a 2 morceaux.",
+   "Le texte du bas met les deux nombres côte à côte : 2 = 2."
+  ],
+  "a_voir": "Les morceaux d'une décomposition se comptent comme les vecteurs d'une base."
+ },
+ {
+  "code": "60-071",
+  "a_dire": "Deux modules de type fini sont isomorphes si et seulement si ils ont les mêmes facteurs invariants ; ℤ/12 et ℤ/2 ⊕ ℤ/6 ont des listes différentes.",
+  "legende_titre": "Même nombre d'éléments, listes différentes",
+  "lecture": [
+   "Le cercle bleu de 12 points est l'horloge ℤ/12 ; sa liste de facteurs est 12.",
+   "La grille violette de 2 lignes et 6 colonnes est ℤ/2 ⊕ ℤ/6 ; sa liste est 2 ; 6.",
+   "Chaque groupe a 12 éléments.",
+   "Le signe rouge et le texte du bas disent que les deux groupes ne sont pas isomorphes."
+  ],
+  "a_voir": "Les listes 12 et 2 ; 6 sont différentes, donc les groupes ne sont pas isomorphes."
+ },
+ {
+  "code": "60-072",
+  "a_dire": "Pour les modules de torsion, les diviseurs élémentaires décident l'isomorphie ; sans la torsion, il faut aussi le rang.",
+  "legende_titre": "Même liste, rang différent",
+  "lecture": [
+   "À gauche, la case bleue ℤ et la case grise ℤ/2 forment ℤ ⊕ ℤ/2 : rang 1.",
+   "À droite, deux cases bleues ℤ et une case grise ℤ/2 forment ℤ ⊕ ℤ ⊕ ℤ/2 : rang 2.",
+   "Les deux listes de diviseurs élémentaires sont égales à 2, signe vert =.",
+   "Le texte rouge dit que les deux modules ne sont pas isomorphes."
+  ],
+  "a_voir": "La liste 2 est la même, mais le nombre de cases ℤ change : il faut ajouter le rang."
+ },
+ {
+  "code": "60-073",
+  "a_dire": "La lettre D désigne un anneau principal : une seule lettre pour les entiers (groupes abéliens) et pour F[λ] (matrices).",
+  "legende_titre": "Une lettre, deux anneaux",
+  "lecture": [
+   "La case bleue du haut est la lettre D, un anneau principal.",
+   "La flèche de gauche mène à D = ℤ : les groupes abéliens, avec les entiers comme exemples.",
+   "La flèche de droite mène à D = F[λ] : les matrices, avec le polynôme λ² − 2λ + 1 comme exemple."
+  ],
+  "a_voir": "Un seul énoncé écrit avec D vaut pour les deux anneaux."
+ },
+ {
+  "code": "60-074",
+  "a_dire": "M désigne un module de type fini sur D : un nombre fini d'éléments suffit à produire tout M ; par exemple 1 produit tout ℤ/12.",
+  "legende_titre": "Un élément suffit à produire tout M",
+  "lecture": [
+   "Les 12 ronds forment l'horloge ℤ/12, qui est le module M sur ℤ.",
+   "Le rond bleu est l'heure 1, le seul élément choisi.",
+   "La flèche orange × 5 mène de 1 à 5 : multiplier 1 par 5 donne 5.",
+   "Les ronds verts sont les heures obtenues en multipliant 1 par un entier."
+  ],
+  "a_voir": "Un seul élément, 1, suffit à produire toutes les heures de M."
+ },
+ {
+  "code": "60-075",
+  "a_dire": "tor M désigne les éléments de M tués par un scalaire non nul ; M se coupe en tor M et un morceau libre L.",
+  "legende_titre": "Torsion et partie libre",
+  "lecture": [
+   "La grille représente M = ℤ ⊕ ℤ/6 : chaque rond est un élément.",
+   "La colonne bleue en pointillés est tor M : ses éléments sont tués par 6.",
+   "La ligne violette en pointillés est la partie libre L.",
+   "L'élément 0 est à la rencontre des deux."
+  ],
+  "a_voir": "M est coupé en une colonne de torsion et une ligne libre : M = tor M ⊕ L."
+ },
+ {
+  "code": "60-076",
+  "a_dire": "M_p désigne la partie de M tuée par une puissance du premier p ; il y a une partie pour chaque premier.",
+  "legende_titre": "Une partie de M pour chaque premier",
+  "lecture": [
+   "Les 12 ronds sont les heures de l'horloge ℤ/12.",
+   "Le carré bleu relie les heures 0, 3, 6 et 9 : c'est M₂, la partie du premier 2, tuée par 4 = 2².",
+   "Le triangle violet relie les heures 0, 4 et 8 : c'est M₃, la partie du premier 3, tuée par 3.",
+   "L'heure 0, en vert, appartient aux deux parties."
+  ],
+  "a_voir": "Chaque premier, 2 ou 3, donne sa propre partie de l'horloge ; elles ont seulement 0 en commun."
+ },
+ {
+  "code": "60-077",
+  "a_dire": "ann z désigne l'ensemble des scalaires a tels que a fois z vaut 0 ; pour z = 3 dans ℤ/12, ce sont les multiples de 4.",
+  "legende_titre": "Les scalaires qui tuent z",
+  "lecture": [
+   "La droite graduée va de 0 à 12 : chaque trait est une valeur de a.",
+   "Les ronds verts marquent a = 0, 4, 8 et 12.",
+   "Pour ces valeurs, a fois 3 vaut 0, 12, 24 et 36, qui reviennent à 0 sur l'horloge de 12 heures."
+  ],
+  "a_voir": "Seuls les multiples de 4 tuent 3 : ann z = (4)."
+ },
+ {
+  "code": "60-078",
+  "a_dire": "dᵢ désigne le facteur invariant numéro i ; dans la grille 2 sur 6, d₁ vaut 2 et d₂ vaut 6.",
+  "legende_titre": "Le numéro d'un facteur",
+  "lecture": [
+   "Chaque case bleue est un facteur invariant de la grille 2 sur 6.",
+   "La lettre au-dessus de chaque case est son nom : d₁ puis d₂.",
+   "Le nombre dans la case est sa valeur : 2 puis 6.",
+   "La flèche orange dit que d₁ divise d₂."
+  ],
+  "a_voir": "L'indice donne la place du facteur dans la liste, la valeur est dans la case."
+ },
+ {
+  "code": "60-079",
+  "a_dire": "pᵉ désigne p multiplié e fois par lui-même : p est le nombre premier, e le nombre de facteurs.",
+  "legende_titre": "Deux lettres pour une puissance",
+  "lecture": [
+   "Chaque case bleue contient le nombre premier p.",
+   "L'accolade orange compte les facteurs : e = 3 pour p = 2, e = 2 pour p = 3.",
+   "Le résultat vert est le produit : 8 puis 9."
+  ],
+  "a_voir": "Le premier p donne la case, l'exposant e donne combien de cases."
+ },
+ {
+  "code": "60-080",
+  "a_dire": "a | b se lit « a divise b » : b est un multiple de a, c'est-à-dire b se découpe en groupes de a.",
+  "legende_titre": "Diviser, c'est découper en groupes égaux",
+  "lecture": [
+   "En haut, 12 ronds sont rangés en 4 cadres bleus de 3 ronds : 3 divise 12.",
+   "L'accolade verte du haut dit : 12 = 4 × 3.",
+   "En bas, 6 ronds sont rangés en 3 cadres de 2 ronds : 2 divise 6.",
+   "L'accolade verte du bas dit : 6 = 3 × 2."
+  ],
+  "a_voir": "Si a divise b, tous les ronds de b entrent dans des cadres de a ronds, sans reste."
+ },
+ {
+  "code": "60-081",
+  "a_dire": "⊕ prend un élément de chaque groupe et additionne composante par composante : ℤ/4 ⊕ ℤ/3 est la grille de 4 lignes et 3 colonnes.",
+  "legende_titre": "Un élément de chaque, additionnés par composante",
+  "lecture": [
+   "Les lignes sont numérotées 0 à 3 pour ℤ/4 ; les colonnes 0 à 2 pour ℤ/3.",
+   "Chaque case est un couple : (ligne, colonne).",
+   "Les cases orange (2,1) et (3,2) sont additionnées.",
+   "La case verte (1,0) est la somme : 2 + 3 = 1 modulo 4, et 1 + 2 = 0 modulo 3."
+  ],
+  "a_voir": "On additionne la première composante modulo 4 et la seconde modulo 3, séparément."
+ },
+ {
+  "code": "60-082",
+  "a_dire": "≅ signifie « est isomorphe à » : le même groupe à renommage près ; ℤ/12 ≅ ℤ/4 ⊕ ℤ/3.",
+  "legende_titre": "Le même groupe sous deux noms",
+  "lecture": [
+   "Le cercle de 12 ronds est ℤ/12 ; la grille de 4 lignes et 3 colonnes est ℤ/4 ⊕ ℤ/3.",
+   "Le rond bleu 5 correspond à la case bleue (1,2).",
+   "Le rond violet 7 correspond à la case violette (3,1).",
+   "Chaque heure reçoit un nom de couple, et la grille a aussi 12 cases."
+  ],
+  "a_voir": "Chaque heure a un nom de couple, et deux heures différentes ont deux noms différents."
+ },
+ {
+  "code": "60-083",
+  "a_dire": "F[λ] désigne tous les polynômes en λ dont les coefficients sont dans F.",
+  "legende_titre": "Les polynômes en λ",
+  "lecture": [
+   "Le polynôme λ² − 2λ + 1 est coupé en trois termes séparés par des signes +.",
+   "Les cases bleues sont les coefficients, pris dans F : 1, −2 et 1.",
+   "Les cases orange sont les puissances de λ : λ² puis λ.",
+   "Le dernier terme est seulement le coefficient 1."
+  ],
+  "a_voir": "Un polynôme est une somme de coefficients de F placés devant des puissances de λ."
+ },
+ {
+  "code": "60-084",
+  "a_dire": "λ1 − A est la matrice qui porte λ sur la diagonale, moins A ; ses cases sont des polynômes en λ.",
+  "legende_titre": "La matrice λ1 − A",
+  "lecture": [
+   "La première matrice, en orange, porte λ sur la diagonale et 0 ailleurs.",
+   "La deuxième matrice, en bleu, est A : 2 et 3 sur la diagonale.",
+   "La matrice verte est le résultat : les cases de la diagonale deviennent λ − 2 et λ − 3.",
+   "Les zéros restent des zéros."
+  ],
+  "a_voir": "Soustraire A change seulement la diagonale : λ − 2 et λ − 3."
+ },
+ {
+  "code": "60-085",
+  "a_dire": "det désigne le déterminant, un nombre associé à une matrice carrée ; ici 2 × 2 − 1 × 0 = 4.",
+  "legende_titre": "Le déterminant d'une matrice",
+  "lecture": [
+   "La matrice porte 2 et 1 sur la première ligne, 0 et 2 sur la seconde.",
+   "Les cases bleues sont la diagonale : leur produit est 2 × 2 = 4.",
+   "Les cases violettes sont l'autre diagonale : leur produit est 1 × 0 = 0.",
+   "Le résultat vert est la différence : 4 − 0 = 4."
+  ],
+  "a_voir": "Le déterminant est le produit d'une diagonale moins le produit de l'autre."
+ },
+ {
+  "code": "60-086",
+  "a_dire": "Hom(M, M) désigne les applications de M dans M qui respectent l'addition ; par exemple x ↦ 3x dans ℤ/12.",
+  "legende_titre": "Les applications de M dans M qui gardent la somme",
+  "lecture": [
+   "Les cases bleues de gauche sont des éléments de M : 1, 5 et 4.",
+   "Les cases vertes de droite sont leurs images par x ↦ 3x : 1 et 5 donnent 3, et 4 donne 0.",
+   "Sous les colonnes, la somme 1 + 4 = 5 devient 3 + 0 = 3."
+  ],
+  "a_voir": "L'image de la somme est la somme des images : 3 + 0 = 3."
+ },
+ {
+  "code": "60-087",
+  "a_dire": "ℤₙ de Judson et ℤ/n du chapitre désignent le même groupe : l'horloge à n positions.",
+  "legende_titre": "Deux écritures de la même horloge",
+  "lecture": [
+   "La case violette est l'écriture de Judson : ℤₙ.",
+   "La case bleue est l'écriture du chapitre : ℤ/n.",
+   "La double flèche verte dit que c'est le même groupe.",
+   "Les deux flèches grises mènent à l'horloge de 12 ronds, cas n = 12."
+  ],
+  "a_voir": "Les deux écritures décrivent la même horloge à n positions."
+ },
+ {
+  "code": "60-088",
+  "a_dire": "|g| est le plus petit nombre d'additions de g à lui-même qui ramènent à 0 ; pour g = 3 dans ℤ/12, |g| = 4.",
+  "legende_titre": "Compter les pas pour revenir à 0",
+  "lecture": [
+   "Les 12 ronds sont les heures de l'horloge ℤ/12.",
+   "Chaque flèche orange ajoute 3 : de 0 à 3, de 3 à 6, de 6 à 9, puis de 9 à 0.",
+   "Les nombres 1 à 4 numérotent les flèches.",
+   "Le texte au centre donne le résultat : |3| = 4."
+  ],
+  "a_voir": "Il faut 4 additions de 3 pour revenir à 0."
+ },
+ {
+  "code": "60-089",
+  "a_dire": "⟨g⟩ désigne tous les multiples de g, jusqu'au retour à 0 ; pour g = 3 dans ℤ/12, c'est {0, 3, 6, 9}.",
+  "legende_titre": "La liste des multiples d'un élément",
+  "lecture": [
+   "Les 12 cases sont les heures de 0 à 11.",
+   "Les cases bleues sont les multiples de 3 : 0, 3, 6 et 9.",
+   "Les arcs orange sont les sauts de 3 en 3.",
+   "Le texte vert du bas relie le nombre d'éléments à l'ordre de 3 : 4."
+  ],
+  "a_voir": "⟨3⟩ contient 4 éléments, autant que l'ordre de 3."
+ },
+ {
+  "code": "60-090",
+  "a_dire": "P(a) est le nombre de façons d'écrire a comme somme d'entiers positifs, sans tenir compte de l'ordre ; P(3) = 3.",
+  "legende_titre": "Compter les façons de couper 3",
+  "lecture": [
+   "Chaque rangée est une façon d'écrire 3 comme somme : 3, puis 2 + 1, puis 1 + 1 + 1.",
+   "La largeur de chaque case bleue est la valeur du terme.",
+   "La flèche verte compte les rangées : il y en a 3, donc P(3) = 3."
+  ],
+  "a_voir": "Il y a trois façons différentes de couper 3, donc P(3) = 3."
+ }
+]

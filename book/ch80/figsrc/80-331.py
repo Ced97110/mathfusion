@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 3, 58, 36, 12, 'resultat', label=r'$\{0,\ 1\}$')
+text(ax, 44, 64, '2 éléments : un corps', 'resultat', 's', ha='left')
+text(ax, 44, 52, r'parties de $\{a, b\}$ : 4 éléments', 'encre', 's')
+labs = (r'$\varnothing$', r'$\{a\}$', r'$\{b\}$', r'$\{a, b\}$'); roles = ('fixe', 'sujet', 'autre', 'fixe')
+for i in range(4): box(ax, 3 + i * 21, 34, 19, 12, roles[i], label=labs[i])
+box(ax, 14, 10, 60, 12, 'limite', label=r'$\{a\}\{b\} = \varnothing$')
+arrow(ax, (33.5, 34), (38, 22), 'limite'); arrow(ax, (54.5, 34), (50, 22), 'limite')
+text(ax, 44, 4, 'deux non vides, produit vide', 'limite', 's')
+save(fig, '80-331')

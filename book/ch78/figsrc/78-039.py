@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 22, 75, 'deux lettres', 'sujet', 'm', weight='bold'); text(ax, 66, 75, 'trois lettres', 'autre', 'm', weight='bold')
+box(ax, 4, 56, 36, 10, 'sujet', label=r'$xy$'); box(ax, 4, 36, 36, 10, 'sujet', label=r'$yx$')
+box(ax, 48, 56, 36, 10, 'autre', label=r'$(xy)\,z$'); box(ax, 48, 36, 36, 10, 'autre', label=r'$x\,(yz)$')
+text(ax, 22, 51, r'$-$', 'varie', 'l'); text(ax, 66, 51, r'$-$', 'varie', 'l')
+arrow(ax, (22, 36), (22, 25), 'varie'); arrow(ax, (66, 36), (66, 25), 'varie')
+box(ax, 4, 13, 36, 11, 'resultat', label=r'$[x,y]=xy-yx$'); box(ax, 48, 13, 36, 11, 'resultat', label=r'$[x,y,z]$')
+text(ax, 44, 5, 'deux calculs, une différence', 'fixe', 's')
+save(fig, '78-039')

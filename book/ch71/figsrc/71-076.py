@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+c = (20, 70)
+for k in range(12):
+    a = math.radians(30 * k)
+    arrow(ax, c, (c[0] + 11 * math.cos(a), c[1] + 11 * math.sin(a)), 'fixe', lw=0.7)
+text(ax, 38, 72, 'tous les $x$ du plan :', 'fixe', 's', ha='left'); text(ax, 38, 66, 'une infinité à tester', 'fixe', 's', ha='left')
+arrow(ax, (20, 55), (20, 44), 'varie'); text(ax, 24, 50, r'seulement $e_1,\,e_2$', 'varie', 's', ha='left')
+o = (12, 24)
+arrow(ax, o, (o[0] + 13, o[1]), 'sujet', lw=1.3); arrow(ax, o, (o[0], o[1] + 13), 'sujet', lw=1.3)
+text(ax, o[0] + 16, o[1] - 1, r'$e_1$', 'sujet', 'm'); text(ax, o[0] + 2, o[1] + 16, r'$e_2$', 'sujet', 'm')
+text(ax, 38, 32, r'$B(e_1,z)=0$', 'sujet', 'm', ha='left'); text(ax, 38, 24, r'$B(e_2,z)=0$', 'sujet', 'm', ha='left')
+arrow(ax, (62, 19), (62, 13), 'varie')
+box(ax, 32, 2, 54, 10, 'resultat', label=r'$Az=0$ : un système', size='m')
+save(fig, '71-076')

@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+u = 12
+A = (14, 8); B = (A[0] + 3 * u, 8); C = (A[0] + 1.5 * u, 8 + 2 * u)
+M = (C[0], 8)
+line(ax, [A, B], 'resultat', lw=2.2)
+line(ax, [A, C], 'varie', lw=1.6); line(ax, [C, B], 'varie', lw=1.6)
+line(ax, [M, C], 'fixe', dash=True)
+line(ax, [(M[0] - 2, 8), (M[0] - 2, 10), (M[0], 10)], 'fixe', lw=0.6)
+for p in (A, B, C): disc(ax, p[0], p[1], 1.1, 'sujet')
+text(ax, A[0] - 4, A[1], 'A', 'sujet', 'l'); text(ax, B[0] + 4, B[1], 'B', 'sujet', 'l'); text(ax, C[0], C[1] + 4, 'C', 'sujet', 'l')
+text(ax, M[0] + 2, 20, '2 m', 'fixe', 's', ha='left')
+text(ax, M[0], 3.5, 'direct : 3 m', 'resultat', 'm')
+text(ax, 21, 28, '2,5 m', 'varie', 'm', ha='right'); text(ax, 51, 28, '2,5 m', 'varie', 'm', ha='left')
+text(ax, M[0], 46, 'détour : 5 m', 'varie', 'm')
+text(ax, 78, 20, '3 < 5', 'resultat', 'l', weight='bold')
+save(fig, '29-021')

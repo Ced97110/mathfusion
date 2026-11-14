@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$x=(1,\,i)$', 'sujet', 'l', weight='bold')
+text(ax, 44, 46.5, 'sans conjugué', 'fixe', 's')
+box(ax, 4, 32, 38, 10, 'fixe', label=r'$1^2+i^2$'); arrow(ax, (43, 37), (55, 37), 'fixe')
+box(ax, 56, 32, 28, 10, 'fixe', label=r'$1-1=0$')
+text(ax, 44, 25, 'avec conjugué', 'resultat', 's')
+box(ax, 4, 8, 38, 12, 'sujet', label=r'$1\cdot\bar 1+i\cdot\bar i$'); arrow(ax, (43, 14), (55, 14), 'resultat')
+box(ax, 56, 8, 28, 12, 'resultat', label=r'$1+1=2$', weight='bold')
+save(fig, '75-154')

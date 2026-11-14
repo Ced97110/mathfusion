@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(82)
+text(ax, 44, 78, r'1. repérer $a$ et $b$', 'fixe', 's')
+box(ax, 8, 62, 12, 10, 'sujet', label=r'$x$'); text(ax, 24, 67, '+', 'encre', 'm')
+box(ax, 28, 62, 22, 10, 'autre', label=r'$a$ : 6', size='s'); text(ax, 54, 67, '=', 'encre', 'm')
+box(ax, 58, 62, 24, 10, 'fixe', label=r'$b$ : 15', size='s')
+arrow(ax, (44, 61), (44, 47), 'varie'); text(ax, 47, 54, 'retirer a à b', 'varie', 's', ha='left')
+box(ax, 26, 36, 36, 10, 'resultat', label=r'$15-6=9$')
+arrow(ax, (44, 35), (44, 24), 'varie'); text(ax, 47, 29.5, 'écrire la solution', 'varie', 's', ha='left')
+box(ax, 26, 14, 36, 10, 'resultat', label=r'$x=9$')
+text(ax, 44, 7, r'vérification : 9 + 6 = 15', 'resultat', 's')
+save(fig, '16-062')

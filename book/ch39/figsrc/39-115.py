@@ -1,0 +1,25 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+from matplotlib.patches import Arc
+
+cx, cy, r = 30, 74, 24
+fig, ax = canvas(108)
+arrow(ax, (4, cy), (cx + r + 8, cy), 'fixe', lw=0.6)
+arrow(ax, (cx, cy - 6), (cx, cy + r + 8), 'fixe', lw=0.6)
+disc(ax, cx, cy, r, 'fixe', fill=False, lw=0.6)
+p1 = (cx + r * math.cos(math.radians(30)), cy + r * math.sin(math.radians(30)))
+p2 = (cx + r * math.cos(math.radians(60)), cy + r * math.sin(math.radians(60)))
+line(ax, [(cx, cy), p1], 'sujet', lw=1.2)
+line(ax, [(cx, cy), p2], 'resultat', lw=1.2)
+disc(ax, p1[0], p1[1], 1.4, 'sujet'); disc(ax, p2[0], p2[1], 1.4, 'resultat')
+ax.add_patch(Arc((cx, cy), 20, 20, theta1=0, theta2=30, ec=COL['sujet'], lw=1.1, zorder=3))
+ax.add_patch(Arc((cx, cy), 32, 32, theta1=0, theta2=60, ec=COL['resultat'], lw=1.1, zorder=3))
+text(ax, cx + 13, cy + 2.2, r'$\theta$', 'sujet', 's')
+text(ax, cx + 11, cy + 14, r'$2\theta$', 'resultat', 's')
+text(ax, p1[0] + 2.5, p1[1] - 2, r'$\mathrm{cis}\,\theta$', 'sujet', 's', ha='left')
+text(ax, p2[0] + 2.5, p2[1] + 2.5, r'$\mathrm{cis}\,2\theta$', 'resultat', 's', ha='left')
+text(ax, 84, 96, r'$\theta=30°$', 'encre', 'm', ha='right')
+text(ax, 84, 88, r'$(\cos\theta+i\sin\theta)^2$', 'sujet', 's', ha='right')
+text(ax, 84, 82, r'$=\cos 2\theta+i\sin 2\theta$', 'resultat', 's', ha='right')
+box(ax, 4, 27, 80, 18, 'varie', label=r'partie réelle : $\cos 2\theta=\cos^2\theta-\sin^2\theta$' + '\n' + r'$\theta=30°$ : $\frac{1}{2}=\frac{3}{4}-\frac{1}{4}$', size='s')
+box(ax, 4, 4, 80, 18, 'autre', label=r'partie imaginaire : $\sin 2\theta=2\sin\theta\cos\theta$' + '\n' + r'$\theta=30°$ : $\frac{\sqrt{3}}{2}=2\times\frac{1}{2}\times\frac{\sqrt{3}}{2}$', size='s')
+save(fig, '39-115')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 20, 57, 'tableau × tableau', 'autre', 's')
+text(ax, 68, 57, 'nombre × tableau', 'varie', 's')
+box(ax, 4, 38, 32, 13, 'autre', label=r'$x\,y$', size='l')
+box(ax, 52, 38, 32, 13, 'varie', label=r'$a\,x$', size='l')
+text(ax, 20, 33, '8 produits', 'autre', 'm'); text(ax, 68, 33, '4 produits', 'varie', 'm')
+text(ax, 44, 44.5, '?', 'encre', 'xl', weight='bold')
+arrow(ax, (38, 44.5), (41.5, 44.5), 'fixe'); arrow(ax, (50, 44.5), (46.5, 44.5), 'fixe')
+arrow(ax, (44, 40), (44, 22), 'fixe')
+box(ax, 6, 6, 76, 15, 'fixe', fill=False, dash=True, label=r'on exige : $a(xy)=(ax)y$', size='l')
+save(fig, '76-021')

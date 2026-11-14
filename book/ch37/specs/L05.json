@@ -1,0 +1,289 @@
+[
+ {
+  "code": "37-097",
+  "a_dire": "Les signes x_(3) et y_(3) sont les deux nombres qui placent C : 6 sur l'axe horizontal, 5 sur l'axe vertical.",
+  "legende_titre": "Les deux nombres qui placent le coin C",
+  "lecture": [
+   "Le triangle bleu a pour coins A, B et C sur le quadrillage.",
+   "Le trait orange en pointillés qui descend de C tombe sur l'axe horizontal, à 6 : c'est x_(3).",
+   "Le trait orange en pointillés qui va vers la gauche tombe sur l'axe vertical, à 5 : c'est y_(3).",
+   "En haut, le couple (x_(3) ; y_(3)) est écrit avec ses valeurs 6 et 5."
+  ],
+  "a_voir": "Chaque nombre de C se lit sur un axe : 6 en bas, 5 à gauche."
+ },
+ {
+  "code": "37-098",
+  "a_dire": "Le signe | | veut dire « valeur absolue de » : le nombre sans son signe, donc 24 pour moins 24 comme pour 24.",
+  "legende_titre": "Le nombre sans son signe",
+  "lecture": [
+   "Sur la droite, le point violet est à moins 24 et le point bleu est à 24.",
+   "Les deux accolades vertes mesurent la distance jusqu'à 0 : 24 de chaque côté.",
+   "Les flèches orange mènent aux écritures du haut : la valeur absolue de moins 24 est 24, celle de 24 est 24."
+  ],
+  "a_voir": "Moins 24 et 24 sont à la même distance de 0 : le signe | | garde seulement cette distance."
+ },
+ {
+  "code": "37-099",
+  "a_dire": "La preuve part de Δ = ½ pq sin(β − α), applique la formule d'addition du sinus, et arrive à X_(2)Y_(3) − X_(3)Y_(2), qui vaut 24.",
+  "legende_titre": "D'où part la preuve, où elle arrive",
+  "lecture": [
+   "À gauche, le triangle bleu a son coin A à l’origine, un côté de 6, un côté d’environ 6,40 et un angle β − α de 38,66°.",
+   "La case bleue du haut est le départ : l’aire écrite avec p, q et l’angle.",
+   "La case orange du milieu est l’étape qui porte le poids : la formule d’addition de sin(β − α).",
+   "La case verte du bas est l’arrivée : une formule sans angle, qui vaut 24."
+  ],
+  "a_voir": "Le départ garde des angles, l’arrivée n’a plus que des coordonnées, et la formule d’addition fait le passage."
+ },
+ {
+  "code": "37-100",
+  "a_dire": "Déplacer tout le triangle d'un bloc garde l'aire 12 ; déplacer un seul coin la change.",
+  "legende_titre": "Un bloc qui bouge, ou un seul coin",
+  "lecture": [
+   "À gauche, le triangle en pointillés gris est le triangle de départ, le triangle bleu est le même triangle déplacé : les trois flèches orange ont le même pas.",
+   "Base 6, hauteur 4 : l'aire reste 12.",
+   "À droite, seul le coin du haut monte de 2 : la flèche orange le montre.",
+   "Le triangle orange a la base 6 et la hauteur 6 : son aire est 18."
+  ],
+  "a_voir": "Les trois coins bougent du même pas à gauche, un seul à droite : l'aire reste 12 d'un côté, devient 18 de l'autre."
+ },
+ {
+  "code": "37-101",
+  "a_dire": "Un point à la distance p de l'origine dans la direction α s'écrit (p cos α, p sin α) : on multiplie par p les nombres du point à la distance 1.",
+  "legende_titre": "Multiplier par p pour s'éloigner de l'origine",
+  "lecture": [
+   "Le petit point bleu est à la distance 1 de l'origine, sur le petit arc gris, avec les coordonnées 0,781 et 0,625.",
+   "L'arc orange près de l'origine est l'angle de 38,66°.",
+   "La grande flèche orange multiplie par 6,40 : elle mène du point bleu au point vert.",
+   "Le point vert est à 6,40 de l'origine, et les traits en pointillés donnent ses nombres : 5 et 4."
+  ],
+  "a_voir": "Le point vert est sur la même direction que le point bleu, 6,40 fois plus loin."
+ },
+ {
+  "code": "37-102",
+  "a_dire": "L'angle entre les deux côtés vaut β − α, donc l'aire vaut ½ pq sin(β − α).",
+  "legende_titre": "L'angle entre les côtés est une différence",
+  "lecture": [
+   "Le triangle bleu a son coin A à l'origine, un côté de 6 le long de l'horizontale et un côté d'environ 6,40.",
+   "En dessous, α = 0° est la direction du côté de 6.",
+   "L'arc orange est l'angle entre les deux côtés : bêta moins alpha, soit 38,66°.",
+   "En haut, la formule de l'aire avec cet angle donne 12."
+  ],
+  "a_voir": "L'angle entre les deux côtés est la différence des deux directions : 38,66 moins 0."
+ },
+ {
+  "code": "37-103",
+  "a_dire": "La formule d'addition transforme p q sin(β − α) en X_(2)Y_(3) − X_(3)Y_(2) : plus d'angles, seulement des coordonnées ; ici 6 × 4 − 5 × 0 = 24.",
+  "legende_titre": "La formule d'addition enlève les angles",
+  "lecture": [
+   "La case bleue du haut est le point de départ : p q sinus de (bêta moins alpha).",
+   "La case orange du milieu est l'étape qui porte le poids : la formule d'addition du sinus.",
+   "En bas, le rectangle bleu est X_(2)Y_(3) : 6 fois 4, soit 24.",
+   "Le trait violet est X_(3)Y_(2) : 5 fois 0, soit 0, sans épaisseur. La case verte donne la différence : 24."
+  ],
+  "a_voir": "Le résultat n'a plus d'angle : seulement 6 × 4 moins 5 × 0."
+ },
+ {
+  "code": "37-104",
+  "a_dire": "Pour trouver l'aire, on calcule X_(2)Y_(3), puis X_(3)Y_(2), la différence, la valeur absolue, la moitié : 24, 0, 24, 24, 12.",
+  "legende_titre": "Les étapes de la formule sur le champ",
+  "lecture": [
+   "Chaque case est une étape, dans l'ordre, de haut en bas.",
+   "La case bleue donne 6 fois 4 : 24. La case violette donne 5 fois 0 : 0.",
+   "Les cases orange donnent la différence 24, puis la valeur absolue : la même avec 24 ou avec moins 24.",
+   "La case verte donne la moitié : l'aire 12."
+  ],
+  "a_voir": "Que la différence soit 24 ou moins 24, la valeur absolue donne 24 et l'aire vaut 12."
+ },
+ {
+  "code": "37-105",
+  "a_dire": "Dans le développement, x_(1)y_(1) apparaît avec le signe plus et avec le signe moins : les deux s'annulent, et il reste la formule à six nombres qui vaut 24.",
+  "legende_titre": "Les deux x_(1)y_(1) s'annulent",
+  "lecture": [
+   "La ligne du haut écrit X_(2)Y_(3) après développement : quatre termes.",
+   "La ligne du bas écrit moins X_(3)Y_(2) après développement : quatre termes.",
+   "Les deux cases orange barrées sont x_(1)y_(1) avec le signe plus, et avec le signe moins : elles s'annulent.",
+   "En bas, les termes restants, regroupés par x, donnent moins 4, plus 28, plus 0 : 24."
+  ],
+  "a_voir": "Une case orange avec plus, une avec moins : elles disparaissent, et le total reste 24."
+ },
+ {
+  "code": "37-106",
+  "a_dire": "Le signe perdu indique le sens dans lequel on fait le tour du triangle : positif dans le sens inverse des aiguilles, négatif dans l'autre sens.",
+  "legende_titre": "Le signe dit le sens du tour du triangle",
+  "lecture": [
+   "À gauche, les flèches orange vont de A vers B, puis C, puis A : sens inverse des aiguilles d'une montre, nombre +24.",
+   "À droite, elles vont de A vers C, puis B, puis A : sens des aiguilles, nombre moins 24.",
+   "Les deux triangles bleus sont le même triangle.",
+   "En haut, l'aire est la moitié de la valeur absolue : 12 dans les deux cas."
+  ],
+  "a_voir": "Même triangle, deux sens de tour, deux signes : l'aire ne garde pas le sens."
+ },
+ {
+  "code": "37-107",
+  "a_dire": "Un déterminant est un nombre calculé à partir d'un tableau carré ; ici le tableau de neuf cases donne 24, comme la somme de trois produits, et l'aire est 12.",
+  "legende_titre": "Un tableau de neuf cases qui donne un nombre",
+  "lecture": [
+   "À gauche, le tableau a trois lignes de trois cases : 1 1 1, 7 1 1, 6 5 1. Les cases grises sont la dernière colonne.",
+   "La case bleue du haut dit : le déterminant vaut 24.",
+   "La case grise du milieu dit que la somme de trois produits vaut aussi 24 : même nombre, autre écriture.",
+   "La case verte donne l'aire : la moitié de la valeur absolue de 24, soit 12."
+  ],
+  "a_voir": "Le déterminant et la somme de trois produits sont le même nombre 24 ; l'aire est 12."
+ },
+ {
+  "code": "37-108",
+  "a_dire": "Avec 110 m, 120 m et 53°, l'aire vaut la moitié de 110 fois 120 fois le sinus de 53°, environ 5 271 m², et la hauteur vaut environ 87,8 m.",
+  "legende_titre": "L'aire du premier champ avec deux côtés et un angle",
+  "lecture": [
+   "Le triangle bleu a un côté de 110 m, un côté de 120 m et l'angle de 53° entre eux (arc orange).",
+   "Le trait orange en pointillés est la hauteur, environ 87,8 m, avec son angle droit.",
+   "À droite, les calculs : la moitié de 110 fois 120 fait 6 600, fois 0,7986.",
+   "La case verte donne l'aire : environ 5 271 m²."
+  ],
+  "a_voir": "Deux côtés et l'angle entre eux suffisent pour l'aire et pour la hauteur."
+ },
+ {
+  "code": "37-109",
+  "a_dire": "Avec 40, 50 et 60 m, la formule de Héron donne s = 75, trois restes 35, 25 et 15, et l'aire exacte 375√7, environ 992,2 m².",
+  "legende_titre": "L'aire du second champ par Héron",
+  "lecture": [
+   "À gauche, le triangle bleu a les côtés 40 m, 50 m et 60 m.",
+   "Les deux premières cases bleues donnent le demi-périmètre 75 et les trois restes.",
+   "La case orange fait le produit 75 × 35 × 25 × 15 : 984 375.",
+   "La case verte donne l'aire : 375√7, environ 992,2 m²."
+  ],
+  "a_voir": "Les trois côtés seuls donnent l'aire : demi-périmètre, restes, produit."
+ },
+ {
+  "code": "37-110",
+  "a_dire": "Par la loi des cosinus, cos C = 1/8, sin C = 3√7/8 et l'aire est 375√7 : le même nombre exact que par Héron.",
+  "legende_titre": "Un autre chemin vers le même nombre exact",
+  "lecture": [
+   "À gauche, le triangle bleu a les côtés 40, 50 et 60 ; l'arc orange est l'angle C, le plus grand.",
+   "Les cases à droite suivent le chemin du cosinus : cos C, sin C, puis l'aire ½ × 40 × 50 × sin C.",
+   "La case verte donne 375√7, environ 992,2 m².",
+   "La case violette est le résultat de Héron : les deux traits égaux disent que c'est le même nombre."
+  ],
+  "a_voir": "Le chemin du cosinus et le chemin de Héron arrivent au même nombre, 375√7."
+ },
+ {
+  "code": "37-111",
+  "a_dire": "Héron est le calcul par le cosinus fait une fois pour toutes avec des lettres : pour 3, 4 et 5, les deux chemins donnent 6.",
+  "legende_titre": "Deux chemins, la même aire 6",
+  "lecture": [
+   "À gauche, le triangle bleu a les côtés 3, 4 et 5, avec un angle droit. L'arc orange est le coin Q : cosinus 0,8, sinus 0,6.",
+   "La case violette suit Héron : s = 6, restes 3, 2, 1, racine de 36 égale 6.",
+   "La case bleue suit le cosinus : la moitié de 4 fois 5 fois 0,6 égale 6.",
+   "Les deux traits égaux entre les cases disent que les deux chemins donnent le même nombre."
+  ],
+  "a_voir": "Les deux calculs donnent 6 : la formule de Héron garde la trace du calcul par le cosinus."
+ },
+ {
+  "code": "37-112",
+  "a_dire": "Le rayon du cercle circonscrit se calcule par 2R = c / sin C : ici R = 80/√7, environ 30,24 m, mais cela ne dit pas où creuser.",
+  "legende_titre": "Le rayon du cercle qui passe par les trois coins",
+  "lecture": [
+   "Le cercle gris passe par les trois coins du triangle bleu de 40, 50 et 60 m.",
+   "Le point orange O est le centre : c'est là que se trouve le puits.",
+   "La double flèche orange est un diamètre, 2R, environ 60,47 m.",
+   "En haut, R vaut 80/√7, environ 30,24 m."
+  ],
+  "a_voir": "Le rayon vient du côté de 60 m et du sinus de C, pas d'une mesure sur le terrain."
+ },
+ {
+  "code": "37-113",
+  "a_dire": "Avec trois angles aigus, le centre O du cercle circonscrit est dans le triangle ; avec un angle obtus, il est dehors.",
+  "legende_titre": "Où est le centre selon les angles",
+  "lecture": [
+   "À gauche, le champ de 40, 50 et 60 m a trois angles aigus : 41,41°, 55,77° et 82,82°. Le point vert O est dans le triangle.",
+   "À droite, le triangle de côtés 3, 5 et 7 a un angle obtus de 120°.",
+   "Le point orange O est hors du triangle, de l'autre côté du côté de 7.",
+   "Les cercles gris passent par les trois coins de chaque triangle."
+  ],
+  "a_voir": "Trois angles aigus : O dedans. Un angle de 120° : O dehors."
+ },
+ {
+  "code": "37-114",
+  "a_dire": "Le rayon du cercle inscrit est r = Δ/s : ici 375√7 divisé par 75 donne 5√7, environ 13,23 m.",
+  "legende_titre": "Le rayon du cercle dans le champ",
+  "lecture": [
+   "Le triangle bleu est le champ de 40, 50 et 60 m.",
+   "Le cercle vert est la mare ; son rayon, le trait orange, est de 13,23 m environ.",
+   "Les trois traits gris en pointillés coupent le triangle en trois triangles de hauteur r.",
+   "En bas, Δ = r × s donne r = 375√7 / 75 = 5√7."
+  ],
+  "a_voir": "L'aire est r fois s : en divisant l'aire par s, on trouve r."
+ },
+ {
+  "code": "37-115",
+  "a_dire": "Les rayons exinscrits valent Δ divisé par 35, 25 et 15 : environ 28,35 m, 39,69 m et 66,14 m.",
+  "legende_titre": "Les trois rayons des cercles extérieurs",
+  "lecture": [
+   "Le petit triangle bleu est le champ de 40, 50 et 60 m.",
+   "Chaque cercle violet touche un côté du triangle (écrit dans le cercle) et les prolongements des deux autres côtés.",
+   "Dans chaque cercle, r_a, r_b ou r_c est écrit avec son calcul : Δ ÷ 35, Δ ÷ 25, Δ ÷ 15, soit environ 28,35 ; 39,69 ; 66,14 m. Le trait orange est ce rayon.",
+   "Le plus grand cercle est sous le côté de 60 m."
+  ],
+  "a_voir": "Le plus grand cercle, de rayon 66,14 m, touche le côté de 60 m."
+ },
+ {
+  "code": "37-116",
+  "a_dire": "Le plus grand cercle exinscrit est en face du plus grand côté : on divise l'aire par le plus petit reste, 15.",
+  "legende_titre": "Le plus grand côté donne le plus grand rayon",
+  "lecture": [
+   "Chaque ligne a un côté (60, 50 ou 40), son reste (15, 25 ou 35) et une barre.",
+   "La longueur de la barre est le rayon : on divise l'aire par le reste.",
+   "La barre orange, la plus longue, est celle du côté de 60 : 66,14.",
+   "Les barres bleues sont plus courtes : 39,69 et 28,35."
+  ],
+  "a_voir": "Plus le côté est grand, plus le reste est petit, et plus le rayon est grand."
+ },
+ {
+  "code": "37-117",
+  "a_dire": "Avec A(1, 1), B(7, 1), C(6, 5), les trois produits valent moins 4, 28 et 0, la somme 24, et l'aire 12.",
+  "legende_titre": "L'aire du champ à partir de six nombres",
+  "lecture": [
+   "Le triangle bleu est dessiné sur le quadrillage avec ses coins A, B et C.",
+   "En haut, la formule générale. Les trois cases bleues donnent un produit par coin : A : moins 4, B : 28, C : 0.",
+   "La case orange donne la somme : 24.",
+   "En bas, la moitié de la valeur absolue de 24 donne l’aire 12."
+  ],
+  "a_voir": "Un produit est négatif, un autre est nul : seule la somme 24 compte."
+ },
+ {
+  "code": "37-118",
+  "a_dire": "Le côté AB est horizontal et mesure 6, la hauteur depuis C mesure 5 − 1 = 4, et ½ × 6 × 4 = 12 : le contrôle donne le même nombre.",
+  "legende_titre": "Un contrôle par la base et la hauteur",
+  "lecture": [
+   "Le triangle bleu est le même que sur le quadrillage : A, B et C.",
+   "L'accolade sous le côté AB indique la base : 6.",
+   "Le trait orange en pointillés est la hauteur depuis C, 5 moins 1, soit 4, avec son angle droit.",
+   "En haut à droite, la moitié de 6 fois 4 vaut 12."
+  ],
+  "a_voir": "Comme AB est horizontal, la hauteur se lit comme une différence de hauteurs : 5 − 1."
+ },
+ {
+  "code": "37-119",
+  "a_dire": "L'aire est égale au produit des trois côtés divisé par quatre fois le rayon circonscrit ; pour 3, 4 et 5, c'est 60 divisé par 10, soit 6.",
+  "legende_titre": "L'aire par les trois côtés et le rayon",
+  "lecture": [
+   "Le triangle bleu a les côtés 3, 4 et 5 ; le cercle gris passe par ses trois coins.",
+   "La flèche orange est le rayon R = 2,5.",
+   "Les trois cases donnent abc = 60, 4R = 10 et l'aire 60 divisé par 10 : 6.",
+   "La case grise du bas refait la même forme avec 40, 50 et 60 : environ 992,1."
+  ],
+  "a_voir": "Les nombres changent, la forme abc divisé par 4R reste la même."
+ },
+ {
+  "code": "37-120",
+  "a_dire": "L'aire vaut 2R² sin A sin B sin C : ici 200 fois 0,6234, environ 124,7 cm², avec les angles 50°, 60°, 70° et R = 10 cm.",
+  "legende_titre": "Une aire avec les trois angles et le rayon",
+  "lecture": [
+   "À gauche, le triangle bleu est dans un cercle gris de rayon 10 cm ; ses angles sont 50°, 60° et 70°.",
+   "La flèche orange est le rayon R.",
+   "Les cases bleues donnent 2R² = 200, puis les trois sinus.",
+   "La case orange multiplie les trois sinus : 0,6234 environ. La case verte donne l'aire, environ 124,7 cm²."
+  ],
+  "a_voir": "Quatre actions dans l'ordre : 2R², trois sinus, leur produit, la multiplication par 200."
+ }
+]

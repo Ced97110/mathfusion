@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+f = numberline(ax, 8, 72, 22, -1, 4)
+disc(ax, f(3), 22, 1.8, 'fixe'); disc(ax, f(0), 22, 1.8, 'resultat')
+arrow(ax, (f(3), 24.5), (f(0) + 1, 24.5), 'sujet', curve=0.4)
+text(ax, 40, 38, r'$+(-a)$ : 3 unités à gauche', 'sujet', 's')
+text(ax, 44, 50, r'$a+(-a)=0$', 'encre', 'l')
+text(ax, f(3), 11, r'$a=3$', 'fixe', 'm')
+text(ax, f(0), 11, 'arrivée : 0', 'resultat', 'm')
+save(fig, '12-106')

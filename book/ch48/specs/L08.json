@@ -1,0 +1,184 @@
+[
+ {
+  "code": "48-113",
+  "a_dire": "Le quotient HN/N a autant de paquets que H/(H ∩ N), un pour un.",
+  "legende_titre": "Deux quotients qui se correspondent",
+  "lecture": [
+   "Les trois cases bleues sont les éléments 0, 4 et 8 de H.",
+   "Chaque flèche orange envoie un élément h sur son paquet hN.",
+   "Les trois cases vertes sont les paquets de HN/N : {0, 6}, {4, 10} et {2, 8}."
+  ],
+  "a_voir": "Chaque paquet vert est atteint par une seule case bleue."
+ },
+ {
+  "code": "48-114",
+  "a_dire": "Les sous-groupes HN, H, N et H ∩ N forment un losange : la somme en haut, l'intersection en bas.",
+  "legende_titre": "Le losange des quatre sous-groupes",
+  "lecture": [
+   "En haut, la case verte est HN, les nombres pairs.",
+   "Au milieu, la case bleue est H = {0, 4, 8} et la case violette est N = {0, 6}.",
+   "En bas, la case grise est l'intersection H ∩ N = {0}.",
+   "Les deux côtés verts portent les quotients H/(H ∩ N) et HN/N, qui sont isomorphes."
+  ],
+  "a_voir": "Les deux côtés verts se font face : ils portent des quotients isomorphes."
+ },
+ {
+  "code": "48-115",
+  "a_dire": "Dans le losange, les côtés opposés portent des quotients de même taille.",
+  "legende_titre": "Côtés opposés, même quotient",
+  "lecture": [
+   "Chaque case dit combien d'éléments a un sous-groupe : 6, 3, 2 et 1.",
+   "Les deux côtés verts se font face et donnent tous deux 3.",
+   "Les deux côtés violets se font face et donnent tous deux 2."
+  ],
+  "a_voir": "Deux côtés opposés portent le même nombre."
+ },
+ {
+  "code": "48-116",
+  "a_dire": "La preuve restreint ν à H, lit l'image HN/N et le noyau H ∩ N, puis conclut avec le théorème fondamental.",
+  "legende_titre": "Restreindre, lire image et noyau",
+  "lecture": [
+   "La colonne de gauche contient les éléments 0, 4 et 8 de H.",
+   "Les flèches orange représentent ν′ : chaque élément est envoyé sur son paquet.",
+   "La colonne de droite est l'image : les paquets {0, 6}, {4, 10} et {2, 8}.",
+   "La case violette est le noyau : seul 0 est envoyé sur le paquet {0, 6}, le neutre.",
+   "La case verte du bas est la conclusion du théorème fondamental."
+  ],
+  "a_voir": "Le noyau est l'intersection, l'image est HN/N, et le théorème fondamental conclut."
+ },
+ {
+  "code": "48-117",
+  "a_dire": "ν′ : H → G/N, h ↦ hN se lit : ν′ part de H, arrive dans G/N et envoie h sur son paquet hN.",
+  "legende_titre": "Lire le symbole ν′",
+  "lecture": [
+   "La case bleue ν′ est l'application, restreinte de ν.",
+   "La case grise H est le départ et la case verte G/N est l'arrivée.",
+   "Sur la ligne du bas, la flèche orange envoie h, un élément de H, sur hN, son paquet."
+  ],
+  "a_voir": "Chaque morceau du symbole a son rôle : nom, départ, arrivée, règle."
+ },
+ {
+  "code": "48-118",
+  "a_dire": "Pour le deuxième théorème : trouver l'homomorphisme, lire son noyau, lire son image, puis appliquer le théorème fondamental.",
+  "legende_titre": "Trois étapes, puis le théorème fondamental",
+  "lecture": [
+   "Les trois cases grises de gauche sont les trois étapes dans l'ordre.",
+   "La case orange donne l'homomorphisme h ↦ hN.",
+   "La case violette donne le noyau H ∩ N = {0}, la case verte donne l'image HN/N.",
+   "La case bleue du bas est l'isomorphisme obtenu."
+  ],
+  "a_voir": "Aucun autre calcul n'est nécessaire après les trois étapes."
+ },
+ {
+  "code": "48-119",
+  "a_dire": "La preuve écrit le produit de deux éléments de HN sous la forme (élément de H)(élément de N), et la normalité sert une seule fois.",
+  "legende_titre": "Montrer que le produit reste dans HN",
+  "lecture": [
+   "La case grise du haut est le produit de départ.",
+   "La flèche orange insère h₂h₂⁻¹, qui vaut le neutre.",
+   "La case bleue h₁h₂ est dans H ; la case orange est le facteur clé, dans N parce que N est normal ; la case violette n₂ est dans N.",
+   "La case verte du bas est le résultat : un élément de H fois un élément de N."
+  ],
+  "a_voir": "La case orange est l'étape qui utilise la normalité."
+ },
+ {
+  "code": "48-120",
+  "a_dire": "La normalité de N sert à une seule étape : garder h₂⁻¹n₁h₂ dans N.",
+  "legende_titre": "Où la normalité de N sert",
+  "lecture": [
+   "À gauche, dans l'horloge, la flèche orange envoie 6 sur 6 : le facteur reste dans la zone violette N.",
+   "À droite, dans S₃, la flèche orange envoie l'échange de 1 et 2 sur l'échange de 2 et 3.",
+   "La case rouge est hors de la zone violette N."
+  ],
+  "a_voir": "Dans un cas le facteur reste dans N, dans l'autre il en sort."
+ },
+ {
+  "code": "48-121",
+  "a_dire": "Sans normalité, HN peut manquer des produits nh : un produit nh n'est pas toujours de la forme hn.",
+  "legende_titre": "Un produit nh qui n'est pas dans HN",
+  "lecture": [
+   "Les cases bleues sont les quatre produits hn : id, 1↔2, 1↔3 et un cycle 1→3→2→1.",
+   "La case grise 2↔3 n'est pas un produit hn.",
+   "La case rouge en pointillés est nh : l'autre cycle 1→2→3→1, absent de HN."
+  ],
+  "a_voir": "L'élément nh existe dans S₃ mais n'est pas dans HN."
+ },
+ {
+  "code": "48-122",
+  "a_dire": "HN a 4 éléments dans S₃, et 4 ne divise pas 6 : HN n'est pas un sous-groupe.",
+  "legende_titre": "4 éléments ne divisent pas 6",
+  "lecture": [
+   "Les six cases sont les six permutations : quatre bleues dans HN, deux grises absentes.",
+   "Sur la droite graduée, les ronds verts 1, 2, 3 et 6 sont les nombres qui divisent 6.",
+   "Le rond rouge 4 est le nombre d'éléments de HN : il ne divise pas 6."
+  ],
+  "a_voir": "Le nombre 4 n'est pas dans la liste des diviseurs de 6."
+ },
+ {
+  "code": "48-123",
+  "a_dire": "Le même mot « premier » désigne deux énoncés différents chez Jacobson et chez Judson.",
+  "legende_titre": "Même numéro, énoncés différents",
+  "lecture": [
+   "À gauche, chez Jacobson, « premier » mène à un quotient de quotient (case bleue).",
+   "À droite, chez Judson, « premier » mène au quotient par un noyau (case violette).",
+   "Le signe rouge ≠ dit que les deux énoncés sont différents.",
+   "Sous la case bleue : Judson appelle ce quotient de quotient « troisième »."
+  ],
+  "a_voir": "Un même numéro peut désigner deux formules différentes."
+ },
+ {
+  "code": "48-124",
+  "a_dire": "Le premier théorème de Judson est le théorème fondamental : G/ker f ≅ im f.",
+  "legende_titre": "Deux noms, un seul théorème",
+  "lecture": [
+   "En haut, les deux cases bleues portent les deux noms et sont reliées par le signe égal vert.",
+   "Les cases bleues de gauche sont les paquets des entiers selon leur reste dans la division par 4.",
+   "Les cases vertes de droite sont les restes 0, 1, 2 et 3, l'image.",
+   "Chaque flèche orange envoie un paquet sur son reste."
+  ],
+  "a_voir": "Un paquet pour chaque reste : le quotient par le noyau est isomorphe à l'image."
+ },
+ {
+  "code": "48-125",
+  "a_dire": "Le deuxième théorème, HN/N ≅ H/(H ∩ N), met deux quotients de même taille en correspondance.",
+  "legende_titre": "Le deuxième théorème avec 4 et 4",
+  "lecture": [
+   "La ligne verte du haut est HN/N : quatre paquets de l'horloge, dont le quotient a 12 ÷ 3 = 4 éléments.",
+   "La ligne bleue du bas est H/(H ∩ N) : les éléments 0, 3, 6 et 9, soit 4 ÷ 1 = 4.",
+   "Chaque trait gris relie un élément de H à son paquet."
+  ],
+  "a_voir": "Les deux lignes ont quatre cases qui se correspondent une à une."
+ },
+ {
+  "code": "48-126",
+  "a_dire": "(G/N)/(H/N) a autant d'éléments que G/H : on regroupe les 6 paquets de G/N deux par deux et on obtient 3 groupes.",
+  "legende_titre": "Un quotient de quotient",
+  "lecture": [
+   "Les six cases sont les paquets de G/N, par exemple {0, 6} et {1, 7}.",
+   "Les deux cases bleues forment H/N.",
+   "Chaque accolade regroupe deux cases : les trois accolades donnent les trois paquets de G/H."
+  ],
+  "a_voir": "Six paquets regroupés deux par deux donnent trois groupes, comme G/H."
+ },
+ {
+  "code": "48-127",
+  "a_dire": "La formule que Jacobson appelle « premier » est la formule que Judson appelle « troisième » : seule la lettre du petit sous-groupe change.",
+  "legende_titre": "Même énoncé, deux noms",
+  "lecture": [
+   "À gauche, la formule de Jacobson, écrite avec K.",
+   "À droite, la formule de Judson, écrite avec N.",
+   "Le signe égal vert relie les deux formules, le signe orange relie les lettres K et N."
+  ],
+  "a_voir": "Les deux formules sont les mêmes, avec une autre lettre."
+ },
+ {
+  "code": "48-128",
+  "a_dire": "On reconnaît un théorème d'isomorphisme à sa formule, pas à son numéro.",
+  "legende_titre": "Reconnaître par la formule",
+  "lecture": [
+   "Chaque ligne associe ce qu'on cherche dans le texte (à gauche) à la formule (à droite).",
+   "La ligne bleue est le quotient par un noyau, la ligne orange la somme HN avec l'intersection, la ligne violette le quotient de quotient."
+  ],
+  "a_voir": "Chaque formule a sa forme propre, qui la fait reconnaître."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 54, 64, r'$x=1$', 'varie', 'l')
+text(ax, 74, 64, r'$x=2$', 'varie', 'l')
+text(ax, 4, 52, r'$x^2-1$', 'sujet', 'm', ha='left')
+text(ax, 4, 38, r'$0$', 'autre', 'm', ha='left')
+for cx, a, b in [(54, '0', '0'), (74, '3', '0')]:
+    box(ax, cx - 8, 47, 16, 10, 'sujet', label=a, size='l')
+    box(ax, cx - 8, 33, 16, 10, 'autre', label=b, size='l')
+text(ax, 54, 24, '=', 'resultat', 'xl', weight='bold')
+text(ax, 74, 24, '≠', 'limite', 'xl', weight='bold')
+text(ax, 4, 24, 'même valeur ?', 'encre', 's', ha='left')
+text(ax, 44, 13, r'comme polynômes : $x^2-1\neq0$', 'encre', 'm')
+text(ax, 44, 5, r'donc $x$ n’est pas un nombre', 'encre', 'm')
+save(fig, '54-007')

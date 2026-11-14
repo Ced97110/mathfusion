@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 14, 64, 60, 12, 'sujet', label=r'$8a^3-6a-1=0$')
+arrow(ax, (44, 63), (44, 45), 'varie')
+text(ax, 48, 54, r'$b=2a$', 'varie', 'm', ha='left')
+box(ax, 14, 32, 60, 12, 'resultat', label=r'$b^3-3b-1=0$')
+text(ax, 44, 24, r'$8a^3=(2a)^3=b^3$', 'fixe', 's')
+text(ax, 44, 17, r'$6a=3\times2a=3b$', 'fixe', 's')
+text(ax, 44, 9, 'avec b ≈ 1,88 : ≈ 0', 'fixe', 's')
+save(fig, '61-193')

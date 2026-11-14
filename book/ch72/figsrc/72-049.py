@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+ox, oy, s = 34, 36, 22
+P = lambda x, y: (ox + x * s, oy + y * s)
+line(ax, [P(-1.4, 0), P(1.4, 0)], 'fixe', lw=0.6)
+line(ax, [P(0, -1.4), P(0, 1.4)], 'fixe', lw=0.6)
+line(ax, [P(-1.35, -1.35), P(1.35, 1.35)], 'limite', lw=1.1)
+line(ax, [P(-1.35, 1.35), P(1.35, -1.35)], 'limite', lw=1.1)
+text(ax, *P(1.4, 1.5), r'droite $y=x$', 'limite', 's')
+text(ax, *P(1.4, -1.5), r'droite $y=-x$', 'limite', 's')
+arrow(ax, P(0, 0), P(1, 1), 'sujet', lw=1.8)
+arrow(ax, P(0, 0), P(0.5, -0.5), 'autre', lw=1.8)
+text(ax, P(1, 1)[0] - 2, P(1, 1)[1] + 4, r'$u=(1\ ;\ 1)$', 'sujet', 'm', ha='right')
+text(ax, P(0.5, -0.5)[0] - 2, P(0.5, -0.5)[1] - 3, r'$v=(0{,}5\ ;\ -0{,}5)$', 'autre', 'm', ha='right')
+text(ax, 3, 72, r'$B(u,v)=1$', 'resultat', 'l', ha='left')
+text(ax, 3, 66, 'carrés de $u$ et $v$ : 0', 'resultat', 's', ha='left')
+save(fig, '72-049')

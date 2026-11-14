@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 6, 50, 52, 'sujet', fill=False, label=None)
+text(ax, 28, 52, r'$\mathbb{F}_{16}$', 'sujet', 'l')
+box(ax, 9, 16, 38, 24, 'fixe', label=r'$\mathbb{F}_4$ : $q=4$' + '\nfixés par ' + r'$\eta$', size='s')
+text(ax, 28, 10.5, r'$\eta$ ne les bouge pas', 'fixe', 's')
+box(ax, 62, 40, 22, 10, 'sujet', label=r'$x$')
+arrow(ax, (73, 40), (73, 28.5), 'varie')
+text(ax, 79, 34, r'$\eta$', 'varie', 'm')
+box(ax, 62, 17, 22, 11, 'varie', label=r'$x^q$ ($q=4$)', size='s')
+text(ax, 73, 11, r'$x\mapsto x^q$', 'varie', 's')
+save(fig, '67-053')

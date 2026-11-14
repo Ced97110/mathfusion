@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'$(\mathbb{N},\,+,\,0)$', 'sujet', 'xl')
+text(ax, 2, 47, 'ensemble', 'fixe', 's', ha='left')
+f = numberline(ax, 24, 66, 47, 0, 8, arrow_right=True, every=1)
+for v in range(9): disc(ax, f(v), 47, 1.1, 'sujet')
+text(ax, 2, 31, 'opération', 'fixe', 's', ha='left')
+text(ax, 54, 31, r'$(2+3)+4=9=2+(3+4)$', 'resultat', 'm')
+text(ax, 2, 14, 'neutre', 'fixe', 's', ha='left')
+text(ax, 54, 14, r'$0+7=7=7+0$', 'varie', 'm')
+save(fig, '44-069')

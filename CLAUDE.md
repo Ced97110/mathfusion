@@ -17,7 +17,9 @@ Langue de travail et des réponses : français, phrases simples, sans métaphore
 
 ## Règles de budget (prioritaires)
 
-- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Un chapitre par session. Ne jamais enchaîner un second chapitre dans la même session.
+- L'utilisateur est sur un plan Ultra et ne veut pas dépasser 50 % d'utilisation hebdomadaire. Dix chapitres par session, enchaînés sans attendre (décision du 2026-11-12) : une session rédige ses dix chapitres d'un coup, sans s'arrêter entre deux chapitres ni demander s'il faut continuer (s'arrêter seulement sur un vrai blocage : disque plein, PDF absent, construction du site en échec). Commit et push à la fin de chaque chapitre.
+- Plusieurs sessions peuvent tourner en même temps dans ce dossier. Chaque session reçoit une plage de chapitres explicite et n'en sort pas. `next_chapter.py` saute les chapitres qui ont déjà un dossier `book/chNN`. Ne jamais lancer `setup` sur un chapitre dont le dossier existe. Au commit, ajouter seulement les fichiers de son chapitre (`git add book/chNN book/JOURNAL.md content/toc.json public/chapters/chNN.html`), jamais `git add -A`.
+- Travail par branche : une session peut recevoir une branche de `content/branches.json` (par exemple « algèbre abstraite »). Elle fait alors, dans l'ordre, les chapitres de cette branche qui n'ont ni ligne dans `book/JOURNAL.md` ni dossier `book/chNN`, et aucun autre. Avant chaque `setup`, revérifier que le dossier n'existe pas (une autre session a pu le créer entre-temps). Avant `git push`, faire `git pull --rebase`.
 - Chaque sous-agent coûte environ 80 000 tokens au démarrage, quel que soit le travail : peu d'agents, gros lots.
 - Tout ce qui est mécanique passe par les scripts (zéro token).
 - Modèles des sous-agents : **Sonnet** pour concevoir et coder les figures, juger, corriger ; **Haiku** pour la lecture à l'aveugle. Pas d'Opus, sauf si la réussite au premier test tombe sous 75 % (le signaler dans le bilan avant de l'utiliser).
@@ -34,7 +36,7 @@ Toutes les commandes partent de la racine du dépôt, sauf mention contraire.
 5. **Jugement.** `python3 pipe.py judgein`, puis un seul sous-agent Sonnet : « Lis `<…>/judge_prompt.md` et exécute ses instructions en remplaçant {J} par J1. Traite tous les objets et vérifie le nombre d'entrées. »
 6. **Correction.** `python3 pipe.py fixin`, puis un seul sous-agent Sonnet (deux au-delà de 20 figures) : « Lis `<…>/fix_prompt.md` et exécute ses instructions en remplaçant {F} par F1. Lance tes scripts un par un. »
 7. **Contrôle des corrections.** Préparer un jeu aveugle avec les seules figures corrigées (fonction `blind(codes, 'R')` de `pipe.py`), un sous-agent Haiku, puis comparer soi-même les réponses aux phrases « a_dire ». Pas d'agent juge pour une douzaine de lignes.
-8. **Site.** `python3 tools/site.py`, puis `npm install` (si besoin) et `npm run build`. Le site doit se construire sans erreur et `content/toc.json` doit montrer le chapitre N comme fait.
+8. **Site.** Écrire d'abord la ligne du journal (étape 9) : `tools/site.py` ne publie que les chapitres présents dans `book/JOURNAL.md`. Puis `python3 tools/site.py`, puis `npm install` (si besoin) et `npm run build`. Le site doit se construire sans erreur et `content/toc.json` doit montrer le chapitre N comme fait.
 9. **Journal.** Ajouter une entrée à `book/JOURNAL.md` : date, chapitre, nombre de fiches, réussies au premier test, réussies après correction, liste des figures encore partielles avec ce qui manque, tout nombre inventé par un agent, toute couleur du livre changée à cause des rôles.
 10. **Commit et push.** Un commit « Chapitre N : <titre> (<n> fiches) » sur `main`, puis `git push`. Ne pas pousser si la construction du site a échoué.
 11. **Bilan** en réponse finale : les chiffres du journal, en quelques lignes.
@@ -55,3 +57,16 @@ Les dossiers `book/chNN` ne gardent dans Git que les sources (`fiches.json`, `me
 - Chapitres 1 à 4 (ancien réglage, Opus à la conception) : 82 à 91 % de réussite au premier test, environ 40 000 tokens par fiche.
 - Chapitre 5 (réglage de cette procédure) : 94 % au premier test, 99 % après correction, environ 14 600 tokens par fiche.
 - À partir du chapitre 42 (groupes, anneaux, Galois), les concepts sont plus abstraits : surveiller le taux de réussite.
+
+## Second livre : « Avant l'apprentissage automatique »
+
+- Source : `book/source/Avant_l_apprentissage_automatique_cause_effets_finalite.pdf` (5 547 pages, pas dans Git). D'après Jorge Brasil, *Before Machine Learning*, vol. 1 à 3. 14 parties, 119 chapitres, deux textes d'ouverture, un « Contrôle final ».
+- Pas de fiches ni de figures à fabriquer : le livre a déjà ses figures. On le convertit tel quel, sans réécrire le texte.
+- Conversion (zéro token) : `python3 tools/ml/build.py book/source/Avant_l_apprentissage_automatique_cause_effets_finalite.pdf`. Écrit `content/ml.json`, `public/ml/cNNN.html` et `public/ml/img/cNNN/*.svg`. Cache dans `book/ml-work/` (ignoré par Git). `ML_ONLY=002,003` ne refait que ces chapitres.
+- Le texte français et la traduction anglaise (en bleu dans le PDF) restent deux paragraphes distincts (`<p class="en">`). Formules détachées, tableaux, encadrés et figures sont découpés du PDF en SVG.
+- Publication : un commit par chapitre sur `main` (`git add public/ml/cNNN.html public/ml/img/cNNN`), `git pull --rebase` puis `git push`. Le site ne montre que les chapitres dont le fichier est présent.
+- Site : `/apprentissage/` (sommaire) et `/apprentissage/<clé>/` (chapitre), lien « Apprentissage » dans la barre du haut.
+- Découpe des SVG avec PyMuPDF : avec poppler 26.03, `pdftocairo -svg -x/-y` place mal la zone découpée et tronque les figures.
+- Figures interactives (état au 2026-11-13) : seulement le chapitre 2 (figures 2.3, 2.4, 2.5, 2.9), dans `public/ml/fig/c002/`, listées dans `public/ml/fig/index.json` ; aides dans `public/ml/fig/lib.js`. Règles : n'animer que les figures dont le paramètre est le concept du chapitre (pas les figures découpées en plusieurs bandes) ; « Prédis, puis vérifie » (question sur un nouveau cas, curseurs bloqués jusqu'à la réponse) ; l'état de départ reprend exactement les nombres de la légende.
+- Test des figures : `PW=<dossier>/node_modules/playwright-core/index.mjs node tools/ml/test_figures.mjs <url du site construit>` (playwright-core + Chrome installé). Ajouter les valeurs attendues de chaque nouvelle figure dans `FIGS`, recopiées de la légende.
+- Suite : avant d'étendre aux autres chapitres, faire passer un quiz de rétention de 5 questions trois jours après la lecture, version fixe contre version interactive. Le site n'a aucune mesure d'usage : volontaires, ou outil à choisir par l'utilisateur. Rendu sur téléphone non vérifié.

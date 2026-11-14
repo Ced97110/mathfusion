@@ -1,0 +1,348 @@
+[
+ {
+  "code": "70-031",
+  "a_dire": "La racine commune 2 donne le triplet 4, 2, 1 : ses trois valeurs sont le carré de 2, 2 et 1, et il vérifie les trois lignes.",
+  "legende_titre": "De la racine 2 au triplet 4, 2, 1",
+  "lecture": [
+   "Le cadre bleu en haut est la racine commune 2.",
+   "Les trois cases vertes sont les trois valeurs du triplet : 4, 2, 1, avec au-dessus ce que chacune est (le carré de la racine, la racine, 1).",
+   "Les trois lignes vertes du bas vérifient les trois lignes du système avec 4, 2, 1 : chacune donne 0."
+  ],
+  "a_voir": "Les trois valeurs viennent de la même racine, et la dernière vaut 1 : le triplet n'est pas 0, 0, 0."
+ },
+ {
+  "code": "70-032",
+  "a_dire": "Un système à second membre nul a toujours la solution 0 et 0 ; le système 1 en a une autre (1 et moins 1), le système 2 n'en a pas.",
+  "legende_titre": "Deux systèmes, une solution toujours là",
+  "lecture": [
+   "Le point gris au centre de chaque plan est la solution 0 et 0, présente dans les deux systèmes.",
+   "À gauche, les deux équations tracent la même droite verte : le point 1, moins 1 est dessus.",
+   "À droite, les deux équations tracent deux droites grises qui se coupent seulement au centre."
+  ],
+  "a_voir": "Une seule droite laisse d'autres solutions ; deux droites différentes ne laissent que 0 et 0."
+ },
+ {
+  "code": "70-033",
+  "a_dire": "Quand le déterminant n'est pas nul, un système à second membre nul n'a que la solution 0 et 0 ; il a une autre solution quand le déterminant vaut 0.",
+  "legende_titre": "Déterminant et solutions du système",
+  "lecture": [
+   "À gauche, le tableau bleu a pour déterminant moins 2 : la seule solution est 0 et 0.",
+   "À droite, le tableau violet a pour déterminant 0 : le couple 1, moins 1 est aussi solution.",
+   "La ligne pointillée sépare les deux cas, tous deux à second membre nul."
+  ],
+  "a_voir": "Seul le tableau de déterminant nul laisse une solution qui n'est pas 0 et 0."
+ },
+ {
+  "code": "70-034",
+  "a_dire": "Une racine commune donne la solution 4, 2, 1 en plus de 0, 0, 0 ; avec deux solutions, le déterminant du tableau est 0 (4 moins 10 plus 6).",
+  "legende_titre": "La chaîne qui mène au déterminant nul",
+  "lecture": [
+   "Le tableau de gauche a trois lignes : f en bleu, y fois g en orange, g en violet, sous les colonnes y², y et 1.",
+   "La racine commune 2 donne la solution 2², 2, 1, soit 4, 2, 1 (cadre vert) ; 0, 0, 0 (cadre gris) est aussi une solution.",
+   "Deux solutions mènent à la case verte : le déterminant est 0, et le calcul 4 moins 10 plus 6 le confirme."
+  ],
+  "a_voir": "La racine commune donne la solution 4, 2, 1 en plus de 0, 0, 0 : deux solutions, donc déterminant 0."
+ },
+ {
+  "code": "70-035",
+  "a_dire": "La grille 3 sur 3 range la ligne de f et la ligne de g écrite deux fois, la seconde décalée, sous les colonnes y², y, 1 ; les cases grises valent 0.",
+  "legende_titre": "La grille 3 × 3 de f et g",
+  "lecture": [
+   "La ligne bleue est f : a₂, a₁, a₀ sous y², y et y⁰.",
+   "Les deux lignes violettes sont g écrite deux fois : la flèche orange montre que b₁ et b₀ sont décalés d'une case entre la ligne du milieu et celle du bas.",
+   "Les cases grises à 0 apparaissent à cause de ce décalage.",
+   "Le déterminant de cette grille est le résultant de f et g."
+  ],
+  "a_voir": "La ligne de g est écrite deux fois, la seconde décalée d'une colonne, et laisse des 0."
+ },
+ {
+  "code": "70-036",
+  "a_dire": "Une seule écriture, a_n y^n + … + a_0, donne un polynôme de n'importe quel degré n ; les points remplacent les termes du milieu.",
+  "legende_titre": "Un polynôme de degré quelconque",
+  "lecture": [
+   "La ligne du haut est l'écriture générale : premier terme et dernier terme en bleu, les points en orange pour les termes du milieu.",
+   "Les lignes n = 2 et n = 3 reprennent la même écriture : les termes du milieu en orange sont plus nombreux quand n grandit.",
+   "Le texte du haut dit que g s'écrit de la même façon avec b et m."
+  ],
+  "a_voir": "Le premier terme et le dernier restent ; seuls les termes du milieu changent de nombre."
+ },
+ {
+  "code": "70-037",
+  "a_dire": "La matrice de Sylvester est un tableau carré : autant de lignes que de colonnes, m + n.",
+  "legende_titre": "Un tableau qui a autant de lignes que de colonnes",
+  "lecture": [
+   "Le tableau gris de gauche a 2 lignes et 2 colonnes (cas de deux droites).",
+   "Le tableau gris du milieu a 3 lignes et 3 colonnes, avec m + n égal à 3.",
+   "Le tableau bleu de droite est la matrice de Sylvester en général : m + n lignes et m + n colonnes."
+  ],
+  "a_voir": "Dans chaque tableau, le nombre de lignes est égal au nombre de colonnes."
+ },
+ {
+  "code": "70-038",
+  "a_dire": "Le tableau a m lignes de f et n lignes de g, chacune décalée d'une case, et les cases restantes valent 0 ; il s'arrête quand il est carré.",
+  "legende_titre": "Remplir le tableau ligne par ligne",
+  "lecture": [
+   "Les deux barres bleues sont les deux lignes de f : 1, 2, 3, 4, la seconde décalée d'une case vers la droite.",
+   "Les trois barres violettes sont les trois lignes de g : 1, 5, 6, décalées d'une case à chaque ligne.",
+   "Les cases grises sans barre valent 0.",
+   "Il y a 5 lignes et 5 colonnes."
+  ],
+  "a_voir": "Chaque barre glisse d'une case vers la droite par rapport à la précédente."
+ },
+ {
+  "code": "70-039",
+  "a_dire": "Le résultant de f et g par rapport à y est le déterminant du tableau de Sylvester de f et g.",
+  "legende_titre": "Du tableau de f et g au résultant",
+  "lecture": [
+   "Le tableau a pour lignes f en bleu, puis y fois g et g en violet.",
+   "Les deux barres verticales grises marquent que l'on en prend le déterminant.",
+   "La flèche orange mène à la case verte : le résultant, ici 0."
+  ],
+  "a_voir": "Le résultant n'est pas une formule à part : c'est le déterminant de ce tableau précis."
+ },
+ {
+  "code": "70-040",
+  "a_dire": "Décaler une ligne d'une case vers la gauche, c'est multiplier le polynôme par y.",
+  "legende_titre": "Un décalage est une multiplication",
+  "lecture": [
+   "La ligne du bas, en bleu, est g égal à y moins 1 : ses nombres sont 1 et moins 1.",
+   "La ligne du haut, en orange, est y fois g : ses nombres sont 1, moins 1, 0.",
+   "Chaque flèche orange fait passer un nombre d'une colonne à la colonne de gauche, celle d'une puissance de y plus grande."
+  ],
+  "a_voir": "Chaque nombre monte d'une puissance de y : il passe à la colonne de gauche."
+ },
+ {
+  "code": "70-041",
+  "a_dire": "Le résultant est nul dans deux cas : les deux coefficients de tête sont nuls, ou f et g ont un facteur commun de degré au moins 1.",
+  "legende_titre": "Les deux cas où le résultant est nul",
+  "lecture": [
+   "Le cadre bleu du haut est le résultant égal à 0 ; deux flèches mènent aux deux cas, séparés par « ou ».",
+   "Le cadre orange est le cas 1 : les deux coefficients de tête sont nuls ; le tableau dessous a le nombre x dans sa colonne orange, celle des coefficients de tête.",
+   "Le déterminant du tableau vaut moins x : il est nul pour x égal à 0.",
+   "Le cadre violet est le cas 2 : un facteur commun de degré au moins 1 ; f et g ont chacune ce facteur, donc une racine commune."
+  ],
+  "a_voir": "Le résultant est nul dans deux cas : coefficients de tête nuls, ou facteur commun."
+ },
+ {
+  "code": "70-042",
+  "a_dire": "Si les deux coefficients de tête sont nuls, la première colonne du tableau ne contient que des zéros et le résultant vaut 0.",
+  "legende_titre": "Une colonne de zéros",
+  "lecture": [
+   "La colonne orange à gauche ne contient que des 0.",
+   "Les nombres a_n et b_m à gauche du tableau sont les deux premiers 0 de cette colonne : ils sont nuls.",
+   "Les autres cases gardent leurs nombres : 3, 2 sur la ligne bleue, 5 sur les lignes violettes.",
+   "La flèche mène au résultant, égal à 0."
+  ],
+  "a_voir": "Une colonne entière de zéros rend le déterminant nul."
+ },
+ {
+  "code": "70-043",
+  "a_dire": "Le second cas demande un facteur commun de degré au moins 1 : des constantes comme 2 et 3 ne comptent pas, et le résultant vaut alors 6, pas 0.",
+  "legende_titre": "Un facteur de degré 0 ne suffit pas",
+  "lecture": [
+   "Les cases grises 2 et 3 sont les constantes de f et de g : des facteurs de degré 0.",
+   "Les cases bleue et violette y plus 1 et y plus 2 sont ce qui reste de f et de g.",
+   "Le tableau 2 sur 2 en bas à gauche donne le calcul 2 fois 6 moins 2 fois 3.",
+   "La case verte montre le résultat : 6, qui n'est pas 0."
+  ],
+  "a_voir": "Des constantes sont des facteurs communs à tout polynôme, mais le résultant n'est pas nul pour autant."
+ },
+ {
+  "code": "70-044",
+  "a_dire": "Un facteur commun de degré au moins 1 donne une racine commune, qui peut être un nombre complexe et non réel.",
+  "legende_titre": "Une racine commune hors des nombres réels",
+  "lecture": [
+   "À gauche, la courbe bleue du facteur commun y² plus 1 ne touche jamais l'axe : aucune racine réelle.",
+   "À droite, le plan des nombres complexes place en vert les deux racines i et moins i, sur l'axe vertical.",
+   "Le texte du bas rappelle que le carré de i vaut moins 1."
+  ],
+  "a_voir": "La courbe ne coupe pas l'axe, et pourtant le facteur a deux racines, dans les nombres complexes."
+ },
+ {
+  "code": "70-045",
+  "a_dire": "Si f et g ont un facteur commun h, alors f fois g₁ et g fois f₁ sont le même produit, et leur différence vaut 0.",
+  "legende_titre": "Du facteur commun à une différence nulle",
+  "lecture": [
+   "La ligne du haut est f fois g₁ : f₁ en bleu, le facteur commun h en gris, g₁ en violet.",
+   "La ligne du bas est g fois f₁ : les mêmes trois blocs dans un autre ordre.",
+   "Le signe égal vert dit que les deux produits sont égaux ; leur différence est 0."
+  ],
+  "a_voir": "Les trois mêmes blocs, dans un autre ordre, donnent le même produit."
+ },
+ {
+  "code": "70-046",
+  "a_dire": "Si le résultant est nul, f divise g fois f₁ ; comme f₁ est trop petit pour contenir tous les facteurs de f, un facteur de f divise g.",
+  "legende_titre": "Où passe le facteur de f",
+  "lecture": [
+   "Le titre dit que f divise g fois f₁ ; la ligne du haut donne les facteurs de f : y moins 1 en vert, y moins 2 en bleu.",
+   "La ligne du milieu donne le produit g fois f₁ : g en vert et violet, f₁ en bleu, trop petit pour contenir y moins 1.",
+   "La flèche verte relie y moins 1 de f à y moins 1 de g : ce facteur vient de g.",
+   "Le cadre du bas conclut : un facteur de f divise g."
+  ],
+  "a_voir": "f divise g f₁, f₁ est trop petit : un facteur de f divise donc g."
+ },
+ {
+  "code": "70-047",
+  "a_dire": "Le résultant se calcule en prenant toutes les paires (une racine de f, une racine de g), leurs différences, puis leur produit.",
+  "legende_titre": "Le résultant par les racines",
+  "lecture": [
+   "Sur la droite, les deux disques bleus sont les racines de f (1 et 2) et le disque violet est la racine de g (3).",
+   "Chaque case grise est une paire ; la case orange à droite est sa différence : moins 2 et moins 1.",
+   "La case verte multiplie les différences : le produit vaut 2.",
+   "Le texte du bas dit que le facteur devant vaut 1 et que le tableau donne aussi 2."
+  ],
+  "a_voir": "On forme les paires, on fait les différences, puis on les multiplie."
+ },
+ {
+  "code": "70-048",
+  "a_dire": "Le produit des différences est nul exactement quand une paire a deux racines égales, c'est-à-dire une racine de f égale à une racine de g.",
+  "legende_titre": "Quand le produit s'annule",
+  "lecture": [
+   "Les lignes bleues r égale 1 et r égale 2 sont les racines de f ; les colonnes violettes s égale 2 et s égale 3 sont les racines de g.",
+   "Chaque case grise est la différence r moins s d'une paire.",
+   "La case orange vaut 0 : c'est la paire 2, 2.",
+   "La case verte du bas dit que le produit est alors 0."
+  ],
+  "a_voir": "Une seule différence nulle suffit à rendre le produit nul."
+ },
+ {
+  "code": "70-049",
+  "a_dire": "La formule produit et le tableau donnent le même nombre, moins 1 ; le tableau ne demande aucune racine.",
+  "legende_titre": "Le même nombre par deux chemins",
+  "lecture": [
+   "À gauche, le cadre bleu calcule avec les racines : le produit des différences, avec la racine carrée de 2, vaut moins 1.",
+   "À droite, le tableau violet est écrit avec les seuls coefficients, sans racine ; son déterminant vaut moins 1.",
+   "La case verte du bas dit que les deux chemins donnent le même nombre."
+  ],
+  "a_voir": "Le tableau évite la racine carrée de 2 et donne pourtant moins 1."
+ },
+ {
+  "code": "70-050",
+  "a_dire": "Quand g est de degré 1, le résultant est b₁ puissance n fois f de s, où s est la racine de g : la racine ne change pas, seul le facteur change.",
+  "legende_titre": "Le résultant avec g de degré 1",
+  "lecture": [
+   "La courbe bleue est f ; le trait vert est la valeur de f en s égal 3, c'est-à-dire 2.",
+   "Le cadre bleu du haut est g égal à y moins 3, avec b₁ égal à 1 : le résultant est 1 au carré fois 2, soit 2.",
+   "Le cadre violet du bas est g égal à 2y moins 6, avec b₁ égal à 2 : le résultant est 2 au carré fois 2, soit 8.",
+   "Les deux g ont la même racine 3."
+  ],
+  "a_voir": "La valeur de f en 3 reste 2 ; seul le facteur b₁ au carré change le résultat."
+ },
+ {
+  "code": "70-051",
+  "a_dire": "Quand g est de degré 1, le résultant est le remplacement du jardinier : on remplace y par s dans f, puis on multiplie par une constante.",
+  "legende_titre": "Le résultant est un remplacement",
+  "lecture": [
+   "La courbe violette est l'allée : à la position x, sa hauteur est s égal x² moins 2 ; le trait orange est cette hauteur.",
+   "Les quatre cadres de droite se suivent de haut en bas : l'équation du cercle f de x et y, le remplacement de y par s, la constante qui vaut 1, puis le résultat.",
+   "Le cadre vert donne le résultat : x puissance 4 moins 3 fois x²."
+  ],
+  "a_voir": "Le résultat s'obtient en mettant la hauteur s à la place de y dans f."
+ },
+ {
+  "code": "70-052",
+  "a_dire": "Une racine double r annule f et sa dérivée f′ ; c'est une racine commune de f et f′, donc le résultant de f et f′ vaut 0.",
+  "legende_titre": "La racine double, racine commune de f et f′",
+  "lecture": [
+   "La courbe bleue est f : elle touche l'axe en 2.",
+   "La droite violette est f′ : elle coupe l'axe au même point 2.",
+   "Le disque vert marque r égal 2 ; en bas, f de 2 et f′ de 2 valent tous deux 0.",
+   "Le cadre vert du haut dit que le résultant de f et f′ est alors 0."
+  ],
+  "a_voir": "Les deux courbes passent par le même point de l'axe, la racine double 2."
+ },
+ {
+  "code": "70-053",
+  "a_dire": "Le tableau de f égal ax² plus bx plus c et de sa dérivée a pour lignes a, b, c ; 2a, b, 0 ; 0, 2a, b.",
+  "legende_titre": "Le tableau de f et de f′",
+  "lecture": [
+   "La ligne bleue est f : a, b, c.",
+   "La ligne violette du milieu est f′ : 2a, b, suivi d'un 0.",
+   "La ligne violette du bas est f′ décalée d'une case : 0, 2a, b.",
+   "Le texte du bas donne le cas chiffré : a, b, c valent 1, moins 4, 4."
+  ],
+  "a_voir": "Une ligne pour f, deux lignes pour f′ décalées d'une case."
+ },
+ {
+  "code": "70-054",
+  "a_dire": "Pour un déterminant 3 sur 3, on prend chaque nombre de la première ligne, on le multiplie par le petit déterminant qui reste, avec les signes plus, moins, plus.",
+  "legende_titre": "Développer par la première ligne",
+  "lecture": [
+   "Les trois cases orange du haut sont les nombres de la première ligne : 1, moins 4, 4.",
+   "Sous chacune, la case bleue montre le petit tableau qui reste quand on barre sa ligne et sa colonne, avec sa valeur : 16, moins 8, 4.",
+   "Chaque terme écrit dessous porte son signe : plus, moins, plus.",
+   "La case verte additionne les trois termes : 16 moins 32 plus 16 donne 0."
+  ],
+  "a_voir": "Chaque nombre de la première ligne a son petit tableau et son signe."
+ },
+ {
+  "code": "70-055",
+  "a_dire": "Le déterminant se développe en trois termes dont la somme est moins a fois (b² moins 4ac) ; la forme du résultat ne change pas quand on change a, b, c.",
+  "legende_titre": "Le résultat du développement",
+  "lecture": [
+   "Les trois cases orange sont les trois termes du développement : ab², moins 2ab², plus 4a²c.",
+   "La case bleue est leur somme.",
+   "La case verte factorise la somme : moins a fois (b² moins 4ac).",
+   "Les deux cases grises du bas essaient deux cas : 1, moins 4, 4 donne 0 ; 1, moins 3, 2 donne moins 1."
+  ],
+  "a_voir": "La même formule donne 0 ou moins 1 selon les nombres a, b, c."
+ },
+ {
+  "code": "70-056",
+  "a_dire": "Le discriminant est le résultant de f et f′ à un facteur moins a près ; ils sont nuls en même temps.",
+  "legende_titre": "Discriminant et résultant",
+  "lecture": [
+   "La flèche bleue part de 0 jusqu'à 1 : c'est le discriminant, qui vaut 1.",
+   "La flèche violette part de 0 jusqu'à moins 1 : c'est le résultant de f et f′, qui vaut moins 1.",
+   "L'arc orange passe de l'un à l'autre : on multiplie par moins a, ici moins 1.",
+   "Le texte vert du bas dit qu'ils sont nuls en même temps."
+  ],
+  "a_voir": "Les deux nombres sont opposés quand a vaut 1 : l'un est le résultat de l'autre multiplié par moins a."
+ },
+ {
+  "code": "70-057",
+  "a_dire": "Quand le discriminant est nul, la courbe touche l'axe horizontal avec une tangente horizontale : f et f′ s'annulent en même temps.",
+  "legende_titre": "Le discriminant nul sur la courbe",
+  "lecture": [
+   "La courbe bleue est y égale f de x ; elle touche l'axe horizontal en 2 sans le traverser.",
+   "Le disque vert marque ce point : f de r égale 0.",
+   "Le trait orange sur l'axe est la tangente horizontale : à cet endroit f′ de r égale 0."
+  ],
+  "a_voir": "La courbe est sur l'axe et à plat au même endroit."
+ },
+ {
+  "code": "70-058",
+  "a_dire": "Le carré de la différence des racines, r₁ moins r₂, au carré, et le discriminant sont deux vues du même nombre ; le résultant est leur lien au facteur moins a.",
+  "legende_titre": "Deux vues du même nombre",
+  "lecture": [
+   "Les deux disques bleus de la droite graduée sont les racines r₁ égale 1 et r₂ égale 2 ; la flèche orange est leur différence, moins 1.",
+   "Le carré bleu a pour côté une unité : son aire est le carré de la différence, 1.",
+   "Le cadre vert dit que le discriminant vaut aussi 1, le cadre violet que le résultant de f et f′ vaut moins 1, le cadre gris que moins a fois 1 donne moins 1 avec a égal 1."
+  ],
+  "a_voir": "Le carré de la différence et le discriminant valent 1 ; le résultant vaut moins 1."
+ },
+ {
+  "code": "70-059",
+  "a_dire": "Res_y(f, g) se lit « résultant de f et g par rapport à y » : y en indice est l'inconnue qui disparaît.",
+  "legende_titre": "Lire le symbole Res avec y en indice",
+  "lecture": [
+   "Le mot bleu Res est le résultant.",
+   "La petite lettre orange y sous le mot est l'inconnue éliminée.",
+   "Les parenthèses violettes contiennent les deux polynômes f et g.",
+   "En bas, f et g contiennent x et y ; il reste un polynôme en x."
+  ],
+  "a_voir": "La lettre en indice dit quelle inconnue disparaît."
+ },
+ {
+  "code": "70-060",
+  "a_dire": "a_n est le nombre qui multiplie la plus haute puissance de y dans f ; ici n vaut 2 et a_n vaut 3.",
+  "legende_titre": "Lire le symbole a_n",
+  "lecture": [
+   "La case bleue 3 est le nombre devant la plus haute puissance : c'est a_n.",
+   "La case grise y² est cette plus haute puissance ; son exposant 2 est n.",
+   "Les cases grises plus 5y et plus 7 sont les autres termes de f.",
+   "Les deux flèches relient chaque case à ce qu'elle est : le coefficient de tête et l'exposant."
+  ],
+  "a_voir": "a_n est le 3, le nombre qui se trouve devant y²."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+# deux chemins en deux étapes, qui arrivent au même objet
+box(ax, 3, 62, 36, 14, 'sujet', label='chapitre 57 :\nun module sur\nun anneau', size='s')
+box(ax, 49, 62, 36, 14, 'autre', label='Judson :\nsans parler\nd’anneau', size='s')
+arrow(ax, (21, 62), (21, 47), 'varie', lw=1.4)
+text(ax, 23.5, 54.5, 'l’anneau\nest un corps', 'varie', 's', ha='left')
+arrow(ax, (67, 62), (67, 47), 'varie', lw=1.4)
+text(ax, 69.5, 54.5, 'définition\ndirecte', 'varie', 's', ha='left')
+box(ax, 3, 34, 36, 12, 'sujet', label='un module\nsur un corps', size='s')
+box(ax, 49, 34, 36, 12, 'autre', label='une liste\nde règles', size='s')
+arrow(ax, (21, 34), (30, 18), 'resultat', lw=1.4)
+arrow(ax, (67, 34), (58, 18), 'resultat', lw=1.4)
+box(ax, 14, 4, 60, 13, 'resultat', label='le même objet :\nespace vectoriel', size='m', weight='bold')
+save(fig, '58-075')

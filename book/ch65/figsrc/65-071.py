@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 22, 62, 44, 10, 'sujet', label=r'$x^3 - 2$', size='l')
+text(ax, 44, 54, r'$d = -27 \times 4 = -108$', 'varie', 'm')
+f = numberline(ax, 8, 72, 34, -120, 120, 40, arrow_right=True, every=1)
+poly(ax, [(f(0), 35), (f(120) + 3, 35), (f(120) + 3, 39), (f(0), 39)], 'resultat')
+text(ax, f(60), 43, 'carrés : toujours ≥ 0', 'resultat', 's')
+disc(ax, f(-108), 34, 2.0, 'varie')
+text(ax, f(-108) + 1, 43, r'$d$', 'varie', 's')
+text(ax, 44, 20, 'aucun carré n’est négatif', 'fixe', 's')
+box(ax, 8, 3, 72, 10, 'resultat', label=r'irréductible et $d$ non carré : $S_3$', size='s')
+save(fig, '65-071')

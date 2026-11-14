@@ -1,0 +1,224 @@
+[
+ {
+  "code": "13-129",
+  "a_dire": "Le produit avec 0 est le pivot : les produits traversent 0 quand le premier nombre passe de 1 à −1.",
+  "legende_titre": "Une suite de produits par −2",
+  "lecture": [
+   "Les trois cases orange du haut sont le premier nombre : 1, 0, −1. Il diminue de 1 à chaque flèche.",
+   "Les cases du bas sont les produits avec −2 : −2, 0, 2.",
+   "La case verte du milieu est le produit 0 × (−2) = 0."
+  ],
+  "a_voir": "Le produit passe du négatif au positif en passant par 0."
+ },
+ {
+  "code": "13-130",
+  "a_dire": "a ÷ 0 n'existe pas, que a soit positif ou négatif : l'obstacle vient du diviseur 0.",
+  "legende_titre": "Deux divisions par 0",
+  "lecture": [
+   "À gauche en bleu, tu cherches 12 ÷ 0. À droite, −12 ÷ 0.",
+   "Pour chacune, la case grise rappelle que 0 × c vaut 0, quel que soit c.",
+   "Les cases rouges montrent que 0 n'est égal ni à 12 ni à −12."
+  ],
+  "a_voir": "Les deux colonnes sont identiques : le signe du premier nombre ne change rien."
+ },
+ {
+  "code": "13-131",
+  "a_dire": "Dans −|−3|, les barres ne portent que sur ce qui est entre elles ; le trait extérieur prend l'opposé.",
+  "legende_titre": "Un trait dehors, un nombre entre les barres",
+  "lecture": [
+   "La case orange est le trait extérieur aux barres.",
+   "La case bleue est ce qui est entre les barres : −3.",
+   "En vert, |−3| vaut 3, puis la flèche orange prend l'opposé : −3."
+  ],
+  "a_voir": "Les barres agissent sur −3 seulement, puis le trait extérieur donne −3."
+ },
+ {
+  "code": "13-132",
+  "a_dire": "Le produit (−1) × (−1) ne se choisit pas : décréter −1 contredit la distributivité.",
+  "legende_titre": "Un choix qui mène à une contradiction",
+  "lecture": [
+   "La case bleue du haut est (−1) × (1 + (−1)), calculé de deux façons.",
+   "À gauche en vert, 1 + (−1) = 0 donne (−1) × 0 = 0.",
+   "À droite en orange, avec (−1) × (−1) = −1 décrété, on obtient −2.",
+   "La case rouge en bas montre 0 = −2, qui est faux."
+  ],
+  "a_voir": "Les deux calculs du même nombre donnent 0 et −2 : le choix est impossible."
+ },
+ {
+  "code": "13-133",
+  "a_dire": "(−1) × (−1) = 1 se prouve avec les couples : (0, 1) × (0, 1) = (1, 0).",
+  "legende_titre": "Le produit de deux négatifs en couples",
+  "lecture": [
+   "La case bleue du haut est le produit du couple (0, 1) par lui-même.",
+   "La case orange remplace a, b, c, d par 0, 1, 0, 1 dans la formule du produit.",
+   "La case verte du bas est (1, 0), qui est le nombre 1."
+  ],
+  "a_voir": "Le calcul n'utilise que des produits et des sommes d'entiers, aucun signe."
+ },
+ {
+  "code": "13-134",
+  "a_dire": "2 × (−3) = −6 se calcule avec les couples : (2, 0) × (0, 3) = (0, 6).",
+  "legende_titre": "Un positif fois un négatif en couples",
+  "lecture": [
+   "La case bleue est 2, écrit (2, 0). La case violette est −3, écrit (0, 3).",
+   "La case orange applique la formule du produit à ces deux couples.",
+   "La case verte est (0, 6) : j'ai 0 et je dois 6, donc −6."
+  ],
+  "a_voir": "Le signe vient de la place du 6, à la seconde place du couple."
+ },
+ {
+  "code": "13-135",
+  "a_dire": "La règle des signes est un fait à constater avec les couples, non une contrainte à accepter.",
+  "legende_titre": "Une règle acceptée ou constatée",
+  "lecture": [
+   "À gauche en orange, pour garder la distributivité, tu dois accepter (−1) × (−1) = 1.",
+   "À droite en violet, les couples donnent (0, 1) × (0, 1) = (1, 0) sans choix.",
+   "Les deux flèches vertes arrivent à la même règle des signes."
+  ],
+  "a_voir": "Un côté accepte une règle, l'autre la constate."
+ },
+ {
+  "code": "13-136",
+  "a_dire": "Multiplier un couple par (0, 0) donne (0, 0) : on ne garde rien du couple de départ.",
+  "legende_titre": "Tout couple tombe sur (0, 0)",
+  "lecture": [
+   "Les points sont des couples ; la ligne grise en tirets est la droite de 0.",
+   "Le point bleu est (3, 5) et le point violet est un couple (a, b) quelconque.",
+   "Les flèches orange, × (0, 0), arrivent toutes au point vert (0, 0)."
+  ],
+  "a_voir": "Deux départs différents arrivent au même point : on ne retrouve pas le départ."
+ },
+ {
+  "code": "13-137",
+  "a_dire": "On ne simplifie pas par 0 : 3 × 0 et 5 × 0 sont égaux, mais 3 et 5 ne le sont pas.",
+  "legende_titre": "Pourquoi z doit être différent de 0",
+  "lecture": [
+   "La case bleue est 3 × 0 et la case violette est 5 × 0.",
+   "Les deux flèches arrivent au même résultat vert : 0.",
+   "La case rouge dit que 3 et 5 sont pourtant différents."
+  ],
+  "a_voir": "Le même résultat 0 vient de 3 et de 5 : le nombre de départ est perdu."
+ },
+ {
+  "code": "13-138",
+  "a_dire": "Dans 2 puissance −3, le trait est un opposé : cela vaut 1 ÷ 2 puissance 3.",
+  "legende_titre": "Le trait dans l'exposant",
+  "lecture": [
+   "En haut en bleu, 2³ est 2 × 2 × 2 : trois facteurs égaux à 2.",
+   "La flèche orange change l'exposant 3 en son opposé −3.",
+   "La case verte montre que 2 puissance −3 vaut 1 ÷ 2³."
+  ],
+  "a_voir": "Le trait garde son sens : prendre l'opposé, ici de l'exposant."
+ },
+ {
+  "code": "13-139",
+  "a_dire": "x + 5 = 2 se résout en ajoutant −5 des deux côtés : x = −3.",
+  "legende_titre": "Ajouter le même nombre des deux côtés",
+  "lecture": [
+   "La ligne du haut est x + 5 = 2.",
+   "Les deux flèches orange ajoutent −5 à gauche et à droite.",
+   "La ligne du bas est x = −3 : à gauche 5 + (−5) = 0, à droite 2 + (−5) = −3."
+  ],
+  "a_voir": "Le même nombre est ajouté des deux côtés, donc l'égalité reste vraie."
+ },
+ {
+  "code": "13-140",
+  "a_dire": "Multiplier par un négatif renverse le sens d'une inégalité : 2 < 3 donne −2 > −3.",
+  "legende_titre": "Le retournement de la droite",
+  "lecture": [
+   "Les points bleus sont 2 et 3 sur la droite. Les points orange sont −2 et −3.",
+   "Chaque arc orange envoie un point bleu sur son opposé, de l'autre côté de 0.",
+   "En haut, 2 < 3 est à gauche en bleu, −2 > −3 est à droite en orange."
+  ],
+  "a_voir": "Les points changent de côté, donc l'ordre est renversé."
+ },
+ {
+  "code": "13-141",
+  "a_dire": "Un carré est toujours positif, donc aucun carré ne vaut un négatif comme −9 parmi les réels.",
+  "legende_titre": "Des carrés, tous positifs ou nuls",
+  "lecture": [
+   "Les trois cases vertes sont les carrés de 3, de −3 et de 0 : 9, 9 et 0.",
+   "Sur la droite, le trait vert épais couvre les valeurs possibles d'un carré, de 0 à droite.",
+   "Le point rouge est −9 : il est hors du trait vert."
+  ],
+  "a_voir": "Aucun carré ne tombe à gauche de 0, donc aucun ne vaut −9."
+ },
+ {
+  "code": "13-142",
+  "a_dire": "Les propriétés des réels, comme la commutativité, restent vraies pour les négatifs.",
+  "legende_titre": "La même propriété, avec des négatifs",
+  "lecture": [
+   "La colonne grise est 3 + 5 = 5 + 3 : 8 dans les deux cas.",
+   "La colonne bleue est 3 + (−5) = (−5) + 3 : −2 dans les deux cas.",
+   "Les flèches orange échangent l'ordre ; les flèches vertes donnent le même résultat."
+  ],
+  "a_voir": "Échanger l'ordre ne change pas le résultat, avec ou sans négatifs."
+ },
+ {
+  "code": "13-143",
+  "a_dire": "La valeur absolue note la taille d'un écart sans dire de quel côté.",
+  "legende_titre": "Deux erreurs de même taille",
+  "lecture": [
+   "Les points violets sont les valeurs prévues : 12 et 18. Le point bleu est la valeur affichée : 15.",
+   "Chaque accolade verte mesure l'écart entre prévu et affiché : 3.",
+   "La ligne du bas écrit les deux écarts avec la valeur absolue."
+  ],
+  "a_voir": "Les deux erreurs sont de même taille, d'un côté ou de l'autre."
+ },
+ {
+  "code": "13-144",
+  "a_dire": "Une relation d'équivalence découpe les couples en morceaux : les droites obliques sont ces morceaux.",
+  "legende_titre": "Les droites obliques comme morceaux",
+  "lecture": [
+   "Chaque point est un couple. Chaque droite oblique grise regroupe des couples équivalents.",
+   "La droite bleue épaisse porte (0, 2), (1, 3) et (3, 5).",
+   "Ces trois couples sont dans le même morceau."
+  ],
+  "a_voir": "Une droite oblique est un morceau de l'ensemble des couples."
+ },
+ {
+  "code": "13-145",
+  "a_dire": "Une classe est un morceau entier de couples équivalents, que l'on traite comme un seul objet.",
+  "legende_titre": "Un morceau vu comme un seul objet",
+  "lecture": [
+   "Le grand cadre bleu regroupe (1, 3), (0, 2) et (2, 4) : un seul nombre, −2.",
+   "Le cadre violet regroupe (3, 1) et (4, 2) : un autre morceau, 2.",
+   "Aucun couple n'est dans les deux cadres."
+  ],
+  "a_voir": "Les cadres sont séparés : chaque couple est dans une seule classe."
+ },
+ {
+  "code": "13-146",
+  "a_dire": "La règle des signes vaut dans tout anneau, car elle découle de la distributivité.",
+  "legende_titre": "Une règle valable dans tout anneau",
+  "lecture": [
+   "Le grand cadre violet en tirets est « tout anneau ».",
+   "La case bleue ℤ est un cas : les entiers.",
+   "La case grise, la distributivité, mène par la flèche verte à (−1) × (−1) = 1."
+  ],
+  "a_voir": "La règle vient de la distributivité, donc elle vaut partout où celle-ci vaut."
+ },
+ {
+  "code": "13-147",
+  "a_dire": "Les fractions se construisent par la même méthode : deux couples sont équivalents quand les produits en croix sont égaux.",
+  "legende_titre": "Le même procédé, une autre opération",
+  "lecture": [
+   "À gauche en bleu, (3, 5) et (10, 12) sont équivalents car 3 + 12 = 5 + 10.",
+   "À droite en violet, (1, 2) et (2, 4) sont équivalents car 1 × 4 = 2 × 2.",
+   "Seule l'opération change : somme à gauche, produit à droite."
+  ],
+  "a_voir": "Le procédé est le même, avec la multiplication à la place de l'addition."
+ },
+ {
+  "code": "13-148",
+  "a_dire": "Aucun des nombres testés n'a pour carré −1 ; cela ne dit pas si un tel nombre existe ailleurs.",
+  "legende_titre": "Cherche un carré égal à −1",
+  "lecture": [
+   "La rangée bleue est les cinq nombres testés : 1, −1, 0, 2, −2.",
+   "La rangée verte est leurs carrés : 1, 1, 0, 4, 4.",
+   "La case grise en tirets avec « ? » représente les autres nombres, non testés.",
+   "La case rouge en tirets est la valeur cherchée, −1 : elle n’apparaît pas parmi ces cinq carrés."
+  ],
+  "a_voir": "Aucun des cinq carrés ne vaut −1, mais les autres nombres ne sont pas testés."
+ }
+]

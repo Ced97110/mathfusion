@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig,ax=canvas(86)
+ox,oy,s=44,60,15
+P=lambda a,b:(ox+a*s,oy+b*s)
+poly(ax,[P(-1.5,-1.5),P(1.5,-1.5),P(1.5,1.5),P(-1.5,1.5)],'resultat')
+line(ax,[P(-1.5,0),P(1.5,0)],'sujet',lw=2.2); line(ax,[P(0,-1.5),P(0,1.5)],'autre',lw=2.2)
+disc(ax,*P(1,0),1.3,'sujet'); disc(ax,*P(0,1),1.3,'autre'); disc(ax,*P(1,1),1.5,'resultat')
+line(ax,[P(1,0),P(1,1)],'fixe',dash=True); line(ax,[P(0,1),P(1,1)],'fixe',dash=True)
+text(ax,P(1,0)[0],P(1,0)[1]-4,'(1, 0)','sujet','s'); text(ax,P(0,1)[0]-8,P(0,1)[1]+3,'(0, 1)','autre','s')
+text(ax,P(1,1)[0],P(1,1)[1]+4,'(1, 1)','resultat','s')
+text(ax,P(-1.2,0)[0]+2,P(-1.2,0)[1]+3,'axe U','sujet','s'); text(ax,P(0,-1.2)[0]+8,P(0,-1.2)[1],'axe W','autre','s')
+line(ax,[(12,20),(24,20)],'sujet',lw=2.2); line(ax,[(12,13),(24,13)],'autre',lw=2.2)
+text(ax,27,17,'réunion : les deux axes','encre','s',ha='left')
+box(ax,12,4,12,5,'resultat'); text(ax,27,6.5,'sup : tout le plan','resultat','s',ha='left')
+save(fig,'80-055')

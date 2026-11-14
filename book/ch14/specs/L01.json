@@ -1,0 +1,188 @@
+[
+ {
+  "code": "14-001",
+  "a_dire": "Chaque heure ajoute un facteur 2 : après 3 heures, 2 × 2 × 2 = 2³ = 8 bactéries.",
+  "legende_titre": "Les bactéries heure après heure",
+  "lecture": [
+   "Les disques bleus sont les bactéries à midi, 13 h, 14 h et 15 h : 1, 2, 4, 8.",
+   "Chaque flèche orange « ×2 » montre qu’une heure multiplie le nombre par 2.",
+   "L’accolade orange compte 3 heures, donc 3 facteurs 2.",
+   "En vert, le produit se raccourcit en 2³ et vaut 8."
+  ],
+  "a_voir": "Trois heures donnent trois facteurs 2, et l’exposant 3 compte ces heures."
+ },
+ {
+  "code": "14-002",
+  "a_dire": "Cinq facteurs 2 puis trois facteurs 2 mis bout à bout font huit facteurs 2 : 2⁵ × 2³ = 2⁸ = 256.",
+  "legende_titre": "Deux listes de facteurs mises bout à bout",
+  "lecture": [
+   "La rangée bleue du haut compte 5 carrés : 5 facteurs 2.",
+   "La rangée orange du haut compte 3 carrés : 3 facteurs 2.",
+   "La rangée verte du bas met les deux listes bout à bout : 8 carrés.",
+   "À droite en haut, le résultat vaut 2⁸, soit 256."
+  ],
+  "a_voir": "Le produit de 2⁵ par 2³ a 5 + 3 = 8 facteurs 2."
+ },
+ {
+  "code": "14-003",
+  "a_dire": "À 11 h et à midi, il y a des nombres (la moitié, 1) mais on ne sait pas encore les écrire comme 2 à une puissance.",
+  "legende_titre": "Que écrire pour 11 h et midi ?",
+  "lecture": [
+   "Les cases bleues du haut donnent le nombre de bactéries : la moitié, 1, 2, 4.",
+   "Les cases bleues du bas donnent l’écriture déjà connue : 2¹ à 13 h, 2² à 14 h.",
+   "Les deux cases orange en pointillés, 2 avec un point d’interrogation, sont à nommer pour 11 h et midi."
+  ],
+  "a_voir": "Deux nombres existent, mais leur écriture en puissance de 2 manque."
+ },
+ {
+  "code": "14-004",
+  "a_dire": "Un nombre exact à 22 chiffres ne montre pas sa taille ; il faut une écriture où on la lit d’un coup, comme 10²¹.",
+  "legende_titre": "Écrire un grand nombre pour voir sa taille",
+  "lecture": [
+   "La rangée bleue a 22 cases : les 22 chiffres de 2⁷².",
+   "La rangée violette a 21 cases : un nombre de 21 chiffres.",
+   "Les deux rangées se ressemblent : pour voir la taille, il faut compter les cases.",
+   "Dans la case verte, 10²¹ dit en une écriture qu’il y a 21 facteurs 10."
+  ],
+  "a_voir": "Compter les chiffres est long ; avec 10²¹, la taille se lit d’un coup."
+ },
+ {
+  "code": "14-005",
+  "a_dire": "Les trois inventions viennent d’une même cause : on compte des facteurs.",
+  "legende_titre": "Une cause pour trois inventions",
+  "lecture": [
+   "La case bleue du haut est la cause commune : compter des facteurs.",
+   "À gauche, 5 facteurs puis 3 facteurs font 8 facteurs.",
+   "Au milieu, zéro facteur 2 donne 1, et 2⁻¹ est la moitié.",
+   "À droite, 10²¹ dit 21 facteurs 10."
+  ],
+  "a_voir": "Chaque case verte part de la même case bleue."
+ },
+ {
+  "code": "14-006",
+  "a_dire": "En allant vers la droite, chaque marche vaut la moitié de la précédente : 8, 4, 2, puis 1 et ½.",
+  "legende_titre": "L’escalier des puissances de 2",
+  "lecture": [
+   "Les barres bleues sont les marches 2³, 2² et 2¹ : 8, 4, 2.",
+   "Les barres orange sont les marches 2⁰ et 2⁻¹ : 1 et ½.",
+   "Chaque flèche grise porte la même étiquette : ÷ 2.",
+   "La hauteur de chaque barre suit sa valeur."
+  ],
+  "a_voir": "Les mêmes flèches ÷ 2 placent 1 et ½ à la suite de 8, 4, 2."
+ },
+ {
+  "code": "14-007",
+  "a_dire": "2ⁿ désigne toute la liste 2, 4, 8, 16… ; la lettre n est le nombre de facteurs 2.",
+  "legende_titre": "Une écriture pour toute la liste",
+  "lecture": [
+   "La case bleue du haut est 2ⁿ, avec n pour le nombre de facteurs.",
+   "Chaque colonne donne une valeur de n : 1, 2, 3, 4.",
+   "Les petits carrés bleus comptent les facteurs 2 de la colonne.",
+   "Les nombres verts sont les valeurs : 2, 4, 8, 16."
+  ],
+  "a_voir": "Un facteur de plus multiplie la valeur par 2."
+ },
+ {
+  "code": "14-008",
+  "a_dire": "Dans 2³ et 5³, la base est le nombre multiplié ; l’exposant 3 est le même, mais la base change le résultat.",
+  "legende_titre": "Le nombre qui est multiplié",
+  "lecture": [
+   "Les chiffres bleus 2 et 5 sont les bases, désignées par la flèche « base ».",
+   "Le petit 3 gris est le même exposant dans les deux cas.",
+   "Sous chaque base, le produit est écrit : 2 × 2 × 2 et 5 × 5 × 5.",
+   "En vert, les résultats : 8 et 125."
+  ],
+  "a_voir": "La base est le nombre répété dans le produit."
+ },
+ {
+  "code": "14-009",
+  "a_dire": "L’exposant est le nombre de fois où la base apparaît comme facteur : six facteurs 2 donnent l’exposant 6.",
+  "legende_titre": "Le nombre de facteurs",
+  "lecture": [
+   "Les six cases bleues portent chacune le facteur 2, séparées par ×.",
+   "L’accolade orange compte les six facteurs.",
+   "Le résultat s’écrit 2⁶ ; la flèche orange montre que l’exposant est 6."
+  ],
+  "a_voir": "L’exposant est le résultat du comptage des facteurs."
+ },
+ {
+  "code": "14-010",
+  "a_dire": "Quand l’exposant diminue de 1, on retire un facteur 2, donc la valeur est divisée par 2 : 16 devient 8.",
+  "legende_titre": "Un facteur de moins",
+  "lecture": [
+   "La rangée du haut a 4 cases bleues : 2⁴ = 16.",
+   "La rangée du bas a 3 cases bleues : 2³ = 8.",
+   "La case orange en pointillés est le facteur retiré.",
+   "La flèche orange dit : exposant moins 1, valeur divisée par 2."
+  ],
+  "a_voir": "Retirer un facteur 2 revient à diviser par 2."
+ },
+ {
+  "code": "14-011",
+  "a_dire": "La valeur de 2⁰ et de 2⁻¹ se lit sur la suite : en continuant à diviser par 2 après 8, 4, 2, on trouve 1 puis ½.",
+  "legende_titre": "La suite décide les valeurs suivantes",
+  "lecture": [
+   "Les cases bleues 8, 4, 2 sont les marches connues.",
+   "Les flèches orange ÷2 répètent la même règle d’une case à la suivante.",
+   "Les cases vertes en pointillés, 1 et ½, sont données par cette règle.",
+   "L’accolade orange dit : même règle partout."
+  ],
+  "a_voir": "Les cases vertes ne sont pas choisies : la règle les donne."
+ },
+ {
+  "code": "14-012",
+  "a_dire": "Choisir 2⁰ = 0 casse la règle de division par 2 : 2 ÷ 2 vaut 1, et tout le reste serait 0.",
+  "legende_titre": "Le choix 0 est refusé",
+  "lecture": [
+   "La rangée du haut (cases vertes) continue 8, 4, 2, 1, ½ : la règle tient.",
+   "La rangée du bas met 0 après 2 : les deux cases rouges valent 0.",
+   "La phrase rouge rappelle que 2 divisé par 2 donne 1, pas 0."
+  ],
+  "a_voir": "Les cases rouges ne suivent pas la règle ÷ 2."
+ },
+ {
+  "code": "14-013",
+  "a_dire": "aⁿ veut dire a × a × … × a avec n facteurs a ; un nombre répété, et n dit combien de fois.",
+  "legende_titre": "Le produit répété et son abréviation",
+  "lecture": [
+   "À gauche, aⁿ : a en bleu est le nombre répété, n en orange est le nombre de facteurs.",
+   "À droite, les cases bleues a séparées par × forment le produit ; la case grise … remplace les facteurs du milieu.",
+   "L’accolade orange compte n facteurs a.",
+   "En bas, un exemple : 2⁴ = 2 × 2 × 2 × 2."
+  ],
+  "a_voir": "aⁿ est une écriture courte pour a écrit n fois en produit."
+ },
+ {
+  "code": "14-014",
+  "a_dire": "2⁰ doit valoir 1 : multiplier 8 par 2⁰ doit laisser 8, ce que 0 ne ferait pas.",
+  "legende_titre": "Pourquoi 2⁰ vaut 1",
+  "lecture": [
+   "La rangée bleue du haut montre 2³ = 8 : huit carrés.",
+   "La rangée verte garde les huit carrés : 8 × 2⁰ = 8 × 1 = 8. C’est vrai.",
+   "La rangée rouge barrée n’a plus de carrés : 8 × 0 = 0. C’est faux."
+  ],
+  "a_voir": "Avec 2⁰ = 1, le nombre 8 reste 8 ; avec 2⁰ = 0, la règle casse."
+ },
+ {
+  "code": "14-015",
+  "a_dire": "La lettre a désigne le nombre répété : elle peut valoir 2, 5, 9…, avec le même exposant 3.",
+  "legende_titre": "La lettre pour le nombre répété",
+  "lecture": [
+   "Les chiffres bleus 2, 5 et 9 sont trois nombres répétés, chacun avec l’exposant 3 gris.",
+   "Sous chacun, le produit répété trois fois est écrit.",
+   "La case bleue du bas, a³, est l’écriture commune ; les flèches la relient aux trois cas."
+  ],
+  "a_voir": "a prend la place du nombre répété, qui change d’un cas à l’autre."
+ },
+ {
+  "code": "14-016",
+  "a_dire": "La lettre n désigne le nombre de facteurs : 3, 4 ou 10 se disent avec une seule écriture, 2ⁿ.",
+  "legende_titre": "La lettre pour le nombre de facteurs",
+  "lecture": [
+   "Chaque ligne a le 2 gris, qui ne change pas.",
+   "Le nombre orange à côté (3, 4, 10) est le nombre de facteurs ; les carrés bleus le comptent.",
+   "La case orange du bas, 2ⁿ, couvre les trois lignes ; n reste libre."
+  ],
+  "a_voir": "Seul le nombre de carrés change : c’est n."
+ }
+]

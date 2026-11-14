@@ -1,0 +1,17 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+_b = box; box = lambda ax, x, y, w, h, role, label=None, size="m", **k: _b(ax, x, y, w, h, role, label=label, size=size, **k)
+fig, ax = canvas(80)
+text(ax, 44, 74, 'produit de deux entiers', 'encre', 's')
+box(ax, 4, 56, 22, 12, 'sujet', r'$1+i$', 'l')
+box(ax, 33, 56, 22, 12, 'sujet', r'$1+i$', 'l')
+box(ax, 62, 56, 22, 12, 'resultat', r'$2i$', 'l')
+text(ax, 29.5, 62, r'$\times$', 'varie', 'l'); text(ax, 58.5, 62, '=', 'varie', 'l')
+for x, role in ((15, 'sujet'), (44, 'sujet'), (73, 'resultat')):
+    arrow(ax, (x, 54), (x, 44), role)
+box(ax, 4, 32, 22, 11, 'sujet', r'$N=2$', 'm')
+box(ax, 33, 32, 22, 11, 'sujet', r'$N=2$', 'm')
+box(ax, 62, 32, 22, 11, 'resultat', r'$N=4$', 'm')
+text(ax, 29.5, 37.5, r'$\times$', 'varie', 'l'); text(ax, 58.5, 37.5, '=', 'varie', 'l')
+text(ax, 44, 22, 'les normes se multiplient', 'resultat', 's')
+box(ax, 24, 6, 40, 12, 'resultat', r'$2\times 2 = 4$', 'l')
+save(fig, '51-257')

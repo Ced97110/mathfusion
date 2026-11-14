@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+text(ax, 44, 59, r'$f=x+1$, $g=x+2$', 'fixe', 'm')
+box(ax, 2, 40, 84, 11, 'sujet', label=r'$(fg)^\prime=(x^2+3x+2)^\prime=2x+3$', size='s')
+arrow(ax, (44, 38), (44, 24), 'resultat', both=True)
+text(ax, 46, 31, 'même résultat', 'resultat', 's', ha='left')
+box(ax, 2, 10, 28, 11, 'sujet', label=r'$f^\prime g=x+2$', size='s')
+text(ax, 34, 15.5, '+', 'encre', 'l')
+box(ax, 38, 10, 28, 11, 'autre', label=r'$fg^\prime=x+1$', size='s')
+text(ax, 70, 15.5, '=', 'encre', 'l')
+box(ax, 74, 10, 12, 11, 'resultat', label=r'$2x+3$', size='s')
+save(fig, '62-097')

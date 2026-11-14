@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(52)
+f = numberline(ax, 8, 80, 22, -30, 30, step=6, labels=False, arrow_right=False)
+disc(ax, f(-24), 22, 2, 'autre'); disc(ax, f(24), 22, 2, 'sujet')
+text(ax, f(0), 26, '0', 'fixe')
+text(ax, f(-24), 28, r'$-24$', 'autre', 'l'); text(ax, f(24), 28, r'$24$', 'sujet', 'l')
+brace(ax, f(-24), f(0), 18, 'resultat', label='24'); brace(ax, f(0), f(24), 18, 'resultat', label='24')
+text(ax, f(-24), 40, r'$|-24| = 24$', 'autre', 'l'); text(ax, f(24), 40, r'$|24| = 24$', 'sujet', 'l')
+arrow(ax, (f(-24), 31), (f(-24), 36), 'varie'); arrow(ax, (f(24), 31), (f(24), 36), 'varie')
+save(fig, '37-098')

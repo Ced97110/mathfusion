@@ -1,0 +1,109 @@
+{
+ "57-114": {
+  "lecture": [
+   "À gauche, dans ℤ : 3·2 et 2·3 mènent au même nombre, 6 (vert).",
+   "À droite, avec les règles A et B depuis (1 ; 0) : A après B donne (2 ; 1) et B après A donne (1 ; 1) (orange).",
+   "Le signe ≠ dit que ces deux résultats diffèrent.",
+   "La différence entre gauche et droite tient à l’anneau : dans ℤ elle disparaît."
+  ],
+  "a_voir": "À gauche les deux chemins se rejoignent ; à droite ils ne se rejoignent pas."
+ },
+ "57-120": {
+  "lecture": [
+   "En haut, R_L (bleu) et R_R (violet) : chaque flèche orange dit que l’un est le centralisateur de l’autre.",
+   "Le cadre gris est le départ : η commute avec toutes les multiplications de R_L.",
+   "Le cadre orange épais est l’étape clé : η(x) = η(x·1) = x·η(1).",
+   "Le cadre vert est l’arrivée : η est la multiplication à droite par η(1), donc η est dans R_R."
+  ],
+  "a_voir": "Un η qui commute avec R_L est forcément dans R_R."
+ },
+ "57-143": {
+  "lecture": [
+   "En haut, x = (0 ; 0) et x′ = (1 ; 0) : leur différence est dans ℤ², donc ils sont dans la même classe (vert).",
+   "Les flèches orange les multiplient par 1/2.",
+   "En bas, la différence (1/2 ; 0) n’est pas dans ℤ² : le cadre rouge est dans une autre classe.",
+   "Le texte du haut dit le but : deux points de la même classe doivent donner la même classe."
+  ],
+  "a_voir": "Sans stabilité, deux points d’une même classe finissent dans deux classes."
+ },
+ "57-150": {
+  "lecture": [
+   "Le carré de gauche (somme) : (2 ; 1) et (1 ; 4) s’additionnent en (3 ; 5) ; η donne −7. Par l’autre chemin, η donne 0 et −7, dont la somme est −7.",
+   "Le carré de droite (action) : (1 ; 4) multiplié par 3 donne (3 ; 12) ; η donne −21. Par l’autre chemin, η donne −7, puis 3 × (−7) = −21.",
+   "Les cases bleues sont les départs, les vertes les arrivées ; les flèches orange sont l’opération (+ ou × 3) et η.",
+   "Dans chaque carré, les deux chemins mènent à la même case verte."
+  ],
+  "a_voir": "Appliquer η avant ou après l’opération donne la même chose."
+ },
+ "57-169": {
+  "lecture": [
+   "À gauche, x = (2 ; 1) : (0 ; 0), (2 ; 1), (4 ; 2)… ne reviennent jamais à (0 ; 0). L’annulateur est 0 et le groupe est infini, comme ℤ.",
+   "À droite, x = 4 h : les flèches orange font le tour 0, 4 h, 8 h, puis reviennent à 0.",
+   "Le plus petit entier positif qui donne 0 est n = 3 : le groupe a 3 éléments, comme ℤ/3ℤ.",
+   "La flèche du bas relie chaque cas à sa conséquence (cadre vert)."
+  ],
+  "a_voir": "Ou bien la suite ne revient jamais à 0 et le groupe est comme ℤ, ou bien elle revient après n pas et le groupe a n éléments."
+ },
+ "57-180": {
+  "lecture": [
+   "Le cadre pointillé violet est le théorème des modules sur un anneau R quelconque.",
+   "Le cadre bleu dedans est le cas R = ℤ : les groupes abéliens. C’est le théorème du chapitre 48.",
+   "Le cadre vert donne le cas des couples : η envoie (x ; y) sur x − 2y, le noyau est formé des multiples de (2 ; 1) et l’image est formée de tous les entiers."
+  ],
+  "a_voir": "Le théorème du chapitre 48 est le théorème des modules pris avec R = ℤ."
+ },
+ "57-196": {
+  "lecture": [
+   "Les deux cadres bleus sont les polynômes 3x + 2 et x² + 3x + 3 ; leur différence est x² + 1 (trait orange).",
+   "Les flèches orange les appliquent au même vecteur v.",
+   "Le cadre vert est le vecteur obtenu, (1,6 ; 7,6), le même pour les deux. Sous lui, le calcul pour 3x + 2.",
+   "En bas : même classe, même vecteur, donc ℝ[x]v ≅ ℝ[x]/(x² + 1)."
+  ],
+  "a_voir": "Deux polynômes qui diffèrent de x² + 1 arrivent sur le même vecteur."
+ },
+ "57-200": {
+  "lecture": [
+   "La ligne du haut applique S deux fois : (x ; y), (x + y ; y), (x + 2y ; y). Avec (2 ; 3) : (2 ; 3), (5 ; 3), (8 ; 3).",
+   "La ligne du bas applique S − 1, « image moins départ » : (x ; y), (y ; 0), (0 ; 0). Avec (2 ; 3) : (2 ; 3), (3 ; 0), (0 ; 0).",
+   "Les flèches orange portent le nom de l’opération ; le cadre vert est l’arrivée.",
+   "Les lettres montrent que le résultat vaut pour tout couple."
+  ],
+  "a_voir": "Deux fois S − 1 envoie tout couple sur (0 ; 0)."
+ },
+ "57-207": {
+  "lecture": [
+   "Le cadre bleu du haut est le départ : un module sur ℤ/6ℤ, où la classe de 6 est la somme de 6 classes de 1 et agit comme 6x.",
+   "Le cadre orange épais est l’étape décisive : la classe de 6 vaut la classe de 0.",
+   "Le cadre vert du bas est l’arrivée : 6x = (classe de 6)x = (classe de 0)x = 0, pour tout x.",
+   "Sous le trait, en gris, la réciproque : 4 et 10, de même classe, agissent pareil."
+  ],
+  "a_voir": "Il faut voir l’étape orange comme le passage obligé entre départ et arrivée."
+ },
+ "57-210": {
+  "lecture": [
+   "Les six ronds bleus sont les éléments y de l’horloge à 6 positions, de 0 à 5.",
+   "Les flèches grises mènent toutes à 6y = 0, vrai pour tout y (cadre vert).",
+   "Si 1/6 agissait, il faudrait x = 6y. Seul x = 0 est atteint (flèche verte).",
+   "Les valeurs x = 1 à 5 ne sont jamais atteintes (trait rouge barré) : seul le module nul reste."
+  ],
+  "a_voir": "Tous les y donnent 6y = 0 : seule la valeur 0 est possible."
+ },
+ "57-212": {
+  "lecture": [
+   "Le cercle bleu à gauche est l’horloge à 6 positions, avec ses 6 points.",
+   "Chaque ligne à droite teste un anneau (case orange) : les entiers, l’horloge à 6 positions, les rationnels.",
+   "Les cases vertes disent oui : les deux premiers anneaux conviennent.",
+   "La case rouge dit non : l’anneau des rationnels ne convient pas."
+  ],
+  "a_voir": "Un seul groupe, trois anneaux, un seul refus."
+ },
+ "57-222": {
+  "lecture": [
+   "À gauche, v = (0 ; 1) (bleu) ; les flèches orange sont Tv = (−1 ; 0) puis T²v = (0 ; −1).",
+   "En ajoutant v à T²v, vous obtenez (0 ; 0) : le polynôme x² + 1 annule v.",
+   "À droite, le même v (violet) ; la flèche orange est Sv = (1 ; 1) ; la flèche verte va de v à Sv et vaut (1 ; 0).",
+   "Appliquer une seconde fois « image moins départ » à (1 ; 0) donne (0 ; 0) : le polynôme (x − 1)² annule v."
+  ],
+  "a_voir": "Sur le même vecteur v, chaque transformation a son propre polynôme qui l’annule."
+ }
+}
