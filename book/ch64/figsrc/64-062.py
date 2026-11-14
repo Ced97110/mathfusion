@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 22, 60, r'$\mathbb{Z}/12$ (abélien)', 'sujet', 's')
+text(ax, 66, 60, r'files de 3 (non abélien)', 'autre', 's')
+box(ax, 4, 42, 36, 9, 'sujet', label='5 puis 9 : 2 h', size='s')
+text(ax, 22, 36, '=', 'resultat', 'l', weight='bold')
+box(ax, 4, 22, 36, 9, 'sujet', label='9 puis 5 : 2 h', size='s')
+box(ax, 48, 42, 36, 9, 'autre', label='1-3 puis 1-2 : place 3', size='s')
+text(ax, 66, 36, '≠', 'limite', 'l', weight='bold')
+box(ax, 48, 22, 36, 9, 'autre', label='1-2 puis 1-3 : place 2', size='s')
+text(ax, 22, 11, r'écart : $(g,h)=e$', 'resultat', 'm', weight='bold')
+text(ax, 66, 11, r'écart : $(g,h)\neq e$', 'varie', 'm', weight='bold')
+save(fig, '64-062')

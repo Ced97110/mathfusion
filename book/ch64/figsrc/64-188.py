@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+text(ax, 44, 71, r'dans $\mathbb{Q}$ : $x^2-1=(x-1)(x+1)$', 'sujet', 'm')
+f = numberline(ax, 18, 70, 56, -2, 2, arrow_right=False)
+for v in (-1, 1): disc(ax, f(v), 56, 1.8, 'sujet')
+text(ax, 44, 45, '2 racines distinctes', 'sujet', 'm')
+text(ax, 44, 33, r'caractéristique 2 : $1+1=0$', 'varie', 'm')
+g = numberline(ax, 34, 54, 21, 0, 1, arrow_right=False)
+disc(ax, g(0), 21, 1.2, 'fixe'); disc(ax, g(1), 21, 1.8, 'varie'); disc(ax, g(1), 21, 3.4, 'varie', fill=False)
+text(ax, 70, 21, '1 : racine double', 'varie', 's')
+text(ax, 44, 8, r'$x^2-1=(x-1)^2$', 'varie', 'm')
+save(fig, '64-188')

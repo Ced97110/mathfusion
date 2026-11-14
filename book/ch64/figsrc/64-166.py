@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 4, 66, 40, 13, 'sujet', label=r'$G$ : $n=6$ éléments')
+box(ax, 4, 38, 40, 13, 'varie', label=r'sur $F(z)$ : 3 éléments')
+box(ax, 4, 10, 40, 13, 'fixe', label=r'$\{e\}$ : 1 élément')
+arrow(ax, (24, 65), (24, 52), 'varie'); arrow(ax, (24, 37), (24, 24), 'varie')
+text(ax, 28, 58.5, r'$z$ ajouté', 'varie', 's', ha='left')
+text(ax, 28, 30.5, r'facteur $\mathbb{Z}/3$', 'varie', 's', ha='left')
+box(ax, 56, 26, 30, 14, 'resultat', label='$p$ divise $n$ :\n$3$ divise $6$')
+arrow(ax, (55, 33), (45, 33), 'resultat', curve=0.0)
+save(fig, '64-166')

@@ -1,0 +1,375 @@
+[
+ {
+  "code": "64-064",
+  "a_dire": "G′ est le plus petit sous-groupe normal K dont le quotient G/K est abélien.",
+  "legende_titre": "Deux choix de K pour les files de trois élèves",
+  "lecture": [
+   "Chaque rangée montre les 6 permutations : e, (123), (132) puis 3 autres en gris. Les cases bleues sont celles de K.",
+   "En haut, K est l’identité (case bleue dans un cadre orange) : le quotient a 6 classes et il n’est pas abélien (mot rouge).",
+   "En bas, K est formé des 3 permutations paires (cadre orange) : une classe est K, l’autre est le cadre gris. Le quotient a 2 classes et il est abélien (mot vert).",
+   "Le bas rappelle que K contient G′ quand le quotient est abélien."
+  ],
+  "a_voir": "(123) est dans K quand le quotient est abélien, et hors de K quand il ne l’est pas."
+ },
+ {
+  "code": "64-065",
+  "a_dire": "G/K est abélien exactement quand chaque commutateur (g, h) est dans K, c’est-à-dire K ⊃ G′.",
+  "legende_titre": "Du produit des classes aux commutateurs",
+  "lecture": [
+   "La case grise du haut dit ce que sont gK et hK : les classes de g et de h.",
+   "La case bleue est le départ : les classes de g et de h commutent.",
+   "La case orange est l’étape qui compte : gh et hg sont dans la même classe, à (g, h) près.",
+   "La case verte est l’arrivée : (g, h) est dans K, donc K contient G′."
+  ],
+  "a_voir": "Les flèches vont du départ à l’arrivée en passant par la case orange."
+ },
+ {
+  "code": "64-066",
+  "a_dire": "La suite dérivée recommence : on prend le groupe dérivé, puis le groupe dérivé de celui-là, et ainsi de suite.",
+  "legende_titre": "Recommencer le groupe dérivé",
+  "lecture": [
+   "Chaque ligne montre un groupe par autant de petites cases que d’éléments : 6, puis 3, puis 1.",
+   "Chaque flèche orange est un passage au groupe dérivé.",
+   "La case verte du bas est l’identité : il ne reste qu’un élément."
+  ],
+  "a_voir": "Le nombre de cases diminue à chaque passage : 6, 3, 1."
+ },
+ {
+  "code": "64-067",
+  "a_dire": "G est résoluble exactement quand la suite dérivée atteint l’identité après un certain nombre de pas.",
+  "legende_titre": "Deux suites dérivées, deux fins différentes",
+  "lecture": [
+   "La colonne bleue est celle des files de trois élèves : les tailles 6, 3, 1 descendent jusqu’à l’identité (case verte).",
+   "La colonne violette est celle des files paires de cinq élèves : la taille reste 60 à chaque ligne.",
+   "Les lettres G, G′, G″ au milieu disent à quelle ligne on est.",
+   "Les flèches orange sont les passages au groupe dérivé."
+  ],
+  "a_voir": "À gauche on arrive à 1 ; à droite on reste à 60 (case rouge)."
+ },
+ {
+  "code": "64-068",
+  "a_dire": "Toute suite normale à facteurs abéliens reste au-dessus de la suite dérivée : G_(i+1) contient G^((i)).",
+  "legende_titre": "Comparer deux suites étage par étage",
+  "lecture": [
+   "La colonne bleue est une suite normale quelconque à facteurs abéliens : G₁, G₂, G₃.",
+   "La colonne violette est la suite dérivée : G, G′, G″.",
+   "Entre les deux colonnes, le signe égal gris puis les signes ⊇ orange disent que le terme bleu contient ou égale le terme violet.",
+   "Le bas écrit la règle : G_(i+1) contient G^((i))."
+  ],
+  "a_voir": "À chaque ligne, le terme bleu contient ou égale le terme violet."
+ },
+ {
+  "code": "64-069",
+  "a_dire": "Le nombre de pas de la suite dérivée change d’un groupe à l’autre : 1 pas pour un groupe abélien, 2 pas pour S₃.",
+  "legende_titre": "Compter les pas jusqu’à l’identité",
+  "lecture": [
+   "La ligne du haut montre l’horloge à 5 heures : 5 cases, puis une case verte après un seul passage au dérivé.",
+   "La ligne du bas montre les files de trois élèves : 6 cases, puis 3 cases, puis une case verte après deux passages.",
+   "Chaque flèche orange est un passage au groupe dérivé."
+  ],
+  "a_voir": "Il y a une flèche en haut et deux flèches en bas."
+ },
+ {
+  "code": "64-070",
+  "a_dire": "Un groupe simple a pour seuls sous-groupes normaux {e} et lui-même : on ne peut pas le découper.",
+  "legende_titre": "Trois groupes : lesquels se découpent ?",
+  "lecture": [
+   "Chaque cercle de points représente un groupe : ℤ/5, ℤ/6 et S₃.",
+   "Pour ℤ/5, tous les points sont bleus : il n’y a que {e} et le groupe entier.",
+   "Pour ℤ/6 et S₃, trois points orange forment un sous-groupe normal : {0, 2, 4} et les 3 permutations paires.",
+   "Sous chaque cercle, le mot dit si le groupe est simple ou se découpe."
+  ],
+  "a_voir": "Seul ℤ/5 n’a pas de points orange."
+ },
+ {
+  "code": "64-071",
+  "a_dire": "Un groupe abélien simple est ℤ/p avec p premier ; un groupe simple non abélien, comme A₅, n’est pas une horloge.",
+  "legende_titre": "Horloges simples et un groupe simple qui n’en est pas une",
+  "lecture": [
+   "À gauche, ℤ/6 : 6 points dont 3 orange forment un sous-groupe ; 6 n’est pas premier et le groupe n’est pas simple.",
+   "Au milieu, ℤ/7 : 7 points bleus, sans sous-groupe ; 7 est premier et le groupe est simple.",
+   "À droite, la case violette est A₅ : 60 éléments, simple mais non abélien ; 60 n’est pas premier, donc ce n’est pas une horloge.",
+   "Le titre vert dit que les groupes abéliens simples sont les ℤ/p avec p premier."
+  ],
+  "a_voir": "A₅ est simple sans être une horloge à p heures."
+ },
+ {
+  "code": "64-072",
+  "a_dire": "Une suite de composition est une suite normale qu’on ne peut plus raffiner : aucun groupe normal ne s’intercale entre deux termes.",
+  "legende_titre": "Une suite à laquelle on ne peut plus rien ajouter",
+  "lecture": [
+   "La colonne bleue est la suite de tailles 24, 12, 4, 1 : la case orange en pointillés montre qu’on peut insérer un groupe de 2 éléments.",
+   "La colonne verte est la suite 24, 12, 4, 2, 1 : toutes les cases sont pleines.",
+   "Entre deux cases vertes voisines, la petite case rouge barrée dit qu’on ne peut rien intercaler."
+  ],
+  "a_voir": "À gauche on peut encore insérer un terme ; à droite chaque insertion est barrée."
+ },
+ {
+  "code": "64-073",
+  "a_dire": "Une suite est une suite de composition exactement quand chaque facteur est simple, c’est-à-dire quand il n’y a plus de terme à insérer.",
+  "legende_titre": "Facteur simple ou facteur qu’on peut couper",
+  "lecture": [
+   "À gauche, un facteur de 4 éléments : les points 0 et 2 (orange) forment un sous-groupe, donc on peut insérer un terme.",
+   "À droite, un facteur de 3 éléments : aucun sous-groupe entre le petit et le grand, donc rien à insérer.",
+   "Le bas résume : simple veut dire rien à insérer."
+  ],
+  "a_voir": "Les points orange de gauche n’existent pas à droite."
+ },
+ {
+  "code": "64-074",
+  "a_dire": "Le groupe infini ℤ n’a aucune suite de composition : on peut toujours insérer un terme de plus et on n’atteint jamais {0}.",
+  "legende_titre": "Descendre dans ℤ sans jamais finir",
+  "lecture": [
+   "Chaque ligne montre les multiples d’un nombre, de 0 à 16 : 2ℤ, 4ℤ, 8ℤ, 16ℤ.",
+   "Les points sont plus rares à chaque ligne, mais il en reste toujours (0 et 16 au moins).",
+   "Le mot rouge du bas dit que {0} n’est jamais atteint."
+  ],
+  "a_voir": "Chaque ligne a moins de points que la précédente, et on peut toujours en ajouter une."
+ },
+ {
+  "code": "64-075",
+  "a_dire": "S₄ ⊃ A₄ ⊃ V ⊃ W ⊃ {e} est une suite de composition de S₄, de facteurs ℤ/2, ℤ/3, ℤ/2, ℤ/2.",
+  "legende_titre": "Cinq étages pour S₄",
+  "lecture": [
+   "Chaque case est un groupe avec sa taille : 24, 12, 4, 2, puis 1.",
+   "La case orange est W, le groupe à 2 éléments qu’on insère dans la suite ; il est formé de e et de (12)(34).",
+   "Chaque flèche porte en vert le facteur entre deux étages : ℤ/2, ℤ/3, ℤ/2, ℤ/2."
+  ],
+  "a_voir": "En insérant W, le facteur de 4 éléments devient deux facteurs de 2 éléments."
+ },
+ {
+  "code": "64-076",
+  "a_dire": "Deux suites de composition d’un groupe fini ont la même longueur et les mêmes facteurs à l’ordre près ; une suite normale quelconque, non.",
+  "legende_titre": "Deux suites du groupe à 24 éléments",
+  "lecture": [
+   "La ligne grise est une suite normale : 24, 12, 4, 1, avec 3 facteurs (2, 3, 4).",
+   "La ligne verte est une suite de composition : 24, 12, 4, 2, 1, avec 4 facteurs (2, 3, 2, 2).",
+   "Les deux lignes n’ont ni la même longueur ni les mêmes facteurs : le théorème ne vaut que pour la ligne verte.",
+   "Le texte bleu énonce le théorème : pour des suites de composition, même longueur et mêmes facteurs."
+  ],
+  "a_voir": "Il manque la case 2 sur la ligne grise : longueur 3 contre longueur 4."
+ },
+ {
+  "code": "64-077",
+  "a_dire": "La preuve croise deux suites : avec K₃ = G₂ ∩ H₂, le deuxième théorème d’isomorphisme échange les deux premiers facteurs.",
+  "legende_titre": "Le losange de ℤ/6",
+  "lecture": [
+   "En haut, la case bleue est G₁ = ℤ/6 ; à gauche, G₂ = {0, 2, 4} ; à droite en violet, H₂ = {0, 3} ; en bas en orange, K₃ = G₂ ∩ H₂ = {0}, leur partie commune.",
+   "Chaque flèche porte le facteur correspondant : ℤ/2 ou ℤ/3.",
+   "Les deux flèches bleues portent ℤ/2 ; les deux flèches violettes portent ℤ/3.",
+   "Le texte vert dit que G₁/G₂ et H₂/K₃ sont isomorphes : les facteurs sont échangés."
+  ],
+  "a_voir": "Les facteurs sont les mêmes des deux côtés, mais croisés."
+ },
+ {
+  "code": "64-078",
+  "a_dire": "Pour ℤ/6, les deux suites de composition ont les facteurs ℤ/2 et ℤ/3 dans deux ordres différents : c’est l’unicité de 6 = 2 × 3.",
+  "legende_titre": "Deux chemins pour l’horloge à 6 heures",
+  "lecture": [
+   "La première ligne passe par {0, 2, 4} : facteur ℤ/2 (bleu), puis ℤ/3 (violet).",
+   "La seconde ligne passe par {0, 3} : facteur ℤ/3, puis ℤ/2.",
+   "À droite de chaque ligne, la case verte donne le produit : 6.",
+   "Le bas rappelle 6 = 2 × 3 dans les deux cas."
+  ],
+  "a_voir": "Les mêmes deux facteurs apparaissent dans l’autre ordre."
+ },
+ {
+  "code": "64-079",
+  "a_dire": "ℤ n’a aucune suite de composition : à chaque étage on peut insérer un terme et la descente ne finit jamais, d’où le mot « fini ».",
+  "legende_titre": "Une descente qui ne s’arrête pas",
+  "lecture": [
+   "Chaque case bleue est un sous-groupe : ℤ, 3ℤ, 6ℤ, 12ℤ.",
+   "Chaque flèche orange est une insertion possible : après 3ℤ on insère 6ℤ, puis 12ℤ.",
+   "La case en pointillés « ⋯ » continue la descente ; le mot rouge dit que {0} n’est jamais atteint."
+  ],
+  "a_voir": "Les cases rétrécissent mais la suite ne se termine pas."
+ },
+ {
+  "code": "64-080",
+  "a_dire": "Une suite principale demande deux conditions à la fois : des termes normaux dans G et des facteurs simples.",
+  "legende_titre": "Deux conditions, deux cercles",
+  "lecture": [
+   "Le cercle bleu rassemble les suites dont les termes sont normaux dans G ; le cercle violet celles dont les facteurs sont simples.",
+   "La partie commune, en vert, est la suite principale.",
+   "Le tableau a deux colonnes, une par condition. La suite 24, 12, 4, 2, 1 a une croix rouge pour « normal dans G » : le terme à 2 éléments n’est pas normal dans le groupe de 24 éléments.",
+   "Pour ℤ/60, une suite de composition a deux coches vertes : elle est principale."
+  ],
+  "a_voir": "Il faut deux coches vertes, une par condition, pour être principale."
+ },
+ {
+  "code": "64-081",
+  "a_dire": "Quand H et K sont deux sous-groupes différents de la suite, le produit HK est le groupe G tout entier : ici les sommes donnent les 6 heures.",
+  "legende_titre": "Additionner une heure de chaque groupe",
+  "lecture": [
+   "Les chiffres bleus à gauche sont les heures de H : 0, 2, 4 ; les chiffres violets en haut sont les heures de K : 0, 3.",
+   "Chaque case verte contient la somme de l’heure de sa ligne et de l’heure de sa colonne, sur l’horloge à 6 heures.",
+   "Les six cases donnent 0, 3, 2, 5, 4, 1 : toutes les heures, sans répétition.",
+   "Le texte de droite dit que le produit HK est le groupe entier G."
+  ],
+  "a_voir": "Les six sommes sont toutes différentes."
+ },
+ {
+  "code": "64-082",
+  "a_dire": "ℤ/60 a un sous-groupe pour chaque diviseur de 60 ; rangés selon qui contient qui, les deux suites de composition sont deux chemins.",
+  "legende_titre": "Les 12 sous-groupes de ℤ/60 rangés par inclusion",
+  "lecture": [
+   "Chaque case porte le nombre d’éléments d’un sous-groupe : 12 cases en tout, de 1 en bas à 60 en haut.",
+   "Un trait relie deux cases quand la petite est contenue dans la grande, avec un facteur premier de plus.",
+   "Le chemin orange passe par 1, 2, 4, 12, 60 ; le chemin violet par 1, 5, 10, 30, 60 : ce sont deux suites de composition.",
+   "Les cases 1, 2, 3 et 6 forment un losange."
+  ],
+  "a_voir": "Deux chemins de couleurs différentes relient 1 à 60."
+ },
+ {
+  "code": "64-083",
+  "a_dire": "Un groupe fini est résoluble exactement quand les facteurs d’une suite de composition sont tous cycliques d’ordre premier.",
+  "legende_titre": "Facteurs premiers contre facteur de 60",
+  "lecture": [
+   "La ligne du haut est celle des files de quatre élèves : quatre facteurs ℤ/2, ℤ/3, ℤ/2, ℤ/2, tous d’ordre premier ; le groupe est résoluble (vert).",
+   "La case rouge du bas est celle des files paires de cinq élèves : un seul facteur de 60 éléments.",
+   "Comme 60 n’est pas premier, ce groupe n’est pas résoluble.",
+   "Le bas résume l’équivalence."
+  ],
+  "a_voir": "Quatre petites cases premières en haut, une grande case non première en bas."
+ },
+ {
+  "code": "64-084",
+  "a_dire": "Pour un groupe simple et résoluble, G′ = {e}, donc le groupe est abélien : c’est ℤ/p.",
+  "legende_titre": "Deux groupes simples, deux groupes dérivés",
+  "lecture": [
+   "Le titre dit que G′ (le groupe dérivé) est normal : pour un groupe simple, il vaut {e} ou G.",
+   "La première ligne montre deux groupes simples : ℤ/3 à gauche (bleu), A₅ à droite (violet).",
+   "La flèche orange passe au groupe dérivé G′. À gauche, on obtient {e} (vert) : le groupe est abélien, de la forme ℤ/p.",
+   "À droite, on obtient encore A₅ avec 60 éléments (rouge) : ce groupe n’est pas résoluble."
+  ],
+  "a_voir": "Le groupe dérivé est réduit à un élément à gauche, et aussi gros que le groupe à droite."
+ },
+ {
+  "code": "64-085",
+  "a_dire": "Chaque facteur ℤ/p d’une suite de composition correspond, côté corps, à une racine p-ième à adjoindre.",
+  "legende_titre": "Un facteur, une racine",
+  "lecture": [
+   "La colonne bleue liste les facteurs de composition du groupe à 24 éléments : ℤ/2, ℤ/3, ℤ/2, ℤ/2.",
+   "La colonne orange liste les racines à adjoindre : carrée, cubique, carrée, carrée.",
+   "Chaque flèche double relie un facteur à sa racine : 2 donne une racine carrée, 3 donne une racine cubique."
+  ],
+  "a_voir": "Le nombre p du facteur est l’ordre de la racine à adjoindre."
+ },
+ {
+  "code": "64-086",
+  "a_dire": "Une équation est résoluble par radicaux s’il existe une tour de corps F₁ ⊂ F₂ ⊂ … ⊂ K où chaque étage adjoint un élément dont une puissance est dans l’étage précédent.",
+  "legende_titre": "La définition par une tour de corps",
+  "lecture": [
+   "Les rectangles emboîtés sont les corps F₁, F₂, F₃, puis K = F_(r+1) : chacun contient le précédent.",
+   "La case bleue en haut à droite dit comment on passe d’un étage au suivant : F_(i+1) = F_i(d_i).",
+   "La case orange dit la condition sur d_i : sa puissance n_i vaut a_i, un élément de l’étage d’avant.",
+   "La case verte dit que K contient les racines de f, après r étapes."
+  ],
+  "a_voir": "Chaque rectangle est plus grand que le précédent : on ajoute un élément d_i à chaque étage."
+ },
+ {
+  "code": "64-087",
+  "a_dire": "Dans une tour de radicaux, l’élément ajouté à chaque étage est une racine n_i-ième d’un élément déjà présent dans l’étage précédent.",
+  "legende_titre": "Tour quelconque contre tour de radicaux",
+  "lecture": [
+   "Dans chaque panneau, le rectangle gris est l’étage F_i et le grand rectangle bleu est F_(i+1).",
+   "À gauche, le cercle orange d_i est ajouté sans aucune condition.",
+   "À droite, le cercle gris a_i est dans F_i et la flèche orange mène à d_i : d_i puissance n_i vaut a_i.",
+   "Le texte du bas rappelle la condition de chaque panneau."
+  ],
+  "a_voir": "À droite, d_i vient d’un élément déjà dans F_i ; à gauche, rien ne le relie."
+ },
+ {
+  "code": "64-088",
+  "a_dire": "Au sommet de la tour, toutes les racines de f sont présentes : chacune s’écrit avec les quatre opérations et des racines, en r étapes.",
+  "legende_titre": "Les solutions vivent dans le corps du sommet",
+  "lecture": [
+   "Le grand rectangle bleu est le sommet ℚ(√5) de la tour.",
+   "Les deux cases vertes sont les deux solutions (3 + √5)/2 et (3 − √5)/2 : elles sont dans le sommet.",
+   "La case grise du bas contient les nombres de départ 3, 2 et 5.",
+   "La flèche orange dit qu’on va de la case grise au sommet avec les quatre opérations et une racine."
+  ],
+  "a_voir": "Les deux solutions sont à l’intérieur du rectangle du sommet."
+ },
+ {
+  "code": "64-089",
+  "a_dire": "On lit une tour étage par étage : à chaque étage, on vérifie que la puissance de l’élément ajouté est déjà dans l’étage précédent.",
+  "legende_titre": "Un seul étage pour x² − 3x + 1 = 0",
+  "lecture": [
+   "La case bleue du haut est F₁ = ℚ, le corps de départ.",
+   "La case orange est le nombre qu’on ajoute : d₁ = √5.",
+   "La case verte est la vérification : d₁ au carré vaut 5, qui est dans F₁.",
+   "La case bleue du bas est F₂ = ℚ(√5) ; le texte dessous dit qu’elle contient les deux solutions (3 ± √5)/2."
+  ],
+  "a_voir": "À chaque étage : on ajoute, puis on vérifie que la puissance est déjà dans l’étage d’avant."
+ },
+ {
+  "code": "64-090",
+  "a_dire": "Le groupe de Galois de l’équation est Gal(E/F), où E = F(r₁, …, r_n) est formé avec les racines : il ne dépend que de l’équation.",
+  "legende_titre": "Le groupe attaché à une équation",
+  "lecture": [
+   "Le rectangle bleu du haut est E, le corps formé de F et des racines r₁ et r₂.",
+   "Le rectangle gris du bas est F = ℚ, le corps de départ.",
+   "La flèche orange relie F à E ; le texte vert à droite donne le groupe G = Gal(E/F), de 2 renommages de E."
+  ],
+  "a_voir": "Le groupe G est attaché à l’équation et à elle seule."
+ },
+ {
+  "code": "64-091",
+  "a_dire": "Un renommage η qui fixe les coefficients envoie chaque racine sur une racine : il permute les racines.",
+  "legende_titre": "Où va chaque racine ?",
+  "lecture": [
+   "Les deux colonnes de cercles montrent les racines r₁ (bleu) et r₂ (violet) avant et après η.",
+   "Les flèches orange croisées disent que r₁ va sur r₂ et que r₂ va sur r₁.",
+   "Sous les colonnes, r₁ = (3 + √5)/2 et r₂ = (3 − √5)/2.",
+   "En bas, η remplace √5 par −√5."
+  ],
+  "a_voir": "Chaque racine arrive sur une racine, et deux racines n’arrivent jamais au même endroit."
+ },
+ {
+  "code": "64-092",
+  "a_dire": "G s’identifie à un sous-groupe de S_n quand les racines engendrent E : le renommage est connu par la permutation des racines ; sans cette hypothèse, non.",
+  "legende_titre": "Un renommage, une permutation : quand ?",
+  "lecture": [
+   "À gauche (vert), les racines engendrent E : le renommage « id » donne la permutation « rien », et √5 ↦ −√5 donne l’échange de r₁ et r₂.",
+   "À droite (rouge), on ajoute √2 : deux renommages différents, id et √2 ↦ −√2, donnent la même permutation « rien ».",
+   "Les flèches vont de chaque renommage à sa permutation.",
+   "Le texte du bas compte : 1 renommage pour 1 permutation à gauche, 2 renommages pour 1 permutation à droite."
+  ],
+  "a_voir": "À droite, deux flèches arrivent sur la même case."
+ },
+ {
+  "code": "64-093",
+  "a_dire": "Le critère de Galois est démontré en caractéristique 0, où 1 et −1 sont deux nombres différents ; en caractéristique 2, 1 = −1 et la preuve ne marche plus.",
+  "legende_titre": "Deux racines de 1, ou une seule",
+  "lecture": [
+   "À gauche, caractéristique 0 : sur la droite, les points verts −1 et 1 sont distincts, et 1 + 1 = 2 n’est pas 0.",
+   "À droite, caractéristique 2 : 1 + 1 = 0, donc 1 = −1 et il n’y a qu’un point rouge.",
+   "Sous chaque côté, le nombre de racines de x² = 1 : 2 à gauche, 1 à droite."
+  ],
+  "a_voir": "Deux points à gauche, un seul à droite."
+ },
+ {
+  "code": "64-094",
+  "a_dire": "L’énoncé met face à face une propriété des corps (une tour de radicaux) et une propriété des groupes (une suite normale à facteurs abéliens), reliées par la correspondance de Galois lue à l’envers.",
+  "legende_titre": "Deux structures face à face",
+  "lecture": [
+   "À gauche, le cadre bleu montre une tour de corps F₁, F₂, F_(r+1) ; chaque flèche ajoute une racine.",
+   "À droite, le cadre violet montre une suite de groupes G₁, G₂, {e} ; chaque quotient entre deux étages est abélien.",
+   "Entre les deux cadres, la double flèche et le mot Galois indiquent le pont."
+  ],
+  "a_voir": "Les deux cadres ont la même forme : trois étages reliés par des flèches."
+ },
+ {
+  "code": "64-095",
+  "a_dire": "Descendre d’un étage dans la tour de groupes correspond à monter d’un étage dans la tour de corps ; les degrés 2, 3, 4 sont les tailles des quotients.",
+  "legende_titre": "Deux tours en vis-à-vis",
+  "lecture": [
+   "La colonne bleue est la tour de groupes S₄, A₄, V, {e} ; la colonne violette est la tour de corps F₁ à F₄ = K.",
+   "Chaque ligne en pointillés relie un groupe au corps de la même ligne ; celle en orange relie V à F₃.",
+   "Les nombres verts 2, 3, 4 sont les tailles des quotients entre groupes voisins et les degrés entre corps voisins.",
+   "Le produit 2 × 3 × 4 = 24 est le nombre d’éléments de S₄."
+  ],
+  "a_voir": "La ligne orange relie V à F₃."
+ }
+]

@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 22, 56, 'caractéristique 0', 'sujet', 's', weight='bold')
+text(ax, 66, 56, 'caractéristique 2', 'limite', 's', weight='bold')
+f = numberline(ax, 6, 38, 34, -1, 1, step=1, arrow_right=False)
+g = numberline(ax, 54, 78, 34, 0, 1, step=1, arrow_right=False)
+for v in (-1, 1):
+    disc(ax, f(v), 34, 1.8, 'resultat')
+disc(ax, g(1), 34, 1.8, 'limite')
+text(ax, g(1), 41, r'$1=-1$', 'limite', 's')
+text(ax, 22, 20, r'$1+1=2\neq0$', 'encre', 's')
+text(ax, 66, 20, r'$1+1=0$', 'encre', 's')
+text(ax, 22, 11, r'$x^2=1$ : 2 racines', 'resultat', 's', weight='bold')
+text(ax, 66, 11, r'$x^2=1$ : 1 racine', 'limite', 's', weight='bold')
+save(fig, '64-093')

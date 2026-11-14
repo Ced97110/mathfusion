@@ -1,0 +1,424 @@
+[
+ {
+  "code": "64-160",
+  "a_dire": "η change la résolvante en son opposé, mais son carré reste le même : il est fixé par η.",
+  "legende_titre": "Avant et après le renommage, pour p = 2",
+  "lecture": [
+   "À gauche, en bleu, la résolvante c − c′ et son carré.",
+   "À droite, en orange, la résolvante après η : c′ − c, et son carré.",
+   "Le signe égal vert entre les deux carrés dit que ce nombre ne change pas."
+  ],
+  "a_voir": "Les deux résolvantes sont opposées, les deux carrés sont égaux."
+ },
+ {
+  "code": "64-161",
+  "a_dire": "Pour p = 2, la résolvante est c − c′ et son carré est le discriminant : c’est la racine carrée de Δ.",
+  "legende_titre": "La différence des deux racines, au carré",
+  "lecture": [
+   "Sur la droite graduée, les deux points bleus c′ et c ont pour somme 3 et pour produit 1.",
+   "L’accolade bleue est leur différence c − c′, qui vaut √5.",
+   "La case bleue calcule le carré : 9 − 4 = 5.",
+   "La case verte donne le même nombre comme discriminant Δ."
+  ],
+  "a_voir": "Le carré de la différence des racines est le discriminant."
+ },
+ {
+  "code": "64-162",
+  "a_dire": "Quand le corps de base grandit de F à K, le groupe de Galois sur K est un sous-groupe du groupe sur F.",
+  "legende_titre": "Un groupe de 3 dans un groupe de 6",
+  "lecture": [
+   "La grande case bleue est le groupe sur F : 6 éléments.",
+   "Le cadre violet est le groupe sur K : 3 éléments, tous pris parmi les 6.",
+   "Les 3 disques bleus restants sont les éléments en plus."
+  ],
+  "a_voir": "Le petit groupe est entièrement contenu dans le grand."
+ },
+ {
+  "code": "64-163",
+  "a_dire": "On peut supposer le sommet de la tour normal sur F, en ajoutant les images de la tour par les renommages.",
+  "legende_titre": "Compléter la tour avec les images",
+  "lecture": [
+   "À gauche, le cercle porte les trois solutions ; seule la racine cubique de 2 (bleue) est dans la tour.",
+   "À droite, la flèche orange ajoute les images : les trois solutions sont présentes.",
+   "Les disques pleins sont les solutions contenues dans la tour."
+  ],
+  "a_voir": "Après l’ajout des images, les trois solutions sont dans la tour."
+ },
+ {
+  "code": "64-164",
+  "a_dire": "Une tour de radicaux normale, avec F(z) en deuxième étage, donne un groupe H résoluble : un étage abélien puis des étages cycliques.",
+  "legende_titre": "De la tour de corps au groupe H",
+  "lecture": [
+   "Les trois cases bleues sont la tour : Q, F(z), puis le sommet.",
+   "La flèche du bas est abélienne (lemme 1) ; celle du haut est cyclique (lemme 2).",
+   "La flèche « Galois » mène à la case verte : H est résoluble."
+  ],
+  "a_voir": "Chaque étage de la tour est abélien ou cyclique, donc H est résoluble."
+ },
+ {
+  "code": "64-165",
+  "a_dire": "G est un quotient de H, car restreindre un renommage du sommet à E donne un renommage de E ; G est donc résoluble.",
+  "legende_titre": "De H à G par restriction",
+  "lecture": [
+   "Dans la grande case grise, le sommet K contient la case bleue E.",
+   "La case bleue H (6 éléments) est le groupe du sommet.",
+   "La flèche orange restreint à E et donne la case verte G (6 éléments)."
+  ],
+  "a_voir": "Restreindre à E envoie H sur G : G est un quotient de H."
+ },
+ {
+  "code": "64-166",
+  "a_dire": "Un groupe résoluble d’ordre n donne une suite de facteurs ℤ/p, avec p qui divise n, donc une tour où le lemme 3 s’applique.",
+  "legende_titre": "La suite de composition pour n = 6",
+  "lecture": [
+   "La case bleue du haut est G, à 6 éléments.",
+   "La case orange est le groupe après ajout de z : 3 éléments.",
+   "La case grise du bas est l’identité ; le facteur est ℤ/3.",
+   "La case verte, reliée au facteur par une flèche, dit que p divise n : 3 divise 6."
+  ],
+  "a_voir": "Le nombre premier du facteur divise l’ordre du groupe."
+ },
+ {
+  "code": "64-167",
+  "a_dire": "La tour de corps et la tour de groupes se reflètent : mêmes degrés, 2 puis 3.",
+  "legende_titre": "Deux tours en miroir",
+  "lecture": [
+   "À gauche, en bleu, la tour de corps.",
+   "À droite, en violet, la tour de groupes : 6, 3, 1 éléments.",
+   "Les flèches doubles orange relient chaque corps à son groupe.",
+   "Les nombres 2 et 3 sont les mêmes des deux côtés."
+  ],
+  "a_voir": "Les deux colonnes portent les mêmes nombres."
+ },
+ {
+  "code": "64-168",
+  "a_dire": "Pour x³ − 2 sur ℚ, le corps E est de degré 6 et son groupe est S₃, avec la suite S₃ ⊃ A₃ ⊃ {e}.",
+  "legende_titre": "Les trois solutions et la tour de degré 6",
+  "lecture": [
+   "Le cercle porte les trois solutions bleues ; les traits orange marquent l’angle de 120°.",
+   "À droite, la tour Q, Q(j), E a des étages de degré 2 puis 3.",
+   "Le résultat en vert est le produit 2 × 3 = 6."
+  ],
+  "a_voir": "Le degré de la tour est le produit de ses deux étages."
+ },
+ {
+  "code": "64-169",
+  "a_dire": "Côté corps, j est une racine carrée (degré 2, ℤ/2), puis la racine cubique de 2 (degré 3, ℤ/3).",
+  "legende_titre": "Chaque étage : un radical et un groupe",
+  "lecture": [
+   "Chaque ligne a trois cases : le corps bleu, le radical orange, le groupe violet.",
+   "La première ligne est de degré 2 avec une racine carrée.",
+   "La seconde est de degré 3 avec une racine cubique."
+  ],
+  "a_voir": "Le degré de l’étage, le radical et le groupe se correspondent."
+ },
+ {
+  "code": "64-170",
+  "a_dire": "Les deux radicaux de Cardan, racine carrée puis cubique, sont la suite de composition de S₃.",
+  "legende_titre": "Cardan face à la suite de S₃",
+  "lecture": [
+   "À gauche, en violet, la suite S₃ de 6, A₃ de 3, {e} de 1, avec les facteurs 2 et 3.",
+   "À droite, en orange, la racine carrée puis la racine cubique.",
+   "Les flèches vertes doubles relient chaque facteur à son radical."
+  ],
+  "a_voir": "Le facteur 2 correspond à la racine carrée, le facteur 3 à la racine cubique."
+ },
+ {
+  "code": "64-171",
+  "a_dire": "Il faut une équation entière dont le groupe est S₅ : elle n’est alors pas résoluble par radicaux.",
+  "legende_titre": "Ce qu’il faut trouver",
+  "lecture": [
+   "En haut à gauche, le groupe S₅ de 120 éléments.",
+   "La flèche verte « Galois » mène à « pas de radicaux ».",
+   "En bas, si G n’est pas S₅, la question « résoluble ? » reste ouverte (rouge)."
+  ],
+  "a_voir": "Seul le cas G = S₅ conduit à l’absence de radicaux."
+ },
+ {
+  "code": "64-172",
+  "a_dire": "Le polynôme x⁵ − 6x³ − 27x − 3 prend les valeurs −3, −3 et 529 en 0, 3 et 4.",
+  "legende_titre": "Trois valeurs du polynôme de Judson",
+  "lecture": [
+   "Chaque ligne a la valeur de x en orange et le calcul en bleu.",
+   "À droite, un signe donne le signe du résultat.",
+   "Les valeurs en 0 et 3 sont négatives, celle en 4 est positive."
+  ],
+  "a_voir": "f(0) et f(3) valent −3, f(4) vaut 529."
+ },
+ {
+  "code": "64-173",
+  "a_dire": "La courbe de f coupe l’axe en trois points r₁, r₂, r₃ et change de sens en x ≈ ±2,18.",
+  "legende_titre": "La courbe de f",
+  "lecture": [
+   "La courbe bleue coupe l’axe horizontal en trois points orange.",
+   "Les deux points gris sont les changements de sens, avec leurs valeurs.",
+   "Les trois racines sont près de −2,99, −0,11 et 3,01."
+  ],
+  "a_voir": "La courbe traverse l’axe trois fois."
+ },
+ {
+  "code": "64-174",
+  "a_dire": "Le produit x(x − 3)(x + 3)(x² + 3) s’annule en −3, 0, 3 ; abaisser de 3 déplace très peu ces zéros.",
+  "legende_titre": "Abaisser la courbe de 3",
+  "lecture": [
+   "À gauche, la courbe grise est le produit, la bleue est f ; les zéros du produit sont −3, 0, 3.",
+   "À droite, le zoom près de 3 montre la flèche orange : la courbe descend de 3.",
+   "Le point vert est la racine de f, tout près du point gris 3."
+  ],
+  "a_voir": "La racine de f est tout près de 3."
+ },
+ {
+  "code": "64-175",
+  "a_dire": "Avec p = 3, f est irréductible par Eisenstein, donc cinq racines distinctes et un corps de degré 5.",
+  "legende_titre": "Les coefficients et le nombre premier 3",
+  "lecture": [
+   "Les six cases sont les coefficients 1, 0, −6, 0, −27, −3.",
+   "La case violette (1) n’est pas divisible par 3 ; les cases vertes le sont.",
+   "La dernière case (−3) n’est pas divisible par 9 : elle est en orange.",
+   "La case verte du bas donne la conclusion."
+  ],
+  "a_voir": "Les trois conditions du critère sont vérifiées."
+ },
+ {
+  "code": "64-176",
+  "a_dire": "Les signes de f(−3), f(−2), f(0), f(4) changent trois fois : il y a au moins trois racines réelles.",
+  "legende_titre": "Quatre valeurs, trois changements de signe",
+  "lecture": [
+   "Les cases orange du haut sont les points −3, −2, 0, 4.",
+   "Dessous, les valeurs −3, 67, −3, 529 ; grises si négatives, vertes si positives.",
+   "Entre deux valeurs de signes opposés, un point bleu marque une racine."
+  ],
+  "a_voir": "Chaque changement de signe cache une racine."
+ },
+ {
+  "code": "64-177",
+  "a_dire": "Une courbe sans saut qui passe de −3 à 67 passe par zéro ; avec un saut, ce n’est pas sûr.",
+  "legende_titre": "Passer de −3 à 67",
+  "lecture": [
+   "À gauche, la courbe bleue sans saut part de −3, finit à 67 et coupe la ligne du zéro (point vert).",
+   "À droite, la courbe a un saut en pointillé rouge : elle ne passe pas par zéro.",
+   "La ligne grise en pointillé est le niveau zéro."
+  ],
+  "a_voir": "Sans saut, la courbe passe par zéro."
+ },
+ {
+  "code": "64-178",
+  "a_dire": "f′ s’annule en x ≈ ±2,18, donc trois morceaux et au plus trois racines réelles.",
+  "legende_titre": "Où la pente s’annule",
+  "lecture": [
+   "En haut, la parabole orange est 5u² − 18u − 27 avec u = x² : une solution négative (rouge) refusée, une positive (verte) gardée.",
+   "De u positif on tire x = ±√u.",
+   "En bas, trois cases : monte, descend, monte, séparées par −2,18 et 2,18."
+  ],
+  "a_voir": "La courbe a trois morceaux, donc au plus trois racines réelles."
+ },
+ {
+  "code": "64-179",
+  "a_dire": "La conjugaison complexe échange r₄ et r₅ et laisse r₁, r₂, r₃ en place : c’est la transposition (r₄ r₅).",
+  "legende_titre": "La conjugaison échange deux racines",
+  "lecture": [
+   "Les trois points gris sont les racines réelles, sur l’axe.",
+   "Les deux points orange r₄ et r₅ sont de part et d’autre de l’axe.",
+   "La flèche orange double les échange."
+  ],
+  "a_voir": "Seules r₄ et r₅ bougent."
+ },
+ {
+  "code": "64-180",
+  "a_dire": "5 divise le degré, donc 5 divise l’ordre de G, et le théorème de Cauchy donne un 5-cycle.",
+  "legende_titre": "De 5 à un 5-cycle",
+  "lecture": [
+   "À gauche, la tour Q, Q(r₁), K : le degré de Q(r₁) sur Q est 5.",
+   "À droite, les cinq racines bleues sont parcourues par des flèches vertes : un 5-cycle.",
+   "Le texte vert rappelle que 5 divise l’ordre de G."
+  ],
+  "a_voir": "Le nombre 5 de la tour devient un cycle de longueur 5."
+ },
+ {
+  "code": "64-181",
+  "a_dire": "Pour p premier, un transposition et un p-cycle engendrent S_p ; pour p = 4, non premier, ils ne suffisent pas.",
+  "legende_titre": "Le lemme, et son cas faux pour 4",
+  "lecture": [
+   "Le carré porte 4 sommets, le 4-cycle en bleu et la transposition (1 3) en orange.",
+   "La case bleue dit qu’ils engendrent 8 éléments.",
+   "La case rouge dit que les 24 éléments de S₄ ne sont pas atteints."
+  ],
+  "a_voir": "Avec 4, qui n’est pas premier, on n’obtient pas tout S₄."
+ },
+ {
+  "code": "64-182",
+  "a_dire": "Avec (12) et (12345), on obtient (13), (14), (15), puis toutes les transpositions.",
+  "legende_titre": "Les transpositions par conjugaison",
+  "lecture": [
+   "Les cinq disques bleus sont 1 à 5.",
+   "Les traits partant de 1 sont les transpositions (12), (13), (14), (15) ; 1 revient à sa place dans (1j)(1i)(1j).",
+   "Le trait vert est (35), obtenu par (13)(15)(13).",
+   "En bas, (12)(12345) donne (2345)."
+  ],
+  "a_voir": "On passe de (12) à toutes les transpositions."
+ },
+ {
+  "code": "64-183",
+  "a_dire": "Les quatre pas donnent G = S₅, non résoluble, donc pas de radicaux pour cette équation.",
+  "legende_titre": "Les pas de la preuve",
+  "lecture": [
+   "La colonne bleue liste les quatre pas dans l’ordre.",
+   "La flèche orange du bas mène à G = S₅ (120 éléments).",
+   "Puis à « non résoluble », puis à « pas de radicaux », en vert."
+  ],
+  "a_voir": "Chaque pas mène au suivant jusqu’à la conclusion."
+ },
+ {
+  "code": "64-184",
+  "a_dire": "On peut approcher r₁ autant qu’on veut, mais il n’existe pas d’expression finie en radicaux.",
+  "legende_titre": "Approcher n’est pas écrire",
+  "lecture": [
+   "À gauche, trois intervalles de plus en plus courts (0,1 ; 0,01 ; 0,001) entourent le point vert r₁.",
+   "En bas, r₁ ≈ −2,9859.",
+   "À droite, la case rouge : une expression finie en radicaux n’existe pas."
+  ],
+  "a_voir": "L’approximation est possible, l’écriture en radicaux ne l’est pas."
+ },
+ {
+  "code": "64-185",
+  "a_dire": "Si les cinq racines étaient réelles, la conjugaison serait l’identité et le troisième pas tomberait.",
+  "legende_titre": "Trois racines réelles contre cinq",
+  "lecture": [
+   "À gauche, trois points réels gris et deux points orange échangés : une transposition.",
+   "À droite, cinq points gris sur l’axe : rien ne bouge.",
+   "Le texte rouge dit que la conjugaison est l’identité."
+  ],
+  "a_voir": "Sans racines non réelles, il n’y a pas de transposition."
+ },
+ {
+  "code": "64-186",
+  "a_dire": "Pour x⁵ = 1, le groupe est abélien, il n’y a qu’un étage, un seul radical : l’équation est résoluble.",
+  "legende_titre": "Les racines de x⁵ = 1 en un étage",
+  "lecture": [
+   "Le cercle porte les cinq solutions : 1 en gris, z, z², z³, z⁴ en bleu.",
+   "À droite, une seule flèche orange va de Q à Q(z).",
+   "Le texte vert dit qu’il n’y a qu’un étage."
+  ],
+  "a_voir": "Un seul étage suffit."
+ },
+ {
+  "code": "64-187",
+  "a_dire": "Un groupe simple non abélien comme A₅ n’a aucun sous-groupe intermédiaire : il n’y a pas de tour de radicaux.",
+  "legende_titre": "A₅ : aucun découpage",
+  "lecture": [
+   "La case bleue du haut est A₅, de 60 éléments.",
+   "La case grise du bas est l’identité.",
+   "La flèche rouge relie les deux directement, sans intermédiaire ; son seul facteur est A₅, non abélien."
+  ],
+  "a_voir": "Entre A₅ et {e}, il n’y a rien."
+ },
+ {
+  "code": "64-188",
+  "a_dire": "En caractéristique 2, x² − 1 devient (x − 1)² : la racine 1 est double, et les lemmes 2 et 3 ne s’appliquent plus.",
+  "legende_titre": "Deux racines, puis une racine double",
+  "lecture": [
+   "En haut, dans ℚ, les deux points bleus −1 et 1 sont deux racines distinctes.",
+   "En bas, en caractéristique 2, 1 + 1 = 0 : il ne reste que 0 et 1.",
+   "Le point orange 1 est entouré d’un cercle : racine double, x² − 1 = (x − 1)²."
+  ],
+  "a_voir": "Deux racines deviennent une seule, double."
+ },
+ {
+  "code": "64-189",
+  "a_dire": "Le groupe de l’équation générale est S_n, non résoluble pour n ≥ 5 : aucune formule par radicaux.",
+  "legende_titre": "Pourquoi pas de formule générale",
+  "lecture": [
+   "La case grise du haut est l’équation générale de degré n.",
+   "Deux faits : G = S_n (bleu) et S_n non résoluble pour n ≥ 5 (violet).",
+   "Les deux mènent à la case verte : aucune formule."
+  ],
+  "a_voir": "Les deux faits ensemble donnent la conclusion."
+ },
+ {
+  "code": "64-190",
+  "a_dire": "Les formules existent aux degrés 2, 3, 4 car S₂, S₃, S₄ sont résolubles ; elles s’arrêtent au degré 5 car A₅ est simple.",
+  "legende_titre": "Pourquoi les formules s’arrêtent",
+  "lecture": [
+   "Les quatre cases donnent les degrés 2 à 5 avec 2, 6, 24, 120 éléments.",
+   "Les trois premières, vertes, sont sous l’accolade « résolubles : formule ».",
+   "La dernière, rouge, contient A₅ (60), simple : pas de formule."
+  ],
+  "a_voir": "La frontière passe entre le degré 4 et le degré 5."
+ },
+ {
+  "code": "64-191",
+  "a_dire": "Un polynôme irréductible de degré premier 5 avec exactement deux racines non réelles a un 5-cycle et une transposition, donc S₅.",
+  "legende_titre": "x⁵ − 4x + 2 : les ingrédients",
+  "lecture": [
+   "À gauche, deux cases : irréductible (Eisenstein, p = 2) et exactement 2 racines non réelles.",
+   "À droite, ce qu’elles donnent : un 5-cycle et une transposition.",
+   "La case verte du bas : lemme de Judson, S₅."
+  ],
+  "a_voir": "Chaque hypothèse fournit un élément du groupe."
+ },
+ {
+  "code": "64-192",
+  "a_dire": "Les deux suites de ℤ/60 sont deux chemins de 60 à 1 dans un diagramme de Hasse, avec les mêmes facteurs.",
+  "legende_titre": "Deux chemins dans un diagramme",
+  "lecture": [
+   "Chaque disque est un sous-groupe, marqué par son ordre ; 60 en haut et 1 en bas sont gris.",
+   "Le chemin bleu passe par 20, 4, 2 ; le chemin violet par 30, 15, 3.",
+   "Sous chaque chemin, la liste des facteurs : 3, 5, 2, 2 et 2, 2, 5, 3."
+  ],
+  "a_voir": "Deux chemins différents, les mêmes facteurs dans un autre ordre."
+ },
+ {
+  "code": "64-193",
+  "a_dire": "Un polygone à n côtés est constructible si l’ordre du groupe de Galois de ℚ(z) est une puissance de 2 ; le pentagone : 4.",
+  "legende_titre": "Le pentagone et le groupe de ℚ(z)",
+  "lecture": [
+   "Le pentagone bleu a pour sommets 1, z, z², z³, z⁴ sur le cercle.",
+   "La case violette donne l’ordre du groupe : 4.",
+   "La case verte dit 4 = 2 × 2, une puissance de 2, donc règle et compas."
+  ],
+  "a_voir": "Ordre 4, puissance de 2 : le pentagone se construit."
+ },
+ {
+  "code": "64-194",
+  "a_dire": "Une tour dont tous les exposants valent 2 est une construction à la règle et au compas ; cos 72° en est un exemple.",
+  "legende_titre": "Un seul étage d’exposant 2",
+  "lecture": [
+   "Les deux cases bleues sont ℚ et ℚ(√5) ; la flèche orange est une racine carrée.",
+   "Sur la droite graduée, le point vert est (√5 − 1)/4, environ 0,309, le cosinus de 72°."
+  ],
+  "a_voir": "Une seule racine carrée suffit pour écrire ce nombre."
+ },
+ {
+  "code": "64-195",
+  "a_dire": "Un corps à 2 éléments agrandi en corps à 4 éléments a un groupe de Galois cyclique à 2 éléments.",
+  "legende_titre": "Du corps à 2 éléments au corps à 4",
+  "lecture": [
+   "À gauche, la tour : {0, 1} sous le corps à 4 éléments, de degré 2 ; 1 + 1 = 0.",
+   "À droite, le groupe de Galois : e et η, reliés par deux flèches orange en cycle.",
+   "Le groupe est cyclique, à 2 éléments."
+  ],
+  "a_voir": "Le groupe est un cycle : η et ses puissances donnent tout."
+ },
+ {
+  "code": "64-196",
+  "a_dire": "Le chapitre 64 utilise des résultats des chapitres 46, 47, 48, 50 et 56.",
+  "legende_titre": "Les chapitres qui ont servi",
+  "lecture": [
+   "Les cinq cases violettes à gauche sont les 5 chapitres fournis et leur apport.",
+   "Chaque flèche orange entre dans la grande case bleue : le chapitre 64.",
+   "Le chapitre 46 donne cycles et A_n, le 47 les normaux, le 48 les isomorphismes, le 50 le centre et Cauchy, le 56 Eisenstein."
+  ],
+  "a_voir": "Cinq chapitres alimentent celui-ci : 46, 47, 48, 50 et 56."
+ },
+ {
+  "code": "64-197",
+  "a_dire": "Pour x⁵ − 1 = 0, le groupe a 4 éléments, 4 = 2 × 2 : deux racines carrées ; pour quels n est-ce possible ?",
+  "legende_titre": "Deux racines carrées pour n = 5",
+  "lecture": [
+   "La tour bleue va de ℚ à ℚ(z) en deux flèches orange, chacune une racine carrée.",
+   "La case verte rappelle 4 = 2 × 2 : deux étages d’exposant 2.",
+   "Le texte violet pose la question pour d’autres valeurs de n."
+  ],
+  "a_voir": "Deux étages d’exposant 2 pour le groupe de 4 éléments."
+ }
+]

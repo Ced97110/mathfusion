@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+text(ax, 44, 87, r'$n=3$ : $z^3=1$, $z\neq 1$', 'encre', 'm')
+box(ax, 4, 62, 28, 12, 'sujet', label=r'$\mathbb{Q}(z,\sqrt[3]{2})$')
+box(ax, 4, 36, 28, 12, 'sujet', label=r'$F(z)$')
+box(ax, 4, 10, 28, 12, 'sujet', label=r'$F=\mathbb{Q}$')
+arrow(ax, (18, 23), (18, 35), 'varie'); arrow(ax, (18, 49), (18, 61), 'varie')
+text(ax, 22, 29, 'abélien (lemme 1)', 'varie', 's', ha='left')
+text(ax, 22, 55, 'cyclique (lemme 2)', 'varie', 's', ha='left')
+box(ax, 62, 34, 24, 16, 'resultat', label=r'$H$ résoluble')
+arrow(ax, (50, 42), (61, 42), 'varie')
+text(ax, 55, 47, 'Galois', 'varie', 's')
+save(fig, '64-164')

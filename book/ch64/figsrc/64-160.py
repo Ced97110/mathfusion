@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, r'$p=2$, $z=-1$ : $z^{-1}=-1$', 'encre', 'm')
+box(ax, 3, 38, 32, 12, 'sujet', label=r'$(z,c)=c-c^\prime$')
+box(ax, 53, 38, 32, 12, 'varie', label=r'$\eta(z,c)=c^\prime-c$')
+arrow(ax, (36, 44), (52, 44), 'varie')
+text(ax, 44, 48, r'$\eta$', 'varie', 'm')
+for x, r in ((19, 'sujet'), (69, 'varie')):
+    arrow(ax, (x, 37), (x, 29), 'fixe')
+    text(ax, x + 7, 33, 'carré', 'fixe', 's')
+box(ax, 3, 16, 32, 12, 'sujet', label=r'$(c-c^\prime)^2$')
+box(ax, 53, 16, 32, 12, 'varie', label=r'$(c^\prime-c)^2$')
+text(ax, 44, 22, '=', 'resultat', 'xl', weight='bold')
+text(ax, 44, 6, r'même nombre : fixé par $\eta$', 'resultat', 'm')
+save(fig, '64-160')

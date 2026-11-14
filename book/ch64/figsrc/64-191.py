@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(88)
+text(ax, 44, 83, r'$x^5-4x+2$', 'sujet', 'l')
+box(ax, 2, 56, 40, 16, 'sujet', label='irréductible\n(Eisenstein, $p=2$)\ndegré premier 5', size='s')
+box(ax, 2, 28, 40, 16, 'varie', label='exactement 2\nracines non réelles', size='s')
+box(ax, 48, 56, 38, 16, 'resultat', label='5-cycle\n(Cauchy)', size='s')
+box(ax, 48, 28, 38, 16, 'resultat', label='transposition\n(conjugaison)', size='s')
+arrow(ax, (43, 64), (47, 64), 'resultat'); arrow(ax, (43, 36), (47, 36), 'resultat')
+box(ax, 18, 4, 52, 13, 'resultat', label=r'lemme de Judson : $S_5$', size='s')
+arrow(ax, (62, 55), (56, 18), 'resultat'); arrow(ax, (62, 27), (60, 18), 'resultat')
+save(fig, '64-191')

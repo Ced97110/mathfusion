@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(84)
+text(ax, 44, 79, 'sens direct : du grand groupe au quotient', 'encre', 's')
+box(ax, 3, 52, 36, 20, 'sujet', label="grand groupe\n(résoluble)", size='s')
+box(ax, 56, 52, 30, 20, 'resultat', label="quotient :\ngroupe de l'équation", size='s')
+arrow(ax, (39.5, 62), (55.5, 62), 'varie')
+text(ax, 47.5, 66, 'quotient', 'varie', 's')
+text(ax, 44, 36, 'sens réciproque : du groupe au sous-groupe', 'encre', 's')
+box(ax, 3, 6, 36, 20, 'sujet', label="groupe de l'équation\n(résoluble)", size='s')
+box(ax, 56, 6, 30, 20, 'resultat', label="sous-groupe :\nextension plus grande", size='s')
+arrow(ax, (39.5, 16), (55.5, 16), 'varie')
+text(ax, 47.5, 20, 'sous-groupe', 'varie', 's')
+save(fig, '64-105')

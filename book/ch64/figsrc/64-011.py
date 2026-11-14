@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 2, 6, 60, 50, 'varie', dash=True)
+text(ax, 32, 51, 'ont la propriété (à trouver)', 'varie', 's')
+box(ax, 9, 14, 46, 28, 'sujet')
+text(ax, 32, 28, 'résolubles par radicaux', 'sujet', 's')
+text(ax, 76, 40, 'une équation', 'fixe', 's')
+box(ax, 66, 24, 20, 12, 'limite', label='degré 5', size='s')
+line(ax, [(66, 30), (62.5, 30)], 'limite', dash=True)
+text(ax, 76, 19, 'sans la propriété', 'limite', 's')
+text(ax, 76, 14, 'donc non résoluble', 'limite', 's')
+save(fig, '64-011')
