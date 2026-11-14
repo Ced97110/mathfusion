@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+def ligne(y, e, g, back, ok):
+    text(ax, 44, y + 20, e, 'fixe', 's')
+    box(ax, 2, y, 20, 12, 'sujet', label=r'$\mathbb{Q}$')
+    arrow(ax, (22.5, y + 6), (33.5, y + 6), 'varie')
+    text(ax, 28, y + 10, r'$\mathrm{Gal}$', 'varie', 's')
+    box(ax, 34, y, 20, 12, 'fixe', label=g, size='s')
+    arrow(ax, (54.5, y + 6), (65.5, y + 6), 'varie')
+    text(ax, 60, y + 10, r'$\mathrm{Inv}$', 'varie', 's')
+    box(ax, 66, y, 20, 12, 'resultat' if ok else 'limite', label=back, size='s')
+ligne(40, r'$E=\mathbb{Q}(\sqrt{2})$ : on retombe sur $F$', r'$\{1,\sigma\}$', r'$\mathbb{Q}$', True)
+ligne(8, r'$E=\mathbb{Q}(r)$ : on ne retombe pas', r'$\{1\}$', r'$\mathbb{Q}(r)$', False)
+text(ax, 44, 3, r'$r$ : racine cubique de 2', 'fixe', 's')
+save(fig, '63-080')

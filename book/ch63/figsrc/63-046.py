@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 20, 57, 'ce livre', 'sujet', 's')
+text(ax, 68, 57, 'Judson', 'autre', 's')
+box(ax, 3, 38, 34, 14, 'sujet', label=r'$\mathrm{Gal}(E/F)$')
+box(ax, 51, 38, 34, 14, 'autre', label=r'$G(E/F)$')
+text(ax, 44, 45, '=', 'encre', 'xl', weight='bold')
+box(ax, 12, 6, 64, 18, 'resultat', label='automorphismes de $E$\nqui fixent $F$')
+arrow(ax, (20, 37), (34, 25), 'fixe')
+arrow(ax, (68, 37), (54, 25), 'fixe')
+save(fig, '63-046')

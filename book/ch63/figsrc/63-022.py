@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+text(ax, 44, 68, r'$\{1\}\subseteq\langle\sigma\rangle\subseteq G$', 'sujet', 'l')
+box(ax, 11, 44, 22, 11, 'sujet', label=r'$G$')
+box(ax, 11, 26, 22, 11, 'sujet', label=r'$\langle\sigma\rangle$')
+box(ax, 11, 8, 22, 11, 'sujet', label=r'$\{1\}$')
+line(ax, [(22, 44), (22, 37)], 'fixe', lw=1.2)
+line(ax, [(22, 26), (22, 19)], 'fixe', lw=1.2)
+arrow(ax, (44, 10), (44, 52), 'varie')
+text(ax, 50, 38, 'un trait :', 'encre', 'm', ha='left')
+text(ax, 50, 31, r'bas $\subseteq$ haut', 'encre', 'm', ha='left')
+save(fig, '63-022')

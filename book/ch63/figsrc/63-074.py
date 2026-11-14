@@ -1,0 +1,20 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+ox, oy, u = 16, 38, 9.0
+line(ax, [(ox - 8, oy), (80, oy)], 'resultat', lw=2.0)
+line(ax, [(ox, 8), (ox, 68)], 'fixe', lw=0.9)
+text(ax, 84, oy - 3.5, r'$a$', 'fixe', 'm')
+text(ax, ox + 4, 68, r'$b$', 'fixe', 'm')
+for a in (1, 2, 4, 5, 6):
+    disc(ax, ox + a * u, oy, 1.3, 'resultat')
+P = (ox + 3 * u, oy + 2 * u)
+Q = (ox + 3 * u, oy - 2 * u)
+disc(ax, P[0], P[1], 1.6, 'sujet')
+disc(ax, Q[0], Q[1], 1.6, 'autre')
+arrow(ax, (P[0], P[1] - 2.5), (Q[0], Q[1] + 2.5), 'varie')
+text(ax, P[0] + 3, P[1], r'$3+2\sqrt{2}$', 'sujet', 's', ha='left')
+text(ax, Q[0] + 3, Q[1], r'$3-2\sqrt{2}$', 'autre', 's', ha='left')
+text(ax, P[0] - 3, oy + 7, r'$\sigma$', 'varie', 'm')
+text(ax, 60, oy + 5, r'$\mathbb{Q}$ : points fixes ($b=0$)', 'resultat', 's')
+text(ax, 44, 72, r'$\sigma$ : $(a,b)\mapsto(a,-b)$', 'fixe', 's')
+save(fig, '63-074')

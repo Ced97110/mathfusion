@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+box(ax, 14, 42, 60, 12, 'fixe', label=r'$E=F=\mathbb{Q}$')
+arrow(ax, (28, 41.5), (20, 33.5), 'varie')
+arrow(ax, (60, 41.5), (68, 33.5), 'varie')
+box(ax, 2, 20, 36, 13, 'autre', label=r'degré $[E:F]=1$', size='s')
+box(ax, 50, 20, 36, 13, 'sujet', label=r'$|G|=1$ : identité', size='s')
+text(ax, 44, 26.5, r'$=$', 'resultat', 'l')
+text(ax, 44, 9, r'$q\mapsto q$ pour toute fraction $q$', 'fixe', 's')
+save(fig, '63-090')

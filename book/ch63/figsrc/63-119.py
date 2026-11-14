@@ -1,0 +1,28 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+import math
+fig, ax = canvas(104)
+text(ax, 44, 99, r'$\gamma=\alpha+a\beta$, $a\in F$', 'sujet', 'm')
+f = numberline(ax, 14, 74, 78, -2, 2, step=1, labels=False, arrow_right=False)
+for v, l in [(-math.sqrt(3 / 5), r'$-\sqrt{3/5}$'), (0, r'$0$')]:
+    disc(ax, f(v), 78, 1.8, 'limite')
+    text(ax, f(v), 84, l, 'limite', 's')
+disc(ax, f(1), 78, 1.8, 'resultat')
+text(ax, f(1), 84, r'$a=1$', 'resultat', 's')
+text(ax, 44, 69, r'$a$ à écarter : $\alpha_i+a\beta_j=\gamma$, $j\neq1$', 'limite', 's')
+text(ax, 44, 59, r'ici $\alpha=\sqrt{3}$, $\beta=\sqrt{5}$, $a=1$', 'sujet', 's')
+g = numberline(ax, 12, 80, 38, -3, 6, step=1, labels=False, arrow_right=False)
+h = numberline(ax, 12, 80, 18, -3, 6, step=1, labels=False, arrow_right=False)
+s5, s3 = math.sqrt(5), math.sqrt(3)
+text(ax, 4, 44, r'$g$', 'sujet', 'm')
+text(ax, 4, 24, r'$h$', 'varie', 'm')
+for v in (-s5, s5):
+    disc(ax, g(v), 38, 1.8, 'sujet')
+text(ax, g(-s5), 44, r'$-\sqrt{5}$', 'sujet', 's')
+disc(ax, h(s5), 18, 1.8, 'varie')
+disc(ax, h(s5 + 2 * s3), 18, 1.8, 'varie')
+text(ax, h(s5 + 2 * s3), 24, r'$\sqrt{5}+2\sqrt{3}$', 'varie', 's')
+line(ax, [(g(s5), 20), (g(s5), 36)], 'resultat', dash=True)
+disc(ax, g(s5), 38, 2.8, 'resultat', fill=False)
+text(ax, g(s5), 46, r'$\beta=\sqrt{5}$', 'resultat', 's')
+text(ax, 44, 6, r'une seule racine commune : $\beta$', 'resultat', 's')
+save(fig, '63-119')

@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(60)
+text(ax, 44, 55, r'$c_0+c_1\alpha+\cdots\ \mapsto\ c_0+c_1\beta+\cdots$', 'fixe', 'm')
+box(ax, 2, 32, 36, 12, 'sujet', label=r'$3+4r+5r^2$')
+box(ax, 50, 32, 36, 12, 'autre', label=r'$3+4(jr)+5(jr)^2$')
+arrow(ax, (38.5, 38), (49.5, 38), 'varie')
+text(ax, 44, 33, r'$r\mapsto jr$', 'varie', 's')
+box(ax, 2, 10, 36, 12, 'sujet', label=r'$1+r$')
+box(ax, 50, 10, 36, 12, 'autre', label=r'$1+jr$')
+arrow(ax, (38.5, 16), (49.5, 16), 'varie')
+text(ax, 44, 11, r'$r\mapsto jr$', 'varie', 's')
+text(ax, 44, 3.5, r'$\alpha=r$, $\beta=jr$ ; les coefficients restent', 'fixe', 's')
+save(fig, '63-069')

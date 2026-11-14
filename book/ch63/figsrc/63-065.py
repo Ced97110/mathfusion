@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+text(ax, 44, 57, r'$f=x^2-2$ (polynôme minimal)', 'fixe', 'm')
+box(ax, 2, 24, 28, 14, 'sujet', label=r'$\alpha=\sqrt{2}$')
+box(ax, 52, 38, 34, 14, 'resultat', label=r'$\sigma(\alpha)=\sqrt{2}$')
+box(ax, 52, 10, 34, 14, 'resultat', label=r'$\sigma(\alpha)=-\sqrt{2}$')
+arrow(ax, (30.5, 33), (51.5, 43), 'varie')
+arrow(ax, (30.5, 29), (51.5, 19), 'varie')
+text(ax, 40, 42.5, r'$\sigma$', 'varie', 'm')
+text(ax, 40, 19.5, r'$\sigma$', 'varie', 'm')
+text(ax, 44, 3.5, r'les deux sont racines de $f$ : conjugués', 'resultat', 's')
+save(fig, '63-065')

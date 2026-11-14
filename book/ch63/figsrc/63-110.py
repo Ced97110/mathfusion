@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 3, 30, 34, 22, 'sujet', label='Jacobson\nthéorème 4.7', size='m')
+box(ax, 51, 30, 34, 22, 'autre', label='Judson\nthéorème 23.19', size='m')
+text(ax, 44, 41, '=', 'resultat', 'xl', weight='bold')
+text(ax, 44, 58, 'même résultat', 'resultat', 's')
+text(ax, 20, 23, 'définitions de\nJacobson', 'sujet', 's')
+text(ax, 68, 23, 'définitions de\nJudson', 'autre', 's')
+arrow(ax, (28, 12), (60, 12), 'varie', both=True)
+text(ax, 44, 6, 'à comparer', 'varie', 's')
+save(fig, '63-110')

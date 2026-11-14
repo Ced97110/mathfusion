@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(86)
+box(ax, 22, 62, 44, 17, 'sujet', label='(1) corps de décomposition\nde $(x^2-2)(x^2-3)$', size='s')
+box(ax, 47, 14, 38, 17, 'sujet', label=r'(2) $\mathrm{Inv}\,G=\mathbb{Q}$' + '\n' + r'$|G|=4$', size='s')
+box(ax, 3, 14, 38, 17, 'sujet', label='(3) degré 4, normale,\nséparable', size='s')
+arrow(ax, (58, 62), (70, 31), 'varie')
+arrow(ax, (47, 22.5), (41, 22.5), 'varie')
+arrow(ax, (18, 31), (30, 62), 'varie')
+text(ax, 75, 47, r'(1) $\Rightarrow$ (2)', 'varie', 's')
+text(ax, 44, 8.5, r'(2) $\Rightarrow$ (3)', 'varie', 's')
+text(ax, 11, 47, r'(3) $\Rightarrow$ (1)', 'varie', 's')
+text(ax, 44, 3, r'$\mathbb{Q}(\sqrt{2},\sqrt{3})/\mathbb{Q}$ : les trois sont vraies', 'resultat', 's')
+save(fig, '63-102')

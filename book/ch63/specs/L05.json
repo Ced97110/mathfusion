@@ -1,0 +1,377 @@
+[
+ {
+  "code": "63-129",
+  "a_dire": "Pour H sous-groupe de G, on pose K = Inv H : la condition (2) donne H = Gal(E/K), la condition (1) donne K = Inv(Gal(E/K)), donc les deux allers-retours redonnent l'objet de départ.",
+  "legende_titre": "Deux allers-retours qui reviennent au départ",
+  "lecture": [
+   "La rangée du haut part du bleu H = {1, σ}, passe par le violet K = ℚ(√3) avec la flèche « Inv », et revient au vert Gal(E/K) = H avec la flèche « Gal ».",
+   "La rangée du bas part de K = ℚ(√3), passe par Gal(E/K) en bleu, et revient au vert Inv(Gal) = K.",
+   "Les cases vertes sont les arrivées : elles sont égales aux départs."
+  ],
+  "a_voir": "Dans les deux rangées, la case verte d'arrivée est la même que la case de départ."
+ },
+ {
+  "code": "63-130",
+  "a_dire": "Comme |H| = [E:K], on peut supprimer |H| des deux côtés de [E:K]×[K:F] = |H|×[G:H], ce qui laisse [G:H] = [K:F].",
+  "legende_titre": "On supprime ce qui est égal, il reste l'indice",
+  "lecture": [
+   "La rangée du haut écrit |G| comme le produit des deux cases [E:K] = 2 et [K:F] = 2.",
+   "La rangée du bas écrit le même |G| comme le produit des cases |H| = 2 et [G:H] = 2.",
+   "Les deux cases grises de gauche sont égales : on les supprime.",
+   "Les deux cases violettes de droite restent : [G:H] = [K:F]."
+  ],
+  "a_voir": "Les cases grises s'annulent entre elles, les cases violettes restent égales."
+ },
+ {
+  "code": "63-131",
+  "a_dire": "H est normal exactement quand η(K) = K pour tout η ; alors la restriction à K envoie G sur Gal(K/ℚ), son noyau est H, et le premier théorème d'isomorphisme donne G/H ≅ Gal(K/ℚ).",
+  "legende_titre": "La restriction à K, son noyau, le quotient",
+  "lecture": [
+   "En haut, la case orange « η(K) = K » et la case bleue « H normal » sont reliées par une double flèche « ssi ».",
+   "Au milieu, la flèche orange « restriction » va de G (4 éléments) vers Gal(K/ℚ) (2 éléments).",
+   "En bas, la flèche descend de G vers le noyau, qui est H = {1, σ}, et la case verte donne G/H ≅ Gal(K/ℚ).",
+   "La ligne du bas donne le cas : η(√3) = ±√3 reste dans K."
+  ],
+  "a_voir": "Quatre éléments se restreignent en deux éléments, et ce qui disparaît est le noyau H."
+ },
+ {
+  "code": "63-132",
+  "a_dire": "L'énoncé de Judson est un cas particulier de celui de Jacobson : sur un corps fini ou de caractéristique 0, la séparabilité est automatique et il reste à vérifier la normalité.",
+  "legende_titre": "Un énoncé à l'intérieur de l'autre",
+  "lecture": [
+   "La grande case bleue est l'énoncé de Jacobson : séparable ET normale.",
+   "La case violette à l'intérieur est l'énoncé de Judson : F fini ou de caractéristique 0.",
+   "Dans la case violette, la case verte dit que la séparabilité est automatique, la case orange dit qu'il reste la normalité à vérifier."
+  ],
+  "a_voir": "Le cas de Judson est dessiné dans le cas de Jacobson, avec une seule condition à vérifier."
+ },
+ {
+  "code": "63-133",
+  "a_dire": "Pour σ dans G, τ dans H et α dans K, σ⁻¹τσ fixe α, donc σ⁻¹τσ est dans H : c'est la définition d'un sous-groupe normal.",
+  "legende_titre": "Suivre α à travers σ, τ, puis σ⁻¹",
+  "lecture": [
+   "En haut, vous lisez les hypothèses : σ dans G, τ dans H = G(E/K), α dans K.",
+   "La case bleue de départ est α.",
+   "La première flèche orange σ envoie α sur σ(α), qui reste dans K parce que K est normale.",
+   "La flèche grise τ ne change rien : τ fixe σ(α), qui est dans K.",
+   "La dernière flèche orange σ⁻¹ ramène à α : la case verte montre que σ⁻¹τσ fixe α."
+  ],
+  "a_voir": "Le nombre α revient à sa valeur de départ après les trois flèches, donc σ⁻¹τσ fixe K et est dans H."
+ },
+ {
+  "code": "63-134",
+  "a_dire": "Le théorème a un ordre : d'abord la bijection, qui repose sur le théorème 4.7 et les deux inégalités, puis trois compléments (ordre, tailles, normalité) qui ne s'énoncent qu'à partir de la bijection.",
+  "legende_titre": "Un étage de base, trois étages qui en dépendent",
+  "lecture": [
+   "En bas, la case grise « deux inégalités » est le point de départ.",
+   "Au-dessus, la case violette « théorème 4.7 », puis la case bleue « bijection H ↔ K », reliées par des flèches orange.",
+   "En haut, trois cases vertes : ordre, tailles, normalité. Chacune reçoit une flèche de la bijection."
+  ],
+  "a_voir": "Les trois compléments s'appuient tous sur la même case bleue, la bijection."
+ },
+ {
+  "code": "63-135",
+  "a_dire": "ℚ(√2, √3) est le corps de décomposition de (x² − 2)(x² − 3), polynôme séparable à quatre racines distinctes : l'extension est galoisienne de degré 4 et G a 4 éléments.",
+  "legende_titre": "Quatre racines, un corps de degré 4",
+  "lecture": [
+   "Les deux cases grises sont les facteurs x² − 2 et x² − 3.",
+   "Chaque facteur donne deux disques bleus : √2 et −√2, √3 et −√3. Ce sont quatre racines distinctes.",
+   "Les flèches orange du bas vont des quatre racines vers la case verte E = ℚ(√2, √3), qui est de degré 4 avec 4 éléments dans G."
+  ],
+  "a_voir": "Les quatre racines distinctes engendrent le corps E, de degré 4."
+ },
+ {
+  "code": "63-136",
+  "a_dire": "Les ordres des sous-groupes de G divisent 4, donc valent 1, 2 ou 4 ; il y a trois sous-groupes d'ordre 2, un d'ordre 1 et un d'ordre 4 : cinq sous-groupes.",
+  "legende_titre": "Compter les sous-groupes d'un groupe à 4 éléments",
+  "lecture": [
+   "La case bleue du haut est G, d'ordre 4, et la case bleue du bas est {1}, d'ordre 1.",
+   "Les trois cases orange du milieu sont les sous-groupes d'ordre 2 : ⟨σ⟩, ⟨τ⟩ et ⟨στ⟩.",
+   "Les traits gris relient G aux trois sous-groupes, puis les trois sous-groupes à {1}.",
+   "Le total en vert est 1 + 3 + 1 = 5."
+  ],
+  "a_voir": "Cinq cases en tout : une en haut, trois au milieu, une en bas."
+ },
+ {
+  "code": "63-137",
+  "a_dire": "σ change le signe de b√2 et de d√6 et laisse a et c√3 en place ; un élément est fixe exactement quand b = d = 0, donc le corps fixe de ⟨σ⟩ est ℚ(√3).",
+  "legende_titre": "Le corps fixe de ⟨σ⟩ lu coordonnée par coordonnée",
+  "lecture": [
+   "La rangée du haut, en bleu, écrit les quatre termes de l'élément : a, b√2, c√3, d√6.",
+   "La rangée du bas montre ce que devient chaque terme par σ : a et c√3 restent en gris, b√2 et d√6 changent de signe en orange.",
+   "La ligne verte du bas dit : fixe exactement quand b = d = 0, donc Inv⟨σ⟩ = ℚ(√3)."
+  ],
+  "a_voir": "Seules les deux colonnes orange bougent ; elles doivent être nulles."
+ },
+ {
+  "code": "63-138",
+  "a_dire": "Quand le générateur ne fait que changer des signes aux éléments d'une base, on écrit l'élément général, on applique le générateur, et l'élément est fixe quand les coordonnées dont le signe change sont nulles : ici c = d = 0 et Inv⟨τ⟩ = ℚ(√2).",
+  "legende_titre": "Une méthode : quelles coordonnées changent de signe ?",
+  "lecture": [
+   "Les deux cases grises de gauche, a et b√2, restent en place par τ.",
+   "Les deux cases orange de droite, c√3 et d√6, changent de signe.",
+   "La flèche verte descend des cases qui restent vers la case verte : c = d = 0 et Inv⟨τ⟩ = ℚ(√2)."
+  ],
+  "a_voir": "Les cases qui restent grises forment le corps fixe a + b√2."
+ },
+ {
+  "code": "63-139",
+  "a_dire": "στ change √2 en −√2 et √3 en −√3, mais √6 = √2 × √3 change deux fois de signe, donc reste en place : le corps fixe de ⟨στ⟩ est ℚ(√6).",
+  "legende_titre": "Deux changements de signe se compensent",
+  "lecture": [
+   "Les deux premières rangées montrent que στ envoie √2 sur −√2 et √3 sur −√3 : ils bougent (cases orange).",
+   "La troisième rangée écrit √6 = √2 × √3 à gauche et son image (−√2)(−√3) = √6 à droite, en vert.",
+   "Le texte du bas rappelle : moins × moins = plus."
+  ],
+  "a_voir": "√6 est la seule des trois racines qui retrouve sa valeur."
+ },
+ {
+  "code": "63-140",
+  "a_dire": "Le groupe entier fixe seulement ℚ, le groupe réduit à l'identité fixe tout E ; tout sous-groupe intermédiaire donne un corps entre les deux, dans l'ordre inverse.",
+  "legende_titre": "Les deux extrémités de la correspondance",
+  "lecture": [
+   "À gauche, de haut en bas : G (bleu), les trois sous-groupes d'ordre 2 (gris), {1} (bleu).",
+   "À droite, de haut en bas : E = Inv{1}, les trois corps du milieu, ℚ = Inv G (violet).",
+   "Les deux flèches orange « Inv » se croisent : G va vers le bas (ℚ) et {1} va vers le haut (E).",
+   "Le trait pointillé gris relie le milieu au milieu."
+  ],
+  "a_voir": "Les flèches se croisent : le plus gros groupe donne le plus petit corps."
+ },
+ {
+  "code": "63-141",
+  "a_dire": "Pour H = ⟨σ⟩, on vérifie (β) : |H| = 2 = [E:ℚ(√3)] et [G:H] = 4/2 = 2 = [ℚ(√3):ℚ].",
+  "legende_titre": "Vérifier (β) sur un sous-groupe",
+  "lecture": [
+   "La colonne bleue de gauche montre les groupes : {1} avec 1 élément, H = ⟨σ⟩ avec 2, G avec 4.",
+   "La colonne violette de droite montre les corps : E, ℚ(√3), ℚ.",
+   "La flèche orange « Inv » relie H à ℚ(√3).",
+   "Les deux lignes vertes comparent les nombres : |H| = 2 = [E:ℚ(√3)] et [G:H] = 2 = [ℚ(√3):ℚ]."
+  ],
+  "a_voir": "Chaque nombre de la colonne des groupes se retrouve égal dans la colonne des corps."
+ },
+ {
+  "code": "63-142",
+  "a_dire": "Les trois éléments différents de 1 ne fixent pas √2 + √3 ; seul 1 le fixe, donc ℚ(√2 + √3) a pour groupe {1} et vaut E : un seul nombre engendre tout le corps.",
+  "legende_titre": "Un seul nombre engendre E",
+  "lecture": [
+   "Chaque rangée donne un élément du groupe à gauche (bleu), l'image de √2 + √3 au milieu, et si le nombre est fixé ou change à droite.",
+   "La rangée verte du haut : l'élément 1 laisse √2 + √3 en place.",
+   "Les trois rangées orange : σ, τ et στ donnent −√2 + √3, √2 − √3 et −√2 − √3, qui changent le nombre.",
+   "Le texte du bas conclut : seul 1 fixe le nombre, donc Gal = {1} et ℚ(√2 + √3) = Inv{1} = E."
+  ],
+  "a_voir": "Une seule rangée est verte : les trois autres changent le nombre, donc le groupe qui le fixe est {1} et le corps est E."
+ },
+ {
+  "code": "63-143",
+  "a_dire": "Comme G est commutatif, tous ses sous-groupes sont normaux, donc par (γ) les trois corps intermédiaires ℚ(√3), ℚ(√2) et ℚ(√6) sont galoisiens sur ℚ.",
+  "legende_titre": "Groupe commutatif : tout est normal",
+  "lecture": [
+   "La case bleue du haut rappelle que G est commutatif : στ = τσ.",
+   "La rangée du milieu montre les cinq sous-groupes {1}, ⟨σ⟩, ⟨τ⟩, ⟨στ⟩ et G, tous en vert car tous normaux.",
+   "Les flèches orange (γ) descendent des trois sous-groupes d'ordre 2 vers les trois corps ℚ(√3), ℚ(√2) et ℚ(√6), verts car galoisiens."
+  ],
+  "a_voir": "Cinq sous-groupes normaux en haut, donc trois corps galoisiens en bas."
+ },
+ {
+  "code": "63-144",
+  "a_dire": "ℚ(r, j) est le corps de décomposition de x³ − 2, séparable en caractéristique 0 : l'extension est galoisienne de degré 6, et son groupe est S₃ avec six éléments.",
+  "legende_titre": "Trois racines, un corps de degré 6, six éléments",
+  "lecture": [
+   "La case grise du haut est le polynôme x³ − 2, séparable.",
+   "Les trois disques bleus sont ses racines : r, jr et j²r.",
+   "La case verte est le corps E = ℚ(r, j), de degré 6 sur ℚ.",
+   "Les six cases bleues du bas sont les six éléments de G = S₃ : 1, σ, σ², τ, στ et σ²τ."
+  ],
+  "a_voir": "Trois racines engendrent un corps de degré 6 dont le groupe a six éléments."
+ },
+ {
+  "code": "63-145",
+  "a_dire": "Dans les deux dessins à six boîtes, la boîte verte ⟨σ⟩ (et ℚ(j)) est à part des trois boîtes orange : ⟨σ⟩ est le seul sous-groupe normal non trivial, ℚ(j) le seul corps galoisien intermédiaire.",
+  "legende_titre": "La boîte verte isolée dans les deux dessins",
+  "lecture": [
+   "Le dessin de gauche montre les six sous-groupes de S₃ : {1} en haut, S₃ en bas, au milieu trois boîtes orange dans un cadre gris en pointillé et une boîte verte à part.",
+   "Le dessin de droite montre les six corps : E en haut, ℚ en bas, au milieu trois boîtes orange dans un cadre gris en pointillé et une boîte verte à part.",
+   "Les trois boîtes orange sont ⟨τ⟩, ⟨στ⟩, ⟨σ²τ⟩ à gauche et ℚ(r), ℚ(jr), ℚ(j²r) à droite.",
+   "Le texte vert du bas dit que ⟨σ⟩ est le seul sous-groupe normal non trivial et que ℚ(j) est le seul corps galoisien intermédiaire."
+  ],
+  "a_voir": "Une boîte verte à part, trois boîtes orange groupées, dans chaque dessin."
+ },
+ {
+  "code": "63-146",
+  "a_dire": "Les ordres des sous-groupes de S₃ valent 1, 2, 3 ou 6 ; il y a un sous-groupe d'ordre 1, trois d'ordre 2, un seul d'ordre 3 et un d'ordre 6 : six sous-groupes, donc six corps intermédiaires.",
+  "legende_titre": "Compter les sous-groupes de S₃ par ordre",
+  "lecture": [
+   "Chaque rangée correspond à un ordre possible : 1, 2, 3 ou 6, qui divisent 6.",
+   "La rangée de l'ordre 1 a une case {1} ; la rangée de l'ordre 6 a la case S₃.",
+   "La rangée de l'ordre 2, en orange, a trois cases : ⟨τ⟩, ⟨στ⟩ et ⟨σ²τ⟩.",
+   "La rangée de l'ordre 3, en vert, n'a qu'une case : ⟨σ⟩."
+  ],
+  "a_voir": "On compte les cases : 1 + 3 + 1 + 1 = 6."
+ },
+ {
+  "code": "63-147",
+  "a_dire": "La convention (στ)(x) = σ(τ(x)) veut dire que τ agit en premier, puis σ : le produit στ se lit de droite à gauche.",
+  "legende_titre": "Quel remplacement agit en premier ?",
+  "lecture": [
+   "La case bleue de gauche est le nombre de départ x = r.",
+   "La première flèche orange τ, marquée « 1er », mène à la case grise τ(r) = r.",
+   "La deuxième flèche orange σ, marquée « 2e », mène à la case verte σ(r) = jr.",
+   "La ligne verte écrit le résultat : (στ)(r) = σ(τ(r)) = jr."
+  ],
+  "a_voir": "La lettre écrite à droite, τ, est celle qui agit la première."
+ },
+ {
+  "code": "63-148",
+  "a_dire": "σ garde j, donc ℚ(j) est fixé ; son degré 2 est égal à l'indice [G:H] = 6/3 = 2 donné par (β), donc Inv⟨σ⟩ = ℚ(j) sans autre calcul.",
+  "legende_titre": "Un corps fixé dont le degré est le bon",
+  "lecture": [
+   "Les six disques représentent les six éléments de G : trois disques bleus forment H = ⟨σ⟩, trois disques violets forment l'autre moitié.",
+   "Les deux moitiés donnent l'indice [G:H] = 6/3 = 2, écrit en orange.",
+   "Ce nombre est égal au degré [ℚ(j):ℚ] = 2.",
+   "Le résultat vert : Inv⟨σ⟩ = ℚ(j)."
+  ],
+  "a_voir": "Deux moitiés de trois éléments donnent un indice 2, égal au degré de ℚ(j)."
+ },
+ {
+  "code": "63-149",
+  "a_dire": "τ garde r, donc ℚ(r) est fixé ; son degré 3 est égal à l'indice 6/2 = 3, donc Inv⟨τ⟩ = ℚ(r).",
+  "legende_titre": "Trois paires : l'indice vaut 3",
+  "lecture": [
+   "Les six disques représentent les six éléments de G, rangés en trois paires.",
+   "La paire bleue de gauche est H = ⟨τ⟩, avec 2 éléments ; les deux paires violettes sont les deux autres.",
+   "Le nombre de paires est l'indice [G:H] = 6/2 = 3, écrit en orange, égal à [ℚ(r):ℚ] = 3.",
+   "Le résultat vert : Inv⟨τ⟩ = ℚ(r)."
+  ],
+  "a_voir": "Trois paires de deux éléments : le degré de ℚ(r) est 3."
+ },
+ {
+  "code": "63-150",
+  "a_dire": "Pour trouver le corps fixe de ⟨στ⟩, on teste un élément : (στ)(j²r) = j²r, donc j²r est fixé et Inv⟨στ⟩ = ℚ(j²r), qui est de degré 3 comme 6/2.",
+  "legende_titre": "Tester un seul nombre bien choisi",
+  "lecture": [
+   "La case bleue de gauche est le nombre de départ j²r.",
+   "La flèche orange τ mène à la case violette jr, puis la flèche orange σ mène à la case verte j²r.",
+   "La grande flèche verte en arc revient de la case verte à la case de départ : c'est le même nombre.",
+   "Les deux lignes du bas détaillent les deux calculs."
+  ],
+  "a_voir": "Après τ puis σ, on retombe sur j²r."
+ },
+ {
+  "code": "63-151",
+  "a_dire": "σ²τ échange r et j²r et laisse jr en place : le corps fixe de ⟨σ²τ⟩ est ℚ(jr), de degré 3.",
+  "legende_titre": "σ²τ laisse un sommet en place",
+  "lecture": [
+   "Les trois disques sont les trois racines de x³ − 2 : jr en haut, r en bas à gauche, j²r en bas à droite.",
+   "La double flèche orange du bas montre que σ²τ échange r et j²r.",
+   "La ligne pointillée grise est l'axe de σ²τ : elle passe par jr, qui ne bouge pas (disque bleu).",
+   "Le titre vert donne le résultat : Inv⟨σ²τ⟩ = ℚ(jr)."
+  ],
+  "a_voir": "Deux racines sont échangées, la troisième reste sur l'axe."
+ },
+ {
+  "code": "63-152",
+  "a_dire": "⟨σ⟩ est normal car son indice est 2, mais aucun sous-groupe d'ordre 2 ne l'est : στσ⁻¹ envoie r sur j²r alors que τ envoie r sur r, donc le conjugué de ⟨τ⟩ n'est pas ⟨τ⟩.",
+  "legende_titre": "Quel sous-groupe est normal ?",
+  "lecture": [
+   "La colonne de gauche traite le sous-groupe d'ordre 3 : ⟨σ⟩ a 3 éléments sur 6, son indice est 2, donc il est normal (case verte).",
+   "La colonne de droite traite le sous-groupe d'ordre 2 engendré par τ : la case grise dit que τ envoie r sur r.",
+   "La case orange dit que στσ⁻¹ envoie r sur j²r ; le signe rouge ≠ montre que les deux images sont différentes.",
+   "La case rouge conclut : ⟨τ⟩ n'est pas normal."
+  ],
+  "a_voir": "Le même nombre r a deux images différentes : j²r et r."
+ },
+ {
+  "code": "63-153",
+  "a_dire": "Comme ⟨σ⟩ est normal, ℚ(j) est galoisienne sur ℚ et son groupe de Galois est isomorphe au quotient S₃/⟨σ⟩, qui a deux éléments.",
+  "legende_titre": "Le groupe de ℚ(j) lu dans le quotient",
+  "lecture": [
+   "Les deux cases bleues de gauche sont les deux éléments du quotient S₃/⟨σ⟩ : ⟨σ⟩ lui-même et τ⟨σ⟩.",
+   "Les deux cases violettes de droite sont les deux automorphismes de ℚ(j) : j reste j, ou j devient j².",
+   "Les doubles flèches vertes ≅ relient chaque case de gauche à la case de droite qui lui correspond.",
+   "La ligne du bas rappelle que j et j² sont les racines de x² + x + 1."
+  ],
+  "a_voir": "Deux éléments à gauche, deux automorphismes à droite, reliés un à un."
+ },
+ {
+  "code": "63-154",
+  "a_dire": "ℚ(r)/ℚ n'est pas galoisienne : x³ − 2 est irréductible et a la racine r dans ℚ(r), mais jr et j²r ne sont pas réels, donc pas dans ℚ(r) : la normalité manque.",
+  "legende_titre": "Une racine dans le corps, deux racines dehors",
+  "lecture": [
+   "Le cercle en pointillé porte les trois racines de x³ − 2.",
+   "La ligne verte est l'axe réel, qui contient ℚ(r). Le disque vert r est sur cette ligne, donc dans ℚ(r).",
+   "Les deux disques rouges jr et j²r sont hors de l'axe : ils ne sont pas réels.",
+   "La ligne rouge du bas conclut : jr et j²r ne sont pas dans ℚ(r)."
+  ],
+  "a_voir": "Une seule racine est sur la ligne verte ; les deux autres sont dehors."
+ },
+ {
+  "code": "63-155",
+  "a_dire": "Les trois corps ℚ(r), ℚ(jr) et ℚ(j²r) sont échangés par les automorphismes de E, comme les trois sous-groupes d'ordre 2 le sont par conjugaison : η envoie Inv H sur Inv(ηHη⁻¹).",
+  "legende_titre": "Trois corps qui se remplacent l'un l'autre",
+  "lecture": [
+   "Les trois cases orange sont les trois corps ℚ(r), ℚ(jr) et ℚ(j²r), avec en dessous le sous-groupe d'ordre 2 qui leur correspond.",
+   "Les flèches bleues σ vont de ℚ(r) à ℚ(jr), puis à ℚ(j²r), puis reviennent à ℚ(r) : r devient jr, puis j²r, puis r.",
+   "La ligne du haut donne la règle générale : η(Inv H) = Inv(ηHη⁻¹)."
+  ],
+  "a_voir": "Les flèches forment un tour complet qui passe par les trois corps."
+ },
+ {
+  "code": "63-156",
+  "a_dire": "ω = cos 72° + i sin 72° est le point du cercle de rayon 1 à 72 degrés ; cinq pas de 72° font un tour complet, donc ω⁵ = 1, et les cinq racines de x⁵ − 1 sont 1, ω, ω², ω³, ω⁴.",
+  "legende_titre": "Une lettre pour un point du cercle",
+  "lecture": [
+   "Le cercle en pointillé est le cercle de rayon 1 ; les cinq disques sont les cinq racines, placés tous les 72° et reliés en pentagone bleu.",
+   "Le disque orange ω est à 72° de 1 : l'arc orange marque cet angle.",
+   "Les disques bleus sont 1, ω², ω³ et ω⁴, chacun 72° plus loin que le précédent.",
+   "La ligne verte du bas dit : 5 × 72° = 360°, donc ω⁵ = 1."
+  ],
+  "a_voir": "Cinq pas de 72° referment le cercle : on revient à 1."
+ },
+ {
+  "code": "63-157",
+  "a_dire": "x⁵ − 1 = (x − 1)(x⁴ + x³ + x² + x + 1) reste vrai quand on change le nombre x : avec x = 2, 31 = 1 × 31 ; avec x = 3, 242 = 2 × 121.",
+  "legende_titre": "La même égalité pour deux nombres",
+  "lecture": [
+   "La ligne du haut écrit l'égalité pour un nombre x quelconque.",
+   "La première rangée prend x = 2 : la case bleue donne 31, la case orange donne 1 et la case violette donne 31.",
+   "La deuxième rangée prend x = 3 : la case bleue donne 242, la case orange donne 2 et la case violette donne 121.",
+   "Dans les deux rangées, la case bleue est égale au produit des deux autres."
+  ],
+  "a_voir": "Les nombres changent d'une rangée à l'autre, la forme de l'égalité reste la même."
+ },
+ {
+  "code": "63-158",
+  "a_dire": "f = x⁴ + x³ + x² + x + 1 est irréductible sur ℚ et ses racines ω², ω³, ω⁴ sont des produits de ω : son corps de décomposition est ℚ(ω), de degré 4.",
+  "legende_titre": "Une racine engendre toutes les autres",
+  "lecture": [
+   "La boîte bleue du haut écrit f et dit qu'il est irréductible sur ℚ.",
+   "Les quatre cases bleues sont les quatre racines de f : ω, ω², ω³, ω⁴.",
+   "Chaque flèche orange « ×ω » passe d'une racine à la suivante en multipliant par ω.",
+   "Le cadre vert en pointillé est le corps ℚ(ω) : il contient les quatre racines.",
+   "La ligne verte du bas donne le degré : f est irréductible, donc [E:ℚ] = 4, le degré de f."
+  ],
+  "a_voir": "Les quatre racines sont toutes dans le cadre vert, obtenues à partir de ω seul, et le degré est celui de f."
+ },
+ {
+  "code": "63-159",
+  "a_dire": "Un automorphisme envoie ω sur une racine de f : ω, ω², ω³ ou ω⁴ ; on note σₖ celui qui envoie ω sur ωᵏ, il y en a quatre, et comme [E:ℚ] = 4, il n'y en a pas d'autre.",
+  "legende_titre": "Quatre images possibles pour ω",
+  "lecture": [
+   "Le disque bleu à gauche est ω.",
+   "Quatre flèches orange partent de ω vers quatre cases : σ₁ envoie ω sur ω, σ₂ sur ω², σ₃ sur ω³, σ₄ sur ω⁴.",
+   "Le texte vert du bas dit qu'il y a quatre possibilités, que [E:ℚ] = 4 et qu'il n'y en a pas d'autre."
+  ],
+  "a_voir": "Quatre flèches, quatre automorphismes, et aucun de plus."
+ },
+ {
+  "code": "63-160",
+  "a_dire": "σ₂ parcourt les quatre racines l'une après l'autre : ω ↦ ω² ↦ ω⁴ ↦ ω³ ↦ ω, donc le groupe est cyclique d'ordre 4 ; σ₄ est la symétrie par rapport à l'axe réel.",
+  "legende_titre": "σ₂ fait le tour des quatre racines",
+  "lecture": [
+   "Les disques bleus sont les racines ω, ω², ω³ et ω⁴ sur le cercle ; le disque vert est 1, sur l'axe réel.",
+   "Les quatre flèches orange suivent σ₂ : de ω vers ω², de ω² vers ω⁴, de ω⁴ vers ω³, puis de ω³ vers ω.",
+   "La ligne verte horizontale est l'axe réel : σ₄ échange chaque racine avec son image de l'autre côté de cette ligne."
+  ],
+  "a_voir": "Les flèches orange forment un tour fermé en quatre pas."
+ }
+]

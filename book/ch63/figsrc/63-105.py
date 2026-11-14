@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+box(ax, 3, 58, 38, 12, 'sujet', label=r'$E=\mathbb{Q}(\sqrt{2},\sqrt{3})$', size='s')
+box(ax, 3, 34, 38, 12, 'autre', label=r"$F'=\mathrm{Inv}\,G$", size='s')
+box(ax, 3, 10, 38, 12, 'sujet', label=r'$F=\mathbb{Q}$', size='s')
+line(ax, [(22, 58), (22, 46)], 'fixe', lw=1.2)
+line(ax, [(22, 34), (22, 22)], 'resultat', lw=1.6)
+text(ax, 46, 52, r"$[E:F']=|G|=4$", 'fixe', 's', ha='left')
+text(ax, 46, 28, r"$[F':F]=4/4=1$", 'resultat', 's', ha='left')
+text(ax, 44, 3, r"$4=4\times[F':F]$ donc $F'=F$", 'resultat', 's')
+save(fig, '63-105')

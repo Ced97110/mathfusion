@@ -1,0 +1,386 @@
+[
+ {
+  "code": "63-033",
+  "a_dire": "Gal(E/F) est un groupe pour la composition : l'identité en fait partie, la composée de deux éléments et l'inverse d'un élément y restent.",
+  "legende_titre": "Trois exigences, un tableau de deux éléments",
+  "lecture": [
+   "Le titre nomme le groupe Gal(E/F) = {1, τ} ; le tableau est sa table pour ∘ : τ change le signe de √3 et laisse √2 en place.",
+   "Les cadres gris sont ceux où 1 ne change rien : c’est l’identité.",
+   "Les cadres verts sont des enchaînements : chaque case vaut 1 ou τ, jamais autre chose.",
+   "Le cadre orange est τ ∘ τ = 1 : l’inverse de τ est τ."
+  ],
+  "a_voir": "Aucun enchaînement ne sort de l’ensemble {1, τ}."
+ },
+ {
+  "code": "63-034",
+  "a_dire": "La preuve part d'un automorphisme η, et l'étape qui porte tout est que η est bijectif : elle donne que η⁻¹ respecte +.",
+  "legende_titre": "D'où part la preuve, où elle arrive",
+  "lecture": [
+   "Les trois cadres du haut se lisent de haut en bas : départ en bleu, étape clé en orange, arrivée en vert.",
+   "L’étape clé est que η est bijectif, donc η⁻¹ existe ; la flèche « donne » mène à l’arrivée : η⁻¹ respecte +.",
+   "Dans le cas chiffré, η change √2 en −√2, avec x = 1 + √2 et y = 2 + √2.",
+   "Les deux cadres verts du bas donnent le même nombre, 3 − 2√2 : l’image de la somme est la somme des images."
+  ],
+  "a_voir": "Les deux cases vertes sont égales : η respecte la somme."
+ },
+ {
+  "code": "63-035",
+  "a_dire": "E/F se lit « E sur F » : le corps E contient le corps F, et la barre n'est pas une division.",
+  "legende_titre": "Un grand corps au-dessus d'un petit",
+  "lecture": [
+   "Chaque grand rectangle bleu est un corps E ; le rectangle violet dedans est le corps F = ℚ.",
+   "À gauche, E est formé des nombres a + b√2.",
+   "À droite, E est formé des fractions, de √2 et de √3.",
+   "Dans les deux cas, E est écrit avant la barre, F après."
+  ],
+  "a_voir": "F est dessiné à l'intérieur de E : E contient F."
+ },
+ {
+  "code": "63-036",
+  "a_dire": "[E : F] est le nombre d'éléments d'une base de E, quand on multiplie les nombres de la base par des éléments de F puis qu'on additionne.",
+  "legende_titre": "Compter les nombres d'une base",
+  "lecture": [
+   "En haut, les deux cases bleues sont la base 1 et √2 du corps des nombres a + b√2 : le degré vaut 2.",
+   "En bas, les quatre cases violettes sont la base 1, √2, √3 et √6 : le degré vaut 4.",
+   "Chaque accolade compte les cases de sa ligne.",
+   "Chaque élément s'écrit en multipliant les cases par des fractions, puis en additionnant."
+  ],
+  "a_voir": "Le degré est le nombre de cases de la base."
+ },
+ {
+  "code": "63-037",
+  "a_dire": "Les lettres σ, τ, η sont des noms d'automorphismes, pas des nombres ; η(a) est l'élément que rend η quand on lui donne a.",
+  "legende_titre": "Des lettres qui nomment des remplacements",
+  "lecture": [
+   "Chaque rond bleu est une lettre grecque qui nomme un automorphisme du corps de √2 et √3.",
+   "La flèche mène à ce que fait cet automorphisme à √2 et à √3.",
+   "σ change le signe de √2, τ change celui de √3, η change les deux.",
+   "En bas, η(a) est l'élément que rend η quand on lui donne a."
+  ],
+  "a_voir": "Chaque lettre est liée à un remplacement précis, dans cet exemple."
+ },
+ {
+  "code": "63-038",
+  "a_dire": "η(a) = a se lit « η ne bouge pas a » : on calcule η(a) et on le compare à a.",
+  "legende_titre": "Comparer l'image avec l'élément",
+  "lecture": [
+   "La colonne de gauche donne des éléments a ; celle de droite donne leur image η(a).",
+   "Pour 3 et 1/2 (cases grises), l'image est le même nombre : η ne les bouge pas.",
+   "Pour √2 (case orange), l'image est −√2 : η le bouge.",
+   "En bas, η est le remplacement qui change √2 en −√2."
+  ],
+  "a_voir": "Les deux cases grises sont identiques à gauche et à droite ; la case orange change."
+ },
+ {
+  "code": "63-039",
+  "a_dire": "Gal(E/F) se lit « groupe de Galois de E sur F » : c'est un ensemble d'automorphismes, pas un nombre.",
+  "legende_titre": "Un ensemble qui réunit des automorphismes",
+  "lecture": [
+   "Le grand rectangle bleu est Gal(ℚ(√2)/ℚ) : il contient l'identité 1 et σ.",
+   "σ change √2 en −√2 (en orange sous le rond).",
+   "Le rectangle violet est Gal(ℚ/ℚ) : il ne contient que l'identité.",
+   "Chaque rectangle est un seul ensemble qui réunit ses ronds."
+  ],
+  "a_voir": "Le signe désigne le rectangle entier, avec ses éléments dedans."
+ },
+ {
+  "code": "63-040",
+  "a_dire": "G est un nom court pour un groupe d'automorphismes d'un corps E ; le même nom peut désigner deux groupes différents.",
+  "legende_titre": "Un même nom pour deux groupes",
+  "lecture": [
+   "Le rectangle bleu est un groupe G de deux éléments, 1 et σ, pour E = ℚ(√2).",
+   "Le rectangle violet est un autre groupe G de quatre éléments, 1, σ, τ et στ, pour E = ℚ(√2, √3).",
+   "Chaque rond est un élément du groupe.",
+   "La lettre G est la même, mais l'exemple change ce qu'elle désigne."
+  ],
+  "a_voir": "Deux groupes différents portent la même lettre G."
+ },
+ {
+  "code": "63-041",
+  "a_dire": "|G| se lit « le nombre d'éléments de G » : les deux barres entourent un groupe et donnent un nombre.",
+  "legende_titre": "Du groupe au nombre de ses éléments",
+  "lecture": [
+   "Le rectangle bleu en haut est un groupe de deux éléments, 1 et σ.",
+   "Le rectangle violet en bas est un groupe de quatre éléments, 1, σ, τ et στ.",
+   "La flèche orange mène du groupe au nombre qui le compte.",
+   "Les cases vertes donnent |G| = 2 pour le premier groupe et |G| = 4 pour le second."
+  ],
+  "a_voir": "Il y a autant de ronds dans un rectangle que le nombre vert à sa droite."
+ },
+ {
+  "code": "63-042",
+  "a_dire": "Inv G est l'ensemble des éléments que chaque élément du groupe G laisse en place ; ici Inv G = ℚ.",
+  "legende_titre": "Les éléments que le groupe ne bouge pas",
+  "lecture": [
+   "Le grand rectangle gris est le corps E des nombres a + b√2 ; G contient 1 et σ.",
+   "Dans le rectangle vert, 3 et 1/2 restent en place : ce sont des fractions, et ils forment Inv G = ℚ.",
+   "Dans le rectangle orange, σ bouge √2 en −√2 et 1 + √2 en 1 − √2.",
+   "Les deux rectangles ensemble remplissent E."
+  ],
+  "a_voir": "Les éléments du rectangle vert sont ceux que σ laisse en place."
+ },
+ {
+  "code": "63-043",
+  "a_dire": "H ⊆ G se lit « H est un sous-groupe de G » : chaque élément de H est dans G, et H est un groupe avec le même enchaînement.",
+  "legende_titre": "Un petit groupe dans un grand",
+  "lecture": [
+   "Le grand rectangle violet est le groupe G de quatre éléments : 1, σ, τ et στ.",
+   "Le rectangle bleu à l'intérieur est le groupe H de deux éléments : 1 et σ.",
+   "Les ronds violets τ et στ sont dans G mais pas dans H.",
+   "H garde le même enchaînement que G."
+  ],
+  "a_voir": "Le rectangle bleu est entièrement à l'intérieur du rectangle violet."
+ },
+ {
+  "code": "63-044",
+  "a_dire": "[G : H] est le nombre de fois que H entre dans G : ici 4 divisé par 2 donne 2.",
+  "legende_titre": "Combien de fois le petit entre dans le grand",
+  "lecture": [
+   "L'accolade du haut réunit les quatre éléments de G.",
+   "Le bloc bleu est H, avec 2 éléments : 1 et σ.",
+   "Le bloc violet contient les 2 autres éléments : τ et στ.",
+   "Deux blocs de 2 éléments remplissent G : [G : H] = 4 ÷ 2 = 2, en vert."
+  ],
+  "a_voir": "G est coupé en 2 blocs de la taille de H."
+ },
+ {
+  "code": "63-045",
+  "a_dire": "Aut(E) est l'ensemble de tous les automorphismes de E, sans condition sur ce qu'ils laissent en place.",
+  "legende_titre": "Tous les automorphismes, sans condition",
+  "lecture": [
+   "Chaque colonne est un automorphisme du corps de √2 et √3 : 1, σ, τ ou στ (en bleu).",
+   "La case du milieu donne l'image de √2, celle du bas l'image de √3.",
+   "Une case grise est un nombre laissé en place, une case orange est un nombre qui bouge.",
+   "Aucune colonne n'est écartée : certains laissent √2 en place, d'autres non."
+  ],
+  "a_voir": "Toutes les colonnes sont gardées, quelle que soit la couleur de leurs cases."
+ },
+ {
+  "code": "63-046",
+  "a_dire": "G(E/F) est la notation de Judson pour Gal(E/F) : les deux signes nomment le même ensemble d'automorphismes de E qui fixent F.",
+  "legende_titre": "Deux écritures, un seul ensemble",
+  "lecture": [
+   "La case bleue donne l'écriture de ce livre, Gal(E/F).",
+   "La case violette donne l'écriture de Judson, G(E/F).",
+   "Le signe = entre elles dit qu'elles sont égales.",
+   "Les deux flèches mènent au même ensemble, en vert : les automorphismes de E qui fixent F."
+  ],
+  "a_voir": "Les deux flèches arrivent dans la même case verte."
+ },
+ {
+  "code": "63-047",
+  "a_dire": "E_G est la notation de Judson pour Inv G : les deux signes nomment le même ensemble d'éléments que G laisse en place.",
+  "legende_titre": "Deux écritures pour le même corps fixe",
+  "lecture": [
+   "La case bleue donne l'écriture de ce livre, Inv G.",
+   "La case violette donne l'écriture de Judson, E_G, avec G en petit en bas à droite.",
+   "Dans l'exemple du rectangle gris, E = ℚ(√2) et G = {1, σ}.",
+   "Les deux flèches mènent au même ensemble, la case verte ℚ."
+  ],
+  "a_voir": "Les deux flèches arrivent dans la même case verte."
+ },
+ {
+  "code": "63-048",
+  "a_dire": "σ_k : ω ↦ ω^k se lit « σ indice k envoie ω sur ω puissance k » : le k en bas numérote le remplacement, le k en haut est un exposant.",
+  "legende_titre": "Quatre remplacements sous un seul nom",
+  "lecture": [
+   "Le rond bleu à gauche est ω, un nombre dont la puissance 5 vaut 1, différent de 1.",
+   "Les quatre ronds verts à droite sont ω, ω², ω³ et ω⁴.",
+   "Chaque flèche orange est un remplacement σ_k, numéroté par k de 1 à 4 : il envoie ω sur ω^k.",
+   "Pour k = 1, le remplacement envoie ω sur ω : il ne change rien."
+  ],
+  "a_voir": "Le numéro k de la flèche est aussi l'exposant du rond d'arrivée."
+ },
+ {
+  "code": "63-049",
+  "a_dire": "G(E/F) est une partie de Aut(E), définie par la condition de fixer F ; quand F change, la partie change mais Aut(E) reste le même.",
+  "legende_titre": "Une partie de Aut(E) choisie par F",
+  "lecture": [
+   "Les quatre ronds sont les automorphismes de E = ℚ(√2, √3) : σ, 1, τ et στ.",
+   "L'accolade verte du haut réunit ceux qui fixent F = ℚ(√2) : 1 et τ.",
+   "L'accolade violette du bas réunit ceux qui fixent F = ℚ(√3) : σ et 1.",
+   "Le rond gris στ ne fixe ni √2 ni √3 : il n'est dans aucune des deux parties."
+  ],
+  "a_voir": "Les deux accolades choisissent deux parties différentes des mêmes ronds."
+ },
+ {
+  "code": "63-050",
+  "a_dire": "Pour montrer que G(E/F) est un sous-groupe de Aut(E), on part de σ et τ qui fixent F, et l'étape de l'inverse porte le poids : σ⁻¹(a) = a.",
+  "legende_titre": "Deux calculs qui gardent a en place",
+  "lecture": [
+   "En haut, a est envoyé par τ, puis par σ : à chaque étape il reste le même élément a, donc στ(a) = a.",
+   "En bas, a est envoyé par σ et reste a.",
+   "La flèche épaisse est l'étape décisive : on applique σ⁻¹ des deux côtés de σ(a) = a.",
+   "On obtient σ⁻¹(a) = a : σ⁻¹ fixe aussi F."
+  ],
+  "a_voir": "Les ronds verts a restent identiques à chaque flèche."
+ },
+ {
+  "code": "63-051",
+  "a_dire": "Le groupe de Galois du polynôme f est le groupe Gal(E/F), où E est le corps de décomposition de f sur F.",
+  "legende_titre": "Rattacher un groupe à un polynôme",
+  "lecture": [
+   "La case bleue est le polynôme f = x² − 2 sur ℚ.",
+   "La case violette est son corps de décomposition E = ℚ(√2), qui contient les racines √2 et −√2.",
+   "La case verte est le groupe {1, σ}, de deux éléments.",
+   "L'accolade du bas relie les trois cases : le tout s'appelle le groupe de Galois de f."
+  ],
+  "a_voir": "On passe du polynôme au corps, puis au groupe, avec un seul mot pour tout le chemin."
+ },
+ {
+  "code": "63-052",
+  "a_dire": "Un automorphisme η de ℚ(√2) envoie √2 sur une racine de x² − 2, donc sur √2 ou −√2 : le groupe est {1, σ}.",
+  "legende_titre": "Où peut aller √2 ?",
+  "lecture": [
+   "Le rond bleu à gauche est √2, dont l'image par η doit être une racine de x² − 2.",
+   "Le cadre en pointillés contient les deux seules racines, en vert : √2 et −√2.",
+   "Si η(√2) = √2, alors η = 1 ; si η(√2) = −√2, alors η = σ.",
+   "La case verte du bas donne le résultat : Gal(E/ℚ) = {1, σ}."
+  ],
+  "a_voir": "Deux flèches seulement partent de √2, donc deux automorphismes."
+ },
+ {
+  "code": "63-053",
+  "a_dire": "Un automorphisme envoie une racine d'un polynôme à coefficients dans F sur une racine du même polynôme ; comme il y en a un nombre fini, le groupe est fini.",
+  "legende_titre": "Le choix de l'image est limité",
+  "lecture": [
+   "Le rond bleu en haut est √2, dont le carré vaut 2.",
+   "La droite graduée porte tous les nombres ; les deux ronds verts sont −√2 et √2.",
+   "Les flèches orange partent de √2 vers ces deux nombres seulement : ce sont les seuls dont le carré vaut 2.",
+   "Ailleurs sur la droite, le carré n'est pas 2 : l'image de √2 ne peut pas y aller."
+  ],
+  "a_voir": "Deux points sur la droite reçoivent une flèche, tous les autres non."
+ },
+ {
+  "code": "63-054",
+  "a_dire": "Un automorphisme de ℚ(√2, √3) envoie √2 sur ±√2 et √3 sur ±√3 : cela fait au plus 2 × 2 = 4 choix, et les quatre existent.",
+  "legende_titre": "Compter les choix des deux images",
+  "lecture": [
+   "Les deux colonnes du haut donnent les deux choix pour l'image de √3.",
+   "Les deux lignes de gauche donnent les deux choix pour l'image de √2.",
+   "Chaque case verte est l'automorphisme qui fait les deux choix de sa ligne et de sa colonne : 1, τ, σ, στ.",
+   "Il y a 2 × 2 = 4 cases, donc 4 choix."
+  ],
+  "a_voir": "Chaque case est un choix de ligne et un choix de colonne."
+ },
+ {
+  "code": "63-055",
+  "a_dire": "Le groupe de Klein ℤ/2ℤ × ℤ/2ℤ a 4 éléments, chacun de carré 1, et l'ordre ne compte pas ; il diffère de ℤ/4ℤ et de S₃.",
+  "legende_titre": "Le groupe de Klein et ses voisins",
+  "lecture": [
+   "La colonne bleue est le groupe de Klein : ses quatre ronds sont 1, σ, τ et στ, avec σ² = τ² = 1 et στ = τσ.",
+   "La colonne violette du milieu est ℤ/4ℤ : ses quatre ronds sont 0, 1, 2 et 3, et 1 + 1 = 2 n’est pas 0.",
+   "La colonne violette de droite est S₃ : ses six ronds sont 1, σ, σ², τ, στ et σ²τ, et τσ n’est pas égal à στ.",
+   "Les trois groupes ne sont pas les mêmes."
+  ],
+  "a_voir": "Le groupe de Klein est le seul des trois où chaque élément enchaîné avec lui-même donne 1 et où l’ordre ne compte pas."
+ },
+ {
+  "code": "63-056",
+  "a_dire": "Pour ℚ(r, j), l'image de r a 3 choix et celle de j a 2 choix, donc au plus 3 × 2 = 6 automorphismes, qui existent tous ici.",
+  "legende_titre": "Trois choix pour r, deux pour j",
+  "lecture": [
+   "Le texte du haut dit ce que font σ et τ : σ change r en jr, τ change j en j².",
+   "Les trois cadres bleus de gauche donnent les trois images possibles de r : r, jr, j²r.",
+   "Les deux cadres bleus du haut donnent les deux images possibles de j : j et j².",
+   "Chaque case verte nomme l’automorphisme qui fait les deux choix : 1, τ, σ, στ, σ², σ²τ. Il y a 3 lignes et 2 colonnes : 3 × 2 = 6."
+  ],
+  "a_voir": "Six cases vertes, une par paire de choix."
+ },
+ {
+  "code": "63-057",
+  "a_dire": "Le groupe de Galois de x³ − 2 a six éléments et n'est pas commutatif, car τσ(r) et στ(r) sont différents : c'est S₃.",
+  "legende_titre": "Deux ordres, deux résultats",
+  "lecture": [
+   "La ligne du haut part de r, applique σ (r devient jr) puis τ (jr devient j²r).",
+   "La ligne du bas part de r, applique τ (r reste r) puis σ (r devient jr).",
+   "Les deux ronds verts d'arrivée sont j²r et jr.",
+   "Le signe rouge ≠ dit qu'ils sont différents : τσ ≠ στ."
+  ],
+  "a_voir": "En changeant l'ordre de σ et de τ, on arrive à deux nombres différents."
+ },
+ {
+  "code": "63-058",
+  "a_dire": "τ est la conjugaison complexe : elle laisse r en place car r est réel, et elle échange j et j².",
+  "legende_titre": "τ reconnu comme une opération connue",
+  "lecture": [
+   "La droite horizontale est l'axe des nombres réels ; le rond gris r est sur cet axe : il reste en place.",
+   "Les deux ronds orange sont j au-dessus de l'axe et j² en dessous : ils sont symétriques par rapport à l'axe.",
+   "La flèche orange à deux pointes montre que τ échange j et j² = j̄.",
+   "Le cercle en pointillés est à distance 1 de zéro : j et j² sont dessus."
+  ],
+  "a_voir": "j et j² sont l'un le reflet de l'autre par rapport à l'axe réel, et r est sur l'axe."
+ },
+ {
+  "code": "63-059",
+  "a_dire": "σ est un tiers de tour des trois racines de x³ − 2, et τ est un miroir par rapport à l'axe horizontal qui garde r et échange les deux autres.",
+  "legende_titre": "Un tour et un miroir sur le triangle",
+  "lecture": [
+   "Les trois ronds bleus r, jr et j²r sont les sommets d'un triangle gris : les trois racines de x³ − 2.",
+   "Les trois flèches orange qui font le tour envoient chaque racine sur la suivante : c'est σ, un tiers de tour.",
+   "La flèche verte verticale relie jr et j²r : c'est τ, qui les échange.",
+   "La ligne en pointillés est l'axe horizontal du miroir : elle passe par r, qui reste en place."
+  ],
+  "a_voir": "Les flèches orange font le tour du triangle, la flèche verte échange deux sommets."
+ },
+ {
+  "code": "63-060",
+  "a_dire": "Le groupe de Galois de x³ − 2 agit sur les trois racines comme le groupe des symétries du triangle équilatéral agit sur ses sommets.",
+  "legende_titre": "Six automorphismes, six symétries",
+  "lecture": [
+   "La colonne de gauche liste les six éléments du groupe de Galois : 1, σ, σ², τ, στ, σ²τ.",
+   "La colonne du milieu montre un triangle pour chacun, avec la symétrie qui lui correspond.",
+   "Les flèches orange sont les rotations : 0, un tiers de tour, deux tiers de tour.",
+   "Les traits verts en pointillés sont les trois miroirs."
+  ],
+  "a_voir": "Trois rotations et trois miroirs : six symétries pour six automorphismes."
+ },
+ {
+  "code": "63-061",
+  "a_dire": "Si les coefficients de f sont dans F, σ(α) est encore une racine de f ; sans cette hypothèse, ce n'est plus vrai.",
+  "legende_titre": "Que devient l'image si on retire l'hypothèse ?",
+  "lecture": [
+   "À gauche, f = x² − 2 a ses coefficients dans ℚ : σ envoie la racine √2 sur −√2, qui est encore une racine (en vert).",
+   "À droite, g = x − √2 a un coefficient hors de ℚ : σ envoie la racine √2 sur −√2.",
+   "Le calcul donne g(−√2) = −2√2, qui n'est pas 0 : le rond rouge n'est pas une racine.",
+   "Les coefficients dans F sont donc nécessaires."
+  ],
+  "a_voir": "Le rond d'arrivée est vert à gauche (racine) et rouge à droite (pas une racine)."
+ },
+ {
+  "code": "63-062",
+  "a_dire": "La preuve part de f(α) = 0, applique σ, et arrive à f(σ(α)) = 0 ; l'étape décisive est σ(aᵢ) = aᵢ, car chaque coefficient est dans F.",
+  "legende_titre": "De f(α) = 0 à f(σ(α)) = 0",
+  "lecture": [
+   "La case bleue du haut est le départ : f = x² − 2 et α = √2, avec f(α) = 0.",
+   "La case grise applique σ des deux côtés : l'image de 0 est 0.",
+   "La case orange est l'étape décisive : σ laisse en place chaque coefficient, par exemple σ(2) = 2.",
+   "La case verte est l'arrivée : f(σ(α)) = 0, soit (−√2)² − 2 = 0."
+  ],
+  "a_voir": "La case orange est celle sans laquelle on ne retrouve pas f."
+ },
+ {
+  "code": "63-063",
+  "a_dire": "Deux éléments sont conjugués sur F s'ils ont le même polynôme minimal sur F ; être racines d'un même polynôme ne suffit pas.",
+  "legende_titre": "Comparer les polynômes minimaux",
+  "lecture": [
+   "En haut, √2 et −√2 (ronds bleus) ont tous les deux x² − 2 pour polynôme minimal : ils sont conjugués, en vert.",
+   "En bas, √2 a pour polynôme minimal x² − 2 (case bleue) et √3 a x² − 3 (case violette).",
+   "Le signe rouge ≠ dit que ces deux polynômes sont différents : √2 et √3 ne sont pas conjugués.",
+   "Pourtant √2 et √3 sont racines du produit (x² − 2)(x² − 3), qui n'est pas minimal."
+  ],
+  "a_voir": "On compare le polynôme minimal de chaque élément, pas un polynôme quelconque qui les annule."
+ },
+ {
+  "code": "63-064",
+  "a_dire": "√2 et −√2 sont conjugués (polynôme minimal x² − 2) ; r, jr et j²r aussi (x³ − 2) ; √2 et √3 ne le sont pas.",
+  "legende_titre": "Qui est conjugué avec qui",
+  "lecture": [
+   "Chaque rectangle porte un polynôme minimal et contient les éléments qui l'ont.",
+   "Le rectangle bleu de gauche contient √2 et −√2, de polynôme minimal x² − 2 : ils sont conjugués.",
+   "Le rectangle bleu de droite contient r, jr et j²r, de polynôme minimal x³ − 2 : ils sont conjugués.",
+   "Le rectangle violet contient √3, de polynôme minimal x² − 3 : il n'est pas dans le rectangle de √2."
+  ],
+  "a_voir": "Deux éléments sont conjugués s'ils sont dans le même rectangle."
+ }
+]

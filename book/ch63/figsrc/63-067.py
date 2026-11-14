@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 14, 52, 60, 14, 'fixe', label=r'$\mathbb{Q}[x]/(x^2-2)$ : $a+bx$')
+box(ax, 2, 20, 36, 14, 'sujet', label=r'$a+b\sqrt{2}$')
+box(ax, 50, 20, 36, 14, 'autre', label=r'$a-b\sqrt{2}$')
+arrow(ax, (30, 51.5), (20, 35), 'varie')
+arrow(ax, (58, 51.5), (68, 35), 'varie')
+text(ax, 11, 43.5, r'$x\mapsto\sqrt{2}$', 'varie', 's', ha='center')
+text(ax, 77, 43.5, r'$x\mapsto-\sqrt{2}$', 'varie', 's', ha='center')
+arrow(ax, (38.5, 27), (49.5, 27), 'varie')
+text(ax, 44, 31, r'$\varphi$', 'varie', 'm')
+text(ax, 44, 11, r'deux copies du même ensemble', 'fixe', 's')
+save(fig, '63-067')

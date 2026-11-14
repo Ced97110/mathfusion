@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+box(ax, 31, 50, 26, 12, role='varie', label='ℚ(r)\nInv⟨τ⟩')
+box(ax, 4, 14, 26, 12, role='varie', label='ℚ(jr)\nInv⟨σ²τ⟩', size='s')
+box(ax, 58, 14, 26, 12, role='varie', label='ℚ(j²r)\nInv⟨στ⟩', size='s')
+arrow(ax, (36, 49.2), (22, 26.8), 'sujet')
+arrow(ax, (31, 20), (57, 20), 'sujet')
+arrow(ax, (66, 26.8), (52, 49.2), 'sujet')
+text(ax, 44, 36, 'σ : r ↦ jr ↦ j²r ↦ r', 'sujet', 's')
+text(ax, 44, 66, 'η(Inv H) = Inv(ηHη⁻¹)', 'encre', 's')
+text(ax, 44, 6, 'les trois corps sont échangés', 'sujet', 's')
+save(fig, '63-155')

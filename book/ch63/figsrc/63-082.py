@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+text(ax, 44, 64, r'$5$ et $2$ : fractions, fixées par $\eta$', 'fixe', 's')
+box(ax, 2, 46, 84, 12, 'sujet', label=r'$x=5+2\sqrt{2}+\sqrt{2}\cdot\sqrt{3}$')
+arrow(ax, (30, 45.5), (30, 33.5), 'varie')
+text(ax, 34, 39.5, r'$\eta$', 'varie', 'm', ha='left')
+box(ax, 2, 22, 84, 12, 'resultat', label=r'$\eta(x)=5+2\,\eta(\sqrt{2})+\eta(\sqrt{2})\,\eta(\sqrt{3})$', size='s')
+box(ax, 8, 2, 30, 12, 'varie', label=r'$\eta(\sqrt{2})$')
+box(ax, 50, 2, 30, 12, 'varie', label=r'$\eta(\sqrt{3})$')
+arrow(ax, (23, 14.5), (23, 21.5), 'varie')
+arrow(ax, (65, 14.5), (65, 21.5), 'varie')
+save(fig, '63-082')

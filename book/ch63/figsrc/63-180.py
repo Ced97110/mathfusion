@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+text(ax, 20, 63, 'groupe', 'sujet', 'm', weight='bold')
+text(ax, 68, 63, 'corps entre $F$ et $E$', 'autre', 'm', weight='bold')
+box(ax, 4, 38, 32, 14, 'sujet', label=r'$\{1\}$')
+box(ax, 52, 38, 32, 14, 'autre', label=r'$E = F$')
+arrow(ax, (37, 45), (51, 45), 'resultat', both=True)
+text(ax, 20, 30, '1 sous-groupe', 'sujet', 's')
+text(ax, 68, 30, '1 corps', 'autre', 's')
+text(ax, 44, 21, r'$[E : F] = 1$', 'encre', 'm')
+text(ax, 44, 11, 'un seul choix : rien à vérifier', 'fixe', 's')
+save(fig, '63-180')

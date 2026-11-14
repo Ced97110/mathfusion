@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61, 'la barre n’est pas une division', 'fixe', 's')
+box(ax, 3, 16, 39, 38, 'sujet')
+text(ax, 22.5, 48, r'$E=\mathbb{Q}(\sqrt{2})$', 'sujet', 's')
+text(ax, 22.5, 41, r'$a+b\sqrt{2}$', 'sujet', 's')
+box(ax, 8, 20, 29, 14, 'autre', label=r'$F=\mathbb{Q}$')
+box(ax, 46, 16, 39, 38, 'sujet')
+text(ax, 65.5, 48, r'$E=\mathbb{Q}(\sqrt{2},\sqrt{3})$', 'sujet', 's')
+box(ax, 51, 20, 29, 14, 'autre', label=r'$F=\mathbb{Q}$')
+text(ax, 44, 8, r'$E/F$ se lit « $E$ sur $F$ »', 'encre', 'l')
+save(fig, '63-035')

@@ -1,0 +1,382 @@
+[
+ {
+  "code": "63-001",
+  "a_dire": "L’égalité (3 + √2)² = 11 + 6√2 reste vraie quand on remplace √2 par −√2 : on obtient (3 − √2)² = 11 − 6√2.",
+  "legende_titre": "Une égalité avant et après le changement de signe",
+  "lecture": [
+   "Le cadre bleu du haut est l’égalité de départ, avec √2.",
+   "La flèche orange montre le remplacement de √2 par −√2, partout.",
+   "Le cadre orange du bas est la même égalité écrite avec −√2.",
+   "Les deux petits cadres verts disent que chaque égalité est vraie."
+  ],
+  "a_voir": "Les deux égalités sont vraies, bien que le signe de √2 ait changé."
+ },
+ {
+  "code": "63-002",
+  "a_dire": "Le remplacement de √2 par un nouveau nombre garde les égalités vraies seulement si le carré du nouveau nombre vaut 2 : c’est le cas de −√2, pas de 5√2.",
+  "legende_titre": "Quels nombres peuvent prendre la place de √2",
+  "lecture": [
+   "Chaque ligne essaie un nombre à la place de √2 : le cadre de gauche donne ce nombre.",
+   "Le cadre de droite donne son carré et dit si c’est vrai : 2 pour √2 et pour −√2.",
+   "Le cadre rouge de la dernière ligne donne 50 pour 5√2, ce qui n’est pas 2 : c’est faux.",
+   "Le titre orange rappelle la règle : le carré du nouveau nombre doit valoir 2."
+  ],
+  "a_voir": "Seul le carré qui vaut 2 permet le remplacement ; 5√2 donne 50."
+ },
+ {
+  "code": "63-003",
+  "a_dire": "√2 et −√2 ont le même carré, 2 : avec cette seule exigence, rien ne distingue les deux nombres.",
+  "legende_titre": "Deux nombres, un même carré",
+  "lecture": [
+   "La droite graduée va de −2 à 2.",
+   "Le disque bleu à droite est √2, choisi par Léa.",
+   "Le disque violet à gauche est −√2, choisi par Marc.",
+   "Les deux flèches orange arrivent dans le cadre vert : leur carré vaut 2 pour tous les deux."
+  ],
+  "a_voir": "Les deux flèches mènent à la même boîte : le même carré."
+ },
+ {
+  "code": "63-004",
+  "a_dire": "Les phrases de calcul (fractions, additions, multiplications) sont vraies pour √2 et pour −√2 en même temps ; une phrase d’ordre comme « est positif » peut les séparer.",
+  "legende_titre": "Ce que le calcul ne sépare pas",
+  "lecture": [
+   "Les deux colonnes sont √2 (bleu) et −√2 (violet).",
+   "La ligne du haut est la phrase de calcul x + x² = x + 2 : les deux cadres sont verts, vrai pour les deux.",
+   "La ligne du bas est la phrase d’ordre x > 0 : vrai pour √2, faux (cadre rouge) pour −√2."
+  ],
+  "a_voir": "Seule la phrase d’ordre a un cadre rouge."
+ },
+ {
+  "code": "63-005",
+  "a_dire": "La conjugaison complexe a + bi ↦ a − bi échange i et −i, qui ont tous deux un carré égal à −1 ; elle garde les égalités vraies.",
+  "legende_titre": "Remplacer i par −i",
+  "lecture": [
+   "Le titre orange donne la règle : a + bi devient a − bi.",
+   "Le disque bleu du haut est le nombre 2 + i, le disque orange du bas est 2 − i.",
+   "La flèche orange passe de l’un à l’autre en traversant la droite des réels.",
+   "Les deux cadres verts montrent que i et −i ont le même carré, −1."
+  ],
+  "a_voir": "Les deux nombres sont de part et d’autre de la droite des réels, avec le même carré pour i et −i."
+ },
+ {
+  "code": "63-006",
+  "a_dire": "Entre ℚ et 𝐸 il y a des corps intermédiaires ; on veut savoir combien, comment les trouver tous, et lesquels sont des corps de décomposition.",
+  "legende_titre": "Les corps entre ℚ et E",
+  "lecture": [
+   "Le cadre bleu du bas est ℚ, le cadre bleu du haut est 𝐸.",
+   "Les deux cadres orange du milieu sont ℚ(r) et ℚ(j), deux corps connus entre les deux.",
+   "Le cadre gris en pointillés avec « ? » représente les autres corps que l’on ne connaît pas encore.",
+   "Les trois cadres violets à droite sont les trois questions du problème."
+  ],
+  "a_voir": "Entre ℚ et E, on connaît deux corps et on en cherche d’autres."
+ },
+ {
+  "code": "63-007",
+  "a_dire": "Pour ℚ(√2), les deux remplacements 1 et σ forment un groupe, et ses sous-groupes correspondent un pour un aux corps intermédiaires.",
+  "legende_titre": "Un groupe de remplacements et ses corps",
+  "lecture": [
+   "Le tableau vert à gauche donne le résultat d’enchaîner deux remplacements parmi 1 et σ.",
+   "Chaque case du tableau est encore 1 ou σ : l’enchaînement reste dans le groupe, et σ enchaîné avec σ donne 1.",
+   "Le cadre bleu du haut à droite relie le sous-groupe {1} au corps ℚ(√2).",
+   "Le cadre bleu du bas relie le sous-groupe {1, σ} au corps ℚ."
+  ],
+  "a_voir": "Chaque sous-groupe est relié à un seul corps."
+ },
+ {
+  "code": "63-008",
+  "a_dire": "À un sous-groupe on associe le corps de ses nombres fixes, et à un corps on associe les remplacements qui le laissent en place ; ce va-et-vient revient au point de départ.",
+  "legende_titre": "Un va-et-vient entre sous-groupe et corps",
+  "lecture": [
+   "Le cadre bleu en haut à gauche est le sous-groupe {1, σ} ; σ change √2 en −√2 et laisse √3 en place.",
+   "La flèche orange du haut mène au cadre violet ℚ(√3), le corps fixe : les nombres a + c√3.",
+   "La flèche orange courbe revient de ce corps vers un cadre vert : les remplacements qui le fixent.",
+   "Le trait vert en pointillés dit que le cadre vert est le même groupe {1, σ} : on est revenu au départ."
+  ],
+  "a_voir": "Les deux flèches font un aller-retour qui revient à {1, σ}."
+ },
+ {
+  "code": "63-009",
+  "a_dire": "Compter les corps intermédiaires revient à compter les sous-groupes d’un groupe fini ; pour un groupe à 4 éléments on en trouve 1 + 3 + 1 = 5.",
+  "legende_titre": "Compter des sous-groupes au lieu de chercher des corps",
+  "lecture": [
+   "Chaque carré bleu est un sous-groupe.",
+   "La ligne du haut montre 1 sous-groupe à 1 élément.",
+   "La ligne du milieu montre 3 sous-groupes à 2 éléments.",
+   "La ligne du bas montre 1 sous-groupe à 4 éléments ; le total vert est 5."
+  ],
+  "a_voir": "On compte 1, 3 et 1 carrés, soit 5 en tout."
+ },
+ {
+  "code": "63-010",
+  "a_dire": "L’élément a + b√2 se place au point de coordonnées (a, b) du plan ; chaque élément a un seul point et chaque point un seul élément.",
+  "legende_titre": "Un nombre devient un point",
+  "lecture": [
+   "Le premier axe, à l’horizontale, donne a ; l’axe vertical donne b.",
+   "Le disque d’abscisse 3 et d’ordonnée 2 est le nombre 3 + 2√2.",
+   "Le disque d’abscisse 1 et d’ordonnée 1 est 1 + √2.",
+   "Le disque posé sur l’axe horizontal, en 2, est le nombre 2 = 2 + 0√2."
+  ],
+  "a_voir": "Les pointillés relient chaque nombre à ses deux coordonnées a et b."
+ },
+ {
+  "code": "63-011",
+  "a_dire": "Le remplacement σ de √2 par −√2 est un miroir : il envoie chaque point au point symétrique par rapport à l’axe horizontal, celui des fractions.",
+  "legende_titre": "Le changement de signe vu dans le plan",
+  "lecture": [
+   "L’axe gris est la droite des fractions ℚ.",
+   "Les disques bleus du haut sont √2 et 1 + √2.",
+   "Les flèches orange les envoient sur les disques orange du bas, −√2 et 1 − √2, de l’autre côté de l’axe.",
+   "Le disque gris 2 est sur l’axe : il ne bouge pas."
+  ],
+  "a_voir": "Chaque flèche traverse l’axe et arrive à la même distance de l’autre côté."
+ },
+ {
+  "code": "63-012",
+  "a_dire": "σ(a + b√2) = a − b√2 : on lit sigma de (a plus b racine de 2) égale a moins b racine de 2 ; pour 5 + 3√2 on obtient 5 − 3√2, pour 4 on obtient 4.",
+  "legende_titre": "Lire la formule de σ",
+  "lecture": [
+   "Chaque ligne a un cadre bleu à gauche : le nombre de départ.",
+   "La flèche orange, marquée σ, mène au cadre vert de droite : le résultat.",
+   "La première ligne donne la formule avec a et b.",
+   "La deuxième ligne donne 5 + 3√2 ↦ 5 − 3√2, la troisième donne 4 ↦ 4."
+  ],
+  "a_voir": "Seul le signe devant b√2 change ; 4 reste 4."
+ },
+ {
+  "code": "63-013",
+  "a_dire": "σ est la réflexion du plan par rapport à l’axe horizontal : ses points fixes sont exactement les points de l’axe, c’est-à-dire les fractions.",
+  "legende_titre": "Les points que le miroir laisse en place",
+  "lecture": [
+   "La ligne verte épaisse est l’axe horizontal, celui des fractions ℚ.",
+   "Les disques verts 1/2 et 2 sont sur l’axe : ils restent en place.",
+   "Le disque bleu 1 + √2 est hors de l’axe : la flèche orange l’envoie sur le disque orange 1 − √2, il bouge."
+  ],
+  "a_voir": "Ce qui est sur la ligne verte reste en place, le reste traverse."
+ },
+ {
+  "code": "63-014",
+  "a_dire": "Le corps fixe du groupe de tous les remplacements, {1, σ}, est le corps de départ ℚ ; avec le groupe réduit à {1} le corps fixe est ℚ(√2) en entier.",
+  "legende_titre": "Le corps fixe dépend du groupe",
+  "lecture": [
+   "Le cadre gris du haut est le corps de départ ℚ.",
+   "Chaque ligne part d’un groupe (cadre bleu) et la flèche orange donne son corps fixe.",
+   "Pour {1, σ}, le cadre vert est ℚ : le trait vert en pointillés dit qu’il est égal au corps de départ.",
+   "Pour {1}, le cadre violet est ℚ(√2) : il est plus grand que ℚ."
+  ],
+  "a_voir": "Seule la première ligne retombe sur le corps de départ."
+ },
+ {
+  "code": "63-015",
+  "a_dire": "1 est l’application qui ne bouge rien, et σ ∘ σ = 1 : faire σ deux fois ramène au nombre de départ.",
+  "legende_titre": "Faire σ deux fois",
+  "lecture": [
+   "Le cadre bleu de gauche est 5 + 3√2.",
+   "La première flèche orange σ mène au cadre orange 5 − 3√2.",
+   "La deuxième flèche σ mène au cadre bleu de droite : on retrouve 5 + 3√2.",
+   "La grande flèche verte revient au départ : σ ∘ σ = 1."
+  ],
+  "a_voir": "Le troisième cadre est le même que le premier."
+ },
+ {
+  "code": "63-016",
+  "a_dire": "{1, σ} est un groupe à deux éléments qui se comporte comme les symétries d’un segment : un élément ne change rien, l’autre répété deux fois ne change rien non plus.",
+  "legende_titre": "Deux éléments, comme un segment",
+  "lecture": [
+   "La colonne de gauche (bleu) liste 1, σ et σ ∘ σ = 1.",
+   "La colonne de droite (violet) montre un segment avec ses extrémités A et B.",
+   "Ne rien faire laisse A à gauche et B à droite, la deuxième ligne les échange.",
+   "La troisième ligne remet A et B comme au départ, comme σ ∘ σ = 1."
+  ],
+  "a_voir": "Les trois lignes de gauche et de droite se répondent une à une."
+ },
+ {
+  "code": "63-017",
+  "a_dire": "Dans ℚ(√2, √3) il y a deux remplacements indépendants, changer le signe de √2 et changer le signe de √3, ce qui donne 2 × 2 = 4 combinaisons.",
+  "legende_titre": "Deux choix de signe indépendants",
+  "lecture": [
+   "Les deux lignes disent ce que l’on fait de √2 : le garder ou le changer.",
+   "Les deux colonnes disent ce que l’on fait de √3 : le garder ou le changer.",
+   "Chaque case est une combinaison : 1 (gris) ne change rien, σ, τ et στ (orange) changent un ou deux signes.",
+   "Le texte vert donne le total : 2 × 2 = 4."
+  ],
+  "a_voir": "Quatre cases : un choix pour √2 et un choix pour √3."
+ },
+ {
+  "code": "63-018",
+  "a_dire": "Les sous-groupes de G et les corps intermédiaires se dessinent en deux losanges de même forme, retournés l’un par rapport à l’autre.",
+  "legende_titre": "Deux dessins de même forme, retournés",
+  "lecture": [
+   "À gauche, G est en haut et {1} en bas : les sous-groupes.",
+   "À droite, ℚ est en haut et E en bas : les corps.",
+   "Les trois cadres du milieu portent la même couleur de chaque côté : ⟨σ⟩ avec ℚ(√3), ⟨τ⟩ avec ℚ(√2), ⟨στ⟩ avec ℚ(√6).",
+   "Les traits relient chaque cadre du milieu à ceux du haut et du bas."
+  ],
+  "a_voir": "Le plus grand groupe est en haut à gauche, le plus petit corps en haut à droite."
+ },
+ {
+  "code": "63-019",
+  "a_dire": "G est le nom du groupe des quatre remplacements de E : G = {1, σ, τ, στ}.",
+  "legende_titre": "Le groupe G et ses quatre éléments",
+  "lecture": [
+   "Le grand cadre bleu est G, avec sa liste en titre.",
+   "Le cadre gris est le remplacement 1, qui ne change rien.",
+   "Les trois cadres orange sont σ (change √2), τ (change √3) et στ (change les deux)."
+  ],
+  "a_voir": "Quatre cadres dans G : un qui ne change rien et trois qui changent des signes."
+ },
+ {
+  "code": "63-020",
+  "a_dire": "Le groupe G à quatre éléments a cinq sous-groupes : G, {1}, ⟨σ⟩, ⟨τ⟩, ⟨στ⟩ ; les trois derniers viennent chacun d’un seul remplacement.",
+  "legende_titre": "Les cinq sous-groupes de G",
+  "lecture": [
+   "Chaque ligne est un sous-groupe, nommé à gauche.",
+   "Chaque colonne est un élément : 1, σ, τ, στ.",
+   "Un disque bleu veut dire que l’élément est dans le sous-groupe.",
+   "G a quatre disques, ⟨σ⟩, ⟨τ⟩ et ⟨στ⟩ en ont deux (1 et leur élément), {1} en a un."
+  ],
+  "a_voir": "Cinq lignes, dont trois à deux disques, chacune avec 1 et un élément."
+ },
+ {
+  "code": "63-021",
+  "a_dire": "Entre ℚ et E il y a cinq corps : ℚ, ℚ(√2), ℚ(√3), ℚ(√6) et E ; le troisième ajout, √6, est dans E car √6 = √2 × √3.",
+  "legende_titre": "Les cinq corps entre ℚ et E",
+  "lecture": [
+   "Le cadre gris de gauche est ℚ, celui de droite est E.",
+   "Les trois cadres bleus du milieu sont ℚ(√2), ℚ(√3) et ℚ(√6), chacun obtenu en ajoutant un nombre à ℚ.",
+   "Les flèches orange partent de ℚ vers chaque corps, puis de chaque corps vers E.",
+   "Le texte vert rappelle pourquoi √6 est dans E."
+  ],
+  "a_voir": "Il y a trois corps au milieu, pas deux."
+ },
+ {
+  "code": "63-022",
+  "a_dire": "Dans un diagramme de Hasse, un trait relie deux boîtes quand celle du bas est contenue dans celle du haut ; ici {1} ⊆ ⟨σ⟩ ⊆ G.",
+  "legende_titre": "Un dessin pour les emboîtements",
+  "lecture": [
+   "La ligne bleue du haut écrit la chaîne {1} ⊆ ⟨σ⟩ ⊆ G.",
+   "Les trois cadres bleus la dessinent : G en haut, ⟨σ⟩ au milieu, {1} en bas.",
+   "Chaque trait gris relie deux cadres voisins.",
+   "La flèche orange rappelle que l’on lit du bas vers le haut : le bas est contenu dans le haut."
+  ],
+  "a_voir": "Deux traits suffisent pour montrer les deux emboîtements."
+ },
+ {
+  "code": "63-023",
+  "a_dire": "Chaque sous-groupe d’ordre 2 correspond à un corps : ⟨σ⟩ ↔ ℚ(√3), ⟨τ⟩ ↔ ℚ(√2), ⟨στ⟩ ↔ ℚ(√6), parce que chacun garde exactement un des nombres √3, √2, √6.",
+  "legende_titre": "Quel sous-groupe va avec quel corps",
+  "lecture": [
+   "Chaque ligne a une couleur : le sous-groupe à gauche et son corps à droite ont la même couleur.",
+   "Le texte gris au-dessus de la flèche dit ce que le sous-groupe change.",
+   "Le texte vert sous la flèche dit ce qu’il garde, et c’est ce nombre qui donne le corps.",
+   "Pour στ, les deux signes moins se compensent : √6 reste en place."
+  ],
+  "a_voir": "Le nombre gardé est celui qui apparaît dans le corps de la même ligne."
+ },
+ {
+  "code": "63-024",
+  "a_dire": "La correspondance renverse l’ordre : plus un sous-groupe est gros, plus son corps fixe est petit ; G fixe ℚ, le plus petit corps.",
+  "legende_titre": "Quand le groupe grandit, le corps rétrécit",
+  "lecture": [
+   "La colonne bleue de gauche liste des sous-groupes emboîtés : G (4), ⟨σ⟩ (2), {1} (1).",
+   "La colonne violette de droite donne leurs corps fixes : ℚ, ℚ(√3), E.",
+   "Les flèches grises relient chaque groupe à son corps fixe.",
+   "La flèche orange de gauche monte avec la taille du groupe, celle de droite descend avec la taille du corps."
+  ],
+  "a_voir": "Le groupe le plus grand, en haut, est relié au corps le plus petit, en haut aussi."
+ },
+ {
+  "code": "63-025",
+  "a_dire": "Un automorphisme de E est une application bijective qui respecte à la fois l’addition et la multiplication ; il faut les deux conditions en même temps.",
+  "legende_titre": "Ce qu’il faut pour être un automorphisme",
+  "lecture": [
+   "Chaque ligne essaie une application bijective : a ↦ a + 1, a ↦ 2a, puis σ.",
+   "Les deux colonnes testent si l’addition puis la multiplication sont respectées.",
+   "Un cadre rouge « non » marque une condition qui échoue, un cadre vert « oui » une condition qui tient.",
+   "Seule la dernière ligne est entièrement verte."
+  ],
+  "a_voir": "Il n’y a que la ligne σ sans aucune case rouge."
+ },
+ {
+  "code": "63-026",
+  "a_dire": "η(a + b) = η(a) + η(b) : on peut additionner avant ou après le changement de signe, le résultat est le même ; ici 3 − 4√2.",
+  "legende_titre": "Additionner avant ou après η",
+  "lecture": [
+   "Le haut à gauche donne a = 1 + √2 et b = 2 + 3√2 ; la flèche « somme » mène à leur somme 3 + 4√2.",
+   "La flèche orange de droite applique η à la somme : on arrive à 3 − 4√2, en vert.",
+   "La flèche orange de gauche applique η à a et à b : on obtient 1 − √2 et 2 − 3√2.",
+   "La flèche « somme » du bas additionne ces deux images : on arrive au même 3 − 4√2."
+  ],
+  "a_voir": "Les deux chemins finissent dans le même cadre vert."
+ },
+ {
+  "code": "63-027",
+  "a_dire": "η(ab) = η(a)η(b) : on peut multiplier avant ou après le changement de signe, le résultat est le même, quels que soient a et b ; ici 7 − 7√2.",
+  "legende_titre": "Multiplier avant ou après η",
+  "lecture": [
+   "Le haut à gauche donne a = 3 + √2 et b = 1 + 2√2 ; la flèche « produit » mène à leur produit 7 + 7√2.",
+   "La flèche orange de droite applique η au produit : 7 − 7√2, en vert.",
+   "La flèche orange de gauche applique η à a et à b : 3 − √2 et 1 − 2√2.",
+   "La flèche « produit » du bas les multiplie et donne aussi 7 − 7√2."
+  ],
+  "a_voir": "Deux chemins différents arrivent au même cadre vert."
+ },
+ {
+  "code": "63-028",
+  "a_dire": "Un automorphisme est un renommage des éléments de E qui conserve toutes les égalités faites avec + et × : une égalité vraie reste vraie après le changement de noms.",
+  "legende_titre": "Changer les noms sans casser les égalités",
+  "lecture": [
+   "Les cadres bleus de gauche sont les anciens noms de trois éléments.",
+   "Les flèches orange η donnent leur nouveau nom, dans les cadres orange de droite.",
+   "En bas à gauche, l’égalité écrite avec les anciens noms ; en bas à droite, la même avec les nouveaux noms.",
+   "Le texte vert dit que les deux égalités sont vraies."
+  ],
+  "a_voir": "L’égalité du bas reste vraie après le renommage des trois éléments."
+ },
+ {
+  "code": "63-029",
+  "a_dire": "Un automorphisme de E/F est un automorphisme de E qui ne bouge aucun élément de F : τ en est un, σ n’en est pas un car il déplace √2.",
+  "legende_titre": "Fixer tout F",
+  "lecture": [
+   "Le grand cadre bleu est E, le cadre gris à l’intérieur est F, qui contient √2 ; √3 est dans E hors de F.",
+   "Le cadre vert du haut : τ garde √2, donc ne bouge aucun élément de F, il est dans E/F.",
+   "Le cadre rouge du bas : σ change √2, donc il bouge un élément de F, il n’est pas dans E/F."
+  ],
+  "a_voir": "Le cadre rouge est celui du remplacement qui déplace √2, un élément de F."
+ },
+ {
+  "code": "63-030",
+  "a_dire": "La preuve que σ respecte le produit part de u = 1 + √2 et v = 2 + √2 et arrive à σ(uv) = σ(u)σ(v) ; l’étape clé est √2 × √2 = 2 et (−√2)(−√2) = 2.",
+  "legende_titre": "Une preuve : σ garde le produit",
+  "lecture": [
+   "Le cadre bleu du haut est le départ : les nombres u et v.",
+   "Les deux cadres gris donnent σ(uv) et σ(u)σ(v), qui valent tous deux 4 − 3√2.",
+   "Les deux cadres orange, aux bords épais, sont l’étape clé : le produit de deux racines vaut 2, avec ou sans signe moins ; le signe = vert dit que c’est le même nombre.",
+   "Le cadre vert du bas est l’arrivée : σ(uv) = σ(u)σ(v)."
+  ],
+  "a_voir": "Les deux cadres orange donnent le même nombre 2 des deux côtés."
+ },
+ {
+  "code": "63-031",
+  "a_dire": "La vérification réussit parce que le seul fait utilisé est (√2)² = 2 et (−√2)² = 2 ; avec √3 on utilise de même (√3)² = 3 et (−√3)² = 3.",
+  "legende_titre": "Pourquoi la vérification réussit",
+  "lecture": [
+   "La colonne de gauche calcule le produit (1 + √3)(2 + √3) : cadre bleu en haut, résultat 5 + 3√3 en bas.",
+   "La colonne de droite fait le même calcul avec −√3 (orange) et donne 5 − 3√3.",
+   "Les deux cadres verts du milieu sont l’étape où deux racines se multiplient : le résultat vaut 3 des deux côtés.",
+   "Le texte vert du bas rappelle le fait commun."
+  ],
+  "a_voir": "Les deux cadres verts du milieu portent le même résultat, 3."
+ },
+ {
+  "code": "63-032",
+  "a_dire": "Le groupe de Galois Gal(E/F) est l’ensemble de tous les automorphismes de E qui ne bougent aucun élément de F.",
+  "legende_titre": "Tous les automorphismes qui fixent F",
+  "lecture": [
+   "Le grand cadre bleu, nommé Gal(E/F), est un ensemble ; le texte gris du haut donne E = ℚ(√2) et F = ℚ.",
+   "Le cadre gris du milieu est l’automorphisme 1, qui ne change rien.",
+   "Le cadre orange est σ, qui change √2 en −√2.",
+   "Le cadre gris du bas dit que si E = F = ℚ, l’ensemble contient seulement 1."
+  ],
+  "a_voir": "Dans le grand cadre bleu il y a deux éléments, et un seul si E = F."
+ }
+]

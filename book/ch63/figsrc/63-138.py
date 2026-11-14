@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+text(ax, 44, 61.5, 'élément a + b√2 + c√3 + d√6', 'encre', 's')
+text(ax, 22, 55, 'τ les laisse en place', 'fixe', 's')
+text(ax, 66, 55, 'τ change leur signe', 'varie', 's')
+box(ax, 4, 38, 36, 11, role='fixe', label='a ↦ a')
+box(ax, 4, 23, 36, 11, role='fixe', label='b√2 ↦ b√2')
+box(ax, 48, 38, 36, 11, role='varie', label='c√3 ↦ −c√3')
+box(ax, 48, 23, 36, 11, role='varie', label='d√6 ↦ −d√6')
+arrow(ax, (22, 22.2), (22, 14.8), 'resultat')
+box(ax, 4, 4, 80, 10, role='resultat', label='c = d = 0 : Inv⟨τ⟩ = ℚ(√2)')
+save(fig, '63-138')

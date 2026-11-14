@@ -1,0 +1,369 @@
+[
+ {
+  "code": "63-161",
+  "a_dire": "Composer σ_a et σ_b revient à multiplier a par b, puis à garder le reste dans la division par 5.",
+  "legende_titre": "Deux remplacements l’un après l’autre",
+  "lecture": [
+   "Le point bleu ω est le départ ; les autres points sont 1, ω², ω³ (orange) et ω⁴.",
+   "La flèche orange σ₃ mène de ω à ω³.",
+   "La flèche bleue σ₂ mène de ω³ à ω⁶, qui retombe sur ω, car ω⁵ = 1.",
+   "À droite, le cadre vert donne le résultat : σ₂ après σ₃ égale σ₁."
+  ],
+  "a_voir": "Deux remplacements de suite se résument à un seul, dont l’indice est le produit des indices, au reste modulo 5 près."
+ },
+ {
+  "code": "63-162",
+  "a_dire": "Les puissances de σ₂ sont les quatre éléments du groupe, donc le groupe est cyclique d’ordre 4.",
+  "legende_titre": "Les puissances d’un seul élément",
+  "lecture": [
+   "Chaque cadre bleu est une puissance de σ₂ : σ₂, σ₂² = σ₄, σ₂³ = σ₃.",
+   "Le cadre vert, σ₂⁴ = 1, ferme le tour.",
+   "Les flèches orange multiplient l’indice par 2 : 2 × 2 = 4, 4 × 2 = 8 de reste 3, 3 × 2 = 6 de reste 1, 1 × 2 = 2.",
+   "Les quatre cadres sont distincts : ils forment tout le groupe."
+  ],
+  "a_voir": "En partant de σ₂ et en recommençant, on parcourt les quatre éléments puis on revient au début."
+ },
+ {
+  "code": "63-163",
+  "a_dire": "Le groupe de Galois se lit comme les restes non nuls modulo 5, que l’on multiplie.",
+  "legende_titre": "Remplacements et restes",
+  "lecture": [
+   "Les cadres bleus sont les quatre remplacements σ₁ à σ₄.",
+   "Les cadres violets sont les restes 1 à 4 ; chaque flèche orange relie σₖ au reste k.",
+   "Le cadre gris en pointillé est le reste 0, retiré.",
+   "En bas, les deux cadres verts disent la même chose : σ₂ après σ₃ donne σ₁, et 2 × 3 = 6 a pour reste 1."
+  ],
+  "a_voir": "Composer les remplacements revient à multiplier les restes non nuls."
+ },
+ {
+  "code": "63-164",
+  "a_dire": "Deux groupes de même ordre 4 peuvent être différents : σ₂ est d’ordre 4 ici, alors que dans le groupe de Klein aucun élément ne l’est.",
+  "legende_titre": "Même nombre d’éléments, deux groupes",
+  "lecture": [
+   "À gauche, en violet, les trois éléments σ, τ, στ du groupe de Klein : chacun a pour carré 1 (cadres verts).",
+   "À droite, en bleu, σ₂ a pour carré σ₄ et σ₃ a pour carré σ₄ : ce n’est pas 1.",
+   "Seul σ₄ a pour carré 1.",
+   "En bas : à gauche aucun élément d’ordre 4, à droite σ₂² = σ₄ ≠ 1 donc ordre 4."
+  ],
+  "a_voir": "Dans le groupe de Klein, tout carré donne 1 ; à droite, σ₂ et σ₃ ont un carré différent de 1."
+ },
+ {
+  "code": "63-165",
+  "a_dire": "Seul σ₄ a pour carré 1 : il y a un seul sous-groupe d’ordre 2, et les sous-groupes forment la chaîne {1} ⊆ H ⊆ G.",
+  "legende_titre": "Chercher les sous-groupes d’ordre 2",
+  "lecture": [
+   "Les deux cadres rouges montrent que σ₂² = σ₄ et σ₃² = σ₄, qui ne valent pas 1.",
+   "Le cadre vert montre que σ₄² = 1 : seul σ₄ convient.",
+   "À droite, la chaîne : G à quatre éléments (bleu), H = {1, σ₄} (vert), puis {1} (gris), chacun contenu dans le précédent."
+  ],
+  "a_voir": "Un seul élément autre que 1 a pour carré 1 ; il donne le sous-groupe H au milieu de la chaîne."
+ },
+ {
+  "code": "63-166",
+  "a_dire": "Le corps K = Inv H est de degré 2, et σ₄ est la conjugaison complexe : elle envoie ω sur son conjugué ω⁴.",
+  "legende_titre": "Le seul sous-groupe d’ordre 2 agit comme un miroir",
+  "lecture": [
+   "Sur le cercle, les deux points bleus sont ω et ω⁴, à 72° au-dessus et au-dessous de l'axe réel.",
+   "La flèche orange σ₄ les échange : c'est un miroir par rapport à l'axe réel, la conjugaison complexe.",
+   "Le point vert sur l'axe, cos 72°, ne bouge pas.",
+   "À droite, H = {1, σ₄} a pour corps fixe K = Inv H, encadré en vert, de degré 2."
+  ],
+  "a_voir": "Échanger ω et ω⁴ revient à refléter le plan : les nombres de l'axe réel sont fixes."
+ },
+ {
+  "code": "63-167",
+  "a_dire": "Les racines vont par paires conjuguées ; on pose s = ω + ω⁴ et t = ω² + ω³, deux sommes sur l’axe horizontal.",
+  "legende_titre": "Deux sommes de racines conjuguées",
+  "lecture": [
+   "Les points bleus ω et ω⁴ forment la première paire ; leur somme est le point bleu s sur l’axe.",
+   "Les points violets ω² et ω³ forment la seconde paire ; leur somme est le point violet t.",
+   "Les traits en pointillé montrent l’addition de chaque paire.",
+   "En bas : σ₄ fixe s et t, et σ₂ les échange."
+  ],
+  "a_voir": "Chaque paire de racines conjuguées donne une somme réelle : s pour la première, t pour la seconde."
+ },
+ {
+  "code": "63-168",
+  "a_dire": "s + t = −1 et s × t = −1, donc s et t sont les racines de x² + x − 1, soit (−1 ± √5)/2.",
+  "legende_titre": "Où se trouvent s et t",
+  "lecture": [
+   "La courbe bleue est celle de x² + x − 1 ; elle coupe l’axe horizontal en deux points.",
+   "Ces points sont s (bleu) et t (violet), de valeurs (−1 + √5)/2 et (−1 − √5)/2.",
+   "Le trait vert en pointillé passe au milieu de s et t : leur somme vaut −1.",
+   "Le cercle orange est le point où la courbe coupe l’axe vertical, à −1 : c’est s × t."
+  ],
+  "a_voir": "Somme −1 et produit −1 suffisent à trouver s et t."
+ },
+ {
+  "code": "63-169",
+  "a_dire": "s = 2 cos 72° est positif, donc c’est la racine positive, et cos 72° = (√5 − 1)/4.",
+  "legende_titre": "Choisir entre deux racines",
+  "lecture": [
+   "En haut, les deux racines de x² + x − 1 sur la droite : la rouge est négative, la verte est positive.",
+   "En bas, le quart de cercle montre ω à 72° et, en vert, le nombre cos 72° sur l’axe horizontal.",
+   "Comme s = 2 cos 72° est positif, s est la racine verte.",
+   "On lit alors cos 72° = (√5 − 1)/4."
+  ],
+  "a_voir": "Le signe de s sert à choisir la bonne des deux racines."
+ },
+ {
+  "code": "63-170",
+  "a_dire": "K contient s, donc √5 = 2s + 1 ; ℚ(√5) et K sont tous deux de degré 2, donc K = ℚ(√5).",
+  "legende_titre": "Deux corps de même degré",
+  "lecture": [
+   "Le rang violet ℚ(√5) a deux cases : 1 et √5, donc degré 2.",
+   "Le rang bleu K a deux cases : 1 et s, donc degré 2 ; la flèche orange rappelle que √5 = 2s + 1 est dans K.",
+   "Le signe vert « = » dit que ces deux corps sont égaux, car leur degré est le même.",
+   "Le rang gris ℚ(ω) a quatre cases : degré 4, différent de 2 (signe rouge)."
+  ],
+  "a_voir": "Une inclusion plus un même degré donnent l’égalité ; une inclusion seule ne suffit pas."
+ },
+ {
+  "code": "63-171",
+  "a_dire": "Les chaînes {1} ⊆ {1, σ₄} ⊆ G et ℚ ⊆ ℚ(√5) ⊆ ℚ(ω) ont trois boîtes dans l’ordre renversé, et chaque trait porte le même nombre 2.",
+  "legende_titre": "Deux chaînes face à face",
+  "lecture": [
+   "La colonne bleue à gauche est la chaîne de sous-groupes : G, {1, σ₄}, {1}.",
+   "La colonne violette à droite est la chaîne de corps : ℚ, ℚ(√5), ℚ(ω).",
+   "Chaque flèche grise relie un sous-groupe au corps qui lui correspond, de haut en bas dans l’ordre renversé.",
+   "Chaque trait porte le nombre 2 (orange), des deux côtés."
+  ],
+  "a_voir": "Les deux colonnes de traits portent les mêmes nombres 2, ligne à ligne."
+ },
+ {
+  "code": "63-172",
+  "a_dire": "G est commutatif, donc H est normal ; σ₂ échange s et t, donc √5 et −√5.",
+  "legende_titre": "Un remplacement qui échange deux nombres",
+  "lecture": [
+   "En haut, s (bleu) et t (violet) sont de part et d’autre de la ligne verticale en pointillé.",
+   "La flèche orange σ₂ les échange.",
+   "En bas, √5 (bleu) et −√5 (violet) sont de part et d’autre de la même ligne.",
+   "La flèche orange σ₂ les échange aussi : √5 = 2s + 1 passe à −√5 = 2t + 1."
+  ],
+  "a_voir": "σ₂ échange s et t, donc √5 et −√5 ; le groupe de ℚ(√5) a 2 éléments."
+ },
+ {
+  "code": "63-173",
+  "a_dire": "La chaîne ℚ ⊆ ℚ(√5) ⊆ ℚ(ω) a deux étages de degré 2, donc cos 72° s’écrit avec des racines carrées et le pentagone est constructible.",
+  "legende_titre": "Ce que la chaîne permet",
+  "lecture": [
+   "À gauche, le pentagone régulier bleu ; le trait vert est cos 72°.",
+   "À droite, la chaîne de trois corps : ℚ, ℚ(√5) (vert) et ℚ(ω).",
+   "Chaque flèche orange est un étage de degré 2, obtenu par une racine carrée.",
+   "Le cadre vert ℚ(√5) contient cos 72°."
+  ],
+  "a_voir": "Deux étages de degré 2 suffisent, donc le pentagone régulier est constructible."
+ },
+ {
+  "code": "63-174",
+  "a_dire": "Avec √3 et √5, il y a quatre automorphismes et trois corps intermédiaires ℚ(√5), ℚ(√3), ℚ(√15).",
+  "legende_titre": "Le même schéma avec 3 et 5",
+  "lecture": [
+   "En haut, le corps ℚ(√3, √5) ; en bas, ℚ.",
+   "Au milieu, trois corps : ℚ(√5) (orange), ℚ(√3) (violet), ℚ(√15) (vert).",
+   "Chaque corps du milieu est le corps fixe d’un automorphisme : σ change le signe de √3, τ celui de √5, μ = στ change les deux.",
+   "Les traits de la même couleur relient le corps du milieu au haut et au bas."
+  ],
+  "a_voir": "Trois corps intermédiaires, un pour chacun des trois automorphismes autres que l’identité."
+ },
+ {
+  "code": "63-175",
+  "a_dire": "γ = √3 + √5 est un élément primitif : γ + 2/γ = 2√5 et γ − 2/γ = 2√3 sont dans ℚ(γ).",
+  "legende_titre": "Retrouver √3 et √5 à partir de γ",
+  "lecture": [
+   "Sur le plan, l’abscisse compte les √3 et l’ordonnée compte les √5.",
+   "La flèche bleue est γ = √3 + √5 ; la flèche orange est 2/γ = √5 − √3.",
+   "La somme γ + 2/γ est la flèche verte verticale : 2√5.",
+   "La différence γ − 2/γ est la flèche verte horizontale : 2√3."
+  ],
+  "a_voir": "Avec γ et 2/γ on obtient √5 et √3 : le nombre γ seul engendre tout le corps."
+ },
+ {
+  "code": "63-176",
+  "a_dire": "ℚ(√3, √5) = ℚ(√3 + √5) : chaque corps est contenu dans l’autre, avec a = 1.",
+  "legende_titre": "Deux inclusions",
+  "lecture": [
+   "Dans le disque bleu, √3 et √5 donnent leur somme γ : γ est dans ℚ(√3, √5).",
+   "Dans le disque violet, γ donne √5 = (γ + 2/γ)/2 et √3 = (γ − 2/γ)/2.",
+   "Le signe vert « = » relie les deux disques : les deux corps sont égaux.",
+   "La formule orange de gauche, γ = √3 + 1 × √5, est la méthode avec a = 1."
+  ],
+  "a_voir": "Chaque corps est contenu dans l’autre, donc ils sont égaux."
+ },
+ {
+  "code": "63-177",
+  "a_dire": "u = ⁶√5 i engendre le même corps : u² = −∛5 et u³ = −√5 i sont ses puissances, et u = √5 i / ∛5.",
+  "legende_titre": "Un seul nombre pour deux générateurs",
+  "lecture": [
+   "Le point bleu est u ; le point vert à gauche est u², égal à −∛5.",
+   "Le point vert en bas est u³, égal à −√5 i.",
+   "La courbe orange tourne d’un quart de tour à chaque multiplication par u.",
+   "À droite, le quotient √5 i / ∛5 redonne u."
+  ],
+  "a_voir": "Les deux générateurs sont des puissances de u, et u se fabrique avec eux : les deux corps sont égaux."
+ },
+ {
+  "code": "63-178",
+  "a_dire": "Dans ℚ(r), avec r = ∛2, il n’y a qu’un automorphisme (l’identité), alors que le degré vaut 3.",
+  "legende_titre": "Un groupe plus petit que le degré",
+  "lecture": [
+   "Les trois points sont les racines de x³ − 2 : r (vert) sur la droite réelle, jr et j²r (rouges) en dehors.",
+   "ℚ(r) est dans ℝ : seule r est dans ce corps, donc η(r) = r.",
+   "En bas à droite, trois cases bleues et grises pour le degré 3, une seule case verte pour l’unique automorphisme.",
+   "Le signe rouge 1 < 3 résume l’écart."
+  ],
+  "a_voir": "Un seul automorphisme pour un degré 3 : le groupe est trop petit."
+ },
+ {
+  "code": "63-179",
+  "a_dire": "En partant de ℚ, puis Gal, puis Inv, on arrive à ℚ(r) et non à ℚ : la correspondance est cassée, l’hypothèse galoisienne est nécessaire.",
+  "legende_titre": "Le retour ne revient pas au départ",
+  "lecture": [
+   "La chaîne du haut : ℚ (bleu), puis le groupe {1} (gris) par Gal, puis ℚ(r) (rouge) par Inv.",
+   "La grande flèche rouge revient vers ℚ ; le signe ≠ dit que l’on n’y arrive pas.",
+   "En bas, le grand cadre rouge ℚ(r) contient ℚ : l’inclusion est stricte."
+  ],
+  "a_voir": "On attendait ℚ, on obtient ℚ(r) : sans l’hypothèse galoisienne, le théorème est faux."
+ },
+ {
+  "code": "63-180",
+  "a_dire": "Quand E = F, le groupe est {1}, il n’y a qu’un sous-groupe et qu’un corps : la correspondance est vraie mais n’apprend rien.",
+  "legende_titre": "Le cas le plus petit",
+  "lecture": [
+   "À gauche, le groupe réduit à {1}, avec un seul sous-groupe.",
+   "À droite, le corps E = F, seul corps entre F et E.",
+   "La flèche verte relie les deux : c’est la correspondance.",
+   "Le degré [E : F] vaut 1 : il n’y a aucun choix à faire."
+  ],
+  "a_voir": "Un seul sous-groupe, un seul corps : la correspondance existe, mais sans contenu."
+ },
+ {
+  "code": "63-181",
+  "a_dire": "Quand la séparabilité manque, x^p − a = (x − u)^p a une seule racine répétée : corps de décomposition, mais groupe trivial alors que le degré vaut p.",
+  "legende_titre": "Une racine comptée plusieurs fois",
+  "lecture": [
+   "À gauche, en rouge, un corps où 2 = 0 : x² − a s’écrit (x − u)(x − u), une seule racine u comptée 2 fois.",
+   "Tout automorphisme envoie u sur u : le groupe est {1}, donc 1 < 2.",
+   "À droite, pour comparer, x² − 2 sur les fractions a deux racines distinctes, −√2 et √2, échangées par la flèche orange.",
+   "Le groupe a alors 2 éléments, comme le degré."
+  ],
+  "a_voir": "Une racine double ne laisse aucun choix : le groupe est trop petit."
+ },
+ {
+  "code": "63-182",
+  "a_dire": "Le chapitre 63 est la plaque tournante : les chapitres 61 et 62 y mènent, les chapitres 64, 66 et 67 en partent.",
+  "legende_titre": "Le chapitre 63 au centre",
+  "lecture": [
+   "Au centre, le disque bleu est le chapitre 63.",
+   "À gauche, les chapitres 61 (constructibilité) et 62 (corps de décomposition) mènent à lui.",
+   "À droite, trois flèches orange partent vers le chapitre 64 (radicaux), le 66 (polygones) et le 67 (corps finis)."
+  ],
+  "a_voir": "Ce chapitre est le point central : les suivants s’appuient sur lui."
+ },
+ {
+  "code": "63-183",
+  "a_dire": "Le critère de Galois : résoluble par radicaux si et seulement si le groupe est résoluble ; la propriété (γ) fait le pont entre les deux chaînes.",
+  "legende_titre": "Deux chaînes qui se répondent",
+  "lecture": [
+   "À gauche, en violet, la chaîne de corps : F, puis F(ⁿ√a), et ainsi de suite ; chaque étage ajoute une racine ⁿ√a.",
+   "À droite, en bleu, la chaîne de groupes : G, puis des groupes plus petits, jusqu’à {1}.",
+   "Les flèches vertes relient chaque corps au groupe qui lui correspond.",
+   "Les traits de droite portent un quotient commutatif ; en bas, la propriété (γ) relie normal et galoisien."
+  ],
+  "a_voir": "Chaque étage de racine correspond à un sous-groupe normal à quotient commutatif."
+ },
+ {
+  "code": "63-184",
+  "a_dire": "Le groupe de Galois est vu comme un groupe de permutations des n racines, un sous-groupe de S_n ; S_n n’est pas résoluble pour n ≥ 5.",
+  "legende_titre": "Le groupe vu comme permutations des racines",
+  "lecture": [
+   "Le triangle a pour sommets les trois racines r, jr, j²r de x³ − 2 ; la flèche orange les permute.",
+   "À droite : G est un sous-groupe de S_n, et pour x³ − 2 on a G = S₃.",
+   "En bas, la droite des valeurs de n : n = 3 est l’exemple du triangle.",
+   "La zone rouge n ≥ 5 marque les cas où S_n n’est pas résoluble."
+  ],
+  "a_voir": "Le groupe de Galois permute les racines ; à partir de n = 5, S_n n’est plus résoluble."
+ },
+ {
+  "code": "63-185",
+  "a_dire": "Pour 17 côtés, le groupe est cyclique d’ordre 16 : la chaîne 16, 8, 4, 2, 1 descend par indices 2, donc quatre racines carrées successives.",
+  "legende_titre": "Quatre étages de degré 2",
+  "lecture": [
+   "Chaque barre est le groupe, une case par élément : 16, puis 8, 4, 2 et enfin 1 (vert).",
+   "Chaque flèche orange divise par 2 : c’est un indice 2, donc une racine carrée.",
+   "À droite, le polygone à 17 côtés.",
+   "Il y a quatre flèches, donc quatre racines carrées successives."
+  ],
+  "a_voir": "16 = 2 × 2 × 2 × 2 : quatre étages de degré 2 mènent jusqu’au polygone à 17 côtés."
+ },
+ {
+  "code": "63-186",
+  "a_dire": "Pour un corps fini, le groupe de Galois est cyclique, engendré par x ↦ x^p, car |G| = [E : F].",
+  "legende_titre": "Le groupe d’un corps à 4 éléments",
+  "lecture": [
+   "En haut, le corps à 4 éléments est de degré 2 : deux cases bleues, 1 et a.",
+   "En dessous, le groupe a deux éléments : x ↦ x et x ↦ x².",
+   "Les deux nombres sont égaux : |G| = [E : F].",
+   "Le groupe est engendré par x ↦ x², donc il est cyclique."
+  ],
+  "a_voir": "Autant d’éléments dans le groupe que de degré, et un seul élément x ↦ x² engendre tout le groupe."
+ },
+ {
+  "code": "63-187",
+  "a_dire": "S_n agit sur les fractions en x₁, …, xₙ en permutant les variables ; le corps fixe est engendré par les polynômes symétriques élémentaires.",
+  "legende_titre": "Échanger deux variables",
+  "lecture": [
+   "Dans le plan, le point bleu (x₁, x₂) devient le point orange (x₂, x₁) : miroir sur la diagonale verte.",
+   "À droite, x₁ + x₂ reste inchangé, et x₁ x₂ aussi.",
+   "En bas, ces deux nombres engendrent le corps fixe : Inv S₂ = F(p₁, p₂)."
+  ],
+  "a_voir": "L’échange est un miroir ; ce qu’il laisse fixe, ce sont la somme et le produit."
+ },
+ {
+  "code": "63-188",
+  "a_dire": "Les deux dessins sont deux treillis anti-isomorphes : même forme, ordre renversé.",
+  "legende_titre": "Deux dessins en miroir",
+  "lecture": [
+   "À gauche, les cinq sous-groupes : G en haut, trois sous-groupes au milieu, {1} en bas.",
+   "À droite, les cinq corps : ℚ en haut, trois corps au milieu, E en bas.",
+   "Les traits de même couleur relient les mêmes paires de chaque côté.",
+   "À gauche on lit du plus grand au plus petit, à droite du plus petit au plus grand."
+  ],
+  "a_voir": "Les deux dessins ont la même forme ; seul l’ordre est renversé."
+ },
+ {
+  "code": "63-189",
+  "a_dire": "Le groupe de x⁴ − 2 est celui des 8 symétries du carré formé par ses racines ; on répond aux questions à partir de ce groupe.",
+  "legende_titre": "Les huit symétries d’un carré",
+  "lecture": [
+   "Les quatre points bleus sont les racines de x⁴ − 2 : ±⁴√2 et ±i⁴√2 ; ils forment un carré.",
+   "La flèche orange est un quart de tour : une des 4 rotations.",
+   "Les quatre traits violets en pointillé sont les axes des 4 réflexions.",
+   "En bas : 4 + 4 = 8, le degré du corps de décomposition."
+  ],
+  "a_voir": "Huit symétries du carré, huit automorphismes."
+ },
+ {
+  "code": "63-190",
+  "a_dire": "La dérivée de x^(p^(nk)) − x vaut −1, donc le polynôme n’a pas de racine répétée.",
+  "legende_titre": "Une dérivée qui vaut −1",
+  "lecture": [
+   "À gauche, pour x⁴ − x : la dérivée est 4x³ − 1, et comme 4 = 0 il reste −1 (cadre vert).",
+   "À droite, dans le corps à 2 éléments, quatre sauts de 1 ramènent à 0 : c’est pourquoi 4 = 0.",
+   "En bas, même calcul avec x³ − x : 3 = 0, il reste −1."
+  ],
+  "a_voir": "La dérivée reste −1, qui n’est jamais nul : aucune racine n’est répétée."
+ },
+ {
+  "code": "63-191",
+  "a_dire": "L’application α ↦ α^(p^n) est d’ordre exactement k : ici, avec 8 éléments, ni α² = α ni α⁴ = α ne valent pour les 8 éléments, mais α⁸ = α oui.",
+  "legende_titre": "Pourquoi l’ordre vaut exactement 3",
+  "lecture": [
+   "Chaque rangée a 8 cases, une par élément du grand corps.",
+   "Première rangée : α² = α a au plus 2 solutions, les 6 autres cases rouges échappent.",
+   "Deuxième rangée : α⁴ = α a au plus 4 solutions, les 4 autres échappent.",
+   "Troisième rangée : α⁸ = α est vraie pour les 8 éléments (vert)."
+  ],
+  "a_voir": "Une application ne suffit pas, deux non plus, trois oui : l’ordre vaut exactement 3."
+ }
+]

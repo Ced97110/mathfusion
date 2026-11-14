@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+# two bars of the same total size 4 = 2 x 2
+text(ax, 44, 57, '|G| = [E:K] × [K:F]  (degrés)', 'encre', 's')
+box(ax, 6, 42, 36, 10, role='fixe', label='[E:K] = 2')
+box(ax, 46, 42, 36, 10, role='autre', label='[K:F] = 2')
+text(ax, 44, 47, '×', 'encre', 'm')
+text(ax, 44, 31.5, '|G| = |H| × [G:H]  (Lagrange)', 'encre', 's')
+box(ax, 6, 16, 36, 10, role='fixe', label='|H| = 2')
+box(ax, 46, 16, 36, 10, role='autre', label='[G:H] = 2')
+text(ax, 44, 21, '×', 'encre', 'm')
+text(ax, 24, 37, '= (lemme 1) : se supprime', 'fixe', 's')
+text(ax, 64, 37, '= (ce qui reste)', 'resultat', 's')
+text(ax, 44, 7, '[G:H] = [K:F]  (2 = 2)', 'resultat', 'm', weight='bold')
+save(fig, '63-130')
