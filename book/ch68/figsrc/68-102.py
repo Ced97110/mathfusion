@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(54)
+text(ax, 44, 50, r'code $C = \{000, 111\}$', 'sujet', 'm')
+box(ax, 4, 14, 80, 28, 'sujet', fill=False, dash=True)
+box(ax, 12, 20, 20, 10, 'resultat', label='000')
+box(ax, 56, 20, 20, 10, 'sujet', label='111')
+arrow(ax, (56, 25), (32, 25), 'varie')
+text(ax, 44, 36, '111 + 111 = 000', 'varie', 's')
+text(ax, 22, 8, 'neutre : le mot nul', 'resultat', 's')
+text(ax, 66, 8, 'opposé de 111 : 111', 'sujet', 's')
+save(fig, '68-102')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+box(ax, 4, 50, 22, 10, 'fixe', label='1001')
+arrow(ax, (27, 55), (37, 55), 'varie')
+text(ax, 32, 62, 'polynôme', 'varie', 's')
+box(ax, 38, 50, 30, 10, 'sujet', label=r'$1+x^3$')
+arrow(ax, (53, 49), (53, 41), 'varie')
+box(ax, 38, 30, 30, 10, 'autre', label=r'$\times\ g(x)$')
+text(ax, 18, 35, 'degré 3 :\n3 bits ajoutés', 'autre', 's')
+arrow(ax, (53, 29), (53, 18), 'varie')
+box(ax, 33, 6, 40, 11, 'resultat', label='mot du code')
+save(fig, '68-079')

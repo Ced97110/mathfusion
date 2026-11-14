@@ -1,0 +1,356 @@
+[
+ {
+  "code": "68-089",
+  "a_dire": "t est le plus grand entier dont le double ne dépasse pas d − 1 ; pour d = 4, c’est t = 1.",
+  "legende_titre": "Chercher la plus grande valeur permise de t",
+  "lecture": [
+   "La droite graduée donne les valeurs de 2t, de 0 à 5.",
+   "La ligne orange en pointillés est placée en 3, c’est d − 1 avec d = 4.",
+   "Les trois ronds sont t = 0, t = 1 et t = 2, posés sur 2t = 0, 2 et 4.",
+   "Le rond vert t = 1 est le plus grand rond qui ne dépasse pas la ligne ; le rond rouge t = 2 la dépasse."
+  ],
+  "a_voir": "Le dernier rond à gauche de la ligne orange est t = 1."
+ },
+ {
+  "code": "68-090",
+  "a_dire": "Le tableau donne, pour chaque distance minimale d, le nombre d’erreurs détectées et le nombre d’erreurs corrigées.",
+  "legende_titre": "Deux nombres pour chaque distance minimale",
+  "lecture": [
+   "Chaque ligne correspond à une valeur de d : 1, 2, 3, 4, 5 et 7.",
+   "Les ronds bleus comptent les erreurs détectées ; les ronds verts comptent les erreurs corrigées.",
+   "Un 0 écrit à la place des ronds veut dire aucune erreur.",
+   "Il n’y a pas de ligne pour d = 6."
+  ],
+  "a_voir": "Les ronds bleus augmentent d’un à chaque ligne ; les verts augmentent plus lentement."
+ },
+ {
+  "code": "68-091",
+  "a_dire": "Pour corriger une erreur de plus, il faut deux unités de distance de plus : d = 3 et d = 4 corrigent 1 erreur, d = 5 en corrige 2.",
+  "legende_titre": "Une erreur de plus coûte deux unités de distance",
+  "lecture": [
+   "Chaque ligne est une suite de points entre deux mots du code, les deux gros points aux bouts.",
+   "Les points bleus sont à distance t au plus du mot de gauche ; les points violets, du mot de droite.",
+   "Le point gris au milieu de la ligne d = 4 n’est dans aucune des deux zones.",
+   "Les deux zones ne se touchent que pour t = 1 quand d = 3 ou 4, et pour t = 2 quand d = 5."
+  ],
+  "a_voir": "Passer de d = 3 à d = 4 ne change pas t ; il faut aller jusqu’à d = 5 pour t = 2."
+ },
+ {
+  "code": "68-092",
+  "a_dire": "Quand d = 1, une erreur d’un bit change un mot du code en un autre mot du code, donc le récepteur ne détecte rien.",
+  "legende_titre": "Cas limite : tous les mots sont permis",
+  "lecture": [
+   "Les quatre ronds sont les quatre mots de deux bits : 00, 01, 10 et 11. Tous sont des mots du code.",
+   "Un trait gris relie deux mots qui diffèrent d’un bit.",
+   "Le rond bleu 00 est le mot envoyé ; le rond orange 01 est le mot reçu.",
+   "La flèche orange est l’erreur d’un seul bit."
+  ],
+  "a_voir": "Le mot reçu 01 est lui aussi un mot du code, donc rien n’alerte."
+ },
+ {
+  "code": "68-093",
+  "a_dire": "Quand d = 2, toute erreur est détectée, mais le mot reçu 0001 est à distance 1 de deux mots du code, donc on ne peut pas le corriger (t = 0).",
+  "legende_titre": "Cas limite : détecter sans pouvoir corriger",
+  "lecture": [
+   "Les deux cases bleues sont les mots du code 0000 et 0011.",
+   "La case orange est le mot reçu 0001, placé entre les deux.",
+   "Les deux flèches orange disent que 0001 est à distance 1 de chacun.",
+   "L’accolade grise du bas mesure la distance 2 entre les deux mots du code."
+  ],
+  "a_voir": "0001 est aussi proche de 0000 que de 0011."
+ },
+ {
+  "code": "68-094",
+  "a_dire": "Si 2t ≥ d, deux boules de rayon t autour de deux mots à distance d ont un mot en commun, et aucune règle ne décide.",
+  "legende_titre": "Quand les boules se rencontrent",
+  "lecture": [
+   "Le cercle bleu est la boule de rayon 1 autour de 0000 ; le cercle violet, celle autour de 0011.",
+   "Les deux mots sont à distance 2 : les centres sont écartés de deux unités, et le rayon vaut une unité.",
+   "Les deux cercles se touchent en un point.",
+   "Ce point, en rouge, est le mot 0001 : il est dans les deux boules."
+  ],
+  "a_voir": "Le mot rouge 0001 appartient aux deux boules à la fois."
+ },
+ {
+  "code": "68-095",
+  "a_dire": "001 peut venir de 000 avec une erreur ou de 111 avec deux erreurs ; la première explication est environ 100 fois plus probable.",
+  "legende_titre": "Deux explications pour le même mot reçu",
+  "lecture": [
+   "La boîte orange du haut dit quel mot on reçoit : 001.",
+   "La boîte bleue 000 a pour barre la probabilité d’une erreur : environ 0,0098.",
+   "La boîte violette 111 a pour barre la probabilité de deux erreurs : environ 0,0001, une barre presque invisible.",
+   "La longueur de chaque barre est proportionnelle à sa probabilité."
+  ],
+  "a_voir": "La barre bleue est environ 100 fois plus longue que la barre violette."
+ },
+ {
+  "code": "68-096",
+  "a_dire": "Pour des mots de 7 bits avec q = 0,01, aucune erreur vaut environ 0,932, une erreur environ 0,066, deux ou plus environ 0,002.",
+  "legende_titre": "Les trois cas d’erreurs sur 7 bits",
+  "lecture": [
+   "La barre bleue est la probabilité d’aucune erreur : environ 0,932.",
+   "La barre orange est la probabilité d’une erreur : environ 0,066.",
+   "La barre violette est la probabilité de deux erreurs ou plus : environ 0,002.",
+   "La longueur de chaque barre est proportionnelle à son nombre."
+  ],
+  "a_voir": "Presque toute la probabilité est dans les deux premiers cas."
+ },
+ {
+  "code": "68-097",
+  "a_dire": "Une erreur est environ 30 fois plus probable que deux ou plus.",
+  "legende_titre": "Un rapport d’environ 30",
+  "lecture": [
+   "Les 30 ronds bleus représentent la probabilité d’une erreur, environ 0,066.",
+   "Le rond violet seul représente la probabilité de deux erreurs ou plus, environ 0,002.",
+   "Chaque rond bleu pèse à peu près autant que le rond violet."
+  ],
+  "a_voir": "Il faut 30 ronds bleus pour un seul rond violet."
+ },
+ {
+  "code": "68-098",
+  "a_dire": "Le décodage au maximum de vraisemblance choisit le mot du code qui demande le moins d’erreurs.",
+  "legende_titre": "Le nom de la règle du mot le plus proche",
+  "lecture": [
+   "La grande boîte orange à droite est le mot reçu 001.",
+   "La boîte verte 000 est reliée au mot reçu par un rond orange : une erreur.",
+   "La boîte grise 111 est reliée par deux ronds orange : deux erreurs.",
+   "Le mot qui demande le moins d’erreurs, 000, est celui qui est choisi."
+  ],
+  "a_voir": "Le chemin avec un seul rond orange est celui qui est choisi."
+ },
+ {
+  "code": "68-099",
+  "a_dire": "Sur un bloc de 500 bits avec q = 0,005, il y a en moyenne 2,5 erreurs ; les erreurs multiples dominent, donc on découpe en blocs courts.",
+  "legende_titre": "Plus le bloc est long, plus il y a d’erreurs",
+  "lecture": [
+   "La droite graduée de 0 à 3 compte les erreurs en moyenne par bloc.",
+   "La petite barre bleue, pour 7 bits, s’arrête à 0,07.",
+   "La grande barre orange, pour 500 bits, s’arrête à 2,5.",
+   "Le texte vert dit ce qu’on fait : découper en blocs courts."
+  ],
+  "a_voir": "La barre du bloc de 500 bits dépasse deux erreurs en moyenne."
+ },
+ {
+  "code": "68-100",
+  "a_dire": "Calculer d exige de regarder toutes les paires de mots : 120 paires pour 16 mots, environ 1,4 × 10^14 pour 2^24 mots.",
+  "legende_titre": "Toutes les paires de mots d’un code",
+  "lecture": [
+   "Les 16 ronds bleus sont les 16 mots du code.",
+   "Chaque trait gris relie deux mots : il y a un trait par paire, soit 120 traits.",
+   "Le texte violet donne le nombre de paires pour 2^24 mots : environ 1,4 × 10^14."
+  ],
+  "a_voir": "Avec seulement 16 mots, les traits forment déjà un réseau très dense."
+ },
+ {
+  "code": "68-101",
+  "a_dire": "Un code est linéaire quand la somme de deux de ses mots est encore un mot du code.",
+  "legende_titre": "Un code stable par la somme",
+  "lecture": [
+   "Le cadre vert à gauche est le code {000, 111} ; ses deux sommes écrites en vert retombent dans le code.",
+   "Le cadre rouge à droite est le code {001, 010}.",
+   "La flèche rouge mène à la somme 001 + 010 = 011, une case rouge qui sort du cadre.",
+   "Le texte rouge dit que 011 n’est pas dans le code."
+  ],
+  "a_voir": "À gauche la somme reste dans le cadre, à droite elle en sort."
+ },
+ {
+  "code": "68-102",
+  "a_dire": "Un code linéaire est un sous-groupe : le mot nul est x + x, et l’opposé de x est x lui-même.",
+  "legende_titre": "Pourquoi un code linéaire est un sous-groupe",
+  "lecture": [
+   "Le cadre en pointillés est le code {000, 111}.",
+   "La case verte 000 est le mot nul, le neutre.",
+   "La flèche orange part de 111 et arrive en 000 : 111 + 111 = 000.",
+   "Le texte bleu dit que l’opposé de 111 est 111."
+  ],
+  "a_voir": "En additionnant 111 à lui-même, on retombe sur le mot nul qui est dans le code."
+ },
+ {
+  "code": "68-103",
+  "a_dire": "Un code linéaire est un sous-espace : multiplier par 0 ou par 1 reste dans le code ; il faut aussi la stabilité par somme.",
+  "legende_titre": "Les scalaires 0 et 1 ne suffisent pas",
+  "lecture": [
+   "Le cadre vert est le code C = {000, 111} ; le cadre rouge est l’ensemble E = {000, 111, 010}.",
+   "Première ligne de résultats : C et E restent stables par 0 et par 1.",
+   "Deuxième ligne : dans C, la somme 000 + 111 = 111 reste dans C.",
+   "Dans E, la somme 111 + 010 = 101, écrite en rouge, n’est pas dans E : E n’est pas un sous-espace."
+  ],
+  "a_voir": "E passe le test des scalaires 0 et 1 mais échoue sur la somme."
+ },
+ {
+  "code": "68-104",
+  "a_dire": "Dans un code linéaire, la distance minimale est le plus petit poids d’un mot non nul.",
+  "legende_titre": "Distance minimale et plus petit poids",
+  "lecture": [
+   "Chaque ligne est un mot non nul du code : 00111, 11100 et 11011.",
+   "Les ronds bleus comptent les 1 du mot, c’est son poids : 3, 3 et 4.",
+   "Les deux lignes encadrées en vert sont celles de poids 3, le plus petit.",
+   "Le texte du bas donne d = 3."
+  ],
+  "a_voir": "Le plus petit nombre de ronds dans une ligne est la distance minimale."
+ },
+ {
+  "code": "68-105",
+  "a_dire": "Pour deux mots du code, leur distance est le poids de leur somme, qui est un mot non nul du code ; toute distance est donc un poids.",
+  "legende_titre": "De deux mots à un poids",
+  "lecture": [
+   "Les ronds pleins sont des 1, les ronds vides sont des 0. Le premier mot en bleu est 00111, le second en violet est 11100.",
+   "Les flèches orange partent des quatre positions où les deux mots diffèrent.",
+   "Le mot vert du bas est la somme 11011 : ses quatre ronds pleins sont ces positions.",
+   "La distance 4 est donc le poids 4 de la somme."
+  ],
+  "a_voir": "Les flèches orange et les ronds pleins verts sont aux mêmes places."
+ },
+ {
+  "code": "68-106",
+  "a_dire": "Pour un code linéaire de 16 mots, 15 poids remplacent 120 distances.",
+  "legende_titre": "Moins de calculs pour un code linéaire",
+  "lecture": [
+   "À gauche, 16 ronds gris et tous les traits entre eux : 120 distances.",
+   "À droite, le rond vert est le mot nul ; 15 traits bleus le relient aux autres mots.",
+   "Chaque trait de droite est un poids à calculer."
+  ],
+  "a_voir": "Le dessin de droite a 15 traits contre 120 à gauche."
+ },
+ {
+  "code": "68-107",
+  "a_dire": "On fabrique un sous-groupe par des équations : chaque équation devient une ligne d’un tableau de 0 et de 1 ayant m lignes et n colonnes.",
+  "legende_titre": "Des équations rangées en lignes",
+  "lecture": [
+   "Chaque texte orange à gauche est une équation : somme des quatre bits nulle, puis somme des deux premiers bits nulle.",
+   "La flèche orange conduit à sa ligne du tableau.",
+   "Une case bleue contient un 1 (le bit est dans l’équation) ; une case grise contient un 0.",
+   "L’accolade compte les n = 4 colonnes, et le texte du bas les m = 2 lignes."
+  ],
+  "a_voir": "Deux équations donnent un tableau de deux lignes et quatre colonnes."
+ },
+ {
+  "code": "68-108",
+  "a_dire": "La matrice de contrôle H range les équations : une ligne par équation. Pour le code de parité sur 4 bits, H a une ligne de quatre 1.",
+  "legende_titre": "H décrit le code par ses équations",
+  "lecture": [
+   "Les huit cases grises à gauche sont la liste des mots du code de parité sur 4 bits.",
+   "Les quatre cases bleues à droite sont la matrice H, une ligne de quatre 1 : m = 1, n = 4.",
+   "La flèche orange à double sens dit que les deux décrivent le même code."
+  ],
+  "a_voir": "Une seule ligne de H remplace la liste des huit mots."
+ },
+ {
+  "code": "68-109",
+  "a_dire": "Le produit Hx additionne les bits de x placés sous les 1 de la ligne de H, avec la règle 1 + 1 = 0.",
+  "legende_titre": "Calculer Hx avec 1 + 1 = 0",
+  "lecture": [
+   "La ligne bleue du haut est H : quatre 1.",
+   "La ligne violette est le mot x = 0111.",
+   "Chaque flèche orange relie un 1 de H au bit de x dessous ; l’accolade donne la somme 0 + 1 + 1 + 1.",
+   "Le résultat vert est 1, car la règle 1 + 1 = 0 remplace le 3 ordinaire."
+  ],
+  "a_voir": "La somme de quatre bits donne un bit : 1."
+ },
+ {
+  "code": "68-110",
+  "a_dire": "Le code C est l’ensemble des mots x tels que Hx = 0 ; en changeant H, les mots changent mais la règle reste la même.",
+  "legende_titre": "Le code défini par H",
+  "lecture": [
+   "Chaque rond est un mot de 4 bits : les deux premiers bits donnent la ligne, les deux derniers la colonne.",
+   "Les ronds bleus pleins sont les 8 mots x qui vérifient Hx = 0 pour H = 1 1 1 1.",
+   "Les cercles violets entourent les 8 mots x qui vérifient Hx = 0 pour H = 1 1 0 0.",
+   "En bas, un exemple : pour 0110, la somme 0 + 1 + 1 + 0 vaut 0, donc le mot est plein. La règle Hx = 0 est la même, les mots changent."
+  ],
+  "a_voir": "Les ronds pleins et les ronds entourés ne sont pas aux mêmes endroits, mais la règle Hx = 0 est la même."
+ },
+ {
+  "code": "68-111",
+  "a_dire": "Un code défini par H est linéaire : si Hx = 0 et Hy = 0, alors H(x + y) = 0. Avec un second membre non nul, ce n’est plus vrai.",
+  "legende_titre": "Pourquoi le code défini par H est linéaire",
+  "lecture": [
+   "Le cadre vert à gauche regroupe les mots à nombre de 1 pair : 011 et 101 ont pour somme 110, aussi pair, case verte.",
+   "Le cadre rouge à droite regroupe les mots à nombre de 1 impair : 001 et 010.",
+   "Leur somme 011, en rouge, n’a pas un nombre de 1 impair.",
+   "Le texte du bas dit où la somme reste solution, et où non."
+  ],
+  "a_voir": "À gauche la somme est dans le cadre, à droite la somme en sort."
+ },
+ {
+  "code": "68-112",
+  "a_dire": "C est le noyau de la règle x ↦ Hx : l’ensemble des mots envoyés sur 0, donc un sous-groupe.",
+  "legende_titre": "Le code comme noyau",
+  "lecture": [
+   "Les quatre cases à gauche sont des mots de 4 bits.",
+   "Chaque flèche orange envoie un mot sur la somme de ses bits, dans la case de droite : 0 ou 1.",
+   "Les mots envoyés sur 0, en vert, forment le noyau.",
+   "Les mots envoyés sur 1 restent en gris."
+  ],
+  "a_voir": "Les deux cases vertes de gauche arrivent toutes les deux sur 0."
+ },
+ {
+  "code": "68-113",
+  "a_dire": "Trouver le code, c’est résoudre un système d’équations linéaires dont les inconnues valent 0 ou 1.",
+  "legende_titre": "Un système d’équations avec des bits",
+  "lecture": [
+   "Les trois cases bleues sont les trois bits inconnus x1, x2 et x3.",
+   "L’accolade orange du haut est la première équation, x1 + x2 = 0 ; celle du bas est la seconde, x2 + x3 = 0.",
+   "Les deux cases vertes du bas sont les solutions : 000 et 111."
+  ],
+  "a_voir": "Les deux équations forcent les trois bits à être égaux."
+ },
+ {
+  "code": "68-114",
+  "a_dire": "Le symbole e_i désigne le mot qui a un seul 1, en position i.",
+  "legende_titre": "Lire le signe e avec un indice",
+  "lecture": [
+   "La rangée du haut donne les numéros de position, de 1 à 5.",
+   "La ligne e1 écrit le mot 10000 : le rond plein est en position 1.",
+   "La ligne e3 écrit le mot 00100 : le rond plein est en position 3.",
+   "Un rond plein est un 1, un rond vide est un 0."
+  ],
+  "a_voir": "L’indice de e est la place du rond plein."
+ },
+ {
+  "code": "68-115",
+  "a_dire": "H e_i est la colonne i de H ; le seul 1 de e_i choisit cette colonne.",
+  "legende_titre": "Un mot à un seul 1 choisit une colonne",
+  "lecture": [
+   "La ligne du haut est le mot e2 = 010 ; sa case orange est le 1, en position 2.",
+   "Le tableau bleu est H, à deux lignes et trois colonnes.",
+   "Le cadre orange en pointillés entoure la colonne 2, que la flèche du haut désigne.",
+   "Les deux cases vertes à droite sont le résultat : la colonne 2 de H, 0 puis 1."
+  ],
+  "a_voir": "Le résultat vert est la copie de la colonne entourée."
+ },
+ {
+  "code": "68-116",
+  "a_dire": "Le code détecte toute erreur simple exactement quand aucune colonne de H n’est nulle ; une colonne nulle laisse passer une erreur.",
+  "legende_titre": "Une colonne nulle cache une erreur",
+  "lecture": [
+   "Le tableau bleu du haut est H = 1 1 0 ; la case rouge est sa troisième colonne, nulle.",
+   "La case bleue 000 est le mot envoyé et la case orange 001 le mot reçu.",
+   "La flèche orange est l’erreur au bit 3.",
+   "Le cadre en pointillés dit que 001 est lui aussi un mot du code."
+  ],
+  "a_voir": "L’erreur au bit de la colonne nulle donne un mot du code, donc elle n’est pas vue."
+ },
+ {
+  "code": "68-117",
+  "a_dire": "Le code corrige toute erreur simple exactement quand les colonnes de H sont non nulles et différentes deux à deux ; deux colonnes égales donnent d ≤ 2.",
+  "legende_titre": "Colonnes différentes pour corriger",
+  "lecture": [
+   "Le tableau du haut, cadre vert, a trois colonnes non nulles et différentes : d ≥ 3.",
+   "Le tableau du bas, cadre rouge, a ses deux premières colonnes égales : ces cases sont en rouge.",
+   "Pour le tableau du bas, d est au plus 2."
+  ],
+  "a_voir": "Dans le tableau du bas, les deux colonnes rouges sont identiques."
+ },
+ {
+  "code": "68-118",
+  "a_dire": "Avec 3 lignes, une colonne est un mot de 3 bits : il y en a 8, on retire la colonne nulle, il en reste 7.",
+  "legende_titre": "Combien de colonnes avec 3 lignes",
+  "lecture": [
+   "Les huit cases sont tous les mots de 3 bits, de 000 à 111.",
+   "La case rouge en pointillés est la colonne nulle 000, interdite.",
+   "Les sept cases bleues restantes sont les colonnes possibles.",
+   "Le texte du haut donne 2^3 = 8, le texte vert du bas donne 7."
+  ],
+  "a_voir": "Il reste sept cases bleues quand on retire la case rouge."
+ }
+]

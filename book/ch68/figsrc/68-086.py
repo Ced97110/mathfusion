@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+x0, u, yA, yB = 10, 22, 20, 42
+x1 = x0 + 3 * u
+arrow(ax, (x0, yA), (x1, yA), 'fixe', both=True)
+text(ax, (x0 + x1) / 2, yA - 4.5, r"$d(c,c')=3$", 'fixe', 'm')
+text(ax, x0, yA + 4, '000', 'sujet', 's')
+text(ax, x1, yA + 4, '111', 'autre', 's')
+disc(ax, x0, yA, 1.6, 'sujet'); disc(ax, x1, yA, 1.6, 'autre')
+disc(ax, x0, yB, 1.6, 'sujet'); disc(ax, x1, yB, 1.6, 'autre')
+line(ax, [(x0, yA), (x0, yB)], 'fixe', dash=True)
+line(ax, [(x1, yA), (x1, yB)], 'fixe', dash=True)
+arrow(ax, (x0, yB), (x0 + u, yB), 'varie')
+arrow(ax, (x0 + u, yB), (x0 + 2 * u, yB), 'varie')
+line(ax, [(x0 + 2 * u, yB), (x1, yB)], 'limite', dash=True)
+disc(ax, x0 + u, yB, 1.4, 'varie')
+text(ax, x0 + u / 2, yB - 4, r'$d(c,y)\leq 1$', 'varie', 's')
+text(ax, x0 + 1.5 * u, yB - 4, r"$d(y,c')\leq 1$", 'varie', 's')
+brace(ax, x0, x0 + 2 * u, yB + 2.5, 'varie', label=r'au plus $1+1=2$', down=False)
+text(ax, x0 + 2.5 * u + 4, yB + 5, r'$3\leq 2$ : faux', 'limite', 's')
+save(fig, '68-086')

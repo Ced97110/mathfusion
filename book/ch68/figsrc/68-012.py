@@ -1,0 +1,10 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(64)
+box(ax, 3, 51, 38, 10, 'autre', label='Cryptographie (ch. 53)', size='s')
+box(ax, 47, 51, 38, 10, 'sujet', label='Codage', size='s')
+box(ax, 3, 28, 38, 20, 'autre', label='transforme le message\ncontre un espion\nbut : empêcher de lire', size='s')
+box(ax, 47, 28, 38, 20, 'sujet', label='transforme le message\ncontre le bruit\nbut : lire malgré\nles erreurs', size='s')
+arrow(ax, (22, 27.5), (22, 16.6), 'autre')
+arrow(ax, (66, 27.5), (66, 16.6), 'sujet')
+box(ax, 3, 4, 82, 12, 'resultat', label='même outil : l’arithmétique modulaire', size='m')
+save(fig, '68-012')

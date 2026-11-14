@@ -1,0 +1,348 @@
+[
+ {
+  "code": "68-149",
+  "a_dire": "Avec deux bits faux, les cercles désignent un troisième bit et la correction ajoute une troisième erreur : le code ne corrige qu'une erreur.",
+  "legende_titre": "Deux bits faux, trois bits faux après correction",
+  "lecture": [
+   "La ligne du haut est le mot envoyé 0011001, en gris.",
+   "La ligne du milieu est le mot reçu 0011010 : les deux cases orange sont les bits 6 et 7 inversés.",
+   "Les cercles A et B sont pairs et C est impair : ils désignent le bit 1, et la flèche verte inverse ce bit.",
+   "La ligne du bas est le mot corrigé : les cases rouges (bits 1, 6 et 7) sont fausses. Le bit 1 est ajouté par la correction, les bits 6 et 7 sont de départ."
+  ],
+  "a_voir": "La correction inverse le bit 1, qui était juste : 3 erreurs, dont 2 de départ et 1 ajoutée."
+ },
+ {
+  "code": "68-150",
+  "a_dire": "Chaque boule de rayon 1 a 8 mots, et 16 boules font 16 × 8 = 128 mots, soit 2^7 : tous les mots de 7 bits.",
+  "legende_titre": "16 boules de 8 mots",
+  "lecture": [
+   "Chaque petit bloc de 8 cases est une boule : la case bleue foncée est le mot du code, les 7 cases grises sont ses voisins.",
+   "Il y a 16 blocs, rangés en 4 lignes de 4.",
+   "Le cadre vert entoure l'ensemble des mots de 7 bits : 128 mots."
+  ],
+  "a_voir": "Les 16 blocs de 8 cases font 128 cases, et le cadre vert contient exactement ces 128 mots."
+ },
+ {
+  "code": "68-151",
+  "a_dire": "Un code parfait est un code dont les boules de rayon t remplissent tout l'espace, sans laisser un mot dehors.",
+  "legende_titre": "Des boules qui remplissent tout l'espace",
+  "lecture": [
+   "Le grand cadre vert est l'ensemble des 128 mots de 7 bits.",
+   "Chaque rectangle bleu est une boule de rayon 1 : le point au centre est le mot du code, la boule a 8 mots.",
+   "Il y a 16 rectangles : ils se touchent et ne laissent aucune place libre."
+  ],
+  "a_voir": "Les 16 boules couvrent tout le cadre : aucun mot n'est hors des boules."
+ },
+ {
+  "code": "68-152",
+  "a_dire": "Tout mot reçu est à distance au plus 1 d'un mot du code : le décodeur a toujours un mot à proposer.",
+  "legende_titre": "Un mot du code toujours à portée",
+  "lecture": [
+   "Le titre nomme le code : le code de Hamming. La colonne de gauche donne des mots reçus, celle de droite le mot du code le plus proche.",
+   "Première rangée : 1111111 est un mot du code, à distance 0 de lui-même.",
+   "Deuxième rangée : 1000000, dont la case orange est le seul bit qui diffère, est à distance 1 du mot nul 0000000, un mot du code.",
+   "En bas, la règle : tout mot reçu est à distance au plus 1 d’un mot du code."
+  ],
+  "a_voir": "Dans les deux cas, un mot du code se trouve à distance 0 ou 1 du mot reçu."
+ },
+ {
+  "code": "68-153",
+  "a_dire": "Avec m bits de contrôle, il y a 2^m − 1 colonnes non nulles différentes ; avec une colonne de plus, deux colonnes sont égales et le code ne corrige plus une erreur.",
+  "legende_titre": "Trois lignes, huit colonnes : une de trop",
+  "lecture": [
+   "Les sept colonnes bleues sont les colonnes non nulles possibles avec 3 lignes A, B, C.",
+   "La huitième colonne, en rouge, est forcément égale à une autre : ici elle reprend la première.",
+   "Le trait rouge relie les deux colonnes égales.",
+   "Leur somme est nulle : le code a d ≤ 2 et ne corrige plus une erreur."
+  ],
+  "a_voir": "Sept colonnes non nulles seulement : la huitième répète une colonne déjà prise."
+ },
+ {
+  "code": "68-154",
+  "a_dire": "Quand m grandit, la part des bits de contrôle dans le mot diminue : 43 % pour m = 3, 27 % pour m = 4, 1 % pour m = 10.",
+  "legende_titre": "Le prix en bits de contrôle diminue",
+  "lecture": [
+   "Chaque barre est un mot, de même largeur : la partie orange est la part des bits de contrôle.",
+   "Pour m = 3, les mots ont 7 bits et la part orange est près de 43 %.",
+   "Pour m = 4, le code est (15, 11) et la part orange est environ 27 %.",
+   "Pour m = 10, le code est (1023, 1013) et la part orange est environ 1 %."
+  ],
+  "a_voir": "La partie orange se réduit presque à un trait quand m passe de 3 à 10."
+ },
+ {
+  "code": "68-155",
+  "a_dire": "Le syndrome Hr d'un mot reçu r est la liste des résultats des équations de contrôle, un bit par ligne ; pour Hamming, c'est la liste des cercles impairs.",
+  "legende_titre": "Une somme par cercle, une liste de résultats",
+  "lecture": [
+   "Chaque ligne A, B, C est un cercle : les cases bleues sont les bits du mot reçu 0011011 qui sont dans ce cercle.",
+   "À droite, la somme des bits du cercle puis son reste : 3 donne 1, 3 donne 1, 2 donne 0.",
+   "Le résultat vert est la liste des trois restes : Hr = (1, 1, 0)."
+  ],
+  "a_voir": "Les cercles A et B sont impairs, C est pair : le syndrome est (1, 1, 0)."
+ },
+ {
+  "code": "68-156",
+  "a_dire": "Le syndrome d'un mot reçu ne dépend que de l'erreur, pas du mot envoyé.",
+  "legende_titre": "Deux mots envoyés, une seule erreur",
+  "lecture": [
+   "À gauche, en gris, deux mots envoyés différents : 0011001 en haut, 1110000 en bas.",
+   "La flèche orange ajoute la même erreur e = 0000010 aux deux.",
+   "À droite, les mots reçus : le bit orange est le sixième bit inversé.",
+   "Sous chaque mot reçu, le syndrome est le même : 110."
+  ],
+  "a_voir": "Les deux mots reçus ont le même syndrome 110, bien que les mots envoyés soient différents."
+ },
+ {
+  "code": "68-157",
+  "a_dire": "Le décodage par syndrome inverse le bit i quand le syndrome est la colonne i ; avec deux erreurs, il échoue et ajoute une erreur.",
+  "legende_titre": "Quand le syndrome désigne le mauvais bit",
+  "lecture": [
+   "En haut, les colonnes 6 et 7 de H s’additionnent : 110 plus 111 donne le syndrome 001, en vert.",
+   "Ce syndrome est aussi la colonne 1, la dernière colonne bleue : il désigne le bit 1.",
+   "La flèche verte mène au mot reçu 0011010, dont les deux cases orange sont les bits 6 et 7 inversés.",
+   "En bas, le mot corrigé : les cases rouges (bits 1, 6, 7) sont fausses. Le bit 1 est ajouté par la correction, les bits 6 et 7 sont de départ."
+  ],
+  "a_voir": "La méthode inverse le bit 1, qui était juste : il reste trois bits faux, dont un ajouté."
+ },
+ {
+  "code": "68-158",
+  "a_dire": "Pour le mot reçu 0011011, le syndrome 110 est égal à la colonne 6 de H : on inverse le sixième bit.",
+  "legende_titre": "Un syndrome qui désigne une colonne",
+  "lecture": [
+   "Le tableau du haut est la matrice H : la colonne 6, en bleu, se lit 110.",
+   "Le syndrome 110 est égal à cette colonne, la flèche verte la relie au sixième bit du mot reçu.",
+   "Dans le mot reçu 0011011, le sixième bit est en orange : c'est celui qu'on inverse.",
+   "Le mot corrigé 0011001, en vert, est un mot du code."
+  ],
+  "a_voir": "La colonne 6 de H est 110, comme le syndrome : le bit à inverser est le sixième."
+ },
+ {
+  "code": "68-159",
+  "a_dire": "Pour plus d'une erreur, le syndrome est une somme de colonnes et plusieurs explications donnent le même syndrome : la comparaison aux colonnes ne suffit plus.",
+  "legende_titre": "Un syndrome, plusieurs explications",
+  "lecture": [
+   "Chaque ligne est une explication possible du syndrome 001.",
+   "La première ligne est la colonne 1 seule.",
+   "Les trois autres lignes sont des sommes de deux colonnes : 010 + 011, 100 + 101 et 110 + 111.",
+   "Les cases vertes à droite donnent toutes le même résultat : 001."
+  ],
+  "a_voir": "Quatre explications différentes donnent le même syndrome 001."
+ },
+ {
+  "code": "68-160",
+  "a_dire": "La classe latérale e + C est l'ensemble des mots obtenus en ajoutant e à chaque mot du code C.",
+  "legende_titre": "Ajouter un mot à tout le code",
+  "lecture": [
+   "Le code C = {000, 111} est écrit en haut.",
+   "Chaque ligne a un mot e en orange à gauche, que l'on ajoute à chaque mot du code.",
+   "Le cadre en pointillé bleu à droite contient les deux mots de la classe e + C.",
+   "La première ligne, avec e = 000, redonne le code lui-même."
+  ],
+  "a_voir": "Les quatre classes ont deux mots chacune et contiennent à elles quatre les 8 mots de trois bits."
+ },
+ {
+  "code": "68-161",
+  "a_dire": "Pour un code linéaire, les classes sont disjointes et ont toutes autant de mots que C ; sans linéarité, ce n'est plus vrai.",
+  "legende_titre": "Quand le code n'est pas linéaire",
+  "lecture": [
+   "La colonne bleue de gauche est le code {000, 001, 010}.",
+   "La colonne violette de droite est la classe 001 + C : 000, 001 et 011.",
+   "Les deux traits rouges relient les mots communs aux deux ensembles : 000 et 001.",
+   "La somme 001 + 010 = 011 sort du code : il n'est pas linéaire."
+  ],
+  "a_voir": "La classe 001 + C a deux mots en commun avec C et n'est pas égale à C."
+ },
+ {
+  "code": "68-162",
+  "a_dire": "Le mot reçu r = c + e est toujours dans la classe e + C de l'erreur.",
+  "legende_titre": "Le mot reçu est dans la classe de l'erreur",
+  "lecture": [
+   "Le cadre gris de gauche est le code C, avec le mot envoyé c = 0011001 en bleu.",
+   "La flèche orange ajoute l'erreur e = 0000010.",
+   "Le cadre violet de droite est la classe e + C, avec le mot reçu r = 0011011 en orange."
+  ],
+  "a_voir": "En ajoutant e à un mot du code, on arrive dans la classe e + C."
+ },
+ {
+  "code": "68-163",
+  "a_dire": "Le chef de classe est le mot de plus petit poids de la classe : c'est l'erreur la plus probable.",
+  "legende_titre": "Choisir dans la classe le mot le plus léger",
+  "lecture": [
+   "La classe {100, 011} a deux mots, un par ligne.",
+   "Les disques à droite de chaque mot comptent ses 1 : un pour 100, deux pour 011.",
+   "Le mot bleu 100, de poids 1, est le chef de la classe."
+  ],
+  "a_voir": "Le mot qui a le moins de 1 est le chef de classe."
+ },
+ {
+  "code": "68-164",
+  "a_dire": "On décode en ajoutant le chef de la classe du mot reçu : on obtient un mot du code.",
+  "legende_titre": "Ajouter le chef au mot reçu",
+  "lecture": [
+   "À gauche, le mot reçu 110, en gris.",
+   "Au milieu, sa classe {110, 001} : le mot bleu 001 est le chef.",
+   "À droite, en vert, la somme 110 + 001 = 111, un mot du code."
+  ],
+  "a_voir": "Le mot reçu plus le chef de sa classe donne un mot du code."
+ },
+ {
+  "code": "68-165",
+  "a_dire": "Deux mots sont dans la même classe exactement quand ils ont le même syndrome, si le code est l'ensemble des mots annulés par H ; sans cette hypothèse, c'est faux.",
+  "legende_titre": "Même syndrome, classes différentes",
+  "lecture": [
+   "Dans la case verte du haut, avec l’hypothèse (C est l’ensemble des mots annulés par H), même syndrome et même classe vont ensemble.",
+   "Sans l’hypothèse, avec la matrice à une ligne (1 1 0), les mots 000 et 001 ont tous deux le syndrome 0.",
+   "Leur somme 000 + 001 = 001 n’est pas dans le code {000, 111}.",
+   "Le cadre rouge dit que les deux mots sont dans des classes différentes : C n’est pas le noyau de H."
+  ],
+  "a_voir": "L’équivalence est vraie quand C est le noyau de H ; ici le syndrome est le même mais les classes sont différentes."
+ },
+ {
+  "code": "68-166",
+  "a_dire": "La preuve enchaîne trois équivalences ; l'étape qui porte le poids est H(x + y) = Hx + Hy.",
+  "legende_titre": "Trois équivalences, une étape clé",
+  "lecture": [
+   "Le premier cadre bleu est le départ : x + y est dans C.",
+   "Le deuxième cadre dit que H annule la somme, car C est le noyau de H.",
+   "Le cadre vert est l'arrivée : Hx = Hy.",
+   "La flèche orange, entre les deux derniers cadres, est l'étape clé : H(x + y) = Hx + Hy. À droite, l'exemple 100 et 011."
+  ],
+  "a_voir": "L'étape orange est celle qui passe de H(x + y) = 0 à Hx = Hy."
+ },
+ {
+  "code": "68-167",
+  "a_dire": "Le syndrome est l'étiquette de la classe : chaque classe reçoit un syndrome de deux bits.",
+  "legende_titre": "Une étiquette par classe",
+  "lecture": [
+   "Chaque cadre bleu est une classe du code {000, 111}, avec ses deux mots en gris.",
+   "Sous les mots, en vert, le syndrome de la classe.",
+   "Les quatre classes ont quatre syndromes différents : 10, 11, 01 et 00."
+  ],
+  "a_voir": "Les deux mots d'une même classe partagent le même syndrome."
+ },
+ {
+  "code": "68-168",
+  "a_dire": "On part des équations, on liste les mots, le plus petit poids non nul donne d, d donne t, et le nombre de classes est 2^5 divisé par 2^2.",
+  "legende_titre": "Toute la marche pour le code (5, 2)",
+  "lecture": [
+   "Le cadre du haut donne les trois équations du code.",
+   "Les quatre cases suivantes sont les mots qui les vérifient, avec leur poids dessous ; les deux cases bleues ont le plus petit poids non nul, 3.",
+   "En vert : d = 3, donc t = 1.",
+   "Dernière ligne : 2^5 ÷ 2^2 = 8 classes."
+  ],
+  "a_voir": "Les équations donnent les mots, les mots donnent d = 3 et t = 1, puis 8 classes."
+ },
+ {
+  "code": "68-169",
+  "a_dire": "Le tableau range les 8 classes du code (5, 2) par syndrome, chacune avec son chef de classe.",
+  "legende_titre": "Les 8 classes rangées par syndrome",
+  "lecture": [
+   "Chaque ligne est une classe de 4 mots : son syndrome est écrit en vert à gauche.",
+   "La case bleue est le chef de la ligne, le mot de plus petit poids.",
+   "La première ligne, de syndrome 000, est le code lui-même.",
+   "Les cases orange des deux dernières lignes ont le même poids que le chef : ces deux classes n'ont pas de chef unique."
+  ],
+  "a_voir": "Chaque ligne a une case bleue, et deux lignes ont en plus une case orange."
+ },
+ {
+  "code": "68-170",
+  "a_dire": "Chaque ligne du tableau s'obtient en ajoutant son chef à la première ligne, qui est le code.",
+  "legende_titre": "Une ligne se construit avec son chef",
+  "lecture": [
+   "La ligne grise du haut est le code : 00000, 01101, 10011, 11110.",
+   "Chaque flèche orange ajoute le chef 00010 à un mot du code.",
+   "La ligne bleue du bas est la ligne de syndrome 010 : 00010, 01111, 10001, 11100."
+  ],
+  "a_voir": "Les quatre mots de la ligne du bas sont les mots du haut plus 00010."
+ },
+ {
+  "code": "68-171",
+  "a_dire": "Les 8 lignes de 4 mots font 32 cases et contiennent les 32 mots de 5 bits, chacun une seule fois.",
+  "legende_titre": "Huit lignes, quatre colonnes, 32 mots",
+  "lecture": [
+   "Le tableau a 4 cases par ligne, comme l'indique l'accolade du haut.",
+   "Il a 8 lignes, comme l'indique la flèche à gauche.",
+   "À droite : 8 × 4 = 32, et 2^5 = 32 mots de 5 bits, chacun dans une seule case."
+  ],
+  "a_voir": "Le nombre de cases est égal au nombre de mots de 5 bits."
+ },
+ {
+  "code": "68-172",
+  "a_dire": "Pour décoder 01111, on calcule le syndrome 010, on lit le chef 00010 dans la table et on l'ajoute : on obtient 01101.",
+  "legende_titre": "Un décodage de bout en bout",
+  "lecture": [
+   "Quatre cases se suivent de gauche à droite, reliées par des flèches : le mot reçu 01111, son syndrome 010, le chef 00010, le mot décodé 01101.",
+   "Sous le syndrome, les trois résultats des équations : 0, 1, 0.",
+   "En bas, l'addition 01111 + 00010 = 01101, en vert."
+  ],
+  "a_voir": "Le décodage passe par le syndrome et le chef, sans parcourir les mots du code."
+ },
+ {
+  "code": "68-173",
+  "a_dire": "La table de décodage a deux colonnes utiles : le syndrome et le chef de classe.",
+  "legende_titre": "Une table de deux colonnes",
+  "lecture": [
+   "La colonne verte à gauche liste les 8 syndromes possibles.",
+   "La colonne bleue à droite donne le chef de la classe de chaque syndrome.",
+   "Chaque flèche relie un syndrome à son chef."
+  ],
+  "a_voir": "Pour chaque syndrome, une seule ligne donne le chef à ajouter."
+ },
+ {
+  "code": "68-174",
+  "a_dire": "Dans la classe de syndrome 110, deux mots ont le poids minimal 2 : le chef n'est pas unique et le code ne promet rien au-delà de t = 1.",
+  "legende_titre": "Une classe sans chef unique",
+  "lecture": [
+   "Les quatre cases sont les mots de la classe de syndrome 110, avec leur poids dessous.",
+   "Les deux cases orange, 00110 et 11000, ont le même poids 2.",
+   "Le crochet orange les relie : on ne sait pas lequel est l'erreur.",
+   "Le code corrige une erreur, t = 1, et rien de plus."
+  ],
+  "a_voir": "Deux mots de poids 2 sont à égalité : le décodeur ne peut pas choisir."
+ },
+ {
+  "code": "68-175",
+  "a_dire": "Pour le code de Hamming, chaque classe a un seul chef, de poids au plus 1 : le cas d'égalité n'arrive jamais.",
+  "legende_titre": "Huit classes, huit chefs de poids au plus 1",
+  "lecture": [
+   "Chaque ligne est une classe, nommée par son syndrome en vert ; les colonnes sont les 7 positions.",
+   "La première ligne n'a aucune case foncée : le chef est le mot nul.",
+   "Chacune des sept autres lignes a une seule case bleue foncée : un chef à un seul 1, dans une position différente."
+  ],
+  "a_voir": "Chaque ligne a au plus une case foncée : un seul chef par classe."
+ },
+ {
+  "code": "68-176",
+  "a_dire": "Un code (32, 24) a 256 classes : une table de 256 lignes remplace plus de 16 millions de comparaisons.",
+  "legende_titre": "256 lignes contre 2^24 comparaisons",
+  "lecture": [
+   "Le petit tableau bleu a 16 lignes de 16 cases : 256 cases, une par classe.",
+   "Le grand carré gris en pointillé représente les 2^24 mots, plus de 16 millions ; il n'est pas à l'échelle.",
+   "Le décodeur lit une ligne du tableau au lieu de comparer aux 2^24 mots."
+  ],
+  "a_voir": "Le tableau de 256 lignes est minuscule à côté des 2^24 mots."
+ },
+ {
+  "code": "68-177",
+  "a_dire": "Un mot binaire est un polynôme dont les coefficients sont ses bits, numérotés à partir de 0 : le bit de numéro i est le coefficient de x^i.",
+  "legende_titre": "Chaque bit est le coefficient d'une puissance",
+  "lecture": [
+   "Les sept cases sont les bits du mot 1100101 ; les cases bleues valent 1.",
+   "Au-dessus de chaque case, en orange, la puissance de x qui lui correspond ; au-dessous, son numéro de 0 à 6.",
+   "En vert, le polynôme : 1 + x + x^4 + x^6, avec un terme par bit égal à 1."
+  ],
+  "a_voir": "Le numéro d'un bit est la puissance de x par laquelle on le lit."
+ },
+ {
+  "code": "68-178",
+  "a_dire": "Le mot 1100101 devient 1 + x + x^4 + x^6, et additionner deux mots revient à additionner les polynômes, avec 1 + 1 = 0.",
+  "legende_titre": "Additionner des mots, additionner des polynômes",
+  "lecture": [
+   "La ligne bleue est le mot 1100101 et son polynôme 1 + x + x^4 + x^6.",
+   "La ligne violette est le mot 1000001 et son polynôme 1 + x^6.",
+   "La ligne verte est la somme 0100100, qui correspond à x + x^4.",
+   "Les termes 1 et x^6 apparaissent deux fois : ils s'annulent."
+  ],
+  "a_voir": "Les deux termes communs disparaissent, il reste x + x^4, soit le mot 0100100."
+ }
+]

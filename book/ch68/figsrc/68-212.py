@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(100)
+text(ax, 44, 95, r'$g = m_1 \times m_3 = 1+x^4+x^6+x^7+x^8$', 'sujet', 's', weight='bold')
+text(ax, 44, 84, r'$g$ s’annule en :', 'encre', 'm')
+for i, s in enumerate([r'$\omega$', r'$\omega^2$', r'$\omega^3$', r'$\omega^4$']):
+    box(ax, 15.5 + i * 15, 71, 12, 8, 'sujet', label=s, size='l')
+brace(ax, 15.5, 72.5, 70, 'sujet', r'$s = 4$ consécutives')
+arrow(ax, (44, 63), (44, 57.5), 'varie')
+text(ax, 44, 53, r'$d \geq s + 1 = 5$', 'resultat', 'l', weight='bold')
+arrow(ax, (44, 49), (44, 43.5), 'varie')
+text(ax, 44, 39, r'$(5-1)/2 = 2$ erreurs corrigées', 'resultat', 'm')
+text(ax, 44, 27, 'degré 8 : 8 bits de contrôle', 'fixe', 's')
+box(ax, 6.5, 10, 40, 8, 'varie', label='contrôle : 8', size='s', r=0.4)
+box(ax, 46.5, 10, 35, 8, 'resultat', label='message : 7', size='s', r=0.4)
+brace(ax, 6.5, 81.5, 19, 'sujet', r'code $(15,\,7)$', down=False)
+save(fig, '68-212')

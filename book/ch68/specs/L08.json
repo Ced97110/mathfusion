@@ -1,0 +1,227 @@
+[
+ {
+  "code": "68-209",
+  "a_dire": "Un code BCH est une méthode : on choisit g avec beaucoup de racines consécutives et un degré aussi petit que possible.",
+  "legende_titre": "Deux exigences pour choisir g",
+  "lecture": [
+   "Les quatre cases bleues sont les puissances de ω où g s’annule : elles se suivent.",
+   "Les deux barres ont la même longueur : la partie orange est le degré de g, c’est-à-dire les bits de contrôle ; la partie verte est le message.",
+   "La barre du haut a un grand degré : il reste peu de place pour le message.",
+   "La barre du bas a un petit degré : c’est le choix de la méthode BCH."
+  ],
+  "a_voir": "La méthode demande des racines qui se suivent et une partie orange la plus courte possible."
+ },
+ {
+  "code": "68-210",
+  "a_dire": "À partir d’une racine ω de 1 + x + x^4, on obtient les autres racines en élevant au carré, jusqu’à retomber sur ω.",
+  "legende_titre": "Élever au carré pour trouver les racines",
+  "lecture": [
+   "La case bleue ω est la racine de départ de m₁ = 1 + x + x^4.",
+   "Chaque flèche orange « carré » donne la case verte suivante : ω², ω⁴, ω⁸.",
+   "L’arc orange du bas dit que ω^16 est égal à ω : on revient au début.",
+   "L’accolade en haut compte quatre racines pour un polynôme de degré 4."
+  ],
+  "a_voir": "Quatre élévations au carré font le tour des quatre racines."
+ },
+ {
+  "code": "68-211",
+  "a_dire": "Le calcul montre que ω³ est racine de m₃ : le produit (1 + x)·m₃ vaut 1 + x^5, qui s’annule en ω³ ; il ne donne que cette racine.",
+  "legende_titre": "Une valeur de m₃ qui s’annule",
+  "lecture": [
+   "La ligne bleue m₃ a ses cinq coefficients égaux à 1 pour les puissances 0 à 4.",
+   "La ligne orange x·m₃ est la même ligne décalée d’une case.",
+   "La ligne verte est la somme : les quatre cases du milieu donnent 0 car 1 + 1 = 0, il reste 1 + x^5.",
+   "En bas, x^5 devient ω^15 qui vaut 1 ; comme 1 + ω³ n’est pas nul, m₃(ω³) vaut 0."
+  ],
+  "a_voir": "La somme garde seulement les deux cases des bouts, d’où 1 + x^5."
+ },
+ {
+  "code": "68-212",
+  "a_dire": "Le produit g = m₁m₃ s’annule en quatre puissances consécutives de ω, donc d ≥ 5, le code corrige deux erreurs et, de degré 8, c’est un code (15, 7).",
+  "legende_titre": "De g au code (15, 7), en trois étapes",
+  "lecture": [
+   "Les quatre cases bleues sont les puissances de ω où g s’annule : s vaut 4.",
+   "Les flèches orange mènent à d ≥ 5, puis à deux erreurs corrigées par (5 − 1)/2.",
+   "La barre du bas a 15 bits : la partie orange (8) est le degré de g, la partie verte (7) est le message."
+  ],
+  "a_voir": "Quatre racines consécutives donnent d ≥ 5 ; le degré 8 laisse 7 bits de message."
+ },
+ {
+  "code": "68-213",
+  "a_dire": "Un code BCH (255, 231) a des mots de 255 bits dont 231 de message ; 255 − 231 = 24 est le degré de g.",
+  "legende_titre": "Un code BCH de 255 bits",
+  "lecture": [
+   "La grande barre représente un mot de 255 bits : la partie verte porte 231 bits de message.",
+   "La petite partie orange à droite est de 24 bits ; c’est le degré du polynôme générateur.",
+   "La barre du bas refait le même calcul pour le code (15, 7) : 15 − 7 = 8."
+  ],
+  "a_voir": "La partie orange est la différence entre la longueur du mot et le message."
+ },
+ {
+  "code": "68-214",
+  "a_dire": "Les mots du code forment un sous-groupe des mots de 7 bits, et chaque syndrome est l’étiquette d’une classe de ce sous-groupe.",
+  "legende_titre": "Des notions déjà connues au travail",
+  "lecture": [
+   "Les huit cases représentent toutes les classes des mots de 7 bits.",
+   "La case bleue 000 est le code lui-même, un sous-groupe.",
+   "Chaque case grise est une autre classe, notée par son syndrome de 3 bits."
+  ],
+  "a_voir": "Le code est une des classes ; les autres portent chacune un syndrome."
+ },
+ {
+  "code": "68-215",
+  "a_dire": "Le produit x · y de deux mots est la somme des produits bit à bit, avec 1 + 1 = 0 ; ici 1100 · 1010 = 1.",
+  "legende_titre": "Un produit de deux mots de 4 bits",
+  "lecture": [
+   "La ligne bleue est le mot x = 1100 et la ligne violette est le mot y = 1010.",
+   "La ligne verte multiplie bit à bit : un 1 seulement dans la première colonne.",
+   "La somme 1 + 0 + 0 + 0 donne 1.",
+   "Le texte du bas dit que le produit h · c = 0 sert à tester un mot c du code."
+  ],
+  "a_voir": "Seule la première colonne a deux 1, donc le produit vaut 1."
+ },
+ {
+  "code": "68-216",
+  "a_dire": "Sur F₂, un mot non nul peut être orthogonal à lui-même : 1100 · 1100 = 1 + 1 = 0.",
+  "legende_titre": "Un mot non nul de produit nul avec lui-même",
+  "lecture": [
+   "Les deux lignes bleues sont le même mot 1100, écrit deux fois.",
+   "La ligne verte multiplie bit à bit : deux 1 dans les deux premières colonnes.",
+   "La somme 1 + 1 + 0 + 0 vaut 0 car 1 + 1 = 0.",
+   "Le texte du bas rappelle que le mot est non nul alors que le produit est nul."
+  ],
+  "a_voir": "Deux 1 s’additionnent en 0, donc le produit est nul."
+ },
+ {
+  "code": "68-217",
+  "a_dire": "Les 7 colonnes de H sont les 7 points du plan de Fano ; trois points de somme nulle forment une droite, comme 001, 010, 011.",
+  "legende_titre": "Sept mots, sept droites de trois points",
+  "lecture": [
+   "Chaque rond est un des 7 mots non nuls de 3 bits, une colonne de H.",
+   "Chaque trait gris ou le cercle gris passe par trois ronds : c’est une droite.",
+   "Le trait orange épais joint 001, 010 et 011 ; leur somme est 000.",
+   "Il y a trois côtés, trois traits qui vont d’un coin au côté opposé, et un cercle : sept droites."
+  ],
+  "a_voir": "Trois ronds sur un même trait ont une somme nulle."
+ },
+ {
+  "code": "68-218",
+  "a_dire": "Sur les 5040 permutations des 7 positions, 168 laissent le code de Hamming stable ; 168 = (8 − 1)(8 − 2)(8 − 4).",
+  "legende_titre": "168 permutations parmi 5040",
+  "lecture": [
+   "La grande barre grise représente les 5040 permutations de 7 positions, comptées par 7 × 6 × 5 × 4 × 3 × 2 × 1.",
+   "Chaque case de la barre vaut 168 permutations.",
+   "La case verte à gauche représente les 168 permutations qui laissent le code stable.",
+   "En bas, le nombre 168 est obtenu par (8 − 1)(8 − 2)(8 − 4)."
+  ],
+  "a_voir": "Une petite part des permutations seulement, la case verte, laisse le code stable."
+ },
+ {
+  "code": "68-219",
+  "a_dire": "Le déterminant du tableau 1, 1 / 2, 5 vaut 5 − 2 = 3, la différence de la seconde ligne ; pour s colonnes, le chapitre 76 le calcule.",
+  "legende_titre": "Un déterminant à deux colonnes",
+  "lecture": [
+   "Le tableau a une ligne grise 1, 1 et une ligne orange 2, 5.",
+   "À droite, 1 × 5 = 5 et 1 × 2 = 2 ; leur différence 5 − 2 vaut 3.",
+   "Les quatre cases bleues du bas sont les colonnes pour s colonnes : puissances de ω.",
+   "Le texte du bas dit que ce déterminant est calculé au chapitre 76."
+  ],
+  "a_voir": "Avec deux colonnes, le déterminant est la différence 5 − 2 des deux nombres de la seconde ligne."
+ },
+ {
+  "code": "68-220",
+  "a_dire": "L’addition de F₂ est la porte « ou exclusif » : 1 + 0 = 1 et 1 + 1 = 0.",
+  "legende_titre": "L’addition de bits comme une porte",
+  "lecture": [
+   "Chaque case orange est une porte « ou exclusif » ; les chiffres bleus à gauche sont ses deux entrées.",
+   "Le chiffre vert à droite est la sortie.",
+   "La première porte reçoit 1 et 0 et donne 1.",
+   "La seconde reçoit 1 et 1 et donne 0."
+  ],
+  "a_voir": "Deux entrées égales à 1 donnent la sortie 0."
+ },
+ {
+  "code": "68-228",
+  "a_dire": "La ligne A de H, de poids 4, a un nombre pair de positions communes avec chaque ligne (4, 2 et 2), donc c’est un mot du code.",
+  "legende_titre": "La ligne A testée dans les trois équations",
+  "lecture": [
+   "La ligne orange est le mot A : des 1 aux positions 4, 5, 6 et 7.",
+   "Chaque ligne du bas est une équation A, B ou C ; les cases vertes sont les 1 en commun avec le mot testé.",
+   "Le nombre vert à droite compte ces cases : 4, 2 et 2.",
+   "Ces nombres sont pairs, donc chaque équation est satisfaite."
+  ],
+  "a_voir": "Les comptes 4, 2 et 2 sont tous pairs."
+ },
+ {
+  "code": "68-221",
+  "a_dire": "Hors du livre, les codes de Reed-Solomon sont des codes cycliques dont les cases sont dans F₂₅₆ au lieu de 0 ou 1 ; ils servent pour les QR codes et les CD.",
+  "legende_titre": "Des cases à 256 valeurs au lieu de 2",
+  "lecture": [
+   "La ligne du haut est un mot de ce chapitre : chaque case vaut 0 ou 1.",
+   "La ligne violette est un mot de Reed-Solomon, un code cyclique : chaque case a₁ à a₇ est un élément de F₂₅₆, une des 256 valeurs.",
+   "Les flèches orange mènent aux emplois : QR codes et CD.",
+   "Le texte du bas cite à part le code de Reed-Muller, employé sur la sonde Mariner de la NASA."
+  ],
+  "a_voir": "Seules les cases changent : de 0 ou 1 vers des éléments de F₂₅₆."
+ },
+ {
+  "code": "68-222",
+  "a_dire": "Le code de Hamming est parfait : une boule de rayon 1 a 8 mots et 2^7 ÷ 8 = 16 boules remplissent les 128 mots de 7 bits.",
+  "legende_titre": "16 boules de 8 mots remplissent tout",
+  "lecture": [
+   "Chaque colonne est une boule de rayon 1 : une case bleue au centre et sept cases orange de voisins.",
+   "Il y a 16 colonnes, une par mot du code.",
+   "Les colonnes se touchent sans trou ni recouvrement : elles remplissent les 128 mots.",
+   "Le calcul en haut dit que 2^7 divisé par 8 donne 16."
+  ],
+  "a_voir": "16 colonnes de 8 cases couvrent exactement les 128 mots."
+ },
+ {
+  "code": "68-223",
+  "a_dire": "Shannon a montré qu’il existe des codes d’erreur aussi petite qu’on veut tant que le débit reste sous une limite fixée par le bruit, sans dire comment les construire.",
+  "legende_titre": "Une limite de débit, sans recette",
+  "lecture": [
+   "Le titre rappelle le débit : les bits utiles sur les bits envoyés. Il est lu sur la droite du bas.",
+   "Le trait orange en pointillés est la limite de débit fixée par le bruit.",
+   "À gauche de la limite, la zone verte dit que l’erreur peut devenir aussi petite qu’on veut : il existe de tels codes.",
+   "La case pointillée grise rappelle que la preuve ne dit pas comment les construire."
+  ],
+  "a_voir": "Sous la limite, de tels codes existent, mais on ne dit pas comment les fabriquer."
+ },
+ {
+  "code": "68-224",
+  "a_dire": "Une boule de rayon 3 dans les mots de 23 bits contient 1 + 23 + 253 + 1771 = 2048 = 2^11 mots, donc le compte tombe juste.",
+  "legende_titre": "Compter une boule de rayon 3",
+  "lecture": [
+   "Chaque ligne compte les mots à un nombre d’erreurs donné, du centre jusqu’à 3 erreurs.",
+   "La colonne du milieu donne le calcul : 23 × 22 ÷ 2 pour deux erreurs, 23 × 22 × 21 ÷ 6 pour trois.",
+   "Les nombres bleus à droite s’additionnent : 1, 23, 253, 1771.",
+   "Le total vert 2048 est 2^11, donc 2^23 ÷ 2^11 = 2^12 boules."
+  ],
+  "a_voir": "Le total 2048 est une puissance de 2."
+ },
+ {
+  "code": "68-225",
+  "a_dire": "Une boule de rayon 2 dans les mots de 90 bits contient 1 + 90 + 4005 = 4096 = 2^12 mots : le compte tombe juste, sans prouver qu’un code existe.",
+  "legende_titre": "Un troisième compte qui tombe juste",
+  "lecture": [
+   "Les trois cases bleues comptent le centre (1), les mots à une erreur (90) et à deux erreurs (4005).",
+   "La case verte est leur total, 4096, égal à 2^12.",
+   "Sur la droite graduée des distances, deux boules de rayon t = 2 sont posées à distance 5 : elles ne se touchent pas.",
+   "La figure ne montre pas qu’un tel code existe."
+  ],
+  "a_voir": "Le total est 2^12 et deux boules de rayon 2 à distance 5 ne se touchent pas."
+ },
+ {
+  "code": "68-226",
+  "a_dire": "Un compte qui tombe juste ne garantit pas qu’un code parfait existe : pour 7 bits le code existe, pour 23 et 90 bits la question reste posée.",
+  "legende_titre": "Un compte juste prouve-t-il l’existence ?",
+  "lecture": [
+   "Chaque ligne est un cas : 7 bits, 23 bits ou 90 bits, avec son nombre de mots et sa distance d.",
+   "La colonne « compte juste » est verte pour les trois cas.",
+   "La colonne « mots existent » est verte pour 7 bits, car le code de Hamming existe.",
+   "Elle porte un point d’interrogation orange pour 23 et 90 bits."
+  ],
+  "a_voir": "Les trois comptes tombent juste, mais seule la première ligne a un code connu."
+ }
+]

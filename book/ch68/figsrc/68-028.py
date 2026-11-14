@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+box(ax, 3, 32, 34, 14, 'sujet', label='envoyé $c$\n0011001', size='m')
+box(ax, 51, 32, 34, 14, 'varie', label='erreur $e$\n0000100', size='m')
+box(ax, 27, 8, 34, 14, 'autre', label='reçu $r$\n0011101', size='m')
+arrow(ax, (20, 31.5), (33, 22.6), 'sujet')
+arrow(ax, (68, 31.5), (55, 22.6), 'varie')
+text(ax, 44, 39, '+', 'encre', 'xl')
+text(ax, 44, 3, r'$r=c+e$', 'encre', 'm')
+text(ax, 20, 51, 'choisi par l’émetteur', 'sujet', 's')
+text(ax, 68, 51, 'des 1 aux bits inversés', 'varie', 's')
+text(ax, 63, 15, 'le récepteur\nne lit que $r$', 'fixe', 's', ha='left')
+save(fig, '68-028')

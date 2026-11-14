@@ -1,0 +1,350 @@
+[
+ {
+  "code": "68-179",
+  "a_dire": "Pour coder, on multiplie le message de 4 bits (degré 3 au plus) par g(x) de degré n − k = 3 ; le produit a au plus le degré 6 et tient dans 7 bits.",
+  "legende_titre": "Un message fois g donne un mot plus long",
+  "lecture": [
+   "Les quatre cases bleues sont le message : 4 bits, de degré 3 au plus.",
+   "La boîte orange est g(x), de degré n − k = 3.",
+   "Les sept cases vertes sont le mot obtenu : 7 bits, de degré 6 au plus."
+  ],
+  "a_voir": "Quatre cases bleues, multipliées par g, donnent sept cases vertes."
+ },
+ {
+  "code": "68-180",
+  "a_dire": "Le message 1001 est 1 + x³ ; on additionne g et x³ fois g : les deux 1 de x³ s’annulent et il reste le mot 1100101.",
+  "legende_titre": "Deux copies de g qui s’additionnent",
+  "lecture": [
+   "La première rangée bleue est 1 fois g, c’est-à-dire 1101000.",
+   "La deuxième rangée bleue est x³ fois g : g décalé de trois places, 0001101.",
+   "Les deux cases orange sont les deux 1 de x³ : ils s’annulent car 1 + 1 = 0.",
+   "La rangée verte est la somme : le mot envoyé 1100101."
+  ],
+  "a_voir": "Dans la colonne orange, 1 + 1 donne 0."
+ },
+ {
+  "code": "68-181",
+  "a_dire": "Les mots du code sont exactement les multiples de g de degré au plus 6 : on passe d’un message à un mot en multipliant par g, et on revient en divisant par g.",
+  "legende_titre": "Deux ensembles qui se recouvrent",
+  "lecture": [
+   "La boîte bleue est l’ensemble des messages de 4 bits, de degré 3 au plus ; en exemple, 1001.",
+   "La boîte verte est l’ensemble des multiples de g de 7 bits, de degré au plus 6 ; en exemple, 1100101.",
+   "Les deux flèches orange sont la multiplication par g à l’aller et la division par g au retour."
+  ],
+  "a_voir": "Chaque flèche conduit d’un ensemble à l’autre, dans les deux sens."
+ },
+ {
+  "code": "68-182",
+  "a_dire": "Un reste nul prouve seulement que le mot reçu est un mot du code : si l’erreur est elle-même un mot du code, la division ne voit rien.",
+  "legende_titre": "Un reste nul qui ne prouve pas tout",
+  "lecture": [
+   "La première rangée bleue est le mot envoyé 1100101.",
+   "La rangée du milieu est l’erreur 1101000, c’est-à-dire g lui-même ; ses trois 1 sont en rouge.",
+   "La dernière rangée est le mot reçu 0001101 ; les trois cases rouges sont les bits devenus faux.",
+   "La boîte rouge dit que le reste de la division est 0 et que rien n’est détecté."
+  ],
+  "a_voir": "Trois cases rouges fausses, et pourtant le reste est 0."
+ },
+ {
+  "code": "68-183",
+  "a_dire": "Décaler 1100101 d’un cran donne 1110010, qui est g + x² fois g, soit (1 + x²) g : un multiple de g, donc encore un mot du code.",
+  "legende_titre": "Un mot décalé qui reste un multiple de g",
+  "lecture": [
+   "En haut, la rangée bleue est le mot ; sa dernière case orange passe en tête de la rangée verte.",
+   "La rangée verte est le mot décalé 1110010.",
+   "En bas, deux rangées grises : g et x² fois g (g décalé de deux places).",
+   "Dans la colonne orange, les deux 1 s’annulent ; la somme est le mot décalé."
+  ],
+  "a_voir": "La somme des deux rangées grises est la rangée verte du haut."
+ },
+ {
+  "code": "68-184",
+  "a_dire": "Un code cyclique est un code linéaire qui reste dans le code quand on décale ses mots en remettant le dernier bit en tête.",
+  "legende_titre": "Un code qui ne sort pas de lui-même en décalant",
+  "lecture": [
+   "Le cadre en pointillés bleus est le code (7, 4).",
+   "La rangée du haut est le mot 1100101 ; celle du bas est son décalé 1110010.",
+   "La flèche orange est le décalage ; les deux rangées restent dans le cadre.",
+   "Le texte gris « et encore… » dit qu’on peut décaler de nouveau."
+  ],
+  "a_voir": "Le mot décalé est encore dans le cadre."
+ },
+ {
+  "code": "68-185",
+  "a_dire": "Multiplier par x fait monter les bits d’un rang ; avec la règle x⁷ = 1, le bit sorti revient en tête, ce qui donne le décalage.",
+  "legende_titre": "Multiplier par x, avec et sans règle",
+  "lecture": [
+   "La rangée bleue du haut est x⁶ : 0000001.",
+   "La rangée du milieu est x⁷ sans règle : huit cases ; la dernière, rouge, sort du mot de 7 bits.",
+   "La rangée verte du bas est le résultat avec la règle x⁷ = 1 : 1000000, le bit est revenu en tête."
+  ],
+  "a_voir": "Le 1 rouge qui sort revient en première case verte."
+ },
+ {
+  "code": "68-186",
+  "a_dire": "Dans R₇, on calcule avec x⁷ = 1 : x⁷ devient 1, x⁸ devient x, et tout polynôme se ramène à un mot de 7 bits.",
+  "legende_titre": "Calculer avec une règle qui replie les degrés",
+  "lecture": [
+   "Les étiquettes orange sont les remplacements faits avec la règle : x⁷ devient 1, x⁸ devient x.",
+   "Chaque rangée verte a 7 cases : 1000000 pour 1 et 0100000 pour x.",
+   "L’accolade rappelle qu’un degré inférieur à 7 donne un mot de 7 bits."
+  ],
+  "a_voir": "Chaque polynôme replié est une rangée de 7 cases."
+ },
+ {
+  "code": "68-187",
+  "a_dire": "Dans F₂, un bit est son propre opposé, car 1 + 1 = 0 : le polynôme x⁷ − 1 est le même que x⁷ + 1.",
+  "legende_titre": "Une soustraction qui devient une addition",
+  "lecture": [
+   "Les deux boîtes bleues sont x⁷ − 1 et x⁷ + 1 ; le signe égal vert dit qu’elles sont égales.",
+   "Le texte orange rappelle la règle 1 + 1 = 0 : l’opposé de 1 est 1.",
+   "La rangée de 8 cases écrit x⁷ + 1 ; la case orange est l’ancien −1, devenu 1."
+  ],
+  "a_voir": "La case orange est le −1 devenu 1."
+ },
+ {
+  "code": "68-188",
+  "a_dire": "Un code linéaire de longueur n est cyclique exactement quand il est stable par somme et par multiplication par x : c’est un idéal de R₇.",
+  "legende_titre": "Deux stabilités qui se rejoignent",
+  "lecture": [
+   "La boîte bleue est le code : les multiples de g = 1 + x + x³, où g divise x⁷ + 1.",
+   "La flèche orange de gauche part de la boîte et y revient : la somme de deux mots reste dans le code.",
+   "La flèche orange de droite part de la boîte et y revient : le décalage, c’est-à-dire la multiplication par x, reste dans le code."
+  ],
+  "a_voir": "Les deux flèches partent de la boîte et y retournent."
+ },
+ {
+  "code": "68-189",
+  "a_dire": "La preuve part d’un idéal stable par multiplication par x et arrive à la stabilité par décalage ; l’étape qui porte le poids est de lire la multiplication par x comme un décalage.",
+  "legende_titre": "D’un idéal au décalage, en une étape",
+  "lecture": [
+   "La boîte bleue du haut est le départ : un idéal est stable par multiplication par x.",
+   "Le cadre orange est l’étape qui porte le poids : multiplier par x décale les bits, avec la règle x⁷ = 1 ; en exemple, 1100101 devient 1110010.",
+   "La boîte verte du bas est l’arrivée : stable par décalage."
+  ],
+  "a_voir": "Le cadre orange relie le départ à l’arrivée."
+ },
+ {
+  "code": "68-190",
+  "a_dire": "Si g ne divise pas x⁷ + 1, les multiples de g ne sont pas stables par décalage : 1 + x² en donne un contre-exemple.",
+  "legende_titre": "Quand le polynôme ne divise pas",
+  "lecture": [
+   "Le haut montre le cas qui marche : g = 1 + x + x³ divise x⁷ + 1 ; le mot 1100101 et son décalé 1110010 sont verts.",
+   "Le bas montre le cas qui casse : 1 + x² ne divise pas x⁷ + 1.",
+   "Le mot 0000101, vert, est un multiple de 1 + x².",
+   "Son décalé 1000010, en rouge, n’est plus un multiple de 1 + x²."
+  ],
+  "a_voir": "En bas, la deuxième rangée est rouge : le décalé sort des multiples."
+ },
+ {
+  "code": "68-191",
+  "a_dire": "En développant (1 + x)(1 + x + x³)(1 + x² + x³) dans F₂, tous les termes s’annulent sauf 1 et x⁷ : le produit est x⁷ + 1.",
+  "legende_titre": "Trois facteurs qui se multiplient",
+  "lecture": [
+   "Les trois rangées bleues sont les trois facteurs écrits bit par bit : 11, 1101 et 1011.",
+   "La rangée grise est le premier produit : 10111, c’est 1 + x² + x³ + x⁴.",
+   "La rangée verte est le produit final : 10000001, c’est x⁷ + 1.",
+   "Le texte orange dit que les termes entre les deux 1 s’annulent."
+  ],
+  "a_voir": "Le produit vert n’a que deux 1, aux deux bouts."
+ },
+ {
+  "code": "68-192",
+  "a_dire": "Pour chacun des trois facteurs, on le prend ou on le laisse : 2 × 2 × 2 = 8 diviseurs, donc 8 codes cycliques de longueur 7.",
+  "legende_titre": "Compter les choix de facteurs",
+  "lecture": [
+   "Chaque colonne est l’un des trois facteurs ; une case bleue pleine le prend, une case grise en pointillés le laisse.",
+   "Chaque ligne est un choix : il y en a 8.",
+   "La première ligne, rien de pris, donne 1 ; la dernière, tout pris, donne x⁷ + 1.",
+   "L’accolade verte regroupe les 6 autres choix."
+  ],
+  "a_voir": "Compte les 8 lignes."
+ },
+ {
+  "code": "68-193",
+  "a_dire": "Avec g = 1 + x, les multiples s’annulent en x = 1, ce qui revient à avoir un nombre pair de 1 : c’est le code du bit de parité.",
+  "legende_titre": "Un polynôme qui s’annule en 1",
+  "lecture": [
+   "En haut, le polynôme 1 + x écrit en bits : les cases bleues sont les deux coefficients égaux à 1.",
+   "En x = 1, il donne 1 + 1 = 0.",
+   "Les cases en dessous donnent la chaîne : un multiple de g s’annule en x = 1, la somme des coefficients est 0, le nombre de 1 est pair.",
+   "La dernière case conclut : c’est le code du bit de parité."
+  ],
+  "a_voir": "S’annuler en 1 revient à avoir un nombre pair de 1 : c’est le code du bit de parité."
+ },
+ {
+  "code": "68-194",
+  "a_dire": "Le polynôme g = 1 + x + x³ est de degré 3 : le code a 3 bits de contrôle et 4 bits de message sur 7 bits, donc 16 mots ; c’est le code (7, 4) de distance 3.",
+  "legende_titre": "Le degré de g compte les bits ajoutés",
+  "lecture": [
+   "La boîte orange est g, de degré 3.",
+   "Les sept cases sont un mot : 4 cases bleues pour le message, 3 cases orange pour les bits de contrôle.",
+   "Le texte vert donne 2⁴ = 16 mots et la distance 3."
+  ],
+  "a_voir": "Trois cases orange, comme le degré de g."
+ },
+ {
+  "code": "68-195",
+  "a_dire": "Quand g a tous ses coefficients égaux à 1, ses seuls multiples de degré au plus 6 sont 0 et lui-même : le code est la répétition {0000000, 1111111}, de distance 7.",
+  "legende_titre": "Un polynôme tout en 1 et ses multiples",
+  "lecture": [
+   "Le haut écrit g : 1 + x + x² + … + x⁶, le produit des deux facteurs de degré 3.",
+   "La rangée du haut est 0 fois g : 0000000. La rangée du bas est 1 fois g : 1111111.",
+   "Chaque flèche orange relie deux cases qui diffèrent : les 7 positions diffèrent, donc d = 7."
+  ],
+  "a_voir": "Sept flèches : les deux mots diffèrent partout."
+ },
+ {
+  "code": "68-196",
+  "a_dire": "La parité, le code de Hamming et la répétition sont trois codes de longueur 7, chacun formé des multiples d’un diviseur de x⁷ + 1.",
+  "legende_titre": "Trois essais, un seul polynôme",
+  "lecture": [
+   "La boîte grise du haut est x⁷ + 1.",
+   "Chaque flèche grise va vers un diviseur de x⁷ + 1, en bleu : 1 + x, 1 + x + x³ et 1 + x + … + x⁶.",
+   "Sous chaque diviseur, en vert, ce que fait le code : détecte 1 erreur, en corrige 1, en corrige beaucoup."
+  ],
+  "a_voir": "Les trois boîtes bleues sortent de la même boîte grise."
+ },
+ {
+  "code": "68-197",
+  "a_dire": "Une erreur en position i est x^i et son syndrome est le reste de x^i divisé par g ; pour i = 4, le reste de x⁴ est x + x².",
+  "legende_titre": "Le syndrome d’une erreur à la position 4",
+  "lecture": [
+   "En haut, les positions vont de 0 à 6 ; la case rouge est l’erreur en position 4, c’est x⁴.",
+   "La boîte grise est la règle x³ = 1 + x, tirée de g.",
+   "Les lignes de calcul donnent x⁴ = x × x³ = x × (1 + x) = x + x².",
+   "Les trois cases vertes sont ce reste, sous les titres 1, x et x² : 0, 1, 1."
+  ],
+  "a_voir": "La case rouge en position 4 conduit au reste vert 011."
+ },
+ {
+  "code": "68-198",
+  "a_dire": "Avec la règle x³ = 1 + x, chaque puissance de x se réduit à un reste de degré au plus 2 : on obtient sept restes, de x⁰ à x⁶.",
+  "legende_titre": "Réduire les puissances de x une à une",
+  "lecture": [
+   "Chaque colonne est une puissance de x, numérotée de 0 à 6.",
+   "Les trois lignes donnent les coefficients de 1, de x et de x² dans son reste.",
+   "Les colonnes bleues 0, 1 et 2 sont déjà réduites ; les colonnes orange 3 à 6 sont réduites avec la règle x³ = 1 + x.",
+   "Par exemple, la colonne 4 se lit 0, 1, 1 : x + x²."
+  ],
+  "a_voir": "Lis la colonne 4 de haut en bas : 0, 1, 1."
+ },
+ {
+  "code": "68-199",
+  "a_dire": "Les sept restes sont différents et non nuls : chaque position d’erreur a son propre reste, donc le syndrome désigne une seule position.",
+  "legende_titre": "Un reste pour chaque position",
+  "lecture": [
+   "Chaque boîte verte est un reste, écrit en trois chiffres : coefficients de 1, de x et de x².",
+   "Sous chaque triplet, la puissance de x qui le donne, de x⁰ à x⁶.",
+   "Les sept triplets sont tous différents.",
+   "La boîte grise en pointillés, 000, n’est le reste d’aucune puissance."
+  ],
+  "a_voir": "Aucun triplet vert n’apparaît deux fois, et 000 est absent."
+ },
+ {
+  "code": "68-200",
+  "a_dire": "La règle x³ = 1 + x est celle du corps à 8 éléments : les sept restes sont les puissances α⁰ à α⁶, c’est-à-dire les sept éléments non nuls.",
+  "legende_titre": "Les restes sont des puissances d’un élément",
+  "lecture": [
+   "Chaque disque vert est une puissance de α, avec le reste correspondant écrit dessous.",
+   "Les flèches grises multiplient par α et font le tour des sept disques.",
+   "Le disque gris du centre est 0 : il n’est pas dans la liste.",
+   "En haut, la règle des restes et celle de α sont écrites côte à côte."
+  ],
+  "a_voir": "Les sept disques verts portent chacun un reste différent."
+ },
+ {
+  "code": "68-201",
+  "a_dire": "Dans le corps à 8 éléments, un élément α différent de 1 est d’ordre 7 : le retour à 1 se fait en 1 ou 7 pas, donc ses sept puissances α⁰ à α⁶ sont distinctes.",
+  "legende_titre": "Compter les pas pour revenir à 1",
+  "lecture": [
+   "La droite graduée compte les pas de 0 à 7 : à chaque pas, on multiplie par α.",
+   "Le disque vert à gauche est le départ, 1 ; les disques gris vides sont différents de 1.",
+   "Le disque vert à droite, au pas 7, vaut de nouveau 1.",
+   "L’accolade compte les 7 pas."
+  ],
+  "a_voir": "Entre les deux disques verts, aucun disque n’est plein."
+ },
+ {
+  "code": "68-202",
+  "a_dire": "Décoder une erreur simple, c’est retrouver l’exposant i à partir du syndrome α^i, en le cherchant dans la liste des sept puissances de α.",
+  "legende_titre": "Chercher l’exposant dans une liste",
+  "lecture": [
+   "La boîte bleue est le syndrome reçu, α⁴.",
+   "Les sept cases sont les exposants i de 0 à 6 ; la flèche orange cherche α⁴ dans la liste.",
+   "La case verte 4 est celle qui convient ; la flèche verte donne i = 4, la position de l’erreur."
+  ],
+  "a_voir": "Une seule case verte parmi les sept."
+ },
+ {
+  "code": "68-203",
+  "a_dire": "Un mot c(x) est dans le code exactement quand c(α) = 0 : g donne 0 en α, alors que 1 + x donne 1 + α, qui n’est pas nul.",
+  "legende_titre": "Tester un mot en remplaçant x par α",
+  "lecture": [
+   "Le haut rappelle la règle α³ = 1 + α.",
+   "La première rangée est g = 1 + x + x³ : en α, on obtient 1 + α + (1 + α), soit 0, en vert.",
+   "La seconde rangée est 1 + x : en α, on obtient 1 + α, qui n’est pas nul, en rouge.",
+   "Les cases bleues sont les coefficients égaux à 1."
+  ],
+  "a_voir": "Vert : valeur 0, dans le code. Rouge : valeur non nulle, hors du code."
+ },
+ {
+  "code": "68-204",
+  "a_dire": "Quand 1 + 1 = 0, on a (u + v)² = u² + v², donc g(α²) = g(α)² = 0 : α² est une racine de plus ; avec les nombres ordinaires, l’égalité est fausse.",
+  "legende_titre": "Une racine de plus sans calcul",
+  "lecture": [
+   "Le bloc vert du haut écrit l’égalité (u + v)² = u² + v² et la vérifie avec 1 et 1 : les deux côtés valent 0.",
+   "La boîte orange calcule g(α²) = 1 + α² + α⁶ = 0, car α⁶ = 1 + α².",
+   "Le bloc rouge du bas refait le calcul avec les nombres ordinaires : 4 d’un côté, 2 de l’autre.",
+   "Comme 4 et 2 sont différents, la racine en plus disparaît."
+  ],
+  "a_voir": "Vert : les deux côtés sont égaux. Rouge : 4 et 2 sont différents."
+ },
+ {
+  "code": "68-205",
+  "a_dire": "Une racine primitive n-ième est un élément qui vaut 1 après exactement n multiplications et pas avant : α l’est pour n = 7, l’élément 1 ne l’est pas.",
+  "legende_titre": "Revenir à 1 pour la première fois",
+  "lecture": [
+   "Chaque rangée de disques suit les pas de 0 à 7 ; un disque plein vert est une puissance qui vaut 1.",
+   "La rangée de 1 est pleine partout : 1 vaut déjà 1 au pas 1, en rouge.",
+   "La rangée de α n’a que deux disques pleins, au pas 0 et au pas 7, en vert."
+  ],
+  "a_voir": "Compare le nombre de disques pleins dans les deux rangées."
+ },
+ {
+  "code": "68-206",
+  "a_dire": "Si un code cyclique s’annule en s puissances consécutives de ω, sa distance minimale est au moins s + 1 ; pour Hamming, s = 2 donne d ≥ 3.",
+  "legende_titre": "Des annulations de suite fixent un minimum",
+  "lecture": [
+   "Les sept cases sont les exposants de 0 à 6 ; les deux cases orange, 1 et 2, sont celles de α et α², où le code s’annule.",
+   "L’accolade orange dit s = 2.",
+   "Sur la droite des poids, les deux cercles rouges, 1 et 2, sont sans mot du code.",
+   "Le disque vert est le poids 3 : la distance est au moins 3, soit s + 1."
+  ],
+  "a_voir": "Deux cases orange de suite, puis la distance commence à 3."
+ },
+ {
+  "code": "68-207",
+  "a_dire": "Un mot non nul avec peu de coefficients non nuls donnerait un système d’équations dont le déterminant de Vandermonde n’est pas nul ; sa seule solution est zéro.",
+  "legende_titre": "Autant d’équations que d’inconnues",
+  "lecture": [
+   "La rangée du haut est un mot dont seules les cases 1 et 4 peuvent valoir 1 ; les deux ? orange sont les inconnues.",
+   "Les deux boîtes bleues sont les deux équations : annulation en α et annulation en α², où α est un élément du corps à 8 éléments.",
+   "La boîte orange est l’étape qui décide : le déterminant n’est pas nul, donc la seule solution est 0.",
+   "La boîte verte est l’arrivée : les deux inconnues valent 0, donc aucun mot non nul n’a si peu de coefficients non nuls."
+  ],
+  "a_voir": "Deux inconnues, deux équations, un déterminant non nul : la seule solution est 0."
+ },
+ {
+  "code": "68-208",
+  "a_dire": "Pour Hamming, un mot x^i + x^j de poids 2 ne s’annule pas en α, car il faudrait α^i = α^j, ce qui est faux.",
+  "legende_titre": "Deux termes qui ne peuvent pas se compenser",
+  "lecture": [
+   "La rangée du haut est le mot x + x⁴ ; ses deux 1 sont bleus.",
+   "La flèche orange remplace x par α : on obtient α, en bleu, et α⁴, en violet.",
+   "Ces deux valeurs sont différentes, d’où le signe ≠ vert.",
+   "Le texte rouge dit que les rendre égales demanderait α³ = 1, ce qui est faux."
+  ],
+  "a_voir": "Le signe ≠ entre α et α⁴."
+ }
+]

@@ -1,0 +1,362 @@
+[
+ {
+  "code": "68-059",
+  "a_dire": "Le code {000, 111} n'a qu'une paire de mots, ils diffèrent aux trois positions, donc la distance minimale est 3.",
+  "legende_titre": "Une seule paire de mots, trois différences",
+  "lecture": [
+   "Les cases bleues sont le mot 000, les cases violettes le mot 111.",
+   "Chaque flèche orange relie deux bits de même position qui diffèrent.",
+   "Il y a trois flèches : les mots diffèrent en 3 positions.",
+   "Le nombre vert donne la distance minimale du code."
+  ],
+  "a_voir": "Les trois flèches orange : il n'y a qu'une paire et elle est à distance 3."
+ },
+ {
+  "code": "68-060",
+  "a_dire": "Le code de parité sur 4 bits a huit mots ; la paire 0000 et 0011 est à distance 2, et c'est la plus petite distance.",
+  "legende_titre": "Huit mots de parité, une paire à distance 2",
+  "lecture": [
+   "Les huit cases sont les huit mots du code.",
+   "La case bleue est 0000 et la case violette est 0011.",
+   "L'arc orange entre elles dit que ces deux mots sont à distance 2.",
+   "Le nombre vert est la distance minimale du code."
+  ],
+  "a_voir": "L'arc orange entre 0000 et 0011 : cette paire atteint la distance 2."
+ },
+ {
+  "code": "68-061",
+  "a_dire": "Quatre mots donnent six paires ; leurs distances sont 3, 3, 4, 4, 3, 3 et la plus petite est 3.",
+  "legende_titre": "Six paires de mots, six distances",
+  "lecture": [
+   "Chaque case bleue est un des quatre mots du code.",
+   "Chaque trait relie deux mots : il y a six traits, donc six paires.",
+   "Les traits verts portent la distance 3, les traits gris portent la distance 4.",
+   "Le nombre vert en haut est la plus petite des six distances."
+  ],
+  "a_voir": "Quatre traits verts de distance 3 et deux traits gris de distance 4."
+ },
+ {
+  "code": "68-062",
+  "a_dire": "La boule B(c, t) est l'ensemble des mots à distance au plus t du centre c ; ici B(000, 1) contient 000, 100, 010 et 001.",
+  "legende_titre": "Les mots rangés par distance au centre 000",
+  "lecture": [
+   "Les mots sont rangés par leur distance au mot 000, de 0 à 3.",
+   "Le cadre bleu entoure les mots à distance 0 ou 1 : c'est la boule.",
+   "Les cases bleues sont dans la boule, les cases grises sont dehors.",
+   "Le centre 000 est le seul mot à distance 0."
+  ],
+  "a_voir": "Le cadre bleu : quatre mots à l'intérieur, quatre dehors."
+ },
+ {
+  "code": "68-063",
+  "a_dire": "Dans la boule B(000, 1), on trouve le centre et un mot par position inversée : 1 + n mots, soit 4 pour n = 3.",
+  "legende_titre": "Les quatre sommets bleus du cube",
+  "lecture": [
+   "Chaque rond est un mot de trois bits ; deux ronds reliés diffèrent en un bit.",
+   "Les ronds bleus sont 000 et ses trois voisins 100, 010, 001.",
+   "Les traits bleus épais sont les trois inversions d'un seul bit à partir de 000.",
+   "Le calcul vert compte le centre plus un mot par position : 1 + 3 = 4."
+  ],
+  "a_voir": "Trois traits bleus partent de 000 : le centre et ses trois voisins font 4 sommets."
+ },
+ {
+  "code": "68-064",
+  "a_dire": "Le symbole F2 désigne l'ensemble {0, 1} avec la règle 1 + 1 = 0, qui vient du reste de la division par 2.",
+  "legende_titre": "Un ensemble de deux bits et une règle d'addition",
+  "lecture": [
+   "Le symbole bleu de gauche désigne les deux ronds bleus 0 et 1.",
+   "Dans la rangée du bas, la case grise est l'addition ordinaire : 1 + 1 donne 2.",
+   "La case orange donne le reste de 2 divisé par 2, qui est 0.",
+   "La case verte écrit la règle de F2 : 1 + 1 = 0."
+  ],
+  "a_voir": "Le chemin de 1 + 1 = 2 vers le reste 0, puis vers 1 + 1 = 0."
+ },
+ {
+  "code": "68-065",
+  "a_dire": "Le symbole F2^n désigne les 2^n mots de n bits ; chaque bit de plus double le nombre de mots.",
+  "legende_titre": "Chaque bit de plus double le nombre de mots",
+  "lecture": [
+   "Chaque rangée compte les mots d'une longueur n : 2, 4, 8 et 16 petits carrés.",
+   "Les carrés bleus sont les mots déjà comptés à la rangée du dessus.",
+   "Les carrés orange sont les mots ajoutés par le bit de plus.",
+   "Dans chaque rangée, il y a autant de carrés orange que de bleus."
+  ],
+  "a_voir": "À chaque rangée, la part orange est aussi grande que la part bleue."
+ },
+ {
+  "code": "68-066",
+  "a_dire": "Le signe x + y ajoute les mots bit par bit ; ajouter e inverse les bits où e vaut 1.",
+  "legende_titre": "Ajouter un mot d'erreur, bit par bit",
+  "lecture": [
+   "Le mot bleu du haut est x, le mot orange du milieu est e.",
+   "Le mot vert du bas est la somme x + e.",
+   "Le cadre orange suit la position 5 : e y vaut 1.",
+   "C'est le seul bit de x qui est inversé ; les autres sont recopiés."
+  ],
+  "a_voir": "Dans le cadre orange, seul le bit 5 change entre le mot du haut et le mot du bas."
+ },
+ {
+  "code": "68-067",
+  "a_dire": "Le symbole (n, k) donne deux longueurs : n pour les mots envoyés, k pour les blocs de message ; n − k bits sont ajoutés.",
+  "legende_titre": "Deux nombres pour décrire un code",
+  "lecture": [
+   "Chaque rangée est un code ; son couple (n, k) est écrit à gauche.",
+   "Les carrés bleus sont les bits du bloc de message : il y en a k.",
+   "Les carrés orange sont les bits ajoutés : il y en a n − k.",
+   "Le nombre n à droite est le total de carrés de la rangée."
+  ],
+  "a_voir": "Dans chaque rangée, bleus plus orange font n, et les bleus font k."
+ },
+ {
+  "code": "68-068",
+  "a_dire": "Le symbole C désigne l'ensemble des mots qu'on a le droit d'envoyer, par exemple {000, 111} pour la répétition triple.",
+  "legende_titre": "Les mots permis, séparés des autres",
+  "lecture": [
+   "Le cadre bleu contient les deux mots permis 000 et 111 : c'est C.",
+   "Le cadre gris contient les six autres mots de trois bits.",
+   "Ces six mots ne sont pas dans la liste des mots permis.",
+   "Le signe C nomme seulement la liste du cadre bleu."
+  ],
+  "a_voir": "Deux mots dans le cadre bleu, six dans le cadre gris : C est la liste du cadre bleu."
+ },
+ {
+  "code": "68-069",
+  "a_dire": "Le signe d(x, y) note le nombre de positions où deux mots de même longueur diffèrent ; pour 10101 et 11010 il vaut 4.",
+  "legende_titre": "Un seul signe pour compter les différences",
+  "lecture": [
+   "Le mot bleu du haut est x, le mot violet du bas est y.",
+   "Une flèche orange relie deux bits de même position qui diffèrent.",
+   "Le trait gris pointillé marque la position où les bits sont égaux.",
+   "Le signe vert note le nombre de flèches orange : 4."
+  ],
+  "a_voir": "Quatre flèches orange et un trait pointillé : d(x, y) = 4."
+ },
+ {
+  "code": "68-070",
+  "a_dire": "Le signe w(x) note le nombre de 1 du mot x : 3 pour 10101, 2 pour 00011 et 0 pour 00000.",
+  "legende_titre": "Compter les 1 d'un mot",
+  "lecture": [
+   "Chaque rangée est un mot binaire.",
+   "Les 1 sont entourés d'un fond bleu.",
+   "Le nombre vert à droite est le nombre de fonds bleus de la rangée.",
+   "Le mot 00000 n'a aucun fond bleu : son poids est 0."
+  ],
+  "a_voir": "Les fonds bleus : trois, puis deux, puis aucun."
+ },
+ {
+  "code": "68-071",
+  "a_dire": "Le signe d résume un code par un seul nombre, sa distance minimale : 3, 2 et 3 pour les trois codes.",
+  "legende_titre": "Un nombre pour chaque code",
+  "lecture": [
+   "Chaque rangée est un code, nommé à gauche.",
+   "Les carrés bleus sont en nombre égal à la distance minimale du code.",
+   "Le nombre à droite écrit cette distance avec le signe d.",
+   "Les trois rangées se comparent par la longueur des carrés."
+  ],
+  "a_voir": "Deux rangées de trois carrés et une de deux carrés : d = 3, d = 2, d = 3."
+ },
+ {
+  "code": "68-072",
+  "a_dire": "Le signe B(c, t) désigne les mots à distance au plus t du centre c ; pour le centre 000, il contient 1, 4 puis 8 mots quand t vaut 0, 1, 3.",
+  "legende_titre": "La boule grandit avec le rayon",
+  "lecture": [
+   "Chaque rangée correspond à un rayon t, écrit en orange à gauche.",
+   "La case bleue contient les mots de la boule B(000, t).",
+   "La case s'allonge quand t grandit : 1 mot, puis 4, puis 8.",
+   "Le mot 000, le centre, est dans les trois cases."
+  ],
+  "a_voir": "La case bleue s'allonge avec t et contient toujours 000."
+ },
+ {
+  "code": "68-073",
+  "a_dire": "Le signe ⌊a⌋ donne le plus grand entier inférieur ou égal à a : 0 pour 0,5 ; 1 pour 1,5 ; 2 pour 2.",
+  "legende_titre": "Arrondir un nombre vers le bas",
+  "lecture": [
+   "Les ronds orange sont les nombres a posés sur la droite : 0,5 et 1,5.",
+   "Les ronds verts sont les entiers obtenus.",
+   "Chaque flèche orange va du nombre vers l'entier à sa gauche.",
+   "Pour 2, le rond vert est déjà sur un entier : il n'y a pas de flèche."
+  ],
+  "a_voir": "Les flèches vont toujours vers la gauche, jusqu'à l'entier le plus proche en dessous."
+ },
+ {
+  "code": "68-074",
+  "a_dire": "Le signe t note le nombre d'erreurs que le code corrige ; il dépend de la distance minimale d : t = 1 pour d = 3 et t = 0 pour d = 2.",
+  "legende_titre": "Le nombre d'erreurs corrigées dépend de d",
+  "lecture": [
+   "Chaque rangée est un code avec sa distance minimale d en bleu.",
+   "La flèche orange mène au nombre d'erreurs corrigées t.",
+   "La case verte dit que la répétition triple corrige 1 erreur.",
+   "La case grise en pointillés dit que le bit de parité n'en corrige aucune."
+  ],
+  "a_voir": "Avec d = 3 on obtient t = 1, avec d = 2 on obtient t = 0."
+ },
+ {
+  "code": "68-075",
+  "a_dire": "Le signe G nomme un tableau de 0 et de 1 dont les colonnes sont des mots du code ; pour la répétition triple, c'est une colonne de trois 1.",
+  "legende_titre": "Un tableau qui range le mot du code",
+  "lecture": [
+   "À gauche, la case grise est le message 1 ; la flèche orange la transforme en mot.",
+   "La case verte est le mot envoyé 111.",
+   "À droite, le tableau bleu nommé G a trois lignes et une colonne.",
+   "Sa colonne contient les trois bits du mot 111."
+  ],
+  "a_voir": "La colonne de trois 1 du tableau G est le mot 111."
+ },
+ {
+  "code": "68-076",
+  "a_dire": "Le signe H nomme un tableau de 0 et de 1 dont chaque ligne est une équation de somme nulle ; pour la parité sur 4 bits, une ligne de quatre 1.",
+  "legende_titre": "Un tableau dont chaque ligne est une équation",
+  "lecture": [
+   "Les quatre cases bleues forment la seule ligne du tableau H.",
+   "Chaque case est reliée au bit x1, x2, x3 ou x4 dont elle porte le 1.",
+   "L'accolade verte dit que la somme de ces quatre bits doit être nulle.",
+   "Le texte gris rappelle qu'une ligne donne une équation."
+  ],
+  "a_voir": "Quatre 1 sur la ligne : les quatre bits entrent dans la somme."
+ },
+ {
+  "code": "68-077",
+  "a_dire": "Le signe Hx donne d'un coup le résultat des équations de H sur le mot x ; pour 0111 il vaut 1, donc l'équation n'est pas respectée.",
+  "legende_titre": "Tester un mot reçu avec le tableau H",
+  "lecture": [
+   "La rangée bleue est la ligne de H, la rangée violette est le mot reçu 0111.",
+   "Une flèche orange relie un 1 de H à un 1 du mot : ce bit entre dans la somme.",
+   "Le trait pointillé gris marque le bit 0, qui ne compte pas.",
+   "La somme 1 + 1 + 1 donne 1, noté Hx = 1 en vert : différent de 0."
+  ],
+  "a_voir": "Trois flèches orange, donc la somme 1 + 1 + 1 = 1 et Hx = 1."
+ },
+ {
+  "code": "68-078",
+  "a_dire": "Le signe e + C désigne l'ensemble obtenu en additionnant e à chaque mot de C ; avec e = 100 et C = {000, 111}, on obtient {100, 011}.",
+  "legende_titre": "Ajouter un mot à tout un code",
+  "lecture": [
+   "Le cadre bleu est le code C, avec ses deux mots 000 et 111.",
+   "Chaque flèche orange ajoute le mot 100 à un mot de C.",
+   "Le cadre violet est l'ensemble e + C : 100 et 011.",
+   "Le résultat est un ensemble de deux mots, pas un seul mot."
+  ],
+  "a_voir": "Deux flèches parallèles : chaque mot de C donne un mot de e + C."
+ },
+ {
+  "code": "68-079",
+  "a_dire": "Le signe g(x) nomme le polynôme par lequel on multiplie le message pour obtenir le mot du code ; son degré 3 donne 3 bits ajoutés.",
+  "legende_titre": "Un polynôme multiplie le message",
+  "lecture": [
+   "La case grise est le message 1001, écrit en polynôme dans la case bleue : 1 + x au cube.",
+   "La case violette multiplie ce polynôme par g(x).",
+   "Le texte violet rappelle que g(x) a le degré 3 : 3 bits sont ajoutés.",
+   "La case verte est le mot du code obtenu."
+  ],
+  "a_voir": "Une seule multiplication par g(x) mène du message au mot du code."
+ },
+ {
+  "code": "68-080",
+  "a_dire": "Un code de distance minimale d détecte toute erreur de 1 à d − 1 bits ; avec 3 erreurs sur 000, on reçoit 111, qui est un mot du code et n'est pas vu.",
+  "legende_titre": "Jusqu'où une erreur est vue",
+  "lecture": [
+   "Le mot bleu est 000, envoyé sans erreur ; chaque flèche orange inverse un bit de plus.",
+   "Les mots verts, après 1 et 2 erreurs, ne sont pas dans le code : l'erreur est détectée.",
+   "L'accolade verte couvre les erreurs de 1 à d − 1, soit 2.",
+   "Le mot rouge, après 3 erreurs, est le mot 111 du code : l'erreur n'est pas vue."
+  ],
+  "a_voir": "Deux cases vertes détectées, puis une case rouge qui tombe sur 111."
+ },
+ {
+  "code": "68-081",
+  "a_dire": "Avec d = 3, le code corrige t = 1 erreur : après 1 erreur le mot reçu est plus proche du bon mot, après 2 erreurs il est plus proche de l'autre.",
+  "legende_titre": "Une erreur corrigée, deux erreurs non",
+  "lecture": [
+   "Chaque rangée envoie 000 ; la case orange est le mot reçu.",
+   "Les deux cases suivantes donnent la distance du mot reçu à 000 et à 111.",
+   "Dans la rangée du haut, 100 est plus près de 000 : case verte, mot corrigé.",
+   "Dans la rangée du bas, 110 est plus près de 111 : case rouge, le récepteur se trompe."
+  ],
+  "a_voir": "La case colorée est celle de la plus petite distance : verte avec 1 erreur, rouge avec 2."
+ },
+ {
+  "code": "68-082",
+  "a_dire": "La formule t = ⌊(d − 1)/2⌋ se lit en quatre actions : partir de d, retirer 1, prendre la moitié, arrondir vers le bas.",
+  "legende_titre": "La formule de t, action par action",
+  "lecture": [
+   "Chaque rangée suit un cas : la case bleue est la valeur de départ d.",
+   "Les flèches orange sont les trois actions : retirer 1, prendre la moitié, arrondir.",
+   "Les cases grises sont les valeurs intermédiaires.",
+   "La case verte est t : 2 pour d = 5 et 1 pour d = 4."
+  ],
+  "a_voir": "Rangée du haut : 5, 4, 2, 2. Rangée du bas : 4, 3, 1,5, 1."
+ },
+ {
+  "code": "68-083",
+  "a_dire": "La formule part de d, puis trois opérations ont chacune leur raison : retirer 1 pour avoir 2t < d, prendre la moitié car les boules ont le même rayon, arrondir car t compte des erreurs entières.",
+  "legende_titre": "Chaque opération a sa raison",
+  "lecture": [
+   "La case bleue est le point de départ d = 4 ; les flèches orange sont les trois opérations : retirer 1, prendre la moitié, arrondir.",
+   "Chaque trait pointillé relie une flèche à sa raison, écrite en dessous.",
+   "La case rouge montre le rayon 2 : 2 + 2 = 4 n’est pas plus petit que 4.",
+   "La case verte montre le rayon 1 : 1 + 1 = 2 est plus petit que 4."
+  ],
+  "a_voir": "Chaque opération a sa raison ; le rayon 2 échoue (case rouge), le rayon 1 convient (case verte)."
+ },
+ {
+  "code": "68-084",
+  "a_dire": "Si le bruit inverse de 1 à d − 1 bits, le mot reçu n'est ni le mot envoyé ni un autre mot du code, donc il n'est pas dans le code.",
+  "legende_titre": "Pourquoi le mot reçu n'est pas dans le code",
+  "lecture": [
+   "La droite mesure la distance à c, de 0 à 3 ; le rond bleu est c = 000.",
+   "Le rond violet à la distance 3 est l'autre mot du code, 111.",
+   "Le bandeau orange, de 1 à 2, est la place du mot reçu r.",
+   "L'accolade dit qu'aucun autre mot du code n'est à moins de d = 3 de c."
+  ],
+  "a_voir": "Le bandeau orange tombe entre les deux ronds, dans la zone sans mot du code."
+ },
+ {
+  "code": "68-085",
+  "a_dire": "Si on retire 2t < d, les boules de rayon t peuvent se toucher : avec t = 2 et d = 3, le mot 110 est dans B(000, 2) et dans B(111, 2).",
+  "legende_titre": "Sans l'hypothèse, les boules se chevauchent",
+  "lecture": [
+   "Le cercle bleu est la boule de rayon 2 autour de 000, le cercle violet celle autour de 111.",
+   "Les centres sont à 3 unités l'un de l'autre, chaque rayon vaut 2 unités.",
+   "Le point rouge est 110 : à 2 de 000 et à 1 de 111.",
+   "Il est dans les deux cercles, car 2t = 4 n'est pas plus petit que 3."
+  ],
+  "a_voir": "Le point rouge se trouve dans les deux cercles à la fois."
+ },
+ {
+  "code": "68-086",
+  "a_dire": "Un mot y commun à deux boules de rayon t donnerait d(c, c') au plus 2t, plus petit que d : c'est impossible, car deux mots du code sont à distance au moins d.",
+  "legende_titre": "L'inégalité triangulaire donne une contradiction",
+  "lecture": [
+   "En bas, la flèche grise est la distance 3 entre 000 et 111.",
+   "En haut, deux flèches orange passent par y, chacune d'au plus 1.",
+   "Le chemin par y fait au plus 1 + 1 = 2 : il n'atteint pas 111.",
+   "Le trait rouge en pointillés est la partie qui manque : 3 au plus 2 est faux."
+  ],
+  "a_voir": "Le chemin orange par y est plus court que la flèche grise et n'arrive pas au bout."
+ },
+ {
+  "code": "68-087",
+  "a_dire": "Pour décoder, on remplace le mot reçu par le mot du code le plus proche ; pour 101, on compare 2 et 1 et on garde 111.",
+  "legende_titre": "Choisir le mot du code le plus proche",
+  "lecture": [
+   "La case orange est le mot reçu 101.",
+   "Les deux flèches vont aux mots du code 000 et 111.",
+   "La flèche grise vers 000 porte la distance 2.",
+   "La flèche verte, plus épaisse, vers 111 porte la distance 1 : c'est le mot gardé."
+  ],
+  "a_voir": "La flèche épaisse va vers le mot le plus proche, 111."
+ },
+ {
+  "code": "68-088",
+  "a_dire": "Quand le mot reçu r est à au plus t de c, tout autre mot c' du code est à au moins d − t de r, et d − t est plus grand que t : c est le plus proche.",
+  "legende_titre": "Pourquoi c reste le mot le plus proche",
+  "lecture": [
+   "Sur la droite, le rond bleu est c, le rond orange est r et le rond violet est un autre mot c'.",
+   "L'accolade du haut dit que c et c' sont à distance au moins d = 5.",
+   "L'accolade orange dit que r est à au plus 2 de c.",
+   "L'accolade violette dit que r est à au moins 3 de c', et 3 est plus grand que 2."
+  ],
+  "a_voir": "La partie violette (au moins 3) est plus longue que la partie orange (au plus 2)."
+ }
+]

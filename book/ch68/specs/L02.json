@@ -1,0 +1,335 @@
+[
+ {
+  "code": "68-031",
+  "a_dire": "Le signe (n, k) donne la longueur n des mots envoyés puis la longueur k des blocs de message.",
+  "legende_titre": "Deux nombres qui décrivent la forme d'un code",
+  "lecture": [
+   "En haut, le signe (n, k) : n est la longueur du mot envoyé, k celle du bloc de message, dans cet ordre.",
+   "Les cases grises sont le bloc de message : k bits.",
+   "Les cases bleues sont le mot envoyé : n bits.",
+   "En haut, un bloc de 1 bit devient un mot de 3 bits : (3, 1). En bas, un bloc de 7 bits devient un mot de 8 bits : (8, 7)."
+  ],
+  "a_voir": "Dans (n, k), n compte les cases bleues du mot envoyé et k les cases grises du bloc de message."
+ },
+ {
+  "code": "68-032",
+  "a_dire": "Un codage est injectif : deux blocs différents donnent deux mots différents, sinon le récepteur ne sait pas lequel a été envoyé.",
+  "legende_titre": "Un mot pour chaque bloc, jamais le même",
+  "lecture": [
+   "En haut, les blocs 0 et 1 vont vers deux mots différents, 000 et 111 : le récepteur peut revenir au bloc.",
+   "En bas, en rouge, les deux blocs vont vers le même mot 000 : le récepteur ne sait pas si c'était 0 ou 1.",
+   "Les flèches orange sont le codage E."
+  ],
+  "a_voir": "En haut, chaque mot reçoit une seule flèche ; en bas, le mot rouge en reçoit deux."
+ },
+ {
+  "code": "68-033",
+  "a_dire": "Les mots du code sont seulement ceux que le codage produit, ici 2 mots parmi les 8 mots de 3 bits ; les autres ne viennent que du bruit.",
+  "legende_titre": "Quelques mots seulement parmi tous les mots",
+  "lecture": [
+   "Les 8 cases forment tous les mots de 3 bits.",
+   "Les deux cases bleues, 000 et 111, sont les mots du code C : il y en a 2, soit 2 puissance k avec k = 1.",
+   "Les six cases grises ne sont jamais envoyées : elles ne viennent que du bruit."
+  ],
+  "a_voir": "Le code est un petit groupe de cases bleues dans l'ensemble des 8 mots."
+ },
+ {
+  "code": "68-034",
+  "a_dire": "Les bits de contrôle sont les n − k bits ajoutés au message ; leur nombre est le prix du code.",
+  "legende_titre": "Le prix d'un code : les bits ajoutés",
+  "lecture": [
+   "Les cases grises sont les bits du message.",
+   "Les cases orange sont les bits de contrôle, ajoutés par le code.",
+   "La répétition triple ajoute 3 − 1 = 2 bits ; le bit de parité ajoute 8 − 7 = 1 bit."
+  ],
+  "a_voir": "Compte les cases orange de chaque mot : c'est n − k."
+ },
+ {
+  "code": "68-035",
+  "a_dire": "Le symbole C désigne l'ensemble des mots permis ; un mot reçu qui n'est pas dans C signale une erreur.",
+  "legende_titre": "Le code C : la liste des mots permis",
+  "lecture": [
+   "La grande case bleue est l'ensemble C ; elle contient les mots permis 000 et 111.",
+   "La case rouge est le mot reçu 101, qui est hors de la grande case.",
+   "On écrit 000 ∈ C et 101 ∉ C."
+  ],
+  "a_voir": "101 est dehors de C, donc c'est un mot qu'on n'a pas le droit d'envoyer."
+ },
+ {
+  "code": "68-036",
+  "a_dire": "La répétition triple est un code (3, 1) dont les mots sont 000 et 111.",
+  "legende_titre": "Un code complet : la répétition triple",
+  "lecture": [
+   "Les cases grises sont les deux blocs de 1 bit, 0 et 1 : k = 1.",
+   "Les cases bleues sont les deux mots de 3 bits, 000 et 111 : n = 3.",
+   "Les flèches orange envoient le bloc 0 vers 000 et le bloc 1 vers 111."
+  ],
+  "a_voir": "Deux blocs, deux mots : le code est C = {000, 111}."
+ },
+ {
+  "code": "68-037",
+  "a_dire": "Le bit de parité est un bit placé en tête, choisi pour que le nombre total de 1 du mot soit pair.",
+  "legende_titre": "Un bit en tête pour rendre le total pair",
+  "lecture": [
+   "La case orange, en tête, est le bit de parité.",
+   "Les sept cases à droite sont le message ; les deux cases bleues sont ses 1.",
+   "Le mot de 8 bits a deux 1 en tout : un nombre pair."
+  ],
+  "a_voir": "Le bit orange est tout à gauche et il fait que le total des 1 est pair."
+ },
+ {
+  "code": "68-227",
+  "a_dire": "Le code ASCII donne à chaque lettre un mot de 7 bits : A vaut 65, soit 1000001, et C vaut 67, soit 1000011.",
+  "legende_titre": "Une lettre devient 7 bits",
+  "lecture": [
+   "Les nombres gris au-dessus donnent la valeur de chaque bit : 64, 32, 16, 8, 4, 2, 1.",
+   "Les cases bleues sont les bits égaux à 1 ; on additionne leurs valeurs.",
+   "A : 64 + 1 = 65. C : 64 + 2 + 1 = 67."
+  ],
+  "a_voir": "Les bits à 1 donnent, une fois additionnés, le nombre de la lettre."
+ },
+ {
+  "code": "68-229",
+  "a_dire": "Un octet est un groupe de 8 bits : le mot ASCII de 7 bits plus une case pour le bit de parité.",
+  "legende_titre": "Un bit, un mot ASCII, un octet",
+  "lecture": [
+   "La première ligne a une seule case : un bit.",
+   "La deuxième ligne a 7 cases : un mot ASCII.",
+   "La troisième ligne a 8 cases : un octet, avec la case orange en plus pour le bit de parité."
+  ],
+  "a_voir": "L'octet a une case de plus que le mot ASCII."
+ },
+ {
+  "code": "68-038",
+  "a_dire": "Pour A = 1000001, qui a deux 1 (nombre pair), le bit de parité est 0 et les sept autres bits sont recopiés.",
+  "legende_titre": "Le bit de parité de la lettre A",
+  "lecture": [
+   "La ligne du haut est A en 7 bits ; les nombres 1 et 2 comptent ses deux 1.",
+   "Deux est pair, donc on ajoute 0 : c'est la case orange en tête.",
+   "Les traits en pointillés montrent que les sept bits sont recopiés sans changement."
+  ],
+  "a_voir": "Le mot de 8 bits est le mot de 7 bits avec un 0 devant."
+ },
+ {
+  "code": "68-039",
+  "a_dire": "Pour C = 1000011, qui a trois 1 (nombre impair), le bit de parité est 1 et le mot de 8 bits a quatre 1.",
+  "legende_titre": "Le bit de parité de la lettre C",
+  "lecture": [
+   "La ligne du haut est C en 7 bits ; les nombres 1, 2 et 3 comptent ses trois 1.",
+   "Trois est impair, donc on ajoute 1 : c'est la case orange en tête.",
+   "Le mot de 8 bits a alors quatre 1, un nombre pair."
+  ],
+  "a_voir": "Ici le bit ajouté est 1, parce que le nombre de 1 était impair."
+ },
+ {
+  "code": "68-040",
+  "a_dire": "Le code de parité est un code (8, 7) : des mots de 8 bits pour des blocs de 7 bits.",
+  "legende_titre": "Le code de parité a pour longueurs 8 et 7",
+  "lecture": [
+   "Les deux lignes sont les mots de A et de C : 8 cases chacun, n = 8.",
+   "Les sept cases bleues à droite sont le bloc de message : k = 7.",
+   "La case orange est l'unique bit de contrôle, 8 − 7 = 1."
+  ],
+  "a_voir": "A et C ont la même forme : 7 cases de message et 1 case de contrôle."
+ },
+ {
+  "code": "68-041",
+  "a_dire": "La relation de parité dit que la somme des 8 bits vaut 0 dans F2 : vraie pour un mot juste, fausse quand une erreur est détectée.",
+  "legende_titre": "Additionner les huit bits d'un mot reçu",
+  "lecture": [
+   "Les cases bleues sont les 1 de chaque mot reçu.",
+   "En haut, deux 1 : 1 + 1 = 0, la relation est vraie, le mot est accepté.",
+   "En bas, trois 1 : 1 + 1 + 1 = 1, la relation est fausse, une erreur est détectée."
+  ],
+  "a_voir": "Un nombre pair de 1 donne 0 ; un nombre impair donne 1."
+ },
+ {
+  "code": "68-042",
+  "a_dire": "Quand le sixième bit de A est inversé, le mot reçu a trois 1, nombre impair : l'erreur est détectée.",
+  "legende_titre": "Un bit inversé : l'alarme se déclenche",
+  "lecture": [
+   "La ligne du haut est le mot envoyé, A : 01000001.",
+   "La flèche orange est le bruit qui inverse le sixième bit.",
+   "La ligne du bas est le mot reçu : la case orange est le bit inversé, et il y a trois 1, un nombre impair."
+  ],
+  "a_voir": "Le nombre de 1 est passé de pair à impair, donc le récepteur voit l'erreur."
+ },
+ {
+  "code": "68-043",
+  "a_dire": "Inverser un bit change le nombre de 1 d'exactement une unité, donc un nombre pair devient impair.",
+  "legende_titre": "Pourquoi une erreur est toujours vue",
+  "lecture": [
+   "Le mot du haut est A : deux 1, un nombre pair.",
+   "À gauche, un 0 devient 1 (case orange) : trois 1, un de plus.",
+   "À droite, un 1 devient 0 (case orange) : un seul 1, un de moins."
+  ],
+  "a_voir": "Dans les deux cas, le nombre de 1 change de 1 et devient impair."
+ },
+ {
+  "code": "68-044",
+  "a_dire": "Avec deux erreurs, le nombre de 1 reste pair : le mot A devient le mot C sans aucune alarme.",
+  "legende_titre": "Deux erreurs passent inaperçues",
+  "lecture": [
+   "La ligne du haut est le mot envoyé A : 01000001.",
+   "Les deux flèches orange inversent le premier et le septième bit.",
+   "La ligne du bas est 11000011, le mot de C : quatre 1, nombre pair, donc aucune alarme."
+  ],
+  "a_voir": "Deux inversions donnent un nombre pair de 1, comme un mot juste."
+ },
+ {
+  "code": "68-045",
+  "a_dire": "Une erreur détectée ne se corrige pas : inverser n'importe lequel des 8 bits donne un mot correct, et rien ne dit lequel choisir.",
+  "legende_titre": "Huit corrections aussi plausibles",
+  "lecture": [
+   "Le mot rouge du haut est le mot reçu : trois 1, nombre impair.",
+   "Chacun des 8 mots du bas a un seul bit inversé, la case orange.",
+   "Les huit ont un nombre pair de 1 : aucun ne se distingue des autres."
+  ],
+  "a_voir": "Huit mots différents respectent tous la règle de parité."
+ },
+ {
+  "code": "68-046",
+  "a_dire": "La distance de Hamming de deux mots est le nombre de positions où leurs bits diffèrent.",
+  "legende_titre": "Compter les positions différentes",
+  "lecture": [
+   "La ligne bleue est le mot x = 10101 et la ligne violette le mot y = 11010.",
+   "Les cases orange reliées par une flèche sont les positions où les bits diffèrent.",
+   "Il y en a 4 : d(x, y) = 4. Le premier bit est le même, il n'est pas compté."
+  ],
+  "a_voir": "On compte les cases orange, pas l'écart entre deux nombres."
+ },
+ {
+  "code": "68-047",
+  "a_dire": "Le poids d'un mot est son nombre de 1 ; pour un mot d'erreur, c'est le nombre d'erreurs.",
+  "legende_titre": "Le poids : compter les 1",
+  "lecture": [
+   "Chaque mot est un mot d'erreur e ; ses cases orange sont les 1, donc les bits inversés.",
+   "Le mot 0000100 a un 1 : w(e) = 1, une erreur.",
+   "Le mot 0100100 a deux 1 : w(e) = 2, deux erreurs."
+  ],
+  "a_voir": "Le nombre de cases orange est le poids."
+ },
+ {
+  "code": "68-048",
+  "a_dire": "Le poids de x est la distance de x au mot nul : une position diffère du mot nul exactement quand le bit de x est 1.",
+  "legende_titre": "Le poids est une distance",
+  "lecture": [
+   "La ligne du haut est x = 10101 ; ses trois 1 sont en orange.",
+   "La ligne du bas est le mot nul 00000, en gris.",
+   "Les flèches orange relient les trois positions qui diffèrent : w(x) = d(x, 0) = 3."
+  ],
+  "a_voir": "Les 1 de x sont exactement les positions qui diffèrent du mot nul."
+ },
+ {
+  "code": "68-049",
+  "a_dire": "Pour x = 10101, y = 11010 et z = 00011, les poids sont 3, 3 et 2 et les distances sont 4, 3 et 3.",
+  "legende_titre": "Trois mots : leurs poids, leurs distances",
+  "lecture": [
+   "Le tableau montre les trois mots ; à droite, le poids de chacun : 3, 3 et 2.",
+   "Le triangle a un sommet par mot : x bleu, y violet, z vert.",
+   "Chaque côté porte la distance entre deux mots : 4 entre x et y, 3 entre x et z, 3 entre y et z."
+  ],
+  "a_voir": "Le poids se lit sur un mot seul ; la distance se lit entre deux mots."
+ },
+ {
+  "code": "68-050",
+  "a_dire": "L'égalité d(x, y) = w(x + y) est propre aux bits : calculée modulo 3 avec x = 1 et y = 2, elle devient fausse.",
+  "legende_titre": "L'égalité casse hors des bits",
+  "lecture": [
+   "La case bleue du haut est l’égalité d(x, y) = w(x + y) ; w est le nombre de positions non nulles. Elle vaut pour des bits, où 1 + 1 = 0.",
+   "En dessous, l’essai modulo 3 : x = 1 (bleu) et y = 2 (violet) sont différents.",
+   "À gauche, leur distance vaut 1.",
+   "À droite, leur somme est 3, de reste 0 modulo 3, donc le poids vaut 0 : 1 n’est pas égal à 0, l’égalité est fausse."
+  ],
+  "a_voir": "L’égalité vraie pour des bits devient fausse modulo 3 : les deux côtés valent 1 et 0."
+ },
+ {
+  "code": "68-051",
+  "a_dire": "La somme de deux bits vaut 1 exactement quand les bits sont différents.",
+  "legende_titre": "Quand la somme de deux bits vaut 1",
+  "lecture": [
+   "Le tableau a une case par choix de x_i et de y_i.",
+   "Les deux cases grises, 0 + 0 et 1 + 1, sont les bits égaux : la somme vaut 0.",
+   "Les deux cases orange, 0 + 1 et 1 + 0, sont les bits différents : la somme vaut 1."
+  ],
+  "a_voir": "Les cases orange sont exactement celles où la somme est 1."
+ },
+ {
+  "code": "68-052",
+  "a_dire": "La somme position par position de 10101 et 11010 est 01111, de poids 4, comme leur distance.",
+  "legende_titre": "Additionner deux mots : un exemple",
+  "lecture": [
+   "La ligne bleue est x = 10101 et la ligne violette est y = 11010.",
+   "La ligne du bas est la somme, position par position : 01111.",
+   "Les quatre cases vertes sont des 1 : le poids de la somme est 4."
+  ],
+  "a_voir": "La somme a un 1 là où les deux mots diffèrent."
+ },
+ {
+  "code": "68-053",
+  "a_dire": "La distance n'est jamais négative et vaut 0 seulement pour deux mots égaux ; deux mots différents sont toujours à une distance d'au moins 1.",
+  "legende_titre": "Distance nulle seulement si les mots sont égaux",
+  "lecture": [
+   "En haut, en vert : la distance est positive ou nulle, et nulle seulement si les deux mots sont égaux.",
+   "Première rangée : deux mots égaux 10 et 10, la distance est 0.",
+   "Deuxième rangée : 10 et 01 diffèrent aux deux positions (cases orange), la distance est 2, donc au moins 1.",
+   "En bas, en rouge, une autre mesure, l’écart des nombres de 1, donne 0 pour 10 et 01 : elle ne convient pas."
+  ],
+  "a_voir": "Avec la distance, deux mots égaux sont à 0 et deux mots différents sont à au moins 1."
+ },
+ {
+  "code": "68-054",
+  "a_dire": "La distance est symétrique : d(x, y) = d(y, x), car ce sont les mêmes positions qui diffèrent.",
+  "legende_titre": "Même distance dans les deux sens",
+  "lecture": [
+   "La ligne bleue est x = 10101 et la ligne violette est y = 11010.",
+   "Les flèches orange à deux pointes relient les quatre positions qui diffèrent, dans les deux sens.",
+   "À droite : d(x, y) = 4 et d(y, x) = 4."
+  ],
+  "a_voir": "Les flèches vont dans les deux sens : mêmes positions, même nombre."
+ },
+ {
+  "code": "68-055",
+  "a_dire": "Aller de x à z directement ne demande pas plus d'inversions que de passer par y : d(x, z) ≤ d(x, y) + d(y, z).",
+  "legende_titre": "Le trajet direct n'est pas plus long",
+  "lecture": [
+   "Les trois mots sont x = 000, y = 100 et z = 111.",
+   "Les flèches orange passent par y : 1 inversion, puis 2 inversions.",
+   "L'arc bleu va directement de x à z : 3 inversions. Ici 3 est égal à 1 + 2."
+  ],
+  "a_voir": "Le détour par y n'est jamais plus court que l'arc direct."
+ },
+ {
+  "code": "68-056",
+  "a_dire": "À une position où x et z diffèrent, y ne peut pas être égal aux deux : il diffère de x ou de z.",
+  "legende_titre": "Pourquoi le détour ne raccourcit pas",
+  "lecture": [
+   "Les trois rectangles orange en pointillés sont les positions 1, 3 et 4, où x et z diffèrent.",
+   "À la position 1, la flèche relie y à z : y diffère de z.",
+   "Aux positions 3 et 4, les flèches relient x à y : y diffère de x."
+  ],
+  "a_voir": "Dans chaque rectangle, une flèche montre que y diffère d'un des deux autres mots."
+ },
+ {
+  "code": "68-057",
+  "a_dire": "Sur l'exemple, d(x, z) = 3 est plus petit que d(x, y) + d(y, z) = 4 + 3 = 7.",
+  "legende_titre": "3 contre 7 sur l'exemple",
+  "lecture": [
+   "La barre bleue est d(x, z) : longueur 3.",
+   "Les deux barres orange mises bout à bout sont d(x, y) = 4 puis d(y, z) = 3.",
+   "Le total est 4 + 3 = 7, plus long que la barre bleue."
+  ],
+  "a_voir": "La barre bleue est plus courte que les deux barres orange réunies."
+ },
+ {
+  "code": "68-058",
+  "a_dire": "La distance minimale d'un code est la plus petite des distances entre deux mots différents du code.",
+  "legende_titre": "La plus petite distance entre deux mots du code",
+  "lecture": [
+   "Les deux mots du code C sont 000 et 111.",
+   "La flèche orange les relie : ils diffèrent aux trois positions, accolade orange.",
+   "Il n'y a qu'une paire, donc d = 3 ; avec plusieurs paires, on garde la plus petite distance."
+  ],
+  "a_voir": "Ici une seule paire de mots, à distance 3."
+ }
+]
