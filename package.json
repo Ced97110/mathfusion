@@ -5,11 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out"
+    "start": "npx serve out",
+    "test": "vitest run lib"
   },
   "dependencies": {
+    "katex": "^0.19.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "fast-check": "^4.10.2",
+    "vitest": "^3.2.4"
   }
 }

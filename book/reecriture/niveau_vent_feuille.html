@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions Vent de travers</title>
+<style>
+  /* Feuille à imprimer (A4). Couleurs du livre : bleu = l'objet, violet = le second objet, gris = le décor fixe. */
+  :root { --bleu: #1f5fbf; --violet: #7b3fb5; --gris: #8a8f98; --texte: #1a1a1a; }
+  @page { size: A4; margin: 14mm; }
+  body { background: #fff; color: var(--texte); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0 auto; max-width: 182mm; padding: 16px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 16px 0 6px; }
+  .page { break-after: page; }
+  .page:last-child { break-after: auto; }
+  .consigne { border-left: 3px solid var(--gris); padding: 6px 10px; margin: 8px 0 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .choix { display: grid; grid-template-columns: 2.2em 1fr; gap: 4px 4px; margin: 6px 0 10px; }
+  .choix b { font-size: 17px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  th, td { border: 1px solid var(--gris); padding: 8px 6px; text-align: left; vertical-align: top; font-size: 14px; }
+  td { height: 30px; }
+  .petit { font-size: 12px; color: #555; }
+</style>
+</head>
+<body>
+
+<!-- Page 1 : pour toi -->
+<section class="page">
+  <h1>Questions « Vent de travers » — mode d'emploi</h1>
+  <p class="petit">Chapitre 41, addition de deux vecteurs. Version 2 (2026-11-14). Imprimer les 4 pages. Une copie de la page 2 et de la page 3 par personne.</p>
+  <h2>Qui</h2>
+  <p>3 personnes qui n'ont pas étudié les vecteurs (ou les ont oubliés).</p>
+  <h2>Comment</h2>
+  <ol>
+    <li>Donne la page 2. Demande de penser à voix haute pendant la réponse. N'explique rien, ne corrige rien.</li>
+    <li>Note les deux lettres (1a, 1b) et les mots exacts de la personne (page 4).</li>
+    <li>Quand le niveau sera prêt : la personne joue au niveau.</li>
+    <li>Juste après, donne la page 3 (la barque). Note les deux lettres (2a, 2b) et les mots exacts.</li>
+  </ol>
+  <h2>Règles de décision, fixées avant le test</h2>
+  <p><b>Hypothèse « les vitesses s'additionnent » confirmée</b> si au moins 2 personnes sur 3 choisissent <b>A en 1a et A en 1b</b>. Au hasard, cela arrive 25 fois sur 729 (3,4 %).</p>
+  <p><b>Épreuve 3 réussie</b> si au moins 2 personnes sur 3 se trompent sur au moins une partie de la question 1 <b>puis</b> réussissent 2a et 2b. Au hasard : 2,7 %.</p>
+  <p>Si les personnes se trompent autrement que prévu, leurs mots notés disent quelle est la vraie fausse idée.</p>
+  <h2>Réponses justes (ne pas montrer)</h2>
+  <p>1a : <b>B</b> ; 1b : <b>C</b> ; 2a : <b>C</b> ; 2b : <b>B</b>.</p>
+  <p class="petit">Les deux questions ont la même structure : le vent (ou le courant) fait un angle de 46° avec la direction où l'on pointe. Sources : avion Cessna 172S, 119 kt (manuel de vol Cessna 172S, Rev. 4, fig. 4-3) ; vent mesuré à De Bilt le 12 novembre 2026 à 12 h UTC, 1222 m, vient du 316°, 9,5 m/s = 18,5 kt (University of Wyoming) ; rivière Delaware à Trenton, jaugeage USGS du 15 octobre 2026, 314 m de large (1030 ft), courant moyen 0,52 m/s (1,71 ft/s).</p>
+</section>
+
+<!-- Page 2 : question d'avant -->
+<section class="page">
+  <h1>Question 1</h1>
+  <p class="consigne">Un petit avion vole à 119 nœuds dans l'air. Le pilote pointe le nez de l'avion <b>plein est</b> et ne le bouge plus. Un vent de 18,5 nœuds souffle vers le sud-est.</p>
+  <svg viewBox="0 0 600 320" role="img" aria-label="Carte vue de dessus : départ, ligne plein est, trois points A, B, C, flèches de l'avion et du vent">
+    <defs>
+      <marker id="pb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1f5fbf"/></marker>
+      <marker id="pv" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7b3fb5"/></marker>
+    </defs>
+    <rect x="1" y="1" width="598" height="318" fill="#fff" stroke="#8a8f98"/>
+    <g stroke="#8a8f98" fill="#8a8f98"><line x1="560" y1="70" x2="560" y2="30" stroke-width="2"/><path d="M560 22 l-6 12 h12 z"/></g>
+    <text x="560" y="88" text-anchor="middle" font-size="14" fill="#555">N</text>
+    <line x1="40" y1="130" x2="540" y2="130" stroke="#8a8f98" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <text x="300" y="122" text-anchor="middle" font-size="12" fill="#555">ligne plein est</text>
+    <circle cx="40" cy="130" r="6" fill="#1a1a1a"/>
+    <text x="40" y="114" text-anchor="middle" font-size="14">départ</text>
+    <g font-size="18" font-weight="700">
+      <circle cx="470" cy="130" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="488" y="136">A</text>
+      <circle cx="470" cy="175" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="488" y="181">B</text>
+      <circle cx="470" cy="85" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="488" y="91">C</text>
+    </g>
+    <!-- flèches à la même échelle : 1 px par nœud ; vent vers 136° -->
+    <line x1="40" y1="240" x2="159" y2="240" stroke="#1f5fbf" stroke-width="4" marker-end="url(#pb)"/>
+    <text x="180" y="245" font-size="14" fill="#1f5fbf">avion : nez plein est, 119 nœuds dans l'air</text>
+    <line x1="140" y1="268" x2="152.8" y2="281.3" stroke="#7b3fb5" stroke-width="4" marker-end="url(#pv)"/>
+    <text x="180" y="282" font-size="14" fill="#7b3fb5">vent : 18,5 nœuds, vers le sud-est</text>
+    <text x="300" y="310" text-anchor="middle" font-size="11" fill="#555">Les deux flèches sont à la même échelle.</text>
+  </svg>
+  <p><b>1a. Où est l'avion après une heure de vol ?</b></p>
+  <div class="choix">
+    <b>A</b><span>Sur la ligne plein est.</span>
+    <b>B</b><span>Au sud de la ligne plein est.</span>
+    <b>C</b><span>Au nord de la ligne plein est.</span>
+  </div>
+  <p><b>1b. À quelle vitesse l'avion avance-t-il par rapport au sol ?</b></p>
+  <div class="choix">
+    <b>A</b><span>137,5 nœuds (119 + 18,5).</span>
+    <b>B</b><span>119 nœuds.</span>
+    <b>C</b><span>Entre 119 et 137,5 nœuds.</span>
+  </div>
+  <p>Pourquoi ? (une phrase) ______________________________________________</p>
+</section>
+
+<!-- Page 3 : question d'après (jumelle) -->
+<section class="page">
+  <h1>Question 2</h1>
+  <p class="consigne">Une barque traverse une rivière de 314 m de large. Le rameur pointe l'avant de la barque <b>vers le ponton P</b>, en biais, et ne le bouge plus. Le courant va vers le bas de la carte, à 0,52 m/s.</p>
+  <svg viewBox="0 0 600 440" role="img" aria-label="Rivière vue de dessus : barque sur la rive gauche pointée en biais vers le ponton P, trois points A, B, C sur la rive droite">
+    <defs>
+      <marker id="qb" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1f5fbf"/></marker>
+      <marker id="qv" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7b3fb5"/></marker>
+    </defs>
+    <rect x="1" y="1" width="598" height="438" fill="#fff" stroke="#8a8f98"/>
+    <line x1="150" y1="10" x2="150" y2="430" stroke="#8a8f98" stroke-width="3"/>
+    <line x1="450" y1="10" x2="450" y2="430" stroke="#8a8f98" stroke-width="3"/>
+    <text x="300" y="28" text-anchor="middle" font-size="13" fill="#555">rivière : 314 m de large</text>
+    <g stroke="#7b3fb5" stroke-width="3">
+      <line x1="390" y1="50" x2="390" y2="100" marker-end="url(#qv)"/>
+      <line x1="230" y1="330" x2="230" y2="380" marker-end="url(#qv)"/>
+    </g>
+    <text x="340" y="70" font-size="14" fill="#7b3fb5" text-anchor="end">courant 0,52 m/s</text>
+    <!-- barque pointée à 46° du courant : direction (sin 46°, cos 46°) -->
+    <line x1="160" y1="70" x2="450" y2="350" stroke="#8a8f98" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <g transform="translate(160 70) rotate(44)"><rect x="-8" y="-8" width="36" height="16" rx="3" fill="#1f5fbf"/></g>
+    <line x1="190" y1="99" x2="232" y2="139.5" stroke="#1f5fbf" stroke-width="4" marker-end="url(#qb)"/>
+    <text x="160" y="52" font-size="14" fill="#1f5fbf">barque, avant pointé vers P</text>
+    <g font-size="18" font-weight="700">
+      <circle cx="450" cy="260" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="470" y="266">A</text>
+      <circle cx="450" cy="350" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="470" y="356">B = P</text>
+      <circle cx="450" cy="415" r="7" fill="#fff" stroke="#1a1a1a" stroke-width="2"/><text x="470" y="421">C</text>
+    </g>
+  </svg>
+  <p><b>2a. Où la barque touche-t-elle l'autre rive ?</b></p>
+  <div class="choix">
+    <b>A</b><span>Avant le ponton P, plus haut sur la carte.</span>
+    <b>B</b><span>Exactement au ponton P.</span>
+    <b>C</b><span>Après le ponton P, plus bas sur la carte.</span>
+  </div>
+  <p><b>2b. À quelle vitesse la barque avance-t-elle par rapport à la rive ?</b></p>
+  <div class="choix">
+    <b>A</b><span>Sa vitesse dans l'eau + 0,52 m/s.</span>
+    <b>B</b><span>Entre sa vitesse dans l'eau et sa vitesse dans l'eau + 0,52 m/s.</span>
+    <b>C</b><span>Sa vitesse dans l'eau.</span>
+  </div>
+  <p>Pourquoi ? (une phrase) ______________________________________________</p>
+</section>
+
+<!-- Page 4 : relevé -->
+<section class="page">
+  <h1>Relevé des réponses</h1>
+  <p class="petit">Date : ____________ . Ne pas noter de nom : « personne 1, 2, 3 » suffit.</p>
+  <table>
+    <tr><th></th><th>1a</th><th>1b</th><th>Mots exacts (question 1)</th><th>2a</th><th>2b</th><th>Mots exacts (question 2)</th></tr>
+    <tr><th>Personne 1</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><th>Personne 2</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><th>Personne 3</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <p>Hypothèse confirmée (au moins 2 personnes : A en 1a et A en 1b) : oui / non</p>
+  <p>Épreuve 3 réussie (au moins 2 personnes : au moins une erreur en question 1, puis 2a = C et 2b = B) : oui / non</p>
+</section>
+
+</body>
+</html>

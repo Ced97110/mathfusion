@@ -27,5 +27,21 @@
     ]
   },
   "conversion": {"metres_par_seconde_par_noeud": 0.514444, "note": "1 nœud = 1852 m / 3600 s (définition)"},
-  "mission": {"route_voulue_deg": 90, "note": "La piste est plein est : route vraie 090°. Choix de conception du niveau, pas une mesure."}
+  "mission": {"route_voulue_deg": 90, "note": "La piste est plein est : route vraie 090°. Choix de conception du niveau, pas une mesure."},
+  "tolerance_arrivee": {
+    "largeur_totale_ft": 700,
+    "regle": "Gagné si l'avion passe à moins de 350 ft (106,68 m) de l'axe au seuil de piste. La tolérance en degrés dépend de la distance au seuil, qui reste un choix de conception.",
+    "citation": "The width of the final approach course is tailored so that the total width is usually 700 feet at the runway threshold.",
+    "source": "FAA, Aeronautical Information Manual, chapitre 1, section 1 (approches WAAS/LPV ; même largeur que le localizer d'un ILS selon AIM 1-1-9, copie faraim.org)",
+    "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html",
+    "consulte_le": "2026-11-14"
+  },
+  "exemple_faa": {
+    "route_deg": 90, "vent_vient_du_deg": 45, "vent_kt": 40, "vitesse_air_kt": 120,
+    "resultat_cap_deg": 76, "resultat_correction_deg": -14, "resultat_vitesse_sol_kt": 88,
+    "precision": "méthode graphique (rapporteur), résultats au degré et au nœud près",
+    "source": "FAA, Pilot's Handbook of Aeronautical Knowledge, FAA-H-8083-25C, chapitre 16, p. 16-14 et 16-15, figures 16-21 à 16-23",
+    "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+    "consulte_le": "2026-11-14"
+  }
 }
