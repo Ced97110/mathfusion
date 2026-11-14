@@ -1,0 +1,13 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(68)
+disc(ax, 28, 28, 21, 'sujet')
+text(ax, 28, 60, '(i) et (ii) : plus faibles', 'sujet', 'm')
+text(ax, 28, 44, 'plus de corps', 'sujet', 's')
+disc(ax, 21, 27, 9, 'autre')
+text(ax, 21, 30, 'ℝ', 'autre', 'l')
+text(ax, 21, 23, 'complétude', 'autre', 's')
+disc(ax, 38, 27, 1.2, 'fixe')
+text(ax, 38, 21, 'algébriques', 'fixe', 's')
+arrow(ax, (50, 28), (57, 28), 'varie')
+box(ax, 58, 18, 26, 20, 'resultat', label='calcul fini', size='s')
+save(fig, '69-047')

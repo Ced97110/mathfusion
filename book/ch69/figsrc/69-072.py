@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(66)
+def row(y, op, last_role, last_label):
+    box(ax, 2, y, 22, 10, 'sujet', label=r'$x^3-3x+1$')
+    text(ax, 26.5, y + 5, '=', 'encre', 'l')
+    box(ax, 29, y, 13, 10, 'varie', label=r'$x/3$')
+    box(ax, 44, y, 18, 10, 'autre', label=r'$3x^2-3$')
+    text(ax, 65, y + 5, op, 'encre', 'l')
+    box(ax, 68, y, 18, 10, last_role, label=last_label)
+row(44, '+', 'fixe', r'$-2x+1$')
+row(14, '−', 'resultat', r'$2x-1$')
+text(ax, 44, 59, 'division ordinaire : + reste', 'fixe', 'm')
+text(ax, 38, 29, 'suite de Sturm : − (opposé du reste)', 'resultat', 'm')
+arrow(ax, (77, 44), (77, 24.5), 'varie')
+save(fig, '69-072')

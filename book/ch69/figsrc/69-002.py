@@ -1,0 +1,11 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(56)
+f = numberline(ax, 12, 76, 28, 0, 4, arrow_right=False)
+arrow(ax, (f(3), 38), (f(0), 38), 'autre', lw=2.0)
+arrow(ax, (f(3), 46), (f(4), 46), 'sujet', lw=2.0)
+line(ax, [(f(3), 29.8), (f(3), 46)], 'resultat', lw=0.7, dash=True)
+disc(ax, f(3), 28, 1.8, 'resultat')
+text(ax, f(3) - 2, 46, 'au moins 3 : signes', 'sujet', 's', ha='right')
+text(ax, f(1.5), 41.5, 'au plus 3 : degré 3', 'autre', 's')
+text(ax, f(3), 14, 'exactement 3 racines', 'resultat', 'm', weight='bold')
+save(fig, '69-002')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+f = numberline(ax, 10, 70, 40, 1.9, 2.3, step=0.1, arrow_right=False, every=1)
+line(ax, [(f(2), 41), (f(2), 62)], 'resultat', lw=0.9, dash=True)
+text(ax, f(2), 65, 'cible : 2', 'resultat', 's')
+disc(ax, f(1.96), 40, 1.6, 'sujet')
+text(ax, f(1.96) - 1, 52, r'$1{,}4^2=1{,}96$', 'sujet', 's')
+disc(ax, f(2.25), 40, 1.6, 'autre')
+text(ax, f(2.25) + 1, 52, r'$1{,}5^2=2{,}25$', 'autre', 's')
+box(ax, 4, 14, 40, 12, 'limite', label=r'$\mathbb{Q}$ : aucun $x^2=2$', size='s')
+box(ax, 46, 14, 38, 12, 'resultat', label=r'$\mathbb{R}$ : $x\approx 1{,}414$', size='s')
+save(fig, '69-040')

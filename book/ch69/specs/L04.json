@@ -1,0 +1,346 @@
+[
+ {
+  "code": "69-091",
+  "a_dire": "En 1, on efface la valeur nulle f₁(1) = 0, il reste les signes −, +, + : un seul changement, donc V(1) = 1.",
+  "legende_titre": "Une valeur nulle est effacée avant de compter",
+  "lecture": [
+   "Les quatre cases bleues sont les valeurs des polynômes en 1 : −1, 0, 1 et 9/4.",
+   "La case grise en pointillés vaut 0 : elle est effacée.",
+   "Sous les trois cases restantes, tu lis les signes −, +, +.",
+   "L'accolade orange relie − et + : c'est le seul changement. L'accolade grise relie + et + : aucun changement."
+  ],
+  "a_voir": "Le zéro est retiré, puis on compte les changements entre les voisins qui restent."
+ },
+ {
+  "code": "69-092",
+  "a_dire": "Les différences de V entre points voisins valent 1, 1 et 1 : il y a une racine dans chacun des trois intervalles.",
+  "legende_titre": "Découper l'intervalle et compter par morceau",
+  "lecture": [
+   "Les ronds bleus donnent V en −2, 0, 1 et 2 : 3, 2, 1 et 0.",
+   "Chaque case verte est la différence de V entre deux points voisins : 3 − 2, 2 − 1, 1 − 0.",
+   "Chaque case verte vaut 1 : une racine dans (−2, 0), une dans (0, 1), une dans (1, 2)."
+  ],
+  "a_voir": "Chaque morceau de la droite a sa propre différence, et elle vaut 1."
+ },
+ {
+  "code": "69-093",
+  "a_dire": "Pour x² − 0,01, le calcul compte les deux racines cachées : V(−1) − V(1) = 2 − 0 = 2, sans compter sur la chance.",
+  "legende_titre": "Le calcul compte les deux racines cachées",
+  "lecture": [
+   "Chaque colonne bleue est un polynôme de la suite : x² − 0,01, 2x et 0,01.",
+   "La ligne x = −1 a les signes +, −, + : les deux flèches orange sont les deux changements, donc V(−1) = 2.",
+   "La ligne x = 1 a les signes +, +, + : aucune flèche, donc V(1) = 0.",
+   "La case verte donne la différence : 2 − 0 = 2 racines."
+  ],
+  "a_voir": "Deux valeurs de même signe peuvent cacher deux racines, et le calcul les compte."
+ },
+ {
+  "code": "69-094",
+  "a_dire": "V(x) ne peut changer qu'en une racine d'un des polynômes f₀, f₁ ou f₂ : ici en six points seulement.",
+  "legende_titre": "Où le nombre V peut-il changer ?",
+  "lecture": [
+   "Chaque ligne horizontale porte les racines d'un polynôme : f₀ en bleu (3 racines), f₁ en violet (−1 et 1), f₂ en orange (0,5).",
+   "Les pointillés descendent de chaque racine vers la droite graduée du bas.",
+   "Les six petits ronds orange du bas sont les seuls points où V peut changer."
+  ],
+  "a_voir": "Hors de ces six points, aucun polynôme ne change de signe, donc V ne bouge pas."
+ },
+ {
+  "code": "69-095",
+  "a_dire": "En une racine c d'un polynôme intermédiaire, les deux voisins ont des valeurs opposées, donc des signes opposés, et V ne bouge pas.",
+  "legende_titre": "Les deux voisins d'un zéro sont opposés",
+  "lecture": [
+   "La case grise en pointillés est f₁(1) = 0, le polynôme intermédiaire qui s'annule.",
+   "Les deux cases bleues sont ses voisins : f₀(1) = −1 et f₂(1) = 1.",
+   "La flèche orange relie les deux voisins : f₀(1) = −f₂(1).",
+   "La case verte conclut : voisins opposés, V stable."
+  ],
+  "a_voir": "Quand le milieu s'annule, ses deux voisins ont des signes opposés."
+ },
+ {
+  "code": "69-096",
+  "a_dire": "Deux voisins ne peuvent pas être nuls ensemble : la relation ferait remonter et descendre le zéro jusqu'à f_s, qui est une constante non nulle.",
+  "legende_titre": "Pourquoi deux voisins nuls sont impossibles",
+  "lecture": [
+   "Les deux cases bleues f₁ et f₂ sont les deux voisins supposés nuls en c.",
+   "Les flèches orange vont vers f₀ et vers f₃ : la relation donne aussi 0 pour eux.",
+   "La case rouge f₃(c) = 0 est la conséquence fausse.",
+   "La case verte rappelle que f₃ vaut 9/4 : c'est une contradiction."
+  ],
+  "a_voir": "Le zéro se propage jusqu'au dernier terme, qui ne peut pas être nul."
+ },
+ {
+  "code": "69-097",
+  "a_dire": "Avec le reste ordinaire, le compte des changements dépend du signe du milieu ; avec le signe renversé, il vaut toujours 1.",
+  "legende_titre": "Ce que change le signe renversé",
+  "lecture": [
+   "À gauche, en rouge, le reste ordinaire : les voisins sont égaux, le trio est −, +, − (2 changements) ou −, −, − (0 changement).",
+   "À droite, en vert, le signe renversé : les voisins sont opposés, le trio est −, +, + ou −, −, +.",
+   "Chaque trio de droite a exactement 1 changement."
+  ],
+  "a_voir": "À gauche le compte varie selon le milieu, à droite il reste égal à 1."
+ },
+ {
+  "code": "69-098",
+  "a_dire": "Près d'une racine simple, f₁ garde son signe : seul f₀ change de signe, et la paire perd un changement.",
+  "legende_titre": "Une racine simple fait perdre un changement",
+  "lecture": [
+   "La ligne bleue est f₀ : elle coupe la droite grise au point c, tiré en pointillés.",
+   "La ligne orange est f₁ : elle reste du même côté de la droite grise.",
+   "À gauche, f décroît : la paire passe de +, − à −, −. À droite, f croît : la paire passe de −, + à +, +.",
+   "Avant c il y a un changement, après c il n'y en a aucun."
+  ],
+  "a_voir": "Une seule des deux lignes traverse la droite grise, donc un changement disparaît."
+ },
+ {
+  "code": "69-099",
+  "a_dire": "Autour de r₂ ≈ 0,35, la courbe de f₀ traverse l'axe en descendant et celle de f₁ reste sous l'axe : la paire passe de +, − à −, −.",
+  "legende_titre": "Deux courbes autour de la racine r₂",
+  "lecture": [
+   "La courbe bleue est f₀ : elle descend et coupe l'axe gris au pointillé r₂ ≈ 0,35.",
+   "La courbe orange est f₁ : elle reste sous l'axe, des deux côtés.",
+   "À gauche du pointillé, les signes sont +, − : un changement. À droite, −, − : aucun."
+  ],
+  "a_voir": "Seule la courbe bleue change de signe en r₂."
+ },
+ {
+  "code": "69-100",
+  "a_dire": "Autour de r₂ ≈ 0,35, f₀ change de signe de + à − et f₁ reste −, donc la paire passe de +, − à −, −.",
+  "legende_titre": "Les signes de la paire autour de r₂",
+  "lecture": [
+   "La rangée bleue f₀ est coupée au pointillé r₂ ≈ 0,35 : + à gauche, − à droite.",
+   "La rangée orange f₁ est entière : − partout.",
+   "La case bleue du bas lit la paire à gauche (+, − : 1 changement), la case verte la paire à droite (−, − : aucun)."
+  ],
+  "a_voir": "Une seule rangée change de signe, au pointillé."
+ },
+ {
+  "code": "69-101",
+  "a_dire": "V(x) est un escalier qui descend d'une marche en chaque racine de f et reste plat en chaque racine de f₁ ou f₂.",
+  "legende_titre": "V(x) descend d'une marche par racine de f",
+  "lecture": [
+   "La ligne orange est V(x) quand x avance de −2 vers 2 : elle part de 3 et finit à 0.",
+   "Les traits bleus marquent les racines de f (environ −1,88, 0,35 et 1,53) : un rond bleu est posé sur chaque marche descendante.",
+   "Les traits gris marquent les racines de f₁ et f₂ (−1, 0,5 et 1) : un rond gris est posé sur le plat, sans marche."
+  ],
+  "a_voir": "Trois marches aux traits bleus, aucune marche aux traits gris."
+ },
+ {
+  "code": "69-102",
+  "a_dire": "V(a) − V(b) est le nombre de marches de l'escalier, donc le nombre de racines : ici 3 − 0 = 3.",
+  "legende_titre": "Compter les racines par une soustraction",
+  "lecture": [
+   "La ligne orange est V : elle part de V(−2) = 3 et arrive à V(2) = 0.",
+   "Les trois ronds bleus numérotés 1, 2 et 3 comptent les marches, c'est-à-dire les racines.",
+   "La flèche noire à gauche va de 3 à 0 : sa longueur est 3 − 0 = 3."
+  ],
+  "a_voir": "Trois marches d'une unité chacune font une baisse totale de 3."
+ },
+ {
+  "code": "69-103",
+  "a_dire": "Toutes les racines de x³ − 3x + 1 sont dans l'intervalle (−μ, μ) avec μ = 5.",
+  "legende_titre": "Un intervalle qui contient toutes les racines",
+  "lecture": [
+   "La case verte est l'intervalle (−μ, μ), de −5 à 5, tiré par les deux traits verts en pointillés.",
+   "Les trois ronds bleus sont les racines de x³ − 3x + 1.",
+   "Les trois ronds sont tous à l'intérieur de la case verte.",
+   "Le calcul en haut donne μ = 1 + 0 + 3 + 1 = 5."
+  ],
+  "a_voir": "Aucune racine n'est en dehors de l'intervalle vert."
+ },
+ {
+  "code": "69-104",
+  "a_dire": "Pour obtenir μ, on écrit les coefficients après le premier, on prend leurs valeurs absolues 0, 3 et 1, puis on les ajoute à 1 : μ = 5.",
+  "legende_titre": "Calculer μ en trois actions",
+  "lecture": [
+   "La rangée du haut écrit x³ − 3x + 1 avec tous ses coefficients : 1, 0, −3 et 1.",
+   "La rangée orange prend la valeur absolue de chaque coefficient après le premier : 0, 3 et 1. La case grise est le 1 du début de la formule.",
+   "La case verte additionne : μ = 1 + 0 + 3 + 1 = 5."
+  ],
+  "a_voir": "Trois étapes : écrire les coefficients, prendre les valeurs absolues, additionner."
+ },
+ {
+  "code": "69-105",
+  "a_dire": "Pour |x| ≥ μ, le terme xⁿ est plus grand que la somme des autres termes en valeur absolue, donc f(x) ≠ 0.",
+  "legende_titre": "Un terme plus grand que tous les autres",
+  "lecture": [
+   "La longue barre bleue est le terme x³ = 125, pour x = 5.",
+   "La petite barre grise est le terme −15 ; la fine barre violette est le terme 1. Les deux ensemble font au plus 16.",
+   "Le trait orange en pointillés marque la longueur 16 sur la même échelle que la barre bleue.",
+   "La case verte conclut : 125 > 16, donc f(5) ≠ 0."
+  ],
+  "a_voir": "Le terme 125 dépasse de loin le trait orange : il n'est pas compensé."
+ },
+ {
+  "code": "69-106",
+  "a_dire": "Avec μ = 5 : V(−5) = 3 et V(5) = 0, donc x³ − 3x + 1 a trois racines réelles en tout, toutes dans (−2, 2).",
+  "legende_titre": "Toutes les racines comptées entre −5 et 5",
+  "lecture": [
+   "La rangée du haut donne les valeurs de f₀, f₁, f₂, f₃ en −5 : −109, 72, −11 et 9/4. Les signes alternent, donc V = 3.",
+   "La rangée du bas donne les signes en 5 : tous +, donc V = 0.",
+   "La case verte conclut : 3 − 0 = 3 racines en tout."
+  ],
+  "a_voir": "Deux lignes de signes suffisent pour compter toutes les racines réelles."
+ },
+ {
+  "code": "69-107",
+  "a_dire": "Pour h = (x − 1)²(x + 2), qui a une racine double 1, la suite de Sturm est h₀ = h, h₁ = 3x² − 3, h₂ = 2x − 2, avec s = 2.",
+  "legende_titre": "La suite de h, qui a une racine double",
+  "lecture": [
+   "Sur la droite, le rond bleu est la racine simple −2.",
+   "Les deux ronds orange superposés sont la racine double 1.",
+   "Les trois cases sont les polynômes de la suite, reliés par des flèches grises.",
+   "L'accolade orange désigne le dernier terme h₂, avec s = 2."
+  ],
+  "a_voir": "La suite s'arrête à h₂ = 2x − 2, qui n'est pas une constante."
+ },
+ {
+  "code": "69-108",
+  "a_dire": "Le dernier terme dit s'il y a une racine multiple : constant non nul (9/4) il n'y en a pas, non constant (2(x − 1)) il y en a une, ici en 1.",
+  "legende_titre": "Le dernier terme dévoile une racine multiple",
+  "lecture": [
+   "À gauche, pour x³ − 3x + 1, le dernier terme est la ligne bleue horizontale 9/4 : elle ne touche jamais la droite grise.",
+   "À droite, pour x³ − 3x + 2, le dernier terme est la ligne violette 2(x − 1) : elle coupe la droite grise en x = 1.",
+   "Le rond orange marque ce zéro : x − 1 est le facteur commun, donc la racine 1 est multiple."
+  ],
+  "a_voir": "Une ligne plate sans zéro, contre une ligne qui s'annule en 1."
+ },
+ {
+  "code": "69-109",
+  "a_dire": "Sur [−3, 3], V(−3) − V(3) = 2 − 0 = 2 : Sturm compte les racines distinctes −2 et 1, la racine double 1 n'étant comptée qu'une fois.",
+  "legende_titre": "La racine double n'est comptée qu'une fois",
+  "lecture": [
+   "Sur la droite, le rond bleu est la racine simple −2 ; les deux ronds orange sont la racine double 1.",
+   "Les deux cases bleues donnent V(−3) = 2 et V(3) = 0.",
+   "La case verte compte 2 − 0 = 2 racines distinctes ; la case grise rappelle 3 racines avec multiplicité."
+  ],
+  "a_voir": "Le calcul donne 2, pas 3 : chaque racine compte une fois."
+ },
+ {
+  "code": "69-110",
+  "a_dire": "Diviser toute la suite de h par le dernier terme h₂ donne la suite de g₀, qui a le même nombre de changements de signe.",
+  "legende_titre": "Diviser la suite par h₂ garde V",
+  "lecture": [
+   "La rangée bleue donne les valeurs de la suite de h en −3 : −16, 24 et −8.",
+   "Les flèches orange divisent chaque terme par h₂(−3) = −8.",
+   "La rangée verte donne la suite obtenue : 2, −3 et 1.",
+   "Les deux rangées ont V = 2."
+  ],
+  "a_voir": "Avant et après la division, il y a 2 changements de signe."
+ },
+ {
+  "code": "69-111",
+  "a_dire": "Diviser toute une liste par un même nombre non nul ne change pas le nombre de changements de signe.",
+  "legende_titre": "Diviser une liste par un nombre non nul",
+  "lecture": [
+   "En haut, la liste bleue −16, 24, −8 a 2 changements.",
+   "À gauche, la liste divisée par 4 : −4, 6, −2, avec 2 changements.",
+   "À droite, la liste divisée par −8 : 2, −3, 1, avec 2 changements."
+  ],
+  "a_voir": "Les trois listes ont toutes V = 2."
+ },
+ {
+  "code": "69-112",
+  "a_dire": "Sur [−2, 1] le calcul donne 2 alors que (−2, 1) ne contient que −1 : la racine 1, sur la borne droite, est comptée.",
+  "legende_titre": "Une racine sur la borne droite est comptée",
+  "lecture": [
+   "Le trait vert est l'intervalle [−2, 1], avec ses deux bornes marquées.",
+   "Les deux ronds violets sont les racines −1 et 1 de x² − 1.",
+   "Les cases bleues donnent V(−2) = 2 et V(1) = 0.",
+   "La case verte conclut : 2 − 0 = 2, les deux racines sont comptées."
+  ],
+  "a_voir": "La racine 1 est sur la borne droite et elle est comptée."
+ },
+ {
+  "code": "69-113",
+  "a_dire": "Sur [−1, 2] le calcul donne 1 : la racine −1 de la borne gauche n'est pas comptée.",
+  "legende_titre": "Une racine sur la borne gauche n'est pas comptée",
+  "lecture": [
+   "Le trait vert est l'intervalle [−1, 2], avec ses deux bornes marquées.",
+   "Le cercle gris vide est la racine −1, sur la borne gauche : elle n'est pas comptée. Le rond violet est la racine 1, comptée.",
+   "Les cases bleues donnent V(−1) = 1 et V(2) = 0.",
+   "La case verte conclut : 1 − 0 = 1."
+  ],
+  "a_voir": "Deux racines dans l'intervalle fermé, mais une seule est comptée."
+ },
+ {
+  "code": "69-114",
+  "a_dire": "Une racine sur la borne droite est comptée, sur la borne gauche non : le théorème exige donc des bornes qui ne sont pas des racines.",
+  "legende_titre": "Le résultat dépend du côté de la borne",
+  "lecture": [
+   "Les deux traits en pointillés marquent les racines −1 et 1.",
+   "La première barre bleue va de −2 à 1 : la racine 1, sur la borne droite, est comptée, le résultat est 2.",
+   "La deuxième barre bleue va de −1 à 2 : la racine −1, sur la borne gauche, n'est pas comptée, le résultat est 1.",
+   "La barre verte va de −2 à 1,5 : aucune borne n'est une racine, le résultat est 2."
+  ],
+  "a_voir": "Avec une borne qui est une racine, le résultat change selon le côté."
+ },
+ {
+  "code": "69-115",
+  "a_dire": "En pratique, on calcule f(a) et f(b), et si l'un est nul on décale la borne, par exemple de −1 à −1,5.",
+  "legende_titre": "Tester les bornes, puis décaler",
+  "lecture": [
+   "Les trois cases du haut sont les actions dans l'ordre : calculer f(a) et f(b), voir si une valeur est nulle, décaler la borne.",
+   "Sur la droite, le rond bleu en −1 a f(a) = 0 ; le rond bleu en 2 a f(b) = 3.",
+   "La flèche orange décale la borne vers le cercle vert en −1,5."
+  ],
+  "a_voir": "La borne qui est une racine est remplacée par une nouvelle borne."
+ },
+ {
+  "code": "69-116",
+  "a_dire": "Pour x³ + px + q, on demande le nombre de racines pour toutes les valeurs de p et q à la fois, pas pour un seul polynôme.",
+  "legende_titre": "Compter les racines quand p et q sont des lettres",
+  "lecture": [
+   "En haut, F(x) = x³ + px + q ; chaque point gris du plan est un couple de valeurs de p et q.",
+   "Les deux points orange sont p = −3, q = 1 et p = 1, q = 0.",
+   "À gauche, la courbe pour p = −3 et q = 1 coupe l'axe en 3 points : 3 racines.",
+   "À droite, la courbe pour p = 1 et q = 0 coupe l'axe en 1 point : 1 racine."
+  ],
+  "a_voir": "La question porte sur tous les points du plan à la fois, pas sur un seul."
+ },
+ {
+  "code": "69-117",
+  "a_dire": "On fait le calcul avec les lettres une seule fois, puis on remplace p et q : le dernier terme est −9(27q² + 4p³).",
+  "legende_titre": "Calculer avec les lettres, puis remplacer",
+  "lecture": [
+   "La case bleue du haut est le dernier terme calculé une seule fois avec les lettres : −9(27q² + 4p³).",
+   "Les deux flèches orange remplacent p et q par des nombres.",
+   "La case de gauche donne 729 pour p = −3 et q = 1, celle de droite −36 pour p = 1 et q = 0."
+  ],
+  "a_voir": "Un seul calcul avec des lettres donne deux résultats de signes différents."
+ },
+ {
+  "code": "69-118",
+  "a_dire": "On ne peut pas diviser par −6p quand p vaut peut-être 0 : pour p = 0 le coefficient s'annule et la division est impossible.",
+  "legende_titre": "Diviser par une lettre qui vaut peut-être 0",
+  "lecture": [
+   "La ligne bleue est le coefficient dominant −6p selon la valeur de p sur la droite grise.",
+   "Le rond vert est p = 1 : le coefficient vaut −6 et on peut diviser.",
+   "Le rond rouge est p = 0 : le coefficient vaut 0 et on ne peut pas diviser."
+  ],
+  "a_voir": "La ligne bleue touche zéro en p = 0 : c'est là que la division est impossible."
+ },
+ {
+  "code": "69-119",
+  "a_dire": "Un recouvrement range toutes les valeurs de p en cas, et chaque valeur tombe dans au moins un cas : p ≠ 0, ou p = 0.",
+  "legende_titre": "Des cas qui couvrent toutes les valeurs",
+  "lecture": [
+   "La ligne bleue du haut est le cas 1 : toutes les valeurs de p sauf 0, avec un cercle vide en 0.",
+   "Le rond orange est le cas 2 : p = 0.",
+   "La ligne verte du bas réunit les deux cas : elle couvre toute la droite."
+  ],
+  "a_voir": "Les deux cas ensemble ne laissent aucune valeur de p de côté."
+ },
+ {
+  "code": "69-120",
+  "a_dire": "On multiplie F par une puissance du coefficient dominant de G (ici 9 = 3²) pour que la division n'ait pas de fraction : 9F = QG − R avec Q = 3x.",
+  "legende_titre": "Multiplier d'abord pour éviter les fractions",
+  "lecture": [
+   "La case bleue est F = x³ + px + q ; la case violette est G = 3x² + p, de coefficient dominant 3.",
+   "À gauche, en rouge, diviser F par G donne le quotient x/3, une fraction.",
+   "À droite, en vert, la flèche orange multiplie F par 9 : le quotient est 3x, sans fraction.",
+   "La case du bas écrit le résultat : 9F = QG − R."
+  ],
+  "a_voir": "Après la multiplication par 9, le quotient est 3x au lieu de x/3."
+ }
+]
