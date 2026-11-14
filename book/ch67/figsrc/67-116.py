@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(92)
+box(ax, 4, 74, 34, 11, 'fixe', label=r'$g=x^2+x+1$', size='s')
+text(ax, 20, 69, 'degré 2, racine $r$', 'fixe', 's')
+arrow(ax, (39, 79.5), (48, 79.5), 'varie')
+box(ax, 49, 74, 36, 11, 'sujet', label=r'$\mathbb{F}_2(r)$ : $2^2$ éléments', size='s')
+box(ax, 2, 22, 38, 12, 'limite', label=r'$\mathbb{F}_{2^3}$ : $2^3$ éléments', size='s')
+box(ax, 48, 22, 38, 12, 'resultat', label=r'$\mathbb{F}_{2^4}$ : $2^4$ éléments', size='s')
+arrow(ax, (60, 72.5), (70, 36), 'resultat'); text(ax, 70, 48, '2 divise 4', 'resultat', 's')
+arrow(ax, (54, 72.5), (22, 36), 'limite'); text(ax, 22, 48, '2 ne divise pas 3', 'limite', 's')
+text(ax, 44, 9, r'dans $\mathbb{F}_{2^4}$ : oui ; dans $\mathbb{F}_{2^3}$ : non', 'encre', 's')
+save(fig, '67-116')

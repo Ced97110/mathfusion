@@ -1,0 +1,309 @@
+[
+ {
+  "code": "67-211",
+  "a_dire": "Modulo 3, le facteur x donne une racine fixée et le facteur de degré 5, sans diviseur propre, fait tourner les cinq autres racines.",
+  "legende_titre": "Une racine fixée, cinq racines qui tournent",
+  "lecture": [
+   "Le rond gris à gauche est la racine r1, fournie par le facteur de degré 1.",
+   "Les cinq ronds bleus sont les racines du facteur de degré 5.",
+   "Les flèches orange montrent la permutation qui fait tourner ces cinq racines."
+  ],
+  "a_voir": "Un facteur de degré 1 donne un point fixe, un facteur de degré 5 donne un cycle de longueur 5."
+ },
+ {
+  "code": "67-212",
+  "a_dire": "Modulo 5, quatre facteurs de degré 1 donnent quatre points fixes et le facteur x^2+2 donne un échange de deux racines, sans dire lesquelles.",
+  "legende_titre": "Quatre points fixes et un échange",
+  "lecture": [
+   "Les quatre ronds gris sont les racines des quatre facteurs de degré 1.",
+   "Les deux ronds orange sont les racines du facteur de degré 2.",
+   "La flèche orange à double pointe montre que ces deux racines sont échangées."
+  ],
+  "a_voir": "La factorisation donne l'existence d'un échange, pas la place des deux racines échangées."
+ },
+ {
+  "code": "67-213",
+  "a_dire": "Sans l'hypothèse « transitif », le groupe S5 contient un cycle de longueur 5 et un échange mais n'a que 120 éléments, pas les 720 de S6.",
+  "legende_titre": "Retirer la transitivité : le groupe est trop petit",
+  "lecture": [
+   "Dans le cadre orange, les cinq ronds bleus sont les cinq premières racines que S5 permute.",
+   "Le rond gris est la sixième racine, qui ne bouge jamais.",
+   "La barre violette montre 720 éléments pour S6 ; la petite barre bleue montre 120 éléments pour S5."
+  ],
+  "a_voir": "La barre de S5 est six fois plus courte que celle de S6."
+ },
+ {
+  "code": "67-214",
+  "a_dire": "La transitivité amène l'échange sur une transposition qui contient r1, puis les puissances du 5-cycle donnent l'échange de r1 avec chaque autre racine, et ces échanges engendrent S6.",
+  "legende_titre": "Tous les échanges avec r1, puis S6",
+  "lecture": [
+   "Le rond gris du centre est r1, fixée par le 5-cycle.",
+   "La flèche orange à double pointe est l'échange de r1 avec une racine rk.",
+   "Les flèches grises sur le cercle sont la rotation du 5-cycle ; elle déplace rk vers chacune des autres racines.",
+   "Les traits verts sont les échanges de r1 avec les autres racines rj."
+  ],
+  "a_voir": "Le centre est relié à chacune des cinq autres racines par un échange."
+ },
+ {
+  "code": "67-215",
+  "a_dire": "Les réductions modulo 3 et modulo 5 donnent un cycle de longueur 5 et un échange, donc le groupe est S6, qui n'est pas résoluble, donc l'équation n'est pas résoluble par radicaux.",
+  "legende_titre": "De deux réductions à la non-résolubilité",
+  "lecture": [
+   "La première ligne montre modulo 3 : cinq ronds bleus reliés en cycle et un rond gris fixe.",
+   "La deuxième ligne montre modulo 5 : deux ronds bleus échangés et quatre ronds gris fixes.",
+   "Le cadre vert donne le groupe obtenu, S6, de 720 éléments.",
+   "Le texte rouge dit que ce groupe n'est pas résoluble."
+  ],
+  "a_voir": "On lit les cycles dans les réductions, on reconnaît S6, et on conclut sans calculer les racines."
+ },
+ {
+  "code": "67-216",
+  "a_dire": "Modulo 3 on obtient un 5-cycle ; modulo 7 on obtient une permutation de type (2)(3) dont la puissance trois est une transposition.",
+  "legende_titre": "Le cube de sigma ne garde que l'échange",
+  "lecture": [
+   "La première ligne : modulo 3, les cinq ronds bleus forment un cycle de longueur 5.",
+   "La deuxième ligne : modulo 7, deux ronds violets échangés et trois ronds bleus en cycle.",
+   "La troisième ligne : après trois répétitions, l'échange reste et les trois ronds gris ne bougent plus."
+  ],
+  "a_voir": "Trois répétitions effacent le cycle de longueur 3 et gardent l'échange."
+ },
+ {
+  "code": "67-217",
+  "a_dire": "Répété trois fois, un cycle de longueur 3 revient au départ, alors qu'un échange est encore un échange : le cube de sigma est une transposition.",
+  "legende_titre": "Trois pas dans un cycle et dans un échange",
+  "lecture": [
+   "La première ligne suit une racine a pendant trois pas du cycle de longueur 3 : elle revient en a (rond vert).",
+   "La deuxième ligne suit une racine d pendant trois pas de l'échange : elle arrive en e (rond orange).",
+   "Chaque flèche orange est un pas de sigma."
+  ],
+  "a_voir": "Après trois pas, le 3-cycle donne l'identité et l'échange reste un échange."
+ },
+ {
+  "code": "67-218",
+  "a_dire": "Dans le corps à trois éléments, le Frobenius ne change aucun élément, et chaque élément a donne un polynôme x moins a de degré 1.",
+  "legende_titre": "Le Frobenius de degré 1 ne fait rien",
+  "lecture": [
+   "Les cases bleues du haut sont les trois éléments 0, 1 et 2.",
+   "Chaque flèche orange est l'élévation au cube, avec son calcul.",
+   "Les cases vertes du bas sont les résultats : les mêmes éléments.",
+   "Sous chaque résultat, le polynôme x moins l'élément : trois polynômes de degré 1."
+  ],
+  "a_voir": "Chaque flèche descend tout droit : l'élément ne change pas."
+ },
+ {
+  "code": "67-219",
+  "a_dire": "En caractéristique 2, moins 1 vaut 1 : soustraire revient à ajouter, donc x^q − x s'écrit x^q + x.",
+  "legende_titre": "Moins et plus donnent la même arrivée",
+  "lecture": [
+   "Le rond bleu est 0 et le rond vert est 1.",
+   "La flèche orange du haut ajoute 1 à 0 et arrive en 1.",
+   "La flèche orange du bas retire 1 à 0 et arrive aussi en 1.",
+   "Les deux cases du bas montrent les deux écritures du même polynôme."
+  ],
+  "a_voir": "Les deux flèches arrivent au même rond, donc le signe moins peut devenir un plus."
+ },
+ {
+  "code": "67-220",
+  "a_dire": "La trace de 1 est n fois 1 ; en caractéristique p elle vaut 0 dès que p divise n, par exemple 1+1+1+1 = 4 = 0 en caractéristique 2.",
+  "legende_titre": "Quatre fois 1 en caractéristique 2",
+  "lecture": [
+   "Les quatre cases bleues sont les quatre termes 1 de la somme.",
+   "Chaque accolade orange regroupe deux termes dont la somme vaut 0.",
+   "La case verte conclut : 4 vaut 0 car 2 divise 4."
+  ],
+  "a_voir": "Les termes se regroupent deux par deux et chaque paire donne 0."
+ },
+ {
+  "code": "67-221",
+  "a_dire": "Dans F4 sur F2, la trace de 1 vaut 1+1 = 0 : un élément non nul peut avoir une trace nulle.",
+  "legende_titre": "Un élément non nul de trace nulle",
+  "lecture": [
+   "Le grand cadre bleu est F4 avec ses quatre éléments 0, 1, α et α+1.",
+   "Le cadre en tirets gris est le petit corps F2, qui contient 0 et 1.",
+   "En bas, la trace de 1 est la somme de deux cases bleues 1 ; le résultat 0 est en orange."
+  ],
+  "a_voir": "1 n'est pas 0, mais la somme 1+1 vaut 0."
+ },
+ {
+  "code": "67-222",
+  "a_dire": "En degré p, la trace de 1 est nulle, ce qui donne un élément c avec η(c) = c+1 ; dans F4 sur F2 c'est α, car α² = α+1.",
+  "legende_titre": "La trace nulle fournit l'élément c",
+  "lecture": [
+   "En haut, la case bleue (trace de 1 nulle) mène par la flèche orange à la case verte (existence de c).",
+   "En bas, le rond bleu est α et le rond vert est α+1.",
+   "La flèche orange du haut est η : x vers x² ; la flèche grise du bas est l'addition de 1.",
+   "Les deux flèches arrivent au même rond."
+  ],
+  "a_voir": "Appliquer η à α donne le même résultat qu'ajouter 1."
+ },
+ {
+  "code": "67-223",
+  "a_dire": "Pour f = x²+1 et p = 2, le polynôme réduit est (x+1)² : il a une racine double, donc l'hypothèse du théorème de Dedekind n'est pas remplie.",
+  "legende_titre": "Modulo 2, le polynôme devient un carré",
+  "lecture": [
+   "La case bleue est le carré de x+1.",
+   "La case grise est ce carré développé ; le terme orange 2x vaut 0 modulo 2.",
+   "La case verte est le polynôme réduit x²+1, égal au carré de départ.",
+   "Le cadre rouge dit que la racine double fait tomber l'hypothèse."
+  ],
+  "a_voir": "Le terme du milieu disparaît modulo 2 : x²+1 est un carré."
+ },
+ {
+  "code": "67-224",
+  "a_dire": "Avec une racine double, les deux racines i et −i ont la même image modulo 2 : l'application ψ n'est plus une bijection.",
+  "legende_titre": "Deux racines, une seule image",
+  "lecture": [
+   "Les deux ronds bleus à gauche sont les racines i et −i de x²+1.",
+   "Le rond gris à droite est l'unique racine de la réduction modulo 2.",
+   "Les deux flèches orange, notées ψ, arrivent au même rond."
+  ],
+  "a_voir": "Deux flèches pour un seul rond d'arrivée : pas de bijection."
+ },
+ {
+  "code": "67-225",
+  "a_dire": "Les entiers modulo 4 ont 4 éléments mais ne forment pas F4 : 2 y a un produit nul avec lui-même et n'a pas d'inverse, alors que dans F4 tout élément non nul en a un.",
+  "legende_titre": "Quatre éléments ne font pas un corps",
+  "lecture": [
+   "La colonne rouge à gauche est Z/4Z, avec quatre ronds pour ses éléments.",
+   "Elle donne 1+1 = 2 et 2×2 = 0, donc 2 n'a pas d'inverse.",
+   "La colonne bleue à droite est F4 : 1+1 = 0 et α(α+1) = 1.",
+   "Le texte vert dit que chaque élément non nul de F4 a un inverse."
+  ],
+  "a_voir": "Même nombre d'éléments, mais le calcul diffère : une seule des deux colonnes est un corps."
+ },
+ {
+  "code": "67-226",
+  "a_dire": "Une erreur en position 7 devient la puissance 7 de α, dont la table donne les bits 1101 ; pour retrouver la position, on cherche la ligne qui porte ces bits.",
+  "legende_titre": "La table lue dans les deux sens",
+  "lecture": [
+   "La case bleue de gauche est la position 7 de l'erreur.",
+   "La case bleue du milieu est la puissance α^7.",
+   "Les quatre cases vertes sont les bits 1, 1, 0, 1, sous les coefficients de 1, α, α² et α³.",
+   "Les flèches à double pointe montrent qu'on passe d'un élément à l'autre dans les deux sens."
+  ],
+  "a_voir": "On peut aller de la position aux bits, et revenir des bits à la position."
+ },
+ {
+  "code": "67-227",
+  "a_dire": "Sur le corps à deux éléments, une matrice 2×2 inversible se compte colonne par colonne : 3 choix pour la première, 2 pour la seconde, donc 6 matrices.",
+  "legende_titre": "Compter les matrices colonne par colonne",
+  "lecture": [
+   "Première ligne : les quatre colonnes possibles ; la colonne nulle (grise) est exclue, il reste 3 choix bleus.",
+   "Deuxième ligne : si la première colonne est 10, les deux cases grises sont sa droite (0 et 10).",
+   "Les deux cases vertes sont les 2 choix pour la seconde colonne.",
+   "Le résultat vert : 3 fois 2 donne 6 matrices."
+  ],
+  "a_voir": "Les choix de la seconde colonne sont ceux qui sortent de la droite de la première."
+ },
+ {
+  "code": "67-228",
+  "a_dire": "Dans le corps à neuf éléments, la multiplication par u s'écrit comme une matrice 2×2 dont la trace est la somme de la diagonale, sans aucun conjugué.",
+  "legende_titre": "La trace lue sur une matrice",
+  "lecture": [
+   "La matrice 2×2 est celle de la multiplication par u = a+bi dans la base (1, i).",
+   "Les deux cases orange a sont sa diagonale.",
+   "La somme de la diagonale, a+a = 2a, est la trace."
+  ],
+  "a_voir": "La trace se lit sur la diagonale de la matrice."
+ },
+ {
+  "code": "67-229",
+  "a_dire": "Un anneau fini où tout élément non nul est inversible est commutatif, même si on ne l'a pas supposé : c'est un Fq.",
+  "legende_titre": "Fini et inversible suffisent pour commuter",
+  "lecture": [
+   "Les deux cases bleues sont les hypothèses : anneau fini, tout élément non nul inversible.",
+   "La case grise en tirets est ce qu'on ne suppose pas : ab = ba.",
+   "La flèche verte, nommée Wedderburn, mène au cadre vert : ab = ba toujours, et c'est un Fq."
+  ],
+  "a_voir": "La commutativité est dans le cadre d'arrivée, pas dans les hypothèses."
+ },
+ {
+  "code": "67-230",
+  "a_dire": "Le nombre d'éléments q^n est une somme sur les diviseurs de n ; l'inverser par la fonction de Möbius donne la formule de Gauss pour N(n, q).",
+  "legende_titre": "La formule de Gauss est une inversion",
+  "lecture": [
+   "La case bleue du haut est la somme sur les diviseurs d de n, qui donne q^n.",
+   "La flèche orange est l'inversion de Möbius.",
+   "La case verte du bas est la formule de Gauss qui donne N(n, q)."
+  ],
+  "a_voir": "La case du bas se déduit de celle du haut en inversant la somme."
+ },
+ {
+  "code": "67-231",
+  "a_dire": "Pour x²+1, le discriminant vaut −4, divisible par 2 seulement : le seul premier à écarter pour le théorème de Dedekind est 2 ; le discriminant se calcule comme un résultant.",
+  "legende_titre": "Quel premier écarter ? Le discriminant répond",
+  "lecture": [
+   "En haut, la case bleue de gauche est le polynôme et la case de droite est son discriminant −4, obtenu par un résultant.",
+   "Dans la rangée du bas, la case rouge est le premier 2, qui divise −4.",
+   "Les cases vertes 3, 5, 7 sont des premiers qui ne le divisent pas : Dedekind s'applique."
+  ],
+  "a_voir": "Un seul premier est en rouge : celui qui divise le discriminant."
+ },
+ {
+  "code": "67-232",
+  "a_dire": "Un octet a 8 bits, donc il y a 256 octets possibles, autant que d'éléments de F256 : un octet est un élément de ce corps, utilisé par les codes de Reed-Solomon.",
+  "legende_titre": "Un octet est un élément de F256",
+  "lecture": [
+   "Les huit cases bleues sont les huit bits d'un octet, de b7 à b0.",
+   "La flèche orange mène à la case verte : l'octet lu comme un élément de F256.",
+   "Le texte vert donne le compte : 2^8 = 256 éléments.",
+   "La dernière ligne cite l'usage : les codes de Reed-Solomon, pour les QR codes et les disques."
+  ],
+  "a_voir": "Huit bits donnent autant de cas que d'éléments du corps."
+ },
+ {
+  "code": "67-233",
+  "a_dire": "Le chiffrement AES et Diffie-Hellman utilisent deux faits du chapitre : le corps fini et le générateur du groupe des éléments non nuls ; par exemple 2 engendre F3*.",
+  "legende_titre": "Un générateur de F3*",
+  "lecture": [
+   "Les deux cases violettes citent AES (inverse dans F256) et Diffie-Hellman (générateur).",
+   "Le rond bleu est 1 et le rond vert est 2, les deux éléments non nuls de F3.",
+   "Chaque flèche orange multiplie par 2 : on passe de 1 à 2, puis de 2 à 1."
+  ],
+  "a_voir": "En multipliant par 2 on parcourt les deux éléments non nuls."
+ },
+ {
+  "code": "67-234",
+  "a_dire": "Les logiciels de calcul formel factorisent modulo quelques premiers, lisent les longueurs de cycles, et en déduisent le groupe de Galois sans calculer les racines.",
+  "legende_titre": "Trois réductions donnent le groupe",
+  "lecture": [
+   "Chaque ligne est une réduction modulo un premier, avec ses six racines en ronds.",
+   "Modulo 2 : un cycle de longueur 6 ; modulo 3 : un point fixe et un cycle de 5 ; modulo 5 : un échange et quatre points fixes.",
+   "Le cadre vert conclut : G_f est S6."
+  ],
+  "a_voir": "Chaque ligne ne donne qu'une forme de cycles, et trois formes suffisent à conclure."
+ },
+ {
+  "code": "67-235",
+  "a_dire": "Un seul objet, le Frobenius, relie le chapitre : ses points fixes font les corps finis, ses puissances les groupes de Galois, les points fixes de ses puissances les sous-corps, et son image la réduction modulo p.",
+  "legende_titre": "Un objet, quatre usages",
+  "lecture": [
+   "Le rond orange à gauche est le Frobenius.",
+   "Chaque flèche orange part du Frobenius et porte ce qu'on en prend : ses points fixes, ses puissances, les points fixes de ses puissances, son image.",
+   "Chaque case bleue dit ce que cela donne : corps finis, groupes de Galois, sous-corps, réduction modulo p."
+  ],
+  "a_voir": "Quatre flèches partent du même rond."
+ },
+ {
+  "code": "67-236",
+  "a_dire": "Le polynôme x^4+1 est irréductible sur Q mais se factorise modulo 3 et modulo 5 en deux facteurs de degré 2 : Dedekind ne donne jamais de cycle de longueur 4.",
+  "legende_titre": "Irréductible sur Q, coupé modulo les premiers",
+  "lecture": [
+   "La case bleue du haut est un seul facteur de degré 4 sur Q : le polynôme est irréductible.",
+   "Les deux lignes orange montrent modulo 3 et modulo 5 : chacune est coupée en deux facteurs de degré 2.",
+   "Le texte noir dit que ces types 2 + 2 ne donnent aucun cycle de longueur 4 ; le texte bleu rappelle que le polynôme reste irréductible sur Q."
+  ],
+  "a_voir": "Le bloc entier du haut devient deux demi-blocs dans chaque réduction."
+ },
+ {
+  "code": "67-237",
+  "a_dire": "Le théorème de Dedekind affirme ce qui est présent dans une réduction ; ce qu'on ne voit dans aucune réduction n'est pas pour autant exclu du groupe.",
+  "legende_titre": "Non vu ne veut pas dire absent",
+  "lecture": [
+   "Le grand disque bleu est le groupe G_f.",
+   "Le disque vert est ce qu'on lit modulo p : cela appartient sûrement au groupe.",
+   "Le petit rond gris, un cycle de longueur 4, est hors du disque vert : on ne sait pas s'il est dans le groupe."
+  ],
+  "a_voir": "Le rond gris est dans la zone bleue mais hors de la zone verte : le théorème ne dit rien."
+ }
+]

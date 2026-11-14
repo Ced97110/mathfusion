@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(74)
+box(ax, 4, 8, 46, 58, 'sujet')
+text(ax, 27, 60, r'$E$ : grand corps', 'sujet', 'm')
+for i, l in enumerate([r'$u_1$', r'$u_2$', '⋯']):
+    box(ax, 8 + i * 13, 38, 11, 11, 'varie' if i < 2 else 'fixe', label=l)
+brace(ax, 8, 45, 36, 'varie', label='outil 1 : base spéciale')
+text(ax, 27, 20, 'base choisie, avec propriété', 'varie', 's')
+text(ax, 58, 58, 'outil 2', 'varie', 's')
+arrow(ax, (50, 44), (66, 44), 'varie')
+text(ax, 58, 48, 'trace', 'varie', 's')
+arrow(ax, (50, 32), (66, 32), 'varie')
+text(ax, 58, 28, 'norme', 'varie', 's')
+box(ax, 66, 24, 18, 26, 'autre', label=r'$F$')
+text(ax, 75, 54, 'petit corps', 'autre', 's')
+save(fig, '67-007')

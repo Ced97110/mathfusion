@@ -1,0 +1,15 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 44, 53, 'produit des conjugués de −1', 'encre', 'm')
+y = 30
+box(ax, 6, y - 7, 18, 14, 'fixe', label=r'$-1$', size='l')
+box(ax, 34, y - 7, 18, 14, 'fixe', label=r'$-1$', size='l')
+box(ax, 66, y - 7, 18, 14, 'resultat', label=r'$1$', size='l')
+text(ax, 29, y, r'$\times$', 'encre', 'l')
+text(ax, 59, y, '=', 'encre', 'l')
+text(ax, 15, y - 11, 'conjugué 1', 'fixe', 's')
+text(ax, 43, y - 11, 'conjugué 2', 'fixe', 's')
+text(ax, 75, y - 11, 'norme', 'resultat', 's')
+brace(ax, 6, 52, y + 8, 'sujet', label=r'$[K:\mathbb{Q}]=2$ : deux facteurs', down=False)
+text(ax, 44, 8, 'ℚ : conjugués tous égaux à −1', 'fixe', 's')
+save(fig, '67-200')

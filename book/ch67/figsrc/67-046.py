@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(58)
+text(ax, 21, 52, 'Judson, logiciels', 'autre', 's')
+text(ax, 67, 52, 'ce chapitre', 'sujet', 's')
+box(ax, 4, 34, 34, 12, 'autre', label=r'$GF(16)$')
+box(ax, 50, 34, 34, 12, 'sujet', label=r'$\mathbb{F}_{16}$')
+text(ax, 44, 40, '=', 'encre', 'l')
+box(ax, 22, 6, 44, 12, 'resultat', label='le corps à 16 éléments', size='s')
+arrow(ax, (21, 34), (32, 18.5), 'autre')
+arrow(ax, (67, 34), (56, 18.5), 'sujet')
+text(ax, 44, 27, r'$GF(p^n)=\mathbb{F}_{p^n}$', 'encre', 's')
+save(fig, '67-046')

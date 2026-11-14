@@ -1,0 +1,353 @@
+[
+ {
+  "code": "67-031",
+  "a_dire": "Le second chemin remplace la construction à la main par deux théorèmes déjà démontrés, et mène au même résultat.",
+  "legende_titre": "Deux chemins vers le même résultat",
+  "lecture": [
+   "La case grise du haut est le point de départ : un corps fini.",
+   "La case violette de gauche est le premier chemin : on construit à la main le petit corps.",
+   "Les deux cases bleues de droite sont le chemin de Judson : le théorème de Lagrange, puis le premier théorème d’isomorphisme.",
+   "La case verte du bas est le résultat commun : l’ordre est une puissance d’un nombre premier."
+  ],
+  "a_voir": "Deux flèches différentes arrivent sur la même case verte."
+ },
+ {
+  "code": "67-032",
+  "a_dire": "n𝛼 est l’écriture courte de la somme de n termes égaux à 𝛼.",
+  "legende_titre": "Écrire une somme répétée en une fois",
+  "lecture": [
+   "Les trois cases grises sont trois termes égaux à 𝛼, reliés par des signes plus.",
+   "L’accolade orange compte les termes : ici il y en a 3.",
+   "La case bleue de droite est l’écriture courte 3𝛼."
+  ],
+  "a_voir": "3𝛼 veut dire 𝛼 + 𝛼 + 𝛼 : le nombre devant 𝛼 compte les termes."
+ },
+ {
+  "code": "67-033",
+  "a_dire": "La caractéristique de Judson est le plus petit nombre de termes qui annule tous les éléments à la fois ; elle diffère de l’ordre, qui compte les éléments.",
+  "legende_titre": "Un nombre de termes qui annule tout élément",
+  "lecture": [
+   "Chaque case verte prend un des quatre éléments du corps et l’ajoute à lui-même : on obtient 0 à chaque fois.",
+   "La case bleue de droite donne le plus petit nombre de termes qui convient : p = 2.",
+   "Le texte violet rappelle que l’ordre du corps est un autre nombre : 4 éléments."
+  ],
+  "a_voir": "Les quatre éléments s’annulent avec 2 termes, alors que le corps a 4 éléments."
+ },
+ {
+  "code": "67-034",
+  "a_dire": "L’égalité 𝑝𝛼 = (𝑝 · 1)𝛼 relie les deux définitions : si 𝑝 · 1 = 0, alors 𝑝𝛼 = 0 pour tout 𝛼.",
+  "legende_titre": "Pourquoi les deux définitions coïncident",
+  "lecture": [
+   "La case bleue du haut est le départ : deux termes égaux à 𝛼.",
+   "La case orange est l’étape qui porte tout le poids : on écrit la même somme comme (1 + 1) fois 𝛼.",
+   "La case grise remplace 1 + 1 par 0.",
+   "La case verte du bas est l’arrivée : 2𝛼 vaut 0 pour tout 𝛼."
+  ],
+  "a_voir": "L’étape orange est l’égalité qui fait passer de 𝛼 + 𝛼 à 0."
+ },
+ {
+  "code": "67-035",
+  "a_dire": "Sur le corps à quatre éléments, deux termes annulent chaque élément et un seul terme n’annule pas 1 : la caractéristique de Judson est 2.",
+  "legende_titre": "Le cas des quatre éléments, élément par élément",
+  "lecture": [
+   "La ligne bleue du haut liste les quatre éléments du corps : 0, 1, 𝛼 et 𝛼 + 1.",
+   "La ligne verte du dessous donne la somme de l’élément avec lui-même : 0 pour les quatre.",
+   "La case rouge rappelle qu’un seul terme n’annule pas 1, car 1 est différent de 0."
+  ],
+  "a_voir": "Les quatre cases vertes valent toutes 0, donc p = 2."
+ },
+ {
+  "code": "67-036",
+  "a_dire": "Dans un corps fini, les éléments se rangent en paquets de p éléments sans reste, donc p divise le nombre n d’éléments.",
+  "legende_titre": "Les éléments rangés en paquets égaux",
+  "lecture": [
+   "Le cadre bleu contient 0 et 1, les multiples de 1 : un petit groupe de p = 2 éléments.",
+   "Le cadre orange contient 𝛼 et 𝛼 + 1 : le même paquet décalé de 𝛼.",
+   "L’accolade grise compte les 4 éléments : 2 paquets de 2.",
+   "Le texte vert écrit la conclusion : 2 divise 4."
+  ],
+  "a_voir": "Les deux paquets ont le même nombre d’éléments, sans reste."
+ },
+ {
+  "code": "67-037",
+  "a_dire": "La preuve identifie l’ordre additif de 1 avec la caractéristique p, puis le théorème de Lagrange donne que p divise n.",
+  "legende_titre": "De l’ordre additif de 1 à la divisibilité",
+  "lecture": [
+   "La case bleue est le départ : un corps F à n = 16 éléments.",
+   "La case orange porte la preuve : l’ordre de 1 est exactement le nombre p.",
+   "La case verte est l’arrivée : p divise n, ici 2 divise 16.",
+   "Les 16 cercles sont les éléments, rangés en 8 paquets de 2 ; le premier paquet, en bleu, contient 0 et 1."
+  ],
+  "a_voir": "Les 16 éléments se rangent en paquets de 2, sans reste."
+ },
+ {
+  "code": "67-038",
+  "a_dire": "Les deux cas vérifient que la caractéristique divise l’ordre, mais la divisibilité laisse plusieurs choix : seule la caractéristique est la bonne.",
+  "legende_titre": "Deux corps, plusieurs diviseurs possibles",
+  "lecture": [
+   "La première ligne montre 𝔽₄ avec les diviseurs de 4 : 1, 2 et 4.",
+   "La seconde ligne montre 𝔽₉ avec les diviseurs de 9 : 1, 3 et 9.",
+   "L’accolade au-dessus de chaque ligne dit que la divisibilité laisse 3 choix.",
+   "La case verte de chaque ligne est la caractéristique : 2 pour 𝔽₄, 3 pour 𝔽₉. Les cases grises sont les autres diviseurs."
+  ],
+  "a_voir": "Trois diviseurs sont possibles sur chaque ligne, mais seule la case verte est la caractéristique."
+ },
+ {
+  "code": "67-039",
+  "a_dire": "Pour un corps à 6 éléments, la caractéristique est un nombre premier qui divise 6 : il reste 2 et 3, donc ce premier argument n’exclut pas ce cas.",
+  "legende_titre": "Un argument qui réduit sans conclure",
+  "lecture": [
+   "Les quatre cases sont les diviseurs de 6 : 1, 2, 3 et 6.",
+   "Les cases grises 1 et 6 ne sont pas des nombres premiers.",
+   "Les cases orange 2 et 3 sont premières : elles restent possibles.",
+   "L’accolade orange compte deux possibilités."
+  ],
+  "a_voir": "Deux cases restent orange : l’argument ne tranche pas."
+ },
+ {
+  "code": "67-040",
+  "a_dire": "L’application 𝜑 associe à chaque entier n la somme de n termes égaux à 1 ; elle n’atteint que 0 et 1 dans le corps à quatre éléments.",
+  "legende_titre": "Envoyer chaque entier sur une somme de 1",
+  "lecture": [
+   "La colonne grise de gauche liste les entiers 0, 1, 2, 3 et 4.",
+   "Les flèches orange envoient chaque entier sur un élément du corps à quatre éléments.",
+   "Les cases vertes 0 et 1 sont atteintes ; les deux cases pointillées ne le sont pas.",
+   "Le calcul du bas donne le cas de 3 : 1 + 1 + 1 = 1."
+  ],
+  "a_voir": "Les entiers pairs arrivent sur 0, les impairs sur 1."
+ },
+ {
+  "code": "67-041",
+  "a_dire": "Si on retire l’hypothèse « corps », l’image de 𝜑 ressemble encore à ℤ/pℤ mais n’est plus un corps : dans les entiers modulo 6, 2 fois 3 vaut 0.",
+  "legende_titre": "Quand l’image n’est pas un corps",
+  "lecture": [
+   "La case grise du haut est l’ensemble ℤ des entiers ; la flèche orange est 𝜑.",
+   "Les six cases sont les éléments atteints : 0, 1, 2, 3, 4 et 5, avec p = 6.",
+   "Les cases orange 2 et 3 sont celles dont le produit vaut 0.",
+   "La case rouge dit le défaut : 2 × 3 = 0, donc ce n’est pas un corps."
+  ],
+  "a_voir": "Les six éléments sont atteints, mais 2 × 3 = 0."
+ },
+ {
+  "code": "67-042",
+  "a_dire": "Le noyau de 𝜑 est formé des multiples de p : en écrivant n = k × p + r, les paquets de p termes valent 0, et il reste 𝜑(r).",
+  "legende_titre": "Les paquets de p termes valent zéro",
+  "lecture": [
+   "La première ligne prend n = 6 : trois paquets de 1 + 1, chacun vaut 0, sans reste.",
+   "La case orange de la première ligne dit que 𝜑(6) = 0 : 6 est dans le noyau.",
+   "La seconde ligne prend n = 7 : trois paquets et un reste 1, en orange.",
+   "La case verte de la seconde ligne donne 𝜑(7) = 1."
+  ],
+  "a_voir": "Le reste décide : reste 0, on est dans le noyau ; reste 1, on a 1."
+ },
+ {
+  "code": "67-043",
+  "a_dire": "Deux entiers ont la même image si et seulement si leur différence est dans le noyau ; l’image se comporte donc comme ℤ/pℤ.",
+  "legende_titre": "Les entiers partagés selon leur image",
+  "lecture": [
+   "La case bleue regroupe les entiers pairs, la case violette les entiers impairs.",
+   "Les flèches orange 𝜑 envoient chaque groupe sur un seul élément vert : 0 pour les pairs, 1 pour les impairs.",
+   "Le texte bleu dit que ces deux groupes se comportent comme ℤ/2ℤ.",
+   "Le calcul 3 − 1 = 2 montre que 3 et 1 ont même image, car 2 est dans 2ℤ."
+  ],
+  "a_voir": "Deux groupes d’entiers, deux éléments d’image."
+ },
+ {
+  "code": "67-044",
+  "a_dire": "Sur 𝔽₄, 𝜑 envoie les pairs sur 0 et les impairs sur 1 : le noyau est 2ℤ et l’image est {0, 1}.",
+  "legende_titre": "Les valeurs de 𝜑 pour les entiers de 0 à 4",
+  "lecture": [
+   "La ligne du haut liste les entiers 0 à 4 ; les cases orange sont les entiers pairs.",
+   "La ligne verte du dessous donne 𝜑(n) : 0, 1, 0, 1, 0.",
+   "Le texte orange dit que le noyau 2ℤ est formé des cases orange.",
+   "Le texte vert dit que l’image est {0, 1}."
+  ],
+  "a_voir": "Les cases orange du haut sont exactement celles qui donnent 0."
+ },
+ {
+  "code": "67-045",
+  "a_dire": "La seconde preuve livre le corps premier d’un coup par un théorème général, avec la raison de l’isomorphie ; le résultat est le même.",
+  "legende_titre": "Deux façons d’obtenir le corps premier",
+  "lecture": [
+   "La ligne violette est la première preuve : on ajoute des 1 un à un, puis on constate que les sommes se comportent comme ℤ/pℤ.",
+   "La case bleue large est la seconde preuve : un seul théorème, le premier théorème d’isomorphisme.",
+   "La case verte du bas est le corps premier, le même dans les deux preuves."
+  ],
+  "a_voir": "Plusieurs petites étapes d’un côté, une seule case de l’autre, même arrivée."
+ },
+ {
+  "code": "67-046",
+  "a_dire": "Le corps de Galois GF(p^n) de Judson et le corps 𝔽 indice p^n de ce chapitre sont le même objet sous deux noms.",
+  "legende_titre": "Un corps, deux noms",
+  "lecture": [
+   "La case violette porte le nom GF(16), celui de Judson et des logiciels.",
+   "La case bleue porte le nom 𝔽₁₆, celui de ce chapitre.",
+   "Les deux flèches arrivent sur la même case verte : le corps à 16 éléments."
+  ],
+  "a_voir": "Les deux flèches finissent sur une seule case."
+ },
+ {
+  "code": "67-047",
+  "a_dire": "La lettre p désigne d’un seul mot trois nombres qui sont égaux : le nombre de termes de somme nulle, le nombre d’éléments du petit corps et le nombre de choix par coefficient.",
+  "legende_titre": "Une lettre pour trois nombres égaux",
+  "lecture": [
+   "Les trois cases grises sont les trois nombres décrits en mots ; chacun vaut 2 dans le corps à quatre éléments.",
+   "Les flèches bleues les réunissent dans la case bleue p = 2.",
+   "Le texte du bas donne le nombre d’éléments du corps, p^n, et rappelle que p vaut 3 pour neuf éléments."
+  ],
+  "a_voir": "Trois phrases, une seule lettre."
+ },
+ {
+  "code": "67-048",
+  "a_dire": "La lettre q désigne une puissance p^m d’un nombre premier, sans préciser p ni m ; c’est le nombre d’éléments d’un corps.",
+  "legende_titre": "Lire q comme une puissance d’un premier",
+  "lecture": [
+   "Les cases bleues de gauche sont des valeurs de q : 4, 8, 9 et 256.",
+   "Les cases violettes de droite écrivent chaque valeur sous la forme p^m : 2², 2³, 3² et 2⁸.",
+   "Le signe égal relie chaque ligne : q est le nombre d’éléments, p^m sa forme."
+  ],
+  "a_voir": "Chaque nombre de gauche est une puissance d’un premier, écrite à droite."
+ },
+ {
+  "code": "67-049",
+  "a_dire": "Le signe 𝔽 indice q écrit en un symbole « le corps à q éléments » ; l’indice donne le nombre d’éléments.",
+  "legende_titre": "Une écriture au lieu d’une phrase",
+  "lecture": [
+   "Les cases grises de gauche sont la phrase répétée : corps à 16, 256 et 9 éléments.",
+   "Les flèches orange la remplacent par l’écriture des cases bleues.",
+   "Dans chaque case bleue, l’indice est le nombre d’éléments.",
+   "Le texte du bas donne la forme générale : 𝔽 indice q a q éléments."
+  ],
+  "a_voir": "Le nombre écrit dans la phrase se retrouve en indice."
+ },
+ {
+  "code": "67-050",
+  "a_dire": "Le signe 𝔽 étoile q désigne le corps privé de 0 : il reste q − 1 éléments, et le produit de deux d’entre eux reste dans l’ensemble.",
+  "legende_titre": "Le corps sans son zéro",
+  "lecture": [
+   "Le cadre gris de gauche est 𝔽₄ avec ses quatre éléments ; 0 est en cercle vide.",
+   "La flèche orange « sans 0 » mène au cadre bleu : il reste 1, 𝛼 et 𝛼 + 1.",
+   "L’accolade compte les éléments restants : q − 1 = 3.",
+   "La case verte donne un produit : 𝛼 × (𝛼 + 1) = 1, qui reste dans l’ensemble."
+  ],
+  "a_voir": "Quatre éléments à gauche, trois à droite : 0 a été retiré."
+ },
+ {
+  "code": "67-051",
+  "a_dire": "Le signe [E : F] donne le nombre d’éléments d’une base de E sur F, quand F est contenu dans E.",
+  "legende_titre": "Compter la base d’un corps sur un corps contenu",
+  "lecture": [
+   "Le grand cadre bleu est E = 𝔽₁₆ ; le cadre orange à l’intérieur est F = 𝔽₄.",
+   "Le texte bleu écrit [E : F] = 2 : une base de 2 éléments.",
+   "La case violette est 𝔽₂, contenu dans 𝔽₄ ; le texte orange écrit [𝔽₄ : 𝔽₂] = 2.",
+   "Chaque flèche relie un degré au corps qui est vu sur le corps contenu."
+  ],
+  "a_voir": "Les corps sont emboîtés : chaque étage a un degré 2."
+ },
+ {
+  "code": "67-052",
+  "a_dire": "Le symbole 𝜑 désigne ici l’application qui élève chaque élément à la puissance p ; pour le corps à quatre éléments, p = 2 et on élève au carré.",
+  "legende_titre": "Élever chaque élément à la puissance p",
+  "lecture": [
+   "La colonne de gauche liste les éléments 𝑥 : 0, 1, 𝛼 et 𝛼 + 1.",
+   "La colonne de droite donne leur carré, puisque p = 2.",
+   "Les flèches grises montrent que 0 et 1 restent eux-mêmes.",
+   "Les flèches orange montrent que 𝛼 devient 𝛼 + 1, et 𝛼 + 1 devient 𝛼."
+  ],
+  "a_voir": "Deux éléments ne bougent pas, deux échangent leur place."
+ },
+ {
+  "code": "67-053",
+  "a_dire": "Le signe 𝜂 désigne l’application qui élève chaque élément à la puissance q, où q est le nombre d’éléments du petit corps ; elle laisse fixes les éléments du petit corps.",
+  "legende_titre": "Une lettre pour élever à la puissance q",
+  "lecture": [
+   "Le grand cadre bleu est 𝔽₁₆ ; la case grise à l’intérieur est 𝔽₄, avec q = 4.",
+   "Les éléments de la case grise ne bougent pas sous 𝜂.",
+   "La flèche orange 𝜂 envoie un élément 𝑥 de la case bleue sur 𝑥^q, dans la case orange.",
+   "Le texte orange du bas écrit la règle : 𝑥 a pour image 𝑥^q."
+  ],
+  "a_voir": "La même lettre 𝜂 remplace la phrase « élever à la puissance q »."
+ },
+ {
+  "code": "67-054",
+  "a_dire": "m ∣ n veut dire que n se partage en groupes de m éléments sans reste ; c’est une affirmation, vraie ou fausse.",
+  "legende_titre": "Partager n en groupes de m sans reste",
+  "lecture": [
+   "La première ligne partage 12 cases en 3 groupes de 4 : 4 divise 12.",
+   "La deuxième ligne partage 12 cases en 2 groupes de 6 : 6 divise 12.",
+   "La troisième ligne prend 6 cases : un groupe de 4 et un reste de 2, en rouge.",
+   "Le signe du bout de ligne est vert quand c’est vrai, rouge quand c’est faux."
+  ],
+  "a_voir": "Quand il reste des cases rouges, m ne divise pas n."
+ },
+ {
+  "code": "67-055",
+  "a_dire": "𝑁(𝑛, 𝑞) est le nombre de polynômes unitaires irréductibles de degré 𝑛 sur le corps à 𝑞 éléments ; 𝑁(2, 2) vaut 1.",
+  "legende_titre": "Compter les polynômes qui ne se factorisent pas",
+  "lecture": [
+   "Les quatre cases sont les polynômes de degré 2 dont le coefficient dominant vaut 1, sur le corps à 2 éléments.",
+   "Les trois cases grises se factorisent.",
+   "La case bleue 𝑥² + 𝑥 + 1 est irréductible.",
+   "La flèche bleue mène au compte : 𝑁(2, 2) = 1."
+  ],
+  "a_voir": "Une seule case sur quatre n’est pas grise."
+ },
+ {
+  "code": "67-056",
+  "a_dire": "La fonction 𝜇 associe à un entier k le nombre 1, −1 ou 0 selon la forme de k : 1 pour deux premiers différents, −1 pour un seul premier, 0 si le carré d’un nombre plus grand que 1 divise k.",
+  "legende_titre": "Trois nombres, trois valeurs de 𝜇",
+  "lecture": [
+   "Chaque ligne part d’un nombre gris : 6, 7 ou 12.",
+   "La case du milieu dit sa forme : 2 × 3, un seul premier, ou divisible par 4 = 2².",
+   "La case bleue de droite donne la valeur : 𝜇(6) = 1, 𝜇(7) = −1, 𝜇(12) = 0."
+  ],
+  "a_voir": "La forme du nombre décide de la valeur 1, −1 ou 0."
+ },
+ {
+  "code": "67-057",
+  "a_dire": "Le signe 𝑇 indice E/F désigne la somme des conjugués de u ; elle est dans le petit corps F.",
+  "legende_titre": "Additionner les conjugués d’un élément",
+  "lecture": [
+   "La case bleue du haut est l’élément 𝑢 = 1 + 𝑖 du corps à neuf éléments.",
+   "Les deux cases orange sont ses conjugués : 1 + 𝑖 et 1 − 𝑖.",
+   "La case verte est leur somme : 2, un élément du corps à trois éléments.",
+   "Le texte du bas écrit la trace : 𝑇(𝑢) = 2."
+  ],
+  "a_voir": "La somme des deux cases orange tombe dans le petit corps."
+ },
+ {
+  "code": "67-058",
+  "a_dire": "Le signe 𝑁 indice E/F désigne le produit des conjugués de u ; il est dans le petit corps F, et il ne faut pas le confondre avec 𝑁(𝑛, 𝑞).",
+  "legende_titre": "Multiplier les conjugués d’un élément",
+  "lecture": [
+   "La case bleue du haut est 𝑢 = 1 + 𝑖 dans le corps à neuf éléments.",
+   "Les deux cases orange sont ses conjugués, reliés par le signe fois.",
+   "La ligne du bas calcule le produit pas à pas : 1 − 𝑖², puis 1 − (−1), puis 1 + 1, puis 2 dans la case verte.",
+   "Le texte orange rappelle que 𝑖² = 2 = −1 dans le corps à trois éléments."
+  ],
+  "a_voir": "Le produit des conjugués vaut 2, un élément du petit corps."
+ },
+ {
+  "code": "67-059",
+  "a_dire": "Le signe 𝑓 indice p désigne le polynôme 𝑓 dont chaque coefficient est remplacé par son reste dans la division par p.",
+  "legende_titre": "Réduire chaque coefficient d’un polynôme",
+  "lecture": [
+   "Chaque colonne montre un terme de 𝑓, une flèche vers le bas, puis son reste modulo 2.",
+   "Les colonnes bleues ont un reste 1 ; les colonnes grises ont un reste 0 (22 et 12 sont pairs).",
+   "La case verte écrit le polynôme réduit : 𝑓₂ = 𝑥⁶ + 𝑥⁴ + 𝑥² + 𝑥 + 1."
+  ],
+  "a_voir": "Les colonnes bleues sont exactement les termes qui restent dans 𝑓₂."
+ },
+ {
+  "code": "67-060",
+  "a_dire": "Le signe n𝛼 est une abréviation de la somme de n termes égaux à 𝛼 ; ce n’est pas un produit, et n est un entier.",
+  "legende_titre": "Lire n𝛼 comme une somme",
+  "lecture": [
+   "Le signe bleu du haut est n𝛼 ; la case orange dit que n est un nombre de termes.",
+   "La case grise dit que 𝛼 est un élément du corps.",
+   "La ligne du bas calcule 3𝛼 dans le corps à quatre éléments : 𝛼 + 𝛼 + 𝛼, puis 0 + 𝛼, puis 𝛼.",
+   "Le texte gris rappelle que 𝛼 + 𝛼 vaut 0 dans ce corps."
+  ],
+  "a_voir": "3𝛼 compte trois additions de 𝛼, et le résultat est 𝛼."
+ }
+]

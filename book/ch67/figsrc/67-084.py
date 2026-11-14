@@ -1,0 +1,16 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(90)
+box(ax, 44, 76, 42, 12, 'varie', label="un élément d’ordre $m$ existe", size='s', lw=1.8)
+arrow(ax, (65, 75), (65, 63), 'varie')
+text(ax, 62, 69, 'Lagrange : $m$ divise $n$', 'varie', 's', ha='right')
+text(ax, 22, 69, 'pas 3', 'fixe', 's')
+box(ax, 46, 50, 40, 12, 'sujet', label=r'$m \leq n$', size='l')
+box(ax, 2, 50, 40, 12, 'fixe', label=r'$n \leq m$', size='l')
+arrow(ax, (22, 49), (36, 38), 'fixe')
+arrow(ax, (66, 49), (52, 38), 'sujet')
+box(ax, 22, 27, 44, 11, 'resultat', label=r'$m = n$', size='l')
+arrow(ax, (44, 26), (44, 21), 'resultat')
+for i in range(4):
+    disc(ax, 30 + i * 9.3, 15, 3.0, 'resultat')
+text(ax, 44, 5, 'ses 4 puissances = tout le groupe', 'resultat', 's')
+save(fig, '67-084')

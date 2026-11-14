@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(72)
+text(ax, 44, 66, r'$f=x^2+1$ et $p=2$', 'encre', 'm')
+box(ax, 2, 44, 24, 10, 'sujet', label=r'$(x+1)^2$')
+text(ax, 29, 49, '=', 'encre', 'm')
+box(ax, 32, 44, 28, 10, 'fixe', label=r'$x^2+2x+1$')
+text(ax, 63, 49, '=', 'encre', 'm')
+box(ax, 66, 44, 20, 10, 'resultat', label=r'$x^2+1$')
+arrow(ax, (46, 43), (46, 35), 'varie')
+text(ax, 46, 30, r'$2x=0$ modulo 2', 'varie', 's')
+box(ax, 8, 6, 72, 11, 'limite', label='racine double : hypothèse fausse', size='s')
+save(fig, '67-223')

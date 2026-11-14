@@ -1,0 +1,352 @@
+[
+ {
+  "code": "67-121",
+  "a_dire": "Le terme d = n domine : parmi les polynômes unitaires de degré n, environ un sur n est irréductible, donc N(n, q) est proche de q^n/n ; pour n = 6 et q = 2, 9 contre 10,7 environ.",
+  "legende_titre": "Une part des polynômes, comparée à une estimation",
+  "lecture": [
+   "La barre bleue mesure le nombre exact d'irréductibles de degré 6 sur le corps à deux éléments : 9.",
+   "La barre violette mesure q^n/n, soit 64 divisé par 6, environ 10,7.",
+   "Le trait pointillé et l'accolade montrent le petit écart entre 9 et 10,7.",
+   "Le texte vert du bas dit qu'environ 1 polynôme sur n est irréductible."
+  ],
+  "a_voir": "Le nombre exact, 9, est proche de l'estimation q^n/n, 10,7."
+ },
+ {
+  "code": "67-122",
+  "a_dire": "Il existe un corps à q^n éléments, son élément z a un polynôme minimal irréductible de degré n, donc N(n, q) est au moins 1 pour tout n.",
+  "legende_titre": "Du corps au polynôme irréductible",
+  "lecture": [
+   "La boîte grise du haut est le corps à 8 éléments, construit sur le corps à 2 éléments (q = 2, n = 3).",
+   "Les 7 disques bleus sont les puissances de alpha : ce sont les 7 éléments non nuls.",
+   "La flèche orange mène à la boîte verte : alpha est racine de x³ + x + 1, polynôme irréductible de degré 3.",
+   "La boîte bleue du bas en tire la conclusion N(3, 2) ≥ 1."
+  ],
+  "a_voir": "L'existence du corps force l'existence d'un polynôme irréductible de ce degré."
+ },
+ {
+  "code": "67-123",
+  "a_dire": "Un élément primitif z engendre l'extension à lui seul (E = F(z)), et ses puissances 1, z, …, z^(n−1) forment une base.",
+  "legende_titre": "Un seul générateur pour tout le corps",
+  "lecture": [
+   "Les boîtes grises sont le petit corps F (les rationnels) et le corps intermédiaire engendré par racine de 2 : ajouter racine de 2 puis racine de 3 mène à E.",
+   "Le chemin bleu qui va de F à E en un seul pas ajoute z, avec z égal à racine de 2 plus racine de 3.",
+   "Les quatre boîtes vertes sont les puissances 1, z, z², z³ : une base de E sur F, avec n = 4."
+  ],
+  "a_voir": "Un seul élément z suffit à passer de F à E, alors que racine de 2 seule ne suffit pas."
+ },
+ {
+  "code": "67-124",
+  "a_dire": "Une extension a un élément primitif si et seulement si elle n'a qu'un nombre fini de corps intermédiaires ; chaque corps intermédiaire correspond à un diviseur unitaire.",
+  "legende_titre": "Deux conditions qui vont ensemble",
+  "lecture": [
+   "La boîte bleue du haut dit que l'extension a un élément primitif z, avec E = F(z). La boîte violette dit qu'elle a un nombre fini de corps intermédiaires. La double flèche orange les relie.",
+   "Dans le cas z = racine de 2 sur les rationnels, le cadre violet à gauche contient les deux corps intermédiaires.",
+   "Le cadre bleu à droite contient les deux diviseurs unitaires du polynôme.",
+   "La double flèche entre les deux cadres dit qu'ils se correspondent un pour un."
+  ],
+  "a_voir": "Autant de corps intermédiaires que de diviseurs unitaires : un nombre fini des deux côtés."
+ },
+ {
+  "code": "67-125",
+  "a_dire": "Quand F est infini, il y a une infinité de a mais un nombre fini de corps F(u + av) ; deux valeurs a ≠ b donnent le même corps K, qui contient alors v, puis u.",
+  "legende_titre": "Trop de valeurs pour trop peu de corps",
+  "lecture": [
+   "La rangée de disques est la suite des valeurs de a ; les trois points à droite disent qu'elle continue sans fin.",
+   "Les 5 boîtes bleues sont les 5 corps possibles ; chaque flèche envoie une valeur de a vers son corps.",
+   "Les disques orange a et b envoient leurs flèches vers la même boîte orange K : deux valeurs, un seul corps.",
+   "La chaîne du bas va de (a − b)v dans K jusqu'à v, puis u, donc au résultat vert."
+  ],
+  "a_voir": "Il y a plus de valeurs de a que de corps : deux valeurs tombent dans le même corps."
+ },
+ {
+  "code": "67-126",
+  "a_dire": "Sans l'hypothèse séparable, le carré de tout élément tombe dans le petit corps, donc aucun élément n'a le degré 4 de l'extension : pas d'élément primitif.",
+  "legende_titre": "Le cas où l'hypothèse manque",
+  "lecture": [
+   "La grande boîte bleue est le grand corps E ; les quatre boîtes violettes sont sa base 1, X, Y, XY sur le sous-corps K.",
+   "La flèche orange envoie chaque élément z vers z², qui tombe dans la boîte grise K, formée des carrés.",
+   "La boîte rouge du bas dit que le degré de z est au plus 2, jamais 4 : aucun z ne peut engendrer E."
+  ],
+  "a_voir": "Chaque élément est de degré au plus 2, alors que l'extension est de degré 4."
+ },
+ {
+  "code": "67-127",
+  "a_dire": "Avec u = racine de 2 plus racine de 3, u³ − 9u = 2 racine de 2 ; on en tire racine de 2, puis racine de 3, donc Q(u) = Q(racine de 2, racine de 3).",
+  "legende_titre": "Retrouver deux racines à partir d'une seule",
+  "lecture": [
+   "Chaque ligne est un nombre écrit en parts : la part bleue compte les racine de 2, la part violette compte les racine de 3.",
+   "La première ligne est u³ (11 et 9) ; la deuxième est 9u (9 et 9), qu'on retire.",
+   "Sous le trait, la part violette a disparu : il reste 2 racine de 2.",
+   "Les deux boîtes vertes en déduisent racine de 2, puis racine de 3."
+  ],
+  "a_voir": "La soustraction fait disparaître la part de racine de 3 et laisse 2 racine de 2."
+ },
+ {
+  "code": "67-128",
+  "a_dire": "Une base normale applique à un seul élément z toutes les transformations du groupe de Galois ; la base des puissances, elle, multiplie z par lui-même.",
+  "legende_titre": "Deux façons de partir d'un seul élément",
+  "lecture": [
+   "À gauche, les boîtes violettes 1, alpha, alpha² sont la base des puissances : on multiplie par alpha à chaque flèche.",
+   "À droite, les trois boîtes orange alpha + 1, alpha² + 1, alpha² + alpha + 1 sont la base normale.",
+   "Les flèches orange en cercle appliquent la transformation x ↦ x² : chaque élément donne le suivant, ce sont des conjugués."
+  ],
+  "a_voir": "La base normale est faite d'un élément et de ses conjugués, pas de ses puissances."
+ },
+ {
+  "code": "67-129",
+  "a_dire": "Être distincts ne suffit pas pour qu'une famille de conjugués soit une base : il faut qu'ils soient linéairement indépendants.",
+  "legende_titre": "Trois conjugués distincts mais liés",
+  "lecture": [
+   "Les trois boîtes bleues sont les trois conjugués de alpha : alpha, alpha², alpha² + alpha.",
+   "L'accolade verte du dessus dit qu'ils sont distincts.",
+   "La boîte rouge montre que leur somme vaut 0 : ils sont liés.",
+   "La boîte rouge du bas en conclut qu'ils ne forment pas une base."
+  ],
+  "a_voir": "Trois éléments distincts peuvent pourtant avoir une somme nulle et ne pas former une base."
+ },
+ {
+  "code": "67-130",
+  "a_dire": "Toute extension galoisienne finie possède une base normale ; sans l'hypothèse galoisienne, le cas des rationnels avec racine cubique de 2 n'a qu'un conjugué au lieu de trois.",
+  "legende_titre": "Ce qui manque quand on retire une hypothèse",
+  "lecture": [
+   "La boîte bleue du haut est le théorème : galoisienne entraîne base normale.",
+   "Le texte orange retire l'hypothèse et prend les rationnels avec racine cubique de 2, de degré 3.",
+   "Il faut 3 conjugués : la boîte bleue z est le seul, les deux boîtes rouges en pointillé manquent.",
+   "La boîte rouge du bas rappelle que le groupe n'a que l'identité."
+  ],
+  "a_voir": "Il y a une place remplie sur trois : l'hypothèse galoisienne est nécessaire."
+ },
+ {
+  "code": "67-131",
+  "a_dire": "Des automorphismes distincts sont linéairement indépendants : comme ils diffèrent en un élément, on peut tester la relation et tous les coefficients sont nuls.",
+  "legende_titre": "Un désaccord permet de tester",
+  "lecture": [
+   "À gauche, le plan des nombres complexes : en 1 (disque gris) l'identité et la conjugaison donnent la même image.",
+   "En i (disque bleu), la conjugaison donne −i (disque orange) : les deux transformations ne sont pas d'accord.",
+   "À droite, la boîte grise est le test avec x = 1 et la boîte orange le test avec x = i.",
+   "Les flèches vertes mènent à la boîte verte : a₁ = a₂ = 0."
+  ],
+  "a_voir": "Le point i sépare les deux transformations et force les deux coefficients à être nuls."
+ },
+ {
+  "code": "67-132",
+  "a_dire": "La preuve part d'une relation à deux termes la plus courte, remplace x par yx, soustrait, et obtient une relation plus courte non nulle : contradiction.",
+  "legende_titre": "Raccourcir une relation par soustraction",
+  "lecture": [
+   "La boîte grise du haut est la relation de départ : deux termes, la plus courte possible.",
+   "Les étapes 1 et 2 donnent deux lignes dont le premier terme (boîte orange) est le même.",
+   "À l'étape 3, on soustrait : le premier terme disparaît (0) et il reste la boîte verte, un seul terme.",
+   "Le texte orange donne l'étape décisive, le choix de y. La boîte rouge conclut que cette relation plus courte contredit « la plus courte »."
+  ],
+  "a_voir": "Après la soustraction, il reste un seul terme non nul : la relation est plus courte que le départ."
+ },
+ {
+  "code": "67-133",
+  "a_dire": "Les éléments u₁, …, uₙ forment une base si et seulement si le déterminant des η_j(u_i) est non nul ; sans l'hypothèse galoisienne, la matrice n'est pas carrée.",
+  "legende_titre": "Un test par déterminant, et où il s'arrête",
+  "lecture": [
+   "À gauche, la grille bleue est la matrice carrée n × n des η_j(u_i) d'une extension galoisienne ; le texte vert donne le test.",
+   "À droite, la grille rouge en pointillé est celle des rationnels avec racine cubique de 2 : 3 lignes et une seule colonne.",
+   "Le texte rouge dit qu'elle n'est pas carrée, donc sans déterminant."
+  ],
+  "a_voir": "Le test demande autant de transformations que d'éléments : une matrice carrée."
+ },
+ {
+  "code": "67-134",
+  "a_dire": "Si G est cyclique, le polynôme minimal de η est x^n − 1 grâce à Dedekind, ce qui donne un élément z dont les images forment une base.",
+  "legende_titre": "De η à une base normale",
+  "lecture": [
+   "La boîte bleue « départ » dit que η est linéaire et que η³ = 1, avec x ↦ x² sur le corps à 8 éléments.",
+   "La boîte orange « pas décisif » dit que Dedekind interdit une relation plus courte, donc le polynôme minimal est x³ − 1.",
+   "La boîte verte « arrivée » donne z = alpha + 1 dont les images forment une base.",
+   "Les trois petites boîtes vertes écrivent cette base."
+  ],
+  "a_voir": "L'étape orange, le polynôme minimal x³ − 1, relie le départ à l'arrivée."
+ },
+ {
+  "code": "67-135",
+  "a_dire": "La preuve de la base normale sépare deux cas : G cyclique, qui couvre les corps finis, et F infini, traité par un argument d'Artin.",
+  "legende_titre": "Deux cas pour une même preuve",
+  "lecture": [
+   "La boîte grise du haut est l'extension galoisienne ; deux flèches mènent aux deux cas.",
+   "À gauche, la boîte bleue est le cas cyclique ; le cycle de 3 disques est le groupe du corps à 8 éléments sur le corps à 2 éléments.",
+   "À droite, la boîte violette est le cas où F est infini ; les 4 disques sans flèche sont le groupe des rationnels avec racine de 2 et racine de 3, qui n'est pas cyclique."
+  ],
+  "a_voir": "Chaque cas a son exemple : un groupe cyclique d'un côté, un corps infini de l'autre."
+ },
+ {
+  "code": "67-136",
+  "a_dire": "La trace de u est la somme de ses conjugués ; elle tombe dans le petit corps, alors que u est dans le grand, et elle se distingue de la norme, qui est le produit.",
+  "legende_titre": "Additionner les conjugués",
+  "lecture": [
+   "Le grand cadre est le corps à 9 éléments ; les deux boîtes orange sont les conjugués 2 + i et 2 − i.",
+   "Le cadre en pointillé du bas est le petit corps à 3 éléments.",
+   "La flèche bleue mène à la trace : la somme 4 vaut 1 modulo 3.",
+   "La flèche violette mène à la norme : le produit vaut 2."
+  ],
+  "a_voir": "La somme et le produit des deux conjugués tombent tous deux dans le petit corps."
+ },
+ {
+  "code": "67-137",
+  "a_dire": "La norme est le produit des conjugués, l'équivalent multiplicatif de la trace ; elle va du grand corps au petit et respecte les produits, comme le carré de la distance dans les nombres complexes.",
+  "legende_titre": "Un produit qui garde la multiplication",
+  "lecture": [
+   "La ligne du haut (boîtes grises, flèche violette) est le cas connu : z ↦ z fois son conjugué, le carré de la distance à 0.",
+   "La ligne du bas (boîtes bleues, flèche bleue) est la même idée dans une extension : le produit des conjugués.",
+   "Sous chaque flèche, la formule dit que le produit est respecté.",
+   "La boîte du bas résume : norme égale produit des conjugués."
+  ],
+  "a_voir": "Les deux lignes ont la même forme : un produit de conjugués qui respecte les produits."
+ },
+ {
+  "code": "67-138",
+  "a_dire": "Appliquer η échange les conjugués dans un autre ordre ; la somme et le produit ne dépendent pas de l'ordre, donc ils sont fixés par G et se trouvent dans le petit corps.",
+  "legende_titre": "Échanger sans rien changer",
+  "lecture": [
+   "La rangée du haut est « avant » : 2 + i (bleu) et 2 − i (violet).",
+   "Les flèches orange croisées sont l'action de η : elles échangent les deux éléments.",
+   "La rangée du bas est « après » : les mêmes éléments, dans l'autre ordre.",
+   "Les deux boîtes vertes disent que la somme et le produit ne changent pas."
+  ],
+  "a_voir": "Les mêmes éléments dans un autre ordre donnent la même somme et le même produit."
+ },
+ {
+  "code": "67-139",
+  "a_dire": "La trace est une forme linéaire : T(u + v) = T(u) + T(v) et T(au) = a T(u) pour a dans le petit corps.",
+  "legende_titre": "La trace respecte la somme",
+  "lecture": [
+   "Les boîtes grises de gauche sont u = 2 + i, v = 1 et leur somme 3 + i ; les boîtes bleues de droite sont leurs traces 1, 2 et 0.",
+   "Le crochet orange de gauche additionne u et v pour obtenir u + v.",
+   "Le crochet orange de droite additionne les traces : 1 + 2 = 0, la même valeur que T(u + v).",
+   "Le texte vert donne la première propriété, le texte bleu la seconde, avec un coefficient a du petit corps."
+  ],
+  "a_voir": "Additionner avant ou après avoir pris la trace donne le même résultat, 0."
+ },
+ {
+  "code": "67-140",
+  "a_dire": "La norme est multiplicative : N(uv) = N(u) N(v), car chaque transformation respecte le produit.",
+  "legende_titre": "La norme respecte le produit",
+  "lecture": [
+   "Les boîtes grises de gauche sont u = 2 + i, v = i et leur produit 2 + 2i ; les boîtes violettes de droite sont leurs normes 2, 1 et 2.",
+   "Le crochet orange de gauche multiplie u et v.",
+   "Le crochet orange de droite multiplie les normes : 2 fois 1 vaut 2, comme N(uv).",
+   "Le texte du bas donne la formule."
+  ],
+  "a_voir": "Multiplier avant ou après avoir pris la norme donne le même résultat, 2."
+ },
+ {
+  "code": "67-141",
+  "a_dire": "La formule N(au) = a^n N(u) vaut pour a dans le petit corps ; pour a = i, hors du petit corps, elle donne 1 d'un côté et 2 de l'autre.",
+  "legende_titre": "Une formule qui demande a dans F",
+  "lecture": [
+   "La boîte orange du haut retire l'hypothèse : a = i n'est pas dans F, et n = 2.",
+   "La boîte bleue calcule N(au) avec u = 1 : N(i fois 1) = N(i) = 1.",
+   "La boîte violette calcule a^n N(u) : i² fois N(1) = 2.",
+   "Le signe rouge ≠ et la boîte rouge disent que la formule est fausse pour ce a."
+  ],
+  "a_voir": "Les deux calculs donnent 1 et 2 : la formule échoue quand a n'est pas dans le petit corps."
+ },
+ {
+  "code": "67-142",
+  "a_dire": "Sur les éléments non nuls, la norme envoie E* dans F* et respecte le produit : c'est un homomorphisme de groupes.",
+  "legende_titre": "La norme comme application entre deux groupes",
+  "lecture": [
+   "Le cadre de gauche est E*, les éléments non nuls de E ; le cadre de droite est F*, avec les éléments 2 et 1.",
+   "Les deux boîtes bleues 1 + i et 2 + i ont toutes deux pour norme 2 : leurs flèches vont vers la même boîte verte.",
+   "La boîte orange est le produit (1 + i)(2 + i), égal à 1 ; sa norme est 1, qui est 2 fois 2 modulo 3.",
+   "Le texte du bas rappelle que 0 est exclu."
+  ],
+  "a_voir": "La norme du produit est le produit des normes, et 0 reste à l'écart."
+ },
+ {
+  "code": "67-143",
+  "a_dire": "La trace de u est l'opposé du coefficient c₁ du polynôme minimal ; sur un cas chiffré on lit c₁, on prend son opposé, et on retrouve la somme des racines.",
+  "legende_titre": "Lire la trace sur un coefficient",
+  "lecture": [
+   "Les trois boîtes du haut sont les termes du polynôme minimal de 1 + i : x², c₁ = 1 (boîte orange) et c₂ = 2.",
+   "La flèche orange mène au calcul vert : T(u) = −c₁ = −1 = 2.",
+   "En bas, les racines 1 + i et 1 − i ont pour somme 2.",
+   "La double flèche verte dit que les deux valeurs sont les mêmes."
+  ],
+  "a_voir": "L'opposé de c₁ et la somme des racines donnent tous deux 2."
+ },
+ {
+  "code": "67-144",
+  "a_dire": "La norme est (−1)^n fois le dernier coefficient c_n du polynôme minimal ; seul le signe dépend de la parité de n.",
+  "legende_titre": "Lire la norme sur le dernier coefficient",
+  "lecture": [
+   "Les cinq boîtes du haut sont les termes du polynôme minimal de degré n = 4 ; la boîte violette est le dernier coefficient, c₄ = 1.",
+   "La flèche violette mène au calcul : N(u) = (−1)⁴ fois 1 = 1.",
+   "Les trois boîtes du bas donnent le signe selon n : +1 pour n = 2, −1 pour n = 3 (orange), +1 pour n = 4 (violet)."
+  ],
+  "a_voir": "Le coefficient reste le même ; seul le signe change quand n est pair ou impair."
+ },
+ {
+  "code": "67-145",
+  "a_dire": "La trace est le polynôme symétrique e₁ des racines et la norme est eₙ ; comme ils sont symétriques, ils tombent dans le petit corps.",
+  "legende_titre": "Somme et produit des racines",
+  "lecture": [
+   "Les trois disques gris sont les trois racines r₁, r₂, r₃ ; la flèche orange courbe dit qu'on peut les échanger.",
+   "L'accolade et la flèche bleue mènent à e₁, la somme des racines : la trace.",
+   "La flèche violette mène à e₃, le produit des racines : la norme.",
+   "La boîte verte dit que ces deux quantités symétriques sont dans le petit corps."
+  ],
+  "a_voir": "La somme et le produit des racines ne changent pas quand on échange les racines."
+ },
+ {
+  "code": "67-146",
+  "a_dire": "Multiplier par u est une application linéaire m_u : x ↦ ux de E dans E ; avec u = 1 + i, 1 devient 1 + i et i devient 2 + i.",
+  "legende_titre": "Multiplier par un élément",
+  "lecture": [
+   "Le cadre de gauche contient deux éléments x, en bleu : 1 et i.",
+   "Le cadre de droite contient leurs images ux, en vert : 1 + i et 2 + i.",
+   "Chaque flèche orange est la multiplication par u = 1 + i ; le calcul i + i² = 2 + i est écrit sous la première flèche."
+  ],
+  "a_voir": "Chaque élément x est envoyé sur ux, un élément du même corps."
+ },
+ {
+  "code": "67-147",
+  "a_dire": "La trace est la somme des termes diagonaux de la matrice de m_u et la norme son déterminant ; cette définition marche aussi sans groupe de Galois.",
+  "legende_titre": "Trace et norme lues sur une matrice",
+  "lecture": [
+   "La boîte rouge du haut dit que la définition par les conjugués échoue : racine cubique de 2 est seule et n'est pas rationnelle.",
+   "La grille est la matrice de m_u dans la base 1, u, u² : les cases bleues sont la diagonale, les cases violettes les 2, 1, 1.",
+   "La boîte bleue donne la trace 0 (somme de la diagonale) ; la boîte violette donne le déterminant 2."
+  ],
+  "a_voir": "La matrice donne une trace 0 et une norme 2, dans les rationnels, sans groupe de Galois."
+ },
+ {
+  "code": "67-148",
+  "a_dire": "Pour F ⊆ K ⊆ E, la trace directe est égale à la trace par étages : T_{E/F} = T_{K/F} ∘ T_{E/K}.",
+  "legende_titre": "Deux chemins vers le petit corps",
+  "lecture": [
+   "Les trois boîtes sont les corps emboîtés : E (16 éléments) avec l'élément 1, K (4 éléments) et F (2 éléments).",
+   "Les flèches orange de gauche forment la trace par étages : d'abord vers K (1 + 1 = 0), puis vers F (0).",
+   "Le chemin violet de droite est la trace directe : 4 fois 1 vaut 0.",
+   "Les deux chemins arrivent au même résultat, 0."
+  ],
+  "a_voir": "Passer par K ou aller directement vers F donne le même résultat."
+ },
+ {
+  "code": "67-149",
+  "a_dire": "Le groupe G se découpe en classes latérales du sous-groupe H qui fixe K ; additionner sur G revient à additionner dans chaque paquet, puis additionner les résultats.",
+  "legende_titre": "Additionner paquet par paquet",
+  "lecture": [
+   "Les quatre disques η₁ à η₄ sont les 4 éléments de G, rangés en deux paquets de 2 : le paquet bleu et le paquet violet.",
+   "Chaque paquet donne sa propre somme, dans une boîte de sa couleur.",
+   "La boîte verte du bas additionne les deux sommes : c'est la somme sur tout G."
+  ],
+  "a_voir": "Chaque élément est dans un seul paquet, donc rien n'est compté deux fois."
+ },
+ {
+  "code": "67-150",
+  "a_dire": "Quand E/F est cyclique, de groupe engendré par η, un élément u a pour norme 1 si et seulement si u = v/η(v) pour un v non nul.",
+  "legende_titre": "Les éléments de norme 1",
+  "lecture": [
+   "Les deux boîtes du haut sont les deux énoncés : N(u) = 1 (bleu) et u = v/η(v) (orange), reliés par une double flèche.",
+   "La chaîne du bas est l'exemple dans le corps à 9 éléments : v = 1 + i, son conjugué 1 − i, le quotient i, puis N(i) = 1.",
+   "La boîte grise rappelle pourquoi : v et η(v) ont la même norme, donc le quotient a pour norme 1."
+  ],
+  "a_voir": "Le quotient v/η(v) de l'exemple est i, et sa norme vaut 1."
+ }
+]

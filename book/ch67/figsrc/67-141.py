@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(78)
+box(ax, 4, 64, 80, 10, 'varie', label=r'$a=i$ n’est pas dans $F$ ($n=2$)')
+text(ax, 22, 58, r'$N(au)$ avec $u=1$', 'sujet', 's')
+text(ax, 66, 58, r'$a^n\,N(u)$', 'autre', 's')
+box(ax, 4, 36, 36, 18, 'sujet', label=r'$N(i\times1)$' + '\n' + r'$=N(i)=1$')
+box(ax, 48, 36, 36, 18, 'autre', label=r'$i^2\,N(1)$' + '\n' + r'$=i^2\times1=2$')
+text(ax, 44, 45, '≠', 'limite', 'xl', weight='bold')
+arrow(ax, (44, 34), (44, 28), 'limite')
+box(ax, 8, 18, 72, 10, 'limite', label=r'la formule est fausse pour ce $a$')
+text(ax, 44, 8, r'$i$ a pour conjugués $i$ et $-i$', 'fixe', 's')
+save(fig, '67-141')

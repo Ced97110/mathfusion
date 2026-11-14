@@ -1,0 +1,21 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(70)
+# left : power basis (neighbour)
+text(ax, 20.5, 64, 'base des puissances', 'autre', 's')
+for k, lab in enumerate([r'$1$', r'$\alpha$', r'$\alpha^2$']):
+    box(ax, 4 + 12.5 * k, 46, 9, 9, 'autre', label=lab)
+arrow(ax, (13.2, 50.5), (16.3, 50.5), 'autre')
+arrow(ax, (25.7, 50.5), (28.8, 50.5), 'autre')
+text(ax, 20.5, 41, r'on multiplie par $\alpha$', 'autre', 's')
+# right : normal basis
+text(ax, 64, 64, 'base normale', 'varie', 's')
+box(ax, 54.5, 49, 19, 8, 'varie', label=r'$\alpha+1$')
+box(ax, 67, 26, 19, 8, 'varie', label=r'$\alpha^2+1$')
+box(ax, 42, 26, 19, 8, 'varie', label=r'$\alpha^2+\alpha+1$')
+arrow(ax, (70, 48.5), (79, 34.5), 'varie', curve=0.0)
+arrow(ax, (66.5, 30), (61.5, 30), 'varie')
+arrow(ax, (50, 34.5), (58, 48.5), 'varie')
+text(ax, 64, 41, r'$x\mapsto x^2$', 'varie', 's')
+text(ax, 64, 19, 'les trois sont conjugués', 'varie', 's')
+text(ax, 64, 13, r'un seul $z=\alpha+1$', 'varie', 's')
+save(fig, '67-128')

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(62)
+box(ax, 3, 26, 34, 30, 'sujet')
+text(ax, 20, 51, r'$D=\mathbb{Z}[i]$', 'sujet', 'm')
+box(ax, 7, 30, 26, 14, 'fixe', label='idéal maximal $M$\ncontenant 3', size='s', dash=True)
+box(ax, 60, 26, 25, 30, 'resultat', label=r'$E_3=\mathbb{F}_9$')
+arrow(ax, (37.5, 41), (59.5, 41), 'varie')
+text(ax, 48.5, 46, r'$\psi$', 'varie', 'l')
+text(ax, 48.5, 36, 'quotient', 'varie', 's')
+text(ax, 44, 17, r'$\psi$ respecte $+$ et $\times$', 'fixe', 'm')
+text(ax, 44, 8, r'dans $E_3$ : $3=0$', 'resultat', 'm')
+save(fig, '67-157')

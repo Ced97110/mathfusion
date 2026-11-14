@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(76)
+box(ax, 4, 62, 80, 10, 'sujet', label=r'galoisienne $\Rightarrow$ base normale')
+text(ax, 44, 57, 'on retire « galoisienne »', 'varie', 's')
+text(ax, 44, 51.5, r'cas : $\mathbb{Q}(\sqrt[3]{2})$, degré 3', 'varie', 's')
+brace(ax, 6, 82, 40, 'fixe', label='une base normale en demande 3', down=False)
+box(ax, 6, 25, 22, 10, 'sujet', label=r'$z$')
+box(ax, 33, 25, 22, 10, 'limite', label='manque', dash=True)
+box(ax, 60, 25, 22, 10, 'limite', label='manque', dash=True)
+text(ax, 44, 17, 'groupe de Galois : l’identité seule', 'encre', 's')
+box(ax, 10, 3, 68, 9, 'limite', label=r'un seul conjugué : $z$ lui-même', size='s')
+save(fig, '67-130')

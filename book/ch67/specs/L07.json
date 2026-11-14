@@ -1,0 +1,351 @@
+[
+ {
+  "code": "67-181",
+  "a_dire": "Le corps à 8 éléments n'est pas dans celui à 16 éléments, car 3 ne divise pas 4 et 7 ne divise pas 15.",
+  "legende_titre": "Deux divisions qui ne tombent pas juste",
+  "lecture": [
+   "En haut, 4 cases représentent le degré 4 du corps à 16 éléments ; elles sont rangées en paquets de 3.",
+   "Trois cases bleues forment un paquet de 3 ; la quatrième case, en rouge, reste seule.",
+   "En bas, 15 cases sont rangées en paquets de 7 : deux paquets bleus et une case rouge qui reste.",
+   "Dans les deux cas il reste 1 : les divisions ne tombent pas juste."
+  ],
+  "a_voir": "Dans chaque rangée, un paquet complet ne remplit jamais toutes les cases : il reste une case rouge."
+ },
+ {
+  "code": "67-182",
+  "a_dire": "Élever au carré double l'exposant, modulo 15.",
+  "legende_titre": "Le carré agit sur l'exposant",
+  "lecture": [
+   "Chaque droite graduée va de 0 à 14 : un trait est un exposant.",
+   "En haut, le disque bleu 5 est envoyé par la flèche orange sur le disque vert 10, car 5 × 2 = 10.",
+   "En bas, le disque bleu 9 donne 18, et 18 − 15 = 3 : la flèche orange revient sur le disque vert 3."
+  ],
+  "a_voir": "La flèche orange multiplie l'exposant par 2 ; si le résultat dépasse 14, on retire 15."
+ },
+ {
+  "code": "67-183",
+  "a_dire": "Les 15 éléments non nuls se rangent en paquets : on double l'exposant jusqu'à revenir au départ.",
+  "legende_titre": "Cinq paquets pour quinze exposants",
+  "lecture": [
+   "Chaque ligne est un paquet : les exposants sont écrits dans l'ordre où le doublement les donne.",
+   "Les trois lignes bleues ont chacune 4 exposants ; la ligne violette en a 2 ; la ligne verte n'a que 0.",
+   "Les disques à droite comptent les éléments de chaque paquet : 4, 4, 4, 2 et 1, soit 15 en tout."
+  ],
+  "a_voir": "Chaque exposant est dans une seule ligne, et les lignes à elles toutes font 15 éléments."
+ },
+ {
+  "code": "67-184",
+  "a_dire": "En doublant l'exposant à partir de 1, on obtient 2, 4, 8, puis on revient à 1 : les quatre racines de x^4 + x + 1 forment un paquet.",
+  "legende_titre": "Un tour complet en quatre carrés",
+  "lecture": [
+   "Les quatre disques bleus sont α, α², α⁴ et α⁸.",
+   "Les trois flèches orange marquent chacune un passage au carré.",
+   "La flèche verte ramène de α⁸ à α, car 16 − 15 = 1 : on est revenu au départ.",
+   "Le paquet a quatre éléments, qui sont les racines de x^4 + x + 1."
+  ],
+  "a_voir": "Après quatre carrés on retombe sur α : le paquet est un cycle de quatre éléments."
+ },
+ {
+  "code": "67-185",
+  "a_dire": "Le paquet de α³ a quatre éléments : 3, 6, 12, 9, et ce sont des éléments d'ordre 5.",
+  "legende_titre": "Le paquet qui part de la puissance 3",
+  "lecture": [
+   "Les quatre disques violets sont α³, α⁶, α¹² et α⁹.",
+   "Les flèches orange passent au carré : de 3 à 6, de 6 à 12.",
+   "Sur la flèche du bas, 24 − 15 = 9 : le carré de α¹² est α⁹.",
+   "La flèche verte ramène de α⁹ à α³, car 18 − 15 = 3."
+  ],
+  "a_voir": "Ce paquet est un cycle de quatre disques, différent de celui qui part de α."
+ },
+ {
+  "code": "67-186",
+  "a_dire": "Les paquets de 1 et de 7 ont chacun quatre éléments et donnent deux polynômes irréductibles différents de degré 4 ; il y en a trois en tout.",
+  "legende_titre": "Un paquet de quatre, un polynôme",
+  "lecture": [
+   "Chaque ligne montre un paquet : un petit cycle de quatre disques, les exposants du paquet, puis son polynôme.",
+   "La ligne bleue est le paquet 1, 2, 4, 8, avec x^4 + x + 1.",
+   "La ligne violette est le paquet 7, 14, 13, 11, avec x^4 + x³ + 1 ; le crochet orange dit que ces deux polynômes sont différents.",
+   "La ligne grise est le paquet 3, 6, 12, 9 : en tout trois paquets, trois polynômes de degré 4."
+  ],
+  "a_voir": "Deux paquets de même taille donnent deux polynômes différents."
+ },
+ {
+  "code": "67-187",
+  "a_dire": "Le paquet de α⁵ n'a que deux éléments, 5 et 10 : ce sont les racines de x² + x + 1.",
+  "legende_titre": "Un paquet qui se referme après deux pas",
+  "lecture": [
+   "Les deux disques bleus sont α⁵ et α¹⁰.",
+   "La flèche orange du haut passe au carré : 5 × 2 = 10.",
+   "La flèche verte du bas revient au départ : 10 × 2 = 20, et 20 − 15 = 5.",
+   "Le paquet n'a que deux éléments : ce sont les racines de x² + x + 1."
+  ],
+  "a_voir": "Le doublement revient au départ après deux pas seulement."
+ },
+ {
+  "code": "67-188",
+  "a_dire": "L'élément 1, de puissance 0, est seul dans son paquet : c'est la racine de x + 1.",
+  "legende_titre": "Un élément qui ne bouge pas",
+  "lecture": [
+   "Le disque bleu est l'élément 1, c'est-à-dire la puissance 0.",
+   "La flèche orange part du disque et revient sur lui : 0 × 2 = 0.",
+   "Le paquet n'a qu'un élément, racine de x + 1."
+  ],
+  "a_voir": "La flèche revient sur le même disque : le paquet n'a qu'un seul élément."
+ },
+ {
+  "code": "67-189",
+  "a_dire": "On vérifie que α⁷ est racine de x^4 + x³ + 1 : les exposants 28 et 21 se réduisent à 13 et 6, et la somme des trois lignes de bits vaut 0000.",
+  "legende_titre": "Une substitution vérifiée en bits",
+  "lecture": [
+   "Les trois lignes bleues sont α²⁸ = α¹³, α²¹ = α⁶ et 1, écrites en quatre bits, un par colonne : 1, α, α², α³.",
+   "Les deux signes plus disent qu'on additionne les trois lignes colonne par colonne.",
+   "La ligne verte est la somme modulo 2 : elle vaut 0 0 0 0, donc α⁷ est bien racine."
+  ],
+  "a_voir": "Dans chaque colonne il y a un nombre pair de 1 : la somme est nulle."
+ },
+ {
+  "code": "67-190",
+  "a_dire": "Les degrés des facteurs, 4 + 4 + 4 + 2 + 1 + 1, font 16 : c'est la factorisation de x^16 − x.",
+  "legende_titre": "Seize racines en six facteurs",
+  "lecture": [
+   "Chaque case est une racine de x^16 − x ; le chiffre sous une accolade est le degré du facteur.",
+   "Les trois blocs bleus de 4 cases sont les facteurs de degré 4 ; le bloc violet de 2 cases est le facteur de degré 2.",
+   "Les deux cases vertes seules sont les facteurs x et x + 1.",
+   "La grande accolade du bas additionne : 4 + 4 + 4 + 2 + 1 + 1 = 16."
+  ],
+  "a_voir": "Les blocs remplissent exactement les 16 cases, sans trou ni recouvrement."
+ },
+ {
+  "code": "67-191",
+  "a_dire": "Le triangle bleu de F8 a une somme de conjugués nulle : ils sont liés, donc pas de base normale ; c'est T(α) = 0.",
+  "legende_titre": "Un triangle dont la somme s'annule",
+  "lecture": [
+   "Les trois disques bleus sont α, α² et α² + α : les conjugués de α.",
+   "Les flèches orange passent au carré, de disque en disque, et ferment le triangle.",
+   "Les deux lignes bleues du bas calculent la somme : elle vaut 2α + 2α², donc 0 car 2 = 0.",
+   "La ligne verte nomme ce résultat, la trace nulle ; la ligne rouge en tire la conséquence : ils sont liés, pas de base."
+  ],
+  "a_voir": "La somme des trois sommets est nulle : une relation les lie."
+ },
+ {
+  "code": "67-192",
+  "a_dire": "Le triangle orange a un déterminant −1, non nul : ses trois conjugués forment une base normale.",
+  "legende_titre": "Un tableau de 0 et de 1 qui n'est pas nul",
+  "lecture": [
+   "Les trois disques orange sont α + 1, α² + 1 et α² + α + 1, reliés par des flèches qui passent au carré.",
+   "À droite de chaque disque, une flèche grise mène à ses coordonnées sur 1, α, α².",
+   "Les trois lignes de coordonnées sont (1, 1, 0), (1, 0, 1) et (1, 1, 1).",
+   "Le cadre vert dit que le déterminant de ce tableau vaut −1, donc n'est pas nul : c'est une base."
+  ],
+  "a_voir": "Chaque disque donne une ligne du tableau, et le déterminant du tableau n'est pas nul."
+ },
+ {
+  "code": "67-193",
+  "a_dire": "Un élément de trace nulle ne donne jamais de base normale ; une trace non nulle est nécessaire mais ne suffit pas.",
+  "legende_titre": "La trace décide si on peut espérer une base",
+  "lecture": [
+   "Chaque ligne a trois colonnes : les conjugués d'un élément, sa trace dans le disque gris, le verdict.",
+   "Ligne du haut : α, α², α² + α, trace 0 ; leur somme est nulle, ils sont liés : pas de base (rouge).",
+   "Ligne du milieu : α + 1 et ses conjugués, trace 1 : c'est une base normale (vert).",
+   "Ligne du bas : l'élément 1 a pour conjugués 1, 1, 1 et trace 1, mais ce n'est pas une base (rouge)."
+  ],
+  "a_voir": "La trace 0 donne toujours rouge ; la trace 1 peut donner vert ou rouge."
+ },
+ {
+  "code": "67-194",
+  "a_dire": "On compte les irréductibles de degré 4 sans les écrire : 16 racines, moins 2 et 2, reste 12, et 12 divisé par 4 donne 3.",
+  "legende_titre": "Compter des polynômes en comptant des racines",
+  "lecture": [
+   "Les 16 cases sont les 16 racines de x^16 − x.",
+   "Les deux cases grises sont les racines de x et x + 1 ; les deux cases violettes sont celles de x² + x + 1.",
+   "Les 12 cases bleues restantes sont rangées en trois groupes de 4, un par polynôme de degré 4.",
+   "Le calcul vert du bas dit : 12 ÷ 4 = 3 polynômes."
+  ],
+  "a_voir": "Chaque polynôme de degré 4 prend 4 cases : 12 cases font 3 polynômes."
+ },
+ {
+  "code": "67-195",
+  "a_dire": "La formule de Gauss redonne 3 : un quart de 16 − 4 + 0, avec μ(1) = 1, μ(2) = −1, μ(4) = 0.",
+  "legende_titre": "La formule de Gauss, terme par terme",
+  "lecture": [
+   "Chaque colonne correspond à un diviseur d de 4 : 1, 2 puis 4 ; sous le nom, le signe de Möbius multiplie une puissance de 2.",
+   "La barre bleue vaut +16 ; la barre orange vers le bas vaut −4 ; pour d = 4 il n'y a pas de barre : le terme est 0.",
+   "La barre verte de droite est la somme : 12.",
+   "Le calcul vert du bas termine : 12 divisé par 4 donne 3."
+  ],
+  "a_voir": "Les termes 16, −4 et 0 s'additionnent en 12, que l'on divise par 4."
+ },
+ {
+  "code": "67-196",
+  "a_dire": "Pour n = 6, on additionne 64 − 8 − 4 + 2 = 54, puis 54 divisé par 6 donne 9 irréductibles.",
+  "legende_titre": "La méthode de Gauss pour le degré 6",
+  "lecture": [
+   "La longue barre bleue du haut est le terme du diviseur 1 : +64.",
+   "Les deux barres orange retirent 8 puis 4 ; la petite barre bleue ajoute 2.",
+   "La barre verte du bas vaut 54 ; ses 9 cases sont des paquets de 6.",
+   "Le calcul du bas dit : 54 ÷ 6 = 9 polynômes."
+  ],
+  "a_voir": "En partant de 64 et en retirant puis ajoutant les termes, on arrive à 54, soit 9 paquets de 6."
+ },
+ {
+  "code": "67-197",
+  "a_dire": "Les nombres d'irréductibles sur F2 pour les degrés 1 à 6 sont 2, 1, 2, 3, 6, 9.",
+  "legende_titre": "Six valeurs, aucune nulle",
+  "lecture": [
+   "Chaque barre bleue correspond à un degré n, écrit sous la barre.",
+   "Sa hauteur est le nombre d'irréductibles de ce degré, écrit au-dessus.",
+   "Les six nombres sont 2, 1, 2, 3, 6 et 9 ; aucune barre n'est vide."
+  ],
+  "a_voir": "Les six barres ont toutes une hauteur non nulle, et les dernières sont les plus hautes."
+ },
+ {
+  "code": "67-198",
+  "a_dire": "Le nombre exact d'irréductibles est proche de 2^n/n, et l'écart relatif se réduit quand n grandit.",
+  "legende_titre": "Un nombre exact et son quotient",
+  "lecture": [
+   "Dans chaque groupe, la barre bleue est le nombre exact et la barre violette est le quotient 2^n/n ; la barre exacte sert d'unité de hauteur.",
+   "Pour n = 4 : le nombre exact est 3 et le quotient est 4 ; la partie orange est l'écart, un tiers du nombre exact.",
+   "Pour n = 6 : le nombre exact est 9 et le quotient est 10,7 ; la partie orange est plus petite, moins d'un cinquième."
+  ],
+  "a_voir": "La partie orange est plus petite à droite qu'à gauche : l'écart relatif a diminué."
+ },
+ {
+  "code": "67-199",
+  "a_dire": "Sur K, le conjugué de u = √2 + √3 est √2 − √3, et le produit des deux vaut 2 − 3 = −1 : c'est la première étape de la norme.",
+  "legende_titre": "Une norme calculée par étages",
+  "lecture": [
+   "À gauche, trois cadres bleus empilés : ℚ, puis K = ℚ(√2), puis E = ℚ(√2, √3) ; chaque trait porte le degré 2.",
+   "En haut à droite, le cadre bleu est u = √2 + √3.",
+   "La flèche orange mène à son conjugué sur K, √2 − √3, en violet.",
+   "Le produit (√2 + √3)(√2 − √3) vaut 2 − 3 = −1 ; le cadre vert nomme ce nombre, la norme de E sur K."
+  ],
+  "a_voir": "En multipliant u par son conjugué, les racines disparaissent : il reste le nombre −1."
+ },
+ {
+  "code": "67-200",
+  "a_dire": "La norme de K sur ℚ de −1 est le produit de ses deux conjugués, tous deux égaux à −1 : le résultat est 1.",
+  "legende_titre": "La seconde étape sur un rationnel",
+  "lecture": [
+   "Les deux cadres gris sont les deux conjugués de −1 ; ils sont égaux à −1, car −1 est un rationnel.",
+   "L'accolade bleue rappelle que K est de degré 2 sur ℚ : il y a deux facteurs.",
+   "Le cadre vert est le produit : (−1) × (−1) = 1."
+  ],
+  "a_voir": "Deux facteurs égaux à −1 donnent 1."
+ },
+ {
+  "code": "67-201",
+  "a_dire": "La norme se lit sur le polynôme minimal : le terme constant 1, avec le signe (−1)^4 = 1, donne 1.",
+  "legende_titre": "La norme lue sur le polynôme",
+  "lecture": [
+   "Les cinq cadres sont les coefficients de x^4 − 10x² + 1, chacun sous sa puissance : 1, 0, −10, 0, 1.",
+   "Le cadre bleu de droite est le terme constant, égal à 1.",
+   "La flèche verte mène à la formule : le signe (−1)^4 fois le terme constant donne la norme 1."
+  ],
+  "a_voir": "Seul le dernier cadre, le terme constant, sert à calculer la norme."
+ },
+ {
+  "code": "67-202",
+  "a_dire": "La trace de u vaut 0, directement par le coefficient de x³ qui est nul, et par étages : 2√2, puis 2√2 − 2√2 = 0.",
+  "legende_titre": "La trace par deux chemins",
+  "lecture": [
+   "À gauche, trois cadres : u, puis 2√2, puis 0.",
+   "La première flèche orange ajoute à u son conjugué sur K : on obtient 2√2.",
+   "La seconde flèche orange ajoute 2√2 et son conjugué −2√2 : on obtient 0.",
+   "À droite, la longue flèche verte va directement de u à 0 : le coefficient de x³ est nul, donc la trace est 0."
+  ],
+  "a_voir": "Les deux chemins, par étages et direct, arrivent au même 0."
+ },
+ {
+  "code": "67-203",
+  "a_dire": "Les éléments de norme 1 de ℚ(i) sont les points rationnels du cercle a² + b² = 1, et ils s'écrivent v divisé par son conjugué.",
+  "legende_titre": "La norme 1 dessinée sur un cercle",
+  "lecture": [
+   "Les deux droites grises sont les axes a et b ; le cercle bleu est l'ensemble a² + b² = 1.",
+   "Le point vert est 3/5 + 4/5 i ; les traits orange pointillés lisent ses coordonnées 3/5 sur a et 4/5 sur b.",
+   "Le texte du bas dit que tout point rationnel du cercle est de la forme v divisé par son conjugué."
+  ],
+  "a_voir": "Le point de coordonnées 3/5 et 4/5 est sur le cercle, donc sa norme vaut 1."
+ },
+ {
+  "code": "67-204",
+  "a_dire": "Avec v = 2 + i, le quotient v divisé par son conjugué vaut (3 + 4i)/5, et le triangle 3, 4, 5 est une norme égale à 1.",
+  "legende_titre": "D'un nombre complexe à un triangle",
+  "lecture": [
+   "En haut, trois cadres : v = 2 + i, puis son quotient par 2 − i, puis le résultat (3 + 4i)/5.",
+   "Le triangle bleu a des côtés de longueurs 3, 4 et 5, dessinés à l'échelle ; il a un angle droit.",
+   "La première ligne du bas écrit 3² + 4² = 5².",
+   "La ligne verte divise par 5 : (3/5)² + (4/5)² = 1, la norme vaut 1."
+  ],
+  "a_voir": "Les côtés 3 et 4 divisés par 5 donnent une somme de carrés égale à 1."
+ },
+ {
+  "code": "67-205",
+  "a_dire": "Chaque v = m + ni à coefficients entiers fournit un triangle rectangle à côtés entiers.",
+  "legende_titre": "Une machine à triangles rectangles",
+  "lecture": [
+   "Le cadre bleu est un exemple : v = 3 + 2i, avec m = 3 et n = 2.",
+   "La flèche orange passe au carré et donne le cadre orange : v² = 5 + 12i.",
+   "Le triangle bleu a pour côtés 5 et 12 (les deux nombres de v²), et pour côté long 13 ; l'angle droit est marqué.",
+   "La ligne verte vérifie 5² + 12² = 13² ; la ligne bleue donne la norme de v : 13."
+  ],
+  "a_voir": "Les deux nombres de v² sont les côtés du triangle, et la norme de v est son grand côté."
+ },
+ {
+  "code": "67-206",
+  "a_dire": "Le polynôme de Jacobson est de degré 6 : il a six racines complexes r1 à r6, que le groupe de Galois permute.",
+  "legende_titre": "Le polynôme de Jacobson et ses six racines",
+  "lecture": [
+   "Le polynôme bleu du haut est f(x) = x^6 + 22x^5 + 21x^4 + 12x³ − 37x² − 29x − 15.",
+   "La flèche orange dit que son degré est 6.",
+   "Les six disques violets sont les six racines r1 à r6, regroupées par l'accolade.",
+   "Le groupe de Galois ne fait que permuter ces six racines."
+  ],
+  "a_voir": "Un polynôme de degré 6 donne six racines numérotées de 1 à 6."
+ },
+ {
+  "code": "67-207",
+  "a_dire": "Si p ne divise pas le discriminant, la réduction modulo p n'a pas de racine multiple : le théorème de Dedekind s'applique à 2, 3 et 5.",
+  "legende_titre": "Le discriminant garde les racines simples",
+  "lecture": [
+   "Chaque ligne bleue pour p = 2, 3 et 5 montre six disques distincts : les six racines de f_p sont différentes.",
+   "La ligne rouge montre ce qui arriverait si p divisait le discriminant : deux disques se superposent, c'est une racine double.",
+   "Le cadre vert conclut : le théorème de Dedekind vaut pour 2, 3 et 5."
+  ],
+  "a_voir": "Dans les lignes bleues, aucun disque n'en cache un autre ; dans la ligne rouge, deux sont superposés."
+ },
+ {
+  "code": "67-208",
+  "a_dire": "Modulo 2, 3 et 5, les six racines sont déplacées par un cycle de longueur 6, par un point fixe et un cycle de 5, et par un échange de deux racines.",
+  "legende_titre": "Trois réductions, trois façons de tourner",
+  "lecture": [
+   "Chaque colonne de disques est une racine r_k, numérotée de 1 à 6 en haut ; les flèches montrent où elle est envoyée.",
+   "Ligne bleue (mod 2) : une seule boucle de flèches passe par les six disques.",
+   "Ligne orange (mod 3) : le disque 1 gris reste en place, et les disques 2 à 6 forment une boucle.",
+   "Ligne verte (mod 5) : une flèche à deux pointes échange les disques 1 et 2 ; les quatre disques gris restent en place."
+  ],
+  "a_voir": "Les trois lignes déplacent les mêmes six disques de trois façons différentes."
+ },
+ {
+  "code": "67-209",
+  "a_dire": "Modulo 2, f2 = x^6 + x^4 + x² + x + 1 n'est divisible par aucun des 5 irréductibles de degré 1, 2 ou 3 : il est irréductible, donc le groupe contient un cycle de longueur 6.",
+  "legende_titre": "Une réduction qu'aucun petit facteur ne divise",
+  "lecture": [
+   "La première ligne dit comment on réduit : les coefficients pairs deviennent 0, les impairs deviennent 1 ; on obtient f2 en bleu.",
+   "Les cinq cadres gris sont les cinq divisions testées, avec un reste non nul à chaque fois.",
+   "Les accolades les rangent par degré : 2 de degré 1, 1 de degré 2 et 2 de degré 3, soit 5 en tout.",
+   "Le cadre vert conclut : f2 est irréductible, donc il y a un cycle de longueur 6."
+  ],
+  "a_voir": "Les cinq divisions donnent toutes un reste non nul."
+ },
+ {
+  "code": "67-210",
+  "a_dire": "Un cycle de longueur 6 envoie la racine 1 sur n'importe quelle autre : le groupe est transitif, donc f est irréductible.",
+  "legende_titre": "Un seul cycle atteint toutes les racines",
+  "lecture": [
+   "Les six disques bleus sont les six racines ; les flèches bleues du milieu et du bas forment le cycle de longueur 6.",
+   "Les cinq arcs orange partent du disque 1 : en répétant le cycle une à cinq fois, on atteint 2, 3, 4, 5 et 6.",
+   "La ligne verte du bas en tire la conséquence : le groupe est transitif, donc f est irréductible."
+  ],
+  "a_voir": "Du disque 1, un arc orange mène à chacun des cinq autres disques."
+ }
+]

@@ -1,0 +1,12 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); from figstyle import *
+fig, ax = canvas(80)
+text(ax, 18, 72, r'racines de $x^2+1$', 'encre', 's')
+text(ax, 66, 72, r'racine de $f_2$', 'encre', 's')
+disc(ax, 18, 56, 5, 'sujet', label=r'$i$')
+disc(ax, 18, 26, 5, 'sujet', label=r'$-i$')
+disc(ax, 68, 41, 5, 'fixe', label='1')
+arrow(ax, (23, 54), (62.5, 42.5), 'varie', lw=1.2)
+arrow(ax, (23, 28), (62.5, 39.5), 'varie', lw=1.2)
+text(ax, 34, 54, r'$\psi$', 'varie', 'm')
+text(ax, 44, 8, '2 racines, 1 image : pas bijective', 'limite', 's')
+save(fig, '67-224')
