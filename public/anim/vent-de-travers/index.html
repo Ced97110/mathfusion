@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>Vent de travers</title>
+<meta name="description" content="Un film de 58 secondes : on met les flèches bout à bout, on n’additionne pas les longueurs.">
+<style>
+  :root {
+    --fond: #000;
+    --texte: #ffffff;
+    --doux: #c3cad4;
+    --plaque: rgba(8, 10, 14, 0.8);
+    --ligne: rgba(255, 255, 255, 0.16);
+    --bleu: #4f9dff;
+    --violet: #b78cff;
+    --vert: #4fe08f;
+    --gris: #aab2bf;
+    --police: -apple-system, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --t-legende: 28px;
+    --t-etiquette: 21px;
+    --t-source: 15px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--fond); color: var(--texte); font-family: var(--police); overflow: hidden; }
+  body { -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums; }
+
+  /* film frame: fixed aspect, fitted in the window (16:9, or 9:16 with ?format=vertical) */
+  #cadre { position: absolute; left: 0; top: 0; overflow: hidden; background: #000; }
+  #cadre canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
+  #accum { display: none; }
+  #voile { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+
+  /* text system: one family, three sizes, every text on a dark plate */
+  .textes { position: absolute; inset: 0; pointer-events: none; }
+  .plaq { background: var(--plaque); border-radius: 6px; color: var(--texte); }
+  .legende { position: absolute; left: 0; right: 0; bottom: 6%; margin: 0 auto; width: fit-content; max-width: 86%;
+    font-size: var(--t-legende); font-weight: 600; line-height: 1.25; text-align: center; padding: 0.3em 0.6em; visibility: hidden; }
+  .vertical .legende { bottom: 9%; max-width: 90%; }
+  .etq { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: var(--t-etiquette); font-weight: 600;
+    line-height: 1.2; padding: 0.22em 0.5em 0.22em 0.45em; border-left: 4px solid var(--gris); visibility: hidden; }
+  .lettre { position: absolute; left: 0; top: 0; font-size: var(--t-legende); font-weight: 700; line-height: 1;
+    padding: 0.18em 0.42em; visibility: hidden; }
+  .heure { position: absolute; left: 0; right: 0; top: 7%; margin: 0 auto; width: fit-content; display: flex; align-items: center;
+    gap: 0.7em; font-size: var(--t-etiquette); font-weight: 600; padding: 0.4em 0.7em; visibility: hidden; }
+  .heure-barre { position: relative; width: 9em; height: 0.36em; border-radius: 2px; background: rgba(255, 255, 255, 0.22); overflow: hidden; }
+  .heure-barre i { position: absolute; inset: 0; background: var(--texte); transform-origin: 0 50%; transform: scaleX(0); }
+  .plaque { position: absolute; left: 0; right: 0; top: 50%; margin: 0 auto; width: 80%; transform: translateY(-50%);
+    background: var(--plaque); border-radius: 8px; padding: 1.1em 2.2em 2.2em; font-size: var(--t-etiquette); visibility: hidden; }
+  .vertical .plaque { width: 94%; padding: 1em 1em 2.4em; }
+  .plaque-regle { margin: 0 0 1.1em; text-align: center; font-size: var(--t-legende); font-weight: 600; line-height: 1.25; }
+  .plaque-zone { position: relative; }
+  .plaque-zone svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .plaque-etq { position: absolute; white-space: nowrap; font-weight: 600; font-size: var(--t-etiquette); }
+
+  /* page controls (outside the picture: hidden in the offline render) */
+  .ui { font-size: 15px; }
+  #barre { position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); display: flex; gap: 8px; transition: opacity 0.3s; }
+  #barre.repos { opacity: 0; }
+  button { font: inherit; font-size: 15px; font-weight: 600; color: var(--texte); background: var(--plaque); border: 1px solid var(--ligne);
+    border-radius: 6px; padding: 9px 14px; cursor: pointer; }
+  button:hover { border-color: rgba(255, 255, 255, 0.4); }
+  button:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+  button[aria-pressed="false"] { color: var(--doux); }
+  .ecran { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0, 0, 0, 0.82); overflow-y: auto; padding: 16px; }
+  .ecran .bloc { max-width: min(1100px, 92vw); text-align: center; }
+  .ecran h1 { font-size: clamp(34px, 7vw, 64px); margin: 0 0 12px; font-weight: 700; letter-spacing: -0.02em; }
+  .ecran .accroche { color: var(--doux); font-size: clamp(17px, 1.7vw, 34px); line-height: 1.5; margin: 0 0 22px; }
+  .ecran .principal { font-size: 18px; padding: 12px 30px; background: var(--texte); color: #000; border: 0; }
+  .ecran .etat { margin-top: 12px; font-size: 14px; color: var(--doux); min-height: 1.2em; }
+  .sources { margin: 26px auto 0; text-align: left; font-size: clamp(12px, 1.15vw, 22px); line-height: 1.55; color: var(--doux); }
+  .sources p { margin: 0 0 6px; }
+  .cache { display: none !important; }
+  body.rendu .ui { display: none !important; }
+</style>
+</head>
+<body>
+<div id="cadre">
+  <canvas id="scene" aria-label="Film : un avion dans le vent"></canvas>
+  <canvas id="accum" aria-hidden="true"></canvas>
+  <div id="voile"></div>
+</div>
+
+<div id="barre" class="ui">
+  <button id="bLecture" type="button">Pause</button>
+  <button id="bRejouer" type="button">Rejouer</button>
+  <button id="bSon" type="button" aria-pressed="true">Son</button>
+</div>
+
+<template id="modeleSources">
+  <div class="sources">
+    <p>Avion : Cessna 172S, manuel de vol, révision 4, figure 4-3.</p>
+    <p>Vent : University of Wyoming, radiosondage De Bilt 06260, 12 novembre 2026, à midi, heure universelle.</p>
+    <p>Règles de vol : FAA, Aeronautical Information Manual.</p>
+    <p>Le ballon est montré à hauteur constante ; le vent est celui mesuré à 1 222 m.</p>
+    <p>Son de l’avion : Cessna 172 à Groningen Eelde, Beeld en Geluid, licence CC BY-SA 3.0.</p>
+    <p>Son du vent : W.carter, licence CC BY-SA 4.0.</p>
+    <p>Moteur : Babylon.js (Apache 2.0).</p>
+  </div>
+</template>
+
+<div id="depart" class="ecran ui">
+  <div class="bloc">
+    <h1>Vent de travers</h1>
+    <p class="accroche">Un avion avance dans l’air. L’air, lui, avance aussi. Où arrive l’avion ?</p>
+    <button id="bLancer" class="principal" type="button" disabled>Lancer</button>
+    <div class="etat" id="etatChargement">Chargement…</div>
+    <div data-sources></div>
+  </div>
+</div>
+
+<div id="fin" class="ecran ui cache">
+  <div class="bloc">
+    <h1>Vent de travers</h1>
+    <button id="bRejouerFin" class="principal" type="button">Rejouer</button>
+    <div data-sources></div>
+  </div>
+</div>
+
+<script src="lib/babylon.js"></script>
+<script src="lib/babylonjs.materials.min.js"></script>
+<script src="lib/babylonjs.proceduralTextures.min.js"></script>
+<script src="lib/babylonjs.postProcess.min.js"></script>
+<script type="module">
+  import { main } from './main.js';
+  main().catch((err) => {
+    console.error(err);
+    const el = document.getElementById('etatChargement');
+    if (el) el.textContent = 'Erreur : ' + (err && err.message ? err.message : err);
+  });
+</script>
+</body>
+</html>
